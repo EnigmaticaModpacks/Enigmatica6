@@ -1,0 +1,25 @@
+## Installing
+
+1) Download the zipfile.
+2) Extract it to an empty folder.
+3) If you want to change RAM usage, Java arguments etc, see the "settings" file.
+4) Double click "ServerStart" or "ServerStartLinux", whichever is appropriate.
+5) Set EULA=true in the generated eula file.
+6) Enjoy!
+
+
+## Updating
+
+1) Backup your world, including config, defaultconfigs, kubejs, mods, openloader and scripts folders.
+2) Delete the config, defaultconfigs, kubejs, mods, openloader and scripts folders from the server.
+3) Download server files, note the Forge version at the top of the changelog.
+4) Extract into an empty folder.
+5) Move the config, defaultconfigs, kubejs, mods, openloader and scripts folders from the extracted zip into the server folder.
+6) Make sure the Forge version set in settings.cfg is the same as the one stated in the changelog. 
+	The settings.cfg file from the server files will always have the correct version.
+7) Reapply all changes you have made to the server. I recommend that you keep all changes in a seperate
+	folder, so you can just move them over after updating.
+	
+
+
+Feel free to contact me if you need any help, preferably on Discord.

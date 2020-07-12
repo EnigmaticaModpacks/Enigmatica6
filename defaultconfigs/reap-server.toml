@@ -1,0 +1,13 @@
+#The blocks that should get harvested by right-clicking
+reap_whitelist = ["minecraft:nether_wart", "minecraft:potatoes", "minecraft:carrots", "minecraft:wheat", "minecraft:beetroots", "minecraft:cocoa"]
+#The log blocks that are allowed to get harvested by the tree harvester
+log_types = ["minecraft:acacia_log", "minecraft:birch_log", "minecraft:dark_oak_log", "minecraft:jungle_log", "minecraft:oak_log", "minecraft:spruce_log", "minecraft:crimson_stem", "minecraft:warped_stem"]
+#The blocks that are allowed below logs that can be harvested
+ground_types = ["minecraft:dirt", "minecraft:grass_block", "minecraft:coarse_dirt", "minecraft:podzol", "minecraft:mycelium", "minecraft:warped_nylium", "minecraft:crimson_nylium", "minecraft:netherrack"]
+#The tools which the player is allowed to harvest trees
+allowed_tree_tools = ["minecraft:wooden_axe", "minecraft:golden_axe", "minecraft:stone_axe", "minecraft:iron_axe", "minecraft:diamond_axe", "minecraft:netherite_axe"]
+#If the tree harvester should be enabled
+tree_harvest = true
+#If bigger trees should be harder to break
+dynamic_tree_breaking_speed = true
+

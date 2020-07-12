@@ -1,0 +1,16 @@
+
+[general]
+	#Level of Feather Falling needed
+	#Range: 1 ~ 3
+	level = 1
+	#At how many blocks should trampling stop start
+	#Range: 0.0 ~ 256.0
+	blocks = 0.0
+	#When should farmland get trampled
+	#Never: Never trampled farmland
+	#Always: It Always get trampled
+	#Default: Normal behavior
+	#Feather Falling: Does not get trampled with you have feather falling boots
+	#Allowed Values: FEATHER_FALLING, NEVER, ALWAYS
+	type = "FEATHER_FALLING"
+

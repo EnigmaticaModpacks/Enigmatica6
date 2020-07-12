@@ -1,0 +1,31 @@
+
+#Config file for World Stripper
+[common]
+	#Sets the amount of chunks to strip / dress on X-axis
+	#Range: 1 ~ 256
+	chunkRadiusX = 3
+	#Sets the amount of chunks to strip / dress on Z-axis
+	#Range: 1 ~ 256
+	chunkRadiusZ = 3
+	#Replaces every block removed by the stripper with this block
+	replacementBlock = "minecraft:air"
+	#Profile 3 - A list of blocks to strip away from the world
+	profile3 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+	#Profile 4 - A list of blocks to strip away from the world
+	profile4 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+	#Profile 1 - A list of blocks to strip away from the world
+	profile1 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+	#Profile 2 - A list of blocks to strip away from the world
+	profile2 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+	#Selected Profile
+	#Range: 1 ~ 5
+	selectedProfile = 1
+	#Profile 5 - A list of blocks to strip away from the world
+	profile5 = ["minecraft:dirt", "minecraft:grass", "minecraft:grass_path", "minecraft:tall_grass", "minecraft:grass_block", "minecraft:stone", "minecraft:diorite", "minecraft:granite", "minecraft:andesite", "minecraft:gravel", "minecraft:sand", "minecraft:sandstone", "minecraft:oak_log", "minecraft:dark_oak_log", "minecraft:spruce_log", "minecraft:birch_log", "minecraft:jungle_log", "minecraft:acacia_log", "minecraft:oak_leaves", "minecraft:dark_oak_leaves", "minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:water", "minecraft:flowing_water", "minecraft:lava", "minecraft:flowing_lava", "minecraft:netherrack", "minecraft:end_stone", "minecraft:podzol", "minecraft:bamboo", "minecraft:seagrass", "minecraft:tall_seagrass"]
+	#Flag 1 will cause a block update. Flag 2 will send the change to clients. Flag 4 will prevent the block from
+	#being re-rendered, if this is a client world. Flag 8 will force any re-renders to run on the main thread instead
+	#of the worker pool, if this is a client world and flag 4 is clear. Flag 16 will prevent observers from seeing this change
+	#Flags can be added together to obtain multiple flag properties
+	#Range: 1 ~ 16
+	blockStateFlag = 3
+

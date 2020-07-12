@@ -1,0 +1,33 @@
+
+#Configs related to how ding works
+[ding]
+	#Resource Location based name of the sound file to play when Minecraft finishes loading.
+	#EG: "ui.button.click" or "entity.experience_orb.pickup"
+	#
+	#This can also be a mod sound if the mod is installed.
+	#EG: "modname:modsound.boing"
+	#
+	#If you want to use external sounds, consider looking into the mod Additional Resources
+	name = "entity.experience_orb.pickup"
+	#Pitch of the sound (when the world loads)
+	#Range: 0.0 ~ 10.0
+	pitchWorld = 1.0
+	#Pitch of the sound (when Minecraft loads)
+	#Range: 0.0 ~ 10.0
+	pitch = 1.0
+	#Play sound on...
+	#0 = Nothing (why install the mod though?)
+	#1 = MC load
+	#2 = World load
+	#3 = MC and World load
+	#Range: 0 ~ 3
+	playOn = 1
+	#Resource Location based name of the sound file to play when the world finishes loading.
+	#EG: "ui.button.click" or "entity.experience_orb.pickup"
+	#
+	#This can also be a mod sound if the mod is installed.
+	#EG: "modname:modsound.boing"
+	#
+	#If you want to use external sounds, consider looking into the mod Additional Resources
+	nameWorld = "entity.experience_orb.pickup"
+

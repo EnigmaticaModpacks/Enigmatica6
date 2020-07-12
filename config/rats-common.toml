@@ -1,0 +1,157 @@
+
+[general]
+	#True if cheese can be created in cauldrons
+	Cheesemaking = true
+	#True if rats are to spawn naturally
+	"Spawn Rats" = true
+	#How much kRF (1000 RF) a rat with an extreme energy transfer upgrade can transport at a time.
+	#Range: > 1
+	"Rat RF Transfer Rate Extreme (kRF)" = 100000
+	#Ratlantean Automaton Attack Damage
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Ratlantean Automaton Attack Damage" = 6.0
+	#Black Death Attack Damage
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Black Death Automaton Attack Damage" = 4.0
+	#percent chance for piper to drop hat on death
+	#Range: 0.0 ~ 1.0
+	"Pied Piper Hat Drop Rate" = 0.09000000357627869
+	#percent chance for a husk or jungle skeleton to spawn with an archeologist hat
+	#Range: 0.0 ~ 1.0
+	"Archeologist Hat Spawn Rate" = 0.11999999731779099
+	#percent chance for plague rat to drop plague essence on death
+	#Range: 0.0 ~ 1.0
+	"Plague Essence Drop Rate" = 0.10000000149011612
+	#Neo-Ratlantean Attack Damage
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Neo-Ratlantean Automaton Attack Damage" = 8.0
+	#1/This number chance for a rat to drop a Token
+	#Range: > 1
+	"Rat Token Drop Rate" = 10000
+	#True if plague doctor huts can spawn in villages
+	"Village Plague Doctors" = true
+	#True if wild rats contaminate food when they steal from chests
+	"Rats Contaminate Food" = true
+	#Black Death Max Health
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Black Death Max Health" = 400.0
+	#True if loot from rats can spawn in chests
+	"Add Loot" = true
+	#Ratlantis Dimension ID
+	#Range: > -2147483648
+	"Ratlantis Dimension ID" = -8
+	#True if garbage heaps can spawn in villages
+	"Village Garbage Heap" = true
+	#True if Ratlantis dimension is disabled - alternative methods of getting resources will be provided. WARNING: Leave the dimension and restart the game before changing this. You must be fun at parties.
+	"Disable Ratlantis" = false
+	#How much kRF (1000 RF) a rat with a basic energy transfer upgrade can transport at a time.
+	#Range: > 1
+	"Rat RF Transfer Rate Basic (kRF)" = 100
+	#Flying Dutchrat Attack Damage
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Flying Dutchrat Automaton Attack Damage" = 10.0
+	#Distance that untamed rats will immediately despawn. For Vanilla mobs, this is 128 blocks.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Rat Immediate Despawn Distance" = 144.0
+	#A seperate random roll that only spawns pipers if a one-out-of-X chance, x being this number. raise this number to make them more rare.
+	#Range: > 0
+	"Piper Spawn Decrease" = 5
+	#How much kRF (1000 RF) a rat with an advanced energy transfer upgrade can transport at a time.
+	#Range: > 1
+	"Rat RF Transfer Rate Advanced (kRF)" = 500
+	#When a rat is farther than its potential despawn distance, a random roll is taken to see if it despawns. Lower this number will make rats more likely to despawn.
+	#Range: > 1
+	"Rat Potential Despawn Chance" = 800
+	#True if wild rats will steal from chests
+	"Rats Steal From Chests" = true
+	#True if rats should rarely make a funny noise when creating rats nuggets.
+	"Rat Fart Noises" = true
+	#The time in ticks(20 per second) it takes for milk to turn into cheese in a cauldron
+	#Range: 20 ~ 1000000
+	"Milk Curdling Time" = 150
+	#Neo-Ratlantean Max Health
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Neo-Ratlantean Max Health" = 300.0
+	#True if iron golems will attack wild rats
+	"Golems Target Rats" = true
+	#True if Pied Pipers can only spawn in the Overworld(0) dimension.
+	"Pied Piper Spawn In Overworld Only" = true
+	#A seperate random roll that only spawns rats if a one-out-of-X chance, x being this number. raise this number to make them more rare.
+	#Range: > 0
+	"Rat Spawn Decrease" = 5
+	#True if tamed rats will destroy crops when they harvest them
+	"Rats Break Crops on Harvest" = true
+	#Flying Dutchrat Max Health
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Flying Dutchrat Max Health" = 400.0
+	#Percentage for every random tick to spawn a rat for a garbage pile.
+	#Range: 0.0 ~ 1.0
+	"Garbage Pile Spawn Chance" = 0.15000000596046448
+	#True if rats can dig holes
+	"Rats Dig Holes" = true
+	#Ratlantean Automaton Max Health
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Ratlantean Automaton Max Health" = 600.0
+	#True if Plastic item is disabled - alternative methods of getting rat cage deco will be provided. WARNING: Leave the restard the game after changing this. You must be fun at parties.
+	"Disable Plastic" = false
+	#How many blocks the Lumberjack Rat is able to destroy when felling a tree. Be careful when changing this to a large number.
+	#Range: > 0
+	"Rat Upgrade Lumberjack: Max Tree Blocks" = 10000
+	#True if wild rats will destroy and eat crops
+	"Rats Raid Crops" = true
+	#Rats will continue to breed in cages until there are this many rats in one cage block
+	#Range: 1 ~ 10000
+	"Rat Cage Max Occupancy" = 5
+	#Distance that untamed rats could possibly despawn. For Vanilla mobs, this is 32 blocks.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Rat Potential Despawn Distance" = 32.0
+	#True if pet shops can spawn in villages
+	"Village Pet Shops" = true
+	#True if demon rats are to spawn naturally in the nether
+	"Spawn Demon Rats" = true
+	#True if infected mobs with plague can spread it by interacting or attacking.
+	"Other Mobs can spread Plague" = true
+	#True if rats flutes can occasionally make a funny sound.
+	"Funny Rat Flute Sound" = true
+	#True if Pied Pipers are to spawn naturally
+	"Spawn Piper" = true
+	#The how many chunks away can a rat here a rat flute
+	#Range: 1 ~ 100
+	"Rat Flute Distance" = 2
+	#Rats will conduct expensive CPU operations like looking for crops or chests, once every this number of ticks(with added standard deviation for servers)
+	#Range: 1 ~ 10000
+	"Rat Upgrade Delay" = 100
+	#What Dimension ID you are teleported to upon leaving Ratlantis
+	#Range: > -2147483648
+	"Ratlantis Portal Exit Dimension ID" = 0
+	#True if rats can only spawn in the Overworld(0) dimension.
+	"Rats Spawn In Overworld Only" = false
+	#Largest possible radius for tamed rats conducting their searches for items, harvests, etc.
+	#Range: > 1
+	"Max Rat Radius" = 32
+	#The weight of pied pipers in vanilla's spawn rate
+	#Range: 1 ~ 300
+	"Pied Piper Spawn Weight" = 6
+	#The max block hardness that rats are allowed to dig through. (Dirt = 0.5F, Cobblestone = 2.0F, Obsidian = 50.0F)
+	#Range: 0.0 ~ 1000000.0
+	"Rat Dig Strength" = 4.0
+	#True if plague rats are to spawn naturally
+	"Plague Rats" = true
+	#True if rats should spawn like monsters. False if they should only spawn once per world, like pigs and sheep.
+	"Rats Spawn Like Monsters" = true
+	#How much kRF (1000 RF) a rat with an elite energy transfer upgrade can transport at a time.
+	#Range: > 1
+	"Rat RF Transfer Rate Elite (kRF)" = 1000
+	#percent chance for plague rat to drop plague tome on death
+	#Range: 0.0 ~ 1.0
+	"Plague Tome Drop Rate" = 0.0035000001080334187
+	#How far away from players the Rat Upgrade: Voodoo Doll is effective.
+	#Range: 0.0 ~ 3.4028234663852886E38
+	"Voodoo Doll Rat distance" = 32.0
+	#Default radius for tamed rats conducting their searches for items, harvests, etc.
+	#Range: > 1
+	"Default Rat Radius" = 16
+	#The weight of rats in vanilla's spawn rate
+	#Range: 1 ~ 300
+	"Rat Spawn Weight" = 80
+

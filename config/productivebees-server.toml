@@ -1,0 +1,177 @@
+
+[General]
+	#Comma separated list of block names to exclude from the list of woodchips
+	woodChipLogsBlacklist = "atmospheric:crustose_log,forbidden_arcanus:edelwood_log"
+	#How many ticks it takes for process a recipe in the centrifuge. Default 300.
+	#Range: > 20
+	centrifugeProcessingTime = 300
+	#Use items to change the type of a bee.
+	#If false, productive bees can only be obtained through breeding. Default false.
+	enableItemConverting = false
+	#Cooldown for when an abandoned nest will spawn a new inhabitant
+	#Range: > 20
+	nestRepopulationCooldown = 36000
+	#Bees will create combs instead of raw resource. Combs will need to be processed in a centrifuge. Default true.
+	enableCombProduce = true
+	#How often should a bee attempt to generate items while in the hive. Default 500.
+	#Range: > 20
+	itemTickRate = 500
+
+["Bee attributes"]
+	#Number of ticks between effects on nearby entities
+	#Range: > 20
+	ticks = 2337
+	#Chance that a bee will take damage while leashed in a hostile environment
+	#Range: 0.0 ~ 1.0
+	damageChance = 0.1
+	#Chance to increase behavior (nocturnal trait) while leashed in a hostile environment.
+	#Range: 0.0 ~ 1.0
+	behaviorChance = 0.1
+	#Chance to increase tolerance (rain or thunder tolerance trait) while leashed in a hostile environment.
+	#Range: 0.0 ~ 1.0
+	toleranceChance = 0.1
+
+[Worldgen]
+	"enable_productivebees:acacia_wood_nest" = true
+	"enable_productivebees:gravel_nest" = true
+	"enable_productivebees:glowstone_nest" = true
+	"enable_productivebees:end_stone_nest" = true
+	"enable_productivebees:jungle_wood_nest" = true
+	"enable_productivebees:sugar_cane_nest" = true
+	"enable_productivebees:nether_quartz_nest" = true
+	"enable_productivebees:coarse_dirt_nest" = true
+	"enable_productivebees:stone_nest" = true
+	"enable_productivebees:nether_brick_nest" = true
+	"enable_productivebees:snow_nest" = true
+	"enable_productivebees:sand_nest" = true
+	"enable_productivebees:obsidian_nest" = true
+	"enable_productivebees:slimy_nest" = true
+	#Which nests should generate in the world. Nest will still be craftable and attract bees when placed in the world.
+	"enable_productivebees:oak_wood_nest" = true
+	"enable_productivebees:spruce_wood_nest" = true
+	"enable_productivebees:birch_wood_nest" = true
+	"enable_productivebees:dark_oak_wood_nest" = true
+
+[Bees]
+	#Production chance for productivebees:glowing_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:glowing_bee" = 0.65
+	#Range: 0.0 ~ 1.0
+	spawnUndeadBeesChance = 0.01
+	#Production chance for productivebees:gold_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:gold_bee" = 0.65
+	#Production chance for productivebees:copper_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:copper_bee" = 0.65
+	#Production chance for productivebees:brass_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:brass_bee" = 0.65
+	#Production chance for productivebees:emerald_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:emerald_bee" = 0.65
+	#Production chance for productivebees:iron_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:iron_bee" = 0.65
+	#Production chance for productivebees:redstone_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:redstone_bee" = 0.65
+	#Production chance for productivebees:invar_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:invar_bee" = 0.65
+	#Production chance for productivebees:bronze_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:bronze_bee" = 0.65
+	#Production chance for productivebees:electrum_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:electrum_bee" = 0.65
+	#Production chance for productivebees:coal_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:coal_bee" = 0.65
+	#Production chance for productivebees:tungsten_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:tungsten_bee" = 0.65
+	#Production chance for productivebees:titanium_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:titanium_bee" = 0.65
+	#Production chance for productivebees:creeper_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:creeper_bee" = 0.65
+	#Production chance for productivebees:lead_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:lead_bee" = 0.65
+	#Production chance for productivebees:radioactive_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:radioactive_bee" = 0.65
+	#Production chance for productivebees:lumber_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:lumber_bee" = 0.65
+	#Production chance for productivebees:magmatic_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:magmatic_bee" = 0.65
+	#Production chance for productivebees:amber_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:amber_bee" = 0.65
+	#Production chance for vanilla bees
+	#Range: 0.0 ~ 1.0
+	"minecraft:bee" = 0.65
+	#Production chance for productivebees:lapis_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:lapis_bee" = 0.65
+	#Production chance for productivebees:steel_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:steel_bee" = 0.65
+	#Production chance for productivebees:slimy_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:slimy_bee" = 0.65
+	#Production chance for productivebees:draconic_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:draconic_bee" = 0.65
+	#Production chance for productivebees:osmium_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:osmium_bee" = 0.65
+	#Production chance for productivebees:dye_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:dye_bee" = 0.65
+	#Production chance for productivebees:wither_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:wither_bee" = 0.65
+	#Production chance for productivebees:blazing_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:blazing_bee" = 0.65
+	#Production chance for productivebees:nickel_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:nickel_bee" = 0.65
+	#Production chance for productivebees:skeletal_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:skeletal_bee" = 0.65
+	#Production chance for productivebees:zinc_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:zinc_bee" = 0.65
+	#Production chance for productivebees:silver_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:silver_bee" = 0.65
+	#Production chance for productivebees:zombie_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:zombie_bee" = 0.65
+	#Production chance for productivebees:ender_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:ender_bee" = 0.65
+	#Production chance for productivebees:diamond_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:diamond_bee" = 0.65
+	#Production chance for productivebees:tin_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:tin_bee" = 0.65
+	#Spawn skeletal and zombie bees as night?
+	spawnUndeadBees = true
+	#Production chance for productivebees:aluminium_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:aluminium_bee" = 0.65
+	#Production chance for productivebees:platinum_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:platinum_bee" = 0.65
+	#Production chance for productivebees:quartz_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:quartz_bee" = 0.65
+

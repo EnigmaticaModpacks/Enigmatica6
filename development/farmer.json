@@ -1,0 +1,83 @@
+{
+    "profession": "minecraft:farmer",
+    "replace": "true",
+    "trades": 
+    [
+        {
+            "level": 1,
+            "trade": {
+                "type": "minecraft:emerald_for_items",
+                "item": "minecraft:nether_star",
+                "count": 42,
+                "max_uses": 10,
+                "xp_value": 12
+            }
+        },
+        {
+            "level": 1,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "minecraft:dirt",
+                "emerald_count": 2,
+                "count": 16,
+                "max_uses": 10,
+                "xp_value": 12
+            }
+        },
+        {
+            "level": 1,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "tetra:duplex_tool_modular",
+                "nbt": {
+                    "duplex/basic_pickaxe_left_material": "basic_pickaxe/diamond", 
+                    "honing_progress": 870, 
+                    "HideFlags": 1, 
+                    "duplex/basic_pickaxe_right_material": "basic_pickaxe/diamond", 
+                    "duplex/head_right:arrested": 0, 
+                    "duplex/handle": "duplex/basic_handle",
+                    "duplex/head_left:arrested": 0,
+                    "Damage": 10, 
+                    "duplex/head_left": "duplex/basic_pickaxe_left",
+                    "duplex/basic_handle_material": "basic_handle/bone", 
+                    "duplex/head_right": "duplex/basic_pickaxe_right"
+                },
+                "emerald_count": 2,
+                "count": 1,
+                "max_uses": 10,
+                "xp_value": 12
+            }
+        },
+        {
+            "level": 1,
+            "trade": {
+                "type": "minecraft:items_for_emeralds",
+                "item": "minecraft:diamond_sword",
+                "nbt": {
+                    "Damage": 0,
+                    "Enchantments":[
+                        {
+                            "lvl": 5,
+                            "id": "minecraft:bane_of_arthropods"
+                        }
+                    ]
+                },
+                "emerald_count": 2,
+                "count": 1,
+                "max_uses": 10,
+                "xp_value": 12
+            }
+        },
+		{
+            "level": 1,
+            "trade": {
+                "type": "minecraft:enchanted_item_for_emeralds",
+                "item": "minecraft:diamond_sword",
+                "emerald_count": 5,
+                "count": 1,
+                "max_uses": 10,
+                "xp_value": 12
+            }
+        }
+    ]
+}

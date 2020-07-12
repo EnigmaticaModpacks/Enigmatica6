@@ -1,0 +1,34 @@
+# Configuration for move-issues - https://github.com/dessant/move-issues
+
+# Delete the command comment when it contains no other content
+deleteCommand: true
+
+# Close the source issue after moving
+closeSourceIssue: false
+
+# Lock the source issue after moving
+lockSourceIssue: false
+
+# Mention issue and comment authors
+mentionAuthors: false
+
+# Preserve mentions in the issue content
+keepContentMentions: false
+
+# Move labels that also exist on the target repository
+moveLabels: true
+
+# Set custom aliases for targets
+aliases:
+   e2: enigmatica2
+   e2l: enigmatica2light
+   e2e: enigmatica2expert
+   e2es: enigmatica2expertskyblock
+   e3: enigmatica3
+   e4: enigmatica4
+   e5: enigmatica5
+   e6: enigmatica6
+   s: scientia
+
+# Repository to extend settings from
+_extends: .github

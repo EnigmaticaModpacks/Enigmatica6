@@ -1,0 +1,15 @@
+
+[client]
+	#If true, shows the hunger (and saturation if showSaturationHudOverlay is true) that would be restored by food you are currently holding
+	showFoodValuesHudOverlay = true
+	#If true, shows your food exhaustion as a progress bar behind the hunger bars
+	showFoodExhaustionHudUnderlay = true
+	#If true, adds a line that shows your hunger, saturation, and exhaustion level in the F3 debug overlay
+	showFoodStatsInDebugOverlay = true
+	#If true, shows the hunger and saturation values of food in its tooltip while holding SHIFT
+	showFoodValuesInTooltip = true
+	#If true, shows the hunger and saturation values of food in its tooltip automatically (without needing to hold SHIFT)
+	showFoodValuesInTooltipAlways = true
+	#If true, shows your current saturation level overlayed on the hunger bar
+	showSaturationHudOverlay = true
+

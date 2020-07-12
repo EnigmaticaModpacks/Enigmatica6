@@ -1,0 +1,18 @@
+
+["Add New Version"]
+	#ModID's of the ServerConfigs that will be deleted when a world with a version lower than this version is loaded the first time. Comma Separated list. (ServerConfig without -server.toml)
+	toDelete = ""
+	#Version Number. VersionNumbers are simple Integers. Use a number larger than the last version.
+	#Range: > 0
+	newVersion = 0
+
+["File Deleter"]
+	#By default Folders are only deleted if they are empty. Set to true to change that.
+	deleteFoldersWithContent = false
+	#This is intended for deleting datapacks and/or craft tweaker scripts. The file will be deleted every launch if it exists! No access to saves or world folder. Specify the path to the file. Comma Separated List. Example: scripts/badscript.zs
+	filesToDelete = ""
+
+["Version History"]
+	#Editing these values will not affect any worlds that are already on that version.
+	history = ""
+

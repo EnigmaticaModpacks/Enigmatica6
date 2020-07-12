@@ -1,0 +1,112 @@
+# RandomPatches configuration
+
+# Options related to the movement speed limits.
+[speedLimits]
+	# The maximum player elytra speed.
+	# The vanilla default is 300.0.
+	# Min: 1.0
+	# Max: 3.4028234663852886E38
+	# Default: 1000000.0
+	maxPlayerElytraSpeed = 1000000.0
+	# The maximum player vehicle speed.
+	# The vanilla default is 100.0.
+	# Min: 1.0
+	# Max: 1.7976931348623157E308
+	# Default: 1000000.0
+	maxPlayerVehicleSpeed = 1000000.0
+	# The maximum player speed.
+	# The vanilla default is 100.0.
+	# Min: 1.0
+	# Max: 3.4028234663852886E38
+	# Default: 1000000.0
+	maxPlayerSpeed = 1000000.0
+
+# Options related to the disconnect timeouts.
+[timeouts]
+	# The interval at which the server sends the KeepAlive packet.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 15
+	keepAlivePacketInterval = 15
+	# The read timeout in seconds.
+	# This is the time it takes for a player to be disconnected after not responding to a KeepAlive packet.
+	# This value is automatically rounded up to a product of keepAlivePacketInterval.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 90
+	readTimeout = 360
+	# The login timeout in seconds.
+	# Min: 1
+	# Max: 2147483647
+	# Default: 900
+	loginTimeout = 900
+
+# Options related to client-sided features.
+[client]
+	# Forces Minecraft to show the title screen after disconnecting rather than the Multiplayer or Realms menu.
+	# Default: false
+	forceTitleScreenOnDisconnect = false
+	# Whether to remove the glowing effect from potions.
+	# Default: false
+	removePotionGlint = false
+	# The framerate limit slider step size.
+	# If this is set to 10.0, vanilla behavior is not changed.
+	# Min: 4.9E-324
+	# Max: 260.0
+	# Default: 1.0
+	framerateLimitSliderStepSize = 1.0
+
+	# Options related to the Minecraft window.
+	[client.window]
+		# The path to the 256x256 window icon which is used on Mac OS X.
+		# Leave this, the 16x16 icon and the 32x32 icon blank to use the default icon.
+		# Default: 
+		icon256 = "openloader/resources/enigmatica/assets/enigmatica/textures/icon.png"
+		# The path to the 16x16 Minecraft window icon.
+		# Leave this and the 32x32 icon blank to use the default icon.
+		# Default: 
+		icon16 = "openloader/resources/enigmatica/assets/enigmatica/textures/icon.png"
+		# The path to the 32x32 Minecraft window icon.
+		# Leave this and the 16x16 icon blank to use the default icon.
+		# Default: 
+		icon32 = "openloader/resources/enigmatica/assets/enigmatica/textures/icon.png"
+		# The Minecraft window title.
+		# The Minecraft version is provided as an argument.
+		# Default: Minecraft* %s
+		title = "Enigmatica 6"
+		# The Minecraft window title.
+		# The Minecraft version and current activity are provided as arguments.
+		# For example: "RandomPatches - %2$s"
+		# Default: Minecraft* %s - %s
+		titleWithActivity = "Enigmatica 6 - %2$s"
+
+# Options related to boats.
+[boats]
+	# Prevents underwater boat passengers from being ejected after 60 ticks (3 seconds).
+	# Default: false
+	preventUnderwaterBoatPassengerEjection = false
+	# The buoyancy of boats when they are under flowing water.
+	# The vanilla default is -0.0007.
+	# Min: -1.7976931348623157E308
+	# Max: 1.7976931348623157E308
+	# Default: 0.023
+	underwaterBoatBuoyancy = 0.023
+
+# Options that don't fit into any other categories.
+[misc]
+	# The packet size limit.
+	# The vanilla limit is 2097152.
+	# Min: 257
+	# Max: 2147483647
+	# Default: 16777216
+	packetSizeLimit = 16777216
+	# Enables the portal bucket replacement fix for Nether portals.
+	# Default: false
+	portalBucketReplacementFixForNetherPortals = false
+	# Whether skull stacking requires the same textures or just the same player profile.
+	# Default: true
+	skullStackingRequiresSameTextures = true
+	# Enables the /rpreload command.
+	# Default: true
+	rpreload = true
+

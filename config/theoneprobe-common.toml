@@ -1,0 +1,53 @@
+#If true show the color of the collar of a wolf
+showCollarColor = true
+#The maximum amount of slots (empty or not) to show without sneaking
+#Range: 0 ~ 1000
+showSmallChestContentsWithoutSneaking = 3
+#How much time (ms) to wait before reporting an exception again
+#Range: 1 ~ 10000000
+loggingThrowableTimeout = 20000
+#If true equal stacks will be compacted in the chest contents overlay
+compactEqualStacks = true
+#Alternate color for the tank bar
+tankbarAlternateFilledColor = "ff000043"
+#How to display tank contents: 0 = do not show, 1 = show in a bar, 2 = show as text
+#Range: 0 ~ 2
+showTank = 1
+#If true there will be a readme note for first-time players
+spawnNote = false
+#A list of blocks for which we don't show chest contents automatically except if sneaking
+dontShowContentsUnlessSneaking = []
+#Format for displaying RF
+rfFormat = "COMPACT"
+#If true the probe will automatically show extended information if it is in your main hand (so not required to sneak)
+extendedInMain = false
+#Color for the RF bar
+rfbarFilledColor = "ffdd0000"
+#Color for the tank bar border
+tankbarBorderColor = "ff555555"
+#Color for the RF bar border
+rfbarBorderColor = "ff555555"
+#A list of blocks for which we automatically show chest contents even if not sneaking
+showContentsWithoutSneaking = ["storagedrawers:basicdrawers", "storagedrawersextra:extra_drawers"]
+#If true show debug info with creative probe
+showDebugInfo = true
+#Format for displaying tank contents
+tankFormat = "COMPACT"
+#How to display RF: 0 = do not show, 1 = show in a bar, 2 = show as text
+#Range: 0 ~ 2
+showRF = 1
+#If true there will be a bauble version of the probe if baubles is present
+supportBaubles = true
+#Alternate color for the RF bar
+rfbarAlternateFilledColor = "ff430000"
+#If the number of items in an inventory is lower or equal then this number then more info is shown
+#Range: 0 ~ 20
+showItemDetailThresshold = 4
+#Is the probe needed to show the tooltip? 0 = no, 1 = yes, 2 = yes and clients cannot override, 3 = probe needed for extended info only
+#Range: 0 ~ 3
+needsProbe = 0
+#Color for the tank bar
+tankbarFilledColor = "ff0000dd"
+#A list of blocks for which we don't send NBT over the network. This is mostly useful for blocks that have HUGE NBT in their pickblock (itemstack)
+dontSendNBT = []
+

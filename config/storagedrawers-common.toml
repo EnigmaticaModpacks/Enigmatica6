@@ -1,0 +1,30 @@
+
+[General]
+	#List of rules in format "domain:item1, domain:item2, n".
+	#Causes a compacting drawer convert n of item1 into 1 of item2.
+	compactingRules = ["minecraft:clay, minecraft:clay_ball, 4"]
+	enableUI = true
+	debugTrace = false
+	enableItemConversion = true
+	enableSidedInput = true
+	#The number of item stacks held in a basic unit of storage.
+	#1x1 drawers hold 8 units, 1x2 drawers hold 4 units, 2x2 drawers hold 2 units.
+	#Half-depth drawers hold half those amounts.
+	baseStackStorage = 4
+	enableExtraCompactingRules = true
+	#Range: 1 ~ 50
+	controllerRange = 12
+	enableSidedOutput = true
+
+[StorageUpgrades]
+	level2Mult = 4
+	#Storage upgrades multiply storage capacity by the given amount.
+	#When multiple storage upgrades are used together, their multipliers are added before being applied.
+	level1Mult = 2
+	level3Mult = 8
+	level5Mult = 32
+	level4Mult = 16
+
+[Integration]
+	wailaStackRemainder = true
+

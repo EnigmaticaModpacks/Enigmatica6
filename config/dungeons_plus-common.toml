@@ -1,0 +1,76 @@
+
+[tower]
+	#Spacing between structures
+	#Range: > 1
+	spacing = 25
+	#Offsets the spacing of the structures randomly
+	#Range: > 0
+	offset = 6
+	#How should the code treate biomes? true = whitelist, false = blacklist. Biomes defined with ! do the opposite.
+	is_whitelist = true
+	#A biome filter to determine where the structure should generate. Works with the biome dictionary (#overworld) and "not" statements (!plains). These can be combined (!#nether). Operates in the order presented. So "#forest, !flower_forest" will add all forests and then remove the flower forest.
+	biomes = "plains, forest, dark_forest, birch_forest, mountains"
+	#Chance of generating in an allowed chunk
+	#Range: 0.0 ~ 1.0
+	probability = 0.75
+
+[leviathan]
+	#Spacing between structures
+	#Range: > 1
+	spacing = 36
+	#Offsets the spacing of the structures randomly
+	#Range: > 0
+	offset = 8
+	#How should the code treate biomes? true = whitelist, false = blacklist. Biomes defined with ! do the opposite.
+	is_whitelist = true
+	#A biome filter to determine where the structure should generate. Works with the biome dictionary (#overworld) and "not" statements (!plains). These can be combined (!#nether). Operates in the order presented. So "#forest, !flower_forest" will add all forests and then remove the flower forest.
+	biomes = "desert"
+	#Chance of generating in an allowed chunk
+	#Range: 0.0 ~ 1.0
+	probability = 1.0
+
+[snowy_temple]
+	#Spacing between structures
+	#Range: > 1
+	spacing = 36
+	#Offsets the spacing of the structures randomly
+	#Range: > 0
+	offset = 8
+	#How should the code treate biomes? true = whitelist, false = blacklist. Biomes defined with ! do the opposite.
+	is_whitelist = true
+	#A biome filter to determine where the structure should generate. Works with the biome dictionary (#overworld) and "not" statements (!plains). These can be combined (!#nether). Operates in the order presented. So "#forest, !flower_forest" will add all forests and then remove the flower forest.
+	biomes = "snowy_tundra, snowy_taiga"
+	#Chance of generating in an allowed chunk
+	#Range: 0.0 ~ 1.0
+	probability = 1.0
+
+[bigger_dungeon]
+	#Spacing between structures
+	#Range: > 1
+	spacing = 12
+	#Offsets the spacing of the structures randomly
+	#Range: > 0
+	offset = 5
+	#How should the code treate biomes? true = whitelist, false = blacklist. Biomes defined with ! do the opposite.
+	is_whitelist = false
+	#A biome filter to determine where the structure should generate. Works with the biome dictionary (#overworld) and "not" statements (!plains). These can be combined (!#nether). Operates in the order presented. So "#forest, !flower_forest" will add all forests and then remove the flower forest.
+	biomes = "mushroom_fields, mushroom_field_shore"
+	#Chance of generating in an allowed chunk
+	#Range: 0.0 ~ 1.0
+	probability = 0.4
+
+[end_ruins]
+	#Spacing between structures
+	#Range: > 1
+	spacing = 24
+	#Offsets the spacing of the structures randomly
+	#Range: > 0
+	offset = 8
+	#How should the code treate biomes? true = whitelist, false = blacklist. Biomes defined with ! do the opposite.
+	is_whitelist = true
+	#A biome filter to determine where the structure should generate. Works with the biome dictionary (#overworld) and "not" statements (!plains). These can be combined (!#nether). Operates in the order presented. So "#forest, !flower_forest" will add all forests and then remove the flower forest.
+	biomes = "end_highlands, end_midlands"
+	#Chance of generating in an allowed chunk
+	#Range: 0.0 ~ 1.0
+	probability = 0.8
+

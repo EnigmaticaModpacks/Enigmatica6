@@ -1,0 +1,19 @@
+
+#General settings
+[general]
+	#Allow the mod to attempt to add support for mod wolves? (Still doesn't allow support for Doggy Talents)
+	attemptModWolfSupport = true
+	#Poses for lying down that are enabled. If the mod can't find compatible poses, it will randomly pick one set.
+	enabledPoses = ["forelegStraight", "forelegSprawled", "forelegSprawledBack", "forelegSkewed", "forelegSide", "hindlegStraight", "hindlegStraightBack", "hindlegSprawled", "hindlegSprawledBack", "hindlegSide"]
+	#Time to spend sitting (in ticks) before dogs lie down.
+	#Range: 1 ~ 6000000
+	timeBeforeLie = 300
+	#Range for target to get to dog before dog gets up (in blocks)
+	#Range: 0.0 ~ 32.0
+	rangeBeforeGettingUp = 3.0
+	#Do dogs spawn into the world lying down if they are already sitting.
+	dogsSpawnLying = true
+	#Who the dog gets up to
+	#Allowed Values: NOBODY, OWNER, PLAYERS, ANY_LIVING_ENTITY
+	getsUpTo = "OWNER"
+

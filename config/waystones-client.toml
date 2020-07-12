@@ -1,0 +1,16 @@
+
+[client]
+	#If enabled, the text overlay on waystones will no longer always render at full brightness.
+	disableTextGlow = false
+	#The y position of the warp button in the inventory.
+	teleportButtonY = 60
+	#The volume of the sound played when teleporting.
+	#Range: 0.0 ~ 1.0
+	soundVolume = 0.3499999940395355
+	#The x position of the warp button in the inventory.
+	teleportButtonX = 58
+	#If enabled, a JourneyMap waypoint will be created when activating a waystone.
+	createJourneyMapWaypoint = false
+	#If enabled, activated waystones will not emit particles.
+	disableParticles = false
+

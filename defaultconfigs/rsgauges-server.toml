@@ -1,0 +1,87 @@
+
+#Settings affecting the logical server side, but are also configurable in single player.
+[server]
+
+	#Opt-out settings
+	[server.optout]
+		#Opt-out any block by its registry name ('*' wildcard matching, comma separated list, whitespaces ignored. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' excludes everything that has 'wood' or 'steel' in the registry name. The matching result is also traced in the log file. 
+		pattern_excludes = ""
+		#Prevent blocks from being opt'ed by registry name ('*' wildcard matching, comma separated list, whitespaces ignored. Evaluated before all other opt-out checks. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' includes everything that has 'wood' or 'steel' in the registry name.The matching result is also traced in the log file.
+		pattern_includes = ""
+		#Completely disable all (power metering) gauges.
+		without_gauges = false
+		#Completely disable all (blinking and steady) indicator lamps/LEDs.
+		without_indicators = false
+		#Completely disable all blinking indicator lamps/LEDs.
+		without_blinking_indicators = false
+		#Completely disable all sound emmitting indicators.
+		without_sound_indicators = false
+		#Completely disable all (button like) pulse switches.
+		without_pulse_switches = false
+		#Completely disable all (lever like) bistable switches.
+		without_bistable_switches = false
+		#Completely disable all contact switches.
+		without_contact_switches = false
+		#Completely disable all automatic switches.
+		without_automatic_switches = false
+		#Completely disable all link relay switches.
+		without_linkrelay_switches = false
+		#Completely disable all analog switches, such as dimmers.
+		without_analog_switches = false
+		#Completely disable all decorative blocks.
+		without_decorative = false
+		#Disable pulse time configuration of switches using redstone dust stack clicking.
+		without_pulsetime_config = false
+		#Disable color tinting for switches and gauges.
+		without_color_tinting = false
+		#Disable the 'no output' config option for switches.
+		without_switch_nooutput = false
+		#Disables switch remote linking.
+		without_switch_linking = false
+		#Disable all internal recipes, allowing to use alternative pack recipes.
+		without_recipes = false
+		#Disables the possibility to right click switches with Redstone Dust, Ender Pearls or Switch Link pearls for configuration or linking. Can be useful if it is important to the players that no unforseen switch configuration happens when activating a switch was intended. Affects server side only. Can be changed during operation.
+		without_rightclick_item_switchconfig = false
+
+	#Miscellaneous settings
+	[server.miscellaneous]
+		#Enables experimental features. Use at own risk.
+		with_experimental = false
+		#Disable the status overlay for switches and use chat messages instead.
+		without_switch_status_overlay = false
+		#Disable tile entity update() for detector switches(for performance testing only, don't do this at home).
+		without_detector_switch_update = false
+		#Disable tile entity update() for environmental sensor switches.
+		#(for performance testing only, don't do this at home)
+		without_environmental_switch_update = false
+		#Disable tile entity update() for time based switches.(for performance testing only, don't do this at home)
+		without_timer_switch_update = false
+		#Defines how far you or a link source switch can be away from the target to activate it. The value 0 means 'no limitation',  as long as the target chunk is loaded.
+		#Range: 0 ~ 64
+		max_switch_linking_distance = 48
+		#Comma sepatated list of items names that can be used alter configurable blocks of this mod. This applies when the display side of the block is right click (activated) with the item in the main hand.
+		accepted_wrenches = "redstone_torch"
+
+	#Settings to tweak the performance, or use cases normally no change should be required here.
+	[server.tweaks]
+		#Gauges shall not frequently lookup weak power provided to the block they are attached to.
+		without_gauge_weak_power_measurement = false
+		#Sample interval of the gauges in ticks. Lower values decrease the display latency for indirect weak power measurements. Minor performance impact for values >= 5.
+		#Range: 2 ~ 100
+		gauge_update_interval = 8
+		#Sample interval of volume sensing automatic switches in ticks (e.g infrared motion detector). Lower values make the switches reacting faster, but also have an impact on the server performance due to ray tracing.
+		#Range: 5 ~ 50
+		autoswitch_volumetric_update_interval = 10
+		#Sample interval of the linear switches in ticks (like laser pointer based sensors). Lower values make the switches reacting faster, but also have an impact on the server performance due to ray tracing. Has much less impact
+		#as the volumetric autoswitch interval.
+		#Range: 1 ~ 50
+		autoswitch_linear_update_interval = 4
+		#Timeout in milliseconds defining the timeout for left clicking switches or devices in order to configure them. If the device can be opened, it will be opened on 'double-left-click' and closed again on 'single-left-click'. The item in the hand must be a valid wrench (see 'Accepted wrenches'). For switches/devices that cannot be opened, multi-clicking cycles through the configuration options. The block has to be at least clicked two times withing the timeout to differ configuration from block breaking, and prevent misconfiguration on unintended left-clicking.
+		#Range: 500 ~ 1200
+		config_left_click_timeout = 700
+		#Disable CTRL-SHIFT item tooltip display.
+		without_tooltips = false
+		#Vertial position of the switch status overlay message.
+		#Range: 0.1 ~ 0.8
+		switch_status_overlay_y = 0.75
+

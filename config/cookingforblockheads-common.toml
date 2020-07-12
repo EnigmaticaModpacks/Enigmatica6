@@ -1,0 +1,20 @@
+#If true, a cow can be squished into a Milk Jar by dropping an anvil on top.
+cowJarEnabled = true
+#The amount of milk the cow in a jar generates per tick.
+#Range: 0.0 ~ 3.4028234663852886E38
+cowJarMilkPerTick = 0.5
+#Set this to true if you'd like the sink to require water to be piped in, instead of providing infinite of it.
+sinkRequiresWater = false
+#Enabling this will make the kitchen counters have twice as much inventory space.
+largeCounters = false
+#Set this to true if you'd like to disallow automation of the oven (pipes and such won't be able to insert/extract)
+disallowOvenAutomation = false
+#The fuel multiplier for the cooking oven. Higher values means fuel lasts longer, 1.0 is furnace default.
+#Range: 0.10000000149011612 ~ 2.0
+ovenFuelTimeMultiplier = 0.33000001311302185
+#The cooking time multiplier for the cooking oven. Higher values means it will take longer.
+#Range: 0.25 ~ 9.0
+ovenCookTimeMultiplier = 1.0
+#Set this to true if you'd like the oven to only accept cooking oil as fuel (requires Pam's Harvestcraft)
+ovenRequiresCookingOil = false
+

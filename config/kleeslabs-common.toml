@@ -1,0 +1,10 @@
+
+#KleeSlabs settings
+[common]
+	#If Require Sneaking is enabled. Set this to true to invert the sneaking check for breaking only half a slab.
+	invertSneak = false
+	#IDs of mods whose compatibility should be disabled.
+	disabledCompat = []
+	#Set this to true to only break half a slab when the player is sneaking.
+	requireSneak = false
+

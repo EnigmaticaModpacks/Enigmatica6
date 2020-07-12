@@ -1,0 +1,175 @@
+
+[afk]
+	auto = true
+	#Range: > 0
+	auto_kick = 0
+	#Range: > 1
+	auto_time = 600
+
+#Command Config
+[Commands]
+
+	[Commands.broadcast]
+		#Enable command: /broadcast
+		enable = true
+
+	[Commands.repair]
+		#Enable command: /repair
+		enable = true
+
+	[Commands.endc]
+		#Enable command: /endc
+		enable = false
+
+	[Commands.back]
+		#Range: > 0
+		death_custom_cooldown = 0
+		#Range: > 0
+		delay = 3
+		#Enable command: /back
+		enable = true
+		#Range: > 0
+		cooldown = 180
+		enable_on_death = true
+
+	[Commands.speed]
+		#Range: 0 ~ 50
+		max_walk_speed = 20
+		#Enable command: /speed
+		enable = true
+		#Range: 0 ~ 50
+		max_fly_speed = 20
+
+	[Commands.head]
+		#Enable command: /head
+		enable = true
+
+	[Commands.warps]
+		#Range: > 0
+		delay = 3
+		#Enable commands: /setwarp, /delwarp, /warp
+		enable = true
+		#Range: > 0
+		cooldown = 300
+
+	[Commands.top]
+		#Enable command: /top
+		enable = true
+
+	[Commands.kickall]
+		#Enable command: /kickall
+		enable = true
+
+	[Commands.weather]
+		#Enable commands: /sun, /rain, /thunder
+		enable = true
+
+	[Commands.heal]
+		#Enable command: /heal
+		enable = true
+
+	[Commands.homes]
+		#Range: > 0
+		delay = 3
+		#Enable commands: /sethome, /delhome, /home
+		enable = true
+		#Range: > 0
+		cooldown = 300
+		#Range: > 1
+		limit = 1
+		#Range: > 1
+		limit_op = 5
+
+	[Commands.hat]
+		#Enable command: /hat
+		enable = true
+
+	[Commands.up]
+		#Enable command: /up
+		enable = false
+
+	[Commands.tempban]
+		#Enable command: /check
+		enable = true
+
+	[Commands.rndtp]
+		#Range: > 0
+		delay = 3
+		#Enable command: /rndtp
+		enable = true
+		#Range: > 0
+		cooldown = 10
+		#Range: 50 ~ 999
+		range_min = 500
+		#Range: > 1000
+		range_max = 2000
+
+	[Commands.tpa]
+		#Range: > 0
+		delay = 3
+		#Enable commands: /tpa, /tpahere, /tpaccept, /tpdeny
+		enable = true
+		#Range: > 0
+		cooldown = 180
+		#Range: > 0
+		timeout = 20
+
+	[Commands.gm]
+		#Enable command: /gm
+		enable = true
+
+	[Commands.suicide]
+		enable_player = true
+		#Enable command: /suicide
+		enable = true
+		#Range: > 0
+		cooldown_player = 20
+
+	[Commands.afk]
+		#Range: > 0
+		cooldown = 30
+		command = true
+
+	[Commands.mute]
+		#Enable commands: /mute, /unmute
+		enable = true
+
+	[Commands.kits]
+		#Enable command: /kit
+		enable = false
+		starting_kit = false
+		starting_kit_name = "tools"
+
+	[Commands.trash]
+		#Enable command: /trash
+		enable = true
+
+	[Commands.invsee]
+		#Enable command: /invsee
+		enable = true
+
+	[Commands.fly]
+		#Enable command: /fly
+		enable = true
+
+	[Commands.tpall]
+		#Enable command: /tpall
+		enable = true
+
+	[Commands.spawn]
+		#Range: > 0
+		delay = 3
+		#Enable commands: /spawn, /setspawn
+		enable = true
+		#Range: > 0
+		cooldown = 300
+		force_spawn_on_death = false
+
+	[Commands.time]
+		#Enable commands: /day, /night
+		enable = true
+
+	[Commands.god]
+		#Enable command: /god
+		enable = true
+

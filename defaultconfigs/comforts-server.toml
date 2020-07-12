@@ -1,0 +1,18 @@
+
+[server]
+	#Set to true to automatically use sleeping bags when placed
+	autoUse = true
+	#Set to true to prevent sleeping depending on how long you previously slept
+	wellRested = false
+	#If well rested is true, this value is used to determine how long you need before being able to sleep again (larger numbers = can sleep sooner)
+	#Range: 1.0 ~ 20.0
+	sleepyFactor = 2.0
+	#Set to true to enable sleeping in hammocks at night
+	nightHammocks = false
+	#The chance that a sleeping bag will break upon usage
+	#Range: 0.0 ~ 1.0
+	sleepingBagBreakage = 0.0
+	#List of debuffs to apply to players after using the sleeping bag
+	#Format: [effect] [duration(secs)] [power]
+	sleepingBagDebuffs = []
+

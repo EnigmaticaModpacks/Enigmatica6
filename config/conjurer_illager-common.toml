@@ -1,0 +1,16 @@
+
+[theatre]
+	#Spacing between structures
+	#Range: > 1
+	spacing = 40
+	#Offsets the spacing of the structures randomly
+	#Range: > 0
+	offset = 10
+	#How should the code treate biomes? true = whitelist, false = blacklist. Biomes defined with ! do the opposite.
+	is_whitelist = true
+	#A biome filter to determine where the structure should generate. Works with the biome dictionary (#overworld) and "not" statements (!plains). These can be combined (!#nether). Operates in the order presented. So "#forest, !flower_forest" will add all forests and then remove the flower forest.
+	biomes = "dark_forest"
+	#Chance of generating in an allowed chunk
+	#Range: 0.0 ~ 1.0
+	probability = 0.5
+

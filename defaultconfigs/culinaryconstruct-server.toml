@@ -1,0 +1,14 @@
+
+[server]
+	#The maximum amount of food that a single sandwich can give
+	#Range: 1 ~ 100
+	maxFoodPerSandwich = 10
+	#Blacklist ingredients with more than this max saturation modifier, -1 to disable
+	#Range: -1.0 ~ 100.0
+	maxIngredientSaturation = -1.0
+	#Blacklist ingredients with more than this max food value, -1 to disable
+	#Range: -1 ~ 100
+	maxIngredientFood = -1
+	#List of items to blacklist as ingredients
+	ingredientBlacklist = []
+

@@ -1,0 +1,24 @@
+
+#Common config for Farming for Blockheads
+[common]
+	#The range within animals can be fed by the feeding trough.
+	#Range: 1 ~ 16
+	feedingTroughRange = 8
+	#The chance for Fertilized Farmland to turn back into regular Farmland (per provided bonus).
+	#Range: 0.0 ~ 1.0
+	fertilizerRegressionChance = 0.0
+	#The chance to get a bonus growth when using Red Fertilizer.
+	#Range: 0.0 ~ 1.0
+	fertilizerBonusGrowthChance = 1.0
+	#List of names the merchant can have.
+	merchantNames = ["Swap-O-Matic", "Emerald Muncher", "Weathered Salesperson"]
+	#The range at which the chicken nest picks up laid eggs.
+	#Range: 1 ~ 16
+	chickenNestRange = 8
+	#The maximum amount of animals (per type) until the feeding trough stops feeding.
+	#Range: > 1
+	feedingTroughMaxAnimals = 8
+	#The chance to get a bonus crop when using Green Fertilizer.
+	#Range: 0.0 ~ 1.0
+	fertilizerBonusCropChance = 1.0
+
