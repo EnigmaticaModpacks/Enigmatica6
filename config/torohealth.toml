@@ -1,0 +1,27 @@
+
+#ToroHealth HUD Configurations
+[hud]
+	#Max distance HUD will show when looking at entity
+	#Range: 1 ~ 256
+	distance = 60
+	#Range: -2000.0 ~ 2000.0
+	x = 4.0
+	#Range: -2000.0 ~ 2000.0
+	y = 4.0
+	#Range: 0.0 ~ 20.0
+	scale = 1.0
+	#Range: 0 ~ 1000
+	hideDelay = 20
+
+#Health bar settings
+[bar]
+	#Allowed Values: NONE, LAST, CUMULATIVE
+	damageNumberType = "NONE"
+
+#Health bars in-world over entities
+[inworld]
+	#Allowed Values: NONE, WHEN_HOLDING_WEAPON, ALWAYS
+	mode = "NONE"
+	#Range: 1.0 ~ 256.0
+	distance = 60.0
+

@@ -1,0 +1,16 @@
+
+[General]
+	#biomeSize * sampleSpaceModifier = sampleSpace. Lowering this value will increase search accuracy but will make the process more resource intensive.
+	#Range: 0 ~ 1000000
+	sampleSpaceModifier = 16
+	#Allows a player to teleport to a located biome when in creative mode, opped, or in cheat mode.
+	allowTeleport = true
+	#The maximum number of samples to be taken when searching for a biome.
+	#Range: 0 ~ 1000000
+	maxSamples = 50000
+	#A list of biomes that the compass will not be able to search for. Specify by resource location (ex: minecraft:ocean) or ID (ex: 0)
+	biomeBlacklist = []
+	#biomeSize * radiusModifier = maxSearchRadius. Raising this value will increase search accuracy but will potentially make the process more resource .
+	#Range: 0 ~ 1000000
+	radiusModifier = 2500
+

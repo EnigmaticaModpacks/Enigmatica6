@@ -1,0 +1,12 @@
+#How fast the emerald should spin (multiplier of the default speed)
+#Range: 0.0 ~ 1.7976931348623157E308
+spinSpeed = 1.0
+#How fast the emerald should bob up and down (multiplier of the default speed)
+#Range: 0.0 ~ 1.7976931348623157E308
+bobSpeed = 1.0
+#Whether info about the saved levels should be shown above the XP Block
+renderNameplate = true
+#The amount of XP needed for the comparator to output a redstone signal of strength one. By default, the signal will be at full strength if the block has 30 levels stored.
+#Range: 0 ~ 143165576
+xpForComparator = 93
+

@@ -1,0 +1,89 @@
+
+[Module]
+	#Should Breaker modules show particle effects when working?
+	breakerParticles = true
+	#Base range for Puller Mk2 (no range upgrades)
+	#Range: > 1
+	puller2BaseRange = 12
+	#Base range for Sender Mk2 (no range upgrades)
+	#Range: > 1
+	sender2BaseRange = 24
+	#Max range for Sender Mk2
+	#Range: > 1
+	sender2MaxRange = 48
+	#Max range for Extruder Mk2
+	#Range: > 1
+	extruder2MaxRange = 64
+	#Max range for Extruder Mk1
+	#Range: > 1
+	extruder1MaxRange = 32
+	#Base range for Sender Mk1 (no range upgrades)
+	#Range: > 1
+	sender1BaseRange = 8
+	#Max range for Sender Mk1
+	#Range: > 1
+	sender1MaxRange = 16
+	#Should Sender modules show particle effects when working?
+	senderParticles = true
+	#Should Vacuum modules show particle effects when working?
+	vacuumParticles = true
+	#Should Extruder Mk1/2 modules play a sound when placing/removing blocks?
+	extruderSound = true
+	#Max range for Vacuum
+	#Range: > 1
+	vacuumMaxRange = 12
+	#Base range for Vacuum (no range upgrades)
+	#Range: > 1
+	vacuumBaseRange = 6
+	#Max range for Puller Mk2
+	#Range: > 1
+	puller2MaxRange = 24
+	#Should Placer modules show particle effects when working?
+	placerParticles = true
+	#Base range for Extruder Mk1 (no range upgrades)
+	#Range: > 1
+	extruder1BaseRange = 16
+	#Should Flinger modules show smoke effects & play a sound when working?
+	flingerEffects = true
+	#Should Extruder Mk1/2 modules push entities along when extruding blocks?
+	extruderPushEntities = true
+	#Should Breaker & Extruder Mk1 Modules respect the harvest level of the pickaxe used to craft them? (e.g. craft with an Iron Pickaxe => can't break Obsidian
+	breakerHarvestLevelLimit = true
+	#Base range for Extruder Mk2 (no range upgrades)
+	#Range: > 1
+	extruder2BaseRange = 32
+	#Base range for Fluid Mk2 (no range upgrades)
+	#Range: > 1
+	fluid2BaseRange = 12
+	#Should Puller modules show particle effects when working?
+	pullerParticles = true
+	#Max range for Fluid Mk2
+	#Range: > 1
+	fluid2MaxRange = 24
+
+[Router]
+	#Hard minimum tick interval for a router regardless of Speed Upgrades
+	#Range: > 1
+	hardMinTickRate = 2
+	#Number of ticks by which 1 Speed Upgrade will reduce the router's tick interval
+	#Range: > 1
+	ticksPerUpgrade = 2
+	#Tick interval for an eco-mode router which has gone into low-power mode
+	#Range: > 1
+	lowPowerTickRate = 100
+	#Fluid transfer rate increase per Fluid Transfer Upgrade
+	#Range: > 1
+	mBperFluidUpgade = 10
+	#Base fluid transfer rate (mB/t in each direction) for a router
+	#Range: > 1
+	fluidBaseTransferRate = 50
+	#Router with eco mode enabled will go into low-power mode if idle for this many server ticks
+	#Range: > 1
+	ecoTimeout = 100
+	#Base tick interval (in server ticks) for a router; router will run this often
+	#Range: > 1
+	baseTickRate = 20
+	#Max fluid transfer rate (mB/t in each direction) for a router
+	#Range: > 1
+	fluidMaxTransferRate = 400
+

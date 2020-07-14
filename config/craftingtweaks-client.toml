@@ -1,0 +1,17 @@
+
+#Crafting Tweaks Client Configuration
+[client]
+	#Set this to true if you don't want the tweak buttons' tooltips to show.
+	hideButtonTooltips = false
+	#This option is toggled by the 'Toggle Buttons' key that can be defined in the Controls settings.
+	hideButtons = false
+	#We both know JEI is much better. This option hides Vanilla's crafting book button instead of moving it.
+	hideVanillaCraftingGuide = false
+	#Add modids here of mods that you wish to disable Crafting Tweaks support for.
+	disabledAddons = []
+	#Set to 'DEFAULT' to enable both buttons and hotkeys. Set to 'BUTTONS' to enable buttons only. Set to 'HOTKEYS' to enable hotkeys only.
+	#Allowed Values: DEFAULT, BUTTONS, HOTKEYS, DISABLED
+	craftingTweaksMode = "DEFAULT"
+	#If set to true, right-clicking the result slot in a crafting table will craft a full stack.
+	rightClickCraftsStack = true
+

@@ -2,63 +2,63 @@
 #Machine Energy Storage Config. This config is synced from server to client.
 [storage]
 	#Base energy storage (Joules).
-	enrichmentChamber = "20000"
+	rotaryCondensentrator = "20000"
+	#Base energy storage (Joules).
+	nutritionalLiquifier = "40000"
+	#Base energy storage (Joules).
+	digitalMiner = "40000"
+	#Base energy storage (Joules).
+	energizedSmelter = "20000"
+	#Base energy storage (Joules).
+	seismicVibrator = "20000"
+	#Base energy storage (Joules).
+	isotopicCentrifuge = "80000"
+	#Base energy storage (Joules). Also defines max output rate.
+	spsPort = "1000000000"
+	#Base energy storage (Joules).
+	teleporter = "5000000"
+	#Base energy storage (Joules).
+	laser = "2000000"
+	#Base energy storage (Joules).
+	modificationStation = "40000"
+	#Base energy storage (Joules).
+	chemicalInjectionChamber = "160000"
+	#Base energy storage (Joules).
+	crusher = "20000"
+	#Base energy storage (Joules).
+	pressurizedReactionBase = "2000"
+	#Base energy storage (Joules).
+	chemicalInfuser = "80000"
+	#Base energy storage (Joules).
+	formulaicAssemblicator = "40000"
 	#Base energy storage (Joules).
 	osmiumCompressor = "80000"
 	#Base energy storage (Joules).
-	combiner = "40000"
+	precisionSawmill = "20000"
+	#Base energy storage (Joules). Also defines max process rate.
+	antiprotonicNucleosynthesizer = "1000000000"
 	#Base energy storage (Joules).
-	crusher = "20000"
+	combiner = "40000"
 	#Base energy storage (Joules).
 	metallurgicInfuser = "20000"
 	#Base energy storage (Joules).
 	purificationChamber = "80000"
 	#Base energy storage (Joules).
-	energizedSmelter = "20000"
+	oxidationChamber = "80000"
 	#Base energy storage (Joules).
-	digitalMiner = "40000"
+	chemicalCrystallizer = "160000"
 	#Base energy storage (Joules).
-	electricPump = "40000"
+	fluidicPlenisher = "40000"
 	#Base energy storage (Joules).
 	chargePad = "512000"
 	#Base energy storage (Joules).
-	rotaryCondensentrator = "20000"
-	#Base energy storage (Joules).
-	oxidationChamber = "80000"
-	#Base energy storage (Joules).
-	chemicalInfuser = "80000"
-	#Base energy storage (Joules).
-	chemicalInjectionChamber = "160000"
-	#Base energy storage (Joules).
 	electrolyticSeparator = "160000"
 	#Base energy storage (Joules).
-	precisionSawmill = "20000"
+	electricPump = "40000"
+	#Base energy storage (Joules).
+	enrichmentChamber = "20000"
 	#Base energy storage (Joules).
 	chemicalDissolutionChamber = "160000"
 	#Base energy storage (Joules).
 	chemicalWasher = "80000"
-	#Base energy storage (Joules).
-	chemicalCrystallizer = "160000"
-	#Base energy storage (Joules).
-	seismicVibrator = "20000"
-	#Base energy storage (Joules).
-	pressurizedReactionBase = "2000"
-	#Base energy storage (Joules).
-	fluidicPlenisher = "40000"
-	#Base energy storage (Joules).
-	laser = "2000000"
-	#Base energy storage (Joules).
-	formulaicAssemblicator = "40000"
-	#Base energy storage (Joules).
-	teleporter = "5000000"
-	#Base energy storage (Joules).
-	modificationStation = "40000"
-	#Base energy storage (Joules).
-	isotopicCentrifuge = "80000"
-	#Base energy storage (Joules).
-	nutritionalLiquifier = "40000"
-	#Base energy storage (Joules). Also defines max process rate.
-	antiprotonicNucleosynthesizer = "1000000000"
-	#Base energy storage (Joules). Also defines max output rate.
-	spsPort = "1000000000"
 

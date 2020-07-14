@@ -1,129 +1,55 @@
 
 #General Config. This config is synced from server to client.
 [general]
-	#Log Mekanism packet names. Debug setting.
-	logPackets = false
-	#Disable to make the anchor upgrade not do anything.
-	allowChunkloading = true
-	#How many ticks must pass until a block's active state is synced with the client, if it has been rapidly changing.
-	blockDeactivationDelay = 60
-	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
-	cardboardModBlacklist = []
-	#Allow right clicking on Cables/Pipes/Tubes with alloys to upgrade the tier.
-	transmitterAlloyUpgrade = true
 	#Base factor for working out machine performance with upgrades - UpgradeModifier * (UpgradesInstalled/UpgradesPossible).
 	#Range: > 1
 	maxUpgradeMultiplier = 10
-	#How much Boiler heat is immediately usable to convert water to steam.
-	boilerWaterConductivity = 0.7
-	#Amount of heat produced per fuel tick of a fuel's burn time in the Fuelwood Heater.
-	heatPerFuelTick = 400.0
+	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
+	maxSolarNeutronActivatorRate = 64
+	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
+	cardboardModBlacklist = []
+	#Disable to make the anchor upgrade not do anything.
+	allowChunkloading = true
 	#How much heat energy is created from one Joule of regular energy in the Resistive Heater.
 	#Range: 0.0 ~ 1.0
 	resistiveHeaterEfficiency = 0.6
 	#Amount of heat each Boiler heating element produces.
 	superheatingHeatTransfer = 1.6E7
+	#Amount of heat produced per fuel tick of a fuel's burn time in the Fuelwood Heater.
+	heatPerFuelTick = 400.0
+	#How much Boiler heat is immediately usable to convert water to steam.
+	boilerWaterConductivity = 0.7
 	#Displayed temperature unit in Mekanism GUIs.
 	#Allowed Values: K, C, R, F, STP
 	temperatureUnit = "K"
-	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
-	maxSolarNeutronActivatorRate = 64
+	#Allow right clicking on Cables/Pipes/Tubes with alloys to upgrade the tier.
+	transmitterAlloyUpgrade = true
+	#Log Mekanism packet names. Debug setting.
+	logPackets = false
+	#How many ticks must pass until a block's active state is synced with the client, if it has been rapidly changing.
+	blockDeactivationDelay = 60
 
-	#Auto Eject Settings
-	[general.auto_eject]
-		#Rate at which fluid gets auto ejected from tiles.
-		fluid = 1024
-		#Rate at which chemicals gets auto ejected from tiles.
-		#Range: 1 ~ 9223372036854775807
-		chemical = 1024
-
-	#Prefilled Tanks
-	[general.prefilled]
-		#Add filled creative fluid tanks to creative/JEI.
-		fluidTanks = true
-		#Add filled creative gas tanks to creative/JEI.
-		gasTanks = true
-		#Add filled creative infusion tanks to creative/JEI.
-		infusionTanks = true
-		#Add filled creative pigment tanks to creative/JEI.
-		pigmentTanks = true
-		#Add filled creative slurry tanks to creative/JEI.
-		slurryTanks = true
-
-	#Energy Conversion Rate Settings
-	[general.energy_conversion]
-		#Disables IC2 power integration. Requires world restart (server-side option in SMP).
-		blacklistIC2 = false
-		#Conversion multiplier from EU to Joules (EU * JoulePerEU = Joules)
-		JoulePerEU = "10"
-		#Conversion multiplier from Joules to EU (Joules * EUPerJoule = EU)
-		EUPerJoule = "0.1000"
-		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
-		blacklistForge = false
-		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
-		JoulePerForgeEnergy = "2.5000"
-		#Conversion multiplier from Joules to Forge Energy (Joules * ForgeEnergyPerJoule = FE)
-		ForgeEnergyPerJoule = "0.4000"
-		#Disables Flux Networks higher throughput Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP). Note: Disabling Forge Energy integration also disables this.
-		blacklistFluxNetworks = false
-		#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethylene burn rate and Gas generator energy capacity.
-		HydrogenEnergyDensity = "200"
-		#Burn time for Ethylene (1mB hydrogen + 2*bioFuel/tick*200ticks/100mB * 20x efficiency bonus).
-		EthyleneBurnTime = 40
-		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
-		maxEnergyPerSteam = "10"
-		#Displayed energy type in Mekanism GUIs.
-		#Allowed Values: J, FE, EU
-		energyType = "FE"
-
-	#Radiation Settings
-	[general.radiation]
-		#Enable worldwide radiation effects. Don't be a downer and disable this.
-		radiationEnabled = true
-		#The radius of chunks checked when running radiation calculations. The algorithm is efficient, but don't abuse it by making this crazy high.
-		#Range: 1 ~ 100
-		chunkCheckRadius = 5
-		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 days to remove a 1,000 Sv/h (crazy high) source.
-		sourceDecayRate = 0.9995
-		#Radiated objects and entities are multiplied by this constant roughly once per second to represent their dosage decay.
-		targetDecayRate = 0.9995
-		#Defines the minimum severity radiation dosage severity (scale of 0 to 1) for which negative effects can take place. Set to 1 to disable negative effects completely.
-		#Range: 0.0 ~ 1.0
-		negativeEffectsMinSeverity = 0.1
-		#Amount of gas (mB) that can be stored in a Radioactive Waste Barrel.
-		#Range: > 1
-		radioactiveWasteBarrelMaxGas = 64000
+	#Thermal Evaporation Plant Settings
+	[general.thermal_evaporation]
+		#Heat to absorb per Solar Panel array of Thermal Evaporation Tower.
+		solarMultiplier = 0.2
+		#Heat capacity of Thermal Evaporation Tower layers (increases amount of energy needed to increase temperature).
+		heatCapacity = 100.0
+		#Temperature to amount produced ratio for Thermal Evaporation Tower.
+		tempMultiplier = 0.4
+		#Thermal Evaporation Tower heat loss per tick.
+		heatDissipation = 0.02
 
 	#Digital Miner Settings
 	[general.digital_miner]
-		#Energy multiplier for using silk touch mode with the Digital Miner.
-		silkMultiplier = 6
-		#Maximum radius in blocks that the Digital Miner can reach. (Increasing this may have negative effects on stability and/or performance. We strongly recommend you leave it at the default value).
-		#Range: > 1
-		maxRadius = 32
 		#Number of ticks required to mine a single block with a Digital Miner (without any upgrades).
 		#Range: > 1
 		ticksPerMine = 80
-
-	#Laser Settings
-	[general.laser]
-		#If enabled, lasers can break blocks and the flamethrower starts fires.
-		aestheticWorldDamage = true
-		#How far (in blocks) a laser can travel.
-		range = 64
-		#Energy needed to destroy or attract blocks with a Laser (per block hardness level).
-		energyNeededPerHardness = "100000"
-		#Energy used per half heart of damage being transferred to entities.
-		energyPerDamage = "2500"
-
-	#Pump Settings
-	[general.pump]
-		#Maximum block distance to pull fluid from for the Electric Pump.
-		maxPumpRange = 80
-		#If enabled makes Water and Heavy Water blocks be removed from the world on pump.
-		pumpWaterSources = false
-		#Fluidic Plenisher stops after this many blocks.
-		maxPlenisherNodes = 4000
+		#Maximum radius in blocks that the Digital Miner can reach. (Increasing this may have negative effects on stability and/or performance. We strongly recommend you leave it at the default value).
+		#Range: > 1
+		maxRadius = 32
+		#Energy multiplier for using silk touch mode with the Digital Miner.
+		silkMultiplier = 6
 
 	#Quantum Entangloporter Settings
 	[general.quantum_entangloporter]
@@ -136,6 +62,53 @@
 		#Range: 1 ~ 9223372036854775807
 		chemicalBuffer = 512000
 
+	#Energy Conversion Rate Settings
+	[general.energy_conversion]
+		#Displayed energy type in Mekanism GUIs.
+		#Allowed Values: J, FE, EU
+		energyType = "FE"
+		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
+		blacklistForge = false
+		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
+		maxEnergyPerSteam = "10"
+		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
+		JoulePerForgeEnergy = "2.5000"
+		#Conversion multiplier from EU to Joules (EU * JoulePerEU = Joules)
+		JoulePerEU = "10"
+		#Disables Flux Networks higher throughput Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP). Note: Disabling Forge Energy integration also disables this.
+		blacklistFluxNetworks = false
+		#Disables IC2 power integration. Requires world restart (server-side option in SMP).
+		blacklistIC2 = false
+		#Burn time for Ethylene (1mB hydrogen + 2*bioFuel/tick*200ticks/100mB * 20x efficiency bonus).
+		EthyleneBurnTime = 40
+		#Conversion multiplier from Joules to EU (Joules * EUPerJoule = EU)
+		EUPerJoule = "0.1000"
+		#Conversion multiplier from Joules to Forge Energy (Joules * ForgeEnergyPerJoule = FE)
+		ForgeEnergyPerJoule = "0.4000"
+		#How much energy is produced per mB of Hydrogen, also affects Electrolytic Separator usage, Ethylene burn rate and Gas generator energy capacity.
+		HydrogenEnergyDensity = "200"
+
+	#Prefilled Tanks
+	[general.prefilled]
+		#Add filled creative gas tanks to creative/JEI.
+		gasTanks = true
+		#Add filled creative infusion tanks to creative/JEI.
+		infusionTanks = true
+		#Add filled creative fluid tanks to creative/JEI.
+		fluidTanks = true
+		#Add filled creative pigment tanks to creative/JEI.
+		pigmentTanks = true
+		#Add filled creative slurry tanks to creative/JEI.
+		slurryTanks = true
+
+	#Auto Eject Settings
+	[general.auto_eject]
+		#Rate at which chemicals gets auto ejected from tiles.
+		#Range: 1 ~ 9223372036854775807
+		chemical = 1024
+		#Rate at which fluid gets auto ejected from tiles.
+		fluid = 1024
+
 	#Block security/protection Settings
 	[general.security]
 		#Enable the security system for players to prevent others from accessing their machines. Does NOT affect Frequencies.
@@ -143,29 +116,56 @@
 		#Ops can bypass the block security restrictions if enabled.
 		opsBypassRestrictions = false
 
+	#Laser Settings
+	[general.laser]
+		#Energy needed to destroy or attract blocks with a Laser (per block hardness level).
+		energyNeededPerHardness = "100000"
+		#How far (in blocks) a laser can travel.
+		range = 64
+		#Energy used per half heart of damage being transferred to entities.
+		energyPerDamage = "2500"
+		#If enabled, lasers can break blocks and the flamethrower starts fires.
+		aestheticWorldDamage = true
+
+	#Radiation Settings
+	[general.radiation]
+		#Amount of gas (mB) that can be stored in a Radioactive Waste Barrel.
+		#Range: > 1
+		radioactiveWasteBarrelMaxGas = 64000
+		#The radius of chunks checked when running radiation calculations. The algorithm is efficient, but don't abuse it by making this crazy high.
+		#Range: 1 ~ 100
+		chunkCheckRadius = 5
+		#Radiated objects and entities are multiplied by this constant roughly once per second to represent their dosage decay.
+		targetDecayRate = 0.9995
+		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 days to remove a 1,000 Sv/h (crazy high) source.
+		sourceDecayRate = 0.9995
+		#Defines the minimum severity radiation dosage severity (scale of 0 to 1) for which negative effects can take place. Set to 1 to disable negative effects completely.
+		#Range: 0.0 ~ 1.0
+		negativeEffectsMinSeverity = 0.1
+		#Enable worldwide radiation effects. Don't be a downer and disable this.
+		radiationEnabled = true
+
+	#SPS Settings
+	[general.sps]
+		#Energy needed to process 1 mB of input (inputPerAntimatter * energyPerInput = energy to produce 1 mB of antimatter).
+		energyPerInput = "1000000"
+		#How much input gas (polonium) in mB must be processed to make 1 mB of antimatter.
+		#Range: > 1
+		inputPerAntimatter = 1000
+
+	#Pump Settings
+	[general.pump]
+		#Fluidic Plenisher stops after this many blocks.
+		maxPlenisherNodes = 4000
+		#Maximum block distance to pull fluid from for the Electric Pump.
+		maxPumpRange = 80
+		#If enabled makes Water and Heavy Water blocks be removed from the world on pump.
+		pumpWaterSources = false
+
 	#Nutritional PasteSettings
 	[general.nutritional_paste]
 		#Saturation level of Nutritional Paste when eaten.
 		saturation = 0.8
 		#How much mB of Nutritional Paste equates to one 'half-food.'
 		mbPerFood = 50
-
-	#Thermal Evaporation Plant Settings
-	[general.thermal_evaporation]
-		#Thermal Evaporation Tower heat loss per tick.
-		heatDissipation = 0.02
-		#Temperature to amount produced ratio for Thermal Evaporation Tower.
-		tempMultiplier = 0.4
-		#Heat to absorb per Solar Panel array of Thermal Evaporation Tower.
-		solarMultiplier = 0.2
-		#Heat capacity of Thermal Evaporation Tower layers (increases amount of energy needed to increase temperature).
-		heatCapacity = 100.0
-
-	#SPS Settings
-	[general.sps]
-		#How much input gas (polonium) in mB must be processed to make 1 mB of antimatter.
-		#Range: > 1
-		inputPerAntimatter = 1000
-		#Energy needed to process 1 mB of input (inputPerAntimatter * energyPerInput = energy to produce 1 mB of antimatter).
-		energyPerInput = "1000000"
 

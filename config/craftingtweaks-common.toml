@@ -1,0 +1,8 @@
+
+#Crafting Tweaks Configuration
+[common]
+	#Set this to true if you want the (de)compress feature to work outside of crafting GUIs (only works if installed on server)
+	compressAnywhere = false
+	#A list of modid:name entries that will not be crafted by the compress key.
+	compressBlacklist = ["minecraft:sandstone", "minecraft:iron_trapdoor"]
+

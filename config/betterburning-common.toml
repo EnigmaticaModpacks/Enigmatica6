@@ -1,0 +1,23 @@
+
+#General settings for the mod.
+[general]
+	#Should flint and steel deal fire damage when used as a weapon?
+	ShouldFlintAndSteelDoFireDamage = true
+	#Fixes some fire related damage sources not causing mobs to drop cooked items?
+	fireFromDamagesource = true
+	#How much fire damage should flint and steel do?
+	#Range: > 0
+	flintAndSteelFireDamage = 3
+	#What is the % chance skeletons will shoot flaming arrows while on fire?
+	#Range: 0.0 ~ 1.0
+	flameArrowSkeletonChance = 0.7
+	#Should fire damage spread between mobs when they hurt eachother? Zombies already do this and won't be changed.
+	fireDamageSpreads = true
+	#What is the % chance that fire damage will spread between mobs?
+	#Range: 0.0 ~ 1.0
+	fireDamageSpreadChance = 0.3
+	#Should having fire resistance stop things from being on fire visually?
+	fireResistanceExtinguish = true
+	#Should skeletons shoot flaming arrows while on fire?
+	flameArrowSkeletons = true
+

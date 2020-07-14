@@ -1,0 +1,46 @@
+#
+#Enable this to get Player Aerial Pearl by right clicking a Zombie or Husk with a Aerial Pearl. [default:true]
+player_aerial_pearl = true
+#
+#Enable this to get Dimensional Binding card by right clicking an Enderman or Endermite with a Binding card. [default:true]
+binding_card_dim = true
+#
+#Enable this to get Lens Of Ender by right clicking an Enderman or Endermite with a Photoelectric Pane. [default:true]
+lens_of_ender = true
+
+["World Gen"]
+	#Enable/Disable ore generation. [default:true]
+	oreGen = true
+	#Dry Ice Ore generation chance
+	#Range: 1 ~ 64
+	dryIceGenChance = 9
+	#Poor Uraninite Ore generation chance
+	#Range: 1 ~ 64
+	poorUraniniteGenChance = 8
+	#Dense Uraninite Ore generation chance
+	#Range: 1 ~ 64
+	denseUraniniteGenChance = 3
+	#Uraninite Ore generation chance
+	#Range: 1 ~ 64
+	uraniniteGenChance = 6
+
+[Materials]
+	#
+	#List of coolant fluids used in the Reactor and the Thermo Generator.
+	#Fluid registry name = cooling per mb, eg: ["minecraft:water=1", "examplemod:fluid=-1"]
+	#Less number more cold, min = -100, max = 1
+	coolantFluids = ["minecraft:water=1"]
+	#
+	#List of heat source blocks used under Thermo Generator.
+	#Block registry name = heat, eg: ["minecraft:lava=1000", "minecraft:magma_block=800"]
+	#Min = 1, max = 900000000
+	heatSources = ["minecraft:lava=1000", "minecraft:magma_block=800", "powah:blazing_crystal_block=2800"]
+	#Energy per solid fuel tick. [default: 30]
+	#Eg: Coal has 1600 fuel tick, so will generate 48000 FE.
+	#Range: 1 ~ 1000000
+	solidFuelEnergyBase = 30
+	#Enable this to allow other mods to add their coolant fluids. [default:true]
+	coolantFluidsAPI = true
+	#Enable this to allow other mods to add their heat source blocks. [default:true]
+	heatBlocksAPI = true
+
