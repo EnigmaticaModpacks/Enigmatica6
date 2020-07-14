@@ -1,0 +1,399 @@
+=======================================
+Enigmatica6 0.1.3 --> Enigmatica6 0.1.4
+=======================================
+
+Added:
+- Additional Bars
+- Better Burning
+- Big Buckets
+- Campfire Torches
+- ConnectedTexturesMod
+- Controlling
+- Crafting Tweaks
+- Ender Mail
+- Extra Disks
+- Global XP
+- Lollipop
+- Miner's Helmet
+- Modular Routers
+- Nature's Compass
+- No Potion Shift
+- OpenBlocks Elevator
+- PackMenu
+- Powah!
+- Refined Storage
+- Server Tab Info
+- Snow Under Trees
+- Storage Drawers
+- TipTheScales
+- Tool Belt
+- Waddles
+- YUNG's Better Mineshafts (Forge)
+- 🌳 Passable Foliage
+
+Updated:
+	Bookshelf (Bookshelf-1.16.1-6.0.2.jar --> Bookshelf-1.16.1-6.1.8.jar):
+		Bookshelf-1.16.1-6.1.8.jar:
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.1-6.1.4.jar:
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Botany Pots (BotanyPots-1.16.1-3.0.2.jar --> BotanyPots-1.16.1-3.0.3.jar):
+		BotanyPots-1.16.1-3.0.3.jar:
+			* Updated to account for new Bookshelf changes. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Curios API (Forge) (curios-FORGE-1.16.1-3.0-beta1.jar --> curios-FORGE-1.16.1-3.0-beta2.jar):
+		curios-FORGE-1.16.1-3.0-beta2.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+	Dank Storage (dankstorage-3.0.jar --> dankstorage-3.4.jar):
+		dankstorage-3.4.jar:
+			* Fixed pickup mode button colors being wrong.
+			* Fixed large itemstack rendering.
+			* Added hook to detect items added to player inventory for any reason, not just item pickup.
+
+		dankstorage-3.3a.jar:
+			* Fixed inventory text not showing in gui
+			* Fixed improper alignment of button texts
+			* fixed tooltips going strange.
+
+		dankstorage-3.3.jar:
+			* danks are now swapped upon inserting into a dock instead of overwritten
+
+		dankstorage-3.2a.jar:
+			* crash fix when opening gui
+
+		dankstorage-3.2.jar:
+			* removed some unnecessary subclasses
+			* fixed docking station being an xray device
+
+		dankstorage-3.1a.jar:
+			* Start of code shrinking
+			* Fixed server crash when rightclicking dock
+
+		dankstorage-3.1.jar:
+			* changed how the dank storages work
+			* They are no longer able to be placed directly
+			* docking station added for interfacing with pipes, hoppers, etc
+
+	Dwarf Coal (dwarfcoal-1.16.1-1.0.jar --> dwarfcoal-1.16.1-1.1.jar):
+		dwarfcoal-1.16.1-1.1.jar:
+			* fixed configs (Changed ConfigType to SERVER)
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.1-a1.jar --> engineersdecor-1.16.1-1.1.1-b2.jar):
+		engineersdecor-1.16.1-1.1.1-b2.jar:
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+		engineersdecor-1.16.1-1.1.1-b1.jar:
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition (for missing Immersive Engineering) fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+	Engineer's Tools (engineerstools-1.16.1-1.0.8-a1.jar --> engineerstools-1.16.1-1.0.9-b1.jar):
+		engineerstools-1.16.1-1.0.9-b1.jar:
+			* v1.0.9-b1   [A] JEI integration added.
+			[A] Added Crushing Hammer Mek Osmium recipe, dust x2, 250% hammer damage.
+			* v1.0.8-a1   [A] Initial 1.16.1 port.
+
+	FastWorkbench (FastWorkbench-1.16.1-4.0.1.jar --> FastWorkbench-1.16.1-4.1.1.jar):
+		FastWorkbench-1.16.1-4.1.1.jar:
+			Removes erroneous debug print
+
+		FastWorkbench-1.16.1-4.1.0.jar:
+			Significant improvements have been made to the general systems in place.
+			Overall: Less packets are being sent, less items are being shifted around, and everything should just run a bit better. There's less duplication of objects, and a ton of the code is now more extensible (meaning mods can interface with FB way easier now!) and reusable.
+			Additionally, the player crafting grid is now supported, so you can craft lag-free in the 2x2 grid. This part requires a coremod, but it is done as non-invasively as possible (it requires two hooks, one to properly handle shift click crafting and one to handle grid updates). Both hooks just call code that FastBench uses for the 3x3 crafting table, with nearly nothing special needed for this support. Any mod wanting to support their own custom crafting grid should be able to do so in a similar fashion.
+			This is marked as beta as this is largely untested with mods, but it works perfectly in a vanilla environment.
+
+	Game Stages (Archived file --> GameStages-1.16.1-3.1.7.jar):
+		GameStages-1.16.1-3.1.7.jar:
+			* Fixed javadocs. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?GameStages)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		GameStages-1.16.1-3.0.5.jar:
+			* Disabled recompression script. - Tyler Hancock
+			* Removed the deprecated jar signature code. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?GameStages)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		GameStages-1.16.1-3.0.4.jar:
+			* Fixed version number. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?GameStages)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Gauges and Switches (rsgauges-1.16.1-1.2.4-a1.jar --> rsgauges-1.16.1-1.2.4-b1.jar):
+		rsgauges-1.16.1-1.2.4-b1.jar:
+			* v1.2.4-b1  [M] Coloring of Sensitive Glass ported.
+			[F] Indicator power issue fixed.
+			* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+			[M] Modified global switch power placement default setting to strong.
+			* v1.2.4-a1  [A] Initial port.
+
+		rsgauges-1.16.1-1.2.4-a2.jar:
+			* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+			[M] Modified global switch power placement default setting to strong.
+			* v1.2.4-a1  [A] Initial port.
+
+	GraveStone Mod ([1.16.1] Gravestone Mod 1.16.1-1.0.0 --> [1.16.1] Gravestone Mod 1.16.1-1.0.3):
+		[1.16.1] Gravestone Mod 1.16.1-1.0.3:
+			* Fixed hand animation with placed gravestone
+
+		[1.16.1] Gravestone Mod 1.16.1-1.0.2:
+			* Re added player ghost
+
+		[1.16.1] Gravestone Mod 1.16.1-1.0.1:
+			* Fixed death info GUI text
+
+	Inventory Tweaks Renewed (invtweaks-1.16.1-1.0.4.jar --> invtweaks-1.16.1-1.0.5.jar):
+		invtweaks-1.16.1-1.0.5.jar:
+			No changelog available.
+
+	Laser Relays (laserrelays-1.3.jar --> laserrelays-1.6.jar):
+		laserrelays-1.6.jar:
+			readd Mekanism gas support
+
+		laserrelays-1.5.jar:
+			added wire cutters and block highlight
+
+		laserrelays-1.4.jar:
+			* Added color filters
+			* fixed item nodes pulling from the opposite side.
+
+	Mekanism (Mekanism-1.16.1-10.0.0.423.jar --> Mekanism-1.16.1-10.0.1.424.jar):
+		Mekanism-1.16.1-10.0.1.424.jar:
+			[7c96e73](https://github.com/mekanism/Mekanism/commit/7c96e73b2a84debda245cd9217df763ac246b26c) - Bump min forge version to version that fixes and ensures generators registers gases after the gas registry has been created
+			[d3c73d7](https://github.com/mekanism/Mekanism/commit/d3c73d74da8aa697592e47dd414495ddd7bcba17) - Wrap everything through our client registration utils for coloring, and also fix transparent plastic's render layer being set in the wrong place
+			[bf1e84e](https://github.com/mekanism/Mekanism/commit/bf1e84e0552910dfc6688cdd80a6199412e48dc6) - Don't let people hang out inside of Fission Reactors of the SPS, radiate other types of entities
+			[be3ceaf](https://github.com/mekanism/Mekanism/commit/be3ceaf2dfec9dd14865c9491e1a72f8c4ef3b41) - Merge
+			[13933e1](https://github.com/mekanism/Mekanism/commit/13933e14744f609f2f00efb6246df5e6fa0d1cdc) - add maven info to the readme
+			[7522c2f](https://github.com/mekanism/Mekanism/commit/7522c2f0ea36ce06e451f67c4cff9b9e7a836c69) - Fail fast from radiating reactors in FR if disabled in config
+			[8bc6363](https://github.com/mekanism/Mekanism/commit/8bc636318c2ac47ce4009fc4260cdc8bbe96a53e) - Update digital_miner.json
+			[b259670](https://github.com/mekanism/Mekanism/commit/b259670266d383d7f0fbe3702a741f94b2e239db) - Additionally radiate entities in FR by waste radiaoctivity
+			[9c71e8a](https://github.com/mekanism/Mekanism/commit/9c71e8a4686468fc640c0d050dd3a11c2435c8b9) - Fix color button on the sorter not working (and probably a bunch of other gui interactions being broken) [#6291](https://github.com/mekanism/Mekanism/issues/6291)
+			[0c84e10](https://github.com/mekanism/Mekanism/commit/0c84e1053358e637e412edfa8007075be7575bce) - Fix Logistical Transporter querying wrong connection side for output ([#6292](https://github.com/mekanism/Mekanism/issues/6292))
+			[1ff5619](https://github.com/mekanism/Mekanism/commit/1ff56194f68c04502ebaf609e66fcc40f813d9dc) - Fix Logistical Sorter color slot being blocked by screen ([#6294](https://github.com/mekanism/Mekanism/issues/6294))
+			[5fb634c](https://github.com/mekanism/Mekanism/commit/5fb634c6fec60f0fa62f76ceaf65d35f04cd162f) - Drastically reduce volume of hydraulic & GM unit sounds
+			[8893250](https://github.com/mekanism/Mekanism/commit/8893250ba00b29db619895fea308437980f7e08a) - Fix SyncMapper's compatibility with Java 9+ as it seems that LambdaMetaFactory behaves differently and is not properly able to handle primitives when finding existing setters. [#6293](https://github.com/mekanism/Mekanism/issues/6293)
+			[a99eee5](https://github.com/mekanism/Mekanism/commit/a99eee54eb42ff7a4e8cb5ccaef9c0fc45ab7571) - updated ores ([#6296](https://github.com/mekanism/Mekanism/issues/6296))
+			[cda0458](https://github.com/mekanism/Mekanism/commit/cda04587138ceab5dc4a50e74fca61a2a48a4b2f) - Optimize png sizes of adjusted ore textures from last commit
+			[ffb6923](https://github.com/mekanism/Mekanism/commit/ffb6923c4f5b19ed782cbf11ca6ad1bb6ce794d7) - Fix Chemical Crystallizer recipe ([#6303](https://github.com/mekanism/Mekanism/issues/6303))
+			[bcc0e51](https://github.com/mekanism/Mekanism/commit/bcc0e5129f0d1477343dacc52c2c0781dd03e72b) - Fix boil capacity always showing as zero ([#6309](https://github.com/mekanism/Mekanism/issues/6309)), minor cleanup
+			[14b3570](https://github.com/mekanism/Mekanism/commit/14b357078d3a025797a7cf3937ae8b5605c992bf) - Allow using the meka tool to teleport into fluids ([#6304](https://github.com/mekanism/Mekanism/issues/6304)), and fix it not playing a teleportation sound for the player using it ([#6305](https://github.com/mekanism/Mekanism/issues/6305)) (Also fixed portable teleporter not playing a sound, and the meka tool's farming module not making sounds for the player using it
+			[8a650c1](https://github.com/mekanism/Mekanism/commit/8a650c1987d80106b2f9fa10b3e80ee4fbf0188a) - Add mobGriefing and keepInventory to testrules command ([#6310](https://github.com/mekanism/Mekanism/issues/6310))
+			[20716a0](https://github.com/mekanism/Mekanism/commit/20716a0c2f2d473bc743e5402de11ceed9ce5d55) - New Crowdin updates ([#6288](https://github.com/mekanism/Mekanism/issues/6288))
+			[4f30685](https://github.com/mekanism/Mekanism/commit/4f30685ac1888ca63f661c6163ffd588f968319c) - Bump version to 10.0.1
+
+	Mekanism Generators (MekanismGenerators-1.16.1-10.0.0.423.jar --> MekanismGenerators-1.16.1-10.0.1.424.jar):
+		MekanismGenerators-1.16.1-10.0.1.424.jar:
+			[7c96e73](https://github.com/mekanism/Mekanism/commit/7c96e73b2a84debda245cd9217df763ac246b26c) - Bump min forge version to version that fixes and ensures generators registers gases after the gas registry has been created
+			[d3c73d7](https://github.com/mekanism/Mekanism/commit/d3c73d74da8aa697592e47dd414495ddd7bcba17) - Wrap everything through our client registration utils for coloring, and also fix transparent plastic's render layer being set in the wrong place
+			[bf1e84e](https://github.com/mekanism/Mekanism/commit/bf1e84e0552910dfc6688cdd80a6199412e48dc6) - Don't let people hang out inside of Fission Reactors of the SPS, radiate other types of entities
+			[be3ceaf](https://github.com/mekanism/Mekanism/commit/be3ceaf2dfec9dd14865c9491e1a72f8c4ef3b41) - Merge
+			[13933e1](https://github.com/mekanism/Mekanism/commit/13933e14744f609f2f00efb6246df5e6fa0d1cdc) - add maven info to the readme
+			[7522c2f](https://github.com/mekanism/Mekanism/commit/7522c2f0ea36ce06e451f67c4cff9b9e7a836c69) - Fail fast from radiating reactors in FR if disabled in config
+			[8bc6363](https://github.com/mekanism/Mekanism/commit/8bc636318c2ac47ce4009fc4260cdc8bbe96a53e) - Update digital_miner.json
+			[b259670](https://github.com/mekanism/Mekanism/commit/b259670266d383d7f0fbe3702a741f94b2e239db) - Additionally radiate entities in FR by waste radiaoctivity
+			[9c71e8a](https://github.com/mekanism/Mekanism/commit/9c71e8a4686468fc640c0d050dd3a11c2435c8b9) - Fix color button on the sorter not working (and probably a bunch of other gui interactions being broken) [#6291](https://github.com/mekanism/Mekanism/issues/6291)
+			[0c84e10](https://github.com/mekanism/Mekanism/commit/0c84e1053358e637e412edfa8007075be7575bce) - Fix Logistical Transporter querying wrong connection side for output ([#6292](https://github.com/mekanism/Mekanism/issues/6292))
+			[1ff5619](https://github.com/mekanism/Mekanism/commit/1ff56194f68c04502ebaf609e66fcc40f813d9dc) - Fix Logistical Sorter color slot being blocked by screen ([#6294](https://github.com/mekanism/Mekanism/issues/6294))
+			[5fb634c](https://github.com/mekanism/Mekanism/commit/5fb634c6fec60f0fa62f76ceaf65d35f04cd162f) - Drastically reduce volume of hydraulic & GM unit sounds
+			[8893250](https://github.com/mekanism/Mekanism/commit/8893250ba00b29db619895fea308437980f7e08a) - Fix SyncMapper's compatibility with Java 9+ as it seems that LambdaMetaFactory behaves differently and is not properly able to handle primitives when finding existing setters. [#6293](https://github.com/mekanism/Mekanism/issues/6293)
+			[a99eee5](https://github.com/mekanism/Mekanism/commit/a99eee54eb42ff7a4e8cb5ccaef9c0fc45ab7571) - updated ores ([#6296](https://github.com/mekanism/Mekanism/issues/6296))
+			[cda0458](https://github.com/mekanism/Mekanism/commit/cda04587138ceab5dc4a50e74fca61a2a48a4b2f) - Optimize png sizes of adjusted ore textures from last commit
+			[ffb6923](https://github.com/mekanism/Mekanism/commit/ffb6923c4f5b19ed782cbf11ca6ad1bb6ce794d7) - Fix Chemical Crystallizer recipe ([#6303](https://github.com/mekanism/Mekanism/issues/6303))
+			[bcc0e51](https://github.com/mekanism/Mekanism/commit/bcc0e5129f0d1477343dacc52c2c0781dd03e72b) - Fix boil capacity always showing as zero ([#6309](https://github.com/mekanism/Mekanism/issues/6309)), minor cleanup
+			[14b3570](https://github.com/mekanism/Mekanism/commit/14b357078d3a025797a7cf3937ae8b5605c992bf) - Allow using the meka tool to teleport into fluids ([#6304](https://github.com/mekanism/Mekanism/issues/6304)), and fix it not playing a teleportation sound for the player using it ([#6305](https://github.com/mekanism/Mekanism/issues/6305)) (Also fixed portable teleporter not playing a sound, and the meka tool's farming module not making sounds for the player using it
+			[8a650c1](https://github.com/mekanism/Mekanism/commit/8a650c1987d80106b2f9fa10b3e80ee4fbf0188a) - Add mobGriefing and keepInventory to testrules command ([#6310](https://github.com/mekanism/Mekanism/issues/6310))
+			[20716a0](https://github.com/mekanism/Mekanism/commit/20716a0c2f2d473bc743e5402de11ceed9ce5d55) - New Crowdin updates ([#6288](https://github.com/mekanism/Mekanism/issues/6288))
+			[4f30685](https://github.com/mekanism/Mekanism/commit/4f30685ac1888ca63f661c6163ffd588f968319c) - Bump version to 10.0.1
+
+	Mekanism Tools (MekanismTools-1.16.1-10.0.0.423.jar --> MekanismTools-1.16.1-10.0.1.424.jar):
+		MekanismTools-1.16.1-10.0.1.424.jar:
+			[7c96e73](https://github.com/mekanism/Mekanism/commit/7c96e73b2a84debda245cd9217df763ac246b26c) - Bump min forge version to version that fixes and ensures generators registers gases after the gas registry has been created
+			[d3c73d7](https://github.com/mekanism/Mekanism/commit/d3c73d74da8aa697592e47dd414495ddd7bcba17) - Wrap everything through our client registration utils for coloring, and also fix transparent plastic's render layer being set in the wrong place
+			[bf1e84e](https://github.com/mekanism/Mekanism/commit/bf1e84e0552910dfc6688cdd80a6199412e48dc6) - Don't let people hang out inside of Fission Reactors of the SPS, radiate other types of entities
+			[be3ceaf](https://github.com/mekanism/Mekanism/commit/be3ceaf2dfec9dd14865c9491e1a72f8c4ef3b41) - Merge
+			[13933e1](https://github.com/mekanism/Mekanism/commit/13933e14744f609f2f00efb6246df5e6fa0d1cdc) - add maven info to the readme
+			[7522c2f](https://github.com/mekanism/Mekanism/commit/7522c2f0ea36ce06e451f67c4cff9b9e7a836c69) - Fail fast from radiating reactors in FR if disabled in config
+			[8bc6363](https://github.com/mekanism/Mekanism/commit/8bc636318c2ac47ce4009fc4260cdc8bbe96a53e) - Update digital_miner.json
+			[b259670](https://github.com/mekanism/Mekanism/commit/b259670266d383d7f0fbe3702a741f94b2e239db) - Additionally radiate entities in FR by waste radiaoctivity
+			[9c71e8a](https://github.com/mekanism/Mekanism/commit/9c71e8a4686468fc640c0d050dd3a11c2435c8b9) - Fix color button on the sorter not working (and probably a bunch of other gui interactions being broken) [#6291](https://github.com/mekanism/Mekanism/issues/6291)
+			[0c84e10](https://github.com/mekanism/Mekanism/commit/0c84e1053358e637e412edfa8007075be7575bce) - Fix Logistical Transporter querying wrong connection side for output ([#6292](https://github.com/mekanism/Mekanism/issues/6292))
+			[1ff5619](https://github.com/mekanism/Mekanism/commit/1ff56194f68c04502ebaf609e66fcc40f813d9dc) - Fix Logistical Sorter color slot being blocked by screen ([#6294](https://github.com/mekanism/Mekanism/issues/6294))
+			[5fb634c](https://github.com/mekanism/Mekanism/commit/5fb634c6fec60f0fa62f76ceaf65d35f04cd162f) - Drastically reduce volume of hydraulic & GM unit sounds
+			[8893250](https://github.com/mekanism/Mekanism/commit/8893250ba00b29db619895fea308437980f7e08a) - Fix SyncMapper's compatibility with Java 9+ as it seems that LambdaMetaFactory behaves differently and is not properly able to handle primitives when finding existing setters. [#6293](https://github.com/mekanism/Mekanism/issues/6293)
+			[a99eee5](https://github.com/mekanism/Mekanism/commit/a99eee54eb42ff7a4e8cb5ccaef9c0fc45ab7571) - updated ores ([#6296](https://github.com/mekanism/Mekanism/issues/6296))
+			[cda0458](https://github.com/mekanism/Mekanism/commit/cda04587138ceab5dc4a50e74fca61a2a48a4b2f) - Optimize png sizes of adjusted ore textures from last commit
+			[ffb6923](https://github.com/mekanism/Mekanism/commit/ffb6923c4f5b19ed782cbf11ca6ad1bb6ce794d7) - Fix Chemical Crystallizer recipe ([#6303](https://github.com/mekanism/Mekanism/issues/6303))
+			[bcc0e51](https://github.com/mekanism/Mekanism/commit/bcc0e5129f0d1477343dacc52c2c0781dd03e72b) - Fix boil capacity always showing as zero ([#6309](https://github.com/mekanism/Mekanism/issues/6309)), minor cleanup
+			[14b3570](https://github.com/mekanism/Mekanism/commit/14b357078d3a025797a7cf3937ae8b5605c992bf) - Allow using the meka tool to teleport into fluids ([#6304](https://github.com/mekanism/Mekanism/issues/6304)), and fix it not playing a teleportation sound for the player using it ([#6305](https://github.com/mekanism/Mekanism/issues/6305)) (Also fixed portable teleporter not playing a sound, and the meka tool's farming module not making sounds for the player using it
+			[8a650c1](https://github.com/mekanism/Mekanism/commit/8a650c1987d80106b2f9fa10b3e80ee4fbf0188a) - Add mobGriefing and keepInventory to testrules command ([#6310](https://github.com/mekanism/Mekanism/issues/6310))
+			[20716a0](https://github.com/mekanism/Mekanism/commit/20716a0c2f2d473bc743e5402de11ceed9ce5d55) - New Crowdin updates ([#6288](https://github.com/mekanism/Mekanism/issues/6288))
+			[4f30685](https://github.com/mekanism/Mekanism/commit/4f30685ac1888ca63f661c6163ffd588f968319c) - Bump version to 10.0.1
+
+	Metal Barrels (metalbarrels-3.0.jar --> metalbarrels-3.2.jar):
+		metalbarrels-3.2.jar:
+			* code cleanup
+			* fix missing model
+
+		metalbarrels-3.1a.jar:
+			fixed gold barrel rendering incorrectly and crystal not being transparent
+
+		metalbarrels-3.1.jar:
+			added recipe for Netherite Barrel
+			fixed localization of Netherite Barrel
+			fixed Inventory text appearing in wrong spot
+
+	MoreVanillaLib (morevanillalib-1.16.1-1.2.5.jar --> morevanillalib-1.16.1-1.2.8.jar):
+		morevanillalib-1.16.1-1.2.8.jar:
+			increased durability for hammers/excavators
+			durability multiplier configurable now
+
+		morevanillalib-1.16.1-1.2.7.jar:
+			fix crash with empty tags when jei is installed
+
+		morevanillalib-1.16.1-1.2.6.jar:
+			fixed durability issue with hammers/excavators
+
+	Pedestals (Pedestals - 0.3 --> Pedestals - 0.3b):
+		Pedestals - 0.3b:
+			HOTFIX UPDATE
+			I've been informed of some client and server breaking issues with one of the upgrades, luckily due to lack of documentation this hasn't effected too many yet, but that too will change.
+			Fixes:
+			* Smelter upgrade trying to process materials that dont have smelting recipes, causing a crash until the 'below' inventory is removed.
+			* Fixed some upgrades printing values to the console.
+			* Fixed some missing tooltips.
+			* Added a feature to Smelter, Crusher and Saw Mill, to output any inputs that don't have valid recipes for that function.
+			* Fixed xp magnet upgrade not collecting xp from players colliding with pedestal.
+			TO NOTE:
+			The lack of documentation for the mod has been brought to my attention. I will be working on a text/image based wiki for the mod. I will try to get this fully out before the 0.4 release, with that ill also be doing some short videos as well for those who prefer it that way.
+
+	Rats (rats-6.0.3-1.16.1 --> rats-6.0.4-1.16.1):
+		rats-6.0.4-1.16.1:
+			-Fixed crash with newest forge versions
+			-Fixed weird fog colors in Ratlantis
+			-Fixed too many particles from Ratlantean Spirits
+			-Increased hitbox size for Ratlantean Spirits
+			-Fixed rats tunneling through stone and iron
+			-Fixed issues relating to Lumberjack upgrade standing on chests
+			-Fixed rats not picking items up
+			-Fixed grass/flower dupe bug with Replanter upgrade
+
+	Reap Mod ([1.16.1] Reap Mod 1.16.1-1.0.0 --> [1.16.1] Reap Mod 1.16.1-1.0.2):
+		[1.16.1] Reap Mod 1.16.1-1.0.2:
+			* Reorganized config
+			* Added configurable breaking speed
+
+		[1.16.1] Reap Mod 1.16.1-1.0.1:
+			* Added the ability to use tags in the config
+
+	Structure Gel API (Structure Gel API 1.16.1-v1.1.0 --> Structure Gel API 1.16.1-v1.1.1):
+		Structure Gel API 1.16.1-v1.1.1:
+			Fixes:
+			* Fixed a bug preventing /locate from working on structures from this mod
+
+	Trash Cans (trashcans-1.0.0-mc1.16 --> trashcans-1.0.1-mc1.16):
+		trashcans-1.0.1-mc1.16:
+			* added GUIs to all trash cans
+			* added filters for items and liquids
+			* added a energy transfer limit
+			* fixed recipes and advancements
+
+	TrashSlot (TrashSlot_1.16.1-12.0.0.jar --> TrashSlot_1.16.1-12.0.1.jar):
+		TrashSlot_1.16.1-12.0.1.jar:
+			Fixed crash with later versions of Forge
+
+	Waystones (Waystones_1.16.1-7.0.0.jar --> Waystones_1.16.1-7.0.1.jar):
+		Waystones_1.16.1-7.0.1.jar:
+			Fixed server configs resetting on every startup
+
+Removed:
+- Productive Bees
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
