@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @()
+$CLIENT_MODS = @("nopotionshift")
 
 	
 # =====================================================================//
