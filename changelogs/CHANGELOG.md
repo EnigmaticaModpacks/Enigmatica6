@@ -1,4 +1,36 @@
-** To play Enigmatica 6, [download the modpack zip](https://www.curseforge.com/minecraft/modpacks/enigmatica6/download/2998725) and [import it into Twitch](https://help.twitch.tv/s/article/guide-to-modpacks?language=en_US#Import). **
+## Enigmatica 6 v0.1.4
+
+_Using Forge-1.16.1-32.0.66 | [Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.4.txt)_
+
+**Mod Additions**
+
+- Additional Bars
+- Better Burning
+- Big Buckets
+- Campfire Torches
+- ConnectedTexturesMod
+- Controlling
+- Crafting Tweaks
+- **Ender Mail**
+- Extra Disks
+- Global XP
+- Lollipop
+- Miner's Helmet
+- **Modular Routers**
+- **Nature's Compass**
+- No Potion Shift
+- OpenBlocks Elevator
+- PackMenu
+- **Powah!**
+- **Refined Storage**
+- Server Tab Info
+- Snow Under Trees
+- **Storage Drawers**
+- TipTheScales
+- Tool Belt
+- Waddles
+- **YUNG's Better Mineshafts (Forge)**
+- 🌳 Passable Foliage
 
 
 
