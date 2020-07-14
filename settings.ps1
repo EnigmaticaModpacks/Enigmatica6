@@ -1,29 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @(
-	"AppleSkin", 
-	"BetterAdvancements",
-	"ClientTweaks",
-	"CraftingTweaks", 
-	"DefaultOptions", 
-	"DefaultSettings",
-	"EnchantmentDescriptions", 
-	"EquipmentTooltips", 
-	"FpsReducer", 
-	"invtweaks",
-	"JustEnoughResources",
-	"LLOverlayReloaded", 
-	"MouseTweaks",
-	"nmdar_", 
-	"Neat", 
-	"overloadedarmorbar", 
-	"ReAuth",
-	"StepUp",
-	"ToastControl", 
-	"toughnessbar", 
-	"Xaeros_Minimap", 
-	"XaerosWorldMap")
+$CLIENT_MODS = @()
 
 	
 # =====================================================================//
@@ -40,10 +18,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.1.3"
+$MODPACK_VERSION = "0.1.4"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.1.2"
+$LAST_MODPACK_VERSION = "0.1.3"
 
 $FORGE_VERSION = 32.0.62
 
