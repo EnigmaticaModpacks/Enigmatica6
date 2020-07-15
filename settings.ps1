@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift")
+$CLIENT_MODS = @("nopotionshift", "ding")
 
 	
 # =====================================================================//
@@ -18,10 +18,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.1.4"
+$MODPACK_VERSION = "0.1.5"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.1.3"
+$LAST_MODPACK_VERSION = "0.1.4"
 
 $FORGE_VERSION = 32.0.66
 

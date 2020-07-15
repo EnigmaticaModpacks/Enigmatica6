@@ -11,11 +11,17 @@
 	#Cooldown for when an abandoned nest will spawn a new inhabitant
 	#Range: > 20
 	nestRepopulationCooldown = 36000
+	#How much FE to use per tick for a powered centrifuge when processing an item. Default 10.
+	#Range: > 1
+	centrifugePowerUse = 10
 	#Bees will create combs instead of raw resource. Combs will need to be processed in a centrifuge. Default true.
 	enableCombProduce = true
 	#How often should a bee attempt to generate items while in the hive. Default 500.
 	#Range: > 20
 	itemTickRate = 500
+	#How many ticks it takes for process a recipe in the powerd centrifuge. Default 100.
+	#Range: > 20
+	centrifugePoweredProcessingTime = 100
 
 ["Bee attributes"]
 	#Number of ticks between effects on nearby entities
@@ -30,6 +36,9 @@
 	#Chance to increase tolerance (rain or thunder tolerance trait) while leashed in a hostile environment.
 	#Range: 0.0 ~ 1.0
 	toleranceChance = 0.1
+	#Chance to extract genes from a bottle of bee material.
+	#Range: 0.0 ~ 1.0
+	genExtractChance = 0.85
 
 [Worldgen]
 	"enable_productivebees:acacia_wood_nest" = true
@@ -91,6 +100,9 @@
 	#Production chance for productivebees:tungsten_bee
 	#Range: 0.0 ~ 1.0
 	"productivebees:tungsten_bee" = 0.65
+	#Production chance for productivebees:rancher_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:rancher_bee" = 0.65
 	#Production chance for productivebees:titanium_bee
 	#Range: 0.0 ~ 1.0
 	"productivebees:titanium_bee" = 0.65

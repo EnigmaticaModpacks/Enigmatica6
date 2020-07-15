@@ -1,3 +1,23 @@
+## Enigmatica 6 v0.1.5
+
+_Using Forge-1.16.1-32.0.66 | [Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.5.txt)_
+
+**Mod Additions**
+
+- AI Improvements
+- Additional Lights
+- Bed Benefits
+- Cauldron Recipes
+- KubeJS
+- Overloaded Armor Bar
+- Productive Bees
+- Refined Storage Addons
+- Tool Stats
+
+**Bug fixes**
+
+- Crafting Tweaks Crash [\#4](https://github.com/NillerMedDild/Enigmatica6/issues/4)
+
 ## Enigmatica 6 v0.1.4
 
 _Using Forge-1.16.1-32.0.66 | [Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.4.txt)_

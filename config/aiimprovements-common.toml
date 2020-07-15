@@ -1,0 +1,40 @@
+
+#Entity Settings
+[entity]
+
+	#General
+	[entity.general]
+		#Allow AI tasks to be removed from entities at runtime. If this is disable no per mob or per mob type removes will run.
+		allow_remove_calls = true
+		#Allows repeat remove calls to bubble to the top of the list to improve performance of repeat mob spawning.
+		enable_call_bubbling = true
+
+	#Entity Mob
+	[entity.mob]
+		#Remove the look at goal (player or attack target) AI task. This will cause AIs to not face targets or walking directions.
+		remove_look_goal = false
+		#Remove the look at random position AI task. This will cause AIs to feel a little lifeless as they do not animate head movement while idle.
+		remove_look_random = false
+		#Replaces the default look controller with a version featuring cached tan math improving performance. Only works on vanilla style mobs, if a mod overrides the look controller it will skip.
+		replace_look_controller = true
+
+	#Entity Fish
+	[entity.fish]
+		#Remove the fish's random swimming pathfinder. This will cause fish to stay in position more often.
+		remove_swim = false
+		#Remove the fish's panic pathfinder. This will cause fish to not run away.
+		remove_panic = false
+		#Remove the fish's AI task to avoid players.
+		remove_avoid_player = false
+		#Remove the fish's AI task to follow a leader fish to act as a group of fish.
+		remove_follow_leader = false
+		#Remove the fish's AI task to puff up when entities are nearby
+		remove_puff = false
+
+	#Squid Fish
+	[entity.squid]
+		#Remove the squid's flee pathfinder. This will cause squid to not run away.
+		remove_flee = false
+		#Remove the squid's random movement pathfinder. This will cause squid to swim around randomly.
+		remove_random_move = false
+

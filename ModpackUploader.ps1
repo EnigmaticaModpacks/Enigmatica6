@@ -70,11 +70,11 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE) {
             Remove-Item -Path $FilePath -Force
         }
 
-        # Write-Host "Removing Client Mods from Server Files" -ForegroundColor Cyan
-        # foreach ($clientMod in $CLIENT_MODS) {
-        # Write-Host "Removing Client Mod $clientMod"
-        # sz d $SERVER_FILENAME "mods/$clientMod*" | Out-Null
-        # }
+        Write-Host "Removing Client Mods from Server Files" -ForegroundColor Cyan
+        foreach ($clientMod in $CLIENT_MODS) {
+			Write-Host "Removing Client Mod $clientMod"
+			sz d $SERVER_FILENAME "mods/$clientMod*" | Out-Null
+        }
 	
     }
 }

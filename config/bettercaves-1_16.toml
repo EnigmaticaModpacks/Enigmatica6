@@ -152,7 +152,7 @@
 				# Determines how frequently Type 1 Caves spawn. 0 = will not spawn at all.
 				# Default: 10
 				#Range: 0 ~ 10
-				"Type 1 Cave Priority" = 10
+				"Type 1 Cave Priority" = 0
 
 			###########################################################################################################
 			## Settings used in the generation of type 2 caves, which tend to be more open and spacious.
@@ -183,7 +183,7 @@
 				# Determines how frequently Type 2 Caves spawn. 0 = will not spawn at all.
 				# Default: 5
 				#Range: 0 ~ 10
-				"Type 2 Cave Priority" = 5
+				"Type 2 Cave Priority" = 0
 
 			###########################################################################################################
 			## Settings controlling vanilla Minecraft cave generation.
@@ -192,15 +192,15 @@
 				# The maximum y-coordinate at which vanilla caves can generate.
 				# Default: 128
 				#Range: 0 ~ 255
-				"Vanilla Cave Maximum Altitude" = 128
+				"Vanilla Cave Maximum Altitude" = 60
 				# The density of vanilla caves. Higher = more caves, closer together. 
 				# Default: 14 (value used in vanilla)
 				#Range: 0 ~ 100
-				"Vanilla Cave Density" = 14
+				"Vanilla Cave Density" = 25
 				# Determines how frequently vanilla caves spawn. 0 = will not spawn at all.
 				# Default: 0
 				#Range: 0 ~ 10
-				"Vanilla Cave Priority" = 0
+				"Vanilla Cave Priority" = 1
 				# The minimum y-coordinate at which vanilla caves can generate.
 				# Default: 8
 				#Range: 0 ~ 255
@@ -222,7 +222,7 @@
 			# Percent chance of caverns spawning in a given region.
 			# Default: caverns spawn in 25% of regions.
 			#Range: 0.0 ~ 100.0
-			"Cavern Spawn Chance" = 25.0
+			"Cavern Spawn Chance" = 15
 			# Determines how large cavern regions are. This controls the average size of caverns.
 			# Accepted values: Small, Medium, Large, ExtraLarge, Custom
 			# Default: Small (recommended).

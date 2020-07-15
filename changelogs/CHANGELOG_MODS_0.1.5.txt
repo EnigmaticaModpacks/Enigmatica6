@@ -1,0 +1,178 @@
+=======================================
+Enigmatica6 0.1.4 --> Enigmatica6 0.1.5
+=======================================
+
+Added:
+- AI Improvements
+- Additional Lights
+- Bed Benefits
+- Cauldron Recipes
+- KubeJS
+- Overloaded Armor Bar
+- Productive Bees
+- Refined Storage Addons
+- Tool Stats
+
+Updated:
+	Additional Bars ([1.16.1] Additional Bars 1.4.1 --> [1.16.1] Additional Bars 1.4.2):
+		[1.16.1] Additional Bars 1.4.2:
+			Release: 1.4.2:
+			* [1.16.x] Added Warped, Crossed Warped, Horizontal Warped and Horizontal Crossed Warped Bars
+			* [1.16.x] Added Crimson, Crossed Crimson, Horizontal Crimson and Horizontal Crossed Crimson Bars
+			* [1.16.x] Added Warped and Crimson type bars to non_flammable_wood tag
+			* Updated tags; New tags are wooden_bars and metallic_bars
+			* Added Horizontal Crossed types to tags
+
+	Bookshelf (Bookshelf-1.16.1-6.1.8.jar --> Bookshelf-1.16.1-6.1.10.jar):
+		Bookshelf-1.16.1-6.1.10.jar:
+			* Updated Forge version. - Tyler Hancock
+			* Added a registry for recipe types. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.1-6.1.9.jar:
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Caelus API (caelus-FORGE-1.16.1-2.0-beta4.jar --> caelus-FORGE-1.16.1-2.0-beta5.jar):
+		caelus-FORGE-1.16.1-2.0-beta5.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[2.0-beta5] - 2020.07.14
+			Fixed
+			* Fixed NoClassDefFoundError
+			[2.0-beta4] - 2020.06.11
+			Added
+			* [API] Added RenderElytraEvent for rendering non-vanilla elytras, including enchantment glow and custom textures
+			Changed
+			* Ported to 1.16.1 Forge
+			Removed
+			* Removed elytra rendering IMC in favor of bringing back RenderElytraEvent
+			* Removed all advanced elytra controls (these will return in a separate mod TBA)
+
+	Cloth Config API (Forge) ([Forge 1.16.x] v4.0.1 --> [Forge 1.16.x] v4.0.2):
+		[Forge 1.16.x] v4.0.2:
+			No changelog available.
+
+	Crafting Tweaks (CraftingTweaks_1.16.1-12.0.3.jar --> CraftingTweaks_1.16.1-12.0.4.jar):
+		CraftingTweaks_1.16.1-12.0.4.jar:
+			Fixed crash with later versions of Forge
+
+	Curios API (Forge) (curios-FORGE-1.16.1-3.0-beta2.jar --> curios-FORGE-1.16.1-3.0-beta3.jar):
+		curios-FORGE-1.16.1-3.0-beta3.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[3.0-beta3] - 2020.07.14
+			Changed
+			* [API] IMC messages can now process iterable collections of SlotTypeMessage
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+	Decorative Blocks (decorative_blocks-1.16-0.2.jar --> decorative_blocks-7.0.jar):
+		decorative_blocks-7.0.jar:
+			No changelog available.
+
+	Farming for Blockheads (FarmingForBlockheads_1.16.1-7.0.0.jar --> FarmingForBlockheads_1.16.1-7.0.1.jar):
+		FarmingForBlockheads_1.16.1-7.0.1.jar:
+			Fixed crash with fertilized farmland when crops were random ticking
+
+	Light Overlay (Rift/Forge/Fabric) ([Forge / Fabric 1.16.x] v5.4.0 --> [Forge / Fabric 1.16.x] v5.4.1):
+		[Forge / Fabric 1.16.x] v5.4.1:
+			Forge: No Change
+			Fabric: Fixed the URL
+			In case you are new to this merging method, this mod jar will work on both Fabric and Forge, just slap this jar into minecraft/mods and it will work.
+
+	Lollipop (Lollipop-1.16.1-2.0.0.jar --> Lollipop-1.16.1-2.0.1.jar):
+		Lollipop-1.16.1-2.0.1.jar:
+			No changelog available.
+
+	Powah! (Powah-1.16.1-2.0.1.jar --> Powah-1.16.1-2.0.2.jar):
+		Powah-1.16.1-2.0.2.jar:
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+	Xaero's Minimap (v20.15.3 for Forge 1.16.1 --> v20.16.0.1 for Forge 1.16.1):
+		v20.16.0.1 for Forge 1.16.1:
+			* Compatibility with Xaero's World Map 1.7.4. Not compatible with older versions.
+			* Reworked when objects of certain classes are (re)constructed. Every object that can potentially "break" because of an exception is now constructed per game connection and not per client instance. This should fix compatibility with something like VanillaFix. This means that reloading a world now reloads the main parts of the mod, which also means that all waypoints are reloaded from the files (temporary waypoints disappear). I'm planning to make a similar change to the world map mod.
+			* Improved security of the "Make Server/World Auto" and "Make Sub-World Auto" features.
+			* Improved security of saving mod settings.
+
+		v20.16.0.1 for Fabric 1.16.1:
+			* Compatibility with Xaero's World Map 1.7.4. Not compatible with older versions.
+			* Reworked when objects of certain classes are (re)constructed. Every object that can potentially "break" because of an exception is now constructed per game connection and not per client instance. This should fix compatibility with something like VanillaFix. This means that reloading a world now reloads the main parts of the mod, which also means that all waypoints are reloaded from the files (temporary waypoints disappear). I'm planning to make a similar change to the world map mod.
+			* Improved security of the "Make Server/World Auto" and "Make Sub-World Auto" features.
+			* Improved security of saving mod settings.
+
+	Xaero's World Map (v1.7.3 for Forge 1.16.1 --> v1.7.4 for Forge 1.16.1):
+		v1.7.4 for Forge 1.16.1:
+			* Compatibility with Xaero's Minimap / Better PVP version 20.16.0. Not compatible with older versions.
+
+		v1.7.4 for Fabric 1.16.1:
+			* Compatibility with Xaero's Minimap / Better PVP version 20.16.0. Not compatible with older versions.
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
