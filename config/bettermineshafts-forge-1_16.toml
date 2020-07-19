@@ -1,19 +1,69 @@
 
 ["YUNG's Better Mineshafts"]
-	"Enable Ice Variant" = true
 	"Enable Jungle Variant" = true
-	"Enable Mushroom Variant" = true
-	"Enable Desert Variant" = true
-	"Enable Red Desert Variant" = true
 	"Enable Snow Variant" = true
+	# Default: .003
 	"Mineshaft Spawn Rate" = 0.003
-	"Enable Mesa Variant" = true
 	"Enable Savanna Variant" = true
-	# The lowest the floor of the shaft can be.
-	# Default: 13
-	"Minimum y-coordinate" = 13
-	# The highest the floor of the shaft can be.
+	# The highest the floor of a mineshaft can be.
 	# Be careful, setting this too high can make mineshafts poke through ocean floors.
 	# Default: 37
 	"Maximum y-coordinate" = 37
+	"Enable Ice Variant" = true
+	"Enable Mushroom Variant" = true
+	"Enable Desert Variant" = true
+	"Enable Red Desert Variant" = true
+	"Enable Mesa Variant" = true
+	# The lowest the floor of a mineshaft can be.
+	# Default: 13
+	"Minimum y-coordinate" = 13
+
+	###########################################################################################################
+	## Vine generation settings.
+	###########################################################################################################
+	["YUNG's Better Mineshafts".Vines]
+		# How often vines spawn in all variants except jungle.
+		#Range: 0.0 ~ 1.0
+		"Vine Frequency" = 0.25
+		# How often vines spawn in jungle mineshafts.
+		#Range: 0.0 ~ 1.0
+		"Jungle Mineshaft Vine Frequency" = 0.6
+
+	###########################################################################################################
+	## Ore deposit settings.
+	###########################################################################################################
+	["YUNG's Better Mineshafts"."Ore Deposits"]
+		# Chance of an ore deposit containing emerald.
+		# Default: 3
+		#Range: 0 ~ 100
+		"Emerald Spawn Chance" = 3
+		# Chance of an ore deposit being cobblestone only.
+		# Default: 50
+		#Range: 0 ~ 100
+		"Cobble Spawn Chance (Empty Deposit)" = 50
+		# Chance of an ore deposit containing iron.
+		# Default: 9
+		#Range: 0 ~ 100
+		"Iron Spawn Chance" = 9
+		# Chance of an ore deposit containing gold.
+		# Default: 7
+		#Range: 0 ~ 100
+		"Gold Spawn Chance" = 7
+		# Chance of an ore deposit containing diamond.
+		# Default: 1
+		#Range: 0 ~ 100
+		"Diamond Spawn Chance" = 1
+		"Enable Ore Deposits" = true
+		# Chance of an ore deposit containing lapis lazuli.
+		# Default: 3
+		#Range: 0 ~ 100
+		"Lapis Spawn Chance" = 3
+		# Chance of an ore deposit containing coal.
+		# Default: 20
+		#Range: 0 ~ 100
+		"Coal Spawn Chance" = 20
+		# Chance of an ore deposit containing redstone.
+		# Default: 7
+		#Range: 0 ~ 100
+		"Redstone Spawn Chance" = 7
 
