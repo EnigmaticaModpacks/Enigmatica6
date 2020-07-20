@@ -18,12 +18,12 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.1.5"
+$MODPACK_VERSION = "0.1.8"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.1.4"
+$LAST_MODPACK_VERSION = "0.1.6"
 
-$FORGE_VERSION = 32.0.69
+$FORGE_VERSION = 32.0.70
 
 $CLIENT_FILENAME = "Enigmatica6"
 
@@ -39,7 +39,7 @@ $GAME_VERSIONS = @(7892) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1
 $CLIENT_CHANGELOG_TYPE = "markdown"
 
 $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
-"Using Forge-1.16.1-32.0.69 <br /> <br /> " +
+"Using Forge-1.16.1-32.0.70 <br /> <br /> " +
 "The Changelog is currently being written, it should be done within 10 minutes. "
 
 
@@ -101,7 +101,7 @@ $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_MANIFEST_BUILDER_MODULE = $true
+$ENABLE_MANIFEST_BUILDER_MODULE = $false
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.

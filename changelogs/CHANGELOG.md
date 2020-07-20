@@ -1,3 +1,26 @@
+## Enigmatica 6 v0.1.8
+
+**Cosmetic Armor has been temporarily removed, remember to that off any Cosmetic Armor before updating**
+
+_Using Forge-1.16.1-32.0.70_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.8.txt)_
+
+**Mod additions**
+
+- 
+
+**Changes**
+
+- 
+
+**Bug fixes**
+
+- 
+
+**Mod removals**
+
+- Cosmetic Armor Reworked 
+  - (It will be re-added once it updates to Forge 32.0.67+)
+
 ## Enigmatica 6 v0.1.7
 
 _Using Forge-1.16.1-32.0.66_
