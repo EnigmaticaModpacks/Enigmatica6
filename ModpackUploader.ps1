@@ -3,7 +3,7 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 
-function Download-GithubRelease {
+function Get-GitHubRelease {
     param(
         [parameter(Mandatory = $true)]
         [string]
@@ -43,43 +43,42 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE) {
     $TwitchExportBuilder = "TwitchExportBuilder.exe"
     if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
         Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
-        Download-GithubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
+        Get-GitHubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
         Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
     }
     .\TwitchExportBuilder.exe -n "$CLIENT_FILENAME" -p "$MODPACK_VERSION"
-	
-    if ($ENABLE_SERVER_FILE_MODULE) {
-        Write-Host ""
-        Write-Host "######################################" -ForegroundColor Cyan
-        Write-Host ""
-        Write-Host "Compressing Server files..." -ForegroundColor Green
-        Write-Host ""
-        Write-Host "######################################" -ForegroundColor Cyan
-        Write-Host ""
+}
 
-        $CONTENTS_TO_MOVE | ForEach-Object {
-            $FilePath = "$PSScriptRoot/development/include-in-server-files/$_"
-            Copy-Item -Path $FilePath -Destination $PSScriptRoot
-        }
+if ($ENABLE_SERVER_FILE_MODULE) {
+    Write-Host ""
+    Write-Host "######################################" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "Compressing Server files..." -ForegroundColor Green
+    Write-Host ""
+    Write-Host "######################################" -ForegroundColor Cyan
+    Write-Host ""
 
-        $SERVER_FILENAME = "$SERVER_FILENAME.zip"
-        sz a -tzip $SERVER_FILENAME $CONTENTS_TO_ZIP
+    $CONTENTS_TO_MOVE | ForEach-Object {
+        $FilePath = "$PSScriptRoot/development/include-in-server-files/$_"
+        Copy-Item -Path $FilePath -Destination $PSScriptRoot
+    }
 
-        $CONTENTS_TO_MOVE | ForEach-Object {
-            $FilePath = "$PSScriptRoot/$_"
-            Remove-Item -Path $FilePath -Force
-        }
+    $SERVER_FILENAME = "$SERVER_FILENAME.zip"
+    sz a -tzip $SERVER_FILENAME $CONTENTS_TO_ZIP
 
-        Write-Host "Removing Client Mods from Server Files" -ForegroundColor Cyan
-        foreach ($clientMod in $CLIENT_MODS) {
-			Write-Host "Removing Client Mod $clientMod"
-			sz d $SERVER_FILENAME "mods/$clientMod*" | Out-Null
-        }
-	
+    $CONTENTS_TO_MOVE | ForEach-Object {
+        $FilePath = "$PSScriptRoot/$_"
+        Remove-Item -Path $FilePath -Force
+    }
+
+    Write-Host "Removing Client Mods from Server Files" -ForegroundColor Cyan
+    foreach ($clientMod in $CLIENT_MODS) {
+        Write-Host "Removing Client Mod $clientMod"
+        sz d $SERVER_FILENAME "mods/$clientMod*" | Out-Null
     }
 }
 
-if ($ENABLE_CHANGELOG_GENERATOR_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
+if ($ENABLE_CHANGELOG_GENERATOR_MODULE) {
     Remove-Item old.json, new.json, changelog.txt -ErrorAction SilentlyContinue
     sz e "$CLIENT_FILENAME`-$LAST_MODPACK_VERSION.zip" manifest.json
     Rename-Item -Path manifest.json -NewName old.json
@@ -190,14 +189,14 @@ if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
     Write-Host "Uploading server files..." -ForegroundColor Green
     Write-Host ""
 
-    $ResponseServer = curl.exe --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" -H "Accept: application/json" -H X-Api-Token:$CURSEFORGE_TOKEN -F metadata=$SERVER_METADATA -F file=@$SERVER_FILENAME --progress-bar
+    curl.exe --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" -H "Accept: application/json" -H X-Api-Token:$CURSEFORGE_TOKEN -F metadata=$SERVER_METADATA -F file=@$SERVER_FILENAME --progress-bar
 }
 
 # Keep an up-to-date modlist
 $MODLIST_PATH = "$PSScriptRoot/MODLIST.md"
 
 Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
-"## $CLIENT_FILE_DISPLAY_NAME Modlist" | Out-File -FilePath $MODLIST_PATH
+"## $CLIENT_FILE_DISPLAY_NAME Modlist" | Out-File -FilePath $MODLIST_PATH -Encoding UTF8
 
 Get-ChildItem -Path "$PSScriptRoot/mods" -Name | ForEach-Object {
     "- $_" | Out-File -FilePath $MODLIST_PATH -Append
