@@ -1,0 +1,22 @@
+
+[General]
+	#Should elevators have the same color in order to teleport ?
+	sameColor = false
+	#Elevator range
+	#Range: 3 ~ 256
+	range = 256
+	#Realign players to the center of elevator ?
+	precisionTarget = true
+	#Can mobs spawn on elevators ?
+	mobSpawn = false
+	#Reset pitch to 0 when teleporting to normal elevators ?
+	resetPitchNormal = false
+	#Reset pitch to 0 when teleporting to directional elevators ?
+	resetPitchDirectional = true
+	#Should teleporting require XP ?
+	useXP = false
+	#Amount of XP points to use when useXP is enabled
+	#Note this is NOT experience levels
+	#Range: > 1
+	XPPointsAmount = 1
+

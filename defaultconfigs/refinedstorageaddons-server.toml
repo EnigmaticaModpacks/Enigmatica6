@@ -1,0 +1,17 @@
+
+[wirelessCraftingGrid]
+	#Whether the Wireless Crafting Grid uses energy
+	useEnergy = true
+	#The energy capacity of the Wireless Crafting Grid
+	#Range: > 0
+	capacity = 3200
+	#The energy used by the Wireless Crafting Grid to open
+	#Range: > 0
+	openUsage = 30
+	#The energy used by the Wireless Crafting Grid to craft an item
+	#Range: > 0
+	craftUsage = 1
+	#The energy used by the Wireless Crafting Grid to clear the crafting matrix
+	#Range: > 0
+	clearUsage = 10
+

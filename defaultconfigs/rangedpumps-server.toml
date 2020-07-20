@@ -1,0 +1,27 @@
+
+[pump]
+	#The range of the pump
+	#Range: 0 ~ 1024
+	range = 64
+	#The interval in ticks for when to move on to the next block (higher is slower)
+	#Range: 0 ~ 1024
+	speed = 8
+	#The capacity of the internal pump tank
+	#Range: > 1000
+	tankCapacity = 32000
+	#The capacity of the energy storage
+	#Range: > 0
+	energyCapacity = 32000
+	#Energy drained when moving to the next block
+	#Range: > 0
+	energyUsagePerMove = 0
+	#Energy drained when draining liquid
+	#Range: > 0
+	energyUsagePerDrain = 100
+	#Whether the pump uses energy to work
+	useEnergy = true
+	#Replaces liquids that are removed with a block defined in 'blockIdToReplaceLiquidsWith' (to reduce lag)
+	replaceLiquidWithBlock = true
+	#The block that liquids are replaced with when 'replaceLiquidWithBlock' is true
+	blockIdToReplaceLiquidsWith = "minecraft:stone"
+

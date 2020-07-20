@@ -1,0 +1,21 @@
+
+[settings]
+	#Percentage of players required to trigger a successful sleep.
+	#Range: 0 ~ 100
+	SleeperPerc = 50
+	#Enable alerts
+	AlertEnabled = true
+	#Text used to alert players that someone is trying to sleep
+	OnSleepText = "is now sleeping."
+	#Text used to alert players that someone stopped trying to sleep
+	OnWakeText = "has left their bed."
+	#Text to alert the server that sleeping was successful
+	OnMorningText = "Wakey, wakey, rise and shine... Good Morning everyone!"
+	#Include miners in player calculations
+	IncludeMiners = true
+	#Players below this Y level will be counted as miners
+	#Range: 1 ~ 255
+	GroundLevel = 64
+	#Allow players to set their spawn point using a bed during the day
+	AllowSetSpawnDaytime = true
+

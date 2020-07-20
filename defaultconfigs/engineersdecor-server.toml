@@ -1,0 +1,166 @@
+
+#Settings affecting the logical server side.
+[server]
+
+	#Opt-out settings
+	[server.optout]
+		#Opt-out any block by its registry name ('*' wildcard matching, comma separated list, whitespaces ignored. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' excludes everything that has 'wood' or 'steel' in the registry name. The matching result is also traced in the log file. 
+		pattern_excludes = ""
+		#Prevent blocks from being opt'ed by registry name ('*' wildcard matching, comma separated list, whitespaces ignored. Evaluated before all other opt-out checks. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' includes everything that has 'wood' or 'steel' in the registry name.The matching result is also traced in the log file.
+		pattern_includes = ""
+		#Disable clinker bricks and derived blocks.
+		without_clinker_bricks = false
+		#Disable slag bricks and derived blocks.
+		without_slag_bricks = false
+		#Disable rebar concrete and derived blocks.
+		without_rebar_concrete = false
+		#Disable gas concrete and derived blocks.
+		without_gas_concrete = false
+		#Disable all mod wall blocks.
+		without_walls = false
+		#Disable all mod stairs blocks.
+		without_stairs = false
+		#Disable IE concrete wall.
+		without_ie_concrete_wall = false
+		#Disable panzer glass and derived blocks.
+		without_panzer_glass = false
+		#Disable treated wood crafting table.
+		without_crafting_table = false
+		#Disable small lab furnace.
+		without_lab_furnace = false
+		#Disable small electrical pass-through furnace.
+		without_electrical_furnace = false
+		#Disable treated wood table, stool, windowsill, etc.
+		without_treated_wood_furniture = false
+		#Disable metal tables, etc.
+		without_metal_furniture = false
+		#Disable treated wood window, etc.
+		without_windows = false
+		#Disable light sources
+		without_light_sources = false
+		#Disable ladders
+		without_ladders = false
+		#Disable possibility to sit on stools and chairs.
+		without_chair_sitting = false
+		#Disable that mobs will sit on chairs and stools.
+		without_mob_chair_sitting = false
+		#Disable the speed boost of ladders in this mod.
+		without_ladder_speed_boost = false
+		#Disable history refabrication feature of the treated wood crafting table.
+		without_crafting_table_history = false
+		#Disable check valve, and redstone controlled valves.
+		without_valves = false
+		#Disable the passive fluid accumulator.
+		without_passive_fluid_accumulator = false
+		#Disable item disposal/trash/void incinerator device.
+		without_waste_incinerator = false
+		#Disable decorative sign plates (caution, hazards, etc).
+		without_sign_plates = false
+		#Disable floor gratings.
+		without_floor_grating = false
+		#Disable the factory dropper.
+		without_factory_dropper = false
+		#Disable the factory hopper.
+		without_factory_hopper = false
+		#Disable the factory placer.
+		without_factory_placer = false
+		#Disable the small block breaker.
+		without_block_breaker = false
+		#Disable the small solar panel.
+		without_solar_panel = false
+		#Disable the small fluid collection funnel.
+		without_fluid_funnel = false
+		#Disable the small mineral smelter.
+		without_mineral_smelter = false
+		#Disable the small milking machine.
+		without_milking_machine = false
+		#Disable the small tree cutter.
+		without_tree_cutter = false
+		#Disable labeled crate.
+		without_labeled_crate = false
+		#Disable horizontal half-block slab.
+		without_slabs = false
+		#Disable stackable 1/8 block slices.
+		without_halfslabs = false
+		#Disable poles of any material.
+		without_poles = false
+		#Disable horizontal supports like the double-T support.
+		without_hsupports = false
+		#Disable all internal recipes, allowing to use alternative pack recipes.
+		without_recipes = false
+		#Disable all fences and fence gates.
+		without_fences = false
+
+	#Miscellaneous settings
+	[server.miscellaneous]
+		#Enables experimental features. Use at own risk.
+		with_experimental = false
+		#Disable directly picking up layers from slabs and slab  slices by left clicking while looking up/down.
+		without_direct_slab_pickup = false
+		#Enable that devices are dropped as item also in creative mode, allowing  to relocate them with contents and settings.
+		with_creative_mode_device_drops = false
+
+	#Tweaks
+	[server.tweaks]
+		#Defines, in percent, how fast the lab furnace smelts compared to a vanilla furnace. 100% means vanilla furnace speed, 150% means the lab furnace is faster. The value can be changed on-the-fly for tuning.
+		#Range: 50 ~ 800
+		furnace_smelting_speed_percent = 130
+		#Defines, in percent, how fuel efficient the lab furnace is, compared to a vanilla furnace. 100% means vanilla furnace consumiton, 200% means the lab furnace needs about half the fuel of a vanilla furnace, The value can be changed on-the-fly for tuning.
+		#Range: 50 ~ 400
+		furnace_fuel_efficiency_percent = 100
+		#Defines the energy consumption (per tick) for speeding up the smelting process. If IE is installed, an external heater has to be inserted into an auxiliary slot of the lab furnace. The power source needs to be able to provide at least 4 times this consumption (fixed threshold value). The value can be changed on-the-fly for tuning. The default value corresponds to the IE heater consumption.
+		#Range: 2 ~ 1024
+		furnace_boost_energy_consumption = 24
+		#Defines, in percent, how high the probability is that a mob sits on a chair when colliding with it. Can be changed on-the-fly for tuning.
+		#Range: 0.0 ~ 80.0
+		chair_mob_sitting_probability_percent = 10.0
+		#Defines, in percent, probable it is that a mob leaves a chair when sitting on it. The 'dice is rolled' about every 20 ticks. There is also a minimum Sitting time of about 3s. The config value can be changed on-the-fly for tuning.
+		#Range: 0.001 ~ 10.0
+		chair_mob_standup_probability_percent = 1.0
+		#Enables small quick-move arrows from/to player/block storage. Makes the UI a bit too busy, therefore disabled by default.
+		with_crafting_quickmove_buttons = false
+		#Disables increasing/decreasing the crafting grid items by scrolling over the crafting result slot.
+		without_crafting_mouse_scrolling = false
+		#Defines how many millibuckets can be transferred (per tick) through the valves. That is technically the 'storage size' specified for blocks that want to fill fluids into the valve (the valve has no container and forward that to the output block), The value can be changed on-the-fly for tuning. 
+		#Range: 1 ~ 32000
+		pipevalve_max_flowrate = 1000
+		#Defines how many millibuckets per redstone signal strength can be transferred per tick through the analog redstone controlled valves. Note: power 0 is always off, power 15 is always the max flow rate. Between power 1 and 14 this scaler will result in a flow = 'redstone slope' * 'current redstone power'. The value can be changed on-the-fly for tuning. 
+		#Range: 1 ~ 32000
+		pipevalve_redstone_gain = 20
+		#Defines, in percent, how fast the electrical furnace smelts compared to a vanilla furnace. 100% means vanilla furnace speed, 150% means the electrical furnace is faster. The value can be changed on-the-fly for tuning.
+		#Range: 50 ~ 800
+		e_furnace_speed_percent = 200
+		#Defines how much RF per tick the the electrical furnace consumed (average) for smelting. The feeders transferring items from/to adjacent have this consumption/8 for each stack transaction. The default value is only slightly higher than a furnace with an IE external heater (and no burning fuel inside).The config value can be changed on-the-fly for tuning.
+		#Range: 8 ~ 4096
+		e_furnace_power_consumption = 16
+		#Defines if the electrical furnace automatically pulls items from an inventory at the input side.The config value can be changed on-the-fly for tuning.
+		e_furnace_automatic_pulling = false
+		#Defines the peak power production (at noon) of the Small Solar Panel. Note that the agerage power is much less, as no power is produced at all during the night, and the power curve is nonlinear rising/falling during the day. Bad weather conditions also decrease the production. The config value can be changed on-the-fly for tuning.
+		#Range: 2 ~ 4096
+		small_solar_panel_peak_production = 40
+		#Defines how much RF power the Small Block Breaker requires to magnificently increase the processing speed. The config value can be changed on-the-fly for tuning.
+		#Range: 4 ~ 1024
+		block_breaker_power_consumption = 64
+		#Defines how much time the Small Block Breaker needs per block hardness, means: 'reluctance' * hardness + min_time, you change the 'reluctance' here.The unit is ticks/hardness. The config value can be changed on-the-fly for tuning.
+		#Range: 5 ~ 50
+		block_breaker_reluctance = 17
+		#Defines how much time the Small Block Breaker needs at least, better said it's an offset: 'reluctance' * hardness + min_time, you change the 'min_time' here, value in ticks.The config value can be changed on-the-fly for tuning.
+		#Range: 10 ~ 100
+		block_breaker_min_breaking_time = 15
+		#Defines if the Small Block Breaker does not work without RF power.
+		block_breaker_requires_power = false
+		#Defines how much RF power the Small Tree Cutter requires to magnificently increase the processing speed. The config value can be changed on-the-fly for tuning.
+		#Range: 4 ~ 1024
+		tree_cuttter_energy_consumption = 64
+		#Defines how much time the Small Tree Cutter needs to cut a tree without RF power. The value is in seconds. With energy it is 6 times faster. The config value can be changed on-the-fly for tuning.
+		#Range: 10 ~ 240
+		tree_cuttter_cutting_time_needed = 60
+		#Defines if the Small Tree Cutter does not work without RF power.
+		tree_cuttter_requires_power = false
+		#Defines how much time the Small Milking Machine needs work. Note this is a permanent standby power, not only when the device does something. Use zero to disable energy dependency and energy handling of the machine. The config value can be changed on-the-fly for tuning.
+		#Range: 0 ~ 1024
+		milking_machine_energy_consumption = 0
+		#Defines (for each individual cow) the minimum time between milking.
+		#Range: 1000 ~ 24000
+		milking_machine_milking_delay = 4000
+
