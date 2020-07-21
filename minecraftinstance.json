@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-07-21T20:23:19.4091875Z",
+  "lastPlayed": "2020-07-21T21:00:31.7356177Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -2671,7 +2671,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 377109,
@@ -2897,7 +2897,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 358191,
@@ -3585,26 +3585,20 @@
       "addonID": 268560,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3006617,
-        "displayName": "Mekanism-1.16.1-10.0.2.425.jar",
-        "fileName": "Mekanism-1.16.1-10.0.2.425.jar",
-        "fileDate": "2020-07-16T17:24:49.607Z",
-        "fileLength": 9341313,
+        "id": 3010980,
+        "displayName": "Mekanism-1.16.1-10.0.3.426.jar",
+        "fileName": "Mekanism-1.16.1-10.0.3.426.jar",
+        "fileDate": "2020-07-21T20:02:41.1Z",
+        "fileLength": 9351295,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3006/617/Mekanism-1.16.1-10.0.2.425.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3010/980/Mekanism-1.16.1-10.0.3.426.jar",
         "isAlternate": false,
-        "alternateFileId": 3006618,
+        "alternateFileId": 3010981,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 267602,
+            "addonId": 245211,
             "type": 2,
             "fileId": 0
           },
@@ -3616,7 +3610,13 @@
           },
           {
             "id": 0,
-            "addonId": 245211,
+            "addonId": 267602,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           }
@@ -3625,22 +3625,22 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3221519281,
+            "fingerprint": 3371870686,
             "type": 0
           },
           {
             "foldername": "mekanism",
-            "fingerprint": 525802308,
+            "fingerprint": 3668186426,
             "type": 0
           },
           {
             "foldername": "data",
-            "fingerprint": 3968622640,
+            "fingerprint": 533755188,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 2695785803,
+            "fingerprint": 1343233410,
             "type": 0
           },
           {
@@ -3649,7 +3649,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 4057433183,
+        "packageFingerprint": 4180899598,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -3663,12 +3663,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Mekanism-1.16.1-10.0.2.425.jar"
+        "FileNameOnDisk": "Mekanism-1.16.1-10.0.3.426.jar"
       },
       "dateInstalled": "2020-07-17T19:52:59.4354888Z",
-      "dateUpdated": "2020-07-17T20:19:51.566271Z",
-      "dateLastUpdateAttempted": "2020-07-17T20:19:51.566271Z",
-      "status": 5,
+      "dateUpdated": "2020-07-21T20:58:14.5171291Z",
+      "dateLastUpdateAttempted": "2020-07-21T20:58:14.5171291Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3860,14 +3860,14 @@
       "addonID": 268566,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3006619,
-        "displayName": "MekanismGenerators-1.16.1-10.0.2.425.jar",
-        "fileName": "MekanismGenerators-1.16.1-10.0.2.425.jar",
-        "fileDate": "2020-07-16T17:24:53.373Z",
-        "fileLength": 1010576,
+        "id": 3010982,
+        "displayName": "MekanismGenerators-1.16.1-10.0.3.426.jar",
+        "fileName": "MekanismGenerators-1.16.1-10.0.3.426.jar",
+        "fileDate": "2020-07-21T20:02:43.757Z",
+        "fileLength": 1010710,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3006/619/MekanismGenerators-1.16.1-10.0.2.425.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3010/982/MekanismGenerators-1.16.1-10.0.3.426.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -3882,12 +3882,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2676535570,
+            "fingerprint": 947764840,
             "type": 0
           },
           {
             "foldername": "mekanism",
-            "fingerprint": 2074918053,
+            "fingerprint": 3940884561,
             "type": 0
           },
           {
@@ -3897,7 +3897,7 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 290077992,
+            "fingerprint": 1656440547,
             "type": 0
           },
           {
@@ -3906,7 +3906,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 3190223727,
+        "packageFingerprint": 910905471,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -3920,12 +3920,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "MekanismGenerators-1.16.1-10.0.2.425.jar"
+        "FileNameOnDisk": "MekanismGenerators-1.16.1-10.0.3.426.jar"
       },
       "dateInstalled": "2020-07-17T19:52:14.5697421Z",
-      "dateUpdated": "2020-07-17T20:19:52.9855696Z",
-      "dateLastUpdateAttempted": "2020-07-17T20:19:52.9855696Z",
-      "status": 5,
+      "dateUpdated": "2020-07-21T20:59:37.9119827Z",
+      "dateLastUpdateAttempted": "2020-07-21T20:59:37.9119827Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4010,7 +4010,7 @@
       "dateInstalled": "2020-07-20T19:39:42.9227776Z",
       "dateUpdated": "2020-07-20T19:39:42.9247949Z",
       "dateLastUpdateAttempted": "2020-07-20T19:39:42.9247949Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4025,14 +4025,14 @@
       "addonID": 268567,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3006620,
-        "displayName": "MekanismTools-1.16.1-10.0.2.425.jar",
-        "fileName": "MekanismTools-1.16.1-10.0.2.425.jar",
-        "fileDate": "2020-07-16T17:24:55.333Z",
-        "fileLength": 322315,
+        "id": 3010983,
+        "displayName": "MekanismTools-1.16.1-10.0.3.426.jar",
+        "fileName": "MekanismTools-1.16.1-10.0.3.426.jar",
+        "fileDate": "2020-07-21T20:02:45.287Z",
+        "fileLength": 323085,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3006/620/MekanismTools-1.16.1-10.0.2.425.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3010/983/MekanismTools-1.16.1-10.0.3.426.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -4047,7 +4047,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2214738844,
+            "fingerprint": 4256644126,
             "type": 0
           },
           {
@@ -4062,7 +4062,7 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 2374851265,
+            "fingerprint": 3037823363,
             "type": 0
           },
           {
@@ -4071,7 +4071,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 343560318,
+        "packageFingerprint": 918532133,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -4085,12 +4085,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "MekanismTools-1.16.1-10.0.2.425.jar"
+        "FileNameOnDisk": "MekanismTools-1.16.1-10.0.3.426.jar"
       },
       "dateInstalled": "2020-07-17T19:53:00.4149997Z",
-      "dateUpdated": "2020-07-17T20:19:55.9977217Z",
-      "dateLastUpdateAttempted": "2020-07-17T20:19:55.9977217Z",
-      "status": 5,
+      "dateUpdated": "2020-07-21T20:59:38.9955955Z",
+      "dateLastUpdateAttempted": "2020-07-21T20:59:38.9955955Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7659,66 +7659,20 @@
       "addonID": 309927,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3007691,
-        "displayName": "curios-FORGE-1.16.1-3.0-beta4.jar",
-        "fileName": "curios-FORGE-1.16.1-3.0-beta4.jar",
-        "fileDate": "2020-07-17T21:55:33.083Z",
-        "fileLength": 218241,
-        "releaseType": 2,
+        "id": 3011016,
+        "displayName": "curios-FORGE-1.16.1-3.0.jar",
+        "fileName": "curios-FORGE-1.16.1-3.0.jar",
+        "fileDate": "2020-07-21T20:39:02.72Z",
+        "fileLength": 218467,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3007/691/curios-FORGE-1.16.1-3.0-beta4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3011/16/curios-FORGE-1.16.1-3.0.jar",
         "isAlternate": false,
-        "alternateFileId": 3007692,
+        "alternateFileId": 3011017,
         "dependencies": [],
         "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3970266600,
-            "type": 0
-          },
-          {
-            "foldername": "top",
-            "fingerprint": 1298693021,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1746391,
-            "type": 0
-          },
-          {
-            "foldername": "CHANGELOG.md",
-            "fingerprint": 1686209609,
-            "type": 0
-          },
-          {
-            "foldername": "curios_icon.png",
-            "fingerprint": 1224242090,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 354465712,
-            "type": 0
-          },
-          {
-            "foldername": "licenses",
-            "fingerprint": 3550732819,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 2397832804,
-            "type": 0
-          },
-          {
-            "foldername": "README.md",
-            "fingerprint": 2479755029,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 475223248,
+        "modules": [],
+        "packageFingerprint": 514888133,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -7732,12 +7686,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "curios-FORGE-1.16.1-3.0-beta4.jar"
+        "FileNameOnDisk": "curios-FORGE-1.16.1-3.0.jar"
       },
       "dateInstalled": "2020-07-13T19:26:23.4800844Z",
-      "dateUpdated": "2020-07-18T09:44:04.3605975Z",
-      "dateLastUpdateAttempted": "2020-07-18T09:44:04.3605975Z",
-      "status": 5,
+      "dateUpdated": "2020-07-21T20:58:04.7546479Z",
+      "dateLastUpdateAttempted": "2020-07-21T20:58:04.7546479Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7979,7 +7933,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 233071,
@@ -8281,7 +8235,7 @@
       "dateInstalled": "2020-07-15T17:55:28.8068443Z",
       "dateUpdated": "2020-07-21T19:37:47.1066403Z",
       "dateLastUpdateAttempted": "2020-07-21T19:37:47.1066403Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8933,7 +8887,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 313866,
@@ -9338,89 +9292,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 220318,
-      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
-      "installedFile": {
-        "id": 3010355,
-        "displayName": "Biomes O' Plenty 1.16.1-11.0.0.388",
-        "fileName": "BiomesOPlenty-1.16.1-11.0.0.388-universal.jar",
-        "fileDate": "2020-07-21T03:33:59.877Z",
-        "fileLength": 3306427,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3010/355/BiomesOPlenty-1.16.1-11.0.0.388-universal.jar",
-        "isAlternate": false,
-        "alternateFileId": 3010356,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3508764005,
-            "type": 0
-          },
-          {
-            "foldername": "biomesoplenty",
-            "fingerprint": 4191364698,
-            "type": 0
-          },
-          {
-            "foldername": "bop_logo.png",
-            "fingerprint": 2745841392,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 542382981,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3781912779,
-            "type": 0
-          },
-          {
-            "foldername": "LICENSE.txt",
-            "fingerprint": 2878218662,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 3799378520,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 3416499100,
-        "gameVersion": [
-          "1.16.1",
-          "Forge"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "BiomesOPlenty-1.16.1-11.0.0.388-universal.jar"
-      },
-      "dateInstalled": "2020-07-21T19:09:46.3817985Z",
-      "dateUpdated": "2020-07-21T19:09:46.3972506Z",
-      "dateLastUpdateAttempted": "2020-07-21T19:09:46.3972506Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 333389,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
@@ -9503,6 +9374,89 @@
       "dateUpdated": "2019-07-13T19:26:23.5113218Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 220318,
+      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
+      "installedFile": {
+        "id": 3010960,
+        "displayName": "Biomes O' Plenty 1.16.1-11.0.0.389",
+        "fileName": "BiomesOPlenty-1.16.1-11.0.0.389-universal.jar",
+        "fileDate": "2020-07-21T19:40:23.067Z",
+        "fileLength": 3327702,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3010/960/BiomesOPlenty-1.16.1-11.0.0.389-universal.jar",
+        "isAlternate": false,
+        "alternateFileId": 3010961,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 416858926,
+            "type": 0
+          },
+          {
+            "foldername": "biomesoplenty",
+            "fingerprint": 1557339917,
+            "type": 0
+          },
+          {
+            "foldername": "bop_logo.png",
+            "fingerprint": 2745841392,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 542382981,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1430969418,
+            "type": 0
+          },
+          {
+            "foldername": "LICENSE.txt",
+            "fingerprint": 2878218662,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 3799378520,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 3626903852,
+        "gameVersion": [
+          "1.16.1",
+          "Forge"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "BiomesOPlenty-1.16.1-11.0.0.389-universal.jar"
+      },
+      "dateInstalled": "2020-07-21T19:09:46.3817985Z",
+      "dateUpdated": "2020-07-21T20:57:43.7631802Z",
+      "dateLastUpdateAttempted": "2020-07-21T20:57:43.7631802Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11530,7 +11484,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 232131,
@@ -11915,14 +11869,14 @@
       "addonID": 390898,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3000260,
-        "displayName": "ERP-V1.4",
-        "fileName": "ERP-V1.4-R.zip",
-        "fileDate": "2020-07-09T09:27:01.963Z",
-        "fileLength": 1089576,
+        "id": 3005750,
+        "displayName": "ERP-V1.5",
+        "fileName": "ERP-V1.5-R.zip",
+        "fileDate": "2020-07-15T17:53:06.527Z",
+        "fileLength": 1342625,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3000/260/ERP-V1.4-R.zip",
+        "downloadUrl": "https://edge.forgecdn.net/files/3005/750/ERP-V1.5-R.zip",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -11930,7 +11884,7 @@
         "modules": [
           {
             "foldername": "assets",
-            "fingerprint": 1029523310,
+            "fingerprint": 3505801306,
             "type": 0
           },
           {
@@ -11944,7 +11898,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 803441955,
+        "packageFingerprint": 295218742,
         "gameVersion": [
           "1.16.1",
           "1.15.2"
@@ -11958,12 +11912,12 @@
         "gameVersionDateReleased": "2020-01-22T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ERP-V1.4-R.zip"
+        "FileNameOnDisk": "ERP-V1.5-R.zip"
       },
       "dateInstalled": "2020-07-13T19:26:22.7623132Z",
-      "dateUpdated": "2020-07-13T19:34:15.6315266Z",
-      "dateLastUpdateAttempted": "2020-07-13T19:34:15.6315266Z",
-      "status": 3,
+      "dateUpdated": "2020-07-21T21:14:15.1895918Z",
+      "dateLastUpdateAttempted": "2020-07-21T21:14:15.1895918Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13198,27 +13152,27 @@
       "addonID": 287342,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3010136,
-        "displayName": "titanium-1.16.1-3.0.0.jar",
-        "fileName": "titanium-1.16.1-3.0.0.jar",
-        "fileDate": "2020-07-20T21:47:47.7Z",
-        "fileLength": 571449,
+        "id": 3010945,
+        "displayName": "titanium-1.16.1-3.0.1.jar",
+        "fileName": "titanium-1.16.1-3.0.1.jar",
+        "fileDate": "2020-07-21T19:19:52.647Z",
+        "fileLength": 571364,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3010/136/titanium-1.16.1-3.0.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3010/945/titanium-1.16.1-3.0.1.jar",
         "isAlternate": false,
-        "alternateFileId": 3010137,
+        "alternateFileId": 3010946,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 892265582,
+            "fingerprint": 2036497826,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 4142290185,
+            "fingerprint": 353273052,
             "type": 0
           },
           {
@@ -13252,7 +13206,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 3519546850,
+        "packageFingerprint": 144078279,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -13266,11 +13220,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "titanium-1.16.1-3.0.0.jar"
+        "FileNameOnDisk": "titanium-1.16.1-3.0.1.jar"
       },
       "dateInstalled": "2020-07-21T19:09:23.405994Z",
-      "dateUpdated": "2020-07-21T19:09:23.405994Z",
-      "dateLastUpdateAttempted": "2020-07-21T19:09:23.405994Z",
+      "dateUpdated": "2020-07-21T21:00:16.4810622Z",
+      "dateLastUpdateAttempted": "2020-07-21T21:00:16.4810622Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -13280,7 +13234,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 60089,
