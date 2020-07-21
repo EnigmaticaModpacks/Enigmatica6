@@ -1,0 +1,49 @@
+
+[MachineMiscConfig]
+
+	[MachineMiscConfig.EnchantmentFactoryConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+		#Max Essence [mb] - Default: [32000 mb]
+		tankSize = 32000
+
+	[MachineMiscConfig.StasisChamberConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (5s)]
+		maxProgress = 50
+		#Amount of Power Consumed per Tick - Default: [400FE]
+		powerPerOperation = 1000
+
+	[MachineMiscConfig.EnchantmentSorterConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+
+	[MachineMiscConfig.EnchantmentApplicatorConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+		#Max Essence [mb] - Default: [32000 mb]
+		tankSize = 32000
+
+	[MachineMiscConfig.EnchantmentExtractorConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 50
+		#Max Essence [mb] - Default: [32000 mb]
+		tankSize = 32000
+

@@ -1,0 +1,193 @@
+
+[modules]
+
+	#All of your farming options
+	[modules.agriculture]
+		enabled = true
+
+		[modules.agriculture.animal_rancher]
+			enabled = true
+
+		[modules.agriculture.crop_farming]
+			enabled = true
+
+		[modules.agriculture.plant_fertilizer]
+			enabled = true
+
+		[modules.agriculture.animal_feeder]
+			enabled = true
+
+		[modules.agriculture.mob_crusher]
+			enabled = true
+
+		[modules.agriculture.mob_slaughter_factory]
+			enabled = true
+
+		[modules.agriculture.sewage]
+			enabled = true
+
+		[modules.agriculture.animal_baby_separator]
+			enabled = true
+
+	#Module for all the Industrial Foregoing basic features
+	[modules.core]
+		enabled = true
+
+		[modules.core.range_addons]
+			enabled = true
+
+		[modules.core.sludge]
+			enabled = true
+
+		[modules.core.biofuel]
+			enabled = true
+
+		[modules.core.essence]
+			enabled = true
+
+		[modules.core.milk]
+			enabled = true
+
+		[modules.core.straw]
+			enabled = true
+
+		[modules.core.manual]
+			enabled = true
+
+		[modules.core.pink_slime]
+			enabled = true
+
+		[modules.core.tier_2_production]
+			enabled = true
+
+		[modules.core.efficiency_addons]
+			enabled = true
+
+		[modules.core.plastic_generation]
+			enabled = true
+
+		[modules.core.fertilizer]
+			enabled = true
+
+		[modules.core.plastic]
+			enabled = true
+
+		#If enabled the minecraft bucket item will be replaced with bucket that contains IF milk
+		[modules.core.milk_bucket_replacement]
+			enabled = true
+
+		[modules.core.meat]
+			enabled = true
+
+		[modules.core.speed_addons]
+			enabled = true
+
+		[modules.core.machine_frames]
+			enabled = true
+
+		[modules.core.sewage]
+			enabled = true
+
+	#All machines that generate power
+	[modules.generator]
+		enabled = true
+
+		[modules.generator.pitiful_generator]
+			enabled = true
+
+		[modules.generator.biofuel_generator]
+			enabled = true
+
+		[modules.generator.bioreactor]
+			enabled = true
+
+	#All the Industrial Foregoing tools that allow of transport of things
+	[modules.transport]
+		enabled = true
+
+		[modules.transport.conveyor]
+			enabled = true
+
+		[modules.transport.conveyor_upgrades]
+			enabled = true
+
+	#A collection of Industrial Foregoing tools
+	[modules.tools]
+		enabled = true
+
+		[modules.tools.meat_feeder]
+			enabled = true
+
+		[modules.tools.infinity_drill]
+			enabled = true
+
+		[modules.tools.mob_imprisonment_tool]
+			enabled = true
+
+		[modules.tools.mob_essence_tool]
+			enabled = true
+
+		[modules.tools.infinity_saw]
+			enabled = true
+
+	[modules.resource_production]
+		enabled = true
+
+		[modules.resource_production.material_stonework_factory]
+			enabled = true
+
+		[modules.resource_production.mechanical_dirt]
+			enabled = true
+
+		[modules.resource_production.block_breaker]
+			enabled = true
+
+		[modules.resource_production.marine_fisher]
+			enabled = true
+
+		[modules.resource_production.fluid_placer]
+			enabled = true
+
+		[modules.resource_production.block_placer]
+			enabled = true
+
+		[modules.resource_production.resourceful_furnace]
+			enabled = true
+
+		[modules.resource_production.fluid_collector]
+			enabled = true
+
+		[modules.resource_production.spores_recreator]
+			enabled = true
+
+		[modules.resource_production.sludge_refiner]
+			enabled = true
+
+		[modules.resource_production.water_condensator]
+			enabled = true
+
+		[modules.resource_production.dye_mixer]
+			enabled = true
+
+	#Random things that don't fit
+	[modules.misc]
+		enabled = true
+
+		[modules.misc.enchantment_factory]
+			enabled = true
+
+		[modules.misc.enchantment_sorter]
+			enabled = true
+
+		[modules.misc.enchantment_applicator]
+			enabled = true
+
+		[modules.misc.stasis_chamber]
+			enabled = true
+
+		[modules.misc.enchantment_extractor]
+			enabled = true
+
+		[modules.misc.mob_detector]
+			enabled = true
+

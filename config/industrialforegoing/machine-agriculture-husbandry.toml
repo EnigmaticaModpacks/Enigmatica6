@@ -1,0 +1,99 @@
+
+[MachineAgricultureHusbandryConfig]
+
+	[MachineAgricultureHusbandryConfig.SlaughterFactoryConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxMeatTankSize = 8000
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxPinkSlimeTankSize = 8000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Operation - Default: [400FE]
+		powerPerOperation = 400
+
+	[MachineAgricultureHusbandryConfig.PlantGathererConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 40
+		#Max Amount of Stored Fluid for 'Sludge Tank' - Default: [8000mB]
+		maxSludgeTankSize = 8000
+		#Amount of Power Consumer per Operation - Default: [400FE]
+		powerPerOperation = 400
+
+	[MachineAgricultureHusbandryConfig.SewageComposterConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxTankSize = 8000
+
+	[MachineAgricultureHusbandryConfig.SewerConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Operation - Default: [10FE] - This is Calculated as [VALUE * (amount + 1)]
+		powerPerOperation = 10
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxSewageTankSize = 8000
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxEssenceTankSize = 8000
+
+	[MachineAgricultureHusbandryConfig.PlantSowerConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 40
+		#Amount of Power Consumer per Operation - Default: [1000FE]
+		powerPerOperation = 1000
+
+	[MachineAgricultureHusbandryConfig.AnimalBabySeparatorConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Operation - Default: [400FE]
+		powerPerOperation = 400
+
+	[MachineAgricultureHusbandryConfig.AnimalFeederConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Operation - Default: [400FE]
+		powerPerOperation = 400
+
+	[MachineAgricultureHusbandryConfig.MobCrusherConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [50 (2.5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerOperation = 50
+		#Max Essence [mb] - Default: [32000 mb]
+		tankSize = 32000
+
+	[MachineAgricultureHusbandryConfig.AnimalRancherConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Operation - Default: [400FE]
+		powerPerOperation = 400
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxTankSize = 8000
+
+	[MachineAgricultureHusbandryConfig.PlantFertilizerConfig]
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 50
+		#Amount of Power Consumer per Operation - Default: [400FE]
+		powerPerOperation = 1000
+
