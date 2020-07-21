@@ -2,24 +2,24 @@
 
 **Cosmetic Armor has been temporarily removed, remember to that off any Cosmetic Armor before updating**
 
-_Using Forge-1.16.1-32.0.70_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.8.txt)_
+_Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.8.txt)_
 
 **Mod additions**
 
-- 
+-
 
 **Changes**
 
-- 
+-
 
 **Bug fixes**
 
-- 
+-
 
 **Mod removals**
 
-- Cosmetic Armor Reworked 
-  - (It will be re-added once it updates to Forge 32.0.67+)
+-   Cosmetic Armor Reworked
+    -   (It will be re-added once it updates to Forge 32.0.67+)
 
 ## Enigmatica 6 v0.1.7
 
@@ -27,11 +27,11 @@ _Using Forge-1.16.1-32.0.66_
 
 **Mod additions**
 
-- Waystones 
+-   Waystones
 
 **Bug fixes**
 
-- Waystones has been re-added now that it's stable. It was removed incorrectly in 0.1.6.
+-   Waystones has been re-added now that it's stable. It was removed incorrectly in 0.1.6.
 
 ## Enigmatica 6 v0.1.6
 
@@ -39,11 +39,11 @@ _Using Forge-1.16.1-32.0.66_
 
 **Bug fixes**
 
-- Fixed frequent crashes when exploring (being close to villages)
+-   Fixed frequent crashes when exploring (being close to villages)
 
 **Mod removals**
 
-- Waystones 
+-   Waystones
 
 ## Enigmatica 6 v0.1.5
 
