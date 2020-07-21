@@ -1,25 +1,39 @@
-## Enigmatica 6 v0.1.8
+## Enigmatica 6 v0.2.0
 
-**Cosmetic Armor has been temporarily removed, remember to that off any Cosmetic Armor before updating**
+**It is highly recommended to run the `/reload` command when entering a world, due to a bug. We're working to resolve it.**
 
-_Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.8.txt)_
+_Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.0.txt)_
 
 **Mod additions**
 
--
+- Actually Useful Stonecutter
+- **Artifacts**
+- Bad Wither No Cookie - Reloaded
+- Better Advancements
+- **Biomes O' Plenty**
+- Buzzier Bees
+- Cauldron Recipes
+- Clumps
+- Enchantment Descriptions
+- **FTB Ultimine**
+- **Immersive Engineering**
+- **Industrial Foregoing**
+- Just Enough Resources (JER)
+- Masonry
+- Morpheus
+- OldJavaWarning
+- Ranged Pumps
+- ReAuth
+- Simply Light
+- Titanium
 
 **Changes**
 
--
-
-**Bug fixes**
-
--
+- Re-did Default keybindings \(Sorting was disabled\) [\#7](https://github.com/NillerMedDild/Enigmatica6/issues/7)
 
 **Mod removals**
 
--   Cosmetic Armor Reworked
-    -   (It will be re-added once it updates to Forge 32.0.67+)
+-   GameStages (Redundant atm)
 
 ## Enigmatica 6 v0.1.7
 

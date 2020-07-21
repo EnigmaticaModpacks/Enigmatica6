@@ -1,0 +1,732 @@
+========================================
+Enigmatica 6 0.1.7 --> Enigmatica6 0.2.0
+========================================
+
+Added:
+- Actually Useful Stonecutter
+- Artifacts
+- Bad Wither No Cookie - Reloaded
+- Better Advancements
+- Biomes O' Plenty
+- Buzzier Bees
+- Cauldron Recipes
+- Clumps
+- Enchantment Descriptions
+- FTB Ultimine
+- Immersive Engineering
+- Industrial Foregoing
+- Just Enough Resources (JER)
+- Masonry
+- Morpheus
+- OldJavaWarning
+- Ranged Pumps
+- ReAuth
+- Simply Light
+- Titanium
+
+Updated:
+	Bookshelf (Bookshelf-1.16.1-6.1.10.jar --> Bookshelf-1.16.1-6.1.11.jar):
+		Bookshelf-1.16.1-6.1.11.jar:
+			* Fixed command registration. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Botany Pots (BotanyPots-1.16.1-3.0.3.jar --> BotanyPots-1.16.1-3.0.4.jar):
+		BotanyPots-1.16.1-3.0.4.jar:
+			* Add client config for break effects (#56) - Chloe Dawn
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Cosmetic Armor Reworked (CosmeticArmorReworked-1.16.1-v1.jar --> CosmeticArmorReworked-1.16.1-v1a.jar):
+		CosmeticArmorReworked-1.16.1-v1a.jar:
+			Fixed a crash when installed with newer versions of Forge.
+
+	Curios API (Forge) (curios-FORGE-1.16.1-3.0-beta3.jar --> curios-FORGE-1.16.1-3.0.jar):
+		curios-FORGE-1.16.1-3.0.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[3.0] - 2020.07.21
+			Fixed
+			* Fixed Curios button disappearing when switching tabs in Creative menu [#55](https://github.com/TheIllusiveC4/Curios/issues/55)
+			* Fixed being able to right-click Curios items into any slot [#56](https://github.com/TheIllusiveC4/Curios/issues/56)
+			[3.0-beta4] - 2020.07.17
+			Fixed
+			* Fixed crashes with Forge 32.0.67+ [#53](https://github.com/TheIllusiveC4/Curios/issues/53)
+			[3.0-beta3] - 2020.07.14
+			Changed
+			* [API] IMC messages can now process iterable collections of SlotTypeMessage
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+		curios-FORGE-1.16.1-3.0-beta4.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[3.0-beta4] - 2020.07.17
+			Fixed
+			* Fixed crashes with Forge 32.0.67+ [#53](https://github.com/TheIllusiveC4/Curios/issues/53)
+			[3.0-beta3] - 2020.07.14
+			Changed
+			* [API] IMC messages can now process iterable collections of SlotTypeMessage
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+	Dank Storage (dankstorage-3.4.jar --> dankstorage-3.7a.jar):
+		dankstorage-3.7a.jar:
+			fix voiding on filters when it shouldn't be
+
+		dankstorage-3.7.jar:
+			* fixed pickblock not working with mouse
+
+		dankstorage-3.6.jar:
+			* Fixed filtered pickup and void pickup picking up everything even though they weren't supposed to
+
+		dankstorage-3.5.jar:
+			* reduce stack size of danks to 1 (prevents stacking relater duping exploits.)
+
+	Decorative Blocks (decorative_blocks-7.0.jar --> decorative_blocks-7a.jar):
+		decorative_blocks-7a.jar:
+			Fixed chain recipe being same with vanilla (made it more expensive, now requires similar amounts of iron as the vanilla chain).
+			If you liked the earlier version, use datapacks.
+
+	Default Options (DefaultOptions_1.16.1-12.0.0.jar --> DefaultOptions_1.16.1-12.0.1.jar):
+		DefaultOptions_1.16.1-12.0.1.jar:
+			Fixed crash with later versions of Forge
+
+	Dwarf Coal (dwarfcoal-1.16.1-1.1.jar --> dwarfcoal-1.16.1-1.2.jar):
+		dwarfcoal-1.16.1-1.2.jar:
+			-Fixed a Bug with Stone Torches Light Level being the same as Dwarf Torches
+			* Stone Torch Light Level set to 14
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.1-b2.jar --> engineersdecor-1.16.1-1.1.1-b3.jar):
+		engineersdecor-1.16.1-1.1.1-b3.jar:
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+	FPS Reducer (FpsReducer-mc1.16.1-1.16.jar --> FpsReducer-mc1.16.1-1.17.jar):
+		FpsReducer-mc1.16.1-1.17.jar:
+			v1.17
+			* Updated pl_pl.json. (Thanks to Grreg21)
+			* Fixed PAUSE key works unintentionally when the FPS Reducer is disabled.
+			v1.16
+			* Initial release to mc1.16.1.
+			* Added shortcut key to enter to idle mode manually. (PAUSE key by default)
+			* Improved sliders to inherit vanilla slider class.
+			* Improved debug logs.
+			v1.15
+			* Enabled the config button in modlist.
+			* Added Simplified Chinese translation. (Thanks to cutedobe)
+			* Added Traditional Chinese translation. (Thanks to cutedobe)
+			* Added Russian translation. (Thanks to agent_rby_)
+			v1.14.1
+			* Initial release for mc1.15.2.
+			* Fixed the crash when using OpenJ9. (for mc1.12.2)
+			* Updated Polish translation. (Thanks to Grreg21)
+			* Updated English lang file. (Thanks to Grreg21)
+			* Fixed wrong comment in config file.
+			v1.14
+			* Initial release for mc1.15.1.
+			* Changed default settings: "Reudce FPS when inactive": OFF -> ON
+			* Changed default settings: "Suppress sound when inactive": OFF -> ON
+			* Changed default settings: suppressedVolume: 10 -> 20
+			* Changed the function of "FPS Reducer" button. All suppression functions are now off.
+			* Changed "Waiting Timer" can be OFF by moving the slider to the right end.
+			* Added CPU usage information of client thread.
+			* Added new settings related to CPU usage information. (cpuUsageThread, cpuUsageType)
+			* Added new GUI for adjusting HUD layout.
+			* Improved the accuracy of FPS information.
+			* Updated Polish translation. (Thanks to Grreg21)
+			* Fixed issue where idle fps mode might not be applied when gui fps mode was enabled.
+			* Optimized conditions for reducing and recovering FPS.
+			v1.13
+			* Added an option to limit FPS in menu/inventory screen.
+			* Added Polish translation. (Thanks to Grreg21)
+			v1.12.5
+			* Fixed an incompatibility with Forge 1.14.4-28.0.45.
+			v1.12.4
+			* Initial release for mc1.14.4.
+			* Fixed the issue to save the lowered fps and volume values to options.txt in certain situations.
+			v1.12.3
+			* Supported mc1.14.3.
+			* Fixed the issue not to reduce FPS when the window is inactive after loading a world.
+			* FPS suppression in inactive has been effective in the main menu. (1.14.x, experimental)
+			v1.12.2
+			* Initial port to mc1.14.2.
+			* SuppressSound feature has been effective even in the main menu.
+			* Improved synchronization handling of the config files.
+			* Refactored some codes.
+			v1.12.1
+			* Fixed a server crash when installed on a server.
+			v1.12
+			* Added player moving detection to avoid FPS reduction during riding and flying.
+			* Changed left-bottom FPS indication way not to overlap a chat box.
+			* Integrated the wating time sliders.
+			* Added a player config mode.
+			* Moved config files under config/fpsreducer folder.
+			v1.11
+			* Initial release to 1.13.2.
+
+	GraveStone Mod ([1.16.1] Gravestone Mod 1.16.1-1.0.3 --> [1.16.1] Gravestone Mod 1.16.1-1.0.5):
+		[1.16.1] Gravestone Mod 1.16.1-1.0.5:
+			* Fixed GUIs not showing tooltips
+
+		[1.16.1] Gravestone Mod 1.16.1-1.0.4:
+			* Internal changes
+
+	Interactio - In-World Crafting with Datapacks! (Interactio-1.16.1-2.0.3.jar --> Interactio-1.16.1-2.0.4.jar):
+		Interactio-1.16.1-2.0.4.jar:
+			[- Bump min forge to 32.0.67 to fix command registry crashing the server](https://github.com/MaxNeedsSnacks/Interactio/commit/da124a01fa2759f952ec4ae56a016bcf2934e139)
+			This is an optional(!) update to add support for Forge versions 32.0.67 and up, in fact, you **should not** update the mod unless you're using a newer Forge, as this WILL not work with older versions due to a breaking change in Forge build 32.0.67
+
+	KubeJS (kubejs-2.7.0.45.jar --> kubejs-2.7.0.47.jar):
+		kubejs-2.7.0.47.jar:
+			Fixed crash with Forge 67+
+
+	Large Fluid Tank (LargeFluidTank-16.0.1.jar --> LargeFluidTank-16.0.2.jar):
+		LargeFluidTank-16.0.2.jar:
+			FluidTank for 1.16.1 and Forge
+			This mod requires [Scalable Cat's Force](https://www.curseforge.com/minecraft/mc-mods/scalable-cats-force) to work.
+			You have to download version 2.13.2 of [Scalable Cat's Force](https://www.curseforge.com/minecraft/mc-mods/scalable-cats-force). I don't support any other environment.
+			This version recommends forge newer than 32.0.6
+			v16.0.1
+			* Fixed CAT got fluid from empty inventory.
+			* Fixed the pipe didn't have dummy bounding box when pipe wasn't connected to tank.
+			* Remove shadow from text in CAT tile.
+			Build with net.minecraftforge:forge:1.16.1-32.0.23, Mapping: 20200514-1.16
+			v16.0.0-SNAPSHOT
+			* First release for Minecraft 1.16.1
+			* No support of tooltip mod.
+			* Changed tank capacity. Build with net.minecraftforge:forge:1.16.1-32.0.6
+
+	Lollipop (Lollipop-1.16.1-2.0.1.jar --> Lollipop-1.16.1-2.1.2.jar):
+		Lollipop-1.16.1-2.1.2.jar:
+			No changelog available.
+
+		Lollipop-1.16.1-2.1.1.jar:
+			No changelog available.
+
+		Lollipop-1.16.1-2.1.0.jar:
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+
+		Lollipop-1.16.1-2.0.2.jar:
+			No changelog available.
+
+	Ma Essentials ([1.16.1] Ma Essentials v3.2.2 --> [1.16.1] Ma Essentials v3.2.3):
+		[1.16.1] Ma Essentials v3.2.3:
+			Updated for to work for forge over 32.0.66.
+			Fixed colors for some messages.
+			Added action bar with timer while teleporting.
+
+	Mekanism (Mekanism-1.16.1-10.0.1.424.jar --> Mekanism-1.16.1-10.0.3.426.jar):
+		Mekanism-1.16.1-10.0.3.426.jar:
+			[7e131d9](https://github.com/mekanism/Mekanism/commit/7e131d9b1cb9625177affe2eb8bcba4d52d137e6) - Make dictionary show block tags when used on a block in world instead of item tags
+			[46de0e3](https://github.com/mekanism/Mekanism/commit/46de0e3df7db993f8279aaf1bb666f8b86dd56e9) - Improve /mek build structures ([#6345](https://github.com/mekanism/Mekanism/issues/6345))
+			[d77fd2d](https://github.com/mekanism/Mekanism/commit/d77fd2d124321e4ef6831934da414b1bfaef7dbf) - Update deps, re-enable TOP in dev, and add support for Biome's O Plenty's black sand/sandstone. Note: This will cause the new black sandstone to sand recipe to error when used with Biome's O Plenty versions older than 11.0.0.386. But it is simple enough to just update BOP
+			[c5a95ad](https://github.com/mekanism/Mekanism/commit/c5a95ad00a29930728def53b99368c38fb70eb62) - Fix QIO drive upgrade recipes not properly transferring the stored items [#6354](https://github.com/mekanism/Mekanism/issues/6354)
+			[4a33b37](https://github.com/mekanism/Mekanism/commit/4a33b37de59e47f375853d9152c08642718c9ba6) - Ensure that at least one super heater is included in the boiler [#6359](https://github.com/mekanism/Mekanism/issues/6359) Technically we could let it form if there is an empty spot below the pressure disperser in the minimum size, but as the boil capacity would then be zero, we instead just require that there is at least one superheating element
+			[f168f9f](https://github.com/mekanism/Mekanism/commit/f168f9fb3682417f882ea8af32a3f6810ec6aeac) - Fix a bunch of different issues, most of which relating to the SPS: - Fix the SPS sometimes not being able to insert energy due to the order in which things tick [#6351](https://github.com/mekanism/Mekanism/issues/6351) The SPS is designed to be able to use all energy inserted, even if some of it may end up being unused - Fix the SPS marking the amount of input processed by more than it actually was able to process (due to the fact that there was not that much input stored) - Fix the SPS displaying the max theoretical process rate (if the input tank had unlimited capacity), instead of displaying the actual amount it processed - Fix SPS Process Rate having wrong capitalization for mB - Fix a few mismatched equals/hashcode implementations - Fix MathUtils clampToLong converting it to an int not a long
+			[7bb2654](https://github.com/mekanism/Mekanism/commit/7bb26540f63d142244f8bc6608d5d94266bc2250) - Keep track of bolt render information for SPS multiblocks per multiblock instead of combining them all together and then having them not get rendered in the proper location due to the matrix stack shifting it the incorrect amount [#6355](https://github.com/mekanism/Mekanism/issues/6355)
+			[a099859](https://github.com/mekanism/Mekanism/commit/a099859ada9bca3294a516c360cd4e27f745511e) - Make Flamethrower flames be always faster then the player causing them and improve rendering positioning of various particles ([#6250](https://github.com/mekanism/Mekanism/issues/6250))
+			[7688f13](https://github.com/mekanism/Mekanism/commit/7688f133933913361abd0fc4af13bd5f717bfd69) - Update forge in dev, and rerun data generator
+			[09e65ff](https://github.com/mekanism/Mekanism/commit/09e65ffdbc54daf3af9b0117dcd5cea073967e86) - Fix our bolt renderer not working on fabulous graphics. Fix the Meka Suit not rendering properly on "children". Fix Meka Suit gravitational modulator bolt rendering not properly shifting when the player is crouching Work on generifying how the Meka Suit disables rendering of various parts of the model of the entity it is being worn by to have better compatibility with non players (such as armor stands) Update our custom handling in our own armor layer to be more like vanilla as it changed in 1.16, and was causing the meka suit to not render properly on various other entities such as zombies
+			[700d7c4](https://github.com/mekanism/Mekanism/commit/700d7c4012c1da7718fae6ea3a55455cd0cdab1b) - Fix bolts from magnetic attraction module and vein mining module properly render for all players in multiplayer [#6290](https://github.com/mekanism/Mekanism/issues/6290). Also make the atomic disassembler when vein mining also have the same bolt rendering as the vein mining module does
+			[d9b02a2](https://github.com/mekanism/Mekanism/commit/d9b02a298d0a06ea1cc05a38ad79d85121ad966c) - Make the radioactive waste barrel be able to give off a comparator signal [https://github.com/mekanism/Mekanism-Feature-Requests/issues/73](https://github.com/mekanism/Mekanism-Feature-Requests/issues/73)
+			[1374066](https://github.com/mekanism/Mekanism/commit/1374066528c63ca43dbedf2d3bb9e2fde6ae56ce) - Fix personal chest not properly causing the inventory to save when contents change sometimes on the server [#6370](https://github.com/mekanism/Mekanism/issues/6370)
+			[456079b](https://github.com/mekanism/Mekanism/commit/456079be07b6e45cb762a6ab70ef08f9cb928ee5) - Add bolt rendering for AOE tilling and log stripping
+			[fb395a0](https://github.com/mekanism/Mekanism/commit/fb395a0b40d59bd8191e93d4863683a0885922c4) - New Crowdin updates ([#6341](https://github.com/mekanism/Mekanism/issues/6341))
+			[44b786d](https://github.com/mekanism/Mekanism/commit/44b786d9be9e12ec11ae3f426df9e3c10be89e73) - Bump version to 10.0.3
+
+		Mekanism-1.16.1-10.0.2.425.jar:
+			[a87d482](https://github.com/mekanism/Mekanism/commit/a87d482d575e043e6cd9bb5a3a5c295d5f712ee9) - Re-enable recipe integration with Biomes O Plenty, and add BOP flower -> dye enricher recipes
+			[b814a8f](https://github.com/mekanism/Mekanism/commit/b814a8fbb33f4439fdddaacfbe2c141fc70c1c61) - Further generify how we dump radiation into the air for our Tiles to ensure that it properly happens for any tile and for each tank that may have radioactive materials stored in them
+			[1fc5e59](https://github.com/mekanism/Mekanism/commit/1fc5e5983866c03ce37e0de85d59332c97d6be35) - Fix the way we make the robit be immune to radiation so that the poor little guy doesn't blink red as if taking damage
+			[8f00e87](https://github.com/mekanism/Mekanism/commit/8f00e874d38d8fa031a04bba80c9d28ed2035027) - Fix tiles that can store radioactive chemicals not "voiding" the chemical from the item when it gets released into the air, and properly make using a gauge dropper to "void" the radiation not releasing it into the environment
+			[5d4e308](https://github.com/mekanism/Mekanism/commit/5d4e30875a30b0f85ea19dac5dfbbedd75c3586a) - Implement Teleporter portal coloring ([#6319](https://github.com/mekanism/Mekanism/issues/6319))
+			[7f3cd8c](https://github.com/mekanism/Mekanism/commit/7f3cd8cb500c16f37bc5652576f5c98d9da9f207) - Cleanup TagCache some, and support displaying items using the extended wildcard matching system that got added in V10 AND actually properly enable the new extended wildcard system as the text boxes in the GUIs were missing the new wildcards as valid characters. # (matches any number) ? (matches any character)
+			[526eaf2](https://github.com/mekanism/Mekanism/commit/526eaf28ec8ee126327615a5d0671c040337bf97) - Add some extra server-side safety when handling QIO put packets ([#6324](https://github.com/mekanism/Mekanism/issues/6324))
+			[895ddba](https://github.com/mekanism/Mekanism/commit/895ddba8ff932aaca46aeba4b08c3f16a83b1a95) - Override sync hash instead of normal hash for QIO and Security frequencies so that the equals and hashCodes properly match if part of the data changed
+			[4434070](https://github.com/mekanism/Mekanism/commit/4434070be83c7043ab8614175635d23223d8d46a) - Fix portable teleporter status not updating properly when the frequency is changed [#6327](https://github.com/mekanism/Mekanism/issues/6327). Also fix deleting a frequency via a frequency item causing the current selected frequency to be deselected if it was not the frequency that got deleted
+			[3c14242](https://github.com/mekanism/Mekanism/commit/3c142428263ea3a1f498a54446151c4fd2d11488) - Fix portable teleporter looking at wrong frequency manager for private frequencies
+			[20641bd](https://github.com/mekanism/Mekanism/commit/20641bdd00c592705fd256819acde752a37034da) - Don't allow external heat transfer from Fission Reactor (only environmental) - [#6323](https://github.com/mekanism/Mekanism/issues/6323)
+			[4777216](https://github.com/mekanism/Mekanism/commit/47772164bf5a8dcdb16cf8eb74af2ad3c29b68fd) - Fix a bunch of issues pertaining to ghost chunk loading. It seems World#markChunkDirty in 1.16 is not fully safe to call when things are unloading. In addition the following smaller changes have been made: - Updated forge and make sure we are overriding the proper toughness method for our armor - Improve some of the logic for transmitter tiles about if they are loaded or not and take this loaded factor into account for if transmitters are currently valid - Store the set of transmitters in a DynamicNetwork in a normal Set instead of a LinkedSet due to us no longer needing the order after we transitioned over to UUIDs
+			[c84383e](https://github.com/mekanism/Mekanism/commit/c84383ee0e07653118d8aae2b83647c102825fe9) - Fix item previews not properly cycling due to having switched to the server side tag variants rather than client side when it comes to the collections
+			[45187b3](https://github.com/mekanism/Mekanism/commit/45187b3908a564e6bf2931eb2f574bfe6a26e336) - Fix flight implementation overwriting any other mod that may allow flight ([#6329](https://github.com/mekanism/Mekanism/issues/6329)), and improve how we keep track of if a player has step assist to be even more compatible with other mods than it previously was
+			[1136915](https://github.com/mekanism/Mekanism/commit/113691555962d6350c86f72ab7cb657916efc7a7) - Update to support changes made in forge 32.0.67. Temporarily disable TOP in dev until it gets updated to the new command registration method
+			[db488aa](https://github.com/mekanism/Mekanism/commit/db488aa6c1f6c90fe9da4a9b3873c65de0c60c69) - Protect radioactive waste barrel against tick acceleration
+			[1098be5](https://github.com/mekanism/Mekanism/commit/1098be551aed079c65ab5a0b6a49622c7b39ea7f) - Don't exit flying if another mod disables it
+			[1fec453](https://github.com/mekanism/Mekanism/commit/1fec4536fd66b9d496997b3fd4be2bd45fe6dc93) - Add a bit of parallel safety [#6334](https://github.com/mekanism/Mekanism/issues/6334)
+			[57799d5](https://github.com/mekanism/Mekanism/commit/57799d5c974dae5f00c7c957875fa1cab28a0a95) - Small fix for tags in oredictionificator GUI now that someone has explained to me the difference between the different tag collections. Also fix our reading of resource locations from NBT on servers as apparently the isResouceNameValid method is now client side only in 1.16
+			[e555c7d](https://github.com/mekanism/Mekanism/commit/e555c7d536c336f42d0eebb8f00e6471dda43fa1) - Add support for `#forge:relocation_not_supported` to make it easier for mods to inform other mods that moving the blocks are likely to cause issues. This way mods only have to add to one tag, and we can blacklist our problematic blocks from other mods as well
+			[2767525](https://github.com/mekanism/Mekanism/commit/27675252076961fa6865ac84c68b1ee66511bc5c) - Make step assist height configurable for the Hydraulic Propulsion Unit
+			[849e091](https://github.com/mekanism/Mekanism/commit/849e091cbb95ab7e73443406208e2593fc6a63fb) - Declare war against [https://github.com/MinecraftForge/MinecraftForge/issues/6374](https://github.com/MinecraftForge/MinecraftForge/issues/6374) and exit early out of all events that have crashes happen due to it if the game state is not valid so that we do not get blamed for crashes
+			[b7f9af2](https://github.com/mekanism/Mekanism/commit/b7f9af2356d49bcb83a94e11d85e15d177c47c97) - Fix Charge Distribution Unit trying to charge full items and voiding FE
+			[abf945f](https://github.com/mekanism/Mekanism/commit/abf945f69e963efbdb4281f5dcef2e3dcd9b6597) - fix formatting
+			[f0ee3b2](https://github.com/mekanism/Mekanism/commit/f0ee3b2cca49e46aa5eaabafecc6f059313b3f8f) - New Ingot Texture Style
+			[e9469d7](https://github.com/mekanism/Mekanism/commit/e9469d75923cce8b7c943e0455f80c62f726154c) - Fixed Ingot Textures
+			[0b16613](https://github.com/mekanism/Mekanism/commit/0b166136a59d43050abfb8fee77edc17ffc1a102) - Fix Charge Distribution Unit trying to charge full items and voiding Energy ([#6339](https://github.com/mekanism/Mekanism/issues/6339))
+			[04b83b9](https://github.com/mekanism/Mekanism/commit/04b83b961c804c968855d7a815a31e21ec7eae56) - Updated Tin Ingot
+			[9fda4dd](https://github.com/mekanism/Mekanism/commit/9fda4dd14307d73c6c4bd1d62da4c91a8f7eda84) - Slightly improve logic for charge distribution by short circuiting to not bother inserting/attempting to use at all if the item is full
+			[0775f27](https://github.com/mekanism/Mekanism/commit/0775f2769c7b1c6927dbb9871ee43ec7a2f9b0dc) - New Crowdin updates ([#6312](https://github.com/mekanism/Mekanism/issues/6312))
+			[db6b115](https://github.com/mekanism/Mekanism/commit/db6b11512f8179c309ee5c96e5c99e3c9721f9b3) - Bump version to 10.0.2
+
+	Mekanism Generators (MekanismGenerators-1.16.1-10.0.1.424.jar --> MekanismGenerators-1.16.1-10.0.3.426.jar):
+		MekanismGenerators-1.16.1-10.0.3.426.jar:
+			[7e131d9](https://github.com/mekanism/Mekanism/commit/7e131d9b1cb9625177affe2eb8bcba4d52d137e6) - Make dictionary show block tags when used on a block in world instead of item tags
+			[46de0e3](https://github.com/mekanism/Mekanism/commit/46de0e3df7db993f8279aaf1bb666f8b86dd56e9) - Improve /mek build structures ([#6345](https://github.com/mekanism/Mekanism/issues/6345))
+			[d77fd2d](https://github.com/mekanism/Mekanism/commit/d77fd2d124321e4ef6831934da414b1bfaef7dbf) - Update deps, re-enable TOP in dev, and add support for Biome's O Plenty's black sand/sandstone. Note: This will cause the new black sandstone to sand recipe to error when used with Biome's O Plenty versions older than 11.0.0.386. But it is simple enough to just update BOP
+			[c5a95ad](https://github.com/mekanism/Mekanism/commit/c5a95ad00a29930728def53b99368c38fb70eb62) - Fix QIO drive upgrade recipes not properly transferring the stored items [#6354](https://github.com/mekanism/Mekanism/issues/6354)
+			[4a33b37](https://github.com/mekanism/Mekanism/commit/4a33b37de59e47f375853d9152c08642718c9ba6) - Ensure that at least one super heater is included in the boiler [#6359](https://github.com/mekanism/Mekanism/issues/6359) Technically we could let it form if there is an empty spot below the pressure disperser in the minimum size, but as the boil capacity would then be zero, we instead just require that there is at least one superheating element
+			[f168f9f](https://github.com/mekanism/Mekanism/commit/f168f9fb3682417f882ea8af32a3f6810ec6aeac) - Fix a bunch of different issues, most of which relating to the SPS: - Fix the SPS sometimes not being able to insert energy due to the order in which things tick [#6351](https://github.com/mekanism/Mekanism/issues/6351) The SPS is designed to be able to use all energy inserted, even if some of it may end up being unused - Fix the SPS marking the amount of input processed by more than it actually was able to process (due to the fact that there was not that much input stored) - Fix the SPS displaying the max theoretical process rate (if the input tank had unlimited capacity), instead of displaying the actual amount it processed - Fix SPS Process Rate having wrong capitalization for mB - Fix a few mismatched equals/hashcode implementations - Fix MathUtils clampToLong converting it to an int not a long
+			[7bb2654](https://github.com/mekanism/Mekanism/commit/7bb26540f63d142244f8bc6608d5d94266bc2250) - Keep track of bolt render information for SPS multiblocks per multiblock instead of combining them all together and then having them not get rendered in the proper location due to the matrix stack shifting it the incorrect amount [#6355](https://github.com/mekanism/Mekanism/issues/6355)
+			[a099859](https://github.com/mekanism/Mekanism/commit/a099859ada9bca3294a516c360cd4e27f745511e) - Make Flamethrower flames be always faster then the player causing them and improve rendering positioning of various particles ([#6250](https://github.com/mekanism/Mekanism/issues/6250))
+			[7688f13](https://github.com/mekanism/Mekanism/commit/7688f133933913361abd0fc4af13bd5f717bfd69) - Update forge in dev, and rerun data generator
+			[09e65ff](https://github.com/mekanism/Mekanism/commit/09e65ffdbc54daf3af9b0117dcd5cea073967e86) - Fix our bolt renderer not working on fabulous graphics. Fix the Meka Suit not rendering properly on "children". Fix Meka Suit gravitational modulator bolt rendering not properly shifting when the player is crouching Work on generifying how the Meka Suit disables rendering of various parts of the model of the entity it is being worn by to have better compatibility with non players (such as armor stands) Update our custom handling in our own armor layer to be more like vanilla as it changed in 1.16, and was causing the meka suit to not render properly on various other entities such as zombies
+			[700d7c4](https://github.com/mekanism/Mekanism/commit/700d7c4012c1da7718fae6ea3a55455cd0cdab1b) - Fix bolts from magnetic attraction module and vein mining module properly render for all players in multiplayer [#6290](https://github.com/mekanism/Mekanism/issues/6290). Also make the atomic disassembler when vein mining also have the same bolt rendering as the vein mining module does
+			[d9b02a2](https://github.com/mekanism/Mekanism/commit/d9b02a298d0a06ea1cc05a38ad79d85121ad966c) - Make the radioactive waste barrel be able to give off a comparator signal [https://github.com/mekanism/Mekanism-Feature-Requests/issues/73](https://github.com/mekanism/Mekanism-Feature-Requests/issues/73)
+			[1374066](https://github.com/mekanism/Mekanism/commit/1374066528c63ca43dbedf2d3bb9e2fde6ae56ce) - Fix personal chest not properly causing the inventory to save when contents change sometimes on the server [#6370](https://github.com/mekanism/Mekanism/issues/6370)
+			[456079b](https://github.com/mekanism/Mekanism/commit/456079be07b6e45cb762a6ab70ef08f9cb928ee5) - Add bolt rendering for AOE tilling and log stripping
+			[fb395a0](https://github.com/mekanism/Mekanism/commit/fb395a0b40d59bd8191e93d4863683a0885922c4) - New Crowdin updates ([#6341](https://github.com/mekanism/Mekanism/issues/6341))
+			[44b786d](https://github.com/mekanism/Mekanism/commit/44b786d9be9e12ec11ae3f426df9e3c10be89e73) - Bump version to 10.0.3
+
+		MekanismGenerators-1.16.1-10.0.2.425.jar:
+			[a87d482](https://github.com/mekanism/Mekanism/commit/a87d482d575e043e6cd9bb5a3a5c295d5f712ee9) - Re-enable recipe integration with Biomes O Plenty, and add BOP flower -> dye enricher recipes
+			[b814a8f](https://github.com/mekanism/Mekanism/commit/b814a8fbb33f4439fdddaacfbe2c141fc70c1c61) - Further generify how we dump radiation into the air for our Tiles to ensure that it properly happens for any tile and for each tank that may have radioactive materials stored in them
+			[1fc5e59](https://github.com/mekanism/Mekanism/commit/1fc5e5983866c03ce37e0de85d59332c97d6be35) - Fix the way we make the robit be immune to radiation so that the poor little guy doesn't blink red as if taking damage
+			[8f00e87](https://github.com/mekanism/Mekanism/commit/8f00e874d38d8fa031a04bba80c9d28ed2035027) - Fix tiles that can store radioactive chemicals not "voiding" the chemical from the item when it gets released into the air, and properly make using a gauge dropper to "void" the radiation not releasing it into the environment
+			[5d4e308](https://github.com/mekanism/Mekanism/commit/5d4e30875a30b0f85ea19dac5dfbbedd75c3586a) - Implement Teleporter portal coloring ([#6319](https://github.com/mekanism/Mekanism/issues/6319))
+			[7f3cd8c](https://github.com/mekanism/Mekanism/commit/7f3cd8cb500c16f37bc5652576f5c98d9da9f207) - Cleanup TagCache some, and support displaying items using the extended wildcard matching system that got added in V10 AND actually properly enable the new extended wildcard system as the text boxes in the GUIs were missing the new wildcards as valid characters. # (matches any number) ? (matches any character)
+			[526eaf2](https://github.com/mekanism/Mekanism/commit/526eaf28ec8ee126327615a5d0671c040337bf97) - Add some extra server-side safety when handling QIO put packets ([#6324](https://github.com/mekanism/Mekanism/issues/6324))
+			[895ddba](https://github.com/mekanism/Mekanism/commit/895ddba8ff932aaca46aeba4b08c3f16a83b1a95) - Override sync hash instead of normal hash for QIO and Security frequencies so that the equals and hashCodes properly match if part of the data changed
+			[4434070](https://github.com/mekanism/Mekanism/commit/4434070be83c7043ab8614175635d23223d8d46a) - Fix portable teleporter status not updating properly when the frequency is changed [#6327](https://github.com/mekanism/Mekanism/issues/6327). Also fix deleting a frequency via a frequency item causing the current selected frequency to be deselected if it was not the frequency that got deleted
+			[3c14242](https://github.com/mekanism/Mekanism/commit/3c142428263ea3a1f498a54446151c4fd2d11488) - Fix portable teleporter looking at wrong frequency manager for private frequencies
+			[20641bd](https://github.com/mekanism/Mekanism/commit/20641bdd00c592705fd256819acde752a37034da) - Don't allow external heat transfer from Fission Reactor (only environmental) - [#6323](https://github.com/mekanism/Mekanism/issues/6323)
+			[4777216](https://github.com/mekanism/Mekanism/commit/47772164bf5a8dcdb16cf8eb74af2ad3c29b68fd) - Fix a bunch of issues pertaining to ghost chunk loading. It seems World#markChunkDirty in 1.16 is not fully safe to call when things are unloading. In addition the following smaller changes have been made: - Updated forge and make sure we are overriding the proper toughness method for our armor - Improve some of the logic for transmitter tiles about if they are loaded or not and take this loaded factor into account for if transmitters are currently valid - Store the set of transmitters in a DynamicNetwork in a normal Set instead of a LinkedSet due to us no longer needing the order after we transitioned over to UUIDs
+			[c84383e](https://github.com/mekanism/Mekanism/commit/c84383ee0e07653118d8aae2b83647c102825fe9) - Fix item previews not properly cycling due to having switched to the server side tag variants rather than client side when it comes to the collections
+			[45187b3](https://github.com/mekanism/Mekanism/commit/45187b3908a564e6bf2931eb2f574bfe6a26e336) - Fix flight implementation overwriting any other mod that may allow flight ([#6329](https://github.com/mekanism/Mekanism/issues/6329)), and improve how we keep track of if a player has step assist to be even more compatible with other mods than it previously was
+			[1136915](https://github.com/mekanism/Mekanism/commit/113691555962d6350c86f72ab7cb657916efc7a7) - Update to support changes made in forge 32.0.67. Temporarily disable TOP in dev until it gets updated to the new command registration method
+			[db488aa](https://github.com/mekanism/Mekanism/commit/db488aa6c1f6c90fe9da4a9b3873c65de0c60c69) - Protect radioactive waste barrel against tick acceleration
+			[1098be5](https://github.com/mekanism/Mekanism/commit/1098be551aed079c65ab5a0b6a49622c7b39ea7f) - Don't exit flying if another mod disables it
+			[1fec453](https://github.com/mekanism/Mekanism/commit/1fec4536fd66b9d496997b3fd4be2bd45fe6dc93) - Add a bit of parallel safety [#6334](https://github.com/mekanism/Mekanism/issues/6334)
+			[57799d5](https://github.com/mekanism/Mekanism/commit/57799d5c974dae5f00c7c957875fa1cab28a0a95) - Small fix for tags in oredictionificator GUI now that someone has explained to me the difference between the different tag collections. Also fix our reading of resource locations from NBT on servers as apparently the isResouceNameValid method is now client side only in 1.16
+			[e555c7d](https://github.com/mekanism/Mekanism/commit/e555c7d536c336f42d0eebb8f00e6471dda43fa1) - Add support for `#forge:relocation_not_supported` to make it easier for mods to inform other mods that moving the blocks are likely to cause issues. This way mods only have to add to one tag, and we can blacklist our problematic blocks from other mods as well
+			[2767525](https://github.com/mekanism/Mekanism/commit/27675252076961fa6865ac84c68b1ee66511bc5c) - Make step assist height configurable for the Hydraulic Propulsion Unit
+			[849e091](https://github.com/mekanism/Mekanism/commit/849e091cbb95ab7e73443406208e2593fc6a63fb) - Declare war against [https://github.com/MinecraftForge/MinecraftForge/issues/6374](https://github.com/MinecraftForge/MinecraftForge/issues/6374) and exit early out of all events that have crashes happen due to it if the game state is not valid so that we do not get blamed for crashes
+			[b7f9af2](https://github.com/mekanism/Mekanism/commit/b7f9af2356d49bcb83a94e11d85e15d177c47c97) - Fix Charge Distribution Unit trying to charge full items and voiding FE
+			[abf945f](https://github.com/mekanism/Mekanism/commit/abf945f69e963efbdb4281f5dcef2e3dcd9b6597) - fix formatting
+			[f0ee3b2](https://github.com/mekanism/Mekanism/commit/f0ee3b2cca49e46aa5eaabafecc6f059313b3f8f) - New Ingot Texture Style
+			[e9469d7](https://github.com/mekanism/Mekanism/commit/e9469d75923cce8b7c943e0455f80c62f726154c) - Fixed Ingot Textures
+			[0b16613](https://github.com/mekanism/Mekanism/commit/0b166136a59d43050abfb8fee77edc17ffc1a102) - Fix Charge Distribution Unit trying to charge full items and voiding Energy ([#6339](https://github.com/mekanism/Mekanism/issues/6339))
+			[04b83b9](https://github.com/mekanism/Mekanism/commit/04b83b961c804c968855d7a815a31e21ec7eae56) - Updated Tin Ingot
+			[9fda4dd](https://github.com/mekanism/Mekanism/commit/9fda4dd14307d73c6c4bd1d62da4c91a8f7eda84) - Slightly improve logic for charge distribution by short circuiting to not bother inserting/attempting to use at all if the item is full
+			[0775f27](https://github.com/mekanism/Mekanism/commit/0775f2769c7b1c6927dbb9871ee43ec7a2f9b0dc) - New Crowdin updates ([#6312](https://github.com/mekanism/Mekanism/issues/6312))
+			[db6b115](https://github.com/mekanism/Mekanism/commit/db6b11512f8179c309ee5c96e5c99e3c9721f9b3) - Bump version to 10.0.2
+
+	Mekanism Tools (MekanismTools-1.16.1-10.0.1.424.jar --> MekanismTools-1.16.1-10.0.3.426.jar):
+		MekanismTools-1.16.1-10.0.3.426.jar:
+			[7e131d9](https://github.com/mekanism/Mekanism/commit/7e131d9b1cb9625177affe2eb8bcba4d52d137e6) - Make dictionary show block tags when used on a block in world instead of item tags
+			[46de0e3](https://github.com/mekanism/Mekanism/commit/46de0e3df7db993f8279aaf1bb666f8b86dd56e9) - Improve /mek build structures ([#6345](https://github.com/mekanism/Mekanism/issues/6345))
+			[d77fd2d](https://github.com/mekanism/Mekanism/commit/d77fd2d124321e4ef6831934da414b1bfaef7dbf) - Update deps, re-enable TOP in dev, and add support for Biome's O Plenty's black sand/sandstone. Note: This will cause the new black sandstone to sand recipe to error when used with Biome's O Plenty versions older than 11.0.0.386. But it is simple enough to just update BOP
+			[c5a95ad](https://github.com/mekanism/Mekanism/commit/c5a95ad00a29930728def53b99368c38fb70eb62) - Fix QIO drive upgrade recipes not properly transferring the stored items [#6354](https://github.com/mekanism/Mekanism/issues/6354)
+			[4a33b37](https://github.com/mekanism/Mekanism/commit/4a33b37de59e47f375853d9152c08642718c9ba6) - Ensure that at least one super heater is included in the boiler [#6359](https://github.com/mekanism/Mekanism/issues/6359) Technically we could let it form if there is an empty spot below the pressure disperser in the minimum size, but as the boil capacity would then be zero, we instead just require that there is at least one superheating element
+			[f168f9f](https://github.com/mekanism/Mekanism/commit/f168f9fb3682417f882ea8af32a3f6810ec6aeac) - Fix a bunch of different issues, most of which relating to the SPS: - Fix the SPS sometimes not being able to insert energy due to the order in which things tick [#6351](https://github.com/mekanism/Mekanism/issues/6351) The SPS is designed to be able to use all energy inserted, even if some of it may end up being unused - Fix the SPS marking the amount of input processed by more than it actually was able to process (due to the fact that there was not that much input stored) - Fix the SPS displaying the max theoretical process rate (if the input tank had unlimited capacity), instead of displaying the actual amount it processed - Fix SPS Process Rate having wrong capitalization for mB - Fix a few mismatched equals/hashcode implementations - Fix MathUtils clampToLong converting it to an int not a long
+			[7bb2654](https://github.com/mekanism/Mekanism/commit/7bb26540f63d142244f8bc6608d5d94266bc2250) - Keep track of bolt render information for SPS multiblocks per multiblock instead of combining them all together and then having them not get rendered in the proper location due to the matrix stack shifting it the incorrect amount [#6355](https://github.com/mekanism/Mekanism/issues/6355)
+			[a099859](https://github.com/mekanism/Mekanism/commit/a099859ada9bca3294a516c360cd4e27f745511e) - Make Flamethrower flames be always faster then the player causing them and improve rendering positioning of various particles ([#6250](https://github.com/mekanism/Mekanism/issues/6250))
+			[7688f13](https://github.com/mekanism/Mekanism/commit/7688f133933913361abd0fc4af13bd5f717bfd69) - Update forge in dev, and rerun data generator
+			[09e65ff](https://github.com/mekanism/Mekanism/commit/09e65ffdbc54daf3af9b0117dcd5cea073967e86) - Fix our bolt renderer not working on fabulous graphics. Fix the Meka Suit not rendering properly on "children". Fix Meka Suit gravitational modulator bolt rendering not properly shifting when the player is crouching Work on generifying how the Meka Suit disables rendering of various parts of the model of the entity it is being worn by to have better compatibility with non players (such as armor stands) Update our custom handling in our own armor layer to be more like vanilla as it changed in 1.16, and was causing the meka suit to not render properly on various other entities such as zombies
+			[700d7c4](https://github.com/mekanism/Mekanism/commit/700d7c4012c1da7718fae6ea3a55455cd0cdab1b) - Fix bolts from magnetic attraction module and vein mining module properly render for all players in multiplayer [#6290](https://github.com/mekanism/Mekanism/issues/6290). Also make the atomic disassembler when vein mining also have the same bolt rendering as the vein mining module does
+			[d9b02a2](https://github.com/mekanism/Mekanism/commit/d9b02a298d0a06ea1cc05a38ad79d85121ad966c) - Make the radioactive waste barrel be able to give off a comparator signal [https://github.com/mekanism/Mekanism-Feature-Requests/issues/73](https://github.com/mekanism/Mekanism-Feature-Requests/issues/73)
+			[1374066](https://github.com/mekanism/Mekanism/commit/1374066528c63ca43dbedf2d3bb9e2fde6ae56ce) - Fix personal chest not properly causing the inventory to save when contents change sometimes on the server [#6370](https://github.com/mekanism/Mekanism/issues/6370)
+			[456079b](https://github.com/mekanism/Mekanism/commit/456079be07b6e45cb762a6ab70ef08f9cb928ee5) - Add bolt rendering for AOE tilling and log stripping
+			[fb395a0](https://github.com/mekanism/Mekanism/commit/fb395a0b40d59bd8191e93d4863683a0885922c4) - New Crowdin updates ([#6341](https://github.com/mekanism/Mekanism/issues/6341))
+			[44b786d](https://github.com/mekanism/Mekanism/commit/44b786d9be9e12ec11ae3f426df9e3c10be89e73) - Bump version to 10.0.3
+
+		MekanismTools-1.16.1-10.0.2.425.jar:
+			[a87d482](https://github.com/mekanism/Mekanism/commit/a87d482d575e043e6cd9bb5a3a5c295d5f712ee9) - Re-enable recipe integration with Biomes O Plenty, and add BOP flower -> dye enricher recipes
+			[b814a8f](https://github.com/mekanism/Mekanism/commit/b814a8fbb33f4439fdddaacfbe2c141fc70c1c61) - Further generify how we dump radiation into the air for our Tiles to ensure that it properly happens for any tile and for each tank that may have radioactive materials stored in them
+			[1fc5e59](https://github.com/mekanism/Mekanism/commit/1fc5e5983866c03ce37e0de85d59332c97d6be35) - Fix the way we make the robit be immune to radiation so that the poor little guy doesn't blink red as if taking damage
+			[8f00e87](https://github.com/mekanism/Mekanism/commit/8f00e874d38d8fa031a04bba80c9d28ed2035027) - Fix tiles that can store radioactive chemicals not "voiding" the chemical from the item when it gets released into the air, and properly make using a gauge dropper to "void" the radiation not releasing it into the environment
+			[5d4e308](https://github.com/mekanism/Mekanism/commit/5d4e30875a30b0f85ea19dac5dfbbedd75c3586a) - Implement Teleporter portal coloring ([#6319](https://github.com/mekanism/Mekanism/issues/6319))
+			[7f3cd8c](https://github.com/mekanism/Mekanism/commit/7f3cd8cb500c16f37bc5652576f5c98d9da9f207) - Cleanup TagCache some, and support displaying items using the extended wildcard matching system that got added in V10 AND actually properly enable the new extended wildcard system as the text boxes in the GUIs were missing the new wildcards as valid characters. # (matches any number) ? (matches any character)
+			[526eaf2](https://github.com/mekanism/Mekanism/commit/526eaf28ec8ee126327615a5d0671c040337bf97) - Add some extra server-side safety when handling QIO put packets ([#6324](https://github.com/mekanism/Mekanism/issues/6324))
+			[895ddba](https://github.com/mekanism/Mekanism/commit/895ddba8ff932aaca46aeba4b08c3f16a83b1a95) - Override sync hash instead of normal hash for QIO and Security frequencies so that the equals and hashCodes properly match if part of the data changed
+			[4434070](https://github.com/mekanism/Mekanism/commit/4434070be83c7043ab8614175635d23223d8d46a) - Fix portable teleporter status not updating properly when the frequency is changed [#6327](https://github.com/mekanism/Mekanism/issues/6327). Also fix deleting a frequency via a frequency item causing the current selected frequency to be deselected if it was not the frequency that got deleted
+			[3c14242](https://github.com/mekanism/Mekanism/commit/3c142428263ea3a1f498a54446151c4fd2d11488) - Fix portable teleporter looking at wrong frequency manager for private frequencies
+			[20641bd](https://github.com/mekanism/Mekanism/commit/20641bdd00c592705fd256819acde752a37034da) - Don't allow external heat transfer from Fission Reactor (only environmental) - [#6323](https://github.com/mekanism/Mekanism/issues/6323)
+			[4777216](https://github.com/mekanism/Mekanism/commit/47772164bf5a8dcdb16cf8eb74af2ad3c29b68fd) - Fix a bunch of issues pertaining to ghost chunk loading. It seems World#markChunkDirty in 1.16 is not fully safe to call when things are unloading. In addition the following smaller changes have been made: - Updated forge and make sure we are overriding the proper toughness method for our armor - Improve some of the logic for transmitter tiles about if they are loaded or not and take this loaded factor into account for if transmitters are currently valid - Store the set of transmitters in a DynamicNetwork in a normal Set instead of a LinkedSet due to us no longer needing the order after we transitioned over to UUIDs
+			[c84383e](https://github.com/mekanism/Mekanism/commit/c84383ee0e07653118d8aae2b83647c102825fe9) - Fix item previews not properly cycling due to having switched to the server side tag variants rather than client side when it comes to the collections
+			[45187b3](https://github.com/mekanism/Mekanism/commit/45187b3908a564e6bf2931eb2f574bfe6a26e336) - Fix flight implementation overwriting any other mod that may allow flight ([#6329](https://github.com/mekanism/Mekanism/issues/6329)), and improve how we keep track of if a player has step assist to be even more compatible with other mods than it previously was
+			[1136915](https://github.com/mekanism/Mekanism/commit/113691555962d6350c86f72ab7cb657916efc7a7) - Update to support changes made in forge 32.0.67. Temporarily disable TOP in dev until it gets updated to the new command registration method
+			[db488aa](https://github.com/mekanism/Mekanism/commit/db488aa6c1f6c90fe9da4a9b3873c65de0c60c69) - Protect radioactive waste barrel against tick acceleration
+			[1098be5](https://github.com/mekanism/Mekanism/commit/1098be551aed079c65ab5a0b6a49622c7b39ea7f) - Don't exit flying if another mod disables it
+			[1fec453](https://github.com/mekanism/Mekanism/commit/1fec4536fd66b9d496997b3fd4be2bd45fe6dc93) - Add a bit of parallel safety [#6334](https://github.com/mekanism/Mekanism/issues/6334)
+			[57799d5](https://github.com/mekanism/Mekanism/commit/57799d5c974dae5f00c7c957875fa1cab28a0a95) - Small fix for tags in oredictionificator GUI now that someone has explained to me the difference between the different tag collections. Also fix our reading of resource locations from NBT on servers as apparently the isResouceNameValid method is now client side only in 1.16
+			[e555c7d](https://github.com/mekanism/Mekanism/commit/e555c7d536c336f42d0eebb8f00e6471dda43fa1) - Add support for `#forge:relocation_not_supported` to make it easier for mods to inform other mods that moving the blocks are likely to cause issues. This way mods only have to add to one tag, and we can blacklist our problematic blocks from other mods as well
+			[2767525](https://github.com/mekanism/Mekanism/commit/27675252076961fa6865ac84c68b1ee66511bc5c) - Make step assist height configurable for the Hydraulic Propulsion Unit
+			[849e091](https://github.com/mekanism/Mekanism/commit/849e091cbb95ab7e73443406208e2593fc6a63fb) - Declare war against [https://github.com/MinecraftForge/MinecraftForge/issues/6374](https://github.com/MinecraftForge/MinecraftForge/issues/6374) and exit early out of all events that have crashes happen due to it if the game state is not valid so that we do not get blamed for crashes
+			[b7f9af2](https://github.com/mekanism/Mekanism/commit/b7f9af2356d49bcb83a94e11d85e15d177c47c97) - Fix Charge Distribution Unit trying to charge full items and voiding FE
+			[abf945f](https://github.com/mekanism/Mekanism/commit/abf945f69e963efbdb4281f5dcef2e3dcd9b6597) - fix formatting
+			[f0ee3b2](https://github.com/mekanism/Mekanism/commit/f0ee3b2cca49e46aa5eaabafecc6f059313b3f8f) - New Ingot Texture Style
+			[e9469d7](https://github.com/mekanism/Mekanism/commit/e9469d75923cce8b7c943e0455f80c62f726154c) - Fixed Ingot Textures
+			[0b16613](https://github.com/mekanism/Mekanism/commit/0b166136a59d43050abfb8fee77edc17ffc1a102) - Fix Charge Distribution Unit trying to charge full items and voiding Energy ([#6339](https://github.com/mekanism/Mekanism/issues/6339))
+			[04b83b9](https://github.com/mekanism/Mekanism/commit/04b83b961c804c968855d7a815a31e21ec7eae56) - Updated Tin Ingot
+			[9fda4dd](https://github.com/mekanism/Mekanism/commit/9fda4dd14307d73c6c4bd1d62da4c91a8f7eda84) - Slightly improve logic for charge distribution by short circuiting to not bother inserting/attempting to use at all if the item is full
+			[0775f27](https://github.com/mekanism/Mekanism/commit/0775f2769c7b1c6927dbb9871ee43ec7a2f9b0dc) - New Crowdin updates ([#6312](https://github.com/mekanism/Mekanism/issues/6312))
+			[db6b115](https://github.com/mekanism/Mekanism/commit/db6b11512f8179c309ee5c96e5c99e3c9721f9b3) - Bump version to 10.0.2
+
+	OpenBlocks Elevator (elevatorid-1.16.1-1.7.2.jar --> elevatorid-1.16.1-1.7.3.jar):
+		elevatorid-1.16.1-1.7.3.jar:
+			Teleport to the correct Y value when the elevator is camouflaged with blocks with smaller/larger hitboxes
+			Compiled with forge 1.16.1-32.0.69
+
+	Patchouli (Patchouli-1.16-38.jar --> Patchouli-1.16-39.jar):
+		Patchouli-1.16-39.jar:
+			[https://github.com/Vazkii/Patchouli/releases/tag/release-1.16-39-forge](https://github.com/Vazkii/Patchouli/releases/tag/release-1.16-39-forge)
+
+	Pedestals (Pedestals - 0.3b --> Pedestals - 0.4b):
+		Pedestals - 0.4b:
+			Hotfix: I'm a Derp
+			RE-Added Storage Drawers To work with the Export Upgrade
+
+		Pedestals - 0.4a:
+			JEI Integration Update
+			* Added Integration with JEI, All Items have some sort of description saying how to obtain or use them.
+			* Added Forge Tags to some items.
+			* Made all the pedestal upgrades shapeless recipes.
+			* Fixed an issue where pedestals couldn't be colored.
+			* Tweaked Exp Consumption by the Enchanter and Anvil Upgrades to be more inline with Vanilla.
+
+		Pedestals - 0.4:
+			Void, Quarry Update!
+			(And Other Fixes and Improvements)
+			Added This Update:
+			* Void Upgrade
+			* Quarry Upgrade
+			* Quarry Blacklist Upgrade
+			* Filter Tag Upgrade
+			* Filter Tag Blacklist Upgrade
+			* Tag Tool
+			Fixes and Improvements:
+			* Fixed Export Upgrade not extracting from some inventories.
+			* Fixed Redstone Comparator output from pedestals.
+			* Fixed pedestals with light able to be colored, which dropped the glowstone out of it.
+			* Improvement: All Upgrades that could check a below inventory, can now also check Minecarts that have an Inventory like a Chest Minecart
+			* Improvement: Upgrades, Pedestal Capacity/Speed Upgrades, Colored Pallets, and Glowstone no longer consume an item if the player is in creative mode.
+			Details on New Features:
+			* Void Upgrade
+			Crafted with an upgrade base, lava bucket, cactus, and enderpearl, This upgrade makes anything inserted, or dropped on the pedestal get removed from the world, ALSO this pedestal will do void damage to any entities that come into contact with it, Speed and Capacity Enchants can be applied to it.
+			* Quarry Upgrade
+			Crafted with the Breaker, Magnet, Filter(any), and Smelter Upgrades.
+			Functions similar to the tree chopper, except it breaks blocks.
+			Like the Breaker Upgrade it was crafted with, It breaks blocks dropping the items, Enchanting this upgrade with silktouch or fortune will apply those effects to the mining.
+			Like the Magnet Upgrade it was crafted with, it will magnet up items within the range of operation, putting those items in the pedestal to be transferred out.
+			Like the Filter Upgrade it was crafted with, it uses an inventory 'below' as a whitelist of blocks to break, the blacklist version will skip the blocks when mining.
+			Like the Smelter Upgrade it was crafted with, this requires fuels to be dropped on the pedestal, 1 coal will mine 8 blocks roughly.
+			Powering the pedestal off will halt all its functions except fuel absorption.
+			It can be enchanted with Speed, Range(Effects Height), and Capacity (Effects AOE) Enchantments
+			It can also be enchanted with Silktouch and Fortune vanilla enchants using the anvil upgrade.
+			* Tag Filter / Tag Tool
+			Crafted with the Tag Tool and an upgrade base.
+			* This set of Upgrades checks a below inventory for a renamed item, the renamed item must be named after a tag to function, for example an item renamed "forge:stone". (one tag name per renamed item)
+			* Tag Tool is crafted like the Linking Tool except you replace the diamond with an emerald.
+			* With an item in the offhand and the Tag Tool in your main hand, right-click in the air. A message on screen will list all the tags that item has on it, tags can be used to rename items which can be used to filter.
+			As always, if you need help with the mod, the discord invite is in the mod listing on the home screen in game. the channel to chat in is #pedestals
+			(Built with Forge version: 1.16.1 - 32.0.69)
+
+	Powah! (Powah-1.16.1-2.0.2.jar --> Powah-1.16.1-2.1.2.jar):
+		Powah-1.16.1-2.1.2.jar:
+			2.1.2
+			* Fixed magmator creates ungodly amount of pings in server, Closes #97.
+			* Added all uraninite ores to the forge:ores and forge:ores/uraninite tags, Closes #96.
+			* Updated [lollipop](https://www.curseforge.com/minecraft/mc-mods/lollipop/files/all) to v2.1.2.
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+		Powah-1.16.1-2.1.1.jar:
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+		Powah-1.16.1-2.1.0.jar:
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* Fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+		Powah-1.16.1-2.0.4.jar:
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed redstone configuration for all blocks.
+			* Fixed reactor not accepting solid coolant.
+			* Updated [lollipop](https://www.curseforge.com/minecraft/mc-mods/lollipop/files) to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+		Powah-1.16.1-2.0.3.jar:
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+	RandomPatches (RandomPatches 1.16.1-1.21.2.1 --> RandomPatches 1.16.1-1.22.0.0):
+		RandomPatches 1.16.1-1.22.0.0:
+			Now compatible with and requires Forge 1.16.1-32.0.67 or higher.
+
+	Reap Mod ([1.16.1] Reap Mod 1.16.1-1.0.2 --> [1.16.1] Reap Mod 1.16.1-1.0.3):
+		[1.16.1] Reap Mod 1.16.1-1.0.3:
+			* Internal changes
+
+	Refined Storage (Refined Storage 1.9.1 --> Refined Storage 1.9.2):
+		Refined Storage 1.9.2:
+			* Fixed crash with Forge version 67 (Darkere)
+			* Fixed cases where Refined Storage unwillingly acts like a chunkloader (raoulvdberge)
+			* Fixed Network Transmitters being able to connect to any network device (raoulvdberge)
+			* Fixed Crafting Tweaks buttons being in the wrong position after changing the size configuration of the Grid (raoulvdberge)
+			* Networks that are in a chunk that isn't loaded will no longer work, they will turn off. Chunkload the Controller to maintain a functioning network over long distances (Darkere/raoulvdberge)
+			* Re-added interdimensional networks with the Network Transmitter and Network Receiver (raoulvdberge)
+			* Re-added MouseTweaks integration (raoulvdberge)
+
+	The One Probe (theoneprobe-1.16-3.0.0-beta.jar --> theoneprobe-1.16-3.0.1-beta.jar):
+		theoneprobe-1.16-3.0.1-beta.jar:
+			No changelog available.
+
+	Tool Belt (ToolBelt-1.16.1-1.14.1.jar --> ToolBelt-1.16.1-1.14.2.jar):
+		ToolBelt-1.16.1-1.14.2.jar:
+			Reintroduce Curios support.
+
+	Tool Stats (ToolStats-1.16.1-2.0.1.jar --> ToolStats-1.16.1-2.0.3.jar):
+		ToolStats-1.16.1-2.0.3.jar:
+			* Offset tooltip index based on debug state. #1 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?ToolStats)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	U Team Core (U-Team-Core-1.16.1-3.1.0.161-SNAPSHOT --> U-Team-Core-1.16.1-3.1.1.163-SNAPSHOT):
+		U-Team-Core-1.16.1-3.1.1.163-SNAPSHOT:
+			[Changelog of 3.1.1.163-SNAPSHOT](https://github.com/MC-U-Team/U-Team-Core/blob/1.16.1/CHANGELOG.md#1161-311163-SNAPSHOT---2020-07-17)
+
+		U-Team-Core-1.16.1-3.1.0.162-SNAPSHOT:
+			[Changelog of 3.1.0.162-SNAPSHOT](https://github.com/MC-U-Team/U-Team-Core/blob/1.16.1/CHANGELOG.md#1161-310162-SNAPSHOT---2020-07-16)
+
+	Useful Backpacks (Useful-Backpacks-1.16.1-1.11.0.68-SNAPSHOT --> Useful-Backpacks-1.16.1-1.11.1.69-SNAPSHOT):
+		Useful-Backpacks-1.16.1-1.11.1.69-SNAPSHOT:
+			[Changelog of 1.11.1.69-SNAPSHOT](https://github.com/MC-U-Team/Useful-Backpacks/blob/1.16.1/CHANGELOG.md#1161-111169-SNAPSHOT---2020-07-17)
+
+	YUNG's Better Mineshafts (Forge) (BetterMineshaftsForge-1.16.1-1.1.jar --> BetterMineshaftsForge-1.16.1-1.3.jar):
+		BetterMineshaftsForge-1.16.1-1.3.jar:
+			If you like my mods, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal](). <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/cxWmXpn)
+			Changelog:
+			* Mod now works server-side only
+
+		BetterMineshaftsForge-1.16.1-1.2.jar:
+			If you like my mods, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal](). <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/cxWmXpn)
+			Changelog:
+			* Add config options for controlling ore deposits
+			* Add config options for controlling vine spawn rate
+
+Removed:
+- Game Stages
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
