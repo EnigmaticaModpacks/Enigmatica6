@@ -1,6 +1,22 @@
+
+
+## Enigmatica 6 v0.2.1
+
+**It is highly recommended to run the `/reload` command when entering a singleplayer world or booting up a server, due to a bug. We're working to resolve it.**
+
+_Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.1.txt)_
+
+**Mod additions**
+
+- 
+
+**Changes**
+
+- BiomesOPlenty: Set default world type for servers to biomesoplenty
+
 ## Enigmatica 6 v0.2.0
 
-**It is highly recommended to run the `/reload` command when entering a world, due to a bug. We're working to resolve it.**
+**It is highly recommended to run the `/reload` command when entering a singleplayer world or booting up a server, due to a bug. We're working to resolve it.**
 
 _Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.0.txt)_
 
