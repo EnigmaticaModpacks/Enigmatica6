@@ -1,0 +1,33 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = []
+
+#Configurations related to gas tags.
+[gasTags]
+	#List of gas tags that should not be added.
+	blacklist = []
+	#List of gas tags that should be considered as defined.
+	customDefined = []
+
+#Configurations related to infuse type tags.
+[infuseTypeTags]
+	#List of infuse type tags that should not be added.
+	blacklist = []
+	#List of infuse type tags that should be considered as defined.
+	customDefined = []
+
+#Configurations related to pigment tags.
+[pigmentTags]
+	#List of infuse type tags that should not be added.
+	blacklist = []
+	#List of infuse type tags that should be considered as defined.
+	customDefined = []
+
+#Configurations related to slurry tags.
+[slurryTags]
+	#List of infuse type tags that should not be added.
+	blacklist = []
+	#List of infuse type tags that should be considered as defined.
+	customDefined = []
+
