@@ -4,7 +4,7 @@
 
 **It is highly recommended to run the `/reload` command when entering a singleplayer world or booting up a server, due to a bug. We're working to resolve it.**
 
-_Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.1.txt)_
+_Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.1.txt)_
 
 **Mod additions**
 
