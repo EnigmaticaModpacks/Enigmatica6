@@ -3,31 +3,31 @@ events.listen('recipes', function (event) {
         //shapelessRecipe('botania:enchanted_soil', ['minecraft:grass_block', 'botania:overgrowth_seed']),
         shapelessRecipe('minecraft:sticky_piston', ['minecraft:piston', '#forge:slimeballs']),
         shapelessRecipe('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel']),
-        //shapelessRecipe('simplefarming:cornbread', ['#forge:grain', '#forge:crops/corn', '#forge:grain']),
+        shapelessRecipe('simplefarming:cornbread', ['#forge:grain', '#forge:crops/corn', '#forge:grain']),
         shapelessRecipe('minecraft:chest', ['#forge:chests/wooden']),
         // shapelessRecipe('minecraft:crafting_table', [
         //     'craftingstation:crafting_station_slab',
         //     'craftingstation:crafting_station_slab'
         // ]),
-        // shapelessRecipe('simplefarming:fish_sandwich', [
-        //     '#forge:bread',
-        //     'aquaculture:fish_fillet_cooked',
-        //     'aquaculture:fish_fillet_cooked',
-        //     '#forge:crops/tomato',
-        //     '#forge:salad_ingredients'
-        // ]),
-        // shapelessRecipe('simplefarming:sushi', [
-        //     '#forge:grain',
-        //     'minecraft:dried_kelp',
-        //     'aquaculture:fish_fillet_raw',
-        //     'aquaculture:fish_fillet_raw'
-        // ]),
-        // shapelessRecipe('simplefarming:fish_fillet', [
-        //     '#forge:grain',
-        //     '#forge:grain',
-        //     'aquaculture:fish_fillet_cooked',
-        //     'aquaculture:fish_fillet_cooked'
-        // ]),
+        shapelessRecipe('simplefarming:fish_sandwich', [
+            '#forge:bread',
+            'aquaculture:fish_fillet_cooked',
+            'aquaculture:fish_fillet_cooked',
+            '#forge:crops/tomato',
+            '#forge:salad_ingredients'
+        ]),
+        shapelessRecipe('simplefarming:sushi', [
+            '#forge:grain',
+            'minecraft:dried_kelp',
+            'aquaculture:fish_fillet_raw',
+            'aquaculture:fish_fillet_raw'
+        ]),
+        shapelessRecipe('simplefarming:fish_fillet', [
+            '#forge:grain',
+            '#forge:grain',
+            'aquaculture:fish_fillet_cooked',
+            'aquaculture:fish_fillet_cooked'
+        ]),
         // shapelessRecipe('tetra:magmatic_cell', [
         //     { item: 'tetra:magmatic_cell', nbt: { Damage: 128 } },
         //     'powah:capacitor_blazing',
