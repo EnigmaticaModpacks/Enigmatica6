@@ -163,6 +163,8 @@
 	[building.more_brick_types]
 		"Enable Magma Bricks" = true
 		"Enable Sandy Bricks" = true
+		#This also comes with a utility recipe for Red Nether Bricks
+		"Enable Blue Nether Bricks" = true
 		"Enable Charred Nether Bricks" = true
 		"Enable Snow Bricks" = true
 		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
@@ -452,24 +454,6 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-		[world.big_stone_clusters.basalt]
-			"Horizontal Size" = 19
-			Rarity = 20
-			"Min Y Level" = 20
-			"Horizontal Variation" = 6
-			Enabled = true
-			"Max Y Level" = 120
-			"Vertical Size" = 19
-			"Vertical Variation" = 6
-
-			[world.big_stone_clusters.basalt.biomes]
-				"Biome Types" = ["NETHER"]
-				"Is Blacklist" = false
-
-			[world.big_stone_clusters.basalt.dimensions]
-				Dimensions = ["minecraft:the_nether"]
-				"Is Blacklist" = false
-
 		[world.big_stone_clusters.limestone]
 			"Horizontal Size" = 14
 			Rarity = 4
@@ -504,6 +488,24 @@
 
 			[world.big_stone_clusters.granite.dimensions]
 				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.big_stone_clusters.voidstone]
+			"Horizontal Size" = 19
+			Rarity = 20
+			"Min Y Level" = 0
+			"Horizontal Variation" = 6
+			Enabled = true
+			"Max Y Level" = 40
+			"Vertical Size" = 19
+			"Vertical Variation" = 6
+
+			[world.big_stone_clusters.voidstone.biomes]
+				"Biome Types" = ["END"]
+				"Is Blacklist" = false
+
+			[world.big_stone_clusters.voidstone.dimensions]
+				Dimensions = ["minecraft:the_end"]
 				"Is Blacklist" = false
 
 		[world.big_stone_clusters.andesite]
@@ -754,7 +756,7 @@
 	[world.new_stone_types]
 		"Enable Marble" = true
 		"Enable Jasper" = true
-		"Enable Basalt" = true
+		"Enable Voidstone" = true
 		"Enable Slate" = true
 		"Enable Limestone" = true
 
@@ -762,7 +764,7 @@
 
 			[world.new_stone_types.marble.oregen]
 				"Max Height" = 256
-				"Cluster Count" = 0
+				"Cluster Count" = 2
 				"Min Height" = 0
 				"Cluster Size" = 32
 
@@ -770,23 +772,11 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-		[world.new_stone_types.basalt]
-
-			[world.new_stone_types.basalt.oregen]
-				"Max Height" = 15
-				"Cluster Count" = 0
-				"Min Height" = 0
-				"Cluster Size" = 64
-
-			[world.new_stone_types.basalt.dimensions]
-				Dimensions = ["minecraft:the_nether"]
-				"Is Blacklist" = false
-
 		[world.new_stone_types.limestone]
 
 			[world.new_stone_types.limestone.oregen]
 				"Max Height" = 256
-				"Cluster Count" = 0
+				"Cluster Count" = 2
 				"Min Height" = 0
 				"Cluster Size" = 32
 
@@ -794,11 +784,23 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
+		[world.new_stone_types.voidstone]
+
+			[world.new_stone_types.voidstone.oregen]
+				"Max Height" = 256
+				"Cluster Count" = 0
+				"Min Height" = 0
+				"Cluster Size" = 33
+
+			[world.new_stone_types.voidstone.dimensions]
+				Dimensions = ["minecraft:the_nether"]
+				"Is Blacklist" = false
+
 		[world.new_stone_types.slate]
 
 			[world.new_stone_types.slate.oregen]
 				"Max Height" = 256
-				"Cluster Count" = 0
+				"Cluster Count" = 2
 				"Min Height" = 0
 				"Cluster Size" = 32
 
@@ -810,7 +812,7 @@
 
 			[world.new_stone_types.jasper.oregen]
 				"Max Height" = 256
-				"Cluster Count" = 0
+				"Cluster Count" = 2
 				"Min Height" = 0
 				"Cluster Size" = 32
 
