@@ -2,21 +2,48 @@
 
 ## Enigmatica 6 v0.2.1
 
+**GraveStones is being removed in favor of Quark graves, make sure to retrieve any items you have lying around in gravestones, so you don't lose them.**
+
 _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.1.txt)_
 
 **Mod additions**
 
-- 
+- Armor Toughness Bar
+- AutoRegLib
+- BountifulBaubles
+- Environmental Creepers
+- JAOPCA
+- Quark
+- Quark Oddities
+- Scaffolding behavior
+- Simple Farming
+- Simply Backpacks
+- Stronger Snowballs
+- The Endergetic Expansion
+- Torchmaster
+- ☃ Snow! Real Magic!
+- 🥝 Kiwi
 
 **Changes**
 
 - BiomesOPlenty: Set default world type for servers to biomesoplenty
+- Torchmaster: Harder recipes
+- Torchmaster: Decreased radius of Mega Torch to 32 blocks
 - Powah: Almost removed dry ice from worldgen (very low chance)
+- Prevent Creepers from destroying items [\#8](https://github.com/NillerMedDild/Enigmatica6/issues/8)
+
+**Fixed Bugs**
+
+- Iron Bars Conflicting Recipes [\#31](https://github.com/NillerMedDild/Enigmatica6/issues/31)
+- 2 recipes for each powah reactor [\#27](https://github.com/NillerMedDild/Enigmatica6/issues/27)
+- TrueShot enchant locking up server.  [\#24](https://github.com/NillerMedDild/Enigmatica6/issues/24)
+- Ingots not unified, ore deposits missing uses [\#18](https://github.com/NillerMedDild/Enigmatica6/issues/18)
+- Lighting issue [\#14](https://github.com/NillerMedDild/Enigmatica6/issues/14)
 
 **Mod removals**
 
 - GraveStones (Replaced by Quark Oddities grave)
-- Reap (Replaced by Simple Farming's right-click harvest)
+- Reap (Replaced by Simple Farming's/Quark's right-click harvest)
 
 ## Enigmatica 6 v0.2.0
 
