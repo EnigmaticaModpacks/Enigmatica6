@@ -33,6 +33,17 @@ events.listen('recipes', function (event) {
         //     'powah:capacitor_blazing',
         //     'powah:capacitor_blazing'
         // ]),
+        shapelessRecipe(item.of('additionalbars:crossed_iron_bars', 9), [
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars',
+            'minecraft:iron_bars'
+        ]),
         shapelessRecipe('minecraft:wheat_seeds', ['minecraft:wheat'])
         // shapelessRecipe('quark:root', ['minecraft:vine', '#forge:dyes/brown']),
         // shapelessRecipe(
