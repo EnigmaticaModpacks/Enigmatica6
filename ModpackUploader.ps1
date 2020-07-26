@@ -197,10 +197,10 @@ if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
 $MODLIST_PATH = "$PSScriptRoot/MODLIST.md"
 
 Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
-"## $CLIENT_FILE_DISPLAY_NAME Modlist" | Out-File -FilePath $MODLIST_PATH -Encoding UTF8
+"## $CLIENT_FILE_DISPLAY_NAME Modlist" | Out-File -FilePath $MODLIST_PATH -Encoding ASCII
 
 Get-ChildItem -Path "$PSScriptRoot/mods" | ForEach-Object {
-    "- $($_.BaseName)" | Out-File -FilePath $MODLIST_PATH -Append
+    "- $($_.BaseName)" | Out-File -FilePath $MODLIST_PATH -Append -Encoding ASCII
 }
 
 Write-Host "######################################" -ForegroundColor Cyan
