@@ -58,4 +58,6 @@ events.listen('recipes', function (event) {
     colors.forEach(function (color) {
         event.replaceInput({}, 'minecraft:' + color + '_dye', '#forge:dyes/' + color);
     });
+
+    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
 });

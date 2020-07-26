@@ -1,0 +1,98 @@
+
+# Explosion type, entity type etc. black- and white lists
+[Lists]
+	# A list of full class names of entities that are the only ones
+	# that should be acted on, see the comment on entityTypeBlacklist.
+	# Used if entityClassListType = whitelist
+	entityWhitelistClassNames = []
+	# A list of full class names of explosions that are the only ones that should be acted on.
+	# Used if explosionClassListType = whitelist
+	explosionWhitelistClassNames = []
+	# The list type for the entity class filtering.
+	# Either 'none' or 'blacklist' or 'whitelist'.
+	# Blacklisted (or non-whitelisted) entities will not be removed from the explosion damage list.
+	# This allows for example those entities to run their custom code when damaged by explosions.
+	entityClassListType = "blacklist"
+	# The list type for the explosion class filtering.
+	# Either 'none' or 'blacklist' or 'whitelist'.
+	# Blacklisted (or non-whitelisted) explosion types won't be handled by this mod.
+	explosionClassListType = "blacklist"
+	# A list of full class names of explosions that should be ignored.
+	# Used if explosionClassListType = blacklist
+	explosionBlacklistClassNames = ["slimeknights.tconstruct.gadgets.entity.ExplosionEFLN"]
+	# A list of full class names of entities that should be ignored.
+	# This means that these entities will not get removed from the
+	# list of entities to be damaged by the explosion, allowing these
+	# entities to handle the explosion code themselves.
+	# Used if entityClassListType = blacklist
+	entityBlacklistClassNames = ["appeng.entity.EntitySingularity"]
+
+# Generic configs
+[Generic]
+	# The maximum distance within which a Creeper exploding will cause a chain reaction.
+	#Range: 0.0 ~ 160.0
+	creeperChainReactionMaxDistance = 16.0
+	# The strength of Charged Creeper explosions.
+	# Default in vanilla: 6.0 (double of normal Creepers).
+	#Range: 0.0 ~ 1000.0
+	creeperExplosionStrengthCharged = 6.0
+	# The minimum y position where Creeper explosions will do block damage,
+	# if enableCreeperAltitudeCondition is enabled.
+	#Range: -3.0E7 ~ 3.0E7
+	creeperAltitudeDamageMinY = -64.0
+	# The strength of Creeper explosions. Default in vanilla in 3.0 for normal Creepers,
+	# and it is doubled ie. 6.0 for Charged Creepers.
+	#Range: 0.0 ~ 1000.0
+	creeperExplosionStrengthNormal = 3.0
+	# The maximum y position where Creeper explosions will do block damage,
+	# if enableCreeperAltitudeCondition is enabled.
+	#Range: -3.0E7 ~ 3.0E7
+	creeperAltitudeDamageMaxY = 64.0
+	# The chance of other explosions than Creepers to drop the blocks as items.
+	# Set to 1.0 to always drop.
+	#Range: 0.0 ~ 1.0
+	otherExplosionBlockDropChance = 1.0
+	# If true, then the global config file is copied to the world
+	# (in worldname/environmentalcreepers/environmentalcreepers.cfg), if one doesn't exist there yet.
+	copyConfigToWorld = false
+	# The chance of Creeper explosions to drop the blocks as items.
+	# Set to 1.0 to always drop.
+	#Range: 0.0 ~ 1.0
+	creeperExplosionBlockDropChance = 1.0
+	# If true, then configs are attempted to be read from a config inside
+	# the world (in worldname/environmentalcreepers/environmentalcreepers.cfg), if one exists there.
+	usePerWorldConfig = false
+	# Log some messages on each explosion, for debugging purposes.
+	# Leave disabled for normal use.
+	verboseLogging = false
+	# The chance of Creeper explosions to cause other Creepers to trigger
+	# within range. Set to 1.0 to always trigger.
+	#Range: 0.0 ~ 1.0
+	creeperChainReactionChance = 1.0
+
+# Toggle options to enable/disable features
+[Toggles]
+	# Enable setting a y range for Creepers to do block damage.
+	# Set the range in Generic -> 'creeperAltitudeDamageMaxY' and 'creeperAltitudeDamageMinY'.
+	enableCreeperAltitudeCondition = false
+	# Modify the chance of Creeper explosions to drop the blocks as items.
+	# Set the chance in creeperExplosionBlockDropChance.
+	modifyCreeperExplosionDropChance = true
+	# Completely disable Creeper explosion from damaging blocks
+	disableCreeperExplosionBlockDamage = false
+	# Disable other explosions than Creepers from damaging items on the ground
+	disableOtherExplosionItemDamage = false
+	# Completely disable Creepers from exploding
+	disableCreeperExplosionCompletely = false
+	# Modify the strength of Creeper explosions.
+	modifyCreeperExplosionStrength = false
+	# Completely disable other explosions than Creepers from damaging blocks
+	disableOtherExplosionBlockDamage = false
+	# Disable Creeper explosions from damaging items on the ground
+	disableCreeperExplosionItemDamage = true
+	# Modify the chance of other explosions than Creepers to drop the blocks
+	# as items. Set the chance in otherExplosionBlockDropChance.
+	modifyOtherExplosionDropChance = false
+	# When enabled, a Creeper exploding has a chance to trigger other nearby Creepers.
+	enableCreeperExplosionChainReaction = false
+

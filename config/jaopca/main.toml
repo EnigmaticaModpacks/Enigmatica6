@@ -1,0 +1,89 @@
+
+#Configurations related to materials.
+[materials]
+	#Should the mod find gem materials without ores.
+	gemPlain = true
+	#Should the mod find dust materials without ores.
+	dustPlain = true
+	#Should the mod find crystal materials with ores.
+	crystal = true
+	#Should the mod find ingot materials with ores.
+	ingot = true
+	#Should the mod find ingot materials without ores.
+	ingotPlain = true
+	#Should the mod find crystal materials without ores.
+	crystalPlain = true
+	#Should the mod find dust materials with ores.
+	dust = true
+	#Should the mod find gem materials with ores.
+	gem = true
+
+#Configurations related to material overrides.
+[materialOverrides]
+	#List of materials that should be crystals.
+	crystal = []
+	#List of materials that should be dusts.
+	dust = ["glowstone", "redstone"]
+	#List of materials that should be gems.
+	gem = ["diamond", "emerald", "lapis", "prismarine", "quartz"]
+
+#Configurations related to block tags.
+[blockTags]
+	#List of block tags that should be considered as defined.
+	customDefined = []
+	#List of block tags that should not be added.
+	blacklist = []
+
+#Configurations related to item tags.
+[itemTags]
+	#List of item tags that should be considered as defined.
+	customDefined = []
+	#List of item tags that should not be added.
+	blacklist = []
+
+#Configurations related to fluid tags.
+[fluidTags]
+	#List of fluid tags that should be considered as defined.
+	customDefined = []
+	#List of fluid tags that should not be added.
+	blacklist = []
+
+#Configurations related to entity type tags.
+[entityTypeTags]
+	#List of entity type tags that should be considered as defined.
+	customDefined = []
+	#List of entity type tags that should not be added.
+	blacklist = []
+
+#Configurations related to recipes.
+[recipes]
+	#List of recipes that should not be added.
+	blacklist = []
+
+#Configurations related to loot tables.
+[lootTables]
+	#List of loot tables that should not be added.
+	blacklist = []
+
+#Configurations related to advancements.
+[advancements]
+	#List of advancements that should not be added.
+	blacklist = []
+
+#Configurations related to color generation.
+[colors]
+	#The gamma value used to blend colors.
+	gammaValue = 2.0
+
+#Configurations related to material localization.
+[materialLocalization]
+	#The update interval of localization files in days.
+	updateInterval = 3.0
+	#Should the mod check for material localization updates.
+	checkL10nUpdates = true
+
+#Configurations related to item selection.
+[itemSelection]
+	#List of mods that are preferred when selecting items in recipes.
+	preferredMods = ["minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark"]
+

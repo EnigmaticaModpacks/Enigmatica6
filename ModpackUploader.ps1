@@ -199,8 +199,8 @@ $MODLIST_PATH = "$PSScriptRoot/MODLIST.md"
 Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
 "## $CLIENT_FILE_DISPLAY_NAME Modlist" | Out-File -FilePath $MODLIST_PATH -Encoding UTF8
 
-Get-ChildItem -Path "$PSScriptRoot/mods" -Name | ForEach-Object {
-    "- $_" | Out-File -FilePath $MODLIST_PATH -Append
+Get-ChildItem -Path "$PSScriptRoot/mods" | ForEach-Object {
+    "- $($_.BaseName)" | Out-File -FilePath $MODLIST_PATH -Append
 }
 
 Write-Host "######################################" -ForegroundColor Cyan

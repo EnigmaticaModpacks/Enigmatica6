@@ -1,0 +1,27 @@
+
+#General settings
+[scaffoldingpower]
+
+	[scaffoldingpower.ladder]
+		#Auto Ladder Building: Place a ladder on a ladder and it will build up or down depending where player is facing
+		autoBuild = true
+		#Auto Ladder Building: vertical range away from source placement
+		#Range: 1 ~ 256
+		autoBuildRange = 16
+		#Auto Ladder Building: true means allow invalid building places such as floating in midair
+		autoBuildInvalid = false
+
+	[scaffoldingpower.rails]
+		#Auto Rails Building: horizontal range away from source placement
+		#Range: 1 ~ 256
+		autoBuildRange = 16
+		#Auto Rail Building: Place a rail on a rail and it will build out depending where player is facing
+		autoBuild = true
+
+	[scaffoldingpower.redstone]
+		#Auto redstone Building: Place dust on existing dust and it will build out depending where player is facing
+		autoBuild = true
+		#Auto redstone Building: range away from source placement
+		#Range: 1 ~ 256
+		autoBuildRange = 16
+

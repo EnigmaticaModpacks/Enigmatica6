@@ -10,8 +10,7 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:storage_uranium')
         .add('immersiveengineering:storage_constantan')
         .add('immersiveengineering:storage_electrum')
-        .add('immersiveengineering:coke')
-        .add('immersiveengineering:storage_hop_graphite');
+        .add('immersiveengineering:coke');
 
     // event.get('forge:storage_blocks').add('create:zinc_block').add('create:brass_block');
     // event.get('forge:storage_blocks').add('occultism:iesnium_block');

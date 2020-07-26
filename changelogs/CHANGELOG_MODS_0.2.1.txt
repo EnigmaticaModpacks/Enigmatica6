@@ -1,0 +1,387 @@
+=======================================
+Enigmatica6 0.2.0 --> Enigmatica6 0.2.1
+=======================================
+
+Added:
+- Armor Toughness Bar
+- AutoRegLib
+- BountifulBaubles
+- Environmental Creepers
+- JAOPCA
+- Quark
+- Quark Oddities
+- Scaffolding behavior
+- Simple Farming
+- Simply Backpacks
+- Stronger Snowballs
+- The Endergetic Expansion
+- Torchmaster
+- ☃ Snow! Real Magic!
+- 🥝 Kiwi
+
+Updated:
+	Actually Useful Stonecutter (Actually Useful Stonecutter-1.0.0 mc 1.16.1.jar --> Actually Useful Stonecutter-1.0.1 mc 1.16.1.jar):
+		Actually Useful Stonecutter-1.0.1 mc 1.16.1.jar:
+			Added missing recipes for:
+			Nether Brick Fence
+			Polished Blackstone Pressure Plate
+			Iron Trapdoor
+			Added requested recipes for:
+			Doors
+			Buttons
+			Chests
+			(Total of new recipes is 96)
+
+	Additional Bars ([1.16.1] Additional Bars 1.4.2 --> [1.16.1] Additional Bars 1.5.0):
+		[1.16.1] Additional Bars 1.5.0:
+			Release: 1.5.0:
+			-Switched to deferred registers
+
+	Artifacts (Artifacts-1.16.1-2.2.0.jar --> Artifacts-1.16.1-2.4.0.jar):
+		Artifacts-1.16.1-2.4.0.jar:
+			* Added Bunny Hoppers
+			* Added Running Shoes
+			* Tweaked loot tables
+			* Slightly reduced the default campsite spawn rate
+
+		Artifacts-1.16.1-2.3.1.jar:
+			* Tweaked bastion loot
+			* Fixed a rendering issue with gloves
+
+		Artifacts-1.16.1-2.3.0.jar:
+			* Tweaked and buffed various items
+			* Added advancements
+			* Rebalanced loot tables
+			* Tweaked the default mimic & campsite spawn rate config options
+			* Added new light source blocks for campsites
+			* Reduced the chance for lit campfires to spawn to make it harder to find campsites using a minimap
+			* Fixed a bug that caused furnaces, smokers and blast furnaces in campsites to emit light despite not being active
+			* Fixed pocket pistons not applying knockback
+			* Fixed an issue where items were not being added to some loot tables correctly
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.1-11.0.0.389 --> Biomes O' Plenty 1.16.1-11.0.0.390):
+		Biomes O' Plenty 1.16.1-11.0.0.390:
+			github:
+			* Update spanish translations (#1650)
+
+	Cauldron Recipes (CauldronRecipes-1.16.1-2.0.2.jar --> CauldronRecipes-1.16.1-2.0.3.jar):
+		CauldronRecipes-1.16.1-2.0.3.jar:
+			* Compile against latest forge, CrT, and bookshelf. - Tyler Hancock
+			* Refactored CraftTweaker support to better use existing CrT code. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?CauldronRecipes)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.1-b3.jar --> engineersdecor-1.16.1-1.1.1-b4.jar):
+		engineersdecor-1.16.1-1.1.1-b4.jar:
+			* v1.1.1-b4  [F] Fixed Fluid Barrel tooltip text duplicate.
+			[F] Fixed IE hard-dependency opt-out.
+			[M] Side Table model and shape refined.
+			[A] Dense Grit Dirt added.
+			[M] Wood textures slightly darker, obsolete textures removed.
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+	Engineer's Tools (engineerstools-1.16.1-1.0.9-b1.jar --> engineerstools-1.16.1-1.0.9-b2.jar):
+		engineerstools-1.16.1-1.0.9-b2.jar:
+			* v1.0.9-b2   [F] Fixed Crushing Hammer not getting damage when hitting blocks (issue #11, cheers Federsavo).
+			[A] Crushing Hammer knocks back creatures without actually attacking or doing damage. Good for
+			gently prodding villagers out of the way or for blasting aggressive mobs over the edge.
+			* v1.0.9-b1   [A] JEI integration added.
+			[A] Added Crushing Hammer Mek Osmium recipe, dust x2, 250% hammer damage.
+			* v1.0.8-a1   [A] Initial 1.16.1 port.
+
+	Industrial Foregoing (industrial-foregoing-1.16.1-3.0.1-f3c15d2.jar --> industrial-foregoing-1.16.1-3.0.3-5935836.jar):
+		industrial-foregoing-1.16.1-3.0.3-5935836.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md)
+
+		industrial-foregoing-1.16.1-3.0.2-78e809f.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md)
+
+	Just Enough Resources (JER) (JustEnoughResources-1.16.1-0.11.0.79 --> JustEnoughResources-1.16.1-0.11.0.81):
+		JustEnoughResources-1.16.1-0.11.0.81:
+			[[82e363e](https://github.com/way2muchnoise/JustEnoughResources/commit/82e363ec71dcb454e9ed81b52cbfc47ceffa69cd)] Create de_de.json (#245) (GitHub)
+
+	KubeJS (kubejs-2.7.0.47.jar --> kubejs-2.7.2.51.jar):
+		kubejs-2.7.2.51.jar:
+			* Added .material('id') in block builder - LatvianModder
+			* Fixed babel not loading in UTF-8 - LatvianModder
+
+		kubejs-2.7.2.50.jar:
+			* Fixed tags crashing - LatvianModder
+			* Added ES6 from Babel. Thanks modmuss50! - LatvianModder
+			* Fixed #21 (fix ported from 1.15) - LatvianModder
+
+		kubejs-2.7.2.49.jar:
+			* Added size in world.explosion.pre - LatvianModder
+			* Added pattern-less shaped recipes - LatvianModder
+			* Optimized tag ingredient .stacks and .first - LatvianModder
+			* Added /kubejs list_tag <tag> [type] command - LatvianModder
+			* Added console.debugEnabled = true/false - LatvianModder
+			* Fixed console not printing primitives properly - LatvianModder
+			* Changed debug info to match Fabric version with two events - client.debuginfo.left and client.debuginfo.right - LatvianModder
+			* Replaced mod:modid ingredient with @modid and regex:pattern with /pattern/ or /pattern/flags. Added %group_path ingredient to match creative tabs. Changed /kubejs hand to be more informative and give multiple types of ingredients. - LatvianModder
+			* Added cached item.list and item.typeList - LatvianModder
+
+		kubejs-2.7.2.48.jar:
+			* Updated required forge version to support new mixins. Fixed early loading screen not having text - LatvianModder
+			* Tag events and recipe event no longer are server events, as datapacks are loaded before server now - LatvianModder
+			* Added console.muted - LatvianModder
+			* Fixed tag event not printing .js file from output, removed debug output from DataPackRegistriesHelper - LatvianModder
+			* Updated forge version - LatvianModder
+			* Wrapped item.list and item.typeList as ListJS - LatvianModder
+			* Removed useless commented code - LatvianModder
+
+	PackMenu (PackMenu-1.16.1-2.0.0.jar --> PackMenu-1.16.1-2.1.0.jar):
+		PackMenu-1.16.1-2.1.0.jar:
+			Buttons are now ordered by their resource locations, in alphabetically order.
+			-Buttons at the top of the list are drawn first, which makes them in the back.
+			-Buttons at the top of the list have click precedence, unless they have their active state set to false.
+			Folder Pack is now the default option, and a Folder Pack will be generated if one does not exist when this option is enabled.
+			There is now a default implementation for the logo.
+
+	Passthrough Signs (PassthroughSigns-1.16.1-2.3.4.jar --> PassthroughSigns-1.16.1-2.3.5.jar):
+		PassthroughSigns-1.16.1-2.3.5.jar:
+			No changelog available.
+
+	Pedestals (Pedestals - 0.4b --> Pedestals - 0.5a):
+		Pedestals - 0.5a:
+			Hotfix: "Didnt test any old content"
+			* Fix an issue where the xp tank would only store 100 xp and not 100 levels of xp...
+
+		Pedestals - 0.5:
+			Mob Farm, and Diffuser Update
+			(And Other Fixes and Improvements)
+			Added This Update:
+			* Auto Attacker Upgrade
+			* Fan Upgrade
+			* Potion Diffuser Upgrade
+			* Focused Enchantable Books (Speed, Range, Capacity)
+			* Upgrade Tool
+			Fixes and Improvements:
+			* Fixed: An issue with machines outputting more items then they had inputs for.
+			* Fixed: re-added support for storage drawers (derp on my part).
+			* Fixed a bug with trying to use non vanilla dyes to make Colored Pallets, (Uses any Tagged Dye for Red/Green/Blue now), shout out to WillyWonka2197 on twitch for finding this out in Dragsterpal's stream the other day.
+			* Fixed tooltip word "Delt" to "Dealt"
+			* Improvement: Added Boats to the Allowed Entities to check for an Inventory for any upgrade requiring an inventory below.
+			* Improvement: Removed using any upgrade to make another, this should help clear up any jei recipe confusion, until the proper fix is made.
+			* Improvement: Added support for Other mods ores (Using Tags) as inputs for the Crusher Upgrade, Ores currently supported: Iron, Gold, Aluminum, Tin, Copper, Nickel, Lead, Silver, Osmium, Uranium, Platinum, Zinc, Bismuth, Tungsten, and AllTheModium. Will produce dusts that are tagged to forge:dusts/NAME and then will work in any other recipes that use tags.
+			* Improvement: The Breaker, Chopper(s), Harvester, Quarry(s), Placer, and Planter all trigger events when the place or remove block action happens, which should allow anti-greif and protection mods to disable its action in restricted areas, thanks goes to thevortex in the allthemods discord for this suggested fix.
+			* Improvement: Added additional localizations to some items that didnt have it before.
+			* Improvement: Grower Upgrade renamed to Fertilizer Upgrade to help with any confusion on its action. thanks goes to the folks in discord for this suggestion.
+			Details on New Features:
+			NOTE: The 3 new upgrades added use a new kind of filtering system, since all 3 upgrades target Living Entities (Mobs and Players) this new system allows you to filter for a more specific group. Wiki Entry found here: [Filtering By Entities](https://github.com/Mowmaster/Pedestals/wiki/Filtering-By-Entity)
+			Auto Attacker Upgrade
+			* Wiki Link Here: [Auto Attacker](https://github.com/Mowmaster/Pedestals/wiki/Auto-Attacker)
+			Fan Upgrade
+			* Wiki Link Here: [Fan](https://github.com/Mowmaster/Pedestals/wiki/Fan)
+			Potion Diffuser
+			* Wiki Link Here: [Potion Diffuser](https://github.com/Mowmaster/Pedestals/wiki/Potion-Diffuser)
+			Upgrade Tool
+			* RIGHT CLICKING, on an upgraded pedestal will display details about the upgrade in your chat.
+			The Wiki Entry is here: [Upgrade Tool](https://github.com/Mowmaster/Pedestals/wiki/Upgrade-Tool)
+			Focused Enchantable Books
+			* These Books Will Only Accept 1 Enchant when used in an enchanting table/enchanting upgrade. Due to the nature of these books, they can only be combined with items using the Anvil Upgrade.
+			* Focus: Speed (Recipe: Book + Diamond)
+			* Focus: Range (Recipe: Book + Gold)
+			* Focus: Capacity (Recipe: Book + Emerald)
+			As always, if you need help with the mod, the discord invite is in the mod listing on the home screen in game. the channel to chat in is #pedestals
+			(Built with Forge version: 1.16.1 - 32.0.75)
+
+	Productive Bees (productivebees-1.16.1-0.1.14.jar --> productivebees-1.16.1-0.1.15.2.jar):
+		productivebees-1.16.1-0.1.15.2.jar:
+			* Fixed typo in tag causing crash
+
+	RandomPatches (RandomPatches 1.16.1-1.22.0.0 --> RandomPatches 1.16.1-1.22.1.0):
+		RandomPatches 1.16.1-1.22.1.0:
+			Reimplemented the TickNextTick list out of synch fix.
+
+	The Official Enigmatica Resource Pack (ERP-V1.5 --> ERP-V1.6):
+		ERP-V1.6:
+			Enigmatica Resource Pack v1.6
+			* The Armor, Tools, and Weapons Update
+			* Texture Update
+			* Mekanism Bronze (Tools, Sword, Armor, and V10 Shield) - A red-ish tint was introduced on top of the old Ingot, Block, Nugget, and Dust, to bring it back to a more realistic bronze colour.
+			* Mekanism Lapis (Tools, Sword, Armor, and V10 Shield)
+			* Mekanism Osmium (Tools, Sword, Armor, and V10 Shield) - A slightly lighter version of ERP V1.5 Osmium has been created to bring it closer to its original mod colour. The Ingot, Block, Nugget, and Dust, have also been updated.
+			* Mekanism Steel (Tools, Sword, Armor, and V10 Shield)
+			* Mekanism Refined Glowstone (Tools, Sword, Armor, and V10 Shield) - A more accurate version of ERP V1.5 Refined Glowstone has been created to bring it closer to its original mod colour. The Ingot, Block, Nugget, and Dust, have also been updated.
+			* Mekanism Refined Obsidian (Tools, Sword, Armor, and V10 Shield)
+			* Mekanism Vanilla Paxels - Colour correction using the latest associated Minecraft colour palette for Wood, Stone, Iron, Gold, and Diamond.
+			* Immersive Engineering Steel (Tools, Sword, and Armor)
+			* Cyclic Emerald (Tools, Sword, and Armor)
+			* Cyclic Crystallized Obsidian (Tools, Sword, and Armor)
+			* Nature's Aura Skyseeker (Tools, Sword, and Armor)
+			* Nature's Aura Botanist (Tools, Sword, and Armor)
+			* Rats Ores (Cheese Ore, Ratlantean Ore, and Oratchalcum Ore) - Updated the textures to fit the default style of Minecraft
+			* Pane in the Glass Green Dye - Updated the texture with the Vanilla updated Green Dye texture
+			* Occultism Demon's Dream Seed, Fruit, and Crop
+			* Titanium Gears
+			Enigmatica Resource Pack v1.5
+			* The Strata Update
+			* Texture Variations/Modifications
+			Vanilla Stone
+			Vanilla Andesite
+			* Vanilla Dirt
+			* Vanilla Gravel
+			* Vanilla Sand
+			* Vanilla Coarse Dirt
+			* Vanilla Path Block
+			* Vanilla Mycelium
+			* Vanilla Podzol
+			* Create Gabbro
+			* Create Limestone
+			* Create Weathered Limestone
+			* Quark Slate
+			* Quark Marble
+			* Quark Limestone
+			* Quark Jasper
+			* Newly Added Textures
+			Mekanism V10 - Lead (Ore, Ingot, Nugget, Block, and Dust) - Unified with IE Lead
+			Mekanism V10 - Uranium (Ore, Ingot, Nugget, Block, and Dust) - Unified with IE Uranium
+			* Mekanism V10 - Fluorite (Ore, and Dust)
+			* Mekanism V10 - Netherite Dust
+			*
+			Enigmatica Resource Pack v1.4
+			* The Floral Update
+			* Texture Variations/Modifications
+			Short Grass
+			Long Grass
+			Fern
+			Large Fern
+			Lily Pads
+			Allium
+			Azure Blue
+			Beetroots Crop (Final Growth Stage only)
+			Blue Orchid
+			Brown Mushroom
+			Carrots Crop (Last 2 Stages)
+			Cornflower
+			Dandelion
+			Lilac
+			Lily of the Valley
+			Orange Tulip
+			Oxeye Daisy
+			Peony
+			Pink Tulip
+			Poppy
+			Potatoes Crop (All Stages)
+			Red Mushroom
+			Red Tulip
+			Rose Bush
+			Sunflower
+			Wheat Crop (All Stages)
+			White Tulip
+			Wither Rose
+			* Bonus - Showcase of what is coming in ERP-V1.5
+			Grass Block - Top Face, and Side variation
+			Coarse Dirt Block
+			Path Block - Top Face, and Side variation
+			Snowy Dirt Block - Side variation
+			Mycelium Block - Side variation
+			Stone Block
+			Enigmatica Resource Pack v1.3
+			General Changes
+			The pack name has been changed to Enigmatica Resource Pack instead of Enigmatica 5 Resource Pack as it has been now optimized to be used on older versions of Minecraft, bringing all the updated MC 1.15 textures with it.
+			* Texture Changes
+			* Updated the monochrome texture of blocks, and dusts from JAOPCA.
+			* Updated the block, and nugget texture of Neptunium from Aquaculture
+			* Updated the blocks from Psi which are formed from Ingots (Psimetal, Ivory, and Ebony)
+			* Introduced a complete new set of textures for all the vanilla dyes to have them unified in style
+			* Introduced 4 texture variants to all the bookshelves added by Vanilla (Oak), Quark (Spurce, Dark Oak, Birch, Jungle, and Acacia), and Apotheosis (Hellshelves) .. more unique variants will be introduced in future releases
+			* Introduced a new texture for Vanilla Gold Ore with a subtle animation using the new Gold Ore textures found in Minecraft 1.16 in the updated Nether
+			Modifications
+			* Updated the texture of blocks formed from Ingots to distinguish them from blocks which have been formed from gems such as Diamond Block.
+			Enigmatica 5 Resource Pack v1.2
+			* Texture Changes
+			* A complete re-texture of Occultism Mod (All textures have been re-designed as a 16x16 in Minecraft Style)
+			Modifications
+			* Updated the Redstone Ore animation to be less frequent.
+			Enigmatica 5 Resource Pack v1.1
+			* Texture Changes
+			Immersive Engineering Nuggets (Copper, Aluminum, Lead, Nickel, Uranium, Constantan, Silver, Electrum, and Steel)
+			Immersive Engineering Blocks (Copper, Aluminum, Lead, Nickel, Uranium, Constantan, Silver, Electrum, and Steel)
+			Immersive Engineering Plates (Copper, Aluminum, Lead, Nickel, Uranium, Constantan, Silver, Electrum, Steel, Iron, and Gold)
+			Immersive Engineering Dusts/Grits (Copper, Aluminum, Lead, Nickel, Uranium, Constantan, Silver, Electrum, Steel, HOP Graphite, Iron, Gold, Coke, Nitrate, and Sulfur)
+			Mekanism Nuggets (Copper, Osmium, Tin, Bronze, Steel, Refined Obsidian, and Refined Glowstone)
+			Mekanism Blocks (Copper, Osmium, Tin, Bronze, Steel, Refined Obsidian, and Refined Glowstone)
+			Mekanism Dusts (Copper, Osmium, Tin, Bronze, Steel, Refined Obsidian, Iron, Gold, Lapis, Diamond, Emerald, Quartz, Coal, Charcoal, Obsidian, Lithium, and Sulfur)
+			Create Nuggets (Copper, Zinc, and Brass)
+			Create Blocks (Copper, Zinc, and Brass)
+			Create Plates (Copper, Brass, Iron, Gold, and Lapis)
+			Tinker's Mechworks Nuggets (Copper, and Aluminum)
+			Tinker's Mechworks Blocks (Copper, and Aluminum)
+			Botania Nuggets (Manasteel, Terrasteel, and Elementium)
+			Botania Blocks (Manasteel, Terrasteel, Elementium, Mana Diamond, and Dragonstone)
+			Botania Quartz (Mana, Lavender, Red, Elven, Sunny, Blaze, and Smokey)
+			Nature's Aura Blocks (Infused Iron, and Tainted Gold)
+			Refined Storage Blocks (Quartz Enriched Iron)
+			PneumaticCraft: Repressurized Blocks (Compressed Iron)
+			Powah Raw Uraninite (Poor, Normal, and Dense) - Enhanced, and Animated
+			Powah Uraninite Ores (Poor, Normal, and Dense) - Animated
+			Vanilla Ores (Iron, Gold, Lapis, Redstone, Diamond, and Emerald) - Animated
+			Enigmatica 5 Resource Pack v1.0
+			* Texture Changes
+			* Immersive Engineering Ingots (Copper, Aluminum, Lead, Nickel, Uranium, Constantan, Silver, Electrum, Steel, and HOP Graphite)
+			* Immersive Engineering Ores (Copper, Bauxite, Lead, Nickel, Uranium, and Silver)
+			* Mekanism Ingots (Copper, Osmium, Tin, Refined Obsidian, Refined Glowstone, Steel, and Bronze)
+			* Mekanism Ores (Copper, Osmium, and Tin)
+			* Create Ingots (Copper, Zinc, and Brass)
+			* Create Ores (Copper, and Zinc)
+			* Tinker's Mechworks Ingots (Copper, and Aluminum)
+			* Tinker's Mechworks Ores (Copper, and Aluminum)
+			* Botania Ingots (Manasteel, Terrasteel, Elementium, and Gaia Spirit Ingot)
+			* Nature's Aura Ingots (Infused Iron, Ingot of the Skies, and Tainted Gold)
+			* Refined Storage Ingot (Quartz Enriched Iron)
+			* PneumaticCraft: Repressurized Ingot (Compressed Iron)
+			* Industrial Foregoing Ingot (Pink Slime)
+			* Cyclic Ingots (Peat, and Enriched Peat)
+
+	Titanium (titanium-1.16.1-3.0.1.jar --> titanium-1.16.1-3.0.2.jar):
+		titanium-1.16.1-3.0.2.jar:
+			[https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md)
+
+	Trample Stopper (tramplestopper-1.16.1-2.0.0.1-universal.jar --> tramplestopper-1.15.2-2.0.0.2-universal.jar):
+		tramplestopper-1.15.2-2.0.0.2-universal.jar:
+			* Changed TrampleStopper.Pair to Datafixer pair - UnRealDinnerbone
+
+	Xaero's Minimap (v20.16.0.1 for Forge 1.16.1 --> v20.17.0 for Forge 1.16.1):
+		v20.17.0 for Forge 1.16.1:
+			* Compatible with Xaero's World Map 1.7.4 and newer.
+			+ Added a new button to the waypoints menu options for connecting sub-world from different dimensions mainly for the purpose of cross-dimensional teleportation in multiplayer. If you know that a certain Nether sub-world is from the same world save as your current Overworld sub-world (a vanilla Nether portal takes you there), then you can connect the sub-worlds and be able to teleport. This should fix cross-dimensional teleportation for custom maps from the world map mod. Sub-worlds connected to your current one will be marked with a * symbol and are always at the top of the list.
+			* The effective "auto" sub-world should no longer change (when it's supposed to otherwise) while you're managing waypoints in the waypoints menu. This means that selecting a non-auto sub-world and using something like "Make sub-world auto" should not have unexpected results if the "auto" sub-world switches in the background.
+			* Fixed waypoints sharing not working for sub-worlds created for custom world maps.
+			* Fixed clicking "No" in the confirmation screens for waypoints options closing the options menu.
+			* Removed the "MP Cross-Dimensional TP" option as it is no longer needed.
+
+		v20.17.0 for Fabric 1.16.1:
+			* Compatible with Xaero's World Map 1.7.4 and newer.
+			* Fixed compatibility with Fabric API 0.15.1.
+			+ Added a new button to the waypoints menu options for connecting sub-world from different dimensions mainly for the purpose of cross-dimensional teleportation in multiplayer. If you know that a certain Nether sub-world is from the same world save as your current Overworld sub-world (a vanilla Nether portal takes you there), then you can connect the sub-worlds and be able to teleport. This should fix cross-dimensional teleportation for custom maps from the world map mod. Sub-worlds connected to your current one will be marked with a * symbol and are always at the top of the list.
+			* The effective "auto" sub-world should no longer change (when it's supposed to otherwise) while you're managing waypoints in the waypoints menu. This means that selecting a non-auto sub-world and using something like "Make sub-world auto" should not have unexpected results if the "auto" sub-world switches in the background.
+			* Fixed waypoints sharing not working for sub-worlds created for custom world maps.
+			* Fixed clicking "No" in the confirmation screens for waypoints options closing the options menu.
+			* Removed the "MP Cross-Dimensional TP" option as it is no longer needed.
+
+	🌳 Passable Foliage (PassableFoliage-1.16.1-2.0.0.jar --> PassableFoliage-1.16.1-2.0.1.jar):
+		PassableFoliage-1.16.1-2.0.1.jar:
+			Add sound options
+			Fix leaves have no shadow
+
+Removed:
+- GraveStone Mod
+- Reap Mod
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

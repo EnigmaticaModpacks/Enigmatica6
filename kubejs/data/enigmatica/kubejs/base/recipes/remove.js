@@ -1,5 +1,7 @@
 events.listen('recipes', function (event) {
     var outputRemovals = [
+        'additionalbars:crossed_iron_bars',
+
         //'akashictome:tome',
 
         'mekanism:combiner',

@@ -24,46 +24,11 @@ events.listen('recipes', function (event) {
             C: 'refinedstorage:wireless_grid',
             D: 'minecraft:crafting_table'
         }),
-        shapedRecipe('powah:reactor_starter', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_basic_tiny',
-            C: 'powah:dielectric_casing'
+        shapedRecipe('simplefarming:fish_and_chips', [' A ', 'BCB', ' A '], {
+            A: '#forge:crops/potato',
+            B: '#forge:grain',
+            C: 'aquaculture:fish_fillet_cooked'
         }),
-        shapedRecipe('powah:reactor_basic', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_basic_large',
-            C: 'powah:dielectric_casing'
-        }),
-        shapedRecipe('powah:reactor_hardened', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_hardened',
-            C: 'powah:dielectric_casing'
-        }),
-        shapedRecipe('powah:reactor_blazing', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_blazing',
-            C: 'powah:dielectric_casing'
-        }),
-        shapedRecipe('powah:reactor_niotic', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_niotic',
-            C: 'powah:dielectric_casing'
-        }),
-        shapedRecipe('powah:reactor_spirited', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_spirited',
-            C: 'powah:dielectric_casing'
-        }),
-        shapedRecipe('powah:reactor_nitro', ['ABA', 'BCB', 'ABA'], {
-            A: '#forge:ingots/radioactive',
-            B: 'powah:capacitor_nitro',
-            C: 'powah:dielectric_casing'
-        }),
-        // shapedRecipe('simplefarming:fish_and_chips', [' A ', 'BCB', ' A '], {
-        //     A: '#forge:crops/potato',
-        //     B: '#forge:grain',
-        //     C: 'aquaculture:fish_fillet_cooked'
-        // }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         })
