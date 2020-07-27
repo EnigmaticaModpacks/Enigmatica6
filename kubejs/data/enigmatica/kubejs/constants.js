@@ -86,7 +86,8 @@ var modPriorities = [
     'tmechworks',
     'industrialforegoing',
     'botania',
-    'quark'
+    'quark',
+    'pedestals'
 ];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
