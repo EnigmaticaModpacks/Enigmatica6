@@ -266,12 +266,16 @@
 		"Max Hardness" = 20.0
 		#2 is Iron, 3 is Diamond.
 		"Harvest Level" = 3
+		#2 is Iron, 4 is Diamond.
+		"Netherite Harvest Level" = 3
 		#How long it takes before the pickarang starts returning to the player if it doesn't hit anything.
 		Timeout = 20
 		#Set to -1 to have the Pickarang be unbreakable.
 		Durability = 800
 		#Set this to true to disable the short cooldown between throwing pickarangs.
 		"No Cooldown" = false
+		#Set to -1 to have the Pickarang be unbreakable.
+		"Netherite Durability" = 1040
 		#Set this to true to use the recipe without the Heart of Diamond, even if the Heart of Diamond is enabled.
 		"Never Use Heart Of Diamond" = false
 
