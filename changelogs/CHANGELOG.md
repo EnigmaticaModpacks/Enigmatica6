@@ -1,5 +1,28 @@
 
 
+
+
+## Enigmatica 6 v0.2.3
+
+_Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.3.txt)_
+
+**Mod Additions**
+
+- 
+
+**Changes**
+
+- Rats: Wild Rats no longer raid crops
+- Rats: No longer dig holes
+
+**Fixed Bugs**
+
+- 
+
+**Mod Removals**
+
+- 
+
 ## Enigmatica 6 v0.2.2
 
 **GraveStones was removed in favor of Quark graves in v0.2.1, make sure to retrieve any items you have lying around in gravestones, so you don't lose them.**
