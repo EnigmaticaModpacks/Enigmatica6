@@ -1,5 +1,30 @@
 
 
+## Enigmatica 6 v0.2.2
+
+**GraveStones was removed in favor of Quark graves in v0.2.1, make sure to retrieve any items you have lying around in gravestones, so you don't lose them.**
+
+_Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.2.txt)_
+
+**Mod Additions**
+
+- Back Tools
+- Crafting Station
+- Drawers Tooltip
+- Extra Tags
+- **Macaw's Windows**
+- Neat
+- iChunUtil
+
+**Fixed Bugs**
+
+- Crashes [\#39](https://github.com/NillerMedDild/Enigmatica6/issues/39)
+- Cant smelt dusts [\#38](https://github.com/NillerMedDild/Enigmatica6/issues/38)
+
+**Mod Removals**
+
+- Pedestals (Temporarily, because it cannot have crushing recipes modified at the moment)
+
 ## Enigmatica 6 v0.2.1
 
 **GraveStones is being removed in favor of Quark graves, make sure to retrieve any items you have lying around in gravestones, so you don't lose them.**

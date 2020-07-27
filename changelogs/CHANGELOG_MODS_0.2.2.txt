@@ -1,0 +1,84 @@
+=======================================
+Enigmatica6 0.2.1 --> Enigmatica6 0.2.2
+=======================================
+
+Added:
+- Back Tools
+- Crafting Station
+- Drawers Tooltip
+- Extra Tags
+- Macaw's Windows
+- Neat
+- iChunUtil
+
+Updated:
+	Global XP (globalxp-1.16.1-v1.4.12.jar --> globalxp-1.16.1-v1.4.13.jar):
+		globalxp-1.16.1-v1.4.13.jar:
+			* Re-enable HWYLA integration
+
+	KubeJS (kubejs-2.7.2.51.jar --> kubejs-2.7.2.53.jar):
+		kubejs-2.7.2.53.jar:
+			No changelog available.
+
+	Lollipop (Lollipop-1.16.1-2.1.2.jar --> Lollipop-1.16.1-2.1.3.jar):
+		Lollipop-1.16.1-2.1.3.jar:
+			No changelog available.
+
+	Powah! (Powah-1.16.1-2.1.2.jar --> Powah-1.16.1-2.1.3.jar):
+		Powah-1.16.1-2.1.3.jar:
+			2.1.3
+			* Added Reactor Auto mode (if set to on the reactor will stop if is full and start when has less than 70% of energy).
+			* Fixed losing side config when chunk load/unload.
+			* Fixed Player transmitter not breaking problem.
+			* Updated lollipop to v2.1.3.
+			2.1.2
+			* Fixed magmator creates ungodly amount of pings in server, Closes #97.
+			* Added all uraninite ores to the forge:ores and forge:ores/uraninite tags, Closes #96.
+			* Updated lollipop to v2.1.2.
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+	Quark (Quark-r2.2-255.jar --> Quark-r2.2-256.jar):
+		Quark-r2.2-256.jar:
+			* Added Biotite Bricks that were missing from the original update cuz I forgot they were added lol
+			* Added the Flamerang, an upgraded version of the Pickarang with Netherite, that is immune to lava and makes items it carries also immune
+			* Fixed going down a ladder getting you trapped in glass and other transparent blocks
+			* Fixed the Netherite Hoe not harvesting a 5x5 range
+			* Made the monster box blow out your eardrums a bit less
+
+	RandomPatches (RandomPatches 1.16.1-1.22.1.0 --> RandomPatches 1.16.1-1.22.1.1):
+		RandomPatches 1.16.1-1.22.1.1:
+			Fixed the TickNextTick list out of synch fix.
+
+	🥝 Kiwi (Kiwi-1.16.1-3.1.3.jar --> Kiwi-1.16.1-3.1.4.jar):
+		Kiwi-1.16.1-3.1.4.jar:
+			Fix debug tooltips not showing NBT
+
+Removed:
+- Pedestals
+- The Official Enigmatica Resource Pack
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
