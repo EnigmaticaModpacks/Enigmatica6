@@ -1,5 +1,4 @@
-## Enigmatica 6 - 0.2.1 Modlist
-
+## Enigmatica 6 - 0.2.2 Modlist
 - Abnormals-Core-1.16.1-v2.0.0
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.0
@@ -7,6 +6,7 @@
 - AppleSkin-mc1.16.1-forge-1.0.14
 - Artifacts-1.16.1-2.4.0
 - AutoRegLib-1.6-42
+- BackTools-1.16.1-9.0.0
 - Bamboo-Blocks-1.16.1-2.0.0
 - bambooeverything-1.16-1.0.0
 - BedBenefits-1.16.1-1.0.1
@@ -36,6 +36,7 @@
 - Controlling-7.0.0.2
 - CookingForBlockheads_1.16.1-9.0.0
 - CosmeticArmorReworked-1.16.1-v1a
+- craftingstation-4.0.0
 - CraftingTweaks_1.16.1-12.0.4
 - CTM-MC1.16.1-1.1.0.1
 - culinaryconstruct-FORGE-1.16.1-3.0
@@ -48,6 +49,7 @@
 - decorative_blocks-7a
 - DefaultOptions_1.16.1-12.0.1
 - Ding-1.16.1-1.1.0
+- DrawersTooltip-1.16.1-2.0.0
 - dungeons-plus-1.16.1-1.0.2
 - dwarfcoal-1.16.1-1.2
 - elevatorid-1.16.1-1.7.3
@@ -57,13 +59,15 @@
 - engineerstools-1.16.1-1.0.9-b2
 - environmentalcreepers-forge-1.16.1-1.6.1
 - extradisks-1.16.1-1.3
+- extratags-2.1e
 - FarmingForBlockheads_1.16.1-7.0.1
 - FastFurnace-1.16.1-4.0.0
 - FastLeafDecay-v23
 - FastWorkbench-1.16.1-4.1.1
 - FpsReducer-mc1.16.1-1.17
 - ftb-ultimine-1.1.0.6
-- globalxp-1.16.1-v1.4.12
+- globalxp-1.16.1-v1.4.13
+- iChunUtil-1.16.1-9.0.0
 - ImmersiveEngineering-0.16-109
 - industrial-foregoing-1.16.1-3.0.3-5935836
 - Interactio-1.16.1-2.0.4
@@ -73,19 +77,20 @@
 - JAOPCA-1.16.1-3.3.0.2
 - jei-1.16.1-7.0.0.6
 - JustEnoughResources-1.16.1-0.11.0.81
-- Kiwi-1.16.1-3.1.3
+- Kiwi-1.16.1-3.1.4
 - KleeSlabs_1.16.1-9.0.0
-- kubejs-2.7.2.51
+- kubejs-2.7.2.53
 - LargeFluidTank-16.0.2
 - laserrelays-1.6
 - LetSleepingDogsLie-1.16.1-1.1.1
 - light-overlay-5.4.1
-- Lollipop-1.16.1-2.1.2
+- Lollipop-1.16.1-2.1.3
 - Ma-Enchants-1.16.1-3.2.1
 - Ma-Essentials-1.16.1-3.2.3
 - masonry-1.16.1-0.3.5
 - mcw-bridges-1.0.4-mc1.16.1
 - mcw-doors-1.0.0-mc1.16.1
+- mcws-win-1.16.1-v1.0.2
 - Mekanism-1.16.1-10.0.3.426
 - MekanismGenerators-1.16.1-10.0.3.426
 - MekanismTools-1.16.1-10.0.3.426
@@ -98,6 +103,7 @@
 - Morpheus-1.16.1-4.2.55
 - MouseTweaks-2.13-mc1.16.1
 - NaturesCompass-1.16.1-1.8.5
+- Neat 1.7-23
 - NetherPortalFix_1.16.1-7.0.0
 - nopotionshift_1.16.1-1.5.0
 - OldJavaWarning-1.16.1-4.0.1
@@ -107,16 +113,15 @@
 - PassableFoliage-1.16.1-2.0.1
 - PassthroughSigns-1.16.1-2.3.5
 - Patchouli-1.16-39
-- pedestals-0.5a
 - pitg-1.16.1-1.3.0
 - Placebo-1.16.1-4.0.1
-- Powah-1.16.1-2.1.2
+- Powah-1.16.1-2.1.3
 - PrettyBeaches_1.16.1-5.0.0
 - productivebees-1.16.1-0.1.15.2
-- Quark-r2.2-255
+- Quark-r2.2-256
 - QuarkOddities-1.15.2
 - rad-1.16-4.0.1
-- randompatches-1.16.1-1.22.1.0
+- randompatches-1.16.1-1.22.1.1
 - rangedpumps-0.8
 - rats-6.0.4-1.16.1
 - ReAuth-1.16-Forge-3.9.0
