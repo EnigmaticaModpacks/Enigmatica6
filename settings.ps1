@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift", "ding")
+$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat")
 
 	
 # =====================================================================//
