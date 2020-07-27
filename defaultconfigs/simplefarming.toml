@@ -1,0 +1,58 @@
+
+["Tweak World Generation Rates"]
+	#Chance of berry bushes generating in the overworld. Higher numbers indicate a lower probability (Default: 300)
+	#Range: 1 ~ 1000000000
+	"Probability of berry bushes generating" = 800
+	#Chance of opuntias generating in deserts. Higher numbers indicate a lower probability (Default: 150)
+	#Range: 1 ~ 1000000000
+	"Probability of opuntias generating" = 1000
+	#Chance of fruit trees generating in the overworld. Higher numbers indicate a lower probability (Default: 1500)
+	#Range: 1 ~ 1000000000
+	"Probability of fruit trees generating" = 1200
+	#Chance of wild crops generating in the overworld. Higher numbers indicate a lower probability (Default: 100)
+	#Range: 1 ~ 1000000000
+	"Probability of wild crops generating" = 400
+	#Chance of wild plants generating in the overworld. Higher numbers indicate a lower probability (Default: 800)
+	#Range: 1 ~ 1000000000
+	"Probability of wild plants generating" = 1600
+
+["Enable/Disable World Generation"]
+	#Indicates whether berry bushes should generate
+	"Generate berry bushes" = true
+	#Indicates whether opuntias (cactus crops) should generate
+	"Generate opuntias" = true
+	#Indicates whether fruit trees should generate
+	"Generate fruit trees" = true
+	#Enable this feature to avoid conflicts with other mods that add grass drops (And disable grass drops).
+	"Generate wild crops" = true
+	#Indicates whether wild plants, such as quinoa and cumin, should generate
+	"Generate wild plants" = true
+
+["Miscellaneous Features"]
+	#Indicates whether right-click harvesting crops should be enabled. Respective parts of the right-clicking function can be enabled/disabled below.
+	"Enable right-click harvesting for crops" = true
+	#Smart harvesting allows right-click harvested items to be placed directly in the player's inventory. Enabling this option will automatically disable normal right-click harvesting. Indicates whether smart-harvesting on crops should be enabled
+	"Enable smart harvest for crops" = false
+
+["Right-click Harvesting Settings"]
+	#Indicates whether right-click harvesting crops should be enabled
+	"Enable right-click harvesting for crops" = true
+	#Indicates whether right-click harvesting berry bushes should be enabled
+	"Enable right-click harvesting for berry bushes" = true
+	#Indicates whether right-click harvesting opuntias should be enabled
+	"Enable right-click harvesting for opuntias" = true
+	#Indicates whether right-click harvesting tree leaves should be enabled
+	"Enable right-click harvesting for tree leaves" = true
+	#Indicates whether right-click harvesting wild plants should be enabled
+	"Enable right-click harvesting for wild plants" = true
+	#Indicates whether right-click harvesting grapes should be enabled
+	"Enable right-click harvesting for grapes" = true
+	#Indicates whether right-click harvesting double-high-crops should be enabled
+	"Enable right-click harvesting for double-high-crops" = true
+
+["Dimensions Settings"]
+	#Enter a dimension id to whitelist feature generation
+	white_dim = [0]
+	#Enter a dimension id to blacklist feature generation
+	black_dim = [-1, 1]
+
