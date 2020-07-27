@@ -1,19 +1,13 @@
 events.listen('recipes', function (event) {
     vanillaWoodTypes.forEach(function (woodType) {
-        event.recipes.minecraft.stonecutting({
-            ingredient: {
-                tag: 'minecraft:' + woodType + '_logs'
-            },
-            result: 'carpetstairsmod:' + woodType + '_wood_floor',
-            count: 24
-        });
-        event.recipes.minecraft.stonecutting({
-            ingredient: {
-                item: 'minecraft:' + woodType + '_planks'
-            },
-            result: 'carpetstairsmod:' + woodType + '_wood_floor',
-            count: 6
-        });
+        event.recipes.minecraft.stonecutting(
+            item.of('carpetstairsmod:' + woodType + '_wood_floor', 24),
+            'minecraft:' + woodType + '_planks'
+        );
+        event.recipes.minecraft.stonecutting(
+            item.of('carpetstairsmod:' + woodType + '_wood_floor', 6),
+            '#minecraft:' + woodType + '_logs'
+        );
     });
 
     // Conversion between different storage_blocks of the same material
