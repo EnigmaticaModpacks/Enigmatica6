@@ -1,0 +1,35 @@
+
+[bns]
+	#Number of ticks before showing a tooltip
+	#Range: > 0
+	guiTooltipCooldown = 20
+	#Renders iChunUtil's GUIs (Boxes & Stuff) in a Minecraft Style instead
+	guiStyleMinecraft = false
+	#Default Theme for Boxes & Stuff
+	guiDefaultTheme = "default"
+	#Speed, in ticks, to register a double click
+	#Range: > 1
+	guiDoubleClickSpeed = 10
+	#How much padding to add to the docked windows
+	#Range: 0 ~ 50
+	guiDockPadding = 0
+	#Number of pixels before iChunUtil thinks you're trying to dock a window
+	#Range: > 1
+	guiDockBorder = 8
+
+#These options affect only the client that loads the mod.
+[clientOnly]
+	#Override the Options button so pressing Shift when clicking it shows the Mods list.
+	buttonOptionsShiftOpensMods = true
+	#Enables (most) Client-Side Easter Eggs for iChun's Mods
+	easterEgg = true
+
+[headTracking]
+	#Enable the easter egg where the horse/llama's "head" is its behind. This is an easter egg on how Hats used to put hats on Horses.
+	horseEasterEgg = true
+	#Track the head model aggressively to try and fix improper head tracking that may be caused by mod conflicts?
+	#1 = All Entities
+	#2 = Players Only
+	#Range: 0 ~ 2
+	aggressiveHeadTracking = 1
+
