@@ -5,10 +5,10 @@ events.listen('recipes', function (event) {
         shapelessRecipe('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel']),
         shapelessRecipe('simplefarming:cornbread', ['#forge:grain', '#forge:crops/corn', '#forge:grain']),
         shapelessRecipe('minecraft:chest', ['#forge:chests/wooden']),
-        shapelessRecipe('minecraft:crafting_table', [
-            'craftingstation:crafting_station_slab',
-            'craftingstation:crafting_station_slab'
-        ]),
+        // shapelessRecipe('minecraft:crafting_table', [
+        //     'craftingstation:crafting_station_slab',
+        //     'craftingstation:crafting_station_slab'
+        // ]),
         // shapelessRecipe('simplefarming:fish_sandwich', [
         //     '#forge:bread',
         //     'aquaculture:fish_fillet_cooked',

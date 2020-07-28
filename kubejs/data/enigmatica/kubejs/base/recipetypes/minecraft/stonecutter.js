@@ -1,11 +1,11 @@
 events.listen('recipes', function (event) {
     vanillaWoodTypes.forEach(function (woodType) {
         event.recipes.minecraft.stonecutting(
-            item.of('carpetstairsmod:' + woodType + '_wood_floor', 24),
+            item.of('carpetstairsmod:' + woodType + '_wood_floor', 6),
             'minecraft:' + woodType + '_planks'
         );
         event.recipes.minecraft.stonecutting(
-            item.of('carpetstairsmod:' + woodType + '_wood_floor', 6),
+            item.of('carpetstairsmod:' + woodType + '_wood_floor', 24),
             '#minecraft:' + woodType + '_logs'
         );
     });

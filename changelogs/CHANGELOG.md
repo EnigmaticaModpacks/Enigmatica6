@@ -6,10 +6,6 @@
 
 _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.3.txt)_
 
-**Mod Additions**
-
-- 
-
 **Changes**
 
 - Rats: Wild Rats no longer raid crops
@@ -17,11 +13,12 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Fixed Bugs**
 
-- 
+- 0.2.2 - Server blows up on player login - Related to Crafting Station/Extra Tags [\#42](https://github.com/NillerMedDild/Enigmatica6/issues/42)
 
 **Mod Removals**
 
-- 
+- CraftingStation (Temporarily, due to a bug)
+- Extra Tags (Temporarily, due to a bug)
 
 ## Enigmatica 6 v0.2.2
 

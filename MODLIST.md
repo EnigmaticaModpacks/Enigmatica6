@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.2.2 Modlist
+## Enigmatica 6 - 0.2.3 Modlist
 - Abnormals-Core-1.16.1-v2.0.0
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.0
@@ -36,7 +36,6 @@
 - Controlling-7.0.0.2
 - CookingForBlockheads_1.16.1-9.0.0
 - CosmeticArmorReworked-1.16.1-v1a
-- craftingstation-4.0.0
 - CraftingTweaks_1.16.1-12.0.4
 - CTM-MC1.16.1-1.1.0.1
 - culinaryconstruct-FORGE-1.16.1-3.0
@@ -59,7 +58,6 @@
 - engineerstools-1.16.1-1.0.9-b2
 - environmentalcreepers-forge-1.16.1-1.6.1
 - extradisks-1.16.1-1.3
-- extratags-2.1e
 - FarmingForBlockheads_1.16.1-7.0.1
 - FastFurnace-1.16.1-4.0.0
 - FastLeafDecay-v23
