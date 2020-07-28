@@ -2,6 +2,26 @@
 
 
 
+## Enigmatica 6 v0.2.4
+
+_Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.3.txt)_
+
+**Mod Additions**
+
+- 
+
+**Changes**
+
+- 
+
+**Fixed Bugs**
+
+- Main Menu button linking to the wrong issue tracker
+
+**Mod Removals**
+
+- 
+
 ## Enigmatica 6 v0.2.3
 
 _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.3.txt)_
