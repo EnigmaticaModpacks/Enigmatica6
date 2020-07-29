@@ -10,6 +10,18 @@ events.listen('recipes', function (event) {
         );
     });
 
+    var stoneCutterRemovals = [
+        'minecraft:iron_ingot',
+        'minecraft:string',
+        'minecraft:iron_nugget',
+        'minecraft:bone',
+        'minecraft:gold_ingot',
+        'minecraft:gold_nugget'
+    ];
+    stoneCutterRemovals.forEach(function (item) {
+        event.remove({ type: 'minecraft:stonecutting', output: item });
+    });
+
     // Conversion between different storage_blocks of the same material
     materialsToUnify.forEach(function (material) {
         var storage_block_tag = ingredient.of('#forge:storage_blocks/' + material);
