@@ -3,6 +3,7 @@ events.listen('recipes', function (event) {
     materialsToUnify.forEach(function (material) {
         enigmatica_ore_deposit_processing(event, material);
         //occultism_ore_ingot_crushing(event, material);
+        appliedenergistics2_ore_ingot_crushing(event, material);
     });
 });
 
@@ -84,8 +85,56 @@ function enigmatica_ore_deposit_processing(event, material) {
     // });
 }
 
+function appliedenergistics2_ore_ingot_crushing(event, material) {
+    var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
+    var oreDeposit = getPreferredItemInTag(oreDepositTag).id;
+
+    var dustTag = ingredient.of('#forge:dusts/' + material);
+    var dust = getPreferredItemInTag(dustTag).id;
+
+    var ingotTag = ingredient.of('#forge:ingots/' + material);
+    var ingot = getPreferredItemInTag(ingotTag).id;
+
+    if (oreDeposit === air || dust === air) {
+        return;
+    }
+
+    event.recipes.appliedenergistics2.grinder({
+        input: {
+            tag: 'forge:ores/' + material
+        },
+        result: {
+            primary: {
+                item: dust
+            },
+            optional: [
+                {
+                    item: dust
+                }
+            ]
+        },
+        turns: 8
+    });
+
+    if (ingot === air) {
+        return;
+    }
+
+    event.recipes.appliedenergistics2.grinder({
+        input: {
+            tag: 'forge:ingots/' + material
+        },
+        result: {
+            primary: {
+                item: dust
+            }
+        },
+        turns: 4
+    });
+}
+
 function occultism_ore_ingot_crushing(event, material) {
-    var blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'quartz', 'coal'];
+    let blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'quartz', 'coal'];
     if (blacklistedMaterials.includes(material)) {
         return;
     }
