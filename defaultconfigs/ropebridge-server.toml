@@ -1,0 +1,36 @@
+
+[general]
+	#Max length of bridges made be Grappling Gun.
+	#Range: 1 ~ 1000
+	maxBridgeDistance = 400
+	#Percent of slack the bridge will have, causing it to hang.
+	#Range: 0 ~ 100
+	bridgeDroopFactor = 100
+	#Generated bridges will be raised or lowered by this ammount in blocks.
+	#Default is just below user's feet.
+	#Range: -1.0 ~ 1.0
+	bridgeYOffset = -0.3
+	#If enabled, all blocks that dare stand in a bridge's way will be broken.
+	#Very useful in creative mode.
+	breakThroughBlocks = false
+	#Set true to ignore all slope warnings and allow building of very steep bridges.
+	ignoreSlopeWarnings = false
+	#Slabs consumed for each bridge block built.
+	#Range: 0 ~ 10
+	slabsPerBridge = 1
+	#String consumed for each bridge block built.
+	#Range: 0 ~ 20
+	ropePerBridge = 2
+	#Wood consumed for each ladder block built.
+	#Range: 0 ~ 10
+	woodPerLadder = 1
+	#Rope consumed for each ladder block built.
+	#Range: 0 ~ 20
+	ropePerLadder = 2
+	#How much the Ladder Gun is damaged after creating each ladder.
+	#Range: 0 ~ 64
+	damageForLadder = 1
+	#How much the Bridge Gun is damaged after creating each ladder.
+	#Range: 0 ~ 64
+	damageForBridge = 1
+
