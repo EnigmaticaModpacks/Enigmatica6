@@ -22,6 +22,8 @@
 	#How many ticks it takes for process a recipe in the powerd centrifuge. Default 100.
 	#Range: > 20
 	centrifugePoweredProcessingTime = 100
+	#A priority list of Mod IDs that results of comb output should stem from, aka which mod you want the copper to come from. Eg: mekanism,silents_mekanism,immersiveengineering
+	preferredOres = ["emandatusenigmatica", "minecraft", "immersiveengineering", "mekanism", "jaopca", "kubejs", "appliedenergistics", "industrialforegoing", "quark", "productivebees"]
 
 ["Bee attributes"]
 	#Number of ticks between effects on nearby entities
@@ -83,6 +85,9 @@
 	#Production chance for productivebees:iron_bee
 	#Range: 0.0 ~ 1.0
 	"productivebees:iron_bee" = 0.65
+	#Production chance for productivebees:hoarder_bee
+	#Range: 0.0 ~ 1.0
+	"productivebees:hoarder_bee" = 0.65
 	#Production chance for productivebees:redstone_bee
 	#Range: 0.0 ~ 1.0
 	"productivebees:redstone_bee" = 0.65
