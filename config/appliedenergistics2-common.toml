@@ -1,0 +1,131 @@
+
+#Warning: Disabling a feature may disable other features depending on it.
+[features]
+
+	[features.Facades]
+		#Unsupported: Allows whitelisting TileEntity as facades. Could work, have render issues, or corrupt your world. USE AT YOUR OWN RISK.
+		TileEntityFacades = false
+
+	[features.Rendering]
+		AlphaPass = true
+
+	[features.Misc]
+		CraftingLog = false
+		IntegrationLogging = false
+		DebugLogging = false
+		PacketLogging = false
+		UnsupportedDeveloperTools = false
+		UpdateLogging = false
+		WebsiteRecipes = false
+		LogSecurityAudits = false
+
+	[features.Commands]
+		ChunkLoggerTrace = false
+
+	[features.Crafting]
+		EnableDisassemblyCrafting = true
+		InWorldFluix = true
+		InWorldSingularity = true
+		InWorldPurification = true
+		EnableFacadeCrafting = true
+
+	[features.World]
+		CertusQuartzWorldGen = true
+		VillagerTrading = true
+		SpawnPressesInMeteorites = true
+		MeteoriteWorldGen = true
+
+[general]
+	#Will auto-remove items that crash when being loaded from storage. This will destroy those items instead of crashing the game!
+	removeCrashingItemsOnLoad = false
+
+[automation]
+	#TODO
+	formationPlaneEntityLimit = 128
+
+[craftingCPU]
+	craftingCalculationTimePerTick = 5
+
+[spatialio]
+	#BE CAREFUL, CAN CORRUPT YOUR WORLD! Will use #spatial/whitelist as whitelist.
+	spatialBlockTags = false
+	spatialPowerExponent = 1.35
+	spatialPowerMultiplier = 1250.0
+
+[GrindStone]
+	#Chance to actually get an output with stacksize > 1.
+	#Range: 0.0 ~ 100.0
+	oreDoublePercentage = 90.0
+
+[battery]
+	entropyManipulator = 200000
+	chargedStaff = 8000
+	wirelessTerminal = 1600000
+	portableCell = 20000
+	colorApplicator = 20000
+	matterCannon = 200000
+
+[worldGen]
+	meteoriteDimensionWhitelist = ["minecraft:dimension"]
+	quartzOresClusterAmount = 20
+	quartzOresPerCluster = 4
+	meteoriteMaximumSpawnHeight = 180
+	#Range: 0.0 ~ 1.0
+	spawnChargedChance = 0.08
+
+[wireless]
+	wirelessTerminalDrainMultiplier = 1.0
+	wirelessBoosterExp = 1.5
+	wirelessCostMultiplier = 1.0
+	wirelessHighWirelessCount = 64.0
+	wirelessBaseRange = 16.0
+	wirelessBaseCost = 8.0
+	wirelessBoosterRangeMultiplier = 1.0
+
+[PowerRatios]
+	IC2 = 2.0
+	ForgeEnergy = 0.5
+	#Range: 0.01 ~ 1.7976931348623157E308
+	UsageMultiplier = 1.0
+
+[Condenser]
+	Singularity = 256000
+	MatterBalls = 256
+
+# Min / Max Tickrates for dynamic ticking, most of these components also use sleeping, to prevent constant ticking, adjust with care, non standard rates are not supported or tested.
+[tickRates]
+	ChargerMax = 120
+	IOPortMax = 5
+	METunnelMin = 5
+	StorageBusMax = 60
+	FluidStorageBusMax = 60
+	LightTunnelMax = 60
+	FluidExportBusMax = 60
+	ItemTunnelMin = 5
+	FluidImportBusMax = 40
+	FluidStorageBusMin = 5
+	IOPortMin = 1
+	InterfaceMax = 120
+	OpenComputersTunnelMax = 5
+	StorageBusMin = 5
+	InscriberMin = 1
+	ImportBusMax = 40
+	FluidImportBusMin = 5
+	VibrationChamberMax = 40
+	ImportBusMin = 5
+	InterfaceMin = 5
+	OpenComputersTunnelMin = 1
+	AnnihilationPlaneMin = 2
+	ExportBusMin = 5
+	PressureTunnelMax = 120
+	ChargerMin = 10
+	METunnelMax = 20
+	AnnihilationPlaneMax = 120
+	InscriberMax = 1
+	ItemTunnelMax = 60
+	LightTunnelMin = 5
+	ExportBusMax = 60
+	PressureTunnelMin = 1
+	FluidExportBusMin = 5
+	VibrationChamberMin = 10
+

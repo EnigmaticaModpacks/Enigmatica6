@@ -1,0 +1,59 @@
+
+[client]
+	#Controls buttons on Level Emitter Screen
+	#Range: 1 ~ 9
+	levelByStacks0 = 1
+	#Controls buttons on Priority Screen
+	#Range: 1 ~ 99
+	priorityByStacks1 = 10
+	#Controls buttons on Priority Screen
+	#Range: 1 ~ 9
+	priorityByStacks0 = 1
+	#Controls buttons on Level Emitter Screen
+	#Range: 1 ~ 99
+	levelByStacks1 = 10
+	#Controls buttons on Level Emitter Screen
+	#Range: 1 ~ 999
+	levelByStacks2 = 100
+	#Controls buttons on Priority Screen
+	#Range: 1 ~ 9999
+	priorityByStacks3 = 1000
+	#Controls buttons on Priority Screen
+	#Range: 1 ~ 999
+	priorityByStacks2 = 100
+	#Controls buttons on Level Emitter Screen
+	#Range: 1 ~ 9999
+	levelByStacks3 = 1000
+	#TODO
+	useTerminalUseLargeFont = false
+	#TODO
+	disableColoredCableRecipesInJEI = true
+	#Controls buttons on Crafting Screen
+	#Range: 1 ~ 99
+	craftByStacks1 = 10
+	#Controls buttons on Crafting Screen
+	#Range: 1 ~ 9
+	craftByStacks0 = 1
+	#TODO
+	useColoredCraftingStatus = true
+	#Controls buttons on Crafting Screen
+	#Range: 1 ~ 9999
+	craftByStacks3 = 1000
+	#Controls buttons on Crafting Screen
+	#Range: 1 ~ 999
+	craftByStacks2 = 100
+	#TODO
+	enableEffects = true
+	#Power unit shown in AE UIs
+	#Allowed Values: AE, EU, RF
+	PowerUnit = "AE"
+
+[terminals]
+	#Allowed Values: TALL, FULL, SMALL
+	terminalStyle = "TALL"
+	#Allowed Values: AUTOSEARCH, AUTOSEARCH_KEEP, MANUAL_SEARCH, MANUAL_SEARCH_KEEP, JEI_AUTOSEARCH, JEI_AUTOSEARCH_KEEP, JEI_MANUAL_SEARCH, JEI_MANUAL_SEARCH_KEEP
+	terminalSearchMode = "AUTOSEARCH"
+	#Should tooltips be searched. Performance impact
+	#Allowed Values: YES, NO, UNDECIDED
+	searchTooltips = "YES"
+
