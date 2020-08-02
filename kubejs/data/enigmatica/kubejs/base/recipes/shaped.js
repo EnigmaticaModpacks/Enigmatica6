@@ -24,11 +24,11 @@ events.listen('recipes', function (event) {
             C: 'refinedstorage:wireless_grid',
             D: 'minecraft:crafting_table'
         }),
-        shapedRecipe('simplefarming:fish_and_chips', [' A ', 'BCB', ' A '], {
-            A: '#forge:crops/potato',
-            B: '#forge:grain',
-            C: 'aquaculture:fish_fillet_cooked'
-        }),
+        // shapedRecipe('simplefarming:fish_and_chips', [' A ', 'BCB', ' A '], {
+        //     A: '#forge:crops/potato',
+        //     B: '#forge:grain',
+        //     C: 'aquaculture:fish_fillet_cooked'
+        // }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         })
