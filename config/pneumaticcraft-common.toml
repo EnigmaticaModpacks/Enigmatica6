@@ -1,0 +1,270 @@
+
+[General]
+	#Drones render their held item (the item in slot 0 of their inventory) ?  Note: this is in common config since if enabled, server needs to sync the item data to the client.
+	drones_render_held_item = true
+	#Enable mod dungeon loot generation
+	enable_dungeon_loot = true
+	#Enable Drone Suffocation Damage
+	enable_drone_suffocation = true
+	#Efficiency of fuel buckets as furnace fuel (default 0.05 means 1 bucket of LPG smelts 450 items in a vanilla furnace)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fuel_bucket_efficiency = 0.05
+	#Should dyes be used up when coloring things (Drones, Logistics Modules, Redstone Modules)?
+	use_up_dyes_when_coloring = false
+	#Maximum number of blocks in the area defined in an Area Programming Puzzle Piece
+	#Range: > 1
+	max_programming_area = 250000
+	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
+	drones_can_import_xp_orbs = true
+	#Oil worldgen blacklist: add dimension IDs to this list if you don't want oil worldgen to happen there.
+	oil_world_gen_blacklist = ["minecraft:the_nether", "minecraft:the_end"]
+	#Chance per chunk in percentage to generate an Oil Lake. Set to 0 for no oil lakes.
+	#Range: 0 ~ 100
+	oil_generation_chance = 15
+	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
+	#Range: > 0
+	min_fluid_fuel_temperature = 373
+
+["Machine Properties"]
+	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
+	aerial_interface_armor_compat = true
+	#Speed multiplier per speed upgrade: speed mult = speedUpgradeSpeedMultiplier ^ num_of_speed_upgrades
+	#Range: 1.0 ~ 2.0
+	speed_upgrade_speed_multiplier = 1.5
+	#The amount of air produced by using 100 MJ (Minecraft Joules) in the flux compressor
+	#Range: > 0
+	kinetic_compressor_efficiency = 40
+	#The amount of MJ (Minecraft Joules) produced by using 100mL of air in the Pneumatic Dynamo
+	#Range: > 0
+	pneumatic_engine_efficiency = 40
+	#Can the Liquid Hopper absorb/dispense fluids into the world with a Dispenser Upgrade?
+	liquid_hopper_dispenser = true
+	#Can the Omnidirectional Hopper dispense items into the world with a Dispenser Upgrade?
+	omni_hopper_dispenser = true
+	#Fuel usage / heat gen multiplier per speed upgrade: usage mult = speedUpgradeUsageMultiplier ^ num_of_speed_upgrades
+	#Range: 1.0 ~ 2.0
+	speed_upgrade_usage_multiplier = 1.649999976158142
+	#Base chance (1/x) per tick of a lightning strike on/around the Electrostatic Generator
+	#Range: > 0
+	electrostatic_lightning_chance = 100000
+	#The ratio of liquid plastic to solid plastic sheets in the Plastic Mixer, in mB per sheet.  If set to 0, no default liquid->solid plastic recipe will be added (but CraftTweaker or API can be used to add recipes)
+	#Range: > 0
+	plastic_mixer_plastic_ratio = 1000
+	#The max height of an elevator per stacked Elevator Base.
+	#Range: 1 ~ 256
+	elevator_base_blocks_per_base = 4
+	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
+	#Range: > 0
+	flux_compressor_efficiency = 40
+	#Can the Kerosene Lamp burn any kind of fuel?  If false, only Kerosene can be burnt
+	kerosene_lamp_can_use_any_fuel = true
+	#Kerosene Lamp fuel efficiency: higher values mean fuel will last longer in the lamp
+	#Range: 0.0 ~ 1.7976931348623157E308
+	kerosene_lamp_fuel_efficiency = 1.0
+	#Changing this value will alter the pressurized air production of the Electric Compressor. The input, EU, will stay the same
+	#Range: > 0
+	electric_compressor_efficiency = 40
+	#The amount of FE (Forge Energy) produced by using 100mL of air in the Pneumatic Dynamo
+	#Range: > 0
+	pneumatic_dynamo_efficiency = 40
+	#Changing this value will alter the pressurized air usage of the Pneumatic Generator. The output, EU, will stay the same.
+	#Range: > 0
+	pneumatic_generator_efficiency = 40
+	#Chance per tick of Crop Supports causing a growth tick. The default, 0.002, is roughly 2.5 times faster than the vanilla growth rate
+	#Range: 0.0 ~ 1.7976931348623157E308
+	crop_sticks_growth_boost_chance = 0.002
+	#Changing this value will alter the hydraulic bar production of the Pneumatic Pump. The input, air, will stay the same
+	#Range: > 0
+	pneumatic_pump_efficiency = 40
+
+["Pneumatic Armor"]
+	#Air usage for armor repair, in mL per Item Life Upgrade per point of damage repaired
+	#Range: > 0
+	repair_air_usage = 100
+	#Jetboots air usage in mL/tick (per Jet Boots Upgrade)
+	#Range: > 0
+	jet_boots_air_usage = 12
+	#Flippers Upgrade speed boost when floating in water
+	#Range: 0.0 ~ 1.0
+	flippers_speed_boost_floating = 0.045
+	#Base Pneumatic Armor startup time in ticks (before Speed Upgrades)
+	#Range: > 20
+	armor_startup_time = 200
+	#Air usage for Magnet Upgrade, in mL per item or XP orb attracted
+	#Range: > 0
+	magnet_air_usage = 20
+	#Air used per point of 'player air' restored by the Scuba Upgrade
+	#Range: > 1
+	scuba_multiplier = 8
+	#Flippers Upgrade speed boost when in water and feet on ground
+	#Range: 0.0 ~ 1.0
+	flippers_speed_boost_ground = 0.03
+
+[Advanced]
+	#When set to true, the Kerosene Lamp's fake air blocks won't be registered and therefore removed from the world. Useful if this causes trouble (it shouldn't though)
+	disable_kerosene_lamp_fake_air_block = false
+	#When set to true, Drones will not execute any program. This is useful to set to true when due to a bug Drones are lagging your server or crashing it. Please report the bug if you encounter it.
+	stop_drone_ai = false
+	#The minimum interval in ticks between which fluid tank contents should be synced to clients. Smaller values mean smoother visual tank updates, but more of a performance cost in terms of network syncing. Note that fluid tank sync packets are also only sent when a fluid tank changes by more than 1% of its capacity, or 1000mB, whichever is smaller.
+	#Range: 1 ~ 100
+	fluid_tank_update_rate = 10
+
+["Micromissile Properties"]
+	#Base explosion damage (modified by missile setup)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_explosion_damage = 1.0
+	#Do micromissile explosions cause terrain damage?
+	damage_terrain = false
+	#Cooldown for missile firing in ticks
+	#Range: > 0
+	launch_cooldown = 15
+	#Base missile lifetime in ticks (modified by missile setup)
+	#Range: > 0
+	lifetime = 300
+	#Number of micromissiles per pod
+	#Range: > 0
+	missile_pod_size = 100
+
+["Minigun Properties"]
+	#Weighted Ammo cartridge size
+	#Range: 1 ~ 30000
+	weighted_ammo_cartridge_size = 250
+	#Armor Piercing Ammo cartridge size
+	#Range: 1 ~ 30000
+	armor_piercing_ammo_cartridge_size = 250
+	#Explosive Ammo cartridge size
+	#Range: 1 ~ 30000
+	explosive_ammo_cartridge_size = 125
+	#Minigun Explosive Ammo explosion power (ref: 2 = creeper, 4 = TNT
+	#Range: 0.0 ~ 1.7976931348623157E308
+	explosive_ammo_explosion_power = 1.5
+	#Weighted Ammo damage multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	weighted_ammo_damage_multiplier = 2.5
+	#Weighted Ammo air usage multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	weighted_ammo_air_usage_multiplier = 8.0
+	#Damage done to entities within the fake 'ice' blocks cause by freezing ammo
+	#Range: 0.0 ~ 1.7976931348623157E308
+	freezing_ammo_fake_ice_damage = 1.0
+	#Show particles when a block is hit by minigun fire? Looks good, but consumes some network bandwidth.
+	block_hit_particles = true
+	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
+	#Range: 0.0 ~ 1.7976931348623157E308
+	base_damage = 4.0
+	#Freezing Ammo cartridge size
+	#Range: > 0
+	freezing_ammo_cartridge_size = 500
+	#Base range of Minigun, before Range Upgrades are considered
+	#Range: 5 ~ 100
+	base_range = 50
+	#Incendiary ammo fire duration on target entities (seconds)
+	#Range: > 0
+	incendiary_ammo_fire_duration = 8
+	#Incendiary ammo base percentage chance to ignite entities
+	#Range: 1 ~ 100
+	incendiary_ammo_entity_ignite_chance = 100
+	#Incendiary ammo base percentage chance to ignite blocks
+	#Range: 1 ~ 100
+	incendiary_ammo_block_ignite_chance = 20
+	#Armor Piercing Ammo percentage chance to ignore target's armor
+	#Range: 1 ~ 100
+	ap_ammo_ignore_armor_chance = 100
+	#Incendiary Ammo cartridge size
+	#Range: 1 ~ 30000
+	incendiary_ammo_cartridge_size = 500
+	#Percentage chance per shot of potion-tipped ammo proc'ing the potion effect, before Dispenser Upgrades are considered
+	#Range: 1 ~ 100
+	potion_proc_chance = 7
+	#Does Minigun Explosive Ammo damage terrain?
+	explosive_ammo_terrain_damage = false
+	#Standard Ammo cartridge size
+	#Range: 1 ~ 30000
+	standard_ammo_cartridge_size = 1000
+	#Armor Piercing Ammo damage multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ap_ammo_damage_multiplier = 1.25
+	#Weighted Ammo range multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	weighted_ammo_range_multiplier = 0.2
+	#Freezing Ammo base percentage chance to form ice or snow on blocks which have been hit
+	#Range: 0 ~ 100
+	freezing_ammo_block_ice_chance = 10
+	#Minigun Explosive Ammo damage multiplier (relative to standard ammo)
+	#Range: 0.0 ~ 1.7976931348623157E308
+	explosive_ammo_damage_multiplier = 0.2
+	#Freezing Ammo base percentage chance to form ice on entities which have been hit
+	#Range: 0 ~ 100
+	freezing_ammo_entity_ice_chance = 20
+	#Explosive Ammo base percentage chance to cause an explosion
+	#Range: > 0
+	explosive_ammo_explosion_chance = 50
+
+[Integration]
+	#Immersive Engineering: External Heater RF/t. Set to 0 to disable External Heater integration entirely.
+	#Range: > 0
+	ie_external_heater_r_fper_tick = 100
+	#Immersive Engineering: External Heater heat/RF.  The amount of PneumaticCraft heat added by 1 RF.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	ie_external_heater_heat_per_rf = 0.01
+	#Mekanism thermal resistance multiplier. Larger values mean slower heat transfer between Mekanism and PneumaticCraft blocks.
+	#Range: 1.0 ~ 1.7976931348623157E308
+	mek_thermal_resistance_factor = 5.0
+	#Mekanism <-> PneumaticCraft heat conversion efficiency. Set to 0 to disable Mekanism heat integration entirely. Note that Mekanism and PNC use a similar heat system, but scale things quite differently (Mekanism heaters produces a LOT of heat by PneumaticCraft standards), so conversion efficiency tuning is important for inter-mod balance.
+	#Range: 0.0 ~ 2.0
+	mek_thermal_conversion_efficiency = 0.01
+
+[Recipes]
+	#Enable/disable explosion crafting (iron->compressed iron).  If you disable this, you'll need another way to get compressed iron initially.
+	explosion_crafting = true
+	#Enable crafting diamonds from coal blocks in the pressure chamber
+	coal_to_diamonds = true
+
+[Amadron]
+	#Time in ticks between each periodic offer reshuffle (24000 ticks = one Minecraft day)
+	#Range: > 1000
+	reshuffleInterval = 24000
+	#Max number of custom trades a player may add
+	#Range: > 1
+	max_trades_per_player = 50
+	#Broadcast a notification when player adds a custom trade
+	notify_of_trade_addition = true
+	#Broadcast a notification when player removes a custom trade
+	notify_of_trade_removal = true
+	#Broadcast a notification when an Amadron trade is made
+	notify_of_deal_made = true
+	#Number of periodic offers randomly selected for the 'live' offer list
+	#Range: > 0
+	numPeriodicOffers = 20
+
+[Heat]
+	#Default thermal resistance for fluid blocks
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	fluidThermalResistance = 100.0
+	#Default thermal resistance for solid blocks
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	blockThermalResistance = 500.0
+	#Ambient temperature modifier by height (in degrees per block above 80 or below 40)
+	#Range: 0.0 ~ 10.0
+	ambientTemperatureHeightModifier = 0.1
+	#Thermal resistance of air; controls how fast blocks lose heat to air when exposed
+	#Range: 1.0 ~ 1.7976931348623157E308
+	airThermalResistance = 100.0
+	#Ambient temperature modifier by biome (default 25 gives the Nether a heat boost of 30C)
+	#Range: 0.0 ~ 1000.0
+	ambientTemperatureBiomeModifier = 25.0
+	#Default heat capacity for fluid blocks
+	#Range: > 0
+	defaultFluidHeatCapacity = 10000
+
+[Logistics]
+	#Minimum pressure for a Logistics Module to function
+	#Range: 0.0 ~ 20.0
+	min_pressure = 3.0
+	#Air usage per mB of fluid per block distance
+	#Range: 0.0 ~ 1.7976931348623157E308
+	fluid_transport_cost = 0.02
+	#Air usage per item per block distance
+	#Range: 0.0 ~ 1.7976931348623157E308
+	item_transport_cost = 1.0
+

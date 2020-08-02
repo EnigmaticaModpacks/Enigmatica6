@@ -1,0 +1,65 @@
+
+[general]
+	#Show tank fluids with the The One Probe. Note that TOP also has support for showing tanks, which may or may not be enabled.
+	top_shows_fluids = true
+	#Should widgets in the GUI Remote Editor be snapped to a 4x4 grid?
+	gui_remote_grid_snap = true
+	#Enable Aphorism Tile Drama!  http://mc-drama.herokuapp.com/
+	aphorism_drama = true
+	#Should GUI side tabs be shown with a beveled edge? Setting to false uses a plain black edge, as in earlier versions of the mod.
+	gui_bevel = true
+	#Tint Logistics configuration GUI backgrounds according to the colour of the logistics frame you are configuring.
+	logistics_gui_tint = true
+	#Should tube modules emit redstone play redstone particle effects when active?
+	tube_module_redstone_particles = true
+	#Defines which widgets are shown in the Programmer GUI: easy, medium, or advanced
+	#Allowed Values: EASY, MEDIUM, ADVANCED
+	programmer_difficulty = "EASY"
+	#Always show the pressure durability bar for pressurizable items, even when full?
+	always_show_pressure_durability_bar = true
+
+[armor]
+	#Use fancy models for Pneumatic Armor (currently unimplemented)
+	fancy_armor_models = true
+	#Intensity of the FOV modification when using Pneumatic Leggings speed boost: 0.0 for no FOV modification, higher values zoom out more.  Note: non-zero values may cause FOV clashes with other mods.
+	#Range: 0.0 ~ 1.0
+	leggings_fov_factor = 0.0
+	#Enable the Pneumatic Helmet Coordinate Tracker pathfinder
+	path_enabled = false
+	#True if the Pneumatic Helmet Coordinate Tracker pathfinder should draw lines, false for tiles.
+	wire_path = false
+	#Maximum time, as a percentage of the tick, that the Pneumatic Helmet Block Tracker may take when active and scanning blocks. Larger values mean more rapid update of block information, but potentially greater impact on client FPS.
+	#Range: 1 ~ 100
+	block_tracker_max_time_per_tick = 10
+	#Should the Pneumatic Helmet Coordinate Tracker pathfinder path be visible through blocks?
+	xray_enabled = false
+	#How frequently should the Pneumatic Helmet Coordinate Tracker pathfinder path be recalculated?
+	#Allowed Values: SLOW, NORMAL, FAST
+	path_update_setting = "NORMAL"
+
+[sound]
+	#Volume level of the Jet Boots in normal flight mode
+	#Range: 0.0 ~ 2.0
+	jetboots_volume = 1.0
+	#Volume level of the hand-held Minigun
+	#Range: 0.0 ~ 2.0
+	minigun_volume_held = 0.75
+	#Volume level of the Sentry Turret's Minigun
+	#Range: 0.0 ~ 2.0
+	minigun_volume_sentry_turret = 1.0
+	#Volume level of the Elevator *clunk* while starting/stopping
+	#Range: 0.0 ~ 2.0
+	elevator_volume_start_stop = 1.0
+	#Volume level of drone-mounted Miniguns
+	#Range: 0.0 ~ 2.0
+	minigun_volume_drone = 1.0
+	#Volume level of the Jet Boots when in Builder Mode
+	#Range: 0.0 ~ 2.0
+	jetboots_volume_builder_mode = 0.3
+	#Volume level of air leaks from unconnected tubes/machines. Beware: turning this off could lead to undetected leaks wasting pressure forever!
+	#Range: 0.0 ~ 2.0
+	air_leak_volume = 1.0
+	#Volume level of the Elevator while running
+	#Range: 0.0 ~ 2.0
+	elevator_volume_running = 1.0
+
