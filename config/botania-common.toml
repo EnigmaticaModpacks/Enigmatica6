@@ -1,0 +1,70 @@
+#Set this to false to disable the animation when an item is charging on top of a mana pool
+chargeAnimation = true
+#Turn this off ONLY IF you're on an extremely large world with an exaggerated count of Mana Spreaders/Mana Pools and are experiencing TPS lag. This toggles whether flowers are strict with their checking for connecting to pools/spreaders or just check whenever possible.
+flowerBindingForceCheck = true
+#Set to false to disable the ability for the Hand of Ender to pickpocket other players' ender chests
+enderPickpocket = true
+#Set this to false to disable the Mana Enchanter. Since some people find it OP or something. This only disables the entry and creation. Old ones that are already in the world will stay.
+manaEnchanter = true
+#Set this to false to disable the Mana Fluxfield (generates FE from mana). This only disables the entry and creation. Old ones that are already in the world will stay.
+manaFluxfield = true
+#Set this to false to disable the Relic System. This only disables the entries, drops and achievements. Old ones that are already in the world will stay.
+relics = true
+#Set this to true to invert the Ring of Magnetization's controls (from shift to stop to shift to work)
+invertMagnetRing = false
+
+[blockBreakingParticles]
+	#Set this to false to remove the block breaking particles from the Terra Shatterer, as there can be a good amount in higher levels.
+	toolEnabled = true
+	#Set this to false to remove the block breaking particles from the flowers and other items in the mod.
+	enabled = true
+
+[manaSpreaders]
+	#Set this to true to disable the mana spreader shooting sound
+	silent = false
+	#How many ticks into the future will mana spreaders attempt to predict where mana bursts go? Setting this lower will improve spreader performance, but will cause them to not fire at targets that are too far away.
+	#Range: > 1
+	traceTime = 400
+
+[harvestLevels]
+	#The harvest level of the Mana Lens: Weight. 3 is diamond level. Defaults to 2 (iron level)
+	#Range: > 0
+	weightLens = 2
+	#The harvest level of the Mana Lens: Bore. 3 is diamond level. Defaults to 3
+	#Range: > 0
+	boreLens = 3
+
+[worldgen]
+
+	[worldgen.mushroom]
+		#The quantity of Botania mushrooms to generate underground, in the world, defaults to 40, the lower the number the less patches generate.
+		#Range: > 0
+		quantity = 40
+
+	[worldgen.flower]
+		#The inverse chance for a Botania flower patch to be generated, defaults to 16. The higher this value is the less patches will exist and the more flower each will have.
+		#Range: > 0
+		patchChance = 16
+		#The chance for a Botania flower generated in a patch to be a tall flower. 0.1 is 10%, 1 is 100%. Defaults to 0.05
+		#Range: 0.0 ~ 1.0
+		tallChance = 0.05
+		#The quantity of Botania flower patches to generate in the world, defaults to 2, the lower the number the less patches generate.
+		#Range: > 0
+		quantity = 2
+		#The density of each Botania flower patch generated, defaults to 2, the lower the number, the less each patch will have.
+		#Range: > 0
+		density = 2
+		#The size of each Botania flower patch, defaults to 6. The larger this is the farther the each patch can spread
+		#Range: > 0
+		patchSize = 6
+
+[gardenOfGlass]
+	#The multiplier for island distances for multiplayer Garden of Glass worlds.
+	#Islands are placed on a grid with 256 blocks between points, with the spawn island always being placed on 256, 256.
+	#By default, the scale is 8, putting each island on points separated by 2048 blocks.
+	#Values below 4 (1024 block spacing) are not recommended due to Nether portal collisions.
+	#Range: 1 ~ 512
+	islandScaleMultiplier = 8
+	#Set this to false to disable spawning with a Lexica Botania in Garden of Glass worlds, if you are modifying the modpack's progression to not start with Botania.
+	spawnWithLexicon = true
+
