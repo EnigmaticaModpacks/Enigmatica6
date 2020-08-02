@@ -1,0 +1,32 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "immersiveengineering:seed"
+    },
+    "categories": [
+        "dirt",
+        "farmland"
+    ],
+    "growthTicks": 400,
+    "display": {
+        "block": "immersiveengineering:hemp"
+    },
+    "results": [
+        {
+            "chance": 0.50,
+            "output": {
+                "item": "immersiveengineering:hemp_fiber"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.50,
+            "output": {
+                "item": "immersiveengineering:seed"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        }
+    ]
+}
