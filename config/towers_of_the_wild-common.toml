@@ -1,0 +1,15 @@
+
+[towers]
+	#A list of biomes where the towers will not spawn. Default: Oceans, Rivers, Beaches, Nether, End.
+	biomeBlackList = ["minecraft:ocean", "minecraft:deep_ocean", "minecraft:frozen_ocean", "minecraft:deep_frozen_ocean", "minecraft:cold_ocean", "minecraft:deep_cold_ocean", "minecraft:lukewarm_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:warm_ocean", "minecraft:deep_warm_ocean", "minecraft:river", "minecraft:frozen_river", "minecraft:beach", "minecraft:stone_shore", "minecraft:snowy_beach", "minecraft:nether", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "minecraft:the_void", "biomesoplenty:gravel_beach", "biomesoplenty:white_beach", "biomesoplenty:ashen_inferno", "biomesoplenty:undergarden", "biomesoplenty:visceral_heap"]
+	#If the Waytones mod is installed and this is set to true, towers will spawn with a waystone at the top. If the Waystone mod is not installed, this will have no effect. Default: true
+	waystonesCompat = true
+	#A list of mod ids. In each and every biome added by those mods, the towers will not spawn. Default : The Midnight.
+	allModBiomesBlackList = ["midnight"]
+	#The proportion of towers that will be derelict (in %). Default: 15
+	#Range: 0 ~ 100
+	derelictTowerProportion = 15
+	#How rarely the towers will spawn (low: common, high: rare). Default: 35
+	#Range: 10 ~ 1000
+	towerRarity = 60
+
