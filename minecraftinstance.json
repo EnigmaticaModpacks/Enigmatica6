@@ -5644,7 +5644,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 290659,
@@ -12838,6 +12838,85 @@
       "dateUpdated": "2019-08-02T06:13:41.217282Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 291936,
+      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
+      "installedFile": {
+        "id": 3021507,
+        "displayName": "findme-1.16.1-2.0.0.0.jar",
+        "fileName": "findme-1.16.1-2.0.0.0.jar",
+        "fileDate": "2020-08-02T13:11:34.793Z",
+        "fileLength": 18344,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3021/507/findme-1.16.1-2.0.0.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1173244414,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 4266062035,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1789828301,
+            "type": 0
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 149078902,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3273911401,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 4069986098,
+        "gameVersion": [
+          "1.16.1"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-06-24T12:41:11.823Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "findme-1.16.1-2.0.0.0.jar"
+      },
+      "dateInstalled": "2020-08-02T18:47:07.1315341Z",
+      "dateUpdated": "2020-08-02T18:47:07.1315341Z",
+      "dateLastUpdateAttempted": "2020-08-02T18:47:07.1315341Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
