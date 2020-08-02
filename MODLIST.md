@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.2.3 Modlist
+## Enigmatica 6 - 0.2.4 Modlist
 - Abnormals-Core-1.16.1-v2.0.0
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.0
@@ -18,6 +18,7 @@
 - bigbuckets-1.1.1
 - BiomesOPlenty-1.16.1-11.0.0.390-universal
 - Bookshelf-1.16.1-6.1.11
+- Botania-1.16-398
 - BotanyPots-1.16.1-3.0.4
 - Bountiful Baubles FORGE-1.16.1-0.0.1
 - Buzzier-Bees-1.16.1-2.0.0
@@ -41,6 +42,7 @@
 - culinaryconstruct-FORGE-1.16.1-3.0
 - curioofundying-FORGE-1.16.1-4.0
 - curios-FORGE-1.16.1-3.0
+- Curious Armor Stands-1.16.1-1.1.1
 - curiouselytra-FORGE-1.16.1-3.0
 - DangerousStoneCutter-1.16.1-1.4
 - dankstorage-3.7a
@@ -62,6 +64,8 @@
 - FastFurnace-1.16.1-4.0.0
 - FastLeafDecay-v23
 - FastWorkbench-1.16.1-4.1.1
+- findme-1.16.1-2.0.0.0
+- fishingreal-1.16.1-1.0.0
 - FpsReducer-mc1.16.1-1.17
 - ftb-ultimine-1.1.0.6
 - globalxp-1.16.1-v1.4.13
@@ -72,14 +76,14 @@
 - InventoryEssentials_1.16.1-2.0.0
 - invtweaks-1.16.1-1.0.5
 - ironchest-1.16.1-11.0.1
-- JAOPCA-1.16.1-3.3.0.2
+- JAOPCA-1.16.1-3.3.0.3
 - jei-1.16.1-7.0.0.6
 - JustEnoughResources-1.16.1-0.11.0.81
 - Kiwi-1.16.1-3.1.4
 - KleeSlabs_1.16.1-9.0.0
 - kubejs-2.7.2.53
 - LargeFluidTank-16.0.2
-- laserrelays-1.6
+- laserrelays-1.7
 - LetSleepingDogsLie-1.16.1-1.1.1
 - light-overlay-5.4.1
 - Lollipop-1.16.1-2.1.3
@@ -88,6 +92,7 @@
 - masonry-1.16.1-0.3.5
 - mcw-bridges-1.0.4-mc1.16.1
 - mcw-doors-1.0.0-mc1.16.1
+- mcws-roofs-1.16.1-v2.0.0
 - mcws-win-1.16.1-v1.0.2
 - Mekanism-1.16.1-10.0.3.426
 - MekanismGenerators-1.16.1-10.0.3.426
@@ -105,17 +110,20 @@
 - NetherPortalFix_1.16.1-7.0.0
 - nopotionshift_1.16.1-1.5.0
 - OldJavaWarning-1.16.1-4.0.1
+- OpenLoader-1.16.1-5.0.1
 - overloadedarmorbar-5.0.0
 - PackingTape-1.16.1-0.9.6
 - PackMenu-1.16.1-2.1.0
 - PassableFoliage-1.16.1-2.0.1
 - PassthroughSigns-1.16.1-2.3.5
 - Patchouli-1.16-39
+- pedestals-0.6
 - pitg-1.16.1-1.3.0
 - Placebo-1.16.1-4.0.1
+- pneumaticcraft-repressurized-1.16.1-2.0.0-4
 - Powah-1.16.1-2.1.3
 - PrettyBeaches_1.16.1-5.0.0
-- productivebees-1.16.1-0.1.15.2
+- productivebees-1.16.1-0.2.2
 - Quark-r2.2-256
 - QuarkOddities-1.15.2
 - rad-1.16-4.0.1
@@ -125,11 +133,13 @@
 - ReAuth-1.16-Forge-3.9.0
 - refinedstorage-1.9.2
 - refinedstorageaddons-0.7
+- ropebridge-1.16.1-2.0
 - rsgauges-1.16.1-1.2.4-b1
 - scaffoldingpower-1.16.1-1.2.1
 - ScalableCatsForce-2.13.2-build-2-with-library
 - serverconfigupdater-1.2
 - ServerTabInfo-1.16.1-1.2.7-alpha
+- SimpleDiscordRichPresence-1.16.1-1.3.2
 - simplefarming-1.16.1-1.3.1
 - simplybackpacks-1.16.1-1.4.6
 - simplylight-1.16.1-1.0.0
@@ -148,6 +158,7 @@
 - ToolStats-1.16.1-2.0.3
 - torchmaster-2.3.0-alpha
 - toughnessbar-6.0
+- towers_of_the_wild-1.16.1-1.2.1
 - tramplestopper-1.15.2-2.0.0.2-universal
 - trashcans-1.0.1-mc1.16
 - TrashSlot_1.16.1-12.0.1

@@ -4,23 +4,36 @@
 
 ## Enigmatica 6 v0.2.4
 
-_Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.3.txt)_
+_Using Forge-1.16.1-32.0.88_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.4.txt)_
 
 **Mod Additions**
 
-- 
+- **Botania**
+- Curious Armor Stands
+- FindMe
+- Fishing Real
+- **Macaw's Roofs**
+- Open Loader
+- **Pedestals**
+- **PneumaticCraft: Repressurized**
+- Rope Bridge
+- Simple Discord Rich Presence
+- Towers Of The Wild
 
 **Changes**
 
-- 
+- Immersive Engineering: Hemp Seeds can now be bought in the Market
+- Immersive Engineering: Botany Pots now accept Hemp
+- Rats: Disabled the Pied Piper spawning naturally
+- ProductiveBees: Output from Combs have been unified to fit the rest of the pack.
+- Unified Sulfur
 
 **Fixed Bugs**
 
 - Main Menu button linking to the wrong issue tracker
-
-**Mod Removals**
-
-- 
+- Gas duping using gas nodes from laser relays [\#44](https://github.com/NillerMedDild/Enigmatica6/issues/44)
+- Wood Floor recipes from planks/logs have amounts reversed [\#43](https://github.com/NillerMedDild/Enigmatica6/issues/43)
+- Stonecutter Dupes [\#35](https://github.com/NillerMedDild/Enigmatica6/issues/35)
 
 ## Enigmatica 6 v0.2.3
 

@@ -1,0 +1,49 @@
+=======================================
+Enigmatica6 0.2.3 --> Enigmatica6 0.2.4
+=======================================
+
+Added:
+- Botania
+- Curious Armor Stands
+- FindMe
+- Fishing Real
+- Macaw's Roofs
+- Open Loader
+- Pedestals
+- PneumaticCraft: Repressurized
+- Rope Bridge
+- Simple Discord Rich Presence
+- Towers Of The Wild
+
+Updated:
+	JAOPCA (JAOPCA-1.16.1-3.3.0.2.jar --> JAOPCA-1.16.1-3.3.0.3.jar):
+		JAOPCA-1.16.1-3.3.0.3.jar:
+			Added Crossroads compat
+			Allowed gems and crystals to have molten forms
+			Fixed JAOPCA's molten forms not showing up in JEI
+			Fixed compatibility with Forge 32.0.95+. Forge versions between 32.0.90 and 32.0.93 will crash
+
+	Laser Relays (laserrelays-1.6.jar --> laserrelays-1.7.jar):
+		laserrelays-1.7.jar:
+			Added wrench - used for configuring the nodes more precisely
+			Added Filter option - Items can now be filtered.
+			Added Slot limit - This limits the number of item slots to scan on the input source: capped at 9 for now.
+			Fixed gas node duplicating mek gas
+
+	Productive Bees (productivebees-1.16.1-0.1.15.2.jar --> productivebees-1.16.1-0.2.2.jar):
+		productivebees-1.16.1-0.2.2.jar:
+			* Added Hoarder bee. It will collect item on the ground and put them in their hive
+			* Added a 10 minute lifespan to solitary bees that can't find a nests to prevent bees gathering in unloaded chunks around the player.
+			* Wither bees will no longer take wither damage
+			* Fixed texture orientation for horizontal hives pointing in certain directions
+			* Advanced version of Buzzier Bees hives are again available
+
+		productivebees-1.16.1-0.2.1.jar:
+			Note: With this update you might have to break and re-place any existing hives
+			* Expansion boxes can now be placed next to a hive to make a horizontal hive
+			* Some bees now require other things for pollination. Gold Bees require something gold, Iron Bees require something made of iron and Glowing Bees needs glowing things.
+			* Added all wood chip variants to JEI
+			* Fixed a problem with ZomBees getting so angry when you hit them that MC crashed
+			* Fixed a crash with multi-threading on some servers
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
