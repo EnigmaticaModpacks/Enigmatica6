@@ -75,6 +75,7 @@ var materialsToUnify = [
 ];
 
 var modPriorities = [
+	'emandatusenigmatica',
     'minecraft',
     'immersiveengineering',
     'create',
@@ -87,7 +88,9 @@ var modPriorities = [
     'industrialforegoing',
     'botania',
     'quark',
-    'pedestals'
+    'pedestals',
+	'appliedenergistics',  
+	'productivebees'
 ];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
