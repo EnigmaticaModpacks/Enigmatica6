@@ -1,0 +1,16 @@
+{
+    "name": "Bookmarks",
+    "icon": "minecraft:book",
+    "category": "patchouli:jei",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(l)JEI bookmarks$(reset) are a powerful tool you can use as a todo list or simply to keep track of what you’re working on. By hovering over an item in JEI and pressing $(l)$(k:jei.bookmark)$(reset) you’ll add that item to your list."
+        },
+        {
+            "type": "text",
+            "text": "$(l)Check the left side of your screen!$(reset) Your item is now pinned there and it will stay pinned until you press $(l)$(k:jei.bookmark)$(reset) on it again, to delete it from the list. Use the bookmarks to track down long recipe chains or to remind yourself what to work on next!"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Configuration",
+    "icon": "theoneprobe:probenote",
+    "category": "patchouli:theoneprobe",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)The One Probe$(reset) comes with different settings you can tweak using the $(l)/theoneprobe commands.$(br)-$(l)/theoneprobe config$(reset) (also accessible right clicking the probe item) can tweak the look of the overlay. Play around with different placements, styles and scales.$(br)"
+        },
+        {
+            "type": "text",
+            "text": "-$(l)/theoneprobe need$(reset) (also accessible right clicking the probe readme item) can enable or disable needing the probe item to show the overlay. This config is turned off by default, so the overlay is always visible, but you can set it so that you are required to hold the item to see it (and that’s also why the helmet forms of the item exist). Change it if you so wish!"
+        }
+    ]
+}

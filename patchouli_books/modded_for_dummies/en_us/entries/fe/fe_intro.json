@@ -1,0 +1,16 @@
+{
+    "name": "Power!",
+    "icon": "minecraft:redstone_block",
+    "category": "patchouli:fe",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(l)$(#ff0000)Forge Energy$(reset) (FE for short) or $(l)$(#ff0000)Redstone Flux$(reset) (RF for short) is the $(l)universal measure of power for modded minecraft$(reset). You might’ve seen many generators and machines from all sorts of tech mods working on the RF power system or some variation of it."
+        },
+        {
+            "type": "text",
+            "text": "Fear not: mods sometimes use different names (like mekanism’s Joules or Immersive Engineering’s IE), but $(l)they’re all actually running FE under the hood$(reset) with only a few exceptions (Industrialcraft 2’s EU used to be the classic example, but the mod hasn’t been ported beyond 1.12 just yet). Nowadays, pretty much all mods rely on FE/RF, so you can count on that being the universal power system for the pack."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "name": "Just Enough Resources",
+    "icon": "minecraft:iron_ore",
+    "category": "patchouli:jei",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)Just Enough Resources$(reset) (JER for short) is an addon for JEI. It adds a few different tabs to JEI to show you where to get stuff that doesn’t have a “normal” crafting recipe (i.e. mob drops, dungeon loot etc.). "
+        },
+        {
+            "type": "text",
+            "text": "Note that currently a missing feature in JER makes it so that the graph showing the different levels at which ores spawn $(l)is inaccurate for all ores$(reset), so you shouldn’t rely on that."
+        }
+    ]
+}
