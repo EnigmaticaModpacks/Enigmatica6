@@ -1,0 +1,15 @@
+{
+    "name": "Crafting Tweaks",
+    "icon": "minecraft:crafting_table",
+    "category": "patchouli:tweaks",
+    "pages": [
+        {
+            "type": "text",
+            "text": "You might have noticed some extra buttons when opening up a crafting table. $(#ffa500)$(l)Crafting Tweaks$(reset) offers some handy features to navigate the crafting grid: the $(l)top button$(reset) rotates the recipe in your grid, the $(l)middle button$(reset) balances all items evenly across the recipe and the $(l)bottom one$(reset) clears the grid back into your inventory. "
+        },
+        {
+            "type": "text",
+            "text": "Additionally, holding shift on the balance button you can also quickly spread a single stack over the entire grid, right-clicking the result slot will craft an entire stack, and there's a keybind for compressing stacks of items to its 9x9 or 4x4 recipe through a key press."
+        }
+    ]
+}

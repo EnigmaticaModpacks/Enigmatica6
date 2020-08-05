@@ -1,0 +1,16 @@
+{
+    "name": "Navigating JEI",
+    "icon": "minecraft:map",
+    "category": "patchouli:jei",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "text",
+            "text": "With all the items this modpack includes knowing how to search for stuff is crucial. JEI has a few options that can come in handy while looking for stuff, in the form of key symbols you can add to your search, by $(l)typing them before what you’re searching for $(reset)(i.e. @mekanism, %misc etc.):"
+        },
+        {
+            "type": "text",
+            "text": "-@ searches for all the items into a $(l)specific mod$(reset)$(br)-# searches for all the items with a $(l)certain tooltip$(reset)$(br)-% searches for all the items in a $(l)certain creative tab$(reset)$(br)-$ searches for all the items with a $(l)certain tag$(reset)$(br)Also note that $(l)multiple terms work together, adding $(l)- in front of a word blacklists that term $(reset)from the search."
+        }
+    ]
+}

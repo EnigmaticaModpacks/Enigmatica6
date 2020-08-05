@@ -1,0 +1,16 @@
+{
+    "name": "Xaero's Minimap",
+    "icon": "minecraft:compass",
+    "category": "patchouli:xaeros",
+    "sortnum": 0,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(#ffa500)$(l)Xaero’s Minimap$(reset) is present at all times in the corner of your screen. It’s highly customizable, so I encourage you to $(l)open up its options$(reset) with $(k:gui.xaero_minimap_settings) and tweak it to your likings."
+        },
+        {
+            "type": "text",
+            "text": "Among others some of its best features are the ability to display slime chunks (which can be activated with the $(k:gui.xaero_toggle_slime) key), the entity radar tracking all the nearby entities and many more. The map also shows your $(l)$(l:patchouli:xaeros/xaeros_waypoints)waypoints$(/l)$(reset).            "
+        }
+    ]
+}

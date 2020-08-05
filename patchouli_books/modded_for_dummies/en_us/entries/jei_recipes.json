@@ -1,0 +1,16 @@
+{
+    "name": "Recipes",
+    "icon": "minecraft:crafting_table",
+    "category": "patchouli:jei",
+    "sortnum": 1,
+    "pages": [
+        {
+            "type": "text",
+            "text": "JEI’s main purpose is to $(l)show you all the recipes you’ll have to craft on your journey$(reset), pretty much like an improved version of Vanilla’s Recipe Book. Simply clicking on an item will show you all the different ways you can craft it, with the different tabs at the top showing all the different blocks/methods you can use."
+        },
+        {
+            "type": "text",
+            "text": "Alternatively, you can mouse over an item and use the keybind $(l)$(k:jei.showRecipe)$(reset). Pressing $(l)$(k:jei.showUses)$(reset) will show you all the uses for the item instead (i.e. pressing it on oak logs will show that you can use it to craft planks and wood, among other things). Lastly, $(l)clicking on the title$(reset) (i.e. “Crafting”, “Smelting” etc.) will show all the available recipes for that action."
+        }
+    ]
+}

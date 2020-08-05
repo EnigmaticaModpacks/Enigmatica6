@@ -1,0 +1,16 @@
+{
+    "name": "Waypoints",
+    "icon": "minecraft:allium",
+    "category": "patchouli:xaeros",
+    "sortnum": 2,
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(l)Waypoints$(reset) are a helpful tool you can use on your adventure to keep track of important places you’ve been to and/or plan on returning to soon. You can $(l)quickly place a waypoint where you’re standing$(reset) using the keybind $(gui.xaero_new_waypoint) and, after choosing its name and other settings it will appear on the map."
+        },
+        {
+            "type": "text",
+            "text": "After that, if you ever want to edit/delete a waypoint, disable one so that you still keep it but don’t see it all the times or simply check your waypoints list you can use the keybind $(gui.xaero_waypoints) to $(l)open the waypoint manager$(reset). Get used to placing waypoints in key places around the world, they’ll be very helpful to navigate your world. You can even teleport to them, if you’re an OP!"
+        }
+    ]
+}
