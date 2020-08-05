@@ -134,9 +134,11 @@ function appliedenergistics2_ore_ingot_crushing(event, material) {
 }
 
 function occultism_ore_ingot_crushing(event, material) {
-    let blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'quartz', 'coal'];
-    if (blacklistedMaterials.includes(material)) {
-        return;
+    var blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'quartz', 'coal'];
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] === material) {
+            return;
+        }
     }
 
     var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
