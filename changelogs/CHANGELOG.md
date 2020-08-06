@@ -4,7 +4,16 @@ _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
-- 
+- Applied Energistics 2  [\#59](https://github.com/NillerMedDild/Enigmatica6/issues/59)
+- Aquaculture 2 [\#77](https://github.com/NillerMedDild/Enigmatica6/issues/77)
+- Click Machine [\#79](https://github.com/NillerMedDild/Enigmatica6/issues/79)
+- Dark Utilities [\#64](https://github.com/NillerMedDild/Enigmatica6/issues/64)
+- Enigmatica Companion Mod [\#86](https://github.com/NillerMedDild/Enigmatica6/issues/86)
+- Extended Lights [\#70](https://github.com/NillerMedDild/Enigmatica6/issues/70)
+- FTB Backups [\#72](https://github.com/NillerMedDild/Enigmatica6/issues/72)
+- Mining Gadgets [\#65](https://github.com/NillerMedDild/Enigmatica6/issues/65)
+- QuantumStorage [\#68](https://github.com/NillerMedDild/Enigmatica6/issues/68)
+- Valhelsia Structures [\#66](https://github.com/NillerMedDild/Enigmatica6/issues/66)
 
 **Mod Removals**
 
@@ -13,15 +22,19 @@ _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Changes**
 
+- It should now be possible to use Optifine in E6 out of the box
 - New recipes: Stripped Wood (Axe + Log)
 - New recipes: Farmland (Hoe + Dirt)
   - Useful for Botany Pots
 - New recipes: Enchanted Soil (Grass + Overgrowth Seed) 
   - Useful for Botany Pots
+- QuantumStorage Expensive Recipes [\#75](https://github.com/NillerMedDild/Enigmatica6/issues/75)
 
 **Bug Fixes**
 
-- 
+-  Biomes O' Plenty causes some old worlds to be unable to load [\#46](https://github.com/NillerMedDild/Enigmatica6/issues/46)
+-  [IE] Crash when loading world [\#60](https://github.com/NillerMedDild/Enigmatica6/issues/60)
+-  \[Optifine\] Crash when opening video settings [\#84](https://github.com/NillerMedDild/Enigmatica6/issues/84)
 
 ## Enigmatica 6 v0.2.4
 
