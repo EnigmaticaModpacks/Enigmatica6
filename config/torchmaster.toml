@@ -23,6 +23,8 @@
 	#The target minimum light level to place lights for
 	#Range: 0 ~ 15
 	feralFlareMinLightLevel = 10
+	#Configures the spawn check to be more aggressive, effectivly overriding the CheckSpawn results of other mods
+	aggressiveSpawnChecks = false
 	#Show additional information in the tooltip of certain items and blocks
 	beginnerTooltips = true
 	#Use this setting to override the internal lists for entity blocking
