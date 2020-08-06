@@ -24,6 +24,9 @@
 	centrifugePoweredProcessingTime = 100
 	#A priority list of Mod IDs that results of comb output should stem from, aka which mod you want the copper to come from. Eg: mekanism,silents_mekanism,immersiveengineering
 	preferredOres = ["emandatusenigmatica", "minecraft", "immersiveengineering", "mekanism", "jaopca", "kubejs", "appliedenergistics", "industrialforegoing", "quark", "productivebees"]
+	#How many bees can fit in a bee bom. Default is 10
+	#Range: 1 ~ 50
+	numberOfBeesPerBomb = 10
 
 ["Bee attributes"]
 	#Number of ticks between effects on nearby entities
