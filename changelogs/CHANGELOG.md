@@ -1,6 +1,27 @@
+## Enigmatica 6 v0.2.5
 
+_Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.5.txt)_
 
+**Mod Additions**
 
+- 
+
+**Mod Removals**
+
+- Rats (Removed due to a bug. Will most likely not return)
+- Tip the Scales (To allow users to use **Optifine**)
+
+**Changes**
+
+- New recipes: Stripped Wood (Axe + Log)
+- New recipes: Farmland (Hoe + Dirt)
+  - Useful for Botany Pots
+- New recipes: Enchanted Soil (Grass + Overgrowth Seed) 
+  - Useful for Botany Pots
+
+**Bug Fixes**
+
+- 
 
 ## Enigmatica 6 v0.2.4
 
@@ -8,32 +29,32 @@ _Using Forge-1.16.1-32.0.88_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Mod Additions**
 
-- **Botania**
-- Curious Armor Stands
-- FindMe
-- Fishing Real
-- **Macaw's Roofs**
-- Open Loader
-- **Pedestals**
-- **PneumaticCraft: Repressurized**
-- Rope Bridge
-- Simple Discord Rich Presence
-- Towers Of The Wild
+-   **Botania**
+-   Curious Armor Stands
+-   FindMe
+-   Fishing Real
+-   **Macaw's Roofs**
+-   Open Loader
+-   **Pedestals**
+-   **PneumaticCraft: Repressurized**
+-   Rope Bridge
+-   Simple Discord Rich Presence
+-   Towers Of The Wild
 
 **Changes**
 
-- Immersive Engineering: Hemp Seeds can now be bought in the Market
-- Immersive Engineering: Botany Pots now accept Hemp
-- Rats: Disabled the Pied Piper spawning naturally
-- ProductiveBees: Output from Combs have been unified to fit the rest of the pack.
-- Unified Sulfur
+-   Immersive Engineering: Hemp Seeds can now be bought in the Market
+-   Immersive Engineering: Botany Pots now accept Hemp
+-   Rats: Disabled the Pied Piper spawning naturally
+-   ProductiveBees: Output from Combs have been unified to fit the rest of the pack.
+-   Unified Sulfur
 
 **Fixed Bugs**
 
-- Main Menu button linking to the wrong issue tracker
-- Gas duping using gas nodes from laser relays [\#44](https://github.com/NillerMedDild/Enigmatica6/issues/44)
-- Wood Floor recipes from planks/logs have amounts reversed [\#43](https://github.com/NillerMedDild/Enigmatica6/issues/43)
-- Stonecutter Dupes [\#35](https://github.com/NillerMedDild/Enigmatica6/issues/35)
+-   Main Menu button linking to the wrong issue tracker
+-   Gas duping using gas nodes from laser relays [\#44](https://github.com/NillerMedDild/Enigmatica6/issues/44)
+-   Wood Floor recipes from planks/logs have amounts reversed [\#43](https://github.com/NillerMedDild/Enigmatica6/issues/43)
+-   Stonecutter Dupes [\#35](https://github.com/NillerMedDild/Enigmatica6/issues/35)
 
 ## Enigmatica 6 v0.2.3
 
@@ -41,17 +62,17 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Changes**
 
-- Rats: Wild Rats no longer raid crops
-- Rats: No longer dig holes
+-   Rats: Wild Rats no longer raid crops
+-   Rats: No longer dig holes
 
 **Fixed Bugs**
 
-- 0.2.2 - Server blows up on player login - Related to Crafting Station/Extra Tags [\#42](https://github.com/NillerMedDild/Enigmatica6/issues/42)
+-   0.2.2 - Server blows up on player login - Related to Crafting Station/Extra Tags [\#42](https://github.com/NillerMedDild/Enigmatica6/issues/42)
 
 **Mod Removals**
 
-- CraftingStation (Temporarily, due to a bug)
-- Extra Tags (Temporarily, due to a bug)
+-   CraftingStation (Temporarily, due to a bug)
+-   Extra Tags (Temporarily, due to a bug)
 
 ## Enigmatica 6 v0.2.2
 
@@ -61,22 +82,22 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Mod Additions**
 
-- Back Tools
-- Crafting Station
-- Drawers Tooltip
-- Extra Tags
-- **Macaw's Windows**
-- Neat
-- iChunUtil
+-   Back Tools
+-   Crafting Station
+-   Drawers Tooltip
+-   Extra Tags
+-   **Macaw's Windows**
+-   Neat
+-   iChunUtil
 
 **Fixed Bugs**
 
-- Crashes [\#39](https://github.com/NillerMedDild/Enigmatica6/issues/39)
-- Cant smelt dusts [\#38](https://github.com/NillerMedDild/Enigmatica6/issues/38)
+-   Crashes [\#39](https://github.com/NillerMedDild/Enigmatica6/issues/39)
+-   Cant smelt dusts [\#38](https://github.com/NillerMedDild/Enigmatica6/issues/38)
 
 **Mod Removals**
 
-- Pedestals (Temporarily, because it cannot have crushing recipes modified at the moment)
+-   Pedestals (Temporarily, because it cannot have crushing recipes modified at the moment)
 
 ## Enigmatica 6 v0.2.1
 
@@ -86,42 +107,42 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Mod additions**
 
-- Armor Toughness Bar
-- AutoRegLib
-- BountifulBaubles
-- Environmental Creepers
-- JAOPCA
-- Quark
-- Quark Oddities
-- Scaffolding behavior
-- Simple Farming
-- Simply Backpacks
-- Stronger Snowballs
-- The Endergetic Expansion
-- Torchmaster
-- ☃ Snow! Real Magic!
-- 🥝 Kiwi
+-   Armor Toughness Bar
+-   AutoRegLib
+-   BountifulBaubles
+-   Environmental Creepers
+-   JAOPCA
+-   Quark
+-   Quark Oddities
+-   Scaffolding behavior
+-   Simple Farming
+-   Simply Backpacks
+-   Stronger Snowballs
+-   The Endergetic Expansion
+-   Torchmaster
+-   ☃ Snow! Real Magic!
+-   🥝 Kiwi
 
 **Changes**
 
-- BiomesOPlenty: Set default world type for servers to biomesoplenty
-- Torchmaster: Harder recipes
-- Torchmaster: Decreased radius of Mega Torch to 32 blocks
-- Powah: Almost removed dry ice from worldgen (very low chance)
-- Prevent Creepers from destroying items [\#8](https://github.com/NillerMedDild/Enigmatica6/issues/8)
+-   BiomesOPlenty: Set default world type for servers to biomesoplenty
+-   Torchmaster: Harder recipes
+-   Torchmaster: Decreased radius of Mega Torch to 32 blocks
+-   Powah: Almost removed dry ice from worldgen (very low chance)
+-   Prevent Creepers from destroying items [\#8](https://github.com/NillerMedDild/Enigmatica6/issues/8)
 
 **Fixed Bugs**
 
-- Iron Bars Conflicting Recipes [\#31](https://github.com/NillerMedDild/Enigmatica6/issues/31)
-- 2 recipes for each powah reactor [\#27](https://github.com/NillerMedDild/Enigmatica6/issues/27)
-- TrueShot enchant locking up server.  [\#24](https://github.com/NillerMedDild/Enigmatica6/issues/24)
-- Ingots not unified, ore deposits missing uses [\#18](https://github.com/NillerMedDild/Enigmatica6/issues/18)
-- Lighting issue [\#14](https://github.com/NillerMedDild/Enigmatica6/issues/14)
+-   Iron Bars Conflicting Recipes [\#31](https://github.com/NillerMedDild/Enigmatica6/issues/31)
+-   2 recipes for each powah reactor [\#27](https://github.com/NillerMedDild/Enigmatica6/issues/27)
+-   TrueShot enchant locking up server. [\#24](https://github.com/NillerMedDild/Enigmatica6/issues/24)
+-   Ingots not unified, ore deposits missing uses [\#18](https://github.com/NillerMedDild/Enigmatica6/issues/18)
+-   Lighting issue [\#14](https://github.com/NillerMedDild/Enigmatica6/issues/14)
 
 **Mod removals**
 
-- GraveStones (Replaced by Quark Oddities grave)
-- Reap (Replaced by Simple Farming's/Quark's right-click harvest)
+-   GraveStones (Replaced by Quark Oddities grave)
+-   Reap (Replaced by Simple Farming's/Quark's right-click harvest)
 
 ## Enigmatica 6 v0.2.0
 
@@ -131,30 +152,30 @@ _Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Mod additions**
 
-- Actually Useful Stonecutter
-- **Artifacts**
-- Bad Wither No Cookie - Reloaded
-- Better Advancements
-- **Biomes O' Plenty**
-- Buzzier Bees
-- Cauldron Recipes
-- Clumps
-- Enchantment Descriptions
-- **FTB Ultimine**
-- **Immersive Engineering**
-- **Industrial Foregoing**
-- Just Enough Resources (JER)
-- Masonry
-- Morpheus
-- OldJavaWarning
-- Ranged Pumps
-- ReAuth
-- Simply Light
-- Titanium
+-   Actually Useful Stonecutter
+-   **Artifacts**
+-   Bad Wither No Cookie - Reloaded
+-   Better Advancements
+-   **Biomes O' Plenty**
+-   Buzzier Bees
+-   Cauldron Recipes
+-   Clumps
+-   Enchantment Descriptions
+-   **FTB Ultimine**
+-   **Immersive Engineering**
+-   **Industrial Foregoing**
+-   Just Enough Resources (JER)
+-   Masonry
+-   Morpheus
+-   OldJavaWarning
+-   Ranged Pumps
+-   ReAuth
+-   Simply Light
+-   Titanium
 
 **Changes**
 
-- Re-did Default keybindings \(Sorting was disabled\) [\#7](https://github.com/NillerMedDild/Enigmatica6/issues/7)
+-   Re-did Default keybindings \(Sorting was disabled\) [\#7](https://github.com/NillerMedDild/Enigmatica6/issues/7)
 
 **Mod removals**
 
