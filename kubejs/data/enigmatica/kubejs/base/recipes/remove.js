@@ -16,7 +16,10 @@ events.listen('recipes', function (event) {
 
         'minecraft:sticky_piston',
 
-        'morevanillalib:obsidian_shard'
+        'morevanillalib:obsidian_shard',
+
+        'quantumstorage:tank',
+        'quantumstorage:qsu'
     ];
 
     var idRemovals = [
