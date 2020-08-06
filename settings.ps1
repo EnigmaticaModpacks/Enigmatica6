@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat")
+$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "Xaeros_Minimap", "XaerosWorldMap")
 
 	
 # =====================================================================//
@@ -18,10 +18,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.2.4"
+$MODPACK_VERSION = "0.2.5"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.2.3"
+$LAST_MODPACK_VERSION = "0.2.4"
 
 $FORGE_VERSION = 32.0.106
 
