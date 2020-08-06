@@ -1,0 +1,47 @@
+
+["basic options"]
+	#Enable fish mob spawning? Weight & biomes can be modified in the Aquaculture fish loot table
+	"Enable fish spawning?" = true
+	"Should fish be added as compostables for the composter/worm farm? (Based on fish, or weight if enabled)" = true
+	"Enable debug mode? (Enables additional logging)" = false
+	"Should Aquaculture fish be able to be used to breed cats & ocelots?" = true
+	"Enable weight for fish? Useful for fishing competitions" = false
+
+["neptunium options"]
+	#Should Neptune's bounty be added as fishing loot? Very rare.
+	"Add Neptune's Bounty as loot?" = true
+	"Enable recipes for Neptunium items?" = true
+	"Enable recipes for Neptunium armor?" = true
+
+["spawn options"]
+
+	["spawn options".starshell_turtle]
+		include = ["TWILIGHT"]
+		#Range: 0 ~ 64
+		min = 1
+		#Range: 0 ~ 64
+		max = 2
+		#Range: 0 ~ 100
+		weight = 5
+		exclude = [""]
+
+	["spawn options".arrau_turtle]
+		include = ["JUNGLE"]
+		#Range: 0 ~ 64
+		min = 1
+		#Range: 0 ~ 64
+		max = 2
+		#Range: 0 ~ 100
+		weight = 4
+		exclude = [""]
+
+	["spawn options".box_turtle]
+		include = ["SWAMP"]
+		#Range: 0 ~ 64
+		min = 1
+		#Range: 0 ~ 64
+		max = 2
+		#Range: 0 ~ 100
+		weight = 7
+		exclude = [""]
+
