@@ -1,0 +1,39 @@
+
+#Everything to do with world generation
+[world]
+	#Whether world generation is enabled as a whole
+	enabled = true
+
+	#Generation settings for copper ore
+	[world.copper]
+		#A list of fully qualified biome names, for example "minecraft:river"
+		filter = []
+		#If true, the filter will act as a whitelist, otherwise, blacklist
+		isWhitelist = false
+		#Whether or not this ore is generated
+		enabled = true
+
+	#Generation settings for aluminum ore
+	[world.aluminum]
+		#A list of fully qualified biome names, for example "minecraft:river"
+		filter = []
+		#If true, the filter will act as a whitelist, otherwise, blacklist
+		isWhitelist = false
+		#Whether or not this ore is generated
+		enabled = true
+
+#All the settings to do with the drawbridge
+[drawbridge]
+	#The base delay between each block place/destroy
+	#Range: 0.0 ~ 2.147483647E9
+	delay = 0.5
+	#The distance that the base drawbridge can extend
+	#Range: 1 ~ 64
+	extendLength = 16
+	#How much each distance upgrade increases the max distance by
+	#Range: 0 ~ 64
+	extendUpgradeValue = 16
+	#The amount by which each speed upgrade decreases the delay
+	#Range: 0.0 ~ 2.147483647E9
+	speedUpgradeValue = 0.1
+
