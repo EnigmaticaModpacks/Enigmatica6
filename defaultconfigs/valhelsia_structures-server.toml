@@ -1,0 +1,99 @@
+
+[structures]
+
+	[structures.tower_ruin]
+		#Tower Ruin Distance (in chunks) [default: 25]
+		#Range: 1 ~ 500
+		distance = 25
+		#Tower Ruin Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Tower Ruins?
+		generate = true
+		#Tower Ruin Spawn Chance [default: 0.8]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.8
+
+	[structures.castle]
+		#Castle Distance (in chunks) [default: 40]
+		#Range: 1 ~ 500
+		distance = 40
+		#Castle Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Castles?
+		generate = true
+		#Castle Spawn Chance [default: 0.5]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.5
+
+	[structures.player_house]
+		#Desert House Distance (in chunks) [default: 30]
+		#Range: 1 ~ 500
+		distance = 30
+		#Desert House Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Player Houses?
+		generate = true
+		#Player House Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+
+	[structures.forge]
+		#Forge Distance (in chunks) [default: 30]
+		#Range: 1 ~ 500
+		distance = 30
+		#Forge Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Forges?
+		generate = true
+		#Forge Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+
+	[structures.small_dungeon]
+		#Small Dungeon Distance (in chunks) [default: 30]
+		#Range: 1 ~ 500
+		distance = 30
+		#Small Dungeon Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Small Dungeons?
+		generate = true
+		#Small Dungeon Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+
+	[structures.desert_house]
+		#Desert House Distance (in chunks) [default: 30]
+		#Range: 1 ~ 500
+		distance = 30
+		#Desert House Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Desert Houses?
+		generate = true
+		#Desert House Spawn Chance [default: 0.7]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.7
+
+	[structures.global]
+		#How flat does terrain need to be for surface structures to spawn? (in blocks) [default: 3]
+		#Range: 0 ~ 64
+		flatness_delta = 3
+
+	[structures.castle_ruin]
+		#Castle Ruin Distance (in chunks) [default: 35]
+		#Range: 1 ~ 500
+		distance = 35
+		#Castle Ruin Minimum Separation (in chunks) [default: 8]
+		#Range: 1 ~ 500
+		separation = 8
+		#Generate Castle Ruins?
+		generate = true
+		#Castle Ruin Spawn Chance [default: 0.6]
+		#Range: 0.0 ~ 1.0
+		spawn_chance = 0.6
+
