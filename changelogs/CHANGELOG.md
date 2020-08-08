@@ -8,7 +8,17 @@ _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Removals**
 
-- 
+- Dwarf Coal (Design choice)
+- Engineers Tools (A bit on the OP side)
+- LargeFluidTank (Content overlap)
+- Ma' Essentials (Slightly cheaty)
+- Metal Barrels (Content overlap)
+- MixinBootstrap (Mixins is now included in Forge)
+- Packing Tape (Content overlap)
+- Ranged Pumps (Content overlap)
+- ScalableCatsForce (Dependency for LargeFluidTank)
+- Useful Backpacks (Content overlap)
+- U Team Core (Dependency for Useful BackPacks)
 
 **Changes**
 
