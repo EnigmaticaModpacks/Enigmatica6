@@ -268,3 +268,11 @@
 	#Range: 0.0 ~ 1.7976931348623157E308
 	item_transport_cost = 1.0
 
+[Jackhammer]
+	#Base Jackhammer air usage per block broken (speed upgrades increase this)
+	#Range: > 0
+	base_air_usage = 50
+	#Max veinmining range (distance from mined block) for Vein Miner Plus mode
+	#Range: 1 ~ 32
+	max_vein_miner_range = 10
+
