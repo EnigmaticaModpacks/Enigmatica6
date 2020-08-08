@@ -12,6 +12,7 @@ function enigmatica_ore_deposit_processing(event, material) {
     var oreDeposit = oreDepositTag.first.id;
 
     var nuggetTag = ingredient.of('#forge:nuggets/' + material);
+    var nugget = getPreferredItemInTag(nuggetTag).id;
 
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
@@ -24,8 +25,8 @@ function enigmatica_ore_deposit_processing(event, material) {
         event.recipes.minecraft.smelting(dustTag, oreDepositTag).xp(1.0);
         event.recipes.minecraft.blasting(dustTag, oreDepositTag).xp(1.0);
     } else {
-        event.recipes.minecraft.smelting(nuggetTag, oreDepositTag).xp(1.0);
-        event.recipes.minecraft.blasting(nuggetTag, oreDepositTag).xp(1.0);
+        event.recipes.minecraft.smelting(nugget, oreDepositTag).xp(1.0);
+        event.recipes.minecraft.blasting(nugget, oreDepositTag).xp(1.0);
     }
 
     event.recipes.mekanism.enriching({
@@ -64,7 +65,7 @@ function enigmatica_ore_deposit_processing(event, material) {
     event.recipes.immersiveengineering.crusher({
         secondaries: [],
         result: {
-            tag: 'forge:dusts/' + material
+            item: dust
         },
         input: {
             tag: 'forge:ore_deposits/' + material
