@@ -49,7 +49,6 @@ var typesToUnify = [
 var materialsToUnify = [
     'iron',
     'gold',
-    'neptunium',
     'copper',
     'silver',
     'zinc',
@@ -64,6 +63,8 @@ var materialsToUnify = [
     'electrum',
     'steel',
 
+    'certus_quartz',
+    'charged_certus_quartz',
     'diamond',
     'lapis',
     'emerald',
@@ -75,22 +76,22 @@ var materialsToUnify = [
 ];
 
 var modPriorities = [
-	'emandatusenigmatica',
+    'emendatusenigmatica',
     'minecraft',
     'immersiveengineering',
-    'create',
+    // 'create',
     'mekanism',
     'jaopca',
     'kubejs',
     'pneumaticcraft',
-    'occultism',
+    // 'occultism',
     'tmechworks',
     'industrialforegoing',
     'botania',
     'quark',
     'pedestals',
-	'appliedenergistics',  
-	'productivebees'
+    'appliedenergistics',
+    'productivebees'
 ];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
