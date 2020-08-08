@@ -1,3 +1,23 @@
+## Enigmatica 6 v0.2.6
+
+_Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.6.txt)_
+
+**Mod Additions**
+
+- Readded Tip The Scales (It will now disable itself if Optifine is detected)
+
+**Mod Removals**
+
+- 
+
+**Changes**
+
+- 
+
+**Bug Fixes**
+
+-  
+
 ## Enigmatica 6 v0.2.5
 
 _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.5.txt)_
