@@ -12,7 +12,14 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:dust_coke')
         .add('immersiveengineering:dust_hop_graphite')
         .add('immersiveengineering:dust_saltpeter');
-		
-	event.get('forge:dusts').remove('minecraft:prismarine_shard');
+
+    event
+        .get('appliedenergistics2:dusts/quartz')
+        .add('emendatusenigmatica:dust_certus_quartz')
+        .add('emendatusenigmatica:dust_quartz');
+    event.get('appliedenergistics2:dusts/certus_quartz').add('emendatusenigmatica:dust_certus_quartz');
+    event.get('appliedenergistics2:dusts/nether_quartz').add('emendatusenigmatica:dust_quartz');
+
+    event.get('forge:dusts').remove('minecraft:prismarine_shard');
     event.get('forge:dusts/prismarine').remove('minecraft:prismarine_shard');
 });
