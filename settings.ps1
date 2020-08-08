@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "Xaeros_Minimap", "XaerosWorldMap")
+$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "Xaeros_Minimap", "XaerosWorldMap", "ToastControl", "PackMenu")
 
 	
 # =====================================================================//
@@ -18,10 +18,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.2.5"
+$MODPACK_VERSION = "0.3.0"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.2.4"
+$LAST_MODPACK_VERSION = "0.2.5"
 
 $FORGE_VERSION = 32.0.106
 
@@ -65,6 +65,7 @@ $CONTENTS_TO_ZIP = @(
 	"openloader", 
 	"kubejs",
 	"packmenu",
+	"patchouli_books",
 	"server-start-license.md", 
 	"server-start-readme.md", 
 	"server-start.bat", 
