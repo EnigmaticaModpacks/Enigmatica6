@@ -58,7 +58,7 @@
 #Configurations related to recipes.
 [recipes]
 	#List of recipes that should not be added.
-	blacklist = []
+	blacklist = ["jaopca:mekanism.material_to_dust.prismarine"]
 
 #Configurations related to loot tables.
 [lootTables]
@@ -85,5 +85,5 @@
 #Configurations related to item selection.
 [itemSelection]
 	#List of mods that are preferred when selecting items in recipes.
-	preferredMods = ["emendatusenigmatica", "minecraft", "immersiveengineering", "mekanism", "jaopca", "kubejs", "appliedenergistics", "industrialforegoing", "quark", "productivebees"]
+	preferredMods = ["emendatusenigmatica", "minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
 
