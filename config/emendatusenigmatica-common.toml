@@ -1,0 +1,321 @@
+
+#World Gen - Ore Generation Configuration
+["Coal Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 24
+	#Maximum Y-Level [Default: 128]
+	#Range: 0 ~ 256
+	Maximum = 128
+	#Configure the ore Vein Size [Default: 17]
+	#Range: 0 ~ 64
+	Size = 17
+	#Ores count per Chunk [Default: 20]
+	#Range: 0 ~ 64
+	Count = 18
+
+["Iron Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 15
+	#Maximum Y-Level [Default: 64]
+	#Range: 0 ~ 256
+	Maximum = 45
+	#Configure the ore Vein Size [Default: 9]
+	#Range: 0 ~ 64
+	Size = 9
+	#Ores count per Chunk [Default: 20]
+	#Range: 0 ~ 64
+	Count = 16
+
+["Gold Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 10
+	#Maximum Y-Level [Default: 32]
+	#Range: 0 ~ 256
+	Maximum = 25
+	#Configure the ore Vein Size [Default: 9]
+	#Range: 0 ~ 64
+	Size = 7
+	#Ores count per Chunk [Default: 2]
+	#Range: 0 ~ 64
+	Count = 6
+
+["Diamond Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 7
+	#Maximum Y-Level [Default: 16]
+	#Range: 0 ~ 256
+	Maximum = 14
+	#Configure the ore Vein Size [Default: 8]
+	#Range: 0 ~ 64
+	Size = 6
+	#Ores count per Chunk [Default: 1]
+	#Range: 0 ~ 64
+	Count = 3
+
+["Emerald Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 64]
+	#Range: 0 ~ 128
+	Minimum = 100
+	#Maximum Y-Level [Default: 128]
+	#Range: 0 ~ 256
+	Maximum = 256
+	#Configure the ore Vein Size [Default: 4]
+	#Range: 0 ~ 64
+	Size = 7
+	#Ores count per Chunk [Default: 1]
+	#Range: 0 ~ 64
+	Count = 3
+
+["Lapis Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 16
+	#Maximum Y-Level [Default: 16]
+	#Range: 0 ~ 256
+	Maximum = 32
+	#Configure the ore Vein Size [Default: 7]
+	#Range: 0 ~ 64
+	Size = 7
+	#Ores count per Chunk [Default: 2]
+	#Range: 0 ~ 64
+	Count = 4
+
+["Redstone Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 5
+	#Maximum Y-Level [Default: 16]
+	#Range: 0 ~ 256
+	Maximum = 15
+	#Configure the ore Vein Size [Default: 8]
+	#Range: 0 ~ 64
+	Size = 15
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 7
+
+["Copper Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 45]
+	#Range: 0 ~ 128
+	Minimum = 45
+	#Maximum Y-Level [Default: 60]
+	#Range: 0 ~ 256
+	Maximum = 60
+	#Configure the ore Vein Size [Default: 7]
+	#Range: 0 ~ 64
+	Size = 10
+	#Ores count per Chunk [Default: 20]
+	#Range: 0 ~ 64
+	Count = 13
+
+["Aluminum Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 50]
+	#Range: 0 ~ 128
+	Minimum = 45
+	#Maximum Y-Level [Default: 70]
+	#Range: 0 ~ 256
+	Maximum = 65
+	#Configure the ore Vein Size [Default: 3]
+	#Range: 0 ~ 64
+	Size = 5
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 7
+
+["Silver Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 30]
+	#Range: 0 ~ 128
+	Minimum = 30
+	#Maximum Y-Level [Default: 38]
+	#Range: 0 ~ 256
+	Maximum = 38
+	#Configure the ore Vein Size [Default: 4]
+	#Range: 0 ~ 64
+	Size = 4
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 8
+
+["Lead Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 32]
+	#Range: 0 ~ 128
+	Minimum = 32
+	#Maximum Y-Level [Default: 40]
+	#Range: 0 ~ 256
+	Maximum = 40
+	#Configure the ore Vein Size [Default: 3]
+	#Range: 0 ~ 64
+	Size = 3
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 7
+
+["Nickel Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 25]
+	#Range: 0 ~ 128
+	Minimum = 25
+	#Maximum Y-Level [Default: 40]
+	#Range: 0 ~ 256
+	Maximum = 40
+	#Configure the ore Vein Size [Default: 3]
+	#Range: 0 ~ 64
+	Size = 3
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 4
+
+["Uranium Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 5]
+	#Range: 0 ~ 128
+	Minimum = 5
+	#Maximum Y-Level [Default: 20]
+	#Range: 0 ~ 256
+	Maximum = 20
+	#Configure the ore Vein Size [Default: 3]
+	#Range: 0 ~ 64
+	Size = 3
+	#Ores count per Chunk [Default: 4]
+	#Range: 0 ~ 64
+	Count = 4
+
+["Osmium Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 20]
+	#Range: 0 ~ 128
+	Minimum = 20
+	#Maximum Y-Level [Default: 45]
+	#Range: 0 ~ 256
+	Maximum = 45
+	#Configure the ore Vein Size [Default: 6]
+	#Range: 0 ~ 64
+	Size = 6
+	#Ores count per Chunk [Default: 20]
+	#Range: 0 ~ 64
+	Count = 14
+
+["Tin Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 40]
+	#Range: 0 ~ 128
+	Minimum = 40
+	#Maximum Y-Level [Default: 55]
+	#Range: 0 ~ 256
+	Maximum = 55
+	#Configure the ore Vein Size [Default: 6]
+	#Range: 0 ~ 64
+	Size = 6
+	#Ores count per Chunk [Default: 20]
+	#Range: 0 ~ 64
+	Count = 14
+
+["Zinc Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = false
+	#Minimum Y-Level [Default: 35]
+	#Range: 0 ~ 128
+	Minimum = 35
+	#Maximum Y-Level [Default: 50]
+	#Range: 0 ~ 256
+	Maximum = 50
+	#Configure the ore Vein Size [Default: 4]
+	#Range: 0 ~ 64
+	Size = 4
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 8
+
+["Certus Quartz Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 20
+	#Maximum Y-Level [Default: 64]
+	#Range: 0 ~ 256
+	Maximum = 60
+	#Configure the ore Vein Size [Default: 8]
+	#Range: 0 ~ 64
+	Size = 6
+	#Ores count per Chunk [Default: 16]
+	#Range: 0 ~ 64
+	Count = 16
+
+["Charged Certus Quartz Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 0
+	#Maximum Y-Level [Default: 32]
+	#Range: 0 ~ 256
+	Maximum = 32
+	#Configure the ore Vein Size [Default: 4]
+	#Range: 0 ~ 64
+	Size = 2
+	#Ores count per Chunk [Default: 8]
+	#Range: 0 ~ 64
+	Count = 9
+
+#World Gen - Ore Generation on Strata Stone Type
+["Vanilla Stone"]
+	Active = true
+
+["Vanilla Andesite"]
+	Active = true
+
+["Create Gabbro"]
+	Active = false
+
+["Create Limestone"]
+	Active = false
+
+["Create Scoria"]
+	Active = false
+
+["Create Weathered Limestone"]
+	Active = false
+
+["Quark Jasper"]
+	Active = true
+
+["Quark Limestone"]
+	Active = true
+
+["Quark Marble"]
+	Active = true
+
+["Quark Slate"]
+	Active = true
+
