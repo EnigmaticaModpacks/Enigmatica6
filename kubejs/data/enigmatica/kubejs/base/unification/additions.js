@@ -3,7 +3,7 @@ events.listen('recipes', function (event) {
     materialsToUnify.forEach(function (material) {
         enigmatica_ore_deposit_processing(event, material);
         //occultism_ore_ingot_crushing(event, material);
-        appliedenergistics2_ore_ingot_crushing(event, material);
+        appliedenergistics2_ore_ingot_gem_crushing(event, material);
     });
 });
 
@@ -86,7 +86,7 @@ function enigmatica_ore_deposit_processing(event, material) {
     // });
 }
 
-function appliedenergistics2_ore_ingot_crushing(event, material) {
+function appliedenergistics2_ore_ingot_gem_crushing(event, material) {
     var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
     var oreDeposit = getPreferredItemInTag(oreDepositTag).id;
 
@@ -95,6 +95,9 @@ function appliedenergistics2_ore_ingot_crushing(event, material) {
 
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
+
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
 
     if (oreDeposit === air || dust === air) {
         return;
@@ -124,6 +127,22 @@ function appliedenergistics2_ore_ingot_crushing(event, material) {
     event.recipes.appliedenergistics2.grinder({
         input: {
             tag: 'forge:ingots/' + material
+        },
+        result: {
+            primary: {
+                item: dust
+            }
+        },
+        turns: 4
+    });
+
+    if (gem === air) {
+        return;
+    }
+
+    event.recipes.appliedenergistics2.grinder({
+        input: {
+            tag: 'forge:gems/' + material
         },
         result: {
             primary: {

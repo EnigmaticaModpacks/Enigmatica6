@@ -71,6 +71,7 @@ var materialsToUnify = [
     'quartz',
     'coal',
     'ender',
+    'fluix',
 
     'redstone',
     'glowstone'
