@@ -60,4 +60,8 @@ events.listen('recipes', function (event) {
     });
 
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
+
+    event.replaceInput({}, 'appliedenergistics2:ender_dust', '#forge:dusts/ender');
+    event.replaceInput({}, 'appliedenergistics2:fluix_dust', '#forge:dusts/fluix');
+    event.replaceInput({}, 'appliedenergistics2:fluix_crystal', 'emendatusenigmatica:gem_fluix');
 });
