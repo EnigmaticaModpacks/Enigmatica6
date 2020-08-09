@@ -41,7 +41,12 @@ events.listen('recipes', function (event) {
             L: 'mekanism:ultimate_bin',
             C: '#forge:ingots/compressed_iron',
             B: '#forge:glass'
-        })
+        }),
+        shapedRecipe('clickmachine:auto_clicker', ['AAA', 'ABA', 'ACA'], {
+          A: 'minecraft:diorite',
+          B: 'minecraft:chorus_flower',
+          C: 'minecraft:redstone_block'
+      })
     ];
 
     recipes.forEach(function (recipe) {
