@@ -2,7 +2,7 @@
 #Everything to do with world generation
 [world]
 	#Whether world generation is enabled as a whole
-	enabled = true
+	enabled = false
 
 	#Generation settings for copper ore
 	[world.copper]
@@ -11,7 +11,7 @@
 		#If true, the filter will act as a whitelist, otherwise, blacklist
 		isWhitelist = false
 		#Whether or not this ore is generated
-		enabled = true
+		enabled = false
 
 	#Generation settings for aluminum ore
 	[world.aluminum]
@@ -20,7 +20,7 @@
 		#If true, the filter will act as a whitelist, otherwise, blacklist
 		isWhitelist = false
 		#Whether or not this ore is generated
-		enabled = true
+		enabled = false
 
 #All the settings to do with the drawbridge
 [drawbridge]
