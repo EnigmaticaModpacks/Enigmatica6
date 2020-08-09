@@ -70,6 +70,7 @@ var materialsToUnify = [
     'emerald',
     'quartz',
     'coal',
+    'ender',
 
     'redstone',
     'glowstone'
