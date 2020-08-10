@@ -3,3 +3,11 @@
 	#The material blacklist of this module.
 	materialBlacklist = []
 
+[recipes]
+	#The materials that should not have crushing recipes added.
+	toDustMaterialBlacklist = []
+	#The materials that should not have enriching recipes added.
+	toCrystalMaterialBlacklist = []
+	#The materials that should not have combining recipes added.
+	toOreMaterialBlacklist = ["*"]
+
