@@ -21,7 +21,7 @@
 	Active = true
 	#Minimum Y-Level [Default: 0]
 	#Range: 0 ~ 128
-	Minimum = 15
+	Minimum = 9
 	#Maximum Y-Level [Default: 64]
 	#Range: 0 ~ 256
 	Maximum = 45
@@ -101,10 +101,10 @@
 	Active = true
 	#Minimum Y-Level [Default: 0]
 	#Range: 0 ~ 128
-	Minimum = 5
+	Minimum = 8
 	#Maximum Y-Level [Default: 16]
 	#Range: 0 ~ 256
-	Maximum = 15
+	Maximum = 18
 	#Configure the ore Vein Size [Default: 8]
 	#Range: 0 ~ 64
 	Size = 15
@@ -142,7 +142,7 @@
 	Size = 5
 	#Ores count per Chunk [Default: 8]
 	#Range: 0 ~ 64
-	Count = 7
+	Count = 8
 
 ["Silver Ore"]
 	#Activate/Deactivate the World Gen [Default: true]
@@ -267,10 +267,10 @@
 	Maximum = 60
 	#Configure the ore Vein Size [Default: 8]
 	#Range: 0 ~ 64
-	Size = 6
+	Size = 8
 	#Ores count per Chunk [Default: 16]
 	#Range: 0 ~ 64
-	Count = 16
+	Count = 13
 
 ["Charged Certus Quartz Ore"]
 	#Activate/Deactivate the World Gen [Default: true]
@@ -283,10 +283,10 @@
 	Maximum = 32
 	#Configure the ore Vein Size [Default: 4]
 	#Range: 0 ~ 64
-	Size = 2
+	Size = 5
 	#Ores count per Chunk [Default: 8]
 	#Range: 0 ~ 64
-	Count = 9
+	Count = 3
 
 #World Gen - Ore Generation on Strata Stone Type
 ["Vanilla Stone"]
