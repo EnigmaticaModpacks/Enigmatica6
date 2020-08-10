@@ -8,20 +8,20 @@ events.listen('block.tags', function (event) {
 
     // Add IE Ores
 
-    var unusedOres = [
-        // 'create:copper_ore',
-        'mekanism:copper_ore',
-        'mekanism:lead_ore',
-        'mekanism:uranium_ore',
-        // 'occultism:copper_ore',
-        // 'occultism:silver_ore',
-        'tmechworks:aluminum_ore',
-        'tmechworks:copper_ore'
-    ];
+    // var unusedOres = [
+    //     // 'create:copper_ore',
+    //     'mekanism:copper_ore',
+    //     'mekanism:lead_ore',
+    //     'mekanism:uranium_ore',
+    //     // 'occultism:copper_ore',
+    //     // 'occultism:silver_ore',
+    //     'tmechworks:aluminum_ore',
+    //     'tmechworks:copper_ore'
+    // ];
 
-    event.get('forge:ores').remove(unusedOres);
-    event.get('forge:ores/certus_quartz').remove('appliedenergistics2:charged_quartz_ore');
-    event.get('forge:ores/copper').remove(['mekanism:copper_ore', 'tmechworks:copper_ore']);
-    // event.get('forge:ores/silver').remove('occultism:silver_ore');
-    event.get('forge:ores/aluminum').remove('tmechworks:aluminum_ore');
+    // event.get('forge:ores').remove(unusedOres);
+    // event.get('forge:ores/certus_quartz').remove('appliedenergistics2:charged_quartz_ore');
+    // event.get('forge:ores/copper').remove(['mekanism:copper_ore', 'tmechworks:copper_ore']);
+    // // event.get('forge:ores/silver').remove('occultism:silver_ore');
+    // event.get('forge:ores/aluminum').remove('tmechworks:aluminum_ore');
 });
