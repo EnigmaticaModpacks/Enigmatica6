@@ -32,15 +32,20 @@ events.listen('recipes', function (event) {
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         }),
-        shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_fluid_tank',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass_panes'
+        shapedRecipe('minecraft:tube_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:tube_coral_fan'
         }),
-        shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_bin',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass'
+        shapedRecipe('minecraft:brain_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:brain_coral_fan'
+        }),
+        shapedRecipe('minecraft:bubble_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:bubble_coral_fan'
+        }),
+        shapedRecipe('minecraft:fire_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:fire_coral_fan'
+        }),
+        shapedRecipe('minecraft:horn_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:horn_coral_fan'
         })
     ];
 
