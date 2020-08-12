@@ -2,14 +2,27 @@
 events.listen('recipes', function (event) {
     console.log('Starting material unification.');
     appliedenergistics2_gem_processing(event);
+    pedestals_dust_smelting(event);
+
     materialsToUnify.forEach(function (material) {
         console.log('Unifying ' + material + '...');
         enigmatica_ore_deposit_processing(event, material);
-        //occultism_ore_ingot_crushing(event, material);
         appliedenergistics2_ore_ingot_gem_crushing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
+        //occultism_ore_ingot_crushing(event, material);
     });
 });
+
+function pedestals_dust_smelting(event) {
+    var pedestal_dusts = ['pedestals:dustsilver', 'pedestals:dustaluminum', 'pedestals:dustnickel'];
+
+    pedestal_dusts.forEach(function (dust) {
+        var ingotTag = ingredient.of('#forge:ingots/' + dust.replace('pedestals:dust', ''));
+
+        event.recipes.minecraft.smelting(ingotTag, pedestal_dusts).xp(0.1);
+        event.recipes.minecraft.blasting(ingotTag, pedestal_dusts).xp(0.1);
+    });
+}
 
 function appliedenergistics2_gem_processing(event) {
     var certus_quartz = 'certus_quartz';
