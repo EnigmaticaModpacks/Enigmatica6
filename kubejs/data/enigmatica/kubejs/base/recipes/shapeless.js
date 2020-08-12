@@ -45,7 +45,11 @@ events.listen('recipes', function (event) {
             'minecraft:iron_bars'
         ]),
         shapelessRecipe('minecraft:wheat_seeds', ['minecraft:wheat']),
-        shapelessRecipe('quark:root', ['minecraft:vine', '#forge:dyes/brown'])
+        shapelessRecipe('quark:root', ['minecraft:vine', '#forge:dyes/brown']),
+        shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }), [
+            'minecraft:book',
+            '#forge:dyes/yellow'
+        ])
         // shapelessRecipe(
         //     {
         //         item: 'akashictome:tome',
