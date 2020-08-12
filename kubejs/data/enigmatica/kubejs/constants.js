@@ -61,8 +61,9 @@ var materialsToUnify = [
     'uranium',
     'bronze',
     'electrum',
+    'constantan',
     'steel',
-
+    'osmium',
     'certus_quartz',
     'charged_certus_quartz',
     'diamond',
@@ -70,8 +71,13 @@ var materialsToUnify = [
     'emerald',
     'quartz',
     'coal',
+    'charcoal',
+    'obsidian',
     'ender',
     'fluix',
+    'sulfur',
+    'saltpeter',
+    'fluorite',
 
     'redstone',
     'glowstone'
