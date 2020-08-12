@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "Xaeros_Minimap", "XaerosWorldMap", "ToastControl", "PackMenu")
+$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "xaeros_minimap", "xaerosworldmap", "toastcontrol", "packmenu", "servertabinfo")
 
 	
 # =====================================================================//

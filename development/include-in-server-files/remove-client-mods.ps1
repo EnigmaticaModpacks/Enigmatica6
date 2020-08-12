@@ -1,6 +1,6 @@
 param(
 	[PSObject]
-$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "Xaeros_Minimap", "XaerosWorldMap", "ToastControl", "PackMenu")
+$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "xaeros_minimap", "xaerosworldmap", "toastcontrol", "packmenu", "servertabinfo")
 )
 
 $ModFolder = "$PSScriptRoot/mods"
