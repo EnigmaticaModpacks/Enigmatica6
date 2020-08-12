@@ -1,0 +1,427 @@
+=======================================
+Enigmatica6 0.2.5 --> Enigmatica6 0.2.6
+=======================================
+
+Added:
+- Apotheosis
+- Emendatus Enigmatica
+- Enigmatica Companion Mod
+- Extreme sound muffler (Forge)
+- Game Stages
+- Mantle
+- Runelic
+- Spice of Life: Carrot Edition
+- Tinkers' Mechworks
+- TipTheScales
+
+Updated:
+	Abnormals Core (Abnormals-Core-1.16.1-v2.0.1 --> Abnormals-Core-1.16.1-v2.0.2):
+		Abnormals-Core-1.16.1-v2.0.2:
+			* Simplified Abnormals Boat Class
+			* Added Tree Utils
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.1-11.0.0.392 --> Biomes O' Plenty 1.16.1-11.0.0.393):
+		Biomes O' Plenty 1.16.1-11.0.0.393:
+			github:
+			* Update zh_cn.json (#1662)
+
+	Bookshelf (Bookshelf-1.16.1-6.2.15.jar --> Bookshelf-1.16.1-6.3.20.jar):
+		Bookshelf-1.16.1-6.3.20.jar:
+			* Added a RenderType lookup helper. - Tyler Hancock
+			* Added a way to read the name of a render type. - Tyler Hancock
+			* Formatting changes. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.1-6.3.19.jar:
+			* Fixed BlockState serializer using string values for int and bool properties. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.1-6.3.18.jar:
+			* Fixed block state properties not being serialized. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.1-6.3.17.jar:
+			* Added serializer support for common Java types. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		Bookshelf-1.16.1-6.3.16.jar:
+			* Ticked up build number. - Tyler Hancock
+			* Formatting improvements. - Tyler Hancock
+			* Added support for serializing sets. - Tyler Hancock
+			* Added fluid output to hand command. - Tyler Hancock
+			* Fixed incorrect newline in /bookshelf hand holder output - Tyler Hancock
+			* Added tags command output. - Tyler Hancock
+			* Split JSON into INGREDIENT and STACKJSON - Tyler Hancock
+			* Made internal compound tag map visible. - Tyler Hancock
+			* Updated forge version. - Tyler Hancock
+			* Made nbt to json more reliable. - Tyler Hancock
+			* Added itemstack serializer. - Tyler Hancock
+			* Added an NBTSerializer. - Tyler Hancock
+			* Removed some redundant code from the Resource Location serializer. - Tyler Hancock
+			* Added ingredient serializer. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Botany Pots (BotanyPots-1.16.1-3.0.4.jar --> BotanyPots-1.16.1-3.0.6.jar):
+		BotanyPots-1.16.1-3.0.6.jar:
+			* Fix botany pot harvesting causing server crash oof. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+		BotanyPots-1.16.1-3.0.5.jar:
+			* Updated mcp mappings again. - Tyler Hancock
+			* Added a bunch of the supported mods directly to the dev env. - Tyler Hancock
+			* Added supported mods to the dev environment. - Tyler Hancock
+			* Fix modded blocks not rendering properly. #65 - Tyler Hancock
+			* Updated Forge MCP and Bookshelf. - Tyler Hancock
+			* Re-added CraftTweaker support. - Tyler Hancock
+			* Formatting. - Tyler Hancock
+			* Reimplement JEI support. - Tyler Hancock
+			* Changed how recipe types are registered. - Tyler Hancock
+			* Set the render type for botany pots in a more direct way. - Tyler Hancock
+			* Tweaked growth animation scale to start at 25% instead of 0%. - Tyler Hancock
+			* Refactor netcode for the break particle effect. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Caelus API (Forge) (caelus-FORGE-1.16.1-2.0-beta5.jar --> caelus-FORGE-1.16.1-2.0-beta7.jar):
+		caelus-FORGE-1.16.1-2.0-beta7.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[2.0-beta7] - 2020.08.07
+			Fixed
+			* Fixed dedicated server crash [#8](https://github.com/TheIllusiveC4/Caelus/issues/8)
+			[2.0-beta6] - 2020.08.06
+			Changed
+			* Updated to Forge 32.0.101+
+			* Javascript coremods replaced with mixins
+			[2.0-beta5] - 2020.07.14
+			Fixed
+			* Fixed NoClassDefFoundError
+			[2.0-beta4] - 2020.06.11
+			Added
+			* [API] Added RenderElytraEvent for rendering non-vanilla elytras, including enchantment glow and custom textures
+			Changed
+			* Ported to 1.16.1 Forge
+			Removed
+			* Removed elytra rendering IMC in favor of bringing back RenderElytraEvent
+			* Removed all advanced elytra controls (these will return in a separate mod TBA)
+
+		caelus-FORGE-1.16.1-2.0-beta6.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[2.0-beta6] - 2020.08.06
+			Changed
+			* Updated to Forge 32.0.101+
+			* Javascript coremods replaced with mixins
+			[2.0-beta5] - 2020.07.14
+			Fixed
+			* Fixed NoClassDefFoundError
+			[2.0-beta4] - 2020.06.11
+			Added
+			* [API] Added RenderElytraEvent for rendering non-vanilla elytras, including enchantment glow and custom textures
+			Changed
+			* Ported to 1.16.1 Forge
+			Removed
+			* Removed elytra rendering IMC in favor of bringing back RenderElytraEvent
+			* Removed all advanced elytra controls (these will return in a separate mod TBA)
+
+	Comforts (comforts-FORGE-1.16.1-3.0.jar --> comforts-FORGE-1.16.1-3.0.0.1.jar):
+		comforts-FORGE-1.16.1-3.0.0.1.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[3.0.0.1] - 2020.08.09
+			Changed
+			* Hammock recipes now use Forge's string tag for the string item ingredient
+			[3.0] - 2020.07.08
+			Changed
+			* Ported to 1.16.1 Forge
+
+	Dark Utilities (DarkUtilities-1.16.1-4.0.2.jar --> DarkUtilities-1.16.1-4.0.3.jar):
+		DarkUtilities-1.16.1-4.0.3.jar:
+			* Fixed gluttony charm not working. #222 - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtilities)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Decorative Blocks (decorative_blocks-7a.jar --> decorative_blocks-7c.jar):
+		decorative_blocks-7c.jar:
+			-BOP Compat
+			-Fixed several bugs
+
+	Ender Mail (EnderMail-1.16.1-1.1.2.jar --> EnderMail-1.16.1-1.1.3.jar):
+		EnderMail-1.16.1-1.1.3.jar:
+			---------------------------------------------
+			VERSION 1.1.3 - 1.16.1, 1.15.2, 1.12.2
+			---------------------------------------------
+			1.16.1:
+			* Added Chinese translations
+			* Fixed crash that occurred when moving a package controller between inventories during a delivery
+			---------------------------------------------
+			VERSION 1.1.2 - 1.16.1
+			---------------------------------------------
+			1.16.1:
+			* Fixed server crash upon startup when client-only initialization occurred on server
+			---------------------------------------------
+			VERSION 1.1.1 - 1.16.1, 1.15.2, 1.12.2
+			---------------------------------------------
+			1.16.1, 1.15.2, 1.12.2:
+			* Initial release for 1.16.1 (Forge 32.0.63)
+			* Changed package and packing tape recipes to use tags for some items
+			* Updated locker texture
+			---------------------------------------------
+			VERSION 1.1.0 - 1.15.2, 1.12.2
+			---------------------------------------------
+			1.15.2, 1.12.2:
+			* Added a Locker block with unique, configurable IDs that packages can be delivered to
+			* Added a field to the stamp GUI to specify a locker ID to deliver to
+			* Added config fields to specify the radius around lockers in which packages will be delivered to that locker
+			* Added a config field to enable logging of package deliveries in the console
+			1.15.2:
+			* Fixed a bug that caused Ender mailmen to despawn in peaceful mode
+			---------------------------------------------
+			VERSION 1.0.3 - 1.15.2, 1.14.4, 1.12.2
+			---------------------------------------------
+			1.15.2, 1.14.4:
+			* Fixed a bug that prevented packages from being opened on servers
+			1.12.2:
+			* Fixed a bug that caused stamped packages to appear unstamped on servers
+			---------------------------------------------
+			VERSION 1.0.2 - 1.15.2, 1.14.4, 1.12.2
+			---------------------------------------------
+			1.15.2, 1.14.4, 1.12.2:
+			* Fixed a crash that occurred infrequently when moving a package controller around the inventory while a delivery was in progress
+			---------------------------------------------
+			VERSION 1.0.1 - 1.12.2
+			---------------------------------------------
+			1.12.2:
+			* Fixed a bug in the stamp GUI that allowed negative coordinates to be entered only if all previous text fields were filled
+			---------------------------------------------
+			VERSION 1.0.0 - 1.15.2, 1.14.4, 1.12.2
+			---------------------------------------------
+			1.15.2:
+			* Initial release for 1.15.2 (Forge 31.1.37)
+			1.14.4:
+			* Initial release for 1.14.4 (Forge 28.2.3)
+			1.12.2:
+			* Initial release for 1.12.2 (Forge 14.23.5.2847)
+
+	FastFurnace (FastFurnace-1.16.1-4.1.0.jar --> FastFurnace-1.16.1-4.1.1.jar):
+		FastFurnace-1.16.1-4.1.1.jar:
+			Fixed unlit FF blocks giving off light.
+
+	Gauges and Switches (rsgauges-1.16.1-1.2.4-b2.jar --> rsgauges-1.16.1-1.2.4-b3.jar):
+		rsgauges-1.16.1-1.2.4-b3.jar:
+			* v1.2.4-b3  [F] Fixed Pressure Plates entity filter (issue #30, ty wieselkatze).
+			[F] Fixed Siren Placement bug (issue #31, thx mowmaster).
+			* v1.2.4-b2  [F] Door sensor look detection angle fixed.
+			[A] JEI integration added.
+			[F] Fixed startup issue by updating to Forge 32.0.97 (issue #28, ty wieselkatze).
+			* v1.2.4-b1  [M] Coloring of Sensitive Glass ported.
+			[F] Indicator power issue fixed.
+			* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+			[M] Modified global switch power placement default setting to strong.
+			* v1.2.4-a1  [A] Initial port.
+
+	Inventory Tweaks Renewed (invtweaks-1.16.1-1.0.5.jar --> invtweaks-1.16.1-1.0.6.jar):
+		invtweaks-1.16.1-1.0.6.jar:
+			Changelog:
+			*
+			* - Sorting issues and crashes on 1.16 thanks to StanleyMines
+			[https://github.com/reo-ar/InvTweaksRenewed/pull/13](https://github.com/reo-ar/InvTweaksRenewed/pull/13)
+			* Disallow sorting for Tfar's Dank Storage, fixes incompatibilities with it.
+
+	JAOPCA (JAOPCA-1.16.1-3.3.0.3.jar --> JAOPCA-1.16.1-3.3.0.4.jar):
+		JAOPCA-1.16.1-3.3.0.4.jar:
+			Added AE2 compat
+			Added config option to disable parts of compat modules
+			Added module access to CraftTweaker compat
+
+	Just Enough Items (JEI) (jei-1.16.1-7.0.1.9.jar --> jei-1.16.1-7.0.1.10.jar):
+		Placeholder:
+			No changelog available.
+
+	KubeJS (kubejs-2.7.2.56.jar --> kubejs-2.7.2.57.jar):
+		kubejs-2.7.2.57.jar:
+			* Added console.printClass(class, tree?), console.printObject(object, tree?), RecipeEventJS printTypes(), printExamples(type) - LatvianModder
+			* Added /kubejs wiki command - LatvianModder
+
+	PackMenu (PackMenu-1.16.1-2.1.0.jar --> PackMenu-1.16.1-2.1.2.jar):
+		PackMenu-1.16.1-2.1.2.jar:
+			PackMenu should no longer cause the red X in the server connection screen.
+
+	Pedestals (Pedestals - 0.6a --> Pedestals - 0.7a):
+		Pedestals - 0.7a:
+			Small Fix Update:
+			Quarry(s) "Blocks To Mine:" Chat Message was counting all fluid blocks in the area, which was not intended, this update fixes that so you don't think the quarry still has stuff to mine...
+			(Was,playing on a server, and it annoyed me, so I fixed it, OKAY!!!)
+
+		Pedestals - 0.7:
+			Completed Energy Transferring, Charging, and Discharging Update
+			(And Other Fixes and Improvements)
+			Added This Update:
+			* Energy Import Upgrade
+			* Energy Export Upgrade
+			* Energy Relay Upgrade
+			* Energy Tank Upgrade
+			* Energy Smelter Upgrade
+			* Energy Crusher Upgrade
+			* Energy Sawmill Upgrade
+			* Energy Quarry Upgrade
+			* Energy Quarry Blacklist Upgrade
+			Fixes, Improvements, and Nerfs:
+			* Improvement: Added Sounds to a lot of the upgrades to make it more immersive as they operate.
+			* Improvement: Reworded the Item Render on pedestals.
+			* Improvement: More Particles to display when pedestals have fuel/xp/energy in them.
+			* Fixed: Placer Pedestal had a de-sync issue where it still rendered an item when it wasn't in the pedestal.
+			* Improvement: Energy being transferred within the Pedestal Energy Network (PEN) has been maximized, only importing and exporting energy into/from the PEN is limited.
+			* Improvement: Faber on Direwolf20's discord did an upgrade model re-work, Thanks for that! :D
+			* Improvement: Energy upgrades now have a red boarder around them, helping to see them easier in JEI and stuff.
+			* Improvement: Milker Upgrade, Now has a Blue Boarder Around it showing its part of the "Fluid" Type of pedestal upgrades.
+			* Fixed: An issue where multiple entities within the work area of the Fan Upgrade would cause it to no longer move any of the entities
+			* Improvement: Void Upgrade now "Voids" Energy when connected to the PEN
+			* Improvement: Quarry Upgrades when clicked with the Upgrade Tool now tell you how many blocks there are remaining to mine.
+			* Fixed: Issue where the anvil upgrade wouldn't consume the proper amount of diamonds when over combining.
+			* Improvement: enchanter upgrade is now aligned with how the vanilla enchanter works (the xp level your enchanting at is needed in the upgrade in order to enchant, particles are displayed above it when this requirement is met)
+			* Improvement: Added additional entity filter types to the Fan, Attacker, and Diffuser. Flying and Mob entity types, this should take care of being able to target phantoms/bats now.
+			Details on New Features:
+			NOTE: Pedestal Energy Network (PEN)
+			Energy Import Upgrade:
+			* Dropping redstone on a pedestal upgraded with this will add 2500 energy to the pedestal, Blocks of redstone can be used as well if the upgrades capacity buffer is large enough to hold 22500 energy.
+			* This Upgrade when placed on an energy source block (generator or energy storage block) will draw energy out of it as a fixed rate 'Importing' it into the PEN, the maximum transfer is 20krf/t.
+			* You can also insert items that store energy to draw energy out of them, they will be transferred out of the pedestal to the next linked pedestal after they are empty of all their energy.
+			Energy Export Upgrade:
+			* The opposite of the Importer, Placing this on a block that accepts energy (Machine or storage block) will insert 'Extract' energy from the PEN putting it into the 'below' block.
+			* You can also insert an item that needs charged with energy, this pedestal will charge it to full, when full it'll transfer it to the next linked pedestal.
+			Energy Relay Upgrade:
+			* Relays energy within the PEN
+			Energy Tank Upgrade:
+			* Basically a Relay, but it stores a large amount of energy within the PEN, the maximum storage is 2 billion energy.
+			Energy Smelter Upgrade:
+			* Just like the Normal Smelter Upgrade, except you need to connect it to the PEN as it'll consume energy and not require solid fuel to be used.
+			Energy Crusher Upgrade:
+			* Just like the Normal Crusher Upgrade, except you need to connect it to the PEN as it'll consume energy and not require solid fuel to be used.
+			Energy Sawmill Upgrade:
+			* Just like the Normal Sawmill Upgrade, except you need to connect it to the PEN as it'll consume energy and not require solid fuel to be used.
+			Energy Quarry Upgrade:
+			* Just like the Normal Quarry Upgrade, except you need to connect it to the PEN as it'll consume energy and not require solid fuel to be used.
+			Energy Quarry Blacklist Upgrade:
+			* Just like the Normal Quarry Blacklist Upgrade, except you need to connect it to the PEN as it'll consume energy and not require solid fuel to be used.
+			As always, if you need help with the mod, the discord invite is in the mod listing on the home screen in game. The channel to chat in is #pedestals
+			(Built with Forge version: 1.16.1 - 32.0.107)
+
+		Pedestals - 0.6b:
+			Energy Conversion Update
+			(And Other Improvements and Fixes)
+			THIS BUILD HASNT BEEN TESTED YET as its the pre 0.7 release.
+			This Build adds energy versions of all the pedestal machine upgrades.
+			This build also added a lot of other minor improvements and tweaks to things.
+			You can check out the "Things to check when testing" here: [https://trello.com/b/FIKNZs12/mod-pedestals]() to see what all i messed with
+			A full changelog for all fixes will be out in the 0.7 release. Till then, Enjoy Testing/Playing with it!
+
+	Placebo (Placebo-1.16.1-4.1.0.jar --> Placebo-1.16.1-4.1.3.jar):
+		Placebo-1.16.1-4.1.3.jar:
+			Fix issues with KubeJS
+
+		Placebo-1.16.1-4.1.2.jar:
+			Changed the Placebo Tag Ingredient to be serialized to a vanilla ingredient across the network as tags are not available early enough on the client.
+
+		Placebo-1.16.1-4.1.1.jar:
+			Fix tag ingredients crashing on initialization.
+
+	PneumaticCraft: Repressurized (pneumaticcraft-repressurized-1.16.1-2.0.0-4.jar --> pneumaticcraft-repressurized-1.16.1-2.0.1-7.jar):
+		pneumaticcraft-repressurized-1.16.1-2.0.1-7.jar:
+			2.0.1-7 (8 Aug 2020)
+			[](https://github.com/TeamPneumatic/pnc-repressurized/blob/1.16/Changelog.md#new)New
+			* Added a Pneumatic Jackhammer!
+			* - Powerful and customisable multi-tool which can efficiently break any block
+			* - Multiple digging modes, selectable via GUI; better modes require better a Drill Bit to be attached
+			* - Includes two vein miner modes: ores & logs only, and all blocks (requires the top-end Netherite Drill Bit)
+			* - Upgradable with Speed Upgrades and Volume Upgrades: top speed is extremely fast, but extremely pressure-hungry
+			* - Can also take a Fortune or Silk Touch enchanted book (swappable on the fly; no enchanting table needed)
+			* - Documented more in the Patchouli manual (in the "Tools" section)
+			* Added a Renewables system!
+			* - Make Biodiesel via a multi-step process requiring the production of Yeast Solution, Ethanol and Vegetable Oil
+			* - Biodiesel is equivalent to Diesel in fuel quality, and can also be used to make Lubricant and Plastic
+			* - Some useful by-products & foods are also added:
+			*  - Bandages
+			*  - A way to get double the Speed Upgrades per bucket of Lubricant
+			*  - Sourdough Bread, Chips, Cod & Chips - all good-quality foods
+			* - All documented in the Patchouli manual in a new "Renewables" section
+			* Added a new Fluid Mixer machine which can mix two fluids into a new fluid and/or item
+			* - Used by default for making Biodiesel
+			* - Can also mix Water & Lava to make Obsidian
+			* - More recipes can be added via datapacks
+			[](https://github.com/TeamPneumatic/pnc-repressurized/blob/1.16/Changelog.md#updates)Updates
+			* Kerosene is now much more efficient in the Kerosene Lamp than other fuels
+			[](https://github.com/TeamPneumatic/pnc-repressurized/blob/1.16/Changelog.md#fixes)Fixes
+			* Fixed buggy drone right-click behaviour (ported forward from 1.5.2 version)
+			* Progwidget Item Filter GUI: don't gray out the "Match NBT" checkbox when the filter item has no NBT data
+			* - Just because it has no NBT data doesn't mean actual instances of the item can't...
+			* Fixed (worked around) a problem where drones would refuse to pathfind to the space above "tall" blocks
+			* - "Tall" blocks being fences, walls, gates...
+			* Fixed drones ignoring installed Inventory Upgrades
+			* Fixed buggy Heat Frame cooling behaviour (would void some fluid containers such as Mekanism tanks)
+
+	Server Tab Info (ServerTabInfo-1.16.1-1.2.7-alpha.jar --> ServerTabInfo-1.16.1-1.3.0.jar):
+		ServerTabInfo-1.16.1-1.3.0.jar:
+			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
+
+	Simply Backpacks (simplybackpacks-1.16.1-1.4.6.jar --> simplybackpacks-1.16.1-1.4.8.jar):
+		simplybackpacks-1.16.1-1.4.8.jar:
+			Fixed UI Spacing.
+
+		simplybackpacks-1.16.1-1.4.7.jar:
+			Updated forge to 32.0.106
+			Added License Metadata
+
+	Simply Light (simplylight-1.16.1-1.0.1.jar --> simplylight-1.16.1-1.0.2.jar):
+		simplylight-1.16.1-1.0.2.jar:
+			Added License Metadata.
+			Updated to forge 32.0.106
+
+	Titanium (titanium-1.16.1-3.0.3.jar --> titanium-1.16.1-3.0.4.jar):
+		titanium-1.16.1-3.0.4.jar:
+			[https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md)
+
+	Toast Control (ToastControl-1.16.1-4.1.0.jar --> ToastControl-1.16.1-4.1.1.jar):
+		ToastControl-1.16.1-4.1.1.jar:
+			Should no longer cause the red X in the server menu
+
+Removed:
+- Dwarf Coal
+- Engineer's Tools
+- Large Fluid Tank
+- Ma Essentials
+- MixinBootstrap
+- Packing Tape
+- Ranged Pumps
+- Scalable Cat's Force
+- U Team Core
+- Useful Backpacks
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
