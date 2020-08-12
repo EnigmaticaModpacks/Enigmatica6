@@ -4,8 +4,6 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 
 
-This will most likely be the last update for 1.16.1 - See you on 1.16.2!
-
 **Major Changes**
 
 - Ore processing outputs have been changed. Nearly everything ore/ingot/dust/nugget related should now output items from our own mod, Emendatus Enigmatica. 
@@ -14,6 +12,26 @@ This will most likely be the last update for 1.16.1 - See you on 1.16.2!
 **Mod Additions**
 
 -   Readded Tip The Scales (It will now disable itself if Optifine is detected)
+-   **Apotheosis**
+- **Emendatus Enigmatica**
+- Enigmatica Companion Mod
+- Extreme sound muffler (Forge)
+- Game Stages
+- Mantle
+- Runelic
+- Spice of Life: Carrot Edition
+- Tinkers' Mechworks
+
+**Changes**
+
+- Integrate Modded for Dummies [\#89](https://github.com/NillerMedDild/Enigmatica6/issues/89)
+- Renewable Coral Blocks [\#88](https://github.com/NillerMedDild/Enigmatica6/issues/88)
+
+**Bug Fixes**
+
+- Weird bounding box around BotanyPots crops [\#93](https://github.com/NillerMedDild/Enigmatica6/issues/93)
+- 0.2.5 farmland isn't craftable [\#92](https://github.com/NillerMedDild/Enigmatica6/issues/92)
+- Furnace provides light despite being unpowered [\#36](https://github.com/NillerMedDild/Enigmatica6/issues/36)
 
 **Mod Removals**
 
@@ -28,14 +46,6 @@ This will most likely be the last update for 1.16.1 - See you on 1.16.2!
 -   ScalableCatsForce (Dependency for LargeFluidTank)
 -   Useful Backpacks (Content overlap)
 -   U Team Core (Dependency for Useful BackPacks)
-
-**Changes**
-
--
-
-**Bug Fixes**
-
--
 
 ## Enigmatica 6 v0.2.5
 
