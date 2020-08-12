@@ -1,32 +1,41 @@
 ## Enigmatica 6 v0.2.6
 
-_Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.6.txt)_
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.6.txt)_
+
+
+
+This will most likely be the last update for 1.16.1 - See you on 1.16.2!
+
+**Major Changes**
+
+- Ore processing outputs have been changed. Nearly everything ore/ingot/dust/nugget related should now output items from our own mod, Emendatus Enigmatica. 
+  - This means a lot of autocrafting will break, unfortunately. We felt it was needed to combat the issues with unification.
 
 **Mod Additions**
 
-- Readded Tip The Scales (It will now disable itself if Optifine is detected)
+-   Readded Tip The Scales (It will now disable itself if Optifine is detected)
 
 **Mod Removals**
 
-- Dwarf Coal (Design choice)
-- Engineers Tools (A bit on the OP side)
-- LargeFluidTank (Content overlap)
-- Ma' Essentials (Slightly cheaty)
-- Metal Barrels (Content overlap)
-- MixinBootstrap (Mixins is now included in Forge)
-- Packing Tape (Content overlap)
-- Ranged Pumps (Content overlap)
-- ScalableCatsForce (Dependency for LargeFluidTank)
-- Useful Backpacks (Content overlap)
-- U Team Core (Dependency for Useful BackPacks)
+-   Dwarf Coal (Design choice)
+-   Engineers Tools (A bit on the OP side)
+-   LargeFluidTank (Content overlap)
+-   Ma' Essentials (Slightly cheaty)
+-   Metal Barrels (Content overlap)
+-   MixinBootstrap (Mixins is now included in Forge)
+-   Packing Tape (Content overlap)
+-   Ranged Pumps (Content overlap)
+-   ScalableCatsForce (Dependency for LargeFluidTank)
+-   Useful Backpacks (Content overlap)
+-   U Team Core (Dependency for Useful BackPacks)
 
 **Changes**
 
-- 
+-
 
 **Bug Fixes**
 
--  
+-
 
 ## Enigmatica 6 v0.2.5
 
@@ -34,37 +43,37 @@ _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
-- Applied Energistics 2  [\#59](https://github.com/NillerMedDild/Enigmatica6/issues/59)
-- Aquaculture 2 [\#77](https://github.com/NillerMedDild/Enigmatica6/issues/77)
-- Click Machine [\#79](https://github.com/NillerMedDild/Enigmatica6/issues/79)
-- Dark Utilities [\#64](https://github.com/NillerMedDild/Enigmatica6/issues/64)
-- Enigmatica Companion Mod [\#86](https://github.com/NillerMedDild/Enigmatica6/issues/86)
-- Extended Lights [\#70](https://github.com/NillerMedDild/Enigmatica6/issues/70)
-- FTB Backups [\#72](https://github.com/NillerMedDild/Enigmatica6/issues/72)
-- Mining Gadgets [\#65](https://github.com/NillerMedDild/Enigmatica6/issues/65)
-- QuantumStorage [\#68](https://github.com/NillerMedDild/Enigmatica6/issues/68)
-- Valhelsia Structures [\#66](https://github.com/NillerMedDild/Enigmatica6/issues/66)
+-   Applied Energistics 2 [\#59](https://github.com/NillerMedDild/Enigmatica6/issues/59)
+-   Aquaculture 2 [\#77](https://github.com/NillerMedDild/Enigmatica6/issues/77)
+-   Click Machine [\#79](https://github.com/NillerMedDild/Enigmatica6/issues/79)
+-   Dark Utilities [\#64](https://github.com/NillerMedDild/Enigmatica6/issues/64)
+-   Enigmatica Companion Mod [\#86](https://github.com/NillerMedDild/Enigmatica6/issues/86)
+-   Extended Lights [\#70](https://github.com/NillerMedDild/Enigmatica6/issues/70)
+-   FTB Backups [\#72](https://github.com/NillerMedDild/Enigmatica6/issues/72)
+-   Mining Gadgets [\#65](https://github.com/NillerMedDild/Enigmatica6/issues/65)
+-   QuantumStorage [\#68](https://github.com/NillerMedDild/Enigmatica6/issues/68)
+-   Valhelsia Structures [\#66](https://github.com/NillerMedDild/Enigmatica6/issues/66)
 
 **Mod Removals**
 
-- Rats (Removed due to a bug. Will most likely not return)
-- Tip the Scales (To allow users to use **Optifine**)
+-   Rats (Removed due to a bug. Will most likely not return)
+-   Tip the Scales (To allow users to use **Optifine**)
 
 **Changes**
 
-- It should now be possible to use Optifine in E6 out of the box
-- New recipes: Stripped Wood (Axe + Log)
-- New recipes: Farmland (Hoe + Dirt)
-  - Useful for Botany Pots
-- New recipes: Enchanted Soil (Grass + Overgrowth Seed) 
-  - Useful for Botany Pots
-- QuantumStorage Expensive Recipes [\#75](https://github.com/NillerMedDild/Enigmatica6/issues/75)
+-   It should now be possible to use Optifine in E6 out of the box
+-   New recipes: Stripped Wood (Axe + Log)
+-   New recipes: Farmland (Hoe + Dirt)
+    -   Useful for Botany Pots
+-   New recipes: Enchanted Soil (Grass + Overgrowth Seed)
+    -   Useful for Botany Pots
+-   QuantumStorage Expensive Recipes [\#75](https://github.com/NillerMedDild/Enigmatica6/issues/75)
 
 **Bug Fixes**
 
--  Biomes O' Plenty causes some old worlds to be unable to load [\#46](https://github.com/NillerMedDild/Enigmatica6/issues/46)
--  [IE] Crash when loading world [\#60](https://github.com/NillerMedDild/Enigmatica6/issues/60)
--  \[Optifine\] Crash when opening video settings [\#84](https://github.com/NillerMedDild/Enigmatica6/issues/84)
+-   Biomes O' Plenty causes some old worlds to be unable to load [\#46](https://github.com/NillerMedDild/Enigmatica6/issues/46)
+-   [IE] Crash when loading world [\#60](https://github.com/NillerMedDild/Enigmatica6/issues/60)
+-   \[Optifine\] Crash when opening video settings [\#84](https://github.com/NillerMedDild/Enigmatica6/issues/84)
 
 ## Enigmatica 6 v0.2.4
 
