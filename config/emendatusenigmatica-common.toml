@@ -319,3 +319,19 @@
 ["Quark Slate"]
 	Active = true
 
+["Fluorite Ore"]
+	#Activate/Deactivate the World Gen [Default: true]
+	Active = true
+	#Minimum Y-Level [Default: 0]
+	#Range: 0 ~ 128
+	Minimum = 0
+	#Maximum Y-Level [Default: 32]
+	#Range: 0 ~ 256
+	Maximum = 32
+	#Configure the ore Vein Size [Default: 12]
+	#Range: 0 ~ 64
+	Size = 12
+	#Ores count per Chunk [Default: 6]
+	#Range: 0 ~ 64
+	Count = 6
+

@@ -101,6 +101,9 @@
 	flippers_speed_boost_ground = 0.03
 
 [Advanced]
+	#Precision to which pressurizable item air levels are synced to client. Default of 10 is precise enough to show pressure to 1 decimal place, which is what is display in client tooltips & pneumatic armor HUD. Lower values will sync less precisely, reducing server->client network traffic. Values higher than 10 are not recommended (will cause extra network traffic for no benefit).
+	#Range: 1 ~ 100
+	pressurizable_sync_precision = 10
 	#When set to true, the Kerosene Lamp's fake air blocks won't be registered and therefore removed from the world. Useful if this causes trouble (it shouldn't though)
 	disable_kerosene_lamp_fake_air_block = false
 	#When set to true, Drones will not execute any program. This is useful to set to true when due to a bug Drones are lagging your server or crashing it. Please report the bug if you encounter it.

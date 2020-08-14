@@ -33,6 +33,8 @@
 	block_tracker_max_time_per_tick = 10
 	#Should the Pneumatic Helmet Coordinate Tracker pathfinder path be visible through blocks?
 	xray_enabled = false
+	#True: show pressure as numbers.  False: show pressure as horizontal bar.
+	show_pressure_numerically = true
 	#How frequently should the Pneumatic Helmet Coordinate Tracker pathfinder path be recalculated?
 	#Allowed Values: SLOW, NORMAL, FAST
 	path_update_setting = "NORMAL"
@@ -59,6 +61,9 @@
 	#Volume level of air leaks from unconnected tubes/machines. Beware: turning this off could lead to undetected leaks wasting pressure forever!
 	#Range: 0.0 ~ 2.0
 	air_leak_volume = 1.0
+	#Volume level of the Jackhammer
+	#Range: 0.0 ~ 2.0
+	jackhammer_volume = 1.0
 	#Volume level of the Elevator while running
 	#Range: 0.0 ~ 2.0
 	elevator_volume_running = 1.0
