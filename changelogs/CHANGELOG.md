@@ -1,6 +1,32 @@
-## Enigmatica 6 v0.2.6
+#### Enigmatica 6 v0.2.7
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.7.txt)_
+
+
+
+**Mod Additions**
+
+-   
+
+**Changes**
+
+- 
+
+**Bug Fixes**
+
+- 
+
+**Mod Removals**
+
+-   
+
+### Enigmatica 6 v0.2.6
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.6.txt)_
+
+
+
+**Warning: Several mods have been removed. If you're using chests/backpacks/inventories from one of the mods that are being removed, make sure to move the contents first. It is recommend to start a new world due to mod removals, but not required**
 
 
 
@@ -47,7 +73,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 -   Useful Backpacks (Content overlap)
 -   U Team Core (Dependency for Useful BackPacks)
 
-## Enigmatica 6 v0.2.5
+### Enigmatica 6 v0.2.5
 
 _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.5.txt)_
 
@@ -85,7 +111,7 @@ _Using Forge-1.16.1-32.0.106_ | _[Mod Updates](https://github.com/NillerMedDild/
 -   [IE] Crash when loading world [\#60](https://github.com/NillerMedDild/Enigmatica6/issues/60)
 -   \[Optifine\] Crash when opening video settings [\#84](https://github.com/NillerMedDild/Enigmatica6/issues/84)
 
-## Enigmatica 6 v0.2.4
+### Enigmatica 6 v0.2.4
 
 _Using Forge-1.16.1-32.0.88_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.4.txt)_
 
@@ -118,7 +144,7 @@ _Using Forge-1.16.1-32.0.88_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Wood Floor recipes from planks/logs have amounts reversed [\#43](https://github.com/NillerMedDild/Enigmatica6/issues/43)
 -   Stonecutter Dupes [\#35](https://github.com/NillerMedDild/Enigmatica6/issues/35)
 
-## Enigmatica 6 v0.2.3
+### Enigmatica 6 v0.2.3
 
 _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.3.txt)_
 
@@ -136,7 +162,7 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   CraftingStation (Temporarily, due to a bug)
 -   Extra Tags (Temporarily, due to a bug)
 
-## Enigmatica 6 v0.2.2
+### Enigmatica 6 v0.2.2
 
 **GraveStones was removed in favor of Quark graves in v0.2.1, make sure to retrieve any items you have lying around in gravestones, so you don't lose them.**
 
@@ -161,7 +187,7 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 -   Pedestals (Temporarily, because it cannot have crushing recipes modified at the moment)
 
-## Enigmatica 6 v0.2.1
+### Enigmatica 6 v0.2.1
 
 **GraveStones is being removed in favor of Quark graves, make sure to retrieve any items you have lying around in gravestones, so you don't lose them.**
 
@@ -206,7 +232,7 @@ _Using Forge-1.16.1-32.0.75_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   GraveStones (Replaced by Quark Oddities grave)
 -   Reap (Replaced by Simple Farming's/Quark's right-click harvest)
 
-## Enigmatica 6 v0.2.0
+### Enigmatica 6 v0.2.0
 
 **It is highly recommended to run the `/reload` command when entering a singleplayer world or booting up a server, due to a bug. We're working to resolve it.**
 
@@ -243,7 +269,7 @@ _Using Forge-1.16.1-32.0.71_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 -   GameStages (Redundant atm)
 
-## Enigmatica 6 v0.1.7
+### Enigmatica 6 v0.1.7
 
 _Using Forge-1.16.1-32.0.66_
 
@@ -255,7 +281,7 @@ _Using Forge-1.16.1-32.0.66_
 
 -   Waystones has been re-added now that it's stable. It was removed incorrectly in 0.1.6.
 
-## Enigmatica 6 v0.1.6
+### Enigmatica 6 v0.1.6
 
 _Using Forge-1.16.1-32.0.66_
 
@@ -267,7 +293,7 @@ _Using Forge-1.16.1-32.0.66_
 
 -   Waystones
 
-## Enigmatica 6 v0.1.5
+### Enigmatica 6 v0.1.5
 
 _Using Forge-1.16.1-32.0.66 | [Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.5.txt)_
 
@@ -287,7 +313,7 @@ _Using Forge-1.16.1-32.0.66 | [Mod Updates](https://github.com/NillerMedDild/Eni
 
 -   Crafting Tweaks Crash [\#4](https://github.com/NillerMedDild/Enigmatica6/issues/4)
 
-## Enigmatica 6 v0.1.4
+### Enigmatica 6 v0.1.4
 
 _Using Forge-1.16.1-32.0.66 | [Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.1.4.txt)_
 
@@ -355,7 +381,7 @@ _(v0.1.3) | Using Forge-1.16.1-32.0.62 | [Mod Updates](https://gist.github.com/N
 -   Waystones
 -   YUNG's Better Caves
 
-## Enigmatica 6 v0.1.2
+### Enigmatica 6 v0.1.2
 
 _Using Forge-1.16.1-32.0.57_ | _[Mod Updates](https://gist.github.com/NillerMedDild/a96787faf94d9379f1605cc02866e028)_
 
