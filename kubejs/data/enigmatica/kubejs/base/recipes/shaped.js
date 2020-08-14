@@ -29,6 +29,16 @@ events.listen('recipes', function (event) {
             B: '#forge:grain',
             C: 'aquaculture:fish_fillet_cooked'
         }),
+        shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
+            L: 'mekanism:ultimate_fluid_tank',
+            C: '#forge:ingots/compressed_iron',
+            B: '#forge:glass_panes'
+        }),
+        shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
+            L: 'mekanism:ultimate_bin',
+            C: '#forge:ingots/compressed_iron',
+            B: '#forge:glass'
+        }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         }),
