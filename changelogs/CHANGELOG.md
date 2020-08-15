@@ -4,9 +4,20 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 
 
+**Warning: Several mods were removed in 0.2.6. If you're using LargeFluidTanks or Useful Backpacks, make sure to move the contents before updating.**
+
+
+
 **Mod Additions**
 
--   
+-   **Building Gadgets [\#137](https://github.com/NillerMedDild/Enigmatica6/issues/137)**
+-   FTB Chunks
+-   FTB Ranks [\#126](https://github.com/NillerMedDild/Enigmatica6/issues/126)
+-   FTB GUI Library
+-   FTB Teams
+-   Ambient Sounds [\#125](https://github.com/NillerMedDild/Enigmatica6/issues/125)
+-   Just Enough Beacons [\#118](https://github.com/NillerMedDild/Enigmatica6/issues/118)
+-   TellMe [\#142](https://github.com/NillerMedDild/Enigmatica6/issues/142)
 
 **Changes**
 
@@ -14,11 +25,15 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Bug Fixes**
 
-- 
-
-**Mod Removals**
-
--   
+- Quark Loot still provides vanilla ore blocks [\#139](https://github.com/NillerMedDild/Enigmatica6/issues/139)
+- Crash during Resource Pack activation [\#134](https://github.com/NillerMedDild/Enigmatica6/issues/134)
+- Quantum Storage items uncraftable [\#133](https://github.com/NillerMedDild/Enigmatica6/issues/133)
+- Can't craft the 16384k fluid storage part on 0.2.6 [\#131](https://github.com/NillerMedDild/Enigmatica6/issues/131)
+- 0.2.6 Botania rendering crash [\#130](https://github.com/NillerMedDild/Enigmatica6/issues/130)
+- Certus Quartz unobtainable [\#128](https://github.com/NillerMedDild/Enigmatica6/issues/128)
+- Modded for Dummies Texture Error [\#127](https://github.com/NillerMedDild/Enigmatica6/issues/127)
+- Click Machine lacks a recipie [\#111](https://github.com/NillerMedDild/Enigmatica6/issues/111)
+- Programmable drones can be crafted without pcb [\#94](https://github.com/NillerMedDild/Enigmatica6/issues/94)
 
 ### Enigmatica 6 v0.2.6
 
@@ -26,7 +41,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 
 
-**Warning: Several mods have been removed. If you're using chests/backpacks/inventories from one of the mods that are being removed, make sure to move the contents first. It is recommend to start a new world due to mod removals, but not required**
+**Warning: Several mods were removed in 0.2.6. If you're using LargeFluidTanks or Useful Backpacks, make sure to move the contents before updating.**
 
 
 
@@ -50,7 +65,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Changes**
 
-- Integrate Modded for Dummies [\#89](https://github.com/NillerMedDild/Enigmatica6/issues/89)
+- Added a beginner's guide to Modded Minecraft! [\#89](https://github.com/NillerMedDild/Enigmatica6/issues/89)  *(Made by Merlo, textures by Rid)*
 - Renewable Coral Blocks [\#88](https://github.com/NillerMedDild/Enigmatica6/issues/88)
 
 **Bug Fixes**
@@ -65,7 +80,6 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 -   Engineers Tools (A bit on the OP side)
 -   LargeFluidTank (Content overlap)
 -   Ma' Essentials (Slightly cheaty)
--   Metal Barrels (Content overlap)
 -   MixinBootstrap (Mixins is now included in Forge)
 -   Packing Tape (Content overlap)
 -   Ranged Pumps (Content overlap)
