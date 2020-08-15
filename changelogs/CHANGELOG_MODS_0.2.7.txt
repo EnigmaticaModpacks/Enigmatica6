@@ -1,0 +1,444 @@
+=======================================
+Enigmatica6 0.2.6 --> Enigmatica6 0.2.7
+=======================================
+
+Added:
+- AmbientSounds 3
+- Building Gadgets
+- Just Enough Beacons
+- TellMe
+
+Updated:
+	Apotheosis (Apotheosis-1.16.1-4.0.1.jar --> Apotheosis-1.16.1-4.1.0.jar):
+		Apotheosis-1.16.1-4.1.0.jar:
+			Actually make the Potion Charm unenchantable.
+			Any enchantments added to an anvil will now be retained (this is mostly for future addition of more anvil enchantments).
+			Added Obliteration, an anvil enchantment to allow for splitting a single-enchantment book into two books, each a level below.
+			The default chance for bosses to have fire resistance is now 100%.
+			Added Crescendo of Bolts, a Crossbow enchantment that allows for multiple shots on one charge (one extra shot per level).
+			Sea and Hell Infusion are now applicable to Tridents.
+
+	Applied Energistics 2 (appliedenergistics2-8.0.0-alpha.2.jar --> appliedenergistics2-8.0.0-beta.1.jar):
+		appliedenergistics2-8.0.0-beta.1.jar:
+			Please visit our [releases](https://github.com/AppliedEnergistics/Applied-Energistics-2/releases) for a changelog
+
+		appliedenergistics2-8.0.0-alpha.3.jar:
+			Please visit our [releases](https://github.com/AppliedEnergistics/Applied-Energistics-2/releases) for a changelog
+
+	Aquaculture 2 (Aquaculture-1.16.1-2.0.17.jar --> Aquaculture-1.16.1-2.0.18.jar):
+		Aquaculture-1.16.1-2.0.18.jar:
+			* Fixed tooltip related crash, when resources are being reloaded (Such as resourcepacks)
+
+	Botania (Botania-1.16-399.jar --> Botania-1.16-402.jar):
+		Botania-1.16-402.jar:
+			[https://botaniamod.net/changelog.php]()
+
+		Botania-1.16-401.jar:
+			[https://botaniamod.net/changelog.php]()
+
+		Botania-1.16-400.jar:
+			[https://botaniamod.net/changelog.php]()
+
+	Connected Glass (connectedglass-1.0.6-mc1.16 --> connectedglass-1.0.6a-mc1.16):
+		connectedglass-1.0.6a-mc1.16:
+			* added a license to mods.toml
+
+	Cooking for Blockheads (CookingForBlockheads_1.16.1-9.0.0.jar --> CookingForBlockheads_1.16.1-9.0.2.jar):
+		CookingForBlockheads_1.16.1-9.0.2.jar:
+			Fixed oven not updating energy display until energy is actually being used
+			Possibly fixed potential circular reference error in retextured model loading
+
+	Culinary Construct (culinaryconstruct-FORGE-1.16.1-3.0.0.1.jar --> culinaryconstruct-FORGE-1.16.1-3.0.0.2.jar):
+		culinaryconstruct-FORGE-1.16.1-3.0.0.2.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project does not adhere to [Semantic Versioning](). This project uses MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH.
+			[3.0.0.2] - 2020.08.11
+			Changed
+			* Updated to Forge 32.0.107 [#40](https://github.com/TheIllusiveC4/CulinaryConstruct/pull/40)
+			[3.0.0.1] - 2020.08.02
+			Fixed
+			* Fixed duplication issue when shift-clicking output [#39](https://github.com/TheIllusiveC4/CulinaryConstruct/issues/39)
+			[3.0] - 2020.07.06
+			Changed
+			* Ported to 1.16.1 Forge
+
+	Dank Storage (dankstorage-3.7b.jar --> dankstorage-3.8.jar):
+		dankstorage-3.8.jar:
+			* fixed handheld upgrades crashing the game when used
+
+	Emendatus Enigmatica (EmendatusEnigmatica-1.16.1-1.0.2 --> EmendatusEnigmatica-1.16.1-1.0.4):
+		EmendatusEnigmatica-1.16.1-1.0.4:
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.4
+			Added couple new tags to the Certus Quartz, Charged Certus Quartz, and Fluix Crystal
+			* Added the usage of DeferredWorkQueue during the World Gen to avoid a crash
+			* Added Smelting and Blasting recipes for ingots/gems from ores
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.3
+			* Added Fluorite
+			* Removed Skystone
+			* JEI Integration
+			* Added multiple recipes to exchange the Chunks into any of their ore block variants using the Stonecutter
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.2
+			* World Gen Crash Fix
+			* AE2 and Minecraft Tags
+			* Added MinMaxCount on Redstone Ores Loot Tables
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.1
+			* Minor Code Refactoring
+			* Texture Update
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.0
+			* First Official Release
+
+		EmendatusEnigmatica-1.16.1-1.0.3:
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.3
+			* Added Fluorite
+			* Removed Skystone
+			* JEI Integration
+			* Added multiple recipes to exchange the Chunks into any of their ore block variants using the Stonecutter
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.2
+			* World Gen Crash Fix
+			* AE2 and Minecraft Tags
+			* Added MinMaxCount on Redstone Ores Loot Tables
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.1
+			* Minor Code Refactoring
+			* Texture Update
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.0
+			* First Official Release
+
+	Extra Disks (extradisks-1.16.1-1.3.jar --> extradisks-1.16.1-1.3.1.jar):
+		extradisks-1.16.1-1.3.1.jar:
+			fixed 16384k fluid storage part recipe
+
+	Farming for Blockheads (FarmingForBlockheads_1.16.1-7.0.1.jar --> FarmingForBlockheads_1.16.1-7.0.2.jar):
+		FarmingForBlockheads_1.16.1-7.0.2.jar:
+			Fixed fertilizer regression placing farmland blocks on top of the farmland instead of regressing the actual farmland
+
+	Inventory Tweaks Renewed (invtweaks-1.16.1-1.0.6.jar --> invtweaks-1.16.2-1.0.0.jar):
+		invtweaks-1.16.2-1.0.0.jar:
+			Changelog:
+			Updated to 1.16.2
+
+	KubeJS (kubejs-2.7.2.57.jar --> kubejs-2.7.2.58.jar):
+		kubejs-2.7.2.58.jar:
+			* Fixed #24 - LatvianModder
+
+	Light Overlay (Rift/Forge/Fabric) ([Forge / Fabric 1.16.x] v5.4.1 --> [Forge / Fabric 1.16.1] v5.4.2):
+		[Forge / Fabric 1.16.1] v5.4.2:
+			Less dumb code
+			In case you are new to this merging method, this mod jar will work on both Fabric and Forge, just slap this jar into minecraft/mods and it will work.
+
+	Mantle (Mantle-1.16.1-1.6.20.jar --> Mantle-1.16.1-1.6.27.jar):
+		Mantle-1.16.1-1.6.27.jar:
+			Fixed retextured block showing in all tabs
+			Add some basic recipe interfaces
+			Add a method to the abstract recipe builder to get a group
+			Add support for a simple model loader
+			Add empty IInventory constant
+
+	Mekanism (Mekanism-1.16.1-10.0.8.431.jar --> Mekanism-1.16.1-10.0.9.432.jar):
+		Mekanism-1.16.1-10.0.9.432.jar:
+			[b1b86b4](https://github.com/mekanism/Mekanism/commit/b1b86b4a468ffd2bc15f835d2b827a610d09d61a) - Update JEI and cleanup generics to allow for it to compile against the newer JEI. From my testing it seems to still be able to load on older versions of JEI and also have older versions of mek load on newer versions of JEI
+			[676e785](https://github.com/mekanism/Mekanism/commit/676e7856d8f9bf6a774581cbb0dbb77e656d4c9a) - Bump min forge version to 32.0.104 and update how we handle log stripping, and ground tilling to use the new forge method rather than having using ATs to access the lookup maps
+			[1ef2dd9](https://github.com/mekanism/Mekanism/commit/1ef2dd99e7f1ccdf2baaa6d2b3656e851e52b961) - Patch silk touch meka-tool still having ores drop xp ([#6427](https://github.com/mekanism/Mekanism/issues/6427)). Note: stops other mods from easily being able to add extra xp drops to blocks when they are getting broken with silk touch
+			[fd596d7](https://github.com/mekanism/Mekanism/commit/fd596d7d09b30192f390224b92c09c9db59a2f4f) - Fix some improper edge case checks when it comes to checking if empty containers can be extracted ([#6425](https://github.com/mekanism/Mekanism/issues/6425))
+			[a857279](https://github.com/mekanism/Mekanism/commit/a8572791196d30e9108d9db7679c634a42bd7838) - Update list of materials axes work against to match that of vanilla ([#6430](https://github.com/mekanism/Mekanism/issues/6430)). Also fix the paxel not properly spawning particles and making a campfire drop its contents when extinguished
+			[6d192cf](https://github.com/mekanism/Mekanism/commit/6d192cf5730c97e586e7ecfff78291eae90e66bf) - Make empty canteens display "Empty" instead of displaying "No gas" as the fact that nutritional paste is a gas internally is not important
+			[550489c](https://github.com/mekanism/Mekanism/commit/550489c7fcf8d09c46a949dbd1a928edb035ed12) - Revamp dictionary item: - Added a description to the dictionary item to make it more clear what it is used for - Now supports showing the tags for blocks, items, fluids, entities, gases, infuse types, pigments, and slurries - Right clicking an entity or fluid in world now shows their tags - The dictionary's GUI now has a dropdown to view the different tag types that something supports. For example block items that have tags for both the block variant and the item variant now show both (though right clicking on blocks in the world is still likely to provide better results in cases where the block variant of an item cannot be properly determined) - Make the target slot in the dictionary GUI be a "ghost slot" so that things can be dragged from JEI into it ([https://github.com/mekanism/Mekanism-Feature-Requests/issues/87](https://github.com/mekanism/Mekanism-Feature-Requests/issues/87)) - Also fix a few misc issues with scroll lists losing contents/selection index when resizing the minecraft window and make all the click sounds in GUIs properly respect the mek sound config instead of only some of them
+			[930428b](https://github.com/mekanism/Mekanism/commit/930428b020b93941e11544c06222210f271b4664) - Make the description for the QIO Exporter clearer ([#6457](https://github.com/mekanism/Mekanism/issues/6457))
+			[375f006](https://github.com/mekanism/Mekanism/commit/375f006d33c98554a8da8668557592fcd4edf721) - Fix GuiElement child nesting not properly syncing the individual children
+			[188c38d](https://github.com/mekanism/Mekanism/commit/188c38d5691506c193583b638c77fe5080b1e33f) - Fix the QIO container allowing extracting items in larger stacks than their max stack size ([#6458](https://github.com/mekanism/Mekanism/issues/6458))
+			[50c5cce](https://github.com/mekanism/Mekanism/commit/50c5cce31fc63e577197fe680f2f123faf083648) - Transition a few missed ints to varints
+			[52ebee1](https://github.com/mekanism/Mekanism/commit/52ebee14e5d6a464b7038630fbf7e19f1079ff9f) - Use our own system for calculating comparator level for inventory contents instead of forge's helper so that we can use our more specialized IInventorySlot#getLimit method to allow for properly calculating the value of things like bins ([#6454](https://github.com/mekanism/Mekanism/issues/6454))
+			[4209310](https://github.com/mekanism/Mekanism/commit/42093101b178d2b74212c01bea43b8264cb750bb) - Make the delay for the industrial alarm turning off less noticeable ([#6452](https://github.com/mekanism/Mekanism/issues/6452))
+			[5e128d6](https://github.com/mekanism/Mekanism/commit/5e128d64978eb72cb0e0800308bb8edb392d8d63) - Added config option for disabling extended vein mining for the Meka-Tool ([#6453](https://github.com/mekanism/Mekanism/issues/6453))
+			[4eb2eae](https://github.com/mekanism/Mekanism/commit/4eb2eae934b6bf84c42611e3cca9252e464bb5f8) - Replace Atomic Disassembler mode switch with radial selector. ([#6422](https://github.com/mekanism/Mekanism/issues/6422))
+			[3326bd1](https://github.com/mekanism/Mekanism/commit/3326bd185cd6681fc0afc3997f8857be31112f37) - Bump forge version and min forge version to 108, update dependencies and move registering our model loaders to the correct place now that there is a correct place
+			[959100c](https://github.com/mekanism/Mekanism/commit/959100c816d11a391c417c64175f1bd40da344a1) - Make the proper tool type for plastic blocks be a pickaxe instead of there being no proper tool ([#6432](https://github.com/mekanism/Mekanism/issues/6432))
+			[e135cc7](https://github.com/mekanism/Mekanism/commit/e135cc739e98da65f94cefac7e6ed04612e3e18d) - Fix factory auto sort checking the wrong process for cached recipes so allowing items into inputs that they can't output to
+			[dc022e2](https://github.com/mekanism/Mekanism/commit/dc022e2b14f2b1458cf101d55f72984b0ee8b1b1) - Save and load cached comparator levels so that tiles that depend on their world for their levels don't have issues (such as logistical sorters)
+			[68503bf](https://github.com/mekanism/Mekanism/commit/68503bf71319b776650b0479fc2ed0a74ed3c28c) - Don't allow modification stations to be rotated with the configurator ([#6444](https://github.com/mekanism/Mekanism/issues/6444))
+			[623a42e](https://github.com/mekanism/Mekanism/commit/623a42e1d4c3e99ccc6bcce7c876733de3efd981) - Minor cleanup to how a few colors are applied
+			[061cab3](https://github.com/mekanism/Mekanism/commit/061cab388bbd6b3895ae65f2ad4e7ec097102df6) - Fix missing render call from turbine model causing the blades to be floating instead of "connected" to the rotor shaft, also fix the rendering being a bit off for the bottom blade of a rotor of height one
+			[fc8de2d](https://github.com/mekanism/Mekanism/commit/fc8de2db09ae77413daf9e63d17c05cfe04b056b) - Fix some text rendering not using the proper colors if a resource pack changes them
+			[1901bd0](https://github.com/mekanism/Mekanism/commit/1901bd036dc3b3165cd2e5a194a4328751d01a10) - Rerun formatter
+			[6a11e27](https://github.com/mekanism/Mekanism/commit/6a11e27aa509d3140bbccad1237be97c8eb50dee) - New Crowdin updates ([#6420](https://github.com/mekanism/Mekanism/issues/6420))
+			[5739653](https://github.com/mekanism/Mekanism/commit/57396538d7e30f274a8b052420b7fa80c3f1a71b) - Bump version to 10.0.9
+
+	Mekanism Generators (MekanismGenerators-1.16.1-10.0.8.431.jar --> MekanismGenerators-1.16.1-10.0.9.432.jar):
+		MekanismGenerators-1.16.1-10.0.9.432.jar:
+			[b1b86b4](https://github.com/mekanism/Mekanism/commit/b1b86b4a468ffd2bc15f835d2b827a610d09d61a) - Update JEI and cleanup generics to allow for it to compile against the newer JEI. From my testing it seems to still be able to load on older versions of JEI and also have older versions of mek load on newer versions of JEI
+			[676e785](https://github.com/mekanism/Mekanism/commit/676e7856d8f9bf6a774581cbb0dbb77e656d4c9a) - Bump min forge version to 32.0.104 and update how we handle log stripping, and ground tilling to use the new forge method rather than having using ATs to access the lookup maps
+			[1ef2dd9](https://github.com/mekanism/Mekanism/commit/1ef2dd99e7f1ccdf2baaa6d2b3656e851e52b961) - Patch silk touch meka-tool still having ores drop xp ([#6427](https://github.com/mekanism/Mekanism/issues/6427)). Note: stops other mods from easily being able to add extra xp drops to blocks when they are getting broken with silk touch
+			[fd596d7](https://github.com/mekanism/Mekanism/commit/fd596d7d09b30192f390224b92c09c9db59a2f4f) - Fix some improper edge case checks when it comes to checking if empty containers can be extracted ([#6425](https://github.com/mekanism/Mekanism/issues/6425))
+			[a857279](https://github.com/mekanism/Mekanism/commit/a8572791196d30e9108d9db7679c634a42bd7838) - Update list of materials axes work against to match that of vanilla ([#6430](https://github.com/mekanism/Mekanism/issues/6430)). Also fix the paxel not properly spawning particles and making a campfire drop its contents when extinguished
+			[6d192cf](https://github.com/mekanism/Mekanism/commit/6d192cf5730c97e586e7ecfff78291eae90e66bf) - Make empty canteens display "Empty" instead of displaying "No gas" as the fact that nutritional paste is a gas internally is not important
+			[550489c](https://github.com/mekanism/Mekanism/commit/550489c7fcf8d09c46a949dbd1a928edb035ed12) - Revamp dictionary item: - Added a description to the dictionary item to make it more clear what it is used for - Now supports showing the tags for blocks, items, fluids, entities, gases, infuse types, pigments, and slurries - Right clicking an entity or fluid in world now shows their tags - The dictionary's GUI now has a dropdown to view the different tag types that something supports. For example block items that have tags for both the block variant and the item variant now show both (though right clicking on blocks in the world is still likely to provide better results in cases where the block variant of an item cannot be properly determined) - Make the target slot in the dictionary GUI be a "ghost slot" so that things can be dragged from JEI into it ([https://github.com/mekanism/Mekanism-Feature-Requests/issues/87](https://github.com/mekanism/Mekanism-Feature-Requests/issues/87)) - Also fix a few misc issues with scroll lists losing contents/selection index when resizing the minecraft window and make all the click sounds in GUIs properly respect the mek sound config instead of only some of them
+			[930428b](https://github.com/mekanism/Mekanism/commit/930428b020b93941e11544c06222210f271b4664) - Make the description for the QIO Exporter clearer ([#6457](https://github.com/mekanism/Mekanism/issues/6457))
+			[375f006](https://github.com/mekanism/Mekanism/commit/375f006d33c98554a8da8668557592fcd4edf721) - Fix GuiElement child nesting not properly syncing the individual children
+			[188c38d](https://github.com/mekanism/Mekanism/commit/188c38d5691506c193583b638c77fe5080b1e33f) - Fix the QIO container allowing extracting items in larger stacks than their max stack size ([#6458](https://github.com/mekanism/Mekanism/issues/6458))
+			[50c5cce](https://github.com/mekanism/Mekanism/commit/50c5cce31fc63e577197fe680f2f123faf083648) - Transition a few missed ints to varints
+			[52ebee1](https://github.com/mekanism/Mekanism/commit/52ebee14e5d6a464b7038630fbf7e19f1079ff9f) - Use our own system for calculating comparator level for inventory contents instead of forge's helper so that we can use our more specialized IInventorySlot#getLimit method to allow for properly calculating the value of things like bins ([#6454](https://github.com/mekanism/Mekanism/issues/6454))
+			[4209310](https://github.com/mekanism/Mekanism/commit/42093101b178d2b74212c01bea43b8264cb750bb) - Make the delay for the industrial alarm turning off less noticeable ([#6452](https://github.com/mekanism/Mekanism/issues/6452))
+			[5e128d6](https://github.com/mekanism/Mekanism/commit/5e128d64978eb72cb0e0800308bb8edb392d8d63) - Added config option for disabling extended vein mining for the Meka-Tool ([#6453](https://github.com/mekanism/Mekanism/issues/6453))
+			[4eb2eae](https://github.com/mekanism/Mekanism/commit/4eb2eae934b6bf84c42611e3cca9252e464bb5f8) - Replace Atomic Disassembler mode switch with radial selector. ([#6422](https://github.com/mekanism/Mekanism/issues/6422))
+			[3326bd1](https://github.com/mekanism/Mekanism/commit/3326bd185cd6681fc0afc3997f8857be31112f37) - Bump forge version and min forge version to 108, update dependencies and move registering our model loaders to the correct place now that there is a correct place
+			[959100c](https://github.com/mekanism/Mekanism/commit/959100c816d11a391c417c64175f1bd40da344a1) - Make the proper tool type for plastic blocks be a pickaxe instead of there being no proper tool ([#6432](https://github.com/mekanism/Mekanism/issues/6432))
+			[e135cc7](https://github.com/mekanism/Mekanism/commit/e135cc739e98da65f94cefac7e6ed04612e3e18d) - Fix factory auto sort checking the wrong process for cached recipes so allowing items into inputs that they can't output to
+			[dc022e2](https://github.com/mekanism/Mekanism/commit/dc022e2b14f2b1458cf101d55f72984b0ee8b1b1) - Save and load cached comparator levels so that tiles that depend on their world for their levels don't have issues (such as logistical sorters)
+			[68503bf](https://github.com/mekanism/Mekanism/commit/68503bf71319b776650b0479fc2ed0a74ed3c28c) - Don't allow modification stations to be rotated with the configurator ([#6444](https://github.com/mekanism/Mekanism/issues/6444))
+			[623a42e](https://github.com/mekanism/Mekanism/commit/623a42e1d4c3e99ccc6bcce7c876733de3efd981) - Minor cleanup to how a few colors are applied
+			[061cab3](https://github.com/mekanism/Mekanism/commit/061cab388bbd6b3895ae65f2ad4e7ec097102df6) - Fix missing render call from turbine model causing the blades to be floating instead of "connected" to the rotor shaft, also fix the rendering being a bit off for the bottom blade of a rotor of height one
+			[fc8de2d](https://github.com/mekanism/Mekanism/commit/fc8de2db09ae77413daf9e63d17c05cfe04b056b) - Fix some text rendering not using the proper colors if a resource pack changes them
+			[1901bd0](https://github.com/mekanism/Mekanism/commit/1901bd036dc3b3165cd2e5a194a4328751d01a10) - Rerun formatter
+			[6a11e27](https://github.com/mekanism/Mekanism/commit/6a11e27aa509d3140bbccad1237be97c8eb50dee) - New Crowdin updates ([#6420](https://github.com/mekanism/Mekanism/issues/6420))
+			[5739653](https://github.com/mekanism/Mekanism/commit/57396538d7e30f274a8b052420b7fa80c3f1a71b) - Bump version to 10.0.9
+
+	Mekanism Tools (MekanismTools-1.16.1-10.0.8.431.jar --> MekanismTools-1.16.1-10.0.9.432.jar):
+		MekanismTools-1.16.1-10.0.9.432.jar:
+			[b1b86b4](https://github.com/mekanism/Mekanism/commit/b1b86b4a468ffd2bc15f835d2b827a610d09d61a) - Update JEI and cleanup generics to allow for it to compile against the newer JEI. From my testing it seems to still be able to load on older versions of JEI and also have older versions of mek load on newer versions of JEI
+			[676e785](https://github.com/mekanism/Mekanism/commit/676e7856d8f9bf6a774581cbb0dbb77e656d4c9a) - Bump min forge version to 32.0.104 and update how we handle log stripping, and ground tilling to use the new forge method rather than having using ATs to access the lookup maps
+			[1ef2dd9](https://github.com/mekanism/Mekanism/commit/1ef2dd99e7f1ccdf2baaa6d2b3656e851e52b961) - Patch silk touch meka-tool still having ores drop xp ([#6427](https://github.com/mekanism/Mekanism/issues/6427)). Note: stops other mods from easily being able to add extra xp drops to blocks when they are getting broken with silk touch
+			[fd596d7](https://github.com/mekanism/Mekanism/commit/fd596d7d09b30192f390224b92c09c9db59a2f4f) - Fix some improper edge case checks when it comes to checking if empty containers can be extracted ([#6425](https://github.com/mekanism/Mekanism/issues/6425))
+			[a857279](https://github.com/mekanism/Mekanism/commit/a8572791196d30e9108d9db7679c634a42bd7838) - Update list of materials axes work against to match that of vanilla ([#6430](https://github.com/mekanism/Mekanism/issues/6430)). Also fix the paxel not properly spawning particles and making a campfire drop its contents when extinguished
+			[6d192cf](https://github.com/mekanism/Mekanism/commit/6d192cf5730c97e586e7ecfff78291eae90e66bf) - Make empty canteens display "Empty" instead of displaying "No gas" as the fact that nutritional paste is a gas internally is not important
+			[550489c](https://github.com/mekanism/Mekanism/commit/550489c7fcf8d09c46a949dbd1a928edb035ed12) - Revamp dictionary item: - Added a description to the dictionary item to make it more clear what it is used for - Now supports showing the tags for blocks, items, fluids, entities, gases, infuse types, pigments, and slurries - Right clicking an entity or fluid in world now shows their tags - The dictionary's GUI now has a dropdown to view the different tag types that something supports. For example block items that have tags for both the block variant and the item variant now show both (though right clicking on blocks in the world is still likely to provide better results in cases where the block variant of an item cannot be properly determined) - Make the target slot in the dictionary GUI be a "ghost slot" so that things can be dragged from JEI into it ([https://github.com/mekanism/Mekanism-Feature-Requests/issues/87](https://github.com/mekanism/Mekanism-Feature-Requests/issues/87)) - Also fix a few misc issues with scroll lists losing contents/selection index when resizing the minecraft window and make all the click sounds in GUIs properly respect the mek sound config instead of only some of them
+			[930428b](https://github.com/mekanism/Mekanism/commit/930428b020b93941e11544c06222210f271b4664) - Make the description for the QIO Exporter clearer ([#6457](https://github.com/mekanism/Mekanism/issues/6457))
+			[375f006](https://github.com/mekanism/Mekanism/commit/375f006d33c98554a8da8668557592fcd4edf721) - Fix GuiElement child nesting not properly syncing the individual children
+			[188c38d](https://github.com/mekanism/Mekanism/commit/188c38d5691506c193583b638c77fe5080b1e33f) - Fix the QIO container allowing extracting items in larger stacks than their max stack size ([#6458](https://github.com/mekanism/Mekanism/issues/6458))
+			[50c5cce](https://github.com/mekanism/Mekanism/commit/50c5cce31fc63e577197fe680f2f123faf083648) - Transition a few missed ints to varints
+			[52ebee1](https://github.com/mekanism/Mekanism/commit/52ebee14e5d6a464b7038630fbf7e19f1079ff9f) - Use our own system for calculating comparator level for inventory contents instead of forge's helper so that we can use our more specialized IInventorySlot#getLimit method to allow for properly calculating the value of things like bins ([#6454](https://github.com/mekanism/Mekanism/issues/6454))
+			[4209310](https://github.com/mekanism/Mekanism/commit/42093101b178d2b74212c01bea43b8264cb750bb) - Make the delay for the industrial alarm turning off less noticeable ([#6452](https://github.com/mekanism/Mekanism/issues/6452))
+			[5e128d6](https://github.com/mekanism/Mekanism/commit/5e128d64978eb72cb0e0800308bb8edb392d8d63) - Added config option for disabling extended vein mining for the Meka-Tool ([#6453](https://github.com/mekanism/Mekanism/issues/6453))
+			[4eb2eae](https://github.com/mekanism/Mekanism/commit/4eb2eae934b6bf84c42611e3cca9252e464bb5f8) - Replace Atomic Disassembler mode switch with radial selector. ([#6422](https://github.com/mekanism/Mekanism/issues/6422))
+			[3326bd1](https://github.com/mekanism/Mekanism/commit/3326bd185cd6681fc0afc3997f8857be31112f37) - Bump forge version and min forge version to 108, update dependencies and move registering our model loaders to the correct place now that there is a correct place
+			[959100c](https://github.com/mekanism/Mekanism/commit/959100c816d11a391c417c64175f1bd40da344a1) - Make the proper tool type for plastic blocks be a pickaxe instead of there being no proper tool ([#6432](https://github.com/mekanism/Mekanism/issues/6432))
+			[e135cc7](https://github.com/mekanism/Mekanism/commit/e135cc739e98da65f94cefac7e6ed04612e3e18d) - Fix factory auto sort checking the wrong process for cached recipes so allowing items into inputs that they can't output to
+			[dc022e2](https://github.com/mekanism/Mekanism/commit/dc022e2b14f2b1458cf101d55f72984b0ee8b1b1) - Save and load cached comparator levels so that tiles that depend on their world for their levels don't have issues (such as logistical sorters)
+			[68503bf](https://github.com/mekanism/Mekanism/commit/68503bf71319b776650b0479fc2ed0a74ed3c28c) - Don't allow modification stations to be rotated with the configurator ([#6444](https://github.com/mekanism/Mekanism/issues/6444))
+			[623a42e](https://github.com/mekanism/Mekanism/commit/623a42e1d4c3e99ccc6bcce7c876733de3efd981) - Minor cleanup to how a few colors are applied
+			[061cab3](https://github.com/mekanism/Mekanism/commit/061cab388bbd6b3895ae65f2ad4e7ec097102df6) - Fix missing render call from turbine model causing the blades to be floating instead of "connected" to the rotor shaft, also fix the rendering being a bit off for the bottom blade of a rotor of height one
+			[fc8de2d](https://github.com/mekanism/Mekanism/commit/fc8de2db09ae77413daf9e63d17c05cfe04b056b) - Fix some text rendering not using the proper colors if a resource pack changes them
+			[1901bd0](https://github.com/mekanism/Mekanism/commit/1901bd036dc3b3165cd2e5a194a4328751d01a10) - Rerun formatter
+			[6a11e27](https://github.com/mekanism/Mekanism/commit/6a11e27aa509d3140bbccad1237be97c8eb50dee) - New Crowdin updates ([#6420](https://github.com/mekanism/Mekanism/issues/6420))
+			[5739653](https://github.com/mekanism/Mekanism/commit/57396538d7e30f274a8b052420b7fa80c3f1a71b) - Bump version to 10.0.9
+
+	Modular Routers (modular-routers-1.16.1-7.0.0-24.jar --> modular-routers-1.16.1-7.0.1-29.jar):
+		modular-routers-1.16.1-7.0.1-29.jar:
+			7.0.1 (12 Aug 2020)
+			* Update zh_cn translations
+			* Added back Waila/Hwyla support
+			* Fix crash with Puller Module pulling from Industrial Foregoing Mob Slaughter Factory (possibly other inventories too)
+			* Fix crash with unconfigured Fluid Module Mk2 under some circumstances
+
+	NetherPortalFix (NetherPortalFix_1.16.1-7.0.0.jar --> NetherPortalFix_1.16.1-7.0.1.jar):
+		NetherPortalFix_1.16.1-7.0.1.jar:
+			Fixed crash if player spawned in the Nether directly (without going through a portal or anything)
+
+	Pedestals (Pedestals - 0.7a --> Pedestals - 0.7c):
+		Pedestals - 0.7c:
+			Translation Update:
+			Translations for Chinese (simplified) have been added. Huge thanks to Meawerful in the discord for that work!
+			Fixed: Energy Machine Upgrades having duplicate tooltip info.
+			Fixed: Added localiations for everything that was missing.
+			Improvement: Aligned Energy Quarry Recipe With the Quarry Recipe, now requires an energy furnace upgrade to craft instead of a regular furnace upgrade and a block of redstone.
+
+		Pedestals - 0.7b:
+			JEI Integration Update
+			(And Other Fixes and Improvements)
+			Added This Update:
+			* JEI Integration
+			* Focused Enchantable Book (Advanced)
+			[https://twitter.com/i/status/1293280857814446081](https://twitter.com/i/status/1293280857814446081)
+			* This Book Will Only Accept The Advanced Enchantment, IT ALSO IS THE ONLY ITEM THAT CAN BE ENCHANTED WITH THIS ENCHANTMENT.
+			* Due to the nature of these books, they can only be combined with items using the Anvil Upgrade.
+			* Focus: Advanced (Recipe: Book + Nether Star)
+			* (The enchant only appears above level 92)
+			Improvement: Cleaned up some texture files, and switched Pedestal texture to a custom white texture, which makes all the other pedestals feel a bit more colorful.
+
+	PneumaticCraft: Repressurized (pneumaticcraft-repressurized-1.16.1-2.0.1-7.jar --> pneumaticcraft-repressurized-1.16.1-2.1.1-14.jar):
+		pneumaticcraft-repressurized-1.16.1-2.1.1-14.jar:
+			2.1.1-14 (14 Aug 2020)
+			Updates
+			* Tweaked heat & air output of advanced compressors somewhat
+			* - All compressors now produce heat proportional to the air produced (adding 1 heat per 20 air/tick produced)
+			* - This affects the Flux Compressor in particular, which was producing much less heat per air than the Advanced Compressor & Advanced Liquid Compressor
+			* - Flux Compressor now produces double the heat it used to, so yes: this can be considered a nerf!
+			* - Heat generation will drop a bit as efficiency drops (since less air is being produced)
+			* - Fixed issue where fractional amounts of air/tick were getting rounded down (so compressors may produce very slightly more now, depending on circumstances)
+			* Added Waila/Hwyla support back in
+			* Drone placement tweak: if Drone is deployed on block with no collision box, deploy the Drone in that blockspace instead of the adjacent one
+			Fixes
+			* Fixed Jackhammer being able to break bedrock (and other unbreakable blocks) in area dig modes
+			* Fixed Drone upgrade crafting recipe not needing a PCB ingredient
+
+		pneumaticcraft-repressurized-1.16.1-2.1.0-11.jar:
+			2.1.0-11 (11 Aug 2020)
+			This release requires Forge 32.0.108 or newer.
+			New
+			* Added a Pneumatic Jackhammer!
+			* - Powerful and customisable multi-tool which can efficiently break any block
+			* - Multiple digging modes, selectable via GUI; better modes require a better Drill Bit to be attached
+			* - Includes two vein miner modes: ores & logs only, and all blocks (requires the top-end Netherite Drill Bit)
+			* - Upgradable with Speed Upgrades and Volume Upgrades: top speed is extremely fast, but extremely pressure-hungry
+			* - Can also take a Fortune or Silk Touch enchanted book (swappable on the fly; no enchanting table needed)
+			* - Documented more in the Patchouli manual (in the "Tools" section)
+			* Added a Renewables system!
+			* - Make Biodiesel via a multi-step process requiring the production of Yeast Solution, Ethanol and Vegetable Oil
+			* - Biodiesel is equivalent to Diesel in fuel quality, and can also be used to make Lubricant and Plastic
+			* - Some useful by-products & foods are also added:
+			*  - Bandages
+			*  - A way to get double the Speed Upgrades per bucket of Lubricant
+			*  - Sourdough Bread, Chips, Cod & Chips - all good-quality foods
+			* - All documented in the Patchouli manual in a new "Renewables" section
+			* Added a new Fluid Mixer machine which can mix two fluids into a new fluid and/or item
+			* - Used by default for making Biodiesel
+			* - Can also mix Water & Lava to make Obsidian
+			* - More recipes can be added via datapacks
+			Updates
+			* Kerosene is now much more efficient in the Kerosene Lamp than other fuels
+			* Pneumatic Armor HUD now displays only 1 decimal place of pressure for armor pieces
+			* - This is not just a cosmetic change, but part of an overall performance improvement with pressure sync'ing
+			* - Previously sync'ing pressures of pneumatic items (including armor) was much too chatty in terms of server->client traffic
+			* - Now only rounded air levels are sync'd to client, so the client generally knows item pressures with 0.1 bar of precision
+			* - This is enough for the vast majority of display purposes; e.g. item pressure tooltips already display with 0.1 bar of precision
+			* - Server->client traffic is now greatly reduced, especially for fast-changing pressures such as Jet Boots
+			* Added the option to display graphical bars rather than numbers for Armor HUD pressure readouts
+			* - Select this in main "Core Components" armor GUI - it's also persisted to client config (show_pressure_numerically)
+			Fixes
+			* Fixed buggy drone "Right Click Block" behaviour (ported forward from 1.5.2 version)
+			* Progwidget Item Filter GUI: don't gray out the "Match NBT" checkbox when the filter item has no NBT data
+			* Just because it has no NBT data doesn't mean actual instances of the item can't...
+			* Fixed (worked around) a problem where drones would refuse to pathfind to the space above "tall" blocks
+			* "Tall" blocks being fences, walls, gates...
+			* Fixed drones ignoring installed Inventory Upgrades
+			* Fixed buggy Heat Frame cooling behaviour (would void some fluid containers such as Mekanism tanks)
+			* Fixed Logistics Frames not being placeable on the Aerial Interface
+			* Fixed possible race conditions when registering custom model loaders (pressure chamber glass, minigun, fluid tanks)
+			* - Now using Forge ModelRegistryEvent, hence the 32.0.108 requirement
+
+	Productive Bees (productivebees-1.16.1-0.2.3.jar --> productivebees-1.16.1-0.2.4.jar):
+		productivebees-1.16.1-0.2.4.jar:
+			* Added back compat hives with altered requirements and recipes
+			* Fixed display error where bees would not show in hives after world load
+			* Cleaned up and fixed advancements
+
+	Server Tab Info (Archived file --> ServerTabInfo-1.16.1-1.3.1.jar):
+		ServerTabInfo-1.16.1-1.3.1.jar:
+			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
+
+	Simply Backpacks (simplybackpacks-1.16.1-1.4.8.jar --> simplybackpacks-1.16.1-1.4.9.jar):
+		simplybackpacks-1.16.1-1.4.9.jar:
+			Fixed offhand placements while opening backpacks.
+
+	Tool Stats (ToolStats-1.16.1-2.0.3.jar --> ToolStats-1.16.1-2.0.4.jar):
+		ToolStats-1.16.1-2.0.4.jar:
+			* Fixed tooltips showing below f3+h durability tooltip. - Tyler Hancock
+			* Added the repair cost of tools when looked at in an anvil. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?ToolStats)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Torchmaster (torchmaster-2.3.1-alpha.jar --> torchmaster-2.3.2-alpha.jar):
+		torchmaster-2.3.2-alpha.jar:
+			v2.3.2-alpha
+			* replace InvisibleLight Blocks from Feral Flare Lantern with actual light emitting Air Blocks. This should improve compatibility with other mods and MC itself.
+			v2.3.1-alpha
+			* add aggresiveSpawnChecks configuration option. This will override the spawn checks of other mods if they returned "ALLOW" earlier in the chain.
+			* Remove fatal logging of config changes on disk
+			v2.3.0-alpha
+			* Initial Port to MC 1.16
+			v2.2.1
+			* Add missing Translations [thanks to ChloeDawn]
+			* Do not log debug statements by default [thanks to ChloeDawn]
+			v2.2.0
+			* Last feature release for MC 1.15, sorry no terrain lighter :/
+			* Fix dread lamp not working at all
+			* Fix dread lamp hit box
+			v2.1.0-rc1
+			* Upgrade to MC 1.15.2
+			v2.1.0-rc0
+			* Initial Port to 1.15.1
+			v2.0.0-rc2
+			* Fixed feral flare lantern and dreadlamp not dropping when broken.
+			v2.0.0-rc1
+			* Fixed tesselating crash when placing a feral flare lantern
+			v2.0.0-rc0
+			* first release candidate, written from scratch
+			* Improved Mega Torch from first 1.14 release
+			* Added Dread Lamp
+			* Added Feral Flare Lantern (LoS feature is currently missing but will come in the next release candidate)
+			* Added Frozen Pearl (Not really that useful anymore since the lantern now removes all lights when it gets removed, but just in case)
+			* Added entity black/white listing for megatorch and dreadlamp via config
+
+	Trash Cans (trashcans-1.0.2-mc1.16 --> trashcans-1.0.2a-mc1.16):
+		trashcans-1.0.2a-mc1.16:
+			* added a license to mods.toml
+
+	Waystones (Waystones_1.16.1-7.0.2.jar --> Waystones_1.16.1-7.1.0.jar):
+		Waystones_1.16.1-7.1.0.jar:
+			Added option to define minimum base xp cost for warping
+			Added Hungarian translation ([by excodex](https://github.com/blay09/Waystones/pull/269))
+			Disabled all xp cost by default
+			Rebalanced Warp Scroll and Return Scroll recipes to use fewer ender pearls
+			Allow maximumXpCost to be set to 0, allowing disabling all XP costs in a single place
+			Allow use time limits to be higher than 127
+			Fixed boss bars disappearing on warp
+			Fixed config options not syncing properly from server to client
+			Fixed crash if data tag was missing on bound scrolls
+
+	Xaero's Minimap (v20.19.0 for Forge 1.16.1 --> v20.20.0 for Forge 1.16.1):
+		v20.20.0 for Forge 1.16.1:
+			* Compatible with Xaero's World Map 1.10.0 or newer. No longer compatible with older versions.
+			+ Added the first server side feature. Installing this mod on the server side (in addition to client) will now make multiworld detection reliable. Although this will change which waypoint sub-world is "auto".
+			If you're using the world map mod, then just select your old map and confirm. No further action required as it will also restore your waypoints.
+			If you are NOT using the world map, then go to the waypoints menu, select the correct sub-world from the top-right dropdown menu and use Options -> Make Sub-World Auto.
+			+ Added a new option "ignoreServerLevelId" to config.txt in XaeroWaypoints for ignoring the new server-controlled sub-world selection.
+			* Fixed the mod crashing when installed on server side.
+			* Cave detection will now ignore sky light too when the "Ignore Server Heightmaps" option is enabled.
+			* Removed API for an old plugin which is out of date and no longer developed.
+
+		v20.20.0 for Fabric 1.16.1:
+			* Compatible with Xaero's World Map 1.10.0 or newer. No longer compatible with older versions.
+			+ Added the first server side feature. Installing this mod on the server side (in addition to client) will now make multiworld detection reliable. Although this will change which waypoint sub-world is "auto".
+			If you're using the world map mod, then just select your old map and confirm. No further action required as it will also restore your waypoints.
+			If you are NOT using the world map, then go to the waypoints menu, select the correct sub-world from the top-right dropdown menu and use Options -> Make Sub-World Auto.
+			+ Added a new option "ignoreServerLevelId" to config.txt in XaeroWaypoints for ignoring the new server-controlled sub-world selection.
+			* Fixed the mod crashing when installed on server side.
+			* Cave detection will now ignore sky light too when the "Ignore Server Heightmaps" option is enabled.
+			* Removed API for an old plugin which is out of date and no longer developed.
+
+	Xaero's World Map (v1.9.0 for Forge 1.16.1 --> v1.10.0 for Forge 1.16.1):
+		v1.10.0 for Forge 1.16.1:
+			* Compatible with Xaero's Minimap / Better PVP 20.18.0 or newer.
+			+ Added the first server side feature. Installing this mod on the server side (in addition to client) will now make world map confirmation automatic and reliable.
+			IMPORTANT: If you have previously used this mod, make sure to select your old map in the map selection screen (world map -> bottom left icon -> top dropdown menu) and confirm. The mod will pick the correct map from then on. You will have to do this once for every dimension but it's worth it.
+			+ Added a new option "ignoreServerLevelId" to server_config.txt for ignoring the new server map selection mode, since it's forced by default.
+			* Added automatic map name generation for world spawn and server level id based maps. Previously just displayed the map id, which was causing confusion.
+			* Fixed rare race condition during cleanup.
+			* Fixed page buttons in mod settings not displaying correctly without the minimap mod.
+			* Fixed the mod crashing when installed on server side.
+
+		v1.10.0 for Fabric 1.16.1:
+			* Compatible with Xaero's Minimap / Better PVP 20.18.0 or newer.
+			+ Added the first server side feature. Installing this mod on the server side (in addition to client) will now make world map confirmation automatic and reliable.
+			IMPORTANT: If you have previously used this mod, make sure to select your old map in the map selection screen (world map -> bottom left icon -> top dropdown menu) and confirm. The mod will pick the correct map from then on. You will have to do this once for every dimension but it's worth it.
+			+ Added a new option "ignoreServerLevelId" to server_config.txt for ignoring the new server map selection mode, since it's forced by default.
+			* Added automatic map name generation for world spawn and server level id based maps. Previously just displayed the map id, which was causing confusion.
+			* Fixed rare race condition during cleanup.
+			* Fixed page buttons in mod settings not displaying correctly without the minimap mod.
+			* Fixed the mod crashing when installed on server side.
+
+Removed:
+- The Official Enigmatica Resource Pack
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
