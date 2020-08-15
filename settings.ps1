@@ -1,7 +1,7 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "xaeros_minimap", "xaerosworldmap", "toastcontrol", "packmenu", "servertabinfo")
+$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "xaeros_minimap", "xaerosworldmap", "toastcontrol", "packmenu")
 
 	
 # =====================================================================//
@@ -18,10 +18,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.2.6"
+$MODPACK_VERSION = "0.2.7"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.2.5"
+$LAST_MODPACK_VERSION = "0.2.6"
 
 $FORGE_VERSION = 32.0.108
 
@@ -101,7 +101,7 @@ $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_MANIFEST_BUILDER_MODULE = $false
+$ENABLE_MANIFEST_BUILDER_MODULE = $true
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
