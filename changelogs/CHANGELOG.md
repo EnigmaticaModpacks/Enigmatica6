@@ -10,7 +10,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Changes**
 
-- 
+- Apotheosis: Max Sugarcane height is now 10
 
 **Bug Fixes**
 
