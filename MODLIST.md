@@ -1,9 +1,10 @@
-## Enigmatica 6 - 0.2.7 Modlist
+## Enigmatica 6 - 0.2.8 Modlist
 - Abnormals-Core-1.16.1-2.0.2
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
 - AI-Improvements-1.16.1-0.3.0
 - AmbientSounds_v3.0.20_mc1.16.2
+- angelring-1.16.1-1.3.0
 - Apotheosis-1.16.1-4.1.0
 - AppleSkin-mc1.16.1-forge-1.0.14
 - appliedenergistics2-8.0.0-beta.1
@@ -21,7 +22,7 @@
 - BetterMineshaftsForge-1.16.1-1.3
 - bigbuckets-1.1.1
 - BiomesOPlenty-1.16.1-11.0.0.393-universal
-- Bookshelf-1.16.1-6.3.20
+- Bookshelf-1.16.1-6.3.21
 - Botania-1.16-402
 - BotanyPots-1.16.1-3.0.6
 - Bountiful Baubles FORGE-1.16.1-0.0.1
@@ -63,12 +64,12 @@
 - EmendatusEnigmatica-1.16.1-1.0.4
 - EnchantmentDescriptions-1.16.1-3.0.2
 - EnderMail-1.16.1-1.1.3
-- engineersdecor-1.16.1-1.1.1-b6
+- engineersdecor-1.16.1-1.1.1-b7
 - enigmatica-1.16.1-0.1.0
 - environmentalcreepers-forge-1.16.1-1.6.1
 - extlights-3.0
 - extradisks-1.16.1-1.3.1
-- extremeSoundMuffler-2.0.2_Forge-1.16.1
+- extremeSoundMuffler-2.0.3_Forge-1.16.1
 - FarmingForBlockheads_1.16.1-7.0.2
 - FastFurnace-1.16.1-4.1.1
 - FastLeafDecay-v23
@@ -86,7 +87,7 @@
 - globalxp-1.16.1-v1.4.13
 - iChunUtil-1.16.1-9.0.0
 - ImmersiveEngineering-1.16.1-3.1-112
-- industrial-foregoing-1.16.1-3.0.4-eeeb31e
+- industrial-foregoing-1.16.1-3.0.5-7e692e4
 - Interactio-1.16.1-2.0.4
 - InventoryEssentials_1.16.1-2.0.0
 - invtweaks-1.16.2-1.0.0
@@ -143,6 +144,7 @@
 - QuarkOddities-1.15.2
 - rad-1.16-4.0.1
 - randompatches-1.16.1-1.22.1.1
+- rangedpumps-0.8
 - ReAuth-1.16-Forge-3.9.0
 - refinedstorage-1.9.2
 - refinedstorageaddons-0.7
@@ -154,12 +156,12 @@
 - ServerTabInfo-1.16.1-1.3.1
 - SimpleDiscordRichPresence-1.16.1-1.3.2
 - simplefarming-1.16.1-1.3.2
-- simplybackpacks-1.16.1-1.4.9
+- simplybackpacks-1.16.1-1.4.10
 - simplylight-1.16.1-1.0.2
 - SnowRealMagic-1.16.1-2.0.1
 - snowundertrees-1.16.1-v1.1.1
 - solcarrot-1.16.1-1.9.7
-- StorageDrawers-1.16.1-8.0.0
+- StorageDrawers-1.16.2-8.1.0
 - StrongerSnowballs-1.16.1-2.0.1
 - structure-gel-api-1.16.1-1.2.1
 - tellme-forge-1.16.1-0.8.1
@@ -178,6 +180,8 @@
 - tramplestopper-1.15.2-2.0.0.3-universal
 - trashcans-1.0.2a-mc1.16
 - TrashSlot_1.16.1-12.0.1
+- useful_backpacks-1.16.1-1.11.2.74
+- u_team_core-1.16.1-3.1.3.170
 - valhelsia_structures-16.0.1
 - vanillaexcavators-1.16.1-2.1.1
 - vanillahammers-1.16.1-2.1.1
