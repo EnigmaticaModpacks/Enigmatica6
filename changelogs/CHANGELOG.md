@@ -10,12 +10,14 @@ After community feedback, we've decided to re-add Useful Backpacks and Ranged Pu
 
 **Mod Additions**
 
+- Angel Ring [\#144](https://github.com/NillerMedDild/Enigmatica6/issues/144)
 - Useful Backpacks
 - Ranged Pumps
 
 **Changes**
 
 - Apotheosis: Decreased boss, brutal spawner and swarm spawner frequencies.
+- Default Keybindings: Updated with new mod keys, unbound rarely used keys.
 - Immersive Engineering: Buffed the Pump's pump speed when powered.
 - Ranged Pumps: Increased speed, reduced tank capicity, improved energy capacity, increased energy usage.
 
@@ -24,6 +26,10 @@ After community feedback, we've decided to re-add Useful Backpacks and Ranged Pu
 - Mekanism: Disabled Fluorite Ore from spawning, so only the EE variants spawn.
 - Unification: Some Mekanism Ores being unprocessable - Not a big deal since you can't obtain them, but still.
 - Unification: Chunks only being convertable to smooth stone Ore in the Stonecutter.
+- Simply Backpacks erasing items, needs update [\#150](https://github.com/NillerMedDild/Enigmatica6/issues/150)
+- No Recipe for Ender Dust [\#149](https://github.com/NillerMedDild/Enigmatica6/issues/149)
+- Same Ores on Overworld [\#148](https://github.com/NillerMedDild/Enigmatica6/issues/148)
+- Aquaculture tin cans give iron [\#146](https://github.com/NillerMedDild/Enigmatica6/issues/146)
 
 
 
