@@ -1,10 +1,43 @@
+#### Enigmatica 6 v0.2.8
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.8.txt)_
+
+
+
+After community feedback, we've decided to re-add Useful Backpacks and Ranged Pumps, as they have features that would be sorely missed.
+
+
+
+**Mod Additions**
+
+- Useful Backpacks
+- Ranged Pumps
+
+**Changes**
+
+- Apotheosis: Decreased boss, brutal spawner and swarm spawner frequencies.
+- Immersive Engineering: Buffed the Pump's pump speed when powered.
+- Ranged Pumps: Increased speed, reduced tank capicity, improved energy capacity, increased energy usage.
+
+**Bug Fixes**
+
+- Mekanism: Disabled Fluorite Ore from spawning, so only the EE variants spawn.
+- Unification: Some Mekanism Ores being unprocessable - Not a big deal since you can't obtain them, but still.
+- Unification: Chunks only being convertable to smooth stone Ore in the Stonecutter.
+
+
+
 #### Enigmatica 6 v0.2.7
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.7.txt)_
 
 
 
-**Warning: Several mods were removed in 0.2.6. If you're using LargeFluidTanks or Useful Backpacks, make sure to move the contents before updating.**
+**Warning**: Several mods were removed in 0.2.6. If you're using LargeFluidTanks or Useful Backpacks, make sure to move the contents before updating.
+
+
+
+If you're playing in a world that was created with Rats (E6 v0.2.4 and earlier), you will need to readd Rats for that world to work correctly. Download it [here](https://www.curseforge.com/minecraft/mc-mods/rats/files/3020258) and put it in your mods folder. 
 
 
 
