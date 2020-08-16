@@ -22,19 +22,23 @@ events.listen('recipes', function (event) {
         event.remove({ type: 'minecraft:stonecutting', output: item });
     });
 
+    var conversionTypes = ['storage_blocks', 'ores'];
+
     // Conversion between different storage_blocks of the same material
-    materialsToUnify.forEach(function (material) {
-        var storage_block_tag = ingredient.of('#forge:storage_blocks/' + material);
-        if (storage_block_tag.stacks.size() > 1) {
-            storage_block_tag.stacks.forEach(function (storage_block) {
-                event.recipes.minecraft.stonecutting({
-                    ingredient: {
-                        tag: 'forge:storage_blocks/' + material
-                    },
-                    result: storage_block.id,
-                    count: 1
+    conversionTypes.forEach(function (type) {
+        materialsToUnify.forEach(function (material) {
+            var storage_block_tag = ingredient.of('#forge:' + type + '/' + material);
+            if (storage_block_tag.stacks.size() > 1) {
+                storage_block_tag.stacks.forEach(function (storage_block) {
+                    event.recipes.minecraft.stonecutting({
+                        ingredient: {
+                            tag: 'forge:' + type + '/' + material
+                        },
+                        result: storage_block.id,
+                        count: 1
+                    });
                 });
-            });
-        }
+            }
+        });
     });
 });
