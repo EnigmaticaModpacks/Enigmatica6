@@ -1,0 +1,65 @@
+=======================================
+Enigmatica6 0.2.7 --> Enigmatica6 0.2.8
+=======================================
+
+Added:
+- Angel Ring
+- Ranged Pumps
+- U Team Core
+- Useful Backpacks
+
+Updated:
+	Bookshelf (Bookshelf-1.16.1-6.3.20.jar --> Bookshelf-1.16.1-6.3.21.jar):
+		Bookshelf-1.16.1-6.3.21.jar:
+			* Compile against Forge 108. - Tyler Hancock
+			* Added a debug translation key command. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Bookshelf)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.1-b6.jar --> engineersdecor-1.16.1-1.1.1-b7.jar):
+		engineersdecor-1.16.1-1.1.1-b7.jar:
+			* v1.1.1-b7  [F] Fixed AI-open-path bug (issue #116, ty KrAzYGEEK32, desht).
+			[F] Conditional recipes extended to additional vanilla ingredients in case of oredict tag issues.
+			[M] Lang file update zh_cn (PR#117, Moonisky).
+			* v1.1.1-b6  [F] Iron Hatch rendering fixed (issue #113, ty KrAzYGEEK32).
+			[F] Hotfix of UI tooltip crash for versions Forge < 32.0.97 mapping issue.
+			* v1.1.1-b5  [M] Transmuted the "Treated Wood Crafting Table" to a "Metal Crafting Table"
+			to de-duplicate the new Immersive Engineering "Engineer's Crafting Table".
+			[F] Fixed metal pole culling (issue #109, thx Alsett).
+			* v1.1.1-b4  [F] Fixed Fluid Barrel tooltip text duplicate.
+			[F] Fixed IE hard-dependency opt-out.
+			[M] Side Table model and shape refined.
+			[A] Dense Grit Dirt added.
+			[M] Wood textures slightly darker, obsolete textures removed.
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+	Extreme sound muffler (Forge) (extremeSoundMuffler-2.0.2_Forge-1.16.1 --> extremeSoundMuffler-2.0.3_Forge-1.16.1):
+		extremeSoundMuffler-2.0.3_Forge-1.16.1:
+			Fixed info text being created in the wrong folder.
+
+	Industrial Foregoing (industrial-foregoing-1.16.1-3.0.4-eeeb31e.jar --> industrial-foregoing-1.16.1-3.0.5-7e692e4.jar):
+		industrial-foregoing-1.16.1-3.0.5-7e692e4.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md)
+
+	Simply Backpacks (simplybackpacks-1.16.1-1.4.9.jar --> simplybackpacks-1.16.1-1.4.10.jar):
+		simplybackpacks-1.16.1-1.4.10.jar:
+			"Should" fix the item loss with auto pickup bug... hopefully...
+
+	Storage Drawers (StorageDrawers-1.16.1-8.0.0.jar --> StorageDrawers-1.16.2-8.1.0.jar):
+		StorageDrawers-1.16.2-8.1.0.jar:
+			* Updated for Miencraft 1.16.2
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
