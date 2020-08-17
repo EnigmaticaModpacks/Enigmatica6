@@ -8,6 +8,10 @@ function shapelessRecipe(result, ingredients) {
     return { result: result, ingredients: ingredients };
 }
 
+function unificationBlacklistEntry(material, type) {
+    return { material: material, type: type };
+}
+
 function compareIndices(a, b) {
     var aVal = modPriorities.indexOf(a);
     var bVal = modPriorities.indexOf(b);

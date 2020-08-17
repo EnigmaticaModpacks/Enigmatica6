@@ -1,4 +1,8 @@
-//priority: 1000
+//priority: 1001
+
+function unificationBlacklistEntry(material, type) {
+    return { material: material, type: type };
+}
 
 var air = 'minecraft:air';
 
@@ -82,6 +86,8 @@ var materialsToUnify = [
     'redstone',
     'glowstone'
 ];
+
+var unificationBlacklist = [unificationBlacklistEntry('quartz', 'gem')];
 
 var modPriorities = [
     'emendatusenigmatica',
