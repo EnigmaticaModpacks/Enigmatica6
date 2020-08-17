@@ -1,3 +1,17 @@
+#### Enigmatica 6 v0.2.9
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.9.txt)_
+
+**Mod Additions**
+
+- 
+
+**Changes**
+
+- Applied Energistics: Certus can now be charged in the Powah Energizer (Credit Rid)
+
+
+
 #### Enigmatica 6 v0.2.8
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.8.txt)_
