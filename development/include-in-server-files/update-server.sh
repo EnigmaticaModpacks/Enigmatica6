@@ -46,4 +46,6 @@ git pull
 
 ./remove-client-mods.sh
 
-cp --force "$OVERRIDES_FOLDER"/* "$(dirname "$OVERRIDES_FOLDER")"/
+if [ -d "$OVERRIDES_FOLDER" ]; then
+	cp --force "$OVERRIDES_FOLDER"/* "$(dirname "$OVERRIDES_FOLDER")"/
+fi
