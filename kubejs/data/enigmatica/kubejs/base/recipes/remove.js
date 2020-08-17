@@ -7,6 +7,7 @@ events.listen('recipes', function (event) {
         'additionalbars:crossed_iron_bars',
 
         //'akashictome:tome',
+        'laserrelays:color_filter',
 
         'mekanism:combiner',
         'mekanism:basic_combining_factory',

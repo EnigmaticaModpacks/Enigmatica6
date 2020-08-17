@@ -56,6 +56,9 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe('minecraft:horn_coral_block', ['AA', 'AA'], {
             A: 'minecraft:horn_coral_fan'
+        }),
+        shapedRecipe('laserrelays:color_filter', ['AAA'], {
+            A: '#forge:glass_panes/white'
         })
     ];
 
