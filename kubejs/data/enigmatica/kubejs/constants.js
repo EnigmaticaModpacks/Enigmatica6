@@ -87,7 +87,10 @@ var materialsToUnify = [
     'glowstone'
 ];
 
-var unificationBlacklist = [unificationBlacklistEntry('quartz', 'gem')];
+var unificationBlacklist = [
+    unificationBlacklistEntry('quartz', 'gem'),
+    unificationBlacklistEntry('quartz', 'storage_block')
+];
 
 var modPriorities = [
     'emendatusenigmatica',
