@@ -1,6 +1,7 @@
 events.listen('item.tags', function (event) {
     var gems = 'forge:gems';
     var gems_certus = gems + '/certus';
+    var gems_charged_certus_quartz = gems + '/charged_certus_quartz';
     var gems_ender = gems + '/ender';
     var gems_fluix = gems + '/fluix';
     // event.get('forge:gems').add('rftoolsbase:dimensionalshard');
@@ -9,6 +10,7 @@ events.listen('item.tags', function (event) {
     event.get(gems).add('minecraft:ender_pearl');
     event.get(gems_ender).add('minecraft:ender_pearl');
     event.get(gems_fluix).add('appliedenergistics2:fluix_crystal');
+    event.get(gems_charged_certus_quartz).add('appliedenergistics2:charged_certus_quartz_crystal');
     event
         .get(gems_certus)
         .add('appliedenergistics2:certus_quartz_crystal')
