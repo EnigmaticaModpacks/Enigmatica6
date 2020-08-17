@@ -4,11 +4,19 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
-- 
+- More Dragon Eggs
 
 **Changes**
 
-- Applied Energistics: Certus can now be charged in the Powah Energizer (Credit Rid)
+- Applied Energistics: Certus can now be charged in the Powah Energizer (Credit Rid) [\#160](https://github.com/NillerMedDild/Enigmatica6/issues/160)
+- Applied Energistics: Enriching recipes to grow AE2 crystal seeds into Pure crystals
+
+**Bug Fixes**
+
+- Applied Energistics: Recipe requiring Charged Certus don't work [\#164](https://github.com/NillerMedDild/Enigmatica6/issues/164)
+- Applied Energistics: Fluix unobtainable [\#163](https://github.com/NillerMedDild/Enigmatica6/issues/163)
+- Applied Energistics: Can't make charged certus quartz [\#160](https://github.com/NillerMedDild/Enigmatica6/issues/160)
+- Botania: Quartz Variants Unobtainable [\#165](https://github.com/NillerMedDild/Enigmatica6/issues/165)
 
 
 

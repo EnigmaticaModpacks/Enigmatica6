@@ -1,10 +1,10 @@
-## Enigmatica 6 - 0.2.8 Modlist
+## Enigmatica 6 - 0.2.9 Modlist
 - Abnormals-Core-1.16.1-2.0.2
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
 - AI-Improvements-1.16.1-0.3.0
 - AmbientSounds_v3.0.20_mc1.16.2
-- angelring-1.16.1-1.3.0
+- angelring-1.16.1-1.3.1
 - Apotheosis-1.16.1-4.1.0
 - AppleSkin-mc1.16.1-forge-1.0.14
 - appliedenergistics2-8.0.0-beta.1
@@ -40,7 +40,7 @@
 - cloth-config-forge-4.0.2
 - Clumps-6.0.0.3
 - comforts-FORGE-1.16.1-3.0.0.1
-- connectedglass-1.0.6a-mc1.16
+- connectedglass-1.0.6-mc1.16.1
 - Controlling-7.0.0.3
 - CookingForBlockheads_1.16.1-9.0.2
 - CosmeticArmorReworked-1.16.1-v1b
@@ -86,7 +86,7 @@
 - GameStages-1.16.1-3.1.8
 - globalxp-1.16.1-v1.4.13
 - iChunUtil-1.16.1-9.0.0
-- ImmersiveEngineering-1.16.1-3.1-112
+- ImmersiveEngineering-1.16.1-3.2.0-115
 - industrial-foregoing-1.16.1-3.0.5-7e692e4
 - Interactio-1.16.1-2.0.4
 - InventoryEssentials_1.16.1-2.0.0
@@ -118,6 +118,7 @@
 - mininggadgets-1.4.0
 - modnametooltip_1.16.1-1.14.0
 - modular-routers-1.16.1-7.0.1-29
+- moredragoneggs-1.1
 - morevanillalib-1.16.1-1.2.8
 - Morpheus-1.16.1-4.2.55
 - MouseTweaks-2.13-mc1.16.1
@@ -177,8 +178,8 @@
 - torchmaster-2.3.2-alpha
 - toughnessbar-6.0
 - towers_of_the_wild-1.16.1-1.2.2
-- tramplestopper-1.15.2-2.0.0.3-universal
-- trashcans-1.0.2a-mc1.16
+- tramplestopper-1.15.2-2.0.0.5-universal
+- trashcans-1.0.2-mc1.16.1
 - TrashSlot_1.16.1-12.0.1
 - useful_backpacks-1.16.1-1.11.2.74
 - u_team_core-1.16.1-3.1.3.170
