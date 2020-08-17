@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-08-16T20:07:15.6713375Z",
+  "lastPlayed": "2020-08-17T18:39:43.4025877Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -1163,6 +1163,21 @@
       "queryTimestamp": "2020-08-16T19:29:16.0945611Z",
       "fileCount": 1,
       "fileSize": 142302
+    },
+    {
+      "folderName": "useful_backpacks-1.16.1-1.11.2.74.jar",
+      "fingerprint": 343562082,
+      "fileDateHash": 1708457791,
+      "sectionID": 8,
+      "individualFingerprints": [
+        343562082
+      ],
+      "status": 1,
+      "timestamp": "2020-08-16T20:17:10.9287213Z",
+      "lastWriteTimeUtc": "2020-08-16T20:07:02.1296715Z",
+      "queryTimestamp": "2020-08-16T20:17:11.3802606Z",
+      "fileCount": 1,
+      "fileSize": 103183
     },
     {
       "folderName": "InventoryEssentials_1.16.1-2.0.0.jar",
@@ -2558,6 +2573,21 @@
       "fileSize": 4193
     },
     {
+      "folderName": "u_team_core-1.16.1-3.1.3.170.jar",
+      "fingerprint": 3809465701,
+      "fileDateHash": 2369642055,
+      "sectionID": 8,
+      "individualFingerprints": [
+        3809465701
+      ],
+      "status": 1,
+      "timestamp": "2020-08-16T20:17:10.9297195Z",
+      "lastWriteTimeUtc": "2020-08-16T20:07:01.9379111Z",
+      "queryTimestamp": "2020-08-16T20:17:11.413843Z",
+      "fileCount": 1,
+      "fileSize": 451099
+    },
+    {
       "folderName": "NetherPortalFix_1.16.1-7.0.1.jar",
       "fingerprint": 74563793,
       "fileDateHash": 3702200262,
@@ -3947,7 +3977,7 @@
       "dateInstalled": "2020-08-02T06:13:41.2329059Z",
       "dateUpdated": "2020-08-15T22:56:50.0191407Z",
       "dateLastUpdateAttempted": "2020-08-15T22:56:50.0191407Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7674,22 +7704,22 @@
       "addonID": 297028,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3017193,
-        "displayName": "tramplestopper-1.15.2-2.0.0.3-universal.jar",
-        "fileName": "tramplestopper-1.15.2-2.0.0.3-universal.jar",
-        "fileDate": "2020-07-28T14:53:48.577Z",
+        "id": 3035085,
+        "displayName": "tramplestopper-1.15.2-2.0.0.5-universal.jar",
+        "fileName": "tramplestopper-1.15.2-2.0.0.5-universal.jar",
+        "fileDate": "2020-08-17T15:43:08.313Z",
         "fileLength": 6474,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3017/193/tramplestopper-1.15.2-2.0.0.3-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3035/85/tramplestopper-1.15.2-2.0.0.5-universal.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1243460512,
+            "fingerprint": 798128370,
             "type": 0
           },
           {
@@ -7703,7 +7733,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 2394187116,
+        "packageFingerprint": 2157544038,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -7717,12 +7747,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "tramplestopper-1.15.2-2.0.0.3-universal.jar"
+        "FileNameOnDisk": "tramplestopper-1.15.2-2.0.0.5-universal.jar"
       },
       "dateInstalled": "2020-08-02T20:31:28.5965559Z",
-      "dateUpdated": "2020-08-06T18:17:39.7373873Z",
-      "dateLastUpdateAttempted": "2020-08-06T18:17:39.7373873Z",
-      "status": 5,
+      "dateUpdated": "2020-08-17T17:13:44.078827Z",
+      "dateLastUpdateAttempted": "2020-08-17T17:13:44.078827Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8136,7 +8166,7 @@
       "dateInstalled": "2020-08-02T06:13:37.9915897Z",
       "dateUpdated": "2020-08-16T14:24:33.8265653Z",
       "dateLastUpdateAttempted": "2020-08-16T14:24:33.8265653Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8407,14 +8437,14 @@
       "addonID": 394535,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3031549,
-        "displayName": "trashcans-1.0.2a-mc1.16",
-        "fileName": "trashcans-1.0.2a-mc1.16.jar",
-        "fileDate": "2020-08-13T20:28:28.907Z",
-        "fileLength": 125920,
+        "id": 3034862,
+        "displayName": "trashcans-1.0.2-mc1.16.1",
+        "fileName": "trashcans-1.0.2-mc1.16.1.jar",
+        "fileDate": "2020-08-17T09:12:56.88Z",
+        "fileLength": 125908,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3031/549/trashcans-1.0.2a-mc1.16.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3034/862/trashcans-1.0.2-mc1.16.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -8422,12 +8452,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3643699327,
+            "fingerprint": 1324921429,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 1373412500,
+            "fingerprint": 268450757,
             "type": 0
           },
           {
@@ -8451,7 +8481,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 1664898892,
+        "packageFingerprint": 743354566,
         "gameVersion": [
           "1.16.1",
           "1.16",
@@ -8466,12 +8496,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "trashcans-1.0.2a-mc1.16.jar"
+        "FileNameOnDisk": "trashcans-1.0.2-mc1.16.1.jar"
       },
       "dateInstalled": "2020-08-02T20:31:28.5935634Z",
-      "dateUpdated": "2020-08-15T18:39:41.7437443Z",
-      "dateLastUpdateAttempted": "2020-08-15T18:39:41.7437443Z",
-      "status": 5,
+      "dateUpdated": "2020-08-17T17:13:46.8555801Z",
+      "dateLastUpdateAttempted": "2020-08-17T17:13:46.8555801Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9539,7 +9569,7 @@
       "dateInstalled": "2020-08-07T19:42:28.3856496Z",
       "dateUpdated": "2020-08-16T07:17:45.7908259Z",
       "dateLastUpdateAttempted": "2020-08-16T07:17:45.7908259Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10788,103 +10818,85 @@
       "addonID": 231951,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3024200,
-        "displayName": "ImmersiveEngineering-1.16.1-3.1-112",
-        "fileName": "ImmersiveEngineering-1.16.1-3.1-112.jar",
-        "fileDate": "2020-08-05T15:13:12.29Z",
-        "fileLength": 8291698,
+        "id": 3034892,
+        "displayName": "ImmersiveEngineering-1.16.1-3.2.0-115",
+        "fileName": "ImmersiveEngineering-1.16.1-3.2.0-115.jar",
+        "fileDate": "2020-08-17T10:17:18.777Z",
+        "fileLength": 8387924,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3024/200/ImmersiveEngineering-1.16.1-3.1-112.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3034/892/ImmersiveEngineering-1.16.1-3.2.0-115.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2777023011,
-            "type": 3
+            "fingerprint": 1369820683,
+            "type": 0
           },
           {
             "foldername": ".cache",
-            "fingerprint": 786463230,
-            "type": 3
+            "fingerprint": 1142332198,
+            "type": 0
           },
           {
             "foldername": "asm",
             "fingerprint": 2319055413,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 2035816050,
-            "type": 3
+            "fingerprint": 2304059639,
+            "type": 0
           },
           {
             "foldername": "blusunrize",
-            "fingerprint": 153416860,
-            "type": 3
+            "fingerprint": 422323131,
+            "type": 0
           },
           {
             "foldername": "data",
-            "fingerprint": 1294278474,
-            "type": 3
+            "fingerprint": 3282608000,
+            "type": 0
           },
           {
             "foldername": "invtweaks",
             "fingerprint": 1311683996,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "logo.png",
             "fingerprint": 3522495669,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 4218963876,
-            "type": 3
+            "type": 0
           }
         ],
-        "packageFingerprint": 844318950,
+        "packageFingerprint": 2579883857,
         "gameVersion": [
           "1.16.1",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000001",
-            "gameVersion": "1.16.1",
-            "gameVersionReleaseDate": "2020-06-24T12:41:11.823Z",
-            "gameVersionName": "1.16.1"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1947185,
-        "projectId": 231951,
-        "packageFingerprintId": 500261727,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2359392,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ImmersiveEngineering-1.16.1-3.1-112.jar"
+        "FileNameOnDisk": "ImmersiveEngineering-1.16.1-3.2.0-115.jar"
       },
       "dateInstalled": "2020-08-12T21:28:03.2857237Z",
-      "dateUpdated": "2019-08-12T21:28:03.2857237Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-08-17T17:13:35.5700064Z",
+      "dateLastUpdateAttempted": "2020-08-17T17:13:35.5700064Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11667,7 +11679,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 351725,
@@ -12291,7 +12303,7 @@
       "dateInstalled": "2020-08-02T06:13:41.217282Z",
       "dateUpdated": "2020-08-16T14:24:40.6128006Z",
       "dateLastUpdateAttempted": "2020-08-16T14:24:40.6128006Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12743,6 +12755,84 @@
       "installedTargets": null
     },
     {
+      "addonID": 335051,
+      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
+      "installedFile": {
+        "id": 3023015,
+        "displayName": "extlights-3.0.jar",
+        "fileName": "extlights-3.0.jar",
+        "fileDate": "2020-08-04T05:24:11.83Z",
+        "fileLength": 600177,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3023/15/extlights-3.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": false,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2957092102,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2619595308,
+            "type": 0
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3823566985,
+            "type": 0
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 183984640,
+            "type": 0
+          },
+          {
+            "foldername": "extlights.png",
+            "fingerprint": 1506753512,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 476357344,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 423617985,
+        "gameVersion": [
+          "1.16.1",
+          "1.16"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-06-23T13:41:08.75Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "extlights-3.0.jar"
+      },
+      "dateInstalled": "2020-08-05T19:46:00.8195782Z",
+      "dateUpdated": "2020-08-05T19:46:00.8225705Z",
+      "dateLastUpdateAttempted": "2020-08-05T19:46:00.8225705Z",
+      "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 274338,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
@@ -12833,84 +12923,6 @@
       "dateUpdated": "2020-08-16T20:07:02.1386393Z",
       "dateLastUpdateAttempted": "2020-08-16T20:07:02.1386393Z",
       "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 335051,
-      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
-      "installedFile": {
-        "id": 3023015,
-        "displayName": "extlights-3.0.jar",
-        "fileName": "extlights-3.0.jar",
-        "fileDate": "2020-08-04T05:24:11.83Z",
-        "fileLength": 600177,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3023/15/extlights-3.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": false,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2957092102,
-            "type": 0
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 2619595308,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3823566985,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 183984640,
-            "type": 0
-          },
-          {
-            "foldername": "extlights.png",
-            "fingerprint": 1506753512,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 476357344,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 423617985,
-        "gameVersion": [
-          "1.16.1",
-          "1.16"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-06-23T13:41:08.75Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "extlights-3.0.jar"
-      },
-      "dateInstalled": "2020-08-05T19:46:00.8195782Z",
-      "dateUpdated": "2020-08-05T19:46:00.8225705Z",
-      "dateLastUpdateAttempted": "2020-08-05T19:46:00.8225705Z",
-      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13410,17 +13422,23 @@
       "addonID": 333396,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 2998531,
-        "displayName": "Angel Ring v1.3.0 [1.16.1]",
-        "fileName": "angelring-1.16.1-1.3.0.jar",
-        "fileDate": "2020-07-07T15:26:14.547Z",
-        "fileLength": 19327,
+        "id": 3034548,
+        "displayName": "Angel Ring v1.3.1 [1.16.1]",
+        "fileName": "angelring-1.16.1-1.3.1.jar",
+        "fileDate": "2020-08-16T23:45:20.013Z",
+        "fileLength": 19456,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2998/531/angelring-1.16.1-1.3.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3034/548/angelring-1.16.1-1.3.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 3,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 309927,
@@ -13432,7 +13450,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2606565283,
+            "fingerprint": 3939759951,
             "type": 0
           },
           {
@@ -13456,10 +13474,9 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 2971501572,
+        "packageFingerprint": 3967999035,
         "gameVersion": [
-          "1.16.1",
-          "Forge"
+          "1.16.1"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
@@ -13467,14 +13484,14 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameVersionDateReleased": "2020-06-24T12:41:11.823Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "angelring-1.16.1-1.3.0.jar"
+        "FileNameOnDisk": "angelring-1.16.1-1.3.1.jar"
       },
       "dateInstalled": "2020-08-16T18:44:02.9278388Z",
-      "dateUpdated": "2020-08-16T18:44:03.0124836Z",
-      "dateLastUpdateAttempted": "2020-08-16T18:44:03.0124836Z",
+      "dateUpdated": "2020-08-17T17:07:30.4741573Z",
+      "dateLastUpdateAttempted": "2020-08-17T17:07:30.4741573Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -17124,14 +17141,14 @@
       "addonID": 383129,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3031553,
-        "displayName": "connectedglass-1.0.6a-mc1.16",
-        "fileName": "connectedglass-1.0.6a-mc1.16.jar",
-        "fileDate": "2020-08-13T20:30:57.753Z",
-        "fileLength": 493382,
+        "id": 3034864,
+        "displayName": "connectedglass-1.0.6-mc1.16.1",
+        "fileName": "connectedglass-1.0.6-mc1.16.1.jar",
+        "fileDate": "2020-08-17T09:14:07.537Z",
+        "fileLength": 493360,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3031/553/connectedglass-1.0.6a-mc1.16.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3034/864/connectedglass-1.0.6-mc1.16.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -17139,12 +17156,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3636941731,
+            "fingerprint": 4085751478,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 3448536283,
+            "fingerprint": 3147258651,
             "type": 0
           },
           {
@@ -17168,7 +17185,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 4139296516,
+        "packageFingerprint": 3175123976,
         "gameVersion": [
           "1.16.1",
           "1.16",
@@ -17183,12 +17200,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "connectedglass-1.0.6a-mc1.16.jar"
+        "FileNameOnDisk": "connectedglass-1.0.6-mc1.16.1.jar"
       },
       "dateInstalled": "2020-08-02T06:13:37.9915897Z",
-      "dateUpdated": "2020-08-15T18:35:46.7074633Z",
-      "dateLastUpdateAttempted": "2020-08-15T18:35:46.7074633Z",
-      "status": 5,
+      "dateUpdated": "2020-08-17T17:13:27.3384744Z",
+      "dateLastUpdateAttempted": "2020-08-17T17:13:27.3384744Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18109,7 +18126,7 @@
       "dateInstalled": "2020-08-02T20:31:28.5915688Z",
       "dateUpdated": "2020-08-16T14:24:48.9988374Z",
       "dateLastUpdateAttempted": "2020-08-16T14:24:48.9988374Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19331,6 +19348,69 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 358700,
+      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
+      "installedFile": {
+        "id": 2989315,
+        "displayName": "moredragoneggs-1.1.jar",
+        "fileName": "moredragoneggs-1.1.jar",
+        "fileDate": "2020-06-26T11:46:31.197Z",
+        "fileLength": 3922,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/2989/315/moredragoneggs-1.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3997724070,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3812705292,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3380797652,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 1820621554,
+        "gameVersion": [
+          "1.16.1",
+          "Forge"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "moredragoneggs-1.1.jar"
+      },
+      "dateInstalled": "2020-08-17T17:09:52.5982739Z",
+      "dateUpdated": "2020-08-17T17:09:52.6022734Z",
+      "dateLastUpdateAttempted": "2020-08-17T17:09:52.6022734Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     }
   ],
   "isMigrated": false,
