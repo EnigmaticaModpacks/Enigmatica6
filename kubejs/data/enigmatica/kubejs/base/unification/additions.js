@@ -110,6 +110,7 @@ function enigmatica_ore_deposit_processing(event, material) {
     var oreDeposit = oreDepositTag.first.id;
 
     var nuggetTag = ingredient.of('#forge:nuggets/' + material);
+    var nugget = getPreferredItemInTag(nuggetTag).id;
 
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
@@ -119,11 +120,11 @@ function enigmatica_ore_deposit_processing(event, material) {
     }
 
     if (nuggetTag.first.id === air) {
-        event.recipes.minecraft.smelting(dustTag, oreDepositTag).xp(1.0);
-        event.recipes.minecraft.blasting(dustTag, oreDepositTag).xp(1.0);
+        event.recipes.minecraft.smelting(dust, oreDepositTag).xp(1.0);
+        event.recipes.minecraft.blasting(dust, oreDepositTag).xp(1.0);
     } else {
-        event.recipes.minecraft.smelting(nuggetTag, oreDepositTag).xp(1.0);
-        event.recipes.minecraft.blasting(nuggetTag, oreDepositTag).xp(1.0);
+        event.recipes.minecraft.smelting(nugget, oreDepositTag).xp(1.0);
+        event.recipes.minecraft.blasting(nugget, oreDepositTag).xp(1.0);
     }
 
     event.recipes.mekanism.enriching({
