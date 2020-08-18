@@ -6,10 +6,10 @@
 		#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
 		worldGenStyle = "BIOME"
 		#EXPERIMENTAL: Set to true if waystones should be added to the generation of villages. NOTE THAT THIS IS CURRENTLY NOT LIMITED TO ONLY ONE WAYSTONE, THEREFORE IT IS NOT RECOMMENDED RIGHT NOW.
-		addVillageStructure = true
+		addVillageStructure = false
 		#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
 		#Range: > 0
-		worldGenFrequency = 0
+		worldGenFrequency = 100
 		#The Name Generator will pick from these names until they have all been used, then it will generate random ones again.
 		customWaystoneNames = ["Sandy City", "Chocolate Island", "Sahara", "The Perimeter"]
 
