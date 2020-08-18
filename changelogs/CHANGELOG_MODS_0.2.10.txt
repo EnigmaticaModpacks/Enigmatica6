@@ -1,0 +1,27 @@
+========================================
+Enigmatica6 0.2.9 --> Enigmatica6 0.2.10
+========================================
+
+Updated:
+	ConnectedTexturesMod (CTM - MC1.16.1-1.1.0.1 --> CTM - MC1.16.1-1.1.1.4):
+		CTM - MC1.16.1-1.1.1.4:
+			CTM MC1.16.1-1.1.1.4
+			Fixes
+			* [#140](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/140) Fix crash on forge 32.0.107+
+			* [#134](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/134), [#135](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/135) Fix model overrides not applying
+			* [#128](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/128) Fix layer overrides not working for some model types
+			* Fix ctm models breaking tile entity item renderers (like chests)
+			* [#129](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/129) Fix broken item models when resources are reloaded while the item is visible
+			* [#130](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/130) Fix generated item models being broken by model overrides
+			* [#133](https://github.com/Chisel-Team/ConnectedTexturesMod/issues/133) Fix random model variants changing when CTM state changes
+
+	Interactio - In-World Crafting with Datapacks! (Interactio-1.16.1-2.0.4.jar --> Interactio-1.16.1-2.0.5.jar):
+		Interactio-1.16.1-2.0.5.jar:
+			[- Update Mappings, fix server not being available on first recipe load](https://github.com/MaxNeedsSnacks/Interactio/commit/ac6d0515ef17d70229d8d738d94b45574928c5d1)
+			Forge moved around server lifecycle events a bit from what it seems, so I couldn't get the recipes until the first reload. This is now fixed!
+
+	Waystones (Waystones_1.16.1-7.1.0.jar --> Waystones_1.16.1-7.1.1.jar):
+		Waystones_1.16.1-7.1.1.jar:
+			Fixed crash on lan connections and on server shutdown
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

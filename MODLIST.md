@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.2.9 Modlist
+## Enigmatica 6 - 0.2.10 Modlist
 - Abnormals-Core-1.16.1-2.0.2
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
@@ -45,7 +45,7 @@
 - CookingForBlockheads_1.16.1-9.0.2
 - CosmeticArmorReworked-1.16.1-v1b
 - CraftingTweaks_1.16.1-12.0.4
-- CTM-MC1.16.1-1.1.0.1
+- CTM-MC1.16.1-1.1.1.4
 - culinaryconstruct-FORGE-1.16.1-3.0.0.2
 - curioofundying-FORGE-1.16.1-4.0
 - curios-FORGE-1.16.1-3.0.0.2
@@ -88,7 +88,7 @@
 - iChunUtil-1.16.1-9.0.0
 - ImmersiveEngineering-1.16.1-3.2.0-115
 - industrial-foregoing-1.16.1-3.0.5-7e692e4
-- Interactio-1.16.1-2.0.4
+- Interactio-1.16.1-2.0.5
 - InventoryEssentials_1.16.1-2.0.0
 - invtweaks-1.16.2-1.0.0
 - ironchest-1.16.1-11.0.1
@@ -187,7 +187,7 @@
 - vanillaexcavators-1.16.1-2.1.1
 - vanillahammers-1.16.1-2.1.1
 - Waddles-1.16.1-0.8.7
-- Waystones_1.16.1-7.1.0
+- Waystones_1.16.1-7.1.1
 - World-Stripper-1.7.2-1.16.1
 - XaerosWorldMap_1.10.0_Forge_1.16.1
 - Xaeros_Minimap_20.20.0_Forge_1.16.1

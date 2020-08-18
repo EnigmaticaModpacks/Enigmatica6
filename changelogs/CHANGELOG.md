@@ -1,3 +1,17 @@
+#### Enigmatica 6 v0.2.10
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.10.txt)_
+
+**Changes**
+
+- Applied Energistics: Normal water-based Fluix recipe now works on servers.
+
+**Bug Fixes**
+
+- Applied Energistics: 1k drive parts can only be crafted with charged certus [\#170](https://github.com/NillerMedDild/Enigmatica6/issues/170)
+- Applied Energistics: Enhanced seed recipe is mixed up [\#168](https://github.com/NillerMedDild/Enigmatica6/issues/168)
+- RS and AE2 Silicon Unification [\#166](https://github.com/NillerMedDild/Enigmatica6/issues/166)
+
 #### Enigmatica 6 v0.2.9
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.9.txt)_
