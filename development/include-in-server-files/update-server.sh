@@ -49,3 +49,5 @@ git pull
 if [ -d "$OVERRIDES_FOLDER" ]; then
 	cp --force "$OVERRIDES_FOLDER"/* "$(dirname "$OVERRIDES_FOLDER")"/
 fi
+
+cp -r --force "$THIRD_PARTY_MODS_FOLDER"/* mods/
