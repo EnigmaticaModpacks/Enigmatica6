@@ -2,8 +2,8 @@ events.listen('recipes', function (event) {
     // AE2 Seeds -> Pure Crystals
     var crystals = [
         ['appliedenergistics2:certus_crystal_seed', 'appliedenergistics2:purified_certus_quartz_crystal'],
-        ['appliedenergistics2:fluix_crystal_seed', 'appliedenergistics2:purified_nether_quartz_crystal'],
-        ['appliedenergistics2:nether_quartz_seed', 'appliedenergistics2:purified_fluix_crystal']
+        ['appliedenergistics2:fluix_crystal_seed', 'appliedenergistics2:purified_fluix_crystal'],
+        ['appliedenergistics2:nether_quartz_seed', 'appliedenergistics2:purified_nether_quartz_crystal']
     ];
     var count = 1;
     crystals.forEach(function (pair) {
