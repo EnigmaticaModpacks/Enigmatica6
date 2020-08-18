@@ -59,6 +59,18 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe('laserrelays:color_filter', ['AAA'], {
             A: '#forge:glass_panes/white'
+        }),
+        shapedRecipe('appliedenergistics2:sky_compass', [' A ', 'ABA', ' A '], {
+            A: '#forge:ingots/iron',
+            B: '#forge:gems/charged_certus_quartz'
+        }),
+        shapedRecipe('appliedenergistics2:charged_staff', ['B  ', ' A ', '  A'], {
+            A: '#forge:ingots/iron',
+            B: '#forge:gems/charged_certus_quartz'
+        }),
+        shapedRecipe('appliedenergistics2:charged_staff', ['B', ' A ', 'A  '], {
+            A: '#forge:ingots/iron',
+            B: '#forge:gems/charged_certus_quartz'
         })
     ];
 

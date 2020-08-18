@@ -5,7 +5,9 @@ events.listen('recipes', function (event) {
 
     var outputRemovals = [
         'additionalbars:crossed_iron_bars',
-
+        'appliedenergistics2:sky_compass',
+        'appliedenergistics2:charged_staff',
+        'appliedenergistics2:quartz_fixture',
         //'akashictome:tome',
         'laserrelays:color_filter',
 

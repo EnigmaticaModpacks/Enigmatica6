@@ -49,6 +49,10 @@ events.listen('recipes', function (event) {
         shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }), [
             'minecraft:book',
             '#forge:dyes/yellow'
+        ]),
+        shapelessRecipe('appliedenergistics2:quartz_fixture', [
+            '#forge:gems/charged_certus_quartz',
+            '#forge:ingots/iron'
         ])
         // shapelessRecipe(
         //     {
