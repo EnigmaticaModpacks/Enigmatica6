@@ -63,9 +63,12 @@ events.listen('recipes', function (event) {
 
     event.replaceInput({}, 'appliedenergistics2:ender_dust', '#forge:dusts/ender');
     event.replaceInput({}, 'appliedenergistics2:fluix_dust', '#forge:dusts/fluix');
-    event.replaceInput({}, 'appliedenergistics2:fluix_crystal', 'emendatusenigmatica:gem_fluix');
-    event.replaceInput({}, 'appliedenergistics2:certus_quartz_crystal', '#forge:gems/certus');
-    event.replaceInput({}, 'appliedenergistics2:charged_certus_quartz_crystal', '#forge:gems/charged_certus_quartz');
+    event.replaceInput({}, 'appliedenergistics2:fluix_crystal', '#forge:gems/fluix');
 
+    // Ordering is important here, do not move them around
+    event.replaceInput({}, 'appliedenergistics2:certus_quartz_crystal', '#forge:gems/certus');
     event.replaceInput({}, '#appliedenergistics2:gems/certus', '#forge:gems/certus');
+
+    event.replaceInput({}, 'appliedenergistics2:silicon', '#forge:silicon');
+    event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
 });
