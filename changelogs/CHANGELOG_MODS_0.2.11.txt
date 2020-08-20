@@ -1,0 +1,1624 @@
+=========================================
+Enigmatica6 0.2.10 --> Enigmatica6 0.2.11
+=========================================
+
+Added:
+- SwingThroughGrass
+
+Updated:
+	Apotheosis (Apotheosis-1.16.1-4.1.0.jar --> Apotheosis-1.16.1-4.1.1.jar):
+		Apotheosis-1.16.1-4.1.1.jar:
+			Weird fix for a dedicated server issue.
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.1-11.0.0.393 --> Biomes O' Plenty 1.16.1-11.0.0.394):
+		Biomes O' Plenty 1.16.1-11.0.0.394:
+			=========
+			Build: 1.16.1-11.0.0.393 - Fri Aug 07 04:38:15 GMT 2020
+			github:
+			Update zh_cn.json (#1662)
+			=========
+			Build: 1.16.1-11.0.0.392 - Thu Aug 06 07:50:56 GMT 2020
+			github:
+			Update it_it.json (#1660)
+			=========
+			Build: 1.16.1-11.0.0.391 - Wed Jul 29 23:33:02 GMT 2020
+			forstride:
+			Fixed some biomes using water creature entity classification instead of water ambient for fish spawns
+			=========
+			Build: 1.16.1-11.0.0.390 - Thu Jul 23 04:41:04 GMT 2020
+			github:
+			Update spanish translations (#1650)
+			=========
+			Build: 1.16.1-11.0.0.389 - Tue Jul 21 19:38:58 GMT 2020
+			forstride:
+			Added a few custom paintings
+			=========
+			Build: 1.16.1-11.0.0.388 - Tue Jul 21 03:32:42 GMT 2020
+			Adubbz:
+			Fixed server seed inconsistency. Closes #1644
+			=========
+			Build: 1.16.1-11.0.0.387 - Sun Jul 19 07:38:07 GMT 2020
+			github:
+			Update ru_ru.json (#1643)
+			=========
+			Build: 1.16.1-11.0.0.386 - Sat Jul 18 17:31:09 GMT 2020
+			forstride:
+			Added black sand/sandstone, changed the Volcano Edge biome into Volcanic Plains
+			=========
+			Build: 1.16.1-11.0.0.385 - Fri Jul 17 17:17:02 GMT 2020
+			forstride:
+			Tweaked the Bog, Grassland, and Tundra biomes
+			=========
+			Build: 1.16.1-11.0.0.384 - Fri Jul 17 17:15:22 GMT 2020
+			github:
+			Update spanish translations (#1642)
+			=========
+			Build: 1.16.1-11.0.0.383 - Fri Jul 17 13:46:41 GMT 2020
+			forstride:
+			Changed the Ghost Forest to a snowy biome called the Muskeg
+			(Be sure to delete your existing configs and use a new world, or you will likely run into issues!)
+			=========
+			Build: 1.16.1-11.0.0.382 - Thu Jul 16 13:18:18 GMT 2020
+			forstride:
+			Improvements to the Tropics and Grassland biomes
+			=========
+			Build: 1.16.1-11.0.0.381 - Wed Jul 15 17:20:57 GMT 2020
+			github:
+			Italian localization (#1640)
+			=========
+			Build: 1.16.1-11.0.0.380 - Wed Jul 15 02:04:35 GMT 2020
+			Adubbz:
+			Added an option to disable bop nether generation
+			=========
+			Build: 1.16.1-11.0.0.379 - Tue Jul 14 10:19:22 GMT 2020
+			Adubbz:
+			Fixed world type resetting to Biomes O' Plenty after customizing a Vanilla worldtype
+			=========
+			Build: 1.16.1-11.0.0.378 - Tue Jul 14 10:05:52 GMT 2020
+			github:
+			Update spanish translations (#1639)
+			=========
+			Build: 1.16.1-11.0.0.377 - Mon Jul 13 21:42:37 GMT 2020
+			forstride:
+			Added sign textures for if/when we add them
+			=========
+			Build: 1.16.1-11.0.0.376 - Mon Jul 13 15:50:07 GMT 2020
+			forstride:
+			Made the Origin Hills sand/gravel generation slightly more authentic to Alpha, removed the Origin Beach (No longer needed)
+			=========
+			Build: 1.16.1-11.0.0.375 - Mon Jul 13 00:49:11 GMT 2020
+			Adubbz:
+			Mark 1.16 builds as beta
+			=========
+			Build: 1.16.1-11.0.0.374 - Mon Jul 13 00:40:11 GMT 2020
+			forstride:
+			Removed water/lava ponds from the Origin Hills
+			=========
+			Build: 1.16.1-11.0.0.373 - Sun Jul 12 12:46:30 GMT 2020
+			forstride:
+			Re-added Origin Grass Blocks for the Origin Hills
+			=========
+			Build: 1.16.1-11.0.0.372 - Sat Jul 11 23:29:35 GMT 2020
+			github:
+			Update spanish translations (#1638)
+			=========
+			Build: 1.16.1-11.0.0.371 - Fri Jul 10 18:51:45 GMT 2020
+			forstride:
+			Renamed Undergarden to "Undergrowth" and Shadowlands to "Withered Abyss"
+			=========
+			Build: 1.16.1-11.0.0.370 - Fri Jul 10 13:33:30 GMT 2020
+			Adubbz:
+			Update issue template versions
+			=========
+			Build: 1.16.1-11.0.0.369 - Fri Jul 10 13:31:06 GMT 2020
+			Adubbz:
+			Fixed GuiEventHandler causing issues on servers
+			=========
+			Build: 1.16.1-11.0.0.368 - Fri Jul 10 11:01:15 GMT 2020
+			forstride:
+			Fixed supported plant types for Dried Salt blocks
+			=========
+			Build: 1.15.2-10.0.0.365 - Mon Jun 01 03:45:20 GMT 2020
+			github:
+			Edited spanish translations (#1621)
+			=========
+			Build: 1.15.2-10.0.0.364 - Fri May 29 00:21:57 GMT 2020
+			forstride:
+			Tweaked Dune Grass and Wanderer Music Disc textures
+			=========
+			Build: 1.15.2-10.0.0.363 - Thu May 21 07:49:48 GMT 2020
+			github:
+			Attempt to bump required Forge version
+			=========
+			Build: 1.15.2-10.0.0.362 - Mon May 18 22:38:48 GMT 2020
+			forstride:
+			Added stripped wood recipes (Closes #1612)
+			=========
+			Build: 1.15.2-10.0.0.361 - Sat May 16 08:15:55 GMT 2020
+			github:
+			Forge 31.2.0 fixes (#1605)
+			* Changed environment for testing in eclipse
+			* Fixes issue for Forge 31.2.0
+			Changes the way SoundEvents are constructed as to no longer use depreciated call to super in 31.2.0
+			* Remove generated files
+			Some things got past BiomeOPlenty's .gitignore, simply removing them before submitting a PR
+			* Cleanup
+			Should resolve style issues in PR
+			Co-authored-by: D Melton <55304913+DMelton1221@users.noreply.github.com>
+			=========
+			Build: 1.15.2-10.0.0.360 - Fri May 15 02:32:14 GMT 2020
+			github:
+			Bump forge version
+			=========
+			Build: 1.15.2-10.0.0.359 - Thu May 14 19:14:38 GMT 2020
+			github:
+			Updated spanish translations (#1599)
+			=========
+			Build: 1.15.2-10.0.0.358 - Mon May 04 13:04:06 GMT 2020
+			forstride:
+			Added block.properties for shader support (Doesn't seem to be working though? OptiFine might not have re-added support yet)
+			=========
+			Build: 1.15.2-10.0.0.357 - Fri May 01 13:54:34 GMT 2020
+			github:
+			Remove this too
+			=========
+			Build: 1.15.2-10.0.0.356 - Fri May 01 13:51:14 GMT 2020
+			github:
+			Remove legacy server.properties workaround
+			=========
+			Build: 1.15.2-10.0.0.355 - Tue Apr 21 11:27:07 GMT 2020
+			github:
+			refactor biome layers to match vanilla's new 1.15 system (#1571)
+			=========
+			Build: 1.15.2-10.0.0.354 - Tue Apr 21 11:23:46 GMT 2020
+			github:
+			fix infinite loop in BushTreeFeature (#1589)
+			github:
+			fix infinite loop in BushTreeFeature (#1589)
+			github:
+			refactor biome layers to match vanilla's new 1.15 system (#1571)
+			=========
+			Build: 1.15.2-10.0.0.353 - Wed Mar 25 10:00:51 GMT 2020
+			github:
+			Update zh_cn.json (#1570)
+			* Update zh_cn.json
+			Hey, I fixed the error and completed some translations,
+			Can you merge it? Thank you in advance!
+			* Update zh_cn.json
+			=========
+			Build: 1.15.2-10.0.0.352 - Sun Mar 22 08:07:29 GMT 2020
+			github:
+			Correct inconsistent tabs/spaces
+			=========
+			Build: 1.15.2-10.0.0.351 - Sun Mar 15 00:48:40 GMT 2020
+			Adubbz:
+			Fix ModFeatures indentation
+			=========
+			Build: 1.15.2-10.0.0.350 - Sun Mar 15 00:13:35 GMT 2020
+			alexthepokemon:
+			Register all BoP features now into Forge's feature Registry
+			=========
+			Build: 1.15.2-10.0.0.349 - Sat Mar 07 15:15:11 GMT 2020
+			forstride:
+			Renamed Pink/White Cherry and Jacaranda Leaves to "Blossoms"
+			=========
+			Build: 1.15.2-10.0.0.348 - Fri Mar 06 00:55:32 GMT 2020
+			github:
+			Update ru_ru.json (root, tall wheat)
+			=========
+			Build: 1.15.2-10.0.0.347 - Tue Mar 03 13:20:16 GMT 2020
+			forstride:
+			Re-added roots
+			forstride:
+			Removed passive mobs from the Dead Forest, changed biome dictionary tags for the Origin Hills/Orchard
+			=========
+			Build: 1.15.2-10.0.0.345 - Sun Feb 23 00:05:04 GMT 2020
+			forstride:
+			Fixed the Snowy Taiga not generating
+			=========
+			Build: 1.15.2-10.0.0.344 - Sat Feb 22 19:25:17 GMT 2020
+			forstride:
+			Added OnlyIn client annotation for GUI Event Handler (Closes #1561)
+			=========
+			Build: 1.15.2-10.0.0.343 - Sat Feb 22 11:57:33 GMT 2020
+			Adubbz:
+			Attempt to fix bad maven universal artifact
+			=========
+			Build: 1.15.2-10.0.0.342 - Sat Feb 22 10:56:13 GMT 2020
+			Adubbz:
+			Added various config options
+			=========
+			Build: 1.15.2-10.0.0.341 - Sat Feb 22 09:33:02 GMT 2020
+			Adubbz:
+			Make the orchard a technical biome
+			=========
+			Build: 1.15.2-10.0.0.340 - Sat Feb 22 09:02:32 GMT 2020
+			Adubbz:
+			Technical biomes can now be disabled. Fixed potential crashes when disabling certain biomes
+			=========
+			Build: 1.15.2-10.0.0.339 - Sat Feb 22 07:33:32 GMT 2020
+			Adubbz:
+			Island biomes can now be disabled
+			=========
+			Build: 1.15.2-10.0.0.338 - Thu Feb 20 05:22:36 GMT 2020
+			forstride:
+			Tweaked tall wheat texture and Prairie grass/foliage color
+			=========
+			Build: 1.15.2-10.0.0.337 - Wed Feb 19 19:45:37 GMT 2020
+			forstride:
+			Changed barley to tall wheat and made tweaks to the Pasture biome
+			=========
+			Build: 1.15.2-10.0.0.336 - Wed Feb 19 14:01:45 GMT 2020
+			forstride:
+			Improved mahogany leaf texture
+			=========
+			Build: 1.15.2-10.0.0.335 - Wed Feb 19 05:56:24 GMT 2020
+			forstride:
+			Fixed "CliamteLayer" typo
+			=========
+			Build: 1.15.2-10.0.0.334 - Tue Feb 18 13:46:47 GMT 2020
+			forstride:
+			Fixed edge biome crash, set fallback biome for empty climates to ocean
+			=========
+			Build: 1.15.2-10.0.0.333 - Tue Feb 18 13:29:17 GMT 2020
+			forstride:
+			Tweaks to the Bog, Mangrove, and Tundra
+			=========
+			Build: 1.15.2-10.0.0.332 - Tue Feb 18 12:21:27 GMT 2020
+			forstride:
+			Removed Glowstone Grotto nether biome (NOTE: CONFIGS NEED TO BE DELETED OR YOUR GAME WILL CRASH ON LOAD!)
+			=========
+			Build: 1.15.2-10.0.0.331 - Tue Feb 18 11:58:37 GMT 2020
+			Adubbz:
+			Vanilla biome weights are now configurable
+			=========
+			Build: 1.15.2-10.0.0.330 - Tue Feb 18 06:44:11 GMT 2020
+			forstride:
+			Added more tall grass to the Lush Grassland, made the Floodplains flatter
+			=========
+			Build: 1.15.2-10.0.0.329 - Mon Feb 17 13:22:20 GMT 2020
+			forstride:
+			Changed the Rainforest back to a subtropical biome
+			NOTE: This will affect existing worlds and cause chunk borders! Additionally, please delete old configs before creating a new world!
+			=========
+			Build: 1.15.2-10.0.0.328 - Sun Feb 16 09:48:27 GMT 2020
+			Adubbz:
+			Fixed structure generation. Closes #1531
+			=========
+			Build: 1.15.2-10.0.0.327 - Sun Feb 16 06:40:42 GMT 2020
+			github:
+			Update ko_kr.json (#1553)
+			* Update ko_kr.json
+			* Update ko_kr.json
+			github:
+			Update ru_ru.json (#1548)
+			dried salt
+			dead branch
+			=========
+			Build: 1.15.2-10.0.0.326 - Fri Feb 14 06:51:39 GMT 2020
+			forstride:
+			Reduced the amount of brown mushrooms in the Mire. Removed ponds from the Prairie
+			=========
+			Build: 1.15.2-10.0.0.325 - Fri Feb 14 05:17:54 GMT 2020
+			forstride:
+			* Added Snow Golem spawns to the Alps
+			* Added Evoker spawns to the Ominous Woods
+			* Added Stray spawns to the Wasteland
+			* Removed witch huts from the Bog, Ghost Forest, and Marsh
+			=========
+			Build: 1.15.2-10.0.0.324 - Fri Feb 14 02:19:04 GMT 2020
+			Adubbz:
+			Sort biome weights json alphabetically
+			=========
+			Build: 1.15.2-10.0.0.323 - Fri Feb 14 00:03:04 GMT 2020
+			Adubbz:
+			Simplified standard biome weights config
+			=========
+			Build: 1.15.2-10.0.0.322 - Thu Feb 13 18:05:28 GMT 2020
+			github:
+			Update ru_ru.json (Fungal Jungle) (#1546)
+			forstride:
+			Removed bee nests from the Prairie and Tropical Rainforest
+			=========
+			Build: 1.15.2-10.0.0.320 - Thu Feb 13 06:36:52 GMT 2020
+			forstride:
+			Allowed TNT to be crafted with white sand, and rabbit stew to be crafted with toadstools. Updated block/item tags
+			=========
+			Build: 1.15.2-10.0.0.319 - Thu Feb 13 05:38:42 GMT 2020
+			forstride:
+			Updated biome dictionary tags
+			=========
+			Build: 1.15.2-10.0.0.318 - Wed Feb 12 13:35:31 GMT 2020
+			forstride:
+			* Added Fungal Jungle overworld biome
+			* Added Huge Glowshrooms and Huge Toadstools
+			* Removed Fungi Forest Nether biome
+			* Re-added hostile mobs to the Tropics/White Beach biomes
+			* Cleaned up vanilla biome climate registration
+			=========
+			Build: 1.15.2-10.0.0.317 - Tue Feb 11 10:04:50 GMT 2020
+			Adubbz:
+			Prefix modid in weights config for standard biomes, fallback on Ocean for empty climates
+			=========
+			Build: 1.15.2-10.0.0.316 - Tue Feb 11 08:33:14 GMT 2020
+			Adubbz:
+			Preliminary biome weight config file implementation
+			=========
+			Build: 1.15.2-10.0.0.315 - Tue Feb 11 07:13:34 GMT 2020
+			Adubbz:
+			Refactored biome registration
+			=========
+			Build: 1.15.2-10.0.0.314 - Tue Feb 11 06:13:14 GMT 2020
+			github:
+			Create ko_kr.json (#1545)
+			=========
+			Build: 1.15.2-10.0.0.313 - Mon Feb 10 05:37:39 GMT 2020
+			forstride:
+			Fixed the Wooded Badlands Plateau not generating
+			=========
+			Build: 1.15.2-10.0.0.312 - Mon Feb 10 01:02:14 GMT 2020
+			forstride:
+			Adjusted lush swamp/rainforest temperatures to be in line with other tropical biomes
+			=========
+			Build: 1.15.2-10.0.0.311 - Sun Feb 09 11:39:52 GMT 2020
+			forstride:
+			Tweaked the grass color of the Origin Hills
+			=========
+			Build: 1.15.2-10.0.0.310 - Sun Feb 09 06:20:27 GMT 2020
+			forstride:
+			Added branches for dead trees
+			=========
+			Build: 1.15.2-10.0.0.309 - Sat Feb 08 13:53:55 GMT 2020
+			forstride:
+			Renamed Dried Sand to Dried Salt, tweaks to the Wasteland biome
+			=========
+			Build: 1.15.2-10.0.0.308 - Fri Feb 07 05:23:30 GMT 2020
+			forstride:
+			Improvements to the Ghost Forest and Mire
+			=========
+			Build: 1.15.2-10.0.0.307 - Fri Feb 07 04:00:20 GMT 2020
+			forstride:
+			Added better edge casing for swamp <-> jungle biomes, minor biome tweaks
+			=========
+			Build: 1.15.2-10.0.0.306 - Fri Feb 07 02:22:50 GMT 2020
+			forstride:
+			Changed Origin Leaves/Sapling texture, minor biome tweaks
+			=========
+			Build: 1.15.2-10.0.0.305 - Thu Feb 06 13:13:49 GMT 2020
+			forstride:
+			Updated door/trapdoor textures
+			=========
+			Build: 1.15.2-10.0.0.304 - Thu Feb 06 08:46:31 GMT 2020
+			github:
+			Update ru_ru.json (Ghost forest)
+			=========
+			Build: 1.15.2-10.0.0.303 - Thu Feb 06 05:44:31 GMT 2020
+			forstride:
+			Added Ghost Forest biome, moved Rainforest biome from Subtropical to Tropical climate, improvements to Mire biome
+			=========
+			Build: 1.15.2-10.0.0.302 - Mon Feb 03 12:05:32 GMT 2020
+			github:
+			Update zh_tw.json
+			* Translated Sprout & Toadstool
+			=========
+			Build: 1.15.2-10.0.0.301 - Mon Feb 03 03:10:26 GMT 2020
+			github:
+			Create zh_tw.json (#1539)
+			Here comes the translations of Traditional Chinese. Based on the Simplified, but I really reedited it "from head to toe."
+			It took me so much time to finish removing texts and resorting.
+			Highlights:
+			* Localized for Traditional Chinese
+			* Updated all of the strings, e.g. Removing the things that no longer exist, Adding the new things released, Resorting the strings according to en_us.
+			PS, The strings of Biome is untranlated for now as I'm exhausted and I have no idea where it would show. Anyway, those who want to translate it completely don't need to worry about that, like aforementioned, I've resorted all of the strings, just go translating!
+			Any sugesstion/correction would be appreciated.
+			=========
+			Build: 1.15.2-10.0.0.300 - Mon Jan 27 21:58:08 GMT 2020
+			forstride:
+			Removed lava lakes from the Poppy Field
+			=========
+			Build: 1.15.2-10.0.0.299 - Sat Jan 25 01:30:54 GMT 2020
+			github:
+			Added Poppy Field biome
+			=========
+			Build: 1.15.2-10.0.0.298 - Fri Jan 24 13:41:01 GMT 2020
+			Adubbz:
+			Updated to Minecraft 1.15.2
+			=========
+			Build: 1.15.1-10.0.0.297 - Fri Jan 24 03:24:40 GMT 2020
+			Adubbz:
+			Do biome dictionary and villager type registration earlier. Closes #1529
+			forstride:
+			Added Poppy Field biome
+			forstride:
+			Tweaks to Poppy Field rarity/mob spawns
+			forstride:
+			update ru_ru.json (poppy field) (#1534)
+			=========
+			Build: 1.15.1-10.0.0.296 - Mon Jan 06 19:36:08 GMT 2020
+			forstride:
+			Tweaks to the Mystic Grove
+			=========
+			Build: 1.15.1-10.0.0.295 - Mon Jan 06 14:11:52 GMT 2020
+			Adubbz:
+			Update ru_ru.json (#1527)
+			=========
+			Build: 1.15.1-10.0.0.294 - Fri Jan 03 04:35:34 GMT 2020
+			Adubbz:
+			Dutch Localization (#1525)
+			=========
+			Build: 1.15.1-10.0.0.293 - Thu Jan 02 08:08:22 GMT 2020
+			forstride:
+			Added villager types for remaining biomes
+			=========
+			Build: 1.15.1-10.0.0.292 - Thu Jan 02 01:08:11 GMT 2020
+			forstride:
+			Minor biome tweaks
+			=========
+			Build: 1.15.1-10.0.0.291 - Wed Jan 01 08:46:25 GMT 2020
+			Adubbz:
+			Fixed villager types. Closes #1519
+			=========
+			Build: 1.15.1-10.0.0.290 - Wed Jan 01 08:22:34 GMT 2020
+			Adubbz:
+			Fixed nether fortress generation. Closes #1523
+			=========
+			Build: 1.15.1-10.0.0.289 - Wed Jan 01 06:16:09 GMT 2020
+			Adubbz:
+			Fix huge mushroom generation in BOP biomes. Note that this is still broken in Vanilla biomes due to a Forge bug. The Forge bug is present with or without BOP installed.
+			=========
+			Build: 1.15.1-10.0.0.288 - Tue Dec 31 22:55:54 GMT 2019
+			Adubbz:
+			Fixed recursion crash in some generation features
+			Adubbz:
+			Mappings overhaul
+			=========
+			Build: 1.15.1-10.0.0.286 - Tue Dec 31 07:29:37 GMT 2019
+			Adubbz:
+			Fix merge conflicts
+			=========
+			Build: 1.15.1-10.0.0.285 - Mon Dec 30 17:39:41 GMT 2019
+			forstride:
+			Gave Rainbow Leaf coloration a wavy pattern
+			=========
+			Build: 1.15.1-10.0.0.284 - Mon Dec 30 08:06:15 GMT 2019
+			forstride:
+			Added bees to the Rainbow Valley
+			=========
+			Build: 1.15.1-10.0.0.283 - Mon Dec 30 04:20:29 GMT 2019
+			forstride:
+			Added Rainbow Birch trees and Rainbow Valley island biome
+			=========
+			Build: 1.15.1-10.0.0.282 - Mon Dec 30 01:47:44 GMT 2019
+			forstride:
+			Replaced the Jacaranda leaves in the Highland Moor with Violets
+			forstride:
+			Fixed big oak trees not generating
+			=========
+			Build: 1.15.1-10.0.0.280 - Sat Dec 28 10:13:20 GMT 2019
+			Adubbz:
+			Updated issue templates for 1.15
+			=========
+			Build: 1.15.1-10.0.0.279 - Sat Dec 28 10:09:35 GMT 2019
+			Adubbz:
+			Update ru_ru.json (#1520)
+			Removed End biome stuff
+			=========
+			Build: 1.15.1-10.0.0.278 - Sat Dec 28 01:38:55 GMT 2019
+			Adubbz:
+			Fixed boats. Closes #1518
+			=========
+			Build: 1.15.1-10.0.0.277 - Sat Dec 28 01:05:25 GMT 2019
+			Adubbz:
+			Water plants still suck
+			=========
+			Build: 1.15.1-10.0.0.276 - Fri Dec 27 23:51:09 GMT 2019
+			Adubbz:
+			Fix water plants 2: Electric boogaloo. Closes #1516
+			=========
+			Build: 1.15.1-10.0.0.275 - Fri Dec 27 22:48:29 GMT 2019
+			Adubbz:
+			Mark doors and trapdoors as noOcclusion. Closes #1517
+			=========
+			Build: 1.15.1-10.0.0.274 - Fri Dec 27 15:43:39 GMT 2019
+			forstride:
+			Removed squid spawns from normal biomes
+			=========
+			Build: 1.15.1-10.0.0.273 - Fri Dec 27 14:10:39 GMT 2019
+			forstride:
+			Added bees to various biomes
+			=========
+			Build: 1.15.1-10.0.0.272 - Fri Dec 27 07:40:18 GMT 2019
+			Adubbz:
+			Fixed water plant generation
+			=========
+			Build: 1.15.1-10.0.0.271 - Fri Dec 27 06:55:23 GMT 2019
+			Adubbz:
+			Fixed trees growing from saplings
+			=========
+			Build: 1.15.1-10.0.0.270 - Thu Dec 26 22:27:52 GMT 2019
+			Adubbz:
+			Fixed tpbiome comman
+			=========
+			Build: 1.15.1-10.0.0.269 - Thu Dec 26 17:56:47 GMT 2019
+			forstride:
+			Lowered lilypad spawn frequency
+			=========
+			Build: 1.15.1-10.0.0.268 - Thu Dec 26 09:59:05 GMT 2019
+			Adubbz:
+			Fixed overworld biomes generating in the nether
+			=========
+			Build: 1.15.1-10.0.0.267 - Thu Dec 26 09:47:45 GMT 2019
+			Adubbz:
+			Change biomes to use Mojang's builder model
+			=========
+			Build: 1.15.1-10.0.0.266 - Thu Dec 26 08:53:16 GMT 2019
+			Adubbz:
+			Fixed leaves occlusion
+			Adubbz:
+			Update curse gradle
+			Adubbz:
+			Mappings updates
+			=========
+			Build: 1.15.1-10.0.0.264 - Thu Dec 26 07:14:46 GMT 2019
+			forstride:
+			Fixed block rendering types
+			=========
+			Build: 1.14.4-9.0.0.262 - Sat Dec 21 12:11:31 GMT 2019
+			Adubbz:
+			Updated for latest MCP mappings
+			=========
+			Build: 1.14.4-9.0.0.261 - Sat Dec 14 10:44:47 GMT 2019
+			Adubbz:
+			Fixed compile error
+			Adubbz:
+			Optimized tpbiome command by using ExecutorService (#1504)
+			=========
+			Build: 1.14.4-9.0.0.259 - Mon Dec 02 12:22:20 GMT 2019
+			github:
+			Update ru_ru.json
+			Added a missing strings and fix other cosmetic things.
+			github:
+			Update ru_ru.json
+			Added a missing strings and fix other cosmetic things.
+			=========
+			Build: 1.14.4-9.0.0.258 - Thu Nov 21 23:55:56 GMT 2019
+			github:
+			Create ru_ru.json
+			=========
+			Build: 1.14.4-9.0.0.257 - Sun Nov 10 08:22:58 GMT 2019
+			github:
+			Create es_ar.json
+			Argentina Spanish Lang File
+			=========
+			Build: 1.14.4-9.0.0.256 - Sun Nov 10 08:20:22 GMT 2019
+			github:
+			es_es Lang File
+			Europe Spanish Lang File
+			github:
+			Create es_mx.json
+			And the méxico spanish lang file
+			github:
+			es_es Lang File
+			Europe Spanish Lang File
+			github:
+			Create es_ar.json
+			Argentina Spanish Lang File
+			github:
+			Create es_mx.json
+			And the méxico spanish lang file
+			=========
+			Build: 1.14.4-9.0.0.255 - Tue Oct 22 17:40:50 GMT 2019
+			github:
+			Updated Discord link in README.md
+			=========
+			Build: 1.14.4-9.0.0.254 - Fri Oct 04 09:46:53 GMT 2019
+			Adubbz:
+			Update to Forge RB, update MCP mappings
+			=========
+			Build: 1.14.4-9.0.0.253 - Sun Sep 15 10:21:56 GMT 2019
+			github:
+			update german translation to match vanilla names
+			=========
+			Build: 1.14.4-9.0.0.252 - Fri Sep 06 21:36:42 GMT 2019
+			forstride:
+			Fixed mangrove root/reed/watergrass loot tables
+			=========
+			Build: 1.14.4-9.0.0.251 - Sun Sep 01 19:15:23 GMT 2019
+			forstride:
+			Changed reeds, watergrass, and mangrove roots into proper double tall
+			blocks. NOTE: This will cause issues in existing worlds! Update at
+			your own risk!
+			=========
+			Build: 1.14.4-9.0.0.250 - Fri Aug 30 11:42:59 GMT 2019
+			forstride:
+			Removed witch huts from the Mangrove and Highland Moor
+			=========
+			Build: 1.14.4-9.0.0.249 - Fri Aug 30 01:32:47 GMT 2019
+			github:
+			Create de_de.json
+			add german translation
+			=========
+			Build: 1.14.4-9.0.0.248 - Wed Aug 28 11:31:10 GMT 2019
+			forstride:
+			Optimized class imports
+			=========
+			Build: 1.14.4-9.0.0.247 - Tue Aug 27 18:07:09 GMT 2019
+			forstride:
+			Changed blue hydrangeas and goldenrods into tall flowers (NOTE: This may
+			cause issues in existing worlds! Update at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.246 - Sun Aug 25 09:16:30 GMT 2019
+			forstride:
+			Made poplar tree generation look slightly more natural
+			=========
+			Build: 1.14.4-9.0.0.245 - Sat Aug 24 12:11:53 GMT 2019
+			forstride:
+			Fixed big trees not generating alternate leaves
+			=========
+			Build: 1.14.4-9.0.0.244 - Sat Aug 24 10:49:38 GMT 2019
+			forstride:
+			Added a deeper middle block layer for the Alps and Volcano biomes, fixed
+			big trees not growing on non-soil blocks, fixed ash/mud/flesh blocks not
+			having proper shading (At the expense of not sinking into the blocks)
+			=========
+			Build: 1.14.4-9.0.0.243 - Sat Aug 24 08:28:23 GMT 2019
+			forstride:
+			Prevented non-opped players from using the tpbiome command (Closes
+			#1459)
+			=========
+			Build: 1.14.4-9.0.0.242 - Fri Aug 23 22:34:07 GMT 2019
+			forstride:
+			Changed texture folder names to match vanilla (NOTE: This will break
+			existing texture packs with BOP support!)
+			=========
+			Build: 1.14.4-9.0.0.241 - Fri Aug 23 17:17:27 GMT 2019
+			forstride:
+			Fixed sparse trees not being sparse, and huge trees in the Mystic Grove
+			being too huge
+			=========
+			Build: 1.14.4-9.0.0.240 - Fri Aug 23 12:09:26 GMT 2019
+			Adubbz:
+			General system stability improvements to enhance the user's experience.
+			Closes #1439
+			=========
+			Build: 1.14.4-9.0.0.239 - Fri Aug 23 11:02:56 GMT 2019
+			Adubbz:
+			Fixed rare biome generation. Closes #1438
+			=========
+			Build: 1.14.4-9.0.0.238 - Fri Aug 23 06:24:01 GMT 2019
+			forstride:
+			Fixed trees not growing around ground foliage (Closes #1461)
+			=========
+			Build: 1.14.4-9.0.0.237 - Fri Aug 23 05:30:26 GMT 2019
+			forstride:
+			Added missing smooth white sandstone recipe
+			=========
+			Build: 1.14.4-9.0.0.236 - Wed Aug 21 13:21:37 GMT 2019
+			forstride:
+			Updated Forge to 28.0.55, improved mod logo
+			=========
+			Build: 1.14.4-9.0.0.235 - Wed Aug 21 09:06:42 GMT 2019
+			forstride:
+			Added Jacaranda trees to the vanilla Flower Forest, added big Jacaranda
+			tree variant to Lavender Field/sapling
+			forstride:
+			Changed order that blocks are registered for cleaner creative menu
+			forstride:
+			Fixed Ethereal wood map colors
+			forstride:
+			Tweaked various biome weights (WARNING: This update will cause abrupt
+			chunk borders in existing worlds! Update at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.231 - Tue Aug 13 04:13:20 GMT 2019
+			forstride:
+			Removed Lily of the Valley from the Prairie
+			=========
+			Build: 1.14.4-9.0.0.230 - Tue Aug 13 02:32:46 GMT 2019
+			forstride:
+			Lowered the amount of trees in the Snowy Coniferous Forest/Snowy Forest,
+			tweaked how Orchards generate within Plains to better match vanilla
+			=========
+			Build: 1.14.4-9.0.0.229 - Sun Aug 11 15:03:11 GMT 2019
+			forstride:
+			Added Fir/Snowy Fir Clearing and Temperate Rainforest Hills sub-biomes,
+			renamed Moor to Highland Moor, made a separate climate for the
+			Wasteland, allowed Deep Warm Ocean to generate within Warm Oceans (NOTE:
+			This update will cause abrupt chunk borders in existing worlds! Update
+			at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.228 - Sun Aug 11 09:16:06 GMT 2019
+			forstride:
+			Use white sand instead of normal sand for sediment in the Mystic Grove
+			=========
+			Build: 1.14.4-9.0.0.227 - Sun Aug 11 09:05:16 GMT 2019
+			forstride:
+			Tweaked cypress tree generation
+			=========
+			Build: 1.14.4-9.0.0.226 - Sun Aug 11 06:43:36 GMT 2019
+			forstride:
+			Added large versions of the yellow/orange autumn and maple trees
+			=========
+			Build: 1.14.4-9.0.0.225 - Sun Aug 11 03:47:55 GMT 2019
+			forstride:
+			Lush Swamp should be in Subtropical climate, not Wet Temperate.
+			Adjusted Mangrove and Bayou weights (NOTE: This update will cause abrupt
+			chunk borders in existing worlds! Update at your own risk!)
+			=========
+			Build: 1.14.4-9.0.0.224 - Sun Aug 11 03:31:25 GMT 2019
+			forstride:
+			Removed Dry Plains biome, moved Lush Swamp back to the Wet Temperate
+			climate, renamed Glowstone Cavern to Glowstone Grotto (NOTE: This update
+			will cause abrupt chunk borders in existing worlds! Update at your own
+			risk!)
+			=========
+			Build: 1.14.4-9.0.0.223 - Sun Aug 11 02:16:45 GMT 2019
+			forstride:
+			Updated BOP icon, fixed Origin Hills underwater fog color
+			=========
+			Build: 1.14.4-9.0.0.222 - Sat Aug 10 12:19:34 GMT 2019
+			forstride:
+			Improved poplar tree generation
+			=========
+			Build: 1.14.4-9.0.0.221 - Sat Aug 10 10:21:39 GMT 2019
+			forstride:
+			Changed default Wet Temperate climate temperature to Cool
+			=========
+			Build: 1.14.4-9.0.0.220 - Sat Aug 10 10:16:13 GMT 2019
+			Adubbz:
+			Don't convert biomes already registered to a climate via our api
+			=========
+			Build: 1.14.4-9.0.0.219 - Sat Aug 10 09:42:48 GMT 2019
+			Adubbz:
+			Fixed mod version. Closes #1422
+			=========
+			Build: 1.14.4-9.0.0.218 - Sat Aug 10 09:17:18 GMT 2019
+			Adubbz:
+			Copy modded biomes to our worldtype. Closes #1428
+			=========
+			Build: 1.14.4-9.0.0.217 - Sat Aug 10 08:28:04 GMT 2019
+			m.pietquin:
+			fix #1446 & add dispenser behavior for bop boats
+			=========
+			Build: 1.14.4-9.0.0.216 - Sat Aug 10 08:11:23 GMT 2019
+			forstride:
+			Improved Cherry Log textures
+			=========
+			Build: 1.14.4-9.0.0.215 - Sat Aug 10 06:17:28 GMT 2019
+			Adubbz:
+			Put config loading back in construction. Closes #1447
+			=========
+			Build: 1.14.4-9.0.0.214 - Sat Aug 10 05:30:03 GMT 2019
+			forstride:
+			Improved the Bayou biome, allowed all BOP biomes to be spawned in
+			=========
+			Build: 1.14.4-9.0.0.213 - Sat Aug 10 03:36:13 GMT 2019
+			Adubbz:
+			Perform registration during the registration events. Closes #1444
+			=========
+			Build: 1.14.4-9.0.0.212 - Sat Aug 10 02:52:03 GMT 2019
+			Adubbz:
+			Updated to Forge 28.0.45... It works fine?
+			=========
+			Build: 1.14.4-9.0.0.211 - Tue Aug 06 20:33:00 GMT 2019
+			forstride:
+			Fixed a potential crash caused by big oak trees, tweaked a few textures
+			=========
+			Build: 1.14.4-9.0.0.210 - Tue Aug 06 15:40:45 GMT 2019
+			github:
+			Update pl_pl.json
+			Poprawiono niektóre nazwy, by były bardziej spójne z vanilla Minecraft
+			=========
+			Build: 1.14.4-9.0.0.209 - Tue Aug 06 15:14:45 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.14.4-9.0.0.208 - Tue Aug 06 03:50:19 GMT 2019
+			forstride:
+			Tweaked mud generation in Mangroves
+			=========
+			Build: 1.14.4-9.0.0.207 - Tue Aug 06 03:32:09 GMT 2019
+			forstride:
+			Changed beach biomes for vanilla biomes, added the Mangrove as a beach
+			biome for tropical biomes, moved the Lush Swamp to the Warm Temperate
+			climate (NOTE: This can cause abrupt chunk borders in existing worlds!
+			Update at your own risk!)
+			forstride:
+			Added BOP features to various vanilla biomes (NOTE: This will also
+			affect the Default world type. Load existing vanilla worlds at your own
+			risk!)
+			=========
+			Build: 1.14.4-9.0.0.205 - Mon Aug 05 09:10:57 GMT 2019
+			forstride:
+			Allowed Sprouts to be placed in Flower Pots, made Toadstools more common
+			=========
+			Build: 1.14.4-9.0.0.204 - Mon Aug 05 05:37:57 GMT 2019
+			forstride:
+			Work on End biomes
+			=========
+			Build: 1.14.4-9.0.0.203 - Mon Aug 05 03:51:27 GMT 2019
+			forstride:
+			Removed Poison Puffs
+			=========
+			Build: 1.14.4-9.0.0.202 - Mon Aug 05 03:34:22 GMT 2019
+			forstride:
+			"Fixed" Flowering Oak leaf model in Fast graphics
+			=========
+			Build: 1.14.4-9.0.0.201 - Sun Aug 04 12:54:00 GMT 2019
+			forstride:
+			Finished up Nether biomes, which now generate
+			=========
+			Build: 1.14.4-9.0.0.200 - Sun Aug 04 12:04:55 GMT 2019
+			Adubbz:
+			Added support for Nether biomes
+			=========
+			Build: 1.14.4-9.0.0.199 - Sun Aug 04 08:39:30 GMT 2019
+			forstride:
+			More work on Nether biomes
+			=========
+			Build: 1.14.4-9.0.0.198 - Sun Aug 04 04:26:55 GMT 2019
+			forstride:
+			More work on Nether biomes, tweaks to the Tundra and Bog biomes
+			=========
+			Build: 1.14.4-9.0.0.197 - Sat Aug 03 06:46:12 GMT 2019
+			forstride:
+			Changed Nether Sprouts into regular Sprouts and allowed them to grow on
+			any block with a solid top
+			=========
+			Build: 1.14.4-9.0.0.196 - Thu Aug 01 00:08:36 GMT 2019
+			forstride:
+			Started working on Nether biomes/End biomes (Currently not available),
+			fixed Polish localization file name (Closes #1432)
+			=========
+			Build: 1.14.4-9.0.0.195 - Tue Jul 30 01:10:47 GMT 2019
+			m.pietquin:
+			bop boats now extends BoatEntity
+			=========
+			Build: 1.14.4-9.0.0.194 - Mon Jul 29 18:08:00 GMT 2019
+			m.pietquin:
+			fix boat inputs allowing to move
+			and also removes the import in the api
+			m.pietquin:
+			adapt without event
+			=========
+			Build: 1.14.4-9.0.0.193 - Mon Jul 29 08:15:39 GMT 2019
+			m.pietquin:
+			fix custom boats
+			=========
+			Build: 1.14.4-9.0.0.192 - Mon Jul 29 06:08:44 GMT 2019
+			forstride:
+			Fixed Flowering Oak Sapling loot table (Closes #1424)
+			=========
+			Build: 1.14.4-9.0.0.191 - Mon Jul 29 05:36:14 GMT 2019
+			forstride:
+			Improved reed/cattail texture
+			=========
+			Build: 1.14.4-9.0.0.190 - Mon Jul 29 04:11:04 GMT 2019
+			forstride:
+			Fixed flammability for foliage/wood blocks and removed unnecessary
+			classes
+			=========
+			Build: 1.14.4-9.0.0.189 - Mon Jul 29 02:08:59 GMT 2019
+			forstride:
+			Added Polish translation (Made by DarkKnightComes)
+			=========
+			Build: 1.14.4-9.0.0.188 - Sun Jul 28 10:39:12 GMT 2019
+			forstride:
+			Fixed plant sustainability for white sand/mud, fixed cattails being able
+			to grow on top of each other
+			=========
+			Build: 1.14.4-9.0.0.187 - Sun Jul 28 09:11:32 GMT 2019
+			forstride:
+			Added foxes to our biomes because I somehow forgot to
+			=========
+			Build: 1.14.4-9.0.0.186 - Sun Jul 28 01:14:47 GMT 2019
+			forstride:
+			Started working on re-adding boats (Still broken, boat items spawn oak
+			boats for the time being)
+			=========
+			Build: 1.14.4-9.0.0.185 - Sat Jul 27 10:39:50 GMT 2019
+			forstride:
+			Allowed BOP saplings/flower/mushrooms to be placed in flower pots, added
+			suspicious stew effects for BOP flowers, added makeshift vanilla sign
+			recipes using BOP planks
+			=========
+			Build: 1.14.4-9.0.0.184 - Sat Jul 27 05:12:34 GMT 2019
+			forstride:
+			Allowed BOP logs to be stripped (Closes #1394), and
+			saplings/leaves/plants to be composted
+			=========
+			Build: 1.14.4-9.0.0.183 - Fri Jul 26 10:57:43 GMT 2019
+			forstride:
+			Fixed sounds/tool effectiveness for various blocks, renamed block/item
+			classes to match 1.14 naming convention
+			=========
+			Build: 1.14.4-9.0.0.182 - Thu Jul 25 22:39:12 GMT 2019
+			forstride:
+			For some reason the last commit didn't fully work?
+			forstride:
+			Removed tiny cacti and mud ball entity, fixed stack sizes for mud
+			balls/music disc
+			=========
+			Build: 1.14.4-9.0.0.180 - Wed Jul 24 07:03:31 GMT 2019
+			github:
+			Update zh_cn.json
+			fixed mistakes 修复错误
+			=========
+			Build: 1.14.4-9.0.0.179 - Wed Jul 24 05:59:21 GMT 2019
+			forstride:
+			Fixed reed/watergrass/mangrove root item placement (Again...), removed
+			sweet berry bushes from Orchards
+			=========
+			Build: 1.14.4-9.0.0.178 - Tue Jul 23 01:44:29 GMT 2019
+			Adubbz:
+			Update Forge and MCP mappings
+			forstride:
+			Added bamboo to Cherry Blossom Grove and Tropics
+			forstride:
+			Fixed advancements, temporarily removed boat/sign files
+			Adubbz:
+			Updated to 1.14.4
+			=========
+			Build: 1.14.3-9.0.0.174 - Sun Jul 21 12:18:20 GMT 2019
+			dmitrij.drandarov:
+			Update to latest mappings (20190721) and forge version (1.14.3)
+			=========
+			Build: 1.14.3-9.0.0.173 - Thu Jul 04 09:03:32 GMT 2019
+			Adubbz:
+			Bump Forge version
+			=========
+			Build: 1.14.3-9.0.0.172 - Tue Jul 02 20:54:43 GMT 2019
+			github:
+			Update zh_cn.json
+			Add new Translation.
+			=========
+			Build: 1.14.3-9.0.0.171 - Mon Jul 01 15:14:20 GMT 2019
+			Adubbz:
+			Workaround server.properties being overwritten by introducing a config
+			option for using the BoP worldtype on servers
+			=========
+			Build: 1.14.3-9.0.0.170 - Fri Jun 28 20:16:53 GMT 2019
+			forstride:
+			Allowed fir, redwood, and umbran saplings to grow 2x2 trees
+			=========
+			Build: 1.14.3-9.0.0.169 - Fri Jun 28 13:40:57 GMT 2019
+			forstride:
+			Added villages to BOP biomes
+			=========
+			Build: 1.14.3-9.0.0.168 - Fri Jun 28 03:53:26 GMT 2019
+			Adubbz:
+			Fix issue template ordering
+			=========
+			Build: 1.14.3-9.0.0.167 - Fri Jun 28 03:52:11 GMT 2019
+			Adubbz:
+			Updated issue templates
+			=========
+			Build: 1.14.3-9.0.0.166 - Fri Jun 28 02:43:06 GMT 2019
+			forstride:
+			Updated a few additional textures
+			=========
+			Build: 1.13.2-8.0.0.164 - Thu Jun 13 04:50:03 GMT 2019
+			forstride:
+			Changed Cold Desert to not have snow, added missing override annotations
+			=========
+			Build: 1.13.2-8.0.0.163 - Tue Jun 11 06:23:37 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.162 - Sun Jun 09 15:00:43 GMT 2019
+			forstride:
+			Tweaked flower generation for certain biomes
+			=========
+			Build: 1.13.2-8.0.0.161 - Sun Jun 09 09:20:43 GMT 2019
+			forstride:
+			Added Lush Grassland biome
+			=========
+			Build: 1.13.2-8.0.0.160 - Sat Jun 08 09:44:30 GMT 2019
+			forstride:
+			Changed dead tree generation, increased cattail amounts in biomes that
+			have them
+			=========
+			Build: 1.13.2-8.0.0.159 - Sat Jun 08 04:57:30 GMT 2019
+			forstride:
+			Fixed placement check for giant trees in the Mystic Grove
+			=========
+			Build: 1.13.2-8.0.0.158 - Fri Jun 07 05:21:07 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.157 - Thu Jun 06 03:04:40 GMT 2019
+			forstride:
+			Started experimenting with End biomes (Not currently available yet)
+			=========
+			Build: 1.13.2-8.0.0.156 - Wed Jun 05 08:23:23 GMT 2019
+			forstride:
+			Fixed a crash caused by bramble blocks, various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.155 - Wed Jun 05 01:32:12 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.154 - Wed Jun 05 00:36:07 GMT 2019
+			forstride:
+			Prevented non-overworld dimensions from using BOP's overworld biome
+			provider
+			=========
+			Build: 1.13.2-8.0.0.153 - Tue Jun 04 17:36:42 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.152 - Tue Jun 04 14:26:40 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.151 - Tue Jun 04 04:02:34 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.150 - Tue Jun 04 00:24:23 GMT 2019
+			forstride:
+			Fixed the bases of fir/redwood trees not generating properly. Various
+			biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.149 - Mon Jun 03 12:06:17 GMT 2019
+			forstride:
+			Renamed the Dead Swamp to Mire, renamed the Highland Moor to Moor,
+			various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.148 - Mon Jun 03 00:19:36 GMT 2019
+			forstride:
+			Changed the Orchard biome to a sub-biome of the vanilla Plains
+			(Replacing the Forest as its sub-biome), improved the Grove biome,
+			prevented Plains/Forest islands from generating within oceans, added the
+			vanilla Desert as an edge biome of the Wasteland
+			=========
+			Build: 1.13.2-8.0.0.147 - Sun Jun 02 09:04:19 GMT 2019
+			forstride:
+			Cleaned up unused class imports
+			=========
+			Build: 1.13.2-8.0.0.146 - Sat Jun 01 18:29:37 GMT 2019
+			forstride:
+			Updated issue templates
+			=========
+			Build: 1.13.2-8.0.0.145 - Sat Jun 01 18:22:49 GMT 2019
+			github:
+			Update question.md
+			=========
+			Build: 1.13.2-8.0.0.144 - Sat Jun 01 18:21:11 GMT 2019
+			github:
+			Update question.md
+			github:
+			Update question.md
+			github:
+			Update question.md
+			=========
+			Build: 1.13.2-8.0.0.143 - Sat Jun 01 18:19:32 GMT 2019
+			github:
+			Update question.md
+			=========
+			Build: 1.13.2-8.0.0.142 - Sat Jun 01 08:12:31 GMT 2019
+			Adubbz:
+			Fixed server crashing on boot. Closes #1401
+			=========
+			Build: 1.13.2-8.0.0.141 - Fri May 31 20:38:29 GMT 2019
+			forstride:
+			Various biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.140 - Fri May 31 12:08:48 GMT 2019
+			forstride:
+			Tweaks to the Bog biome
+			=========
+			Build: 1.13.2-8.0.0.139 - Fri May 31 05:47:18 GMT 2019
+			forstride:
+			Removed the Bog Mire sub-biome, renamed the Bog biome to Dead Swamp,
+			added a new Bog biome based on a cranberry bog
+			=========
+			Build: 1.13.2-8.0.0.138 - Thu May 30 20:58:52 GMT 2019
+			forstride:
+			Added natural carved pumpkins/jack-o-lanterns to the Pumpkin Patch
+			biome. Removed unused textures
+			=========
+			Build: 1.13.2-8.0.0.137 - Thu May 30 00:57:05 GMT 2019
+			forstride:
+			Added Pumpkin Patch sub-biome to the Seasonal Forest
+			=========
+			Build: 1.13.2-8.0.0.136 - Mon May 27 23:55:29 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.135 - Sun May 26 23:15:52 GMT 2019
+			forstride:
+			Fixed some improper biome tags
+			=========
+			Build: 1.13.2-8.0.0.134 - Sun May 26 21:33:17 GMT 2019
+			forstride:
+			Added Dry Plains biome
+			=========
+			Build: 1.13.2-8.0.0.133 - Sun May 26 08:15:01 GMT 2019
+			github:
+			Update README.md
+			=========
+			Build: 1.13.2-8.0.0.132 - Sun May 26 05:05:30 GMT 2019
+			forstride:
+			Added missing entities to various biomes
+			=========
+			Build: 1.13.2-8.0.0.131 - Sun May 26 00:01:11 GMT 2019
+			forstride:
+			Allowed palm saplings to grow on sand, Tropics/Volcano tweaks
+			=========
+			Build: 1.13.2-8.0.0.130 - Sat May 25 22:56:50 GMT 2019
+			forstride:
+			Fixed water plant itemblock not placing the right block
+			=========
+			Build: 1.13.2-8.0.0.129 - Sat May 25 19:31:59 GMT 2019
+			forstride:
+			Various biome improvements, allowed players to spawn in more biomes
+			=========
+			Build: 1.13.2-8.0.0.128 - Sat May 25 18:01:04 GMT 2019
+			github:
+			Create zh_cn.json
+			=========
+			Build: 1.13.2-8.0.0.127 - Sat May 25 09:28:28 GMT 2019
+			forstride:
+			Fixed willow vine flammability, beaches in Cold Deserts, and various
+			grass/foliage colors
+			=========
+			Build: 1.13.2-8.0.0.126 - Sat May 25 08:37:03 GMT 2019
+			forstride:
+			Added Igloos/Woodland Mansions to certain biomes
+			=========
+			Build: 1.13.2-8.0.0.125 - Sat May 25 08:18:03 GMT 2019
+			github:
+			Update issue templates
+			=========
+			Build: 1.13.2-8.0.0.124 - Sat May 25 05:35:18 GMT 2019
+			Adubbz:
+			Apparently this didn't get pushed
+			Adubbz:
+			Renaming access transformer
+			=========
+			Build: 1.13.2-8.0.0.122 - Sat May 25 03:53:28 GMT 2019
+			Adubbz:
+			Do curseforge task earlier
+			=========
+			Build: 1.13.2-8.0.0.121 - Sat May 25 03:49:38 GMT 2019
+			Adubbz:
+			changelog_file, not changelog
+			Adubbz:
+			Actually set the curse api key...
+			=========
+			Build: 1.13.2-8.0.0.118 - Sat May 25 03:36:38 GMT 2019
+			Adubbz:
+			Added mainArtifact to curseforge gradle section
+			=========
+			Build: 1.13.2-8.0.0.117 - Sat May 25 03:28:48 GMT 2019
+			Adubbz:
+			Try this instead
+			=========
+			Build: 1.13.2-8.0.0.116 - Sat May 25 03:18:58 GMT 2019
+			Adubbz:
+			Prepare for alpha builds
+			=========
+			Build: 1.13.2-8.0.0.115 - Sat May 25 03:01:03 GMT 2019
+			github:
+			pt_br cleanup
+			=========
+			Build: 1.13.2-8.0.0.114 - Sat May 25 02:45:22 GMT 2019
+			forstride:
+			Biome tweaks
+			forstride:
+			Added smelting recipes
+			=========
+			Build: 1.13.2-8.0.0.112 - Sat May 25 02:04:32 GMT 2019
+			forstride:
+			Added vanilla blocks to our tag JSONs for the time being until Forge
+			fixes tags
+			=========
+			Build: 1.13.2-8.0.0.111 - Sat May 25 01:25:32 GMT 2019
+			Adubbz:
+			Revert gradle update
+			=========
+			Build: 1.13.2-8.0.0.110 - Sat May 25 01:09:42 GMT 2019
+			Adubbz:
+			Fixed entities
+			=========
+			Build: 1.13.2-8.0.0.109 - Sat May 25 00:32:07 GMT 2019
+			Adubbz:
+			Updated Forge
+			=========
+			Build: 1.13.2-8.0.0.108 - Sat May 25 00:18:22 GMT 2019
+			forstride:
+			Fixed flammability for our blocks
+			=========
+			Build: 1.13.2-8.0.0.107 - Fri May 24 22:48:03 GMT 2019
+			forstride:
+			Re-added Mangrove
+			=========
+			Build: 1.13.2-8.0.0.106 - Fri May 24 21:00:07 GMT 2019
+			forstride:
+			Finished Volcano biome
+			=========
+			Build: 1.13.2-8.0.0.105 - Fri May 24 11:03:06 GMT 2019
+			forstride:
+			Island stuff
+			=========
+			Build: 1.13.2-8.0.0.104 - Fri May 24 09:43:39 GMT 2019
+			Adubbz:
+			Remove debug spam
+			=========
+			Build: 1.13.2-8.0.0.103 - Fri May 24 09:42:11 GMT 2019
+			Adubbz:
+			Generate islands before deep oceans
+			=========
+			Build: 1.13.2-8.0.0.102 - Fri May 24 09:26:21 GMT 2019
+			forstride:
+			Durr
+			=========
+			Build: 1.13.2-8.0.0.101 - Fri May 24 09:00:36 GMT 2019
+			Adubbz:
+			Hurr
+			=========
+			Build: 1.13.2-8.0.0.100 - Fri May 24 08:48:41 GMT 2019
+			Adubbz:
+			Re-added island biomes
+			=========
+			Build: 1.13.2-8.0.0.99 - Fri May 24 05:56:30 GMT 2019
+			forstride:
+			River stuff (Too lazy to write a proper commit description)
+			=========
+			Build: 1.13.2-8.0.0.98 - Fri May 24 05:35:40 GMT 2019
+			Adubbz:
+			Added support for custom river biomes
+			=========
+			Build: 1.13.2-8.0.0.97 - Fri May 24 05:20:15 GMT 2019
+			forstride:
+			Assigned beach biomes to our biomes, generate oceans by climate
+			=========
+			Build: 1.13.2-8.0.0.96 - Fri May 24 04:59:30 GMT 2019
+			Adubbz:
+			Oops
+			=========
+			Build: 1.13.2-8.0.0.95 - Fri May 24 04:52:15 GMT 2019
+			Adubbz:
+			Setup for climate-based ocean biomes
+			=========
+			Build: 1.13.2-8.0.0.94 - Fri May 24 04:28:00 GMT 2019
+			Adubbz:
+			Ensure the beach biome id is actually -1 when the biome is null
+			=========
+			Build: 1.13.2-8.0.0.93 - Fri May 24 04:23:38 GMT 2019
+			Adubbz:
+			Adjust this too
+			=========
+			Build: 1.13.2-8.0.0.92 - Fri May 24 04:22:20 GMT 2019
+			Adubbz:
+			Fix beach default
+			=========
+			Build: 1.13.2-8.0.0.91 - Fri May 24 04:04:25 GMT 2019
+			Adubbz:
+			Added support for custom beach biomes
+			=========
+			Build: 1.13.2-8.0.0.90 - Fri May 24 03:51:35 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.89 - Fri May 24 03:34:50 GMT 2019
+			Adubbz:
+			Added support for custom edge biomes
+			=========
+			Build: 1.13.2-8.0.0.88 - Fri May 24 01:16:05 GMT 2019
+			Adubbz:
+			Don't create an instance of BlockWaterTopPlant inline for registration.
+			Fixes a crash on boot
+			=========
+			Build: 1.13.2-8.0.0.87 - Thu May 23 22:26:20 GMT 2019
+			forstride:
+			Re-added reeds and watergrass
+			=========
+			Build: 1.13.2-8.0.0.86 - Thu May 23 05:10:28 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.85 - Wed May 22 20:06:42 GMT 2019
+			forstride:
+			Tweaked sub-biome rarity
+			=========
+			Build: 1.13.2-8.0.0.84 - Wed May 22 06:46:51 GMT 2019
+			forstride:
+			Allowed the player to spawn in BOP biomes
+			=========
+			Build: 1.13.2-8.0.0.83 - Wed May 22 04:44:11 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.82 - Wed May 22 02:37:36 GMT 2019
+			forstride:
+			Started re-adding boat entities
+			=========
+			Build: 1.13.2-8.0.0.81 - Wed May 22 01:30:51 GMT 2019
+			forstride:
+			Removed short grass, tweaked biomes, fixed tree generation block
+			replacement
+			=========
+			Build: 1.13.2-8.0.0.80 - Tue May 21 08:42:39 GMT 2019
+			forstride:
+			Implemented saplings properly
+			=========
+			Build: 1.13.2-8.0.0.79 - Tue May 21 06:46:44 GMT 2019
+			forstride:
+			Re-added Silkglade
+			=========
+			Build: 1.13.2-8.0.0.78 - Tue May 21 00:42:08 GMT 2019
+			forstride:
+			Biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.77 - Mon May 20 21:05:18 GMT 2019
+			forstride:
+			Re-added Bayou
+			=========
+			Build: 1.13.2-8.0.0.76 - Sun May 19 23:29:36 GMT 2019
+			forstride:
+			Fixed Bramble
+			=========
+			Build: 1.13.2-8.0.0.75 - Sun May 19 14:33:15 GMT 2019
+			forstride:
+			More biome tweaks
+			=========
+			Build: 1.13.2-8.0.0.74 - Sun May 19 13:26:20 GMT 2019
+			Adubbz:
+			Added support for subbiomes
+			=========
+			Build: 1.13.2-8.0.0.73 - Sun May 19 13:08:05 GMT 2019
+			forstride:
+			Tweaked biomes
+			=========
+			Build: 1.13.2-8.0.0.72 - Sun May 19 10:36:15 GMT 2019
+			Adubbz:
+			Fixed tpbiome dropping you underneath the world
+			=========
+			Build: 1.13.2-8.0.0.71 - Sun May 19 10:30:24 GMT 2019
+			Adubbz:
+			Hopefully fixed climates getting clobbered
+			=========
+			Build: 1.13.2-8.0.0.70 - Sun May 19 03:20:44 GMT 2019
+			forstride:
+			Re-added most of the remaining overworld biomes, revamped climate
+			mapping
+			=========
+			Build: 1.13.2-8.0.0.69 - Sat May 18 05:59:12 GMT 2019
+			forstride:
+			Re-added Dead Forest and Grove
+			=========
+			Build: 1.13.2-8.0.0.68 - Sat May 18 03:13:02 GMT 2019
+			forstride:
+			Re-added Cold Desert and Bog Mire
+			=========
+			Build: 1.13.2-8.0.0.67 - Tue May 14 18:54:03 GMT 2019
+			forstride:
+			Fixed transparency for leaves in fast graphics
+			=========
+			Build: 1.13.2-8.0.0.66 - Tue May 14 08:17:47 GMT 2019
+			forstride:
+			Re-added Brushland, Tundra, and Flower Meadow
+			=========
+			Build: 1.13.2-8.0.0.65 - Mon May 13 23:40:27 GMT 2019
+			forstride:
+			Re-added Shield biome
+			=========
+			Build: 1.13.2-8.0.0.64 - Mon May 13 09:09:00 GMT 2019
+			forstride:
+			Re-added Boreal Forest, Pasture, and Prairie
+			=========
+			Build: 1.13.2-8.0.0.63 - Sat May 04 22:11:52 GMT 2019
+			forstride:
+			Re-added Chaparral
+			=========
+			Build: 1.13.2-8.0.0.62 - Sat May 04 18:35:12 GMT 2019
+			forstride:
+			Tweaked climate mapping
+			=========
+			Build: 1.13.2-8.0.0.61 - Sat May 04 12:43:37 GMT 2019
+			Adubbz:
+			Prevent oceans from generating in extreme climates
+			=========
+			Build: 1.13.2-8.0.0.60 - Sat May 04 07:51:26 GMT 2019
+			Adubbz:
+			Groovy requires double quotes for format strings
+			=========
+			Build: 1.13.2-8.0.0.59 - Sat May 04 07:46:56 GMT 2019
+			Adubbz:
+			Another attempt at fixing changelog naming
+			=========
+			Build: 1.13.2-8.0.0.58 - Sat May 04 07:38:01 GMT 2019
+			Adubbz:
+			Account for missing changelog for curse
+			=========
+			Build: 1.13.2-8.0.0.57 - Sat May 04 07:32:31 GMT 2019
+			Adubbz:
+			Attempt at better changelog naming
+			Adubbz:
+			More attempted fixes
+			=========
+			Build: 1.13.2-8.0.0.54 - Sat May 04 07:08:26 GMT 2019
+			Adubbz:
+			Ditch the git hash completely
+			=========
+			Build: 1.13.2-8.0.0.e1d728811 - Sat May 04 07:03:51 GMT 2019
+			Adubbz:
+			Hopefully fix wrong path
+			=========
+			Build: 1.13.2-8.0.0-06f254998.16 - Sat May 04 06:41:26 GMT 2019
+			Adubbz:
+			Put back the build number
+			=========
+			Build: 1.13.2-8.0.0.c49a4e404 - Sat May 04 06:34:56 GMT 2019
+			Adubbz:
+			Switch to using maven-publish
+			=========
+			Build: 1.13.2-8.0.0.51ff1cc23 - Sat May 04 06:02:01 GMT 2019
+			Adubbz:
+			Oops
+			Adubbz:
+			Swap build number for git hash
+			=========
+			Build: 1.13.2-8.0.0.12 - Sat May 04 05:44:54 GMT 2019
+			Adubbz:
+			It would be a good idea to include the password when trying to upload to
+			maven...
+			Adubbz:
+			Grep only for lines starting with version
+			Adubbz:
+			Fixed maven url
+			Adubbz:
+			Minor fix
+			Adubbz:
+			More gradle fixes
+			Adubbz:
+			Have I ever told you how much I love build.gradle updates
+
+	Clumps (Clumps-6.0.0.3.jar --> Clumps-6.0.0.4.jar):
+		Clumps-6.0.0.4.jar:
+			Current version: 6.0.0.4
+			* [orb improvements](https://github.com/jaredlll08/Clumps/commit/75899ddf5dcb03398bd491266e6c325b7d8e78c6) - Jared - Thu Aug 20 20:21:10 2020
+			* [re-fix clumps causing crashes close #35](https://github.com/jaredlll08/Clumps/commit/234a169d959f1aefb65151a4328f04e70d1c7cc4) - Jared - Sun Jul 19 21:03:52 2020
+			* [update version](https://github.com/jaredlll08/Clumps/commit/91b94baf80891a34d0ad95fc90f8ce05deb4cf3c) - Jared - Sat Jul 18 01:58:06 2020
+			* [update commit](https://github.com/jaredlll08/Clumps/commit/1228c2b85508b66799487f0b16600a35f4e34d25) - Jared - Sat Jul 18 01:54:03 2020
+
+	Dark Paintings (DarkPaintings-1.16.1-2.0.1.jar --> DarkPaintings-1.16.1-2.0.2.jar):
+		DarkPaintings-1.16.1-2.0.2.jar:
+			* Updated MCP and Forge version. - Tyler Hancock
+			* Added "the wheel" by Vydax. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkPaintings)
+			* BigAl607
+			* Pongo Sapiens
+			* Darkosto
+
+	Emendatus Enigmatica (EmendatusEnigmatica-1.16.1-1.0.4 --> EmendatusEnigmatica-1.16.1-1.0.5):
+		EmendatusEnigmatica-1.16.1-1.0.5:
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.5
+			* Added shapeless recipes to turn Ore Chunks into Ore Blocks
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.4
+			* Added couple new tags to the Certus Quartz, Charged Certus Quartz, and Fluix Crystal
+			* Added the usage of DeferredWorkQueue during the World Gen to avoid a crash
+			* Added Smelting and Blasting recipes for ingots/gems from ores
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.3
+			* Added Fluorite
+			* Removed Skystone
+			* JEI Integration
+			* Added multiple recipes to exchange the Chunks into any of their ore block variants using the Stonecutter
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.2
+			* World Gen Crash Fix
+			* AE2 and Minecraft Tags
+			* Added MinMaxCount on Redstone Ores Loot Tables
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.1
+			* Minor Code Refactoring
+			* Texture Update
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.0
+			* First Official Release
+
+	Interactio - In-World Crafting with Datapacks! (Interactio-1.16.1-2.0.5.jar --> Interactio-1.16.1-2.0.5a.jar):
+		Interactio-1.16.1-2.0.5a.jar:
+			[- Hotfix - Remove a debug log I figured to get rid of](https://github.com/MaxNeedsSnacks/Interactio/commit/842cf6cff93c02d5286c471f378fa34cc85b69be)
+			Shouldn't have affected TOOOOO many people's games, hopefully, unless you use an item -> fluid transform recipe with things that are randomly dropped into the world, like eggs, feathers or seeds.
+			Still, it's annoying, it bloats the log files, and it's gotta go.
+
+	KubeJS (kubejs-2.7.2.58.jar --> kubejs-2.7.2.59.jar):
+		kubejs-2.7.2.59.jar:
+			* Added item.getHarvestSpeed() - LatvianModder
+			* Added player.spawnLocation - LatvianModder
+
+	Lollipop (Lollipop-1.16.1-2.1.3.jar --> Lollipop-1.16.1-3.0.0.jar):
+		Lollipop-1.16.1-3.0.0.jar:
+			No changelog available.
+
+	Powah! (Powah-1.16.1-2.1.3.jar --> Powah-1.16.1-2.2.0.jar):
+		Powah-1.16.1-2.2.0.jar:
+			2.2.0
+			* Fix player transmitter not checking top part position, Closes #100.
+			* Fix Uraninite ores breaking hardness.
+			* Fixed random bugs.
+			* Updated [lollipop](https://www.curseforge.com/minecraft/mc-mods/lollipop/files) to v3.0.0
+			2.1.3
+			* Added Reactor generation mode (if set to on the reactor will stop if is full and start when has less than 70% of energy).
+			* Fixed losing side config when chunk load/unload.
+			* Fixed Player transmitter not breaking properly.
+			* Updated lollipop to v2.1.3.
+			2.1.2
+			* Fixed magmator creates ungodly amount of pings in server, Closes #97.
+			* Added all uraninite ores to the forge:ores and forge:ores/uraninite tags, Closes #96.
+			* Updated lollipop to v2.1.2.
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+	Valhelsia Structures (Valhelsia Structures - 16.0.1 --> Valhelsia Structures - 16.0.2):
+		Valhelsia Structures - 16.0.2:
+			[](https://discord.gg/reQZEXu)[ ](https://twitter.com/valhelsia) [](https://github.com/ValhelsiaTeam)
+
+	Xaero's Minimap (v20.20.0 for Forge 1.16.1 --> v20.20.1 for Forge 1.16.1):
+		v20.20.1 for Forge 1.16.1:
+			* Compatible with Xaero's World Map 1.10.0 or newer.
+			* Fixed hotbar losing transparency when switching waypoint sets.
+			* Fixed the mod not resetting the server level id when switching between a sub-server, which includes this mod on the server side, and a sub-server that doesn't.
+			* Fixed deathpoints not working when game rule doImmediateRespawn is enabled.
+			* Baby piglins should now be displayed as friendly on the minimap.
+			* All mobs will now be displayed as friendly on the minimap on Peaceful difficulty. Other mods can still make mobs hostile on Peaceful but that's something to fix on their end.
+			* Fixed some modded hostile mobs not using the hostile mob color on the minimap but still being affected by the hostile mobs toggle.
+			* Fixed text field placeholders being displayed incorrectly when the placeholder text, which can be changed with a resource pack or translation, does not fit the field without scrolling. Although it will still fit a bit less characters than you would expect because of the color code at the beginning. I might rework it to not use the code in the future.
+			* Fixed sun light not working correctly on the map. This fix will make the map a bit darker/brighter at night, but that's how it was supposed to be. Might add a slider option for that in the future.
+
+		v20.20.1 for Fabric 1.16.1:
+			* Compatible with Xaero's World Map 1.10.0 or newer.
+			* Fixed hotbar losing transparency when switching waypoint sets.
+			* Fixed the mod not resetting the server level id when switching between a sub-server, which includes this mod on the server side, and a sub-server that doesn't.
+			* Fixed deathpoints not working when game rule doImmediateRespawn is enabled.
+			* Baby piglins should now be displayed as friendly on the minimap.
+			* All mobs will now be displayed as friendly on the minimap on Peaceful difficulty. Other mods can still make mobs hostile on Peaceful but that's something to fix on their end.
+			* Fixed some modded hostile mobs not using the hostile mob color on the minimap but still being affected by the hostile mobs toggle.
+			* Fixed text field placeholders being displayed incorrectly when the placeholder text, which can be changed with a resource pack or translation, does not fit the field without scrolling. Although it will still fit a bit less characters than you would expect because of the color code at the beginning. I might rework it to not use the code in the future.
+			* Fixed sun light not working correctly on the map. This fix will make the map a bit darker/brighter at night, but that's how it was supposed to be. Might add a slider option for that in the future.
+
+	Xaero's World Map (v1.10.0 for Forge 1.16.1 --> v1.10.1 for Forge 1.16.1):
+		v1.10.1 for Forge 1.16.1:
+			* Compatible with Xaero's Minimap / Better PVP 20.18.0 or newer.
+			* Fixed the mod not resetting the server level id when switching between a sub-server, which includes this mod on the server side, and a sub-server that doesn't.
+			* Fixed entity outline caused by the "Glowing" potion effect not working correctly around held items with this mod installed. This can fix other issues too, so it's not just 1.12.2 and newer.
+			* Fixed sun light not working correctly on the map. This fix will make the map a bit darker/brighter at night, but that's how it was supposed to be. Might add a slider option for that in the future.
+			* Fixed server level id mode sometimes not working when a dimension takes very long to load.
+
+		v1.10.1 for Fabric 1.16.1:
+			* Compatible with Xaero's Minimap / Better PVP 20.18.0 or newer.
+			* Fixed the mod not resetting the server level id when switching between a sub-server, which includes this mod on the server side, and a sub-server that doesn't.
+			* Fixed entity outline caused by the "Glowing" potion effect not working correctly around held items with this mod installed. This can fix other issues too, so it's not just 1.12.2 and newer.
+			* Fixed sun light not working correctly on the map. This fix will make the map a bit darker/brighter at night, but that's how it was supposed to be. Might add a slider option for that in the future.
+			* Fixed server level id mode sometimes not working when a dimension takes very long to load.
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
