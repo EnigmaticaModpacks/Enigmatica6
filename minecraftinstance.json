@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-08-18T18:14:10.7515513Z",
+  "lastPlayed": "2020-08-20T19:45:19.9600561Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -4989,83 +4989,71 @@
       "addonID": 352656,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3016350,
-        "displayName": "Powah-1.16.1-2.1.3.jar",
-        "fileName": "Powah-1.16.1-2.1.3.jar",
-        "fileDate": "2020-07-27T18:22:27.91Z",
-        "fileLength": 1025905,
+        "id": 3037745,
+        "displayName": "Powah-1.16.1-2.2.0.jar",
+        "fileName": "Powah-1.16.1-2.2.0.jar",
+        "fileDate": "2020-08-20T16:46:12.23Z",
+        "fileLength": 1019712,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3016/350/Powah-1.16.1-2.1.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/745/Powah-1.16.1-2.2.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 45746108,
+            "id": 0,
             "addonId": 347954,
             "type": 3,
-            "fileId": 3016350
+            "fileId": 0
           }
         ],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2573953177,
-            "type": 3
+            "fingerprint": 2969328392,
+            "type": 0
           },
           {
             "foldername": "owmii",
-            "fingerprint": 767945499,
-            "type": 3
+            "fingerprint": 3467881194,
+            "type": 0
           },
           {
             "foldername": "assets",
             "fingerprint": 1242195636,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "data",
             "fingerprint": 79525677,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1800488966,
-            "type": 3
+            "type": 0
           }
         ],
-        "packageFingerprint": 68395463,
+        "packageFingerprint": 807319504,
         "gameVersion": [
           "1.16.1"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000001",
-            "gameVersion": "1.16.1",
-            "gameVersionReleaseDate": "2020-06-24T12:41:11.823Z",
-            "gameVersionName": "1.16.1"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1937397,
-        "projectId": 352656,
-        "packageFingerprintId": 495503403,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2343953,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Powah-1.16.1-2.1.3.jar"
+        "FileNameOnDisk": "Powah-1.16.1-2.2.0.jar"
       },
       "dateInstalled": "2020-08-02T06:13:41.217282Z",
-      "dateUpdated": "2019-08-02T06:13:41.217282Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-08-20T17:27:15.6861254Z",
+      "dateLastUpdateAttempted": "2020-08-20T17:27:15.6861254Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5274,34 +5262,27 @@
       "addonID": 359344,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3035346,
-        "displayName": "Interactio-1.16.1-2.0.5.jar",
-        "fileName": "Interactio-1.16.1-2.0.5.jar",
-        "fileDate": "2020-08-17T20:52:00.993Z",
-        "fileLength": 174911,
+        "id": 3036266,
+        "displayName": "Interactio-1.16.1-2.0.5a.jar",
+        "fileName": "Interactio-1.16.1-2.0.5a.jar",
+        "fileDate": "2020-08-18T21:53:39.083Z",
+        "fileLength": 174789,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3035/346/Interactio-1.16.1-2.0.5.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3036/266/Interactio-1.16.1-2.0.5a.jar",
         "isAlternate": false,
         "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 357178,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
+        "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3409573912,
+            "fingerprint": 3243698227,
             "type": 0
           },
           {
             "foldername": "dev",
-            "fingerprint": 3057496302,
+            "fingerprint": 1578209390,
             "type": 0
           },
           {
@@ -5325,7 +5306,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 3812058566,
+        "packageFingerprint": 539604154,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -5339,11 +5320,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Interactio-1.16.1-2.0.5.jar"
+        "FileNameOnDisk": "Interactio-1.16.1-2.0.5a.jar"
       },
       "dateInstalled": "2020-08-18T18:10:44.2591976Z",
-      "dateUpdated": "2020-08-18T18:10:44.2611543Z",
-      "dateLastUpdateAttempted": "2020-08-18T18:10:44.2611543Z",
+      "dateUpdated": "2020-08-19T20:19:41.6975406Z",
+      "dateLastUpdateAttempted": "2020-08-19T20:19:41.6975406Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -5353,7 +5334,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 308663,
@@ -6472,7 +6453,7 @@
       "dateInstalled": "2020-08-02T20:31:28.6075261Z",
       "dateUpdated": "2020-08-18T18:14:01.7033116Z",
       "dateLastUpdateAttempted": "2020-08-18T18:14:01.7033116Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9006,85 +8987,67 @@
       "addonID": 377281,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 2992437,
-        "displayName": "DarkPaintings-1.16.1-2.0.1.jar",
-        "fileName": "DarkPaintings-1.16.1-2.0.1.jar",
-        "fileDate": "2020-06-29T21:00:58.887Z",
-        "fileLength": 10459,
-        "releaseType": 1,
+        "id": 3036559,
+        "displayName": "DarkPaintings-1.16.1-2.0.2.jar",
+        "fileName": "DarkPaintings-1.16.1-2.0.2.jar",
+        "fileDate": "2020-08-19T05:55:17.35Z",
+        "fileLength": 11440,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2992/437/DarkPaintings-1.16.1-2.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3036/559/DarkPaintings-1.16.1-2.0.2.jar",
         "isAlternate": false,
-        "alternateFileId": 2992438,
+        "alternateFileId": 3036560,
         "dependencies": [
           {
-            "id": 44305631,
+            "id": 0,
             "addonId": 228525,
             "type": 3,
-            "fileId": 2992437
+            "fileId": 0
           }
         ],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3888293895,
-            "type": 3
+            "fingerprint": 247121971,
+            "type": 0
           },
           {
             "foldername": "net",
-            "fingerprint": 1568128360,
-            "type": 3
+            "fingerprint": 1920215701,
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3579281324,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 1331472924,
-            "type": 3
+            "fingerprint": 2762513215,
+            "type": 0
           }
         ],
-        "packageFingerprint": 3724073173,
+        "packageFingerprint": 2318381717,
         "gameVersion": [
           "1.16.1",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000001",
-            "gameVersion": "1.16.1",
-            "gameVersionReleaseDate": "2020-06-24T12:41:11.823Z",
-            "gameVersionName": "1.16.1"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1907796,
-        "projectId": 377281,
-        "packageFingerprintId": 480462896,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2295423,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "DarkPaintings-1.16.1-2.0.1.jar"
+        "FileNameOnDisk": "DarkPaintings-1.16.1-2.0.2.jar"
       },
       "dateInstalled": "2020-08-02T06:13:37.9915897Z",
-      "dateUpdated": "2019-08-02T06:13:37.9915897Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-08-19T20:19:33.8903889Z",
+      "dateLastUpdateAttempted": "2020-08-19T20:19:33.8903889Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10962,7 +10925,7 @@
       "dateInstalled": "2020-08-02T06:13:37.9915897Z",
       "dateUpdated": "2020-08-18T18:10:14.7863394Z",
       "dateLastUpdateAttempted": "2020-08-18T18:10:14.7863394Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11221,26 +11184,26 @@
       "addonID": 238086,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3028847,
-        "displayName": "kubejs-2.7.2.58.jar",
-        "fileName": "kubejs-2.7.2.58.jar",
-        "fileDate": "2020-08-10T21:32:25.493Z",
-        "fileLength": 723301,
+        "id": 3036945,
+        "displayName": "kubejs-2.7.2.59.jar",
+        "fileName": "kubejs-2.7.2.59.jar",
+        "fileDate": "2020-08-19T17:53:30.053Z",
+        "fileLength": 724023,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3028/847/kubejs-2.7.2.58.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3036/945/kubejs-2.7.2.59.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 268655,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 238222,
+            "addonId": 268655,
             "type": 2,
             "fileId": 0
           }
@@ -11249,12 +11212,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1142314680,
+            "fingerprint": 3735029608,
             "type": 0
           },
           {
             "foldername": "dev",
-            "fingerprint": 2007002794,
+            "fingerprint": 3007080048,
             "type": 0
           },
           {
@@ -11288,7 +11251,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 1342047183,
+        "packageFingerprint": 1751110594,
         "gameVersion": [
           "1.16.1"
         ],
@@ -11301,12 +11264,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "kubejs-2.7.2.58.jar"
+        "FileNameOnDisk": "kubejs-2.7.2.59.jar"
       },
       "dateInstalled": "2020-08-02T06:13:41.217282Z",
-      "dateUpdated": "2020-08-13T18:28:31.673689Z",
-      "dateLastUpdateAttempted": "2020-08-13T18:28:31.673689Z",
-      "status": 5,
+      "dateUpdated": "2020-08-19T20:19:46.9185787Z",
+      "dateLastUpdateAttempted": "2020-08-19T20:19:46.9185787Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11761,14 +11724,14 @@
       "addonID": 399630,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3032392,
-        "displayName": "EmendatusEnigmatica-1.16.1-1.0.4",
-        "fileName": "EmendatusEnigmatica-1.16.1-1.0.4.jar",
-        "fileDate": "2020-08-14T18:48:35.907Z",
-        "fileLength": 1520916,
+        "id": 3036995,
+        "displayName": "EmendatusEnigmatica-1.16.1-1.0.5",
+        "fileName": "EmendatusEnigmatica-1.16.1-1.0.5.jar",
+        "fileDate": "2020-08-19T19:10:28.193Z",
+        "fileLength": 1538938,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3032/392/EmendatusEnigmatica-1.16.1-1.0.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3036/995/EmendatusEnigmatica-1.16.1-1.0.5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -11776,17 +11739,17 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 73172502,
+            "fingerprint": 1729059649,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 1778410399,
+            "fingerprint": 741086443,
             "type": 0
           },
           {
             "foldername": ".cache",
-            "fingerprint": 2964213664,
+            "fingerprint": 1210989760,
             "type": 0
           },
           {
@@ -11796,7 +11759,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 3253914150,
+            "fingerprint": 1907122488,
             "type": 0
           },
           {
@@ -11810,7 +11773,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 467159541,
+        "packageFingerprint": 2050680926,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -11824,12 +11787,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "EmendatusEnigmatica-1.16.1-1.0.4.jar"
+        "FileNameOnDisk": "EmendatusEnigmatica-1.16.1-1.0.5.jar"
       },
       "dateInstalled": "2020-08-08T21:11:28.9246112Z",
-      "dateUpdated": "2020-08-15T18:35:53.8731929Z",
-      "dateLastUpdateAttempted": "2020-08-15T18:35:53.8731929Z",
-      "status": 5,
+      "dateUpdated": "2020-08-19T20:19:35.9738418Z",
+      "dateLastUpdateAttempted": "2020-08-19T20:19:35.9738418Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12598,14 +12561,14 @@
       "addonID": 317780,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3030184,
-        "displayName": "v1.10.0 for Forge 1.16.1",
-        "fileName": "XaerosWorldMap_1.10.0_Forge_1.16.1.jar",
-        "fileDate": "2020-08-12T10:32:01.2Z",
-        "fileLength": 321254,
+        "id": 3037469,
+        "displayName": "v1.10.1 for Forge 1.16.1",
+        "fileName": "XaerosWorldMap_1.10.1_Forge_1.16.1.jar",
+        "fileDate": "2020-08-20T09:00:35.623Z",
+        "fileLength": 324203,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3030/184/XaerosWorldMap_1.10.0_Forge_1.16.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/469/XaerosWorldMap_1.10.1_Forge_1.16.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -12613,12 +12576,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2181628262,
+            "fingerprint": 3945468210,
             "type": 0
           },
           {
             "foldername": "xaero",
-            "fingerprint": 1026510094,
+            "fingerprint": 120111438,
             "type": 0
           },
           {
@@ -12632,7 +12595,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 2049434742,
+        "packageFingerprint": 595389686,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -12646,12 +12609,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "XaerosWorldMap_1.10.0_Forge_1.16.1.jar"
+        "FileNameOnDisk": "XaerosWorldMap_1.10.1_Forge_1.16.1.jar"
       },
       "dateInstalled": "2020-08-02T20:31:28.6055319Z",
-      "dateUpdated": "2020-08-14T19:14:36.8728966Z",
-      "dateLastUpdateAttempted": "2020-08-14T19:14:36.8728966Z",
-      "status": 5,
+      "dateUpdated": "2020-08-20T17:27:30.2640693Z",
+      "dateLastUpdateAttempted": "2020-08-20T17:27:30.2640693Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13153,22 +13116,22 @@
       "addonID": 220318,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3025749,
-        "displayName": "Biomes O' Plenty 1.16.1-11.0.0.393",
-        "fileName": "BiomesOPlenty-1.16.1-11.0.0.393-universal.jar",
-        "fileDate": "2020-08-07T04:39:34.807Z",
-        "fileLength": 3328106,
+        "id": 3037340,
+        "displayName": "Biomes O' Plenty 1.16.1-11.0.0.394",
+        "fileName": "BiomesOPlenty-1.16.1-11.0.0.394-universal.jar",
+        "fileDate": "2020-08-20T04:13:14.823Z",
+        "fileLength": 3327644,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3025/749/BiomesOPlenty-1.16.1-11.0.0.393-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/340/BiomesOPlenty-1.16.1-11.0.0.394-universal.jar",
         "isAlternate": false,
-        "alternateFileId": 3025750,
+        "alternateFileId": 3037341,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2314277839,
+            "fingerprint": 967698653,
             "type": 0
           },
           {
@@ -13202,7 +13165,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 3881204561,
+        "packageFingerprint": 2424067905,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -13216,12 +13179,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BiomesOPlenty-1.16.1-11.0.0.393-universal.jar"
+        "FileNameOnDisk": "BiomesOPlenty-1.16.1-11.0.0.394-universal.jar"
       },
       "dateInstalled": "2020-08-02T06:13:37.9915897Z",
-      "dateUpdated": "2020-08-07T17:55:59.271487Z",
-      "dateLastUpdateAttempted": "2020-08-07T17:55:59.271487Z",
-      "status": 5,
+      "dateUpdated": "2020-08-20T17:26:55.7827957Z",
+      "dateLastUpdateAttempted": "2020-08-20T17:26:55.7827957Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13839,6 +13802,74 @@
       "dateUpdated": "2020-08-13T18:28:16.6697915Z",
       "dateLastUpdateAttempted": "2020-08-13T18:28:16.6697915Z",
       "status": 5,
+      "preferenceAutoInstallUpdates": false,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 264353,
+      "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
+      "installedFile": {
+        "id": 3031277,
+        "displayName": "swingthroughgrass-1.16.1-1.5.1.jar",
+        "fileName": "swingthroughgrass-1.16.1-1.5.1.jar",
+        "fileDate": "2020-08-13T16:13:26.523Z",
+        "fileLength": 22260,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3031/277/swingthroughgrass-1.16.1-1.5.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3381078816,
+            "type": 0
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 4192632116,
+            "type": 0
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 3796077447,
+            "type": 0
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3883671949,
+            "type": 0
+          }
+        ],
+        "packageFingerprint": 2583219376,
+        "gameVersion": [
+          "1.16.1",
+          "Forge"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "swingthroughgrass-1.16.1-1.5.1.jar"
+      },
+      "dateInstalled": "2020-08-19T20:30:31.2762134Z",
+      "dateUpdated": "2020-08-19T20:30:31.3200968Z",
+      "dateLastUpdateAttempted": "2020-08-19T20:30:31.3200968Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14541,20 +14572,20 @@
       "addonID": 313970,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3031868,
-        "displayName": "Apotheosis-1.16.1-4.1.0.jar",
-        "fileName": "Apotheosis-1.16.1-4.1.0.jar",
-        "fileDate": "2020-08-14T03:58:14.02Z",
-        "fileLength": 702371,
+        "id": 3037724,
+        "displayName": "Apotheosis-1.16.1-4.1.1.jar",
+        "fileName": "Apotheosis-1.16.1-4.1.1.jar",
+        "fileDate": "2020-08-20T16:15:06.76Z",
+        "fileLength": 703012,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3031/868/Apotheosis-1.16.1-4.1.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/724/Apotheosis-1.16.1-4.1.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 253449,
+            "addonId": 250419,
             "type": 2,
             "fileId": 0
           },
@@ -14566,14 +14597,14 @@
           },
           {
             "id": 0,
-            "addonId": 283644,
-            "type": 3,
+            "addonId": 253449,
+            "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 250419,
-            "type": 2,
+            "addonId": 283644,
+            "type": 3,
             "fileId": 0
           }
         ],
@@ -14581,12 +14612,17 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2422452166,
+            "fingerprint": 3769384754,
             "type": 0
           },
           {
             "foldername": "com",
             "fingerprint": 1733758917,
+            "type": 0
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 2781707641,
             "type": 0
           },
           {
@@ -14596,7 +14632,7 @@
           },
           {
             "foldername": "apothasm",
-            "fingerprint": 1805229079,
+            "fingerprint": 3775567001,
             "type": 0
           },
           {
@@ -14615,7 +14651,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 3505725159,
+        "packageFingerprint": 2387067527,
         "gameVersion": [
           "1.16.1"
         ],
@@ -14628,12 +14664,12 @@
         "gameVersionDateReleased": "2020-06-24T12:41:11.823Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Apotheosis-1.16.1-4.1.0.jar"
+        "FileNameOnDisk": "Apotheosis-1.16.1-4.1.1.jar"
       },
       "dateInstalled": "2020-08-07T17:59:56.0325965Z",
-      "dateUpdated": "2020-08-15T18:33:36.0808304Z",
-      "dateLastUpdateAttempted": "2020-08-15T18:33:36.0808304Z",
-      "status": 5,
+      "dateUpdated": "2020-08-20T17:26:45.8212579Z",
+      "dateLastUpdateAttempted": "2020-08-20T17:26:45.8212579Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14807,71 +14843,59 @@
       "addonID": 347954,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3016348,
-        "displayName": "Lollipop-1.16.1-2.1.3.jar",
-        "fileName": "Lollipop-1.16.1-2.1.3.jar",
-        "fileDate": "2020-07-27T18:21:09.06Z",
-        "fileLength": 468410,
+        "id": 3037744,
+        "displayName": "Lollipop-1.16.1-3.0.0.jar",
+        "fileName": "Lollipop-1.16.1-3.0.0.jar",
+        "fileDate": "2020-08-20T16:46:07.383Z",
+        "fileLength": 472916,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3016/348/Lollipop-1.16.1-2.1.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/744/Lollipop-1.16.1-3.0.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1416550248,
-            "type": 3
+            "fingerprint": 2210754354,
+            "type": 0
           },
           {
             "foldername": "owmii",
-            "fingerprint": 3079089248,
-            "type": 3
+            "fingerprint": 281798326,
+            "type": 0
           },
           {
             "foldername": "assets",
             "fingerprint": 2970903882,
-            "type": 3
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1567071014,
-            "type": 3
+            "type": 0
           }
         ],
-        "packageFingerprint": 4109803625,
+        "packageFingerprint": 892469824,
         "gameVersion": [
           "1.16.1"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000001",
-            "gameVersion": "1.16.1",
-            "gameVersionReleaseDate": "2020-06-24T12:41:11.823Z",
-            "gameVersionName": "1.16.1"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1937395,
-        "projectId": 347954,
-        "packageFingerprintId": 495502807,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2343950,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Lollipop-1.16.1-2.1.3.jar"
+        "FileNameOnDisk": "Lollipop-1.16.1-3.0.0.jar"
       },
       "dateInstalled": "2020-08-02T06:13:41.2329059Z",
-      "dateUpdated": "2019-08-02T06:13:41.2329059Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-08-20T17:27:05.8922686Z",
+      "dateLastUpdateAttempted": "2020-08-20T17:27:05.8922686Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17263,32 +17287,32 @@
       "addonID": 347488,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 2999312,
-        "displayName": "Valhelsia Structures - 16.0.1",
-        "fileName": "valhelsia_structures-16.0.1.jar",
-        "fileDate": "2020-07-08T09:49:56.477Z",
-        "fileLength": 623964,
+        "id": 3036137,
+        "displayName": "Valhelsia Structures - 16.0.2",
+        "fileName": "valhelsia_structures-16.0.2.jar",
+        "fileDate": "2020-08-18T19:41:28.817Z",
+        "fileLength": 632497,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2999/312/valhelsia_structures-16.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3036/137/valhelsia_structures-16.0.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 297652468,
+            "fingerprint": 490560268,
             "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 888869926,
+            "fingerprint": 910339758,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 1541758873,
+            "fingerprint": 889877559,
             "type": 0
           },
           {
@@ -17307,10 +17331,9 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 1503690864,
+        "packageFingerprint": 1499120060,
         "gameVersion": [
-          "1.16.1",
-          "Forge"
+          "1.16.1"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
@@ -17318,15 +17341,15 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameVersionDateReleased": "2020-06-24T12:41:11.823Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "valhelsia_structures-16.0.1.jar"
+        "FileNameOnDisk": "valhelsia_structures-16.0.2.jar"
       },
       "dateInstalled": "2020-08-05T19:46:15.8815648Z",
-      "dateUpdated": "2020-08-05T19:46:15.8845574Z",
-      "dateLastUpdateAttempted": "2020-08-05T19:46:15.8845574Z",
-      "status": 5,
+      "dateUpdated": "2020-08-19T20:19:56.1179762Z",
+      "dateLastUpdateAttempted": "2020-08-19T20:19:56.1179762Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18121,73 +18144,55 @@
       "addonID": 256717,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3009232,
-        "displayName": "Clumps-6.0.0.3.jar",
-        "fileName": "Clumps-6.0.0.3.jar",
-        "fileDate": "2020-07-19T19:05:02.517Z",
-        "fileLength": 13383,
+        "id": 3037815,
+        "displayName": "Clumps-6.0.0.4.jar",
+        "fileName": "Clumps-6.0.0.4.jar",
+        "fileDate": "2020-08-20T18:23:23.617Z",
+        "fileLength": 13385,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3009/232/Clumps-6.0.0.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/815/Clumps-6.0.0.4.jar",
         "isAlternate": false,
-        "alternateFileId": 3009233,
+        "alternateFileId": 3037816,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1286857699,
-            "type": 3
+            "fingerprint": 4144894760,
+            "type": 0
           },
           {
             "foldername": "com",
-            "fingerprint": 1977612667,
-            "type": 3
+            "fingerprint": 1570956190,
+            "type": 0
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 4178614280,
-            "type": 3
+            "type": 0
           }
         ],
-        "packageFingerprint": 823439083,
+        "packageFingerprint": 255778500,
         "gameVersion": [
           "1.16.1",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000001",
-            "gameVersion": "1.16.1",
-            "gameVersionReleaseDate": "2020-06-24T12:41:11.823Z",
-            "gameVersionName": "1.16.1"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1928565,
-        "projectId": 256717,
-        "packageFingerprintId": 490970882,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2329419,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Clumps-6.0.0.3.jar"
+        "FileNameOnDisk": "Clumps-6.0.0.4.jar"
       },
       "dateInstalled": "2020-08-02T06:13:37.9915897Z",
-      "dateUpdated": "2019-08-02T06:13:37.9915897Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2020-08-20T19:45:03.2847412Z",
+      "dateLastUpdateAttempted": "2020-08-20T19:45:03.2847412Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18592,14 +18597,14 @@
       "addonID": 263420,
       "gameInstanceID": "ee7493e2-a779-4a39-b958-18939b35a292",
       "installedFile": {
-        "id": 3030171,
-        "displayName": "v20.20.0 for Forge 1.16.1",
-        "fileName": "Xaeros_Minimap_20.20.0_Forge_1.16.1.jar",
-        "fileDate": "2020-08-12T10:26:34.207Z",
-        "fileLength": 550320,
+        "id": 3037460,
+        "displayName": "v20.20.1 for Forge 1.16.1",
+        "fileName": "Xaeros_Minimap_20.20.1_Forge_1.16.1.jar",
+        "fileDate": "2020-08-20T08:55:35.313Z",
+        "fileLength": 553163,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3030/171/Xaeros_Minimap_20.20.0_Forge_1.16.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3037/460/Xaeros_Minimap_20.20.1_Forge_1.16.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -18607,12 +18612,12 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 768810603,
+            "fingerprint": 2710559833,
             "type": 0
           },
           {
             "foldername": "xaero",
-            "fingerprint": 1547647196,
+            "fingerprint": 2480377853,
             "type": 0
           },
           {
@@ -18626,7 +18631,7 @@
             "type": 0
           }
         ],
-        "packageFingerprint": 396774490,
+        "packageFingerprint": 3680194579,
         "gameVersion": [
           "1.16.1",
           "Forge"
@@ -18640,12 +18645,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Xaeros_Minimap_20.20.0_Forge_1.16.1.jar"
+        "FileNameOnDisk": "Xaeros_Minimap_20.20.1_Forge_1.16.1.jar"
       },
       "dateInstalled": "2020-08-02T20:31:28.6015423Z",
-      "dateUpdated": "2020-08-14T19:14:34.1188479Z",
-      "dateLastUpdateAttempted": "2020-08-14T19:14:34.1188479Z",
-      "status": 5,
+      "dateUpdated": "2020-08-20T17:27:26.7918393Z",
+      "dateLastUpdateAttempted": "2020-08-20T17:27:26.7918393Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
