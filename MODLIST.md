@@ -1,11 +1,11 @@
-## Enigmatica 6 - 0.2.10 Modlist
+## Enigmatica 6 - 0.2.11 Modlist
 - Abnormals-Core-1.16.1-2.0.2
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
 - AI-Improvements-1.16.1-0.3.0
 - AmbientSounds_v3.0.20_mc1.16.2
 - angelring-1.16.1-1.3.1
-- Apotheosis-1.16.1-4.1.0
+- Apotheosis-1.16.1-4.1.1
 - AppleSkin-mc1.16.1-forge-1.0.14
 - appliedenergistics2-8.0.0-beta.1
 - Aquaculture-1.16.1-2.0.18
@@ -21,7 +21,7 @@
 - BetterCaves-1.16.1-1.0
 - BetterMineshaftsForge-1.16.1-1.3
 - bigbuckets-1.1.1
-- BiomesOPlenty-1.16.1-11.0.0.393-universal
+- BiomesOPlenty-1.16.1-11.0.0.394-universal
 - Bookshelf-1.16.1-6.3.21
 - Botania-1.16-402
 - BotanyPots-1.16.1-3.0.6
@@ -38,7 +38,7 @@
 - citadel-1.2.0
 - ClickMachine-1.16.1-4.0.0
 - cloth-config-forge-4.0.2
-- Clumps-6.0.0.3
+- Clumps-6.0.0.4
 - comforts-FORGE-1.16.1-3.0.0.1
 - connectedglass-1.0.6-mc1.16.1
 - Controlling-7.0.0.3
@@ -53,7 +53,7 @@
 - curiouselytra-FORGE-1.16.1-3.0
 - DangerousStoneCutter-1.16.1-1.4
 - dankstorage-3.8
-- DarkPaintings-1.16.1-2.0.1
+- DarkPaintings-1.16.1-2.0.2
 - DarkUtilities-1.16.1-4.0.3
 - decorative_blocks-7c
 - DefaultOptions_1.16.1-12.0.1
@@ -61,7 +61,7 @@
 - DrawersTooltip-1.16.1-2.0.1
 - dungeons-plus-1.16.1-1.0.2
 - elevatorid-1.16.1-1.7.3
-- EmendatusEnigmatica-1.16.1-1.0.4
+- EmendatusEnigmatica-1.16.1-1.0.5
 - EnchantmentDescriptions-1.16.1-3.0.2
 - EnderMail-1.16.1-1.1.3
 - engineersdecor-1.16.1-1.1.1-b7
@@ -88,7 +88,7 @@
 - iChunUtil-1.16.1-9.0.0
 - ImmersiveEngineering-1.16.1-3.2.0-115
 - industrial-foregoing-1.16.1-3.0.5-7e692e4
-- Interactio-1.16.1-2.0.5
+- Interactio-1.16.1-2.0.5a
 - InventoryEssentials_1.16.1-2.0.0
 - invtweaks-1.16.2-1.0.0
 - ironchest-1.16.1-11.0.1
@@ -98,11 +98,11 @@
 - JustEnoughResources-1.16.1-0.11.1.93
 - Kiwi-1.16.1-3.2.1
 - KleeSlabs_1.16.1-9.0.0
-- kubejs-2.7.2.58
+- kubejs-2.7.2.59
 - laserrelays-1.7
 - LetSleepingDogsLie-1.16.1-1.1.1
 - light-overlay-5.4.2
-- Lollipop-1.16.1-2.1.3
+- Lollipop-1.16.1-3.0.0
 - Ma-Enchants-1.16.1-3.2.1
 - Mantle-1.16.1-1.6.27
 - masonry-1.16.1-0.3.5
@@ -137,7 +137,7 @@
 - pitg-1.16.1-1.3.0
 - Placebo-1.16.1-4.1.3
 - pneumaticcraft-repressurized-1.16.1-2.1.1-14
-- Powah-1.16.1-2.1.3
+- Powah-1.16.1-2.2.0
 - PrettyBeaches_1.16.1-5.0.0
 - productivebees-1.16.1-0.2.4
 - QuantumStorage-1.16.1-5.2.0
@@ -165,6 +165,7 @@
 - StorageDrawers-1.16.2-8.1.0
 - StrongerSnowballs-1.16.1-2.0.1
 - structure-gel-api-1.16.1-1.2.1
+- swingthroughgrass-1.16.1-1.5.1
 - tellme-forge-1.16.1-0.8.1
 - the-conjurer-1.16.1-1.0.8
 - The-Endergetic-Expansion-1.16.1-2.0.0
@@ -183,12 +184,12 @@
 - TrashSlot_1.16.1-12.0.1
 - useful_backpacks-1.16.1-1.11.2.74
 - u_team_core-1.16.1-3.1.3.170
-- valhelsia_structures-16.0.1
+- valhelsia_structures-16.0.2
 - vanillaexcavators-1.16.1-2.1.1
 - vanillahammers-1.16.1-2.1.1
 - Waddles-1.16.1-0.8.7
 - Waystones_1.16.1-7.1.1
 - World-Stripper-1.7.2-1.16.1
-- XaerosWorldMap_1.10.0_Forge_1.16.1
-- Xaeros_Minimap_20.20.0_Forge_1.16.1
+- XaerosWorldMap_1.10.1_Forge_1.16.1
+- Xaeros_Minimap_20.20.1_Forge_1.16.1
 - [1.16.1]-additionalbars-1.5.1
