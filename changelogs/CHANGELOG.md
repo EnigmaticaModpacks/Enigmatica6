@@ -1,3 +1,23 @@
+#### Enigmatica 6 v0.2.11
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.11.txt)_
+
+**Mods Additions**
+
+- Swing Through Grass [\#129](https://github.com/NillerMedDild/Enigmatica6/issues/129)
+
+**Changes**
+
+- EmendatusEnigmatica: Chunks can now be crafted directly into Stone Ores for the sake of automation.
+- Waystones: No longer spawn in villages, due to high frequency
+- Waystones: Now spawn randomly spread throughout the world, rarely.
+
+**Bug Fixes**
+
+- Interactio: Fixed log spam
+- AE2 Crafting Interface + Filter Button [\#179](https://github.com/NillerMedDild/Enigmatica6/issues/179)
+- Mining Gadget Beam Doesn't Render [\#178](https://github.com/NillerMedDild/Enigmatica6/issues/178)
+
 #### Enigmatica 6 v0.2.10
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.10.txt)_
