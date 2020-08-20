@@ -1,0 +1,14 @@
+#Disables fake players like miners and auto-clickers.
+disable_fake_players = false
+#Max claimed chunks.
+#Range: > 0
+max_claimed_chunks = 500
+#Max force loaded chunks.
+#Range: > 0
+max_force_loaded_chunks = 25
+#Disables all land protection. Useful for private servers where everyone is trusted and claims are only used for forceloading.
+disable_protection = false
+#Forced modes won't let players change their ally settings.
+#Allowed Values: DEFAULT, FORCED_ALL, FORCED_NONE
+ally_mode = "DEFAULT"
+

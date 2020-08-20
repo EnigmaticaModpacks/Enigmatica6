@@ -1,0 +1,103 @@
+
+#General mod settings
+[general]
+	#Defined whether or not a player can use Absolute Coords mode in the Copy Paste Gadget
+	"Allow Absolute Coords" = true
+	#Whether the Building / CopyPaste Gadget can overwrite blocks like water, lava, grass, etc (like a player can).
+	#False will only allow it to overwrite air blocks.
+	"Allow non-Air-Block-Overwrite" = true
+	#Defines how far away you can build
+	#Range: 1.0 ~ 48.0
+	MaxBuildDistance = 32.0
+
+#Configure the Gadgets
+[Gadgets]
+	#Maximum amount of Blocks to be placed in one Tick.
+	#Notice that an EffectBlock takes 20 ticks to place, therefore a Server has to handle 20-times this value effect-block Tile's at once. Reduce this if  you notice lag-spikes from Players placing Templates.
+	#Of course decreasing this value will result in more time required to place large TemplateItem's.
+	#Range: > 1
+	"Max Placement/Tick" = 1024
+	#The max range of the Gadgets
+	#Range: 1 ~ 32
+	"Maximum allowed Range" = 15
+
+	#Energy Cost & Durability of the Building Gadget
+	[Gadgets."Building Gadget"]
+		#The Gadget's Energy cost per Operation
+		#Range: > 0
+		"Energy Cost" = 50
+		#The max energy of the Gadget, set to 0 to disable energy usage
+		#Range: > 0
+		"Maximum Energy" = 500000
+		#The Gadget's Max Undo size
+		#Range: 0 ~ 128
+		"Max Undo History Size" = 10
+
+	#Energy Cost & Durability of the Copy-Paste Gadget
+	[Gadgets."Copy-Paste Gadget"]
+		#Maximum dimensions (x, y and z) that can be copied by a Template without requiring special permission.
+		#Permission can be granted using the '/buildinggadgets OverrideCopySize [<Player>]' command.
+		#Range: > -1
+		"Max Copy Dimensions" = 256
+		#Maximum dimensions (x, y and z) that can be build by a Template without requiring special permission.
+		#Permission can be granted using the '/buildinggadgets OverrideBuildSize [<Player>]' command.
+		#Range: > -1
+		"Max Build Dimensions" = 256
+		#The Gadget's Energy cost per Operation
+		#Range: > 0
+		"Energy Cost" = 50
+		#Maximum amount of Blocks to be copied in one Tick. 
+		#Lower values may improve Server-Performance when copying large Templates
+		#Range: > 1
+		"Max Copy/Tick" = 32768
+		#The max energy of the Gadget, set to 0 to disable energy usage
+		#Range: > 0
+		"Maximum Energy" = 500000
+		#The Gadget's Max Undo size
+		#Range: 0 ~ 128
+		"Max Undo History Size" = 1
+
+	#Energy Cost, Durability & Maximum Energy of the Destruction Gadget
+	[Gadgets."Destruction Gadget"]
+		#The Gadget's Energy cost per Operation
+		#Range: > 0
+		"Energy Cost" = 200
+		#The cost in energy/durability will increase by this amount when not in fuzzy mode
+		#Range: 0.0 ~ 1.7976931348623157E308
+		"Non-Fuzzy Mode Multiplier" = 2.0
+		#The max energy of the Gadget, set to 0 to disable energy usage
+		#Range: > 0
+		"Maximum Energy" = 1000000
+		#The Gadget's Max Undo size
+		#Range: 0 ~ 128
+		"Max Undo History Size" = 1
+		#If enabled, the Destruction Gadget can be taken out of fuzzy mode, allowing only instances of the block clicked to be removed (at a higher cost)
+		"Non-Fuzzy Mode Enabled" = false
+		#The maximum dimensions, the Destruction Gadget can destroy.
+		#Range: 0 ~ 32
+		"Destroy Dimensions" = 16
+
+	#Energy Cost & Durability of the Exchanging Gadget
+	[Gadgets."Exchanging Gadget"]
+		#The Gadget's Energy cost per Operation
+		#Range: > 0
+		"Energy Cost" = 100
+		#The max energy of the Gadget, set to 0 to disable energy usage
+		#Range: > 0
+		"Maximum Energy" = 500000
+		#The Gadget's Max Undo size
+		#Range: 0 ~ 128
+		"Max Undo History Size" = 10
+
+#Configure the Paste Containers
+["Paste Containers"]
+	#The maximum capacity of a tier 1 (iron) Construction Paste Container
+	#Range: > 1
+	"T1 Container Capacity" = 512
+	#The maximum capacity of a tier 2 (iron) Construction Paste Container
+	#Range: > 1
+	"T2 Container Capacity" = 2048
+	#The maximum capacity of a tier 3 (iron) Construction Paste Container
+	#Range: > 1
+	"T3 Container Capacity" = 8192
+
