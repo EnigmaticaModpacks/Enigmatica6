@@ -8,6 +8,9 @@ events.listen('recipes', function (event) {
         'appliedenergistics2:sky_compass',
         'appliedenergistics2:charged_staff',
         'appliedenergistics2:quartz_fixture',
+
+        'extlights:light_beam_post',
+
         //'akashictome:tome',
         'laserrelays:color_filter',
 

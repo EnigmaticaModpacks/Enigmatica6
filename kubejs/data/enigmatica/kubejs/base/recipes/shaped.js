@@ -71,6 +71,10 @@ events.listen('recipes', function (event) {
         shapedRecipe('appliedenergistics2:charged_staff', ['B', ' A ', 'A  '], {
             A: '#forge:ingots/iron',
             B: '#forge:gems/charged_certus_quartz'
+        }),
+        shapedRecipe('extlights:light_beam_post', ['BBB', ' A ', 'BBB'], {
+            A: '#forge:ingots/iron',
+            B: '#forge:nuggets/iron'
         })
     ];
 
