@@ -1,0 +1,90 @@
+=========================================
+Enigmatica6 0.2.12 --> Enigmatica6 0.2.13
+=========================================
+
+Added:
+- Wither Skeleton Tweaks
+
+Updated:
+	Building Gadgets (buildinggadgets-3.5.0.jar --> buildinggadgets-3.5.1.jar):
+		buildinggadgets-3.5.1.jar:
+			[3.5.1 - 1.16.1] - 2020-08-21
+			Changed
+			* Removed undo from Exchanger as it should have never had it in the first instance
+			Fixed
+			* Fixed silk touch enchange with the Exchanger.
+			* Fixed null pointer issues on Tiles by removing our onLoad call as the game handles this for us.
+			* Fixed Gadgets not using energy
+			* Fixed [#511](https://github.com/Direwolf20-MC/BuildingGadgets/issues/511) exchanger would not exchange mutated states of the same block.
+			* Fixed [#511](https://github.com/Direwolf20-MC/BuildingGadgets/issues/511) exchanger would incorrectly validate visible sides
+
+	Decorative Blocks (decorative_blocks-7c.jar --> decorative_blocks-1.16.1-1.4.jar):
+		decorative_blocks-1.16.1-1.4.jar:
+			ported 1.15 new features
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.1-b7.jar --> engineersdecor-1.16.1-1.1.1.jar):
+		engineersdecor-1.16.1-1.1.1.jar:
+			* v1.1.1     [R] Initial 1.16.1 release.
+			* v1.1.1-b7  [F] Fixed AI-open-path bug (issue #116, ty KrAzYGEEK32, desht).
+			[F] Conditional recipes extended to additional vanilla ingredients in case of oredict tag issues.
+			[M] Lang file update zh_cn (PR#117, Moonisky).
+			* v1.1.1-b6  [F] Iron Hatch rendering fixed (issue #113, ty KrAzYGEEK32).
+			[F] Hotfix of UI tooltip crash for versions Forge < 32.0.97 mapping issue.
+			* v1.1.1-b5  [M] Transmuted the "Treated Wood Crafting Table" to a "Metal Crafting Table"
+			to de-duplicate the new Immersive Engineering "Engineer's Crafting Table".
+			[F] Fixed metal pole culling (issue #109, thx Alsett).
+			* v1.1.1-b4  [F] Fixed Fluid Barrel tooltip text duplicate.
+			[F] Fixed IE hard-dependency opt-out.
+			[M] Side Table model and shape refined.
+			[A] Dense Grit Dirt added.
+			[M] Wood textures slightly darker, obsolete textures removed.
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+	Mining Gadgets (MiningGadgets-1.4.0 --> MiningGadgets-1.4.1):
+		MiningGadgets-1.4.1:
+			[1.4.1] - 21-08-2020
+			Added
+			* Added a (disabled by default) key binding to open the Gadgets settings screen. (When enabled, it will disable the shift right click action)
+			* Added a Laser Beam preview to the Mining Gadget Visual Screen
+			* Added Paver upgrade which will place cobble (cost of 10FE per block) to create a path as you mine to cover up any holes. It will not place above your player's height, and we plan on changing it from cobble :D
+			* Modification table can now have upgrades dropped into it's upgrade area (pick up and drop down)
+			* Modification table now has an empty state to show helper text on how to use the table.
+			* Modification table now has a title :eyes:
+			Changed
+			* Improved the look of the Mining Gadget Visual Screen
+			* The modification table will now show the full tooltip for you upgrades
+			* Bumped forge version
+			Fixed
+			* [#98] Config changes did not affect upgrade costs.
+			* Fixed client crash on shift clicking items to the Modification Table
+			* Fixed laser rendering through walls when another player is using the gadget
+
+	Productive Bees (productivebees-1.16.1-0.2.4.jar --> productivebees-1.16.1-0.2.5.jar):
+		productivebees-1.16.1-0.2.5.jar:
+			* Added Netherite bee
+			* Comb production has been limited to 1 per pollination. The comb will be deposited when the bees leaves the hive, just like honey. The amount of combs is still affected by the bees productivity level.
+			* Added bee conversion from items recipe to JEI
+			* New bee display in the hive and JEI
+			* Updated bee colors
+			* Updated comb colors
+			* Updated bee egg colors for better consistency
+
+	Trash Cans (trashcans-1.0.2-mc1.16.1 --> trashcans-1.0.3-mc1.16.1):
+		trashcans-1.0.3-mc1.16.1:
+			* added Brazilian Portuguese translations (thanks to Mikeliro!)
+
+Downgraded:
+	More Dragon Eggs (Archived file --> moredragoneggs-1.4.jar
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

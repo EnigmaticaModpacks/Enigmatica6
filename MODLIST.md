@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.2.12 Modlist
+## Enigmatica 6 - 0.2.13 Modlist
 - Abnormals-Core-1.16.1-2.0.2
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
@@ -26,7 +26,7 @@
 - Botania-1.16-402
 - BotanyPots-1.16.1-3.0.6
 - Bountiful Baubles FORGE-1.16.1-0.0.1
-- buildinggadgets-3.5.0
+- buildinggadgets-3.5.1
 - Buzzier-Bees-1.16.1-2.0.1
 - bwncr-1.16.1-3.6.15
 - caelus-FORGE-1.16.1-2.0-beta7
@@ -55,7 +55,7 @@
 - dankstorage-3.8
 - DarkPaintings-1.16.1-2.0.2
 - DarkUtilities-1.16.1-4.0.3
-- decorative_blocks-7c
+- decorative_blocks-1.16.1-1.4
 - DefaultOptions_1.16.1-12.0.1
 - Ding-1.16.1-1.1.0
 - DrawersTooltip-1.16.1-2.0.1
@@ -64,7 +64,7 @@
 - EmendatusEnigmatica-1.16.1-1.0.5
 - EnchantmentDescriptions-1.16.1-3.0.2
 - EnderMail-1.16.1-1.1.3
-- engineersdecor-1.16.1-1.1.1-b7
+- engineersdecor-1.16.1-1.1.1
 - enigmatica-1.16.1-0.1.0
 - environmentalcreepers-forge-1.16.1-1.6.1
 - extlights-3.0
@@ -78,7 +78,7 @@
 - fishingreal-1.16.1-1.0.0
 - FpsReducer-mc1.16.1-1.17
 - ftb-backups-2.1.1.5
-- ftb-chunks-1.1.1.25
+- ftb-chunks-1.1.1.24
 - ftb-gui-library-1.0.0.16
 - ftb-ranks-1.0.0.5
 - ftb-teams-1.0.1.7
@@ -115,10 +115,10 @@
 - MekanismTools-1.16.1-10.0.9.432
 - metalbarrels-3.2b
 - mining-helmet-1.16.1-1.0.8
-- mininggadgets-1.4.0
+- mininggadgets-1.4.1
 - modnametooltip_1.16.1-1.14.0
 - modular-routers-1.16.1-7.0.1-29
-- moredragoneggs-1.1.5
+- moredragoneggs-1.4
 - morevanillalib-1.16.1-1.2.8
 - Morpheus-1.16.1-4.2.55
 - MouseTweaks-2.13-mc1.16.1
@@ -139,7 +139,7 @@
 - pneumaticcraft-repressurized-1.16.1-2.1.1-14
 - Powah-1.16.1-2.2.0
 - PrettyBeaches_1.16.1-5.0.0
-- productivebees-1.16.1-0.2.4
+- productivebees-1.16.1-0.2.5
 - QuantumStorage-1.16.1-5.2.0
 - Quark-r2.2-260
 - QuarkOddities-1.15.2
@@ -180,7 +180,7 @@
 - toughnessbar-6.0
 - towers_of_the_wild-1.16.1-1.2.2
 - tramplestopper-1.15.2-2.0.0.5-universal
-- trashcans-1.0.2-mc1.16.1
+- trashcans-1.0.3-mc1.16.1
 - TrashSlot_1.16.1-12.0.1
 - useful_backpacks-1.16.1-1.11.2.74
 - u_team_core-1.16.1-3.1.3.170
@@ -189,6 +189,7 @@
 - vanillahammers-1.16.1-2.1.1
 - Waddles-1.16.1-0.8.7
 - Waystones_1.16.1-7.1.1
+- WitherSkeletonTweaks-1.16.1-5.0.0
 - World-Stripper-1.7.2-1.16.1
 - XaerosWorldMap_1.10.1_Forge_1.16.1
 - Xaeros_Minimap_20.20.1_Forge_1.16.1

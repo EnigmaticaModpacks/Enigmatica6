@@ -1,6 +1,24 @@
+#### Enigmatica 6 v0.2.13
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.13.txt)_
+
+**Mod Additions**
+
+- Wither Skeleton Tweaks [\#186](https://github.com/NillerMedDild/Enigmatica6/issues/186)
+
+**Bug Fixes**
+
+- FTB Chunks: Downgraded to fix a crash bug.
+- Extended Lights: Recipe Conflict: Vanilla Chain and Post Lamp Beam [\#184](https://github.com/NillerMedDild/Enigmatica6/issues/184)
+- Building Gadgets: Gadget\(s\) Don't Drain Power When Used [\#177](https://github.com/NillerMedDild/Enigmatica6/issues/177)
+
 #### Enigmatica 6 v0.2.12
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.12.txt)_
+
+
+
+Server files will be added later, due to an issue with CurseForge. The only updates in this version are the mods FTBChunks, FTB GUI Library, Apotheosis and More Dragon Eggs.
 
 **Bug Fixes**
 
