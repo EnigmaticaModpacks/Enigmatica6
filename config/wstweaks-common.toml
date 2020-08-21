@@ -1,0 +1,19 @@
+
+#Server configuration
+[server]
+	#If skeletons outside of hell can be transformed into wither skeletons.
+	allbiomes = false
+	#If stone swords that would be dropped are deleted.
+	delswords = true
+	#The 1/n chance for a wither skeleton to drop a fragment.
+	#Range: 1 ~ 32767
+	fragchance = 1
+	#The 1/n chance for wither skeletons outside hell to be transformed.  Requires allbiomes == true.
+	#Range: 1 ~ 32767
+	allbiomechance = 1
+	#How many fragments are required to make a skull.
+	#Range: 1 ~ 9
+	fragvalue = 9
+	#If transformed skeletons are given bows instead of stone swords.
+	givebows = true
+
