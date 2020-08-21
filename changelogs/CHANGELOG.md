@@ -2,17 +2,9 @@
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.12.txt)_
 
-**Mods Additions**
-
-- 
-
-**Changes**
-
-- 
-
 **Bug Fixes**
 
-- 
+- Apotheosis: Fixed a crash bug with thrown potions, ghast fireballs and other projectiles.
 
 #### Enigmatica 6 v0.2.11
 

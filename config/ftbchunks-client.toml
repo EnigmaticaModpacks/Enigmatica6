@@ -27,4 +27,25 @@ minimap_biome = true
 minimap_blur = true
 #Adds NWSE compass inside minimap
 minimap_compass = true
+#Shadow intensity
+#Range: 0.0 ~ 0.3
+shadows = 0.1
+#Chunk grid overlay in large map
+chunk_grid = false
+#Reduces color palette to 256 colors
+reduced_color_palette = false
+#Color intensity
+#Range: 0.0 ~ 1.0
+saturation = 1.0
+#Show claimed chunks on the map
+claimed_chunks_on_map = true
+#Show your own claimed chunks on the map
+own_claimed_chunks_on_map = true
+#Minimap visibility
+#Range: 0 ~ 255
+minimap_visibility = 255
+#Show zone (claimed chunk or wilderness) under minimap
+minimap_zone = true
+#Enables debug info
+debug_info = false
 

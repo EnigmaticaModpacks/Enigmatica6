@@ -1,11 +1,11 @@
-## Enigmatica 6 - 0.2.11 Modlist
+## Enigmatica 6 - 0.2.12 Modlist
 - Abnormals-Core-1.16.1-2.0.2
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
 - AI-Improvements-1.16.1-0.3.0
 - AmbientSounds_v3.0.20_mc1.16.2
 - angelring-1.16.1-1.3.1
-- Apotheosis-1.16.1-4.1.1
+- Apotheosis-1.16.1-4.1.2
 - AppleSkin-mc1.16.1-forge-1.0.14
 - appliedenergistics2-8.0.0-beta.1
 - Aquaculture-1.16.1-2.0.18
@@ -78,8 +78,8 @@
 - fishingreal-1.16.1-1.0.0
 - FpsReducer-mc1.16.1-1.17
 - ftb-backups-2.1.1.5
-- ftb-chunks-1.1.1.21
-- ftb-gui-library-1.0.0.15
+- ftb-chunks-1.1.1.25
+- ftb-gui-library-1.0.0.16
 - ftb-ranks-1.0.0.5
 - ftb-teams-1.0.1.7
 - ftb-ultimine-1.1.0.6
@@ -118,7 +118,7 @@
 - mininggadgets-1.4.0
 - modnametooltip_1.16.1-1.14.0
 - modular-routers-1.16.1-7.0.1-29
-- moredragoneggs-1.1
+- moredragoneggs-1.1.5
 - morevanillalib-1.16.1-1.2.8
 - Morpheus-1.16.1-4.2.55
 - MouseTweaks-2.13-mc1.16.1
