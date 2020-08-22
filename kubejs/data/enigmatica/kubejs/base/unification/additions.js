@@ -1,6 +1,5 @@
 //priority: 975
 events.listen('recipes', function (event) {
-    //console.log('Starting material unification.');
     appliedenergistics2_gem_processing(event);
     pedestals_dust_smelting(event);
 

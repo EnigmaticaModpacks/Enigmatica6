@@ -26,5 +26,5 @@ events.listen('item.tags', function (event) {
     //     // .add('naturesaura:tainted_gold')
     //     // .add('naturesaura:infused_iron');
     // event.get('forge:ingots').add('industrialforgoing:pink_slime_ingot');
-    // event.get('forge:ingots').add('botania:gaia_ingot');
+    event.get('forge:ingots').add('botania:gaia_ingot');
 });
