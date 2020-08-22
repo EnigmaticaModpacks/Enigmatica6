@@ -53,7 +53,9 @@ events.listen('recipes', function (event) {
         shapelessRecipe('appliedenergistics2:quartz_fixture', [
             '#forge:gems/charged_certus_quartz',
             '#forge:ingots/iron'
-        ])
+        ]),
+        shapelessRecipe('appliedenergistics2:ender_dust', ['emendatusenigmatica:dust_ender']),
+        shapelessRecipe('emendatusenigmatica:dust_ender', ['appliedenergistics2:ender_dust'])
         // shapelessRecipe(
         //     {
         //         item: 'akashictome:tome',

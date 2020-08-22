@@ -1,5 +1,6 @@
-// events.listen('jei.information', (event) => {
-//     // event.add('selector', 'description')
-//     // event.add('minecraft:campfire', 'block.minecraft.campfire');
-//     // event.add('minecraft:apple', ['item.minecraft.apple', 'item.minecraft.diamond_sword']);
-// });
+events.listen('jei.information', (event) => {
+    event.add(
+        'appliedenergistics2:quantum_entangled_singularity',
+        'To create drop 1 Singularity and 1 Ender Dust (From AppliedEnergistics) and cause an explosion within range of the items.'
+    );
+});
