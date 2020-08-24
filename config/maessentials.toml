@@ -29,7 +29,7 @@
 		#Enable command: /back
 		enable = true
 		#Range: > 0
-		cooldown = 180
+		cooldown = 300
 		enable_on_death = true
 
 	[Commands.speed]
@@ -48,7 +48,7 @@
 		#Range: > 0
 		delay = 3
 		#Enable commands: /setwarp, /delwarp, /warp
-		enable = true
+		enable = false
 		#Range: > 0
 		cooldown = 300
 
