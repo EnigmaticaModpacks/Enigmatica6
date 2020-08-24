@@ -1,3 +1,20 @@
+#### Enigmatica 6 v0.2.14
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.14.txt)_
+
+**Mod Additions**
+
+- Re-added Ma Essentials (Much regret)
+
+**Changes**
+
+- Ma Essentials: Disabled Warp commands (They can be re-enabled in the configs)
+- Ma Essentials: Increased cooldown of /back command to 5 minutes, from 3.
+
+**Bug Fixes**
+
+- 
+
 #### Enigmatica 6 v0.2.13
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.13.txt)_
