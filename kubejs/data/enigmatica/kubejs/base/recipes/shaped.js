@@ -57,6 +57,21 @@ events.listen('recipes', function (event) {
         shapedRecipe('minecraft:horn_coral_block', ['AA', 'AA'], {
             A: 'minecraft:horn_coral_fan'
         }),
+        shapedRecipe('minecraft:tube_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:tube_coral'
+        }),
+        shapedRecipe('minecraft:brain_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:brain_coral'
+        }),
+        shapedRecipe('minecraft:bubble_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:bubble_coral'
+        }),
+        shapedRecipe('minecraft:fire_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:fire_coral'
+        }),
+        shapedRecipe('minecraft:horn_coral_block', ['AA', 'AA'], {
+            A: 'minecraft:horn_coral'
+        }),
         shapedRecipe('laserrelays:color_filter', ['AAA'], {
             A: '#forge:glass_panes/white'
         }),
