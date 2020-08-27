@@ -5,15 +5,24 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 **Mod Additions**
 
 - Re-added Ma Essentials (Much regret)
+- Macaw's Trapdoors
 
 **Changes**
 
 - Ma Essentials: Disabled Warp commands (They can be re-enabled in the configs)
 - Ma Essentials: Increased cooldown of /back command to 5 minutes, from 3.
+- Applied Energistics: Added recipes to convert between different certus and ender dust variants.
+- Applied Energistics: Disabled the custom Fluix Crystal recipe using water. The normal one works.
+- Ancient Debris Tags [\#197](https://github.com/NillerMedDild/Enigmatica6/issues/197)
 
 **Bug Fixes**
 
-- 
+- Fixed server lag caused by item entities.
+- Emendatus Enigmatica Ender Pearl Dust cant be used to craft AE2 singularity (Conversion recipe between ender dusts added) [\#187](https://github.com/NillerMedDild/Enigmatica6/issues/187)
+
+**Mod Removals**
+
+- Interactio (Temporarily removed due to a lag issues)
 
 #### Enigmatica 6 v0.2.13
 

@@ -8,11 +8,11 @@
 
 	#Compatibility with Quark's poisonous potatoes feature
 	[common.poisonousPotatoCompat]
-		#If growth stunting should give a booflo poison; Default: True
+		#If growth stunting should give baby mobs poison; Default: True
 		poisonEffect = true
-		#The chance to stunt booflo growth when feeding a poisonous potato; Default: 0.1
+		#The chance to stunt baby mob growth when feeding a poisonous potato; Default: 0.1
 		#Range: 0.0 ~ 1.0
 		poisonChance = 0.1
-		#If booflos can be fed a poisonous potato to stunt their growth when Quark is installed; Default: True
+		#If baby mobs can be fed a poisonous potato to stunt their growth when Quark is installed; Default: True
 		poisonPotatoCompatEnabled = true
 

@@ -1,0 +1,198 @@
+=========================================
+Enigmatica6 0.2.13 --> Enigmatica6 0.2.14
+=========================================
+
+Added:
+- Ma Essentials
+- Macaw's Trapdoors
+
+Updated:
+	Abnormals Core (Abnormals-Core-1.16.1-v2.0.2 --> Abnormals-Core-1.16.1-v2.0.3):
+		Abnormals-Core-1.16.1-v2.0.3:
+			* Fixed Abnormals Logs not damaging axes when being stripping
+			* Fixed directional vertical slab placement
+			* Fixed slight visual vertical slab model issues
+			* Bucket fill sound in BucketableWaterMobEntity is now overridable
+			* Added AbnormalsBiome to help with Deferred Registry for biomes.
+
+	Applied Energistics 2 (appliedenergistics2-8.0.0-beta.1.jar --> appliedenergistics2-8.0.0-beta.2.jar):
+		appliedenergistics2-8.0.0-beta.2.jar:
+			Fixes #4602: Prevent encoding crafting&processing patterns without an output that cause client crashes Fixes #4598: Fix ME Chest's storage cell model to appear black in some cases Fixes #4611: Fix Tiny-TNT Explosion causing server crash Fixes #4590: Crystal seeds (other than certus) not displaying their growth stages correctly Fixes #4635: Ghost energy cells remaining in the grid when destroyed and siphoning energy, as well as potentially crashing if they were empty when destroyed Fix search box interaction in interface terminal Fix molecular assembler not being able to be broken when it is powered
+
+	Aquaculture 2 (Aquaculture-1.16.1-2.0.18.jar --> Aquaculture-1.16.1-2.0.19.jar):
+		Aquaculture-1.16.1-2.0.19.jar:
+			* Made the majority of raw fish edible
+			* Added Spanish translations (Thanks to @feliclaria)
+
+	Bad Wither No Cookie - Reloaded (bwncr-1.16.1-3.6.15.jar --> bwncr-1.16.1-3.8.15.jar):
+		bwncr-1.16.1-3.8.15.jar:
+			[]()
+			If you want a server setup for the Any mod pack with zero effort, get a [server with BisectHosting]() and receive 25% off your first month as a new customer using the code kreezxil
+			Seems I disabled the sound handler when I first ported this. That is fixed now. The mod now also silences the wandering trader too. Also added silencing of the wither death too.
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.1-11.0.0.394 --> Biomes O' Plenty 1.16.1-11.0.0.395):
+		Biomes O' Plenty 1.16.1-11.0.0.395:
+			github:
+			* Update de_de.json (#1669)
+			* Update pt_br.json (#1666)
+			* Changed "pau-brasil" to "sequoia"
+			* Added translation for Hellbark (madeira infernal)
+			* Added some missing translations
+			github:
+
+	Botania (Botania-1.16-402.jar --> Botania-1.16.1-403.jar):
+		Botania-1.16.1-403.jar:
+			[https://botaniamod.net/changelog.php]()
+
+	Clumps (Clumps-6.0.0.4.jar --> Clumps-6.0.0.8.jar):
+		Clumps-6.0.0.8.jar:
+			Current version: 6.0.0.8
+			* [fix mapping issue](https://github.com/jaredlll08/Clumps/commit/0fd50c1855ad7c20126d0382f3d32ff032825489) - Jared - Tue Aug 25 17:24:46 2020
+			* [Fixed xp not dropping in dims (1.16.1) Close #192](https://github.com/jaredlll08/Clumps/commit/8fc3d38208a9b9aa1f36e96b5dc95fce2e61a954) - Jared - Tue Aug 25 17:16:30 2020
+			* [orb improvements](https://github.com/jaredlll08/Clumps/commit/75899ddf5dcb03398bd491266e6c325b7d8e78c6) - Jared - Thu Aug 20 20:21:10 2020
+			* [re-fix clumps causing crashes close #35](https://github.com/jaredlll08/Clumps/commit/234a169d959f1aefb65151a4328f04e70d1c7cc4) - Jared - Sun Jul 19 21:03:52 2020
+			* [update version](https://github.com/jaredlll08/Clumps/commit/91b94baf80891a34d0ad95fc90f8ce05deb4cf3c) - Jared - Sat Jul 18 01:58:06 2020
+			* [update commit](https://github.com/jaredlll08/Clumps/commit/1228c2b85508b66799487f0b16600a35f4e34d25) - Jared - Sat Jul 18 01:54:03 2020
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.1.jar --> engineersdecor-1.16.1-1.1.2.jar):
+		engineersdecor-1.16.1-1.1.2.jar:
+			* v1.1.2     [F] Fixed Crafting Table Patchouli manual entry.
+			* v1.1.1     [R] Intial 1.16.1 release.
+			* v1.1.1-b7  [F] Fixed AI-open-path bug (issue #116, ty KrAzYGEEK32, desht).
+			[F] Conditional recipes extended to additional vanilla ingredients in case of oredict tag issues.
+			[M] Lang file update zh_cn (PR#117, Moonisky).
+			* v1.1.1-b6  [F] Iron Hatch rendering fixed (issue #113, ty KrAzYGEEK32).
+			[F] Hotfix of UI tooltip crash for versions Forge < 32.0.97 mapping issue.
+			* v1.1.1-b5  [M] Transmuted the "Treated Wood Crafting Table" to a "Metal Crafting Table"
+			to de-duplicate the new Immersive Engineering "Engineer's Crafting Table".
+			[F] Fixed metal pole culling (issue #109, thx Alsett).
+			* v1.1.1-b4  [F] Fixed Fluid Barrel tooltip text duplicate.
+			[F] Fixed IE hard-dependency opt-out.
+			[M] Side Table model and shape refined.
+			[A] Dense Grit Dirt added.
+			[M] Wood textures slightly darker, obsolete textures removed.
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+	Extreme sound muffler (Forge) (extremeSoundMuffler-2.0.3_Forge-1.16.1 --> extremeSoundMuffler-2.0.4_Forge-1.16.1):
+		extremeSoundMuffler-2.0.4_Forge-1.16.1:
+			Fixed Anchors sometimes not being created for come reason.
+
+	FTB Backups (ftb-backups-2.1.1.5.jar --> ftb-backups-2.1.1.6.jar):
+		ftb-backups-2.1.1.6.jar:
+			* Ported to 1.16.2 - LatvianModder
+
+	FastFurnace (FastFurnace-1.16.1-4.1.1.jar --> FastFurnace-1.16.1-4.1.2.jar):
+		FastFurnace-1.16.1-4.1.2.jar:
+			Switch to the vanilla smelt() method instead of the copy of it.
+
+	Just Enough Resources (JER) (JustEnoughResources-1.16.1-0.11.1.93 --> JustEnoughResources-1.16.1-0.11.1.94):
+		JustEnoughResources-1.16.1-0.11.1.94:
+			[[56344d0](https://github.com/way2muchnoise/JustEnoughResources/commit/56344d07369f4b149b17ad1f34855b21929ecca5)] fixes LivingEntity rendering (way2muchnoise)
+			[[a5c4276](https://github.com/way2muchnoise/JustEnoughResources/commit/a5c42763c6f08112be4916999b9a361089f25668)] Merge branch 'master' of github.com:way2muchnoise/JustEnoughResources (way2muchnoise)
+			[[a2ba69f](https://github.com/way2muchnoise/JustEnoughResources/commit/a2ba69f11a65b5d066890b19ac84300070d7cb15)] re-add JEI to be marked as a dependency on CurseForge (way2muchnoise)
+
+	Pedestals (Pedestals - 0.7c --> Pedestals -1.16.1_0.8):
+		Pedestals -1.16.1_0.8:
+			JEI Integration, Patchouli In-game Documentation, and Filtered Upgrades Update.
+			(And Other Fixes and Improvements)
+			Added This Update:
+			* Advanced Enchant
+			* Translations
+			* Filtered Import Upgrade
+			* Filtered Export Item Upgrade
+			* Filtered Export ItemStack Upgrade
+			* Filtered Export Mod Upgrade
+			* Filtered Export Food Upgrade
+			* Filtered Export Enchanted Upgrade
+			* Filtered Magnet Item Upgrade
+			* Filtered Magnet Item Blacklist Upgrade
+			* Filtered Magnet ItemStack Upgrade
+			* Filtered Magnet ItemStack Blacklist Upgrade
+			* Filtered Magnet Mod Upgrade
+			* Filtered Magnet Mod Blacklist Upgrade
+			* Filtered Restock Upgrade
+			Fixes, Improvements, and Nerfs:
+			* Improvement: Added JEI Crafting recipes for Sawmill, Crusher, And Colored Pedestals
+			* Improvement: Added in Patchouli Guidebook support, Patchouli is not required, but the book will show up if its installed.
+			* Improvement: Added localization to all chat messages and items in the mod, this means we can support translations better.
+			* Improvement: Modified Energy Quarry upgrade to use the Energy Smelter which aligns it more with the normal quarry recipe.
+			* Improvement: Fertilizer upgrade can now randomly tick crop blocks, causing them to grow slightly faster even without bonemeal (using bonemeal is still way better)
+			* Improvement: Added green rings to the Exp upgrades to make them appear easier to see in jei.
+			* Improvement: added enchanting descriptions to Pedestal enchants
+			* Improvement: added shift-right click ability to the Upgrade Tool, this now shows the 'Work Area' of the selected pedestal based on its upgrade.
+			* Improvement: Effect upgrade no longer consumes the potion in the pedestal if it runs out of blaze powder fuel.
+			* Improvement: Upgrade and Linking tool can no longer be inserted into pedestals manually, this is to help with interacting with pedestals for linking and such.
+			* Improvement: Upgrade and Linking tool now works in off hand if the first slot in the hotbar is selected.
+			* Fixed: Quarry Upgrade Wand Chat Message for 'Blocks Left to Mine' no longer counts fluid blocks.
+			* Fixed: The Colored Pallets crafting explosion effect will no longer break things like item frames.
+			* Fixed: Using the new recommended render event for pedestals, as well as fixed the laggy rotation of items on pedestals on servers.
+			* Fixed: Switched to using the recommended way to send chat messages to players.
+			* Fixed: switched the way i detect dyes and blocks with pedestals to be more aligned with the forge recommendation.
+			* Fixed: Enchanter enchanting items with level 1 enchants when no bookshelves are around it.
+			* Fixed: XP dupe when multiple Exp magnets try to pickup the same xp orb.
+			* Fixed: 'itsself' to 'itself'
+			* Fixed: Block Placer consuming more items then it was supposed to when placing a block.
+			Details on New Features:
+			Advanced Enchantment:
+			* Also Added a Focused Book, which is the ONLY item that can get this enchant from an enchanting table, the enchant cant be gotten from villager trades nor dungeon loot.
+			* Enchanted in an enchanting table that can enchant over level 92.
+			* When added to a pedestal upgrade that interacts with an inventory, it can interact with ANY block or entity with an inventory, so equipping zombies with strong armor to troll your friends with is possible.
+			Translations:
+			* Huge thanks to Meawerful for the Chinese simplified translations for pedestals! If anyone would like to help with translations for pedestals, please contact me.
+			Filtered Import:
+			* Will only remove items from an inventory that can be received by a pedestal, this helps keep the pedestal from 'clogging' when there isnt a 'catch all' option available to send to.
+			Filtered Export(s):
+			* Will only accept items that match whats currently in the connected inventory, the filtering works the same as the normal filters do.
+			Filtered Magnet(s):
+			* Will only magnet up items if they match whats in the below inventory, the filtering works the same as the normal filters do.
+			Filtered Restock:
+			* Will only accept items matching whats in the below inventory, and will only accept enough items so that each matching stack will be full, and no extra. this should make crafting a lot easier to do when using this with a filtered import connected to a storage system.
+			As always, if you need help with the mod, the discord invite is in the mod listing on the home screen in game. The channel to chat in is #pedestals
+			(Built with Forge version: 1.16.1 - 32.0.108)
+
+		Pedestals - 1.16.1_0.7e:
+			In Game Documentation and Filtered Upgrades Update (pre 0.8 release build)
+			This has sort been tested on servers, but not fully. Please report any bugs you get when playing with this version.
+			Patchouli InGame Guide (Linking tool + book)
+			Fertilizer Upgrade now will update crops random ticks causing them to grow a tiny bit, bone meal is still 400% faster though.
+			Changed up how i check for some item/block tags which is more performant
+			Fixed some chat messaging things to be more 'kosher'
+			Colored Exp upgrades with a green ring now.
+			fixed an xp dupe
+			added 13 filtered upgrades
+			added some shift-right click visuals to the Upgrade Tool, and reworked the one for the Linking Tool
+			Advanced Enchantment should no longer show up in villager trades
+			adjusted the potion diffuser upgrade
+			Ill go into more detail in the v0.8 release
+			Also a 1.16.2 update will also be released at the same time (for v0.8)
+			As always, if you need help with the mod, the discord invite is in the mod listing on the home screen in game. The channel to chat in is #pedestals
+			(Built with Forge version: 1.16.1 - 32.0.108)
+
+	Quark (Quark-r2.2-260.jar --> Quark-r2.2-261.jar):
+		Quark-r2.2-261.jar:
+			* Fixed foxhound math for fuel speed up once again being incorrect
+			* Fixed leaf carpets not breaking faster with hoes
+			* Fixed looking at a shulker box with a loot table in it crashing the game
+			* Fixed magnets not pulling blocks if they're obstructed in the opposite direction (Alwinfy)
+			* Fixed mega dungeons spawning in dimensions where they shouldn't
+			* Fixed potential thread unsafe operations on config reload
+			* Fixed quark bookshelves being in the wrong creative tab
+			* Fixed snow bricks inheriting porperties from snow layers rather than snow blocks (bageldotjpg)
+			* Fixed Terracotta Shingles having no stair and slab recipes
+			* Fixed vertical slabs having the incoorrect part of the texture displayed (bageldotjpg)
+
+Removed:
+- Interactio - In-World Crafting with Datapacks!
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
