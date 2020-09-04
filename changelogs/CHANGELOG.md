@@ -1,28 +1,65 @@
+### Enigmatica 6 v0.2.15
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.15.txt)_
+
+**Mod Additions**
+
+-   Neon Craft Mod [\#236](https://github.com/NillerMedDild/Enigmatica6/issues/236)
+-   Save Your Pets [\#232](https://github.com/NillerMedDild/Enigmatica6/issues/232)
+-   Transport [\#224](https://github.com/NillerMedDild/Enigmatica6/issues/224)
+-   AIOT Botania [\#223](https://github.com/NillerMedDild/Enigmatica6/issues/223)
+-   Emojiful [\#220](https://github.com/NillerMedDild/Enigmatica6/issues/220)
+-   BlockCarpentry [\#212](https://github.com/NillerMedDild/Enigmatica6/issues/212)
+-   Re-added Interactio, because it has been fixed
+
+**Changes**
+
+-   Botania: The Orechid now prioritizes ores the same way the rest of the pack does.
+-   Forge: Enabled experimental lighting pipeline
+
+**Bug Fixes**
+
+-   Abnormals Core: encountered an error during the common\_setup event phase: null [\#208](https://github.com/NillerMedDild/Enigmatica6/issues/208)
+-   Duplication Exploits [\#207](https://github.com/NillerMedDild/Enigmatica6/issues/207)
+-   EmendatusEnigmatica: Experience farm with ore chunks back to ores blocks [\#193](https://github.com/NillerMedDild/Enigmatica6/issues/193)
+-   Interactio: Lag that seems to be caused by Interactio [\#196](https://github.com/NillerMedDild/Enigmatica6/issues/196)
+-   InventoryTweaks: sorting X AE2 crafting terminal [\#234](https://github.com/NillerMedDild/Enigmatica6/issues/234)
+-   ProductiveBees: Bees seem to duplicate or spawn a LOT [\#216](https://github.com/NillerMedDild/Enigmatica6/issues/216)
+-   Quark: Fixed Engineer's Crafting Stations having Quark filter buttons
+-   Quark: Fixed RS Crafting Grid having Quark filter buttons
+-   Quark: No slate generating \(And possibly Jasper?\) [\#206](https://github.com/NillerMedDild/Enigmatica6/issues/206)
+-   TellMe: TellMe mod using gold nugget as debug item [\#211](https://github.com/NillerMedDild/Enigmatica6/issues/211)
+-   VanillaHammers: Hammers drop extra materials when mining [\#202](https://github.com/NillerMedDild/Enigmatica6/issues/202)
+
+**Known Issues**
+
+- Fluid Crafting recipes don't work on initial world join, use `/reload` to fix them
+
 #### Enigmatica 6 v0.2.14
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.14.txt)_
 
 **Mod Additions**
 
-- Re-added Ma Essentials (Much regret)
-- Macaw's Trapdoors
+-   Re-added Ma Essentials (Much regret)
+-   Macaw's Trapdoors
 
 **Changes**
 
-- Ma Essentials: Disabled Warp commands (They can be re-enabled in the configs)
-- Ma Essentials: Increased cooldown of /back command to 5 minutes, from 3.
-- Applied Energistics: Added recipes to convert between different certus and ender dust variants.
-- Applied Energistics: Disabled the custom Fluix Crystal recipe using water. The normal one works.
-- Ancient Debris Tags [\#197](https://github.com/NillerMedDild/Enigmatica6/issues/197)
+-   Ma Essentials: Disabled Warp commands (They can be re-enabled in the configs)
+-   Ma Essentials: Increased cooldown of /back command to 5 minutes, from 3.
+-   Applied Energistics: Added recipes to convert between different certus and ender dust variants.
+-   Applied Energistics: Disabled the custom Fluix Crystal recipe using water. The normal one works.
+-   Ancient Debris Tags [\#197](https://github.com/NillerMedDild/Enigmatica6/issues/197)
 
 **Bug Fixes**
 
-- Fixed server lag caused by item entities.
-- Emendatus Enigmatica Ender Pearl Dust cant be used to craft AE2 singularity (Conversion recipe between ender dusts added) [\#187](https://github.com/NillerMedDild/Enigmatica6/issues/187)
+-   Fixed server lag caused by item entities.
+-   Emendatus Enigmatica Ender Pearl Dust cant be used to craft AE2 singularity (Conversion recipe between ender dusts added) [\#187](https://github.com/NillerMedDild/Enigmatica6/issues/187)
 
 **Mod Removals**
 
-- Interactio (Temporarily removed due to a lag issues)
+-   Interactio (Temporarily removed due to a lag issues)
 
 #### Enigmatica 6 v0.2.13
 
@@ -30,25 +67,23 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
-- Wither Skeleton Tweaks [\#186](https://github.com/NillerMedDild/Enigmatica6/issues/186)
+-   Wither Skeleton Tweaks [\#186](https://github.com/NillerMedDild/Enigmatica6/issues/186)
 
 **Bug Fixes**
 
-- FTB Chunks: Downgraded to fix a crash bug.
-- Extended Lights: Recipe Conflict: Vanilla Chain and Post Lamp Beam [\#184](https://github.com/NillerMedDild/Enigmatica6/issues/184)
-- Building Gadgets: Gadget\(s\) Don't Drain Power When Used [\#177](https://github.com/NillerMedDild/Enigmatica6/issues/177)
+-   FTB Chunks: Downgraded to fix a crash bug.
+-   Extended Lights: Recipe Conflict: Vanilla Chain and Post Lamp Beam [\#184](https://github.com/NillerMedDild/Enigmatica6/issues/184)
+-   Building Gadgets: Gadget\(s\) Don't Drain Power When Used [\#177](https://github.com/NillerMedDild/Enigmatica6/issues/177)
 
 #### Enigmatica 6 v0.2.12
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.12.txt)_
 
-
-
 Server files will be added later, due to an issue with CurseForge. The only updates in this version are the mods FTBChunks, FTB GUI Library, Apotheosis and More Dragon Eggs.
 
 **Bug Fixes**
 
-- Apotheosis: Fixed a crash bug with thrown potions, ghast fireballs and other projectiles.
+-   Apotheosis: Fixed a crash bug with thrown potions, ghast fireballs and other projectiles.
 
 #### Enigmatica 6 v0.2.11
 
@@ -56,19 +91,19 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mods Additions**
 
-- Swing Through Grass [\#129](https://github.com/NillerMedDild/Enigmatica6/issues/129)
+-   Swing Through Grass [\#129](https://github.com/NillerMedDild/Enigmatica6/issues/129)
 
 **Changes**
 
-- EmendatusEnigmatica: Chunks can now be crafted directly into Stone Ores for the sake of automation.
-- Waystones: No longer spawn in villages, due to high frequency
-- Waystones: Now spawn randomly spread throughout the world, rarely.
+-   EmendatusEnigmatica: Chunks can now be crafted directly into Stone Ores for the sake of automation.
+-   Waystones: No longer spawn in villages, due to high frequency
+-   Waystones: Now spawn randomly spread throughout the world, rarely.
 
 **Bug Fixes**
 
-- Interactio: Fixed log spam
-- AE2 Crafting Interface + Filter Button [\#179](https://github.com/NillerMedDild/Enigmatica6/issues/179)
-- Mining Gadget Beam Doesn't Render [\#178](https://github.com/NillerMedDild/Enigmatica6/issues/178)
+-   Interactio: Fixed log spam
+-   AE2 Crafting Interface + Filter Button [\#179](https://github.com/NillerMedDild/Enigmatica6/issues/179)
+-   Mining Gadget Beam Doesn't Render [\#178](https://github.com/NillerMedDild/Enigmatica6/issues/178)
 
 #### Enigmatica 6 v0.2.10
 
@@ -76,13 +111,13 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Changes**
 
-- Applied Energistics: Normal water-based Fluix recipe now works on servers.
+-   Applied Energistics: Normal water-based Fluix recipe now works on servers.
 
 **Bug Fixes**
 
-- Applied Energistics: 1k drive parts can only be crafted with charged certus [\#170](https://github.com/NillerMedDild/Enigmatica6/issues/170)
-- Applied Energistics: Enhanced seed recipe is mixed up [\#168](https://github.com/NillerMedDild/Enigmatica6/issues/168)
-- RS and AE2 Silicon Unification [\#166](https://github.com/NillerMedDild/Enigmatica6/issues/166)
+-   Applied Energistics: 1k drive parts can only be crafted with charged certus [\#170](https://github.com/NillerMedDild/Enigmatica6/issues/170)
+-   Applied Energistics: Enhanced seed recipe is mixed up [\#168](https://github.com/NillerMedDild/Enigmatica6/issues/168)
+-   RS and AE2 Silicon Unification [\#166](https://github.com/NillerMedDild/Enigmatica6/issues/166)
 
 #### Enigmatica 6 v0.2.9
 
@@ -90,70 +125,56 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
-- More Dragon Eggs
+-   More Dragon Eggs
 
 **Changes**
 
-- Applied Energistics: Certus can now be charged in the Powah Energizer (Credit Rid) [\#160](https://github.com/NillerMedDild/Enigmatica6/issues/160)
-- Applied Energistics: Enriching recipes to grow AE2 crystal seeds into Pure crystals
+-   Applied Energistics: Certus can now be charged in the Powah Energizer (Credit Rid) [\#160](https://github.com/NillerMedDild/Enigmatica6/issues/160)
+-   Applied Energistics: Enriching recipes to grow AE2 crystal seeds into Pure crystals
 
 **Bug Fixes**
 
-- Applied Energistics: Recipe requiring Charged Certus don't work [\#164](https://github.com/NillerMedDild/Enigmatica6/issues/164)
-- Applied Energistics: Fluix unobtainable [\#163](https://github.com/NillerMedDild/Enigmatica6/issues/163)
-- Applied Energistics: Can't make charged certus quartz [\#160](https://github.com/NillerMedDild/Enigmatica6/issues/160)
-- Botania: Quartz Variants Unobtainable [\#165](https://github.com/NillerMedDild/Enigmatica6/issues/165)
-
-
+-   Applied Energistics: Recipe requiring Charged Certus don't work [\#164](https://github.com/NillerMedDild/Enigmatica6/issues/164)
+-   Applied Energistics: Fluix unobtainable [\#163](https://github.com/NillerMedDild/Enigmatica6/issues/163)
+-   Applied Energistics: Can't make charged certus quartz [\#160](https://github.com/NillerMedDild/Enigmatica6/issues/160)
+-   Botania: Quartz Variants Unobtainable [\#165](https://github.com/NillerMedDild/Enigmatica6/issues/165)
 
 #### Enigmatica 6 v0.2.8
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.8.txt)_
 
-
-
 After community feedback, we've decided to re-add Useful Backpacks and Ranged Pumps, as they have features that would be sorely missed.
-
-
 
 **Mod Additions**
 
-- Angel Ring [\#144](https://github.com/NillerMedDild/Enigmatica6/issues/144)
-- Useful Backpacks
-- Ranged Pumps
+-   Angel Ring [\#144](https://github.com/NillerMedDild/Enigmatica6/issues/144)
+-   Useful Backpacks
+-   Ranged Pumps
 
 **Changes**
 
-- Apotheosis: Decreased boss, brutal spawner and swarm spawner frequencies.
-- Default Keybindings: Updated with new mod keys, unbound rarely used keys.
-- Immersive Engineering: Buffed the Pump's pump speed when powered.
-- Ranged Pumps: Increased speed, reduced tank capicity, improved energy capacity, increased energy usage.
+-   Apotheosis: Decreased boss, brutal spawner and swarm spawner frequencies.
+-   Default Keybindings: Updated with new mod keys, unbound rarely used keys.
+-   Immersive Engineering: Buffed the Pump's pump speed when powered.
+-   Ranged Pumps: Increased speed, reduced tank capicity, improved energy capacity, increased energy usage.
 
 **Bug Fixes**
 
-- Mekanism: Disabled Fluorite Ore from spawning, so only the EE variants spawn.
-- Unification: Some Mekanism Ores being unprocessable - Not a big deal since you can't obtain them, but still.
-- Unification: Chunks only being convertable to smooth stone Ore in the Stonecutter.
-- Simply Backpacks erasing items, needs update [\#150](https://github.com/NillerMedDild/Enigmatica6/issues/150)
-- No Recipe for Ender Dust [\#149](https://github.com/NillerMedDild/Enigmatica6/issues/149)
-- Same Ores on Overworld [\#148](https://github.com/NillerMedDild/Enigmatica6/issues/148)
-- Aquaculture tin cans give iron [\#146](https://github.com/NillerMedDild/Enigmatica6/issues/146)
-
-
+-   Mekanism: Disabled Fluorite Ore from spawning, so only the EE variants spawn.
+-   Unification: Some Mekanism Ores being unprocessable - Not a big deal since you can't obtain them, but still.
+-   Unification: Chunks only being convertable to smooth stone Ore in the Stonecutter.
+-   Simply Backpacks erasing items, needs update [\#150](https://github.com/NillerMedDild/Enigmatica6/issues/150)
+-   No Recipe for Ender Dust [\#149](https://github.com/NillerMedDild/Enigmatica6/issues/149)
+-   Same Ores on Overworld [\#148](https://github.com/NillerMedDild/Enigmatica6/issues/148)
+-   Aquaculture tin cans give iron [\#146](https://github.com/NillerMedDild/Enigmatica6/issues/146)
 
 #### Enigmatica 6 v0.2.7
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.7.txt)_
 
-
-
 **Warning**: Several mods were removed in 0.2.6. If you're using LargeFluidTanks or Useful Backpacks, make sure to move the contents before updating.
 
-
-
-If you're playing in a world that was created with Rats (E6 v0.2.4 and earlier), you will need to readd Rats for that world to work correctly. Download it [here](https://www.curseforge.com/minecraft/mc-mods/rats/files/3020258) and put it in your mods folder. 
-
-
+If you're playing in a world that was created with Rats (E6 v0.2.4 and earlier), you will need to readd Rats for that world to work correctly. Download it [here](https://www.curseforge.com/minecraft/mc-mods/rats/files/3020258) and put it in your mods folder.
 
 **Mod Additions**
 
@@ -168,58 +189,54 @@ If you're playing in a world that was created with Rats (E6 v0.2.4 and earlier),
 
 **Changes**
 
-- Apotheosis: Max Sugarcane height is now 10
+-   Apotheosis: Max Sugarcane height is now 10
 
 **Bug Fixes**
 
-- Quark Loot still provides vanilla ore blocks [\#139](https://github.com/NillerMedDild/Enigmatica6/issues/139)
-- Crash during Resource Pack activation [\#134](https://github.com/NillerMedDild/Enigmatica6/issues/134)
-- Quantum Storage items uncraftable [\#133](https://github.com/NillerMedDild/Enigmatica6/issues/133)
-- Can't craft the 16384k fluid storage part on 0.2.6 [\#131](https://github.com/NillerMedDild/Enigmatica6/issues/131)
-- 0.2.6 Botania rendering crash [\#130](https://github.com/NillerMedDild/Enigmatica6/issues/130)
-- Certus Quartz unobtainable [\#128](https://github.com/NillerMedDild/Enigmatica6/issues/128)
-- Modded for Dummies Texture Error [\#127](https://github.com/NillerMedDild/Enigmatica6/issues/127)
-- Click Machine lacks a recipie [\#111](https://github.com/NillerMedDild/Enigmatica6/issues/111)
-- Programmable drones can be crafted without pcb [\#94](https://github.com/NillerMedDild/Enigmatica6/issues/94)
+-   Quark Loot still provides vanilla ore blocks [\#139](https://github.com/NillerMedDild/Enigmatica6/issues/139)
+-   Crash during Resource Pack activation [\#134](https://github.com/NillerMedDild/Enigmatica6/issues/134)
+-   Quantum Storage items uncraftable [\#133](https://github.com/NillerMedDild/Enigmatica6/issues/133)
+-   Can't craft the 16384k fluid storage part on 0.2.6 [\#131](https://github.com/NillerMedDild/Enigmatica6/issues/131)
+-   0.2.6 Botania rendering crash [\#130](https://github.com/NillerMedDild/Enigmatica6/issues/130)
+-   Certus Quartz unobtainable [\#128](https://github.com/NillerMedDild/Enigmatica6/issues/128)
+-   Modded for Dummies Texture Error [\#127](https://github.com/NillerMedDild/Enigmatica6/issues/127)
+-   Click Machine lacks a recipie [\#111](https://github.com/NillerMedDild/Enigmatica6/issues/111)
+-   Programmable drones can be crafted without pcb [\#94](https://github.com/NillerMedDild/Enigmatica6/issues/94)
 
 ### Enigmatica 6 v0.2.6
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.6.txt)_
 
-
-
 **Warning: Several mods were removed in 0.2.6. If you're using LargeFluidTanks or Useful Backpacks, make sure to move the contents before updating.**
-
-
 
 **Major Changes**
 
-- Ore processing outputs have been changed. Nearly everything ore/ingot/dust/nugget related should now output items from our own mod, Emendatus Enigmatica. 
-  - This means a lot of autocrafting will break, unfortunately. We felt it was needed to combat the issues with unification.
+-   Ore processing outputs have been changed. Nearly everything ore/ingot/dust/nugget related should now output items from our own mod, Emendatus Enigmatica.
+    -   This means a lot of autocrafting will break, unfortunately. We felt it was needed to combat the issues with unification.
 
 **Mod Additions**
 
 -   Readded Tip The Scales (It will now disable itself if Optifine is detected)
 -   **Apotheosis**
-- **Emendatus Enigmatica**
-- Enigmatica Companion Mod
-- Extreme sound muffler (Forge)
-- Game Stages
-- Mantle
-- Runelic
-- Spice of Life: Carrot Edition
-- Tinkers' Mechworks
+-   **Emendatus Enigmatica**
+-   Enigmatica Companion Mod
+-   Extreme sound muffler (Forge)
+-   Game Stages
+-   Mantle
+-   Runelic
+-   Spice of Life: Carrot Edition
+-   Tinkers' Mechworks
 
 **Changes**
 
-- Added a beginner's guide to Modded Minecraft! [\#89](https://github.com/NillerMedDild/Enigmatica6/issues/89)  *(Made by Merlo, textures by Rid)*
-- Renewable Coral Blocks [\#88](https://github.com/NillerMedDild/Enigmatica6/issues/88)
+-   Added a beginner's guide to Modded Minecraft! [\#89](https://github.com/NillerMedDild/Enigmatica6/issues/89) _(Made by Merlo, textures by Rid)_
+-   Renewable Coral Blocks [\#88](https://github.com/NillerMedDild/Enigmatica6/issues/88)
 
 **Bug Fixes**
 
-- Weird bounding box around BotanyPots crops [\#93](https://github.com/NillerMedDild/Enigmatica6/issues/93)
-- 0.2.5 farmland isn't craftable [\#92](https://github.com/NillerMedDild/Enigmatica6/issues/92)
-- Furnace provides light despite being unpowered [\#36](https://github.com/NillerMedDild/Enigmatica6/issues/36)
+-   Weird bounding box around BotanyPots crops [\#93](https://github.com/NillerMedDild/Enigmatica6/issues/93)
+-   0.2.5 farmland isn't craftable [\#92](https://github.com/NillerMedDild/Enigmatica6/issues/92)
+-   Furnace provides light despite being unpowered [\#36](https://github.com/NillerMedDild/Enigmatica6/issues/36)
 
 **Mod Removals**
 

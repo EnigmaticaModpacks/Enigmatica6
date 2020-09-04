@@ -1,0 +1,224 @@
+=========================================
+Enigmatica6 0.2.14 --> Enigmatica6 0.2.15
+=========================================
+
+Added:
+- AIOT Botania
+- BlockCarpentry
+- Emojiful
+- Interactio - In-World Crafting with Datapacks!
+- Neon Craft Mod
+- Save Your Pets
+- Transport
+
+Updated:
+	Apotheosis (Apotheosis-1.16.1-4.1.2.jar --> Apotheosis-1.16.1-4.1.3.jar):
+		Apotheosis-1.16.1-4.1.3.jar:
+			Made Hellshelves and Seashelves only require Level III of their respective enchantment to be upgraded.
+
+	Decorative Blocks (decorative_blocks-1.16.1-1.4.jar --> decorative_blocks-1.16.1-1.5.jar):
+		decorative_blocks-1.16.1-1.5.jar:
+			Same as 1.16.2 version
+
+		decorative_blocks-1.16.2-1.1.jar:
+			Added Soul chandeliers & Braziers
+			French translation
+			Russian translation fix
+
+		decorative_blocks-1.16.2-1.0.jar:
+			No changelog available.
+
+	Emendatus Enigmatica (EmendatusEnigmatica-1.16.1-1.0.5 --> EmendatusEnigmatica-1.16.1-1.0.6):
+		EmendatusEnigmatica-1.16.1-1.0.6:
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.6
+			* Fixed a bug where harvesting ore with Silktouch is dropping EXP.
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.5
+			* Added shapeless recipes to turn Ore Chunks into Ore Blocks
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.4
+			* Added couple new tags to the Certus Quartz, Charged Certus Quartz, and Fluix Crystal
+			* Added the usage of DeferredWorkQueue during the World Gen to avoid a crash
+			* Added Smelting and Blasting recipes for ingots/gems from ores
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.3
+			* Added Fluorite
+			* Removed Skystone
+			* JEI Integration
+			* Added multiple recipes to exchange the Chunks into any of their ore block variants using the Stonecutter
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.2
+			* World Gen Crash Fix
+			* AE2 and Minecraft Tags
+			* Added MinMaxCount on Redstone Ores Loot Tables
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.1
+			* Minor Code Refactoring
+			* Texture Update
+			Emendatus Enigmatica
+			MC 1.16.1 | Version 1.0.0
+			* First Official Release
+
+	Engineer's Decor (engineersdecor-1.16.1-1.1.2.jar --> engineersdecor-1.16.1-1.1.3.jar):
+		engineersdecor-1.16.1-1.1.3.jar:
+			* v1.1.3     [F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2     [F] Fixed Crafting Table Patchouli manual entry.
+			* v1.1.1     [R] Intial 1.16.1 release.
+			* v1.1.1-b7  [F] Fixed AI-open-path bug (issue #116, ty KrAzYGEEK32, desht).
+			[F] Conditional recipes extended to additional vanilla ingredients in case of oredict tag issues.
+			[M] Lang file update zh_cn (PR#117, Moonisky).
+			* v1.1.1-b6  [F] Iron Hatch rendering fixed (issue #113, ty KrAzYGEEK32).
+			[F] Hotfix of UI tooltip crash for versions Forge < 32.0.97 mapping issue.
+			* v1.1.1-b5  [M] Transmuted the "Treated Wood Crafting Table" to a "Metal Crafting Table"
+			to de-duplicate the new Immersive Engineering "Engineer's Crafting Table".
+			[F] Fixed metal pole culling (issue #109, thx Alsett).
+			* v1.1.1-b4  [F] Fixed Fluid Barrel tooltip text duplicate.
+			[F] Fixed IE hard-dependency opt-out.
+			[M] Side Table model and shape refined.
+			[A] Dense Grit Dirt added.
+			[M] Wood textures slightly darker, obsolete textures removed.
+			* v1.1.1-b3  [A] Ceiling Edge Light added.
+			[A] Iron Bulb Light added.
+			[A] Iron Hatch added.
+			[A] Fluid Barrel added.
+			[M] Gas Concrete texture made slightly darker.
+			* v1.1.1-b2  [M] Nerfed Solar Panel output default config value from 45RF/t to 40RF/t.
+			[F] Fixed conditional IE tag dependency of alternative/standalone recipes.
+			* v1.1.1-b1  [A] JEI integration ported.
+			[M] Logical server side config moved from COMMON to SERVER (world/serverconfig).
+			[F] Labeled Crate recipe condition for missing Immersive Engineering fixed.
+			[F] Mouse scrolling works for Labeled Crate and TW Crafting Table.
+			* v1.1.1-a1  [A] Initial port.
+
+		engineersdecor-1.16.2-1.1.2-b4.jar:
+			* v1.1.2-b4  [F] Mapping adaption to Forge 1.16.2-33.0.22/20200723-1.16.1.
+			[F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2-b3  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.1.2-b2  [A] Dark Shingle Roof added.
+			* v1.1.2-b1  [U] Ported to MC1.16.2.
+
+	Immersive Engineering (ImmersiveEngineering-1.16.1-3.2.0-115 --> ImmersiveEngineering-1.16.1-4.0.0-118):
+		ImmersiveEngineering-1.16.1-4.0.0-118:
+			* Re-added custom banner patterns. Craft the blueprint, make patterns, then use them on the loom! (BluSunrize)
+			* Added a warning when switching to "fabulous" graphics while stencil is enabled (Malte)
+			* Fixed log spam caused by wire sync issues (Malte)
+			* Fixed manual page for shaders (BluSunrize)
+			* Also includes the changes from 1.15.2-4.0.0-117
+
+	Iron Chests (ironchest-1.16.1-11.0.1.jar --> ironchest-1.16.1-11.0.4.jar):
+		ironchest-1.16.1-11.0.4.jar:
+			Bug Fixes:
+			* Fixes issues with recipes spamming due to missing items.
+			Please note that the Iron Shulker Box Variants have been moved to their own mod starting in 1.13.2. [Iron Shulker Boxes](https://www.curseforge.com/minecraft/mc-mods/iron-shulker-boxes)
+
+	Just Enough Resources (JER) (JustEnoughResources-1.16.1-0.11.1.94 --> JustEnoughResources-1.16.1-0.11.1.96):
+		JustEnoughResources-1.16.1-0.11.1.96:
+			[[4de50fa](https://github.com/way2muchnoise/JustEnoughResources/commit/4de50fa0c48b10643f4609c48f471db6ff47480c)] fixes tooltip hover on ore graph, fixes #211 (way2muchnoise)
+
+	Light Overlay (Rift/Forge/Fabric) ([Forge / Fabric 1.16.1] v5.4.2 --> [Forge / Fabric 1.16.1] v5.4.3):
+		[Forge / Fabric 1.16.1] v5.4.3:
+			Fix an issue where crosses appear in mushroom biomes
+			In case you are new to this merging method, this mod jar will work on both Fabric and Forge, just slap this jar into minecraft/mods and it will work.
+
+		[Forge / Fabric 1.16.2] v5.5.1:
+			Fabric: Frustum calculations Forge: Updated to 1.16.2 and frustum calculations
+			In case you are new to this merging method, this mod jar will work on both Fabric and Forge, just slap this jar into minecraft/mods and it will work.
+
+	PneumaticCraft: Repressurized (pneumaticcraft-repressurized-1.16.1-2.1.1-14.jar --> pneumaticcraft-repressurized-1.16.1-2.2.0-29.jar):
+		pneumaticcraft-repressurized-1.16.1-2.2.0-29.jar:
+			2.2.0-29 (3 Sep 2020)
+			Important: if you are also using Immersive Engineering, this release of PNC:R requires IE 1.16.1-4.0.0-118 or newer.
+			Updates
+			* Drones (with the Pick up Items widget) will no longer "steal" items off Immersive Engineering conveyor belts
+			* - Specifically, the widget now honours the "PreventRemoteMovement" entity tag
+			* - This can be overridden via the widget's GUI when creating the drone program
+			* A few small cosmetic cleanups and improvements in the Charging Station GUI (including the item upgrade sub-GUI)
+			* - Upgrade sub-GUI no longer shows armor slots (it's pointless there)
+			* - Reinforced Stone blocks are now a little easier to mine up (blast resistance has not been changed though)
+			* Sourdough Bread can now be used to make Culinary Construct sandwiches. Yum.
+			* Overhauled the Drone special variables system a bit:
+			* - New special variables: $drone_pos, $player_pos, $controller_pos, $owner_pos
+			* - Existing variables $drone, $player & $owner still work but it's recommended to use the new ones
+			* - Note that $drone gets the blockpos above the drone (which it always has for historical reasons), but $drone_pos gets the drone's real blockpos
+			* - $controller_pos is completely new and gets the Programmable Controller's blockpos, or (0,0,0) if used by an actual drone entity
+			* Patchouli manual is updated (see Programming / Variables section) with much more detail.
+			* Aerial Interface now supports Industrial Foregoing Essence as an XP fluid.
+			* Waila now shows 2 decimal places of pressure in the focused block, same as The One Probe already does.
+			* When Charging Station is set to output redstone, frequency of signal changes is now limited to at most once every 10 ticks
+			* - This should reduce lag caused by rapid output toggling, which can happen when the charged item is at or around the charging threshold
+			* Thermal Compressor GUI: temperature gauge scales have been tweaked to hopefully show a clearer distinction between hot & cold sides
+			Fixes
+			* Fixed (hopefully) an issue where client-side Logistics Frames would disappear on certain blocks
+			* - This also caused a client-side crash if right-clicking a "missing" frame with the Logistics Configurator
+			* Fixed Elevator sometimes entering an air feedback loop, rapidly leading to explosions
+			* Fixed drone Block Right Click widget sometimes bugging out, leaving the drone repeatedly trying to right-click the same block, even when an area is provided
+			* Fixed Goto programming widget GUI "Done when departed" and "Done when arrived" meanings being switched.
+			* Fixed Programmer not showing programming widgets on hi-dpi displays (Macbooks)
+			* Fixed Pressure Chamber crafting issue where items split across multiple stacks would not get recognised as valid recipe ingredients
+			* Fixed Liquid Hopper not being able to fill fillable items (buckets, tanks...) dropped in front of the hopper output side.
+			* Fixed Pneumatic Armor bound keys also triggering when any GUI is open, e.g. typing in a textfield
+			* Fixed Minigun item being rendered too far right in GUI context
+			* Fixed Jackhammer item model always rendering with drill bit when not held by player (even when no bit is installed)
+			* Fixed Pneumatic Wrench opening machine GUIs when rotating blocks in creative mode
+			* Fixed The One Probe showing a block's current pressure where the max pressure should be shown
+			* Fixed very long words not being split in GUI side tabs, causing unreadably small text
+			* - This mainly affects languages such as Chinese, where whitespace is not necessarily used.
+			* Fixed heat-tintable blocks (e.g. Compressed Iron Block) flashing blue briefly when placed down
+
+	Productive Bees (productivebees-1.16.1-0.2.5.jar --> productivebees-1.16.1-0.3.2.jar):
+		productivebees-1.16.1-0.3.2.jar:
+			* Fixed server connection issues
+			* Added plastic, silicon and ender biotite bees
+
+		productivebees-1.16.2-0.3.0.jar:
+			* Added Farmer Bee which can harvest crops. Uses right click farming if it's implemented by another mod.
+			* Added bees for Botania Manasteel, Terrasteel and Elementium
+			* Added bees for Mekanism Refined Glowstone and Refined Obsidian
+			* Added bees for Allthemodium, Vibranium and Unobtainium
+			* Added bee for AE2 Certus Quartz
+			* Added new datapack system for editing, disabling and adding bees
+			* Bees are now invulnerable to Berry Bushes
+			* Solitary bees will stay in the vicinity of the nest they spawned from preventing masses of bees to collect in unloaded chunks. Solitary bees still die after 10 minutes of not finding a home.
+
+		productivebees-1.16.1-0.3.0.jar:
+			* Added Farmer Bee which can harvest crops. Uses right click farming if it's implemented by another mod.
+			* Added bees for Botania Manasteel, Terrasteel and Elementium
+			* Added bees for Mekanism Refined Glowstone and Refined Obsidian
+			* Added bees for Allthemodium, Vibranium and Unobtainium
+			* Added bee for AE2 Certus Quartz
+			* Added new datapack system for editing, disabling and adding bees
+			* Bees are now invulnerable to Berry Bushes
+			* Solitary bees will stay in the vicinity of the nest they spawned from preventing masses of bees to collect in unloaded chunks. Solitary bees still die after 10 minutes of not finding a home.
+
+		productivebees-1.16.2-0.2.5.jar:
+			Ported to 1.16.2
+			Note that worldgen stuff is disabled in 1.16.2 for now until Forge figures out how to implement the new Biome system. Bee nests can still be crafted and placed in the world to attract bees.
+			Changes since latest 1.16.1 version
+			* Added Netherite bee
+			* Comb production has been limited to 1 per pollination. The comb will be deposited when the bees leaves the hive, just like honey. The amount of combs is still affected by the bees productivity level.
+			* Added bee conversion from items recipe to JEI
+			* New bee display in the hive and JEI
+			* Updated bee colors
+			* Updated comb colors
+			* Updated bee egg colors for better consistency
+
+	Quark (Quark-r2.2-261.jar --> Quark-r2.2-262.jar):
+		Quark-r2.2-262.jar:
+			* Added stonecutting recipes for shingles (bageldotjpg)
+			* Changed the Shingles recipe to be compatible with the upcoming Environmental mod (bageldogjpg)
+			* Fixed quark chest buttons being present in the Refined Storage grid by default (NillerMedDild)
+			* Fixed the Lit Redstone Lamp not having a torch in its recipe
+			* Updated some tags to match more recent vanilla features (bageldotjpg)
+
+	Useful Backpacks (Useful-Backpacks-1.16.1-1.11.2.74 --> Useful-Backpacks-1.16.1-1.11.3.78):
+		Useful-Backpacks-1.16.1-1.11.3.78:
+			[Changelog of 1.11.3.78](https://github.com/MC-U-Team/Useful-Backpacks/blob/1.16.1/CHANGELOG.md#1161-111378---2020-09-02)
+
+		Useful-Backpacks-1.16.2-1.11.3.76:
+			[Changelog of 1.11.3.76](https://github.com/MC-U-Team/Useful-Backpacks/blob/1.16.2/CHANGELOG.md#1162-111376---2020-08-14)
+
+		Useful-Backpacks-1.16.2-1.11.2.75:
+			[Changelog of 1.11.2.75](https://github.com/MC-U-Team/Useful-Backpacks/blob/1.16.2/CHANGELOG.md#1162-111275---2020-08-13)
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
