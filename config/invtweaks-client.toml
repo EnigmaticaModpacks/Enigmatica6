@@ -31,7 +31,27 @@
 	[[sorting.containerOverrides]]
 		containerClass = "com.tfar.craftingstation.CraftingStationContainer"
 		sortRange = ""
-
+	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.container.GridContainer"
+		sortRange = ""
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.MEMonitorableContainer"
+		sortRange = ""
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.PatternTermContainer"
+		sortRange = ""
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.CraftingTermContainer"
+		sortRange = ""
+	[[sorting.containerOverrides]]
+		containerClass = "appeng.container.implementations.InterfaceTerminalContainer"
+		sortRange = ""
+	[[sorting.containerOverrides]]
+		containerClass = "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableContainer"
+		sortRange = "9-26"
+	[[sorting.containerOverrides]]
+		containerClass = "blusunrize.immersiveengineering.common.gui.CraftingTableContainer"
+		sortRange = ""
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category
