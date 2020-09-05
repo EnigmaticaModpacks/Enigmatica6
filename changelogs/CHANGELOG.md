@@ -4,6 +4,18 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
+- 
+
+**Changes**
+
+- Updated the Main Menu! (Credit Rid)
+
+### Enigmatica 6 v0.2.15
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.15.txt)_
+
+**Mod Additions**
+
 -   Neon Craft Mod [\#236](https://github.com/NillerMedDild/Enigmatica6/issues/236)
 -   Save Your Pets [\#232](https://github.com/NillerMedDild/Enigmatica6/issues/232)
 -   Transport [\#224](https://github.com/NillerMedDild/Enigmatica6/issues/224)
