@@ -39,6 +39,15 @@ function Get-GitHubRelease {
 if (-not (test-path "$env:ProgramFiles\7-Zip\7z.exe")) { throw "$env:ProgramFiles\7-Zip\7z.exe needed to use the ModpackUploader." } 
 Set-Alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 
+if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
+    $CONFIGS_TO_REMOVE | ForEach-Object {
+        $configPath = "$PSScriptRoot/config/$_"
+        Write-Host "Removing config " -NoNewline
+        Write-Host $configPath -ForegroundColor Yellow
+        Remove-Item -Path $configPath -ErrorAction SilentlyContinue
+    }
+}
+
 if ($ENABLE_MANIFEST_BUILDER_MODULE) {
     $TwitchExportBuilder = "TwitchExportBuilder.exe"
     if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
@@ -189,7 +198,7 @@ if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
     Write-Host "Uploading server files..." -ForegroundColor Green
     Write-Host ""
 
-	# This is a variable to ensure curl shows progress
+    # This is a variable to ensure curl shows progress
     $ServerFileResponse = curl.exe --url "https://minecraft.curseforge.com/api/projects/$CURSEFORGE_PROJECT_ID/upload-file" --user "$CURSEFORGE_USER`:$CURSEFORGE_TOKEN" -H "Accept: application/json" -H X-Api-Token:$CURSEFORGE_TOKEN -F metadata=$SERVER_METADATA -F file=@$SERVER_FILENAME --progress-bar
 }
 
