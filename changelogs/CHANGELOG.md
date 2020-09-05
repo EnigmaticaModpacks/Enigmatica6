@@ -14,7 +14,8 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Changes**
 
--   Botania: The Orechid now prioritizes ores the same way the rest of the pack does.
+-   Botania: The Orechid now prioritizes ores the same way the rest of the pack does. 
+    -   **Change not included, had to remove it due to a bug**
 -   Forge: Enabled experimental lighting pipeline
 
 **Bug Fixes**
