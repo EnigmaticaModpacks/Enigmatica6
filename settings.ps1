@@ -1,8 +1,24 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
-$CLIENT_MODS = @("nopotionshift", "ding", "reauth", "neat", "toastcontrol", "packmenu")
+$CLIENT_MODS = @(
+	"nopotionshift", 
+	"ding", 
+	"reauth", 
+	"neat", 
+	"toastcontrol", 
+	"packmenu"
+)
 
+$CONFIGS_TO_REMOVE = @(
+	"jei", 
+	"pneumaticcraft/ArmorFeatureStatus.cfg",
+	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
+	"appliedenergistics2-client.toml",
+	"betteradvancements-client.toml",
+	"craftingtweaks-client.toml",
+	"emojiful-client.toml",
+	"extremesoundmuffler-client.toml")
 	
 # =====================================================================//
 #  CURSEFORGE SETTINGS
