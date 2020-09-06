@@ -12,6 +12,7 @@ $CLIENT_MODS = @(
 
 $CONFIGS_TO_REMOVE = @(
 	"jei", 
+	"defaultoptions/options.txt",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
 	"appliedenergistics2-client.toml",
@@ -34,10 +35,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.2.15"
+$MODPACK_VERSION = "0.2.16"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.2.14"
+$LAST_MODPACK_VERSION = "0.2.15"
 
 $FORGE_VERSION = 32.0.108
 
@@ -60,7 +61,7 @@ $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
 
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "release"
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
