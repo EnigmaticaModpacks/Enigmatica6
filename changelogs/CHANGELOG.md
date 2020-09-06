@@ -5,7 +5,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 **Bug Fixes**
 
 - Servers failing to start
-- BlockCraftery crashes
+- BlockCarpentry crashes
 
 **Changes**
 
@@ -13,7 +13,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Removals**
 
-- BlockCraftery (will be re-added when/if it becomes more stable)
+- BlockCarpentry (will be re-added when/if it becomes more stable)
 
 ### Enigmatica 6 v0.2.15
 
