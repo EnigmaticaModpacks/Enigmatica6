@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.2.15 Modlist
+## Enigmatica 6 - 0.2.16 Modlist
 - Abnormals-Core-1.16.1-2.0.3
 - Actually Useful Stonecutter-1.0.1 mc 1.16.1
 - additional_lights-1.16.1-2.1.1
@@ -23,9 +23,8 @@
 - BetterMineshaftsForge-1.16.1-1.3
 - bigbuckets-1.1.1
 - BiomesOPlenty-1.16.1-11.0.0.395-universal
-- blockcarpentry-1.16.1-0.1.0
 - Bookshelf-1.16.1-6.3.21
-- Botania-1.16.1-403
+- Botania-1.16.1-403.1
 - BotanyPots-1.16.1-3.0.6
 - Bountiful Baubles FORGE-1.16.1-0.0.1
 - buildinggadgets-3.5.1
