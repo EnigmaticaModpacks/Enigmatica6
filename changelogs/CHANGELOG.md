@@ -1,14 +1,19 @@
-### Enigmatica 6 v0.2.15
+### Enigmatica 6 v0.2.16
 
-_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.15.txt)_
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.16.txt)_
 
-**Mod Additions**
+**Bug Fixes**
 
-- 
+- Servers failing to start
+- BlockCraftery crashes
 
 **Changes**
 
-- Updated the Main Menu! (Credit Rid)
+- Updated the Main Menu! (All credit goes to Rid!)
+
+**Mod Removals**
+
+- BlockCraftery (will be re-added when/if it becomes more stable)
 
 ### Enigmatica 6 v0.2.15
 
