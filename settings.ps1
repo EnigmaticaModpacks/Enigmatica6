@@ -7,7 +7,8 @@ $CLIENT_MODS = @(
 	"reauth", 
 	"neat", 
 	"toastcontrol", 
-	"packmenu"
+	"packmenu",
+	"AmbientSounds"
 )
 
 $CONFIGS_TO_REMOVE = @(
