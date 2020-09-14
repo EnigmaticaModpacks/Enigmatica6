@@ -44,7 +44,7 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
         $configPath = "$PSScriptRoot/config/$_"
         Write-Host "Removing config " -NoNewline
         Write-Host $configPath -ForegroundColor Yellow
-        Remove-Item -Path $configPath -ErrorAction SilentlyContinue
+        Remove-Item -Path $configPath -ErrorAction SilentlyContinue -Recurse
     }
 }
 
