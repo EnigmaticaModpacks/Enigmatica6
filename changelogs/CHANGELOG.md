@@ -1,3 +1,23 @@
+### Enigmatica 6 v0.2.17
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.17.txt)_
+
+**Mod Additions**
+
+- BlockCarpentry
+
+**Bug Fixes**
+
+- 
+
+**Changes**
+
+- BotanyPots: Biomes O'Plenty White and Black Sand compat
+
+**Mod Removals**
+
+- 
+
 ### Enigmatica 6 v0.2.16
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.16.txt)_
