@@ -9,6 +9,8 @@ events.listen('recipes', function (event) {
         'appliedenergistics2:charged_staff',
         'appliedenergistics2:quartz_fixture',
 
+        'decorative_blocks:lattice',
+
         'extlights:light_beam_post',
 
         //'akashictome:tome',

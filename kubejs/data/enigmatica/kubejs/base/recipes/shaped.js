@@ -90,6 +90,9 @@ events.listen('recipes', function (event) {
         shapedRecipe('extlights:light_beam_post', ['BBB', ' A ', 'BBB'], {
             A: '#forge:ingots/iron',
             B: '#forge:nuggets/iron'
+        }),
+        shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A  A'], {
+            A: '#forge:rods/wooden'
         })
     ];
 
