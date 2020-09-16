@@ -9,6 +9,8 @@ events.listen('recipes', function (event) {
         'appliedenergistics2:charged_staff',
         'appliedenergistics2:quartz_fixture',
 
+        'decorative_blocks:lattice',
+
         'extlights:light_beam_post',
 
         //'akashictome:tome',
@@ -23,6 +25,8 @@ events.listen('recipes', function (event) {
         'minecraft:sticky_piston',
 
         'morevanillalib:obsidian_shard',
+
+        'simplefarming:raw_bacon',
 
         'quantumstorage:tank',
         'quantumstorage:qsu'
@@ -45,7 +49,9 @@ events.listen('recipes', function (event) {
         'decorative_blocks:oak_beam',
         'decorative_blocks:redwood_beam',
         'decorative_blocks:dead_beam',
-        'decorative_blocks:spruce_beam'
+        'decorative_blocks:spruce_beam',
+
+        'morevanillalib:obsidian_shard'
     ];
 
     outputRemovals.forEach(function (removal) {

@@ -31,6 +31,6 @@ function getPreferredItemInTag(tag) {
             return compareIndices(a.mod, b.mod);
         })
         .findFirst()
-        .orElse('minecraft:air');
+        .orElse(item.of('minecraft:air'));
     return prefItem;
 }
