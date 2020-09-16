@@ -20,6 +20,7 @@ events.listen('item.tags', function (event) {
     ];
 
     axes.forEach(function (axe) {
-        event.get('enigmatica:axes').add(axe);
+        event.get('forge:tools').add(axe);
+        event.get('forge:tools/axe').add(axe);
     });
 });

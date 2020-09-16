@@ -16,6 +16,7 @@ events.listen('item.tags', function (event) {
     ];
 
     hoes.forEach(function (hoe) {
-        event.get('enigmatica:hoes').add(hoe);
+        event.get('forge:tools').add(hoe);
+        event.get('forge:tools/hoe').add(hoe);
     });
 });
