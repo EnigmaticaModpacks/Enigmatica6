@@ -84,7 +84,7 @@ function immersiveengineering_gem_ore_processing(event, material) {
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
-    if (gem === air || dust === air) {
+    if (gem == air || dust == air) {
         return;
     }
 
@@ -99,7 +99,7 @@ function immersiveengineering_gem_ore_processing(event, material) {
         energy: 2000
     });
 
-    if (ore === air) {
+    if (ore == air) {
         return;
     }
 }
@@ -114,11 +114,11 @@ function enigmatica_ore_deposit_processing(event, material) {
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
-    if (oreDeposit === air || dust === air) {
+    if (oreDeposit == air || dust == air) {
         return;
     }
 
-    if (nuggetTag.first.id === air) {
+    if (nuggetTag.first.id == air) {
         event.recipes.minecraft.smelting(dust, oreDepositTag).xp(1.0);
         event.recipes.minecraft.blasting(dust, oreDepositTag).xp(1.0);
     } else {
@@ -197,7 +197,7 @@ function appliedenergistics2_ore_ingot_gem_crushing(event, material) {
     var gem = getPreferredItemInTag(gemTag).id;
     console.log('gem: ' + gem);
 
-    if (oreDeposit === air || dust === air) {
+    if (oreDeposit == air || dust == air) {
         return;
     }
 
@@ -218,7 +218,7 @@ function appliedenergistics2_ore_ingot_gem_crushing(event, material) {
         turns: 8
     });
 
-    if (ingot === air) {
+    if (ingot == air) {
         return;
     }
 
@@ -234,7 +234,7 @@ function appliedenergistics2_ore_ingot_gem_crushing(event, material) {
         turns: 4
     });
 
-    if (gem === air) {
+    if (gem == air) {
         return;
     }
 
@@ -257,7 +257,7 @@ function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
     }
 
     for (var i = 0; i < blacklistedMaterials.length; i++) {
-        if (blacklistedMaterials[i] === material) {
+        if (blacklistedMaterials[i] == material) {
             return;
         }
     }
@@ -271,7 +271,7 @@ function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
 
-    if (oreDeposit === air || dust === air) {
+    if (oreDeposit == air || dust == air) {
         return;
     }
 
@@ -287,7 +287,7 @@ function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
         crushing_time: 200
     });
 
-    if (ingot === air) {
+    if (ingot == air) {
         return;
     }
 
