@@ -63,77 +63,19 @@ events.listen('recipes', function (event) {
             'appliedenergistics2:charged_certus_quartz_crystal'
         ]),
         shapelessRecipe('appliedenergistics2:certus_quartz_crystal', ['emendatusenigmatica:gem_certus_quartz']),
-        shapelessRecipe('emendatusenigmatica:gem_certus_quartz', ['appliedenergistics2:certus_quartz_crystal'])
-        // shapelessRecipe(
-        //     {
-        //         item: 'akashictome:tome',
-        //         nbt: {
-        //             'akashictome:is_morphing': 1,
-        //             'akashictome:data': {
-        //                 modularrouters: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: { 'patchouli:book': 'modularrouters:book' }
-        //                 },
-        //                 powah: {
-        //                     id: 'powah:book',
-        //                     Count: 1,
-        //                     tag: {
-        //                         'akashictome:displayName': '{"translate":"item.powah.book"}',
-        //                         'akashictome:is_morphing': 1,
-        //                         display: {
-        //                             Name:
-        //                                 '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.powah.book"}]}'
-        //                         }
-        //                     }
-        //                 },
-        //                 rftoolsbase: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: { 'patchouli:book': 'rftoolsbase:manual' }
-        //                 },
-        //                 naturesaura: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: {
-        //                         'akashictome:displayName': '{"translate":"item.naturesaura.book.name"}',
-        //                         'patchouli:book': 'naturesaura:book',
-        //                         'akashictome:is_morphing': 1,
-        //                         display: {
-        //                             Name:
-        //                                 '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.naturesaura.book.name"}]}'
-        //                         }
-        //                     }
-        //                 },
-        //                 transport: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: { 'patchouli:book': 'transport:guide' }
-        //                 },
-        //                 engineersdecor: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: { 'patchouli:book': 'engineersdecor:engineersdecor_manual' }
-        //                 },
-        //                 psi: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: { 'patchouli:book': 'psi:encyclopaedia_psionica' }
-        //                 },
-        //                 pneumaticcraft: {
-        //                     id: 'patchouli:guide_book',
-        //                     Count: 1,
-        //                     tag: { 'patchouli:book': 'pneumaticcraft:book' }
-        //                 },
-        //                 occultism: { id: 'occultism:dictionary_of_spirits', Count: 1 },
-        //                 solcarrot: { id: 'solcarrot:food_book', Count: 1 },
-        //                 immersiveengineering: { id: 'immersiveengineering:manual', Count: 1 },
-        //                 integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 }
-        //             }
-        //         }
-        //     },
-        //     ['minecraft:book', '#forge:bookshelves']
-        // )
+        shapelessRecipe('emendatusenigmatica:gem_certus_quartz', ['appliedenergistics2:certus_quartz_crystal']),
+        shapelessRecipe(item.of('emendatusenigmatica:ingot_steel', 2), [
+            'immersiveengineering:ingot_steel',
+            'immersiveengineering:ingot_steel'
+        ]),
+        shapelessRecipe(item.of('immersiveengineering:ingot_steel', 2), [
+            'mekanism:ingot_steel',
+            'mekanism:ingot_steel'
+        ]),
+        shapelessRecipe(item.of('mekanism:ingot_steel', 2), [
+            'emendatusenigmatica:ingot_steel',
+            'emendatusenigmatica:ingot_steel'
+        ])
     ];
 
     recipes.forEach(function (recipe) {
