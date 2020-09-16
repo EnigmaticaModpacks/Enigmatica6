@@ -91,7 +91,7 @@ events.listen('recipes', function (event) {
             A: '#forge:ingots/iron',
             B: '#forge:nuggets/iron'
         }),
-        shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A  A'], {
+        shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A A'], {
             A: '#forge:rods/wooden'
         })
     ];
