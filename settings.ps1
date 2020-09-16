@@ -36,10 +36,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.2.16"
+$MODPACK_VERSION = "0.2.17"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.2.15"
+$LAST_MODPACK_VERSION = "0.2.16"
 
 $FORGE_VERSION = 32.0.108
 
@@ -62,7 +62,7 @@ $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
 
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "release"
+$CLIENT_RELEASE_TYPE = "beta"
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
