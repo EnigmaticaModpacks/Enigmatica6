@@ -26,6 +26,8 @@ events.listen('recipes', function (event) {
 
         'morevanillalib:obsidian_shard',
 
+        'simplefarming:raw_bacon',
+
         'quantumstorage:tank',
         'quantumstorage:qsu'
     ];
