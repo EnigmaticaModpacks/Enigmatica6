@@ -8,15 +8,23 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Bug Fixes**
 
-- 
+- Recipe conflict porkchop [\#285](https://github.com/NillerMedDild/Enigmatica6/issues/285)
+- Clocks acquired from fishing loot not recognized by JEI/autocrafting. [\#284](https://github.com/NillerMedDild/Enigmatica6/issues/284)
+- IE Engineer Villager accepts only IE Steel \(Steel conversion recipe added\) [\#280](https://github.com/NillerMedDild/Enigmatica6/issues/280)
+- Recipe conflict Lattice and Gears [\#279](https://github.com/NillerMedDild/Enigmatica6/issues/279)
+- Obsidian dust crafting through crafting table [\#274](https://github.com/NillerMedDild/Enigmatica6/issues/274)
+- Minor KubeJS recipe errors [\#267](https://github.com/NillerMedDild/Enigmatica6/issues/267)
+- Flowers have extreme offsets [\#264](https://github.com/NillerMedDild/Enigmatica6/issues/264)
+- Amadron Ordering Scam [\#263](https://github.com/NillerMedDild/Enigmatica6/issues/263)
+- BlockCarpentry blocks not rendering [\#253](https://github.com/NillerMedDild/Enigmatica6/issues/253)
+- Treated Wood is no longer obtainable by crafting [\#248](https://github.com/NillerMedDild/Enigmatica6/issues/248)
+- Issue with the new Memory Stick item [\#221](https://github.com/NillerMedDild/Enigmatica6/issues/221)
+- Vanilla Hammers destroy the digital miner [\#200](https://github.com/NillerMedDild/Enigmatica6/issues/200)
 
 **Changes**
 
 - BotanyPots: Biomes O'Plenty White and Black Sand compat
-
-**Mod Removals**
-
-- 
+- Increased Uranium and Lead spawn chance [\#283](https://github.com/NillerMedDild/Enigmatica6/issues/283)
 
 ### Enigmatica 6 v0.2.16
 
@@ -30,6 +38,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 **Changes**
 
 - Updated the Main Menu! (All credit goes to Rid!)
+- Quark: Disabled Compasses work everywhere to fix bug #284
 
 **Mod Removals**
 
