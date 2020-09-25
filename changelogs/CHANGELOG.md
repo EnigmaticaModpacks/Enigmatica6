@@ -1,3 +1,20 @@
+### Enigmatica 6 v0.2.18
+
+_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.18.txt)_
+
+**Bug Fixes**
+
+- 
+
+**Changes**
+
+- Ding: The "Ding" sound is now played when joining a server
+- Worldgen: Increased Emerald Ore spawn height 
+
+**Known Issues**
+
+- Using `/reload` causes the game to freeze.
+
 ### Enigmatica 6 v0.2.17
 
 _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.17.txt)_
