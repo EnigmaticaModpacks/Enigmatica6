@@ -16,7 +16,8 @@ events.listen('recipes', function (event) {
         'minecraft:iron_nugget',
         'minecraft:bone',
         'minecraft:gold_ingot',
-        'minecraft:gold_nugget'
+        'minecraft:gold_nugget',
+        'minecraft:light_weighted_pressure_plate'
     ];
     stoneCutterRemovals.forEach(function (item) {
         event.remove({ type: 'minecraft:stonecutting', output: item });
