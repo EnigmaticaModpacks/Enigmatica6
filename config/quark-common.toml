@@ -104,9 +104,9 @@
 	"Lit Lamp" = true
 	"Vertical Planks" = true
 	Midori = true
+	"Shallow Dirt" = true
 	"More Stone Variants" = true
 	"Framed Glass" = true
-	"Fairy Rings" = true
 	"Tallow And Candles" = true
 	Turf = true
 	"Paper Decor" = true
@@ -169,15 +169,6 @@
 		"Enable Snow Bricks" = true
 		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
 		"Enable Sandstone Bricks" = true
-
-	[building.fairy_rings]
-		"Forest Chance" = 0.00625
-		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
-		"Plains Chance" = 0.0025
-
-		[building.fairy_rings.dimensions]
-			Dimensions = ["minecraft:overworld"]
-			"Is Blacklist" = false
 
 	[building.tallow_and_candles]
 		"Candles Fall" = true
@@ -298,6 +289,7 @@
 	"Poison Potato Usage" = true
 	"Improved Sleeping" = true
 	"Springy Slime" = true
+	"Infinity Bucket" = true
 	Emotes = true
 	"Utility Recipes" = true
 	"Pat The Dogs" = true
@@ -321,6 +313,11 @@
 
 	[tweaks.hoe_harvesting]
 		"Hoes Can Have Fortune" = true
+
+	[tweaks.infinity_bucket]
+		#Set this to false to prevent dispensers from using infinite water buckets
+		"Allow Dispensers To Use" = true
+		Cost = 10
 
 	[tweaks.poison_potato_usage]
 		"Poison Effect" = true
@@ -419,6 +416,7 @@
 	"Underground Clay" = true
 	"Slime Underground Biome" = true
 	"Spider Nest Underground Biome" = true
+	"Fairy Rings" = true
 	"Monster Box" = true
 	Crevices = false
 	"Nether Obsidian Spikes" = true
@@ -439,6 +437,8 @@
 			"Is Blacklist" = false
 
 	[world.big_stone_clusters]
+		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,
+		#do "block|dimension", as we do for netherrack and end stone by default.
 		"Blocks To Replace" = ["minecraft:stone", "minecraft:andesite", "minecraft:diorite", "minecraft:granite", "minecraft:netherrack", "minecraft:end_stone", "quark:marble", "quark:limestone", "quark:jasper", "quark:slate", "quark:basalt"]
 
 		[world.big_stone_clusters.marble]
@@ -932,6 +932,15 @@
 				"Biome Types" = ["SWAMP"]
 				"Is Blacklist" = false
 
+	[world.fairy_rings]
+		"Forest Chance" = 0.00625
+		Ores = ["minecraft:emerald_ore", "minecraft:diamond_ore"]
+		"Plains Chance" = 0.0025
+
+		[world.fairy_rings.dimensions]
+			Dimensions = ["minecraft:overworld"]
+			"Is Blacklist" = false
+
 	[world.underground_clay]
 
 		[world.underground_clay.dimensions]
@@ -1086,7 +1095,7 @@
 			"Max Group Size" = 2
 
 			[mobs.foxhound.spawn_config.biomes]
-				"Biome Types" = ["NETHER"]
+				Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas"]
 				"Is Blacklist" = false
 
 	[mobs.frogs]
