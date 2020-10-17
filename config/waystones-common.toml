@@ -5,7 +5,7 @@
 		#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
 		#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
 		worldGenStyle = "BIOME"
-		#EXPERIMENTAL: Set to true if waystones should be added to the generation of villages. NOTE THAT THIS IS CURRENTLY NOT LIMITED TO ONLY ONE WAYSTONE, THEREFORE IT IS NOT RECOMMENDED RIGHT NOW.
+		#NOT YET IMPLEMENTED: Set to true if waystones should be added to the generation of villages. THIS OPTION DOES NOT WORK YET.
 		addVillageStructure = false
 		#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
 		#Range: > 0

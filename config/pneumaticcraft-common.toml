@@ -16,9 +16,9 @@
 	max_programming_area = 250000
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
-	#Oil worldgen blacklist: add dimension IDs to this list if you don't want oil worldgen to happen there.
+	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.
 	oil_world_gen_blacklist = ["minecraft:the_nether", "minecraft:the_end"]
-	#Chance per chunk in percentage to generate an Oil Lake. Set to 0 for no oil lakes.
+	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
@@ -278,4 +278,11 @@
 	#Max veinmining range (distance from mined block) for Vein Miner Plus mode
 	#Range: 1 ~ 32
 	max_vein_miner_range = 10
+
+[Villagers]
+	#Add a village house for the Pressure Mechanic? Note: setting this to false won't affect any already-generated houses, only disable new generation.
+	addMechanicHouse = true
+	#Which trades should the Pressure Mechanic offer? ALL will offer all trades. PCB_BLUEPRINT will offer *only* the PCB Blueprint, an item required for normal progression through the mod. NONE will offer nothing (but the PCB Blueprint is also available via Amadron by default). Note that changing this won't affect any already-spawned Pressure Mechanics.
+	#Allowed Values: NONE, PCB_BLUEPRINT, ALL
+	mechanicTrades = "ALL"
 

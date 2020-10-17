@@ -18,7 +18,15 @@ $CONFIGS_TO_REMOVE = @(
 	"betteradvancements-client.toml",
 	"craftingtweaks-client.toml",
 	"emojiful-client.toml",
-	"extremesoundmuffler-client.toml")
+	"extremesoundmuffler-client.toml", 
+	"jei-client.toml",
+	"refinedstorage-client.toml",
+	"rftoolsbuilder-client.toml",
+	"rftoolscontrol-client.toml",
+	"rftoolsstorage-client.toml",
+	"rftoolsutility-client.toml",
+	"xnet-client.toml"
+)
 	
 # =====================================================================//
 #  CURSEFORGE SETTINGS

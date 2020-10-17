@@ -1,0 +1,7 @@
+#The amount of time to wait before cycling the displayed tip. This is in miliseconds. 1000ms = 1s
+cycleTime = 5000
+#A list of tip IDs to remove from the list. Restart is required for changes to take effect.
+removedTips = []
+#A list of tip namespaces to remove from the list. Restart is requird for changes to take effect.
+removedNamespaces = []
+

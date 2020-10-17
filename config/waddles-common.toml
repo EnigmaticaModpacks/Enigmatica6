@@ -15,7 +15,6 @@
 	weight = 4
 
 ["spawnable biomes"]
-	#BiomeDictionary types to include & exclude.
-	include = ["SNOWY"]
-	exclude = ["FOREST", "MOUNTAIN", "NETHER"]
+	"biome categories" = ["icy"]
+	"additional biomes (Syntax: minecraft:plains)" = []
 

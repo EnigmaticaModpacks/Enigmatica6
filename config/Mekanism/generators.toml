@@ -36,7 +36,7 @@
 
 	#Heat Generator Settings
 	[generators.heat_generator]
-		#Add this amount of Joules to the energy produced by a heat generator if it is in the Nether.
+		#Add this amount of Joules to the energy produced by a heat generator if it is in an 'ultrawarm' dimension, in vanilla this is just the Nether.
 		heatGenerationNether = "100"
 		#Multiplier of effectiveness of Lava in the Heat Generator.
 		heatGenerationLava = "30"

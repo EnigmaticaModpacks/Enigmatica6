@@ -1,8 +1,12 @@
 
 #Glazing Tool settings
 [glazing_tool]
-	#Enable alternate green dye
+	# Let the glazing tool drop panes (like silk touch) by sneaking while in BREAK mode
+	glazing_tool_break_pane = false
+	# Enable alternate green dye
 	green_dye_enabled = true
-	#Enable the glazing tool
+	# Allow glazing tool to mark glass panes as unbreakable while in UNBREAKING mode
+	unbreakable_pane = false
+	# Enable the glazing tool
 	glazing_tool_enabled = true
 

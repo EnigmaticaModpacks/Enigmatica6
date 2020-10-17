@@ -1,9 +1,19 @@
 
 ["Miscellaneous Features"]
-	#Indicates whether right-click harvesting crops should be enabled. Respective parts of the right-clicking function can be enabled/disabled below.
-	"Enable right-click harvesting for crops" = true
-	#Smart harvesting allows right-click harvested items to be placed directly in the player's inventory. Enabling this option will automatically disable normal right-click harvesting. Indicates whether smart-harvesting on crops should be enabled
-	"Enable smart harvest for crops" = false
+	#Configures if right-click harvesting of crops should be enabled. Which crops are affected by right-clicking can be configured in the "Right-click Harvesting Settings" section.
+	#DISABLED -> disables right-click harvesting feature for all crops completely
+	#ENABLED_DROP -> loot is dropped on the ground
+	#ENABLED_SMART -> loot is placed in the player's inventory
+	#Allowed Values: DISABLED, ENABLED_DROP, ENABLED_SMART
+	"Right-Click Harvest" = "ENABLED_DROP"
+	#Configures if Double Crops (i.e. Corn, Sorghum, Kenaf) slow down living entities
+	"Double Crops Slow Down Motion" = true
+
+["Dimensions Settings"]
+	#Enter a dimension id to whitelist feature generation
+	white_dim = [0]
+	#Enter a dimension id to blacklist feature generation
+	black_dim = [-1, 1]
 
 ["Tweak World Generation Rates"]
 	#Chance of fruit trees generating in the overworld. Higher numbers indicate a lower probability (Default: 1500)

@@ -12,9 +12,6 @@
     "biomesoplenty:boreal_forest": {
       "weight": 7
     },
-    "biomesoplenty:brushland": {
-      "weight": 5
-    },
     "biomesoplenty:chaparral": {
       "weight": 5
     },
@@ -33,6 +30,9 @@
     "biomesoplenty:dead_forest": {
       "weight": 2
     },
+    "biomesoplenty:dryland": {
+      "weight": 1
+    },
     "biomesoplenty:floodplain": {
       "weight": 5
     },
@@ -48,8 +48,14 @@
     "biomesoplenty:highland": {
       "weight": 3
     },
+    "biomesoplenty:jade_cliffs": {
+      "weight": 1
+    },
     "biomesoplenty:lavender_field": {
       "weight": 5
+    },
+    "biomesoplenty:lush_desert": {
+      "weight": 1
     },
     "biomesoplenty:lush_grassland": {
       "weight": 7
@@ -172,117 +178,19 @@
     }
   },
   "sub_biome_weights": {
-    "biomesoplenty:fir_clearing": {
-      "weight": 100,
-      "rarity": 0.38
-    },
-    "biomesoplenty:flower_meadow": {
-      "weight": 100,
-      "rarity": 0.5
-    },
-    "biomesoplenty:highland_moor": {
-      "weight": 100,
-      "rarity": 0.75
-    },
-    "biomesoplenty:oasis": {
-      "weight": 100,
-      "rarity": 0.1
-    },
-    "biomesoplenty:pasture": {
-      "weight": 100,
-      "rarity": 1.0
-    },
-    "biomesoplenty:pumpkin_patch": {
-      "weight": 100,
-      "rarity": 0.45
-    },
-    "biomesoplenty:snowy_fir_clearing": {
-      "weight": 100,
-      "rarity": 0.5
-    },
-    "biomesoplenty:temperate_rainforest_hills": {
+    "minecraft:worldgen/biome": {
       "weight": 100,
       "rarity": 0.8
-    },
-    "biomesoplenty:xeric_shrubland": {
-      "weight": 100,
-      "rarity": 1.0
     }
   },
   "island_biome_toggles": {
-    "biomesoplenty:origin_hills": {
-      "enabled": true
-    },
-    "biomesoplenty:rainbow_valley": {
-      "enabled": true
-    },
-    "biomesoplenty:tropics": {
-      "enabled": true
-    },
-    "biomesoplenty:volcano": {
+    "minecraft:worldgen/biome": {
       "enabled": true
     }
   },
   "vanilla_biome_weights": {
-    "minecraft:badlands_plateau": {
+    "minecraft:worldgen/biome": {
       "weight": 10
-    },
-    "minecraft:basalt_deltas": {
-      "weight": 10
-    },
-    "minecraft:birch_forest": {
-      "weight": 7
-    },
-    "minecraft:crimson_forest": {
-      "weight": 10
-    },
-    "minecraft:dark_forest": {
-      "weight": 5
-    },
-    "minecraft:desert": {
-      "weight": 15
-    },
-    "minecraft:forest": {
-      "weight": 10
-    },
-    "minecraft:giant_tree_taiga": {
-      "weight": 5
-    },
-    "minecraft:jungle": {
-      "weight": 15
-    },
-    "minecraft:mountains": {
-      "weight": 7
-    },
-    "minecraft:nether_wastes": {
-      "weight": 10
-    },
-    "minecraft:plains": {
-      "weight": 10
-    },
-    "minecraft:savanna": {
-      "weight": 10
-    },
-    "minecraft:snowy_taiga": {
-      "weight": 10
-    },
-    "minecraft:snowy_tundra": {
-      "weight": 10
-    },
-    "minecraft:soul_sand_valley": {
-      "weight": 10
-    },
-    "minecraft:swamp": {
-      "weight": 7
-    },
-    "minecraft:taiga": {
-      "weight": 10
-    },
-    "minecraft:warped_forest": {
-      "weight": 10
-    },
-    "minecraft:wooded_badlands_plateau": {
-      "weight": 3
     }
   }
 }
