@@ -10,13 +10,13 @@ function Clear-SleepHost {
 if (-not (test-path "$env:ProgramFiles\7-Zip\7z.exe")) { throw "$env:ProgramFiles\7-Zip\7z.exe needed to use the ModpackUploader." } 
 Set-Alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 
-    $TwitchExportBuilder = "TwitchExportBuilder.exe"
-    if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
-        Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
-        Download-GithubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
-        Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
-    }
-    .\TwitchExportBuilder.exe -n "$CLIENT_FILENAME" -p "$MODPACK_VERSION"
+    # $TwitchExportBuilder = "TwitchExportBuilder.exe"
+    # if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
+        # Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
+        # Download-GithubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
+        # Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
+    # }
+    # .\TwitchExportBuilder.exe -n "$CLIENT_FILENAME" -p "$MODPACK_VERSION"
 
     Write-Host ""
     Write-Host "######################################" -ForegroundColor Cyan
