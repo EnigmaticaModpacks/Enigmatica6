@@ -20,6 +20,7 @@ $CONFIGS_TO_REMOVE = @(
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"jei-client.toml",
+	"mcjtylib-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
 	"rftoolscontrol-client.toml",
