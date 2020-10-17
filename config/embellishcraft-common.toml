@@ -1,0 +1,135 @@
+
+#Global Worldgen Settings
+[worldgen]
+	#Set this to false to disable all worldgen [true / false, default: true]
+	enableWorldgen = true
+
+#Basalt Generation
+[basalt]
+	#Generate basalt in the world [true / false]
+	basaltGeneration = true
+	#Size of basalt pockets [0-100, default: 33]
+	#Range: 0 ~ 100
+	basaltSize = 33
+	#Amount of of basalt pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	basaltChance = 10
+	#Minimal height for basalt pocket generation [1-254, default: 1]
+	#Range: 1 ~ 254
+	basaltMinHeight = 1
+	#Maximal height for basalt pocket generation, must be higher than minimal height [1-255, default: 40]
+	#Range: 1 ~ 255
+	basaltMaxHeight = 30
+
+#Slate Generation
+[slate]
+	#Generate slate in the world [true / false]
+	slateGeneration = true
+	#Size of slate pockets [0-100, default: 33]
+	#Range: 0 ~ 100
+	slateSize = 33
+	#Amount of of slate pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	slateChance = 10
+	#Minimal height for slate pocket generation [1-254, default: 40]
+	#Range: 1 ~ 254
+	slateMinHeight = 45
+	#Maximal height for slate pocket generation, must be higher than minimal height [1-255, default: 70]
+	#Range: 1 ~ 255
+	slateMaxHeight = 75
+
+#Marble Generation
+[marble]
+	#Generate marble in the world [true / false]
+	marbleGeneration = true
+	#Size of marble pockets [0-100, default: 20]
+	#Range: 0 ~ 100
+	marbleSize = 20
+	#Amount of of marble pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	marbleChance = 10
+	#Minimal height for marble pocket generation [1-254, default: 50]
+	#Range: 1 ~ 254
+	marbleMinHeight = 60
+	#Maximal height for marble pocket generation, must be higher than minimal height [1-255, default: 100]
+	#Range: 1 ~ 255
+	marbleMaxHeight = 120
+
+#Gneiss Generation
+[gneiss]
+	#Generate gneiss in the world [true / false]
+	gneissGeneration = true
+	#Size of gneiss pockets [0-100, default: 33]
+	#Range: 0 ~ 100
+	gneissSize = 33
+	#Amount of of gneiss pocket being generated [0-100, default: 10]
+	#Range: 0 ~ 100
+	gneissChance = 10
+	#Minimal height for gneiss pocket generation [1-254, default: 50]
+	#Range: 1 ~ 254
+	gneissMinHeight = 35
+	#Maximal height for gneiss pocket generation, must be higher than minimal height [1-255, default: 100]
+	#Range: 1 ~ 255
+	gneissMaxHeight = 65
+
+#Jade Generation
+[jade]
+	#Generate jade in the world [true / false]
+	jadeGeneration = true
+	#Size of jade pockets [0-100, default: 15]
+	#Range: 0 ~ 100
+	jadeSize = 15
+	#Amount of of jade pocket being generated [0-100, default: 5]
+	#Range: 0 ~ 100
+	jadeChance = 5
+	#Minimal height for jade pocket generation, [1-254, default: 50]
+	#Range: 1 ~ 254
+	jadeMinHeight = 50
+	#Maximal height for jade pocket generation, must be higher than minimal height [1-255, default: 100]
+	#Range: 1 ~ 255
+	jadeMaxHeight = 120
+
+#Larvikite Generation
+[larvikite]
+	#Generate larvikite in the world [true / false]
+	larvikiteGeneration = true
+	#Size of larvikite pockets [0-100, default: 15]
+	#Range: 0 ~ 100
+	larvikiteSize = 20
+	#Amount of of larvikite pocket being generated [0-100, default: 5]
+	#Range: 0 ~ 100
+	larvikiteChance = 10
+	#Minimal height for larvikite pocket generation, [1-254, default: 50]
+	#Range: 1 ~ 254
+	larvikiteMinHeight = 32
+	#Maximal height for larvikite pocket generation, must be higher than minimal height [1-255, default: 100]
+	#Range: 1 ~ 255
+	larvikiteMaxHeight = 72
+
+#Biome Blacklist: list here the biomes you do not want a rock to be generated in (syntax: "modid:biome". Examples: "minecraft:plains", "biomesoplenty:meadow"...). Note: you can replace the default values, rocks only generate where stone is. They never generate in the Nether or the End.
+[blacklist]
+	#Set to true to switch basalt blacklist to whitelist mode [true / false]
+	basaltWhitelist = false
+	#List of blacklisted biomes for basalt generation
+	basaltBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+	#Set to true to switch slate blacklist to whitelist mode [true / false]
+	slateWhitelist = false
+	#List of blacklisted biomes for slate generation
+	slateBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+	#Set to true to switch marble blacklist to whitelist mode [true / false]
+	marbleWhitelist = false
+	#List of blacklisted biomes for marble generation
+	marbleBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+	#Set to true to switch gneiss blacklist to whitelist mode [true / false]
+	gneissWhitelist = false
+	#List of blacklisted biomes for gneiss generation
+	gneissBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+	#Set to true to switch jade blacklist to whitelist mode [true / false]
+	jadeWhitelist = false
+	#List of blacklisted biomes for jade generation
+	jadeBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+	#Set to true to switch larvikite blacklist to whitelist mode [true / false]
+	larvikiteWhitelist = false
+	#List of blacklisted biomes for larvikite generation
+	larvikiteBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+
