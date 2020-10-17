@@ -1,0 +1,13 @@
+
+#Settings for the spawner system
+[mobdata]
+
+	[mobdata.minecraft]
+
+		[mobdata.minecraft.entity_type]
+			item2 = "1.0:{'item':'minecraft:bedrock'}"
+			item1 = "1.0:{'item':'minecraft:bedrock'}"
+			#Range: > 0
+			spawnRf = 50000
+			item3 = "1.0:{'item':'minecraft:bedrock'}"
+
