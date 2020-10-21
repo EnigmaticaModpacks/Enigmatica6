@@ -17,7 +17,7 @@ events.listen('recipes', function (event) {
 });
 
 function entryIsBlacklisted(material, type) {
-    for (let i = 0; i < unificationBlacklist.length; i++) {
+    for (var i = 0; i < unificationBlacklist.length; i++) {
         if (unificationBlacklist[i].material === material && unificationBlacklist[i].type === type) {
             return true;
         }
