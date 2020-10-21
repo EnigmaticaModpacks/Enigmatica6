@@ -1,15 +1,15 @@
 events.listen('recipes', function (event) {
     var recipes = [
-        // shapedRecipe('tetra:hammer_base', ['LXL', 'LCL', 'LXL'], {
-        //     L: '#forge:ingots/steel',
-        //     X: '#forge:circuits/basic',
-        //     C: '#morevanillalib:tools'
-        // }),
-        // shapedRecipe('tetra:core_extractor', ['LXL', 'LCL', 'LXL'], {
-        //     L: '#forge:ingots/steel',
-        //     X: '#forge:circuits/basic',
-        //     C: 'industrialforegoing:fluid_extractor'
-        // }),
+        shapedRecipe('tetra:hammer_base', ['LXL', 'LCL', 'LXL'], {
+            L: '#forge:ingots/steel',
+            X: '#forge:circuits/basic',
+            C: '#morevanillalib:tools'
+        }),
+        shapedRecipe('tetra:core_extractor', ['LXL', 'LCL', 'LXL'], {
+            L: '#forge:ingots/steel',
+            X: '#forge:circuits/basic',
+            C: 'industrialforegoing:fluid_extractor'
+        }),
         shapedRecipe(item.of('minecraft:stick', 16), ['A', 'A'], {
             A: '#minecraft:logs'
         }),
@@ -93,6 +93,9 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A A'], {
             A: '#forge:rods/wooden'
+        }),
+        shapedRecipe(item.of('immersiveengineering:stick_steel', 2), ['A', 'A'], {
+            A: '#forge:ingots/steel'
         })
     ];
 
