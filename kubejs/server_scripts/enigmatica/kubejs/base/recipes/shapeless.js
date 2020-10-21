@@ -50,21 +50,7 @@ events.listen('recipes', function (event) {
             'minecraft:book',
             '#forge:dyes/yellow'
         ]),
-        shapelessRecipe('appliedenergistics2:quartz_fixture', [
-            '#forge:gems/charged_certus_quartz',
-            '#forge:ingots/iron'
-        ]),
-        shapelessRecipe('appliedenergistics2:ender_dust', ['emendatusenigmatica:dust_ender']),
-        shapelessRecipe('emendatusenigmatica:dust_ender', ['appliedenergistics2:ender_dust']),
-        shapelessRecipe('appliedenergistics2:charged_certus_quartz_crystal', [
-            'emendatusenigmatica:gem_charged_certus_quartz'
-        ]),
-        shapelessRecipe('emendatusenigmatica:gem_charged_certus_quartz', [
-            'appliedenergistics2:charged_certus_quartz_crystal'
-        ]),
-        shapelessRecipe('appliedenergistics2:certus_quartz_crystal', ['emendatusenigmatica:gem_certus_quartz']),
-        shapelessRecipe('emendatusenigmatica:gem_certus_quartz', ['appliedenergistics2:certus_quartz_crystal']),
-        shapelessRecipe(item.of('emendatusenigmatica:ingot_steel', 2), [
+        shapelessRecipe(item.of('emendatusenigmatica:steel_ingot', 2), [
             'immersiveengineering:ingot_steel',
             'immersiveengineering:ingot_steel'
         ]),
@@ -73,8 +59,8 @@ events.listen('recipes', function (event) {
             'mekanism:ingot_steel'
         ]),
         shapelessRecipe(item.of('mekanism:ingot_steel', 2), [
-            'emendatusenigmatica:ingot_steel',
-            'emendatusenigmatica:ingot_steel'
+            'emendatusenigmatica:steel_ingot',
+            'emendatusenigmatica:steel_ingot'
         ])
     ];
 
