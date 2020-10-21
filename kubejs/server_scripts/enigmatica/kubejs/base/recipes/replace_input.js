@@ -61,14 +61,5 @@ events.listen('recipes', function (event) {
 
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
 
-    event.replaceInput({}, 'appliedenergistics2:ender_dust', '#forge:dusts/ender');
-    event.replaceInput({}, 'appliedenergistics2:fluix_dust', '#forge:dusts/fluix');
-    event.replaceInput({}, 'appliedenergistics2:fluix_crystal', '#forge:gems/fluix');
-
-    // Ordering is important here, do not move them around
-    event.replaceInput({}, 'appliedenergistics2:certus_quartz_crystal', '#forge:gems/certus');
-    event.replaceInput({}, '#appliedenergistics2:gems/certus', '#forge:gems/certus');
-
-    event.replaceInput({}, 'appliedenergistics2:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
 });

@@ -1,12 +1,10 @@
 //priority: 975
 events.listen('recipes', function (event) {
-    appliedenergistics2_gem_processing(event);
     pedestals_dust_smelting(event);
 
     materialsToUnify.forEach(function (material) {
         console.log('Unifying ' + material + '...');
         enigmatica_ore_deposit_processing(event, material);
-        appliedenergistics2_ore_ingot_gem_crushing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
         //occultism_ore_ingot_crushing(event, material);
     });
@@ -20,57 +18,6 @@ function pedestals_dust_smelting(event) {
 
         event.recipes.minecraft.smelting(ingotTag, pedestal_dusts).xp(0.1);
         event.recipes.minecraft.blasting(ingotTag, pedestal_dusts).xp(0.1);
-    });
-}
-
-function appliedenergistics2_gem_processing(event) {
-    var certus_quartz = 'certus_quartz';
-    var charged_certus_quartz = 'charged_certus_quartz';
-
-    event.recipes.immersiveengineering.crusher({
-        secondaries: [],
-        result: {
-            base_ingredient: {
-                tag: 'forge:gems/' + certus_quartz
-            },
-            count: 2
-        },
-        input: {
-            tag: 'forge:ores/' + certus_quartz
-        },
-        energy: 2000
-    });
-
-    event.recipes.immersiveengineering.crusher({
-        secondaries: [],
-        result: {
-            base_ingredient: {
-                tag: 'forge:gems/' + charged_certus_quartz
-            },
-            count: 2
-        },
-        input: {
-            tag: 'forge:ores/' + charged_certus_quartz
-        },
-        energy: 2000
-    });
-
-    event.recipes.immersiveengineering.crusher({
-        secondaries: [],
-        result: {
-            tag: 'forge:dusts/' + certus_quartz
-        },
-        input: {
-            tag: 'forge:gems/' + charged_certus_quartz
-        },
-        energy: 2000
-    });
-
-    event.recipes.mekanism.crushing({
-        input: {
-            ingredient: { tag: 'forge:gems/' + charged_certus_quartz }
-        },
-        output: { item: getPreferredItemInTag(ingredient.of('#forge:dusts/' + certus_quartz)).id, count: 1 }
     });
 }
 
@@ -181,74 +128,6 @@ function enigmatica_ore_deposit_processing(event, material) {
     //     },
     //     crushing_time: 200
     // });
-}
-
-function appliedenergistics2_ore_ingot_gem_crushing(event, material) {
-    var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
-    var oreDeposit = getPreferredItemInTag(oreDepositTag).id;
-
-    var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;
-
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
-    console.log('gem: ' + gem);
-
-    if (oreDeposit == air || dust == air) {
-        return;
-    }
-
-    event.recipes.appliedenergistics2.grinder({
-        input: {
-            tag: 'forge:ores/' + material
-        },
-        result: {
-            primary: {
-                item: dust
-            },
-            optional: [
-                {
-                    item: dust
-                }
-            ]
-        },
-        turns: 8
-    });
-
-    if (ingot == air) {
-        return;
-    }
-
-    event.recipes.appliedenergistics2.grinder({
-        input: {
-            tag: 'forge:ingots/' + material
-        },
-        result: {
-            primary: {
-                item: dust
-            }
-        },
-        turns: 4
-    });
-
-    if (gem == air) {
-        return;
-    }
-
-    event.recipes.appliedenergistics2.grinder({
-        input: {
-            tag: 'forge:gems/' + material
-        },
-        result: {
-            primary: {
-                item: dust
-            }
-        },
-        turns: 4
-    });
 }
 
 function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
