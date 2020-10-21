@@ -7,10 +7,12 @@ events.listen('item.tags', function (event) {
             'quark:basalt_pavement',
             'quark:basalt_pillar',
             'quark:polished_basalt',
-            'quark:basalt_bricks'
+            'quark:basalt_bricks',
+            'minecraft:basalt',
+            'embellishcraft:basalt'
         ]);
-    event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate']);
-    event.get('forge:stones/marble').add(['quark:marble', 'quark:polished_marble']);
+    event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate', 'embellishcraft:slate']);
+    event.get('forge:stones/marble').add(['quark:marble', 'quark:polished_marble', 'embellishcraft:marble']);
     event.get('forge:stones/limestone').add(['quark:limestone', 'quark:polished_limestone']);
     event.get('forge:stones/jasper').add(['quark:jasper', 'quark:polished_jasper']);
     event.get('forge:stones/granite').add(['minecraft:granite', 'minecraft:polished_granite']);
