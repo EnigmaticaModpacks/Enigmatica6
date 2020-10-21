@@ -2,12 +2,13 @@
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
 
 $CLIENT_MODS = @(
+	"AmbientSounds",
 	"ding", 
 	"reauth", 
+	"moreoverlays",
 	"neat", 
 	"toastcontrol", 
-	"packmenu",
-	"AmbientSounds"
+	"packmenu"
 )
 
 $CONFIGS_TO_REMOVE = @(
@@ -48,7 +49,7 @@ $MODPACK_VERSION = "0.3.0"
 # Only used by the Changelog Generator
 $LAST_MODPACK_VERSION = "0.2.17"
 
-$FORGE_VERSION = 34.1.23
+$FORGE_VERSION = 34.1.25
 
 $CLIENT_FILENAME = "Enigmatica6"
 
