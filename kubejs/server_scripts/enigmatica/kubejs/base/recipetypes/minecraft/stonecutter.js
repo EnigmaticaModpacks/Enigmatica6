@@ -1,27 +1,27 @@
 events.listen('recipes', function (event) {
-    vanillaWoodTypes.forEach(function (woodType) {
-        event.recipes.minecraft.stonecutting(
-            item.of('carpetstairsmod:' + woodType + '_wood_floor', 6),
-            'minecraft:' + woodType + '_planks'
-        );
-        event.recipes.minecraft.stonecutting(
-            item.of('carpetstairsmod:' + woodType + '_wood_floor', 24),
-            '#minecraft:' + woodType + '_logs'
-        );
-    });
+    // vanillaWoodTypes.forEach(function (woodType) {
+    //     event.recipes.minecraft.stonecutting(
+    //         item.of('carpetstairsmod:' + woodType + '_wood_floor', 6),
+    //         'minecraft:' + woodType + '_planks'
+    //     );
+    //     event.recipes.minecraft.stonecutting(
+    //         item.of('carpetstairsmod:' + woodType + '_wood_floor', 24),
+    //         '#minecraft:' + woodType + '_logs'
+    //     );
+    // });
 
-    var stoneCutterRemovals = [
-        'minecraft:iron_ingot',
-        'minecraft:string',
-        'minecraft:iron_nugget',
-        'minecraft:bone',
-        'minecraft:gold_ingot',
-        'minecraft:gold_nugget',
-        'minecraft:light_weighted_pressure_plate'
-    ];
-    stoneCutterRemovals.forEach(function (item) {
-        event.remove({ type: 'minecraft:stonecutting', output: item });
-    });
+    // var stoneCutterRemovals = [
+    //     'minecraft:iron_ingot',
+    //     'minecraft:string',
+    //     'minecraft:iron_nugget',
+    //     'minecraft:bone',
+    //     'minecraft:gold_ingot',
+    //     'minecraft:gold_nugget',
+    //     'minecraft:light_weighted_pressure_plate'
+    // ];
+    // stoneCutterRemovals.forEach(function (item) {
+    //     event.remove({ type: 'minecraft:stonecutting', output: item });
+    // });
 
     var conversionTypes = ['storage_blocks', 'ores'];
 
