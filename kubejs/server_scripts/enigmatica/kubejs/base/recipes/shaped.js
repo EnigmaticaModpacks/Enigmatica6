@@ -29,16 +29,16 @@ events.listen('recipes', function (event) {
             B: '#forge:grain',
             C: 'aquaculture:fish_fillet_cooked'
         }),
-        shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_fluid_tank',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass_panes'
-        }),
-        shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_bin',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass'
-        }),
+        // shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
+        //     L: 'mekanism:ultimate_fluid_tank',
+        //     C: '#forge:ingots/compressed_iron',
+        //     B: '#forge:glass_panes'
+        // }),
+        // shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
+        //     L: 'mekanism:ultimate_bin',
+        //     C: '#forge:ingots/compressed_iron',
+        //     B: '#forge:glass'
+        // }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         }),
@@ -71,25 +71,6 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe('minecraft:horn_coral_block', ['AA', 'AA'], {
             A: 'minecraft:horn_coral'
-        }),
-        shapedRecipe('laserrelays:color_filter', ['AAA'], {
-            A: '#forge:glass_panes/white'
-        }),
-        shapedRecipe('appliedenergistics2:sky_compass', [' A ', 'ABA', ' A '], {
-            A: '#forge:ingots/iron',
-            B: '#forge:gems/charged_certus_quartz'
-        }),
-        shapedRecipe('appliedenergistics2:charged_staff', ['B  ', ' A ', '  A'], {
-            A: '#forge:ingots/iron',
-            B: '#forge:gems/charged_certus_quartz'
-        }),
-        shapedRecipe('appliedenergistics2:charged_staff', ['B', ' A ', 'A  '], {
-            A: '#forge:ingots/iron',
-            B: '#forge:gems/charged_certus_quartz'
-        }),
-        shapedRecipe('extlights:light_beam_post', ['BBB', ' A ', 'BBB'], {
-            A: '#forge:ingots/iron',
-            B: '#forge:nuggets/iron'
         }),
         shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A A'], {
             A: '#forge:rods/wooden'
