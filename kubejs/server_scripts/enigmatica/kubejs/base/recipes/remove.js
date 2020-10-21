@@ -51,6 +51,12 @@ events.listen('recipes', function (event) {
         'decorative_blocks:dead_beam',
         'decorative_blocks:spruce_beam',
 
+        'immersiveengineering:crafting/stick_steel',
+
+        'mapperbase:steel_ingot_from_blasting',
+        'mapperbase:steel_rod_from_blasting',
+        'mapperbase:steel_rod',
+
         'morevanillalib:obsidian_shard'
     ];
 
