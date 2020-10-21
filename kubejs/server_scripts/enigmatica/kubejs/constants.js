@@ -6,11 +6,11 @@ function unificationBlacklistEntry(material, type) {
 
 var air = 'minecraft:air';
 
-// var oreDimensional = [
-//     'rftoolsbase:dimensionalshard_overworld',
-//     'rftoolsbase:dimensionalshard_nether',
-//     'rftoolsbase:dimensionalshard_end'
-// ];
+var oreDimensional = [
+    'rftoolsbase:dimensionalshard_overworld',
+    'rftoolsbase:dimensionalshard_nether',
+    'rftoolsbase:dimensionalshard_end'
+];
 
 var oreUraninite = ['powah:uraninite_ore_poor', 'powah:uraninite_ore', 'powah:uraninite_ore_dense'];
 
