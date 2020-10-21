@@ -10,7 +10,7 @@ events.listen('item.tags', function (event) {
         'botania:elementium_axe',
         'botania:terra_axe',
         'aquaculture:neptunium_axe',
-        'immersiveengineering:steel_axe',
+        'immersiveengineering:axe_steel',
         'mekanismtools:bronze_axe',
         'mekanismtools:lapis_lazuli_axe',
         'mekanismtools:osmium_axe',
