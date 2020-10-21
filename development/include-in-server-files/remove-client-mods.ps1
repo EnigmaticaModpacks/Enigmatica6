@@ -1,6 +1,11 @@
-param(
-	[PSObject]
-$CLIENT_MODS = @("ding", "reauth", "neat", "toastcontrol", "packmenu")
+$CLIENT_MODS = @(
+	"AmbientSounds",
+	"ding", 
+	"reauth", 
+	"moreoverlays",
+	"neat", 
+	"toastcontrol", 
+	"packmenu"
 )
 
 $ModFolder = "$PSScriptRoot/mods"
