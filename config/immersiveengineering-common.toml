@@ -1,14 +1,14 @@
 #A list of preferred Mod IDs that results of IE processes should stem from, aka which mod you want the copper to come from.
 #This affects the ores dug by the excavator, as well as those crushing recipes that don't have associated IE items. This list is in oreder of priority.
-preferredOres = ["emendatusenigmatica", "minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "appliedenergistics2", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
+preferredOres = ["emendatusenigmatica", "minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "refinedstorage", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
 
 [debug]
 	#A config setting to enable debug features. These features may vary between releases, may cause crashes, and are unsupported. Do not enable unless asked to by a developer of IE.
 	enableDebug = false
 
 	[debug.wires]
-		#Enable detailed logging for the wire network. This can be useful for developers to track down issues related to wires.
-		enableWireLogger = false
 		#Run sanity checks on the wire network after every interaction. This will cause a decent amount of lag and a lot of log spam if the wire network isn't fully intact. Only enable when asked to by an IE developer.
 		validateNets = false
+		#Enable detailed logging for the wire network. This can be useful for developers to track down issues related to wires.
+		enableWireLogger = false
 

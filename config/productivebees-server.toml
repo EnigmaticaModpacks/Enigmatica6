@@ -36,9 +36,9 @@
 	#Time bonus gained from time upgrade. 0.2 means 20% reduction of a bee's time inside the hive.
 	#Range: 0.0 ~ 1.0
 	timeBonus = 0.2
-	#Time penalty from installing the comb block upgrade. 1.4 means 140% increase of a bee's time inside the hive.
-	#Range: 1.0 ~ 2.147483647E9
-	combBlockTimeodifier = 1.4
+	#Time penalty from installing the comb block upgrade. .4 means 40% increase of a bee's time inside the hive.
+	#Range: 0.0 ~ 1.0
+	combBlockTimeModifier = 0.4
 
 ["Bee attributes"]
 	#Number of ticks between effects on nearby entities

@@ -111,9 +111,13 @@
 	#Range: 100 ~ 5000
 	smokerDurability = 1000
 	#
-	#Set this to false when you want to overwrite the default biome dictionary files. [true/false]
+	#Set this to false when you want to overwrite the default provided Biome Dictionary files. [true/false]
 	#This should be run at least once for initial generation.
 	generateBiomeDictionaries = true
+	#
+	#Set this to false when you want to use our custom Biome Dictionary system. [true/false]
+	#At a later time we will look into either combining with the Forge system or making the Forge system data pack capable.
+	useForgeBiomeDictionaries = true
 	#
 	#Set to true if you want easter egg bees to generate (WIP) [true/false]
 	enableEasterEggBees = true
@@ -121,6 +125,32 @@
 	#Set this to false when you want to overwrite the default bee files. [true/false]
 	#This should be run at least once for initial generation.
 	generateDefaults = true
+
+["Honey Generator Options"]
+	#
+	#Amount of honey consumed in mb/t.
+	#Range: 1 ~ 50
+	honeyDrainAmount = 5
+	#
+	#Amount of energy transferred out of the generator in rf/t.
+	#Range: 50 ~ 500
+	energyTransferAmount = 100
+	#
+	#Maximum internal honey capacity.
+	#Range: 1000 ~ 100000
+	maxTankCapacity = 10000
+	#
+	#Amount of rf/t generated.
+	#Range: 50 ~ 500
+	energyFillAmount = 125
+	#
+	#Amount of honey generated in mb/t. 1 bottle = 250mb honey
+	#Range: 1 ~ 50
+	honeyFillAmount = 10
+	#
+	#Maximum internal energy buffer.
+	#Range: 10000 ~ 1000000
+	maxEnergyCapacity = 100000
 
 ["Spawning Options"]
 	#

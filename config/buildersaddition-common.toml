@@ -1,0 +1,20 @@
+
+#General Settings
+[general]
+	#Whether Flint & Steel required to light a candle.
+	require_flint_and_steel = true
+	#Enable storage checking for blocked access.
+	inv_access_block_check = true
+
+#Midi Settings
+[midi]
+	#Max number of notes played per 20 ticks.
+	#Range: 0 ~ 200
+	midi_note_limit = 75
+	#Enable server MIDI.
+	midi_enable = true
+	#Enable MIDI client sound.
+	midi_sound_enable = true
+	#Enable MIDI input.
+	midi_input_enable = false
+
