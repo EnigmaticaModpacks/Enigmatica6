@@ -1,19 +1,34 @@
-### Enigmatica 6 v0.2.18
+### Enigmatica 6 v0.3.0
 
-_Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.2.18.txt)_
+_Using Forge-1.16.3-34.1.25_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_
 
-**Bug Fixes**
+Updated Minecraft version from 1.16.1 to 1.16.3.
+
+
+
+**We recommend that you start a new world**
+
+_It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely not be without issues, which is why we don't recommend it_
+
+
+
+**New Mods!**
 
 - 
 
 **Changes**
 
-- Ding: The "Ding" sound is now played when joining a server
-- Worldgen: Increased Emerald Ore spawn height 
+-   Ding: The "Ding" sound is now played when joining a server
+-   Quark: Disabled Vertical Slabs, since BlockCarpentry has those covered
+-   Worldgen: Increased Emerald Ore spawn height
 
-**Known Issues**
+**Bug Fixes**
 
-- Using `/reload` causes the game to freeze.
+- 
+
+**Removed Mods**
+
+-   All mods from Team Abnormals, the ones we previously had will be re-added when they update.
 
 ### Enigmatica 6 v0.2.17
 
@@ -21,27 +36,27 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Mod Additions**
 
-- BlockCarpentry
+-   BlockCarpentry
 
 **Bug Fixes**
 
-- Recipe conflict porkchop [\#285](https://github.com/NillerMedDild/Enigmatica6/issues/285)
-- Clocks acquired from fishing loot not recognized by JEI/autocrafting. [\#284](https://github.com/NillerMedDild/Enigmatica6/issues/284)
-- IE Engineer Villager accepts only IE Steel \(Steel conversion recipe added\) [\#280](https://github.com/NillerMedDild/Enigmatica6/issues/280)
-- Recipe conflict Lattice and Gears [\#279](https://github.com/NillerMedDild/Enigmatica6/issues/279)
-- Obsidian dust crafting through crafting table [\#274](https://github.com/NillerMedDild/Enigmatica6/issues/274)
-- Minor KubeJS recipe errors [\#267](https://github.com/NillerMedDild/Enigmatica6/issues/267)
-- Flowers have extreme offsets [\#264](https://github.com/NillerMedDild/Enigmatica6/issues/264)
-- Amadron Ordering Scam [\#263](https://github.com/NillerMedDild/Enigmatica6/issues/263)
-- BlockCarpentry blocks not rendering [\#253](https://github.com/NillerMedDild/Enigmatica6/issues/253)
-- Treated Wood is no longer obtainable by crafting [\#248](https://github.com/NillerMedDild/Enigmatica6/issues/248)
-- Issue with the new Memory Stick item [\#221](https://github.com/NillerMedDild/Enigmatica6/issues/221)
-- Vanilla Hammers destroy the digital miner [\#200](https://github.com/NillerMedDild/Enigmatica6/issues/200)
+-   Recipe conflict porkchop [\#285](https://github.com/NillerMedDild/Enigmatica6/issues/285)
+-   Clocks acquired from fishing loot not recognized by JEI/autocrafting. [\#284](https://github.com/NillerMedDild/Enigmatica6/issues/284)
+-   IE Engineer Villager accepts only IE Steel \(Steel conversion recipe added\) [\#280](https://github.com/NillerMedDild/Enigmatica6/issues/280)
+-   Recipe conflict Lattice and Gears [\#279](https://github.com/NillerMedDild/Enigmatica6/issues/279)
+-   Obsidian dust crafting through crafting table [\#274](https://github.com/NillerMedDild/Enigmatica6/issues/274)
+-   Minor KubeJS recipe errors [\#267](https://github.com/NillerMedDild/Enigmatica6/issues/267)
+-   Flowers have extreme offsets [\#264](https://github.com/NillerMedDild/Enigmatica6/issues/264)
+-   Amadron Ordering Scam [\#263](https://github.com/NillerMedDild/Enigmatica6/issues/263)
+-   BlockCarpentry blocks not rendering [\#253](https://github.com/NillerMedDild/Enigmatica6/issues/253)
+-   Treated Wood is no longer obtainable by crafting [\#248](https://github.com/NillerMedDild/Enigmatica6/issues/248)
+-   Issue with the new Memory Stick item [\#221](https://github.com/NillerMedDild/Enigmatica6/issues/221)
+-   Vanilla Hammers destroy the digital miner [\#200](https://github.com/NillerMedDild/Enigmatica6/issues/200)
 
 **Changes**
 
-- BotanyPots: Biomes O'Plenty White and Black Sand compat
-- Increased Uranium and Lead spawn chance [\#283](https://github.com/NillerMedDild/Enigmatica6/issues/283)
+-   BotanyPots: Biomes O'Plenty White and Black Sand compat
+-   Increased Uranium and Lead spawn chance [\#283](https://github.com/NillerMedDild/Enigmatica6/issues/283)
 
 ### Enigmatica 6 v0.2.16
 
@@ -49,17 +64,17 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Bug Fixes**
 
-- Servers failing to start
-- BlockCarpentry crashes
+-   Servers failing to start
+-   BlockCarpentry crashes
 
 **Changes**
 
-- Updated the Main Menu! (All credit goes to Rid!)
-- Quark: Disabled Compasses work everywhere to fix bug #284
+-   Updated the Main Menu! (All credit goes to Rid!)
+-   Quark: Disabled Compasses work everywhere to fix bug #284
 
 **Mod Removals**
 
-- BlockCarpentry (will be re-added when/if it becomes more stable)
+-   BlockCarpentry (will be re-added when/if it becomes more stable)
 
 ### Enigmatica 6 v0.2.15
 
@@ -77,13 +92,13 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Changes**
 
--   Botania: The Orechid now prioritizes ores the same way the rest of the pack does. 
+-   Botania: The Orechid now prioritizes ores the same way the rest of the pack does.
     -   **Change not included, had to remove it due to a bug**
 -   Forge: Enabled experimental lighting pipeline
 
 **Bug Fixes**
 
--   Abnormals Core: encountered an error during the common\_setup event phase: null [\#208](https://github.com/NillerMedDild/Enigmatica6/issues/208)
+-   Abnormals Core: encountered an error during the common_setup event phase: null [\#208](https://github.com/NillerMedDild/Enigmatica6/issues/208)
 -   Duplication Exploits [\#207](https://github.com/NillerMedDild/Enigmatica6/issues/207)
 -   EmendatusEnigmatica: Experience farm with ore chunks back to ores blocks [\#193](https://github.com/NillerMedDild/Enigmatica6/issues/193)
 -   Interactio: Lag that seems to be caused by Interactio [\#196](https://github.com/NillerMedDild/Enigmatica6/issues/196)
@@ -97,7 +112,7 @@ _Using Forge-1.16.1-32.0.108_ | _[Mod Updates](https://github.com/NillerMedDild/
 
 **Known Issues**
 
-- Fluid Crafting recipes don't work on initial world join, use `/reload` to fix them
+-   Fluid Crafting recipes don't work on initial world join, use `/reload` to fix them
 
 #### Enigmatica 6 v0.2.14
 
