@@ -62,4 +62,26 @@ events.listen('recipes', function (event) {
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
 
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
+
+    // event.replaceInput({}, 'astralsorcery:marble_raw', '#forge:stones/marble');
+
+    event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
+    event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
+    event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
+    event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
+
+    event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
+    // event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
+
+    event.replaceInput(
+        { type: 'minecraft:crafting_shaped', output: 'minecraft:piston' },
+        '#forge:cobblestone',
+        '#quark:stone_tool_materials'
+    );
+
+    // event.replaceInput(
+    //     { type: 'minecraft:crafting_shaped', output: 'create:redstone_link' },
+    //     'create:brass_sheet',
+    //     '#forge:plates/brass'
+    // );
 });

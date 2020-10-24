@@ -62,6 +62,12 @@ events.listen('recipes', function (event) {
             'emendatusenigmatica:steel_ingot',
             'emendatusenigmatica:steel_ingot'
         ])
+        //,
+        // shapelessRecipe(item.of('bambooeverything:bamboo_bundle', 2), ['thermal:bamboo_block', 'thermal:bamboo_block']),
+        // shapelessRecipe(item.of('thermal:bamboo_block', 2), [
+        //     'bambooeverything:bamboo_bundle',
+        //     'bambooeverything:bamboo_bundle'
+        // ])
     ];
 
     recipes.forEach(function (recipe) {

@@ -68,8 +68,6 @@ var materialsToUnify = [
     'constantan',
     'steel',
     'osmium',
-    'certus_quartz',
-    'charged_certus_quartz',
     'diamond',
     'lapis',
     'emerald',
@@ -79,9 +77,16 @@ var materialsToUnify = [
     'obsidian',
     'ender',
     'fluix',
-    'sulfur',
     'saltpeter',
     'fluorite',
+    'invar',
+    'signalum',
+    'lumium',
+    'enderium',
+    'sulfur',
+    'cinnabar',
+    'niter',
+    'apatite',
 
     'redstone',
     'glowstone'
@@ -107,7 +112,7 @@ var modPriorities = [
     'botania',
     'quark',
     'pedestals',
-    'appliedenergistics',
+    'refinedstorage',
     'productivebees'
 ];
 

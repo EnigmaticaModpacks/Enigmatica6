@@ -5,16 +5,10 @@ events.listen('recipes', function (event) {
 
     var outputRemovals = [
         'additionalbars:crossed_iron_bars',
-        'appliedenergistics2:sky_compass',
-        'appliedenergistics2:charged_staff',
-        'appliedenergistics2:quartz_fixture',
 
         'decorative_blocks:lattice',
 
-        'extlights:light_beam_post',
-
         //'akashictome:tome',
-        'laserrelays:color_filter',
 
         'mekanism:combiner',
         'mekanism:basic_combining_factory',
@@ -25,6 +19,8 @@ events.listen('recipes', function (event) {
         'minecraft:sticky_piston',
 
         'morevanillalib:obsidian_shard',
+
+        'thermal:bamboo_block',
 
         'simplefarming:raw_bacon',
 
