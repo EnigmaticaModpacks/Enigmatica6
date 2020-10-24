@@ -348,3 +348,67 @@
 ["Stratum Config: quark_slate"]
 	active = true
 
+["Ore Config: cinnabar"]
+	#Maximum Y-Level [Range: 0-256, Default: 16]
+	#Range: 0 ~ 256
+	max_y = 15
+	#Average ores per Chunk [Range: 0-64, Default: 4]
+	#Range: 0 ~ 64
+	count = 4
+	#Activate/Deactivate the World Gen [Default: true]
+	active = true
+	#Configure the ore Vein Size [Default: 5]
+	#Range: 0 ~ 64
+	vein_size = 5
+	#Minimum Y-Level [Range: 0-256, Default: 0]
+	#Range: 0 ~ 256
+	min_y = 5
+
+["Ore Config: apatite"]
+	#Maximum Y-Level [Range: 0-256, Default: 16]
+	#Range: 0 ~ 256
+	max_y = 128
+	#Average ores per Chunk [Range: 0-64, Default: 2]
+	#Range: 0 ~ 64
+	count = 2
+	#Activate/Deactivate the World Gen [Default: true]
+	active = true
+	#Configure the ore Vein Size [Default: 13]
+	#Range: 0 ~ 64
+	vein_size = 22
+	#Minimum Y-Level [Range: 0-256, Default: 0]
+	#Range: 0 ~ 256
+	min_y = 64
+
+["Ore Config: sulfur"]
+	#Maximum Y-Level [Range: 0-256, Default: 40]
+	#Range: 0 ~ 256
+	max_y = 15
+	#Average ores per Chunk [Range: 0-64, Default: 3]
+	#Range: 0 ~ 64
+	count = 3
+	#Activate/Deactivate the World Gen [Default: true]
+	active = true
+	#Configure the ore Vein Size [Default: 7]
+	#Range: 0 ~ 64
+	vein_size = 7
+	#Minimum Y-Level [Range: 0-256, Default: 0]
+	#Range: 0 ~ 256
+	min_y = 0
+
+["Ore Config: potassium_nitrate"]
+	#Maximum Y-Level [Range: 0-256, Default: 24]
+	#Range: 0 ~ 256
+	max_y = 32
+	#Average ores per Chunk [Range: 0-64, Default: 3]
+	#Range: 0 ~ 64
+	count = 3
+	#Activate/Deactivate the World Gen [Default: true]
+	active = true
+	#Configure the ore Vein Size [Default: 7]
+	#Range: 0 ~ 64
+	vein_size = 6
+	#Minimum Y-Level [Range: 0-256, Default: 0]
+	#Range: 0 ~ 256
+	min_y = 18
+
