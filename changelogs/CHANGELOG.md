@@ -6,7 +6,7 @@ Updated Minecraft version from 1.16.1 to 1.16.3.
 
 
 
-**We recommend that you start a new world**
+**We recommend that you start a new world when updating from 0.2.x to 0.3.x**
 
 _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely not be without issues, which is why we don't recommend it_
 
@@ -18,6 +18,8 @@ _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely 
 
 **Changes**
 
+-   Worldgen: Enabled the Biomes O' Plenty additions to the Nether
+-   Tetra: Added Tetra trades to the Armorer Villager
 -   Ding: The "Ding" sound is now played when joining a server
 -   Quark: Disabled Vertical Slabs, since BlockCarpentry has those covered
 -   Worldgen: Increased Emerald Ore spawn height
