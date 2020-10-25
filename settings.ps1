@@ -17,6 +17,7 @@ $CONFIGS_TO_REMOVE = @(
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
 	"betteradvancements-client.toml",
+	"chiselsandbits-client.toml",
 	"craftingtweaks-client.toml",
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 

@@ -1,0 +1,20 @@
+
+#chiselsandbits.config.help.comment
+[help]
+
+	[help.help]
+		#chiselsandbits.config.help.enabled.comment
+		enabled = true
+
+#chiselsandbits.config.performance.comment
+[performance]
+
+	[performance.performance]
+
+		[performance.performance.collisions]
+
+			[performance.performance.collisions.cache]
+				#chiselsandbits.config.performance.collisions.cache.size.comment
+				#Range: -9223372036854775808 ~ 9223372036854775807
+				size = 10000
+
