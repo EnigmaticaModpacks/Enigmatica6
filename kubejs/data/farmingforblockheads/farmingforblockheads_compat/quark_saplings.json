@@ -1,0 +1,38 @@
+{
+  "modId": "quark",
+  "group": {
+    "name": "Quark Saplings",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "quark:blue_blossom_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "quark:lavender_blossom_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "quark:orange_blossom_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "quark:pink_blossom_sapling"
+      }
+    },
+    {
+      "output": {
+        "item": "quark:yellow_blossom_sapling"
+      }
+    }
+  ]
+}
