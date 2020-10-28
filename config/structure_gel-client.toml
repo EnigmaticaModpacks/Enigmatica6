@@ -3,3 +3,7 @@
 	#Skips the screen that tells you that a world uses experimental settings.
 	skip_experimental_backup_screen = true
 
+[entity]
+	#Fixes spawners causing fps lag from a ClassCastException with some entities.
+	fix_spawners = true
+
