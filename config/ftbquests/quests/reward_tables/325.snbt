@@ -1,0 +1,34 @@
+{
+	id: 325,
+	title: "Common PNC:R Loot Box",
+	icon: "pneumaticcraft:reinforced_chest",
+	loot_size: 1,
+	hide_tooltip: 1b,
+	use_title: 1b,
+	rewards: [
+		{
+			item: "pneumaticcraft:pressure_tube",
+			count: 8
+		},
+		{
+			item: "pneumaticcraft:logistics_core",
+			count: 8
+		},
+		{
+			item: "pneumaticcraft:reinforced_brick_tile",
+			count: 16
+		},
+		{
+			item: "pneumaticcraft:cod_n_chips",
+			count: 16
+		},
+		{
+			item: "pneumaticcraft:sourdough_bread",
+			count: 16
+		},
+		{
+			item: "pneumaticcraft:bandage",
+			count: 2
+		}
+	]
+}

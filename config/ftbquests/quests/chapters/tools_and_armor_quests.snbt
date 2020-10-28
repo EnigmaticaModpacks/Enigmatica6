@@ -1,7 +1,7 @@
 {
-	id: 215,
+	id: 235,
 	filename: "tools_and_armor_quests",
-	order_index: 2,
+	order_index: 4,
 	title: "Tools and Armor Quests",
 	icon: {
 		id: "pneumaticcraft:pneumatic_chestplate",
@@ -21,14 +21,14 @@
 				"",
 				"Accepts Fortune or Silk Touch books."
 			],
-			id: 222,
+			id: 236,
 			tasks: [{
-				id: 223,
+				id: 237,
 				type: "item",
 				item: "pneumaticcraft:jackhammer"
 			}],
 			rewards: [{
-				id: 224,
+				id: 238,
 				type: "item",
 				item: "pneumaticcraft:drill_bit_compressed_iron"
 			}]
@@ -38,22 +38,22 @@
 			x: -4.0d,
 			y: -9.5d,
 			description: ["A bit faster than the Compressed Iron Bit and with basic vein mining functions."],
-			dependencies: [I;222],
-			id: 225,
+			dependencies: [I;236],
+			id: 239,
 			tasks: [{
-				id: 226,
+				id: 240,
 				type: "item",
 				item: "pneumaticcraft:drill_bit_diamond"
 			}],
 			rewards: [{
-				id: 229,
+				id: 241,
 				type: "item",
 				item: "pneumaticcraft:volume_upgrade",
 				count: 5
 			}]
 		},
 		{
-			title: "Was I A Good Bit?",
+			title: "Was I a Good Bit?",
 			x: -4.0d,
 			y: -8.0d,
 			subtitle: "I'm told you were the bestest.",
@@ -61,15 +61,15 @@
 				"",
 				"Faster still and with full vein mining capabilities."
 			],
-			dependencies: [I;225],
-			id: 227,
+			dependencies: [I;239],
+			id: 242,
 			tasks: [{
-				id: 228,
+				id: 243,
 				type: "item",
 				item: "pneumaticcraft:drill_bit_netherite"
 			}],
 			rewards: [{
-				id: 230,
+				id: 244,
 				type: "item",
 				item: "pneumaticcraft:speed_upgrade",
 				count: 2
@@ -88,9 +88,9 @@
 				"● Block Launcher",
 				"● Self Repairing"
 			],
-			id: 231,
+			id: 245,
 			tasks: [{
-				id: 232,
+				id: 246,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_chestplate",
@@ -116,9 +116,9 @@
 				"● Item Search",
 				"● Self Repairing"
 			],
-			id: 233,
+			id: 247,
 			tasks: [{
-				id: 234,
+				id: 248,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_helmet",
@@ -141,9 +141,9 @@
 				"● Jump Height",
 				"● Self Repairing"
 			],
-			id: 235,
+			id: 249,
 			tasks: [{
-				id: 236,
+				id: 250,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_leggings",
@@ -169,9 +169,9 @@
 				"● Creative Flight",
 				"● Self Repairing"
 			],
-			id: 237,
+			id: 251,
 			tasks: [{
-				id: 238,
+				id: 252,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_boots",
@@ -183,21 +183,21 @@
 			}]
 		},
 		{
-			title: "You Tried to be Tough",
+			title: "You Tried to Be Tough",
 			x: -10.0d,
 			y: -8.0d,
 			subtitle: "But your armor's just not hard enough",
 			description: ["Each armor piece accepts up to four of these for extreme protection."],
 			dependencies: [I;
-				237,
-				235,
-				231,
-				233
+				245,
+				247,
+				249,
+				251
 			],
 			dependency_requirement: "one_completed",
-			id: 239,
+			id: 253,
 			tasks: [{
-				id: 240,
+				id: 254,
 				type: "item",
 				item: "pneumaticcraft:armor_upgrade",
 				count: 4L
@@ -206,10 +206,10 @@
 		{
 			x: -8.5d,
 			y: -10.5d,
-			dependencies: [I;233],
-			id: 241,
+			dependencies: [I;247],
+			id: 255,
 			tasks: [{
-				id: 242,
+				id: 256,
 				type: "item",
 				item: "pneumaticcraft:night_vision_upgrade"
 			}]
@@ -217,10 +217,10 @@
 		{
 			x: -11.5d,
 			y: -10.5d,
-			dependencies: [I;233],
-			id: 243,
+			dependencies: [I;247],
+			id: 257,
 			tasks: [{
-				id: 244,
+				id: 258,
 				type: "item",
 				item: "pneumaticcraft:scuba_upgrade"
 			}]
@@ -228,10 +228,10 @@
 		{
 			x: -8.5d,
 			y: -9.0d,
-			dependencies: [I;231],
-			id: 245,
+			dependencies: [I;245],
+			id: 259,
 			tasks: [{
-				id: 246,
+				id: 260,
 				type: "item",
 				item: "pneumaticcraft:magnet_upgrade"
 			}]
@@ -239,10 +239,10 @@
 		{
 			x: -11.5d,
 			y: -9.0d,
-			dependencies: [I;231],
-			id: 247,
+			dependencies: [I;245],
+			id: 261,
 			tasks: [{
-				id: 248,
+				id: 262,
 				type: "item",
 				item: "pneumaticcraft:charging_upgrade"
 			}]
@@ -250,10 +250,10 @@
 		{
 			x: -11.5d,
 			y: -7.0d,
-			dependencies: [I;235],
-			id: 249,
+			dependencies: [I;249],
+			id: 263,
 			tasks: [{
-				id: 250,
+				id: 264,
 				type: "item",
 				item: "pneumaticcraft:jumping_upgrade_1"
 			}]
@@ -261,10 +261,10 @@
 		{
 			x: -13.0d,
 			y: -8.5d,
-			dependencies: [I;249],
-			id: 251,
+			dependencies: [I;263],
+			id: 265,
 			tasks: [{
-				id: 252,
+				id: 266,
 				type: "item",
 				item: "pneumaticcraft:jumping_upgrade_2"
 			}]
@@ -272,10 +272,10 @@
 		{
 			x: -13.0d,
 			y: -10.0d,
-			dependencies: [I;251],
-			id: 253,
+			dependencies: [I;265],
+			id: 267,
 			tasks: [{
-				id: 254,
+				id: 268,
 				type: "item",
 				item: "pneumaticcraft:jumping_upgrade_3"
 			}]
@@ -283,10 +283,10 @@
 		{
 			x: -13.0d,
 			y: -11.5d,
-			dependencies: [I;253],
-			id: 255,
+			dependencies: [I;267],
+			id: 269,
 			tasks: [{
-				id: 256,
+				id: 270,
 				type: "item",
 				item: "pneumaticcraft:jumping_upgrade_4"
 			}]
@@ -294,10 +294,10 @@
 		{
 			x: -11.5d,
 			y: -5.5d,
-			dependencies: [I;237],
-			id: 257,
+			dependencies: [I;251],
+			id: 271,
 			tasks: [{
-				id: 258,
+				id: 272,
 				type: "item",
 				item: "pneumaticcraft:flippers_upgrade"
 			}]
@@ -305,10 +305,10 @@
 		{
 			x: -8.5d,
 			y: -5.5d,
-			dependencies: [I;237],
-			id: 259,
+			dependencies: [I;251],
+			id: 273,
 			tasks: [{
-				id: 260,
+				id: 274,
 				type: "item",
 				item: "pneumaticcraft:jet_boots_upgrade_1"
 			}]
@@ -316,10 +316,10 @@
 		{
 			x: -7.0d,
 			y: -7.0d,
-			dependencies: [I;259],
-			id: 261,
+			dependencies: [I;273],
+			id: 275,
 			tasks: [{
-				id: 262,
+				id: 276,
 				type: "item",
 				item: "pneumaticcraft:jet_boots_upgrade_2"
 			}]
@@ -327,10 +327,10 @@
 		{
 			x: -7.0d,
 			y: -8.5d,
-			dependencies: [I;261],
-			id: 263,
+			dependencies: [I;275],
+			id: 277,
 			tasks: [{
-				id: 264,
+				id: 278,
 				type: "item",
 				item: "pneumaticcraft:jet_boots_upgrade_3"
 			}]
@@ -338,10 +338,10 @@
 		{
 			x: -7.0d,
 			y: -10.0d,
-			dependencies: [I;263],
-			id: 265,
+			dependencies: [I;277],
+			id: 279,
 			tasks: [{
-				id: 266,
+				id: 280,
 				type: "item",
 				item: "pneumaticcraft:jet_boots_upgrade_4"
 			}]
@@ -349,10 +349,10 @@
 		{
 			x: -7.0d,
 			y: -11.5d,
-			dependencies: [I;265],
-			id: 267,
+			dependencies: [I;279],
+			id: 281,
 			tasks: [{
-				id: 268,
+				id: 282,
 				type: "item",
 				item: "pneumaticcraft:jet_boots_upgrade_5"
 			}]
@@ -362,14 +362,14 @@
 			x: 0.5d,
 			y: -10.0d,
 			description: ["Munitions for every occasion."],
-			id: 269,
+			id: 283,
 			tasks: [{
-				id: 270,
+				id: 284,
 				type: "item",
 				item: "pneumaticcraft:minigun"
 			}],
 			rewards: [{
-				id: 273,
+				id: 285,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo",
@@ -384,15 +384,15 @@
 			title: "Stand and Deliver",
 			x: 0.5d,
 			y: -8.5d,
-			dependencies: [I;269],
-			id: 271,
+			dependencies: [I;283],
+			id: 286,
 			tasks: [{
-				id: 272,
+				id: 287,
 				type: "item",
 				item: "pneumaticcraft:sentry_turret"
 			}],
 			rewards: [{
-				id: 274,
+				id: 288,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo",
@@ -406,10 +406,10 @@
 		{
 			x: -0.5d,
 			y: -11.0d,
-			dependencies: [I;269],
-			id: 275,
+			dependencies: [I;283],
+			id: 289,
 			tasks: [{
-				id: 276,
+				id: 290,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo_incendiary",
@@ -423,10 +423,10 @@
 		{
 			x: 0.5d,
 			y: -11.5d,
-			dependencies: [I;269],
-			id: 277,
+			dependencies: [I;283],
+			id: 291,
 			tasks: [{
-				id: 278,
+				id: 292,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo_weighted",
@@ -440,10 +440,10 @@
 		{
 			x: 2.0d,
 			y: -10.0d,
-			dependencies: [I;269],
-			id: 279,
+			dependencies: [I;283],
+			id: 293,
 			tasks: [{
-				id: 280,
+				id: 294,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo_ap",
@@ -457,10 +457,10 @@
 		{
 			x: -1.0d,
 			y: -10.0d,
-			dependencies: [I;269],
-			id: 281,
+			dependencies: [I;283],
+			id: 295,
 			tasks: [{
-				id: 282,
+				id: 296,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo_explosive",
@@ -474,10 +474,10 @@
 		{
 			x: 1.5d,
 			y: -11.0d,
-			dependencies: [I;269],
-			id: 283,
+			dependencies: [I;283],
+			id: 297,
 			tasks: [{
-				id: 284,
+				id: 298,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo_freezing",
@@ -497,9 +497,9 @@
 				"",
 				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak right click to configure."
 			],
-			id: 285,
+			id: 299,
 			tasks: [{
-				id: 286,
+				id: 300,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:micromissiles",
@@ -518,9 +518,9 @@
 			x: -4.0d,
 			y: -6.5d,
 			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact. "],
-			id: 287,
+			id: 301,
 			tasks: [{
-				id: 288,
+				id: 302,
 				type: "item",
 				item: "pneumaticcraft:memory_stick"
 			}]
@@ -530,9 +530,9 @@
 			x: -4.0d,
 			y: -5.0d,
 			description: ["Providing automation access to the player's inventory, auto feeding, and auto charging, among other perks."],
-			id: 289,
+			id: 303,
 			tasks: [{
-				id: 290,
+				id: 304,
 				type: "item",
 				item: "pneumaticcraft:aerial_interface"
 			}]
@@ -541,10 +541,10 @@
 			title: "Inevitable Escalation",
 			x: 0.5d,
 			y: -7.0d,
-			dependencies: [I;271],
-			id: 291,
+			dependencies: [I;286],
+			id: 305,
 			tasks: [{
-				id: 292,
+				id: 306,
 				type: "item",
 				item: "pneumaticcraft:guard_drone"
 			}]
@@ -553,10 +553,10 @@
 			title: "This Is How You Get SkyNET",
 			x: 2.0d,
 			y: -7.0d,
-			dependencies: [I;291],
-			id: 293,
+			dependencies: [I;305],
+			id: 307,
 			tasks: [{
-				id: 294,
+				id: 308,
 				type: "item",
 				item: "pneumaticcraft:minigun_upgrade"
 			}]
