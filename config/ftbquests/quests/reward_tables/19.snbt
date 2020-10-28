@@ -1,0 +1,30 @@
+{
+	id: 19,
+	title: "Uncommon PNC:R Loot Box",
+	icon: "pneumaticcraft:reinforced_chest",
+	loot_size: 1,
+	hide_tooltip: 1b,
+	use_title: 1b,
+	rewards: [
+		{
+			item: "pneumaticcraft:transfer_gadget"
+		},
+		{
+			item: "pneumaticcraft:speed_upgrade",
+			count: 2
+		},
+		{
+			item: "pneumaticcraft:advanced_pcb"
+		},
+		{
+			item: "pneumaticcraft:volume_upgrade",
+			count: 2
+		},
+		{
+			item: "pneumaticcraft:item_life_upgrade"
+		},
+		{
+			item: "pneumaticcraft:kerosene_lamp"
+		}
+	]
+}
