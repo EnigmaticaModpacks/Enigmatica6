@@ -1,41 +1,10 @@
 {
 	id: 2,
 	filename: "immersive_engineering",
-	order_index: 0,
+	order_index: 1,
 	title: "Immersive Engineering",
 	icon: "immersiveengineering:heavy_engineering",
-	images: [
-		{
-			x: 0.0d,
-			y: 0.0d,
-			width: 0.0d,
-			height: 0.0d,
-			rotation: 0.0d,
-			image: "#FFFFFF",
-			hover: [],
-			click: ""
-		},
-		{
-			x: 0.0d,
-			y: 0.0d,
-			width: 0.0d,
-			height: 0.0d,
-			rotation: 0.0d,
-			image: "#FFFFFF",
-			hover: [],
-			click: ""
-		},
-		{
-			x: 0.0d,
-			y: 0.0d,
-			width: 0.0d,
-			height: 0.0d,
-			rotation: 0.0d,
-			image: "#FFFFFF",
-			hover: [],
-			click: ""
-		}
-	],
+	default_quest_shape: "",
 	quests: [
 		{
 			x: 0.0d,
@@ -65,7 +34,7 @@
 				type: "item",
 				item: {
 					id: "immersiveengineering:hammer",
-					Count: 1,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -85,13 +54,13 @@
 					id: 11,
 					type: "item",
 					item: "immersiveengineering:cokebrick",
-					count: 27
+					count: 27L
 				},
 				{
 					id: 12,
 					type: "item",
 					item: "immersiveengineering:coal_coke",
-					count: 8
+					count: 8L
 				}
 			]
 		},
@@ -147,12 +116,12 @@
 				id: 19,
 				type: "item",
 				item: "immersiveengineering:blastbrick",
-				count: 27
+				count: 27L
 			}]
 		},
 		{
 			title: "Insulated Wiring",
-			x: -3.0d,
+			x: -4.5d,
 			y: -3.0d,
 			description: ["Insulating wires with hemp cloth is an excellent way to not get electrocuted."],
 			dependencies: [I;15],
@@ -235,13 +204,13 @@
 					id: 33,
 					type: "item",
 					item: "immersiveengineering:light_engineering",
-					count: 10
+					count: 10L
 				},
 				{
 					id: 45,
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
-					count: 10
+					count: 10L
 				},
 				{
 					id: 46,
@@ -252,13 +221,13 @@
 					id: 47,
 					type: "item",
 					item: "immersiveengineering:steel_fence",
-					count: 8
+					count: 8L
 				},
 				{
 					id: 48,
 					type: "item",
 					item: "minecraft:hopper",
-					count: 9
+					count: 9L
 				}
 			]
 		},
@@ -280,7 +249,7 @@
 					id: 41,
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
-					count: 2
+					count: 2L
 				},
 				{
 					id: 42,
@@ -296,7 +265,7 @@
 					id: 44,
 					type: "item",
 					item: "immersiveengineering:conveyor_basic",
-					count: 2
+					count: 2L
 				}
 			]
 		},
@@ -313,7 +282,7 @@
 					id: 37,
 					type: "item",
 					item: "immersiveengineering:blastbrick_reinforced",
-					count: 27
+					count: 27L
 				},
 				{
 					id: 49,
@@ -333,8 +302,359 @@
 				id: 39,
 				type: "item",
 				item: "immersiveengineering:alloybrick",
-				count: 8
+				count: 8L
 			}]
+		},
+		{
+			title: "Arc Furnace",
+			x: 1.5d,
+			y: 1.5d,
+			description: ["The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys and recycle metal gear."],
+			dependencies: [I;
+				36,
+				32,
+				58
+			],
+			id: 50,
+			tasks: [
+				{
+					id: 51,
+					type: "item",
+					item: "immersiveengineering:graphite_electrode",
+					count: 3L
+				},
+				{
+					id: 109,
+					type: "item",
+					item: "immersiveengineering:sheetmetal_steel",
+					count: 8L
+				},
+				{
+					id: 110,
+					type: "item",
+					title: "Any forge:storage_blocks/steel",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					},
+					count: 6L
+				},
+				{
+					id: 111,
+					type: "item",
+					item: "immersiveengineering:slab_sheetmetal_steel",
+					count: 14L
+				},
+				{
+					id: 112,
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 5L
+				},
+				{
+					id: 113,
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 5L
+				},
+				{
+					id: 114,
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: 115,
+					type: "item",
+					item: "minecraft:cauldron"
+				},
+				{
+					id: 116,
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 10L
+				},
+				{
+					id: 117,
+					type: "item",
+					item: "immersiveengineering:blastbrick_reinforced",
+					count: 27L
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: -1.5d,
+			description: ["The External Heater is a simple machine that, when powered, will heat adjacent furnaces. This allows the furnaces to smelt more quickly, without using fuel."],
+			dependencies: [I;15],
+			id: 52,
+			tasks: [{
+				id: 53,
+				type: "item",
+				item: "immersiveengineering:furnace_heater"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -1.5d,
+			description: ["Thermoelectric Generators are another straightforward power option. When surrounded with hot and cold blocks, this block generates power based on the difference in temperature (see manual)."],
+			dependencies: [I;
+				18,
+				38
+			],
+			id: 54,
+			tasks: [{
+				id: 55,
+				type: "item",
+				item: "immersiveengineering:thermoelectric_generator"
+			}]
+		},
+		{
+			title: "Sawmill",
+			icon: {
+				id: "immersiveengineering:sawblade",
+				Count: 1b,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -3.0d,
+			y: 0.0d,
+			description: ["The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual."],
+			dependencies: [I;18],
+			id: 56,
+			tasks: [
+				{
+					id: 57,
+					type: "item",
+					item: {
+						id: "immersiveengineering:sawblade",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 91,
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_grate_top",
+					count: 8L
+				},
+				{
+					id: 92,
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 6L
+				},
+				{
+					id: 93,
+					type: "item",
+					item: "immersiveengineering:sheetmetal_iron",
+					count: 4L
+				},
+				{
+					id: 94,
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 2L
+				},
+				{
+					id: 95,
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: 96,
+					type: "item",
+					item: "immersiveengineering:conveyor_basic",
+					count: 4L
+				}
+			]
+		},
+		{
+			title: "Squeezer and Fermenter",
+			icon: "immersiveengineering:plantoil_bucket",
+			x: 3.0d,
+			y: 0.0d,
+			description: ["The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel."],
+			dependencies: [I;27],
+			id: 58,
+			tasks: [
+				{
+					id: 59,
+					type: "item",
+					item: "immersiveengineering:plantoil_bucket"
+				},
+				{
+					id: 108,
+					type: "item",
+					item: "immersiveengineering:ethanol_bucket"
+				}
+			]
+		},
+		{
+			title: "Biodiesel",
+			x: 3.0d,
+			y: 1.5d,
+			description: ["Biodiesel is made in the Refinery, and can be used as a fuel for the powerful (if noisy) Diesel Generator, producing 4096 RF/t."],
+			dependencies: [I;58],
+			id: 60,
+			tasks: [{
+				id: 61,
+				type: "item",
+				item: "immersiveengineering:biodiesel_bucket"
+			}]
+		},
+		{
+			title: "Excavator",
+			icon: "minecraft:gold_ore",
+			x: -4.5d,
+			y: 1.5d,
+			description: ["Once you've determined an appropriate spot to excavate, you can build this machine there. Note that the Excavator requires a rather hefty 4096 RF/t."],
+			dependencies: [I;97],
+			id: 64,
+			tasks: [
+				{
+					id: 101,
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_grate_top",
+					count: 6L
+				},
+				{
+					id: 102,
+					type: "item",
+					item: "immersiveengineering:sheetmetal_steel",
+					count: 16L
+				},
+				{
+					id: 103,
+					type: "item",
+					item: "immersiveengineering:radiator",
+					count: 3L
+				},
+				{
+					id: 104,
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 9L
+				},
+				{
+					id: 105,
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: 106,
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 4L
+				}
+			]
+		},
+		{
+			title: "Engineer's Tools and Weaponry",
+			icon: {
+				ForgeCaps: {
+					Parent: {
+						Size: 3,
+						Items: []
+					}
+				},
+				id: "immersiveengineering:railgun",
+				Count: 1b
+			},
+			x: -6.0d,
+			y: 0.0d,
+			description: ["IE has several unique tools and weapons that can be crafted. This quest shows just a few of the craftable tools/weapons available; most can be customized and upgraded in the Engineer's Workbench."],
+			dependencies: [I;18],
+			id: 66,
+			tasks: [
+				{
+					id: 67,
+					type: "item",
+					item: {
+						ForgeCaps: {
+							Parent: {
+								Size: 3,
+								Items: []
+							}
+						},
+						id: "immersiveengineering:railgun",
+						Count: 1b
+					}
+				},
+				{
+					id: 72,
+					type: "item",
+					item: {
+						ForgeCaps: {
+							Parent: {
+								Size: 2,
+								Items: []
+							}
+						},
+						id: "immersiveengineering:shield",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 73,
+					type: "item",
+					item: {
+						ForgeCaps: {
+							Parent: {
+								Size: 5,
+								Items: []
+							}
+						},
+						id: "immersiveengineering:drill",
+						Count: 1b,
+						tag: {}
+					}
+				}
+			]
+		},
+		{
+			title: "Mineral Veins",
+			icon: "immersiveengineering:sample_drill",
+			x: -4.5d,
+			y: 0.0d,
+			description: ['As described in the "Minerals" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk.'],
+			dependencies: [I;18],
+			id: 97,
+			tasks: [
+				{
+					id: 98,
+					type: "item",
+					item: "immersiveengineering:sample_drill"
+				},
+				{
+					id: 99,
+					type: "item",
+					item: {
+						id: "immersiveengineering:survey_tools",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 100,
+					type: "item",
+					item: {
+						id: "immersiveengineering:coresample",
+						Count: 1b,
+						tag: {}
+					}
+				}
+			]
 		}
 	]
 }

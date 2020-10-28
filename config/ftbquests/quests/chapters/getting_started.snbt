@@ -1,0 +1,49 @@
+{
+	id: 68,
+	filename: "getting_started",
+	order_index: 3,
+	title: "Getting Started",
+	icon: {
+		id: "minecraft:stone_pickaxe",
+		Count: 1b,
+		tag: {
+			Damage: 0
+		}
+	},
+	default_quest_shape: "",
+	quests: [{
+		x: 0.0d,
+		y: -6.0d,
+		subtitle: "A brief introduction to our quests",
+		description: [
+			"Quests are divided into 3 types:",
+			"",
+			"- Exploring Enigmatica",
+			"- Learning Mods",
+			"- Challenges",
+			"",
+			"The Exploration questline's purpose is to show what's available in the pack, without going into too many details about how to obtain it.",
+			"It contains the following chapters:",
+			"- Getting Started",
+			"- Tools",
+			"- Tech",
+			"- Food",
+			"- Magic",
+			"- Building",
+			"- Adventure"
+		],
+		size: 1.5d,
+		id: 69,
+		tasks: [{
+			id: 70,
+			type: "checkmark",
+			title: "Welcome to Enigmatica 6",
+			icon: "minecraft:oak_sapling"
+		}],
+		rewards: [{
+			id: 71,
+			type: "random",
+			table: 5
+		}]
+	}]
+}
