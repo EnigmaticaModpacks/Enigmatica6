@@ -54,12 +54,12 @@
 	max_y = 16
 	#Average ores per Chunk [Range: 0-64, Default: 1]
 	#Range: 0 ~ 64
-	count = 1
+	count = 3
 	#Activate/Deactivate the World Gen [Default: true]
 	active = true
 	#Configure the ore Vein Size [Default: 8]
 	#Range: 0 ~ 64
-	vein_size = 8
+	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
 	min_y = 0
@@ -264,7 +264,7 @@
 	#Range: 0 ~ 64
 	count = 16
 	#Activate/Deactivate the World Gen [Default: true]
-	active = true
+	active = false
 	#Configure the ore Vein Size [Default: 8]
 	#Range: 0 ~ 64
 	vein_size = 8
@@ -280,7 +280,7 @@
 	#Range: 0 ~ 64
 	count = 8
 	#Activate/Deactivate the World Gen [Default: true]
-	active = true
+	active = false
 	#Configure the ore Vein Size [Default: 4]
 	#Range: 0 ~ 64
 	vein_size = 4
@@ -310,7 +310,7 @@
 	max_y = 160
 	#Average ores per Chunk [Range: 0-64, Default: 25]
 	#Range: 0 ~ 64
-	count = 25
+	count = 2
 	#Activate/Deactivate the World Gen [Default: true]
 	active = true
 	#Configure the ore Vein Size [Default: 18]
