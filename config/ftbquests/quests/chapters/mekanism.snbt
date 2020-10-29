@@ -1,0 +1,20 @@
+{
+	id: 165,
+	filename: "mekanism",
+	order_index: 9,
+	title: "Mekanism",
+	icon: {
+		id: "mekanism:robit",
+		Count: 1b,
+		tag: {
+			mekData: {
+				EnergyContainers: [{
+					Container: 0b,
+					stored: "100000"
+				}]
+			}
+		}
+	},
+	default_quest_shape: "",
+	quests: []
+}
