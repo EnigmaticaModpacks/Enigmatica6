@@ -6,45 +6,53 @@
 
 #Vanilla item overrides
 [overrides]
+	#Should items inside the tag 'farmersdelight:comfort_foods' grant 5 minutes of Comfort when eaten? (defaults to vanilla SoupItems)
+	comfortFoodTagEffect = true
 	#Should Rabbit Stew grant users the jumping prowess of a rabbit when eaten?
 	rabbitStewJumpBoost = true
 	#Should most vanilla tools register a dispenser behavior when facing a Cutting Board?
 	dispenserUsesToolsOnCuttingBoard = true
-	#Should items inside the tag 'farmersdelight:comfort_foods' grant 5 minutes of Comfort when eaten? (defaults to vanilla SoupItems)
-	comfortFoodTagEffect = true
 
 #World generation
 [world]
-	#Generate crop items on Village houses (all biomes)
-	cropsOnVillageHouseLoot = true
 	#Generate crop items on a Shipwreck's supply chests
 	cropsOnShipwreckSupplyLoot = true
+	#Generate crop items on Village houses (all biomes)
+	cropsOnVillageHouseLoot = true
 	#Generate Compost Heaps across all village biomes
 	genVillageCompostHeaps = true
 
-	#Sea Beet generation
-	[world.wild_beetroots]
+	#Wild Cabbage generation
+	[world.wild_cabbages]
+		#Generate wild cabbages on beaches
+		genWildCabbages = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 10
+
+	#Sea Beet generation
+	[world.wild_beetroots]
 		#Generate sea beets on beaches
 		genWildBeetroots = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
 
-	#Tomato Vines generation
-	[world.wild_tomatoes]
+	#Wild Potato generation
+	[world.wild_potatoes]
+		#Generate wild potatoes on cold biomes (temperature between 0.0 and 0.3)
+		genWildPotatoes = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 8
-		#Generate tomato vines on arid biomes (temperature 1.0 or higher)
-		genWildTomatoes = true
 
-	#Wild Cabbage generation
-	[world.wild_cabbages]
+	#Wild Carrot generation
+	[world.wild_carrots]
+		#Generate wild carrots on temperate biomes (temperature between 0.4 and 0.9)
+		genWildCarrots = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
-		chance = 10
-		#Generate wild cabbages on beaches
-		genWildCabbages = true
+		chance = 8
 
 	#Wild Onion generation
 	[world.wild_onions]
@@ -54,19 +62,11 @@
 		#Range: > 0
 		chance = 8
 
-	#Wild Potato generation
-	[world.wild_potatoes]
+	#Tomato Vines generation
+	[world.wild_tomatoes]
+		#Generate tomato vines on arid biomes (temperature 1.0 or higher)
+		genWildTomatoes = true
 		#Chance of generating clusters. Smaller value = more frequent.
 		#Range: > 0
 		chance = 8
-		#Generate wild potatoes on cold biomes (temperature between 0.0 and 0.3)
-		genWildPotatoes = true
-
-	#Wild Carrot generation
-	[world.wild_carrots]
-		#Chance of generating clusters. Smaller value = more frequent.
-		#Range: > 0
-		chance = 8
-		#Generate wild carrots on temperate biomes (temperature between 0.4 and 0.9)
-		genWildCarrots = true
 

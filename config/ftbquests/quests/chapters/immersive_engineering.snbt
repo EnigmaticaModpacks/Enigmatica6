@@ -1,10 +1,9 @@
 {
 	id: 2,
 	filename: "immersive_engineering",
-	order_index: 1,
+	order_index: 0,
 	title: "Immersive Engineering",
 	icon: "immersiveengineering:heavy_engineering",
-	default_quest_shape: "",
 	images: [
 		{
 			x: 0.0d,
@@ -14,8 +13,7 @@
 			rotation: 0.0d,
 			image: "#FFFFFF",
 			hover: [],
-			click: "",
-			dev: 0b
+			click: ""
 		},
 		{
 			x: 0.0d,
@@ -25,8 +23,7 @@
 			rotation: 0.0d,
 			image: "#FFFFFF",
 			hover: [],
-			click: "",
-			dev: 0b
+			click: ""
 		},
 		{
 			x: 0.0d,
@@ -36,8 +33,7 @@
 			rotation: 0.0d,
 			image: "#FFFFFF",
 			hover: [],
-			click: "",
-			dev: 0b
+			click: ""
 		}
 	],
 	quests: [
@@ -69,7 +65,7 @@
 				type: "item",
 				item: {
 					id: "immersiveengineering:hammer",
-					Count: 1b,
+					Count: 1,
 					tag: {
 						Damage: 0
 					}
@@ -89,13 +85,13 @@
 					id: 11,
 					type: "item",
 					item: "immersiveengineering:cokebrick",
-					count: 27L
+					count: 27
 				},
 				{
 					id: 12,
 					type: "item",
 					item: "immersiveengineering:coal_coke",
-					count: 8L
+					count: 8
 				}
 			]
 		},
@@ -151,7 +147,7 @@
 				id: 19,
 				type: "item",
 				item: "immersiveengineering:blastbrick",
-				count: 27L
+				count: 27
 			}]
 		},
 		{
@@ -239,13 +235,13 @@
 					id: 33,
 					type: "item",
 					item: "immersiveengineering:light_engineering",
-					count: 10L
+					count: 10
 				},
 				{
 					id: 45,
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
-					count: 10L
+					count: 10
 				},
 				{
 					id: 46,
@@ -256,13 +252,13 @@
 					id: 47,
 					type: "item",
 					item: "immersiveengineering:steel_fence",
-					count: 8L
+					count: 8
 				},
 				{
 					id: 48,
 					type: "item",
 					item: "minecraft:hopper",
-					count: 9L
+					count: 9
 				}
 			]
 		},
@@ -284,7 +280,7 @@
 					id: 41,
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
-					count: 2L
+					count: 2
 				},
 				{
 					id: 42,
@@ -300,7 +296,7 @@
 					id: 44,
 					type: "item",
 					item: "immersiveengineering:conveyor_basic",
-					count: 2L
+					count: 2
 				}
 			]
 		},
@@ -317,7 +313,7 @@
 					id: 37,
 					type: "item",
 					item: "immersiveengineering:blastbrick_reinforced",
-					count: 27L
+					count: 27
 				},
 				{
 					id: 49,
@@ -337,7 +333,7 @@
 				id: 39,
 				type: "item",
 				item: "immersiveengineering:alloybrick",
-				count: 8L
+				count: 8
 			}]
 		}
 	]

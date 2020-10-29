@@ -14,7 +14,6 @@ showMobs:true
 showItems:true
 showOther:true
 showOtherTeam:true
-showTamed:true
 showWaypoints:true
 showIngameWaypoints:true
 displayRedstone:true
@@ -24,7 +23,7 @@ distance:1
 showCoords:true
 lockNorth:true
 zoom:1
-mapSize:1
+mapSize:-1
 entityAmount:1
 chunkGrid:-1
 slimeChunks:false
@@ -34,7 +33,6 @@ hostileColor:4
 itemsColor:14
 otherColor:5
 otherTeamColor:9
-tamedMobsColor:-1
 mapSafeMode:false
 minimapOpacity:100.0
 waypointsScale:1.0
@@ -57,7 +55,8 @@ playerHeads:false
 heightLimit:20
 worldMap:true
 terrainDepth:true
-terrainSlopes:2
+terrainSlopes:true
+terrainSlopesExperiment:false
 mainEntityAs:0
 blockTransparency:true
 waypointOpacityIngame:80
@@ -65,23 +64,18 @@ waypointOpacityMap:90
 hideWorldNames:1
 openSlimeSettings:true
 alwaysShowDistance:false
-playerNames:1
-otherTeamsNames:3
-friendlyMobNames:0
-hostileMobNames:0
-itemNames:0
-otherNames:0
-tamedMobNames:3
-showLightLevel:0
+playerNames:true
+showLightLevel:false
 renderLayerIndex:1
 crossDimensionalTp:true
+mpCrossDimensionalTp:false
 showTime:0
 biomeColorsVanillaMode:false
 lookingAtAngle:20
 lookingAtAngleVertical:180
 centeredEnlarged:false
 zoomedOutEnlarged:false
-alwaysEntityNametags:true
+entityNametags:true
 minimapTextAlign:0
 showAngles:false
 waypointsMutualEdit:true
@@ -90,16 +84,9 @@ caveMapsDepth:30
 hideWaypointCoordinates:false
 renderAllSets:false
 playerArrowOpacity:100
-ignoreHeightmaps:false
-waypointsBottom:false
-minimapShape:0
-lightOverlayType:0
-lightOverlayMaxLight:7
-lightOverlayMinLight:0
-lightOverlayColor:13
-interface:dummy:0:50:true:false:false:false
-interface:dummy:0:10000:true:false:false:false
 interface:dummy:0:0:false:false:true:false
-interface:dummy:0:36:true:false:false:false
+interface:dummy:0:135:false:false:false:false
+interface:dummy:120:0:true:false:false:false
+interface:dummy:0:50:true:false:false:false
 interface:gui.xaero_minimap:0:0:false:false:true:false
-#WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints
+#WAYPOINTS HAVE BEEN MOVED TO xaerowaypoints.txt!
