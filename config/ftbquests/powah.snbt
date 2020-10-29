@@ -1,0 +1,595 @@
+{
+	id: 2,
+	filename: "powah",
+	order_index: 0,
+	title: "Powah!",
+	icon: {
+		id: "powah:battery_nitro",
+		Count: 1b,
+		tag: {}
+	},
+	subtitle: ["Now you're playing with Powah!"],
+	default_quest_shape: "",
+	images: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			width: 0.0d,
+			height: 0.0d,
+			rotation: 0.0d,
+			image: "#FFFFFF",
+			hover: [],
+			click: "",
+			dev: 0b
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			width: 0.0d,
+			height: 0.0d,
+			rotation: 0.0d,
+			image: "#FFFFFF",
+			hover: [],
+			click: "",
+			dev: 0b
+		}
+	],
+	quests: [
+		{
+			x: 7.0d,
+			y: 2.5d,
+			shape: "rsquare",
+			description: [
+				"Welcome to Powah! In this chapter you will learn all about one of Minecraft’s newest power generation, storage and transportation mods.",
+				"We will cover most of what the mod has to offer: from the very basics of power generation to multiblock reactors and wireless power! ",
+				"",
+				"Besides this questline, your best friend when navigating the mod is the Powah Manual. Feel free to consult it every time you find yourself lost or are looking for more information on something.",
+				"Now then, let’s get started, shall we?"
+			],
+			id: 22,
+			tasks: [{
+				id: 23,
+				type: "checkmark",
+				title: "Welcome to Powah!",
+				icon: "powah:book"
+			}],
+			rewards: [{
+				id: 24,
+				type: "item",
+				item: "powah:book"
+			}]
+		},
+		{
+			title: "Basic Resources",
+			x: 9.5d,
+			y: 2.5d,
+			shape: "hexagon",
+			subtitle: "Dielectric all the things!",
+			description: [
+				"Before we get into the various cool blocks and items Powah offers, let’s familiarize with some of the basic resources the mod will ask you to craft. Dielectric Paste is needed for most basic crafting components, so get used to seeing a lot. ",
+				"Automating it or at least keeping a Lava tank somewhere could be very useful! ",
+				"",
+				"You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. ",
+				"This is what you will use to get started making most of the different machines we will see in the chapter, so let’s make a few!"
+			],
+			dependencies: [I;22],
+			id: 25,
+			tasks: [
+				{
+					id: 26,
+					type: "item",
+					item: "powah:dielectric_paste",
+					consume_items: 0b
+				},
+				{
+					id: 27,
+					type: "item",
+					item: "powah:dielectric_casing",
+					consume_items: 0b
+				}
+			],
+			rewards: [
+				{
+					id: 28,
+					type: "item",
+					item: {
+						id: "powah:wrench",
+						Count: 1b,
+						tag: {
+							PowahWrenchNBT: {}
+						}
+					}
+				},
+				{
+					id: 29,
+					type: "random",
+					table: 0
+				}
+			]
+		},
+		{
+			x: 7.0d,
+			y: 0.5d,
+			shape: "diamond",
+			description: [
+				"Everything in Powah is divided into different tiers, going from Starter to Basic, Hardened, Blazing, Niotic, Spirited and Nitro. Different tiers of the same machine have different stats, all indicated on the machine’s tooltip.",
+				"",
+				"For example a Starter tier Furnator will make 80 FE/t, taking 600 ticks (or 30 seconds) to burn through a piece of coal, where a Nitro tier Furnator will make 4800 FE/t, taking only half a second to produce the same amount of power.",
+				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
+			],
+			dependencies: [I;22],
+			id: 30,
+			tasks: [{
+				id: 31,
+				type: "checkmark",
+				title: "About Tiers",
+				icon: {
+					id: "powah:wrench",
+					Count: 1b,
+					tag: {
+						PowahWrenchNBT: {}
+					}
+				}
+			}]
+		},
+		{
+			title: "Furnator",
+			x: 9.5d,
+			y: 5.0d,
+			shape: "rsquare",
+			subtitle: "Making some Powah!",
+			description: [
+				"Let’s generate some power! You’ll notice Powah has various generators that can make FE for you, the most basic being a Furnator. ",
+				"The name should be pretty self explanatory, it’s the equivalent of a furnace, but it will burn fuel to generate some power! Make one and try it out, any tier will do. ",
+				"If you’re just starting out, you can try checking out the Starter or even the Basic tier."
+			],
+			dependencies: [I;25],
+			id: 32,
+			tasks: [{
+				id: 33,
+				type: "item",
+				title: "Furnator (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:furnator"
+					}
+				},
+				consume_items: 0b
+			}],
+			rewards: [
+				{
+					id: 34,
+					type: "item",
+					item: "minecraft:coal_block",
+					count: 2
+				},
+				{
+					id: 35,
+					type: "random",
+					table: 0
+				}
+			]
+		},
+		{
+			title: "Lava Generation",
+			x: 9.5d,
+			y: 7.5d,
+			subtitle: "Turning up the heat!",
+			description: [
+				"Another option you have to generate power is a Magmator, which also speaks for itself. Just give the bad boy some lava and watch it burn!",
+				"One bucket of lava will generate a bit less than two coal pieces would in a Furnator."
+			],
+			dependencies: [I;32],
+			id: 36,
+			tasks: [{
+				id: 37,
+				type: "item",
+				title: "Magmator (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:magmator"
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 40,
+					type: "item",
+					item: "minecraft:lava_bucket"
+				},
+				{
+					id: 41,
+					type: "random",
+					table: 0
+				}
+			]
+		},
+		{
+			title: "Thermo Generator",
+			x: 7.0d,
+			y: 7.5d,
+			subtitle: "Super. Hot.",
+			description: [
+				"Ever wondered if you could use lava as a renewable, self sufficient power source? Well the Thermo Generator is for you!",
+				"This handy device will generate a small amount of power as long as it’s placed over a heat source (lava, magma blocks, etc.) and has a liquid coolant (like water) in its internal tank. "
+			],
+			dependencies: [I;32],
+			id: 38,
+			tasks: [{
+				id: 39,
+				type: "item",
+				title: "Thermo Generator (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:thermo_generator"
+					}
+				},
+				consume_items: 0b
+			}]
+		},
+		{
+			title: "Solar Powered",
+			x: 12.0d,
+			y: 7.5d,
+			subtitle: "Going Green!",
+			description: [
+				"This one comes as no surprise, every respectable power generating mod needs to have solar panels!",
+				"They will passively generate FE as long as it’s daytime and they can see the sky. Very handy for passive power generation!"
+			],
+			dependencies: [I;32],
+			id: 42,
+			tasks: [{
+				id: 43,
+				type: "item",
+				title: "Solar Panel (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:solar_panel"
+					}
+				}
+			}],
+			rewards: [{
+				id: 46,
+				type: "random",
+				table: 0
+			}]
+		},
+		{
+			title: "Lens of Ender",
+			x: 12.0d,
+			y: 10.0d,
+			shape: "diamond",
+			subtitle: "X-Ray mode!",
+			description: ["The Lens of Ender is a nifty upgrade for any Powah Solar Panel. Just right click it on and it will be able to generate energy even without direct access to the sky!"],
+			dependencies: [I;42],
+			optional: 1b,
+			id: 47,
+			tasks: [{
+				id: 48,
+				type: "item",
+				item: "powah:lens_of_ender"
+			}],
+			rewards: [{
+				id: 49,
+				type: "loot",
+				table: 0
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 2.5d,
+			shape: "rsquare",
+			dependencies: [I;25],
+			id: 50,
+			tasks: [
+				{
+					id: 51,
+					type: "item",
+					title: "Energizing Rod (Any Tier)",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "powah:energizing_rod"
+						}
+					}
+				},
+				{
+					id: 90,
+					type: "item",
+					item: "powah:energizing_orb"
+				}
+			]
+		},
+		{
+			x: 12.0d,
+			y: 0.5d,
+			dependencies: [I;50],
+			id: 52,
+			tasks: [{
+				id: 53,
+				type: "item",
+				item: "powah:steel_energized"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -1.5d,
+			dependencies: [I;52],
+			id: 54,
+			tasks: [{
+				id: 55,
+				type: "item",
+				item: "powah:crystal_blazing"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -3.5d,
+			dependencies: [I;54],
+			id: 56,
+			tasks: [{
+				id: 57,
+				type: "item",
+				item: "powah:crystal_niotic"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -5.5d,
+			dependencies: [I;56],
+			id: 58,
+			tasks: [{
+				id: 59,
+				type: "item",
+				item: "powah:crystal_spirited"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: -7.5d,
+			shape: "hexagon",
+			dependencies: [I;58],
+			id: 60,
+			tasks: [{
+				id: 61,
+				type: "item",
+				item: "powah:crystal_nitro"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 0.5d,
+			shape: "diamond",
+			dependencies: [I;52],
+			optional: 1b,
+			id: 62,
+			tasks: [{
+				id: 63,
+				type: "item",
+				item: "powah:capacitor_hardened"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: -1.5d,
+			shape: "diamond",
+			dependencies: [I;54],
+			optional: 1b,
+			id: 64,
+			tasks: [{
+				id: 65,
+				type: "item",
+				item: "powah:capacitor_blazing"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: -3.5d,
+			shape: "diamond",
+			dependencies: [I;56],
+			optional: 1b,
+			id: 66,
+			tasks: [{
+				id: 67,
+				type: "item",
+				item: "powah:capacitor_niotic"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: -5.5d,
+			shape: "diamond",
+			dependencies: [I;58],
+			optional: 1b,
+			id: 68,
+			tasks: [{
+				id: 69,
+				type: "item",
+				item: "powah:capacitor_spirited"
+			}]
+		},
+		{
+			x: 14.0d,
+			y: -7.5d,
+			shape: "diamond",
+			dependencies: [I;60],
+			optional: 1b,
+			id: 70,
+			tasks: [{
+				id: 71,
+				type: "item",
+				item: "powah:capacitor_nitro"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 5.0d,
+			dependencies: [I;25],
+			id: 72,
+			tasks: [{
+				id: 73,
+				type: "item",
+				title: "Energy Cell (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:energy_cell"
+					}
+				}
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 5.0d,
+			dependencies: [I;
+				72,
+				50
+			],
+			optional: 1b,
+			id: 74,
+			tasks: [{
+				id: 75,
+				type: "item",
+				title: "Ender Cell (Any Tier)",
+				item: "powah:ender_cell_starter"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 5.0d,
+			dependencies: [I;25],
+			id: 76,
+			tasks: [{
+				id: 77,
+				type: "item",
+				title: "Energy Cable (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:energy_cable"
+					}
+				}
+			}]
+		},
+		{
+			x: 17.0d,
+			y: 5.0d,
+			shape: "diamond",
+			dependencies: [I;74],
+			optional: 1b,
+			id: 78,
+			tasks: [{
+				id: 79,
+				type: "item",
+				title: "Ender Gate (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:ender_gate"
+					}
+				}
+			}]
+		},
+		{
+			x: 9.5d,
+			y: 12.5d,
+			shape: "hexagon",
+			dependencies: [I;93],
+			id: 80,
+			tasks: [{
+				id: 81,
+				type: "item",
+				title: "Reactor (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:reactor"
+					}
+				}
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 7.5d,
+			dependencies: [I;72],
+			id: 82,
+			tasks: [{
+				id: 83,
+				type: "item",
+				title: "Player Transmitter (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: 1b,
+					tag: {
+						value: "powah:player_transmitter"
+					}
+				}
+			}]
+		},
+		{
+			x: 17.0d,
+			y: 7.5d,
+			dependencies: [I;82],
+			id: 84,
+			tasks: [{
+				id: 85,
+				type: "item",
+				item: "powah:binding_card"
+			}]
+		},
+		{
+			x: 17.0d,
+			y: 10.0d,
+			shape: "diamond",
+			dependencies: [I;84],
+			optional: 1b,
+			id: 86,
+			tasks: [{
+				id: 87,
+				type: "item",
+				item: "powah:binding_card_dim"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 12.5d,
+			shape: "diamond",
+			dependencies: [I;80],
+			optional: 1b,
+			id: 88,
+			tasks: [{
+				id: 89,
+				type: "item",
+				item: "powah:dry_ice"
+			}]
+		},
+		{
+			x: 9.5d,
+			y: 10.0d,
+			dependencies: [I;
+				38,
+				36,
+				42
+			],
+			id: 93,
+			tasks: [{
+				id: 94,
+				type: "item",
+				item: "powah:uraninite"
+			}]
+		}
+	]
+}
