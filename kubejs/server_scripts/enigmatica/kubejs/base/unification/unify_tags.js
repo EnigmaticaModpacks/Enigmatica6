@@ -7,8 +7,8 @@ events.listen('recipes', function (event) {
                 var tag = ingredient.of(tagString);
                 if (tag.stacks.size() > 1) {
                     var prefItem = getPreferredItemInTag(tag);
-                    // console.log('Tag: ' + tag);
-                    // console.log('Prefered item: ' + prefItem);
+                    console.log('Tag: ' + tag);
+                    console.log('Prefered item: ' + prefItem);
                     event.replaceOutput({}, tagString, prefItem);
                 }
             }

@@ -6,7 +6,7 @@
 	beeDiesFromSting = true
 	#
 	#Should bees die when their Y-level is below 0?
-	#Note: If false, bees will get stuck just below y-0 and not move. **May not be useful with new AI**
+	#Note: If false, bees will get stuck just below y-0 and not move.
 	beeDiesInVoid = true
 	#
 	#This value scales the child size for all Resource Bees.
@@ -17,11 +17,6 @@
 	#Note: Setting the value in bee JSON overrides this value.
 	#Range: 0.5 ~ 2.0
 	global_bee_size_modifier = 1.0
-	#
-	#Should bees inflict poison damage?
-	#Note: Poison is only inflicted if a bee has not been given a trait with a special damage output.
-	#Set to false if you want to configure bees individually.
-	beesInflictPoison = true
 
 ["Apiary Options"]
 	#
@@ -163,9 +158,6 @@
 	#A higher value means the nest is less likely to spawn.
 	#Range: 4 ~ 100
 	nether_nest_generation_chance = 8
-	#The value added to weight for bees in a flower forests
-	#Range: 0 ~ 9
-	beesMoreCommonInFlowerForests = 4
 	#
 	#Chance for nest to spawn when generating chunks in overworld category biomes. [1/x]
 	#A higher value means the nest is less likely to spawn.
