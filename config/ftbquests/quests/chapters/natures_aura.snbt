@@ -1,0 +1,74 @@
+{
+	id: 158,
+	filename: "natures_aura",
+	order_index: 11,
+	title: "Nature's Aura",
+	icon: "naturesaura:gold_leaf",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Start",
+			x: -0.5d,
+			y: -18.0d,
+			id: 159,
+			tasks: [{
+				id: 160,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 161,
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: 1b,
+						tag: {
+							"patchouli:book": "naturesaura:book"
+						}
+					}
+				},
+				{
+					id: 166,
+					type: "item",
+					item: {
+						id: "minecraft:shears",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -6.5d,
+			y: -12.5d,
+			id: 162,
+			tasks: [{
+				id: 163,
+				type: "item",
+				item: "naturesaura:wood_stand"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -14.0d,
+			id: 164,
+			tasks: [{
+				id: 165,
+				type: "item",
+				item: "naturesaura:gold_leaf"
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -15.5d,
+			id: 167,
+			tasks: [{
+				id: 168,
+				type: "item",
+				item: "naturesaura:gold_fiber"
+			}]
+		}
+	]
+}
