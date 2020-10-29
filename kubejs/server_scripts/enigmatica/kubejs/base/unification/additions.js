@@ -1,9 +1,8 @@
 //priority: 975
 events.listen('recipes', function (event) {
-    pedestals_dust_smelting(event);
+    // pedestals_dust_smelting(event);
 
     materialsToUnify.forEach(function (material) {
-        console.log('Unifying ' + material + '...');
         enigmatica_ore_deposit_processing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
         //occultism_ore_ingot_crushing(event, material);
