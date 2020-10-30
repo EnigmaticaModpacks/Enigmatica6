@@ -1,15 +1,56 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 12,
+	order_index: 0,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
+	images: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			width: 0.0d,
+			height: 0.0d,
+			rotation: 0.0d,
+			image: "#FFFFFF",
+			hover: [],
+			click: "",
+			dev: 0b
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			width: 0.0d,
+			height: 0.0d,
+			rotation: 0.0d,
+			image: "#FFFFFF",
+			hover: [],
+			click: "",
+			dev: 0b
+		},
+		{
+			x: 0.0d,
+			y: 0.0d,
+			width: 0.0d,
+			height: 0.0d,
+			rotation: 0.0d,
+			image: "#FFFFFF",
+			hover: [],
+			click: "",
+			dev: 0b
+		}
+	],
 	quests: [
 		{
-			title: "Start",
+			title: "Nature's Aura",
+			icon: "naturesaura:ancient_sapling",
 			x: -0.5d,
-			y: -18.0d,
+			y: -14.0d,
+			description: [
+				"Nature's Aura is a druidic themed mod that uses the omnipresent 'aura' to derive its power. ",
+				"",
+				"But be careful, this is a limited resoure whose use must be managed and replenished, lest the natural order be disturbed."
+			],
 			id: 159,
 			tasks: [{
 				id: 160,
@@ -41,8 +82,10 @@
 			]
 		},
 		{
-			x: -6.5d,
-			y: -12.5d,
+			title: "Tire-toi une bûche",
+			x: -0.5d,
+			y: -20.0d,
+			description: [""],
 			id: 162,
 			tasks: [{
 				id: 163,
@@ -51,8 +94,10 @@
 			}]
 		},
 		{
-			x: -6.5d,
-			y: -14.0d,
+			title: "That's The Ticket",
+			x: -0.5d,
+			y: -18.0d,
+			description: [""],
 			id: 164,
 			tasks: [{
 				id: 167,
@@ -61,8 +106,10 @@
 			}]
 		},
 		{
-			x: -6.5d,
-			y: -15.5d,
+			title: "The Threads That Bind Us",
+			x: -0.5d,
+			y: -16.0d,
+			description: [""],
 			id: 168,
 			tasks: [{
 				id: 169,
@@ -72,14 +119,84 @@
 		},
 		{
 			title: "Where Is Your God Now?",
-			x: -6.5d,
-			y: -11.0d,
+			x: -0.5d,
+			y: -22.0d,
 			description: [""],
 			id: 560,
 			tasks: [{
 				id: 561,
 				type: "item",
 				item: "naturesaura:offering_table"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -12.5d,
+			id: 636,
+			tasks: [{
+				id: 637,
+				type: "item",
+				item: {
+					id: "naturesaura:aura_bottle",
+					Count: 1b,
+					tag: {
+						stored_type: "naturesaura:nether"
+					}
+				}
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -12.5d,
+			id: 638,
+			tasks: [{
+				id: 639,
+				type: "item",
+				item: {
+					id: "naturesaura:aura_bottle",
+					Count: 1b,
+					tag: {
+						stored_type: "naturesaura:end"
+					}
+				}
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -18.0d,
+			id: 640,
+			tasks: [{
+				id: 641,
+				type: "item",
+				item: {
+					id: "naturesaura:aura_bottle",
+					Count: 1b,
+					tag: {
+						stored_type: "naturesaura:overworld"
+					}
+				}
+			}]
+		},
+		{
+			title: "Farming and Husbandry",
+			x: -7.0d,
+			y: -15.5d,
+			description: [""],
+			id: 642,
+			tasks: [{
+				id: 643,
+				type: "custom",
+				title: "Farming and Husbandry"
+			}]
+		},
+		{
+			title: "Regenerative Practices",
+			x: 6.5d,
+			y: -15.5d,
+			id: 644,
+			tasks: [{
+				id: 645,
+				type: "custom"
 			}]
 		}
 	]
