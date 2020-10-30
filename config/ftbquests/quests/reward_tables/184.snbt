@@ -1,0 +1,26 @@
+{
+	id: 184,
+	title: "Rare PNC:R Loot Box",
+	icon: "aquaculture:treasure_chest",
+	loot_size: 1,
+	hide_tooltip: 1b,
+	use_title: 1b,
+	rewards: [
+		{
+			item: "pneumaticcraft:programming_puzzle",
+			count: 16
+		},
+		{
+			item: {
+				id: "pneumaticcraft:drone",
+				Count: 1b,
+				tag: {
+					"pneumaticcraft:air": 120000
+				}
+			}
+		},
+		{
+			item: "pneumaticcraft:printed_circuit_board"
+		}
+	]
+}

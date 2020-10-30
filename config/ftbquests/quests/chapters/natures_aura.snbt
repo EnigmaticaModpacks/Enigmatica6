@@ -1,7 +1,7 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 11,
+	order_index: 12,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
@@ -55,7 +55,7 @@
 			y: -14.0d,
 			id: 164,
 			tasks: [{
-				id: 165,
+				id: 167,
 				type: "item",
 				item: "naturesaura:gold_leaf"
 			}]
@@ -63,11 +63,23 @@
 		{
 			x: -6.5d,
 			y: -15.5d,
-			id: 167,
+			id: 168,
 			tasks: [{
-				id: 168,
+				id: 169,
 				type: "item",
 				item: "naturesaura:gold_fiber"
+			}]
+		},
+		{
+			title: "Where Is Your God Now?",
+			x: -6.5d,
+			y: -11.0d,
+			description: [""],
+			id: 560,
+			tasks: [{
+				id: 561,
+				type: "item",
+				item: "naturesaura:offering_table"
 			}]
 		}
 	]

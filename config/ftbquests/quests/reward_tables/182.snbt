@@ -1,0 +1,36 @@
+{
+	id: 182,
+	title: "Common PNC:R Loot Box",
+	icon: "aquaculture:box",
+	loot_size: 1,
+	hide_tooltip: 1b,
+	use_title: 1b,
+	rewards: [
+		{
+			item: "pneumaticcraft:pressure_tube",
+			count: 8,
+			weight: 2
+		},
+		{
+			item: "pneumaticcraft:logistics_core",
+			count: 8
+		},
+		{
+			item: "pneumaticcraft:reinforced_brick_tile",
+			count: 16,
+			weight: 3
+		},
+		{
+			item: "pneumaticcraft:cod_n_chips",
+			count: 16
+		},
+		{
+			item: "pneumaticcraft:sourdough_bread",
+			count: 16
+		},
+		{
+			item: "pneumaticcraft:bandage",
+			count: 2
+		}
+	]
+}
