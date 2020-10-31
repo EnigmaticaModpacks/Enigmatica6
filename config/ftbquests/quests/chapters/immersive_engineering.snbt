@@ -307,6 +307,7 @@
 		},
 		{
 			title: "Arc Furnace",
+			icon: "immersiveengineering:storage_steel",
 			x: 1.5d,
 			y: 1.5d,
 			description: ["The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys and recycle metal gear."],
@@ -400,10 +401,7 @@
 			x: 3.0d,
 			y: -1.5d,
 			description: ["Thermoelectric Generators are another straightforward power option. When surrounded with hot and cold blocks, this block generates power based on the difference in temperature (see manual)."],
-			dependencies: [I;
-				18,
-				38
-			],
+			dependencies: [I;18],
 			id: 54,
 			tasks: [{
 				id: 55,
@@ -653,6 +651,90 @@
 						Count: 1b,
 						tag: {}
 					}
+				}
+			]
+		},
+		{
+			title: "Getting Clocher",
+			x: 4.5d,
+			y: -3.0d,
+			description: ["The Garden Cloche takes power, water, and optionally fertilizer to grow plants at an accelerated rate."],
+			dependencies: [I;25],
+			id: 577,
+			tasks: [{
+				id: 578,
+				type: "item",
+				item: "immersiveengineering:cloche"
+			}]
+		},
+		{
+			title: "Engineered Lighting",
+			icon: "immersiveengineering:electric_lantern",
+			x: 4.5d,
+			y: -4.5d,
+			description: [
+				"The Powered Lantern, when provided with a tiny amount of power via wire, will suppress mob spawns in a 32-block radius (in addition to, y'know, providing light).",
+				"",
+				"The Floodlight can be used to light up a large cone in front of itself."
+			],
+			dependencies: [I;25],
+			id: 579,
+			tasks: [
+				{
+					id: 580,
+					type: "item",
+					item: "immersiveengineering:electric_lantern"
+				},
+				{
+					id: 581,
+					type: "item",
+					item: "immersiveengineering:floodlight"
+				}
+			]
+		},
+		{
+			title: "Workbench Automation",
+			icon: "immersiveengineering:electron_tube",
+			x: 4.5d,
+			y: -1.5d,
+			description: ["The Automated Workbench is a powered multiblock that can automatically process a given type of Engineer's Workbench recipe, when supplied with a blueprint. Handy!"],
+			dependencies: [I;25],
+			id: 582,
+			tasks: [
+				{
+					id: 583,
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 5L
+				},
+				{
+					id: 584,
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 4L
+				},
+				{
+					id: 585,
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: 586,
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 2L
+				},
+				{
+					id: 587,
+					type: "item",
+					item: "immersiveengineering:slab_treated_wood_horizontal",
+					count: 2L
+				},
+				{
+					id: 588,
+					type: "item",
+					item: "immersiveengineering:conveyor_basic",
+					count: 4L
 				}
 			]
 		}

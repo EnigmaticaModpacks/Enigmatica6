@@ -58,9 +58,9 @@
 				title: "About Tiers"
 			}],
 			rewards: [{
-				id: 432,
-				type: "loot",
-				table: 9
+				id: 662,
+				type: "random",
+				table: 7
 			}]
 		},
 		{
@@ -130,9 +130,9 @@
 					count: 4
 				},
 				{
-					id: 435,
-					type: "loot",
-					table: 9
+					id: 648,
+					type: "random",
+					table: 7
 				}
 			]
 		},
@@ -162,9 +162,9 @@
 				}
 			}],
 			rewards: [{
-				id: 452,
-				type: "loot",
-				table: 9
+				id: 649,
+				type: "random",
+				table: 7
 			}]
 		},
 		{
@@ -195,9 +195,9 @@
 					item: "minecraft:lava_bucket"
 				},
 				{
-					id: 437,
-					type: "loot",
-					table: 9
+					id: 575,
+					type: "random",
+					table: 7
 				}
 			]
 		},
@@ -232,8 +232,8 @@
 					item: "cookingforblockheads:sink"
 				},
 				{
-					id: 439,
-					type: "loot",
+					id: 567,
+					type: "random",
 					table: 9
 				}
 			]
@@ -268,9 +268,9 @@
 					item: "bountifulbaubles:sunglasses"
 				},
 				{
-					id: 441,
-					type: "loot",
-					table: 9
+					id: 650,
+					type: "random",
+					table: 7
 				}
 			]
 		},
@@ -290,9 +290,9 @@
 				item: "powah:lens_of_ender"
 			}],
 			rewards: [{
-				id: 442,
-				type: "loot",
-				table: 9
+				id: 651,
+				type: "random",
+				table: 7
 			}]
 		},
 		{
@@ -367,11 +367,6 @@
 					item: "minecraft:blue_ice",
 					count: 32,
 					only_one: 1b
-				},
-				{
-					id: 447,
-					type: "loot",
-					table: 9
 				}
 			]
 		},
@@ -467,9 +462,9 @@
 				}
 			}],
 			rewards: [{
-				id: 549,
+				id: 654,
 				type: "random",
-				table: 9
+				table: 7
 			}]
 		},
 		{
@@ -543,9 +538,9 @@
 				}
 			],
 			rewards: [{
-				id: 552,
+				id: 655,
 				type: "random",
-				table: 9
+				table: 7
 			}]
 		},
 		{
@@ -597,9 +592,9 @@
 				item: "powah:binding_card_dim"
 			}],
 			rewards: [{
-				id: 553,
+				id: 656,
 				type: "random",
-				table: 9
+				table: 7
 			}]
 		},
 		{
@@ -723,9 +718,9 @@
 					item: "powah:energy_cell_nitro"
 				},
 				{
-					id: 544,
+					id: 660,
 					type: "random",
-					table: 9
+					table: 7
 				}
 			]
 		},
@@ -750,9 +745,9 @@
 				count: 16L
 			}],
 			rewards: [{
-				id: 534,
+				id: 657,
 				type: "random",
-				table: 9
+				table: 7
 			}]
 		},
 		{
@@ -772,9 +767,9 @@
 				count: 24L
 			}],
 			rewards: [{
-				id: 536,
+				id: 658,
 				type: "random",
-				table: 9
+				table: 7
 			}]
 		},
 		{
@@ -794,9 +789,9 @@
 				count: 32L
 			}],
 			rewards: [{
-				id: 538,
+				id: 659,
 				type: "random",
-				table: 9
+				table: 7
 			}]
 		},
 		{
@@ -844,17 +839,17 @@
 					xp_levels: 100
 				},
 				{
-					id: 546,
-					type: "random",
-					table: 9
-				},
-				{
 					id: 547,
 					type: "command",
 					title: "Show off your progress!",
 					icon: "powah:ender_core",
 					command: "/say I have completed Powah's final crafting challenge! I bet you can't!",
 					player_command: 1b
+				},
+				{
+					id: 661,
+					type: "random",
+					table: 12
 				}
 			]
 		},
@@ -902,6 +897,11 @@
 					auto: "enabled",
 					command: "/say I have completed Powah's Ultimate Power Quest! Woot!",
 					player_command: 1b
+				},
+				{
+					id: 653,
+					type: "random",
+					table: 11
 				}
 			]
 		}
