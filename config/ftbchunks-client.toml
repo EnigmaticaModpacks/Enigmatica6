@@ -1,9 +1,9 @@
 #Noise added to map to make it look less plastic
 #Range: 0.0 ~ 0.5
-noise = 0.05
+noise = 0.05000000074505806
 #Enables minimap to show up in corner
 #Allowed Values: DISABLED, BOTTOM_LEFT, LEFT, TOP_LEFT, TOP_RIGHT, RIGHT, BOTTOM_RIGHT
-minimap = "DISABLED"
+minimap = "TOP_RIGHT"
 #Scale of minimap
 #Range: 0.25 ~ 4.0
 minimap_scale = 1.0
@@ -29,7 +29,7 @@ minimap_blur = true
 minimap_compass = true
 #Shadow intensity
 #Range: 0.0 ~ 0.3
-shadows = 0.1
+shadows = 0.10000000149011612
 #Chunk grid overlay in large map
 chunk_grid = false
 #Reduces color palette to 256 colors
