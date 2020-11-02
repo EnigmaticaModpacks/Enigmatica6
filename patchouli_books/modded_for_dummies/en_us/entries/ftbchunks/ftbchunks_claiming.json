@@ -1,0 +1,25 @@
+{
+    "name": "Claiming and Allies",
+    "icon": "enigmatica:textures/friends.png",
+    "category": "patchouli:ftbchunks",
+    "sortnum": 4,
+    "pages": [
+        {
+            "type": "text",
+            "text": "From the “Claimed Chunks” option at the top left of your map screen you can access another version of the map with chunks visible where you can claim chunks for your team. What does this all mean? First of all, try clicking on a chunk (or holding left click and dragging the mouse around) and claim your first chunks."
+        },
+        {
+            "type": "text",
+            "text": "$(l)The area contained in those colored borders you see now belongs to your team$(reset), meaning only you and your allies (which you can edit from the allies menu, also in the top left of the main map screen) can interact with blocks in them. This means other people on a server won’t be able to break blocks, open chests, anything at all $(l)without your explicit permission.$(reset)"
+        },
+        {
+            "type": "text",
+            "text": "Note that this works on mobs too, so for example Creeper explosions won’t be able to damage your chunks anymore. Some mods also need to interact with your chunks, for example Modular Routers when placing or breaking blocks, Mekanism when doing the same and so on. These mods have fake players available you can add to your allies to allow them to interact with your claims. To remove a claim on a chunk, simply right click it (or hold and drag right click)."
+        },
+        {
+            "type": "text",
+            "text": "$(l)If you hold shift and interact with chunks you already claimed you can also force them to be loaded at all times $(reset) (see $(l:ftbchunks/ftbchunks_chunkloading)here$(reset) for more). As always, shift left click will force load chunks and shift right click will remove the force load from chunks."
+
+        }
+    ]
+}
