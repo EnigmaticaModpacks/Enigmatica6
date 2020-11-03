@@ -21,6 +21,7 @@
 				"",
 				"Accepts Fortune or Silk Touch books."
 			],
+			dependencies: [I;325],
 			id: 454,
 			tasks: [{
 				id: 455,
@@ -85,6 +86,7 @@
 				"● Block Launcher",
 				"● Self Repairing"
 			],
+			dependencies: [I;357],
 			id: 463,
 			tasks: [{
 				id: 464,
@@ -113,6 +115,7 @@
 				"● Item Search",
 				"● Self Repairin"
 			],
+			dependencies: [I;357],
 			id: 465,
 			tasks: [{
 				id: 466,
@@ -138,6 +141,7 @@
 				"● Jump Height",
 				"● Self Repairing"
 			],
+			dependencies: [I;357],
 			id: 467,
 			tasks: [{
 				id: 468,
@@ -166,6 +170,7 @@
 				"● Creative Flight",
 				"● Self Repairing"
 			],
+			dependencies: [I;357],
 			id: 469,
 			tasks: [{
 				id: 470,
@@ -246,17 +251,6 @@
 		},
 		{
 			x: -11.5d,
-			y: -7.0d,
-			dependencies: [I;467],
-			id: 481,
-			tasks: [{
-				id: 482,
-				type: "item",
-				item: "pneumaticcraft:jumping_upgrade_1"
-			}]
-		},
-		{
-			x: -11.5d,
 			y: -5.5d,
 			dependencies: [I;469],
 			id: 483,
@@ -267,21 +261,11 @@
 			}]
 		},
 		{
-			x: -8.5d,
-			y: -5.5d,
-			dependencies: [I;469],
-			id: 485,
-			tasks: [{
-				id: 486,
-				type: "item",
-				item: "pneumaticcraft:jet_boots_upgrade_1"
-			}]
-		},
-		{
 			title: "Shared Experiences",
 			x: -8.5d,
 			y: -7.0d,
 			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact."],
+			dependencies: [I;325],
 			id: 487,
 			tasks: [{
 				id: 488,
@@ -290,31 +274,9 @@
 			}]
 		},
 		{
-			x: -13.0d,
-			y: -8.5d,
-			dependencies: [I;481],
-			id: 489,
-			tasks: [{
-				id: 490,
-				type: "item",
-				item: "pneumaticcraft:jumping_upgrade_2"
-			}]
-		},
-		{
-			x: -13.0d,
-			y: -10.0d,
-			dependencies: [I;489],
-			id: 491,
-			tasks: [{
-				id: 492,
-				type: "item",
-				item: "pneumaticcraft:jumping_upgrade_3"
-			}]
-		},
-		{
-			x: -13.0d,
-			y: -11.5d,
-			dependencies: [I;491],
+			x: -11.5d,
+			y: -7.0d,
+			dependencies: [I;467],
 			id: 493,
 			tasks: [{
 				id: 494,
@@ -323,42 +285,9 @@
 			}]
 		},
 		{
-			x: -7.0d,
-			y: -7.0d,
-			dependencies: [I;485],
-			id: 495,
-			tasks: [{
-				id: 496,
-				type: "item",
-				item: "pneumaticcraft:jet_boots_upgrade_2"
-			}]
-		},
-		{
-			x: -7.0d,
-			y: -8.5d,
-			dependencies: [I;495],
-			id: 497,
-			tasks: [{
-				id: 498,
-				type: "item",
-				item: "pneumaticcraft:jet_boots_upgrade_3"
-			}]
-		},
-		{
-			x: -7.0d,
-			y: -10.0d,
-			dependencies: [I;497],
-			id: 499,
-			tasks: [{
-				id: 500,
-				type: "item",
-				item: "pneumaticcraft:jet_boots_upgrade_4"
-			}]
-		},
-		{
-			x: -7.0d,
-			y: -11.5d,
-			dependencies: [I;499],
+			x: -8.5d,
+			y: -5.5d,
+			dependencies: [I;469],
 			id: 501,
 			tasks: [{
 				id: 502,
@@ -368,13 +297,14 @@
 		},
 		{
 			title: "Target Acquired",
-			x: -13.0d,
-			y: -7.0d,
+			x: -2.5d,
+			y: -8.0d,
 			description: [
 				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands.",
 				"",
 				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak right click to configure."
 			],
+			dependencies: [I;357],
 			id: 503,
 			tasks: [{
 				id: 504,
@@ -420,6 +350,7 @@
 			x: -2.5d,
 			y: -11.0d,
 			description: [""],
+			dependencies: [I;179],
 			id: 507,
 			tasks: [{
 				id: 508,
@@ -442,7 +373,12 @@
 			title: "Something For Every Occasion",
 			x: -2.5d,
 			y: -9.5d,
-			description: ["Craft any two types of specialized ammo and give them a try. "],
+			description: [
+				"Craft any two types of specialized ammo and give them a try. ",
+				"",
+				"",
+				"PACK NOTE: Need to add tags to ammo to facilitate this. "
+			],
 			dependencies: [I;507],
 			id: 514,
 			tasks: [
@@ -532,7 +468,8 @@
 			title: "It's Over! I Have the High Ground!",
 			x: -10.0d,
 			y: -12.5d,
-			description: ["Providing automation access to the player's inventory, auto feeding, and auto charging, among other perks."],
+			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."],
+			dependencies: [I;360],
 			id: 530,
 			tasks: [{
 				id: 531,

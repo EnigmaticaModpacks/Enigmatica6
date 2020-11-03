@@ -1,7 +1,7 @@
 {
 	id: 366,
 	filename: "powah",
-	order_index: 9,
+	order_index: 10,
 	title: "Powah!",
 	icon: "powah:dielectric_casing",
 	default_quest_shape: "",
@@ -73,7 +73,7 @@
 			description: [
 				"efore we get into the various cool blocks and items Powah offers, let’s familiarize with some of the basic resources the mod will ask you to craft. Dielectric Paste is needed for most basic crafting components, so get used to seeing a lot. ",
 				"",
-				"Automating it or at least keeping a Lava tank somewhere could be very useful! You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. ",
+				"Automating it, keeping a Lava tank somewhere or a Blaze farm could be very useful! You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. ",
 				"This is what you will use to get started making most of the different machines we will see in the chapter, so let’s make a few!"
 			],
 			dependencies: [I;367],
@@ -849,7 +849,7 @@
 				{
 					id: 661,
 					type: "random",
-					table: 12
+					table: 10
 				}
 			]
 		},

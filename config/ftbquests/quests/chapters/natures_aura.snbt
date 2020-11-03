@@ -1,7 +1,7 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 0,
+	order_index: 14,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
@@ -43,7 +43,7 @@
 	quests: [
 		{
 			title: "Nature's Aura",
-			icon: "naturesaura:ancient_sapling",
+			icon: "naturesaura:aura_bloom",
 			x: -0.5d,
 			y: -14.0d,
 			description: [
@@ -84,8 +84,15 @@
 		{
 			title: "Tire-toi une bûche",
 			x: -0.5d,
-			y: -20.0d,
-			description: [""],
+			y: -17.0d,
+			description: [
+				"The Ritual of the Forest is the basis for all magic to come. It draws it's power from the sacrifice of life at the heart of the ritual.",
+				"",
+				"Place your sapling last to prevent it from growing before the rest of the ritual is prepared.",
+				"",
+				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
+			],
+			dependencies: [I;164],
 			id: 162,
 			tasks: [{
 				id: 163,
@@ -96,8 +103,9 @@
 		{
 			title: "That's The Ticket",
 			x: -0.5d,
-			y: -18.0d,
-			description: [""],
+			y: -16.0d,
+			description: ["Now that your threads have spread, harvest some Golden Leaf by breaking the Golden Leaves that have formed in your trees."],
+			dependencies: [I;168],
 			id: 164,
 			tasks: [{
 				id: 167,
@@ -108,8 +116,13 @@
 		{
 			title: "The Threads That Bind Us",
 			x: -0.5d,
-			y: -16.0d,
-			description: [""],
+			y: -15.0d,
+			description: [
+				"To begin apon the naturalist's path, Brilliant Fiber should be woven into the leaves of trees. ",
+				"",
+				"It will naturally spread to neighboring leaves over time, covering much of the tree. Give it time. "
+			],
+			dependencies: [I;159],
 			id: 168,
 			tasks: [{
 				id: 169,
@@ -118,10 +131,12 @@
 			}]
 		},
 		{
-			title: "Where Is Your God Now?",
-			x: -0.5d,
-			y: -22.0d,
+			title: "Just Nod If You Can Hear Me",
+			icon: "naturesaura:offering_table",
+			x: 0.5d,
+			y: -21.0d,
 			description: [""],
+			dependencies: [I;699],
 			id: 560,
 			tasks: [{
 				id: 561,
@@ -130,73 +145,801 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: -12.5d,
-			id: 636,
-			tasks: [{
-				id: 637,
-				type: "item",
-				item: {
-					id: "naturesaura:aura_bottle",
-					Count: 1b,
-					tag: {
-						stored_type: "naturesaura:nether"
-					}
+			title: "The Duality of Life and Death",
+			icon: "naturesaura:nature_altar",
+			x: 0.5d,
+			y: -18.5d,
+			description: [
+				"The Natural Altar is the heart of two ritual practices; one to infuse life into objects and another to infuse death. ",
+				"",
+				"Recipes displaying a green aura bottle will be crafted on the altar built in the Overworld, while those with a red aura bottle must be performed on the Nether counterpart.",
+				"",
+				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
+			],
+			dependencies: [I;703],
+			dependency_requirement: "all_started",
+			id: 693,
+			tasks: [
+				{
+					id: 694,
+					type: "item",
+					item: "naturesaura:nature_altar"
+				},
+				{
+					id: 817,
+					type: "item",
+					item: "minecraft:oak_planks",
+					count: 20L
+				},
+				{
+					id: 818,
+					type: "item",
+					item: "minecraft:stone_bricks",
+					count: 8L
+				},
+				{
+					id: 819,
+					type: "item",
+					item: "naturesaura:gold_brick",
+					count: 8L
+				},
+				{
+					id: 820,
+					type: "item",
+					item: "minecraft:chiseled_stone_bricks",
+					count: 4L
 				}
-			}]
+			]
 		},
 		{
-			x: 3.0d,
-			y: -12.5d,
-			id: 638,
-			tasks: [{
-				id: 639,
-				type: "item",
-				item: {
-					id: "naturesaura:aura_bottle",
-					Count: 1b,
-					tag: {
-						stored_type: "naturesaura:end"
-					}
+			title: "Purity of Expression",
+			x: 2.0d,
+			y: -22.0d,
+			description: ["Emotions made manifest in their purest forms."],
+			dependencies: [I;560],
+			id: 695,
+			tasks: [
+				{
+					id: 696,
+					type: "item",
+					item: "naturesaura:token_euphoria"
+				},
+				{
+					id: 747,
+					type: "item",
+					item: "naturesaura:token_terror"
+				},
+				{
+					id: 748,
+					type: "item",
+					item: "naturesaura:token_rage"
+				},
+				{
+					id: 749,
+					type: "item",
+					item: "naturesaura:token_grief"
 				}
-			}]
+			]
 		},
 		{
-			x: 2.5d,
-			y: -18.0d,
-			id: 640,
-			tasks: [{
-				id: 641,
-				type: "item",
-				item: {
-					id: "naturesaura:aura_bottle",
-					Count: 1b,
-					tag: {
-						stored_type: "naturesaura:overworld"
-					}
-				}
-			}]
-		},
-		{
-			title: "Farming and Husbandry",
-			x: -7.0d,
-			y: -15.5d,
+			title: "In Wrong, There Is Some Right",
+			x: 0.0d,
+			y: -19.5d,
 			description: [""],
-			id: 642,
+			dependencies: [I;693],
+			id: 697,
 			tasks: [{
-				id: 643,
-				type: "custom",
-				title: "Farming and Husbandry"
+				id: 698,
+				type: "item",
+				item: "naturesaura:tainted_gold"
 			}]
 		},
 		{
-			title: "Regenerative Practices",
-			x: 6.5d,
-			y: -15.5d,
-			id: 644,
+			title: "Harmony In Opposites",
+			x: 1.0d,
+			y: -20.0d,
+			description: ["When balance is achieved, great things become possible."],
+			dependencies: [I;
+				697,
+				701
+			],
+			id: 699,
 			tasks: [{
-				id: 645,
-				type: "custom"
+				id: 700,
+				type: "item",
+				item: "naturesaura:calling_spirit"
+			}]
+		},
+		{
+			title: "In Darkness, Some Light",
+			x: 1.5d,
+			y: -19.0d,
+			description: [""],
+			dependencies: [I;693],
+			id: 701,
+			tasks: [{
+				id: 702,
+				type: "item",
+				item: "naturesaura:infused_iron"
+			}]
+		},
+		{
+			title: "The Body Follows the Mind",
+			x: -0.5d,
+			y: -18.0d,
+			description: ["To master your emotions is not to supress them. It is to process them with diligence."],
+			dependencies: [I;162],
+			id: 703,
+			tasks: [
+				{
+					id: 704,
+					type: "item",
+					item: "naturesaura:token_joy"
+				},
+				{
+					id: 814,
+					type: "item",
+					item: "naturesaura:token_fear"
+				},
+				{
+					id: 815,
+					type: "item",
+					item: "naturesaura:token_anger"
+				},
+				{
+					id: 816,
+					type: "item",
+					item: "naturesaura:token_sorrow"
+				}
+			]
+		},
+		{
+			title: "Ebb and Flow",
+			x: -3.0d,
+			y: -19.0d,
+			subtitle: "Give And Take",
+			description: [
+				"The trees grown from Ancient Saplings server two primary purposes. ",
+				"",
+				"First, they allow you to replenish the Aura in an area. ",
+				"",
+				"Second, the wood is used throughout Nature's Aura crafting recipes. ",
+				"",
+				"Worry not, more effective methods of replenishing the Aura around you will soon become available."
+			],
+			dependencies: [I;162],
+			id: 705,
+			tasks: [{
+				id: 706,
+				type: "item",
+				item: "naturesaura:ancient_sapling"
+			}]
+		},
+		{
+			title: "To Obtain, Something Must Be Lost",
+			x: 0.5d,
+			y: -23.5d,
+			description: [
+				"The Transmutation Catalyst augments the Natural and Crimson Altars to allow them to perform further transformations. ",
+				"",
+				"Refer to the Book of Natural Aura for specific instructions."
+			],
+			dependencies: [I;745],
+			id: 707,
+			tasks: [{
+				id: 708,
+				type: "item",
+				item: "naturesaura:conversion_catalyst"
+			}]
+		},
+		{
+			title: "For Ivy Climbs the Crumbling Hall",
+			x: 2.0d,
+			y: -17.5d,
+			description: [
+				"The Crumbling Catalyst augments the Natural and Crimson Altars to allow them to perform further transformations. ",
+				"",
+				"Refer to the Book of Natural Aura for specific instructions."
+			],
+			dependencies: [I;693],
+			id: 709,
+			tasks: [{
+				id: 710,
+				type: "item",
+				item: "naturesaura:crushing_catalyst"
+			}]
+		},
+		{
+			title: "An Explosion of Life",
+			x: 3.0d,
+			y: -23.5d,
+			description: [
+				"Unlock the true potential of the rituals you use to replenish Aura. ",
+				"",
+				"With this beneath your generator you'll be able to achieve such lushness as has not been observed since the early days of creation."
+			],
+			dependencies: [I;695],
+			id: 711,
+			tasks: [{
+				id: 712,
+				type: "item",
+				item: "naturesaura:generator_limit_remover"
+			}]
+		},
+		{
+			title: "Relax, I'll Need Some Information First",
+			x: 3.0d,
+			y: -21.0d,
+			description: ["Many devices have a specific range that can only be seen by right clicking on them with a Mystical Magnifier. It's a valuable tool to any natural botanist."],
+			dependencies: [I;701],
+			id: 713,
+			tasks: [{
+				id: 714,
+				type: "item",
+				item: "naturesaura:range_visualizer"
+			}]
+		},
+		{
+			title: "It's Still Magic Even If You Know How It's Done",
+			x: -2.0d,
+			y: -17.5d,
+			description: [
+				"Untrained eyes will notice subtle lights and enhanced growth in areas lush with Aura. ",
+				"",
+				"The Environmental Eye further hones your vision to give you deeper insights into the Aura infusing the landscape. "
+			],
+			dependencies: [I;162],
+			id: 715,
+			tasks: [{
+				id: 716,
+				type: "item",
+				item: "naturesaura:eye"
+			}]
+		},
+		{
+			title: "Geo-Caching 101",
+			x: 3.5d,
+			y: -20.0d,
+			description: [
+				"A portable source of Aura that can be be put to good use with a variety of tools. ",
+				"",
+				"Refer to the Book of Natural Aura's section on Natural Tools for potential uses."
+			],
+			dependencies: [I;701],
+			id: 717,
+			tasks: [{
+				id: 718,
+				type: "item",
+				item: "naturesaura:aura_cache"
+			}],
+			rewards: [{
+				id: 813,
+				type: "item",
+				item: {
+					id: "naturesaura:infused_iron_pickaxe",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Open Your Eyes",
+			x: -1.0d,
+			y: -23.5d,
+			subtitle: "Then Open Your Eyes Again",
+			description: ["An advanced version of the Natural Eye which grants it's owner the ability to see ever more precise details of the Aura around them."],
+			dependencies: [I;745],
+			id: 740,
+			tasks: [{
+				id: 741,
+				type: "item",
+				item: "naturesaura:eye_improved"
+			}]
+		},
+		{
+			title: "A Hat Full of Sky",
+			x: -0.5d,
+			y: -22.5d,
+			description: ["Metal infused with the boundless energies of the divine."],
+			dependencies: [I;560],
+			id: 745,
+			tasks: [{
+				id: 746,
+				type: "item",
+				item: "naturesaura:sky_ingot"
+			}]
+		},
+		{
+			title: "Thy Cup Runneth Over",
+			x: -1.5d,
+			y: -22.5d,
+			description: [
+				"Higher capacity than the Aura Cache.",
+				"",
+				"Refer to the Book of Natural Aura's section on Natural Tools for potential uses."
+			],
+			dependencies: [I;745],
+			id: 750,
+			tasks: [{
+				id: 751,
+				type: "item",
+				item: "naturesaura:aura_trove"
+			}]
+		},
+		{
+			title: "The Inexorable March of Time",
+			icon: "naturesaura:time_changer",
+			x: -2.5d,
+			y: -21.5d,
+			description: ["This powerful ritual allows you to control the very flow of time, for a price."],
+			dependencies: [I;560],
+			id: 752,
+			tasks: [
+				{
+					id: 753,
+					type: "item",
+					item: "naturesaura:clock_hand"
+				},
+				{
+					id: 754,
+					type: "item",
+					item: "naturesaura:time_changer"
+				}
+			]
+		},
+		{
+			title: "Setting Boundaries",
+			x: -2.0d,
+			y: -9.0d,
+			description: [
+				"A simple apparatus that helps contain your livestock. Passive animals within the range of this block will be unable to step beyond it's boundaries.",
+				"",
+				"The range depends upon strength of the redstone signal it is provided. "
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;693],
+			id: 760,
+			tasks: [{
+				id: 761,
+				type: "item",
+				item: "naturesaura:animal_container"
+			}],
+			rewards: [{
+				id: 811,
+				type: "item",
+				item: "rsgauges:industrial_dimmer"
+			}]
+		},
+		{
+			title: "Crossing Boundaries",
+			icon: "naturesaura:animal_spawner",
+			x: 1.0d,
+			y: -9.0d,
+			description: [
+				"A ritual that harnesses the powers of creation itself, allowing its user to bring forth new life from the barest traces of material.",
+				"",
+				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;
+				696,
+				745
+			],
+			id: 762,
+			tasks: [
+				{
+					id: 763,
+					type: "item",
+					item: "naturesaura:animal_spawner"
+				},
+				{
+					id: 831,
+					type: "item",
+					item: "naturesaura:infused_brick",
+					count: 16L
+				},
+				{
+					id: 832,
+					type: "item",
+					item: "minecraft:hay_block",
+					count: 16L
+				},
+				{
+					id: 833,
+					type: "item",
+					item: "naturesaura:ancient_planks",
+					count: 4L
+				}
+			]
+		},
+		{
+			title: "Constructive Interference",
+			x: -2.5d,
+			y: -12.0d,
+			description: [
+				"The Imperceptible Builder assists in complicated automation tasks, taking blocks from nearby inventories and placing them down. ",
+				"",
+				"Specify where it should place blocks by placing an example in an Item Frame on the Builder itself. ",
+				"",
+				"Refer to the Book of Natural Aura for specific instructions."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;701],
+			id: 764,
+			tasks: [{
+				id: 765,
+				type: "item",
+				item: "naturesaura:placer"
+			}],
+			rewards: [
+				{
+					id: 798,
+					type: "item",
+					item: "minecraft:item_frame"
+				},
+				{
+					id: 799,
+					type: "item",
+					item: "naturesaura:farming_stencil"
+				}
+			]
+		},
+		{
+			title: "Destructive Interference",
+			x: -3.5d,
+			y: -11.5d,
+			description: [
+				"Aura Field Creator can be linked together to form a zone between them where blocks are broken. ",
+				"",
+				"To link them, simply right click one, and then the other. Supply a redstone signal to enable them. They'll begin drawing Aura and breaking blocks after a short delay.",
+				"",
+				"An Item Frame can be used to alter their behavior as well: ",
+				"● Place shears in the frame to cause them to shear leaves and grass. ",
+				"● Place a shovel in the frame to allow them to pick up snow. (To Be Confirmed)",
+				"● Place a Silk Touch pick in the frame to grant them the ability to silk touch blocks. "
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;
+				745,
+				748
+			],
+			min_width: 450,
+			id: 766,
+			tasks: [{
+				id: 767,
+				type: "item",
+				item: "naturesaura:field_creator",
+				count: 2L
+			}]
+		},
+		{
+			title: "Ask and Receive the Bounty of the Earth",
+			x: -1.0d,
+			y: -10.0d,
+			description: [
+				"A potent material that when placed in the world will cause nearby Stone and Netherrack to transmute into more useful substances... ",
+				"",
+				"Transmuting Stone to Ores requires Overworld Aura, while Netherrack can be transmuted with Nether Aura.",
+				"",
+				"This effect requires excessive Aura in the surrounding area."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;711],
+			id: 768,
+			tasks: [{
+				id: 769,
+				type: "item",
+				item: {
+					id: "naturesaura:effect_powder",
+					Count: 1b,
+					tag: {
+						effect: "naturesaura:ore_spawn"
+					}
+				}
+			}]
+		},
+		{
+			title: "Of the Birds and the Bees",
+			x: 0.0d,
+			y: -10.0d,
+			description: [
+				"A potent material that when placed in the world will cause nearby passive animals to spontaneously breed.",
+				"",
+				"This effect requires excessive Aura in the surrounding area."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;711],
+			id: 772,
+			tasks: [{
+				id: 773,
+				type: "item",
+				item: {
+					id: "naturesaura:effect_powder",
+					Count: 1b,
+					tag: {
+						effect: "naturesaura:animal"
+					}
+				}
+			}]
+		},
+		{
+			title: "Forged in Hellfire",
+			icon: "naturesaura:blast_furnace_booster",
+			x: 0.5d,
+			y: -12.5d,
+			description: ["Place atop a Blast Furnace to increase the yield of your ore processing.."],
+			hide_dependency_lines: 1b,
+			dependencies: [I;747],
+			id: 774,
+			tasks: [
+				{
+					id: 775,
+					type: "item",
+					item: "naturesaura:blast_furnace_booster"
+				},
+				{
+					id: 796,
+					type: "item",
+					item: "minecraft:blast_furnace"
+				}
+			]
+		},
+		{
+			title: "Maxwell's Demon",
+			x: -1.5d,
+			y: -12.5d,
+			description: ["Draw Aura from the environment to heat Furnaces, Blast Furnaces, and Smokers."],
+			hide_dependency_lines: 1b,
+			dependencies: [I;
+				697,
+				701,
+				814
+			],
+			id: 776,
+			tasks: [{
+				id: 777,
+				type: "item",
+				item: "naturesaura:furnace_heater"
+			}]
+		},
+		{
+			title: "Abaddon's Gate",
+			x: 3.5d,
+			y: -11.0d,
+			description: [
+				"Ender Chests with a twist. Ender Crates can be assigned to a channel in an Anvil by simulatneously renaming them and combining them with an Eye of Ender.",
+				"",
+				"A small amount of Aura is used every time and items is moved in or out of the crate."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;809],
+			id: 778,
+			tasks: [{
+				id: 779,
+				type: "item",
+				item: "naturesaura:ender_crate"
+			}],
+			rewards: [
+				{
+					id: 829,
+					type: "item",
+					item: "naturesaura:ender_access"
+				},
+				{
+					id: 830,
+					type: "item",
+					item: "minecraft:ender_eye",
+					count: 2
+				}
+			]
+		},
+		{
+			title: "It Reaches Out",
+			x: 2.5d,
+			y: -11.5d,
+			subtitle: "Nothing Answers and It Reaches Out",
+			description: ["When placed upon an Adept Hopper, this allows for picking up items in a small area. This will respect filters in place on the hopper below it."],
+			hide_dependency_lines: 1b,
+			dependencies: [I;701],
+			id: 780,
+			tasks: [{
+				id: 781,
+				type: "item",
+				item: "naturesaura:hopper_upgrade"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -12.0d,
+			description: [
+				"A number of devices to assist with moving items around exist within Nature's Aura. For instance, this hopper that can be filtered using Item Frames.",
+				"",
+				"Refer to the Book of Natural Aura for specifics."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;701],
+			id: 782,
+			tasks: [{
+				id: 783,
+				type: "item",
+				item: "naturesaura:grated_chute"
+			}],
+			rewards: [{
+				id: 797,
+				type: "item",
+				item: "minecraft:item_frame"
+			}]
+		},
+		{
+			title: "Relative Frame of Reference",
+			x: -4.5d,
+			y: -11.0d,
+			description: [
+				"A simple chunk loader powered by Aura. ",
+				"",
+				"The range depends upon strength of the redstone signal it is provided. "
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;
+				715,
+				809
+			],
+			id: 784,
+			tasks: [{
+				id: 785,
+				type: "item",
+				item: "naturesaura:chunk_loader"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -19.0d,
+			description: [
+				"This basic Aura generator devours flowers nearby to replenish the surrounding Aura. ",
+				"",
+				"Be careful, as it will eat any flower. Feeding it a variety of flowers is key to better Aura generation."
+			],
+			dependencies: [I;705],
+			id: 786,
+			tasks: [{
+				id: 787,
+				type: "item",
+				item: "naturesaura:flower_generator"
+			}]
+		},
+		{
+			title: "Do. Or Do Not.",
+			x: -3.0d,
+			y: -20.0d,
+			subtitle: "There Is No Try.",
+			description: ["This basic Aura generator devours the moss off of mossy stone variants to replenish Aura. The plain stone variant is left behind. "],
+			dependencies: [I;705],
+			id: 788,
+			tasks: [{
+				id: 789,
+				type: "item",
+				item: "naturesaura:moss_generator"
+			}]
+		},
+		{
+			title: "Judge Me By My Size, Do You?",
+			x: -3.5d,
+			y: -18.0d,
+			description: ["A slightly more advanced Aura generator that has the benefit of limiting the growth of trees to their smaller forms, making certain types of tree farm simpler to build. "],
+			dependencies: [I;705],
+			id: 790,
+			tasks: [{
+				id: 791,
+				type: "item",
+				item: "naturesaura:oak_generator"
+			}]
+		},
+		{
+			title: "Esoteric Ecology",
+			icon: "naturesaura:chorus_generator",
+			x: -4.0d,
+			y: -20.0d,
+			description: ["Generating Aura doesn't stop here. Check the Book of Natural Aura for other more advanced options for keeping the Aura around you from depleting."],
+			dependencies: [I;705],
+			id: 794,
+			tasks: [{
+				id: 795,
+				type: "checkmark",
+				title: "Delving Deeper"
+			}]
+		},
+		{
+			title: "The Reaper Does Not Listen to the Harvest",
+			x: 0.5d,
+			y: -11.0d,
+			description: [
+				"One of the many side effects of lush Aura is that plants will be enticed to consume Aura and grow faster. This may not always be desireable, however.",
+				"",
+				"Placing Powder of Steady Growth will interrupt this effect in its area of influence. "
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;711],
+			id: 821,
+			tasks: [{
+				id: 822,
+				type: "item",
+				item: {
+					id: "naturesaura:effect_powder",
+					Count: 1b,
+					tag: {
+						effect: "naturesaura:plant_boost"
+					}
+				}
+			}]
+		},
+		{
+			title: "Closing the Floodgates",
+			x: -0.5d,
+			y: -11.5d,
+			description: [
+				"Lush Aura finds its way into all things. Nature seeks equilibrium, after all. ",
+				"",
+				"Placing down Powder of No Storage can prevent one aspect of this balancing, however, in that excess Aura will no longer flow into your Aura Trove."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;745],
+			id: 823,
+			tasks: [{
+				id: 824,
+				type: "item",
+				item: {
+					id: "naturesaura:effect_powder",
+					Count: 1b,
+					tag: {
+						effect: "naturesaura:cache_recharge"
+					}
+				}
+			}]
+		},
+		{
+			title: "Dust in the Wind",
+			x: -1.5d,
+			y: -11.0d,
+			description: [
+				"As lush Aura is wont to infuse the good soil of the Overworld, so too will it bring life to the barrens of Hell. ",
+				"",
+				"Placing Powder of Barrens will prevent the formation of grass on Netherrack in its area of influence."
+			],
+			hide_dependency_lines: 1b,
+			dependencies: [I;711],
+			id: 825,
+			tasks: [{
+				id: 826,
+				type: "item",
+				item: {
+					id: "naturesaura:effect_powder",
+					Count: 1b,
+					tag: {
+						effect: "naturesaura:nether_grass"
+					}
+				}
+			}]
+		},
+		{
+			x: -9.5d,
+			y: -22.0d,
+			description: [
+				"Need to determine appropriate rewards. May need to seek items from other mods or vanilla that would be relevant.",
+				"",
+				"Some possibilities from NA could include the following:",
+				"",
+				"Infused Iron, tainted gold, and the various totems used in crafting",
+				"Some of the more obscure tools like buckets of infinite color, eye of blaze and eye of shulker. ",
+				"Eir's token (end game recipe, so maybe not a lot). ",
+				"Token of Undying Friendship"
+			],
+			id: 827,
+			tasks: [{
+				id: 828,
+				type: "checkmark",
+				title: "TODO: Motoko"
 			}]
 		}
 	]

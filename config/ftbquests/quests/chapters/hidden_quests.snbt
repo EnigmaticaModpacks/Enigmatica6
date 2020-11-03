@@ -1,0 +1,20 @@
+{
+	id: 808,
+	filename: "hidden_quests",
+	order_index: 16,
+	title: "Hidden_Quests",
+	always_invisible: 1b,
+	default_quest_shape: "",
+	quests: [{
+		title: "Visit The End",
+		x: -10.0d,
+		y: -8.0d,
+		description: ["Visit The End"],
+		id: 809,
+		tasks: [{
+			id: 810,
+			type: "dimension",
+			dimension: "minecraft:the_end"
+		}]
+	}]
+}
