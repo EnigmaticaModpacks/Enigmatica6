@@ -551,21 +551,6 @@
       "fileSize": 191350
     },
     {
-      "folderName": "cookiecore-1.16.2-3.0.1-a75ceff.jar",
-      "fingerprint": 28989702,
-      "fileDateHash": 3472595951,
-      "sectionID": 8,
-      "individualFingerprints": [
-        28989702
-      ],
-      "status": 1,
-      "timestamp": "2020-10-31T21:36:43.0953797Z",
-      "lastWriteTimeUtc": "2020-10-31T20:52:57.2965361Z",
-      "queryTimestamp": "2020-10-31T21:36:44.338853Z",
-      "fileCount": 1,
-      "fileSize": 48770
-    },
-    {
       "folderName": "modular-routers-1.16.3-7.1.1-37.jar",
       "fingerprint": 2128933317,
       "fileDateHash": 192790402,
@@ -2531,21 +2516,6 @@
       "queryTimestamp": "2020-10-31T21:36:44.3049435Z",
       "fileCount": 1,
       "fileSize": 169841
-    },
-    {
-      "folderName": "magicfeather-1.16.2-3.1.0.jar",
-      "fingerprint": 3527869442,
-      "fileDateHash": 4022030101,
-      "sectionID": 8,
-      "individualFingerprints": [
-        3527869442
-      ],
-      "status": 1,
-      "timestamp": "2020-10-31T21:36:43.1785712Z",
-      "lastWriteTimeUtc": "2020-10-31T20:52:58.049557Z",
-      "queryTimestamp": "2020-10-31T21:36:44.2730663Z",
-      "fileCount": 1,
-      "fileSize": 17524
     },
     {
       "folderName": "curiouselytra-forge-1.16.3-4.0.0.1.jar",
@@ -5509,14 +5479,14 @@
       "addonID": 359344,
       "gameInstanceID": "34af6e0a-f386-43a0-9a47-6490ceedaafe",
       "installedFile": {
-        "id": 3097035,
-        "displayName": "Interactio-1.16.3-3.1.0a.jar",
-        "fileName": "Interactio-1.16.3-3.1.0a.jar",
-        "fileDate": "2020-10-30T13:10:09.8Z",
-        "fileLength": 175138,
+        "id": 3044677,
+        "displayName": "Interactio-1.16.2-3.0.0.jar",
+        "fileName": "Interactio-1.16.2-3.0.0.jar",
+        "fileDate": "2020-08-29T01:07:20.233Z",
+        "fileLength": 174294,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3097/35/Interactio-1.16.3-3.1.0a.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3044/677/Interactio-1.16.2-3.0.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -5524,17 +5494,17 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 466559706,
+            "fingerprint": 418470314,
             "type": 0
           },
           {
             "foldername": "dev",
-            "fingerprint": 294760898,
+            "fingerprint": 1922055840,
             "type": 0
           },
           {
             "foldername": "assets",
-            "fingerprint": 1429987995,
+            "fingerprint": 12938967,
             "type": 0
           },
           {
@@ -5549,13 +5519,15 @@
           },
           {
             "foldername": "interactio.refmap.json",
-            "fingerprint": 2099327145,
+            "fingerprint": 2343052458,
             "type": 0
           }
         ],
-        "packageFingerprint": 1695505739,
+        "packageFingerprint": 1949342227,
         "gameVersion": [
-          "1.16.3"
+          "1.16.3",
+          "Forge",
+          "1.16.2"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
@@ -5563,14 +5535,14 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2020-09-10T14:44:20.443Z",
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Interactio-1.16.3-3.1.0a.jar"
+        "FileNameOnDisk": "Interactio-1.16.2-3.0.0.jar"
       },
       "dateInstalled": "2020-10-17T21:01:49.5259059Z",
-      "dateUpdated": "2020-10-31T20:37:56.382677Z",
-      "dateLastUpdateAttempted": "2020-10-31T20:37:56.382677Z",
+      "dateUpdated": "2020-11-01T12:00:08.8713643Z",
+      "dateLastUpdateAttempted": "2020-11-01T12:00:08.8713643Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
@@ -6270,85 +6242,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 222908,
-      "gameInstanceID": "34af6e0a-f386-43a0-9a47-6490ceedaafe",
-      "installedFile": {
-        "id": 3097393,
-        "displayName": "1.16.2+ (3.0.1)",
-        "fileName": "cookiecore-1.16.2-3.0.1-a75ceff.jar",
-        "fileDate": "2020-10-30T20:15:03.337Z",
-        "fileLength": 48770,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3097/393/cookiecore-1.16.2-3.0.1-a75ceff.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2315805111,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2087109271,
-            "type": 0
-          },
-          {
-            "foldername": "logo.png",
-            "fingerprint": 1001256355,
-            "type": 0
-          },
-          {
-            "foldername": "be",
-            "fingerprint": 2296289044,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3056700204,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1438559181,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 28989702,
-        "gameVersion": [
-          "1.16.3",
-          "Forge",
-          "1.16.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "cookiecore-1.16.2-3.0.1-a75ceff.jar"
-      },
-      "dateInstalled": "2020-10-31T20:52:57.5415797Z",
-      "dateUpdated": "2020-10-31T20:52:57.5440884Z",
-      "dateLastUpdateAttempted": "2020-10-31T20:52:57.5440884Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 300331,
       "gameInstanceID": "34af6e0a-f386-43a0-9a47-6490ceedaafe",
       "installedFile": {
@@ -6531,97 +6424,6 @@
       "dateInstalled": "2020-10-17T21:01:49.3207045Z",
       "dateUpdated": "2020-10-31T20:40:37.314616Z",
       "dateLastUpdateAttempted": "2020-10-31T20:40:37.314616Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": false,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 284745,
-      "gameInstanceID": "34af6e0a-f386-43a0-9a47-6490ceedaafe",
-      "installedFile": {
-        "id": 3043612,
-        "displayName": "1.16.2+ (3.1.0)",
-        "fileName": "magicfeather-1.16.2-3.1.0.jar",
-        "fileDate": "2020-08-27T17:57:18.253Z",
-        "fileLength": 17524,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3043/612/magicfeather-1.16.2-3.1.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 309927,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 222908,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1602277764,
-            "type": 0
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 1156313706,
-            "type": 0
-          },
-          {
-            "foldername": "logo.png",
-            "fingerprint": 2351638477,
-            "type": 0
-          },
-          {
-            "foldername": "be",
-            "fingerprint": 1819204728,
-            "type": 0
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3124142650,
-            "type": 0
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3380797652,
-            "type": 0
-          }
-        ],
-        "packageFingerprint": 3527869442,
-        "gameVersion": [
-          "1.16.3",
-          "1.16.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-08-11T16:42:21.863Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "magicfeather-1.16.2-3.1.0.jar"
-      },
-      "dateInstalled": "2020-10-31T20:52:58.170255Z",
-      "dateUpdated": "2020-10-31T20:52:58.1722498Z",
-      "dateLastUpdateAttempted": "2020-10-31T20:52:58.1722498Z",
       "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
