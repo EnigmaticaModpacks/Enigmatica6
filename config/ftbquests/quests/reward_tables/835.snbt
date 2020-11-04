@@ -3,5 +3,26 @@
 	title: "Epic Nature's Aura Loot Box",
 	icon: "aquaculture:treasure_chest",
 	loot_size: 1,
-	rewards: []
+	rewards: [
+		{
+			item: "naturesaura:token_euphoria"
+		},
+		{
+			item: "naturesaura:token_terror"
+		},
+		{
+			item: "naturesaura:token_rage"
+		},
+		{
+			item: "naturesaura:token_grief"
+		},
+		{
+			item: "naturesaura:sky_ingot",
+			count: 2
+		},
+		{
+			item: "naturesaura:tainted_gold",
+			count: 8
+		}
+	]
 }
