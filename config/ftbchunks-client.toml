@@ -48,8 +48,12 @@ claimed_chunks_on_map = true
 own_claimed_chunks_on_map = true
 #Show waypoints in world
 in_world_waypoints = true
-#Show waypoints in world
-topography_mode = false
 #Show zone (claimed chunk or wilderness) under minimap
 minimap_zone = true
+#Different ways to render map
+#Allowed Values: NONE, NIGHT, TOPOGRAPHY, BLOCKS, BIOME_TEMPERATURE, LIGHT_SOURCES
+map_mode = "NONE"
+#How many blocks should height checks skip in water. 0 means flat water, ignoring terrain
+#Range: 0 ~ 128
+water_height_factor = 8
 
