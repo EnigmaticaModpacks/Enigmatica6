@@ -1,0 +1,31 @@
+
+#Rail Settings
+[rail]
+
+	#High Speed Rail Settings
+	[rail.highspeedrail]
+		#Maximum Speed for High Speed Rail (default: 5.0 blocks/tick)
+		#Range: 0.0 ~ 10.0
+		highSpeedRailMaxSpeed = 5.0
+		#Acceleration for High Speed Rail if Occupied (default: 4.0 blocks/tick^2)
+		#Range: 0.0 ~ 10.0
+		highSpeedRailAccelOccupied = 4.0
+		#Acceleration for High Speed Rail if Unoccupied (default: 2.0 blocks/tick^2)
+		#Range: 0.0 ~ 10.0
+		highSpeedRailAccelUnoccupied = 2.0
+
+	#Speed Clamp Rail Settings
+	[rail.speedclamprail]
+		#Speed for Speed Clamp Rail (default: 0.25 blocks/tick)
+		#Range: 0.0 ~ 10.0
+		speedClampRailSpeed = 0.25
+
+	#Teleport Rail Settings
+	[rail.teleportrail]
+		#Cost divided by natural log of this value. Lower values increase the cost
+		#Range: 2 ~ 100
+		teleportRailLogDivisionCost = 5
+		#Extra cost per dimension teleport
+		#Range: 0 ~ 1000000
+		teleportRailDimensionCost = 100
+
