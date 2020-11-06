@@ -1,0 +1,36 @@
+{
+	id: 841,
+	filename: "rftools_wip",
+	order_index: 17,
+	title: "RFTools WIP",
+	icon: "rftoolsbase:machine_frame",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			id: 842,
+			tasks: [{
+				id: 843,
+				type: "checkmark",
+				title: "Intro",
+				icon: "rftoolsbase:smartwrench"
+			}],
+			rewards: [{
+				id: 844,
+				type: "item",
+				item: "rftoolsbase:manual"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.0d,
+			id: 845,
+			tasks: [{
+				id: 846,
+				type: "item",
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+	]
+}

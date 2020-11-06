@@ -34,7 +34,7 @@
 		{
 			icon: {
 				id: "powah:wrench",
-				Count: 1b,
+				Count: true,
 				tag: {
 					PowahWrenchNBT: {}
 				}
@@ -88,7 +88,7 @@
 				type: "item",
 				item: {
 					id: "powah:wrench",
-					Count: 1b,
+					Count: true,
 					tag: {
 						PowahWrenchNBT: {}
 					}
@@ -116,7 +116,7 @@
 				title: "Furnator (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:furnator"
 					}
@@ -155,7 +155,7 @@
 				title: "Energy Cable (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:energy_cable"
 					}
@@ -182,7 +182,7 @@
 				title: "Magmator (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:magmator"
 					}
@@ -219,7 +219,7 @@
 				title: "Thermo Generator (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:thermo_generator"
 					}
@@ -255,7 +255,7 @@
 				title: "Solar Panel (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:solar_panel"
 					}
@@ -282,7 +282,7 @@
 			subtitle: "X-Ray Mode!",
 			description: ["The Lens of Ender is a nifty upgrade for any Powah Solar Panel. Just right click it on and it will be able to generate energy even without direct access to the sky!"],
 			dependencies: [I;386],
-			optional: 1b,
+			optional: true,
 			id: 388,
 			tasks: [{
 				id: 389,
@@ -346,7 +346,7 @@
 				title: "Reactor (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:reactor"
 					}
@@ -359,14 +359,14 @@
 					type: "item",
 					item: "powah:uraninite",
 					count: 32,
-					only_one: 1b
+					only_one: true
 				},
 				{
 					id: 446,
 					type: "item",
 					item: "minecraft:blue_ice",
 					count: 32,
-					only_one: 1b
+					only_one: true
 				}
 			]
 		},
@@ -377,7 +377,7 @@
 			subtitle: "Quite a dry sense of humor!",
 			description: ["Isn’t your reactor so cool huh? Uh… it isn’t? Well you better hurry up and go cool it! Any kind of ice will do, but Dry Ice, a new material from Powah is the best of them. Go get some, quick!"],
 			dependencies: [I;392],
-			optional: 1b,
+			optional: true,
 			id: 394,
 			tasks: [{
 				id: 395,
@@ -420,7 +420,7 @@
 					title: "Energizing Rod (Any Tier)",
 					item: {
 						id: "itemfilters:tag",
-						Count: 1b,
+						Count: true,
 						tag: {
 							value: "powah:energizing_rod"
 						}
@@ -455,7 +455,7 @@
 				title: "Energy Cell (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:energy_cell"
 					}
@@ -491,7 +491,7 @@
 				title: "Ender Cell (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:ender_cell"
 					}
@@ -525,7 +525,7 @@
 					title: "Player Transmitter (Any Tier)",
 					item: {
 						id: "itemfilters:tag",
-						Count: 1b,
+						Count: true,
 						tag: {
 							value: "powah:player_transmitter"
 						}
@@ -555,7 +555,7 @@
 				"This comes at a disadvantage however: you won’t be able to upgrade your channels from an Ender Gate, so you will always need to keep at least one Ender Cell somewhere."
 			],
 			dependencies: [I;400],
-			optional: 1b,
+			optional: true,
 			id: 404,
 			tasks: [{
 				id: 405,
@@ -563,7 +563,7 @@
 				title: "Ender Gate (Any Tier)",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "powah:ender_gate"
 					}
@@ -584,7 +584,7 @@
 			subtitle: "It can find you anywhere...",
 			description: ["The Dimensional Binding Card is a great update to a standard card. Right click a Binding Card on an Enderman and upgrade it: now it will be able to charge your inventory in any dimension and not just the one the Transmitter is in. Neat!"],
 			dependencies: [I;402],
-			optional: 1b,
+			optional: true,
 			id: 408,
 			tasks: [{
 				id: 409,
@@ -615,7 +615,7 @@
 				type: "item",
 				item: {
 					id: "powah:battery_hardened",
-					Count: 1b,
+					Count: true,
 					tag: {}
 				}
 			}]
@@ -736,7 +736,7 @@
 				'Note that all capacitor quests from now on will be optional "challenges". You will need to make some to progress, so you might want to start automating!'
 			],
 			dependencies: [I;410],
-			optional: 1b,
+			optional: true,
 			id: 420,
 			tasks: [{
 				id: 421,
@@ -758,7 +758,7 @@
 			subtitle: "It's lit!",
 			description: ["Here is the capacitor you will need for all the items in the blazing tier. Can you make this many?"],
 			dependencies: [I;412],
-			optional: 1b,
+			optional: true,
 			id: 422,
 			tasks: [{
 				id: 423,
@@ -780,7 +780,7 @@
 			subtitle: "How do I even pronounce Niotic?",
 			description: ["Here is the capacitor you will need for all the items in the niotic tier. It’s starting to get interesting huh?"],
 			dependencies: [I;414],
-			optional: 1b,
+			optional: true,
 			id: 424,
 			tasks: [{
 				id: 425,
@@ -802,7 +802,7 @@
 			subtitle: "Things are ramping up...",
 			description: ["Here is the capacitor you will need for all the items in the spirited tier. These challenges are starting to get a bit hard huh?"],
 			dependencies: [I;416],
-			optional: 1b,
+			optional: true,
 			id: 426,
 			tasks: [{
 				id: 427,
@@ -824,7 +824,7 @@
 			subtitle: "Just like that song! I think...",
 			description: ["Welcome to our Powah ultimate challenge! Can you automate the orb and grind out all the resources needed to complete this? Best of luck and remember: automation is key!"],
 			dependencies: [I;418],
-			optional: 1b,
+			optional: true,
 			id: 428,
 			tasks: [{
 				id: 429,
@@ -844,7 +844,7 @@
 					title: "Show off your progress!",
 					icon: "powah:ender_core",
 					command: "/say I have completed Powah's final crafting challenge! I bet you can't!",
-					player_command: 1b
+					player_command: true
 				},
 				{
 					id: 661,
@@ -857,7 +857,7 @@
 			title: "Ultimate Powah!",
 			icon: {
 				id: "powah:battery_nitro",
-				Count: 1b,
+				Count: true,
 				tag: {}
 			},
 			x: 0.0d,
@@ -872,7 +872,7 @@
 				"You can do it! Good luck!"
 			],
 			dependencies: [I;392],
-			optional: 1b,
+			optional: true,
 			id: 430,
 			tasks: [{
 				id: 431,
@@ -891,12 +891,12 @@
 					title: "Flex your achievement!",
 					icon: {
 						id: "powah:battery_nitro",
-						Count: 1b,
+						Count: true,
 						tag: {}
 					},
 					auto: "enabled",
 					command: "/say I have completed Powah's Ultimate Power Quest! Woot!",
-					player_command: 1b
+					player_command: true
 				},
 				{
 					id: 653,

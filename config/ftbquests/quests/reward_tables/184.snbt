@@ -3,8 +3,8 @@
 	title: "Legendary PNC:R Loot Box",
 	icon: "aquaculture:neptunes_bounty",
 	loot_size: 1,
-	hide_tooltip: 1b,
-	use_title: 1b,
+	hide_tooltip: true,
+	use_title: true,
 	rewards: [
 		{
 			item: "pneumaticcraft:programming_puzzle",
@@ -13,7 +13,7 @@
 		{
 			item: {
 				id: "pneumaticcraft:drone",
-				Count: 1b,
+				Count: true,
 				tag: {
 					"pneumaticcraft:air": 120000
 				}

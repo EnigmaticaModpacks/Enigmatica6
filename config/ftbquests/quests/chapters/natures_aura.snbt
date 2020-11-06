@@ -15,7 +15,7 @@
 			image: "#FFFFFF",
 			hover: [],
 			click: "",
-			dev: 0b
+			dev: false
 		},
 		{
 			x: 0.0d,
@@ -26,7 +26,7 @@
 			image: "#FFFFFF",
 			hover: [],
 			click: "",
-			dev: 0b
+			dev: false
 		},
 		{
 			x: 0.0d,
@@ -37,7 +37,7 @@
 			image: "#FFFFFF",
 			hover: [],
 			click: "",
-			dev: 0b
+			dev: false
 		}
 	],
 	quests: [
@@ -62,7 +62,7 @@
 					type: "item",
 					item: {
 						id: "patchouli:guide_book",
-						Count: 1b,
+						Count: true,
 						tag: {
 							"patchouli:book": "naturesaura:book"
 						}
@@ -73,7 +73,7 @@
 					type: "item",
 					item: {
 						id: "minecraft:shears",
-						Count: 1b,
+						Count: true,
 						tag: {
 							Damage: 0
 						}
@@ -98,6 +98,11 @@
 				id: 163,
 				type: "item",
 				item: "naturesaura:wood_stand"
+			}],
+			rewards: [{
+				id: 858,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -111,6 +116,11 @@
 				id: 167,
 				type: "item",
 				item: "naturesaura:gold_leaf"
+			}],
+			rewards: [{
+				id: 860,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -128,6 +138,11 @@
 				id: 169,
 				type: "item",
 				item: "naturesaura:gold_fiber"
+			}],
+			rewards: [{
+				id: 859,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -142,6 +157,11 @@
 				id: 561,
 				type: "item",
 				item: "naturesaura:offering_table"
+			}],
+			rewards: [{
+				id: 883,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -219,19 +239,36 @@
 					type: "item",
 					item: "naturesaura:token_grief"
 				}
+			],
+			rewards: [
+				{
+					id: 863,
+					type: "item",
+					item: "naturesaura:break_prevention"
+				},
+				{
+					id: 864,
+					type: "loot",
+					table: 10
+				}
 			]
 		},
 		{
 			title: "In Wrong, There Is Some Right",
 			x: 0.0d,
 			y: -19.5d,
-			description: [""],
+			description: ["Gold makes an excellent recepticle for the souls of the departed."],
 			dependencies: [I;693],
 			id: 697,
 			tasks: [{
 				id: 698,
 				type: "item",
 				item: "naturesaura:tainted_gold"
+			}],
+			rewards: [{
+				id: 886,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -248,19 +285,29 @@
 				id: 700,
 				type: "item",
 				item: "naturesaura:calling_spirit"
+			}],
+			rewards: [{
+				id: 884,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
 			title: "In Darkness, Some Light",
 			x: 1.5d,
 			y: -19.0d,
-			description: [""],
+			description: ["Iron makes an excellent recepticle for the essence of life. "],
 			dependencies: [I;693],
 			id: 701,
 			tasks: [{
 				id: 702,
 				type: "item",
 				item: "naturesaura:infused_iron"
+			}],
+			rewards: [{
+				id: 885,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -291,6 +338,18 @@
 					type: "item",
 					item: "naturesaura:token_sorrow"
 				}
+			],
+			rewards: [
+				{
+					id: 862,
+					type: "item",
+					item: "naturesaura:pet_reviver"
+				},
+				{
+					id: 865,
+					type: "loot",
+					table: 10
+				}
 			]
 		},
 		{
@@ -313,6 +372,11 @@
 				id: 706,
 				type: "item",
 				item: "naturesaura:ancient_sapling"
+			}],
+			rewards: [{
+				id: 873,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -330,6 +394,11 @@
 				id: 708,
 				type: "item",
 				item: "naturesaura:conversion_catalyst"
+			}],
+			rewards: [{
+				id: 881,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -347,6 +416,12 @@
 				id: 710,
 				type: "item",
 				item: "naturesaura:crushing_catalyst"
+			}],
+			rewards: [{
+				id: 857,
+				type: "item",
+				item: "naturesaura:gold_leaf",
+				count: 8
 			}]
 		},
 		{
@@ -364,6 +439,11 @@
 				id: 712,
 				type: "item",
 				item: "naturesaura:generator_limit_remover"
+			}],
+			rewards: [{
+				id: 888,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -377,6 +457,11 @@
 				id: 714,
 				type: "item",
 				item: "naturesaura:range_visualizer"
+			}],
+			rewards: [{
+				id: 887,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -394,6 +479,11 @@
 				id: 716,
 				type: "item",
 				item: "naturesaura:eye"
+			}],
+			rewards: [{
+				id: 871,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -417,7 +507,7 @@
 				type: "item",
 				item: {
 					id: "naturesaura:infused_iron_pickaxe",
-					Count: 1b,
+					Count: true,
 					tag: {
 						Damage: 0
 					}
@@ -436,6 +526,11 @@
 				id: 741,
 				type: "item",
 				item: "naturesaura:eye_improved"
+			}],
+			rewards: [{
+				id: 880,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -449,6 +544,11 @@
 				id: 746,
 				type: "item",
 				item: "naturesaura:sky_ingot"
+			}],
+			rewards: [{
+				id: 882,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -466,6 +566,11 @@
 				id: 751,
 				type: "item",
 				item: "naturesaura:aura_trove"
+			}],
+			rewards: [{
+				id: 879,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -487,18 +592,23 @@
 					type: "item",
 					item: "naturesaura:time_changer"
 				}
-			]
+			],
+			rewards: [{
+				id: 878,
+				type: "loot",
+				table: 11
+			}]
 		},
 		{
-			title: "Setting Boundaries",
-			x: -2.0d,
-			y: -9.0d,
+			title: "Line in the Sand",
+			x: -1.5d,
+			y: -10.5d,
 			description: [
 				"A simple apparatus that helps contain your livestock. Passive animals within the range of this block will be unable to step beyond it's boundaries.",
 				"",
 				"The range depends upon strength of the redstone signal it is provided. "
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;693],
 			id: 760,
 			tasks: [{
@@ -513,16 +623,16 @@
 			}]
 		},
 		{
-			title: "Crossing Boundaries",
+			title: "Crossing the Threshold",
 			icon: "naturesaura:animal_spawner",
-			x: 1.0d,
-			y: -9.0d,
+			x: 0.5d,
+			y: -10.5d,
 			description: [
 				"A ritual that harnesses the powers of creation itself, allowing its user to bring forth new life from the barest traces of material.",
 				"",
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;
 				696,
 				745
@@ -552,7 +662,12 @@
 					item: "naturesaura:ancient_planks",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 868,
+				type: "item",
+				item: "naturesaura:light_staff"
+			}]
 		},
 		{
 			title: "Constructive Interference",
@@ -565,7 +680,7 @@
 				"",
 				"Refer to the Book of Natural Aura for specific instructions."
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;701],
 			id: 764,
 			tasks: [{
@@ -600,7 +715,7 @@
 				"● Place a shovel in the frame to allow them to pick up snow. (To Be Confirmed)",
 				"● Place a Silk Touch pick in the frame to grant them the ability to silk touch blocks. "
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;
 				745,
 				748
@@ -612,56 +727,11 @@
 				type: "item",
 				item: "naturesaura:field_creator",
 				count: 2L
-			}]
-		},
-		{
-			title: "Ask and Receive the Bounty of the Earth",
-			x: -1.0d,
-			y: -10.0d,
-			description: [
-				"A potent material that when placed in the world will cause nearby Stone and Netherrack to transmute into more useful substances... ",
-				"",
-				"Transmuting Stone to Ores requires Overworld Aura, while Netherrack can be transmuted with Nether Aura.",
-				"",
-				"This effect requires excessive Aura in the surrounding area."
-			],
-			hide_dependency_lines: 1b,
-			dependencies: [I;711],
-			id: 768,
-			tasks: [{
-				id: 769,
-				type: "item",
-				item: {
-					id: "naturesaura:effect_powder",
-					Count: 1b,
-					tag: {
-						effect: "naturesaura:ore_spawn"
-					}
-				}
-			}]
-		},
-		{
-			title: "Of the Birds and the Bees",
-			x: 0.0d,
-			y: -10.0d,
-			description: [
-				"A potent material that when placed in the world will cause nearby passive animals to spontaneously breed.",
-				"",
-				"This effect requires excessive Aura in the surrounding area."
-			],
-			hide_dependency_lines: 1b,
-			dependencies: [I;711],
-			id: 772,
-			tasks: [{
-				id: 773,
-				type: "item",
-				item: {
-					id: "naturesaura:effect_powder",
-					Count: 1b,
-					tag: {
-						effect: "naturesaura:animal"
-					}
-				}
+			}],
+			rewards: [{
+				id: 866,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -669,8 +739,8 @@
 			icon: "naturesaura:blast_furnace_booster",
 			x: 0.5d,
 			y: -12.5d,
-			description: ["Place atop a Blast Furnace to increase the yield of your ore processing.."],
-			hide_dependency_lines: 1b,
+			description: ["Place atop a Blast Furnace to increase the yield of your ore processing."],
+			hide_dependency_lines: true,
 			dependencies: [I;747],
 			id: 774,
 			tasks: [
@@ -684,14 +754,19 @@
 					type: "item",
 					item: "minecraft:blast_furnace"
 				}
-			]
+			],
+			rewards: [{
+				id: 853,
+				type: "loot",
+				table: 10
+			}]
 		},
 		{
 			title: "Maxwell's Demon",
 			x: -1.5d,
 			y: -12.5d,
 			description: ["Draw Aura from the environment to heat Furnaces, Blast Furnaces, and Smokers."],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;
 				697,
 				701,
@@ -702,6 +777,11 @@
 				id: 777,
 				type: "item",
 				item: "naturesaura:furnace_heater"
+			}],
+			rewards: [{
+				id: 854,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -713,7 +793,7 @@
 				"",
 				"A small amount of Aura is used every time and items is moved in or out of the crate."
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;809],
 			id: 778,
 			tasks: [{
@@ -740,25 +820,31 @@
 			x: 2.5d,
 			y: -11.5d,
 			subtitle: "Nothing Answers and It Reaches Out",
-			description: ["When placed upon an Adept Hopper, this allows for picking up items in a small area. This will respect filters in place on the hopper below it."],
-			hide_dependency_lines: 1b,
+			description: ["Collect items in a small area when placed upon an Adept Hopper. Filters in place on the hopper below it will be respected."],
+			hide_dependency_lines: true,
 			dependencies: [I;701],
 			id: 780,
 			tasks: [{
 				id: 781,
 				type: "item",
 				item: "naturesaura:hopper_upgrade"
+			}],
+			rewards: [{
+				id: 867,
+				type: "item",
+				item: "darkutils:charm_portal"
 			}]
 		},
 		{
+			title: "Filtering Through The Morass",
 			x: 1.5d,
 			y: -12.0d,
 			description: [
-				"A number of devices to assist with moving items around exist within Nature's Aura. For instance, this hopper that can be filtered using Item Frames.",
+				"A number of devices to assist with moving items around exist within Nature's Aura. For instance, this hopper that can be filtered by placing Item Frames on it.",
 				"",
 				"Refer to the Book of Natural Aura for specifics."
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;701],
 			id: 782,
 			tasks: [{
@@ -769,7 +855,8 @@
 			rewards: [{
 				id: 797,
 				type: "item",
-				item: "minecraft:item_frame"
+				item: "minecraft:item_frame",
+				count: 4
 			}]
 		},
 		{
@@ -781,7 +868,7 @@
 				"",
 				"The range depends upon strength of the redstone signal it is provided. "
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;
 				715,
 				809
@@ -791,9 +878,15 @@
 				id: 785,
 				type: "item",
 				item: "naturesaura:chunk_loader"
+			}],
+			rewards: [{
+				id: 869,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
+			title: "Better Than Sheep",
 			x: -4.0d,
 			y: -19.0d,
 			description: [
@@ -807,6 +900,11 @@
 				id: 787,
 				type: "item",
 				item: "naturesaura:flower_generator"
+			}],
+			rewards: [{
+				id: 877,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -821,6 +919,11 @@
 				id: 789,
 				type: "item",
 				item: "naturesaura:moss_generator"
+			}],
+			rewards: [{
+				id: 876,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -834,6 +937,11 @@
 				id: 791,
 				type: "item",
 				item: "naturesaura:oak_generator"
+			}],
+			rewards: [{
+				id: 872,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -851,96 +959,94 @@
 			}]
 		},
 		{
-			title: "The Reaper Does Not Listen to the Harvest",
-			x: 0.5d,
-			y: -11.0d,
-			description: [
-				"One of the many side effects of lush Aura is that plants will be enticed to consume Aura and grow faster. This may not always be desireable, however.",
-				"",
-				"Placing Powder of Steady Growth will interrupt this effect in its area of influence. "
-			],
-			hide_dependency_lines: 1b,
-			dependencies: [I;711],
-			id: 821,
-			tasks: [{
-				id: 822,
-				type: "item",
-				item: {
-					id: "naturesaura:effect_powder",
-					Count: 1b,
-					tag: {
-						effect: "naturesaura:plant_boost"
-					}
-				}
-			}]
-		},
-		{
-			title: "Closing the Floodgates",
-			x: -0.5d,
-			y: -11.5d,
-			description: [
-				"Lush Aura finds its way into all things. Nature seeks equilibrium, after all. ",
-				"",
-				"Placing down Powder of No Storage can prevent one aspect of this balancing, however, in that excess Aura will no longer flow into your Aura Trove."
-			],
-			hide_dependency_lines: 1b,
-			dependencies: [I;745],
-			id: 823,
-			tasks: [{
-				id: 824,
-				type: "item",
-				item: {
-					id: "naturesaura:effect_powder",
-					Count: 1b,
-					tag: {
-						effect: "naturesaura:cache_recharge"
-					}
-				}
-			}]
-		},
-		{
 			title: "Dust in the Wind",
-			x: -1.5d,
+			x: -0.5d,
 			y: -11.0d,
 			description: [
-				"As lush Aura is wont to infuse the good soil of the Overworld, so too will it bring life to the barrens of Hell. ",
+				"Lush Aura has a variety of side effects which may or may not be desirable at any given time. Powders exist to control when and where these effects occur.",
 				"",
-				"Placing Powder of Barrens will prevent the formation of grass on Netherrack in its area of influence."
+				"● Barrens - Prevent the formation of grass on Netherrack.",
+				"",
+				"● Bountiful Core - Stone and Netherrack are converted to ore with the appropriate Aura type.",
+				"",
+				"● Steady Growth - Plants growth will no longer be boosted by Aura.",
+				"",
+				"● Fertility - Passive Animals will breed when able.",
+				"",
+				"● No Storage - Your Aura Cache or Trove will not charge in the area."
 			],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;711],
 			id: 825,
-			tasks: [{
-				id: 826,
-				type: "item",
-				item: {
-					id: "naturesaura:effect_powder",
-					Count: 1b,
-					tag: {
-						effect: "naturesaura:nether_grass"
+			tasks: [
+				{
+					id: 826,
+					type: "item",
+					item: {
+						id: "naturesaura:effect_powder",
+						Count: true,
+						tag: {
+							effect: "naturesaura:nether_grass"
+						}
+					}
+				},
+				{
+					id: 848,
+					type: "item",
+					item: {
+						id: "naturesaura:effect_powder",
+						Count: true,
+						tag: {
+							effect: "naturesaura:ore_spawn"
+						}
+					}
+				},
+				{
+					id: 849,
+					type: "item",
+					item: {
+						id: "naturesaura:effect_powder",
+						Count: true,
+						tag: {
+							effect: "naturesaura:plant_boost"
+						}
+					}
+				},
+				{
+					id: 850,
+					type: "item",
+					item: {
+						id: "naturesaura:effect_powder",
+						Count: true,
+						tag: {
+							effect: "naturesaura:animal"
+						}
+					}
+				},
+				{
+					id: 851,
+					type: "item",
+					item: {
+						id: "naturesaura:effect_powder",
+						Count: true,
+						tag: {
+							effect: "naturesaura:cache_recharge"
+						}
 					}
 				}
-			}]
-		},
-		{
-			x: -9.5d,
-			y: -22.0d,
-			description: [
-				"Need to determine appropriate rewards. May need to seek items from other mods or vanilla that would be relevant.",
-				"",
-				"Some possibilities from NA could include the following:",
-				"",
-				"Infused Iron, tainted gold, and the various totems used in crafting",
-				"Some of the more obscure tools like buckets of infinite color, eye of blaze and eye of shulker. ",
-				"Eir's token (end game recipe, so maybe not a lot). ",
-				"Token of Undying Friendship"
 			],
-			id: 827,
-			tasks: [{
-				id: 828,
-				type: "checkmark",
-				title: "TODO: Motoko"
-			}]
+			rewards: [
+				{
+					id: 852,
+					type: "item",
+					item: "naturesaura:powder_placer"
+				},
+				{
+					id: 870,
+					type: "loot",
+					table: 11
+				}
+			]
 		}
 	]
 }
