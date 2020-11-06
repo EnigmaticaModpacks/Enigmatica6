@@ -34,7 +34,7 @@
 				type: "item",
 				item: {
 					id: "immersiveengineering:hammer",
-					Count: 1b,
+					Count: true,
 					tag: {
 						Damage: 0
 					}
@@ -336,7 +336,7 @@
 					title: "Any forge:storage_blocks/steel",
 					item: {
 						id: "itemfilters:tag",
-						Count: 1b,
+						Count: true,
 						tag: {
 							value: "forge:storage_blocks/steel"
 						}
@@ -413,7 +413,7 @@
 			title: "Sawmill",
 			icon: {
 				id: "immersiveengineering:sawblade",
-				Count: 1b,
+				Count: true,
 				tag: {
 					Damage: 0
 				}
@@ -429,7 +429,7 @@
 					type: "item",
 					item: {
 						id: "immersiveengineering:sawblade",
-						Count: 1b,
+						Count: true,
 						tag: {
 							Damage: 0
 						}
@@ -562,7 +562,7 @@
 					}
 				},
 				id: "immersiveengineering:railgun",
-				Count: 1b
+				Count: true
 			},
 			x: -6.0d,
 			y: 0.0d,
@@ -581,7 +581,7 @@
 							}
 						},
 						id: "immersiveengineering:railgun",
-						Count: 1b
+						Count: true
 					}
 				},
 				{
@@ -595,7 +595,7 @@
 							}
 						},
 						id: "immersiveengineering:shield",
-						Count: 1b,
+						Count: true,
 						tag: {
 							Damage: 0
 						}
@@ -612,7 +612,7 @@
 							}
 						},
 						id: "immersiveengineering:drill",
-						Count: 1b,
+						Count: true,
 						tag: {}
 					}
 				}
@@ -637,7 +637,7 @@
 					type: "item",
 					item: {
 						id: "immersiveengineering:survey_tools",
-						Count: 1b,
+						Count: true,
 						tag: {
 							Damage: 0
 						}
@@ -648,7 +648,7 @@
 					type: "item",
 					item: {
 						id: "immersiveengineering:coresample",
-						Count: 1b,
+						Count: true,
 						tag: {}
 					}
 				}

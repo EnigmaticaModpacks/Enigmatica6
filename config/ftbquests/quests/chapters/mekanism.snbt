@@ -5,11 +5,11 @@
 	title: "Mekanism WIP",
 	icon: {
 		id: "mekanism:robit",
-		Count: 1b,
+		Count: true,
 		tag: {
 			mekData: {
 				EnergyContainers: [{
-					Container: 0b,
+					Container: false,
 					stored: "100000"
 				}]
 			}

@@ -28,7 +28,7 @@
 					type: "item",
 					item: {
 						id: "pneumaticcraft:pneumatic_wrench",
-						Count: 1b,
+						Count: true,
 						tag: {
 							"pneumaticcraft:air": 30000
 						}
@@ -39,7 +39,7 @@
 					type: "item",
 					item: {
 						id: "patchouli:guide_book",
-						Count: 1b,
+						Count: true,
 						tag: {
 							"patchouli:book": "pneumaticcraft:book"
 						}
@@ -210,7 +210,7 @@
 				type: "item",
 				item: {
 					id: "pneumaticcraft:camo_applicator",
-					Count: 1b,
+					Count: true,
 					tag: {
 						"pneumaticcraft:air": 30000
 					}
@@ -572,8 +572,8 @@
 		},
 		{
 			title: "Wanna Hear a Corny Joke?",
-			x: -1.0d,
-			y: -6.5d,
+			x: -0.5d,
+			y: -6.0d,
 			description: ["I’ll see myself out."],
 			dependencies: [I;253],
 			id: 256,
@@ -590,8 +590,8 @@
 		},
 		{
 			title: "Give Peas a Chance",
-			x: 2.0d,
-			y: -6.5d,
+			x: 1.5d,
+			y: -6.0d,
 			description: ["Or any seed, for that matter."],
 			dependencies: [I;253],
 			id: 259,
@@ -609,7 +609,7 @@
 		{
 			title: "Slow Burn",
 			x: 0.5d,
-			y: -5.5d,
+			y: -4.5d,
 			description: ["A sustainable way forward."],
 			dependencies: [I;
 				259,
@@ -622,14 +622,14 @@
 				item: "pneumaticcraft:biodiesel_bucket"
 			}],
 			rewards: [{
-				id: 555,
+				id: 889,
 				type: "loot",
-				table: 1
+				table: 2
 			}]
 		},
 		{
 			x: 0.5d,
-			y: -3.5d,
+			y: -2.5d,
 			shape: "octagon",
 			description: ["Find a way to fully automate the creation of plastic sheets and speed upgrades from biodiesel with only PNC:R and vanilla mechanics. Consider the use of drones for farming and logistics."],
 			dependencies: [I;263],
@@ -640,7 +640,7 @@
 				title: "Sustainability Challenge",
 				icon: {
 					id: "pneumaticcraft:logistics_drone",
-					Count: 1b,
+					Count: true,
 					tag: {
 						"pneumaticcraft:air": 120000
 					}
@@ -780,7 +780,7 @@
 				type: "item",
 				item: {
 					id: "pneumaticcraft:logistics_configurator",
-					Count: 1b,
+					Count: true,
 					tag: {
 						"pneumaticcraft:air": 30000
 					}
@@ -1053,7 +1053,7 @@
 			y: -8.5d,
 			shape: "rsquare",
 			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"],
-			hide_dependency_lines: 1b,
+			hide_dependency_lines: true,
 			dependencies: [I;
 				189,
 				244,

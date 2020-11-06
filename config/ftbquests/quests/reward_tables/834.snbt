@@ -3,6 +3,8 @@
 	title: "Rare Nature's Aura Loot Box",
 	icon: "aquaculture:lockbox",
 	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
 	rewards: [
 		{
 			item: "naturesaura:pickup_stopper"
@@ -26,6 +28,10 @@
 		},
 		{
 			item: "naturesaura:token_sorrow"
+		},
+		{
+			item: "naturesaura:ancient_log",
+			count: 16
 		}
 	]
 }
