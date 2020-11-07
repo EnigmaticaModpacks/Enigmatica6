@@ -101,6 +101,7 @@ var modPriorities = [
     'emendatusenigmatica',
     'minecraft',
     'immersiveengineering',
+    'thermal',
     // 'create',
     'mekanism',
     'jaopca',
