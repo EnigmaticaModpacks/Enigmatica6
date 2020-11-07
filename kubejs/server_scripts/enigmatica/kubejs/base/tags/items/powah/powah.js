@@ -1,5 +1,5 @@
 //Tiers array
-var tiers = ['starter', 'basic', 'hardened', 'blazing', 'nitoic', 'spirited', 'nitro'];
+var tiers = ['starter', 'basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro'];
 
 //Blocks array
 var blocks = [
