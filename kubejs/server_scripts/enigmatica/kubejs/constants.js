@@ -86,6 +86,8 @@ var materialsToUnify = [
     'sulfur',
     'cinnabar',
     'niter',
+    'potassium_nitrate',
+    'saltpeter',
     'apatite',
 
     'redstone',
@@ -102,19 +104,16 @@ var modPriorities = [
     'minecraft',
     'immersiveengineering',
     'thermal',
-    // 'create',
     'mekanism',
     'jaopca',
     'kubejs',
     'pneumaticcraft',
-    // 'occultism',
     'tmechworks',
     'industrialforegoing',
     'botania',
     'quark',
     'pedestals',
-    'refinedstorage',
-    'productivebees'
+    'refinedstorage'
 ];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
