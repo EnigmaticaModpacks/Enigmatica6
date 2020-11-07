@@ -13,9 +13,9 @@
 	default_quest_shape: "",
 	quests: [
 		{
-			title: "Swiss-Army… Hammer",
-			x: -4.0d,
-			y: -11.0d,
+			x: -7.5d,
+			y: -8.5d,
+			subtitle: "Swiss-Army… Hammer",
 			description: [
 				"A versatile multi-tool capable of clearing large areas with ease. Sneak right click to access the GUI where Drill Bits and Enchanted Books can be installed as well as changing the drill mode.",
 				"",
@@ -35,9 +35,9 @@
 			}]
 		},
 		{
-			title: "Lucy In the Sky",
-			x: -4.0d,
-			y: -9.5d,
+			x: -7.5d,
+			y: -7.5d,
+			subtitle: "Lucy In the Sky",
 			description: ["A bit faster than the Compressed Iron Bit and with basic vein mining functions."],
 			dependencies: [I;454],
 			id: 457,
@@ -54,10 +54,9 @@
 			}]
 		},
 		{
-			title: "Was I a Good Bit?",
-			x: -4.0d,
-			y: -8.0d,
-			subtitle: "I'm told you were the best.",
+			x: -7.5d,
+			y: -6.5d,
+			subtitle: "I'm Told You Were The Best",
 			description: ["Faster still and with full vein mining capabilities."],
 			dependencies: [I;457],
 			id: 460,
@@ -74,10 +73,9 @@
 			}]
 		},
 		{
-			title: "Send Your Armies But They'll Never Be Enough",
 			x: -10.0d,
 			y: -9.5d,
-			subtitle: "My Shell's Too Tough",
+			subtitle: "Send Your Armies But They'll Never Be Enough, My Shell's Too Tough",
 			description: [
 				"Notable Upgrades",
 				"",
@@ -101,10 +99,9 @@
 			}]
 		},
 		{
-			title: "Soak It In 'Cause It's The Last You'll Ever See",
 			x: -10.0d,
-			y: -11.0d,
-			subtitle: "C'est La Vie, Mon Ami",
+			y: -10.5d,
+			subtitle: "Soak It In 'Cause It's The Last You'll Ever See",
 			description: [
 				"Notable Upgrades",
 				"",
@@ -130,10 +127,9 @@
 			}]
 		},
 		{
-			title: "I'll Never Hide",
 			x: -10.0d,
-			y: -6.5d,
-			subtitle: "I Can't. I'm Too Shiny",
+			y: -7.5d,
+			subtitle: "I'll Never Hide. I Can't. I'm Too Shiny",
 			description: [
 				"Notable Upgrades ",
 				"",
@@ -156,10 +152,9 @@
 			}]
 		},
 		{
-			title: "Now It's Time to Kick Your...",
 			x: -10.0d,
-			y: -5.0d,
-			subtitle: "Hiney",
+			y: -6.5d,
+			subtitle: "Now It's Time to Kick Your...Hiney",
 			description: [
 				"Notable Upgrades ",
 				"",
@@ -185,10 +180,10 @@
 			}]
 		},
 		{
-			title: "You Tried to Be Tough",
+			title: "Armor Upgrade",
 			x: -10.0d,
-			y: -8.0d,
-			subtitle: "But Your Armor's Just Not Hard Enough",
+			y: -8.5d,
+			subtitle: "You Tried to Be Tough But Your Armor's Just Not Hard Enough",
 			description: ["Each armor piece accepts up to four of these for extreme protection."],
 			dependencies: [I;
 				465,
@@ -206,8 +201,8 @@
 			}]
 		},
 		{
-			x: -8.5d,
-			y: -10.5d,
+			x: -9.0d,
+			y: -10.0d,
 			dependencies: [I;465],
 			id: 473,
 			tasks: [{
@@ -217,8 +212,8 @@
 			}]
 		},
 		{
-			x: -11.5d,
-			y: -10.5d,
+			x: -11.0d,
+			y: -10.0d,
 			dependencies: [I;465],
 			id: 475,
 			tasks: [{
@@ -228,7 +223,7 @@
 			}]
 		},
 		{
-			x: -8.5d,
+			x: -9.0d,
 			y: -9.0d,
 			dependencies: [I;463],
 			id: 477,
@@ -239,7 +234,7 @@
 			}]
 		},
 		{
-			x: -11.5d,
+			x: -11.0d,
 			y: -9.0d,
 			dependencies: [I;463],
 			id: 479,
@@ -250,8 +245,8 @@
 			}]
 		},
 		{
-			x: -11.5d,
-			y: -5.5d,
+			x: -11.0d,
+			y: -7.0d,
 			dependencies: [I;469],
 			id: 483,
 			tasks: [{
@@ -261,9 +256,9 @@
 			}]
 		},
 		{
-			title: "Shared Experiences",
-			x: -8.5d,
-			y: -7.0d,
+			x: -9.0d,
+			y: -8.0d,
+			subtitle: "Shared Experiences",
 			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact."],
 			dependencies: [I;325],
 			id: 487,
@@ -274,8 +269,10 @@
 			}]
 		},
 		{
-			x: -11.5d,
-			y: -7.0d,
+			title: "Jumping Upgrade",
+			x: -11.0d,
+			y: -8.0d,
+			description: [""],
 			dependencies: [I;467],
 			id: 493,
 			tasks: [{
@@ -285,8 +282,10 @@
 			}]
 		},
 		{
-			x: -8.5d,
-			y: -5.5d,
+			title: "Jet Boots Upgrade",
+			x: -9.0d,
+			y: -7.0d,
+			description: [""],
 			dependencies: [I;469],
 			id: 501,
 			tasks: [{
@@ -296,9 +295,9 @@
 			}]
 		},
 		{
-			title: "Target Acquired",
-			x: -2.5d,
-			y: -8.0d,
+			x: -6.0d,
+			y: -7.5d,
+			subtitle: "Target Acquired",
 			description: [
 				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands.",
 				"",
@@ -322,9 +321,9 @@
 			}]
 		},
 		{
-			title: "Stand and Deliver",
-			x: -1.0d,
-			y: -11.0d,
+			x: -5.0d,
+			y: -9.5d,
+			subtitle: "Stand and Deliver",
 			description: [""],
 			dependencies: [I;507],
 			id: 505,
@@ -346,9 +345,9 @@
 			}]
 		},
 		{
-			title: "Leveling the Playing Field",
-			x: -2.5d,
-			y: -11.0d,
+			x: -6.0d,
+			y: -9.5d,
+			subtitle: "Leveling the Playing Field",
 			description: [""],
 			dependencies: [I;179],
 			id: 507,
@@ -370,9 +369,10 @@
 			}]
 		},
 		{
-			title: "Something For Every Occasion",
-			x: -2.5d,
-			y: -9.5d,
+			title: "Ammunition",
+			x: -6.0d,
+			y: -8.5d,
+			subtitle: "Something For Every Occasion",
 			description: [
 				"Craft any two types of specialized ammo and give them a try. ",
 				"",
@@ -440,9 +440,9 @@
 			]
 		},
 		{
-			title: "Inevitable Escalation",
-			x: -1.0d,
-			y: -9.5d,
+			x: -5.0d,
+			y: -8.5d,
+			subtitle: "Inevitable Escalation",
 			description: [""],
 			dependencies: [I;507],
 			id: 526,
@@ -453,9 +453,10 @@
 			}]
 		},
 		{
-			title: "This Is How You Get SkyNET",
-			x: -1.0d,
-			y: -8.0d,
+			x: -5.0d,
+			y: -7.5d,
+			subtitle: "This Is How You Get SkyNET",
+			description: [""],
 			dependencies: [I;526],
 			id: 528,
 			tasks: [{
@@ -465,9 +466,9 @@
 			}]
 		},
 		{
-			title: "It's Over! I Have the High Ground!",
-			x: -10.0d,
-			y: -12.5d,
+			x: -7.5d,
+			y: -10.5d,
+			subtitle: "It's Over! I Have the High Ground!",
 			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."],
 			dependencies: [I;360],
 			id: 530,

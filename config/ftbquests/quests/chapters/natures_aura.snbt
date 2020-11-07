@@ -45,7 +45,7 @@
 			title: "Nature's Aura",
 			icon: "naturesaura:aura_bloom",
 			x: -0.5d,
-			y: -14.0d,
+			y: -9.0d,
 			description: [
 				"Nature's Aura is a druidic themed mod that uses the omnipresent 'aura' to derive its power. ",
 				"",
@@ -82,9 +82,10 @@
 			]
 		},
 		{
-			title: "Tire-toi une bûche",
+			title: "Ritual of the Forest",
 			x: -0.5d,
-			y: -17.0d,
+			y: -12.0d,
+			subtitle: "Tire-Toi Une Bûche",
 			description: [
 				"The Ritual of the Forest is the basis for all magic to come. It draws it's power from the sacrifice of life at the heart of the ritual.",
 				"",
@@ -95,9 +96,10 @@
 			dependencies: [I;164],
 			id: 162,
 			tasks: [{
-				id: 163,
+				id: 895,
 				type: "item",
-				item: "naturesaura:wood_stand"
+				item: "naturesaura:wood_stand",
+				count: 8L
 			}],
 			rewards: [{
 				id: 858,
@@ -106,9 +108,9 @@
 			}]
 		},
 		{
-			title: "That's The Ticket",
 			x: -0.5d,
-			y: -16.0d,
+			y: -11.0d,
+			subtitle: "That's The Ticket",
 			description: ["Now that your threads have spread, harvest some Golden Leaf by breaking the Golden Leaves that have formed in your trees."],
 			dependencies: [I;168],
 			id: 164,
@@ -124,9 +126,9 @@
 			}]
 		},
 		{
-			title: "The Threads That Bind Us",
 			x: -0.5d,
-			y: -15.0d,
+			y: -10.0d,
+			subtitle: "The Threads That Bind Us",
 			description: [
 				"To begin apon the naturalist's path, Brilliant Fiber should be woven into the leaves of trees. ",
 				"",
@@ -146,11 +148,11 @@
 			}]
 		},
 		{
-			title: "Just Nod If You Can Hear Me",
 			icon: "naturesaura:offering_table",
 			x: 0.5d,
-			y: -21.0d,
-			description: [""],
+			y: -16.0d,
+			subtitle: "Just Nod If You Can Hear Me",
+			description: ["Place your offerings in the bowl and then toss down a Spirit of Calling to complete the ritual."],
 			dependencies: [I;699],
 			id: 560,
 			tasks: [{
@@ -165,10 +167,10 @@
 			}]
 		},
 		{
-			title: "The Duality of Life and Death",
 			icon: "naturesaura:nature_altar",
 			x: 0.5d,
-			y: -18.5d,
+			y: -13.5d,
+			subtitle: "The Duality of Life and Death",
 			description: [
 				"The Natural Altar is the heart of two ritual practices; one to infuse life into objects and another to infuse death. ",
 				"",
@@ -212,9 +214,9 @@
 			]
 		},
 		{
-			title: "Purity of Expression",
-			x: 2.0d,
-			y: -22.0d,
+			title: "The Purest Expression",
+			x: 1.5d,
+			y: -16.5d,
 			description: ["Emotions made manifest in their purest forms."],
 			dependencies: [I;560],
 			id: 695,
@@ -254,9 +256,9 @@
 			]
 		},
 		{
-			title: "In Wrong, There Is Some Right",
 			x: 0.0d,
-			y: -19.5d,
+			y: -14.5d,
+			subtitle: "In Wrong, There Is Some Right",
 			description: ["Gold makes an excellent recepticle for the souls of the departed."],
 			dependencies: [I;693],
 			id: 697,
@@ -272,9 +274,9 @@
 			}]
 		},
 		{
-			title: "Harmony In Opposites",
 			x: 1.0d,
-			y: -20.0d,
+			y: -15.0d,
+			subtitle: "Harmony In Opposites",
 			description: ["When balance is achieved, great things become possible."],
 			dependencies: [I;
 				697,
@@ -293,9 +295,9 @@
 			}]
 		},
 		{
-			title: "In Darkness, Some Light",
 			x: 1.5d,
-			y: -19.0d,
+			y: -14.0d,
+			subtitle: "In Darkness, Some Light",
 			description: ["Iron makes an excellent recepticle for the essence of life. "],
 			dependencies: [I;693],
 			id: 701,
@@ -313,7 +315,7 @@
 		{
 			title: "The Body Follows the Mind",
 			x: -0.5d,
-			y: -18.0d,
+			y: -13.0d,
 			description: ["To master your emotions is not to supress them. It is to process them with diligence."],
 			dependencies: [I;162],
 			id: 703,
@@ -354,8 +356,8 @@
 		},
 		{
 			title: "Ebb and Flow",
-			x: -3.0d,
-			y: -19.0d,
+			x: -2.5d,
+			y: -14.0d,
 			subtitle: "Give And Take",
 			description: [
 				"The trees grown from Ancient Saplings server two primary purposes. ",
@@ -380,9 +382,9 @@
 			}]
 		},
 		{
-			title: "To Obtain, Something Must Be Lost",
-			x: 0.5d,
-			y: -23.5d,
+			x: 0.0d,
+			y: -18.5d,
+			subtitle: "To Obtain, Something Equal Must Be Lost",
 			description: [
 				"The Transmutation Catalyst augments the Natural and Crimson Altars to allow them to perform further transformations. ",
 				"",
@@ -402,9 +404,9 @@
 			}]
 		},
 		{
-			title: "For Ivy Climbs the Crumbling Hall",
-			x: 2.0d,
-			y: -17.5d,
+			x: 1.5d,
+			y: -12.5d,
+			subtitle: "For Ivy Climbs the Crumbling Hall",
 			description: [
 				"The Crumbling Catalyst augments the Natural and Crimson Altars to allow them to perform further transformations. ",
 				"",
@@ -425,9 +427,9 @@
 			}]
 		},
 		{
-			title: "An Explosion of Life",
-			x: 3.0d,
-			y: -23.5d,
+			x: 2.0d,
+			y: -17.5d,
+			subtitle: "An Explosion of Life",
 			description: [
 				"Unlock the true potential of the rituals you use to replenish Aura. ",
 				"",
@@ -447,9 +449,9 @@
 			}]
 		},
 		{
-			title: "Relax, I'll Need Some Information First",
-			x: 3.0d,
-			y: -21.0d,
+			x: 2.5d,
+			y: -15.0d,
+			subtitle: "Relax, I'll Need Some Information First",
 			description: ["Many devices have a specific range that can only be seen by right clicking on them with a Mystical Magnifier. It's a valuable tool to any natural botanist."],
 			dependencies: [I;701],
 			id: 713,
@@ -465,9 +467,9 @@
 			}]
 		},
 		{
-			title: "It's Still Magic Even If You Know How It's Done",
 			x: -2.0d,
-			y: -17.5d,
+			y: -12.5d,
+			subtitle: "It's Still Magic Even If You Know How It's Done",
 			description: [
 				"Untrained eyes will notice subtle lights and enhanced growth in areas lush with Aura. ",
 				"",
@@ -487,9 +489,9 @@
 			}]
 		},
 		{
-			title: "Geo-Caching 101",
-			x: 3.5d,
-			y: -20.0d,
+			x: 2.5d,
+			y: -14.0d,
+			subtitle: "Geo-Caching 101",
 			description: [
 				"A portable source of Aura that can be be put to good use with a variety of tools. ",
 				"",
@@ -515,10 +517,9 @@
 			}]
 		},
 		{
-			title: "Open Your Eyes",
 			x: -1.0d,
-			y: -23.5d,
-			subtitle: "Then Open Your Eyes Again",
+			y: -18.5d,
+			subtitle: "Open Your Eyes, Then Open Your Eyes Again",
 			description: ["An advanced version of the Natural Eye which grants it's owner the ability to see ever more precise details of the Aura around them."],
 			dependencies: [I;745],
 			id: 740,
@@ -534,9 +535,9 @@
 			}]
 		},
 		{
-			title: "A Hat Full of Sky",
 			x: -0.5d,
-			y: -22.5d,
+			y: -17.5d,
+			subtitle: "A Hat Full of Sky",
 			description: ["Metal infused with the boundless energies of the divine."],
 			dependencies: [I;560],
 			id: 745,
@@ -552,9 +553,9 @@
 			}]
 		},
 		{
-			title: "Thy Cup Runneth Over",
 			x: -1.5d,
-			y: -22.5d,
+			y: -17.5d,
+			subtitle: "Thy Cup Runneth Over",
 			description: [
 				"Higher capacity than the Aura Cache.",
 				"",
@@ -574,10 +575,11 @@
 			}]
 		},
 		{
-			title: "The Inexorable March of Time",
+			title: "Shifting Sundial",
 			icon: "naturesaura:time_changer",
-			x: -2.5d,
-			y: -21.5d,
+			x: -1.0d,
+			y: -16.0d,
+			subtitle: "The Inexorable March of Time",
 			description: ["This powerful ritual allows you to control the very flow of time, for a price."],
 			dependencies: [I;560],
 			id: 752,
@@ -600,9 +602,9 @@
 			}]
 		},
 		{
-			title: "Line in the Sand",
 			x: -1.5d,
-			y: -10.5d,
+			y: -6.5d,
+			subtitle: "Line in the Sand",
 			description: [
 				"A simple apparatus that helps contain your livestock. Passive animals within the range of this block will be unable to step beyond it's boundaries.",
 				"",
@@ -623,10 +625,10 @@
 			}]
 		},
 		{
-			title: "Crossing the Threshold",
 			icon: "naturesaura:animal_spawner",
 			x: 0.5d,
-			y: -10.5d,
+			y: -6.5d,
+			subtitle: "Crossing the Threshold",
 			description: [
 				"A ritual that harnesses the powers of creation itself, allowing its user to bring forth new life from the barest traces of material.",
 				"",
@@ -670,9 +672,9 @@
 			}]
 		},
 		{
-			title: "Constructive Interference",
 			x: -2.5d,
-			y: -12.0d,
+			y: -8.0d,
+			subtitle: "Constructive Interference",
 			description: [
 				"The Imperceptible Builder assists in complicated automation tasks, taking blocks from nearby inventories and placing them down. ",
 				"",
@@ -702,9 +704,10 @@
 			]
 		},
 		{
-			title: "Destructive Interference",
+			title: "Aura Field Creators",
 			x: -3.5d,
-			y: -11.5d,
+			y: -7.5d,
+			subtitle: "Destructive Interference",
 			description: [
 				"Aura Field Creator can be linked together to form a zone between them where blocks are broken. ",
 				"",
@@ -735,10 +738,10 @@
 			}]
 		},
 		{
-			title: "Forged in Hellfire",
 			icon: "naturesaura:blast_furnace_booster",
 			x: 0.5d,
-			y: -12.5d,
+			y: -8.5d,
+			subtitle: "Forged in Hellfire",
 			description: ["Place atop a Blast Furnace to increase the yield of your ore processing."],
 			hide_dependency_lines: true,
 			dependencies: [I;747],
@@ -762,9 +765,9 @@
 			}]
 		},
 		{
-			title: "Maxwell's Demon",
 			x: -1.5d,
-			y: -12.5d,
+			y: -8.5d,
+			subtitle: "Maxwell's Demon",
 			description: ["Draw Aura from the environment to heat Furnaces, Blast Furnaces, and Smokers."],
 			hide_dependency_lines: true,
 			dependencies: [I;
@@ -785,9 +788,9 @@
 			}]
 		},
 		{
-			title: "Abaddon's Gate",
 			x: 3.5d,
-			y: -11.0d,
+			y: -7.0d,
+			subtitle: "Abaddon's Gate",
 			description: [
 				"Ender Chests with a twist. Ender Crates can be assigned to a channel in an Anvil by simulatneously renaming them and combining them with an Eye of Ender.",
 				"",
@@ -816,10 +819,9 @@
 			]
 		},
 		{
-			title: "It Reaches Out",
 			x: 2.5d,
-			y: -11.5d,
-			subtitle: "Nothing Answers and It Reaches Out",
+			y: -7.5d,
+			subtitle: "It Reaches Out Nothing Answers and It Reaches Out",
 			description: ["Collect items in a small area when placed upon an Adept Hopper. Filters in place on the hopper below it will be respected."],
 			hide_dependency_lines: true,
 			dependencies: [I;701],
@@ -836,9 +838,9 @@
 			}]
 		},
 		{
-			title: "Filtering Through The Morass",
 			x: 1.5d,
-			y: -12.0d,
+			y: -8.0d,
+			subtitle: "Filtering Through The Morass",
 			description: [
 				"A number of devices to assist with moving items around exist within Nature's Aura. For instance, this hopper that can be filtered by placing Item Frames on it.",
 				"",
@@ -860,9 +862,9 @@
 			}]
 		},
 		{
-			title: "Relative Frame of Reference",
 			x: -4.5d,
-			y: -11.0d,
+			y: -7.0d,
+			subtitle: "Relative Frame of Reference",
 			description: [
 				"A simple chunk loader powered by Aura. ",
 				"",
@@ -886,9 +888,9 @@
 			}]
 		},
 		{
-			title: "Better Than Sheep",
-			x: -4.0d,
-			y: -19.0d,
+			x: -3.5d,
+			y: -14.0d,
+			subtitle: "Better Than Sheep",
 			description: [
 				"This basic Aura generator devours flowers nearby to replenish the surrounding Aura. ",
 				"",
@@ -908,10 +910,9 @@
 			}]
 		},
 		{
-			title: "Do. Or Do Not.",
-			x: -3.0d,
-			y: -20.0d,
-			subtitle: "There Is No Try.",
+			x: -2.0d,
+			y: -15.0d,
+			subtitle: "Do. Or Do Not. There Is No Try.",
 			description: ["This basic Aura generator devours the moss off of mossy stone variants to replenish Aura. The plain stone variant is left behind. "],
 			dependencies: [I;705],
 			id: 788,
@@ -927,9 +928,9 @@
 			}]
 		},
 		{
-			title: "Judge Me By My Size, Do You?",
-			x: -3.5d,
-			y: -18.0d,
+			x: -3.0d,
+			y: -13.0d,
+			subtitle: "Judge Me By My Size, Do You?",
 			description: ["A slightly more advanced Aura generator that has the benefit of limiting the growth of trees to their smaller forms, making certain types of tree farm simpler to build. "],
 			dependencies: [I;705],
 			id: 790,
@@ -947,8 +948,8 @@
 		{
 			title: "Esoteric Ecology",
 			icon: "naturesaura:chorus_generator",
-			x: -4.0d,
-			y: -20.0d,
+			x: -3.0d,
+			y: -15.0d,
 			description: ["Generating Aura doesn't stop here. Check the Book of Natural Aura for other more advanced options for keeping the Aura around you from depleting."],
 			dependencies: [I;705],
 			id: 794,
@@ -959,9 +960,10 @@
 			}]
 		},
 		{
-			title: "Dust in the Wind",
+			title: "Effect Powders",
 			x: -0.5d,
-			y: -11.0d,
+			y: -7.0d,
+			subtitle: "Dust in the Wind",
 			description: [
 				"Lush Aura has a variety of side effects which may or may not be desirable at any given time. Powders exist to control when and where these effects occur.",
 				"",

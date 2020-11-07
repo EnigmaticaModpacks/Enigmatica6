@@ -24,12 +24,181 @@
 		},
 		{
 			x: 0.0d,
-			y: -2.0d,
+			y: -1.5d,
+			shape: "hexagon",
+			dependencies: [I;842],
+			size: 1.5d,
 			id: 845,
 			tasks: [{
 				id: 846,
 				type: "item",
 				item: "rftoolsbase:machine_frame"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 1.5d,
+			shape: "hexagon",
+			dependencies: [I;842],
+			size: 1.5d,
+			id: 896,
+			tasks: [{
+				id: 897,
+				type: "item",
+				item: "rftoolsbase:machine_base"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.0d,
+			id: 898,
+			tasks: [{
+				id: 899,
+				type: "item",
+				item: "rftoolsutility:redstone_transmitter"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 4.5d,
+			id: 900,
+			tasks: [{
+				id: 901,
+				type: "item",
+				item: "rftoolsutility:redstone_receiver"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.0d,
+			id: 902,
+			tasks: [{
+				id: 903,
+				type: "item",
+				item: "rftoolsutility:invchecker"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 1.5d,
+			id: 904,
+			tasks: [{
+				id: 905,
+				type: "item",
+				item: "rftoolsutility:timer"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.5d,
+			id: 906,
+			tasks: [{
+				id: 907,
+				type: "item",
+				item: "rftoolsutility:logic"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 1.5d,
+			id: 910,
+			tasks: [{
+				id: 911,
+				type: "item",
+				item: "rftoolsutility:analog"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 1.5d,
+			id: 912,
+			tasks: [{
+				id: 913,
+				type: "item",
+				item: "rftoolsutility:sequencer"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 3.0d,
+			id: 914,
+			tasks: [{
+				id: 915,
+				type: "item",
+				item: "rftoolsutility:sensor"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -1.5d,
+			id: 916,
+			tasks: [
+				{
+					id: 917,
+					type: "item",
+					item: "rftoolsutility:matter_transmitter"
+				},
+				{
+					id: 918,
+					type: "item",
+					item: "rftoolsutility:matter_receiver"
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: -1.5d,
+			id: 919,
+			tasks: [{
+				id: 920,
+				type: "item",
+				item: "rftoolsutility:dialing_device"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 0.0d,
+			id: 921,
+			tasks: [{
+				id: 922,
+				type: "item",
+				item: {
+					id: "rftoolsutility:advanced_charged_porter",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			id: 923,
+			tasks: [{
+				id: 924,
+				type: "item",
+				item: "rftoolsbase:dimensionalshard"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -1.5d,
+			id: 925,
+			tasks: [{
+				id: 926,
+				type: "item",
+				item: "rftoolsbase:machine_infuser"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -3.0d,
+			id: 927,
+			tasks: [{
+				id: 928,
+				type: "item",
+				item: "rftoolsutility:crafter1"
 			}]
 		}
 	]

@@ -8,7 +8,7 @@
 	quests: [
 		{
 			icon: "pneumaticcraft:ingot_iron_compressed",
-			x: -7.0d,
+			x: -6.5d,
 			y: -15.5d,
 			shape: "gear",
 			description: [
@@ -50,7 +50,7 @@
 		{
 			title: "Ethically Sourced",
 			icon: "pneumaticcraft:pressure_chamber_wall",
-			x: -14.5d,
+			x: -13.0d,
 			y: -14.5d,
 			shape: "rsquare",
 			description: [
@@ -61,6 +61,7 @@
 				"Note: Take caution when building your Pressure Chamber and try to keep the structure within a single chunk. F3+G will display chunk boundaries."
 			],
 			dependencies: [I;175],
+			size: 1.25d,
 			id: 179,
 			tasks: [
 				{
@@ -88,10 +89,11 @@
 			}]
 		},
 		{
-			title: "Under Pressure",
+			title: "Air Compressor",
 			icon: "pneumaticcraft:pressure_gauge_module",
-			x: -14.5d,
+			x: -13.0d,
 			y: -13.0d,
+			subtitle: "Under Pressure",
 			description: [
 				"While it won’t have you being visited by danger noodles from space or irradiating the countryside for the next millennium, Pressurized Air can be dangerous in its own right and going over pressure can cause that block to burst and be lost.",
 				"",
@@ -132,9 +134,10 @@
 			]
 		},
 		{
-			title: "Cautiously Optimistic",
-			x: -16.0d,
-			y: -12.0d,
+			title: "Security Upgrades",
+			x: -14.0d,
+			y: -12.5d,
+			subtitle: "Cautiously Optimistic",
 			description: ["Even the best laid plans can be brought to ruin by unexpected events. Install security upgrades in your compressor and pressure chamber to prevent rapid unscheduled disassembly."],
 			dependencies: [I;189],
 			id: 195,
@@ -151,9 +154,9 @@
 			}]
 		},
 		{
-			title: "A Cleaner Burn",
-			x: -13.0d,
-			y: -12.0d,
+			x: -12.0d,
+			y: -12.5d,
+			subtitle: "A Cleaner Burn",
 			description: [
 				"Solid fuels can be potent, but they lack finesse as they’ll continue to generate pressure until the entire piece of fuel has burned, even if the compressor is disabled by redstone. Consider upgrading to a safer fuel source.",
 				"",
@@ -173,9 +176,9 @@
 			}]
 		},
 		{
-			title: "The Night is Dark...",
-			x: -13.0d,
-			y: -10.0d,
+			x: -12.0d,
+			y: -11.5d,
+			subtitle: "The Night is Dark...",
 			description: ["Despite its name, the Kerosene Lamp is capable of using all of the same fuels as the Liquid Compressor and can light an area up to 30 blocks in radius. Perfect for keeping the terrors at bay. Try using a few to safely light up your base."],
 			dependencies: [I;199],
 			id: 202,
@@ -193,12 +196,13 @@
 		{
 			title: "-173 Fahrenheit or Celsius?",
 			icon: "minecraft:packed_ice",
-			x: -10.0d,
+			x: -9.0d,
 			y: -13.5d,
 			shape: "rsquare",
 			subtitle: "First one, then the other",
 			description: ["Where pressurized air is your primary power supply, heat is a secondary but just as vital mechanic. Advanced Compressors and other machines rely on either heating them up or cooling them down to run properly."],
 			dependencies: [I;175],
+			size: 1.25d,
 			id: 204,
 			tasks: [{
 				id: 205,
@@ -218,9 +222,9 @@
 			}]
 		},
 		{
-			title: "Whirling Dervishes",
-			x: -10.0d,
+			x: -9.0d,
 			y: -12.0d,
+			subtitle: "Whirling Dervishes",
 			description: ["Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."],
 			dependencies: [I;204],
 			id: 207,
@@ -236,9 +240,9 @@
 			}]
 		},
 		{
-			title: "Let It Go",
-			x: -10.0d,
-			y: -10.0d,
+			title: "Heat Pipe",
+			x: -9.0d,
+			y: -11.0d,
 			subtitle: "The Cold Never Bothered Me Anyway",
 			description: [
 				"Heat Pipe is useful for transmitting heat between blocks quickly and without loss to the environment. Use it to move heat from a Vortex Tube to one or more machines. Heat can also be used to directly power a Furnace.",
@@ -261,9 +265,8 @@
 			}]
 		},
 		{
-			title: "Regulatory Bodies",
-			x: -11.5d,
-			y: -13.0d,
+			x: -10.0d,
+			y: -12.5d,
 			description: [
 				"You may have noted by now that the Vortex Tube uses a lot of air and does not respond to redstone. In order to turn it off, the air supply must be cut. A Regulator Tube Module allows you to do just that.",
 				"",
@@ -283,9 +286,8 @@
 			}]
 		},
 		{
-			title: "Record Scratch",
-			x: -11.5d,
-			y: -9.0d,
+			x: -10.0d,
+			y: -10.5d,
 			subtitle: "Freeze Frame",
 			description: ["The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items."],
 			dependencies: [I;210],
@@ -302,10 +304,9 @@
 			}]
 		},
 		{
-			title: "See What You See",
-			x: -10.0d,
-			y: -8.0d,
-			subtitle: "With Eyes Unclouded",
+			x: -9.0d,
+			y: -10.0d,
+			subtitle: "Under the Radar",
 			description: [
 				"The Universal Sensor is a powerful block that will output a redstone signal based on various conditions, such as detecting a nearby player, when a player right clicks a block, the presence of blocks, light level, or even the current heat of a block.",
 				"",
@@ -332,12 +333,14 @@
 			]
 		},
 		{
-			title: "Crude and Uncultured",
-			x: 0.5d,
+			title: "Oil",
+			x: 0.0d,
 			y: -14.5d,
 			shape: "rsquare",
+			subtitle: "Crude and Un-Cultured",
 			description: ["Go scoop up a bucket of oil like some filthy mongrel. You’ll find it commonly above ground and it’s easily spotted by watching your minimap."],
 			dependencies: [I;175],
+			size: 1.25d,
 			id: 224,
 			tasks: [{
 				id: 225,
@@ -351,10 +354,10 @@
 			}]
 		},
 		{
-			title: "Hands Off!",
 			icon: "pneumaticcraft:gas_lift",
-			x: 2.0d,
+			x: 1.5d,
 			y: -13.5d,
+			subtitle: "Hands Off!",
 			description: [
 				"The Gas Lift can be used to pump up fluids from the world. Place it above a source block of any fluid, insert drill pipes, and provide air. The pipes will extend down to a source and the lift will attempt to pull all nearby connected source blocks.",
 				"",
@@ -382,10 +385,11 @@
 			}]
 		},
 		{
-			title: "Refined Company",
+			title: "Oil Refinery",
 			icon: "pneumaticcraft:refinery_output",
-			x: 0.5d,
+			x: 0.0d,
 			y: -13.0d,
+			subtitle: "Refined Company",
 			description: [
 				"The Refinery is built by placing the Controller and stacking 2-4 outputs on top of it. Be sure to insulate all of the sides! Consider using a logistics network to extract the outputs for further processing. Supply heat and oil to begin the process. ",
 				"",
@@ -413,9 +417,10 @@
 			}]
 		},
 		{
-			title: "Thermo-new-what-now?",
-			x: 0.5d,
-			y: -11.5d,
+			title: "Thermopneumatic Processing",
+			x: 0.0d,
+			y: -12.0d,
+			subtitle: "Thermo-new-what-now?",
 			description: [
 				"TPP for short, this machine uses a combination of heat and pressure to transform solids and liquids. It has even found use in the kitchen in recent years. ",
 				"",
@@ -445,10 +450,11 @@
 			]
 		},
 		{
-			title: "Slippery Slope",
+			title: "Lubricant",
 			x: -1.0d,
-			y: -9.5d,
-			description: ["Extremely valuable for creating Speed Upgrades"],
+			y: -10.5d,
+			subtitle: "Slippery Slope",
+			description: ["Extremely valuable for creating Speed Upgrades."],
 			dependencies: [I;248],
 			id: 238,
 			tasks: [{
@@ -464,9 +470,10 @@
 			}]
 		},
 		{
-			title: "Out of Phase",
-			x: 2.0d,
-			y: -11.0d,
+			title: "LPG",
+			x: 1.0d,
+			y: -11.5d,
+			subtitle: "Out of Phase",
 			description: ["Need more? Consider converting some of your other fuels."],
 			dependencies: [I;234],
 			id: 241,
@@ -482,9 +489,10 @@
 			}]
 		},
 		{
-			title: "White Gold",
-			x: 2.0d,
-			y: -9.5d,
+			title: "Molten Plastic",
+			x: 1.0d,
+			y: -10.5d,
+			subtitle: "White Gold",
 			description: ["A drop in the sea to come."],
 			dependencies: [I;241],
 			id: 244,
@@ -500,9 +508,10 @@
 			}]
 		},
 		{
-			title: "To Burn, or Not To Burn",
+			title: "Diesel",
 			x: -1.0d,
-			y: -11.0d,
+			y: -11.5d,
+			subtitle: "To Burn, or Not To Burn",
 			description: ["It's a decent fuel... but perhaps a little transformation is in order."],
 			dependencies: [I;234],
 			id: 248,
@@ -518,9 +527,9 @@
 			}]
 		},
 		{
-			title: "Mixin’ It Up",
-			x: 0.5d,
-			y: -9.0d,
+			x: 0.0d,
+			y: -10.0d,
+			subtitle: "Mixin’ It Up",
 			description: ["The Fluid Mixer is primarily used as the final step in the Biodiesel processing chain. It also creates a very useful byproduct, Glycerol."],
 			dependencies: [I;
 				244,
@@ -548,10 +557,11 @@
 			]
 		},
 		{
-			title: "Cultural Revolution",
+			title: "Yeast Culture",
 			icon: "minecraft:red_mushroom_block",
-			x: 0.5d,
-			y: -7.5d,
+			x: 0.0d,
+			y: -8.5d,
+			subtitle: "Cultural Revolution",
 			description: [
 				"The first step to producing renewable plastic and lubricant, creating Yeast Culture with a TPP will require precise heat control.",
 				"",
@@ -571,10 +581,11 @@
 			}]
 		},
 		{
-			title: "Wanna Hear a Corny Joke?",
-			x: -0.5d,
-			y: -6.0d,
-			description: ["I’ll see myself out."],
+			title: "Ethanol",
+			x: -1.0d,
+			y: -8.0d,
+			subtitle: "What a Corny Joke",
+			description: [""],
 			dependencies: [I;253],
 			id: 256,
 			tasks: [{
@@ -589,9 +600,10 @@
 			}]
 		},
 		{
-			title: "Give Peas a Chance",
-			x: 1.5d,
-			y: -6.0d,
+			title: "Vegetable Oil",
+			x: 1.0d,
+			y: -8.0d,
+			subtitle: "Give Peas a Chance",
 			description: ["Or any seed, for that matter."],
 			dependencies: [I;253],
 			id: 259,
@@ -607,9 +619,10 @@
 			}]
 		},
 		{
-			title: "Slow Burn",
-			x: 0.5d,
-			y: -4.5d,
+			title: "Biodiesel",
+			x: 0.0d,
+			y: -7.5d,
+			subtitle: "Slow Burn",
 			description: ["A sustainable way forward."],
 			dependencies: [I;
 				259,
@@ -628,8 +641,8 @@
 			}]
 		},
 		{
-			x: 0.5d,
-			y: -2.5d,
+			x: 0.0d,
+			y: -6.0d,
 			shape: "octagon",
 			description: ["Find a way to fully automate the creation of plastic sheets and speed upgrades from biodiesel with only PNC:R and vanilla mechanics. Consider the use of drones for farming and logistics."],
 			dependencies: [I;263],
@@ -648,9 +661,10 @@
 			}]
 		},
 		{
-			title: "Framing Your Request",
+			title: "Logistics",
 			x: -4.0d,
 			y: -12.0d,
+			subtitle: "Framing Your Request",
 			description: [
 				"Logistics Frames and Modules are the heart and soul of the logistics network. Frames can be installed on any inventory and configured with a Logistical Configurator.",
 				"",
@@ -688,9 +702,9 @@
 			]
 		},
 		{
-			title: "Who Says You Can't Take It With You?",
-			x: -6.0d,
+			x: -5.5d,
 			y: -12.0d,
+			subtitle: "Who Says You Can't Take It With You?",
 			description: ["A blast resistant chest that retains its contents when broken."],
 			dependencies: [I;267],
 			id: 272,
@@ -706,9 +720,9 @@
 			}]
 		},
 		{
-			title: "Work Smarter, Not Harder",
-			x: -7.5d,
-			y: -10.5d,
+			x: -6.5d,
+			y: -11.0d,
+			subtitle: "Work Smarter, Not Harder",
 			description: ["An advanced version of the Reinforced Chest featuring a larger inventory, per slot item type and quantity filtering, ranged item collection, and the ability to push and pull items to and from nearby inventories."],
 			dependencies: [I;272],
 			id: 276,
@@ -731,10 +745,11 @@
 			]
 		},
 		{
-			title: "Weird Flex, Bro",
+			title: "Hoppers",
 			icon: "pneumaticcraft:omnidirectional_hopper",
-			x: -6.0d,
-			y: -10.5d,
+			x: -5.5d,
+			y: -11.0d,
+			subtitle: "Weird Flex, Bro",
 			description: ["Filterable and fast, PNC Hoppers can be oriented however you like and accept multiple useful upgrades. Check their GUI for more info."],
 			dependencies: [I;272],
 			id: 281,
@@ -768,6 +783,7 @@
 				"When used over a pressure tube network, it allows for instantaneous movement of large amounts of items and fluids through the same line simultaneously."
 			],
 			dependencies: [I;175],
+			size: 1.25d,
 			id: 285,
 			tasks: [{
 				id: 286,
@@ -788,13 +804,14 @@
 			}]
 		},
 		{
-			title: "Redstone Evolution",
-			x: -6.0d,
-			y: -9.0d,
+			title: "Redstone Modules",
+			x: -5.5d,
+			y: -10.0d,
+			subtitle: "Redstone Evolution",
 			description: [
-				"Redstone modules are used to read and output redstone signals by transmitting them over a pipe network.This does not require air to use.",
+				"Redstone Modules are used to read and output redstone signals by transmitting them over a pipe network.This does not require air to use.",
 				"",
-				"Install an Advanced PCB into one to allow it to do much more complicated operations, such as acting as a clock, a signal counter, or a toggle. "
+				"Install an Advanced PCB into one to allow it to perform much more complicated operations, such as acting as a clock, a signal counter, or a toggle. "
 			],
 			dependencies: [I;267],
 			id: 288,
@@ -811,9 +828,9 @@
 			}]
 		},
 		{
-			title: "Raspberry Pi",
-			x: -7.5d,
-			y: -9.0d,
+			x: -6.5d,
+			y: -10.0d,
+			subtitle: "Raspberry Pi",
 			description: [
 				"Advanced PCBs are inserted into various tube modules to enhance their capabilities.Regulator Tube Modules, Pressure Gauge Tube Modules, Redstone Modules,and Air Grate Modules all benefit greatly from advanced PCBs.",
 				"",
@@ -833,9 +850,9 @@
 			}]
 		},
 		{
-			title: "Flying Circus",
 			x: -4.0d,
-			y: -9.0d,
+			y: -10.5d,
+			subtitle: "Flying Circus",
 			description: ["Logistics Drones are handy little helpers in places where you don’t want to run a full air infrastructure. Experiment with some logistics frames and deploy a logistics drone to move the items for you."],
 			dependencies: [I;267],
 			id: 294,
@@ -851,9 +868,9 @@
 			}]
 		},
 		{
-			title: "Automation Valley",
 			x: -4.0d,
-			y: -7.5d,
+			y: -9.0d,
+			subtitle: "Automation Valley",
 			description: [
 				"Craft and deploy a Harvest Drone to automate a crop farm or a tree farm. Use a Collector Drone to keep things tidy.",
 				"",
@@ -873,9 +890,9 @@
 			}]
 		},
 		{
-			title: "In-Flight Refueling",
 			x: -4.0d,
-			y: -6.0d,
+			y: -7.5d,
+			subtitle: "In-Flight Refueling",
 			description: [
 				"The charging station is vital for keeping drones charged automatically. Place one down and insert a Dispenser Upgrade into it to allow it to charge entities above it. Nearby drones will automatically seek out available charging stations when needed.",
 				"",
@@ -897,9 +914,9 @@
 			}]
 		},
 		{
-			title: "In Her Time of Need",
 			x: -3.0d,
-			y: -4.5d,
+			y: -7.0d,
+			subtitle: "In Her Time of Need",
 			description: ["Install one or more Item Life Upgrades in your drones to help them stay in working order. They can occasionally take damage from environmental hazards and these upgrades will cause them to self repair."],
 			dependencies: [I;300],
 			id: 303,
@@ -915,10 +932,9 @@
 			}]
 		},
 		{
-			title: "She's All Alone",
 			x: -4.0d,
-			y: -4.0d,
-			subtitle: "All Alone",
+			y: -6.5d,
+			subtitle: "She's All Alone, All Alone",
 			description: ["Install a Standby Upgrade in a drone to conserve a little air."],
 			dependencies: [I;300],
 			id: 306,
@@ -934,9 +950,9 @@
 			}]
 		},
 		{
-			title: "*Slaps Drone*",
-			x: -2.5d,
-			y: -5.5d,
+			title: "Inventory Upgrade",
+			x: -3.0d,
+			y: -8.0d,
 			subtitle: "This Bad Boy Can Fit So Many Blocks In It!",
 			description: ["Install some Inventory Upgrades in your Collector Drone."],
 			dependencies: [I;300],
@@ -955,9 +971,9 @@
 			}]
 		},
 		{
-			title: "He's Going the Distance",
-			x: -5.5d,
-			y: -5.5d,
+			x: -5.0d,
+			y: -8.0d,
+			subtitle: "He's Going the Distance",
 			description: ["Install a few Range Upgrades in your Collector Drone."],
 			dependencies: [I;300],
 			id: 312,
@@ -974,9 +990,9 @@
 			}]
 		},
 		{
-			title: "He's Going for Speed",
 			x: -5.0d,
-			y: -4.5d,
+			y: -7.0d,
+			subtitle: "He's Going for Speed",
 			description: ["Speed things up with a few of these in your Drones, or many other blocks."],
 			dependencies: [I;300],
 			id: 315,
@@ -993,10 +1009,11 @@
 			}]
 		},
 		{
-			title: "Doin’ It My Way",
+			title: "Programmable Drones",
 			icon: "pneumaticcraft:programmer",
-			x: -6.0d,
-			y: -7.5d,
+			x: -5.5d,
+			y: -9.0d,
+			subtitle: "Doin’ It My Way",
 			description: [
 				"Programmable Drones are the pinnacle of PNC:R’s automation capabilities and the options are near limitless as they can interact with blocks and entities, wield weapons and tools, and perform their actions based on complex conditions.",
 				"",
@@ -1030,9 +1047,9 @@
 			}]
 		},
 		{
-			title: "At the Press of a Button",
-			x: -7.5d,
-			y: -7.5d,
+			x: -6.5d,
+			y: -9.0d,
+			subtitle: "Always At Arms Reach",
 			description: ["Remotes are programmable interface devices that work by manipulating global variables. You can use these for remote redstone when combined with a Universal Sensor, or they can be used to control programmable drones."],
 			dependencies: [I;318],
 			id: 322,
@@ -1048,10 +1065,11 @@
 			}]
 		},
 		{
-			title: "You Can Touch, You Can Play",
-			x: -14.5d,
-			y: -8.5d,
+			title: "Plastic Sheets",
+			x: -13.0d,
+			y: -10.0d,
 			shape: "rsquare",
+			subtitle: "You Can Touch, You Can Play",
 			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"],
 			hide_dependency_lines: true,
 			dependencies: [I;
@@ -1059,6 +1077,7 @@
 				244,
 				217
 			],
+			size: 1.25d,
 			id: 325,
 			tasks: [{
 				id: 326,
@@ -1075,8 +1094,8 @@
 		},
 		{
 			title: "Prime Delivery",
-			x: -14.5d,
-			y: -7.0d,
+			x: -13.0d,
+			y: -8.5d,
 			description: ["The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "],
 			dependencies: [I;325],
 			id: 328,
@@ -1092,9 +1111,9 @@
 			}]
 		},
 		{
-			title: "Ghostly Premonitions",
-			x: -14.5d,
-			y: -5.5d,
+			x: -13.0d,
+			y: -7.5d,
+			subtitle: "Burning It In",
 			description: ["Always available from Amadron, any time, any day. But your local Pressure Mechanic commonly carries them as an initial trade as well…"],
 			dependencies: [I;328],
 			id: 331,
@@ -1110,9 +1129,9 @@
 			}]
 		},
 		{
-			title: "Brighter than the Sun",
-			x: -14.5d,
-			y: -4.0d,
+			x: -13.0d,
+			y: -6.5d,
+			subtitle: "Brighter than the Sun",
 			description: [
 				"Used to prepare Empty PCBs for etching. This can be a slow process without speed upgrades… Consider setting a threshold around 60-70% to have a decent chance of etching while waiting less. Automating this process is highly recommended.",
 				"",
@@ -1134,8 +1153,8 @@
 		{
 			title: "A Caustic Solution",
 			icon: "pneumaticcraft:etching_tank",
-			x: -12.5d,
-			y: -4.0d,
+			x: -12.0d,
+			y: -6.5d,
 			description: [
 				"The next step of creating Circuit Boards is to etch them in this tank. It can hold and simultaneously process as many as 25 Empty PCBs. The acid is only consumed if heat is applied while etching a board.",
 				"Doing so significantly speeds up the etching process, however, and a single bucket will last for many PCBs."
@@ -1161,10 +1180,11 @@
 			}]
 		},
 		{
-			title: "Some Assembly Required",
+			title: "Assembly Table",
 			icon: "pneumaticcraft:assembly_platform",
-			x: -14.5d,
-			y: -1.0d,
+			x: -13.0d,
+			y: -4.5d,
+			subtitle: "Some Assembly Required",
 			description: [
 				"The Assembly Table provides a simpler way of making circuit boards and provides access to other advanced recipes.",
 				"",
@@ -1216,9 +1236,9 @@
 			}]
 		},
 		{
-			title: "What Do You Do With a Bad Circuit?",
 			x: -11.5d,
-			y: -2.5d,
+			y: -5.5d,
+			subtitle: "What Do You Do With a Bad Circuit?",
 			description: ["Ground it."],
 			dependencies: [I;337],
 			id: 350,
@@ -1234,9 +1254,9 @@
 			}]
 		},
 		{
-			title: "Short Circuit",
-			x: -13.5d,
-			y: -2.5d,
+			x: -12.5d,
+			y: -5.5d,
+			subtitle: "Short Circuit",
 			description: ["Did you try stretching it?"],
 			dependencies: [I;350],
 			id: 352,
@@ -1261,9 +1281,9 @@
 			]
 		},
 		{
-			title: "Who Investigates Crimes Against Circuits?",
-			x: -15.5d,
-			y: -2.5d,
+			x: -13.5d,
+			y: -5.5d,
+			subtitle: "Who Investigates Electronic Crimes?",
 			description: ["Sherlok Ohms"],
 			dependencies: [I;352],
 			id: 357,
@@ -1279,9 +1299,10 @@
 			}]
 		},
 		{
-			title: "Two Birds with One Stone",
-			x: -12.5d,
-			y: -1.0d,
+			title: "Assembly Program",
+			x: -12.0d,
+			y: -4.5d,
+			subtitle: "Two Birds with One Stone",
 			description: [
 				"Insert it into the Assembly Controller and provide air to get it started. Speed upgrades are highly recommended.",
 				"",
@@ -1301,9 +1322,10 @@
 			}]
 		},
 		{
-			title: "The Odds Are Stacked",
-			x: -7.5d,
+			title: "Fluid Tanks",
+			x: -6.5d,
 			y: -12.0d,
+			subtitle: "Stacking the Odds",
 			description: [
 				"Portable Fluid Storage. Also capable of filling buckets and other tanks for automation purposes.",
 				"",
