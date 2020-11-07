@@ -1157,7 +1157,7 @@ events.listen('recipes', function (event) {
         },
         "type": "industrialforegoing:laser_drill_ore"
       });
-
+/*		
       event.remove({id: 'industrialforegoing:laser_drill_ore/yellorium'})
       event.recipes.industrialforegoing.laser_drill_ore({
         "output": {
@@ -1205,7 +1205,7 @@ events.listen('recipes', function (event) {
         },
         "type": "industrialforegoing:laser_drill_ore"
         });
-
+*/
         
       event.remove({id: 'industrialforegoing:laser_drill_ore/ancient_debris'})
         event.recipes.industrialforegoing.laser_drill_ore({
