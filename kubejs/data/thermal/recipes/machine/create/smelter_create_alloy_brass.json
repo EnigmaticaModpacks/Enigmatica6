@@ -1,33 +1,33 @@
 {
-  "type": "thermal:smelter",
-  "input": [
-    {
-      "value": [
+    "type": "thermal:smelter",
+    "input": [
         {
-          "tag": "forge:ingots/copper"
+            "value": [
+                {
+                    "tag": "forge:ingots/copper"
+                },
+                {
+                    "tag": "forge:dusts/copper"
+                }
+            ],
+            "count": 1
         },
         {
-          "tag": "forge:dusts/copper"
+            "tag": "forge:ingots/zinc",
+            "count": 1
         }
-      ],
-      "count": 1
-    },
-    {
-      "tag": "forge:ingots/zinc",
-      "count": 1
-    }
-  ],
-  "result": [
-    {
-      "item": "create:brass_ingot",
-      "count": 2
-    }
-  ],
-  "energy": 3200,
-  "conditions": [
-    {
-      "type": "forge:mod_loaded",
-      "modid": "create"
-    }
-  ]
+    ],
+    "result": [
+        {
+            "item": "emendatusenigmatica:brass_ingot",
+            "count": 2
+        }
+    ],
+    "energy": 3200,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "create"
+        }
+    ]
 }
