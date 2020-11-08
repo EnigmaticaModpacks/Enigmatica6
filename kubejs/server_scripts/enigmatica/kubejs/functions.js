@@ -12,7 +12,7 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 
-function compareIndices(a, b) {
+function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -20,16 +20,16 @@ function compareIndices(a, b) {
         if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
     }
 
-    console.error('Neither ' + a + ' nor ' + b + ' were accounted for in mod unification!');
+    console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
     return 0;
 }
 
 function getPreferredItemInTag(tag) {
-    const firstStack = wrapJsArray(tag.stacks).sort((a, b) => compareIndices(a.mod, b.mod))[0];
-    //console.info('preferred item for tag ' + tag + ': ' + firstStack);
-    return firstStack || item.of('minecraft:air');
+    const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
+    // console.info('Preferred item: ' + tag + ' => ' + pref);
+    return pref;
 }
 
-function wrapJsArray(a) {
+function wrapArray(a) {
     return utils.listOf(a).toArray();
 }
