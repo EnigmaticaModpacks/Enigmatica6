@@ -12,43 +12,24 @@ function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
 
-function compareIndices(a, b) {
-    var aVal = 2147483647;
-    var bVal = 2147483647;
+function compareIndices(a, b, tag) {
+    if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
-    for (let i = 0; i < modPriorities.length; i++) {
-        if (modPriorities[i] == a) {
-            aVal = i;
-            break;
-        }
+    for (let mod of modPriorities) {
+        if (mod == a) return -1; // if a comes before b, then idx(a) < idx(b), so -1
+        if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
     }
 
-    for (let i = 0; i < modPriorities.length; i++) {
-        if (modPriorities[i] == b) {
-            bVal = i;
-            break;
-        }
-    }
-    if (aVal == 2147483647) {
-        console.error('Mod not accounted for in unification! Mod: ' + a);
-    }
-
-    if (bVal == 2147483647) {
-        console.error('Mod not accounted for in unification! Mod: ' + b);
-    }
-
-    if (aVal > bVal) return 1;
-    if (aVal == bVal) return 0;
-    if (aVal < bVal) return -1;
+    console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
+    return 0;
 }
 
 function getPreferredItemInTag(tag) {
-    var prefItem = tag.stacks
-        .stream()
-        .sorted(function (a, b) {
-            return compareIndices(a.mod, b.mod);
-        })
-        .findFirst()
-        .orElse(item.of('minecraft:air'));
-    return prefItem;
+    const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
+    // console.info('Preferred item: ' + tag + ' => ' + pref);
+    return pref;
+}
+
+function wrapArray(a) {
+    return utils.listOf(a).toArray();
 }

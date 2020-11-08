@@ -113,7 +113,8 @@ var modPriorities = [
     'botania',
     'quark',
     'pedestals',
-    'refinedstorage'
+    'refinedstorage',
+    'mapperbase'
 ];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
