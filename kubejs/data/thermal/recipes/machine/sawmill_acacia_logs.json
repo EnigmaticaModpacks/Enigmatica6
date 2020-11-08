@@ -1,0 +1,17 @@
+{
+  "type": "thermal:sawmill",
+  "ingredient": {
+    "tag": "minecraft:acacia_logs"
+  },
+  "result": [
+    {
+      "item": "minecraft:acacia_planks",
+      "count": 6
+    },
+    {
+      "item": "thermal:sawdust",
+      "chance": 1.25
+    }
+  ],
+  "energy": 1000
+}

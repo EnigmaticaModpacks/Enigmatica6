@@ -1,0 +1,21 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "tag": "forge:ores/copper"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:dust_copper",
+            "chance": 2.0
+        },
+        {
+            "item": "emendatusenigmatica:dust_gold",
+            "chance": 0.1
+        },
+        {
+            "item": "minecraft:gravel",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

@@ -1,0 +1,17 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/niter"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:gem_potassium_nitrate",
+            "chance": 3.5
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.15
+        }
+    ],
+    "experience": 0.5
+}

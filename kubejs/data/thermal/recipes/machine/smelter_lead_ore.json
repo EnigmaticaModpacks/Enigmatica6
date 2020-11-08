@@ -1,0 +1,21 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/lead"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:ingot_lead",
+            "chance": 1.0
+        },
+        {
+            "item": "emendatusenigmatica:ingot_silver",
+            "chance": 0.2
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

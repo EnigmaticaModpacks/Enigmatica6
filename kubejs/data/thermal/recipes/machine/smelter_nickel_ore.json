@@ -1,0 +1,21 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/nickel"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:ingot_nickel",
+            "chance": 1.0
+        },
+        {
+            "item": "emendatusenigmatica:ingot_copper",
+            "chance": 0.2
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

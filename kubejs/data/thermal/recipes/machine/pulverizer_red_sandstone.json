@@ -1,0 +1,36 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "value": [
+            {
+                "item": "minecraft:red_sandstone"
+            },
+            {
+                "item": "minecraft:chiseled_red_sandstone"
+            },
+            {
+                "item": "minecraft:cut_red_sandstone"
+            },
+            {
+                "item": "minecraft:smooth_red_sandstone"
+            },
+            {
+                "item": "minecraft:red_sandstone_stairs"
+            },
+            {
+                "item": "minecraft:smooth_red_sandstone_stairs"
+            }
+        ]
+    },
+    "result": [
+        {
+            "item": "minecraft:red_sand",
+            "count": 2
+        },
+        {
+            "item": "emendatusenigmatica:gem_potassium_nitrate",
+            "chance": 0.3
+        }
+    ],
+    "experience": 0.1
+}

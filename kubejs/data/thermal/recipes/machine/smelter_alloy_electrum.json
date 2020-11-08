@@ -1,0 +1,34 @@
+{
+    "type": "thermal:smelter",
+    "input": [
+        {
+            "value": [
+                {
+                    "tag": "forge:ingots/gold"
+                },
+                {
+                    "tag": "forge:dusts/gold"
+                }
+            ],
+            "count": 1
+        },
+        {
+            "value": [
+                {
+                    "tag": "forge:ingots/silver"
+                },
+                {
+                    "tag": "forge:dusts/silver"
+                }
+            ],
+            "count": 1
+        }
+    ],
+    "result": [
+        {
+            "item": "emendatusenigmatica:ingot_electrum",
+            "count": 2
+        }
+    ],
+    "energy": 3200
+}

@@ -1,0 +1,22 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/gold"
+    },
+    "result": [
+        {
+            "item": "minecraft:gold_ingot",
+            "chance": 1.0
+        },
+        {
+            "item": "emendatusenigmatica:gem_cinnabar",
+            "chance": 0.1,
+            "locked": true
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

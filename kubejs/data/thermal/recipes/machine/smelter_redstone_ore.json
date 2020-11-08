@@ -1,0 +1,22 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/redstone"
+    },
+    "result": [
+        {
+            "item": "minecraft:redstone",
+            "chance": 3.5
+        },
+        {
+            "item": "emendatusenigmatica:gem_cinnabar",
+            "chance": 0.5,
+            "locked": true
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

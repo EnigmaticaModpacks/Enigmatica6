@@ -1,0 +1,28 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "item": "create:crushed_gold_ore"
+    },
+    "result": [
+        {
+            "item": "minecraft:gold_ingot",
+            "chance": 1.0
+        },
+        {
+            "item": "emendatusenigmatica:gem_cinnabar",
+            "chance": 0.1,
+            "locked": true
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "create"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "tag": "forge:ores/gold"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:dust_gold",
+            "chance": 2.0
+        },
+        {
+            "item": "emendatusenigmatica:gem_cinnabar",
+            "chance": 0.05,
+            "locked": true
+        },
+        {
+            "item": "minecraft:gravel",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

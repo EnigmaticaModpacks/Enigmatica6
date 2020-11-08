@@ -1,0 +1,23 @@
+{
+  "type": "thermal:sawmill",
+  "ingredient": {
+    "tag": "biomesoplenty:fir_logs"
+  },
+  "result": [
+    {
+      "item": "biomesoplenty:fir_planks",
+      "count": 6
+    },
+    {
+      "item": "thermal:sawdust",
+      "chance": 1.25
+    }
+  ],
+  "energy": 1000,
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "biomesoplenty"
+    }
+  ]
+}

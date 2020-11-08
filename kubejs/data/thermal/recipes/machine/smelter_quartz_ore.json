@@ -1,0 +1,21 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/quartz"
+    },
+    "result": [
+        {
+            "item": "minecraft:quartz",
+            "chance": 1.5
+        },
+        {
+            "item": "emendatusenigmatica:gem_sulfur",
+            "chance": 0.5
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.15
+        }
+    ],
+    "experience": 0.5
+}

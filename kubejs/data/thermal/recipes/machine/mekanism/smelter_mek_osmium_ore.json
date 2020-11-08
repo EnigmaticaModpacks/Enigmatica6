@@ -1,0 +1,23 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/osmium"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:ingot_osmium",
+            "chance": 1.0
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "mekanism"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "tag": "forge:ores/redstone"
+    },
+    "result": [
+        {
+            "item": "minecraft:redstone",
+            "chance": 6.5
+        },
+        {
+            "item": "emendatusenigmatica:gem_cinnabar",
+            "chance": 0.25,
+            "locked": true
+        },
+        {
+            "item": "minecraft:gravel",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

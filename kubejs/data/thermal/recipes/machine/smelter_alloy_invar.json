@@ -1,0 +1,34 @@
+{
+    "type": "thermal:smelter",
+    "input": [
+        {
+            "value": [
+                {
+                    "tag": "forge:ingots/iron"
+                },
+                {
+                    "tag": "forge:dusts/iron"
+                }
+            ],
+            "count": 2
+        },
+        {
+            "value": [
+                {
+                    "tag": "forge:ingots/nickel"
+                },
+                {
+                    "tag": "forge:dusts/nickel"
+                }
+            ],
+            "count": 1
+        }
+    ],
+    "result": [
+        {
+            "item": "emendatusenigmatica:ingot_invar",
+            "count": 3
+        }
+    ],
+    "energy": 4800
+}

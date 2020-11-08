@@ -1,0 +1,17 @@
+{
+  "type": "thermal:sawmill",
+  "ingredient": {
+    "tag": "minecraft:dark_oak_logs"
+  },
+  "result": [
+    {
+      "item": "minecraft:dark_oak_planks",
+      "count": 6
+    },
+    {
+      "item": "thermal:sawdust",
+      "chance": 1.25
+    }
+  ],
+  "energy": 1000
+}

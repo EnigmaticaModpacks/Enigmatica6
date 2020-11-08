@@ -1,0 +1,27 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "tag": "forge:ores/uranium"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:dust_uranium",
+            "chance": 2.0
+        },
+        {
+            "item": "emendatusenigmatica:dust_lead",
+            "chance": 0.1
+        },
+        {
+            "item": "minecraft:gravel",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "immersiveengineering"
+        }
+    ]
+}

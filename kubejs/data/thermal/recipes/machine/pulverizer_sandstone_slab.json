@@ -1,0 +1,26 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "value": [
+            {
+                "item": "minecraft:sandstone_slab"
+            },
+            {
+                "item": "minecraft:cut_sandstone_slab"
+            },
+            {
+                "item": "minecraft:smooth_sandstone_slab"
+            }
+        ]
+    },
+    "result": [
+        {
+            "item": "minecraft:sand"
+        },
+        {
+            "item": "emendatusenigmatica:gem_potassium_nitrate",
+            "chance": 0.15
+        }
+    ],
+    "experience": 0.1
+}

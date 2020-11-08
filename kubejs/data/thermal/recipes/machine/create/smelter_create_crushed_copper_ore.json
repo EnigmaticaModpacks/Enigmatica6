@@ -1,0 +1,27 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "item": "create:crushed_copper_ore"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:ingot_copper",
+            "chance": 1.0
+        },
+        {
+            "item": "minecraft:gold_ingot",
+            "chance": 0.2
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2,
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "create"
+        }
+    ]
+}
