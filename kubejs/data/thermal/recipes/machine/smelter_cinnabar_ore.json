@@ -1,0 +1,17 @@
+{
+    "type": "thermal:smelter",
+    "ingredient": {
+        "tag": "forge:ores/cinnabar"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:cinnabar_gem",
+            "chance": 1.5
+        },
+        {
+            "item": "thermal:rich_slag",
+            "chance": 0.15
+        }
+    ],
+    "experience": 0.5
+}

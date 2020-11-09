@@ -1,0 +1,21 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "tag": "forge:ores/lead"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:lead_dust",
+            "chance": 2.0
+        },
+        {
+            "item": "emendatusenigmatica:silver_dust",
+            "chance": 0.1
+        },
+        {
+            "item": "minecraft:gravel",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}
