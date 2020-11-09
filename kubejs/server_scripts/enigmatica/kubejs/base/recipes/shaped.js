@@ -77,6 +77,24 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe(item.of('immersiveengineering:stick_steel', 2), ['A', 'A'], {
             A: '#forge:ingots/steel'
+        }),
+        shapedRecipe(item.of('valhelsia_structures:oak_post', 6), ['A', 'A', 'A'], {
+            A: 'minecraft:oak_log'
+        }),
+        shapedRecipe(item.of('valhelsia_structures:spruce_post', 6), ['A', 'A', 'A'], {
+            A: 'minecraft:spruce_log'
+        }),
+        shapedRecipe(item.of('valhelsia_structures:birch_post', 6), ['A', 'A', 'A'], {
+            A: 'minecraft:birch_log'
+        }),
+        shapedRecipe(item.of('valhelsia_structures:jungle_post', 6), ['A', 'A', 'A'], {
+            A: 'minecraft:jungle_log'
+        }),
+        shapedRecipe(item.of('valhelsia_structures:dark_oak_post', 6), ['A', 'A', 'A'], {
+            A: 'minecraft:dark_oak_log'
+        }),
+        shapedRecipe(item.of('valhelsia_structures:acacia_post', 6), ['A', 'A', 'A'], {
+            A: 'minecraft:acacia_log'
         })
     ];
 
