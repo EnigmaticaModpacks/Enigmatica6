@@ -1,0 +1,65 @@
+{
+	id: 939,
+	filename: "ars_nouveau",
+	order_index: 19,
+	title: "Ars Nouveau",
+	icon: "ars_nouveau:mana_gem",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Ars Nouveau",
+			icon: "ars_nouveau:novice_spell_book",
+			x: -0.5d,
+			y: -8.5d,
+			description: [""],
+			id: 940,
+			tasks: [{
+				id: 941,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 942,
+					type: "item",
+					item: "ars_nouveau:worn_notebook"
+				},
+				{
+					id: 943,
+					type: "item",
+					item: "ars_nouveau:novice_spell_book"
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: -6.5d,
+			id: 946,
+			tasks: [{
+				id: 947,
+				type: "checkmark",
+				title: "Automation"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -6.0d,
+			id: 948,
+			tasks: [{
+				id: 949,
+				type: "checkmark",
+				title: "Enchanting Apparatus"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -6.5d,
+			description: ["Arcane Ore can be found rarely while mining at nearly any depth. Gather as much as you can to begin your journey."],
+			id: 950,
+			tasks: [{
+				id: 951,
+				type: "item",
+				item: "ars_nouveau:mana_gem"
+			}]
+		}
+	]
+}
