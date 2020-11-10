@@ -11,7 +11,15 @@
 			icon: "ars_nouveau:novice_spell_book",
 			x: -0.5d,
 			y: -8.5d,
-			description: [""],
+			shape: "octagon",
+			description: [
+				"With Ars Nouveau you will learn to harness the mana infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. ",
+				"",
+				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information.",
+				"",
+				"~MuteTiefling"
+			],
+			size: 1.5d,
 			id: 940,
 			tasks: [{
 				id: 941,
@@ -41,25 +49,263 @@
 			}]
 		},
 		{
-			x: -0.5d,
-			y: -6.0d,
-			id: 948,
+			title: "Mana",
+			icon: "ars_nouveau:mana_gem",
+			x: -5.5d,
+			y: -6.5d,
+			subtitle: "Like Sweet Morning Dew",
+			description: [
+				"Mana is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond simple spell casting.",
+				"",
+				"Craft a Mana Condenser and a Mana Jar to begin. The Mana Gems required can be found while mining at any depth. Keep an eye out for purple Arcane Ore.",
+				"",
+				"To begin condensing Mana, place the Mana Jar and then place the Mana Condenser on top of it. Mana is drawn from three primary sources:",
+				"",
+				"● Crops advancing a growth stage",
+				"● Breeding animals",
+				"● Killing mobs",
+				"",
+				"Consider setting up a jar and condenser nearby such places. It can detect such events in a roughly 10-15 block radius, depending on the type of event.",
+				"A large crop farm or a basic mob farm can produce mana relatively quickly if automated."
+			],
+			dependencies: [I;940],
+			id: 950,
+			tasks: [
+				{
+					id: 956,
+					type: "item",
+					item: "ars_nouveau:mana_condenser"
+				},
+				{
+					id: 957,
+					type: "item",
+					item: "ars_nouveau:mana_jar"
+				}
+			],
+			rewards: [{
+				id: 961,
+				type: "item",
+				item: "botania:sextant"
+			}]
+		},
+		{
+			title: "Magic Clay",
+			x: -5.5d,
+			y: -5.5d,
+			subtitle: "Fate as Malleable as Clay",
+			description: [
+				"By working Mana Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. ",
+				"",
+				"In order to learn new spells, this Magic Clay and it's variants may be pressed in a Glyph Press along with some other reagent to form such a focus."
+			],
+			dependencies: [I;950],
+			id: 958,
 			tasks: [{
-				id: 949,
-				type: "checkmark",
-				title: "Enchanting Apparatus"
+				id: 960,
+				type: "item",
+				item: "ars_nouveau:magic_clay",
+				count: 8L
+			}]
+		},
+		{
+			title: "Marvelous Clay",
+			x: -4.5d,
+			y: -5.0d,
+			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbok to cast. "],
+			dependencies: [I;958],
+			id: 962,
+			tasks: [{
+				id: 963,
+				type: "item",
+				item: "ars_nouveau:marvelous_clay",
+				count: 8L
+			}]
+		},
+		{
+			title: "Mythical Clay",
+			x: -3.5d,
+			y: -5.5d,
+			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbok to cast. "],
+			dependencies: [I;962],
+			id: 964,
+			tasks: [{
+				id: 965,
+				type: "item",
+				item: "ars_nouveau:mythical_clay",
+				count: 2L
 			}]
 		},
 		{
 			x: -5.5d,
-			y: -6.5d,
-			description: ["Arcane Ore can be found rarely while mining at nearly any depth. Gather as much as you can to begin your journey."],
-			id: 950,
+			y: -4.0d,
+			subtitle: "Hot Off the Presses!",
+			description: [
+				"The Glyph Press will accept up to two items; a type of clay and a reagent. ",
+				"",
+				"Both are consumed along with a fair amount of mana from a nearby Mana Jar to create new Glyphs.",
+				"",
+				"Glyphs can be learned by right clicking them. They'll then appear within your spellbook for use in crafting new spells."
+			],
+			dependencies: [I;958],
+			id: 966,
 			tasks: [{
-				id: 951,
+				id: 967,
 				type: "item",
-				item: "ars_nouveau:mana_gem"
+				item: "ars_nouveau:glyph_press"
 			}]
+		},
+		{
+			title: "Practice Spells",
+			x: -6.5d,
+			y: -4.0d,
+			subtitle: "Gathering the Pieces",
+			description: [
+				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to being. ",
+				"",
+				"By now, you'll know a few different Forms and Effects. Place a form first, followed by an effect, give it a name, then press Create. Mutliple Effects can be chained.",
+				"",
+				"For example, a spell can be made that will smelt a ranged block, break it, and bring it to your inventory. ",
+				"",
+				"● Projectile > Smelt > Break > Item Pickup",
+				"",
+				"If used on Clay, this would result in a block of Terracotta being brought to your inventory.",
+				"",
+				"Adding an Extract augment after the Break will apply Silk Touch, allowing the above spell to create Glass from Sand. ",
+				"",
+				"Similarly, the following will apply Fortune to the broken block and transport the result to your inventory. Great for those hard to reach diamonds.",
+				"",
+				"● Projectile > Break > Fortune > Item Pickup"
+			],
+			dependencies: [I;966],
+			min_width: 300,
+			id: 970,
+			tasks: [
+				{
+					id: 971,
+					type: "item",
+					item: "ars_nouveau:glyph_pickup"
+				},
+				{
+					id: 973,
+					type: "item",
+					item: "ars_nouveau:glyph_smelt"
+				}
+			]
+		},
+		{
+			x: -2.5d,
+			y: -4.0d,
+			dependencies: [I;976],
+			id: 974,
+			tasks: [{
+				id: 975,
+				type: "item",
+				item: {
+					id: "ars_nouveau:runic_chalk",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Spell Parchment",
+			x: -1.5d,
+			y: -4.0d,
+			subtitle: "Jousting Snails",
+			description: ["With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."],
+			dependencies: [I;981],
+			id: 976,
+			tasks: [{
+				id: 979,
+				type: "item",
+				item: "ars_nouveau:spell_parchment",
+				count: 4L
+			}],
+			rewards: [{
+				id: 980,
+				type: "item",
+				item: "ars_nouveau:scribes_table"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -5.0d,
+			subtitle: "Putting Down Roots",
+			description: [
+				"The Mana Bloom sits at the border between the mundane and the magical. It grows as any other plant, but its roots reach through the veil, soaking in more of the mana that infuses the earth.",
+				"",
+				"Growing these will serve two purposes to a budding practicioner. First, they produce more mana than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's mana, expanding the practioner's reserves.  "
+			],
+			dependencies: [I;983],
+			id: 981,
+			tasks: [{
+				id: 982,
+				type: "item",
+				item: "ars_nouveau:mana_bloom_crop"
+			}]
+		},
+		{
+			title: "Enchanting Apparatus",
+			icon: "ars_nouveau:enchanting_apparatus",
+			x: -0.5d,
+			y: -6.0d,
+			subtitle: "The Spirit is Willing, but the Flesh is Spongy and Bruised",
+			description: [
+				"One's own reservoir of mana is limited: the flesh can only hold so much. Certain magical materials exist to assist this but they themselves require access to greater reservoirs to even make.",
+				"",
+				"An external apparatus is therefore required to hold the reagents for such creative endeavors and to assist in funneling the mana into them safely. ",
+				"",
+				"To construct the Enchanting Apparatus, place down the Arcane Core with the Enchanting Apparatus on top of it. The Pedestals can be placed anywhere in an 11x11 area centered on the Core. A Mana Jar with mana must also be present nearby. ",
+				"",
+				"To work with it, place the reagents in the pedestals and the focus in the Enchanting Apparatus itself, then Sneak Right Click the Apparatus with an empty hand."
+			],
+			dependencies: [I;940],
+			id: 983,
+			tasks: [
+				{
+					id: 987,
+					type: "item",
+					item: "ars_nouveau:arcane_core"
+				},
+				{
+					id: 988,
+					type: "item",
+					item: "ars_nouveau:enchanting_apparatus"
+				},
+				{
+					id: 989,
+					type: "item",
+					item: "ars_nouveau:arcane_pedestal",
+					count: 8L
+				}
+			]
+		},
+		{
+			title: "Curious Trinkets",
+			icon: "ars_nouveau:amulet_of_mana_regen",
+			x: 0.5d,
+			y: -5.0d,
+			description: [
+				"",
+				"",
+				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
+			],
+			dependencies: [I;983],
+			id: 990,
+			tasks: [
+				{
+					id: 991,
+					type: "item",
+					item: "ars_nouveau:amulet_of_mana_regen"
+				},
+				{
+					id: 994,
+					type: "item",
+					item: "ars_nouveau:ring_of_lesser_discount"
+				}
+			]
 		}
 	]
 }

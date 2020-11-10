@@ -47,9 +47,13 @@
 			x: -0.5d,
 			y: -9.0d,
 			description: [
-				"Nature's Aura is a druidic themed mod that uses the omnipresent 'aura' to derive its power. ",
+				"Nature's Aura is a druidic themed magi-tech mod that uses the omnipresent 'aura' to derive its power. ",
 				"",
-				"But be careful, this is a limited resoure whose use must be managed and replenished, lest the natural order be disturbed."
+				"Be warned, Aura is a limited resoure which must be managed and replenished lest the natural order be disturbed. Draining too much can cause dire consequences.",
+				"",
+				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements. ",
+				"",
+				"~MuteTiefling"
 			],
 			id: 159,
 			tasks: [{
@@ -632,7 +636,9 @@
 			description: [
 				"A ritual that harnesses the powers of creation itself, allowing its user to bring forth new life from the barest traces of material.",
 				"",
-				"Refer to the Book of Natural Aura for specific instructions on building the ritual."
+				"Refer to the Book of Natural Aura for specific instructions on building the ritual.",
+				"",
+				"Once built, simply throw down the reagents atop the altar. If there's enough Aura, the ritual will proceed automatically."
 			],
 			hide_dependency_lines: true,
 			dependencies: [I;
