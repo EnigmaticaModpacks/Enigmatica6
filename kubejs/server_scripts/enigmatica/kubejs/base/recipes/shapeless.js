@@ -67,7 +67,9 @@ events.listen('recipes', function (event) {
         shapelessRecipe(item.of('quark:bamboo_block', 2), [
             'bambooeverything:bamboo_bundle',
             'bambooeverything:bamboo_bundle'
-        ])
+        ]),
+        shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
+        shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket'])
     ];
 
     recipes.forEach(function (recipe) {
