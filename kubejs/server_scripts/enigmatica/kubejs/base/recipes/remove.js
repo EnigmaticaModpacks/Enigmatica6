@@ -6,6 +6,8 @@ events.listen('recipes', function (event) {
     var outputRemovals = [
         'additionalbars:crossed_iron_bars',
 
+        'bambooeverything:bamboo_bundle',
+
         'decorative_blocks:lattice',
 
         //'akashictome:tome',
@@ -20,9 +22,9 @@ events.listen('recipes', function (event) {
 
         'morevanillalib:obsidian_shard',
 
-        'thermal:bamboo_block',
-
         'simplefarming:raw_bacon',
+
+        'thermal:bamboo_block',
 
         'quantumstorage:tank',
         'quantumstorage:qsu'

@@ -1,6 +1,6 @@
 # Enigmatica 6
 
-This is the official repository and issue-tracker for the modpack Enigmatica 6, for Minecraft 1.16.1
+This is the official repository and issue-tracker for the modpack Enigmatica 6, for Minecraft 1.16.x
 
 ### Table of Contents
 * [Testing](#testing)
@@ -41,7 +41,7 @@ You're done!
 
 1) Download [MultiMC](https://multimc.org/#Download) if you haven't already.
 2) Open MultiMC.
-3) Click Add Instance, choose Minecraft 1.16.1, click Ok.
+3) Click Add Instance, choose Minecraft 1.16.3, click Ok.
 4) Click Edit Instance (right hand side)
 5) Click Install Forge, pick the latest version.
 

@@ -61,13 +61,15 @@ events.listen('recipes', function (event) {
         shapelessRecipe(item.of('mekanism:ingot_steel', 2), [
             'emendatusenigmatica:steel_ingot',
             'emendatusenigmatica:steel_ingot'
-        ])
-        //,
-        // shapelessRecipe(item.of('bambooeverything:bamboo_bundle', 2), ['thermal:bamboo_block', 'thermal:bamboo_block']),
-        // shapelessRecipe(item.of('thermal:bamboo_block', 2), [
-        //     'bambooeverything:bamboo_bundle',
-        //     'bambooeverything:bamboo_bundle'
-        // ])
+        ]),
+        shapelessRecipe(item.of('bambooeverything:bamboo_bundle', 2), ['thermal:bamboo_block', 'thermal:bamboo_block']),
+        shapelessRecipe(item.of('thermal:bamboo_block', 2), ['quark:bamboo_block', 'quark:bamboo_block']),
+        shapelessRecipe(item.of('quark:bamboo_block', 2), [
+            'bambooeverything:bamboo_bundle',
+            'bambooeverything:bamboo_bundle'
+        ]),
+        shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
+        shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket'])
     ];
 
     recipes.forEach(function (recipe) {
