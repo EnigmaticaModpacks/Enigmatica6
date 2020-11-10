@@ -1,20 +1,16 @@
 ### Enigmatica 6 v0.3.0
 
-_Using Forge-1.16.3-34.1.25_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_
+_Using Forge-1.16.4-35.0.9_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_
 
-Updated Minecraft version from 1.16.1 to 1.16.3.
-
-
+Updated Minecraft version from 1.16.1 to 1.16.4.
 
 **We recommend that you start a new world when updating from 0.2.x to 0.3.x**
 
 _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely not be without issues, which is why we don't recommend it_
 
-
-
 **New Mods!**
 
-- 
+-
 
 **Changes**
 
@@ -26,7 +22,7 @@ _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely 
 
 **Bug Fixes**
 
-- 
+-
 
 **Removed Mods**
 
