@@ -49,7 +49,7 @@ $MODPACK_VERSION = "0.3.0"
 # Only used by the Changelog Generator
 $LAST_MODPACK_VERSION = "0.2.17"
 
-$FORGE_VERSION = 34.1.42
+$FORGE_VERSION = 35.0.9
 
 $CLIENT_FILENAME = "Enigmatica6"
 
@@ -59,13 +59,13 @@ $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 - $MODPACK_VERSION"
 # An array of compatible game versions of Minecraft.
 # See GameVersions.json for possible versions.
 # Default: @(6756) - which is Minecraft 1.12.2
-$GAME_VERSIONS = @(8056) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 is 1.16.3
+$GAME_VERSIONS = @(8134) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 is 1.16.3, 8134is 1.16.4
 
 # Can be "markdown", "text" or "html"
 $CLIENT_CHANGELOG_TYPE = "markdown"
 
 $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
-"Using Forge-1.16.3-34.1.42 <br /> <br /> " +
+"Using Forge-1.16.4-35.0.9 <br /> <br /> " +
 "The Changelog is currently being written, it should be done within 10 minutes. "
 
 
