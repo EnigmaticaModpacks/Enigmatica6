@@ -79,6 +79,8 @@ events.listen('recipes', function (event) {
         '#quark:stone_tool_materials'
     );
 
+    event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
+
     // event.replaceInput(
     //     { type: 'minecraft:crafting_shaped', output: 'create:redstone_link' },
     //     'create:brass_sheet',
