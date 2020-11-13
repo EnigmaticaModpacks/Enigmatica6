@@ -1,6 +1,14 @@
 
 #General settings
 [general]
+	#How often Sylphs spawn
+	#Range: 0 ~ 100
+	sylphWeight = 5
 	#Spawn Arcane Ore in the world
-	genOre = true
+	genOre = false
+	#Spawn a book in the players inventory on login
+	spawnBook = false
+	#How often Carbuncles spawn
+	#Range: 0 ~ 100
+	carbuncleWeight = 5
 
