@@ -31,7 +31,6 @@ lens_of_ender = true
 	#Less number more cold, min = -100, max = 1
 	coolantFluids = ["minecraft:water=1"]
 	#
-
 	#List of heat source blocks used under Thermo Generator.
 	#Block registry name = heat, eg: ["minecraft:lava=1000", "minecraft:magma_block=800"]
 	#Min = 1, max = 900000000
@@ -44,3 +43,4 @@ lens_of_ender = true
 	coolantFluidsAPI = true
 	#Enable this to allow other mods to add their heat source blocks. [default:true]
 	heatBlocksAPI = true
+

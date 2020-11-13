@@ -1,10 +1,14 @@
 
 #General Settings
 [general]
-	#Whether Flint & Steel required to light a candle.
+	#Whether the creation of cracked block variants using a pickaxe is enabled.
+	cracked_creation_enabled = true
+	#Whether Flint & Steel is required to light a candle.
 	require_flint_and_steel = true
 	#Enable storage checking for blocked access.
 	inv_access_block_check = true
+	#Whether the creation of pathblocks (added by this mod) using a shovel is enabled.
+	pathblock_creation_enabled = true
 
 #Midi Settings
 [midi]
