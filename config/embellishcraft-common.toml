@@ -2,7 +2,7 @@
 #Global Worldgen Settings
 [worldgen]
 	#Set this to false to disable all worldgen [true / false, default: true]
-	enableWorldgen = true
+	enableWorldgen = false
 
 #Basalt Generation
 [basalt]
@@ -64,7 +64,7 @@
 	#Range: 1 ~ 254
 	gneissMinHeight = 35
 	#Generate gneiss in the world [true / false]
-	gneissGeneration = true
+	gneissGeneration = false
 	#Maximal height for gneiss pocket generation, must be higher than minimal height [1-255, default: 100]
 	#Range: 1 ~ 255
 	gneissMaxHeight = 65
@@ -81,7 +81,7 @@
 	#Range: 1 ~ 255
 	jadeMaxHeight = 45
 	#Generate jade in the world [true / false]
-	jadeGeneration = true
+	jadeGeneration = false
 	#Minimal height for jade pocket generation, [1-254, default: 50]
 	#Range: 1 ~ 254
 	jadeMinHeight = 1
@@ -98,7 +98,7 @@
 	#Range: 1 ~ 254
 	larvikiteMinHeight = 32
 	#Generate larvikite in the world [true / false]
-	larvikiteGeneration = true
+	larvikiteGeneration = false
 	#Size of larvikite pockets [0-100, default: 15]
 	#Range: 0 ~ 100
 	larvikiteSize = 25

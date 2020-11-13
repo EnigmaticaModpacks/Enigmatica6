@@ -19,7 +19,6 @@
 				"",
 				"~MuteTiefling"
 			],
-			size: 1.5d,
 			id: 940,
 			tasks: [{
 				id: 941,
@@ -39,13 +38,19 @@
 			]
 		},
 		{
-			x: 5.0d,
+			x: 4.5d,
 			y: -6.5d,
+			description: [
+				"The Spell Turret is an enhanced apparatus used to cast spells on demand with a redstone pulse. ",
+				"",
+				"Like the simpler runes created by Runic Chalk, it can be provided with a prepared Spell Parchment by right clicking the device with the parchment. Unlike runes, it can use both Touch and Projectile Forms. "
+			],
+			dependencies: [I;940],
 			id: 946,
 			tasks: [{
-				id: 947,
-				type: "checkmark",
-				title: "Automation"
+				id: 1014,
+				type: "item",
+				item: "ars_nouveau:spell_turret"
 			}]
 		},
 		{
@@ -109,31 +114,47 @@
 		},
 		{
 			title: "Marvelous Clay",
+			icon: "ars_nouveau:marvelous_clay",
 			x: -4.5d,
 			y: -5.0d,
 			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbok to cast. "],
 			dependencies: [I;958],
 			id: 962,
-			tasks: [{
-				id: 963,
-				type: "item",
-				item: "ars_nouveau:marvelous_clay",
-				count: 8L
-			}]
+			tasks: [
+				{
+					id: 963,
+					type: "item",
+					item: "ars_nouveau:marvelous_clay",
+					count: 8L
+				},
+				{
+					id: 1017,
+					type: "item",
+					item: "ars_nouveau:apprentice_spell_book"
+				}
+			]
 		},
 		{
 			title: "Mythical Clay",
+			icon: "ars_nouveau:mythical_clay",
 			x: -3.5d,
 			y: -5.5d,
 			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbok to cast. "],
 			dependencies: [I;962],
 			id: 964,
-			tasks: [{
-				id: 965,
-				type: "item",
-				item: "ars_nouveau:mythical_clay",
-				count: 2L
-			}]
+			tasks: [
+				{
+					id: 965,
+					type: "item",
+					item: "ars_nouveau:mythical_clay",
+					count: 2L
+				},
+				{
+					id: 1018,
+					type: "item",
+					item: "ars_nouveau:archmage_spell_book"
+				}
+			]
 		},
 		{
 			x: -5.5d,
@@ -156,8 +177,8 @@
 		},
 		{
 			title: "Practice Spells",
-			x: -6.5d,
-			y: -4.0d,
+			x: -6.0d,
+			y: -3.0d,
 			subtitle: "Gathering the Pieces",
 			description: [
 				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to being. ",
@@ -193,8 +214,15 @@
 			]
 		},
 		{
-			x: -2.5d,
-			y: -4.0d,
+			x: -1.0d,
+			y: -3.0d,
+			description: [
+				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door.",
+				"",
+				"To use Chalk, begin by drawing a circle on the ground. Now right click the circle with a prepared Spell Parchment. Valid Spell Parchments must begin with the Touch Form.",
+				"",
+				"Now any creature that walks over the rune will receive the effect of the spell. "
+			],
 			dependencies: [I;976],
 			id: 974,
 			tasks: [{
@@ -214,7 +242,13 @@
 			x: -1.5d,
 			y: -4.0d,
 			subtitle: "Jousting Snails",
-			description: ["With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."],
+			description: [
+				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways.",
+				"",
+				"To prepare a Parchment with a spell, design the spell within your spellbook, then place a parchment on the Scribe's Table. Sneak Right Click the table with your spell book to transfer the selected spell over to the parchment.",
+				"",
+				"Parchments may be re-used."
+			],
 			dependencies: [I;981],
 			id: 976,
 			tasks: [{
@@ -286,7 +320,7 @@
 			title: "Curious Trinkets",
 			icon: "ars_nouveau:amulet_of_mana_regen",
 			x: 0.5d,
-			y: -5.0d,
+			y: -5.5d,
 			description: [
 				"",
 				"",
@@ -306,6 +340,134 @@
 					item: "ars_nouveau:ring_of_lesser_discount"
 				}
 			]
+		},
+		{
+			x: -6.5d,
+			y: -7.0d,
+			description: [
+				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding mana. ",
+				"",
+				"Placing a source of mana nearby isn't necessary, though it will speed up the process. ",
+				"",
+				"Build a Crystallizer early on to help obtain more of these very useful gems."
+			],
+			dependencies: [I;950],
+			id: 999,
+			tasks: [{
+				id: 1000,
+				type: "item",
+				item: "ars_nouveau:crystallizer"
+			}],
+			rewards: [{
+				id: 1002,
+				type: "item",
+				item: "ars_nouveau:dominion_wand"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			description: [
+				"Mana permeates all things. Left to it's own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing mana for later use, but moving it from place to place can be a touchy subject.",
+				"",
+				"Mana Relays serve this purpose. They provide a controlled channel for mana to flow through without dissipating back into the world. Mana Relays may b elinked to other relays as well as jars to provide safe transit frm one place to another. ",
+				"",
+				"Use a Dominion Wand to set the links. "
+			],
+			dependencies: [I;983],
+			id: 1003,
+			tasks: [{
+				id: 1004,
+				type: "item",
+				item: "ars_nouveau:arcane_relay"
+			}],
+			rewards: [{
+				id: 1007,
+				type: "item",
+				item: "ars_nouveau:dominion_wand"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -3.5d,
+			description: ["A more advanced Mana Relay capable of pulling from and sending to multiple locations."],
+			dependencies: [I;1003],
+			id: 1005,
+			tasks: [{
+				id: 1006,
+				type: "item",
+				item: "ars_nouveau:arcane_relay_splitter"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: -4.0d,
+			description: [
+				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone.",
+				"",
+				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
+			],
+			dependencies: [I;1015],
+			id: 1008,
+			tasks: [{
+				id: 1009,
+				type: "item",
+				item: "ars_nouveau:whelp_charm"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -3.5d,
+			description: [
+				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by moving items between inventories. ",
+				"",
+				"Refer to the Worn Notebook for an in-depth guide on using Carbuncles.",
+				"",
+				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
+			],
+			dependencies: [I;1015],
+			id: 1010,
+			tasks: [{
+				id: 1011,
+				type: "item",
+				item: "ars_nouveau:carbuncle_charm"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: -4.0d,
+			description: [
+				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you.",
+				"",
+				"Refer to the Worn Notebook for an in-depth guide on using Sylphs.",
+				"",
+				"The number of wild Sylphs have dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
+			],
+			dependencies: [I;1015],
+			id: 1012,
+			tasks: [{
+				id: 1013,
+				type: "item",
+				item: "ars_nouveau:sylph_charm"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -5.0d,
+			description: [
+				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help pan aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come.",
+				"",
+				"Placing the Summoning Crystal will define the area that these creatures will perform their tasks. An inventory directly adjacent to the Summoning Crystal will be used to store any items they collect. ",
+				"",
+				"The Summoning Crystal is crafted with the Enchanting Apparatus, as are all Charms."
+			],
+			dependencies: [I;946],
+			id: 1015,
+			tasks: [{
+				id: 1016,
+				type: "item",
+				item: "ars_nouveau:summoning_crystal"
+			}]
 		}
 	]
 }

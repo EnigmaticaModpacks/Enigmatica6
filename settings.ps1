@@ -22,6 +22,7 @@ $CONFIGS_TO_REMOVE = @(
 	"extremesoundmuffler-client.toml", 
 	"jei-client.toml",
 	"mcjtylib-client.toml",
+	"mining_helmet-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
 	"rftoolscontrol-client.toml",

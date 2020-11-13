@@ -412,3 +412,19 @@
 	#Range: 0 ~ 256
 	min_y = 18
 
+["Ore Config: arcane"]
+	#Maximum Y-Level [Range: 0-256, Default: 45]
+	#Range: 0 ~ 256
+	max_y = 45
+	#Average ores per Chunk [Range: 0-64, Default: 5]
+	#Range: 0 ~ 64
+	count = 5
+	#Activate/Deactivate the World Gen [Default: true]
+	active = true
+	#Configure the ore Vein Size [Default: 5]
+	#Range: 0 ~ 64
+	vein_size = 5
+	#Minimum Y-Level [Range: 0-256, Default: 20]
+	#Range: 0 ~ 256
+	min_y = 20
+

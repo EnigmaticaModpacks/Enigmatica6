@@ -2,13 +2,13 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
-                ingredients: ['ars_nouveau:mana_gem', 'naturesaura:gold_leaf'],
+                ingredients: ['emendatusenigmatica:arcane_gem', 'naturesaura:gold_leaf'],
                 entity: 'ars_nouveau:carbuncle',
                 aura: 100000,
                 time: 100
             },
             {
-                ingredients: ['ars_nouveau:mana_gem', 'naturesaura:ancient_sapling'],
+                ingredients: ['emendatusenigmatica:arcane_gem', 'naturesaura:ancient_sapling'],
                 entity: 'ars_nouveau:sylph',
                 aura: 100000,
                 time: 100
