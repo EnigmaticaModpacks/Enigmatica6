@@ -1,0 +1,122 @@
+[
+    {
+        "predicate": { "item": "mekanismtools:bronze_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/bronze"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/stick"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/bronze"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/bronze"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:lapis_lazuli_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/lapis"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/stick"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/iron"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/iron"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:osmium_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/osmium"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/stick"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/iron"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/iron"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:refined_glowstone_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/refined_glowstone"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/stick"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/iron"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/iron"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:refined_obsidian_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/refined_obsidian"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/stick"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/obsidian"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/obsidian"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:steel_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/steel"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/stick"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/steel"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/steel"]
+        }
+    },
+    {
+        "predicate": { "item": "immersiveengineering:sword_steel" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/steel"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/treated_wood"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/steel"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/steel"]
+        }
+    },
+    {
+        "predicate": { "item": "naturesaura:infused_iron_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/infused_iron"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/treated_wood"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/infused_iron"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/infused_iron"]
+        }
+    },
+    {
+        "predicate": { "item": "naturesaura:sky_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/sky"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/treated_wood"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/sky"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/sky"]
+        }
+    },
+    {
+        "predicate": { "item": "botania:manasteel_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/manasteel"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/treated_wood"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/manasteel"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/manasteel"]
+        }
+    },
+    {
+        "predicate": { "item": "botania:elementium_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/elementium"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/jacaranda"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/elementium"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/elementium"]
+        }
+    },
+    {
+        "predicate": { "item": "botania:terra_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/terrasteel"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/terrasteel"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/terrasteel"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/terrasteel"]
+        }
+    }
+]

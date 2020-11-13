@@ -1,0 +1,83 @@
+[
+    {
+        "predicate": { "item": "mekanismtools:bronze_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/bronze"],
+            "double/head_right": ["double/butt_right", "butt/bronze"],
+            "double/handle": ["double/basic_handle", "basic_handle/stick"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:lapis_lazuli_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/lapis"],
+            "double/head_right": ["double/butt_right", "butt/lapis"],
+            "double/handle": ["double/basic_handle", "basic_handle/stick"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:osmium_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/osmium"],
+            "double/head_right": ["double/butt_right", "butt/osmium"],
+            "double/handle": ["double/basic_handle", "basic_handle/stick"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:refined_glowstone_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/refined_glowstone"],
+            "double/head_right": ["double/butt_right", "butt/refined_glowstone"],
+            "double/handle": ["double/basic_handle", "basic_handle/stick"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:refined_obsidian_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/refined_obsidian"],
+            "double/head_right": ["double/butt_right", "butt/refined_obsidian"],
+            "double/handle": ["double/basic_handle", "basic_handle/stick"]
+        }
+    },
+    {
+        "predicate": { "item": "mekanismtools:steel_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/steel"],
+            "double/head_right": ["double/butt_right", "butt/steel"],
+            "double/handle": ["double/basic_handle", "basic_handle/stick"]
+        }
+    },
+    {
+        "predicate": { "item": "immersiveengineering:hoe_steel" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/steel"],
+            "double/head_right": ["double/butt_right", "butt/steel"],
+            "double/handle": ["double/basic_handle", "basic_handle/treated_wood"]
+        }
+    },
+    {
+        "predicate": { "item": "naturesaura:infused_iron_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/sky"],
+            "double/head_right": ["double/butt_right", "butt/sky"],
+            "double/handle": ["double/basic_handle", "basic_handle/treated_wood"]
+        }
+    },
+    {
+        "predicate": { "item": "naturesaura:sky_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/sky"],
+            "double/head_right": ["double/butt_right", "butt/sky"],
+            "double/handle": ["double/basic_handle", "basic_handle/treated_wood"]
+        }
+    }
+]
