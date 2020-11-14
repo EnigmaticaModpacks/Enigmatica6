@@ -4,8 +4,13 @@
 
 	#MekaSuit Settings
 	[gear.mekasuit]
+		#Maximum amount of Nutritional Paste storable by the nutritional injection unit.
+		#Range: 1 ~ 9223372036854775807
+		nutritionalMaxStorage = 128000
 		#Energy usage (Joules) of MekaSuit per tick when flying via Gravitational Modulation.
 		energyUsageGravitationalModulation = "1000"
+		#Energy cost/multiplier in Joules for reducing magic damage via the inhalation purification unit. Energy cost is: MagicDamage * energyUsageMagicPrevent. (1 MagicDamage is 1 half heart).
+		energyUsageMagicReduce = "1000"
 		#Energy usage (Joules) of MekaSuit when adding 0.1 to jump motion.
 		baseJumpEnergyUsage = "1000"
 		#Energy usage (Joules) of MekaSuit per tick of using vision enhancement.
@@ -16,6 +21,12 @@
 		energyUsageItemAttraction = "250"
 		#Energy usage (Joules) of MekaSuit when adding 0.1 to sprint motion.
 		energyUsageSprintBoost = "100"
+		#Maximum amount of Hydrogen storable in the jetpack unit.
+		#Range: 1 ~ 9223372036854775807
+		jetpackMaxStorage = 48000
+		#Rate at which Hydrogen can be transferred into the jetpack unit.
+		#Range: 1 ~ 9223372036854775807
+		jetpackTransferRate = 256
 		#Energy usage (Joules) of MekaSuit when lessening a potion effect.
 		energyUsagePotionTick = "40000"
 		#Energy capacity (Joules) of MekaSuit items without any installed upgrades. Quadratically scaled by upgrades.
@@ -24,12 +35,13 @@
 		chargeRate = "100000"
 		#Energy usage (Joules) of MekaSuit per unit of damage applied.
 		energyUsageDamage = "100000"
+		#Rate at which Nutritional Paste can be transferred into the nutritional injection unit.
+		#Range: 1 ~ 9223372036854775807
+		nutritionalTransferRate = 256
 		#Charge rate of inventory items (Joules) per tick.
 		inventoryChargeRate = "10000"
 		#Energy usage (Joules) of MekaSuit per half-food of nutritional injection.
 		energyUsageNutritionalInjection = "20000"
-		#Energy usage (Joules) of MekaSuit when preventing a negative potion effect.
-		energyUsageMagicPrevent = "10000"
 
 	#Network Reader Settings
 	[gear.network_reader]
@@ -148,6 +160,9 @@
 
 	#Canteen Settings
 	[gear.canteen]
+		#Rate at which Nutritional Paste can be transferred into a Canteen.
+		#Range: 1 ~ 9223372036854775807
+		transferRate = 128
 		#Maximum amount of Nutritional Paste storable by the Canteen.
 		#Range: 1 ~ 9223372036854775807
 		maxStorage = 64000

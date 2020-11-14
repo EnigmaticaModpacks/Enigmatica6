@@ -1,0 +1,82 @@
+[
+  {
+    "sealID": "seals:alchemist",
+    "sealLangKey": "alchemist",
+    "requisites": [
+      "minecraft:nether/all_effects",
+      "minecraft:nether/all_potions"
+    ],
+    "icon": {
+      "type": "item",
+      "value": {
+        "stack": "minecraft:brewing_stand"
+      }
+    },
+    "invisible": false
+  },
+  {
+    "sealID": "seals:hero",
+    "sealLangKey": "hero",
+    "requisites": [
+      "minecraft:adventure/hero_of_the_village",
+      "minecraft:adventure/kill_all_mobs",
+      "minecraft:adventure/arbalistic"
+    ],
+    "icon": {
+      "type": "item",
+      "value": {
+        "stack": "minecraft:shield"
+      }
+    },
+    "invisible": false
+  },
+  {
+    "sealID": "seals:explorer",
+    "sealLangKey": "explorer",
+    "requisites": [
+      "minecraft:adventure/adventuring_time",
+      "minecraft:nether/fast_travel"
+    ],
+    "icon": {
+      "type": "item",
+      "value": {
+        "stack": "minecraft:oak_boat"
+      }
+    },
+    "invisible": false
+  },
+  {
+    "sealID": "seals:cultist",
+    "sealLangKey": "cultist",
+    "requisites": [
+      "minecraft:end/levitate",
+      "minecraft:end/respawn_dragon",
+      "minecraft:end/enter_end_gateway"
+    ],
+    "icon": {
+      "type": "item",
+      "value": {
+        "stack": "minecraft:ender_eye"
+      }
+    },
+    "invisible": false
+  },
+  {
+    "sealID": "seals:pacifist",
+    "sealLangKey": "pacifist",
+    "requisites": [
+      "minecraft:husbandry/bred_all_animals",
+      "minecraft:husbandry/complete_catalogue",
+      "minecraft:husbandry/balanced_diet",
+      "minecraft:husbandry/break_diamond_hoe",
+      "minecraft:story/cure_zombie_villager"
+    ],
+    "icon": {
+      "type": "item",
+      "value": {
+        "stack": "minecraft:emerald"
+      }
+    },
+    "invisible": false
+  }
+]

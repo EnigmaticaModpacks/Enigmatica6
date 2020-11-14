@@ -1,9 +1,6 @@
 
 #Mekanism Tools Config. This config is synced from server to client.
 [tools]
-	#The chance that Mekanism Armor can spawn on mobs.
-	#Range: 0.0 ~ 1.0
-	mobArmorSpawnRate = 0.03
 
 	# Material Settings for steel
 	[tools.steel]
@@ -444,6 +441,119 @@
 		#Maximum durability of refined_obsidian paxels.
 		#Range: > 1
 		refined_obsidianPaxelMaxUses = 3000
+
+	[tools.mobArmorSpawnRate]
+		#The chance that Mekanism Armor can spawn on mobs.
+		#Range: 0.0 ~ 1.0
+		general = 0.03
+
+		#Spawn chances for pieces of Steel gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
+		[tools.mobArmorSpawnRate.steel]
+			#The chance that mobs can spawn with Steel Chestplates.
+			#Range: 0.0 ~ 1.0
+			chestplateChance = 0.5
+			#The chance that mobs can spawn with Steel Boots.
+			#Range: 0.0 ~ 1.0
+			bootsChance = 0.5
+			#The chance that mobs can spawn with Steel Leggings.
+			#Range: 0.0 ~ 1.0
+			leggingsChance = 0.5
+			#The chance that mobs can spawn with Steel Helmets.
+			#Range: 0.0 ~ 1.0
+			helmetChance = 0.5
+			#The chance that mobs can spawn with Steel Swords.
+			#Range: 0.0 ~ 1.0
+			swordChance = 0.5
+
+		#Spawn chances for pieces of Refined Glowstone gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
+		[tools.mobArmorSpawnRate.refined_glowstone]
+			#The chance that mobs can spawn with Refined Glowstone Chestplates.
+			#Range: 0.0 ~ 1.0
+			chestplateChance = 0.5
+			#The chance that mobs can spawn with Refined Glowstone Boots.
+			#Range: 0.0 ~ 1.0
+			bootsChance = 0.5
+			#The chance that mobs can spawn with Refined Glowstone Leggings.
+			#Range: 0.0 ~ 1.0
+			leggingsChance = 0.5
+			#The chance that mobs can spawn with Refined Glowstone Helmets.
+			#Range: 0.0 ~ 1.0
+			helmetChance = 0.5
+			#The chance that mobs can spawn with Refined Glowstone Swords.
+			#Range: 0.0 ~ 1.0
+			swordChance = 0.5
+
+		#Spawn chances for pieces of Lapis Lazuli gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
+		[tools.mobArmorSpawnRate.lapis_lazuli]
+			#The chance that mobs can spawn with Lapis Lazuli Chestplates.
+			#Range: 0.0 ~ 1.0
+			chestplateChance = 0.5
+			#The chance that mobs can spawn with Lapis Lazuli Boots.
+			#Range: 0.0 ~ 1.0
+			bootsChance = 0.5
+			#The chance that mobs can spawn with Lapis Lazuli Leggings.
+			#Range: 0.0 ~ 1.0
+			leggingsChance = 0.5
+			#The chance that mobs can spawn with Lapis Lazuli Helmets.
+			#Range: 0.0 ~ 1.0
+			helmetChance = 0.5
+			#The chance that mobs can spawn with Lapis Lazuli Swords.
+			#Range: 0.0 ~ 1.0
+			swordChance = 0.5
+
+		#Spawn chances for pieces of Osmium gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
+		[tools.mobArmorSpawnRate.osmium]
+			#The chance that mobs can spawn with Osmium Chestplates.
+			#Range: 0.0 ~ 1.0
+			chestplateChance = 0.5
+			#The chance that mobs can spawn with Osmium Boots.
+			#Range: 0.0 ~ 1.0
+			bootsChance = 0.5
+			#The chance that mobs can spawn with Osmium Leggings.
+			#Range: 0.0 ~ 1.0
+			leggingsChance = 0.5
+			#The chance that mobs can spawn with Osmium Helmets.
+			#Range: 0.0 ~ 1.0
+			helmetChance = 0.5
+			#The chance that mobs can spawn with Osmium Swords.
+			#Range: 0.0 ~ 1.0
+			swordChance = 0.5
+
+		#Spawn chances for pieces of Refined Obsidian gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
+		[tools.mobArmorSpawnRate.refined_obsidian]
+			#The chance that mobs can spawn with Refined Obsidian Chestplates.
+			#Range: 0.0 ~ 1.0
+			chestplateChance = 0.5
+			#The chance that mobs can spawn with Refined Obsidian Boots.
+			#Range: 0.0 ~ 1.0
+			bootsChance = 0.5
+			#The chance that mobs can spawn with Refined Obsidian Leggings.
+			#Range: 0.0 ~ 1.0
+			leggingsChance = 0.5
+			#The chance that mobs can spawn with Refined Obsidian Helmets.
+			#Range: 0.0 ~ 1.0
+			helmetChance = 0.5
+			#The chance that mobs can spawn with Refined Obsidian Swords.
+			#Range: 0.0 ~ 1.0
+			swordChance = 0.5
+
+		#Spawn chances for pieces of Bronze gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
+		[tools.mobArmorSpawnRate.bronze]
+			#The chance that mobs can spawn with Bronze Chestplates.
+			#Range: 0.0 ~ 1.0
+			chestplateChance = 0.5
+			#The chance that mobs can spawn with Bronze Boots.
+			#Range: 0.0 ~ 1.0
+			bootsChance = 0.5
+			#The chance that mobs can spawn with Bronze Leggings.
+			#Range: 0.0 ~ 1.0
+			leggingsChance = 0.5
+			#The chance that mobs can spawn with Bronze Helmets.
+			#Range: 0.0 ~ 1.0
+			helmetChance = 0.5
+			#The chance that mobs can spawn with Bronze Swords.
+			#Range: 0.0 ~ 1.0
+			swordChance = 0.5
 
 	# Material Settings for bronze
 	[tools.bronze]

@@ -1,0 +1,34 @@
+#Max number of times you can use /back
+#Range: > 0
+maxBack = 10
+#Max homes
+#Range: > 0
+maxHomes = 1
+#/back cooldown in seconds
+#Range: 0 ~ 604800
+backCooldown = 600
+#/spawn cooldown in seconds
+#Range: 0 ~ 604800
+spawnCooldown = 600
+#/warp cooldown in seconds
+#Range: 0 ~ 604800
+warpCooldown = 1800
+#/home cooldown in seconds
+#Range: 0 ~ 604800
+homeCooldown = 180
+#/tpa cooldown in seconds
+#Range: 0 ~ 604800
+tpaCooldown = 10
+#/rtp cooldown in seconds
+#Range: 0 ~ 604800
+rtpCooldown = 600
+#Number of tries before /rtp gives up
+#Range: 1 ~ 1000
+rtpMaxTries = 100
+#/rtp min distance from spawn point
+#Range: 0.0 ~ 3.0E7
+rtpMinDistance = 1000.0
+#/rtp max distance from spawn point
+#Range: 0.0 ~ 3.0E7
+rtpMaxDistance = 10000.0
+

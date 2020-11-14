@@ -1,0 +1,16 @@
+{
+    "name": "Chunkloading",
+    "icon": "minecraft:clock",
+    "category": "patchouli:ftbchunks",
+    "sortnum": 3,
+    "pages": [
+        {
+            "type": "text",
+            "text": "If you’re new to modded you might not be familiar with the concept of chunkloading. When you’re further away from your base (or when you log off a server that’s constantly running) chunks with no players nearby stop running. If you want to keep them going at all times, so that your base and machines function even if you’re not there you’re going to need to chunkload them."
+        },
+        {
+            "type": "text",
+            "text": "$(l)Please note that this keeps them running at all times$(reset), so especially on a server you need to be mindful of what you chunkload to avoid impacting performance too much. You can figure out how to chunkload specific chunks in $(l:ftbchunks/ftbchunks_claiming)this$(reset) chapter."
+        }
+    ]
+}

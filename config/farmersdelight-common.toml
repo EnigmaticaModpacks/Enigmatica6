@@ -1,0 +1,72 @@
+
+#Game settings
+[settings]
+	#Should Novice and Apprentice Farmers buy this mod's crops? (May reduce chances of other trades appearing)
+	farmersBuyFDCrops = true
+
+#Vanilla item overrides
+[overrides]
+	#Should Rabbit Stew grant users the jumping prowess of a rabbit when eaten?
+	rabbitStewJumpBoost = true
+	#Should most vanilla tools register a dispenser behavior when facing a Cutting Board?
+	dispenserUsesToolsOnCuttingBoard = true
+	#Should items inside the tag 'farmersdelight:comfort_foods' grant 5 minutes of Comfort when eaten? (defaults to vanilla SoupItems)
+	comfortFoodTagEffect = true
+
+#World generation
+[world]
+	#Generate crop items on Village houses (all biomes)
+	cropsOnVillageHouseLoot = true
+	#Generate crop items on a Shipwreck's supply chests
+	cropsOnShipwreckSupplyLoot = true
+	#Generate Compost Heaps across all village biomes
+	genVillageCompostHeaps = true
+
+	#Sea Beet generation
+	[world.wild_beetroots]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
+		#Generate sea beets on beaches
+		genWildBeetroots = true
+
+	#Tomato Vines generation
+	[world.wild_tomatoes]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+		#Generate tomato vines on arid biomes (temperature 1.0 or higher)
+		genWildTomatoes = true
+
+	#Wild Cabbage generation
+	[world.wild_cabbages]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
+		#Generate wild cabbages on beaches
+		genWildCabbages = true
+
+	#Wild Onion generation
+	[world.wild_onions]
+		#Generate wild onions on temperate biomes (temperature between 0.4 and 0.9)
+		genWildOnions = true
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+
+	#Wild Potato generation
+	[world.wild_potatoes]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+		#Generate wild potatoes on cold biomes (temperature between 0.0 and 0.3)
+		genWildPotatoes = true
+
+	#Wild Carrot generation
+	[world.wild_carrots]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 8
+		#Generate wild carrots on temperate biomes (temperature between 0.4 and 0.9)
+		genWildCarrots = true
+

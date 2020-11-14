@@ -1,0 +1,402 @@
+
+[Enchantments]
+
+	[Enchantments.Outlaw]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 5
+		#If TRUE, the Outlaw Enchantment causes Villagers (and Iron Golems) to drop Emeralds when killed.
+		"Emerald Drops" = true
+		#If TRUE, the Outlaw Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments.Volley]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#If TRUE, the Volley Enchantment is available for various Bows.
+		Enable = true
+
+	[Enchantments.Cavalier]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Cavalier Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments."Hunter's Bounty"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#Adjust this value to set the chance of an additional drop per level of the Enchantment (in percentage).
+		#Range: 1 ~ 100
+		"Effect Chance" = 50
+		#If TRUE, the Hunter's Bounty Enchantment is available for Bows.
+		Enable = true
+
+	[Enchantments."Curse of Foolishness"]
+		#If TRUE, the Curse of Foolishness Enchantment is available for various Tools and Weapons.
+		Enable = true
+
+	[Enchantments."Chilling Rebuke"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#If TRUE, mobs wearing armor with this Enchantment can knockback players.
+		"Mobs Knockback Players" = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#Adjust this value to set the chance per level of the Enchantment firing (in percentage).
+		#Range: 1 ~ 100
+		"Effect Chance" = 20
+		#If TRUE, the Chilling Rebuke Enchantment is available for Armor, Shields, and Horse Armor.
+		Enable = true
+
+	[Enchantments."Magic Protection"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Magic Protection Enchantment is available for Armor and Horse Armor.
+		Enable = true
+
+	[Enchantments.Gourmand]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Gourmand Enchantment is available for Helmets.
+		Enable = true
+
+	[Enchantments."Ender Disruption"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 5
+		#If TRUE, the Ender Disruption Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments.Vitality]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Vitality Enchantment is available for Chestplates.
+		Enable = true
+		#Adjust this value to set the health granted level of the Enchantment. (There are 2 health per heart icon.)
+		#Range: 1 ~ 10
+		"Health / Level" = 4
+
+	[Enchantments.Leech]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Leech Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments.Vorpal]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#Adjust this value to set the critical hit chance per level of the Enchantment (in percentage).
+		#Range: 1 ~ 100
+		"Head Drop Chance / Level" = 10
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#Adjust this value to set the base critical hit chance of the Enchantment (in percentage).
+		#Range: 1 ~ 100
+		"Base Critical Chance" = 5
+		#Adjust this value to set the base critical hit chance for the Enchantment (in percentage).
+		#Range: 1 ~ 100
+		"Base Head Drop Chance" = 10
+		#Adjust this value to set the critical hit damage multiplier.
+		#Range: 2 ~ 1000
+		"Critical Damage Multiplier" = 5
+		#Adjust this value to set the additional critical hit chance per level of the Enchantment (in percentage).
+		#Range: 1 ~ 100
+		"Critical Chance / Level" = 5
+		#If TRUE, the Vorpal Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments.Pilfering]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#If TRUE, the Pilfering Enchantment is available for Fishing Rods.
+		Enable = true
+		#This sets whether or not the Enchantment works on Players.
+		"Allow Player Stealing" = true
+
+	[Enchantments.Excavating]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Excavating Enchantment is available for various Tools.
+		Enable = true
+
+	[Enchantments.Insight]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#Adjust this to change the max experience awarded per level of the Enchantment.
+		#Range: 1 ~ 1000
+		"Experience Amount" = 4
+		#If TRUE, the Insight Enchantment is available for Helmets.
+		Enable = true
+
+	[Enchantments.Weeding]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#If TRUE, the Weeding Enchantment is available for Hoes.
+		Enable = true
+
+	[Enchantments.Reach]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Reach Enchantment is available for Chestplates.
+		Enable = true
+
+	[Enchantments."Air Affinity"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#If TRUE, the Air Affinity Enchantment is available for Helmets.
+		Enable = true
+
+	[Enchantments."Curse of Mercy"]
+		#If TRUE, the Curse of Mercy Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments."Angler's Bounty"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#Adjust this value to set the chance of an additional drop per level of the Enchantment (in percentage).
+		#Range: 1 ~ 100
+		"Effect Chance" = 50
+		#If TRUE, the Angler's Bounty Enchantment is available for Fishing Rods.
+		Enable = true
+
+	[Enchantments.Furrowing]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Furrowing Enchantment is available for Hoes.
+		Enable = true
+
+	[Enchantments.Displacement]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#Adjust this value to set the chance per level of the Enchantment firing (in percentage).
+		#Range: 1 ~ 100
+		"Effect Chance" = 20
+		#If TRUE, the Displacement Enchantment is available for Armor, Shields, and Horse Armor.
+		Enable = true
+		#If TRUE, mobs wearing armor with this Enchantment can teleport players.
+		"Mobs Teleport Players" = false
+
+	[Enchantments."Frost Aspect"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Frost Aspect Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments."Magic Edge"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Magic Edge Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments.Tilling]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Tilling Enchantment is available for Hoes.
+		Enable = true
+
+	[Enchantments.Vigilante]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 5
+		#If TRUE, the Vigilante Enchantment is available for various Weapons.
+		Enable = true
+
+	[Enchantments."Quick Draw"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Quick Draw Enchantment is available for various Bows.
+		Enable = true
+
+	[Enchantments.Bulwark]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#If TRUE, the Bulwark Enchantment is available for Shields.
+		Enable = true
+
+	[Enchantments.Phalanx]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Phalanx Enchantment is available for Shields.
+		Enable = true
+
+	[Enchantments.Soulbound]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment. If permanent, this setting is ignored.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Soulbound Enchantment is permanent (and will remove excess levels when triggered).
+		Permanent = true
+		#If TRUE, the Soulbound Enchantment is available.
+		Enable = true
+
+	[Enchantments.Trueshot]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Trueshot Enchantment is available for various Bows.
+		Enable = true
+
+	[Enchantments."Flaming Rebuke"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = false
+		#If TRUE, mobs wearing armor with this Enchantment can knockback players.
+		"Mobs Knockback Players" = false
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#Adjust this value to set the chance per level of the Enchantment firing (in percentage).
+		#Range: 1 ~ 100
+		"Effect Chance" = 20
+		#If TRUE, the Flaming Rebuke Enchantment is available for Armor, Shields, and Horse Armor.
+		Enable = true
+
+[Overrides]
+
+	[Overrides."Fire Aspect"]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Fire Aspect Enchantment is replaced with a more configurable version which works on more items, such as Axes.
+		Enable = true
+
+	[Overrides."Fire Protection"]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Fire Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
+		Enable = true
+
+	[Overrides.Mending]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#Adjust this value to set the chance of an Anvil being damaged when used to repair an item with Preservation (in percentage). Only used if Alternate Mending (Preservation) is enabled.
+		#Range: 0 ~ 12
+		"Anvil Damage Chance" = 3
+		#If TRUE, the Mending Enchantment is replaced with a new Enchantment - Preservation. This enchantment allows you to repair items at an Anvil without paying an increasing XP cost for every time you repair it. Additionally, these repairs have a much lower chance of damaging the anvil.
+		"Alternate Mending" = false
+
+	[Overrides.Knockback]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Knockback Enchantment is replaced with a more configurable version which works on more items, such as Axes.
+		Enable = true
+
+	[Overrides.Thorns]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#Adjust this value to set the chance per level of the Enchantment firing (in percentage).
+		#Range: 1 ~ 100
+		"Effect Chance" = 15
+		#If TRUE, the Thorns Enchantment is replaced with a more configurable version which works on more items, such as Shields and Horse Armor.
+		Enable = true
+
+	[Overrides."Blast Protection"]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Blast Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
+		Enable = true
+
+	[Overrides.Looting]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 3
+		#If TRUE, the Looting Enchantment is replaced with a more configurable version which works on more items, such as Axes.
+		Enable = true
+
+	[Overrides.Protection]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
+		Enable = true
+
+	[Overrides."Frost Walker"]
+		#This sets whether or not the Enchantment is considered a 'treasure' enchantment.
+		Treasure = true
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 2
+		#If TRUE, the Frost Walker Enchantment will also chill Lava into Glossed Magma.
+		"Freeze Lava" = true
+		#If TRUE, the Frost Walker Enchantment is replaced with an improved and more configurable version which works on more items, such as Horse Armor.
+		Enable = true
+
+	[Overrides."Feather Falling"]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Feather Falling Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
+		Enable = true
+
+	[Overrides."Projectile Protection"]
+		#This option adjusts the maximum allowable level for the Enchantment.
+		#Range: 1 ~ 10
+		"Max Level" = 4
+		#If TRUE, the Projectile Protection Enchantment is replaced with a more configurable version which works on more items, such as Horse Armor.
+		Enable = true
+

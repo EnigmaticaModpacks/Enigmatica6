@@ -39,6 +39,9 @@
 		[modules.core.sludge]
 			enabled = true
 
+		[modules.core.ether]
+			enabled = true
+
 		[modules.core.biofuel]
 			enabled = true
 
@@ -70,6 +73,9 @@
 			enabled = true
 
 		[modules.core.fertilizer]
+			enabled = true
+
+		[modules.core.laser_lens]
 			enabled = true
 
 		[modules.core.plastic]
@@ -118,6 +124,9 @@
 	[modules.tools]
 		enabled = true
 
+		[modules.tools.infinity_trident]
+			enabled = true
+
 		[modules.tools.meat_feeder]
 			enabled = true
 
@@ -160,6 +169,9 @@
 		[modules.resource_production.resourceful_furnace]
 			enabled = true
 
+		[modules.resource_production.ore_laser_base]
+			enabled = true
+
 		[modules.resource_production.fluid_collector]
 			enabled = true
 
@@ -176,6 +188,12 @@
 			enabled = true
 
 		[modules.resource_production.dye_mixer]
+			enabled = true
+
+		[modules.resource_production.laser_drill]
+			enabled = true
+
+		[modules.resource_production.fluid_laser_base]
 			enabled = true
 
 	#Random things that don't fit

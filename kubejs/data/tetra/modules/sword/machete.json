@@ -1,0 +1,980 @@
+{
+    "variants": [
+        {
+            "key": "machete/mahogany",
+            "durability": 70,
+            "integrity": 0,
+            "magicCapacity": 88,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "e69963",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 1.0]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "e69963"
+                }
+            ]
+        },
+        {
+            "key": "machete/jacaranda",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 80,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "e6d4c8",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "e6d4c8"
+                }
+            ]
+        },
+        {
+            "key": "machete/palm",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 80,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "db9d51",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "db9d51"
+                }
+            ]
+        },
+        {
+            "key": "machete/willow",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 96,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "7bc78d",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "7bc78d"
+                }
+            ]
+        },
+        {
+            "key": "machete/dead",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 52,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "a1ada4",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "a1ada4"
+                }
+            ]
+        },
+        {
+            "key": "machete/magic",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 164,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "4567b0",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "4567b0"
+                }
+            ]
+        },
+        {
+            "key": "machete/umbran",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 156,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "8768a6",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "8768a6"
+                }
+            ]
+        },
+        {
+            "key": "machete/hellbark",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 156,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "544b5e",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "544b5e"
+                }
+            ]
+        },
+        {
+            "key": "machete/ancient",
+            "durability": 80,
+            "integrity": 0,
+            "magicCapacity": 176,
+            "damage": 4,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "84538c",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "84538c"
+                }
+            ]
+        },
+        {
+            "key": "machete/fir",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 88,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "8a817d",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "8a817d"
+                }
+            ]
+        },
+        {
+            "key": "machete/redwood",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 88,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "96421d",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "96421d"
+                }
+            ]
+        },
+        {
+            "key": "machete/cherry",
+            "durability": 50,
+            "integrity": 0,
+            "magicCapacity": 90,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "851d19",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "851d19"
+                }
+            ]
+        },
+        {
+            "key": "machete/lapis",
+            "durability": 201,
+            "integrity": -1,
+            "magicCapacity": 122,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "3327db",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "3327db"
+                }
+            ]
+        },
+        {
+            "key": "machete/osmium",
+            "durability": 639,
+            "integrity": -1,
+            "magicCapacity": 112,
+            "damage": 6,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "a7aed9",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "a7aed9"
+                }
+            ]
+        },
+        {
+            "key": "machete/refined_glowstone",
+            "durability": 239,
+            "integrity": -2,
+            "magicCapacity": 154,
+            "damage": 8,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "eeff00",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "eeff00"
+                }
+            ]
+        },
+        {
+            "key": "machete/refined_obsidian",
+            "durability": 2377,
+            "integrity": -3,
+            "magicCapacity": 168,
+            "damage": 14,
+            "attackSpeed": -0.1,
+            "glyph": {
+                "tint": "6e1f9c",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/grainy",
+                    "tint": "6e1f9c"
+                }
+            ]
+        },
+        {
+            "key": "machete/andesite_alloy",
+            "durability": 272,
+            "integrity": 0,
+            "magicCapacity": 108,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "a3adac",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "a3adac"
+                }
+            ]
+        },
+        {
+            "key": "machete/zinc",
+            "durability": 320,
+            "integrity": -1,
+            "magicCapacity": 86,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "e1e9f2",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "e1e9f2"
+                }
+            ]
+        },
+        {
+            "key": "machete/pink_slime",
+            "durability": 6937,
+            "integrity": -1,
+            "magicCapacity": 108,
+            "damage": 3,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "df3ce8",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "df3ce8"
+                }
+            ]
+        },
+        {
+            "key": "machete/iesnium",
+            "durability": 320,
+            "integrity": -1,
+            "magicCapacity": 168,
+            "damage": 6,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "aadef0",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "aadef0"
+                }
+            ]
+        },
+        {
+            "key": "machete/treated_wood",
+            "durability": 86,
+            "integrity": 0,
+            "magicCapacity": 118,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "8f380a",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/crude",
+                    "tint": "8f380a"
+                }
+            ]
+        },
+        {
+            "key": "machete/aluminum",
+            "durability": 223,
+            "integrity": -1,
+            "magicCapacity": 78,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "dce2e8",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "dce2e8"
+                }
+            ]
+        },
+        {
+            "key": "machete/constantan",
+            "durability": 232,
+            "integrity": -1,
+            "magicCapacity": 110,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "d46326",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "d46326"
+                }
+            ]
+        },
+        {
+            "key": "machete/uranium",
+            "durability": 210,
+            "integrity": -1,
+            "magicCapacity": 170,
+            "damage": 8,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "538a71",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "538a71"
+                }
+            ]
+        },
+        {
+            "key": "machete/infused_iron",
+            "durability": 296,
+            "integrity": -1,
+            "magicCapacity": 158,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "8a117",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "8a117"
+                }
+            ]
+        },
+        {
+            "key": "machete/sky",
+            "durability": 2268,
+            "integrity": -4,
+            "magicCapacity": 178,
+            "damage": 7,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "78ffff",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "78ffff"
+                }
+            ]
+        },
+        {
+            "key": "machete/manasteel",
+            "durability": 815,
+            "integrity": -2,
+            "magicCapacity": 150,
+            "damage": 6,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "104bc2",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1,
+                "manaRepair": 60
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "104bc2"
+                }
+            ]
+        },
+        {
+            "key": "machete/elementium",
+            "durability": 490,
+            "integrity": -3,
+            "magicCapacity": 178,
+            "damage": 6,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "cb0be0",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1,
+                "manaRepair": 60
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "cb0be0"
+                }
+            ]
+        },
+        {
+            "key": "machete/terrasteel",
+            "durability": 2865,
+            "integrity": -4,
+            "magicCapacity": 192,
+            "damage": 6,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "8c71b",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1,
+                "manaRepair": 60
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "8c71b"
+                }
+            ]
+        },
+        {
+            "key": "machete/gaia_spirit",
+            "durability": 2377,
+            "integrity": -5,
+            "magicCapacity": 208,
+            "damage": 14,
+            "attackSpeed": -0.1,
+            "glyph": {
+                "tint": "80bdb9",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1,
+                "manaRepair": 60
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/grainy",
+                    "tint": "80bdb9"
+                }
+            ]
+        },
+        {
+            "key": "machete/neptunium",
+            "durability": 1628,
+            "integrity": -4,
+            "magicCapacity": 158,
+            "damage": 10,
+            "attackSpeed": -0.1,
+            "glyph": {
+                "tint": "2de0c2",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/grainy",
+                    "tint": "2de0c2"
+                }
+            ]
+        },
+        {
+            "key": "machete/compressed_iron",
+            "durability": 148,
+            "integrity": -1,
+            "magicCapacity": 112,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "5e6a6e",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "5e6a6e"
+                }
+            ]
+        },
+        {
+            "key": "machete/energized_steel",
+            "durability": 505,
+            "integrity": -2,
+            "magicCapacity": 108,
+            "damage": 6,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "dbd2a4",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "dbd2a4"
+                }
+            ]
+        },
+        {
+            "key": "machete/niotic",
+            "durability": 891,
+            "integrity": -2,
+            "magicCapacity": 108,
+            "damage": 5,
+            "attackSpeed": 0,
+            "glyph": {
+                "tint": "1cc9e8",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/metal",
+                    "tint": "1cc9e8"
+                }
+            ]
+        },
+        {
+            "key": "machete/spirited",
+            "durability": 1628,
+            "integrity": -3,
+            "magicCapacity": 108,
+            "damage": 9,
+            "attackSpeed": -0.1,
+            "glyph": {
+                "tint": "13eb21",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/grainy",
+                    "tint": "13eb21"
+                }
+            ]
+        },
+        {
+            "key": "machete/nitro",
+            "durability": 2377,
+            "integrity": -4,
+            "magicCapacity": 108,
+            "damage": 14,
+            "attackSpeed": -0.1,
+            "glyph": {
+                "tint": "d11608",
+                "textureY": 32,
+                "textureX": 48
+            },
+            "effects": {
+                "sweeping": 1,
+                "strikingCut": 1,
+                "sweepingStrike": 1
+            },
+            "tools": {
+                "cut": [1, 0.9375]
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/machete/grainy",
+                    "tint": "d11608"
+                }
+            ]
+        }
+    ]
+}

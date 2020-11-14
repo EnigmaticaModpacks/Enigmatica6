@@ -1,0 +1,106 @@
+{
+	id: 68,
+	filename: "getting_started",
+	order_index: 2,
+	title: "Getting Started",
+	icon: "minecraft:nether_star",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Welcome",
+			x: 0.0d,
+			y: -6.0d,
+			subtitle: "A brief introduction to our quests",
+			description: [
+				"Quests are divided into 3 types:",
+				"",
+				"- Exploring Enigmatica",
+				"- Learning Mods",
+				"- Challenges"
+			],
+			size: 1.5d,
+			id: 69,
+			tasks: [{
+				id: 70,
+				type: "checkmark",
+				title: "Welcome to Enigmatica 6",
+				icon: "minecraft:oak_sapling"
+			}],
+			rewards: [{
+				id: 71,
+				type: "random",
+				icon: "prefab:item_start_house",
+				table: 9
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -4.5d,
+			description: [
+				"The Exploration questline's purpose is to show what's available in the pack, without going into too many details.",
+				"",
+				"It has the following chapters:",
+				"- Getting Started",
+				"- Tools",
+				"- Storage",
+				"- Tech",
+				"- Magic",
+				"- Building",
+				"- Adventure"
+			],
+			dependencies: [I;70],
+			id: 684,
+			tasks: [{
+				id: 685,
+				type: "checkmark",
+				title: "Exploring Enigmatica",
+				icon: "minecraft:compass"
+			}],
+			rewards: [{
+				id: 692,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			icon: "minecraft:writable_book",
+			x: 0.0d,
+			y: -4.5d,
+			description: [
+				"Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and then show a few things you can do with a mod.",
+				"",
+				"The Learning chapters do not show everything mods have to offer, so make sure to explore if you want to find all the cool features."
+			],
+			dependencies: [I;70],
+			id: 686,
+			tasks: [{
+				id: 687,
+				type: "checkmark",
+				title: "Learning Mods"
+			}],
+			rewards: [{
+				id: 690,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -4.5d,
+			description: ["Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."],
+			dependencies: [I;70],
+			id: 688,
+			tasks: [{
+				id: 689,
+				type: "checkmark",
+				title: "Challenges",
+				icon: "minecraft:wither_skeleton_skull"
+			}],
+			rewards: [{
+				id: 691,
+				type: "xp",
+				xp: 100
+			}]
+		}
+	]
+}

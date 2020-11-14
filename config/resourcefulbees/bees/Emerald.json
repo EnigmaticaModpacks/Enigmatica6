@@ -1,0 +1,29 @@
+{
+  "flower": "ALL",
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#18eb09",
+    "primaryColor": "#18eb09",
+    "secondaryColor": "#303030"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:stone",
+    "mutationOutput": "minecraft:lava",
+    "mutationType": "BLOCK_TO_FLUID"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:emerald"
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "TAG:Mountain,Hills"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "spawnWeight": 4
+  },
+  "TraitData": {}
+}

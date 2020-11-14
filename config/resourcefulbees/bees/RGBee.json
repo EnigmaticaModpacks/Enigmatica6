@@ -1,0 +1,28 @@
+{
+  "flower": "ALL",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#ffffff",
+    "isRainbowBee": true,
+    "isGlowing": true
+  },
+  "MutationData": {},
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:red_dye",
+    "secondaryOutput": "minecraft:green_dye",
+    "bottleOutput": "minecraft:blue_dye",
+    "bottleOutputWeight": 0.02
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "TAG:OVerWorld",
+    "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {}
+}

@@ -1,0 +1,482 @@
+{
+	id: 147,
+	filename: "tools",
+	order_index: 3,
+	title: "Tools",
+	icon: {
+		id: "minecraft:netherite_pickaxe",
+		Count: true,
+		tag: {
+			Damage: 0
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -7.5d,
+			y: -8.5d,
+			subtitle: "Swiss-Army… Hammer",
+			description: [
+				"A versatile multi-tool capable of clearing large areas with ease. Sneak right click to access the GUI where Drill Bits and Enchanted Books can be installed as well as changing the drill mode.",
+				"",
+				"Accepts Fortune or Silk Touch books."
+			],
+			dependencies: [I;325],
+			id: 454,
+			tasks: [{
+				id: 455,
+				type: "item",
+				item: "pneumaticcraft:jackhammer"
+			}],
+			rewards: [{
+				id: 456,
+				type: "item",
+				item: "pneumaticcraft:drill_bit_compressed_iron"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -7.5d,
+			subtitle: "Lucy In the Sky",
+			description: ["A bit faster than the Compressed Iron Bit and with basic vein mining functions."],
+			dependencies: [I;454],
+			id: 457,
+			tasks: [{
+				id: 458,
+				type: "item",
+				item: "pneumaticcraft:drill_bit_diamond"
+			}],
+			rewards: [{
+				id: 459,
+				type: "item",
+				item: "pneumaticcraft:volume_upgrade",
+				count: 5
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -6.5d,
+			subtitle: "I'm Told You Were The Best",
+			description: ["Faster still and with full vein mining capabilities."],
+			dependencies: [I;457],
+			id: 460,
+			tasks: [{
+				id: 461,
+				type: "item",
+				item: "pneumaticcraft:drill_bit_netherite"
+			}],
+			rewards: [{
+				id: 462,
+				type: "item",
+				item: "pneumaticcraft:speed_upgrade",
+				count: 2
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -9.5d,
+			subtitle: "Send Your Armies But They'll Never Be Enough, My Shell's Too Tough",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Magnet Upgrade",
+				"● Auto Tool Charging",
+				"● Block Launcher",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 463,
+			tasks: [{
+				id: 464,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_chestplate",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -10.5d,
+			subtitle: "Soak It In 'Cause It's The Last You'll Ever See",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Night Vision",
+				"● Entity and Block Tracking",
+				"● Entity and Block Hacking",
+				"● S.C.U.B.A. Gear",
+				"● Item Search",
+				"● Self Repairin"
+			],
+			dependencies: [I;357],
+			id: 465,
+			tasks: [{
+				id: 466,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_helmet",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -7.5d,
+			subtitle: "I'll Never Hide. I Can't. I'm Too Shiny",
+			description: [
+				"Notable Upgrades ",
+				"",
+				"● Run Speed",
+				"● Jump Height",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 467,
+			tasks: [{
+				id: 468,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_leggings",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -6.5d,
+			subtitle: "Now It's Time to Kick Your...Hiney",
+			description: [
+				"Notable Upgrades ",
+				"",
+				"● Built in Step Assist",
+				"● Built in Fall Damage Negation",
+				"● Swim Speed",
+				"● Powered Kick",
+				"● Creative Flight",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 469,
+			tasks: [{
+				id: 470,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_boots",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Armor Upgrade",
+			x: -10.0d,
+			y: -8.5d,
+			subtitle: "You Tried to Be Tough But Your Armor's Just Not Hard Enough",
+			description: ["Each armor piece accepts up to four of these for extreme protection."],
+			dependencies: [I;
+				465,
+				469,
+				467,
+				463
+			],
+			dependency_requirement: "one_completed",
+			id: 471,
+			tasks: [{
+				id: 472,
+				type: "item",
+				item: "pneumaticcraft:armor_upgrade",
+				count: 4L
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -10.0d,
+			dependencies: [I;465],
+			id: 473,
+			tasks: [{
+				id: 474,
+				type: "item",
+				item: "pneumaticcraft:night_vision_upgrade"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -10.0d,
+			dependencies: [I;465],
+			id: 475,
+			tasks: [{
+				id: 476,
+				type: "item",
+				item: "pneumaticcraft:scuba_upgrade"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -9.0d,
+			dependencies: [I;463],
+			id: 477,
+			tasks: [{
+				id: 478,
+				type: "item",
+				item: "pneumaticcraft:magnet_upgrade"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -9.0d,
+			dependencies: [I;463],
+			id: 479,
+			tasks: [{
+				id: 480,
+				type: "item",
+				item: "pneumaticcraft:charging_upgrade"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -7.0d,
+			dependencies: [I;469],
+			id: 483,
+			tasks: [{
+				id: 484,
+				type: "item",
+				item: "pneumaticcraft:flippers_upgrade"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -8.0d,
+			subtitle: "Shared Experiences",
+			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact."],
+			dependencies: [I;325],
+			id: 487,
+			tasks: [{
+				id: 488,
+				type: "item",
+				item: "pneumaticcraft:memory_stick"
+			}]
+		},
+		{
+			title: "Jumping Upgrade",
+			x: -11.0d,
+			y: -8.0d,
+			description: [""],
+			dependencies: [I;467],
+			id: 493,
+			tasks: [{
+				id: 494,
+				type: "item",
+				item: "pneumaticcraft:jumping_upgrade_4"
+			}]
+		},
+		{
+			title: "Jet Boots Upgrade",
+			x: -9.0d,
+			y: -7.0d,
+			description: [""],
+			dependencies: [I;469],
+			id: 501,
+			tasks: [{
+				id: 502,
+				type: "item",
+				item: "pneumaticcraft:jet_boots_upgrade_5"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -7.5d,
+			subtitle: "Target Acquired",
+			description: [
+				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands.",
+				"",
+				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak right click to configure."
+			],
+			dependencies: [I;357],
+			id: 503,
+			tasks: [{
+				id: 504,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:micromissiles",
+					Count: true,
+					tag: {
+						damage: 0.0f,
+						topSpeed: 0.0f,
+						Damage: 0,
+						turnSpeed: 0.0f
+					}
+				}
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -9.5d,
+			subtitle: "Stand and Deliver",
+			description: [""],
+			dependencies: [I;507],
+			id: 505,
+			tasks: [{
+				id: 506,
+				type: "item",
+				item: "pneumaticcraft:sentry_turret"
+			}],
+			rewards: [{
+				id: 509,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:gun_ammo",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -9.5d,
+			subtitle: "Leveling the Playing Field",
+			description: [""],
+			dependencies: [I;179],
+			id: 507,
+			tasks: [{
+				id: 508,
+				type: "item",
+				item: "pneumaticcraft:minigun"
+			}],
+			rewards: [{
+				id: 525,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:gun_ammo",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Ammunition",
+			x: -6.0d,
+			y: -8.5d,
+			subtitle: "Something For Every Occasion",
+			description: [
+				"Craft any two types of specialized ammo and give them a try. ",
+				"",
+				"",
+				"PACK NOTE: Need to add tags to ammo to facilitate this. "
+			],
+			dependencies: [I;507],
+			id: 514,
+			tasks: [
+				{
+					id: 515,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_ap",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 520,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_incendiary",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 521,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_weighted",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 523,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_explosive",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 524,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_freezing",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: -8.5d,
+			subtitle: "Inevitable Escalation",
+			description: [""],
+			dependencies: [I;507],
+			id: 526,
+			tasks: [{
+				id: 527,
+				type: "item",
+				item: "pneumaticcraft:guard_drone"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -7.5d,
+			subtitle: "This Is How You Get SkyNET",
+			description: [""],
+			dependencies: [I;526],
+			id: 528,
+			tasks: [{
+				id: 529,
+				type: "item",
+				item: "pneumaticcraft:minigun_upgrade"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -10.5d,
+			subtitle: "It's Over! I Have the High Ground!",
+			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."],
+			dependencies: [I;360],
+			id: 530,
+			tasks: [{
+				id: 531,
+				type: "item",
+				item: "pneumaticcraft:aerial_interface"
+			}]
+		}
+	]
+}

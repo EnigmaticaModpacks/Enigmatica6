@@ -1,0 +1,32 @@
+{
+	id: 929,
+	filename: "thermal_series",
+	order_index: 18,
+	title: "[WIP] Thermal Series",
+	icon: "thermal:wrench",
+	default_quest_shape: "",
+	quests: [{
+		x: 0.0d,
+		y: 0.0d,
+		shape: "gear",
+		description: ["The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for many, many years, over which it has changed considerably multiple times, while also remaining distinctly tech-focused."],
+		id: 930,
+		tasks: [{
+			id: 931,
+			type: "checkmark",
+			title: "The Thermal Series",
+			icon: "thermal:wrench"
+		}],
+		rewards: [{
+			id: 934,
+			type: "item",
+			item: {
+				id: "patchouli:guide_book",
+				Count: true,
+				tag: {
+					"patchouli:book": "thermal:guidebook"
+				}
+			}
+		}]
+	}]
+}

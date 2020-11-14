@@ -20,14 +20,16 @@
 	#HUD scale (default: 1.0)
 	#Range: 0.1 ~ 2.0
 	hudScale = 1.0
+	#Enable HUD.
+	hudEnabled = false
 	#Detect movement of player position. (0:OFF, 1:Riding/Flying, 2:Always)
 	#Range: 0 ~ 2
 	detectMoving = 1
 	#Ignore the mouse button holding.
 	ignoreHoldButton = false
-	#HUD information (0:off, 1:FPS/CPU(long), 1:FPS/CPU(short), 3:FPS/CPU(2lines), 4:FPS only, 5:CPU only)
+	#HUD information (1:FPS/CPU(long), 1:FPS/CPU(short), 3:FPS/CPU(2lines), 4:FPS only, 5:CPU only)
 	#Range: 0 ~ 5
-	hudInfo = 0
+	hudInfo = 4
 	#Behavior of HUD display when a chat window opened. (0:keep to display, 1:off, 2:dodge a chat box)
 	#Range: 0 ~ 2
 	hudBehindChatBox = 2

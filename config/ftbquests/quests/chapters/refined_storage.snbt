@@ -1,0 +1,387 @@
+{
+	id: 576,
+	filename: "refined_storage",
+	order_index: 13,
+	title: "Refined Storage",
+	icon: "refinedstorage:controller",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Refined Storage",
+			icon: "extradisks:16384k_storage_part",
+			x: 0.5d,
+			y: 0.5d,
+			shape: "gear",
+			description: ["Refined Storage offers the ability to make vast electronic storage and automation networks, storing your items in Magic Computer Space and importing/exporting/autocrafting as desired. It's a rather refined method of storage, you might say."],
+			id: 591,
+			tasks: [{
+				id: 593,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 634,
+					type: "item",
+					item: "minecraft:slime_ball",
+					count: 4
+				},
+				{
+					id: 635,
+					type: "item",
+					item: "minecraft:string",
+					count: 4
+				}
+			]
+		},
+		{
+			title: "Processors",
+			icon: "refinedstorage:advanced_processor",
+			x: 0.5d,
+			y: 2.0d,
+			description: ["Processors are basic components needed in most RS devices. You'll want to have a decent supply of slime before getting too deep into this."],
+			dependencies: [I;591],
+			id: 594,
+			tasks: [
+				{
+					id: 595,
+					type: "item",
+					item: "refinedstorage:basic_processor"
+				},
+				{
+					id: 596,
+					type: "item",
+					item: "refinedstorage:improved_processor"
+				},
+				{
+					id: 597,
+					type: "item",
+					item: "refinedstorage:advanced_processor"
+				}
+			]
+		},
+		{
+			icon: "refinedstorage:controller",
+			x: 0.5d,
+			y: 3.5d,
+			description: [
+				"The Controller is the heart of any RS network; exactly one is required for components to work. It accepts normal RF/FE power.",
+				"",
+				"All parts of a network (excluding fancy wireless options later) must be connected via Cables. Interacting with the Controller itself will show a breakdown of how much power each component type is using."
+			],
+			dependencies: [I;594],
+			id: 598,
+			tasks: [
+				{
+					id: 599,
+					type: "item",
+					item: "refinedstorage:controller"
+				},
+				{
+					id: 647,
+					type: "item",
+					item: "refinedstorage:cable"
+				}
+			]
+		},
+		{
+			title: "Disks and Drives",
+			icon: "refinedstorage:64k_storage_disk",
+			x: 0.5d,
+			y: 5.0d,
+			description: [
+				"To actually store items in an RS network, you'll want to make storage disks. These come in a variety of sizes; first try making one a 1k disk, the smallest size. You can retrieve the materials used to craft these (storage part/housing) by shift-clicking with the item in hand.",
+				"",
+				"The Disk Drive is your main method of holding storage disks. Up to ten can fit in a drive; you can swap them in and out as needed."
+			],
+			dependencies: [I;598],
+			id: 600,
+			tasks: [
+				{
+					id: 601,
+					type: "item",
+					item: "refinedstorage:disk_drive"
+				},
+				{
+					id: 646,
+					type: "item",
+					item: "refinedstorage:1k_storage_disk"
+				}
+			]
+		},
+		{
+			title: "Fluid Storage Disks",
+			x: -2.5d,
+			y: 5.0d,
+			description: ["Fluid storage disks store fluid. Imagine that! Naturally, this involves somewhat different methods of accessing the contents of the disks; see the Fluid Grid quest for more information."],
+			dependencies: [I;600],
+			id: 605,
+			tasks: [{
+				id: 606,
+				type: "item",
+				item: "refinedstorage:64k_fluid_storage_disk"
+			}]
+		},
+		{
+			title: "Importing and Exporting",
+			icon: "refinedstorage:exporter",
+			x: -1.0d,
+			y: 3.5d,
+			description: ["Importers automatically pull items from the connected inventory, and exporters automatically push (configured) items to the connected inventory. Both can be set to have filters or sped up with upgrades."],
+			dependencies: [I;600],
+			id: 607,
+			tasks: [
+				{
+					id: 608,
+					type: "item",
+					item: "refinedstorage:importer"
+				},
+				{
+					id: 609,
+					type: "item",
+					item: "refinedstorage:exporter"
+				}
+			]
+		},
+		{
+			x: -2.5d,
+			y: 6.5d,
+			description: ["If you set up an External Storage part facing a normal inventory (e.g. a chest), that inventory will be treated as part of the network, and its contents can be accessed as though they were on storage drives."],
+			dependencies: [I;600],
+			id: 610,
+			tasks: [{
+				id: 611,
+				type: "item",
+				item: "refinedstorage:external_storage"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 5.0d,
+			description: ["The Grid is the primary means by which you can actually access the items in your storage. Simply connect a grid to the network and you can start chuckin' items in and out."],
+			dependencies: [I;600],
+			id: 612,
+			tasks: [{
+				id: 613,
+				type: "item",
+				item: "refinedstorage:grid"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 3.5d,
+			description: [
+				"The Storage Monitor adds a handy (and stylish) way to see the current number of a given item (or amount of fluid) in your network at a glance. Shift-right click it to open a config GUI.",
+				"",
+				"You can even insert/extract the relevant item/fluid directly to/from this block."
+			],
+			dependencies: [I;612],
+			id: 614,
+			tasks: [{
+				id: 615,
+				type: "item",
+				item: "refinedstorage:storage_monitor"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 5.0d,
+			description: ["The Fluid Grid works a bit differently from the normal Grid. Fluids can only ber inserted/extracted via the use of fluid container items such as buckets."],
+			dependencies: [I;612],
+			id: 616,
+			tasks: [{
+				id: 617,
+				type: "item",
+				item: "refinedstorage:fluid_grid"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 6.5d,
+			description: [
+				"The Crafting Grid, humanity's most glorious invention, is literally just a Grid with a built-in crafting table.",
+				"",
+				'The "crafting table" part of this block will retain its inventory when closed, and will automatically pull more items from the network into the grid to replace those that you use.'
+			],
+			dependencies: [I;612],
+			id: 618,
+			tasks: [{
+				id: 619,
+				type: "item",
+				item: "refinedstorage:crafting_grid"
+			}]
+		},
+		{
+			title: "Wireless Grid Access",
+			icon: "refinedstorage:wireless_grid",
+			x: 3.5d,
+			y: 8.0d,
+			description: [
+				"Wireless Grids are exactly what they sound like: handheld grid access in item form. These are exactly as great as they sound, and they come in all the normal types; for now, make a Wireless Crafting Grid.",
+				"",
+				"These items must be charged, and they only work when near a Wireless Transmitter. These transmitters have a base range of 16 blocks."
+			],
+			dependencies: [I;618],
+			id: 620,
+			tasks: [
+				{
+					id: 621,
+					type: "item",
+					item: "refinedstorageaddons:wireless_crafting_grid"
+				},
+				{
+					id: 666,
+					type: "item",
+					item: "refinedstorage:wireless_transmitter"
+				}
+			]
+		},
+		{
+			x: 3.5d,
+			y: 9.5d,
+			description: ["16 blocks ain't enough! Each Range Upgrade will significantly increase a Wireless Transmitter's range, albeit at an increased power  cost."],
+			dependencies: [I;620],
+			id: 622,
+			tasks: [{
+				id: 623,
+				type: "item",
+				item: "refinedstorage:range_upgrade"
+			}]
+		},
+		{
+			title: "Patterns",
+			icon: "refinedstorage:pattern",
+			x: 2.0d,
+			y: 6.5d,
+			description: [
+				"Patterns and Pattern Grids are both critical to the autocrafting process. In the Pattern Grid, you can encode a specific recipe on a Pattern item, which can then be placed in a Crafter for autocrafting.",
+				"",
+				'There are two types of pattern recipes: "crafting" and "processing". Crafting recipes are simply the basic 2x2 or 3x3 crafting recipes you can perform yourself.',
+				"",
+				"Processing recipes can take a greater variety of inputs/outputs (e.g. stack sizes larger than 1) and represent operations that need machines or devices to perform."
+			],
+			dependencies: [I;612],
+			id: 624,
+			tasks: [
+				{
+					id: 625,
+					type: "item",
+					item: "refinedstorage:pattern_grid"
+				},
+				{
+					id: 663,
+					type: "item",
+					item: "refinedstorage:pattern"
+				}
+			]
+		},
+		{
+			x: 0.5d,
+			y: 8.0d,
+			description: [
+				"Glorious autocrafting! Crafters are used to handle both types of pattern recipes. Each crafter can hold up to nine patterns.",
+				"",
+				"For normal crafting recipes, that's all you need to set up - pop in a pattern and you gain the ability to request it from any connected Grid.",
+				"",
+				"For processing recipes, the crafter must be placed facing the input of whichever machine is doing the processing. Note that all the crafter will actually do in this case is give the recipe items to the machine; getting the output into the network must be handled otherwise (e.g. with an Interface)."
+			],
+			dependencies: [I;
+				600,
+				624
+			],
+			id: 626,
+			tasks: [{
+				id: 627,
+				type: "item",
+				item: "refinedstorage:crafter"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 8.0d,
+			description: ["When placed in a device, the Speed Upgrade will increase its speed (and power consumption). This is useful for Importers, Exporters, Crafters, etc."],
+			dependencies: [I;600],
+			id: 628,
+			tasks: [{
+				id: 629,
+				type: "item",
+				item: "refinedstorage:speed_upgrade"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 8.0d,
+			description: ["The Stack Upgrade often serves as a more useful Speed Upgrade. It doesn't speed up individual operations, but instead allows each operation to move up to a stack of items."],
+			dependencies: [I;628],
+			id: 630,
+			tasks: [{
+				id: 631,
+				type: "item",
+				item: "refinedstorage:stack_upgrade"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 9.5d,
+			description: [
+				"The Crafting Monitor can be used to check the status of any in-progress crafting jobs, including current progress and predicted time remaining.",
+				"",
+				"These blocks are quite important, particularly if you're setting up complex processing recipes and you need to be able to troubleshoot."
+			],
+			dependencies: [I;626],
+			id: 632,
+			tasks: [{
+				id: 633,
+				type: "item",
+				item: "refinedstorage:crafting_monitor"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 3.5d,
+			description: [
+				"The Interface, like the Importer and Exporter, is a device that handles network input/output. Unlike the Importer and Exporter, it does not push or pull items to/from adjacent inventories.",
+				"",
+				'The Interface is most useful as a simple (and perhaps less laggy) alternative to the Importer when the external item source can handle the "pushing" itself, e.g. depositing items in the Interface with a coneyor belt.'
+			],
+			dependencies: [I;600],
+			id: 664,
+			tasks: [{
+				id: 665,
+				type: "item",
+				item: "refinedstorage:interface"
+			}]
+		},
+		{
+			title: "Long-Range Networking",
+			icon: "refinedstorage:network_transmitter",
+			x: -1.0d,
+			y: 9.5d,
+			description: [
+				"Sure would be nice if you could connect your network to distant facilities without needing hundreds or thousands of cables. Here's a solution!",
+				"",
+				"Place a Network Receiver at the distant location, then shift-right click it with a Network Card. Place a Network Transmitter in your main network and give it the Network Card, and presto - link complete.",
+				"",
+				"Note that the Transmitter must be chunk loaded for this to work, and that you still must have only one Controller in the entire network (across all locations)."
+			],
+			dependencies: [I;600],
+			id: 667,
+			tasks: [
+				{
+					id: 668,
+					type: "item",
+					item: "refinedstorage:network_transmitter"
+				},
+				{
+					id: 669,
+					type: "item",
+					item: "refinedstorage:network_receiver"
+				},
+				{
+					id: 670,
+					type: "item",
+					item: "refinedstorage:network_card"
+				}
+			]
+		}
+	]
+}

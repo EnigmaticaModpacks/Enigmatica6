@@ -1,0 +1,38 @@
+
+[Commands]
+	#The required permission level for the '/cofh heal' command.
+	#Range: 0 ~ 4
+	"Heal Permission Level" = 2
+	#The required permission level for the '/cofh crafting' command.
+	#Range: 0 ~ 4
+	"Crafting Permission Level" = 2
+	#The required permission level for the '/cofh ignite' command.
+	#Range: 0 ~ 4
+	"Ignite Permission Level" = 2
+	#The required permission level for the '/cofh enderchest' command.
+	#Range: 0 ~ 4
+	"EnderChest Permission Level" = 2
+	#The required permission level for the '/cofh repair' command.
+	#Range: 0 ~ 4
+	"Repair Permission Level" = 2
+
+[Enchantments]
+	#If TRUE, Mending behavior is altered so that XP orbs always repair items if possible, and the most damaged item is prioritized. This option may not work with alternative versions (overrides) of Mending.
+	"Improved Mending" = true
+	#If TRUE, Feather Falling will prevent Farmland from being trampled. This option will work with alternative versions (overrides) of Feather Falling.
+	"Improved Feather Falling" = true
+
+[Fishing]
+	#If TRUE, Fishing will cause exhaustion.
+	"Fishing Exhaustion" = false
+	#This option sets the amount of exhaustion caused by fishing, if enabled.
+	#Range: 0.0 ~ 10.0
+	"Fishing Exhaustion Amount" = 0.125
+
+[World]
+	#This option sets the growth factor for saplings - they will only grow 1 in N times.
+	#Range: > 1
+	"Sapling Growth Reduction Factor" = 4
+	#If TRUE, Sapling growth will be slowed by a configurable factor.
+	"Sapling Growth Reduction" = false
+

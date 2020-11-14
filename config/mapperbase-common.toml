@@ -1,0 +1,25 @@
+
+#Bitumen Generation
+[bitumen]
+	#Size of bitumen pockets [1-100, default: 48]
+	#Range: 1 ~ 100
+	bitumenSize = 48
+	#Minimal height for bitumen pocket generation, [1-254, default: 56]
+	#Range: 1 ~ 254
+	bitumenMinHeight = 56
+	#Generate bitumen in the world [true / false]
+	bitumenGeneration = false
+	#Amount of bitumen pocket being generated per chunk [1-100, default: 2]
+	#Range: 1 ~ 100
+	bitumenChance = 2
+	#Maximal height for bitumen pocket generation, must be higher than minimal height [1-255, default: 80]
+	#Range: 1 ~ 255
+	bitumenMaxHeight = 80
+
+#Biome Blacklist: list here the biomes you do not want bitumen ore to be generated in (syntax: "modid:biome". Examples: "minecraft:plains", "biomesoplenty:meadow"...). Note: you can replace the default values.
+[blacklist]
+	#List of blacklisted biomes for bitumen ore generation
+	bitumenBiomeBlacklist = ["minecraft:nether_wastes", "minecraft:soul_sand_valley", "minecraft:basalt_deltas", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_end", "minecraft:end_barrens", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:small_end_islands", "minecraft:the_void"]
+	#Set to true to switch bitumen ore blacklist to whitelist mode [true / false, default: false]
+	bitumenWhitelist = false
+

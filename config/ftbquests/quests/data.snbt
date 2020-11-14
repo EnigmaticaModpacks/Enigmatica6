@@ -1,0 +1,20 @@
+{
+	version: 9,
+	last_id: 1018,
+	title: "Enigmatica 6",
+	icon: "minecraft:oak_sapling",
+	default_reward_team: false,
+	default_consume_items: false,
+	default_autoclaim_rewards: "disabled",
+	default_quest_shape: "circle",
+	default_quest_disable_jei: false,
+	emergency_items_cooldown: 300,
+	drop_loot_crates: false,
+	loot_crate_no_drop: {
+		passive: 0,
+		monster: 0,
+		boss: 0
+	},
+	disable_gui: false,
+	grid_scale: 0.5d
+}

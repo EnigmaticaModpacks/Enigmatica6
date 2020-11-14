@@ -1,0 +1,21 @@
+{
+  "type": "thermal:pulverizer",
+  "ingredient": {
+    "tag": "forge:ores/coal"
+  },
+  "result": [
+    {
+      "item": "minecraft:coal",
+      "chance": 2.5
+    },
+    {
+      "item": "emendatusenigmatica:sulfur_gem",
+      "chance": 0.15
+    },
+    {
+      "item": "minecraft:gravel",
+      "chance": 0.2
+    }
+  ],
+  "experience": 0.5
+}

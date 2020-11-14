@@ -1,0 +1,33 @@
+{
+  "flower": "ALL",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "diamond/diamond_bee",
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#00ffff"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:lava",
+    "mutationOutput": "minecraft:water",
+    "mutationType": "FLUID_TO_FLUID"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:diamond",
+    "mainOutputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Coal",
+    "parent2": "Skeleton",
+    "feedItem": "tag:forge:ores"
+  },
+  "TraitData": {}
+}

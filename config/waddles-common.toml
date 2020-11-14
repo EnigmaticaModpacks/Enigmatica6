@@ -1,5 +1,6 @@
 
 [general]
+	"spawn blocks" = ["minecraft:grass_block"]
 	#Enable that penguins drop fish (0 - 2 Raw Cod)
 	dropFish = false
 	#Penguins should drop experience?
@@ -15,7 +16,6 @@
 	weight = 4
 
 ["spawnable biomes"]
-	#BiomeDictionary types to include & exclude.
 	include = ["SNOWY"]
-	exclude = ["FOREST", "MOUNTAIN", "NETHER"]
+	exclude = ["FOREST", "MOUNTAIN", "OCEAN", "NETHER"]
 

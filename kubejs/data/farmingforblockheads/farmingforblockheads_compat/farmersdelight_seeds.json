@@ -1,0 +1,23 @@
+{
+  "modId": "farmersdelight",
+  "group": {
+    "name": "Farmer's Delight Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald"
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "farmersdelight:tomato_seeds"
+      }
+    },
+    {
+      "output": {
+        "item": "farmersdelight:cabbage_seeds"
+      }
+    }
+  ]
+}

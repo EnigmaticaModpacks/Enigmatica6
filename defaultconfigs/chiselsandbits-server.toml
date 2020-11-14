@@ -1,0 +1,155 @@
+
+[server]
+
+	[server.server]
+
+		[server.server.server]
+
+			#chiselsandbits.config.server.balancing.comment
+			[server.server.server.balancing]
+
+				[server.server.server.balancing.server]
+
+					[server.server.server.balancing.server.balancing]
+						#chiselsandbits.config.server.balancing.wrench-uses.comment
+						#Range: > -2147483648
+						wrench-uses = 1888
+
+						[server.server.server.balancing.server.balancing.revertible]
+							#chiselsandbits.config.server.balancing.revertible.blocks.comment
+							blocks = ["*"]
+
+						[server.server.server.balancing.server.balancing.bits]
+							#chiselsandbits.config.server.balancing.bits.act-as-light-source.comment
+							act-as-light-source = true
+							#chiselsandbits.config.server.balancing.bits.light-percentage.comment
+							#Range: 4.9E-324 ~ 1.7976931348623157E308
+							light-percentage = 6.25
+
+						[server.server.server.balancing.server.balancing.full-block-crafting]
+							#chiselsandbits.config.server.balancing.full-block-crafting.enabled.comment
+							enabled = true
+
+						[server.server.server.balancing.server.balancing.bag]
+							#chiselsandbits.config.server.balancing.bag.stack-size.comment
+							#Range: > -2147483648
+							stack-size = 512
+
+						[server.server.server.balancing.server.balancing.tools]
+							#chiselsandbits.config.server.balancing.tools.damage.comment
+							damage = true
+
+							[server.server.server.balancing.server.balancing.tools.harvest-levels]
+								#chiselsandbits.config.server.balancing.tools.harvest-levels.enabled.comment
+								enabled = true
+
+						[server.server.server.balancing.server.balancing.clipboard]
+
+							[server.server.server.balancing.server.balancing.clipboard.size]
+								#chiselsandbits.config.server.balancing.clipboard.size.creative.comment
+								#Range: > -2147483648
+								creative = 10
+
+						[server.server.server.balancing.server.balancing.random-ticking-blocks]
+							#chiselsandbits.config.server.balancing.random-ticking-blocks.blacklisted.comment
+							blacklisted = false
+
+						[server.server.server.balancing.server.balancing.compatibility-mode]
+							#chiselsandbits.config.server.balancing.compatibility-mode.enabled.comment
+							enabled = false
+
+						[server.server.server.balancing.server.balancing.chisel-uses]
+							#chiselsandbits.config.server.balancing.chisel-uses.gold.comment
+							#Range: > -2147483648
+							gold = 1024
+							#chiselsandbits.config.server.balancing.chisel-uses.diamond.comment
+							#Range: > -2147483648
+							diamond = 796480
+							#chiselsandbits.config.server.balancing.chisel-uses.iron.comment
+							#Range: > -2147483648
+							iron = 293440
+							#chiselsandbits.config.server.balancing.chisel-uses.stone.comment
+							#Range: > -2147483648
+							stone = 8384
+
+						[server.server.server.balancing.server.balancing.diamond-saw]
+							#chiselsandbits.config.server.balancing.diamond-saw.uses.comment
+							#Range: > -2147483648
+							uses = 7980
+
+						[server.server.server.balancing.server.balancing.bag-space]
+							#chiselsandbits.config.server.balancing.bag-space.void-excess.comment
+							void-excess = true
+							#chiselsandbits.config.server.balancing.bag-space.required.comment
+							required = true
+
+						[server.server.server.balancing.server.balancing.chisel-tool]
+
+							[server.server.server.balancing.server.balancing.chisel-tool.harvest-check]
+								#chiselsandbits.config.server.balancing.chisel-tool.harvest-check.tools.comment
+								tools = ""
+								#chiselsandbits.config.server.balancing.chisel-tool.harvest-check.enabled.comment
+								enabled = true
+
+						[server.server.server.balancing.server.balancing.max-drawn-region]
+							#chiselsandbits.config.server.balancing.max-drawn-region.size.comment
+							#Range: 4.9E-324 ~ 1.7976931348623157E308
+							size = 4.0
+
+			[server.server.server.server]
+
+				#chiselsandbits.config.server.performance.comment
+				[server.server.server.server.performance]
+
+					[server.server.server.server.performance.server]
+
+						[server.server.server.server.performance.server.performance]
+
+							[server.server.server.server.performance.server.performance.memory]
+
+								[server.server.server.server.performance.server.performance.memory.low-mode]
+									#chiselsandbits.config.server.performance.memory.low-mode.enabled.comment
+									enabled = false
+
+		#chiselsandbits.config.server.troubleshooting.comment
+		[server.server.troubleshooting]
+
+			[server.server.troubleshooting.server]
+
+				[server.server.troubleshooting.server.troubleshooting]
+
+					[server.server.troubleshooting.server.troubleshooting.logging]
+						#chiselsandbits.config.server.troubleshooting.logging.eligibility-errors.comment
+						eligibility-errors = true
+						#chiselsandbits.config.server.troubleshooting.logging.tile-errors.comment
+						tile-errors = true
+
+					[server.server.troubleshooting.server.troubleshooting.lighting]
+						#chiselsandbits.config.server.troubleshooting.lighting.use-value.comment
+						use-value = true
+						#chiselsandbits.config.server.troubleshooting.lighting.face-lightmap-extraction.comment
+						face-lightmap-extraction = true
+
+					[server.server.troubleshooting.server.troubleshooting.vertexformats]
+
+						[server.server.troubleshooting.server.troubleshooting.vertexformats.custom]
+							#chiselsandbits.config.server.troubleshooting.vertexformats.custom.disabled.comment
+							disabled = true
+
+	#chiselsandbits.config.server.integration-settings.comment
+	[server.integration-settings]
+
+		[server.integration-settings.server]
+
+			[server.integration-settings.server.integrations-settings]
+
+				[server.integration-settings.server.integrations-settings.vivecraft]
+					#chiselsandbits.config.server.integrations-settings.vivecraft.enabled.comment
+					enabled = false
+
+			[server.integration-settings.server.integration-settings]
+
+				[server.integration-settings.server.integration-settings.jei]
+					#chiselsandbits.config.server.integration-settings.jei.show-in-jei.comment
+					show-in-jei = false
+

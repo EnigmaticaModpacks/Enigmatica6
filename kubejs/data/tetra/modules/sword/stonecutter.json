@@ -1,0 +1,980 @@
+{
+    "variants": [
+        {
+            "key": "stonecutter/mahogany",
+            "durability": 160,
+            "integrity": 0,
+            "magicCapacity": 88,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "e69963"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "e69963"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/jacaranda",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 80,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "e6d4c8"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "e6d4c8"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/palm",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 80,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "db9d51"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "db9d51"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/willow",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 96,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "7bc78d"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "7bc78d"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/dead",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 52,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "a1ada4"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "a1ada4"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/magic",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 164,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "4567b0"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "4567b0"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/umbran",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 156,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "8768a6"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "8768a6"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/hellbark",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 156,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "544b5e"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "544b5e"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/ancient",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 176,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 3.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "84538c"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "84538c"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/fir",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 88,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "8a817d"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "8a817d"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/redwood",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 88,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "96421d"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "96421d"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/cherry",
+            "durability": 100,
+            "integrity": 0,
+            "magicCapacity": 90,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "851d19"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "851d19"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/lapis",
+            "durability": 270,
+            "integrity": -1,
+            "magicCapacity": 122,
+            "damage": 3,
+            "attackSpeed": -1.65,
+            "tools": {
+                "pickaxe": [2, 4.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "3327db"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "3327db"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/osmium",
+            "durability": 1445,
+            "integrity": -1,
+            "magicCapacity": 112,
+            "damage": 4,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 1.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "a7aed9"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "a7aed9"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/refined_glowstone",
+            "durability": 378,
+            "integrity": -2,
+            "magicCapacity": 154,
+            "damage": 7,
+            "attackSpeed": -1.8,
+            "tools": {
+                "pickaxe": [4, 6.5]
+            },
+            "effects": {
+                "strikingPickaxe": 2,
+                "sweepingStrike": 2,
+                "sweeping": 3
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "eeff00"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "eeff00"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/refined_obsidian",
+            "durability": 1606,
+            "integrity": -3,
+            "magicCapacity": 168,
+            "damage": 13,
+            "attackSpeed": -2.1,
+            "tools": {
+                "pickaxe": [4, 12]
+            },
+            "effects": {
+                "strikingPickaxe": 2,
+                "sweepingStrike": 2,
+                "sweeping": 4
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "6e1f9c"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "6e1f9c"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/andesite_alloy",
+            "durability": 246,
+            "integrity": 0,
+            "magicCapacity": 108,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "a3adac"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "a3adac"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/zinc",
+            "durability": 406,
+            "integrity": -1,
+            "magicCapacity": 86,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 6]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "e1e9f2"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "e1e9f2"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/pink_slime",
+            "durability": 7063,
+            "integrity": -1,
+            "magicCapacity": 108,
+            "damage": 2,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 9]
+            },
+            "effects": {
+                "strikingPickaxe": 2,
+                "sweepingStrike": 1,
+                "sweeping": 3
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "df3ce8"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "df3ce8"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/iesnium",
+            "durability": 355,
+            "integrity": -1,
+            "magicCapacity": 168,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 4]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 3
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "aadef0"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "aadef0"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/treated_wood",
+            "durability": 308,
+            "integrity": 0,
+            "magicCapacity": 118,
+            "damage": 5,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 3]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "8f380a"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "8f380a"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/aluminum",
+            "durability": 177,
+            "integrity": -1,
+            "magicCapacity": 78,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [1, 3]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "dce2e8"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "dce2e8"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/constantan",
+            "durability": 394,
+            "integrity": -1,
+            "magicCapacity": 110,
+            "damage": 4,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 3
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "d46326"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "d46326"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/uranium",
+            "durability": 95,
+            "integrity": -1,
+            "magicCapacity": 170,
+            "damage": 9,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 3.5]
+            },
+            "effects": {
+                "strikingPickaxe": 3,
+                "sweepingStrike": 3,
+                "sweeping": 4
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "538a71"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "538a71"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/infused_iron",
+            "durability": 603,
+            "integrity": -1,
+            "magicCapacity": 158,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "8a117"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "8a117"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/sky",
+            "durability": 2128,
+            "integrity": -4,
+            "magicCapacity": 178,
+            "damage": 7,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [3, 11]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 2,
+                "sweeping": 3
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "78ffff"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "78ffff"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/manasteel",
+            "durability": 2030,
+            "integrity": -2,
+            "magicCapacity": 150,
+            "damage": 5,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 5.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2,
+                "manaRepair": 60
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "104bc2"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "104bc2"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/elementium",
+            "durability": 871,
+            "integrity": -3,
+            "magicCapacity": 178,
+            "damage": 4,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 7.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 3,
+                "manaRepair": 60
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "cb0be0"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "cb0be0"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/terrasteel",
+            "durability": 2592,
+            "integrity": -4,
+            "magicCapacity": 192,
+            "damage": 7,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [4, 12]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 2,
+                "sweeping": 4,
+                "manaRepair": 60
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "8c71b"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "8c71b"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/gaia_spirit",
+            "durability": 2628,
+            "integrity": -5,
+            "magicCapacity": 208,
+            "damage": 14,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [4, 15]
+            },
+            "effects": {
+                "strikingPickaxe": 3,
+                "sweepingStrike": 3,
+                "sweeping": 4,
+                "manaRepair": 60
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "80bdb9"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "80bdb9"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/neptunium",
+            "durability": 1105,
+            "integrity": -4,
+            "magicCapacity": 158,
+            "damage": 7,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [3, 8.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "2de0c2"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "2de0c2"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/compressed_iron",
+            "durability": 234,
+            "integrity": -1,
+            "magicCapacity": 112,
+            "damage": 4,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 6.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "5e6a6e"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "5e6a6e"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/energized_steel",
+            "durability": 366,
+            "integrity": -2,
+            "magicCapacity": 108,
+            "damage": 5,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [3, 13.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "dbd2a4"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "dbd2a4"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/niotic",
+            "durability": 3023,
+            "integrity": -2,
+            "magicCapacity": 108,
+            "damage": 5,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [2, 6.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 1,
+                "sweeping": 2
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "1cc9e8"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "1cc9e8"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/spirited",
+            "durability": 1175,
+            "integrity": -3,
+            "magicCapacity": 108,
+            "damage": 3,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [3, 10.5]
+            },
+            "effects": {
+                "strikingPickaxe": 1,
+                "sweepingStrike": 2,
+                "sweeping": 3
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "13eb21"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "13eb21"
+                }
+            ]
+        },
+        {
+            "key": "stonecutter/nitro",
+            "durability": 2555,
+            "integrity": -4,
+            "magicCapacity": 108,
+            "damage": 13,
+            "attackSpeed": -1.6,
+            "tools": {
+                "pickaxe": [4, 14.5]
+            },
+            "effects": {
+                "strikingPickaxe": 2,
+                "sweepingStrike": 2,
+                "sweeping": 4
+            },
+            "glyph": {
+                "textureX": 240,
+                "textureY": 32,
+                "tint": "d11608"
+            },
+            "models": [
+                {
+                    "location": "tetra:items/module/sword/blade/stonecutter/default",
+                    "tint": "d11608"
+                }
+            ]
+        }
+    ]
+}

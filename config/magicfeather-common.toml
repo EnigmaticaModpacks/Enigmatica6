@@ -1,0 +1,16 @@
+
+[item]
+	#If curios is installed, the magic feather will need to be installed in its charm slot to function.
+	requires_curios = true
+
+[range_computation]
+	#How many blocks are added to the range per level?
+	#Range: > -2147483648
+	range_step = 10
+	#What is the beacon base range?
+	#Range: > -2147483648
+	base_range = 10
+	#How the beacon range is calculated vertically. Java = Vanilla Java Behavior. Bedrock = Vanilla Bedrock behavior. FullHeight = expand vertical range to maximum
+	#Allowed Values: Java, FullHeight
+	vertical_range_type = "FullHeight"
+

@@ -1,0 +1,63 @@
+
+#General settings
+[general]
+	#This is a list of blocks that XNet considers to be 'unsided' meaning that it doesn't matter from what side you access things. This is currently only used to help with pasting channels
+	unsidedBlocks = ["minecraft:chest", "minecraft:trapped_chest", "rftools:modular_storage", "rftools:storage_scanner", "rftools:pearl_injector"]
+	#Maximum RF the controller can store
+	#Range: 1 ~ 1000000000
+	controllerMaxRF = 100000
+	#Maximum RF the controller can receive per tick
+	#Range: 1 ~ 1000000000
+	controllerRfPerTick = 1000
+	#Maximum RF the wireless router can store
+	#Range: 1 ~ 1000000000
+	wirelessRouterMaxRF = 100000
+	#Maximum RF the wireless router can receive per tick
+	#Range: 1 ~ 1000000000
+	wirelessRouterRfPerTick = 5000
+	#Maximum RF per tick the wireless router (tier 1) needs to publish a channel
+	#Range: 0 ~ 1000000000
+	wireless1RfPerChannel = 20
+	#Maximum RF per tick the wireless router (tier 2) needs to publish a channel
+	#Range: 0 ~ 1000000000
+	wireless2RfPerChannel = 50
+	#Maximum RF per tick the wireless router (infinite tier) needs to publish a channel
+	#Range: 0 ~ 1000000000
+	wirelessInfRfPerChannel = 200
+	#Maximum RF the normal connector can store
+	#Range: 1 ~ 1000000000
+	maxRfConnector = 50000
+	#Maximum RF the advanced connector can store
+	#Range: 1 ~ 1000000000
+	maxRfAdvancedConnector = 500000
+	#Maximum RF/rate that a normal connector can input or output
+	#Range: 1 ~ 1000000000
+	maxRfRateNormal = 10000
+	#Maximum RF/rate that an advanced connector can input or output
+	#Range: 1 ~ 1000000000
+	maxRfRateAdvanced = 100000
+	#Maximum fluid per operation that a normal connector can input or output
+	#Range: 1 ~ 1000000000
+	maxFluidRateNormal = 1000
+	#Maximum fluid per operation that an advanced connector can input or output
+	#Range: 1 ~ 1000000000
+	maxFluidRateAdvanced = 5000
+	#Maximum number of published channels that a routing channel can support
+	#Range: 1 ~ 1000000000
+	maxPublishedChannels = 32
+	#Power usage for the controller regardless of what it is doing
+	#Range: 0 ~ 1000000000
+	controllerRFPerTick = 0
+	#Power usage for the controller per active channel
+	#Range: 0 ~ 1000000000
+	controllerChannelRFT = 1
+	#Power usage for the controller per operation performed by one of the channels
+	#Range: 0 ~ 1000000000
+	controllerOperationRFT = 2
+	#Range for a tier 1 antenna
+	#Range: 0 ~ 1000000000
+	antennaTier1Range = 100
+	#Range for a tier 2 antenna
+	#Range: 0 ~ 1000000000
+	antennaTier2Range = 500
+

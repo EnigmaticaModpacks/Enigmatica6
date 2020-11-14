@@ -1,0 +1,33 @@
+{
+  "flower": "minecraft:wither_rose",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "wither/wither_bee",
+  "traits": ["nether", "wither"],
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#444444"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:lava",
+    "mutationOutput": "minecraft:obsidian",
+    "mutationType": "FLUID_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:nether_star",
+    "mainOutputWeight": 0.01
+  },
+  "SpawnData": {},
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Coal",
+    "parent2": "Skeleton",
+    "feedItem": "minecraft:rotten_flesh",
+    "feedAmount": 12
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

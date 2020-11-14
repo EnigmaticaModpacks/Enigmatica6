@@ -1,0 +1,17 @@
+{
+    "type": "thermal:press",
+    "ingredient": {
+        "tag": "forge:ingots/uranium"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:uranium_plate"
+        }
+    ],
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "immersiveengineering"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+  "flower": "minecraft:wither_rose",
+  "maxTimeInHive": 600,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "netherite/netherite_bee",
+  "traits": ["nether"],
+  "ColorData": {
+    "isBeeColored": false,
+    "honeycombColor": "#654740"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:blackstone",
+    "mutationOutput": "minecraft:gilded_blackstone",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:netherite_ingot",
+    "mainOutputWeight": 0.05
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:nether",
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Wither",
+    "parent2": "Diamond"
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}
