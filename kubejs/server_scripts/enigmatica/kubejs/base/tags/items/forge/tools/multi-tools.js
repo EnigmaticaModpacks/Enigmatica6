@@ -29,9 +29,6 @@ events.listen('item.tags', function (event) {
         'thermal:flux_drill',
         'thermal:flux_saw'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:tools').add(item);
-        event.get('forge:tools/multi-tools').add(item);
-    });
+	event.get('forge:tools').add(items);
+	event.get('forge:tools/multi-tool').add(items);
 });

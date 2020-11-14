@@ -1,5 +1,5 @@
 events.listen('item.tags', function (event) {
-    var helms = [
+    var items = [
         'aquaculture:neptunium_helmet',
         'ars_nouveau:apprentice_hood',
         'ars_nouveau:archmage_hood',
@@ -38,9 +38,6 @@ events.listen('item.tags', function (event) {
         'thermal:diving_helmet',
         'thermal:hazmat_helmet'
     ];
-
-    helms.forEach(function (helm) {
-        event.get('forge:armor').add(helm);
-        event.get('forge:armor/helms').add(helm);
-    });
+	event.get('forge:armor').add(items);
+	event.get('forge:armor/helm').add(items);
 });

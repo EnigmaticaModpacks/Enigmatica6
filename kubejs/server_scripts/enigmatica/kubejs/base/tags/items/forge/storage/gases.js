@@ -8,9 +8,6 @@ events.listen('item.tags', function (event) {
         'mekanism:elite_chemical_tank',
         'mekanism:ultimate_chemical_tank'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:storage').add(item);
-        event.get('forge:storage/gases').add(item);
-    });
+	event.get('forge:storage').add(items);
+	event.get('forge:storage/gas').add(items);
 });

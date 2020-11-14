@@ -36,9 +36,7 @@ events.listen('item.tags', function (event) {
         'refinedstorage:64k_fluid_storage_part',
         'rftoolsutility:tank'
     ];
+	event.get('forge:storage').add(items);
+	event.get('forge:storage/liquid').add(items);
 
-    items.forEach(function (item) {
-        event.get('forge:storage').add(item);
-        event.get('forge:storage/liquids').add(item);
-    });
 });

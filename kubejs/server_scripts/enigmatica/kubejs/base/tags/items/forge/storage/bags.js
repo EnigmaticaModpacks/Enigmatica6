@@ -24,8 +24,6 @@ events.listen('item.tags', function (event) {
         'usefulbackpacks:backpack_small'
     ];
 
-    items.forEach(function (item) {
-        event.get('forge:storage').add(item);
-        event.get('forge:storage/bags').add(item);
-    });
+	event.get('forge:storage').add(items);
+	event.get('forge:storage/bag').add(items);
 });

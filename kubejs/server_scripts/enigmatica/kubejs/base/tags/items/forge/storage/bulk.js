@@ -91,9 +91,6 @@ events.listen('item.tags', function (event) {
         'storagedrawers:spruce_half_drawers_2',
         'storagedrawers:spruce_half_drawers_4'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:storage').add(item);
-        event.get('forge:storage/bulk').add(item);
-    });
+	event.get('forge:storage').add(items);
+	event.get('forge:storage/bulk').add(items);
 });

@@ -23,9 +23,6 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:minigun',
         'xercamod:ender_bow'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:weapons').add(item);
-        event.get('forge:weapons/ranged').add(item);
-    });
+	event.get('forge:weapons').add(items);
+	event.get('forge:weapons/ranged').add(items);
 });

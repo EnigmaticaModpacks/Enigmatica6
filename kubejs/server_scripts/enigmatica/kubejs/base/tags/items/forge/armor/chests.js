@@ -1,5 +1,5 @@
 events.listen('item.tags', function (event) {
-    var chests = [
+    var items = [
         'aquaculture:neptunium_chestplate',
         'ars_nouveau:apprentice_robes',
         'ars_nouveau:archmage_robes',
@@ -39,9 +39,7 @@ events.listen('item.tags', function (event) {
         'thermal:diving_chestplate',
         'thermal:hazmat_chestplate'
     ];
+	event.get('forge:armor').add(items);
+	event.get('forge:armor/chest').add(items);
 
-    chests.forEach(function (chest) {
-        event.get('forge:armor').add(chest);
-        event.get('forge:armor/chests').add(chest);
-    });
 });

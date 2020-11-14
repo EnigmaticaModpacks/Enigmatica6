@@ -316,8 +316,5 @@ events.listen('item.tags', function (event) {
         'torchmaster:megatorch',
         'valhelsia_structures:brazier'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:lighting').add(item);
-    });
+	event.get('forge:lights').add(items);
 });

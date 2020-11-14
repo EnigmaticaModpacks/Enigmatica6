@@ -174,8 +174,6 @@ events.listen('item.tags', function (event) {
         'xercamod:item_bookcase'
     ];
 
-    items.forEach(function (item) {
-        event.get('forge:storage').add(item);
-        event.get('forge:storage/basic').add(item);
-    });
+	event.get('forge:storage').add(items);
+	event.get('forge:storage/basic').add(items);
 });

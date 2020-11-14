@@ -58,9 +58,6 @@ events.listen('item.tags', function (event) {
         'xercamod:item_netherite_warhammer',
         'xercamod:item_stone_warhammer'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:weapons').add(item);
-        event.get('forge:weapons/melee').add(item);
-    });
+	event.get('forge:weapons').add(items);
+	event.get('forge:weapons/melee').add(items);
 });

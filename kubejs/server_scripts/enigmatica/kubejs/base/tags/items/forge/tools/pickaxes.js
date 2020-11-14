@@ -48,9 +48,6 @@ events.listen('item.tags', function (event) {
         'vanillahammers:stone_hammer',
         'vanillahammers:wood_hammer'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:tools').add(item);
-        event.get('forge:tools/pickaxes').add(item);
-    });
+	event.get('forge:tools').add(items);
+	event.get('forge:tools/pickaxe').add(items);
 });

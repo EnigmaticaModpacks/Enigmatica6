@@ -1,5 +1,5 @@
 events.listen('item.tags', function (event) {
-    var leggings = [
+    var items = [
         'aquaculture:neptunium_leggings',
         'ars_nouveau:apprentice_leggings',
         'ars_nouveau:archmage_leggings',
@@ -37,9 +37,6 @@ events.listen('item.tags', function (event) {
         'thermal:diving_leggings',
         'thermal:hazmat_leggings'
     ];
-
-    leggings.forEach(function (legging) {
-        event.get('forge:armor').add(legging);
-        event.get('forge:armor/leggings').add(legging);
-    });
+	event.get('forge:armor').add(items);
+	event.get('forge:armor/leggings').add(items);
 });

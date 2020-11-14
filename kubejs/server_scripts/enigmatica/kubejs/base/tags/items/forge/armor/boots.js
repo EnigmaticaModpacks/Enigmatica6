@@ -1,5 +1,5 @@
 events.listen('item.tags', function (event) {
-    var boots = [
+    var items = [
         'aquaculture:neptunium_boots',
         'ars_nouveau:apprentice_boots',
         'ars_nouveau:archmage_boots',
@@ -38,9 +38,7 @@ events.listen('item.tags', function (event) {
         'thermal:diving_boots',
         'thermal:hazmat_boots'
     ];
+	event.get('forge:armor').add(items);
+	event.get('forge:armor/boots').add(items);
 
-    boots.forEach(function (boot) {
-        event.get('forge:armor').add(boot);
-        event.get('forge:armor/boots').add(boot);
-    });
 });

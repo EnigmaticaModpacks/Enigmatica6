@@ -46,9 +46,6 @@ events.listen('item.tags', function (event) {
         'vanillaexcavators:stone_excavator',
         'vanillaexcavators:wood_excavator'
     ];
-
-    items.forEach(function (item) {
-        event.get('forge:tools').add(item);
-        event.get('forge:tools/shovels').add(item);
-    });
+	event.get('forge:tools').add(items);
+	event.get('forge:tools/shovel').add(items);
 });
