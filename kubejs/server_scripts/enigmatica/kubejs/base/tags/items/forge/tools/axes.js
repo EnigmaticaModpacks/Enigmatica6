@@ -1,5 +1,5 @@
 events.listen('item.tags', function (event) {
-    var axes = [
+    var items = [
         'aiotbotania:livingrock_axe',        
         'aiotbotania:livingwood_axe',        
         'aquaculture:neptunium_axe',
@@ -47,7 +47,7 @@ events.listen('item.tags', function (event) {
         'mekanismtools:stone_paxel',
         'mekanismtools:wood_paxel'
     ];
-	event.get('forge:tools').add(axes);
-	event.get('forge:tools/axe').add(axes);
+	event.get('forge:tools').add(items);
+	event.get('forge:tools/axe').add(items);
 
 });
