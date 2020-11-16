@@ -21,6 +21,8 @@
 	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
+	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
+	vacuum_trap_blacklist = []
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
 	min_fluid_fuel_temperature = 373
@@ -247,7 +249,7 @@
 	#Default thermal resistance for solid blocks
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	blockThermalResistance = 500.0
-	#Ambient temperature modifier by height (in degrees per block above 80 or below 40)
+	#Ambient temperature increase by altitude, in degrees per block below 48 (or 75% of sea level). Note that temperature decrease per block above 64 is handled by vanilla.
 	#Range: 0.0 ~ 10.0
 	ambientTemperatureHeightModifier = 0.1
 	#Thermal resistance of air; controls how fast blocks lose heat to air when exposed
@@ -264,10 +266,10 @@
 	#Minimum pressure for a Logistics Module to function
 	#Range: 0.0 ~ 20.0
 	min_pressure = 3.0
-	#Air usage per mB of fluid per block distance
+	#Logistics Module air usage per mB of fluid per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
 	fluid_transport_cost = 0.02
-	#Air usage per item per block distance
+	#Logistics Module air usage per item per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
 	item_transport_cost = 1.0
 
