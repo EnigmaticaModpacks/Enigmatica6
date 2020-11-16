@@ -11,7 +11,7 @@ events.listen('recipes', (event) => {
         json.write(configName, defaultConfig);
         console.log('Created new ' + configName);
     }
-    if (config.mode === 'none') {
+    if (config.mode == 'none') {
         json.write(configName, defaultConfig);
         console.log(
             `Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`
