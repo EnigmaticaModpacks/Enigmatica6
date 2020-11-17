@@ -5,5 +5,152 @@
 	title: "Storage",
 	icon: "minecraft:chest",
 	default_quest_shape: "",
-	quests: []
+	quests: [
+		{
+			title: "Storage",
+			icon: "minecraft:chest",
+			x: -0.5d,
+			y: -7.5d,
+			description: [
+				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods.",
+				"",
+				"Note: Most blocks that are useful as a storage block have been Tagged for search in JEI. Search for the following categories:",
+				"",
+				"● $storage",
+				"● $storage/basic",
+				"● $storage/bulk",
+				"● $storage/bags",
+				"● $storage/energy",
+				"● $storage/gas",
+				"● $storage/liquid"
+			],
+			id: 1023,
+			tasks: [{
+				id: 1024,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Pretty Pipes",
+			icon: "prettypipes:item_terminal",
+			x: -1.0d,
+			y: -6.0d,
+			subtitle: "No Power? No Problem",
+			description: [
+				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. ",
+				"",
+				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
+			],
+			dependencies: [I;1023],
+			id: 1025,
+			tasks: [{
+				id: 1026,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Refined Storage",
+			x: 0.0d,
+			y: -6.0d,
+			description: ["Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand it's capabilities. "],
+			dependencies: [I;1023],
+			id: 1027,
+			tasks: [{
+				id: 1028,
+				type: "checkmark",
+				icon: "refinedstorage:creative_controller"
+			}]
+		},
+		{
+			title: "Iron Chests",
+			icon: "ironchest:iron_chest",
+			x: 0.0d,
+			y: -9.0d,
+			description: ["Extra large storage for the same space as a chest. Iron Chests come in multiple varieties to suit your budget."],
+			dependencies: [I;1023],
+			id: 1029,
+			tasks: [{
+				id: 1030,
+				type: "checkmark",
+				icon: "ironchest:diamond_chest"
+			}]
+		},
+		{
+			title: "Mekanism Bins",
+			icon: "mekanism:basic_bin",
+			x: -2.0d,
+			y: -8.0d,
+			subtitle: "I Like Big Bins and I Cannot Lie",
+			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "],
+			dependencies: [I;1023],
+			id: 1031,
+			tasks: [{
+				id: 1032,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Quantum Storage",
+			icon: "quantumstorage:controller",
+			x: 1.0d,
+			y: -8.0d,
+			subtitle: "Physics Breaking Hoarding",
+			description: [
+				"Too much stone and nowhere to put it? Quantum Storage offers a few blocks to store even the most absurd quantities of whatever you have. ",
+				"",
+				"Use the Quantum Hammer to link multiple Storage Units to a Quantum Controller for centralized access.",
+				"",
+				"Quantum Storage also offers a variety of backpacks and crates capable of holding large quantities of diverse items."
+			],
+			dependencies: [I;1023],
+			id: 1033,
+			tasks: [{
+				id: 1034,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Find Me",
+			icon: "naturesaura:range_visualizer",
+			x: 1.0d,
+			y: -7.0d,
+			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "],
+			dependencies: [I;1023],
+			id: 1035,
+			tasks: [{
+				id: 1036,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Plonk",
+			icon: "botania:cosmetic_thinking_hand",
+			x: -2.0d,
+			y: -7.0d,
+			description: [
+				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!",
+				"",
+				"Plonk allows you to place up to four stacks of items in any block space. Simply hold the item, point at a block, and press P to place. Right click to pick the items back up. "
+			],
+			dependencies: [I;1023],
+			id: 1037,
+			tasks: [{
+				id: 1038,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Storage Drawers",
+			icon: "storagedrawers:controller",
+			x: -1.0d,
+			y: -9.0d,
+			description: ["Customizable drawers for all your deep storage needs."],
+			dependencies: [I;1023],
+			id: 1039,
+			tasks: [{
+				id: 1040,
+				type: "checkmark"
+			}]
+		}
+	]
 }
