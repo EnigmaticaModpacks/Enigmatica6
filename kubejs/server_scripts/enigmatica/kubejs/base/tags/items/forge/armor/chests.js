@@ -32,6 +32,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_chestplate',
         'minecraft:leather_chestplate',
         'minecraft:netherite_chestplate',
+		'mythicbotany:alfsteel_chestplate',
         'naturesaura:infused_iron_chest',
         'naturesaura:sky_chest',
         'pneumaticcraft:pneumatic_chestplate',

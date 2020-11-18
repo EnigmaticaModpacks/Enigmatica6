@@ -48,6 +48,7 @@ events.listen('item.tags', function (event) {
         'minecraft:netherite_sword',
         'minecraft:stone_sword',
         'minecraft:wooden_sword',
+		'mythicbotany:alfsteel_sword',
         'naturesaura:infused_iron_sword',
         'naturesaura:sky_sword',
         'wstweaks:blaze_blade',
