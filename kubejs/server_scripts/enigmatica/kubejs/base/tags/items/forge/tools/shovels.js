@@ -1,5 +1,7 @@
 events.listen('item.tags', function (event) {
     var items = [
+		'aiotbotania:alfsteel_shovel',
+		'aiotbotania:terra_shovel',
         'aquaculture:neptunium_shovel',
         'botania:elementium_shovel',
         'botania:manasteel_shovel',

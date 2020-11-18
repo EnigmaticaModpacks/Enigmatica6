@@ -1,5 +1,6 @@
 events.listen('item.tags', function (event) {
     var items = [
+		'aiotbotania:alfsteel_aiot',
         'aiotbotania:livingrock_axe',        
         'aiotbotania:livingwood_axe',        
         'aquaculture:neptunium_axe',
@@ -27,6 +28,7 @@ events.listen('item.tags', function (event) {
         'minecraft:netherite_axe',
         'minecraft:stone_axe',
         'minecraft:wooden_axe',
+		'mythicbotany:alfsteel_axe',
         'naturesaura:infused_iron_axe',
         'naturesaura:sky_axe',        
         'aiotbotania:elementium_aiot',

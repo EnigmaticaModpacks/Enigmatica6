@@ -25,6 +25,7 @@ events.listen('item.tags', function (event) {
         'minecraft:netherite_pickaxe',
         'minecraft:stone_pickaxe',
         'minecraft:wooden_pickaxe',
+		'mythicbotany:alfsteel_pick',
         'naturesaura:infused_iron_pickaxe',
         'naturesaura:sky_pickaxe',
         'vanillahammers:bone_hammer',
