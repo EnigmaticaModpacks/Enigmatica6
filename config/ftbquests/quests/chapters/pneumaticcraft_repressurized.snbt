@@ -1154,7 +1154,7 @@
 			y: -9.0d,
 			subtitle: "A Caustic Solution",
 			description: [
-				"The next step of creating Circuit Boards is to etch them in this tank. It can hold and simultaneously process as many as 25 Empty PCBs. The acid is only consumed if heat is applied while etching a board.",
+				"The next step of creating Circuit Boards is to etch them in this tank, which can hold and simultaneously process as many as 25 Empty PCBs. The acid is only consumed if heat is applied while etching a board.",
 				"Doing so significantly speeds up the etching process, however, and a single bucket will last for many PCBs."
 			],
 			dependencies: [I;334],
@@ -1379,12 +1379,36 @@
 		{
 			x: -17.5d,
 			y: -10.5d,
+			subtitle: "Helter Skelter",
+			description: [
+				"Recent advancements in Pneumatic technology now allow for the forced removal of the magical core of Spawners found throughout the world. Once extracted, they can be empowered to run more quickly by inserting them in a modified spawner and spinning them up with air.",
+				"",
+				"To begin, prepare the area around a spawner for a fight. Disabling it with Torches or by Hacking it are recommended.",
+				"",
+				"Place the Spawner Extractor on top of the spawner, connect a Vacuum Pump to the Extractor, and begin pumping the air out. As the Extractor reaches the requisite negative pressure, things will begin happening.",
+				"",
+				"The Extractor only works while the player is nearby, so stay close.",
+				"",
+				"As it works, mobs will be forcibly spawned in the area. You brought your armor, right?",
+				"",
+				"The Extractor will slow down as more mobs accumulate in the area. Kill them quickly.",
+				"",
+				"Be prepared for large waves of mobs. Things can get hectic.",
+				"",
+				"Note: When the process has finished, sneak + right-click the Extractor with a Pneumatic Wrench to avoid the need to charge from scratch the next time. An extractor with some volume upgrades should be able to extract cores from several spawners before needing to be re-charged. "
+			],
 			dependencies: [I;1047],
+			min_width: 300,
 			id: 1049,
 			tasks: [{
 				id: 1050,
 				type: "item",
 				item: "pneumaticcraft:spawner_extractor"
+			}],
+			rewards: [{
+				id: 1075,
+				type: "loot",
+				table: 1
 			}]
 		},
 		{
@@ -1392,7 +1416,22 @@
 			x: -15.5d,
 			y: -10.5d,
 			subtitle: "Who Ya Gonna Call?",
-			description: [""],
+			description: [
+				"Your gateway to custom spawning.",
+				"",
+				"Not every mob is readily available from natural spawners. Thankfully, there is a way of recreating the magic of the Spawner Core: The Vacuum Trap.",
+				"",
+				"The process begins similarly to the Spawner Extractor, hook the Vacuum Trap up to a Vacuum Pump and pull out all of the air. Volume upgrades are recommended and a Spawner Core is required. Sneak + Right Click the charged Trap with a Pneumatic Wrench to pick it up. Now place it down near most any mob and Sneak + Right Click it with an empty hand to open it. Nearby mobs will be sucked in and be added to the Core.",
+				"",
+				"Multiple mob types can be stored in a Core, making mixed spawners possible. ",
+				"",
+				"A Spawner Core with only one mob in it is still valid for use in a Pressurized Spawner; very useful for hard to capture or rare mobs.",
+				"",
+				"The Trap works more efficiently if it has Memory Essence in the internal tank, meaning it takes fewer mobs to completely fill it. ",
+				"",
+				"Random mobs may be released from a core by Sneak + Right Clicking it on the ground, allowing easier transportation of mobs even before the Pressurized Spawner is available. "
+			],
+			dependencies: [I;1055],
 			id: 1051,
 			tasks: [
 				{
@@ -1405,16 +1444,33 @@
 					type: "item",
 					item: "pneumaticcraft:spawner_core"
 				}
-			]
+			],
+			rewards: [{
+				id: 1076,
+				type: "loot",
+				table: 2
+			}]
 		},
 		{
 			x: -16.5d,
 			y: -9.5d,
+			subtitle: "Spinning in Their Graves",
+			description: [
+				"Once the Extraction process has finished, be sure to break the empty spawner (any pick will do) and take it with you. It's required for crafting a Pressurized Spawner.",
+				"",
+				"Note: Consider keeping a spare empty spawner at your base. The Spawner Extractor can be placed atop it to simplify recharging it for future projects."
+			],
+			dependencies: [I;1049],
 			id: 1055,
 			tasks: [{
 				id: 1056,
 				type: "item",
 				item: "pneumaticcraft:pressurized_spawner"
+			}],
+			rewards: [{
+				id: 1074,
+				type: "loot",
+				table: 1
 			}]
 		}
 	]

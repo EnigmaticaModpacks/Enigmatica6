@@ -1,32 +1,200 @@
 {
 	id: 929,
 	filename: "thermal_series",
-	order_index: 18,
-	title: "[WIP] Thermal Series",
+	order_index: 0,
+	title: "Thermal Series",
 	icon: "thermal:wrench",
 	default_quest_shape: "",
-	quests: [{
-		x: 0.0d,
-		y: 0.0d,
-		shape: "gear",
-		description: ["The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for many, many years, over which it has changed considerably multiple times, while also remaining distinctly tech-focused."],
-		id: 930,
-		tasks: [{
-			id: 931,
-			type: "checkmark",
-			title: "The Thermal Series",
-			icon: "thermal:wrench"
-		}],
-		rewards: [{
-			id: 934,
-			type: "item",
-			item: {
-				id: "patchouli:guide_book",
-				Count: true,
-				tag: {
-					"patchouli:book": "thermal:guidebook"
+	quests: [
+		{
+			x: 2.0d,
+			y: 0.0d,
+			shape: "gear",
+			description: [
+				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept it's overal theme of slightly magical tech throughout. ",
+				"",
+				"The Thermalpedia provided goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. "
+			],
+			id: 930,
+			tasks: [{
+				id: 931,
+				type: "checkmark",
+				title: "The Thermal Series",
+				icon: "thermal:wrench"
+			}],
+			rewards: [
+				{
+					id: 934,
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: true,
+						tag: {
+							"patchouli:book": "thermal:guidebook"
+						}
+					}
+				},
+				{
+					id: 1209,
+					type: "item",
+					item: "thermal:wrench"
 				}
-			}
-		}]
-	}]
+			]
+		},
+		{
+			icon: "thermal:dynamo_stirling",
+			x: 0.0d,
+			y: 2.0d,
+			description: [
+				"You can't get something for nothing; doing work means using energy and the search for energy drives all things. Our first step, therefore will be to generate some power to begin working with Thermal machines.",
+				"",
+				"A Stirling Dynamo burns fuel to create a heat differential, thus allowing engine to spin and generate energy in an easily stored and tranfserable form.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;930],
+			id: 1187,
+			tasks: [
+				{
+					id: 1188,
+					type: "item",
+					item: "thermal:dynamo_stirling"
+				},
+				{
+					id: 1208,
+					type: "item",
+					title: "Any minecraft:coals",
+					item: {
+						id: "itemfilters:tag",
+						Count: true,
+						tag: {
+							value: "minecraft:coals"
+						}
+					},
+					count: 16L
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: 3.5d,
+			subtitle: "Trickle-Down Economics",
+			description: [
+				"While nothing is without cost, the source of energy isn't always immediately obvious. The Arboreal Extractor uses a combination of gravity and the trees own capillary action to collect the fluids available in the tree. ",
+				"",
+				"This is a non-destructive process, but a living tree is required. Supplying some bone meal or other fertilizer can help replenish the tree's reserves faster, thus boosting production.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1187],
+			id: 1189,
+			tasks: [{
+				id: 1190,
+				type: "item",
+				item: "thermal:device_tree_extractor"
+			}],
+			rewards: [{
+				id: 1210,
+				type: "item",
+				item: "minecraft:acacia_sapling",
+				count: 4
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 6.0d,
+			subtitle: "Not Your Ordinary Moonshine",
+			description: [
+				"With a little bit of energy input, the Fractionating Still can refine Resin into Tree Oil, a fine renewable fuel that burns more efficiently than coal.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1211],
+			id: 1191,
+			tasks: [
+				{
+					id: 1192,
+					type: "item",
+					item: "thermal:machine_refinery"
+				},
+				{
+					id: 1217,
+					type: "item",
+					item: "thermal:tree_oil_bucket"
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			id: 1195,
+			tasks: [{
+				id: 1196,
+				type: "item",
+				item: "thermal:machine_pulverizer"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 3.5d,
+			id: 1197,
+			tasks: [{
+				id: 1198,
+				type: "item",
+				item: "emendatusenigmatica:invar_dust"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 4.5d,
+			id: 1199,
+			tasks: [{
+				id: 1200,
+				type: "item",
+				item: "thermal:machine_smelter"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 4.5d,
+			description: [
+				"Though some may still be seeking the sweetest taste, others are just trying to keep the lights on. ",
+				"",
+				"Resin can be extracted from oak, birch, spruce, and acacia trees and with a little work can be made into an excellent fuel source."
+			],
+			dependencies: [I;1189],
+			id: 1211,
+			tasks: [{
+				id: 1212,
+				type: "item",
+				item: "thermal:resin_bucket"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 0.5d,
+			id: 1213,
+			tasks: [{
+				id: 1214,
+				type: "item",
+				item: "thermal:latex_bucket"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 7.0d,
+			description: [
+				"With better fuel in hand, start up a Compression Dynamo for some simple renewable energy. ",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1191],
+			id: 1215,
+			tasks: [{
+				id: 1216,
+				type: "item",
+				item: "thermal:dynamo_compression"
+			}]
+		}
+	]
 }
