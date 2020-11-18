@@ -31,6 +31,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_helmet',
         'minecraft:leather_helmet',
         'minecraft:netherite_helmet',
+		'mythicbotany:alfsteel_helmet',
         'naturesaura:infused_iron_helmet',
         'naturesaura:sky_helmet',
         'pneumaticcraft:pneumatic_helmet',

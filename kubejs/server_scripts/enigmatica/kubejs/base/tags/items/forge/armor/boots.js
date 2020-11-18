@@ -31,6 +31,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_boots',
         'minecraft:leather_boots',
         'minecraft:netherite_boots',
+		'mythicbotany:alfsteel_boots',
         'naturesaura:infused_iron_shoes',
         'naturesaura:sky_shoes',
         'pneumaticcraft:pneumatic_boots',

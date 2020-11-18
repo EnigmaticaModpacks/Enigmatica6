@@ -30,6 +30,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_leggings',
         'minecraft:leather_leggings',
         'minecraft:netherite_leggings',
+		'mythicbotany:alfsteel_leggings',
         'naturesaura:infused_iron_pants',
         'naturesaura:sky_pants',
         'pneumaticcraft:pneumatic_leggings',

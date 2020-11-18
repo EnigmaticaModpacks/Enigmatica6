@@ -1,5 +1,7 @@
 events.listen('item.tags', function (event) {
     var items = [
+		'aiotbotania:alfsteel_aiot',
+		'aiotbotania:alfsteel_hoe',
         'aiotbotania:elementium_hoe',
         'aiotbotania:livingrock_hoe',
         'aiotbotania:livingwood_hoe',
