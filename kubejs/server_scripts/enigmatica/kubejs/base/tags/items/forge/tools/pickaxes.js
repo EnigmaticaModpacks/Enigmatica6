@@ -6,12 +6,6 @@ events.listen('item.tags', function (event) {
         'botania:manasteel_pick',
         'botania:terra_pick',
         'byg:pendorite_pickaxe',
-        'good_nights_sleep:candy_pickaxe',
-        'good_nights_sleep:necrum_pickaxe',
-        'good_nights_sleep:negatite_pickaxe',
-        'good_nights_sleep:positite_pickaxe',
-        'good_nights_sleep:rainbow_pickaxe',
-        'good_nights_sleep:zitrite_pickaxe',
         'immersiveengineering:pickaxe_steel',
         'mekanismtools:bronze_pickaxe',
         'mekanismtools:lapis_lazuli_pickaxe',
@@ -25,7 +19,7 @@ events.listen('item.tags', function (event) {
         'minecraft:netherite_pickaxe',
         'minecraft:stone_pickaxe',
         'minecraft:wooden_pickaxe',
-		'mythicbotany:alfsteel_pick',
+        'mythicbotany:alfsteel_pick',
         'naturesaura:infused_iron_pickaxe',
         'naturesaura:sky_pickaxe',
         'vanillahammers:bone_hammer',
@@ -49,6 +43,6 @@ events.listen('item.tags', function (event) {
         'vanillahammers:stone_hammer',
         'vanillahammers:wood_hammer'
     ];
-	event.get('forge:tools').add(items);
-	event.get('forge:tools/pickaxe').add(items);
+    event.get('forge:tools').add(items);
+    event.get('forge:tools/pickaxe').add(items);
 });

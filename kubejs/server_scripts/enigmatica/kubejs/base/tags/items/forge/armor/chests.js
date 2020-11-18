@@ -9,11 +9,6 @@ events.listen('item.tags', function (event) {
         'botania:manaweave_chestplate',
         'botania:terrasteel_chestplate',
         'byg:ametrine_chestplate',
-        'good_nights_sleep:candy_chestplate',
-        'good_nights_sleep:negatite_chestplate',
-        'good_nights_sleep:positite_chestplate',
-        'good_nights_sleep:rainbow_chestplate',
-        'good_nights_sleep:zitrite_chestplate',
         'immersiveengineering:armor_faraday_chest',
         'immersiveengineering:armor_steel_chest',
         'mapperbase:steel_chestplate',
@@ -32,7 +27,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_chestplate',
         'minecraft:leather_chestplate',
         'minecraft:netherite_chestplate',
-		'mythicbotany:alfsteel_chestplate',
+        'mythicbotany:alfsteel_chestplate',
         'naturesaura:infused_iron_chest',
         'naturesaura:sky_chest',
         'pneumaticcraft:pneumatic_chestplate',
@@ -40,7 +35,6 @@ events.listen('item.tags', function (event) {
         'thermal:diving_chestplate',
         'thermal:hazmat_chestplate'
     ];
-	event.get('forge:armor').add(items);
-	event.get('forge:armor/chest').add(items);
-
+    event.get('forge:armor').add(items);
+    event.get('forge:armor/chest').add(items);
 });

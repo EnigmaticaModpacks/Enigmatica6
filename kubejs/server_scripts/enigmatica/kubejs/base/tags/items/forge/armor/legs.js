@@ -9,11 +9,6 @@ events.listen('item.tags', function (event) {
         'botania:manaweave_leggings',
         'botania:terrasteel_leggings',
         'byg:ametrine_leggings',
-        'good_nights_sleep:candy_leggings',
-        'good_nights_sleep:negatite_leggings',
-        'good_nights_sleep:positite_leggings',
-        'good_nights_sleep:rainbow_leggings',
-        'good_nights_sleep:zitrite_leggings',
         'immersiveengineering:armor_faraday_legs',
         'immersiveengineering:armor_steel_legs',
         'mapperbase:steel_leggings',
@@ -30,7 +25,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_leggings',
         'minecraft:leather_leggings',
         'minecraft:netherite_leggings',
-		'mythicbotany:alfsteel_leggings',
+        'mythicbotany:alfsteel_leggings',
         'naturesaura:infused_iron_pants',
         'naturesaura:sky_pants',
         'pneumaticcraft:pneumatic_leggings',
@@ -38,6 +33,6 @@ events.listen('item.tags', function (event) {
         'thermal:diving_leggings',
         'thermal:hazmat_leggings'
     ];
-	event.get('forge:armor').add(items);
-	event.get('forge:armor/leggings').add(items);
+    event.get('forge:armor').add(items);
+    event.get('forge:armor/leggings').add(items);
 });

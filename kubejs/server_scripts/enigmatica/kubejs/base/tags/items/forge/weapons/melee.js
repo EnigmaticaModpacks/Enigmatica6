@@ -14,12 +14,6 @@ events.listen('item.tags', function (event) {
         'botania:thunder_sword',
         'byg:pendorite_battleaxe',
         'byg:pendorite_sword',
-        'good_nights_sleep:candy_sword',
-        'good_nights_sleep:necrum_sword',
-        'good_nights_sleep:negatite_sword',
-        'good_nights_sleep:positite_sword',
-        'good_nights_sleep:rainbow_sword',
-        'good_nights_sleep:zitrite_sword',
         'immersiveengineering:sword_steel',
         'industrialforegoing:infinity_hammer',
         'meetyourfight:cocktail_cutlass',
@@ -48,7 +42,7 @@ events.listen('item.tags', function (event) {
         'minecraft:netherite_sword',
         'minecraft:stone_sword',
         'minecraft:wooden_sword',
-		'mythicbotany:alfsteel_sword',
+        'mythicbotany:alfsteel_sword',
         'naturesaura:infused_iron_sword',
         'naturesaura:sky_sword',
         'wstweaks:blaze_blade',
@@ -59,6 +53,6 @@ events.listen('item.tags', function (event) {
         'xercamod:item_netherite_warhammer',
         'xercamod:item_stone_warhammer'
     ];
-	event.get('forge:weapons').add(items);
-	event.get('forge:weapons/melee').add(items);
+    event.get('forge:weapons').add(items);
+    event.get('forge:weapons/melee').add(items);
 });

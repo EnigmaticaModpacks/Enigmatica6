@@ -9,11 +9,6 @@ events.listen('item.tags', function (event) {
         'botania:manaweave_helmet',
         'botania:terrasteel_helmet',
         'byg:ametrine_helmet',
-        'good_nights_sleep:candy_helmet',
-        'good_nights_sleep:negatite_helmet',
-        'good_nights_sleep:positite_helmet',
-        'good_nights_sleep:rainbow_helmet',
-        'good_nights_sleep:zitrite_helmet',
         'immersiveengineering:armor_faraday_head',
         'immersiveengineering:armor_steel_head',
         'mapperbase:steel_helmet',
@@ -31,7 +26,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_helmet',
         'minecraft:leather_helmet',
         'minecraft:netherite_helmet',
-		'mythicbotany:alfsteel_helmet',
+        'mythicbotany:alfsteel_helmet',
         'naturesaura:infused_iron_helmet',
         'naturesaura:sky_helmet',
         'pneumaticcraft:pneumatic_helmet',
@@ -39,6 +34,6 @@ events.listen('item.tags', function (event) {
         'thermal:diving_helmet',
         'thermal:hazmat_helmet'
     ];
-	event.get('forge:armor').add(items);
-	event.get('forge:armor/helm').add(items);
+    event.get('forge:armor').add(items);
+    event.get('forge:armor/helm').add(items);
 });

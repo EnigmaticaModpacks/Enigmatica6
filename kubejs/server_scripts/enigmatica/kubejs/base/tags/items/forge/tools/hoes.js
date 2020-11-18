@@ -1,7 +1,7 @@
 events.listen('item.tags', function (event) {
     var items = [
-		'aiotbotania:alfsteel_aiot',
-		'aiotbotania:alfsteel_hoe',
+        'aiotbotania:alfsteel_aiot',
+        'aiotbotania:alfsteel_hoe',
         'aiotbotania:elementium_hoe',
         'aiotbotania:livingrock_hoe',
         'aiotbotania:livingwood_hoe',
@@ -10,12 +10,6 @@ events.listen('item.tags', function (event) {
         'aquaculture:neptunium_hoe',
         'aquaculture:neptunium_hoe',
         'byg:pendorite_hoe',
-        'good_nights_sleep:candy_hoe',
-        'good_nights_sleep:necrum_hoe',
-        'good_nights_sleep:negatite_hoe',
-        'good_nights_sleep:positite_hoe',
-        'good_nights_sleep:rainbow_hoe',
-        'good_nights_sleep:zitrite_hoe',
         'immersiveengineering:hoe_steel',
         'mapperbase:steel_hoe',
         'mekanismtools:bronze_hoe',
@@ -38,6 +32,6 @@ events.listen('item.tags', function (event) {
         'aiotbotania:elementium_aiot',
         'aiotbotania:terra_aiot'
     ];
-	event.get('forge:tools').add(items);
-	event.get('forge:tools/hoe').add(items);
+    event.get('forge:tools').add(items);
+    event.get('forge:tools/hoe').add(items);
 });

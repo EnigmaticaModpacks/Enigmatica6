@@ -9,11 +9,6 @@ events.listen('item.tags', function (event) {
         'botania:manaweave_boots',
         'botania:terrasteel_boots',
         'byg:ametrine_boots',
-        'good_nights_sleep:candy_boots',
-        'good_nights_sleep:negatite_boots',
-        'good_nights_sleep:positite_boots',
-        'good_nights_sleep:rainbow_boots',
-        'good_nights_sleep:zitrite_boots',
         'immersiveengineering:armor_faraday_feet',
         'immersiveengineering:armor_steel_feet',
         'mapperbase:steel_boots',
@@ -31,7 +26,7 @@ events.listen('item.tags', function (event) {
         'minecraft:iron_boots',
         'minecraft:leather_boots',
         'minecraft:netherite_boots',
-		'mythicbotany:alfsteel_boots',
+        'mythicbotany:alfsteel_boots',
         'naturesaura:infused_iron_shoes',
         'naturesaura:sky_shoes',
         'pneumaticcraft:pneumatic_boots',
@@ -39,7 +34,6 @@ events.listen('item.tags', function (event) {
         'thermal:diving_boots',
         'thermal:hazmat_boots'
     ];
-	event.get('forge:armor').add(items);
-	event.get('forge:armor/boots').add(items);
-
+    event.get('forge:armor').add(items);
+    event.get('forge:armor/boots').add(items);
 });
