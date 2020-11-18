@@ -18,16 +18,18 @@
 [features]
 	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur
 	oreEffect = true
-	#If Aura Blooms and Aura Cacti should generate in the world
-	auraBlooms = true
 	#If the chunk loader block should be enabled
 	chunkLoader = true
-	#If the Aura Imbalance effect of grass and trees dying in the area if the Aura levels are too low should occur
-	grassDieEffect = true
 	#If the Aura Imbalance effect of grass growing on netherrack if the Aura levels are high enough should occur
 	netherGrassEffect = true
 	#If the Aura Imbalance effect of explosions happening randomly if Aura levels are too low should occur
 	explosionEffect = true
+	#If the Aura Imbalance effect of nether blocks degrading in the area if the Aura levels are too low should occur
+	netherDecayEffect = true
+	#If Aura Blooms and Aura Cacti should generate in the world
+	auraBlooms = true
+	#If the Aura Imbalance effect of grass and trees dying in the area if the Aura levels are too low should occur
+	grassDieEffect = true
 	#If the Aura Imbalance effect of aura containers in players' inventories being filled if the Aura levels are high enough should occur
 	cacheRechargeEffect = true
 	#If the RF converter block should be enabled
@@ -38,6 +40,8 @@
 	breathlessEffect = true
 	#If the Aura Imbalance effect of plant growth being boosted if the Aura levels are high enough should occur
 	plantBoostEffect = true
+	#If the Aura Imbalance effect of passive mobs being angered if Aura levels are too low should occur
+	angerEffect = true
 
 [client]
 	#If, when the F3 debug menu is open and the player is in creative mode, every Aura spot should be highlighted in the world for debug purposes

@@ -17,12 +17,12 @@
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
 	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.
-	oil_world_gen_blacklist = ["minecraft:the_nether", "minecraft:the_end"]
+	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
 	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
 	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
-	vacuum_trap_blacklist = []
+	vacuum_trap_blacklist = ["resourcefulbees:coal_bee", "resourcefulbees:creeper_bee", "resourcefulbees:diamond_bee", "resourcefulbees:emerald_bee", "resourcefulbees:ender_bee", "resourcefulbees:gold_bee", "resourcefulbees:icy_bee", "resourcefulbees:iron_bee", "resourcefulbees:lapis_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:netherite_bee", "resourcefulbees:oreo_bee", "resourcefulbees:pigman_bee", "resourcefulbees:redstone_bee", "resourcefulbees:rgbee_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:slimy_bee", "resourcefulbees:wither_bee", "resourcefulbees:zombie_bee"]
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
 	min_fluid_fuel_temperature = 373
