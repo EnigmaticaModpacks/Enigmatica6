@@ -8,7 +8,7 @@
 	quests: [
 		{
 			x: 2.0d,
-			y: 0.0d,
+			y: 2.0d,
 			shape: "gear",
 			description: [
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept it's overal theme of slightly magical tech throughout. ",
@@ -45,6 +45,7 @@
 			icon: "thermal:dynamo_stirling",
 			x: 0.0d,
 			y: 2.0d,
+			subtitle: "Power, From the Top",
 			description: [
 				"You can't get something for nothing; doing work means using energy and the search for energy drives all things. Our first step, therefore will be to generate some power to begin working with Thermal machines.",
 				"",
@@ -76,15 +77,15 @@
 			]
 		},
 		{
-			x: 0.0d,
-			y: 3.5d,
+			x: -0.5d,
+			y: 3.0d,
 			subtitle: "Trickle-Down Economics",
 			description: [
 				"While nothing is without cost, the source of energy isn't always immediately obvious. The Arboreal Extractor uses a combination of gravity and the trees own capillary action to collect the fluids available in the tree. ",
 				"",
 				"This is a non-destructive process, but a living tree is required. Supplying some bone meal or other fertilizer can help replenish the tree's reserves faster, thus boosting production.",
 				"",
-				"Check the Thermalpedia for information on relevant upgrades."
+				"Check the Thermalpedia for information on relevant upgrades as well as a list of what fluids can be extracted from each tree."
 			],
 			dependencies: [I;1187],
 			id: 1189,
@@ -101,8 +102,9 @@
 			}]
 		},
 		{
+			icon: "thermal:machine_refinery",
 			x: -1.0d,
-			y: 6.0d,
+			y: 5.0d,
 			subtitle: "Not Your Ordinary Moonshine",
 			description: [
 				"With a little bit of energy input, the Fractionating Still can refine Resin into Tree Oil, a fine renewable fuel that burns more efficiently than coal.",
@@ -125,8 +127,17 @@
 			]
 		},
 		{
-			x: 4.0d,
-			y: 2.0d,
+			x: 4.5d,
+			y: 3.0d,
+			subtitle: "You Have To Break a Few Eggs To Make an Omelette",
+			description: [
+				"Some materials are more abundant than they seem at first glance, they're simply locked up in different forms that require a touch more work to release.",
+				"",
+				"A Pulverizer can help extract these extras, such as getting some nickel from iron ore, or silver from lead ore. ",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1218],
 			id: 1195,
 			tasks: [{
 				id: 1196,
@@ -135,8 +146,15 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 3.5d,
+			x: 5.0d,
+			y: 4.0d,
+			subtitle: "Bootstrapping Technology",
+			description: [
+				"An ordinary Furnace will need a helping hand to produce advanced alloys. Invar has many useful properties, not least of which being the ability to withstand the heat used in a better furnace.",
+				"",
+				"Pulverize some iron and nickel, combine it by hand, and smelt the result to progress."
+			],
+			dependencies: [I;1195],
 			id: 1197,
 			tasks: [{
 				id: 1198,
@@ -146,7 +164,13 @@
 		},
 		{
 			x: 5.0d,
-			y: 4.5d,
+			y: 5.0d,
+			description: [
+				"An advanced furnace used for making alloys directly, as well as many other useful materials, such as hardened glass.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1197],
 			id: 1199,
 			tasks: [{
 				id: 1200,
@@ -156,7 +180,8 @@
 		},
 		{
 			x: -1.0d,
-			y: 4.5d,
+			y: 4.0d,
+			subtitle: "A Sticky Mess",
 			description: [
 				"Though some may still be seeking the sweetest taste, others are just trying to keep the lights on. ",
 				"",
@@ -171,20 +196,12 @@
 			}]
 		},
 		{
-			x: 7.0d,
-			y: 0.5d,
-			id: 1213,
-			tasks: [{
-				id: 1214,
-				type: "item",
-				item: "thermal:latex_bucket"
-			}]
-		},
-		{
 			x: 0.0d,
-			y: 7.0d,
+			y: 6.0d,
 			description: [
 				"With better fuel in hand, start up a Compression Dynamo for some simple renewable energy. ",
+				"",
+				"From here, explore some of the other Dynamos on your own to find the right power source for your situation.",
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
@@ -194,6 +211,82 @@
 				id: 1216,
 				type: "item",
 				item: "thermal:dynamo_compression"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 2.0d,
+			description: [
+				"A simple furnace, like a standard coal burning furnace except it is able to run faster and more efficiently.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;930],
+			id: 1218,
+			tasks: [{
+				id: 1219,
+				type: "item",
+				item: "thermal:machine_furnace"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 2.0d,
+			id: 1220,
+			tasks: [{
+				id: 1221,
+				type: "item",
+				item: "thermal:machine_press"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 3.0d,
+			id: 1222,
+			tasks: [{
+				id: 1223,
+				type: "item",
+				item: "thermal:machine_insolator"
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 4.0d,
+			id: 1224,
+			tasks: [{
+				id: 1225,
+				type: "item",
+				item: "thermal:machine_crafter"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 2.0d,
+			id: 1226,
+			tasks: [{
+				id: 1227,
+				type: "item",
+				item: "thermal:blitz_powder"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 3.0d,
+			id: 1228,
+			tasks: [{
+				id: 1229,
+				type: "item",
+				item: "thermal:blizz_powder"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 4.0d,
+			id: 1230,
+			tasks: [{
+				id: 1231,
+				type: "item",
+				item: "thermal:basalz_powder"
 			}]
 		}
 	]
