@@ -69,7 +69,8 @@ events.listen('recipes', function (event) {
             'bambooeverything:bamboo_bundle'
         ]),
         shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
-        shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket'])
+        shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
+        shapelessRecipe('minecraft:crafting_table', ['#forge:workbench'])
     ];
 
     recipes.forEach(function (recipe) {
