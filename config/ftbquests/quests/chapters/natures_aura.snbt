@@ -46,6 +46,7 @@
 			icon: "naturesaura:aura_bloom",
 			x: -0.5d,
 			y: -9.0d,
+			shape: "gear",
 			description: [
 				"Nature's Aura is a druidic themed magi-tech mod that uses the omnipresent 'aura' to derive its power. ",
 				"",
@@ -108,7 +109,7 @@
 			rewards: [{
 				id: 858,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -126,7 +127,7 @@
 			rewards: [{
 				id: 860,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -148,7 +149,7 @@
 			rewards: [{
 				id: 859,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -167,7 +168,7 @@
 			rewards: [{
 				id: 883,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -215,7 +216,12 @@
 					item: "minecraft:chiseled_stone_bricks",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 1186,
+				type: "loot",
+				table: 4
+			}]
 		},
 		{
 			title: "The Purest Expression",
@@ -255,7 +261,7 @@
 				{
 					id: 864,
 					type: "loot",
-					table: 10
+					table: 4
 				}
 			]
 		},
@@ -274,7 +280,7 @@
 			rewards: [{
 				id: 886,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -295,7 +301,7 @@
 			rewards: [{
 				id: 884,
 				type: "loot",
-				table: 11
+				table: 5
 			}]
 		},
 		{
@@ -313,7 +319,7 @@
 			rewards: [{
 				id: 885,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -354,7 +360,7 @@
 				{
 					id: 865,
 					type: "loot",
-					table: 10
+					table: 4
 				}
 			]
 		},
@@ -382,7 +388,7 @@
 			rewards: [{
 				id: 873,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -404,7 +410,7 @@
 			rewards: [{
 				id: 881,
 				type: "loot",
-				table: 11
+				table: 5
 			}]
 		},
 		{
@@ -449,7 +455,7 @@
 			rewards: [{
 				id: 888,
 				type: "loot",
-				table: 11
+				table: 5
 			}]
 		},
 		{
@@ -467,7 +473,7 @@
 			rewards: [{
 				id: 887,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -489,7 +495,7 @@
 			rewards: [{
 				id: 871,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -535,7 +541,7 @@
 			rewards: [{
 				id: 880,
 				type: "loot",
-				table: 11
+				table: 5
 			}]
 		},
 		{
@@ -553,7 +559,7 @@
 			rewards: [{
 				id: 882,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -575,7 +581,7 @@
 			rewards: [{
 				id: 879,
 				type: "loot",
-				table: 11
+				table: 5
 			}]
 		},
 		{
@@ -602,7 +608,7 @@
 			rewards: [{
 				id: 878,
 				type: "loot",
-				table: 11
+				table: 5
 			}]
 		},
 		{
@@ -740,7 +746,7 @@
 			rewards: [{
 				id: 866,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -767,7 +773,7 @@
 			rewards: [{
 				id: 853,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -790,7 +796,7 @@
 			rewards: [{
 				id: 854,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -890,7 +896,7 @@
 			rewards: [{
 				id: 869,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -912,7 +918,7 @@
 			rewards: [{
 				id: 877,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -930,7 +936,7 @@
 			rewards: [{
 				id: 876,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -948,7 +954,7 @@
 			rewards: [{
 				id: 872,
 				type: "loot",
-				table: 10
+				table: 4
 			}]
 		},
 		{
@@ -1052,7 +1058,7 @@
 				{
 					id: 870,
 					type: "loot",
-					table: 11
+					table: 5
 				}
 			]
 		}

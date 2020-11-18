@@ -8,47 +8,50 @@
 	quests: [
 		{
 			title: "Welcome",
+			icon: "minecraft:oak_sapling",
 			x: 0.0d,
 			y: -6.0d,
-			subtitle: "A brief introduction to our quests",
 			description: [
+				" Welcome to Enigmatica 6, we're glad to have you :D",
+				" ",
 				"Quests are divided into 3 types:",
 				"",
 				"- Exploring Enigmatica",
 				"- Learning Mods",
-				"- Challenges"
+				"- Challenges",
+				"",
+				"You can learn more about each type below.",
+				"",
+				"Note that we're still working on quests, and many more will be added in the future."
 			],
 			size: 1.5d,
 			id: 69,
 			tasks: [{
 				id: 70,
 				type: "checkmark",
-				title: "Welcome to Enigmatica 6",
 				icon: "minecraft:oak_sapling"
 			}],
 			rewards: [{
-				id: 71,
-				type: "random",
-				icon: "prefab:item_start_house",
-				table: 9
+				id: 1072,
+				type: "item",
+				item: "simplefarming:pancakes",
+				count: 2,
+				random_bonus: 3
 			}]
 		},
 		{
-			x: -1.0d,
-			y: -4.5d,
+			x: -1.5d,
+			y: -4.0d,
 			description: [
-				"The Exploration questline's purpose is to show what's available in the pack, without going into too many details.",
+				"The Exploration questline's purpose is to show what's available in the pack.",
 				"",
-				"It has the following chapters:",
-				"- Getting Started",
+				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration.",
+				"",
+				"It currently has the following chapters:",
 				"- Tools",
-				"- Storage",
-				"- Tech",
-				"- Magic",
-				"- Building",
-				"- Adventure"
+				"- Storage"
 			],
-			dependencies: [I;70],
+			dependencies: [I;69],
 			id: 684,
 			tasks: [{
 				id: 685,
@@ -65,13 +68,14 @@
 		{
 			icon: "minecraft:writable_book",
 			x: 0.0d,
-			y: -4.5d,
+			y: -3.5d,
 			description: [
-				"Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and then show a few things you can do with a mod.",
+				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do.",
 				"",
-				"The Learning chapters do not show everything mods have to offer, so make sure to explore if you want to find all the cool features."
+				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
 			],
-			dependencies: [I;70],
+			dependencies: [I;69],
+			hide: true,
 			id: 686,
 			tasks: [{
 				id: 687,
@@ -85,10 +89,16 @@
 			}]
 		},
 		{
-			x: 1.0d,
-			y: -4.5d,
-			description: ["Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."],
-			dependencies: [I;70],
+			title: "Challenges",
+			icon: "minecraft:wither_skeleton_skull",
+			x: 1.5d,
+			y: -4.0d,
+			description: [
+				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players.",
+				"",
+				"They are still work in progress."
+			],
+			dependencies: [I;69],
 			id: 688,
 			tasks: [{
 				id: 689,
