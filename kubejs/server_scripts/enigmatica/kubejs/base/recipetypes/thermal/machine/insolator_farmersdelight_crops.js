@@ -2,14 +2,14 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
-                input: 'farmersdelight:cabbage',
+                input: 'farmersdelight:cabbage_seeds',
                 outputs: ['farmersdelight:cabbage', 'farmersdelight:cabbage_seeds'],
 				chances: [2.0, 1.1],
 				energy_mod: 1.0,
 				water_mod: 0.5
             },
 			{
-                input: 'farmersdelight:tomato',
+                input: 'farmersdelight:tomato_seeds',
                 outputs: ['farmersdelight:tomato', 'farmersdelight:tomato_seeds'],
 				chances: [2.0, 1.1],
 				energy_mod: 1.0,
@@ -17,14 +17,14 @@ events.listen('recipes', (event) => {
             },
 			{
                 input: 'farmersdelight:onion',
-                outputs: ['simplefarming:onion'],
+                outputs: ['farmersdelight:onion'],
 				chances: [2.5],
 				energy_mod: 1.0,
 				water_mod: 1.0
             },
 			{
                 input: 'farmersdelight:rice_panicle',
-                outputs: ['simplefarming:rice_panicle'],
+                outputs: ['farmersdelight:rice_panicle'],
 				chances: [2.5],
 				energy_mod: 1.0,
 				water_mod: 1.5
