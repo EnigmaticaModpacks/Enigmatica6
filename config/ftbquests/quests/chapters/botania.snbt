@@ -1,0 +1,257 @@
+{
+	id: 1280,
+	filename: "botania",
+	order_index: 20,
+	title: "Botania",
+	icon: "botania:natura_pylon",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Botania",
+			x: 3.5d,
+			y: -0.5d,
+			shape: "gear",
+			description: [
+				"While nobody can really agree on what pigeon-hole to stuff Botania into, one thing is clear: It can do most anything. It is perhaps best described as a box of tools. None of the components do much on their own, but when strung together creatively by the player they become so much more. ",
+				"",
+				"Botania is an expansive mod, and so not everything will be covered here. Refer back to the Lexica Botania frequently for in depth information and interesting tips.",
+				"",
+				"~MuteTiefling"
+			],
+			id: 1281,
+			tasks: [{
+				id: 1282,
+				type: "checkmark",
+				icon: "botania:lexicon"
+			}],
+			rewards: [
+				{
+					id: 1283,
+					type: "item",
+					item: "botania:lexicon"
+				},
+				{
+					id: 1284,
+					type: "item",
+					item: "botania:pestle_and_mortar"
+				}
+			]
+		},
+		{
+			title: "Mystical Flowers",
+			icon: "botania:magenta_mystical_flower",
+			x: -2.0d,
+			y: 1.5d,
+			subtitle: "Unaturally Vibrant",
+			description: [
+				"Scattered throughout the world are flowers that seem preternaturally bright. Collect some to begin exploring the mysteries of floromancy.",
+				"",
+				"It is also possible to entice these flowers to grow by placing the petals on the ground and applying bone meal. Be careful harvesting the tall variants, as they're much less hearty than their smaller counterparts. "
+			],
+			dependencies: [I;1281],
+			id: 1285,
+			tasks: [{
+				id: 1287,
+				type: "item",
+				title: "Any botania:mystical_flowers",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "botania:mystical_flowers"
+					}
+				},
+				count: 16L
+			}],
+			rewards: [
+				{
+					id: 1288,
+					type: "item",
+					item: "botania:flower_bag"
+				},
+				{
+					id: 1293,
+					type: "item",
+					item: {
+						id: "minecraft:shears",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: 1.0d,
+			description: ["Having trouble finding some colors of Mystical Flower? A bit of Floral Fertilizer can sprout them in no time."],
+			dependencies: [I;1285],
+			id: 1289,
+			tasks: [{
+				id: 1290,
+				type: "item",
+				item: "botania:fertilizer"
+			}]
+		},
+		{
+			title: "Petal Apothecary",
+			icon: "botania:apothecary_default",
+			x: -2.0d,
+			y: 2.5d,
+			subtitle: "Maybe it's Nanites?",
+			description: ["Something strange occurs when Mystical Petals are combined with certain reagents and a seed. They seem to spontaneously unfold and reform, hijacking the seed and making an entirely new construct. "],
+			dependencies: [I;1285],
+			id: 1291,
+			tasks: [
+				{
+					id: 1292,
+					type: "item",
+					item: "botania:apothecary_default"
+				},
+				{
+					id: 1294,
+					type: "item",
+					item: "botania:pure_daisy"
+				}
+			]
+		},
+		{
+			title: "Livingwood & Livingrock",
+			x: -2.0d,
+			y: 3.5d,
+			subtitle: "Breathing New Life",
+			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials. Perhaps this essence can itself be exploited more directly?"],
+			dependencies: [I;1291],
+			id: 1295,
+			tasks: [
+				{
+					id: 1309,
+					type: "item",
+					item: "botania:livingwood",
+					count: 16L
+				},
+				{
+					id: 1310,
+					type: "item",
+					item: "botania:livingrock",
+					count: 16L
+				}
+			]
+		},
+		{
+			x: 2.0d,
+			y: 1.5d,
+			id: 1299,
+			tasks: [{
+				id: 1300,
+				type: "item",
+				item: "botania:runic_altar"
+			}]
+		},
+		{
+			x: 8.5d,
+			y: 1.5d,
+			id: 1301,
+			tasks: [{
+				id: 1302,
+				type: "item",
+				item: "botania:alfheim_portal"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 1.5d,
+			id: 1303,
+			tasks: [{
+				id: 1304,
+				type: "item",
+				item: "botania:terra_plate"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 5.0d,
+			description: [
+				"Livingrock forms an excellent receptacle for mana, keeping it safe and ready for use at a moment's notice. ",
+				"",
+				"Breaking the Mana Pool will cause all stored mana to be lost. Placing a Comparator against it will allow the volume to be read for automation purposes. "
+			],
+			dependencies: [I;1295],
+			id: 1305,
+			tasks: [{
+				id: 1306,
+				type: "item",
+				item: "botania:mana_pool"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 5.0d,
+			description: [
+				"This Livingwood construct makes an excellent conduit. ",
+				"",
+				"Mana Spreaders may be linked directly to Generating Flora to transmit Mana from the flower to a Mana Pool for storage. They can also be chained by linking one spreader to another and will automatically draw from an adjacent Mana Pool.",
+				"",
+				"Note that the closer they are to their destination, the faster they'll transfer mana as they won't fire another burst until the previous one has arrived at the destination. "
+			],
+			dependencies: [I;1295],
+			id: 1307,
+			tasks: [{
+				id: 1308,
+				type: "item",
+				item: "botania:mana_spreader"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 5.0d,
+			description: [
+				"Livingwood appears to have an affinity for channeling this mysterious essence from the earth. Craft a Wand of the Forest to direct it more precisely.",
+				"",
+				"The Wand of the Forest will be the tool of choice for linking Generating Flora, Mana Spreaders, and Mana Pools. Sneak + Right Click the source, then destination."
+			],
+			dependencies: [I;1295],
+			id: 1311,
+			tasks: [{
+				id: 1312,
+				type: "item",
+				item: {
+					id: "botania:twig_wand",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 6.5d,
+			subtitle: "It Was Always Burnin' Since the World Was Turnin'",
+			description: [
+				"It's a common trope in Fantasy that as soon as Man finds some new source of power, it is immediately exploited to the detriment of the Earth. Now you too can be part of that storied tradition!",
+				"",
+				"Place the Endoflame on grass or dirt to begin. The Mana Spreader should be placed somewhere nearby as well as a Mana Pool. Use the Wand of the Forest to link the flower to the Spreader, and the Spreader to the Pool.",
+				"",
+				"The Endoflame can use any furnace fuel and will only accept a new piece when the previous has finished. ",
+				"",
+				"A simple contraption to deliver fuel automatically can be built with an Open Crate, a Pressure Plate of some sort, and some redstone. Be wary, however, as Mana Spreaders are redstone sensitive and will turn off if they receive a signal. Consider making a master shut-off for when the mana pool is full."
+			],
+			dependencies: [I;
+				1305,
+				1307,
+				1311
+			],
+			id: 1313,
+			tasks: [{
+				id: 1314,
+				type: "item",
+				item: "botania:endoflame"
+			}],
+			rewards: [{
+				id: 1315,
+				type: "item",
+				item: "botania:open_crate"
+			}]
+		}
+	]
+}

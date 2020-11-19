@@ -1,19 +1,21 @@
 {
 	id: 929,
 	filename: "thermal_series",
-	order_index: 0,
+	order_index: 16,
 	title: "Thermal Series",
 	icon: "thermal:wrench",
 	default_quest_shape: "",
 	quests: [
 		{
 			x: 2.0d,
-			y: 2.0d,
+			y: 1.0d,
 			shape: "gear",
 			description: [
 				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept it's overal theme of slightly magical tech throughout. ",
 				"",
-				"The Thermalpedia provided goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. "
+				"The Thermalpedia provided goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. ",
+				"",
+				"~MuteTiefling"
 			],
 			id: 930,
 			tasks: [{
@@ -74,7 +76,13 @@
 					},
 					count: 16L
 				}
-			]
+			],
+			rewards: [{
+				id: 1260,
+				type: "item",
+				item: "powah:energy_cable_starter",
+				count: 8
+			}]
 		},
 		{
 			x: -0.5d,
@@ -94,12 +102,19 @@
 				type: "item",
 				item: "thermal:device_tree_extractor"
 			}],
-			rewards: [{
-				id: 1210,
-				type: "item",
-				item: "minecraft:acacia_sapling",
-				count: 4
-			}]
+			rewards: [
+				{
+					id: 1210,
+					type: "item",
+					item: "minecraft:acacia_sapling",
+					count: 4
+				},
+				{
+					id: 1264,
+					type: "loot",
+					table: 10
+				}
+			]
 		},
 		{
 			icon: "thermal:machine_refinery",
@@ -124,7 +139,12 @@
 					type: "item",
 					item: "thermal:tree_oil_bucket"
 				}
-			]
+			],
+			rewards: [{
+				id: 1263,
+				type: "loot",
+				table: 11
+			}]
 		},
 		{
 			x: 4.5d,
@@ -143,6 +163,11 @@
 				id: 1196,
 				type: "item",
 				item: "thermal:machine_pulverizer"
+			}],
+			rewards: [{
+				id: 1266,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -150,7 +175,9 @@
 			y: 4.0d,
 			subtitle: "Bootstrapping Technology",
 			description: [
-				"An ordinary Furnace will need a helping hand to produce advanced alloys. Invar has many useful properties, not least of which being the ability to withstand the heat used in a better furnace.",
+				"An ordinary Furnace will need a helping hand to produce advanced alloys. ",
+				"",
+				"Invar has many useful properties, not least of which being the ability to withstand the heat used in a better furnace.",
 				"",
 				"Pulverize some iron and nickel, combine it by hand, and smelt the result to progress."
 			],
@@ -160,6 +187,11 @@
 				id: 1198,
 				type: "item",
 				item: "emendatusenigmatica:invar_dust"
+			}],
+			rewards: [{
+				id: 1267,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
@@ -176,6 +208,11 @@
 				id: 1200,
 				type: "item",
 				item: "thermal:machine_smelter"
+			}],
+			rewards: [{
+				id: 1268,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -193,6 +230,12 @@
 				id: 1212,
 				type: "item",
 				item: "thermal:resin_bucket"
+			}],
+			rewards: [{
+				id: 1261,
+				type: "item",
+				item: "minecraft:sweet_berries",
+				count: 16
 			}]
 		},
 		{
@@ -211,6 +254,11 @@
 				id: 1216,
 				type: "item",
 				item: "thermal:dynamo_compression"
+			}],
+			rewards: [{
+				id: 1262,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -227,31 +275,70 @@
 				id: 1219,
 				type: "item",
 				item: "thermal:machine_furnace"
+			}],
+			rewards: [{
+				id: 1265,
+				type: "loot",
+				table: 10
 			}]
 		},
 		{
-			x: 7.0d,
-			y: 2.0d,
+			x: 4.0d,
+			y: 6.0d,
+			subtitle: "Bop It, Pull It, Twist It",
+			description: [
+				"Precision machining typically means greater efficiencies, either in terms of time spent doing a task or materials used. The MultiServo Press is one such machine that makes pressing plates faster and gears cheaper, as well as opening the door to other processing techniques.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1199],
 			id: 1220,
 			tasks: [{
 				id: 1221,
 				type: "item",
 				item: "thermal:machine_press"
+			}],
+			rewards: [{
+				id: 1270,
+				type: "item",
+				item: "thermal:press_gear_die"
 			}]
 		},
 		{
-			x: 7.5d,
-			y: 3.0d,
+			x: 5.5d,
+			y: 6.0d,
+			subtitle: "Between the Wasteland and Sky...",
+			description: [
+				"Nature does an excellent job of growing plants. It's been at it for a while, after all. But when space is at a premium a Phytogenic Insolator is an excellent alternative to the natural approach. ",
+				"",
+				"Water and energy are required. Fertilizer is recommended, though optional. ",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;1199],
 			id: 1222,
 			tasks: [{
 				id: 1223,
 				type: "item",
 				item: "thermal:machine_insolator"
+			}],
+			rewards: [{
+				id: 1269,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
-			x: 8.0d,
-			y: 4.0d,
+			x: 2.0d,
+			y: 2.5d,
+			description: [
+				"A precision machine that can quickly assemble components, simplifying automation. It features an internal fluid tank as well which can automatically provide liquids to crafts that need them. ",
+				"",
+				"Set a recipe, press the green check to validate it, and then supply the ingredients.",
+				"",
+				"Check the Thermalpedia for information on relevant upgrades."
+			],
+			dependencies: [I;930],
 			id: 1224,
 			tasks: [{
 				id: 1225,
@@ -260,33 +347,182 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: 2.0d,
+			x: 2.5d,
+			y: 9.0d,
+			description: ["A handheld 'explosive' that releases the charged energy of elemental Blitz, causing lightning to strike spontaneously."],
+			dependencies: [I;1245],
 			id: 1226,
 			tasks: [{
-				id: 1227,
+				id: 1244,
 				type: "item",
-				item: "thermal:blitz_powder"
+				item: "thermal:lightning_grenade"
+			}],
+			rewards: [{
+				id: 1277,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
-			x: -3.5d,
-			y: 3.0d,
+			x: 1.5d,
+			y: 9.0d,
+			description: ["A handheld 'explosive' that releases the chilling power of elemental Blizz, freezing water and blanketing the area in snow."],
+			dependencies: [I;1245],
 			id: 1228,
 			tasks: [{
-				id: 1229,
+				id: 1243,
 				type: "item",
-				item: "thermal:blizz_powder"
+				item: "thermal:ice_grenade"
+			}],
+			rewards: [{
+				id: 1278,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
-			x: -4.0d,
-			y: 4.0d,
+			x: 3.5d,
+			y: 9.0d,
+			description: ["A handheld 'explosive' that releases the latent power of elemental Basalz, causing the earth to shift and crack."],
+			dependencies: [I;1245],
 			id: 1230,
 			tasks: [{
-				id: 1231,
+				id: 1242,
 				type: "item",
-				item: "thermal:basalz_powder"
+				item: "thermal:earth_grenade"
+			}],
+			rewards: [{
+				id: 1276,
+				type: "loot",
+				table: 11
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 9.0d,
+			description: ["A handheld 'explosive' that releases the smoldering energy of elemental Blaze, lighting the surroundings on fire."],
+			dependencies: [I;1245],
+			dependency_requirement: "one_started",
+			id: 1239,
+			tasks: [{
+				id: 1241,
+				type: "item",
+				item: "thermal:fire_grenade"
+			}],
+			rewards: [{
+				id: 1279,
+				type: "loot",
+				table: 11
+			}]
+		},
+		{
+			title: "Exotic Elements",
+			x: 2.0d,
+			y: 8.0d,
+			subtitle: "Our Powers Combined",
+			description: ["Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."],
+			dependencies: [I;931],
+			id: 1245,
+			tasks: [
+				{
+					id: 1246,
+					type: "item",
+					item: "minecraft:blaze_rod"
+				},
+				{
+					id: 1247,
+					type: "item",
+					item: "thermal:blitz_rod"
+				},
+				{
+					id: 1248,
+					type: "item",
+					item: "thermal:blizz_rod"
+				},
+				{
+					id: 1249,
+					type: "item",
+					item: "thermal:basalz_rod"
+				}
+			],
+			rewards: [{
+				id: 1275,
+				type: "loot",
+				table: 11
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 5.5d,
+			description: ["One of several augments useful for getting more out of your tools and machines. "],
+			dependencies: [I;
+				1200,
+				1190
+			],
+			id: 1250,
+			tasks: [{
+				id: 1251,
+				type: "item",
+				item: "thermal:fluid_tank_augment"
+			}],
+			rewards: [{
+				id: 1274,
+				type: "loot",
+				table: 10
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 5.5d,
+			description: ["One of several augments useful for getting more out of your tools and machines. "],
+			dependencies: [I;931],
+			id: 1252,
+			tasks: [{
+				id: 1253,
+				type: "item",
+				item: "thermal:rf_coil_augment"
+			}],
+			rewards: [{
+				id: 1271,
+				type: "loot",
+				table: 10
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 5.0d,
+			description: ["Integral Components generally upgrade all stats of the machine they're installed in. More advanced versions will require more exotic materials. "],
+			dependencies: [I;1200],
+			id: 1254,
+			tasks: [{
+				id: 1255,
+				type: "item",
+				item: "thermal:upgrade_augment_1"
+			}],
+			rewards: [{
+				id: 1272,
+				type: "loot",
+				table: 10
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 6.0d,
+			description: ["One of several augments useful for getting more out of your dynamos. "],
+			dependencies: [I;
+				1221,
+				1200
+			],
+			id: 1256,
+			tasks: [{
+				id: 1257,
+				type: "item",
+				item: "thermal:dynamo_output_augment"
+			}],
+			rewards: [{
+				id: 1273,
+				type: "loot",
+				table: 10
 			}]
 		}
 	]
