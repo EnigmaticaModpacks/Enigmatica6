@@ -131,6 +131,7 @@
 		{
 			x: 1.5d,
 			y: -1.5d,
+			dependencies: [I;845],
 			id: 916,
 			tasks: [
 				{
@@ -148,6 +149,9 @@
 		{
 			x: 3.0d,
 			y: -1.5d,
+			shape: "diamond",
+			dependencies: [I;916],
+			optional: true,
 			id: 919,
 			tasks: [{
 				id: 920,
@@ -157,7 +161,10 @@
 		},
 		{
 			x: 3.0d,
-			y: 0.0d,
+			y: -3.0d,
+			shape: "diamond",
+			dependencies: [I;916],
+			optional: true,
 			id: 921,
 			tasks: [{
 				id: 922,
@@ -174,6 +181,7 @@
 		{
 			x: -1.5d,
 			y: 0.0d,
+			dependencies: [I;842],
 			id: 923,
 			tasks: [{
 				id: 924,
@@ -184,6 +192,10 @@
 		{
 			x: -1.5d,
 			y: -1.5d,
+			dependencies: [I;
+				923,
+				845
+			],
 			id: 925,
 			tasks: [{
 				id: 926,
@@ -194,12 +206,112 @@
 		{
 			x: 1.5d,
 			y: -3.0d,
+			dependencies: [I;845],
 			id: 927,
 			tasks: [{
 				id: 928,
 				type: "item",
 				item: "rftoolsutility:crafter1"
 			}]
+		},
+		{
+			x: 0.0d,
+			y: -3.0d,
+			dependencies: [I;845],
+			id: 1371,
+			tasks: [{
+				id: 1372,
+				type: "item",
+				item: "rftoolsbuilder:builder"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -4.5d,
+			shape: "diamond",
+			dependencies: [I;1371],
+			optional: true,
+			id: 1373,
+			tasks: [{
+				id: 1374,
+				type: "item",
+				item: "rftoolsbuilder:shape_card_quarry"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.5d,
+			shape: "diamond",
+			dependencies: [I;1371],
+			optional: true,
+			id: 1375,
+			tasks: [{
+				id: 1376,
+				type: "item",
+				item: "rftoolsbuilder:shape_card_def"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -4.5d,
+			shape: "diamond",
+			dependencies: [I;1371],
+			optional: true,
+			id: 1377,
+			tasks: [{
+				id: 1378,
+				type: "item",
+				item: "rftoolsbuilder:shape_card_void"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.0d,
+			dependencies: [I;845],
+			id: 1379,
+			tasks: [{
+				id: 1380,
+				type: "item",
+				item: "rftoolsstorage:modular_storage"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -3.0d,
+			id: 1381,
+			tasks: [{
+				id: 1382,
+				type: "item",
+				item: "rftoolsstorage:storage_module0"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 0.0d,
+			dependencies: [I;845],
+			id: 1383,
+			tasks: [
+				{
+					id: 1384,
+					type: "item",
+					item: "rftoolscontrol:processor"
+				},
+				{
+					id: 1387,
+					type: "item",
+					item: "rftoolscontrol:programmer"
+				},
+				{
+					id: 1388,
+					type: "item",
+					item: "rftoolscontrol:workbench"
+				},
+				{
+					id: 1389,
+					type: "item",
+					item: "rftoolscontrol:program_card"
+				}
+			]
 		}
 	]
 }

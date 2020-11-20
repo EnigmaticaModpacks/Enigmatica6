@@ -8,7 +8,7 @@
 	quests: [
 		{
 			title: "Botania",
-			x: 3.5d,
+			x: 4.5d,
 			y: -0.5d,
 			shape: "gear",
 			description: [
@@ -40,7 +40,7 @@
 		{
 			title: "Mystical Flowers",
 			icon: "botania:magenta_mystical_flower",
-			x: -2.0d,
+			x: -3.0d,
 			y: 1.5d,
 			subtitle: "Unaturally Vibrant",
 			description: [
@@ -83,7 +83,7 @@
 			]
 		},
 		{
-			x: -3.0d,
+			x: -4.0d,
 			y: 1.0d,
 			description: ["Having trouble finding some colors of Mystical Flower? A bit of Floral Fertilizer can sprout them in no time."],
 			dependencies: [I;1285],
@@ -97,7 +97,7 @@
 		{
 			title: "Petal Apothecary",
 			icon: "botania:apothecary_default",
-			x: -2.0d,
+			x: -3.0d,
 			y: 2.5d,
 			subtitle: "Maybe it's Nanites?",
 			description: ["Something strange occurs when Mystical Petals are combined with certain reagents and a seed. They seem to spontaneously unfold and reform, hijacking the seed and making an entirely new construct. "],
@@ -118,7 +118,7 @@
 		},
 		{
 			title: "Livingwood & Livingrock",
-			x: -2.0d,
+			x: -3.0d,
 			y: 3.5d,
 			subtitle: "Breathing New Life",
 			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials. Perhaps this essence can itself be exploited more directly?"],
@@ -142,6 +142,17 @@
 		{
 			x: 2.0d,
 			y: 1.5d,
+			subtitle: "Programmed Response",
+			description: [
+				"If the latent energies in Mystical Petals are enough to cause spontaneous re-assembly in the Petal Apothecary, what would happen in the presence of a more focused field?",
+				"",
+				"Well, the Petals wilt. So there's that. What about using some sturdier materials? Livingrock's ability to contain mana might be exploited to encode specific patterns to pass new information on to the Mystical Petals in the Apothecary. ",
+				"",
+				"Drop items on the Runic Altar to begin crafting. Mana must be supplied by linking a Mana Spreader to the Altar and crafting progresses faster if mana is supplied more rapidly. Right click the altar with a Wand of the Forest to finalize the operation. ",
+				"",
+				"A Comparator can be used to read the 'state' of the Runic Altar, creating a helpful control for automation. Refer to the Lexica Botania for more details. "
+			],
+			dependencies: [I;1281],
 			id: 1299,
 			tasks: [{
 				id: 1300,
@@ -150,8 +161,8 @@
 			}]
 		},
 		{
-			x: 8.5d,
-			y: 1.5d,
+			x: 7.0d,
+			y: 4.5d,
 			id: 1301,
 			tasks: [{
 				id: 1302,
@@ -160,8 +171,8 @@
 			}]
 		},
 		{
-			x: 5.0d,
-			y: 1.5d,
+			x: 7.0d,
+			y: 3.0d,
 			id: 1303,
 			tasks: [{
 				id: 1304,
@@ -170,7 +181,7 @@
 			}]
 		},
 		{
-			x: -3.0d,
+			x: -4.0d,
 			y: 5.0d,
 			description: [
 				"Livingrock forms an excellent receptacle for mana, keeping it safe and ready for use at a moment's notice. ",
@@ -186,7 +197,7 @@
 			}]
 		},
 		{
-			x: -1.0d,
+			x: -2.0d,
 			y: 5.0d,
 			description: [
 				"This Livingwood construct makes an excellent conduit. ",
@@ -204,7 +215,7 @@
 			}]
 		},
 		{
-			x: -2.0d,
+			x: -3.0d,
 			y: 5.0d,
 			description: [
 				"Livingwood appears to have an affinity for channeling this mysterious essence from the earth. Craft a Wand of the Forest to direct it more precisely.",
@@ -224,7 +235,7 @@
 			}]
 		},
 		{
-			x: -2.0d,
+			x: -3.0d,
 			y: 6.5d,
 			subtitle: "It Was Always Burnin' Since the World Was Turnin'",
 			description: [
@@ -251,6 +262,365 @@
 				id: 1315,
 				type: "item",
 				item: "botania:open_crate"
+			}]
+		},
+		{
+			title: "Guardian of Gaia",
+			icon: "botania:life_essence",
+			x: 10.5d,
+			y: 5.5d,
+			subtitle: "How to Lose Friends and Alienate People",
+			description: [
+				"The Earth bleeds. One might even hear her weep, if not for the sounds of the machinations draining the life from her.",
+				"",
+				"Summon forth the earth's final defenses and silence her cries, once and for all. "
+			],
+			id: 1316,
+			tasks: [{
+				id: 1319,
+				type: "item",
+				item: "botania:life_essence"
+			}]
+		},
+		{
+			title: "Gaia Arena",
+			icon: "botania:gaia_pylon",
+			x: 10.5d,
+			y: 4.0d,
+			description: [""],
+			id: 1320,
+			tasks: [
+				{
+					id: 1321,
+					type: "item",
+					item: "botania:gaia_pylon",
+					count: 4L
+				},
+				{
+					id: 1324,
+					type: "item",
+					item: "minecraft:beacon"
+				}
+			]
+		},
+		{
+			x: 10.5d,
+			y: 7.0d,
+			subtitle: "Twist the Blade",
+			description: [
+				"It would seem that for all of your efforts, you still lack the power to kill Gaia's Guardian for good, let alone Gaia herself. It's time to dig in and double down. ",
+				"",
+				"Summon and defeat the Guardian's second incarnation. "
+			],
+			id: 1322,
+			tasks: [{
+				id: 1323,
+				type: "item",
+				item: "botania:dice"
+			}]
+		},
+		{
+			title: "Elemental Runes",
+			x: 2.0d,
+			y: 3.0d,
+			subtitle: "Like a Punch Card",
+			description: [
+				"Livingstone makes an excellent substrate for encoding information while Manasteel provides a portable vessel for mana. Supply a few other items to set an affinity and bind it all together with Mana powder. ",
+				"",
+				"Now we have a useful method for passing new instructions to the Petal Apothecary without overloading the sensitive petals or to pass more refined instruction sets to the Altar itself. These can almost certainly be put to use in hand held tools, as well. "
+			],
+			dependencies: [I;1299],
+			id: 1325,
+			tasks: [
+				{
+					id: 1326,
+					type: "item",
+					item: "botania:rune_water"
+				},
+				{
+					id: 1327,
+					type: "item",
+					item: "botania:rune_fire"
+				},
+				{
+					id: 1328,
+					type: "item",
+					item: "botania:rune_earth"
+				},
+				{
+					id: 1329,
+					type: "item",
+					item: "botania:rune_air"
+				},
+				{
+					id: 1330,
+					type: "item",
+					item: "botania:rune_mana"
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: 7.0d,
+			subtitle: "Bose-Enderman Condensate",
+			description: ["As if Ender Pearls weren't already mind bending enough, when soaked in Mana they seem to have a warping effect on Mana in the immediate locale, causing it to behave unexpectedly."],
+			dependencies: [I;1313],
+			id: 1331,
+			tasks: [{
+				id: 1332,
+				type: "item",
+				item: "botania:mana_pearl"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 7.0d,
+			subtitle: "Superradiant Scattering",
+			description: ["The facets in this gem seem to be amplifying the energies bound within it. Doubtless, this material would serve well as a focus for further exploitation."],
+			dependencies: [I;1313],
+			id: 1333,
+			tasks: [{
+				id: 1334,
+				type: "item",
+				item: "botania:mana_diamond"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 9.0d,
+			subtitle: "Everlasting",
+			description: ["When exposed even briefly to a pool of mana, iron transforms into a sort of mana accumulator, storing up more mana for later use and even spontaneously re-organizing after rapid forceful impact events. While this seems like an obvious material to use for a tool or armor, perhaps other more delicate uses can be found as well."],
+			dependencies: [I;1313],
+			id: 1335,
+			tasks: [{
+				id: 1336,
+				type: "item",
+				item: "botania:manasteel_ingot"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 8.0d,
+			subtitle: "Is It... Squirming?",
+			description: ["An ordinary piece of string seems a poor choice for the wild nature of mana. It seems to be barely holding itself together. "],
+			dependencies: [I;1313],
+			id: 1337,
+			tasks: [{
+				id: 1338,
+				type: "item",
+				item: "botania:mana_string"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 8.0d,
+			subtitle: "Crystal Binding Compound",
+			description: ["It would seem that most any powder, when bathed in condensed mana, becomes a powerful bonding agent. This should prove useful"],
+			dependencies: [I;1313],
+			id: 1339,
+			tasks: [{
+				id: 1340,
+				type: "item",
+				item: "botania:mana_powder"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 8.0d,
+			description: [
+				"A Band of Mana combines several of the materials we've discovered so far into a useful object; one that can act as a portable mana pool. Making one will open up new possibilities as mana exploitation just got peronal. ",
+				"",
+				"While primarily used for powering certain hand held devices, Bands of Mana are also an excellent means of long distance mana transportation as they charge and discharge rapidly."
+			],
+			dependencies: [I;1336],
+			id: 1341,
+			tasks: [{
+				id: 1343,
+				type: "item",
+				item: {
+					id: "botania:mana_ring",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 7.5d,
+			description: [
+				"In a process similar to the Runic Altar's spontaneous re-assembly, a traditional brewing stand can be enhanced to recreate potent potables with the addition of a Rune of Mana. ",
+				"",
+				"Drop the required reagents on the Brewery and point a Mana Spreader at it to begin. ",
+				"",
+				"Brews are potions with multiple uses and Incense Sticks apply their effects in a wide area. "
+			],
+			dependencies: [I;1325],
+			id: 1344,
+			tasks: [{
+				id: 1345,
+				type: "item",
+				item: "botania:brewery"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 6.5d,
+			description: ["For reasons yet unknown, globules of impure mana appear briefly after a life has been terminated. A Rosa Arcana is capable of absorbing and purifying these globules for further use."],
+			dependencies: [I;1325],
+			id: 1346,
+			tasks: [{
+				id: 1347,
+				type: "item",
+				item: "botania:rosa_arcana"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 6.0d,
+			subtitle: "Don't Look Down",
+			description: ["A gust of wind rushes forth, wrapping the bearer in a protective envelope that pulls them into the sky and cushions their eventual decent. "],
+			dependencies: [I;1325],
+			id: 1348,
+			tasks: [{
+				id: 1349,
+				type: "item",
+				item: {
+					id: "botania:tornado_rod",
+					Count: true,
+					tag: {}
+				}
+			}],
+			rewards: [{
+				id: 1366,
+				type: "item",
+				item: "botania:avatar"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 5.0d,
+			subtitle: "Spooky Action at a Distance",
+			description: [
+				"Localized eddie currents of wind circulate around the curious Hopperhock, drawing nearby items towards it and depositing them in adjacent inventories. Interestingly they appear to be somewhat 'intelligent' and will respect signals passed to them to limit their behavior. ",
+				"",
+				"Place an item in an item frame on the chest to control what gets picked up. The Hopperhock will distinguish between a full and empty Mana Tablet or Band of Mana. The flower can be disabled entirely by providing a redstone signal. "
+			],
+			dependencies: [I;1325],
+			id: 1350,
+			tasks: [{
+				id: 1351,
+				type: "item",
+				item: "botania:hopperhock"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 6.0d,
+			description: ["A rumble can be heard when activating this device as the earth shifts, forcing dirt to push up to fill the area at the point of contact. "],
+			dependencies: [I;1325],
+			id: 1352,
+			tasks: [{
+				id: 1353,
+				type: "item",
+				item: "botania:dirt_rod"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 5.0d,
+			subtitle: "Exquisite Balance",
+			description: ["Thought it functions similarly to the Pure Daisy, the Clayconia requires far more mana than it can drain from the earth on its own. A source of mana is required nearby to power it's nanocrystaline-recombination of sand into clay.."],
+			dependencies: [I;1325],
+			id: 1354,
+			tasks: [{
+				id: 1355,
+				type: "item",
+				item: "botania:clayconia"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 4.5d,
+			description: ["The ability to draw forth water from the earth at a moment's notice is handy indeed."],
+			dependencies: [I;1325],
+			id: 1356,
+			tasks: [{
+				id: 1357,
+				type: "item",
+				item: "botania:water_rod"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 4.5d,
+			description: ["Combining water from deep aquifers with liquid hot magma to create and draw forth raw stone from the earth."],
+			dependencies: [I;1325],
+			id: 1358,
+			tasks: [{
+				id: 1359,
+				type: "item",
+				item: "botania:cobble_rod"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 3.5d,
+			subtitle: "Life uh... Finds a Way",
+			description: [
+				"Livestock can be ... obstinate at times, only willingly eating if fed by hand. Worse, only breeding when they've had a snack. It's a wonder they've lasted this long.",
+				"",
+				"The Pollidisiac addresses this issue by driving the beasts to at least feed themselves. "
+			],
+			dependencies: [I;1325],
+			id: 1360,
+			tasks: [{
+				id: 1368,
+				type: "item",
+				item: "botania:pollidisiac"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 3.5d,
+			description: [
+				"One could be excused for thinking Slimes are somehow alive, but upon closer inspection they appear to be nothing more than the congealed remnants left behind when somehting truly alive dies. Sufficient damage will release the same impure globules that could be converted to mana, but a great deal is lost in this way. ",
+				"",
+				"The Narslimmus will absorb and process the entire Slime instead, breaking down it's integral structure and releasing far more mana than could be obtained through more primitive methods."
+			],
+			dependencies: [I;1325],
+			id: 1362,
+			tasks: [{
+				id: 1363,
+				type: "item",
+				item: "botania:narslimmus"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 9.0d,
+			description: ["The mana infused in this glass provides a brilliant source of light. Peering through it reveals a hidden world to you."],
+			dependencies: [I;1313],
+			id: 1364,
+			tasks: [{
+				id: 1365,
+				type: "item",
+				item: "botania:mana_glass"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 1.5d,
+			description: [
+				"While the Livingwood casing of Mana Spreaders appear to make them very efficient at long distance channeling, they're not always the quickest method. By removing the casing, a Spark can be formed which lacks the directionality of a Spreader but makes up for it with the shear volume it can handle. ",
+				"",
+				"Mana will not flow through a Spark conduit on its own. It needs to be enticed."
+			],
+			dependencies: [I;1281],
+			id: 1369,
+			tasks: [{
+				id: 1370,
+				type: "item",
+				item: "botania:spark"
 			}]
 		}
 	]
