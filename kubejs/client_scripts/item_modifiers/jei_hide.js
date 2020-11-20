@@ -1,3 +1,5 @@
 events.listen('jei.hide.items', (event) => {
-    event.hide('quark:pipe');
+    disabledItems.forEach((item) => {
+        event.hide(item);
+    });
 });

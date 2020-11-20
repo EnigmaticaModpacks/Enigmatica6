@@ -1,8 +1,8 @@
 ### Enigmatica 6 v0.3.0
 
-_Using Forge-1.16.4-35.0.9_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_
+_Using Forge-1.16.4-35.0.18_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_
 
-Updated Minecraft version from 1.16.1 to 1.16.4.
+Updated Minecraft version from 1.16.1 to 1.16.4
 
 **We recommend that you start a new world when updating from 0.2.x to 0.3.x**
 
@@ -12,10 +12,16 @@ _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely 
 
 -
 
+**Additions**
+
+- QUESTS!!!1
+- Tetra: Added Tetra trades to the Armorer Villager
+- Tetra: Tons of new materials
+- Worldgen: Enabled the Biomes O' Plenty additions to the Nether
+- 
+
 **Changes**
 
--   Worldgen: Enabled the Biomes O' Plenty additions to the Nether
--   Tetra: Added Tetra trades to the Armorer Villager
 -   Ding: The "Ding" sound is now played when joining a server
 -   Quark: Disabled Vertical Slabs, since BlockCarpentry has those covered
 -   Worldgen: Increased Emerald Ore spawn height

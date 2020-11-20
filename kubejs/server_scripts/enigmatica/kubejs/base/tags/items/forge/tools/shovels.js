@@ -1,15 +1,11 @@
 events.listen('item.tags', function (event) {
     var items = [
+        'aiotbotania:alfsteel_shovel',
+        'aiotbotania:terra_shovel',
         'aquaculture:neptunium_shovel',
         'botania:elementium_shovel',
         'botania:manasteel_shovel',
         'byg:pendorite_shovel',
-        'good_nights_sleep:candy_shovel',
-        'good_nights_sleep:necrum_shovel',
-        'good_nights_sleep:negatite_shovel',
-        'good_nights_sleep:positite_shovel',
-        'good_nights_sleep:rainbow_shovel',
-        'good_nights_sleep:zitrite_shovel',
         'immersiveengineering:shovel_steel',
         'mekanismtools:bronze_shovel',
         'mekanismtools:lapis_lazuli_shovel',
@@ -46,6 +42,6 @@ events.listen('item.tags', function (event) {
         'vanillaexcavators:stone_excavator',
         'vanillaexcavators:wood_excavator'
     ];
-	event.get('forge:tools').add(items);
-	event.get('forge:tools/shovel').add(items);
+    event.get('forge:tools').add(items);
+    event.get('forge:tools/shovel').add(items);
 });

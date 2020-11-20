@@ -8,8 +8,8 @@
 	quests: [
 		{
 			icon: "pneumaticcraft:ingot_iron_compressed",
-			x: -6.5d,
-			y: -15.5d,
+			x: -8.5d,
+			y: -16.0d,
 			shape: "gear",
 			description: [
 				"PneumaticCraft: Repressurized is all about logistics, automation, and generally blowing things up for profit. Mastering pressurized air and heat will be the beginning of your journey. ",
@@ -52,7 +52,7 @@
 		{
 			title: "Ethically Sourced",
 			icon: "pneumaticcraft:pressure_chamber_wall",
-			x: -13.0d,
+			x: -16.5d,
 			y: -14.5d,
 			shape: "rsquare",
 			description: [
@@ -63,7 +63,6 @@
 				"Note: Take caution when building your Pressure Chamber and try to keep the structure within a single chunk. F3+G will display chunk boundaries."
 			],
 			dependencies: [I;175],
-			size: 1.25d,
 			id: 179,
 			tasks: [
 				{
@@ -92,8 +91,8 @@
 		},
 		{
 			title: "Air Compressor",
-			icon: "pneumaticcraft:pressure_gauge_module",
-			x: -13.0d,
+			icon: "pneumaticcraft:air_compressor",
+			x: -16.5d,
 			y: -13.0d,
 			subtitle: "Under Pressure",
 			description: [
@@ -137,7 +136,7 @@
 		},
 		{
 			title: "Security Upgrades",
-			x: -14.0d,
+			x: -17.5d,
 			y: -12.5d,
 			subtitle: "Cautiously Optimistic",
 			description: ["Even the best laid plans can be brought to ruin by unexpected events. Install security upgrades in your compressor and pressure chamber to prevent rapid unscheduled disassembly."],
@@ -156,7 +155,7 @@
 			}]
 		},
 		{
-			x: -12.0d,
+			x: -15.5d,
 			y: -12.5d,
 			subtitle: "A Cleaner Burn",
 			description: [
@@ -178,11 +177,11 @@
 			}]
 		},
 		{
-			x: -12.0d,
-			y: -11.5d,
+			x: 0.0d,
+			y: -11.0d,
 			subtitle: "The Night is Dark...",
 			description: ["Despite its name, the Kerosene Lamp is capable of using all of the same fuels as the Liquid Compressor and can light an area up to 30 blocks in radius. Perfect for keeping the terrors at bay. Try using a few to safely light up your base."],
-			dependencies: [I;199],
+			dependencies: [I;234],
 			id: 202,
 			tasks: [{
 				id: 203,
@@ -198,13 +197,12 @@
 		{
 			title: "-173 Fahrenheit or Celsius?",
 			icon: "minecraft:packed_ice",
-			x: -9.0d,
+			x: -12.5d,
 			y: -13.5d,
 			shape: "rsquare",
 			subtitle: "First one, then the other",
 			description: ["Where pressurized air is your primary power supply, heat is a secondary but just as vital mechanic. Advanced Compressors and other machines rely on either heating them up or cooling them down to run properly."],
 			dependencies: [I;175],
-			size: 1.25d,
 			id: 204,
 			tasks: [{
 				id: 205,
@@ -224,7 +222,7 @@
 			}]
 		},
 		{
-			x: -9.0d,
+			x: -12.5d,
 			y: -12.0d,
 			subtitle: "Whirling Dervishes",
 			description: ["Built on the principle of swirling high pressure air in a special chamber to create a temperature differential, the Vortex Tube allows you to finely control the amount of heating or cooling it does by controlling the pressure."],
@@ -243,7 +241,7 @@
 		},
 		{
 			title: "Heat Pipe",
-			x: -9.0d,
+			x: -12.5d,
 			y: -11.0d,
 			subtitle: "The Cold Never Bothered Me Anyway",
 			description: [
@@ -267,7 +265,7 @@
 			}]
 		},
 		{
-			x: -10.0d,
+			x: -13.5d,
 			y: -12.5d,
 			description: [
 				"You may have noted by now that the Vortex Tube uses a lot of air and does not respond to redstone. In order to turn it off, the air supply must be cut. A Regulator Tube Module allows you to do just that.",
@@ -288,7 +286,7 @@
 			}]
 		},
 		{
-			x: -10.0d,
+			x: -13.5d,
 			y: -10.5d,
 			subtitle: "Freeze Frame",
 			description: ["The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items."],
@@ -306,7 +304,7 @@
 			}]
 		},
 		{
-			x: -9.0d,
+			x: -12.5d,
 			y: -10.0d,
 			subtitle: "Under the Radar",
 			description: [
@@ -342,7 +340,6 @@
 			subtitle: "Crude and Un-Cultured",
 			description: ["Go scoop up a bucket of oil like some filthy mongrel. You’ll find it commonly above ground and it’s easily spotted by watching your minimap."],
 			dependencies: [I;175],
-			size: 1.25d,
 			id: 224,
 			tasks: [{
 				id: 225,
@@ -785,7 +782,6 @@
 				"When used over a pressure tube network, it allows for instantaneous movement of large amounts of items and fluids through the same line simultaneously."
 			],
 			dependencies: [I;175],
-			size: 1.25d,
 			id: 285,
 			tasks: [{
 				id: 286,
@@ -1068,18 +1064,17 @@
 		},
 		{
 			title: "Plastic Sheets",
-			x: -13.0d,
-			y: -10.0d,
+			x: -8.5d,
+			y: -13.5d,
 			shape: "rsquare",
 			subtitle: "You Can Touch, You Can Play",
 			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"],
-			hide_dependency_lines: true,
 			dependencies: [I;
-				189,
-				244,
-				217
+				191,
+				245,
+				218,
+				175
 			],
-			size: 1.25d,
 			id: 325,
 			tasks: [{
 				id: 326,
@@ -1096,8 +1091,8 @@
 		},
 		{
 			title: "Prime Delivery",
-			x: -13.0d,
-			y: -8.5d,
+			x: -8.5d,
+			y: -12.0d,
 			description: ["The pinnacle of stay-at-home shopping. Click a button and your order is there before you know it. "],
 			dependencies: [I;325],
 			id: 328,
@@ -1113,8 +1108,8 @@
 			}]
 		},
 		{
-			x: -13.0d,
-			y: -7.5d,
+			x: -8.5d,
+			y: -11.0d,
 			subtitle: "Burning It In",
 			description: ["Always available from Amadron, any time, any day. But your local Pressure Mechanic commonly carries them as an initial trade as well…"],
 			dependencies: [I;328],
@@ -1131,8 +1126,8 @@
 			}]
 		},
 		{
-			x: -13.0d,
-			y: -6.5d,
+			x: -9.0d,
+			y: -10.0d,
 			subtitle: "Brighter than the Sun",
 			description: [
 				"Used to prepare Empty PCBs for etching. This can be a slow process without speed upgrades… Consider setting a threshold around 60-70% to have a decent chance of etching while waiting less. Automating this process is highly recommended.",
@@ -1153,12 +1148,13 @@
 			}]
 		},
 		{
-			title: "A Caustic Solution",
+			title: "Etching Tank",
 			icon: "pneumaticcraft:etching_tank",
-			x: -12.0d,
-			y: -6.5d,
+			x: -9.5d,
+			y: -9.0d,
+			subtitle: "A Caustic Solution",
 			description: [
-				"The next step of creating Circuit Boards is to etch them in this tank. It can hold and simultaneously process as many as 25 Empty PCBs. The acid is only consumed if heat is applied while etching a board.",
+				"The next step of creating Circuit Boards is to etch them in this tank, which can hold and simultaneously process as many as 25 Empty PCBs. The acid is only consumed if heat is applied while etching a board.",
 				"Doing so significantly speeds up the etching process, however, and a single bucket will last for many PCBs."
 			],
 			dependencies: [I;334],
@@ -1184,8 +1180,8 @@
 		{
 			title: "Assembly Table",
 			icon: "pneumaticcraft:assembly_platform",
-			x: -13.0d,
-			y: -4.5d,
+			x: -8.0d,
+			y: -6.5d,
 			subtitle: "Some Assembly Required",
 			description: [
 				"The Assembly Table provides a simpler way of making circuit boards and provides access to other advanced recipes.",
@@ -1238,8 +1234,8 @@
 			}]
 		},
 		{
-			x: -11.5d,
-			y: -5.5d,
+			x: -10.0d,
+			y: -8.0d,
 			subtitle: "What Do You Do With a Bad Circuit?",
 			description: ["Ground it."],
 			dependencies: [I;337],
@@ -1256,8 +1252,8 @@
 			}]
 		},
 		{
-			x: -12.5d,
-			y: -5.5d,
+			x: -10.0d,
+			y: -7.0d,
 			subtitle: "Short Circuit",
 			description: ["Did you try stretching it?"],
 			dependencies: [I;350],
@@ -1283,8 +1279,8 @@
 			]
 		},
 		{
-			x: -13.5d,
-			y: -5.5d,
+			x: -9.0d,
+			y: -6.5d,
 			subtitle: "Who Investigates Electronic Crimes?",
 			description: ["Sherlok Ohms"],
 			dependencies: [I;352],
@@ -1302,8 +1298,8 @@
 		},
 		{
 			title: "Assembly Program",
-			x: -12.0d,
-			y: -4.5d,
+			x: -7.5d,
+			y: -7.5d,
 			subtitle: "Two Birds with One Stone",
 			description: [
 				"Insert it into the Assembly Controller and provide air to get it started. Speed upgrades are highly recommended.",
@@ -1345,6 +1341,136 @@
 				id: 365,
 				type: "item",
 				item: "pneumaticcraft:medium_tank"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -8.5d,
+			dependencies: [I;360],
+			id: 1045,
+			tasks: [{
+				id: 1046,
+				type: "item",
+				item: "pneumaticcraft:advanced_liquid_compressor"
+			}]
+		},
+		{
+			x: -16.5d,
+			y: -11.5d,
+			subtitle: "Full Reverse!",
+			description: [
+				"Keeping things under pressure is only one side of the coin. Creating a vacuum can be very beneficial as well.",
+				"",
+				"Tip: A Pressure Chamber in Vacuum can be used to extract enchants from items."
+			],
+			dependencies: [I;189],
+			id: 1047,
+			tasks: [{
+				id: 1048,
+				type: "item",
+				item: "pneumaticcraft:vacuum_pump"
+			}],
+			rewards: [{
+				id: 1059,
+				type: "item",
+				item: "pneumaticcraft:memory_stick"
+			}]
+		},
+		{
+			x: -17.5d,
+			y: -10.5d,
+			subtitle: "Helter Skelter",
+			description: [
+				"Recent advancements in Pneumatic technology now allow for the forced removal of the magical core of Spawners found throughout the world. Once extracted, they can be empowered to run more quickly by inserting them in a modified spawner and spinning them up with air.",
+				"",
+				"To begin, prepare the area around a spawner for a fight. Disabling it with Torches or by Hacking it are recommended.",
+				"",
+				"Place the Spawner Extractor on top of the spawner, connect a Vacuum Pump to the Extractor, and begin pumping the air out. As the Extractor reaches the requisite negative pressure, things will begin happening.",
+				"",
+				"The Extractor only works while the player is nearby, so stay close.",
+				"",
+				"As it works, mobs will be forcibly spawned in the area. You brought your armor, right?",
+				"",
+				"The Extractor will slow down as more mobs accumulate in the area. Kill them quickly.",
+				"",
+				"Be prepared for large waves of mobs. Things can get hectic.",
+				"",
+				"Note: When the process has finished, sneak + right-click the Extractor with a Pneumatic Wrench to avoid the need to charge from scratch the next time. An extractor with some volume upgrades should be able to extract cores from several spawners before needing to be re-charged. "
+			],
+			dependencies: [I;1047],
+			min_width: 300,
+			id: 1049,
+			tasks: [{
+				id: 1050,
+				type: "item",
+				item: "pneumaticcraft:spawner_extractor"
+			}],
+			rewards: [{
+				id: 1075,
+				type: "loot",
+				table: 1
+			}]
+		},
+		{
+			icon: "pneumaticcraft:vacuum_trap",
+			x: -15.5d,
+			y: -10.5d,
+			subtitle: "Who Ya Gonna Call?",
+			description: [
+				"Your gateway to custom spawning.",
+				"",
+				"Not every mob is readily available from natural spawners. Thankfully, there is a way of recreating the magic of the Spawner Core: The Vacuum Trap.",
+				"",
+				"The process begins similarly to the Spawner Extractor, hook the Vacuum Trap up to a Vacuum Pump and pull out all of the air. Volume upgrades are recommended and a Spawner Core is required. Sneak + Right Click the charged Trap with a Pneumatic Wrench to pick it up. Now place it down near most any mob and Sneak + Right Click it with an empty hand to open it. Nearby mobs will be sucked in and be added to the Core.",
+				"",
+				"Multiple mob types can be stored in a Core, making mixed spawners possible. ",
+				"",
+				"A Spawner Core with only one mob in it is still valid for use in a Pressurized Spawner; very useful for hard to capture or rare mobs.",
+				"",
+				"The Trap works more efficiently if it has Memory Essence in the internal tank, meaning it takes fewer mobs to completely fill it. ",
+				"",
+				"Random mobs may be released from a core by Sneak + Right Clicking it on the ground, allowing easier transportation of mobs even before the Pressurized Spawner is available. "
+			],
+			dependencies: [I;1055],
+			id: 1051,
+			tasks: [
+				{
+					id: 1052,
+					type: "item",
+					item: "pneumaticcraft:vacuum_trap"
+				},
+				{
+					id: 1058,
+					type: "item",
+					item: "pneumaticcraft:spawner_core"
+				}
+			],
+			rewards: [{
+				id: 1076,
+				type: "loot",
+				table: 2
+			}]
+		},
+		{
+			x: -16.5d,
+			y: -9.5d,
+			subtitle: "Spinning in Their Graves",
+			description: [
+				"Once the Extraction process has finished, be sure to break the empty spawner (any pick will do) and take it with you. It's required for crafting a Pressurized Spawner.",
+				"",
+				"Note: Consider keeping a spare empty spawner at your base. The Spawner Extractor can be placed atop it to simplify recharging it for future projects."
+			],
+			dependencies: [I;1049],
+			id: 1055,
+			tasks: [{
+				id: 1056,
+				type: "item",
+				item: "pneumaticcraft:pressurized_spawner"
+			}],
+			rewards: [{
+				id: 1074,
+				type: "loot",
+				table: 1
 			}]
 		}
 	]
