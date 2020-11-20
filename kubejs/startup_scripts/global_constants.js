@@ -19,3 +19,5 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword'
 ];
+
+global.disabledItems = disabledItems;

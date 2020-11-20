@@ -58,12 +58,16 @@ events.listen('recipes', function (event) {
         'morevanillalib:obsidian_shard'
     ];
 
-    outputRemovals.forEach(function (removal) {
+    outputRemovals.forEach((removal) => {
         event.remove({ output: removal });
     });
 
-    idRemovals.forEach(function (removal) {
+    idRemovals.forEach((removal) => {
         event.remove({ id: removal });
+    });
+
+    global.disabledItems.forEach((disabledItem) => {
+        event.remove({ output: disabledItem });
     });
 
     // Removes log-stripping recipes from xercamod

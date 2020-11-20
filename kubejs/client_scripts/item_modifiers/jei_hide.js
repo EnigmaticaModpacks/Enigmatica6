@@ -1,5 +1,5 @@
 events.listen('jei.hide.items', (event) => {
-    disabledItems.forEach((item) => {
+    global.disabledItems.forEach((item) => {
         event.hide(item);
     });
 });
