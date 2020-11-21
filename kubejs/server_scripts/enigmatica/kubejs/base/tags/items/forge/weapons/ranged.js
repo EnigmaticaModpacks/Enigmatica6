@@ -2,7 +2,9 @@ events.listen('item.tags', function (event) {
     var items = [
         'aquaculture:neptunium_bow',
         'botania:crystal_bow',
+		'botania:flare_chakram',
         'botania:livingwood_bow',
+		'botania:thorn_chakram',
         'botaniaadditions:terra_bow',
         'gunswithoutroses:diamond_gatling',
         'gunswithoutroses:diamond_shotgun',

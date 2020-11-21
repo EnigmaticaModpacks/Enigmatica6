@@ -125,4 +125,8 @@ events.listen('jei.hide.items', (event) => {
 			event.hide(disabledItem);			
 		}        
     });	
+  
+    global.disabledItems.forEach((item) => {
+        event.hide(item);
+    });
 });

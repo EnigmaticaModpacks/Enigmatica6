@@ -1,5 +1,6 @@
 events.listen('item.tags', function (event) {
     var items = [
+		'botania:black_hole_talisman',
         'dankstorage:dank_1',
         'dankstorage:dank_2',
         'dankstorage:dank_3',

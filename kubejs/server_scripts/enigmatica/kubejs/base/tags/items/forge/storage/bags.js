@@ -1,5 +1,8 @@
 events.listen('item.tags', function (event) {
     var items = [
+		'botania:bauble_box',
+		'botania:ender_hand',
+		'botania:flower_bag',
         'chiselsandbits:bit_bag',
         'quantumstorage:quantum_bag_black',
         'quantumstorage:quantum_bag_blue',
