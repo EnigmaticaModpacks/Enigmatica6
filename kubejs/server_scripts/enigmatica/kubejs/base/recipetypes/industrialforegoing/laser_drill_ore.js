@@ -1,7 +1,7 @@
 events.listen('recipes', function (event) {
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
-
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/niter' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/potassium_nitrate'
@@ -49,6 +49,7 @@ events.listen('recipes', function (event) {
         type: 'industrialforegoing:laser_drill_ore'
     });
 
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/arcane' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:ores/arcane'
@@ -96,6 +97,7 @@ events.listen('recipes', function (event) {
         type: 'industrialforegoing:laser_drill_ore'
     });
 
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/bitumen' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/bitumen'
@@ -143,6 +145,7 @@ events.listen('recipes', function (event) {
         type: 'industrialforegoing:laser_drill_ore'
     });
 
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/fluorite' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/fluorite'

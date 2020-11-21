@@ -89,7 +89,7 @@ var materialsToUnify = [
     'potassium_nitrate',
     'saltpeter',
     'apatite',
-
+    'bitumen',
     'redstone',
     'glowstone'
 ];
