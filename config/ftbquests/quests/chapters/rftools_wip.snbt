@@ -7,8 +7,17 @@
 	default_quest_shape: "",
 	quests: [
 		{
+			title: "Welcome to RFTools!",
 			x: 0.0d,
 			y: 0.0d,
+			shape: "rsquare",
+			subtitle: "But what does the RF stand for?",
+			description: [
+				"Welcome to RFTools! In this chapter we will explore, no surprises here, the RFTools mod, which focuses on giving you different miscellaneous devices you can use for all sorts of purposes, from fast digging, to teleportation and wireless redstone! ",
+				"",
+				"The quests will guide you to some of the mods key items, but will leave some items up to you to find and discover.",
+				"We will also touch on XNet, a companion to RFTools designed especially for item transportation! Well, what are we waiting for, let’s get started!"
+			],
 			id: 842,
 			tasks: [{
 				id: 843,
@@ -33,6 +42,11 @@
 				id: 846,
 				type: "item",
 				item: "rftoolsbase:machine_frame"
+			}],
+			rewards: [{
+				id: 1395,
+				type: "item",
+				item: "rftoolsbase:smartwrench"
 			}]
 		},
 		{
@@ -51,26 +65,25 @@
 		{
 			x: 0.0d,
 			y: 3.0d,
+			dependencies: [I;896],
 			id: 898,
-			tasks: [{
-				id: 899,
-				type: "item",
-				item: "rftoolsutility:redstone_transmitter"
-			}]
-		},
-		{
-			x: 0.0d,
-			y: 4.5d,
-			id: 900,
-			tasks: [{
-				id: 901,
-				type: "item",
-				item: "rftoolsutility:redstone_receiver"
-			}]
+			tasks: [
+				{
+					id: 899,
+					type: "item",
+					item: "rftoolsutility:redstone_transmitter"
+				},
+				{
+					id: 1390,
+					type: "item",
+					item: "rftoolsutility:redstone_receiver"
+				}
+			]
 		},
 		{
 			x: 1.5d,
 			y: 3.0d,
+			dependencies: [I;896],
 			id: 902,
 			tasks: [{
 				id: 903,
@@ -81,6 +94,7 @@
 		{
 			x: 1.5d,
 			y: 1.5d,
+			dependencies: [I;896],
 			id: 904,
 			tasks: [{
 				id: 905,
@@ -91,6 +105,7 @@
 		{
 			x: -1.5d,
 			y: 1.5d,
+			dependencies: [I;896],
 			id: 906,
 			tasks: [{
 				id: 907,
@@ -101,6 +116,7 @@
 		{
 			x: -3.0d,
 			y: 1.5d,
+			dependencies: [I;906],
 			id: 910,
 			tasks: [{
 				id: 911,
@@ -109,8 +125,9 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: 1.5d,
+			x: -3.0d,
+			y: 3.0d,
+			dependencies: [I;910],
 			id: 912,
 			tasks: [{
 				id: 913,
@@ -121,6 +138,7 @@
 		{
 			x: -1.5d,
 			y: 3.0d,
+			dependencies: [I;896],
 			id: 914,
 			tasks: [{
 				id: 915,
@@ -160,7 +178,7 @@
 			}]
 		},
 		{
-			x: 3.0d,
+			x: 4.5d,
 			y: -3.0d,
 			shape: "diamond",
 			dependencies: [I;916],
@@ -278,6 +296,7 @@
 		{
 			x: -3.0d,
 			y: -3.0d,
+			dependencies: [I;1379],
 			id: 1381,
 			tasks: [{
 				id: 1382,
@@ -286,8 +305,8 @@
 			}]
 		},
 		{
-			x: 1.5d,
-			y: 0.0d,
+			x: 3.0d,
+			y: -3.0d,
 			dependencies: [I;845],
 			id: 1383,
 			tasks: [
@@ -312,6 +331,53 @@
 					item: "rftoolscontrol:program_card"
 				}
 			]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			shape: "hexagon",
+			dependencies: [I;842],
+			size: 1.5d,
+			id: 1393,
+			tasks: [{
+				id: 1394,
+				type: "item",
+				item: "xnet:controller"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 1.5d,
+			dependencies: [I;1393],
+			id: 1396,
+			tasks: [{
+				id: 1397,
+				type: "item",
+				item: "xnet:netcable_blue"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			dependencies: [I;1393],
+			id: 1398,
+			tasks: [{
+				id: 1399,
+				type: "item",
+				item: "xnet:connector_blue"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 0.0d,
+			shape: "diamond",
+			dependencies: [I;1398],
+			id: 1400,
+			tasks: [{
+				id: 1401,
+				type: "item",
+				item: "xnet:connector_upgrade"
+			}]
 		}
 	]
 }

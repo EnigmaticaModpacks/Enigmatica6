@@ -1,9 +1,9 @@
 {
 	id: 1280,
 	filename: "botania",
-	order_index: 20,
+	order_index: 0,
 	title: "Botania",
-	icon: "botania:natura_pylon",
+	icon: "botania:mana_pylon",
 	default_quest_shape: "",
 	quests: [
 		{
@@ -85,6 +85,7 @@
 		{
 			x: -4.0d,
 			y: 1.0d,
+			subtitle: "Miracle Grow",
 			description: ["Having trouble finding some colors of Mystical Flower? A bit of Floral Fertilizer can sprout them in no time."],
 			dependencies: [I;1285],
 			id: 1289,
@@ -92,6 +93,12 @@
 				id: 1290,
 				type: "item",
 				item: "botania:fertilizer"
+			}],
+			rewards: [{
+				id: 1510,
+				type: "item",
+				item: "botania:fertilizer",
+				count: 16
 			}]
 		},
 		{
@@ -137,7 +144,12 @@
 					item: "botania:livingrock",
 					count: 16L
 				}
-			]
+			],
+			rewards: [{
+				id: 1511,
+				type: "loot",
+				table: 17
+			}]
 		},
 		{
 			x: 2.0d,
@@ -158,31 +170,110 @@
 				id: 1300,
 				type: "item",
 				item: "botania:runic_altar"
+			}],
+			rewards: [{
+				id: 1509,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
+			title: "The Portal to Alfheim",
+			icon: "botania:natura_pylon",
 			x: 7.0d,
 			y: 4.5d,
+			subtitle: "Weasel Town",
+			description: [
+				"Oh Alfheim, our most mysterious trade partner. Open those gates so I may unlock your secrets and exploit your riches. ",
+				"",
+				"The denizens of Alfheim are a secretive people, but they are willing to share some of their knowledge in fair exchange. Perhaps some bread?",
+				"",
+				"Refer to the Lexica Botania for instructions on building the portal. The Lexica should be one of the first things sent through the portal to unlock further knowleedge"
+			],
+			dependencies: [I;1303],
 			id: 1301,
-			tasks: [{
-				id: 1302,
-				type: "item",
-				item: "botania:alfheim_portal"
+			tasks: [
+				{
+					id: 1302,
+					type: "item",
+					item: "botania:alfheim_portal"
+				},
+				{
+					id: 1402,
+					type: "item",
+					item: "botania:natura_pylon",
+					count: 2L
+				},
+				{
+					id: 1403,
+					type: "item",
+					item: "botania:mana_pool",
+					count: 2L
+				},
+				{
+					id: 1404,
+					type: "item",
+					item: "botania:glimmering_livingwood",
+					count: 3L
+				},
+				{
+					id: 1405,
+					type: "item",
+					item: "botania:livingwood",
+					count: 8L
+				}
+			],
+			rewards: [{
+				id: 1496,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
+			icon: "botania:terra_plate",
 			x: 7.0d,
 			y: 3.0d,
+			description: [
+				"Contentment leads to complacency, which leads to stagnation. Surely there must be a material that can assist in controlling the flow of mana through a Spark to bend them too to our will? ",
+				"",
+				"Upon placing an ingot of Manasteel, a Mana Diamond, and finally a Mana Pearl, something strange happens. The Pearl seems to warp the mana around it and draw it along the conduit lines made by the Spark. Once more, causing spontaneous re-assembly of the materials present to form a new substance."
+			],
+			dependencies: [I;1369],
 			id: 1303,
-			tasks: [{
-				id: 1304,
-				type: "item",
-				item: "botania:terra_plate"
+			tasks: [
+				{
+					id: 1304,
+					type: "item",
+					item: "botania:terra_plate"
+				},
+				{
+					id: 1391,
+					type: "item",
+					item: "botania:livingrock",
+					count: 5L
+				},
+				{
+					id: 1392,
+					type: "item",
+					item: "minecraft:lapis_block",
+					count: 4L
+				},
+				{
+					id: 1433,
+					type: "item",
+					item: "botania:terrasteel_ingot"
+				}
+			],
+			rewards: [{
+				id: 1497,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
 			x: -4.0d,
 			y: 5.0d,
+			subtitle: "Not as Shallow as it Seems",
 			description: [
 				"Livingrock forms an excellent receptacle for mana, keeping it safe and ready for use at a moment's notice. ",
 				"",
@@ -194,11 +285,17 @@
 				id: 1306,
 				type: "item",
 				item: "botania:mana_pool"
+			}],
+			rewards: [{
+				id: 1514,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: -2.0d,
 			y: 5.0d,
+			subtitle: "Point and Shoot",
 			description: [
 				"This Livingwood construct makes an excellent conduit. ",
 				"",
@@ -212,6 +309,11 @@
 				id: 1308,
 				type: "item",
 				item: "botania:mana_spreader"
+			}],
+			rewards: [{
+				id: 1513,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -232,6 +334,11 @@
 					Count: true,
 					tag: {}
 				}
+			}],
+			rewards: [{
+				id: 1515,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -258,36 +365,55 @@
 				type: "item",
 				item: "botania:endoflame"
 			}],
-			rewards: [{
-				id: 1315,
-				type: "item",
-				item: "botania:open_crate"
-			}]
+			rewards: [
+				{
+					id: 1315,
+					type: "item",
+					item: "botania:open_crate"
+				},
+				{
+					id: 1512,
+					type: "item",
+					item: "botania:monocle"
+				}
+			]
 		},
 		{
 			title: "Guardian of Gaia",
 			icon: "botania:life_essence",
-			x: 10.5d,
-			y: 5.5d,
+			x: 12.0d,
+			y: 3.0d,
 			subtitle: "How to Lose Friends and Alienate People",
 			description: [
-				"The Earth bleeds. One might even hear her weep, if not for the sounds of the machinations draining the life from her.",
+				"The Earth bleeds. One might even hear her weep if not for the sounds of the machinations draining the life from her.",
 				"",
 				"Summon forth the earth's final defenses and silence her cries, once and for all. "
 			],
+			dependencies: [I;1320],
 			id: 1316,
 			tasks: [{
 				id: 1319,
 				type: "item",
 				item: "botania:life_essence"
+			}],
+			rewards: [{
+				id: 1490,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
 			title: "Gaia Arena",
 			icon: "botania:gaia_pylon",
-			x: 10.5d,
-			y: 4.0d,
-			description: [""],
+			x: 12.0d,
+			y: 1.5d,
+			subtitle: "Preparing the Final Coup",
+			description: [
+				"It stands to reason that the earth has more secrets yet to be revealed. Perhaps a trap can be formed by way of these alien materials? ",
+				"",
+				"Level a large  area, a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth."
+			],
+			dependencies: [I;1281],
 			id: 1320,
 			tasks: [
 				{
@@ -301,22 +427,35 @@
 					type: "item",
 					item: "minecraft:beacon"
 				}
-			]
+			],
+			rewards: [{
+				id: 1491,
+				type: "loot",
+				table: 18
+			}]
 		},
 		{
-			x: 10.5d,
-			y: 7.0d,
+			title: "Dice of Fate",
+			icon: "botania:dice",
+			x: 12.0d,
+			y: 5.5d,
 			subtitle: "Twist the Blade",
 			description: [
 				"It would seem that for all of your efforts, you still lack the power to kill Gaia's Guardian for good, let alone Gaia herself. It's time to dig in and double down. ",
 				"",
 				"Summon and defeat the Guardian's second incarnation. "
 			],
+			dependencies: [I;1316],
 			id: 1322,
 			tasks: [{
 				id: 1323,
 				type: "item",
 				item: "botania:dice"
+			}],
+			rewards: [{
+				id: 1484,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
@@ -357,19 +496,29 @@
 					type: "item",
 					item: "botania:rune_mana"
 				}
-			]
+			],
+			rewards: [{
+				id: 1508,
+				type: "loot",
+				table: 17
+			}]
 		},
 		{
 			x: -4.5d,
 			y: 7.0d,
 			subtitle: "Bose-Enderman Condensate",
-			description: ["As if Ender Pearls weren't already mind bending enough, when soaked in Mana they seem to have a warping effect on Mana in the immediate locale, causing it to behave unexpectedly."],
+			description: ["As if Ender Pearls weren't already mind bending enough, when soaked in mana they seem to have a warping effect on Mana in the immediate locale, causing it to behave unexpectedly."],
 			dependencies: [I;1313],
 			id: 1331,
 			tasks: [{
 				id: 1332,
 				type: "item",
 				item: "botania:mana_pearl"
+			}],
+			rewards: [{
+				id: 1516,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -383,6 +532,11 @@
 				id: 1334,
 				type: "item",
 				item: "botania:mana_diamond"
+			}],
+			rewards: [{
+				id: 1520,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -396,6 +550,11 @@
 				id: 1336,
 				type: "item",
 				item: "botania:manasteel_ingot"
+			}],
+			rewards: [{
+				id: 1521,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -409,6 +568,11 @@
 				id: 1338,
 				type: "item",
 				item: "botania:mana_string"
+			}],
+			rewards: [{
+				id: 1519,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -422,11 +586,17 @@
 				id: 1340,
 				type: "item",
 				item: "botania:mana_powder"
+			}],
+			rewards: [{
+				id: 1517,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: -3.0d,
 			y: 8.0d,
+			subtitle: "All Around the World",
 			description: [
 				"A Band of Mana combines several of the materials we've discovered so far into a useful object; one that can act as a portable mana pool. Making one will open up new possibilities as mana exploitation just got peronal. ",
 				"",
@@ -442,11 +612,17 @@
 					Count: true,
 					tag: {}
 				}
+			}],
+			rewards: [{
+				id: 1518,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 2.0d,
 			y: 7.5d,
+			subtitle: "Care for a Kombucha?",
 			description: [
 				"In a process similar to the Runic Altar's spontaneous re-assembly, a traditional brewing stand can be enhanced to recreate potent potables with the addition of a Rune of Mana. ",
 				"",
@@ -460,6 +636,12 @@
 				id: 1345,
 				type: "item",
 				item: "botania:brewery"
+			}],
+			rewards: [{
+				id: 1499,
+				type: "item",
+				item: "botania:vial",
+				count: 8
 			}]
 		},
 		{
@@ -472,6 +654,11 @@
 				id: 1347,
 				type: "item",
 				item: "botania:rosa_arcana"
+			}],
+			rewards: [{
+				id: 1500,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -511,11 +698,17 @@
 				id: 1351,
 				type: "item",
 				item: "botania:hopperhock"
+			}],
+			rewards: [{
+				id: 1504,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 3.0d,
 			y: 6.0d,
+			subtitle: "Mountain or Mole-hill?",
 			description: ["A rumble can be heard when activating this device as the earth shifts, forcing dirt to push up to fill the area at the point of contact. "],
 			dependencies: [I;1325],
 			id: 1352,
@@ -523,12 +716,17 @@
 				id: 1353,
 				type: "item",
 				item: "botania:dirt_rod"
+			}],
+			rewards: [{
+				id: 1501,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 2.5d,
 			y: 5.0d,
-			subtitle: "Exquisite Balance",
+			subtitle: "Attaining Equilibrium",
 			description: ["Thought it functions similarly to the Pure Daisy, the Clayconia requires far more mana than it can drain from the earth on its own. A source of mana is required nearby to power it's nanocrystaline-recombination of sand into clay.."],
 			dependencies: [I;1325],
 			id: 1354,
@@ -536,11 +734,17 @@
 				id: 1355,
 				type: "item",
 				item: "botania:clayconia"
+			}],
+			rewards: [{
+				id: 1502,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 3.5d,
 			y: 4.5d,
+			subtitle: "High Tide",
 			description: ["The ability to draw forth water from the earth at a moment's notice is handy indeed."],
 			dependencies: [I;1325],
 			id: 1356,
@@ -548,18 +752,29 @@
 				id: 1357,
 				type: "item",
 				item: "botania:water_rod"
+			}],
+			rewards: [{
+				id: 1503,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 0.5d,
 			y: 4.5d,
-			description: ["Combining water from deep aquifers with liquid hot magma to create and draw forth raw stone from the earth."],
+			subtitle: "Deepwater Horizons",
+			description: ["Combining water from deep aquifers with liquid hot magma to create and draw forth raw stone from the earth. One can only imagine the damage it must be causing. "],
 			dependencies: [I;1325],
 			id: 1358,
 			tasks: [{
 				id: 1359,
 				type: "item",
 				item: "botania:cobble_rod"
+			}],
+			rewards: [{
+				id: 1505,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -577,11 +792,17 @@
 				id: 1368,
 				type: "item",
 				item: "botania:pollidisiac"
+			}],
+			rewards: [{
+				id: 1506,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 3.0d,
 			y: 3.5d,
+			subtitle: "Forbidden Jello",
 			description: [
 				"One could be excused for thinking Slimes are somehow alive, but upon closer inspection they appear to be nothing more than the congealed remnants left behind when somehting truly alive dies. Sufficient damage will release the same impure globules that could be converted to mana, but a great deal is lost in this way. ",
 				"",
@@ -593,11 +814,17 @@
 				id: 1363,
 				type: "item",
 				item: "botania:narslimmus"
+			}],
+			rewards: [{
+				id: 1507,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: -3.5d,
 			y: 9.0d,
+			subtitle: "Clear Sight",
 			description: ["The mana infused in this glass provides a brilliant source of light. Peering through it reveals a hidden world to you."],
 			dependencies: [I;1313],
 			id: 1364,
@@ -605,11 +832,17 @@
 				id: 1365,
 				type: "item",
 				item: "botania:mana_glass"
+			}],
+			rewards: [{
+				id: 1522,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
 			x: 7.0d,
 			y: 1.5d,
+			subtitle: "Taking the Gloves Off",
 			description: [
 				"While the Livingwood casing of Mana Spreaders appear to make them very efficient at long distance channeling, they're not always the quickest method. By removing the casing, a Spark can be formed which lacks the directionality of a Spreader but makes up for it with the shear volume it can handle. ",
 				"",
@@ -621,6 +854,354 @@
 				id: 1370,
 				type: "item",
 				item: "botania:spark"
+			}],
+			rewards: [{
+				id: 1498,
+				type: "loot",
+				table: 18
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 5.5d,
+			subtitle: "Pink is the New Black",
+			description: [
+				"It's impossible to tell what the denizens of Alfheim have used as a base material, but upon inspection it would appear they've treated it in a process similar to Manasteel. Whatever the underlying material is, it's clear that it's properties are vastly different than what was given in trade. ",
+				"",
+				"Explore the new tools and items that are now obtainable with Elementium."
+			],
+			dependencies: [I;1301],
+			id: 1407,
+			tasks: [{
+				id: 1408,
+				type: "item",
+				item: "botania:elementium_ingot"
+			}],
+			rewards: [{
+				id: 1495,
+				type: "loot",
+				table: 18
+			}]
+		},
+		{
+			x: 8.0d,
+			y: 5.5d,
+			subtitle: "Crystaline Scales",
+			description: [
+				"Dragonstones appear to have an affinity with the End and the dragons native to that realm...Perhaps a journey there is in order.",
+				"",
+				"Explore the new tools and items that are now obtainable with Dragonstone."
+			],
+			dependencies: [I;1301],
+			id: 1409,
+			tasks: [{
+				id: 1410,
+				type: "item",
+				item: "botania:dragonstone"
+			}],
+			rewards: [{
+				id: 1493,
+				type: "loot",
+				table: 18
+			}]
+		},
+		{
+			x: 7.0d,
+			y: 6.0d,
+			subtitle: "Unfit for Aerial Use",
+			description: [
+				"At last, a suitable catalyst for mana manipulation through Spark networks. ",
+				"",
+				"Explore the new tools and items that are now obtainable with Pixie Dust."
+			],
+			dependencies: [I;1301],
+			id: 1411,
+			tasks: [{
+				id: 1412,
+				type: "item",
+				item: "botania:pixie_dust"
+			}],
+			rewards: [{
+				id: 1494,
+				type: "loot",
+				table: 18
+			}]
+		},
+		{
+			title: "Spark Augments",
+			x: 7.0d,
+			y: 7.0d,
+			subtitle: "Ebb and Flow",
+			description: ["Spark Augments are the missing piece for more direct manipulation of mana over Spark conduits, allowing one to specify when and where the mana travels."],
+			dependencies: [I;1411],
+			id: 1413,
+			tasks: [
+				{
+					id: 1414,
+					type: "item",
+					item: "botania:spark_upgrade_recessive"
+				},
+				{
+					id: 1419,
+					type: "item",
+					item: "botania:spark_upgrade_dominant"
+				}
+			],
+			rewards: [{
+				id: 1423,
+				type: "item",
+				item: "botania:spark_changer"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 6.5d,
+			description: [
+				"While basic Mana Spreaders have been sufficient to this point, it's become clear that with more advanced materials, better results could be had. ",
+				"",
+				"The Elementium core and Dreamwood stabilization seems capable of firing larger bursts at once, greatly enhancing throughput."
+			],
+			dependencies: [I;1407],
+			id: 1417,
+			tasks: [{
+				id: 1418,
+				type: "item",
+				item: "botania:elven_spreader"
+			}],
+			rewards: [{
+				id: 1492,
+				type: "loot",
+				table: 18
+			}]
+		},
+		{
+			title: "Corporea Networks",
+			icon: "botania:corporea_spark_master",
+			x: 8.0d,
+			y: 6.5d,
+			description: [
+				"It seems the ability for Mana to manipulate items is boundless, freely converting matter to energy and back to pull them through the Spark network. ",
+				"",
+				"The Corporea system is a powerful item management system that permits the transfer of items across long distances. Explore more by referring to the chapters on Corporea in the Lexica Botania."
+			],
+			dependencies: [I;1409],
+			id: 1420,
+			tasks: [
+				{
+					id: 1421,
+					type: "item",
+					item: "botania:corporea_index"
+				},
+				{
+					id: 1422,
+					type: "item",
+					item: "botania:corporea_spark_master"
+				}
+			],
+			rewards: [{
+				id: 1424,
+				type: "item",
+				item: "botania:corporea_spark",
+				count: 8
+			}]
+		},
+		{
+			title: "Mana Lenses",
+			x: 2.0d,
+			y: 9.0d,
+			subtitle: "Steroscopic Mana Manipulation",
+			description: [
+				"Experiments with the various Runes show that they're capable of augmenting the behaviour of Mana Spreaders as well by combining them with a Mana Lens. Furthermore, two such lenses can be permanently bonded together by pressing some slime between them. ",
+				"",
+				"Further experimentation is needed as it seems that the raw mana burst can be augmented in a striking variety of ways.",
+				"",
+				"Combine the Velocity and Potency lenses to create a composite lens, which will allow a Mana Spreader to send larger bursts that travel faster. "
+			],
+			dependencies: [I;
+				1329,
+				1327
+			],
+			id: 1425,
+			tasks: [
+				{
+					id: 1426,
+					type: "item",
+					item: {
+						id: "botania:lens_speed",
+						Count: true,
+						tag: {}
+					}
+				},
+				{
+					id: 1427,
+					type: "item",
+					item: {
+						id: "botania:lens_power",
+						Count: true,
+						tag: {}
+					}
+				}
+			],
+			rewards: [{
+				id: 1428,
+				type: "item",
+				item: "minecraft:slime_block"
+			}]
+		},
+		{
+			icon: "mythicbotany:mana_infuser",
+			x: 12.0d,
+			y: 7.5d,
+			subtitle: "Quixotic Electro-Destabilization",
+			description: ["When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. "],
+			dependencies: [I;
+				1410,
+				1412,
+				1408
+			],
+			id: 1429,
+			tasks: [
+				{
+					id: 1430,
+					type: "item",
+					item: "mythicbotany:mana_infuser"
+				},
+				{
+					id: 1434,
+					type: "item",
+					item: "minecraft:gold_block",
+					count: 4L
+				},
+				{
+					id: 1435,
+					type: "item",
+					item: "botania:shimmerrock",
+					count: 5L
+				},
+				{
+					id: 1436,
+					type: "item",
+					item: "mythicbotany:alfsteel_ingot"
+				}
+			],
+			rewards: [{
+				id: 1483,
+				type: "loot",
+				table: 19
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 8.5d,
+			subtitle: "Constuct Additional Pylons",
+			description: [
+				"It has been well established at this point that mana is excellent at performing spontaneous recombinations. Some limited magics have managed to harness this by absorbing the latent mana in the globules left behind when the living pass. The Alfsteel Pylon helps to speed that process along, injecting pure mana directly into these Mendable items. ",
+				"",
+				"Use a Mana Spreader to send mana into the Pylon. Any items enchanted with Mending that find themselves atop the Pylon will rapidly repair at the cost of mana."
+			],
+			dependencies: [I;1429],
+			id: 1431,
+			tasks: [{
+				id: 1432,
+				type: "item",
+				item: "mythicbotany:alfsteel_pylon"
+			}],
+			rewards: [{
+				id: 1482,
+				type: "loot",
+				table: 19
+			}]
+		},
+		{
+			x: 11.0d,
+			y: 4.0d,
+			subtitle: "Conway's Game",
+			description: [
+				"A game of simple rules, yet complex outcomes, much like the living systems it mimics. Unlocking it's mysteries will provide you with enormous mana for very little input.",
+				"",
+				"Refer to the Lexica Botania for the full list of rules."
+			],
+			dependencies: [I;1316],
+			id: 1440,
+			tasks: [{
+				id: 1441,
+				type: "item",
+				item: "botania:dandelifeon"
+			}],
+			rewards: [
+				{
+					id: 1487,
+					type: "item",
+					item: "botania:cell_block",
+					count: 8
+				},
+				{
+					id: 1488,
+					type: "loot",
+					table: 19
+				}
+			]
+		},
+		{
+			x: 13.0d,
+			y: 4.0d,
+			subtitle: "It Grows On You",
+			description: [
+				"Not every material is as susceptible to mana's ability to spontaneously re-organize it, but by binding it with a still pulsing Spirit of Gaia, that property can be forced on nearly anything. ",
+				"",
+				"Timeless Ivy can be combined with anything that's normally repairable on an anvil. Place the item, a Timeless Ivy, and three of whatever material is used to repair the item in a crafting grid to bind it. For example, a Diamond Sword would require three diamonds. "
+			],
+			dependencies: [I;1316],
+			id: 1442,
+			tasks: [{
+				id: 1443,
+				type: "item",
+				item: "botaniaadditions:regen_ivy"
+			}],
+			rewards: [{
+				id: 1485,
+				type: "loot",
+				table: 19
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 3.5d,
+			subtitle: "Open Veins",
+			description: ["The final iteration of the Mana Spreader, infused with the very essence of Gaia herself to maximize throughput. "],
+			dependencies: [I;1316],
+			id: 1444,
+			tasks: [{
+				id: 1445,
+				type: "item",
+				item: "botania:gaia_spreader"
+			}],
+			rewards: [{
+				id: 1486,
+				type: "loot",
+				table: 19
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 3.5d,
+			subtitle: "Mind the Gap",
+			description: ["With the potent energies of Gaia to stabilize it, a small pocket dimension can be formed to store an unreal number of items. "],
+			dependencies: [I;1316],
+			id: 1446,
+			tasks: [{
+				id: 1447,
+				type: "item",
+				item: {
+					id: "botania:black_hole_talisman",
+					Count: true,
+					tag: {}
+				}
+			}],
+			rewards: [{
+				id: 1489,
+				type: "loot",
+				table: 19
 			}]
 		}
 	]
