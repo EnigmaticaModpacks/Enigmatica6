@@ -30,6 +30,6 @@ function getPreferredItemInTag(tag) {
     return pref;
 }
 
-function wrapArray(a) {
-    return utils.listOf(a).toArray();
+function wrapArray(array) {
+    return utils.listOf(array).toArray();
 }
