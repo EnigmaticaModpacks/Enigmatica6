@@ -5,14 +5,7 @@ function unificationBlacklistEntry(material, type) {
 }
 
 var air = 'minecraft:air';
-
-var oreDimensional = [
-    'rftoolsbase:dimensionalshard_overworld',
-    'rftoolsbase:dimensionalshard_nether',
-    'rftoolsbase:dimensionalshard_end'
-];
-
-var oreUraninite = ['powah:uraninite_ore_poor', 'powah:uraninite_ore', 'powah:uraninite_ore_dense'];
+global.air = air;
 
 var colors = [
     'cyan',
@@ -32,6 +25,7 @@ var colors = [
     'gray',
     'light_gray'
 ];
+global.colors = colors;
 
 var typesToUnify = [
     'nugget',
@@ -49,6 +43,7 @@ var typesToUnify = [
     // 'shard',
     // 'crystal'
 ];
+global.typesToUnify = typesToUnify;
 
 var materialsToUnify = [
     'iron',
@@ -93,6 +88,7 @@ var materialsToUnify = [
     'redstone',
     'glowstone'
 ];
+global.materialsToUnify = materialsToUnify;
 
 var unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),
@@ -116,6 +112,7 @@ var modPriorities = [
     'refinedstorage',
     'mapperbase'
 ];
+global.modPriorities = modPriorities;
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
 
