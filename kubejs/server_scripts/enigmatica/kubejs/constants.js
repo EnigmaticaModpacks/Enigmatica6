@@ -27,22 +27,7 @@ var colors = [
 ];
 global.colors = colors;
 
-var typesToUnify = [
-    'nugget',
-    'ingot',
-    'gem',
-    'storage_block',
-    'ore',
-    'dust',
-    'gear',
-    'plate',
-    'rod'
-    //'ore_deposit',
-    // 'dirty_dust',
-    // 'clump',
-    // 'shard',
-    // 'crystal'
-];
+var typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
 global.typesToUnify = typesToUnify;
 
 var materialsToUnify = [
@@ -90,11 +75,6 @@ var materialsToUnify = [
 ];
 global.materialsToUnify = materialsToUnify;
 
-var unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
-
 var modPriorities = [
     'emendatusenigmatica',
     'minecraft',
@@ -113,6 +93,11 @@ var modPriorities = [
     'mapperbase'
 ];
 global.modPriorities = modPriorities;
+
+var unificationBlacklist = [
+    unificationBlacklistEntry('quartz', 'gem'),
+    unificationBlacklistEntry('quartz', 'storage_block')
+];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
 
