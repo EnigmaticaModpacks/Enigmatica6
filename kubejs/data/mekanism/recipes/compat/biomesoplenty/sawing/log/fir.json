@@ -1,0 +1,8 @@
+{
+    "type": "mekanism:sawing",
+    "conditions": [{ "modid": "biomesoplenty", "type": "forge:mod_loaded" }],
+    "input": { "ingredient": { "tag": "biomesoplenty:fir_logs" } },
+    "mainOutput": { "item": "biomesoplenty:fir_planks", "count": 6 },
+    "secondaryOutput": { "item": "emendatusenigmatica:sawdust" },
+    "secondaryChance": 0.25
+}
