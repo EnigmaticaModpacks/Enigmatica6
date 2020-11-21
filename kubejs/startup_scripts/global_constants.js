@@ -1,5 +1,4 @@
 const disabledItems = [
-    'quark:pipe',
     'byg:ametrine_block',
     'byg:ametrine_boots',
     'byg:ametrine_chestplate',
@@ -17,7 +16,11 @@ const disabledItems = [
     'byg:pendorite_pickaxe',
     'byg:pendorite_scraps',
     'byg:pendorite_shovel',
-    'byg:pendorite_sword'
+    'byg:pendorite_sword',
+
+    'mythicbotany:wither_aconite',
+
+    'quark:pipe'
 ];
 
 global.disabledItems = disabledItems;
