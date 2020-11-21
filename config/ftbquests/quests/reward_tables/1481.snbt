@@ -1,0 +1,98 @@
+{
+	id: 1481,
+	title: "Legendary Botania Lootbox",
+	icon: "aquaculture:neptunes_bounty",
+	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "botania:light_relay",
+			count: 8
+		},
+		{
+			item: "botania:overgrowth_seed",
+			count: 4
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:resistance"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:bloodthirst"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:emptiness"
+				}
+			}
+		},
+		{
+			item: "botania:rannuncarpus"
+		},
+		{
+			item: "botania:spectranthemum"
+		},
+		{
+			item: "botania:elementium_ingot",
+			count: 4
+		},
+		{
+			item: "botania:pixie_dust",
+			count: 4
+		},
+		{
+			item: "botania:dragonstone",
+			count: 4
+		},
+		{
+			item: "botania:red_string",
+			count: 4
+		},
+		{
+			item: "botania:rafflowsia"
+		},
+		{
+			item: "botania:rune_lust"
+		},
+		{
+			item: "botania:rune_gluttony"
+		},
+		{
+			item: "botania:rune_greed"
+		},
+		{
+			item: "botania:rune_sloth"
+		},
+		{
+			item: "botania:heisei_dream"
+		},
+		{
+			item: "botania:rune_wrath"
+		},
+		{
+			item: "botania:rune_envy"
+		},
+		{
+			item: "botania:rune_pride"
+		},
+		{
+			item: "botania:blacker_lotus",
+			count: 4
+		}
+	]
+}

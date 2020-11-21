@@ -1,0 +1,47 @@
+{
+	id: 1450,
+	title: "RS Loot Box",
+	icon: "aquaculture:lockbox",
+	loot_size: 1,
+	use_title: true,
+	rewards: [
+		{
+			item: "refinedstorage:speed_upgrade",
+			count: 2
+		},
+		{
+			item: "refinedstorage:processor_binding",
+			count: 16
+		},
+		{
+			item: "refinedstorage:basic_processor",
+			count: 8
+		},
+		{
+			item: "refinedstorage:improved_processor",
+			count: 4
+		},
+		{
+			item: "refinedstorage:advanced_processor",
+			count: 2
+		},
+		{
+			item: "refinedstorage:1k_storage_part",
+			count: 4
+		},
+		{
+			item: "refinedstorage:exporter"
+		},
+		{
+			item: "refinedstorage:importer"
+		},
+		{
+			item: "refinedstorage:storage_housing",
+			count: 2
+		},
+		{
+			item: "refinedstorage:quartz_enriched_iron",
+			count: 8
+		}
+	]
+}

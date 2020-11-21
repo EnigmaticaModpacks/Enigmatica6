@@ -1,0 +1,35 @@
+{
+	id: 1526,
+	title: "Rare Ars Nouveau Loot",
+	icon: "aquaculture:lockbox",
+	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "ars_nouveau:dull_trinket"
+		},
+		{
+			item: "ars_nouveau:mundane_belt"
+		},
+		{
+			item: "ars_nouveau:ring_of_potential"
+		},
+		{
+			item: "emendatusenigmatica:arcane_gem",
+			count: 16
+		},
+		{
+			item: "ars_nouveau:mythical_clay",
+			count: 2
+		},
+		{
+			item: "ars_nouveau:marvelous_clay",
+			count: 4
+		},
+		{
+			item: "ars_nouveau:magic_clay",
+			count: 4
+		}
+	]
+}

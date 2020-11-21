@@ -952,7 +952,10 @@
 			y: -12.0d,
 			subtitle: "Evolution Complete",
 			description: ["An upgrade to Terrasteel armor, Alfsteel provides bonus reach, speed, and knockback resistance."],
-			dependencies: [I;1141],
+			dependencies: [I;
+				1141,
+				1429
+			],
 			id: 1136,
 			tasks: [
 				{
@@ -1014,6 +1017,7 @@
 			y: -13.0d,
 			subtitle: "Direct My Wrath",
 			description: ["Potent armor that's deeply infused with magic, Terrasteel affords excellent protection, reduced mana costs, and knockback resistance."],
+			dependencies: [I;1303],
 			id: 1141,
 			tasks: [
 				{
@@ -1066,6 +1070,7 @@
 			x: -1.5d,
 			y: -13.0d,
 			description: ["Magically imbued and magically combined. This tool can absorb mana to increase it's power, just like the Terrashatterer."],
+			dependencies: [I;1303],
 			id: 1146,
 			tasks: [{
 				id: 1147,
@@ -1084,6 +1089,7 @@
 			x: -2.0d,
 			y: -12.0d,
 			description: ["Magically imbued and magically combined. This tool can absorb mana to increase it's power, just like the Terrashatterer."],
+			dependencies: [I;1429],
 			id: 1148,
 			tasks: [{
 				id: 1149,
@@ -1294,7 +1300,7 @@
 				"● RF Coil",
 				"● Radial Enhancement"
 			],
-			dependencies: [I;1134],
+			dependencies: [I;1187],
 			id: 1168,
 			tasks: [{
 				id: 1169,
@@ -1312,7 +1318,7 @@
 				"● RF Coil",
 				"● Radial Enhancement"
 			],
-			dependencies: [I;1134],
+			dependencies: [I;1187],
 			id: 1170,
 			tasks: [{
 				id: 1171,
@@ -1332,6 +1338,7 @@
 			x: -6.0d,
 			y: -4.5d,
 			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."],
+			dependencies: [I;1190],
 			id: 1172,
 			tasks: [
 				{
@@ -1392,6 +1399,7 @@
 			x: -5.0d,
 			y: -4.5d,
 			description: ["A technological marvel that allows the wearer to remain productive for longer under water."],
+			dependencies: [I;930],
 			id: 1174,
 			tasks: [
 				{
@@ -1450,7 +1458,7 @@
 				"● RF Coil",
 				"● Radial Enhancement"
 			],
-			dependencies: [I;1134],
+			dependencies: [I;1187],
 			id: 1176,
 			tasks: [{
 				id: 1177,

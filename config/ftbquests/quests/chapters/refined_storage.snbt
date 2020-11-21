@@ -57,7 +57,13 @@
 					type: "item",
 					item: "refinedstorage:advanced_processor"
 				}
-			]
+			],
+			rewards: [{
+				id: 1455,
+				type: "item",
+				item: "refinedstorage:quartz_enriched_iron",
+				count: 16
+			}]
 		},
 		{
 			icon: "refinedstorage:controller",
@@ -81,7 +87,13 @@
 					type: "item",
 					item: "refinedstorage:cable"
 				}
-			]
+			],
+			rewards: [{
+				id: 1456,
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 16
+			}]
 		},
 		{
 			title: "Disks and Drives",
@@ -89,7 +101,7 @@
 			x: 0.5d,
 			y: 5.0d,
 			description: [
-				"To actually store items in an RS network, you'll want to make storage disks. These come in a variety of sizes; first try making one a 1k disk, the smallest size. You can retrieve the materials used to craft these (storage part/housing) by shift-clicking with the item in hand.",
+				"To actually store items in an RS network, you'll want to make storage disks. These come in a variety of sizes; first try making one a 1k disk, the smallest size. You can retrieve the materials used to craft these (storage part/housing) by shift-right-clicking with the item in hand.",
 				"",
 				"The Disk Drive is your main method of holding storage disks. Up to ten can fit in a drive; you can swap them in and out as needed."
 			],
@@ -106,6 +118,19 @@
 					type: "item",
 					item: "refinedstorage:1k_storage_disk"
 				}
+			],
+			rewards: [
+				{
+					id: 1457,
+					type: "loot",
+					table: 12
+				},
+				{
+					id: 1469,
+					type: "item",
+					item: "refinedstorage:storage_housing",
+					count: 2
+				}
 			]
 		},
 		{
@@ -119,6 +144,11 @@
 				id: 606,
 				type: "item",
 				item: "refinedstorage:64k_fluid_storage_disk"
+			}],
+			rewards: [{
+				id: 1467,
+				type: "item",
+				item: "refinedstorage:256k_fluid_storage_part"
 			}]
 		},
 		{
@@ -140,7 +170,12 @@
 					type: "item",
 					item: "refinedstorage:exporter"
 				}
-			]
+			],
+			rewards: [{
+				id: 1466,
+				type: "loot",
+				table: 12
+			}]
 		},
 		{
 			x: -2.5d,
@@ -152,6 +187,11 @@
 				id: 611,
 				type: "item",
 				item: "refinedstorage:external_storage"
+			}],
+			rewards: [{
+				id: 1471,
+				type: "item",
+				item: "mekanism:advanced_bin"
 			}]
 		},
 		{
@@ -164,6 +204,12 @@
 				id: 613,
 				type: "item",
 				item: "refinedstorage:grid"
+			}],
+			rewards: [{
+				id: 1470,
+				type: "item",
+				item: "refinedstorage:cable",
+				count: 8
 			}]
 		},
 		{
@@ -180,6 +226,12 @@
 				id: 615,
 				type: "item",
 				item: "refinedstorage:storage_monitor"
+			}],
+			rewards: [{
+				id: 1472,
+				type: "item",
+				item: "refinedstorage:storage_housing",
+				count: 4
 			}]
 		},
 		{
@@ -192,6 +244,12 @@
 				id: 617,
 				type: "item",
 				item: "refinedstorage:fluid_grid"
+			}],
+			rewards: [{
+				id: 1474,
+				type: "item",
+				item: "refinedstorage:256k_fluid_storage_part",
+				count: 2
 			}]
 		},
 		{
@@ -208,6 +266,11 @@
 				id: 619,
 				type: "item",
 				item: "refinedstorage:crafting_grid"
+			}],
+			rewards: [{
+				id: 1477,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -233,7 +296,12 @@
 					type: "item",
 					item: "refinedstorage:wireless_transmitter"
 				}
-			]
+			],
+			rewards: [{
+				id: 1475,
+				type: "loot",
+				table: 12
+			}]
 		},
 		{
 			x: 3.5d,
@@ -245,6 +313,12 @@
 				id: 623,
 				type: "item",
 				item: "refinedstorage:range_upgrade"
+			}],
+			rewards: [{
+				id: 1476,
+				type: "item",
+				item: "minecraft:ender_pearl",
+				count: 4
 			}]
 		},
 		{
@@ -272,7 +346,12 @@
 					type: "item",
 					item: "refinedstorage:pattern"
 				}
-			]
+			],
+			rewards: [{
+				id: 1473,
+				type: "loot",
+				table: 12
+			}]
 		},
 		{
 			x: 0.5d,
@@ -293,7 +372,19 @@
 				id: 627,
 				type: "item",
 				item: "refinedstorage:crafter"
-			}]
+			}],
+			rewards: [
+				{
+					id: 1458,
+					type: "loot",
+					table: 12
+				},
+				{
+					id: 1459,
+					type: "loot",
+					table: 12
+				}
+			]
 		},
 		{
 			x: -1.0d,
@@ -305,6 +396,12 @@
 				id: 629,
 				type: "item",
 				item: "refinedstorage:speed_upgrade"
+			}],
+			rewards: [{
+				id: 1461,
+				type: "item",
+				item: "refinedstorage:speed_upgrade",
+				count: 2
 			}]
 		},
 		{
@@ -317,6 +414,11 @@
 				id: 631,
 				type: "item",
 				item: "refinedstorage:stack_upgrade"
+			}],
+			rewards: [{
+				id: 1460,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -333,6 +435,11 @@
 				id: 633,
 				type: "item",
 				item: "refinedstorage:crafting_monitor"
+			}],
+			rewards: [{
+				id: 1468,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -347,6 +454,11 @@
 			id: 664,
 			tasks: [{
 				id: 665,
+				type: "item",
+				item: "refinedstorage:interface"
+			}],
+			rewards: [{
+				id: 1465,
 				type: "item",
 				item: "refinedstorage:interface"
 			}]
@@ -380,6 +492,18 @@
 					id: 670,
 					type: "item",
 					item: "refinedstorage:network_card"
+				}
+			],
+			rewards: [
+				{
+					id: 1462,
+					type: "loot",
+					table: 12
+				},
+				{
+					id: 1463,
+					type: "loot",
+					table: 12
 				}
 			]
 		}
