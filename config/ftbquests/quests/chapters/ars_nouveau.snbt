@@ -1,7 +1,7 @@
 {
 	id: 939,
 	filename: "ars_nouveau",
-	order_index: 19,
+	order_index: 18,
 	title: "Ars Nouveau",
 	icon: "ars_nouveau:mana_gem",
 	default_quest_shape: "",
@@ -11,7 +11,7 @@
 			icon: "ars_nouveau:novice_spell_book",
 			x: -0.5d,
 			y: -8.5d,
-			shape: "octagon",
+			shape: "gear",
 			description: [
 				"With Ars Nouveau you will learn to harness the mana infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. ",
 				"",
@@ -51,6 +51,11 @@
 				id: 1014,
 				type: "item",
 				item: "ars_nouveau:spell_turret"
+			}],
+			rewards: [{
+				id: 1525,
+				type: "item",
+				item: "ars_nouveau:glyph_aoe"
 			}]
 		},
 		{
@@ -110,6 +115,11 @@
 				type: "item",
 				item: "ars_nouveau:magic_clay",
 				count: 8L
+			}],
+			rewards: [{
+				id: 1527,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -132,7 +142,12 @@
 					type: "item",
 					item: "ars_nouveau:apprentice_spell_book"
 				}
-			]
+			],
+			rewards: [{
+				id: 1528,
+				type: "loot",
+				table: 20
+			}]
 		},
 		{
 			title: "Mythical Clay",
@@ -154,7 +169,12 @@
 					type: "item",
 					item: "ars_nouveau:archmage_spell_book"
 				}
-			]
+			],
+			rewards: [{
+				id: 1529,
+				type: "loot",
+				table: 20
+			}]
 		},
 		{
 			x: -5.5d,
@@ -173,6 +193,11 @@
 				id: 967,
 				type: "item",
 				item: "ars_nouveau:glyph_press"
+			}],
+			rewards: [{
+				id: 1530,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -211,7 +236,12 @@
 					type: "item",
 					item: "ars_nouveau:glyph_smelt"
 				}
-			]
+			],
+			rewards: [{
+				id: 1523,
+				type: "item",
+				item: "ars_nouveau:glyph_fortune"
+			}]
 		},
 		{
 			x: -1.0d,
@@ -235,6 +265,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1531,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -278,6 +313,11 @@
 				id: 982,
 				type: "item",
 				item: "ars_nouveau:mana_bloom_crop"
+			}],
+			rewards: [{
+				id: 1524,
+				type: "item",
+				item: "ars_nouveau:glyph_harvest"
 			}]
 		},
 		{
@@ -314,7 +354,12 @@
 					item: "ars_nouveau:arcane_pedestal",
 					count: 8L
 				}
-			]
+			],
+			rewards: [{
+				id: 1532,
+				type: "loot",
+				table: 20
+			}]
 		},
 		{
 			title: "Curious Trinkets",
@@ -339,7 +384,12 @@
 					type: "item",
 					item: "ars_nouveau:ring_of_lesser_discount"
 				}
-			]
+			],
+			rewards: [{
+				id: 1533,
+				type: "loot",
+				table: 20
+			}]
 		},
 		{
 			x: -6.5d,
@@ -397,6 +447,11 @@
 				id: 1006,
 				type: "item",
 				item: "ars_nouveau:arcane_relay_splitter"
+			}],
+			rewards: [{
+				id: 1534,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -413,7 +468,19 @@
 				id: 1009,
 				type: "item",
 				item: "ars_nouveau:whelp_charm"
-			}]
+			}],
+			rewards: [
+				{
+					id: 1535,
+					type: "item",
+					item: "ars_nouveau:allow_scroll"
+				},
+				{
+					id: 1536,
+					type: "item",
+					item: "ars_nouveau:deny_scroll"
+				}
+			]
 		},
 		{
 			x: 4.5d,
@@ -431,6 +498,11 @@
 				id: 1011,
 				type: "item",
 				item: "ars_nouveau:carbuncle_charm"
+			}],
+			rewards: [{
+				id: 1537,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -449,6 +521,11 @@
 				id: 1013,
 				type: "item",
 				item: "ars_nouveau:sylph_charm"
+			}],
+			rewards: [{
+				id: 1538,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{

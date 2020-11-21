@@ -5,14 +5,7 @@ function unificationBlacklistEntry(material, type) {
 }
 
 var air = 'minecraft:air';
-
-var oreDimensional = [
-    'rftoolsbase:dimensionalshard_overworld',
-    'rftoolsbase:dimensionalshard_nether',
-    'rftoolsbase:dimensionalshard_end'
-];
-
-var oreUraninite = ['powah:uraninite_ore_poor', 'powah:uraninite_ore', 'powah:uraninite_ore_dense'];
+global.air = air;
 
 var colors = [
     'cyan',
@@ -32,23 +25,10 @@ var colors = [
     'gray',
     'light_gray'
 ];
+global.colors = colors;
 
-var typesToUnify = [
-    'nugget',
-    'ingot',
-    'gem',
-    'storage_block',
-    'ore',
-    'dust',
-    'gear',
-    'plate',
-    'rod'
-    //'ore_deposit',
-    // 'dirty_dust',
-    // 'clump',
-    // 'shard',
-    // 'crystal'
-];
+var typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
+global.typesToUnify = typesToUnify;
 
 var materialsToUnify = [
     'iron',
@@ -89,15 +69,11 @@ var materialsToUnify = [
     'potassium_nitrate',
     'saltpeter',
     'apatite',
-
+    'bitumen',
     'redstone',
     'glowstone'
 ];
-
-var unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
+global.materialsToUnify = materialsToUnify;
 
 var modPriorities = [
     'emendatusenigmatica',
@@ -115,6 +91,12 @@ var modPriorities = [
     'pedestals',
     'refinedstorage',
     'mapperbase'
+];
+global.modPriorities = modPriorities;
+
+var unificationBlacklist = [
+    unificationBlacklistEntry('quartz', 'gem'),
+    unificationBlacklistEntry('quartz', 'storage_block')
 ];
 
 var vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];

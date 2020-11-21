@@ -1,4 +1,5 @@
 events.listen('recipes', function (event) {
+    event.remove({ id: 'industrialforegoing:laser_drill_fluid/oil' });
     event.recipes.industrialforegoing.laser_drill_fluid({
         output: '{FluidName:"pneumaticcraft:oil",Amount:10}',
         rarity: [
