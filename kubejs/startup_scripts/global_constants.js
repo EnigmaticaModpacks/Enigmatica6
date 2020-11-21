@@ -18,6 +18,8 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'mythicbotany:raindeletia',
+    'mythicbotany:raindeletia_floating',
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
