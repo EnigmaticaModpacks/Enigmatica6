@@ -1,13 +1,5 @@
 //priority: 1000
 
-function shapedRecipe(result, pattern, key) {
-    return { result: result, pattern: pattern, key: key };
-}
-
-function shapelessRecipe(result, ingredients) {
-    return { result: result, ingredients: ingredients };
-}
-
 function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 }
@@ -21,7 +13,7 @@ function getPreferredItemInTag(tag) {
 function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
-    for (let mod of modPriorities) {
+    for (let mod of wrapArray(global.modPriorities)) {
         if (mod == a) return -1; // if a comes before b, then idx(a) < idx(b), so -1
         if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
     }
