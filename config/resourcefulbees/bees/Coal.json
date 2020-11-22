@@ -1,0 +1,34 @@
+{
+  "flower": "ALL",
+  "maxTimeInHive": 600,
+  "sizeModifier": 0.5,
+  "hasHoneycomb": true,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#303030",
+    "primaryColor": "#303030",
+    "secondaryColor": "#303030"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:stone",
+    "mutationOutput": "minecraft:coal_ore",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:coal",
+    "mainOutputCount": 16
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:overworld",
+    "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+    "feedItem": "minecraft:poppy",
+    "feedAmount": 4,
+    "isBreedable": true
+  },
+  "TraitData": {}
+}

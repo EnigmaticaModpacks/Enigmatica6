@@ -1,5 +1,5 @@
 
-#World generation settings for Mekanism. This config is not synced from server to client
+#World generation settings for Mekanism. This config is synced from server to client
 [world_generation]
 	#Allows chunks to retrogen Mekanism ore blocks.
 	enableRegeneration = false
@@ -10,27 +10,30 @@
 	#Generation Settings for salt.
 	[world_generation.salt]
 		#Chance that salt generates in a chunk.
-		#Range: 1 ~ 65536
+		#Range: 1 ~ 128
 		perChunk = 2
+		#Base radius of a vein of salt.
+		#Range: 1 ~ 4
+		baseRadius = 2
 		#Determines if salt should be added to world generation.
-		shouldGenerate = true
+		shouldGenerate = false
 		#Number of blocks to extend up and down when placing a vein of salt.
 		#Range: 0 ~ 127
 		ySize = 1
-		#Maximum number of blocks in a vein of salt.
-		#Range: 1 ~ 65536
-		maxVeinSize = 6
+		#Extended variability (spread) for the radius in a vein of salt.
+		#Range: 1 ~ 4
+		spread = 3
 
 	#Generation Settings for tin ore.
 	[world_generation.tin]
 		#Chance that tin generates in a chunk.
-		#Range: 1 ~ 512
+		#Range: 1 ~ 128
 		perChunk = 14
 		#Top offset for calculating height that veins of tin can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of tin can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		bottomOffset = 0
-		#Base maximum height (exclusive) that veins of tin can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
+		#Maximum height (exclusive) that veins of tin can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 60
 		#Determines if tin ore should be added to world generation.
@@ -42,13 +45,13 @@
 	#Generation Settings for copper ore.
 	[world_generation.copper]
 		#Chance that copper generates in a chunk.
-		#Range: 1 ~ 512
+		#Range: 1 ~ 128
 		perChunk = 16
 		#Top offset for calculating height that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		bottomOffset = 0
-		#Base maximum height (exclusive) that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
+		#Maximum height (exclusive) that veins of copper can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 60
 		#Determines if copper ore should be added to world generation.
@@ -60,13 +63,13 @@
 	#Generation Settings for osmium ore.
 	[world_generation.osmium]
 		#Chance that osmium generates in a chunk.
-		#Range: 1 ~ 512
+		#Range: 1 ~ 128
 		perChunk = 12
 		#Top offset for calculating height that veins of osmium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of osmium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		bottomOffset = 0
-		#Base maximum height (exclusive) that veins of osmium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
+		#Maximum height (exclusive) that veins of osmium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 60
 		#Determines if osmium ore should be added to world generation.
@@ -78,13 +81,13 @@
 	#Generation Settings for fluorite ore.
 	[world_generation.fluorite]
 		#Chance that fluorite generates in a chunk.
-		#Range: 1 ~ 512
+		#Range: 1 ~ 128
 		perChunk = 6
 		#Top offset for calculating height that veins of fluorite can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of fluorite can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		bottomOffset = 0
-		#Base maximum height (exclusive) that veins of fluorite can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
+		#Maximum height (exclusive) that veins of fluorite can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 32
 		#Determines if fluorite ore should be added to world generation.
@@ -96,13 +99,13 @@
 	#Generation Settings for uranium ore.
 	[world_generation.uranium]
 		#Chance that uranium generates in a chunk.
-		#Range: 1 ~ 512
+		#Range: 1 ~ 128
 		perChunk = 8
 		#Top offset for calculating height that veins of uranium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of uranium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		bottomOffset = 0
-		#Base maximum height (exclusive) that veins of uranium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
+		#Maximum height (exclusive) that veins of uranium can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 60
 		#Determines if uranium ore should be added to world generation.
@@ -114,13 +117,13 @@
 	#Generation Settings for lead ore.
 	[world_generation.lead]
 		#Chance that lead generates in a chunk.
-		#Range: 1 ~ 512
+		#Range: 1 ~ 128
 		perChunk = 8
 		#Top offset for calculating height that veins of lead can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		topOffset = 0
 		#Bottom offset for calculating height that veins of lead can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		bottomOffset = 0
-		#Base maximum height (exclusive) that veins of lead can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
+		#Maximum height (exclusive) that veins of lead can spawn. Height is calculated by: random.nextInt(maxHeight - topOffset) + bottomOffset
 		#Range: 1 ~ 256
 		maxHeight = 48
 		#Determines if lead ore should be added to world generation.

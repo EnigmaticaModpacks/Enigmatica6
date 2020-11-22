@@ -1,0 +1,1492 @@
+{
+	id: 147,
+	filename: "tools",
+	order_index: 3,
+	title: "Tools",
+	icon: {
+		id: "minecraft:netherite_pickaxe",
+		Count: true,
+		tag: {
+			Damage: 0
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -7.5d,
+			y: -8.5d,
+			subtitle: "Swiss-Army… Hammer",
+			description: [
+				"A versatile multi-tool capable of clearing large areas with ease. Sneak right click to access the GUI where Drill Bits and Enchanted Books can be installed as well as changing the drill mode.",
+				"",
+				"Accepts Fortune or Silk Touch books."
+			],
+			dependencies: [I;325],
+			id: 454,
+			tasks: [{
+				id: 455,
+				type: "item",
+				item: "pneumaticcraft:jackhammer"
+			}],
+			rewards: [{
+				id: 456,
+				type: "item",
+				item: "pneumaticcraft:drill_bit_compressed_iron"
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -7.5d,
+			subtitle: "Lucy In the Sky",
+			description: ["A bit faster than the Compressed Iron Bit and with basic vein mining functions."],
+			dependencies: [I;454],
+			id: 457,
+			tasks: [{
+				id: 458,
+				type: "item",
+				item: "pneumaticcraft:drill_bit_diamond"
+			}],
+			rewards: [{
+				id: 459,
+				type: "item",
+				item: "pneumaticcraft:volume_upgrade",
+				count: 5
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -6.5d,
+			subtitle: "I'm Told You Were The Best",
+			description: ["Faster still and with full vein mining capabilities."],
+			dependencies: [I;457],
+			id: 460,
+			tasks: [{
+				id: 461,
+				type: "item",
+				item: "pneumaticcraft:drill_bit_netherite"
+			}],
+			rewards: [{
+				id: 462,
+				type: "item",
+				item: "pneumaticcraft:speed_upgrade",
+				count: 2
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -9.5d,
+			subtitle: "Send Your Armies But They'll Never Be Enough, My Shell's Too Tough",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Magnet Upgrade",
+				"● Auto Tool Charging",
+				"● Block Launcher",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 463,
+			tasks: [{
+				id: 464,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_chestplate",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -10.5d,
+			subtitle: "Soak It In 'Cause It's The Last You'll Ever See",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Night Vision",
+				"● Entity and Block Tracking",
+				"● Entity and Block Hacking",
+				"● S.C.U.B.A. Gear",
+				"● Item Search",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 465,
+			tasks: [{
+				id: 466,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_helmet",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -7.5d,
+			subtitle: "I'll Never Hide. I Can't. I'm Too Shiny",
+			description: [
+				"Notable Upgrades ",
+				"",
+				"● Run Speed",
+				"● Jump Height",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 467,
+			tasks: [{
+				id: 468,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_leggings",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -6.5d,
+			subtitle: "Now It's Time to Kick Your...Hiney",
+			description: [
+				"Notable Upgrades ",
+				"",
+				"● Built in Step Assist",
+				"● Built in Fall Damage Negation",
+				"● Swim Speed",
+				"● Powered Kick",
+				"● Creative Flight",
+				"● Self Repairing"
+			],
+			dependencies: [I;357],
+			id: 469,
+			tasks: [{
+				id: 470,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_boots",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Armor Upgrade",
+			x: -10.0d,
+			y: -8.5d,
+			subtitle: "You Tried to Be Tough But Your Armor's Just Not Hard Enough",
+			description: ["Each armor piece accepts up to four of these for extreme protection."],
+			dependencies: [I;
+				465,
+				469,
+				467,
+				463
+			],
+			dependency_requirement: "one_completed",
+			id: 471,
+			tasks: [{
+				id: 472,
+				type: "item",
+				item: "pneumaticcraft:armor_upgrade",
+				count: 4L
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -10.0d,
+			dependencies: [I;465],
+			id: 473,
+			tasks: [{
+				id: 474,
+				type: "item",
+				item: "pneumaticcraft:night_vision_upgrade"
+			}],
+			rewards: [{
+				id: 1605,
+				type: "loot",
+				table: 12
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -10.0d,
+			dependencies: [I;465],
+			id: 475,
+			tasks: [{
+				id: 476,
+				type: "item",
+				item: "pneumaticcraft:scuba_upgrade"
+			}],
+			rewards: [{
+				id: 1604,
+				type: "loot",
+				table: 12
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -9.0d,
+			dependencies: [I;463],
+			id: 477,
+			tasks: [{
+				id: 478,
+				type: "item",
+				item: "pneumaticcraft:magnet_upgrade"
+			}],
+			rewards: [{
+				id: 1602,
+				type: "loot",
+				table: 12
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -9.0d,
+			dependencies: [I;463],
+			id: 479,
+			tasks: [{
+				id: 480,
+				type: "item",
+				item: "pneumaticcraft:charging_upgrade"
+			}],
+			rewards: [{
+				id: 1603,
+				type: "loot",
+				table: 12
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -7.0d,
+			dependencies: [I;469],
+			id: 483,
+			tasks: [{
+				id: 484,
+				type: "item",
+				item: "pneumaticcraft:flippers_upgrade"
+			}],
+			rewards: [{
+				id: 1599,
+				type: "loot",
+				table: 12
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -8.0d,
+			subtitle: "Shared Experiences",
+			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact."],
+			dependencies: [I;325],
+			id: 487,
+			tasks: [{
+				id: 488,
+				type: "item",
+				item: "pneumaticcraft:memory_stick"
+			}]
+		},
+		{
+			title: "Jumping Upgrade",
+			x: -11.0d,
+			y: -8.0d,
+			description: [""],
+			dependencies: [I;467],
+			id: 493,
+			tasks: [{
+				id: 494,
+				type: "item",
+				item: "pneumaticcraft:jumping_upgrade_4"
+			}],
+			rewards: [{
+				id: 1601,
+				type: "loot",
+				table: 13
+			}]
+		},
+		{
+			title: "Jet Boots Upgrade",
+			x: -9.0d,
+			y: -7.0d,
+			description: [""],
+			dependencies: [I;469],
+			id: 501,
+			tasks: [{
+				id: 502,
+				type: "item",
+				item: "pneumaticcraft:jet_boots_upgrade_5"
+			}],
+			rewards: [{
+				id: 1600,
+				type: "loot",
+				table: 13
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -7.5d,
+			subtitle: "Target Acquired",
+			description: [
+				"Bats. The greatest enemy of them all. Now behold, their doom is in your hands.",
+				"",
+				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak right click to configure."
+			],
+			dependencies: [I;357],
+			id: 503,
+			tasks: [{
+				id: 504,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:micromissiles",
+					Count: true,
+					tag: {
+						damage: 0.0f,
+						topSpeed: 0.0f,
+						Damage: 0,
+						turnSpeed: 0.0f
+					}
+				}
+			}],
+			rewards: [{
+				id: 1609,
+				type: "loot",
+				table: 11
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -9.5d,
+			subtitle: "Stand and Deliver",
+			description: [""],
+			dependencies: [I;507],
+			id: 505,
+			tasks: [{
+				id: 506,
+				type: "item",
+				item: "pneumaticcraft:sentry_turret"
+			}],
+			rewards: [{
+				id: 509,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:gun_ammo",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -9.5d,
+			subtitle: "Leveling the Playing Field",
+			description: [""],
+			dependencies: [I;179],
+			id: 507,
+			tasks: [{
+				id: 508,
+				type: "item",
+				item: "pneumaticcraft:minigun"
+			}],
+			rewards: [{
+				id: 525,
+				type: "item",
+				item: {
+					id: "pneumaticcraft:gun_ammo",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Ammunition",
+			x: -6.0d,
+			y: -8.5d,
+			subtitle: "Something For Every Occasion",
+			description: [
+				"Craft any two types of specialized ammo and give them a try. ",
+				"",
+				"",
+				"PACK NOTE: Need to add tags to ammo to facilitate this. "
+			],
+			dependencies: [I;507],
+			id: 514,
+			tasks: [
+				{
+					id: 515,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_ap",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 520,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_incendiary",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 521,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_weighted",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 523,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_explosive",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 524,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_freezing",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -5.0d,
+			y: -8.5d,
+			subtitle: "Inevitable Escalation",
+			description: [""],
+			dependencies: [I;507],
+			id: 526,
+			tasks: [{
+				id: 527,
+				type: "item",
+				item: "pneumaticcraft:guard_drone"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -7.5d,
+			subtitle: "This Is How You Get SkyNET",
+			description: [""],
+			dependencies: [I;526],
+			id: 528,
+			tasks: [{
+				id: 529,
+				type: "item",
+				item: "pneumaticcraft:minigun_upgrade"
+			}],
+			rewards: [{
+				id: 1608,
+				type: "loot",
+				table: 11
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -10.5d,
+			subtitle: "It's Over! I Have the High Ground!",
+			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."],
+			dependencies: [I;360],
+			id: 530,
+			tasks: [{
+				id: 531,
+				type: "item",
+				item: "pneumaticcraft:aerial_interface"
+			}],
+			rewards: [{
+				id: 1606,
+				type: "loot",
+				table: 12
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -10.5d,
+			subtitle: "The Only Thing They Fear... Is You.",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Auto Feeding",
+				"● Night Vision",
+				"● Solar Charging",
+				"● Underwater Breathing",
+				"● Status Effect Protection",
+				"● Radiation Protection",
+				"● Energy Shielding"
+			],
+			id: 1077,
+			tasks: [{
+				id: 1078,
+				type: "item",
+				item: {
+					id: "mekanism:mekasuit_helmet",
+					Count: true,
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -9.5d,
+			subtitle: "Stand Strong Against Their Legions",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Creative Flight",
+				"● Radiation Tracking",
+				"● Energy Distribution",
+				"● Radiation Protection",
+				"● Energy Shielding"
+			],
+			id: 1079,
+			tasks: [{
+				id: 1080,
+				type: "item",
+				item: {
+					id: "mekanism:mekasuit_bodyarmor",
+					Count: true,
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -7.5d,
+			subtitle: "They Are Rage, Brutal, Without Mercy",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Run Speed Enhancement",
+				"● Radiation Protection",
+				"● Energy Shielding"
+			],
+			id: 1081,
+			tasks: [{
+				id: 1082,
+				type: "item",
+				item: {
+					id: "mekanism:mekasuit_pants",
+					Count: true,
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -6.5d,
+			subtitle: "But You, You Will Be Worse",
+			description: [
+				"Notable Upgrades",
+				"",
+				"● Jump Height Enhancement",
+				"● Magnet Upgrade",
+				"● Radiation Protection",
+				"● Energy Shielding"
+			],
+			id: 1083,
+			tasks: [{
+				id: 1084,
+				type: "item",
+				item: {
+					id: "mekanism:mekasuit_boots",
+					Count: true,
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		},
+		{
+			icon: "mekanism:canteen",
+			x: 0.0d,
+			y: -8.0d,
+			subtitle: "Soylent Green",
+			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."],
+			id: 1085,
+			tasks: [
+				{
+					id: 1086,
+					type: "item",
+					item: "mekanism:canteen"
+				},
+				{
+					id: 1205,
+					type: "item",
+					item: "mekanism:nutritional_liquifier"
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -10.0d,
+			dependencies: [I;1077],
+			id: 1087,
+			tasks: [{
+				id: 1088,
+				type: "item",
+				item: "mekanism:module_vision_enhancement_unit"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -10.0d,
+			dependencies: [I;1077],
+			id: 1089,
+			tasks: [{
+				id: 1090,
+				type: "item",
+				item: "mekanism:module_electrolytic_breathing_unit"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -7.0d,
+			dependencies: [I;1083],
+			id: 1091,
+			tasks: [{
+				id: 1092,
+				type: "item",
+				item: "mekanism:module_hydraulic_propulsion_unit"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -7.0d,
+			dependencies: [I;1083],
+			id: 1093,
+			tasks: [{
+				id: 1094,
+				type: "item",
+				item: "mekanism:module_magnetic_attraction_unit"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -9.0d,
+			dependencies: [I;1079],
+			id: 1095,
+			tasks: [{
+				id: 1096,
+				type: "item",
+				item: "mekanism:module_charge_distribution_unit"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -8.5d,
+			subtitle: "The Cost Of Progress",
+			description: [""],
+			dependencies: [I;
+				1079,
+				1083,
+				1077,
+				1081
+			],
+			id: 1097,
+			tasks: [{
+				id: 1098,
+				type: "item",
+				item: "mekanism:module_energy_unit"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -9.0d,
+			dependencies: [I;1079],
+			id: 1099,
+			tasks: [{
+				id: 1100,
+				type: "item",
+				item: "mekanism:module_jetpack_unit"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -8.0d,
+			dependencies: [I;1081],
+			id: 1101,
+			tasks: [{
+				id: 1102,
+				type: "item",
+				item: "mekanism:module_locomotive_boosting_unit"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -8.5d,
+			subtitle: "Don't Leave That Plasma Cutter Running",
+			description: ["A basic multi-tool with built in vein mining and excellent attack damage."],
+			id: 1103,
+			tasks: [{
+				id: 1104,
+				type: "item",
+				item: {
+					id: "mekanism:atomic_disassembler",
+					Count: true,
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -6.5d,
+			subtitle: "Rip and Tear",
+			description: ["A powerful all in one tool capable of accepting several upgrades. "],
+			id: 1105,
+			tasks: [{
+				id: 1106,
+				type: "item",
+				item: {
+					id: "mekanism:meka_tool",
+					Count: true,
+					tag: {
+						HideFlags: 2
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -7.5d,
+			description: ["Used for applying all upgrades to the MekaTool and MekaArmor pieces."],
+			id: 1107,
+			tasks: [{
+				id: 1108,
+				type: "item",
+				item: "mekanism:modification_station"
+			}]
+		},
+		{
+			title: "Tools and Armor",
+			x: -5.5d,
+			y: -13.0d,
+			shape: "gear",
+			description: [
+				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions.",
+				"",
+				"Note: Most tools and armor have been Tagged for easier search in JEI. Search for the following categories to discover more:",
+				"",
+				"● $armor",
+				"● $armor/helm",
+				"● $armor/chest",
+				"● $armor/leggings",
+				"● $armor/boots",
+				"",
+				"● $tools",
+				"● $tools/pickaxe",
+				"● $tools/shovel",
+				"● $tools/axe",
+				"● $tools/hoe",
+				"● $tools/multi-tool"
+			],
+			id: 1116,
+			tasks: [{
+				id: 1117,
+				type: "checkmark",
+				icon: {
+					id: "minecraft:netherite_chestplate",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			icon: {
+				id: "mininggadgets:mininggadget",
+				Count: true,
+				tag: {}
+			},
+			x: -10.0d,
+			y: -15.0d,
+			subtitle: "Frickin' Laser Beams",
+			description: [
+				"A powered tool capable of mining blocks from a distance. ",
+				"",
+				"Danger: Class 4 Laser Device. Avoid eye or skin exposure.",
+				"",
+				"Notable Upgrades",
+				"",
+				"● Torch Placer",
+				"● Area Mining",
+				"● Silk Touch",
+				"● Fortune",
+				"● Filterable Void Upgrade to delete unwanted trash like excess stone",
+				"● Magnet upgrad that draws mined items into your inventory",
+				"● Paver upgrade that fills in holes to create a safe path"
+			],
+			dependencies: [I;1132],
+			id: 1119,
+			tasks: [
+				{
+					id: 1120,
+					type: "item",
+					item: {
+						id: "mininggadgets:mininggadget",
+						Count: true,
+						tag: {}
+					}
+				},
+				{
+					id: 1123,
+					type: "item",
+					item: "mininggadgets:modificationtable"
+				}
+			]
+		},
+		{
+			x: -10.0d,
+			y: -12.5d,
+			subtitle: "This Little Light of Mine",
+			description: [
+				"A dream come true for any beginning spelunker.",
+				"",
+				"The Mining Helmet doesn't stop mobs from spawning, but it will give you that extra little bit of light to help spot those precious shiney blue rocks."
+			],
+			dependencies: [I;1134],
+			id: 1121,
+			tasks: [{
+				id: 1122,
+				type: "item",
+				item: {
+					id: "mining_helmet:mining_helmet",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -14.5d,
+			dependencies: [I;1119],
+			id: 1124,
+			tasks: [{
+				id: 1125,
+				type: "item",
+				item: "mininggadgets:upgrade_fortune_3"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -13.5d,
+			dependencies: [I;1119],
+			id: 1126,
+			tasks: [{
+				id: 1127,
+				type: "item",
+				item: "mininggadgets:upgrade_magnet"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -14.5d,
+			dependencies: [I;1119],
+			id: 1128,
+			tasks: [{
+				id: 1129,
+				type: "item",
+				item: "mininggadgets:upgrade_efficiency_5"
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -13.5d,
+			dependencies: [I;1119],
+			id: 1130,
+			tasks: [{
+				id: 1131,
+				type: "item",
+				item: "mininggadgets:upgrade_battery_3"
+			}]
+		},
+		{
+			title: "Alfsteel Armor",
+			icon: {
+				id: "mythicbotany:alfsteel_helmet",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 0.0d,
+			y: -12.0d,
+			subtitle: "Evolution Complete",
+			description: ["An upgrade to Terrasteel armor, Alfsteel provides bonus reach, speed, and knockback resistance."],
+			dependencies: [I;
+				1141,
+				1429
+			],
+			id: 1136,
+			tasks: [
+				{
+					id: 1137,
+					type: "item",
+					item: {
+						id: "mythicbotany:alfsteel_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1138,
+					type: "item",
+					item: {
+						id: "mythicbotany:alfsteel_chestplate",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1139,
+					type: "item",
+					item: {
+						id: "mythicbotany:alfsteel_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1140,
+					type: "item",
+					item: {
+						id: "mythicbotany:alfsteel_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Terrasteel Armor",
+			icon: {
+				id: "botania:terrasteel_helmet",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -0.5d,
+			y: -13.0d,
+			subtitle: "Direct My Wrath",
+			description: ["Potent armor that's deeply infused with magic, Terrasteel affords excellent protection, reduced mana costs, and knockback resistance."],
+			dependencies: [I;1303],
+			id: 1141,
+			tasks: [
+				{
+					id: 1142,
+					type: "item",
+					item: {
+						id: "botania:terrasteel_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1143,
+					type: "item",
+					item: {
+						id: "botania:terrasteel_chestplate",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1144,
+					type: "item",
+					item: {
+						id: "botania:terrasteel_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1145,
+					type: "item",
+					item: {
+						id: "botania:terrasteel_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: -13.0d,
+			description: ["Magically imbued and magically combined. This tool can absorb mana to increase it's power, just like the Terrashatterer."],
+			dependencies: [I;1303],
+			id: 1146,
+			tasks: [{
+				id: 1147,
+				type: "item",
+				item: {
+					id: "aiotbotania:terra_aiot",
+					Count: true,
+					tag: {
+						mana: 9999,
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -12.0d,
+			description: ["Magically imbued and magically combined. This tool can absorb mana to increase it's power, just like the Terrashatterer."],
+			dependencies: [I;1429],
+			id: 1148,
+			tasks: [{
+				id: 1149,
+				type: "item",
+				item: {
+					id: "aiotbotania:alfsteel_aiot",
+					Count: true,
+					tag: {
+						mana: 9999,
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Neptunium Armor",
+			x: 0.0d,
+			y: -14.0d,
+			subtitle: "And With Strange Aeons, Even Death May Die",
+			description: ["Forged in ages past in the deepest depths. Neptunium armor grants it's wearer a taste of the unimaginable power of the Abyssal Depths."],
+			dependencies: [I;1203],
+			id: 1150,
+			tasks: [{
+				id: 1151,
+				type: "item",
+				item: {
+					id: "aquaculture:neptunium_helmet",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -14.0d,
+			description: ["Neptunium Tools offer many benefits to those who spend most of their time under water. "],
+			dependencies: [I;1203],
+			id: 1152,
+			tasks: [{
+				id: 1153,
+				type: "item",
+				item: {
+					id: "aquaculture:neptunium_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Excavators and Hammers",
+			icon: {
+				id: "vanillahammers:netherite_hammer",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -5.5d,
+			y: -11.5d,
+			description: ["Vanilla Hammers and Excavators offers 3x3 mining tools that deal with both stone and dirt type blocks. They make an excellent way to speed up early mining endeavours."],
+			id: 1156,
+			tasks: [{
+				id: 1157,
+				type: "item",
+				title: "Any morevanillalib:tools",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "morevanillalib:tools"
+					}
+				}
+			}]
+		},
+		{
+			title: "Archmage's Arcana",
+			icon: {
+				id: "ars_nouveau:archmage_hood",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -1.0d,
+			y: -16.0d,
+			description: ["Ars Nouveau has several tiers of armor to assist the aspiring caster. Each permits the wearer to access more mana and regenerate spent mana faster."],
+			dependencies: [I;981],
+			id: 1158,
+			tasks: [
+				{
+					id: 1159,
+					type: "item",
+					item: {
+						id: "ars_nouveau:archmage_hood",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1162,
+					type: "item",
+					item: {
+						id: "ars_nouveau:archmage_robes",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1163,
+					type: "item",
+					item: {
+						id: "ars_nouveau:archmage_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1164,
+					type: "item",
+					item: {
+						id: "ars_nouveau:archmage_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Skyseeker's Mantle",
+			icon: {
+				id: "naturesaura:sky_helmet",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -0.5d,
+			y: -15.0d,
+			description: ["Skyseeker's Armor imbues the wearer with the affinity of the wind itself, granting speed and a lighter step."],
+			dependencies: [I;745],
+			id: 1160,
+			tasks: [
+				{
+					id: 1161,
+					type: "item",
+					item: {
+						id: "naturesaura:sky_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1165,
+					type: "item",
+					item: {
+						id: "naturesaura:sky_chest",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1166,
+					type: "item",
+					item: {
+						id: "naturesaura:sky_pants",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1167,
+					type: "item",
+					item: {
+						id: "naturesaura:sky_shoes",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -6.0d,
+			y: -5.5d,
+			description: [
+				"A powered drill that makes short work of any digging task. Use a Tinker's Workbench to install various upgrades:",
+				"",
+				"● Integral Component ",
+				"● RF Coil",
+				"● Radial Enhancement"
+			],
+			dependencies: [I;1187],
+			id: 1168,
+			tasks: [{
+				id: 1169,
+				type: "item",
+				item: "thermal:flux_drill"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -5.5d,
+			description: [
+				"A powered saw that makes short work of any arboreal task. Use a Tinker's Workbench to install various upgrades:",
+				"",
+				"● Integral Component ",
+				"● RF Coil",
+				"● Radial Enhancement"
+			],
+			dependencies: [I;1187],
+			id: 1170,
+			tasks: [{
+				id: 1171,
+				type: "item",
+				item: "thermal:flux_saw"
+			}]
+		},
+		{
+			title: "Hazmat Suit",
+			icon: {
+				id: "thermal:hazmat_helmet",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -6.0d,
+			y: -4.5d,
+			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."],
+			dependencies: [I;1190],
+			id: 1172,
+			tasks: [
+				{
+					id: 1173,
+					type: "item",
+					item: {
+						id: "thermal:hazmat_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1178,
+					type: "item",
+					item: {
+						id: "thermal:hazmat_chestplate",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1179,
+					type: "item",
+					item: {
+						id: "thermal:hazmat_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1180,
+					type: "item",
+					item: {
+						id: "thermal:hazmat_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			title: "Diving Suit",
+			icon: {
+				id: "thermal:diving_helmet",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: -5.0d,
+			y: -4.5d,
+			description: ["A technological marvel that allows the wearer to remain productive for longer under water."],
+			dependencies: [I;930],
+			id: 1174,
+			tasks: [
+				{
+					id: 1175,
+					type: "item",
+					item: {
+						id: "thermal:diving_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1181,
+					type: "item",
+					item: {
+						id: "thermal:diving_chestplate",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1182,
+					type: "item",
+					item: {
+						id: "thermal:diving_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1183,
+					type: "item",
+					item: {
+						id: "thermal:diving_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -5.5d,
+			y: -3.5d,
+			description: [
+				"A powered magnet, perfect for keeping your precious items from falling into lava. Use a Tinker's Workbench to install various upgrades:",
+				"",
+				"● Integral Component ",
+				"● RF Coil",
+				"● Radial Enhancement"
+			],
+			dependencies: [I;1187],
+			id: 1176,
+			tasks: [{
+				id: 1177,
+				type: "item",
+				item: "thermal:flux_magnet"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -15.0d,
+			description: [
+				"Nature's Aura has a variety of useful mining implements, each with their own special features beyond basic block breaking.",
+				"",
+				"Read more about them in the Natural Items section of the Book of Natural Aura."
+			],
+			dependencies: [I;745],
+			id: 1206,
+			tasks: [{
+				id: 1207,
+				type: "item",
+				item: {
+					id: "naturesaura:sky_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}

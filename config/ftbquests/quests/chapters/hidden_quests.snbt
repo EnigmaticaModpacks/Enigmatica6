@@ -1,0 +1,56 @@
+{
+	id: 808,
+	filename: "hidden_quests",
+	order_index: 1,
+	title: "Hidden_Quests",
+	icon: "minecraft:experience_bottle",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Visit The End",
+			x: -10.0d,
+			y: -8.0d,
+			description: ["Visit The End"],
+			id: 809,
+			tasks: [{
+				id: 810,
+				type: "dimension",
+				dimension: "minecraft:the_end"
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -8.0d,
+			id: 1132,
+			tasks: [{
+				id: 1133,
+				type: "advancement",
+				icon: "minecraft:diamond",
+				advancement: "minecraft:story/mine_diamond",
+				criterion: ""
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -8.0d,
+			id: 1134,
+			tasks: [{
+				id: 1135,
+				type: "advancement",
+				advancement: "minecraft:story/smelt_iron",
+				criterion: ""
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -8.0d,
+			id: 1203,
+			tasks: [{
+				id: 1204,
+				type: "item",
+				item: "aquaculture:neptunes_bounty"
+			}]
+		}
+	]
+}

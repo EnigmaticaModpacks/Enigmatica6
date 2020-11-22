@@ -3,3 +3,9 @@
 	#Adds more vanilla structures to the list of structures that lakes cannot generate inside of. Only villages when set to false. Requires reload.
 	extra_lake_proofing = true
 
+[biome_dictionary]
+	#A list of mod IDs that will be ignored when the biome dictionary attempts to register unregistered biomes. Mod IDs must be comma separated ("biomesoplenty, byg, blue_skies").
+	ignored_mods = ""
+	#Determines if the biome dictionary make assumptions for unregistered biomes. Setting this to false can fix issues where a structure generates in the wrong dimension.
+	make_best_guess = true
+

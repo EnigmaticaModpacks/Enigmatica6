@@ -16,11 +16,13 @@
 	max_programming_area = 250000
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
-	#Oil worldgen blacklist: add dimension IDs to this list if you don't want oil worldgen to happen there.
-	oil_world_gen_blacklist = ["minecraft:the_nether", "minecraft:the_end"]
-	#Chance per chunk in percentage to generate an Oil Lake. Set to 0 for no oil lakes.
+	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.
+	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
+	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
+	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
+	vacuum_trap_blacklist = ["resourcefulbees:coal_bee", "resourcefulbees:creeper_bee", "resourcefulbees:diamond_bee", "resourcefulbees:emerald_bee", "resourcefulbees:ender_bee", "resourcefulbees:gold_bee", "resourcefulbees:icy_bee", "resourcefulbees:iron_bee", "resourcefulbees:lapis_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:netherite_bee", "resourcefulbees:oreo_bee", "resourcefulbees:pigman_bee", "resourcefulbees:redstone_bee", "resourcefulbees:rgbee_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:slimy_bee", "resourcefulbees:wither_bee", "resourcefulbees:zombie_bee"]
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
 	min_fluid_fuel_temperature = 373
@@ -247,7 +249,7 @@
 	#Default thermal resistance for solid blocks
 	#Range: 4.9E-324 ~ 1.7976931348623157E308
 	blockThermalResistance = 500.0
-	#Ambient temperature modifier by height (in degrees per block above 80 or below 40)
+	#Ambient temperature increase by altitude, in degrees per block below 48 (or 75% of sea level). Note that temperature decrease per block above 64 is handled by vanilla.
 	#Range: 0.0 ~ 10.0
 	ambientTemperatureHeightModifier = 0.1
 	#Thermal resistance of air; controls how fast blocks lose heat to air when exposed
@@ -264,10 +266,10 @@
 	#Minimum pressure for a Logistics Module to function
 	#Range: 0.0 ~ 20.0
 	min_pressure = 3.0
-	#Air usage per mB of fluid per block distance
+	#Logistics Module air usage per mB of fluid per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
 	fluid_transport_cost = 0.02
-	#Air usage per item per block distance
+	#Logistics Module air usage per item per block distance
 	#Range: 0.0 ~ 1.7976931348623157E308
 	item_transport_cost = 1.0
 
@@ -278,4 +280,11 @@
 	#Max veinmining range (distance from mined block) for Vein Miner Plus mode
 	#Range: 1 ~ 32
 	max_vein_miner_range = 10
+
+[Villagers]
+	#Add a village house for the Pressure Mechanic? Note: setting this to false won't affect any already-generated houses, only disable new generation.
+	addMechanicHouse = true
+	#Which trades should the Pressure Mechanic offer? ALL will offer all trades. PCB_BLUEPRINT will offer *only* the PCB Blueprint, an item required for normal progression through the mod. NONE will offer nothing (but the PCB Blueprint is also available via Amadron by default). Note that changing this won't affect any already-spawned Pressure Mechanics.
+	#Allowed Values: NONE, PCB_BLUEPRINT, ALL
+	mechanicTrades = "ALL"
 

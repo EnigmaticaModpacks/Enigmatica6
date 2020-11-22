@@ -10,19 +10,19 @@ lens_of_ender = true
 
 ["World Gen"]
 	#Enable/Disable ore generation. [default:true]
-	oreGen = true
+	oreGen = false
 	#Dry Ice Ore generation chance
 	#Range: 1 ~ 64
 	dryIceGenChance = 1
 	#Poor Uraninite Ore generation chance
 	#Range: 1 ~ 64
-	poorUraniniteGenChance = 8
+	poorUraniniteGenChance = 1
 	#Dense Uraninite Ore generation chance
 	#Range: 1 ~ 64
-	denseUraniniteGenChance = 3
+	denseUraniniteGenChance = 1
 	#Uraninite Ore generation chance
 	#Range: 1 ~ 64
-	uraniniteGenChance = 6
+	uraniniteGenChance = 1
 
 [Materials]
 	#
@@ -34,7 +34,7 @@ lens_of_ender = true
 	#List of heat source blocks used under Thermo Generator.
 	#Block registry name = heat, eg: ["minecraft:lava=1000", "minecraft:magma_block=800"]
 	#Min = 1, max = 900000000
-	heatSources = ["minecraft:lava=1000", "minecraft:magma_block=800", "powah:blazing_crystal_block=2800"]
+	heatSources = ["minecraft:lava=1000", "minecraft:magma_block=1200", "minecraft:fire_coral=1800", "powah:nitro_crystal_block=8000", "powah:blazing_crystal_block=2800", "botania:blaze_block=1600", "botania:blaze_lantern=1600", "quark:brimstone=1200"]
 	#Energy per solid fuel tick. [default: 30]
 	#Eg: Coal has 1600 fuel tick, so will generate 48000 FE.
 	#Range: 1 ~ 1000000

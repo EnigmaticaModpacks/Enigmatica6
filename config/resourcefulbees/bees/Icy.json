@@ -1,0 +1,31 @@
+{
+  "flower": "all",
+  "hasHoneycomb": false,
+  "traits": ["can_swim"],
+  "maxTimeInHive": 1200,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#92b9fe",
+    "primaryColor": "#92b9fe",
+    "secondaryColor": "#303030"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:water",
+    "mutationOutput": "minecraft:ice",
+    "mutationType": "FLUID_TO_BLOCK",
+    "mutationCount": 20
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": false
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

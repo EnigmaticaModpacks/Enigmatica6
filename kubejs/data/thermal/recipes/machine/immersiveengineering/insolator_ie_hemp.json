@@ -1,0 +1,22 @@
+{
+    "type": "thermal:insolator",
+    "ingredient": {
+        "item": "immersiveengineering:seed"
+    },
+    "result": [
+        {
+            "item": "immersiveengineering:hemp_fiber",
+            "chance": 1.5
+        },
+        {
+            "item": "immersiveengineering:seed",
+            "chance": 1.1
+        }
+    ],
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "immersiveengineering"
+        }
+    ]
+}

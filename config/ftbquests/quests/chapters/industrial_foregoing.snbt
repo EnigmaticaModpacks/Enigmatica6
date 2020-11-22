@@ -1,0 +1,441 @@
+{
+	id: 3,
+	filename: "industrial_foregoing",
+	order_index: 10,
+	title: "Industrial Foregoing",
+	icon: "industrialforegoing:latex_processing_unit",
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Industrial Foregoing",
+			icon: "industrialforegoing:plastic",
+			x: 1.5d,
+			y: -3.5d,
+			description: ["This mod provides a wide range of machines to automate various tasks. This questline introduces some key machines (but not ALL the machines, as there are quite a few)."],
+			id: 74,
+			tasks: [{
+				id: 88,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 89,
+					type: "item",
+					item: "minecraft:acacia_log",
+					count: 16
+				},
+				{
+					id: 90,
+					type: "item",
+					item: "minecraft:acacia_sapling",
+					count: 8
+				},
+				{
+					id: 1592,
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: true,
+						tag: {
+							"patchouli:book": "industrialforegoing:industrial_foregoing"
+						}
+					}
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -0.5d,
+			description: ["The Fluid Extractor, shockingly, extracts fluid. Place one facing a log block, and it will slowly break down the log while producing Latex. Power is optional, but speeds up the process by a factor of 2.5. Acacia logs give the best yield."],
+			dependencies: [I;77],
+			id: 75,
+			tasks: [{
+				id: 76,
+				type: "item",
+				item: "industrialforegoing:fluid_extractor"
+			}],
+			rewards: [{
+				id: 1576,
+				type: "item",
+				item: "minecraft:acacia_log",
+				count: 16
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -2.0d,
+			description: ["There are currently three (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."],
+			dependencies: [I;
+				70,
+				74
+			],
+			id: 77,
+			tasks: [{
+				id: 78,
+				type: "item",
+				item: "industrialforegoing:machine_frame_pity"
+			}],
+			rewards: [{
+				id: 1573,
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 8
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 1.0d,
+			description: ["The Latex Processing Unit takes latex, water, and power as inputs to produce Tiny Dry Rubber. This can be crafted into Dry Rubber, which in turn is smelted into Plastic, a critical resource."],
+			dependencies: [I;
+				72,
+				75
+			],
+			id: 79,
+			tasks: [{
+				id: 80,
+				type: "item",
+				item: "industrialforegoing:latex_processing_unit"
+			}],
+			rewards: [{
+				id: 1577,
+				type: "loot",
+				table: 3
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 1.0d,
+			description: ["The second tier of machine frame. A few recipes (such as the Plant Fertilizer) use this frame on its own, but it's also a component of the third tier of machine frame."],
+			dependencies: [I;
+				84,
+				87
+			],
+			id: 81,
+			tasks: [{
+				id: 82,
+				type: "item",
+				item: "industrialforegoing:machine_frame_simple"
+			}],
+			rewards: [{
+				id: 1586,
+				type: "loot",
+				table: 3
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -0.5d,
+			description: ["The Mob Slaughter Factory kills mobs and animals in its area of effect. Entities slain in this way do not drop anything, but are converted to Liquid Meat and Pink Slime, liquids that can be piped out of the block."],
+			dependencies: [I;77],
+			id: 83,
+			tasks: [{
+				id: 84,
+				type: "item",
+				item: "industrialforegoing:mob_slaughter_factory"
+			}],
+			rewards: [{
+				id: 1574,
+				type: "item",
+				item: "industrialforegoing:meat_feeder"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -0.5d,
+			description: ["The Sewer, appropriately, collects sewage from animals in its area of effect (above it)."],
+			dependencies: [I;77],
+			id: 85,
+			tasks: [{
+				id: 86,
+				type: "item",
+				item: "industrialforegoing:sewer"
+			}],
+			rewards: [{
+				id: 1583,
+				type: "item",
+				item: "industrialforegoing:sewage_bucket"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 1.0d,
+			description: ["The Dissolution Chamber requires power and recipe-dependent items/fluids to craft various items."],
+			dependencies: [I;
+				76,
+				79
+			],
+			id: 87,
+			tasks: [{
+				id: 107,
+				type: "item",
+				item: "industrialforegoing:dissolution_chamber"
+			}],
+			rewards: [{
+				id: 1578,
+				type: "loot",
+				table: 3
+			}]
+		},
+		{
+			title: "Addons",
+			icon: {
+				id: "industrialforegoing:range_addon11",
+				Count: true,
+				tag: {
+					TitaniumAugment: {
+						Range: 11.0f
+					}
+				}
+			},
+			x: -1.5d,
+			y: 2.5d,
+			description: ["Addons can increase the range, speed, or efficiency of most machines. As default operating areas are usually quite small, addons are important!"],
+			dependencies: [I;
+				84,
+				87
+			],
+			id: 118,
+			tasks: [{
+				id: 119,
+				type: "item",
+				item: {
+					id: "industrialforegoing:range_addon3",
+					Count: true,
+					tag: {
+						TitaniumAugment: {
+							Range: 3.0f
+						}
+					}
+				}
+			}],
+			rewards: [{
+				id: 1585,
+				type: "loot",
+				table: 3
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 2.5d,
+			description: ["The third and currently final tier of machine frame. Used in a variety of powerful automation machines."],
+			dependencies: [I;
+				78,
+				80,
+				81,
+				83
+			],
+			id: 120,
+			tasks: [{
+				id: 121,
+				type: "item",
+				item: "industrialforegoing:machine_frame_advanced"
+			}],
+			rewards: [{
+				id: 1587,
+				type: "loot",
+				table: 5
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 4.0d,
+			description: ["The Mob Crusher kills mobs, producing Essence and normal mob drops."],
+			dependencies: [I;120],
+			id: 122,
+			tasks: [{
+				id: 123,
+				type: "item",
+				item: "industrialforegoing:mob_crusher"
+			}],
+			rewards: [{
+				id: 1590,
+				type: "loot",
+				table: 5
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 4.0d,
+			description: ["This machine, when provided with power and Essence, will apply random enchantments to items placed inside. Essence can be generated by using the Resourceful Furnace or Mob Crusher."],
+			dependencies: [I;120],
+			id: 124,
+			tasks: [{
+				id: 125,
+				type: "item",
+				item: "industrialforegoing:enchantment_factory"
+			}],
+			rewards: [{
+				id: 1589,
+				type: "loot",
+				table: 5
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 4.0d,
+			description: ["This machine is a one-stop shop for cobblestone processing. It can generate cobblestone from lava/water, then perform up to three sequential operations to craft products like stone bricks or sand."],
+			dependencies: [I;120],
+			id: 126,
+			tasks: [{
+				id: 127,
+				type: "item",
+				item: "industrialforegoing:material_stonework_factory"
+			}],
+			rewards: [{
+				id: 1591,
+				type: "loot",
+				table: 5
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -0.5d,
+			description: ["The Bioreactor can process up to nine different types of plant-based items at once to make Biofuel; the more slots that are filled, the higher the efficiency. Biofuel can be used to make power with the Biofuel Generator, or to run Infinity tools."],
+			dependencies: [I;79],
+			id: 128,
+			tasks: [{
+				id: 129,
+				type: "item",
+				item: "industrialforegoing:bioreactor"
+			}],
+			rewards: [
+				{
+					id: 1580,
+					type: "item",
+					item: "minecraft:beetroot",
+					count: 8
+				},
+				{
+					id: 1581,
+					type: "item",
+					item: "minecraft:carrot",
+					count: 8
+				},
+				{
+					id: 1582,
+					type: "item",
+					item: "minecraft:potato",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 1.5d,
+			y: -0.5d,
+			description: ["The Infinity Drill is powered by Biofuel and can mine increasingly large areas depending on its RF charge level. If you want more DESTRUCTIVE POWER, the Infinity Hammer mines out cubes and doubles as a weapon."],
+			dependencies: [I;
+				84,
+				80,
+				87,
+				83
+			],
+			id: 130,
+			tasks: [{
+				id: 131,
+				type: "item",
+				item: {
+					id: "industrialforegoing:infinity_drill",
+					Count: true,
+					tag: {
+						CanCharge: 1,
+						Special: 0,
+						Selected: "POOR",
+						Energy: 0,
+						Fluid: {
+							FluidName: "biofuel",
+							Amount: 0
+						}
+					}
+				}
+			}],
+			rewards: [{
+				id: 1575,
+				type: "item",
+				item: {
+					id: "mekanism:basic_fluid_tank",
+					Count: true,
+					tag: {
+						mekData: {
+							owner: [I;
+								-1604261307,
+								2068662071,
+								-1661464692,
+								2021809473
+							],
+							FluidTanks: [{
+								Tank: false,
+								stored: {
+									FluidName: "industrialforegoing:biofuel",
+									Amount: 14000
+								}
+							}],
+							securityMode: 0,
+							Items: []
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 1.0d,
+			description: ["The Composter turns Sewage into Industrial Fertilizer, which can be used in the Plant Fertilizer (or by hand) in place of bonemeal."],
+			dependencies: [I;
+				82,
+				85
+			],
+			id: 132,
+			tasks: [{
+				id: 133,
+				type: "item",
+				item: "industrialforegoing:sewage_composter"
+			}],
+			rewards: [{
+				id: 1584,
+				type: "loot",
+				table: 3
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 2.5d,
+			description: ["The Plant Fertilizer automatically fertilizes plants (believe it or not) with Bonemeal or Industrial Fertilizer."],
+			dependencies: [I;
+				78,
+				81
+			],
+			id: 134,
+			tasks: [{
+				id: 135,
+				type: "item",
+				item: "industrialforegoing:plant_fertilizer"
+			}],
+			rewards: [{
+				id: 1588,
+				type: "item",
+				item: "industrialforegoing:fertilizer",
+				count: 16
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 1.0d,
+			description: ["IF conveyor belts move entities (not items, unlike IE belts). Several types of conveyor belt upgrades are available; see JEI."],
+			dependencies: [I;
+				76,
+				79
+			],
+			id: 136,
+			tasks: [{
+				id: 137,
+				type: "item",
+				item: "industrialforegoing:conveyor"
+			}],
+			rewards: [{
+				id: 1579,
+				type: "loot",
+				table: 3
+			}]
+		}
+	]
+}

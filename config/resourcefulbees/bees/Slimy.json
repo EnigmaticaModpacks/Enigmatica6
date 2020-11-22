@@ -1,0 +1,26 @@
+{
+  "flower": "all",
+  "hasHoneycomb": false,
+  "traits": ["slimy"],
+  "maxTimeInHive": 1200,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor": "#73c262",
+    "secondaryColor": "#303030"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:honey_block",
+    "mutationOutput": "minecraft:slime_block",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 15
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "rgbee",
+    "parent2": "zombie"
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

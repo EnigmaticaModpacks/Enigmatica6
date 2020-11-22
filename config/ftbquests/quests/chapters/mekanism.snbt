@@ -1,0 +1,21 @@
+{
+	id: 165,
+	filename: "mekanism",
+	order_index: 14,
+	title: "Mekanism WIP",
+	icon: {
+		id: "mekanism:robit",
+		Count: true,
+		tag: {
+			mekData: {
+				EnergyContainers: [{
+					Container: false,
+					stored: "100000"
+				}]
+			}
+		}
+	},
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: []
+}

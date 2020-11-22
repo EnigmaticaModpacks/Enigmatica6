@@ -1,0 +1,905 @@
+{
+	id: 366,
+	filename: "powah",
+	order_index: 11,
+	title: "Powah!",
+	icon: "powah:dielectric_casing",
+	default_quest_shape: "",
+	quests: [
+		{
+			icon: "powah:book",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			subtitle: "Now you're playing with Powah!",
+			description: [
+				"Welcome to Powah! In this chapter you will learn all about one of Minecraft’s newest power generation, storage and transportation mods. ",
+				"We will cover most of what the mod has to offer: from the very basics of power generation to multiblock reactors and wireless power! ",
+				"",
+				"Besides this questline, your best friend when navigating the mod is the Powah Manual. Feel free to consult it every time you find yourself lost or are looking for more information on something.",
+				"Now then, let’s get started, shall we?"
+			],
+			id: 367,
+			tasks: [{
+				id: 368,
+				type: "checkmark",
+				title: "Welcome to Powah!"
+			}],
+			rewards: [{
+				id: 369,
+				type: "item",
+				item: "powah:book"
+			}]
+		},
+		{
+			icon: {
+				id: "powah:wrench",
+				Count: true,
+				tag: {
+					PowahWrenchNBT: {}
+				}
+			},
+			x: -1.5d,
+			y: 0.0d,
+			shape: "diamond",
+			subtitle: "I said Tiers, not Tears! Stop crying!",
+			description: [
+				"Everything in Powah is divided into different tiers, going from Starter to Basic, Hardened, Blazing, Niotic, Spirited and Nitro.",
+				"Different tiers of the same machine have different stats, all indicated on the machine’s tooltip.",
+				"",
+				"For example a Starter tier Furnator will make 80 FE/t, taking 600 ticks (or 30 seconds) to burn through a piece of coal, where a Nitro tier Furnator will make 4800 FE/t, taking only half a second to produce the same amount of power.",
+				"Keep this in mind when progressing through the mod, always check the various tooltips in JEI and see what tier is right for your current situation."
+			],
+			dependencies: [I;367],
+			id: 370,
+			tasks: [{
+				id: 371,
+				type: "checkmark",
+				title: "About Tiers"
+			}],
+			rewards: [{
+				id: 662,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Basic Resources",
+			icon: "powah:dielectric_casing",
+			x: 1.5d,
+			y: 0.0d,
+			shape: "hexagon",
+			subtitle: "Dielectric all the things!",
+			description: [
+				"Before we get into the various cool blocks and items Powah offers, let’s familiarize with some of the basic resources the mod will ask you to craft. Dielectric Paste is needed for most basic crafting components, so get used to seeing a lot. ",
+				"",
+				"Automating it, keeping a Lava tank somewhere or a Blaze farm could be very useful! You can immediately see how it’s used to make some of Powah’s most basic components, like dielectric rods, that are themselves used to craft up a dielectric casing. ",
+				"This is what you will use to get started making most of the different machines we will see in the chapter, so let’s make a few!"
+			],
+			dependencies: [I;367],
+			size: 1.5d,
+			id: 372,
+			tasks: [{
+				id: 373,
+				type: "item",
+				item: "powah:dielectric_casing"
+			}],
+			rewards: [{
+				id: 433,
+				type: "item",
+				item: {
+					id: "powah:wrench",
+					Count: true,
+					tag: {
+						PowahWrenchNBT: {}
+					}
+				}
+			}]
+		},
+		{
+			title: "Furnator",
+			icon: "powah:furnator_basic",
+			x: 1.5d,
+			y: 1.5d,
+			shape: "rsquare",
+			subtitle: "Now everyone can see me burnin'",
+			description: [
+				"Let’s generate some power! You’ll notice Powah has various generators that can make FE for you, the most basic being a Furnator. ",
+				"",
+				"The name should be pretty self explanatory, it’s the equivalent of a furnace, but it will burn fuel to generate some power!",
+				"Make one and try it out, any tier will do. If you’re just starting out, you can try checking out the Starter or even the Basic tier."
+			],
+			dependencies: [I;372],
+			id: 374,
+			tasks: [{
+				id: 375,
+				type: "item",
+				title: "Furnator (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:furnator"
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 434,
+					type: "item",
+					item: "minecraft:coal_block",
+					count: 4
+				},
+				{
+					id: 648,
+					type: "random",
+					table: 14
+				}
+			]
+		},
+		{
+			title: "Energy Cables",
+			x: 0.0d,
+			y: 1.5d,
+			subtitle: "Found out my charger cable was broken. I was shocked.",
+			description: [
+				"With all this power generating everywhere we need a way to move it around and take it where we want it to be.",
+				"Powah cables are great at that! They can transfer a lot of power at the higher tiers and help keep setups neat, since you can walk through them even after setting them down, helping with maintenance.",
+				"",
+				"Let’s try them out!"
+			],
+			dependencies: [I;372],
+			id: 380,
+			tasks: [{
+				id: 381,
+				type: "item",
+				title: "Energy Cable (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:energy_cable"
+					}
+				}
+			}],
+			rewards: [{
+				id: 649,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Magmator",
+			icon: "powah:magmator_basic",
+			x: 1.5d,
+			y: 3.0d,
+			subtitle: "Wasn't that a Pokèmon?",
+			description: ["Another option you have to generate power is a Magmator, which also speaks for itself. Just give the bad boy some lava and watch it burn! One bucket of lava will generate a bit less than two coal pieces would in a Furnator."],
+			dependencies: [I;374],
+			id: 382,
+			tasks: [{
+				id: 383,
+				type: "item",
+				title: "Magmator (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:magmator"
+					}
+				}
+			}],
+			rewards: [{
+				id: 436,
+				type: "item",
+				item: "minecraft:lava_bucket"
+			}]
+		},
+		{
+			title: "Thermo Generator",
+			icon: "powah:thermo_generator_basic",
+			x: 0.0d,
+			y: 3.0d,
+			subtitle: "Super. Hot.",
+			description: [
+				"Ever wondered if you could use lava as a renewable, self sufficient power source? Well the Thermo Generator is for you!",
+				"This handy device will generate a small amount of power as long as it’s placed over a heat source (lava, magma blocks, etc.) and has a liquid coolant (like water) in its internal tank. "
+			],
+			dependencies: [I;374],
+			id: 384,
+			tasks: [{
+				id: 385,
+				type: "item",
+				title: "Thermo Generator (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:thermo_generator"
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 438,
+					type: "item",
+					item: "cookingforblockheads:sink"
+				},
+				{
+					id: 1613,
+					type: "loot",
+					table: 14
+				}
+			]
+		},
+		{
+			title: "Solar Panel",
+			x: 3.0d,
+			y: 3.0d,
+			subtitle: "Fridays for the Future!",
+			description: [
+				"This one comes as no surprise, every respectable power generating mod needs to have solar panels! They will passively generate FE as long as it’s daytime and they can see the sky.",
+				"Very handy for passive power generation!"
+			],
+			dependencies: [I;374],
+			id: 386,
+			tasks: [{
+				id: 387,
+				type: "item",
+				title: "Solar Panel (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:solar_panel"
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 440,
+					type: "item",
+					item: "bountifulbaubles:sunglasses"
+				},
+				{
+					id: 650,
+					type: "random",
+					table: 14
+				}
+			]
+		},
+		{
+			title: "Lens of Ender",
+			x: 3.0d,
+			y: 4.5d,
+			shape: "diamond",
+			subtitle: "X-Ray Mode!",
+			description: ["The Lens of Ender is a nifty upgrade for any Powah Solar Panel. Just right click it on and it will be able to generate energy even without direct access to the sky!"],
+			dependencies: [I;386],
+			optional: true,
+			id: 388,
+			tasks: [{
+				id: 389,
+				type: "item",
+				item: "powah:lens_of_ender"
+			}],
+			rewards: [{
+				id: 1612,
+				type: "loot",
+				table: 14
+			}]
+		},
+		{
+			title: "Uraninite",
+			x: 1.5d,
+			y: 4.5d,
+			subtitle: "I'm Radioactive!",
+			description: [
+				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! ",
+				"",
+				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! Usually an ore, you can get it using Powah’s Energizing Orb with regular Uranium. Go get some!"
+			],
+			dependencies: [I;
+				382,
+				384,
+				386
+			],
+			id: 390,
+			tasks: [{
+				id: 391,
+				type: "item",
+				item: "powah:uraninite",
+				count: 32L
+			}],
+			rewards: [{
+				id: 443,
+				type: "item",
+				item: "powah:uraninite_block",
+				count: 8
+			}]
+		},
+		{
+			title: "Reactor",
+			icon: "powah:reactor_basic",
+			x: 1.5d,
+			y: 6.0d,
+			shape: "hexagon",
+			subtitle: "It's a big one!",
+			description: [
+				"Reactors are Powah’s best way of energy generation and will require a big multiblock and some more advanced maintenance.",
+				"Simply make 36 reactor blocks of any tier (all of the same tier) and place one on the ground to automatically build the 3x4 structure. ",
+				"",
+				"Since the reactor is fairly complex and there would be not enough space to accurately describe how it works here, I will redirect you to its entry in Powah’s manual. You can learn all about how to make it work there.",
+				"Happy powering!"
+			],
+			dependencies: [I;390],
+			size: 1.5d,
+			id: 392,
+			tasks: [{
+				id: 393,
+				type: "item",
+				title: "Reactor (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:reactor"
+					}
+				},
+				count: 36L
+			}],
+			rewards: [
+				{
+					id: 445,
+					type: "item",
+					item: "powah:uraninite",
+					count: 32,
+					only_one: true
+				},
+				{
+					id: 446,
+					type: "item",
+					item: "minecraft:blue_ice",
+					count: 32,
+					only_one: true
+				}
+			]
+		},
+		{
+			x: 3.0d,
+			y: 6.0d,
+			shape: "diamond",
+			subtitle: "Quite a dry sense of humor!",
+			description: ["Isn’t your reactor so cool huh? Uh… it isn’t? Well you better hurry up and go cool it! Any kind of ice will do, but Dry Ice, a new material from Powah is the best of them. Go get some, quick!"],
+			dependencies: [I;392],
+			optional: true,
+			id: 394,
+			tasks: [{
+				id: 395,
+				type: "item",
+				item: "powah:dry_ice",
+				count: 16L
+			}],
+			rewards: [{
+				id: 450,
+				type: "item",
+				item: "powah:charged_snowball",
+				count: 8
+			}]
+		},
+		{
+			title: "Energizing Setup",
+			icon: "powah:energizing_orb",
+			x: 3.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			subtitle: "No, not an energy drink!",
+			description: [
+				"Now that you’ve made some basic resources and power it’s time to ramp up and open the gate to all the next tiers of Powah items. Introducing the Energizing Orb and Rods!",
+				"",
+				"To start crafting, place down the orb and then surround it placing some Rods close by connected to power.",
+				"The Rods will now start charging up the orb (faster depending on the rods’ tier and how many you have) and infuse power into the items you place in the orb.",
+				"This is how you craft all the basic resources you will use to climb up the tiers in Powah, so let’s start going for the top!"
+			],
+			dependencies: [I;372],
+			id: 396,
+			tasks: [
+				{
+					id: 397,
+					type: "item",
+					item: "powah:energizing_orb"
+				},
+				{
+					id: 451,
+					type: "item",
+					title: "Energizing Rod (Any Tier)",
+					item: {
+						id: "itemfilters:tag",
+						Count: true,
+						tag: {
+							value: "powah:energizing_rod"
+						}
+					},
+					count: 2L
+				}
+			],
+			rewards: [{
+				id: 453,
+				type: "item",
+				item: "powah:energizing_rod_basic",
+				count: 2
+			}]
+		},
+		{
+			title: "Energy Cell",
+			icon: "powah:energy_cell_basic",
+			x: 3.0d,
+			y: 1.5d,
+			subtitle: "Gotta store that power somewhere...",
+			description: [
+				"With all this power going around, you’re going to need somewhere to store it all. Introducing Energy Cells!",
+				"These handy blocks can store power for you and act as a big buffer, which will only get bigger the higher your cell’s tier is.",
+				"",
+				"If you want to know detailed stats about each tier, please check the Powah Manual."
+			],
+			dependencies: [I;372],
+			id: 398,
+			tasks: [{
+				id: 399,
+				type: "item",
+				title: "Energy Cell (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:energy_cell"
+					}
+				}
+			}],
+			rewards: [{
+				id: 654,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Ender Cell",
+			icon: "powah:ender_cell_basic",
+			x: 4.5d,
+			y: 1.5d,
+			subtitle: "Almost like Wi-Fi!",
+			description: [
+				"Ender Cells are Powah’s way to transfer power wirelessly and are one of the mod’s best features. Using them isn’t too intuitive at first, but gets easy once you understand them better.",
+				"",
+				"First of all, you will have a number of channels available (more channels unlock with higher cell tiers), which by default store 0 FE.",
+				"These channels are universal for your player, so every ender cell you place in the world will have access to the same channels (provided they are of a tier that can access those channels).",
+				"Now, select a channel and shift right click an Energy Cell into the Ender Cell. It will get consumed, and it’s buffer will now become the channel’s buffer",
+				"(so for a new channel with 0 total max FE, inserting a basic cell will increase its buffer by 1M FE, since that’s the max buffer for the basic cell). ",
+				"",
+				"You can keep stacking these cells and keep upgrading your channel. Once you store energy in that channel, you will be able to use it wherever you have an Ender Cell, making it easy to move power across very long distances."
+			],
+			dependencies: [I;398],
+			id: 400,
+			tasks: [{
+				id: 401,
+				type: "item",
+				title: "Ender Cell (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:ender_cell"
+					}
+				}
+			}],
+			rewards: [{
+				id: 550,
+				type: "item",
+				item: "powah:energy_cell_hardened"
+			}]
+		},
+		{
+			title: "Player Transmitter",
+			icon: "powah:player_transmitter_basic",
+			x: 4.5d,
+			y: 3.0d,
+			subtitle: "Keeps you charged up!",
+			description: [
+				"You probably have a lot of items on you that are recharged with power. Isn’t it super tedious to remember to always keep them charged though?",
+				"Don’t you wish there was something that could tap into your energy supply and wirelessly charge anything into your inventory? Well you’re in luck!",
+				"",
+				"Make a binding card and right click it to bind it to yourself, then craft a player transmitter and put the card in.",
+				"As long as the transmitter receives power, it will keep all your items charged!"
+			],
+			dependencies: [I;398],
+			id: 402,
+			tasks: [
+				{
+					id: 403,
+					type: "item",
+					title: "Player Transmitter (Any Tier)",
+					item: {
+						id: "itemfilters:tag",
+						Count: true,
+						tag: {
+							value: "powah:player_transmitter"
+						}
+					}
+				},
+				{
+					id: 548,
+					type: "item",
+					item: "powah:binding_card"
+				}
+			],
+			rewards: [{
+				id: 655,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Ender Gate",
+			icon: "powah:ender_gate_basic",
+			x: 6.0d,
+			y: 1.5d,
+			shape: "diamond",
+			subtitle: "Super compact!",
+			description: [
+				"Ender Gates are smaller, more convenient variants for Ender Cells. They can be placed on a Powah Energy Cable directly and they will sit into the same block space, making for very neat and compact setups.",
+				"This comes at a disadvantage however: you won’t be able to upgrade your channels from an Ender Gate, so you will always need to keep at least one Ender Cell somewhere."
+			],
+			dependencies: [I;400],
+			optional: true,
+			id: 404,
+			tasks: [{
+				id: 405,
+				type: "item",
+				title: "Ender Gate (Any Tier)",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "powah:ender_gate"
+					}
+				}
+			}],
+			rewards: [{
+				id: 551,
+				type: "item",
+				item: "powah:ender_core",
+				count: 4
+			}]
+		},
+		{
+			title: "Dimensional Binding Card",
+			x: 4.5d,
+			y: 4.5d,
+			shape: "diamond",
+			subtitle: "It can find you anywhere...",
+			description: ["The Dimensional Binding Card is a great update to a standard card. Right click a Binding Card on an Enderman and upgrade it: now it will be able to charge your inventory in any dimension and not just the one the Transmitter is in. Neat!"],
+			dependencies: [I;402],
+			optional: true,
+			id: 408,
+			tasks: [{
+				id: 409,
+				type: "item",
+				item: "powah:binding_card_dim"
+			}],
+			rewards: [{
+				id: 656,
+				type: "random",
+				table: 7
+			}]
+		},
+		{
+			title: "Energized Steel",
+			x: 4.5d,
+			y: 0.0d,
+			subtitle: "Glows in the dark!",
+			description: ["Energized steel is the basic material for all items in tier 3 (Hardened). Bring out your gold and iron and start alloying!"],
+			dependencies: [I;396],
+			id: 410,
+			tasks: [{
+				id: 411,
+				type: "item",
+				item: "powah:steel_energized"
+			}],
+			rewards: [{
+				id: 533,
+				type: "item",
+				item: {
+					id: "powah:battery_hardened",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 0.0d,
+			subtitle: "Crystal Clear!",
+			description: ["First of many Crystals, the Blazing Crystal is the basic material for all items in tier 4 (Blazed). Better start hitting up the Nether!"],
+			dependencies: [I;410],
+			id: 412,
+			tasks: [{
+				id: 413,
+				type: "item",
+				item: "powah:crystal_blazing"
+			}],
+			rewards: [{
+				id: 535,
+				type: "item",
+				item: "powah:energized_steel_block",
+				count: 4
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 0.0d,
+			subtitle: "Where do these names even come from?",
+			description: [
+				"Next up is the Niotic Crystal, which is the basic material for all items in tier 4 (Niotic). I hope you have been mining for the blue shinies!",
+				"",
+				"If you see the energizing orb take a really long time from now on when crafting crystals, it might be a good idea to add a rod or two."
+			],
+			dependencies: [I;412],
+			id: 414,
+			tasks: [{
+				id: 415,
+				type: "item",
+				item: "powah:crystal_niotic"
+			}],
+			rewards: [{
+				id: 537,
+				type: "item",
+				item: "powah:energizing_rod_niotic",
+				count: 2
+			}]
+		},
+		{
+			x: 9.0d,
+			y: 0.0d,
+			subtitle: "Spirited Away!",
+			description: ["We’re almost at the top! Spirited Crystals are basic material for all items in tier 5 (Spirited). Go make some friends among the Villagers!"],
+			dependencies: [I;414],
+			id: 416,
+			tasks: [{
+				id: 417,
+				type: "item",
+				item: "powah:crystal_spirited"
+			}],
+			rewards: [
+				{
+					id: 539,
+					type: "item",
+					item: "powah:uraninite_block",
+					count: 8
+				},
+				{
+					id: 540,
+					type: "item",
+					item: "powah:niotic_crystal_block",
+					count: 8
+				},
+				{
+					id: 541,
+					type: "item",
+					item: "powah:dry_ice",
+					count: 8
+				}
+			]
+		},
+		{
+			x: 10.5d,
+			y: 0.0d,
+			shape: "hexagon",
+			subtitle: "Discord Nitro?",
+			description: [
+				"No, you don’t need to get Discord Nitro and boost our server (even though you totally should).",
+				"It’s just a Nitro Crystal, the basic material for all items in tier 6 (Nitro)! You’re now at the top of the chain, so expect something really expensive and powerful. Bring out the big guns!"
+			],
+			dependencies: [I;416],
+			size: 1.5d,
+			id: 418,
+			tasks: [{
+				id: 419,
+				type: "item",
+				item: "powah:crystal_nitro"
+			}],
+			rewards: [
+				{
+					id: 543,
+					type: "item",
+					item: "powah:energy_cell_nitro"
+				},
+				{
+					id: 660,
+					type: "random",
+					table: 14
+				}
+			]
+		},
+		{
+			title: "Hardened Challenge!",
+			x: 4.5d,
+			y: -1.5d,
+			shape: "diamond",
+			subtitle: "You'll need them anyways...",
+			description: [
+				"Here is the capacitor you will need for all the items in the hardened tier. Get ready to make a bunch!",
+				"",
+				'Note that all capacitor quests from now on will be optional "challenges". You will need to make some to progress, so you might want to start automating!'
+			],
+			dependencies: [I;410],
+			optional: true,
+			id: 420,
+			tasks: [{
+				id: 421,
+				type: "item",
+				item: "powah:capacitor_hardened",
+				count: 16L
+			}],
+			rewards: [{
+				id: 657,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Blazing Challenge!",
+			x: 6.0d,
+			y: -1.5d,
+			shape: "diamond",
+			subtitle: "It's lit!",
+			description: ["Here is the capacitor you will need for all the items in the blazing tier. Can you make this many?"],
+			dependencies: [I;412],
+			optional: true,
+			id: 422,
+			tasks: [{
+				id: 423,
+				type: "item",
+				item: "powah:capacitor_blazing",
+				count: 24L
+			}],
+			rewards: [{
+				id: 658,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Niotic Challenge!",
+			x: 7.5d,
+			y: -1.5d,
+			shape: "diamond",
+			subtitle: "How do I even pronounce Niotic?",
+			description: ["Here is the capacitor you will need for all the items in the niotic tier. It’s starting to get interesting huh?"],
+			dependencies: [I;414],
+			optional: true,
+			id: 424,
+			tasks: [{
+				id: 425,
+				type: "item",
+				item: "powah:capacitor_niotic",
+				count: 32L
+			}],
+			rewards: [{
+				id: 659,
+				type: "random",
+				table: 14
+			}]
+		},
+		{
+			title: "Spirited Challenge!",
+			x: 9.0d,
+			y: -1.5d,
+			shape: "diamond",
+			subtitle: "Things are ramping up...",
+			description: ["Here is the capacitor you will need for all the items in the spirited tier. These challenges are starting to get a bit hard huh?"],
+			dependencies: [I;416],
+			optional: true,
+			id: 426,
+			tasks: [{
+				id: 427,
+				type: "item",
+				item: "powah:capacitor_spirited",
+				count: 48L
+			}],
+			rewards: [{
+				id: 542,
+				type: "xp_levels",
+				xp_levels: 50
+			}]
+		},
+		{
+			title: "The Final Challenge!",
+			x: 10.5d,
+			y: -1.5d,
+			shape: "diamond",
+			subtitle: "Just like that song! I think...",
+			description: ["Welcome to our Powah ultimate challenge! Can you automate the orb and grind out all the resources needed to complete this? Best of luck and remember: automation is key!"],
+			dependencies: [I;418],
+			optional: true,
+			id: 428,
+			tasks: [{
+				id: 429,
+				type: "item",
+				item: "powah:capacitor_nitro",
+				count: 64L
+			}],
+			rewards: [
+				{
+					id: 545,
+					type: "xp_levels",
+					xp_levels: 100
+				},
+				{
+					id: 547,
+					type: "command",
+					title: "Show off your progress!",
+					icon: "powah:ender_core",
+					command: "/say I have completed Powah's final crafting challenge! I bet you can't!",
+					player_command: true
+				},
+				{
+					id: 661,
+					type: "random",
+					table: 14
+				}
+			]
+		},
+		{
+			title: "Ultimate Powah!",
+			icon: {
+				id: "powah:battery_nitro",
+				Count: true,
+				tag: {}
+			},
+			x: 0.0d,
+			y: 6.0d,
+			shape: "hexagon",
+			subtitle: "One billion? With a B?",
+			description: [
+				"Welcome to the ultimate Powah Energy challenge!",
+				"Can you create a sustainable and efficient reactor setup to make all this power?",
+				"",
+				"Don't cheat - I know you want to use Mekanism. I challenge you to only generate this billion using Powah alone for energy generation.",
+				"You can do it! Good luck!"
+			],
+			dependencies: [I;392],
+			optional: true,
+			id: 430,
+			tasks: [{
+				id: 431,
+				type: "forge_energy",
+				value: 1000000000L
+			}],
+			rewards: [
+				{
+					id: 448,
+					type: "xp_levels",
+					xp_levels: 100
+				},
+				{
+					id: 449,
+					type: "command",
+					title: "Flex your achievement!",
+					icon: {
+						id: "powah:battery_nitro",
+						Count: true,
+						tag: {}
+					},
+					auto: "enabled",
+					command: "/say I have completed Powah's Ultimate Power Quest! Woot!",
+					player_command: true
+				},
+				{
+					id: 1611,
+					type: "loot",
+					table: 14
+				}
+			]
+		}
+	]
+}

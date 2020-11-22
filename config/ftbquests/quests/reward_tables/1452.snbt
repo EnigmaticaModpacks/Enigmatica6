@@ -1,0 +1,49 @@
+{
+	id: 1452,
+	title: "IE Loot Box",
+	icon: "aquaculture:lockbox",
+	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "immersiveengineering:ingot_steel",
+			count: 6
+		},
+		{
+			item: "immersiveengineering:dynamo"
+		},
+		{
+			item: "immersiveengineering:hemp_fabric",
+			count: 4
+		},
+		{
+			item: {
+				id: "immersiveengineering:armor_steel_chest",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			}
+		},
+		{
+			item: "immersiveengineering:shader_bag_uncommon"
+		},
+		{
+			item: "immersiveengineering:coal_coke",
+			count: 16
+		},
+		{
+			item: "immersiveengineering:casull",
+			count: 32
+		},
+		{
+			item: "immersiveengineering:heavy_engineering",
+			count: 2
+		},
+		{
+			item: "immersiveengineering:wirecoil_copper_ins",
+			count: 8
+		}
+	]
+}

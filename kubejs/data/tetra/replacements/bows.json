@@ -1,0 +1,18 @@
+[
+    {
+        "predicate": { "item": "aquaculture:neptunium_bow" },
+        "item": "tetra:modular_bow",
+        "modules": {
+            "bow/stave": ["bow/straight_stave", "straight_stave/neptunium"],
+            "bow/string": ["bow/basic_string", "basic_string/string"]
+        }
+    },
+    {
+        "predicate": { "item": "botaniaadditions:terra_bow" },
+        "item": "tetra:modular_bow",
+        "modules": {
+            "bow/stave": ["bow/straight_stave", "straight_stave/terrasteel"],
+            "bow/string": ["bow/basic_string", "basic_string/string"]
+        }
+    }
+]

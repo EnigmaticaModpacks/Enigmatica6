@@ -1,0 +1,104 @@
+
+[Arrows]
+
+	[Arrows.Verdant]
+		#Adjust this to set the effect radius for the Verdant Arrow. Set to 0 to disable, but that would be boring (and make the arrow useless).
+		#Range: 0 ~ 16
+		Radius = 4
+
+	[Arrows.Spore]
+		#Adjust this to set the effect radius for the Spore Arrow. Set to 0 to disable, but that would be boring (and make the arrow useless).
+		#Range: 0 ~ 16
+		Radius = 4
+
+	[Arrows.Diamond]
+		#Adjust this to set the inherent knockback strength of the Diamond Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Knockback = 0
+		#Adjust this to set the damage for the Diamond Arrow. Base Arrow value is 2.0.
+		#Range: 0.5 ~ 16.0
+		Damage = 4.0
+		#Adjust this to set the inherent pierce of the Diamond Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Piercing = 1
+
+	[Arrows.Frost]
+		#If TRUE, Frost Arrows will convert Lava into Obsidian. If FALSE, Glossed Magma.
+		"Permanent Lava Freeze" = true
+		#Adjust this to set the effect radius for the Frost Arrow. Set to 0 to disable, but that would be boring.
+		#Range: 0 ~ 16
+		Radius = 4
+		#If TRUE, Frost Arrows will convert Water into Ice. If FALSE, Frosted Ice.
+		"Permanent Water Freeze" = true
+
+	[Arrows.Quartz]
+		#Adjust this to set the inherent knockback strength of the Quartz Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Knockback = 1
+		#Adjust this to set the damage for the Quartz Arrow. Base Arrow value is 2.0.
+		#Range: 0.5 ~ 16.0
+		Damage = 2.5
+		#Adjust this to set the inherent pierce of the Quartz Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Piercing = 0
+
+	[Arrows.Shulker]
+		#Adjust this to set the effect duration (Levitation) for the Shulker Arrow. Set to 0 to disable.
+		#Range: 0 ~ 9600
+		"Effect Duration" = 100
+
+	[Arrows.Slime]
+		#Adjust this to set the number of bounces for the Slime Arrow.
+		#Range: 1 ~ 16
+		Bounces = 4
+		#If TRUE, bounces are modified by knockback bonuses, such as the Punch Enchantment.
+		"Knockback Boost" = true
+		#Adjust this to set the inherent knockback strength of the Slime Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Knockback = 4
+
+	[Arrows.Displacement]
+		#Adjust this to set the effect radius for the Displacement Arrow. Set to 0 to disable, but that would be boring (and make the arrow useless).
+		#Range: 0 ~ 16
+		Radius = 4
+
+	[Arrows.Prismarine]
+		#Adjust this to set the inherent knockback strength of the Prismarine Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Knockback = 0
+		#Adjust this to set the damage for the Prismarine Arrow. Base Arrow value is 2.0.
+		#Range: 0.5 ~ 16.0
+		Damage = 2.0
+		#Adjust this to set the inherent pierce of the Prismarine Arrow. Base Arrow value is 0.
+		#Range: 0 ~ 16
+		Piercing = 0
+
+	[Arrows.Glowstone]
+		#Adjust this to set the effect radius for the Glowstone Arrow. Set to 0 to disable, but that would be boring (and make the arrow useless).
+		#Range: 0 ~ 16
+		Radius = 4
+
+	[Arrows.Redstone]
+		#Adjust this to set the effect radius for the Redstone Arrow. Set to 0 to disable, but that would be boring (and make the arrow useless).
+		#Range: 0 ~ 16
+		Radius = 4
+
+	[Arrows.Explosive]
+		#If TRUE, explosions break blocks.
+		"Break Blocks" = true
+		#If TRUE, explosion strength is modified by knockback bonuses, such as the Punch Enchantment.
+		"Knockback Boost" = true
+		#Adjust this to set the explosion strength for the Explosive Arrow.
+		#Range: 0.5 ~ 16.0
+		Strength = 1.9
+		#If TRUE, explosions cause fires if the arrow is on fire.
+		"Cause Fires" = true
+
+	[Arrows.Blaze]
+		#Adjust this to set the effect radius for the Blaze Arrow. Set to 0 to disable, but that would be boring.
+		#Range: 0 ~ 16
+		Radius = 2
+		#Adjust this to set the burn duration for the Blaze Arrow (in seconds). Nearby targets will burn for 5 seconds less than a direct target.
+		#Range: 5 ~ 30
+		"Burn Duration" = 10
+

@@ -6,7 +6,7 @@
 	maxUpgradeMultiplier = 10
 	#Peak processing rate for the Solar Neutron Activator. Note: It can go higher than this value in some extreme environments.
 	maxSolarNeutronActivatorRate = 64
-	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box.
+	#Any mod ids added to this list will not be able to have any of their blocks, picked up by the cardboard box. For example: ["mekanism"]
 	cardboardModBlacklist = []
 	#Disable to make the anchor upgrade not do anything.
 	allowChunkloading = true

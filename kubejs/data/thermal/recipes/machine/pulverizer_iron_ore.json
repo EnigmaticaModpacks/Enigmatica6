@@ -1,0 +1,21 @@
+{
+    "type": "thermal:pulverizer",
+    "ingredient": {
+        "tag": "forge:ores/iron"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:iron_dust",
+            "chance": 2.0
+        },
+        {
+            "item": "emendatusenigmatica:nickel_dust",
+            "chance": 0.1
+        },
+        {
+            "item": "minecraft:gravel",
+            "chance": 0.2
+        }
+    ],
+    "experience": 0.2
+}

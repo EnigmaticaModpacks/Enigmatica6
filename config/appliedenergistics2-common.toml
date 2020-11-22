@@ -129,3 +129,11 @@
 	FluidExportBusMin = 5
 	VibrationChamberMin = 10
 
+#Settings for in-world purification of crystals.
+[inWorldPurification]
+	#A fluid tag that identifies fluids that improve crystal purification speed. Does not affect purification with water/lava.
+	improvedFluidTag = ""
+	#The speed multiplier to use when the crystals are submerged in the improved fluid.
+	#Range: 1.0 ~ 10.0
+	improvedFluidMultiplier = 2.0
+

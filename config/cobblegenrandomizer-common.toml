@@ -1,0 +1,33 @@
+
+#General settings
+[general]
+	#Use config instead of datapack
+	use_config = true
+
+	#List settings
+	#Syntax: ["modid:block|weight"]
+	#Example: ["minecraft:stone|2","minecraft:dirt|1"]
+	#Forge tags are supported
+	[general.lists]
+		#Basalt gen
+		block_list_basalt = ["minecraft:basalt|1"]
+		#Cobble gen
+		block_list_cobble = ["minecraft:cobblestone|1"]
+		#Stone gen
+		block_list_stone = ["minecraft:stone|1"]
+
+		#Custom settings
+		[general.lists.custom]
+			#Custom generators
+			#Syntax: [gen]
+			#Gen: [type, block, list]
+			#Type: cobblestone, stone
+			#Block: resource location of the block below the generated block
+			#List: see List settings
+			#Examples:
+			#custom_generators = [
+			#   ["cobblestone", "minecraft:diamond_block", ["minecraft:diamond_block"]],
+			#   ["cobblestone", "minecraft:dirt", ["forge:dirt"]],
+			#   ["cobblestone", "minecraft:white_wool", ["minecraft:wool"]]]
+			custom_generators = [["cobblestone", "byg:dacite_cobblestone", ["byg:dacite_cobblestone"]], ["cobblestone", "byg:ether_stone", ["byg:ether_stone"]], ["cobblestone", "byg:red_rock", ["byg:red_rock"]], ["cobblestone", "byg:scoria_cobblestone", ["byg:scoria_cobblestone"]], ["cobblestone", "byg:soapstone", ["byg:soapstone"]], ["cobblestone", "embellishcraft:basalt_cobblestone", ["embellishcraft:basalt_cobblestone"]], ["cobblestone", "embellishcraft:gneiss_cobblestone", ["embellishcraft:gneiss_cobblestone"]], ["cobblestone", "embellishcraft:jade_cobblestone", ["embellishcraft:jade_cobblestone"]], ["cobblestone", "embellishcraft:larvikite_cobblestone", ["embellishcraft:larvikite_cobblestone"]], ["cobblestone", "embellishcraft:marble_cobblestone", ["embellishcraft:marble_cobblestone"]], ["cobblestone", "embellishcraft:slate_cobblestone", ["embellishcraft:slate_cobblestone"]], ["cobblestone", "minecraft:blackstone", ["minecraft:blackstone"]], ["cobblestone", "minecraft:diorite", ["minecraft:diorite"]], ["cobblestone", "minecraft:granite", ["minecraft:granite"]], ["cobblestone", "quark:cobbedstone", ["quark:cobbedstone"]], ["stone", "biomesoplenty:black_sandstone", ["biomesoplenty:black_sandstone"]], ["stone", "biomesoplenty:orange_sandstone", ["biomesoplenty:orange_sandstone"]], ["stone", "biomesoplenty:white_sandstone", ["biomesoplenty:white_sandstone"]], ["stone", "byg:black_sandstone", ["byg:black_sandstone"]], ["stone", "byg:blue_sandstone", ["byg:blue_sandstone"]], ["stone", "byg:dacite", ["byg:dacite"]], ["stone", "byg:purple_sandstone", ["byg:purple_sandstone"]], ["stone", "byg:scoria_stone", ["byg:scoria_stone"]], ["stone", "byg:white_sandstone", ["byg:white_sandstone"]], ["stone", "embellishcraft:basalt", ["embellishcraft:basalt"]], ["stone", "embellishcraft:gneiss", ["embellishcraft:gneiss"]], ["stone", "embellishcraft:jade", ["embellishcraft:jade"]], ["stone", "embellishcraft:larvikite", ["embellishcraft:larvikite"]], ["stone", "embellishcraft:marble", ["embellishcraft:marble"]], ["stone", "embellishcraft:slate", ["embellishcraft:slate"]], ["stone", "minecraft:red_sandstone", ["minecraft:red_sandstone"]], ["stone", "minecraft:sandstone", ["minecraft:sandstone"]], ["stone", "quark:basalt", ["quark:basalt"]], ["stone", "quark:brimstone", ["quark:brimstone"]], ["stone", "quark:jasper", ["quark:jasper"]], ["stone", "quark:limestone", ["quark:limestone"]], ["stone", "quark:marble", ["quark:marble"]], ["stone", "quark:permafrost", ["quark:permafrost"]], ["stone", "quark:slate", ["quark:slate"]]]
+
