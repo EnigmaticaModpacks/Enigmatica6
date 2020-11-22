@@ -1,6 +1,99 @@
 {
 	id: 1453,
 	title: "Rare IF Loot Box",
+	icon: "aquaculture:treasure_chest",
 	loot_size: 1,
-	rewards: []
+	rewards: [
+		{
+			item: {
+				id: "mekanism:basic_fluid_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						owner: [I;
+							-1604261307,
+							2068662071,
+							-1661464692,
+							2021809473
+						],
+						FluidTanks: [{
+							Tank: false,
+							stored: {
+								FluidName: "industrialforegoing:latex",
+								Amount: 14000
+							}
+						}],
+						securityMode: 0,
+						Items: []
+					}
+				}
+			}
+		},
+		{
+			item: "industrialforegoing:pink_slime",
+			count: 4
+		},
+		{
+			item: "industrialforegoing:machine_frame_advanced"
+		},
+		{
+			item: {
+				id: "industrialforegoing:range_addon7",
+				Count: true,
+				tag: {
+					TitaniumAugment: {
+						Range: 7.0f
+					}
+				}
+			},
+			count: 2
+		},
+		{
+			item: "industrialforegoing:mob_imprisonment_tool"
+		},
+		{
+			item: "industrialforegoing:mechanical_dirt",
+			count: 6
+		},
+		{
+			item: {
+				id: "industrialforegoing:range_addon11",
+				Count: true,
+				tag: {
+					TitaniumAugment: {
+						Range: 11.0f
+					}
+				}
+			}
+		},
+		{
+			item: {
+				id: "mekanism:basic_fluid_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						owner: [I;
+							-1604261307,
+							2068662071,
+							-1661464692,
+							2021809473
+						],
+						FluidTanks: [{
+							Tank: false,
+							stored: {
+								FluidName: "industrialforegoing:essence",
+								Amount: 14000
+							}
+						}],
+						securityMode: 0,
+						Items: []
+					}
+				}
+			}
+		},
+		{
+			item: "industrialforegoing:fertilizer",
+			count: 16
+		}
+	]
 }
