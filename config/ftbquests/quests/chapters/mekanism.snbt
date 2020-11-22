@@ -1,7 +1,7 @@
 {
 	id: 165,
 	filename: "mekanism",
-	order_index: 15,
+	order_index: 14,
 	title: "Mekanism WIP",
 	icon: {
 		id: "mekanism:robit",
@@ -15,6 +15,7 @@
 			}
 		}
 	},
+	always_invisible: true,
 	default_quest_shape: "",
 	quests: []
 }

@@ -1,7 +1,7 @@
 {
 	id: 174,
 	filename: "pneumaticcraft_repressurized",
-	order_index: 13,
+	order_index: 12,
 	title: "PneumaticCraft: Repressurized",
 	icon: "pneumaticcraft:pressure_gauge_module",
 	default_quest_shape: "",
@@ -86,7 +86,7 @@
 			rewards: [{
 				id: 198,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -151,7 +151,7 @@
 			rewards: [{
 				id: 197,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -173,7 +173,7 @@
 			rewards: [{
 				id: 201,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -282,7 +282,7 @@
 			rewards: [{
 				id: 216,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -333,11 +333,10 @@
 			]
 		},
 		{
-			title: "Oil",
+			title: "Crude and Un-Cultured",
 			x: 0.0d,
 			y: -14.5d,
 			shape: "rsquare",
-			subtitle: "Crude and Un-Cultured",
 			description: ["Go scoop up a bucket of oil like some filthy mongrel. You’ll find it commonly above ground and it’s easily spotted by watching your minimap."],
 			dependencies: [I;175],
 			id: 224,
@@ -349,7 +348,7 @@
 			rewards: [{
 				id: 230,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -412,7 +411,7 @@
 			rewards: [{
 				id: 556,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -484,7 +483,7 @@
 			rewards: [{
 				id: 243,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -503,7 +502,7 @@
 			rewards: [{
 				id: 247,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -522,7 +521,7 @@
 			rewards: [{
 				id: 250,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -576,7 +575,7 @@
 			rewards: [{
 				id: 255,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -595,7 +594,7 @@
 			rewards: [{
 				id: 258,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -614,7 +613,7 @@
 			rewards: [{
 				id: 554,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -636,7 +635,7 @@
 			rewards: [{
 				id: 889,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -715,7 +714,7 @@
 			rewards: [{
 				id: 275,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -734,7 +733,7 @@
 				{
 					id: 279,
 					type: "loot",
-					table: 8
+					table: 12
 				},
 				{
 					id: 280,
@@ -822,7 +821,7 @@
 			rewards: [{
 				id: 290,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -844,7 +843,7 @@
 			rewards: [{
 				id: 293,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -862,7 +861,7 @@
 			rewards: [{
 				id: 296,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -926,7 +925,7 @@
 			rewards: [{
 				id: 305,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -944,7 +943,7 @@
 			rewards: [{
 				id: 308,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -1059,7 +1058,7 @@
 			rewards: [{
 				id: 324,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -1122,7 +1121,7 @@
 			rewards: [{
 				id: 333,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -1144,7 +1143,7 @@
 			rewards: [{
 				id: 336,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -1174,7 +1173,7 @@
 			rewards: [{
 				id: 340,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -1230,7 +1229,7 @@
 			rewards: [{
 				id: 349,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -1248,7 +1247,7 @@
 			rewards: [{
 				id: 356,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -1293,7 +1292,7 @@
 			rewards: [{
 				id: 359,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -1316,7 +1315,7 @@
 			rewards: [{
 				id: 362,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -1346,12 +1345,19 @@
 		{
 			x: -8.0d,
 			y: -8.5d,
+			subtitle: "Super Laminar Flow",
+			description: ["With advanced machining methods, stronger pressure tubes may be made and higher pressure attained. Advanced Compressors must be kept cool, and therefore are not always the best option for a given task. Some machiness will only begin to work, however, at the pressures made by an advanced compressor."],
 			dependencies: [I;360],
 			id: 1045,
 			tasks: [{
 				id: 1046,
 				type: "item",
 				item: "pneumaticcraft:advanced_liquid_compressor"
+			}],
+			rewards: [{
+				id: 1597,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -1408,7 +1414,7 @@
 			rewards: [{
 				id: 1075,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -1448,7 +1454,7 @@
 			rewards: [{
 				id: 1076,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -1470,7 +1476,7 @@
 			rewards: [{
 				id: 1074,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		}
 	]
