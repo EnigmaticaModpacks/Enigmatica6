@@ -60,7 +60,7 @@
 			rewards: [{
 				id: 662,
 				type: "random",
-				table: 7
+				table: 14
 			}]
 		},
 		{
@@ -133,7 +133,7 @@
 				{
 					id: 648,
 					type: "random",
-					table: 7
+					table: 14
 				}
 			]
 		},
@@ -165,7 +165,7 @@
 			rewards: [{
 				id: 649,
 				type: "random",
-				table: 7
+				table: 14
 			}]
 		},
 		{
@@ -189,18 +189,11 @@
 					}
 				}
 			}],
-			rewards: [
-				{
-					id: 436,
-					type: "item",
-					item: "minecraft:lava_bucket"
-				},
-				{
-					id: 575,
-					type: "random",
-					table: 7
-				}
-			]
+			rewards: [{
+				id: 436,
+				type: "item",
+				item: "minecraft:lava_bucket"
+			}]
 		},
 		{
 			title: "Thermo Generator",
@@ -233,9 +226,9 @@
 					item: "cookingforblockheads:sink"
 				},
 				{
-					id: 567,
-					type: "random",
-					table: 9
+					id: 1613,
+					type: "loot",
+					table: 14
 				}
 			]
 		},
@@ -271,7 +264,7 @@
 				{
 					id: 650,
 					type: "random",
-					table: 7
+					table: 14
 				}
 			]
 		},
@@ -291,9 +284,9 @@
 				item: "powah:lens_of_ender"
 			}],
 			rewards: [{
-				id: 651,
-				type: "random",
-				table: 7
+				id: 1612,
+				type: "loot",
+				table: 14
 			}]
 		},
 		{
@@ -466,7 +459,7 @@
 			rewards: [{
 				id: 654,
 				type: "random",
-				table: 7
+				table: 14
 			}]
 		},
 		{
@@ -542,7 +535,7 @@
 			rewards: [{
 				id: 655,
 				type: "random",
-				table: 7
+				table: 14
 			}]
 		},
 		{
@@ -723,7 +716,7 @@
 				{
 					id: 660,
 					type: "random",
-					table: 7
+					table: 14
 				}
 			]
 		},
@@ -750,7 +743,7 @@
 			rewards: [{
 				id: 657,
 				type: "random",
-				table: 7
+				table: 14
 			}]
 		},
 		{
@@ -772,7 +765,7 @@
 			rewards: [{
 				id: 658,
 				type: "random",
-				table: 7
+				table: 14
 			}]
 		},
 		{
@@ -794,7 +787,7 @@
 			rewards: [{
 				id: 659,
 				type: "random",
-				table: 6
+				table: 14
 			}]
 		},
 		{
@@ -852,7 +845,7 @@
 				{
 					id: 661,
 					type: "random",
-					table: 8
+					table: 14
 				}
 			]
 		},
@@ -902,9 +895,9 @@
 					player_command: true
 				},
 				{
-					id: 653,
-					type: "random",
-					table: 9
+					id: 1611,
+					type: "loot",
+					table: 14
 				}
 			]
 		}
