@@ -1,0 +1,58 @@
+[
+    {
+        "predicate": {"item": "mekanismtools:bronze_shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/bronze"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/bronze"]
+        }
+    },
+    {
+        "predicate": {"item": "mekanismtools:lapis_lazuli_shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/lapis"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/lapis"]
+        }
+    },
+    {
+        "predicate": {"item": "mekanismtools:osmium_shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/osmium"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/osmium"]
+        }
+    },
+    {
+        "predicate": {"item": "mekanismtools:refined_glowstone_shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/refined_glowstone"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/refined_glowstone"]
+        }
+    },
+    {
+        "predicate": {"item": "mekanismtools:refined_obsidian_shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/refined_obsidian"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/refined_obsidian"]
+        }
+    },
+    {
+        "predicate": {"item": "mekanismtools:steel_shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/steel"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/steel"]
+        }
+    },
+    {
+        "predicate": {"item": "immersiveengineering:shield"},
+        "item": "tetra:modular_shield",
+        "modules": {
+            "shield/plate": ["shield/tower", "tower/steel"],
+            "shield/grip": ["shield/basic_grip", "basic_grip/steel"]
+        }
+    }
+]

@@ -79,5 +79,50 @@
             "double/head_right": ["double/butt_right", "butt/sky"],
             "double/handle": ["double/basic_handle", "basic_handle/treated_wood"]
         }
+    },
+    {
+        "predicate": { "item": "aiotbotania:manasteel_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/manasteel"],
+            "double/head_right": ["double/butt_right", "butt/manasteel"],
+            "double/handle": ["double/basic_handle", "basic_handle/treated_wood"]
+        }
+    },
+    {
+        "predicate": { "item": "aiotbotania:elementium_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/elementium"],
+            "double/head_right": ["double/butt_right", "butt/elementium"],
+            "double/handle": ["double/basic_handle", "basic_handle/jacaranda"]
+        }
+    },
+    {
+        "predicate": { "item": "aiotbotania:terra_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/terrasteel"],
+            "double/head_right": ["double/butt_right", "butt/terrasteel"],
+            "double/handle": ["double/basic_handle", "basic_handle/terrasteel"]
+        }
+    },
+    {
+        "predicate": { "item": "aquaculture:neptunium_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/neptunium"],
+            "double/head_right": ["double/butt_right", "butt/neptunium"],
+            "double/handle": ["double/basic_handle", "basic_handle/neptunium"]
+        }
+    },
+    {
+        "predicate": { "item": "aiotbotania:alfsteel_hoe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/hoe_left", "hoe/alfsteel"],
+            "double/head_right": ["double/butt_right", "butt/alfsteel"],
+            "double/handle": ["double/basic_handle", "basic_handle/alfsteel"]
+        }
     }
 ]
