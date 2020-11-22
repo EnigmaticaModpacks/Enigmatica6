@@ -1,6 +1,59 @@
 {
 	id: 1454,
 	title: "Rare IE Loot Box",
+	icon: "aquaculture:treasure_chest",
 	loot_size: 1,
-	rewards: []
+	rewards: [
+		{
+			item: "immersiveengineering:shader_bag_rare"
+		},
+		{
+			item: "immersiveengineering:shader_bag_epic"
+		},
+		{
+			item: "immersiveengineering:coke",
+			count: 8
+		},
+		{
+			item: "immersiveengineering:capacitor_hv"
+		},
+		{
+			item: "immersiveengineering:dragons_breath",
+			count: 16
+		},
+		{
+			item: "immersiveengineering:homing",
+			count: 16
+		},
+		{
+			item: "immersiveengineering:generator",
+			count: 2
+		},
+		{
+			item: {
+				id: "mekanism:basic_fluid_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						owner: [I;
+							-1604261307,
+							2068662071,
+							-1661464692,
+							2021809473
+						],
+						FluidTanks: [{
+							Tank: false,
+							stored: {
+								FluidName: "immersiveengineering:ethanol",
+								Amount: 14000
+							}
+						}],
+						securityMode: 0,
+						Items: [],
+						bucketMode: false
+					}
+				}
+			}
+		}
+	]
 }
