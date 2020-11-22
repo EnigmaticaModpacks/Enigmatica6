@@ -118,5 +118,25 @@
             "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/terrasteel"],
             "sword/guard": ["sword/makeshift_guard", "makeshift_guard/terrasteel"]
         }
+    },
+    {
+        "predicate": { "item": "aquaculture:neptunium_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/neptunium"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/neptunium"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/neptunium"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/neptunium"]
+        }
+    },
+    {
+        "predicate": { "item": "mythicbotany:alfsteel_sword" },
+        "item": "tetra:modular_sword",
+        "modules": {
+            "sword/blade": ["sword/basic_blade", "basic_blade/alfsteel"],
+            "sword/hilt": ["sword/basic_hilt", "basic_hilt/alfsteel"],
+            "sword/pommel": ["sword/decorative_pommel", "decorative_pommel/alfsteel"],
+            "sword/guard": ["sword/makeshift_guard", "makeshift_guard/alfsteel"]
+        }
     }
 ]

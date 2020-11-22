@@ -106,5 +106,23 @@
             "double/head_right": ["double/butt_right", "butt/terrasteel"],
             "double/handle": ["double/basic_handle", "basic_handle/terrasteel"]
         }
+    },
+    {
+        "predicate": { "item": "aquaculture:neptunium_axe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/basic_axe_left", "basic_axe/neptunium"],
+            "double/head_right": ["double/butt_right", "butt/neptunium"],
+            "double/handle": ["double/basic_handle", "basic_handle/neptunium"]
+        }
+    },
+    {
+        "predicate": { "item": "mythicbotany:alfsteel_axe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/basic_axe_left", "basic_axe/alfsteel"],
+            "double/head_right": ["double/butt_right", "butt/alfsteel"],
+            "double/handle": ["double/basic_handle", "basic_handle/alfsteel"]
+        }
     }
 ]

@@ -106,5 +106,23 @@
             "double/head_right": ["double/basic_pickaxe_right", "basic_pickaxe/terrasteel"],
             "double/handle": ["double/basic_handle", "basic_handle/terrasteel"]
         }
+    },
+    {
+        "predicate": { "item": "aquaculture:neptunium_pickaxe" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/basic_pickaxe_left", "basic_pickaxe/neptunium"],
+            "double/head_right": ["double/basic_pickaxe_right", "basic_pickaxe/neptunium"],
+            "double/handle": ["double/basic_handle", "basic_handle/neptunium"]
+        }
+    },
+    {
+        "predicate": { "item": "mythicbotany:alfsteel_pick" },
+        "item": "tetra:modular_double",
+        "modules": {
+            "double/head_left": ["double/basic_pickaxe_left", "basic_pickaxe/alfsteel"],
+            "double/head_right": ["double/basic_pickaxe_right", "basic_pickaxe/alfsteel"],
+            "double/handle": ["double/basic_handle", "basic_handle/alfsteel"]
+        }
     }
 ]

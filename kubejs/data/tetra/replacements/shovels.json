@@ -86,5 +86,29 @@
             "single/basic_shovel": ["single/basic_shovel", "basic_shovel/elementium"],
             "single/handle": ["single/basic_handle", "basic_handle/jacaranda"]
         }
+    },
+    {
+        "predicate": { "item": "aiotbotania:terra_shovel" },
+        "item": "tetra:modular_single",
+        "modules": {
+            "single/basic_shovel": ["single/basic_shovel", "basic_shovel/terrasteel"],
+            "single/handle": ["single/basic_handle", "basic_handle/terrasteel"]
+        }
+    },
+    {
+        "predicate": { "item": "aquaculture:neptunium_shovel" },
+        "item": "tetra:modular_single",
+        "modules": {
+            "single/basic_shovel": ["single/basic_shovel", "basic_shovel/neptunium"],
+            "single/handle": ["single/basic_handle", "basic_handle/neptunium"]
+        }
+    },
+    {
+        "predicate": { "item": "aiotbotania:alfsteel_shovel" },
+        "item": "tetra:modular_single",
+        "modules": {
+            "single/basic_shovel": ["single/basic_shovel", "basic_shovel/alfsteel"],
+            "single/handle": ["single/basic_handle", "basic_handle/alfsteel"]
+        }
     }
 ]
