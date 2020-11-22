@@ -9,3 +9,7 @@
 	#Determines if the biome dictionary make assumptions for unregistered biomes. Setting this to false can fix issues where a structure generates in the wrong dimension.
 	make_best_guess = true
 
+[commands]
+	#When true, removes the size limit from the fill and clone commands.
+	exceed_fill_clone_limit = true
+
