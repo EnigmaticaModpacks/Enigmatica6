@@ -1,7 +1,7 @@
 {
 	id: 1280,
 	filename: "botania",
-	order_index: 0,
+	order_index: 15,
 	title: "Botania",
 	icon: "botania:mana_pylon",
 	default_quest_shape: "",
@@ -121,7 +121,12 @@
 					type: "item",
 					item: "botania:pure_daisy"
 				}
-			]
+			],
+			rewards: [{
+				id: 1610,
+				type: "loot",
+				table: 7
+			}]
 		},
 		{
 			title: "Livingwood & Livingrock",
@@ -148,7 +153,7 @@
 			rewards: [{
 				id: 1511,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -174,7 +179,7 @@
 			rewards: [{
 				id: 1509,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -226,7 +231,7 @@
 			rewards: [{
 				id: 1496,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -267,7 +272,7 @@
 			rewards: [{
 				id: 1497,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -289,7 +294,7 @@
 			rewards: [{
 				id: 1514,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -313,7 +318,7 @@
 			rewards: [{
 				id: 1513,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -338,7 +343,7 @@
 			rewards: [{
 				id: 1515,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -399,7 +404,7 @@
 			rewards: [{
 				id: 1490,
 				type: "loot",
-				table: 19
+				table: 9
 			}]
 		},
 		{
@@ -431,7 +436,7 @@
 			rewards: [{
 				id: 1491,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -455,7 +460,7 @@
 			rewards: [{
 				id: 1484,
 				type: "loot",
-				table: 19
+				table: 9
 			}]
 		},
 		{
@@ -500,7 +505,7 @@
 			rewards: [{
 				id: 1508,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -518,7 +523,7 @@
 			rewards: [{
 				id: 1516,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -536,7 +541,7 @@
 			rewards: [{
 				id: 1520,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -554,7 +559,7 @@
 			rewards: [{
 				id: 1521,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -572,7 +577,7 @@
 			rewards: [{
 				id: 1519,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -590,7 +595,7 @@
 			rewards: [{
 				id: 1517,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -616,7 +621,7 @@
 			rewards: [{
 				id: 1518,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -658,7 +663,7 @@
 			rewards: [{
 				id: 1500,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -702,7 +707,7 @@
 			rewards: [{
 				id: 1504,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -720,7 +725,7 @@
 			rewards: [{
 				id: 1501,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -738,7 +743,7 @@
 			rewards: [{
 				id: 1502,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -756,7 +761,7 @@
 			rewards: [{
 				id: 1503,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -774,7 +779,7 @@
 			rewards: [{
 				id: 1505,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -796,7 +801,7 @@
 			rewards: [{
 				id: 1506,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -818,7 +823,7 @@
 			rewards: [{
 				id: 1507,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -836,7 +841,7 @@
 			rewards: [{
 				id: 1522,
 				type: "loot",
-				table: 17
+				table: 7
 			}]
 		},
 		{
@@ -858,7 +863,7 @@
 			rewards: [{
 				id: 1498,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -880,7 +885,7 @@
 			rewards: [{
 				id: 1495,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -902,7 +907,7 @@
 			rewards: [{
 				id: 1493,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -924,7 +929,7 @@
 			rewards: [{
 				id: 1494,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -971,7 +976,7 @@
 			rewards: [{
 				id: 1492,
 				type: "loot",
-				table: 18
+				table: 8
 			}]
 		},
 		{
@@ -1087,7 +1092,7 @@
 			rewards: [{
 				id: 1483,
 				type: "loot",
-				table: 19
+				table: 9
 			}]
 		},
 		{
@@ -1109,7 +1114,7 @@
 			rewards: [{
 				id: 1482,
 				type: "loot",
-				table: 19
+				table: 8
 			}]
 		},
 		{
@@ -1138,7 +1143,7 @@
 				{
 					id: 1488,
 					type: "loot",
-					table: 19
+					table: 9
 				}
 			]
 		},
@@ -1161,7 +1166,7 @@
 			rewards: [{
 				id: 1485,
 				type: "loot",
-				table: 19
+				table: 9
 			}]
 		},
 		{
@@ -1179,7 +1184,7 @@
 			rewards: [{
 				id: 1486,
 				type: "loot",
-				table: 19
+				table: 9
 			}]
 		},
 		{
@@ -1201,7 +1206,7 @@
 			rewards: [{
 				id: 1489,
 				type: "loot",
-				table: 19
+				table: 9
 			}]
 		}
 	]

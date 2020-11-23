@@ -39,6 +39,17 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1543,
+				type: "item",
+				item: {
+					id: "immersiveengineering:wirecutter",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		},
 		{
@@ -62,7 +73,13 @@
 					item: "immersiveengineering:coal_coke",
 					count: 8L
 				}
-			]
+			],
+			rewards: [{
+				id: 1546,
+				type: "item",
+				item: "immersiveengineering:coal_coke",
+				count: 8
+			}]
 		},
 		{
 			icon: "immersiveengineering:windmill",
@@ -82,7 +99,13 @@
 					type: "item",
 					item: "immersiveengineering:dynamo"
 				}
-			]
+			],
+			rewards: [{
+				id: 1557,
+				type: "item",
+				item: "immersiveengineering:wirecoil_copper_ins",
+				count: 2
+			}]
 		},
 		{
 			title: "Basic Wiring",
@@ -103,7 +126,13 @@
 					type: "item",
 					item: "immersiveengineering:connector_lv"
 				}
-			]
+			],
+			rewards: [{
+				id: 1547,
+				type: "item",
+				item: "immersiveengineering:connector_lv",
+				count: 4
+			}]
 		},
 		{
 			title: "Blast Furnace",
@@ -117,6 +146,12 @@
 				type: "item",
 				item: "immersiveengineering:blastbrick",
 				count: 27L
+			}],
+			rewards: [{
+				id: 1555,
+				type: "item",
+				item: "emendatusenigmatica:steel_ingot",
+				count: 8
 			}]
 		},
 		{
@@ -130,7 +165,20 @@
 				id: 21,
 				type: "item",
 				item: "immersiveengineering:wirecoil_copper_ins"
-			}]
+			}],
+			rewards: [
+				{
+					id: 1548,
+					type: "item",
+					item: "immersiveengineering:hemp_fiber",
+					count: 16
+				},
+				{
+					id: 1549,
+					type: "loot",
+					table: 4
+				}
+			]
 		},
 		{
 			x: -1.5d,
@@ -145,6 +193,11 @@
 				id: 24,
 				type: "item",
 				item: "immersiveengineering:capacitor_lv"
+			}],
+			rewards: [{
+				id: 1556,
+				type: "loot",
+				table: 4
 			}]
 		},
 		{
@@ -157,6 +210,17 @@
 				id: 26,
 				type: "item",
 				item: "immersiveengineering:workbench"
+			}],
+			rewards: [{
+				id: 1551,
+				type: "item",
+				item: {
+					id: "immersiveengineering:blueprint",
+					Count: true,
+					tag: {
+						blueprint: "components"
+					}
+				}
 			}]
 		},
 		{
@@ -177,7 +241,13 @@
 					type: "item",
 					item: "immersiveengineering:dynamo"
 				}
-			]
+			],
+			rewards: [{
+				id: 1559,
+				type: "item",
+				item: "immersiveengineering:wirecoil_copper_ins",
+				count: 2
+			}]
 		},
 		{
 			x: 3.0d,
@@ -189,6 +259,11 @@
 				id: 31,
 				type: "item",
 				item: "immersiveengineering:conveyor_basic"
+			}],
+			rewards: [{
+				id: 1550,
+				type: "loot",
+				table: 4
 			}]
 		},
 		{
@@ -229,7 +304,12 @@
 					item: "minecraft:hopper",
 					count: 9L
 				}
-			]
+			],
+			rewards: [{
+				id: 1569,
+				type: "loot",
+				table: 6
+			}]
 		},
 		{
 			title: "Metal Press",
@@ -267,6 +347,20 @@
 					item: "immersiveengineering:conveyor_basic",
 					count: 2L
 				}
+			],
+			rewards: [
+				{
+					id: 1566,
+					type: "item",
+					item: "emendatusenigmatica:iron_plate",
+					count: 8
+				},
+				{
+					id: 1567,
+					type: "item",
+					item: "emendatusenigmatica:steel_plate",
+					count: 4
+				}
 			]
 		},
 		{
@@ -289,7 +383,12 @@
 					type: "item",
 					item: "minecraft:hopper"
 				}
-			]
+			],
+			rewards: [{
+				id: 1568,
+				type: "loot",
+				table: 6
+			}]
 		},
 		{
 			title: "Alloy Kiln",
@@ -303,6 +402,12 @@
 				type: "item",
 				item: "immersiveengineering:alloybrick",
 				count: 8L
+			}],
+			rewards: [{
+				id: 1544,
+				type: "item",
+				item: "emendatusenigmatica:copper_ingot",
+				count: 8
 			}]
 		},
 		{
@@ -383,6 +488,18 @@
 					item: "immersiveengineering:blastbrick_reinforced",
 					count: 27L
 				}
+			],
+			rewards: [
+				{
+					id: 1570,
+					type: "loot",
+					table: 6
+				},
+				{
+					id: 1571,
+					type: "loot",
+					table: 6
+				}
 			]
 		},
 		{
@@ -395,6 +512,11 @@
 				id: 53,
 				type: "item",
 				item: "immersiveengineering:furnace_heater"
+			}],
+			rewards: [{
+				id: 1558,
+				type: "loot",
+				table: 4
 			}]
 		},
 		{
@@ -407,6 +529,12 @@
 				id: 55,
 				type: "item",
 				item: "immersiveengineering:thermoelectric_generator"
+			}],
+			rewards: [{
+				id: 1560,
+				type: "item",
+				item: "minecraft:blue_ice",
+				count: 4
 			}]
 		},
 		{
@@ -470,7 +598,12 @@
 					item: "immersiveengineering:conveyor_basic",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 1565,
+				type: "loot",
+				table: 6
+			}]
 		},
 		{
 			title: "Squeezer and Fermenter",
@@ -491,7 +624,13 @@
 					type: "item",
 					item: "immersiveengineering:ethanol_bucket"
 				}
-			]
+			],
+			rewards: [{
+				id: 1561,
+				type: "item",
+				item: "immersiveengineering:seed",
+				count: 24
+			}]
 		},
 		{
 			title: "Biodiesel",
@@ -504,6 +643,11 @@
 				id: 61,
 				type: "item",
 				item: "immersiveengineering:biodiesel_bucket"
+			}],
+			rewards: [{
+				id: 1572,
+				type: "loot",
+				table: 6
 			}]
 		},
 		{
@@ -550,7 +694,12 @@
 					item: "immersiveengineering:heavy_engineering",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 1564,
+				type: "loot",
+				table: 6
+			}]
 		},
 		{
 			title: "Engineer's Tools and Weaponry",
@@ -616,7 +765,12 @@
 						tag: {}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1562,
+				type: "loot",
+				table: 6
+			}]
 		},
 		{
 			title: "Mineral Veins",
@@ -652,7 +806,13 @@
 						tag: {}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1563,
+				type: "item",
+				item: "emendatusenigmatica:gold_ore",
+				count: 12
+			}]
 		},
 		{
 			title: "Getting Clocher",
@@ -665,6 +825,11 @@
 				id: 578,
 				type: "item",
 				item: "immersiveengineering:cloche"
+			}],
+			rewards: [{
+				id: 1553,
+				type: "loot",
+				table: 4
 			}]
 		},
 		{
@@ -690,7 +855,13 @@
 					type: "item",
 					item: "immersiveengineering:floodlight"
 				}
-			]
+			],
+			rewards: [{
+				id: 1552,
+				type: "item",
+				item: "minecraft:glowstone",
+				count: 4
+			}]
 		},
 		{
 			title: "Workbench Automation",
@@ -736,7 +907,12 @@
 					item: "immersiveengineering:conveyor_basic",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 1554,
+				type: "loot",
+				table: 4
+			}]
 		}
 	]
 }

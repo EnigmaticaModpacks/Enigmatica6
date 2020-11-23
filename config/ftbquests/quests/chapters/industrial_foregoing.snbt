@@ -29,6 +29,17 @@
 					type: "item",
 					item: "minecraft:acacia_sapling",
 					count: 8
+				},
+				{
+					id: 1592,
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: true,
+						tag: {
+							"patchouli:book": "industrialforegoing:industrial_foregoing"
+						}
+					}
 				}
 			]
 		},
@@ -42,6 +53,12 @@
 				id: 76,
 				type: "item",
 				item: "industrialforegoing:fluid_extractor"
+			}],
+			rewards: [{
+				id: 1576,
+				type: "item",
+				item: "minecraft:acacia_log",
+				count: 16
 			}]
 		},
 		{
@@ -57,6 +74,12 @@
 				id: 78,
 				type: "item",
 				item: "industrialforegoing:machine_frame_pity"
+			}],
+			rewards: [{
+				id: 1573,
+				type: "item",
+				item: "minecraft:iron_ingot",
+				count: 8
 			}]
 		},
 		{
@@ -72,6 +95,11 @@
 				id: 80,
 				type: "item",
 				item: "industrialforegoing:latex_processing_unit"
+			}],
+			rewards: [{
+				id: 1577,
+				type: "loot",
+				table: 3
 			}]
 		},
 		{
@@ -87,6 +115,11 @@
 				id: 82,
 				type: "item",
 				item: "industrialforegoing:machine_frame_simple"
+			}],
+			rewards: [{
+				id: 1586,
+				type: "loot",
+				table: 3
 			}]
 		},
 		{
@@ -99,6 +132,11 @@
 				id: 84,
 				type: "item",
 				item: "industrialforegoing:mob_slaughter_factory"
+			}],
+			rewards: [{
+				id: 1574,
+				type: "item",
+				item: "industrialforegoing:meat_feeder"
 			}]
 		},
 		{
@@ -111,6 +149,11 @@
 				id: 86,
 				type: "item",
 				item: "industrialforegoing:sewer"
+			}],
+			rewards: [{
+				id: 1583,
+				type: "item",
+				item: "industrialforegoing:sewage_bucket"
 			}]
 		},
 		{
@@ -126,6 +169,11 @@
 				id: 107,
 				type: "item",
 				item: "industrialforegoing:dissolution_chamber"
+			}],
+			rewards: [{
+				id: 1578,
+				type: "loot",
+				table: 3
 			}]
 		},
 		{
@@ -159,6 +207,11 @@
 						}
 					}
 				}
+			}],
+			rewards: [{
+				id: 1585,
+				type: "loot",
+				table: 3
 			}]
 		},
 		{
@@ -176,6 +229,11 @@
 				id: 121,
 				type: "item",
 				item: "industrialforegoing:machine_frame_advanced"
+			}],
+			rewards: [{
+				id: 1587,
+				type: "loot",
+				table: 5
 			}]
 		},
 		{
@@ -188,6 +246,11 @@
 				id: 123,
 				type: "item",
 				item: "industrialforegoing:mob_crusher"
+			}],
+			rewards: [{
+				id: 1590,
+				type: "loot",
+				table: 5
 			}]
 		},
 		{
@@ -200,6 +263,11 @@
 				id: 125,
 				type: "item",
 				item: "industrialforegoing:enchantment_factory"
+			}],
+			rewards: [{
+				id: 1589,
+				type: "loot",
+				table: 5
 			}]
 		},
 		{
@@ -212,6 +280,11 @@
 				id: 127,
 				type: "item",
 				item: "industrialforegoing:material_stonework_factory"
+			}],
+			rewards: [{
+				id: 1591,
+				type: "loot",
+				table: 5
 			}]
 		},
 		{
@@ -224,7 +297,27 @@
 				id: 129,
 				type: "item",
 				item: "industrialforegoing:bioreactor"
-			}]
+			}],
+			rewards: [
+				{
+					id: 1580,
+					type: "item",
+					item: "minecraft:beetroot",
+					count: 8
+				},
+				{
+					id: 1581,
+					type: "item",
+					item: "minecraft:carrot",
+					count: 8
+				},
+				{
+					id: 1582,
+					type: "item",
+					item: "minecraft:potato",
+					count: 8
+				}
+			]
 		},
 		{
 			x: 1.5d,
@@ -254,6 +347,33 @@
 						}
 					}
 				}
+			}],
+			rewards: [{
+				id: 1575,
+				type: "item",
+				item: {
+					id: "mekanism:basic_fluid_tank",
+					Count: true,
+					tag: {
+						mekData: {
+							owner: [I;
+								-1604261307,
+								2068662071,
+								-1661464692,
+								2021809473
+							],
+							FluidTanks: [{
+								Tank: false,
+								stored: {
+									FluidName: "industrialforegoing:biofuel",
+									Amount: 14000
+								}
+							}],
+							securityMode: 0,
+							Items: []
+						}
+					}
+				}
 			}]
 		},
 		{
@@ -269,6 +389,11 @@
 				id: 133,
 				type: "item",
 				item: "industrialforegoing:sewage_composter"
+			}],
+			rewards: [{
+				id: 1584,
+				type: "loot",
+				table: 3
 			}]
 		},
 		{
@@ -284,6 +409,12 @@
 				id: 135,
 				type: "item",
 				item: "industrialforegoing:plant_fertilizer"
+			}],
+			rewards: [{
+				id: 1588,
+				type: "item",
+				item: "industrialforegoing:fertilizer",
+				count: 16
 			}]
 		},
 		{
@@ -299,6 +430,11 @@
 				id: 137,
 				type: "item",
 				item: "industrialforegoing:conveyor"
+			}],
+			rewards: [{
+				id: 1579,
+				type: "loot",
+				table: 3
 			}]
 		}
 	]

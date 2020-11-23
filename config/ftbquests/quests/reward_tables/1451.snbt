@@ -3,5 +3,46 @@
 	title: "IF Loot Box",
 	icon: "aquaculture:lockbox",
 	loot_size: 1,
-	rewards: []
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "industrialforegoing:straw"
+		},
+		{
+			item: "industrialforegoing:machine_frame_pity"
+		},
+		{
+			item: "industrialforegoing:machine_frame_simple"
+		},
+		{
+			item: "industrialforegoing:conveyor",
+			count: 16
+		},
+		{
+			item: "industrialforegoing:dark_glass",
+			count: 16
+		},
+		{
+			item: "industrialforegoing:dryrubber",
+			count: 8
+		},
+		{
+			item: "industrialforegoing:pitiful_generator"
+		},
+		{
+			item: {
+				id: "industrialforegoing:range_addon3",
+				Count: true,
+				tag: {
+					TitaniumAugment: {
+						Range: 3.0f
+					}
+				}
+			}
+		},
+		{
+			item: "industrialforegoing:fluid_extractor"
+		}
+	]
 }

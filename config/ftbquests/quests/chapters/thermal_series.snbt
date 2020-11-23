@@ -1,7 +1,7 @@
 {
 	id: 929,
 	filename: "thermal_series",
-	order_index: 16,
+	order_index: 17,
 	title: "Thermal Series",
 	icon: "thermal:wrench",
 	default_quest_shape: "",
@@ -11,7 +11,7 @@
 			y: 1.0d,
 			shape: "gear",
 			description: [
-				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept it's overal theme of slightly magical tech throughout. ",
+				"The Thermal Series is a suite of mods that has been a staple of Modded Minecraft for years. Time has brought many changes to it, but it's kept its overall theme of slightly magical tech throughout. ",
 				"",
 				"The Thermalpedia provided goes into greater detail on many of the tools and machines in the Thermal Series. Refer to it often to learn more. ",
 				"",
@@ -112,7 +112,7 @@
 				{
 					id: 1264,
 					type: "loot",
-					table: 10
+					table: 0
 				}
 			]
 		},
@@ -143,7 +143,7 @@
 			rewards: [{
 				id: 1263,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -167,7 +167,7 @@
 			rewards: [{
 				id: 1266,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		},
 		{
@@ -191,7 +191,7 @@
 			rewards: [{
 				id: 1267,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		},
 		{
@@ -212,7 +212,7 @@
 			rewards: [{
 				id: 1268,
 				type: "loot",
-				table: 11
+				table: 0
 			}]
 		},
 		{
@@ -258,7 +258,7 @@
 			rewards: [{
 				id: 1262,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -279,7 +279,7 @@
 			rewards: [{
 				id: 1265,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		},
 		{
@@ -325,7 +325,7 @@
 			rewards: [{
 				id: 1269,
 				type: "loot",
-				table: 11
+				table: 0
 			}]
 		},
 		{
@@ -344,6 +344,11 @@
 				id: 1225,
 				type: "item",
 				item: "thermal:machine_crafter"
+			}],
+			rewards: [{
+				id: 1614,
+				type: "loot",
+				table: 0
 			}]
 		},
 		{
@@ -360,7 +365,7 @@
 			rewards: [{
 				id: 1277,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -377,7 +382,7 @@
 			rewards: [{
 				id: 1278,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -394,7 +399,7 @@
 			rewards: [{
 				id: 1276,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -412,7 +417,7 @@
 			rewards: [{
 				id: 1279,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -448,7 +453,7 @@
 			rewards: [{
 				id: 1275,
 				type: "loot",
-				table: 11
+				table: 1
 			}]
 		},
 		{
@@ -468,7 +473,7 @@
 			rewards: [{
 				id: 1274,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		},
 		{
@@ -485,7 +490,7 @@
 			rewards: [{
 				id: 1271,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		},
 		{
@@ -502,7 +507,7 @@
 			rewards: [{
 				id: 1272,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		},
 		{
@@ -522,7 +527,7 @@
 			rewards: [{
 				id: 1273,
 				type: "loot",
-				table: 10
+				table: 0
 			}]
 		}
 	]

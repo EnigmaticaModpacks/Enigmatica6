@@ -1,7 +1,7 @@
 {
 	id: 939,
 	filename: "ars_nouveau",
-	order_index: 18,
+	order_index: 19,
 	title: "Ars Nouveau",
 	icon: "ars_nouveau:mana_gem",
 	default_quest_shape: "",
@@ -119,7 +119,7 @@
 			rewards: [{
 				id: 1527,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -146,7 +146,7 @@
 			rewards: [{
 				id: 1528,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -173,7 +173,7 @@
 			rewards: [{
 				id: 1529,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -197,7 +197,7 @@
 			rewards: [{
 				id: 1530,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -269,7 +269,7 @@
 			rewards: [{
 				id: 1531,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -358,7 +358,7 @@
 			rewards: [{
 				id: 1532,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -388,7 +388,7 @@
 			rewards: [{
 				id: 1533,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -451,7 +451,7 @@
 			rewards: [{
 				id: 1534,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -502,7 +502,7 @@
 			rewards: [{
 				id: 1537,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -525,7 +525,7 @@
 			rewards: [{
 				id: 1538,
 				type: "loot",
-				table: 20
+				table: 10
 			}]
 		},
 		{
@@ -544,6 +544,11 @@
 				id: 1016,
 				type: "item",
 				item: "ars_nouveau:summoning_crystal"
+			}],
+			rewards: [{
+				id: 1598,
+				type: "loot",
+				table: 10
 			}]
 		}
 	]

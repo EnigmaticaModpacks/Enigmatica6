@@ -96,6 +96,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1616,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -124,6 +129,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1615,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -149,6 +159,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1617,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -177,6 +192,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1618,
+				type: "loot",
+				table: 12
 			}]
 		},
 		{
@@ -198,6 +218,12 @@
 				type: "item",
 				item: "pneumaticcraft:armor_upgrade",
 				count: 4L
+			}],
+			rewards: [{
+				id: 1620,
+				type: "item",
+				item: "pneumaticcraft:armor_upgrade",
+				count: 4
 			}]
 		},
 		{
@@ -211,9 +237,9 @@
 				item: "pneumaticcraft:night_vision_upgrade"
 			}],
 			rewards: [{
-				id: 1114,
+				id: 1605,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -227,9 +253,9 @@
 				item: "pneumaticcraft:scuba_upgrade"
 			}],
 			rewards: [{
-				id: 1113,
+				id: 1604,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -243,9 +269,9 @@
 				item: "pneumaticcraft:magnet_upgrade"
 			}],
 			rewards: [{
-				id: 1115,
+				id: 1602,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -259,9 +285,9 @@
 				item: "pneumaticcraft:charging_upgrade"
 			}],
 			rewards: [{
-				id: 1112,
+				id: 1603,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -275,9 +301,9 @@
 				item: "pneumaticcraft:flippers_upgrade"
 			}],
 			rewards: [{
-				id: 1111,
+				id: 1599,
 				type: "loot",
-				table: 1
+				table: 12
 			}]
 		},
 		{
@@ -291,6 +317,11 @@
 				id: 488,
 				type: "item",
 				item: "pneumaticcraft:memory_stick"
+			}],
+			rewards: [{
+				id: 1619,
+				type: "xp_levels",
+				xp_levels: 30
 			}]
 		},
 		{
@@ -306,9 +337,9 @@
 				item: "pneumaticcraft:jumping_upgrade_4"
 			}],
 			rewards: [{
-				id: 1109,
+				id: 1601,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -324,9 +355,9 @@
 				item: "pneumaticcraft:jet_boots_upgrade_5"
 			}],
 			rewards: [{
-				id: 1110,
+				id: 1600,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -355,9 +386,9 @@
 				}
 			}],
 			rewards: [{
-				id: 1185,
+				id: 1609,
 				type: "loot",
-				table: 1
+				table: 11
 			}]
 		},
 		{
@@ -413,12 +444,7 @@
 			x: -6.0d,
 			y: -8.5d,
 			subtitle: "Something For Every Occasion",
-			description: [
-				"Craft any two types of specialized ammo and give them a try. ",
-				"",
-				"",
-				"PACK NOTE: Need to add tags to ammo to facilitate this. "
-			],
+			description: ["Craft some specialized ammo and give them a try. "],
 			dependencies: [I;507],
 			id: 514,
 			tasks: [
@@ -434,43 +460,10 @@
 					}
 				},
 				{
-					id: 520,
-					type: "item",
-					item: {
-						id: "pneumaticcraft:gun_ammo_incendiary",
-						Count: true,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: 521,
-					type: "item",
-					item: {
-						id: "pneumaticcraft:gun_ammo_weighted",
-						Count: true,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
 					id: 523,
 					type: "item",
 					item: {
 						id: "pneumaticcraft:gun_ammo_explosive",
-						Count: true,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: 524,
-					type: "item",
-					item: {
-						id: "pneumaticcraft:gun_ammo_freezing",
 						Count: true,
 						tag: {
 							Damage: 0
@@ -490,6 +483,11 @@
 				id: 527,
 				type: "item",
 				item: "pneumaticcraft:guard_drone"
+			}],
+			rewards: [{
+				id: 1621,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -505,9 +503,9 @@
 				item: "pneumaticcraft:minigun_upgrade"
 			}],
 			rewards: [{
-				id: 1184,
+				id: 1608,
 				type: "loot",
-				table: 0
+				table: 11
 			}]
 		},
 		{
@@ -523,9 +521,9 @@
 				item: "pneumaticcraft:aerial_interface"
 			}],
 			rewards: [{
-				id: 1118,
+				id: 1606,
 				type: "loot",
-				table: 2
+				table: 13
 			}]
 		},
 		{
@@ -1002,7 +1000,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1628,
+				type: "loot",
+				table: 9
+			}]
 		},
 		{
 			title: "Terrasteel Armor",
@@ -1064,7 +1067,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1629,
+				type: "loot",
+				table: 9
+			}]
 		},
 		{
 			x: -1.5d,
@@ -1083,6 +1091,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1630,
+				type: "loot",
+				table: 9
 			}]
 		},
 		{
@@ -1102,26 +1115,78 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1627,
+				type: "loot",
+				table: 9
 			}]
 		},
 		{
 			title: "Neptunium Armor",
+			icon: {
+				id: "aquaculture:neptunium_helmet",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
 			x: 0.0d,
 			y: -14.0d,
 			subtitle: "And With Strange Aeons, Even Death May Die",
 			description: ["Forged in ages past in the deepest depths. Neptunium armor grants it's wearer a taste of the unimaginable power of the Abyssal Depths."],
 			dependencies: [I;1203],
 			id: 1150,
-			tasks: [{
-				id: 1151,
-				type: "item",
-				item: {
-					id: "aquaculture:neptunium_helmet",
-					Count: true,
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: 1151,
+					type: "item",
+					item: {
+						id: "aquaculture:neptunium_helmet",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1632,
+					type: "item",
+					item: {
+						id: "aquaculture:neptunium_chestplate",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1633,
+					type: "item",
+					item: {
+						id: "aquaculture:neptunium_leggings",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 1634,
+					type: "item",
+					item: {
+						id: "aquaculture:neptunium_boots",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
 					}
 				}
+			],
+			rewards: [{
+				id: 1631,
+				type: "item",
+				item: "aquaculture:nether_star_hook"
 			}]
 		},
 		{
@@ -1140,6 +1205,12 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1635,
+				type: "item",
+				item: "aquaculture:neptunium_ingot",
+				count: 3
 			}]
 		},
 		{
@@ -1227,7 +1298,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1638,
+				type: "loot",
+				table: 10
+			}]
 		},
 		{
 			title: "Skyseeker's Mantle",
@@ -1288,7 +1364,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1637,
+				type: "loot",
+				table: 16
+			}]
 		},
 		{
 			x: -6.0d,
@@ -1306,6 +1387,11 @@
 				id: 1169,
 				type: "item",
 				item: "thermal:flux_drill"
+			}],
+			rewards: [{
+				id: 1623,
+				type: "loot",
+				table: 0
 			}]
 		},
 		{
@@ -1324,6 +1410,11 @@
 				id: 1171,
 				type: "item",
 				item: "thermal:flux_saw"
+			}],
+			rewards: [{
+				id: 1622,
+				type: "loot",
+				table: 0
 			}]
 		},
 		{
@@ -1385,7 +1476,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1625,
+				type: "loot",
+				table: 1
+			}]
 		},
 		{
 			title: "Diving Suit",
@@ -1446,7 +1542,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1624,
+				type: "loot",
+				table: 1
+			}]
 		},
 		{
 			x: -5.5d,
@@ -1464,6 +1565,11 @@
 				id: 1177,
 				type: "item",
 				item: "thermal:flux_magnet"
+			}],
+			rewards: [{
+				id: 1626,
+				type: "loot",
+				table: 0
 			}]
 		},
 		{
@@ -1486,6 +1592,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 1636,
+				type: "loot",
+				table: 16
 			}]
 		}
 	]

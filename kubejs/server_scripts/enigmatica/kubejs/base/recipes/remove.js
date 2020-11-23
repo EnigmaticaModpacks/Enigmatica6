@@ -31,6 +31,13 @@ events.listen('recipes', function (event) {
     ];
 
     var idRemovals = [
+        'aquaculture:gold_nugget_from_blasting',
+        'aquaculture:gold_nugget_from_smelting',
+        'aquaculture:iron_nugget_from_blasting',
+        'aquaculture:iron_nugget_from_smelting',
+        'aquaculture:neptunium_ingot_from_blasting',
+        'aquaculture:neptinium_ingot_from_blasting',
+
         'decorative_blocks:hellbark_beam',
         'decorative_blocks:jungle_beam',
         'decorative_blocks:birch_beam',

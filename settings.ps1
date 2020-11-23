@@ -72,7 +72,7 @@ $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
 
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "alpha"
+$CLIENT_RELEASE_TYPE = "beta"
 
 #=====================================================================//
 #  SERVER FILE SETTINGS

@@ -71,7 +71,10 @@ var materialsToUnify = [
     'apatite',
     'bitumen',
     'redstone',
-    'glowstone'
+    'glowstone',
+    'arcane',
+    'certus_quartz',
+    'charged_certus_quartz'
 ];
 global.materialsToUnify = materialsToUnify;
 
