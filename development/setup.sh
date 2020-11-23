@@ -8,4 +8,4 @@ echo "java -jar InstanceSync.jar" >> .git/hooks/post-merge
 echo "Done setting up hooks"
 echo "Running InstanceSync"
 
-java -jar InstanceSync.jar
+/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -jar InstanceSync.jar
