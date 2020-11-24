@@ -70,6 +70,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
 
+    event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
+
     event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
     event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
 
