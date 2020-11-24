@@ -12,4 +12,6 @@ events.listen('item.tags', function (event) {
     event.get('forge:gems/dimensional').add('rftoolsbase:dimensionalshard');
     event.get('forge:gems/mana').add('ars_nouveau:mana_gem');
     event.get('forge:gems/bitumen').add('mapperbase:raw_bitumen');
+
+    event.get('forge:gems/mana_gem').remove('ars_nouveau:mana_gem');
 });

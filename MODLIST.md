@@ -18,6 +18,8 @@
 - bedspreads-forge-1.16.4-5.1.0.1
 - BetterAdvancements-1.16.4-0.1.0.103
 - BetterBurning-1.16.4-5.0.2
+- BetterCaves-1.16.3-1.0.5
+- BetterMineshafts-Forge-1.16.3-1.1
 - BiomesOPlenty-1.16.4-13.0.0.421-universal
 - blockcarpentry-1.16.2-0.3.4
 - Bookshelf-1.16.4-9.1.13
@@ -50,6 +52,7 @@
 - CTM-MC1.16.1-1.1.1.5
 - curioofundying-forge-1.16.3-5.0.0.1
 - curios-forge-1.16.4-4.0.2.1
+- Curious Armor Stands-1.16.3-2.0.2
 - curiouselytra-forge-1.16.3-4.0.0.1
 - DangerousStoneCutter-1.16.2-1.4
 - dankstorage-3.11
@@ -57,7 +60,8 @@
 - decorative_blocks-1.16.4-1.6.0
 - DefaultOptions_1.16.3-12.2.0
 - Ding-1.16.3-1.2.0
-- dungeons-plus-1.16.3-1.0.3
+- DrawersTooltip-1.16.2-2.1.0
+- dungeons-plus-1.16.4-1.1.0
 - elevatorid-1.16.4-1.7.8
 - embellishcraft-1.16.3-3.2.0.0
 - EmendatusEnigmatica-1.16.4-1.0.2
@@ -114,6 +118,7 @@
 - mcjtylib-1.16-5.0.14
 - mcw-bridges-1.0.4-mc1.16.4
 - mcw-doors-1.0.1fix-mc1.16.4
+- mcw-trapdors-1.0.0-mc1.16.4
 - mcw-windows-1.0.2-mc1.16.4
 - mcws-roofs-2.0.0-mc1.16.4
 - meetyourfight-1.16.3-1.0.0
@@ -172,13 +177,14 @@
 - scaffoldingpower-1.16.3-1.2.1
 - ScreenshotToClipboard-1.15.1-1.0.5
 - seals-1.16.3-2.0.0
+- serverconfigupdater-1.3
 - ServerTabInfo-1.16.4-1.3.3
 - SimpleDiscordRichPresence-1.16.4-1.3.5
 - simplefarming-1.16.4-1.3.5
 - simplylight-1.16.4-1.1.1
 - solcarrot-1.16.3-1.9.8
 - StorageDrawers-1.16.3-8.2.1
-- structure-gel-api-1.16.4-1.6.0
+- structure-gel-api-1.16.4-1.7.0
 - swingthroughgrass-1.16.4-1.5.3
 - tetra-1.16.4-3.3.1
 - theoneprobe-1.16-3.0.6
@@ -194,6 +200,7 @@
 - ToolStats-1.16.4-5.0.1
 - torchmaster-2.3.4-alpha
 - towers_of_the_wild-1.16.4-2.0.1
+- Transport-1.16.3-3.2.0
 - trashcans-1.0.3-mc1.16.4
 - TrashSlot_1.16.3-12.2.1
 - TravelAnchors-2.1

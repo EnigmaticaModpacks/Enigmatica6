@@ -12,7 +12,71 @@ _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely 
 
 **New Mods!**
 
-- 
+- Archer's Paradox
+- Ars Nouveau
+- AttributeFix
+- Botania Additions
+- Botany Trees
+- Builders Crafts & Additions (Forge)
+- Chisels & Bits
+- CoFH Core
+- CobbleGenRandomizer
+- Config Swapper
+- Crafting Station
+- CreativeCore
+- EmbellishCraft
+- Ensorcellation
+- Ensorcelled
+- FTB Chunks
+- FTB Essentials
+- FTB GUI Library
+- FTB Quests
+- FTB Ranks
+- FTB Teams
+- Farmer's Delight
+- Framed Compacting Drawers
+- GeckoLib
+- Glassential
+- Guns Without Roses
+- Immersive Posts
+- Item Filters
+- LibX
+- Lost Trinkets
+- Mapper Base
+- McJtyLib
+- Meet Your Fight
+- More Overlays Updated
+- MythicBotany
+- Nature's Aura
+- Oh The Biomes You'll Go
+- Plonk
+- Pretty Pipes
+- RFTools Base
+- RFTools Builder
+- RFTools Control
+- RFTools Storage
+- RFTools Utility
+- Rare Ice (Forge/Fabric)
+- RecipeBuffers
+- Refined Storage: Requestify
+- Resourceful Bees
+- Rhino
+- Screenshot to Clipboard (Forge)
+- Seals
+- Tetra
+- The Mighty Architect
+- The Official Enigmatica Resource Pack
+- Thermal Expansion
+- Thermal Foundation
+- Thermal Innovation
+- Thermal Locomotion
+- Tips
+- Travel Anchors
+- Useful Railroads
+- XNet
+- XNet Gases
+- XercaMod
+- mGui
 
 **Additions**
 
@@ -85,7 +149,51 @@ _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely 
 
 **Removed Mods**
 
--   All mods from Team Abnormals, the ones we previously had will be re-added when they update.
+-   Abnormals Core
+- Applied Energistics 2
+- Armor Toughness Bar
+- Artifacts
+- Bamboo Blocks
+- Big Buckets
+- Buzzier Bees
+- Carpet Stairs Mod
+- Cauldron Recipes
+- Citadel
+- Click Machine
+- Cloth Config API (Forge)
+- Culinary Construct
+- Dark Paintings
+- Environmental Creepers
+- Extended Lights
+- Global XP
+- Just Enough Resources (JER)
+- Laser Relays
+- Let Sleeping Dogs Lie
+- Light Overlay (Rift/Forge/Fabric)
+- Ma Enchants
+- Ma Essentials
+- Metal Barrels
+- Mod Name Tooltip
+- Neon Craft Mod
+- No Potion Shift
+- Open Loader
+- Pretty Beaches
+- Productive Bees
+- Rope Bridge
+- Simply Backpacks
+- Snow Under Trees
+- Stronger Snowballs
+- TellMe
+- The Conjurer
+- The Endergetic Expansion
+- Tool Belt
+- Trample Stopper
+- Waddles
+- Xaero's Minimap
+- Xaero's World Map
+- ☃ Snow! Real Magic!
+- 🌳 Passable Foliage
+- 🥝 Kiwi
 
 ### Enigmatica 6 v0.2.17
 

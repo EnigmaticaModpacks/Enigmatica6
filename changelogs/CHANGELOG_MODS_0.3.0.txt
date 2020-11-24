@@ -2333,6 +2333,18 @@ Updated:
 			* CurioTags functionality refactored into SlotTypePresets
 			* The above changes are only for the API, the rest of the classes have also had extensive changes
 
+	Curious Armor Stands (Curious Armor Stands-1.16.1-1.2.0.jar --> Curious Armor Stands-1.16.3-2.0.2.jar):
+		Curious Armor Stands-1.16.3-2.0.2.jar:
+			* Fixed a bug that prevented the mod from working properly on servers
+
+		Curious Armor Stands-1.16.3-2.0.1.jar:
+			* Fixed a bug that prevented clients from joining servers correctly
+
+		Curious Armor Stands-1.16.3-2.0.0.jar:
+			* Ported to 1.16.3/1.16.4
+			* Removed curio type restrictions
+			* Various quality of life improvements to make equipping & unequipping curios much more intuitive
+
 	Curious Elytra (Forge) (curiouselytra-FORGE-1.16.1-3.0.jar --> curiouselytra-forge-1.16.3-4.0.0.1.jar):
 		curiouselytra-forge-1.16.3-4.0.0.1.jar:
 			Changelog
@@ -2488,7 +2500,42 @@ Updated:
 			* Added ability to play a sound on resources reload (or rather when the progress bar disappears).
 			* Added skipSoundEventCheck for maybe third party sounds.
 
-	Dungeons Plus (Dungeons Plus 1.16.1-v1.0.2 --> Dungeons Plus 1.16.3-v1.0.3):
+	Drawers Tooltip (DrawersTooltip-1.16.1-2.0.1.jar --> DrawersTooltip-1.16.2-2.1.0.jar):
+		DrawersTooltip-1.16.2-2.1.0.jar:
+			No changelog available.
+
+	Dungeons Plus (Dungeons Plus 1.16.1-v1.0.2 --> Dungeons Plus 1.16.4-v1.1.0):
+		Dungeons Plus 1.16.4-v1.1.0:
+			This update brings two new dungeons and balancing changes to old ones.
+			Requires [Forge 1.16.4-35.1.0]() or newer and [Structure Gel API 1.16.4-v1.7.0](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api/files/3120041) or newer.
+			New Structures:
+			* Warped Garden
+			* An underwater, nether-themed, structure.
+			* Found in non-frozen oceans.
+			* Home to drowned wielding golden axes and coral blocks.
+			* Provides a renewable source of coral blocks.
+			* Loot consists of gold items and aquatic items.
+			* Soul Prison
+			* A nether structure found floating over lava.
+			* Found in the soul sand valley
+			* Home to ghast spawners and bow wielding wither skeletons
+			* Loot consists of gold items, enchanted books, and rarely diamonds
+			Changes:
+			* Tower
+			* Mobs that spawn inside have a 10% chance to drop their normal loot. This is to prevent it from being easily farmable since it's so common.
+			* Has unique loot in the top floor.
+			* Using chains in place of some iron bars.
+			* Buried Dungeon
+			* Mobs that spawn inside have a 10% chance to drop their normal loot. This is to prevent it from being easily farmable since it's so common.
+			* Has unique loot in the husk and stray rooms.
+			* Leviathan
+			* Now contains either gold or emeralds in the mouth of the skeleton to improve the reward.
+			* Has unique loot fitting for the structure.
+			* Snowy Temple
+			* Has unique loot fitting for the structure.
+			* End Ruins
+			* Generates with crying obsidian in the destroyed pillars.
+
 		Dungeons Plus 1.16.3-v1.0.3:
 			THIS BUILD WILL RUN ON 1.16.4 IF YOU USE FORGE 1.16.4-35.0.5 AND ABOVE.
 			Ported to 1.16.3. New features will come in a future update. If you're updating in an existing world, you'll need to delete your config file to take advantage of the Biomes O' Plenty support.
@@ -3996,6 +4043,13 @@ Updated:
 
 		mcws-roofs-1.16.2-v2.0.0.jar:
 			* First Release for 1.16.2
+
+	Macaw's Trapdoors (mcw-trapdors-1.0.0fix-mc1.16.1.jar --> [1.0.0] Macaw's Trapdoors - 1.16.4):
+		[1.0.0] Macaw's Trapdoors - 1.16.4:
+			No changelog available.
+
+		[1.0.0] Macaw's Trapdoors 1.16.3 / 1.16.2 :
+			No changelog available.
 
 	Macaw's Windows (mcws-win-1.16.1-v1.0.2.jar --> [1.0.2 / 1.16.4] Macaw's Windows):
 		[1.0.2 / 1.16.4] Macaw's Windows:
@@ -6259,6 +6313,11 @@ Updated:
 		ServerTabInfo-1.16.3-1.3.2.jar:
 			As always find the changelog here [CHANGELOG](https://github.com/Crimix/ServerTabInfo/blob/master/CHANGELOG.md)
 
+	ServerConfig Updater (serverconfigupdater-1.2.jar --> serverconfigupdater-1.3.jar):
+		serverconfigupdater-1.3.jar:
+			* added license to mods.toml
+			fixed for forge 1.16.2-33.0.5
+
 	Simple Discord Rich Presence (SimpleDiscordRichPresence-1.16.1-1.3.2.jar --> SimpleDiscordRichPresence-1.16.4-1.3.5.jar):
 		SimpleDiscordRichPresence-1.16.4-1.3.5.jar:
 			* 1.16.4 - Sunekaer
@@ -6342,7 +6401,12 @@ Updated:
 			* Re-enabled WAILA/HWYLA support
 			* Fixed incompatibility with third party inventories (thanks raziel23x)
 
-	Structure Gel API (Structure Gel API 1.16.1-v1.2.1 --> Structure Gel API 1.16.4-v1.6.0):
+	Structure Gel API (Structure Gel API 1.16.1-v1.2.1 --> Structure Gel API 1.16.4-v1.7.0):
+		Structure Gel API 1.16.4-v1.7.0:
+			General feature update to improve in-game structure creation as well as a few useful utilities.
+			Requires forge 1.16.4-35.1.0.
+			[Changelog]()
+
 		Structure Gel API 1.16.4-v1.6.0:
 			Just a port to 1.16.4. This exists mainly so players don't have to modify the mods.toml if they don't know how. There will be breaking changes in version 1.7.0, so do not rely on this version for your codebase yet.
 
@@ -6621,6 +6685,14 @@ Updated:
 			* Different towers (regular, jungle, derelict, etc.) are now considered as different structures
 			* Towers are now build with jigsaw blocks (just like villages)
 
+	Transport (Transport-1.16.1-3.1.0.jar --> Transport-1.16.3-3.2.0.jar):
+		Transport-1.16.3-3.2.0.jar:
+			1.16.3 Release!
+			* New: JEI Support for Rail Worker's Bench
+			* New: Vanilla Chain Recipe in Rail Worker's Bench
+			* Improvement: Patchouli Docs
+			* Fix: Powered Rail Output for Rail based recipe
+
 	Trash Cans (trashcans-1.0.3-mc1.16.1 --> trashcans-1.0.3-mc1.16.4):
 		trashcans-1.0.3-mc1.16.4:
 			Initial 1.16.4 port
@@ -6795,6 +6867,53 @@ Updated:
 		WitherSkeletonTweaks-1.16.2-5.1.0.jar:
 			Updated to 1.16.2
 
+	YUNG's Better Caves (Forge) (BetterCaves-1.16.1-1.0.jar --> [1.16.3 / 1.16.4] YUNG's Better Caves v1.0.5):
+		[1.16.3 / 1.16.4] YUNG's Better Caves v1.0.5:
+			This version supports Minecraft 1.16.3 AND 1.16.4
+			I only work part-time so that I can have enough time to make and maintain mods, so if you like my work, pls think about [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]() <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+			Changelog:
+			* Replace mixin with Forge BiomeLoadingEvent
+
+		[1.16.2 / 1.16.3] YUNG's Better Caves v1.0.4:
+			This version supports Minecraft 1.16.2 AND 1.16.3
+			I only work part-time so that I can have enough time to make and maintain mods, so if you like my work, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]() <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+			Changelog:
+			* Fix crash on startup with newer Forge versions (34.1.27 - 33)
+
+		[1.16.2 / 1.16.3] YUNG's Better Caves v1.0.3:
+			This version supports Minecraft 1.16.2 AND 1.16.3
+			* Better Caves now works with datapack biomes. No need to add it to the list of features in the JSON - it will be added to biomes in whitelisted dimensions automatically when the datapack is loaded in.
+			* Fix bug breaking some vanilla and modded feature generation,
+			I only work part-time so that I can have enough time to make and maintain mods, so if you like my work, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]() <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+
+		BetterCaves-1.16.2-1.0.2.jar:
+			This version supports Minecraft 1.16.2 AND 1.16.3
+			I only work part-time so that I can have enough time to make and maintain mods, so if you like my work, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]() <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+
+		BetterCaves-1.16.2-1.0.1.jar:
+			Fix potential crashes due to 'Encountered exception executing deferred work'
+			If you like my mods, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]()[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+
+		BetterCaves-1.16.2-1.0.jar:
+			1.16.2!
+			If you like my mods, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]()[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+
+	YUNG's Better Mineshafts (Forge) (BetterMineshaftsForge-1.16.1-1.3.jar --> [1.16.3 / 1.16.4] YUNG's Better Mineshafts v1.1):
+		[1.16.3 / 1.16.4] YUNG's Better Mineshafts v1.1:
+			This version supports Minecraft 1.16.3 AND 1.16.4.
+			In this version, better mineshafts no longer completely override vanilla mineshafts. Vanilla mineshafts still won't spawn, but the Better Mineshafts should have their own entry in the /locate command.
+			This change should be fully compatible with existing worlds, but please back up your world just to be safe!
+
+		[1.16.2 / 1.16.3] YUNG's Better Mineshafts v1.0.1:
+			This version supports Minecraft 1.16.2 AND 1.16.3
+			I only work part-time so that I can have enough time to make and maintain mods, so if you like my work, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]() <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+			Changelog:
+			* Fix crash on startup with newer Forge versions (34.1.27 - 33)
+
+		BetterMineshaftsForge-1.16.2-1.0.jar:
+			This version supports Minecraft 1.16.2 AND 1.16.3
+			I only work part-time so that I can have enough time to make and maintain mods, so if you like my work, consider [supporting me on Patreon](https://www.patreon.com/yungnickyoung) or [donating with Paypal]() <3[](https://www.patreon.com/yungnickyoung)[](https://discord.gg/rns3beq)
+
 	iChunUtil (iChunUtil-1.16.1-9.0.0.jar --> iChunUtil-1.16.3-10.0.0.jar):
 		iChunUtil-1.16.3-10.0.0.jar:
 			1.16.3-10.0.0:
@@ -6821,9 +6940,7 @@ Removed:
 - Click Machine
 - Cloth Config API (Forge)
 - Culinary Construct
-- Curious Armor Stands
 - Dark Paintings
-- Drawers Tooltip
 - Environmental Creepers
 - Extended Lights
 - Global XP
@@ -6833,7 +6950,6 @@ Removed:
 - Light Overlay (Rift/Forge/Fabric)
 - Ma Enchants
 - Ma Essentials
-- Macaw's Trapdoors
 - Metal Barrels
 - Mod Name Tooltip
 - Neon Craft Mod
@@ -6842,7 +6958,6 @@ Removed:
 - Pretty Beaches
 - Productive Bees
 - Rope Bridge
-- ServerConfig Updater
 - Simply Backpacks
 - Snow Under Trees
 - Stronger Snowballs
@@ -6851,12 +6966,9 @@ Removed:
 - The Endergetic Expansion
 - Tool Belt
 - Trample Stopper
-- Transport
 - Waddles
 - Xaero's Minimap
 - Xaero's World Map
-- YUNG's Better Caves (Forge)
-- YUNG's Better Mineshafts (Forge)
 - ☃ Snow! Real Magic!
 - 🌳 Passable Foliage
 - 🥝 Kiwi
