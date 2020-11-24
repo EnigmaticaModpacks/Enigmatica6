@@ -1,9 +1,9 @@
 {
 	id: 939,
 	filename: "ars_nouveau",
-	order_index: 19,
+	order_index: 0,
 	title: "Ars Nouveau",
-	icon: "ars_nouveau:mana_gem",
+	icon: "emendatusenigmatica:arcane_gem",
 	default_quest_shape: "",
 	quests: [
 		{
@@ -60,7 +60,7 @@
 		},
 		{
 			title: "Mana",
-			icon: "ars_nouveau:mana_gem",
+			icon: "emendatusenigmatica:arcane_gem",
 			x: -5.5d,
 			y: -6.5d,
 			subtitle: "Like Sweet Morning Dew",
@@ -106,7 +106,7 @@
 			description: [
 				"By working Mana Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. ",
 				"",
-				"In order to learn new spells, this Magic Clay and it's variants may be pressed in a Glyph Press along with some other reagent to form such a focus."
+				"In order to learn new spells, this Magic Clay and it's variants may be pressed in a Glyph Press along with some other reagent to form a focus."
 			],
 			dependencies: [I;950],
 			id: 958,
@@ -117,9 +117,9 @@
 				count: 8L
 			}],
 			rewards: [{
-				id: 1527,
-				type: "loot",
-				table: 10
+				id: 1607,
+				type: "item",
+				item: "ars_nouveau:glyph_light"
 			}]
 		},
 		{
@@ -144,9 +144,9 @@
 				}
 			],
 			rewards: [{
-				id: 1528,
-				type: "loot",
-				table: 10
+				id: 1641,
+				type: "item",
+				item: "ars_nouveau:glyph_grow"
 			}]
 		},
 		{
@@ -171,9 +171,9 @@
 				}
 			],
 			rewards: [{
-				id: 1529,
-				type: "loot",
-				table: 10
+				id: 1640,
+				type: "item",
+				item: "ars_nouveau:glyph_lightning"
 			}]
 		},
 		{
@@ -367,7 +367,7 @@
 			x: 0.5d,
 			y: -5.5d,
 			description: [
-				"",
+				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspring Practitioner may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves.",
 				"",
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			],
