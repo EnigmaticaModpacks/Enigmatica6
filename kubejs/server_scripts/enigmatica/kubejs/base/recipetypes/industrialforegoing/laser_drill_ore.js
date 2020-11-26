@@ -1334,21 +1334,12 @@ events.listen('recipes', function (event) {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
                     values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
+                        'minecraft:mountains',
+                        'minecraft:mountain_edge',
+                        'minecraft:gravelly_mountains',
+                        'minecraft:modified_gravelly_mountains',
+                        'minecraft:snowy_mountains',
+                        'minecraft:snowy_taiga_mountains'
                     ]
                 },
                 blacklist: {},
