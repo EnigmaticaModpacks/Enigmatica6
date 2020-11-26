@@ -17,7 +17,7 @@
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
 	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.
-	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
+	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "byg:embur_bog", "byg:glowstone_gardens", "byg:sythian_torrids", "byg:warped_desert", "byg:subzero_hypogeal", "byg:quartz_desert", "byg:brimstone_caverns", "byg:weeping_mire", "byg:withering_woods", "byg:magma_wastes", "byg:wailing_garth", "byg:crimson_gardens", "byg:ivis_fields", "byg:bulbis_gardens", "byg:shattered_desert", "byg:ethereal_islands", "byg:purpur_peaks", "byg:cryptic_wastes", "byg:viscal_isles", "byg:shulkren_forest", "byg:nightshade_forest", "biomesoplenty:crystalline_chasm", "biomesoplenty:undergrowth", "biomesoplenty:visceral_heap", "biomesoplenty:withered_abyss"]
 	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
