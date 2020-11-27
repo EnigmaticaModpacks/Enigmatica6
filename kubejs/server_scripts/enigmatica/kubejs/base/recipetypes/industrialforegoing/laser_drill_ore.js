@@ -1,7 +1,29 @@
 events.listen('recipes', function (event) {
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/niter' });
+    const voidAndEndBiomes = [
+        'minecraft:the_end',
+        'minecraft:the_void',
+        'minecraft:small_end_islands',
+        'minecraft:end_barrens',
+        'minecraft:end_highlands',
+        'minecraft:end_midlands',
+        'byg:ivis_fields',
+        'byg:bulbis_gardens',
+        'byg:shattered_desert',
+        'byg:ethereal_islands',
+        'byg:purpur_peaks',
+        'byg:cryptic_wastes',
+        'byg:viscal_isles',
+        'byg:shulkren_forest',
+        'byg:nightshade_forest'
+    ];
+    const blacklistType = 'minecraft:worldgen/biome';
+    const laser_drill_ore = 'industrialforegoing:laser_drill_ore';
+    const laserLens = 'industrialforegoing:laser_lens';
+
+    event.remove({ id: laser_drill_ore + '/sapphire' });
+    event.remove({ id: laser_drill_ore + '/ruby' });
+    event.remove({ id: laser_drill_ore + '/niter' });
+
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/potassium_nitrate'
@@ -10,24 +32,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -36,24 +42,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -62,12 +52,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens8'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '8'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/arcane' });
+    event.remove({ id: laser_drill_ore + '/arcane' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:ores/arcane'
@@ -76,24 +65,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -102,24 +75,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -128,12 +85,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens10'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '10'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/bitumen' });
+    event.remove({ id: laser_drill_ore + '/bitumen' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/bitumen'
@@ -142,24 +98,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -168,24 +108,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -194,12 +118,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens15'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '15'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/fluorite' });
+    event.remove({ id: laser_drill_ore + '/fluorite' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/fluorite'
@@ -208,24 +131,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -234,24 +141,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -260,9 +151,8 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens7'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '7'
+        }
     });
 
     event.recipes.industrialforegoing.laser_drill_ore({
@@ -272,24 +162,8 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 blacklist: {},
                 depth_min: 0,
@@ -299,9 +173,8 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '0'
+        }
     });
 
     event.recipes.industrialforegoing.laser_drill_ore({
@@ -311,7 +184,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:nether_wastes',
                         'minecraft:basalt_deltas',
@@ -344,9 +217,8 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '0'
+        }
     });
 
     event.recipes.industrialforegoing.laser_drill_ore({
@@ -357,24 +229,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -383,12 +239,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '0'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/aluminum' });
+    event.remove({ id: laser_drill_ore + '/aluminum' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/aluminum'
@@ -397,24 +252,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 68,
                 depth_max: 84,
@@ -423,24 +262,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -449,12 +272,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens12'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '12'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/coal' });
+    event.remove({ id: laser_drill_ore + '/coal' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/coal'
@@ -463,24 +285,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 132,
@@ -489,24 +295,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -515,12 +305,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens15'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '15'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/copper' });
+    event.remove({ id: laser_drill_ore + '/copper' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/copper'
@@ -529,24 +318,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 35,
                 depth_max: 65,
@@ -555,24 +328,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -581,12 +338,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens1'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '1'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/diamond' });
+    event.remove({ id: laser_drill_ore + '/diamond' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/diamond'
@@ -595,24 +351,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -621,24 +361,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -647,12 +371,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens3'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '3'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/cinnabar' });
+    event.remove({ id: laser_drill_ore + '/cinnabar' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/cinnabar'
@@ -661,24 +384,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 30,
                 depth_max: 70,
@@ -687,24 +394,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -713,12 +404,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens14'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '14'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/lapis' });
+    event.remove({ id: laser_drill_ore + '/lapis' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/lapis'
@@ -727,24 +417,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 13,
                 depth_max: 34,
@@ -753,24 +427,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -779,12 +437,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens11'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '11'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/lead' });
+    event.remove({ id: laser_drill_ore + '/lead' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/lead'
@@ -793,24 +450,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -819,24 +460,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -845,12 +470,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens10'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '10'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/nickel' });
+    event.remove({ id: laser_drill_ore + '/nickel' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/nickel'
@@ -859,24 +483,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 68,
@@ -885,24 +493,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -911,12 +503,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens12'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '12'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/quartz' });
+    event.remove({ id: laser_drill_ore + '/quartz' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             item: 'minecraft:nether_quartz_ore'
@@ -924,7 +515,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:nether_wastes',
                         'minecraft:basalt_deltas',
@@ -957,24 +548,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -983,12 +558,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '0'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/redstone' });
+    event.remove({ id: laser_drill_ore + '/redstone' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/redstone'
@@ -997,24 +571,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -1023,24 +581,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1049,12 +591,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens14'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '14'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/silver' });
+    event.remove({ id: laser_drill_ore + '/silver' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/silver'
@@ -1063,24 +604,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -1089,24 +614,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1115,12 +624,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens7'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '7'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/sulfur' });
+    event.remove({ id: laser_drill_ore + '/sulfur' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/sulfur'
@@ -1129,24 +637,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 10,
@@ -1155,24 +647,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1181,12 +657,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens4'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '4'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/tin' });
+    event.remove({ id: laser_drill_ore + '/tin' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/tin'
@@ -1195,24 +670,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 64,
                 depth_max: 96,
@@ -1221,24 +680,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1247,12 +690,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens8'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '8'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/uranium' });
+    event.remove({ id: laser_drill_ore + '/uranium' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/uranium'
@@ -1260,7 +702,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:nether_wastes',
                         'minecraft:basalt_deltas',
@@ -1293,24 +735,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1319,12 +745,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens5'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '5'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/emerald' });
+    event.remove({ id: laser_drill_ore + '/emerald' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/emerald'
@@ -1332,7 +757,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:mountains',
                         'minecraft:mountain_edge',
@@ -1350,24 +775,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1376,12 +785,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens5'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '5'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/glowstone' });
+    event.remove({ id: laser_drill_ore + '/glowstone' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             item: 'minecraft:glowstone'
@@ -1389,7 +797,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:nether_wastes',
                         'minecraft:basalt_deltas',
@@ -1422,24 +830,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1448,12 +840,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens4'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '4'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/gold' });
+    event.remove({ id: laser_drill_ore + '/gold' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/gold'
@@ -1461,7 +852,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:badlands',
                         'minecraft:badlands_plateau',
@@ -1479,24 +870,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -1505,24 +880,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1531,12 +890,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens4'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '4'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/iron' });
+    event.remove({ id: laser_drill_ore + '/iron' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             tag: 'forge:chunks/iron'
@@ -1545,24 +903,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 5,
                 depth_max: 68,
@@ -1571,24 +913,8 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {},
                 blacklist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    type: blacklistType,
+                    values: voidAndEndBiomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1597,12 +923,11 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens12'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '12'
+        }
     });
 
-    event.remove({ id: 'industrialforegoing:laser_drill_ore/ancient_debris' });
+    event.remove({ id: laser_drill_ore + '/ancient_debris' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
             item: 'minecraft:ancient_debris'
@@ -1610,7 +935,7 @@ events.listen('recipes', function (event) {
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
+                    type: blacklistType,
                     values: [
                         'minecraft:nether_wastes',
                         'minecraft:basalt_deltas',
@@ -1643,8 +968,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens12'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
+            item: laserLens + '12'
+        }
     });
 });
