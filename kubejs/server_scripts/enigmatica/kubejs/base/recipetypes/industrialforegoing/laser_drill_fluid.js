@@ -55,6 +55,7 @@ events.listen('recipes', function (event) {
         catalyst: {
             item: 'industrialforegoing:laser_lens15'
         },
-        entity: 'minecraft:empty'
+        entity: 'minecraft:empty',
+        type: 'industrialforegoing:laser_drill_fluid'
     });
 });
