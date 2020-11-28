@@ -16,277 +16,277 @@
 [spells]
 	#Intangible enabled?
 	intangible = true
-	#Intangible cost
-	#Range: > -2147483648
-	intangible_cost = 30
-	#Ignite enabled?
-	ignite = true
-	#Ignite cost
-	#Range: > -2147483648
-	ignite_cost = 15
 	#Flare enabled?
 	flare = true
-	#Flare cost
+	#Haste cost
 	#Range: > -2147483648
-	flare_cost = 40
-	#Strength enabled?
-	strength = true
-	#Strength cost
-	#Range: > -2147483648
-	strength_cost = 0
-	#Craft enabled?
-	craft = true
-	#Craft cost
-	#Range: > -2147483648
-	craft_cost = 50
-	#Cold Snap enabled?
-	cold_snap = true
-	#Cold Snap cost
-	#Range: > -2147483648
-	cold_snap_cost = 30
-	#Rune enabled?
-	rune = true
-	#Rune cost
-	#Range: > -2147483648
-	rune_cost = 30
-	#Snare enabled?
-	snare = true
-	#Snare cost
-	#Range: > -2147483648
-	snare_cost = 80
-	#Slowfall enabled?
-	slowfall = true
-	#Slowfall cost
-	#Range: > -2147483648
-	slowfall_cost = 25
-	#Freeze enabled?
-	freeze = true
-	#Freeze cost
-	#Range: > -2147483648
-	freeze_cost = 15
-	#Split enabled?
-	split = true
-	#Split cost
-	#Range: > -2147483648
-	split_cost = 20
-	#Smelt enabled?
-	smelt = true
-	#Smelt cost
-	#Range: > -2147483648
-	smelt_cost = 100
-	#Accelerate enabled?
-	accelerate = true
-	#Accelerate cost
-	#Range: > -2147483648
-	accelerate_cost = 10
-	#Summon Vex enabled?
-	summon_vex = true
+	haste_cost = 30
 	#Summon Vex cost
 	#Range: > -2147483648
 	summon_vex_cost = 75
-	#Lightning enabled?
-	lightning = true
-	#Lightning cost
-	#Range: > -2147483648
-	lightning_cost = 50
-	#Grow enabled?
-	grow = true
-	#Grow cost
-	#Range: > -2147483648
-	grow_cost = 70
-	#Dampen enabled?
-	dampen = true
 	#Dampen cost
 	#Range: > -2147483648
 	dampen_cost = -5
-	#Touch enabled?
-	touch = true
+	#Knockback cost
+	#Range: > -2147483648
+	gust_cost = 15
+	#Cold Snap enabled?
+	cold_snap = true
 	#Touch cost
 	#Range: > -2147483648
 	touch_cost = 5
-	#Invisibility enabled?
-	invisibility = true
-	#Invisibility cost
-	#Range: > -2147483648
-	invisibility_cost = 30
-	#Extract enabled?
-	extract = true
 	#Extract cost
 	#Range: > -2147483648
 	extract_cost = 30
+	#Aquatic cost
+	#Range: > -2147483648
+	aquatic_cost = 25
+	#Smelt cost
+	#Range: > -2147483648
+	smelt_cost = 100
+	#Rune enabled?
+	rune = true
+	#Freeze enabled?
+	freeze = true
+	#Lightning enabled?
+	lightning = true
+	#Flare cost
+	#Range: > -2147483648
+	flare_cost = 40
+	#Grow enabled?
+	grow = true
+	#Pull cost
+	#Range: > -2147483648
+	pull_cost = 15
+	#Wither cost
+	#Range: > -2147483648
+	wither_cost = 50
+	#Invisibility enabled?
+	invisibility = true
+	#Snare cost
+	#Range: > -2147483648
+	snare_cost = 80
 	#Delay enabled?
 	delay = true
-	#Delay cost
+	#Item Pickup cost
 	#Range: > -2147483648
-	delay_cost = 50
+	pickup_cost = 10
 	#Light enabled?
 	light = true
-	#Light cost
-	#Range: > -2147483648
-	light_cost = 25
 	#Duration Down enabled?
 	duration_down = true
-	#Duration Down cost
+	#Harm cost
 	#Range: > -2147483648
-	duration_down_cost = 15
-	#Exchange enabled?
-	exchange = true
+	harm_cost = 15
 	#Exchange cost
 	#Range: > -2147483648
 	exchange_cost = 50
-	#Place Block enabled?
-	place_block = true
-	#Place Block cost
+	#Leap cost
 	#Range: > -2147483648
-	place_block_cost = 10
+	leap_cost = 20
 	#Shield enabled?
 	shield = true
 	#Shield cost
 	#Range: > -2147483648
 	shield_cost = 30
-	#Conjure Water enabled?
-	conjure_water = true
-	#Conjure Water cost
-	#Range: > -2147483648
-	conjure_water_cost = 80
-	#Harm enabled?
-	harm = true
-	#Harm cost
-	#Range: > -2147483648
-	harm_cost = 15
-	#Interact enabled?
-	interact = true
-	#Interact cost
-	#Range: > -2147483648
-	interact_cost = 10
-	#Blink enabled?
-	blink = true
-	#Blink cost
-	#Range: > -2147483648
-	blink_cost = 50
-	#Amplify enabled?
-	amplify = true
-	#Amplify cost
-	#Range: > -2147483648
-	amplify_cost = 20
-	#Phantom enabled?
-	phantom_block = true
-	#Phantom cost
-	#Range: > -2147483648
-	phantom_block_cost = 5
-	#Extend Time enabled?
-	extend_time = true
-	#Extend Time cost
-	#Range: > -2147483648
-	extend_time_cost = 10
-	#Heal enabled?
-	heal = true
-	#Heal cost
-	#Range: > -2147483648
-	heal_cost = 40
-	#Leap enabled?
-	leap = true
-	#Leap cost
-	#Range: > -2147483648
-	leap_cost = 20
-	#Redstone Signal enabled?
-	redstone_signal = true
-	#Redstone Signal cost
-	#Range: > -2147483648
-	redstone_signal_cost = 0
-	#Pierce enabled?
-	pierce = true
-	#Pierce cost
-	#Range: > -2147483648
-	pierce_cost = 20
-	#Harvest enabled?
-	harvest = true
-	#Harvest cost
-	#Range: > -2147483648
-	harvest_cost = 30
-	#Fortune enabled?
-	fortune = true
 	#Fortune cost
 	#Range: > -2147483648
 	fortune_cost = 80
-	#Break enabled?
-	break = true
-	#Break cost
+	#Amplify enabled?
+	amplify = true
+	#Ignite cost
 	#Range: > -2147483648
-	break_cost = 10
-	#Item Pickup enabled?
-	pickup = true
-	#Item Pickup cost
+	ignite_cost = 15
+	#Freeze cost
 	#Range: > -2147483648
-	pickup_cost = 10
-	#Launch enabled?
-	launch = true
-	#Launch cost
+	freeze_cost = 15
+	#Extend Time enabled?
+	extend_time = true
+	#Heal cost
 	#Range: > -2147483648
-	launch_cost = 30
-	#Dispel enabled?
-	dispel = true
-	#Dispel cost
+	heal_cost = 40
+	#Harvest cost
 	#Range: > -2147483648
-	dispel_cost = 30
-	#Haste enabled?
-	haste = true
-	#Haste cost
-	#Range: > -2147483648
-	haste_cost = 30
-	#Access Ender Inventory enabled?
-	ender_inventory = true
+	harvest_cost = 30
 	#Access Ender Inventory cost
 	#Range: > -2147483648
 	ender_inventory_cost = 50
-	#Pull enabled?
-	pull = true
-	#Pull cost
+	#Leap enabled?
+	leap = true
+	#Pierce cost
 	#Range: > -2147483648
-	pull_cost = 15
-	#Explosion enabled?
-	explosion = true
-	#Explosion cost
+	pierce_cost = 20
+	#Invisibility cost
 	#Range: > -2147483648
-	explosion_cost = 35
-	#Fangs enabled?
-	fangs = true
-	#Fangs cost
-	#Range: > -2147483648
-	fangs_cost = 35
-	#AOE enabled?
-	aoe = true
-	#AOE cost
-	#Range: > -2147483648
-	aoe_cost = 35
-	#Gravity enabled?
-	gravity = true
+	invisibility_cost = 30
 	#Gravity cost
 	#Range: > -2147483648
 	gravity_cost = 15
-	#Self enabled?
-	self = true
-	#Self cost
+	#Duration Down cost
 	#Range: > -2147483648
-	self_cost = 10
-	#Aquatic enabled?
-	aquatic = true
-	#Aquatic cost
-	#Range: > -2147483648
-	aquatic_cost = 25
-	#Projectile enabled?
-	projectile = true
+	duration_down_cost = 15
+	#Redstone Signal enabled?
+	redstone_signal = true
+	#Pierce enabled?
+	pierce = true
 	#Projectile cost
 	#Range: > -2147483648
 	projectile_cost = 10
+	#Split cost
+	#Range: > -2147483648
+	split_cost = 20
+	#Grow cost
+	#Range: > -2147483648
+	grow_cost = 70
+	#Break enabled?
+	break = true
+	#Item Pickup enabled?
+	pickup = true
+	#Strength cost
+	#Range: > -2147483648
+	strength_cost = 0
+	#Launch enabled?
+	launch = true
+	#Phantom cost
+	#Range: > -2147483648
+	phantom_block_cost = 5
+	#Redstone Signal cost
+	#Range: > -2147483648
+	redstone_signal_cost = 0
+	#Dispel enabled?
+	dispel = true
+	#Haste enabled?
+	haste = true
+	#Access Ender Inventory enabled?
+	ender_inventory = true
+	#Conjure Water cost
+	#Range: > -2147483648
+	conjure_water_cost = 80
+	#Pull enabled?
+	pull = true
+	#Self enabled?
+	self = true
+	#Projectile enabled?
+	projectile = true
+	#Ignite enabled?
+	ignite = true
+	#Strength enabled?
+	strength = true
+	#Craft enabled?
+	craft = true
+	#Snare enabled?
+	snare = true
+	#Slowfall enabled?
+	slowfall = true
+	#Split enabled?
+	split = true
+	#Smelt enabled?
+	smelt = true
+	#Blink cost
+	#Range: > -2147483648
+	blink_cost = 50
+	#Launch cost
+	#Range: > -2147483648
+	launch_cost = 30
+	#Accelerate enabled?
+	accelerate = true
+	#Summon Vex enabled?
+	summon_vex = true
+	#Intangible cost
+	#Range: > -2147483648
+	intangible_cost = 30
+	#Rune cost
+	#Range: > -2147483648
+	rune_cost = 30
+	#Break cost
+	#Range: > -2147483648
+	break_cost = 10
+	#Dampen enabled?
+	dampen = true
+	#Touch enabled?
+	touch = true
+	#Extend Time cost
+	#Range: > -2147483648
+	extend_time_cost = 10
+	#Extract enabled?
+	extract = true
+	#Explosion cost
+	#Range: > -2147483648
+	explosion_cost = 35
+	#Slowfall cost
+	#Range: > -2147483648
+	slowfall_cost = 25
+	#Exchange enabled?
+	exchange = true
+	#Place Block enabled?
+	place_block = true
+	#Conjure Water enabled?
+	conjure_water = true
+	#Dispel cost
+	#Range: > -2147483648
+	dispel_cost = 30
+	#Harm enabled?
+	harm = true
+	#Craft cost
+	#Range: > -2147483648
+	craft_cost = 50
+	#Place Block cost
+	#Range: > -2147483648
+	place_block_cost = 10
+	#Delay cost
+	#Range: > -2147483648
+	delay_cost = 50
+	#Interact enabled?
+	interact = true
+	#Blink enabled?
+	blink = true
+	#Self cost
+	#Range: > -2147483648
+	self_cost = 10
+	#Phantom enabled?
+	phantom_block = true
+	#Heal enabled?
+	heal = true
+	#Light cost
+	#Range: > -2147483648
+	light_cost = 25
+	#Harvest enabled?
+	harvest = true
+	#Fortune enabled?
+	fortune = true
+	#Cold Snap cost
+	#Range: > -2147483648
+	cold_snap_cost = 30
+	#Interact cost
+	#Range: > -2147483648
+	interact_cost = 10
+	#Accelerate cost
+	#Range: > -2147483648
+	accelerate_cost = 10
+	#Explosion enabled?
+	explosion = true
+	#Amplify cost
+	#Range: > -2147483648
+	amplify_cost = 20
+	#Fangs enabled?
+	fangs = true
+	#AOE enabled?
+	aoe = true
+	#Gravity enabled?
+	gravity = true
+	#Lightning cost
+	#Range: > -2147483648
+	lightning_cost = 50
+	#Fangs cost
+	#Range: > -2147483648
+	fangs_cost = 35
+	#Aquatic enabled?
+	aquatic = true
+	#AOE cost
+	#Range: > -2147483648
+	aoe_cost = 35
 	#Wither enabled?
 	wither = true
-	#Wither cost
-	#Range: > -2147483648
-	wither_cost = 50
 	#Knockback enabled?
 	gust = true
-	#Knockback cost
-	#Range: > -2147483648
-	gust_cost = 15
 
