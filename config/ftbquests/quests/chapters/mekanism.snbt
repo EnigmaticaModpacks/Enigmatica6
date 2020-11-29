@@ -1,7 +1,7 @@
 {
 	id: 165,
 	filename: "mekanism",
-	order_index: 14,
+	order_index: 16,
 	title: "Mekanism WIP",
 	icon: {
 		id: "mekanism:robit",
@@ -17,5 +17,115 @@
 	},
 	always_invisible: true,
 	default_quest_shape: "",
-	quests: []
+	quests: [
+		{
+			x: 0.0d,
+			y: -3.5d,
+			shape: "gear",
+			id: 1697,
+			tasks: [{
+				id: 1698,
+				type: "checkmark",
+				icon: "mekanism:teleportation_core"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -2.0d,
+			description: [
+				"Guide the player from basic passive energy (heat and wind) to their first big active energy production, ethylene.",
+				"",
+				"",
+				"Maybe get into induction matrix here too and use this as an opportunity to introduce the evap tower for lithium as this will be a vital multiblock later on. "
+			],
+			id: 1699,
+			tasks: [{
+				id: 1700,
+				type: "checkmark",
+				title: "Basic Power"
+			}]
+		},
+		{
+			title: "Basic Processing",
+			x: 0.0d,
+			y: -1.5d,
+			description: [
+				"Guide the player through the basic mekanism processes leading up to a 3x ore processing setup. ",
+				"",
+				"",
+				"Getting up and running",
+				"",
+				"Metallurgic Infuser - making alloys, circuits, and steel",
+				"Enrichment Chamber - making reagents go further, ore doubling",
+				"Osmium Compressor - Refined Alloys",
+				"",
+				"3x chain",
+				"",
+				"Electrolytic Separator > Purification Chamber > Crusher > Enrichment Chamber > Energized Smelter"
+			],
+			id: 1701,
+			tasks: [{
+				id: 1702,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Advanced Power",
+			x: 3.5d,
+			y: -2.0d,
+			description: [
+				"Guide the player to their first fission reactor. ",
+				"",
+				"Initial quests will have them collect everything for a small reactor and turbine, similar to the one on the Mek Wiki. External link for further info?",
+				"",
+				"Side quest chain to assist with figuring out the fuel processing chain. setup for producing hydrofluoric acid and then uranium hexafluoride before finally making the fuel.",
+				"",
+				"From here, guide them towards Polonium and Plutonium processing to prep for SPS",
+				"",
+				"Finally, finish with building the SPS."
+			],
+			id: 1703,
+			tasks: [{
+				id: 1704,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Loot ideas",
+			x: 5.5d,
+			y: -5.0d,
+			description: [
+				"Rare",
+				"infused alloy",
+				"steel casing",
+				"basic universal cables",
+				"energy upgrades",
+				"energy tablets",
+				"",
+				"",
+				"Epic",
+				"reinforced alloy",
+				"installers (basic and advanced maybe?)",
+				"speed upgrades",
+				"ultimate chemical tank",
+				"",
+				"",
+				"Legendary",
+				"atomic alloy",
+				"entangloporter",
+				"",
+				"",
+				"upgrades and installers likely to be common direct loot rewards. ",
+				"",
+				"be sure to give configurator, network reader and gauge droppper as early rewards.",
+				"",
+				"hazmat suit for free when doing fission stuff."
+			],
+			id: 1705,
+			tasks: [{
+				id: 1706,
+				type: "checkmark"
+			}]
+		}
+	]
 }

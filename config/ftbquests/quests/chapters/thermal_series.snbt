@@ -1,7 +1,7 @@
 {
 	id: 929,
 	filename: "thermal_series",
-	order_index: 17,
+	order_index: 14,
 	title: "Thermal Series",
 	icon: "thermal:wrench",
 	default_quest_shape: "",
@@ -164,7 +164,7 @@
 		{
 			x: 4.5d,
 			y: 3.0d,
-			subtitle: "You Have To Break a Few Eggs To Make an Omelette",
+			subtitle: "Rock and a Hard Place",
 			description: [
 				"Some materials are more abundant than they seem at first glance, they're simply locked up in different forms that require a touch more work to release.",
 				"",
@@ -323,11 +323,18 @@
 				type: "item",
 				item: "thermal:machine_press"
 			}],
-			rewards: [{
-				id: 1270,
-				type: "item",
-				item: "thermal:press_gear_die"
-			}]
+			rewards: [
+				{
+					id: 1270,
+					type: "item",
+					item: "thermal:press_gear_die"
+				},
+				{
+					id: 1675,
+					type: "loot",
+					table: 1
+				}
+			]
 		},
 		{
 			x: 5.5d,
@@ -382,6 +389,7 @@
 			y: 9.0d,
 			description: ["A handheld 'explosive' that releases the charged energy of elemental Blitz, causing lightning to strike spontaneously."],
 			dependencies: [I;1245],
+			dependency_requirement: "one_started",
 			id: 1226,
 			tasks: [{
 				id: 1244,
@@ -399,6 +407,7 @@
 			y: 9.0d,
 			description: ["A handheld 'explosive' that releases the chilling power of elemental Blizz, freezing water and blanketing the area in snow."],
 			dependencies: [I;1245],
+			dependency_requirement: "one_started",
 			id: 1228,
 			tasks: [{
 				id: 1243,
@@ -416,6 +425,7 @@
 			y: 9.0d,
 			description: ["A handheld 'explosive' that releases the latent power of elemental Basalz, causing the earth to shift and crack."],
 			dependencies: [I;1245],
+			dependency_requirement: "one_started",
 			id: 1230,
 			tasks: [{
 				id: 1242,
