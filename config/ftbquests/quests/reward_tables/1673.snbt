@@ -1,0 +1,349 @@
+{
+	id: 1673,
+	title: "Sorcerer's Delight",
+	icon: "biomesoplenty:nether_crystal",
+	loot_size: 3,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s,
+						id: "minecraft:protection"
+					}]
+				}
+			},
+			title: "Protection"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s,
+						id: "minecraft:fire_protection"
+					}]
+				}
+			},
+			title: "Fire Protection"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s,
+						id: "minecraft:feather_falling"
+					}]
+				}
+			},
+			title: "Feather Falling"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s,
+						id: "minecraft:blast_protection"
+					}]
+				}
+			},
+			title: "Blast Protection"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s,
+						id: "minecraft:projectile_protection"
+					}]
+				}
+			},
+			title: "Projectile Protection"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "minecraft:respiration"
+					}]
+				}
+			},
+			title: "Respiration"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s,
+						id: "minecraft:aqua_affinity"
+					}]
+				}
+			},
+			title: "Aqua Affinity"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "minecraft:depth_strider"
+					}]
+				}
+			},
+			title: "Depth Strider"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "minecraft:sharpness"
+					}]
+				}
+			},
+			title: "Sharpness"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "minecraft:smite"
+					}]
+				}
+			},
+			title: "Smite"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "minecraft:looting"
+					}]
+				}
+			},
+			title: "Looting"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "minecraft:sweeping"
+					}]
+				}
+			},
+			title: "Sweeping Edge"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "minecraft:efficiency"
+					}]
+				}
+			},
+			title: "Efficiency"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s,
+						id: "minecraft:silk_touch"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "minecraft:unbreaking"
+					}]
+				}
+			},
+			title: "Unbreaking"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "minecraft:fortune"
+					}]
+				}
+			},
+			title: "Fortune"
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "minecraft:power"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s,
+						id: "minecraft:infinity"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s,
+						id: "minecraft:mending"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "apotheosis:depth_miner"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 4s,
+						id: "ensorcellation:magic_protection"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 2s,
+						id: "ensorcellation:gourmand"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "ensorcellation:vitality"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "ensorcellation:damage_ender"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "ensorcellation:damage_illager"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 5s,
+						id: "ensorcellation:damage_villager"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 3s,
+						id: "ensorcellation:magic_edge"
+					}]
+				}
+			}
+		}
+	]
+}

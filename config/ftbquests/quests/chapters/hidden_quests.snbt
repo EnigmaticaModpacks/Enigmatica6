@@ -51,6 +51,23 @@
 				type: "item",
 				item: "aquaculture:neptunes_bounty"
 			}]
+		},
+		{
+			x: -12.0d,
+			y: -10.5d,
+			id: 1666,
+			tasks: [{
+				id: 1667,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 1707,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/loot give @p loot artifacts:chests/campsite_chest/diamonds",
+				player_command: false
+			}]
 		}
 	]
 }

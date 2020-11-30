@@ -395,7 +395,7 @@
 			x: -5.0d,
 			y: -9.5d,
 			subtitle: "Stand and Deliver",
-			description: [""],
+			description: ["A smart turret that can be filtered to attack only certain creatures. For instance, only adult animals. "],
 			dependencies: [I;507],
 			id: 505,
 			tasks: [{
@@ -419,7 +419,7 @@
 			x: -6.0d,
 			y: -9.5d,
 			subtitle: "Leveling the Playing Field",
-			description: [""],
+			description: ["A modern solution to monster slaying. Pet friendly too!"],
 			dependencies: [I;179],
 			id: 507,
 			tasks: [{
@@ -476,7 +476,11 @@
 			x: -5.0d,
 			y: -8.5d,
 			subtitle: "Inevitable Escalation",
-			description: [""],
+			description: [
+				"Creeper infestation got you down? Tired of zombie villagers knocking at all hours? Wish those skeletons would stay in the ground where Fido buried them?",
+				"",
+				"Look no further. This autonomous sentry system will keep your home monster free with minor upkeep. "
+			],
 			dependencies: [I;507],
 			id: 526,
 			tasks: [{
@@ -494,7 +498,11 @@
 			x: -5.0d,
 			y: -7.5d,
 			subtitle: "This Is How You Get SkyNET",
-			description: [""],
+			description: [
+				"When added to a Guard Drone or a Programmable Drone, this converts it into a state-of-the-art killing machine. ",
+				"",
+				"Ammunition not included."
+			],
 			dependencies: [I;526],
 			id: 528,
 			tasks: [{
@@ -903,9 +911,9 @@
 				}
 			}],
 			rewards: [{
-				id: 1647,
-				type: "xp_levels",
-				xp_levels: 16
+				id: 1672,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -917,6 +925,11 @@
 				id: 1125,
 				type: "item",
 				item: "mininggadgets:upgrade_fortune_3"
+			}],
+			rewards: [{
+				id: 1669,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -944,6 +957,11 @@
 				id: 1129,
 				type: "item",
 				item: "mininggadgets:upgrade_efficiency_5"
+			}],
+			rewards: [{
+				id: 1670,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -955,6 +973,11 @@
 				id: 1131,
 				type: "item",
 				item: "mininggadgets:upgrade_battery_3"
+			}],
+			rewards: [{
+				id: 1671,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -1258,20 +1281,27 @@
 					}
 				}
 			}],
-			rewards: [{
-				id: 1658,
-				type: "item",
-				item: {
-					id: "minecraft:enchanted_book",
-					Count: true,
-					tag: {
-						StoredEnchantments: [{
-							lvl: 5s,
-							id: "minecraft:unbreaking"
-						}]
+			rewards: [
+				{
+					id: 1658,
+					type: "item",
+					item: {
+						id: "minecraft:enchanted_book",
+						Count: true,
+						tag: {
+							StoredEnchantments: [{
+								lvl: 5s,
+								id: "minecraft:unbreaking"
+							}]
+						}
 					}
+				},
+				{
+					id: 1674,
+					type: "loot",
+					table: 18
 				}
-			}]
+			]
 		},
 		{
 			title: "Archmage's Arcana",

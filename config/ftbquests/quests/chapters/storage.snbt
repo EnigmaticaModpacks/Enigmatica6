@@ -45,14 +45,22 @@
 			dependencies: [I;1023],
 			id: 1025,
 			tasks: [{
-				id: 1026,
-				type: "checkmark"
+				id: 1685,
+				type: "item",
+				item: "prettypipes:item_terminal"
 			}],
-			rewards: [{
-				id: 1656,
-				type: "xp_levels",
-				xp_levels: 5
-			}]
+			rewards: [
+				{
+					id: 1686,
+					type: "item",
+					item: "prettypipes:wrench"
+				},
+				{
+					id: 1687,
+					type: "loot",
+					table: 19
+				}
+			]
 		},
 		{
 			title: "Refined Storage",
@@ -62,14 +70,14 @@
 			dependencies: [I;1023],
 			id: 1027,
 			tasks: [{
-				id: 1028,
-				type: "checkmark",
-				icon: "refinedstorage:creative_controller"
+				id: 1689,
+				type: "item",
+				item: "refinedstorage:controller"
 			}],
 			rewards: [{
-				id: 1652,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1688,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
@@ -81,14 +89,14 @@
 			dependencies: [I;1023],
 			id: 1029,
 			tasks: [{
-				id: 1030,
-				type: "checkmark",
-				icon: "ironchest:diamond_chest"
+				id: 1680,
+				type: "item",
+				item: "ironchest:iron_chest"
 			}],
 			rewards: [{
-				id: 1649,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1681,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -101,13 +109,14 @@
 			dependencies: [I;1023],
 			id: 1031,
 			tasks: [{
-				id: 1032,
-				type: "checkmark"
+				id: 1678,
+				type: "item",
+				item: "mekanism:basic_bin"
 			}],
 			rewards: [{
-				id: 1654,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1679,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -126,13 +135,14 @@
 			dependencies: [I;1023],
 			id: 1033,
 			tasks: [{
-				id: 1034,
-				type: "checkmark"
+				id: 1691,
+				type: "item",
+				item: "quantumstorage:chestiron"
 			}],
 			rewards: [{
-				id: 1650,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1692,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -148,9 +158,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1651,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1684,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -170,9 +180,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1655,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1682,
+				type: "loot",
+				table: 17
 			}]
 		},
 		{
@@ -184,13 +194,14 @@
 			dependencies: [I;1023],
 			id: 1039,
 			tasks: [{
-				id: 1040,
-				type: "checkmark"
+				id: 1676,
+				type: "item",
+				item: "storagedrawers:controller"
 			}],
 			rewards: [{
-				id: 1653,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 1677,
+				type: "loot",
+				table: 18
 			}]
 		}
 	]
