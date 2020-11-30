@@ -1,6 +1,6 @@
 {
-  "flower": "tag:minecraft:bee_growables",
-  "maxTimeInHive": 600,
+  "flower": "ALL",
+  "maxTimeInHive": 1600,
   "hasHoneycomb": true,
   "baseLayerTexture": "zombie/zombie_bee",
   "traits": ["zombie"],
@@ -16,7 +16,8 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:rotten_flesh"
+    "mainOutput": "minecraft:rotten_flesh",
+	"mainOutputWeight": 0.50
   },
   "SpawnData": {
     "canSpawnInWorld": true,

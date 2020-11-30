@@ -1,6 +1,6 @@
 {
   "flower": "small",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 1600,
   "hasHoneycomb": true,
   "baseLayerTexture": "skeleton/skeleton_bee",
   "ColorData": {
@@ -15,7 +15,8 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:bone"
+    "mainOutput": "minecraft:bone",
+	"mainOutputWeight": 0.50
   },
   "SpawnData": {
     "canSpawnInWorld": true,

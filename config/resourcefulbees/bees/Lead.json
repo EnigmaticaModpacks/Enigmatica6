@@ -1,0 +1,31 @@
+{
+  "flower": "ALL",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 2400,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#483d8b",
+    "primaryColor": "#483d8b",
+    "secondaryColor": "#e6e6fa"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:stone",
+    "mutationOutput": "emendatusenigmatica:lead_ore",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:lead_ingot",
+	"mainOutputWeight": 0.05
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+    "isBreedable": true
+  },
+  "TraitData": {}
+}

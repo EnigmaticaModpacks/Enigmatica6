@@ -1,6 +1,6 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 1600,
   "hasHoneycomb": true,
   "baseLayerTexture": "/creeper/creeper_bee",
   "traits" : ["creeper"],
@@ -21,7 +21,8 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:gunpowder",
-    "mainOutputCount": 4
+	"mainOutputWeight": 0.60,
+    "mainOutputCount": 2
   },
   "SpawnData": {
     "canSpawnInWorld": true,

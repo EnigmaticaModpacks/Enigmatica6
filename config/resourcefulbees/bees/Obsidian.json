@@ -1,0 +1,34 @@
+{
+  "flower": "minecraft:cornflower",
+  "maxTimeInHive": 2400,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "wither/wither_bee",
+  "traits": [],
+  "ColorData": {
+    "isBeeColored": true,
+	"primaryColor": "#663399",
+	"secondaryColor": "#dda0dd",
+    "honeycombColor": "#663399"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:lava",
+    "mutationOutput": "minecraft:obsidian",
+    "mutationType": "FLUID_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:obsidian",
+    "mainOutputWeight": 0.10
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "Coal",
+    "parent2": "Diamond",
+    "feedItem": "minecraft:diamond",
+    "feedAmount": 8
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

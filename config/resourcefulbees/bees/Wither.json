@@ -1,6 +1,6 @@
 {
   "flower": "minecraft:wither_rose",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 4800,
   "hasHoneycomb": true,
   "baseLayerTexture": "wither/wither_bee",
   "traits": ["nether", "wither"],
@@ -17,7 +17,7 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:nether_star",
-    "mainOutputWeight": 0.01
+    "mainOutputWeight": 0.005
   },
   "SpawnData": {},
   "BreedData": {
@@ -25,7 +25,7 @@
     "parent1": "Coal",
     "parent2": "Skeleton",
     "feedItem": "minecraft:rotten_flesh",
-    "feedAmount": 12
+    "feedAmount": 48
   },
   "TraitData": {
     "hasTraits": true

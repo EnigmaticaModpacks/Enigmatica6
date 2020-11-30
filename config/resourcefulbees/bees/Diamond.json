@@ -1,6 +1,6 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 3200,
   "hasHoneycomb": true,
   "baseLayerTexture": "diamond/diamond_bee",
   "ColorData": {
@@ -16,6 +16,7 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:diamond",
+	"mainOutputWeight": 0.10,
     "mainOutputCount": 1
   },
   "SpawnData": {

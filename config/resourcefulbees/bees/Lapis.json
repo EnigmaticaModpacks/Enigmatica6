@@ -1,6 +1,6 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 2400,
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
@@ -17,7 +17,8 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:lapis_lazuli",
-    "mainOutputCount": 8
+	"mainoutputweight": 0.35,
+    "mainOutputCount": 4
   },
   "SpawnData": {
     "canSpawnInWorld": true,

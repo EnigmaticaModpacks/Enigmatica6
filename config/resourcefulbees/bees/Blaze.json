@@ -1,0 +1,37 @@
+{
+  "flower": "minecraft:nether_wart",
+  "maxTimeInHive": 3200,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "netherite/netherite_bee",
+  "traits": ["nether","blaze"],
+  "ColorData": {
+    "isBeeColored": true,
+	"primaryColor": "#ff4500",
+    "secondaryColor": "#ffff00",
+    "honeycombColor": "#FF4500"
+  },
+  "MutationData": {
+    "hasMutation": false,
+    "mutationInput": "minecraft:blackstone",
+    "mutationOutput": "minecraft:gilded_blackstone",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:blaze_rod",
+    "mainOutputWeight": 0.05
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:nether",
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": false,
+    "parent1": "Wither",
+    "parent2": "Diamond"
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

@@ -1,12 +1,13 @@
 {
-  "flower": "all",
-  "hasHoneycomb": false,
+  "flower": "ALL",
+  "hasHoneycomb": true,
   "traits": ["slimy"],
-  "maxTimeInHive": 1200,
+  "maxTimeInHive": 2400,
   "ColorData": {
     "isBeeColored": true,
     "primaryColor": "#73c262",
-    "secondaryColor": "#303030"
+    "secondaryColor": "#303030",
+	"honeycombColor": "#73c262"
   },
   "MutationData": {
     "hasMutation": true,
@@ -14,6 +15,11 @@
     "mutationOutput": "minecraft:slime_block",
     "mutationType": "BLOCK_TO_BLOCK",
     "mutationCount": 15
+  },
+   "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:slime_ball",
+	"mainOutputWeight": 0.20
   },
   "BreedData": {
     "isBreedable": true,

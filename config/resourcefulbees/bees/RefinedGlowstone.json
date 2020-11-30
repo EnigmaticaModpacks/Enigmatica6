@@ -1,0 +1,34 @@
+{
+  "flower": "naturesaura:crimson_aura_mushroom",
+  "maxTimeInHive": 6000,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "wither/wither_bee",
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#eee8aa",
+	"primaryColor": "#eee8aa",
+	"secondaryColor": "#cdcd00"
+  },
+  "MutationData": {
+    "hasMutation": false,
+    "mutationInput": "minecraft:lava",
+    "mutationOutput": "minecraft:obsidian",
+    "mutationType": "FLUID_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "mekanism:nugget_refined_glowstone",
+    "mainOutputWeight": 0.10
+  },
+  "SpawnData": {},
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "osmium",
+    "parent2": "pigman",
+    "feedItem": "all",
+    "feedAmount": 64
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
+}

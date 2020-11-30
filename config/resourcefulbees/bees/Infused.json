@@ -1,0 +1,37 @@
+{
+  "flower": "ALL",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 4800,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#3dc318",
+    "primaryColor": "#3dc318",
+    "secondaryColor": "#126e21"
+  },
+  "MutationData": {
+    "hasMutation": false,
+    "mutationInput": "minecraft:stone",
+    "mutationOutput": "minecraft:iron_ore",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "naturesaura:infused_ingot",
+	  "mainOutputWeight": 0.15
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:rare",
+    "biomeBlacklist": "tag:ocean",
+    "spawnWeight": 1,
+    "minGroupSize": 1,
+    "maxGroupSize": 1
+  },
+  "BreedData": {
+    "isBreedable": false,
+	"parent1": "iron",
+	"parent2": "coal",
+	"breedWeight": 70
+  },
+  "TraitData": {}
+}

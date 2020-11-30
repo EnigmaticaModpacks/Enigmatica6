@@ -1,6 +1,6 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 1600,
   "sizeModifier": 0.5,
   "hasHoneycomb": true,
   "ColorData": {
@@ -18,7 +18,8 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:coal",
-    "mainOutputCount": 16
+	"mainOutputWeight": 0.40,
+    "mainOutputCount": 6
   },
   "SpawnData": {
     "canSpawnInWorld": true,
@@ -27,7 +28,7 @@
   },
   "BreedData": {
     "feedItem": "minecraft:poppy",
-    "feedAmount": 4,
+    "feedAmount": 8,
     "isBreedable": true
   },
   "TraitData": {}

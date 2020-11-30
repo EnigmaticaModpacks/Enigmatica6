@@ -1,9 +1,9 @@
 {
   "flower": "minecraft:wither_rose",
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 4800,
   "hasHoneycomb": true,
   "baseLayerTexture": "netherite/netherite_bee",
-  "traits": ["nether"],
+  "traits": ["nether","wither"],
   "ColorData": {
     "isBeeColored": false,
     "honeycombColor": "#654740"
@@ -16,7 +16,7 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:netherite_ingot",
+    "mainOutput": "minecraft:netherite_scrap",
     "mainOutputWeight": 0.05
   },
   "SpawnData": {

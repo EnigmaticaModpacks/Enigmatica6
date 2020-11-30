@@ -1,6 +1,6 @@
 {
   "flower": "minecraft:nether_wart",
-  "maxTimeInHive": 1000,
+  "maxTimeInHive": 2000,
   "hasHoneycomb": true,
   "traits": ["nether"],
   "ColorData": {
@@ -18,6 +18,7 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:quartz",
+	"mainOutputWeight": 0.25,
     "mainOutputCount": 2
   },
   "SpawnData": {

@@ -1,5 +1,6 @@
 {
   "flower": "ALL",
+  "maxTimeInHive": 3200,
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
@@ -15,7 +16,9 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:emerald"
+    "mainOutput": "minecraft:emerald",
+	"mainoutputweight": 0.10,
+	"mainOutputCount": 1
   },
   "SpawnData": {
     "canSpawnInWorld": true,

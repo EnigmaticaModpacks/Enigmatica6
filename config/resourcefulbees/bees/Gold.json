@@ -1,7 +1,7 @@
 {
   "flower": "ALL",
   "hasHoneycomb": true,
-  "maxTimeInHive": 800,
+  "maxTimeInHive": 2400,
   "ColorData": {
     "isBeeColored": true,
     "honeycombColor": "#FFDC00",
@@ -16,7 +16,8 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:gold_ingot"
+    "mainOutput": "minecraft:gold_ingot",
+	"mainoutputweight": 0.20
   },
   "SpawnData": {
     "canSpawnInWorld": true,

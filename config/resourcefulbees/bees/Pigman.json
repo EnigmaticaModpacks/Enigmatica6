@@ -1,6 +1,6 @@
 {
   "flower": "minecraft:brown_mushroom",
-  "maxTimeInHive": 1000,
+  "maxTimeInHive": 1600,
   "hasHoneycomb": true,
   "baseLayerTexture": "pigman/pigman_bee",
   "traits": ["nether", "pigman"],
@@ -16,7 +16,8 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:glowstone_dust"
+    "mainOutput": "minecraft:glowstone_dust",
+	"mainOuputWeight": 0.30
   },
   "SpawnData": {
     "canSpawnInWorld": true,

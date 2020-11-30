@@ -1,7 +1,7 @@
 {
   "flower": "ALL",
   "hasHoneycomb": true,
-  "maxTimeInHive": 600,
+  "maxTimeInHive": 2400,
   "ColorData": {
     "isBeeColored": true,
     "honeycombColor": "#ffcc99",
@@ -16,7 +16,8 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:iron_ingot"
+    "mainOutput": "minecraft:iron_ingot",
+	"mainoutputweight": 0.35
   },
   "SpawnData": {
     "canSpawnInWorld": true,
@@ -24,7 +25,10 @@
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+	"parent1": "iron",
+	"parent2": "coal",
+	"breedWeight": 70
   },
   "TraitData": {}
 }
