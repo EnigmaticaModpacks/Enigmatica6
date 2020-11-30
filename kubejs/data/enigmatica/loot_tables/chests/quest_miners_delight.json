@@ -1,0 +1,226 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 12,
+      "entries": [
+        {
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:iron_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 20
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:gold_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:diamond_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:emerald_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:lapis_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:redstone_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 20
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:copper_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 20
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:aluminum_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:lead_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:nickel_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:uranium_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 8
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:osmium_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 12,
+                "max": 20
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:tin_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 10,
+          "name": "emendatusenigmatica:silver_chunk",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ]
+        },
+		{
+          "type": "minecraft:item",
+		  "weight": 5,
+          "name": "pneumaticcraft:reinforced_chest"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 3,
+          "name": "mekanismtools:refined_obsidian_paxel",
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 20,
+                "max": 40
+              },
+              "treasure": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
