@@ -1,6 +1,6 @@
 events.listen('jei.hide.items', (event) => {
-    global.materialsToUnify.forEach(function (material) {
-        global.typesToUnify.forEach(function (type) {
+    materialsToUnify.forEach(function (material) {
+        typesToUnify.forEach(function (type) {
             var tagString = '#forge:' + type + 's/' + material;
             var tag = ingredient.of(tagString);
             if (tag.stacks.size() > 1) {
@@ -16,7 +16,7 @@ events.listen('jei.hide.items', (event) => {
         });
     });
 
-    global.disabledItems.forEach((item) => {
+    disabledItems.forEach((item) => {
         event.hide(item);
     });
 });
