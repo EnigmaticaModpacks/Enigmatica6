@@ -1,3 +1,28 @@
+### Enigmatica 6 v0.3.1
+
+_Using Forge-1.16.4-35.1.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
+
+
+
+**Added**
+
+- 
+
+**Changes**
+
+- Aquaculture: Removed the Knives except the Neptunium variant, they have been replaced by Farmer's Delight Knives.
+
+**Bug Fixes**
+
+- 
+
+**Removed**
+
+- Actually Useful Stonecutter
+- Xerca Mod
+
+
+
 ### Enigmatica 6 v0.3.0
 
 _Using Forge-1.16.4-35.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_

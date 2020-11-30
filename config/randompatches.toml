@@ -35,11 +35,11 @@
 	# Max: 2147483647
 	# Default: 90
 	readTimeout = 360
-	# The login timeout in seconds.
+	# The login timeout in ticks.
 	# Min: 1
 	# Max: 2147483647
-	# Default: 900
-	loginTimeout = 900
+	# Default: 1800
+	loginTimeout = 3600
 
 # Options related to client-sided features.
 [client]

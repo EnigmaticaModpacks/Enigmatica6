@@ -1,7 +1,7 @@
 {
 	id: 3,
 	filename: "industrial_foregoing",
-	order_index: 10,
+	order_index: 12,
 	title: "Industrial Foregoing",
 	icon: "industrialforegoing:latex_processing_unit",
 	default_quest_shape: "",
@@ -65,10 +65,7 @@
 			x: 1.5d,
 			y: -2.0d,
 			description: ["There are currently three (craftable) tiers of IF machine frame. Right now, you can only make the lowest-tier version."],
-			dependencies: [I;
-				70,
-				74
-			],
+			dependencies: [I;74],
 			id: 77,
 			tasks: [{
 				id: 78,
@@ -86,10 +83,7 @@
 			x: -1.5d,
 			y: 1.0d,
 			description: ["The Latex Processing Unit takes latex, water, and power as inputs to produce Tiny Dry Rubber. This can be crafted into Dry Rubber, which in turn is smelted into Plastic, a critical resource."],
-			dependencies: [I;
-				72,
-				75
-			],
+			dependencies: [I;75],
 			id: 79,
 			tasks: [{
 				id: 80,
@@ -380,10 +374,7 @@
 			x: 4.5d,
 			y: 1.0d,
 			description: ["The Composter turns Sewage into Industrial Fertilizer, which can be used in the Plant Fertilizer (or by hand) in place of bonemeal."],
-			dependencies: [I;
-				82,
-				85
-			],
+			dependencies: [I;85],
 			id: 132,
 			tasks: [{
 				id: 133,

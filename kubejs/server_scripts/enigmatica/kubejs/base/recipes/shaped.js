@@ -95,6 +95,10 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe(item.of('valhelsia_structures:acacia_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:acacia_log'
+        }),
+        shapedRecipe(item.of('minecraft:ladder', 4), ['A A', 'ABA', 'A A'], {
+            A: '#forge:rods/wooden',
+            B: '#minecraft:planks'
         })
     ];
 

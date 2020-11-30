@@ -1,16 +1,16 @@
 {
 	id: 939,
 	filename: "ars_nouveau",
-	order_index: 19,
+	order_index: 17,
 	title: "Ars Nouveau",
 	icon: "ars_nouveau:mana_gem",
 	default_quest_shape: "",
 	quests: [
 		{
 			title: "Ars Nouveau",
-			icon: "ars_nouveau:novice_spell_book",
+			icon: "ars_nouveau:creative_spell_book",
 			x: -0.5d,
-			y: -8.5d,
+			y: -7.5d,
 			shape: "gear",
 			description: [
 				"With Ars Nouveau you will learn to harness the mana infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. ",
@@ -106,7 +106,7 @@
 			description: [
 				"By working Mana Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. ",
 				"",
-				"In order to learn new spells, this Magic Clay and it's variants may be pressed in a Glyph Press along with some other reagent to form such a focus."
+				"In order to learn new spells, this Magic Clay and it's variants may be pressed in a Glyph Press along with some other reagent to form a focus."
 			],
 			dependencies: [I;950],
 			id: 958,
@@ -117,9 +117,9 @@
 				count: 8L
 			}],
 			rewards: [{
-				id: 1527,
-				type: "loot",
-				table: 10
+				id: 1607,
+				type: "item",
+				item: "ars_nouveau:glyph_craft"
 			}]
 		},
 		{
@@ -144,9 +144,9 @@
 				}
 			],
 			rewards: [{
-				id: 1528,
-				type: "loot",
-				table: 10
+				id: 1641,
+				type: "item",
+				item: "ars_nouveau:glyph_grow"
 			}]
 		},
 		{
@@ -171,9 +171,9 @@
 				}
 			],
 			rewards: [{
-				id: 1529,
-				type: "loot",
-				table: 10
+				id: 1640,
+				type: "item",
+				item: "ars_nouveau:glyph_lightning"
 			}]
 		},
 		{
@@ -202,6 +202,7 @@
 		},
 		{
 			title: "Practice Spells",
+			icon: "ars_nouveau:glyph_smelt",
 			x: -6.0d,
 			y: -3.0d,
 			subtitle: "Gathering the Pieces",
@@ -367,7 +368,7 @@
 			x: 0.5d,
 			y: -5.5d,
 			description: [
-				"",
+				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspring practitioners may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves.",
 				"",
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			],
@@ -409,9 +410,9 @@
 				item: "ars_nouveau:crystallizer"
 			}],
 			rewards: [{
-				id: 1002,
+				id: 1663,
 				type: "item",
-				item: "ars_nouveau:dominion_wand"
+				item: "ars_nouveau:glyph_light"
 			}]
 		},
 		{
@@ -420,7 +421,7 @@
 			description: [
 				"Mana permeates all things. Left to it's own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing mana for later use, but moving it from place to place can be a touchy subject.",
 				"",
-				"Mana Relays serve this purpose. They provide a controlled channel for mana to flow through without dissipating back into the world. Mana Relays may b elinked to other relays as well as jars to provide safe transit frm one place to another. ",
+				"Mana Relays serve this purpose. They provide a controlled channel for mana to flow through without dissipating back into the world. Mana Relays may be linked to other relays as well as jars to provide safe transit from one place to another. ",
 				"",
 				"Use a Dominion Wand to set the links. "
 			],
@@ -547,6 +548,24 @@
 			}],
 			rewards: [{
 				id: 1598,
+				type: "loot",
+				table: 10
+			}]
+		},
+		{
+			x: -6.5d,
+			y: -6.0d,
+			subtitle: "Vulcanologist in Training",
+			description: ["Not every practitioner is born with a green-thumb. Thankfully, mana naturally trickles out of molten lava, escaping into the air. This device assists in collecting these trace amounts of mana so they may be put to use."],
+			dependencies: [I;950],
+			id: 1693,
+			tasks: [{
+				id: 1694,
+				type: "item",
+				item: "ars_nouveau:volcanic_accumulator"
+			}],
+			rewards: [{
+				id: 1696,
 				type: "loot",
 				table: 10
 			}]

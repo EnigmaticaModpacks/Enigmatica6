@@ -1,0 +1,111 @@
+{
+	id: 1665,
+	title: "Miner's Delight",
+	icon: "artifacts:mimic_spawn_egg",
+	loot_size: 12,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: {
+				id: "mekanismtools:refined_obsidian_paxel",
+				Count: true,
+				tag: {
+					Damage: 0,
+					Enchantments: [{
+						lvl: 5s,
+						id: "minecraft:unbreaking"
+					}]
+				}
+			}
+		},
+		{
+			item: "emendatusenigmatica:iron_chunk",
+			count: 24,
+			weight: 10,
+			random_bonus: 12
+		},
+		{
+			item: "emendatusenigmatica:gold_chunk",
+			count: 10,
+			weight: 10,
+			random_bonus: 12
+		},
+		{
+			item: "emendatusenigmatica:diamond_chunk",
+			count: 2,
+			weight: 10,
+			random_bonus: 8
+		},
+		{
+			item: "emendatusenigmatica:emerald_chunk",
+			count: 4,
+			weight: 10,
+			random_bonus: 8
+		},
+		{
+			item: "emendatusenigmatica:lapis_chunk",
+			count: 4,
+			weight: 10,
+			random_bonus: 8
+		},
+		{
+			item: "emendatusenigmatica:redstone_chunk",
+			count: 4,
+			weight: 10,
+			random_bonus: 8
+		},
+		{
+			item: "emendatusenigmatica:copper_chunk",
+			count: 10,
+			weight: 10,
+			random_bonus: 12
+		},
+		{
+			item: "emendatusenigmatica:aluminum_chunk",
+			count: 4,
+			weight: 10,
+			random_bonus: 8
+		},
+		{
+			item: "emendatusenigmatica:lead_chunk",
+			count: 2,
+			weight: 10,
+			random_bonus: 6
+		},
+		{
+			item: "emendatusenigmatica:nickel_chunk",
+			count: 2,
+			weight: 10,
+			random_bonus: 6
+		},
+		{
+			item: "emendatusenigmatica:uranium_chunk",
+			count: 2,
+			weight: 10,
+			random_bonus: 6
+		},
+		{
+			item: "emendatusenigmatica:osmium_chunk",
+			count: 24,
+			weight: 10,
+			random_bonus: 16
+		},
+		{
+			item: "emendatusenigmatica:tin_chunk",
+			count: 10,
+			weight: 10,
+			random_bonus: 12
+		},
+		{
+			item: "emendatusenigmatica:silver_chunk",
+			count: 2,
+			weight: 10,
+			random_bonus: 6
+		},
+		{
+			item: "pneumaticcraft:reinforced_chest",
+			weight: 5
+		}
+	]
+}

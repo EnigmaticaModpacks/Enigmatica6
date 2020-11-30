@@ -1,7 +1,7 @@
 
 [general]
 	#The material blacklist of this module.
-	materialBlacklist = []
+	materialBlacklist = ["mana", "mana_gem", "bitumen"]
 	#The materials to force generate passive forms for this module.
 	passiveMaterialWhitelist = []
 

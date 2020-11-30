@@ -1,4 +1,10 @@
 const disabledItems = [
+    'aquaculture:wooden_fillet_knife',
+    'aquaculture:stone_fillet_knife',
+    'aquaculture:iron_fillet_knife',
+    'aquaculture:gold_fillet_knife',
+    'aquaculture:diamond_fillet_knife',
+
     'byg:ametrine_block',
     'byg:ametrine_boots',
     'byg:ametrine_chestplate',
@@ -17,6 +23,8 @@ const disabledItems = [
     'byg:pendorite_scraps',
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
+
+    'mapperbase:steel_fence',
 
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',

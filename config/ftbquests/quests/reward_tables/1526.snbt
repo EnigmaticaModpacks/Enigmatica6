@@ -7,16 +7,7 @@
 	use_title: true,
 	rewards: [
 		{
-			item: "ars_nouveau:dull_trinket"
-		},
-		{
-			item: "ars_nouveau:mundane_belt"
-		},
-		{
-			item: "ars_nouveau:ring_of_potential"
-		},
-		{
-			item: "emendatusenigmatica:arcane_gem",
+			item: "ars_nouveau:mana_gem",
 			count: 16
 		},
 		{
@@ -30,6 +21,42 @@
 		{
 			item: "ars_nouveau:magic_clay",
 			count: 4
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 2s,
+						id: "ars_nouveau:mana_regen"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 2s,
+						id: "ars_nouveau:mana_boost"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "minecraft:enchanted_book",
+				Count: true,
+				tag: {
+					StoredEnchantments: [{
+						lvl: 1s,
+						id: "minecraft:mending"
+					}]
+				}
+			}
 		}
 	]
 }
