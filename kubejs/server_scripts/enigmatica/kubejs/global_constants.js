@@ -1,3 +1,5 @@
+//priority: 1001
+
 global.disabledItems = [
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
@@ -31,10 +33,11 @@ global.disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
-    'quark:pipe'
-];
+    'quark:pipe',
 
-global.colors = [
+    'thermal:sugar_cane_block'
+];
+const colors = [
     'cyan',
     'purple',
     'blue',
@@ -53,8 +56,7 @@ global.colors = [
     'light_gray'
 ];
 
-global.typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
-
+const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
 global.materialsToUnify = [
     'iron',
     'gold',
@@ -98,11 +100,12 @@ global.materialsToUnify = [
     'redstone',
     'glowstone',
     'arcane',
+    'mana',
     'certus_quartz',
     'charged_certus_quartz'
 ];
 
-global.modPriorities = [
+const modPriorities = [
     'emendatusenigmatica',
     'minecraft',
     'immersiveengineering',
@@ -120,23 +123,23 @@ global.modPriorities = [
     'mapperbase'
 ];
 
-global.unificationBlacklist = [
+const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
 
-global.vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
+const vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
 
-global.unificationBlacklistEntry = function unificationBlacklistEntry(material, type) {
+const unificationBlacklistEntry = function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
 };
 
-global.getPreferredItemInTag = function getPreferredItemInTag(tag) {
+const getPreferredItemInTag = function getPreferredItemInTag(tag) {
     const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
     // console.info('Preferred item: ' + tag + ' => ' + pref);
     return pref;
 };
-global.compareIndices = function compareIndices(a, b, tag) {
+const compareIndices = function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -147,19 +150,9 @@ global.compareIndices = function compareIndices(a, b, tag) {
     console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
     return 0;
 };
-global.wrapArray = function wrapArray(array) {
+const wrapArray = function wrapArray(array) {
     return utils.listOf(array).toArray();
 };
 
-const {
-    unificationBlacklist,
-    unificationBlacklistEntry,
-    materialsToUnify,
-    typesToUnify,
-    colors,
-    air,
-    vanillaWoodTypes,
-    getPreferredItemInTag,
-    compareIndices,
-    wrapArray
-} = global;
+const materialsToUnify = global.materialsToUnify;
+const disabledItems = global.disabledItems;
