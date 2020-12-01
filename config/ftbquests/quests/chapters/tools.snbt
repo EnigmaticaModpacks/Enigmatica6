@@ -28,11 +28,18 @@
 				type: "item",
 				item: "pneumaticcraft:jackhammer"
 			}],
-			rewards: [{
-				id: 456,
-				type: "item",
-				item: "pneumaticcraft:drill_bit_compressed_iron"
-			}]
+			rewards: [
+				{
+					id: 456,
+					type: "item",
+					item: "pneumaticcraft:drill_bit_compressed_iron"
+				},
+				{
+					id: 1785,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			x: -7.5d,
@@ -46,12 +53,22 @@
 				type: "item",
 				item: "pneumaticcraft:drill_bit_diamond"
 			}],
-			rewards: [{
-				id: 459,
-				type: "item",
-				item: "pneumaticcraft:volume_upgrade",
-				count: 5
-			}]
+			rewards: [
+				{
+					id: 459,
+					type: "item",
+					item: "pneumaticcraft:volume_upgrade",
+					count: 5
+				},
+				{
+					id: 1784,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -7.5d,
@@ -65,12 +82,22 @@
 				type: "item",
 				item: "pneumaticcraft:drill_bit_netherite"
 			}],
-			rewards: [{
-				id: 462,
-				type: "item",
-				item: "pneumaticcraft:speed_upgrade",
-				count: 2
-			}]
+			rewards: [
+				{
+					id: 462,
+					type: "item",
+					item: "pneumaticcraft:speed_upgrade",
+					count: 2
+				},
+				{
+					id: 1783,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -10.0d,
@@ -100,7 +127,7 @@
 			rewards: [{
 				id: 1616,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -133,7 +160,7 @@
 			rewards: [{
 				id: 1615,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -163,7 +190,7 @@
 			rewards: [{
 				id: 1617,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -196,7 +223,7 @@
 			rewards: [{
 				id: 1618,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -239,7 +266,7 @@
 			rewards: [{
 				id: 1605,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -255,7 +282,7 @@
 			rewards: [{
 				id: 1604,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -271,7 +298,7 @@
 			rewards: [{
 				id: 1602,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -287,7 +314,7 @@
 			rewards: [{
 				id: 1603,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -303,7 +330,7 @@
 			rewards: [{
 				id: 1599,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -339,7 +366,7 @@
 			rewards: [{
 				id: 1601,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -357,7 +384,7 @@
 			rewards: [{
 				id: 1600,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -470,7 +497,12 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1782,
+				type: "loot",
+				table: 11
+			}]
 		},
 		{
 			x: -5.0d,
@@ -866,25 +898,35 @@
 			],
 			dependencies: [I;1132],
 			id: 1119,
-			tasks: [{
-				id: 1120,
-				type: "item",
-				item: {
-					id: "mininggadgets:mininggadget",
-					Count: true,
-					tag: {}
-				}
-			}],
-			rewards: [
+			tasks: [
 				{
-					id: 1648,
+					id: 1120,
+					type: "item",
+					item: {
+						id: "mininggadgets:mininggadget",
+						Count: true,
+						tag: {}
+					}
+				},
+				{
+					id: 1778,
 					type: "item",
 					item: "mininggadgets:modificationtable"
-				},
+				}
+			],
+			rewards: [
 				{
 					id: 1661,
 					type: "item",
 					item: "mininggadgets:upgrade_light_placer"
+				},
+				{
+					id: 1777,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
 			]
 		},
@@ -911,9 +953,12 @@
 				}
 			}],
 			rewards: [{
-				id: 1672,
-				type: "loot",
-				table: 18
+				id: 1772,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -927,9 +972,12 @@
 				item: "mininggadgets:upgrade_fortune_3"
 			}],
 			rewards: [{
-				id: 1669,
-				type: "loot",
-				table: 18
+				id: 1775,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -942,11 +990,21 @@
 				type: "item",
 				item: "mininggadgets:upgrade_silk"
 			}],
-			rewards: [{
-				id: 1659,
-				type: "item",
-				item: "mininggadgets:upgrade_magnet"
-			}]
+			rewards: [
+				{
+					id: 1659,
+					type: "item",
+					item: "mininggadgets:upgrade_magnet"
+				},
+				{
+					id: 1776,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -9.0d,
@@ -959,9 +1017,12 @@
 				item: "mininggadgets:upgrade_efficiency_5"
 			}],
 			rewards: [{
-				id: 1670,
-				type: "loot",
-				table: 18
+				id: 1774,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -975,9 +1036,12 @@
 				item: "mininggadgets:upgrade_battery_3"
 			}],
 			rewards: [{
-				id: 1671,
-				type: "loot",
-				table: 18
+				id: 1773,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1226,11 +1290,21 @@
 					}
 				}
 			],
-			rewards: [{
-				id: 1631,
-				type: "item",
-				item: "aquaculture:nether_star_hook"
-			}]
+			rewards: [
+				{
+					id: 1631,
+					type: "item",
+					item: "aquaculture:nether_star_hook"
+				},
+				{
+					id: 1780,
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "biomesoplenty:nether_crystal",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -2.0d,
@@ -1250,10 +1324,12 @@
 				}
 			}],
 			rewards: [{
-				id: 1635,
-				type: "item",
-				item: "aquaculture:neptunium_ingot",
-				count: 3
+				id: 1781,
+				type: "command",
+				title: "Sorcerer's Delight",
+				icon: "biomesoplenty:nether_crystal",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1297,9 +1373,12 @@
 					}
 				},
 				{
-					id: 1674,
-					type: "loot",
-					table: 18
+					id: 1779,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
 			]
 		},
@@ -1378,11 +1457,11 @@
 						tag: {
 							StoredEnchantments: [
 								{
-									lvl: 5s,
+									lvl: 7s,
 									id: "ars_nouveau:mana_regen"
 								},
 								{
-									lvl: 5s,
+									lvl: 7s,
 									id: "ars_nouveau:mana_boost"
 								}
 							]
@@ -1454,7 +1533,7 @@
 			rewards: [{
 				id: 1637,
 				type: "loot",
-				table: 16
+				table: 19
 			}]
 		},
 		{
@@ -1682,7 +1761,7 @@
 			rewards: [{
 				id: 1636,
 				type: "loot",
-				table: 16
+				table: 19
 			}]
 		}
 	]
