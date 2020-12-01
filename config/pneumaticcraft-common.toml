@@ -11,12 +11,14 @@
 	fuel_bucket_efficiency = 0.05
 	#Should dyes be used up when coloring things (Drones, Logistics Modules, Redstone Modules)?
 	use_up_dyes_when_coloring = false
+	#Oil worldgen blacklist by biome category: add biome categories to this list if you don't want oil worldgen to happen there. Accepted categories are: beach, desert, extreme_hills, forest, icy, jungle, mesa, mushroom, nether, none, ocean, plains, river, savanna, swamp, taiga, the_end.  This works in conjunction with 'oil_world_gen_blacklist' - if a biome matches either, then no oil lakes will generate there.
+	oil_world_gen_category_blacklist = ["none"]
 	#Maximum number of blocks in the area defined in an Area Programming Puzzle Piece
 	#Range: > 1
 	max_programming_area = 250000
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
-	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.
+	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there.
 	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "byg:embur_bog", "byg:glowstone_gardens", "byg:sythian_torrids", "byg:warped_desert", "byg:subzero_hypogeal", "byg:quartz_desert", "byg:brimstone_caverns", "byg:weeping_mire", "byg:withering_woods", "byg:magma_wastes", "byg:wailing_garth", "byg:crimson_gardens", "byg:ivis_fields", "byg:bulbis_gardens", "byg:shattered_desert", "byg:ethereal_islands", "byg:purpur_peaks", "byg:cryptic_wastes", "byg:viscal_isles", "byg:shulkren_forest", "byg:nightshade_forest", "biomesoplenty:crystalline_chasm", "biomesoplenty:undergrowth", "biomesoplenty:visceral_heap", "biomesoplenty:withered_abyss"]
 	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
@@ -230,15 +232,18 @@
 	#Range: > 1000
 	reshuffleInterval = 24000
 	#Max number of custom trades a player may add
-	#Range: > 1
+	#Range: > 0
 	max_trades_per_player = 50
 	#Broadcast a notification when player adds a custom trade
 	notify_of_trade_addition = true
 	#Broadcast a notification when player removes a custom trade
 	notify_of_trade_removal = true
-	#Broadcast a notification when an Amadron trade is made
+	#Broadcast a notification when a custom Amadron trade is made
 	notify_of_deal_made = true
-	#Number of periodic offers randomly selected for the 'live' offer list
+	#Number of villager offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less.
+	#Range: > 0
+	numVillagerOffers = 20
+	#Number of periodic offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less.
 	#Range: > 0
 	numPeriodicOffers = 20
 

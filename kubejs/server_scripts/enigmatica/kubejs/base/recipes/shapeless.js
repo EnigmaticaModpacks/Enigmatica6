@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var recipes = [
         shapelessRecipe('botania:enchanted_soil', ['minecraft:grass_block', 'botania:overgrowth_seed']),
         shapelessRecipe('minecraft:sticky_piston', ['minecraft:piston', '#forge:slimeballs']),
@@ -68,8 +68,8 @@ events.listen('recipes', function (event) {
             'bambooeverything:bamboo_bundle',
             'bambooeverything:bamboo_bundle'
         ]),
-        shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
-        shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
+        // shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
+        // shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
         shapelessRecipe('minecraft:crafting_table', ['#forge:workbench'])
     ];
 
