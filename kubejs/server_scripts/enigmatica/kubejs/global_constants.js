@@ -1,6 +1,6 @@
 //priority: 1001
 
-global.disabledItems = [
+const disabledItems = [
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',
@@ -57,7 +57,7 @@ const colors = [
 ];
 
 const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
-global.materialsToUnify = [
+const materialsToUnify = [
     'iron',
     'gold',
     'copper',
@@ -129,17 +129,16 @@ const unificationBlacklist = [
 ];
 
 const vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
-
-const unificationBlacklistEntry = function unificationBlacklistEntry(material, type) {
+function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };
-};
+}
 
-const getPreferredItemInTag = function getPreferredItemInTag(tag) {
+function getPreferredItemInTag(tag) {
     const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
     // console.info('Preferred item: ' + tag + ' => ' + pref);
     return pref;
-};
-const compareIndices = function compareIndices(a, b, tag) {
+}
+function compareIndices(a, b, tag) {
     if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
 
     for (let mod of modPriorities) {
@@ -149,10 +148,10 @@ const compareIndices = function compareIndices(a, b, tag) {
 
     console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
     return 0;
-};
-const wrapArray = function wrapArray(array) {
+}
+function wrapArray(array) {
     return utils.listOf(array).toArray();
-};
+}
 
-const materialsToUnify = global.materialsToUnify;
-const disabledItems = global.disabledItems;
+global.materialsToUnify = materialsToUnify;
+global.disabledItems = disabledItems;
