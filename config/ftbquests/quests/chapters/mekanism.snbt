@@ -1,7 +1,7 @@
 {
 	id: 165,
 	filename: "mekanism",
-	order_index: 16,
+	order_index: 0,
 	title: "Mekanism WIP",
 	icon: {
 		id: "mekanism:robit",
@@ -20,7 +20,7 @@
 	quests: [
 		{
 			title: "Mekanism",
-			x: 1.5d,
+			x: 3.5d,
 			y: -3.5d,
 			shape: "gear",
 			description: [
@@ -77,18 +77,12 @@
 		{
 			title: "Advanced Power",
 			icon: "mekanism:radioactive_waste_barrel",
-			x: 6.0d,
+			x: 5.5d,
 			y: -2.0d,
 			description: [
-				"Guide the player to their first fission reactor. ",
+				"That little Gas-Burning Generator is probably doing OK, up to this point. One could be excused for thinking it's enough. ",
 				"",
-				"Initial quests will have them collect everything for a small reactor and turbine, similar to the one on the Mek Wiki. External link for further info?",
-				"",
-				"Side quest chain to assist with figuring out the fuel processing chain. setup for producing hydrofluoric acid and then uranium hexafluoride before finally making the fuel.",
-				"",
-				"From here, guide them towards Polonium and Plutonium processing to prep for SPS",
-				"",
-				"Finally, finish with building the SPS."
+				"Certain high-tier crafts will require substances currently out of our reach, and obtaining them is going to require extreme amounts of energy. The quests that follow will guide you through the process of building a Fission Reactor, harnessing it's power with an Industrial Turbine, and finally treating and converting the waste into something far more useful."
 			],
 			dependencies: [I;1697],
 			id: 1703,
@@ -99,8 +93,8 @@
 		},
 		{
 			title: "Loot ideas",
-			x: -0.5d,
-			y: -1.0d,
+			x: -1.5d,
+			y: 5.5d,
 			description: [
 				"Rare",
 				"infused alloy",
@@ -135,7 +129,7 @@
 			}]
 		},
 		{
-			x: -3.0d,
+			x: -2.5d,
 			y: -1.0d,
 			subtitle: "Argent Crucible",
 			description: [
@@ -173,7 +167,7 @@
 			}]
 		},
 		{
-			x: -3.0d,
+			x: -2.5d,
 			y: 1.0d,
 			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."],
 			dependencies: [I;
@@ -190,9 +184,16 @@
 		{
 			title: "Induction Matrix",
 			icon: "mekanism:basic_induction_cell",
-			x: 6.0d,
-			y: 4.0d,
-			description: [""],
+			x: 5.5d,
+			y: 1.0d,
+			description: [
+				"Energy Cubes do a respectable job at storing energy but they're far too limited when it comes to dealing with the output of a Fission Reactor. The Induction Matrix offers higher energy density and greater throughput. Building a buffer of energy for the steps to come may also be a prudent idea.",
+				"",
+				"The Induction Matrix is a roughly free-form multiblock that can be any rectangular prism from 3x3x4 up to 18x18x18.",
+				"",
+				"It consists of Induction Providers, Induction Cells, Induction Casing, and Induction Ports. The sides may be made of Structural Glass as well, though the edges must be made of Induction Casing. The interior need not be filled either, so a larger casing may be built to accomodate for future expansion. "
+			],
+			dependencies: [I;1801],
 			id: 1717,
 			tasks: [
 				{
@@ -208,16 +209,21 @@
 					count: 2L
 				},
 				{
-					id: 1720,
+					id: 1799,
 					type: "item",
-					item: "mekanism:basic_induction_cell"
+					item: "mekanism:advanced_induction_cell"
 				},
 				{
-					id: 1721,
+					id: 1800,
 					type: "item",
-					item: "mekanism:basic_induction_provider"
+					item: "mekanism:advanced_induction_provider"
 				}
-			]
+			],
+			rewards: [{
+				id: 1797,
+				type: "item",
+				item: "mekanism:advanced_induction_cell"
+			}]
 		},
 		{
 			title: "Basic Power Generation",
@@ -256,9 +262,13 @@
 			]
 		},
 		{
-			x: 2.0d,
+			x: 1.5d,
 			y: -1.0d,
-			description: ["Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser. With this, Steel and all of the other various alloys used throughout the mod can be created. "],
+			description: [
+				"Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser. With this, Steel and all of the other various alloys used throughout the mod can be created. ",
+				"",
+				"Consider building multiple Infusers, one per type. Automatic a single infuser for all types is quite possible, but requires a fair amount more effort while being slower than independent processing lines. "
+			],
 			dependencies: [I;1701],
 			id: 1725,
 			tasks: [{
@@ -330,9 +340,18 @@
 		{
 			title: "Thermal Evaporation Plant",
 			icon: "mekanism:thermal_evaporation_controller",
-			x: 6.0d,
-			y: 2.5d,
-			description: [""],
+			x: 5.5d,
+			y: -1.0d,
+			description: [
+				"Before getting too deep into nuclear physics, a little ground-work will be needed. The Thermal Evaporation Plant will feature heavily in the coming processes so understanding it is going to be vital.",
+				"",
+				"Gather the requested materials and use the provided Building Gadget's Template to build a Thermal Evaporation Plant. This represents the minimum sized Evaporation Plant with a 4x4 base and 3 blocks tall. It can be extended vertically up to 18 blocks tall. The sides may also be made of Structural Glass.",
+				"",
+				"The Evaporation Plant functions with heat, which can be provided through a variety of means. The easiest will be to hook a Resistive Heater up to one of the Valves and give it power. Note that the amount of power used by the Resistive Heater can be set in the GUI. Experiment to find the right balance of power.",
+				"",
+				"Water or other fluids may then be piped in to one of the other Valves. As the Water heats, it will be converted to Brine which may then be piped out of the third Valve. "
+			],
+			dependencies: [I;1703],
 			id: 1735,
 			tasks: [
 				{
@@ -351,6 +370,19 @@
 					id: 1739,
 					type: "item",
 					item: "mekanism:thermal_evaporation_controller"
+				}
+			],
+			rewards: [
+				{
+					id: 1795,
+					type: "item",
+					item: "mekanism:resistive_heater"
+				},
+				{
+					id: 1796,
+					type: "item",
+					item: "mekanism:advanced_thermodynamic_conductor",
+					count: 16
 				}
 			]
 		},
@@ -416,6 +448,430 @@
 				type: "item",
 				item: "mekanism:basic_tier_installer",
 				count: 3
+			}]
+		},
+		{
+			title: "Lithium",
+			icon: "emendatusenigmatica:lithium_dust",
+			x: 5.5d,
+			y: 0.0d,
+			description: ["Before moving on that Brine will need to be run through a second Evaporation Tower to form Liquid Lithium. This may then be processed in a Chemical Crystallizer to produce a solid form of the element."],
+			dependencies: [I;1735],
+			id: 1801,
+			tasks: [
+				{
+					id: 1802,
+					type: "item",
+					item: "mekanism:chemical_crystallizer"
+				},
+				{
+					id: 1803,
+					type: "item",
+					item: "emendatusenigmatica:lithium_dust"
+				}
+			],
+			rewards: [{
+				id: 1804,
+				type: "item",
+				item: "emendatusenigmatica:lithium_dust",
+				count: 16
+			}]
+		},
+		{
+			title: "Sulfur",
+			icon: "emendatusenigmatica:sulfur_dust",
+			x: 10.0d,
+			y: -1.0d,
+			shape: "rsquare",
+			dependencies: [I;1892],
+			id: 1835,
+			tasks: [{
+				id: 1847,
+				type: "checkmark",
+				title: "Sulfur"
+			}]
+		},
+		{
+			title: "Uranium",
+			icon: "emendatusenigmatica:uranium_ingot",
+			x: 8.0d,
+			y: 6.0d,
+			shape: "rsquare",
+			dependencies: [I;1893],
+			id: 1837,
+			tasks: [{
+				id: 1846,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Sulfur Dioxide",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 10.0d,
+			y: 1.0d,
+			shape: "diamond",
+			description: [""],
+			dependencies: [I;1843],
+			id: 1839,
+			tasks: [{
+				id: 1851,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Water",
+			icon: {
+				id: "mekanism:creative_fluid_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						FluidTanks: [{
+							Tank: false,
+							stored: {
+								FluidName: "minecraft:water",
+								Amount: 2147483647
+							}
+						}]
+					}
+				}
+			},
+			x: 13.0d,
+			y: 2.5d,
+			shape: "rsquare",
+			dependencies: [I;1893],
+			id: 1841,
+			tasks: [{
+				id: 1845,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Chemical Oxidizer",
+			icon: "mekanism:chemical_oxidizer",
+			x: 10.0d,
+			y: 0.0d,
+			shape: "hexagon",
+			dependencies: [I;1835],
+			id: 1843,
+			tasks: [{
+				id: 1850,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Chemical Infuser",
+			icon: "mekanism:chemical_infuser",
+			x: 10.0d,
+			y: 2.0d,
+			shape: "hexagon",
+			dependencies: [I;
+				1839,
+				1857
+			],
+			id: 1848,
+			tasks: [{
+				id: 1852,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Electrolytic Separator",
+			icon: "mekanism:electrolytic_separator",
+			x: 12.0d,
+			y: 2.0d,
+			shape: "hexagon",
+			dependencies: [I;1841],
+			id: 1853,
+			tasks: [{
+				id: 1854,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Hydrogen",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 12.0d,
+			y: 0.5d,
+			dependencies: [I;1853],
+			id: 1855,
+			tasks: [{
+				id: 1856,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Oxygen",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 11.0d,
+			y: 2.0d,
+			shape: "diamond",
+			dependencies: [I;1853],
+			id: 1857,
+			tasks: [{
+				id: 1858,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Sulfur Trioxide",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 9.0d,
+			y: 2.5d,
+			shape: "diamond",
+			dependencies: [I;1848],
+			id: 1859,
+			tasks: [{
+				id: 1860,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Chemical Infuser",
+			icon: "mekanism:chemical_infuser",
+			x: 10.0d,
+			y: 3.0d,
+			shape: "hexagon",
+			dependencies: [I;
+				1859,
+				1865
+			],
+			id: 1861,
+			tasks: [{
+				id: 1862,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Rotary Condensentrator",
+			icon: "mekanism:rotary_condensentrator",
+			x: 12.0d,
+			y: 3.0d,
+			shape: "hexagon",
+			dependencies: [I;1841],
+			id: 1863,
+			tasks: [{
+				id: 1864,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Water Vapor",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 11.0d,
+			y: 3.0d,
+			shape: "diamond",
+			dependencies: [I;1863],
+			id: 1865,
+			tasks: [{
+				id: 1866,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Sulfuric Acid",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 10.0d,
+			y: 4.0d,
+			shape: "diamond",
+			dependencies: [I;1861],
+			id: 1867,
+			tasks: [{
+				id: 1868,
+				type: "checkmark"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: 5.0d,
+			shape: "hexagon",
+			dependencies: [I;
+				1867,
+				1871
+			],
+			id: 1869,
+			tasks: [{
+				id: 1870,
+				type: "checkmark",
+				title: "Chemical Dissolution Chamber",
+				icon: "mekanism:chemical_dissolution_chamber"
+			}]
+		},
+		{
+			title: "Fluorite",
+			icon: "emendatusenigmatica:fluorite_gem",
+			x: 9.0d,
+			y: 5.0d,
+			shape: "rsquare",
+			dependencies: [I;1893],
+			id: 1871,
+			tasks: [{
+				id: 1872,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Hydrofluoric Acid",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 11.0d,
+			y: 5.0d,
+			shape: "diamond",
+			dependencies: [I;1869],
+			id: 1873,
+			tasks: [{
+				id: 1875,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Chemical Infuser",
+			icon: "mekanism:chemical_infuser",
+			x: 12.0d,
+			y: 5.0d,
+			shape: "hexagon",
+			dependencies: [I;
+				1873,
+				1880
+			],
+			id: 1876,
+			tasks: [{
+				id: 1877,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Yellow Cake Uranium",
+			icon: "mekanism:yellow_cake_uranium",
+			x: 10.0d,
+			y: 6.0d,
+			shape: "diamond",
+			dependencies: [I;1886],
+			id: 1878,
+			tasks: [{
+				id: 1879,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Uranium Oxide",
+			icon: {
+				id: "mekanism:creative_chemical_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						GasTanks: [{
+							Tank: false,
+							stored: {
+								gasName: "mekanism:uranium_oxide",
+								amount: 9223372036854775807L
+							}
+						}]
+					}
+				}
+			},
+			x: 12.0d,
+			y: 6.0d,
+			shape: "diamond",
+			dependencies: [I;1884],
+			id: 1880,
+			tasks: [{
+				id: 1881,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Uranium Hexafluoride",
+			icon: {
+				id: "mekanism:creative_chemical_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						GasTanks: [{
+							Tank: false,
+							stored: {
+								gasName: "mekanism:uranium_hexafluoride",
+								amount: 9223372036854775807L
+							}
+						}]
+					}
+				}
+			},
+			x: 13.0d,
+			y: 5.0d,
+			shape: "diamond",
+			dependencies: [I;1876],
+			id: 1882,
+			tasks: [{
+				id: 1883,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Chemical Oxidizer",
+			icon: "mekanism:chemical_oxidizer",
+			x: 11.0d,
+			y: 6.0d,
+			shape: "hexagon",
+			dependencies: [I;1878],
+			id: 1884,
+			tasks: [{
+				id: 1885,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Enrichment Chamber",
+			icon: "mekanism:enrichment_chamber",
+			x: 9.0d,
+			y: 6.0d,
+			shape: "hexagon",
+			dependencies: [I;1837],
+			id: 1886,
+			tasks: [{
+				id: 1887,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Isotopic Centrifuge",
+			icon: "mekanism:isotopic_centrifuge",
+			x: 14.0d,
+			y: 5.0d,
+			shape: "hexagon",
+			dependencies: [I;1882],
+			id: 1888,
+			tasks: [{
+				id: 1889,
+				type: "checkmark"
+			}]
+		},
+		{
+			title: "Fissile Fuel",
+			icon: "mekanism:ultimate_chemical_tank",
+			x: 15.0d,
+			y: 4.0d,
+			dependencies: [I;1888],
+			id: 1890,
+			tasks: [{
+				id: 1891,
+				type: "checkmark"
+			}]
+		},
+		{
+			x: 10.0d,
+			y: -2.0d,
+			subtitle: "On The House",
+			description: [
+				"Mekanism's Fission Reactors are new to v10 and as such even veteran players may find themselves a little lost. So have a free flow-chart, on us.",
+				"",
+				"The production chain will involve mass quantities of Sulfur, Uranium, Fluorite, and Water, so be sure that these materials are automated in some way before starting."
+			],
+			dependencies: [I;1697],
+			id: 1892,
+			tasks: [{
+				id: 1893,
+				type: "checkmark",
+				title: "Fissile Fuel Production",
+				icon: "mekanism:isotopic_centrifuge"
 			}]
 		}
 	]
