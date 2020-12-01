@@ -38,16 +38,12 @@ events.listen('jei.hide.items', (event) => {
     itemsToHide.forEach((disabledItem) => {
         if (!item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
-        } else {
-            console.error('Attempted to hide non-exisistant item: [' + disabledItem + ']');
         }
     });
 
     global.disabledItems.forEach((disabledItem) => {
         if (!item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
-        } else {
-            console.error('Attempted to hide non-exisistant item: [' + disabledItem + ']');
         }
     });
 });
