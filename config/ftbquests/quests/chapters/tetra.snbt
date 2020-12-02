@@ -1,0 +1,162 @@
+{
+	id: 1906,
+	filename: "tetra",
+	order_index: 22,
+	title: "Tetra",
+	icon: {
+		id: "tetra:modular_double",
+		Count: true,
+		tag: {
+			"double/handle": "double/basic_handle",
+			"double/head_left": "double/basic_hammer_left",
+			"double/head_right": "double/basic_hammer_right",
+			Damage: 0,
+			"double/basic_hammer_right_material": "basic_hammer/iron",
+			"double/basic_handle_material": "basic_handle/spruce",
+			"double/basic_hammer_left_material": "basic_hammer/iron"
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -0.5d,
+			y: -16.0d,
+			id: 1907,
+			tasks: [{
+				id: 1908,
+				type: "item",
+				item: {
+					id: "tetra:modular_double",
+					Count: true,
+					tag: {
+						"double/handle": "double/basic_handle",
+						"double/head_left": "double/basic_hammer_left",
+						"double/head_right": "double/basic_hammer_right",
+						Damage: 0,
+						"double/basic_hammer_right_material": "basic_hammer/log",
+						"double/basic_handle_material": "basic_handle/stick",
+						"double/basic_hammer_left_material": "basic_hammer/log"
+					}
+				}
+			}]
+		},
+		{
+			icon: {
+				id: "tetra:holo",
+				Count: true,
+				tag: {
+					"holo/core_material": "frame/dim",
+					"holo/frame": "holo/frame",
+					"holo/core": "holo/core",
+					"holo/frame_material": "core/ancient"
+				}
+			},
+			x: -0.5d,
+			y: -15.0d,
+			id: 1909,
+			tasks: [{
+				id: 1935,
+				type: "checkmark"
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -16.0d,
+			id: 1911,
+			tasks: [{
+				id: 1936,
+				type: "checkmark"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -16.0d,
+			id: 1913,
+			tasks: [{
+				id: 1914,
+				type: "item"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -15.0d,
+			id: 1915,
+			tasks: [{
+				id: 1916,
+				type: "item"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -14.0d,
+			id: 1917,
+			tasks: [{
+				id: 1918,
+				type: "item"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -13.0d,
+			id: 1919,
+			tasks: [{
+				id: 1920,
+				type: "item"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -16.0d,
+			id: 1921,
+			tasks: [{
+				id: 1922,
+				type: "item"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -15.0d,
+			id: 1923,
+			tasks: [{
+				id: 1924,
+				type: "item"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -14.0d,
+			id: 1925,
+			tasks: [{
+				id: 1926,
+				type: "item"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -13.0d,
+			id: 1927,
+			tasks: [{
+				id: 1928,
+				type: "item"
+			}]
+		},
+		{
+			icon: "tetra:forged_container",
+			x: 3.5d,
+			y: -16.0d,
+			id: 1929
+		},
+		{
+			icon: "tetra:earthpiercer",
+			x: 3.5d,
+			y: -15.0d,
+			id: 1931
+		},
+		{
+			icon: "tetra:stonecutter",
+			x: 3.5d,
+			y: -14.0d,
+			id: 1933
+		}
+	]
+}
