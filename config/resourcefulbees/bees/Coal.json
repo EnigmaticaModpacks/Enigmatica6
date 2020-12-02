@@ -1,36 +1,36 @@
 {
-  "flower": "ALL",
-  "maxTimeInHive": 1600,
-  "sizeModifier": 0.5,
-  "hasHoneycomb": true,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#303030",
-    "primaryColor": "#303030",
-    "secondaryColor": "#303030"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "tag:forge:stone",
-    "mutationOutput": "minecraft:coal_ore",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:coal",
-	"mainOutputWeight": 0.40,
-    "mainOutputCount": 6
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:overworld",
-    "biomeBlacklist": "tag:ocean",
-    "spawnWeight": 8
-  },
-  "BreedData": {
-    "feedItem": "minecraft:coal_block",
-    "feedAmount": 8,
-    "isBreedable": true
-  },
-  "TraitData": {}
+    "flower": "ALL",
+    "maxTimeInHive": 1600,
+    "sizeModifier": 0.5,
+    "hasHoneycomb": true,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#303030",
+        "primaryColor": "#303030",
+        "secondaryColor": "#303030"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:stone",
+        "mutationOutput": "minecraft:coal_ore",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:coal",
+        "mainOutputWeight": 0.4,
+        "mainOutputCount": 6
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean",
+        "spawnWeight": 8
+    },
+    "BreedData": {
+        "feedItem": "minecraft:coal_block",
+        "feedAmount": 8,
+        "isBreedable": true
+    },
+    "TraitData": {}
 }

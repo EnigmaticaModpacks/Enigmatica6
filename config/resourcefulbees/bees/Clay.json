@@ -1,35 +1,35 @@
 {
-  "flower": "ALL",
-  "maxTimeInHive": 1600,
-  "sizeModifier": 0.75,
-  "hasHoneycomb": true,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#fffaf0",
-    "primaryColor": "#fffaf0",
-    "secondaryColor": "#696969"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "tag:forge:sand",
-    "mutationOutput": "minecraft:clay_block",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:clay_block",
-	"mainOutputWeight": 0.30,
-    "mainOutputCount": 1
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:beach,ocean",
-    "spawnWeight": 4
-  },
-  "BreedData": {
-    "feedItem": "minecraft:oxeye_daisy",
-    "feedAmount": 8,
-    "isBreedable": true
-  },
-  "TraitData": {}
+    "flower": "ALL",
+    "maxTimeInHive": 1600,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#fffaf0",
+        "primaryColor": "#fffaf0",
+        "secondaryColor": "#696969"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:sand",
+        "mutationOutput": "minecraft:clay_block",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:clay_block",
+        "mainOutputWeight": 0.3,
+        "mainOutputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:beach,ocean",
+        "spawnWeight": 4
+    },
+    "BreedData": {
+        "feedItem": "minecraft:oxeye_daisy",
+        "feedAmount": 8,
+        "isBreedable": true
+    },
+    "TraitData": {}
 }

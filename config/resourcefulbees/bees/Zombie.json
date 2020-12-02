@@ -1,37 +1,37 @@
 {
-  "flower": "ALL",
-  "maxTimeInHive": 1600,
-  "hasHoneycomb": true,
-  "baseLayerTexture": "zombie/zombie_bee",
-  "traits": ["zombie"],
-  "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#2F4E32"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "minecraft:stone",
-    "mutationOutput": "minecraft:cobblestone",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:rotten_flesh",
-	"mainOutputWeight": 0.50
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:OVERWORLD",
-    "biomeBlacklist": "tag:ocean",
-    "lightLevel": "NIGHT",
-    "spawnWeight": 8
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "feedItem": "minecraft:cornflower",
-    "feedAmount": 16
-  },
-  "TraitData": {
-    "hasTraits": true
-  }
+    "flower": "ALL",
+    "maxTimeInHive": 1600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "zombie/zombie_bee",
+    "traits": ["zombie"],
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#2F4E32"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:stone",
+        "mutationOutput": "minecraft:cobblestone",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:rotten_flesh",
+        "mainOutputWeight": 0.5
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeBlacklist": "tag:ocean",
+        "lightLevel": "NIGHT",
+        "spawnWeight": 8
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:cornflower",
+        "feedAmount": 16
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }

@@ -1,34 +1,33 @@
 {
-  "flower": "ALL",
-  "maxTimeInHive": 3200,
-  "hasHoneycomb": false,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#18eb09",
-    "primaryColor": "#2e1414",
-    "secondaryColor": "#0e810e"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationType": "ENTITY_TO_ENTITY",
-    "mutationInput": "entity:resourcefulbees:iron_bee",
-    "mutationOutput": "entity:resourcefulbees:manasteel_bee",
-    "mutationCount": 1
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": false,
-    "mainOutput": "minecraft:emerald",
-	  "mainoutputweight": 0.10,
-	  "mainOutputCount": 1
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "TAG:Spooky",
-    "spawnWeight": 1
-  },
-  "BreedData": {
-    "isBreedable": false
-   
-  },
-  "TraitData": {}
+    "flower": "ALL",
+    "maxTimeInHive": 3200,
+    "hasHoneycomb": false,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#18eb09",
+        "primaryColor": "#2e1414",
+        "secondaryColor": "#0e810e"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationType": "ENTITY_TO_ENTITY",
+        "mutationInput": "entity:resourcefulbees:iron_bee",
+        "mutationOutput": "entity:resourcefulbees:manasteel_bee",
+        "mutationCount": 1
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false,
+        "mainOutput": "minecraft:emerald",
+        "mainoutputweight": 0.1,
+        "mainOutputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "TAG:Spooky",
+        "spawnWeight": 1
+    },
+    "BreedData": {
+        "isBreedable": false
+    },
+    "TraitData": {}
 }
