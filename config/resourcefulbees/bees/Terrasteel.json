@@ -1,23 +1,23 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 3200,
+  "maxTimeInHive": 8000,
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
-    "honeycombColor": "#18eb09",
-    "primaryColor": "#18eb09",
-    "secondaryColor": "#303030"
+    "honeycombColor": "#49e600",
+    "primaryColor": "#49e600",
+    "secondaryColor": "#329e00"
   },
   "MutationData": {
-    "hasMutation": true,
+    "hasMutation": false,
     "mutationInput": "minecraft:stone",
     "mutationOutput": "minecraft:lava",
     "mutationType": "BLOCK_TO_FLUID"
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:emerald",
-	"mainoutputweight": 0.10,
+    "mainOutput": "botania:terrasteel_nugget",
+	"mainoutputweight": 0.05,
 	"mainOutputCount": 1
   },
   "SpawnData": {
@@ -25,11 +25,11 @@
     "biomeWhitelist": "TAG:Mountain,Hills"
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "diamond",
-    "parent2": "blaze",
-    "feedItem": "minecraft:emerald_block",
-    "feedAmount": 2 
+    "isBreedable": false,
+    "parent1": "elementium",
+    "parent2": "alf",
+    "breedWeight": 5
+   
   },
   "TraitData": {}
 }

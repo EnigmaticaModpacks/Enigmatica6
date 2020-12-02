@@ -2,7 +2,7 @@
   "flower": "minecraft:chorus_flower",
   "hasHoneycomb": true,
   "traits": ["ender"],
-  "maxTimeInHive": 1800,
+  "maxTimeInHive": 3600,
   "ColorData": {
     "isBeeColored": true,
     "honeycombColor": "#339786",
@@ -18,16 +18,20 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:ender_pearl",
+	"mainOutputWeight": 0.25,
+	"mainOutputCount": 1,
     "bottleOutput" : "minecraft:dragon_breath"
   },
   "SpawnData": {
     "canSpawnInWorld": true,
     "biomeWhitelist": "TAG:end",
     "lightLevel": "NIGHT",
-    "spawnWeight": 20
+    "spawnWeight": 10
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "minecraft:ender_pearl",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": true

@@ -1,23 +1,25 @@
 {
-  "flower": "minecraft:brown_mushroom",
-  "maxTimeInHive": 1600,
+  "flower": "minecraft:crimson_fungus",
+  "maxTimeInHive": 2400,
   "hasHoneycomb": true,
   "baseLayerTexture": "pigman/pigman_bee",
-  "traits": ["nether", "pigman"],
+  "traits": ["nether"],
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#885956"
+    "isBeeColored": true,
+	"primaryColor":"#faebd7",
+	"secondaryColor":"#dc143c",
+    "honeycombColor": "#faebd7"
   },
   "MutationData": {
-    "hasMutation": true,
+    "hasMutation": false,
     "mutationInput": "minecraft:netherrack",
     "mutationOutput": "minecraft:glowstone",
     "mutationType": "BLOCK_TO_BLOCK"
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:glowstone_dust",
-	"mainOuputWeight": 0.30
+    "mainOutput": "minecraft:ghast_tear",
+	"mainOutputWeight": 0.15
   },
   "SpawnData": {
     "canSpawnInWorld": false,
@@ -25,12 +27,9 @@
     "lightLevel": "NIGHT"
   },
   "BreedData": {
-    "isBreedable": true,
-    "parent1": "zombie",
-    "parent2": "gold",
-    "feedItem": "minecraft:glowstone_dust",
-    "feedAmount": 16,
-    "breedWeight": 70
+    "isBreedable": false,
+    "parent1": "",
+    "parent2": ""
   },
   "TraitData": {
     "hasTraits": true
