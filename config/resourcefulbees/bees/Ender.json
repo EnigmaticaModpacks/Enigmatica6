@@ -26,10 +26,12 @@
     "canSpawnInWorld": true,
     "biomeWhitelist": "TAG:end",
     "lightLevel": "NIGHT",
-    "spawnWeight": 20
+    "spawnWeight": 10
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "minecraft:ender_pearl",
+    "feedAmount": 4
   },
   "TraitData": {
     "hasTraits": true

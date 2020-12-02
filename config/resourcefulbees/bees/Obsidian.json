@@ -19,13 +19,13 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:obsidian",
-    "mainOutputWeight": 0.10
+    "mainOutputWeight": 0.05
   },
   "BreedData": {
     "isBreedable": true,
-    "parent1": "Coal",
-    "parent2": "Diamond",
-    "feedItem": "minecraft:diamond",
+    "parent1": "icy",
+    "parent2": "blaze",
+    "feedItem": "minecraft:obsidian",
     "feedAmount": 8
   },
   "TraitData": {

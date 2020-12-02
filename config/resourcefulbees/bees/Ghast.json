@@ -22,12 +22,14 @@
 	"mainOutputWeight": 0.15
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:nether",
     "lightLevel": "NIGHT"
   },
   "BreedData": {
-    "isBreedable": false
+    "isBreedable": false,
+    "parent1": "",
+    "parent2": ""
   },
   "TraitData": {
     "hasTraits": true

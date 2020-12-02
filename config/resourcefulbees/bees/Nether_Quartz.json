@@ -24,10 +24,13 @@
   "SpawnData": {
     "canSpawnInWorld": true,
     "biomeWhitelist": "tag:nether",
-    "lightLevel": "NIGHT"
+    "lightLevel": "NIGHT",
+    "spawnWeight": 8
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "minecraft:nether_quartz",
+    "feedAmount": 16
   },
   "TraitData": {
     "hasTraits": true

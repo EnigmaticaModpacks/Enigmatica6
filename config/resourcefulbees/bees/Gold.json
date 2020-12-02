@@ -20,12 +20,16 @@
 	"mainoutputweight": 0.20
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:OVERWORLD",
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "parent1": "coal",
+    "parent2": "blaze",
+    "feedItem": "minecraft:gold_block",
+    "feedAmount": 4
   },
   "TraitData": {}
 }

@@ -11,10 +11,10 @@
     "honeycombColor": "#FF4500"
   },
   "MutationData": {
-    "hasMutation": false,
-    "mutationInput": "minecraft:blackstone",
-    "mutationOutput": "minecraft:gilded_blackstone",
-    "mutationType": "BLOCK_TO_BLOCK"
+    "hasMutation": true,
+    "mutationInput": "entity:resourcefulbees:creeper_bee",
+    "mutationOutput": "entity:resourcefulbees:ghast_bee",
+    "mutationType": "ENTITY_TO_ENTITY"
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
@@ -24,12 +24,13 @@
   "SpawnData": {
     "canSpawnInWorld": true,
     "biomeWhitelist": "tag:nether",
-    "lightLevel": "NIGHT"
+    "lightLevel": "NIGHT",
+    "spawnWeight": "4"
   },
   "BreedData": {
     "isBreedable": false,
-    "parent1": "Wither",
-    "parent2": "Diamond"
+    "feedItem": "minecraft:blaze_rod",
+    "feedAmount": 8
   },
   "TraitData": {
     "hasTraits": true

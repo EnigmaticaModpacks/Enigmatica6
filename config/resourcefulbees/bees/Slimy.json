@@ -23,8 +23,11 @@
   },
   "BreedData": {
     "isBreedable": true,
-    "parent1": "rgbee",
-    "parent2": "zombie"
+    "parent1": "zombie",
+    "parent2": "clay",
+    "feedItem": "minecraft:slimeball",
+    "feedAmount": 4,
+    "breedWeight": 30
   },
   "TraitData": {
     "hasTraits": true

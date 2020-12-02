@@ -20,12 +20,17 @@
 	"mainOutputWeight": 0.15
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:OVERWORLD",
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "parent1": "iron",
+    "parent2": "gold",
+    "feedItem": "emendatusenigmatica:nickel_block",
+    "feedAmount": 2,
+    "breedWeight": 20
   },
   "TraitData": {}
 }

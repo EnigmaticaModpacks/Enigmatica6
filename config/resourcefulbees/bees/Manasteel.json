@@ -20,12 +20,12 @@
 	"mainoutputweight": 0.25
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:OVERWORLD",
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true,
+    "isBreedable": false,
 	"parent1": "manasteel",
 	"parent2": "alf",
 	"breedWeight": 95

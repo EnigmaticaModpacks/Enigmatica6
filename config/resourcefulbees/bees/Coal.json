@@ -24,10 +24,11 @@
   "SpawnData": {
     "canSpawnInWorld": true,
     "biomeWhitelist": "tag:overworld",
-    "biomeBlacklist": "tag:ocean"
+    "biomeBlacklist": "tag:ocean",
+    "spawnWeight": 8
   },
   "BreedData": {
-    "feedItem": "minecraft:poppy",
+    "feedItem": "minecraft:coal_block",
     "feedAmount": 8,
     "isBreedable": true
   },

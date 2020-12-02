@@ -20,12 +20,17 @@
 	"mainOuputWeight": 0.30
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:nether",
     "lightLevel": "NIGHT"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "parent1": "zombie",
+    "parent2": "gold",
+    "feedItem": "minecraft:glowstone_dust",
+    "feedAmount": 16,
+    "breedWeight": 70
   },
   "TraitData": {
     "hasTraits": true

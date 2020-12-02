@@ -16,16 +16,16 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "wstweaks:fragment",
-    "mainOutputWeight": 0.05
+    "mainOutput": "wstweaks:fragments",
+    "mainOutputWeight": 0.005
   },
   "SpawnData": {},
   "BreedData": {
     "isBreedable": true,
-    "parent1": "Coal",
-    "parent2": "Skeleton",
-    "feedItem": "minecraft:rotten_flesh",
-    "feedAmount": 48
+    "parent1": "diamond",
+    "parent2": "obsidian",
+    "feedItem": "minecraft:nether_star",
+    "feedAmount": 2
   },
   "TraitData": {
     "hasTraits": true

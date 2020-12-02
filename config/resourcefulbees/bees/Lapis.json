@@ -21,12 +21,16 @@
     "mainOutputCount": 4
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:OVERWORLD",
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "parent1": "quartz",
+    "parent2": "icy",
+    "feedItem": "minecraft:lapis_lazuli",
+    "feedAmount": 16
   },
   "TraitData": {}
 }

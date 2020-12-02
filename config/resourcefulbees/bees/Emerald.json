@@ -21,12 +21,15 @@
 	"mainOutputCount": 1
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "TAG:Mountain,Hills"
   },
   "BreedData": {
     "isBreedable": true,
-    "spawnWeight": 4
+    "parent1": "diamond",
+    "parent2": "blaze",
+    "feedItem": "minecraft:emerald_block",
+    "feedAmount": 2 
   },
   "TraitData": {}
 }
