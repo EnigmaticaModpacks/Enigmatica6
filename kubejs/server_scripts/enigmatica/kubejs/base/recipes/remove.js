@@ -77,9 +77,4 @@ events.listen('recipes', function (event) {
     disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
     });
-
-    // Removes gear recycling recipes from Immersive Engineering
-    materialsToUnify.forEach((material) => {
-        event.remove({ id: 'immersiveengineering:recycling/' + material + '_gear' });
-    });
 });
