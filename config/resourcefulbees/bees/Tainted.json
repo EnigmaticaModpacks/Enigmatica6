@@ -1,23 +1,23 @@
 {
   "flower": "ALL",
   "hasHoneycomb": true,
-  "maxTimeInHive": 2400,
+  "maxTimeInHive": 5600,
   "ColorData": {
     "isBeeColored": true,
-    "honeycombColor": "#ffcc99",
-    "primaryColor": "#ffcc99",
-    "secondaryColor": "#303030"
+    "honeycombColor": "#c36e18",
+    "primaryColor": "#c36e18",
+    "secondaryColor": "#9a6013"
   },
   "MutationData": {
-    "hasMutation": true,
+    "hasMutation": false,
     "mutationInput": "minecraft:stone",
-    "mutationOutput": "minecraft:iron_ore",
+    "mutationOutput": "minecraft:gold_ore",
     "mutationType": "BLOCK_TO_BLOCK"
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:iron_ingot",
-	"mainoutputweight": 0.35
+    "mainOutput": "naturesaura:tainted_gold",
+	  "mainOutputWeight": 0.05
   },
   "SpawnData": {
     "canSpawnInWorld": false,
@@ -25,11 +25,9 @@
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true,
-	"parent1": "skeleton",
-  "parent2": "coal",
-  "feedItem": "minecraft:iron_block",
-  "feedAmount": 4
+    "isBreedable": false,
+    "parent1":"infused",
+    "parent2":"gold"
   },
   "TraitData": {}
 }

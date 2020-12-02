@@ -20,10 +20,16 @@
     "hasCentrifugeOutput": false
   },
   "SpawnData": {
-    "canSpawnInWorld": false
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "TAG:cold",
+    "spawnWeight": 4,
+    "maxGroupSize": 1,
+    "minGroupSize": 1
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "feedItem": "minecraft:snowball",
+    "feedAmount": 16
   },
   "TraitData": {
     "hasTraits": true

@@ -1,6 +1,6 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 800,
+  "maxTimeInHive": 2400,
   "hasHoneycomb": true,
   "ColorData": {
     "isBeeColored": true,
@@ -17,15 +17,20 @@
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:redstone",
-    "mainOutputCount": 4
+	"mainOutputWeight": 0.20,
+    "mainOutputCount": 2
   },
   "SpawnData": {
-    "canSpawnInWorld": true,
+    "canSpawnInWorld": false,
     "biomeWhitelist": "tag:OVERWORLD",
     "biomeBlacklist": "tag:ocean"
   },
   "BreedData": {
-    "isBreedable": true
+    "isBreedable": true,
+    "parent1": "quartz",
+    "parent2": "blaze",
+    "feedItem": "minecraft:redstone_dust",
+    "feedAmount": 16
   },
   "TraitData": {}
 }

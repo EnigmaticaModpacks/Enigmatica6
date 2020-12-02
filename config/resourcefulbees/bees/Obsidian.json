@@ -1,12 +1,14 @@
 {
-  "flower": "minecraft:wither_rose",
-  "maxTimeInHive": 4800,
+  "flower": "minecraft:cornflower",
+  "maxTimeInHive": 2400,
   "hasHoneycomb": true,
   "baseLayerTexture": "wither/wither_bee",
-  "traits": ["nether", "wither"],
+  "traits": [],
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#444444"
+    "isBeeColored": true,
+	"primaryColor": "#663399",
+	"secondaryColor": "#dda0dd",
+    "honeycombColor": "#663399"
   },
   "MutationData": {
     "hasMutation": true,
@@ -16,16 +18,15 @@
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "wstweaks:fragments",
-    "mainOutputWeight": 0.005
+    "mainOutput": "minecraft:obsidian",
+    "mainOutputWeight": 0.05
   },
-  "SpawnData": {},
   "BreedData": {
     "isBreedable": true,
-    "parent1": "diamond",
-    "parent2": "obsidian",
-    "feedItem": "minecraft:nether_star",
-    "feedAmount": 2
+    "parent1": "icy",
+    "parent2": "blaze",
+    "feedItem": "minecraft:obsidian",
+    "feedAmount": 8
   },
   "TraitData": {
     "hasTraits": true

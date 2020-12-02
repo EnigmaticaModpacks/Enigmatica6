@@ -4,20 +4,20 @@
   "maxTimeInHive": 2400,
   "ColorData": {
     "isBeeColored": true,
-    "honeycombColor": "#ffcc99",
-    "primaryColor": "#ffcc99",
-    "secondaryColor": "#303030"
+    "honeycombColor": "#483d8b",
+    "primaryColor": "#483d8b",
+    "secondaryColor": "#e6e6fa"
   },
   "MutationData": {
     "hasMutation": true,
     "mutationInput": "minecraft:stone",
-    "mutationOutput": "minecraft:iron_ore",
+    "mutationOutput": "emendatusenigmatica:lead_ore",
     "mutationType": "BLOCK_TO_BLOCK"
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:iron_ingot",
-	"mainoutputweight": 0.35
+    "mainOutput": "emendatusenigmatica:lead_ingot",
+	"mainOutputWeight": 0.05
   },
   "SpawnData": {
     "canSpawnInWorld": false,
@@ -26,10 +26,11 @@
   },
   "BreedData": {
     "isBreedable": true,
-	"parent1": "skeleton",
-  "parent2": "coal",
-  "feedItem": "minecraft:iron_block",
-  "feedAmount": 4
+    "parent1": "iron",
+    "parent2": "gold",
+    "feedItem": "emendatusenigmatica:lead_block",
+    "feedAmount": 2,
+    "breedWeight": 20
   },
   "TraitData": {}
 }

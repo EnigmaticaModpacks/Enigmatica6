@@ -35,7 +35,7 @@
 	#
 	#Tier 4 Apiary Output Quantity
 	#Range: > 1
-	tierFourApiaryQuantity = 8
+	tierFourApiaryQuantity = 2
 	#
 	#Tier 2 Apiary Output
 	#Allowed Values: COMB, BLOCK
@@ -43,15 +43,15 @@
 	#
 	#Tier 2 Apiary Output Quantity
 	#Range: > 1
-	tierTwoApiaryQuantity = 16
+	tierTwoApiaryQuantity = 6
 	#
 	#Tier 3 Apiary Output Quantity
 	#Range: > 1
-	tierThreeApiaryQuantity = 4
+	tierThreeApiaryQuantity = 1
 	#
 	#Tier 1 Apiary Output Quantity
 	#Range: > 1
-	tierOneApiaryQuantity = 8
+	tierOneApiaryQuantity = 3
 	#
 	#Tier 4 Apiary Output
 	#Allowed Values: COMB, BLOCK
@@ -59,7 +59,7 @@
 	#
 	#Maximum breed time before upgrades are applied.
 	#Range: 1200 ~ 4800
-	apiaryMaxBreedTime = 2400
+	apiaryMaxBreedTime = 3200
 	#
 	#Tier 1 Apiary Output
 	#Allowed Values: COMB, BLOCK
@@ -129,7 +129,7 @@
 	#
 	#Set this to false when you want to overwrite the default bee files. [true/false]
 	#This should be run at least once for initial generation.
-	generateDefaults = true
+	generateDefaults = false
 
 ["Honey Generator Options"]
 	#
@@ -147,7 +147,7 @@
 	#
 	#Amount of rf/t generated.
 	#Range: 50 ~ 500
-	energyFillAmount = 125
+	energyFillAmount = 250
 	#
 	#Amount of honey generated in mb/t. 1 bottle = 250mb honey
 	#Range: 1 ~ 50
@@ -170,7 +170,7 @@
 	#Chance for nest to spawn when generating chunks in overworld category biomes. [1/x]
 	#A higher value means the nest is less likely to spawn.
 	#Range: 4 ~ 100
-	overworld_nest_generation_chance = 48
+	overworld_nest_generation_chance = 64
 	#
 	#Chance for nest to spawn when generating chunks in end category biomes. [1/x]
 	#A higher value means the nest is less likely to spawn.

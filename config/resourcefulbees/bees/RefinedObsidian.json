@@ -1,31 +1,32 @@
 {
-  "flower": "minecraft:wither_rose",
-  "maxTimeInHive": 4800,
+  "flower": "naturesaura:warped_aura_mushroom",
+  "maxTimeInHive": 6000,
   "hasHoneycomb": true,
   "baseLayerTexture": "wither/wither_bee",
-  "traits": ["nether", "wither"],
   "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#444444"
+    "isBeeColored": true,
+    "honeycombColor": "#8b668b",
+	"primaryColor": "#8b668b",
+	"secondaryColor": "#6959cd"
   },
   "MutationData": {
-    "hasMutation": true,
+    "hasMutation": false,
     "mutationInput": "minecraft:lava",
     "mutationOutput": "minecraft:obsidian",
     "mutationType": "FLUID_TO_BLOCK"
   },
   "CentrifugeData": {
     "hasCentrifugeOutput": true,
-    "mainOutput": "wstweaks:fragments",
-    "mainOutputWeight": 0.005
+    "mainOutput": "mekanism:nugget_refined_obsidian",
+    "mainOutputWeight": 0.10
   },
   "SpawnData": {},
   "BreedData": {
     "isBreedable": true,
-    "parent1": "diamond",
+    "parent1": "osmium",
     "parent2": "obsidian",
-    "feedItem": "minecraft:nether_star",
-    "feedAmount": 2
+    "feedItem": "mekanism:ingot_refined_obsidian",
+    "feedAmount": 16
   },
   "TraitData": {
     "hasTraits": true
