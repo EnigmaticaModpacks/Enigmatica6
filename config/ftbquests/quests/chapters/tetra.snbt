@@ -1,7 +1,7 @@
 {
 	id: 1906,
 	filename: "tetra",
-	order_index: 22,
+	order_index: 21,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
@@ -19,8 +19,13 @@
 	default_quest_shape: "",
 	quests: [
 		{
+			title: "It's Hammer time!",
 			x: -0.5d,
 			y: -16.0d,
+			description: [
+				"So I see you wanna get started in Tetra huh?",
+				"Make a wooden Mallet and smack a Vanilla Crafting Table with it!"
+			],
 			id: 1907,
 			tasks: [{
 				id: 1908,
@@ -38,9 +43,16 @@
 						"double/basic_hammer_left_material": "basic_hammer/log"
 					}
 				}
+			}],
+			rewards: [{
+				id: 2117,
+				type: "item",
+				item: "minecraft:diorite",
+				count: 8
 			}]
 		},
 		{
+			title: "The Holosphere is your best friend!",
 			icon: {
 				id: "tetra:holo",
 				Count: true,
@@ -53,6 +65,11 @@
 			},
 			x: -0.5d,
 			y: -15.0d,
+			subtitle: "No for real",
+			description: [
+				"This little ball of scrap metal will be your guideline on materials from the beginning and even until later on when you find a Forge.",
+				"So keep it somewhere safe."
+			],
 			id: 1909,
 			tasks: [{
 				id: 1935,
@@ -60,103 +77,256 @@
 			}]
 		},
 		{
+			title: "Twice the Hammers twice the fun!",
 			x: 0.5d,
 			y: -16.0d,
+			subtitle: "Let's make a second one but change it up a bit",
+			description: [
+				"So you probably realize that having a single hammer doesn't suit your needs.",
+				"That's why you need a second one but instead of adding Hammer Heads to both sides try giving it a single Claw Head.",
+				"This will still give you smth to hammer around with, but also a tool to pry open the crates which you can find later."
+			],
 			id: 1911,
 			tasks: [{
-				id: 1936,
+				id: 2121,
+				type: "item",
+				item: {
+					id: "tetra:modular_double",
+					Count: true,
+					tag: {
+						"double/claw_right_material": "claw/diorite",
+						"double/handle": "double/basic_handle",
+						honing_progress: 280,
+						"double/head_left": "double/basic_hammer_left",
+						HideFlags: 1,
+						"double/head_right": "double/claw_right",
+						id: "7c903ac2-0bde-40b8-a414-7d9e3588fbcb",
+						Damage: 0,
+						"double/basic_handle_material": "basic_handle/stick",
+						"double/basic_hammer_left_material": "basic_hammer/diorite"
+					}
+				},
+				consume_items: false
+			}]
+		},
+		{
+			title: "Tiers and their use to you",
+			x: 1.5d,
+			y: -16.0d,
+			description: [
+				"So different in world tasks require different Tiers to work for example prying open a Forge Crate or Container, but also upgrading your Tools require certain Tiers to work.",
+				"Maybe even breaking the walls of a Forge, but getting there isn't really hard just keep in mind that the Holosphere gives u an indepth list of the materials and what they provide to you."
+			],
+			id: 1913,
+			tasks: [{
+				id: 2118,
 				type: "checkmark"
 			}]
 		},
 		{
-			x: 1.5d,
-			y: -16.0d,
-			id: 1913,
-			tasks: [{
-				id: 1914,
-				type: "item"
-			}]
-		},
-		{
+			title: "Double Headed Tools and Weapons",
 			x: 1.5d,
 			y: -15.0d,
+			description: [
+				"Which would include a Pickaxe or a Greataxe, it all comes down to what your prefer",
+				"",
+				"Sickles - They are used for tilling dirt or breaking a 3x3 patch of grass",
+				"",
+				"Adze - It works like the baby of a shovel and an axe, but worse",
+				"",
+				"Pickaxe - Do I really need an explanation?",
+				"",
+				"Axe - Does the wooden part of an Adze but better.",
+				"",
+				"Tip: You can basically make a multitool by combining the Adze with a Pickaxe Head, try it!"
+			],
 			id: 1915,
 			tasks: [{
-				id: 1916,
-				type: "item"
+				id: 2119,
+				type: "checkmark"
 			}]
 		},
 		{
+			title: "Blades",
 			x: 1.5d,
 			y: -14.0d,
+			description: ["Blades have quite a lot of customizations, this should give you a rough list on what each of them do:"],
 			id: 1917,
 			tasks: [{
-				id: 1918,
-				type: "item"
+				id: 2120,
+				type: "checkmark"
 			}]
 		},
 		{
+			title: "Bows",
 			x: 1.5d,
 			y: -13.0d,
+			description: [""],
 			id: 1919,
 			tasks: [{
-				id: 1920,
-				type: "item"
+				id: 2122,
+				type: "checkmark"
 			}]
 		},
 		{
+			title: "Tetra Forges and how they work",
 			x: 2.5d,
 			y: -16.0d,
+			description: [""],
 			id: 1921,
-			tasks: [{
-				id: 1922,
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: 2123,
+					type: "checkmark"
+				},
+				{
+					id: 2133,
+					type: "advancement",
+					icon: "tetra:hammer_base",
+					advancement: "",
+					criterion: ""
+				}
+			]
 		},
 		{
+			title: "Forge Upgrades",
 			x: 2.5d,
 			y: -15.0d,
+			description: [""],
 			id: 1923,
-			tasks: [{
-				id: 1924,
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: 2124,
+					type: "item",
+					item: "tetra:combustion_chamber",
+					consume_items: false
+				},
+				{
+					id: 2125,
+					type: "item",
+					item: "tetra:planar_stabilizer",
+					consume_items: false
+				}
+			]
 		},
 		{
+			title: "General junk that you find in Forges",
 			x: 2.5d,
 			y: -14.0d,
+			description: [""],
 			id: 1925,
-			tasks: [{
-				id: 1926,
-				type: "item"
+			tasks: [
+				{
+					id: 2126,
+					type: "item",
+					item: "tetra:forged_mesh"
+				},
+				{
+					id: 2127,
+					type: "item",
+					item: "tetra:metal_scrap"
+				},
+				{
+					id: 2128,
+					type: "item",
+					item: "tetra:quick_latch"
+				},
+				{
+					id: 2129,
+					type: "item",
+					item: "tetra:forged_beam"
+				},
+				{
+					id: 2130,
+					type: "item",
+					item: "tetra:forged_bolt"
+				}
+			],
+			rewards: [{
+				id: 2131,
+				type: "item",
+				item: {
+					id: "tetra:magmatic_cell",
+					Count: true,
+					tag: {
+						Damage: 128
+					}
+				}
 			}]
 		},
 		{
+			title: "Thermal Cells",
 			x: 2.5d,
 			y: -13.0d,
+			description: [""],
 			id: 1927,
 			tasks: [{
-				id: 1928,
-				type: "item"
+				id: 2132,
+				type: "item",
+				item: {
+					id: "tetra:magmatic_cell",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		},
 		{
+			title: "Artifacts and other rare Loot",
 			icon: "tetra:forged_container",
 			x: 3.5d,
 			y: -16.0d,
+			description: [""],
 			id: 1929
 		},
 		{
+			title: "Stonecutter",
 			icon: "tetra:earthpiercer",
 			x: 3.5d,
 			y: -15.0d,
+			description: [""],
 			id: 1931
 		},
 		{
+			title: "Earthpiercer",
 			icon: "tetra:stonecutter",
 			x: 3.5d,
 			y: -14.0d,
+			description: [""],
 			id: 1933
+		},
+		{
+			title: "Hammer Tiers",
+			x: 0.5d,
+			y: -15.0d,
+			subtitle: "This is just to hint you into the right direction",
+			description: [
+				"Tier 1 - Wood",
+				"Tier 2 - Diorite",
+				"Tier 3 - Iron ",
+				"Tier 4 - Blackstone",
+				"Tier 5 - Obsidian, to get this transition find a Forge",
+				"Tier 6 - Netherite"
+			],
+			id: 2115,
+			tasks: [{
+				id: 2116,
+				type: "checkmark",
+				icon: {
+					id: "tetra:modular_double",
+					Count: true,
+					tag: {
+						"double/handle": "double/basic_handle",
+						"double/head_left": "double/basic_hammer_left",
+						"double/head_right": "double/basic_hammer_right",
+						Damage: 0,
+						"double/basic_hammer_right_material": "basic_hammer/diorite",
+						"double/basic_handle_material": "basic_handle/stick",
+						"double/basic_hammer_left_material": "basic_hammer/diorite"
+					}
+				}
+			}]
 		}
 	]
 }

@@ -593,6 +593,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2102,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -620,6 +625,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2101,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -645,6 +655,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2100,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -671,6 +686,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2099,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -692,7 +712,12 @@
 					type: "item",
 					item: "mekanism:nutritional_liquifier"
 				}
-			]
+			],
+			rewards: [{
+				id: 2109,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			x: 0.0d,
@@ -703,6 +728,11 @@
 				id: 1088,
 				type: "item",
 				item: "mekanism:module_vision_enhancement_unit"
+			}],
+			rewards: [{
+				id: 2107,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -714,6 +744,11 @@
 				id: 1090,
 				type: "item",
 				item: "mekanism:module_electrolytic_breathing_unit"
+			}],
+			rewards: [{
+				id: 2106,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -725,6 +760,11 @@
 				id: 1092,
 				type: "item",
 				item: "mekanism:module_hydraulic_propulsion_unit"
+			}],
+			rewards: [{
+				id: 2105,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -736,6 +776,11 @@
 				id: 1094,
 				type: "item",
 				item: "mekanism:module_magnetic_attraction_unit"
+			}],
+			rewards: [{
+				id: 2110,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -747,6 +792,11 @@
 				id: 1096,
 				type: "item",
 				item: "mekanism:module_charge_distribution_unit"
+			}],
+			rewards: [{
+				id: 2103,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -765,6 +815,11 @@
 				id: 1098,
 				type: "item",
 				item: "mekanism:module_energy_unit"
+			}],
+			rewards: [{
+				id: 2111,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -776,6 +831,11 @@
 				id: 1100,
 				type: "item",
 				item: "mekanism:module_jetpack_unit"
+			}],
+			rewards: [{
+				id: 2108,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -787,6 +847,11 @@
 				id: 1102,
 				type: "item",
 				item: "mekanism:module_locomotive_boosting_unit"
+			}],
+			rewards: [{
+				id: 2104,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -806,6 +871,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2097,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -825,18 +895,28 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2098,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
 			x: -3.5d,
 			y: -7.5d,
-			description: ["Used for applying all upgrades to the MekaTool and MekaArmor pieces."],
+			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."],
 			dependencies: [I;1961],
 			id: 1107,
 			tasks: [{
 				id: 1108,
 				type: "item",
 				item: "mekanism:modification_station"
+			}],
+			rewards: [{
+				id: 2096,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -1547,6 +1627,7 @@
 		{
 			x: -6.0d,
 			y: -5.5d,
+			subtitle: "Guaranteed to Satisfy",
 			description: [
 				"A powered drill that makes short work of any digging task. Use a Tinker's Workbench to install various upgrades:",
 				"",
@@ -1570,6 +1651,7 @@
 		{
 			x: -5.0d,
 			y: -5.5d,
+			subtitle: "You Try to Hold Me But I Bust Through",
 			description: [
 				"A powered saw that makes short work of any arboreal task. Use a Tinker's Workbench to install various upgrades:",
 				"",
@@ -1601,6 +1683,7 @@
 			},
 			x: -6.0d,
 			y: -4.5d,
+			subtitle: "So Dangerous, You'll Have to Sign a Waiver",
 			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."],
 			dependencies: [I;1190],
 			id: 1172,
@@ -1667,6 +1750,7 @@
 			},
 			x: -5.0d,
 			y: -4.5d,
+			subtitle: "You'll Think You're Looking at Aquaman",
 			description: ["A technological marvel that allows the wearer to remain productive for longer under water."],
 			dependencies: [I;930],
 			id: 1174,

@@ -1,21 +1,9 @@
 {
 	id: 165,
 	filename: "mekanism",
-	order_index: 16,
-	title: "Mekanism WIP",
-	icon: {
-		id: "mekanism:robit",
-		Count: true,
-		tag: {
-			mekData: {
-				EnergyContainers: [{
-					Container: false,
-					stored: "100000"
-				}]
-			}
-		}
-	},
-	always_invisible: true,
+	order_index: 11,
+	title: "Mekanism",
+	icon: "mekanism:alloy_atomic",
 	default_quest_shape: "",
 	quests: [
 		{
@@ -42,10 +30,10 @@
 			}]
 		},
 		{
-			title: "Basic Processing",
+			title: "Material Processing",
 			icon: "mekanism:alloy_infused",
 			x: 1.5d,
-			y: -2.0d,
+			y: -1.5d,
 			description: [
 				"As noted, Mekanism maintains a strong focus on efficiencies throughout the mod. As machines are upgraded and more systems put in place, they become more efficient, more productive, and cheaper to run. ",
 				"",
@@ -57,25 +45,32 @@
 				id: 1702,
 				type: "checkmark"
 			}],
-			rewards: [{
-				id: 1741,
-				type: "item",
-				item: {
-					id: "mekanism:configurator",
-					Count: true,
-					tag: {
-						mekData: {
-							EnergyContainers: [{
-								Container: false,
-								stored: "60000"
-							}]
+			rewards: [
+				{
+					id: 1741,
+					type: "item",
+					item: {
+						id: "mekanism:configurator",
+						Count: true,
+						tag: {
+							mekData: {
+								EnergyContainers: [{
+									Container: false,
+									stored: "60000"
+								}]
+							}
 						}
 					}
+				},
+				{
+					id: 2060,
+					type: "item",
+					item: "mekanism:personal_chest"
 				}
-			}]
+			]
 		},
 		{
-			title: "Advanced Power",
+			title: "Advanced Power Generation",
 			icon: "engineersdecor:sign_hotwire",
 			x: 9.5d,
 			y: -2.0d,
@@ -93,49 +88,18 @@
 			id: 1703,
 			tasks: [{
 				id: 1704,
-				type: "checkmark"
-			}]
-		},
-		{
-			title: "Loot ideas",
-			x: -1.5d,
-			y: 5.5d,
-			description: [
-				"Rare",
-				"infused alloy",
-				"steel casing",
-				"basic universal cables",
-				"energy upgrades",
-				"energy tablets",
-				"",
-				"",
-				"Epic",
-				"reinforced alloy",
-				"installers (basic and advanced maybe?)",
-				"speed upgrades",
-				"ultimate chemical tank",
-				"",
-				"",
-				"Legendary",
-				"atomic alloy",
-				"entangloporter",
-				"",
-				"",
-				"upgrades and installers likely to be common direct loot rewards. ",
-				"",
-				"be sure to give configurator, network reader and gauge droppper as early rewards.",
-				"",
-				"hazmat suit for free when doing fission stuff."
-			],
-			id: 1705,
-			tasks: [{
-				id: 1706,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Advanced Power Generation"
+			}],
+			rewards: [{
+				id: 2071,
+				type: "item",
+				item: "mekanism:geiger_counter"
 			}]
 		},
 		{
 			x: -2.5d,
-			y: -1.0d,
+			y: -0.5d,
 			subtitle: "Argent Crucible",
 			description: [
 				"The Heat Generator is a multi-function device that will be useful early on as a source of power.",
@@ -152,11 +116,17 @@
 				id: 1712,
 				type: "item",
 				item: "mekanismgenerators:heat_generator"
+			}],
+			rewards: [{
+				id: 2061,
+				type: "item",
+				item: "minecraft:coal_block",
+				count: 32
 			}]
 		},
 		{
 			x: -2.5d,
-			y: 0.0d,
+			y: 1.0d,
 			subtitle: "100% Cancer-Free",
 			description: [
 				"Lava has a tendency to set things on fire, which some would deem indesireable. As a step up from the Heat Generator, there's the Wind Generator. ",
@@ -169,11 +139,17 @@
 				id: 1714,
 				type: "item",
 				item: "mekanismgenerators:wind_generator"
+			}],
+			rewards: [{
+				id: 2062,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
 			x: -2.5d,
-			y: 1.0d,
+			y: 2.5d,
+			subtitle: "Frightening Efficiency",
 			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."],
 			dependencies: [I;
 				1713,
@@ -197,6 +173,7 @@
 			icon: "mekanism:basic_induction_cell",
 			x: 8.5d,
 			y: 0.5d,
+			subtitle: "There Is No Spoon",
 			description: [
 				"Energy Cubes do a respectable job at storing energy but they're far too limited when it comes to dealing with the output of a Fission Reactor. The Induction Matrix offers higher energy density and greater throughput. Building a buffer of energy for the steps to come may also be a prudent idea.",
 				"",
@@ -274,7 +251,7 @@
 		},
 		{
 			x: 1.5d,
-			y: -1.0d,
+			y: 0.0d,
 			description: [
 				"Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser. With this, Steel and all of the other various alloys used throughout the mod can be created. ",
 				"",
@@ -286,11 +263,16 @@
 				id: 1726,
 				type: "item",
 				item: "mekanism:metallurgic_infuser"
+			}],
+			rewards: [{
+				id: 2070,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
 			x: 1.5d,
-			y: 0.0d,
+			y: 1.5d,
 			description: [
 				"Alloys will be needed commonly for further progression and without a little extra effort, they can become quite costly to make. Enter the Enrichment Chamber. ",
 				"",
@@ -306,11 +288,17 @@
 				id: 1728,
 				type: "item",
 				item: "mekanism:enrichment_chamber"
+			}],
+			rewards: [{
+				id: 2066,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
 			x: 0.0d,
-			y: 0.0d,
+			y: 1.5d,
+			subtitle: "Follow Me, Don't Follow Me",
 			description: ["The crusher is an integral machine to advanaced ore processing methods, but it can also be used to mash up organics to make Bio Fuel, which can be further refined into Ethylene. "],
 			dependencies: [I;1727],
 			id: 1729,
@@ -318,11 +306,24 @@
 				id: 1730,
 				type: "item",
 				item: "mekanism:crusher"
-			}]
+			}],
+			rewards: [
+				{
+					id: 2064,
+					type: "loot",
+					table: 20
+				},
+				{
+					id: 2092,
+					type: "item",
+					item: "simplefarming:orange",
+					count: 16
+				}
+			]
 		},
 		{
 			x: -1.0d,
-			y: 1.0d,
+			y: 2.5d,
 			subtitle: "Pushing Down On Me, Pressing Down On You",
 			description: ["Certain chemical reactions only occur at greater pressures. The PRC can be used to facilitate these reactions. Of particular interest at this time is to combine the Hydrgen and Bio Fuel made in the prior steps in order to produce Ethylene for an upgraded and renewable fuel source."],
 			dependencies: [I;
@@ -334,11 +335,16 @@
 				id: 1732,
 				type: "item",
 				item: "mekanism:pressurized_reaction_chamber"
+			}],
+			rewards: [{
+				id: 2063,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
 			x: 2.5d,
-			y: 1.0d,
+			y: 2.5d,
 			description: ["Obsidian and Glowstone by themselves are brittle materials, despite their interesting properties. By refining them and bonding them with a substrate such as Osmium, they create alloys that are easier to work with while maintaining their unique nature. "],
 			dependencies: [I;1727],
 			id: 1733,
@@ -346,6 +352,11 @@
 				id: 1734,
 				type: "item",
 				item: "mekanism:osmium_compressor"
+			}],
+			rewards: [{
+				id: 2067,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -353,6 +364,7 @@
 			icon: "mekanism:thermal_evaporation_controller",
 			x: 8.5d,
 			y: -1.5d,
+			subtitle: "Reduce By Half, Simmer Gently",
 			description: [
 				"Before getting too deep into nuclear physics, a little ground-work will be needed. The Thermal Evaporation Plant will feature heavily in the coming processes so understanding it is going to be vital.",
 				"",
@@ -399,7 +411,8 @@
 		},
 		{
 			x: 0.5d,
-			y: 1.0d,
+			y: 2.5d,
+			subtitle: "Keep 'Em Separated",
 			description: [
 				"Electrolysis is most commonly used to separate Water into its component parts of Hydrogen and Oxygen, though it does find itself in use in many other industrial processes. Here the Hydrgogen will be useful for combining with Bio Fuel to make Ethylene. ",
 				"",
@@ -411,13 +424,33 @@
 				id: 1743,
 				type: "item",
 				item: "mekanism:electrolytic_separator"
+			}],
+			rewards: [{
+				id: 2089,
+				type: "item",
+				item: {
+					id: "mekanism:jetpack",
+					Count: true,
+					tag: {
+						HideFlags: 2,
+						mekData: {
+							GasTanks: [{
+								Tank: false,
+								stored: {
+									gasName: "mekanism:hydrogen",
+									amount: 24000L
+								}
+							}]
+						}
+					}
+				}
 			}]
 		},
 		{
 			title: "Ore Tripling",
 			icon: "mekanism:electrolytic_core",
 			x: 1.5d,
-			y: 2.0d,
+			y: 3.5d,
 			description: [
 				"With enough effort, Mekanism allows for the extraction of up to five ingots per ore, but this is a very involved process and will require serious effort to set up. ",
 				"",
@@ -454,19 +487,31 @@
 					item: "mekanism:energized_smelter"
 				}
 			],
-			rewards: [{
-				id: 1749,
-				type: "item",
-				item: "mekanism:basic_tier_installer",
-				count: 3
-			}]
+			rewards: [
+				{
+					id: 1749,
+					type: "item",
+					item: "mekanism:basic_tier_installer",
+					count: 3
+				},
+				{
+					id: 2068,
+					type: "loot",
+					table: 21
+				}
+			]
 		},
 		{
 			title: "Lithium",
 			icon: "emendatusenigmatica:lithium_dust",
 			x: 8.0d,
 			y: -0.5d,
-			description: ["Before moving on, that Brine will need to be run through a second Evaporation Tower to form Liquid Lithium. This may then be processed in a Chemical Crystallizer to produce a solid form of the element."],
+			subtitle: "I've Found My Friends, They're In My Head",
+			description: [
+				"Before moving on, that Brine will need to be run through a second Evaporation Tower to form Liquid Lithium. ",
+				"",
+				"This may then be processed in a Chemical Crystallizer to produce a solid form of the element."
+			],
 			dependencies: [I;1735],
 			id: 1801,
 			tasks: [
@@ -492,9 +537,8 @@
 			title: "Input: Sulfur",
 			icon: "emendatusenigmatica:sulfur_dust",
 			x: 5.5d,
-			y: -1.0d,
+			y: 0.0d,
 			shape: "rsquare",
-			description: [""],
 			dependencies: [I;1892],
 			id: 1835,
 			tasks: [{
@@ -506,29 +550,29 @@
 		{
 			title: "Input: Uranium",
 			icon: "emendatusenigmatica:uranium_ingot",
-			x: 3.5d,
-			y: 7.0d,
+			x: 1.0d,
+			y: 7.5d,
 			shape: "rsquare",
-			description: [""],
 			dependencies: [I;1893],
 			id: 1837,
 			tasks: [{
 				id: 1846,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Uranium"
 			}]
 		},
 		{
 			title: "Sulfur Dioxide",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 4.5d,
-			y: 1.0d,
+			y: 2.5d,
 			shape: "diamond",
-			description: [""],
 			dependencies: [I;1843],
 			id: 1839,
 			tasks: [{
 				id: 1851,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Sulfur Dioxide"
 			}]
 		},
 		{
@@ -548,35 +592,36 @@
 					}
 				}
 			},
-			x: 6.5d,
-			y: 3.0d,
+			x: 7.0d,
+			y: 4.5d,
 			shape: "rsquare",
-			description: [""],
 			dependencies: [I;1893],
 			id: 1841,
 			tasks: [{
 				id: 1845,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Water"
 			}]
 		},
 		{
 			title: "Chemical Oxidizer",
 			icon: "mekanism:chemical_oxidizer",
 			x: 5.5d,
-			y: 0.0d,
+			y: 1.5d,
 			shape: "hexagon",
 			dependencies: [I;1835],
 			id: 1843,
 			tasks: [{
 				id: 1850,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Chemical Oxidizer"
 			}]
 		},
 		{
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
 			x: 4.5d,
-			y: 2.0d,
+			y: 3.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1839,
@@ -585,66 +630,70 @@
 			id: 1848,
 			tasks: [{
 				id: 1852,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Chemical Infuser"
 			}]
 		},
 		{
 			title: "Electrolytic Separator",
 			icon: "mekanism:electrolytic_separator",
 			x: 6.5d,
-			y: 2.0d,
+			y: 3.5d,
 			shape: "hexagon",
 			dependencies: [I;1841],
 			id: 1853,
 			tasks: [{
 				id: 1854,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Electrolytic Separator"
 			}]
 		},
 		{
 			title: "Output: Hydrogen",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 6.5d,
-			y: 1.0d,
-			description: [""],
+			y: 2.5d,
 			dependencies: [I;1853],
 			id: 1855,
 			tasks: [{
 				id: 1856,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Hydrogen"
 			}]
 		},
 		{
 			title: "Oxygen",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 5.5d,
-			y: 2.0d,
+			y: 3.5d,
 			shape: "diamond",
 			dependencies: [I;1853],
 			id: 1857,
 			tasks: [{
 				id: 1858,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Oxygen"
 			}]
 		},
 		{
 			title: "Sulfur Trioxide",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 4.5d,
-			y: 3.0d,
+			y: 4.5d,
 			shape: "diamond",
 			dependencies: [I;1848],
 			id: 1859,
 			tasks: [{
 				id: 1860,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Sulfur Trioxide"
 			}]
 		},
 		{
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
 			x: 4.5d,
-			y: 4.0d,
+			y: 5.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1859,
@@ -653,51 +702,55 @@
 			id: 1861,
 			tasks: [{
 				id: 1862,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Chemical Infuser"
 			}]
 		},
 		{
 			title: "Rotary Condensentrator",
 			icon: "mekanism:rotary_condensentrator",
 			x: 6.5d,
-			y: 4.0d,
+			y: 5.5d,
 			shape: "hexagon",
 			dependencies: [I;1841],
 			id: 1863,
 			tasks: [{
 				id: 1864,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Rotary Condensentrator"
 			}]
 		},
 		{
 			title: "Water Vapor",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 5.5d,
-			y: 4.0d,
+			y: 5.5d,
 			shape: "diamond",
 			dependencies: [I;1863],
 			id: 1865,
 			tasks: [{
 				id: 1866,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Water Vapor"
 			}]
 		},
 		{
 			title: "Sulfuric Acid",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 5.5d,
-			y: 5.0d,
+			x: 3.5d,
+			y: 6.5d,
 			shape: "diamond",
 			dependencies: [I;1861],
 			id: 1867,
 			tasks: [{
 				id: 1868,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Sulfuric Acid"
 			}]
 		},
 		{
-			x: 5.5d,
-			y: 6.0d,
+			x: 3.5d,
+			y: 7.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1867,
@@ -714,34 +767,36 @@
 		{
 			title: "Input: Fluorite",
 			icon: "emendatusenigmatica:fluorite_gem",
-			x: 4.5d,
-			y: 6.0d,
+			x: 2.0d,
+			y: 6.5d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1871,
 			tasks: [{
 				id: 1872,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Fluorite"
 			}]
 		},
 		{
 			title: "Hydrofluoric Acid",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 6.5d,
-			y: 6.0d,
+			x: 4.5d,
+			y: 7.5d,
 			shape: "diamond",
 			dependencies: [I;1869],
 			id: 1873,
 			tasks: [{
 				id: 1875,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Hydrofluoric Acid"
 			}]
 		},
 		{
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
-			x: 6.5d,
-			y: 7.0d,
+			x: 5.5d,
+			y: 7.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1873,
@@ -750,20 +805,22 @@
 			id: 1876,
 			tasks: [{
 				id: 1877,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Chemical Infuser"
 			}]
 		},
 		{
 			title: "Yellow Cake Uranium",
 			icon: "mekanism:yellow_cake_uranium",
-			x: 4.5d,
-			y: 8.0d,
+			x: 3.5d,
+			y: 8.5d,
 			shape: "diamond",
 			dependencies: [I;1886],
 			id: 1878,
 			tasks: [{
 				id: 1879,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Yellow Cake Uranium"
 			}]
 		},
 		{
@@ -783,14 +840,15 @@
 					}
 				}
 			},
-			x: 6.5d,
-			y: 8.0d,
+			x: 5.5d,
+			y: 8.5d,
 			shape: "diamond",
 			dependencies: [I;1884],
 			id: 1880,
 			tasks: [{
 				id: 1881,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Uranium Oxide"
 			}]
 		},
 		{
@@ -810,84 +868,123 @@
 					}
 				}
 			},
-			x: 7.5d,
-			y: 7.0d,
+			x: 6.5d,
+			y: 7.5d,
 			shape: "diamond",
 			dependencies: [I;1876],
 			id: 1882,
 			tasks: [{
 				id: 1883,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Uranium Hexafluoride"
 			}]
 		},
 		{
 			title: "Chemical Oxidizer",
 			icon: "mekanism:chemical_oxidizer",
-			x: 5.5d,
-			y: 8.0d,
+			x: 4.5d,
+			y: 8.5d,
 			shape: "hexagon",
 			dependencies: [I;1878],
 			id: 1884,
 			tasks: [{
 				id: 1885,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Chemical Oxidizer"
 			}]
 		},
 		{
 			title: "Enrichment Chamber",
 			icon: "mekanism:enrichment_chamber",
-			x: 3.5d,
-			y: 8.0d,
+			x: 2.5d,
+			y: 8.5d,
 			shape: "hexagon",
 			dependencies: [I;1837],
 			id: 1886,
 			tasks: [{
 				id: 1887,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Enrichment Chamber"
 			}]
 		},
 		{
 			title: "Isotopic Centrifuge",
 			icon: "mekanism:isotopic_centrifuge",
-			x: 8.5d,
-			y: 7.0d,
+			x: 7.5d,
+			y: 7.5d,
 			shape: "hexagon",
 			dependencies: [I;1882],
 			id: 1888,
 			tasks: [{
 				id: 1889,
-				type: "checkmark"
+				type: "checkmark",
+				title: "Isotopic Centrifuge"
 			}]
 		},
 		{
 			title: "Output: Fissile Fuel",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 8.5d,
-			y: 8.0d,
-			description: [""],
+			y: 8.5d,
+			description: ["Oh! You're still here?"],
 			dependencies: [I;1888],
 			id: 1890,
 			tasks: [{
 				id: 1891,
-				type: "checkmark"
-			}]
+				type: "checkmark",
+				title: "Fissile Fuel"
+			}],
+			rewards: [
+				{
+					id: 2091,
+					type: "item",
+					item: "farmersdelight:sweet_berry_cookie",
+					count: 3
+				},
+				{
+					id: 2093,
+					type: "item",
+					item: "farmersdelight:honey_cookie",
+					count: 3
+				},
+				{
+					id: 2094,
+					type: "item",
+					item: "simplefarming:peanut_butter_cookie",
+					count: 3
+				},
+				{
+					id: 2095,
+					type: "item",
+					item: "minecraft:cookie",
+					count: 3
+				}
+			]
 		},
 		{
 			x: 5.5d,
-			y: -2.0d,
+			y: -1.5d,
 			subtitle: "On The House",
 			description: [
 				"Mekanism's Fission Reactors are new to v10 and as such even veteran players may find themselves a little lost. So have a free flow-chart, on us.",
 				"",
 				"The production chain will involve mass quantities of Sulfur, Uranium, Fluorite, and Water, so be sure that these materials are automated in some way before starting."
 			],
-			dependencies: [I;1703],
+			dependencies: [I;
+				1704,
+				1697
+			],
 			id: 1892,
 			tasks: [{
 				id: 1893,
 				type: "checkmark",
 				title: "Fissile Fuel Production",
 				icon: "mekanism:isotopic_centrifuge"
+			}],
+			rewards: [{
+				id: 2090,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -895,6 +992,7 @@
 			icon: "mekanismgenerators:control_rod_assembly",
 			x: 10.5d,
 			y: 0.5d,
+			subtitle: "Controlled Reactivity",
 			description: [
 				"The Fuel Rod Assembly is what actually holds the fissile material during the reaction. Having more allows the reactor to burn fuel faster. ",
 				"",
@@ -917,13 +1015,19 @@
 					item: "mekanismgenerators:control_rod_assembly",
 					count: 5L
 				}
-			]
+			],
+			rewards: [{
+				id: 2074,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			title: "Fission Reactor Casing",
 			icon: "mekanismgenerators:fission_reactor_casing",
 			x: 10.5d,
 			y: -1.5d,
+			subtitle: "Limiting Exposure",
 			description: [
 				"The first step in actually constructing a fission reactor is building a safe place to put it. Something that keeps all that radiation at bay.",
 				"",
@@ -952,12 +1056,18 @@
 					item: "mekanismgenerators:reactor_glass",
 					count: 87L
 				}
-			]
+			],
+			rewards: [{
+				id: 2072,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			title: "Safety Precautions",
 			x: 11.0d,
 			y: -0.5d,
+			subtitle: "Getting Out In Front",
 			description: [
 				"History has shown us time and time again that a Safety-First approach is the only sane way to work with something as dangerouns as nuclear physics. Three Mile Island may have been a disaster, but the fact that nobody died is a testament to the importance of safety protocols. ",
 				"",
@@ -1000,9 +1110,9 @@
 			]
 		},
 		{
-			x: 10.5d,
-			y: 1.5d,
-			subtitle: "Deep Storage",
+			x: 9.5d,
+			y: 2.0d,
+			subtitle: "HLW Disposal",
 			description: [
 				"Burning Fissile Fuel naturally creates waste. Proper handling and storage of this waste is critical. Waste may only be transported via Mekanism's Pressurized Tubes and can only be stored in Radioactive Waste Barrels, or machines that accept waste for reprocessing. ",
 				"",
@@ -1015,7 +1125,8 @@
 			tasks: [{
 				id: 1958,
 				type: "item",
-				item: "mekanism:radioactive_waste_barrel"
+				item: "mekanism:radioactive_waste_barrel",
+				count: 8L
 			}],
 			rewards: [
 				{
@@ -1073,8 +1184,8 @@
 		{
 			title: "Plutonium Processing",
 			icon: "mekanism:pellet_plutonium",
-			x: 10.0d,
-			y: 2.5d,
+			x: 9.0d,
+			y: 3.5d,
 			subtitle: "The Fat Man",
 			description: ["Waste may be reprocessed into Plutonium, either for use in building advanced structures, or as a way to recycle fuel to run back through the Fission Reactor. "],
 			dependencies: [I;1957],
@@ -1089,16 +1200,31 @@
 					id: 1968,
 					type: "item",
 					item: "mekanism:pressurized_reaction_chamber"
+				},
+				{
+					id: 2076,
+					type: "item",
+					item: "mekanism:pellet_plutonium",
+					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 2080,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			title: "Polonium Processing",
 			icon: "mekanism:pellet_polonium",
-			x: 11.0d,
-			y: 2.5d,
+			x: 10.0d,
+			y: 3.5d,
 			subtitle: "Litvenenko's Demise",
-			description: ["Polonium is a particularly nasty substance that is nonetheless useful in a variety of applications. Thankfully, it can be processed down to be somewhat safe to handle."],
+			description: [
+				"Polonium is a particularly nasty substance that is nonetheless useful in a variety of applications. ",
+				"",
+				"Thankfully, it can be processed down to be somewhat safe to handle."
+			],
 			dependencies: [I;1957],
 			id: 1961,
 			tasks: [
@@ -1111,13 +1237,24 @@
 					id: 1967,
 					type: "item",
 					item: "mekanism:pressurized_reaction_chamber"
+				},
+				{
+					id: 2077,
+					type: "item",
+					item: "mekanism:pellet_polonium",
+					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 2078,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			title: "HDPE",
 			x: 0.0d,
-			y: 2.0d,
+			y: 3.5d,
 			description: ["Besides burning it for power, Ethylene may also be re-processed to create HDPE, a high quality plastic useful for making several advanced machines."],
 			dependencies: [I;1731],
 			id: 1963,
@@ -1126,13 +1263,18 @@
 				type: "item",
 				item: "mekanism:hdpe_pellet",
 				count: 64L
+			}],
+			rewards: [{
+				id: 2069,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
 			title: "Supercritical Phase Shifter",
 			icon: "mekanism:sps_casing",
-			x: 10.5d,
-			y: 3.5d,
+			x: 9.5d,
+			y: 5.0d,
 			subtitle: "I've Giv'n Her All We've Got, Captain",
 			description: [
 				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste.",
@@ -1171,31 +1313,82 @@
 					count: 2L
 				}
 			],
-			rewards: [{
-				id: 2009,
-				type: "item",
-				item: "emendatusenigmatica:uranium_ore",
-				count: 64
-			}]
+			rewards: [
+				{
+					id: 2009,
+					type: "item",
+					item: "emendatusenigmatica:uranium_ore",
+					count: 64
+				},
+				{
+					id: 2114,
+					type: "loot",
+					table: 21
+				}
+			]
 		},
 		{
 			title: "Fusion Reactor",
-			x: 12.5d,
-			y: 1.5d,
+			icon: "mekanismgenerators:fusion_reactor_controller",
+			x: 11.0d,
+			y: 2.0d,
 			subtitle: "Star in a Box",
-			description: [""],
+			description: [
+				"Fusion, the power of the stars, without which no heavier elements would exist.",
+				"",
+				"The included Building Gadget Template will assist in building the required structure, however building the fuel supply chain is up to you.",
+				"",
+				"There are a few important things to keep in mind with a Fusion Reactor. First and foremost, this is a safe energy supply that, unlike a Fission Reactor, will never melt down or cause any adverse effects.",
+				"",
+				"● When fueling the Reactor, pipe in Deuterium and Tritium separately. ",
+				"",
+				"● The Reactor will generate FE directly, but a great deal more can be generated by converting water to steam and running it through an Industrial Turbine.",
+				"",
+				"●  Piping in D-T Fuel in addition to the direct Deuterium and Tritium feeds will drastically increase the heat of the reactor, causing it to generate steam far more quickly. "
+			],
 			dependencies: [I;1961],
+			min_width: 300,
 			id: 1974,
-			tasks: [{
-				id: 1975,
-				type: "item",
-				item: "mekanismgenerators:fusion_reactor_controller"
+			tasks: [
+				{
+					id: 1975,
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_controller"
+				},
+				{
+					id: 2016,
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_frame",
+					count: 36L
+				},
+				{
+					id: 2017,
+					type: "item",
+					item: "mekanismgenerators:fusion_reactor_port",
+					count: 4L
+				},
+				{
+					id: 2018,
+					type: "item",
+					item: "mekanismgenerators:laser_focus_matrix"
+				},
+				{
+					id: 2019,
+					type: "item",
+					item: "mekanismgenerators:reactor_glass",
+					count: 24L
+				}
+			],
+			rewards: [{
+				id: 2081,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
 			title: "Industrial Turbine",
 			icon: "mekanismgenerators:turbine_blade",
-			x: 9.5d,
+			x: 12.0d,
 			y: 0.0d,
 			subtitle: "Bursting at the Seams",
 			description: [
@@ -1209,7 +1402,7 @@
 				"",
 				"Power can than be extracted from another Turbine Port. ",
 				"",
-				"WARNING: If the Turbine's power buffer fills up it will stop running,s team and water flow will halt, and the attached Reactor will no longer be receiving coolant, resulting in a potential meltdown situation. "
+				"WARNING: If the Turbine's power buffer fills up it will stop running, steam and water flow will halt, and the attached Reactor's heat will rapidly rise to dangerous levels resulting in a potential meltdown situation. "
 			],
 			dependencies: [I;1939],
 			min_width: 300,
@@ -1274,37 +1467,56 @@
 					item: "mekanismgenerators:turbine_vent",
 					count: 33L
 				}
-			]
+			],
+			rewards: [{
+				id: 2073,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			x: 10.5d,
-			y: 4.5d,
+			y: 6.5d,
 			subtitle: "Inverse Wave Function",
-			description: ["Once believed impossible to generate, Antimatter opens up possibilities that some might consider magical. "],
+			description: ["Once believed impossible to generate in any meaningful quantity, Antimatter opens up possibilities that some might consider magical. "],
 			dependencies: [I;1969],
 			id: 1987,
 			tasks: [{
 				id: 1988,
 				type: "item",
 				item: "mekanism:pellet_antimatter"
+			}],
+			rewards: [{
+				id: 2079,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
-			x: 10.5d,
-			y: 5.5d,
-			subtitle: "Any Sufficiently Advanced Technology is Indistinguishable from Magic",
-			description: ["Alchemists of yore were correct in believing that elemental substances could be transmuted, what they failed to understand was the vast amount of energy that would be required to do so. "],
+			x: 12.0d,
+			y: 7.0d,
+			subtitle: "Indistinguishable from Magic",
+			description: [
+				"Alchemists of yore were correct in believing that elemental substances could be transmuted. ",
+				"",
+				"What they failed to understand was the vast amount of energy that would be required to do so. "
+			],
 			dependencies: [I;1987],
 			id: 1989,
 			tasks: [{
 				id: 1990,
 				type: "item",
 				item: "mekanism:antiprotonic_nucleosynthesizer"
+			}],
+			rewards: [{
+				id: 2088,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
-			x: 12.5d,
-			y: 4.0d,
+			x: 11.0d,
+			y: 5.0d,
 			subtitle: "Bigger on the Inside",
 			description: ["The heart and soul of any QIO Network. Insert drives and set a channel to begin. "],
 			dependencies: [I;1961],
@@ -1313,23 +1525,36 @@
 				id: 1992,
 				type: "item",
 				item: "mekanism:qio_drive_array"
+			}],
+			rewards: [{
+				id: 2087,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
-			x: 13.0d,
-			y: 3.0d,
+			x: 12.0d,
+			y: 4.0d,
+			subtitle: "Remote Viewing",
+			description: ["Dashboards may be placed anywhere and allow for manual insertion into and extraction from the network."],
 			dependencies: [I;1991],
 			id: 1993,
 			tasks: [{
 				id: 1994,
 				type: "item",
 				item: "mekanism:qio_dashboard"
+			}],
+			rewards: [{
+				id: 2083,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
 			title: "QIO Importing and Exporting",
-			x: 13.0d,
-			y: 5.0d,
+			x: 12.0d,
+			y: 6.0d,
+			subtitle: "Garbage In, Garbage Out",
 			description: ["Storing items in a QIO Drive Array is rather daft if there's no way of actually getting things in or out automatically. The QIO Importers and Exporters facilitate this, allowing the ssystem to work as a wireless item transfer and storage system."],
 			dependencies: [I;1991],
 			id: 1995,
@@ -1344,11 +1569,16 @@
 					type: "item",
 					item: "mekanism:qio_exporter"
 				}
-			]
+			],
+			rewards: [{
+				id: 2086,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
-			x: 14.0d,
-			y: 3.5d,
+			x: 13.0d,
+			y: 4.5d,
 			subtitle: "Better than Bins",
 			description: ["QIO Drives provide the same deep storage as Bins but with centralized access and a smaller footprint. "],
 			dependencies: [I;1991],
@@ -1357,11 +1587,16 @@
 				id: 1999,
 				type: "item",
 				item: "mekanism:qio_drive_base"
+			}],
+			rewards: [{
+				id: 2084,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
-			x: 14.0d,
-			y: 4.5d,
+			x: 13.0d,
+			y: 5.5d,
 			subtitle: "Make it Stop!",
 			description: ["The Redstone Adapter simply outputs a signal when a certain threshold of an item has been reached within the QIO drive space, allowing a simple way of disabling machinery that no longer needs to run."],
 			dependencies: [I;1991],
@@ -1370,6 +1605,116 @@
 				id: 2001,
 				type: "item",
 				item: "mekanism:qio_redstone_adapter"
+			}],
+			rewards: [{
+				id: 2085,
+				type: "loot",
+				table: 21
+			}]
+		},
+		{
+			title: "Laser Amplification",
+			icon: "mekanism:laser_amplifier",
+			x: 12.0d,
+			y: 3.0d,
+			subtitle: "This One Goes to Eleven",
+			description: [
+				"In order to actually kickstart a Fusion Reactor, a highly focused and energetic burst of energy is required. ",
+				"",
+				"Laser Amplifiers will collect up to five laser beams and combine them into a single powerful beam. Amplifiers may also be chained together, with one amplifier feeding into another.",
+				"",
+				"The final amplifier in the chain should be pointed at the Laser Focus Matrix in the Fusion Reactor and should be set to be Redstone Pulse mode. Once it has accumulated enough energy, providing a redstone pulse will release it all in an instant.",
+				"",
+				"A filled Hohlraum must be present in the Fusion Reactor as well."
+			],
+			dependencies: [I;1974],
+			id: 2012,
+			tasks: [
+				{
+					id: 2013,
+					type: "item",
+					item: "mekanism:laser_amplifier",
+					count: 2L
+				},
+				{
+					id: 2014,
+					type: "item",
+					item: "mekanism:laser",
+					count: 9L
+				}
+			],
+			rewards: [
+				{
+					id: 2015,
+					type: "item",
+					item: "mekanismgenerators:hohlraum"
+				},
+				{
+					id: 2082,
+					type: "loot",
+					table: 22
+				}
+			]
+		},
+		{
+			title: "Don't Panic",
+			icon: "minecraft:cod",
+			x: 9.5d,
+			y: -0.5d,
+			subtitle: "There's a Frood Who Really Knows Where His Towel Is",
+			description: [
+				"Accidents happen. ",
+				"",
+				"Grab a fish and complete this quest in the case that you've irreversibly irradiated your entire base. ",
+				"",
+				"Redeemable once only. "
+			],
+			dependencies: [I;1939],
+			id: 2020,
+			tasks: [
+				{
+					id: 2025,
+					type: "checkmark",
+					title: "Don't Panic"
+				},
+				{
+					id: 2026,
+					type: "item",
+					item: "minecraft:cod",
+					consume_items: true
+				}
+			],
+			rewards: [{
+				id: 2022,
+				type: "command",
+				title: "Clear Radiation",
+				icon: "engineersdecor:sign_radioactive",
+				command: "/mek radiation removeAll",
+				player_command: false
+			}]
+		},
+		{
+			title: "NOTES",
+			icon: "botania:cosmetic_questgiver_mark",
+			x: 7.0d,
+			y: -5.0d,
+			shape: "octagon",
+			description: [
+				"Building Gadgets Templates need to be imported still. They'll be given as rewards for the following",
+				"",
+				"Fission Reactor",
+				"Fusion Reactor",
+				"Industrial Turbine",
+				"SPS",
+				"Thermal Evap Tower",
+				"",
+				"Pending update of Building Gadgets. "
+			],
+			size: 2.0d,
+			id: 2112,
+			tasks: [{
+				id: 2113,
+				type: "checkmark"
 			}]
 		}
 	]
