@@ -70,3 +70,11 @@
 		#Generate wild carrots on temperate biomes (temperature between 0.4 and 0.9)
 		genWildCarrots = true
 
+	#Wild Rice generation
+	[world.wild_rice]
+		#Chance of generating clusters. Smaller value = more frequent.
+		#Range: > 0
+		chance = 10
+		#Generate wild rice on swamps and jungles
+		genWildRice = true
+

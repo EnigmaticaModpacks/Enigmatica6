@@ -1,32 +1,34 @@
 {
-  "flower": "small",
-  "maxTimeInHive": 600,
-  "hasHoneycomb": true,
-  "baseLayerTexture": "skeleton/skeleton_bee",
-  "ColorData": {
-    "isBeeColored": false,
-    "honeycombColor": "#F6F2E6"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "minecraft:stone",
-    "mutationOutput": "minecraft:gravel",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:bone"
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:OVERWORLD",
-    "biomeBlacklist": "tag:ocean",
-    "lightLevel": "NIGHT"
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "feedItem": "small",
-    "feedAmount": 8
-  },
-  "TraitData": {}
+    "flower": "small",
+    "maxTimeInHive": 1600,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "skeleton/skeleton_bee",
+    "ColorData": {
+        "isBeeColored": false,
+        "honeycombColor": "#F6F2E6"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:stone",
+        "mutationOutput": "minecraft:gravel",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:bone",
+        "mainOutputWeight": 0.5
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeBlacklist": "tag:ocean",
+        "lightLevel": "NIGHT",
+        "spawnWeight": 8
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:bone_meal",
+        "feedAmount": 8
+    },
+    "TraitData": {}
 }

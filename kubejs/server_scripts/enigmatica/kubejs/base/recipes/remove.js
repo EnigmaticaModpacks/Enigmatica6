@@ -74,10 +74,7 @@ events.listen('recipes', function (event) {
         event.remove({ id: removal });
     });
 
-    global.disabledItems.forEach((disabledItem) => {
+    disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
     });
-
-    // Removes log-stripping recipes from xercamod
-    event.remove({ output: '/minecraft:stripped_\\w+/', mod: 'xercamod' });
 });

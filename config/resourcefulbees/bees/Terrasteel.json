@@ -1,0 +1,34 @@
+{
+    "flower": "ALL",
+    "maxTimeInHive": 8000,
+    "hasHoneycomb": true,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#49e600",
+        "primaryColor": "#49e600",
+        "secondaryColor": "#329e00"
+    },
+    "MutationData": {
+        "hasMutation": false,
+        "mutationInput": "minecraft:stone",
+        "mutationOutput": "minecraft:lava",
+        "mutationType": "BLOCK_TO_FLUID"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "botania:terrasteel_nugget",
+        "mainoutputweight": 0.05,
+        "mainOutputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "TAG:Mountain,Hills"
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "parent1": "elementium",
+        "parent2": "alf",
+        "breedWeight": 5
+    },
+    "TraitData": {}
+}

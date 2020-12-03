@@ -1,0 +1,34 @@
+{
+    "flower": "ALL",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 3200,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#0087bd",
+        "primaryColor": "#0087bd",
+        "secondaryColor": "#00aff5"
+    },
+    "MutationData": {
+        "hasMutation": false,
+        "mutationInput": "minecraft:stone",
+        "mutationOutput": "minecraft:iron_ore",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "botania:manasteel_nugget",
+        "mainoutputweight": 0.25
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeBlacklist": "tag:ocean"
+    },
+    "BreedData": {
+        "isBreedable": false,
+        "parent1": "manasteel",
+        "parent2": "alf",
+        "breedWeight": 95
+    },
+    "TraitData": {}
+}
