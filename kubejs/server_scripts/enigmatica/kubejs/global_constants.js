@@ -27,6 +27,15 @@ const disabledItems = [
     'byg:pendorite_sword',
 
     'mapperbase:steel_fence',
+    'mapperbase:steel_axe',
+    'mapperbase:steel_pickaxe',
+    'mapperbase:steel_shovel',
+    'mapperbase:steel_hoe',
+    'mapperbase:steel_sword',
+    'mapperbase:steel_helmet',
+    'mapperbase:steel_chestplate',
+    'mapperbase:steel_leggings',
+    'mapperbase:steel_boots',
 
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',
