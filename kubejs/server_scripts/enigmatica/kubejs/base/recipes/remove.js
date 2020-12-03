@@ -77,4 +77,10 @@ events.listen('recipes', function (event) {
     disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
     });
+
+    event.remove({
+        output: '/buildersaddition:\\w+_vertical_slab/',
+        mod: 'buildersaddition',
+        type: 'minecraft:crafting_shaped'
+    });
 });
