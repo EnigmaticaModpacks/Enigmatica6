@@ -99,6 +99,10 @@ events.listen('recipes', function (event) {
         shapedRecipe(item.of('minecraft:ladder', 4), ['A A', 'ABA', 'A A'], {
             A: '#forge:rods/wooden',
             B: '#minecraft:planks'
+        }),
+        shapedRecipe(item.of('engineersdecor:slag_brick_block', 8), ['AAA', 'ABA', 'AAA'], {
+            A: '#engineersdecor:brick_ingots',
+            B: '#forge:slag'
         })
     ];
 
