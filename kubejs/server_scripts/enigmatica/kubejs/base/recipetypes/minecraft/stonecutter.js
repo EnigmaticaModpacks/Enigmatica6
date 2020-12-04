@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var stoneCutterRemovals = [
         'minecraft:iron_ingot',
         'minecraft:string',
@@ -38,6 +38,16 @@ events.listen('recipes', function (event) {
                     });
                 });
             }
+        });
+    });
+
+    beamRecipes.forEach((recipe) => {
+        event.recipes.minecraft.stonecutting({
+            ingredient: {
+                tag: recipe.input
+            },
+            result: recipe.output,
+            count: 1
         });
     });
 });
