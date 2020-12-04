@@ -222,6 +222,7 @@
 
 [tools]
 	Pickarang = true
+	"Seed Pouch" = true
 	"Pathfinder Maps" = true
 	"Bottled Cloud" = true
 	"Color Runes" = true
@@ -267,6 +268,10 @@
 		#minecraft:ice_mountains,2,8,14,7FE4FF,Ice Mountains Pathfinder Map
 		Customs = []
 		"Xp From Trade" = 5
+
+	[tools.seed_pouch]
+		"Show All Variants In Creative" = true
+		"Max Items" = 640
 
 	[tools.color_runes]
 		"Jungle Temple Weight" = 8
