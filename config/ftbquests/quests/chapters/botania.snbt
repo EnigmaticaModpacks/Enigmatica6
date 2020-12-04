@@ -1,7 +1,7 @@
 {
 	id: 1280,
 	filename: "botania",
-	order_index: 19,
+	order_index: 17,
 	title: "Botania",
 	icon: "botania:mana_pylon",
 	default_quest_shape: "",
@@ -416,7 +416,9 @@
 			description: [
 				"It stands to reason that the earth has more secrets yet to be revealed. Perhaps a trap can be formed by way of these alien materials? ",
 				"",
-				"Level a large  area, a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth."
+				"Level a large area; a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth.",
+				"",
+				"The Lexica Botania will show the exact structure required to build the arena."
 			],
 			dependencies: [I;1281],
 			id: 1320,
@@ -1114,7 +1116,7 @@
 			rewards: [{
 				id: 1482,
 				type: "loot",
-				table: 8
+				table: 9
 			}]
 		},
 		{

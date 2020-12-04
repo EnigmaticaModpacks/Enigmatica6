@@ -56,9 +56,12 @@
 					item: "prettypipes:wrench"
 				},
 				{
-					id: 1687,
-					type: "loot",
-					table: 19
+					id: 1788,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
 			]
 		},
@@ -75,9 +78,12 @@
 				item: "refinedstorage:controller"
 			}],
 			rewards: [{
-				id: 1688,
-				type: "loot",
-				table: 19
+				id: 1787,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -94,9 +100,9 @@
 				item: "ironchest:iron_chest"
 			}],
 			rewards: [{
-				id: 1681,
+				id: 1786,
 				type: "loot",
-				table: 18
+				table: 11
 			}]
 		},
 		{
@@ -116,7 +122,7 @@
 			rewards: [{
 				id: 1679,
 				type: "loot",
-				table: 18
+				table: 11
 			}]
 		},
 		{
@@ -142,7 +148,7 @@
 			rewards: [{
 				id: 1692,
 				type: "loot",
-				table: 18
+				table: 11
 			}]
 		},
 		{
@@ -158,9 +164,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1684,
-				type: "loot",
-				table: 17
+				id: 1789,
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -180,9 +186,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1682,
-				type: "loot",
-				table: 17
+				id: 1790,
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -201,7 +207,7 @@
 			rewards: [{
 				id: 1677,
 				type: "loot",
-				table: 18
+				table: 11
 			}]
 		}
 	]

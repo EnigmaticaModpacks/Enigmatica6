@@ -1,0 +1,34 @@
+{
+	id: 2029,
+	title: "Legendary Mekanism Loot Box",
+	icon: "aquaculture:neptunes_bounty",
+	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "mekanism:reprocessed_fissile_fragment",
+			count: 24
+		},
+		{
+			item: "mekanism:quantum_entangloporter",
+			weight: 2
+		},
+		{
+			item: "mekanism:upgrade_speed",
+			count: 8,
+			weight: 2
+		},
+		{
+			item: "mekanism:upgrade_energy",
+			count: 8,
+			weight: 2
+		},
+		{
+			item: "mekanism:ultimate_induction_cell"
+		},
+		{
+			item: "mekanism:pellet_polonium"
+		}
+	]
+}

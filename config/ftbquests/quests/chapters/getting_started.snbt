@@ -110,6 +110,42 @@
 				type: "xp",
 				xp: 100
 			}]
+		},
+		{
+			title: "Modded for Dummies",
+			x: 0.0d,
+			y: -7.5d,
+			subtitle: "Hey, listen!",
+			description: [
+				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what.",
+				"",
+				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
+			],
+			dependencies: [I;69],
+			id: 1769,
+			tasks: [{
+				id: 1770,
+				type: "checkmark",
+				title: "Hey, listen!",
+				icon: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}],
+			rewards: [{
+				id: 1771,
+				type: "item",
+				item: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}]
 		}
 	]
 }

@@ -54,46 +54,14 @@
 		},
 		{
 			x: -10.0d,
-			y: -10.5d,
-			id: 1750,
+			y: -6.5d,
+			id: 2134,
 			tasks: [{
-				id: 1751,
-				type: "checkmark"
-			}],
-			rewards: [
-				{
-					id: 1758,
-					type: "command",
-					title: "Diamonds!",
-					icon: "minecraft:diamond",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot artifacts:chests/campsite_chest/diamonds",
-					player_command: false
-				},
-				{
-					id: 1759,
-					type: "command",
-					title: "Gold!",
-					icon: "minecraft:gold_ingot",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot artifacts:chests/campsite_chest/gold",
-					player_command: false
-				},
-				{
-					id: 1760,
-					type: "command",
-					title: "Fish!",
-					icon: "minecraft:tropical_fish",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot artifacts:chests/campsite_chest/fish",
-					player_command: false
-				},
-				{
-					id: 1761,
-					type: "command",
-					title: "End Loot!",
-					icon: "minecraft:ender_eye",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot minecraft:chests/end_city_treasure",
-					player_command: false
-				}
-			]
+				id: 2135,
+				type: "advancement",
+				advancement: "tetra:spelunking/ancient_ruins",
+				criterion: ""
+			}]
 		}
 	]
 }

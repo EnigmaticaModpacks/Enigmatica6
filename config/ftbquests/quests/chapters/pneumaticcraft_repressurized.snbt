@@ -1,7 +1,7 @@
 {
 	id: 174,
 	filename: "pneumaticcraft_repressurized",
-	order_index: 13,
+	order_index: 14,
 	title: "PneumaticCraft: Repressurized",
 	icon: "pneumaticcraft:pressure_gauge_module",
 	default_quest_shape: "",
@@ -86,7 +86,7 @@
 			rewards: [{
 				id: 198,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -151,7 +151,7 @@
 			rewards: [{
 				id: 197,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -173,7 +173,7 @@
 			rewards: [{
 				id: 201,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -191,7 +191,20 @@
 			rewards: [{
 				id: 557,
 				type: "item",
-				item: "pneumaticcraft:kerosene_bucket"
+				item: {
+					id: "pneumaticcraft:medium_tank",
+					Count: true,
+					tag: {
+						BlockEntityTag: {
+							SavedTanks: {
+								Tank: {
+									FluidName: "pneumaticcraft:kerosene",
+									Amount: 64000
+								}
+							}
+						}
+					}
+				}
 			}]
 		},
 		{
@@ -282,7 +295,7 @@
 			rewards: [{
 				id: 216,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -348,7 +361,7 @@
 			rewards: [{
 				id: 230,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -411,7 +424,7 @@
 			rewards: [{
 				id: 556,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -483,7 +496,7 @@
 			rewards: [{
 				id: 243,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -502,7 +515,7 @@
 			rewards: [{
 				id: 247,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -521,7 +534,7 @@
 			rewards: [{
 				id: 250,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -575,7 +588,7 @@
 			rewards: [{
 				id: 255,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -594,7 +607,7 @@
 			rewards: [{
 				id: 258,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -613,7 +626,7 @@
 			rewards: [{
 				id: 554,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -635,7 +648,7 @@
 			rewards: [{
 				id: 889,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -696,6 +709,12 @@
 					type: "item",
 					item: "pneumaticcraft:logistics_frame_storage",
 					count: 8
+				},
+				{
+					id: 1791,
+					type: "item",
+					item: "pneumaticcraft:logistics_frame_active_provider",
+					count: 8
 				}
 			]
 		},
@@ -714,7 +733,7 @@
 			rewards: [{
 				id: 275,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -733,7 +752,7 @@
 				{
 					id: 279,
 					type: "loot",
-					table: 12
+					table: 15
 				},
 				{
 					id: 280,
@@ -821,7 +840,7 @@
 			rewards: [{
 				id: 290,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -843,7 +862,7 @@
 			rewards: [{
 				id: 293,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -861,7 +880,7 @@
 			rewards: [{
 				id: 296,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -880,11 +899,24 @@
 				type: "item",
 				item: "pneumaticcraft:harvesting_drone"
 			}],
-			rewards: [{
-				id: 299,
-				type: "item",
-				item: "pneumaticcraft:collector_drone"
-			}]
+			rewards: [
+				{
+					id: 299,
+					type: "item",
+					item: "pneumaticcraft:collector_drone"
+				},
+				{
+					id: 1793,
+					type: "item",
+					item: {
+						id: "mekanismtools:refined_obsidian_hoe",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
 		},
 		{
 			x: -4.0d,
@@ -904,11 +936,19 @@
 				type: "item",
 				item: "pneumaticcraft:charging_station"
 			}],
-			rewards: [{
-				id: 302,
-				type: "item",
-				item: "pneumaticcraft:dispenser_upgrade"
-			}]
+			rewards: [
+				{
+					id: 302,
+					type: "item",
+					item: "pneumaticcraft:dispenser_upgrade"
+				},
+				{
+					id: 1792,
+					type: "item",
+					item: "pneumaticcraft:volume_upgrade",
+					count: 4
+				}
+			]
 		},
 		{
 			x: -3.0d,
@@ -925,7 +965,7 @@
 			rewards: [{
 				id: 305,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -943,7 +983,7 @@
 			rewards: [{
 				id: 308,
 				type: "loot",
-				table: 11
+				table: 14
 			}]
 		},
 		{
@@ -1058,7 +1098,7 @@
 			rewards: [{
 				id: 324,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -1121,7 +1161,7 @@
 			rewards: [{
 				id: 333,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -1143,7 +1183,7 @@
 			rewards: [{
 				id: 336,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -1173,7 +1213,7 @@
 			rewards: [{
 				id: 340,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -1229,7 +1269,7 @@
 			rewards: [{
 				id: 349,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -1247,7 +1287,7 @@
 			rewards: [{
 				id: 356,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -1292,7 +1332,7 @@
 			rewards: [{
 				id: 359,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -1315,7 +1355,7 @@
 			rewards: [{
 				id: 362,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -1357,7 +1397,7 @@
 			rewards: [{
 				id: 1597,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -1414,7 +1454,7 @@
 			rewards: [{
 				id: 1075,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -1454,7 +1494,7 @@
 			rewards: [{
 				id: 1076,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -1476,7 +1516,7 @@
 			rewards: [{
 				id: 1074,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		}
 	]
