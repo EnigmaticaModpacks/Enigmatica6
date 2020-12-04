@@ -46,26 +46,6 @@ const disabledItems = [
 
     'thermal:sugar_cane_block'
 ];
-const colors = [
-    'cyan',
-    'purple',
-    'blue',
-    'brown',
-    'green',
-    'red',
-    'black',
-    'white',
-    'orange',
-    'magenta',
-    'light_blue',
-    'yellow',
-    'lime',
-    'pink',
-    'gray',
-    'light_gray'
-];
-
-const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
 const materialsToUnify = [
     'iron',
     'gold',
@@ -113,54 +93,6 @@ const materialsToUnify = [
     'certus_quartz',
     'charged_certus_quartz'
 ];
-
-const modPriorities = [
-    'emendatusenigmatica',
-    'minecraft',
-    'immersiveengineering',
-    'thermal',
-    'mekanism',
-    'jaopca',
-    'kubejs',
-    'pneumaticcraft',
-    'tmechworks',
-    'industrialforegoing',
-    'botania',
-    'quark',
-    'pedestals',
-    'refinedstorage',
-    'mapperbase'
-];
-
-const unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
-
-const vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
-function unificationBlacklistEntry(material, type) {
-    return { material: material, type: type };
-}
-
-function getPreferredItemInTag(tag) {
-    const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
-    // console.info('Preferred item: ' + tag + ' => ' + pref);
-    return pref;
-}
-function compareIndices(a, b, tag) {
-    if (a == b) return 0; // iff a == b, they'll be found at the same position in modPriorities
-
-    for (let mod of modPriorities) {
-        if (mod == a) return -1; // if a comes before b, then idx(a) < idx(b), so -1
-        if (mod == b) return 1; // if a comes after b, then idx(a) > idx(b), so 1
-    }
-
-    console.error('[' + a + ', ' + b + '] were both unaccounted for in mod unification' + (tag ? ' for ' + tag : '!'));
-    return 0;
-}
-function wrapArray(array) {
-    return utils.listOf(array).toArray();
-}
 
 global.materialsToUnify = materialsToUnify;
 global.disabledItems = disabledItems;
