@@ -2,7 +2,7 @@
 #Global Worldgen Settings
 [worldgen]
 	#Set this to false to disable all worldgen [true / false, default: true]
-	enableWorldgen = false
+	enableWorldgen = true
 
 #Basalt Generation
 [basalt]
@@ -11,7 +11,7 @@
 	basaltMaxHeight = 30
 	#Size of basalt pockets [0-100, default: 33]
 	#Range: 0 ~ 100
-	basaltSize = 33
+	basaltSize = 16
 	#Generate basalt in the world [true / false]
 	basaltGeneration = false
 	#Minimal height for basalt pocket generation [1-254, default: 1]
@@ -19,7 +19,7 @@
 	basaltMinHeight = 1
 	#Amount of of basalt pocket being generated [0-100, default: 10]
 	#Range: 0 ~ 100
-	basaltChance = 10
+	basaltChance = 1
 
 #Slate Generation
 [slate]
@@ -31,7 +31,7 @@
 	slateChance = 1
 	#Size of slate pockets [0-100, default: 33]
 	#Range: 0 ~ 100
-	slateSize = 32
+	slateSize = 16
 	#Generate slate in the world [true / false]
 	slateGeneration = false
 	#Minimal height for slate pocket generation [1-254, default: 40]
@@ -64,7 +64,7 @@
 	#Range: 1 ~ 254
 	gneissMinHeight = 35
 	#Generate gneiss in the world [true / false]
-	gneissGeneration = false
+	gneissGeneration = true
 	#Maximal height for gneiss pocket generation, must be higher than minimal height [1-255, default: 100]
 	#Range: 1 ~ 255
 	gneissMaxHeight = 65
@@ -81,7 +81,7 @@
 	#Range: 1 ~ 255
 	jadeMaxHeight = 45
 	#Generate jade in the world [true / false]
-	jadeGeneration = false
+	jadeGeneration = true
 	#Minimal height for jade pocket generation, [1-254, default: 50]
 	#Range: 1 ~ 254
 	jadeMinHeight = 1
@@ -98,10 +98,10 @@
 	#Range: 1 ~ 254
 	larvikiteMinHeight = 32
 	#Generate larvikite in the world [true / false]
-	larvikiteGeneration = false
+	larvikiteGeneration = true
 	#Size of larvikite pockets [0-100, default: 15]
 	#Range: 0 ~ 100
-	larvikiteSize = 25
+	larvikiteSize = 32
 	#Maximal height for larvikite pocket generation, must be higher than minimal height [1-255, default: 100]
 	#Range: 1 ~ 255
 	larvikiteMaxHeight = 55
