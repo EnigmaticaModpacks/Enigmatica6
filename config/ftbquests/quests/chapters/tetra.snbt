@@ -20,8 +20,8 @@
 	quests: [
 		{
 			title: "It's Hammer time!",
-			x: -0.5d,
-			y: -16.0d,
+			x: -2.5d,
+			y: -19.5d,
 			description: [
 				"So I see you wanna get started in Tetra huh?",
 				"Make a wooden Mallet and smack a Vanilla Crafting Table with it!"
@@ -63,8 +63,9 @@
 					"holo/frame_material": "core/ancient"
 				}
 			},
-			x: -0.5d,
-			y: -15.0d,
+			x: -5.5d,
+			y: -17.0d,
+			shape: "gear",
 			subtitle: "No for real",
 			description: [
 				"This little ball of scrap metal will be your guideline on materials from the beginning and even until later on when you find a Forge.",
@@ -78,14 +79,15 @@
 		},
 		{
 			title: "Twice the Hammers twice the fun!",
-			x: 0.5d,
-			y: -16.0d,
+			x: -2.5d,
+			y: -18.0d,
 			subtitle: "Let's make a second one but change it up a bit",
 			description: [
 				"So you probably realize that having a single hammer doesn't suit your needs.",
 				"That's why you need a second one but instead of adding Hammer Heads to both sides try giving it a single Claw Head.",
 				"This will still give you smth to hammer around with, but also a tool to pry open the crates which you can find later."
 			],
+			dependencies: [I;1907],
 			id: 1911,
 			tasks: [{
 				id: 2121,
@@ -111,8 +113,9 @@
 		},
 		{
 			title: "Tiers and their use to you",
-			x: 1.5d,
-			y: -16.0d,
+			x: -5.5d,
+			y: -14.0d,
+			shape: "gear",
 			description: [
 				"So different in world tasks require different Tiers to work for example prying open a Forge Crate or Container, but also upgrading your Tools require certain Tiers to work.",
 				"Maybe even breaking the walls of a Forge, but getting there isn't really hard just keep in mind that the Holosphere gives u an indepth list of the materials and what they provide to you."
@@ -125,8 +128,9 @@
 		},
 		{
 			title: "Double Headed Tools and Weapons",
-			x: 1.5d,
-			y: -15.0d,
+			x: -7.0d,
+			y: -14.0d,
+			shape: "gear",
 			description: [
 				"Which would include a Pickaxe or a Greataxe, it all comes down to what your prefer",
 				"",
@@ -148,9 +152,27 @@
 		},
 		{
 			title: "Blades",
-			x: 1.5d,
-			y: -14.0d,
-			description: ["Blades have quite a lot of customizations, this should give you a rough list on what each of them do:"],
+			x: -5.5d,
+			y: -15.5d,
+			shape: "gear",
+			description: [
+				"Blades have quite a lot of customizations, this should give you a rough list on what each of them do:",
+				"",
+				"Heavy Blade:",
+				"+ Sweep Dmg",
+				"+ Durability",
+				"",
+				"Machete:",
+				"+ Cutting Tier",
+				"- Speed",
+				"",
+				"Short Blade:",
+				"+ Cutting Tier",
+				"+ Speed",
+				"+ Offhand Dual wielding",
+				"- Sweep Damage",
+				"- Damage"
+			],
 			id: 1917,
 			tasks: [{
 				id: 2120,
@@ -159,9 +181,20 @@
 		},
 		{
 			title: "Bows",
-			x: 1.5d,
-			y: -13.0d,
-			description: [""],
+			x: -7.0d,
+			y: -15.5d,
+			shape: "gear",
+			description: [
+				"The Bow chapter will be a bit shorter, since there is less stuff to explain, most things are explained by the Holosphere, main things I wanna tap into are:",
+				"",
+				"Bowstrings: Add Integrity to the Bow.",
+				"",
+				"Extended Rest: + Multishot depending on the material used.",
+				"",
+				"Sights: Zoom.",
+				"",
+				"Stabilizer: Increases Projectile Speed."
+			],
 			id: 1919,
 			tasks: [{
 				id: 2122,
@@ -170,29 +203,35 @@
 		},
 		{
 			title: "Tetra Forges and how they work",
-			x: 2.5d,
-			y: -16.0d,
-			description: [""],
+			x: -2.5d,
+			y: -16.5d,
+			description: ["After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate the hammer and also a Workbench or Forged Workbench for it to work."],
+			dependencies: [I;1911],
 			id: 1921,
-			tasks: [
-				{
-					id: 2123,
-					type: "checkmark"
-				},
-				{
-					id: 2133,
-					type: "advancement",
-					icon: "tetra:hammer_base",
-					advancement: "",
-					criterion: ""
-				}
-			]
+			tasks: [{
+				id: 2133,
+				type: "advancement",
+				icon: "tetra:hammer_base",
+				advancement: "tetra:spelunking/ancient_ruins",
+				criterion: ""
+			}]
 		},
 		{
 			title: "Forge Upgrades",
-			x: 2.5d,
-			y: -15.0d,
-			description: [""],
+			x: -1.0d,
+			y: -16.5d,
+			shape: "diamond",
+			description: [
+				"The Forge Upgrades either add Efficiency, Hammer Tiers or add increased stats to an Item and can only be found in the Forge Structures underneath cold Biomes.",
+				"You can add up to a maximum of 2 Upgrades to a single Hammer.",
+				"",
+				"Insulates Plate: + Efficiency",
+				"",
+				"Combustion Chamber: + 1 Hammer Tier",
+				"",
+				"Planar Stabilizer: + Bonus Stats when used for forging purposes."
+			],
+			optional: true,
 			id: 1923,
 			tasks: [
 				{
@@ -206,14 +245,24 @@
 					type: "item",
 					item: "tetra:planar_stabilizer",
 					consume_items: false
+				},
+				{
+					id: 2141,
+					type: "item",
+					item: "tetra:vent_plate"
 				}
 			]
 		},
 		{
 			title: "General junk that you find in Forges",
-			x: 2.5d,
-			y: -14.0d,
-			description: [""],
+			x: 0.5d,
+			y: -16.5d,
+			shape: "diamond",
+			description: [
+				"This is basically is just another crafting material for the Tools, Weapons or Belts.",
+				"It's better than most but not the best except for a few niche cases."
+			],
+			optional: true,
 			id: 1925,
 			tasks: [
 				{
@@ -256,9 +305,15 @@
 		},
 		{
 			title: "Thermal Cells",
-			x: 2.5d,
-			y: -13.0d,
-			description: [""],
+			x: 2.0d,
+			y: -16.5d,
+			shape: "diamond",
+			description: [
+				"Thermals Cells are the Heart of a Forge with them there would be no power at all, so keep an eye on their power level.",
+				"",
+				"You can refill them in a Transfer Unit, which is configured correctly. There's minigame after you removed the plate with a claw hammer the dot should be in the middle."
+			],
+			optional: true,
 			id: 1927,
 			tasks: [{
 				id: 2132,
@@ -275,31 +330,65 @@
 		{
 			title: "Artifacts and other rare Loot",
 			icon: "tetra:forged_container",
-			x: 3.5d,
-			y: -16.0d,
-			description: [""],
-			id: 1929
+			x: -2.5d,
+			y: -15.0d,
+			description: ["If you get lucky enough you can also find Artifacts in the Chests and Crates down in the Forge Structures."],
+			dependencies: [I;1921],
+			id: 1929,
+			tasks: [{
+				id: 2136,
+				type: "advancement",
+				advancement: "tetra:spelunking/containers",
+				criterion: ""
+			}]
 		},
 		{
 			title: "Stonecutter",
-			icon: "tetra:earthpiercer",
-			x: 3.5d,
+			icon: "tetra:stonecutter",
+			x: 0.5d,
 			y: -15.0d,
-			description: [""],
-			id: 1931
+			shape: "diamond",
+			description: ["A Stonecutter is basically a fancy hammer that breaks an area in a slashing motion. The size of the area is usually 1 block deep and 8 blocks wide with varying height."],
+			optional: true,
+			id: 1931,
+			tasks: [{
+				id: 2138,
+				type: "advancement",
+				advancement: "tetra:spelunking/stonecutter",
+				criterion: ""
+			}],
+			rewards: [{
+				id: 2143,
+				type: "item",
+				item: "tetra:planar_stabilizer"
+			}]
 		},
 		{
 			title: "Earthpiercer",
-			icon: "tetra:stonecutter",
-			x: 3.5d,
-			y: -14.0d,
-			description: [""],
-			id: 1933
+			icon: "tetra:earthpiercer",
+			x: -1.0d,
+			y: -15.0d,
+			shape: "diamond",
+			description: ["The Earthpiercer is a multi purpose tool that breaks Stone and Dirt and can just be used for mining altogether."],
+			optional: true,
+			id: 1933,
+			tasks: [{
+				id: 2137,
+				type: "advancement",
+				advancement: "tetra:spelunking/earthpiercer",
+				criterion: ""
+			}],
+			rewards: [{
+				id: 2142,
+				type: "item",
+				item: "tetra:combustion_chamber"
+			}]
 		},
 		{
 			title: "Hammer Tiers",
-			x: 0.5d,
-			y: -15.0d,
+			x: -5.5d,
+			y: -18.5d,
+			shape: "gear",
 			subtitle: "This is just to hint you into the right direction",
 			description: [
 				"Tier 1 - Wood",
@@ -326,6 +415,29 @@
 						"double/basic_hammer_left_material": "basic_hammer/diorite"
 					}
 				}
+			}]
+		},
+		{
+			title: "Tetras Tool Leveling",
+			x: -5.5d,
+			y: -20.0d,
+			shape: "gear",
+			description: [
+				"Tetras Leveling System is a bit more complex than other ones.",
+				"",
+				"There are 3 main Things you need to know:",
+				"",
+				"Integrity - Acts as the Modifier Slot so when you wanna add new materials to your bow it will eat up Integrity.",
+				"",
+				"Honing - Tetra basically has it's own Enchants which are called Honings, the tool gets Honing Levels when you use it.",
+				"",
+				"Settling - Setlling happens when when you use your tools regularly and new parts well settle in, you get Integrity when this happens."
+			],
+			id: 2139,
+			tasks: [{
+				id: 2140,
+				type: "checkmark",
+				title: "Tetras Tool Leveling"
 			}]
 		}
 	]
