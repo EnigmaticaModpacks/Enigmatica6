@@ -1,0 +1,35 @@
+{
+    "flower": "minecraft:peony",
+    "maxTimeInHive": 4800,
+    "hasHoneycomb": true,
+    "baseLayerTexture": "wither/wither_bee",
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#6e7b8b",
+        "primaryColor": "#6e7b8b",
+        "secondaryColor": "#cdcdc1"
+    },
+    "MutationData": {
+        "hasMutation": false,
+        "mutationInput": "minecraft:lava",
+        "mutationOutput": "minecraft:obsidian",
+        "mutationType": "FLUID_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "emendatusenigmatica:steel_nugget",
+        "mainOutputWeight": 0.01
+    },
+    "SpawnData": {},
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "coal",
+        "parent2": "iron",
+        "breedWeight": 20,
+        "feedItem": "emendatusenigmatica:steel_ingot",
+        "feedAmount": 24
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

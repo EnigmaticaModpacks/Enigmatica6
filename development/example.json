@@ -1,0 +1,80 @@
+{
+  "entries": [
+    {
+      "block": {
+        "name": "minecraft:orange_bed"
+      },
+      "restrictions": [
+        {
+          "type": "SEESKY",
+          "reverse": true
+        }
+      ]
+    },
+    {
+      "block": {
+        "name": "minecraft:furnace"
+      },
+      "restrictions": [
+        {
+          "type": "CLOSEDROOM",
+          "amount": 50,
+          "block": {
+            "name": "minecraft:planks",
+            "isTag": true,
+            "count": 40
+          }
+        }
+      ]
+    },
+    {
+      "block": {
+        "name": "minecraft:brewing_stand"
+      },
+      "restrictions": [
+        {
+          "type": "DIMENSION",
+          "dimension": "minecraft:the_nether"
+        }
+      ]
+    },
+    {
+      "block": {
+        "name": "minecraft:enchanting_table"
+      },
+      "restrictions": [
+        {
+          "type": "NEARBYBLOCKS",
+          "amount": 3,
+          "block": {
+            "name": "minecraft:lapis_block",
+            "count": 4
+          }
+        }
+      ]
+    },
+    {
+      "block": {
+        "name": "minecraft:beacon"
+      },
+      "restrictions": [
+        {
+          "type": "EXPERIENCE",
+          "amount": 20
+        }
+      ]
+    },
+    {
+      "block": {
+        "name": "minecraft:obsidian"
+      },
+      "restrictions": [
+        {
+          "type": "MINHEIGHT",
+          "amount": 16,
+          "reverse": true
+        }
+      ]
+    }
+  ]
+}

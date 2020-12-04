@@ -21,6 +21,7 @@ $CONFIGS_TO_REMOVE = @(
 	"craftingtweaks-client.toml",
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 
+	"farmersdelight-client.toml",
 	"jei-client.toml",
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",

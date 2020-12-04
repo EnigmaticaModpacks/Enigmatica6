@@ -70,7 +70,11 @@ events.listen('recipes', (event) => {
         ]),
         // shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
         // shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
-        shapelessRecipe('minecraft:crafting_table', ['#forge:workbench'])
+        shapelessRecipe('minecraft:crafting_table', ['#forge:workbench']),
+        shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }), [
+            'minecraft:sugar',
+            'minecraft:book'
+        ])
     ];
 
     recipes.forEach(function (recipe) {
