@@ -84,6 +84,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
+    event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
+    event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
 
     // event.replaceInput(
     //     { type: 'minecraft:crafting_shaped', output: 'create:redstone_link' },
