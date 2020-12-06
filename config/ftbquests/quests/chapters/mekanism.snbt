@@ -140,11 +140,19 @@
 				type: "item",
 				item: "mekanismgenerators:wind_generator"
 			}],
-			rewards: [{
-				id: 2062,
-				type: "loot",
-				table: 20
-			}]
+			rewards: [
+				{
+					id: 2062,
+					type: "loot",
+					table: 17
+				},
+				{
+					id: 2148,
+					type: "item",
+					item: "mekanism:basic_universal_cable",
+					count: 16
+				}
+			]
 		},
 		{
 			x: -2.5d,
@@ -207,11 +215,18 @@
 					item: "mekanism:advanced_induction_provider"
 				}
 			],
-			rewards: [{
-				id: 1797,
-				type: "item",
-				item: "mekanism:advanced_induction_cell"
-			}]
+			rewards: [
+				{
+					id: 1797,
+					type: "item",
+					item: "mekanism:advanced_induction_cell"
+				},
+				{
+					id: 2155,
+					type: "loot",
+					table: 18
+				}
+			]
 		},
 		{
 			title: "Basic Power Generation",
@@ -252,6 +267,7 @@
 		{
 			x: 1.5d,
 			y: 0.0d,
+			subtitle: "Advanced Metallurgy",
 			description: [
 				"Once some basic power infrastructure is settled, the next most important machine will be the Metallurgic Infuser. With this, Steel and all of the other various alloys used throughout the mod can be created. ",
 				"",
@@ -264,15 +280,23 @@
 				type: "item",
 				item: "mekanism:metallurgic_infuser"
 			}],
-			rewards: [{
-				id: 2070,
-				type: "loot",
-				table: 20
-			}]
+			rewards: [
+				{
+					id: 2070,
+					type: "loot",
+					table: 17
+				},
+				{
+					id: 2144,
+					type: "item",
+					item: "mekanism:steel_casing"
+				}
+			]
 		},
 		{
 			x: 1.5d,
 			y: 1.5d,
+			subtitle: "Put One In The Chamber",
 			description: [
 				"Alloys will be needed commonly for further progression and without a little extra effort, they can become quite costly to make. Enter the Enrichment Chamber. ",
 				"",
@@ -289,11 +313,25 @@
 				type: "item",
 				item: "mekanism:enrichment_chamber"
 			}],
-			rewards: [{
-				id: 2066,
-				type: "loot",
-				table: 20
-			}]
+			rewards: [
+				{
+					id: 2066,
+					type: "loot",
+					table: 17
+				},
+				{
+					id: 2145,
+					type: "item",
+					item: "mekanism:enriched_redstone",
+					count: 4
+				},
+				{
+					id: 2146,
+					type: "item",
+					item: "mekanism:enriched_carbon",
+					count: 8
+				}
+			]
 		},
 		{
 			x: 0.0d,
@@ -311,7 +349,7 @@
 				{
 					id: 2064,
 					type: "loot",
-					table: 20
+					table: 17
 				},
 				{
 					id: 2092,
@@ -339,12 +377,13 @@
 			rewards: [{
 				id: 2063,
 				type: "loot",
-				table: 20
+				table: 17
 			}]
 		},
 		{
 			x: 2.5d,
 			y: 2.5d,
+			subtitle: "Organic Blend",
 			description: ["Obsidian and Glowstone by themselves are brittle materials, despite their interesting properties. By refining them and bonding them with a substrate such as Osmium, they create alloys that are easier to work with while maintaining their unique nature. "],
 			dependencies: [I;1727],
 			id: 1733,
@@ -356,7 +395,7 @@
 			rewards: [{
 				id: 2067,
 				type: "loot",
-				table: 20
+				table: 17
 			}]
 		},
 		{
@@ -393,6 +432,12 @@
 					id: 1739,
 					type: "item",
 					item: "mekanism:thermal_evaporation_controller"
+				},
+				{
+					id: 2158,
+					type: "item",
+					item: "mekanism:structural_glass",
+					count: 36L
 				}
 			],
 			rewards: [
@@ -406,6 +451,22 @@
 					type: "item",
 					item: "mekanism:advanced_thermodynamic_conductor",
 					count: 16
+				},
+				{
+					id: 2159,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1917053998,
+								1651920384,
+								-1822213257,
+								924630534
+							]
+						}
+					}
 				}
 			]
 		},
@@ -425,32 +486,40 @@
 				type: "item",
 				item: "mekanism:electrolytic_separator"
 			}],
-			rewards: [{
-				id: 2089,
-				type: "item",
-				item: {
-					id: "mekanism:jetpack",
-					Count: true,
-					tag: {
-						HideFlags: 2,
-						mekData: {
-							GasTanks: [{
-								Tank: false,
-								stored: {
-									gasName: "mekanism:hydrogen",
-									amount: 24000L
-								}
-							}]
+			rewards: [
+				{
+					id: 2089,
+					type: "item",
+					item: {
+						id: "mekanism:jetpack",
+						Count: true,
+						tag: {
+							HideFlags: 2,
+							mekData: {
+								GasTanks: [{
+									Tank: false,
+									stored: {
+										gasName: "mekanism:hydrogen",
+										amount: 24000L
+									}
+								}]
+							}
 						}
 					}
+				},
+				{
+					id: 2156,
+					type: "loot",
+					table: 17
 				}
-			}]
+			]
 		},
 		{
 			title: "Ore Tripling",
 			icon: "mekanism:electrolytic_core",
 			x: 1.5d,
 			y: 3.5d,
+			subtitle: "Not Enough Minerals",
 			description: [
 				"With enough effort, Mekanism allows for the extraction of up to five ingots per ore, but this is a very involved process and will require serious effort to set up. ",
 				"",
@@ -497,7 +566,7 @@
 				{
 					id: 2068,
 					type: "loot",
-					table: 21
+					table: 18
 				}
 			]
 		},
@@ -551,7 +620,7 @@
 			title: "Input: Uranium",
 			icon: "emendatusenigmatica:uranium_ingot",
 			x: 1.0d,
-			y: 7.5d,
+			y: 7.0d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1837,
@@ -565,7 +634,7 @@
 			title: "Sulfur Dioxide",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 4.5d,
-			y: 2.5d,
+			y: 2.0d,
 			shape: "diamond",
 			dependencies: [I;1843],
 			id: 1839,
@@ -593,7 +662,7 @@
 				}
 			},
 			x: 7.0d,
-			y: 4.5d,
+			y: 4.0d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1841,
@@ -607,7 +676,7 @@
 			title: "Chemical Oxidizer",
 			icon: "mekanism:chemical_oxidizer",
 			x: 5.5d,
-			y: 1.5d,
+			y: 1.0d,
 			shape: "hexagon",
 			dependencies: [I;1835],
 			id: 1843,
@@ -621,7 +690,7 @@
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
 			x: 4.5d,
-			y: 3.5d,
+			y: 3.0d,
 			shape: "hexagon",
 			dependencies: [I;
 				1839,
@@ -638,7 +707,7 @@
 			title: "Electrolytic Separator",
 			icon: "mekanism:electrolytic_separator",
 			x: 6.5d,
-			y: 3.5d,
+			y: 3.0d,
 			shape: "hexagon",
 			dependencies: [I;1841],
 			id: 1853,
@@ -652,7 +721,7 @@
 			title: "Output: Hydrogen",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 6.5d,
-			y: 2.5d,
+			y: 2.0d,
 			dependencies: [I;1853],
 			id: 1855,
 			tasks: [{
@@ -665,7 +734,7 @@
 			title: "Oxygen",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 5.5d,
-			y: 3.5d,
+			y: 3.0d,
 			shape: "diamond",
 			dependencies: [I;1853],
 			id: 1857,
@@ -679,7 +748,7 @@
 			title: "Sulfur Trioxide",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 4.5d,
-			y: 4.5d,
+			y: 4.0d,
 			shape: "diamond",
 			dependencies: [I;1848],
 			id: 1859,
@@ -693,7 +762,7 @@
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
 			x: 4.5d,
-			y: 5.5d,
+			y: 5.0d,
 			shape: "hexagon",
 			dependencies: [I;
 				1859,
@@ -710,7 +779,7 @@
 			title: "Rotary Condensentrator",
 			icon: "mekanism:rotary_condensentrator",
 			x: 6.5d,
-			y: 5.5d,
+			y: 5.0d,
 			shape: "hexagon",
 			dependencies: [I;1841],
 			id: 1863,
@@ -724,7 +793,7 @@
 			title: "Water Vapor",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 5.5d,
-			y: 5.5d,
+			y: 5.0d,
 			shape: "diamond",
 			dependencies: [I;1863],
 			id: 1865,
@@ -738,7 +807,7 @@
 			title: "Sulfuric Acid",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 3.5d,
-			y: 6.5d,
+			y: 6.0d,
 			shape: "diamond",
 			dependencies: [I;1861],
 			id: 1867,
@@ -750,7 +819,7 @@
 		},
 		{
 			x: 3.5d,
-			y: 7.5d,
+			y: 7.0d,
 			shape: "hexagon",
 			dependencies: [I;
 				1867,
@@ -768,7 +837,7 @@
 			title: "Input: Fluorite",
 			icon: "emendatusenigmatica:fluorite_gem",
 			x: 2.0d,
-			y: 6.5d,
+			y: 6.0d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1871,
@@ -782,7 +851,7 @@
 			title: "Hydrofluoric Acid",
 			icon: "mekanism:ultimate_chemical_tank",
 			x: 4.5d,
-			y: 7.5d,
+			y: 7.0d,
 			shape: "diamond",
 			dependencies: [I;1869],
 			id: 1873,
@@ -796,7 +865,7 @@
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
 			x: 5.5d,
-			y: 7.5d,
+			y: 7.0d,
 			shape: "hexagon",
 			dependencies: [I;
 				1873,
@@ -813,7 +882,7 @@
 			title: "Yellow Cake Uranium",
 			icon: "mekanism:yellow_cake_uranium",
 			x: 3.5d,
-			y: 8.5d,
+			y: 8.0d,
 			shape: "diamond",
 			dependencies: [I;1886],
 			id: 1878,
@@ -841,7 +910,7 @@
 				}
 			},
 			x: 5.5d,
-			y: 8.5d,
+			y: 8.0d,
 			shape: "diamond",
 			dependencies: [I;1884],
 			id: 1880,
@@ -869,7 +938,7 @@
 				}
 			},
 			x: 6.5d,
-			y: 7.5d,
+			y: 7.0d,
 			shape: "diamond",
 			dependencies: [I;1876],
 			id: 1882,
@@ -883,7 +952,7 @@
 			title: "Chemical Oxidizer",
 			icon: "mekanism:chemical_oxidizer",
 			x: 4.5d,
-			y: 8.5d,
+			y: 8.0d,
 			shape: "hexagon",
 			dependencies: [I;1878],
 			id: 1884,
@@ -897,7 +966,7 @@
 			title: "Enrichment Chamber",
 			icon: "mekanism:enrichment_chamber",
 			x: 2.5d,
-			y: 8.5d,
+			y: 8.0d,
 			shape: "hexagon",
 			dependencies: [I;1837],
 			id: 1886,
@@ -911,7 +980,7 @@
 			title: "Isotopic Centrifuge",
 			icon: "mekanism:isotopic_centrifuge",
 			x: 7.5d,
-			y: 7.5d,
+			y: 7.0d,
 			shape: "hexagon",
 			dependencies: [I;1882],
 			id: 1888,
@@ -924,8 +993,8 @@
 		{
 			title: "Output: Fissile Fuel",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 8.5d,
-			y: 8.5d,
+			x: 9.0d,
+			y: 8.0d,
 			description: ["Oh! You're still here?"],
 			dependencies: [I;1888],
 			id: 1890,
@@ -984,7 +1053,7 @@
 			rewards: [{
 				id: 2090,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -992,7 +1061,7 @@
 			icon: "mekanismgenerators:control_rod_assembly",
 			x: 10.5d,
 			y: 0.5d,
-			subtitle: "Controlled Reactivity",
+			subtitle: "Nuclear Launch Detected",
 			description: [
 				"The Fuel Rod Assembly is what actually holds the fissile material during the reaction. Having more allows the reactor to burn fuel faster. ",
 				"",
@@ -1016,11 +1085,29 @@
 					count: 5L
 				}
 			],
-			rewards: [{
-				id: 2074,
-				type: "loot",
-				table: 21
-			}]
+			rewards: [
+				{
+					id: 2074,
+					type: "loot",
+					table: 18
+				},
+				{
+					id: 2160,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1418877606,
+								280773416,
+								-1643986054,
+								-1037600504
+							]
+						}
+					}
+				}
+			]
 		},
 		{
 			title: "Fission Reactor Casing",
@@ -1060,7 +1147,7 @@
 			rewards: [{
 				id: 2072,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -1211,7 +1298,7 @@
 			rewards: [{
 				id: 2080,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -1248,7 +1335,7 @@
 			rewards: [{
 				id: 2078,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -1267,7 +1354,7 @@
 			rewards: [{
 				id: 2069,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -1279,7 +1366,9 @@
 			description: [
 				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste.",
 				"",
-				"Use the provided Building Gadget Template to construct the SPS. The two ports attached to the Supercharged Coil will accept power input. The other two ports will be used for inputting waste and outputting antimatter."
+				"Use the provided Building Gadget Template to construct the SPS. The two ports attached to the Supercharged Coil will accept power input. The other two ports will be used for inputting waste and outputting antimatter.",
+				"",
+				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that suffcient power and waste can be supplied. "
 			],
 			dependencies: [I;
 				1959,
@@ -1323,7 +1412,23 @@
 				{
 					id: 2114,
 					type: "loot",
-					table: 21
+					table: 19
+				},
+				{
+					id: 2162,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-505631355,
+								1961708385,
+								-2125328801,
+								-292436769
+							]
+						}
+					}
 				}
 			]
 		},
@@ -1379,11 +1484,29 @@
 					count: 24L
 				}
 			],
-			rewards: [{
-				id: 2081,
-				type: "loot",
-				table: 21
-			}]
+			rewards: [
+				{
+					id: 2081,
+					type: "loot",
+					table: 19
+				},
+				{
+					id: 2157,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-909361633,
+								1645038859,
+								-1488872910,
+								1600843225
+							]
+						}
+					}
+				}
+			]
 		},
 		{
 			title: "Industrial Turbine",
@@ -1468,11 +1591,29 @@
 					count: 33L
 				}
 			],
-			rewards: [{
-				id: 2073,
-				type: "loot",
-				table: 21
-			}]
+			rewards: [
+				{
+					id: 2073,
+					type: "loot",
+					table: 18
+				},
+				{
+					id: 2161,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								1022383748,
+								-1753986230,
+								-1128044632,
+								1005577199
+							]
+						}
+					}
+				}
+			]
 		},
 		{
 			x: 10.5d,
@@ -1489,7 +1630,7 @@
 			rewards: [{
 				id: 2079,
 				type: "loot",
-				table: 21
+				table: 19
 			}]
 		},
 		{
@@ -1511,7 +1652,7 @@
 			rewards: [{
 				id: 2088,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -1529,7 +1670,7 @@
 			rewards: [{
 				id: 2087,
 				type: "loot",
-				table: 21
+				table: 19
 			}]
 		},
 		{
@@ -1547,7 +1688,7 @@
 			rewards: [{
 				id: 2083,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -1573,7 +1714,7 @@
 			rewards: [{
 				id: 2086,
 				type: "loot",
-				table: 21
+				table: 19
 			}]
 		},
 		{
@@ -1591,7 +1732,7 @@
 			rewards: [{
 				id: 2084,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -1609,7 +1750,7 @@
 			rewards: [{
 				id: 2085,
 				type: "loot",
-				table: 21
+				table: 19
 			}]
 		},
 		{
@@ -1652,7 +1793,13 @@
 				{
 					id: 2082,
 					type: "loot",
-					table: 22
+					table: 19
+				},
+				{
+					id: 2163,
+					type: "item",
+					item: "engineersdecor:sign_laser",
+					count: 16
 				}
 			]
 		},
@@ -1691,30 +1838,6 @@
 				icon: "engineersdecor:sign_radioactive",
 				command: "/mek radiation removeAll",
 				player_command: false
-			}]
-		},
-		{
-			title: "NOTES",
-			icon: "botania:cosmetic_questgiver_mark",
-			x: 7.0d,
-			y: -5.0d,
-			shape: "octagon",
-			description: [
-				"Building Gadgets Templates need to be imported still. They'll be given as rewards for the following",
-				"",
-				"Fission Reactor",
-				"Fusion Reactor",
-				"Industrial Turbine",
-				"SPS",
-				"Thermal Evap Tower",
-				"",
-				"Pending update of Building Gadgets. "
-			],
-			size: 2.0d,
-			id: 2112,
-			tasks: [{
-				id: 2113,
-				type: "checkmark"
 			}]
 		}
 	]

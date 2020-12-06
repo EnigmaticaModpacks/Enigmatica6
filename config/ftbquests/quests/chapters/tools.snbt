@@ -35,9 +35,12 @@
 					item: "pneumaticcraft:drill_bit_compressed_iron"
 				},
 				{
-					id: 1785,
-					type: "loot",
-					table: 11
+					id: 2154,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
 			]
 		},
@@ -431,13 +434,17 @@
 				item: "pneumaticcraft:sentry_turret"
 			}],
 			rewards: [{
-				id: 509,
+				id: 2152,
 				type: "item",
 				item: {
-					id: "pneumaticcraft:gun_ammo",
+					id: "pneumaticcraft:gun_ammo_ap",
 					Count: true,
 					tag: {
-						Damage: 0
+						Damage: 0,
+						Enchantments: [{
+							lvl: 5s,
+							id: "minecraft:unbreaking"
+						}]
 					}
 				}
 			}]
@@ -455,13 +462,17 @@
 				item: "pneumaticcraft:minigun"
 			}],
 			rewards: [{
-				id: 525,
+				id: 2151,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo",
 					Count: true,
 					tag: {
-						Damage: 0
+						Damage: 0,
+						Enchantments: [{
+							lvl: 5s,
+							id: "minecraft:unbreaking"
+						}]
 					}
 				}
 			}]
@@ -479,7 +490,7 @@
 					id: 515,
 					type: "item",
 					item: {
-						id: "pneumaticcraft:gun_ammo_ap",
+						id: "pneumaticcraft:gun_ammo_freezing",
 						Count: true,
 						tag: {
 							Damage: 0
@@ -491,6 +502,17 @@
 					type: "item",
 					item: {
 						id: "pneumaticcraft:gun_ammo_explosive",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2153,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_incendiary",
 						Count: true,
 						tag: {
 							Damage: 0
@@ -597,7 +619,7 @@
 			rewards: [{
 				id: 2102,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -629,7 +651,7 @@
 			rewards: [{
 				id: 2101,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -659,7 +681,7 @@
 			rewards: [{
 				id: 2100,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -690,7 +712,7 @@
 			rewards: [{
 				id: 2099,
 				type: "loot",
-				table: 22
+				table: 19
 			}]
 		},
 		{
@@ -716,7 +738,7 @@
 			rewards: [{
 				id: 2109,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -732,7 +754,7 @@
 			rewards: [{
 				id: 2107,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -748,7 +770,7 @@
 			rewards: [{
 				id: 2106,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -764,7 +786,7 @@
 			rewards: [{
 				id: 2105,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -780,7 +802,7 @@
 			rewards: [{
 				id: 2110,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -796,7 +818,7 @@
 			rewards: [{
 				id: 2103,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -819,7 +841,7 @@
 			rewards: [{
 				id: 2111,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -835,7 +857,7 @@
 			rewards: [{
 				id: 2108,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -851,7 +873,7 @@
 			rewards: [{
 				id: 2104,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -875,7 +897,7 @@
 			rewards: [{
 				id: 2097,
 				type: "loot",
-				table: 20
+				table: 18
 			}]
 		},
 		{
@@ -899,7 +921,7 @@
 			rewards: [{
 				id: 2098,
 				type: "loot",
-				table: 21
+				table: 19
 			}]
 		},
 		{
@@ -916,7 +938,7 @@
 			rewards: [{
 				id: 2096,
 				type: "loot",
-				table: 21
+				table: 18
 			}]
 		},
 		{
@@ -1621,7 +1643,7 @@
 			rewards: [{
 				id: 1637,
 				type: "loot",
-				table: 19
+				table: 52
 			}]
 		},
 		{
@@ -1642,11 +1664,21 @@
 				type: "item",
 				item: "thermal:flux_drill"
 			}],
-			rewards: [{
-				id: 1623,
-				type: "loot",
-				table: 1
-			}]
+			rewards: [
+				{
+					id: 1623,
+					type: "loot",
+					table: 1
+				},
+				{
+					id: 2149,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -5.0d,
@@ -1666,11 +1698,21 @@
 				type: "item",
 				item: "thermal:flux_saw"
 			}],
-			rewards: [{
-				id: 1622,
-				type: "loot",
-				table: 1
-			}]
+			rewards: [
+				{
+					id: 1622,
+					type: "loot",
+					table: 1
+				},
+				{
+					id: 2150,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Hazmat Suit",
@@ -1853,7 +1895,7 @@
 			rewards: [{
 				id: 1636,
 				type: "loot",
-				table: 19
+				table: 52
 			}]
 		}
 	]

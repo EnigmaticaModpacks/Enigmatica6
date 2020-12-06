@@ -2,7 +2,7 @@
 	id: 183,
 	title: "Epic PNC:R Loot Box",
 	icon: "aquaculture:treasure_chest",
-	loot_size: 1,
+	loot_size: 2,
 	hide_tooltip: true,
 	use_title: true,
 	rewards: [
@@ -19,6 +19,10 @@
 			item: "pneumaticcraft:volume_upgrade",
 			count: 4,
 			weight: 2
+		},
+		{
+			item: "pneumaticcraft:advanced_pressure_tube",
+			count: 16
 		}
 	]
 }
