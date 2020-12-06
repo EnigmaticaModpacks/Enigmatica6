@@ -1,6 +1,5 @@
 events.listen('recipes', function (event) {
     var blockNames = ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'];
-
     for (var i = 0; i < colors.length; i++) {
         var dyeTag = '#forge:dyes/' + colors[i];
         for (var j = 0; j < blockNames.length; j++) {
