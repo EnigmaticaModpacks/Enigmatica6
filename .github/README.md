@@ -28,7 +28,7 @@ Follow these steps to setup your workspace/server:
 ## Windows / Mac
 
 1) Download the [CurseForge App](https://curseforge.overwolf.com/) if you haven't already.
-2) Fork and clone the Enigmatica 6 repository to the Instances folder of the CurseForge App, the default path is `C:\Users\User\Documents\Curse\Minecraft\Instances`
+2) Fork and clone the Enigmatica 6 repository to the Instances folder of the CurseForge App, the default path is `C:\Users\User\Documents\Curse\Minecraft\Instances`. If you previously used Twitch for modpacks the path will most likely be `C:\Users\User\Documents\Twitch\Minecraft\Instances`.
 3) Double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
 4) Pull.
 5) Open the CurseForge App, go to Minecraft -> My Modpacks, and you should see Enigmatica 6. If you already had CurseForge App open, restart it.
