@@ -12,7 +12,7 @@
 	#Should dyes be used up when coloring things (Drones, Logistics Modules, Redstone Modules)?
 	use_up_dyes_when_coloring = false
 	#Oil worldgen blacklist by biome category: add biome categories to this list if you don't want oil worldgen to happen there. Accepted categories are: beach, desert, extreme_hills, forest, icy, jungle, mesa, mushroom, nether, none, ocean, plains, river, savanna, swamp, taiga, the_end.  This works in conjunction with 'oil_world_gen_blacklist' - if a biome matches either, then no oil lakes will generate there.
-	oil_world_gen_category_blacklist = ["none"]
+	oil_world_gen_category_blacklist = ["nether","the_end"]
 	#Maximum number of blocks in the area defined in an Area Programming Puzzle Piece
 	#Range: > 1
 	max_programming_area = 250000
@@ -24,7 +24,46 @@
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
 	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
-	vacuum_trap_blacklist = ["resourcefulbees:coal_bee", "resourcefulbees:creeper_bee", "resourcefulbees:diamond_bee", "resourcefulbees:emerald_bee", "resourcefulbees:ender_bee", "resourcefulbees:gold_bee", "resourcefulbees:icy_bee", "resourcefulbees:iron_bee", "resourcefulbees:lapis_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:netherite_bee", "resourcefulbees:oreo_bee", "resourcefulbees:pigman_bee", "resourcefulbees:redstone_bee", "resourcefulbees:rgbee_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:slimy_bee", "resourcefulbees:wither_bee", "resourcefulbees:zombie_bee"]
+	vacuum_trap_blacklist = ["resourcefulbees:tin_bee",
+"resourcefulbees:terrasteel_bee",
+"resourcefulbees:tainted_gold_bee",
+"resourcefulbees:steel_bee",
+"resourcefulbees:sky_bee",
+"resourcefulbees:silver_bee",
+"resourcefulbees:refined_obsidian_bee",
+"resourcefulbees:refined_glowstone_bee",
+"resourcefulbees:osmium_bee",
+"resourcefulbees:obsidian_bee",
+"resourcefulbees:nickel_bee",
+"resourcefulbees:manasteel_bee",
+"resourcefulbees:lead_bee",
+"resourcefulbees:infused_iron_bee",
+"resourcefulbees:ghast_bee",
+"resourcefulbees:elementium_bee",
+"resourcefulbees:copper_bee",
+"resourcefulbees:clay_bee",
+"resourcefulbees:blaze_bee",
+"resourcefulbees:alf_bee",
+"resourcefulbees:zombie_bee",
+"resourcefulbees:wither_bee",
+"resourcefulbees:slimy_bee",
+"resourcefulbees:skeleton_bee",
+"resourcefulbees:rgbee_bee",
+"resourcefulbees:redstone_bee",
+"resourcefulbees:pigman_bee",
+"resourcefulbees:nether_quartz_bee",
+"resourcefulbees:netherite_bee",
+"resourcefulbees:lapis_bee",
+"resourcefulbees:iron_bee",
+"resourcefulbees:icy_bee",
+"resourcefulbees:gold_bee",
+"resourcefulbees:ender_bee",
+"resourcefulbees:emerald_bee",
+"resourcefulbees:diamond_bee",
+"resourcefulbees:creeper_bee",
+"resourcefulbees:coal_bee",
+"resourcefulbees:oreo_bee"
+]
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
 	min_fluid_fuel_temperature = 373
