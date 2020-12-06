@@ -1,0 +1,49 @@
+{
+  "type": "botanypots:crop",
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "byg:palm_sapling"
+    }
+  ],
+  "seed": {
+    "item": "byg:palm_sapling"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 2400,
+  "display": {
+    "block": "byg:palm_sapling"
+  },
+  "results": [
+    {
+      "chance": 0.50,
+      "output": {
+        "item": "byg:palm_log"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    },
+    {
+      "chance": 0.10,
+      "output": {
+        "item": "minecraft:stick"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "byg:palm_sapling"
+      },
+      "minRolls": 1,
+      "maxRolls": 1
+    }
+  ]
+}
