@@ -23,9 +23,10 @@
 			x: -2.5d,
 			y: -19.5d,
 			description: [
-				"So I see you wanna get started in Tetra huh?",
+				"I see you wanna get started in Tetra huh?",
 				"Make a wooden Mallet and smack a Vanilla Crafting Table with it!"
 			],
+			dependencies: [I;2115],
 			id: 1907,
 			tasks: [{
 				id: 1908,
@@ -42,7 +43,8 @@
 						"double/basic_handle_material": "basic_handle/stick",
 						"double/basic_hammer_left_material": "basic_hammer/log"
 					}
-				}
+				},
+				consume_items: false
 			}],
 			rewards: [{
 				id: 2117,
@@ -64,7 +66,7 @@
 				}
 			},
 			x: -5.5d,
-			y: -17.0d,
+			y: -19.5d,
 			shape: "gear",
 			subtitle: "No for real",
 			description: [
@@ -108,13 +110,13 @@
 						"double/basic_hammer_left_material": "basic_hammer/diorite"
 					}
 				},
-				consume_items: false
+				consume_items: true
 			}]
 		},
 		{
 			title: "Tiers and their use to you",
 			x: -5.5d,
-			y: -14.0d,
+			y: -15.0d,
 			shape: "gear",
 			description: [
 				"So different in world tasks require different Tiers to work for example prying open a Forge Crate or Container, but also upgrading your Tools require certain Tiers to work.",
@@ -128,8 +130,8 @@
 		},
 		{
 			title: "Double Headed Tools and Weapons",
-			x: -7.0d,
-			y: -14.0d,
+			x: -5.5d,
+			y: -16.5d,
 			shape: "gear",
 			description: [
 				"Which would include a Pickaxe or a Greataxe, it all comes down to what your prefer",
@@ -152,8 +154,8 @@
 		},
 		{
 			title: "Blades",
-			x: -5.5d,
-			y: -15.5d,
+			x: -7.0d,
+			y: -15.0d,
 			shape: "gear",
 			description: [
 				"Blades have quite a lot of customizations, this should give you a rough list on what each of them do:",
@@ -175,14 +177,21 @@
 			],
 			id: 1917,
 			tasks: [{
-				id: 2120,
-				type: "checkmark"
+				id: 2175,
+				type: "item",
+				item: {
+					id: "tetra:modular_sword",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		},
 		{
 			title: "Bows",
 			x: -7.0d,
-			y: -15.5d,
+			y: -16.5d,
 			shape: "gear",
 			description: [
 				"The Bow chapter will be a bit shorter, since there is less stuff to explain, most things are explained by the Holosphere, main things I wanna tap into are:",
@@ -197,15 +206,26 @@
 			],
 			id: 1919,
 			tasks: [{
-				id: 2122,
-				type: "checkmark"
+				id: 2174,
+				type: "item",
+				item: {
+					id: "tetra:modular_bow",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
 			}]
 		},
 		{
 			title: "Tetra Forges and how they work",
 			x: -2.5d,
 			y: -16.5d,
-			description: ["After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate the hammer and also a Workbench or Forged Workbench for it to work."],
+			description: [
+				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate the hammer and also a Workbench or Forged Workbench for it to work.",
+				"",
+				"Note: Forge Hammers can be crafted, if you're really unlucky."
+			],
 			dependencies: [I;1911],
 			id: 1921,
 			tasks: [{
@@ -231,6 +251,7 @@
 				"",
 				"Planar Stabilizer: + Bonus Stats when used for forging purposes."
 			],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1923,
 			tasks: [
@@ -268,27 +289,32 @@
 				{
 					id: 2126,
 					type: "item",
-					item: "tetra:forged_mesh"
+					item: "tetra:forged_mesh",
+					consume_items: false
 				},
 				{
 					id: 2127,
 					type: "item",
-					item: "tetra:metal_scrap"
+					item: "tetra:metal_scrap",
+					consume_items: false
 				},
 				{
 					id: 2128,
 					type: "item",
-					item: "tetra:quick_latch"
+					item: "tetra:quick_latch",
+					consume_items: false
 				},
 				{
 					id: 2129,
 					type: "item",
-					item: "tetra:forged_beam"
+					item: "tetra:forged_beam",
+					consume_items: false
 				},
 				{
 					id: 2130,
 					type: "item",
-					item: "tetra:forged_bolt"
+					item: "tetra:forged_bolt",
+					consume_items: false
 				}
 			],
 			rewards: [{
@@ -311,8 +337,11 @@
 			description: [
 				"Thermals Cells are the Heart of a Forge with them there would be no power at all, so keep an eye on their power level.",
 				"",
-				"You can refill them in a Transfer Unit, which is configured correctly. There's minigame after you removed the plate with a claw hammer the dot should be in the middle."
+				"You can refill them in a Transfer Unit, which is configured correctly. There's minigame after you removed the plate with a claw hammer the dot should be in the middle.",
+				"",
+				"Note: Thermal Cells are also craftable."
 			],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1927,
 			tasks: [{
@@ -324,7 +353,8 @@
 					tag: {
 						Damage: 0
 					}
-				}
+				},
+				consume_items: false
 			}]
 		},
 		{
@@ -349,6 +379,7 @@
 			y: -15.0d,
 			shape: "diamond",
 			description: ["A Stonecutter is basically a fancy hammer that breaks an area in a slashing motion. The size of the area is usually 1 block deep and 8 blocks wide with varying height."],
+			dependencies: [I;1929],
 			optional: true,
 			id: 1931,
 			tasks: [{
@@ -370,6 +401,7 @@
 			y: -15.0d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi purpose tool that breaks Stone and Dirt and can just be used for mining altogether."],
+			dependencies: [I;1929],
 			optional: true,
 			id: 1933,
 			tasks: [{
@@ -386,8 +418,8 @@
 		},
 		{
 			title: "Hammer Tiers",
-			x: -5.5d,
-			y: -18.5d,
+			x: -2.5d,
+			y: -21.0d,
 			shape: "gear",
 			subtitle: "This is just to hint you into the right direction",
 			description: [
@@ -420,7 +452,7 @@
 		{
 			title: "Tetras Tool Leveling",
 			x: -5.5d,
-			y: -20.0d,
+			y: -18.0d,
 			shape: "gear",
 			description: [
 				"Tetras Leveling System is a bit more complex than other ones.",
@@ -438,6 +470,68 @@
 				id: 2140,
 				type: "checkmark",
 				title: "Tetras Tool Leveling"
+			}]
+		},
+		{
+			title: "This seems to be enough for now",
+			x: -1.0d,
+			y: -19.5d,
+			description: ["To fulfill the requirements for this quest you simply need to give one of your wooden hammers 2 diorite hammer heads!"],
+			dependencies: [I;1907],
+			id: 2166,
+			tasks: [{
+				id: 2167,
+				type: "item",
+				item: {
+					id: "tetra:modular_double",
+					Count: true,
+					tag: {
+						"double/handle": "double/basic_handle",
+						honing_progress: 250,
+						HideFlags: 1,
+						"double/head_left": "double/basic_hammer_left",
+						"double/head_right": "double/basic_hammer_right",
+						id: "512b91f9-b001-46c2-8201-4300b11d6c3a",
+						Damage: 0,
+						"double/basic_hammer_right_material": "basic_hammer/diorite",
+						"double/basic_handle_material": "basic_handle/stick",
+						"double/handle/settle_progress": 249,
+						"double/basic_hammer_left_material": "basic_hammer/diorite"
+					}
+				},
+				consume_items: false
+			}]
+		},
+		{
+			title: "Advanced Hammering",
+			x: 0.5d,
+			y: -19.5d,
+			description: [
+				"This one is a bit more tricky you need to change every part of the hammer this time.",
+				"Grab yourself some wood and put that as the handle, that should give you the Integrity you need to put on the Iron Hammer Heads"
+			],
+			dependencies: [I;2166],
+			id: 2168,
+			tasks: [{
+				id: 2169,
+				type: "item",
+				item: {
+					id: "tetra:modular_double",
+					Count: true,
+					tag: {
+						honing_progress: 346,
+						"double/handle": "double/basic_handle",
+						HideFlags: 1,
+						"double/head_left": "double/basic_hammer_left",
+						"double/head_right": "double/basic_hammer_right",
+						id: "ffec5444-bc37-4e60-9d14-e2ce872ece30",
+						Damage: 0,
+						"double/basic_hammer_right_material": "basic_hammer/iron",
+						"double/basic_handle_material": "basic_handle/oak",
+						"double/basic_hammer_left_material": "basic_hammer/iron"
+					}
+				},
+				consume_items: false
 			}]
 		}
 	]
