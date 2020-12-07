@@ -29,22 +29,10 @@
 			dependencies: [I;2115],
 			id: 1907,
 			tasks: [{
-				id: 1908,
-				type: "item",
-				item: {
-					id: "tetra:modular_double",
-					Count: true,
-					tag: {
-						"double/handle": "double/basic_handle",
-						"double/head_left": "double/basic_hammer_left",
-						"double/head_right": "double/basic_hammer_right",
-						Damage: 0,
-						"double/basic_hammer_right_material": "basic_hammer/log",
-						"double/basic_handle_material": "basic_handle/stick",
-						"double/basic_hammer_left_material": "basic_hammer/log"
-					}
-				},
-				consume_items: false
+				id: 2178,
+				type: "advancement",
+				advancement: "tetra:upgrades/root",
+				criterion: ""
 			}],
 			rewards: [{
 				id: 2117,
@@ -71,12 +59,29 @@
 			subtitle: "No for real",
 			description: [
 				"This little ball of scrap metal will be your guideline on materials from the beginning and even until later on when you find a Forge.",
-				"So keep it somewhere safe."
+				"So keep it somewhere safe.",
+				"",
+				"The Eye of Ender is for an upgrade which allows you to find Forges a bit easier, just put the Holosphere in your Bench"
 			],
 			id: 1909,
 			tasks: [{
-				id: 1935,
-				type: "checkmark"
+				id: 2189,
+				type: "item",
+				item: {
+					id: "tetra:holo",
+					Count: true,
+					tag: {
+						"holo/core_material": "frame/dim",
+						"holo/frame": "holo/frame",
+						"holo/core": "holo/core",
+						"holo/frame_material": "core/ancient"
+					}
+				}
+			}],
+			rewards: [{
+				id: 2190,
+				type: "item",
+				item: "minecraft:ender_eye"
 			}]
 		},
 		{
@@ -116,7 +121,7 @@
 		{
 			title: "Tiers and their use to you",
 			x: -5.5d,
-			y: -15.0d,
+			y: -16.5d,
 			shape: "gear",
 			description: [
 				"So different in world tasks require different Tiers to work for example prying open a Forge Crate or Container, but also upgrading your Tools require certain Tiers to work.",
@@ -131,7 +136,7 @@
 		{
 			title: "Double Headed Tools and Weapons",
 			x: -5.5d,
-			y: -16.5d,
+			y: -15.0d,
 			shape: "gear",
 			description: [
 				"Which would include a Pickaxe or a Greataxe, it all comes down to what your prefer",
@@ -148,8 +153,10 @@
 			],
 			id: 1915,
 			tasks: [{
-				id: 2119,
-				type: "checkmark"
+				id: 2186,
+				type: "advancement",
+				advancement: "tetra:upgrades/tool_upgrade",
+				criterion: ""
 			}]
 		},
 		{
@@ -177,15 +184,10 @@
 			],
 			id: 1917,
 			tasks: [{
-				id: 2175,
-				type: "item",
-				item: {
-					id: "tetra:modular_sword",
-					Count: true,
-					tag: {
-						Damage: 0
-					}
-				}
+				id: 2188,
+				type: "advancement",
+				advancement: "tetra:upgrades/sword_upgrade",
+				criterion: ""
 			}]
 		},
 		{
@@ -206,15 +208,10 @@
 			],
 			id: 1919,
 			tasks: [{
-				id: 2174,
-				type: "item",
-				item: {
-					id: "tetra:modular_bow",
-					Count: true,
-					tag: {
-						Damage: 0
-					}
-				}
+				id: 2187,
+				type: "advancement",
+				advancement: "tetra:upgrades/bow_upgrade",
+				criterion: ""
 			}]
 		},
 		{
@@ -283,6 +280,7 @@
 				"This is basically is just another crafting material for the Tools, Weapons or Belts.",
 				"It's better than most but not the best except for a few niche cases."
 			],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1925,
 			tasks: [
@@ -480,26 +478,10 @@
 			dependencies: [I;1907],
 			id: 2166,
 			tasks: [{
-				id: 2167,
-				type: "item",
-				item: {
-					id: "tetra:modular_double",
-					Count: true,
-					tag: {
-						"double/handle": "double/basic_handle",
-						honing_progress: 250,
-						HideFlags: 1,
-						"double/head_left": "double/basic_hammer_left",
-						"double/head_right": "double/basic_hammer_right",
-						id: "512b91f9-b001-46c2-8201-4300b11d6c3a",
-						Damage: 0,
-						"double/basic_hammer_right_material": "basic_hammer/diorite",
-						"double/basic_handle_material": "basic_handle/stick",
-						"double/handle/settle_progress": 249,
-						"double/basic_hammer_left_material": "basic_hammer/diorite"
-					}
-				},
-				consume_items: false
+				id: 2176,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_2",
+				criterion: ""
 			}]
 		},
 		{
@@ -513,25 +495,49 @@
 			dependencies: [I;2166],
 			id: 2168,
 			tasks: [{
-				id: 2169,
-				type: "item",
-				item: {
-					id: "tetra:modular_double",
-					Count: true,
-					tag: {
-						honing_progress: 346,
-						"double/handle": "double/basic_handle",
-						HideFlags: 1,
-						"double/head_left": "double/basic_hammer_left",
-						"double/head_right": "double/basic_hammer_right",
-						id: "ffec5444-bc37-4e60-9d14-e2ce872ece30",
-						Damage: 0,
-						"double/basic_hammer_right_material": "basic_hammer/iron",
-						"double/basic_handle_material": "basic_handle/oak",
-						"double/basic_hammer_left_material": "basic_hammer/iron"
-					}
-				},
-				consume_items: false
+				id: 2177,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_3",
+				criterion: ""
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -19.5d,
+			description: ["The Advancement Quest for the Tier 4 Hammer!"],
+			dependencies: [I;2168],
+			id: 2179,
+			tasks: [{
+				id: 2180,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_4",
+				criterion: ""
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -17.5d,
+			description: ["The Tier 5 Hammer is here because the Forge is needed to make it. "],
+			dependencies: [I;1921],
+			id: 2181,
+			tasks: [{
+				id: 2182,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_5",
+				criterion: ""
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -17.5d,
+			description: ["Now you're basically a walking Forge, Congrats!"],
+			dependencies: [I;2181],
+			id: 2183,
+			tasks: [{
+				id: 2185,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_6",
+				criterion: ""
 			}]
 		}
 	]
