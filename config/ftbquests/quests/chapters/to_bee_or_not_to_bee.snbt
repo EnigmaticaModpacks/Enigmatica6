@@ -14,13 +14,7 @@
 				"Bee Nests are the most basic housing method for bees, those don't have an Inventory but their upgraded version do.",
 				"Here are some Bee Jars to prevent them from flying away from you and to make your life a bit easier."
 			],
-			dependencies: [I;
-				1812,
-				1810,
-				1814,
-				1816,
-				1818
-			],
+			dependencies: [I;2164],
 			id: 1806,
 			tasks: [{
 				id: 1807,
@@ -60,7 +54,7 @@
 			title: "Tier 2 Bees",
 			icon: "resourcefulbees:iron_honeycomb",
 			x: -17.0d,
-			y: -15.5d,
+			y: -16.5d,
 			description: [
 				"These ones need a bit of breeding to get them but are still quite simple.",
 				"You should find most the information you need in JEI",
@@ -85,9 +79,9 @@
 			title: "Tier 1 Bees",
 			icon: "resourcefulbees:wither_honeycomb",
 			x: -16.0d,
-			y: -15.5d,
+			y: -16.5d,
 			description: [
-				"So for balance sake, we created tiers for the bees which are totally unrelated to the beehive tiers.",
+				"For balance sake, we created tiers for the bees which are totally unrelated to the beehive tiers.",
 				"The tier 1 bees are the ones that spawn naturally in the world.",
 				"Which would include the following:",
 				"",
@@ -117,9 +111,9 @@
 			title: "Bee Mutation",
 			icon: "resourcefulbees:bee_jar",
 			x: -15.0d,
-			y: -15.5d,
+			y: -16.5d,
 			description: [
-				"So I see you wanna do more than just breed the bees, let me introduce you to Entity to Entity mutation!",
+				"I see you wanna do more than just breed the bees, let me introduce you to Entity to Entity mutation!",
 				"It works like the regular mutation but with entities, whenever a Bee returns to its Hive after getting that sweet Polination in everything that crosses its path will be transmuted.",
 				"For now it's only:",
 				"Ghast Bee = Creeper Bee + Blaze Bee  "
@@ -134,9 +128,9 @@
 			title: "Tier 3 Bees",
 			icon: "resourcefulbees:diamond_honeycomb",
 			x: -18.0d,
-			y: -15.5d,
+			y: -16.5d,
 			description: [
-				"So for Tier 3 this is where it gets a bit grindy to keep things somewhat balanced and in place, because this is where Bees get a bit crazy.",
+				"Tier 3 is where it gets a bit grindy to keep things somewhat balanced and in place, because this is where Bees get a bit crazy.",
 				"Most of these require their respectable blocks for breeding so bee prepared!",
 				"",
 				"[Tier 3 Bees]",
@@ -163,7 +157,7 @@
 		{
 			title: "Special Bees",
 			x: -19.0d,
-			y: -15.5d,
+			y: -16.5d,
 			description: [
 				"The Special Bees have custom recipes that means they're not bred or transmuted like the ones before.",
 				"",
@@ -184,7 +178,7 @@
 			x: -17.0d,
 			y: -12.5d,
 			description: [
-				"So to get more than just a handful of combs you might wanna make a Beehive of which there are 4 the higher the Tier the more bees you can store and the more combs you get!",
+				"To get more than just a handful of combs you might wanna make a Beehive of which there are 4 the higher the Tier the more bees you can store and the more combs you get!",
 				"",
 				"So for now a lil glassbox with flowers and the Beehive in it should be fine.",
 				"",
@@ -320,6 +314,28 @@
 				type: "item",
 				item: "resourcefulbees:oreo_cookie",
 				count: 4
+			}]
+		},
+		{
+			title: "Vanilla Bee Mechanics",
+			icon: "minecraft:bee_nest",
+			x: -17.0d,
+			y: -14.5d,
+			description: [
+				"Vanilla Bees or all of them can be found naturally spawning in the wild, usually around bee nests, this pack changes that slightly. Certain Bees are biome specific or bound to a dimension.",
+				"Getting honeycombs is quite easy either use a shear or a scraper on the nest/hive to get the combs, but beeware these creatures have a tendency to violence so you might wanna use a Smoker or a Campfire to trick them into thinking their hive is burning."
+			],
+			dependencies: [I;
+				1818,
+				1816,
+				1810,
+				1812,
+				1814
+			],
+			id: 2164,
+			tasks: [{
+				id: 2165,
+				type: "checkmark"
 			}]
 		}
 	]

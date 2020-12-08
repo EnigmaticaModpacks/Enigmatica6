@@ -23,26 +23,16 @@
 			x: -2.5d,
 			y: -19.5d,
 			description: [
-				"So I see you wanna get started in Tetra huh?",
+				"I see you wanna get started in Tetra huh?",
 				"Make a wooden Mallet and smack a Vanilla Crafting Table with it!"
 			],
+			dependencies: [I;2115],
 			id: 1907,
 			tasks: [{
-				id: 1908,
-				type: "item",
-				item: {
-					id: "tetra:modular_double",
-					Count: true,
-					tag: {
-						"double/handle": "double/basic_handle",
-						"double/head_left": "double/basic_hammer_left",
-						"double/head_right": "double/basic_hammer_right",
-						Damage: 0,
-						"double/basic_hammer_right_material": "basic_hammer/log",
-						"double/basic_handle_material": "basic_handle/stick",
-						"double/basic_hammer_left_material": "basic_hammer/log"
-					}
-				}
+				id: 2178,
+				type: "advancement",
+				advancement: "tetra:upgrades/root",
+				criterion: ""
 			}],
 			rewards: [{
 				id: 2117,
@@ -64,17 +54,34 @@
 				}
 			},
 			x: -5.5d,
-			y: -17.0d,
+			y: -19.5d,
 			shape: "gear",
 			subtitle: "No for real",
 			description: [
 				"This little ball of scrap metal will be your guideline on materials from the beginning and even until later on when you find a Forge.",
-				"So keep it somewhere safe."
+				"So keep it somewhere safe.",
+				"",
+				"The Eye of Ender is for an upgrade which allows you to find Forges a bit easier, just put the Holosphere in your Bench"
 			],
 			id: 1909,
 			tasks: [{
-				id: 1935,
-				type: "checkmark"
+				id: 2189,
+				type: "item",
+				item: {
+					id: "tetra:holo",
+					Count: true,
+					tag: {
+						"holo/core_material": "frame/dim",
+						"holo/frame": "holo/frame",
+						"holo/core": "holo/core",
+						"holo/frame_material": "core/ancient"
+					}
+				}
+			}],
+			rewards: [{
+				id: 2190,
+				type: "item",
+				item: "minecraft:ender_eye"
 			}]
 		},
 		{
@@ -108,13 +115,13 @@
 						"double/basic_hammer_left_material": "basic_hammer/diorite"
 					}
 				},
-				consume_items: false
+				consume_items: true
 			}]
 		},
 		{
 			title: "Tiers and their use to you",
 			x: -5.5d,
-			y: -14.0d,
+			y: -16.5d,
 			shape: "gear",
 			description: [
 				"So different in world tasks require different Tiers to work for example prying open a Forge Crate or Container, but also upgrading your Tools require certain Tiers to work.",
@@ -128,8 +135,8 @@
 		},
 		{
 			title: "Double Headed Tools and Weapons",
-			x: -7.0d,
-			y: -14.0d,
+			x: -5.5d,
+			y: -15.0d,
 			shape: "gear",
 			description: [
 				"Which would include a Pickaxe or a Greataxe, it all comes down to what your prefer",
@@ -146,14 +153,16 @@
 			],
 			id: 1915,
 			tasks: [{
-				id: 2119,
-				type: "checkmark"
+				id: 2186,
+				type: "advancement",
+				advancement: "tetra:upgrades/tool_upgrade",
+				criterion: ""
 			}]
 		},
 		{
 			title: "Blades",
-			x: -5.5d,
-			y: -15.5d,
+			x: -7.0d,
+			y: -15.0d,
 			shape: "gear",
 			description: [
 				"Blades have quite a lot of customizations, this should give you a rough list on what each of them do:",
@@ -175,14 +184,16 @@
 			],
 			id: 1917,
 			tasks: [{
-				id: 2120,
-				type: "checkmark"
+				id: 2188,
+				type: "advancement",
+				advancement: "tetra:upgrades/sword_upgrade",
+				criterion: ""
 			}]
 		},
 		{
 			title: "Bows",
 			x: -7.0d,
-			y: -15.5d,
+			y: -16.5d,
 			shape: "gear",
 			description: [
 				"The Bow chapter will be a bit shorter, since there is less stuff to explain, most things are explained by the Holosphere, main things I wanna tap into are:",
@@ -197,15 +208,21 @@
 			],
 			id: 1919,
 			tasks: [{
-				id: 2122,
-				type: "checkmark"
+				id: 2187,
+				type: "advancement",
+				advancement: "tetra:upgrades/bow_upgrade",
+				criterion: ""
 			}]
 		},
 		{
 			title: "Tetra Forges and how they work",
 			x: -2.5d,
 			y: -16.5d,
-			description: ["After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate the hammer and also a Workbench or Forged Workbench for it to work."],
+			description: [
+				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate the hammer and also a Workbench or Forged Workbench for it to work.",
+				"",
+				"Note: Forge Hammers can be crafted, if you're really unlucky."
+			],
 			dependencies: [I;1911],
 			id: 1921,
 			tasks: [{
@@ -231,6 +248,7 @@
 				"",
 				"Planar Stabilizer: + Bonus Stats when used for forging purposes."
 			],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1923,
 			tasks: [
@@ -262,33 +280,39 @@
 				"This is basically is just another crafting material for the Tools, Weapons or Belts.",
 				"It's better than most but not the best except for a few niche cases."
 			],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1925,
 			tasks: [
 				{
 					id: 2126,
 					type: "item",
-					item: "tetra:forged_mesh"
+					item: "tetra:forged_mesh",
+					consume_items: false
 				},
 				{
 					id: 2127,
 					type: "item",
-					item: "tetra:metal_scrap"
+					item: "tetra:metal_scrap",
+					consume_items: false
 				},
 				{
 					id: 2128,
 					type: "item",
-					item: "tetra:quick_latch"
+					item: "tetra:quick_latch",
+					consume_items: false
 				},
 				{
 					id: 2129,
 					type: "item",
-					item: "tetra:forged_beam"
+					item: "tetra:forged_beam",
+					consume_items: false
 				},
 				{
 					id: 2130,
 					type: "item",
-					item: "tetra:forged_bolt"
+					item: "tetra:forged_bolt",
+					consume_items: false
 				}
 			],
 			rewards: [{
@@ -311,8 +335,11 @@
 			description: [
 				"Thermals Cells are the Heart of a Forge with them there would be no power at all, so keep an eye on their power level.",
 				"",
-				"You can refill them in a Transfer Unit, which is configured correctly. There's minigame after you removed the plate with a claw hammer the dot should be in the middle."
+				"You can refill them in a Transfer Unit, which is configured correctly. There's minigame after you removed the plate with a claw hammer the dot should be in the middle.",
+				"",
+				"Note: Thermal Cells are also craftable."
 			],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1927,
 			tasks: [{
@@ -324,7 +351,8 @@
 					tag: {
 						Damage: 0
 					}
-				}
+				},
+				consume_items: false
 			}]
 		},
 		{
@@ -349,6 +377,7 @@
 			y: -15.0d,
 			shape: "diamond",
 			description: ["A Stonecutter is basically a fancy hammer that breaks an area in a slashing motion. The size of the area is usually 1 block deep and 8 blocks wide with varying height."],
+			dependencies: [I;1929],
 			optional: true,
 			id: 1931,
 			tasks: [{
@@ -370,6 +399,7 @@
 			y: -15.0d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi purpose tool that breaks Stone and Dirt and can just be used for mining altogether."],
+			dependencies: [I;1929],
 			optional: true,
 			id: 1933,
 			tasks: [{
@@ -386,8 +416,8 @@
 		},
 		{
 			title: "Hammer Tiers",
-			x: -5.5d,
-			y: -18.5d,
+			x: -2.5d,
+			y: -21.0d,
 			shape: "gear",
 			subtitle: "This is just to hint you into the right direction",
 			description: [
@@ -420,7 +450,7 @@
 		{
 			title: "Tetras Tool Leveling",
 			x: -5.5d,
-			y: -20.0d,
+			y: -18.0d,
 			shape: "gear",
 			description: [
 				"Tetras Leveling System is a bit more complex than other ones.",
@@ -438,6 +468,76 @@
 				id: 2140,
 				type: "checkmark",
 				title: "Tetras Tool Leveling"
+			}]
+		},
+		{
+			title: "This seems to be enough for now",
+			x: -1.0d,
+			y: -19.5d,
+			description: ["To fulfill the requirements for this quest you simply need to give one of your wooden hammers 2 diorite hammer heads!"],
+			dependencies: [I;1907],
+			id: 2166,
+			tasks: [{
+				id: 2176,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_2",
+				criterion: ""
+			}]
+		},
+		{
+			title: "Advanced Hammering",
+			x: 0.5d,
+			y: -19.5d,
+			description: [
+				"This one is a bit more tricky you need to change every part of the hammer this time.",
+				"Grab yourself some wood and put that as the handle, that should give you the Integrity you need to put on the Iron Hammer Heads"
+			],
+			dependencies: [I;2166],
+			id: 2168,
+			tasks: [{
+				id: 2177,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_3",
+				criterion: ""
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -19.5d,
+			description: ["The Advancement Quest for the Tier 4 Hammer!"],
+			dependencies: [I;2168],
+			id: 2179,
+			tasks: [{
+				id: 2180,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_4",
+				criterion: ""
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -17.5d,
+			description: ["The Tier 5 Hammer is here because the Forge is needed to make it. "],
+			dependencies: [I;1921],
+			id: 2181,
+			tasks: [{
+				id: 2182,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_5",
+				criterion: ""
+			}]
+		},
+		{
+			x: 0.5d,
+			y: -17.5d,
+			description: ["Now you're basically a walking Forge, Congrats!"],
+			dependencies: [I;2181],
+			id: 2183,
+			tasks: [{
+				id: 2185,
+				type: "advancement",
+				advancement: "tetra:upgrades/hammer_6",
+				criterion: ""
 			}]
 		}
 	]
