@@ -317,14 +317,14 @@ events.listen('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         event.recipes.mekanism.enriching({
             input: {
-	            ingredient: {
-	                item: recipe.input
-	            }
-        	},
-        	output: {
-	            item: recipe.output,
-	            count: count * recipe.multiplier
-	        }
-	    });
-	});
+                ingredient: {
+                    item: recipe.input
+                }
+            },
+            output: {
+                item: recipe.output,
+                count: count * recipe.multiplier
+            }
+        });
+    });
 });
