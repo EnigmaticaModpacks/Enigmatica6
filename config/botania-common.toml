@@ -50,3 +50,10 @@ worldgen = true
 	#Set this to false to disable spawning with a Lexica Botania in Garden of Glass worlds, if you are modifying the modpack's progression to not start with Botania.
 	spawnWithLexicon = true
 
+[rannuncarpus]
+	#List of item registry names that will be ignored by rannuncarpuses when placing blocks.
+	itemBlacklist = []
+	#List of mod names for rannuncarpuses to ignore.
+	#Ignores Storage Drawers by default due to crashes with placing drawer blocks without player involvement.
+	modBlacklist = ["storagedrawers"]
+

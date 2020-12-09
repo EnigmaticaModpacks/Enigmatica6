@@ -1,0 +1,133 @@
+
+#General settings
+[general]
+
+	#Settings for the blazing generator
+	[general.blazing]
+		#Maximum amount of power the blazing generator can store
+		#Range: > 0
+		blazingGeneratorMaxPower = 1000000
+		#Maximum amount of power the blazing generator give to adjacent machines per side and per tick
+		#Range: > 0
+		blazingGeneratorSendPerTick = 20000
+		#Maximum amount of power the blazing agitator can store
+		#Range: > 0
+		blazingAgitatorMaxPower = 50000
+		#Amount of RF per tick input (per side) for the agitator
+		#Range: > 0
+		blazingAgitatorRFPerTick = 100
+		#Amount of RF per tick the agitator uses while operating
+		#Range: > 0
+		blazingAgitatorUsePerTick = 10
+		#Maximum amount of power the blazing infuser can store
+		#Range: > 0
+		blazingInfuserMaxPower = 50000
+		#Amount of RF per tick input (per side) for the infuser
+		#Range: > 0
+		blazingInfuserRFPerTick = 100
+		#Amount of RF per tick the infuser uses while operating
+		#Range: > 0
+		blazingInfuserUsePerTick = 10
+
+	#Settings for the powercell
+	[general.dimensionalcell]
+		#Base amount of RF/tick that can be extracted/inserted in this block
+		#Range: > 0
+		rfPerTick = 5000
+		#Maximum RF storage that a single cell can hold
+		#Range: > 0
+		rfPerNormalCell = 1000000
+		#How much better is the advanced cell with RF and RF/t
+		#Range: > 0
+		advancedFactor = 4
+		#How much worse is the simple cell with RF and RF/t
+		#Range: > 0
+		simpleFactor = 4
+		#The maximum cost factor for extracting energy out of a powercell for blocks in other dimensions or farther away then 10000 blocks
+		#Range: 0.0 ~ 1.0E9
+		powerCellCostFactor = 1.1
+		#At this distance the cost factor will be maximum. This value is also used when power is extracted from cells in different dimensions
+		#Range: 0.0 ~ 1.0E9
+		powerCellDistanceCap = 10000.0
+		#As soon as powercells are not connected this value will be taken as the minimum distance to base the cost factor from
+		#Range: 0.0 ~ 1.0E9
+		powerCellMinDistance = 100.0
+		#A multiplier for the distance if RFTools dimensions are involved. If both sides are RFTools dimensions then this multiplier is done twice
+		#Range: 0.0 ~ 1.0E9
+		powerCellRFToolsDimensionAdvantage = 0.5
+		#RF per tick that the powrcell can charge items with
+		#Range: > 0
+		powercellChargePerTick = 30000
+
+	#Settings for the endergenic generator
+	[general.endergenic]
+		#Maximum amount of power the endergenic can store
+		#Range: > 0
+		endergenicMaxPower = 5000000
+		#The chance (in 1/10 percent, so 1000 = 100%) that an endergenic pearl is lost while trying to hold it
+		#Range: 0 ~ 1000
+		endergenicChanceLost = 5
+		#The amount of RF that is consumed every tick to hold the endergenic pearl
+		#Range: > 0
+		endergenicRfHolding = 500
+		#The amount of RF that every endergenic will keep itself (so that it can hold pearls)
+		#Range: > 0
+		endergenicKeepRf = 2000
+		#The amount of RF per tick that this generator can give from its internal buffer to adjacent blocks
+		#Range: > 0
+		endergenicSendPerTick = 20000
+		#The amount of particles to spawn whenever energy is generated (use 0 to disable)
+		#Range: 0 ~ 1000
+		endergenicGoodParticles = 10
+		#The amount of particles to spawn whenever a pearl is lost (use 0 to disable)
+		#Range: 0 ~ 1000
+		endergenicBadParticles = 10
+		#Multiplier for power generation
+		#Range: 0.0 ~ 1.0E9
+		powergenFactor = 2.0
+
+	#Coal generator settings
+	[general.coalgenerator]
+		#Amount of RF generated per tick
+		#Range: > 0
+		generatePerTick = 60
+		#Amount of ticks generated per coal
+		#Range: > 0
+		ticksPerCoal = 600
+		#Maximum RF storage that the generator can hold
+		#Range: > 0
+		generatorMaxRF = 500000
+		#RF per tick that the generator can send
+		#Range: > 0
+		generatorRFPerTick = 2000
+		#RF per tick that the generator can charge items with
+		#Range: > 0
+		generatorChargePerTick = 1000
+
+	#Powercell settings
+	[general.powercell]
+		#Maximum RF a single tier1 cell can hold
+		#Range: 1 ~ 2000000000
+		tier1MaxRF = 500000
+		#Maximum RF a single tier2 cell can hold
+		#Range: 1 ~ 2000000000
+		tier2MaxRF = 4000000
+		#Maximum RF a single tier3 cell can hold
+		#Range: 1 ~ 2000000000
+		tier3MaxRF = 20000000
+		#Maximum RF/tick per side for a tier1 cell
+		#Range: 1 ~ 2000000000
+		tier1MaxRFPerTick = 250
+		#Maximum RF/tick per side for a tier2 cell
+		#Range: 1 ~ 2000000000
+		tier2MaxRFPerTick = 1000
+		#Maximum RF/tick per side for a tier3 cell
+		#Range: 1 ~ 2000000000
+		tier3MaxRFPerTick = 4000
+		#How much extra RF/tick every cell gets per cell in the network. 0 means constant RF/t. 1 means linear with amount of cells
+		#Range: 0.0 ~ 100.0
+		rfPerTickScale = 0.25
+		#Maximum number of blocks in a single multiblock network
+		#Range: 1 ~ 2000000000
+		networkMax = 729
+
