@@ -1,0 +1,29 @@
+{
+	id: 2197,
+	filename: "blood_magic_wip",
+	order_index: 21,
+	title: "Blood Magic WIP",
+	icon: "bloodmagic:weakbloodshard",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [{
+		x: 0.0d,
+		y: 0.0d,
+		id: 2198,
+		tasks: [{
+			id: 2199,
+			type: "checkmark"
+		}],
+		rewards: [{
+			id: 2200,
+			type: "item",
+			item: {
+				id: "patchouli:guide_book",
+				Count: true,
+				tag: {
+					"patchouli:book": "bloodmagic:guide"
+				}
+			}
+		}]
+	}]
+}
