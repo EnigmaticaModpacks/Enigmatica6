@@ -38,23 +38,7 @@ events.listen('recipes', function (event) {
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
 
-        'decorative_blocks:hellbark_beam',
-        'decorative_blocks:jungle_beam',
-        'decorative_blocks:birch_beam',
-        'decorative_blocks:umbran_beam',
-        'decorative_blocks:jacaranda_beam',
-        'decorative_blocks:magic_beam',
-        'decorative_blocks:palm_beam',
-        'decorative_blocks:mahogany_beam',
-        'decorative_blocks:willow_beam',
-        'decorative_blocks:acacia_beam',
-        'decorative_blocks:cherry_beam',
-        'decorative_blocks:fir_beam',
-        'decorative_blocks:dark_oak_beam',
-        'decorative_blocks:oak_beam',
-        'decorative_blocks:redwood_beam',
-        'decorative_blocks:dead_beam',
-        'decorative_blocks:spruce_beam',
+        'engineersdecor:dependent/slag_brick_block_recipe',
 
         'immersiveengineering:crafting/stick_steel',
 
@@ -76,5 +60,15 @@ events.listen('recipes', function (event) {
 
     disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
+    });
+
+    event.remove({
+        output: '/buildersaddition:\\w+_vertical_slab/',
+        mod: 'buildersaddition',
+        type: 'minecraft:crafting_shaped'
+    });
+
+    beamRecipes.forEach((recipe) => {
+        event.remove({ output: recipe.output });
     });
 });

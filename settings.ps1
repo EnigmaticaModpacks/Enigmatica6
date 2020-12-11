@@ -28,6 +28,7 @@ $CONFIGS_TO_REMOVE = @(
 	"mythicbotany-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
+	"rftoolspower-client.toml",
 	"rftoolscontrol-client.toml",
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",

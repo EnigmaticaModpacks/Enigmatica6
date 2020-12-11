@@ -103,7 +103,7 @@
 	Thatch = true
 	"Variant Chests" = true
 	"Variant Ladders" = true
-	"Vertical Slabs" = false
+	"Vertical Slabs" = true
 	Shingles = true
 	"Nether Brick Fence Gate" = true
 	"Item Frames" = true
@@ -210,6 +210,7 @@
 	"F To Switch" = true
 	"Hotbar Changer" = true
 	"Item Sharing" = true
+	"Right Click Armor" = true
 	"Easy Transfering" = true
 
 	[management.inventory_sorting]
@@ -222,6 +223,7 @@
 
 [tools]
 	Pickarang = true
+	"Seed Pouch" = true
 	"Pathfinder Maps" = true
 	"Bottled Cloud" = true
 	"Color Runes" = true
@@ -267,6 +269,10 @@
 		#minecraft:ice_mountains,2,8,14,7FE4FF,Ice Mountains Pathfinder Map
 		Customs = []
 		"Xp From Trade" = 5
+
+	[tools.seed_pouch]
+		"Show All Variants In Creative" = true
+		"Max Items" = 640
 
 	[tools.color_runes]
 		"Jungle Temple Weight" = 8

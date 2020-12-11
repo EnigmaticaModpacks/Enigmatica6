@@ -1,7 +1,7 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 18,
+	order_index: 20,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
@@ -109,7 +109,7 @@
 			rewards: [{
 				id: 858,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -127,7 +127,7 @@
 			rewards: [{
 				id: 860,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -149,7 +149,7 @@
 			rewards: [{
 				id: 859,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -168,7 +168,7 @@
 			rewards: [{
 				id: 883,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -220,7 +220,7 @@
 			rewards: [{
 				id: 1186,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -261,7 +261,7 @@
 				{
 					id: 864,
 					type: "loot",
-					table: 15
+					table: 51
 				}
 			]
 		},
@@ -280,7 +280,7 @@
 			rewards: [{
 				id: 886,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -301,7 +301,7 @@
 			rewards: [{
 				id: 884,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -319,7 +319,7 @@
 			rewards: [{
 				id: 885,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -360,7 +360,7 @@
 				{
 					id: 865,
 					type: "loot",
-					table: 15
+					table: 51
 				}
 			]
 		},
@@ -385,11 +385,19 @@
 				type: "item",
 				item: "naturesaura:ancient_sapling"
 			}],
-			rewards: [{
-				id: 873,
-				type: "loot",
-				table: 15
-			}]
+			rewards: [
+				{
+					id: 873,
+					type: "loot",
+					table: 18
+				},
+				{
+					id: 1794,
+					type: "item",
+					item: "naturesaura:ancient_log",
+					count: 32
+				}
+			]
 		},
 		{
 			x: 0.0d,
@@ -410,7 +418,7 @@
 			rewards: [{
 				id: 881,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -433,7 +441,7 @@
 				id: 857,
 				type: "item",
 				item: "naturesaura:gold_leaf",
-				count: 8
+				count: 32
 			}]
 		},
 		{
@@ -455,7 +463,7 @@
 			rewards: [{
 				id: 888,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -473,7 +481,7 @@
 			rewards: [{
 				id: 887,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -495,7 +503,7 @@
 			rewards: [{
 				id: 871,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -521,7 +529,17 @@
 					id: "naturesaura:infused_iron_pickaxe",
 					Count: true,
 					tag: {
-						Damage: 0
+						Damage: 0,
+						Enchantments: [
+							{
+								lvl: 5s,
+								id: "minecraft:unbreaking"
+							},
+							{
+								lvl: 5s,
+								id: "minecraft:fortune"
+							}
+						]
 					}
 				}
 			}]
@@ -541,7 +559,7 @@
 			rewards: [{
 				id: 880,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -559,7 +577,7 @@
 			rewards: [{
 				id: 882,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -581,7 +599,7 @@
 			rewards: [{
 				id: 879,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -608,7 +626,7 @@
 			rewards: [{
 				id: 878,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -746,7 +764,7 @@
 			rewards: [{
 				id: 866,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -773,7 +791,7 @@
 			rewards: [{
 				id: 853,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -796,7 +814,7 @@
 			rewards: [{
 				id: 854,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -896,7 +914,7 @@
 			rewards: [{
 				id: 869,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -918,7 +936,7 @@
 			rewards: [{
 				id: 877,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -936,7 +954,7 @@
 			rewards: [{
 				id: 876,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -954,7 +972,7 @@
 			rewards: [{
 				id: 872,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -969,6 +987,11 @@
 				id: 795,
 				type: "checkmark",
 				title: "Delving Deeper"
+			}],
+			rewards: [{
+				id: 2147,
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -1058,7 +1081,7 @@
 				{
 					id: 870,
 					type: "loot",
-					table: 16
+					table: 52
 				}
 			]
 		}

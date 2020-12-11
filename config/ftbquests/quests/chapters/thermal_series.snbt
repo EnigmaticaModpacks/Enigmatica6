@@ -1,7 +1,7 @@
 {
 	id: 929,
 	filename: "thermal_series",
-	order_index: 14,
+	order_index: 16,
 	title: "Thermal Series",
 	icon: "thermal:wrench",
 	default_quest_shape: "",
@@ -493,7 +493,7 @@
 			}]
 		},
 		{
-			x: 1.0d,
+			x: 1.5d,
 			y: 5.5d,
 			description: ["One of several augments useful for getting more out of your tools and machines. "],
 			dependencies: [I;
@@ -513,7 +513,7 @@
 			}]
 		},
 		{
-			x: 3.0d,
+			x: 2.5d,
 			y: 5.5d,
 			description: ["One of several augments useful for getting more out of your tools and machines. "],
 			dependencies: [I;931],
@@ -531,7 +531,7 @@
 		},
 		{
 			x: 2.0d,
-			y: 5.0d,
+			y: 4.5d,
 			description: ["Integral Components generally upgrade all stats of the machine they're installed in. More advanced versions will require more exotic materials. "],
 			dependencies: [I;1200],
 			id: 1254,
@@ -548,7 +548,7 @@
 		},
 		{
 			x: 2.0d,
-			y: 6.0d,
+			y: 6.5d,
 			description: ["One of several augments useful for getting more out of your dynamos. "],
 			dependencies: [I;
 				1221,

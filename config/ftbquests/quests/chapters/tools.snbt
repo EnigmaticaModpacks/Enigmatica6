@@ -28,11 +28,21 @@
 				type: "item",
 				item: "pneumaticcraft:jackhammer"
 			}],
-			rewards: [{
-				id: 456,
-				type: "item",
-				item: "pneumaticcraft:drill_bit_compressed_iron"
-			}]
+			rewards: [
+				{
+					id: 456,
+					type: "item",
+					item: "pneumaticcraft:drill_bit_compressed_iron"
+				},
+				{
+					id: 2154,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -7.5d,
@@ -46,12 +56,22 @@
 				type: "item",
 				item: "pneumaticcraft:drill_bit_diamond"
 			}],
-			rewards: [{
-				id: 459,
-				type: "item",
-				item: "pneumaticcraft:volume_upgrade",
-				count: 5
-			}]
+			rewards: [
+				{
+					id: 459,
+					type: "item",
+					item: "pneumaticcraft:volume_upgrade",
+					count: 5
+				},
+				{
+					id: 1784,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -7.5d,
@@ -65,12 +85,22 @@
 				type: "item",
 				item: "pneumaticcraft:drill_bit_netherite"
 			}],
-			rewards: [{
-				id: 462,
-				type: "item",
-				item: "pneumaticcraft:speed_upgrade",
-				count: 2
-			}]
+			rewards: [
+				{
+					id: 462,
+					type: "item",
+					item: "pneumaticcraft:speed_upgrade",
+					count: 2
+				},
+				{
+					id: 1783,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -10.0d,
@@ -100,7 +130,7 @@
 			rewards: [{
 				id: 1616,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -133,7 +163,7 @@
 			rewards: [{
 				id: 1615,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -163,7 +193,7 @@
 			rewards: [{
 				id: 1617,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -196,7 +226,7 @@
 			rewards: [{
 				id: 1618,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -239,7 +269,7 @@
 			rewards: [{
 				id: 1605,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -255,7 +285,7 @@
 			rewards: [{
 				id: 1604,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -271,7 +301,7 @@
 			rewards: [{
 				id: 1602,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -287,7 +317,7 @@
 			rewards: [{
 				id: 1603,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -303,7 +333,7 @@
 			rewards: [{
 				id: 1599,
 				type: "loot",
-				table: 12
+				table: 15
 			}]
 		},
 		{
@@ -339,7 +369,7 @@
 			rewards: [{
 				id: 1601,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -357,7 +387,7 @@
 			rewards: [{
 				id: 1600,
 				type: "loot",
-				table: 13
+				table: 16
 			}]
 		},
 		{
@@ -404,13 +434,17 @@
 				item: "pneumaticcraft:sentry_turret"
 			}],
 			rewards: [{
-				id: 509,
+				id: 2152,
 				type: "item",
 				item: {
-					id: "pneumaticcraft:gun_ammo",
+					id: "pneumaticcraft:gun_ammo_ap",
 					Count: true,
 					tag: {
-						Damage: 0
+						Damage: 0,
+						Enchantments: [{
+							lvl: 5s,
+							id: "minecraft:unbreaking"
+						}]
 					}
 				}
 			}]
@@ -428,13 +462,17 @@
 				item: "pneumaticcraft:minigun"
 			}],
 			rewards: [{
-				id: 525,
+				id: 2151,
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo",
 					Count: true,
 					tag: {
-						Damage: 0
+						Damage: 0,
+						Enchantments: [{
+							lvl: 5s,
+							id: "minecraft:unbreaking"
+						}]
 					}
 				}
 			}]
@@ -452,7 +490,7 @@
 					id: 515,
 					type: "item",
 					item: {
-						id: "pneumaticcraft:gun_ammo_ap",
+						id: "pneumaticcraft:gun_ammo_freezing",
 						Count: true,
 						tag: {
 							Damage: 0
@@ -469,8 +507,24 @@
 							Damage: 0
 						}
 					}
+				},
+				{
+					id: 2153,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:gun_ammo_incendiary",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
 				}
-			]
+			],
+			rewards: [{
+				id: 1782,
+				type: "loot",
+				table: 11
+			}]
 		},
 		{
 			x: -5.0d,
@@ -529,9 +583,12 @@
 				item: "pneumaticcraft:aerial_interface"
 			}],
 			rewards: [{
-				id: 1606,
-				type: "loot",
-				table: 13
+				id: 2196,
+				type: "command",
+				title: "Sorcerer's Delight",
+				icon: "biomesoplenty:nether_crystal",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -549,6 +606,7 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
+			dependencies: [I;1961],
 			id: 1077,
 			tasks: [{
 				id: 1078,
@@ -560,6 +618,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2102,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
@@ -575,6 +638,7 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
+			dependencies: [I;1961],
 			id: 1079,
 			tasks: [{
 				id: 1080,
@@ -586,6 +650,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2101,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
@@ -599,6 +668,7 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
+			dependencies: [I;1961],
 			id: 1081,
 			tasks: [{
 				id: 1082,
@@ -610,6 +680,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2100,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
@@ -624,6 +699,7 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
+			dependencies: [I;1961],
 			id: 1083,
 			tasks: [{
 				id: 1084,
@@ -635,6 +711,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2099,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
@@ -643,6 +724,7 @@
 			y: -8.0d,
 			subtitle: "Soylent Green",
 			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."],
+			dependencies: [I;1701],
 			id: 1085,
 			tasks: [
 				{
@@ -655,7 +737,12 @@
 					type: "item",
 					item: "mekanism:nutritional_liquifier"
 				}
-			]
+			],
+			rewards: [{
+				id: 2109,
+				type: "loot",
+				table: 18
+			}]
 		},
 		{
 			x: 0.0d,
@@ -666,6 +753,11 @@
 				id: 1088,
 				type: "item",
 				item: "mekanism:module_vision_enhancement_unit"
+			}],
+			rewards: [{
+				id: 2107,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -677,6 +769,11 @@
 				id: 1090,
 				type: "item",
 				item: "mekanism:module_electrolytic_breathing_unit"
+			}],
+			rewards: [{
+				id: 2106,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -688,6 +785,11 @@
 				id: 1092,
 				type: "item",
 				item: "mekanism:module_hydraulic_propulsion_unit"
+			}],
+			rewards: [{
+				id: 2105,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -699,6 +801,11 @@
 				id: 1094,
 				type: "item",
 				item: "mekanism:module_magnetic_attraction_unit"
+			}],
+			rewards: [{
+				id: 2110,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -710,6 +817,11 @@
 				id: 1096,
 				type: "item",
 				item: "mekanism:module_charge_distribution_unit"
+			}],
+			rewards: [{
+				id: 2103,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -728,6 +840,11 @@
 				id: 1098,
 				type: "item",
 				item: "mekanism:module_energy_unit"
+			}],
+			rewards: [{
+				id: 2111,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -739,6 +856,11 @@
 				id: 1100,
 				type: "item",
 				item: "mekanism:module_jetpack_unit"
+			}],
+			rewards: [{
+				id: 2108,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -750,6 +872,11 @@
 				id: 1102,
 				type: "item",
 				item: "mekanism:module_locomotive_boosting_unit"
+			}],
+			rewards: [{
+				id: 2104,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -757,6 +884,7 @@
 			y: -8.5d,
 			subtitle: "Don't Leave That Plasma Cutter Running",
 			description: ["A basic multi-tool with built in vein mining and excellent attack damage."],
+			dependencies: [I;1733],
 			id: 1103,
 			tasks: [{
 				id: 1104,
@@ -768,6 +896,11 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2097,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -775,6 +908,7 @@
 			y: -6.5d,
 			subtitle: "Rip and Tear",
 			description: ["A powerful all in one tool capable of accepting several upgrades. "],
+			dependencies: [I;1961],
 			id: 1105,
 			tasks: [{
 				id: 1106,
@@ -786,17 +920,28 @@
 						HideFlags: 2
 					}
 				}
+			}],
+			rewards: [{
+				id: 2098,
+				type: "loot",
+				table: 19
 			}]
 		},
 		{
 			x: -3.5d,
 			y: -7.5d,
-			description: ["Used for applying all upgrades to the MekaTool and MekaArmor pieces."],
+			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."],
+			dependencies: [I;1961],
 			id: 1107,
 			tasks: [{
 				id: 1108,
 				type: "item",
 				item: "mekanism:modification_station"
+			}],
+			rewards: [{
+				id: 2096,
+				type: "loot",
+				table: 18
 			}]
 		},
 		{
@@ -866,25 +1011,35 @@
 			],
 			dependencies: [I;1132],
 			id: 1119,
-			tasks: [{
-				id: 1120,
-				type: "item",
-				item: {
-					id: "mininggadgets:mininggadget",
-					Count: true,
-					tag: {}
-				}
-			}],
-			rewards: [
+			tasks: [
 				{
-					id: 1648,
+					id: 1120,
+					type: "item",
+					item: {
+						id: "mininggadgets:mininggadget",
+						Count: true,
+						tag: {}
+					}
+				},
+				{
+					id: 1778,
 					type: "item",
 					item: "mininggadgets:modificationtable"
-				},
+				}
+			],
+			rewards: [
 				{
 					id: 1661,
 					type: "item",
 					item: "mininggadgets:upgrade_light_placer"
+				},
+				{
+					id: 1777,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
 			]
 		},
@@ -911,9 +1066,12 @@
 				}
 			}],
 			rewards: [{
-				id: 1672,
-				type: "loot",
-				table: 18
+				id: 1772,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -927,9 +1085,12 @@
 				item: "mininggadgets:upgrade_fortune_3"
 			}],
 			rewards: [{
-				id: 1669,
-				type: "loot",
-				table: 18
+				id: 1775,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -942,11 +1103,21 @@
 				type: "item",
 				item: "mininggadgets:upgrade_silk"
 			}],
-			rewards: [{
-				id: 1659,
-				type: "item",
-				item: "mininggadgets:upgrade_magnet"
-			}]
+			rewards: [
+				{
+					id: 1659,
+					type: "item",
+					item: "mininggadgets:upgrade_magnet"
+				},
+				{
+					id: 1776,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -9.0d,
@@ -959,9 +1130,12 @@
 				item: "mininggadgets:upgrade_efficiency_5"
 			}],
 			rewards: [{
-				id: 1670,
-				type: "loot",
-				table: 18
+				id: 1774,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -975,9 +1149,12 @@
 				item: "mininggadgets:upgrade_battery_3"
 			}],
 			rewards: [{
-				id: 1671,
-				type: "loot",
-				table: 18
+				id: 1773,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1226,11 +1403,21 @@
 					}
 				}
 			],
-			rewards: [{
-				id: 1631,
-				type: "item",
-				item: "aquaculture:nether_star_hook"
-			}]
+			rewards: [
+				{
+					id: 1631,
+					type: "item",
+					item: "aquaculture:nether_star_hook"
+				},
+				{
+					id: 1780,
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "biomesoplenty:nether_crystal",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -2.0d,
@@ -1250,10 +1437,12 @@
 				}
 			}],
 			rewards: [{
-				id: 1635,
-				type: "item",
-				item: "aquaculture:neptunium_ingot",
-				count: 3
+				id: 1781,
+				type: "command",
+				title: "Sorcerer's Delight",
+				icon: "biomesoplenty:nether_crystal",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1297,9 +1486,12 @@
 					}
 				},
 				{
-					id: 1674,
-					type: "loot",
-					table: 18
+					id: 1779,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
 			]
 		},
@@ -1378,11 +1570,11 @@
 						tag: {
 							StoredEnchantments: [
 								{
-									lvl: 5s,
+									lvl: 7s,
 									id: "ars_nouveau:mana_regen"
 								},
 								{
-									lvl: 5s,
+									lvl: 7s,
 									id: "ars_nouveau:mana_boost"
 								}
 							]
@@ -1454,12 +1646,13 @@
 			rewards: [{
 				id: 1637,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
 			x: -6.0d,
 			y: -5.5d,
+			subtitle: "Guaranteed to Satisfy",
 			description: [
 				"A powered drill that makes short work of any digging task. Use a Tinker's Workbench to install various upgrades:",
 				"",
@@ -1474,15 +1667,26 @@
 				type: "item",
 				item: "thermal:flux_drill"
 			}],
-			rewards: [{
-				id: 1623,
-				type: "loot",
-				table: 1
-			}]
+			rewards: [
+				{
+					id: 1623,
+					type: "loot",
+					table: 1
+				},
+				{
+					id: 2149,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -5.0d,
 			y: -5.5d,
+			subtitle: "You Try to Hold Me But I Bust Through",
 			description: [
 				"A powered saw that makes short work of any arboreal task. Use a Tinker's Workbench to install various upgrades:",
 				"",
@@ -1497,11 +1701,21 @@
 				type: "item",
 				item: "thermal:flux_saw"
 			}],
-			rewards: [{
-				id: 1622,
-				type: "loot",
-				table: 1
-			}]
+			rewards: [
+				{
+					id: 1622,
+					type: "loot",
+					table: 1
+				},
+				{
+					id: 2150,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "artifacts:mimic_spawn_egg",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Hazmat Suit",
@@ -1514,6 +1728,7 @@
 			},
 			x: -6.0d,
 			y: -4.5d,
+			subtitle: "So Dangerous, You'll Have to Sign a Waiver",
 			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."],
 			dependencies: [I;1190],
 			id: 1172,
@@ -1580,6 +1795,7 @@
 			},
 			x: -5.0d,
 			y: -4.5d,
+			subtitle: "You'll Think You're Looking at Aquaman",
 			description: ["A technological marvel that allows the wearer to remain productive for longer under water."],
 			dependencies: [I;930],
 			id: 1174,
@@ -1682,7 +1898,7 @@
 			rewards: [{
 				id: 1636,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		}
 	]

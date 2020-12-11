@@ -1,20 +1,28 @@
 
-#chiselsandbits.config.help.comment
-[help]
+[common]
 
-	[help.help]
-		#chiselsandbits.config.help.enabled.comment
-		enabled = true
+	#mod.chiselsandbits.config.common.help.comment
+	[common.help]
 
-#chiselsandbits.config.performance.comment
-[performance]
+		[common.help.common]
 
-	[performance.performance]
+			[common.help.common.help]
+				#mod.chiselsandbits.config.common.help.common.help.enabled.comment
+				enabled = true
 
-		[performance.performance.collisions]
+	[common.common]
 
-			[performance.performance.collisions.cache]
-				#chiselsandbits.config.performance.collisions.cache.size.comment
-				#Range: -9223372036854775808 ~ 9223372036854775807
-				size = 10000
+		#mod.chiselsandbits.config.common.performance.comment
+		[common.common.performance]
+
+			[common.common.performance.common]
+
+				[common.common.performance.common.performance]
+
+					[common.common.performance.common.performance.collisions]
+
+						[common.common.performance.common.performance.collisions.cache]
+							#mod.chiselsandbits.config.common.performance.common.performance.collisions.cache.size.comment
+							#Range: -9223372036854775808 ~ 9223372036854775807
+							size = 10000
 

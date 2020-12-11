@@ -1,0 +1,69 @@
+{
+	id: 2028,
+	title: "Epic Mekanism Loot Box",
+	icon: "aquaculture:treasure_chest",
+	loot_size: 2,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: {
+				id: "mekanism:advanced_chemical_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						InfusionTanks: [{
+							Tank: false,
+							stored: {
+								infuseTypeName: "mekanism:carbon",
+								amount: 5120L
+							}
+						}]
+					}
+				}
+			}
+		},
+		{
+			item: {
+				id: "mekanism:advanced_chemical_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						InfusionTanks: [{
+							Tank: false,
+							stored: {
+								infuseTypeName: "mekanism:redstone",
+								amount: 5120L
+							}
+						}]
+					}
+				}
+			}
+		},
+		{
+			item: "mekanism:upgrade_speed",
+			count: 4,
+			weight: 2
+		},
+		{
+			item: "mekanism:upgrade_energy",
+			count: 4,
+			weight: 2
+		},
+		{
+			item: "mekanism:advanced_universal_cable",
+			count: 16
+		},
+		{
+			item: "mekanism:advanced_mechanical_pipe",
+			count: 16
+		},
+		{
+			item: "mekanism:advanced_pressurized_tube",
+			count: 16
+		},
+		{
+			item: "mekanism:ultimate_tier_installer"
+		}
+	]
+}
