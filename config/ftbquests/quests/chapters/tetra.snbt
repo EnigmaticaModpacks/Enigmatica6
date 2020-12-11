@@ -101,6 +101,7 @@
 				"The Eye of Ender is for an upgrade which allows you to find Forges a bit easier, just put the Holosphere in your Workbench to apply it."
 			],
 			dependencies: [I;1907],
+			optional: true,
 			id: 1909,
 			tasks: [{
 				id: 2189,
@@ -402,7 +403,7 @@
 		{
 			title: "Tetras Tool Leveling",
 			x: -4.0d,
-			y: -22.0d,
+			y: -20.5d,
 			shape: "gear",
 			description: [
 				"Here's a short breakdown of some key aspects of Tetra:",
@@ -415,13 +416,23 @@
 				"Tetra tools are honed as you use them - Every level of honing allows you to improve the tool in some way.",
 				"",
 				"- Settling",
-				"Setlling happens when when you use your tools regularly and new parts well settle in. They get Integrity when this happens."
+				"Integrity is increased when a part settles, which happens when you've used the tool for some time. ",
+				"",
+				"Note: A few materials never settle."
 			],
+			dependencies: [I;2115],
+			optional: true,
 			id: 2139,
 			tasks: [{
 				id: 2140,
 				type: "checkmark",
-				title: "Tetras Tool Leveling"
+				title: "Tetras Tool Leveling",
+				icon: "botania:cosmetic_questgiver_mark"
+			}],
+			rewards: [{
+				id: 2195,
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{

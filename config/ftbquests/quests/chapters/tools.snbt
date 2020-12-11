@@ -583,9 +583,12 @@
 				item: "pneumaticcraft:aerial_interface"
 			}],
 			rewards: [{
-				id: 1606,
-				type: "loot",
-				table: 13
+				id: 2196,
+				type: "command",
+				title: "Sorcerer's Delight",
+				icon: "biomesoplenty:nether_crystal",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				player_command: false
 			}]
 		},
 		{
