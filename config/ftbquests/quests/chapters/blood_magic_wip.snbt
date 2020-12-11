@@ -6,24 +6,183 @@
 	icon: "bloodmagic:weakbloodshard",
 	always_invisible: true,
 	default_quest_shape: "",
-	quests: [{
-		x: 0.0d,
-		y: 0.0d,
-		id: 2198,
-		tasks: [{
-			id: 2199,
-			type: "checkmark"
-		}],
-		rewards: [{
-			id: 2200,
-			type: "item",
-			item: {
+	quests: [
+		{
+			icon: {
 				id: "patchouli:guide_book",
 				Count: true,
 				tag: {
 					"patchouli:book": "bloodmagic:guide"
 				}
-			}
-		}]
-	}]
+			},
+			x: -3.5d,
+			y: 1.0d,
+			id: 2198,
+			tasks: [{
+				id: 2199,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 2200,
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: true,
+						tag: {
+							"patchouli:book": "bloodmagic:guide"
+						}
+					}
+				},
+				{
+					id: 2222,
+					type: "item",
+					item: "bloodmagic:soulsnare",
+					count: 16
+				}
+			]
+		},
+		{
+			x: -3.5d,
+			y: 3.0d,
+			id: 2203,
+			tasks: [{
+				id: 2204,
+				type: "item",
+				item: "bloodmagic:soulforge"
+			}],
+			rewards: [{
+				id: 2205,
+				type: "item",
+				item: {
+					id: "bloodmagic:basemonstersoul",
+					Count: true,
+					tag: {
+						souls: 5.0d
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 4.0d,
+			id: 2207,
+			tasks: [{
+				id: 2208,
+				type: "item",
+				item: "bloodmagic:altar"
+			}],
+			rewards: [
+				{
+					id: 2223,
+					type: "item",
+					item: "prettypipes:pipe",
+					count: 4
+				},
+				{
+					id: 2224,
+					type: "item",
+					item: "prettypipes:low_filter_module"
+				},
+				{
+					id: 2225,
+					type: "item",
+					item: "prettypipes:low_extraction_module",
+					count: 2
+				},
+				{
+					id: 2226,
+					type: "item",
+					item: "prettypipes:stack_size_module"
+				}
+			]
+		},
+		{
+			x: -6.5d,
+			y: 4.0d,
+			id: 2209,
+			tasks: [{
+				id: 2210,
+				type: "item",
+				item: {
+					id: "bloodmagic:arcaneashes",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 7.5d,
+			id: 2211,
+			tasks: [{
+				id: 2212,
+				type: "item",
+				item: {
+					id: "bloodmagic:soulsword",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: 2213,
+				type: "item",
+				item: {
+					id: "bloodmagic:soulpickaxe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 5.5d,
+			id: 2214,
+			tasks: [{
+				id: 2215,
+				type: "item",
+				item: {
+					id: "bloodmagic:soulgempetty",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 9.5d,
+			id: 2216,
+			tasks: [{
+				id: 2217,
+				type: "checkmark",
+				title: "Demonic Will and Crystal Manipulation"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 5.5d,
+			id: 2218,
+			tasks: [{
+				id: 2219,
+				type: "checkmark",
+				title: "Blood Altar Building"
+			}]
+		},
+		{
+			x: -8.5d,
+			y: 5.5d,
+			id: 2220,
+			tasks: [{
+				id: 2221,
+				type: "checkmark",
+				title: "Alchemy"
+			}]
+		}
+	]
 }
