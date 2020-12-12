@@ -19,7 +19,7 @@
 	default_quest_shape: "",
 	quests: [
 		{
-			title: "Mallet",
+			title: "Tier 1",
 			x: -2.5d,
 			y: -19.5d,
 			subtitle: "Hammer time!",
@@ -127,6 +127,7 @@
 			title: "Salvage",
 			x: -1.5d,
 			y: -14.0d,
+			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
 			description: ["Hit the highlighted areas on crates and containers with the correct tools to break them open."],
 			optional: true,
@@ -178,9 +179,7 @@
 				"",
 				"Place a Workbench below the powered Forge Hammer, and you'll gain access to it's Hammering abilities.",
 				"",
-				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. ",
-				"",
-				"You'll be missing out on loot though!"
+				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
 			],
 			dependencies: [I;
 				1911,
@@ -197,21 +196,21 @@
 		},
 		{
 			title: "Forge Upgrades",
-			x: -3.5d,
-			y: -13.0d,
-			shape: "diamond",
+			x: -2.5d,
+			y: -11.5d,
 			description: [
-				"The Forge Upgrades either add Efficiency, Hammer Tiers or add increased stats to an Item and can only be found in the Forge Structures underneath cold Biomes.",
-				"You can add up to a maximum of 2 Upgrades to a single Hammer.",
+				"Upgrade your Forge Hammer!",
 				"",
-				"Insulates Plate: + Efficiency",
+				"Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes.",
+				"You can add up to a maximum of 2 Upgrades to a single Forge Hammer.",
 				"",
 				"Combustion Chamber: + 1 Hammer Tier",
 				"",
-				"Planar Stabilizer: + Bonus Stats when used for forging purposes."
+				"Insulated Plate: + Efficiency",
+				"",
+				"Planar Stabilizer: + Stats when used for forging purposes"
 			],
 			dependencies: [I;1921],
-			optional: true,
 			id: 1923,
 			tasks: [
 				{
@@ -235,7 +234,7 @@
 		},
 		{
 			title: "General junk that you find in Forges",
-			x: -3.5d,
+			x: -4.0d,
 			y: -15.0d,
 			shape: "diamond",
 			description: [
@@ -291,19 +290,15 @@
 		},
 		{
 			title: "Thermal Cells",
-			x: -4.0d,
-			y: -14.0d,
+			x: -3.5d,
+			y: -12.5d,
 			description: [
-				"Thermal Cells are the batteries of the Forge Hammer, without them it's useless.",
+				"Thermal Cells are the batteries of the Forge Hammer.",
 				"",
-				"You can Thermal Cells in them in a Transfer Unit, when it's configured correctly. ",
-				"",
-				"",
-				"Note: Thermal Cells are also craftable.",
+				"You can recharge in them in a Transfer Unit, when it's configured correctly. ",
 				"",
 				"",
-				"",
-				"Hint: There's minigame after you remove the Transfer Unit plate with a Claw, the dot should be in the middle."
+				"Note: Thermal Cells are also craftable."
 			],
 			dependencies: [I;1921],
 			id: 1927,
@@ -323,8 +318,8 @@
 		{
 			title: "Stonecutter",
 			icon: "tetra:stonecutter",
-			x: -0.5d,
-			y: -14.5d,
+			x: 0.0d,
+			y: -15.0d,
 			shape: "diamond",
 			description: ["A Stonecutter is basically a fancy hammer that breaks an area in a slashing motion. The size of the area is usually 1 block deep and 8 blocks wide with varying height."],
 			dependencies: [I;1911],
@@ -346,8 +341,8 @@
 		{
 			title: "Earthpiercer",
 			icon: "tetra:earthpiercer",
-			x: -0.5d,
-			y: -13.5d,
+			x: 0.0d,
+			y: -13.0d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi purpose tool that breaks Stone and Dirt and can just be used for mining altogether."],
 			dependencies: [I;1911],
@@ -404,7 +399,7 @@
 			title: "Tetras Tool Leveling",
 			x: -4.0d,
 			y: -20.5d,
-			shape: "gear",
+			shape: "diamond",
 			description: [
 				"Here's a short breakdown of some key aspects of Tetra:",
 				"",
@@ -427,7 +422,7 @@
 				id: 2140,
 				type: "checkmark",
 				title: "Tetras Tool Leveling",
-				icon: "botania:cosmetic_questgiver_mark"
+				icon: "minecraft:book"
 			}],
 			rewards: [{
 				id: 2195,
@@ -436,7 +431,7 @@
 			}]
 		},
 		{
-			title: "Tier 2 Hammer",
+			title: "Tier 2",
 			x: -2.5d,
 			y: -18.0d,
 			subtitle: "Bird-poo Hammer",
@@ -468,13 +463,13 @@
 			}]
 		},
 		{
-			title: "Tier 3 Hammer",
+			title: "Tier 3",
 			x: -2.5d,
 			y: -17.0d,
 			description: [
-				"This one is a bit more tricky - You need to change every part of the hammer this time, as tier 3 hammer heads require higher integrity.",
+				"This one is a bit tricky - You need to change every part of the hammer this time, as the tier 3 hammer heads require higher integrity.",
 				"",
-				"Replace the Handle with Wood or Bones, which will give you the Integrity you need to upgrade the hammer heads to Iron."
+				"Replace the Handle with Wood or Bones, which will give you the integrity you need to upgrade the hammer heads to Iron."
 			],
 			dependencies: [I;2166],
 			id: 2168,
@@ -499,7 +494,7 @@
 			}]
 		},
 		{
-			title: "Tier 4 Hammer",
+			title: "Tier 4",
 			x: -2.5d,
 			y: -16.0d,
 			description: ["For the 4th tier you'll need to venture into the Nether to gather Blackstone for the hammer head upgrades."],
@@ -526,10 +521,14 @@
 			}]
 		},
 		{
-			title: "Tier 5 Hammer",
-			x: -2.5d,
+			title: "Tier 5",
+			x: -1.5d,
 			y: -12.5d,
-			description: [""],
+			description: [
+				"Obsidian will get you to Tier 5.",
+				"",
+				"If you need higher integrity, try out an End Rod as handle."
+			],
 			dependencies: [I;1921],
 			id: 2181,
 			tasks: [{
@@ -553,11 +552,18 @@
 			}]
 		},
 		{
-			title: "Tier 6 Hammer",
+			title: "Tier 6",
 			x: -2.5d,
-			y: -11.5d,
-			description: ["Now you're basically a walking Forge, Congrats!"],
-			dependencies: [I;2181],
+			y: -10.5d,
+			description: [
+				"Netherite Ingots will get you to tier 6. ",
+				"",
+				"Nou're basically a walking Forge, Congrats!"
+			],
+			dependencies: [I;
+				2181,
+				1923
+			],
 			id: 2183,
 			tasks: [{
 				id: 2185,
