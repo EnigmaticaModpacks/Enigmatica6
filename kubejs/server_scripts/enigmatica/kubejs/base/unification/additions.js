@@ -7,6 +7,8 @@ events.listen('recipes', function (event) {
         immersiveengineering_gem_ore_processing(event, material);
         //occultism_ore_ingot_crushing(event, material);
         immersiveengineering_hammer_crafting_plates(event, material);
+        bloodmagic_ore_processing_alchemy(event, material);
+        bloodmagic_ore_processing_arc(event, material);
     });
 });
 
@@ -49,6 +51,146 @@ function immersiveengineering_gem_ore_processing(event, material) {
     if (ore == air) {
         return;
     }
+}
+
+function bloodmagic_ore_processing_arc(event, material) {
+    var data;
+
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    var clumpTag = ingredient.of('#mekanism:clumps/' + material);
+    var clump = getPreferredItemInTag(clumpTag).id;
+
+    var dirtyDustTag = ingredient.of('#mekanism:dirty_dusts/' + material);
+    var dirtyDust = getPreferredItemInTag(dirtyDustTag).id;
+
+    var dustTag = ingredient.of('#forge:dusts/' + material);
+    var dust = getPreferredItemInTag(dustTag).id;    
+
+    var ingotTag = ingredient.of('#forge:ingots/' + material);
+    var ingot = getPreferredItemInTag(ingotTag).id;
+
+    if (gem != air) {
+        data = {
+            recipes : [
+                {
+                    input: 'forge:ores/' + material,
+                    output: gem,
+                    count: 2,
+                    bonus: [],
+                    tool: 'bloodmagic:arc/cuttingfluid'
+                }
+            ]
+        };
+    } else if (ingot != air) {
+        data = {
+            recipes : [
+                {
+                    input: 'forge:ores/' + material,
+                    output: clump,
+                    count: 3,
+                    bonus: [],
+                    tool: 'bloodmagic:arc/explosive'
+                },
+                {
+                    input: 'mekanism:clumps/' + material,
+                    output: dirtyDust,
+                    count: 1,
+                    bonus: [{chance: 0.05, type: {item: 'bloodmagic:corrupted_tinydust'}}, {chance: 0.01, type: {item: 'bloodmagic:corrupted_tinydust'}}],
+                    tool: 'bloodmagic:arc/resonator'
+                },
+                {
+                    input: 'mekanism:dirty_dust/' + material,
+                    output: dust,
+                    count: 1,
+                    bonus: [],
+                    tool: 'bloodmagic:arc/cuttingfluid'
+                }, 
+                {
+                    input: 'forge:ores/' + material,
+                    output: dust,
+                    count: 2,
+                    bonus: [],
+                    tool: 'bloodmagic:arc/cuttingfluid'
+                },                
+                {
+                    input: 'forge:ingots/' + material,
+                    output: dust,
+                    count: 1,
+                    bonus: [],
+                    tool: 'bloodmagic:arc/explosive'
+                }
+            ]
+        };
+    } else {
+        return;
+    }
+
+    data.recipes.forEach((recipe) => {
+        event.recipes.bloodmagic.arc({
+            type: 'bloodmagic:arc',
+            input: {
+                tag: recipe.input
+            },
+            tool: {
+                tag: recipe.tool
+            },
+            addedoutput: recipe.bonus,            
+            output: {
+                item: recipe.output,
+                count: recipe.count
+            },
+            consumeingredient: false
+        }); 
+    });
+}
+
+function bloodmagic_ore_processing_alchemy(event, material) {
+    var data;
+
+    var dustTag = ingredient.of('#forge:dusts/' + material);
+    var dust = getPreferredItemInTag(dustTag).id;    
+
+    var ingotTag = ingredient.of('#forge:ingots/' + material);
+    var ingot = getPreferredItemInTag(ingotTag).id;
+
+    if (ingot != air && ore != air) {
+        data = {
+            recipes : [
+                {
+                    input: 'forge:ores/' + material,
+                    output: dust,
+                    count: 2,
+                    bonus: [],
+                    tool: 'bloodmagic:arc/cuttingfluid'                    
+                }
+            ]
+        };
+    } else {
+        return;
+    }
+
+    data.recipes.forEach((recipe) => {
+        event.recipes.bloodmagic.alchemytable({
+            type: "bloodmagic:alchemytable",
+            input: [
+                {
+                tag: recipe.input
+                },
+                {
+                tag: recipe.tool
+                }
+            ],
+            output: {
+                item: recipe.output,
+                count: 2
+            },
+            syphon: 400,
+            ticks: 200,
+            upgradeLevel: 1
+        });
+    });
 }
 
 function enigmatica_ore_deposit_processing(event, material) {
