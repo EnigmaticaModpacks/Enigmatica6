@@ -1,4 +1,47 @@
 events.listen('recipes', function (event) {
+    var end_biomes = [
+        'minecraft:the_end',
+        'minecraft:the_void',
+        'minecraft:small_end_islands',
+        'minecraft:end_barrens',
+        'minecraft:end_highlands',
+        'minecraft:end_midlands',
+        'byg:ivis_fields',
+        'byg:bulbis_gardens',
+        'byg:shattered_desert',
+        'byg:ethereal_islands',
+        'byg:purpur_peaks',
+        'byg:cryptic_wastes',
+        'byg:viscal_isles',
+        'byg:shulkren_forest',
+        'byg:nightshade_forest'
+    ];
+
+    var nether_biomes = [
+        'minecraft:nether_wastes',
+        'minecraft:basalt_deltas',
+        'minecraft:warped_forest',
+        'minecraft:crimson_forest',
+        'minecraft:soul_sand_valley',
+        'byg:embur_bog',
+        'byg:glowstone_gardens',
+        'byg:sythian_torrids',
+        'byg:warped_desert',
+        'byg:subzero_hypogeal',
+        'byg:quartz_desert',
+        'byg:brimstone_caverns',
+        'byg:weeping_mire',
+        'byg:withering_woods',
+        'byg:magma_wastes',
+        'byg:wailing_garth',
+        'byg:crimson_gardens',
+        'biomesoplenty:crystalline_chasm',
+        'biomesoplenty:undergrowth',
+        'biomesoplenty:visceral_heap',
+        'biomesoplenty:withered_abyss'
+    ];
+
+
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/niter' });
@@ -11,23 +54,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -37,23 +64,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -70,30 +81,14 @@ events.listen('recipes', function (event) {
     event.remove({ id: 'industrialforegoing:laser_drill_ore/arcane' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
-            tag: 'forge:ores/arcane'
+            tag: 'forge:chunks/arcane'
         },
         rarity: [
             {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -103,23 +98,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -143,23 +122,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -169,23 +132,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -209,23 +156,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -235,23 +166,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -273,23 +188,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 blacklist: {},
                 depth_min: 0,
@@ -312,29 +211,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:nether_wastes',
-                        'minecraft:basalt_deltas',
-                        'minecraft:warped_forest',
-                        'minecraft:crimson_forest',
-                        'minecraft:soul_sand_valley',
-                        'byg:embur_bog',
-                        'byg:glowstone_gardens',
-                        'byg:sythian_torrids',
-                        'byg:warped_desert',
-                        'byg:subzero_hypogeal',
-                        'byg:quartz_desert',
-                        'byg:brimstone_caverns',
-                        'byg:weeping_mire',
-                        'byg:withering_woods',
-                        'byg:magma_wastes',
-                        'byg:wailing_garth',
-                        'byg:crimson_gardens',
-                        'biomesoplenty:crystalline_chasm',
-                        'biomesoplenty:undergrowth',
-                        'biomesoplenty:visceral_heap',
-                        'biomesoplenty:withered_abyss'
-                    ]
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 7,
@@ -358,23 +235,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -398,23 +259,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 68,
                 depth_max: 84,
@@ -424,23 +269,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -464,23 +293,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 132,
@@ -490,23 +303,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -530,23 +327,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 35,
                 depth_max: 65,
@@ -556,23 +337,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -596,23 +361,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -622,23 +371,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -662,23 +395,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 30,
                 depth_max: 70,
@@ -688,23 +405,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -728,23 +429,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 13,
                 depth_max: 34,
@@ -754,23 +439,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -794,23 +463,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -820,23 +473,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -860,23 +497,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 68,
@@ -886,23 +507,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -925,29 +530,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:nether_wastes',
-                        'minecraft:basalt_deltas',
-                        'minecraft:warped_forest',
-                        'minecraft:crimson_forest',
-                        'minecraft:soul_sand_valley',
-                        'byg:embur_bog',
-                        'byg:glowstone_gardens',
-                        'byg:sythian_torrids',
-                        'byg:warped_desert',
-                        'byg:subzero_hypogeal',
-                        'byg:quartz_desert',
-                        'byg:brimstone_caverns',
-                        'byg:weeping_mire',
-                        'byg:withering_woods',
-                        'byg:magma_wastes',
-                        'byg:wailing_garth',
-                        'byg:crimson_gardens',
-                        'biomesoplenty:crystalline_chasm',
-                        'biomesoplenty:undergrowth',
-                        'biomesoplenty:visceral_heap',
-                        'biomesoplenty:withered_abyss'
-                    ]
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 7,
@@ -958,23 +541,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -998,23 +565,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -1024,23 +575,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1064,23 +599,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -1090,23 +609,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1130,23 +633,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 10,
@@ -1156,23 +643,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1196,23 +667,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 64,
                 depth_max: 96,
@@ -1222,23 +677,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1261,29 +700,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:nether_wastes',
-                        'minecraft:basalt_deltas',
-                        'minecraft:warped_forest',
-                        'minecraft:crimson_forest',
-                        'minecraft:soul_sand_valley',
-                        'byg:embur_bog',
-                        'byg:glowstone_gardens',
-                        'byg:sythian_torrids',
-                        'byg:warped_desert',
-                        'byg:subzero_hypogeal',
-                        'byg:quartz_desert',
-                        'byg:brimstone_caverns',
-                        'byg:weeping_mire',
-                        'byg:withering_woods',
-                        'byg:magma_wastes',
-                        'byg:wailing_garth',
-                        'byg:crimson_gardens',
-                        'biomesoplenty:crystalline_chasm',
-                        'biomesoplenty:undergrowth',
-                        'biomesoplenty:visceral_heap',
-                        'biomesoplenty:withered_abyss'
-                    ]
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 5,
@@ -1294,23 +711,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1351,23 +752,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1390,29 +775,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:nether_wastes',
-                        'minecraft:basalt_deltas',
-                        'minecraft:warped_forest',
-                        'minecraft:crimson_forest',
-                        'minecraft:soul_sand_valley',
-                        'byg:embur_bog',
-                        'byg:glowstone_gardens',
-                        'byg:sythian_torrids',
-                        'byg:warped_desert',
-                        'byg:subzero_hypogeal',
-                        'byg:quartz_desert',
-                        'byg:brimstone_caverns',
-                        'byg:weeping_mire',
-                        'byg:withering_woods',
-                        'byg:magma_wastes',
-                        'byg:wailing_garth',
-                        'byg:crimson_gardens',
-                        'biomesoplenty:crystalline_chasm',
-                        'biomesoplenty:undergrowth',
-                        'biomesoplenty:visceral_heap',
-                        'biomesoplenty:withered_abyss'
-                    ]
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 7,
@@ -1423,23 +786,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1480,23 +827,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -1506,23 +837,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1546,23 +861,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 68,
@@ -1572,23 +871,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:the_end',
-                        'minecraft:the_void',
-                        'minecraft:small_end_islands',
-                        'minecraft:end_barrens',
-                        'minecraft:end_highlands',
-                        'minecraft:end_midlands',
-                        'byg:ivis_fields',
-                        'byg:bulbis_gardens',
-                        'byg:shattered_desert',
-                        'byg:ethereal_islands',
-                        'byg:purpur_peaks',
-                        'byg:cryptic_wastes',
-                        'byg:viscal_isles',
-                        'byg:shulkren_forest',
-                        'byg:nightshade_forest'
-                    ]
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -1602,6 +885,40 @@ events.listen('recipes', function (event) {
         type: 'industrialforegoing:laser_drill_ore'
     });
 
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/osmium' });
+    event.recipes.industrialforegoing.laser_drill_ore({
+        output: {
+            tag: 'forge:chunks/osmium'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 5,
+                depth_max: 36,
+                weight: 8
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 2
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens8'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ancient_debris' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
@@ -1611,29 +928,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: [
-                        'minecraft:nether_wastes',
-                        'minecraft:basalt_deltas',
-                        'minecraft:warped_forest',
-                        'minecraft:crimson_forest',
-                        'minecraft:soul_sand_valley',
-                        'byg:embur_bog',
-                        'byg:glowstone_gardens',
-                        'byg:sythian_torrids',
-                        'byg:warped_desert',
-                        'byg:subzero_hypogeal',
-                        'byg:quartz_desert',
-                        'byg:brimstone_caverns',
-                        'byg:weeping_mire',
-                        'byg:withering_woods',
-                        'byg:magma_wastes',
-                        'byg:wailing_garth',
-                        'byg:crimson_gardens',
-                        'biomesoplenty:crystalline_chasm',
-                        'biomesoplenty:undergrowth',
-                        'biomesoplenty:visceral_heap',
-                        'biomesoplenty:withered_abyss'
-                    ]
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 1,
