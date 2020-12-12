@@ -1,5 +1,5 @@
 events.listen('recipes', function (event) {
-    var endBiomes = [
+    var end_biomes = [
         'minecraft:the_end',
         'minecraft:the_void',
         'minecraft:small_end_islands',
@@ -17,7 +17,7 @@ events.listen('recipes', function (event) {
         'byg:nightshade_forest'
     ];
 
-    var netherBiomes = [
+    var nether_biomes = [
         'minecraft:nether_wastes',
         'minecraft:basalt_deltas',
         'minecraft:warped_forest',
@@ -54,7 +54,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -64,7 +64,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -88,7 +88,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -98,7 +98,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -122,7 +122,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -132,7 +132,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -156,7 +156,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -166,7 +166,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -188,7 +188,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 blacklist: {},
                 depth_min: 0,
@@ -211,7 +211,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: netherBiomes
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 7,
@@ -235,7 +235,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -259,7 +259,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 68,
                 depth_max: 84,
@@ -269,7 +269,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -293,7 +293,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 132,
@@ -303,7 +303,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -327,7 +327,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 35,
                 depth_max: 65,
@@ -337,7 +337,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -361,7 +361,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -371,7 +371,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -395,7 +395,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 30,
                 depth_max: 70,
@@ -405,7 +405,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -429,7 +429,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 13,
                 depth_max: 34,
@@ -439,7 +439,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -463,7 +463,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -473,7 +473,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -497,7 +497,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 68,
@@ -507,7 +507,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -530,7 +530,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: netherBiomes
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 7,
@@ -541,7 +541,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -565,7 +565,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 16,
@@ -575,7 +575,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -599,7 +599,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 10,
                 depth_max: 40,
@@ -609,7 +609,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -633,7 +633,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 10,
@@ -643,7 +643,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -667,7 +667,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 64,
                 depth_max: 96,
@@ -677,7 +677,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -700,7 +700,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: netherBiomes
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 5,
@@ -711,7 +711,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -752,7 +752,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -775,7 +775,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: netherBiomes
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 7,
@@ -786,7 +786,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -827,7 +827,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 32,
@@ -837,7 +837,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -861,7 +861,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 68,
@@ -871,7 +871,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -895,7 +895,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 5,
                 depth_max: 36,
@@ -905,7 +905,7 @@ events.listen('recipes', function (event) {
                 whitelist: {},
                 blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: endBiomes
+                    values: end_biomes
                 },
                 depth_min: 0,
                 depth_max: 255,
@@ -928,7 +928,7 @@ events.listen('recipes', function (event) {
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
-                    values: netherBiomes
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 1,
