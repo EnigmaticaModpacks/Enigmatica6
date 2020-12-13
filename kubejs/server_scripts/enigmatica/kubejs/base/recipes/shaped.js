@@ -103,8 +103,14 @@ events.listen('recipes', function (event) {
         shapedRecipe(item.of('engineersdecor:slag_brick_block', 8), ['AAA', 'ABA', 'AAA'], {
             A: '#engineersdecor:brick_ingots',
             B: '#forge:slag'
+        }),
+        shapedRecipe(item.of('bloodmagic:demonwillgauge', 1), [' B ', 'ACA', ' B '], {
+            A: '#forge:ingots/tin',
+            B: '#forge:nuggets/tin',
+			C: '#bloodmagic:crystals/demon'
         })
     ];
+	
 
     recipes.forEach(function (recipe) {
         event.shaped(recipe.result, recipe.pattern, recipe.key);
