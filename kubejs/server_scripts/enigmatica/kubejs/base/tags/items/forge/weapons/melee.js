@@ -46,12 +46,7 @@ events.listen('item.tags', function (event) {
         'naturesaura:infused_iron_sword',
         'naturesaura:sky_sword',
         'wstweaks:blaze_blade',
-        'wstweaks:lava_blade',
-        'xercamod:item_diamond_warhammer',
-        'xercamod:item_gold_warhammer',
-        'xercamod:item_iron_warhammer',
-        'xercamod:item_netherite_warhammer',
-        'xercamod:item_stone_warhammer'
+        'wstweaks:lava_blade'
     ];
     event.get('forge:weapons').add(items);
     event.get('forge:weapons/melee').add(items);
