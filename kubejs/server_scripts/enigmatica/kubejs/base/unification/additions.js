@@ -67,14 +67,14 @@ function bloodmagic_ore_processing_arc(event, material) {
     var dirtyDust = getPreferredItemInTag(dirtyDustTag).id;
 
     var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;    
+    var dust = getPreferredItemInTag(dustTag).id;
 
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
 
     if (gem != air) {
         data = {
-            recipes : [
+            recipes: [
                 {
                     input: 'forge:ores/' + material,
                     output: gem,
@@ -86,7 +86,7 @@ function bloodmagic_ore_processing_arc(event, material) {
         };
     } else if (ingot != air) {
         data = {
-            recipes : [
+            recipes: [
                 {
                     input: 'forge:ores/' + material,
                     output: clump,
@@ -98,23 +98,26 @@ function bloodmagic_ore_processing_arc(event, material) {
                     input: 'mekanism:clumps/' + material,
                     output: dirtyDust,
                     count: 1,
-                    bonus: [{chance: 0.05, type: {item: 'bloodmagic:corrupted_tinydust'}}, {chance: 0.01, type: {item: 'bloodmagic:corrupted_tinydust'}}],
+                    bonus: [
+                        { chance: 0.05, type: { item: 'bloodmagic:corrupted_tinydust' } },
+                        { chance: 0.01, type: { item: 'bloodmagic:corrupted_tinydust' } }
+                    ],
                     tool: 'bloodmagic:arc/resonator'
                 },
                 {
-                    input: 'mekanism:dirty_dust/' + material,
+                    input: 'mekanism:dirty_dusts/' + material,
                     output: dust,
                     count: 1,
                     bonus: [],
                     tool: 'bloodmagic:arc/cuttingfluid'
-                }, 
+                },
                 {
                     input: 'forge:ores/' + material,
                     output: dust,
                     count: 2,
                     bonus: [],
                     tool: 'bloodmagic:arc/cuttingfluid'
-                },                
+                },
                 {
                     input: 'forge:ingots/' + material,
                     output: dust,
@@ -137,13 +140,13 @@ function bloodmagic_ore_processing_arc(event, material) {
             tool: {
                 tag: recipe.tool
             },
-            addedoutput: recipe.bonus,            
+            addedoutput: recipe.bonus,
             output: {
                 item: recipe.output,
                 count: recipe.count
             },
             consumeingredient: false
-        }); 
+        });
     });
 }
 
@@ -151,10 +154,10 @@ function bloodmagic_ore_processing_alchemy(event, material) {
     var data;
 
     var oreTag = ingredient.of('#forge:ores/' + material);
-    var ore = getPreferredItemInTag(oreTag).id; 
+    var ore = getPreferredItemInTag(oreTag).id;
 
     var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;    
+    var dust = getPreferredItemInTag(dustTag).id;
 
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
@@ -164,20 +167,20 @@ function bloodmagic_ore_processing_alchemy(event, material) {
             input: 'forge:ores/' + material,
             output: dust,
             count: 2,
-            tool: 'bloodmagic:arc/cuttingfluid'    
+            tool: 'bloodmagic:arc/cuttingfluid'
         };
     } else {
         return;
     }
 
     event.recipes.bloodmagic.alchemytable({
-        type: "bloodmagic:alchemytable",
+        type: 'bloodmagic:alchemytable',
         input: [
             {
-            tag: data.input
+                tag: data.input
             },
             {
-            tag: data.tool
+                tag: data.tool
             }
         ],
         output: {
@@ -188,7 +191,6 @@ function bloodmagic_ore_processing_alchemy(event, material) {
         ticks: 200,
         upgradeLevel: 1
     });
-
 }
 
 function astralsorcery_ore_processing_infuser(event, material) {
@@ -198,7 +200,7 @@ function astralsorcery_ore_processing_infuser(event, material) {
             return;
         }
     }
-    
+
     var data;
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
@@ -220,7 +222,6 @@ function astralsorcery_ore_processing_infuser(event, material) {
         return;
     }
 
-    
     event.recipes.astralsorcery.infuser({
         type: 'astralsorcery:infuser',
         fluidInput: 'astralsorcery:liquid_starlight',
@@ -236,7 +237,7 @@ function astralsorcery_ore_processing_infuser(event, material) {
         consumeMultipleFluids: false,
         acceptChaliceInput: true,
         copyNBTToOutputs: false
-    });     
+    });
 }
 
 function enigmatica_ore_deposit_processing(event, material) {
