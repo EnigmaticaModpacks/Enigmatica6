@@ -77,7 +77,7 @@ function bloodmagic_ore_processing_arc(event, material) {
                 {
                     input: 'forge:ores/' + material,
                     output: gem,
-                    count: 2,
+                    count: 5,
                     bonus: [],
                     tool: 'bloodmagic:arc/cuttingfluid'
                 }
