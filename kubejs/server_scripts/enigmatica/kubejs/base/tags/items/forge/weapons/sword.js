@@ -1,0 +1,31 @@
+events.listen('item.tags', function (event) {
+    var items = [
+        'aquaculture:neptunium_sword',
+        'botania:elementium_sword',
+        'botania:manasteel_sword',
+        'botania:star_sword',
+        'botania:terra_sword',
+        'botania:thunder_sword',
+        'byg:pendorite_sword',
+        'immersiveengineering:sword_steel',
+        'mekanismtools:bronze_sword',
+        'mekanismtools:lapis_lazuli_sword',
+        'mekanismtools:osmium_sword',
+        'mekanismtools:refined_glowstone_sword',
+        'mekanismtools:refined_obsidian_sword',
+        'mekanismtools:steel_paxel',
+        'mekanismtools:steel_sword',
+        'minecraft:diamond_sword',
+        'minecraft:golden_sword',
+        'minecraft:iron_sword',
+        'minecraft:netherite_sword',
+        'minecraft:stone_sword',
+        'minecraft:wooden_sword',
+        'mythicbotany:alfsteel_sword',
+        'naturesaura:infused_iron_sword',
+        'naturesaura:sky_sword',
+        'wstweaks:blaze_blade',
+        'wstweaks:lava_blade'
+    ];
+    event.get('forge:weapons/sword').add(items);
+});
