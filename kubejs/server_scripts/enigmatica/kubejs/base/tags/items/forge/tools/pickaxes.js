@@ -5,7 +5,6 @@ events.listen('item.tags', function (event) {
         'botania:glass_pickaxe',
         'botania:manasteel_pick',
         'botania:terra_pick',
-        'byg:pendorite_pickaxe',
         'immersiveengineering:pickaxe_steel',
         'mekanismtools:bronze_pickaxe',
         'mekanismtools:lapis_lazuli_pickaxe',
@@ -21,27 +20,7 @@ events.listen('item.tags', function (event) {
         'minecraft:wooden_pickaxe',
         'mythicbotany:alfsteel_pick',
         'naturesaura:infused_iron_pickaxe',
-        'naturesaura:sky_pickaxe',
-        'vanillahammers:bone_hammer',
-        'vanillahammers:coal_hammer',
-        'vanillahammers:diamond_hammer',
-        'vanillahammers:emerald_hammer',
-        'vanillahammers:ender_hammer',
-        'vanillahammers:fiery_hammer',
-        'vanillahammers:glowstone_hammer',
-        'vanillahammers:gold_hammer',
-        'vanillahammers:iron_hammer',
-        'vanillahammers:lapis_hammer',
-        'vanillahammers:nether_hammer',
-        'vanillahammers:netherite_hammer',
-        'vanillahammers:obsidian_hammer',
-        'vanillahammers:paper_hammer',
-        'vanillahammers:prismarine_hammer',
-        'vanillahammers:quartz_hammer',
-        'vanillahammers:redstone_hammer',
-        'vanillahammers:slime_hammer',
-        'vanillahammers:stone_hammer',
-        'vanillahammers:wood_hammer'
+        'naturesaura:sky_pickaxe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/pickaxe').add(items);
