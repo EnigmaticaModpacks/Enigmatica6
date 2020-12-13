@@ -16,8 +16,8 @@
 					"patchouli:book": "bloodmagic:guide"
 				}
 			},
-			x: -3.5d,
-			y: 0.5d,
+			x: -3.0d,
+			y: 1.5d,
 			description: [
 				"Welcome to Blood Magic; a mod that, like many others in the grand tradition of magic, finds its source in the essence of living things or even the demonic powers animating the dead.",
 				"",
@@ -59,7 +59,8 @@
 				}
 			},
 			x: -3.5d,
-			y: 2.0d,
+			y: 3.0d,
+			subtitle: "The Void Stares Back",
 			description: [
 				"Despite the name of the mod, simply going out and slaughtering wontonly is exactly the wrong way to go about gathering LP. This is a process that requires finesse... precision. Your vict... Donor might need to be held down.",
 				"",
@@ -133,8 +134,14 @@
 			]
 		},
 		{
-			x: -6.0d,
-			y: 5.0d,
+			x: -3.0d,
+			y: 4.5d,
+			subtitle: "Why Does it Hurt So Much, Big Brother?",
+			description: [
+				"Arcane Ashes form the basis for simplistic transmutational Alchemy. ",
+				"",
+				"The ashes are used to draw a sigil on the ground, and then a binder and reagent are combined within it to create powerful tokens that may be powered via the Soul Network. "
+			],
 			dependencies: [I;2228],
 			id: 2209,
 			tasks: [{
@@ -147,12 +154,18 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 2315,
+				type: "item",
+				item: "bloodmagic:bloodlightsigil"
 			}]
 		},
 		{
 			title: "Sentient Tools",
-			x: -3.5d,
-			y: 7.5d,
+			x: -4.5d,
+			y: 6.0d,
+			subtitle: "Stormbringer",
 			description: [
 				"The Sentient Sword, infused with Demonic Will, is as much 'alive' as the one who wields it. It hungers for more power and seeks out it's own, drawing Demonic Will from slain enemies without the need for a Soul Snare. ",
 				"",
@@ -184,14 +197,17 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: 6.0d,
+			x: -3.5d,
+			y: 5.5d,
+			subtitle: "From a Place of Deep Suffering",
 			description: [
 				"Demonic Will is not some dumb substance to be manipulated like water in a bucket. It is the animating force that enables the undead to move, the extension of some demonic force long locked away. The barriers between worlds are not perfect, however, and some of their immense power leaks through.",
 				"",
 				"Tartaric Gems are a relatively safe way to coalesce this will, binding it in a way that allows the Sanguimancer to control it without being controlled in return. ",
 				"",
-				"Any Demonic Will harvested while a Tartaric Gem is in one's inventory will automatically be gathered into the gem. Making two or more such gems will be beneficial in the long run."
+				"Any Demonic Will harvested while a Tartaric Gem is in one's inventory will automatically be gathered into the gem. Making two or more such gems will be beneficial in the long run. ",
+				"",
+				"Be sure to keep both upgraded."
 			],
 			dependencies: [I;2228],
 			id: 2214,
@@ -207,27 +223,8 @@
 		},
 		{
 			x: -4.5d,
-			y: 10.0d,
-			id: 2216,
-			tasks: [{
-				id: 2217,
-				type: "checkmark",
-				title: "Demonic Will and Crystal Manipulation"
-			}]
-		},
-		{
-			x: -9.5d,
-			y: 6.0d,
-			id: 2220,
-			tasks: [{
-				id: 2221,
-				type: "checkmark",
-				title: "Alchemy"
-			}]
-		},
-		{
-			x: -4.5d,
 			y: 4.5d,
+			subtitle: "A Dark Flame from a World of Darkness",
 			description: [
 				"This lumpy crystallized mess is a little less useful than one might have hoped. Perhaps with a little refinement it can be used to imbue other objects with it's power?",
 				"",
@@ -398,8 +395,9 @@
 			]
 		},
 		{
-			x: 0.0d,
-			y: 6.5d,
+			x: 0.5d,
+			y: 7.0d,
+			subtitle: "Finder of Lost Things",
 			description: ["The Ritual Diviner is crucial to the construction and use of Rituals. "],
 			dependencies: [I;2247],
 			id: 2252,
@@ -410,70 +408,16 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: 3.0d,
-			id: 2254,
-			tasks: [{
-				id: 2255,
-				type: "item",
-				item: "bloodmagic:reinforcedslate"
-			}]
-		},
-		{
-			x: 4.0d,
-			y: 3.0d,
-			id: 2256,
-			tasks: [{
-				id: 2257,
-				type: "item",
-				item: "bloodmagic:infusedslate"
-			}]
-		},
-		{
-			x: 5.0d,
-			y: 3.0d,
-			id: 2258,
-			tasks: [{
-				id: 2259,
-				type: "item",
-				item: "bloodmagic:demonslate"
-			}]
-		},
-		{
-			x: -1.0d,
-			y: 11.5d,
-			id: 2260,
-			tasks: [{
-				id: 2261,
-				type: "item",
-				item: "bloodmagic:apprenticebloodorb"
-			}]
-		},
-		{
-			x: 0.0d,
-			y: 11.5d,
-			id: 2262,
-			tasks: [{
-				id: 2263,
-				type: "item",
-				item: "bloodmagic:magicianbloodorb"
-			}]
-		},
-		{
-			x: 1.0d,
-			y: 11.5d,
-			id: 2264,
-			tasks: [{
-				id: 2265,
-				type: "item",
-				item: "bloodmagic:masterbloodorb"
-			}]
-		},
-		{
 			x: 1.0d,
 			y: 4.5d,
 			subtitle: "Don't Let Them See The Blade",
-			description: [""],
+			description: [
+				"At some point, you'll likely grow tired of stabbing yourself. ",
+				"",
+				"Try stabbing something else for a change.",
+				"",
+				"The Dagger of Sacrifice is used to extract LP from other entities. Be careful, it's sharp. "
+			],
 			dependencies: [I;2244],
 			id: 2267,
 			tasks: [{
@@ -485,8 +429,9 @@
 		{
 			title: "Rituals",
 			icon: "minecraft:wheat",
-			x: 0.5d,
-			y: 7.5d,
+			x: 1.0d,
+			y: 8.0d,
+			subtitle: "Finding the Pulse",
 			description: [
 				"Now the fun begins. ",
 				"",
@@ -513,8 +458,10 @@
 			]
 		},
 		{
-			x: 1.5d,
-			y: 8.0d,
+			title: "Activation Crystal",
+			x: 2.0d,
+			y: 8.5d,
+			subtitle: "The Spark of Life",
 			description: [
 				"Now that the ritual is built, an Activation Crystal is required to actually make it start. Right click the Master Ritual Stone with the Activation Crystal. ",
 				"",
@@ -541,16 +488,37 @@
 			],
 			dependencies: [I;2247],
 			id: 2279,
-			tasks: [{
-				id: 2280,
+			tasks: [
+				{
+					id: 2280,
+					type: "item",
+					item: "bloodmagic:blankrune",
+					count: 28L
+				},
+				{
+					id: 2317,
+					type: "item",
+					item: "bloodmagic:bloodstonebrick",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: 2284,
 				type: "item",
-				item: "bloodmagic:blankrune"
+				item: "bloodmagic:altarcapacityrune",
+				count: 8
 			}]
 		},
 		{
 			icon: "bloodmagic:alchemicalreactionchamber",
 			x: 2.0d,
 			y: 5.5d,
+			subtitle: "Lab Safety",
+			description: [
+				"The Alchemical Reaction Chamber goes hand in hand with the Alchemical Workbench and Blood Altar. ",
+				"",
+				"By using different reagents, it can enable stronger reactions that would have been unsafe to perform in the open air. "
+			],
 			dependencies: [I;2247],
 			id: 2281,
 			tasks: [
@@ -560,11 +528,241 @@
 					item: "bloodmagic:alchemicalreactionchamber"
 				},
 				{
-					id: 2283,
+					id: 2285,
+					type: "item",
+					item: {
+						id: "bloodmagic:sanguinereverter",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2286,
 					type: "item",
 					item: "bloodmagic:weakbloodshard"
 				}
 			]
+		},
+		{
+			x: -4.0d,
+			y: 7.0d,
+			subtitle: "Out of the Frying Pan, Into the Fire",
+			description: [
+				"Though keeping Demonic Will locked up is advised, an experienced Sanuimancer may choose to release some into the environment in order to refine it further. ",
+				"",
+				"Placing a Tartaric Gem into a Demon Crucible will release the Will, binding it to the local chunk. The amount of will present may be seen with the aid of a Demon Will Aura Gauge. ",
+				"",
+				"Excess Will may be absorb into a Tartaric Gem again by placing a Hellfire Forge in the chunk and inserting the Tartaric Gem."
+			],
+			dependencies: [I;
+				2214,
+				2211
+			],
+			id: 2287,
+			tasks: [{
+				id: 2288,
+				type: "item",
+				item: "bloodmagic:demoncrucible"
+			}],
+			rewards: [{
+				id: 2293,
+				type: "item",
+				item: "bloodmagic:demonwillgauge"
+			}]
+		},
+		{
+			title: "Demon Crystallizer",
+			x: -3.0d,
+			y: 8.0d,
+			subtitle: "Stuck in a Moment",
+			description: [
+				"Once released into the atmosphere, Demonic will may be coaxed to a nucleation site where it will begin to crystallize and grow. A Demon Crystallizer acts as one such site. ",
+				"",
+				"Demon Will Crystals will progress through multiple stages of growth, each denoted by a new spire forming out of the base. The first spire should never be broken off, this initial growth is costly, but greatly reduces the Will required to grow additional spires. ",
+				"",
+				"Some care must be taken when harvesting crystals; a pickaxe is exactly the wrong tool for the job. Instead, hold a Tartaric Gem in your inventory and Right Click the grown Will Crystals with an empty hand. Each click will gently snap off one of the spires. This method will never break the central spire.",
+				"",
+				"There exists a specialized Dusk ritual that would assist in automating this process as well, which causes the secondary spires to fall off naturally. "
+			],
+			dependencies: [I;2287],
+			min_width: 300,
+			id: 2291,
+			tasks: [{
+				id: 2292,
+				type: "item",
+				item: "bloodmagic:demoncrystallizer",
+				count: 4L
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 8.5d,
+			subtitle: "Lost in the Dark",
+			description: [
+				"The Dusk Ritual Diviner allows a Sanguimancer to construct larger, more elaborate Rituals. ",
+				"",
+				"A few notable examples:",
+				"",
+				"Ritual of the Feathered Knife - Automatically generates LP using the health of a nearby Player.",
+				"",
+				"Crack of the Fractured Crystal - Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby.",
+				"",
+				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
+			],
+			dependencies: [I;2279],
+			id: 2296,
+			tasks: [{
+				id: 2297,
+				type: "item",
+				item: "bloodmagic:ritualdivinerdusk"
+			}]
+		},
+		{
+			title: "Resonance of the Faceted Crystal",
+			icon: "bloodmagic:rawdemoncrystal",
+			x: -2.0d,
+			y: 9.0d,
+			subtitle: "Touch the Rainbow",
+			description: [
+				"With Demonic Will Crystals in hand, the careful process of separating out their base essences may begin. ",
+				"",
+				"Prepare another Demon Crystallizer and construct the Resonance of the Faceted Crystal ritual. Place the Crystallizer atop the Master Ritual Stone and begin pouring Will into the chunk by way of a Crucible.",
+				"",
+				"Eventually, another crystal will form here within the bounds of the ritual. Once it has fully grown, the ritual will fragment it into it's elemental essences, growing four new crystal types around it which may be harvested in the same way as the previous Demonic Will Crystals. "
+			],
+			dependencies: [I;2291],
+			id: 2298,
+			tasks: [
+				{
+					id: 2308,
+					type: "item",
+					item: "bloodmagic:masterritualstone"
+				},
+				{
+					id: 2309,
+					type: "item",
+					item: "bloodmagic:ritualstone",
+					count: 20L
+				},
+				{
+					id: 2316,
+					type: "item",
+					item: "bloodmagic:defaultcrystal"
+				}
+			]
+		},
+		{
+			title: "Demonic Will",
+			x: -0.5d,
+			y: 9.5d,
+			subtitle: "Taste the Rainbow",
+			description: [
+				"Raw Demonic Will is of a more general purpose, but with the new will crystals that have been created, new abilities may be granted to our Sentient Tools.",
+				"",
+				"First, a Tartaric Gem must be prepared, either freshly created or by draining all of the Will from it in a Crucible. ",
+				"",
+				"Next, burn a few of a single type of Will in a Crucible in a chunk without any Will present. ",
+				"",
+				"Finally, place a Hellfire Forge in this chunk and use it to re-absorb the Will into the Tartaric Gem. It's color will change to match the color of the Will that was absorbed.",
+				"",
+				"With this specialized Tartaric Gem in your inventory, right clicking with any Sentient Tool will shift it's attunement to that of the Tartaric Gem, thus granting that tools the abilities of the Will Type. ",
+				"",
+				"Beyond this, however, these new Demonic Wills open up entirely new avenues by way of Augmenting Rituals. Refer to the Ritual Diviner for more information on how each Will type effects each ritual. "
+			],
+			dependencies: [I;2298],
+			min_width: 300,
+			id: 2301,
+			tasks: [
+				{
+					id: 2302,
+					type: "item",
+					item: "bloodmagic:corrosivecrystal"
+				},
+				{
+					id: 2303,
+					type: "item",
+					item: "bloodmagic:vengefulcrystal"
+				},
+				{
+					id: 2304,
+					type: "item",
+					item: "bloodmagic:destructivecrystal"
+				},
+				{
+					id: 2305,
+					type: "item",
+					item: "bloodmagic:steadfastcrystal"
+				}
+			]
+		},
+		{
+			x: 1.5d,
+			y: 9.5d,
+			subtitle: "Now You're Thinking With Rituals",
+			description: [
+				"Setting the type of Will associated to a Ritual is performed with a Ritual Tinkerer. Sneak + Right Click the air to cycle it's mode to Set Will Consumed. Place the desired Will Crystals on your hotbar (more than one is allowed) and Right Click the Master Ritual Stone of an active Ritual to set those types. ",
+				"",
+				"Feeding the Ritual the appropriate Will types is as simple as burning those crystals in a Hellfire Forge in the same Chunk. Of course, arranging for that to happen automatically is a whole other challenge. "
+			],
+			dependencies: [I;2301],
+			id: 2311,
+			tasks: [{
+				id: 2312,
+				type: "item",
+				item: "bloodmagic:ritualtinkerer"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 6.5d,
+			subtitle: "So Much Room for Activities!",
+			description: [
+				"With the tools available at a proper Alchemy Table, the Soul Network may be used to drive more complicated transmutations, from transmuting rotten flesh to proper leather, to processing ore down into higher yields than is possible in a traditional furnace. ",
+				"",
+				"A Blood Orb must be placed in the right most slot, and the reagents for the craft are spread around the six outer slots on the left hand side. The result will then appear in the middle. ",
+				"",
+				"When seeking to automate this work bench, consider using some limiting pipe similar to the earlier Blank Slates. Inputs can be piped in the sides, while the output may be extracted from the bottom. "
+			],
+			dependencies: [I;2239],
+			id: 2313,
+			tasks: [{
+				id: 2314,
+				type: "item",
+				item: "bloodmagic:alchemytable"
+			}]
+		},
+		{
+			icon: "bloodmagic:incensealtar",
+			x: -0.5d,
+			y: 2.0d,
+			subtitle: "Attaining Inner Peace",
+			description: [
+				"The Incense Altar serves to help calm and center a Sanguimancer prior to using the Sacrificial Knife for self-sacrifice. Standing near the altar will cause the knife to glow. It may then be used to draw a larger portion of health instantly, filling the Blood Alter with an equivalent amount of LP. ",
+				"",
+				"Refer to the Sanguine Scientem for more information on expanding the Incense Altar, increasing it's effect. "
+			],
+			dependencies: [I;2207],
+			id: 2318,
+			tasks: [
+				{
+					id: 2319,
+					type: "item",
+					item: "bloodmagic:incensealtar"
+				},
+				{
+					id: 2328,
+					type: "item",
+					item: "bloodmagic:woodbrickpath",
+					count: 12L
+				}
+			],
+			rewards: [{
+				id: 2329,
+				type: "item",
+				item: "bloodmagic:divinationsigil"
+			}]
 		}
 	]
 }
