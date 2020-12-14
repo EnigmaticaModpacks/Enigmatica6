@@ -24,4 +24,12 @@ events.listen('item.tags', function (event) {
     //     .add('psi:ebony_psimetal_block');
 
     // event.get('forge:storage_blocks').add('naturesaura:infused_iron_block').add('naturesaura:tainted_gold_block');
+
+    event.get('forge:storage_blocks/gold_bronze').add('#forge:storage_blocks/gold').add('#forge:storage_blocks/bronze');
+
+    event.get('forge:storage_blocks/iron_aluminum').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/aluminum');
+    event.get('forge:storage_blocks/iron_brass').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/brass');
+    event.get('forge:storage_blocks/iron_invar').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/invar');
+    event.get('forge:storage_blocks/iron_lead').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/lead');
+    event.get('forge:storage_blocks/iron_tin').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/tin');
 });
