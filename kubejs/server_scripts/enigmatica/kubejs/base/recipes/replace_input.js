@@ -86,9 +86,334 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
 
+    
+
+    var data = {
+        recipes: [{
+            type: 'storage_blocks',
+            replace: 'iron',
+            replaceWith: 'aluminum',
+            items: [
+                    'bloodmagic:soulforge',
+                    'mininggadgets:upgrade_fortune_1',
+                    'resourcefulbees:centrifuge_casing',
+                    'xnet:antenna_base'
+                    ]
+            },
+            {
+                type: 'storage_blocks',
+                replace: 'gold',
+                replaceWith: 'bronze',
+                items: [
+                        'rftoolsstorage:storage_module2'
+                    ]
+            },
+            {
+                type: 'storage_blocks',
+                replace: 'iron',
+                replaceWith: 'brass',
+                items: [
+                        'ars_nouveau:glyph_press'
+                    ]
+            },
+            {
+                type: 'storage_blocks',
+                replace: 'iron',
+                replaceWith: 'invar',
+                items: [
+                        'resourcefulbees:centrifuge_controller'
+                    ]
+            },
+            {
+                type: 'storage_blocks',
+                replace: 'iron',
+                replaceWith: 'lead',
+                items: [
+                    'travel_anchors:travel_anchor',
+                    'thermal:machine_press',
+                    'bloodmagic:alchemicalreactionchamber'
+                    ]
+            },
+            {
+                type: 'storage_blocks',
+                replace: 'iron',
+                replaceWith: 'tin',
+                items: [
+                        'aquaculture:tackle_box'
+                    ]
+            },
+            {
+                type: 'dusts',
+                replace: 'gold',
+                replaceWith: 'copper',
+                items: [
+                        'mekanism:upgrade_energy'
+                    ]
+            },
+            {
+                type: 'dusts',
+                replace: 'iron',
+                replaceWith: 'aluminum',
+                items: [
+                        'immersiveengineering:insulating_glass'
+                    ]
+            },
+            {
+                type: 'gears',
+                replace: 'gold',
+                replaceWith: 'bronze',
+                items: [
+                        'industrialforegoing:animal_rancher',
+                        'industrialforegoing:animal_baby_separator',
+                        'industrialforegoing:biofuel_generator',
+                        'industrialforegoing:block_breaker',
+                        'industrialforegoing:material_stonework_factory',
+                        'industrialforegoing:mob_slaughter_factory',
+                        'industrialforegoing:plant_gatherer',
+                        'industrialforegoing:laser_drill',
+                        'thermal:upgrade_augment_1'
+                    ]
+            },
+            {
+                type: 'gears',
+                replace: 'gold',
+                replaceWith: 'copper',
+                items: [
+                        'industrialforegoing:dye_mixer',
+                        'industrialforegoing:resourceful_furnace',
+                        'industrialforegoing:sludge_refiner',
+                        'thermal:flux_drill',
+                        'thermal:flux_saw'
+                    ]
+            },
+            {
+                type: 'gears',
+                replace: 'gold',
+                replaceWith: 'diamond',
+                items: [
+                        'industrialforegoing:laser_drill'
+                    ]
+            },
+            {
+                type: 'gears',
+                replace: 'gold',
+                replaceWith: 'invar',
+                items: [
+                        'industrialforegoing:mob_crusher',
+                        'industrialforegoing:stasis_chamber'
+                    ]
+            },
+            {
+                type: 'gears',
+                replace: 'gold',
+                replaceWith: 'silver',
+                items: [
+                        'thermal:dynamo_lapidary'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'gold',
+                replaceWith: 'brass',
+                items: [
+                        'ars_nouveau:arcane_core',
+                        'ars_nouveau:crystallizer',
+                        'ars_nouveau:volcanic_accumulator',
+                        'pneumaticcraft:gun_ammo'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'gold',
+                replaceWith: 'bronze',
+                items: [
+                        'bloodmagic:alchemytable',
+                        'bloodmagic:altar',
+                        'bloodmagic:sacrificialdagger',
+                        'bloodmagic:experiencebook',
+                        'bloodmagic:soulforge',
+                        'mekanism:elite_energy_cube',
+                        'mekanism:elite_tier_installer',
+                        'mekanism:elite_smelting_factory',
+                        'mekanism:elite_enriching_factory',
+                        'mekanism:elite_crushing_factory',
+                        'mekanism:elite_compressing_factory',
+                        'mekanism:elite_combining_factory',
+                        'mekanism:elite_purifying_factory',
+                        'mekanism:elite_injecting_factory',
+                        'mekanism:elite_infusing_factory',
+                        'mekanism:elite_sawing_factory',
+                        'pneumaticcraft:medium_tank',
+                        'pneumaticcraft:minigun',
+                        'pneumaticcraft:pressure_gauge',
+                        'rftoolsstorage:storage_module1',
+                        'thermal:diving_helmet',
+                        'thermal:diving_chestplate',
+                        'thermal:diving_leggings',
+                        'thermal:diving_boots',
+                        'minecraft:clock'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'gold',
+                replaceWith: 'copper',
+                items: [
+                        'mekanismgenerators:electromagnetic_coil',
+                        'mekanism:energy_tablet',
+                        'mininggadgets:upgrade_magnet',
+                        'xnet:controller',
+                        'thermal:rf_coil_xfer_augment',
+                        'thermal:rf_coil_storage_augment',
+                        'thermal:rf_coil_augment',
+                        'thermal:rf_coil',
+                        'rftoolsstorage:storage_scanner',
+                        'rftoolsbuilder:shield_block1',
+                        'pneumaticcraft:vortex_tube',
+                        'pneumaticcraft:heat_sink',
+                        'modularrouters:speed_upgrade',
+                        'mininggadgets:upgrade_magnet',
+                        'mekanism:energy_tablet',
+                        'mekanismgenerators:electromagnetic_coil',
+                        'xnet:connector_blue',
+                        'xnet:connector_red',
+                        'xnet:connector_green'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'gold',
+                replaceWith: 'silver',
+                items: [
+                    'torchmaster:feral_flare_lantern',
+                    'mekanism:teleportation_core',
+                    'botania:mana_spreader'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'gold',
+                replaceWith: 'tin',
+                items: [
+                    'pneumaticcraft:memory_stick',
+                    'industrialforegoing:dissolution_chamber'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'iron',
+                replaceWith: 'aluminum',
+                items: [
+                    'immersiveengineering:conveyor_splitter',
+                    'immersiveengineering:conveyor_vertical',
+                    'immersiveengineering:conveyor_basic',
+                    'immersiveengineering:current_transformer',
+                    'immersiveengineering:transformer_hv',
+                    'immersiveengineering:transformer',
+                    'immersiveengineering:dynamo',
+                    'immersiveengineering:furnace_heater',
+                    'immersiveengineering:toolupgrade_drill_lube',
+                    'endermail:locker',
+                    'endermail:package_controller',
+                    'cookingforblockheads:preservation_chamber',
+                    'buildersaddition:arcade',
+                    'minecraft:compass',
+                    'xnet:antenna_dish',
+                    'xnet:antenna_base',
+                    'xnet:antenna',
+                    'transport:fluid_loader',
+                    'resourcefulbees:centrifuge_casing',
+                    'mekanism:ultimate_fluid_tank',
+                    'mekanism:elite_fluid_tank',
+                    'mekanism:advanced_fluid_tank',
+                    'mekanism:basic_fluid_tank'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'iron',
+                replaceWith: 'copper',
+                items: [
+                    'shrink:shrinking_device',
+                    'immersiveengineering:charging_station',
+                    'cookingforblockheads:heating_unit',
+                    'aquaculture:tackle_box'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'iron',
+                replaceWith: 'lead',
+                items: [
+                    'travel_anchors:travel_anchor',
+                    'travel_anchors:travel_staff'
+                    ]
+            },
+            {
+                type: 'ingots',
+                replace: 'iron',
+                replaceWith: 'tin',
+                items: [
+                    'bloodmagic:soulsnare',
+                    'modularrouters:bulk_item_filter'
+                    ]
+            },
+            {
+                type: 'nuggets',
+                replace: 'gold',
+                replaceWith: 'bronze',
+                items: [
+                    'rftoolsstorage:storage_module0'
+                    ]
+            },
+            {
+                type: 'nuggets',
+                replace: 'gold',
+                replaceWith: 'copper',
+                items: [
+                    'rftoolsstorage:storage_module0',
+                    'xnet:connector_routing',
+                    'xnet:netcable_routing',
+                    'xnet:netcable_yellow',
+                    'xnet:netcable_blue',
+                    'xnet:netcable_green',
+                    'xnet:netcable_red',
+                    'rftoolsbase:machine_base',
+                    'rftoolsbase:machine_frame',
+                    'rftoolscontrol:card_base',
+                    'modularrouters:speed_upgrade',
+                    'modularrouters:blank_upgrade',
+                    'modularrouters:blank_module'
+                    ]
+            },
+            {
+                type: 'nuggets',
+                replace: 'gold',
+                replaceWith: 'silver',
+                items: [
+                    'botania:spark'
+                    ]
+            }
+                        
+        ]       
+    };    
+
+    data.recipes.forEach((recipe) => {
+        recipe.items.forEach((item) => {
+            event.replaceInput({output: item}, '#forge:' + recipe.type + '/' + recipe.replace, '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith );
+        });
+    });
+
+    event.replaceInput({mod: 'industrialforegoing'}, '#forge:gears/iron', '#forge:gears/iron_invar');
+    event.replaceInput({mod: 'industrialforegoing'}, '#forge:ingots/iron', '#forge:ingots/iron_aluminum'); //wtf won't this work?
+    event.replaceInput({mod: 'buildinggadgets'}, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
+    event.replaceInput({mod: 'powah'}, '#forge:ingots/iron', '#forge:ingots/iron_copper');
+    event.replaceInput({mod: 'powah'}, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
+
     // event.replaceInput(
     //     { type: 'minecraft:crafting_shaped', output: 'create:redstone_link' },
     //     'create:brass_sheet',
     //     '#forge:plates/brass'
     // );
 });
+
