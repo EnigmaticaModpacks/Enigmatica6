@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "gig",
+    "qrq"
+  ],
+  "key": {
+    "g": {
+      "tag": "forge:nuggets/gold_bronze"
+    },
+    "q": {
+      "item": "minecraft:quartz"
+    },
+    "r": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "tag": "forge:chests"
+    },
+    "i": {
+      "tag": "forge:ingots/iron_tin"
+    }
+  },
+  "result": {
+    "item": "rftoolsstorage:storage_module0"
+  }
+}
