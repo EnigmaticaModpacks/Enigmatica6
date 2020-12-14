@@ -99,15 +99,7 @@ events.listen('recipes', function (event) {
                     'resourcefulbees:centrifuge_casing',
                     'xnet:antenna_base'
                     ]
-            },
-            {
-                type: 'storage_blocks',
-                replace: 'gold',
-                replaceWith: 'bronze',
-                items: [
-                        'rftoolsstorage:storage_module2'
-                    ]
-            },
+            },            
             {
                 type: 'storage_blocks',
                 replace: 'iron',
@@ -151,26 +143,10 @@ events.listen('recipes', function (event) {
                     ]
             },
             {
-                type: 'dusts',
-                replace: 'iron',
-                replaceWith: 'aluminum',
-                items: [
-                        'immersiveengineering:insulating_glass'
-                    ]
-            },
-            {
                 type: 'gears',
                 replace: 'gold',
                 replaceWith: 'bronze',
                 items: [
-                        'industrialforegoing:animal_rancher',
-                        'industrialforegoing:animal_baby_separator',
-                        'industrialforegoing:biofuel_generator',
-                        'industrialforegoing:block_breaker',
-                        'industrialforegoing:material_stonework_factory',
-                        'industrialforegoing:mob_slaughter_factory',
-                        'industrialforegoing:plant_gatherer',
-                        'industrialforegoing:laser_drill',
                         'thermal:upgrade_augment_1'
                     ]
             },
@@ -179,28 +155,8 @@ events.listen('recipes', function (event) {
                 replace: 'gold',
                 replaceWith: 'copper',
                 items: [
-                        'industrialforegoing:dye_mixer',
-                        'industrialforegoing:resourceful_furnace',
-                        'industrialforegoing:sludge_refiner',
                         'thermal:flux_drill',
                         'thermal:flux_saw'
-                    ]
-            },
-            {
-                type: 'gears',
-                replace: 'gold',
-                replaceWith: 'diamond',
-                items: [
-                        'industrialforegoing:laser_drill'
-                    ]
-            },
-            {
-                type: 'gears',
-                replace: 'gold',
-                replaceWith: 'invar',
-                items: [
-                        'industrialforegoing:mob_crusher',
-                        'industrialforegoing:stasis_chamber'
                     ]
             },
             {
@@ -232,21 +188,9 @@ events.listen('recipes', function (event) {
                         'bloodmagic:sacrificialdagger',
                         'bloodmagic:experiencebook',
                         'bloodmagic:soulforge',
-                        'mekanism:elite_energy_cube',
-                        'mekanism:elite_tier_installer',
-                        'mekanism:elite_smelting_factory',
-                        'mekanism:elite_enriching_factory',
-                        'mekanism:elite_crushing_factory',
-                        'mekanism:elite_compressing_factory',
-                        'mekanism:elite_combining_factory',
-                        'mekanism:elite_purifying_factory',
-                        'mekanism:elite_injecting_factory',
-                        'mekanism:elite_infusing_factory',
-                        'mekanism:elite_sawing_factory',
                         'pneumaticcraft:medium_tank',
                         'pneumaticcraft:minigun',
                         'pneumaticcraft:pressure_gauge',
-                        'rftoolsstorage:storage_module1',
                         'thermal:diving_helmet',
                         'thermal:diving_chestplate',
                         'thermal:diving_leggings',
@@ -272,9 +216,6 @@ events.listen('recipes', function (event) {
                         'pneumaticcraft:vortex_tube',
                         'pneumaticcraft:heat_sink',
                         'modularrouters:speed_upgrade',
-                        'mininggadgets:upgrade_magnet',
-                        'mekanism:energy_tablet',
-                        'mekanismgenerators:electromagnetic_coil',
                         'xnet:connector_blue',
                         'xnet:connector_red',
                         'xnet:connector_green'
@@ -295,8 +236,7 @@ events.listen('recipes', function (event) {
                 replace: 'gold',
                 replaceWith: 'tin',
                 items: [
-                    'pneumaticcraft:memory_stick',
-                    'industrialforegoing:dissolution_chamber'
+                    'pneumaticcraft:memory_stick'
                     ]
             },
             {
@@ -322,11 +262,7 @@ events.listen('recipes', function (event) {
                     'xnet:antenna_base',
                     'xnet:antenna',
                     'transport:fluid_loader',
-                    'resourcefulbees:centrifuge_casing',
-                    'mekanism:ultimate_fluid_tank',
-                    'mekanism:elite_fluid_tank',
-                    'mekanism:advanced_fluid_tank',
-                    'mekanism:basic_fluid_tank'
+                    'resourcefulbees:centrifuge_casing'
                     ]
             },
             {
@@ -371,7 +307,6 @@ events.listen('recipes', function (event) {
                 replace: 'gold',
                 replaceWith: 'copper',
                 items: [
-                    'rftoolsstorage:storage_module0',
                     'xnet:connector_routing',
                     'xnet:netcable_routing',
                     'xnet:netcable_yellow',
@@ -404,8 +339,6 @@ events.listen('recipes', function (event) {
         });
     });
 
-    event.replaceInput({mod: 'industrialforegoing'}, '#forge:gears/iron', '#forge:gears/iron_invar');
-    event.replaceInput({mod: 'industrialforegoing'}, '#forge:ingots/iron', '#forge:ingots/iron_aluminum'); //wtf won't this work?
     event.replaceInput({mod: 'buildinggadgets'}, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
     event.replaceInput({mod: 'powah'}, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({mod: 'powah'}, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
