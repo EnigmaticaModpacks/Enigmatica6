@@ -75,7 +75,7 @@ events.listen('recipes', function (event) {
         shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A A'], {
             A: '#forge:rods/wooden'
         }),
-        shapedRecipe(item.of('immersiveengineering:stick_steel', 2), ['A', 'A'], {
+        shapedRecipe(item.of('immersiveengineering:stick_steel', 3), ['A', 'A', 'A'], {
             A: '#forge:ingots/steel'
         }),
         shapedRecipe(item.of('valhelsia_structures:oak_post', 6), ['A', 'A', 'A'], {
@@ -107,10 +107,9 @@ events.listen('recipes', function (event) {
         shapedRecipe(item.of('bloodmagic:demonwillgauge', 1), [' B ', 'ACA', ' B '], {
             A: '#forge:ingots/tin',
             B: '#forge:nuggets/tin',
-			C: '#bloodmagic:crystals/demon'
+            C: '#bloodmagic:crystals/demon'
         })
     ];
-	
 
     recipes.forEach(function (recipe) {
         event.shaped(recipe.result, recipe.pattern, recipe.key);
