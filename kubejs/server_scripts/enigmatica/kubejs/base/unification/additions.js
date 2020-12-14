@@ -9,6 +9,7 @@ events.listen('recipes', function (event) {
         immersiveengineering_hammer_crafting_plates(event, material);
         bloodmagic_ore_processing_alchemy(event, material);
         bloodmagic_ore_processing_arc(event, material);
+        astralsorcery_ore_processing_infuser(event, material);
     });
 });
 
@@ -149,6 +150,9 @@ function bloodmagic_ore_processing_arc(event, material) {
 function bloodmagic_ore_processing_alchemy(event, material) {
     var data;
 
+    var oreTag = ingredient.of('#forge:ores/' + material);
+    var ore = getPreferredItemInTag(oreTag).id; 
+
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;    
 
@@ -157,40 +161,82 @@ function bloodmagic_ore_processing_alchemy(event, material) {
 
     if (ingot != air && ore != air) {
         data = {
-            recipes : [
-                {
-                    input: 'forge:ores/' + material,
-                    output: dust,
-                    count: 2,
-                    bonus: [],
-                    tool: 'bloodmagic:arc/cuttingfluid'                    
-                }
-            ]
+            input: 'forge:ores/' + material,
+            output: dust,
+            count: 2,
+            tool: 'bloodmagic:arc/cuttingfluid'    
         };
     } else {
         return;
     }
 
-    data.recipes.forEach((recipe) => {
-        event.recipes.bloodmagic.alchemytable({
-            type: "bloodmagic:alchemytable",
-            input: [
-                {
-                tag: recipe.input
-                },
-                {
-                tag: recipe.tool
-                }
-            ],
-            output: {
-                item: recipe.output,
-                count: 2
+    event.recipes.bloodmagic.alchemytable({
+        type: "bloodmagic:alchemytable",
+        input: [
+            {
+            tag: data.input
             },
-            syphon: 400,
-            ticks: 200,
-            upgradeLevel: 1
-        });
+            {
+            tag: data.tool
+            }
+        ],
+        output: {
+            item: data.output,
+            count: data.count
+        },
+        syphon: 400,
+        ticks: 200,
+        upgradeLevel: 1
     });
+
+}
+
+function astralsorcery_ore_processing_infuser(event, material) {
+    blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron', 'gold'];
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+    
+    var data;
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    var ingotTag = ingredient.of('#forge:ingots/' + material);
+    var ingot = getPreferredItemInTag(ingotTag).id;
+
+    if (gem != air) {
+        data = {
+            output: gem,
+            count: 5
+        };
+    } else if (ingot != air) {
+        data = {
+            output: ingot,
+            count: 3
+        };
+    } else {
+        return;
+    }
+
+    
+    event.recipes.astralsorcery.infuser({
+        type: 'astralsorcery:infuser',
+        fluidInput: 'astralsorcery:liquid_starlight',
+        input: {
+            tag: 'forge:ores/' + material
+        },
+        output: {
+            item: data.output,
+            count: data.count
+        },
+        consumptionChance: 0.1,
+        duration: 100,
+        consumeMultipleFluids: false,
+        acceptChaliceInput: true,
+        copyNBTToOutputs: false
+    });     
 }
 
 function enigmatica_ore_deposit_processing(event, material) {

@@ -281,8 +281,14 @@ events.listen('recipes', function (event) {
             A: 'minecraft:dropper',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
+        }),
+        shapedRecipe(item.of('bloodmagic:demonwillgauge', 1), [' B ', 'ACA', ' B '], {
+            A: '#forge:ingots/tin',
+            B: '#forge:nuggets/tin',
+			      C: '#bloodmagic:crystals/demon'
         })
     ];
+	
 
     recipes.forEach(function (recipe) {
         event.shaped(recipe.result, recipe.pattern, recipe.key);
