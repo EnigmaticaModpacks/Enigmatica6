@@ -40,7 +40,13 @@ events.listen('item.tags', function (event) {
         'vanillaexcavators:redstone_excavator',
         'vanillaexcavators:slime_excavator',
         'vanillaexcavators:stone_excavator',
-        'vanillaexcavators:wood_excavator'
+        'vanillaexcavators:wood_excavator',
+        'undergarden:utheric_shovel',
+        'undergarden:froststeel_shovel',
+        'undergarden:cloggrum_shovel',
+        'bloodmagic:soulshovel',
+        'astralsorcery:crystal_shovel',
+        'astralsorcery:infused_crystal_shovel'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/shovel').add(items);

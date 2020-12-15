@@ -32,7 +32,11 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:pneumatic_boots',
         'thermal:beekeeper_boots',
         'thermal:diving_boots',
-        'thermal:hazmat_boots'
+        'thermal:hazmat_boots',
+        'undergarden:froststeel_boots',
+        'undergarden:cloggrum_boots',
+        'undergarden:utheric_boots',
+        'bloodmagic:livingboots'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/boots').add(items);

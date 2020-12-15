@@ -34,7 +34,20 @@ events.listen('item.tags', function (event) {
         'refinedstorage:64k_fluid_storage_block',
         'refinedstorage:64k_fluid_storage_disk',
         'refinedstorage:64k_fluid_storage_part',
-        'rftoolsutility:tank'
+        'rftoolsutility:tank',
+        'extrastorage:disk_1048576k_fluid',
+        'extrastorage:disk_262144k_fluid',
+        'extrastorage:disk_65536k_fluid',
+        'extrastorage:disk_16384k_fluid',
+        'extrastorage:storagepart_1048576k_fluid',
+        'extrastorage:storagepart_262144k_fluid',
+        'extrastorage:storagepart_65536k_fluid',
+        'extrastorage:storagepart_16384k_fluid',
+        'extrastorage:block_1048576k_fluid',
+        'extrastorage:block_262144k_fluid',
+        'extrastorage:block_65536k_fluid',
+        'extrastorage:block_16384k_fluid',
+        'astralsorcery:chalice'
     ];
 	event.get('forge:storage').add(items);
 	event.get('forge:storage/liquid').add(items);
