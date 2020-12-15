@@ -61,9 +61,6 @@ const colors = [
 ];
 
 const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
-const unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];
+
 
 const vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
