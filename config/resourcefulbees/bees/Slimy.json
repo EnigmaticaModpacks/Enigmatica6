@@ -1,35 +1,35 @@
 {
-    "flower": "ALL",
-    "hasHoneycomb": true,
-    "traits": ["slimy"],
-    "maxTimeInHive": 2400,
-    "ColorData": {
-        "isBeeColored": true,
-        "primaryColor": "#73c262",
-        "secondaryColor": "#303030",
-        "honeycombColor": "#73c262"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "minecraft:honey_block",
-        "mutationOutput": "minecraft:slime_block",
-        "mutationType": "BLOCK_TO_BLOCK",
-        "mutationCount": 15
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:slime_ball",
-        "mainOutputWeight": 0.2
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "zombie",
-        "parent2": "clay",
-        "feedItem": "minecraft:slimeball",
-        "feedAmount": 4,
-        "breedWeight": 30
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+  "flower": "ALL",
+  "hasHoneycomb": true,
+  "traits": ["slimy"],
+  "maxTimeInHive": 2400,
+  "ColorData": {
+    "isBeeColored": true,
+    "primaryColor": "#73c262",
+    "secondaryColor": "#303030",
+	"honeycombColor": "#73c262"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:honey_block",
+    "mutationOutput": "minecraft:slime_block",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 15
+  },
+   "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:slime_ball",
+	"mainOutputWeight": 0.20
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "zombie",
+    "parent2": "clay",
+    "feedItem": "minecraft:slimeball",
+    "feedAmount": 4,
+    "breedWeight": 30
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

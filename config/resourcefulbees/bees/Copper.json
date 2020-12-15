@@ -1,36 +1,36 @@
 {
-    "flower": "ALL",
-    "hasHoneycomb": true,
-    "maxTimeInHive": 2400,
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#a0522d",
-        "primaryColor": "#a0522d",
-        "secondaryColor": "#2e8b57"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "minecraft:stone",
-        "mutationOutput": "emendatusenigmatica:copper_ore",
-        "mutationType": "BLOCK_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "emendatusenigmatica:copper_ingot",
-        "mainOutputWeight": 0.1
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:OVERWORLD",
-        "biomeBlacklist": "tag:ocean"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "iron",
-        "parent2": "gold",
-        "feedItem": "emendatusenigmatica:copper_block",
-        "feedAmount": 2,
-        "breedWeight": 20
-    },
-    "TraitData": {}
+  "flower": "ALL",
+  "hasHoneycomb": true,
+  "maxTimeInHive": 2400,
+  "ColorData": {
+    "isBeeColored": true,
+    "honeycombColor": "#a0522d",
+    "primaryColor": "#a0522d",
+    "secondaryColor": "#2e8b57"
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "minecraft:stone",
+    "mutationOutput": "emendatusenigmatica:copper_ore",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:copper_ingot",
+	"mainOutputWeight": 0.10
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:ocean"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "iron",
+    "parent2": "gold",
+    "feedItem": "emendatusenigmatica:copper_block",
+    "feedAmount": 2,
+    "breedWeight": 20
+  },
+  "TraitData": {}
 }
