@@ -1,7 +1,5 @@
-//priority: 975
+//priority: 900
 events.listen('recipes', function (event) {
-    // pedestals_dust_smelting(event);
-
     materialsToUnify.forEach(function (material) {
         // enigmatica_ore_deposit_processing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
@@ -12,7 +10,11 @@ events.listen('recipes', function (event) {
         astralsorcery_ore_processing_infuser(event, material);
     });
 });
-
+function getPreferredItemInTag(tag) {
+    const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
+    // console.info('Preferred item: ' + tag + ' => ' + pref);
+    return pref;
+}
 function pedestals_dust_smelting(event) {
     var pedestal_dusts = ['pedestals:dustsilver', 'pedestals:dustaluminum', 'pedestals:dustnickel'];
 
