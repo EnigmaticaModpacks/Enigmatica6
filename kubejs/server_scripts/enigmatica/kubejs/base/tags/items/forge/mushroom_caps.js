@@ -11,7 +11,11 @@ events.listen('item.tags', function (event) {
         'byg:green_mushroom_block',
         'byg:sythian_wart_block',
         'quark:glowshroom_block',
-        'byg:purple_shroomlight'
+        'byg:purple_shroomlight',
+        'undergarden:blood_mushroom_cap',
+        'undergarden:ink_mushroom_cap',
+        'undergarden:veil_mushroom_cap',
+        'undergarden:indigo_mushroom_cap'
     ];
 	event.get('forge:mushroom_caps').add(items);
 });

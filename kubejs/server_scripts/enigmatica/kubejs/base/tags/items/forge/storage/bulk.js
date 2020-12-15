@@ -90,7 +90,19 @@ events.listen('item.tags', function (event) {
         'storagedrawers:spruce_full_drawers_4',
         'storagedrawers:spruce_half_drawers_1',
         'storagedrawers:spruce_half_drawers_2',
-        'storagedrawers:spruce_half_drawers_4'
+        'storagedrawers:spruce_half_drawers_4',
+        'extrastorage:disk_16384k',
+        'extrastorage:disk_4096k',
+        'extrastorage:disk_1024k',
+        'extrastorage:disk_256k',
+        'extrastorage:storagepart_16384k',
+        'extrastorage:storagepart_4096k',
+        'extrastorage:storagepart_1024k',
+        'extrastorage:storagepart_256k',
+        'extrastorage:block_16384k',
+        'extrastorage:block_4096k',
+        'extrastorage:block_1024k',
+        'extrastorage:block_256k',
     ];
 	event.get('forge:storage').add(items);
 	event.get('forge:storage/bulk').add(items);

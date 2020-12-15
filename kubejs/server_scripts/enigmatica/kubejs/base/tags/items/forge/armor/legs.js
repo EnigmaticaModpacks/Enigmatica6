@@ -31,7 +31,11 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:pneumatic_leggings',
         'thermal:beekeeper_leggings',
         'thermal:diving_leggings',
-        'thermal:hazmat_leggings'
+        'thermal:hazmat_leggings',
+        'undergarden:froststeel_leggings',
+        'undergarden:utheric_leggings',
+        'undergarden:cloggrum_leggings',
+        'bloodmagic:livingleggings'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/leggings').add(items);

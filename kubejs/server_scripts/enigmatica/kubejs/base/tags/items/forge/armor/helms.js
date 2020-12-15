@@ -32,7 +32,11 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:pneumatic_helmet',
         'thermal:beekeeper_helmet',
         'thermal:diving_helmet',
-        'thermal:hazmat_helmet'
+        'thermal:hazmat_helmet',
+        'undergarden:utheric_helmet',
+        'undergarden:froststeel_helmet',
+        'undergarden:cloggrum_helmet',
+        'bloodmagic:livinghelmet'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/helm').add(items);

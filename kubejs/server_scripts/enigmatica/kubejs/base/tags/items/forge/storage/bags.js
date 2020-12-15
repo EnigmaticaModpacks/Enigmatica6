@@ -24,7 +24,11 @@ events.listen('item.tags', function (event) {
         'usefulbackpacks:backpack_enderchest',
         'usefulbackpacks:backpack_large',
         'usefulbackpacks:backpack_medium',
-        'usefulbackpacks:backpack_small'
+        'usefulbackpacks:backpack_small',
+        'sophisticatedbackpacks:diamond_backpack',
+        'sophisticatedbackpacks:gold_backpack',
+        'sophisticatedbackpacks:iron_backpack',
+        'sophisticatedbackpacks:backpack'
     ];
 
 	event.get('forge:storage').add(items);
