@@ -33,7 +33,14 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:pneumatic_chestplate',
         'thermal:beekeeper_chestplate',
         'thermal:diving_chestplate',
-        'thermal:hazmat_chestplate'
+        'thermal:hazmat_chestplate',
+        'undergarden:utheric_chestplate',
+        'undergarden:froststeel_chestplate',
+        'undergarden:cloggrum_chestplate',
+        'undergarden:masticated_chestplate',
+        'astralsorcery:mantle',
+        'bloodmagic:livingplate'
+
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/chest').add(items);

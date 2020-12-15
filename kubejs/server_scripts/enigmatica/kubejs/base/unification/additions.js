@@ -1,9 +1,7 @@
-//priority: 975
+//priority: 900
 events.listen('recipes', function (event) {
-    // pedestals_dust_smelting(event);
-
     materialsToUnify.forEach(function (material) {
-        enigmatica_ore_deposit_processing(event, material);
+        // enigmatica_ore_deposit_processing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
         //occultism_ore_ingot_crushing(event, material);
         immersiveengineering_hammer_crafting_plates(event, material);
@@ -12,7 +10,11 @@ events.listen('recipes', function (event) {
         astralsorcery_ore_processing_infuser(event, material);
     });
 });
-
+function getPreferredItemInTag(tag) {
+    const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
+    // console.info('Preferred item: ' + tag + ' => ' + pref);
+    return pref;
+}
 function pedestals_dust_smelting(event) {
     var pedestal_dusts = ['pedestals:dustsilver', 'pedestals:dustaluminum', 'pedestals:dustnickel'];
 
@@ -69,9 +71,6 @@ function bloodmagic_ore_processing_arc(event, material) {
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
     if (gem != air) {
         data = {
             recipes: [
@@ -84,33 +83,9 @@ function bloodmagic_ore_processing_arc(event, material) {
                 }
             ]
         };
-    } else if (ingot != air) {
+    } else if (dust != air) {
         data = {
             recipes: [
-                {
-                    input: 'forge:ores/' + material,
-                    output: clump,
-                    count: 3,
-                    bonus: [],
-                    tool: 'bloodmagic:arc/explosive'
-                },
-                {
-                    input: 'mekanism:clumps/' + material,
-                    output: dirtyDust,
-                    count: 1,
-                    bonus: [
-                        { chance: 0.05, type: { item: 'bloodmagic:corrupted_tinydust' } },
-                        { chance: 0.01, type: { item: 'bloodmagic:corrupted_tinydust' } }
-                    ],
-                    tool: 'bloodmagic:arc/resonator'
-                },
-                {
-                    input: 'mekanism:dirty_dusts/' + material,
-                    output: dust,
-                    count: 1,
-                    bonus: [],
-                    tool: 'bloodmagic:arc/cuttingfluid'
-                },
                 {
                     input: 'forge:ores/' + material,
                     output: dust,
@@ -129,6 +104,35 @@ function bloodmagic_ore_processing_arc(event, material) {
         };
     } else {
         return;
+    }
+
+    if (clump != air && dirtyDust != air) {
+        data.recipes.push(
+            {
+                input: 'forge:ores/' + material,
+                output: clump,
+                count: 3,
+                bonus: [],
+                tool: 'bloodmagic:arc/explosive'
+            },
+            {
+                input: 'mekanism:clumps/' + material,
+                output: dirtyDust,
+                count: 1,
+                bonus: [
+                    { chance: 0.05, type: { item: 'bloodmagic:corrupted_tinydust' } },
+                    { chance: 0.01, type: { item: 'bloodmagic:corrupted_tinydust' } }
+                ],
+                tool: 'bloodmagic:arc/resonator'
+            },
+            {
+                input: 'mekanism:dirty_dusts/' + material,
+                output: dust,
+                count: 1,
+                bonus: [],
+                tool: 'bloodmagic:arc/cuttingfluid'
+            }
+        );
     }
 
     data.recipes.forEach((recipe) => {
@@ -153,16 +157,10 @@ function bloodmagic_ore_processing_arc(event, material) {
 function bloodmagic_ore_processing_alchemy(event, material) {
     var data;
 
-    var oreTag = ingredient.of('#forge:ores/' + material);
-    var ore = getPreferredItemInTag(oreTag).id;
-
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
-    if (ingot != air && ore != air) {
+    if (dust != air) {
         data = {
             input: 'forge:ores/' + material,
             output: dust,
@@ -240,6 +238,7 @@ function astralsorcery_ore_processing_infuser(event, material) {
     });
 }
 
+// Currently unused
 function enigmatica_ore_deposit_processing(event, material) {
     var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
     var oreDeposit = oreDepositTag.first.id;

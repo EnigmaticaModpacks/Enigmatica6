@@ -1,37 +1,37 @@
 {
-    "flower": "minecraft:crimson_fungus",
-    "maxTimeInHive": 2400,
-    "hasHoneycomb": true,
-    "baseLayerTexture": "pigman/pigman_bee",
-    "traits": ["nether"],
-    "ColorData": {
-        "isBeeColored": true,
-        "primaryColor": "#faebd7",
-        "secondaryColor": "#dc143c",
-        "honeycombColor": "#faebd7"
-    },
-    "MutationData": {
-        "hasMutation": false,
-        "mutationInput": "minecraft:netherrack",
-        "mutationOutput": "minecraft:glowstone",
-        "mutationType": "BLOCK_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:ghast_tear",
-        "mainOutputWeight": 0.15
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:nether",
-        "lightLevel": "NIGHT"
-    },
-    "BreedData": {
-        "isBreedable": false,
-        "parent1": "",
-        "parent2": ""
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+  "flower": "minecraft:crimson_fungus",
+  "maxTimeInHive": 2400,
+  "hasHoneycomb": true,
+  "baseLayerTexture": "pigman/pigman_bee",
+  "traits": ["nether"],
+  "ColorData": {
+    "isBeeColored": true,
+	"primaryColor":"#faebd7",
+	"secondaryColor":"#dc143c",
+    "honeycombColor": "#faebd7"
+  },
+  "MutationData": {
+    "hasMutation": false,
+    "mutationInput": "minecraft:netherrack",
+    "mutationOutput": "minecraft:glowstone",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:ghast_tear",
+	"mainOutputWeight": 0.15
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false,
+    "biomeWhitelist": "tag:nether",
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": false,
+    "parent1": "",
+    "parent2": ""
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

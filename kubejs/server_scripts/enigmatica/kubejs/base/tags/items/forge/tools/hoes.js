@@ -30,7 +30,10 @@ events.listen('item.tags', function (event) {
         'aiotbotania:livingrock_aiot',
         'aiotbotania:manasteel_aiot',
         'aiotbotania:elementium_aiot',
-        'aiotbotania:terra_aiot'
+        'aiotbotania:terra_aiot',
+        'undergarden:utheric_hoe',
+        'undergarden:froststeel_hoe',
+        'undergarden:cloggrum_hoe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/hoe').add(items);
