@@ -137,6 +137,12 @@
 		chunkCheckRadius = 5
 		#Radiated objects and entities are multiplied by this constant roughly once per second to represent their dosage decay.
 		targetDecayRate = 0.9995
+		#Number of ticks required for radioactive gas stored in a Radioactive Waste Barrel to decay radioactiveWasteBarrelDecayAmount mB.
+		#Range: > 1
+		radioactiveWasteBarrelProcessTicks = 1200
+		#Number of mB of gas that decay every radioactiveWasteBarrelProcessTicks ticks when stored in a Radioactive Waste Barrel. Set to zero to disable decay all together. (Gases in the mekanism:waste_barrel_decay_blacklist tag will not decay).
+		#Range: 0 ~ 9223372036854775807
+		radioactiveWasteBarrelDecayAmount = 1
 		#Radiation sources are multiplied by this constant roughly once per second to represent their emission decay. At the default rate, it takes roughly 10 days to remove a 1,000 Sv/h (crazy high) source.
 		sourceDecayRate = 0.9995
 		#Defines the minimum severity radiation dosage severity (scale of 0 to 1) for which negative effects can take place. Set to 1 to disable negative effects completely.

@@ -20,4 +20,7 @@ events.listen('item.tags', function (event) {
 
     event.get('forge:dusts/ender_pearl').remove('thermal:ender_pearl_dust');
     event.get('forge:dusts/ender').add('thermal:ender_pearl_dust');
+
+    event.get('forge:dusts/gold_copper').add('#forge:dusts/gold').add('#forge:dusts/copper');
+    event.get('forge:dusts/iron_aluminum').add('#forge:dusts/iron').add('#forge:dusts/aluminum');
 });
