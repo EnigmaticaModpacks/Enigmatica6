@@ -23,7 +23,8 @@ events.listen('item.tags', function (event) {
         'minecraft:trident',
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun',
-        'xercamod:ender_bow'
+        'xercamod:ender_bow',
+        'undergarden:slingshot'
     ];
 	event.get('forge:weapons').add(items);
 	event.get('forge:weapons/ranged').add(items);

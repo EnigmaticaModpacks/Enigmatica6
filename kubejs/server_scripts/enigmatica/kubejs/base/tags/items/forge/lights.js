@@ -320,7 +320,11 @@ events.listen('item.tags', function (event) {
         'torchmaster:dreadlamp',
         'torchmaster:feral_flare_lantern',
         'torchmaster:megatorch',
-        'valhelsia_structures:brazier'
+        'valhelsia_structures:brazier',
+        'astralsorcery:illumination_powder',
+        'astralsorcery:illuminator',
+        'bloodmagic:bloodlightsigil',
+        'astralsorcery:illumination_wand'
     ];
 	event.get('forge:lights').add(items);
 });

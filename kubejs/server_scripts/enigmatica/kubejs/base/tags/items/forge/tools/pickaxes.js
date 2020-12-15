@@ -20,7 +20,13 @@ events.listen('item.tags', function (event) {
         'minecraft:wooden_pickaxe',
         'mythicbotany:alfsteel_pick',
         'naturesaura:infused_iron_pickaxe',
-        'naturesaura:sky_pickaxe'
+        'naturesaura:sky_pickaxe',
+        'undergarden:utheric_pickaxe',
+        'undergarden:froststeel_pickaxe',
+        'undergarden:cloggrum_pickaxe',
+        'bloodmagic:soulpickaxe',
+        'astralsorcery:crystal_pickaxe',
+        'astralsorcery:infused_crystal_pickaxe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/pickaxe').add(items);

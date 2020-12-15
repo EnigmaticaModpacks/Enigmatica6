@@ -41,7 +41,13 @@ events.listen('item.tags', function (event) {
         'mekanismtools:refined_obsidian_paxel',
         'mekanismtools:steel_paxel',
         'mekanismtools:stone_paxel',
-        'mekanismtools:wood_paxel'
+        'mekanismtools:wood_paxel',
+        'undergarden:utheric_axe',
+        'undergarden:froststeel_axe',
+        'undergarden:cloggrum_axe',
+        'bloodmagic:soulaxe',
+        'astralsorcery:crystal_axe',
+        'astralsorcery:infused_crystal_axe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/axe').add(items);
