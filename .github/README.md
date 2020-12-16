@@ -34,7 +34,7 @@ Follow these steps to setup your workspace/server:
 5) Click Install Forge, pick the latest version. (right hand side)
 6) Fork and clone the Enigmatica 6 repository to your GitHub profile.
 7) Open the folder of the MultiMC Instance you made (step 1-5), and go into the .minecraft folder - Open a Terminal and use the following commands:
-
+(Depending on how you installed Git on Windows, "Git Bash Here" should show up when right-clicking inside the .minecraft folder)
 ```
 git init                                              # Initialize git in folder
 git remote add origin URLToYourEnigmaticaFork.git     # Set remote origin to your Enigmatica fork
