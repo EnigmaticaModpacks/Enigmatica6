@@ -27,15 +27,14 @@ Follow these steps to setup your workspace/server:
 
 ## Windows / Mac - MultiMC
 
-1) Download [MultiMC](https://multimc.org/#Download) if you haven't already.
-1a) Download [Git for Windows](https://git-scm.com/download/win) if you haven't already.
+1) Download [MultiMC](https://multimc.org/#Download) if you haven't already. Also [Git for Windows](https://git-scm.com/download/win).
 2) Open MultiMC.
 3) Click Add Instance, choose Minecraft 1.16.4, click Ok. (Or the lastest version mods are dependant on)
 4) Click Edit Instance. (right hand side)
 5) Click Install Forge, pick the latest version. (right hand side)
 6) Fork and clone the Enigmatica 6 repository to your GitHub profile.
 7) Open the folder of the MultiMC Instance you made (step 1-5), and go into the .minecraft folder 
-7a) Depending on how you installed Git on Windows, "Git Bash Here" should show up when right-clicking inside the .minecraft folder. Open and use the following commands:
+8) Depending on how you installed Git on Windows, "Git Bash Here" should show up when right-clicking inside the .minecraft folder. Open and use the following commands:
 
 ```
 git init                                              # Initialize git in folder
@@ -45,8 +44,8 @@ git fetch
 git pull
 ```
 
-8) Now double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
-9) One more `git pull`
+9) Now double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+10) One more `git pull`
 
 ## Windows / Mac - Twitch
 
