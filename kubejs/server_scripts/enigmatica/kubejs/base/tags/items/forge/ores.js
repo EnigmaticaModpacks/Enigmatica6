@@ -3,12 +3,7 @@ events.listen('item.tags', function (event) {
     event
         .get('forge:ores')
         .add(['powah:uraninite_ore_poor', 'powah:uraninite_ore', 'powah:uraninite_ore_dense'])
-        .add('minecraft:ancient_debris')
-        .add([
-            'rftoolsbase:dimensionalshard_overworld',
-            'rftoolsbase:dimensionalshard_nether',
-            'rftoolsbase:dimensionalshard_end'
-        ]);
+        .add('minecraft:ancient_debris');
     event
         .get('forge:ores/dimensional')
         .add([
