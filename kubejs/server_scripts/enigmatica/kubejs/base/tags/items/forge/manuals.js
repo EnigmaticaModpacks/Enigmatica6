@@ -7,7 +7,8 @@ events.listen('item.tags', function (event) {
 		'tmechworks:book',
 		'powah:book',
 		'rftoolsbase:manual',
-		'ars_nouveau:worn_notebook'
+		'ars_nouveau:worn_notebook',
+		'astralsorcery:tome'
     ];
 	event.get('forge:manuals').add(items);
 });
