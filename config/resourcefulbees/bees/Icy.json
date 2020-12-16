@@ -1,37 +1,37 @@
 {
-  "flower": "all",
-  "hasHoneycomb": false,
-  "traits": ["can_swim"],
-  "maxTimeInHive": 1200,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#92b9fe",
-    "primaryColor": "#92b9fe",
-    "secondaryColor": "#303030"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "minecraft:water",
-    "mutationOutput": "minecraft:ice",
-    "mutationType": "FLUID_TO_BLOCK",
-    "mutationCount": 20
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": false
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "TAG:cold",
-    "spawnWeight": 4,
-    "maxGroupSize": 1,
-    "minGroupSize": 1
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "feedItem": "minecraft:snowball",
-    "feedAmount": 16
-  },
-  "TraitData": {
-    "hasTraits": true
-  }
+    "flower": "all",
+    "hasHoneycomb": false,
+    "traits": ["can_swim"],
+    "maxTimeInHive": 1200,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#92b9fe",
+        "primaryColor": "#92b9fe",
+        "secondaryColor": "#303030"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:water",
+        "mutationOutput": "minecraft:ice",
+        "mutationType": "FLUID_TO_BLOCK",
+        "mutationCount": 20
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": false
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:cold",
+        "spawnWeight": 4,
+        "maxGroupSize": 1,
+        "minGroupSize": 1
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:snowball",
+        "feedAmount": 16
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }
