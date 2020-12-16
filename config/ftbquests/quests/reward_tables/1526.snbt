@@ -57,6 +57,20 @@
 					}]
 				}
 			}
+		},
+		{
+			item: {
+				id: "minecraft:potion",
+				Count: true,
+				tag: {
+					Potion: "ars_nouveau:mana_regen_potion_strong"
+				}
+			},
+			count: 3
+		},
+		{
+			item: "ars_nouveau:mana_berry",
+			count: 64
 		}
 	]
 }
