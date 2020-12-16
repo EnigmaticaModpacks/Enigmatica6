@@ -2,9 +2,8 @@
 	id: 2197,
 	filename: "blood_magic_wip",
 	order_index: 21,
-	title: "Blood Magic WIP",
+	title: "Blood Magic",
 	icon: "bloodmagic:weakbloodshard",
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -24,7 +23,9 @@
 				"",
 				"This Life Essence, shortened as LP, will power grand rituals and powerful magics. ",
 				"",
-				"Blood Magic is currently in Beta and as such is incomplete at this time. More quests will be added as content is added. Be sure to check the book regularly as it too is a work in progress."
+				"Blood Magic is currently in Beta and as such is incomplete at this time. More quests will be added as content is added. Be sure to check the book regularly as it too is a work in progress.",
+				"",
+				"~MuteTiefling"
 			],
 			id: 2198,
 			tasks: [{
@@ -185,17 +186,27 @@
 					}
 				}
 			}],
-			rewards: [{
-				id: 2213,
-				type: "item",
-				item: {
-					id: "bloodmagic:soulpickaxe",
-					Count: true,
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: 2213,
+					type: "item",
+					item: {
+						id: "bloodmagic:soulpickaxe",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
 					}
+				},
+				{
+					id: 2478,
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "biomesoplenty:nether_crystal",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
 				}
-			}]
+			]
 		},
 		{
 			x: -3.5d,
@@ -220,6 +231,11 @@
 					Count: true,
 					tag: {}
 				}
+			}],
+			rewards: [{
+				id: 2479,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -239,6 +255,11 @@
 				id: 2229,
 				type: "item",
 				item: "bloodmagic:soulforge"
+			}],
+			rewards: [{
+				id: 2480,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -406,6 +427,11 @@
 				id: 2253,
 				type: "item",
 				item: "bloodmagic:ritualdiviner"
+			}],
+			rewards: [{
+				id: 2487,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -425,6 +451,11 @@
 				id: 2268,
 				type: "item",
 				item: "bloodmagic:daggerofsacrifice"
+			}],
+			rewards: [{
+				id: 2489,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -456,7 +487,12 @@
 					item: "bloodmagic:ritualstone",
 					count: 8L
 				}
-			]
+			],
+			rewards: [{
+				id: 2486,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			title: "Activation Crystal",
@@ -474,6 +510,11 @@
 				id: 2278,
 				type: "item",
 				item: "bloodmagic:activationcrystalweak"
+			}],
+			rewards: [{
+				id: 2485,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -544,7 +585,12 @@
 					type: "item",
 					item: "bloodmagic:weakbloodshard"
 				}
-			]
+			],
+			rewards: [{
+				id: 2490,
+				type: "loot",
+				table: 20
+			}]
 		},
 		{
 			x: -4.0d,
@@ -595,6 +641,11 @@
 				type: "item",
 				item: "bloodmagic:demoncrystallizer",
 				count: 4L
+			}],
+			rewards: [{
+				id: 2482,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
@@ -618,6 +669,11 @@
 				id: 2297,
 				type: "item",
 				item: "bloodmagic:ritualdivinerdusk"
+			}],
+			rewards: [{
+				id: 2488,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -652,7 +708,13 @@
 					type: "item",
 					item: "bloodmagic:defaultcrystal"
 				}
-			]
+			],
+			rewards: [{
+				id: 2481,
+				type: "item",
+				item: "bloodmagic:defaultcrystal",
+				count: 32
+			}]
 		},
 		{
 			title: "Demonic Will",
@@ -696,7 +758,12 @@
 					type: "item",
 					item: "bloodmagic:steadfastcrystal"
 				}
-			]
+			],
+			rewards: [{
+				id: 2483,
+				type: "loot",
+				table: 21
+			}]
 		},
 		{
 			x: 1.5d,
@@ -713,6 +780,11 @@
 				id: 2312,
 				type: "item",
 				item: "bloodmagic:ritualtinkerer"
+			}],
+			rewards: [{
+				id: 2484,
+				type: "loot",
+				table: 21
 			}]
 		},
 		{
@@ -732,6 +804,11 @@
 				id: 2314,
 				type: "item",
 				item: "bloodmagic:alchemytable"
+			}],
+			rewards: [{
+				id: 2491,
+				type: "loot",
+				table: 20
 			}]
 		},
 		{
