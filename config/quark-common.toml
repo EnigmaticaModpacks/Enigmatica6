@@ -461,6 +461,7 @@
 	Crevices = false
 	"Nether Obsidian Spikes" = true
 	"Mega Caves" = true
+	"Spiral Spires" = true
 
 	[world.monster_box]
 		#The chance for the monster box generator to try and place one in a chunk, 1 is 100%
@@ -1329,6 +1330,21 @@
 			[world.glowshroom_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
+
+	[world.spiral_spires]
+		Rarity = 200
+		Radius = 15
+		#Set to 0 to turn off Myalite Conduits
+		"Myalite Conduit Distance" = 24
+		"Renewable Myalite" = true
+
+		[world.spiral_spires.dimensions]
+			"Is Blacklist" = false
+			Dimensions = ["minecraft:the_end"]
+
+		[world.spiral_spires.biomes]
+			Biomes = ["minecraft:end_highlands"]
+			"Is Blacklist" = false
 
 [mobs]
 	Frogs = true
