@@ -160,7 +160,17 @@ function bloodmagic_ore_processing_alchemy(event, material) {
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
-    if (dust != air) {
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    if (gem != air) {
+        data = {
+            input: 'forge:ores/' + material,
+            output: gem,
+            count: 2,
+            tool: 'bloodmagic:arc/cuttingfluid'
+        };
+    } else if (dust != air) {
         data = {
             input: 'forge:ores/' + material,
             output: dust,
