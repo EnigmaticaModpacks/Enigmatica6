@@ -25,7 +25,7 @@ Note: You do not have to use the below setup method, you can use the available f
 
 Follow these steps to setup your workspace/server:
 
-## Windows / Mac - MultiMC
+## Windows - MultiMC
 
 1) Download [MultiMC](https://multimc.org/#Download) if you haven't already. Also [Git for Windows](https://git-scm.com/download/win).
 2) Open MultiMC.
