@@ -28,6 +28,7 @@ Follow these steps to setup your workspace/server:
 ## Windows / Mac - MultiMC
 
 1) Download [MultiMC](https://multimc.org/#Download) if you haven't already.
+1a) Download [Git for Windows](https://git-scm.com/download/win) if you haven't already.
 2) Open MultiMC.
 3) Click Add Instance, choose Minecraft 1.16.4, click Ok. (Or the lastest version mods are dependant on)
 4) Click Edit Instance. (right hand side)
