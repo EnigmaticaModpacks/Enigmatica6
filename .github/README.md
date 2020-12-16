@@ -37,7 +37,7 @@ Follow these steps to setup your workspace/server:
 
 ```
 git init                                              # Initialize git in folder
-git remote add origin URLToYourEnigmaticaFork.git     # Set remote origin to your Enigmatica 5 fork
+git remote add origin URLToYourEnigmaticaFork.git     # Set remote origin to your Enigmatica fork
 git remote -v                                         # Verify remote
 git fetch
 git pull
