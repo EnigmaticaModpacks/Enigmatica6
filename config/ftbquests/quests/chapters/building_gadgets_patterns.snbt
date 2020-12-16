@@ -1,0 +1,540 @@
+{
+	id: 2497,
+	filename: "building_gadgets_patterns",
+	order_index: 24,
+	title: "Building Gadget's Patterns",
+	icon: {
+		id: "buildinggadgets:gadget_building",
+		Count: true,
+		tag: {
+			state_actual: {
+				serializer: "buildinggadgets:dummy_serializer",
+				state: {
+					Name: "astralsorcery:black_marble_raw"
+				},
+				data: {}
+			},
+			AS_Amulet_Holder: [I;
+				890568276,
+				-155696308,
+				-1076725423,
+				-1360458671
+			],
+			state: {
+				serializer: "buildinggadgets:dummy_serializer",
+				state: {
+					Name: "astralsorcery:black_marble_raw"
+				},
+				data: {}
+			},
+			Damage: 0,
+			uuid: [I;
+				-1788726219,
+				-1611314359,
+				-1168801827,
+				-1806256128
+			],
+			energy: 500000.0d
+		}
+	},
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			x: -7.5d,
+			y: -6.0d,
+			id: 2498,
+			tasks: [{
+				id: 2499,
+				type: "checkmark",
+				title: "Immersive Engineering Patterns"
+			}],
+			rewards: [
+				{
+					id: 2508,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1821718391,
+								-1892857387,
+								-1884042635,
+								534868590
+							]
+						}
+					}
+				},
+				{
+					id: 2509,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1438899245,
+								1800817705,
+								-1370830541,
+								-1200820230
+							]
+						}
+					}
+				},
+				{
+					id: 2510,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-549739398,
+								-2112009508,
+								-1407227162,
+								2082226385
+							]
+						}
+					}
+				},
+				{
+					id: 2511,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								662512907,
+								-660649350,
+								-1866832138,
+								-2062283797
+							]
+						}
+					}
+				},
+				{
+					id: 2512,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1714974988,
+								-142979472,
+								-2118031948,
+								662718985
+							]
+						}
+					}
+				},
+				{
+					id: 2513,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								376616152,
+								1046758062,
+								-1729587524,
+								-105564538
+							]
+						}
+					}
+				},
+				{
+					id: 2514,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								425280746,
+								1979729199,
+								-1737831455,
+								936818432
+							]
+						}
+					}
+				},
+				{
+					id: 2515,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-176511349,
+								-313700824,
+								-1952607782,
+								-62569783
+							]
+						}
+					}
+				},
+				{
+					id: 2516,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-395600950,
+								1778861873,
+								-1914359294,
+								2137687628
+							]
+						}
+					}
+				},
+				{
+					id: 2517,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								334145429,
+								-1162853735,
+								-2049101550,
+								2052579117
+							]
+						}
+					}
+				},
+				{
+					id: 2518,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-247007543,
+								1714766949,
+								-1175843723,
+								-1915394343
+							]
+						}
+					}
+				},
+				{
+					id: 2519,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1949679066,
+								-884388727,
+								-1423459603,
+								-673948683
+							]
+						}
+					}
+				},
+				{
+					id: 2520,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								166007947,
+								1978745520,
+								-2127908360,
+								92434022
+							]
+						}
+					}
+				},
+				{
+					id: 2521,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-845748484,
+								685721064,
+								-1980381696,
+								1734520036
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -6.0d,
+			y: -6.0d,
+			id: 2504,
+			tasks: [{
+				id: 2505,
+				type: "checkmark",
+				title: "Immersive Petroleum Patterns"
+			}],
+			rewards: [
+				{
+					id: 2506,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								765779260,
+								-176535284,
+								-1875812484,
+								1242988350
+							]
+						}
+					}
+				},
+				{
+					id: 2507,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1886188230,
+								963202288,
+								-2100765288,
+								-1294924866
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: -6.0d,
+			id: 2522,
+			tasks: [{
+				id: 2523,
+				type: "checkmark",
+				title: "Astral Sorcery Patterns"
+			}],
+			rewards: [
+				{
+					id: 2524,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1804586578,
+								1249200166,
+								-1499464402,
+								738044670
+							]
+						}
+					}
+				},
+				{
+					id: 2525,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1132086675,
+								600653981,
+								-1882810939,
+								-276660062
+							]
+						}
+					}
+				},
+				{
+					id: 2526,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								1281255233,
+								-759412902,
+								-1781968559,
+								818391715
+							]
+						}
+					}
+				},
+				{
+					id: 2527,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1203895714,
+								-339066089,
+								-1453873631,
+								929729287
+							]
+						}
+					}
+				},
+				{
+					id: 2528,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-466444054,
+								-706067421,
+								-1924974475,
+								-1607762373
+							]
+						}
+					}
+				},
+				{
+					id: 2529,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-166095111,
+								-169589014,
+								-1888749430,
+								1451171904
+							]
+						}
+					}
+				},
+				{
+					id: 2530,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								699197452,
+								-594982878,
+								-1485778023,
+								578737274
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -3.0d,
+			y: -6.0d,
+			id: 2531,
+			tasks: [{
+				id: 2532,
+				type: "checkmark",
+				title: "Mekanism Patterns"
+			}],
+			rewards: [
+				{
+					id: 2533,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1917053998,
+								1651920384,
+								-1822213257,
+								924630534
+							]
+						}
+					}
+				},
+				{
+					id: 2534,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								1022383748,
+								-1753986230,
+								-1128044632,
+								1005577199
+							]
+						}
+					}
+				},
+				{
+					id: 2535,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-1418877606,
+								280773416,
+								-1643986054,
+								-1037600504
+							]
+						}
+					}
+				},
+				{
+					id: 2536,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-909361633,
+								1645038859,
+								-1488872910,
+								1600843225
+							]
+						}
+					}
+				},
+				{
+					id: 2537,
+					type: "item",
+					item: {
+						id: "buildinggadgets:template",
+						Count: true,
+						tag: {
+							template_id: [I;
+								-505631355,
+								1961708385,
+								-2125328801,
+								-292436769
+							]
+						}
+					}
+				}
+			]
+		}
+	]
+}
