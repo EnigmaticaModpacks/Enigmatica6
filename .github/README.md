@@ -25,7 +25,28 @@ Note: You do not have to use the below setup method, you can use the available f
 
 Follow these steps to setup your workspace/server:
 
-## Windows / Mac
+## Windows / Mac - MultiMC
+
+1) Download [MultiMC](https://multimc.org/#Download) if you haven't already.
+2) Open MultiMC.
+3) Click Add Instance, choose Minecraft 1.16.4, click Ok. (Or the lastest version mods are dependant on)
+4) Click Edit Instance. (right hand side)
+5) Click Install Forge, pick the latest version. (right hand side)
+6) Fork and clone the Enigmatica 6 repository to your GitHub profile.
+7) Open the folder of the MultiMC Instance you made (step 1-5), and go into the .minecraft folder - Open a Terminal and use the following commands:
+
+```
+git init                                              # Initialize git in folder
+git remote add origin URLToYourEnigmaticaFork.git     # Set remote origin to your Enigmatica 5 fork
+git remote -v                                         # Verify remote
+git fetch
+git pull
+```
+
+8) Now double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+9) One more `git pull`
+
+## Windows / Mac - Twitch
 
 1) Download the [CurseForge App](https://curseforge.overwolf.com/) if you haven't already.
 2) Fork and clone the Enigmatica 6 repository to the Instances folder of the CurseForge App, the default path is `C:\Users\User\Documents\Curse\Minecraft\Instances`. If you previously used Twitch for modpacks the path will most likely be `C:\Users\User\Documents\Twitch\Minecraft\Instances`.
