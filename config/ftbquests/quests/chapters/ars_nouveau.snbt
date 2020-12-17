@@ -39,7 +39,7 @@
 		},
 		{
 			x: 6.0d,
-			y: -5.0d,
+			y: -5.5d,
 			description: [
 				"The Spell Turret is an enhanced apparatus used to cast spells on demand with a redstone pulse. ",
 				"",
@@ -92,11 +92,18 @@
 					item: "ars_nouveau:mana_jar"
 				}
 			],
-			rewards: [{
-				id: 961,
-				type: "item",
-				item: "botania:sextant"
-			}]
+			rewards: [
+				{
+					id: 961,
+					type: "item",
+					item: "botania:sextant"
+				},
+				{
+					id: 2679,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			title: "Magic Clay",
@@ -449,7 +456,7 @@
 			}]
 		},
 		{
-			x: 2.5d,
+			x: 3.0d,
 			y: -4.0d,
 			description: [
 				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone.",
@@ -500,8 +507,8 @@
 			]
 		},
 		{
-			x: 3.5d,
-			y: -4.0d,
+			x: 4.0d,
+			y: -3.5d,
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you.",
 				"",
@@ -524,7 +531,7 @@
 		},
 		{
 			x: 3.0d,
-			y: -5.0d,
+			y: -5.5d,
 			description: [
 				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come.",
 				"",
@@ -584,8 +591,8 @@
 		{
 			title: "Turret Practice: Micro Farms",
 			icon: "ars_nouveau:glyph_harvest",
-			x: 5.5d,
-			y: -4.0d,
+			x: 5.0d,
+			y: -3.5d,
 			description: [
 				"A simple and compact crop farm can be made with a spell turret with the following spell:",
 				"",
@@ -621,7 +628,7 @@
 		},
 		{
 			title: "Turret Practice: Redstone Clock",
-			x: 6.5d,
+			x: 6.0d,
 			y: -4.0d,
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?",

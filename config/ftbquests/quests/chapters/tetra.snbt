@@ -138,6 +138,11 @@
 				icon: "tetra:forged_container",
 				advancement: "tetra:spelunking/containers",
 				criterion: ""
+			}],
+			rewards: [{
+				id: 2633,
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -236,6 +241,14 @@
 				icon: "tetra:hammer_base",
 				advancement: "tetra:spelunking/ancient_ruins",
 				criterion: ""
+			}],
+			rewards: [{
+				id: 2634,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "artifacts:mimic_spawn_egg",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -272,6 +285,20 @@
 					id: 2141,
 					type: "item",
 					item: "tetra:vent_plate"
+				}
+			],
+			rewards: [
+				{
+					id: 2637,
+					type: "item",
+					item: "minecraft:ancient_debris",
+					count: 2
+				},
+				{
+					id: 2638,
+					type: "item",
+					item: "thermal:earth_grenade",
+					count: 16
 				}
 			]
 		},
@@ -353,6 +380,11 @@
 					}
 				},
 				consume_items: false
+			}],
+			rewards: [{
+				id: 2635,
+				type: "item",
+				item: "minecraft:lava_bucket"
 			}]
 		},
 		{
@@ -608,6 +640,17 @@
 							}]
 						}
 					}
+				},
+				{
+					id: 2632,
+					type: "item",
+					item: {
+						id: "minecraft:splash_potion",
+						Count: true,
+						tag: {
+							Potion: "minecraft:long_swiftness"
+						}
+					}
 				}
 			]
 		},
@@ -640,6 +683,11 @@
 				},
 				advancement: "tetra:upgrades/hammer_5",
 				criterion: ""
+			}],
+			rewards: [{
+				id: 2636,
+				type: "random",
+				table: 11
 			}]
 		},
 		{

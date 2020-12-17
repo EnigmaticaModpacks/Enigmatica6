@@ -60,9 +60,9 @@
 					item: "prettypipes:wrench"
 				},
 				{
-					id: 2477,
-					type: "xp_levels",
-					xp_levels: 5
+					id: 2665,
+					type: "loot",
+					table: 13
 				}
 			]
 		},
@@ -110,9 +110,9 @@
 				item: "ironchest:iron_chest"
 			}],
 			rewards: [{
-				id: 1786,
+				id: 2667,
 				type: "loot",
-				table: 11
+				table: 13
 			}]
 		},
 		{
@@ -128,11 +128,18 @@
 				type: "item",
 				item: "mekanism:basic_bin"
 			}],
-			rewards: [{
-				id: 2470,
-				type: "xp_levels",
-				xp_levels: 10
-			}]
+			rewards: [
+				{
+					id: 2652,
+					type: "loot",
+					table: 11
+				},
+				{
+					id: 2668,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			title: "Quantum Storage",
@@ -173,9 +180,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1789,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 2654,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -195,9 +202,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1790,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 2653,
+				type: "loot",
+				table: 11
 			}]
 		},
 		{
@@ -237,9 +244,9 @@
 				item: "mekanism:advanced_bin"
 			}],
 			rewards: [{
-				id: 2471,
+				id: 2659,
 				type: "loot",
-				table: 11
+				table: 22
 			}]
 		},
 		{
@@ -253,7 +260,7 @@
 				item: "mekanism:elite_bin"
 			}],
 			rewards: [{
-				id: 2473,
+				id: 2669,
 				type: "command",
 				title: "Miner's Delight",
 				icon: "artifacts:mimic_spawn_egg",
@@ -348,12 +355,9 @@
 				item: "quantumstorage:tank"
 			}],
 			rewards: [{
-				id: 2476,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2660,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -384,12 +388,9 @@
 				item: "ironchest:gold_chest"
 			}],
 			rewards: [{
-				id: 2466,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2651,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -442,9 +443,9 @@
 				count: 12L
 			}],
 			rewards: [{
-				id: 2420,
+				id: 2655,
 				type: "loot",
-				table: 11
+				table: 22
 			}]
 		},
 		{
@@ -478,12 +479,9 @@
 				}
 			],
 			rewards: [{
-				id: 2416,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2664,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -515,7 +513,7 @@
 			rewards: [{
 				id: 2424,
 				type: "loot",
-				table: 11
+				table: 13
 			}]
 		},
 		{
@@ -534,9 +532,9 @@
 				count: 3L
 			}],
 			rewards: [{
-				id: 2426,
+				id: 2657,
 				type: "loot",
-				table: 11
+				table: 22
 			}]
 		},
 		{
@@ -567,12 +565,9 @@
 				}
 			],
 			rewards: [{
-				id: 2422,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2656,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -619,12 +614,9 @@
 				item: "prettypipes:crafting_terminal"
 			}],
 			rewards: [{
-				id: 2409,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2658,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -676,6 +668,11 @@
 						value: "storagedrawers:drawers"
 					}
 				}
+			}],
+			rewards: [{
+				id: 2649,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -791,12 +788,18 @@
 		{
 			x: -4.5d,
 			y: -9.0d,
+			description: ["Excess items will be automatically voided."],
 			dependencies: [I;2406],
 			id: 2436,
 			tasks: [{
 				id: 2437,
 				type: "item",
 				item: "storagedrawers:void_upgrade"
+			}],
+			rewards: [{
+				id: 2650,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -817,11 +820,18 @@
 				type: "checkmark",
 				title: "Sophisticated Backpacks"
 			}],
-			rewards: [{
-				id: 2455,
-				type: "item",
-				item: "sophisticatedbackpacks:backpack"
-			}]
+			rewards: [
+				{
+					id: 2455,
+					type: "item",
+					item: "sophisticatedbackpacks:backpack"
+				},
+				{
+					id: 2661,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: 2.0d,
@@ -850,12 +860,9 @@
 				item: "sophisticatedbackpacks:gold_backpack"
 			}],
 			rewards: [{
-				id: 2458,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2662,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -869,12 +876,9 @@
 				item: "sophisticatedbackpacks:diamond_backpack"
 			}],
 			rewards: [{
-				id: 2459,
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "biomesoplenty:nether_crystal",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
-				player_command: false
+				id: 2663,
+				type: "loot",
+				table: 22
 			}]
 		},
 		{
@@ -889,12 +893,9 @@
 				item: "sophisticatedbackpacks:magnet_upgrade"
 			}],
 			rewards: [{
-				id: 2463,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2640,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -908,14 +909,21 @@
 				type: "item",
 				item: "sophisticatedbackpacks:everlasting_upgrade"
 			}],
-			rewards: [{
-				id: 2460,
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "biomesoplenty:nether_crystal",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: 2460,
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "biomesoplenty:nether_crystal",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
+				},
+				{
+					id: 2666,
+					type: "loot",
+					table: 22
+				}
+			]
 		},
 		{
 			x: 2.5d,
@@ -945,6 +953,11 @@
 				id: 2453,
 				type: "item",
 				item: "sophisticatedbackpacks:feeding_upgrade"
+			}],
+			rewards: [{
+				id: 2641,
+				type: "loot",
+				table: 22
 			}]
 		}
 	]

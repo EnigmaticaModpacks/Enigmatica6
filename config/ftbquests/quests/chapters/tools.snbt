@@ -35,12 +35,9 @@
 					item: "pneumaticcraft:drill_bit_compressed_iron"
 				},
 				{
-					id: 2154,
-					type: "command",
-					title: "Miner's Delight",
-					icon: "artifacts:mimic_spawn_egg",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-					player_command: false
+					id: 2648,
+					type: "loot",
+					table: 13
 				}
 			]
 		},
@@ -416,9 +413,9 @@
 				}
 			}],
 			rewards: [{
-				id: 1609,
+				id: 2646,
 				type: "loot",
-				table: 11
+				table: 13
 			}]
 		},
 		{
@@ -521,9 +518,9 @@
 				}
 			],
 			rewards: [{
-				id: 1782,
+				id: 2645,
 				type: "loot",
-				table: 11
+				table: 22
 			}]
 		},
 		{
@@ -565,9 +562,9 @@
 				item: "pneumaticcraft:minigun_upgrade"
 			}],
 			rewards: [{
-				id: 1608,
+				id: 2647,
 				type: "loot",
-				table: 11
+				table: 22
 			}]
 		},
 		{
@@ -1034,12 +1031,9 @@
 					item: "mininggadgets:upgrade_light_placer"
 				},
 				{
-					id: 1777,
-					type: "command",
-					title: "Miner's Delight",
-					icon: "artifacts:mimic_spawn_egg",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-					player_command: false
+					id: 2642,
+					type: "loot",
+					table: 13
 				}
 			]
 		},
@@ -1066,12 +1060,9 @@
 				}
 			}],
 			rewards: [{
-				id: 1772,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2670,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -1110,12 +1101,9 @@
 					item: "mininggadgets:upgrade_magnet"
 				},
 				{
-					id: 1776,
-					type: "command",
-					title: "Miner's Delight",
-					icon: "artifacts:mimic_spawn_egg",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-					player_command: false
+					id: 2643,
+					type: "loot",
+					table: 13
 				}
 			]
 		},
@@ -1149,12 +1137,9 @@
 				item: "mininggadgets:upgrade_battery_3"
 			}],
 			rewards: [{
-				id: 1773,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "artifacts:mimic_spawn_egg",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
+				id: 2644,
+				type: "loot",
+				table: 13
 			}]
 		},
 		{
@@ -1486,12 +1471,9 @@
 					}
 				},
 				{
-					id: 1779,
-					type: "command",
-					title: "Miner's Delight",
-					icon: "artifacts:mimic_spawn_egg",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-					player_command: false
+					id: 2671,
+					type: "loot",
+					table: 13
 				}
 			]
 		},

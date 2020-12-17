@@ -117,12 +117,19 @@
 				type: "item",
 				item: "mekanismgenerators:heat_generator"
 			}],
-			rewards: [{
-				id: 2061,
-				type: "item",
-				item: "minecraft:coal_block",
-				count: 32
-			}]
+			rewards: [
+				{
+					id: 2061,
+					type: "item",
+					item: "minecraft:coal_block",
+					count: 32
+				},
+				{
+					id: 2688,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: -2.5d,
@@ -1027,6 +1034,11 @@
 					type: "item",
 					item: "minecraft:cookie",
 					count: 3
+				},
+				{
+					id: 2689,
+					type: "loot",
+					table: 11
 				}
 			]
 		},
