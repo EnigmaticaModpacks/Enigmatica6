@@ -15,6 +15,7 @@ $CONFIGS_TO_REMOVE = @(
 	"defaultoptions/options.txt",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
+	"astralsorcery-client.toml",
 	"ambientsounds-client.json",
 	"betteradvancements-client.toml",
 	"chiselsandbits-client.toml",

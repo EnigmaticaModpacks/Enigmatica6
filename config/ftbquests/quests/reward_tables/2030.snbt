@@ -1,6 +1,73 @@
 {
 	id: 2030,
-	title: "Placeholder Loot Box",
+	title: "Rare Blood Magic Loot Box",
+	icon: "aquaculture:lockbox",
 	loot_size: 1,
-	rewards: []
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: {
+				id: "bloodmagic:basiccuttingfluid",
+				Count: true,
+				tag: {
+					AS_Amulet_Holder: [I;
+						890568276,
+						-155696308,
+						-1076725423,
+						-1360458671
+					],
+					Damage: 0,
+					Enchantments: [{
+						lvl: 5s,
+						id: "minecraft:unbreaking"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "bloodmagic:primitive_explosive_cell",
+				Count: true,
+				tag: {
+					Damage: 0,
+					Enchantments: [{
+						lvl: 5s,
+						id: "minecraft:unbreaking"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "bloodmagic:primitive_crystalline_resonator",
+				Count: true,
+				tag: {
+					AS_Amulet_Holder: [I;
+						890568276,
+						-155696308,
+						-1076725423,
+						-1360458671
+					],
+					Damage: 0,
+					Enchantments: [{
+						lvl: 5s,
+						id: "minecraft:unbreaking"
+					}]
+				}
+			}
+		},
+		{
+			item: {
+				id: "bloodmagic:lavacrystal",
+				Count: true,
+				tag: {
+					Enchantments: [{
+						lvl: 5s,
+						id: "minecraft:unbreaking"
+					}]
+				}
+			}
+		}
+	]
 }
