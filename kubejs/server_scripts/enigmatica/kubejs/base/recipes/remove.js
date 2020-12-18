@@ -2,7 +2,7 @@ events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
-    event.remove({mod: 'prettypipes'})
+    event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
         'additionalbars:crossed_iron_bars',
@@ -73,5 +73,5 @@ events.listen('recipes', function (event) {
         event.remove({ output: recipe.output });
     });
 
-    event.remove({mod: 'extradisks'});
+    // event.remove({mod: 'extradisks'});
 });
