@@ -1,38 +1,38 @@
 {
-  "flower": "minecraft:nether_wart",
-  "maxTimeInHive": 2000,
-  "hasHoneycomb": true,
-  "traits": ["nether"],
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#D4CABA",
-    "primaryColor": "#D4CABA",
-    "secondaryColor": "#303030"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "minecraft:netherrack",
-    "mutationOutput": "minecraft:nether_quartz_ore",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:quartz",
-	"mainOutputWeight": 0.25,
-    "mainOutputCount": 2
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:nether",
-    "lightLevel": "NIGHT",
-    "spawnWeight": 8
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "feedItem": "minecraft:nether_quartz",
-    "feedAmount": 16
-  },
-  "TraitData": {
-    "hasTraits": true
-  }
+    "flower": "minecraft:nether_wart",
+    "maxTimeInHive": 2000,
+    "hasHoneycomb": true,
+    "traits": ["nether"],
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#D4CABA",
+        "primaryColor": "#D4CABA",
+        "secondaryColor": "#303030"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:netherrack",
+        "mutationOutput": "minecraft:nether_quartz_ore",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:quartz",
+        "mainOutputWeight": 0.25,
+        "mainOutputCount": 2
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:nether",
+        "lightLevel": "NIGHT",
+        "spawnWeight": 8
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:nether_quartz",
+        "feedAmount": 16
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }

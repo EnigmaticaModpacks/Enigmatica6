@@ -72,4 +72,6 @@ events.listen('recipes', function (event) {
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });
+
+    event.remove({mod: 'extradisks'});
 });
