@@ -75,8 +75,17 @@ events.listen('recipes', (event) => {
             'minecraft:sugar',
             'minecraft:book'
         ]),
-        shapelessRecipe('prettypipes:pipe_frame', ['minecraft:item_frame', 'prettypipes:pipe', '#forge:dusts/redstone']),
-        shapelessRecipe('prettypipes:crafting_terminal', ['prettypipes:item_terminal', 'prettypipes:low_crafting_module'])
+        shapelessRecipe('prettypipes:pipe_frame', [
+            'minecraft:item_frame',
+            'prettypipes:pipe',
+            '#forge:dusts/redstone'
+        ]),
+        shapelessRecipe('prettypipes:crafting_terminal', [
+            'prettypipes:item_terminal',
+            'prettypipes:low_crafting_module'
+        ]),
+        shapelessRecipe('ars_nouveau:mana_gem', ['emendatusenigmatica:arcane_gem']),
+        shapelessRecipe('emendatusenigmatica:arcane_gem', ['ars_nouveau:mana_gem'])
     ];
 
     recipes.forEach(function (recipe) {
