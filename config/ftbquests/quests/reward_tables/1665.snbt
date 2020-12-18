@@ -1,16 +1,7 @@
 {
 	id: 1665,
 	title: "Blacksmith's Delight",
-	icon: {
-		ForgeCaps: {
-			Parent: {
-				Size: 23,
-				Items: []
-			}
-		},
-		id: "immersiveengineering:toolbox",
-		Count: true
-	},
+	icon: "kubejs:blacksmiths_delight",
 	loot_size: 1,
 	hide_tooltip: true,
 	use_title: true,
