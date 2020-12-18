@@ -1,5 +1,4 @@
 events.listen('recipes', (event) => {
-    event.remove({ type: 'thermal:compression_fuel' });
     var data = {
         recipes: [
             {
@@ -21,14 +20,14 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         event.recipes.pneumaticcraft.fuel_quality({
-            type: "pneumaticcraft:fuel_quality",
+            type: 'pneumaticcraft:fuel_quality',
             fluid: {
-              type: "pneumaticcraft:fluid",
-              fluid: recipe.fluid,
-              amount: 1000
+                type: 'pneumaticcraft:fluid',
+                fluid: recipe.fluid,
+                amount: 1000
             },
             air_per_bucket: recipe.air * 1000,
             burn_rate: recipe.rate
-          });
+        });
     });
 });
