@@ -124,11 +124,18 @@
 				type: "item",
 				item: "naturesaura:gold_leaf"
 			}],
-			rewards: [{
-				id: 860,
-				type: "loot",
-				table: 51
-			}]
+			rewards: [
+				{
+					id: 860,
+					type: "loot",
+					table: 51
+				},
+				{
+					id: 2675,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: -0.5d,
@@ -146,11 +153,18 @@
 				type: "item",
 				item: "naturesaura:gold_fiber"
 			}],
-			rewards: [{
-				id: 859,
-				type: "loot",
-				table: 51
-			}]
+			rewards: [
+				{
+					id: 859,
+					type: "loot",
+					table: 51
+				},
+				{
+					id: 2674,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			icon: "naturesaura:offering_table",
