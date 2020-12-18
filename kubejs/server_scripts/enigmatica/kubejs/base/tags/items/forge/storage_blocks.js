@@ -1,8 +1,9 @@
 events.listen('item.tags', function (event) {
-    event.get('forge:storage_blocks').add('minecraft:glowstone');
-    event.get('forge:storage_blocks/glowstone').add('minecraft:glowstone');
+    var storageBlocks = 'forge:storage_blocks';
+    event.get(storageBlocks).add('minecraft:glowstone');
+    event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');
     event
-        .get('forge:storage_blocks')
+        .get(storageBlocks)
         .add('immersiveengineering:storage_aluminum')
         .add('immersiveengineering:storage_lead')
         .add('immersiveengineering:storage_silver')
@@ -12,24 +13,35 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:storage_electrum')
         .add('immersiveengineering:coke');
 
-    // event.get('forge:storage_blocks').add('create:zinc_block').add('create:brass_block');
-    // event.get('forge:storage_blocks').add('occultism:iesnium_block');
-    event.get('forge:storage_blocks').add('powah:uraninite_block');
-    // event
-    //     .get('forge:storage_blocks')
-    //     .add('psi:psidust_block')
-    //     .add('psi:psimetal_block')
-    //     .add('psi:psigem_block')
-    //     .add('psi:ivory_psimetal_block')
-    //     .add('psi:ebony_psimetal_block');
+    // event.get(storageBlocks).add('occultism:iesnium_block');
+    event.get(storageBlocks).add('powah:uraninite_block');
+    event.get(storageBlocks).add('naturesaura:infused_iron_block').add('naturesaura:tainted_gold_block');
+    event.get(storageBlocks + '/infused_iron').add('naturesaura:infused_iron_block');
+    event.get(storageBlocks + '/tainted_gold').add('naturesaura:tainted_gold_block');
 
-    // event.get('forge:storage_blocks').add('naturesaura:infused_iron_block').add('naturesaura:tainted_gold_block');
+    event
+        .get(storageBlocks + '/gold_bronze')
+        .add('#' + storageBlocks + 'gold')
+        .add('#' + storageBlocks + 'bronze');
 
-    event.get('forge:storage_blocks/gold_bronze').add('#forge:storage_blocks/gold').add('#forge:storage_blocks/bronze');
-
-    event.get('forge:storage_blocks/iron_aluminum').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/aluminum');
-    event.get('forge:storage_blocks/iron_brass').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/brass');
-    event.get('forge:storage_blocks/iron_invar').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/invar');
-    event.get('forge:storage_blocks/iron_lead').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/lead');
-    event.get('forge:storage_blocks/iron_tin').add('#forge:storage_blocks/iron').add('#forge:storage_blocks/tin');
+    event
+        .get(storageBlocks + '/iron_aluminum')
+        .add('#' + storageBlocks + 'iron')
+        .add('#' + storageBlocks + 'aluminum');
+    event
+        .get(storageBlocks + '/iron_brass')
+        .add('#' + storageBlocks + 'iron')
+        .add('#' + storageBlocks + 'brass');
+    event
+        .get(storageBlocks + '/iron_invar')
+        .add('#' + storageBlocks + 'iron')
+        .add('#' + storageBlocks + 'invar');
+    event
+        .get(storageBlocks + '/iron_lead')
+        .add('#' + storageBlocks + 'iron')
+        .add('#' + storageBlocks + 'lead');
+    event
+        .get(storageBlocks + '/iron_tin')
+        .add('#' + storageBlocks + 'iron')
+        .add('#' + storageBlocks + 'tin');
 });
