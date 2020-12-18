@@ -1,6 +1,6 @@
 events.listen('recipes', (event) => {
     event.remove({ type: 'thermal:lapidary_fuel' });
-    var multiplier = 1;
+    var multiplier = 40;
     var data = {
         recipes: [
             {
@@ -14,14 +14,6 @@ events.listen('recipes', (event) => {
             {
                 gem: 'forge:gems/quartz',
                 energy: 40000
-            },
-            {
-                gem: 'forge:gems/ruby',
-                energy: 125000
-            },
-            {
-                gem: 'forge:gems/sapphire',
-                energy: 125000
             },
             {
                 gem: 'forge:gems/diamond',
@@ -46,7 +38,7 @@ events.listen('recipes', (event) => {
             ingredient: {
                 tag: recipe.gem
             },
-            energy: recipe.energy
+            energy: recipe.energy * multiplier
         });
     });
 });

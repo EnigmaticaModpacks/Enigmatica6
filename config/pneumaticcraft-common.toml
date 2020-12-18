@@ -54,7 +54,7 @@
 	#The ratio of liquid plastic to solid plastic sheets in the Plastic Mixer, in mB per sheet.  If set to 0, no default liquid->solid plastic recipe will be added (but CraftTweaker or API can be used to add recipes)
 	#Range: > 0
 	plastic_mixer_plastic_ratio = 1000
-	#The max height of an elevator per stacked Elevator Base.
+	#The max height of an elevator per stacked Elevator Base block.
 	#Range: 1 ~ 256
 	elevator_base_blocks_per_base = 4
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
@@ -115,6 +115,11 @@
 	#The minimum interval in ticks between which fluid tank contents should be synced to clients. Smaller values mean smoother visual tank updates, but more of a performance cost in terms of network syncing. Note that fluid tank sync packets are also only sent when a fluid tank changes by more than 1% of its capacity, or 1000mB, whichever is smaller.
 	#Range: 1 ~ 100
 	fluid_tank_update_rate = 10
+	#Don't remove a water source block when picking up (drones, liquid hoppers, gas lift) if it has at least two water source neighbours. This can reduce lag due to frequent block updates, and can also potentially make water import much faster. Set this to false if you want no-infinite-water rules in a world, or want to limit the speed of water importing to vanilla block update rates.
+	dont_update_infinite_water_sources = true
+	#How far will a drone go to find a Charging Station when it's low on air? Note: drones will teleport, possibly across the world to someone else's base, if this range is very large.
+	#Range: > 16
+	max_drone_charging_station_search_range = 80
 
 ["Micromissile Properties"]
 	#Base explosion damage (modified by missile setup)

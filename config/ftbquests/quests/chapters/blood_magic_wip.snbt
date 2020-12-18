@@ -81,17 +81,24 @@
 					tag: {}
 				}
 			}],
-			rewards: [{
-				id: 2205,
-				type: "item",
-				item: {
-					id: "bloodmagic:basemonstersoul",
-					Count: true,
-					tag: {
-						souls: 5.0d
+			rewards: [
+				{
+					id: 2205,
+					type: "item",
+					item: {
+						id: "bloodmagic:basemonstersoul",
+						Count: true,
+						tag: {
+							souls: 5.0d
+						}
 					}
+				},
+				{
+					id: 2684,
+					type: "loot",
+					table: 13
 				}
-			}]
+			]
 		},
 		{
 			x: -1.5d,
@@ -805,11 +812,18 @@
 				type: "item",
 				item: "bloodmagic:alchemytable"
 			}],
-			rewards: [{
-				id: 2491,
-				type: "loot",
-				table: 20
-			}]
+			rewards: [
+				{
+					id: 2491,
+					type: "loot",
+					table: 20
+				},
+				{
+					id: 2685,
+					type: "loot",
+					table: 22
+				}
+			]
 		},
 		{
 			icon: "bloodmagic:incensealtar",

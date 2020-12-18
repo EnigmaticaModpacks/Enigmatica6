@@ -88,6 +88,11 @@
 					id: 1594,
 					type: "item",
 					item: "powah:energy_cell_basic"
+				},
+				{
+					id: 2686,
+					type: "loot",
+					table: 11
 				}
 			]
 		},
@@ -301,11 +306,18 @@
 				type: "item",
 				item: "thermal:machine_furnace"
 			}],
-			rewards: [{
-				id: 1265,
-				type: "loot",
-				table: 0
-			}]
+			rewards: [
+				{
+					id: 1265,
+					type: "loot",
+					table: 0
+				},
+				{
+					id: 2687,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: 4.0d,

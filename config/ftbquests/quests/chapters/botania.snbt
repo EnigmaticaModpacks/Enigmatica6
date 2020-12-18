@@ -79,6 +79,11 @@
 							Damage: 0
 						}
 					}
+				},
+				{
+					id: 2672,
+					type: "loot",
+					table: 13
 				}
 			]
 		},
@@ -122,11 +127,18 @@
 					item: "botania:pure_daisy"
 				}
 			],
-			rewards: [{
-				id: 1610,
-				type: "loot",
-				table: 7
-			}]
+			rewards: [
+				{
+					id: 1610,
+					type: "loot",
+					table: 7
+				},
+				{
+					id: 2673,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			title: "Livingwood & Livingrock",
@@ -644,12 +656,19 @@
 				type: "item",
 				item: "botania:brewery"
 			}],
-			rewards: [{
-				id: 1499,
-				type: "item",
-				item: "botania:vial",
-				count: 8
-			}]
+			rewards: [
+				{
+					id: 1499,
+					type: "item",
+					item: "botania:vial",
+					count: 8
+				},
+				{
+					id: 2676,
+					type: "loot",
+					table: 22
+				}
+			]
 		},
 		{
 			x: 2.0d,
@@ -684,11 +703,18 @@
 					tag: {}
 				}
 			}],
-			rewards: [{
-				id: 1366,
-				type: "item",
-				item: "botania:avatar"
-			}]
+			rewards: [
+				{
+					id: 1366,
+					type: "item",
+					item: "botania:avatar"
+				},
+				{
+					id: 2678,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: 1.5d,
@@ -1049,11 +1075,18 @@
 					}
 				}
 			],
-			rewards: [{
-				id: 1428,
-				type: "item",
-				item: "minecraft:slime_block"
-			}]
+			rewards: [
+				{
+					id: 1428,
+					type: "item",
+					item: "minecraft:slime_block"
+				},
+				{
+					id: 2677,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			icon: "mythicbotany:mana_infuser",

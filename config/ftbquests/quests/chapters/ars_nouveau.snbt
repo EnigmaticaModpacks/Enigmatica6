@@ -38,14 +38,14 @@
 			]
 		},
 		{
-			x: 4.5d,
-			y: -6.5d,
+			x: 6.0d,
+			y: -5.5d,
 			description: [
 				"The Spell Turret is an enhanced apparatus used to cast spells on demand with a redstone pulse. ",
 				"",
 				"Like the simpler runes created by Runic Chalk, it can be provided with a prepared Spell Parchment by right clicking the device with the parchment. Unlike runes, it can use both Touch and Projectile Forms. "
 			],
-			dependencies: [I;940],
+			dependencies: [I;2541],
 			id: 946,
 			tasks: [{
 				id: 1014,
@@ -92,23 +92,30 @@
 					item: "ars_nouveau:mana_jar"
 				}
 			],
-			rewards: [{
-				id: 961,
-				type: "item",
-				item: "botania:sextant"
-			}]
+			rewards: [
+				{
+					id: 961,
+					type: "item",
+					item: "botania:sextant"
+				},
+				{
+					id: 2679,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			title: "Magic Clay",
 			x: -5.5d,
-			y: -5.5d,
+			y: -2.5d,
 			subtitle: "Fate as Malleable as Clay",
 			description: [
 				"By working Mana Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. ",
 				"",
 				"In order to learn new spells, this Magic Clay and it's variants may be pressed in a Glyph Press along with some other reagent to form a focus."
 			],
-			dependencies: [I;950],
+			dependencies: [I;966],
 			id: 958,
 			tasks: [{
 				id: 960,
@@ -126,7 +133,7 @@
 			title: "Marvelous Clay",
 			icon: "ars_nouveau:marvelous_clay",
 			x: -4.5d,
-			y: -5.0d,
+			y: -2.0d,
 			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbok to cast. "],
 			dependencies: [I;958],
 			id: 962,
@@ -153,7 +160,7 @@
 			title: "Mythical Clay",
 			icon: "ars_nouveau:mythical_clay",
 			x: -3.5d,
-			y: -5.5d,
+			y: -2.5d,
 			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbok to cast. "],
 			dependencies: [I;962],
 			id: 964,
@@ -173,11 +180,11 @@
 			rewards: [{
 				id: 1640,
 				type: "item",
-				item: "ars_nouveau:glyph_lightning"
+				item: "ars_nouveau:glyph_split"
 			}]
 		},
 		{
-			x: -5.5d,
+			x: -6.0d,
 			y: -4.0d,
 			subtitle: "Hot Off the Presses!",
 			description: [
@@ -187,7 +194,7 @@
 				"",
 				"Glyphs can be learned by right clicking them. They'll then appear within your spellbook for use in crafting new spells."
 			],
-			dependencies: [I;958],
+			dependencies: [I;950],
 			id: 966,
 			tasks: [{
 				id: 967,
@@ -201,51 +208,45 @@
 			}]
 		},
 		{
-			title: "Practice Spells",
-			icon: "ars_nouveau:glyph_smelt",
-			x: -6.0d,
-			y: -3.0d,
-			subtitle: "Gathering the Pieces",
+			title: "Spell Practice: Flight",
+			icon: "ars_nouveau:glyph_leap",
+			x: -6.5d,
+			y: -1.0d,
+			subtitle: "Gathering the Weave",
 			description: [
-				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to being. ",
+				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to begin.",
 				"",
 				"By now, you'll know a few different Forms and Effects. Place a form first, followed by an effect, give it a name, then press Create. Mutliple Effects can be chained.",
 				"",
-				"For example, a spell can be made that will smelt a ranged block, break it, and bring it to your inventory. ",
+				"For example, a simple early form of flight can be crafted using the following spell:",
 				"",
-				"● Projectile > Smelt > Break > Item Pickup",
+				"● Self > Leap > Slowfall ",
 				"",
-				"If used on Clay, this would result in a block of Terracotta being brought to your inventory.",
-				"",
-				"Adding an Extract augment after the Break will apply Silk Touch, allowing the above spell to create Glass from Sand. ",
-				"",
-				"Similarly, the following will apply Fortune to the broken block and transport the result to your inventory. Great for those hard to reach diamonds.",
-				"",
-				"● Projectile > Break > Fortune > Item Pickup"
+				"Casting this propels the user in the direction they're facing, while also providing some cushoning for the eventual landing. It can make a great way to traverse rough terrain or escape a pesky mob."
 			],
-			dependencies: [I;966],
+			dependencies: [I;958],
 			min_width: 300,
 			id: 970,
 			tasks: [
 				{
-					id: 971,
+					id: 2548,
 					type: "item",
-					item: "ars_nouveau:glyph_pickup"
+					item: "ars_nouveau:glyph_leap"
 				},
 				{
-					id: 973,
+					id: 2549,
 					type: "item",
-					item: "ars_nouveau:glyph_smelt"
+					item: "ars_nouveau:glyph_slowfall"
 				}
 			],
 			rewards: [{
-				id: 1523,
+				id: 2550,
 				type: "item",
-				item: "ars_nouveau:glyph_fortune"
+				item: "ars_nouveau:glyph_launch"
 			}]
 		},
 		{
-			x: -1.0d,
+			x: -0.5d,
 			y: -3.0d,
 			description: [
 				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door.",
@@ -275,8 +276,8 @@
 		},
 		{
 			title: "Spell Parchment",
-			x: -1.5d,
-			y: -4.0d,
+			x: 0.5d,
+			y: -3.5d,
 			subtitle: "Jousting Snails",
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways.",
@@ -290,8 +291,7 @@
 			tasks: [{
 				id: 979,
 				type: "item",
-				item: "ars_nouveau:spell_parchment",
-				count: 4L
+				item: "ars_nouveau:spell_parchment"
 			}],
 			rewards: [{
 				id: 980,
@@ -300,7 +300,7 @@
 			}]
 		},
 		{
-			x: -1.5d,
+			x: 0.5d,
 			y: -5.0d,
 			subtitle: "Putting Down Roots",
 			description: [
@@ -365,7 +365,7 @@
 		{
 			title: "Curious Trinkets",
 			icon: "ars_nouveau:amulet_of_mana_regen",
-			x: 0.5d,
+			x: -1.5d,
 			y: -5.5d,
 			description: [
 				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspring practitioners may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves.",
@@ -387,14 +387,14 @@
 				}
 			],
 			rewards: [{
-				id: 1533,
-				type: "loot",
-				table: 10
+				id: 2554,
+				type: "item",
+				item: "ars_nouveau:void_jar"
 			}]
 		},
 		{
 			x: -6.5d,
-			y: -7.0d,
+			y: -5.5d,
 			description: [
 				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding mana. ",
 				"",
@@ -416,7 +416,7 @@
 			}]
 		},
 		{
-			x: 0.0d,
+			x: -1.0d,
 			y: -4.0d,
 			description: [
 				"Mana permeates all things. Left to it's own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing mana for later use, but moving it from place to place can be a touchy subject.",
@@ -439,7 +439,7 @@
 			}]
 		},
 		{
-			x: 1.5d,
+			x: -2.0d,
 			y: -3.5d,
 			description: ["A more advanced Mana Relay capable of pulling from and sending to multiple locations."],
 			dependencies: [I;1003],
@@ -456,7 +456,7 @@
 			}]
 		},
 		{
-			x: 3.5d,
+			x: 3.0d,
 			y: -4.0d,
 			description: [
 				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone.",
@@ -470,45 +470,45 @@
 				type: "item",
 				item: "ars_nouveau:whelp_charm"
 			}],
-			rewards: [
-				{
-					id: 1535,
-					type: "item",
-					item: "ars_nouveau:allow_scroll"
-				},
-				{
-					id: 1536,
-					type: "item",
-					item: "ars_nouveau:deny_scroll"
-				}
-			]
+			rewards: [{
+				id: 2540,
+				type: "loot",
+				table: 10
+			}]
 		},
 		{
 			x: 4.5d,
-			y: -3.5d,
+			y: -5.0d,
 			description: [
-				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by moving items between inventories. ",
+				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. ",
 				"",
 				"Refer to the Worn Notebook for an in-depth guide on using Carbuncles.",
 				"",
 				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
 			],
-			dependencies: [I;1015],
+			dependencies: [I;2541],
 			id: 1010,
 			tasks: [{
 				id: 1011,
 				type: "item",
 				item: "ars_nouveau:carbuncle_charm"
 			}],
-			rewards: [{
-				id: 1537,
-				type: "loot",
-				table: 10
-			}]
+			rewards: [
+				{
+					id: 2538,
+					type: "item",
+					item: "ars_nouveau:allow_scroll"
+				},
+				{
+					id: 2539,
+					type: "item",
+					item: "ars_nouveau:deny_scroll"
+				}
+			]
 		},
 		{
-			x: 5.5d,
-			y: -4.0d,
+			x: 4.0d,
+			y: -3.5d,
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you.",
 				"",
@@ -530,16 +530,16 @@
 			}]
 		},
 		{
-			x: 4.5d,
-			y: -5.0d,
+			x: 3.0d,
+			y: -5.5d,
 			description: [
-				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help pan aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come.",
+				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come.",
 				"",
 				"Placing the Summoning Crystal will define the area that these creatures will perform their tasks. An inventory directly adjacent to the Summoning Crystal will be used to store any items they collect. ",
 				"",
 				"The Summoning Crystal is crafted with the Enchanting Apparatus, as are all Charms."
 			],
-			dependencies: [I;946],
+			dependencies: [I;2541],
 			id: 1015,
 			tasks: [{
 				id: 1016,
@@ -553,8 +553,8 @@
 			}]
 		},
 		{
-			x: -6.5d,
-			y: -6.0d,
+			x: -4.5d,
+			y: -5.5d,
 			subtitle: "Vulcanologist in Training",
 			description: ["Not every practitioner is born with a green-thumb. Thankfully, mana naturally trickles out of molten lava, escaping into the air. This device assists in collecting these trace amounts of mana so they may be put to use."],
 			dependencies: [I;950],
@@ -568,6 +568,154 @@
 				id: 1696,
 				type: "loot",
 				table: 10
+			}]
+		},
+		{
+			title: "Auto-magically",
+			icon: "ars_nouveau:glyph_self",
+			x: 4.5d,
+			y: -6.5d,
+			description: ["What good is magic if it cannot be made to work for us without constant intervention?"],
+			dependencies: [I;940],
+			id: 2541,
+			tasks: [{
+				id: 2542,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2555,
+				type: "item",
+				item: "ars_nouveau:carbuncle_shards"
+			}]
+		},
+		{
+			title: "Turret Practice: Micro Farms",
+			icon: "ars_nouveau:glyph_harvest",
+			x: 5.0d,
+			y: -3.5d,
+			description: [
+				"A simple and compact crop farm can be made with a spell turret with the following spell:",
+				"",
+				"● Touch > Grow > Harvest",
+				"",
+				"Place the Turret next to the crop, supply mana, and a periodic redstone signal for a nice fast farm.",
+				"",
+				"Of course, if speed isn't of the essence, a simpler version could provide self sustaining mana:",
+				"",
+				"● Touch > Harvest",
+				"",
+				"The growth of the crop may then provide mana to a Condenser to keep the Turret running."
+			],
+			dependencies: [I;946],
+			id: 2543,
+			tasks: [
+				{
+					id: 2544,
+					type: "item",
+					item: "ars_nouveau:glyph_grow"
+				},
+				{
+					id: 2545,
+					type: "item",
+					item: "ars_nouveau:glyph_harvest"
+				}
+			],
+			rewards: [{
+				id: 2556,
+				type: "loot",
+				table: 10
+			}]
+		},
+		{
+			title: "Turret Practice: Redstone Clock",
+			x: 6.0d,
+			y: -4.0d,
+			description: [
+				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?",
+				"",
+				"A simple redstone clock can be made with two turrets containg the following spell:",
+				"",
+				"● Projectile > Redstone Signal"
+			],
+			dependencies: [I;946],
+			id: 2546,
+			tasks: [{
+				id: 2547,
+				type: "item",
+				item: "ars_nouveau:glyph_redstone_signal"
+			}],
+			rewards: [{
+				id: 2557,
+				type: "loot",
+				table: 10
+			}]
+		},
+		{
+			title: "Spell Practice: Smelting",
+			icon: "ars_nouveau:glyph_smelt",
+			x: -4.5d,
+			y: -0.5d,
+			description: [
+				"With a higher quality spell book comes the ability to channel more potent abilities. ",
+				"",
+				"For example, a spell can be made that will smelt a ranged block, break it, and bring it to your inventory. ",
+				"",
+				"● Projectile > Smelt > Break > Item Pickup",
+				"",
+				"If used on Clay, this would result in a block of Terracotta being brought to your inventory.",
+				"",
+				"Adding an Extract augment after the Break will apply Silk Touch, allowing the above spell to create Glass from Sand.",
+				"",
+				"● Projectile > Smelt > Break > Extract > Item Pickup",
+				"",
+				"Similarly, the following will apply Fortune to the broken block and transport the result to your inventory. Great for those hard to reach diamonds.",
+				"",
+				"● Projectile > Break > Fortune > Item Pickup",
+				"",
+				"Multiple Fortune Augments may be stacked for higher yields. Fortune also applies to mob kills made by the spell, just like the Looting enchant."
+			],
+			dependencies: [I;962],
+			min_width: 300,
+			id: 2551,
+			tasks: [
+				{
+					id: 2552,
+					type: "item",
+					item: "ars_nouveau:glyph_smelt"
+				},
+				{
+					id: 2553,
+					type: "item",
+					item: "ars_nouveau:glyph_pickup"
+				}
+			],
+			rewards: [{
+				id: 2558,
+				type: "item",
+				item: "ars_nouveau:glyph_fortune"
+			}]
+		},
+		{
+			title: "Spell Practice: Lightning",
+			x: -2.5d,
+			y: -1.0d,
+			subtitle: "Let the Hate Flow Through You",
+			description: [
+				"Let's have a little fun, shall we? ",
+				"",
+				"Projectile > Splitting x8 > Lightning"
+			],
+			dependencies: [I;964],
+			id: 2573,
+			tasks: [{
+				id: 2574,
+				type: "item",
+				item: "ars_nouveau:glyph_lightning"
+			}],
+			rewards: [{
+				id: 2615,
+				type: "item",
+				item: "ars_nouveau:glyph_fangs"
 			}]
 		}
 	]

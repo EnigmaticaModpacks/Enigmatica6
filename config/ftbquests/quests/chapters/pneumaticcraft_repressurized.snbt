@@ -83,11 +83,18 @@
 					item: "pneumaticcraft:pressure_chamber_valve"
 				}
 			],
-			rewards: [{
-				id: 198,
-				type: "loot",
-				table: 14
-			}]
+			rewards: [
+				{
+					id: 198,
+					type: "loot",
+					table: 14
+				},
+				{
+					id: 2680,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			title: "Air Compressor",
@@ -222,17 +229,24 @@
 				type: "checkmark",
 				title: "-173 Fahrenheit or Celsius?"
 			}],
-			rewards: [{
-				id: 206,
-				type: "item",
-				item: {
-					id: "pneumaticcraft:camo_applicator",
-					Count: true,
-					tag: {
-						"pneumaticcraft:air": 30000
+			rewards: [
+				{
+					id: 206,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:camo_applicator",
+						Count: true,
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
 					}
+				},
+				{
+					id: 2681,
+					type: "loot",
+					table: 11
 				}
-			}]
+			]
 		},
 		{
 			x: -12.5d,
@@ -358,11 +372,18 @@
 				type: "item",
 				item: "pneumaticcraft:oil_bucket"
 			}],
-			rewards: [{
-				id: 230,
-				type: "loot",
-				table: 14
-			}]
+			rewards: [
+				{
+					id: 230,
+					type: "loot",
+					table: 14
+				},
+				{
+					id: 2683,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			icon: "pneumaticcraft:gas_lift",
@@ -807,17 +828,24 @@
 				title: "The Logical Path Forward",
 				icon: "pneumaticcraft:logistics_core"
 			}],
-			rewards: [{
-				id: 287,
-				type: "item",
-				item: {
-					id: "pneumaticcraft:logistics_configurator",
-					Count: true,
-					tag: {
-						"pneumaticcraft:air": 30000
+			rewards: [
+				{
+					id: 287,
+					type: "item",
+					item: {
+						id: "pneumaticcraft:logistics_configurator",
+						Count: true,
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
 					}
+				},
+				{
+					id: 2682,
+					type: "loot",
+					table: 11
 				}
-			}]
+			]
 		},
 		{
 			title: "Redstone Modules",
@@ -1107,7 +1135,11 @@
 			y: -13.5d,
 			shape: "rsquare",
 			subtitle: "You Can Touch, You Can Play",
-			description: ["Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?"],
+			description: [
+				"Cooling plastic by dumping a bucket in the world will get you started, but surely there’s a better way?",
+				"",
+				"Be sure to work through the heat quests before proceeding."
+			],
 			dependencies: [I;
 				191,
 				245,
