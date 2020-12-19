@@ -27,4 +27,14 @@ events.listen('recipes', (event) => {
             count: 1
         });
     });
+
+    ingredient.of('#forge:workbench').stacks.forEach(function (workbench) {
+        event.recipes.minecraft.stonecutting({
+            ingredient: {
+                tag: 'forge:workbench'
+            },
+            result: workbench.id,
+            count: 1
+        });
+    });
 });

@@ -80,6 +80,7 @@ events.listen('recipes', function (event) {
         '#quark:stone_tool_materials'
     );
 
+    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
