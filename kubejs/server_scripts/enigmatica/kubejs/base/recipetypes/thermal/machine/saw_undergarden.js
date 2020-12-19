@@ -1,5 +1,5 @@
 events.listen('recipes', function (event) {
-    var variants = woodVariantsBYG.concat(woodVariantsBOP).concat(woodVariantsUG);
+    var variants = woodVariantsUG;
 
     variants.forEach((variant) => {
         var splitVariant = variant.split(':');
@@ -44,22 +44,23 @@ events.listen('recipes', function (event) {
         ]};
 
         data.recipes.forEach((recipe) => {
-            event.recipes.mekanism.sawing({
-                type: 'mekanism:sawing',
-                input: {
-                  ingredient: {
+            event.recipes.thermal.sawmill({
+                type: 'thermal:sawmill',
+                ingredient: {
                     item: recipe.input
+                },
+                result: [
+                  {
+                    item: recipe.output,
+                    count: recipe.count
+                  },
+                  {
+                    item: 'emendatusenigmatica:wood_dust',
+                    chance: 1.25
                   }
-                },
-                mainOutput: {
-                  item: recipe.output,
-                  count: recipe.count
-                },
-                secondaryOutput: {
-                  item: 'emendatusenigmatica:wood_dust'
-                },
-                secondaryChance: 0.25
-            });
+                ],
+                energy: 1000
+              });
         });        
     });
 });

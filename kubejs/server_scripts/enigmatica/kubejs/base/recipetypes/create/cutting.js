@@ -1,38 +1,30 @@
 events.listen('recipes', function (event) {
-    var variants = [
-        'byg:aspen',
-        'byg:baobab',
-        'byg:blue_enchanted',
-        'byg:cherry',
-        'byg:cika',
-        'byg:cypress',
-        'byg:ebony',
-        'byg:ether',
-        'byg:fir',
-        'byg:green_enchanted',
-        'byg:holly',
-        'byg:jacaranda',
-        'byg:lament',
-        'byg:mahogany',
-        'byg:mangrove',
-        'byg:maple',
-        'byg:nightshade',
-        'byg:palm',
-        'byg:palo_verde',
-        'byg:pine',
-        'byg:rainbow_eucalyptus',
-        'byg:redwood',
-        'byg:skyris',
-        'byg:willow',
-        'byg:witch_hazel',
-        'byg:zelkova',
-        'byg:sythian',
-        'byg:bulbis',
-        'byg:embur'
-        // No stripped variant
-        // 'byg:withering_oak_log',
-        // 'byg:withering_oak_wood',
-    ];
+    // Withering Oak Exceptions, these are meant to strip to Vanilla Oak
+   var data = {
+        recipes : [
+           {input: 'byg:withering_oak_log', output: 'minecraft:stripped_oak_log', count: 1, time: 50 },
+           {input: 'byg:withering_oak_wood', output: 'minecraft:stripped_oak_log', count: 1, time: 50 }
+   ]};
+
+   data.recipes.forEach((recipe) => {
+       event.recipes.create.cutting({
+           type: 'create:cutting',
+           ingredients: [
+           {
+               item: recipe.input
+           }
+           ],
+           results: [
+           {
+               item: recipe.output,
+               count: recipe.count
+           }
+           ],
+           processingTime: recipe.time
+       });
+   });
+
+    var variants = woodVariantsBYG.concat(woodVariantsUG);
 
     variants.forEach((variant) => {
         var splitVariant = variant.split(':');
@@ -53,6 +45,10 @@ events.listen('recipes', function (event) {
                 logSuffix = '_pedu';
                 woodSuffix = '_hyphae';
                 break;
+            case 'grongle':
+                logSuffix = '_stem';
+                woodSuffix = '_hyphae';
+                break;
             default: 
                 logSuffix = '_log';
                 woodSuffix = '_wood';
@@ -64,14 +60,21 @@ events.listen('recipes', function (event) {
         var woodBlockStripped = modID  + ':stripped_' + logType + woodSuffix;
         var plankBlock = modID  + ':' + logType + '_planks';
 
-        var data = {
-             recipes : [
-                {input: logBlock, output: logBlockStripped, count: 1, time: 50 },
-                {input: woodBlock, output: woodBlockStripped, count: 1, time: 50 },
-                {input: logBlockStripped, output: plankBlock, count: 5, time: 100 },
-                {input: woodBlockStripped, output: plankBlock, count: 5, time: 100 }
-        ]};
-
+        if (modID == 'undergarden') {
+            data = {
+                recipes : [
+                    {input: logBlock, output: plankBlock, count: 5, time: 100 },
+                    {input: woodBlock, output: plankBlock, count: 5, time: 100 }
+            ]};
+        } else {
+            data = {
+                recipes : [
+                    {input: logBlock, output: logBlockStripped, count: 1, time: 50 },
+                    {input: woodBlock, output: woodBlockStripped, count: 1, time: 50 },
+                    {input: logBlockStripped, output: plankBlock, count: 5, time: 100 },
+                    {input: woodBlockStripped, output: plankBlock, count: 5, time: 100 }
+            ]};
+        }   
         data.recipes.forEach((recipe) => {
             event.recipes.create.cutting({
                 type: 'create:cutting',
@@ -88,7 +91,6 @@ events.listen('recipes', function (event) {
                 ],
                 processingTime: recipe.time
             });
-        });
-        
+        });        
     });
 });

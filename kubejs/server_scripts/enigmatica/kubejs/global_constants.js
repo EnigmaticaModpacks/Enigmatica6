@@ -94,5 +94,57 @@ const materialsToUnify = [
     'charged_certus_quartz'
 ];
 
+const woodVariantsBYG = [
+    'byg:aspen',
+    'byg:baobab',
+    'byg:blue_enchanted',
+    'byg:cherry',
+    'byg:cika',
+    'byg:cypress',
+    'byg:ebony',
+    'byg:ether',
+    'byg:fir',
+    'byg:green_enchanted',
+    'byg:holly',
+    'byg:jacaranda',
+    'byg:lament',
+    'byg:mahogany',
+    'byg:mangrove',
+    'byg:maple',
+    'byg:nightshade',
+    'byg:palm',
+    'byg:palo_verde',
+    'byg:pine',
+    'byg:rainbow_eucalyptus',
+    'byg:redwood',
+    'byg:skyris',
+    'byg:willow',
+    'byg:witch_hazel',
+    'byg:zelkova',
+    'byg:sythian',
+    'byg:bulbis',
+    'byg:embur'
+];
+
+const woodVariantsBOP = [
+    'biomesoplenty:cherry',
+    'biomesoplenty:dead',
+    'biomesoplenty:fir',
+    'biomesoplenty:hellbark',
+    'biomesoplenty:jacaranda',
+    'biomesoplenty:magic',
+    'biomesoplenty:mahogany',
+    'biomesoplenty:palm',
+    'biomesoplenty:redwood',
+    'biomesoplenty:umbran',
+    'biomesoplenty:willow'
+];
+
+const woodVariantsUG = [
+    'undergarden:smogstem',
+    'undergarden:wigglewood',
+    'undergarden:grongle'
+];
+
 global.materialsToUnify = materialsToUnify;
 global.disabledItems = disabledItems;

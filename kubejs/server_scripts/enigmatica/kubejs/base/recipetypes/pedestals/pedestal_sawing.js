@@ -44,21 +44,15 @@ events.listen('recipes', function (event) {
         ]};
 
         data.recipes.forEach((recipe) => {
-            event.recipes.mekanism.sawing({
-                type: 'mekanism:sawing',
-                input: {
-                  ingredient: {
-                    item: recipe.input
-                  }
+            event.recipes.pedestals.pedestal_sawing({
+                type: 'pedestals:pedestal_sawing',
+                ingredient: {
+                  item: recipe.input
                 },
-                mainOutput: {
+                result: {
                   item: recipe.output,
                   count: recipe.count
-                },
-                secondaryOutput: {
-                  item: 'emendatusenigmatica:wood_dust'
-                },
-                secondaryChance: 0.25
+                }
             });
         });        
     });
