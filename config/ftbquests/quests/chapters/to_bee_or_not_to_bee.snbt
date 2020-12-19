@@ -1,20 +1,20 @@
 {
 	id: 1805,
 	filename: "to_bee_or_not_to_bee",
-	order_index: 22,
+	order_index: 0,
 	title: "Resourceful Bees",
 	icon: "minecraft:honeycomb",
-	default_quest_shape: "",
+	default_quest_shape: "hexagon",
 	quests: [
 		{
-			title: "To Bee or not to Bee",
-			x: -12.5d,
+			title: "Bee Nests",
+			x: -11.5d,
 			y: -18.5d,
 			description: [
 				"Bee Nests are the most basic housing method for bees, those don't have an Inventory but their upgraded version do.",
 				"Here are some Bee Jars to prevent them from flying away from you and to make your life a bit easier."
 			],
-			dependencies: [I;1812],
+			dependencies: [I;2708],
 			id: 1806,
 			tasks: [{
 				id: 1807,
@@ -39,9 +39,9 @@
 		},
 		{
 			title: "Tier 2 Bees",
-			icon: "resourcefulbees:iron_honeycomb",
-			x: -9.0d,
-			y: -17.0d,
+			icon: "resourcefulbees:gold_honeycomb",
+			x: -8.5d,
+			y: -16.5d,
 			description: [
 				"These ones need a bit of breeding to get them but are still quite simple.",
 				"You should find most the information you need in JEI",
@@ -56,7 +56,7 @@
 				"-Lapis Bee",
 				"-Ghast Bee"
 			],
-			dependencies: [I;2719],
+			dependencies: [I;1812],
 			id: 1810,
 			tasks: [{
 				id: 1811,
@@ -65,9 +65,9 @@
 		},
 		{
 			title: "Tier 1 Bees",
-			icon: "resourcefulbees:wither_honeycomb",
-			x: -11.5d,
-			y: -17.0d,
+			icon: "resourcefulbees:iron_honeycomb",
+			x: -10.0d,
+			y: -16.5d,
 			description: [
 				"For balance sake, we created tiers for the bees which are totally unrelated to the beehive tiers.",
 				"The tier 1 bees are the ones that spawn naturally in the world.",
@@ -100,7 +100,7 @@
 			title: "Bee Mutation",
 			icon: "resourcefulbees:bee_jar",
 			x: -13.5d,
-			y: -17.5d,
+			y: -16.5d,
 			description: [
 				"I see you wanna do more than just breed the bees, let me introduce you to Entity to Entity mutation!",
 				"It works like the regular mutation but with entities, whenever a Bee returns to its Hive after getting that sweet Polination in everything that crosses its path will be transmuted.",
@@ -117,8 +117,8 @@
 		{
 			title: "Tier 3 Bees",
 			icon: "resourcefulbees:diamond_honeycomb",
-			x: -7.5d,
-			y: -17.0d,
+			x: -7.0d,
+			y: -16.5d,
 			description: [
 				"Tier 3 is where it gets a bit grindy to keep things somewhat balanced and in place, because this is where Bees get a bit crazy.",
 				"Most of these require their respectable blocks for breeding so bee prepared!",
@@ -146,8 +146,7 @@
 			}]
 		},
 		{
-			title: "Making a beeautiful home",
-			x: -11.5d,
+			x: -10.0d,
 			y: -18.5d,
 			description: [
 				"To get more than just a handful of combs you might wanna make a Beehive of which there are 4 the higher the Tier the more bees you can store and the more combs you get!",
@@ -172,8 +171,7 @@
 			}]
 		},
 		{
-			title: "Beeing the 2nd Tier is not so bad!",
-			x: -10.5d,
+			x: -8.5d,
 			y: -18.5d,
 			description: [
 				"So you've done did it, all your hard work finally payed off!",
@@ -197,47 +195,10 @@
 			}]
 		},
 		{
-			title: "Apiary Automation and Storage Solutions",
-			x: -9.5d,
-			y: -18.5d,
-			description: [
-				"You're really close to the endgame of Resourceful Bees, because now you can automate those beeasty things.",
-				"Once you setup the Apiary and got some sorting on with the help of drawers or some other storage solution you can get tons of resources!",
-				"Also investing in a multiblock centrifuge will up your production rates by a lot!",
-				'For more info check the pages in the "Fitfy Shades of Bees"'
-			],
-			dependencies: [I;1831],
-			id: 1900,
-			tasks: [{
-				id: 1901,
-				type: "item",
-				item: "resourcefulbees:t1_apiary",
-				only_from_crafting: false
-			}]
-		},
-		{
-			x: -8.5d,
-			y: -18.5d,
-			description: ["You've done did it you mad lad, enjoy the tons of resources!"],
-			dependencies: [I;1900],
-			id: 1903,
-			tasks: [{
-				id: 1904,
-				type: "item",
-				item: "resourcefulbees:t4_apiary"
-			}],
-			rewards: [{
-				id: 1905,
-				type: "item",
-				item: "resourcefulbees:oreo_cookie",
-				count: 4
-			}]
-		},
-		{
 			title: "Vanilla Bee Mechanics",
 			icon: "minecraft:bee_nest",
-			x: -14.0d,
-			y: -16.5d,
+			x: -13.5d,
+			y: -14.5d,
 			description: [
 				"Vanilla Bees or all of them can be found naturally spawning in the wild, usually around bee nests, this pack changes that slightly. Certain Bees are biome specific or bound to a dimension.",
 				"Getting honeycombs is quite easy either use a shear or a scraper on the nest/hive to get the combs, but beeware these creatures have a tendency to violence so you might wanna use a Smoker or a Campfire to trick them into thinking their hive is burning."
@@ -250,8 +211,11 @@
 			}]
 		},
 		{
-			x: -12.5d,
+			title: "Resourceful Bees",
+			x: -11.5d,
 			y: -16.5d,
+			shape: "gear",
+			subtitle: "Yes. There will Bee many puns",
 			id: 2708,
 			tasks: [{
 				id: 2709,
@@ -279,8 +243,8 @@
 		},
 		{
 			title: "Combs",
-			x: -12.0d,
-			y: -15.5d,
+			x: -11.5d,
+			y: -14.5d,
 			dependencies: [I;2708],
 			id: 2711,
 			tasks: [{
@@ -297,7 +261,7 @@
 			}]
 		},
 		{
-			x: -11.5d,
+			x: -10.0d,
 			y: -14.5d,
 			dependencies: [I;2711],
 			id: 2713,
@@ -308,8 +272,9 @@
 			}]
 		},
 		{
-			x: -11.0d,
-			y: -13.5d,
+			title: "Powered Centrifuge",
+			x: -8.5d,
+			y: -14.5d,
 			dependencies: [I;2713],
 			id: 2715,
 			tasks: [{
@@ -319,8 +284,9 @@
 			}]
 		},
 		{
-			x: -10.5d,
-			y: -12.5d,
+			title: "Multiblock Centrifuge",
+			x: -7.0d,
+			y: -14.5d,
 			dependencies: [I;2715],
 			id: 2717,
 			tasks: [{
@@ -330,15 +296,157 @@
 			}]
 		},
 		{
-			title: "How breeding works",
-			x: -10.0d,
-			y: -16.5d,
-			dependencies: [I;1812],
+			x: -14.5d,
+			y: -19.0d,
+			dependencies: [I;2732],
 			id: 2719,
 			tasks: [{
 				id: 2720,
 				type: "item",
 				item: "resourcefulbees:apiary_breeder_upgrade"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -18.5d,
+			dependencies: [I;1831],
+			id: 2726,
+			tasks: [{
+				id: 2727,
+				type: "item",
+				item: "resourcefulbees:t3_beehive"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -18.5d,
+			dependencies: [I;2726],
+			id: 2728,
+			tasks: [{
+				id: 2729,
+				type: "item",
+				item: "resourcefulbees:t4_beehive"
+			}]
+		},
+		{
+			x: -13.0d,
+			y: -18.0d,
+			dependencies: [I;1806],
+			id: 2730,
+			tasks: [{
+				id: 2731,
+				type: "item",
+				item: "resourcefulbees:apiary_storage"
+			}]
+		},
+		{
+			x: -13.0d,
+			y: -19.0d,
+			dependencies: [I;1806],
+			id: 2732,
+			tasks: [{
+				id: 2733,
+				type: "item",
+				item: "resourcefulbees:apiary_breeder"
+			}]
+		},
+		{
+			x: -14.5d,
+			y: -20.0d,
+			dependencies: [I;2732],
+			id: 2734,
+			tasks: [{
+				id: 2735,
+				type: "item",
+				item: "resourcefulbees:apiary_breed_time_upgrade"
+			}]
+		},
+		{
+			x: -14.5d,
+			y: -18.0d,
+			dependencies: [I;2730],
+			id: 2736,
+			tasks: [{
+				id: 2737,
+				type: "item",
+				item: "resourcefulbees:iron_storage_upgrade"
+			}]
+		},
+		{
+			x: -16.0d,
+			y: -18.0d,
+			dependencies: [I;2736],
+			id: 2738,
+			tasks: [{
+				id: 2739,
+				type: "item",
+				item: "resourcefulbees:gold_storage_upgrade"
+			}]
+		},
+		{
+			x: -17.5d,
+			y: -18.0d,
+			dependencies: [I;2738],
+			id: 2740,
+			tasks: [{
+				id: 2741,
+				type: "item",
+				item: "resourcefulbees:diamond_storage_upgrade"
+			}]
+		},
+		{
+			x: -19.0d,
+			y: -18.0d,
+			dependencies: [I;2740],
+			id: 2742,
+			tasks: [{
+				id: 2743,
+				type: "item",
+				item: "resourcefulbees:emerald_storage_upgrade"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -20.0d,
+			dependencies: [I;2728],
+			id: 2744,
+			tasks: [{
+				id: 2745,
+				type: "item",
+				item: "resourcefulbees:t1_apiary"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -20.0d,
+			dependencies: [I;2744],
+			id: 2746,
+			tasks: [{
+				id: 2747,
+				type: "item",
+				item: "resourcefulbees:t2_apiary"
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -20.0d,
+			dependencies: [I;2746],
+			id: 2748,
+			tasks: [{
+				id: 2749,
+				type: "item",
+				item: "resourcefulbees:t3_apiary"
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -20.0d,
+			dependencies: [I;2748],
+			id: 2750,
+			tasks: [{
+				id: 2751,
+				type: "item",
+				item: "resourcefulbees:t4_apiary"
 			}]
 		}
 	]

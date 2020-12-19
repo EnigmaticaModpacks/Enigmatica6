@@ -381,11 +381,18 @@
 				},
 				consume_items: false
 			}],
-			rewards: [{
-				id: 2635,
-				type: "item",
-				item: "minecraft:lava_bucket"
-			}]
+			rewards: [
+				{
+					id: 2635,
+					type: "item",
+					item: "minecraft:lava_bucket"
+				},
+				{
+					id: 2724,
+					type: "loot",
+					table: 12
+				}
+			]
 		},
 		{
 			title: "Stonecutter",
@@ -599,6 +606,11 @@
 							Potion: "minecraft:long_fire_resistance"
 						}
 					}
+				},
+				{
+					id: 2722,
+					type: "loot",
+					table: 12
 				}
 			]
 		},
@@ -658,6 +670,11 @@
 							Potion: "minecraft:long_swiftness"
 						}
 					}
+				},
+				{
+					id: 2723,
+					type: "loot",
+					table: 12
 				}
 			]
 		},
@@ -729,14 +746,21 @@
 				advancement: "tetra:upgrades/hammer_6",
 				criterion: ""
 			}],
-			rewards: [{
-				id: 2575,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: 2575,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				},
+				{
+					id: 2725,
+					type: "loot",
+					table: 12
+				}
+			]
 		},
 		{
 			title: "Pickaxe",
@@ -1030,6 +1054,11 @@
 						"single/spearhead_material": "spearhead/iron"
 					}
 				}
+			}],
+			rewards: [{
+				id: 2721,
+				type: "xp",
+				xp: 50
 			}]
 		},
 		{
