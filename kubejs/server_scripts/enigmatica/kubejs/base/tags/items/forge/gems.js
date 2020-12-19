@@ -7,11 +7,13 @@ events.listen('item.tags', function (event) {
         .add('rftoolsbase:dimensionalshard')
         .add('minecraft:ender_pearl')
         .add('ars_nouveau:mana_gem')
-        .add('mapperbase:raw_bitumen');
+        .add('mapperbase:raw_bitumen')
+        .add('immersivepetroleum:bitumen');
+
     event.get(gems_ender).add('minecraft:ender_pearl');
     event.get('forge:gems/dimensional').add('rftoolsbase:dimensionalshard');
     event.get('forge:gems/mana').add('ars_nouveau:mana_gem');
-    event.get('forge:gems/bitumen').add('mapperbase:raw_bitumen');
+    event.get('forge:gems/bitumen').add('mapperbase:raw_bitumen').add('immersivepetroleum:bitumen');
 
     event.get('forge:gems/mana_gem').remove('ars_nouveau:mana_gem');
 });
