@@ -5,7 +5,7 @@ events.listen('recipes', (event) => {
                 pattern: ['  L  ', 'RRQRR', ' CCC '],
                 key: {
                     L: {
-                        item: 'create:lapis_sheet'
+                        tag: 'forge:plates/lapis'
                     },
                     R: {
                         tag: 'forge:dusts/redstone'
