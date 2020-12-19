@@ -9,6 +9,9 @@ events.listen('recipes', function (event) {
 
         'bambooeverything:bamboo_bundle',
 
+        'byg:blue_enchanted_crafting_table',
+        'byg:green_enchanted_crafting_table',
+
         'decorative_blocks:lattice',
 
         //'akashictome:tome',
@@ -78,7 +81,6 @@ events.listen('recipes', function (event) {
         mod: 'buildersaddition',
         type: 'minecraft:crafting_shaped'
     });
-
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });

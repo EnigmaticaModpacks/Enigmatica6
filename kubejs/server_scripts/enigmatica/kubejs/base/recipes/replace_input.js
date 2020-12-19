@@ -80,6 +80,7 @@ events.listen('recipes', function (event) {
         '#quark:stone_tool_materials'
     );
 
+    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
@@ -309,10 +310,4 @@ events.listen('recipes', function (event) {
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
-
-    // event.replaceInput(
-    //     { type: 'minecraft:crafting_shaped', output: 'create:redstone_link' },
-    //     'create:brass_sheet',
-    //     '#forge:plates/brass'
-    // );
 });

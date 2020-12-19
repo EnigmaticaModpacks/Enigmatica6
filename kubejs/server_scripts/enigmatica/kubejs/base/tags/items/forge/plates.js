@@ -1,3 +1,3 @@
-// events.listen('item.tags', function (event) {
-//     event.get('forge:plates/lapis').add('create:lapis_sheet');
-// });
+events.listen('item.tags', (event) => {
+    event.get('forge:plates/lapis').add('create:lapis_sheet');
+});

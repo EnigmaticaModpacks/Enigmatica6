@@ -1,0 +1,222 @@
+
+#Common Settings
+[common]
+	#Disable / enable any items here (disables their recipes)
+	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "advanced_compacting_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "upgrade_base:true", "refill_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true"]
+
+	#Leather Backpack Settings
+	[common.leatherBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 27
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 1
+
+	#Iron Backpack Settings
+	[common.ironBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 54
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 2
+
+	#Gold Backpack Settings
+	[common.goldBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 81
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 3
+
+	#Diamond Backpack Settings
+	[common.diamondBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 108
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 5
+
+	#Compacting Upgrade Settings
+	[common.compactingUpgrade]
+		#Number of Compacting Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Compacting Upgrade Settings
+	[common.advancedCompactingUpgrade]
+		#Number of Advanced Compacting Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Deposit Upgrade Settings
+	[common.depositUpgrade]
+		#Number of Deposit Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Deposit Upgrade Settings
+	[common.advancedDepositUpgrade]
+		#Number of Advanced Deposit Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Feeding Upgrade Settings
+	[common.feedingUpgrade]
+		#Number of Feeding Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Filter Upgrade Settings
+	[common.filterUpgrade]
+		#Number of Filter Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Filter Upgrade Settings
+	[common.advancedFilterUpgrade]
+		#Number of Advanced Filter Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Magnet Upgrade Settings
+	[common.magnetUpgrade]
+		#Number of Magnet Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+		#Range around backpack in blocks at which magnet will pickup items
+		#Range: 1 ~ 20
+		magnetRange = 3
+
+	#Advanced Magnet Upgrade Settings
+	[common.advancedMagnetUpgrade]
+		#Number of Advanced Magnet Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+		#Range around backpack in blocks at which magnet will pickup items
+		#Range: 1 ~ 20
+		magnetRange = 5
+
+	#Pickup Upgrade Settings
+	[common.pickupUpgrade]
+		#Number of Pickup Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Pickup Upgrade Settings
+	[common.advancedPickupUpgrade]
+		#Number of Advanced Pickup Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Refill Upgrade Settings
+	[common.refillUpgrade]
+		#Number of Refill Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 6
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Restock Upgrade Settings
+	[common.restockUpgrade]
+		#Number of Restock Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Restock Upgrade Settings
+	[common.advancedRestockUpgrade]
+		#Number of Advanced Restock Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Void Upgrade Settings
+	[common.voidUpgrade]
+		#Number of Void Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 9
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 3
+
+	#Advanced Void Upgrade Settings
+	[common.advancedVoidUpgrade]
+		#Number of Advanced Void Upgrade's filter slots
+		#Range: 1 ~ 20
+		filterSlots = 16
+		#Number of filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
+
+	#Smelting Upgrade Settings
+	[common.smeltingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+
+	#Auto-Smelting Upgrade Settings
+	[common.autoSmeltingUpgrade]
+		#Smelting speed multiplier (1.0 equals speed at which vanilla furnace smelts items)
+		#Range: 0.25 ~ 4.0
+		smeltingSpeedMultiplier = 1.0
+		#Fuel efficiency multiplier (1.0 equals speed at which it's used in vanilla furnace)
+		#Range: 0.25 ~ 4.0
+		fuelEfficiencyMultiplier = 1.0
+		#Number of input filter slots
+		#Range: 1 ~ 20
+		inputFilterSlots = 8
+		#Number of input filter slots displayed in a row
+		#Range: 1 ~ 6
+		inputFilterSlotsInRow = 4
+		#Number of fuel filter slots
+		#Range: 1 ~ 20
+		fuelFilterSlots = 4
+		#Number of fuel filter slots displayed in a row
+		#Range: 1 ~ 6
+		fuelFilterSlotsInRow = 4
+
