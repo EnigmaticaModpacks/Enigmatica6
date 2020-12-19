@@ -1,30 +1,4 @@
 events.listen('recipes', function (event) {
-    //withering oak exceptions
-    var data = {
-        recipes: [
-            {input: 'byg:withering_oak_log', output: 'minecraft:oak_planks', count: 6},
-            {input: 'byg:withering_oak_wood', output: 'minecraft:oak_planks', count: 6}
-        ]};
-
-        data.recipes.forEach((recipe) => {
-            event.recipes.mekanism.sawing({
-                type: 'mekanism:sawing',
-                input: {
-                  ingredient: {
-                    item: recipe.input
-                  }
-                },
-                mainOutput: {
-                  item: recipe.output,
-                  count: recipe.count
-                },
-                secondaryOutput: {
-                  item: 'mekanism:sawdust'
-                },
-                secondaryChance: 0.25
-            });
-        });
-
     var variants = [
         'byg:aspen',
         'byg:baobab',
@@ -55,16 +29,6 @@ events.listen('recipes', function (event) {
         'byg:sythian',
         'byg:bulbis',
         'byg:embur'
-        // No stripped variant
-        // 'byg:withering_oak_log',
-        // 'byg:withering_oak_wood',
-        /* Exceptions:
-        'byg:sythian_hyphae',
-        'byg:sythian_stem',
-        'byg:bulbis_stem',
-        'byg:bulbis_wood',
-        'byg:embur_hyphae',
-        'byg:embur_pedu',*/
     ];
 
     variants.forEach((variant) => {
@@ -97,7 +61,7 @@ events.listen('recipes', function (event) {
         var woodBlockStripped = modID  + ':stripped_' + logType + woodSuffix;
         var plankBlock = modID  + ':' + logType + '_planks';
 
-        data = {
+        var data = {
              recipes : [
                 {input: logBlock, output: plankBlock, count: 6 },
                 {input: woodBlock, output: plankBlock, count: 6 },

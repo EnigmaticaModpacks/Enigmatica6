@@ -32,13 +32,6 @@ events.listen('recipes', function (event) {
         // No stripped variant
         // 'byg:withering_oak_log',
         // 'byg:withering_oak_wood',
-        /* Exceptions:
-        'byg:sythian_hyphae',
-        'byg:sythian_stem',
-        'byg:bulbis_stem',
-        'byg:bulbis_wood',
-        'byg:embur_hyphae',
-        'byg:embur_pedu',*/
     ];
 
     variants.forEach((variant) => {
