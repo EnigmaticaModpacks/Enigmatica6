@@ -8,13 +8,13 @@
 	quests: [
 		{
 			title: "To Bee or not to Bee",
-			x: -17.0d,
-			y: -13.5d,
+			x: -12.5d,
+			y: -18.5d,
 			description: [
 				"Bee Nests are the most basic housing method for bees, those don't have an Inventory but their upgraded version do.",
 				"Here are some Bee Jars to prevent them from flying away from you and to make your life a bit easier."
 			],
-			dependencies: [I;2164],
+			dependencies: [I;1812],
 			id: 1806,
 			tasks: [{
 				id: 1807,
@@ -30,31 +30,18 @@
 				consume_items: false,
 				only_from_crafting: true
 			}],
-			rewards: [
-				{
-					id: 1808,
-					type: "item",
-					item: {
-						id: "patchouli:guide_book",
-						Count: true,
-						tag: {
-							"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
-						}
-					}
-				},
-				{
-					id: 1809,
-					type: "item",
-					item: "resourcefulbees:bee_jar",
-					count: 4
-				}
-			]
+			rewards: [{
+				id: 1809,
+				type: "item",
+				item: "resourcefulbees:bee_jar",
+				count: 4
+			}]
 		},
 		{
 			title: "Tier 2 Bees",
 			icon: "resourcefulbees:iron_honeycomb",
-			x: -17.0d,
-			y: -16.5d,
+			x: -9.0d,
+			y: -17.0d,
 			description: [
 				"These ones need a bit of breeding to get them but are still quite simple.",
 				"You should find most the information you need in JEI",
@@ -69,6 +56,7 @@
 				"-Lapis Bee",
 				"-Ghast Bee"
 			],
+			dependencies: [I;2719],
 			id: 1810,
 			tasks: [{
 				id: 1811,
@@ -78,8 +66,8 @@
 		{
 			title: "Tier 1 Bees",
 			icon: "resourcefulbees:wither_honeycomb",
-			x: -16.0d,
-			y: -16.5d,
+			x: -11.5d,
+			y: -17.0d,
 			description: [
 				"For balance sake, we created tiers for the bees which are totally unrelated to the beehive tiers.",
 				"The tier 1 bees are the ones that spawn naturally in the world.",
@@ -101,6 +89,7 @@
 				"[End]",
 				"-Ender Bees"
 			],
+			dependencies: [I;2708],
 			id: 1812,
 			tasks: [{
 				id: 1813,
@@ -110,14 +99,15 @@
 		{
 			title: "Bee Mutation",
 			icon: "resourcefulbees:bee_jar",
-			x: -15.0d,
-			y: -16.5d,
+			x: -13.5d,
+			y: -17.5d,
 			description: [
 				"I see you wanna do more than just breed the bees, let me introduce you to Entity to Entity mutation!",
 				"It works like the regular mutation but with entities, whenever a Bee returns to its Hive after getting that sweet Polination in everything that crosses its path will be transmuted.",
 				"For now it's only:",
 				"Ghast Bee = Creeper Bee + Blaze Bee  "
 			],
+			dependencies: [I;2708],
 			id: 1814,
 			tasks: [{
 				id: 1815,
@@ -127,8 +117,8 @@
 		{
 			title: "Tier 3 Bees",
 			icon: "resourcefulbees:diamond_honeycomb",
-			x: -18.0d,
-			y: -16.5d,
+			x: -7.5d,
+			y: -17.0d,
 			description: [
 				"Tier 3 is where it gets a bit grindy to keep things somewhat balanced and in place, because this is where Bees get a bit crazy.",
 				"Most of these require their respectable blocks for breeding so bee prepared!",
@@ -148,6 +138,7 @@
 				"- Netherite Bee ",
 				"- Wither Bee"
 			],
+			dependencies: [I;1810],
 			id: 1816,
 			tasks: [{
 				id: 1817,
@@ -155,28 +146,9 @@
 			}]
 		},
 		{
-			title: "Special Bees",
-			x: -19.0d,
-			y: -16.5d,
-			description: [
-				"The Special Bees have custom recipes that means they're not bred or transmuted like the ones before.",
-				"",
-				"[Special Bees]",
-				"- Manasteel Bee",
-				"- Elementium Bee",
-				"- Infused Bee",
-				"- Tainted Bee"
-			],
-			id: 1818,
-			tasks: [{
-				id: 1819,
-				type: "checkmark"
-			}]
-		},
-		{
 			title: "Making a beeautiful home",
-			x: -17.0d,
-			y: -12.5d,
+			x: -11.5d,
+			y: -18.5d,
 			description: [
 				"To get more than just a handful of combs you might wanna make a Beehive of which there are 4 the higher the Tier the more bees you can store and the more combs you get!",
 				"",
@@ -200,33 +172,9 @@
 			}]
 		},
 		{
-			title: "Manual Labor",
-			x: -17.0d,
-			y: -11.5d,
-			description: [
-				"Put some elbow grease in to get the sweet sweet honey.",
-				"The Manual centrifuge allows you to get the wax and honey out of honeycombs, but blocks are a bit too much for now.",
-				"Note: The Centrifuge needs glass bottles in its inventory to function."
-			],
-			dependencies: [I;1827],
-			id: 1829,
-			tasks: [{
-				id: 1833,
-				type: "item",
-				item: "resourcefulbees:mechanical_centrifuge",
-				only_from_crafting: false
-			}],
-			rewards: [{
-				id: 1899,
-				type: "item",
-				item: "minecraft:glass_bottle",
-				count: 24
-			}]
-		},
-		{
 			title: "Beeing the 2nd Tier is not so bad!",
-			x: -17.0d,
-			y: -10.5d,
+			x: -10.5d,
+			y: -18.5d,
 			description: [
 				"So you've done did it, all your hard work finally payed off!",
 				"But is this really the best you can do?.. Not really because there are 2 more Beehive Tiers left and then there are still Apiaries for you to explore.",
@@ -234,7 +182,7 @@
 				"",
 				"But before you get there you should stock up on those Comb Blocks as well as plenty of Bees Wax"
 			],
-			dependencies: [I;1829],
+			dependencies: [I;1827],
 			id: 1831,
 			tasks: [{
 				id: 1834,
@@ -249,47 +197,16 @@
 			}]
 		},
 		{
-			x: -15.5d,
-			y: -10.5d,
-			description: ["My personal tip would be to get yourself a Beekeeper Villager and get those Emeralds buzzing!"],
-			dependencies: [I;1831],
-			id: 1895,
-			tasks: [{
-				id: 1896,
-				type: "checkmark",
-				title: "Psst wanna buy some bees?",
-				icon: "minecraft:emerald"
-			}]
-		},
-		{
-			x: -17.0d,
-			y: -9.5d,
-			description: [
-				"So for this Quest your main goal is to upgrade from manual labour to some sweet machinery.",
-				"Which just needs you to smack some iron onto that old Centrifuge and it should be as good as new!",
-				"",
-				"Also consider getting a Honey Generator"
-			],
-			dependencies: [I;1831],
-			id: 1897,
-			tasks: [{
-				id: 1898,
-				type: "item",
-				item: "resourcefulbees:centrifuge",
-				only_from_crafting: true
-			}]
-		},
-		{
 			title: "Apiary Automation and Storage Solutions",
-			x: -17.0d,
-			y: -8.5d,
+			x: -9.5d,
+			y: -18.5d,
 			description: [
 				"You're really close to the endgame of Resourceful Bees, because now you can automate those beeasty things.",
 				"Once you setup the Apiary and got some sorting on with the help of drawers or some other storage solution you can get tons of resources!",
 				"Also investing in a multiblock centrifuge will up your production rates by a lot!",
 				'For more info check the pages in the "Fitfy Shades of Bees"'
 			],
-			dependencies: [I;1897],
+			dependencies: [I;1831],
 			id: 1900,
 			tasks: [{
 				id: 1901,
@@ -299,8 +216,8 @@
 			}]
 		},
 		{
-			x: -17.0d,
-			y: -7.5d,
+			x: -8.5d,
+			y: -18.5d,
 			description: ["You've done did it you mad lad, enjoy the tons of resources!"],
 			dependencies: [I;1900],
 			id: 1903,
@@ -319,23 +236,109 @@
 		{
 			title: "Vanilla Bee Mechanics",
 			icon: "minecraft:bee_nest",
-			x: -17.0d,
-			y: -14.5d,
+			x: -14.0d,
+			y: -16.5d,
 			description: [
 				"Vanilla Bees or all of them can be found naturally spawning in the wild, usually around bee nests, this pack changes that slightly. Certain Bees are biome specific or bound to a dimension.",
 				"Getting honeycombs is quite easy either use a shear or a scraper on the nest/hive to get the combs, but beeware these creatures have a tendency to violence so you might wanna use a Smoker or a Campfire to trick them into thinking their hive is burning."
 			],
-			dependencies: [I;
-				1818,
-				1816,
-				1810,
-				1812,
-				1814
-			],
+			dependencies: [I;2708],
 			id: 2164,
 			tasks: [{
 				id: 2165,
 				type: "checkmark"
+			}]
+		},
+		{
+			x: -12.5d,
+			y: -16.5d,
+			id: 2708,
+			tasks: [{
+				id: 2709,
+				type: "checkmark",
+				title: "Intro ",
+				icon: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+					}
+				}
+			}],
+			rewards: [{
+				id: 2710,
+				type: "item",
+				item: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+					}
+				}
+			}]
+		},
+		{
+			title: "Combs",
+			x: -12.0d,
+			y: -15.5d,
+			dependencies: [I;2708],
+			id: 2711,
+			tasks: [{
+				id: 2712,
+				type: "item",
+				title: "Any resourcefulbees:resourceful_honeycomb",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "resourcefulbees:resourceful_honeycomb"
+					}
+				}
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -14.5d,
+			dependencies: [I;2711],
+			id: 2713,
+			tasks: [{
+				id: 2714,
+				type: "item",
+				item: "resourcefulbees:mechanical_centrifuge"
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -13.5d,
+			dependencies: [I;2713],
+			id: 2715,
+			tasks: [{
+				id: 2716,
+				type: "item",
+				item: "resourcefulbees:centrifuge"
+			}]
+		},
+		{
+			x: -10.5d,
+			y: -12.5d,
+			dependencies: [I;2715],
+			id: 2717,
+			tasks: [{
+				id: 2718,
+				type: "item",
+				item: "resourcefulbees:centrifuge_controller"
+			}]
+		},
+		{
+			title: "How breeding works",
+			x: -10.0d,
+			y: -16.5d,
+			dependencies: [I;1812],
+			id: 2719,
+			tasks: [{
+				id: 2720,
+				type: "item",
+				item: "resourcefulbees:apiary_breeder_upgrade"
 			}]
 		}
 	]

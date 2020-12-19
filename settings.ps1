@@ -20,6 +20,7 @@ $CONFIGS_TO_REMOVE = @(
 	"betteradvancements-client.toml",
 	"chiselsandbits-client.toml",
 	"craftingtweaks-client.toml",
+	"create-client.toml",
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
