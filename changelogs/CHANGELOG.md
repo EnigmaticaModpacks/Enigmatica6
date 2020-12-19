@@ -3,12 +3,13 @@
 _Using Forge-1.16.4-35.1.7_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
 
 **Fixed a host of issues with dimensions, including the Ender Dragon not spawning, missing biomes and random biomes.
-For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) to fix your existing world.**
+For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) made by the ATM team, to fix your existing world.**
 
 **Added**
 
 **Changes**
 
+-   Loading: Removed color changes to the Mojang brand.
 -   Quark: Re-added Vertical Slabs, as turning them off had no benefit.
 -   Disabled Gear Recycling in the Immersive Engineering Arc Furnace
 -   Removed Sugar Cane Block from Thermal, it was uncraftable anyway.
