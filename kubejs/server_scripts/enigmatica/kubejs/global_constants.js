@@ -94,7 +94,29 @@ const materialsToUnify = [
     'charged_certus_quartz'
 ];
 
-const woodVariantsBYG = [
+var woodVariantsToConstruct = [
+    'minecraft:acacia',
+    'minecraft:birch',
+    'minecraft:dark_oak',
+    'minecraft:jungle',
+    'minecraft:oak',
+    'minecraft:spruce',
+    'minecraft:warped',
+    'minecraft:crimson',
+    'undergarden:smogstem',
+    'undergarden:wigglewood',
+    'undergarden:grongle',
+    'biomesoplenty:cherry',
+    'biomesoplenty:dead',
+    'biomesoplenty:fir',
+    'biomesoplenty:hellbark',
+    'biomesoplenty:jacaranda',
+    'biomesoplenty:magic',
+    'biomesoplenty:mahogany',
+    'biomesoplenty:palm',
+    'biomesoplenty:redwood',
+    'biomesoplenty:umbran',
+    'biomesoplenty:willow',
     'byg:aspen',
     'byg:baobab',
     'byg:blue_enchanted',
@@ -123,28 +145,86 @@ const woodVariantsBYG = [
     'byg:zelkova',
     'byg:sythian',
     'byg:bulbis',
-    'byg:embur'
+    'byg:embur',
+    'byg:withering_oak'
 ];
 
-const woodVariantsBOP = [
-    'biomesoplenty:cherry',
-    'biomesoplenty:dead',
-    'biomesoplenty:fir',
-    'biomesoplenty:hellbark',
-    'biomesoplenty:jacaranda',
-    'biomesoplenty:magic',
-    'biomesoplenty:mahogany',
-    'biomesoplenty:palm',
-    'biomesoplenty:redwood',
-    'biomesoplenty:umbran',
-    'biomesoplenty:willow'
-];
+var buildWoodVariants = [];
 
-const woodVariantsUG = [
-    'undergarden:smogstem',
-    'undergarden:wigglewood',
-    'undergarden:grongle'
-];
+woodVariantsToConstruct.forEach((variant) => {
+    var splitVariant = variant.split(':');
+    var modID = splitVariant[0];
+    var logType = splitVariant[1];
+    var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock;
 
+    //suffix exceptions
+    switch (logType) {
+        case 'bulbis':
+            logSuffix = '_stem';
+            break;
+        case 'sythian':
+            logSuffix = '_stem';
+            woodSuffix = '_hyphae';
+            break;
+        case 'warped':
+            logSuffix = '_stem';
+            woodSuffix = '_hyphae';
+            break;
+        case 'crimson':
+            logSuffix = '_stem';
+            woodSuffix = '_hyphae';
+            break;
+        case 'embur':
+            logSuffix = '_pedu';
+            woodSuffix = '_hyphae';
+            break;
+        case 'grongle':
+            logSuffix = '_stem';
+            woodSuffix = '_hyphae';
+            break;
+        default:
+            logSuffix = '_log';
+            woodSuffix = '_wood';
+    }
+
+    logBlock = modID + ':' + logType + logSuffix;
+    woodBlock = modID + ':' + logType + woodSuffix;
+    logBlockStripped = modID + ':stripped_' + logType + logSuffix;
+    woodBlockStripped = modID + ':stripped_' + logType + woodSuffix;
+    plankBlock = modID + ':' + logType + '_planks';
+
+    //BlockStripped Exceptions
+    switch (logType) {
+        case 'smogstem':
+            logBlockStripped = 'minecraft:air';
+            woodBlockStripped = 'minecraft:air';
+            break;
+        case 'wigglewood':
+            logBlockStripped = 'minecraft:air';
+            woodBlockStripped = 'minecraft:air';
+            break;
+        case 'grongle':
+            logBlockStripped = 'minecraft:air';
+            woodBlockStripped = 'minecraft:air';
+            break;
+        case 'withering_oak':
+            logBlockStripped = 'minecraft:stripped_oak_log';
+            woodBlockStripped = 'minecraft:stripped_oak_wood';
+            plankBlock = 'minecraft:oak_planks';
+        default:
+    }
+
+    var woodVariant = {
+        logBlock: logBlock,
+        woodBlock: woodBlock,
+        logBlockStripped: logBlockStripped,
+        woodBlockStripped: woodBlockStripped,
+        plankBlock: plankBlock
+    };
+
+    buildWoodVariants.push(woodVariant);
+});
+
+global.woodVariants = buildWoodVariants;
 global.materialsToUnify = materialsToUnify;
 global.disabledItems = disabledItems;

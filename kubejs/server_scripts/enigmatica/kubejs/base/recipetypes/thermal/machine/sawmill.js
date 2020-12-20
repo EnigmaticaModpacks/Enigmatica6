@@ -3,11 +3,7 @@ events.listen('recipes', function (event) {
         var modID = variant.logBlock.split(':')[0];
 
         // mod blacklist
-        if (modID == 'minecraft') {
-            return;
-        }
-
-        if (variant.logBlock == 'byg:withering_oak_log') {
+        if (modID == 'minecraft' || modID == 'byg' || modID == 'biomesoplenty') {
             return;
         }
 
@@ -37,21 +33,22 @@ events.listen('recipes', function (event) {
         };
 
         data.recipes.forEach((recipe) => {
-            event.recipes.mekanism.sawing({
-                type: 'mekanism:sawing',
-                input: {
-                    ingredient: {
-                        item: recipe.input
+            event.recipes.thermal.sawmill({
+                type: 'thermal:sawmill',
+                ingredient: {
+                    item: recipe.input
+                },
+                result: [
+                    {
+                        item: recipe.output,
+                        count: recipe.count
+                    },
+                    {
+                        item: 'emendatusenigmatica:wood_dust',
+                        chance: 1.25
                     }
-                },
-                mainOutput: {
-                    item: recipe.output,
-                    count: recipe.count
-                },
-                secondaryOutput: {
-                    item: 'emendatusenigmatica:wood_dust'
-                },
-                secondaryChance: 0.25
+                ],
+                energy: 1000
             });
         });
     });
