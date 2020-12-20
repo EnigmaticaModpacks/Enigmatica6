@@ -1,5 +1,12 @@
 events.listen('item.tags', function (event) {
-    event.get('forge:tools').add('#forge:fillet_knife');
-    event.get('forge:tools/knife').add('#forge:fillet_knife');
-    event.get('forge:fillet_knife').add('#farmersdelight:tools/knife');
+    const knives = [
+        'farmersdelight:flint_knife',
+        'farmersdelight:iron_knife',
+        'farmersdelight:diamond_knife',
+        'farmersdelight:netherite_knife',
+        'farmersdelight:golden_knife'
+    ];
+    event.get('forge:tools').add(knives);
+    event.get('forge:tools/knife').add(knives);
+    event.get('forge:fillet_knife').add(knives);
 });

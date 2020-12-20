@@ -1,14 +1,15 @@
 {
 	id: 184,
 	title: "Legendary PNC:R Loot Box",
-	icon: "aquaculture:neptunes_bounty",
-	loot_size: 1,
+	icon: "kubejs:legendary_lootbox",
+	loot_size: 3,
 	hide_tooltip: true,
 	use_title: true,
 	rewards: [
 		{
 			item: "pneumaticcraft:programming_puzzle",
-			count: 16
+			count: 16,
+			weight: 3
 		},
 		{
 			item: {
@@ -20,7 +21,11 @@
 			}
 		},
 		{
-			item: "pneumaticcraft:printed_circuit_board"
+			item: "pneumaticcraft:printed_circuit_board",
+			weight: 3
+		},
+		{
+			item: "pneumaticcraft:smart_chest"
 		}
 	]
 }

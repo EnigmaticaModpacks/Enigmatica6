@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var recipes = [
         shapelessRecipe('botania:enchanted_soil', ['minecraft:grass_block', 'botania:overgrowth_seed']),
         shapelessRecipe('minecraft:sticky_piston', ['minecraft:piston', '#forge:slimeballs']),
@@ -68,9 +68,24 @@ events.listen('recipes', function (event) {
             'bambooeverything:bamboo_bundle',
             'bambooeverything:bamboo_bundle'
         ]),
-        shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
-        shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
-        shapelessRecipe('minecraft:crafting_table', ['#forge:workbench'])
+        // shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
+        // shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
+        shapelessRecipe('minecraft:crafting_table', ['#forge:workbench']),
+        shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }), [
+            'minecraft:sugar',
+            'minecraft:book'
+        ]),
+        shapelessRecipe('prettypipes:pipe_frame', [
+            'minecraft:item_frame',
+            'prettypipes:pipe',
+            '#forge:dusts/redstone'
+        ]),
+        shapelessRecipe('prettypipes:crafting_terminal', [
+            'prettypipes:item_terminal',
+            'prettypipes:low_crafting_module'
+        ]),
+        shapelessRecipe('ars_nouveau:mana_gem', ['emendatusenigmatica:arcane_gem']),
+        shapelessRecipe('emendatusenigmatica:arcane_gem', ['ars_nouveau:mana_gem'])
     ];
 
     recipes.forEach(function (recipe) {

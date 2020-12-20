@@ -91,7 +91,7 @@
 			#Number of times to spawn per chunk.
 			#Default: 10
 			#Range: 1 ~ 100
-			ScoriaStonePerChunk = 10
+			ScoriaStonePerChunk = 1
 			#
 			#Y level to start generating at.
 			#Default: 63
@@ -101,25 +101,25 @@
 			#Size of the clusters.
 			#Default: 20
 			#Range: 1 ~ 100
-			ScoriaStoneSize = 20
+			ScoriaStoneSize = 32
 			#
 			#Generate Scoria Stone?
-			GenerateScoriaStone = false
+			GenerateScoriaStone = true
 
 		[Overworld.Stones.Soap_Stone]
 			#
 			#Number of times to spawn per chunk.
 			#Default: 10
 			#Range: 1 ~ 100
-			SoapStonePerChunk = 10
+			SoapStonePerChunk = 1
 			#
 			#Size of the clusters.
 			#Default: 20
 			#Range: 1 ~ 100
-			SoapStoneSize = 20
+			SoapStoneSize = 32
 			#
 			#Generate Soap Stone?
-			GenerateSoapStone = false
+			GenerateSoapStone = true
 			#
 			#Y level to start generating at.
 			#Default: 63
@@ -137,15 +137,15 @@
 			#Size of the clusters.
 			#Default: 20
 			#Range: 1 ~ 100
-			RockyStoneSize = 20
+			RockyStoneSize = 32
 			#
 			#Number of times to spawn per chunk.
 			#Default: 10
 			#Range: 1 ~ 100
-			RockyStonePerChunk = 10
+			RockyStonePerChunk = 1
 			#
 			#Generate Rocky Stone?
-			GenerateRockyStone = false
+			GenerateRockyStone = true
 
 [The_Nether]
 	#

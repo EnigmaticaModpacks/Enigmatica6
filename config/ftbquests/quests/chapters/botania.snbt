@@ -1,7 +1,7 @@
 {
 	id: 1280,
 	filename: "botania",
-	order_index: 15,
+	order_index: 19,
 	title: "Botania",
 	icon: "botania:mana_pylon",
 	default_quest_shape: "",
@@ -79,6 +79,11 @@
 							Damage: 0
 						}
 					}
+				},
+				{
+					id: 2672,
+					type: "loot",
+					table: 13
 				}
 			]
 		},
@@ -122,11 +127,18 @@
 					item: "botania:pure_daisy"
 				}
 			],
-			rewards: [{
-				id: 1610,
-				type: "loot",
-				table: 7
-			}]
+			rewards: [
+				{
+					id: 1610,
+					type: "loot",
+					table: 7
+				},
+				{
+					id: 2673,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			title: "Livingwood & Livingrock",
@@ -416,7 +428,9 @@
 			description: [
 				"It stands to reason that the earth has more secrets yet to be revealed. Perhaps a trap can be formed by way of these alien materials? ",
 				"",
-				"Level a large  area, a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth."
+				"Level a large area; a circle with a radius of roughly eleven blocks will suffice. Lay the trap and bait it with Terrasteel to see what comes forth.",
+				"",
+				"The Lexica Botania will show the exact structure required to build the arena."
 			],
 			dependencies: [I;1281],
 			id: 1320,
@@ -642,12 +656,19 @@
 				type: "item",
 				item: "botania:brewery"
 			}],
-			rewards: [{
-				id: 1499,
-				type: "item",
-				item: "botania:vial",
-				count: 8
-			}]
+			rewards: [
+				{
+					id: 1499,
+					type: "item",
+					item: "botania:vial",
+					count: 8
+				},
+				{
+					id: 2676,
+					type: "loot",
+					table: 22
+				}
+			]
 		},
 		{
 			x: 2.0d,
@@ -682,11 +703,18 @@
 					tag: {}
 				}
 			}],
-			rewards: [{
-				id: 1366,
-				type: "item",
-				item: "botania:avatar"
-			}]
+			rewards: [
+				{
+					id: 1366,
+					type: "item",
+					item: "botania:avatar"
+				},
+				{
+					id: 2678,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: 1.5d,
@@ -1047,11 +1075,18 @@
 					}
 				}
 			],
-			rewards: [{
-				id: 1428,
-				type: "item",
-				item: "minecraft:slime_block"
-			}]
+			rewards: [
+				{
+					id: 1428,
+					type: "item",
+					item: "minecraft:slime_block"
+				},
+				{
+					id: 2677,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			icon: "mythicbotany:mana_infuser",
@@ -1114,7 +1149,7 @@
 			rewards: [{
 				id: 1482,
 				type: "loot",
-				table: 8
+				table: 9
 			}]
 		},
 		{

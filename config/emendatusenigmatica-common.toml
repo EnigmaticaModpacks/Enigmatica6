@@ -3,7 +3,7 @@
 ["Ore Config: coal"]
 	#Maximum Y-Level [Range: 0-256, Default: 128]
 	#Range: 0 ~ 256
-	max_y = 128
+	max_y = 60
 	#Average ores per Chunk [Range: 0-64, Default: 20]
 	#Range: 0 ~ 64
 	count = 20
@@ -14,12 +14,12 @@
 	vein_size = 17
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 60
 
 ["Ore Config: iron"]
 	#Maximum Y-Level [Range: 0-256, Default: 64]
 	#Range: 0 ~ 256
-	max_y = 64
+	max_y = 32
 	#Average ores per Chunk [Range: 0-64, Default: 20]
 	#Range: 0 ~ 64
 	count = 20
@@ -27,18 +27,18 @@
 	active = true
 	#Configure the ore Vein Size [Default: 9]
 	#Range: 0 ~ 64
-	vein_size = 9
+	vein_size = 11
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 32
 
 ["Ore Config: gold"]
 	#Maximum Y-Level [Range: 0-256, Default: 32]
 	#Range: 0 ~ 256
-	max_y = 32
+	max_y = 16
 	#Average ores per Chunk [Range: 0-64, Default: 2]
 	#Range: 0 ~ 64
-	count = 6
+	count = 7
 	#Activate/Deactivate the World Gen [Default: true]
 	active = true
 	#Configure the ore Vein Size [Default: 9]
@@ -46,12 +46,12 @@
 	vein_size = 8
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 16
 
 ["Ore Config: diamond"]
 	#Maximum Y-Level [Range: 0-256, Default: 16]
 	#Range: 0 ~ 256
-	max_y = 16
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 1]
 	#Range: 0 ~ 64
 	count = 3
@@ -62,12 +62,12 @@
 	vein_size = 8
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 8
 
 ["Ore Config: emerald"]
 	#Maximum Y-Level [Range: 0-256, Default: 128]
 	#Range: 0 ~ 256
-	max_y = 128
+	max_y = 32
 	#Average ores per Chunk [Range: 0-64, Default: 1]
 	#Range: 0 ~ 64
 	count = 1
@@ -78,12 +78,12 @@
 	vein_size = 6
 	#Minimum Y-Level [Range: 0-256, Default: 64]
 	#Range: 0 ~ 256
-	min_y = 64
+	min_y = 96
 
 ["Ore Config: lapis"]
 	#Maximum Y-Level [Range: 0-256, Default: 16]
 	#Range: 0 ~ 256
-	max_y = 16
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 2]
 	#Range: 0 ~ 64
 	count = 4
@@ -94,12 +94,12 @@
 	vein_size = 7
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 8
 
 ["Ore Config: redstone"]
 	#Maximum Y-Level [Range: 0-256, Default: 16]
 	#Range: 0 ~ 256
-	max_y = 16
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 9
@@ -110,12 +110,12 @@
 	vein_size = 14
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 8
 
 ["Ore Config: copper"]
 	#Maximum Y-Level [Range: 0-256, Default: 60]
 	#Range: 0 ~ 256
-	max_y = 60
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 20]
 	#Range: 0 ~ 64
 	count = 20
@@ -126,12 +126,12 @@
 	vein_size = 7
 	#Minimum Y-Level [Range: 0-256, Default: 45]
 	#Range: 0 ~ 256
-	min_y = 45
+	min_y = 52
 
 ["Ore Config: aluminum"]
 	#Maximum Y-Level [Range: 0-256, Default: 70]
 	#Range: 0 ~ 256
-	max_y = 70
+	max_y = 10
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 8
@@ -142,12 +142,12 @@
 	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 50]
 	#Range: 0 ~ 256
-	min_y = 50
+	min_y = 60
 
 ["Ore Config: silver"]
 	#Maximum Y-Level [Range: 0-256, Default: 38]
 	#Range: 0 ~ 256
-	max_y = 38
+	max_y = 4
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 8
@@ -158,12 +158,12 @@
 	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 30]
 	#Range: 0 ~ 256
-	min_y = 30
+	min_y = 34
 
 ["Ore Config: lead"]
 	#Maximum Y-Level [Range: 0-256, Default: 40]
 	#Range: 0 ~ 256
-	max_y = 40
+	max_y = 4
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 8
@@ -174,12 +174,12 @@
 	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 32]
 	#Range: 0 ~ 256
-	min_y = 32
+	min_y = 36
 
 ["Ore Config: nickel"]
 	#Maximum Y-Level [Range: 0-256, Default: 40]
 	#Range: 0 ~ 256
-	max_y = 40
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 8
@@ -190,12 +190,12 @@
 	vein_size = 4
 	#Minimum Y-Level [Range: 0-256, Default: 25]
 	#Range: 0 ~ 256
-	min_y = 25
+	min_y = 32
 
 ["Ore Config: uranium"]
 	#Maximum Y-Level [Range: 0-256, Default: 20]
 	#Range: 0 ~ 256
-	max_y = 20
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 4]
 	#Range: 0 ~ 64
 	count = 6
@@ -206,12 +206,12 @@
 	vein_size = 6
 	#Minimum Y-Level [Range: 0-256, Default: 5]
 	#Range: 0 ~ 256
-	min_y = 5
+	min_y = 12
 
 ["Ore Config: osmium"]
 	#Maximum Y-Level [Range: 0-256, Default: 45]
 	#Range: 0 ~ 256
-	max_y = 45
+	max_y = 12
 	#Average ores per Chunk [Range: 0-64, Default: 20]
 	#Range: 0 ~ 64
 	count = 17
@@ -222,12 +222,12 @@
 	vein_size = 6
 	#Minimum Y-Level [Range: 0-256, Default: 20]
 	#Range: 0 ~ 256
-	min_y = 20
+	min_y = 32
 
 ["Ore Config: tin"]
 	#Maximum Y-Level [Range: 0-256, Default: 55]
 	#Range: 0 ~ 256
-	max_y = 55
+	max_y = 7
 	#Average ores per Chunk [Range: 0-64, Default: 20]
 	#Range: 0 ~ 64
 	count = 20
@@ -238,12 +238,12 @@
 	vein_size = 7
 	#Minimum Y-Level [Range: 0-256, Default: 40]
 	#Range: 0 ~ 256
-	min_y = 40
+	min_y = 47
 
 ["Ore Config: zinc"]
 	#Maximum Y-Level [Range: 0-256, Default: 50]
 	#Range: 0 ~ 256
-	max_y = 50
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 9
@@ -254,12 +254,12 @@
 	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 35]
 	#Range: 0 ~ 256
-	min_y = 35
+	min_y = 42
 
 ["Ore Config: certus_quartz"]
 	#Maximum Y-Level [Range: 0-256, Default: 64]
 	#Range: 0 ~ 256
-	max_y = 64
+	max_y = 32
 	#Average ores per Chunk [Range: 0-64, Default: 16]
 	#Range: 0 ~ 64
 	count = 16
@@ -270,12 +270,12 @@
 	vein_size = 8
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 32
 
 ["Ore Config: charged_certus_quartz"]
 	#Maximum Y-Level [Range: 0-256, Default: 32]
 	#Range: 0 ~ 256
-	max_y = 32
+	max_y = 16
 	#Average ores per Chunk [Range: 0-64, Default: 8]
 	#Range: 0 ~ 64
 	count = 8
@@ -286,12 +286,12 @@
 	vein_size = 4
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 16
 
 ["Ore Config: fluorite"]
 	#Maximum Y-Level [Range: 0-256, Default: 32]
 	#Range: 0 ~ 256
-	max_y = 32
+	max_y = 16
 	#Average ores per Chunk [Range: 0-64, Default: 6]
 	#Range: 0 ~ 64
 	count = 6
@@ -302,12 +302,12 @@
 	vein_size = 12
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 16
 
 ["Ore Config: bitumen"]
 	#Maximum Y-Level [Range: 0-256, Default: 160]
 	#Range: 0 ~ 256
-	max_y = 160
+	max_y = 60
 	#Average ores per Chunk [Range: 0-64, Default: 25]
 	#Range: 0 ~ 64
 	count = 2
@@ -318,7 +318,7 @@
 	vein_size = 18
 	#Minimum Y-Level [Range: 0-256, Default: 40]
 	#Range: 0 ~ 256
-	min_y = 40
+	min_y = 100
 
 #World Gen - Ore Generation on Strata Stone Type
 ["Stratum Config: minecraft_stone"]
@@ -351,7 +351,7 @@
 ["Ore Config: cinnabar"]
 	#Maximum Y-Level [Range: 0-256, Default: 16]
 	#Range: 0 ~ 256
-	max_y = 15
+	max_y = 6
 	#Average ores per Chunk [Range: 0-64, Default: 4]
 	#Range: 0 ~ 64
 	count = 4
@@ -362,12 +362,12 @@
 	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 5
+	min_y = 10
 
 ["Ore Config: apatite"]
 	#Maximum Y-Level [Range: 0-256, Default: 16]
 	#Range: 0 ~ 256
-	max_y = 128
+	max_y = 32
 	#Average ores per Chunk [Range: 0-64, Default: 2]
 	#Range: 0 ~ 64
 	count = 2
@@ -378,12 +378,12 @@
 	vein_size = 22
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 64
+	min_y = 96
 
 ["Ore Config: sulfur"]
 	#Maximum Y-Level [Range: 0-256, Default: 40]
 	#Range: 0 ~ 256
-	max_y = 15
+	max_y = 8
 	#Average ores per Chunk [Range: 0-64, Default: 3]
 	#Range: 0 ~ 64
 	count = 3
@@ -394,12 +394,12 @@
 	vein_size = 7
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 0
+	min_y = 8
 
 ["Ore Config: potassium_nitrate"]
 	#Maximum Y-Level [Range: 0-256, Default: 24]
 	#Range: 0 ~ 256
-	max_y = 32
+	max_y = 7
 	#Average ores per Chunk [Range: 0-64, Default: 3]
 	#Range: 0 ~ 64
 	count = 4
@@ -410,12 +410,12 @@
 	vein_size = 5
 	#Minimum Y-Level [Range: 0-256, Default: 0]
 	#Range: 0 ~ 256
-	min_y = 18
+	min_y = 25
 
 ["Ore Config: arcane"]
 	#Maximum Y-Level [Range: 0-256, Default: 45]
 	#Range: 0 ~ 256
-	max_y = 45
+	max_y = 13
 	#Average ores per Chunk [Range: 0-64, Default: 5]
 	#Range: 0 ~ 64
 	count = 5
@@ -426,5 +426,5 @@
 	vein_size = 6
 	#Minimum Y-Level [Range: 0-256, Default: 20]
 	#Range: 0 ~ 256
-	min_y = 20
+	min_y = 33
 

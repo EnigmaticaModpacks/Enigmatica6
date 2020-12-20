@@ -17,7 +17,7 @@ events.listen('block.tags', function (event) {
     event.get('forge:stones/diorite').add(['minecraft:diorite', 'minecraft:polished_diorite']);
     event.get('forge:stones/andesite').add(['minecraft:andesite', 'minecraft:polished_andesite']);
 
-    // createStoneTypes.forEach(function (stone) {
-    //     event.get('forge:stones/' + stone).add('create:' + stone);
-    // });
+    createStoneTypes.forEach(function (stone) {
+        event.get('forge:stones/' + stone).add('create:' + stone);
+    });
 });

@@ -1,23 +1,11 @@
 {
 	id: 1258,
-	title: "Rare Thermal Series Lootbox",
-	icon: "aquaculture:lockbox",
+	title: "Rare Thermal Series Loot Box",
+	icon: "kubejs:rare_lootbox",
 	loot_size: 1,
 	hide_tooltip: true,
 	use_title: true,
 	rewards: [
-		{
-			item: "thermal:signalum_coin",
-			count: 16
-		},
-		{
-			item: "thermal:enderium_coin",
-			count: 16
-		},
-		{
-			item: "thermal:earth_grenade",
-			count: 16
-		},
 		{
 			item: "thermal:machine_frame",
 			count: 2
@@ -25,6 +13,13 @@
 		{
 			item: "thermal:rubber",
 			count: 8
+		},
+		{
+			item: "thermal:obsidian_glass",
+			count: 4
+		},
+		{
+			item: "thermal:upgrade_augment_2"
 		}
 	]
 }

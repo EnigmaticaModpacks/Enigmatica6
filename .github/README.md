@@ -25,13 +25,37 @@ Note: You do not have to use the below setup method, you can use the available f
 
 Follow these steps to setup your workspace/server:
 
-## Windows / Mac
+## Windows - MultiMC
 
-1) Download the [Twitch App](https://www.twitch.tv/downloads) if you haven't already.
-2) Fork and clone the Enigmatica 6 repository to the Instances folder of the Twitch App, the default path is `C:\Users\User\Documents\Twitch\Minecraft\Instances`
+1) Download [MultiMC](https://multimc.org/#Download) if you haven't already. Also [Git for Windows](https://git-scm.com/download/win).
+2) Open MultiMC.
+3) Click Add Instance, choose Minecraft 1.16.4, click Ok. (Or the lastest version mods are dependant on)
+4) Click Edit Instance. (right hand side)
+5) Click Install Forge, pick the latest version. (right hand side)
+6) Fork and clone the Enigmatica 6 repository to your GitHub profile.
+7) Open the folder of the MultiMC Instance you made (step 1-5), and go into the .minecraft folder 
+8) Depending on how Git was installed, "Git Bash Here" should show up when right-clicking inside the .minecraft folder. Open and use the following commands:
+
+```
+git init                                              # Initialize git in folder
+git remote add origin URLToYourEnigmaticaFork.git     # Set remote origin to your Enigmatica fork
+git remote -v                                         # Verify remote
+git fetch
+git pull
+```
+
+9) Now double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+10) One more `git pull`
+
+Tip: If you run into issues, verifying you are using the right Minecraft and Forge version in your MultiMC instance!
+
+## Windows / Mac - Twitch
+
+1) Download the [CurseForge App](https://curseforge.overwolf.com/) if you haven't already.
+2) Fork and clone the Enigmatica 6 repository to the Instances folder of the CurseForge App, the default path is `C:\Users\User\Documents\Curse\Minecraft\Instances`. If you previously used Twitch for modpacks the path will most likely be `C:\Users\User\Documents\Twitch\Minecraft\Instances`.
 3) Double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
 4) Pull.
-5) Open the Twitch App, go to Mods > Minecraft, and you should see Enigmatica 6. If you already had Twitch App open, restart it.
+5) Open the CurseForge App, go to Minecraft -> My Modpacks, and you should see Enigmatica 6. If you already had CurseForge App open, restart it.
 
 You're done!
 

@@ -60,6 +60,18 @@
 		containerClass = "blusunrize.immersiveengineering.common.gui.CraftingTableContainer"
 		sortRange = ""
 
+	[[sorting.containerOverrides]]
+		containerClass = "se.mickelus.tetra.blocks.workbench.WorkbenchContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mcjty.rftoolsstorage.modules.scanner.blocks.StorageScannerContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "mcjty.rftoolsstorage.modules.modularstorage.blocks.ModularStorageContainer"
+		sortRange = ""
+
 	#Categor(y/ies) for sorting
 	#
 	#name: the name of the category

@@ -1,7 +1,7 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 16,
+	order_index: 22,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
@@ -92,7 +92,7 @@
 			y: -12.0d,
 			subtitle: "Tire-Toi Une Bûche",
 			description: [
-				"The Ritual of the Forest is the basis for all magic to come. It draws it's power from the sacrifice of life at the heart of the ritual.",
+				"The Ritual of the Forest is the basis for all magic to come. It draws its power from the sacrifice of life at the heart of the ritual.",
 				"",
 				"Place your sapling last to prevent it from growing before the rest of the ritual is prepared.",
 				"",
@@ -109,7 +109,7 @@
 			rewards: [{
 				id: 858,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -124,11 +124,18 @@
 				type: "item",
 				item: "naturesaura:gold_leaf"
 			}],
-			rewards: [{
-				id: 860,
-				type: "loot",
-				table: 15
-			}]
+			rewards: [
+				{
+					id: 860,
+					type: "loot",
+					table: 51
+				},
+				{
+					id: 2675,
+					type: "loot",
+					table: 13
+				}
+			]
 		},
 		{
 			x: -0.5d,
@@ -146,11 +153,18 @@
 				type: "item",
 				item: "naturesaura:gold_fiber"
 			}],
-			rewards: [{
-				id: 859,
-				type: "loot",
-				table: 15
-			}]
+			rewards: [
+				{
+					id: 859,
+					type: "loot",
+					table: 51
+				},
+				{
+					id: 2674,
+					type: "loot",
+					table: 11
+				}
+			]
 		},
 		{
 			icon: "naturesaura:offering_table",
@@ -168,7 +182,7 @@
 			rewards: [{
 				id: 883,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -181,7 +195,9 @@
 				"",
 				"Recipes displaying a green aura bottle will be crafted on the altar built in the Overworld, while those with a red aura bottle must be performed on the Nether counterpart.",
 				"",
-				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure."
+				"Refer to the Book of Natural Aura's section on the Natural Altar and the Crimson Altar for a preview of the required structure.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
 			dependencies: [I;703],
 			dependency_requirement: "all_started",
@@ -220,7 +236,7 @@
 			rewards: [{
 				id: 1186,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -261,7 +277,7 @@
 				{
 					id: 864,
 					type: "loot",
-					table: 15
+					table: 51
 				}
 			]
 		},
@@ -280,7 +296,7 @@
 			rewards: [{
 				id: 886,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -301,7 +317,7 @@
 			rewards: [{
 				id: 884,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -319,7 +335,7 @@
 			rewards: [{
 				id: 885,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -360,7 +376,7 @@
 				{
 					id: 865,
 					type: "loot",
-					table: 15
+					table: 51
 				}
 			]
 		},
@@ -385,11 +401,19 @@
 				type: "item",
 				item: "naturesaura:ancient_sapling"
 			}],
-			rewards: [{
-				id: 873,
-				type: "loot",
-				table: 15
-			}]
+			rewards: [
+				{
+					id: 873,
+					type: "loot",
+					table: 18
+				},
+				{
+					id: 1794,
+					type: "item",
+					item: "naturesaura:ancient_log",
+					count: 32
+				}
+			]
 		},
 		{
 			x: 0.0d,
@@ -410,7 +434,7 @@
 			rewards: [{
 				id: 881,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -433,7 +457,7 @@
 				id: 857,
 				type: "item",
 				item: "naturesaura:gold_leaf",
-				count: 8
+				count: 32
 			}]
 		},
 		{
@@ -455,7 +479,7 @@
 			rewards: [{
 				id: 888,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -473,7 +497,7 @@
 			rewards: [{
 				id: 887,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -495,7 +519,7 @@
 			rewards: [{
 				id: 871,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -521,7 +545,17 @@
 					id: "naturesaura:infused_iron_pickaxe",
 					Count: true,
 					tag: {
-						Damage: 0
+						Damage: 0,
+						Enchantments: [
+							{
+								lvl: 5s,
+								id: "minecraft:unbreaking"
+							},
+							{
+								lvl: 5s,
+								id: "minecraft:fortune"
+							}
+						]
 					}
 				}
 			}]
@@ -541,7 +575,7 @@
 			rewards: [{
 				id: 880,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -559,7 +593,7 @@
 			rewards: [{
 				id: 882,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -581,7 +615,7 @@
 			rewards: [{
 				id: 879,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -608,7 +642,7 @@
 			rewards: [{
 				id: 878,
 				type: "loot",
-				table: 16
+				table: 52
 			}]
 		},
 		{
@@ -644,7 +678,9 @@
 				"",
 				"Refer to the Book of Natural Aura for specific instructions on building the ritual.",
 				"",
-				"Once built, simply throw down the reagents atop the altar. If there's enough Aura, the ritual will proceed automatically."
+				"Once built, simply throw down the reagents atop the altar. If there's enough Aura, the ritual will proceed automatically.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
 			hide_dependency_lines: true,
 			dependencies: [I;
@@ -746,7 +782,7 @@
 			rewards: [{
 				id: 866,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -773,7 +809,7 @@
 			rewards: [{
 				id: 853,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -796,7 +832,7 @@
 			rewards: [{
 				id: 854,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -896,7 +932,7 @@
 			rewards: [{
 				id: 869,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -918,7 +954,7 @@
 			rewards: [{
 				id: 877,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -936,7 +972,7 @@
 			rewards: [{
 				id: 876,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -954,7 +990,7 @@
 			rewards: [{
 				id: 872,
 				type: "loot",
-				table: 15
+				table: 51
 			}]
 		},
 		{
@@ -969,6 +1005,11 @@
 				id: 795,
 				type: "checkmark",
 				title: "Delving Deeper"
+			}],
+			rewards: [{
+				id: 2147,
+				type: "xp_levels",
+				xp_levels: 5
 			}]
 		},
 		{
@@ -1058,7 +1099,7 @@
 				{
 					id: 870,
 					type: "loot",
-					table: 16
+					table: 52
 				}
 			]
 		}

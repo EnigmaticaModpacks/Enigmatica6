@@ -1,16 +1,17 @@
-// events.listen('item.registry', function (event) {
-//     for (var i = 0; i < materials.length; i++) {
-//         for (var j = 0; j < materials[i].itemParts.length; j++) {
-//             var materialName = materials[i].name;
-//             var itemPart = materials[i].itemParts[j];
-//             var registryName = materialName + '_' + itemPart;
+events.listen('item.registry', function (event) {
+    const items = [
+        'rare_lootbox',
+        'epic_lootbox',
+        'legendary_lootbox',
+        'miners_delight',
+        'sorcerers_delight',
+        'farmers_delight',
+        'blacksmiths_delight',
+        'scavengers_delight',
+        'alchemists_delight'
+    ];
 
-//             event
-//                 .create(registryName)
-//                 .group('KubeJS')
-//                 .color(0, materials[i].color)
-//                 .texture('kubejs:item/' + itemPart)
-//                 .add();
-//         }
-//     }
-// });
+    items.forEach((item) => {
+        event.create(item).group('KubeJS').texture(`kubejs:item/${item}`).add();
+    });
+});

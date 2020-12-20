@@ -2,4 +2,10 @@
 dumpPacket = false
 #Write statistics of the recipe packet size to the log
 logPacketStats = true
+#Controls different levels of debug output that can be useful for debugging issues
+#Range: 0 ~ 2
+debugLogLevel = 0
+#Set to true to serialize and deserialize the recipe packet even in singleplayer.
+#This is useless for anything but debugging issues
+runSerializerInSingleplayer = false
 

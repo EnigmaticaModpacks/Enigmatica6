@@ -13,8 +13,6 @@ events.listen('block.tags', function (event) {
         ]);
     event.get('forge:ores/nether/gold').add('minecraft:nether_gold_ore');
     event.get('forge:ores/arcane').add('ars_nouveau:arcane_ore');
-    // event.get('forge:ores').add('create:zinc_ore');
     // event.get('forge:ores').add('occultism:iesnium_ore');
     //event.get('forge:ores/yellorium').add('bigreactors:yellorite_ore');
 });
-

@@ -16,7 +16,8 @@ screenshots/
 /data/
 /ct_dumps/
 /classes/
-
+/kubejs/exported
+/ESM/
 # Utilities
 .github_changelog_generator
 github_changelog_generator.gemspec
@@ -103,7 +104,7 @@ config/extremesoundmuffler-client.toml
 config/mininggadgets-client.toml
 config/pneumaticcraft/ArmorFeatureStatus.cfg
 config/pneumaticcraft/PneumaticArmorHUDLayout.cfg
-config/defaultoptions/options.txt
+!config/defaultoptions/options.txt
 .vote2020_marker
 config/jei-client.toml
 config/refinedstorage-client.toml
@@ -139,3 +140,8 @@ config/rftoolsstorage-client.toml
 config/rftoolscontrol-client.toml
 config/rftoolsbuilder-client.toml
 config/ambientsounds-client.json
+config/mythicbotany-client.toml
+config/farmersdelight-client.toml
+config/rftoolspower-client.toml
+config/astralsorcery-client.toml
+config/create-client.toml

@@ -1,0 +1,46 @@
+{
+	id: 2031,
+	title: "Epic Blood Magic Loot Box",
+	icon: "kubejs:epic_lootbox",
+	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "bloodmagic:speedrune",
+			count: 4
+		},
+		{
+			item: "bloodmagic:sacrificerune",
+			count: 4
+		},
+		{
+			item: "bloodmagic:selfsacrificerune",
+			count: 4
+		},
+		{
+			item: "bloodmagic:altarcapacityrune",
+			count: 4
+		},
+		{
+			item: "bloodmagic:bettercapacityrune",
+			count: 4
+		},
+		{
+			item: "bloodmagic:ritualstone",
+			count: 24
+		},
+		{
+			item: "bloodmagic:stonebrickpath",
+			count: 12
+		},
+		{
+			item: "bloodmagic:woodbrickpath",
+			count: 12
+		},
+		{
+			item: "bloodmagic:wornstonebrickpath",
+			count: 12
+		}
+	]
+}

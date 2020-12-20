@@ -7,7 +7,7 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider"]
 	"Use Anti Overlap" = true
 	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
 	"Hack Stonecutter Shift Click" = true
@@ -103,7 +103,7 @@
 	Thatch = true
 	"Variant Chests" = true
 	"Variant Ladders" = true
-	"Vertical Slabs" = false
+	"Vertical Slabs" = true
 	Shingles = true
 	"Nether Brick Fence Gate" = true
 	"Item Frames" = true
@@ -210,6 +210,7 @@
 	"F To Switch" = true
 	"Hotbar Changer" = true
 	"Item Sharing" = true
+	"Right Click Armor" = true
 	"Easy Transfering" = true
 
 	[management.inventory_sorting]
@@ -222,6 +223,7 @@
 
 [tools]
 	Pickarang = true
+	"Seed Pouch" = true
 	"Pathfinder Maps" = true
 	"Bottled Cloud" = true
 	"Color Runes" = true
@@ -268,6 +270,10 @@
 		Customs = []
 		"Xp From Trade" = 5
 
+	[tools.seed_pouch]
+		"Show All Variants In Creative" = true
+		"Max Items" = 640
+
 	[tools.color_runes]
 		"Jungle Temple Weight" = 8
 		"Desert Temple Weight" = 8
@@ -307,6 +313,7 @@
 	"Reacharound Placing" = true
 	"Villagers Follow Emeralds" = true
 	"Compasses Work Everywhere" = false
+	"Skull Pikes" = true
 	"Note Block Mob Sounds" = true
 	"Double Door Opening" = true
 	"Automatic Recipe Unlock" = true
@@ -337,6 +344,9 @@
 
 	[tweaks.hoe_harvesting]
 		"Hoes Can Have Fortune" = true
+
+	[tweaks.skull_pikes]
+		"Pike Range" = 5.0
 
 	[tweaks.infinity_bucket]
 		#Set this to false to prevent dispensers from using infinite water buckets
@@ -427,30 +437,31 @@
 		"Max Bounces" = 1
 
 [world]
-	"Realistic World Gen" = true
 	"New Stone Types" = true
 	"Lush Underground Biome" = true
 	"Big Dungeon" = true
 	Speleothems = true
-	Biotite = false
-	"Big Stone Clusters" = true
 	"Elder Prismarine Underground Biome" = true
-	"Brimstone Underground Biome" = true
 	"Blossom Trees" = true
 	"Sandstone Underground Biome" = true
-	"Cave Crystal Underground Biome" = true
 	"Glowshroom Underground Biome" = true
-	"Overgrown Underground Biome" = true
-	"Cave Roots" = false
 	"Permafrost Underground Biome" = true
 	"Underground Clay" = true
 	"Slime Underground Biome" = true
-	"Spider Nest Underground Biome" = true
 	"Fairy Rings" = true
-	"Monster Box" = true
 	Crevices = false
 	"Nether Obsidian Spikes" = true
 	"Mega Caves" = true
+	"Realistic World Gen" = true
+	Biotite = false
+	"Big Stone Clusters" = true
+	"Brimstone Underground Biome" = true
+	"Cave Crystal Underground Biome" = true
+	"Spiral Spires" = true
+	"Overgrown Underground Biome" = true
+	"Cave Roots" = false
+	"Spider Nest Underground Biome" = true
+	"Monster Box" = true
 
 	[world.monster_box]
 		#The chance for the monster box generator to try and place one in a chunk, 1 is 100%
@@ -465,6 +476,462 @@
 		[world.monster_box.dimensions]
 			Dimensions = ["minecraft:overworld"]
 			"Is Blacklist" = false
+
+	[world.cave_crystal_underground_biome]
+		#The chance that a crystal can grow, this is on average 1 in X world ticks, set to a higher value to make them grow slower. Minimum is 1, for every tick. Set to 0 to disable growth.
+		"Cave Crystal Growth Chance" = 5
+		"Crystals Grow In Lava" = false
+		#Allowed values: [0,1]
+		"Crystal Spawn Chance" = 0.025
+		"Crystals Craft Runes" = true
+
+		[world.cave_crystal_underground_biome.biome_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 42
+			#Allowed values: [0,)
+			Rarity = 400
+			#Allowed values: [0,255]
+			"Min Y Level" = 0
+			#Allowed values: [0,)
+			"Horizontal Variation" = 22
+			#Allowed values: [0,255]
+			"Max Y Level" = 64
+			#Allowed values: [0,)
+			"Vertical Size" = 18
+			#Allowed values: [0,)
+			"Vertical Variation" = 8
+
+			[world.cave_crystal_underground_biome.biome_settings.biomes]
+				"Is Blacklist" = true
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["ocean"]
+
+			[world.cave_crystal_underground_biome.biome_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+	[world.speleothems]
+		"Tries Per Chunk In Nether" = 4
+		"Speleothems Per Chunk In Nether" = 12
+		"Speleothems Per Chunk" = 12
+		"Max Ylevel" = 55
+		"Tries Per Chunk" = 60
+
+		[world.speleothems.dimensions]
+			Dimensions = []
+			"Is Blacklist" = true
+
+	[world.sandstone_underground_biome]
+
+		[world.sandstone_underground_biome.biome_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 26
+			#Allowed values: [0,)
+			Rarity = 80
+			#Allowed values: [0,255]
+			"Min Y Level" = 0
+			#Allowed values: [0,)
+			"Horizontal Variation" = 14
+			#Allowed values: [0,255]
+			"Max Y Level" = 64
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Vertical Variation" = 6
+
+			[world.sandstone_underground_biome.biome_settings.biomes]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["desert"]
+
+			[world.sandstone_underground_biome.biome_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+	[world.spiral_spires]
+		Radius = 15
+		Rarity = 200
+		#Set to 0 to turn off Myalite Conduits
+		"Myalite Conduit Distance" = 24
+		"Renewable Myalite" = true
+
+		[world.spiral_spires.biomes]
+			Biomes = ["minecraft:end_highlands"]
+			"Is Blacklist" = false
+
+		[world.spiral_spires.dimensions]
+			Dimensions = ["minecraft:the_end"]
+			"Is Blacklist" = false
+
+	[world.nether_obsidian_spikes]
+		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
+		"Chance Per Chunk" = 0.1
+		"Big Spike Spawners" = true
+		#Should a chunk have spikes, how many would the generator try to place
+		"Tries Per Chunk" = 4
+		#The chance for a spike to be big (1 is 100%, 0 is 0%)
+		"Big Spike Chance" = 0.03
+
+		[world.nether_obsidian_spikes.dimensions]
+			Dimensions = ["minecraft:the_nether"]
+			"Is Blacklist" = false
+
+	[world.biotite]
+		"Clusters Per Dragon Tick" = 16
+		"Generate On Dragon Death" = true
+		"Dragon Ticks Per Cluster" = 1
+		"Generate Naturally" = false
+
+		[world.biotite.dimensions]
+			Dimensions = ["minecraft:the_end"]
+			"Is Blacklist" = false
+
+		[world.biotite.ore_settings]
+			#Allowed values: [0,255]
+			"Max Height" = 64
+			#Allowed values: [0,)
+			"Cluster Count" = 16
+			#Allowed values: [0,255]
+			"Min Height" = 1
+			#Allowed values: [0,)
+			"Cluster Size" = 14
+
+	[world.crevices]
+
+		[world.crevices.spawn_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 60
+			#Allowed values: [0,)
+			Rarity = 120
+			#Allowed values: [0,255]
+			"Min Y Level" = 15
+			#Allowed values: [0,)
+			"Horizontal Variation" = 20
+			#Allowed values: [0,255]
+			"Max Y Level" = 50
+			#Allowed values: [0,)
+			"Vertical Size" = 4
+			#Allowed values: [0,)
+			"Vertical Variation" = 1
+
+			[world.crevices.spawn_settings.biomes]
+				"Is Blacklist" = true
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["ocean", "beach"]
+
+			[world.crevices.spawn_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.crevices.dimensions]
+			Dimensions = ["minecraft:overworld"]
+			"Is Blacklist" = false
+
+	[world.cave_roots]
+		"Min Y" = 16
+		"Chunk Attempts" = 300
+		"Max Y" = 52
+		"Enable Brewing" = true
+
+		[world.cave_roots.dimensions]
+			Dimensions = ["minecraft:overworld"]
+			"Is Blacklist" = false
+
+	[world.new_stone_types]
+		"Enable Marble" = true
+		"Enable Jasper" = true
+		"Enable Voidstone" = true
+		"Enable Slate" = true
+		"Enable Limestone" = true
+
+		[world.new_stone_types.marble]
+
+			[world.new_stone_types.marble.oregen]
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Count" = 2
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,)
+				"Cluster Size" = 32
+
+			[world.new_stone_types.marble.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.new_stone_types.limestone]
+
+			[world.new_stone_types.limestone.oregen]
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Count" = 2
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,)
+				"Cluster Size" = 32
+
+			[world.new_stone_types.limestone.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.new_stone_types.voidstone]
+
+			[world.new_stone_types.voidstone.oregen]
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Count" = 0
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,)
+				"Cluster Size" = 33
+
+			[world.new_stone_types.voidstone.dimensions]
+				Dimensions = ["minecraft:the_nether"]
+				"Is Blacklist" = false
+
+		[world.new_stone_types.slate]
+
+			[world.new_stone_types.slate.oregen]
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Count" = 2
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,)
+				"Cluster Size" = 32
+
+			[world.new_stone_types.slate.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.new_stone_types.jasper]
+
+			[world.new_stone_types.jasper.oregen]
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Count" = 2
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,)
+				"Cluster Size" = 32
+
+			[world.new_stone_types.jasper.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+	[world.spider_nest_underground_biome]
+		"Enabled Wrapped" = true
+
+		[world.spider_nest_underground_biome.biome_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 26
+			#Allowed values: [0,)
+			Rarity = 80
+			#Allowed values: [0,255]
+			"Min Y Level" = 0
+			#Allowed values: [0,)
+			"Horizontal Variation" = 14
+			#Allowed values: [0,255]
+			"Max Y Level" = 64
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Vertical Variation" = 6
+
+			[world.spider_nest_underground_biome.biome_settings.biomes]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["plains"]
+
+			[world.spider_nest_underground_biome.biome_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+	[world.blossom_trees]
+
+		[world.blossom_trees.orange]
+			Rarity = 200
+
+			[world.blossom_trees.orange.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+			[world.blossom_trees.orange.biome_types]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["savanna"]
+
+		[world.blossom_trees.pink]
+			Rarity = 200
+
+			[world.blossom_trees.pink.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+			[world.blossom_trees.pink.biome_types]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["extreme_hills"]
+
+		[world.blossom_trees.blue]
+			Rarity = 200
+
+			[world.blossom_trees.blue.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+			[world.blossom_trees.blue.biome_types]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["icy"]
+
+		[world.blossom_trees.yellow]
+			Rarity = 200
+
+			[world.blossom_trees.yellow.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+			[world.blossom_trees.yellow.biome_types]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["plains"]
+
+		[world.blossom_trees.lavender]
+			Rarity = 200
+
+			[world.blossom_trees.lavender.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+			[world.blossom_trees.lavender.biome_types]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["swamp"]
+
+	[world.mega_caves]
+
+		[world.mega_caves.spawn_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 80
+			#Allowed values: [0,)
+			Rarity = 800
+			#Allowed values: [0,255]
+			"Min Y Level" = 10
+			#Allowed values: [0,)
+			"Horizontal Variation" = 30
+			#Allowed values: [0,255]
+			"Max Y Level" = 20
+			#Allowed values: [0,)
+			"Vertical Size" = 25
+			#Allowed values: [0,)
+			"Vertical Variation" = 10
+
+			[world.mega_caves.spawn_settings.biomes]
+				"Is Blacklist" = true
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["ocean", "beach"]
+
+			[world.mega_caves.spawn_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.mega_caves.dimensions]
+			Dimensions = ["minecraft:overworld"]
+			"Is Blacklist" = false
+
+	[world.elder_prismarine_underground_biome]
+		#Allowed values: [0,1]
+		"Lantern Chance" = 0.0085
+		#Allowed values: [0,1]
+		"Water Chance" = 0.25
+
+		[world.elder_prismarine_underground_biome.biome_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 26
+			#Allowed values: [0,)
+			Rarity = 200
+			#Allowed values: [0,255]
+			"Min Y Level" = 0
+			#Allowed values: [0,)
+			"Horizontal Variation" = 14
+			#Allowed values: [0,255]
+			"Max Y Level" = 64
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Vertical Variation" = 6
+
+			[world.elder_prismarine_underground_biome.biome_settings.biomes]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["ocean"]
+
+			[world.elder_prismarine_underground_biome.biome_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+	[world.glowshroom_underground_biome]
+		#Allowed values: [0,1]
+		"Glowshroom Spawn Chance" = 0.0625
+		#Allowed values: (0,)
+		"Glowshroom Growth Rate" = 20
+		"Enable Danger Sight" = true
+		"Enable Huge Glowshrooms" = true
+
+		[world.glowshroom_underground_biome.biome_settings]
+			#Allowed values: [0,)
+			"Horizontal Size" = 26
+			#Allowed values: [0,)
+			Rarity = 80
+			#Allowed values: [0,255]
+			"Min Y Level" = 0
+			#Allowed values: [0,)
+			"Horizontal Variation" = 14
+			#Allowed values: [0,255]
+			"Max Y Level" = 64
+			#Allowed values: [0,)
+			"Vertical Size" = 14
+			#Allowed values: [0,)
+			"Vertical Variation" = 6
+
+			[world.glowshroom_underground_biome.biome_settings.biomes]
+				"Is Blacklist" = false
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["extreme_hills", "mushroom"]
+
+			[world.glowshroom_underground_biome.biome_settings.dimensions]
+				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
 
 	[world.big_stone_clusters]
 		#Blocks that stone clusters can replace. If you want to make it so it only replaces in one dimension,
@@ -695,41 +1162,6 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-	[world.cave_crystal_underground_biome]
-		#The chance that a crystal can grow, this is on average 1 in X world ticks, set to a higher value to make them grow slower. Minimum is 1, for every tick. Set to 0 to disable growth.
-		"Cave Crystal Growth Chance" = 5
-		"Crystals Grow In Lava" = false
-		#Allowed values: [0,1]
-		"Crystal Spawn Chance" = 0.025
-		"Crystals Craft Runes" = true
-
-		[world.cave_crystal_underground_biome.biome_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 42
-			#Allowed values: [0,)
-			Rarity = 400
-			#Allowed values: [0,255]
-			"Min Y Level" = 0
-			#Allowed values: [0,)
-			"Horizontal Variation" = 22
-			#Allowed values: [0,255]
-			"Max Y Level" = 64
-			#Allowed values: [0,)
-			"Vertical Size" = 18
-			#Allowed values: [0,)
-			"Vertical Variation" = 8
-
-			[world.cave_crystal_underground_biome.biome_settings.biomes]
-				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean"]
-
-			[world.cave_crystal_underground_biome.biome_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
 	[world.overgrown_underground_biome]
 
 		[world.overgrown_underground_biome.biome_settings]
@@ -758,17 +1190,6 @@
 			[world.overgrown_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
-
-	[world.speleothems]
-		"Tries Per Chunk In Nether" = 4
-		"Speleothems Per Chunk In Nether" = 12
-		"Speleothems Per Chunk" = 12
-		"Max Ylevel" = 55
-		"Tries Per Chunk" = 60
-
-		[world.speleothems.dimensions]
-			Dimensions = []
-			"Is Blacklist" = true
 
 	[world.permafrost_underground_biome]
 
@@ -799,101 +1220,6 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-	[world.sandstone_underground_biome]
-
-		[world.sandstone_underground_biome.biome_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 26
-			#Allowed values: [0,)
-			Rarity = 80
-			#Allowed values: [0,255]
-			"Min Y Level" = 0
-			#Allowed values: [0,)
-			"Horizontal Variation" = 14
-			#Allowed values: [0,255]
-			"Max Y Level" = 64
-			#Allowed values: [0,)
-			"Vertical Size" = 14
-			#Allowed values: [0,)
-			"Vertical Variation" = 6
-
-			[world.sandstone_underground_biome.biome_settings.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["desert"]
-
-			[world.sandstone_underground_biome.biome_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-	[world.nether_obsidian_spikes]
-		#The chance for a chunk to contain spikes (1 is 100%, 0 is 0%)
-		"Chance Per Chunk" = 0.1
-		"Big Spike Spawners" = true
-		#Should a chunk have spikes, how many would the generator try to place
-		"Tries Per Chunk" = 4
-		#The chance for a spike to be big (1 is 100%, 0 is 0%)
-		"Big Spike Chance" = 0.03
-
-		[world.nether_obsidian_spikes.dimensions]
-			Dimensions = ["minecraft:the_nether"]
-			"Is Blacklist" = false
-
-	[world.biotite]
-		"Clusters Per Dragon Tick" = 16
-		"Generate On Dragon Death" = true
-		"Dragon Ticks Per Cluster" = 1
-		"Generate Naturally" = false
-
-		[world.biotite.dimensions]
-			Dimensions = ["minecraft:the_end"]
-			"Is Blacklist" = false
-
-		[world.biotite.ore_settings]
-			#Allowed values: [0,255]
-			"Max Height" = 64
-			#Allowed values: [0,)
-			"Cluster Count" = 16
-			#Allowed values: [0,255]
-			"Min Height" = 1
-			#Allowed values: [0,)
-			"Cluster Size" = 14
-
-	[world.crevices]
-
-		[world.crevices.spawn_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 60
-			#Allowed values: [0,)
-			Rarity = 120
-			#Allowed values: [0,255]
-			"Min Y Level" = 15
-			#Allowed values: [0,)
-			"Horizontal Variation" = 20
-			#Allowed values: [0,255]
-			"Max Y Level" = 50
-			#Allowed values: [0,)
-			"Vertical Size" = 4
-			#Allowed values: [0,)
-			"Vertical Variation" = 1
-
-			[world.crevices.spawn_settings.biomes]
-				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean", "beach"]
-
-			[world.crevices.spawn_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-		[world.crevices.dimensions]
-			Dimensions = ["minecraft:overworld"]
-			"Is Blacklist" = false
-
 	[world.lush_underground_biome]
 
 		[world.lush_underground_biome.biome_settings]
@@ -920,133 +1246,6 @@
 				"Biome Categories" = ["jungle"]
 
 			[world.lush_underground_biome.biome_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-	[world.cave_roots]
-		"Min Y" = 16
-		"Chunk Attempts" = 300
-		"Max Y" = 52
-		"Enable Brewing" = true
-
-		[world.cave_roots.dimensions]
-			Dimensions = ["minecraft:overworld"]
-			"Is Blacklist" = false
-
-	[world.new_stone_types]
-		"Enable Marble" = true
-		"Enable Jasper" = true
-		"Enable Voidstone" = true
-		"Enable Slate" = true
-		"Enable Limestone" = true
-
-		[world.new_stone_types.marble]
-
-			[world.new_stone_types.marble.oregen]
-				#Allowed values: [0,255]
-				"Max Height" = 256
-				#Allowed values: [0,)
-				"Cluster Count" = 2
-				#Allowed values: [0,255]
-				"Min Height" = 0
-				#Allowed values: [0,)
-				"Cluster Size" = 32
-
-			[world.new_stone_types.marble.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-		[world.new_stone_types.limestone]
-
-			[world.new_stone_types.limestone.oregen]
-				#Allowed values: [0,255]
-				"Max Height" = 256
-				#Allowed values: [0,)
-				"Cluster Count" = 2
-				#Allowed values: [0,255]
-				"Min Height" = 0
-				#Allowed values: [0,)
-				"Cluster Size" = 32
-
-			[world.new_stone_types.limestone.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-		[world.new_stone_types.voidstone]
-
-			[world.new_stone_types.voidstone.oregen]
-				#Allowed values: [0,255]
-				"Max Height" = 256
-				#Allowed values: [0,)
-				"Cluster Count" = 0
-				#Allowed values: [0,255]
-				"Min Height" = 0
-				#Allowed values: [0,)
-				"Cluster Size" = 33
-
-			[world.new_stone_types.voidstone.dimensions]
-				Dimensions = ["minecraft:the_nether"]
-				"Is Blacklist" = false
-
-		[world.new_stone_types.slate]
-
-			[world.new_stone_types.slate.oregen]
-				#Allowed values: [0,255]
-				"Max Height" = 256
-				#Allowed values: [0,)
-				"Cluster Count" = 2
-				#Allowed values: [0,255]
-				"Min Height" = 0
-				#Allowed values: [0,)
-				"Cluster Size" = 32
-
-			[world.new_stone_types.slate.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-		[world.new_stone_types.jasper]
-
-			[world.new_stone_types.jasper.oregen]
-				#Allowed values: [0,255]
-				"Max Height" = 256
-				#Allowed values: [0,)
-				"Cluster Count" = 2
-				#Allowed values: [0,255]
-				"Min Height" = 0
-				#Allowed values: [0,)
-				"Cluster Size" = 32
-
-			[world.new_stone_types.jasper.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-	[world.spider_nest_underground_biome]
-		"Enabled Wrapped" = true
-
-		[world.spider_nest_underground_biome.biome_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 26
-			#Allowed values: [0,)
-			Rarity = 80
-			#Allowed values: [0,255]
-			"Min Y Level" = 0
-			#Allowed values: [0,)
-			"Horizontal Variation" = 14
-			#Allowed values: [0,255]
-			"Max Y Level" = 64
-			#Allowed values: [0,)
-			"Vertical Size" = 14
-			#Allowed values: [0,)
-			"Vertical Variation" = 6
-
-			[world.spider_nest_underground_biome.biome_settings.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["plains"]
-
-			[world.spider_nest_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
@@ -1091,79 +1290,7 @@
 			#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
 			# the_end, beach, forest, ocean, desert, river, swamp,
 			# mushroom, nether]
-			"Biome Categories" = ["ocean", "beach", "nether"]
-
-	[world.blossom_trees]
-
-		[world.blossom_trees.orange]
-			Rarity = 200
-
-			[world.blossom_trees.orange.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-			[world.blossom_trees.orange.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["savanna"]
-
-		[world.blossom_trees.pink]
-			Rarity = 200
-
-			[world.blossom_trees.pink.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-			[world.blossom_trees.pink.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["extreme_hills"]
-
-		[world.blossom_trees.blue]
-			Rarity = 200
-
-			[world.blossom_trees.blue.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-			[world.blossom_trees.blue.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["icy"]
-
-		[world.blossom_trees.yellow]
-			Rarity = 200
-
-			[world.blossom_trees.yellow.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-			[world.blossom_trees.yellow.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["plains"]
-
-		[world.blossom_trees.lavender]
-			Rarity = 200
-
-			[world.blossom_trees.lavender.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-			[world.blossom_trees.lavender.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["swamp"]
+			"Biome Categories" = ["ocean", "beach", "nether", "the_end"]
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
@@ -1216,107 +1343,6 @@
 				"Biome Categories" = ["swamp"]
 
 			[world.slime_underground_biome.biome_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-	[world.mega_caves]
-
-		[world.mega_caves.spawn_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 80
-			#Allowed values: [0,)
-			Rarity = 800
-			#Allowed values: [0,255]
-			"Min Y Level" = 10
-			#Allowed values: [0,)
-			"Horizontal Variation" = 30
-			#Allowed values: [0,255]
-			"Max Y Level" = 20
-			#Allowed values: [0,)
-			"Vertical Size" = 25
-			#Allowed values: [0,)
-			"Vertical Variation" = 10
-
-			[world.mega_caves.spawn_settings.biomes]
-				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean", "beach"]
-
-			[world.mega_caves.spawn_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-		[world.mega_caves.dimensions]
-			Dimensions = ["minecraft:overworld"]
-			"Is Blacklist" = false
-
-	[world.elder_prismarine_underground_biome]
-		#Allowed values: [0,1]
-		"Lantern Chance" = 0.0085
-		#Allowed values: [0,1]
-		"Water Chance" = 0.25
-
-		[world.elder_prismarine_underground_biome.biome_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 26
-			#Allowed values: [0,)
-			Rarity = 200
-			#Allowed values: [0,255]
-			"Min Y Level" = 0
-			#Allowed values: [0,)
-			"Horizontal Variation" = 14
-			#Allowed values: [0,255]
-			"Max Y Level" = 64
-			#Allowed values: [0,)
-			"Vertical Size" = 14
-			#Allowed values: [0,)
-			"Vertical Variation" = 6
-
-			[world.elder_prismarine_underground_biome.biome_settings.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean"]
-
-			[world.elder_prismarine_underground_biome.biome_settings.dimensions]
-				Dimensions = ["minecraft:overworld"]
-				"Is Blacklist" = false
-
-	[world.glowshroom_underground_biome]
-		#Allowed values: [0,1]
-		"Glowshroom Spawn Chance" = 0.0625
-		#Allowed values: (0,)
-		"Glowshroom Growth Rate" = 20
-		"Enable Danger Sight" = true
-		"Enable Huge Glowshrooms" = true
-
-		[world.glowshroom_underground_biome.biome_settings]
-			#Allowed values: [0,)
-			"Horizontal Size" = 26
-			#Allowed values: [0,)
-			Rarity = 80
-			#Allowed values: [0,255]
-			"Min Y Level" = 0
-			#Allowed values: [0,)
-			"Horizontal Variation" = 14
-			#Allowed values: [0,255]
-			"Max Y Level" = 64
-			#Allowed values: [0,)
-			"Vertical Size" = 14
-			#Allowed values: [0,)
-			"Vertical Variation" = 6
-
-			[world.glowshroom_underground_biome.biome_settings.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["extreme_hills", "mushroom"]
-
-			[world.glowshroom_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 

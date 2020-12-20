@@ -3,7 +3,6 @@ events.listen('item.tags', function (event) {
     event.get('forge:ingots/uraninite').add('powah:uraninite');
     event.get('forge:ingots/energized_steel').add('powah:steel_energized');
     event.get('forge:ingots/radioactive').add('#forge:ingots/uraninite').add('#forge:ingots/uranium');
-    // event.get('forge:ingots').add('create:zinc_ingot').add('create:brass_ingot');
 
     event
         .get('forge:ingots')
@@ -32,4 +31,15 @@ events.listen('item.tags', function (event) {
         .add('naturesaura:infused_iron');
     event.get('forge:ingots').add('industrialforgoing:pink_slime_ingot');
     event.get('forge:ingots').add('botania:gaia_ingot');
+
+    event.get('forge:ingots/gold_brass').add('#forge:ingots/gold').add('#forge:ingots/brass');
+    event.get('forge:ingots/gold_bronze').add('#forge:ingots/gold').add('#forge:ingots/bronze');
+    event.get('forge:ingots/gold_copper').add('#forge:ingots/gold').add('#forge:ingots/copper');
+    event.get('forge:ingots/gold_silver').add('#forge:ingots/gold').add('#forge:ingots/silver');
+    event.get('forge:ingots/gold_tin').add('#forge:ingots/gold').add('#forge:ingots/tin');
+
+    event.get('forge:ingots/iron_aluminum').add('#forge:ingots/iron').add('#forge:ingots/aluminum');
+    event.get('forge:ingots/iron_copper').add('#forge:ingots/iron').add('#forge:ingots/copper');
+    event.get('forge:ingots/iron_lead').add('#forge:ingots/iron').add('#forge:ingots/lead');
+    event.get('forge:ingots/iron_tin').add('#forge:ingots/iron').add('#forge:ingots/tin');
 });

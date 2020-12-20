@@ -20,4 +20,24 @@ events.listen('item.tags', function (event) {
 
     event.get('forge:dusts/ender_pearl').remove('thermal:ender_pearl_dust');
     event.get('forge:dusts/ender').add('thermal:ender_pearl_dust');
+
+    event.get('forge:dusts/gold_copper').add('#forge:dusts/gold').add('#forge:dusts/copper');
+    event.get('forge:dusts/iron_aluminum').add('#forge:dusts/iron').add('#forge:dusts/aluminum');
+
+    // Temporary until EE adapts this change
+    event.get('forge:dusts/arcane').remove('emendatusenigmatica:arcane_dust');
+    event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');
+    event.get('forge:ores/arcane').remove('emendatusenigmatica:arcane_chunk');
+    event.get('forge:ores/arcane').remove('emendatusenigmatica:arcane_ore');
+    event.get('forge:ores/arcane').remove('ars_nouveau:arcane_ore');
+    event.get('forge:ores/mana_gem').remove('ars_nouveau:arcane_ore');
+    event.get('forge:gems/arcane').remove('emendatusenigmatica:arcane_gem');
+    event.get('forge:storage_blocks/arcane').remove('emendatusenigmatica:arcane_block');
+    event.get('forge:storage_blocks/mana').add('emendatusenigmatica:arcane_block');
+    event.get('forge:dusts/mana').add('emendatusenigmatica:arcane_dust');
+    event.get('forge:chunks/mana').add('emendatusenigmatica:arcane_chunk');
+    event.get('forge:ores/mana').add('emendatusenigmatica:arcane_ore');
+    event.get('forge:ores/mana').add('emendatusenigmatica:arcane_chunk');
+    event.get('forge:gems/mana').add('emendatusenigmatica:arcane_gem');
+    event.get('forge:ores/mana').add('ars_nouveau:arcane_ore');
 });

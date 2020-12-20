@@ -1,0 +1,22 @@
+{
+	id: 2920,
+	filename: "expert__tier_3_wip",
+	order_index: 28,
+	title: "Expert - Tier 3 WIP",
+	icon: {
+		id: "mekanism:mekasuit_helmet",
+		Count: true,
+		tag: {
+			HideFlags: 2,
+			mekData: {
+				EnergyContainers: [{
+					Container: false,
+					stored: "16000000"
+				}]
+			}
+		}
+	},
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: []
+}

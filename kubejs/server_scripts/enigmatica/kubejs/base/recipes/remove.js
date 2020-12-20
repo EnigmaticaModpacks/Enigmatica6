@@ -2,11 +2,15 @@ events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
+    event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
         'additionalbars:crossed_iron_bars',
 
         'bambooeverything:bamboo_bundle',
+
+        'byg:blue_enchanted_crafting_table',
+        'byg:green_enchanted_crafting_table',
 
         'decorative_blocks:lattice',
 
@@ -38,26 +42,13 @@ events.listen('recipes', function (event) {
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
 
-        'decorative_blocks:hellbark_beam',
-        'decorative_blocks:jungle_beam',
-        'decorative_blocks:birch_beam',
-        'decorative_blocks:umbran_beam',
-        'decorative_blocks:jacaranda_beam',
-        'decorative_blocks:magic_beam',
-        'decorative_blocks:palm_beam',
-        'decorative_blocks:mahogany_beam',
-        'decorative_blocks:willow_beam',
-        'decorative_blocks:acacia_beam',
-        'decorative_blocks:cherry_beam',
-        'decorative_blocks:fir_beam',
-        'decorative_blocks:dark_oak_beam',
-        'decorative_blocks:oak_beam',
-        'decorative_blocks:redwood_beam',
-        'decorative_blocks:dead_beam',
-        'decorative_blocks:spruce_beam',
+        'create:mechanical_crafting/integrated_circuit',
+
+        'engineersdecor:dependent/slag_brick_block_recipe',
 
         'immersiveengineering:crafting/stick_steel',
 
+        'mapperbase:steel_block_from_blasting',
         'mapperbase:steel_ingot_from_blasting',
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
@@ -73,10 +64,26 @@ events.listen('recipes', function (event) {
         event.remove({ id: removal });
     });
 
-    global.disabledItems.forEach((disabledItem) => {
+    disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
     });
 
-    // Removes log-stripping recipes from xercamod
-    event.remove({ output: '/minecraft:stripped_\\w+/', mod: 'xercamod' });
+    event.remove({
+        output: '/extrastorage:disk_\\w+/',
+        mod: 'extrastorage'
+    });
+    event.remove({
+        output: '/extrastorage:storagepart_\\w+/',
+        mod: 'extrastorage',
+        type: 'minecraft:crafting_shaped'
+    });
+
+    event.remove({
+        output: '/buildersaddition:\\w+_vertical_slab/',
+        mod: 'buildersaddition',
+        type: 'minecraft:crafting_shaped'
+    });
+    beamRecipes.forEach((recipe) => {
+        event.remove({ output: recipe.output });
+    });
 });

@@ -11,18 +11,20 @@
 	fuel_bucket_efficiency = 0.05
 	#Should dyes be used up when coloring things (Drones, Logistics Modules, Redstone Modules)?
 	use_up_dyes_when_coloring = false
+	#Oil worldgen blacklist by biome category: add biome categories to this list if you don't want oil worldgen to happen there. Accepted categories are: beach, desert, extreme_hills, forest, icy, jungle, mesa, mushroom, nether, none, ocean, plains, river, savanna, swamp, taiga, the_end.  This works in conjunction with 'oil_world_gen_blacklist' - if a biome matches either, then no oil lakes will generate there.
+	oil_world_gen_category_blacklist = ["nether", "the_end"]
 	#Maximum number of blocks in the area defined in an Area Programming Puzzle Piece
 	#Range: > 1
 	max_programming_area = 250000
 	#Are drones allowed to import Experience Orbs and convert them to Memory Essence fluid?
 	drones_can_import_xp_orbs = true
-	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.
-	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens"]
+	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there.
+	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "byg:embur_bog", "byg:glowstone_gardens", "byg:sythian_torrids", "byg:warped_desert", "byg:subzero_hypogeal", "byg:quartz_desert", "byg:brimstone_caverns", "byg:weeping_mire", "byg:withering_woods", "byg:magma_wastes", "byg:wailing_garth", "byg:crimson_gardens", "byg:ivis_fields", "byg:bulbis_gardens", "byg:shattered_desert", "byg:ethereal_islands", "byg:purpur_peaks", "byg:cryptic_wastes", "byg:viscal_isles", "byg:shulkren_forest", "byg:nightshade_forest", "biomesoplenty:crystalline_chasm", "biomesoplenty:undergrowth", "biomesoplenty:visceral_heap", "biomesoplenty:withered_abyss"]
 	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
 	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
-	vacuum_trap_blacklist = ["resourcefulbees:coal_bee", "resourcefulbees:creeper_bee", "resourcefulbees:diamond_bee", "resourcefulbees:emerald_bee", "resourcefulbees:ender_bee", "resourcefulbees:gold_bee", "resourcefulbees:icy_bee", "resourcefulbees:iron_bee", "resourcefulbees:lapis_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:netherite_bee", "resourcefulbees:oreo_bee", "resourcefulbees:pigman_bee", "resourcefulbees:redstone_bee", "resourcefulbees:rgbee_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:slimy_bee", "resourcefulbees:wither_bee", "resourcefulbees:zombie_bee"]
+	vacuum_trap_blacklist = ["alexsmobs:centipede_body", "alexsmobs:centipede_tail", "alexsmobs:bone_serpent_part", "resourcefulbees:tin_bee", "resourcefulbees:terrasteel_bee", "resourcefulbees:tainted_gold_bee", "resourcefulbees:steel_bee", "resourcefulbees:sky_bee", "resourcefulbees:silver_bee", "resourcefulbees:refined_obsidian_bee", "resourcefulbees:refined_glowstone_bee", "resourcefulbees:osmium_bee", "resourcefulbees:obsidian_bee", "resourcefulbees:nickel_bee", "resourcefulbees:manasteel_bee", "resourcefulbees:lead_bee", "resourcefulbees:infused_iron_bee", "resourcefulbees:ghast_bee", "resourcefulbees:elementium_bee", "resourcefulbees:copper_bee", "resourcefulbees:clay_bee", "resourcefulbees:blaze_bee", "resourcefulbees:alf_bee", "resourcefulbees:zombie_bee", "resourcefulbees:wither_bee", "resourcefulbees:slimy_bee", "resourcefulbees:skeleton_bee", "resourcefulbees:rgbee_bee", "resourcefulbees:redstone_bee", "resourcefulbees:pigman_bee", "resourcefulbees:nether_quartz_bee", "resourcefulbees:netherite_bee", "resourcefulbees:lapis_bee", "resourcefulbees:iron_bee", "resourcefulbees:icy_bee", "resourcefulbees:gold_bee", "resourcefulbees:ender_bee", "resourcefulbees:emerald_bee", "resourcefulbees:diamond_bee", "resourcefulbees:creeper_bee", "resourcefulbees:coal_bee", "resourcefulbees:oreo_bee", "artifacts:mimic"]
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
 	min_fluid_fuel_temperature = 373
@@ -52,7 +54,7 @@
 	#The ratio of liquid plastic to solid plastic sheets in the Plastic Mixer, in mB per sheet.  If set to 0, no default liquid->solid plastic recipe will be added (but CraftTweaker or API can be used to add recipes)
 	#Range: > 0
 	plastic_mixer_plastic_ratio = 1000
-	#The max height of an elevator per stacked Elevator Base.
+	#The max height of an elevator per stacked Elevator Base block.
 	#Range: 1 ~ 256
 	elevator_base_blocks_per_base = 4
 	#The amount of air produced by using 100 FE (Forge Energy) in the flux compressor
@@ -113,6 +115,11 @@
 	#The minimum interval in ticks between which fluid tank contents should be synced to clients. Smaller values mean smoother visual tank updates, but more of a performance cost in terms of network syncing. Note that fluid tank sync packets are also only sent when a fluid tank changes by more than 1% of its capacity, or 1000mB, whichever is smaller.
 	#Range: 1 ~ 100
 	fluid_tank_update_rate = 10
+	#Don't remove a water source block when picking up (drones, liquid hoppers, gas lift) if it has at least two water source neighbours. This can reduce lag due to frequent block updates, and can also potentially make water import much faster. Set this to false if you want no-infinite-water rules in a world, or want to limit the speed of water importing to vanilla block update rates.
+	dont_update_infinite_water_sources = true
+	#How far will a drone go to find a Charging Station when it's low on air? Note: drones will teleport, possibly across the world to someone else's base, if this range is very large.
+	#Range: > 16
+	max_drone_charging_station_search_range = 80
 
 ["Micromissile Properties"]
 	#Base explosion damage (modified by missile setup)
@@ -230,15 +237,18 @@
 	#Range: > 1000
 	reshuffleInterval = 24000
 	#Max number of custom trades a player may add
-	#Range: > 1
+	#Range: > 0
 	max_trades_per_player = 50
 	#Broadcast a notification when player adds a custom trade
 	notify_of_trade_addition = true
 	#Broadcast a notification when player removes a custom trade
 	notify_of_trade_removal = true
-	#Broadcast a notification when an Amadron trade is made
+	#Broadcast a notification when a custom Amadron trade is made
 	notify_of_deal_made = true
-	#Number of periodic offers randomly selected for the 'live' offer list
+	#Number of villager offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less.
+	#Range: > 0
+	numVillagerOffers = 20
+	#Number of periodic offers randomly selected for the 'live' offer list. Note: this a maximum, and the actual number chosen each time may be less.
 	#Range: > 0
 	numPeriodicOffers = 20
 

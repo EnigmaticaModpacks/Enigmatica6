@@ -47,11 +47,14 @@ events.listen('item.tags', function (event) {
         'naturesaura:sky_sword',
         'wstweaks:blaze_blade',
         'wstweaks:lava_blade',
-        'xercamod:item_diamond_warhammer',
-        'xercamod:item_gold_warhammer',
-        'xercamod:item_iron_warhammer',
-        'xercamod:item_netherite_warhammer',
-        'xercamod:item_stone_warhammer'
+        'undergarden:utheric_sword',
+        'undergarden:froststeel_sword',
+        'undergarden:cloggrum_sword',
+        'undergarden:cloggrum_battleaxe',
+        'bloodmagic:soulsword',
+        'bloodmagic:soulscythe',
+        'astralsorcery:crystal_sword',
+        'astralsorcery:infused_crystal_sword'
     ];
     event.get('forge:weapons').add(items);
     event.get('forge:weapons/melee').add(items);

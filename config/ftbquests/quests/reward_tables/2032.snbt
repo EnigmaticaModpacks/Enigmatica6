@@ -1,0 +1,76 @@
+{
+	id: 2032,
+	title: "Alchemist's Delight",
+	icon: "kubejs:alchemists_delight",
+	loot_size: 1,
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [
+		{
+			item: "naturesaura:end_city_finder",
+			count: 4
+		},
+		{
+			item: "naturesaura:fortress_finder",
+			count: 4
+		},
+		{
+			item: "minecraft:ender_eye",
+			count: 4
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:speed"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:haste"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:absorption"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:resistance"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:fire_resistance"
+				}
+			}
+		},
+		{
+			item: {
+				id: "botania:brew_flask",
+				Count: true,
+				tag: {
+					brewKey: "botania:regen_weak"
+				}
+			}
+		}
+	]
+}

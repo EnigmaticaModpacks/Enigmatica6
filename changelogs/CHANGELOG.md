@@ -1,10 +1,79 @@
+### Enigmatica 6 v0.3.1
+
+_Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
+
+**Fixed a host of issues with dimensions, including the Ender Dragon not spawning, missing biomes and random biomes.
+For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) made by the ATM team, to fix your existing world.**
+
+**Added**
+
+- 'Dustrial Decor
+- Alex's Mobs
+- Architectury (Forge)
+- Artifacts
+- Astral Sorcery
+- Blood Magic 
+- Citadel
+- Clockout
+- CodeChicken Lib 1.8.+
+- Create
+- Demagnetize
+- Ender Storage 1.8.+
+- ExtraStorage
+- Immersive Petroleum
+- KubeJS Blood Magic
+- KubeJS Immersive Engineering
+- KubeJS Mekanism
+- KubeJS Thermal
+- Mod Name Tooltip
+- More MobGriefing Options
+- ObserverLib
+- Portable Stonecutter
+- RFTools Power
+- Restriction: Re-Restricted
+- Shrink.
+- Sophisticated Backpacks
+- The Undergarden
+
+**Improvements**
+
+-   Loading: Removed color changes to the Mojang brand.
+-   Quark: Re-added Vertical Slabs, as turning them off had no benefit.
+-   Disabled Gear Recycling in the Immersive Engineering Arc Furnace
+-   Removed Sugar Cane Block from Thermal, it was uncraftable anyway.
+-   Decreased percentage of players who have to sleep for the night to pass on servers from 50% to 35%
+-   Removed the XP fluid bucket exchange recipe because of a bug, will be readded later on.
+-   Aquaculture: Removed the Knives except the Neptunium variant, they have been replaced by Farmer's Delight Knives.
+-   On login, the player is now given the quest book in stead of the Modded for Dummies book. The Modded for Dummies book is now a quest reward for one of the first quests, but is also craftable.
+-   Cobblegen Randomizer Create Compat [\#565](https://github.com/NillerMedDild/Enigmatica6/issues/565)
+-   Tetra Tool Rewards [\#547](https://github.com/NillerMedDild/Enigmatica6/issues/547)
+-   Astral Sorcery Starlight Infusion Compat [\#519](https://github.com/NillerMedDild/Enigmatica6/issues/519)
+-   Blood Magic Alchemy Table [\#518](https://github.com/NillerMedDild/Enigmatica6/issues/518)
+-   Blood Magic ore processing compat [\#516](https://github.com/NillerMedDild/Enigmatica6/issues/516)
+-   Powah quests suggestion [\#497](https://github.com/NillerMedDild/Enigmatica6/issues/497)
+-   BYG sapling support in Botany Pots [\#489](https://github.com/NillerMedDild/Enigmatica6/issues/489)
+-   Thermal and IE slag compatability [\#479](https://github.com/NillerMedDild/Enigmatica6/issues/479)
+-   "Oh The Biomes You'll Go" tree seeds in the Market [\#461](https://github.com/NillerMedDild/Enigmatica6/issues/461)
+-   Mekanism Tools nerf [\#460](https://github.com/NillerMedDild/Enigmatica6/issues/460)
+-   Resourceful Bee guide book recipe change [\#454](https://github.com/NillerMedDild/Enigmatica6/issues/454)
+-   New Essence \<-\> Memory Essence recipe [\#453](https://github.com/NillerMedDild/Enigmatica6/issues/453)
+-   Tag-based Ladder Recipe [\#425](https://github.com/NillerMedDild/Enigmatica6/issues/425)
+-   Resourceful bees beelancing 
+
+**Bug Fixes**
+
+-	
+
+**Removed**
+
+-   Actually Useful Stonecutter
+-   Xerca Mod
+
 ### Enigmatica 6 v0.3.0
 
 _Using Forge-1.16.4-35.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.0.txt)_
 
 Updated Minecraft version from 1.16.1 to 1.16.4
-
-
 
 **We highly recommend that you start a new world when updating from 0.2.x to 0.3.x**
 
@@ -12,188 +81,188 @@ _It is possible to update an E6 v0.2.x world to v0.3.x, but it will most likely 
 
 **New Mods!**
 
-- Archer's Paradox
-- Ars Nouveau
-- AttributeFix
-- Botania Additions
-- Botany Trees
-- Builders Crafts & Additions (Forge)
-- Chisels & Bits
-- CoFH Core
-- CobbleGenRandomizer
-- Config Swapper
-- Crafting Station
-- CreativeCore
-- EmbellishCraft
-- Ensorcellation
-- Ensorcelled
-- FTB Chunks
-- FTB Essentials
-- FTB GUI Library
-- FTB Quests
-- FTB Ranks
-- FTB Teams
-- Farmer's Delight
-- Framed Compacting Drawers
-- GeckoLib
-- Glassential
-- Guns Without Roses
-- Immersive Posts
-- Item Filters
-- LibX
-- Lost Trinkets
-- Mapper Base
-- McJtyLib
-- Meet Your Fight
-- More Overlays Updated
-- MythicBotany
-- Nature's Aura
-- Oh The Biomes You'll Go
-- Plonk
-- Pretty Pipes
-- RFTools Base
-- RFTools Builder
-- RFTools Control
-- RFTools Storage
-- RFTools Utility
-- Rare Ice (Forge/Fabric)
-- RecipeBuffers
-- Refined Storage: Requestify
-- Resourceful Bees
-- Rhino
-- Screenshot to Clipboard (Forge)
-- Seals
-- Tetra
-- The Mighty Architect
-- The Official Enigmatica Resource Pack
-- Thermal Expansion
-- Thermal Foundation
-- Thermal Innovation
-- Thermal Locomotion
-- Tips
-- Travel Anchors
-- Useful Railroads
-- XNet
-- XNet Gases
-- XercaMod
-- mGui
+-   Archer's Paradox
+-   Ars Nouveau
+-   AttributeFix
+-   Botania Additions
+-   Botany Trees
+-   Builders Crafts & Additions (Forge)
+-   Chisels & Bits
+-   CoFH Core
+-   CobbleGenRandomizer
+-   Config Swapper
+-   Crafting Station
+-   CreativeCore
+-   EmbellishCraft
+-   Ensorcellation
+-   Ensorcelled
+-   FTB Chunks
+-   FTB Essentials
+-   FTB GUI Library
+-   FTB Quests
+-   FTB Ranks
+-   FTB Teams
+-   Farmer's Delight
+-   Framed Compacting Drawers
+-   GeckoLib
+-   Glassential
+-   Guns Without Roses
+-   Immersive Posts
+-   Item Filters
+-   LibX
+-   Lost Trinkets
+-   Mapper Base
+-   McJtyLib
+-   Meet Your Fight
+-   More Overlays Updated
+-   MythicBotany
+-   Nature's Aura
+-   Oh The Biomes You'll Go
+-   Plonk
+-   Pretty Pipes
+-   RFTools Base
+-   RFTools Builder
+-   RFTools Control
+-   RFTools Storage
+-   RFTools Utility
+-   Rare Ice (Forge/Fabric)
+-   RecipeBuffers
+-   Refined Storage: Requestify
+-   Resourceful Bees
+-   Rhino
+-   Screenshot to Clipboard (Forge)
+-   Seals
+-   Tetra
+-   The Mighty Architect
+-   The Official Enigmatica Resource Pack
+-   Thermal Expansion
+-   Thermal Foundation
+-   Thermal Innovation
+-   Thermal Locomotion
+-   Tips
+-   Travel Anchors
+-   Useful Railroads
+-   XNet
+-   XNet Gases
+-   XercaMod
+-   mGui
 
 **Additions**
 
-- QUESTS!!!1 (Credit Merlo, Motoko & Yagi)
-- Added Tetra trades to the Armorer Villager
-- Additional Tetra Materials [\#378](https://github.com/NillerMedDild/Enigmatica6/issues/378)
-- Biomes O'Plenty White and Black Sand compat for Botany Pots [\#278](https://github.com/NillerMedDild/Enigmatica6/pull/278) ([Ridanisaurus](https://github.com/Ridanisaurus))
-- Enabled the Biomes O' Plenty additions to the Nether
+-   QUESTS!!!1 (Credit Merlo, Motoko & Yagi)
+-   Added Tetra trades to the Armorer Villager
+-   Additional Tetra Materials [\#378](https://github.com/NillerMedDild/Enigmatica6/issues/378)
+-   Biomes O'Plenty White and Black Sand compat for Botany Pots [\#278](https://github.com/NillerMedDild/Enigmatica6/pull/278) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Enabled the Biomes O' Plenty additions to the Nether
 -   Increased Emerald Ore spawn height
 -   Increased Uranium and Lead spawn chance [\#283](https://github.com/NillerMedDild/Enigmatica6/issues/283)
-- Make XP fluids compatible [\#265](https://github.com/NillerMedDild/Enigmatica6/issues/265)
+-   Make XP fluids compatible [\#265](https://github.com/NillerMedDild/Enigmatica6/issues/265)
 -   Quark: Disabled Vertical Slabs, since BlockCarpentry has those covered
-- Quark Saplings & Farmer's Delight Seeds for Market \(Credit Merlo\) [\#335](https://github.com/NillerMedDild/Enigmatica6/issues/335)
-- Switched mini/worldmap to FTB Chunks Map [\#343](https://github.com/NillerMedDild/Enigmatica6/issues/343)
-- Tetra Compat for turning "vanilla" tools into Tetra tools in the workbench [\#383](https://github.com/NillerMedDild/Enigmatica6/issues/383)
+-   Quark Saplings & Farmer's Delight Seeds for Market \(Credit Merlo\) [\#335](https://github.com/NillerMedDild/Enigmatica6/issues/335)
+-   Switched mini/worldmap to FTB Chunks Map [\#343](https://github.com/NillerMedDild/Enigmatica6/issues/343)
+-   Tetra Compat for turning "vanilla" tools into Tetra tools in the workbench [\#383](https://github.com/NillerMedDild/Enigmatica6/issues/383)
 -   The "Ding" sound is now played when joining a server
-- Tons of new Tetra materials
+-   Tons of new Tetra materials
 
 **Bug Fixes**
 
-- 1Gold Ingot in Stone Cutter is 4 Light Weighted Pressure Plate [\#288](https://github.com/NillerMedDild/Enigmatica6/issues/288)
-- Amadron Ordering Scam [\#263](https://github.com/NillerMedDild/Enigmatica6/issues/263)
-- Apotheosis Bosses are spawning in the end [\#269](https://github.com/NillerMedDild/Enigmatica6/issues/269)
-- Aquaculture Fillet Knife Blasting Recipe [\#395](https://github.com/NillerMedDild/Enigmatica6/issues/395)
-- Backpacks can be stored inside other Backpacks [\#319](https://github.com/NillerMedDild/Enigmatica6/issues/319)
-- Basic Logistical Sorters does not send items into Storage Drawers [\#173](https://github.com/NillerMedDild/Enigmatica6/issues/173)
-- BlockCarpentry blocks not rendering [\#253](https://github.com/NillerMedDild/Enigmatica6/issues/253)
-- BlockCarpentry crash when using the Frame [\#257](https://github.com/NillerMedDild/Enigmatica6/issues/257)
-- Botiania flowers easily duplicated with bonemeal [\#308](https://github.com/NillerMedDild/Enigmatica6/issues/308)
-- Broken Heart bauble functionality [\#226](https://github.com/NillerMedDild/Enigmatica6/issues/226)
-- Can drown while in spectator [\#214](https://github.com/NillerMedDild/Enigmatica6/issues/214)
-- Cannot craft Quark Oddities Item Pipes \(Meant to be disabled, hidden from JEI\) [\#372](https://github.com/NillerMedDild/Enigmatica6/issues/372)
-- Clocks acquired from fishing loot not recognized by JEI/autocrafting. [\#284](https://github.com/NillerMedDild/Enigmatica6/issues/284)
-- Crafting Tweaks "Compress All" With Honey Bottles Doesn't Return Empty Bottles [\#180](https://github.com/NillerMedDild/Enigmatica6/issues/180)
-- Crash Issue when using Nether Portal [\#320](https://github.com/NillerMedDild/Enigmatica6/issues/320)
-- Crash when attempting to rename an item in a Robit that's not docked. [\#296](https://github.com/NillerMedDild/Enigmatica6/issues/296)
-- Crash when near skeletal horse {maybe just trap} [\#286](https://github.com/NillerMedDild/Enigmatica6/issues/286)
-- Engineers Workbench is not working [\#317](https://github.com/NillerMedDild/Enigmatica6/issues/317)
-- Flowers have extreme offsets [\#264](https://github.com/NillerMedDild/Enigmatica6/issues/264)
-- FTB Utilities claims don't show anymore [\#204](https://github.com/NillerMedDild/Enigmatica6/issues/204)
-- Game Crash - Clicking on the Dank Dock with a Mekanism Configurator [\#266](https://github.com/NillerMedDild/Enigmatica6/issues/266)
-- Gas Dupe \(again\) [\#309](https://github.com/NillerMedDild/Enigmatica6/issues/309)
-- IE Engineer Villager accepts only IE Steel \(Steel conversion recipe added\) [\#280](https://github.com/NillerMedDild/Enigmatica6/issues/280)
-- IE steel rod recipe conflict [\#306](https://github.com/NillerMedDild/Enigmatica6/issues/306)
-- Industrial Foregoing potion brewer crash [\#293](https://github.com/NillerMedDild/Enigmatica6/issues/293)
-- Issue with the new Memory Stick item [\#221](https://github.com/NillerMedDild/Enigmatica6/issues/221)
-- Item frames refuse to accept items [\#356](https://github.com/NillerMedDild/Enigmatica6/issues/356)
-- Kicking Players with Java Error \(0.2.16\) [\#261](https://github.com/NillerMedDild/Enigmatica6/issues/261)
-- Mekanism Armored Jetpack Enchantability  [\#213](https://github.com/NillerMedDild/Enigmatica6/issues/213)
-- Mekanism hover text shows "total" FE without taking upgrades into account [\#205](https://github.com/NillerMedDild/Enigmatica6/issues/205)
-- Mobs don't drop experience in other dimensions than overworld [\#192](https://github.com/NillerMedDild/Enigmatica6/issues/192)
-- Modded for Dummies missing texture [\#277](https://github.com/NillerMedDild/Enigmatica6/issues/277)
-- Neat healthbars disable themselves [\#217](https://github.com/NillerMedDild/Enigmatica6/issues/217)
-- Obsidian dust crafting through crafting table [\#274](https://github.com/NillerMedDild/Enigmatica6/issues/274)
-- Occasional crashes in the Nether due to an Immersive Engineering LV Wire Connector in the Overworld [\#321](https://github.com/NillerMedDild/Enigmatica6/issues/321)
-- Occasional server crash on player login when aerial interface is fed by universal cable [\#322](https://github.com/NillerMedDild/Enigmatica6/issues/322)
-- Patchouli mod manuals text formatting [\#271](https://github.com/NillerMedDild/Enigmatica6/issues/271)
-- Pedestals causing crashes while auto-killing raid captains [\#229](https://github.com/NillerMedDild/Enigmatica6/issues/229)
-- Productive Bees ruins everything [\#302](https://github.com/NillerMedDild/Enigmatica6/issues/302)
-- Recipe conflict Lattice and Gears [\#279](https://github.com/NillerMedDild/Enigmatica6/issues/279)
-- Recipe conflict porkchop [\#285](https://github.com/NillerMedDild/Enigmatica6/issues/285)
-- Refined Storage Fluid Issues [\#233](https://github.com/NillerMedDild/Enigmatica6/issues/233)
-- Server kick on PneumaticCraft item charge change [\#326](https://github.com/NillerMedDild/Enigmatica6/issues/326)
-- Stripped Logs  [\#175](https://github.com/NillerMedDild/Enigmatica6/issues/175)
-- Treated Wood is no longer obtainable by crafting [\#248](https://github.com/NillerMedDild/Enigmatica6/issues/248)
-- Treated wood Planks recipe not giving Big Buckets back [\#199](https://github.com/NillerMedDild/Enigmatica6/issues/199)
-- Using ftb optimine on underwater sand breaks the water [\#157](https://github.com/NillerMedDild/Enigmatica6/issues/157)
-- Vanilla Hammers destroy the digital miner [\#200](https://github.com/NillerMedDild/Enigmatica6/issues/200)
-- Waystone Naming UI [\#174](https://github.com/NillerMedDild/Enigmatica6/issues/174)
+-   1Gold Ingot in Stone Cutter is 4 Light Weighted Pressure Plate [\#288](https://github.com/NillerMedDild/Enigmatica6/issues/288)
+-   Amadron Ordering Scam [\#263](https://github.com/NillerMedDild/Enigmatica6/issues/263)
+-   Apotheosis Bosses are spawning in the end [\#269](https://github.com/NillerMedDild/Enigmatica6/issues/269)
+-   Aquaculture Fillet Knife Blasting Recipe [\#395](https://github.com/NillerMedDild/Enigmatica6/issues/395)
+-   Backpacks can be stored inside other Backpacks [\#319](https://github.com/NillerMedDild/Enigmatica6/issues/319)
+-   Basic Logistical Sorters does not send items into Storage Drawers [\#173](https://github.com/NillerMedDild/Enigmatica6/issues/173)
+-   BlockCarpentry blocks not rendering [\#253](https://github.com/NillerMedDild/Enigmatica6/issues/253)
+-   BlockCarpentry crash when using the Frame [\#257](https://github.com/NillerMedDild/Enigmatica6/issues/257)
+-   Botiania flowers easily duplicated with bonemeal [\#308](https://github.com/NillerMedDild/Enigmatica6/issues/308)
+-   Broken Heart bauble functionality [\#226](https://github.com/NillerMedDild/Enigmatica6/issues/226)
+-   Can drown while in spectator [\#214](https://github.com/NillerMedDild/Enigmatica6/issues/214)
+-   Cannot craft Quark Oddities Item Pipes \(Meant to be disabled, hidden from JEI\) [\#372](https://github.com/NillerMedDild/Enigmatica6/issues/372)
+-   Clocks acquired from fishing loot not recognized by JEI/autocrafting. [\#284](https://github.com/NillerMedDild/Enigmatica6/issues/284)
+-   Crafting Tweaks "Compress All" With Honey Bottles Doesn't Return Empty Bottles [\#180](https://github.com/NillerMedDild/Enigmatica6/issues/180)
+-   Crash Issue when using Nether Portal [\#320](https://github.com/NillerMedDild/Enigmatica6/issues/320)
+-   Crash when attempting to rename an item in a Robit that's not docked. [\#296](https://github.com/NillerMedDild/Enigmatica6/issues/296)
+-   Crash when near skeletal horse {maybe just trap} [\#286](https://github.com/NillerMedDild/Enigmatica6/issues/286)
+-   Engineers Workbench is not working [\#317](https://github.com/NillerMedDild/Enigmatica6/issues/317)
+-   Flowers have extreme offsets [\#264](https://github.com/NillerMedDild/Enigmatica6/issues/264)
+-   FTB Utilities claims don't show anymore [\#204](https://github.com/NillerMedDild/Enigmatica6/issues/204)
+-   Game Crash - Clicking on the Dank Dock with a Mekanism Configurator [\#266](https://github.com/NillerMedDild/Enigmatica6/issues/266)
+-   Gas Dupe \(again\) [\#309](https://github.com/NillerMedDild/Enigmatica6/issues/309)
+-   IE Engineer Villager accepts only IE Steel \(Steel conversion recipe added\) [\#280](https://github.com/NillerMedDild/Enigmatica6/issues/280)
+-   IE steel rod recipe conflict [\#306](https://github.com/NillerMedDild/Enigmatica6/issues/306)
+-   Industrial Foregoing potion brewer crash [\#293](https://github.com/NillerMedDild/Enigmatica6/issues/293)
+-   Issue with the new Memory Stick item [\#221](https://github.com/NillerMedDild/Enigmatica6/issues/221)
+-   Item frames refuse to accept items [\#356](https://github.com/NillerMedDild/Enigmatica6/issues/356)
+-   Kicking Players with Java Error \(0.2.16\) [\#261](https://github.com/NillerMedDild/Enigmatica6/issues/261)
+-   Mekanism Armored Jetpack Enchantability [\#213](https://github.com/NillerMedDild/Enigmatica6/issues/213)
+-   Mekanism hover text shows "total" FE without taking upgrades into account [\#205](https://github.com/NillerMedDild/Enigmatica6/issues/205)
+-   Mobs don't drop experience in other dimensions than overworld [\#192](https://github.com/NillerMedDild/Enigmatica6/issues/192)
+-   Modded for Dummies missing texture [\#277](https://github.com/NillerMedDild/Enigmatica6/issues/277)
+-   Neat healthbars disable themselves [\#217](https://github.com/NillerMedDild/Enigmatica6/issues/217)
+-   Obsidian dust crafting through crafting table [\#274](https://github.com/NillerMedDild/Enigmatica6/issues/274)
+-   Occasional crashes in the Nether due to an Immersive Engineering LV Wire Connector in the Overworld [\#321](https://github.com/NillerMedDild/Enigmatica6/issues/321)
+-   Occasional server crash on player login when aerial interface is fed by universal cable [\#322](https://github.com/NillerMedDild/Enigmatica6/issues/322)
+-   Patchouli mod manuals text formatting [\#271](https://github.com/NillerMedDild/Enigmatica6/issues/271)
+-   Pedestals causing crashes while auto-killing raid captains [\#229](https://github.com/NillerMedDild/Enigmatica6/issues/229)
+-   Productive Bees ruins everything [\#302](https://github.com/NillerMedDild/Enigmatica6/issues/302)
+-   Recipe conflict Lattice and Gears [\#279](https://github.com/NillerMedDild/Enigmatica6/issues/279)
+-   Recipe conflict porkchop [\#285](https://github.com/NillerMedDild/Enigmatica6/issues/285)
+-   Refined Storage Fluid Issues [\#233](https://github.com/NillerMedDild/Enigmatica6/issues/233)
+-   Server kick on PneumaticCraft item charge change [\#326](https://github.com/NillerMedDild/Enigmatica6/issues/326)
+-   Stripped Logs [\#175](https://github.com/NillerMedDild/Enigmatica6/issues/175)
+-   Treated Wood is no longer obtainable by crafting [\#248](https://github.com/NillerMedDild/Enigmatica6/issues/248)
+-   Treated wood Planks recipe not giving Big Buckets back [\#199](https://github.com/NillerMedDild/Enigmatica6/issues/199)
+-   Using ftb optimine on underwater sand breaks the water [\#157](https://github.com/NillerMedDild/Enigmatica6/issues/157)
+-   Vanilla Hammers destroy the digital miner [\#200](https://github.com/NillerMedDild/Enigmatica6/issues/200)
+-   Waystone Naming UI [\#174](https://github.com/NillerMedDild/Enigmatica6/issues/174)
 
 **Removed Mods**
 
 -   Abnormals Core
-- Applied Energistics 2
-- Armor Toughness Bar
-- Artifacts
-- Bamboo Blocks
-- Big Buckets
-- Buzzier Bees
-- Carpet Stairs Mod
-- Cauldron Recipes
-- Citadel
-- Click Machine
-- Cloth Config API (Forge)
-- Culinary Construct
-- Dark Paintings
-- Environmental Creepers
-- Extended Lights
-- Global XP
-- Just Enough Resources (JER)
-- Laser Relays
-- Let Sleeping Dogs Lie
-- Light Overlay (Rift/Forge/Fabric)
-- Ma Enchants
-- Ma Essentials
-- Metal Barrels
-- Mod Name Tooltip
-- Neon Craft Mod
-- No Potion Shift
-- Open Loader
-- Pretty Beaches
-- Productive Bees
-- Rope Bridge
-- Simply Backpacks
-- Snow Under Trees
-- Stronger Snowballs
-- TellMe
-- The Conjurer
-- The Endergetic Expansion
-- Tool Belt
-- Trample Stopper
-- Waddles
-- Xaero's Minimap
-- Xaero's World Map
-- ☃ Snow! Real Magic!
-- 🌳 Passable Foliage
-- 🥝 Kiwi
+-   Applied Energistics 2
+-   Armor Toughness Bar
+-   Artifacts
+-   Bamboo Blocks
+-   Big Buckets
+-   Buzzier Bees
+-   Carpet Stairs Mod
+-   Cauldron Recipes
+-   Citadel
+-   Click Machine
+-   Cloth Config API (Forge)
+-   Culinary Construct
+-   Dark Paintings
+-   Environmental Creepers
+-   Extended Lights
+-   Global XP
+-   Just Enough Resources (JER)
+-   Laser Relays
+-   Let Sleeping Dogs Lie
+-   Light Overlay (Rift/Forge/Fabric)
+-   Ma Enchants
+-   Ma Essentials
+-   Metal Barrels
+-   Mod Name Tooltip
+-   Neon Craft Mod
+-   No Potion Shift
+-   Open Loader
+-   Pretty Beaches
+-   Productive Bees
+-   Rope Bridge
+-   Simply Backpacks
+-   Snow Under Trees
+-   Stronger Snowballs
+-   TellMe
+-   The Conjurer
+-   The Endergetic Expansion
+-   Tool Belt
+-   Trample Stopper
+-   Waddles
+-   Xaero's Minimap
+-   Xaero's World Map
+-   ☃ Snow! Real Magic!
+-   🌳 Passable Foliage
+-   🥝 Kiwi
 
 ### Enigmatica 6 v0.2.17
 

@@ -1,30 +1,35 @@
 {
-  "flower": "ALL",
-  "hasHoneycomb": true,
-  "maxTimeInHive": 800,
-  "ColorData": {
-    "isBeeColored": true,
-    "honeycombColor": "#FFDC00",
-    "primaryColor": "#FFDC00",
-    "secondaryColor": "#303030"
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "minecraft:stone",
-    "mutationOutput": "minecraft:gold_ore",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:gold_ingot"
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:OVERWORLD",
-    "biomeBlacklist": "tag:ocean"
-  },
-  "BreedData": {
-    "isBreedable": true
-  },
-  "TraitData": {}
+    "flower": "ALL",
+    "hasHoneycomb": true,
+    "maxTimeInHive": 2400,
+    "ColorData": {
+        "isBeeColored": true,
+        "honeycombColor": "#FFDC00",
+        "primaryColor": "#FFDC00",
+        "secondaryColor": "#303030"
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "minecraft:stone",
+        "mutationOutput": "minecraft:gold_ore",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:gold_ingot",
+        "mainOutputWeight": 0.2
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "tag:overworld",
+        "biomeBlacklist": "tag:ocean"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "coal",
+        "parent2": "blaze",
+        "feedItem": "minecraft:gold_block",
+        "feedAmount": 4
+    },
+    "TraitData": {}
 }

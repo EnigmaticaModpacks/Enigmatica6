@@ -1,7 +1,7 @@
 {
 	id: 1259,
-	title: "Epic Thermal Series Lootbox",
-	icon: "aquaculture:treasure_chest",
+	title: "Epic Thermal Series Loot Box",
+	icon: "kubejs:epic_lootbox",
 	loot_size: 1,
 	hide_tooltip: true,
 	use_title: true,
@@ -20,6 +20,9 @@
 		},
 		{
 			item: "thermal:dynamo_fuel_augment"
+		},
+		{
+			item: "thermal:upgrade_augment_3"
 		}
 	]
 }

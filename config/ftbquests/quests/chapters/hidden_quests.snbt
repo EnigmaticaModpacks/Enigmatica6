@@ -1,7 +1,7 @@
 {
 	id: 808,
 	filename: "hidden_quests",
-	order_index: 1,
+	order_index: 6,
 	title: "Hidden_Quests",
 	icon: "minecraft:experience_bottle",
 	always_invisible: true,
@@ -50,6 +50,17 @@
 				id: 1204,
 				type: "item",
 				item: "aquaculture:neptunes_bounty"
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -6.5d,
+			id: 2134,
+			tasks: [{
+				id: 2135,
+				type: "advancement",
+				advancement: "tetra:spelunking/ancient_ruins",
+				criterion: ""
 			}]
 		}
 	]
