@@ -1,7 +1,7 @@
 {
 	id: 366,
 	filename: "powah",
-	order_index: 10,
+	order_index: 12,
 	title: "Powah!",
 	icon: "powah:dielectric_casing",
 	default_quest_shape: "",
@@ -110,6 +110,7 @@
 				"Make one and try it out, any tier will do. If you’re just starting out, you can try checking out the Starter or even the Basic tier."
 			],
 			dependencies: [I;372],
+			optional: true,
 			id: 374,
 			tasks: [{
 				id: 375,
@@ -176,6 +177,7 @@
 			subtitle: "Wasn't that a Pokèmon?",
 			description: ["Another option you have to generate power is a Magmator, which also speaks for itself. Just give the bad boy some lava and watch it burn! One bucket of lava will generate a bit less than two coal pieces would in a Furnator."],
 			dependencies: [I;374],
+			optional: true,
 			id: 382,
 			tasks: [{
 				id: 383,
@@ -206,6 +208,7 @@
 				"This handy device will generate a small amount of power as long as it’s placed over a heat source (lava, magma blocks, etc.) and has a liquid coolant (like water) in its internal tank. "
 			],
 			dependencies: [I;374],
+			optional: true,
 			id: 384,
 			tasks: [{
 				id: 385,
@@ -242,6 +245,7 @@
 				"Very handy for passive power generation!"
 			],
 			dependencies: [I;374],
+			optional: true,
 			id: 386,
 			tasks: [{
 				id: 387,
@@ -291,19 +295,15 @@
 		},
 		{
 			title: "Uraninite",
-			x: 1.5d,
-			y: 4.5d,
+			x: 3.0d,
+			y: -1.5d,
 			subtitle: "I'm Radioactive!",
 			description: [
 				"You’ve seen all the basic means Powah has to generate FE, now it’s time to step it up and get into the big boys: let’s make a reactor! ",
 				"",
 				"Not too fast though, you will first need some fuel, so let’s gather some Uraninite! Usually an ore, you can get it using Powah’s Energizing Orb with regular Uranium. Go get some!"
 			],
-			dependencies: [I;
-				382,
-				384,
-				386
-			],
+			dependencies: [I;396],
 			id: 390,
 			tasks: [{
 				id: 391,
@@ -321,8 +321,8 @@
 		{
 			title: "Reactor",
 			icon: "powah:reactor_basic",
-			x: 1.5d,
-			y: 6.0d,
+			x: 3.0d,
+			y: -3.0d,
 			shape: "hexagon",
 			subtitle: "It's a big one!",
 			description: [
@@ -366,8 +366,8 @@
 			]
 		},
 		{
-			x: 3.0d,
-			y: 6.0d,
+			x: 1.5d,
+			y: -3.0d,
 			shape: "diamond",
 			subtitle: "Quite a dry sense of humor!",
 			description: ["Isn’t your reactor so cool huh? Uh… it isn’t? Well you better hurry up and go cool it! Any kind of ice will do, but Dry Ice, a new material from Powah is the best of them. Go get some, quick!"],
@@ -856,8 +856,8 @@
 				Count: true,
 				tag: {}
 			},
-			x: 0.0d,
-			y: 6.0d,
+			x: 4.5d,
+			y: -3.0d,
 			shape: "hexagon",
 			subtitle: "One billion? With a B?",
 			description: [

@@ -1,7 +1,7 @@
 {
 	id: 1906,
 	filename: "tetra",
-	order_index: 5,
+	order_index: 11,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
@@ -22,6 +22,7 @@
 			title: "Tier 1",
 			x: -2.5d,
 			y: -20.5d,
+			shape: "square",
 			subtitle: "Hammer time!",
 			description: [
 				"The first step is to make a Mallet and smack a Vanilla Crafting Table with it!",
@@ -36,6 +37,7 @@
 				"Note: Non-vanilla Crafting Tables can be converted to vanilla through crafting."
 			],
 			dependencies: [I;2115],
+			size: 1.5d,
 			id: 1907,
 			tasks: [{
 				id: 2191,
@@ -91,8 +93,8 @@
 					"holo/frame_material": "core/ancient"
 				}
 			},
-			x: -0.5d,
-			y: -23.0d,
+			x: -1.0d,
+			y: -22.0d,
 			subtitle: "It's your only hope!",
 			description: [
 				"The Holoshpere has information about every material, tool and upgrade available in Tetra.",
@@ -125,7 +127,7 @@
 		},
 		{
 			title: "Salvage",
-			x: -1.5d,
+			x: -1.0d,
 			y: -15.0d,
 			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
@@ -167,8 +169,8 @@
 					"bow/straight_stave_material": "straight_stave/spruce"
 				}
 			},
-			x: -0.5d,
-			y: -20.5d,
+			x: -7.0d,
+			y: -23.5d,
 			description: [
 				"Put a vanilla bow in the Workbench to get started.",
 				"",
@@ -220,8 +222,8 @@
 		},
 		{
 			title: "The Forge",
-			x: -3.5d,
-			y: -15.5d,
+			x: -2.5d,
+			y: -15.0d,
 			description: [
 				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate it.",
 				"",
@@ -253,8 +255,8 @@
 		},
 		{
 			title: "Forge Upgrades",
-			x: -3.5d,
-			y: -13.5d,
+			x: -2.5d,
+			y: -14.0d,
 			description: [
 				"Upgrade your Forge Hammer!",
 				"",
@@ -304,7 +306,7 @@
 		},
 		{
 			title: "Useful Junk",
-			x: 0.0d,
+			x: 1.0d,
 			y: -15.0d,
 			shape: "diamond",
 			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."],
@@ -358,7 +360,7 @@
 		{
 			title: "Thermal Cells",
 			x: -3.5d,
-			y: -14.5d,
+			y: -15.0d,
 			description: [
 				"Thermal Cells are the batteries of the Forge Hammer.",
 				"",
@@ -397,7 +399,7 @@
 		{
 			title: "Stonecutter",
 			icon: "tetra:stonecutter",
-			x: -0.5d,
+			x: 0.0d,
 			y: -16.0d,
 			shape: "diamond",
 			description: [
@@ -424,7 +426,7 @@
 		{
 			title: "Earthpiercer",
 			icon: "tetra:earthpiercer",
-			x: -0.5d,
+			x: 0.0d,
 			y: -14.0d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi-purpose tool that acts both as a Pickaxe and Shovel."],
@@ -481,7 +483,7 @@
 		{
 			title: "Tetras Tool Leveling",
 			x: 0.5d,
-			y: -23.0d,
+			y: -22.0d,
 			description: [
 				"Here's a short breakdown of some key aspects of Tetra:",
 				"",
@@ -680,7 +682,7 @@
 		},
 		{
 			title: "Tier 5",
-			x: -2.5d,
+			x: -3.5d,
 			y: -14.0d,
 			description: [
 				"Obsidian will get you to Tier 5.",
@@ -716,8 +718,8 @@
 		},
 		{
 			title: "Tier 6",
-			x: -2.25d,
-			y: -12.75d,
+			x: -2.4999999999999645d,
+			y: -12.482142857142861d,
 			shape: "hexagon",
 			description: [
 				"Netherite Ingots will get you to tier 6. ",
@@ -780,8 +782,8 @@
 					"double/basic_handle_material": "basic_handle/oak"
 				}
 			},
-			x: -6.0d,
-			y: -22.0d,
+			x: -8.0d,
+			y: -21.5d,
 			description: ["The pickaxe head can be used for mining. "],
 			dependencies: [I;2342],
 			optional: true,
@@ -818,7 +820,7 @@
 				}
 			},
 			x: -7.0d,
-			y: -21.5d,
+			y: -22.0d,
 			description: ["The axe can be used to break wooden blocks and for stripping logs. Double Axe Heads provides additional Damage."],
 			dependencies: [I;2342],
 			optional: true,
@@ -851,8 +853,8 @@
 					"double/basic_handle_material": "basic_handle/oak"
 				}
 			},
-			x: -5.0d,
-			y: -23.5d,
+			x: -8.5d,
+			y: -20.5d,
 			description: ["Craft a sickle which can be used to cut down plants in an area."],
 			dependencies: [I;2342],
 			optional: true,
@@ -885,8 +887,8 @@
 					"double/hoe_left_material": "hoe/iron"
 				}
 			},
-			x: -5.0d,
-			y: -22.5d,
+			x: -8.0d,
+			y: -19.5d,
 			description: ["The hoe can be used for harvesting plants and for tilling soil. "],
 			dependencies: [I;2342],
 			optional: true,
@@ -920,7 +922,7 @@
 				}
 			},
 			x: -7.0d,
-			y: -22.5d,
+			y: -19.0d,
 			description: ["The claw can be used for prying things open and to quickly break most wooden blocks."],
 			dependencies: [I;2342],
 			optional: true,
@@ -957,7 +959,7 @@
 				}
 			},
 			x: -6.0d,
-			y: -23.0d,
+			y: -19.5d,
 			description: ["The adze can be used for digging and for chopping wood."],
 			dependencies: [I;2342],
 			optional: true,
@@ -974,8 +976,8 @@
 		},
 		{
 			title: "Double Headed Tools",
-			x: -3.5d,
-			y: -21.5d,
+			x: -7.0d,
+			y: -20.5d,
 			description: [
 				"Double headed tools can be made from either Axes or Pickaxes. ",
 				"",
@@ -1006,8 +1008,8 @@
 		},
 		{
 			title: "Single Headed Tools",
-			x: -1.5d,
-			y: -19.5d,
+			x: -4.0d,
+			y: -18.0d,
 			description: ["Single headed tools are Shovels and Spears, useful for digging and killing things respectively."],
 			dependencies: [I;1907],
 			optional: true,
@@ -1031,8 +1033,8 @@
 			}]
 		},
 		{
-			x: -0.5d,
-			y: -18.5d,
+			x: -4.0d,
+			y: -16.5d,
 			description: ["Spears offer high damage and slow speed. They double as a digging implement."],
 			dependencies: [I;2345],
 			optional: true,
@@ -1063,7 +1065,7 @@
 		},
 		{
 			title: "Swords",
-			x: -4.5d,
+			x: -7.0d,
 			y: -17.5d,
 			description: [
 				"Useful for hurting things, and slaying stuff!",
@@ -1117,8 +1119,8 @@
 					"sword/decorative_pommel_material": "decorative_pommel/iron"
 				}
 			},
-			x: -6.0d,
-			y: -17.5d,
+			x: -8.5d,
+			y: -16.0d,
 			description: ["A Basic Blade with balanced damage and speed."],
 			dependencies: [I;2349],
 			optional: true,
@@ -1154,7 +1156,7 @@
 				}
 			},
 			x: -5.5d,
-			y: -16.5d,
+			y: -16.0d,
 			description: ["A Heavy Blade with high damage but a decreased attack speed."],
 			dependencies: [I;2349],
 			optional: true,
@@ -1189,8 +1191,8 @@
 					"sword/decorative_pommel_material": "decorative_pommel/iron"
 				}
 			},
-			x: -6.5d,
-			y: -16.5d,
+			x: -7.5d,
+			y: -16.0d,
 			description: ["A machete can be used to cut down web and some types of plants in an area."],
 			dependencies: [I;2349],
 			optional: true,
@@ -1225,8 +1227,8 @@
 					"sword/decorative_pommel_material": "decorative_pommel/iron"
 				}
 			},
-			x: -6.0d,
-			y: -15.5d,
+			x: -6.5d,
+			y: -16.0d,
 			description: ["A light and short blad that can be used for crafting and for offhand attacks. "],
 			dependencies: [I;2349],
 			optional: true,
@@ -1243,8 +1245,8 @@
 		},
 		{
 			title: "Shield",
-			x: -5.5d,
-			y: -20.5d,
+			x: -4.5d,
+			y: -25.0d,
 			description: ["Tetra Shields are made from the basic vanilla shield."],
 			dependencies: [I;1907],
 			optional: true,
@@ -1280,8 +1282,8 @@
 		},
 		{
 			title: "Rope",
-			x: -4.0d,
-			y: -19.5d,
+			x: -0.5d,
+			y: -20.5d,
 			description: [
 				"The Belt has all sorts of convenient upgrades to make your life easier. It can store things so you can grab them quickly - Hold B to access the belt's inventory.",
 				"",
@@ -1324,8 +1326,8 @@
 		},
 		{
 			title: "Great Rack",
-			x: -0.5d,
-			y: -21.5d,
+			x: -1.0d,
+			y: -19.0d,
 			shape: "diamond",
 			description: [
 				"Place the Rack next to a Workbench and a Hammer on the Rack, and you'll have access to it's hammer tier you use the Workbench.",
@@ -1360,8 +1362,8 @@
 					"double/basic_handle_material": "basic_handle/oak"
 				}
 			},
-			x: -7.0d,
-			y: -23.5d,
+			x: -6.0d,
+			y: -21.5d,
 			description: ["Used as the back side of single sided tools, typically yields faster swing speed than double sided tools. Can sometimes be used for hammering if crafted from a sturdy material. "],
 			dependencies: [I;2342],
 			optional: true,
@@ -1392,8 +1394,8 @@
 					"shield/grip": "shield/basic_grip"
 				}
 			},
-			x: -7.0d,
-			y: -20.0d,
+			x: -5.5d,
+			y: -25.0d,
 			description: ["Bucklers provide a passive toughness bonus but cannot be used to block."],
 			dependencies: [I;2361],
 			optional: true,
@@ -1424,8 +1426,8 @@
 					"shield/heater_material": "heater/iron"
 				}
 			},
-			x: -7.5d,
-			y: -19.0d,
+			x: -4.5d,
+			y: -26.0d,
 			description: ["Heaters can block for a limited time before going on cooldown."],
 			dependencies: [I;2361],
 			optional: true,
@@ -1456,8 +1458,8 @@
 					"shield/tower_material": "tower/iron"
 				}
 			},
-			x: -6.5d,
-			y: -19.0d,
+			x: -3.5d,
+			y: -25.0d,
 			description: ["Tower shields can block indefinitely with no cooldown but uses more integrity than other types of shields."],
 			dependencies: [I;2361],
 			optional: true,
@@ -1494,8 +1496,8 @@
 					Damage: 0
 				}
 			},
-			x: 1.0d,
-			y: -20.5d,
+			x: -7.0d,
+			y: -25.0d,
 			description: ["The Longbow has high damage/velocity, but slow draw speed."],
 			dependencies: [I;1919],
 			optional: true,
@@ -1532,8 +1534,8 @@
 					Damage: 0
 				}
 			},
-			x: 0.5d,
-			y: -19.5d,
+			x: -8.5d,
+			y: -23.5d,
 			description: ["The Recurve Bow has low damage/velocy, but fast draw speed."],
 			dependencies: [I;1919],
 			optional: true,
@@ -1550,8 +1552,8 @@
 		},
 		{
 			title: "Enchanting",
-			x: -0.5d,
-			y: -24.0d,
+			x: -1.0d,
+			y: -23.5d,
 			description: [
 				"Tetra tools can be enchanted. You enchant them by placing an Enchanted Book in an Enchant slot, much like how you upgrade a part.",
 				"",
