@@ -1,0 +1,43 @@
+{
+  "header": {
+    "version": "2-beta",
+    "mc_version": "1.16.4",
+    "name": "Basic Thermal Evap. Tower",
+    "author": "Enigmatica",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 3,
+      "max_y": 2,
+      "max_z": 3
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 36,
+          "item": {
+            "id": "mekanism:thermal_evaporation_block"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "mekanism:thermal_evaporation_controller"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 3,
+          "item": {
+            "id": "mekanism:thermal_evaporation_valve"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAAAK2SsU7DMBCGz3ao0ogXYItYYOIBOiIxghg6lC7VNbm2Vh27sp0WeHqc5IJaBsRABn/nnO//fToXAFPIaoxYAIAqhhgUFIG8RqM/yacEFHAVIkbKIXvBhuC2oT1aHZpZ3JFv0KzoiAfnMWpnV2vjqn1X9C9qRzRH+oNaAcWrdwfyUVPIYYJV1Kkwi75NTpMNVtpuITtRiDA63/3qXDkbvTOm85mCOriQJb97OPsEUzLVRUKA4AOSqX4UCKZkqlHoW2GgZKqe/U6wnmA9wfUXDoIpmWp0FrxnplVy/UUrgimZamxRDFcRTCk4z0wFivtT3J9i/fTKJjvCmnw3pDbunIfr5zbSXNPGpBml/Nq1tg4Kskbbt8G3CxdjiO/LLhrC7oAcwsX4V9tlf400aNsN+uYRg67K+TDl8ilN+aGcu1Ma7fT8QeV9a+W61aZOV9livaUYZnXbNB+rs3f3BanEzEQ5AwAA"
+}
