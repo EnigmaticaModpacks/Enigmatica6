@@ -2,10 +2,12 @@
 
 _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
 
-**Fixed a host of issues with dimensions, including the Ender Dragon not spawning, missing biomes and random biomes.
-For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) made by the ATM team, to fix your existing world.**
+**Fixed a host of issues with dimensions, including the Ender Dragon not spawning, missing biomes and random biomes.**
+**For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) made by the ATM team, to fix your existing world.**
 
-**Added**
+
+
+**New Mods!**
 
 - 'Dustrial Decor
 - Alex's Mobs
@@ -37,36 +39,96 @@ For existing worlds, however, you have to manually clean the mess. If you can re
 
 **Improvements**
 
--   Loading: Removed color changes to the Mojang brand.
--   Quark: Re-added Vertical Slabs, as turning them off had no benefit.
--   Disabled Gear Recycling in the Immersive Engineering Arc Furnace
--   Removed Sugar Cane Block from Thermal, it was uncraftable anyway.
--   Decreased percentage of players who have to sleep for the night to pass on servers from 50% to 35%
--   Removed the XP fluid bucket exchange recipe because of a bug, will be readded later on.
+-   "Oh The Biomes You'll Go" tree seeds in the Market [\#461](https://github.com/NillerMedDild/Enigmatica6/issues/461)
+-   Alchemy and Infuser extras [\#522](https://github.com/NillerMedDild/Enigmatica6/pull/522) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Aquaculture: Removed the Knives except the Neptunium variant, they have been replaced by Farmer's Delight Knives.
--   On login, the player is now given the quest book in stead of the Modded for Dummies book. The Modded for Dummies book is now a quest reward for one of the first quests, but is also craftable.
--   Cobblegen Randomizer Create Compat [\#565](https://github.com/NillerMedDild/Enigmatica6/issues/565)
--   Tetra Tool Rewards [\#547](https://github.com/NillerMedDild/Enigmatica6/issues/547)
+-   Astral Infusion Ore Compat [\#521](https://github.com/NillerMedDild/Enigmatica6/pull/521) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Astral Sorcery Starlight Infusion Compat [\#519](https://github.com/NillerMedDild/Enigmatica6/issues/519)
 -   Blood Magic Alchemy Table [\#518](https://github.com/NillerMedDild/Enigmatica6/issues/518)
 -   Blood Magic ore processing compat [\#516](https://github.com/NillerMedDild/Enigmatica6/issues/516)
--   Powah quests suggestion [\#497](https://github.com/NillerMedDild/Enigmatica6/issues/497)
+-   Botany Tree Saplings-update [\#494](https://github.com/NillerMedDild/Enigmatica6/pull/494) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Building Gadgets Schematics [\#575](https://github.com/NillerMedDild/Enigmatica6/pull/575) ([MuteTiefling](https://github.com/MuteTiefling))
 -   BYG sapling support in Botany Pots [\#489](https://github.com/NillerMedDild/Enigmatica6/issues/489)
--   Thermal and IE slag compatability [\#479](https://github.com/NillerMedDild/Enigmatica6/issues/479)
--   "Oh The Biomes You'll Go" tree seeds in the Market [\#461](https://github.com/NillerMedDild/Enigmatica6/issues/461)
+-   Cobblegen Randomizer Create Compat [\#565](https://github.com/NillerMedDild/Enigmatica6/issues/565)
+-   Crushing Update [\#556](https://github.com/NillerMedDild/Enigmatica6/pull/556) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Decreased percentage of players who have to sleep for the night to pass on servers from 50% to 35%
+-   Disabled Gear Recycling in the Immersive Engineering Arc Furnace
+-   Loading: Removed color changes to the Mojang brand.
+-   Lootboxes, Delights, Tetra Geode, IE Crate [\#553](https://github.com/NillerMedDild/Enigmatica6/pull/553) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Mekanism Tools Balancing V1.0 [\#566](https://github.com/NillerMedDild/Enigmatica6/pull/566) ([Ridanisaurus](https://github.com/Ridanisaurus))
 -   Mekanism Tools nerf [\#460](https://github.com/NillerMedDild/Enigmatica6/issues/460)
--   Resourceful Bee guide book recipe change [\#454](https://github.com/NillerMedDild/Enigmatica6/issues/454)
 -   New Essence \<-\> Memory Essence recipe [\#453](https://github.com/NillerMedDild/Enigmatica6/issues/453)
+-   On login, the player is now given the quest book in stead of the Modded for Dummies book. The Modded for Dummies book is now a quest reward for one of the first quests, but is also craftable.
+-   Ore Processing Unification [\#517](https://github.com/NillerMedDild/Enigmatica6/pull/517) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Powah quests suggestion [\#497](https://github.com/NillerMedDild/Enigmatica6/issues/497)
+-   Pretty Pipes Recipe Re-write [\#524](https://github.com/NillerMedDild/Enigmatica6/pull/524) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Quark: Re-added Vertical Slabs, as turning them off had no benefit.
+-   Recipe Updates [\#527](https://github.com/NillerMedDild/Enigmatica6/pull/527) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Removed Sugar Cane Block from Thermal, it was uncraftable anyway.
+-   Removed the XP fluid bucket exchange recipe because of a bug, will be readded later on.
+-   Resourceful Bee guide book recipe change [\#454](https://github.com/NillerMedDild/Enigmatica6/issues/454)
+-   Resourceful bees beelancing
+-   Rods and Wires - Just for Fun [\#550](https://github.com/NillerMedDild/Enigmatica6/pull/550) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Tag-based Ladder Recipe [\#425](https://github.com/NillerMedDild/Enigmatica6/issues/425)
--   Resourceful bees beelancing 
+-   Tags update for multi-material crafting recipes [\#525](https://github.com/NillerMedDild/Enigmatica6/pull/525) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tetra: Missing Improvement [\#513](https://github.com/NillerMedDild/Enigmatica6/pull/513) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Tetra Tool Rewards [\#547](https://github.com/NillerMedDild/Enigmatica6/issues/547)
+-   Thermal and IE slag compatability [\#479](https://github.com/NillerMedDild/Enigmatica6/issues/479)
+-   Thermal Dynamos Rebalance Attempt [\#552](https://github.com/NillerMedDild/Enigmatica6/pull/552) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Wood rework [\#570](https://github.com/NillerMedDild/Enigmatica6/pull/570) ([MuteTiefling](https://github.com/MuteTiefling))
 
 **Bug Fixes**
 
--	
+-	Bitumen has no uses [\#414](https://github.com/NillerMedDild/Enigmatica6/issues/414)
+-	Breaking Blocks/Items While Holding A Dank Storage Item Voids The Block/Item [\#437](https://github.com/NillerMedDild/Enigmatica6/issues/437)
+-	Builder crashes server if a mechanical pipe is ontop/below it. [\#477](https://github.com/NillerMedDild/Enigmatica6/issues/477)
+-	Can't craft Enchanted Crafting Table [\#531](https://github.com/NillerMedDild/Enigmatica6/issues/531)
+-	Cannot crush Zinc Chunks in a Pedestal with the Crusher upgrade [\#495](https://github.com/NillerMedDild/Enigmatica6/issues/495)
+-	Crashing when using "Biomes You'll Go" mushrooms with Sylph [\#451](https://github.com/NillerMedDild/Enigmatica6/issues/451)
+-	Decorative blocks: most beams don't have a recipe [\#431](https://github.com/NillerMedDild/Enigmatica6/issues/431)
+-	Dupe bug with gear recycling in an arc furnace and multiservo press [\#440](https://github.com/NillerMedDild/Enigmatica6/issues/440)
+-	Dupe/Delete items in RF Tools Modular Storage when activating Inventory Tweaks Sort function [\#530](https://github.com/NillerMedDild/Enigmatica6/issues/530)
+-	Dupe with Pneumaticraft and Quark [\#511](https://github.com/NillerMedDild/Enigmatica6/issues/511)
+-	Immersive Engineering Treated Wood recipe voids Mekanism Tank [\#447](https://github.com/NillerMedDild/Enigmatica6/issues/447)
+-	Industrial Foregoing not showing up in a refined storage system [\#560](https://github.com/NillerMedDild/Enigmatica6/issues/560)
+-	Isolated Recipes \(Xerca Mod\) [\#452](https://github.com/NillerMedDild/Enigmatica6/issues/452)
+-	JEI is not searching on Tags on a server [\#380](https://github.com/NillerMedDild/Enigmatica6/issues/380)
+-	Mana Bloom recipe does not ore-dict [\#499](https://github.com/NillerMedDild/Enigmatica6/issues/499)
+-	Mekanism Coal/Gunpowder - Sulfur issues [\#485](https://github.com/NillerMedDild/Enigmatica6/issues/485)
+-	Mining Gadget crash [\#289](https://github.com/NillerMedDild/Enigmatica6/issues/289)
+-	Missing Blood Magic recipes [\#520](https://github.com/NillerMedDild/Enigmatica6/pull/520) ([MuteTiefling](https://github.com/MuteTiefling))
+-	Multiple steel recipe issues [\#417](https://github.com/NillerMedDild/Enigmatica6/issues/417)
+-	Nature's Aura Ore Generator Update [\#523](https://github.com/NillerMedDild/Enigmatica6/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
+-	Netherite Bees Kill themselves. [\#457](https://github.com/NillerMedDild/Enigmatica6/issues/457)
+-	No End Dragon or End Fountain \(See last comment for fixing worlds updated to 0.3.1, made in 0.3.0\) [\#420](https://github.com/NillerMedDild/Enigmatica6/issues/420)
+-	non EE ore spawns when using Nature's Aura powder of bountiful core \(ore gen\) [\#465](https://github.com/NillerMedDild/Enigmatica6/issues/465)
+-	Not seeing any Biomes O' Plenty biomes on multiplayer server [\#549](https://github.com/NillerMedDild/Enigmatica6/issues/549)
+-	NPE with new IF Generators [\#493](https://github.com/NillerMedDild/Enigmatica6/issues/493)
+-	Oil Generation in Byg-End bioms [\#419](https://github.com/NillerMedDild/Enigmatica6/issues/419)
+-	Possible exploit with tetra mod and enchantment extractor [\#432](https://github.com/NillerMedDild/Enigmatica6/issues/432)
+-	Quark Dungeon and Burred Dungeon spawn in the end [\#423](https://github.com/NillerMedDild/Enigmatica6/issues/423)
+-	Quest for Latex Processing Unit [\#412](https://github.com/NillerMedDild/Enigmatica6/issues/412)
+-	Recipe conflict between vertical dark oak wood planks and dark oak panels [\#441](https://github.com/NillerMedDild/Enigmatica6/issues/441)
+-	server crash with wither interaction [\#463](https://github.com/NillerMedDild/Enigmatica6/issues/463)
+-	simplefarming:raw\_bacon recipe uses up the knife [\#428](https://github.com/NillerMedDild/Enigmatica6/issues/428)
+-	Simple Farming and Farmer's Delight fried egg conflict [\#480](https://github.com/NillerMedDild/Enigmatica6/issues/480)
+-	Simple Farming seeds don't work with IE machines [\#429](https://github.com/NillerMedDild/Enigmatica6/issues/429)
+-	Steel can be created in a vanilla blast furnace non-coal fuel [\#405](https://github.com/NillerMedDild/Enigmatica6/issues/405)
+-	Stonecutter renamed to Bench Saw by unknown mod [\#427](https://github.com/NillerMedDild/Enigmatica6/issues/427)
+-	Stonecutting can turn any stone into any other stone breaking balance [\#445](https://github.com/NillerMedDild/Enigmatica6/issues/445)
+-	Terrasteel Recipe Conflict [\#470](https://github.com/NillerMedDild/Enigmatica6/issues/470)
+-	Tetra Workbench Dupe Bug [\#469](https://github.com/NillerMedDild/Enigmatica6/issues/469)
+-	Unification cleanup appears to have broken [\#415](https://github.com/NillerMedDild/Enigmatica6/issues/415)
+-	Updated EE Config (**Random Ore Y levels fixed!**) [\#537](https://github.com/NillerMedDild/Enigmatica6/pull/537) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-	Wandering Traders Disabled? [\#571](https://github.com/NillerMedDild/Enigmatica6/issues/571)
+-	Wrong Recipe Crusher : mana gem -\> mana powder \(botania\) [\#404](https://github.com/NillerMedDild/Enigmatica6/issues/404)
+-	Xnet wireless router not working [\#459](https://github.com/NillerMedDild/Enigmatica6/issues/459)
 
 **Removed**
 
 -   Actually Useful Stonecutter
+-   Reload Audio Driver (RAD) [Forge] *Will be coming back*
+-   Screenshot to Clipboard (Forge) *Will be coming back* 
 -   Xerca Mod
 
 ### Enigmatica 6 v0.3.0
