@@ -161,6 +161,7 @@ woodVariantsToConstruct.forEach((variant) => {
     switch (logType) {
         case 'bulbis':
             logSuffix = '_stem';
+            woodSuffix = '_wood';
             break;
         case 'sythian':
             logSuffix = '_stem';
