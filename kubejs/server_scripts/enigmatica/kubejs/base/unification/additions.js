@@ -60,6 +60,9 @@ function immersiveengineering_gem_ore_processing(event, material) {
 
 function bloodmagic_ore_processing_arc(event, material) {
     var data;
+    if (ingredient.of('#forge:ores/' + material)[0].id == air) {
+        return;
+    }
 
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
@@ -159,6 +162,10 @@ function bloodmagic_ore_processing_arc(event, material) {
 function bloodmagic_ore_processing_alchemy(event, material) {
     var data;
 
+    if (ingredient.of('#forge:ores/' + material)[0].id == air) {
+        return;
+    }
+
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
@@ -204,6 +211,9 @@ function bloodmagic_ore_processing_alchemy(event, material) {
 }
 
 function astralsorcery_ore_processing_infuser(event, material) {
+    if (ingredient.of('#forge:ores/' + material)[0].id == air) {
+        return;
+    }
     blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron', 'gold'];
     for (var i = 0; i < blacklistedMaterials.length; i++) {
         if (blacklistedMaterials[i] == material) {
@@ -261,21 +271,21 @@ function thermal_press_rods(event, material) {
     event.recipes.thermal.press({
         type: 'thermal:press',
         input: [
-          {
-            tag: 'forge:ingots/' + material
-          },
-          {
-            item: 'immersiveengineering:mold_rod'
-          }
+            {
+                tag: 'forge:ingots/' + material
+            },
+            {
+                item: 'immersiveengineering:mold_rod'
+            }
         ],
         result: [
-          {
-            item: rod,
-            count: 2.0
-          }
+            {
+                item: rod,
+                count: 2.0
+            }
         ],
         energy: 2400
-      });
+    });
 }
 
 function thermal_press_wires(event, material) {
@@ -289,21 +299,21 @@ function thermal_press_wires(event, material) {
     event.recipes.thermal.press({
         type: 'thermal:press',
         input: [
-          {
-            tag: 'forge:ingots/' + material
-          },
-          {
-            item: 'immersiveengineering:mold_wire'
-          }
+            {
+                tag: 'forge:ingots/' + material
+            },
+            {
+                item: 'immersiveengineering:mold_wire'
+            }
         ],
         result: [
-          {
-            item: wire,
-            count: 2.0
-          }
+            {
+                item: wire,
+                count: 2.0
+            }
         ],
         energy: 2400
-      });
+    });
 }
 
 // Currently unused
