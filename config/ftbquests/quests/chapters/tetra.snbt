@@ -1,7 +1,7 @@
 {
 	id: 1906,
 	filename: "tetra",
-	order_index: 6,
+	order_index: 11,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
@@ -169,8 +169,8 @@
 					"bow/straight_stave_material": "straight_stave/spruce"
 				}
 			},
-			x: -4.0d,
-			y: -24.5d,
+			x: -7.0d,
+			y: -23.5d,
 			description: [
 				"Put a vanilla bow in the Workbench to get started.",
 				"",
@@ -782,8 +782,8 @@
 					"double/basic_handle_material": "basic_handle/oak"
 				}
 			},
-			x: -8.5d,
-			y: -26.0d,
+			x: -8.0d,
+			y: -21.5d,
 			description: ["The pickaxe head can be used for mining. "],
 			dependencies: [I;2342],
 			optional: true,
@@ -820,7 +820,7 @@
 				}
 			},
 			x: -7.0d,
-			y: -26.0d,
+			y: -22.0d,
 			description: ["The axe can be used to break wooden blocks and for stripping logs. Double Axe Heads provides additional Damage."],
 			dependencies: [I;2342],
 			optional: true,
@@ -854,7 +854,7 @@
 				}
 			},
 			x: -8.5d,
-			y: -24.5d,
+			y: -20.5d,
 			description: ["Craft a sickle which can be used to cut down plants in an area."],
 			dependencies: [I;2342],
 			optional: true,
@@ -887,8 +887,8 @@
 					"double/hoe_left_material": "hoe/iron"
 				}
 			},
-			x: -8.5d,
-			y: -23.0d,
+			x: -8.0d,
+			y: -19.5d,
 			description: ["The hoe can be used for harvesting plants and for tilling soil. "],
 			dependencies: [I;2342],
 			optional: true,
@@ -922,7 +922,7 @@
 				}
 			},
 			x: -7.0d,
-			y: -19.5d,
+			y: -19.0d,
 			description: ["The claw can be used for prying things open and to quickly break most wooden blocks."],
 			dependencies: [I;2342],
 			optional: true,
@@ -958,8 +958,8 @@
 					"double/handle/settle_progress": 222
 				}
 			},
-			x: -5.5d,
-			y: -24.5d,
+			x: -6.0d,
+			y: -19.5d,
 			description: ["The adze can be used for digging and for chopping wood."],
 			dependencies: [I;2342],
 			optional: true,
@@ -977,7 +977,7 @@
 		{
 			title: "Double Headed Tools",
 			x: -7.0d,
-			y: -24.5d,
+			y: -20.5d,
 			description: [
 				"Double headed tools can be made from either Axes or Pickaxes. ",
 				"",
@@ -1066,7 +1066,7 @@
 		{
 			title: "Swords",
 			x: -7.0d,
-			y: -18.0d,
+			y: -17.5d,
 			description: [
 				"Useful for hurting things, and slaying stuff!",
 				"",
@@ -1120,7 +1120,7 @@
 				}
 			},
 			x: -8.5d,
-			y: -16.5d,
+			y: -16.0d,
 			description: ["A Basic Blade with balanced damage and speed."],
 			dependencies: [I;2349],
 			optional: true,
@@ -1156,7 +1156,7 @@
 				}
 			},
 			x: -5.5d,
-			y: -16.5d,
+			y: -16.0d,
 			description: ["A Heavy Blade with high damage but a decreased attack speed."],
 			dependencies: [I;2349],
 			optional: true,
@@ -1192,7 +1192,7 @@
 				}
 			},
 			x: -7.5d,
-			y: -16.5d,
+			y: -16.0d,
 			description: ["A machete can be used to cut down web and some types of plants in an area."],
 			dependencies: [I;2349],
 			optional: true,
@@ -1228,7 +1228,7 @@
 				}
 			},
 			x: -6.5d,
-			y: -16.5d,
+			y: -16.0d,
 			description: ["A light and short blad that can be used for crafting and for offhand attacks. "],
 			dependencies: [I;2349],
 			optional: true,
@@ -1245,8 +1245,8 @@
 		},
 		{
 			title: "Shield",
-			x: 0.0d,
-			y: -26.0d,
+			x: -4.5d,
+			y: -25.0d,
 			description: ["Tetra Shields are made from the basic vanilla shield."],
 			dependencies: [I;1907],
 			optional: true,
@@ -1362,8 +1362,8 @@
 					"double/basic_handle_material": "basic_handle/oak"
 				}
 			},
-			x: -5.5d,
-			y: -26.0d,
+			x: -6.0d,
+			y: -21.5d,
 			description: ["Used as the back side of single sided tools, typically yields faster swing speed than double sided tools. Can sometimes be used for hammering if crafted from a sturdy material. "],
 			dependencies: [I;2342],
 			optional: true,
@@ -1394,8 +1394,8 @@
 					"shield/grip": "shield/basic_grip"
 				}
 			},
-			x: -1.0d,
-			y: -27.0d,
+			x: -5.5d,
+			y: -25.0d,
 			description: ["Bucklers provide a passive toughness bonus but cannot be used to block."],
 			dependencies: [I;2361],
 			optional: true,
@@ -1426,8 +1426,8 @@
 					"shield/heater_material": "heater/iron"
 				}
 			},
-			x: 0.5d,
-			y: -27.0d,
+			x: -4.5d,
+			y: -26.0d,
 			description: ["Heaters can block for a limited time before going on cooldown."],
 			dependencies: [I;2361],
 			optional: true,
@@ -1458,8 +1458,8 @@
 					"shield/tower_material": "tower/iron"
 				}
 			},
-			x: 2.0d,
-			y: -27.0d,
+			x: -3.5d,
+			y: -25.0d,
 			description: ["Tower shields can block indefinitely with no cooldown but uses more integrity than other types of shields."],
 			dependencies: [I;2361],
 			optional: true,
@@ -1496,8 +1496,8 @@
 					Damage: 0
 				}
 			},
-			x: -2.5d,
-			y: -24.5d,
+			x: -7.0d,
+			y: -25.0d,
 			description: ["The Longbow has high damage/velocity, but slow draw speed."],
 			dependencies: [I;1919],
 			optional: true,
@@ -1534,8 +1534,8 @@
 					Damage: 0
 				}
 			},
-			x: -4.0d,
-			y: -26.0d,
+			x: -8.5d,
+			y: -23.5d,
 			description: ["The Recurve Bow has low damage/velocy, but fast draw speed."],
 			dependencies: [I;1919],
 			optional: true,

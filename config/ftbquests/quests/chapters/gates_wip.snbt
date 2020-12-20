@@ -3,7 +3,14 @@
 	filename: "gates_wip",
 	order_index: 25,
 	title: "Gates WIP",
-	icon: "minecraft:oak_fence_gate",
+	icon: "mapperbase:steel_fence_gate",
+	always_invisible: true,
 	default_quest_shape: "",
-	quests: []
+	quests: [{
+		title: "The Experts 2: Electric Boogalo",
+		icon: "mekanism:robit",
+		x: 0.0d,
+		y: 0.0d,
+		id: 2924
+	}]
 }
