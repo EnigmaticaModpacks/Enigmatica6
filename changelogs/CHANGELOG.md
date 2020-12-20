@@ -1,13 +1,41 @@
 ### Enigmatica 6 v0.3.1
 
-_Using Forge-1.16.4-35.1.7_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
+_Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
 
 **Fixed a host of issues with dimensions, including the Ender Dragon not spawning, missing biomes and random biomes.
 For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) made by the ATM team, to fix your existing world.**
 
 **Added**
 
-**Changes**
+- 'Dustrial Decor
+- Alex's Mobs
+- Architectury (Forge)
+- Artifacts
+- Astral Sorcery
+- Blood Magic 
+- Citadel
+- Clockout
+- CodeChicken Lib 1.8.+
+- Create
+- Demagnetize
+- Ender Storage 1.8.+
+- ExtraStorage
+- Immersive Petroleum
+- KubeJS Blood Magic
+- KubeJS Immersive Engineering
+- KubeJS Mekanism
+- KubeJS Thermal
+- Mod Name Tooltip
+- More MobGriefing Options
+- ObserverLib
+- Portable Stonecutter
+- RFTools Power
+- Restriction: Re-Restricted
+- Shrink.
+- Sophisticated Backpacks
+- The Undergarden
+
+**Improvements**
 
 -   Loading: Removed color changes to the Mojang brand.
 -   Quark: Re-added Vertical Slabs, as turning them off had no benefit.
@@ -17,10 +45,26 @@ For existing worlds, however, you have to manually clean the mess. If you can re
 -   Removed the XP fluid bucket exchange recipe because of a bug, will be readded later on.
 -   Aquaculture: Removed the Knives except the Neptunium variant, they have been replaced by Farmer's Delight Knives.
 -   On login, the player is now given the quest book in stead of the Modded for Dummies book. The Modded for Dummies book is now a quest reward for one of the first quests, but is also craftable.
+-   Cobblegen Randomizer Create Compat [\#565](https://github.com/NillerMedDild/Enigmatica6/issues/565)
+-   Tetra Tool Rewards [\#547](https://github.com/NillerMedDild/Enigmatica6/issues/547)
+-   Astral Sorcery Starlight Infusion Compat [\#519](https://github.com/NillerMedDild/Enigmatica6/issues/519)
+-   Blood Magic Alchemy Table [\#518](https://github.com/NillerMedDild/Enigmatica6/issues/518)
+-   Blood Magic ore processing compat [\#516](https://github.com/NillerMedDild/Enigmatica6/issues/516)
+-   Powah quests suggestion [\#497](https://github.com/NillerMedDild/Enigmatica6/issues/497)
+-   BYG sapling support in Botany Pots [\#489](https://github.com/NillerMedDild/Enigmatica6/issues/489)
+-   Thermal and IE slag compatability [\#479](https://github.com/NillerMedDild/Enigmatica6/issues/479)
+-   "Oh The Biomes You'll Go" tree seeds in the Market [\#461](https://github.com/NillerMedDild/Enigmatica6/issues/461)
+-   Mekanism Tools nerf [\#460](https://github.com/NillerMedDild/Enigmatica6/issues/460)
+-   Resourceful Bee guide book recipe change [\#454](https://github.com/NillerMedDild/Enigmatica6/issues/454)
+-   New Essence \<-\> Memory Essence recipe [\#453](https://github.com/NillerMedDild/Enigmatica6/issues/453)
+-   Tag-based Ladder Recipe [\#425](https://github.com/NillerMedDild/Enigmatica6/issues/425)
+-   Resourceful bees beelancing 
 
 **Bug Fixes**
 
--   **Removed**
+-	
+
+**Removed**
 
 -   Actually Useful Stonecutter
 -   Xerca Mod
