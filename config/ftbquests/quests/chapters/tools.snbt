@@ -1,7 +1,7 @@
 {
 	id: 147,
 	filename: "tools",
-	order_index: 4,
+	order_index: 5,
 	title: "Tools",
 	icon: {
 		id: "minecraft:netherite_pickaxe",
@@ -1038,8 +1038,8 @@
 			]
 		},
 		{
-			x: -10.0d,
-			y: -12.5d,
+			x: -10.5d,
+			y: -12.0d,
 			subtitle: "This Little Light of Mine",
 			description: [
 				"A dream come true for any beginning spelunker.",
@@ -1881,6 +1881,32 @@
 				id: 1636,
 				type: "loot",
 				table: 52
+			}]
+		},
+		{
+			x: -9.5d,
+			y: -12.0d,
+			subtitle: "Chiseled like a Greek God",
+			description: [
+				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!",
+				"",
+				"All the power of a Stone Cutter, now in a compact portable format that fits in the palm of your hand.",
+				"",
+				"Disclaimer: Will not actually cook or clean. Not for Commercial Use",
+				"",
+				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
+			],
+			dependencies: [I;1134],
+			id: 2807,
+			tasks: [{
+				id: 2808,
+				type: "item",
+				item: "portable_stonecutter:portable_stonecutter"
+			}],
+			rewards: [{
+				id: 2827,
+				type: "loot",
+				table: 13
 			}]
 		}
 	]

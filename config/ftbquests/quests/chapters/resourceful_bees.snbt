@@ -1,544 +1,828 @@
 {
-    id: 1805,
-    filename: "to_bee_or_not_to_bee",
-    order_index: 0,
-    title: "Resourceful Bees",
-    icon: "minecraft:honeycomb",
-    subtitle: ["Feed the Bees"],
-    default_quest_shape: "hexagon",
-    quests: [
-        {
-            title: "Bee Nests",
-            x: -11.5d,
-            y: -18.0d,
-            subtitle: "You must take care of Bees because you’re definitely a Keeper",
-            description: [
-                "Bee Nests are the most basic housing method for bees. While they lack an inventory, they can be upgraded to Hives which grants you more control over the population and production of your Bees.",
-                "",
-                "Note: Bee Nests only produce standard Honeycombs regardless of the type of bees it houses."
-            ],
-            dependencies: [I;2708],
-            id: 1806,
-            tasks: [{
-                id: 1807,
-                type: "item",
-                title: "Any minecraft:beehives",
-                item: {
-                    id: "itemfilters:tag",
-                    Count: true,
-                    tag: {
-                        value: "minecraft:beehives"
-                    }
-                },
-                consume_items: false,
-                only_from_crafting: true
-            }],
-            rewards: [{
-                id: 1809,
-                type: "item",
-                item: "resourcefulbees:bee_jar",
-                count: 4
-            }]
-        },
-        {
-            title: "Tier 2 Bees",
-            icon: "resourcefulbees:gold_honeycomb",
-            x: -9.0d,
-            y: -16.5d,
-            subtitle: "Appearances can Bee deceiving",
-            description: [
-                "Tier 2 Bees are obtained through bee to bee breeding, triggered by giving the bees the needed items.",
-                "",
-                "Please refer to JEI for more information on specific bees."
-            ],
-            dependencies: [I;1812],
-            id: 1810,
-            tasks: [{
-                id: 1811,
-                type: "checkmark"
-            }]
-        },
-        {
-            title: "Tier 1 Bees",
-            icon: "minecraft:honeycomb",
-            x: -10.0d,
-            y: -16.5d,
-            subtitle: "Not all it’s cracked up to Bee",
-            description: [
-                "Tier 1 Bees spawn naturally in the world, and are the “building bees” for all other kinds of bees.",
-                "",
-                "Hint: JEI displays whether a bee spawns naturally or not."
-            ],
-            dependencies: [I;2708],
-            id: 1812,
-            tasks: [{
-                id: 1813,
-                type: "checkmark"
-            }]
-        },
-        {
-            title: "Bee Mutation",
-            icon: "resourcefulbees:bee_jar",
-            x: -13.0d,
-            y: -16.5d,
-            subtitle: "Doctors say the chances of this are 1 in a Beellion",
-            description: [
-                "While Bee Breeding is as simple as providing the necessary breeding items to the Bees, to become a seasoned apiarist you should learn how to encourage mutations in your Bees at a genetic level.",
-                "",
-                "Please refer to JEI for more information on your Bees and their abilities."
-            ],
-            dependencies: [I;2708],
-            id: 1814,
-            tasks: [{
-                id: 1815,
-                type: "checkmark"
-            }]
-        },
-        {
-            title: "Tier 3 Bees",
-            icon: "resourcefulbees:diamond_honeycomb",
-            x: -8.0d,
-            y: -16.5d,
-            subtitle: "A force to Bee reckoned with",
-            description: [
-                "Tier 3 Bees are also obtained through bee to bee breeding, but these bees require entire blocks of their respective materials to breed.",
-                "",
-                "Please refer to JEI for more information on specific bees."
-            ],
-            dependencies: [I;1810],
-            id: 1816,
-            tasks: [{
-                id: 1817,
-                type: "checkmark"
-            }]
-        },
-        {
-            x: -10.0d,
-            y: -18.0d,
-            subtitle: "Will you please Beehive, we are in public",
-            description: [
-                "piaries are Tier based multiblock structures which can house 9 Unique Bees, as well as providing a safe enclosed environment for our buzzy friends to thrive, and produce our resources. The higher the Tier of the Apiary, the more and faster it will produce for you.",
-                "",
-                "Apiaries can also house 2 other functional blocks (Apiary Storage, and Apiary Breeder) as part of its structure. Please refer to their respective quest section for more information.",
-                "",
-                "Please refer to your 'Fifty Shades of Bees’ for more detailed information about the Apiaries, and to visualize the structure which should help you construct it."
-            ],
-            dependencies: [I;1806],
-            id: 1827,
-            tasks: [{
-                id: 1828,
-                type: "item",
-                item: "resourcefulbees:t1_beehive",
-                only_from_crafting: false
-            }]
-        },
-        {
-            x: -9.0d,
-            y: -18.0d,
-            subtitle: "The benefits of having a hive is un-Bee-lievable",
-            dependencies: [I;1827],
-            id: 1831,
-            tasks: [{
-                id: 1834,
-                type: "item",
-                item: "resourcefulbees:t2_beehive"
-            }],
-            rewards: [{
-                id: 1894,
-                type: "item",
-                item: "minecraft:honeycomb_block",
-                count: 16
-            }]
-        },
-        {
-            title: "Vanilla Bee Mechanics",
-            icon: "minecraft:bee_nest",
-            x: -12.5d,
-            y: -15.0d,
-            subtitle: "To Bee or not to Bee",
-            description: [
-                "Both Vanilla and Modded Bees can be found bumbling around in their preferred biomes and dimensions.",
-                "",
-                "Observe them long enough and you will notice that after they fly out to pollinate the area around them, they’ll eventually return to their nest/hive to bee-gin the honey making process.",
-                "",
-                "Honey dripping and overflowing from the nest/hive is the visual indicator that it is ready for harvesting.  But don’t be too hasty! Proper tools are required to harvest that golden sweetness without angering your bee buddies!",
-                "",
-                "You can either place a Campfire under the nest/hive or use a Smoker to avoid aggravating the local buzzy residents.",
-                "",
-                "Honey Bottles can be collected by right clicking the nest/hive with an Empty Bottle.",
-                "",
-                "Honeycombs can be collected by right clicking the nest/hive with Shears, or Scraper (for Tiered Beehives)."
-            ],
-            dependencies: [I;2708],
-            id: 2164,
-            tasks: [{
-                id: 2165,
-                type: "checkmark"
-            }]
-        },
-        {
-            title: "Resourceful Bees",
-            x: -11.5d,
-            y: -16.5d,
-            shape: "gear",
-            subtitle: "Yes. There will Bee many puns",
-            description: [
-                "Resourceful Bees is a new take on Resource Generation utilizing one of the latest entities introduced to Minecraft: Our Buzzy Little Friends, the Bees.",
-                "",
-                "This questline should help explain some of the basics of proper bee keeping, mutations, resource extraction, and tiers of bees and their hives."
-            ],
-            id: 2708,
-            tasks: [{
-                id: 2709,
-                type: "checkmark",
-                title: "Intro ",
-                icon: {
-                    id: "patchouli:guide_book",
-                    Count: true,
-                    tag: {
-                        "patchouli:book": "resourcefulbees:fifty_shades_of_bees"
-                    }
-                }
-            }],
-            rewards: [{
-                id: 2710,
-                type: "item",
-                item: {
-                    id: "patchouli:guide_book",
-                    Count: true,
-                    tag: {
-                        "patchouli:book": "resourcefulbees:fifty_shades_of_bees"
-                    }
-                }
-            }]
-        },
-        {
-            title: "Combs",
-            x: -10.5d,
-            y: -15.0d,
-            subtitle: "Bees style their hair with a Honeycomb",
-            description: ["Combs are a byproduct of beekeeping,  which can be harvested from Bee Hives and Bee Nests. It can be processed at a later date in the Centrifuge for Honey, Wax, and a plethora of other Resources."],
-            dependencies: [I;2708],
-            id: 2711,
-            tasks: [{
-                id: 2712,
-                type: "item",
-                title: "Any resourcefulbees:resourceful_honeycomb",
-                item: {
-                    id: "itemfilters:tag",
-                    Count: true,
-                    tag: {
-                        value: "resourcefulbees:resourceful_honeycomb"
-                    }
-                }
-            }]
-        },
-        {
-            x: -9.5d,
-            y: -15.0d,
-            subtitle: "Time to Bee productive",
-            description: [
-                "This is an entry-level type of Centrifuge that allows the player to manually turn Honeycombs into their byproducts. Sneak + Right Click the machine to process.",
-                "",
-                "Note: Empty Bottles are required to store the liquid honey."
-            ],
-            dependencies: [I;2711],
-            id: 2713,
-            tasks: [{
-                id: 2714,
-                type: "item",
-                item: "resourcefulbees:mechanical_centrifuge"
-            }]
-        },
-        {
-            title: "Powered Centrifuge",
-            x: -8.5d,
-            y: -15.0d,
-            subtitle: "Buzzing with power",
-            description: [
-                "Now that you’ve got a taste for that bee-autiful honey, it’s time to set aside these bee-laboured manual practices and get buzzy automating.  Enter The-All-New-and-Improved Centrifuge: perfect for extracting that golden goodness accumulated by our buzzy friends.",
-                "",
-                "The Centrifuge increases the efficiency of Honeycomb processing at the cost of energy."
-            ],
-            dependencies: [I;2713],
-            id: 2715,
-            tasks: [{
-                id: 2716,
-                type: "item",
-                item: "resourcefulbees:centrifuge"
-            }]
-        },
-        {
-            title: "Multiblock Centrifuge",
-            x: -7.5d,
-            y: -15.0d,
-            subtitle: "Now we’re in Bees-ness",
-            description: [
-                "You know what they say; Go big, or go home. Well, it doesn’t get any bigger than this. With the basics of Honeycomb processing bee-hind you, it’s time to turn it up to 11 and upscale production.",
-                "",
-                "While the Multiblock Centrifuge requires more materials to craft and more space to set up, it will pay for itself bee-fore you realize. It is also capable of processing Honeycomb Blocks in addition to standard Honeycombs and buzz through multiple inputs at once.",
-                "",
-                "Once you have collected all the necessary blocks, you can use your ‘Fifty Shades of Bees’ book to visualize the structure, which should help with the correct block placements."
-            ],
-            dependencies: [I;2715],
-            id: 2717,
-            tasks: [
-                {
-                    id: 2718,
-                    type: "item",
-                    item: "resourcefulbees:centrifuge_controller"
-                },
-                {
-                    id: 2758,
-                    type: "item",
-                    item: "resourcefulbees:centrifuge_casing",
-                    count: 35L
-                }
-            ]
-        },
-        {
-            x: -5.5d,
-            y: -21.0d,
-            subtitle: "There’s something Bee-tween us and it’s not just your stinger",
-            dependencies: [I;2732],
-            id: 2719,
-            tasks: [{
-                id: 2720,
-                type: "item",
-                item: "resourcefulbees:apiary_breeder_upgrade"
-            }]
-        },
-        {
-            x: -8.0d,
-            y: -18.0d,
-            subtitle: "Only Bees who are on their best Bee-havior get to go to the Hive and make Honey",
-            dependencies: [I;1831],
-            id: 2726,
-            tasks: [{
-                id: 2727,
-                type: "item",
-                item: "resourcefulbees:t3_beehive"
-            }]
-        },
-        {
-            x: -7.0d,
-            y: -18.0d,
-            subtitle: "Hive never felt this way Bee-fore",
-            dependencies: [I;2726],
-            id: 2728,
-            tasks: [{
-                id: 2729,
-                type: "item",
-                item: "resourcefulbees:t4_beehive"
-            }]
-        },
-        {
-            x: -7.5d,
-            y: -20.5d,
-            subtitle: "Mind your own Beeswax",
-            description: [
-                "This block grants you access to the output of your Apiary Multiblock and Apiary Breeder. It can also interact with other means of logistical automation.",
-                "",
-                "The Storage Capacity can also be upgraded with ‘Storage Upgrades’."
-            ],
-            dependencies: [I;2744],
-            id: 2730,
-            tasks: [{
-                id: 2731,
-                type: "item",
-                item: "resourcefulbees:apiary_storage"
-            }]
-        },
-        {
-            x: -6.5d,
-            y: -20.5d,
-            subtitle: "Let’s make a Bee-line for the bedroom",
-            description: [
-                "This block grants you the ability to breed your Bees in a Jar when provided with the required materials, to trigger the breeding state, and an empty jar to house the output bee.",
-                "",
-                "The output can also be accessed through the Apiary Storage for further automation.",
-                "",
-                "Additional upgrades can help speed up the breeding process by reducing the time required, and the addition of extra breeding slots."
-            ],
-            dependencies: [I;2744],
-            id: 2732,
-            tasks: [{
-                id: 2733,
-                type: "item",
-                item: "resourcefulbees:apiary_breeder"
-            }]
-        },
-        {
-            x: -5.5d,
-            y: -20.0d,
-            subtitle: "The male Bee was such a romantic, he kept Pollen in love with all the female Bees",
-            dependencies: [I;2732],
-            id: 2734,
-            tasks: [{
-                id: 2735,
-                type: "item",
-                item: "resourcefulbees:apiary_breed_time_upgrade"
-            }]
-        },
-        {
-            x: -8.5d,
-            y: -20.5d,
-            subtitle: "More space to Bee filled",
-            dependencies: [I;2730],
-            id: 2736,
-            tasks: [{
-                id: 2737,
-                type: "item",
-                item: "resourcefulbees:iron_storage_upgrade"
-            }]
-        },
-        {
-            x: -9.5d,
-            y: -20.5d,
-            subtitle: "Golden Bee-ling",
-            dependencies: [I;2736],
-            id: 2738,
-            tasks: [{
-                id: 2739,
-                type: "item",
-                item: "resourcefulbees:gold_storage_upgrade"
-            }]
-        },
-        {
-            x: -10.5d,
-            y: -20.5d,
-            subtitle: "We better Bee prepared for a cold winter",
-            dependencies: [I;2738],
-            id: 2740,
-            tasks: [{
-                id: 2741,
-                type: "item",
-                item: "resourcefulbees:diamond_storage_upgrade"
-            }]
-        },
-        {
-            x: -11.5d,
-            y: -20.5d,
-            subtitle: "Upkeep Rank: Bee+",
-            dependencies: [I;2740],
-            id: 2742,
-            tasks: [{
-                id: 2743,
-                type: "item",
-                item: "resourcefulbees:emerald_storage_upgrade"
-            }]
-        },
-        {
-            x: -7.0d,
-            y: -19.5d,
-            subtitle: " Time to Bee-friend the new neighbors",
-            description: [
-                "Apiaries are Tier based multiblock structures which can house 9 Unique Bees, as well as providing a safe enclosed environment for our buzzy friends to thrive, and produce our resources. The higher the Tier of the Apiary, the more and faster it will produce for you.",
-                "",
-                "Apiaries can also house 2 other functional blocks (Apiary Storage, and Apiary Breeder) as part of its structure. Please refer to their respective quest section for more information.",
-                "",
-                "Please refer to your 'Fifty Shades of Bees’ for more detailed information about the Apiaries, and to visualize the structure which should help you construct it.",
-                ""
-            ],
-            dependencies: [I;2728],
-            id: 2744,
-            tasks: [{
-                id: 2745,
-                type: "item",
-                item: "resourcefulbees:t1_apiary"
-            }]
-        },
-        {
-            x: -8.0d,
-            y: -19.5d,
-            subtitle: "Quit Pollen my leg",
-            dependencies: [I;2744],
-            id: 2746,
-            tasks: [{
-                id: 2747,
-                type: "item",
-                item: "resourcefulbees:t2_apiary"
-            }]
-        },
-        {
-            x: -9.0d,
-            y: -19.5d,
-            subtitle: "The Bees went on strike because they wanted more Honey and less working Flowers",
-            dependencies: [I;2746],
-            id: 2748,
-            tasks: [{
-                id: 2749,
-                type: "item",
-                item: "resourcefulbees:t3_apiary"
-            }]
-        },
-        {
-            x: -10.0d,
-            y: -19.5d,
-            subtitle: "Claustropho-Bee-a intensifies",
-            dependencies: [I;2748],
-            id: 2750,
-            tasks: [{
-                id: 2751,
-                type: "item",
-                item: "resourcefulbees:t4_apiary"
-            }]
-        },
-        {
-            title: "Block Based Mutations",
-            x: -13.73979591836735d,
-            y: -16.484693877551017d,
-            subtitle: "Beauty is in the eye of the Bee-holder",
-            description: [
-                "Certain types of Bees have the ability to mutate Blocks into other Blocks as long as they meet the requirements, and are able to fly near these blocks.",
-                "",
-                "Example: If an Iron Bee is returning to the nest/hive passes over Stone, it can mutate it into Iron Ore."
-            ],
-            dependencies: [I;1814],
-            id: 2752,
-            tasks: [{
-                id: 2753,
-                type: "item",
-                item: "minecraft:stone"
-            }]
-        },
-        {
-            title: "Fluid Based Mutations",
-            x: -13.372448979591837d,
-            y: -15.811224489795919d,
-            subtitle: "What do you call a bee that needs a drink? Bee-hydrated",
-            description: [
-                "Certain types of Bees have the ability to mutate Blocks into Fluids, and Vice Verse as long as they meet the requirements, and are able to fly near these blocks/fluids.",
-                "",
-                "Example: If an Obsidian Bee is returning to the nest/hive passes over a Lava Source, it can mutate it into Obsidian."
-            ],
-            dependencies: [I;1814],
-            id: 2754,
-            tasks: [{
-                id: 2755,
-                type: "item",
-                item: "minecraft:lava_bucket"
-            }]
-        },
-        {
-            title: "Entity Based Mutations",
-            x: -13.372448979591837d,
-            y: -17.158163265306122d,
-            subtitle: "Let’s get together and cross Pollinate",
-            description: [
-                "Certain types of Bees have the ability to mutate Entities into other Entities, as long as they meet the requirements, and are able to fly close to those entities.",
-                "",
-                "Example: If a Blaze Bee is returning to the nest/hive passes near a Creeper Bee, it can mutate it into a Ghast Bee.",
-                "",
-                "Note: At the moment this is the only available mutation for the Entity Based Mutations, but more will be added in the future where fitting."
-            ],
-            dependencies: [I;1814],
-            id: 2756,
-            tasks: [{
-                id: 2757,
-                type: "item",
-                item: "minecraft:pufferfish_spawn_egg"
-            }]
-        }
-    ]
+	id: 1805,
+	filename: "resourceful_bees",
+	order_index: 21,
+	title: "Resourceful Bees",
+	icon: "minecraft:honeycomb",
+	subtitle: ["Feed the Bees"],
+	default_quest_shape: "hexagon",
+	quests: [
+		{
+			title: "Bee Nests",
+			x: -11.5d,
+			y: -18.0d,
+			subtitle: "You must take care of Bees because you’re definitely a Keeper",
+			description: [
+				"Bee Nests are the most basic housing method for bees. While they lack an inventory, they can be upgraded to Hives which grants you more control over the population and production of your Bees.",
+				"",
+				"Note: Bee Nests only produce standard Honeycombs regardless of the type of bees it houses."
+			],
+			dependencies: [I;2708],
+			id: 1806,
+			tasks: [{
+				id: 1807,
+				type: "item",
+				title: "Any minecraft:beehives",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "minecraft:beehives"
+					}
+				},
+				consume_items: false,
+				only_from_crafting: true
+			}],
+			rewards: [
+				{
+					id: 1809,
+					type: "item",
+					title: "Empty Bee Jar",
+					item: "resourcefulbees:bee_jar",
+					count: 4
+				},
+				{
+					id: 2824,
+					type: "item",
+					title: "Honey Cookie",
+					item: "farmersdelight:honey_cookie",
+					random_bonus: 2
+				}
+			]
+		},
+		{
+			title: "Tier 2 Bees",
+			icon: "resourcefulbees:gold_honeycomb",
+			x: -9.0d,
+			y: -16.5d,
+			subtitle: "Appearances can Bee deceiving",
+			description: [
+				"Tier 2 Bees are obtained through bee to bee breeding, triggered by giving the bees the needed items.",
+				"",
+				"Please refer to JEI for more information on specific bees."
+			],
+			dependencies: [I;1812],
+			id: 1810,
+			tasks: [{
+				id: 1811,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2834,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Tier 1 Bees",
+			icon: "minecraft:honeycomb",
+			x: -10.0d,
+			y: -16.5d,
+			subtitle: "Not all it’s cracked up to Bee",
+			description: [
+				"Tier 1 Bees spawn naturally in the world, and are the “building bees” for all other kinds of bees.",
+				"",
+				"Hint: JEI displays whether a bee spawns naturally or not."
+			],
+			dependencies: [I;2708],
+			id: 1812,
+			tasks: [{
+				id: 1813,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2833,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Bee Mutation",
+			icon: "resourcefulbees:bee_jar",
+			x: -13.0d,
+			y: -16.5d,
+			subtitle: "Doctors say the chances of this are 1 in a Beellion",
+			description: [
+				"While Bee Breeding is as simple as providing the necessary breeding items to the Bees, to become a seasoned apiarist you should learn how to encourage mutations in your Bees at a genetic level.",
+				"",
+				"Please refer to JEI for more information on your Bees and their abilities."
+			],
+			dependencies: [I;2708],
+			id: 1814,
+			tasks: [{
+				id: 1815,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2825,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Tier 3 Bees",
+			icon: "resourcefulbees:diamond_honeycomb",
+			x: -8.0d,
+			y: -16.5d,
+			subtitle: "A force to Bee reckoned with",
+			description: [
+				"Tier 3 Bees are also obtained through bee to bee breeding, but these bees require entire blocks of their respective materials to breed.",
+				"",
+				"Please refer to JEI for more information on specific bees."
+			],
+			dependencies: [I;1810],
+			id: 1816,
+			tasks: [{
+				id: 1817,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2835,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -18.0d,
+			subtitle: "Will you please Beehive, we are in public",
+			description: [
+				"piaries are Tier based multiblock structures which can house 9 Unique Bees, as well as providing a safe enclosed environment for our buzzy friends to thrive, and produce our resources. The higher the Tier of the Apiary, the more and faster it will produce for you.",
+				"",
+				"Apiaries can also house 2 other functional blocks (Apiary Storage, and Apiary Breeder) as part of its structure. Please refer to their respective quest section for more information.",
+				"",
+				"Please refer to your 'Fifty Shades of Bees’ for more detailed information about the Apiaries, and to visualize the structure which should help you construct it."
+			],
+			dependencies: [I;1806],
+			id: 1827,
+			tasks: [{
+				id: 1828,
+				type: "item",
+				item: "resourcefulbees:t1_beehive",
+				only_from_crafting: false
+			}],
+			rewards: [{
+				id: 2836,
+				type: "item",
+				title: "Honeycomb",
+				item: "minecraft:honeycomb",
+				count: 8,
+				random_bonus: 8
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -18.0d,
+			subtitle: "The benefits of having a hive is un-Bee-lievable",
+			dependencies: [I;1827],
+			id: 1831,
+			tasks: [{
+				id: 1834,
+				type: "item",
+				item: "resourcefulbees:t2_beehive"
+			}],
+			rewards: [{
+				id: 1894,
+				type: "item",
+				title: "Honeycomb Block",
+				item: "minecraft:honeycomb_block",
+				count: 8,
+				random_bonus: 8
+			}]
+		},
+		{
+			title: "Vanilla Bee Mechanics",
+			icon: "minecraft:bee_nest",
+			x: -12.5d,
+			y: -15.0d,
+			subtitle: "To Bee or not to Bee",
+			description: [
+				"Both Vanilla and Modded Bees can be found bumbling around in their preferred biomes and dimensions.",
+				"",
+				"Observe them long enough and you will notice that after they fly out to pollinate the area around them, they’ll eventually return to their nest/hive to bee-gin the honey making process.",
+				"",
+				"Honey dripping and overflowing from the nest/hive is the visual indicator that it is ready for harvesting.  But don’t be too hasty! Proper tools are required to harvest that golden sweetness without angering your bee buddies!",
+				"",
+				"You can either place a Campfire under the nest/hive or use a Smoker to avoid aggravating the local buzzy residents.",
+				"",
+				"Honey Bottles can be collected by right clicking the nest/hive with an Empty Bottle.",
+				"",
+				"Honeycombs can be collected by right clicking the nest/hive with Shears, or Scraper (for Tiered Beehives)."
+			],
+			dependencies: [I;2708],
+			id: 2164,
+			tasks: [{
+				id: 2165,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2822,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Resourceful Bees",
+			x: -11.5d,
+			y: -16.5d,
+			shape: "gear",
+			subtitle: "Yes. There will Bee many puns",
+			description: [
+				"Resourceful Bees is a new take on Resource Generation utilizing one of the latest entities introduced to Minecraft: Our Buzzy Little Friends, the Bees.",
+				"",
+				"This questline should help explain some of the basics of proper bee keeping, mutations, resource extraction, and tiers of bees and their hives."
+			],
+			id: 2708,
+			tasks: [{
+				id: 2709,
+				type: "checkmark",
+				title: "Checkmark",
+				icon: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+					}
+				}
+			}],
+			rewards: [{
+				id: 2710,
+				type: "item",
+				title: "Fifty Shades of Bees",
+				item: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
+					}
+				}
+			}]
+		},
+		{
+			title: "Combs",
+			x: -10.5d,
+			y: -15.0d,
+			subtitle: "Bees style their hair with a Honeycomb",
+			description: ["Combs are a byproduct of beekeeping,  which can be harvested from Bee Hives and Bee Nests. It can be processed at a later date in the Centrifuge for Honey, Wax, and a plethora of other Resources."],
+			dependencies: [I;2708],
+			id: 2711,
+			tasks: [{
+				id: 2712,
+				type: "item",
+				title: "Any resourcefulbees:resourceful_honeycomb",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "resourcefulbees:resourceful_honeycomb"
+					}
+				}
+			}],
+			rewards: [
+				{
+					id: 2820,
+					type: "item",
+					title: "Shears",
+					item: {
+						id: "minecraft:shears",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 2821,
+					type: "loot",
+					table: 11
+				}
+			]
+		},
+		{
+			x: -9.5d,
+			y: -15.0d,
+			subtitle: "Time to Bee productive",
+			description: [
+				"This is an entry-level type of Centrifuge that allows the player to manually turn Honeycombs into their byproducts. Sneak + Right Click the machine to process.",
+				"",
+				"Note: Empty Bottles are required to store the liquid honey."
+			],
+			dependencies: [I;2711],
+			id: 2713,
+			tasks: [{
+				id: 2714,
+				type: "item",
+				item: "resourcefulbees:mechanical_centrifuge"
+			}],
+			rewards: [{
+				id: 2819,
+				type: "loot",
+				title: "Rare Resourceful Bees Loot Box",
+				table: 23
+			}]
+		},
+		{
+			title: "Powered Centrifuge",
+			x: -8.5d,
+			y: -15.0d,
+			subtitle: "Buzzing with power",
+			description: [
+				"Now that you’ve got a taste for that bee-autiful honey, it’s time to set aside these bee-laboured manual practices and get buzzy automating.  Enter The-All-New-and-Improved Centrifuge: perfect for extracting that golden goodness accumulated by our buzzy friends.",
+				"",
+				"The Centrifuge increases the efficiency of Honeycomb processing at the cost of energy."
+			],
+			dependencies: [I;2713],
+			id: 2715,
+			tasks: [{
+				id: 2716,
+				type: "item",
+				item: "resourcefulbees:centrifuge"
+			}],
+			rewards: [{
+				id: 2818,
+				type: "loot",
+				title: "Epic Resourceful Bees Loot Box",
+				table: 24
+			}]
+		},
+		{
+			title: "Multiblock Centrifuge",
+			x: -7.5d,
+			y: -15.0d,
+			subtitle: "Now we’re in Bees-ness",
+			description: [
+				"You know what they say; Go big, or go home. Well, it doesn’t get any bigger than this. With the basics of Honeycomb processing bee-hind you, it’s time to turn it up to 11 and upscale production.",
+				"",
+				"While the Multiblock Centrifuge requires more materials to craft and more space to set up, it will pay for itself bee-fore you realize. It is also capable of processing Honeycomb Blocks in addition to standard Honeycombs and buzz through multiple inputs at once.",
+				"",
+				"Once you have collected all the necessary blocks, you can use your ‘Fifty Shades of Bees’ book to visualize the structure, which should help with the correct block placements."
+			],
+			dependencies: [I;2715],
+			id: 2717,
+			tasks: [
+				{
+					id: 2718,
+					type: "item",
+					item: "resourcefulbees:centrifuge_controller"
+				},
+				{
+					id: 2758,
+					type: "item",
+					item: "resourcefulbees:centrifuge_casing",
+					count: 35L
+				}
+			],
+			rewards: [
+				{
+					id: 2809,
+					type: "loot",
+					title: "Legendary Resourceful Bees Loot Box",
+					table: 25
+				},
+				{
+					id: 2810,
+					type: "item",
+					title: "Epic Oreo",
+					item: "resourcefulbees:oreo_cookie",
+					random_bonus: 2
+				}
+			]
+		},
+		{
+			x: -5.5d,
+			y: -21.0d,
+			subtitle: "There’s something Bee-tween us and it’s not just your stinger",
+			dependencies: [I;2732],
+			id: 2719,
+			tasks: [{
+				id: 2720,
+				type: "item",
+				item: "resourcefulbees:apiary_breeder_upgrade"
+			}],
+			rewards: [{
+				id: 2844,
+				type: "xp",
+				xp: 200
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -18.0d,
+			subtitle: "Only Bees who are on their best Bee-havior get to go to the Hive and make Honey",
+			dependencies: [I;1831],
+			id: 2726,
+			tasks: [{
+				id: 2727,
+				type: "item",
+				item: "resourcefulbees:t3_beehive"
+			}],
+			rewards: [{
+				id: 2837,
+				type: "item",
+				title: "Honey Block",
+				item: "minecraft:honey_block",
+				count: 8,
+				random_bonus: 8
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -18.0d,
+			subtitle: "Hive never felt this way Bee-fore",
+			dependencies: [I;2726],
+			id: 2728,
+			tasks: [{
+				id: 2729,
+				type: "item",
+				item: "resourcefulbees:t4_beehive"
+			}],
+			rewards: [
+				{
+					id: 2838,
+					type: "loot",
+					table: 22
+				},
+				{
+					id: 2839,
+					type: "item",
+					title: "Honey Glazed Ham",
+					item: "farmersdelight:honey_glazed_ham",
+					random_bonus: 2
+				},
+				{
+					id: 2840,
+					type: "item",
+					title: "Honey Bottle",
+					item: "minecraft:honey_bottle",
+					count: 8,
+					random_bonus: 8
+				}
+			]
+		},
+		{
+			x: -7.5d,
+			y: -20.5d,
+			subtitle: "Mind your own Beeswax",
+			description: [
+				"This block grants you access to the output of your Apiary Multiblock and Apiary Breeder. It can also interact with other means of logistical automation.",
+				"",
+				"The Storage Capacity can also be upgraded with ‘Storage Upgrades’."
+			],
+			dependencies: [I;2744],
+			id: 2730,
+			tasks: [{
+				id: 2731,
+				type: "item",
+				item: "resourcefulbees:apiary_storage"
+			}],
+			rewards: [
+				{
+					id: 2846,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				},
+				{
+					id: 2847,
+					type: "item",
+					title: "Epic Oreo",
+					item: "resourcefulbees:oreo_cookie"
+				}
+			]
+		},
+		{
+			x: -6.5d,
+			y: -20.5d,
+			subtitle: "Let’s make a Bee-line for the bedroom",
+			description: [
+				"This block grants you the ability to breed your Bees in a Jar when provided with the required materials, to trigger the breeding state, and an empty jar to house the output bee.",
+				"",
+				"The output can also be accessed through the Apiary Storage for further automation.",
+				"",
+				"Additional upgrades can help speed up the breeding process by reducing the time required, and the addition of extra breeding slots."
+			],
+			dependencies: [I;2744],
+			id: 2732,
+			tasks: [{
+				id: 2733,
+				type: "item",
+				item: "resourcefulbees:apiary_breeder"
+			}],
+			rewards: [
+				{
+					id: 2842,
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "kubejs:sorcerers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
+				},
+				{
+					id: 2843,
+					type: "item",
+					title: "Honey Cookie",
+					item: "farmersdelight:honey_cookie",
+					random_bonus: 2
+				}
+			]
+		},
+		{
+			x: -5.5d,
+			y: -20.0d,
+			subtitle: "The male Bee was such a romantic, he kept Pollen in love with all the female Bees",
+			dependencies: [I;2732],
+			id: 2734,
+			tasks: [{
+				id: 2735,
+				type: "item",
+				item: "resourcefulbees:apiary_breed_time_upgrade"
+			}],
+			rewards: [{
+				id: 2845,
+				type: "xp",
+				xp: 200
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -20.5d,
+			subtitle: "More space to Bee filled",
+			dependencies: [I;2730],
+			id: 2736,
+			tasks: [{
+				id: 2737,
+				type: "item",
+				item: "resourcefulbees:iron_storage_upgrade"
+			}],
+			rewards: [{
+				id: 2848,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			x: -9.5d,
+			y: -20.5d,
+			subtitle: "Golden Bee-ling",
+			dependencies: [I;2736],
+			id: 2738,
+			tasks: [{
+				id: 2739,
+				type: "item",
+				item: "resourcefulbees:gold_storage_upgrade"
+			}],
+			rewards: [
+				{
+					id: 2849,
+					type: "xp",
+					xp: 200
+				},
+				{
+					id: 2854,
+					type: "item",
+					title: "Honey Glazed Ham",
+					item: "farmersdelight:honey_glazed_ham",
+					random_bonus: 1
+				}
+			]
+		},
+		{
+			x: -10.5d,
+			y: -20.5d,
+			subtitle: "We better Bee prepared for a cold winter",
+			dependencies: [I;2738],
+			id: 2740,
+			tasks: [{
+				id: 2741,
+				type: "item",
+				item: "resourcefulbees:diamond_storage_upgrade"
+			}],
+			rewards: [
+				{
+					id: 2850,
+					type: "xp",
+					xp: 300
+				},
+				{
+					id: 2853,
+					type: "loot",
+					table: 13
+				}
+			]
+		},
+		{
+			x: -11.5d,
+			y: -20.5d,
+			subtitle: "Upkeep Rank: Bee+",
+			dependencies: [I;2740],
+			id: 2742,
+			tasks: [{
+				id: 2743,
+				type: "item",
+				item: "resourcefulbees:emerald_storage_upgrade"
+			}],
+			rewards: [
+				{
+					id: 2851,
+					type: "xp",
+					xp: 400
+				},
+				{
+					id: 2852,
+					type: "loot",
+					table: 11
+				}
+			]
+		},
+		{
+			x: -7.0d,
+			y: -19.5d,
+			subtitle: " Time to Bee-friend the new neighbors",
+			description: [
+				"Apiaries are Tier based multiblock structures which can house 9 Unique Bees, as well as providing a safe enclosed environment for our buzzy friends to thrive, and produce our resources. The higher the Tier of the Apiary, the more and faster it will produce for you.",
+				"",
+				"Apiaries can also house 2 other functional blocks (Apiary Storage, and Apiary Breeder) as part of its structure. Please refer to their respective quest section for more information.",
+				"",
+				"Please refer to your 'Fifty Shades of Bees’ for more detailed information about the Apiaries, and to visualize the structure which should help you construct it.",
+				""
+			],
+			dependencies: [I;2728],
+			id: 2744,
+			tasks: [{
+				id: 2745,
+				type: "item",
+				item: "resourcefulbees:t1_apiary"
+			}],
+			rewards: [
+				{
+					id: 2815,
+					type: "loot",
+					table: 13
+				},
+				{
+					id: 2816,
+					type: "item",
+					title: "Honeycomb",
+					item: "minecraft:honeycomb",
+					count: 8,
+					random_bonus: 8
+				},
+				{
+					id: 2817,
+					type: "item",
+					title: "Honey Bottle",
+					item: "minecraft:honey_bottle",
+					count: 8,
+					random_bonus: 8
+				},
+				{
+					id: 2841,
+					type: "item",
+					title: "Honeycomb Block",
+					item: "minecraft:honeycomb_block",
+					count: 8,
+					random_bonus: 8
+				}
+			]
+		},
+		{
+			x: -8.0d,
+			y: -19.5d,
+			subtitle: "Quit Pollen my leg",
+			dependencies: [I;2744],
+			id: 2746,
+			tasks: [{
+				id: 2747,
+				type: "item",
+				item: "resourcefulbees:t2_apiary"
+			}],
+			rewards: [{
+				id: 2814,
+				type: "loot",
+				title: "Rare Resourceful Bees Loot Box",
+				table: 23
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -19.5d,
+			subtitle: "The Bees went on strike because they wanted more Honey and less working Flowers",
+			dependencies: [I;2746],
+			id: 2748,
+			tasks: [{
+				id: 2749,
+				type: "item",
+				item: "resourcefulbees:t3_apiary"
+			}],
+			rewards: [{
+				id: 2813,
+				type: "loot",
+				title: "Epic Resourceful Bees Loot Box",
+				table: 24
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -19.5d,
+			subtitle: "Claustropho-Bee-a intensifies",
+			dependencies: [I;2748],
+			id: 2750,
+			tasks: [{
+				id: 2751,
+				type: "item",
+				item: "resourcefulbees:t4_apiary"
+			}],
+			rewards: [
+				{
+					id: 2811,
+					type: "loot",
+					title: "Legendary Resourceful Bees Loot Box",
+					table: 25
+				},
+				{
+					id: 2812,
+					type: "item",
+					title: "Epic Oreo",
+					item: "resourcefulbees:oreo_cookie",
+					random_bonus: 2
+				}
+			]
+		},
+		{
+			title: "Block Based Mutations",
+			x: -13.73979591836735d,
+			y: -16.484693877551017d,
+			subtitle: "Beauty is in the eye of the Bee-holder",
+			description: [
+				"Certain types of Bees have the ability to mutate Blocks into other Blocks as long as they meet the requirements, and are able to fly near these blocks.",
+				"",
+				"Example: If an Iron Bee is returning to the nest/hive passes over Stone, it can mutate it into Iron Ore."
+			],
+			dependencies: [I;1814],
+			id: 2752,
+			tasks: [{
+				id: 2829,
+				type: "checkmark",
+				title: "Checkmark",
+				icon: "minecraft:stone"
+			}],
+			rewards: [{
+				id: 2830,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Fluid Based Mutations",
+			x: -13.372448979591837d,
+			y: -15.811224489795919d,
+			subtitle: "What do you call a bee that needs a drink? Bee-hydrated",
+			description: [
+				"Certain types of Bees have the ability to mutate Blocks into Fluids, and Vice Verse as long as they meet the requirements, and are able to fly near these blocks/fluids.",
+				"",
+				"Example: If an Obsidian Bee is returning to the nest/hive passes over a Lava Source, it can mutate it into Obsidian."
+			],
+			dependencies: [I;1814],
+			id: 2754,
+			tasks: [{
+				id: 2831,
+				type: "checkmark",
+				title: "Checkmark",
+				icon: "minecraft:lava_bucket"
+			}],
+			rewards: [{
+				id: 2832,
+				type: "xp",
+				xp: 100
+			}]
+		},
+		{
+			title: "Entity Based Mutations",
+			x: -13.372448979591837d,
+			y: -17.158163265306122d,
+			subtitle: "Let’s get together and cross Pollinate",
+			description: [
+				"Certain types of Bees have the ability to mutate Entities into other Entities, as long as they meet the requirements, and are able to fly close to those entities.",
+				"",
+				"Example: If a Blaze Bee is returning to the nest/hive passes near a Creeper Bee, it can mutate it into a Ghast Bee.",
+				"",
+				"Note: At the moment this is the only available mutation for the Entity Based Mutations, but more will be added in the future where fitting."
+			],
+			dependencies: [I;1814],
+			id: 2756,
+			tasks: [{
+				id: 2826,
+				type: "checkmark",
+				title: "Checkmark",
+				icon: "minecraft:pufferfish_spawn_egg"
+			}],
+			rewards: [{
+				id: 2828,
+				type: "xp",
+				xp: 100
+			}]
+		}
+	]
 }
