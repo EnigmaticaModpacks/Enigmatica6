@@ -1,0 +1,26 @@
+{
+	id: 2803,
+	filename: "astral_sorcery_wip",
+	order_index: 5,
+	title: "Astral Sorcery WIP",
+	icon: "astralsorcery:hand_telescope",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [{
+		icon: "astralsorcery:tome",
+		x: 0.0d,
+		y: -1.5d,
+		shape: "gear",
+		description: ["~MuteTiefling"],
+		id: 2804,
+		tasks: [{
+			id: 2805,
+			type: "checkmark"
+		}],
+		rewards: [{
+			id: 2806,
+			type: "item",
+			item: "astralsorcery:tome"
+		}]
+	}]
+}

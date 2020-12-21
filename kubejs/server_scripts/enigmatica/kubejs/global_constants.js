@@ -161,6 +161,7 @@ woodVariantsToConstruct.forEach((variant) => {
     switch (logType) {
         case 'bulbis':
             logSuffix = '_stem';
+            woodSuffix = '_wood';
             break;
         case 'sythian':
             logSuffix = '_stem';
@@ -195,18 +196,6 @@ woodVariantsToConstruct.forEach((variant) => {
 
     //BlockStripped Exceptions
     switch (logType) {
-        case 'smogstem':
-            logBlockStripped = 'minecraft:air';
-            woodBlockStripped = 'minecraft:air';
-            break;
-        case 'wigglewood':
-            logBlockStripped = 'minecraft:air';
-            woodBlockStripped = 'minecraft:air';
-            break;
-        case 'grongle':
-            logBlockStripped = 'minecraft:air';
-            woodBlockStripped = 'minecraft:air';
-            break;
         case 'withering_oak':
             logBlockStripped = 'minecraft:stripped_oak_log';
             woodBlockStripped = 'minecraft:stripped_oak_wood';

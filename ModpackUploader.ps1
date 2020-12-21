@@ -49,13 +49,13 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
 }
 
 if ($ENABLE_MANIFEST_BUILDER_MODULE) {
-    $TwitchExportBuilder = "TwitchExportBuilder.exe"
-    if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
-        Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
-        Get-GitHubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
-        Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
-    }
-    .\TwitchExportBuilder.exe -n "$CLIENT_FILENAME" -p "$MODPACK_VERSION"
+    # $TwitchExportBuilder = "TwitchExportBuilder.exe"
+    # if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
+        # Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
+        # Get-GitHubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
+        # Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
+    # }
+    # .\TwitchExportBuilder.exe -n "$CLIENT_FILENAME" -p "$MODPACK_VERSION"
 }
 
 if ($ENABLE_SERVER_FILE_MODULE) {
