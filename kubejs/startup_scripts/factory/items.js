@@ -12,6 +12,6 @@ events.listen('item.registry', function (event) {
     ];
 
     items.forEach((item) => {
-        event.create(item).group('KubeJS').texture(`kubejs:item/${item}`).add();
+        event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);
     });
 });

@@ -462,6 +462,7 @@
 	"Cave Roots" = false
 	"Spider Nest Underground Biome" = true
 	"Monster Box" = true
+	"Chorus Vegetation" = true
 
 	[world.monster_box]
 		#The chance for the monster box generator to try and place one in a chunk, 1 is 100%
@@ -649,6 +650,7 @@
 		"Enable Voidstone" = true
 		"Enable Slate" = true
 		"Enable Limestone" = true
+		"Enable Myalite" = true
 
 		[world.new_stone_types.marble]
 
@@ -729,6 +731,22 @@
 			[world.new_stone_types.jasper.dimensions]
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
+
+		[world.new_stone_types.myalite]
+
+			[world.new_stone_types.myalite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:the_end"]
+
+			[world.new_stone_types.myalite.oregen]
+				#Allowed values: [0,255]
+				"Min Height" = 0
+				#Allowed values: [0,255]
+				"Max Height" = 256
+				#Allowed values: [0,)
+				"Cluster Size" = 33
+				#Allowed values: [0,)
+				"Cluster Count" = 10
 
 	[world.spider_nest_underground_biome]
 		"Enabled Wrapped" = true
@@ -831,6 +849,20 @@
 				# the_end, beach, forest, ocean, desert, river, swamp,
 				# mushroom, nether]
 				"Biome Categories" = ["swamp"]
+
+		[world.blossom_trees.red]
+			Rarity = 30
+
+			[world.blossom_trees.red.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:overworld"]
+
+			[world.blossom_trees.red.biome_types]
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["mesa"]
+				"Is Blacklist" = false
 
 	[world.mega_caves]
 
@@ -1041,10 +1073,7 @@
 
 			[world.big_stone_clusters.voidstone.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["the_end"]
+				Biomes = ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:end_barrens"]
 
 			[world.big_stone_clusters.voidstone.dimensions]
 				Dimensions = ["minecraft:the_end"]
@@ -1160,6 +1189,32 @@
 
 			[world.big_stone_clusters.jasper.dimensions]
 				Dimensions = ["minecraft:overworld"]
+				"Is Blacklist" = false
+
+		[world.big_stone_clusters.myalite]
+			"Generate In Air" = true
+			Enabled = true
+			#Allowed values: [0,)
+			Rarity = 100
+			#Allowed values: [0,255]
+			"Min Y Level" = 58
+			#Allowed values: [0,255]
+			"Max Y Level" = 62
+			#Allowed values: [0,)
+			"Horizontal Size" = 20
+			#Allowed values: [0,)
+			"Vertical Size" = 40
+			#Allowed values: [0,)
+			"Horizontal Variation" = 6
+			#Allowed values: [0,)
+			"Vertical Variation" = 10
+
+			[world.big_stone_clusters.myalite.dimensions]
+				"Is Blacklist" = false
+				Dimensions = ["minecraft:the_end"]
+
+			[world.big_stone_clusters.myalite.biomes]
+				Biomes = ["minecraft:end_highlands"]
 				"Is Blacklist" = false
 
 	[world.overgrown_underground_biome]
@@ -1345,6 +1400,17 @@
 			[world.slime_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
+
+	[world.chorus_vegetation]
+		Rarity = 150
+		Radius = 7
+		"Chunk Attempts" = 120
+		"Highlands Chance" = 1.0
+		"Midlands Chance" = 0.2
+		"Other End Biomes Chance" = 0.0
+		"Passive Teleport Chance" = 0.2
+		"Endermite Spawn Chance" = 0.01
+		"Teleport Duplication Chance" = 0.01
 
 [mobs]
 	Frogs = true

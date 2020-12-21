@@ -18,6 +18,11 @@ function entryIsBlacklisted(material, type) {
     }
     return false;
 }
+
+function isEmptyTag(tag) {
+    return getPreferredItemInTag(ingredient.of(tag)).id == air;
+}
+
 function getPreferredItemInTag(tag) {
     const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
     // console.info('Preferred item: ' + tag + ' => ' + pref);

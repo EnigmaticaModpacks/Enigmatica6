@@ -12,11 +12,16 @@ events.listen('recipes', function (event) {
         thermal_press_wires(event, material);
     });
 });
+
 function getPreferredItemInTag(tag) {
     const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
     // console.info('Preferred item: ' + tag + ' => ' + pref);
     return pref;
 }
+function tagIsEmpty(tag) {
+    return getPreferredItemInTag(ingredient.of(tag)).id == air;
+}
+
 function pedestals_dust_smelting(event) {
     var pedestal_dusts = ['pedestals:dustsilver', 'pedestals:dustaluminum', 'pedestals:dustnickel'];
 
@@ -60,7 +65,7 @@ function immersiveengineering_gem_ore_processing(event, material) {
 
 function bloodmagic_ore_processing_arc(event, material) {
     var data;
-    if (ingredient.of('#forge:ores/' + material)[0].id == air) {
+    if (tagIsEmpty('#forge:ores/' + material)) {
         return;
     }
 
@@ -162,7 +167,7 @@ function bloodmagic_ore_processing_arc(event, material) {
 function bloodmagic_ore_processing_alchemy(event, material) {
     var data;
 
-    if (ingredient.of('#forge:ores/' + material)[0].id == air) {
+    if (tagIsEmpty('#forge:ores/' + material)) {
         return;
     }
 
@@ -211,7 +216,7 @@ function bloodmagic_ore_processing_alchemy(event, material) {
 }
 
 function astralsorcery_ore_processing_infuser(event, material) {
-    if (ingredient.of('#forge:ores/' + material)[0].id == air) {
+    if (tagIsEmpty('#forge:ores/' + material)) {
         return;
     }
     blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron', 'gold'];

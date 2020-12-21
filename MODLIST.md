@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.3.1 Modlist
+## Enigmatica 6 - 0.3.2 Modlist
 - additional_lights-1.16.4-2.1.3
 - AI-Improvements-1.16.2-0.3.0
 - aiotbotania-1.16.4-1.5.0
@@ -10,9 +10,9 @@
 - Aquaculture-1.16.4-2.1.7
 - archers_paradox-1.16.3-1.0.0
 - architectury-1.1.55-forge
-- ars_nouveau-1.16.4-1.9.2
+- ars_nouveau-1.16.4-1.9.3
 - Artifacts-1.16.4-2.7.2
-- astralsorcery-1.16.4-1.13.7
+- astralsorcery-1.16.4-1.13.8
 - AttributeFix-1.16.4-9.0.2
 - AutoRegLib-1.6-47
 - BackTools-1.16.3-10.0.0
@@ -32,7 +32,7 @@
 - BotanyPots-1.16.4-6.0.8
 - BotanyTrees-1.16.4-2.0.4
 - Bountiful Baubles FORGE-1.16.3-0.0.2
-- buildersaddition-1.16.4-20201214d
+- buildersaddition-1.16.4-20201220b
 - buildinggadgets-1.16.4-3.7.3
 - bwncr-1.16.4-3.9.16
 - byg-1.1.5
@@ -97,7 +97,7 @@
 - FpsReducer-mc1.16.4-1.18
 - framedcompactdrawers-1.16-2.1.2
 - ftb-backups-2.1.1.6
-- ftb-chunks-1604.2.2.53
+- ftb-chunks-1604.2.2.54
 - ftb-gui-library-1604.1.1.26
 - ftb-quests-1604.1.1.18
 - ftb-ranks-1604.1.1.9
@@ -174,7 +174,7 @@
 - Powah-1.16.4-2.3.6
 - PrettyPipes-1.9.0
 - QuantumStorage-1.16.4-5.3.0
-- Quark-r2.4-280
+- Quark-r2.4-281
 - QuarkOddities-1.16.3
 - randompatches-1.16.4-1.22.1.11
 - rangedpumps-0.8.2
