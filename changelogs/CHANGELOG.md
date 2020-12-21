@@ -1,3 +1,17 @@
+### Enigmatica 6 v0.3.2
+
+_Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.2.txt)_
+
+**Hotfix for a few issues found in 0.3.1**
+
+**Bug Fixes**
+
+- High RAM usage [\#588](https://github.com/NillerMedDild/Enigmatica6/issues/588)
+- 0.3.1 Hellfire Forge can't be crafted - Shows 'empty' for the place an Iron block should be [\#583](https://github.com/NillerMedDild/Enigmatica6/pull/583) ([MuteTiefling](https://github.com/MuteTiefling))
+- Wither Bee drop chance increase & Fix [\#593](https://github.com/NillerMedDild/Enigmatica6/pull/593) ([Ridanisaurus](https://github.com/Ridanisaurus))
+- Missed saw recipes and a typo [\#584](https://github.com/NillerMedDild/Enigmatica6/pull/584) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fixed sawdust output in sawing recipes
+
 ### Enigmatica 6 v0.3.1
 
 _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.1.txt)_
@@ -5,37 +19,35 @@ _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/E
 **Fixed a host of issues with dimensions, including the Ender Dragon not spawning, missing biomes and random biomes.**
 **For existing worlds, however, you have to manually clean the mess. If you can reset your world, this is the simplest and most reliable fix. If you know what you're doing, you can follow [this guide](https://github.com/AllTheMods/ATM-6/issues/437) made by the ATM team, to fix your existing world.**
 
-
-
 **New Mods!**
 
-- 'Dustrial Decor
-- Alex's Mobs
-- Architectury (Forge)
-- Artifacts
-- Astral Sorcery
-- Blood Magic 
-- Citadel
-- Clockout
-- CodeChicken Lib 1.8.+
-- Create
-- Demagnetize
-- Ender Storage 1.8.+
-- ExtraStorage
-- Immersive Petroleum
-- KubeJS Blood Magic
-- KubeJS Immersive Engineering
-- KubeJS Mekanism
-- KubeJS Thermal
-- Mod Name Tooltip
-- More MobGriefing Options
-- ObserverLib
-- Portable Stonecutter
-- RFTools Power
-- Restriction: Re-Restricted
-- Shrink.
-- Sophisticated Backpacks
-- The Undergarden
+-   'Dustrial Decor
+-   Alex's Mobs
+-   Architectury (Forge)
+-   Artifacts
+-   Astral Sorcery
+-   Blood Magic
+-   Citadel
+-   Clockout
+-   CodeChicken Lib 1.8.+
+-   Create
+-   Demagnetize
+-   Ender Storage 1.8.+
+-   ExtraStorage
+-   Immersive Petroleum
+-   KubeJS Blood Magic
+-   KubeJS Immersive Engineering
+-   KubeJS Mekanism
+-   KubeJS Thermal
+-   Mod Name Tooltip
+-   More MobGriefing Options
+-   ObserverLib
+-   Portable Stonecutter
+-   RFTools Power
+-   Restriction: Re-Restricted
+-   Shrink.
+-   Sophisticated Backpacks
+-   The Undergarden
 
 **Improvements**
 
@@ -79,56 +91,56 @@ _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
--	Bitumen has no uses [\#414](https://github.com/NillerMedDild/Enigmatica6/issues/414)
--	Breaking Blocks/Items While Holding A Dank Storage Item Voids The Block/Item [\#437](https://github.com/NillerMedDild/Enigmatica6/issues/437)
--	Builder crashes server if a mechanical pipe is ontop/below it. [\#477](https://github.com/NillerMedDild/Enigmatica6/issues/477)
--	Can't craft Enchanted Crafting Table [\#531](https://github.com/NillerMedDild/Enigmatica6/issues/531)
--	Cannot crush Zinc Chunks in a Pedestal with the Crusher upgrade [\#495](https://github.com/NillerMedDild/Enigmatica6/issues/495)
--	Crashing when using "Biomes You'll Go" mushrooms with Sylph [\#451](https://github.com/NillerMedDild/Enigmatica6/issues/451)
--	Decorative blocks: most beams don't have a recipe [\#431](https://github.com/NillerMedDild/Enigmatica6/issues/431)
--	Dupe bug with gear recycling in an arc furnace and multiservo press [\#440](https://github.com/NillerMedDild/Enigmatica6/issues/440)
--	Dupe/Delete items in RF Tools Modular Storage when activating Inventory Tweaks Sort function [\#530](https://github.com/NillerMedDild/Enigmatica6/issues/530)
--	Dupe with Pneumaticraft and Quark [\#511](https://github.com/NillerMedDild/Enigmatica6/issues/511)
--	Immersive Engineering Treated Wood recipe voids Mekanism Tank [\#447](https://github.com/NillerMedDild/Enigmatica6/issues/447)
--	Industrial Foregoing not showing up in a refined storage system [\#560](https://github.com/NillerMedDild/Enigmatica6/issues/560)
--	Isolated Recipes \(Xerca Mod\) [\#452](https://github.com/NillerMedDild/Enigmatica6/issues/452)
--	JEI is not searching on Tags on a server [\#380](https://github.com/NillerMedDild/Enigmatica6/issues/380)
--	Mana Bloom recipe does not ore-dict [\#499](https://github.com/NillerMedDild/Enigmatica6/issues/499)
--	Mekanism Coal/Gunpowder - Sulfur issues [\#485](https://github.com/NillerMedDild/Enigmatica6/issues/485)
--	Mining Gadget crash [\#289](https://github.com/NillerMedDild/Enigmatica6/issues/289)
--	Missing Blood Magic recipes [\#520](https://github.com/NillerMedDild/Enigmatica6/pull/520) ([MuteTiefling](https://github.com/MuteTiefling))
--	Multiple steel recipe issues [\#417](https://github.com/NillerMedDild/Enigmatica6/issues/417)
--	Nature's Aura Ore Generator Update [\#523](https://github.com/NillerMedDild/Enigmatica6/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
--	Netherite Bees Kill themselves. [\#457](https://github.com/NillerMedDild/Enigmatica6/issues/457)
--	No End Dragon or End Fountain \(See last comment for fixing worlds updated to 0.3.1, made in 0.3.0\) [\#420](https://github.com/NillerMedDild/Enigmatica6/issues/420)
--	non EE ore spawns when using Nature's Aura powder of bountiful core \(ore gen\) [\#465](https://github.com/NillerMedDild/Enigmatica6/issues/465)
--	Not seeing any Biomes O' Plenty biomes on multiplayer server [\#549](https://github.com/NillerMedDild/Enigmatica6/issues/549)
--	NPE with new IF Generators [\#493](https://github.com/NillerMedDild/Enigmatica6/issues/493)
--	Oil Generation in Byg-End bioms [\#419](https://github.com/NillerMedDild/Enigmatica6/issues/419)
--	Possible exploit with tetra mod and enchantment extractor [\#432](https://github.com/NillerMedDild/Enigmatica6/issues/432)
--	Quark Dungeon and Burred Dungeon spawn in the end [\#423](https://github.com/NillerMedDild/Enigmatica6/issues/423)
--	Quest for Latex Processing Unit [\#412](https://github.com/NillerMedDild/Enigmatica6/issues/412)
--	Recipe conflict between vertical dark oak wood planks and dark oak panels [\#441](https://github.com/NillerMedDild/Enigmatica6/issues/441)
--	server crash with wither interaction [\#463](https://github.com/NillerMedDild/Enigmatica6/issues/463)
--	simplefarming:raw\_bacon recipe uses up the knife [\#428](https://github.com/NillerMedDild/Enigmatica6/issues/428)
--	Simple Farming and Farmer's Delight fried egg conflict [\#480](https://github.com/NillerMedDild/Enigmatica6/issues/480)
--	Simple Farming seeds don't work with IE machines [\#429](https://github.com/NillerMedDild/Enigmatica6/issues/429)
--	Steel can be created in a vanilla blast furnace non-coal fuel [\#405](https://github.com/NillerMedDild/Enigmatica6/issues/405)
--	Stonecutter renamed to Bench Saw by unknown mod [\#427](https://github.com/NillerMedDild/Enigmatica6/issues/427)
--	Stonecutting can turn any stone into any other stone breaking balance [\#445](https://github.com/NillerMedDild/Enigmatica6/issues/445)
--	Terrasteel Recipe Conflict [\#470](https://github.com/NillerMedDild/Enigmatica6/issues/470)
--	Tetra Workbench Dupe Bug [\#469](https://github.com/NillerMedDild/Enigmatica6/issues/469)
--	Unification cleanup appears to have broken [\#415](https://github.com/NillerMedDild/Enigmatica6/issues/415)
--	Updated EE Config (**Random Ore Y levels fixed!**) [\#537](https://github.com/NillerMedDild/Enigmatica6/pull/537) ([Ridanisaurus](https://github.com/Ridanisaurus))
--	Wandering Traders Disabled? [\#571](https://github.com/NillerMedDild/Enigmatica6/issues/571)
--	Wrong Recipe Crusher : mana gem -\> mana powder \(botania\) [\#404](https://github.com/NillerMedDild/Enigmatica6/issues/404)
--	Xnet wireless router not working [\#459](https://github.com/NillerMedDild/Enigmatica6/issues/459)
+-   Bitumen has no uses [\#414](https://github.com/NillerMedDild/Enigmatica6/issues/414)
+-   Breaking Blocks/Items While Holding A Dank Storage Item Voids The Block/Item [\#437](https://github.com/NillerMedDild/Enigmatica6/issues/437)
+-   Builder crashes server if a mechanical pipe is ontop/below it. [\#477](https://github.com/NillerMedDild/Enigmatica6/issues/477)
+-   Can't craft Enchanted Crafting Table [\#531](https://github.com/NillerMedDild/Enigmatica6/issues/531)
+-   Cannot crush Zinc Chunks in a Pedestal with the Crusher upgrade [\#495](https://github.com/NillerMedDild/Enigmatica6/issues/495)
+-   Crashing when using "Biomes You'll Go" mushrooms with Sylph [\#451](https://github.com/NillerMedDild/Enigmatica6/issues/451)
+-   Decorative blocks: most beams don't have a recipe [\#431](https://github.com/NillerMedDild/Enigmatica6/issues/431)
+-   Dupe bug with gear recycling in an arc furnace and multiservo press [\#440](https://github.com/NillerMedDild/Enigmatica6/issues/440)
+-   Dupe/Delete items in RF Tools Modular Storage when activating Inventory Tweaks Sort function [\#530](https://github.com/NillerMedDild/Enigmatica6/issues/530)
+-   Dupe with Pneumaticraft and Quark [\#511](https://github.com/NillerMedDild/Enigmatica6/issues/511)
+-   Immersive Engineering Treated Wood recipe voids Mekanism Tank [\#447](https://github.com/NillerMedDild/Enigmatica6/issues/447)
+-   Industrial Foregoing not showing up in a refined storage system [\#560](https://github.com/NillerMedDild/Enigmatica6/issues/560)
+-   Isolated Recipes \(Xerca Mod\) [\#452](https://github.com/NillerMedDild/Enigmatica6/issues/452)
+-   JEI is not searching on Tags on a server [\#380](https://github.com/NillerMedDild/Enigmatica6/issues/380)
+-   Mana Bloom recipe does not ore-dict [\#499](https://github.com/NillerMedDild/Enigmatica6/issues/499)
+-   Mekanism Coal/Gunpowder - Sulfur issues [\#485](https://github.com/NillerMedDild/Enigmatica6/issues/485)
+-   Mining Gadget crash [\#289](https://github.com/NillerMedDild/Enigmatica6/issues/289)
+-   Missing Blood Magic recipes [\#520](https://github.com/NillerMedDild/Enigmatica6/pull/520) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Multiple steel recipe issues [\#417](https://github.com/NillerMedDild/Enigmatica6/issues/417)
+-   Nature's Aura Ore Generator Update [\#523](https://github.com/NillerMedDild/Enigmatica6/pull/523) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Netherite Bees Kill themselves. [\#457](https://github.com/NillerMedDild/Enigmatica6/issues/457)
+-   No End Dragon or End Fountain \(See last comment for fixing worlds updated to 0.3.1, made in 0.3.0\) [\#420](https://github.com/NillerMedDild/Enigmatica6/issues/420)
+-   non EE ore spawns when using Nature's Aura powder of bountiful core \(ore gen\) [\#465](https://github.com/NillerMedDild/Enigmatica6/issues/465)
+-   Not seeing any Biomes O' Plenty biomes on multiplayer server [\#549](https://github.com/NillerMedDild/Enigmatica6/issues/549)
+-   NPE with new IF Generators [\#493](https://github.com/NillerMedDild/Enigmatica6/issues/493)
+-   Oil Generation in Byg-End bioms [\#419](https://github.com/NillerMedDild/Enigmatica6/issues/419)
+-   Possible exploit with tetra mod and enchantment extractor [\#432](https://github.com/NillerMedDild/Enigmatica6/issues/432)
+-   Quark Dungeon and Burred Dungeon spawn in the end [\#423](https://github.com/NillerMedDild/Enigmatica6/issues/423)
+-   Quest for Latex Processing Unit [\#412](https://github.com/NillerMedDild/Enigmatica6/issues/412)
+-   Recipe conflict between vertical dark oak wood planks and dark oak panels [\#441](https://github.com/NillerMedDild/Enigmatica6/issues/441)
+-   server crash with wither interaction [\#463](https://github.com/NillerMedDild/Enigmatica6/issues/463)
+-   simplefarming:raw_bacon recipe uses up the knife [\#428](https://github.com/NillerMedDild/Enigmatica6/issues/428)
+-   Simple Farming and Farmer's Delight fried egg conflict [\#480](https://github.com/NillerMedDild/Enigmatica6/issues/480)
+-   Simple Farming seeds don't work with IE machines [\#429](https://github.com/NillerMedDild/Enigmatica6/issues/429)
+-   Steel can be created in a vanilla blast furnace non-coal fuel [\#405](https://github.com/NillerMedDild/Enigmatica6/issues/405)
+-   Stonecutter renamed to Bench Saw by unknown mod [\#427](https://github.com/NillerMedDild/Enigmatica6/issues/427)
+-   Stonecutting can turn any stone into any other stone breaking balance [\#445](https://github.com/NillerMedDild/Enigmatica6/issues/445)
+-   Terrasteel Recipe Conflict [\#470](https://github.com/NillerMedDild/Enigmatica6/issues/470)
+-   Tetra Workbench Dupe Bug [\#469](https://github.com/NillerMedDild/Enigmatica6/issues/469)
+-   Unification cleanup appears to have broken [\#415](https://github.com/NillerMedDild/Enigmatica6/issues/415)
+-   Updated EE Config (**Random Ore Y levels fixed!**) [\#537](https://github.com/NillerMedDild/Enigmatica6/pull/537) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Wandering Traders Disabled? [\#571](https://github.com/NillerMedDild/Enigmatica6/issues/571)
+-   Wrong Recipe Crusher : mana gem -\> mana powder \(botania\) [\#404](https://github.com/NillerMedDild/Enigmatica6/issues/404)
+-   Xnet wireless router not working [\#459](https://github.com/NillerMedDild/Enigmatica6/issues/459)
 
 **Removed**
 
 -   Actually Useful Stonecutter
--   Reload Audio Driver (RAD) [Forge] *Will be coming back*
--   Screenshot to Clipboard (Forge) *Will be coming back* 
+-   Reload Audio Driver (RAD) [Forge] _Will be coming back_
+-   Screenshot to Clipboard (Forge) _Will be coming back_
 -   Xerca Mod
 
 ### Enigmatica 6 v0.3.0
