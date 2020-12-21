@@ -38,7 +38,7 @@ events.listen('recipes', (event) => {
             },
             {
                 input: 'simplefarming:olive_sapling',
-                outputs: ['simplefarming:fruit_log', 'simplefarming:olive_sapling', 'simplefarming:olivesr'],
+                outputs: ['simplefarming:fruit_log', 'simplefarming:olive_sapling', 'simplefarming:olives'],
                 chances: [6.0, 1.1, 0.5],
                 energy_mod: 3.0,
                 water_mod: 3.0
