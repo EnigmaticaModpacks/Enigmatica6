@@ -1,5 +1,5 @@
 events.listen('recipes', function (event) {
-    global.woodVariants.forEach((variant) => {
+    buildWoodVariants.forEach((variant) => {
         var modID = variant.logBlock.split(':')[0];
 
         // mod blacklist
