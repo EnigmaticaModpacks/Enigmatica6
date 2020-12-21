@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-12-20T21:36:56.5471986Z",
+  "lastPlayed": "2020-12-21T18:51:01.648111Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2020-12-20T20:20:48.070942Z",
+  "lastPreviousMatchUpdate": "2020-12-20T22:11:16.0550804Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.4",
@@ -419,7 +419,7 @@
       "dateInstalled": "2020-12-18T21:45:11.9147693Z",
       "dateUpdated": "2020-12-20T05:14:33.7760178Z",
       "dateLastUpdateAttempted": "2020-12-20T05:14:33.7760178Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4996,7 +4996,7 @@
       "dateInstalled": "2020-12-19T21:55:30.5092554Z",
       "dateUpdated": "2020-12-19T21:55:30.5192556Z",
       "dateLastUpdateAttempted": "2020-12-19T21:55:30.5192556Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6993,7 +6993,7 @@
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8005,14 +8005,14 @@
       "addonID": 314906,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3142622,
-        "displayName": "ftb-chunks-1604.2.2.53.jar",
-        "fileName": "ftb-chunks-1604.2.2.53.jar",
-        "fileDate": "2020-12-18T23:23:35.72Z",
-        "fileLength": 292829,
+        "id": 3144397,
+        "displayName": "ftb-chunks-1604.2.2.54.jar",
+        "fileName": "ftb-chunks-1604.2.2.54.jar",
+        "fileDate": "2020-12-20T21:36:49.853Z",
+        "fileLength": 292850,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3142/622/ftb-chunks-1604.2.2.53.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3144/397/ftb-chunks-1604.2.2.54.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -8020,12 +8020,6 @@
             "id": 0,
             "addonId": 404465,
             "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 314905,
-            "type": 2,
             "fileId": 0
           },
           {
@@ -8039,13 +8033,19 @@
             "addonId": 404468,
             "type": 2,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 314905,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3135717017,
+            "fingerprint": 996844946,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -8057,7 +8057,7 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 2013413583,
+            "fingerprint": 718403470,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -8086,7 +8086,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1223518922,
+        "packageFingerprint": 720491914,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -8102,16 +8102,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-chunks-1604.2.2.53.jar"
+        "FileNameOnDisk": "ftb-chunks-1604.2.2.54.jar"
       },
       "dateInstalled": "2020-12-14T20:37:28.7781467Z",
-      "dateUpdated": "2020-12-19T18:57:11.6330435Z",
-      "dateLastUpdateAttempted": "2020-12-19T18:57:11.6330435Z",
-      "status": 5,
+      "dateUpdated": "2020-12-21T07:18:55.0476927Z",
+      "dateLastUpdateAttempted": "2020-12-21T07:18:55.0476927Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -8616,7 +8616,7 @@
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": false,
+      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -11273,14 +11273,14 @@
       "addonID": 243121,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3139878,
-        "displayName": "Quark-r2.4-280.jar",
-        "fileName": "Quark-r2.4-280.jar",
-        "fileDate": "2020-12-15T23:11:59.343Z",
-        "fileLength": 5788471,
+        "id": 3144658,
+        "displayName": "Quark-r2.4-281.jar",
+        "fileName": "Quark-r2.4-281.jar",
+        "fileDate": "2020-12-21T01:15:16.957Z",
+        "fileLength": 5869925,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3139/878/Quark-r2.4-280.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3144/658/Quark-r2.4-281.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -11295,25 +11295,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3133723083,
+            "fingerprint": 4273696456,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "vazkii",
-            "fingerprint": 3608121635,
+            "fingerprint": 2738725615,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 957106356,
+            "fingerprint": 2348285351,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1935101238,
+            "fingerprint": 247102034,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -11348,7 +11348,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1126745136,
+        "packageFingerprint": 3982328958,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -11363,16 +11363,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Quark-r2.4-280.jar"
+        "FileNameOnDisk": "Quark-r2.4-281.jar"
       },
       "dateInstalled": "2020-11-10T20:27:37.5916743Z",
-      "dateUpdated": "2020-12-16T09:43:26.4023798Z",
-      "dateLastUpdateAttempted": "2020-12-16T09:43:26.4023798Z",
-      "status": 5,
+      "dateUpdated": "2020-12-21T07:18:36.4735717Z",
+      "dateLastUpdateAttempted": "2020-12-21T07:18:36.4735717Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14830,14 +14830,14 @@
       "addonID": 389697,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3138939,
-        "displayName": "buildersaddition-1.16.2/3/4-20201214d",
-        "fileName": "buildersaddition-1.16.4-20201214d.jar",
-        "fileDate": "2020-12-14T22:50:29.977Z",
-        "fileLength": 1739243,
-        "releaseType": 2,
+        "id": 3144564,
+        "displayName": "buildersaddition-1.16.2/3/4-20201220b",
+        "fileName": "buildersaddition-1.16.4-20201220b.jar",
+        "fileDate": "2020-12-20T23:10:12.223Z",
+        "fileLength": 1742710,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3138/939/buildersaddition-1.16.4-20201214d.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3144/564/buildersaddition-1.16.4-20201220b.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -14845,19 +14845,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3740676121,
+            "fingerprint": 2975702258,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 1242249259,
+            "fingerprint": 1070657360,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2859216962,
+            "fingerprint": 4227997062,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -14904,7 +14904,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2396723992,
+        "packageFingerprint": 2240931382,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -14920,16 +14920,16 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "buildersaddition-1.16.4-20201214d.jar"
+        "FileNameOnDisk": "buildersaddition-1.16.4-20201220b.jar"
       },
       "dateInstalled": "2020-12-14T20:29:56.3025273Z",
-      "dateUpdated": "2020-12-16T09:45:02.324209Z",
-      "dateLastUpdateAttempted": "2020-12-16T09:45:02.324209Z",
-      "status": 5,
+      "dateUpdated": "2020-12-21T07:18:53.5456185Z",
+      "dateLastUpdateAttempted": "2020-12-21T07:18:53.5456185Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -14940,20 +14940,20 @@
       "addonID": 401955,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3143421,
-        "displayName": "ars_nouveau-1.16.4-1.9.2.jar",
-        "fileName": "ars_nouveau-1.16.4-1.9.2.jar",
-        "fileDate": "2020-12-19T21:26:30.197Z",
-        "fileLength": 2230540,
+        "id": 3144313,
+        "displayName": "ars_nouveau-1.16.4-1.9.3.jar",
+        "fileName": "ars_nouveau-1.16.4-1.9.3.jar",
+        "fileDate": "2020-12-20T19:51:57.2Z",
+        "fileLength": 2231871,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3143/421/ars_nouveau-1.16.4-1.9.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3144/313/ars_nouveau-1.16.4-1.9.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 309927,
+            "addonId": 388172,
             "type": 3,
             "fileId": 0
           },
@@ -14965,7 +14965,7 @@
           },
           {
             "id": 0,
-            "addonId": 388172,
+            "addonId": 309927,
             "type": 3,
             "fileId": 0
           }
@@ -14974,13 +14974,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1832207696,
+            "fingerprint": 267964448,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 1403093012,
+            "fingerprint": 2067289394,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -14992,7 +14992,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 4180024711,
+            "fingerprint": 1772122270,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -15003,7 +15003,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2773885070,
+        "packageFingerprint": 423394855,
         "gameVersion": [
           "1.16.4"
         ],
@@ -15013,19 +15013,19 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ars_nouveau-1.16.4-1.9.2.jar"
+        "FileNameOnDisk": "ars_nouveau-1.16.4-1.9.3.jar"
       },
       "dateInstalled": "2020-12-20T05:14:55.2042843Z",
-      "dateUpdated": "2020-12-20T05:14:55.208274Z",
-      "dateLastUpdateAttempted": "2020-12-20T05:14:55.208274Z",
+      "dateUpdated": "2020-12-21T07:18:36.8741683Z",
+      "dateLastUpdateAttempted": "2020-12-21T07:18:36.8741683Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -22090,14 +22090,14 @@
       "addonID": 241721,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3143845,
-        "displayName": "AstralSorcery-1.16.4-1.13.7.jar",
-        "fileName": "astralsorcery-1.16.4-1.13.7.jar",
-        "fileDate": "2020-12-20T10:29:15.72Z",
-        "fileLength": 28797449,
+        "id": 3144866,
+        "displayName": "AstralSorcery-1.16.4-1.13.8.jar",
+        "fileName": "astralsorcery-1.16.4-1.13.8.jar",
+        "fileDate": "2020-12-21T07:42:42.813Z",
+        "fileLength": 28803354,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3143/845/astralsorcery-1.16.4-1.13.7.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3144/866/astralsorcery-1.16.4-1.13.8.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -22118,13 +22118,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2366438768,
+            "fingerprint": 2300409638,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "hellfirepvp",
-            "fingerprint": 2368859447,
+            "fingerprint": 1796980990,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -22153,7 +22153,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1434282870,
+        "packageFingerprint": 3924646111,
         "gameVersion": [
           "Forge",
           "1.16.4"
@@ -22167,16 +22167,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "astralsorcery-1.16.4-1.13.7.jar"
+        "FileNameOnDisk": "astralsorcery-1.16.4-1.13.8.jar"
       },
       "dateInstalled": "2020-12-14T20:24:43.5259754Z",
-      "dateUpdated": "2020-12-20T18:52:51.8166139Z",
-      "dateLastUpdateAttempted": "2020-12-20T18:52:51.8166139Z",
+      "dateUpdated": "2020-12-21T18:47:46.1832826Z",
+      "dateLastUpdateAttempted": "2020-12-21T18:47:46.1832826Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
