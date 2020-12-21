@@ -21,27 +21,27 @@ events.listen('item.tags', function (event) {
 
     event
         .get(storageBlocks + '/gold_bronze')
-        .add('#' + storageBlocks + 'gold')
-        .add('#' + storageBlocks + 'bronze');
+        .add('#' + storageBlocks + '/gold')
+        .add('#' + storageBlocks + '/bronze');
 
     event
         .get(storageBlocks + '/iron_aluminum')
-        .add('#' + storageBlocks + 'iron')
-        .add('#' + storageBlocks + 'aluminum');
+        .add('#' + storageBlocks + '/iron')
+        .add('#' + storageBlocks + '/aluminum');
     event
         .get(storageBlocks + '/iron_brass')
-        .add('#' + storageBlocks + 'iron')
-        .add('#' + storageBlocks + 'brass');
+        .add('#' + storageBlocks + '/iron')
+        .add('#' + storageBlocks + '/brass');
     event
         .get(storageBlocks + '/iron_invar')
-        .add('#' + storageBlocks + 'iron')
-        .add('#' + storageBlocks + 'invar');
+        .add('#' + storageBlocks + '/iron')
+        .add('#' + storageBlocks + '/invar');
     event
         .get(storageBlocks + '/iron_lead')
-        .add('#' + storageBlocks + 'iron')
-        .add('#' + storageBlocks + 'lead');
+        .add('#' + storageBlocks + '/iron')
+        .add('#' + storageBlocks + '/lead');
     event
         .get(storageBlocks + '/iron_tin')
-        .add('#' + storageBlocks + 'iron')
-        .add('#' + storageBlocks + 'tin');
+        .add('#' + storageBlocks + '/iron')
+        .add('#' + storageBlocks + '/tin');
 });
