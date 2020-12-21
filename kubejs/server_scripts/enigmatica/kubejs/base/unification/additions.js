@@ -10,6 +10,7 @@ events.listen('recipes', function (event) {
         astralsorcery_ore_processing_infuser(event, material);
         thermal_press_rods(event, material);
         thermal_press_wires(event, material);
+        gear_unification(event, material);
     });
 });
 
@@ -319,6 +320,68 @@ function thermal_press_wires(event, material) {
         ],
         energy: 2400
     });
+}
+
+function gear_unification(event, material) {
+    var gearInput;
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    var ingotTag = ingredient.of('#forge:ingots/' + material);
+    var ingot = getPreferredItemInTag(ingotTag).id;
+
+    var gearTag = ingredient.of('#forge:gears/' + material);
+    var gear = getPreferredItemInTag(gearTag).id;
+
+    if (ingot != air && gear != air) {
+        gearInput = '#forge:ingots/' + material;
+    } else if (gem != air && gear != air) {
+        gearInput = '#forge:gems/' + material;
+    } else {
+        return;
+    }
+
+    event.shaped(item.of(gear, 1), [' B ', 'BAB', ' B '], {
+        A: '#forge:nuggets/iron',
+        B: gearInput
+    });
+
+    event.recipes.thermal.press(gear, item.of(gearInput, 4));
+    /*event.recipes.thermal.press({
+        type: 'thermal:press',
+        input: [
+            {
+                tag: gearInput,
+                count: 4
+            },
+            {
+                item: 'thermal:press_gear_die'
+            }
+        ],
+        result: [
+            {
+                item: gear
+            }
+        ]
+    });*/
+
+    event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
+    /*event.recipes.immersiveengineering.metal_press({
+        type: 'immersiveengineering:metal_press',
+        mold: {
+            item: 'immersiveengineering:mold_gear'
+        },
+        result: {
+            item: gear
+        },
+        input: {
+            count: 4,
+            base_ingredient: {
+                tag: gearInput
+            }
+        },
+        energy: 2400
+    });*/
 }
 
 // Currently unused
