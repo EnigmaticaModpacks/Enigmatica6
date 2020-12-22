@@ -8,5 +8,5 @@ events.listen('item.tags', function (event) {
     event.get('forge:gears/iron_invar').add('#forge:gears/iron').add('#forge:gears/invar');
 
     event.get('forge:gears').add('pneumaticcraft:compressed_iron_gear');
-    event.get('forge:gears/compressed_iron_gear').add('pneumaticcraft:compressed_iron_gear');
+    event.get('forge:gears/compressed_iron').add('pneumaticcraft:compressed_iron_gear');
 });

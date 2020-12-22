@@ -323,65 +323,30 @@ function thermal_press_wires(event, material) {
 }
 
 function gear_unification(event, material) {
+    if (tagIsEmpty('#forge:gears/' + material)) {
+        //console.info('Not_Gear: ' + material);
+        return;
+    }
     var gearInput;
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
+    var gem = '#forge:gems/' + material;
+    var ingot = '#forge:ingots/' + material;
 
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
-    var gearTag = ingredient.of('#forge:gears/' + material);
-    var gear = getPreferredItemInTag(gearTag).id;
-
-    if (ingot != air && gear != air) {
-        gearInput = '#forge:ingots/' + material;
-    } else if (gem != air && gear != air) {
-        gearInput = '#forge:gems/' + material;
+    if (!tagIsEmpty(ingot)) {
+        gearInput = ingot;
+    } else if (!tagIsEmpty(gem)) {
+        gearInput = gem;
     } else {
         return;
     }
 
-    event.shaped(item.of(gear, 1), [' B ', 'BAB', ' B '], {
+    event.shaped(item.of('#forge:gears/' + material, 1), [' B ', 'BAB', ' B '], {
         A: '#forge:nuggets/iron',
         B: gearInput
     });
 
-    event.recipes.thermal.press(gear, item.of(gearInput, 4));
-    /*event.recipes.thermal.press({
-        type: 'thermal:press',
-        input: [
-            {
-                tag: gearInput,
-                count: 4
-            },
-            {
-                item: 'thermal:press_gear_die'
-            }
-        ],
-        result: [
-            {
-                item: gear
-            }
-        ]
-    });*/
-
-    event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
-    /*event.recipes.immersiveengineering.metal_press({
-        type: 'immersiveengineering:metal_press',
-        mold: {
-            item: 'immersiveengineering:mold_gear'
-        },
-        result: {
-            item: gear
-        },
-        input: {
-            count: 4,
-            base_ingredient: {
-                tag: gearInput
-            }
-        },
-        energy: 2400
-    });*/
+    //event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
+    //This should work, but doesn't. And the json method doesn't work either... so no new gears for immersive.
+    //event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput).count(4), 'immersiveengineering:mold_gear')
 }
 
 // Currently unused

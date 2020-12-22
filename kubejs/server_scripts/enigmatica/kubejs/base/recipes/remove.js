@@ -34,14 +34,6 @@ events.listen('recipes', function (event) {
         'quantumstorage:qsu'
     ];
 
-    materialsToUnify.forEach((material) => {
-        if (material == 'compressed_iron') {
-            outputRemovals.push('pneumaticcraft:' + material + '_gear');
-        } else {
-            outputRemovals.push('emendatusenigmatica:' + material + '_gear');
-        }
-    });
-
     var idRemovals = [
         'aquaculture:gold_nugget_from_blasting',
         'aquaculture:gold_nugget_from_smelting',
@@ -93,10 +85,14 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
-        output: '/thermal:parts/\\w+_vertical_slab/',
-        mod: 'buildersaddition',
+        output: '/\\w+:\\w+_gear/',
         type: 'minecraft:crafting_shaped'
     });
+
+    /*event.remove({
+        output: '/\\w+:\\w+_gear/',
+        type: 'thermal:press'
+    });*/
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
