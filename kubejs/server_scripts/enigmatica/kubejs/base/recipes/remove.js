@@ -89,6 +89,17 @@ events.listen('recipes', function (event) {
         mod: 'mekanism',
         type: 'mekanism:sawing'
     });
+
+    event.remove({
+        output: '/\\w+:\\w+_gear/',
+        type: 'minecraft:crafting_shaped'
+    });
+
+    /*event.remove({
+        output: '/\\w+:\\w+_gear/',
+        type: 'thermal:press'
+    });*/
+
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });
