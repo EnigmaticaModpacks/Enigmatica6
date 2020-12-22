@@ -166,12 +166,16 @@ woodVariantsToConstruct.forEach((variant) => {
     woodBlockStripped = modID + ':stripped_' + logType + woodSuffix;
     plankBlock = modID + ':' + logType + '_planks';
 
-    //BlockStripped Exceptions
+    // Exceptions
     switch (logType) {
+        case 'palo_verde':
+            plankBlock = 'minecraft:birch_planks';
+            break;
         case 'withering_oak':
             logBlockStripped = 'minecraft:stripped_oak_log';
             woodBlockStripped = 'minecraft:stripped_oak_wood';
             plankBlock = 'minecraft:oak_planks';
+            break;
         default:
     }
 

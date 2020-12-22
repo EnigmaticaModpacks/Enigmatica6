@@ -85,6 +85,12 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
+        output: 'mekanism:sawdust',
+        mod: 'mekanism',
+        type: 'mekanism:sawing'
+    });
+
+    event.remove({
         output: '/\\w+:\\w+_gear/',
         type: 'minecraft:crafting_shaped'
     });
