@@ -83,6 +83,12 @@ events.listen('recipes', function (event) {
         mod: 'buildersaddition',
         type: 'minecraft:crafting_shaped'
     });
+
+    event.remove({
+        output: 'mekanism:sawdust',
+        mod: 'mekanism',
+        type: 'mekanism:sawing'
+    });
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });

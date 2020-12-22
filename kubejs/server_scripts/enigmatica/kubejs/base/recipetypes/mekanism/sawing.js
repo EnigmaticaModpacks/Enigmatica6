@@ -1,10 +1,17 @@
 events.listen('recipes', function (event) {
+    var sawDust = 'emendatusenigmatica:wood_dust';
+
+    event.recipes.mekanism.sawing(item.of(sawDust), '#forge:rods/wooden');
+
     buildWoodVariants.forEach((variant) => {
         var modID = variant.logBlock.split(':')[0];
 
-        // mod blacklist
         if (modID == 'minecraft') {
-            return;
+            event.remove({
+                output: variant.plankBlock,
+                mod: 'mekanism',
+                type: 'mekanism:sawing'
+            });
         }
 
         if (variant.logBlock == 'byg:withering_oak_log') {
@@ -15,44 +22,25 @@ events.listen('recipes', function (event) {
             recipes: [
                 {
                     input: variant.logBlock,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 },
                 {
                     input: variant.woodBlock,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 },
                 {
                     input: variant.logBlockStripped,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 },
                 {
                     input: variant.woodBlockStripped,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 }
             ]
         };
 
         data.recipes.forEach((recipe) => {
-            event.recipes.mekanism.sawing({
-                type: 'mekanism:sawing',
-                input: {
-                    ingredient: {
-                        item: recipe.input
-                    }
-                },
-                mainOutput: {
-                    item: recipe.output,
-                    count: recipe.count
-                },
-                secondaryOutput: {
-                    item: 'emendatusenigmatica:wood_dust'
-                },
-                secondaryChance: 0.25
-            });
+            event.recipes.mekanism.sawing(item.of(recipe.output, 6), recipe.input, item.of(sawDust).chance(0.25));
         });
     });
 });
