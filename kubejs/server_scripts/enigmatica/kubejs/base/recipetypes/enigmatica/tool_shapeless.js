@@ -46,12 +46,12 @@ events.listen('recipes', function (event) {
     });
 
     buildWoodVariants.forEach((variant) => {
-        var modID = variant.logBlock.split(':')[0];
+        //var modID = variant.logBlock.split(':')[0];
 
         // mod blacklist
-        if (modID == 'undergarden') {
+        /*if (modID == 'undergarden') {
             return;
-        }
+        }*/
 
         data = {
             recipes: [

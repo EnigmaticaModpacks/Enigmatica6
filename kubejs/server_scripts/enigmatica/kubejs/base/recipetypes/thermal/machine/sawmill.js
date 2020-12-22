@@ -1,6 +1,7 @@
 events.listen('recipes', function (event) {
     buildWoodVariants.forEach((variant) => {
         var modID = variant.logBlock.split(':')[0];
+        var sawDust = 'emendatusenigmatica:wood_dust';
 
         // mod blacklist
         if (modID == 'minecraft' || modID == 'byg' || modID == 'biomesoplenty') {
@@ -11,45 +12,27 @@ events.listen('recipes', function (event) {
             recipes: [
                 {
                     input: variant.logBlock,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 },
                 {
                     input: variant.woodBlock,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 },
                 {
                     input: variant.logBlockStripped,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 },
                 {
                     input: variant.woodBlockStripped,
-                    output: variant.plankBlock,
-                    count: 6
+                    output: variant.plankBlock
                 }
             ]
         };
 
         data.recipes.forEach((recipe) => {
-            event.recipes.thermal.sawmill({
-                type: 'thermal:sawmill',
-                ingredient: {
-                    item: recipe.input
-                },
-                result: [
-                    {
-                        item: recipe.output,
-                        count: recipe.count
-                    },
-                    {
-                        item: 'emendatusenigmatica:wood_dust',
-                        chance: 1.25
-                    }
-                ],
-                energy: 1000
-            });
+            event.recipes.thermal
+                .sawmill([item.of(recipe.output, 6), item.of(sawDust).chance(1.25)], recipe.input)
+                .energy(1000);
         });
     });
 });
