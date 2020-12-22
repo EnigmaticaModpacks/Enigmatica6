@@ -323,23 +323,24 @@ function thermal_press_wires(event, material) {
 }
 
 function gear_unification(event, material) {
-    if (tagIsEmpty('#forge:gears/' + material)) {
-        //console.info('Not_Gear: ' + material);
-        return;
-    }
     var gearInput;
-    var gem = '#forge:gems/' + material;
-    var ingot = '#forge:ingots/' + material;
 
-    if (!tagIsEmpty(ingot)) {
-        gearInput = ingot;
-    } else if (!tagIsEmpty(gem)) {
+    var gearTag = ingredient.of('#forge:gears/' + material);
+    var gear = getPreferredItemInTag(gearTag).id;
+    var ingotTag = ingredient.of('#forge:ingots/' + material);
+    var ingot = getPreferredItemInTag(ingotTag).id;
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    if (ingot == air && gem == air) {
+        return;
+    } else if (gem != air) {
         gearInput = gem;
     } else {
-        return;
+        gearInput = ingot;
     }
 
-    event.shaped(item.of('#forge:gears/' + material, 1), [' B ', 'BAB', ' B '], {
+    event.shaped(gear, [' B ', 'BAB', ' B '], {
         A: '#forge:nuggets/iron',
         B: gearInput
     });
