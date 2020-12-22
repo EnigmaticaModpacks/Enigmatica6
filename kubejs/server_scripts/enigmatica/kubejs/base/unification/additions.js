@@ -10,6 +10,7 @@ events.listen('recipes', function (event) {
         astralsorcery_ore_processing_infuser(event, material);
         thermal_press_rods(event, material);
         thermal_press_wires(event, material);
+        gear_unification(event, material);
     });
 });
 
@@ -319,6 +320,33 @@ function thermal_press_wires(event, material) {
         ],
         energy: 2400
     });
+}
+
+function gear_unification(event, material) {
+    if (tagIsEmpty('#forge:gears/' + material)) {
+        //console.info('Not_Gear: ' + material);
+        return;
+    }
+    var gearInput;
+    var gem = '#forge:gems/' + material;
+    var ingot = '#forge:ingots/' + material;
+
+    if (!tagIsEmpty(ingot)) {
+        gearInput = ingot;
+    } else if (!tagIsEmpty(gem)) {
+        gearInput = gem;
+    } else {
+        return;
+    }
+
+    event.shaped(item.of('#forge:gears/' + material, 1), [' B ', 'BAB', ' B '], {
+        A: '#forge:nuggets/iron',
+        B: gearInput
+    });
+
+    //event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
+    //This should work, but doesn't. And the json method doesn't work either... so no new gears for immersive.
+    //event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput).count(4), 'immersiveengineering:mold_gear')
 }
 
 // Currently unused
