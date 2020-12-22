@@ -5,63 +5,59 @@ events.listen('recipes', (event) => {
         recipes: [
             {
                 fluid: 'pneumaticcraft:diesel',
-                energy: 125000,
-                amount: 250
+                energy: 500000
+            },
+            {
+                fluid: 'immersivepetroleum:diesel',
+                energy: 500000
             },
             {
                 fluid: 'pneumaticcraft:biodiesel',
-                energy: 125000,
-                amount: 250
+                energy: 500000
             },
             {
                 fluid: 'immersiveengineering:biodiesel',
-                energy: 125000,
-                amount: 250
+                energy: 500000
             },
             {
                 fluid: 'pneumaticcraft:kerosene',
-                energy: 137500,
-                amount: 250
+                energy: 550000
             },
             {
                 fluid: 'pneumaticcraft:gasoline',
-                energy: 187500,
-                amount: 250
+                energy: 750000
+            },
+            {
+                fluid: 'immersivepetroleum:gasoline',
+                energy: 750000
             },
             {
                 fluid: 'pneumaticcraft:lpg',
-                energy: 225000,
-                amount: 250
+                energy: 900000
             },
             {
                 fluid: 'mekanism:ethene',
-                energy: 225000,
-                amount: 250
+                energy: 900000
             },
             {
                 fluid: 'pneumaticcraft:ethanol',
-                energy: 50000,
-                amount: 500
+                energy: 100000
             },
             {
                 fluid: 'mekanismgenerators:bioethanol',
-                energy: 50000,
-                amount: 500
+                energy: 100000
             },
             {
                 fluid: 'immersiveengineering:ethanol',
-                energy: 50000,
-                amount: 500
+                energy: 100000
             },
             {
                 fluid: 'industrialforegoing:biofuel',
-                energy: 64000,
-                amount: 1000
+                energy: 64000
             },
             {
                 fluid: 'thermal:tree_oil',
-                energy: 100000,
-                amount: 250
+                energy: 100000
             }
         ]
     };
@@ -69,7 +65,7 @@ events.listen('recipes', (event) => {
         event.recipes.thermal.compression_fuel({
             ingredient: {
                 fluid: recipe.fluid,
-                amount: recipe.amount
+                amount: 1000
             },
             energy: recipe.energy * multiplier
         });
