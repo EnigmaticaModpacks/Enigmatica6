@@ -7,6 +7,8 @@ const disabledItems = [
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
 
+    'bloodmagic:sand_netherite',
+
     'byg:ametrine_block',
     'byg:ametrine_boots',
     'byg:ametrine_chestplate',
