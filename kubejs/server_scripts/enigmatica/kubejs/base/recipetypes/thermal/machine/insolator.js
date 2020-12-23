@@ -365,149 +365,22 @@ events.listen('recipes', (event) => {
                 waterModifier: 3.0
             },
             {
-                input: 'quark:yellow_blossom_sapling',
+                input: 'undergarden:smogstem_sapling',
                 outputs: [
-                    item.of('minecraft:spruce_log').chance(6.0),
-                    item.of('quark:yellow_blossom_sapling').chance(1.1)
+                    item.of('undergarden:smogstem_log').chance(6.0),
+                    item.of('undergarden:smogstem_sapling').chance(1.1)
                 ],
-                energy_mod: 3.0,
-                water_mod: 3.0
+                energyModifier: 3.0,
+                waterModifier: 3.0
             },
             {
-                input: 'quark:pink_blossom_sapling',
+                input: 'undergarden:wigglewood_sapling',
                 outputs: [
-                    item.of('minecraft:spruce_log').chance(6.0),
-                    item.of('quark:pink_blossom_sapling').chance(1.1)
+                    item.of('undergarden:wigglewood_log').chance(6.0),
+                    item.of('undergarden:wigglewood_sapling').chance(1.1)
                 ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'quark:orange_blossom_sapling',
-                outputs: [
-                    item.of('minecraft:spruce_log').chance(6.0),
-                    item.of('quark:orange_blossom_sapling').chance(1.1)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'quark:lavender_blossom_sapling',
-                outputs: [
-                    item.of('minecraft:spruce_log').chance(6.0),
-                    item.of('quark:lavender_blossom_sapling').chance(1.1)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'quark:blue_blossom_sapling',
-                outputs: [
-                    item.of('minecraft:spruce_log').chance(6.0),
-                    item.of('quark:blue_blossom_sapling').chance(1.1)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'quark:red_blossom_sapling',
-                outputs: [
-                    item.of('minecraft:spruce_log').chance(6.0),
-                    item.of('quark:red_blossom_sapling').chance(1.1)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:apple_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:apple_sapling').chance(1.1),
-                    item.of('minecraft:apple').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:apricot_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:apricot_sapling').chance(1.1),
-                    item.of('simplefarming:apricot').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:banana_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:banana_sapling').chance(1.1),
-                    item.of('simplefarming:banana').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:cherry_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:cherry_sapling').chance(1.1),
-                    item.of('simplefarming:cherries').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:mango_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:mango_sapling').chance(1.1),
-                    item.of('simplefarming:mango').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:olive_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:olive_sapling').chance(1.1),
-                    item.of('simplefarming:olives').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:orange_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:orange_sapling').chance(1.1),
-                    item.of('simplefarming:orange').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:pear_sapling',
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:pear_sapling').chance(1.1),
-                    item.of('simplefarming:pear').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
-            },
-            {
-                input: 'simplefarming:plum_sapling',
-                outputs: ['simplefarming:fruit_log', 'simplefarming:plum_sapling', 'simplefarming:plum'],
-                outputs: [
-                    item.of('simplefarming:fruit_log').chance(6.0),
-                    item.of('simplefarming:plum_sapling').chance(1.1),
-                    item.of('simplefarming:plum').chance(2.0)
-                ],
-                energy_mod: 3.0,
-                water_mod: 3.0
+                energyModifier: 3.0,
+                waterModifier: 3.0
             }
         ]
     };
