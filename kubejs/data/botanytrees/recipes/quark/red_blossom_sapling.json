@@ -3,26 +3,26 @@
     "conditions": [
         {
             "type": "forge:mod_loaded",
-            "modid": "byg"
+            "modid": "quark"
         },
         {
             "type": "forge:item_exists",
-            "item": "byg:zelkova_sapling"
+            "item": "quark:red_blossom_sapling"
         }
     ],
     "seed": {
-        "item": "byg:zelkova_sapling"
+        "item": "quark:red_blossom_sapling"
     },
     "categories": ["dirt"],
     "growthTicks": 2400,
     "display": {
-        "block": "byg:zelkova_sapling"
+        "block": "quark:red_blossom_sapling"
     },
     "results": [
         {
             "chance": 0.5,
             "output": {
-                "item": "byg:zelkova_log"
+                "item": "minecraft:spruce_log"
             },
             "minRolls": 1,
             "maxRolls": 1
@@ -38,7 +38,7 @@
         {
             "chance": 0.05,
             "output": {
-                "item": "byg:zelkova_sapling"
+                "item": "quark:red_blossom_sapling"
             },
             "minRolls": 1,
             "maxRolls": 1
