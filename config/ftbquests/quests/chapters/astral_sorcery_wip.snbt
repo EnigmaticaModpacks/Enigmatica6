@@ -6,21 +6,108 @@
 	icon: "astralsorcery:hand_telescope",
 	always_invisible: true,
 	default_quest_shape: "",
-	quests: [{
-		icon: "astralsorcery:tome",
-		x: 0.0d,
-		y: -1.5d,
-		shape: "gear",
-		description: ["~MuteTiefling"],
-		id: 2804,
-		tasks: [{
-			id: 2805,
-			type: "checkmark"
-		}],
-		rewards: [{
-			id: 2806,
-			type: "item",
-			item: "astralsorcery:tome"
-		}]
-	}]
+	quests: [
+		{
+			icon: "astralsorcery:tome",
+			x: 0.0d,
+			y: -1.5d,
+			shape: "gear",
+			description: [
+				"Remnants of an ancienct civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed hrms though they avoid the structures in fear. ",
+				"",
+				"Pillagers, fierce as they may be, seem to share in this superstition... What secrets await discovery?",
+				"",
+				"~MuteTiefling"
+			],
+			id: 2804,
+			tasks: [{
+				id: 2805,
+				type: "checkmark"
+			}],
+			rewards: [{
+				id: 2806,
+				type: "item",
+				item: "astralsorcery:tome"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -4.5d,
+			dependencies: [I;2804],
+			id: 2926,
+			tasks: [{
+				id: 2935,
+				type: "item",
+				item: "astralsorcery:altar_discovery"
+			}],
+			rewards: [{
+				id: 2936,
+				type: "item",
+				item: "astralsorcery:wand"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 1.5d,
+			dependencies: [I;2804],
+			id: 2928,
+			tasks: [{
+				id: 2929,
+				type: "checkmark",
+				title: "Rituals"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -3.5d,
+			dependencies: [I;2804],
+			id: 2930,
+			tasks: [{
+				id: 2931,
+				type: "checkmark",
+				title: "Starlight Manipulation"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 0.5d,
+			dependencies: [I;2804],
+			id: 2932,
+			tasks: [{
+				id: 2933,
+				type: "checkmark",
+				title: "Constellations"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -4.5d,
+			id: 2937,
+			tasks: [{
+				id: 2938,
+				type: "item",
+				item: "astralsorcery:altar_attunement"
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -3.5d,
+			id: 2939,
+			tasks: [{
+				id: 2940,
+				type: "item",
+				item: "astralsorcery:altar_constellation"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: -2.0d,
+			id: 2941,
+			tasks: [{
+				id: 2942,
+				type: "item",
+				item: "astralsorcery:altar_radiance"
+			}]
+		}
+	]
 }
