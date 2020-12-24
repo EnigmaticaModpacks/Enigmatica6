@@ -75,9 +75,6 @@ events.listen('recipes', function (event) {
         shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A A'], {
             A: '#forge:rods/wooden'
         }),
-        shapedRecipe(item.of('immersiveengineering:stick_steel', 3), ['A', 'A', 'A'], {
-            A: '#forge:ingots/steel'
-        }),
         shapedRecipe(item.of('valhelsia_structures:oak_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:oak_log'
         }),
@@ -286,6 +283,15 @@ events.listen('recipes', function (event) {
             A: '#forge:ingots/tin',
             B: '#forge:nuggets/tin',
             C: '#bloodmagic:crystals/demon'
+        }),
+        shapedRecipe(item.of('emendatusenigmatica:steel_ingot', 2), ['AA'], {
+            A: 'immersiveengineering:ingot_steel'
+        }),
+        shapedRecipe(item.of('immersiveengineering:ingot_steel', 2), ['AA'], {
+            A: 'mekanism:ingot_steel'
+        }),
+        shapedRecipe(item.of('mekanism:ingot_steel', 2), ['AA'], {
+            A: 'emendatusenigmatica:steel_ingot'
         })
     ];
 
