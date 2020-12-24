@@ -10,7 +10,7 @@
 		{
 			icon: "astralsorcery:tome",
 			x: 0.0d,
-			y: -1.5d,
+			y: -1.0d,
 			shape: "gear",
 			description: [
 				"Remnants of an ancienct civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed hrms though they avoid the structures in fear. ",
@@ -31,8 +31,15 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: -4.5d,
+			x: 2.0d,
+			y: -0.5d,
+			description: [
+				"Ancient temples carved in brilliant marble dot the land in stark contrast to the greenery. The largest of them seem to have been purpose built as a vault of sorts. ",
+				"",
+				"Locate a Large Temple, found frequently in cold or mountainous biomes, and find a way inside. Be careful not to disturb the crystal within, as it will be needed to progress. Expose it to the sky to embark on your journey through Astral Sorcery.",
+				"",
+				"These may be located far from home, but revisiting this crystal will be vital through much of the early stages of the mod. Use the provided Warp Scrolls to simplify getting back and forth for now."
+			],
 			dependencies: [I;2804],
 			id: 2926,
 			tasks: [{
@@ -40,48 +47,89 @@
 				type: "item",
 				item: "astralsorcery:altar_discovery"
 			}],
-			rewards: [{
-				id: 2936,
-				type: "item",
-				item: "astralsorcery:wand"
-			}]
+			rewards: [
+				{
+					id: 2936,
+					type: "item",
+					item: "astralsorcery:wand"
+				},
+				{
+					id: 3035,
+					type: "item",
+					item: "ars_nouveau:warp_scroll",
+					count: 2
+				}
+			]
 		},
 		{
-			x: -3.5d,
-			y: 1.5d,
-			dependencies: [I;2804],
+			icon: "astralsorcery:ritual_pedestal",
+			x: -7.0d,
+			y: -0.5d,
+			dependencies: [I;2958],
 			id: 2928,
-			tasks: [{
-				id: 2929,
-				type: "checkmark",
-				title: "Rituals"
-			}]
+			tasks: [
+				{
+					id: 2960,
+					type: "item",
+					item: "astralsorcery:ritual_pedestal"
+				},
+				{
+					id: 2961,
+					type: "item",
+					item: "astralsorcery:marble_raw",
+					count: 12L
+				},
+				{
+					id: 2962,
+					type: "item",
+					item: "astralsorcery:marble_chiseled"
+				},
+				{
+					id: 2963,
+					type: "item",
+					item: "astralsorcery:marble_bricks",
+					count: 24L
+				},
+				{
+					id: 2964,
+					type: "item",
+					item: "astralsorcery:marble_arch",
+					count: 20L
+				}
+			]
 		},
 		{
-			x: -2.5d,
-			y: -3.5d,
-			dependencies: [I;2804],
+			x: -3.0d,
+			y: -3.0d,
+			dependencies: [I;2979],
 			id: 2930,
 			tasks: [{
-				id: 2931,
-				type: "checkmark",
-				title: "Starlight Manipulation"
+				id: 2950,
+				type: "item",
+				item: "astralsorcery:well"
 			}]
 		},
 		{
-			x: 3.0d,
-			y: 0.5d,
+			x: -2.0d,
+			y: 0.0d,
 			dependencies: [I;2804],
 			id: 2932,
 			tasks: [{
-				id: 2933,
-				type: "checkmark",
-				title: "Constellations"
+				id: 2951,
+				type: "item",
+				item: {
+					id: "astralsorcery:constellation_paper",
+					Count: true,
+					tag: {
+						astralsorcery: {}
+					}
+				}
 			}]
 		},
 		{
-			x: 6.0d,
-			y: -4.5d,
+			x: 4.0d,
+			y: -1.0d,
+			dependencies: [I;2926],
 			id: 2937,
 			tasks: [{
 				id: 2938,
@@ -90,8 +138,9 @@
 			}]
 		},
 		{
-			x: 7.0d,
-			y: -3.5d,
+			x: 6.0d,
+			y: -1.5d,
+			dependencies: [I;2937],
 			id: 2939,
 			tasks: [{
 				id: 2940,
@@ -100,13 +149,587 @@
 			}]
 		},
 		{
-			x: 7.5d,
-			y: -2.0d,
+			x: 8.0d,
+			y: -1.0d,
+			dependencies: [I;2939],
 			id: 2941,
 			tasks: [{
 				id: 2942,
 				type: "item",
 				item: "astralsorcery:altar_radiance"
+			}]
+		},
+		{
+			icon: "astralsorcery:spectral_relay",
+			x: 6.0d,
+			y: 0.5d,
+			dependencies: [I;2975],
+			id: 2943,
+			tasks: [
+				{
+					id: 2944,
+					type: "item",
+					item: "astralsorcery:spectral_relay"
+				},
+				{
+					id: 2945,
+					type: "item",
+					item: "astralsorcery:black_marble_raw"
+				},
+				{
+					id: 2946,
+					type: "item",
+					item: "astralsorcery:marble_arch",
+					count: 4L
+				},
+				{
+					id: 2947,
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					count: 4L
+				}
+			]
+		},
+		{
+			x: -3.5d,
+			y: 0.5d,
+			dependencies: [I;2932],
+			id: 2952,
+			tasks: [{
+				id: 2953,
+				type: "item",
+				item: "astralsorcery:hand_telescope"
+			}]
+		},
+		{
+			x: -5.0d,
+			y: 1.0d,
+			dependencies: [I;2952],
+			id: 2954,
+			tasks: [{
+				id: 2955,
+				type: "item",
+				item: "astralsorcery:telescope"
+			}]
+		},
+		{
+			x: -6.0d,
+			y: 2.0d,
+			dependencies: [I;2954],
+			id: 2956,
+			tasks: [{
+				id: 2957,
+				type: "item",
+				item: "astralsorcery:observatory"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -0.5d,
+			dependencies: [I;2952],
+			id: 2958,
+			tasks: [{
+				id: 2959,
+				type: "item",
+				item: "astralsorcery:attunement_altar"
+			}]
+		},
+		{
+			title: "Nocturnal & Illumination Powder",
+			x: 3.0d,
+			y: -2.0d,
+			subtitle: "Night and Day",
+			dependencies: [I;2926],
+			id: 2965,
+			tasks: [
+				{
+					id: 2966,
+					type: "item",
+					item: "astralsorcery:nocturnal_powder"
+				},
+				{
+					id: 2967,
+					type: "item",
+					item: "astralsorcery:illumination_powder"
+				}
+			]
+		},
+		{
+			icon: {
+				id: "astralsorcery:celestial_collector_crystal",
+				Count: true,
+				tag: {
+					astralsorcery: {
+						constellation: "astralsorcery:bootes",
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:size",
+									pLevel: 3,
+									discovered: true
+								},
+								{
+									property: "astralsorcery:purity",
+									pLevel: 2,
+									discovered: true
+								},
+								{
+									property: "astralsorcery:shape",
+									pLevel: 3,
+									discovered: true
+								},
+								{
+									property: "astralsorcery:collector.rate",
+									pLevel: 3,
+									discovered: true
+								},
+								{
+									property: "astralsorcery:constellation.bootes",
+									pLevel: 2,
+									discovered: true
+								}
+							]
+						}
+					}
+				}
+			},
+			x: -8.5d,
+			y: -0.5d,
+			dependencies: [I;2928],
+			id: 2968,
+			tasks: [
+				{
+					id: 2969,
+					type: "item",
+					item: {
+						id: "astralsorcery:rock_collector_crystal",
+						Count: true,
+						tag: {}
+					}
+				},
+				{
+					id: 2970,
+					type: "item",
+					item: "astralsorcery:marble_pillar"
+				},
+				{
+					id: 2971,
+					type: "item",
+					item: "astralsorcery:marble_engraved",
+					count: 5L
+				},
+				{
+					id: 2972,
+					type: "item",
+					item: "astralsorcery:marble_raw",
+					count: 9L
+				},
+				{
+					id: 2973,
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					count: 5L
+				},
+				{
+					id: 2974,
+					type: "item",
+					item: "astralsorcery:marble_runed",
+					count: 12L
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 0.5d,
+			dependencies: [I;2926],
+			id: 2975,
+			tasks: [{
+				id: 2976,
+				type: "item",
+				item: {
+					id: "astralsorcery:resonator",
+					Count: true,
+					tag: {
+						astralsorcery: {
+							upgrades: [0],
+							selected_upgrade: 0
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -3.0d,
+			dependencies: [I;2965],
+			id: 2977,
+			tasks: [{
+				id: 2978,
+				type: "item",
+				item: "astralsorcery:illuminator"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -3.0d,
+			description: ["hold resonating wand at night to find"],
+			dependencies: [I;2804],
+			id: 2979,
+			tasks: [{
+				id: 2980,
+				type: "item",
+				item: {
+					id: "astralsorcery:rock_crystal",
+					Count: true,
+					tag: {
+						astralsorcery: {}
+					}
+				}
+			}],
+			rewards: [{
+				id: 3004,
+				type: "item",
+				item: "astralsorcery:linking_tool"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			dependencies: [I;2979],
+			id: 2981,
+			tasks: [{
+				id: 2982,
+				type: "item",
+				item: {
+					id: "astralsorcery:crystal_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			icon: "astralsorcery:infuser",
+			x: -5.5d,
+			y: -4.0d,
+			dependencies: [I;2993],
+			id: 2983,
+			tasks: [
+				{
+					id: 2984,
+					type: "item",
+					item: "astralsorcery:infuser"
+				},
+				{
+					id: 2985,
+					type: "item",
+					item: "minecraft:lapis_block"
+				},
+				{
+					id: 2986,
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					count: 8L
+				},
+				{
+					id: 2987,
+					type: "item",
+					item: "astralsorcery:marble_pillar",
+					count: 4L
+				},
+				{
+					id: 2988,
+					type: "item",
+					item: "astralsorcery:marble_runed",
+					count: 20L
+				},
+				{
+					id: 2989,
+					type: "item",
+					item: "astralsorcery:marble_raw",
+					count: 16L
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: -6.5d,
+			subtitle: "Splitting Hairs",
+			description: ["drop crystals, left click them with cutting tool"],
+			dependencies: [I;2995],
+			id: 2990,
+			tasks: [{
+				id: 2991,
+				type: "item",
+				item: {
+					id: "astralsorcery:chisel",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: 2992,
+				type: "item",
+				item: {
+					id: "minecraft:enchanted_book",
+					Count: true,
+					tag: {
+						StoredEnchantments: [{
+							lvl: 3s,
+							id: "minecraft:unbreaking"
+						}]
+					}
+				}
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -4.0d,
+			dependencies: [I;2930],
+			id: 2993,
+			tasks: [{
+				id: 2994,
+				type: "item",
+				item: "astralsorcery:liquid_starlight_bucket"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -5.0d,
+			dependencies: [I;2979],
+			id: 2995,
+			tasks: [{
+				id: 2996,
+				type: "item",
+				item: "astralsorcery:starmetal_ore"
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -3.0d,
+			dependencies: [I;2983],
+			id: 2997,
+			tasks: [{
+				id: 2998,
+				type: "item",
+				item: "astralsorcery:chalice"
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -1.5d,
+			dependencies: [I;2928],
+			id: 2999,
+			tasks: [{
+				id: 3000,
+				type: "item",
+				item: "astralsorcery:ritual_link",
+				count: 2L
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -8.5d,
+			id: 3005,
+			tasks: [{
+				id: 3006,
+				type: "item",
+				item: {
+					id: "astralsorcery:lens",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: 1.5d,
+			y: -10.5d,
+			description: ["kills entities, does not count as player damage for drops"],
+			dependencies: [I;3005],
+			id: 3007,
+			tasks: [{
+				id: 3008,
+				type: "item",
+				item: "astralsorcery:colored_lens_damage"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: -10.5d,
+			subtitle: "Grow Light",
+			description: ["Greatly enhances the growth of crops under it's gentle glow."],
+			dependencies: [I;3005],
+			id: 3009,
+			tasks: [{
+				id: 3010,
+				type: "item",
+				item: "astralsorcery:colored_lens_growth"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -9.5d,
+			description: ["rapidly heals entities in the beam"],
+			dependencies: [I;3005],
+			id: 3015,
+			tasks: [{
+				id: 3016,
+				type: "item",
+				item: "astralsorcery:colored_lens_regeneration"
+			}]
+		},
+		{
+			title: "Collector Crystals",
+			x: -4.0d,
+			y: -8.5d,
+			id: 3021,
+			tasks: [{
+				id: 3022,
+				type: "item",
+				title: "Collector Crystal",
+				item: {
+					id: "astralsorcery:celestial_collector_crystal",
+					Count: true,
+					tag: {
+						astralsorcery: {
+							constellation: "astralsorcery:pelotrio",
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:size",
+										pLevel: 3,
+										discovered: true
+									},
+									{
+										property: "astralsorcery:purity",
+										pLevel: 2,
+										discovered: true
+									},
+									{
+										property: "astralsorcery:shape",
+										pLevel: 3,
+										discovered: true
+									},
+									{
+										property: "astralsorcery:collector.rate",
+										pLevel: 3,
+										discovered: true
+									},
+									{
+										property: "astralsorcery:constellation.pelotrio",
+										pLevel: 2,
+										discovered: true
+									}
+								]
+							}
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -6.0d,
+			dependencies: [I;
+				2993,
+				2995
+			],
+			id: 3023,
+			tasks: [{
+				id: 3024,
+				type: "checkmark",
+				title: "growing crystals"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -6.5d,
+			id: 3025,
+			tasks: [{
+				id: 3026,
+				type: "checkmark",
+				title: "splitting and combining crystals"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -3.0d,
+			description: [
+				"This Starlight of the ancients appears to have deeply transformative powers on the physical world, reconstructing material into more useful forms. ",
+				"Indeed, this power may even be harnessed to transfer entire beings from one place to another in a process that feels quite like being drunk.",
+				"",
+				"Build two or more of these structures to begin creating a network of gates. These have no distance limitations and work cross dimensionally."
+			],
+			dependencies: [I;2937],
+			id: 3027,
+			tasks: [{
+				id: 3028,
+				type: "item",
+				item: {
+					id: "astralsorcery:celestial_gateway",
+					Count: true,
+					tag: {
+						astralsorcery: {}
+					}
+				}
+			}]
+		},
+		{
+			x: 7.0d,
+			y: -3.0d,
+			dependencies: [I;2939],
+			id: 3029,
+			tasks: [{
+				id: 3030,
+				type: "item",
+				item: "astralsorcery:refraction_table"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -9.5d,
+			description: ["Useful for pushing items or mobs, perhaps in a mob farm. "],
+			dependencies: [I;3005],
+			id: 3031,
+			tasks: [{
+				id: 3032,
+				type: "item",
+				item: "astralsorcery:colored_lens_push"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -11.5d,
+			dependencies: [I;3005],
+			id: 3033,
+			tasks: [{
+				id: 3034,
+				type: "item",
+				item: {
+					id: "astralsorcery:prism",
+					Count: true,
+					tag: {
+						astralsorcery: {
+							crystalProperties: {
+								attributes: [
+									{
+										property: "astralsorcery:purity",
+										pLevel: 2,
+										discovered: true
+									},
+									{
+										property: "astralsorcery:shape",
+										pLevel: 3,
+										discovered: true
+									}
+								]
+							}
+						}
+					}
+				}
 			}]
 		}
 	]
