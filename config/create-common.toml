@@ -82,10 +82,10 @@
 		[worldgen.v1.limestone]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 64
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
 			clusterChance = 0.05
@@ -99,10 +99,10 @@
 		[worldgen.v1.weathered_limestone]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 64
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
 			clusterChance = 0.05
@@ -119,7 +119,7 @@
 			enable = false
 			#
 			#Range: > 0
-			clusterSize = 32
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
 			clusterChance = 0.05
@@ -133,10 +133,10 @@
 		[worldgen.v1.gabbro]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 64
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
 			clusterChance = 0.05
@@ -150,10 +150,10 @@
 		[worldgen.v1.scoria]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 64
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
 			clusterChance = 0.05
