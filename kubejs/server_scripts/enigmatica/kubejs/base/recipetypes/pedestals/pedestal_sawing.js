@@ -33,7 +33,6 @@ events.listen('recipes', function (event) {
         };
 
         data.recipes.forEach((recipe) => {
-            console.log('Thermal Sawmill: ' + variant.plankBlock);
             event.recipes.pedestals.pedestal_sawing({
                 type: 'pedestals:pedestal_sawing',
                 ingredient: {
