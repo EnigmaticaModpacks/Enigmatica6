@@ -6,7 +6,6 @@ events.listen('item.tags', function (event) {
             { material: 'zombie' },
             { material: 'skeleton' },
             { material: 'clay' },
-            { material: 'icy' },
             { material: 'rgbee' },
             { material: 'nether_quartz' },
             { material: 'blaze' },
@@ -33,8 +32,6 @@ events.listen('item.tags', function (event) {
             { material: 'osmium' },
             { material: 'emerald' },
             { material: 'diamond' },
-            { material: 'refined_glowstone' },
-            { material: 'refined_obsidian' },
             { material: 'netherite' },
             { material: 'wither' }
         ]
