@@ -24,6 +24,8 @@ events.listen('item.tags', function (event) {
     event.get('forge:dusts/gold_copper').add('#forge:dusts/gold').add('#forge:dusts/copper');
     event.get('forge:dusts/iron_aluminum').add('#forge:dusts/iron').add('#forge:dusts/aluminum');
 
+    event.get('forge:dusts/netherite_scrap').remove('bloodmagic:sand_netherite');
+
     // Temporary until EE adapts this change
     event.get('forge:dusts/arcane').remove('emendatusenigmatica:arcane_dust');
     event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');

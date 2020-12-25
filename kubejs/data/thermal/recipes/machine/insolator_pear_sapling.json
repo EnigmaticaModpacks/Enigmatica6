@@ -1,0 +1,22 @@
+{
+  "type": "thermal:insolator",
+  "ingredient": {
+    "item": "simplefarming:pear_sapling"
+  },
+  "result": [
+    {
+      "item": "simplefarming:fruit_log",
+      "chance": 6.0
+    },
+    {
+      "item": "simplefarming:pear_sapling",
+      "chance": 1.1
+    },
+    {
+      "item": "simplefarming:pear",
+      "chance": 2.0
+    }
+  ],
+  "energy_mod": 3.0,
+  "water_mod": 3.0
+}

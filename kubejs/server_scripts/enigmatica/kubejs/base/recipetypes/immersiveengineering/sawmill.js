@@ -1,50 +1,38 @@
 events.listen('recipes', function (event) {
     buildWoodVariants.forEach((variant) => {
         var modID = variant.logBlock.split(':')[0];
+        var sawDust = 'emendatusenigmatica:wood_dust';
 
         // mod blacklist
         if (modID == 'minecraft') {
             return;
         }
 
-        event.recipes.immersiveengineering.sawmill({
-            type: 'immersiveengineering:sawmill',
-            input: {
-                item: variant.logBlockStripped
-            },
-            result: {
-                item: variant.plankBlock,
-                count: 6
-            },
-            //secondaries: [{ output: { tag: 'forge:dusts/wood' }, stripping: false }], // This doesn't work?
-            energy: 800
-        });
-
-        event.recipes.immersiveengineering.sawmill({
-            type: 'immersiveengineering:sawmill', //Why you no work, secondaries?
-            /*secondaries: [
-                { output: { tag: 'forge:dusts/wood' }, stripping: true },
-                { output: { tag: 'forge:dusts/wood' }, stripping: false }
-            ],*/ result: {
-                item: variant.plankBlock,
-                count: 6
-            },
-            energy: 1600,
-            input: [
+        event.recipes.immersiveengineering
+            .sawmill(item.of(variant.plankBlock, 6), variant.logBlockStripped, [
                 {
-                    item: variant.logBlock
-                },
-                {
-                    item: variant.woodBlock
+                    stripping: false,
+                    output: sawDust
                 }
-            ],
-            stripped: {
-                item: variant.logBlockStripped
-            }
-        });
+            ])
+            .energy(800);
+
+        event.recipes.immersiveengineering
+            .sawmill(
+                item.of(variant.plankBlock, 6),
+                [variant.logBlock, variant.woodBlock],
+                [
+                    {
+                        stripping: true,
+                        output: sawDust
+                    },
+                    {
+                        stripping: false,
+                        output: sawDust
+                    }
+                ],
+                variant.logBlockStripped
+            )
+            .energy(1600);
     });
 });
-
-/*
-item: 'emendatusenigmatica:wood_dust'
- */
