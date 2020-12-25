@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-12-25T13:03:36.2540886Z",
+  "lastPlayed": "2020-12-25T17:58:43.3981794Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2020-12-25T12:28:20.5284379Z",
+  "lastPreviousMatchUpdate": "2020-12-25T17:58:38.3362333Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.4",
@@ -10309,29 +10309,17 @@
       "addonID": 238086,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3146042,
-        "displayName": "kubejs-1604.3.2.123-forge.jar",
-        "fileName": "kubejs-1604.3.2.123-forge.jar",
-        "fileDate": "2020-12-22T11:26:48.26Z",
-        "fileLength": 563941,
+        "id": 3148926,
+        "displayName": "kubejs-1604.3.2.125-forge.jar",
+        "fileName": "kubejs-1604.3.2.125-forge.jar",
+        "fileDate": "2020-12-25T17:24:28.897Z",
+        "fileLength": 565430,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3146/42/kubejs-1604.3.2.123-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3148/926/kubejs-1604.3.2.125-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 268655,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 416294,
-            "type": 3,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 419699,
@@ -10343,19 +10331,31 @@
             "addonId": 238222,
             "type": 2,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 268655,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 416294,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2527379104,
+            "fingerprint": 833503276,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 3906937975,
+            "fingerprint": 3424628859,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -10379,7 +10379,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 1168096369,
+            "fingerprint": 3279136865,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -10396,7 +10396,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3846915779,
+        "packageFingerprint": 3756480084,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -10412,12 +10412,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "kubejs-1604.3.2.123-forge.jar"
+        "FileNameOnDisk": "kubejs-1604.3.2.125-forge.jar"
       },
       "dateInstalled": "2020-12-13T23:39:19.3618924Z",
-      "dateUpdated": "2020-12-22T19:01:37.7024707Z",
-      "dateLastUpdateAttempted": "2020-12-22T19:01:37.7024707Z",
-      "status": 5,
+      "dateUpdated": "2020-12-25T20:02:58.121427Z",
+      "dateLastUpdateAttempted": "2020-12-25T20:02:58.121427Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11967,22 +11967,28 @@
       "addonID": 419699,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3147056,
-        "displayName": "[Forge 1.16.4] v1.2.60",
-        "fileName": "architectury-1.2.60-forge.jar",
-        "fileDate": "2020-12-23T11:14:05.82Z",
-        "fileLength": 225473,
+        "id": 3128224,
+        "displayName": "[Forge 1.16.4] v1.1.55",
+        "fileName": "architectury-1.1.55-forge.jar",
+        "fileDate": "2020-12-02T03:02:04.67Z",
+        "fileLength": 183030,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3147/56/architectury-1.2.60-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3128/224/architectury-1.1.55-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "architectury.accessWidener",
-            "fingerprint": 3465054117,
+            "foldername": "META-INF",
+            "fingerprint": 464910390,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "me",
+            "fingerprint": 3091648152,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -11993,31 +11999,13 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury.mixins.json",
-            "fingerprint": 726704874,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "architectury-refmap.json",
-            "fingerprint": 3816235863,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2556939526,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "me",
-            "fingerprint": 2793731300,
+            "foldername": "architectury-common.accessWidener",
+            "fingerprint": 2965368418,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2094836863,
+        "packageFingerprint": 3159994841,
         "gameVersion": [
           "Forge",
           "1.16.4"
@@ -12031,12 +12019,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "architectury-1.2.60-forge.jar"
+        "FileNameOnDisk": "architectury-1.1.55-forge.jar"
       },
-      "dateInstalled": "2020-12-13T23:39:18.768478Z",
-      "dateUpdated": "2020-12-23T13:48:39.6882152Z",
-      "dateLastUpdateAttempted": "2020-12-23T13:48:39.6882152Z",
-      "status": 5,
+      "dateInstalled": "2020-12-25T17:58:33.6730267Z",
+      "dateUpdated": "2020-12-25T17:58:33.7009495Z",
+      "dateLastUpdateAttempted": "2020-12-25T17:58:33.7009495Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12045,7 +12033,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 233105,
