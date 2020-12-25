@@ -211,12 +211,12 @@ events.listen('item.tags', function (event) {
         'botania:yellow_floating_flower',
         'botania:yellow_mushroom',
         'botania:yellow_shiny_flower',
-		'botania:mana_glass',
-		'botania:mana_glass_pane',
-		'botania:elf_glass',
-		'botania:elf_glass_pane',
-		'botania:bifrost_perm',
-		'botania:bifrost_pane',
+        'botania:mana_glass',
+        'botania:mana_glass_pane',
+        'botania:elf_glass',
+        'botania:elf_glass_pane',
+        'botania:bifrost_perm',
+        'botania:bifrost_pane',
         'buildersaddition:candle',
         'buildersaddition:large_candle',
         'buildersaddition:large_soul_candle',
@@ -284,7 +284,6 @@ events.listen('item.tags', function (event) {
         'naturesaura:light_staff',
         'naturesaura:spawn_lamp',
         'pneumaticcraft:kerosene_lamp',
-        'prefab:block_paper_lantern',
         'quark:black_candle',
         'quark:blaze_lantern',
         'quark:blue_candle',
@@ -357,7 +356,6 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:wall_lamp_inverted_red',
         'pneumaticcraft:wall_lamp_inverted_white',
         'pneumaticcraft:wall_lamp_inverted_yellow'
-
     ];
-	event.get('forge:lights').add(items);
+    event.get('forge:lights').add(items);
 });
