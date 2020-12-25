@@ -87,6 +87,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
 
+    event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
+
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
     event.replaceInput({ id: 'mcwbridges:iron_platform' }, '#forge:ingots/iron', 'additionalbars:horizontal_iron_bars');
 
