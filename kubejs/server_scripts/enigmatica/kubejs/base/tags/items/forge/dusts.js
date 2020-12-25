@@ -27,7 +27,6 @@ events.listen('item.tags', function (event) {
     event.get('forge:dusts/netherite_scrap').remove('bloodmagic:sand_netherite');
 
     // Temporary until EE adapts this change
-    event.get('forge:dusts/arcane').remove('emendatusenigmatica:arcane_dust');
     event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');
     event.get('forge:ores/arcane').remove('emendatusenigmatica:arcane_chunk');
     event.get('forge:ores/arcane').remove('emendatusenigmatica:arcane_ore');
@@ -36,7 +35,6 @@ events.listen('item.tags', function (event) {
     event.get('forge:gems/arcane').remove('emendatusenigmatica:arcane_gem');
     event.get('forge:storage_blocks/arcane').remove('emendatusenigmatica:arcane_block');
     event.get('forge:storage_blocks/mana').add('emendatusenigmatica:arcane_block');
-    event.get('forge:dusts/mana').add('emendatusenigmatica:arcane_dust');
     event.get('forge:chunks/mana').add('emendatusenigmatica:arcane_chunk');
     event.get('forge:ores/mana').add('emendatusenigmatica:arcane_ore');
     event.get('forge:ores/mana').add('emendatusenigmatica:arcane_chunk');
