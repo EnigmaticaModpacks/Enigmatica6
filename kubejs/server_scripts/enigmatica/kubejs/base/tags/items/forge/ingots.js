@@ -29,7 +29,6 @@ events.listen('item.tags', function (event) {
         .add('naturesaura:sky_ingot')
         .add('naturesaura:tainted_gold')
         .add('naturesaura:infused_iron');
-    event.get('forge:ingots').add('industrialforgoing:pink_slime_ingot');
     event.get('forge:ingots').add('botania:gaia_ingot');
 
     event.get('forge:ingots/gold_brass').add('#forge:ingots/gold').add('#forge:ingots/brass');
