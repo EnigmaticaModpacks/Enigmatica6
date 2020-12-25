@@ -1,0 +1,47 @@
+{
+    "type": "botanypots:crop",
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "quark"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "quark:red_blossom_sapling"
+        }
+    ],
+    "seed": {
+        "item": "quark:red_blossom_sapling"
+    },
+    "categories": ["dirt"],
+    "growthTicks": 2400,
+    "display": {
+        "block": "quark:red_blossom_sapling"
+    },
+    "results": [
+        {
+            "chance": 0.5,
+            "output": {
+                "item": "minecraft:spruce_log"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "minecraft:stick"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        },
+        {
+            "chance": 0.05,
+            "output": {
+                "item": "quark:red_blossom_sapling"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}

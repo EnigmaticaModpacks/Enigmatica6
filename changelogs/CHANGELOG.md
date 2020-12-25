@@ -1,3 +1,11 @@
+### Enigmatica 6 v0.3.3
+
+_Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.3.txt)_
+
+**Bug Fixes**
+
+- Resourceful Bees: Fixed Redstone Bee not being breedable
+
 ### Enigmatica 6 v0.3.2
 
 _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.2.txt)_

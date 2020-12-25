@@ -19,7 +19,7 @@ function entryIsBlacklisted(material, type) {
     return false;
 }
 
-function isEmptyTag(tag) {
+function tagIsEmpty(tag) {
     return getPreferredItemInTag(ingredient.of(tag)).id == air;
 }
 

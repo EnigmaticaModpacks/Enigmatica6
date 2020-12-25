@@ -1,0 +1,23 @@
+{
+    "modId": "undergarden",
+    "group": {
+        "name": "Undergarden Saplings",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "undergarden:regalium_ingot"
+        },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        {
+            "output": {
+                "item": "undergarden:smogstem_sapling"
+            }
+        },
+        {
+            "output": {
+                "item": "undergarden:wigglewood_sapling"
+            }
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "type": "botanypots:crop",
+    "conditions": [
+        {
+            "type": "forge:mod_loaded",
+            "modid": "undergarden"
+        },
+        {
+            "type": "forge:item_exists",
+            "item": "undergarden:wigglewood_sapling"
+        }
+    ],
+    "seed": {
+        "item": "undergarden:wigglewood_sapling"
+    },
+    "categories": ["dirt"],
+    "growthTicks": 2400,
+    "display": {
+        "block": "undergarden:wigglewood_sapling"
+    },
+    "results": [
+        {
+            "chance": 0.5,
+            "output": {
+                "item": "undergarden:wigglewood_log"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "undergarden:twistytwig"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        },
+        {
+            "chance": 0.05,
+            "output": {
+                "item": "undergarden:wigglewood_sapling"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}

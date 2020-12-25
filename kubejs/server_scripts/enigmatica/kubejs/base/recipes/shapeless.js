@@ -5,10 +5,10 @@ events.listen('recipes', (event) => {
         shapelessRecipe('minecraft:flint', ['#forge:gravel', '#forge:gravel', '#forge:gravel']),
         shapelessRecipe('simplefarming:cornbread', ['#forge:grain', '#forge:crops/corn', '#forge:grain']),
         shapelessRecipe('minecraft:chest', ['#forge:chests/wooden']),
-        // shapelessRecipe('minecraft:crafting_table', [
-        //     'craftingstation:crafting_station_slab',
-        //     'craftingstation:crafting_station_slab'
-        // ]),
+        shapelessRecipe('minecraft:crafting_table', [
+            'craftingstation:crafting_station_slab',
+            'craftingstation:crafting_station_slab'
+        ]),
         shapelessRecipe('simplefarming:fish_sandwich', [
             '#forge:bread',
             'aquaculture:fish_fillet_cooked',
@@ -28,11 +28,6 @@ events.listen('recipes', (event) => {
             'aquaculture:fish_fillet_cooked',
             'aquaculture:fish_fillet_cooked'
         ]),
-        // shapelessRecipe('tetra:magmatic_cell', [
-        //     { item: 'tetra:magmatic_cell', nbt: { Damage: 128 } },
-        //     'powah:capacitor_blazing',
-        //     'powah:capacitor_blazing'
-        // ]),
         shapelessRecipe(item.of('additionalbars:crossed_iron_bars', 9), [
             'minecraft:iron_bars',
             'minecraft:iron_bars',
@@ -68,8 +63,6 @@ events.listen('recipes', (event) => {
             'bambooeverything:bamboo_bundle',
             'bambooeverything:bamboo_bundle'
         ]),
-        // shapelessRecipe('industrialforegoing:essence_bucket', ['pneumaticcraft:memory_essence_bucket']),
-        // shapelessRecipe('pneumaticcraft:memory_essence_bucket', ['industrialforegoing:essence_bucket']),
         shapelessRecipe('minecraft:crafting_table', ['#forge:workbench']),
         shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }), [
             'minecraft:sugar',

@@ -12,6 +12,8 @@ events.listen('recipes', function (event) {
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
 
+        'craftingstation:crafting_station',
+
         'decorative_blocks:lattice',
 
         //'akashictome:tome',
@@ -83,6 +85,23 @@ events.listen('recipes', function (event) {
         mod: 'buildersaddition',
         type: 'minecraft:crafting_shaped'
     });
+
+    event.remove({
+        output: 'mekanism:sawdust',
+        mod: 'mekanism',
+        type: 'mekanism:sawing'
+    });
+
+    event.remove({
+        output: '/\\w+:\\w+_gear/',
+        type: 'minecraft:crafting_shaped'
+    });
+
+    /*event.remove({
+        output: '/\\w+:\\w+_gear/',
+        type: 'thermal:press'
+    });*/
+
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });
