@@ -37,16 +37,16 @@ events.listen('item.tags', function (event) {
             { material: 'refined_obsidian' },
             { material: 'netherite' },
             { material: 'wither' }
-        ],
-        special: [
-            { material: 'manasteel' },
-            { material: 'elementium' },
-            { material: 'terrasteel' },
-
-            { material: 'infused_iron' },
-            { material: 'tainted_gold' },
-            { material: 'sky' }
         ]
+        // special: [
+        //     { material: 'manasteel' },
+        //     { material: 'elementium' },
+        //     { material: 'terrasteel' },
+
+        //     { material: 'infused_iron' },
+        //     { material: 'tainted_gold' },
+        //     { material: 'sky' }
+        // ]
     };
     ['honeycomb', 'honeycomb_block'].forEach((honeyComb) => {
         event
@@ -58,9 +58,9 @@ events.listen('item.tags', function (event) {
         event
             .get('forge:' + honeyComb)
             .add(beeTiers.tier3.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
-        event
-            .get('forge:' + honeyComb)
-            .add(beeTiers.special.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
+        // event
+        //     .get('forge:' + honeyComb)
+        //     .add(beeTiers.special.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
         event
             .get('forge:' + honeyComb + '/tier1')
             .add(beeTiers.tier1.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
@@ -70,8 +70,8 @@ events.listen('item.tags', function (event) {
         event
             .get('forge:' + honeyComb + '/tier3')
             .add(beeTiers.tier3.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
-        event
-            .get('forge:' + honeyComb + '/special')
-            .add(beeTiers.special.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
+        // event
+        //     .get('forge:' + honeyComb + '/special')
+        //     .add(beeTiers.special.map((bee) => 'resourcefulbees:' + bee.material + '_' + honeyComb));
     });
 });
