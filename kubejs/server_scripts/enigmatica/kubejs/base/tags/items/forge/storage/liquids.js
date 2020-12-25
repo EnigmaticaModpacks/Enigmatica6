@@ -1,6 +1,6 @@
 events.listen('item.tags', function (event) {
     var items = [
-        'chiselsandbits:bit_tank',
+        'chiselsandbits:bit_storage',
         'extradisks:1048576k_fluid_storage_disk',
         'extradisks:1048576k_fluid_storage_part',
         'extradisks:16384k_fluid_storage_disk',
@@ -49,8 +49,7 @@ events.listen('item.tags', function (event) {
         'extrastorage:block_16384k_fluid',
         'astralsorcery:chalice'
     ];
-	event.get('forge:storage').add(items);
-	event.get('forge:storage/liquid').add(items);
-	event.get('forge:storage/fluid').add(items);
-
+    event.get('forge:storage').add(items);
+    event.get('forge:storage/liquid').add(items);
+    event.get('forge:storage/fluid').add(items);
 });
