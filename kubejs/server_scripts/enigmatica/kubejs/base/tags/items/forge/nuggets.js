@@ -11,7 +11,7 @@ events.listen('item.tags', function (event) {
 
     event.get('forge:nuggets/cloggrum').add('undergarden:cloggrum_nugget');
     event.get('forge:nuggets/froststeel').add('undergarden:froststeel_nugget');
-    event.get('forge:nuggets/utherium').add('undergarden:utherium_nugget');
+    event.get('forge:nuggets/utherium').add('undergarden:utherium_chunk');
     event.get('forge:nuggets/regalium').add('undergarden:regalium_nugget');
 
     //     event.get('forge:nuggets').add('occultism:iesnium_nugget');
