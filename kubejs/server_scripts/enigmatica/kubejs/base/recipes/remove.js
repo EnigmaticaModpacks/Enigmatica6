@@ -97,10 +97,15 @@ events.listen('recipes', function (event) {
         type: 'minecraft:crafting_shaped'
     });
 
-    /*event.remove({
+    event.remove({
         output: '/\\w+:\\w+_gear/',
-        type: 'thermal:press'
-    });*/
+        type: 'minecraft:crafting_shaped'
+    });
+
+    event.remove({
+        output: '/emendatusenigmatica:\\w+_rod/',
+        mod: 'immersiveengineering'
+    });
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
