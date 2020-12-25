@@ -36,7 +36,9 @@
 			description: [
 				"Ancient temples carved in brilliant marble dot the land in stark contrast to the greenery. The largest of them seem to have been purpose built as a vault of sorts. ",
 				"",
-				"Locate a Large Temple, found frequently in cold or mountainous biomes, and find a way inside. Be careful not to disturb the crystal within, as it will be needed to progress. Expose it to the sky to embark on your journey through Astral Sorcery.",
+				"Locate a Large Temple, found frequently in cold or mountainous biomes, and find a way inside. Be careful not to disturb the crystal within, as it will be needed to progress. ",
+				"",
+				"Expose it to the sky and place a vanilla Crafting Table nearby to embark on your journey through Astral Sorcery.",
 				"",
 				"These may be located far from home, but revisiting this crystal will be vital through much of the early stages of the mod. Use the provided Warp Scrolls to simplify getting back and forth for now."
 			],
@@ -57,7 +59,7 @@
 					id: 3035,
 					type: "item",
 					item: "ars_nouveau:warp_scroll",
-					count: 2
+					count: 16
 				}
 			]
 		},
@@ -112,6 +114,11 @@
 		{
 			x: -2.0d,
 			y: 0.0d,
+			description: [
+				"The writing on this sheet wiggles and writhes, making your vision swim the more you attempt to focus. And yet, just as you relax your gaze comprehension dawns upon you. Word form in your mind, but are not of your mind.",
+				"",
+				"Constellation Papers may be found in any of the marble temples and ruins throughout the world. A total of sixteen will be needed eventually. Find as many as you can. "
+			],
 			dependencies: [I;2804],
 			id: 2932,
 			tasks: [{
