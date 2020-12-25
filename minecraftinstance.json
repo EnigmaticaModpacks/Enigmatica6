@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-12-24T21:26:27.7658898Z",
+  "lastPlayed": "2020-12-25T12:14:39.5373196Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2020-12-24T11:33:12.038389Z",
+  "lastPreviousMatchUpdate": "2020-12-25T12:28:20.5284379Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.4",
@@ -2153,7 +2153,7 @@
       "dateInstalled": "2020-12-23T21:14:10.9567568Z",
       "dateUpdated": "2020-12-23T21:14:10.9597495Z",
       "dateLastUpdateAttempted": "2020-12-23T21:14:10.9597495Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -2528,7 +2528,7 @@
       "dateInstalled": "2020-11-10T20:27:37.5677184Z",
       "dateUpdated": "2020-12-24T10:23:48.0078505Z",
       "dateLastUpdateAttempted": "2020-12-24T10:23:48.0078505Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3202,68 +3202,7 @@
     {
       "addonID": 244049,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3136639,
-        "displayName": "woot-1.16.4-1.0.2.2.jar",
-        "fileName": "woot-1.16.4-1.0.2.2.jar",
-        "fileDate": "2020-12-12T10:14:10.357Z",
-        "fileLength": 1023053,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3136/639/woot-1.16.4-1.0.2.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 412428973,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "ipsis",
-            "fingerprint": 3654358614,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2903204647,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 572752273,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 766775708,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1546801632,
-        "gameVersion": [
-          "1.16.3",
-          "Forge",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "woot-1.16.4-1.0.2.2.jar"
-      },
+      "installedFile": null,
       "dateInstalled": "2020-12-23T06:24:49.7740209Z",
       "dateUpdated": "2020-12-23T06:24:49.7770137Z",
       "dateLastUpdateAttempted": "2020-12-23T06:24:49.7770137Z",
@@ -3933,6 +3872,102 @@
       "installedTargets": null
     },
     {
+      "addonID": 422301,
+      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
+      "installedFile": {
+        "id": 3148737,
+        "displayName": "sophisticatedbackpacks-1.16.4-1.1.2.105.jar",
+        "fileName": "sophisticatedbackpacks-1.16.4-1.1.2.105.jar",
+        "fileDate": "2020-12-25T09:04:12.233Z",
+        "fileLength": 548647,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3148/737/sophisticatedbackpacks-1.16.4-1.1.2.105.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1960349553,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "net",
+            "fingerprint": 1597089417,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 648307708,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 3140367848,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1102936719,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2753230477,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3237251634,
+        "gameVersion": [
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "sophisticatedbackpacks-1.16.4-1.1.2.105.jar"
+      },
+      "dateInstalled": "2020-12-25T12:14:27.4492505Z",
+      "dateUpdated": "2020-12-25T12:14:27.4542372Z",
+      "dateLastUpdateAttempted": "2020-12-25T12:14:27.4542372Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 69163,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
@@ -4018,103 +4053,6 @@
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 422301,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3142665,
-        "displayName": "sophisticatedbackpacks-1.16.4-1.0.0.94.jar",
-        "fileName": "sophisticatedbackpacks-1.16.4-1.0.0.94.jar",
-        "fileDate": "2020-12-19T00:39:42.843Z",
-        "fileLength": 521630,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3142/665/sophisticatedbackpacks-1.16.4-1.0.0.94.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 309927,
-            "type": 2,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2842938119,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "net",
-            "fingerprint": 1258691474,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 648307708,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "logo.png",
-            "fingerprint": 3140367848,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 1102936719,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3782850221,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 2859486495,
-        "gameVersion": [
-          "1.16.3",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-09-10T14:44:20.443Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "sophisticatedbackpacks-1.16.4-1.0.0.94.jar"
-      },
-      "dateInstalled": "2020-12-14T20:51:03.0562981Z",
-      "dateUpdated": "2020-12-19T18:57:16.4020224Z",
-      "dateLastUpdateAttempted": "2020-12-19T18:57:16.4020224Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -6849,7 +6787,7 @@
       "dateInstalled": "2020-12-23T06:20:55.8592862Z",
       "dateUpdated": "2020-12-24T10:23:49.2463727Z",
       "dateLastUpdateAttempted": "2020-12-24T10:23:49.2463727Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6945,7 +6883,7 @@
       "dateInstalled": "2020-11-10T20:27:37.5667135Z",
       "dateUpdated": "2020-12-24T10:23:48.5603734Z",
       "dateLastUpdateAttempted": "2020-12-24T10:23:48.5603734Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9589,7 +9527,7 @@
       "dateInstalled": "2020-11-10T20:27:37.5637215Z",
       "dateUpdated": "2020-12-24T10:23:50.4706904Z",
       "dateLastUpdateAttempted": "2020-12-24T10:23:50.4706904Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11158,7 +11096,7 @@
       "dateInstalled": "2020-11-16T20:52:10.3957448Z",
       "dateUpdated": "2020-12-24T11:33:23.0690284Z",
       "dateLastUpdateAttempted": "2020-12-24T11:33:23.0690284Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11351,7 +11289,7 @@
       "dateInstalled": "2020-11-28T18:41:29.9648791Z",
       "dateUpdated": "2020-12-24T10:23:45.0853597Z",
       "dateLastUpdateAttempted": "2020-12-24T10:23:45.0853597Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17385,34 +17323,41 @@
       "addonID": 285612,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3139304,
-        "displayName": "RandomPatches 1.16.4-1.22.1.11",
-        "fileName": "randompatches-1.16.4-1.22.1.11.jar",
-        "fileDate": "2020-12-15T10:48:31.167Z",
-        "fileLength": 209539,
-        "releaseType": 1,
+        "id": 3148667,
+        "displayName": "RandomPatches 2.0.0",
+        "fileName": "randompatches-2.0.0.jar",
+        "fileDate": "2020-12-25T04:42:36.653Z",
+        "fileLength": 401448,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3139/304/randompatches-1.16.4-1.22.1.11.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3148/667/randompatches-2.0.0.jar",
         "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
+        "alternateFileId": 3148668,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 348521,
+            "type": 2,
+            "fileId": 0
+          }
+        ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 427739993,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1794777586,
+            "fingerprint": 3834721332,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2065298628,
+            "fingerprint": 1728354517,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1975347465,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -17424,18 +17369,30 @@
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 493624583,
+            "fingerprint": 2570708431,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "patches",
-            "fingerprint": 4203739462,
+            "foldername": "randompatches.mixins.json",
+            "fingerprint": 2264403018,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "randompatches.refmap.json",
+            "fingerprint": 799170277,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "LICENSE",
+            "fingerprint": 2263419260,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1959826631,
+        "packageFingerprint": 3177394132,
         "gameVersion": [
           "1.16.3",
           "1.16.1",
@@ -17452,16 +17409,16 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "randompatches-1.16.4-1.22.1.11.jar"
+        "FileNameOnDisk": "randompatches-2.0.0.jar"
       },
       "dateInstalled": "2020-12-14T19:21:10.819531Z",
-      "dateUpdated": "2020-12-16T09:43:26.1245622Z",
-      "dateLastUpdateAttempted": "2020-12-16T09:43:26.1245622Z",
-      "status": 5,
+      "dateUpdated": "2020-12-25T07:58:04.2331786Z",
+      "dateLastUpdateAttempted": "2020-12-25T07:58:04.2331786Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -17641,14 +17598,14 @@
       "addonID": 312353,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3139473,
-        "displayName": "Artifacts-1.16.4-2.7.2.jar",
-        "fileName": "Artifacts-1.16.4-2.7.2.jar",
-        "fileDate": "2020-12-15T15:39:43.803Z",
-        "fileLength": 297887,
+        "id": 3148779,
+        "displayName": "Artifacts-1.16.4-2.7.3.jar",
+        "fileName": "Artifacts-1.16.4-2.7.3.jar",
+        "fileDate": "2020-12-25T10:47:43.77Z",
+        "fileLength": 297903,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3139/473/Artifacts-1.16.4-2.7.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3148/779/Artifacts-1.16.4-2.7.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -17663,13 +17620,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1945700185,
+            "fingerprint": 265435457,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "artifacts",
-            "fingerprint": 2931766815,
+            "fingerprint": 3074777790,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -17698,7 +17655,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2720260502,
+        "packageFingerprint": 3417622956,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -17713,16 +17670,16 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Artifacts-1.16.4-2.7.2.jar"
+        "FileNameOnDisk": "Artifacts-1.16.4-2.7.3.jar"
       },
       "dateInstalled": "2020-11-23T19:29:44.911436Z",
-      "dateUpdated": "2020-12-16T09:43:04.2263429Z",
-      "dateLastUpdateAttempted": "2020-12-16T09:43:04.2263429Z",
-      "status": 5,
+      "dateUpdated": "2020-12-25T12:14:32.2141113Z",
+      "dateLastUpdateAttempted": "2020-12-25T12:14:32.2141113Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
-      "isModified": true,
+      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -18142,86 +18099,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 354143,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3148027,
-        "displayName": "performant-1.16.2-4-3.24m.jar",
-        "fileName": "performant-1.16.2-4-3.24m.jar",
-        "fileDate": "2020-12-24T11:43:30.9Z",
-        "fileLength": 203857,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3148/27/performant-1.16.2-4-3.24m.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1452066280,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 3794120848,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 166358247,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "performant.mixins.json",
-            "fingerprint": 2105445741,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "performant.refmap.json",
-            "fingerprint": 1134754560,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1565529281,
-        "gameVersion": [
-          "1.16.3",
-          "Forge",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "performant-1.16.2-4-3.24m.jar"
-      },
-      "dateInstalled": "2020-12-24T21:26:03.4930389Z",
-      "dateUpdated": "2020-12-24T21:26:03.4980254Z",
-      "dateLastUpdateAttempted": "2020-12-24T21:26:03.4980254Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 400933,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
@@ -18385,7 +18262,7 @@
       "dateInstalled": "2020-12-18T19:14:25.9098516Z",
       "dateUpdated": "2020-12-24T10:23:39.8168317Z",
       "dateLastUpdateAttempted": "2020-12-24T10:23:39.8168317Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
