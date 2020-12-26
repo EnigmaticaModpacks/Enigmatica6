@@ -47,6 +47,7 @@ events.listen('recipes', function (event) {
         'bloodmagic:smelting/ingot_netherite_scrap',
 
         'create:mechanical_crafting/integrated_circuit',
+        'create:pressing/lapis_block',
 
         'engineersdecor:dependent/slag_brick_block_recipe',
 
