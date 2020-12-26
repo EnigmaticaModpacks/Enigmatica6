@@ -82,13 +82,13 @@
 		[worldgen.v1.limestone]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 128
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.03125
+			clusterChance = 0.05
 			#
 			#Range: > 0
 			minHeight = 30
@@ -99,13 +99,13 @@
 		[worldgen.v1.weathered_limestone]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 128
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.1
+			clusterChance = 0.05
 			#
 			#Range: > 0
 			minHeight = 10
@@ -116,10 +116,10 @@
 		[worldgen.v1.dolomite]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 32
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
 			clusterChance = 0.05
@@ -133,13 +133,13 @@
 		[worldgen.v1.gabbro]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 128
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.1
+			clusterChance = 0.05
 			#
 			#Range: > 0
 			minHeight = 20
@@ -150,13 +150,13 @@
 		[worldgen.v1.scoria]
 			#
 			#Whether to spawn this in your World
-			enable = true
+			enable = false
 			#
 			#Range: > 0
-			clusterSize = 128
+			clusterSize = 256
 			#
 			#Range: 0.0 ~ 1.0
-			clusterChance = 0.1
+			clusterChance = 0.05
 			#
 			#Range: > 0
 			minHeight = 0

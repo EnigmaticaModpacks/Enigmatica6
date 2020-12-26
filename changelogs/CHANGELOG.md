@@ -2,6 +2,11 @@
 
 _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.3.txt)_
 
+**Improvements**
+
+- Vanilla Cobble generators and Stone generators now randomly produce different types of cobblestone/stone - To target specific stone types check JEI.
+- Oregen: Cleaned up the underground a lot. Now that cobblegens can produce all the different kinds of worldgen stone, they're not needed as much in worldgen.
+
 **Bug Fixes**
 
 - Resourceful Bees: Fixed Redstone Bee not being breedable

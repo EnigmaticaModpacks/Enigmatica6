@@ -45,18 +45,6 @@ events.listen('recipes', (event) => {
             'minecraft:book',
             '#forge:dyes/yellow'
         ]),
-        shapelessRecipe(item.of('emendatusenigmatica:steel_ingot', 2), [
-            'immersiveengineering:ingot_steel',
-            'immersiveengineering:ingot_steel'
-        ]),
-        shapelessRecipe(item.of('immersiveengineering:ingot_steel', 2), [
-            'mekanism:ingot_steel',
-            'mekanism:ingot_steel'
-        ]),
-        shapelessRecipe(item.of('mekanism:ingot_steel', 2), [
-            'emendatusenigmatica:steel_ingot',
-            'emendatusenigmatica:steel_ingot'
-        ]),
         shapelessRecipe(item.of('bambooeverything:bamboo_bundle', 2), ['thermal:bamboo_block', 'thermal:bamboo_block']),
         shapelessRecipe(item.of('thermal:bamboo_block', 2), ['quark:bamboo_block', 'quark:bamboo_block']),
         shapelessRecipe(item.of('quark:bamboo_block', 2), [

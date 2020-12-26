@@ -18,9 +18,11 @@ $CONFIGS_TO_REMOVE = @(
 	"astralsorcery-client.toml",
 	"ambientsounds-client.json",
 	"betteradvancements-client.toml",
+	"cagedmobs-client.toml",
 	"chiselsandbits-client.toml",
 	"craftingtweaks-client.toml",
 	"create-client.toml",
+	"eidolon-client.toml",
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
@@ -34,6 +36,7 @@ $CONFIGS_TO_REMOVE = @(
 	"rftoolscontrol-client.toml",
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",
+	"sophisticatedbackpacks-client.toml",
 	"xnet-client.toml"
 )
 	

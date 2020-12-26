@@ -32,12 +32,15 @@ events.listen('jei.hide.items', (event) => {
             'immersiveengineering:nugget_' + material,
             'immersiveengineering:ore_' + material,
             'immersiveengineering:plate_' + material,
+            'immersiveengineering:stick_' + material,
             'bloodmagic:' + material + 'fragment',
             'bloodmagic:' + material + 'gravel',
             'bloodmagic:' + material + 'sand',
             'create:' + material + '_sheet',
             'create:' + material + '_nugget',
-            'create:' + material + '_ingot'
+            'create:' + material + '_ingot',
+            'immersiveposts:stick_' + material,
+            'buildersaddition:' + material + '_rod'
         );
     });
 

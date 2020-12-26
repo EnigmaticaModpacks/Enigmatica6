@@ -1,9 +1,9 @@
 events.listen('recipes', (event) => {
     var data = {
         recipes: [
-            {input: 'thermal:blizz_rod', output: 'thermal:blizz_powder', count: 3},
-            {input: 'thermal:blitz_rod', output: 'thermal:blitz_powder', count: 3},
-            {input: 'thermal:basalz_rod', output: 'thermal:basalz_powder', count: 3}
+            { input: 'thermal:blizz_rod', output: 'thermal:blizz_powder', count: 3 },
+            { input: 'thermal:blitz_rod', output: 'thermal:blitz_powder', count: 3 },
+            { input: 'thermal:basalz_rod', output: 'thermal:basalz_powder', count: 3 }
         ]
     };
     data.recipes.forEach((recipe) => {
@@ -15,6 +15,6 @@ events.listen('recipes', (event) => {
                 item: recipe.output,
                 count: recipe.count
             }
-        });        
+        });
     });
 });

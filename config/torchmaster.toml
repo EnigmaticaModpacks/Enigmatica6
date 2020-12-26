@@ -8,7 +8,7 @@
 	#Same as the mega torch block list override, just for the dread lamp
 	#Block squid: +minecraft:squid
 	#Allow pigs: -minecraft:pig
-	dreadLampEntityBlockListOverrides = []
+	dreadLampEntityBlockListOverrides = ["alexsmobs:crimson_mosquito"]
 	#The radius of the mega torch in each direction (cube) with the torch at its center
 	#Range: > 0
 	megaTorchRadius = 32
@@ -34,7 +34,7 @@
 	#Note: Each entry needs to be put in quotes! Multiple Entries should be separated by comma.
 	#Block zombies: "+minecraft:zombie"
 	#Allow creepers: "-minecraft:creeper"
-	megaTorchEntityBlockListOverrides = []
+	megaTorchEntityBlockListOverrides = ["alexsmobs:crimson_mosquito"]
 	#Controls how often the flare should try to place lights. 1 means every tick, 10 every 10th tick, etc
 	#Range: > 1
 	feralFlareTickRate = 5

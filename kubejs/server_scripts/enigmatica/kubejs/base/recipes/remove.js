@@ -44,6 +44,8 @@ events.listen('recipes', function (event) {
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
 
+        'bloodmagic:smelting/ingot_netherite_scrap',
+
         'create:mechanical_crafting/integrated_circuit',
 
         'engineersdecor:dependent/slag_brick_block_recipe',
@@ -97,10 +99,15 @@ events.listen('recipes', function (event) {
         type: 'minecraft:crafting_shaped'
     });
 
-    /*event.remove({
+    event.remove({
         output: '/\\w+:\\w+_gear/',
-        type: 'thermal:press'
-    });*/
+        type: 'minecraft:crafting_shaped'
+    });
+
+    event.remove({
+        output: '/emendatusenigmatica:\\w+_rod/',
+        mod: 'immersiveengineering'
+    });
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });

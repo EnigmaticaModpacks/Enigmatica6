@@ -274,11 +274,21 @@ function thermal_press_rods(event, material) {
         return;
     }
 
+    var input;
+    var ingotTag = 'forge:ingots/' + material;
+    var gemTag = 'forge:gems/' + material;
+    if (!tagIsEmpty('#' + ingotTag)) {
+        input = ingotTag;
+    } else if (!tagIsEmpty('#' + gemTag)) {
+        input = gemTag;
+    } else {
+        return;
+    }
     event.recipes.thermal.press({
         type: 'thermal:press',
         input: [
             {
-                tag: 'forge:ingots/' + material
+                tag: input
             },
             {
                 item: 'immersiveengineering:mold_rod'
@@ -292,6 +302,11 @@ function thermal_press_rods(event, material) {
         ],
         energy: 2400
     });
+    event.recipes.immersiveengineering.metal_press(
+        item.of(rod, 2),
+        ingredient.of('#' + input),
+        'immersiveengineering:mold_rod'
+    );
 }
 
 function thermal_press_wires(event, material) {
@@ -327,6 +342,11 @@ function gear_unification(event, material) {
 
     var gearTag = ingredient.of('#forge:gears/' + material);
     var gear = getPreferredItemInTag(gearTag).id;
+
+    if (gear == air) {
+        return;
+    }
+
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
     var gemTag = ingredient.of('#forge:gems/' + material);
@@ -345,9 +365,11 @@ function gear_unification(event, material) {
         B: gearInput
     });
 
-    //event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
-    //This should work, but doesn't. And the json method doesn't work either... so no new gears for immersive.
-    //event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput).count(4), 'immersiveengineering:mold_gear')
+    // Implemented by Thermal
+    // event.recipes.thermal.press(gear, item.of(gearInput, 4), 'thermal:press_gear_die');
+
+    // This works, but results in 1 ingot -> 1 gear, reported to Lat on Discord: https://discord.com/channels/303440391124942858/615627049637380144/792108447575441449
+    // event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
 }
 
 // Currently unused
