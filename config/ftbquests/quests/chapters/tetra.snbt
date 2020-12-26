@@ -40,9 +40,9 @@
 			size: 1.5d,
 			id: 1907,
 			tasks: [{
-				id: 2191,
-				type: "item",
-				item: {
+				id: 3047,
+				type: "advancement",
+				icon: {
 					id: "tetra:modular_double",
 					Count: true,
 					tag: {
@@ -50,11 +50,13 @@
 						"double/head_left": "double/basic_hammer_left",
 						"double/head_right": "double/basic_hammer_right",
 						Damage: 0,
-						"double/basic_hammer_right_material": "basic_hammer/log",
+						"double/basic_hammer_right_material": "basic_hammer/oak",
 						"double/basic_handle_material": "basic_handle/stick",
-						"double/basic_hammer_left_material": "basic_hammer/log"
+						"double/basic_hammer_left_material": "basic_hammer/oak"
 					}
-				}
+				},
+				advancement: "tetra:upgrades/root",
+				criterion: ""
 			}],
 			rewards: [
 				{
@@ -68,9 +70,9 @@
 							"double/head_left": "double/basic_hammer_left",
 							"double/head_right": "double/basic_hammer_right",
 							Damage: 0,
-							"double/basic_hammer_right_material": "basic_hammer/log",
+							"double/basic_hammer_right_material": "basic_hammer/oak",
 							"double/basic_handle_material": "basic_handle/stick",
-							"double/basic_hammer_left_material": "basic_hammer/log"
+							"double/basic_hammer_left_material": "basic_hammer/oak"
 						}
 					}
 				},
