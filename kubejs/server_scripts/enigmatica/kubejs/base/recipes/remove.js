@@ -46,6 +46,8 @@ events.listen('recipes', function (event) {
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
+        'botania:fertilizer_dye',
+
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
 

@@ -54,7 +54,7 @@ events.listen('recipes', function (event) {
     }
 
     // Replaces recipes not using forge:dyes tag for inputs
-    colors.forEach(function (color) {
+    colors.forEach((color) => {
         event.replaceInput({}, 'minecraft:' + color + '_dye', '#forge:dyes/' + color);
     });
 
