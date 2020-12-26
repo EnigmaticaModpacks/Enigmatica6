@@ -114,6 +114,11 @@ events.listen('recipes', function (event) {
         mod: 'immersiveengineering'
     });
 
+    event.remove({
+        output: '/emendatusenigmatica:\\w+_gear/',
+        mod: 'immersiveengineering'
+    });
+
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });
