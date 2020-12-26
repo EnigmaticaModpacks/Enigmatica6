@@ -506,19 +506,17 @@ function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
 }
 
 function immersiveengineering_hammer_crafting_plates(event, material) {
+    var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
+    if (plate == air) {
+        return;
+    }
+
     var hammer = 'immersiveengineering:hammer';
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
 
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
-
-    var plateTag = ingredient.of('#forge:plates/' + material);
-    var plate = getPreferredItemInTag(plateTag).id;
-
-    if (plate == air) {
-        return;
-    }
 
     if (ingot != air) {
         event.shapeless(plate, [hammer, ingot]);
@@ -535,29 +533,11 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             },
             energy: 2400
         });
-        // JAOPCA added thermal press ingot compat
-        // event.recipes.thermal.press({
-        //     type: 'thermal:press',
-        //     ingredient: {
-        //         tag: 'forge:ingots/' + material
-        //     },
-        //     result: [
-        //         {
-        //             item: plate
-        //         }
-        //     ]
-        // });
     }
 
     if (gem != air) {
-        var storageBlockTag = ingredient.of('#forge:storage_blocks/' + material);
-        var storageBlock = getPreferredItemInTag(storageBlockTag).id;
         var input = gem;
         var inputTag = 'forge:gems/' + material;
-        if (storageBlock != null) {
-            input = storageBlock;
-            inputTag = 'forge:storage_blocks/' + material;
-        }
 
         event.shapeless(plate, [hammer, input]);
         event.recipes.immersiveengineering.metal_press({
@@ -577,6 +557,18 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
                 tag: inputTag
             },
             result: [
+                {
+                    item: plate
+                }
+            ]
+        });
+        event.recipes.create.pressing({
+            ingredients: [
+                {
+                    tag: inputTag
+                }
+            ],
+            results: [
                 {
                     item: plate
                 }
