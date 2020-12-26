@@ -2,7 +2,7 @@
 unlockEnabled = true
 #List of trinkets blocked from being unlocked, eg: ["losttrinkets:piggy", "losttrinkets:magical_feathers"]
 #The trinkets listed in here will also be removed from players that already unlocked them.
-blackList = []
+blackList = ["losttrinkets:mirror_shard","losttrinkets:magneto","losttrinkets:octopus_leg"]
 
 [Trinket_Slots]
 	#Amount of Xp levels added to the next unlocking cost.

@@ -339,7 +339,7 @@ function thermal_press_wires(event, material) {
 
 function gear_unification(event, material) {
     var gearInput;
-
+    var gearInputTag;
     var gearTag = ingredient.of('#forge:gears/' + material);
     var gear = getPreferredItemInTag(gearTag).id;
 
@@ -356,8 +356,10 @@ function gear_unification(event, material) {
         return;
     } else if (gem != air) {
         gearInput = gem;
+        gearInputTag = 'forge:gems/' + material;
     } else {
         gearInput = ingot;
+        gearInputTag = 'forge:ingots/' + material;
     }
 
     event.shaped(gear, [' B ', 'BAB', ' B '], {
@@ -370,6 +372,14 @@ function gear_unification(event, material) {
 
     // This works, but results in 1 ingot -> 1 gear, reported to Lat on Discord: https://discord.com/channels/303440391124942858/615627049637380144/792108447575441449
     // event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
+
+    event.recipes.immersiveengineering.metal_press({
+        mold: { item: 'immersiveengineering:mold_gear' },
+        result: { tag: 'forge:gears/' + material },
+        conditions: [{ value: { tag: 'forge:gears/' + material, type: 'forge:tag_empty' }, type: 'forge:not' }],
+        input: { count: 4, base_ingredient: { tag: gearInputTag } },
+        energy: 2400
+    });
 }
 
 // Currently unused
@@ -506,19 +516,17 @@ function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
 }
 
 function immersiveengineering_hammer_crafting_plates(event, material) {
+    var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
+    if (plate == air) {
+        return;
+    }
+
     var hammer = 'immersiveengineering:hammer';
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
 
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
-
-    var plateTag = ingredient.of('#forge:plates/' + material);
-    var plate = getPreferredItemInTag(plateTag).id;
-
-    if (plate == air) {
-        return;
-    }
 
     if (ingot != air) {
         event.shapeless(plate, [hammer, ingot]);
@@ -535,29 +543,11 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             },
             energy: 2400
         });
-        // JAOPCA added thermal press ingot compat
-        // event.recipes.thermal.press({
-        //     type: 'thermal:press',
-        //     ingredient: {
-        //         tag: 'forge:ingots/' + material
-        //     },
-        //     result: [
-        //         {
-        //             item: plate
-        //         }
-        //     ]
-        // });
     }
 
     if (gem != air) {
-        var storageBlockTag = ingredient.of('#forge:storage_blocks/' + material);
-        var storageBlock = getPreferredItemInTag(storageBlockTag).id;
         var input = gem;
         var inputTag = 'forge:gems/' + material;
-        if (storageBlock != null) {
-            input = storageBlock;
-            inputTag = 'forge:storage_blocks/' + material;
-        }
 
         event.shapeless(plate, [hammer, input]);
         event.recipes.immersiveengineering.metal_press({
@@ -577,6 +567,18 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
                 tag: inputTag
             },
             result: [
+                {
+                    item: plate
+                }
+            ]
+        });
+        event.recipes.create.pressing({
+            ingredients: [
+                {
+                    tag: inputTag
+                }
+            ],
+            results: [
                 {
                     item: plate
                 }

@@ -46,12 +46,17 @@ events.listen('recipes', function (event) {
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
+        'botania:fertilizer_dye',
+
         'create:mechanical_crafting/integrated_circuit',
+        'create:pressing/lapis_block',
 
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'immersiveengineering:crafting/stick_steel',
 
+        'mapperbase:steel_nugget_from_blasting',
+        'mapperbase:steel_plate_from_blasting',
         'mapperbase:steel_block_from_blasting',
         'mapperbase:steel_ingot_from_blasting',
         'mapperbase:steel_rod_from_blasting',
@@ -106,6 +111,11 @@ events.listen('recipes', function (event) {
 
     event.remove({
         output: '/emendatusenigmatica:\\w+_rod/',
+        mod: 'immersiveengineering'
+    });
+
+    event.remove({
+        output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
 
