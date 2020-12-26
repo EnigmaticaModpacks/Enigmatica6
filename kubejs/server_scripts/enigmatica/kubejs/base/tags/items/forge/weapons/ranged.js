@@ -2,9 +2,9 @@ events.listen('item.tags', function (event) {
     var items = [
         'aquaculture:neptunium_bow',
         'botania:crystal_bow',
-		'botania:flare_chakram',
+        'botania:flare_chakram',
         'botania:livingwood_bow',
-		'botania:thorn_chakram',
+        'botania:thorn_chakram',
         'botaniaadditions:terra_bow',
         'gunswithoutroses:diamond_gatling',
         'gunswithoutroses:diamond_shotgun',
@@ -23,9 +23,8 @@ events.listen('item.tags', function (event) {
         'minecraft:trident',
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun',
-        'xercamod:ender_bow',
         'undergarden:slingshot'
     ];
-	event.get('forge:weapons').add(items);
-	event.get('forge:weapons/ranged').add(items);
+    event.get('forge:weapons').add(items);
+    event.get('forge:weapons/ranged').add(items);
 });

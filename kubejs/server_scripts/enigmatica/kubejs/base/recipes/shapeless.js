@@ -66,7 +66,14 @@ events.listen('recipes', (event) => {
             'prettypipes:low_crafting_module'
         ]),
         shapelessRecipe('ars_nouveau:mana_gem', ['emendatusenigmatica:arcane_gem']),
-        shapelessRecipe('emendatusenigmatica:arcane_gem', ['ars_nouveau:mana_gem'])
+        shapelessRecipe('emendatusenigmatica:arcane_gem', ['ars_nouveau:mana_gem']),
+        shapelessRecipe('botania:fertilizer', [
+            '#forge:fertilizer',
+            '#forge:dyes',
+            '#forge:dyes',
+            '#forge:dyes',
+            '#forge:dyes'
+        ])
     ];
 
     recipes.forEach(function (recipe) {

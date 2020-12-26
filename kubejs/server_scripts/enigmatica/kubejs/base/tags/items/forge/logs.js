@@ -10,7 +10,7 @@ events.listen('item.tags', function (event) {
         .add('undergarden:grongle_stem')
         .add('undergarden:stripped_grongle_stem')
         .add('undergarden:grongle_hyphae')
-        .add('undergarden:stripped_grongle_wood');
+        .add('undergarden:stripped_grongle_hyphae');
     event
         .get('forge:logs/wigglewood')
         .add('undergarden:wigglewood_log')

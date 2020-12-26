@@ -274,11 +274,21 @@ function thermal_press_rods(event, material) {
         return;
     }
 
+    var input;
+    var ingotTag = 'forge:ingots/' + material;
+    var gemTag = 'forge:gems/' + material;
+    if (!tagIsEmpty('#' + ingotTag)) {
+        input = ingotTag;
+    } else if (!tagIsEmpty('#' + gemTag)) {
+        input = gemTag;
+    } else {
+        return;
+    }
     event.recipes.thermal.press({
         type: 'thermal:press',
         input: [
             {
-                tag: 'forge:ingots/' + material
+                tag: input
             },
             {
                 item: 'immersiveengineering:mold_rod'
@@ -292,6 +302,11 @@ function thermal_press_rods(event, material) {
         ],
         energy: 2400
     });
+    event.recipes.immersiveengineering.metal_press(
+        item.of(rod, 2),
+        ingredient.of('#' + input),
+        'immersiveengineering:mold_rod'
+    );
 }
 
 function thermal_press_wires(event, material) {
@@ -327,6 +342,11 @@ function gear_unification(event, material) {
 
     var gearTag = ingredient.of('#forge:gears/' + material);
     var gear = getPreferredItemInTag(gearTag).id;
+
+    if (gear == air) {
+        return;
+    }
+
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
     var gemTag = ingredient.of('#forge:gems/' + material);
@@ -345,9 +365,11 @@ function gear_unification(event, material) {
         B: gearInput
     });
 
-    //event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
-    //This should work, but doesn't. And the json method doesn't work either... so no new gears for immersive.
-    //event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput).count(4), 'immersiveengineering:mold_gear')
+    // Implemented by Thermal
+    // event.recipes.thermal.press(gear, item.of(gearInput, 4), 'thermal:press_gear_die');
+
+    // This works, but results in 1 ingot -> 1 gear, reported to Lat on Discord: https://discord.com/channels/303440391124942858/615627049637380144/792108447575441449
+    // event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
 }
 
 // Currently unused
@@ -484,19 +506,17 @@ function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
 }
 
 function immersiveengineering_hammer_crafting_plates(event, material) {
+    var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
+    if (plate == air) {
+        return;
+    }
+
     var hammer = 'immersiveengineering:hammer';
     var ingotTag = ingredient.of('#forge:ingots/' + material);
     var ingot = getPreferredItemInTag(ingotTag).id;
 
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
-
-    var plateTag = ingredient.of('#forge:plates/' + material);
-    var plate = getPreferredItemInTag(plateTag).id;
-
-    if (plate == air) {
-        return;
-    }
 
     if (ingot != air) {
         event.shapeless(plate, [hammer, ingot]);
@@ -513,29 +533,11 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             },
             energy: 2400
         });
-        // JAOPCA added thermal press ingot compat
-        // event.recipes.thermal.press({
-        //     type: 'thermal:press',
-        //     ingredient: {
-        //         tag: 'forge:ingots/' + material
-        //     },
-        //     result: [
-        //         {
-        //             item: plate
-        //         }
-        //     ]
-        // });
     }
 
     if (gem != air) {
-        var storageBlockTag = ingredient.of('#forge:storage_blocks/' + material);
-        var storageBlock = getPreferredItemInTag(storageBlockTag).id;
         var input = gem;
         var inputTag = 'forge:gems/' + material;
-        if (storageBlock != null) {
-            input = storageBlock;
-            inputTag = 'forge:storage_blocks/' + material;
-        }
 
         event.shapeless(plate, [hammer, input]);
         event.recipes.immersiveengineering.metal_press({
@@ -555,6 +557,18 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
                 tag: inputTag
             },
             result: [
+                {
+                    item: plate
+                }
+            ]
+        });
+        event.recipes.create.pressing({
+            ingredients: [
+                {
+                    tag: inputTag
+                }
+            ],
+            results: [
                 {
                     item: plate
                 }

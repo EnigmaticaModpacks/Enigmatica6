@@ -29,8 +29,12 @@ events.listen('item.tags', function (event) {
         .add('naturesaura:sky_ingot')
         .add('naturesaura:tainted_gold')
         .add('naturesaura:infused_iron');
-    event.get('forge:ingots').add('industrialforgoing:pink_slime_ingot');
     event.get('forge:ingots').add('botania:gaia_ingot');
+
+    event.get('forge:ingots/cloggrum').add('undergarden:cloggrum_ingot');
+    event.get('forge:ingots/froststeel').add('undergarden:froststeel_ingot');
+    event.get('forge:ingots/utherium').add('undergarden:utherium_ingot');
+    event.get('forge:ingots/regalium').add('undergarden:regalium_ingot');
 
     event.get('forge:ingots/gold_brass').add('#forge:ingots/gold').add('#forge:ingots/brass');
     event.get('forge:ingots/gold_bronze').add('#forge:ingots/gold').add('#forge:ingots/bronze');

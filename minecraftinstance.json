@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2020-12-25T12:14:39.5373196Z",
+  "lastPlayed": "2020-12-26T08:14:38.9197513Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2020-12-25T12:28:20.5284379Z",
+  "lastPreviousMatchUpdate": "2020-12-25T17:58:38.3362333Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.4",
@@ -420,6 +420,120 @@
       "dateUpdated": "2020-12-22T19:01:41.2397234Z",
       "dateLastUpdateAttempted": "2020-12-22T19:01:41.2397234Z",
       "status": 5,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 388800,
+      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
+      "installedFile": {
+        "id": 3143900,
+        "displayName": "polymorph-forge-1.16.4-0.20.jar",
+        "fileName": "polymorph-forge-1.16.4-0.20.jar",
+        "fileDate": "2020-12-20T12:11:43.913Z",
+        "fileLength": 127843,
+        "releaseType": 2,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3143/900/polymorph-forge-1.16.4-0.20.jar",
+        "isAlternate": false,
+        "alternateFileId": 3143901,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 128922715,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "top",
+            "fingerprint": 594455937,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3066251143,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "CHANGELOG.md",
+            "fingerprint": 522698942,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "licenses",
+            "fingerprint": 3094404643,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 974824912,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "polymorph.mixins.json",
+            "fingerprint": 3620266733,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "polymorph_icon.png",
+            "fingerprint": 2565812113,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "polymorph_integrations.mixins.json",
+            "fingerprint": 77310967,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "README.md",
+            "fingerprint": 3592852768,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "polymorph.refmap.json",
+            "fingerprint": 1518924750,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2207553170,
+        "gameVersion": [
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "polymorph-forge-1.16.4-0.20.jar"
+      },
+      "dateInstalled": "2020-12-25T20:03:09.8330598Z",
+      "dateUpdated": "2020-12-25T20:03:09.8390436Z",
+      "dateLastUpdateAttempted": "2020-12-25T20:03:09.8390436Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3200,24 +3314,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 244049,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": null,
-      "dateInstalled": "2020-12-23T06:24:49.7740209Z",
-      "dateUpdated": "2020-12-23T06:24:49.7770137Z",
-      "dateLastUpdateAttempted": "2020-12-23T06:24:49.7770137Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 268560,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
@@ -3872,6 +3968,98 @@
       "installedTargets": null
     },
     {
+      "addonID": 69163,
+      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
+      "installedFile": {
+        "id": 3148031,
+        "displayName": "thermal_expansion-1.16.3-1.1.1.jar",
+        "fileName": "thermal_expansion-1.16.3-1.1.1.jar",
+        "fileDate": "2020-12-24T11:46:05.367Z",
+        "fileLength": 911420,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3148/31/thermal_expansion-1.16.3-1.1.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 222880,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1176289224,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "cofh",
+            "fingerprint": 2394129601,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4281003466,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2775013062,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 2686940821,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 1160775102,
+        "gameVersion": [
+          "1.16.3",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "thermal_expansion-1.16.3-1.1.1.jar"
+      },
+      "dateInstalled": "2020-12-24T11:29:15.3337993Z",
+      "dateUpdated": "2020-12-24T20:24:28.5940898Z",
+      "dateLastUpdateAttempted": "2020-12-24T20:24:28.5940898Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 422301,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
@@ -3956,98 +4144,6 @@
       "dateInstalled": "2020-12-25T12:14:27.4492505Z",
       "dateUpdated": "2020-12-25T12:14:27.4542372Z",
       "dateLastUpdateAttempted": "2020-12-25T12:14:27.4542372Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
-      "addonID": 69163,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3148031,
-        "displayName": "thermal_expansion-1.16.3-1.1.1.jar",
-        "fileName": "thermal_expansion-1.16.3-1.1.1.jar",
-        "fileDate": "2020-12-24T11:46:05.367Z",
-        "fileLength": 911420,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3148/31/thermal_expansion-1.16.3-1.1.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 222880,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1176289224,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "cofh",
-            "fingerprint": 2394129601,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 4281003466,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2775013062,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "logo.png",
-            "fingerprint": 2686940821,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 4253522632,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1160775102,
-        "gameVersion": [
-          "1.16.3",
-          "Forge",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "thermal_expansion-1.16.3-1.1.1.jar"
-      },
-      "dateInstalled": "2020-12-24T11:29:15.3337993Z",
-      "dateUpdated": "2020-12-24T20:24:28.5940898Z",
-      "dateLastUpdateAttempted": "2020-12-24T20:24:28.5940898Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -10327,29 +10423,17 @@
       "addonID": 238086,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3146042,
-        "displayName": "kubejs-1604.3.2.123-forge.jar",
-        "fileName": "kubejs-1604.3.2.123-forge.jar",
-        "fileDate": "2020-12-22T11:26:48.26Z",
-        "fileLength": 563941,
+        "id": 3148926,
+        "displayName": "kubejs-1604.3.2.125-forge.jar",
+        "fileName": "kubejs-1604.3.2.125-forge.jar",
+        "fileDate": "2020-12-25T17:24:28.897Z",
+        "fileLength": 565430,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3146/42/kubejs-1604.3.2.123-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3148/926/kubejs-1604.3.2.125-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 268655,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 416294,
-            "type": 3,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 419699,
@@ -10361,19 +10445,31 @@
             "addonId": 238222,
             "type": 2,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 268655,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 416294,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2527379104,
+            "fingerprint": 833503276,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 3906937975,
+            "fingerprint": 3424628859,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -10397,7 +10493,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 1168096369,
+            "fingerprint": 3279136865,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -10414,7 +10510,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3846915779,
+        "packageFingerprint": 3756480084,
         "gameVersion": [
           "1.16.3",
           "Forge",
@@ -10430,12 +10526,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "kubejs-1604.3.2.123-forge.jar"
+        "FileNameOnDisk": "kubejs-1604.3.2.125-forge.jar"
       },
       "dateInstalled": "2020-12-13T23:39:19.3618924Z",
-      "dateUpdated": "2020-12-22T19:01:37.7024707Z",
-      "dateLastUpdateAttempted": "2020-12-22T19:01:37.7024707Z",
-      "status": 5,
+      "dateUpdated": "2020-12-25T20:02:58.121427Z",
+      "dateLastUpdateAttempted": "2020-12-25T20:02:58.121427Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11985,22 +12081,28 @@
       "addonID": 419699,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
-        "id": 3147056,
-        "displayName": "[Forge 1.16.4] v1.2.60",
-        "fileName": "architectury-1.2.60-forge.jar",
-        "fileDate": "2020-12-23T11:14:05.82Z",
-        "fileLength": 225473,
+        "id": 3128224,
+        "displayName": "[Forge 1.16.4] v1.1.55",
+        "fileName": "architectury-1.1.55-forge.jar",
+        "fileDate": "2020-12-02T03:02:04.67Z",
+        "fileLength": 183030,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3147/56/architectury-1.2.60-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3128/224/architectury-1.1.55-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "architectury.accessWidener",
-            "fingerprint": 3465054117,
+            "foldername": "META-INF",
+            "fingerprint": 464910390,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "me",
+            "fingerprint": 3091648152,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -12011,31 +12113,13 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury.mixins.json",
-            "fingerprint": 726704874,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "architectury-refmap.json",
-            "fingerprint": 3816235863,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2556939526,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "me",
-            "fingerprint": 2793731300,
+            "foldername": "architectury-common.accessWidener",
+            "fingerprint": 2965368418,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2094836863,
+        "packageFingerprint": 3159994841,
         "gameVersion": [
           "Forge",
           "1.16.4"
@@ -12049,12 +12133,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "architectury-1.2.60-forge.jar"
+        "FileNameOnDisk": "architectury-1.1.55-forge.jar"
       },
-      "dateInstalled": "2020-12-13T23:39:18.768478Z",
-      "dateUpdated": "2020-12-23T13:48:39.6882152Z",
-      "dateLastUpdateAttempted": "2020-12-23T13:48:39.6882152Z",
-      "status": 5,
+      "dateInstalled": "2020-12-25T17:58:33.6730267Z",
+      "dateUpdated": "2020-12-25T17:58:33.7009495Z",
+      "dateLastUpdateAttempted": "2020-12-25T17:58:33.7009495Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

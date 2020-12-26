@@ -13,6 +13,11 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:storage_electrum')
         .add('immersiveengineering:coke');
 
+    event.get('forge:storage_blocks/cloggrum').add('undergarden:cloggrum_block');
+    event.get('forge:storage_blocks/froststeel').add('undergarden:froststeel_block');
+    event.get('forge:storage_blocks/utherium').add('undergarden:utherium_block');
+    event.get('forge:storage_blocks/regalium').add('undergarden:regalium_block');
+
     // event.get(storageBlocks).add('occultism:iesnium_block');
     event.get(storageBlocks).add('powah:uraninite_block');
     event.get(storageBlocks).add('naturesaura:infused_iron_block').add('naturesaura:tainted_gold_block');

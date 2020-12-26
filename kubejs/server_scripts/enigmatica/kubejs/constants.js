@@ -38,7 +38,9 @@ const modPriorities = [
     'quark',
     'pedestals',
     'refinedstorage',
-    'mapperbase'
+    'mapperbase',
+    'bloodmagic',
+    'eidolon'
 ];
 
 const colors = [
