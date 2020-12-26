@@ -52,6 +52,8 @@ events.listen('recipes', function (event) {
 
         'immersiveengineering:crafting/stick_steel',
 
+        'mapperbase:steel_nugget_from_blasting',
+        'mapperbase:steel_plate_from_blasting',
         'mapperbase:steel_block_from_blasting',
         'mapperbase:steel_ingot_from_blasting',
         'mapperbase:steel_rod_from_blasting',
