@@ -1,0 +1,52 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_euphoria"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_terror"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_rage"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:token_grief"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:sky_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "naturesaura:tainted_gold",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -339,7 +339,7 @@ function thermal_press_wires(event, material) {
 
 function gear_unification(event, material) {
     var gearInput;
-
+    var gearInputTag;
     var gearTag = ingredient.of('#forge:gears/' + material);
     var gear = getPreferredItemInTag(gearTag).id;
 
@@ -356,8 +356,10 @@ function gear_unification(event, material) {
         return;
     } else if (gem != air) {
         gearInput = gem;
+        gearInputTag = 'forge:gems/' + material;
     } else {
         gearInput = ingot;
+        gearInputTag = 'forge:ingots/' + material;
     }
 
     event.shaped(gear, [' B ', 'BAB', ' B '], {
@@ -366,10 +368,15 @@ function gear_unification(event, material) {
     });
 
     // Implemented by Thermal
-    // event.recipes.thermal.press(gear, item.of(gearInput, 4), 'thermal:press_gear_die');
+    // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
-    // This works, but results in 1 ingot -> 1 gear, reported to Lat on Discord: https://discord.com/channels/303440391124942858/615627049637380144/792108447575441449
-    // event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
+    event.recipes.immersiveengineering.metal_press({
+        mold: { item: 'immersiveengineering:mold_gear' },
+        result: { tag: 'forge:gears/' + material },
+        conditions: [{ value: { tag: 'forge:gears/' + material, type: 'forge:tag_empty' }, type: 'forge:not' }],
+        input: { count: 4, base_ingredient: { tag: gearInputTag } },
+        energy: 2400
+    });
 }
 
 // Currently unused

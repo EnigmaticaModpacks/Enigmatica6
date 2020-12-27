@@ -1,36 +1,57 @@
 {
-    "flower": "ALL",
-    "maxTimeInHive": 2400,
-    "hasHoneycomb": true,
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#aa0f01",
-        "primaryColor": "#aa0f01",
-        "secondaryColor": "#303030"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "minecraft:stone",
-        "mutationOutput": "minecraft:redstone",
-        "mutationType": "BLOCK_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:redstone",
-        "mainOutputWeight": 0.2,
-        "mainOutputCount": 2
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:overworld",
-        "biomeBlacklist": "tag:ocean"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "nether_quartz",
-        "parent2": "blaze",
-        "feedItem": "minecraft:redstone_dust",
-        "feedAmount": 16
-    },
-    "TraitData": {}
+  "flower": "ALL",
+  "maxTimeInHive": 3200,
+  "sizeModifier": 1,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "ores/redstone/redstone_bee",
+  "ColorData": {
+    "honeycombColor": "#aa0f01",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false,
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:stone",
+    "mutationOutput": "emendatusenigmatica:redstone_ore",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 1
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:redstone",
+    "mainOutputWeight": 0.3,
+    "mainOutputCount": 4,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:OCEAN",
+    "minGroupSize": 0,
+    "maxGroupSize": 1,
+    "spawnWeight": 2,
+    "lightLevel": "DAY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "lead",
+    "parent2": "copper",
+    "feedItem": "tag:forge:storage_blocks/redstone",
+    "feedAmount": 8,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }
