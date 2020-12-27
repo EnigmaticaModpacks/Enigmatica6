@@ -1,0 +1,207 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "powah:uraninite",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "emendatusenigmatica:uranium_ingot",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "minecraft:ice",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "minecraft:blue_ice",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "powah:dry_ice",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "powah:energy_cell_basic"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 50,
+                    "name": "powah:energy_cell_blazing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "powah:charged_snowball",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "powah:energy_hopper_hardened"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 150,
+                    "name": "powah:energy_cable_hardened",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 25,
+                    "name": "powah:crystal_nitro",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 4,
+                                "max": 8
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 40,
+                    "name": "powah:ender_gate_blazing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 75,
+                    "name": "powah:niotic_crystal_block",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 150,
+                    "name": "powah:player_aerial_pearl"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 150,
+                    "name": "powah:furnator_hardened"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 75,
+                    "name": "powah:energizing_rod_nitro"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 20,
+                    "name": "powah:reactor_nitro",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 300,
+                    "name": "powah:dielectric_paste",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 250,
+                    "name": "powah:dielectric_casing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 100,
+                    "name": "powah:energy_discharger_blazing"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 150,
+                    "name": "powah:steel_energized",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 10
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 50,
+                    "name": "powah:crystal_spirited",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 6
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
