@@ -1,0 +1,52 @@
+{
+  "flower": "ALL",
+  "maxTimeInHive": 2400,
+  "sizeModifier": 0.75,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "metals/brass",
+  "ColorData": {
+    "honeycombColor": "#998d38",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:storage_blocks/diamond",
+    "mutationOutput": "emendatusenigmatica:brass_block",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 1
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:brass_ingot",
+    "mainOutputWeight": 0.2,
+    "mainOutputCount": 1,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:OCEAN"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "copper",
+    "parent2": "zinc",
+    "feedItem": "tag:forge:storage_blocks/brass",
+    "feedAmount": 2,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
+}
