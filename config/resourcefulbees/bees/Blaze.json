@@ -1,38 +1,54 @@
 {
-    "flower": "minecraft:nether_wart",
-    "maxTimeInHive": 3200,
-    "hasHoneycomb": true,
-    "baseLayerTexture": "netherite/netherite_bee",
-    "traits": ["nether", "blaze"],
-    "ColorData": {
-        "isBeeColored": true,
-        "primaryColor": "#ff4500",
-        "secondaryColor": "#ffff00",
-        "honeycombColor": "#FF4500"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "entity:resourcefulbees:creeper_bee",
-        "mutationOutput": "entity:resourcefulbees:ghast_bee",
-        "mutationType": "ENTITY_TO_ENTITY"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:blaze_rod",
-        "mainOutputWeight": 0.05
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:nether",
-        "lightLevel": "NIGHT",
-        "spawnWeight": "4"
-    },
-    "BreedData": {
-        "isBreedable": false,
-        "feedItem": "minecraft:blaze_rod",
-        "feedAmount": 8
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+  "flower": "tag:forge:crops/nether_wart",
+  "maxTimeInHive": 3200,
+  "sizeModifier": 1.0,
+  "traits": ["blaze", "nether"],
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "other/blaze",
+  "ColorData": {
+    "honeycombColor": "#fff32d",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 2
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "entity:resourcefulbees:creeper_bee",
+    "mutationOutput": "entity:resourcefulbees:ghast_bee",
+    "mutationType": "ENTITY_TO_ENTITY"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:blaze_rod",
+    "mainOutputWeight": 0.05,
+    "mainOutputCount": 1,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "spawnWeight": 4,
+    "biomeWhitelist": "tag:NETHER",
+    "biomeBlacklist": "tag:OVERWORLD,END",
+    "minGroupSize": 1,
+    "maxGroupSize": 2,
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": false,
+    "feedItem": "tag:forge:rods/blaze",
+    "feedAmount": 8,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

@@ -1,28 +1,52 @@
 {
-    "flower": "ALL",
-    "maxTimeInHive": 1600,
-    "hasHoneycomb": true,
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#ffffff",
-        "isRainbowBee": true,
-        "isGlowing": true
-    },
-    "MutationData": {},
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:red_dye",
-        "secondaryOutput": "minecraft:green_dye",
-        "bottleOutput": "minecraft:blue_dye",
-        "bottleOutputWeight": 0.02
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:overworld",
-        "biomeBlacklist": "tag:ocean"
-    },
-    "BreedData": {
-        "isBreedable": true
-    },
-    "TraitData": {}
+  "flower": "ALL",
+  "maxTimeInHive": 1600,
+  "sizeModifier": 0.5,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "ColorData": {
+    "honeycombColor": "#ffffff",
+    "isBeeColored": false,
+    "isRainbowBee": true,
+    "isGlowing": true,
+    "isEnchanted": false
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": false
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:red_dye",
+    "secondaryOutput": "minecraft:green_dye",
+    "bottleOutput": "minecraft:blue_dye",
+    "bottleOutputWeight": 0.3,
+    "mainOutputWeight": 0.3,
+    "secondaryOutputWeight": 0.3,
+    "mainInputCount": 1,
+    "mainOutputCount": 2
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:OCEAN",
+    "minGroupSize": 2,
+    "maxGroupSize": 3,
+    "spawnWeight": 8
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "tag:minecraft:flowers",
+    "feedAmount": 1,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

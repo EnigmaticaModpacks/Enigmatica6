@@ -1,35 +1,52 @@
 {
-    "flower": "minecraft:peony",
-    "maxTimeInHive": 4800,
-    "hasHoneycomb": true,
-    "baseLayerTexture": "wither/wither_bee",
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#6e7b8b",
-        "primaryColor": "#6e7b8b",
-        "secondaryColor": "#cdcdc1"
-    },
-    "MutationData": {
-        "hasMutation": false,
-        "mutationInput": "minecraft:lava",
-        "mutationOutput": "minecraft:obsidian",
-        "mutationType": "FLUID_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "emendatusenigmatica:steel_nugget",
-        "mainOutputWeight": 0.01
-    },
-    "SpawnData": {},
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "coal",
-        "parent2": "iron",
-        "breedWeight": 20,
-        "feedItem": "emendatusenigmatica:steel_ingot",
-        "feedAmount": 24
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+  "flower": "ALL",
+  "maxTimeInHive": 2400,
+  "sizeModifier": 0.75,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "metals/steel",
+  "ColorData": {
+    "honeycombColor": "#858585",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:storage_blocks/diamond",
+    "mutationOutput": "emendatusenigmatica:steel_block",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 1
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "emendatusenigmatica:steel_ingot",
+    "mainOutputWeight": 0.2,
+    "mainOutputCount": 1,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:OCEAN"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "coal",
+    "parent2": "iron",
+    "feedItem": "tag:forge:storage_blocks/steel",
+    "feedAmount": 2,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

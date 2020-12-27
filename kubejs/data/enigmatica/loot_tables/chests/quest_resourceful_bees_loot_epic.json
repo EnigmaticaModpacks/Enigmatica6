@@ -1,0 +1,120 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{NoGravity:1,Entity:\"resourcefulbees:iron_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:0.03776067512895905,Operation:1,UUID:[-1207541730,-1263776829,-1439313122,-2011209013],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"iron\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[287125043,-76594110,-1156608721,2013250607],Age:0,TicksSincePollination:14,AngerTime:0,Motion:[-0.061626914871871934,0.14485856115182605,0.061626914871871934],Health:10.0,HasNectar:0,Color:\"#ffcc99\",LeftHanded:0,Air:300,OnGround:0,Rotation:[45.0,0.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[92.89120923709993,83.65707319191107,-115.89120923709993],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:gold_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{\"naturesaura:time_alive\":40},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:-0.04988226533241591,Operation:1,UUID:[-1544817110,-1553904909,-1974379402,1770924971],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"gold\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[-1656555906,-1850521131,-2114768571,2015954931],Age:0,TicksSincePollination:16,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#FFDC00\",LeftHanded:0,Air:300,OnGround:1,Rotation:[18.148878,0.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[92.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:slimy_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{\"naturesaura:time_alive\":40},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:-0.013606562186442081,Operation:1,UUID:[-1798378031,-782940862,-1646942087,-1274928609],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"slimy\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[-2106735075,-1393999531,-1464116735,-631421951],Age:0,TicksSincePollination:16,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#73c262\",LeftHanded:0,Air:300,OnGround:1,Rotation:[-76.92932,-39.664703],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[92.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:redstone_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{\"naturesaura:time_alive\":40},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:-0.02171583473853723,Operation:1,UUID:[1341026862,-1320991644,-1721502208,1785350270],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"redstone\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[1116904453,419972642,-1399259999,90032775],Age:0,TicksSincePollination:16,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#aa0f01\",LeftHanded:0,Air:300,OnGround:1,Rotation:[-0.7652893,-40.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[92.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:nether_quartz_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:0.004435865221507377,Operation:1,UUID:[2069761863,-1974450039,-1332587149,788772581],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"nether_quartz\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[766701581,1367687438,-1783737777,2024356951],Age:0,TicksSincePollination:13,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#D4CABA\",LeftHanded:0,Air:300,OnGround:1,Rotation:[-141.63295,-38.18873],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[91.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:blaze_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:-0.11251533095718043,Operation:1,UUID:[-1723845324,-487832759,-1907845729,-1118786055],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"blaze\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[-581167871,-1550433063,-1854939199,-53356043],Age:0,TicksSincePollination:12,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#ff4500\",LeftHanded:0,Air:300,OnGround:1,Rotation:[95.94287,0.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[91.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:obsidian_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{\"naturesaura:time_alive\":40},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:-0.013314845678952851,Operation:1,UUID:[1896959653,-1267908223,-1664980160,1417694414],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"obsidian\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[-1279081246,1715486971,-1582167596,-1825003670],Age:0,TicksSincePollination:15,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#663399\",LeftHanded:1,Air:300,OnGround:1,Rotation:[-104.97218,0.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[92.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:pigman_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{\"naturesaura:time_alive\":40},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:-0.019736818079820487,Operation:1,UUID:[597960220,-327661581,-1267830748,1772569299],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"pigman\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[-2018514627,2068793738,-1729941754,393700331],Age:0,TicksSincePollination:16,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#885956\",LeftHanded:1,Air:300,OnGround:1,Rotation:[-14.275696,0.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[91.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:bee_jar",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Entity:\"resourcefulbees:lapis_bee\",Brain:{memories:{}},HurtByTimestamp:0,ForgeData:{\"naturesaura:time_alive\":40},HasStung:0,Attributes:[{Base:0.30000001192092896,Name:\"minecraft:generic.movement_speed\"},{Base:48.0,Modifiers:[{Amount:0.030548682081909265,Operation:1,UUID:[430561632,-1286320175,-1190363091,-2117531770],Name:\"Random spawn bonus\"}],Name:\"minecraft:generic.follow_range\"},{Base:0.08,Name:\"forge:entity_gravity\"},{Base:0.0,Name:\"minecraft:generic.knockback_resistance\"},{Base:1.0,Name:\"forge:swim_speed\"}],Invulnerable:0,FallFlying:0,ForcedAge:0,PortalCooldown:0,AbsorptionAmount:0.0,BeeType:\"lapis\",FallDistance:0.0,InLove:0,CanUpdate:1,DeathTime:0,ForgeCaps:{\"structure_gel:gel_entity\":{portal:\"structure_gel:empty\"},\"mekanism:radiation\":{radiation:0.0},\"citadel:extended_entity_data_citadel\":{},\"pneumaticcraft:hacking\":{},\"shrink:shrunk\":{width:0.7,isshrinking:0,defaulteyeheight:0.3,fixed:0,isshrunk:0,height:0.6}},HandDropChances:[0.085,0.085],CannotEnterHiveTicks:0,PersistenceRequired:0,FeedCount:0,UUID:[8849479,844778002,-1866845089,-2019090232],Age:0,TicksSincePollination:16,AngerTime:0,Motion:[0.0,-0.0784000015258789,0.0],Health:10.0,HasNectar:0,Color:\"#345ec3\",LeftHanded:0,Air:300,OnGround:1,Rotation:[114.32849,0.0],HandItems:[{},{}],ArmorDropChances:[0.085,0.085,0.085,0.085],Pos:[93.5,82.5,-116.5],Fire:-1,ArmorItems:[{},{},{},{}],CropsGrownSincePollination:0,CanPickUpLoot:0,HurtTime:0}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "resourcefulbees:centrifuge_casing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
