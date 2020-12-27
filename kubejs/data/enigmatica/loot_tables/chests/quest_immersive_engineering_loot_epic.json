@@ -1,0 +1,98 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:basic_fluid_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{FluidTanks:[{Tank:0,stored:{FluidName:\"immersiveengineering:ethanol\",Amount:14000}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:shader_bag_rare",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:shader_bag_epic",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:coke",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:capacitor_hv",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:dragons_breath",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:homing",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:generator",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
