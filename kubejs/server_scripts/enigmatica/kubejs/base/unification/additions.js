@@ -1,7 +1,6 @@
 //priority: 900
 events.listen('recipes', function (event) {
     materialsToUnify.forEach(function (material) {
-        // enigmatica_ore_deposit_processing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
         occultism_ore_ingot_crushing(event, material);
         immersiveengineering_hammer_crafting_plates(event, material);
@@ -489,11 +488,6 @@ function occultism_ore_ingot_crushing(event, material) {
         });
     }
 
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-    if (ingot == air) {
-        return;
-    }
     if (tagIsEmpty('#forge:ingots/' + material) == false) {
         event.recipes.occultism.crushing({
             ingredient: {
