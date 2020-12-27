@@ -10,11 +10,11 @@
 		{
 			title: "Astral Sorcery",
 			icon: "astralsorcery:tome",
-			x: 0.0d,
-			y: -1.0d,
+			x: 7.0d,
+			y: -10.5d,
 			shape: "gear",
 			description: [
-				"Remnants of an ancienct civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed hrms though they avoid the structures in fear. ",
+				"Remnants of an ancienct civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed “Hrms”, though they avoid the structures in fear.",
 				"",
 				"Pillagers, fierce as they may be, seem to share in this superstition... What secrets await discovery?",
 				"",
@@ -32,11 +32,16 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: -0.5d,
+			x: 7.0d,
+			y: -9.0d,
 			subtitle: "A Beacon in the Night",
 			description: [
-				"Ancient temples carved in brilliant marble dot the land in stark contrast to the greenery. The largest of them seem to have been purpose built as a vault of sorts. ",
+				"“Ancient ruins carved from brilliant white marble dot the land. They appear mostly harmless, despite the unwillingness of Villagers to approach them, and my explorations of them have turned up a number of curiosities that defy explanation.",
+				"",
+				"Prime among them being the floating crystals housed within the largest of the structures.",
+				"",
+				"While setting up a workstation to begin my studies, a brilliant white beam extended from it and imbued the wood, changing its structure entirely. Curious.”",
+				"_________________________________________________",
 				"",
 				"Locate a Large Temple, found frequently in cold or mountainous biomes, and find a way inside. Be careful not to disturb the crystal within, as it will be needed to progress. ",
 				"",
@@ -45,6 +50,7 @@
 				"These may be located far from home, but revisiting this crystal will be vital through much of the early stages of the mod. Use the provided Warp Scrolls to simplify getting back and forth for now."
 			],
 			dependencies: [I;2804],
+			min_width: 300,
 			id: 2926,
 			tasks: [{
 				id: 2935,
@@ -67,8 +73,8 @@
 		},
 		{
 			icon: "astralsorcery:ritual_pedestal",
-			x: -7.0d,
-			y: -0.5d,
+			x: 2.5d,
+			y: -5.0d,
 			dependencies: [I;2958],
 			id: 2928,
 			tasks: [
@@ -104,12 +110,16 @@
 		},
 		{
 			icon: "astralsorcery:well",
-			x: -3.0d,
-			y: -3.0d,
+			x: 4.5d,
+			y: -9.5d,
 			subtitle: "Let That Sink In",
 			description: [
-				"It appears that this mysterious substance known as Starlight may be coerced to coalesce into a fluid that causes a not unpleasant tingling sensation when touched. ",
-				"Natural Aquamarine and the eerie Rock Crystals from the depths appear to act as excellent focus to draw it forth. ",
+				"“Perhaps the old hermit wasn’t such a loon after all. Some inscriptions in the ruins have led me to craft a well that seems to resonate as more Rock Crystals or Aquamarines are brought nearby. ",
+				"",
+				"Placing either within the well has led to a shimmering liquid condensing on their surface, collecting in the bottom of the well. ",
+				"",
+				"Surely this isn’t the tea the hermit was after?”",
+				"________________________________",
 				"",
 				"Right Click the Lightwell with an Aquamarine, found in shallow sandy waters, to begin collecting Starlight. ",
 				"The Aquamarine will eventually be consumed but should produce a decent amount of Starlight before that happens. ",
@@ -141,15 +151,15 @@
 			}]
 		},
 		{
-			x: -2.0d,
-			y: 0.0d,
+			x: 5.5d,
+			y: -7.5d,
 			subtitle: "As Above, So Below",
 			description: [
 				"The writing on this sheet wiggles and writhes, making your vision swim the more you attempt to focus. And yet, just as you relax your gaze comprehension dawns upon you. Word form in your mind, but are not of your mind.",
 				"",
 				"Constellation Papers may be found in any of the marble temples and ruins throughout the world. A total of sixteen will be needed eventually. Find as many as possible to begin. "
 			],
-			dependencies: [I;2804],
+			dependencies: [I;2926],
 			id: 2932,
 			tasks: [{
 				id: 2951,
@@ -164,8 +174,8 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: -1.0d,
+			x: 7.0d,
+			y: -5.5d,
 			dependencies: [I;2926],
 			id: 2937,
 			tasks: [{
@@ -175,8 +185,8 @@
 			}]
 		},
 		{
-			x: 6.0d,
-			y: -1.5d,
+			x: 7.0d,
+			y: -4.5d,
 			dependencies: [I;2937],
 			id: 2939,
 			tasks: [{
@@ -186,8 +196,8 @@
 			}]
 		},
 		{
-			x: 8.0d,
-			y: -1.0d,
+			x: 7.0d,
+			y: -3.5d,
 			dependencies: [I;2939],
 			id: 2941,
 			tasks: [{
@@ -198,8 +208,8 @@
 		},
 		{
 			icon: "astralsorcery:spectral_relay",
-			x: 6.0d,
-			y: 0.5d,
+			x: 10.0d,
+			y: -8.5d,
 			dependencies: [I;2975],
 			id: 2943,
 			tasks: [
@@ -229,8 +239,8 @@
 		},
 		{
 			title: "Through the Looking Glass",
-			x: -3.5d,
-			y: 0.5d,
+			x: 5.5d,
+			y: -6.0d,
 			subtitle: "Dreaming as the Days Go By",
 			dependencies: [I;2932],
 			id: 2952,
@@ -241,10 +251,10 @@
 			}]
 		},
 		{
-			x: -5.0d,
-			y: 1.0d,
+			x: 5.5d,
+			y: -5.0d,
 			subtitle: "Ever Drifting Down the Stream",
-			dependencies: [I;2952],
+			dependencies: [I;2937],
 			id: 2954,
 			tasks: [{
 				id: 2955,
@@ -253,10 +263,10 @@
 			}]
 		},
 		{
-			x: -6.0d,
-			y: 2.0d,
+			x: 5.5d,
+			y: -4.0d,
 			subtitle: "Lingering in the Golden Gleam",
-			dependencies: [I;2954],
+			dependencies: [I;2941],
 			id: 2956,
 			tasks: [{
 				id: 2957,
@@ -265,9 +275,9 @@
 			}]
 		},
 		{
-			x: -5.5d,
-			y: -0.5d,
-			dependencies: [I;2952],
+			x: 4.0d,
+			y: -5.0d,
+			dependencies: [I;2954],
 			id: 2958,
 			tasks: [{
 				id: 2959,
@@ -277,8 +287,8 @@
 		},
 		{
 			title: "Nocturnal & Illumination Powder",
-			x: 3.0d,
-			y: -2.0d,
+			x: 8.5d,
+			y: -9.5d,
 			subtitle: "Letting the Dust Settle",
 			dependencies: [I;2926],
 			id: 2965,
@@ -335,8 +345,8 @@
 					}
 				}
 			},
-			x: -8.5d,
-			y: -0.5d,
+			x: 2.5d,
+			y: -4.0d,
 			dependencies: [I;2928],
 			id: 2968,
 			tasks: [
@@ -384,8 +394,8 @@
 			]
 		},
 		{
-			x: 4.0d,
-			y: 0.5d,
+			x: 8.5d,
+			y: -8.5d,
 			dependencies: [I;2926],
 			id: 2975,
 			tasks: [{
@@ -404,8 +414,8 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: -3.5d,
+			x: 10.0d,
+			y: -9.5d,
 			dependencies: [I;2965],
 			id: 2977,
 			tasks: [{
@@ -415,19 +425,20 @@
 			}]
 		},
 		{
-			x: -1.5d,
-			y: -3.0d,
+			x: 5.5d,
+			y: -9.0d,
 			subtitle: "Unsettling to Behold",
 			description: [
-				"Solidified starlight or... something else? Close examination of these crystals leaves you dizzy as surreal patterns form and shift deep within what feels to be a solid crystal.  ",
+				"“While seeking materials in the depths, I stumbled across these brilliant white crystals. The local villagers would have nothing to do with them and offering them in trade earned me more than a few rude “Hrms” and one door slammed in my face. ",
 				"",
-				"When sought with conscious intent, they seem to come out of the stone quite willingly, while they almost seem to flee and dissipate in the presence of mining machines",
+				"One wizened old hermit did offer to buy it from me, muttering something about using it to brew some tea to rejuvenate his old bones…”",
+				"________________________________",
 				"",
 				"Rock Crystals may be found near bedrock in small clusters and must be mined by hand. ",
 				"",
 				"Holding a Resonating Wand while wandering the surface at night will reveal where to begin digging, as great plumes of light burst from the ground, marking their locations. "
 			],
-			dependencies: [I;2804],
+			dependencies: [I;2926],
 			id: 2979,
 			tasks: [{
 				id: 2980,
@@ -447,8 +458,8 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -1.5d,
+			x: 5.5d,
+			y: -11.0d,
 			description: [
 				"These crystals seem drawn to you and react visibly when held. Bringing them together with mindful intent is enough for them to fuse into tools much stronger than one would assume at first glance. ",
 				"",
@@ -470,7 +481,7 @@
 		},
 		{
 			icon: "astralsorcery:infuser",
-			x: -5.5d,
+			x: 8.5d,
 			y: -4.0d,
 			description: [
 				"With a proper structure to gather and focus Starlight from a wider area into a single point, greater transmutations may begin. ",
@@ -480,7 +491,7 @@
 				"",
 				"Building Gadget’s templates are available in the Instance folder to assist with building this multiblock."
 			],
-			dependencies: [I;2993],
+			dependencies: [I;2939],
 			id: 2983,
 			tasks: [
 				{
@@ -520,8 +531,8 @@
 			]
 		},
 		{
-			x: -2.5d,
-			y: -5.5d,
+			x: 3.5d,
+			y: -8.5d,
 			subtitle: "Splitting Hairs",
 			description: [
 				"While not particularly suitable to tool use, Star metal seems to be the only material suitable for splitting these Crystals. ",
@@ -560,10 +571,13 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: -4.0d,
+			x: 3.5d,
+			y: -9.5d,
 			description: [
-				"It is becoming clear that this Starlight fluid has strong transformative powers and interacts readily with Lava and Water in interesting ways. ",
+				"“No. No, this is not the tea, that’s for sure. And I question my own sanity for listening to the hermit. A cautious sip has left my mouth numb for hours. ",
+				"",
+				"In my shock at the sensation, I managed to spill the remaining liquid into my actual tea, freezing it solid, and into my crucible which has mysteriously been filled with sand now.”",
+				"________________________________",
 				"",
 				"When placed in the world, flowing Starlight that encounters flowing water will create Packed Ice. When contacting flowing lava, it produces Sand with a chance of making Aquamarine Shale.  ",
 				"",
@@ -578,14 +592,19 @@
 			}]
 		},
 		{
-			x: -1.5d,
-			y: -4.5d,
+			x: 4.5d,
+			y: -8.5d,
 			description: [
-				"Once infused with Starlight, Iron Ore begins to gleam with visions of the night sky and tugs at the mind.",
+				"“After the unexpected incident with my work bench I began placing other objects near the floating crystal. None seemed to react in any way at first. ",
 				"",
-				"This new Star Metal is key to working more effectively with Rock Crystals, serving as a doping agent to produce more powerful Celestial Crystals. Crafting it is as simple as binding a Collector Crystal to an Iron Ore block. ",
+				"Instead, I found I needed to tease the beam of light out of the crystal using like materials.  It was an odd sensation, to be sure, like drawing a thread of light through the eye of a needle.",
 				"",
-				"Ore Chunks can be freely converted to Vanilla Iron Ore via the Stonecutter."
+				"The beam readily followed a crude wand and held steady once bound to a location. Placing different items at the end of the beam had surprising effects.”",
+				"________________________________",
+				"",
+				"This Starlight Transmutation is capable of much more than making Starmetal. Explore the possibilities.",
+				"",
+				"Ore Chunks can be freely converted to Vanilla Iron Ore via the Stonecutter. "
 			],
 			dependencies: [I;2979],
 			id: 2995,
@@ -596,10 +615,10 @@
 			}]
 		},
 		{
-			x: -7.0d,
-			y: -3.0d,
+			x: 7.0d,
+			y: -2.0d,
 			description: ["Placing a Containment Chalice filled with Starlight near a Starlight Infusion Altar will prevent the loss of Starlight sources blocks during crafting, instead causing a small amount to be drained from the Chalice itself. "],
-			dependencies: [I;2983],
+			dependencies: [I;2941],
 			id: 2997,
 			tasks: [{
 				id: 2998,
@@ -608,8 +627,9 @@
 			}]
 		},
 		{
-			x: -8.0d,
-			y: -1.5d,
+			title: "Ritual Anchor",
+			x: 3.5d,
+			y: -4.0d,
 			dependencies: [I;2928],
 			id: 2999,
 			tasks: [{
@@ -620,10 +640,10 @@
 			}]
 		},
 		{
-			x: -3.5d,
-			y: -7.5d,
+			x: 1.5d,
+			y: -6.5d,
 			subtitle: "Unprecedented Clarity",
-			dependencies: [I;3021],
+			dependencies: [I;3025],
 			id: 3005,
 			tasks: [{
 				id: 3006,
@@ -637,8 +657,8 @@
 		},
 		{
 			title: "Colored Lenses",
-			x: -4.0d,
-			y: -8.5d,
+			x: 0.5d,
+			y: -5.5d,
 			description: [
 				"The focused beams of Starlight passing through Crystal Lenses may be forced to shift aspects with the use of colored lenses. Right-click the colored lens onto a Crystal Lens to apply it.",
 				"",
@@ -686,9 +706,9 @@
 		},
 		{
 			title: "Collector Crystals",
-			x: -5.0d,
-			y: -7.0d,
-			dependencies: [I;3025],
+			x: 1.5d,
+			y: -5.0d,
+			dependencies: [I;3005],
 			id: 3021,
 			tasks: [{
 				id: 3022,
@@ -735,8 +755,9 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: -4.5d,
+			title: "Celestial Crystals",
+			x: 1.0d,
+			y: -9.5d,
 			subtitle: "Call of the Void",
 			description: [
 				"Rock Crystals readily bind with Stardust when soaked in Starlight, growing into a beautiful structure whose shifting patterns defy observation and induce vertigo as if staring into the depths of space.",
@@ -746,10 +767,6 @@
 				"The growth process can be sped along if the Crystal Cluster is growing atop a Starmetal Ore. This will leech the Starmetal, converting it back into mundane Iron which may be re-transmuted to Starmetal in situ. ",
 				"",
 				""
-			],
-			dependencies: [I;
-				2993,
-				2990
 			],
 			id: 3023,
 			tasks: [{
@@ -774,8 +791,8 @@
 					Damage: 4
 				}
 			},
-			x: -4.0d,
-			y: -5.5d,
+			x: 2.5d,
+			y: -9.0d,
 			description: [
 				"Splitting crystals is generally useful for crafting specialised crystals, whereby individual attributes are separated and the pieces are recombined. ",
 				"",
@@ -801,8 +818,8 @@
 			}]
 		},
 		{
-			x: 4.5d,
-			y: -3.0d,
+			x: 8.5d,
+			y: -6.5d,
 			description: [
 				"This Starlight of the ancients appears to have deeply transformative powers on the physical world, reconstructing material into more useful forms. ",
 				"Indeed, this power may even be harnessed to transfer entire beings from one place to another in a process that feels quite like being drunk.",
@@ -824,8 +841,8 @@
 			}]
 		},
 		{
-			x: 7.0d,
-			y: -3.0d,
+			x: 8.5d,
+			y: -5.0d,
 			dependencies: [I;2939],
 			id: 3029,
 			tasks: [{
@@ -835,8 +852,8 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: -9.0d,
+			x: 0.5d,
+			y: -6.5d,
 			description: [
 				"A single beam is not always sufficient, and while a Collector Crystal may be bound to multiple lenses, sometimes the actual split is not desired at the source. Instead, a Crystal Prism may be used to split a Starlight beam to multiple destinations. ",
 				"",
