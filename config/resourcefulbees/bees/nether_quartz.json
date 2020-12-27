@@ -1,38 +1,55 @@
 {
-    "flower": "minecraft:nether_wart",
-    "maxTimeInHive": 2000,
-    "hasHoneycomb": true,
-    "traits": ["nether"],
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#D4CABA",
-        "primaryColor": "#D4CABA",
-        "secondaryColor": "#303030"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "minecraft:netherrack",
-        "mutationOutput": "minecraft:nether_quartz_ore",
-        "mutationType": "BLOCK_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:quartz",
-        "mainOutputWeight": 0.25,
-        "mainOutputCount": 2
-    },
-    "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:nether",
-        "lightLevel": "NIGHT",
-        "spawnWeight": 8
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "feedItem": "minecraft:nether_quartz",
-        "feedAmount": 16
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+  "flower": "minecraft:warped_fungus",
+  "maxTimeInHive": 3200,
+  "sizeModifier": 0.75,
+  "hasHoneycomb": true,
+  "traits": ["nether"],
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "other/quartz",
+  "ColorData": {
+    "honeycombColor": "#d4caba",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:netherrack",
+    "mutationOutput": "minecraft:nether_quartz_ore",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 1
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:quartz",
+    "mainOutputWeight": 0.15,
+    "mainOutputCount": 4,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:NETHER",
+    "biomeBlacklist": "tag:OVERWORLD,END",
+    "lightLevel": "NIGHT",
+    "spawnWeight": 8,
+    "minGroupSize": 2,
+    "maxGroupSize": 4
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "feedItem": "tag:forge:storage_blocks/quartz",
+    "feedAmount": 8,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }

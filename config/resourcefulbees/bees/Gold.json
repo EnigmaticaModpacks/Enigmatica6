@@ -1,35 +1,56 @@
 {
-    "flower": "ALL",
-    "hasHoneycomb": true,
-    "maxTimeInHive": 2400,
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#FFDC00",
-        "primaryColor": "#FFDC00",
-        "secondaryColor": "#303030"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "minecraft:stone",
-        "mutationOutput": "minecraft:gold_ore",
-        "mutationType": "BLOCK_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:gold_ingot",
-        "mainOutputWeight": 0.2
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:overworld",
-        "biomeBlacklist": "tag:ocean"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "coal",
-        "parent2": "blaze",
-        "feedItem": "minecraft:gold_block",
-        "feedAmount": 4
-    },
-    "TraitData": {}
+  "flower": "ALL",
+  "maxTimeInHive": 2400,
+  "sizeModifier": 1,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "ores/gold/gold_bee",
+  "ColorData": {
+    "honeycombColor": "#ffdc00",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false,
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:stone",
+    "mutationOutput": "emendatusenigmatica:gold_ore",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:gold_ingot",
+    "mainOutputWeight": 0.1,
+    "mainOutputCount": 1,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:OCEAN",
+    "minGroupSize": 0,
+    "maxGroupSize": 1,
+    "spawnWeight": 2,
+    "lightLevel": "DAY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "iron",
+    "parent2": "copper",
+    "feedItem": "tag:forge:storage_blocks/gold",
+    "feedAmount": 8,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

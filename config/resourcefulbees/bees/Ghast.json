@@ -1,37 +1,47 @@
 {
-    "flower": "minecraft:crimson_fungus",
-    "maxTimeInHive": 2400,
-    "hasHoneycomb": true,
-    "baseLayerTexture": "pigman/pigman_bee",
-    "traits": ["nether"],
-    "ColorData": {
-        "isBeeColored": true,
-        "primaryColor": "#faebd7",
-        "secondaryColor": "#dc143c",
-        "honeycombColor": "#faebd7"
-    },
-    "MutationData": {
-        "hasMutation": false,
-        "mutationInput": "minecraft:netherrack",
-        "mutationOutput": "minecraft:glowstone",
-        "mutationType": "BLOCK_TO_BLOCK"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:ghast_tear",
-        "mainOutputWeight": 0.15
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:nether",
-        "lightLevel": "NIGHT"
-    },
-    "BreedData": {
-        "isBreedable": false,
-        "parent1": "",
-        "parent2": ""
-    },
-    "TraitData": {
-        "hasTraits": true
-    }
+  "flower": "minecraft:crimson_fungus",
+  "maxTimeInHive": 3600,
+  "sizeModifier": 2,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "traits": ["nether"],
+  "baseLayerTexture": "other/ghast",
+  "ColorData": {
+    "honeycombColor": "#faebd7",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": false,
+    "inflictsPoison": true,
+    "attackDamage": 3
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:netherrack",
+    "mutationOutput": "minecraft:tnt",
+    "mutationType": "BLOCK_TO_BLOCK"
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:ghast_tear",
+    "mainOutputWeight": 0.15,
+    "mainOutputCount": 1,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": false,
+    "biomeWhitelist": "tag:NETHER",
+    "biomeBlacklist": "tag:OVERWORLD,END",
+    "lightLevel": "NIGHT"
+  },
+  "BreedData": {
+    "isBreedable": false
+  },
+  "TraitData": {
+    "hasTraits": true
+  }
 }
