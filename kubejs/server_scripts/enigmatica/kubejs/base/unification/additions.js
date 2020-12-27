@@ -368,10 +368,7 @@ function gear_unification(event, material) {
     });
 
     // Implemented by Thermal
-    // event.recipes.thermal.press(gear, item.of(gearInput, 4), 'thermal:press_gear_die');
-
-    // This works, but results in 1 ingot -> 1 gear, reported to Lat on Discord: https://discord.com/channels/303440391124942858/615627049637380144/792108447575441449
-    // event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
+    // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
     event.recipes.immersiveengineering.metal_press({
         mold: { item: 'immersiveengineering:mold_gear' },
