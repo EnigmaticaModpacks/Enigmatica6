@@ -486,6 +486,39 @@ events.listen('recipes', function (event) {
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/zinc' });
+    event.recipes.industrialforegoing.laser_drill_ore({
+        output: {
+            tag: 'forge:chunks/zinc'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 10,
+                depth_max: 40,
+                weight: 4
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 1
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens12'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/nickel' });
     event.recipes.industrialforegoing.laser_drill_ore({
