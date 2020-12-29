@@ -1,7 +1,7 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 22,
+	order_index: 23,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
@@ -108,8 +108,11 @@
 			}],
 			rewards: [{
 				id: 858,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -127,13 +130,19 @@
 			rewards: [
 				{
 					id: 860,
-					type: "loot",
-					table: 51
+					type: "command",
+					title: "Rare Nature's Aura Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+					player_command: false
 				},
 				{
 					id: 2675,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -156,13 +165,19 @@
 			rewards: [
 				{
 					id: 859,
-					type: "loot",
-					table: 51
+					type: "command",
+					title: "Rare Nature's Aura Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+					player_command: false
 				},
 				{
 					id: 2674,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -181,8 +196,11 @@
 			}],
 			rewards: [{
 				id: 883,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -235,8 +253,11 @@
 			],
 			rewards: [{
 				id: 1186,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -276,8 +297,11 @@
 				},
 				{
 					id: 864,
-					type: "loot",
-					table: 51
+					type: "command",
+					title: "Rare Nature's Aura Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+					player_command: false
 				}
 			]
 		},
@@ -295,8 +319,11 @@
 			}],
 			rewards: [{
 				id: 886,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -316,8 +343,11 @@
 			}],
 			rewards: [{
 				id: 884,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -334,8 +364,11 @@
 			}],
 			rewards: [{
 				id: 885,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -375,8 +408,11 @@
 				},
 				{
 					id: 865,
-					type: "loot",
-					table: 51
+					type: "command",
+					title: "Rare Nature's Aura Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+					player_command: false
 				}
 			]
 		},
@@ -404,8 +440,11 @@
 			rewards: [
 				{
 					id: 873,
-					type: "loot",
-					table: 18
+					type: "command",
+					title: "Rare Nature's Aura Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+					player_command: false
 				},
 				{
 					id: 1794,
@@ -433,8 +472,11 @@
 			}],
 			rewards: [{
 				id: 881,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -478,8 +520,11 @@
 			}],
 			rewards: [{
 				id: 888,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -496,8 +541,11 @@
 			}],
 			rewards: [{
 				id: 887,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -518,8 +566,11 @@
 			}],
 			rewards: [{
 				id: 871,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -574,8 +625,11 @@
 			}],
 			rewards: [{
 				id: 880,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -592,8 +646,11 @@
 			}],
 			rewards: [{
 				id: 882,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -614,8 +671,11 @@
 			}],
 			rewards: [{
 				id: 879,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -641,8 +701,11 @@
 			],
 			rewards: [{
 				id: 878,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -781,8 +844,11 @@
 			}],
 			rewards: [{
 				id: 866,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -808,8 +874,11 @@
 			],
 			rewards: [{
 				id: 853,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -831,8 +900,11 @@
 			}],
 			rewards: [{
 				id: 854,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -931,8 +1003,11 @@
 			}],
 			rewards: [{
 				id: 869,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -953,8 +1028,11 @@
 			}],
 			rewards: [{
 				id: 877,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -971,8 +1049,11 @@
 			}],
 			rewards: [{
 				id: 876,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -989,8 +1070,11 @@
 			}],
 			rewards: [{
 				id: 872,
-				type: "loot",
-				table: 51
+				type: "command",
+				title: "Rare Nature's Aura Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1098,8 +1182,11 @@
 				},
 				{
 					id: 870,
-					type: "loot",
-					table: 52
+					type: "command",
+					title: "Epic Nature's Aura Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+					player_command: false
 				}
 			]
 		}

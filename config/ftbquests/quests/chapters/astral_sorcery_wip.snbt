@@ -1,7 +1,7 @@
 {
 	id: 2803,
 	filename: "astral_sorcery_wip",
-	order_index: 19,
+	order_index: 20,
 	title: "Astral Sorcery WIP",
 	icon: "astralsorcery:hand_telescope",
 	always_invisible: true,
@@ -74,7 +74,17 @@
 		{
 			icon: "astralsorcery:ritual_pedestal",
 			x: 2.5d,
-			y: -5.0d,
+			y: -4.0d,
+			description: [
+				"“The Attuned Crystal slots into the altar with a satisfying clink and a subtle hum resonates through the ground.",
+				"",
+				"The fur-ball is nowhere to be seen. I cannot say as I blame her; this altar sends a chill down my spine even after all I’ve seen. Night approaches and I feel the power waxing with it.”",
+				"________________________________",
+				"",
+				"The Ritual Altar is a powerful device capable of creating effects in a large area. For instance, all stone in the vicinity of a Mineralis ritual will spontaneously convert to random ores, and mob spawning will be halted by a Lucerna ritual.",
+				"",
+				"They may be further augmented by attuning the crystal a second time to a Faint constellation. Refer to the Astral Tome for more information on this process and the effects each constellation has. "
+			],
 			dependencies: [I;2958],
 			id: 2928,
 			tasks: [
@@ -110,7 +120,7 @@
 		},
 		{
 			icon: "astralsorcery:well",
-			x: 4.5d,
+			x: 4.0d,
 			y: -9.5d,
 			subtitle: "Let That Sink In",
 			description: [
@@ -155,7 +165,10 @@
 			y: -7.5d,
 			subtitle: "As Above, So Below",
 			description: [
-				"The writing on this sheet wiggles and writhes, making your vision swim the more you attempt to focus. And yet, just as you relax your gaze comprehension dawns upon you. Word form in your mind, but are not of your mind.",
+				"“The fisher-folk of nearby villages are quite adept at their trade and spend days at sea fishing. When I’ve managed to catch them at their homes, they’ve spoken at length of the various constellations they use to navigate their boats in safety. ",
+				"",
+				"I thought them to be fanciful inventions, but now with these papers in hand, I see that their long traditions began from the very thing they now fear.”",
+				"________________________________",
 				"",
 				"Constellation Papers may be found in any of the marble temples and ruins throughout the world. A total of sixteen will be needed eventually. Find as many as possible to begin. "
 			],
@@ -175,7 +188,7 @@
 		},
 		{
 			x: 7.0d,
-			y: -5.5d,
+			y: -6.0d,
 			dependencies: [I;2926],
 			id: 2937,
 			tasks: [{
@@ -197,7 +210,7 @@
 		},
 		{
 			x: 7.0d,
-			y: -3.5d,
+			y: -3.0d,
 			dependencies: [I;2939],
 			id: 2941,
 			tasks: [{
@@ -242,18 +255,54 @@
 			x: 5.5d,
 			y: -6.0d,
 			subtitle: "Dreaming as the Days Go By",
+			description: [
+				"“It appears I have been adopted by a village cat. Adorable as it is, its attentions haves made my star gazing rather difficult with only a handheld looking glass. ",
+				"",
+				"I shall have to find a way to brace it.”",
+				"________________________________",
+				"",
+				"The Looking Glass is the first tool used to discover and map out the constellations in the sky. ",
+				"",
+				"Examine the constellation papers you have found so far and see if you can spot them in the night sky. They are notable for their large slowly blinking stars. ",
+				"",
+				"Once a constellation has been located, hold Sneak to begin tracing the points. Upon successfully tracing out the constellation, it will be learned. ",
+				"",
+				"Not every constellation appears each night, so regularly star gazing is encouraged. "
+			],
 			dependencies: [I;2932],
 			id: 2952,
 			tasks: [{
 				id: 2953,
 				type: "item",
 				item: "astralsorcery:hand_telescope"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3106,
+					type: "command",
+					title: "Surprise!",
+					icon: "aquaculture:fish_bones",
+					command: "/summon cat ~ ~ ~ {CatType:7,ActiveEffects:[{Id:2,Amplifier:0,Duration:10000,ShowParticles:0b}]}",
+					player_command: false
+				},
+				{
+					id: 3107,
+					type: "item",
+					item: "minecraft:cod",
+					count: 16
+				}
+			]
 		},
 		{
 			x: 5.5d,
 			y: -5.0d,
 			subtitle: "Ever Drifting Down the Stream",
+			description: [
+				"“This incorrigible lump of fur has shattered two of my lenses in the process of constructing this telescope. I suppose now is as good a time as any to purchase more salmon from the fishmonger…”",
+				"________________________________",
+				"",
+				"The telescope greatly simplifies the task of searching for constellations. They must still be drawn in to learn them, but the improved optics grants a clearer image of the night sky."
+			],
 			dependencies: [I;2937],
 			id: 2954,
 			tasks: [{
@@ -266,6 +315,14 @@
 			x: 5.5d,
 			y: -4.0d,
 			subtitle: "Lingering in the Golden Gleam",
+			description: [
+				"“The fur-ball has taken a liking to the small heater I’ve attached to the observatory to protect it on cold nights. She purrs beside me, curled up for the night. ",
+				"",
+				"Some of the older fisher-folk were able to tell me of these, though they haven’t seen them in an age themselves. I’m thankful for the company as seek for traces of faint starlight in the night skies.”",
+				"________________________________",
+				"",
+				"With the observatory it is possible to locate the final few faint constellations in the night sky. "
+			],
 			dependencies: [I;2941],
 			id: 2956,
 			tasks: [{
@@ -276,7 +333,19 @@
 		},
 		{
 			x: 4.0d,
-			y: -5.0d,
+			y: -4.5d,
+			description: [
+				"“I was sure she was dead. As I turned, I saw it floating there, a limp fluff ball hanging in the air as if held by the scruff of her neck. A breath. Two. Then her eyes opened, and I could see the entire night’s sky them.",
+				"",
+				"Imagine my relief. But she seems changed somehow. Does the attunement field interact with living beings in the same way as the crystals? ",
+				"",
+				"I suppose I have little else to try besides join her.”",
+				"________________________________",
+				"",
+				"The Attunement Altar will attune both Crystals and you to a given constellation. Hold a constellation paper in one hand to see points of light mapping it out on the sooty marble of the altar. Placing relays at these points will set the constellation.",
+				"",
+				"Once attuned, a whole new talent tree will become available to you. Levels are earned by performing actions in line with the constellation, and points are assigned within the Astral Tome. Spend them wisely, for resetting them comes at a cost. "
+			],
 			dependencies: [I;2954],
 			id: 2958,
 			tasks: [{
@@ -345,9 +414,12 @@
 					}
 				}
 			},
-			x: 2.5d,
+			x: 1.0d,
 			y: -4.0d,
-			dependencies: [I;2928],
+			dependencies: [I;
+				2928,
+				3021
+			],
 			id: 2968,
 			tasks: [
 				{
@@ -458,10 +530,13 @@
 			}]
 		},
 		{
-			x: 5.5d,
-			y: -11.0d,
+			x: 5.0d,
+			y: -10.5d,
 			description: [
-				"These crystals seem drawn to you and react visibly when held. Bringing them together with mindful intent is enough for them to fuse into tools much stronger than one would assume at first glance. ",
+				"“A strange thing occurred over-night which I am at odds to explain. I had left a handful of these crystals and tool rods scattered about and upon waking I note that they have spontaneously assembled into the shape of a pickaxe.",
+				"",
+				"A mere tap with a resonating wand causes them to self assemble into a tool of impeccable durability and strength.”",
+				"________________________________",
 				"",
 				"Size, Shape, Durability, and Efficiency traits are all important when crafting Crystal Tools, where the stats of the final tool will be a combination of those used to craft it."
 			],
@@ -531,12 +606,15 @@
 			]
 		},
 		{
-			x: 3.5d,
+			x: 2.5d,
 			y: -8.5d,
 			subtitle: "Splitting Hairs",
 			description: [
-				"While not particularly suitable to tool use, Star metal seems to be the only material suitable for splitting these Crystals. ",
-				"It is not so much that the Crystals are split by the tool itself… more that they seem to want to split when in the presence of the tool and a focused mind.",
+				"“Pretty. I have found myself lost in thought more than once while contemplating the shimmering depths of this new metal.  Initial tests have proven it to be practically useless for work tools. Much too soft.",
+				"Curiously, when brought into contact with the crystals, they seem to split with little effort.",
+				"",
+				"Perhaps I shall fashion a tool for just such a purpose.”",
+				"________________________________",
 				"",
 				"Crystal splitting is an in-world process performed by dropping the crystals on the ground and left clicking them with the Cutting Tool. The crystal will not always split, and sometimes attributes will be lost during the process. ",
 				"",
@@ -571,7 +649,7 @@
 			}]
 		},
 		{
-			x: 3.5d,
+			x: 3.0d,
 			y: -9.5d,
 			description: [
 				"“No. No, this is not the tea, that’s for sure. And I question my own sanity for listening to the hermit. A cautious sip has left my mouth numb for hours. ",
@@ -592,7 +670,7 @@
 			}]
 		},
 		{
-			x: 4.5d,
+			x: 3.5d,
 			y: -8.5d,
 			description: [
 				"“After the unexpected incident with my work bench I began placing other objects near the floating crystal. None seemed to react in any way at first. ",
@@ -615,8 +693,8 @@
 			}]
 		},
 		{
-			x: 7.0d,
-			y: -2.0d,
+			x: 8.5d,
+			y: -3.0d,
 			description: ["Placing a Containment Chalice filled with Starlight near a Starlight Infusion Altar will prevent the loss of Starlight sources blocks during crafting, instead causing a small amount to be drained from the Chalice itself. "],
 			dependencies: [I;2941],
 			id: 2997,
@@ -628,8 +706,8 @@
 		},
 		{
 			title: "Ritual Anchor",
-			x: 3.5d,
-			y: -4.0d,
+			x: 1.5d,
+			y: -3.0d,
 			dependencies: [I;2928],
 			id: 2999,
 			tasks: [{
@@ -643,6 +721,16 @@
 			x: 1.5d,
 			y: -6.5d,
 			subtitle: "Unprecedented Clarity",
+			description: [
+				"“It has been a cause of vexation to me for some time now, why I so frequently find bits of colored glass hanging in the homes of villagers. Orange near the hearth, green near their fields, pink near their beds. ",
+				"",
+				"They take great care in crafting these colorful displays, but when questioned on the topic they merely shrug it off as a lucky token. ",
+				"",
+				"Inspired by these displays, I have attempted to craft similar lenses from these purest of crystals. Where the beams would previously lose focus after a short distance, I’ve found the lenses to be the perfect tool for extending them.”",
+				"________________________________",
+				"",
+				"When crafting Crystal Lenses, the Purity and Shape of the crystal effect the final attributes of the lens. The size of the crystal effects how many lenses are obtained from the craft."
+			],
 			dependencies: [I;3025],
 			id: 3005,
 			tasks: [{
@@ -675,6 +763,7 @@
 				"Explore some of the other options to find what these lenses can do for you."
 			],
 			dependencies: [I;3005],
+			min_width: 250,
 			id: 3015,
 			tasks: [
 				{
@@ -756,18 +845,21 @@
 		},
 		{
 			title: "Celestial Crystals",
-			x: 1.0d,
-			y: -9.5d,
+			x: 0.0d,
+			y: -8.0d,
 			subtitle: "Call of the Void",
 			description: [
-				"Rock Crystals readily bind with Stardust when soaked in Starlight, growing into a beautiful structure whose shifting patterns defy observation and induce vertigo as if staring into the depths of space.",
+				"Crystal Doping Specimen: 42",
+				"",
+				"“Powdered starmetal has successfully bound with the growing crystal, infusing it with the same resonating patterns as is seen in the metal itself. ",
+				"Upon initial inspection, it appears to have leeched out impurities in the crystalline matrix, leading to a stronger crystal overall.”",
+				"________________________________",
 				"",
 				"Celestial Crystals are formed by dropping a Crystal into a pool of Liquid Starlight along with Stardust. A Crystal Cluster will form and slowly grow until it is ready to be harvested. ",
 				"",
-				"The growth process can be sped along if the Crystal Cluster is growing atop a Starmetal Ore. This will leech the Starmetal, converting it back into mundane Iron which may be re-transmuted to Starmetal in situ. ",
-				"",
-				""
+				"The growth process can be sped along if the Crystal Cluster is growing atop a Starmetal Ore. This will leech the Starmetal, converting it back into mundane Iron which may be re-transmuted to Starmetal in situ. "
 			],
+			dependencies: [I;3025],
 			id: 3023,
 			tasks: [{
 				id: 3041,
@@ -791,7 +883,7 @@
 					Damage: 4
 				}
 			},
-			x: 2.5d,
+			x: 1.0d,
 			y: -9.0d,
 			description: [
 				"Splitting crystals is generally useful for crafting specialised crystals, whereby individual attributes are separated and the pieces are recombined. ",
@@ -810,6 +902,7 @@
 				2993,
 				2990
 			],
+			min_width: 300,
 			id: 3025,
 			tasks: [{
 				id: 3026,
@@ -818,8 +911,16 @@
 			}]
 		},
 		{
+			title: "Celestial Gateway",
+			icon: {
+				id: "astralsorcery:celestial_gateway",
+				Count: true,
+				tag: {
+					astralsorcery: {}
+				}
+			},
 			x: 8.5d,
-			y: -6.5d,
+			y: -6.0d,
 			description: [
 				"This Starlight of the ancients appears to have deeply transformative powers on the physical world, reconstructing material into more useful forms. ",
 				"Indeed, this power may even be harnessed to transfer entire beings from one place to another in a process that feels quite like being drunk.",
@@ -828,8 +929,45 @@
 			],
 			dependencies: [I;2937],
 			id: 3027,
-			tasks: [{
-				id: 3028,
+			tasks: [
+				{
+					id: 3028,
+					type: "item",
+					item: {
+						id: "astralsorcery:celestial_gateway",
+						Count: true,
+						tag: {
+							astralsorcery: {}
+						}
+					}
+				},
+				{
+					id: 3101,
+					type: "item",
+					item: "astralsorcery:marble_arch",
+					count: 20L
+				},
+				{
+					id: 3102,
+					type: "item",
+					item: "astralsorcery:marble_engraved",
+					count: 4L
+				},
+				{
+					id: 3103,
+					type: "item",
+					item: "astralsorcery:marble_runed",
+					count: 4L
+				},
+				{
+					id: 3104,
+					type: "item",
+					item: "astralsorcery:black_marble_raw",
+					count: 25L
+				}
+			],
+			rewards: [{
+				id: 3105,
 				type: "item",
 				item: {
 					id: "astralsorcery:celestial_gateway",
@@ -886,6 +1024,57 @@
 						}
 					}
 				}
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -3.0d,
+			description: [
+				"Chosen poorly? Wish to begin again with your attunement? ",
+				"",
+				"The Shifting Star will reset the attunement completely, abandoning all progress and losing all levels. ",
+				"",
+				"Hold the star and hold down right-click until it shatters to use it. "
+			],
+			dependencies: [I;2958],
+			id: 3108,
+			tasks: [{
+				id: 3109,
+				type: "item",
+				item: "astralsorcery:shifting_star"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -2.0d,
+			dependencies: [I;3108],
+			id: 3110,
+			tasks: [{
+				id: 3111,
+				type: "item",
+				item: {
+					id: "astralsorcery:enchantment_amulet",
+					Count: true,
+					tag: {
+						astralsorcery: {}
+					}
+				}
+			}]
+		},
+		{
+			x: 5.0d,
+			y: -2.0d,
+			description: [
+				"Irradiant Stars serve a similar purpose to Shifting Stars, however as they are already attuned to a constellation, they allow you to keep what you’ve earned so far. ",
+				"",
+				"Using the Irradiant Star will reset all chosen talents, but levels will be retained and may be spent again immediately. Naturally, your root attunement also shifts to match that of the star."
+			],
+			dependencies: [I;3108],
+			id: 3112,
+			tasks: [{
+				id: 3113,
+				type: "item",
+				item: "astralsorcery:shifting_star_aevitas"
 			}]
 		}
 	]

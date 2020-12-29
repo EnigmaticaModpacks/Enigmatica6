@@ -1,7 +1,7 @@
 {
 	id: 2197,
 	filename: "blood_magic_wip",
-	order_index: 23,
+	order_index: 24,
 	title: "Blood Magic",
 	icon: "bloodmagic:weakbloodshard",
 	default_quest_shape: "",
@@ -95,8 +95,11 @@
 				},
 				{
 					id: 2684,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -137,8 +140,11 @@
 				},
 				{
 					id: 2242,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -241,8 +247,11 @@
 			}],
 			rewards: [{
 				id: 2479,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -265,8 +274,11 @@
 			}],
 			rewards: [{
 				id: 2480,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -437,8 +449,11 @@
 			}],
 			rewards: [{
 				id: 2487,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -461,8 +476,11 @@
 			}],
 			rewards: [{
 				id: 2489,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -497,8 +515,11 @@
 			],
 			rewards: [{
 				id: 2486,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -520,8 +541,11 @@
 			}],
 			rewards: [{
 				id: 2485,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -595,8 +619,11 @@
 			],
 			rewards: [{
 				id: 2490,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -650,8 +677,11 @@
 			}],
 			rewards: [{
 				id: 2482,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -678,8 +708,11 @@
 			}],
 			rewards: [{
 				id: 2488,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -767,8 +800,11 @@
 			],
 			rewards: [{
 				id: 2483,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -789,8 +825,11 @@
 			}],
 			rewards: [{
 				id: 2484,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -814,13 +853,19 @@
 			rewards: [
 				{
 					id: 2491,
-					type: "loot",
-					table: 20
+					type: "command",
+					title: "Rare Blood Magic Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+					player_command: false
 				},
 				{
 					id: 2685,
-					type: "loot",
-					table: 22
+					type: "command",
+					title: "Alchemist's Delight",
+					icon: "kubejs:alchemists_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+					player_command: false
 				}
 			]
 		},

@@ -1,7 +1,7 @@
 {
 	id: 174,
 	filename: "pneumaticcraft_repressurized",
-	order_index: 16,
+	order_index: 17,
 	title: "PneumaticCraft: Repressurized",
 	icon: "pneumaticcraft:pressure_gauge_module",
 	default_quest_shape: "",
@@ -86,13 +86,19 @@
 			rewards: [
 				{
 					id: 198,
-					type: "loot",
-					table: 14
+					type: "command",
+					title: "Rare PNC:R Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+					player_command: false
 				},
 				{
 					id: 2680,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -157,8 +163,11 @@
 			}],
 			rewards: [{
 				id: 197,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -179,8 +188,11 @@
 			}],
 			rewards: [{
 				id: 201,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -243,8 +255,11 @@
 				},
 				{
 					id: 2681,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -308,8 +323,11 @@
 			}],
 			rewards: [{
 				id: 216,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -375,13 +393,19 @@
 			rewards: [
 				{
 					id: 230,
-					type: "loot",
-					table: 14
+					type: "command",
+					title: "Rare PNC:R Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+					player_command: false
 				},
 				{
 					id: 2683,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -444,8 +468,11 @@
 			],
 			rewards: [{
 				id: 556,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -516,8 +543,11 @@
 			}],
 			rewards: [{
 				id: 243,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -535,8 +565,11 @@
 			}],
 			rewards: [{
 				id: 247,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -554,8 +587,11 @@
 			}],
 			rewards: [{
 				id: 250,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -608,8 +644,11 @@
 			}],
 			rewards: [{
 				id: 255,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -627,8 +666,11 @@
 			}],
 			rewards: [{
 				id: 258,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -646,8 +688,11 @@
 			}],
 			rewards: [{
 				id: 554,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -668,8 +713,11 @@
 			}],
 			rewards: [{
 				id: 889,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -753,8 +801,11 @@
 			}],
 			rewards: [{
 				id: 275,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -772,8 +823,11 @@
 			rewards: [
 				{
 					id: 279,
-					type: "loot",
-					table: 15
+					type: "command",
+					title: "Epic PNC:R Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+					player_command: false
 				},
 				{
 					id: 280,
@@ -842,8 +896,11 @@
 				},
 				{
 					id: 2682,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -867,8 +924,11 @@
 			}],
 			rewards: [{
 				id: 290,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -889,8 +949,11 @@
 			}],
 			rewards: [{
 				id: 293,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -907,8 +970,11 @@
 			}],
 			rewards: [{
 				id: 296,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -992,8 +1058,11 @@
 			}],
 			rewards: [{
 				id: 305,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1010,8 +1079,11 @@
 			}],
 			rewards: [{
 				id: 308,
-				type: "loot",
-				table: 14
+				type: "command",
+				title: "Rare PNC:R Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1125,8 +1197,11 @@
 			}],
 			rewards: [{
 				id: 324,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1192,8 +1267,11 @@
 			}],
 			rewards: [{
 				id: 333,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1214,8 +1292,11 @@
 			}],
 			rewards: [{
 				id: 336,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1244,8 +1325,11 @@
 			],
 			rewards: [{
 				id: 340,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1300,8 +1384,11 @@
 			],
 			rewards: [{
 				id: 349,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1318,8 +1405,11 @@
 			}],
 			rewards: [{
 				id: 356,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1363,8 +1453,11 @@
 			}],
 			rewards: [{
 				id: 359,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1386,8 +1479,11 @@
 			}],
 			rewards: [{
 				id: 362,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1428,8 +1524,11 @@
 			}],
 			rewards: [{
 				id: 1597,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1485,8 +1584,11 @@
 			}],
 			rewards: [{
 				id: 1075,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1525,8 +1627,11 @@
 			],
 			rewards: [{
 				id: 1076,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1547,8 +1652,11 @@
 			}],
 			rewards: [{
 				id: 1074,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		}
 	]
