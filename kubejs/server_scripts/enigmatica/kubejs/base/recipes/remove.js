@@ -73,7 +73,7 @@ events.listen('recipes', function (event) {
         event.remove({ id: removal });
     });
 
-    disabledItems.forEach((disabledItem) => {
+    global.disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
     });
 
@@ -105,13 +105,9 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
-        output: '/\\w+:\\w+_gear/',
-        type: 'minecraft:crafting_shaped'
-    });
-
-    event.remove({
         output: '/emendatusenigmatica:\\w+_rod/',
-        mod: 'immersiveengineering'
+        mod: 'immersiveengineering',
+        type: 'immersiveengineering:metal_press'
     });
 
     event.remove({
