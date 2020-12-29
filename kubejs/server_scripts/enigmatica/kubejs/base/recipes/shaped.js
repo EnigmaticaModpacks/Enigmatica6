@@ -292,6 +292,11 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe(item.of('mekanism:ingot_steel', 2), ['AA'], {
             A: 'emendatusenigmatica:steel_ingot'
+        }),
+        shapedRecipe('tetra:combustion_chamber', ['CBC', 'BAB', 'CBC'], {
+            A: 'mekanism:superheating_element',
+            B: 'pneumaticcraft:heat_sink',
+            C: 'mekanism:ultimate_thermodynamic_conductor'
         })
     ];
 
