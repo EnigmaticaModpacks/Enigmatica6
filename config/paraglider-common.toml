@@ -1,0 +1,10 @@
+#Forces the server to not kick the shit out of 'cheaters' who also happened to be using paraglider.
+#Feel free to disable it if you hate 'cheaters'. Or paraglider. If disabled, 'allow-flight' inside server.properties will be used.
+forceFlightDisabled = false
+
+[debug]
+	debugPlayerMovement = false
+	traceMovementPacket = false
+	traceParaglidingPacket = false
+	traceVesselPacket = false
+
