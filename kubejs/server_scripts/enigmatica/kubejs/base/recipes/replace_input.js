@@ -319,4 +319,10 @@ events.listen('recipes', function (event) {
     ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
         event.replaceInput({}, tallow, '#forge:tallow');
     });
+
+    event.replaceInput(
+        { id: 'dustrial_decor:iron_bar_trapdoor' },
+        'minecraft:iron_bars',
+        'dustrial_decor:barbed_iron_bars'
+    );
 });
