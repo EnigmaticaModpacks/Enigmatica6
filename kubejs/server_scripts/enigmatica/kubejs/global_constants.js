@@ -95,7 +95,8 @@ const materialsToUnify = [
     'arcane',
     'mana',
     'certus_quartz',
-    'charged_certus_quartz'
+    'charged_certus_quartz',
+    'iesnium'
 ];
 
 global.materialsToUnify = materialsToUnify;
