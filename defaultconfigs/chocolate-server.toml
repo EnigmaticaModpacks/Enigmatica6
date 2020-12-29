@@ -1,0 +1,15 @@
+
+[logging]
+	#How should Chocolate handle biome IDs which are present in a chunk palette, but there was no biome of that name found in the registry? (This will happen when you remove biomes.)
+	#NONE = Default vanilla behavior (regenerate the biome)
+	#LOG = Default behavior plus logging an error message
+	#THROW = Forcibly throw an error (crash)
+	#Allowed Values: NONE, LOG, THROW
+	onBiomesRemovedFromChunks = "LOG"
+	#How should Chocolate handle biome IDs found in the biome data but not recorded in the palette? (This will happen when the serialization contract was broken by external means)
+	#NONE = Default vanilla behavior (regenerate the biome)
+	#LOG = Default behavior plus logging an error message
+	#THROW = Forcibly throw an error (crash)
+	#Allowed Values: NONE, LOG, THROW
+	onIdsMissingFromPalette = "LOG"
+

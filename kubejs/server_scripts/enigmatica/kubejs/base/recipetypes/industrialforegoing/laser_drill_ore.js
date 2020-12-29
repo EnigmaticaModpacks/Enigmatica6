@@ -41,7 +41,6 @@ events.listen('recipes', function (event) {
         'biomesoplenty:withered_abyss'
     ];
 
-
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/niter' });
@@ -79,9 +78,10 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/arcane' });
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/mana' });
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
-            tag: 'forge:chunks/arcane'
+            tag: 'forge:chunks/mana'
         },
         rarity: [
             {

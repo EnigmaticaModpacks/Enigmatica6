@@ -15,14 +15,14 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:ingot_electrum')
         .add('immersiveengineering:ingot_hop_graphite')
         .add('mythicbotany:alfsteel_ingot')
-        .add('industrialforegoing:pink_slime_ingot');
+        .add('industrialforegoing:pink_slime_ingot')
+        .add('occultism:iesnium_ingot');
 
     event.get('forge:ingots/copper').add('immersiveengineering:ingot_copper');
     event.get('forge:ingots/alfsteel').add('mythicbotany:alfsteel_ingot');
     event.get('forge:ingots/pink_slime').add('industrialforegoing:pink_slime_ingot');
     event.get('forge:ingots/gaia').add('botania:gaia_ingot');
     event.get('forge:ingots/gaia_spirit').add('botania:gaia_ingot');
-    // event.get('forge:ingots').add('occultism:iesnium_ingot');
 
     event
         .get('forge:ingots')

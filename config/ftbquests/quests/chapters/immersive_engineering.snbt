@@ -1,7 +1,7 @@
 {
 	id: 2,
 	filename: "immersive_engineering",
-	order_index: 14,
+	order_index: 15,
 	title: "Immersive Engineering",
 	icon: "immersiveengineering:heavy_engineering",
 	default_quest_shape: "",
@@ -175,8 +175,11 @@
 				},
 				{
 					id: 1549,
-					type: "loot",
-					table: 4
+					type: "command",
+					title: "Rare Immersive Engineering Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+					player_command: false
 				}
 			]
 		},
@@ -196,8 +199,11 @@
 			}],
 			rewards: [{
 				id: 1556,
-				type: "loot",
-				table: 4
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -262,8 +268,11 @@
 			}],
 			rewards: [{
 				id: 1550,
-				type: "loot",
-				table: 4
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -311,8 +320,11 @@
 			],
 			rewards: [{
 				id: 1569,
-				type: "loot",
-				table: 6
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -398,8 +410,11 @@
 			],
 			rewards: [{
 				id: 1568,
-				type: "loot",
-				table: 6
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -508,13 +523,19 @@
 			rewards: [
 				{
 					id: 1570,
-					type: "loot",
-					table: 6
+					type: "command",
+					title: "Epic Immersive Engineering Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+					player_command: false
 				},
 				{
 					id: 1571,
-					type: "loot",
-					table: 6
+					type: "command",
+					title: "Epic Immersive Engineering Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+					player_command: false
 				}
 			]
 		},
@@ -531,8 +552,11 @@
 			}],
 			rewards: [{
 				id: 1558,
-				type: "loot",
-				table: 4
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -621,8 +645,11 @@
 			],
 			rewards: [{
 				id: 1565,
-				type: "loot",
-				table: 6
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -674,8 +701,11 @@
 			}],
 			rewards: [{
 				id: 1572,
-				type: "loot",
-				table: 6
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -729,8 +759,11 @@
 			],
 			rewards: [{
 				id: 1564,
-				type: "loot",
-				table: 6
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -800,8 +833,11 @@
 			],
 			rewards: [{
 				id: 1562,
-				type: "loot",
-				table: 6
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -860,8 +896,11 @@
 			}],
 			rewards: [{
 				id: 1553,
-				type: "loot",
-				table: 4
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -946,8 +985,11 @@
 			],
 			rewards: [{
 				id: 1554,
-				type: "loot",
-				table: 4
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
 			}]
 		}
 	]

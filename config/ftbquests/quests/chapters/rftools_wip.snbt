@@ -1,7 +1,7 @@
 {
 	id: 841,
 	filename: "rftools_wip",
-	order_index: 6,
+	order_index: 7,
 	title: "RFTools WIP",
 	icon: "rftoolsbase:machine_frame",
 	always_invisible: true,
@@ -10,14 +10,16 @@
 		{
 			title: "Welcome to RFTools!",
 			x: 0.0d,
-			y: 0.0d,
+			y: 1.5d,
 			shape: "rsquare",
 			subtitle: "But what does the RF stand for?",
 			description: [
 				"Welcome to RFTools! In this chapter we will explore, no surprises here, the RFTools mod, which focuses on giving you different miscellaneous devices you can use for all sorts of purposes, from fast digging, to teleportation and wireless redstone! ",
 				"",
 				"The quests will guide you to some of the mods key items, but will leave some items up to you to find and discover.",
-				"We will also touch on XNet, a companion to RFTools designed especially for item transportation! Well, what are we waiting for, let’s get started!"
+				"We will also touch on XNet, a companion to RFTools designed especially for item transportation! Well, what are we waiting for, let’s get started!",
+				"",
+				"~Merlo"
 			],
 			id: 842,
 			tasks: [{
@@ -26,16 +28,25 @@
 				title: "Intro",
 				icon: "rftoolsbase:smartwrench"
 			}],
-			rewards: [{
-				id: 844,
-				type: "item",
-				item: "rftoolsbase:manual"
-			}]
+			rewards: [
+				{
+					id: 844,
+					type: "item",
+					item: "rftoolsbase:manual"
+				},
+				{
+					id: 3072,
+					type: "item",
+					item: "rftoolsbase:smartwrench"
+				}
+			]
 		},
 		{
 			x: 0.0d,
 			y: -1.5d,
 			shape: "hexagon",
+			subtitle: "They framed me!",
+			description: ["Get familiar with this guy, it will be the basic block you will have to craft for every RFTools machine, just like his sister, the Machine Base, for the smaller devices. Better stock up on them!"],
 			dependencies: [I;842],
 			size: 1.5d,
 			id: 845,
@@ -43,17 +54,14 @@
 				id: 846,
 				type: "item",
 				item: "rftoolsbase:machine_frame"
-			}],
-			rewards: [{
-				id: 1395,
-				type: "item",
-				item: "rftoolsbase:smartwrench"
 			}]
 		},
 		{
 			x: 0.0d,
-			y: 1.5d,
+			y: 3.0d,
 			shape: "hexagon",
+			subtitle: "Base after Base",
+			description: ["Get familiar with this girl, it will be the basic block you will have to craft for every RFTools device, just like her brother, the Machine Frame, for the bigger machines. Better go make a bunch!"],
 			dependencies: [I;842],
 			size: 1.5d,
 			id: 896,
@@ -64,8 +72,17 @@
 			}]
 		},
 		{
+			title: "Wireless Redstone",
 			x: 0.0d,
-			y: 3.0d,
+			y: 4.5d,
+			subtitle: "The future is now!",
+			description: [
+				"Have you ever wanted to transfer redstone signals easily and without all of those ugly wires? Well just make a redstone transmitter and a receiver!",
+				"",
+				"They work with channels, meaning any receiver on a channel X will output the same redstone signal its getting from transmitters on the same frequency. If you simply place down one of these blocks they will automatically connect to a new channel.",
+				"",
+				"To then connect other blocks to the same channel frequency just take them and right click them on another transmitter or receiver that is already on that channel. Pretty sweet huh?"
+			],
 			dependencies: [I;896],
 			id: 898,
 			tasks: [
@@ -83,7 +100,12 @@
 		},
 		{
 			x: 1.5d,
-			y: 3.0d,
+			y: 4.5d,
+			subtitle: "I prefer Inventory Chess",
+			description: [
+				"The inventory checker is a very unique device that can, as its name suggests, check for specific items in specific slots of any inventory it’s looking at. It can even work with tags! ",
+				"Its use cases might be a bit niche, but it will prove to be very useful in complex automation setups."
+			],
 			dependencies: [I;896],
 			id: 902,
 			tasks: [{
@@ -94,7 +116,9 @@
 		},
 		{
 			x: 1.5d,
-			y: 1.5d,
+			y: 3.0d,
+			subtitle: "Tick tock...",
+			description: ["This one is pretty easy, just a regular old redstone timer you can place down and manually program delays for. You can also reset it by giving it a redstone signal on its input (the one with the blue inwards V)."],
 			dependencies: [I;896],
 			id: 904,
 			tasks: [{
@@ -105,7 +129,14 @@
 		},
 		{
 			x: -1.5d,
-			y: 1.5d,
+			y: 3.0d,
+			subtitle: "Just like that rapper!",
+			description: [
+				"The logic is a simple yet effective way to create custom logic gates for all your redstone needs.",
+				"",
+				"It takes three inputs, from the three different sides of the machine with blue arrows, and outputs a signal from the orange arrow’s side based on the configuration programmed inside of it.",
+				"You can check for any different combination of inputs (for example, two specific sides off and one on) and manually set the desired output."
+			],
 			dependencies: [I;896],
 			id: 906,
 			tasks: [{
@@ -116,7 +147,13 @@
 		},
 		{
 			x: -3.0d,
-			y: 1.5d,
+			y: 3.0d,
+			subtitle: "I thought we all went Digital!",
+			description: [
+				"You can view the analog as a more advanced logic of sorts. It still has three inputs, however it compares two of them (named A and B in the machine), and outputs a signal of strength based on the third input, with some custom calculations applied.",
+				"",
+				"You can also have different factors for the input calculations depending on the comparison of the A and B signals."
+			],
 			dependencies: [I;906],
 			id: 910,
 			tasks: [{
@@ -127,7 +164,17 @@
 		},
 		{
 			x: -3.0d,
-			y: 3.0d,
+			y: 4.5d,
+			subtitle: " It’s as easy as 1,1,2,3...",
+			description: [
+				"The sequencer is yet another small device you can use to create custom redstone circuits.",
+				"",
+				"This one is a bit more advanced and can look confusing at first, but is actually pretty straight forward: think of the grid you see in the GUI as a time sequence, starting from the upper left corner and ending in the lower right. ",
+				"",
+				"Every square represents a game tick, so 1/20th of a second. For example, if you were to light up the first 20 squares, the sequence would now be an on signal for a second, and then off for the rest of the duration.",
+				"",
+				"You can also customize how the sequence will trigger (by default it will only activate once, the first time the block receives an input signal. Check all the modes and cycle through them by clicking on the “Once1” button)."
+			],
 			dependencies: [I;910],
 			id: 912,
 			tasks: [{
@@ -138,7 +185,9 @@
 		},
 		{
 			x: -1.5d,
-			y: 3.0d,
+			y: 4.5d,
+			subtitle: "This joke has been sensored...",
+			description: ["Just like its name implies, the sensor can be used to check for the presence of a number of blocks, items, entities and other things in different areas in front of it, giving out a redstone signal when the conditions are met. Pretty handy device!"],
 			dependencies: [I;896],
 			id: 914,
 			tasks: [{
@@ -148,9 +197,24 @@
 			}]
 		},
 		{
+			title: "Teleportation",
+			icon: "rftoolsutility:matter_receiver",
 			x: 1.5d,
-			y: -1.5d,
+			y: 0.0d,
+			subtitle: "*Teleports behind you*",
+			description: [
+				"RFTools offers a quick and easy way to teleport around the world, which can come in really handy to travel around the world or simply to always have a quick way to get back home.",
+				"",
+				"The two main blocks you’ll need are receivers and transmitters: the first ones are where you can teleport to, and the second ones are where you can teleport from.",
+				"",
+				" First of all, set down some receivers in the places where you want to teleport and make sure they are powered. Then, place down a Transmitter and a Dialing Device somewhere in your base.",
+				"",
+				"The Dialing Device will be able to see all the public Receivers in the world and the private ones for which you are whitelisted (you can also name Receivers to identify them more easily).",
+				"",
+				"Choose which Receiver you want to be dialed to in the Dialing Device and you will see the Transmitter light up: step on it and woosh! Teleportation!"
+			],
 			dependencies: [I;845],
+			min_width: 300,
 			id: 916,
 			tasks: [
 				{
@@ -162,26 +226,25 @@
 					id: 918,
 					type: "item",
 					item: "rftoolsutility:matter_receiver"
+				},
+				{
+					id: 3074,
+					type: "item",
+					item: "rftoolsutility:dialing_device"
 				}
 			]
 		},
 		{
 			x: 3.0d,
-			y: -1.5d,
+			y: 0.0d,
 			shape: "diamond",
-			dependencies: [I;916],
-			optional: true,
-			id: 919,
-			tasks: [{
-				id: 920,
-				type: "item",
-				item: "rftoolsutility:dialing_device"
-			}]
-		},
-		{
-			x: 4.5d,
-			y: -3.0d,
-			shape: "diamond",
+			subtitle: "Now I'm here, and now I'm not!",
+			description: [
+				"Teleportation is cool and all, but what if you could teleport to your Receivers without having to place down a Transmitter every time? Introducing the Charged Porter! Shift right click on any Receiver you can access to save it into the Porter.",
+				"Providing the Porter has power, you can then simply right click it and teleport there immediately!",
+				"",
+				"While the regular Porter can only store one Receiver, the Advanced one can have up to 8, and you can switch between them by shift right clicking it into the air. Try it out!"
+			],
 			dependencies: [I;916],
 			optional: true,
 			id: 921,
@@ -198,19 +261,29 @@
 			}]
 		},
 		{
+			title: "Dimensional Shards",
 			x: -1.5d,
-			y: 0.0d,
+			y: 1.5d,
+			subtitle: "It's from a different world...",
+			description: ["Dimensional shards are the only raw resource introduced by RFTools, found in rare ores but also craftable with rare materials. You will need a bunch of these for crafting and to infuse all of your RFTools machines. Go gather a bunch!"],
 			dependencies: [I;842],
 			id: 923,
 			tasks: [{
 				id: 924,
 				type: "item",
-				item: "rftoolsbase:dimensionalshard"
+				item: "rftoolsbase:dimensionalshard",
+				count: 16L
 			}]
 		},
 		{
 			x: -1.5d,
-			y: -1.5d,
+			y: 0.0d,
+			subtitle: "Infused with love!",
+			description: [
+				"You might have noticed some RFTools machines have an “Infusing Bonus” written in orange in their tooltips.",
+				"",
+				"Take any of those machines, place them into the machine infuser with four stacks of dimensional shards and some power, and you’ll have successfully infused that machine, unlocking said bonus and powering up your machine!"
+			],
 			dependencies: [I;
 				923,
 				845
@@ -220,11 +293,26 @@
 				id: 926,
 				type: "item",
 				item: "rftoolsbase:machine_infuser"
+			}],
+			rewards: [{
+				id: 3073,
+				type: "item",
+				item: "rftoolsbase:dimensionalshard",
+				count: 64
 			}]
 		},
 		{
+			title: "Crafters",
 			x: 1.5d,
 			y: -3.0d,
+			subtitle: "Crafts better than you ever could",
+			description: [
+				"Crafters are really nice machines, which should be pretty self explanatory: they craft stuff for you.",
+				"",
+				"The nice thing about them is that they’re able to chain recipes as well, so if you teach them how to make planks from wood and sticks from planks they’ll be able to make sticks from wood no problem.",
+				"",
+				"They come in different tiers, and the only real difference between them is the number of recipes they’re able to remember, with 8 being the max amount on the highest tier."
+			],
 			dependencies: [I;845],
 			id: 927,
 			tasks: [{
@@ -236,7 +324,22 @@
 		{
 			x: 0.0d,
 			y: -3.0d,
+			subtitle: "Brick by Boring Brick",
+			description: [
+				"Unsurprisingly, the Builder is a machine that can build stuff for you. However, it might surprise you to see it can do much more! The Builder works with a Shape Card, of which there are many varieties.",
+				"",
+				"Shift right click your shape card on the Builder, and then go shift click it on the first and second corner of the area you want to work with.",
+				"",
+				"Now you can also right click the Shape Card into the air to configure it further, changing the shape, the size, the dimensions and so on.",
+				"",
+				"Once you’re done, place the Shape Card into the Builder to start working! Depending on which card you have, the Builder will build in the selected area, quarry out the selected area, pump fluids and more.",
+				"",
+				"In all these cases, you’ll need power and an inventory above or below the Builder to grab/put blocks into.",
+				"",
+				"Quick tip, clicking the lifebuoy icon in the builder will activate preview mode, and you’ll be able to see an outline of the area you’re working with."
+			],
 			dependencies: [I;845],
+			min_width: 300,
 			id: 1371,
 			tasks: [{
 				id: 1372,
@@ -248,6 +351,14 @@
 			x: -1.5d,
 			y: -4.5d,
 			shape: "diamond",
+			subtitle: "For all your digging needs",
+			description: [
+				"This is the Quarry Shape Card for the Builder. Unsurprisingly, this one will dig blocks from the selected area and will place them into the Builder’s inventory.",
+				"",
+				"There are many different variations of the Quarry card, like Fortune or Silk Touch.",
+				"",
+				"The Clearing cards will also actually dig the block and leave a hole in the world, while the normal Quarry cards will replace what they dig with Dirt. You can also Configure the Card to void certain blocks, like stones or dirt."
+			],
 			dependencies: [I;1371],
 			optional: true,
 			id: 1373,
@@ -261,6 +372,8 @@
 			x: 0.0d,
 			y: -4.5d,
 			shape: "diamond",
+			subtitle: "For all your building needs",
+			description: ["This is the default Shape Card for the Builder. If you use this one, the Builder will place blocks from its inventory in the selected area."],
 			dependencies: [I;1371],
 			optional: true,
 			id: 1375,
@@ -274,40 +387,70 @@
 			x: 1.5d,
 			y: -4.5d,
 			shape: "diamond",
+			subtitle: "For all your fluid needs",
+			description: ["The various pump cards will pump up liquids from the selected area, so you’ll need some sort of tank above or below the builder. There’s also one for placing fluids!"],
 			dependencies: [I;1371],
 			optional: true,
 			id: 1377,
 			tasks: [{
-				id: 1378,
+				id: 3067,
 				type: "item",
-				item: "rftoolsbuilder:shape_card_void"
+				item: "rftoolsbuilder:shape_card_pump"
 			}]
 		},
 		{
 			x: -1.5d,
 			y: -3.0d,
+			subtitle: "What's with mods and modules?",
+			description: [
+				"The Modular Storage is an advanced form of item storage. Place one down and then make an items storage module, like the tier 1 one provided by this quest.",
+				"",
+				"You can then start putting items in and out of the Modular Storage, which will hold a number of different stacks, higher for each tier of Storage Module. It even has an integrated crafting grid that can remember up to 8 recipes!",
+				"",
+				"The items are also stored in the Module itself, so you can easily take it out, move it to another Modular Storage and transfer all your items there."
+			],
 			dependencies: [I;845],
 			id: 1379,
 			tasks: [{
 				id: 1380,
 				type: "item",
 				item: "rftoolsstorage:modular_storage"
-			}]
-		},
-		{
-			x: -3.0d,
-			y: -3.0d,
-			dependencies: [I;1379],
-			id: 1381,
-			tasks: [{
-				id: 1382,
+			}],
+			rewards: [{
+				id: 3071,
 				type: "item",
 				item: "rftoolsstorage:storage_module0"
 			}]
 		},
 		{
-			x: 3.0d,
-			y: -3.0d,
+			title: "Maximum Storage!",
+			x: -3.0d,
+			y: -4.5d,
+			shape: "diamond",
+			subtitle: "Too Many Items!",
+			description: ["Tier up the Storage Module ladder and get up to tier 4, which will be able to store up to 500 stacks of items in a single module! That’s a lot of items, huh?"],
+			dependencies: [I;1379],
+			optional: true,
+			id: 1381,
+			tasks: [{
+				id: 1382,
+				type: "item",
+				item: "rftoolsstorage:storage_module3"
+			}]
+		},
+		{
+			title: "RFTools Control",
+			icon: "rftoolscontrol:processor",
+			x: 1.5d,
+			y: -1.5d,
+			subtitle: "This is for all you nerds out there",
+			description: [
+				"RFTools control is a collection of blocks used to program advanced sequences of task that can be really useful to automate complex setups.",
+				"",
+				"Since it’s very in-depth and complicated to explain with words alone, quests won’t really be able to explain it very well, so we’ll link to a well done youtube tutorial instead.",
+				"",
+				"If you’re interested in getting familiar with control, this is the best place to start: https://www.youtube.com/watch?v=18-R5L-CATg."
+			],
 			dependencies: [I;845],
 			id: 1383,
 			tasks: [
@@ -334,50 +477,211 @@
 			]
 		},
 		{
-			x: 4.5d,
-			y: 0.0d,
+			title: "XNet",
+			x: 1.5d,
+			y: 1.5d,
 			shape: "hexagon",
+			subtitle: "But what does the X stand for?",
+			description: [
+				"XNet is a set of machines in the RFTools family designed specifically for moving items, liquids, power and more around with cables, in a compact fashion.",
+				"",
+				"To start out with XNet, you will need a Controller for each setup, connectors to put on the inventories/machines you want to interact with and cables to connect them together.",
+				"",
+				"Since the process is a bit complex and would get too wordy for the quest, I suggest you look at this video to get a better understanding of the controller: https://www.youtube.com/watch?v=ksaJgiipaOg.",
+				"",
+				" It will take some getting used to, but for the more complex automation setups XNet will always be your best friend."
+			],
 			dependencies: [I;842],
 			size: 1.5d,
+			min_width: 300,
 			id: 1393,
 			tasks: [{
 				id: 1394,
 				type: "item",
 				item: "xnet:controller"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3075,
+					type: "item",
+					item: "xnet:netcable_blue",
+					count: 32
+				},
+				{
+					id: 3076,
+					type: "item",
+					item: "xnet:connector_blue",
+					count: 4
+				}
+			]
 		},
 		{
-			x: 4.5d,
+			title: "Advanced Connectors",
+			x: 3.0d,
 			y: 1.5d,
-			dependencies: [I;1393],
-			id: 1396,
-			tasks: [{
-				id: 1397,
-				type: "item",
-				item: "xnet:netcable_blue"
-			}]
-		},
-		{
-			x: 6.0d,
-			y: 0.0d,
-			dependencies: [I;1393],
-			id: 1398,
-			tasks: [{
-				id: 1399,
-				type: "item",
-				item: "xnet:connector_blue"
-			}]
-		},
-		{
-			x: 7.5d,
-			y: 0.0d,
 			shape: "diamond",
-			dependencies: [I;1398],
+			subtitle: "Even fancier!",
+			description: ["Advanced connectors can give you extra functionality, like faster speed or access to any side of a machine."],
+			dependencies: [I;1393],
 			id: 1400,
 			tasks: [{
 				id: 1401,
 				type: "item",
 				item: "xnet:connector_upgrade"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -3.0d,
+			subtitle: "No privacy for your Chests!",
+			description: [
+				"The Storage Scanner is an even more advanced way to store and access your items. It can read inventories in a radius around itself (maximum of 20 blocks) and it will give you the ability to access all those inventories from one single block. ",
+				"",
+				"So, say you have a wall of chests? A Storage Scanner can easily connect to all of them and show you everything in a single place. It even works with Modular Storages!"
+			],
+			dependencies: [I;1379],
+			id: 3060,
+			tasks: [{
+				id: 3061,
+				type: "item",
+				item: "rftoolsstorage:storage_scanner"
+			}]
+		},
+		{
+			title: "Power Cells",
+			x: -1.5d,
+			y: -1.5d,
+			subtitle: "Cell's Kitchen",
+			description: [
+				"Power Cells are an easy way to store large amounts of power. They act like a multiblock, so the more you have connected together the more your power storage capacity grows, even with cells of different tiers!",
+				"",
+				"You can then right click the multiblock with a smart wrench to create input (blue) and output (orange) points, from which you can then start inserting or taking power."
+			],
+			dependencies: [I;845],
+			id: 3062,
+			tasks: [{
+				id: 3063,
+				type: "item",
+				item: "rftoolspower:cell1"
+			}]
+		},
+		{
+			title: "Dimensional Cells",
+			icon: "rftoolspower:dimensionalcell",
+			x: -3.0d,
+			y: -1.5d,
+			subtitle: "Better with Cards!",
+			description: [
+				"Dimensional Cells are a significant upgrade from Power Cells. They act pretty much the same way, but don’t need to be close to each other to form a multiblock and share their power buffer.",
+				"",
+				"You can connect different Dimensional Cells to the same channel using Powercell Cards. First, place a Powercell Card in the upper left slot of the Dimensional Cell you want to start linking to other cells, and leave it in.",
+				"",
+				"You will see that it will now have changed from “unlinked” to “Link: x”, where x is a number that identifies the channel that cell is now connected to. ",
+				"",
+				"Then, place other Cards in the “Link” slot of the Dimensional Cell, and they will also link to that same channel x.",
+				"",
+				"Now you can go around, place other Dimensional Cells wherever you want in the world, and placing the Card linked to the channel x in the upper left slot will link the new cells to the original one sharing its power buffer and acting like a multiblock"
+			],
+			dependencies: [I;845],
+			dependency_requirement: "one_completed",
+			min_width: 300,
+			id: 3064,
+			tasks: [
+				{
+					id: 3065,
+					type: "item",
+					item: "rftoolspower:dimensionalcell"
+				},
+				{
+					id: 3066,
+					type: "item",
+					item: "rftoolspower:powercell_card"
+				}
+			]
+		},
+		{
+			x: -4.5d,
+			y: -3.0d,
+			shape: "diamond",
+			subtitle: "Definitively not an iPad",
+			description: [
+				"The Tablet can be used to monitor different RFTools machines from a distance, based on what module you put in the Tablet itself.",
+				"",
+				"For example, bind the Storage Control Module you will get from this quest to your Storage Scanner by right clicking it, and as long as the Storage Scanner is chunkloaded you will be able to access it from anywhere in the world!"
+			],
+			dependencies: [I;3060],
+			optional: true,
+			id: 3068,
+			tasks: [{
+				id: 3069,
+				type: "item",
+				item: "rftoolsbase:tablet"
+			}],
+			rewards: [{
+				id: 3070,
+				type: "item",
+				item: {
+					id: "rftoolsstorage:storage_control_module",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "XNet Tutorial Link",
+			icon: "xnet:controller",
+			x: 3.0d,
+			y: 3.0d,
+			shape: "diamond",
+			subtitle: "Click Me!",
+			description: [
+				"To access the link for the XNet tutorial, click on the chat message generated by this quest's reward.",
+				"",
+				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
+			],
+			dependencies: [I;1393],
+			optional: true,
+			id: 3092,
+			tasks: [{
+				id: 3093,
+				type: "checkmark",
+				title: "Xnet tutorial link"
+			}],
+			rewards: [{
+				id: 3094,
+				type: "command",
+				title: "XNet Tutorial Link",
+				command: '/tellraw @p {"text":"XNet Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=ksaJgiipaOg&t=608s"}}',
+				player_command: true
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -1.5d,
+			shape: "diamond",
+			subtitle: "Click Me!",
+			description: [
+				"To access the link for the RFTools Control tutorial, click on the chat message generated by this quest's reward.",
+				"",
+				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
+			],
+			dependencies: [I;1383],
+			optional: true,
+			id: 3098,
+			tasks: [{
+				id: 3099,
+				type: "checkmark",
+				title: "RFTools Control Tutorial Link",
+				icon: "rftoolscontrol:advanced_network_card"
+			}],
+			rewards: [{
+				id: 3100,
+				type: "command",
+				title: "RFTools Control Tutorial Link",
+				command: '/tellraw @p {"text":"RFTools Control Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=18-R5L-CATg&t=814s"}}',
+				player_command: true
 			}]
 		}
 	]

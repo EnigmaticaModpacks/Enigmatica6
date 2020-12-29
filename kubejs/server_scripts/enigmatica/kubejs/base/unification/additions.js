@@ -1,9 +1,8 @@
 //priority: 900
 events.listen('recipes', function (event) {
     materialsToUnify.forEach(function (material) {
-        // enigmatica_ore_deposit_processing(event, material);
         immersiveengineering_gem_ore_processing(event, material);
-        //occultism_ore_ingot_crushing(event, material);
+        occultism_ore_ingot_crushing(event, material);
         immersiveengineering_hammer_crafting_plates(event, material);
         bloodmagic_ore_processing_alchemy(event, material);
         bloodmagic_ore_processing_arc(event, material);
@@ -368,10 +367,7 @@ function gear_unification(event, material) {
     });
 
     // Implemented by Thermal
-    // event.recipes.thermal.press(gear, item.of(gearInput, 4), 'thermal:press_gear_die');
-
-    // This works, but results in 1 ingot -> 1 gear, reported to Lat on Discord: https://discord.com/channels/303440391124942858/615627049637380144/792108447575441449
-    // event.recipes.immersiveengineering.metal_press(gear, item.of(gearInput, 4), 'immersiveengineering:mold_gear');
+    // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
     event.recipes.immersiveengineering.metal_press({
         mold: { item: 'immersiveengineering:mold_gear' },
@@ -462,57 +458,63 @@ function enigmatica_ore_deposit_processing(event, material) {
     // });
 }
 
-function occultism_ore_ingot_crushing(event, material, blacklistedMaterials) {
-    if (!blacklistedMaterials) {
-        blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'quartz', 'coal'];
-    }
-
-    for (var i = 0; i < blacklistedMaterials.length; i++) {
-        if (blacklistedMaterials[i] == material) {
-            return;
-        }
-    }
-
-    var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
-    var oreDeposit = getPreferredItemInTag(oreDepositTag).id;
-
+function occultism_ore_ingot_crushing(event, material) {
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
 
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
-    if (oreDeposit == air || dust == air) {
+    if (dust == air) {
         return;
     }
 
-    event.recipes.occultism.crushing({
-        ingredient: {
-            tag: 'forge:ores/' + material
-        },
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
 
-        result: {
-            item: dust,
-            count: 2
-        },
-        crushing_time: 200
-    });
-
-    if (ingot == air) {
-        return;
+    var crushedOreOutputed = dust;
+    if (gem != air) {
+        crushedOreOutputed = gem;
     }
 
-    event.recipes.occultism.crushing({
-        ingredient: {
-            tag: 'forge:ingots/' + material
-        },
+    if (tagIsEmpty('#forge:ores/' + material) == false) {
+        event.recipes.occultism.crushing({
+            ingredient: {
+                tag: 'forge:ores/' + material
+            },
 
-        result: {
-            item: dust,
-            count: 1
-        },
-        crushing_time: 200
-    });
+            result: {
+                item: crushedOreOutputed,
+                count: 2
+            },
+            crushing_time: 200
+        });
+    }
+
+    if (tagIsEmpty('#forge:ingots/' + material) == false) {
+        event.recipes.occultism.crushing({
+            ingredient: {
+                tag: 'forge:ingots/' + material
+            },
+
+            result: {
+                item: dust,
+                count: 1
+            },
+            crushing_time: 200
+        });
+    }
+
+    if (tagIsEmpty('#forge:gems/' + material) == false) {
+        event.recipes.occultism.crushing({
+            ingredient: {
+                tag: 'forge:gems/' + material
+            },
+
+            result: {
+                item: dust,
+                count: 1
+            },
+            crushing_time: 200
+        });
+    }
 }
 
 function immersiveengineering_hammer_crafting_plates(event, material) {

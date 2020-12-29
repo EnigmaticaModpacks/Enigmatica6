@@ -34,4 +34,9 @@
 	labEnabled = true
 	#Whether the stray tower structure is enabled. Set to false to disable spawning.
 	strayTowerEnabled = true
+	#Whether the catacomb structure is enabled. Set to false to disable spawning.
+	catacombEnabled = true
+	#Rarity of the catacomb structure. Higher numbers mean rarer structures.
+	#Range: 1.0 ~ 1000.0
+	catacombRarity = 3.0
 

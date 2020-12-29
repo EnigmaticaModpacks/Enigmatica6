@@ -1,7 +1,7 @@
 {
 	id: 147,
 	filename: "tools",
-	order_index: 9,
+	order_index: 10,
 	title: "Tools",
 	icon: {
 		id: "minecraft:netherite_pickaxe",
@@ -36,8 +36,11 @@
 				},
 				{
 					id: 2648,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -126,8 +129,11 @@
 			}],
 			rewards: [{
 				id: 1616,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -159,8 +165,11 @@
 			}],
 			rewards: [{
 				id: 1615,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -189,8 +198,11 @@
 			}],
 			rewards: [{
 				id: 1617,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -222,8 +234,11 @@
 			}],
 			rewards: [{
 				id: 1618,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -265,8 +280,11 @@
 			}],
 			rewards: [{
 				id: 1605,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -281,8 +299,11 @@
 			}],
 			rewards: [{
 				id: 1604,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -297,8 +318,11 @@
 			}],
 			rewards: [{
 				id: 1602,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -313,8 +337,11 @@
 			}],
 			rewards: [{
 				id: 1603,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -329,8 +356,11 @@
 			}],
 			rewards: [{
 				id: 1599,
-				type: "loot",
-				table: 15
+				type: "command",
+				title: "Epic PNC:R Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -365,8 +395,11 @@
 			}],
 			rewards: [{
 				id: 1601,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -383,8 +416,11 @@
 			}],
 			rewards: [{
 				id: 1600,
-				type: "loot",
-				table: 16
+				type: "command",
+				title: "Legendary PNC:R Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pneumaticcraft_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -414,8 +450,11 @@
 			}],
 			rewards: [{
 				id: 2646,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -519,8 +558,11 @@
 			],
 			rewards: [{
 				id: 2645,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -541,8 +583,11 @@
 			}],
 			rewards: [{
 				id: 1621,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -563,8 +608,11 @@
 			}],
 			rewards: [{
 				id: 2647,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -618,8 +666,11 @@
 			}],
 			rewards: [{
 				id: 2102,
-				type: "loot",
-				table: 19
+				type: "command",
+				title: "Legendary Mekanism Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -650,8 +701,11 @@
 			}],
 			rewards: [{
 				id: 2101,
-				type: "loot",
-				table: 19
+				type: "command",
+				title: "Legendary Mekanism Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -680,8 +734,11 @@
 			}],
 			rewards: [{
 				id: 2100,
-				type: "loot",
-				table: 19
+				type: "command",
+				title: "Legendary Mekanism Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -711,8 +768,11 @@
 			}],
 			rewards: [{
 				id: 2099,
-				type: "loot",
-				table: 19
+				type: "command",
+				title: "Legendary Mekanism Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -737,8 +797,11 @@
 			],
 			rewards: [{
 				id: 2109,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -753,8 +816,11 @@
 			}],
 			rewards: [{
 				id: 2107,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -769,8 +835,11 @@
 			}],
 			rewards: [{
 				id: 2106,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -785,8 +854,11 @@
 			}],
 			rewards: [{
 				id: 2105,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -801,8 +873,11 @@
 			}],
 			rewards: [{
 				id: 2110,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -817,8 +892,11 @@
 			}],
 			rewards: [{
 				id: 2103,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -840,8 +918,11 @@
 			}],
 			rewards: [{
 				id: 2111,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -856,8 +937,11 @@
 			}],
 			rewards: [{
 				id: 2108,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -872,8 +956,11 @@
 			}],
 			rewards: [{
 				id: 2104,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -896,8 +983,11 @@
 			}],
 			rewards: [{
 				id: 2097,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -920,8 +1010,11 @@
 			}],
 			rewards: [{
 				id: 2098,
-				type: "loot",
-				table: 19
+				type: "command",
+				title: "Legendary Mekanism Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -937,8 +1030,11 @@
 			}],
 			rewards: [{
 				id: 2096,
-				type: "loot",
-				table: 18
+				type: "command",
+				title: "Epic Mekanism Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1032,8 +1128,11 @@
 				},
 				{
 					id: 2642,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -1061,8 +1160,11 @@
 			}],
 			rewards: [{
 				id: 2670,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1102,8 +1204,11 @@
 				},
 				{
 					id: 2643,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -1138,8 +1243,11 @@
 			}],
 			rewards: [{
 				id: 2644,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1208,8 +1316,11 @@
 			],
 			rewards: [{
 				id: 1628,
-				type: "loot",
-				table: 9
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1275,8 +1386,11 @@
 			],
 			rewards: [{
 				id: 1629,
-				type: "loot",
-				table: 9
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1299,8 +1413,11 @@
 			}],
 			rewards: [{
 				id: 1630,
-				type: "loot",
-				table: 9
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1323,8 +1440,11 @@
 			}],
 			rewards: [{
 				id: 1627,
-				type: "loot",
-				table: 9
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1472,8 +1592,11 @@
 				},
 				{
 					id: 2671,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -1540,8 +1663,11 @@
 			rewards: [
 				{
 					id: 1638,
-					type: "loot",
-					table: 10
+					type: "command",
+					title: "Rare Ars Nouveau Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+					player_command: false
 				},
 				{
 					id: 1646,
@@ -1627,8 +1753,11 @@
 			],
 			rewards: [{
 				id: 1637,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1652,8 +1781,11 @@
 			rewards: [
 				{
 					id: 1623,
-					type: "loot",
-					table: 1
+					type: "command",
+					title: "Epic Thermal Series Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+					player_command: false
 				},
 				{
 					id: 2149,
@@ -1686,8 +1818,11 @@
 			rewards: [
 				{
 					id: 1622,
-					type: "loot",
-					table: 1
+					type: "command",
+					title: "Epic Thermal Series Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+					player_command: false
 				},
 				{
 					id: 2150,
@@ -1762,8 +1897,11 @@
 			],
 			rewards: [{
 				id: 1625,
-				type: "loot",
-				table: 1
+				type: "command",
+				title: "Epic Thermal Series Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1829,8 +1967,11 @@
 			],
 			rewards: [{
 				id: 1624,
-				type: "loot",
-				table: 1
+				type: "command",
+				title: "Epic Thermal Series Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1852,8 +1993,11 @@
 			}],
 			rewards: [{
 				id: 1626,
-				type: "loot",
-				table: 1
+				type: "command",
+				title: "Epic Thermal Series Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1879,8 +2023,11 @@
 			}],
 			rewards: [{
 				id: 1636,
-				type: "loot",
-				table: 52
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1905,8 +2052,11 @@
 			}],
 			rewards: [{
 				id: 2827,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		}
 	]

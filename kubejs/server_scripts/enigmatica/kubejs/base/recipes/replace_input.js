@@ -315,4 +315,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
+
+    ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
+        event.replaceInput({}, tallow, '#forge:tallow');
+    });
 });
