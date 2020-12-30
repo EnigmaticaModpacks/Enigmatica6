@@ -182,7 +182,7 @@ events.listen('recipes', function (event) {
 
     event.recipes.industrialforegoing.laser_drill_ore({
         output: {
-            item: 'rftoolsbase:dimensionalshard_end'
+            item: 'emendatusenigmatica:dimensional_chunk'
         },
         rarity: [
             {
@@ -193,21 +193,8 @@ events.listen('recipes', function (event) {
                 blacklist: {},
                 depth_min: 0,
                 depth_max: 255,
-                weight: 1
-            }
-        ],
-        pointer: 0,
-        catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
-    });
-
-    event.recipes.industrialforegoing.laser_drill_ore({
-        output: {
-            item: 'rftoolsbase:dimensionalshard_nether'
-        },
-        rarity: [
+                weight: 12
+            },
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
@@ -217,20 +204,7 @@ events.listen('recipes', function (event) {
                 depth_min: 7,
                 depth_max: 117,
                 weight: 12
-            }
-        ],
-        pointer: 0,
-        catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
-    });
-
-    event.recipes.industrialforegoing.laser_drill_ore({
-        output: {
-            item: 'rftoolsbase:dimensionalshard_overworld'
-        },
-        rarity: [
+            },
             {
                 whitelist: {},
                 blacklist: {
@@ -483,6 +457,74 @@ events.listen('recipes', function (event) {
         pointer: 0,
         catalyst: {
             item: 'industrialforegoing:laser_lens10'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/zinc' });
+    event.recipes.industrialforegoing.laser_drill_ore({
+        output: {
+            tag: 'forge:chunks/zinc'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 10,
+                depth_max: 40,
+                weight: 4
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 1
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens12'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    //event.remove({ id: 'industrialforegoing:laser_drill_ore/apatite' });
+    event.recipes.industrialforegoing.laser_drill_ore({
+        output: {
+            tag: 'forge:chunks/apatite'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 40,
+                depth_max: 80,
+                weight: 16
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 2
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens3'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
