@@ -38,5 +38,9 @@ var itemsToHide = [
     'thermal:coal_coke',
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
-    'thermal:sawdust'
+    'thermal:sawdust',
+    'rftoolsbase:dimensionalshard',
+    'rftoolsbase:dimensionalshard_overworld',
+    'rftoolsbase:dimensionalshard_nether',
+    'rftoolsbase:dimensionalshard_end'
 ];
