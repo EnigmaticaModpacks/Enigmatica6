@@ -62,9 +62,7 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
 
-        'morevanillalib:obsidian_shard',
-
-        'jaopca:mekanism.ore_to_material.dimensional'
+        'morevanillalib:obsidian_shard'
     ];
 
     outputRemovals.forEach((removal) => {
