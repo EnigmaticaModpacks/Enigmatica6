@@ -78,7 +78,7 @@
 			description: [
 				"“The Attuned Crystal slots into the altar with a satisfying clink and a subtle hum resonates through the ground.",
 				"",
-				"The fur-ball is nowhere to be seen. I cannot say as I blame her; this altar sends a chill down my spine even after all I’ve seen. Night approaches and I feel the power waxing with it.”",
+				"Furball is nowhere to be seen. I cannot say as I blame her; this altar sends a chill down my spine even after all I’ve seen. Night approaches and I feel the power waxing with it.”",
 				"________________________________",
 				"",
 				"The Ritual Altar is a powerful device capable of creating effects in a large area. For instance, all stone in the vicinity of a Mineralis ritual will spontaneously convert to random ores, and mob spawning will be halted by a Lucerna ritual.",
@@ -280,9 +280,9 @@
 				{
 					id: 3106,
 					type: "command",
-					title: "Surprise!",
+					title: "Furball",
 					icon: "aquaculture:fish_bones",
-					command: "/summon cat ~ ~ ~ {CatType:7,ActiveEffects:[{Id:2,Amplifier:0,Duration:10000,ShowParticles:0b}]}",
+					command: "/tamedsummon minecraft:cat @p ~ ~ ~",
 					player_command: false
 				},
 				{
@@ -316,7 +316,7 @@
 			y: -4.0d,
 			subtitle: "Lingering in the Golden Gleam",
 			description: [
-				"“The fur-ball has taken a liking to the small heater I’ve attached to the observatory to protect it on cold nights. She purrs beside me, curled up for the night. ",
+				"“Furball has taken a liking to the small heater I’ve attached to the observatory to protect it on cold nights. She purrs beside me, curled up for the night. ",
 				"",
 				"Some of the older fisher-folk were able to tell me of these, though they haven’t seen them in an age themselves. I’m thankful for the company as seek for traces of faint starlight in the night skies.”",
 				"________________________________",
@@ -1074,7 +1074,14 @@
 			tasks: [{
 				id: 3113,
 				type: "item",
-				item: "astralsorcery:shifting_star_aevitas"
+				title: "Any astralsorcery:stars/shifting",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "astralsorcery:stars/shifting"
+					}
+				}
 			}]
 		}
 	]
