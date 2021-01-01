@@ -75,6 +75,7 @@
 			icon: "astralsorcery:ritual_pedestal",
 			x: 2.5d,
 			y: -4.0d,
+			subtitle: "I Rise With The Moon",
 			description: [
 				"“The Attuned Crystal slots into the altar with a satisfying clink and a subtle hum resonates through the ground.",
 				"",
@@ -335,7 +336,7 @@
 			x: 4.0d,
 			y: -4.5d,
 			description: [
-				"“I was sure she was dead. As I turned, I saw it floating there, a limp fluff ball hanging in the air as if held by the scruff of her neck. A breath. Two. Then her eyes opened, and I could see the entire night’s sky them.",
+				"“I was sure she was dead. As I turned, I saw her floating there, a limp fluff ball hanging in the air as if held by the scruff of her neck. A breath. Two. Then her eyes opened, and I could see the entire night’s sky them.",
 				"",
 				"Imagine my relief. But she seems changed somehow. Does the attunement field interact with living beings in the same way as the crystals? ",
 				"",
@@ -559,10 +560,12 @@
 			x: 8.5d,
 			y: -4.0d,
 			description: [
-				"With a proper structure to gather and focus Starlight from a wider area into a single point, greater transmutations may begin. ",
-				"When directed at certain substances, the Starlight appears to infiltrate and change their nature entirely. In other cases, it efficiently draws out useful materials in larger quantities, such as metal from ore. ",
+				"“At long last, I believe I’ve discovered what that hermit was muttering about. An entry in a tome found recently has alluded to a process if Infusion with starlight that drastically transforms the object. ",
 				"",
-				"Right click an item into the Infuser and then right click again with a Resonating Wand to begin the craft. Each craft has a small chance of consuming Liquid Starlight. ",
+				"I shall have to ponder this discovery over another cup of tea.”",
+				"________________________________",
+				"",
+				"Right-Click an item into the Infuser and then Right-Click again with a Resonating Wand to begin the craft. Each craft has a small chance of consuming Liquid Starlight. ",
 				"",
 				"Building Gadget’s templates are available in the Instance folder to assist with building this multiblock."
 			],
@@ -708,6 +711,16 @@
 			title: "Ritual Anchor",
 			x: 1.5d,
 			y: -3.0d,
+			description: [
+				"“Furball’s mistrust of the Rituals has made working with them somewhat difficult. Fortunately, it seems I can move the effect rather effortlessly with a specially prepared anchor. ",
+				"",
+				"They put off a pleasant glow perfect for reading by as well and she has taken to curling up near it as I study.”",
+				"________________________________",
+				"",
+				"The Ritual Anchor is handy for moving the effect of a ritual to a place where the ritual wouldn't otherwise fit. They may be placed underground or otherwise out of view of the sky.",
+				"",
+				"Use a Linking Tool bind the Anchor above the ritual to the Anchor at the desired location. "
+			],
 			dependencies: [I;2928],
 			id: 2999,
 			tasks: [{
@@ -890,6 +903,8 @@
 				"",
 				"Splitting is performed with the Cutting Tool, and as previously noted, it may result in the loss of attributes. To reduce the risk of losing an attribute entirely, try soaking the Crystal in Starlight first to increase its Size.",
 				"",
+				"Fortune and Unbreaking on the Cutting Tool are both highly beneficial during this process.",
+				"",
 				"Once the desired attributes have been isolated, they may be combined by dropping two crystals into a pool of Starlight and allowing them to absorb the liquid entirely. ",
 				"",
 				"This is also not a guaranteed process and is more likely to fail the more attributes already exist on the crystals. ",
@@ -1062,6 +1077,7 @@
 			}]
 		},
 		{
+			title: "Irradiant Star",
 			x: 5.0d,
 			y: -2.0d,
 			description: [
@@ -1072,16 +1088,9 @@
 			dependencies: [I;3108],
 			id: 3112,
 			tasks: [{
-				id: 3113,
+				id: 3114,
 				type: "item",
-				title: "Any astralsorcery:stars/shifting",
-				item: {
-					id: "itemfilters:tag",
-					Count: true,
-					tag: {
-						value: "astralsorcery:stars/shifting"
-					}
-				}
+				item: "astralsorcery:shifting_star_aevitas"
 			}]
 		}
 	]
