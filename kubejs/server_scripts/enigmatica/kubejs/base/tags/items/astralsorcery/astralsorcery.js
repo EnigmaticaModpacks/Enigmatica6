@@ -8,7 +8,7 @@ events.listen('item.tags', function (event) {
         .add('astralsorcery:attuned_celestial_crystal')
         .add('astralsorcery:attuned_rock_crystal');
     event
-        .get('astralsorcery:stars/shifting')
+        .get('astralsorcery:stars/irradiant')
         .add('astralsorcery:shifting_star_vicio')
         .add('astralsorcery:shifting_star_evorsio')
         .add('astralsorcery:shifting_star_discidia')
