@@ -1,0 +1,124 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_growth",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_damage",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_break",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_spectral",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_regeneration",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_fire",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "astralsorcery:colored_lens_push",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "astralsorcery:lens",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 3
+                        },
+                        {
+                            "function": "set_nbt",
+                            "tag": "{astralsorcery:{crystalProperties:{attributes:[{property:\"astralsorcery:purity\",pLevel:2,discovered:1},{property:\"astralsorcery:shape\",pLevel:3,discovered:1}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "astralsorcery:prism",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{astralsorcery:{crystalProperties:{attributes:[{property:\"astralsorcery:purity\",pLevel:2,discovered:1},{property:\"astralsorcery:shape\",pLevel:3,discovered:1}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "mekanism:advanced_fluid_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{FluidTanks:[{Tank:0,stored:{FluidName:\"astralsorcery:liquid_starlight\",Amount:28000}}]}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "astralsorcery:celestial_crystal",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{astralsorcery:{crystalProperties:{attributes:[{discovered:1,property:\"astralsorcery:shape\",pLevel:3},{discovered:1,property:\"astralsorcery:purity\",pLevel:2}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "astralsorcery:celestial_crystal",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{astralsorcery:{crystalProperties:{attributes:[{discovered:1,property:\"astralsorcery:tool.efficiency\",pLevel:3},{discovered:1,property:\"astralsorcery:tool.durability\",pLevel:3},{discovered:1,property:\"astralsorcery:shape\",pLevel:3}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "astralsorcery:celestial_crystal",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{astralsorcery:{crystalProperties:{attributes:[{discovered:1,property:\"astralsorcery:ritual.effect\",pLevel:3},{discovered:1,property:\"astralsorcery:ritual.range\",pLevel:3}]}}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "astralsorcery:celestial_crystal",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{astralsorcery:{crystalProperties:{attributes:[{discovered:1,property:\"astralsorcery:collector.rate\",pLevel:3},{discovered:1,property:\"astralsorcery:purity\",pLevel:2}]}}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
