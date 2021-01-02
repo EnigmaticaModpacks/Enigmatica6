@@ -2,6 +2,7 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'minecraft:wheat_seeds' }],
                 output: 'ars_nouveau:mana_bloom_crop',
                 item_1: [{ tag: 'forge:gems/mana' }],
@@ -10,6 +11,7 @@ events.listen('recipes', (event) => {
                 item_4: [{ tag: 'forge:gems/mana' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'minecraft:wheat_seeds' }],
                 output: 'ars_nouveau:mana_bloom_crop',
                 item_1: [{ tag: 'forge:gems/mana' }],
@@ -18,6 +20,7 @@ events.listen('recipes', (event) => {
                 item_4: [{ tag: 'forge:gems/mana' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:ring_of_potential' }],
                 output: 'ars_nouveau:ring_of_lesser_discount',
                 item_1: [{ tag: 'forge:gems/diamond' }],
@@ -30,6 +33,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ tag: 'forge:gems/diamond' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:ring_of_lesser_discount' }],
                 output: 'ars_nouveau:ring_of_greater_discount',
                 item_1: [{ tag: 'forge:gems/diamond' }],
@@ -42,6 +46,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ tag: 'forge:gems/diamond' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ tag: 'forge:gems/mana' }],
                 output: 'ars_nouveau:summoning_crystal',
                 item_1: [{ tag: 'forge:ingots/gold_copper' }],
@@ -54,6 +59,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ item: 'ars_nouveau:arcane_stone' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:mana_jar' }],
                 output: 'ars_nouveau:arcane_relay',
                 item_1: [{ tag: 'forge:gems/mana' }],
@@ -66,6 +72,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ tag: 'forge:ingots/gold_copper' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:dull_trinket' }],
                 output: 'ars_nouveau:amulet_of_mana_regen',
                 item_1: [{ tag: 'forge:gems/diamond' }],
@@ -78,6 +85,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ tag: 'forge:gems/mana' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:dull_trinket' }],
                 output: 'ars_nouveau:amulet_of_mana_boost',
                 item_1: [{ tag: 'forge:gems/diamond' }],
@@ -90,6 +98,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ tag: 'forge:gems/mana' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:carbuncle_shards' }],
                 output: 'ars_nouveau:carbuncle_charm',
                 item_1: [{ tag: 'forge:gems/mana' }],
@@ -102,6 +111,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ tag: 'forge:nuggets/gold_copper' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'ars_nouveau:sylph_shards' }],
                 output: 'ars_nouveau:sylph_charm',
                 item_1: [{ tag: 'forge:gems/mana' }],
@@ -114,6 +124,7 @@ events.listen('recipes', (event) => {
                 item_8: [{ item: 'minecraft:wheat_seeds' }]
             },
             {
+                type: 'ars_nouveau.enchanting_apparatus',
                 reagent: [{ item: 'minecraft:egg' }],
                 output: 'ars_nouveau:whelp_charm',
                 item_1: [{ tag: 'forge:gems/mana' }],

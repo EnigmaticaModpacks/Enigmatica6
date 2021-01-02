@@ -48,6 +48,7 @@ function immersiveengineering_gem_ore_processing(event, material) {
     }
 
     event.recipes.immersiveengineering.crusher({
+        type: 'immersiveengineering.crusher',
         secondaries: [],
         result: {
             item: dust
@@ -370,6 +371,7 @@ function gear_unification(event, material) {
     // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
     event.recipes.immersiveengineering.metal_press({
+        type: 'immersiveengineering.metal_press',
         mold: { item: 'immersiveengineering:mold_gear' },
         result: { tag: 'forge:gears/' + material },
         conditions: [{ value: { tag: 'forge:gears/' + material, type: 'forge:tag_empty' }, type: 'forge:not' }],
@@ -402,39 +404,15 @@ function enigmatica_ore_deposit_processing(event, material) {
     }
 
     event.recipes.mekanism.enriching({
+        type: 'mekanism.enriching',
         input: {
             ingredient: { tag: 'forge:ore_deposits/' + material }
         },
         output: { item: dust, count: 1 }
     });
 
-    // event.recipes.create.crushing({
-    //     ingredients: [
-    //         {
-    //             tag: 'forge:ore_deposits/' + material,
-    //             count: 1
-    //         }
-    //     ],
-    //     results: [
-    //         {
-    //             item: dust,
-    //             count: 1
-    //         },
-    //         {
-    //             item: dust,
-    //             chance: 0.1,
-    //             count: 1
-    //         },
-    //         {
-    //             item: 'minecraft:dirt',
-    //             chance: 0.5,
-    //             count: 1
-    //         }
-    //     ],
-    //     processingTime: 500
-    // });
-
     event.recipes.immersiveengineering.crusher({
+        type: 'immersiveengineering.crusher',
         secondaries: [],
         result: {
             item: dust
@@ -444,18 +422,6 @@ function enigmatica_ore_deposit_processing(event, material) {
         },
         energy: 2000
     });
-
-    // event.recipes.occultism.crushing({
-    //     ingredient: {
-    //         tag: 'forge:ore_deposits/' + material
-    //     },
-
-    //     result: {
-    //         item: dust,
-    //         count: 1
-    //     },
-    //     crushing_time: 200
-    // });
 }
 
 function occultism_ore_ingot_crushing(event, material) {
@@ -476,6 +442,7 @@ function occultism_ore_ingot_crushing(event, material) {
 
     if (tagIsEmpty('#forge:ores/' + material) == false) {
         event.recipes.occultism.crushing({
+            type: 'occultism.crushing',
             ingredient: {
                 tag: 'forge:ores/' + material
             },
@@ -490,6 +457,7 @@ function occultism_ore_ingot_crushing(event, material) {
 
     if (tagIsEmpty('#forge:ingots/' + material) == false) {
         event.recipes.occultism.crushing({
+            type: 'occultism.crushing',
             ingredient: {
                 tag: 'forge:ingots/' + material
             },
@@ -504,6 +472,7 @@ function occultism_ore_ingot_crushing(event, material) {
 
     if (tagIsEmpty('#forge:gems/' + material) == false) {
         event.recipes.occultism.crushing({
+            type: 'occultism.crushing',
             ingredient: {
                 tag: 'forge:gems/' + material
             },
@@ -534,6 +503,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
         event.shapeless(plate, [hammer, ingot]);
         event.remove({ id: 'immersiveengineering:crafting/plate_' + material + '_hammering' });
         event.recipes.immersiveengineering.metal_press({
+            type: 'immersiveengineering.metal_press',
             mold: {
                 item: 'immersiveengineering:mold_plate'
             },
@@ -553,6 +523,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
 
         event.shapeless(plate, [hammer, input]);
         event.recipes.immersiveengineering.metal_press({
+            type: 'immersiveengineering.metal_press',
             mold: {
                 item: 'immersiveengineering:mold_plate'
             },
@@ -565,6 +536,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             energy: 2400
         });
         event.recipes.thermal.press({
+            type: 'thermal.press',
             ingredient: {
                 tag: inputTag
             },
@@ -575,6 +547,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             ]
         });
         event.recipes.create.pressing({
+            type: 'create.pressing',
             ingredients: [
                 {
                     tag: inputTag

@@ -24,6 +24,7 @@ events.listen('recipes', (event) => {
 
     data.recipes.forEach((recipe) => {
         event.recipes.create.mechanical_crafting({
+            type: 'create.mechanical_crafting',
             pattern: recipe.pattern,
             key: recipe.key,
             result: {

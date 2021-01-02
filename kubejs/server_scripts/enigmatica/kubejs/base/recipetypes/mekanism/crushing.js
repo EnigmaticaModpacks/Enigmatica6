@@ -4,6 +4,7 @@ events.listen('recipes', function (event) {
     var count = 1;
 
     event.recipes.mekanism.crushing({
+        type: 'mekanism.crushing',
         input: {
             ingredient: {
                 tag: input

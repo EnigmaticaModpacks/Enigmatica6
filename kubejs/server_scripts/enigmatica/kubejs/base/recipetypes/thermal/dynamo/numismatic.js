@@ -63,6 +63,7 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         event.recipes.thermal.numismatic_fuel({
+            type: 'thermal.numismatic_fuel',
             ingredient: {
                 tag: recipe.coin
             },

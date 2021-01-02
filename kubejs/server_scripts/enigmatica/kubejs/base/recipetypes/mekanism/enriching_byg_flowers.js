@@ -73,6 +73,7 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         event.recipes.mekanism.enriching({
+            type: 'mekanism.enriching',
             input: {
                 ingredient: {
                     item: recipe.input

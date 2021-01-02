@@ -1,5 +1,6 @@
 events.listen('recipes', function (event) {
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [
             { item: 'mekanism:energy_tablet' },
             { item: 'powah:capacitor_blazing' },
@@ -12,6 +13,7 @@ events.listen('recipes', function (event) {
         }
     });
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [{ tag: 'forge:ingots/uranium' }],
         energy: 5000,
         result: {
@@ -20,6 +22,7 @@ events.listen('recipes', function (event) {
         }
     });
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [{ tag: 'forge:ingots/uranium' }, { tag: 'forge:ingots/uranium' }],
         energy: 10000,
         result: {
@@ -28,6 +31,7 @@ events.listen('recipes', function (event) {
         }
     });
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [
             { tag: 'forge:ingots/uranium' },
             { tag: 'forge:ingots/uranium' },
@@ -40,6 +44,7 @@ events.listen('recipes', function (event) {
         }
     });
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [
             { tag: 'forge:ingots/uranium' },
             { tag: 'forge:ingots/uranium' },
@@ -53,6 +58,7 @@ events.listen('recipes', function (event) {
         }
     });
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [
             { tag: 'forge:ingots/uranium' },
             { tag: 'forge:ingots/uranium' },
@@ -67,6 +73,7 @@ events.listen('recipes', function (event) {
         }
     });
     event.recipes.powah.energizing({
+        type: 'powah.energizing',
         ingredients: [
             { tag: 'forge:ingots/uranium' },
             { tag: 'forge:ingots/uranium' },
