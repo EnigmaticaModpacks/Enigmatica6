@@ -1,5 +1,5 @@
 events.listen('recipes', function (event) {
-    output = 'rftoolsbase:dimensionalshard';
+    output = 'emendatusenigmatica:dimensional_gem';
     count = 8;
     event.recipes.mekanism.enriching({
         input: {

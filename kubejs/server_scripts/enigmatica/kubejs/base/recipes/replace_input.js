@@ -71,6 +71,8 @@ events.listen('recipes', function (event) {
 
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
 
+    event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
+
     event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
     event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
 
@@ -319,4 +321,10 @@ events.listen('recipes', function (event) {
     ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
         event.replaceInput({}, tallow, '#forge:tallow');
     });
+
+    event.replaceInput(
+        { id: 'dustrial_decor:iron_bar_trapdoor' },
+        'minecraft:iron_bars',
+        'dustrial_decor:barbed_iron_bars'
+    );
 });

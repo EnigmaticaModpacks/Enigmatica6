@@ -8,6 +8,7 @@ _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Oregen: Cleaned up the underground a lot. Now that cobblegens can produce all the different kinds of worldgen stone, they're not needed as much in worldgen.
 -   Villagers no longer respond to the mob griefing gamerule, so they are allowed to farm whether it is true or false.
 -   Server: Set `max-tick-time` to 300000 in the `server.properties`. This means that the server will crash if a single tick takes longer than 5 minutes. This is a countermeasure against servers being frozen. Note: This change was not due to an issue, but due to a recommendation from a smart person.
+-   Tetra: Added a recipe for the Combustion Chamber upgrade, so high-end Tetra isn't worldgen gated. The other upgrades will however not be made available through crafting.
     **Bug Fixes**
 
 -   Resourceful Bees: Fixed Redstone Bee not being breedable

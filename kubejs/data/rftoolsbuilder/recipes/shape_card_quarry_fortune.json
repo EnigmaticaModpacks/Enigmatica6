@@ -1,0 +1,27 @@
+{
+    "type": "mcjtylib:copy_nbt",
+    "pattern": ["sns", "eMd", "srs"],
+    "key": {
+        "n": {
+            "item": "minecraft:ghast_tear"
+        },
+        "M": {
+            "item": "rftoolsbuilder:shape_card_quarry"
+        },
+        "r": {
+            "item": "minecraft:redstone"
+        },
+        "s": {
+            "tag": "forge:gems/dimensional"
+        },
+        "d": {
+            "item": "minecraft:diamond"
+        },
+        "e": {
+            "item": "minecraft:emerald"
+        }
+    },
+    "result": {
+        "item": "rftoolsbuilder:shape_card_quarry_fortune"
+    }
+}

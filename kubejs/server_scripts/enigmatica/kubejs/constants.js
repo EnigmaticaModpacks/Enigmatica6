@@ -32,6 +32,8 @@ const modPriorities = [
     'jaopca',
     'kubejs',
     'pneumaticcraft',
+    'create',
+    'occultism',
     'tmechworks',
     'industrialforegoing',
     'botania',
@@ -40,7 +42,8 @@ const modPriorities = [
     'refinedstorage',
     'mapperbase',
     'bloodmagic',
-    'eidolon'
+    'eidolon',
+    'morevanillalib'
 ];
 
 const colors = [
