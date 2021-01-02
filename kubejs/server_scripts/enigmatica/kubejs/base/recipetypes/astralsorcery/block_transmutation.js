@@ -7,29 +7,20 @@ events.listen('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        ingredient
-            .of(recipe.inputTag)
-            .stacks()
-            .forEach((input) => {
-                event.recipes.astralsorcery.block_transmutation({
-                    input: [
-                        {
-                            block: input.id,
-                            display: {
-                                item: input.id,
-                                count: 1
-                            }
-                        }
-                    ],
-                    output: {
-                        block: recipe.output
-                    },
-                    display: {
-                        item: recipe.output,
-                        count: 1
-                    },
-                    starlight: starlight
-                });
+        ingredient.of(recipe.inputTag).stacks.forEach((input) => {
+            console.log(input);
+            console.log(recipe.output);
+            console.log(recipe.starlight);
+
+            event.recipes.astralsorcery.block_transmutation({
+                input: {
+                    block: input.id
+                },
+                output: {
+                    block: recipe.output
+                },
+                starlight: recipe.starlight
             });
+        });
     });
 });
