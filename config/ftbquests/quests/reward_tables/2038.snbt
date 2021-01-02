@@ -1,6 +1,94 @@
 {
 	id: 2038,
-	title: "Placeholder Loot Box",
+	title: "Astral Epic Loot Export",
 	loot_size: 1,
-	rewards: []
+	rewards: [
+		{
+			item: "astralsorcery:colored_lens_growth"
+		},
+		{
+			item: "astralsorcery:colored_lens_damage"
+		},
+		{
+			item: "astralsorcery:colored_lens_break"
+		},
+		{
+			item: "astralsorcery:colored_lens_spectral"
+		},
+		{
+			item: "astralsorcery:colored_lens_regeneration"
+		},
+		{
+			item: "astralsorcery:colored_lens_fire"
+		},
+		{
+			item: "astralsorcery:colored_lens_push"
+		},
+		{
+			item: {
+				id: "astralsorcery:lens",
+				Count: true,
+				tag: {
+					astralsorcery: {
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:purity",
+									pLevel: 2,
+									discovered: true
+								},
+								{
+									property: "astralsorcery:shape",
+									pLevel: 3,
+									discovered: true
+								}
+							]
+						}
+					}
+				}
+			},
+			count: 3
+		},
+		{
+			item: {
+				id: "astralsorcery:prism",
+				Count: true,
+				tag: {
+					astralsorcery: {
+						crystalProperties: {
+							attributes: [
+								{
+									property: "astralsorcery:purity",
+									pLevel: 2,
+									discovered: true
+								},
+								{
+									property: "astralsorcery:shape",
+									pLevel: 3,
+									discovered: true
+								}
+							]
+						}
+					}
+				}
+			}
+		},
+		{
+			item: {
+				id: "mekanism:basic_fluid_tank",
+				Count: true,
+				tag: {
+					mekData: {
+						FluidTanks: [{
+							Tank: false,
+							stored: {
+								FluidName: "astralsorcery:liquid_starlight",
+								Amount: 14000
+							}
+						}]
+					}
+				}
+			}
+		}
+	]
 }

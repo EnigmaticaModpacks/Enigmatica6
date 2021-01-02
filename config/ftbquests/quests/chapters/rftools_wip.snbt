@@ -681,7 +681,7 @@
 				type: "command",
 				title: "RFTools Control Tutorial Link",
 				command: '/tellraw @p {"text":"RFTools Control Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=18-R5L-CATg&t=814s"}}',
-				player_command: true
+				player_command: false
 			}]
 		}
 	]
