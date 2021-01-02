@@ -126,6 +126,10 @@
 	wither = true
 	#Knockback enabled?
 	gust = true
+	#Crush enabled?
+	crush = true
+	#Cut enabled?
+	cut = true
 
 #Mana
 [mana]
@@ -324,6 +328,12 @@
 	#AOE cost
 	#Range: > -2147483648
 	aoe_cost = 35
+	#Crush cost
+	#Range: > -2147483648
+	crush_cost = 30
+	#Cut cost
+	#Range: > -2147483648
+	cut_cost = 0
 
 #Starting Spells
 ["Starter Spells"]
