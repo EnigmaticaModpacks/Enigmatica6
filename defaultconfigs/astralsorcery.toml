@@ -675,7 +675,7 @@
 
 	[registries.fluid_rarities]
 		#Defines fluid-rarities and amounts for the evershifting fountain's neromantic prime. The lower the relative rarity, the more rare the fluid. Format: <FluidName>;<guaranteedMbAmount>;<additionalRandomMbAmount>;<rarity>
-		fluid_rarities = ["minecraft:water;2147483647;2147483647;14000", "minecraft:lava;4000000;1000000;7500","immersivepetroleum:oil;2500000,1000000,5000","mekanismgenerators:flowing_fusion_fuel,1000000,500000,100","industrialforegoing:sewage_fluid,10000000,5000000,250","bloodmagic:life_essence_fluid_flowing,5000000,2500000,250","industrialforegoing:sludge_fluid,1000000,1000000,200","immersivepetroleum:napalm,500000,500000,100","industrialforegoing:essence_fluid,500000,100000,300"]
+		fluid_rarities = ["minecraft:water;2147483647;2147483647;14000", "minecraft:lava;4000000;1000000;7500","immersivepetroleum:oil;2500000,1000000,5000","mekanismgenerators:flowing_fusion_fuel,1000000,500000,100","industrialforegoing:sewage_fluid,10000000,5000000,250","bloodmagic:life_essence_fluid_flowing,5000000,2500000,250","industrialforegoing:sludge_fluid,1000000,1000000,200","immersivepetroleum:napalm,500000,500000,100","industrialforegoing:essence_fluid,500000,100000,300", "mekanism:flowing_heavy_water,10000000,2000000,2500"]
 
 	[registries.technical_entities]
 		#Defines entities whose purpose is mostly technical and less gameplay impactful. Those will be excluded from effects that manipulate entities. Add entities by their entity type name.Format: <EntityTypeName>
