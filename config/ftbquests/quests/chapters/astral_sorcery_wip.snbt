@@ -75,6 +75,7 @@
 			icon: "astralsorcery:ritual_pedestal",
 			x: 2.5d,
 			y: -4.0d,
+			subtitle: "I Rise With The Moon",
 			description: [
 				"“The Attuned Crystal slots into the altar with a satisfying clink and a subtle hum resonates through the ground.",
 				"",
@@ -83,7 +84,9 @@
 				"",
 				"The Ritual Altar is a powerful device capable of creating effects in a large area. For instance, all stone in the vicinity of a Mineralis ritual will spontaneously convert to random ores, and mob spawning will be halted by a Lucerna ritual.",
 				"",
-				"They may be further augmented by attuning the crystal a second time to a Faint constellation. Refer to the Astral Tome for more information on this process and the effects each constellation has. "
+				"They may be further augmented by attuning the crystal a second time to a Faint constellation. Refer to the Astral Tome for more information on this process and the effects each constellation has. ",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
 			dependencies: [I;2958],
 			id: 2928,
@@ -187,42 +190,176 @@
 			}]
 		},
 		{
+			icon: "astralsorcery:altar_attunement",
 			x: 7.0d,
 			y: -6.0d,
+			description: [
+				"The first upgrade to the crafting altar, be sure to use Astral Sorcery marble for the structure.",
+				"",
+				"Upgraded crafters are also capable of crafting everything that the previous tiers could craft.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			],
 			dependencies: [I;2926],
 			id: 2937,
-			tasks: [{
-				id: 2938,
-				type: "item",
-				item: "astralsorcery:altar_attunement"
-			}]
+			tasks: [
+				{
+					id: 2938,
+					type: "item",
+					item: "astralsorcery:altar_attunement"
+				},
+				{
+					id: 3119,
+					type: "item",
+					item: "astralsorcery:marble_pillar",
+					count: 8L
+				},
+				{
+					id: 3120,
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					count: 8L
+				},
+				{
+					id: 3121,
+					type: "item",
+					item: "astralsorcery:marble_bricks",
+					count: 24L
+				},
+				{
+					id: 3122,
+					type: "item",
+					item: "astralsorcery:marble_arch",
+					count: 28L
+				},
+				{
+					id: 3123,
+					type: "item",
+					item: "astralsorcery:black_marble_raw",
+					count: 21L
+				}
+			]
 		},
 		{
+			icon: "astralsorcery:altar_constellation",
 			x: 7.0d,
 			y: -4.5d,
+			description: [
+				"The next tier of crafting altar. Many of these resources may be re-used from the previous altar.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			],
 			dependencies: [I;2937],
 			id: 2939,
-			tasks: [{
-				id: 2940,
-				type: "item",
-				item: "astralsorcery:altar_constellation"
-			}]
+			tasks: [
+				{
+					id: 2940,
+					type: "item",
+					item: "astralsorcery:altar_constellation"
+				},
+				{
+					id: 3124,
+					type: "item",
+					item: "astralsorcery:marble_runed",
+					count: 4L
+				},
+				{
+					id: 3125,
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					count: 4L
+				},
+				{
+					id: 3126,
+					type: "item",
+					item: "astralsorcery:black_marble_raw",
+					count: 49L
+				},
+				{
+					id: 3127,
+					type: "item",
+					item: "astralsorcery:marble_raw",
+					count: 12L
+				},
+				{
+					id: 3128,
+					type: "item",
+					item: "astralsorcery:marble_pillar",
+					count: 8L
+				},
+				{
+					id: 3129,
+					type: "item",
+					item: "astralsorcery:marble_bricks",
+					count: 40L
+				}
+			]
 		},
 		{
+			icon: "astralsorcery:altar_radiance",
 			x: 7.0d,
 			y: -3.0d,
+			description: [
+				"The final upgrade to the crafting altar. This tier introduces a new mechanic for crafts whereby Astral Relays must be present on the Sooty Marble. The craft will ask for items to be inserted into these relays during the process.",
+				"",
+				"A properly attuned crystal is also required in the extra slot of the crafting table itself to align it to that constellation.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			],
 			dependencies: [I;2939],
 			id: 2941,
-			tasks: [{
-				id: 2942,
-				type: "item",
-				item: "astralsorcery:altar_radiance"
-			}]
+			tasks: [
+				{
+					id: 2942,
+					type: "item",
+					item: "astralsorcery:altar_radiance"
+				},
+				{
+					id: 3130,
+					type: "item",
+					item: "astralsorcery:marble_pillar",
+					count: 8L
+				},
+				{
+					id: 3131,
+					type: "item",
+					item: "astralsorcery:marble_chiseled",
+					count: 4L
+				},
+				{
+					id: 3132,
+					type: "item",
+					item: "astralsorcery:marble_bricks",
+					count: 68L
+				},
+				{
+					id: 3133,
+					type: "item",
+					item: "astralsorcery:marble_raw",
+					count: 12L
+				},
+				{
+					id: 3134,
+					type: "item",
+					item: "astralsorcery:black_marble_raw",
+					count: 49L
+				}
+			]
 		},
 		{
 			icon: "astralsorcery:spectral_relay",
-			x: 10.0d,
-			y: -8.5d,
+			x: 9.0d,
+			y: -7.5d,
+			description: [
+				"“Upon struggling to locate an appropriate starlight field anywhere near my basecamp, I have decided to take matters into my own hands. ",
+				"",
+				"Carving marble into the shapes found within these ancient temples has allowed me to create a focusing relay that gathers more starlight and sends it straight to the altar like some great parabolic dish.”",
+				"________________________________",
+				"",
+				"Placing one of these structures to each side of the altar is an excellent way to boost early starlight. Ideally, they should be spaced far apart to prevent interference between Relays.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			],
 			dependencies: [I;2975],
 			id: 2943,
 			tasks: [
@@ -335,7 +472,7 @@
 			x: 4.0d,
 			y: -4.5d,
 			description: [
-				"“I was sure she was dead. As I turned, I saw it floating there, a limp fluff ball hanging in the air as if held by the scruff of her neck. A breath. Two. Then her eyes opened, and I could see the entire night’s sky them.",
+				"“I was sure she was dead. As I turned, I saw her floating there, a limp fluff ball hanging in the air as if held by the scruff of her neck. A breath. Two. Then her eyes opened, and I could see the entire night’s sky them.",
 				"",
 				"Imagine my relief. But she seems changed somehow. Does the attunement field interact with living beings in the same way as the crystals? ",
 				"",
@@ -344,7 +481,9 @@
 				"",
 				"The Attunement Altar will attune both Crystals and you to a given constellation. Hold a constellation paper in one hand to see points of light mapping it out on the sooty marble of the altar. Placing relays at these points will set the constellation.",
 				"",
-				"Once attuned, a whole new talent tree will become available to you. Levels are earned by performing actions in line with the constellation, and points are assigned within the Astral Tome. Spend them wisely, for resetting them comes at a cost. "
+				"Once attuned, a whole new talent tree will become available to you. Levels are earned by performing actions in line with the constellation, and points are assigned within the Astral Tome. Spend them wisely, for resetting them comes at a cost. ",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
 			dependencies: [I;2954],
 			id: 2958,
@@ -359,6 +498,14 @@
 			x: 8.5d,
 			y: -9.5d,
 			subtitle: "Letting the Dust Settle",
+			description: [
+				"“By the night, never in my wildest dreams have I met such horrors. Note to self: Do not, under any circumstances, drop this blackened powder without extreme precautionary measures.”",
+				"________________________________",
+				"",
+				"Far from simple crafting requirements, Illumination and Nocturnal Powders are quite useful in their own right. The former will light up an area like a torch, while the latter will darken the area, forcing monsters to spawn there in large numbers.",
+				"",
+				"You have been warned."
+			],
 			dependencies: [I;2926],
 			id: 2965,
 			tasks: [
@@ -372,7 +519,12 @@
 					type: "item",
 					item: "astralsorcery:illumination_powder"
 				}
-			]
+			],
+			rewards: [{
+				id: 3118,
+				type: "item",
+				item: "astralsorcery:illuminator"
+			}]
 		},
 		{
 			title: "Enhanced Collector Crystals",
@@ -415,7 +567,19 @@
 				}
 			},
 			x: 1.0d,
-			y: -4.0d,
+			y: -4.5d,
+			description: [
+				"“Using the same principal as applied to the Relays early in my studies, I believe it may be possible to greatly enhance the starlight collected by these floating crystals. The materials and structure must fit the application, however.",
+				"",
+				"Perhaps the mirror-like surface of liquid starlight itself?”",
+				"________________________________",
+				"",
+				"Enhanced Collector Crystals can greatly enhance the power of a ritual. Be warned, however, that feeding too much starlight into a ritual can lead to the ritual’s crystal fracturing, dropping splinters into the world. ",
+				"",
+				"Certain attunements are more susceptible to this than others. ",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
+			],
 			dependencies: [I;
 				2928,
 				3021
@@ -425,7 +589,7 @@
 				{
 					id: 2969,
 					type: "item",
-					title: "Any astralsorcery:crystals/collector",
+					title: "Any Collector Crystal",
 					item: {
 						id: "itemfilters:tag",
 						Count: true,
@@ -468,7 +632,22 @@
 		{
 			x: 8.5d,
 			y: -8.5d,
+			description: [
+				"“The Elders of villages have at times been known to hold an odd trinket aloft that spins lightly to no visible force. They are only brought out to consult on auspicious occasions, such as seeking a new plot to lay their crops. ",
+				"",
+				"Of course, I am familiar with magnetism and these devices appear as no magnet I have ever known. ",
+				"",
+				"I have only had a close look at one on a single occasion, but my memory is clear. I believe I may be able to replicate it and see exactly what it is they’re allowing themselves to be guided by.”",
+				"_________________________________________________",
+				"",
+				"When held in hand, the Fosic Resonator serves to locate areas with a high starlight concentration. These areas are an excellent place to build crafting altars as they will grant a boost to the total starlight the altar receives. ",
+				"",
+				"Building the altar at higher elevations will also assist with starlight collection to a point. ",
+				"",
+				"Worry not, if an area with a high concentration cannot be found, it is more than possible to get enough starlight into an altar without these boosts. "
+			],
 			dependencies: [I;2926],
+			min_width: 300,
 			id: 2975,
 			tasks: [{
 				id: 2976,
@@ -483,17 +662,6 @@
 						}
 					}
 				}
-			}]
-		},
-		{
-			x: 10.0d,
-			y: -9.5d,
-			dependencies: [I;2965],
-			id: 2977,
-			tasks: [{
-				id: 2978,
-				type: "item",
-				item: "astralsorcery:illuminator"
 			}]
 		},
 		{
@@ -557,14 +725,16 @@
 		{
 			icon: "astralsorcery:infuser",
 			x: 8.5d,
-			y: -4.0d,
+			y: -3.5d,
 			description: [
-				"With a proper structure to gather and focus Starlight from a wider area into a single point, greater transmutations may begin. ",
-				"When directed at certain substances, the Starlight appears to infiltrate and change their nature entirely. In other cases, it efficiently draws out useful materials in larger quantities, such as metal from ore. ",
+				"“At long last, I believe I’ve discovered what that hermit was muttering about. An entry in a tome found recently has alluded to a process if Infusion with starlight that drastically transforms the object. ",
 				"",
-				"Right click an item into the Infuser and then right click again with a Resonating Wand to begin the craft. Each craft has a small chance of consuming Liquid Starlight. ",
+				"I shall have to ponder this discovery over another cup of tea.”",
+				"________________________________",
 				"",
-				"Building Gadget’s templates are available in the Instance folder to assist with building this multiblock."
+				"Right-Click an item into the Infuser and then Right-Click again with a Resonating Wand to begin the craft. Each craft has a small chance of consuming Liquid Starlight. ",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
 			dependencies: [I;2939],
 			id: 2983,
@@ -694,8 +864,12 @@
 		},
 		{
 			x: 8.5d,
-			y: -3.0d,
-			description: ["Placing a Containment Chalice filled with Starlight near a Starlight Infusion Altar will prevent the loss of Starlight sources blocks during crafting, instead causing a small amount to be drained from the Chalice itself. "],
+			y: -2.5d,
+			description: [
+				"Placing a Containment Chalice filled with Starlight near a Starlight Infusion Altar will prevent the loss of Starlight sources blocks during crafting, instead causing a small amount to be drained from the Chalice itself. ",
+				"",
+				"The Chalice can be accessed by pipes from the bottom."
+			],
 			dependencies: [I;2941],
 			id: 2997,
 			tasks: [{
@@ -708,6 +882,16 @@
 			title: "Ritual Anchor",
 			x: 1.5d,
 			y: -3.0d,
+			description: [
+				"“Furball’s mistrust of the Rituals has made working with them somewhat difficult. Fortunately, it seems I can move the effect rather effortlessly with a specially prepared anchor. ",
+				"",
+				"They put off a pleasant glow perfect for reading by as well and she has taken to curling up near it as I study.”",
+				"________________________________",
+				"",
+				"The Ritual Anchor is handy for moving the effect of a ritual to a place where the ritual wouldn't otherwise fit. They may be placed underground or otherwise out of view of the sky.",
+				"",
+				"Use a Linking Tool bind the Anchor above the ritual to the Anchor at the desired location. "
+			],
 			dependencies: [I;2928],
 			id: 2999,
 			tasks: [{
@@ -718,7 +902,7 @@
 			}]
 		},
 		{
-			x: 1.5d,
+			x: 0.5d,
 			y: -6.5d,
 			subtitle: "Unprecedented Clarity",
 			description: [
@@ -745,7 +929,7 @@
 		},
 		{
 			title: "Colored Lenses",
-			x: 0.5d,
+			x: -0.5d,
 			y: -5.5d,
 			description: [
 				"The focused beams of Starlight passing through Crystal Lenses may be forced to shift aspects with the use of colored lenses. Right-click the colored lens onto a Crystal Lens to apply it.",
@@ -765,38 +949,31 @@
 			dependencies: [I;3005],
 			min_width: 250,
 			id: 3015,
-			tasks: [
-				{
-					id: 3016,
-					type: "item",
-					item: "astralsorcery:colored_lens_regeneration"
-				},
-				{
-					id: 3043,
-					type: "item",
-					item: "astralsorcery:colored_lens_damage"
-				},
-				{
-					id: 3044,
-					type: "item",
-					item: "astralsorcery:colored_lens_growth"
-				},
-				{
-					id: 3045,
-					type: "item",
-					item: "astralsorcery:colored_lens_push"
-				},
-				{
-					id: 3046,
-					type: "item",
-					item: "astralsorcery:colored_lens_fire"
+			tasks: [{
+				id: 3016,
+				type: "item",
+				title: "Any astralsorcery:colored_lens",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "astralsorcery:colored_lens"
+					}
 				}
-			]
+			}]
 		},
 		{
 			title: "Collector Crystals",
 			x: 1.5d,
-			y: -5.0d,
+			y: -5.5d,
+			description: [
+				"“It is time I move on from this floating crystal. Useful as it has been, it is proving to be the limiting factor in further experimentation. After many hours of careful study of its structure, I do believe I know how to proceed.”",
+				"________________________________",
+				"",
+				"As of this writing, no recipe displays in JEI for crafting a Collector Crystal. Refer to the Astral Tome for guidance.",
+				"",
+				"Take great care in crafting these crystals to get the most out of your efforts. It is likely not worth using anything less than a Celestial Crystal for the task."
+			],
 			dependencies: [I;3005],
 			id: 3021,
 			tasks: [{
@@ -890,6 +1067,8 @@
 				"",
 				"Splitting is performed with the Cutting Tool, and as previously noted, it may result in the loss of attributes. To reduce the risk of losing an attribute entirely, try soaking the Crystal in Starlight first to increase its Size.",
 				"",
+				"Fortune and Unbreaking on the Cutting Tool are both highly beneficial during this process.",
+				"",
 				"Once the desired attributes have been isolated, they may be combined by dropping two crystals into a pool of Starlight and allowing them to absorb the liquid entirely. ",
 				"",
 				"This is also not a guaranteed process and is more likely to fail the more attributes already exist on the crystals. ",
@@ -919,15 +1098,24 @@
 					astralsorcery: {}
 				}
 			},
-			x: 8.5d,
+			x: 4.0d,
 			y: -6.0d,
+			subtitle: "Unpleasantly Like Being Drunk",
 			description: [
-				"This Starlight of the ancients appears to have deeply transformative powers on the physical world, reconstructing material into more useful forms. ",
-				"Indeed, this power may even be harnessed to transfer entire beings from one place to another in a process that feels quite like being drunk.",
+				"“Of late, this ball of fur has taken it upon herself to attempt to feed me. It must think me completely inept at caring for myself.",
 				"",
-				"Build two or more of these structures to begin creating a network of gates. These have no distance limitations and work cross dimensionally."
+				"It did come as somewhat of a surprise today, however, when she gifted me with a dead toad. There are no such species for several days walk. She is quick, but not that quick. ",
+				"",
+				"I took it upon myself to keep a close eye on her for several days, and indeed upon skipping several meals she wandered off to a nearby pedestal and vanished. ",
+				"",
+				"Following her through the gateway revealed the source of her toads…a swamp overflowing with them.”",
+				"________________________________",
+				"",
+				"Build two or more of these structures to begin creating a network of gates. These have no distance limitations and work cross dimensionally.",
+				"",
+				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2937],
+			dependencies: [I;2954],
 			id: 3027,
 			tasks: [
 				{
@@ -980,20 +1168,42 @@
 		},
 		{
 			x: 8.5d,
-			y: -5.0d,
+			y: -5.5d,
+			description: [
+				"“The powers bound to each constellation appear to have close affinities to traditional enchantments, leading me to wonder where the true source of power lies with said enchantments. Somewhere in the heavens?",
+				"",
+				"Nonetheless, my experiments with etching carefully prepared glass panes are beginning to bear fruit. These panes give some semblance of control over the outcome as compared to the enchanting tables favored by villagers.”",
+				"________________________________",
+				"",
+				"The bonuses granted by directly enchanting gear in the Stellar Refraction Table extend beyond simple enchantments, offering increased damage, armor, or a host of other effects.",
+				"",
+				"The Astral Tome will give a brief overview of what enchants to expect from each constellation.  Experimentation is highly encouraged."
+			],
 			dependencies: [I;2939],
 			id: 3029,
 			tasks: [{
 				id: 3030,
 				type: "item",
 				item: "astralsorcery:refraction_table"
+			}],
+			rewards: [{
+				id: 3117,
+				type: "item",
+				item: {
+					id: "astralsorcery:infused_glass",
+					Count: true,
+					tag: {
+						astralsorcery: {},
+						Damage: 0
+					}
+				}
 			}]
 		},
 		{
-			x: 0.5d,
+			x: -0.5d,
 			y: -6.5d,
 			description: [
-				"A single beam is not always sufficient, and while a Collector Crystal may be bound to multiple lenses, sometimes the actual split is not desired at the source. Instead, a Crystal Prism may be used to split a Starlight beam to multiple destinations. ",
+				"Like Crystal Lenses, Crystal Prisms can extend the range of a beam of starlight. They also allow the beam to be dispersed across multiple blocks, which can be quite handy for certain applications, such as growing crops. ",
 				"",
 				"Crystal Prisms may also be modified with Colored Lenses. For instance, a single Prism with a Growth Len could speed up multiple crops at once.  "
 			],
@@ -1030,6 +1240,11 @@
 			x: 4.0d,
 			y: -3.0d,
 			description: [
+				"“My haste in following Furball into the Attunement Altar has left the harsh light of Discidia focused on me, which I find quite… unnerving. Furball seems to have taken to it quite well, however, and feasts on the local rat population.",
+				"",
+				"Perhaps the light of Aevitas would suit my nature better… as soon as the constellation rises, I shall experiment with a shift in attunement.”",
+				"________________________________",
+				"",
 				"Chosen poorly? Wish to begin again with your attunement? ",
 				"",
 				"The Shifting Star will reset the attunement completely, abandoning all progress and losing all levels. ",
@@ -1047,6 +1262,16 @@
 		{
 			x: 3.0d,
 			y: -2.0d,
+			description: [
+				"“My studies have brought me to the point of crafting a pretty bauble, which by all indications should enhance traditional enchantments by focusing starlight into them. ",
+				"",
+				"The process appears delicate, however. I believe it would be prudent to distract Furball with some music while I work.”",
+				"________________________________",
+				"",
+				"Each Resplendent Prism will choose a random selection of enchants to either imbue or enhance on equipped gear. Should the Prism end up with enchants that are less desirable, it may be re-rolled at a fraction of the cost of making a new one.",
+				"",
+				"Did you know? Cats love to jam. Go ahead, let Furball get her jam on!"
+			],
 			dependencies: [I;3108],
 			id: 3110,
 			tasks: [{
@@ -1059,9 +1284,22 @@
 						astralsorcery: {}
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3115,
+					type: "item",
+					item: "minecraft:jukebox"
+				},
+				{
+					id: 3116,
+					type: "item",
+					item: "minecraft:music_disc_pigstep"
+				}
+			]
 		},
 		{
+			title: "Irradiant Star",
 			x: 5.0d,
 			y: -2.0d,
 			description: [
@@ -1072,16 +1310,9 @@
 			dependencies: [I;3108],
 			id: 3112,
 			tasks: [{
-				id: 3113,
+				id: 3114,
 				type: "item",
-				title: "Any astralsorcery:stars/shifting",
-				item: {
-					id: "itemfilters:tag",
-					Count: true,
-					tag: {
-						value: "astralsorcery:stars/shifting"
-					}
-				}
+				item: "astralsorcery:shifting_star_aevitas"
 			}]
 		}
 	]

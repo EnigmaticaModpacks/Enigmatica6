@@ -1,0 +1,19 @@
+{
+	id: 3135,
+	filename: "create",
+	order_index: 30,
+	title: "Create",
+	icon: "create:cogwheel",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [{
+		x: 1.0d,
+		y: 0.5d,
+		id: 3136,
+		tasks: [{
+			id: 3137,
+			type: "checkmark",
+			title: "Create"
+		}]
+	}]
+}
