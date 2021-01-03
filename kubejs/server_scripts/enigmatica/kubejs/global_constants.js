@@ -7,6 +7,10 @@ const disabledItems = [
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
 
+    'bloodmagic:sand_netherite',
+    'bloodmagic:gravel_netherite_scrap',
+    'bloodmagic:fragment_netherite_scrap',
+
     'byg:ametrine_block',
     'byg:ametrine_boots',
     'byg:ametrine_chestplate',
@@ -91,7 +95,9 @@ const materialsToUnify = [
     'arcane',
     'mana',
     'certus_quartz',
-    'charged_certus_quartz'
+    'charged_certus_quartz',
+    'iesnium',
+    'dimensional'
 ];
 
 global.materialsToUnify = materialsToUnify;

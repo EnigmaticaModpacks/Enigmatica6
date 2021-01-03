@@ -1,7 +1,7 @@
 {
 	id: 366,
 	filename: "powah",
-	order_index: 12,
+	order_index: 11,
 	title: "Powah!",
 	icon: "powah:dielectric_casing",
 	default_quest_shape: "",
@@ -17,7 +17,9 @@
 				"We will cover most of what the mod has to offer: from the very basics of power generation to multiblock reactors and wireless power! ",
 				"",
 				"Besides this questline, your best friend when navigating the mod is the Powah Manual. Feel free to consult it every time you find yourself lost or are looking for more information on something.",
-				"Now then, let’s get started, shall we?"
+				"Now then, let’s get started, shall we?",
+				"",
+				"~Merlo"
 			],
 			id: 367,
 			tasks: [{
@@ -59,8 +61,11 @@
 			}],
 			rewards: [{
 				id: 662,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -133,8 +138,11 @@
 				},
 				{
 					id: 648,
-					type: "random",
-					table: 50
+					type: "command",
+					title: "Powah Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+					player_command: false
 				}
 			]
 		},
@@ -165,8 +173,11 @@
 			}],
 			rewards: [{
 				id: 649,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -230,8 +241,11 @@
 				},
 				{
 					id: 1613,
-					type: "loot",
-					table: 50
+					type: "command",
+					title: "Powah Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+					player_command: false
 				}
 			]
 		},
@@ -267,8 +281,11 @@
 				},
 				{
 					id: 650,
-					type: "random",
-					table: 50
+					type: "command",
+					title: "Powah Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+					player_command: false
 				}
 			]
 		},
@@ -289,8 +306,11 @@
 			}],
 			rewards: [{
 				id: 1612,
-				type: "loot",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -458,8 +478,11 @@
 			}],
 			rewards: [{
 				id: 654,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -479,6 +502,7 @@
 				"You can keep stacking these cells and keep upgrading your channel. Once you store energy in that channel, you will be able to use it wherever you have an Ender Cell, making it easy to move power across very long distances."
 			],
 			dependencies: [I;398],
+			min_width: 300,
 			id: 400,
 			tasks: [{
 				id: 401,
@@ -534,8 +558,11 @@
 			],
 			rewards: [{
 				id: 655,
-				type: "random",
-				table: 17
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -588,8 +615,11 @@
 			}],
 			rewards: [{
 				id: 656,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -715,8 +745,11 @@
 				},
 				{
 					id: 660,
-					type: "random",
-					table: 50
+					type: "command",
+					title: "Powah Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+					player_command: false
 				}
 			]
 		},
@@ -742,8 +775,11 @@
 			}],
 			rewards: [{
 				id: 657,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -764,8 +800,11 @@
 			}],
 			rewards: [{
 				id: 658,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -786,8 +825,11 @@
 			}],
 			rewards: [{
 				id: 659,
-				type: "random",
-				table: 50
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -839,13 +881,16 @@
 					type: "command",
 					title: "Show off your progress!",
 					icon: "powah:ender_core",
-					command: "/say I have completed Powah's final crafting challenge! I bet you can't!",
-					player_command: true
+					command: "/say @p has completed Powah's final crafting challenge! I bet you can't!",
+					player_command: false
 				},
 				{
 					id: 661,
-					type: "random",
-					table: 50
+					type: "command",
+					title: "Powah Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+					player_command: false
 				}
 			]
 		},
@@ -891,13 +936,16 @@
 						tag: {}
 					},
 					auto: "enabled",
-					command: "/say I have completed Powah's Ultimate Power Quest! Woot!",
+					command: "/say I completed Powah's Ultimate Power Quest! Woot!",
 					player_command: true
 				},
 				{
 					id: 1611,
-					type: "loot",
-					table: 50
+					type: "command",
+					title: "Powah Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+					player_command: false
 				}
 			]
 		}

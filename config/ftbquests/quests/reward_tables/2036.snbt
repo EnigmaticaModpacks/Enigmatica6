@@ -1,6 +1,12 @@
 {
 	id: 2036,
-	title: "Placeholder Loot Box",
+	title: "RFTools Loot Box",
+	icon: "kubejs:rare_lootbox",
 	loot_size: 1,
-	rewards: []
+	hide_tooltip: true,
+	use_title: true,
+	rewards: [{
+		item: "minecraft:redstone",
+		count: 32
+	}]
 }

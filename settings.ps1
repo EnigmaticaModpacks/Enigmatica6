@@ -15,12 +15,15 @@ $CONFIGS_TO_REMOVE = @(
 	# "defaultoptions/options.txt",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
+	"abnormals_core-client.toml",
+	"ambientsounds-client.json",	
 	"astralsorcery-client.toml",
-	"ambientsounds-client.json",
 	"betteradvancements-client.toml",
+	"cagedmobs-client.toml",
 	"chiselsandbits-client.toml",
 	"craftingtweaks-client.toml",
 	"create-client.toml",
+	"eidolon-client.toml",
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
@@ -34,6 +37,8 @@ $CONFIGS_TO_REMOVE = @(
 	"rftoolscontrol-client.toml",
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",
+	"sophisticatedbackpacks-client.toml",
+	"thermal-client.toml",
 	"xnet-client.toml"
 )
 	
@@ -51,12 +56,12 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.3.2"
+$MODPACK_VERSION = "0.3.3"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.3.1"
+$LAST_MODPACK_VERSION = "0.3.2"
 
-$FORGE_VERSION = 35.1.13
+$FORGE_VERSION = 35.1.29
 
 $CLIENT_FILENAME = "Enigmatica6"
 
@@ -72,7 +77,7 @@ $GAME_VERSIONS = @(8134) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 
 $CLIENT_CHANGELOG_TYPE = "markdown"
 
 $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
-"Using Forge-1.16.4-35.1.13 <br /> <br /> " +
+"Using Forge-1.16.4-35.1.29 <br /> <br /> " +
 "The Changelog is currently being written, it should be done within 10 minutes. "
 
 

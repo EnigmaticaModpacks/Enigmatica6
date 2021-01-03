@@ -1,0 +1,42 @@
+
+#General Settings
+[general]
+	#Enables the dungeon crawl tools.
+	enable_tools = false
+	#This option will make pre-2.0.0 worlds playable with version 2.0.0 and later.
+	enable_dummy_pieces = false
+	#Enables extended debug logging to help detecting potential errors. This is enabled by default.
+	extended_debug = false
+
+#Dungeon Settings
+[dungeon]
+	#If you dont like the fact that the dungeons contain lots of mob spawners, set this to true! Mobs will get spawned manually during the dungeon generation then. Note that this is a lot more performance demanding than enabling spawners. (Which also depends on the mob spawn rate)
+	no_spawners = false
+	#Set this to true if you want to prevent that the last layer of each dungeon will contain nether content.
+	no_nether_stuff = false
+	#This value defines how many mobs do get spawned manually during the generation. (if no_spawners = true, there is no effect otherwise)
+	#Range: 0.001 ~ 1.0
+	mob_spawn_rate = 0.05
+	#The number of different entities per spawner. Increasing the number increases the diversity of the monster equipment.
+	#Range: 1 ~ 128
+	spawner_entities = 6
+	#If set to true, the dungeon generation will ignore the biome blacklist and generate dungeons in any overworld biome.
+	ignore_overworld_blacklist = false
+	#The Probability of a spawner entity having a shield in the offhand.
+	#Range: 0.01 ~ 1.0
+	shield_probability = 0.25
+	#Determines if vanilla spawners or modified spawners with armor, weapons etc... should be used.
+	use_vanilla_spawners = false
+	#Whether mobs from spawners should despawn naturally or not.
+	natural_despawn = true
+
+#World Generation Settings
+[world_generation]
+	#The probability of a dungeon getting generated on each fitting chunk.
+	#Range: 1.0E-4 ~ 1.0
+	dungeon_probability = 0.22
+	#If this is set to false, no dungeons can be generated outside the overworld.
+	ignore_dimension = false
+	#Makes the entire dungeon solid, preventing caves, ravines, etc... from interfering with the dungeon.
+	solid = false
+

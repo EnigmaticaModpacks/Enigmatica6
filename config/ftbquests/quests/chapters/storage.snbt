@@ -1,7 +1,7 @@
 {
 	id: 683,
 	filename: "storage",
-	order_index: 9,
+	order_index: 8,
 	title: "Storage",
 	icon: "minecraft:chest",
 	default_quest_shape: "",
@@ -61,8 +61,11 @@
 				},
 				{
 					id: 2665,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -71,7 +74,7 @@
 			x: 1.5d,
 			y: -5.0d,
 			description: [
-				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand it's capabilities. ",
+				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. ",
 				"",
 				"Proceed to the Refined Storage quests for more help in getting started with this expansive mod."
 			],
@@ -111,8 +114,11 @@
 			}],
 			rewards: [{
 				id: 2667,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -131,13 +137,19 @@
 			rewards: [
 				{
 					id: 2652,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				},
 				{
 					id: 2668,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -163,8 +175,11 @@
 			}],
 			rewards: [{
 				id: 1692,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -181,8 +196,11 @@
 			}],
 			rewards: [{
 				id: 2654,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -203,8 +221,11 @@
 			}],
 			rewards: [{
 				id: 2653,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -245,8 +266,11 @@
 			}],
 			rewards: [{
 				id: 2659,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -356,8 +380,11 @@
 			}],
 			rewards: [{
 				id: 2660,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -389,8 +416,11 @@
 			}],
 			rewards: [{
 				id: 2651,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -444,8 +474,11 @@
 			}],
 			rewards: [{
 				id: 2655,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -480,8 +513,11 @@
 			],
 			rewards: [{
 				id: 2664,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -512,8 +548,11 @@
 			],
 			rewards: [{
 				id: 2424,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -533,8 +572,11 @@
 			}],
 			rewards: [{
 				id: 2657,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -566,8 +608,11 @@
 			],
 			rewards: [{
 				id: 2656,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -615,8 +660,11 @@
 			}],
 			rewards: [{
 				id: 2658,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -671,8 +719,11 @@
 			}],
 			rewards: [{
 				id: 2649,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -683,7 +734,7 @@
 				"",
 				"Working with the Crafting Module will require a few pieces, however.",
 				"",
-				"First, the machine in question must be connected to the pipe network on it's Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section.",
+				"First, the machine in question must be connected to the pipe network on its Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section.",
 				"",
 				"Next, a recipe needs to be set in the Module. Only one recipe may be set per module, but up to three modules may be inserted into a single pipe. Inputs go in the top half of the module, and the expected outputs go in the bottom.",
 				"",
@@ -781,8 +832,11 @@
 			}],
 			rewards: [{
 				id: 2474,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -798,8 +852,11 @@
 			}],
 			rewards: [{
 				id: 2650,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -828,8 +885,11 @@
 				},
 				{
 					id: 2661,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -845,8 +905,11 @@
 			}],
 			rewards: [{
 				id: 2457,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -861,8 +924,11 @@
 			}],
 			rewards: [{
 				id: 2662,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -877,8 +943,11 @@
 			}],
 			rewards: [{
 				id: 2663,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -894,8 +963,11 @@
 			}],
 			rewards: [{
 				id: 2640,
-				type: "loot",
-				table: 13
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -920,8 +992,11 @@
 				},
 				{
 					id: 2666,
-					type: "loot",
-					table: 22
+					type: "command",
+					title: "Alchemist's Delight",
+					icon: "kubejs:alchemists_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+					player_command: false
 				}
 			]
 		},
@@ -938,8 +1013,11 @@
 			}],
 			rewards: [{
 				id: 2461,
-				type: "loot",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -956,8 +1034,11 @@
 			}],
 			rewards: [{
 				id: 2641,
-				type: "loot",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		}
 	]

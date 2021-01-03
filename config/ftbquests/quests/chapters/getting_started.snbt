@@ -1,7 +1,7 @@
 {
 	id: 68,
 	filename: "getting_started",
-	order_index: 8,
+	order_index: 7,
 	title: "Getting Started",
 	icon: "minecraft:nether_star",
 	default_quest_shape: "",
@@ -33,8 +33,11 @@
 			}],
 			rewards: [{
 				id: 2707,
-				type: "random",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{

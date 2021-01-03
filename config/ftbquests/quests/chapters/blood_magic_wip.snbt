@@ -1,7 +1,7 @@
 {
 	id: 2197,
 	filename: "blood_magic_wip",
-	order_index: 23,
+	order_index: 24,
 	title: "Blood Magic",
 	icon: "bloodmagic:weakbloodshard",
 	default_quest_shape: "",
@@ -95,8 +95,11 @@
 				},
 				{
 					id: 2684,
-					type: "loot",
-					table: 13
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -137,8 +140,11 @@
 				},
 				{
 					id: 2242,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -176,7 +182,7 @@
 			y: 6.0d,
 			subtitle: "Stormbringer",
 			description: [
-				"The Sentient Sword, infused with Demonic Will, is as much 'alive' as the one who wields it. It hungers for more power and seeks out it's own, drawing Demonic Will from slain enemies without the need for a Soul Snare. ",
+				"The Sentient Sword, infused with Demonic Will, is as much 'alive' as the one who wields it. It hungers for more power and seeks out its own, drawing Demonic Will from slain enemies without the need for a Soul Snare. ",
 				"",
 				"As the amount of Will in a held Tartaric Gem increases, so too does the power of the tool. "
 			],
@@ -241,8 +247,11 @@
 			}],
 			rewards: [{
 				id: 2479,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -250,7 +259,7 @@
 			y: 4.5d,
 			subtitle: "A Dark Flame from a World of Darkness",
 			description: [
-				"This lumpy crystallized mess is a little less useful than one might have hoped. Perhaps with a little refinement it can be used to imbue other objects with it's power?",
+				"This lumpy crystallized mess is a little less useful than one might have hoped. Perhaps with a little refinement it can be used to imbue other objects with its power?",
 				"",
 				"Build a Hellfire Forge and place the Demonic Will in the right hand slot. The other reagents will go around the edges of the circle, while the resulting item will appear in the center circle.",
 				"",
@@ -265,8 +274,11 @@
 			}],
 			rewards: [{
 				id: 2480,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -358,7 +370,7 @@
 			y: 4.5d,
 			subtitle: "A Step Above",
 			description: [
-				"With a few slates to craft into Blank Runes, the Altar can be augmented, increasing it's capacity, transmutational abilities, and even allowing for specializations. ",
+				"With a few slates to craft into Blank Runes, the Altar can be augmented, increasing its capacity, transmutational abilities, and even allowing for specializations. ",
 				"",
 				"To upgrade to a Tier 2 Altar, 8 Runes of any type are required. The Sanguine Scietiem shows the exact structure required. Use the provided Speed runes to fill out the structure and give it a little kick. ",
 				"",
@@ -437,8 +449,11 @@
 			}],
 			rewards: [{
 				id: 2487,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -461,8 +476,11 @@
 			}],
 			rewards: [{
 				id: 2489,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -497,8 +515,11 @@
 			],
 			rewards: [{
 				id: 2486,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -520,8 +541,11 @@
 			}],
 			rewards: [{
 				id: 2485,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -595,8 +619,11 @@
 			],
 			rewards: [{
 				id: 2490,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -646,13 +673,15 @@
 			tasks: [{
 				id: 2292,
 				type: "item",
-				item: "bloodmagic:demoncrystallizer",
-				count: 4L
+				item: "bloodmagic:demoncrystallizer"
 			}],
 			rewards: [{
 				id: 2482,
-				type: "loot",
-				table: 20
+				type: "command",
+				title: "Rare Blood Magic Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -679,8 +708,11 @@
 			}],
 			rewards: [{
 				id: 2488,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -694,7 +726,7 @@
 				"",
 				"Prepare another Demon Crystallizer and construct the Resonance of the Faceted Crystal ritual. Place the Crystallizer atop the Master Ritual Stone and begin pouring Will into the chunk by way of a Crucible.",
 				"",
-				"Eventually, another crystal will form here within the bounds of the ritual. Once it has fully grown, the ritual will fragment it into it's elemental essences, growing four new crystal types around it which may be harvested in the same way as the previous Demonic Will Crystals. "
+				"Eventually, another crystal will form here within the bounds of the ritual. Once it has fully grown, the ritual will fragment it into its elemental essences, growing four new crystal types around it which may be harvested in the same way as the previous Demonic Will Crystals. "
 			],
 			dependencies: [I;2291],
 			id: 2298,
@@ -735,9 +767,9 @@
 				"",
 				"Next, burn a few of a single type of Will in a Crucible in a chunk without any Will present. ",
 				"",
-				"Finally, place a Hellfire Forge in this chunk and use it to re-absorb the Will into the Tartaric Gem. It's color will change to match the color of the Will that was absorbed.",
+				"Finally, place a Hellfire Forge in this chunk and use it to re-absorb the Will into the Tartaric Gem. Its color will change to match the color of the Will that was absorbed.",
 				"",
-				"With this specialized Tartaric Gem in your inventory, right clicking with any Sentient Tool will shift it's attunement to that of the Tartaric Gem, thus granting that tools the abilities of the Will Type. ",
+				"With this specialized Tartaric Gem in your inventory, right clicking with any Sentient Tool will shift its attunement to that of the Tartaric Gem, thus granting that tools the abilities of the Will Type. ",
 				"",
 				"Beyond this, however, these new Demonic Wills open up entirely new avenues by way of Augmenting Rituals. Refer to the Ritual Diviner for more information on how each Will type effects each ritual. "
 			],
@@ -768,8 +800,11 @@
 			],
 			rewards: [{
 				id: 2483,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -777,7 +812,7 @@
 			y: 9.5d,
 			subtitle: "Now You're Thinking With Rituals",
 			description: [
-				"Setting the type of Will associated to a Ritual is performed with a Ritual Tinkerer. Sneak + Right Click the air to cycle it's mode to Set Will Consumed. Place the desired Will Crystals on your hotbar (more than one is allowed) and Right Click the Master Ritual Stone of an active Ritual to set those types. ",
+				"Setting the type of Will associated to a Ritual is performed with a Ritual Tinkerer. Sneak + Right Click the air to cycle its mode to Set Will Consumed. Place the desired Will Crystals on your hotbar (more than one is allowed) and Right Click the Master Ritual Stone of an active Ritual to set those types. ",
 				"",
 				"Feeding the Ritual the appropriate Will types is as simple as burning those crystals in a Hellfire Forge in the same Chunk. Of course, arranging for that to happen automatically is a whole other challenge. "
 			],
@@ -790,8 +825,11 @@
 			}],
 			rewards: [{
 				id: 2484,
-				type: "loot",
-				table: 21
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -815,13 +853,19 @@
 			rewards: [
 				{
 					id: 2491,
-					type: "loot",
-					table: 20
+					type: "command",
+					title: "Rare Blood Magic Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+					player_command: false
 				},
 				{
 					id: 2685,
-					type: "loot",
-					table: 22
+					type: "command",
+					title: "Alchemist's Delight",
+					icon: "kubejs:alchemists_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+					player_command: false
 				}
 			]
 		},
@@ -833,7 +877,7 @@
 			description: [
 				"The Incense Altar serves to help calm and center a Sanguimancer prior to using the Sacrificial Knife for self-sacrifice. Standing near the altar will cause the knife to glow. It may then be used to draw a larger portion of health instantly, filling the Blood Alter with an equivalent amount of LP. ",
 				"",
-				"Refer to the Sanguine Scientem for more information on expanding the Incense Altar, increasing it's effect. "
+				"Refer to the Sanguine Scientem for more information on expanding the Incense Altar, increasing its effect. "
 			],
 			dependencies: [I;2207],
 			id: 2318,

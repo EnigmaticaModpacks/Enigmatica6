@@ -5,5 +5,6 @@ events.listen('item.tags', function (event) {
         .add('tetra:modular_shield')
         .add('tetra:modular_single')
         .add('tetra:modular_sword')
+        .add('tetra:modular_crossbow')
         .add('tetra:modular_bow');
 });

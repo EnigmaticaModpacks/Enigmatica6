@@ -54,7 +54,7 @@ events.listen('recipes', function (event) {
     }
 
     // Replaces recipes not using forge:dyes tag for inputs
-    colors.forEach(function (color) {
+    colors.forEach((color) => {
         event.replaceInput({}, 'minecraft:' + color + '_dye', '#forge:dyes/' + color);
     });
 
@@ -71,6 +71,8 @@ events.listen('recipes', function (event) {
 
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
 
+    event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
+
     event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
     event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
 
@@ -86,6 +88,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+
+    event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
 
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
     event.replaceInput({ id: 'mcwbridges:iron_platform' }, '#forge:ingots/iron', 'additionalbars:horizontal_iron_bars');
@@ -313,4 +317,14 @@ events.listen('recipes', function (event) {
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
+
+    ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
+        event.replaceInput({}, tallow, '#forge:tallow');
+    });
+
+    event.replaceInput(
+        { id: 'dustrial_decor:iron_bar_trapdoor' },
+        'minecraft:iron_bars',
+        'dustrial_decor:barbed_iron_bars'
+    );
 });

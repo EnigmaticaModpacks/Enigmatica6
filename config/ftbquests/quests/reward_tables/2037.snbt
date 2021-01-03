@@ -1,6 +1,42 @@
 {
 	id: 2037,
-	title: "Placeholder Loot Box",
+	title: "Astral Rare Loot Export",
 	loot_size: 1,
-	rewards: []
+	rewards: [
+		{
+			item: "astralsorcery:glow_flower",
+			count: 16
+		},
+		{
+			item: "astralsorcery:aquamarine_sand_ore",
+			count: 16
+		},
+		{
+			item: "astralsorcery:glass_lens",
+			count: 4
+		},
+		{
+			item: "astralsorcery:rock_crystal_ore",
+			count: 2
+		},
+		{
+			item: "astralsorcery:black_marble_raw",
+			count: 16
+		},
+		{
+			item: "astralsorcery:starmetal"
+		},
+		{
+			item: "astralsorcery:illumination_powder",
+			count: 16
+		},
+		{
+			item: "astralsorcery:infused_wood",
+			count: 16
+		},
+		{
+			item: "astralsorcery:parchment",
+			count: 8
+		}
+	]
 }

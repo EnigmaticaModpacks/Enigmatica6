@@ -1,35 +1,57 @@
 {
-    "flower": "ALL",
-    "maxTimeInHive": 3200,
-    "hasHoneycomb": true,
-    "ColorData": {
-        "isBeeColored": true,
-        "honeycombColor": "#18eb09",
-        "primaryColor": "#18eb09",
-        "secondaryColor": "#303030"
-    },
-    "MutationData": {
-        "hasMutation": true,
-        "mutationInput": "minecraft:stone",
-        "mutationOutput": "minecraft:lava",
-        "mutationType": "BLOCK_TO_FLUID"
-    },
-    "CentrifugeData": {
-        "hasCentrifugeOutput": true,
-        "mainOutput": "minecraft:emerald",
-        "mainoutputweight": 0.1,
-        "mainOutputCount": 1
-    },
-    "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:mountain, hills"
-    },
-    "BreedData": {
-        "isBreedable": true,
-        "parent1": "diamond",
-        "parent2": "blaze",
-        "feedItem": "minecraft:emerald_block",
-        "feedAmount": 2
-    },
-    "TraitData": {}
+  "flower": "ALL",
+  "maxTimeInHive": 3200,
+  "sizeModifier": 1,
+  "hasHoneycomb": true,
+  "apiaryOutputAmounts": [3, 6, 1, 2],
+  "baseLayerTexture": "ores/emerald/emerald_bee",
+  "ColorData": {
+    "honeycombColor": "#18eb09",
+    "isBeeColored": false,
+    "isRainbowBee": false,
+    "isGlowing": false,
+    "isEnchanted": false,
+    "modelType": "ORE"
+  },
+  "CombatData": {
+    "isPassive": false,
+    "removeStingerOnAttack": true,
+    "inflictsPoison": true,
+    "attackDamage": 1
+  },
+  "MutationData": {
+    "hasMutation": true,
+    "mutationInput": "tag:forge:stone",
+    "mutationOutput": "emendatusenigmatica:emerald_ore",
+    "mutationType": "BLOCK_TO_BLOCK",
+    "mutationCount": 1
+  },
+  "CentrifugeData": {
+    "hasCentrifugeOutput": true,
+    "mainOutput": "minecraft:emerald",
+    "mainOutputWeight": 0.02,
+    "mainOutputCount": 1,
+    "mainInputCount": 1
+  },
+  "SpawnData": {
+    "canSpawnInWorld": true,
+    "biomeWhitelist": "tag:OVERWORLD",
+    "biomeBlacklist": "tag:OCEAN",
+    "minGroupSize": 0,
+    "maxGroupSize": 1,
+    "spawnWeight": 2,
+    "lightLevel": "DAY"
+  },
+  "BreedData": {
+    "isBreedable": true,
+    "parent1": "redstone",
+    "parent2": "iron",
+    "feedItem": "tag:forge:storage_blocks/emerald",
+    "feedAmount": 8,
+    "childGrowthDelay": -24000,
+    "breedDelay": 6000
+  },
+  "TraitData": {
+    "hasTraits": false
+  }
 }

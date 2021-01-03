@@ -1,13 +1,23 @@
 {
-    "flower": "all",
-    "hasHoneycomb": false,
+    "flower": "ALL",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
-    "maxTimeInHive": 1200,
+    "baseLayerTexture": "other/icy",
     "ColorData": {
-        "isBeeColored": true,
         "honeycombColor": "#92b9fe",
-        "primaryColor": "#92b9fe",
-        "secondaryColor": "#303030"
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
     },
     "MutationData": {
         "hasMutation": true,
@@ -17,19 +27,26 @@
         "mutationCount": 20
     },
     "CentrifugeData": {
-        "hasCentrifugeOutput": false
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:snowball",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 4,
+        "mainInputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:cold",
-        "spawnWeight": 4,
-        "maxGroupSize": 1,
-        "minGroupSize": 1
+        "biomeWhitelist": "tag:COLD",
+        "biomeBlacklist": "tag:HOT,NETHER,END",
+        "minGroupSize": 2,
+        "maxGroupSize": 4,
+        "spawnWeight": 4
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "minecraft:snowball",
-        "feedAmount": 16
+        "feedItem": "minecraft:snow_block",
+        "feedAmount": 2,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
     },
     "TraitData": {
         "hasTraits": true

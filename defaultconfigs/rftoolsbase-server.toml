@@ -21,7 +21,7 @@
 	[worldgen.nether]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 8
+		oreChances = 0
 		#Max height
 		#Range: 0 ~ 256
 		oreMax = 40
@@ -36,7 +36,7 @@
 	[worldgen.end]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 8
+		oreChances = 0
 		#Max height
 		#Range: 0 ~ 256
 		oreMax = 80
@@ -51,7 +51,7 @@
 	[worldgen.overworld]
 		#Number of times to try generate the ore (set to 0 to disable)
 		#Range: 0 ~ 256
-		oreChances = 1
+		oreChances = 0
 		#Max height
 		#Range: 0 ~ 256
 		oreMax = 40

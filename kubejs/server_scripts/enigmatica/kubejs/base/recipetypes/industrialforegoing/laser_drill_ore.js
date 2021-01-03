@@ -41,11 +41,11 @@ events.listen('recipes', function (event) {
         'biomesoplenty:withered_abyss'
     ];
 
-
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/niter' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/potassium_nitrate'
         },
@@ -79,9 +79,11 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/arcane' });
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/mana' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
-            tag: 'forge:chunks/arcane'
+            tag: 'forge:chunks/mana'
         },
         rarity: [
             {
@@ -114,6 +116,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/bitumen' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/bitumen'
         },
@@ -148,6 +151,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/fluorite' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/fluorite'
         },
@@ -181,8 +185,9 @@ events.listen('recipes', function (event) {
     });
 
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
-            item: 'rftoolsbase:dimensionalshard_end'
+            item: 'emendatusenigmatica:dimensional_chunk'
         },
         rarity: [
             {
@@ -193,21 +198,8 @@ events.listen('recipes', function (event) {
                 blacklist: {},
                 depth_min: 0,
                 depth_max: 255,
-                weight: 1
-            }
-        ],
-        pointer: 0,
-        catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
-    });
-
-    event.recipes.industrialforegoing.laser_drill_ore({
-        output: {
-            item: 'rftoolsbase:dimensionalshard_nether'
-        },
-        rarity: [
+                weight: 12
+            },
             {
                 whitelist: {
                     type: 'minecraft:worldgen/biome',
@@ -217,20 +209,7 @@ events.listen('recipes', function (event) {
                 depth_min: 7,
                 depth_max: 117,
                 weight: 12
-            }
-        ],
-        pointer: 0,
-        catalyst: {
-            item: 'industrialforegoing:laser_lens0'
-        },
-        type: 'industrialforegoing:laser_drill_ore'
-    });
-
-    event.recipes.industrialforegoing.laser_drill_ore({
-        output: {
-            item: 'rftoolsbase:dimensionalshard_overworld'
-        },
-        rarity: [
+            },
             {
                 whitelist: {},
                 blacklist: {
@@ -251,6 +230,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/aluminum' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/aluminum'
         },
@@ -285,6 +265,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/coal' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/coal'
         },
@@ -319,6 +300,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/copper' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/copper'
         },
@@ -353,6 +335,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/diamond' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/diamond'
         },
@@ -387,6 +370,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/cinnabar' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/cinnabar'
         },
@@ -421,6 +405,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/lapis' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/lapis'
         },
@@ -455,6 +440,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/lead' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/lead'
         },
@@ -487,8 +473,79 @@ events.listen('recipes', function (event) {
         type: 'industrialforegoing:laser_drill_ore'
     });
 
+    event.remove({ id: 'industrialforegoing:laser_drill_ore/zinc' });
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            tag: 'forge:chunks/zinc'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 10,
+                depth_max: 40,
+                weight: 4
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 1
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens12'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    //event.remove({ id: 'industrialforegoing:laser_drill_ore/apatite' });
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            tag: 'forge:chunks/apatite'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 40,
+                depth_max: 80,
+                weight: 16
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 2
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens3'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
     event.remove({ id: 'industrialforegoing:laser_drill_ore/nickel' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/nickel'
         },
@@ -523,6 +580,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/quartz' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             item: 'minecraft:nether_quartz_ore'
         },
@@ -557,6 +615,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/redstone' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/redstone'
         },
@@ -591,6 +650,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/silver' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/silver'
         },
@@ -625,6 +685,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sulfur' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/sulfur'
         },
@@ -659,6 +720,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/tin' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/tin'
         },
@@ -693,6 +755,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/uranium' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/uranium'
         },
@@ -727,6 +790,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/emerald' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/emerald'
         },
@@ -768,6 +832,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/glowstone' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             item: 'minecraft:glowstone'
         },
@@ -802,6 +867,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/gold' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/gold'
         },
@@ -853,6 +919,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/iron' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/iron'
         },
@@ -887,6 +954,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/osmium' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             tag: 'forge:chunks/osmium'
         },
@@ -921,6 +989,7 @@ events.listen('recipes', function (event) {
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ancient_debris' });
     event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
         output: {
             item: 'minecraft:ancient_debris'
         },

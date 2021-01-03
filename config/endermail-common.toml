@@ -10,4 +10,8 @@
 	#Packages with delivery locations within this radius of a locker will be delivered to the locker.
 	#Range: 0 ~ 500
 	lockerDeliveryRadius = 50
+	#Determines whether a locker's location will be hidden to the package sender.
+	hideLockerLocation = false
+	#The list of items that are not allowed to be placed in packages.
+	packageContentsBlacklist = ["endermail:package"]
 

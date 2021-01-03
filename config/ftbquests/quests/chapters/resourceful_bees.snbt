@@ -31,7 +31,7 @@
 					}
 				},
 				consume_items: false,
-				only_from_crafting: true
+				only_from_crafting: false
 			}],
 			rewards: [
 				{
@@ -230,7 +230,9 @@
 			description: [
 				"Resourceful Bees is a new take on Resource Generation utilizing one of the latest entities introduced to Minecraft: Our Buzzy Little Friends, the Bees.",
 				"",
-				"This questline should help explain some of the basics of proper bee keeping, mutations, resource extraction, and tiers of bees and their hives."
+				"This questline should help explain some of the basics of proper bee keeping, mutations, resource extraction, and tiers of bees and their hives.",
+				"",
+				"~Ridanisaurus"
 			],
 			id: 2708,
 			tasks: [{
@@ -293,8 +295,11 @@
 				},
 				{
 					id: 2821,
-					type: "loot",
-					table: 11
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -316,9 +321,11 @@
 			}],
 			rewards: [{
 				id: 2819,
-				type: "loot",
+				type: "command",
 				title: "Rare Resourceful Bees Loot Box",
-				table: 23
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -340,9 +347,11 @@
 			}],
 			rewards: [{
 				id: 2818,
-				type: "loot",
+				type: "command",
 				title: "Epic Resourceful Bees Loot Box",
-				table: 24
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -375,9 +384,11 @@
 			rewards: [
 				{
 					id: 2809,
-					type: "loot",
+					type: "command",
 					title: "Legendary Resourceful Bees Loot Box",
-					table: 25
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary",
+					player_command: false
 				},
 				{
 					id: 2810,
@@ -438,11 +449,6 @@
 			}],
 			rewards: [
 				{
-					id: 2838,
-					type: "loot",
-					table: 22
-				},
-				{
 					id: 2839,
 					type: "item",
 					title: "Honey Glazed Ham",
@@ -456,6 +462,14 @@
 					item: "minecraft:honey_bottle",
 					count: 8,
 					random_bonus: 8
+				},
+				{
+					id: 3082,
+					type: "command",
+					title: "Alchemist's Delight",
+					icon: "kubejs:alchemists_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+					player_command: false
 				}
 			]
 		},
@@ -606,9 +620,12 @@
 					xp: 300
 				},
 				{
-					id: 2853,
-					type: "loot",
-					table: 13
+					id: 3084,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -630,9 +647,12 @@
 					xp: 400
 				},
 				{
-					id: 2852,
-					type: "loot",
-					table: 11
+					id: 3085,
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -657,11 +677,6 @@
 			}],
 			rewards: [
 				{
-					id: 2815,
-					type: "loot",
-					table: 13
-				},
-				{
 					id: 2816,
 					type: "item",
 					title: "Honeycomb",
@@ -684,6 +699,14 @@
 					item: "minecraft:honeycomb_block",
 					count: 8,
 					random_bonus: 8
+				},
+				{
+					id: 3083,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -700,9 +723,11 @@
 			}],
 			rewards: [{
 				id: 2814,
-				type: "loot",
+				type: "command",
 				title: "Rare Resourceful Bees Loot Box",
-				table: 23
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -718,9 +743,11 @@
 			}],
 			rewards: [{
 				id: 2813,
-				type: "loot",
+				type: "command",
 				title: "Epic Resourceful Bees Loot Box",
-				table: 24
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -737,9 +764,11 @@
 			rewards: [
 				{
 					id: 2811,
-					type: "loot",
+					type: "command",
 					title: "Legendary Resourceful Bees Loot Box",
-					table: 25
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_legendary",
+					player_command: false
 				},
 				{
 					id: 2812,

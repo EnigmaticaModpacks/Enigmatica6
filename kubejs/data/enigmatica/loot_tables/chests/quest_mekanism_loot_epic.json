@@ -1,0 +1,92 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_chemical_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:carbon\",amount:5120}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_chemical_tank",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:redstone\",amount:5120}}]}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:upgrade_speed",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:upgrade_energy",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_universal_cable",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_mechanical_pipe",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_pressurized_tube",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:ultimate_tier_installer"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:basiccuttingfluid",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Damage: 0,Enchantments: [{lvl: 5,id:\"minecraft:unbreaking\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:primitive_explosive_cell",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Damage: 0,Enchantments: [{lvl: 5,id:\"minecraft:unbreaking\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:primitive_crystalline_resonator",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Damage: 0,Enchantments: [{lvl: 5,id:\"minecraft:unbreaking\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "bloodmagic:lavacrystal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

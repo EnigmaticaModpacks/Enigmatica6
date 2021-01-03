@@ -1,3 +1,18 @@
+### Enigmatica 6 v0.3.3
+
+_Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.3.txt)_
+
+**Improvements**
+
+-   Vanilla Cobble generators and Stone generators now randomly produce different types of cobblestone/stone - To target specific stone types check JEI.
+-   Oregen: Cleaned up the underground a lot. Now that cobblegens can produce all the different kinds of worldgen stone, they're not needed as much in worldgen.
+-   Villagers no longer respond to the mob griefing gamerule, so they are allowed to farm whether it is true or false.
+-   Server: Set `max-tick-time` to 300000 in the `server.properties`. This means that the server will crash if a single tick takes longer than 5 minutes. This is a countermeasure against servers being frozen. Note: This change was not due to an issue, but due to a recommendation from a smart person.
+-   Tetra: Added a recipe for the Combustion Chamber upgrade, so high-end Tetra isn't worldgen gated. The other upgrades will however not be made available through crafting.
+    **Bug Fixes**
+
+-   Resourceful Bees: Fixed Redstone Bee not being breedable
+
 ### Enigmatica 6 v0.3.2
 
 _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.2.txt)_
@@ -6,11 +21,11 @@ _Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
-- High RAM usage [\#588](https://github.com/NillerMedDild/Enigmatica6/issues/588)
-- 0.3.1 Hellfire Forge can't be crafted - Shows 'empty' for the place an Iron block should be [\#583](https://github.com/NillerMedDild/Enigmatica6/pull/583) ([MuteTiefling](https://github.com/MuteTiefling))
-- Wither Bee drop chance increase & Fix [\#593](https://github.com/NillerMedDild/Enigmatica6/pull/593) ([Ridanisaurus](https://github.com/Ridanisaurus))
-- Missed saw recipes and a typo [\#584](https://github.com/NillerMedDild/Enigmatica6/pull/584) ([MuteTiefling](https://github.com/MuteTiefling))
-- Fixed sawdust output in sawing recipes
+-   High RAM usage [\#588](https://github.com/NillerMedDild/Enigmatica6/issues/588)
+-   0.3.1 Hellfire Forge can't be crafted - Shows 'empty' for the place an Iron block should be [\#583](https://github.com/NillerMedDild/Enigmatica6/pull/583) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Wither Bee drop chance increase & Fix [\#593](https://github.com/NillerMedDild/Enigmatica6/pull/593) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Missed saw recipes and a typo [\#584](https://github.com/NillerMedDild/Enigmatica6/pull/584) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fixed sawdust output in sawing recipes
 
 ### Enigmatica 6 v0.3.1
 

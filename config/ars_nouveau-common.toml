@@ -13,6 +13,9 @@
 	#How often Carbuncles spawn
 	#Range: 0 ~ 100
 	carbuncleWeight = 5
+	#Rate of tree spawn per chunk
+	#Range: 0.0 ~ 1.0
+	genTrees = 0.002
 
 #Enabled Spells
 [spells]
@@ -126,6 +129,10 @@
 	wither = true
 	#Knockback enabled?
 	gust = true
+	#Crush enabled?
+	crush = true
+	#Cut enabled?
+	cut = true
 
 #Mana
 [mana]
@@ -324,4 +331,18 @@
 	#AOE cost
 	#Range: > -2147483648
 	aoe_cost = 35
+	#Crush cost
+	#Range: > -2147483648
+	crush_cost = 30
+	#Cut cost
+	#Range: > -2147483648
+	cut_cost = 0
+
+#Starting Spells
+["Starter Spells"]
+	projectile_starter = true
+	touch_starter = true
+	self_starter = true
+	break_starter = true
+	harm_starter = true
 

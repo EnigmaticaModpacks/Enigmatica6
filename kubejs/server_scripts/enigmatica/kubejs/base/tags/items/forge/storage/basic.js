@@ -99,15 +99,15 @@ events.listen('item.tags', function (event) {
         'embellishcraft:warped_fancy_chest',
         'embellishcraft:warped_wooden_crate',
         'engineersdecor:labeled_crate',
-		'farmersdelight:basket',
-		'farmersdelight:oak_pantry',
-		'farmersdelight:birch_pantry',
-		'farmersdelight:spruce_pantry',
-		'farmersdelight:jungle_pantry',
-		'farmersdelight:acacia_pantry',
-		'farmersdelight:dark_oak_pantry',
-		'farmersdelight:crimson_pantry',
-		'farmersdelight:warped_pantry',
+        'farmersdelight:basket',
+        'farmersdelight:oak_pantry',
+        'farmersdelight:birch_pantry',
+        'farmersdelight:spruce_pantry',
+        'farmersdelight:jungle_pantry',
+        'farmersdelight:acacia_pantry',
+        'farmersdelight:dark_oak_pantry',
+        'farmersdelight:crimson_pantry',
+        'farmersdelight:warped_pantry',
         'immersiveengineering:crate',
         'immersiveengineering:minecart_reinforcedcrate',
         'immersiveengineering:minecart_woodencrate',
@@ -179,10 +179,9 @@ events.listen('item.tags', function (event) {
         'rftoolsstorage:storage_module1',
         'rftoolsstorage:storage_module2',
         'rftoolsstorage:storage_module3',
-        'tetra:rack',
-        'xercamod:item_bookcase'
+        'tetra:rack'
     ];
 
-	event.get('forge:storage').add(items);
-	event.get('forge:storage/basic').add(items);
+    event.get('forge:storage').add(items);
+    event.get('forge:storage/basic').add(items);
 });

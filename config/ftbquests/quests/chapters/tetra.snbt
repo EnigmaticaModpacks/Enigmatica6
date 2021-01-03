@@ -1,7 +1,7 @@
 {
 	id: 1906,
 	filename: "tetra",
-	order_index: 11,
+	order_index: 10,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
@@ -25,11 +25,11 @@
 			shape: "square",
 			subtitle: "Hammer time!",
 			description: [
-				"The first step is to make a Mallet and smack a Vanilla Crafting Table with it!",
+				"The first step is to make a Tetra Hammer and smack a Vanilla Crafting Table with it!",
 				"",
 				"To make Tetra tools, you need a hammer, and occasionally other tools.",
 				"",
-				"The Mallet is a tier 1 Hammer, which means it will allow you to craft tools out of the most basic materials.",
+				"The Wooden Hammer is a tier 1 Hammer, which means it will allow you to craft tools out of the most basic materials.",
 				"",
 				"The higher tier hammer you have, the more materials you can make your tools out of.",
 				"",
@@ -40,9 +40,9 @@
 			size: 1.5d,
 			id: 1907,
 			tasks: [{
-				id: 2191,
-				type: "item",
-				item: {
+				id: 3047,
+				type: "advancement",
+				icon: {
 					id: "tetra:modular_double",
 					Count: true,
 					tag: {
@@ -50,11 +50,13 @@
 						"double/head_left": "double/basic_hammer_left",
 						"double/head_right": "double/basic_hammer_right",
 						Damage: 0,
-						"double/basic_hammer_right_material": "basic_hammer/log",
+						"double/basic_hammer_right_material": "basic_hammer/oak",
 						"double/basic_handle_material": "basic_handle/stick",
-						"double/basic_hammer_left_material": "basic_hammer/log"
+						"double/basic_hammer_left_material": "basic_hammer/oak"
 					}
-				}
+				},
+				advancement: "tetra:upgrades/root",
+				criterion: ""
 			}],
 			rewards: [
 				{
@@ -68,9 +70,9 @@
 							"double/head_left": "double/basic_hammer_left",
 							"double/head_right": "double/basic_hammer_right",
 							Damage: 0,
-							"double/basic_hammer_right_material": "basic_hammer/log",
+							"double/basic_hammer_right_material": "basic_hammer/oak",
 							"double/basic_handle_material": "basic_handle/stick",
-							"double/basic_hammer_left_material": "basic_hammer/log"
+							"double/basic_hammer_left_material": "basic_hammer/oak"
 						}
 					}
 				},
@@ -227,7 +229,7 @@
 			description: [
 				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate it.",
 				"",
-				"Place a Workbench below the powered Forge Hammer, and you'll gain access to it's Hammering abilities.",
+				"Place a Workbench below the powered Forge Hammer, and you'll gain access to its Hammering abilities.",
 				"",
 				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
 			],
@@ -364,7 +366,7 @@
 			description: [
 				"Thermal Cells are the batteries of the Forge Hammer.",
 				"",
-				"You can recharge in them in a Transfer Unit, when it's configured correctly. ",
+				"You can recharge them in a Transfer Unit, when it's configured correctly. ",
 				"",
 				"",
 				"Note: Thermal Cells are also craftable."
@@ -391,8 +393,11 @@
 				},
 				{
 					id: 2724,
-					type: "loot",
-					table: 12
+					type: "command",
+					title: "Blacksmith's Delight",
+					icon: "kubejs:blacksmiths_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight",
+					player_command: false
 				}
 			]
 		},
@@ -520,9 +525,9 @@
 			y: -18.0d,
 			subtitle: "Bird-poo Hammer",
 			description: [
-				"Put your Mallet in the Workbench and replace both heads with Diorite, which will upgrade it to a tier 2 Hammer.",
+				"Put your Hammer in the Workbench and replace both heads with any kind of Stone, which will upgrade it to a tier 2 Hammer.",
 				"",
-				"This is where the Mallet you got as a quest reward comes in handy!"
+				"This is where the Wooden Hammer you got as a quest reward comes in handy!"
 			],
 			dependencies: [I;1907],
 			id: 2166,
@@ -554,8 +559,11 @@
 				},
 				{
 					id: 2706,
-					type: "random",
-					table: 12
+					type: "command",
+					title: "Blacksmith's Delight",
+					icon: "kubejs:blacksmiths_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight",
+					player_command: false
 				}
 			]
 		},
@@ -611,8 +619,11 @@
 				},
 				{
 					id: 2722,
-					type: "loot",
-					table: 12
+					type: "command",
+					title: "Blacksmith's Delight",
+					icon: "kubejs:blacksmiths_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight",
+					player_command: false
 				}
 			]
 		},
@@ -675,8 +686,11 @@
 				},
 				{
 					id: 2723,
-					type: "loot",
-					table: 12
+					type: "command",
+					title: "Blacksmith's Delight",
+					icon: "kubejs:blacksmiths_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight",
+					player_command: false
 				}
 			]
 		},
@@ -712,8 +726,11 @@
 			}],
 			rewards: [{
 				id: 2705,
-				type: "random",
-				table: 22
+				type: "command",
+				title: "Alchemist's Delight",
+				icon: "kubejs:alchemists_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -759,8 +776,11 @@
 				},
 				{
 					id: 2725,
-					type: "loot",
-					table: 12
+					type: "command",
+					title: "Blacksmith's Delight",
+					icon: "kubejs:blacksmiths_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight",
+					player_command: false
 				}
 			]
 		},
@@ -1002,8 +1022,11 @@
 			}],
 			rewards: [{
 				id: 2605,
-				type: "random",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1028,8 +1051,11 @@
 			}],
 			rewards: [{
 				id: 2604,
-				type: "random",
-				table: 11
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -1330,7 +1356,7 @@
 			y: -19.0d,
 			shape: "diamond",
 			description: [
-				"Place the Rack next to a Workbench and a Hammer on the Rack, and you'll have access to it's hammer tier you use the Workbench.",
+				"Place the Rack next to a Workbench and a Hammer on the Rack, and you'll have access to its hammer tier you use the Workbench.",
 				"",
 				"This works for all Tetra tools.",
 				"",

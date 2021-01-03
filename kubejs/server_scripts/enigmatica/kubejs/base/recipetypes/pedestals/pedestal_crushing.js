@@ -1,5 +1,6 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.recipes.pedestals.pedestal_crushing({
+        type: 'pedestals.pedestal_crushing',
         ingredient: {
             tag: 'forge:ores/zinc'
         },

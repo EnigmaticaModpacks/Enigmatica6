@@ -1,9 +1,9 @@
 events.listen('item.tags', function (event) {
     var storageBlocks = 'forge:storage_blocks';
-    event.get(storageBlocks).add('minecraft:glowstone');
     event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');
     event
         .get(storageBlocks)
+        .add('minecraft:glowstone')
         .add('immersiveengineering:storage_aluminum')
         .add('immersiveengineering:storage_lead')
         .add('immersiveengineering:storage_silver')
@@ -11,11 +11,12 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:storage_uranium')
         .add('immersiveengineering:storage_constantan')
         .add('immersiveengineering:storage_electrum')
-        .add('immersiveengineering:coke');
+        .add('immersiveengineering:coke')
+        .add('powah:uraninite_block')
+        .add('occultism:iesnium_block')
+        .add('naturesaura:infused_iron_block')
+        .add('naturesaura:tainted_gold_block');
 
-    // event.get(storageBlocks).add('occultism:iesnium_block');
-    event.get(storageBlocks).add('powah:uraninite_block');
-    event.get(storageBlocks).add('naturesaura:infused_iron_block').add('naturesaura:tainted_gold_block');
     event.get(storageBlocks + '/infused_iron').add('naturesaura:infused_iron_block');
     event.get(storageBlocks + '/tainted_gold').add('naturesaura:tainted_gold_block');
 

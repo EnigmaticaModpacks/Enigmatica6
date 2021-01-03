@@ -9,6 +9,9 @@ events.listen('jei.hide.items', (event) => {
             'emendatusenigmatica:' + material + '_jasper_ore',
             'emendatusenigmatica:' + material + '_marble_ore',
             'emendatusenigmatica:' + material + '_slate_ore',
+            'emendatusenigmatica:' + material + '_netherrack_ore',
+            'emendatusenigmatica:' + material + '_blackstone_ore',
+            'emendatusenigmatica:' + material + '_end_stone_ore',
             'titanium:' + material + '_gear',
             'thermal:' + material,
             'thermal:' + material + '_dust',
@@ -32,12 +35,15 @@ events.listen('jei.hide.items', (event) => {
             'immersiveengineering:nugget_' + material,
             'immersiveengineering:ore_' + material,
             'immersiveengineering:plate_' + material,
+            'immersiveengineering:stick_' + material,
             'bloodmagic:' + material + 'fragment',
             'bloodmagic:' + material + 'gravel',
             'bloodmagic:' + material + 'sand',
             'create:' + material + '_sheet',
             'create:' + material + '_nugget',
-            'create:' + material + '_ingot'
+            'create:' + material + '_ingot',
+            'immersiveposts:stick_' + material,
+            'buildersaddition:' + material + '_rod'
         );
     });
 
