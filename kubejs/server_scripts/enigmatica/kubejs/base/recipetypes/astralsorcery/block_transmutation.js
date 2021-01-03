@@ -8,19 +8,18 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         ingredient.of(recipe.inputTag).stacks.forEach((input) => {
-            console.log(input);
-            console.log(recipe.output);
-            console.log(recipe.starlight);
-
-            event.recipes.astralsorcery.block_transmutation({
-                input: {
-                    block: input.id
-                },
-                output: {
-                    block: recipe.output
-                },
-                starlight: recipe.starlight
-            });
+            if (!input.id.includes('chunk')) {
+                event.recipes.astralsorcery.block_transmutation({
+                    type: 'astralsorcery.block_transmutation',
+                    input: {
+                        block: input.id
+                    },
+                    output: {
+                        block: recipe.output
+                    },
+                    starlight: recipe.starlight
+                });
+            }
         });
     });
 });

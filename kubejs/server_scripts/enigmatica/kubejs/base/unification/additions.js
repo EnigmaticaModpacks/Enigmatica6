@@ -67,11 +67,11 @@ function immersiveengineering_gem_ore_processing(event, material) {
 }
 
 function bloodmagic_ore_processing_arc(event, material) {
-    var data;
     if (tagIsEmpty('#forge:ores/' + material)) {
         return;
     }
 
+    var data;
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
 
@@ -97,28 +97,25 @@ function bloodmagic_ore_processing_arc(event, material) {
             ]
         };
     } else if (dust != air) {
-        data = {
-            recipes: [
-                {
-                    input: 'forge:ores/' + material,
-                    output: dust,
-                    count: 2,
-                    bonus: [],
-                    tool: 'bloodmagic:arc/cuttingfluid'
-                },
-                {
-                    input: 'forge:ingots/' + material,
-                    output: dust,
-                    count: 1,
-                    bonus: [],
-                    tool: 'bloodmagic:arc/explosive'
-                }
-            ]
-        };
+        data.recipes.push({
+            input: 'forge:ores/' + material,
+            output: dust,
+            count: 2,
+            bonus: [],
+            tool: 'bloodmagic:arc/cuttingfluid'
+        });
     } else {
         return;
     }
-
+    if (!tagIsEmpty('#forge:ingots/' + material)) {
+        data.recipes.push({
+            input: 'forge:ingots/' + material,
+            output: dust,
+            count: 1,
+            bonus: [],
+            tool: 'bloodmagic:arc/explosive'
+        });
+    }
     if (clump != air && dirtyDust != air) {
         data.recipes.push(
             {
@@ -382,50 +379,6 @@ function gear_unification(event, material) {
     });
 }
 
-// Currently unused
-function enigmatica_ore_deposit_processing(event, material) {
-    var oreDepositTag = ingredient.of('#forge:ore_deposits/' + material);
-    var oreDeposit = oreDepositTag.first.id;
-
-    var nuggetTag = ingredient.of('#forge:nuggets/' + material);
-    var nugget = getPreferredItemInTag(nuggetTag).id;
-
-    var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;
-
-    if (oreDeposit == air || dust == air) {
-        return;
-    }
-
-    if (nuggetTag.first.id == air) {
-        event.recipes.minecraft.smelting(dust, oreDepositTag).xp(1.0);
-        event.recipes.minecraft.blasting(dust, oreDepositTag).xp(1.0);
-    } else {
-        event.recipes.minecraft.smelting(nugget, oreDepositTag).xp(1.0);
-        event.recipes.minecraft.blasting(nugget, oreDepositTag).xp(1.0);
-    }
-
-    event.recipes.mekanism.enriching({
-        type: 'mekanism.enriching',
-        input: {
-            ingredient: { tag: 'forge:ore_deposits/' + material }
-        },
-        output: { item: dust, count: 1 }
-    });
-
-    event.recipes.immersiveengineering.crusher({
-        type: 'immersiveengineering.crusher',
-        secondaries: [],
-        result: {
-            item: dust
-        },
-        input: {
-            tag: 'forge:ore_deposits/' + material
-        },
-        energy: 2000
-    });
-}
-
 function occultism_ore_ingot_crushing(event, material) {
     var dustTag = ingredient.of('#forge:dusts/' + material);
     var dust = getPreferredItemInTag(dustTag).id;
@@ -565,11 +518,12 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
 }
 
 function create_ore_processing_with_secondary_outputs(event, material) {
-    var secondary;
-    var processingTime;
     if (tagIsEmpty('#create:crushed_ores/' + material)) {
         return;
     }
+
+    var secondary;
+    var processingTime;
 
     switch (material) {
         case 'iron':
@@ -672,12 +626,12 @@ function create_ore_processing_with_secondary_outputs(event, material) {
 }
 
 function create_gem_processing(event, material) {
-    if (tagIsEmpty('#forge:gems/' + material)) {
-        return;
-    }
-
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
+
+    if (gem == air) {
+        return;
+    }
 
     var processingTime = 500;
 
