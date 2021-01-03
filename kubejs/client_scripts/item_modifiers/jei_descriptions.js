@@ -3,7 +3,7 @@ events.listen('jei.information', (event) => {
         items: [
             {
                 item: 'simplefarming:cheese_slice',
-                description: 'Obtained by right-clicking a Wheel of Cheese with a Knife.'
+                description: 'Obtained by right-clicking a Wheel of Cheese.'
             }
         ]
     };

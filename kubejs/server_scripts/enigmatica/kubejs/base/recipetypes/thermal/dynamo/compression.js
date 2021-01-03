@@ -63,6 +63,7 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         event.recipes.thermal.compression_fuel({
+            type: 'thermal.compression_fuel',
             ingredient: {
                 fluid: recipe.fluid,
                 amount: 1000

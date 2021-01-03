@@ -1,5 +1,6 @@
 events.listen('recipes', (event) => {
     event.recipes.industrialforegoing.dissolution_chamber({
+        type: 'industrialforegoing.dissolution_chamber',
         input: [
             {
                 item: 'minecraft:glass_pane'

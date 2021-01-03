@@ -10,6 +10,8 @@ events.listen('recipes', function (event) {
         thermal_press_rods(event, material);
         thermal_press_wires(event, material);
         gear_unification(event, material);
+        create_ore_processing_with_secondary_outputs(event, material);
+        create_gem_processing(event, material);
     });
 });
 
@@ -48,6 +50,7 @@ function immersiveengineering_gem_ore_processing(event, material) {
     }
 
     event.recipes.immersiveengineering.crusher({
+        type: 'immersiveengineering.crusher',
         secondaries: [],
         result: {
             item: dust
@@ -370,6 +373,7 @@ function gear_unification(event, material) {
     // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
     event.recipes.immersiveengineering.metal_press({
+        type: 'immersiveengineering.metal_press',
         mold: { item: 'immersiveengineering:mold_gear' },
         result: { tag: 'forge:gears/' + material },
         conditions: [{ value: { tag: 'forge:gears/' + material, type: 'forge:tag_empty' }, type: 'forge:not' }],
@@ -402,39 +406,15 @@ function enigmatica_ore_deposit_processing(event, material) {
     }
 
     event.recipes.mekanism.enriching({
+        type: 'mekanism.enriching',
         input: {
             ingredient: { tag: 'forge:ore_deposits/' + material }
         },
         output: { item: dust, count: 1 }
     });
 
-    // event.recipes.create.crushing({
-    //     ingredients: [
-    //         {
-    //             tag: 'forge:ore_deposits/' + material,
-    //             count: 1
-    //         }
-    //     ],
-    //     results: [
-    //         {
-    //             item: dust,
-    //             count: 1
-    //         },
-    //         {
-    //             item: dust,
-    //             chance: 0.1,
-    //             count: 1
-    //         },
-    //         {
-    //             item: 'minecraft:dirt',
-    //             chance: 0.5,
-    //             count: 1
-    //         }
-    //     ],
-    //     processingTime: 500
-    // });
-
     event.recipes.immersiveengineering.crusher({
+        type: 'immersiveengineering.crusher',
         secondaries: [],
         result: {
             item: dust
@@ -444,18 +424,6 @@ function enigmatica_ore_deposit_processing(event, material) {
         },
         energy: 2000
     });
-
-    // event.recipes.occultism.crushing({
-    //     ingredient: {
-    //         tag: 'forge:ore_deposits/' + material
-    //     },
-
-    //     result: {
-    //         item: dust,
-    //         count: 1
-    //     },
-    //     crushing_time: 200
-    // });
 }
 
 function occultism_ore_ingot_crushing(event, material) {
@@ -476,6 +444,7 @@ function occultism_ore_ingot_crushing(event, material) {
 
     if (tagIsEmpty('#forge:ores/' + material) == false) {
         event.recipes.occultism.crushing({
+            type: 'occultism.crushing',
             ingredient: {
                 tag: 'forge:ores/' + material
             },
@@ -490,6 +459,7 @@ function occultism_ore_ingot_crushing(event, material) {
 
     if (tagIsEmpty('#forge:ingots/' + material) == false) {
         event.recipes.occultism.crushing({
+            type: 'occultism.crushing',
             ingredient: {
                 tag: 'forge:ingots/' + material
             },
@@ -504,6 +474,7 @@ function occultism_ore_ingot_crushing(event, material) {
 
     if (tagIsEmpty('#forge:gems/' + material) == false) {
         event.recipes.occultism.crushing({
+            type: 'occultism.crushing',
             ingredient: {
                 tag: 'forge:gems/' + material
             },
@@ -534,6 +505,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
         event.shapeless(plate, [hammer, ingot]);
         event.remove({ id: 'immersiveengineering:crafting/plate_' + material + '_hammering' });
         event.recipes.immersiveengineering.metal_press({
+            type: 'immersiveengineering.metal_press',
             mold: {
                 item: 'immersiveengineering:mold_plate'
             },
@@ -553,6 +525,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
 
         event.shapeless(plate, [hammer, input]);
         event.recipes.immersiveengineering.metal_press({
+            type: 'immersiveengineering.metal_press',
             mold: {
                 item: 'immersiveengineering:mold_plate'
             },
@@ -565,6 +538,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             energy: 2400
         });
         event.recipes.thermal.press({
+            type: 'thermal.press',
             ingredient: {
                 tag: inputTag
             },
@@ -575,6 +549,7 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             ]
         });
         event.recipes.create.pressing({
+            type: 'create.pressing',
             ingredients: [
                 {
                     tag: inputTag
@@ -587,4 +562,147 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             ]
         });
     }
+}
+
+function create_ore_processing_with_secondary_outputs(event, material) {
+    var secondary;
+    var processingTime;
+    if (tagIsEmpty('#create:crushed_ores/' + material)) {
+        return;
+    }
+
+    switch (material) {
+        case 'iron':
+            secondary = 'nickel';
+            processingTime = 400;
+            break;
+        case 'nickel':
+            secondary = 'iron';
+            processingTime = 350;
+            break;
+        case 'gold':
+            secondary = 'zinc';
+            processingTime = 300;
+            break;
+        case 'copper':
+            secondary = 'gold';
+            processingTime = 350;
+            break;
+        case 'aluminum':
+            secondary = 'iron';
+            processingTime = 300;
+            break;
+        case 'silver':
+            secondary = 'lead';
+            processingTime = 300;
+            break;
+        case 'uranium':
+            secondary = 'lead';
+            processingTime = 400;
+            break;
+        case 'osmium':
+            secondary = 'tin';
+            processingTime = 400;
+            break;
+        case 'tin':
+            secondary = 'osmium';
+            processingTime = 350;
+            break;
+        case 'zinc':
+            secondary = 'gold';
+            processingTime = 350;
+            break;
+        default:
+            return;
+    }
+
+    event.recipes.create.milling({
+        type: 'create:milling',
+        ingredients: [
+            {
+                tag: 'forge:ores/' + material
+            }
+        ],
+        results: [
+            {
+                item: 'create:crushed_' + material + '_ore'
+            },
+            {
+                item: 'create:crushed_' + material + '_ore',
+                chance: 0.25,
+                count: 2
+            },
+            {
+                item: 'create:crushed_' + secondary + '_ore',
+                chance: 0.05,
+                count: 2
+            }
+        ],
+        processingTime: processingTime
+    });
+
+    event.recipes.create.crushing({
+        type: 'create:crushing',
+        ingredients: [
+            {
+                tag: 'forge:ores/' + material
+            }
+        ],
+        results: [
+            {
+                item: 'create:crushed_' + material + '_ore'
+            },
+            {
+                item: 'create:crushed_' + material + '_ore',
+                chance: 0.6,
+                count: 2
+            },
+            {
+                item: 'create:crushed_' + secondary + '_ore',
+                chance: 0.1,
+                count: 2
+            },
+            {
+                item: 'minecraft:cobblestone',
+                chance: 0.125
+            }
+        ],
+        processingTime: processingTime
+    });
+}
+
+function create_gem_processing(event, material) {
+    if (tagIsEmpty('#forge:gems/' + material)) {
+        return;
+    }
+
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    var processingTime = 500;
+
+    event.recipes.create.crushing({
+        type: 'create:crushing',
+        ingredients: [
+            {
+                tag: 'forge:ores/' + material
+            }
+        ],
+        results: [
+            {
+                item: gem,
+                count: 2
+            },
+            {
+                item: gem,
+                chance: 0.25,
+                count: 2
+            },
+            {
+                item: 'minecraft:cobblestone',
+                chance: 0.125
+            }
+        ],
+        processingTime: processingTime
+    });
 }

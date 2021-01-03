@@ -120,6 +120,7 @@ events.listen('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         recipe.inputs.forEach((input) => {
             event.recipes.mekanism.crushing({
+                type: 'mekanism.crushing',
                 input: {
                     ingredient: {
                         item: input

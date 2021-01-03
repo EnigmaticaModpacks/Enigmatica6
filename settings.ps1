@@ -15,8 +15,9 @@ $CONFIGS_TO_REMOVE = @(
 	# "defaultoptions/options.txt",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
+	"abnormals_core-client.toml",
+	"ambientsounds-client.json",	
 	"astralsorcery-client.toml",
-	"ambientsounds-client.json",
 	"betteradvancements-client.toml",
 	"cagedmobs-client.toml",
 	"chiselsandbits-client.toml",
@@ -37,6 +38,7 @@ $CONFIGS_TO_REMOVE = @(
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",
 	"sophisticatedbackpacks-client.toml",
+	"thermal-client.toml",
 	"xnet-client.toml"
 )
 	
