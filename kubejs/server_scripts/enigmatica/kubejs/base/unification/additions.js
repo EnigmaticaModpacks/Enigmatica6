@@ -71,7 +71,10 @@ function bloodmagic_ore_processing_arc(event, material) {
         return;
     }
 
-    var data;
+    var data = {
+        recipes: []
+    };
+
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
 
@@ -85,17 +88,13 @@ function bloodmagic_ore_processing_arc(event, material) {
     var dust = getPreferredItemInTag(dustTag).id;
 
     if (gem != air) {
-        data = {
-            recipes: [
-                {
-                    input: 'forge:ores/' + material,
-                    output: gem,
-                    count: 5,
-                    bonus: [],
-                    tool: 'bloodmagic:arc/cuttingfluid'
-                }
-            ]
-        };
+        data.recipes.push({
+            input: 'forge:ores/' + material,
+            output: gem,
+            count: 5,
+            bonus: [],
+            tool: 'bloodmagic:arc/cuttingfluid'
+        });
     } else if (dust != air) {
         data.recipes.push({
             input: 'forge:ores/' + material,
