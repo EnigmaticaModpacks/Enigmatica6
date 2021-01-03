@@ -1335,50 +1335,50 @@
 		generate_in_the_overworld = true
 		#Configure the ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
-		vein_size = 8
+		vein_size = 2
 		#Average Ores per Chunk [Range: 0 to 64, Default: 8]
 		#Range: 0 ~ 64
-		count = 8
+		count = 2
 		#Baseline Y-Level [Range: 0 to 256, Default: 21]
 		#Range: 0 ~ 256
-		baseline = 21
+		baseline = 10
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Range: 0 to 256, Default: 19]
 		#Range: 0 ~ 256
-		spread = 19
+		spread = 10
 
 	#Ores in The Nether use the same Values of the Overworld +/- the Modifiers
 	["Dimensional Shard Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: true]
-		generate_in_the_nether = false
+		generate_in_the_nether = true
 		#Baseline Modifier [Range: -256 to 256, Default: 30]
 		#Range: -256 ~ 256
-		nether_base_modifier = 30
+		nether_base_modifier = 50
 		#Spread Modifier [Range: -256 to 256, Default: 0]
 		#Range: -256 ~ 256
-		nether_spread_modifier = 0
+		nether_spread_modifier = 30
 		#Average Ores per Chunk Modifier [Range: -256 to 256, Default: 0]
 		#Range: -256 ~ 256
-		nether_count_modifier = 0
+		nether_count_modifier = 6
 		#Ore Vein Size Modifier [Range: -256 to 256, Default: 0]
 		#Range: -256 ~ 256
-		nether_size_modifier = 0
+		nether_size_modifier = 1
 
 	#Ores in The End use the same Values of the Overworld +/- the Modifiers
 	["Dimensional Shard Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: true]
-		generate_in_the_end = false
+		generate_in_the_end = true
 		#Baseline Modifier [Range: -256 to 256, Default: 10]
 		#Range: -256 ~ 256
-		end_base_modifier = 10
+		end_base_modifier = 40
 		#Spread Modifier [Range: -256 to 256, Default: 0]
 		#Range: -256 ~ 256
-		end_spread_modifier = 0
+		end_spread_modifier = 30
 		#Average Ores per Chunk Modifier [Range: -256 to 256, Default: 0]
 		#Range: -256 ~ 256
-		end_count_modifier = 0
+		end_count_modifier = 6
 		#Ore Vein Size Modifier [Range: -256 to 256, Default: 0]
 		#Range: -256 ~ 256
-		end_size_modifier = 0
+		end_size_modifier = 4
 
 ["Stratum Config: minecraft_netherrack"]
 	active = true
