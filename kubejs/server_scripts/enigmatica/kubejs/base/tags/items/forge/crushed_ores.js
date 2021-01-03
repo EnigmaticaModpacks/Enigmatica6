@@ -6,7 +6,6 @@ events.listen('item.tags', function (event) {
     event.get('create:crushed_ores/tin').add('create:crushed_tin_ore');
     event.get('create:crushed_ores/silver').add('create:crushed_silver_ore');
     event.get('create:crushed_ores/osmium').add('create:crushed_osmium_ore');
-    event.get('create:crushed_ores/brass').add('create:crushed_brass_ore');
     event.get('create:crushed_ores/gold').add('create:crushed_gold_ore');
     event.get('create:crushed_ores/copper').add('create:crushed_copper_ore');
     event.get('create:crushed_ores/iron').add('create:crushed_iron_ore');
