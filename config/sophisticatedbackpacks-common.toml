@@ -224,4 +224,6 @@
 	[common.inceptionUpgrade]
 		#Allows / Disallows backpack upgrades to work with inventories of Backpacks in the Backpack with Inception Upgrade
 		upgradesUseInventoriesOfBackpacksInBackpack = true
+		#Allows / Disallows upgrades to be functional even when they are in Backpacks in the inventory of Backpack with Inception Upgrade
+		upgradesInContainedBackpacksAreFunctional = true
 
