@@ -1,10 +1,9 @@
 {
 	id: 2803,
 	filename: "astral_sorcery_wip",
-	order_index: 20,
-	title: "Astral Sorcery WIP",
+	order_index: 0,
+	title: "Astral Sorcery",
 	icon: "astralsorcery:hand_telescope",
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -238,7 +237,15 @@
 					item: "astralsorcery:black_marble_raw",
 					count: 21L
 				}
-			]
+			],
+			rewards: [{
+				id: 3138,
+				type: "command",
+				title: "Rare Astral Sorcery Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			icon: "astralsorcery:altar_constellation",
@@ -293,7 +300,15 @@
 					item: "astralsorcery:marble_bricks",
 					count: 40L
 				}
-			]
+			],
+			rewards: [{
+				id: 3139,
+				type: "command",
+				title: "Epic Astral Sorcery Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			icon: "astralsorcery:altar_radiance",
@@ -344,7 +359,15 @@
 					item: "astralsorcery:black_marble_raw",
 					count: 49L
 				}
-			]
+			],
+			rewards: [{
+				id: 3140,
+				type: "command",
+				title: "Legendary Astral Sorcery Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			icon: "astralsorcery:spectral_relay",
@@ -385,7 +408,15 @@
 					item: "astralsorcery:marble_chiseled",
 					count: 4L
 				}
-			]
+			],
+			rewards: [{
+				id: 3142,
+				type: "command",
+				title: "Rare Astral Sorcery Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Through the Looking Glass",
@@ -662,6 +693,14 @@
 						}
 					}
 				}
+			}],
+			rewards: [{
+				id: 3141,
+				type: "command",
+				title: "Rare Astral Sorcery Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare",
+				player_command: false
 			}]
 		},
 		{
