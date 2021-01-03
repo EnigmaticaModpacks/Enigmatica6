@@ -1,7 +1,7 @@
 {
 	id: 841,
 	filename: "rftools_wip",
-	order_index: 7,
+	order_index: 18,
 	title: "RFTools WIP",
 	icon: "rftoolsbase:machine_frame",
 	always_invisible: true,
@@ -318,7 +318,14 @@
 			tasks: [{
 				id: 928,
 				type: "item",
-				item: "rftoolsutility:crafter1"
+				title: "Any rftools:crafter",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "rftools:crafter"
+					}
+				}
 			}]
 		},
 		{
