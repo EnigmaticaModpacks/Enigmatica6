@@ -62,7 +62,9 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
 
-        'morevanillalib:obsidian_shard'
+        'morevanillalib:obsidian_shard',
+        'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
+        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
     ];
 
     outputRemovals.forEach((removal) => {
@@ -113,6 +115,18 @@ events.listen('recipes', function (event) {
     event.remove({
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
+    });
+
+    event.remove({
+        input: '#forge:ores',
+        mod: 'create',
+        type: 'create:milling'
+    });
+
+    event.remove({
+        input: '#forge:ores',
+        mod: 'create',
+        type: 'create:crushing'
     });
 
     beamRecipes.forEach((recipe) => {

@@ -10,6 +10,8 @@ events.listen('recipes', function (event) {
         thermal_press_rods(event, material);
         thermal_press_wires(event, material);
         gear_unification(event, material);
+        create_ore_processing_with_secondary_outputs(event, material);
+        create_gem_processing(event, material);
     });
 });
 
@@ -560,4 +562,147 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
             ]
         });
     }
+}
+
+function create_ore_processing_with_secondary_outputs(event, material) {
+    var secondary;
+    var processingTime;
+    if (tagIsEmpty('#create:crushed_ores/' + material)) {
+        return;
+    }
+
+    switch (material) {
+        case 'iron':
+            secondary = 'nickel';
+            processingTime = 400;
+            break;
+        case 'nickel':
+            secondary = 'iron';
+            processingTime = 350;
+            break;
+        case 'gold':
+            secondary = 'zinc';
+            processingTime = 300;
+            break;
+        case 'copper':
+            secondary = 'gold';
+            processingTime = 350;
+            break;
+        case 'aluminum':
+            secondary = 'iron';
+            processingTime = 300;
+            break;
+        case 'silver':
+            secondary = 'lead';
+            processingTime = 300;
+            break;
+        case 'uranium':
+            secondary = 'lead';
+            processingTime = 400;
+            break;
+        case 'osmium':
+            secondary = 'tin';
+            processingTime = 400;
+            break;
+        case 'tin':
+            secondary = 'osmium';
+            processingTime = 350;
+            break;
+        case 'zinc':
+            secondary = 'gold';
+            processingTime = 350;
+            break;
+        default:
+            return;
+    }
+
+    event.recipes.create.milling({
+        type: 'create:milling',
+        ingredients: [
+            {
+                tag: 'forge:ores/' + material
+            }
+        ],
+        results: [
+            {
+                item: 'create:crushed_' + material + '_ore'
+            },
+            {
+                item: 'create:crushed_' + material + '_ore',
+                chance: 0.25,
+                count: 2
+            },
+            {
+                item: 'create:crushed_' + secondary + '_ore',
+                chance: 0.05,
+                count: 2
+            }
+        ],
+        processingTime: processingTime
+    });
+
+    event.recipes.create.crushing({
+        type: 'create:crushing',
+        ingredients: [
+            {
+                tag: 'forge:ores/' + material
+            }
+        ],
+        results: [
+            {
+                item: 'create:crushed_' + material + '_ore'
+            },
+            {
+                item: 'create:crushed_' + material + '_ore',
+                chance: 0.6,
+                count: 2
+            },
+            {
+                item: 'create:crushed_' + secondary + '_ore',
+                chance: 0.1,
+                count: 2
+            },
+            {
+                item: 'minecraft:cobblestone',
+                chance: 0.125
+            }
+        ],
+        processingTime: processingTime
+    });
+}
+
+function create_gem_processing(event, material) {
+    if (tagIsEmpty('#forge:gems/' + material)) {
+        return;
+    }
+
+    var gemTag = ingredient.of('#forge:gems/' + material);
+    var gem = getPreferredItemInTag(gemTag).id;
+
+    var processingTime = 500;
+
+    event.recipes.create.crushing({
+        type: 'create:crushing',
+        ingredients: [
+            {
+                tag: 'forge:ores/' + material
+            }
+        ],
+        results: [
+            {
+                item: gem,
+                count: 2
+            },
+            {
+                item: gem,
+                chance: 0.25,
+                count: 2
+            },
+            {
+                item: 'minecraft:cobblestone',
+                chance: 0.125
+            }
+        ],
+        processingTime: processingTime
+    });
 }
