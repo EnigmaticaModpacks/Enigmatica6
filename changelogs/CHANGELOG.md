@@ -4,11 +4,11 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements**
 
-- Tetra: Botania metals as Tetra materials now repair when supplied with mana
+-   Tetra: Botania metals as Tetra materials now repair when supplied with mana
+-   Botany Pots: Added Occultism datura compatibility
+    **Bug Fixes**
 
-**Bug Fixes**
-
-- 
+-   Removed Immersive Posts Metal Rod recipes
 
 ### Enigmatica 6 v0.3.4
 
@@ -18,10 +18,10 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
-- \[Server Crash\] Exception in server tick loop - Portable Stonecutter [\#739](https://github.com/NillerMedDild/Enigmatica6/issues/739)
-- Stone Tools Require Marble [\#738](https://github.com/NillerMedDild/Enigmatica6/issues/738)
-- Stone tools fix [\#740](https://github.com/NillerMedDild/Enigmatica6/pull/740) ([MuteTiefling](https://github.com/MuteTiefling))
-- Uranium was improperly tagged as a Nether Only ore in the laser drill [\#741](https://github.com/NillerMedDild/Enigmatica6/pull/741) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Server Crash\] Exception in server tick loop - Portable Stonecutter [\#739](https://github.com/NillerMedDild/Enigmatica6/issues/739)
+-   Stone Tools Require Marble [\#738](https://github.com/NillerMedDild/Enigmatica6/issues/738)
+-   Stone tools fix [\#740](https://github.com/NillerMedDild/Enigmatica6/pull/740) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Uranium was improperly tagged as a Nether Only ore in the laser drill [\#741](https://github.com/NillerMedDild/Enigmatica6/pull/741) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Enigmatica 6 v0.3.3
 
@@ -29,16 +29,16 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mods!**
 
-- **Dungeon Crawl**
-- **Eidolon**
-- **Occultism**
-- Armor Toughness Bar
-- Cat Jammies
-- Chocolate Fix
-- Paragliders
-- Polymorph (Forge)
-- Spawner Bug Fix
-- Tamed Summon
+-   **Dungeon Crawl**
+-   **Eidolon**
+-   **Occultism**
+-   Armor Toughness Bar
+-   Cat Jammies
+-   Chocolate Fix
+-   Paragliders
+-   Polymorph (Forge)
+-   Spawner Bug Fix
+-   Tamed Summon
 
 **Improvements**
 
@@ -49,8 +49,8 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Added tags to RFTools items for quests [\#665](https://github.com/NillerMedDild/Enigmatica6/pull/665) ([Merlo17](https://github.com/Merlo17))
 -   Astral Mineralis Ore Gen [\#689](https://github.com/NillerMedDild/Enigmatica6/issues/689)
 -   Astral Sorcery Loot Tables [\#713](https://github.com/NillerMedDild/Enigmatica6/pull/713) ([MuteTiefling](https://github.com/MuteTiefling))
--   Create celestial\_gateway building gadget template [\#629](https://github.com/NillerMedDild/Enigmatica6/pull/629) ([MuteTiefling](https://github.com/MuteTiefling))
--   Create starlight\_infuser building gadget template [\#624](https://github.com/NillerMedDild/Enigmatica6/pull/624) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create celestial_gateway building gadget template [\#629](https://github.com/NillerMedDild/Enigmatica6/pull/629) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create starlight_infuser building gadget template [\#624](https://github.com/NillerMedDild/Enigmatica6/pull/624) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Gear unification [\#597](https://github.com/NillerMedDild/Enigmatica6/pull/597) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Hide RFTools Dim Ore / Shards in JEI [\#696](https://github.com/NillerMedDild/Enigmatica6/pull/696) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Increase base range of range upgrades for the wireless transmitter \(Refined Storage\) [\#693](https://github.com/NillerMedDild/Enigmatica6/issues/693)
@@ -75,7 +75,7 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
--   0.3.2 - BYG buttons are not tagged with minecraft:wooden\_buttons [\#636](https://github.com/NillerMedDild/Enigmatica6/issues/636)
+-   0.3.2 - BYG buttons are not tagged with minecraft:wooden_buttons [\#636](https://github.com/NillerMedDild/Enigmatica6/issues/636)
 -   0.3.2 Quest text makes a consistent grammar mistake all over the place. [\#610](https://github.com/NillerMedDild/Enigmatica6/issues/610)
 -   3.2 makes the Crafting station uncraftable [\#602](https://github.com/NillerMedDild/Enigmatica6/issues/602)
 -   Activating a holding rail from Transport with any minecart crashes the game. [\#618](https://github.com/NillerMedDild/Enigmatica6/issues/618)
@@ -92,7 +92,7 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Crafting Table recipes for gears missing \(for me, but not other people\) [\#585](https://github.com/NillerMedDild/Enigmatica6/issues/585)
 -   Crash with Lost Trinkets Mirror Shard Trinket and Guardians [\#644](https://github.com/NillerMedDild/Enigmatica6/issues/644)
 -   Dupe bug with Lost Trinket Magneto [\#534](https://github.com/NillerMedDild/Enigmatica6/issues/534)
--   Emerald Honeycomb  [\#630](https://github.com/NillerMedDild/Enigmatica6/issues/630)
+-   Emerald Honeycomb [\#630](https://github.com/NillerMedDild/Enigmatica6/issues/630)
 -   Occultism Harvesting Bug [\#674](https://github.com/NillerMedDild/Enigmatica6/issues/674)
 -   PNC: Memory Stick XP Dupe Bug [\#623](https://github.com/NillerMedDild/Enigmatica6/issues/623)
 -   Portable Stonecutter crafting isn't always possible [\#573](https://github.com/NillerMedDild/Enigmatica6/issues/573)
