@@ -1,3 +1,5 @@
+# RandomPatches configuration.
+# All configuration options not under [client] are server-sided unless otherwise stated.
 
 # Client-sided options.
 [client]
@@ -311,4 +313,3 @@
 		# Fixes MC-149777, which can cause crashes when loading worlds on Java 11 or newer: https://bugs.mojang.com/browse/MC-149777
 		# Default: true
 		fix_mc-149777 = true
-
