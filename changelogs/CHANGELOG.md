@@ -1,3 +1,16 @@
+### Enigmatica 6 v0.3.4
+
+_Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.4.txt)_
+
+**Hotfix - See changelog from v0.3.3 for the rest of the changes since v0.3.2**
+
+**Bug Fixes**
+
+- \[Server Crash\] Exception in server tick loop - Portable Stonecutter [\#739](https://github.com/NillerMedDild/Enigmatica6/issues/739)
+- Stone Tools Require Marble [\#738](https://github.com/NillerMedDild/Enigmatica6/issues/738)
+- Stone tools fix [\#740](https://github.com/NillerMedDild/Enigmatica6/pull/740) ([MuteTiefling](https://github.com/MuteTiefling))
+- Uranium was improperly tagged as a Nether Only ore in the laser drill [\#741](https://github.com/NillerMedDild/Enigmatica6/pull/741) ([MuteTiefling](https://github.com/MuteTiefling))
+
 ### Enigmatica 6 v0.3.3
 
 _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.3.txt)_
