@@ -1,5 +1,5 @@
 events.listen('worldgen.remove', (event) => {
     event.removeOres((ores) => {
-        ores.blocks = ['minecraft:granite', 'minecraft:diorite'];
+        ores.blocks = ['minecraft:granite', 'minecraft:diorite', 'minecraft:dirt'];
     });
 });
