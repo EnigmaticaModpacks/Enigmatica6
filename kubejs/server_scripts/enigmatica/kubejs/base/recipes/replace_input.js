@@ -35,7 +35,9 @@ events.listen('recipes', function (event) {
         ]);
 
         var wool = 'minecraft:' + colors[i] + '_wool';
-        event.remove({ id: 'minecraft:' + colors[i] + '_carpet_from_white_carpet' });
+        event.remove({
+            id: 'minecraft:' + colors[i] + '_carpet_from_white_carpet'
+        });
         event.shaped({ item: 'minecraft:' + colors[i] + '_carpet', count: 3 }, ['WW'], {
             W: wool
         });
@@ -62,7 +64,7 @@ events.listen('recipes', function (event) {
 
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
 
-    event.replaceInput({}, 'astralsorcery:marble_raw', '#forge:stones/marble');
+    event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
 
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
