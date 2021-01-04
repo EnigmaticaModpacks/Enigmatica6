@@ -524,15 +524,8 @@ function create_ore_processing_with_secondary_outputs(event, material) {
         return;
     }
 
-    /*
-    if (tagIsEmpty('#create:crushed_ores/' + material)) {
-        return;
-    }*/
-
     var secondary;
     var processingTime;
-
-    console.info('Adding Material to Create Ore Processing :' + material);
 
     switch (material) {
         case 'iron':
