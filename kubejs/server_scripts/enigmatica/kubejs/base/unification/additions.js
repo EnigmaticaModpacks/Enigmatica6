@@ -658,6 +658,10 @@ function create_gem_processing(event, material) {
         return;
     }
 
+    if (tagIsEmpty('#forge:ores/' + material)) {
+        return;
+    }
+
     var processingTime = 500;
 
     event.recipes.create.crushing({
