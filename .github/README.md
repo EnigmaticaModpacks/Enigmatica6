@@ -79,11 +79,10 @@ git init                                           # Initialize git in folder
 git remote add origin URLToYourEnigmatica4Fork     # Set remote origin to your Enigmatica 5 fork
 git remote -v                                      # Verify remote
 git fetch
-git pull
+git pull origin master
 ```
 
 8) Now double click the script `setup.sh` to setup InstanceSync. It is found in the `development` folder.
-9) One more `git pull`
 
 You're done!
 
