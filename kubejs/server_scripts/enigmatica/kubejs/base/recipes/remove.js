@@ -113,6 +113,11 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
+        output: '/emendatusenigmatica:\\w+_rod/',
+        mod: 'immersiveposts'
+    });
+
+    event.remove({
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
