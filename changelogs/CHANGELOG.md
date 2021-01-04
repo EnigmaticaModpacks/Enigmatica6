@@ -1,3 +1,15 @@
+### Enigmatica 6 v0.3.5
+
+_Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.5.txt)_
+
+**Improvements**
+
+- Tetra: Botania metals as Tetra materials now repair when supplied with mana
+
+**Bug Fixes**
+
+- 
+
 ### Enigmatica 6 v0.3.4
 
 _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.4.txt)_
