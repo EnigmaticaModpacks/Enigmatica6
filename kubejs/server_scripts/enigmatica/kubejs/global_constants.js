@@ -97,7 +97,11 @@ const materialsToUnify = [
     'certus_quartz',
     'charged_certus_quartz',
     'iesnium',
-    'dimensional'
+    'dimensional',
+    'cloggrum',
+    'froststeel',
+    'regalium',
+    'utherium'
 ];
 
 global.materialsToUnify = materialsToUnify;
