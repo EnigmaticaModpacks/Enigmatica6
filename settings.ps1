@@ -21,6 +21,7 @@ $CONFIGS_TO_REMOVE = @(
 	"betteradvancements-client.toml",
 	"cagedmobs-client.toml",
 	"chiselsandbits-client.toml",
+	"computercraft-client.toml",
 	"craftingtweaks-client.toml",
 	"create-client.toml",
 	"eidolon-client.toml",
