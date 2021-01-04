@@ -41,6 +41,8 @@ events.listen('recipes', function (event) {
         'biomesoplenty:withered_abyss'
     ];
 
+    //var nether_end_biomes = end_biomes.concat(nether_biomes);
+
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/niter' });
@@ -761,11 +763,11 @@ events.listen('recipes', function (event) {
         },
         rarity: [
             {
-                whitelist: {
+                whitelist: {},
+                blacklist: {
                     type: 'minecraft:worldgen/biome',
-                    values: nether_biomes
+                    values: end_biomes
                 },
-                blacklist: {},
                 depth_min: 5,
                 depth_max: 29,
                 weight: 5
