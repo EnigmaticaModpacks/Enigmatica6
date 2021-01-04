@@ -1,4 +1,4 @@
-//TODO: Remove
+//TODO: Remove in 0.4.0
 // events.listen('block.registry', function (event) {
 //     for (var i = 0; i < materials.length; i++) {
 //         for (var j = 0; j < materials[i].blockParts.length; j++) {
