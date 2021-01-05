@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.3.3 Modlist
+## Enigmatica 6 - 0.3.4 Modlist
 - additional_lights-1.16.4-2.1.3
 - AI-Improvements-1.16.2-0.3.0
 - aiotbotania-1.16.4-1.5.0
@@ -10,7 +10,7 @@
 - Aquaculture-1.16.4-2.1.11
 - archers_paradox-1.16.3-1.1.1
 - architectury-1.2.68-forge
-- ars_nouveau-1.16.4-1.10.4
+- ars_nouveau-1.16.4-1.10.5
 - Artifacts-1.16.4-2.7.3
 - astralsorcery-1.16.4-1.13.9
 - AttributeFix-1.16.4-9.0.2
@@ -75,7 +75,7 @@
 - DungeonCrawl-1.16.3-2.2.3
 - dungeons-plus-1.16.4-1.1.0
 - DustrialDecor-1.1.4
-- eidolon-0.2.4
+- eidolon-0.2.6
 - elevatorid-1.16.4-1.7.8
 - embellishcraft-1.16.4-3.3.0.0
 - EmendatusEnigmatica-1.16.4-1.1.2
@@ -177,7 +177,7 @@
 - plonk-1.16.4-9.0.5
 - pneumaticcraft-repressurized-1.16.4-2.8.2-101
 - polymorph-forge-1.16.4-0.22
-- portable_stonecutter-1.16.4-1.3.0
+- portable_stonecutter-1.1.1
 - Powah-1.16.4-2.3.6
 - PrettyPipes-1.9.0
 - QuantumStorage-1.16.4-5.3.0

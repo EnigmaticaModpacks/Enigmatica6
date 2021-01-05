@@ -1,0 +1,59 @@
+=======================================
+Enigmatica6 0.3.3 --> Enigmatica6 0.3.4
+=======================================
+
+Updated:
+	Ars Nouveau (ars_nouveau-1.16.4-1.10.4.jar --> ars_nouveau-1.16.4-1.10.5.jar):
+		ars_nouveau-1.16.4-1.10.5.jar:
+			Sylphs can now accept deny scrolls and no longer dupe tiles.
+			Fixes Carbuncles not finding gold that isn't on top of them.
+			Rewrote the Sylph section
+			More item tag support for woods
+			Better spell book searching
+			Buffs the Volcanic Accumulator passive
+			Updated wand and armor textures
+
+	Eidolon (eidolon-0.2.4.jar --> eidolon-0.2.6.jar):
+		eidolon-0.2.6.jar:
+			Fixed:
+			* Broken arcane gold nugget tag.
+
+		eidolon-0.2.5.jar:
+			Added:
+			* Korean language support. Many thanks to @othuntgithub!
+			* Russian language support. Many thanks to @kemika1girl!
+			* Tags for arcane gold and pewter ingots, nuggets, and blocks.
+			Changed:
+			* Simplified and buffed the resolute belt. Knockback should be in more reliable directions, and be about twice as strong.
+			* Blocks now have appropriate sound types, instead of just using the default (stone).
+			* The easter-egg music disc is now mono, not stereo. This is consistent with vanilla discs and helps Minecraft manage its volume.
+			Fixed:
+			* Shift-click crash with apothecary stand.
+			* Eidolon brewing recipes not working on servers.
+			* Eidolon mobs spawning in non-overworld modded dimensions.
+			* Decorative blocks (smooth stone bricks, polished planks, etc) don't drop when broken.
+			* Misleading wording in apothecary stand and warped sprouts pages.
+			* Conflict with Performant mod preventing learning the wicked and sacred signs.
+			* Ritual of purifying crashes the game.
+			* Structures sometimes generate above sea level in hilly terrain.
+			* Lead ore feature not being registered.
+			* Sanguine ritual causing absurd damage to player armor.
+			* Spell projectiles not colliding with nonliving entities.
+			* Loss of sign data when returning from the end.
+			* Ritual damage (reaper scythe, crystallization, sanguine ritual) destroys always-dropped equipment.
+
+Downgraded:
+	Portable Stonecutter (Portable Stonecutter-1.16.4-1.3.0 --> portable_stonecutter-1.1.1.jar):
+		Portable Stonecutter-1.16.4-1.3.0:
+			Anvil flattening recipes are now configurable through datapacks
+
+		Portable Stonecutter-1.16.4-1.2.2:
+			Fixed PSC being crafted regardless of ingredients.
+
+		Portable Stonecutter-1.16.4-1.2.1:
+			New GUI
+			Craft all and craft 64 buttons
+			Recipe locking and in world replacement
+			Anvil can now be dropped from any height
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

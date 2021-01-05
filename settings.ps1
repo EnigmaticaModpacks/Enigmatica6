@@ -21,6 +21,7 @@ $CONFIGS_TO_REMOVE = @(
 	"betteradvancements-client.toml",
 	"cagedmobs-client.toml",
 	"chiselsandbits-client.toml",
+	"computercraft-client.toml",
 	"craftingtweaks-client.toml",
 	"create-client.toml",
 	"eidolon-client.toml",
@@ -38,6 +39,7 @@ $CONFIGS_TO_REMOVE = @(
 	"rftoolsstorage-client.toml",
 	"rftoolsutility-client.toml",
 	"sophisticatedbackpacks-client.toml",
+	"supplementaries-client.toml",
 	"thermal-client.toml",
 	"xnet-client.toml"
 )
@@ -56,10 +58,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.3.3"
+$MODPACK_VERSION = "0.3.5"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.3.2"
+$LAST_MODPACK_VERSION = "0.3.4"
 
 $FORGE_VERSION = 35.1.29
 

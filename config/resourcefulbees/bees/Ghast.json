@@ -1,47 +1,51 @@
 {
-  "flower": "minecraft:crimson_fungus",
-  "maxTimeInHive": 3600,
-  "sizeModifier": 2,
-  "hasHoneycomb": true,
-  "apiaryOutputAmounts": [3, 6, 1, 2],
-  "traits": ["nether"],
-  "baseLayerTexture": "other/ghast",
-  "ColorData": {
-    "honeycombColor": "#faebd7",
-    "isBeeColored": false,
-    "isRainbowBee": false,
-    "isGlowing": false,
-    "isEnchanted": false
-  },
-  "CombatData": {
-    "isPassive": false,
-    "removeStingerOnAttack": false,
-    "inflictsPoison": true,
-    "attackDamage": 3
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "tag:forge:netherrack",
-    "mutationOutput": "minecraft:tnt",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:ghast_tear",
-    "mainOutputWeight": 0.15,
-    "mainOutputCount": 1,
-    "mainInputCount": 1
-  },
-  "SpawnData": {
-    "canSpawnInWorld": false,
-    "biomeWhitelist": "tag:NETHER",
-    "biomeBlacklist": "tag:OVERWORLD,END",
-    "lightLevel": "NIGHT"
-  },
-  "BreedData": {
-    "isBreedable": false
-  },
-  "TraitData": {
-    "hasTraits": true
-  }
+    "flower": "minecraft:crimson_fungus",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 2,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["nether"],
+    "baseLayerTexture": "other/ghast",
+    "ColorData": {
+        "honeycombColor": "#faebd7",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:netherrack",
+        "mutationOutput": "minecraft:tnt",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:ghast_tear",
+        "mainOutputWeight": 0.15,
+        "mainOutputCount": 1,
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false,
+        "biomeWhitelist": "tag:NETHER",
+        "biomeBlacklist": "tag:OVERWORLD,END",
+        "lightLevel": "NIGHT"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:ghast_tear",
+        "feedAmount": 24,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }
