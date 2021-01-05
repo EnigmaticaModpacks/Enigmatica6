@@ -1,0 +1,115 @@
+
+#Server side blocks configs
+[blocks]
+
+	[blocks.speaker_block]
+		#maximum range
+		#Range: 0 ~ 256
+		range = 64
+
+	[blocks.bellows]
+		#bellows pushes air following this equation: 
+		#air=(sin(2PI*ticks/period)<0), with period = base_period-(redstone_power-1)*power_scaling 
+		#represents base period at 1 power
+		#Range: 1 ~ 512
+		base_period = 78
+		#entities with velocity greated than this won't be pushed
+		#Range: 0.0 ~ 16.0
+		power_scaling = 2.0
+		#velocity increase uses this equation: 
+		#vel = base_vel*((range-entity_distance)/range) with base_vel = base_velocity_scaling/period 
+		#note that the block will push further the faster it's pulsing
+		#Range: 0.0 ~ 64.0
+		base_velocity_scaling = 5.0
+		#sets velocity changed flag when pushing entities +
+		#causes pushing animation to be smooth client side but also restricts player movement when being pushed
+		velocity_changed_flag = true
+		#note that it will still only keep alive the two fire blocks closer to it
+		#Range: 0 ~ 16
+		range = 5
+
+	[blocks.spring_launcher]
+		#spring launcher launch speed
+		#Range: 0.0 ~ 16.0
+		velocity = 1.5
+		#fall distance needed to trigger the automatic spring launch
+		#Range: 0 ~ 512
+		fall_height_required = 5
+
+	[blocks.turn_table]
+		#can rotate entities standing on it?
+		rotate_entities = true
+		#blocks that can't be rotated. Some special ones like chests, beds and pistons are already hardcoded
+		mobs = ["minecraft:end_portal_frame"]
+
+	[blocks.wall_lantern]
+		#allow wall lanterns placement
+		enabled = true
+
+	[blocks.jar]
+		#jar liquid capacity: leave at 12 for pixel accuracy
+		#Range: 0 ~ 1024
+		capacity = 12
+		#allow right click to instantly eat or drink food or potions inside a jar.
+		#Disable if you think this ability is op. Cookies are excluded
+		drink_from_jar = true
+		#catchable mobs 
+		#BE VERY CAREFUL WITH THESE: SOME MOBS MIGHT NOT WORK OF EVEN CRASH THE GAME.
+		#That's due to a vanilla bug. Check in a new world if the mobs you added here work before adding to a modpack
+		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
+		#tinted jar catchable mobs
+		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
+
+	#I haven't tested most of the mods included here. let me know if they work
+	[blocks.cage]
+		#catchable mobs
+		cage_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:parrot", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "minecraft:rabbit", "minecraft:cat", "minecraft:chicken", "minecraft:bat", "iceandfire:pixie", "minecraft:fox", "minecraft:ocelot", "alexsmobs:roadrunner", "alexsmobs:hummingbird", "alexsmobs:crimson_mosquito", "alexsmobs:rattlesnake", "alexsmobs:lobster", "alexsmobs:capuchin_monkey", "alexsmobs:warped_toad", "mysticalworld:beetle", "mysticalworld:frog", "mysticalworld:silver_fox", "mysticalworld:sprout", "mysticalworld:endermini", "mysticalworld:lava_cat", "mysticalworld:owl", "mysticalworld:silkworm", "mysticalworld:hell_sprout", "quark:toretoise", "quark:crab", "quark:foxhound", "quark:stoneling", "quark:frog", "rats:rat", "rats:piper", "rats:plague_doctor", "rats:black_death", "rats:plague_cloud", "rats:plague_beast", "rats:rat_king", "rats:demon_rat", "rats:ratlantean_spirit", "rats:ratlantean_automation", "rats:feral_ratlantean", "rats:neo_ratlantean", "rats:pirat", "rats:ghost_pirat", "rats:dutchrat", "rats:ratfish", "rats:ratlantean_ratbot", "rats:rat_baron", "goblintraders:goblin_trader", "goblintraders:vein_goblin_trader", "autumnity:snail", "buzzierbees:honey_slime", "betteranimalsplus:lammergeier", "betteranimalsplus:songbird", "betteranimalsplus:pheasant", "betteranimalsplus:squirrel", "betteranimalsplus:badger", "betteranimalsplus:turkey", "exoticbirds:roadrunner", "exoticbirds:hummingbird", "exoticbirds:woodpecker", "exoticbirds:kingfisher", "exoticbirds:toucan", "exoticbirds:macaw", "exoticbirds:magpie", "exoticbirds:kiwi", "exoticbirds:owl", "exoticbirds:gouldianfinch", "exoticbirds:gull", "exoticbirds:pigeon", "exoticbirds:penguin", "exoticbirds:duck", "exoticbirds:booby", "exoticbirds:cardinal", "exoticbirds:bluejay", "exoticbirds:robin", "exoticbirds:kookaburra", "exoticbirds:budgerigar", "exoticbirds:cockatoo", "swampexpansion:slabfish"]
+		#additional mobs that you'll be able to catch with the added condition that it has to be a baby variant. No need to include the ones already in cage_mobs
+		cage_baby_mobs = ["minecraft:cow", "minecraft:sheep", "minecraft:pig"]
+		#allow all mobs to be captured by jars
+		cage_allow_all_mobs = false
+
+	[blocks.notice_board]
+		#allow notice boards to accept and display any item, not just maps and books
+		allow_any_item = false
+
+	[blocks.sack]
+		#penalize the player with slowness effecn when carring too many sacks
+		sack_penality = true
+		#maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
+		#Range: 0 ~ 50
+		sack_increment = 2
+
+#Configure spawning conditions
+[spawns]
+
+	[spawns.firefly]
+		#Spawnable biomes
+		biomes = ["minecraft:swamp", "minecraft:swamp_hills", "minecraft:plains", "minecraft:sunflower_plains", "minecraft:dark_forest", "minecraft:dark_forest_hills"]
+		#Whitelisted mods. All biomes from said mods will be able to spawn fireflies. Use the one above for more control
+		mod_whitelist = []
+		#Spawn weight 
+		#Set to 0 to disable spawning entirely
+		#Range: 0 ~ 100
+		weight = 3
+		#Minimum group size
+		#Range: 0 ~ 64
+		min = 5
+		#Maximum group size
+		#Range: 0 ~ 64
+		max = 9
+
+#entities parameters
+[entities]
+
+	[entities.firefly]
+		#firefly animation period
+		#note that actual period will be this + a random number between 0 and 10
+		#this needs to be here to allow correct despawning of the entity when it's not glowing
+		#check client configs come more animation settings
+		#Range: 1 ~ 200
+		period = 65
+		#firefly flying speed
+		#Range: 0.0 ~ 10.0
+		speed = 0.3
+
