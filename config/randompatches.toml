@@ -1,3 +1,5 @@
+# RandomPatches configuration.
+# All configuration options not under [client] are server-sided unless otherwise stated.
 
 # Client-sided options.
 [client]
@@ -56,7 +58,7 @@
 	# Options related to key bindings.
 	[client.key_bindings]
 		# The secondary sprint key binding.
-		# This allows the double tap sprint functionality to be disabled, fixing MC-203401: https://bugs.mojang.com/browse/MC-203401
+		# This allows double-tap sprinting to be disabled, fixing MC-203401: https://bugs.mojang.com/browse/MC-203401
 		# Default: true
 		secondary_sprint = true
 		# The dismount key binding.
@@ -81,6 +83,10 @@
 		# This partially fixes MC-147718: https://bugs.mojang.com/browse/MC-147718
 		# Default: true
 		toggle_debug_info = true
+		# Allows double-tap sprinting while flying.
+		# This fixes MC-68453: https://bugs.mojang.com/browse/MC-68453
+		# Default: true
+		double_tap_sprinting_while_flying = true
 		# Makes standalone modifier keys not conflict with key combinations with that modifier key, which seems to be intended Forge behavior.
 		# Default: true
 		standalone_modifiers_do_not_conflict_with_combinations = true
@@ -183,6 +189,7 @@
 	max_client_custom_payload_packet_size = 16777216
 
 # Options related to player speed limits.
+# These options are used to fix MC-90062: https://bugs.mojang.com/browse/MC-90062
 [player_speed_limits]
 	# The maximum player speed when not riding a vehicle or flying with elytra.
 	# The vanilla default is 100.0.
@@ -250,10 +257,11 @@
 	#   - Required for making the forward movement key not conflict with the secondary sprint key.
 	#   - Required for making the sneak key not conflict with the dismount key.
 	#   - Required for making standalone modifier keys not conflict with key combinations with that modifier key.
-	# - KeyboardListener: Required for the narrator toggle, escape, GUI toggle and debug key bindings.
+	# - KeyboardListener: Required for the narrator toggle, pause, GUI toggle and debug key bindings.
 	# - Minecraft:
 	#   - Required for changing Minecraft window options.
 	#   - Required for disabling the warning that displays when loading a world that uses experimental settings.
+	# - MouseHelper: Required for using mouse buttons for the narrator toggle, pause, GUI toggle and debug key bindings.
 	# - NettyCompressionDecoder: Required for setting the maximum compressed packet size.
 	# - PacketBuffer: Required for setting the maximum NBT compound tag packet size.
 	# - PotionItem: Required for removing the glowing effect from potions.
@@ -305,4 +313,3 @@
 		# Fixes MC-149777, which can cause crashes when loading worlds on Java 11 or newer: https://bugs.mojang.com/browse/MC-149777
 		# Default: true
 		fix_mc-149777 = true
-

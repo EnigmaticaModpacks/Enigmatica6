@@ -1,5 +1,6 @@
 events.listen('recipes', function (event) {
     event.recipes.enigmatica.tool_shapeless({
+        type: 'enigmatica.tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/knife'
@@ -15,6 +16,7 @@ events.listen('recipes', function (event) {
     });
 
     event.recipes.enigmatica.tool_shapeless({
+        type: 'enigmatica.tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/axe'
@@ -32,6 +34,7 @@ events.listen('recipes', function (event) {
     var tillsIntoFarmland = ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:dirt'];
     tillsIntoFarmland.forEach(function (block) {
         event.recipes.enigmatica.tool_shapeless({
+            type: 'enigmatica.tool_shapeless',
             ingredients: [
                 {
                     tag: 'forge:tools/hoe'
@@ -47,6 +50,7 @@ events.listen('recipes', function (event) {
     });
 
     event.recipes.enigmatica.tool_shapeless({
+        type: 'enigmatica.tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/hoe'
@@ -82,6 +86,7 @@ events.listen('recipes', function (event) {
         };
         data.recipes.forEach((recipe) => {
             event.recipes.enigmatica.tool_shapeless({
+                type: 'enigmatica.tool_shapeless',
                 ingredients: [
                     {
                         tag: 'forge:tools/axe'

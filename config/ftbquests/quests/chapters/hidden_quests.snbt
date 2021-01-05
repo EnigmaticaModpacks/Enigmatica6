@@ -1,7 +1,7 @@
 {
 	id: 808,
 	filename: "hidden_quests",
-	order_index: 5,
+	order_index: 6,
 	title: "Hidden_Quests",
 	icon: "minecraft:experience_bottle",
 	always_invisible: true,
@@ -62,67 +62,6 @@
 				advancement: "tetra:spelunking/ancient_ruins",
 				criterion: ""
 			}]
-		},
-		{
-			x: -17.5d,
-			y: -12.5d,
-			id: 3048,
-			tasks: [{
-				id: 3049,
-				type: "checkmark"
-			}],
-			rewards: [
-				{
-					id: 3050,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3051,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3052,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3053,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3054,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3055,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3056,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3057,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3058,
-					type: "loot",
-					table: 12
-				},
-				{
-					id: 3059,
-					type: "loot",
-					table: 12
-				}
-			]
 		}
 	]
 }

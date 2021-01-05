@@ -1,57 +1,57 @@
 {
-  "flower": "ALL",
-  "maxTimeInHive": 3200,
-  "sizeModifier": 1,
-  "hasHoneycomb": true,
-  "apiaryOutputAmounts": [3, 6, 1, 2],
-  "baseLayerTexture": "ores/diamond/diamond_bee",
-  "ColorData": {
-    "honeycombColor": "#00ffff",
-    "isBeeColored": false,
-    "isRainbowBee": false,
-    "isGlowing": false,
-    "isEnchanted": false,
-    "modelType": "ORE"
-  },
-  "CombatData": {
-    "isPassive": false,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "tag:forge:stone",
-    "mutationOutput": "emendatusenigmatica:diamond_ore",
-    "mutationType": "BLOCK_TO_BLOCK",
-    "mutationCount": 1
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:diamond",
-    "mainOutputWeight": 0.05,
-    "mainOutputCount": 1,
-    "mainInputCount": 1
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:OVERWORLD",
-    "biomeBlacklist": "tag:OCEAN",
-    "minGroupSize": 0,
-    "maxGroupSize": 1,
-    "spawnWeight": 2,
-    "lightLevel": "DAY"
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "parent1": "gold",
-    "parent2": "lapis",
-    "feedItem": "tag:forge:storage_blocks/diamond",
-    "feedAmount": 8,
-    "childGrowthDelay": -24000,
-    "breedDelay": 6000
-  },
-  "TraitData": {
-    "hasTraits": false
-  }
+    "flower": "ALL",
+    "maxTimeInHive": 3200,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "baseLayerTexture": "ores/diamond/diamond_bee",
+    "ColorData": {
+        "honeycombColor": "#00ffff",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:stone",
+        "mutationOutput": "emendatusenigmatica:diamond_ore",
+        "mutationType": "BLOCK_TO_BLOCK",
+        "mutationCount": 1
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:diamond",
+        "mainOutputWeight": 0.08,
+        "mainOutputCount": 1,
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 0,
+        "maxGroupSize": 1,
+        "spawnWeight": 2,
+        "lightLevel": "DAY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "gold",
+        "parent2": "lapis",
+        "feedItem": "tag:forge:storage_blocks/diamond",
+        "feedAmount": 8,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
 }

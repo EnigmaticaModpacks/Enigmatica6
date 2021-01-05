@@ -11,6 +11,7 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         event.recipes.immersiveengineering.metal_press({
+            type: 'immersiveengineering.metal_press',
             mold: {
                 item: recipe.mold
             },

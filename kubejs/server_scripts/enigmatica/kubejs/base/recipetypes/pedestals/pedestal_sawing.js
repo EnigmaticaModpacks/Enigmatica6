@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         var modID = variant.logBlock.split(':')[0];
 

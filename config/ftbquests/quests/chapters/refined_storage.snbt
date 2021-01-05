@@ -122,8 +122,11 @@
 			rewards: [
 				{
 					id: 1457,
-					type: "loot",
-					table: 2
+					type: "command",
+					title: "Refined Storage Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+					player_command: false
 				},
 				{
 					id: 1469,
@@ -173,8 +176,11 @@
 			],
 			rewards: [{
 				id: 1466,
-				type: "loot",
-				table: 2
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -237,7 +243,7 @@
 		{
 			x: 3.5d,
 			y: 5.0d,
-			description: ["The Fluid Grid works a bit differently from the normal Grid. Fluids can only ber inserted/extracted via the use of fluid container items such as buckets."],
+			description: ["The Fluid Grid works a bit differently from the normal Grid. Fluids can only be inserted/extracted via the use of fluid container items such as buckets."],
 			dependencies: [I;612],
 			id: 616,
 			tasks: [{
@@ -269,8 +275,11 @@
 			}],
 			rewards: [{
 				id: 1477,
-				type: "loot",
-				table: 2
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -299,8 +308,11 @@
 			],
 			rewards: [{
 				id: 1475,
-				type: "loot",
-				table: 2
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -349,8 +361,11 @@
 			],
 			rewards: [{
 				id: 1473,
-				type: "loot",
-				table: 2
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -376,13 +391,19 @@
 			rewards: [
 				{
 					id: 1458,
-					type: "loot",
-					table: 2
+					type: "command",
+					title: "Refined Storage Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+					player_command: false
 				},
 				{
 					id: 1459,
-					type: "loot",
-					table: 2
+					type: "command",
+					title: "Refined Storage Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+					player_command: false
 				}
 			]
 		},
@@ -417,8 +438,11 @@
 			}],
 			rewards: [{
 				id: 1460,
-				type: "loot",
-				table: 2
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -438,8 +462,11 @@
 			}],
 			rewards: [{
 				id: 1468,
-				type: "loot",
-				table: 2
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		},
 		{
@@ -497,13 +524,19 @@
 			rewards: [
 				{
 					id: 1462,
-					type: "loot",
-					table: 2
+					type: "command",
+					title: "Refined Storage Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+					player_command: false
 				},
 				{
 					id: 1463,
-					type: "loot",
-					table: 2
+					type: "command",
+					title: "Refined Storage Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+					player_command: false
 				}
 			]
 		}

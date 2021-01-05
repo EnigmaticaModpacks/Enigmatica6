@@ -20,7 +20,7 @@
 	drones_can_import_xp_orbs = true
 	#Oil worldgen blacklist: add biome IDs to this list if you don't want oil worldgen to happen there.  This works in conjunction with 'oil_world_gen_category_blacklist' - if a biome matches either, then no oil lakes will generate there.
 	oil_world_gen_blacklist = ["minecraft:soul_sand_valley", "minecraft:crimson_forest", "minecraft:warped_forest", "minecraft:the_void", "minecraft:the_end", "minecraft:small_end_islands", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "byg:embur_bog", "byg:glowstone_gardens", "byg:sythian_torrids", "byg:warped_desert", "byg:subzero_hypogeal", "byg:quartz_desert", "byg:brimstone_caverns", "byg:weeping_mire", "byg:withering_woods", "byg:magma_wastes", "byg:wailing_garth", "byg:crimson_gardens", "byg:ivis_fields", "byg:bulbis_gardens", "byg:shattered_desert", "byg:ethereal_islands", "byg:purpur_peaks", "byg:cryptic_wastes", "byg:viscal_isles", "byg:shulkren_forest", "byg:nightshade_forest", "biomesoplenty:crystalline_chasm", "biomesoplenty:undergrowth", "biomesoplenty:visceral_heap", "biomesoplenty:withered_abyss"]
-	#Chance per chunk in percentage to generate an Oil Lake (although a surface lake is 4 times rarer). Set to 0 for no oil lakes.
+	#Chance per chunk as a percentage to generate an Oil Lake. Set to 0 for no oil lakes. See also 'surface_oil_generation_chance'.
 	#Range: 0 ~ 100
 	oil_generation_chance = 15
 	#Blacklisted entity ID's, which the Vacuum Trap will not try to absorb. Note that players, tamed entities, boss entities, and PneumaticCraft drones may never be absorbed, regardless of config settings.
@@ -28,6 +28,9 @@
 	#Fluids at least as hot as this temperature (Kelvin) will be auto-registered as Liquid Compressor fuels, the quality being dependent on fluid temperature.
 	#Range: > 0
 	min_fluid_fuel_temperature = 373
+	#When an Oil Lake would be generated at the surface (see 'oil_generation_chance'), percentage chance that this will actually generate a lake. Set to 0 for no surface oil lakes, and fewer lakes overall. Higher values don't guarantee surface oil lakes, but make them more likely, as well as making oil lakes more likely overall. It is recommended to adjust this value in conjunction with 'oil_generation_chance'.
+	#Range: 0 ~ 100
+	surface_oil_generation_chance = 25
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed

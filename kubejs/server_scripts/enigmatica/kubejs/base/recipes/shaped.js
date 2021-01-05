@@ -292,7 +292,26 @@ events.listen('recipes', function (event) {
         }),
         shapedRecipe(item.of('mekanism:ingot_steel', 2), ['AA'], {
             A: 'emendatusenigmatica:steel_ingot'
+        }),
+        shapedRecipe('tetra:combustion_chamber', ['CBC', 'BAB', 'CBC'], {
+            A: 'mekanism:superheating_element',
+            B: 'pneumaticcraft:heat_sink',
+            C: 'mekanism:ultimate_thermodynamic_conductor'
+        }),
+        // Remove in 0.4.0
+        shapedRecipe(item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:gems/certus',
+            B: '#forge:dyes/blue'
+        }),
+        shapedRecipe(item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:gems/certus',
+            B: '#forge:dyes/light_blue'
+        }),
+        shapedRecipe(item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:gems/certus',
+            B: '#forge:dyes/green'
         })
+        //
     ];
 
     recipes.forEach(function (recipe) {

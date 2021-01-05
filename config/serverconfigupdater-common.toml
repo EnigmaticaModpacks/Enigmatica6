@@ -1,7 +1,7 @@
 
 ["Add New Version"]
 	#ModID's of the ServerConfigs that will be deleted when a world with a version lower than this version is loaded the first time. Comma Separated list. (ServerConfig without -server.toml)
-	toDelete = "rftoolsutility, immersiveengineering"
+	toDelete = ""
 	#Version Number. VersionNumbers are simple Integers. Use a number larger than the last version.
 	#Range: > 0
 	newVersion = 0
@@ -14,5 +14,5 @@
 
 ["Version History"]
 	#Editing these values will not affect any worlds that are already on that version.
-	history = ""
+	history = "1=rftoolsutility, immersiveengineering, astralsorcery, rftoolsbase, refinedstorage;"
 
