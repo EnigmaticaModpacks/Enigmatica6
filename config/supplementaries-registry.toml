@@ -1,4 +1,5 @@
 
+#all these don't actually disable blocks anymore, they just remove their recipe and remove them from the creative tabs(like all other mods do)
 [general]
 	#enable creative tab
 	creative_tab = false
@@ -17,7 +18,6 @@
 		jar = true
 		faucet = true
 		turn_table = true
-		spring_launcher = true
 		speaker_block = true
 		sign_post = true
 		hanging_sign = true
@@ -28,16 +28,22 @@
 		sconce_soul = true
 		candelabra = true
 		candelabra_silver = true
-		mob_cage = true
 		item_shelf = true
 		sconce_lever = true
 		globe = true
 		hourglass = true
 		sack = true
 		#WIP
-		laser = true
-		#WIP
 		flag = true
+		piston_launcher = true
+		cage = true
+		cog_block = true
+		candle_holder = true
+		blackboard = true
+		safe = true
+		stone_lamp = false
+		#WIP
+		laser_block = false
 
 	[registration.entities]
 		firefly = true
