@@ -4,8 +4,10 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements**
 
--   Tetra: Botania metals as Tetra materials now repair when supplied with mana
--   Botany Pots: Added Occultism datura compatibility
+- Tetra: Botania metals as Tetra materials now repair when supplied with mana
+
+- Botany Pots: Added Occultism datura compatibility
+
 -   Worldgen: Slightly decreased how many ores generated for the following ores:
 
     -   Iron
@@ -15,7 +17,31 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
     -   Fluorite
     -   Coal
 
--   Worldgen: Slightly increased how many Emerald Ores generate in mountains
+- Worldgen: Slightly increased how many Emerald Ores generate in mountains
+
+- Worldgen: Increased spawn chance of Occultism underground groves.
+
+- Worldgen: Increased Quark Crystal Cave generation 
+
+- Worldgen: Increased Eidolon Stray Tower generation
+
+- Lost Trinkets: Increased XP cost of unlocking more slots.
+
+- Lost Trinkets: Disabled a number of trinkets, due to them being overpowered and/or obtainable in a more fair way.
+
+  - Rock Candy
+  - Tha Cloud
+  - Turtle Sheel
+  - Blaze Heart
+  - Tha Bat
+  - Tea Leaf
+  - Dark Egg
+  - Octopick
+  - Magic Herbs
+  - Magical Feathers
+  - Mad Aura
+  
+  
 
 **Bug Fixes**
 
