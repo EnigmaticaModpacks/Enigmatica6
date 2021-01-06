@@ -122,9 +122,9 @@
 	#Miner Spirit Settings
 	[dimensional_mineshaft.miner_djinni_ores]
 		#The amount of time it takes the spirit to perform one mining operation.
-		maxMiningTime = 400
+		maxMiningTime = 300
 		#The amount of blocks the spirit will obtain per mining operation
-		rollsPerOperation = 1
+		rollsPerOperation = 2
 		#The amount of mining operations the spirit can perform before breaking.
-		durability = 100
+		durability = 5000
 
