@@ -123,7 +123,11 @@ var woodVariantsToConstruct = [
     'byg:sythian',
     'byg:bulbis',
     'byg:embur',
-    'byg:withering_oak'
+    'byg:withering_oak',
+    'ars_nouveau:red_archwood',
+    'ars_nouveau:green_archwood',
+    'ars_nouveau:purple_archwood',
+    'ars_nouveau:blue_archwood'
 ];
 
 var buildWoodVariants = [];
@@ -180,6 +184,18 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'minecraft:stripped_oak_log';
             woodBlockStripped = 'minecraft:stripped_oak_wood';
             plankBlock = 'minecraft:oak_planks';
+            break;
+        case 'red_archwood':
+            plankBlock = 'ars_nouveau:archwood_planks';
+            break;
+        case 'green_archwood':
+            plankBlock = 'ars_nouveau:archwood_planks';
+            break;
+        case 'purple_archwood':
+            plankBlock = 'ars_nouveau:archwood_planks';
+            break;
+        case 'blue_archwood':
+            plankBlock = 'ars_nouveau:archwood_planks';
             break;
         default:
     }
