@@ -6,7 +6,18 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 -   Tetra: Botania metals as Tetra materials now repair when supplied with mana
 -   Botany Pots: Added Occultism datura compatibility
-    **Bug Fixes**
+-   Worldgen: Slightly decreased how many ores generated for the following ores:
+
+    -   Iron
+    -   Copper
+    -   Tin
+    -   Osmium
+    -   Fluorite
+    -   Coal
+
+-   Worldgen: Slightly increased how many Emerald Ores generate in mountains
+
+**Bug Fixes**
 
 -   Removed Immersive Posts Metal Rod recipes
 
