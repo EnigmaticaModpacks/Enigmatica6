@@ -348,13 +348,7 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "rftoolsutility:creative_screen",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{display:{Name:\"{\"text\":\"You Win The Game!\"}\"}}"
-                        }
-                    ]
+                    "name": "rftoolsutility:creative_screen"
                 }
             ]
         }
