@@ -1,7 +1,7 @@
 {
 	id: 151,
 	filename: "adventure",
-	order_index: 5,
+	order_index: 7,
 	title: "Adventure",
 	icon: {
 		id: "minecraft:filled_map",
@@ -11,5 +11,187 @@
 		}
 	},
 	default_quest_shape: "",
-	quests: []
+	quests: [
+		{
+			icon: "alexsmobs:banana",
+			x: -1.0d,
+			y: 0.0d,
+			subtitle: "Monkeys and Gorillas and Bears, Oh My!",
+			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "],
+			id: 3199,
+			tasks: [{
+				id: 3200,
+				type: "checkmark",
+				title: "Alex's Mobs"
+			}],
+			rewards: [
+				{
+					id: 3211,
+					type: "item",
+					item: "alexsmobs:animal_dictionary"
+				},
+				{
+					id: 3214,
+					type: "xp_levels",
+					xp_levels: 5
+				}
+			]
+		},
+		{
+			icon: "losttrinkets:treasure_bag",
+			x: 0.0d,
+			y: 3.0d,
+			subtitle: "One Man's Trash Is Another Man's Treasure",
+			description: [
+				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?",
+				"",
+				"Had one pop up on your screen? Read more about it in JEI. New trinkets may be equipped by pressing R (default) to open the menu. "
+			],
+			id: 3201,
+			tasks: [{
+				id: 3202,
+				type: "checkmark",
+				title: "Lost Trinkets"
+			}],
+			rewards: [{
+				id: 3225,
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 2.0d,
+			subtitle: "Treasure or Trap? ",
+			description: [
+				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? ",
+				"",
+				"Not every site is what it seems. Beware and approach with caution. "
+			],
+			id: 3203,
+			tasks: [{
+				id: 3204,
+				type: "checkmark",
+				title: "Artifacts",
+				icon: "artifacts:mimic_spawn_egg"
+			}],
+			rewards: [{
+				id: 3212,
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			title: "Dungeoneering",
+			x: 1.0d,
+			y: 0.0d,
+			subtitle: "Hack 'n Slash",
+			description: [
+				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. ",
+				"",
+				"Treasure awaits the brave; death awaits the weak. "
+			],
+			id: 3205,
+			tasks: [{
+				id: 3206,
+				type: "checkmark",
+				title: "Dungeoneering",
+				icon: "kubejs:scavengers_delight"
+			}],
+			rewards: [{
+				id: 3213,
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			title: "Oh, The Biomes You'll Go",
+			x: -1.0d,
+			y: 1.0d,
+			subtitle: "It's opener out there, in the wide open air.",
+			description: [
+				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. ",
+				"",
+				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
+			],
+			id: 3209,
+			tasks: [{
+				id: 3210,
+				type: "checkmark",
+				title: "Oh, The Biomes You'll Go",
+				icon: "byg:pink_cherry_sapling"
+			}],
+			rewards: [{
+				id: 3218,
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 2.0d,
+			subtitle: "Poor Unfortunate Souls",
+			description: [
+				"No, your eyes do not deceive you. ",
+				"",
+				"There are… remains in the ice of adventurer’s whose names are now lost to the frozen winds.",
+				"",
+				"Dig them out and see if you fare any better."
+			],
+			id: 3215,
+			tasks: [{
+				id: 3216,
+				type: "checkmark",
+				title: "Rare Ice",
+				icon: "minecraft:ice"
+			}],
+			rewards: [{
+				id: 3217,
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			icon: "meetyourfight:devils_ante",
+			x: 0.0d,
+			y: -1.0d,
+			subtitle: "Leave Nothing To Chance",
+			description: [
+				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. ",
+				"",
+				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
+			],
+			id: 3221,
+			tasks: [{
+				id: 3222,
+				type: "checkmark",
+				title: "Meet Your Fight"
+			}],
+			rewards: [{
+				id: 3226,
+				type: "xp_levels",
+				xp_levels: 5
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 1.0d,
+			subtitle: "We're right here on this very spot.",
+			description: [
+				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?",
+				"",
+				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
+			],
+			id: 3223,
+			tasks: [{
+				id: 3224,
+				type: "item",
+				item: {
+					id: "naturescompass:naturescompass",
+					Count: true,
+					tag: {}
+				}
+			}]
+		}
+	]
 }
