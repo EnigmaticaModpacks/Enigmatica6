@@ -517,7 +517,10 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
 }
 
 function create_ore_processing_with_secondary_outputs(event, material) {
-    if (tagIsEmpty('#create:crushed_ores/' + material)) {
+    var primaryTag = ingredient.of('#create:crushed_ores/' + material);
+    var primaryItem = getPreferredItemInTag(primaryTag).id;
+
+    if (primaryItem == air) {
         return;
     }
 
@@ -565,9 +568,32 @@ function create_ore_processing_with_secondary_outputs(event, material) {
             secondary = 'gold';
             processingTime = 350;
             break;
+        case 'iesnium':
+            secondary = 'iesnium';
+            processingTime = 350;
+            break;
+        case 'cloggrum':
+            secondary = 'cloggrum';
+            processingTime = 350;
+            break;
+        case 'froststeel':
+            secondary = 'froststeel';
+            processingTime = 350;
+            break;
+        case 'regalium':
+            secondary = 'regalium';
+            processingTime = 350;
+            break;
+        case 'utherium':
+            secondary = 'utherium';
+            processingTime = 350;
+            break;
         default:
             return;
     }
+
+    var secondaryTag = ingredient.of('#create:crushed_ores/' + secondary);
+    var secondaryItem = getPreferredItemInTag(secondaryTag).id;
 
     event.recipes.create.milling({
         type: 'create:milling',
@@ -578,15 +604,15 @@ function create_ore_processing_with_secondary_outputs(event, material) {
         ],
         results: [
             {
-                item: 'create:crushed_' + material + '_ore'
+                item: primaryItem
             },
             {
-                item: 'create:crushed_' + material + '_ore',
+                item: primaryItem,
                 chance: 0.25,
                 count: 2
             },
             {
-                item: 'create:crushed_' + secondary + '_ore',
+                item: secondaryItem,
                 chance: 0.05,
                 count: 2
             }
@@ -603,15 +629,15 @@ function create_ore_processing_with_secondary_outputs(event, material) {
         ],
         results: [
             {
-                item: 'create:crushed_' + material + '_ore'
+                item: primaryItem
             },
             {
-                item: 'create:crushed_' + material + '_ore',
+                item: primaryItem,
                 chance: 0.6,
                 count: 2
             },
             {
-                item: 'create:crushed_' + secondary + '_ore',
+                item: secondaryItem,
                 chance: 0.1,
                 count: 2
             },
@@ -629,6 +655,10 @@ function create_gem_processing(event, material) {
     var gem = getPreferredItemInTag(gemTag).id;
 
     if (gem == air) {
+        return;
+    }
+
+    if (tagIsEmpty('#forge:ores/' + material)) {
         return;
     }
 

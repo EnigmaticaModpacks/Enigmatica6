@@ -73,7 +73,9 @@ events.listen('recipes', (event) => {
             '#forge:dyes',
             '#forge:dyes',
             '#forge:dyes'
-        ])
+        ]),
+        shapelessRecipe('emendatusenigmatica:dimensional_gem', ['rftoolsbase:dimensionalshard']),
+        shapelessRecipe('rftoolsbase:dimensionalshard', ['emendatusenigmatica:dimensional_gem'])
     ];
 
     recipes.forEach(function (recipe) {

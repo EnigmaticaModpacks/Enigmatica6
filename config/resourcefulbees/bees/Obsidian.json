@@ -1,55 +1,55 @@
 {
-  "flower": "minecraft:wither_rose",
-  "maxTimeInHive": 3200,
-  "sizeModifier": 1,
-  "hasHoneycomb": true,
-  "apiaryOutputAmounts": [3, 6, 1, 2],
-  "traits": ["nether"],
-  "baseLayerTexture": "other/obsidian",
-  "ColorData": {
-    "honeycombColor": "#663399",
-    "isBeeColored": false,
-    "isRainbowBee": false,
-    "isGlowing": false,
-    "isEnchanted": false
-  },
-  "CombatData": {
-    "isPassive": false,
-    "removeStingerOnAttack": false,
-    "inflictsPoison": true,
-    "attackDamage": 2
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "tag:forge:netherrack",
-    "mutationOutput": "minecraft:obsidian",
-    "mutationType": "BLOCK_TO_BLOCK",
-    "mutationCount": 4
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "minecraft:obsidian",
-    "mainOutputWeight": 0.1,
-    "mainOutputCount": 2,
-    "mainInputCount": 1
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:NETHER,OVERWORLD,END",
-    "minGroupSize": 1,
-    "maxGroupSize": 2,
-    "spawnWeight": 8
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "parent1": "water",
-    "parent2": "blaze",
-    "feedItem": "tag:forge:obsidian",
-    "feedAmount": 8,
-    "childGrowthDelay": -24000,
-    "breedDelay": 6000
-  },
-  "TraitData": {
-    "hasTraits": true
-  }
+    "flower": "minecraft:wither_rose",
+    "maxTimeInHive": 3200,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["nether", "wither"],
+    "baseLayerTexture": "other/obsidian",
+    "ColorData": {
+        "honeycombColor": "#663399",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:netherrack",
+        "mutationOutput": "minecraft:obsidian",
+        "mutationType": "BLOCK_TO_BLOCK",
+        "mutationCount": 4
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:obsidian",
+        "mainOutputWeight": 0.1,
+        "mainOutputCount": 2,
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:NETHER,OVERWORLD,END",
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
+        "spawnWeight": 8
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "water",
+        "parent2": "blaze",
+        "feedItem": "tag:forge:obsidian",
+        "feedAmount": 8,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
 }

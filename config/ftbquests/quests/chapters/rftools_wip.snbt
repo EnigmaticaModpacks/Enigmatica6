@@ -2,9 +2,8 @@
 	id: 841,
 	filename: "rftools_wip",
 	order_index: 18,
-	title: "RFTools WIP",
+	title: "RFTools",
 	icon: "rftoolsbase:machine_frame",
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -54,6 +53,14 @@
 				id: 846,
 				type: "item",
 				item: "rftoolsbase:machine_frame"
+			}],
+			rewards: [{
+				id: 3178,
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -69,6 +76,14 @@
 				id: 897,
 				type: "item",
 				item: "rftoolsbase:machine_base"
+			}],
+			rewards: [{
+				id: 3177,
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -96,7 +111,15 @@
 					type: "item",
 					item: "rftoolsutility:redstone_receiver"
 				}
-			]
+			],
+			rewards: [{
+				id: 3180,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			x: 1.5d,
@@ -112,6 +135,14 @@
 				id: 903,
 				type: "item",
 				item: "rftoolsutility:invchecker"
+			}],
+			rewards: [{
+				id: 3179,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -125,6 +156,14 @@
 				id: 905,
 				type: "item",
 				item: "rftoolsutility:timer"
+			}],
+			rewards: [{
+				id: 3176,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -143,6 +182,14 @@
 				id: 907,
 				type: "item",
 				item: "rftoolsutility:logic"
+			}],
+			rewards: [{
+				id: 3182,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -160,6 +207,14 @@
 				id: 911,
 				type: "item",
 				item: "rftoolsutility:analog"
+			}],
+			rewards: [{
+				id: 3183,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -181,6 +236,14 @@
 				id: 913,
 				type: "item",
 				item: "rftoolsutility:sequencer"
+			}],
+			rewards: [{
+				id: 3184,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -194,6 +257,14 @@
 				id: 915,
 				type: "item",
 				item: "rftoolsutility:sensor"
+			}],
+			rewards: [{
+				id: 3181,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -232,7 +303,15 @@
 					type: "item",
 					item: "rftoolsutility:dialing_device"
 				}
-			]
+			],
+			rewards: [{
+				id: 3175,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			x: 3.0d,
@@ -258,6 +337,14 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 3185,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -273,6 +360,14 @@
 				type: "item",
 				item: "rftoolsbase:dimensionalshard",
 				count: 16L
+			}],
+			rewards: [{
+				id: 3173,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -295,10 +390,12 @@
 				item: "rftoolsbase:machine_infuser"
 			}],
 			rewards: [{
-				id: 3073,
-				type: "item",
-				item: "rftoolsbase:dimensionalshard",
-				count: 64
+				id: 3198,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -318,7 +415,7 @@
 			tasks: [{
 				id: 928,
 				type: "item",
-				title: "Any rftools:crafter",
+				title: "Crafter",
 				item: {
 					id: "itemfilters:tag",
 					Count: true,
@@ -326,6 +423,14 @@
 						value: "rftools:crafter"
 					}
 				}
+			}],
+			rewards: [{
+				id: 3190,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -352,6 +457,14 @@
 				id: 1372,
 				type: "item",
 				item: "rftoolsbuilder:builder"
+			}],
+			rewards: [{
+				id: 3189,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -373,6 +486,14 @@
 				id: 1374,
 				type: "item",
 				item: "rftoolsbuilder:shape_card_quarry"
+			}],
+			rewards: [{
+				id: 3195,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -388,6 +509,14 @@
 				id: 1376,
 				type: "item",
 				item: "rftoolsbuilder:shape_card_def"
+			}],
+			rewards: [{
+				id: 3196,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -403,6 +532,14 @@
 				id: 3067,
 				type: "item",
 				item: "rftoolsbuilder:shape_card_pump"
+			}],
+			rewards: [{
+				id: 3197,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -423,11 +560,21 @@
 				type: "item",
 				item: "rftoolsstorage:modular_storage"
 			}],
-			rewards: [{
-				id: 3071,
-				type: "item",
-				item: "rftoolsstorage:storage_module0"
-			}]
+			rewards: [
+				{
+					id: 3071,
+					type: "item",
+					item: "rftoolsstorage:storage_module0"
+				},
+				{
+					id: 3191,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Maximum Storage!",
@@ -443,6 +590,14 @@
 				id: 1382,
 				type: "item",
 				item: "rftoolsstorage:storage_module3"
+			}],
+			rewards: [{
+				id: 3193,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -481,7 +636,15 @@
 					type: "item",
 					item: "rftoolscontrol:program_card"
 				}
-			]
+			],
+			rewards: [{
+				id: 3186,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "XNet",
@@ -535,6 +698,14 @@
 				id: 1401,
 				type: "item",
 				item: "xnet:connector_upgrade"
+			}],
+			rewards: [{
+				id: 3174,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -552,6 +723,14 @@
 				id: 3061,
 				type: "item",
 				item: "rftoolsstorage:storage_scanner"
+			}],
+			rewards: [{
+				id: 3192,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -570,6 +749,14 @@
 				id: 3063,
 				type: "item",
 				item: "rftoolspower:cell1"
+			}],
+			rewards: [{
+				id: 3187,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -597,14 +784,29 @@
 				{
 					id: 3065,
 					type: "item",
-					item: "rftoolspower:dimensionalcell"
+					title: "Dimensional Cell",
+					item: {
+						id: "itemfilters:tag",
+						Count: true,
+						tag: {
+							value: "rftools:dimensionalcell"
+						}
+					}
 				},
 				{
 					id: 3066,
 					type: "item",
 					item: "rftoolspower:powercell_card"
 				}
-			]
+			],
+			rewards: [{
+				id: 3188,
+				type: "command",
+				title: "Rare RFTools Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			x: -4.5d,
@@ -624,17 +826,27 @@
 				type: "item",
 				item: "rftoolsbase:tablet"
 			}],
-			rewards: [{
-				id: 3070,
-				type: "item",
-				item: {
-					id: "rftoolsstorage:storage_control_module",
-					Count: true,
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: 3070,
+					type: "item",
+					item: {
+						id: "rftoolsstorage:storage_control_module",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
 					}
+				},
+				{
+					id: 3194,
+					type: "command",
+					title: "Rare RFTools Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_rftools_loot_rare",
+					player_command: false
 				}
-			}]
+			]
 		},
 		{
 			title: "XNet Tutorial Link",
@@ -660,8 +872,9 @@
 				id: 3094,
 				type: "command",
 				title: "XNet Tutorial Link",
+				icon: "pneumaticcraft:tag_filter",
 				command: '/tellraw @p {"text":"XNet Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=ksaJgiipaOg&t=608s"}}',
-				player_command: true
+				player_command: false
 			}]
 		},
 		{
@@ -687,6 +900,7 @@
 				id: 3100,
 				type: "command",
 				title: "RFTools Control Tutorial Link",
+				icon: "pneumaticcraft:tag_filter",
 				command: '/tellraw @p {"text":"RFTools Control Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=18-R5L-CATg&t=814s"}}',
 				player_command: false
 			}]

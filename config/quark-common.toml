@@ -207,7 +207,6 @@
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
 	"Shulker Box Right Click" = true
-	"F To Switch" = true
 	"Hotbar Changer" = true
 	"Item Sharing" = true
 	"Right Click Armor" = true
@@ -373,7 +372,7 @@
 		#Can Rotten Flesh and Poisonous Potatoes be composted?
 		"Compostable Toxins" = true
 		#Can bones be smelted down to bone meal?
-		"Bone Meal Utility" = true
+		"Bone Meal Utility" = false
 		#Can any wool color be dyed?
 		"Dye Any Wool" = false
 		#Can Coral be crafted into dye?
@@ -487,7 +486,7 @@
 		"Cave Crystal Growth Chance" = 5
 		"Crystals Grow In Lava" = false
 		#Allowed values: [0,1]
-		"Crystal Spawn Chance" = 0.025
+		"Crystal Spawn Chance" = 0.05
 		"Crystals Craft Runes" = true
 
 		[world.cave_crystal_underground_biome.biome_settings]
@@ -1623,6 +1622,8 @@
 		"Nerf Villager Discount" = true
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = true
+		#Makes Boats not glide on ice
+		"Disable Ice Roads" = true
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).

@@ -1,0 +1,50 @@
+
+#all these don't actually disable blocks anymore, they just remove their recipe and remove them from the creative tabs(like all other mods do)
+[general]
+	#enable creative tab
+	creative_tab = false
+
+#Enable and disable blocks / entities
+[registration]
+
+	[registration.blocks]
+		planter = true
+		clock_block = true
+		pedestal = false
+		wind_vane = true
+		redstone_illuminator = false
+		notice_board = true
+		crank = false
+		jar = false
+		faucet = true
+		turn_table = false
+		speaker_block = true
+		sign_post = true
+		hanging_sign = true
+		bellows = true
+		sconce = true
+		sconce_green = true
+		sconce_ender = true
+		sconce_soul = true
+		candelabra = true
+		candelabra_silver = true
+		item_shelf = true
+		sconce_lever = true
+		globe = true
+		hourglass = true
+		sack = false
+		#WIP
+		flag = true
+		piston_launcher = true
+		cage = true
+		cog_block = false
+		candle_holder = true
+		blackboard = false
+		safe = true
+		stone_lamp = false
+		#WIP
+		laser_block = false
+
+	[registration.entities]
+		firefly = true
+

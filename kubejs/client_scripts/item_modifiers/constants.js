@@ -42,5 +42,16 @@ var itemsToHide = [
     'rftoolsbase:dimensionalshard',
     'rftoolsbase:dimensionalshard_overworld',
     'rftoolsbase:dimensionalshard_nether',
-    'rftoolsbase:dimensionalshard_end'
+    'rftoolsbase:dimensionalshard_end',
+    'supplementaries:pedestal',
+    'supplementaries:crank',
+    'supplementaries:cog_block',
+    'supplementaries:redstone_illuminator',
+    'supplementaries:turn_table',
+    'supplementaries:jar',
+    'supplementaries:jar_tinted',
+    'supplementaries:firefly_jar',
+    'supplementaries:stone_lamp',
+    'supplementaries:sack',
+    'supplementaries:blackboard'
 ];

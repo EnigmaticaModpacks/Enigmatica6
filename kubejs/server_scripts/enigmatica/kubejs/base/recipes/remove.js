@@ -113,6 +113,11 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
+        output: '/emendatusenigmatica:\\w+_rod/',
+        mod: 'immersiveposts'
+    });
+
+    event.remove({
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
@@ -127,6 +132,11 @@ events.listen('recipes', function (event) {
         input: '#forge:ores',
         mod: 'create',
         type: 'create:crushing'
+    });
+
+    event.remove({
+        mod: 'occultism',
+        type: 'occultism:miner'
     });
 
     beamRecipes.forEach((recipe) => {

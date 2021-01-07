@@ -1,4 +1,4 @@
-//TODO: Remove
+//TODO: Remove in 0.4.0
 // //priority: 999
 
 // var oreBlock = blockWithProperties('ore', block.material.rock, TOOL_TYPE_PICKAXE, 1, 3.0, 20.0);
