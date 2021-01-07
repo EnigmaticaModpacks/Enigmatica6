@@ -347,13 +347,13 @@
 		generate_in_the_overworld = true
 		#Configure the ore Vein Size [Default: 14]
 		#Range: 0 ~ 64
-		vein_size = 14
+		vein_size = 11
 		#Average Ores per Chunk [Range: 0 to 64, Default: 9]
 		#Range: 0 ~ 64
-		count = 9
+		count = 8
 		#Baseline Y-Level [Range: 0 to 256, Default: 8]
 		#Range: 0 ~ 256
-		baseline = 8
+		baseline = 10
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Range: 0 to 256, Default: 8]
 		#Range: 0 ~ 256
 		spread = 8
@@ -1387,5 +1387,8 @@
 	active = true
 
 ["Stratum Config: minecraft_end_stone"]
+	active = true
+
+["Stratum Config: byg_mossy_stone"]
 	active = true
 
