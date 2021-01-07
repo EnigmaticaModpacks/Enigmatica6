@@ -145,6 +145,11 @@ events.listen('recipes', function (event) {
         type: 'create:crushing'
     });
 
+    event.remove({
+        mod: 'occultism',
+        type: 'occultism:miner'
+    });
+
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });

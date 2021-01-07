@@ -5,8 +5,179 @@
 	loot_size: 1,
 	hide_tooltip: true,
 	use_title: true,
-	rewards: [{
-		item: "minecraft:redstone",
-		count: 32
-	}]
+	rewards: [
+		{
+			item: "minecraft:redstone",
+			count: 32,
+			weight: 800
+		},
+		{
+			item: "minecraft:redstone_torch",
+			count: 16,
+			weight: 800
+		},
+		{
+			item: "minecraft:lapis_lazuli",
+			count: 16,
+			weight: 800
+		},
+		{
+			item: "minecraft:gold_nugget",
+			count: 32,
+			weight: 800
+		},
+		{
+			item: "rftoolsbase:machine_frame",
+			weight: 800
+		},
+		{
+			item: "rftoolsbase:machine_base",
+			weight: 800
+		},
+		{
+			item: "rftoolsutility:wire",
+			count: 16,
+			weight: 800
+		},
+		{
+			item: "emendatusenigmatica:dimensional_gem",
+			count: 16,
+			weight: 800
+		},
+		{
+			item: "emendatusenigmatica:dimensional_gem",
+			count: 32,
+			weight: 400
+		},
+		{
+			item: "minecraft:redstone_block",
+			count: 32,
+			weight: 400
+		},
+		{
+			item: "rftoolsbase:infused_diamond",
+			count: 8,
+			weight: 200
+		},
+		{
+			item: "rftoolsbase:infused_enderpearl",
+			count: 8,
+			weight: 200
+		},
+		{
+			item: "rftoolsbase:information_screen",
+			weight: 200
+		},
+		{
+			item: "rftoolsutility:screen",
+			weight: 200
+		},
+		{
+			item: {
+				id: "rftoolsutility:text_module",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			weight: 200
+		},
+		{
+			item: {
+				id: "rftoolsutility:energyplus_module",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			weight: 200
+		},
+		{
+			item: {
+				id: "rftoolsutility:inventoryplus_module",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			weight: 200
+		},
+		{
+			item: {
+				id: "rftoolsutility:button_module",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			weight: 200
+		},
+		{
+			item: {
+				id: "rftoolsutility:fluidplus_module",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			weight: 200
+		},
+		{
+			item: "rftoolspower:blazing_generator",
+			weight: 200
+		},
+		{
+			item: "rftoolspower:power_core1",
+			count: 4,
+			weight: 400
+		},
+		{
+			item: "rftoolspower:power_core3",
+			count: 4,
+			weight: 200
+		},
+		{
+			item: "rftoolspower:blazing_rod",
+			count: 8,
+			weight: 200
+		},
+		{
+			item: "rftoolsutility:tank",
+			weight: 200
+		},
+		{
+			item: "rftoolspower:powercell_card",
+			count: 8,
+			weight: 400
+		},
+		{
+			item: "rftoolsbase:infused_diamond",
+			count: 32,
+			weight: 100
+		},
+		{
+			item: "rftoolsbase:infused_enderpearl",
+			count: 32,
+			weight: 100
+		},
+		{
+			item: "minecraft:repeater",
+			weight: 400
+		},
+		{
+			item: "minecraft:comparator",
+			weight: 400
+		},
+		{
+			item: "rftoolsutility:digit",
+			weight: 400
+		},
+		{
+			item: "rftoolspower:power_monitor",
+			weight: 200
+		},
+		{
+			item: "rftoolsutility:creative_screen"
+		}
+	]
 }

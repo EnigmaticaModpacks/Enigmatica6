@@ -2,18 +2,18 @@
 unlockEnabled = true
 #List of trinkets blocked from being unlocked, eg: ["losttrinkets:piggy", "losttrinkets:magical_feathers"]
 #The trinkets listed in here will also be removed from players that already unlocked them.
-blackList = ["losttrinkets:mirror_shard", "losttrinkets:magneto", "losttrinkets:octopus_leg"]
+blackList = ["losttrinkets:mirror_shard", "losttrinkets:magneto", "losttrinkets:octopus_leg", "losttrinkets:rock_candy","losttrinkets:tha_cloud","losttrinkets:turtle_shell","losttrinkets:blaze_heart","losttrinkets:tha_bat","losttrinkets:tea_leaf","losttrinkets:dark_egg","losttrinkets:octopick","losttrinkets:magical_herbs","losttrinkets:magical_feathers","losttrinkets:mad_aura",]
 
 [Trinket_Slots]
 	#Amount of Xp levels added to the next unlocking cost.
 	#Range: 0 ~ 20
-	slotUpFactor = 3
+	slotUpFactor = 5
 	#Numbers of trinket slots the player will start with (Only effect newer players!!).
 	#Range: 0 ~ 40
 	startSlots = 1
 	#Levels of xp needed to unlock a trinket slot.
 	#Range: 0 ~ 1000
-	slotCost = 15
+	slotCost = 20
 
 [Killing_Unlocks]
 	#Set to false to disable unlocking trinkets from killing non-Boss entities.

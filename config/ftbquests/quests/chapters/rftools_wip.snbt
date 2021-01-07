@@ -661,7 +661,7 @@
 				type: "command",
 				title: "XNet Tutorial Link",
 				command: '/tellraw @p {"text":"XNet Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=ksaJgiipaOg&t=608s"}}',
-				player_command: true
+				player_command: false
 			}]
 		},
 		{

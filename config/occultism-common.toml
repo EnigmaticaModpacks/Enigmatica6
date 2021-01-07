@@ -28,7 +28,7 @@
 		#True to generate underground groves. Should not be changed in most scenarios.
 		generateUndergroundGroves = true
 		#The chance for a grove to spawn in a chunk (generates 1/groveSpawnChance chunks on average).
-		groveSpawnChance = 400
+		groveSpawnChance = 250
 		#The min height for a grove to spawn (applied to the center of the grove, not the floor).
 		groveSpawnMin = 25
 		#The max height for a grove to spawn (applied to the center of the grove, not the ceiling).
@@ -122,9 +122,9 @@
 	#Miner Spirit Settings
 	[dimensional_mineshaft.miner_djinni_ores]
 		#The amount of time it takes the spirit to perform one mining operation.
-		maxMiningTime = 400
+		maxMiningTime = 300
 		#The amount of blocks the spirit will obtain per mining operation
-		rollsPerOperation = 1
+		rollsPerOperation = 2
 		#The amount of mining operations the spirit can perform before breaking.
-		durability = 100
+		durability = 5000
 

@@ -80,6 +80,10 @@
 		#Range: 0 ~ 50
 		sack_increment = 2
 
+	[blocks.safe]
+		#makes safes only breakable by their owner or by a player in creative
+		prevent_breaking = true
+
 #Configure spawning conditions
 [spawns]
 

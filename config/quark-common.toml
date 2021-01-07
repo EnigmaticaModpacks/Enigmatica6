@@ -486,7 +486,7 @@
 		"Cave Crystal Growth Chance" = 5
 		"Crystals Grow In Lava" = false
 		#Allowed values: [0,1]
-		"Crystal Spawn Chance" = 0.025
+		"Crystal Spawn Chance" = 0.050
 		"Crystals Craft Runes" = true
 
 		[world.cave_crystal_underground_biome.biome_settings]
@@ -1622,6 +1622,8 @@
 		"Nerf Villager Discount" = true
 		#Makes Iron Golems not drop Iron Ingots
 		"Disable Iron Farms" = true
+		#Makes Boats not glide on ice
+		"Disable Ice Roads" = true
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).

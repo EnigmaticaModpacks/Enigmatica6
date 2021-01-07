@@ -8,4 +8,6 @@ debugLogLevel = 0
 #Set to true to serialize and deserialize the recipe packet even in singleplayer.
 #This is useless for anything but debugging issues
 runSerializerInSingleplayer = false
+#Prefix recipes by their length in the packet. This allows early detection of broken serializers
+writeRecipeLength = false
 

@@ -72,8 +72,8 @@
 		{
 			title: "Advanced Power Generation",
 			icon: "engineersdecor:sign_hotwire",
-			x: 9.5d,
-			y: -2.0d,
+			x: 5.5d,
+			y: -1.5d,
 			description: [
 				"That little Gas-Burning Generator is probably doing OK up to this point. One could be excused for thinking it's enough. ",
 				"",
@@ -99,7 +99,7 @@
 		},
 		{
 			x: -2.5d,
-			y: -0.5d,
+			y: 0.0d,
 			subtitle: "Argent Crucible",
 			description: [
 				"The Heat Generator is a multi-function device that will be useful early on as a source of power.",
@@ -136,7 +136,7 @@
 		},
 		{
 			x: -2.5d,
-			y: 1.0d,
+			y: 2.0d,
 			subtitle: "100% Cancer-Free",
 			description: [
 				"Lava has a tendency to set things on fire, which some would deem indesireable. As a step up from the Heat Generator, there's the Wind Generator. ",
@@ -169,7 +169,7 @@
 		},
 		{
 			x: -2.5d,
-			y: 2.5d,
+			y: 4.0d,
 			subtitle: "Frightening Efficiency",
 			description: ["The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium."],
 			dependencies: [I;
@@ -192,8 +192,8 @@
 		{
 			title: "Induction Matrix",
 			icon: "mekanism:basic_induction_cell",
-			x: 8.5d,
-			y: 0.5d,
+			x: 4.5d,
+			y: 1.0d,
 			subtitle: "There Is No Spoon",
 			description: [
 				"Energy Cubes do a respectable job at storing energy but they're far too limited when it comes to dealing with the output of a Fission Reactor. The Induction Matrix offers higher energy density and greater throughput. Building a buffer of energy for the steps to come may also be a prudent idea.",
@@ -432,8 +432,8 @@
 		{
 			title: "Thermal Evaporation Plant",
 			icon: "mekanism:thermal_evaporation_controller",
-			x: 8.5d,
-			y: -1.5d,
+			x: 4.5d,
+			y: -1.0d,
 			subtitle: "Reduce By Half, Simmer Gently",
 			description: [
 				"Before getting too deep into nuclear physics, a little ground-work will be needed. The Thermal Evaporation Plant will feature heavily in the coming processes so understanding it is going to be vital.",
@@ -596,8 +596,8 @@
 		{
 			title: "Lithium",
 			icon: "emendatusenigmatica:lithium_dust",
-			x: 8.0d,
-			y: -0.5d,
+			x: 4.0d,
+			y: 0.0d,
 			subtitle: "I've Found My Friends, They're In My Head",
 			description: [
 				"Before moving on, that Brine will need to be run through a second Evaporation Tower to form Liquid Lithium. ",
@@ -628,8 +628,8 @@
 		{
 			title: "Input: Sulfur",
 			icon: "emendatusenigmatica:sulfur_dust",
-			x: 5.5d,
-			y: 0.0d,
+			x: 9.5d,
+			y: -0.5d,
 			shape: "rsquare",
 			dependencies: [I;1892],
 			id: 1835,
@@ -642,8 +642,8 @@
 		{
 			title: "Input: Uranium",
 			icon: "emendatusenigmatica:uranium_ingot",
-			x: 1.0d,
-			y: 7.0d,
+			x: 13.0d,
+			y: 6.5d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1837,
@@ -656,8 +656,8 @@
 		{
 			title: "Sulfur Dioxide",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 4.5d,
-			y: 2.0d,
+			x: 10.5d,
+			y: 1.5d,
 			shape: "diamond",
 			dependencies: [I;1843],
 			id: 1839,
@@ -684,8 +684,8 @@
 					}
 				}
 			},
-			x: 7.0d,
-			y: 4.0d,
+			x: 8.0d,
+			y: 3.5d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1841,
@@ -698,8 +698,8 @@
 		{
 			title: "Chemical Oxidizer",
 			icon: "mekanism:chemical_oxidizer",
-			x: 5.5d,
-			y: 1.0d,
+			x: 9.5d,
+			y: 0.5d,
 			shape: "hexagon",
 			dependencies: [I;1835],
 			id: 1843,
@@ -712,8 +712,8 @@
 		{
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
-			x: 4.5d,
-			y: 3.0d,
+			x: 10.5d,
+			y: 2.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1839,
@@ -729,8 +729,8 @@
 		{
 			title: "Electrolytic Separator",
 			icon: "mekanism:electrolytic_separator",
-			x: 6.5d,
-			y: 3.0d,
+			x: 8.5d,
+			y: 2.5d,
 			shape: "hexagon",
 			dependencies: [I;1841],
 			id: 1853,
@@ -743,8 +743,8 @@
 		{
 			title: "Output: Hydrogen",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 6.5d,
-			y: 2.0d,
+			x: 8.5d,
+			y: 1.5d,
 			dependencies: [I;1853],
 			id: 1855,
 			tasks: [{
@@ -756,8 +756,8 @@
 		{
 			title: "Oxygen",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 5.5d,
-			y: 3.0d,
+			x: 9.5d,
+			y: 2.5d,
 			shape: "diamond",
 			dependencies: [I;1853],
 			id: 1857,
@@ -770,8 +770,8 @@
 		{
 			title: "Sulfur Trioxide",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 4.5d,
-			y: 4.0d,
+			x: 10.5d,
+			y: 3.5d,
 			shape: "diamond",
 			dependencies: [I;1848],
 			id: 1859,
@@ -784,8 +784,8 @@
 		{
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
-			x: 4.5d,
-			y: 5.0d,
+			x: 10.5d,
+			y: 4.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1859,
@@ -801,8 +801,8 @@
 		{
 			title: "Rotary Condensentrator",
 			icon: "mekanism:rotary_condensentrator",
-			x: 6.5d,
-			y: 5.0d,
+			x: 8.5d,
+			y: 4.5d,
 			shape: "hexagon",
 			dependencies: [I;1841],
 			id: 1863,
@@ -815,8 +815,8 @@
 		{
 			title: "Water Vapor",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 5.5d,
-			y: 5.0d,
+			x: 9.5d,
+			y: 4.5d,
 			shape: "diamond",
 			dependencies: [I;1863],
 			id: 1865,
@@ -829,8 +829,8 @@
 		{
 			title: "Sulfuric Acid",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 3.5d,
-			y: 6.0d,
+			x: 10.5d,
+			y: 5.5d,
 			shape: "diamond",
 			dependencies: [I;1861],
 			id: 1867,
@@ -841,8 +841,8 @@
 			}]
 		},
 		{
-			x: 3.5d,
-			y: 7.0d,
+			x: 10.5d,
+			y: 6.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1867,
@@ -859,8 +859,8 @@
 		{
 			title: "Input: Fluorite",
 			icon: "emendatusenigmatica:fluorite_gem",
-			x: 2.0d,
-			y: 6.0d,
+			x: 12.0d,
+			y: 5.5d,
 			shape: "rsquare",
 			dependencies: [I;1893],
 			id: 1871,
@@ -873,8 +873,8 @@
 		{
 			title: "Hydrofluoric Acid",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 4.5d,
-			y: 7.0d,
+			x: 9.5d,
+			y: 6.5d,
 			shape: "diamond",
 			dependencies: [I;1869],
 			id: 1873,
@@ -887,8 +887,8 @@
 		{
 			title: "Chemical Infuser",
 			icon: "mekanism:chemical_infuser",
-			x: 5.5d,
-			y: 7.0d,
+			x: 8.5d,
+			y: 6.5d,
 			shape: "hexagon",
 			dependencies: [I;
 				1873,
@@ -904,8 +904,8 @@
 		{
 			title: "Yellow Cake Uranium",
 			icon: "mekanism:yellow_cake_uranium",
-			x: 3.5d,
-			y: 8.0d,
+			x: 9.5d,
+			y: 7.5d,
 			shape: "diamond",
 			dependencies: [I;1886],
 			id: 1878,
@@ -932,8 +932,8 @@
 					}
 				}
 			},
-			x: 5.5d,
-			y: 8.0d,
+			x: 8.5d,
+			y: 7.5d,
 			shape: "diamond",
 			dependencies: [I;1884],
 			id: 1880,
@@ -960,8 +960,8 @@
 					}
 				}
 			},
-			x: 6.5d,
-			y: 7.0d,
+			x: 7.5d,
+			y: 6.5d,
 			shape: "diamond",
 			dependencies: [I;1876],
 			id: 1882,
@@ -974,8 +974,8 @@
 		{
 			title: "Chemical Oxidizer",
 			icon: "mekanism:chemical_oxidizer",
-			x: 4.5d,
-			y: 8.0d,
+			x: 10.5d,
+			y: 7.5d,
 			shape: "hexagon",
 			dependencies: [I;1878],
 			id: 1884,
@@ -988,8 +988,8 @@
 		{
 			title: "Enrichment Chamber",
 			icon: "mekanism:enrichment_chamber",
-			x: 2.5d,
-			y: 8.0d,
+			x: 11.5d,
+			y: 7.5d,
 			shape: "hexagon",
 			dependencies: [I;1837],
 			id: 1886,
@@ -1003,7 +1003,7 @@
 			title: "Isotopic Centrifuge",
 			icon: "mekanism:isotopic_centrifuge",
 			x: 7.5d,
-			y: 7.0d,
+			y: 7.5d,
 			shape: "hexagon",
 			dependencies: [I;1882],
 			id: 1888,
@@ -1016,8 +1016,8 @@
 		{
 			title: "Output: Fissile Fuel",
 			icon: "mekanism:ultimate_chemical_tank",
-			x: 9.0d,
-			y: 8.0d,
+			x: 7.5d,
+			y: 9.0d,
 			description: ["Oh! You're still here?"],
 			dependencies: [I;1888],
 			id: 1890,
@@ -1062,8 +1062,8 @@
 			]
 		},
 		{
-			x: 5.5d,
-			y: -1.5d,
+			x: 9.5d,
+			y: -2.0d,
 			subtitle: "On The House",
 			description: [
 				"Mekanism's Fission Reactors are new to v10 and as such even veteran players may find themselves a little lost. So have a free flow-chart, on us.",
@@ -1093,8 +1093,8 @@
 		{
 			title: "Fuel Rod Assembly",
 			icon: "mekanismgenerators:control_rod_assembly",
-			x: 10.5d,
-			y: 0.5d,
+			x: 6.5d,
+			y: 1.0d,
 			subtitle: "Nuclear Launch Detected",
 			description: [
 				"The Fuel Rod Assembly is what actually holds the fissile material during the reaction. Having more allows the reactor to burn fuel faster. ",
@@ -1136,8 +1136,8 @@
 		{
 			title: "Fission Reactor Casing",
 			icon: "mekanismgenerators:fission_reactor_casing",
-			x: 10.5d,
-			y: -1.5d,
+			x: 6.5d,
+			y: -1.0d,
 			subtitle: "Limiting Exposure",
 			description: [
 				"The first step in actually constructing a fission reactor is building a safe place to put it. Something that keeps all that radiation at bay.",
@@ -1179,8 +1179,8 @@
 		},
 		{
 			title: "Safety Precautions",
-			x: 11.0d,
-			y: -0.5d,
+			x: 7.0d,
+			y: 0.0d,
 			subtitle: "Getting Out In Front",
 			description: [
 				"History has shown us time and time again that a Safety-First approach is the only sane way to work with something as dangerouns as nuclear physics. Three Mile Island may have been a disaster, but the fact that nobody died is a testament to the importance of safety protocols. ",
@@ -1224,8 +1224,8 @@
 			]
 		},
 		{
-			x: 9.5d,
-			y: 2.0d,
+			x: 6.0d,
+			y: 3.0d,
 			subtitle: "HLW Disposal",
 			description: [
 				"Burning Fissile Fuel naturally creates waste. Proper handling and storage of this waste is critical. Waste may only be transported via Mekanism's Pressurized Tubes and can only be stored in Radioactive Waste Barrels, or machines that accept waste for reprocessing. ",
@@ -1298,8 +1298,8 @@
 		{
 			title: "Plutonium Processing",
 			icon: "mekanism:pellet_plutonium",
-			x: 9.0d,
-			y: 3.5d,
+			x: 6.5d,
+			y: 4.5d,
 			subtitle: "The Fat Man",
 			description: ["Waste may be reprocessed into Plutonium, either for use in building advanced structures, or as a way to recycle fuel to run back through the Fission Reactor. "],
 			dependencies: [I;1957],
@@ -1334,8 +1334,8 @@
 		{
 			title: "Polonium Processing",
 			icon: "mekanism:pellet_polonium",
-			x: 10.0d,
-			y: 3.5d,
+			x: 5.5d,
+			y: 4.5d,
 			subtitle: "Litvenenko's Demise",
 			description: [
 				"Polonium is a particularly nasty substance that is nonetheless useful in a variety of applications. ",
@@ -1396,8 +1396,8 @@
 		{
 			title: "Supercritical Phase Shifter",
 			icon: "mekanism:sps_casing",
-			x: 9.5d,
-			y: 5.0d,
+			x: 6.0d,
+			y: 6.0d,
 			subtitle: "I've Giv'n Her All We've Got, Captain",
 			description: [
 				"You had a stockpile of Uranium, right? Yeah. You're going to need a lot to build this structure, which is used for generating Antimatter from Nuclear Waste.",
@@ -1460,8 +1460,8 @@
 		{
 			title: "Fusion Reactor",
 			icon: "mekanismgenerators:fusion_reactor_controller",
-			x: 11.0d,
-			y: 2.0d,
+			x: 4.5d,
+			y: 3.0d,
 			subtitle: "Star in a Box",
 			description: [
 				"Fusion, the power of the stars, without which no heavier elements would exist.",
@@ -1523,8 +1523,8 @@
 		{
 			title: "Industrial Turbine",
 			icon: "mekanismgenerators:turbine_blade",
-			x: 12.0d,
-			y: 0.0d,
+			x: 5.5d,
+			y: 1.5d,
 			subtitle: "Bursting at the Seams",
 			description: [
 				"The Fission Reactor doesn't produce useful energy on its own. Rather, the steam it generates must be run through an Industrial Turbine in order to generate FE. The Turbine is also critical for recycling steam into water to return to the Fission Reactor for cooling. Without this reprocessing loop, it is exceptionally difficult to provide enough coolant to keep the Reactor running. ",
@@ -1613,8 +1613,8 @@
 			}]
 		},
 		{
-			x: 10.5d,
-			y: 6.5d,
+			x: 5.0d,
+			y: 7.5d,
 			subtitle: "Inverse Wave Function",
 			description: ["Once believed impossible to generate in any meaningful quantity, Antimatter opens up possibilities that some might consider magical. "],
 			dependencies: [I;1969],
@@ -1634,8 +1634,8 @@
 			}]
 		},
 		{
-			x: 12.0d,
-			y: 7.0d,
+			x: 3.5d,
+			y: 8.5d,
 			subtitle: "Indistinguishable from Magic",
 			description: [
 				"Alchemists of yore were correct in believing that elemental substances could be transmuted. ",
@@ -1659,8 +1659,8 @@
 			}]
 		},
 		{
-			x: 11.0d,
-			y: 5.0d,
+			x: 4.5d,
+			y: 6.0d,
 			subtitle: "Bigger on the Inside",
 			description: ["The heart and soul of any QIO Network. Insert drives and set a channel to begin. "],
 			dependencies: [I;1961],
@@ -1680,8 +1680,8 @@
 			}]
 		},
 		{
-			x: 12.0d,
-			y: 4.0d,
+			x: 3.5d,
+			y: 5.0d,
 			subtitle: "Remote Viewing",
 			description: ["Dashboards may be placed anywhere and allow for manual insertion into and extraction from the network."],
 			dependencies: [I;1991],
@@ -1702,8 +1702,8 @@
 		},
 		{
 			title: "QIO Importing and Exporting",
-			x: 12.0d,
-			y: 6.0d,
+			x: 3.5d,
+			y: 7.0d,
 			subtitle: "Garbage In, Garbage Out",
 			description: ["Storing items in a QIO Drive Array is rather daft if there's no way of actually getting things in or out automatically. The QIO Importers and Exporters facilitate this, allowing the ssystem to work as a wireless item transfer and storage system."],
 			dependencies: [I;1991],
@@ -1730,8 +1730,8 @@
 			}]
 		},
 		{
-			x: 13.0d,
-			y: 4.5d,
+			x: 2.5d,
+			y: 5.5d,
 			subtitle: "Better than Bins",
 			description: ["QIO Drives provide the same deep storage as Bins but with centralized access and a smaller footprint. "],
 			dependencies: [I;1991],
@@ -1751,8 +1751,8 @@
 			}]
 		},
 		{
-			x: 13.0d,
-			y: 5.5d,
+			x: 2.5d,
+			y: 6.5d,
 			subtitle: "Make it Stop!",
 			description: ["The Redstone Adapter simply outputs a signal when a certain threshold of an item has been reached within the QIO drive space, allowing a simple way of disabling machinery that no longer needs to run."],
 			dependencies: [I;1991],
@@ -1774,8 +1774,8 @@
 		{
 			title: "Laser Amplification",
 			icon: "mekanism:laser_amplifier",
-			x: 12.0d,
-			y: 3.0d,
+			x: 3.5d,
+			y: 4.0d,
 			subtitle: "This One Goes to Eleven",
 			description: [
 				"In order to actually kickstart a Fusion Reactor, a highly focused and energetic burst of energy is required. ",
@@ -1827,8 +1827,8 @@
 		{
 			title: "Don't Panic",
 			icon: "minecraft:cod",
-			x: 9.5d,
-			y: -0.5d,
+			x: 5.5d,
+			y: 0.0d,
 			subtitle: "There's a Frood Who Really Knows Where His Towel Is",
 			description: [
 				"Accidents happen. ",
