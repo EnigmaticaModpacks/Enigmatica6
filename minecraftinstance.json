@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-01-07T17:54:36.8242682Z",
+  "lastPlayed": "2021-01-07T21:49:23.7993166Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-01-06T21:52:41.7105489Z",
+  "lastPreviousMatchUpdate": "2021-01-07T19:21:05.4064007Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.4",
@@ -6846,7 +6846,7 @@
       "dateInstalled": "2021-01-04T19:31:23.8763934Z",
       "dateUpdated": "2021-01-04T19:31:23.8793856Z",
       "dateLastUpdateAttempted": "2021-01-04T19:31:23.8793856Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7585,7 +7585,7 @@
       "dateInstalled": "2020-11-10T20:28:26.0180878Z",
       "dateUpdated": "2020-11-13T21:23:57.6372746Z",
       "dateLastUpdateAttempted": "2020-11-13T21:23:57.6372746Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8956,7 +8956,7 @@
       "dateInstalled": "2021-01-03T20:42:50.969674Z",
       "dateUpdated": "2021-01-03T20:42:50.9756586Z",
       "dateLastUpdateAttempted": "2021-01-03T20:42:50.9756586Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12113,7 +12113,7 @@
       "dateInstalled": "2020-11-10T20:27:37.5916743Z",
       "dateUpdated": "2021-01-06T19:43:54.6269029Z",
       "dateLastUpdateAttempted": "2021-01-06T19:43:54.6269029Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": false,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12768,7 +12768,7 @@
       "dateInstalled": "2020-12-27T15:16:44.6985673Z",
       "dateUpdated": "2021-01-06T19:43:51.1077467Z",
       "dateLastUpdateAttempted": "2021-01-06T19:43:51.1077467Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13748,97 +13748,6 @@
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
       "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 433648,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3160700,
-        "displayName": "tomeofblood-1.16.4-1.0.2.jar",
-        "fileName": "tomeofblood-1.16.4-1.0.2.jar",
-        "fileDate": "2021-01-06T21:17:32.153Z",
-        "fileLength": 38093,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3160/700/tomeofblood-1.16.4-1.0.2.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 224791,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 401955,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 660956221,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 2770035557,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2409356652,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2740078101,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3630444543,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 198941172,
-        "gameVersion": [
-          "Forge",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "tomeofblood-1.16.4-1.0.2.jar"
-      },
-      "dateInstalled": "2021-01-06T22:32:32.7112254Z",
-      "dateUpdated": "2021-01-06T22:32:32.714218Z",
-      "dateLastUpdateAttempted": "2021-01-06T22:32:32.714218Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
       "isWorkingCopy": false,
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
@@ -15909,102 +15818,6 @@
       "dateInstalled": "2020-12-29T18:46:42.7100851Z",
       "dateUpdated": "2020-12-29T18:46:42.7120408Z",
       "dateLastUpdateAttempted": "2020-12-29T18:46:42.7120408Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 401955,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3157929,
-        "displayName": "ars_nouveau-1.16.4-1.10.6.jar",
-        "fileName": "ars_nouveau-1.16.4-1.10.6.jar",
-        "fileDate": "2021-01-04T05:09:30.543Z",
-        "fileLength": 2477242,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3157/929/ars_nouveau-1.16.4-1.10.6.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 309927,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 388172,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 306770,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2153586244,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 976882872,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2443040579,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 690723043,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 4056328335,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1004274454,
-        "gameVersion": [
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "ars_nouveau-1.16.4-1.10.6.jar"
-      },
-      "dateInstalled": "2020-12-20T05:14:55.2042843Z",
-      "dateUpdated": "2021-01-04T19:37:00.6215283Z",
-      "dateLastUpdateAttempted": "2021-01-04T19:37:00.6215283Z",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -21512,83 +21325,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 388172,
-      "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
-      "installedFile": {
-        "id": 3135745,
-        "displayName": "GeckoLib 3.0.0",
-        "fileName": "forge-1.16.4-geckolib-3.0.0.jar",
-        "fileDate": "2020-12-11T00:12:53.8Z",
-        "fileLength": 2708284,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3135/745/forge-1.16.4-geckolib-3.0.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 763389205,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "software",
-            "fingerprint": 3145885063,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 315047104,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "geckolib.png",
-            "fingerprint": 3653859787,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3380797652,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 2369550246,
-        "gameVersion": [
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "forge-1.16.4-geckolib-3.0.0.jar"
-      },
-      "dateInstalled": "2020-12-19T20:37:48.3363444Z",
-      "dateUpdated": "2020-12-19T20:37:48.3403355Z",
-      "dateLastUpdateAttempted": "2020-12-19T20:37:48.3403355Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 428277,
       "gameInstanceID": "277e08eb-95fe-47a7-8a90-7b58be2c6d01",
       "installedFile": {
@@ -21964,7 +21700,7 @@
       "dateInstalled": "2021-01-04T19:32:02.7337079Z",
       "dateUpdated": "2021-01-04T19:32:02.7376973Z",
       "dateLastUpdateAttempted": "2021-01-04T19:32:02.7376973Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22461,7 +22197,7 @@
       "dateInstalled": "2020-12-14T20:57:38.4865226Z",
       "dateUpdated": "2020-12-14T20:57:38.4954718Z",
       "dateLastUpdateAttempted": "2020-12-14T20:57:38.4954718Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
