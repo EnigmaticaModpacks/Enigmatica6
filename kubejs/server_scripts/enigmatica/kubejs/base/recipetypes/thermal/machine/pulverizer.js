@@ -2,6 +2,11 @@ events.listen('recipes', function (event) {
     var data = {
         recipes: [
             {
+                input: '#forge:ores/netherite',
+                experience: 0.2,
+                outputs: [item.of('minecraft:netherite_scrap', 2)]
+            },
+            {
                 input: '#forge:ores/nickel',
                 experience: 0.2,
                 outputs: [
