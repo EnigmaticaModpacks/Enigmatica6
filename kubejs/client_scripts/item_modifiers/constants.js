@@ -52,5 +52,6 @@ var itemsToHide = [
     'supplementaries:jar_tinted',
     'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
-    'supplementaries:sack'
+    'supplementaries:sack',
+    'supplementaries:blackboard'
 ];
