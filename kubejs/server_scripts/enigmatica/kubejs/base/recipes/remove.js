@@ -33,7 +33,7 @@ events.listen('recipes', function (event) {
         'thermal:bamboo_block',
 
         'quantumstorage:tank',
-        'quantumstorage:qsu',
+        'quantumstorage:qsu'
     ];
 
     var idRemovals = [
