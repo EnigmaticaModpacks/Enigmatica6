@@ -2,50 +2,51 @@
 
 _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.5.txt)_
 
+**New mods!**
+
+- CC: Tweaked
+- CookieCore
+- KubeJS Create
+- Magic Feather
+- Refined Storage for ComputerCraft
+- Snow Under Trees
+- Supplementaries
+
 **Improvements**
 
-- Tetra: Botania metals as Tetra materials now repair when supplied with mana
-
-- Botany Pots: Added Occultism datura compatibility
-
+-   Botany Pots: Added Occultism datura compatibility
+-   Lost Trinkets: Increased XP cost of unlocking more slots.
+-   Tetra: Botania metals as Tetra materials now repair when supplied with mana
+-   Worldgen: Added a whole bunch of good looking stone types to the underground.
+-   Worldgen: Slightly increased how many Emerald Ores generate in mountains
+-   Worldgen: Increased spawn chance of Occultism underground groves.
+-   Worldgen: Increased Quark Crystal Cave generation
+-   Worldgen: Increased Eidolon Stray Tower generation
 -   Worldgen: Slightly decreased how many ores generated for the following ores:
-
     -   Iron
     -   Copper
     -   Tin
     -   Osmium
     -   Fluorite
     -   Coal
-
-- Worldgen: Slightly increased how many Emerald Ores generate in mountains
-
-- Worldgen: Increased spawn chance of Occultism underground groves.
-
-- Worldgen: Increased Quark Crystal Cave generation 
-
-- Worldgen: Increased Eidolon Stray Tower generation
-
-- Lost Trinkets: Increased XP cost of unlocking more slots.
-
-- Lost Trinkets: Disabled a number of trinkets, due to them being overpowered and/or obtainable in a more fair way.
-
-  - Rock Candy
-  - Tha Cloud
-  - Turtle Sheel
-  - Blaze Heart
-  - Tha Bat
-  - Tea Leaf
-  - Dark Egg
-  - Octopick
-  - Magic Herbs
-  - Magical Feathers
-  - Mad Aura
-  
-  
+    -   Redstone
 
 **Bug Fixes**
 
+-   Apotheosis does not increase level cap of Ars Noveue Enchantments.  [\#753](https://github.com/NillerMedDild/Enigmatica6/issues/753)
+-   Apotheosis spawner config set to use Max INT for many limits. Intended? [\#754](https://github.com/NillerMedDild/Enigmatica6/issues/754)
+-   \[Bug\] TheOneProbe-Create oddities [\#727](https://github.com/NillerMedDild/Enigmatica6/issues/727)
+-   Bees won't go in new hives if they're carrying pollen [\#763](https://github.com/NillerMedDild/Enigmatica6/issues/763)
+-   Blaze Bees doesn't use any flower, fungus, or netherwart [\#768](https://github.com/NillerMedDild/Enigmatica6/issues/768)
+-   Entering commands in chat or command blocks results in temporary lookup or sometimes java becomes unresponsive [\#694](https://github.com/NillerMedDild/Enigmatica6/issues/694)
+-   found certus quartz in newly generated world [\#746](https://github.com/NillerMedDild/Enigmatica6/issues/746)
+-   Further refinement on beelancing [\#662](https://github.com/NillerMedDild/Enigmatica6/issues/662)
+-   Machine Infuser ONLY accepts Dimensional Shards from RFToolsBase, no other Dimensional Shards \(aka Emendatus Enigmatica\) [\#776](https://github.com/NillerMedDild/Enigmatica6/issues/776)
+-   Obsidian Bees Kill themselves [\#749](https://github.com/NillerMedDild/Enigmatica6/issues/749)
+-   recipe conflict with quark and eidolon [\#759](https://github.com/NillerMedDild/Enigmatica6/issues/759)
+-   Removed Fishing Real [\#790](https://github.com/NillerMedDild/Enigmatica6/issues/790)
 -   Removed Immersive Posts Metal Rod recipes
+-   Thermal Pulverizer doesn't accept Ancient Debris [\#793](https://github.com/NillerMedDild/Enigmatica6/issues/793)
 
 ### Enigmatica 6 v0.3.4
 
