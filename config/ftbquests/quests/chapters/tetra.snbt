@@ -134,6 +134,7 @@
 			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
 			description: ["Hit the highlighted areas on crates and containers with the correct tools to break them open."],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1911,
 			tasks: [{
@@ -233,10 +234,7 @@
 				"",
 				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
 			],
-			dependencies: [I;
-				1911,
-				2179
-			],
+			dependencies: [I;2179],
 			id: 1921,
 			tasks: [{
 				id: 2133,
