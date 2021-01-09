@@ -1,6 +1,6 @@
 {
   "flower": "ALL",
-  "maxTimeInHive": 1600,
+  "maxTimeInHive": 2400,
   "sizeModifier": 0.5,
   "hasHoneycomb": true,
   "apiaryOutputAmounts": [3, 6, 1, 2],
@@ -24,12 +24,12 @@
     "hasCentrifugeOutput": true,
     "mainOutput": "minecraft:red_dye",
     "secondaryOutput": "minecraft:green_dye",
-    "bottleOutput": "minecraft:blue_dye",
+    "bottleOutput": "resourcefulbees:rainbow_honey_bottle",
     "bottleOutputWeight": 0.3,
     "mainOutputWeight": 0.3,
     "secondaryOutputWeight": 0.3,
     "mainInputCount": 1,
-    "mainOutputCount": 2
+    "mainOutputCount": 3
   },
   "SpawnData": {
     "canSpawnInWorld": true,
