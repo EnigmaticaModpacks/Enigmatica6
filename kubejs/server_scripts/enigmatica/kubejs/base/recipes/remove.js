@@ -63,6 +63,7 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod',
 
         'morevanillalib:obsidian_shard',
+
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
     ];
@@ -138,6 +139,8 @@ events.listen('recipes', function (event) {
         mod: 'occultism',
         type: 'occultism:miner'
     });
+
+    event.remove({ type: 'valhelsia_structures:axe_crafting' });
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
