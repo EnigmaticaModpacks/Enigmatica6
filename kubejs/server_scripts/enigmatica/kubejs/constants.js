@@ -223,7 +223,6 @@ const generatableCobblestone = [
     'embellishcraft:larvikite_cobblestone',
     'embellishcraft:marble_cobblestone',
     'embellishcraft:slate_cobblestone',
-    'minecraft:blackstone',
     'create:andesite_cobblestone',
     'create:diorite_cobblestone',
     'create:granite_cobblestone',
