@@ -1,17 +1,144 @@
-### Enigmatica 6 v0.3.3
+### Enigmatica 6 v0.3.5
 
-_Using Forge-1.16.4-35.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.3.txt)_
+_Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.5.txt)_
+
+**New mods!**
+
+- CC: Tweaked
+- CookieCore
+- KubeJS Create
+- Magic Feather
+- Refined Storage for ComputerCraft
+- Snow Under Trees
+- Supplementaries
 
 **Improvements**
 
--   Vanilla Cobble generators and Stone generators now randomly produce different types of cobblestone/stone - To target specific stone types check JEI.
--   Oregen: Cleaned up the underground a lot. Now that cobblegens can produce all the different kinds of worldgen stone, they're not needed as much in worldgen.
--   Villagers no longer respond to the mob griefing gamerule, so they are allowed to farm whether it is true or false.
--   Server: Set `max-tick-time` to 300000 in the `server.properties`. This means that the server will crash if a single tick takes longer than 5 minutes. This is a countermeasure against servers being frozen. Note: This change was not due to an issue, but due to a recommendation from a smart person.
--   Tetra: Added a recipe for the Combustion Chamber upgrade, so high-end Tetra isn't worldgen gated. The other upgrades will however not be made available through crafting.
-    **Bug Fixes**
+-   Botany Pots: Added Occultism datura compatibility
+-   Lost Trinkets: Increased XP cost of unlocking more slots.
+-   Tetra: Botania metals as Tetra materials now repair when supplied with mana
+-   Worldgen: Added a whole bunch of good looking stone types to the underground.
+-   Worldgen: Slightly increased how many Emerald Ores generate in mountains
+-   Worldgen: Increased spawn chance of Occultism underground groves.
+-   Worldgen: Increased Quark Crystal Cave generation
+-   Worldgen: Increased Eidolon Stray Tower generation
+-   Worldgen: Slightly decreased how many ores generated for the following ores:
+    -   Iron
+    -   Copper
+    -   Tin
+    -   Osmium
+    -   Fluorite
+    -   Coal
+    -   Redstone
 
+**Bug Fixes**
+
+-   Apotheosis does not increase level cap of Ars Noveue Enchantments.  [\#753](https://github.com/NillerMedDild/Enigmatica6/issues/753)
+-   Apotheosis spawner config set to use Max INT for many limits. Intended? [\#754](https://github.com/NillerMedDild/Enigmatica6/issues/754)
+-   \[Bug\] TheOneProbe-Create oddities [\#727](https://github.com/NillerMedDild/Enigmatica6/issues/727)
+-   Bees won't go in new hives if they're carrying pollen [\#763](https://github.com/NillerMedDild/Enigmatica6/issues/763)
+-   Blaze Bees doesn't use any flower, fungus, or netherwart [\#768](https://github.com/NillerMedDild/Enigmatica6/issues/768)
+-   Entering commands in chat or command blocks results in temporary lookup or sometimes java becomes unresponsive [\#694](https://github.com/NillerMedDild/Enigmatica6/issues/694)
+-   found certus quartz in newly generated world [\#746](https://github.com/NillerMedDild/Enigmatica6/issues/746)
+-   Further refinement on beelancing [\#662](https://github.com/NillerMedDild/Enigmatica6/issues/662)
+-   Machine Infuser ONLY accepts Dimensional Shards from RFToolsBase, no other Dimensional Shards \(aka Emendatus Enigmatica\) [\#776](https://github.com/NillerMedDild/Enigmatica6/issues/776)
+-   Obsidian Bees Kill themselves [\#749](https://github.com/NillerMedDild/Enigmatica6/issues/749)
+-   recipe conflict with quark and eidolon [\#759](https://github.com/NillerMedDild/Enigmatica6/issues/759)
+-   Removed Fishing Real [\#790](https://github.com/NillerMedDild/Enigmatica6/issues/790)
+-   Removed Immersive Posts Metal Rod recipes
+-   Thermal Pulverizer doesn't accept Ancient Debris [\#793](https://github.com/NillerMedDild/Enigmatica6/issues/793)
+
+### Enigmatica 6 v0.3.4
+
+_Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.4.txt)_
+
+**Hotfix - See changelog from v0.3.3 for the rest of the changes since v0.3.2**
+
+**Bug Fixes**
+
+-   \[Server Crash\] Exception in server tick loop - Portable Stonecutter [\#739](https://github.com/NillerMedDild/Enigmatica6/issues/739)
+-   Stone Tools Require Marble [\#738](https://github.com/NillerMedDild/Enigmatica6/issues/738)
+-   Stone tools fix [\#740](https://github.com/NillerMedDild/Enigmatica6/pull/740) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Uranium was improperly tagged as a Nether Only ore in the laser drill [\#741](https://github.com/NillerMedDild/Enigmatica6/pull/741) ([MuteTiefling](https://github.com/MuteTiefling))
+
+### Enigmatica 6 v0.3.3
+
+_Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.3.txt)_
+
+**New Mods!**
+
+-   **Dungeon Crawl**
+-   **Eidolon**
+-   **Occultism**
+-   Armor Toughness Bar
+-   Cat Jammies
+-   Chocolate Fix
+-   Paragliders
+-   Polymorph (Forge)
+-   Spawner Bug Fix
+-   Tamed Summon
+
+**Improvements**
+
+-   **Create Ore Processing Revamp [\#731](https://github.com/NillerMedDild/Enigmatica6/pull/731) ([MuteTiefling](https://github.com/MuteTiefling))**
+-   **Quests: Astral Sorcery [\#568 ](https://github.com/NillerMedDild/Enigmatica6/issues/568) ([MuteTiefling](https://github.com/MuteTiefling))**
+-   **The Great Bee-ficiation - Bee overhaul [\#649](https://github.com/NillerMedDild/Enigmatica6/pull/649) ([Ridanisaurus](https://github.com/Ridanisaurus))**
+-   Add custom names to Apotheosis [\#719](https://github.com/NillerMedDild/Enigmatica6/pull/719) ([Flabort](https://github.com/Flabort))
+-   Added tags to RFTools items for quests [\#665](https://github.com/NillerMedDild/Enigmatica6/pull/665) ([Merlo17](https://github.com/Merlo17))
+-   Astral Mineralis Ore Gen [\#689](https://github.com/NillerMedDild/Enigmatica6/issues/689)
+-   Astral Sorcery Loot Tables [\#713](https://github.com/NillerMedDild/Enigmatica6/pull/713) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create celestial_gateway building gadget template [\#629](https://github.com/NillerMedDild/Enigmatica6/pull/629) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create starlight_infuser building gadget template [\#624](https://github.com/NillerMedDild/Enigmatica6/pull/624) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Gear unification [\#597](https://github.com/NillerMedDild/Enigmatica6/pull/597) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Hide RFTools Dim Ore / Shards in JEI [\#696](https://github.com/NillerMedDild/Enigmatica6/pull/696) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Increase base range of range upgrades for the wireless transmitter \(Refined Storage\) [\#693](https://github.com/NillerMedDild/Enigmatica6/issues/693)
+-   JEI info for Cheese Slice: How to obtain [\#621](https://github.com/NillerMedDild/Enigmatica6/issues/621)
+-   Loot table remake [\#650](https://github.com/NillerMedDild/Enigmatica6/pull/650) ([MuteTiefling](https://github.com/MuteTiefling))
+-   More quest related tags [\#673](https://github.com/NillerMedDild/Enigmatica6/pull/673) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Oregen: Cleaned up the underground a lot. Now that cobblegens can produce all the different kinds of worldgen stone, they're not needed as much in worldgen.
+-   Ore Processing Compat for The Undergarden [\#632](https://github.com/NillerMedDild/Enigmatica6/issues/632)
+-   Pedestals cobble gen update [\#692](https://github.com/NillerMedDild/Enigmatica6/pull/692) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Plate recipes for Create Mechanical press [\#638](https://github.com/NillerMedDild/Enigmatica6/issues/638)
+-   Removal of some chests from forge:chests (Chests that can hold items won't be used in recipes anymore) [\#683](https://github.com/NillerMedDild/Enigmatica6/pull/683) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Saw and Insolator Fixes [\#605](https://github.com/NillerMedDild/Enigmatica6/pull/605) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Server: Set `max-tick-time` to 300000 in the `server.properties`. This means that the server will crash if a single tick takes longer than 5 minutes. This is a countermeasure against servers being frozen. Note: This change was not due to an issue, but due to a recommendation from a smart person.
+-   Tags for use in quests [\#625](https://github.com/NillerMedDild/Enigmatica6/pull/625) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tetra: Added a recipe for the Combustion Chamber upgrade, so high-end Tetra isn't worldgen gated. The other upgrades will however not be made available through crafting.
+-   Tetra: Alternatives to Diorite as T2 hammer [\#579](https://github.com/NillerMedDild/Enigmatica6/issues/579)
+-   Tree Updates [\#611](https://github.com/NillerMedDild/Enigmatica6/pull/611) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update JEI intro in Modded for Dummies [\#699](https://github.com/NillerMedDild/Enigmatica6/pull/699) ([Merlo17](https://github.com/Merlo17))
+-   Updates to ore related configs [\#695](https://github.com/NillerMedDild/Enigmatica6/pull/695) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Vanilla Cobble generators and Stone generators now randomly produce different types of cobblestone/stone - To target specific stone types check JEI.
+-   Villagers no longer respond to the mob griefing gamerule, so they are allowed to farm whether it is true or false.
+
+**Bug Fixes**
+
+-   0.3.2 - BYG buttons are not tagged with minecraft:wooden_buttons [\#636](https://github.com/NillerMedDild/Enigmatica6/issues/636)
+-   0.3.2 Quest text makes a consistent grammar mistake all over the place. [\#610](https://github.com/NillerMedDild/Enigmatica6/issues/610)
+-   3.2 makes the Crafting station uncraftable [\#602](https://github.com/NillerMedDild/Enigmatica6/issues/602)
+-   Activating a holding rail from Transport with any minecart crashes the game. [\#618](https://github.com/NillerMedDild/Enigmatica6/issues/618)
+-   Add Alex's mobs to Megatorch/Dread Lamp configs [\#628](https://github.com/NillerMedDild/Enigmatica6/issues/628)
+-   Ancient Debris Enrichment Chamber Recipes [\#614](https://github.com/NillerMedDild/Enigmatica6/issues/614)
+-   Ars/RS crash, breaking block with gui [\#609](https://github.com/NillerMedDild/Enigmatica6/issues/609)
+-   Ars Nouveau Enchanting Apparatus Crash [\#557](https://github.com/NillerMedDild/Enigmatica6/issues/557)
+-   Astral Sorcery marble doesn't work in most recipes [\#634](https://github.com/NillerMedDild/Enigmatica6/issues/634)
+-   \[Bug\] Icy Bee Breeding [\#670](https://github.com/NillerMedDild/Enigmatica6/issues/670)
+-   \[Quest\] Bee Nests Issue [\#619](https://github.com/NillerMedDild/Enigmatica6/issues/619)
+-   BlockCarpentry slabs horizontal placement [\#471](https://github.com/NillerMedDild/Enigmatica6/issues/471)
+-   Botania Fertilizer can only be made with Cyan Dye [\#641](https://github.com/NillerMedDild/Enigmatica6/issues/641)
+-   Compression dynamo bugged [\#604](https://github.com/NillerMedDild/Enigmatica6/issues/604)
+-   Crafting Table recipes for gears missing \(for me, but not other people\) [\#585](https://github.com/NillerMedDild/Enigmatica6/issues/585)
+-   Crash with Lost Trinkets Mirror Shard Trinket and Guardians [\#644](https://github.com/NillerMedDild/Enigmatica6/issues/644)
+-   Dupe bug with Lost Trinket Magneto [\#534](https://github.com/NillerMedDild/Enigmatica6/issues/534)
+-   Emerald Honeycomb [\#630](https://github.com/NillerMedDild/Enigmatica6/issues/630)
+-   Occultism Harvesting Bug [\#674](https://github.com/NillerMedDild/Enigmatica6/issues/674)
+-   PNC: Memory Stick XP Dupe Bug [\#623](https://github.com/NillerMedDild/Enigmatica6/issues/623)
+-   Portable Stonecutter crafting isn't always possible [\#573](https://github.com/NillerMedDild/Enigmatica6/issues/573)
 -   Resourceful Bees: Fixed Redstone Bee not being breedable
+-   Server crash in ocean monument with mirror shield. [\#498](https://github.com/NillerMedDild/Enigmatica6/issues/498)
+-   Sophisticated Backpacks duplication bug [\#645](https://github.com/NillerMedDild/Enigmatica6/issues/645)
+-   Undergarden Diamond Generation too high [\#669](https://github.com/NillerMedDild/Enigmatica6/issues/669)
+-   Update compression.js (Fixes Thermal Compression Dynamo fuel issue) [\#608](https://github.com/NillerMedDild/Enigmatica6/pull/608) ([MuteTiefling](https://github.com/MuteTiefling))
 
 ### Enigmatica 6 v0.3.2
 

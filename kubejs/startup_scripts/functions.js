@@ -1,3 +1,4 @@
+//TODO: Remove in 0.4.0
 // //priority: 1000
 
 // function material(n, c, i, b) {

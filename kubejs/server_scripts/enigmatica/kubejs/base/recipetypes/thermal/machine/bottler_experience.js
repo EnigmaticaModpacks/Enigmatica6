@@ -11,6 +11,7 @@ events.listen('recipes', (event) => {
     };
     data.recipes.forEach((recipe) => {
         event.recipes.thermal.bottler({
+            type: 'thermal.bottler',
             ingredient: [
                 {
                     item: 'minecraft:glass_bottle'

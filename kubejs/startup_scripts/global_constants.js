@@ -1,3 +1,4 @@
+//TODO: Remove in 0.4.0
 // const disabledItems = [
 //     'aquaculture:wooden_fillet_knife',
 //     'aquaculture:stone_fillet_knife',

@@ -1,7 +1,7 @@
 {
 	id: 1906,
 	filename: "tetra",
-	order_index: 11,
+	order_index: 10,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
@@ -134,6 +134,7 @@
 			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
 			description: ["Hit the highlighted areas on crates and containers with the correct tools to break them open."],
+			dependencies: [I;1921],
 			optional: true,
 			id: 1911,
 			tasks: [{
@@ -233,11 +234,7 @@
 				"",
 				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
 			],
-			dependencies: [I;
-				1911,
-				2179,
-				1927
-			],
+			dependencies: [I;2179],
 			id: 1921,
 			tasks: [{
 				id: 2133,
@@ -271,6 +268,7 @@
 				"",
 				"Planar Stabilizer: + Stats when used for forging purposes"
 			],
+			dependencies: [I;2181],
 			id: 1923,
 			tasks: [
 				{
@@ -371,7 +369,7 @@
 				"",
 				"Note: Thermal Cells are also craftable."
 			],
-			dependencies: [I;2181],
+			dependencies: [I;1921],
 			id: 1927,
 			tasks: [{
 				id: 2132,
@@ -703,7 +701,7 @@
 				"",
 				"If you need higher integrity, try out an End Rod as handle."
 			],
-			dependencies: [I;1923],
+			dependencies: [I;1927],
 			id: 2181,
 			tasks: [{
 				id: 2182,
@@ -735,8 +733,8 @@
 		},
 		{
 			title: "Tier 6",
-			x: -2.4999999999999645d,
-			y: -12.482142857142861d,
+			x: -2.5d,
+			y: -12.5d,
 			shape: "hexagon",
 			description: [
 				"Netherite Ingots will get you to tier 6. ",
@@ -744,6 +742,7 @@
 				"Nou're basically a walking Forge, Congrats!"
 			],
 			dependencies: [I;1923],
+			dependency_requirement: "all_started",
 			size: 1.5d,
 			id: 2183,
 			tasks: [{

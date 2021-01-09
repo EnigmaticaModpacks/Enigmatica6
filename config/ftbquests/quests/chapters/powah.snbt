@@ -1,7 +1,7 @@
 {
 	id: 366,
 	filename: "powah",
-	order_index: 12,
+	order_index: 11,
 	title: "Powah!",
 	icon: "powah:dielectric_casing",
 	default_quest_shape: "",
@@ -881,8 +881,8 @@
 					type: "command",
 					title: "Show off your progress!",
 					icon: "powah:ender_core",
-					command: "/say I have completed Powah's final crafting challenge! I bet you can't!",
-					player_command: true
+					command: "/say @p has completed Powah's final crafting challenge! I bet you can't!",
+					player_command: false
 				},
 				{
 					id: 661,
@@ -936,8 +936,8 @@
 						tag: {}
 					},
 					auto: "enabled",
-					command: "/say I have completed Powah's Ultimate Power Quest! Woot!",
-					player_command: true
+					command: "/say @p completed Powah's Ultimate Power Quest! Woot!",
+					player_command: false
 				},
 				{
 					id: 1611,

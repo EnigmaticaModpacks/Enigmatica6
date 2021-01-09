@@ -71,25 +71,14 @@ events.listen('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.create.milling({
-            type: 'create:milling',
-            ingredients: [
-                {
-                    item: recipe.input
-                }
+        event.recipes.create.milling(
+            [
+                Item.of('minecraft:' + recipe.color + '_dye').count(recipe.multiplier),
+                Item.of('minecraft:' + recipe.color + '_dye')
+                    .count(2)
+                    .withChance(0.25)
             ],
-            results: [
-                {
-                    item: 'minecraft:' + recipe.color + '_dye',
-                    count: recipe.multiplier
-                },
-                {
-                    item: 'minecraft:' + recipe.color + '_dye',
-                    count: 2,
-                    chance: 0.25
-                }
-            ],
-            processingTime: 50
-        });
+            recipe.input
+        );
     });
 });

@@ -17,11 +17,6 @@ events.listen('item.tags', function (event) {
         .add('naturesaura:infused_iron_block')
         .add('naturesaura:tainted_gold_block');
 
-    event.get('forge:storage_blocks/cloggrum').add('undergarden:cloggrum_block');
-    event.get('forge:storage_blocks/froststeel').add('undergarden:froststeel_block');
-    event.get('forge:storage_blocks/utherium').add('undergarden:utherium_block');
-    event.get('forge:storage_blocks/regalium').add('undergarden:regalium_block');
-
     event.get(storageBlocks + '/infused_iron').add('naturesaura:infused_iron_block');
     event.get(storageBlocks + '/tainted_gold').add('naturesaura:tainted_gold_block');
 

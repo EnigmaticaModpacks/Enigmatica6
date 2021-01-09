@@ -82,6 +82,8 @@ boxBorderColor = "0"
 showChestContents = "EXTENDED"
 #Show time to adulthood for baby mobs (0 = not, 1 = always, 2 = sneak)
 showMobGrowth = "NORMAL"
+#This is a list of entities that will not be rendered by TOP. This option also works if it is set client-side alone
+renderBlacklist = []
 
 [style]
 	#Text style. Use a comma delimited list with colors like: 'red', 'green', 'blue', ... or style codes like 'underline', 'bold', 'italic', 'strikethrough', ..."

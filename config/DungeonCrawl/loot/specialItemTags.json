@@ -1,0 +1,239 @@
+{
+  "generic": [],
+  "armor": [
+    {
+      "name": "Deflection",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:thorns"
+      ]
+    },
+    {
+      "name": "Protection",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:protection"
+      ]
+    },
+    {
+      "name": "the Apprentice",
+      "effect": "enchant_randomly",
+      "rarity": 0
+    },
+    {
+      "name": "the Master Blacksmith",
+      "effect": "enchant",
+      "rarity": 4,
+      "enchantments": [
+        "minecraft:protection",
+        "minecraft:unbreaking"
+      ],
+      "level": 3
+    }
+  ],
+  "tool": [
+    {
+      "name": "the Harvester",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:efficiency"
+      ]
+    }
+  ],
+  "sword": [
+    {
+      "name": "the Cinder Lord",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:fire_aspect"
+      ]
+    },
+    {
+      "name": "the Rogue Knight",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:sweeping"
+      ]
+    },
+    {
+      "name": "the Monster Slayer",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:smite"
+      ]
+    },
+    {
+      "name": "the Goblin Slayer",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:sharpness"
+      ]
+    }
+  ],
+  "ranged_weapon": [],
+  "generic_prefix": [
+    {
+      "name": "Arcane",
+      "effect": "enchant_randomly",
+      "rarity": 0
+    }
+  ],
+  "armor_prefix": [
+    {
+      "name": "Tempered",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:protection"
+      ]
+    },
+    {
+      "name": "Fire Proof",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:fire_protection"
+      ]
+    },
+    {
+      "name": "Resistant",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:blast_protection"
+      ]
+    },
+    {
+      "name": "Reinforced",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:projectile_protection"
+      ]
+    },
+    {
+      "name": "Cursed",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:vanishing_curse"
+      ]
+    },
+    {
+      "name": "Cursed",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:binding_curse"
+      ]
+    },
+    {
+      "name": "Reforged",
+      "effect": "multiply_enchantment_level",
+      "rarity": 1,
+      "enchantmentMultiplier": 0.5
+    },
+    {
+      "name": "Surplus",
+      "effect": "multiply_enchantment_level",
+      "rarity": 1,
+      "enchantmentMultiplier": 0.75
+    },
+    {
+      "name": "Legendary",
+      "effect": "multiply_enchantment_level",
+      "rarity": 1,
+      "enchantmentMultiplier": 1.0
+    },
+    {
+      "name": "Genuine",
+      "effect": "multiply_enchantment_level",
+      "rarity": 1,
+      "enchantmentMultiplier": 1.0
+    }
+  ],
+  "tool_prefix": [
+    {
+      "name": "Durable",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:unbreaking"
+      ]
+    },
+    {
+      "name": "Hardened",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:unbreaking"
+      ]
+    },
+    {
+      "name": "Blessed",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:efficiency"
+      ]
+    },
+    {
+      "name": "Reforged",
+      "effect": "multiply_enchantment_level",
+      "rarity": 1,
+      "enchantmentMultiplier": 0.5
+    }
+  ],
+  "sword_prefix": [
+    {
+      "name": "Holy",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:smite"
+      ]
+    },
+    {
+      "name": "Tempered",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:sharpness",
+        "minecraft:unbreaking"
+      ]
+    },
+    {
+      "name": "Reforged",
+      "effect": "multiply_enchantment_level",
+      "rarity": 1,
+      "enchantmentMultiplier": 0.5
+    }
+  ],
+  "ranged_weapon_prefix": [
+    {
+      "name": "Refined",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:power",
+        "minecraft:unbreaking"
+      ]
+    },
+    {
+      "name": "Powerful",
+      "effect": "enchant",
+      "rarity": 0,
+      "enchantments": [
+        "minecraft:punch"
+      ]
+    }
+  ],
+  "config_version": 0
+}
