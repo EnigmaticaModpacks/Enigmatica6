@@ -24,17 +24,6 @@ function tagIsEmpty(tag) {
     return getPreferredItemInTag(ingredient.of(tag)).id == air;
 }
 
-function pedestals_dust_smelting(event) {
-    var pedestal_dusts = ['pedestals:dustsilver', 'pedestals:dustaluminum', 'pedestals:dustnickel'];
-
-    pedestal_dusts.forEach(function (dust) {
-        var ingotTag = ingredient.of('#forge:ingots/' + dust.replace('pedestals:dust', ''));
-
-        event.recipes.minecraft.smelting(ingotTag, pedestal_dusts).xp(0.1);
-        event.recipes.minecraft.blasting(ingotTag, pedestal_dusts).xp(0.1);
-    });
-}
-
 function immersiveengineering_gem_ore_processing(event, material) {
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
