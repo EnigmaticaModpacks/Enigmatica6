@@ -548,6 +548,10 @@ function create_ore_processing_with_secondary_outputs(event, material) {
             secondary = 'iron';
             processingTime = 300;
             break;
+        case 'lead':
+            secondary = 'silver';
+            processingTime = 300;
+            break;
         case 'silver':
             secondary = 'lead';
             processingTime = 300;
