@@ -129,7 +129,7 @@
 		},
 		{
 			title: "Salvage",
-			x: -1.0d,
+			x: 0.0d,
 			y: -15.0d,
 			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
@@ -228,7 +228,7 @@
 			x: -2.5d,
 			y: -15.0d,
 			description: [
-				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate it.",
+				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells and 2 Upgrades to activate it.",
 				"",
 				"Place a Workbench below the powered Forge Hammer, and you'll gain access to its Hammering abilities.",
 				"",
@@ -237,11 +237,9 @@
 			dependencies: [I;2179],
 			id: 1921,
 			tasks: [{
-				id: 2133,
-				type: "advancement",
-				icon: "tetra:hammer_base",
-				advancement: "tetra:spelunking/ancient_ruins",
-				criterion: ""
+				id: 3247,
+				type: "item",
+				item: "tetra:hammer_base"
 			}],
 			rewards: [{
 				id: 2634,
@@ -254,12 +252,12 @@
 		},
 		{
 			title: "Forge Upgrades",
-			x: -2.5d,
+			x: -1.5d,
 			y: -14.0d,
 			description: [
 				"Upgrade your Forge Hammer!",
 				"",
-				"Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes.",
+				"Most Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes.",
 				"You can add up to a maximum of 2 Upgrades to a single Forge Hammer.",
 				"",
 				"Combustion Chamber: + 1 Hammer Tier",
@@ -268,7 +266,6 @@
 				"",
 				"Planar Stabilizer: + Stats when used for forging purposes"
 			],
-			dependencies: [I;2181],
 			id: 1923,
 			tasks: [
 				{
@@ -306,7 +303,7 @@
 		},
 		{
 			title: "Useful Junk",
-			x: 1.0d,
+			x: 2.0d,
 			y: -15.0d,
 			shape: "diamond",
 			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."],
@@ -402,7 +399,7 @@
 		{
 			title: "Stonecutter",
 			icon: "tetra:stonecutter",
-			x: 0.0d,
+			x: 1.0d,
 			y: -16.0d,
 			shape: "diamond",
 			description: [
@@ -429,7 +426,7 @@
 		{
 			title: "Earthpiercer",
 			icon: "tetra:earthpiercer",
-			x: 0.0d,
+			x: 1.0d,
 			y: -14.0d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi-purpose tool that acts both as a Pickaxe and Shovel."],
@@ -694,8 +691,8 @@
 		},
 		{
 			title: "Tier 5",
-			x: -3.5d,
-			y: -14.0d,
+			x: -2.5d,
+			y: -13.5d,
 			description: [
 				"Obsidian will get you to Tier 5.",
 				"",
@@ -741,7 +738,6 @@
 				"",
 				"Nou're basically a walking Forge, Congrats!"
 			],
-			dependencies: [I;1923],
 			dependency_requirement: "all_started",
 			size: 1.5d,
 			id: 2183,
