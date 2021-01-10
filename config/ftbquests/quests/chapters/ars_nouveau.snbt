@@ -610,9 +610,12 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2555,
-				type: "item",
-				item: "ars_nouveau:carbuncle_shards"
+				id: 3245,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{

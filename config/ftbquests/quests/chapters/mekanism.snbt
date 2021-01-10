@@ -27,6 +27,11 @@
 				id: 1698,
 				type: "checkmark",
 				icon: "mekanism:teleportation_core"
+			}],
+			rewards: [{
+				id: 3246,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -45,29 +50,22 @@
 				id: 1702,
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: 1741,
-					type: "item",
-					item: {
-						id: "mekanism:configurator",
-						Count: true,
-						tag: {
-							mekData: {
-								EnergyContainers: [{
-									Container: false,
-									stored: "60000"
-								}]
-							}
+			rewards: [{
+				id: 1741,
+				type: "item",
+				item: {
+					id: "mekanism:configurator",
+					Count: true,
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: false,
+								stored: "60000"
+							}]
 						}
 					}
-				},
-				{
-					id: 2060,
-					type: "item",
-					item: "mekanism:personal_chest"
 				}
-			]
+			}]
 		},
 		{
 			title: "Advanced Power Generation",
@@ -125,12 +123,9 @@
 					count: 32
 				},
 				{
-					id: 2688,
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
-					player_command: false
+					id: 3242,
+					type: "item",
+					item: "mekanism:advanced_energy_cube"
 				}
 			]
 		},
@@ -256,29 +251,22 @@
 				id: 1723,
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: 1724,
-					type: "item",
-					item: "mekanism:advanced_energy_cube"
-				},
-				{
-					id: 1740,
-					type: "item",
-					item: {
-						id: "mekanism:network_reader",
-						Count: true,
-						tag: {
-							mekData: {
-								EnergyContainers: [{
-									Container: false,
-									stored: "60000"
-								}]
-							}
+			rewards: [{
+				id: 1740,
+				type: "item",
+				item: {
+					id: "mekanism:network_reader",
+					Count: true,
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: false,
+								stored: "60000"
+							}]
 						}
 					}
 				}
-			]
+			}]
 		},
 		{
 			x: 1.5d,
@@ -420,14 +408,21 @@
 				type: "item",
 				item: "mekanism:osmium_compressor"
 			}],
-			rewards: [{
-				id: 2067,
-				type: "command",
-				title: "Rare Mekanism Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: 2067,
+					type: "command",
+					title: "Rare Mekanism Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare",
+					player_command: false
+				},
+				{
+					id: 3241,
+					type: "item",
+					item: "mekanism:personal_chest"
+				}
+			]
 		},
 		{
 			title: "Thermal Evaporation Plant",
