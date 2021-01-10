@@ -25,7 +25,7 @@ events.listen('recipes', function (event) {
         thermal_press_wires(event, material, wire);
         gear_unification(event, material, ingot, gem, gear);
         create_ore_processing_with_secondary_outputs(event, material, crushedOre);
-        create_gem_processing(event, material, ore, gem);
+        create_gem_processing(event, material, ore, gem, dust);
     });
 });
 
@@ -564,12 +564,75 @@ function create_ore_processing_with_secondary_outputs(event, material, crushedOr
     });
 }
 
-function create_gem_processing(event, material, ore, gem) {
-    if (gem == air || ore == air) {
+function create_gem_processing(event, material, ore, gem, dust) {
+    if (ore == air) {
         return;
     }
 
-    var processingTime = 500;
+    var processingTime, primaryCount, secondaryCount;
+    var output = gem;
+    var stoneOutput = 'minecraft:cobblestone';
+
+    switch (material) {
+        case 'redstone':
+            primaryCount = 8;
+            secondaryCount = 6;
+            secondaryChance = 0.25;
+            processingTime = 300;
+            output = dust;
+            break;
+        case 'coal':
+            primaryCount = 2;
+            secondaryCount = 2;
+            secondaryChance = 0.5;
+            processingTime = 300;
+            break;
+        case 'diamond':
+            primaryCount = 2;
+            secondaryCount = 1;
+            secondaryChance = 0.25;
+            processingTime = 500;
+            break;
+        case 'emerald':
+            primaryCount = 2;
+            secondaryCount = 1;
+            secondaryChance = 0.25;
+            processingTime = 500;
+            break;
+        case 'lapis':
+            primaryCount = 12;
+            secondaryCount = 8;
+            secondaryChance = 0.25;
+            processingTime = 300;
+            break;
+        case 'quartz':
+            primaryCount = 2;
+            secondaryCount = 4;
+            secondaryChance = 0.5;
+            processingTime = 350;
+            stoneOutput = 'minecraft:netherrack';
+            break;
+        case 'sulfur':
+            primaryCount = 6;
+            secondaryCount = 2;
+            secondaryChance = 0.25;
+            processingTime = 300;
+            break;
+        case 'apatite':
+            primaryCount = 12;
+            secondaryCount = 8;
+            secondaryChance = 0.25;
+            processingTime = 300;
+            break;
+        case 'fluorite':
+            primaryCount = 6;
+            secondaryCount = 3;
+            secondaryChance = 0.25;
+            processingTime = 300;
+            break;
+        default:
+            return;
+    }
 
     event.recipes.create.crushing({
         type: 'create:crushing',
@@ -580,16 +643,16 @@ function create_gem_processing(event, material, ore, gem) {
         ],
         results: [
             {
-                item: gem,
-                count: 2
+                item: output,
+                count: primaryCount
             },
             {
-                item: gem,
-                chance: 0.25,
-                count: 2
+                item: output,
+                chance: secondaryChance,
+                count: secondaryCount
             },
             {
-                item: 'minecraft:cobblestone',
+                item: stoneOutput,
                 chance: 0.125
             }
         ],
