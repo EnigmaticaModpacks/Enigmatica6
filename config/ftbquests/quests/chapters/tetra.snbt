@@ -478,9 +478,9 @@
 				}
 			}],
 			rewards: [{
-				id: 2192,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3237,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -512,9 +512,9 @@
 				icon: "minecraft:book"
 			}],
 			rewards: [{
-				id: 2195,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3238,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -1367,6 +1367,14 @@
 				id: 2366,
 				type: "item",
 				item: "tetra:rack"
+			}],
+			rewards: [{
+				id: 3239,
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{

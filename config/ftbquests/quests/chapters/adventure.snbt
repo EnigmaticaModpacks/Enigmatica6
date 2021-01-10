@@ -31,9 +31,9 @@
 					item: "alexsmobs:animal_dictionary"
 				},
 				{
-					id: 3214,
-					type: "xp_levels",
-					xp_levels: 5
+					id: 3229,
+					type: "xp",
+					xp: 100
 				}
 			]
 		},
@@ -54,9 +54,9 @@
 				title: "Lost Trinkets"
 			}],
 			rewards: [{
-				id: 3225,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3234,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -76,9 +76,9 @@
 				icon: "artifacts:mimic_spawn_egg"
 			}],
 			rewards: [{
-				id: 3212,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3232,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -99,9 +99,9 @@
 				icon: "kubejs:scavengers_delight"
 			}],
 			rewards: [{
-				id: 3213,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3228,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -122,9 +122,9 @@
 				icon: "byg:pink_cherry_sapling"
 			}],
 			rewards: [{
-				id: 3218,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3231,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -146,9 +146,9 @@
 				icon: "minecraft:ice"
 			}],
 			rewards: [{
-				id: 3217,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3233,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -168,9 +168,9 @@
 				title: "Meet Your Fight"
 			}],
 			rewards: [{
-				id: 3226,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3227,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -191,6 +191,11 @@
 					Count: true,
 					tag: {}
 				}
+			}],
+			rewards: [{
+				id: 3230,
+				type: "xp",
+				xp: 100
 			}]
 		}
 	]
