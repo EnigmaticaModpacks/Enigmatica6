@@ -67,6 +67,10 @@ function immersiveengineering_gem_ore_processing(event, material) {
 }
 
 function bloodmagic_ore_processing_arc(event, material) {
+    if (material == 'iron' || material == 'gold') {
+        return;
+    }
+
     if (tagIsEmpty('#forge:ores/' + material)) {
         return;
     }
@@ -89,82 +93,68 @@ function bloodmagic_ore_processing_arc(event, material) {
 
     if (gem != air) {
         data.recipes.push({
-            input: 'forge:ores/' + material,
-            output: gem,
-            count: 5,
-            bonus: [],
-            tool: 'bloodmagic:arc/cuttingfluid'
+            input: '#forge:ores/' + material,
+            output: item.of(gem, 5),
+            addedOutput: [],
+            tool: '#bloodmagic:arc/cuttingfluid'
         });
     } else if (dust != air) {
         data.recipes.push({
-            input: 'forge:ores/' + material,
-            output: dust,
-            count: 2,
-            bonus: [],
-            tool: 'bloodmagic:arc/cuttingfluid'
+            input: '#forge:ores/' + material,
+            output: item.of(dust, 2),
+            addedOutput: [],
+            tool: '#bloodmagic:arc/cuttingfluid'
         });
     } else {
         return;
     }
+
     if (!tagIsEmpty('#forge:ingots/' + material)) {
         data.recipes.push({
-            input: 'forge:ingots/' + material,
-            output: dust,
-            count: 1,
-            bonus: [],
-            tool: 'bloodmagic:arc/explosive'
+            input: '#forge:ingots/' + material,
+            output: item.of(dust, 1),
+            addedOutput: [],
+            tool: '#bloodmagic:arc/explosive'
         });
     }
+
     if (clump != air && dirtyDust != air) {
         data.recipes.push(
             {
-                input: 'forge:ores/' + material,
-                output: clump,
-                count: 3,
-                bonus: [],
-                tool: 'bloodmagic:arc/explosive'
+                input: '#forge:ores/' + material,
+                output: item.of(clump, 3),
+                addedOutput: [],
+                tool: '#bloodmagic:arc/explosive'
             },
             {
-                input: 'mekanism:clumps/' + material,
-                output: dirtyDust,
-                count: 1,
-                bonus: [
-                    { chance: 0.05, type: { item: 'bloodmagic:corrupted_tinydust' } },
-                    { chance: 0.01, type: { item: 'bloodmagic:corrupted_tinydust' } }
+                input: '#mekanism:clumps/' + material,
+                output: item.of(dirtyDust, 1),
+                addedOutput: [
+                    item.of('bloodmagic:corrupted_tinydust').chance(0.05),
+                    item.of('bloodmagic:corrupted_tinydust').chance(0.01)
                 ],
-                tool: 'bloodmagic:arc/resonator'
+                tool: '#bloodmagic:arc/resonator'
             },
             {
-                input: 'mekanism:dirty_dusts/' + material,
-                output: dust,
-                count: 1,
-                bonus: [],
-                tool: 'bloodmagic:arc/cuttingfluid'
+                input: '#mekanism:dirty_dusts/' + material,
+                output: item.of(dust, 1),
+                addedOutput: [],
+                tool: '#bloodmagic:arc/cuttingfluid'
             }
         );
     }
 
     data.recipes.forEach((recipe) => {
-        event.recipes.bloodmagic.arc({
-            type: 'bloodmagic:arc',
-            input: {
-                tag: recipe.input
-            },
-            tool: {
-                tag: recipe.tool
-            },
-            addedoutput: recipe.bonus,
-            output: {
-                item: recipe.output,
-                count: recipe.count
-            },
-            consumeingredient: false
-        });
+        event.recipes.bloodmagic
+            .arc(recipe.output, recipe.input, recipe.tool, recipe.addedOutput)
+            .consumeIngredient(false);
     });
 }
 
 function bloodmagic_ore_processing_alchemy(event, material) {
-    var data;
+    if (material == 'iron' || material == 'gold') {
+        return;
+    }
 
     if (tagIsEmpty('#forge:ores/' + material)) {
         return;
@@ -176,42 +166,18 @@ function bloodmagic_ore_processing_alchemy(event, material) {
     var gemTag = ingredient.of('#forge:gems/' + material);
     var gem = getPreferredItemInTag(gemTag).id;
 
+    var inputs = ['#forge:ores/' + material, '#bloodmagic:arc/cuttingfluid'];
+    var output;
+
     if (gem != air) {
-        data = {
-            input: 'forge:ores/' + material,
-            output: gem,
-            count: 2,
-            tool: 'bloodmagic:arc/cuttingfluid'
-        };
+        output = item.of(gem, 2);
     } else if (dust != air) {
-        data = {
-            input: 'forge:ores/' + material,
-            output: dust,
-            count: 2,
-            tool: 'bloodmagic:arc/cuttingfluid'
-        };
+        output = item.of(dust, 2);
     } else {
         return;
     }
 
-    event.recipes.bloodmagic.alchemytable({
-        type: 'bloodmagic:alchemytable',
-        input: [
-            {
-                tag: data.input
-            },
-            {
-                tag: data.tool
-            }
-        ],
-        output: {
-            item: data.output,
-            count: data.count
-        },
-        syphon: 400,
-        ticks: 200,
-        upgradeLevel: 1
-    });
+    event.recipes.bloodmagic.alchemytable(output, inputs).syphon(400).ticks(200).upgradeLevel(1);
 }
 
 function astralsorcery_ore_processing_infuser(event, material) {
