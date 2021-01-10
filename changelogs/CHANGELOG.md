@@ -9,7 +9,6 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
 -   FTB Chunks: Default max chunk loaded claimed chunks is now 10, down from 25.
 -   Worldgen: Added 'Dustrial Decor materials to some Village structures.
--   Bees: Made Bee Nests generate a bit less frequently (about 33% less)
 
 **Bug Fixes**
 
