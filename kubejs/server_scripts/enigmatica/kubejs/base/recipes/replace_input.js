@@ -329,4 +329,13 @@ events.listen('recipes', function (event) {
         'minecraft:iron_bars',
         'dustrial_decor:barbed_iron_bars'
     );
+
+    event.replaceInput({ mod: 'bloodmagic' }, 'bloodmagic:ironfragment', '#mekanism:clumps/iron');
+    event.replaceInput({ mod: 'bloodmagic' }, 'bloodmagic:goldfragment', '#mekanism:clumps/gold');
+
+    event.replaceInput(
+        { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
+        'minecraft:potion',
+        item.of('minecraft:potion', { Potion: 'minecraft:water' })
+    );
 });

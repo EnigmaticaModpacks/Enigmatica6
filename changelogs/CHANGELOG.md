@@ -9,9 +9,11 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
 -   FTB Chunks: Default max chunk loaded claimed chunks is now 10, down from 25.
 -   Worldgen: Added 'Dustrial Decor materials to some Village structures.
-    **Bug Fixes**
+
+**Bug Fixes**
 
 -   Lowered Surface Cave density, fixes [#809](https://github.com/NillerMedDild/Enigmatica6/issues/809)
+-   Storage Drawers can no longer be picked up with Cardboard Boxes from Mekanism, as they already retain their inventory when broken.
 
 ### Enigmatica 6 v0.3.5
 

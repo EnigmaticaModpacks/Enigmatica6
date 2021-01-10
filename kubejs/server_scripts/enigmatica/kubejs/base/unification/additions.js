@@ -1,17 +1,31 @@
 //priority: 900
 events.listen('recipes', function (event) {
     materialsToUnify.forEach(function (material) {
-        immersiveengineering_gem_ore_processing(event, material);
-        occultism_ore_ingot_crushing(event, material);
-        immersiveengineering_hammer_crafting_plates(event, material);
-        bloodmagic_ore_processing_alchemy(event, material);
-        bloodmagic_ore_processing_arc(event, material);
-        astralsorcery_ore_processing_infuser(event, material);
-        thermal_press_rods(event, material);
-        thermal_press_wires(event, material);
-        gear_unification(event, material);
-        create_ore_processing_with_secondary_outputs(event, material);
-        create_gem_processing(event, material);
+        var ore = getPreferredItemInTag(ingredient.of('#forge:ores/' + material)).id;
+        var ingot = getPreferredItemInTag(ingredient.of('#forge:ingots/' + material)).id;
+        var gem = getPreferredItemInTag(ingredient.of('#forge:gems/' + material)).id;
+
+        var crushedOre = getPreferredItemInTag(ingredient.of('#create:crushed_ores/' + material)).id;
+        var clump = getPreferredItemInTag(ingredient.of('#mekanism:clumps/' + material)).id;
+        var dirtyDust = getPreferredItemInTag(ingredient.of('#mekanism:dirty_dusts/' + material)).id;
+        var dust = getPreferredItemInTag(ingredient.of('#forge:dusts/' + material)).id;
+
+        var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
+        var gear = getPreferredItemInTag(ingredient.of('#forge:gears/' + material)).id;
+        var rod = getPreferredItemInTag(ingredient.of('#forge:rods/' + material)).id;
+        var wire = getPreferredItemInTag(ingredient.of('#forge:wires/' + material)).id;
+
+        immersiveengineering_gem_ore_processing(event, material, dust, gem);
+        occultism_ore_ingot_crushing(event, material, ore, ingot, dust, gem);
+        immersiveengineering_hammer_crafting_plates(event, material, ingot, gem, plate);
+        bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem);
+        bloodmagic_ore_processing_arc(event, material, ore, ingot, clump, dirtyDust, dust, gem);
+        astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem);
+        thermal_press_rods(event, material, ingot, gem, rod);
+        thermal_press_wires(event, material, wire);
+        gear_unification(event, material, ingot, gem, gear);
+        create_ore_processing_with_secondary_outputs(event, material, crushedOre);
+        create_gem_processing(event, material, ore, gem);
     });
 });
 
@@ -20,10 +34,13 @@ function getPreferredItemInTag(tag) {
     // console.info('Preferred item: ' + tag + ' => ' + pref);
     return pref;
 }
+
 function tagIsEmpty(tag) {
     return getPreferredItemInTag(ingredient.of(tag)).id == air;
 }
 
+//No longer appears to be used, delete?
+/*
 function pedestals_dust_smelting(event) {
     var pedestal_dusts = ['pedestals:dustsilver', 'pedestals:dustaluminum', 'pedestals:dustnickel'];
 
@@ -33,18 +50,9 @@ function pedestals_dust_smelting(event) {
         event.recipes.minecraft.smelting(ingotTag, pedestal_dusts).xp(0.1);
         event.recipes.minecraft.blasting(ingotTag, pedestal_dusts).xp(0.1);
     });
-}
+}*/
 
-function immersiveengineering_gem_ore_processing(event, material) {
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
-
-    var oreTag = ingredient.of('#forge:ores/' + material);
-    var ore = getPreferredItemInTag(oreTag).id;
-
-    var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;
-
+function immersiveengineering_gem_ore_processing(event, material, dust, gem) {
     if (gem == air || dust == air) {
         return;
     }
@@ -60,164 +68,104 @@ function immersiveengineering_gem_ore_processing(event, material) {
         },
         energy: 2000
     });
-
-    if (ore == air) {
-        return;
-    }
 }
 
-function bloodmagic_ore_processing_arc(event, material) {
-    if (tagIsEmpty('#forge:ores/' + material)) {
+function bloodmagic_ore_processing_arc(event, material, ore, ingot, clump, dirtyDust, dust, gem) {
+    if (ore == air || material == 'iron' || material == 'gold') {
         return;
     }
-
     var data = {
         recipes: []
     };
 
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
-
-    var clumpTag = ingredient.of('#mekanism:clumps/' + material);
-    var clump = getPreferredItemInTag(clumpTag).id;
-
-    var dirtyDustTag = ingredient.of('#mekanism:dirty_dusts/' + material);
-    var dirtyDust = getPreferredItemInTag(dirtyDustTag).id;
-
-    var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;
-
     if (gem != air) {
         data.recipes.push({
-            input: 'forge:ores/' + material,
-            output: gem,
-            count: 5,
-            bonus: [],
-            tool: 'bloodmagic:arc/cuttingfluid'
+            input: '#forge:ores/' + material,
+            output: item.of(gem, 5),
+            addedOutput: [],
+            tool: '#bloodmagic:arc/cuttingfluid'
         });
     } else if (dust != air) {
         data.recipes.push({
-            input: 'forge:ores/' + material,
-            output: dust,
-            count: 2,
-            bonus: [],
-            tool: 'bloodmagic:arc/cuttingfluid'
+            input: '#forge:ores/' + material,
+            output: item.of(dust, 2),
+            addedOutput: [],
+            tool: '#bloodmagic:arc/cuttingfluid'
         });
     } else {
         return;
     }
-    if (!tagIsEmpty('#forge:ingots/' + material)) {
+
+    if (ingot != air) {
         data.recipes.push({
-            input: 'forge:ingots/' + material,
-            output: dust,
-            count: 1,
-            bonus: [],
-            tool: 'bloodmagic:arc/explosive'
+            input: '#forge:ingots/' + material,
+            output: item.of(dust, 1),
+            addedOutput: [],
+            tool: '#bloodmagic:arc/explosive'
         });
     }
+
     if (clump != air && dirtyDust != air) {
         data.recipes.push(
             {
-                input: 'forge:ores/' + material,
-                output: clump,
-                count: 3,
-                bonus: [],
-                tool: 'bloodmagic:arc/explosive'
+                input: '#forge:ores/' + material,
+                output: item.of(clump, 3),
+                addedOutput: [],
+                tool: '#bloodmagic:arc/explosive'
             },
             {
-                input: 'mekanism:clumps/' + material,
-                output: dirtyDust,
-                count: 1,
-                bonus: [
-                    { chance: 0.05, type: { item: 'bloodmagic:corrupted_tinydust' } },
-                    { chance: 0.01, type: { item: 'bloodmagic:corrupted_tinydust' } }
+                input: '#mekanism:clumps/' + material,
+                output: item.of(dirtyDust, 1),
+                addedOutput: [
+                    item.of('bloodmagic:corrupted_tinydust').chance(0.05),
+                    item.of('bloodmagic:corrupted_tinydust').chance(0.01)
                 ],
-                tool: 'bloodmagic:arc/resonator'
+                tool: '#bloodmagic:arc/resonator'
             },
             {
-                input: 'mekanism:dirty_dusts/' + material,
-                output: dust,
-                count: 1,
-                bonus: [],
-                tool: 'bloodmagic:arc/cuttingfluid'
+                input: '#mekanism:dirty_dusts/' + material,
+                output: item.of(dust, 1),
+                addedOutput: [],
+                tool: '#bloodmagic:arc/cuttingfluid'
             }
         );
     }
 
     data.recipes.forEach((recipe) => {
-        event.recipes.bloodmagic.arc({
-            type: 'bloodmagic:arc',
-            input: {
-                tag: recipe.input
-            },
-            tool: {
-                tag: recipe.tool
-            },
-            addedoutput: recipe.bonus,
-            output: {
-                item: recipe.output,
-                count: recipe.count
-            },
-            consumeingredient: false
-        });
+        event.recipes.bloodmagic
+            .arc(recipe.output, recipe.input, recipe.tool, recipe.addedOutput)
+            .consumeIngredient(false);
     });
 }
 
-function bloodmagic_ore_processing_alchemy(event, material) {
-    var data;
-
-    if (tagIsEmpty('#forge:ores/' + material)) {
+function bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem) {
+    if (material == 'iron' || material == 'gold') {
         return;
     }
 
-    var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;
+    if (ore == air) {
+        return;
+    }
 
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
+    var inputs = ['#forge:ores/' + material, '#bloodmagic:arc/cuttingfluid'];
+    var output;
 
     if (gem != air) {
-        data = {
-            input: 'forge:ores/' + material,
-            output: gem,
-            count: 2,
-            tool: 'bloodmagic:arc/cuttingfluid'
-        };
+        output = item.of(gem, 2);
     } else if (dust != air) {
-        data = {
-            input: 'forge:ores/' + material,
-            output: dust,
-            count: 2,
-            tool: 'bloodmagic:arc/cuttingfluid'
-        };
+        output = item.of(dust, 2);
     } else {
         return;
     }
 
-    event.recipes.bloodmagic.alchemytable({
-        type: 'bloodmagic:alchemytable',
-        input: [
-            {
-                tag: data.input
-            },
-            {
-                tag: data.tool
-            }
-        ],
-        output: {
-            item: data.output,
-            count: data.count
-        },
-        syphon: 400,
-        ticks: 200,
-        upgradeLevel: 1
-    });
+    event.recipes.bloodmagic.alchemytable(output, inputs).syphon(400).ticks(200).upgradeLevel(1);
 }
 
-function astralsorcery_ore_processing_infuser(event, material) {
-    if (tagIsEmpty('#forge:ores/' + material)) {
+function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem) {
+    if (ore == air) {
         return;
     }
+
     blacklistedMaterials = ['redstone', 'lapis', 'emerald', 'diamond', 'iron', 'gold'];
     for (var i = 0; i < blacklistedMaterials.length; i++) {
         if (blacklistedMaterials[i] == material) {
@@ -226,12 +174,6 @@ function astralsorcery_ore_processing_infuser(event, material) {
     }
 
     var data;
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
-
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
     if (gem != air) {
         data = {
             output: gem,
@@ -264,24 +206,20 @@ function astralsorcery_ore_processing_infuser(event, material) {
     });
 }
 
-function thermal_press_rods(event, material) {
-    var rodsTag = ingredient.of('#forge:rods/' + material);
-    var rod = getPreferredItemInTag(rodsTag).id;
-
+function thermal_press_rods(event, material, ingot, gem, rod) {
     if (rod == air) {
         return;
     }
 
     var input;
-    var ingotTag = 'forge:ingots/' + material;
-    var gemTag = 'forge:gems/' + material;
-    if (!tagIsEmpty('#' + ingotTag)) {
-        input = ingotTag;
-    } else if (!tagIsEmpty('#' + gemTag)) {
-        input = gemTag;
+    if (ingot != air) {
+        input = 'forge:ingots/' + material;
+    } else if (gem != air) {
+        input = 'forge:gems/' + material;
     } else {
         return;
     }
+
     event.recipes.thermal.press({
         type: 'thermal:press',
         input: [
@@ -307,10 +245,7 @@ function thermal_press_rods(event, material) {
     );
 }
 
-function thermal_press_wires(event, material) {
-    var wiresTag = ingredient.of('#forge:wires/' + material);
-    var wire = getPreferredItemInTag(wiresTag).id;
-
+function thermal_press_wires(event, material, wire) {
     if (wire == air) {
         return;
     }
@@ -335,20 +270,13 @@ function thermal_press_wires(event, material) {
     });
 }
 
-function gear_unification(event, material) {
+function gear_unification(event, material, ingot, gem, gear) {
     var gearInput;
     var gearInputTag;
-    var gearTag = ingredient.of('#forge:gears/' + material);
-    var gear = getPreferredItemInTag(gearTag).id;
 
     if (gear == air) {
         return;
     }
-
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
 
     if (ingot == air && gem == air) {
         return;
@@ -378,23 +306,17 @@ function gear_unification(event, material) {
     });
 }
 
-function occultism_ore_ingot_crushing(event, material) {
-    var dustTag = ingredient.of('#forge:dusts/' + material);
-    var dust = getPreferredItemInTag(dustTag).id;
-
+function occultism_ore_ingot_crushing(event, material, ore, ingot, dust, gem) {
     if (dust == air) {
         return;
     }
 
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
-
-    var crushedOreOutputed = dust;
+    var output = dust;
     if (gem != air) {
-        crushedOreOutputed = gem;
+        output = gem;
     }
 
-    if (tagIsEmpty('#forge:ores/' + material) == false) {
+    if (ore != air) {
         event.recipes.occultism.crushing({
             type: 'occultism.crushing',
             ingredient: {
@@ -402,14 +324,14 @@ function occultism_ore_ingot_crushing(event, material) {
             },
 
             result: {
-                item: crushedOreOutputed,
+                item: output,
                 count: 2
             },
             crushing_time: 200
         });
     }
 
-    if (tagIsEmpty('#forge:ingots/' + material) == false) {
+    if (ingot != air) {
         event.recipes.occultism.crushing({
             type: 'occultism.crushing',
             ingredient: {
@@ -424,7 +346,7 @@ function occultism_ore_ingot_crushing(event, material) {
         });
     }
 
-    if (tagIsEmpty('#forge:gems/' + material) == false) {
+    if (gem != air) {
         event.recipes.occultism.crushing({
             type: 'occultism.crushing',
             ingredient: {
@@ -440,18 +362,12 @@ function occultism_ore_ingot_crushing(event, material) {
     }
 }
 
-function immersiveengineering_hammer_crafting_plates(event, material) {
-    var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
+function immersiveengineering_hammer_crafting_plates(event, material, ingot, gem, plate) {
     if (plate == air) {
         return;
     }
 
     var hammer = 'immersiveengineering:hammer';
-    var ingotTag = ingredient.of('#forge:ingots/' + material);
-    var ingot = getPreferredItemInTag(ingotTag).id;
-
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
 
     if (ingot != air) {
         event.shapeless(plate, [hammer, ingot]);
@@ -516,17 +432,13 @@ function immersiveengineering_hammer_crafting_plates(event, material) {
     }
 }
 
-function create_ore_processing_with_secondary_outputs(event, material) {
-    var primaryTag = ingredient.of('#create:crushed_ores/' + material);
-    var primaryItem = getPreferredItemInTag(primaryTag).id;
-
-    if (primaryItem == air) {
+function create_ore_processing_with_secondary_outputs(event, material, crushedOre) {
+    if (crushedOre == air) {
         return;
     }
 
     var secondary;
     var processingTime;
-
     switch (material) {
         case 'iron':
             secondary = 'nickel';
@@ -596,9 +508,7 @@ function create_ore_processing_with_secondary_outputs(event, material) {
             return;
     }
 
-    var secondaryTag = ingredient.of('#create:crushed_ores/' + secondary);
-    var secondaryItem = getPreferredItemInTag(secondaryTag).id;
-
+    var secondaryCrushedOre = getPreferredItemInTag(ingredient.of('#create:crushed_ores/' + secondary)).id;
     event.recipes.create.milling({
         type: 'create:milling',
         ingredients: [
@@ -608,15 +518,15 @@ function create_ore_processing_with_secondary_outputs(event, material) {
         ],
         results: [
             {
-                item: primaryItem
+                item: crushedOre
             },
             {
-                item: primaryItem,
+                item: crushedOre,
                 chance: 0.25,
                 count: 2
             },
             {
-                item: secondaryItem,
+                item: secondaryCrushedOre,
                 chance: 0.05,
                 count: 2
             }
@@ -633,15 +543,15 @@ function create_ore_processing_with_secondary_outputs(event, material) {
         ],
         results: [
             {
-                item: primaryItem
+                item: crushedOre
             },
             {
-                item: primaryItem,
+                item: crushedOre,
                 chance: 0.6,
                 count: 2
             },
             {
-                item: secondaryItem,
+                item: secondaryCrushedOre,
                 chance: 0.1,
                 count: 2
             },
@@ -654,15 +564,8 @@ function create_ore_processing_with_secondary_outputs(event, material) {
     });
 }
 
-function create_gem_processing(event, material) {
-    var gemTag = ingredient.of('#forge:gems/' + material);
-    var gem = getPreferredItemInTag(gemTag).id;
-
-    if (gem == air) {
-        return;
-    }
-
-    if (tagIsEmpty('#forge:ores/' + material)) {
+function create_gem_processing(event, material, ore, gem) {
+    if (gem == air || ore == air) {
         return;
     }
 

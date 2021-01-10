@@ -1,0 +1,86 @@
+{
+  "biomes": {
+    "byg:bulbis_gardens": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "byg:bulbis_gardens_edge",
+      "hills": []
+    },
+    "byg:cryptic_wastes": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:ethereal_islands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "byg:ethereal_clearing",
+      "hills": [
+        {
+          "name": "byg:ethereal_forest",
+          "weight": 10
+        },
+        {
+          "name": "byg:ethereal_clearing",
+          "weight": 5
+        }
+      ]
+    },
+    "byg:ivis_fields": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:nightshade_forest": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:purpur_peaks": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:shattered_desert": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:shulkren_forest": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "minecraft:end_highlands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "minecraft:end_midlands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    }
+  },
+  "void-biomes": {
+    "byg:viscal_isles": {
+      "dictionary": "END,VOID",
+      "weight": 5,
+      "edge": "",
+      "hills": [
+        {
+          "name": "byg:shattered_viscal_isles",
+          "weight": 10
+        }
+      ]
+    }
+  }
+}
