@@ -281,20 +281,12 @@
 				},
 				count: 2L
 			}],
-			rewards: [
-				{
-					id: 2637,
-					type: "item",
-					item: "minecraft:ancient_debris",
-					count: 2
-				},
-				{
-					id: 2638,
-					type: "item",
-					item: "thermal:earth_grenade",
-					count: 16
-				}
-			]
+			rewards: [{
+				id: 2638,
+				type: "item",
+				item: "thermal:earth_grenade",
+				count: 16
+			}]
 		},
 		{
 			title: "Useful Junk",
@@ -376,6 +368,7 @@
 						Damage: 0
 					}
 				},
+				count: 2L,
 				consume_items: false
 			}],
 			rewards: [
