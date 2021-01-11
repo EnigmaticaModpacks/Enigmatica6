@@ -44,9 +44,13 @@ events.listen('recipes', function (event) {
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
 
+        'astralsorcery:infuser/gold_ore',
+
         'bloodmagic:smelting/ingot_netherite_scrap',
 
         'botania:fertilizer_dye',
+
+        'buildersaddition:iron_rod',
 
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
@@ -54,6 +58,8 @@ events.listen('recipes', function (event) {
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'immersiveengineering:crafting/stick_steel',
+        'immersiveengineering:crafting/stick_aluminum',
+        'immersiveengineering:crafting/stick_iron',
 
         'mapperbase:steel_nugget_from_blasting',
         'mapperbase:steel_plate_from_blasting',
@@ -61,6 +67,7 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_ingot_from_blasting',
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
+        'mapperbase:iron_rod',
 
         'morevanillalib:obsidian_shard',
 
