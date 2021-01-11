@@ -129,12 +129,12 @@
 		},
 		{
 			title: "Salvage",
-			x: -1.0d,
-			y: -15.0d,
+			x: 0.0d,
+			y: -14.5d,
 			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
 			description: ["Hit the highlighted areas on crates and containers with the correct tools to break them open."],
-			dependencies: [I;1921],
+			dependencies: [I;1923],
 			optional: true,
 			id: 1911,
 			tasks: [{
@@ -226,9 +226,9 @@
 		{
 			title: "The Forge",
 			x: -2.5d,
-			y: -15.0d,
+			y: -14.5d,
 			description: [
-				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells to activate it.",
+				"After you eventually find a Forge Hammer underground, you'll need 2 Full Thermal Cells and 2 Upgrades to activate it.",
 				"",
 				"Place a Workbench below the powered Forge Hammer, and you'll gain access to its Hammering abilities.",
 				"",
@@ -237,11 +237,9 @@
 			dependencies: [I;2179],
 			id: 1921,
 			tasks: [{
-				id: 2133,
-				type: "advancement",
-				icon: "tetra:hammer_base",
-				advancement: "tetra:spelunking/ancient_ruins",
-				criterion: ""
+				id: 3247,
+				type: "item",
+				item: "tetra:hammer_base"
 			}],
 			rewards: [{
 				id: 2634,
@@ -254,12 +252,12 @@
 		},
 		{
 			title: "Forge Upgrades",
-			x: -2.5d,
-			y: -14.0d,
+			x: -1.5d,
+			y: -14.5d,
 			description: [
 				"Upgrade your Forge Hammer!",
 				"",
-				"Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes.",
+				"Most Forge Upgrades can only be found in the Ancient Forges found underneath cold Biomes.",
 				"You can add up to a maximum of 2 Upgrades to a single Forge Hammer.",
 				"",
 				"Combustion Chamber: + 1 Hammer Tier",
@@ -268,27 +266,21 @@
 				"",
 				"Planar Stabilizer: + Stats when used for forging purposes"
 			],
-			dependencies: [I;2181],
+			dependencies: [I;2179],
 			id: 1923,
-			tasks: [
-				{
-					id: 2124,
-					type: "item",
-					item: "tetra:combustion_chamber",
-					consume_items: false
+			tasks: [{
+				id: 2141,
+				type: "item",
+				title: "Any tetra:forge_hammer_upgrades",
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "tetra:forge_hammer_upgrades"
+					}
 				},
-				{
-					id: 2125,
-					type: "item",
-					item: "tetra:planar_stabilizer",
-					consume_items: false
-				},
-				{
-					id: 2141,
-					type: "item",
-					item: "tetra:vent_plate"
-				}
-			],
+				count: 2L
+			}],
 			rewards: [
 				{
 					id: 2637,
@@ -306,8 +298,8 @@
 		},
 		{
 			title: "Useful Junk",
-			x: 1.0d,
-			y: -15.0d,
+			x: 2.0d,
+			y: -14.5d,
 			shape: "diamond",
 			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."],
 			dependencies: [I;1911],
@@ -360,7 +352,7 @@
 		{
 			title: "Thermal Cells",
 			x: -3.5d,
-			y: -15.0d,
+			y: -14.5d,
 			description: [
 				"Thermal Cells are the batteries of the Forge Hammer.",
 				"",
@@ -369,7 +361,10 @@
 				"",
 				"Note: Thermal Cells are also craftable."
 			],
-			dependencies: [I;1921],
+			dependencies: [I;
+				1921,
+				2179
+			],
 			id: 1927,
 			tasks: [{
 				id: 2132,
@@ -402,8 +397,8 @@
 		{
 			title: "Stonecutter",
 			icon: "tetra:stonecutter",
-			x: 0.0d,
-			y: -16.0d,
+			x: 1.0d,
+			y: -15.5d,
 			shape: "diamond",
 			description: [
 				"The Stonecutter is a special tool that breaks an area in a slashing motion.",
@@ -429,8 +424,8 @@
 		{
 			title: "Earthpiercer",
 			icon: "tetra:earthpiercer",
-			x: 0.0d,
-			y: -14.0d,
+			x: 1.0d,
+			y: -13.5d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi-purpose tool that acts both as a Pickaxe and Shovel."],
 			dependencies: [I;1911],
@@ -694,14 +689,18 @@
 		},
 		{
 			title: "Tier 5",
-			x: -3.5d,
-			y: -14.0d,
+			x: -2.5d,
+			y: -13.0d,
 			description: [
 				"Obsidian will get you to Tier 5.",
 				"",
-				"If you need higher integrity, try out an End Rod as handle."
+				"If you need higher integrity, try out an End Rod as a handle."
 			],
-			dependencies: [I;1927],
+			dependencies: [I;
+				1927,
+				1921,
+				1923
+			],
 			id: 2181,
 			tasks: [{
 				id: 2182,
@@ -734,14 +733,14 @@
 		{
 			title: "Tier 6",
 			x: -2.5d,
-			y: -12.5d,
+			y: -11.5d,
 			shape: "hexagon",
 			description: [
 				"Netherite Ingots will get you to tier 6. ",
 				"",
 				"Nou're basically a walking Forge, Congrats!"
 			],
-			dependencies: [I;1923],
+			dependencies: [I;2181],
 			dependency_requirement: "all_started",
 			size: 1.5d,
 			id: 2183,
