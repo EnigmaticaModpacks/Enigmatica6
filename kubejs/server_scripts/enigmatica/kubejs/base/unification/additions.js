@@ -245,6 +245,7 @@ function create_ore_processing_with_secondary_outputs(event, material, crushedOr
         primaryCount = 2,
         secondaryCount = 2,
         secondaryMaterial,
+        input = '#forge:ores/' + material,
         processingTime = 300;
 
     switch (material) {
@@ -316,30 +317,23 @@ function create_ore_processing_with_secondary_outputs(event, material, crushedOr
     var primaryChance = 0.25,
         secondaryChance = 0.05;
 
-    event.recipes.create
-        .milling(
-            [
-                item.of(primaryOutput),
-                item.of(primaryOutput, primaryCount).withChance(primaryChance),
-                item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
-            ],
-            '#forge:ores/' + material
-        )
-        .processingTime(processingTime);
+    var outputs = [
+        item.of(primaryOutput),
+        item.of(primaryOutput, primaryCount).withChance(primaryChance),
+        item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
+    ];
+
+    event.recipes.create.milling(outputs, input).processingTime(processingTime);
 
     primaryChance = 0.6;
     secondaryChance = 0.1;
-    event.recipes.create
-        .crushing(
-            [
-                item.of(primaryOutput),
-                item.of(primaryOutput, primaryCount).withChance(primaryChance),
-                item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
-                Item.of(stoneOutput).withChance(0.125)
-            ],
-            '#forge:ores/' + material
-        )
-        .processingTime(processingTime);
+    outputs = [
+        item.of(primaryOutput),
+        item.of(primaryOutput, primaryCount).withChance(primaryChance),
+        item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
+        Item.of(stoneOutput).withChance(0.125)
+    ];
+    event.recipes.create.crushing(outputs, input).processingTime(processingTime);
 }
 
 function create_gem_processing(event, material, ore, gem, dust) {
@@ -351,7 +345,8 @@ function create_gem_processing(event, material, ore, gem, dust) {
         processingTime = 300,
         output = gem,
         primaryCount,
-        secondaryCount;
+        secondaryCount,
+        input = '#forge:ores/' + material;
 
     switch (material) {
         case 'redstone':
@@ -378,8 +373,8 @@ function create_gem_processing(event, material, ore, gem, dust) {
             processingTime = 500;
             break;
         case 'lapis':
-            primaryCount = 12;
-            secondaryCount = 8;
+            primaryCount = 8;
+            secondaryCount = 4;
             secondaryChance = 0.25;
             break;
         case 'quartz':
@@ -395,8 +390,8 @@ function create_gem_processing(event, material, ore, gem, dust) {
             secondaryChance = 0.25;
             break;
         case 'apatite':
-            primaryCount = 12;
-            secondaryCount = 8;
+            primaryCount = 8;
+            secondaryCount = 4;
             secondaryChance = 0.25;
             break;
         case 'fluorite':
@@ -412,17 +407,13 @@ function create_gem_processing(event, material, ore, gem, dust) {
         default:
             return;
     }
+    var outputs = [
+        item.of(output, primaryCount),
+        item.of(output, secondaryCount).withChance(secondaryChance),
+        Item.of(stoneOutput).withChance(0.125)
+    ];
 
-    event.recipes.create
-        .crushing(
-            [
-                item.of(output, primaryCount),
-                item.of(output, secondaryCount).withChance(secondaryChance),
-                Item.of(stoneOutput).withChance(0.125)
-            ],
-            '#forge:ores/' + material
-        )
-        .processingTime(processingTime);
+    event.recipes.create.crushing(outputs, input).processingTime(processingTime);
 }
 
 function create_press_plates(event, material, gem, plate) {
