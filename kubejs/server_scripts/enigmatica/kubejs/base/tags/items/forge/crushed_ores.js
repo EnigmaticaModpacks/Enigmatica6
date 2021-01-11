@@ -1,4 +1,4 @@
-//TODO: Remove in 0.4.0 in 0.4.0
+//TODO: Remove in 0.4.0
 // events.listen('item.tags', function (event) {
 //     event.get('create:crushed_ores/nickel').add('create:crushed_nickel_ore');
 //     event.get('create:crushed_ores/uranium').add('create:crushed_uranium_ore');
