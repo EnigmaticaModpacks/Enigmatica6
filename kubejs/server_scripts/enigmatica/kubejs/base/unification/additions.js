@@ -28,6 +28,7 @@ events.listen('recipes', function (event) {
         create_press_plates(event, material, gem, plate);
 
         immersiveengineering_gem_processing(event, material, dust, gem);
+        immersiveengineering_ore_processing(event, material, ore, gem);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
 
         occultism_ore_crushing(event, material, ore, dust, gem);
@@ -446,6 +447,43 @@ function immersiveengineering_gem_processing(event, material, dust, gem) {
     event.recipes.immersiveengineering.crusher(output, input).energy(2000);
 }
 
+function immersiveengineering_ore_processing(event, material, ore, gem) {
+    if (ore == air || gem == air) {
+        return;
+    }
+    var count,
+        input = '#forge:ores/' + material;
+
+    switch (material) {
+        case 'sulfur':
+            count = 6;
+            break;
+        case 'apatite':
+            count = 12;
+            break;
+        case 'dimensional':
+            count = 8;
+            break;
+        case 'mana':
+            count = 2;
+            break;
+        case 'cinnabar':
+            count = 2;
+            break;
+        case 'potassium_nitrate':
+            count = 2;
+            break;
+        case 'bitumen':
+            count = 2;
+            break;
+        default:
+            return;
+    }
+    var output = item.of(gem, count);
+
+    event.recipes.immersiveengineering.crusher(output, input).energy(2000);
+}
+
 function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     if (plate == air) {
         return;
@@ -481,7 +519,8 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
         }
     }
 
-    var output = plate;
+    var output = plate,
+        mold = 'immersiveengineering:mold_plate';
     if (ingot != air) {
         input = '#forge:ingots/' + material;
     } else if (gem != air) {
@@ -490,9 +529,7 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
         return;
     }
 
-    event.recipes.immersiveengineering
-        .metal_press(item.of(output), input, 'immersiveengineering:mold_plate')
-        .energy(2400);
+    event.recipes.immersiveengineering.metal_press(output, input, mold).energy(2400);
 }
 
 function occultism_ore_crushing(event, material, ore, dust, gem) {
