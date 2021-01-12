@@ -18,6 +18,8 @@ events.listen('recipes', function (event) {
 
         //'akashictome:tome',
 
+        'magicfeather:magicfeather',
+
         'mekanism:combiner',
         'mekanism:basic_combining_factory',
         'mekanism:advanced_combining_factory',
