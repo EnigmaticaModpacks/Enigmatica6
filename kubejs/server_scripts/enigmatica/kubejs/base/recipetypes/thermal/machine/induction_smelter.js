@@ -62,5 +62,5 @@ events.listen('recipes', function (event) {
             item.of('minecraft:netherite_scrap', 4),
             item.of('minecraft:gold_ingot', 2)
         ])
-        .experience(recipe.experience);
+        .experience(0.2);
 });
