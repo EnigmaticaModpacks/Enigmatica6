@@ -12,6 +12,7 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
+-   Re-enabled all disabled Lost Trinkets. _(except Tha Ghost which is completely broken now that it works)_
 -   Lowered Surface Cave density, fixes [#809](https://github.com/NillerMedDild/Enigmatica6/issues/809)
 -   Storage Drawers can no longer be picked up with Cardboard Boxes from Mekanism, as they already retain their inventory when broken.
 
