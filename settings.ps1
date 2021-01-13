@@ -3,12 +3,12 @@
 
 $CLIENT_MODS = @(
 	"AmbientSounds",
-	"ding", 
-	"reauth", 
+	"Ding", 
+	"ReAuth", 
 	"moreoverlays",
-	"neat", 
-	"toastcontrol", 
-	"packmenu"
+	"Neat", 
+	"Toast-Control", 
+	"PackMenu"
 )
 
 $CONFIGS_TO_REMOVE = @(

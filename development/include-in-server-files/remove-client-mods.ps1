@@ -1,20 +1,19 @@
 $CLIENT_MODS = @(
 	"AmbientSounds",
-	"ding", 
-	"reauth", 
+	"Ding", 
+	"ReAuth", 
 	"moreoverlays",
-	"neat", 
-	"toastcontrol", 
-	"packmenu"
+	"Neat", 
+	"Toast-Control", 
+	"PackMenu"
 )
 
-$ModFolder = "$PSScriptRoot/mods"
+$modFolder = "$PSScriptRoot/mods"
 
-Get-ChildItem $ModFolder -Name -Filter  "*.jar" | ForEach-Object {
-	$Mod = $_.toLower()
-	foreach ($ClientMod in $CLIENT_MODS) {
-		if ($Mod.StartsWith($ClientMod.toLower())) {
-			Remove-Item "$Modfolder/$Mod" -Force
+Get-ChildItem $modFolder -Name -Filter  "*.jar" | ForEach-Object {
+	foreach ($clientMod in $CLIENT_MODS) {
+		if ($_.StartsWith($clientMod)) {
+			Remove-Item "$modfolder/$_" -Force
 		}
 	}
 }
