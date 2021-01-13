@@ -5,63 +5,72 @@ events.listen('recipes', (event) => {
         recipes: [
             {
                 fluid: 'pneumaticcraft:diesel',
-                energy: 500000
+                energy: 1000000
             },
             {
                 fluid: 'immersivepetroleum:diesel',
-                energy: 500000
+                energy: 1000000
             },
             {
                 fluid: 'pneumaticcraft:biodiesel',
-                energy: 500000
+                energy: 1000000
             },
             {
                 fluid: 'immersiveengineering:biodiesel',
-                energy: 500000
+                energy: 1000000
             },
             {
                 fluid: 'pneumaticcraft:kerosene',
-                energy: 550000
+                energy: 1100000
             },
             {
                 fluid: 'pneumaticcraft:gasoline',
-                energy: 750000
+                energy: 1500000
             },
             {
                 fluid: 'immersivepetroleum:gasoline',
-                energy: 750000
+                energy: 1500000
             },
             {
                 fluid: 'pneumaticcraft:lpg',
-                energy: 900000
+                energy: 1800000
             },
             {
                 fluid: 'mekanism:ethene',
-                energy: 900000
+                energy: 1800000
             },
             {
                 fluid: 'pneumaticcraft:ethanol',
-                energy: 100000
+                energy: 400000
             },
             {
                 fluid: 'mekanismgenerators:bioethanol',
-                energy: 100000
+                energy: 400000
             },
             {
                 fluid: 'immersiveengineering:ethanol',
-                energy: 100000
+                energy: 400000
             },
             {
                 fluid: 'industrialforegoing:biofuel',
-                energy: 64000
+                energy: 100000
             },
             {
                 fluid: 'thermal:tree_oil',
                 energy: 100000
+            },
+            {
+                fluid: 'thermal:creosote',
+                energy: 20000
+            },
+            {
+                fluid: 'thermal:refined_fuel',
+                energy: 1500000
             }
         ]
     };
     data.recipes.forEach((recipe) => {
+        //event.recipes.thermal.compression_fuel(recipe.fluid).energy(recipe.energy * multiplier);
         event.recipes.thermal.compression_fuel({
             type: 'thermal.compression_fuel',
             ingredient: {
