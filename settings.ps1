@@ -33,6 +33,7 @@ $CONFIGS_TO_REMOVE = @(
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",
 	"mythicbotany-client.toml",
+	"occultism-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
 	"rftoolspower-client.toml",
