@@ -33,6 +33,8 @@
 		groveSpawnMin = 25
 		#The max height for a grove to spawn (applied to the center of the grove, not the ceiling).
 		groveSpawnMax = 60
+		#The biome types the underground grove cannot spawn in.
+		biomeTypeBlacklist = ["NETHER", "END"]
 
 	#Ore Gen Settings
 	[worldgen.oregen]

@@ -300,16 +300,44 @@ events.listen('recipes', function (event) {
         }),
         // Remove in 0.4.0
         shapedRecipe(item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
-            A: '#forge:gems/certus',
+            A: '#forge:gems/certus_quartz',
             B: '#forge:dyes/blue'
         }),
         shapedRecipe(item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
-            A: '#forge:gems/certus',
+            A: '#forge:gems/certus_quartz',
             B: '#forge:dyes/light_blue'
         }),
         shapedRecipe(item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
-            A: '#forge:gems/certus',
+            A: '#forge:gems/certus_quartz',
             B: '#forge:dyes/green'
+        }),
+        shapedRecipe(item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:gems/charged_certus_quartz',
+            B: '#forge:dyes/blue'
+        }),
+        shapedRecipe(item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:gems/charged_certus_quartz',
+            B: '#forge:dyes/light_blue'
+        }),
+        shapedRecipe(item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:gems/charged_certus_quartz',
+            B: '#forge:dyes/green'
+        }),
+        shapedRecipe('magicfeather:magicfeather', ['CFC', 'BDB', 'AEA'], {
+            A: 'alexsmobs:roadrunner_feather',
+            B: '#forge:ingots/enderium',
+            C: 'ars_nouveau:mana_fiber',
+            D: 'paraglider:deku_leaf',
+            E: 'ars_nouveau:glyph_launch',
+            F: 'ars_nouveau:glyph_slowfall'
+        }),
+        shapedRecipe('magicfeather:magicfeather', ['CFC', 'BDB', 'AEA'], {
+            A: 'thermal:lightning_charge',
+            B: '#mekanism:alloys/atomic',
+            C: 'thermal:hazmat_fabric',
+            D: 'paraglider:deku_leaf',
+            E: 'thermal:hazmat_boots',
+            F: 'alexsmobs:frontier_cap'
         })
         //
     ];

@@ -60,12 +60,9 @@
 				title: "About Tiers"
 			}],
 			rewards: [{
-				id: 662,
-				type: "command",
-				title: "Powah Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
-				player_command: false
+				id: 3240,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{

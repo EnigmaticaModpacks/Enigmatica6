@@ -15,6 +15,7 @@ $CONFIGS_TO_REMOVE = @(
 	# "defaultoptions/options.txt",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
+	"artifacts-client.toml",
 	"abnormals_core-client.toml",
 	"ambientsounds-client.json",	
 	"astralsorcery-client.toml",
@@ -58,12 +59,12 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.3.5"
+$MODPACK_VERSION = "0.3.6"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.3.4"
+$LAST_MODPACK_VERSION = "0.3.5"
 
-$FORGE_VERSION = 35.1.29
+$FORGE_VERSION = 35.1.36
 
 $CLIENT_FILENAME = "Enigmatica6"
 
@@ -79,7 +80,7 @@ $GAME_VERSIONS = @(8134) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 
 $CLIENT_CHANGELOG_TYPE = "markdown"
 
 $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
-"Using Forge-1.16.4-35.1.29 <br /> <br /> " +
+"Using Forge-1.16.4-35.1.36 <br /> <br /> " +
 "The Changelog is currently being written, it should be done within 10 minutes. "
 
 

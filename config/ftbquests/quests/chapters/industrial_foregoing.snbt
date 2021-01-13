@@ -17,31 +17,17 @@
 				id: 88,
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: 89,
-					type: "item",
-					item: "minecraft:acacia_log",
-					count: 16
-				},
-				{
-					id: 90,
-					type: "item",
-					item: "minecraft:acacia_sapling",
-					count: 8
-				},
-				{
-					id: 1592,
-					type: "item",
-					item: {
-						id: "patchouli:guide_book",
-						Count: true,
-						tag: {
-							"patchouli:book": "industrialforegoing:industrial_foregoing"
-						}
+			rewards: [{
+				id: 1592,
+				type: "item",
+				item: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "industrialforegoing:industrial_foregoing"
 					}
 				}
-			]
+			}]
 		},
 		{
 			x: 0.0d,
@@ -54,12 +40,20 @@
 				type: "item",
 				item: "industrialforegoing:fluid_extractor"
 			}],
-			rewards: [{
-				id: 1576,
-				type: "item",
-				item: "minecraft:acacia_log",
-				count: 16
-			}]
+			rewards: [
+				{
+					id: 1576,
+					type: "item",
+					item: "minecraft:acacia_log",
+					count: 32
+				},
+				{
+					id: 3243,
+					type: "item",
+					item: "minecraft:acacia_sapling",
+					count: 8
+				}
+			]
 		},
 		{
 			x: 1.5d,

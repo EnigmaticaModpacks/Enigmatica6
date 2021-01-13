@@ -40,7 +40,7 @@
 		#can rotate entities standing on it?
 		rotate_entities = true
 		#blocks that can't be rotated. Some special ones like chests, beds and pistons are already hardcoded
-		mobs = ["minecraft:end_portal_frame"]
+		blacklist = ["minecraft:end_portal_frame"]
 
 	[blocks.wall_lantern]
 		#allow wall lanterns placement
@@ -54,8 +54,7 @@
 		#Disable if you think this ability is op. Cookies are excluded
 		drink_from_jar = true
 		#catchable mobs 
-		#BE VERY CAREFUL WITH THESE: SOME MOBS MIGHT NOT WORK OF EVEN CRASH THE GAME.
-		#That's due to a vanilla bug. Check in a new world if the mobs you added here work before adding to a modpack
+		#due to a vanilla bug some mobs might not render correctly or at all
 		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
 		#tinted jar catchable mobs
 		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
@@ -116,4 +115,6 @@
 		#firefly flying speed
 		#Range: 0.0 ~ 10.0
 		speed = 0.3
+		#despawn during the day
+		despawn = true
 

@@ -10,7 +10,7 @@ events.listen('recipes', (event) => {
                 weight: 700
             },
             {
-                result: 'emendatusenigmatica:mana_chunk',
+                result: 'emendatusenigmatica:arcane_chunk',
                 weight: 200
             },
             {
