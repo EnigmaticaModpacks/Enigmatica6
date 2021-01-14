@@ -9,6 +9,19 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
 -   FTB Chunks: Default max chunk loaded claimed chunks is now 10, down from 25.
 -   Worldgen: Added 'Dustrial Decor materials to some Village structures.
+-   Lost Trinkets: There is now a 30 minute cooldown between being able to obtain a Lost Trinket.
+-   Lost Trinkets: The following Trinkets can no longer be randomly obtained:
+    Note: There will most likely be added a way to obtain some of these in the future
+    -   Rock Candy
+    -   Tha Cloud
+    -   Turtle Sheel
+    -   Blaze Heart
+    -   Tha Bat
+    -   Tea Leaf
+    -   Octopick
+    -   Magic Herbs
+    -   Magical Feathers
+    -   Mad Aura
 
 **Bug Fixes**
 
