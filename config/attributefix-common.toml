@@ -142,116 +142,6 @@
 	#Whether or not this attribute should be modified.
 	enabled = true
 
-#Values for the apotheosis:draw_speed attribute.
-[apotheosis_draw_speed]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:snipe_damage attribute.
-[apotheosis_snipe_damage]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:fire_damage attribute.
-[apotheosis_fire_damage]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:cold_damage attribute.
-[apotheosis_cold_damage]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:life_steal attribute.
-[apotheosis_life_steal]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:piercing_damage attribute.
-[apotheosis_piercing_damage]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:current_hp_damage attribute.
-[apotheosis_current_hp_damage]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:crit_chance attribute.
-[apotheosis_crit_chance]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:crit_damage attribute.
-[apotheosis_crit_damage]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
-#Values for the apotheosis:overhealing attribute.
-[apotheosis_overhealing]
-	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	min = 4.9E-324
-	#The maximum value for the attribute.
-	#Range: 4.9E-324 ~ 1.7976931348623157E308
-	max = 65536.0
-	#Whether or not this attribute should be modified.
-	enabled = true
-
 #Values for the tetra:draw_strength attribute.
 [tetra_draw_strength]
 	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
@@ -361,4 +251,114 @@
 	max = 65536.0
 	#Whether or not this attribute should be modified.
 	enabled = true
+
+#Values for the apotheosis:draw_speed attribute.
+[apotheosis_draw_speed]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:snipe_damage attribute.
+[apotheosis_snipe_damage]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:fire_damage attribute.
+[apotheosis_fire_damage]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:cold_damage attribute.
+[apotheosis_cold_damage]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:life_steal attribute.
+[apotheosis_life_steal]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:piercing_damage attribute.
+[apotheosis_piercing_damage]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:current_hp_damage attribute.
+[apotheosis_current_hp_damage]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:crit_chance attribute.
+[apotheosis_crit_chance]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:crit_damage attribute.
+[apotheosis_crit_damage]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
+
+#Values for the apotheosis:overhealing attribute.
+[apotheosis_overhealing]
+	#Whether or not this attribute should be modified.
+	enabled = true
+	#The minimum vallue for the attribute. Changing this may have unforseen consequences.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	min = 4.9E-324
+	#The maximum value for the attribute.
+	#Range: 4.9E-324 ~ 1.7976931348623157E308
+	max = 65536.0
 
