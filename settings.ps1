@@ -3,12 +3,12 @@
 
 $CLIENT_MODS = @(
 	"AmbientSounds",
-	"ding", 
-	"reauth", 
+	"Ding", 
+	"ReAuth", 
 	"moreoverlays",
-	"neat", 
-	"toastcontrol", 
-	"packmenu"
+	"Neat", 
+	"Toast-Control", 
+	"PackMenu"
 )
 
 $CONFIGS_TO_REMOVE = @(
@@ -33,6 +33,7 @@ $CONFIGS_TO_REMOVE = @(
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",
 	"mythicbotany-client.toml",
+	"occultism-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
 	"rftoolspower-client.toml",
