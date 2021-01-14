@@ -1,8 +1,14 @@
 #Set to false to disable the default way of unlocking trinkets.
 unlockEnabled = true
-#List of trinkets blocked from being unlocked, eg: ["losttrinkets:piggy", "losttrinkets:magical_feathers"]
+#List of banned trinkets eg: ["losttrinkets:piggy", "losttrinkets:magical_feathers"]
 #The trinkets listed in here will also be removed from players that already unlocked them.
-blackList = ["losttrinkets:mirror_shard", "losttrinkets:magneto", "losttrinkets:octopus_leg"]
+blackList = ["losttrinkets:tha_ghost"]
+#Cooldown (ticks) between unlocks
+#Range: 0 ~ 1728000
+unlockCooldown = 36000
+#List of trinkets that can't be unlocked randomly eg: ["losttrinkets:piggy", "losttrinkets:magical_feathers"]
+#The trinkets listed in here will not be removed from players that already unlocked them.
+nonRandom = ["losttrinkets:rock_candy", "losttrinkets:tha_cloud", "losttrinkets:turtle_shell", "losttrinkets:blaze_heart", "losttrinkets:tha_bat", "losttrinkets:tea_leaf", "losttrinkets:octopick", "losttrinkets:magical_herbs", "losttrinkets:magical_feathers", "losttrinkets:mad_aura"]
 
 [Trinket_Slots]
 	#Amount of Xp levels added to the next unlocking cost.

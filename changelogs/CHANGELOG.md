@@ -1,16 +1,47 @@
+### Enigmatica 6 v0.3.6
+
+_Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.6.txt)_
+
+**Note for server admins**: FTB Chunks now allows you to stop chunkloading for players that are offline. To enable it, change the value `chunk_load_offline` to `false` in the file `world/serverconfig/ftbchunks-server.toml`.
+
+**Improvements**
+
+-   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
+-   FTB Chunks: Default max chunk loaded claimed chunks is now 10, down from 25.
+-   Worldgen: Added 'Dustrial Decor materials to some Village structures.
+-   Lost Trinkets: There is now a 30 minute cooldown between being able to obtain a Lost Trinket.
+-   Lost Trinkets: The following Trinkets can no longer be randomly obtained:
+    Note: There will most likely be added a way to obtain some of these in the future
+    -   Rock Candy
+    -   Tha Cloud
+    -   Turtle Sheel
+    -   Blaze Heart
+    -   Tha Bat
+    -   Tea Leaf
+    -   Octopick
+    -   Magic Herbs
+    -   Magical Feathers
+    -   Mad Aura
+
+**Bug Fixes**
+
+-   Re-enabled all disabled Lost Trinkets. _(except Tha Ghost which is completely broken now that it works)_
+-   Lowered Surface Cave density, fixes [#809](https://github.com/NillerMedDild/Enigmatica6/issues/809)
+-   Storage Drawers can no longer be picked up with Cardboard Boxes from Mekanism, as they already retain their inventory when broken.
+
 ### Enigmatica 6 v0.3.5
 
 _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.5.txt)_
 
 **New mods!**
 
-- CC: Tweaked
-- CookieCore
-- KubeJS Create
-- Magic Feather
-- Refined Storage for ComputerCraft
-- Snow Under Trees
-- Supplementaries
+-   CC: Tweaked
+-   CookieCore
+-   KubeJS Create
+-   Magic Feather
+-   Refined Storage for ComputerCraft
+-   Snow Under Trees
+-   Supplementaries
 
 **Improvements**
 
@@ -33,7 +64,7 @@ _Using Forge-1.16.4-35.1.29_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
--   Apotheosis does not increase level cap of Ars Noveue Enchantments.  [\#753](https://github.com/NillerMedDild/Enigmatica6/issues/753)
+-   Apotheosis does not increase level cap of Ars Noveue Enchantments. [\#753](https://github.com/NillerMedDild/Enigmatica6/issues/753)
 -   Apotheosis spawner config set to use Max INT for many limits. Intended? [\#754](https://github.com/NillerMedDild/Enigmatica6/issues/754)
 -   \[Bug\] TheOneProbe-Create oddities [\#727](https://github.com/NillerMedDild/Enigmatica6/issues/727)
 -   Bees won't go in new hives if they're carrying pollen [\#763](https://github.com/NillerMedDild/Enigmatica6/issues/763)

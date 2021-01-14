@@ -1,5 +1,8 @@
 events.listen('jei.hide.items', (event) => {
     global.materialsToUnify.forEach((material) => {
+        if (material == 'iesnium') {
+            return;
+        }
         itemsToHide.push(
             'emendatusenigmatica:' + material + '_andesite_ore',
             'emendatusenigmatica:' + material + '_gabbro_ore',
@@ -12,6 +15,7 @@ events.listen('jei.hide.items', (event) => {
             'emendatusenigmatica:' + material + '_netherrack_ore',
             'emendatusenigmatica:' + material + '_blackstone_ore',
             'emendatusenigmatica:' + material + '_end_stone_ore',
+            'emendatusenigmatica:' + material + '_mossy_stone_ore',
             'titanium:' + material + '_gear',
             'thermal:' + material,
             'thermal:' + material + '_dust',
@@ -43,7 +47,12 @@ events.listen('jei.hide.items', (event) => {
             'create:' + material + '_nugget',
             'create:' + material + '_ingot',
             'immersiveposts:stick_' + material,
-            'buildersaddition:' + material + '_rod'
+            'buildersaddition:' + material + '_rod',
+            'occultism:' + material + '_ingot',
+            'occultism:' + material + '_ore',
+            'occultism:' + material + '_dust',
+            'occultism:' + material + '_nugget',
+            'occultism:' + material + '_block'
         );
     });
 

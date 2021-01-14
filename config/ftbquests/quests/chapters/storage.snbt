@@ -31,9 +31,9 @@
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2428,
-				type: "xp_levels",
-				xp_levels: 5
+				id: 3235,
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -53,21 +53,11 @@
 				id: 2387,
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: 1686,
-					type: "item",
-					item: "prettypipes:wrench"
-				},
-				{
-					id: 2665,
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: 1686,
+				type: "item",
+				item: "prettypipes:wrench"
+			}]
 		},
 		{
 			title: "Refined Storage",
@@ -877,21 +867,11 @@
 				type: "checkmark",
 				title: "Sophisticated Backpacks"
 			}],
-			rewards: [
-				{
-					id: 2455,
-					type: "item",
-					item: "sophisticatedbackpacks:backpack"
-				},
-				{
-					id: 2661,
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: 2455,
+				type: "item",
+				item: "sophisticatedbackpacks:backpack"
+			}]
 		},
 		{
 			x: 2.0d,

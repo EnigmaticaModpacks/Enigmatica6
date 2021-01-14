@@ -50,6 +50,21 @@ events.listen('recipes', function (event) {
                     item.of('emendatusenigmatica:gold_dust').chance(0.1),
                     item.of('minecraft:gravel').chance(0.2)
                 ]
+            },
+            {
+                input: '#forge:ores/bitumen',
+                experience: 0.2,
+                outputs: [item.of('emendatusenigmatica:bitumen_gem', 2), item.of('minecraft:gravel').chance(0.2)]
+            },
+            {
+                input: '#forge:ores/dimensional',
+                experience: 0.2,
+                outputs: [item.of('emendatusenigmatica:dimensional_gem', 8)]
+            },
+            {
+                input: '#forge:ores/mana',
+                experience: 0.2,
+                outputs: [item.of('emendatusenigmatica:arcane_gem', 2)]
             }
         ]
     };
