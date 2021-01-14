@@ -2,13 +2,23 @@
 
 _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.6.txt)_
 
-**Note for server admins**: FTB Chunks now allows you to stop chunkloading for players that are offline. To enable it, change the value `chunk_load_offline` to `false` in the file `world/serverconfig/ftbchunks-server.toml`.
+**Note for server admins**: FTB Chunks now allows you to stop chunkloading for players that are offline. To enable it, change the value `chunk_load_offline` to `false` in the file `world/serverconfig/ftbchunks-server.toml`. Enabling it can have a positive impact on TPS.
+
+**New Mod!**
+
+- FerriteCore
 
 **Improvements**
 
--   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
+-   Added missing secondary outputs to Immersive Engineering and Thermal Ore Processing [\#745](https://github.com/NillerMedDild/Enigmatica6/pull/745) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Additional Apiary Glass Types [\#871](https://github.com/NillerMedDild/Enigmatica6/issues/871)
+-   \[ImgBot\] Optimize images [\#852](https://github.com/NillerMedDild/Enigmatica6/pull/852) ([imgbot[bot]](https://github.com/apps/imgbot))
+-   Bee Update -  Higher output, higher time in hive [\#832](https://github.com/NillerMedDild/Enigmatica6/pull/832) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Create Ore Processing - Lead [\#838](https://github.com/NillerMedDild/Enigmatica6/pull/838) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix for Create Processing [\#748](https://github.com/NillerMedDild/Enigmatica6/pull/748) ([MuteTiefling](https://github.com/MuteTiefling))
 -   FTB Chunks: Default max chunk loaded claimed chunks is now 10, down from 25.
--   Worldgen: Added 'Dustrial Decor materials to some Village structures.
+-   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
+-   Implementation of Supplementaries  [\#778](https://github.com/NillerMedDild/Enigmatica6/pull/778) ([kil0byt3](https://github.com/kil0byt3))
 -   Lost Trinkets: There is now a 30 minute cooldown between being able to obtain a Lost Trinket.
 -   Lost Trinkets: The following Trinkets can no longer be randomly obtained:
     Note: There will most likely be added a way to obtain some of these in the future
@@ -22,12 +32,51 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
     -   Magic Herbs
     -   Magical Feathers
     -   Mad Aura
+-   Magic Feather Recipes [\#865](https://github.com/NillerMedDild/Enigmatica6/pull/865) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Magic Feather [\#344](https://github.com/NillerMedDild/Enigmatica6/issues/344)
+-   Occultism Ore Generator Revamp [\#787](https://github.com/NillerMedDild/Enigmatica6/pull/787) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism progression fixes [\#835](https://github.com/NillerMedDild/Enigmatica6/pull/835) ([MuteTiefling](https://github.com/MuteTiefling))
+-   RFTools Quest Loot Table [\#775](https://github.com/NillerMedDild/Enigmatica6/pull/775) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Wood List [\#780](https://github.com/NillerMedDild/Enigmatica6/pull/780) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Valid Apiary Block updates [\#839](https://github.com/NillerMedDild/Enigmatica6/pull/839) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Worldgen: Added 'Dustrial Decor materials to some Village structures.
 
 **Bug Fixes**
 
--   Re-enabled all disabled Lost Trinkets. _(except Tha Ghost which is completely broken now that it works)_
+-   Aquaculture Fishing Loot was empty [\#886](https://github.com/NillerMedDild/Enigmatica6/issues/886)
+-   Ars Nouveau Loot fix [\#762](https://github.com/NillerMedDild/Enigmatica6/pull/762) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[0.3.4\] BloodMagic's Updated Book \(Sanguine Sanctorum\) [\#823](https://github.com/NillerMedDild/Enigmatica6/issues/823) [\#842](https://github.com/NillerMedDild/Enigmatica6/pull/842) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Client Crash\] Latest Create \(v0.3c\) has an NPE for some users \(not all\)   [\#810](https://github.com/NillerMedDild/Enigmatica6/issues/810)
+-   \[Server Crash\]\[Ars Noveau\] Using cut spell against ghast's fireball causes ClassCastException [\#819](https://github.com/NillerMedDild/Enigmatica6/issues/819)
+-   \[Suggestion\] Quest condense/cleanup [\#840](https://github.com/NillerMedDild/Enigmatica6/issues/840)
+-   Bug: Tha Ghost Trinket not-functional [\#784](https://github.com/NillerMedDild/Enigmatica6/issues/784)
+-   Buried Dungeons spawning in the End? [\#866](https://github.com/NillerMedDild/Enigmatica6/issues/866)
+-   BYG fruits aren't tagged as fruits for the cooking mods [\#492](https://github.com/NillerMedDild/Enigmatica6/issues/492)
+-   Can't select-all text in JEI search box [\#765](https://github.com/NillerMedDild/Enigmatica6/issues/765)
+-   Change Cobbleworks so it doens't interfere with basic cobble generators. [\#836](https://github.com/NillerMedDild/Enigmatica6/pull/836) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create Recipe Conflict [\#779](https://github.com/NillerMedDild/Enigmatica6/issues/779)
+-   Dank Construction Mode Bug [\#801](https://github.com/NillerMedDild/Enigmatica6/issues/801)
+-   disabled quark bone to bonemeal smelt recipe [\#760](https://github.com/NillerMedDild/Enigmatica6/pull/760) ([theboo](https://github.com/theboo))
+-   Excessive Cave Generation [\#809](https://github.com/NillerMedDild/Enigmatica6/issues/809)
+-   FTBChunks Crashing with fake player \(drones\) [\#660](https://github.com/NillerMedDild/Enigmatica6/issues/660)
+-   Lead chunks can't be crushed/milled by create [\#889](https://github.com/NillerMedDild/Enigmatica6/issues/889)
 -   Lowered Surface Cave density, fixes [#809](https://github.com/NillerMedDild/Enigmatica6/issues/809)
+-   Occultism is hard to get started with [\#829](https://github.com/NillerMedDild/Enigmatica6/issues/829)
+-   Only 1 Gem drops from EE Dimensional Ore [\#867](https://github.com/NillerMedDild/Enigmatica6/issues/867)
+-   Opening Thermopneumatic Processing Plant GUI crashes game [\#703](https://github.com/NillerMedDild/Enigmatica6/issues/703)
+-   PneumaticCraft Pressure Chamber leaks air on startup [\#708](https://github.com/NillerMedDild/Enigmatica6/issues/708)
+-   Progression Skip/Vanilla Cobble Gen randomized [\#833](https://github.com/NillerMedDild/Enigmatica6/issues/833)
+-   Re-add missing Gem processing recipes to Create Crushing [\#851](https://github.com/NillerMedDild/Enigmatica6/pull/851) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Re-enabled all disabled Lost Trinkets. _(except Tha Ghost which is completely broken now that it works)_
+-   Refined Fuel \(Thermal Series\) does not work in compression dynamos [\#872](https://github.com/NillerMedDild/Enigmatica6/issues/872)
+-   Removed duplicate Pulverizer, Milling & Crushing Recipes [\#750](https://github.com/NillerMedDild/Enigmatica6/pull/750) ([MuteTiefling](https://github.com/MuteTiefling))
+-   RFtools Loot [\#777](https://github.com/NillerMedDild/Enigmatica6/pull/777) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Skeleton Horse spawning on seafloor crashed server [\#643](https://github.com/NillerMedDild/Enigmatica6/issues/643)
+-   Sophisticated backpacks can't pull from slot 1 in toolbar [\#834](https://github.com/NillerMedDild/Enigmatica6/issues/834)
 -   Storage Drawers can no longer be picked up with Cardboard Boxes from Mekanism, as they already retain their inventory when broken.
+-   Sulfur Conflict [\#879](https://github.com/NillerMedDild/Enigmatica6/pull/879) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tetra quest tree is incorrect.  [\#831](https://github.com/NillerMedDild/Enigmatica6/issues/831)
+-   Unable to craft Industrial Foregoing Ore Laser Drill [\#648](https://github.com/NillerMedDild/Enigmatica6/issues/648)
 
 ### Enigmatica 6 v0.3.5
 
