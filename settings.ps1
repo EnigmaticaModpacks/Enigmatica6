@@ -12,7 +12,6 @@ $CLIENT_MODS = @(
 )
 
 $CONFIGS_TO_REMOVE = @(
-	# "defaultoptions/options.txt",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
 	"artifacts-client.toml",

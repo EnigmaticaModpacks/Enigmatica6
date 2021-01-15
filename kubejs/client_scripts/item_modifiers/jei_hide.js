@@ -15,6 +15,7 @@ events.listen('jei.hide.items', (event) => {
             'emendatusenigmatica:' + material + '_netherrack_ore',
             'emendatusenigmatica:' + material + '_blackstone_ore',
             'emendatusenigmatica:' + material + '_end_stone_ore',
+            'emendatusenigmatica:' + material + '_mossy_stone_ore',
             'titanium:' + material + '_gear',
             'thermal:' + material,
             'thermal:' + material + '_dust',

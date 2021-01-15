@@ -96,7 +96,12 @@ const materialsToUnify = [
     'mana',
     'certus_quartz',
     'charged_certus_quartz',
-    'iesnium'
+    'iesnium',
+    'dimensional',
+    'cloggrum',
+    'froststeel',
+    'regalium',
+    'utherium'
 ];
 
 global.materialsToUnify = materialsToUnify;

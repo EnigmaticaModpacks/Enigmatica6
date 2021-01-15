@@ -1,0 +1,11 @@
+#Replace the blockstate neighbor table
+replaceNeighborLookup = true
+#Do not store the properties of a state explicitly and read themfrom the replace neighbor table instead. Requires replaceNeighborLookup to be enabled
+replacePropertyMap = true
+#Cache the predicate instances used in multipart models
+cacheMultipartPredicates = true
+#Avoid creation of new strings when creating ModelResourceLocations
+modelResourceLocations = true
+#Do not create a new MultipartBakedModel instance for each block state using the same multipartmodel. Requires cacheMultipartPredicates to be enabled
+multipartDeduplication = true
+
