@@ -1,0 +1,11 @@
+#Enable/Disable debug mode
+debug = false
+
+[SmokeContainers]
+	#Maximum length of the vent pipe for smoke or gas transmition
+	#Range: 1 ~ 64
+	maxVentPipeLength = 32
+	#Maximum distance from vent to the gas block to inhale
+	#Range: 1 ~ 16
+	ventInhaleDistance = 4
+
