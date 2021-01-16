@@ -1,0 +1,83 @@
+{
+	id: 3248,
+	filename: "occultism",
+	order_index: 31,
+	title: "Occultism",
+	icon: {
+		id: "occultism:miner_djinni_ores",
+		Count: true,
+		tag: {
+			spiritName: "Drakarcark",
+			Damage: 0
+		}
+	},
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "We've Got Spirits!",
+			icon: "occultism:dictionary_of_spirits",
+			x: 6.5d,
+			y: 3.5d,
+			shape: "gear",
+			description: [
+				"With Occultism, you will learn to summon various otherworldly spirits to do your bidding! From the simple Foliot Ore Crushing Spirit for early ore doubling to the powerful Djinni Ore Miner to gather up all those valuable resources for you!",
+				"The Dictionary of Spirits has everything you need to get you started on your journey.",
+				"~The_Boo"
+			],
+			id: 3249,
+			tasks: [{
+				id: 3250,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 3251,
+					type: "item",
+					item: "occultism:dictionary_of_spirits"
+				},
+				{
+					id: 3252,
+					type: "item",
+					item: "occultism:datura_seeds"
+				}
+			]
+		},
+		{
+			title: "Maybe Just a Little...",
+			x: 8.5d,
+			y: 4.5d,
+			subtitle: "Unlock your Third Eye!",
+			description: [
+				"Eating just a piece of Demon's Dream Fruit can cause powerful short-term hallucinogenic effects! The Third Eye effect will allow you to see and interract with various otherworldly materials.",
+				"",
+				"You will find examples of these materials in lush underground groves disguised as common andesite and harmless oak trees.",
+				"",
+				"Please eat responsibly."
+			],
+			hide_dependency_lines: false,
+			dependencies: [I;3249],
+			id: 3253,
+			tasks: [{
+				id: 3254,
+				type: "item",
+				item: "occultism:datura"
+			}]
+		},
+		{
+			x: 11.0d,
+			y: 4.5d,
+			dependencies: [I;3253],
+			optional: true,
+			id: 3255,
+			tasks: [{
+				id: 3256,
+				type: "item",
+				item: {
+					id: "occultism:divination_rod",
+					Count: true,
+					tag: {}
+				}
+			}]
+		}
+	]
+}
