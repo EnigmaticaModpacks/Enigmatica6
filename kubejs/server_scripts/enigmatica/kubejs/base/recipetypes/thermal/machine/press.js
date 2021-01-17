@@ -30,15 +30,15 @@ events.listen('recipes', (event) => {
                 output: item.of('byg:black_sand', 4)
             },
             {
-                inputs: [item.of('byg:black_sandstone', 1), item.of('thermal:press_unpacking_die')],
+                inputs: [item.of('biomesoplenty:black_sandstone', 1), item.of('thermal:press_unpacking_die')],
                 output: item.of('biomesoplenty:black_sand', 4)
             },
             {
-                inputs: [item.of('byg:orange_sandstone', 1), item.of('thermal:press_unpacking_die')],
+                inputs: [item.of('biomesoplenty:orange_sandstone', 1), item.of('thermal:press_unpacking_die')],
                 output: item.of('biomesoplenty:orange_sand', 4)
             },
             {
-                inputs: [item.of('byg:white_sandstone', 1), item.of('thermal:press_unpacking_die')],
+                inputs: [item.of('biomesoplenty:white_sandstone', 1), item.of('thermal:press_unpacking_die')],
                 output: item.of('biomesoplenty:white_sand', 4)
             }
         ]
