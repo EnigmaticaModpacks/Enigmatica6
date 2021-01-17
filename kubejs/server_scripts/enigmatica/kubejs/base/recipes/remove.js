@@ -16,7 +16,7 @@ events.listen('recipes', function (event) {
 
         'decorative_blocks:lattice',
 
-        //'akashictome:tome',
+        'akashictome:tome',
 
         'magicfeather:magicfeather',
 
