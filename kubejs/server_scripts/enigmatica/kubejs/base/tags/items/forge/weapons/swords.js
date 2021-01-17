@@ -25,7 +25,9 @@ events.listen('item.tags', function (event) {
         'naturesaura:infused_iron_sword',
         'naturesaura:sky_sword',
         'wstweaks:blaze_blade',
-        'wstweaks:lava_blade'
+        'wstweaks:lava_blade',
+        'undergarden:forgotten_sword',
+        'eidolon:sapping_sword'
     ];
     event.get('forge:weapons/sword').add(items);
 });

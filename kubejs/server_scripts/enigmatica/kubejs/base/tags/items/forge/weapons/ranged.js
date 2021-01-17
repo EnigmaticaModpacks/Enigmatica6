@@ -23,7 +23,9 @@ events.listen('item.tags', function (event) {
         'minecraft:trident',
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun',
-        'undergarden:slingshot'
+        'undergarden:slingshot',
+        'alexsmobs:blood_sprayer',
+        'meetyourfight:cocktail_shotgun'
     ];
     event.get('forge:weapons').add(items);
     event.get('forge:weapons/ranged').add(items);

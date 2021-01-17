@@ -50,13 +50,17 @@ events.listen('jei.hide.items', (event) => {
             'create:' + material + '_sheet',
             'create:' + material + '_nugget',
             'create:' + material + '_ingot',
+            'create:' + material + '_ore',
             'immersiveposts:stick_' + material,
             'buildersaddition:' + material + '_rod',
             'occultism:' + material + '_ingot',
             'occultism:' + material + '_ore',
             'occultism:' + material + '_dust',
             'occultism:' + material + '_nugget',
-            'occultism:' + material + '_block'
+            'occultism:' + material + '_block',
+            'eidolon:' + material + '_ingot',
+            'eidolon:' + material + '_nugget',
+            'eidolon:' + material + '_ore'
         );
     });
 

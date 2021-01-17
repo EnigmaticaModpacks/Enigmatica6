@@ -36,7 +36,14 @@ events.listen('item.tags', function (event) {
         'undergarden:utheric_helmet',
         'undergarden:froststeel_helmet',
         'undergarden:cloggrum_helmet',
-        'bloodmagic:livinghelmet'
+        'bloodmagic:livinghelmet',
+        'dustrial_decor:cardboard_helmet',
+        'mekanismtools:steel_helmet',
+        'alexsmobs:sombrero',
+        'alexsmobs:frontier_cap',
+        'alexsmobs:moose_headgear',
+        'eidolon:warlock_hat',
+        'eidolon:top_hat'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/helm').add(items);
