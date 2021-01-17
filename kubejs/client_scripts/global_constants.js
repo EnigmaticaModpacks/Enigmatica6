@@ -101,7 +101,8 @@ const materialsToUnify = [
     'cloggrum',
     'froststeel',
     'regalium',
-    'utherium'
+    'utherium',
+    'coal_coke'
 ];
 
 global.materialsToUnify = materialsToUnify;
