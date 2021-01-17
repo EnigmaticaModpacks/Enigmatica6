@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [" C ", " F ", " X "],
+    "key": {
+        "C": {
+            "tag": "forge:workbench"
+        },
+        "X": {
+            "tag": "forge:chests/wooden"
+        },
+        "F": {
+            "item": "rftoolsbase:machine_frame"
+        }
+    },
+    "result": {
+        "item": "rftoolscontrol:workbench"
+    }
+}

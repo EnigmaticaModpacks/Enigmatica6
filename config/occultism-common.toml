@@ -130,3 +130,14 @@
 		#The amount of mining operations the spirit can perform before breaking.
 		durability = 5000
 
+#Spirit Job Settings
+[spirit_job]
+	#The multiplier to each crushing recipe's crushing_time for Tier 1 Crusher Spirits.
+	tier1CrusherTimeMultiplier = 2.0
+	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 2 Crusher Spirits.
+	tier2CrusherTimeMultiplier = 1.0
+	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 3 Crusher Spirits.
+	tier3CrusherTimeMultiplier = 0.5
+	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 4 Crusher Spirits.
+	tier4CrusherTimeMultiplier = 0.2
+

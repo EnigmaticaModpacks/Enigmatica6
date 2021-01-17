@@ -75,7 +75,93 @@ events.listen('recipes', (event) => {
             '#forge:dyes'
         ]),
         shapelessRecipe('emendatusenigmatica:dimensional_gem', ['rftoolsbase:dimensionalshard']),
-        shapelessRecipe('rftoolsbase:dimensionalshard', ['emendatusenigmatica:dimensional_gem'])
+        shapelessRecipe('rftoolsbase:dimensionalshard', ['emendatusenigmatica:dimensional_gem']),
+
+        shapelessRecipe('emendatusenigmatica:fluorite_dust', ['thermal:earth_charge', '#forge:ores/fluorite']),
+        shapelessRecipe('emendatusenigmatica:dimensional_dust', ['thermal:earth_charge', '#forge:ores/dimensional']),
+        shapelessRecipe('emendatusenigmatica:potassium_nitrate_dust', [
+            'thermal:earth_charge',
+            '#forge:ores/potassium_nitrate'
+        ]),
+        shapelessRecipe(Item.of('akashictome:tome', {
+            'akashictome:is_morphing': 1,
+            'akashictome:data': {
+                industrialforegoing: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'industrialforegoing:industrial_foregoing' }
+                },
+                tetra: {
+                    id: 'tetra:holo',
+                    Count: 1,
+                    tag: {
+                        'holo/core_material': 'frame/dim',
+                        'holo/frame': 'holo/frame',
+                        'holo/core': 'holo/core',
+                        'holo/frame_material': 'core/ancient'
+                    }
+                },
+                resourcefulbees: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }
+                },
+                theoneprobe: { id: 'theoneprobe:probenote', Count: 1 },
+                astralsorcery: { id: 'astralsorcery:tome', Count: 1 },
+                ftbquests: { id: 'ftbquests:book', Count: 1 },
+                alexsmobs: { id: 'alexsmobs:animal_dictionary', Count: 1 },
+                immersiveengineering: { id: 'immersiveengineering:manual', Count: 1 },
+                eidolon: { id: 'eidolon:codex', Count: 1 },
+                botania: { id: 'botania:lexicon', Count: 1, tag: {} },
+                thermal: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'thermal:guidebook' } },
+                patchouli: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'patchouli:modded_for_dummies' }
+                },
+                rftoolsbase: { id: 'rftoolsbase:manual', Count: 1 },
+                cookingforblockheads: {
+                    id: 'cookingforblockheads:crafting_book',
+                    Count: 1,
+                    tag: {
+                        'akashictome:displayName': '{"translate":"item.cookingforblockheads.crafting_book"}',
+                        'akashictome:is_morphing': 1,
+                        display: {
+                            Name:
+                                '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.cookingforblockheads.crafting_book"}]}'
+                        }
+                    }
+                },
+                powah: { id: 'powah:book', Count: 1 },
+                pneumaticcraft: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'pneumaticcraft:book' }
+                },
+                naturesaura: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'naturesaura:book' }
+                },
+                pedestals: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'pedestals:manual' } },
+                transport: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'transport:guide' } },
+                engineersdecor: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'engineersdecor:engineersdecor_manual' }
+                },
+                occultism: { id: 'occultism:dictionary_of_spirits', Count: 1 },
+                solcarrot: { id: 'solcarrot:food_book', Count: 1 },
+                modularrouters: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'modularrouters:book' }
+                },
+                tmechworks: { id: 'tmechworks:book', Count: 1 },
+                ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
+                bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } }
+            }
+        }), ['minecraft:book', '#forge:bookshelves']),
     ];
 
     recipes.forEach(function (recipe) {

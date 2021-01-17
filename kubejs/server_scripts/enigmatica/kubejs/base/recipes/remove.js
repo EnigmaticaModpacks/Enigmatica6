@@ -16,7 +16,7 @@ events.listen('recipes', function (event) {
 
         'decorative_blocks:lattice',
 
-        //'akashictome:tome',
+        'akashictome:tome',
 
         'magicfeather:magicfeather',
 
@@ -112,7 +112,7 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
-        output: '/\\w+:\\w+_gear/',
+        output: '/\\w+:\\w+_gear$/',
         type: 'minecraft:crafting_shaped'
     });
 
