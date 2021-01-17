@@ -73,9 +73,9 @@ events.listen('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         event.recipes.create.milling(
             [
-                Item.of('minecraft:' + recipe.color + '_dye').count(recipe.multiplier),
+                Item.of('minecraft:' + recipe.color + '_dye').withCount(recipe.multiplier),
                 Item.of('minecraft:' + recipe.color + '_dye')
-                    .count(2)
+                    .withCount(2)
                     .withChance(0.25)
             ],
             recipe.input
