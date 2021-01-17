@@ -3,8 +3,6 @@ name: Mod Suggestion
 about: Suggest a new mod
 title: Mod Name
 labels: Suggestion
-assignees: NillerMedDild
-
 ---
 
 DELETE THIS TEXT BEFORE WRITING YOUR SUGGESTION
