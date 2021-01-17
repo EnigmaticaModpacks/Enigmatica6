@@ -338,8 +338,10 @@ events.listen('recipes', function (event) {
             D: 'paraglider:deku_leaf',
             E: 'thermal:hazmat_boots',
             F: 'alexsmobs:frontier_cap'
+        }),
+        shapedRecipe('minecraft:chest', ['AAA', 'A A', 'AAA'], {
+            A: '#minecraft:planks'
         })
-        //
     ];
 
     recipes.forEach(function (recipe) {
