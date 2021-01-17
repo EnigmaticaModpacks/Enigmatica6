@@ -1,7 +1,7 @@
 {
 	id: 1805,
 	filename: "resourceful_bees",
-	order_index: 0,
+	order_index: 1,
 	title: "Resourceful Bees",
 	icon: "minecraft:honeycomb",
 	subtitle: ["Feed the Bees"],
@@ -25,7 +25,7 @@
 				title: "Any minecraft:beehives",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "minecraft:beehives"
 					}
@@ -241,7 +241,7 @@
 				title: "Checkmark",
 				icon: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 					}
@@ -253,7 +253,7 @@
 				title: "Fifty Shades of Bees",
 				item: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 					}
@@ -274,7 +274,7 @@
 				title: "Any resourcefulbees:resourceful_honeycomb",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "resourcefulbees:resourceful_honeycomb"
 					}
@@ -287,7 +287,7 @@
 					title: "Shears",
 					item: {
 						id: "minecraft:shears",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
