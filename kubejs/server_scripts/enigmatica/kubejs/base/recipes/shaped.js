@@ -339,92 +339,24 @@ events.listen('recipes', function (event) {
             E: 'thermal:hazmat_boots',
             F: 'alexsmobs:frontier_cap'
         }),
-        shapedRecipe(
-            Item.of('akashictome:tome', {
-                'akashictome:is_morphing': 1,
-                'akashictome:data': {
-                    industrialforegoing: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'industrialforegoing:industrial_foregoing' }
-                    },
-                    tetra: {
-                        id: 'tetra:holo',
-                        Count: 1,
-                        tag: {
-                            'holo/core_material': 'frame/dim',
-                            'holo/frame': 'holo/frame',
-                            'holo/core': 'holo/core',
-                            'holo/frame_material': 'core/ancient'
-                        }
-                    },
-                    resourcefulbees: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }
-                    },
-                    theoneprobe: { id: 'theoneprobe:probenote', Count: 1 },
-                    astralsorcery: { id: 'astralsorcery:tome', Count: 1 },
-                    ftbquests: { id: 'ftbquests:book', Count: 1 },
-                    alexsmobs: { id: 'alexsmobs:animal_dictionary', Count: 1 },
-                    immersiveengineering: { id: 'immersiveengineering:manual', Count: 1 },
-                    eidolon: { id: 'eidolon:codex', Count: 1 },
-                    botania: { id: 'botania:lexicon', Count: 1, tag: {} },
-                    thermal: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'thermal:guidebook' } },
-                    patchouli: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'patchouli:modded_for_dummies' }
-                    },
-                    rftoolsbase: { id: 'rftoolsbase:manual', Count: 1 },
-                    cookingforblockheads: {
-                        id: 'cookingforblockheads:crafting_book',
-                        Count: 1,
-                        tag: {
-                            'akashictome:displayName': '{"translate":"item.cookingforblockheads.crafting_book"}',
-                            'akashictome:is_morphing': 1,
-                            display: {
-                                Name:
-                                    '{"translate":"akashictome.sudo_name","with":[{"color":"green","translate":"item.cookingforblockheads.crafting_book"}]}'
-                            }
-                        }
-                    },
-                    powah: { id: 'powah:book', Count: 1 },
-                    pneumaticcraft: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'pneumaticcraft:book' }
-                    },
-                    naturesaura: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'naturesaura:book' }
-                    },
-                    pedestals: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'pedestals:manual' } },
-                    transport: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'transport:guide' } },
-                    engineersdecor: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'engineersdecor:engineersdecor_manual' }
-                    },
-                    occultism: { id: 'occultism:dictionary_of_spirits', Count: 1 },
-                    solcarrot: { id: 'solcarrot:food_book', Count: 1 },
-                    modularrouters: {
-                        id: 'patchouli:guide_book',
-                        Count: 1,
-                        tag: { 'patchouli:book': 'modularrouters:book' }
-                    },
-                    tmechworks: { id: 'tmechworks:book', Count: 1 },
-                    ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
-                    bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } }
-                }
-            }),
-            ['AAA', 'ABA', 'AAA'],
-            {
-                A: 'thermal:lightning_charge',
-                B: 'minecraft:bookshelf'
-            }
-        )
+        shapedRecipe(Item.of('morphtool:tool', {"morphtool:is_morphing":1,"morphtool:data":{blockcarpentry:{id:"blockcarpentry:texture_wrench",Count:1},
+        powah:{id:"powah:wrench",Count:1,tag:{PowahWrenchNBT:{}}},resourcefulbees:{id:"resourcefulbees:scraper",Count:1},astralsorcery:{id:"astralsorcery:wand",Count:1},
+        pneumaticcraft:{id:"pneumaticcraft:pneumatic_wrench",Count:1},immersiveengineering:{id:"immersiveengineering:hammer",Count:1,tag:{Damage:0}},
+        transport:{id:"transport:rail_breaker",Count:1},pedestals:{id:"pedestals:linkingtool",Count:1},botania:{id:"botania:twig_wand",Count:1,tag:{color1:0,color2:0}},
+        ars_nouveau:{id:"ars_nouveau:dominion_wand",Count:1,tag:{}},mekanism:{id:"mekanism:configurator",Count:1},bloodmagic:{id:"bloodmagic:ritualtinkerer",Count:1},
+        thermal:{id:"thermal:wrench",Count:1},rftoolsbase:{id:"rftoolsbase:smartwrench",Count:1},create:{id:"create:wrench",Count:1,
+        tag:{"morphtool:is_morphing":1,"morphtool:displayName":{translate:"item.create.wrench"},display:{Name:{translate:"morphtool.sudo_name","with":
+        [{"color":"green","translate":"item.create.wrench"}]}}}},chiselsandbits:{id:"chiselsandbits:wrench_wood",Count:1,tag:{Damage:0}},
+        refinedstorage:{id:"refinedstorage:wrench",Count:1},quantumstorage:{id:"quantumstorage:hammer",Count:1,tag:{mode:"link"}},
+        prettypipes:{id:"prettypipes:wrench",Count:1},storagedrawers:{id:"storagedrawers:drawer_key",Count:1}}}), ['ABA', 'CFD', 'AEA'], {
+            A: 'minecraft:redstone_block',
+            B: '#forge:gears/gold',
+            C: '#forge:gears/iron',
+            D: '#forge:gears/silver',
+            E: '#forge:gears/copper',
+            F: 'morphtool:tool'
+        })
+        //
     ];
 
     recipes.forEach(function (recipe) {
