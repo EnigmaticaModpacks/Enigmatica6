@@ -45,6 +45,46 @@ events.listen('recipes', (event) => {
                 input: '#forge:ores/zinc',
                 output: item.of('emendatusenigmatica:zinc_dust', 2),
                 secondary: [item.of('emendatusenigmatica:gold_dust').chance(0.1)]
+            },
+            {
+                input: 'byg:pink_sandstone',
+                output: item.of('byg:pink_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'byg:purple_sandstone',
+                output: item.of('byg:purple_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'byg:blue_sandstone',
+                output: item.of('byg:blue_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'byg:white_sandstone',
+                output: item.of('byg:white_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'byg:black_sandstone',
+                output: item.of('byg:black_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'biomesoplenty:black_sandstone',
+                output: item.of('biomesoplenty:black_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'biomesoplenty:orange_sandstone',
+                output: item.of('biomesoplenty:orange_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'biomesoplenty:white_sandstone',
+                output: item.of('biomesoplenty:white_sand', 2),
+                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
             }
         ]
     };

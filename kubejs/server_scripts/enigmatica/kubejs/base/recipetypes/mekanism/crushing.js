@@ -1,18 +1,34 @@
 events.listen('recipes', function (event) {
-    var input = 'forge:gems/ender';
-    var output = getPreferredItemInTag(ingredient.of('#forge:dusts/ender')).id;
-    var count = 1;
-
-    event.recipes.mekanism.crushing({
-        type: 'mekanism.crushing',
-        input: {
-            ingredient: {
-                tag: input
+    var data = {
+        recipes: [
+            {
+                input: '#forge:gems/ender',
+                output: item.of('emendatusenigmatica:ender_dust')
+            },
+            {
+                input: 'byg:pink_sandstone',
+                output: item.of('byg:pink_sand', 2)
+            },
+            {
+                input: 'byg:purple_sandstone',
+                output: item.of('byg:purple_sand', 2)
+            },
+            {
+                input: 'byg:blue_sandstone',
+                output: item.of('byg:blue_sand', 2)
+            },
+            {
+                input: 'byg:white_sandstone',
+                output: item.of('byg:white_sand', 2)
+            },
+            {
+                input: 'byg:black_sandstone',
+                output: item.of('byg:black_sand', 2)
             }
-        },
-        output: {
-            item: output,
-            count: count
-        }
+        ]
+    };
+
+    data.recipes.forEach((recipe) => {
+        event.recipes.mekanism.crushing(recipe.output, recipe.input);
     });
 });

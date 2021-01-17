@@ -28,12 +28,12 @@ events.listen('recipes', function (event) {
         create_ingot_gem_milling(event, material, ingot, dust, gem);
         create_press_plates(event, material, gem, plate);
 
+        emendatus_hammer_crushing(event, material, ore, dust);
+
         immersiveengineering_gem_crushing(event, material, dust, gem);
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
-
-        mekanism_ingot_gem_crushing(event, material, dust, gem, ingot);
 
         occultism_ore_crushing(event, material, ore, dust, gem);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
@@ -43,7 +43,6 @@ events.listen('recipes', function (event) {
 
         thermal_press_wires(event, material, wire);
         thermal_press_plates(event, material, gem, plate);
-        thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
     });
 });
 
@@ -461,6 +460,19 @@ function create_press_plates(event, material, gem, plate) {
     event.recipes.create.pressing(output, input);
 }
 
+function emendatus_hammer_crushing(event, material, ore, dust) {
+    if (ore == air || dust == air) {
+        return;
+    }
+
+    event.remove({ id: 'immersiveengineering:crafting/hammercrushing_' + material });
+    event.replaceInput(
+        { id: 'emendatusenigmatica:dust_from_chunk/' + material },
+        'emendatusenigmatica:' + material + '_chunk',
+        '#forge:ores/' + material
+    );
+}
+
 function immersiveengineering_gem_crushing(event, material, dust, gem) {
     if (gem == air || dust == air) {
         return;
@@ -570,51 +582,19 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     event.recipes.immersiveengineering.metal_press(output, input, mold).energy(2400);
 }
 
-function mekanism_ingot_gem_crushing(event, material, dust, gem, ingot) {
-    if (dust == air) {
+function occultism_ore_crushing(event, material, ore, dust, gem) {
+    if (ore == air) {
         return;
     }
 
-    blacklistedMaterials = [
-        'charcoal',
-        'ender',
-        'diamond',
-        'emerald',
-        'lapis',
-        'quartz',
-        'fluorite',
-        'iron',
-        'gold',
-        'copper',
-        'uranium',
-        'osmium',
-        'tin',
-        'bronze',
-        'steel'
-    ];
+    blacklistedMaterials = ['silver'];
 
     for (var i = 0; i < blacklistedMaterials.length; i++) {
         if (blacklistedMaterials[i] == material) {
             return;
         }
     }
-    var output = dust,
-        input;
-    if (gem != air) {
-        input = gem;
-    } else if (ingot != air) {
-        input = ingot;
-    } else {
-        return;
-    }
 
-    event.recipes.mekanism.crushing(output, input);
-}
-
-function occultism_ore_crushing(event, material, ore, dust, gem) {
-    if (ore == air) {
-        return;
-    }
     var count;
     switch (material) {
         case 'redstone':
@@ -668,6 +648,14 @@ function occultism_ore_crushing(event, material, ore, dust, gem) {
 function occultism_ingot_gem_crushing(event, material, ingot, dust, gem) {
     if (dust == air) {
         return;
+    }
+
+    blacklistedMaterials = ['silver'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
     }
 
     var input,
@@ -796,50 +784,4 @@ function thermal_press_wires(event, material, wire) {
         input = item.of('#forge:ingots/' + material, 2),
         mold = 'immersiveengineering:mold_wire';
     event.recipes.thermal.press(output, [input, mold]).energy(2400);
-}
-
-function thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem) {
-    if (dust == air) {
-        return;
-    }
-
-    blacklistedMaterials = [
-        'enderium',
-        'lumium',
-        'signalum',
-        'invar',
-        'electrum',
-        'constantan',
-        'bronze',
-        'sulfur',
-        'apatite',
-        'cinnabar',
-        'lapis',
-        'emerald',
-        'diamond',
-        'quartz',
-        'gold',
-        'iron',
-        'silver',
-        'lead',
-        'tin'
-    ];
-
-    for (var i = 0; i < blacklistedMaterials.length; i++) {
-        if (blacklistedMaterials[i] == material) {
-            return;
-        }
-    }
-
-    var input,
-        output = dust;
-    if (ingot != air) {
-        input = '#forge:ingots/' + material;
-    } else if (gem != air) {
-        input = '#forge:gems/' + material;
-    } else {
-        return;
-    }
-
-    event.recipes.thermal.pulverizer(output, input);
 }
