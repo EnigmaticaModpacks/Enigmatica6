@@ -7,4 +7,6 @@ events.listen('recipes', function (event) {
     event.replaceOutput({ mod: 'bloodmagic' }, 'bloodmagic:goldfragment', '#mekanism:clumps/gold');
     event.replaceOutput({ mod: 'bloodmagic' }, 'bloodmagic:irongravel', '#mekanism:dirty_dusts/iron');
     event.replaceOutput({ mod: 'bloodmagic' }, 'bloodmagic:goldgravel', '#mekanism:dirty_dusts/gold');
+    event.replaceOutput({ mod: 'dustrial_decor' }, 'minecraft:iron_ingot', 'dustrial_decor:rusty_iron_ingot');
+    event.replaceOutput({ mod: 'dustrial_decor' }, 'minecraft:iron_nugget', 'dustrial_decor:rusty_iron_nugget');
 });
