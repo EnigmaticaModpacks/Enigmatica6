@@ -61,7 +61,7 @@
 		cage_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:parrot", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "minecraft:rabbit", "minecraft:cat", "minecraft:chicken", "minecraft:bat", "iceandfire:pixie", "minecraft:fox", "minecraft:ocelot", "alexsmobs:roadrunner", "alexsmobs:hummingbird", "alexsmobs:crimson_mosquito", "alexsmobs:rattlesnake", "alexsmobs:lobster", "alexsmobs:capuchin_monkey", "alexsmobs:warped_toad", "mysticalworld:beetle", "mysticalworld:frog", "mysticalworld:silver_fox", "mysticalworld:sprout", "mysticalworld:endermini", "mysticalworld:lava_cat", "mysticalworld:owl", "mysticalworld:silkworm", "mysticalworld:hell_sprout", "quark:toretoise", "quark:crab", "quark:foxhound", "quark:stoneling", "quark:frog", "rats:rat", "rats:piper", "rats:plague_doctor", "rats:black_death", "rats:plague_cloud", "rats:plague_beast", "rats:rat_king", "rats:demon_rat", "rats:ratlantean_spirit", "rats:ratlantean_automation", "rats:feral_ratlantean", "rats:neo_ratlantean", "rats:pirat", "rats:ghost_pirat", "rats:dutchrat", "rats:ratfish", "rats:ratlantean_ratbot", "rats:rat_baron", "goblintraders:goblin_trader", "goblintraders:vein_goblin_trader", "autumnity:snail", "buzzierbees:honey_slime", "betteranimalsplus:lammergeier", "betteranimalsplus:songbird", "betteranimalsplus:pheasant", "betteranimalsplus:squirrel", "betteranimalsplus:badger", "betteranimalsplus:turkey", "exoticbirds:roadrunner", "exoticbirds:hummingbird", "exoticbirds:woodpecker", "exoticbirds:kingfisher", "exoticbirds:toucan", "exoticbirds:macaw", "exoticbirds:magpie", "exoticbirds:kiwi", "exoticbirds:owl", "exoticbirds:gouldianfinch", "exoticbirds:gull", "exoticbirds:pigeon", "exoticbirds:penguin", "exoticbirds:duck", "exoticbirds:booby", "exoticbirds:cardinal", "exoticbirds:bluejay", "exoticbirds:robin", "exoticbirds:kookaburra", "exoticbirds:budgerigar", "exoticbirds:cockatoo", "swampexpansion:slabfish"]
 		#additional mobs that you'll be able to catch with the added condition that it has to be a baby variant. No need to include the ones already in cage_mobs
 		cage_baby_mobs = ["minecraft:cow", "minecraft:sheep", "minecraft:pig"]
-		#allow all mobs to be captured by jars
+		#allow all mobs to be captured by cages
 		cage_allow_all_mobs = false
 
 	[blocks.notice_board]
@@ -123,6 +123,8 @@
 	[tweaks.throwable_bricks]
 		#throw bricks at your foes! Might glass blocks
 		enabled = true
+		#additional items that will be able to be thrown (will work with any item). Items tagges as forge/ingots/bricks or nether bricks will be automatically added
+		whitelist = ["biomesoplenty:mud_brick", "byg:yellow_nether_brick", "byg:blue_nether_brick"]
 
 	[tweaks.wall_lantern]
 		#allow wall lanterns placement
