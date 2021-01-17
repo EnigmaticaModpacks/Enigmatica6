@@ -246,7 +246,8 @@ events.listen('recipes', function (event) {
                     'xnet:antenna_base',
                     'xnet:antenna',
                     'transport:fluid_loader',
-                    'resourcefulbees:centrifuge_casing'
+                    'resourcefulbees:centrifuge_casing',
+                    'engineersdecor:metal_bar'
                 ]
             },
             {

@@ -47,7 +47,9 @@ events.listen('item.tags', function (event) {
         'undergarden:cloggrum_axe',
         'bloodmagic:soulaxe',
         'astralsorcery:crystal_axe',
-        'astralsorcery:infused_crystal_axe'
+        'astralsorcery:infused_crystal_axe',
+        'undergarden:forgotten_axe',
+        'eidolon:cleaving_axe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/axe').add(items);
