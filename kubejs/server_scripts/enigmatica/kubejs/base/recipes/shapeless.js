@@ -75,7 +75,14 @@ events.listen('recipes', (event) => {
             '#forge:dyes'
         ]),
         shapelessRecipe('emendatusenigmatica:dimensional_gem', ['rftoolsbase:dimensionalshard']),
-        shapelessRecipe('rftoolsbase:dimensionalshard', ['emendatusenigmatica:dimensional_gem'])
+        shapelessRecipe('rftoolsbase:dimensionalshard', ['emendatusenigmatica:dimensional_gem']),
+
+        shapelessRecipe('emendatusenigmatica:fluorite_dust', ['thermal:earth_charge', '#forge:ores/fluorite']),
+        shapelessRecipe('emendatusenigmatica:dimensional_dust', ['thermal:earth_charge', '#forge:ores/dimensional']),
+        shapelessRecipe('emendatusenigmatica:potassium_nitrate_dust', [
+            'thermal:earth_charge',
+            '#forge:ores/potassium_nitrate'
+        ])
     ];
 
     recipes.forEach(function (recipe) {
