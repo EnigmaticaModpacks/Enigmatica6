@@ -70,6 +70,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
+    event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen');
+    event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
 
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
 
