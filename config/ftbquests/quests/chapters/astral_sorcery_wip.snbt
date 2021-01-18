@@ -1,7 +1,7 @@
 {
 	id: 2803,
 	filename: "astral_sorcery_wip",
-	order_index: 23,
+	order_index: 24,
 	title: "Astral Sorcery",
 	icon: "astralsorcery:hand_telescope",
 	default_quest_shape: "",
@@ -567,6 +567,7 @@
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
 			dependencies: [I;2954],
+			min_width: 300,
 			id: 2958,
 			tasks: [{
 				id: 2959,

@@ -1,8 +1,8 @@
 {
 	id: 3248,
 	filename: "occultism",
-	order_index: 31,
-	title: "Occultism",
+	order_index: 0,
+	title: "Occultism WIP",
 	icon: {
 		id: "occultism:miner_djinni_ores",
 		Count: true,
@@ -11,6 +11,7 @@
 			Damage: 0
 		}
 	},
+	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -77,6 +78,98 @@
 					Count: true,
 					tag: {}
 				}
+			}]
+		},
+		{
+			title: "We Don't Need No Water",
+			icon: "occultism:spirit_fire",
+			x: 7.5d,
+			y: 6.0d,
+			subtitle: "Let the mother trucker burn...",
+			description: [
+				"Spirit Fire is a special flame from the otherworld.",
+				"",
+				"To summon this otherworldly flame, throw a piece of Demon's Dream Fruit on the ground and set it ablaze using a flint and steel.",
+				"",
+				"This flame has the ability to remove the impurities from some items and impart otherworldly properties in to others.",
+				"",
+				"Burn mother trucker... burn..."
+			],
+			dependencies: [I;3253],
+			id: 3290,
+			tasks: [
+				{
+					id: 3292,
+					type: "item",
+					item: "occultism:spirit_attuned_gem"
+				},
+				{
+					id: 3293,
+					type: "item",
+					item: "occultism:otherstone"
+				},
+				{
+					id: 3307,
+					type: "item",
+					item: {
+						id: "occultism:chalk_white",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 3308,
+					type: "item",
+					item: "occultism:purified_ink"
+				}
+			],
+			rewards: [
+				{
+					id: 3294,
+					type: "item",
+					item: "occultism:otherstone",
+					count: 32
+				},
+				{
+					id: 3295,
+					type: "item",
+					item: "occultism:spirit_attuned_gem",
+					count: 4
+				},
+				{
+					id: 3318,
+					type: "item",
+					item: "occultism:purified_ink",
+					count: 4
+				}
+			]
+		},
+		{
+			x: 5.5d,
+			y: 6.0d,
+			id: 3319,
+			tasks: [{
+				id: 3320,
+				type: "advancement",
+				icon: {
+					id: "occultism:book_of_binding_bound_foliot",
+					Count: true,
+					tag: {
+						spiritName: "Reiirtron"
+					}
+				},
+				advancement: "occultism:summon_foliot_crusher",
+				criterion: ""
+			}],
+			rewards: [{
+				id: 3323,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		}
 	]
