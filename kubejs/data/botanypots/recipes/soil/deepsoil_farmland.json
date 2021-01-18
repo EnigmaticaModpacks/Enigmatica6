@@ -1,0 +1,8 @@
+{
+    "type": "botanypots:soil",
+    "conditions": [{ "type": "forge:mod_loaded", "modid": "undergarden" }],
+    "input": { "item": "undergarden:deepsoil_farmland" },
+    "display": { "block": "undergarden:deepsoil_farmland" },
+    "categories": ["deepturf", "deepsoil_farmland"],
+    "growthModifier": 0.15
+}
