@@ -1,0 +1,31 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:shimmerweed"
+    },
+    "categories": [
+        "deepturf"
+    ],
+    "growthTicks": 800,
+    "display": {
+        "block": "undergarden:shimmerweed"
+    },
+    "results": [
+        {
+            "chance": 0.75,
+            "output": {
+                "item": "undergarden:shimmerweed"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        },
+        {
+            "chance": 0.25,
+            "output": {
+                "item": "undergarden:tall_shimmerweed"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}

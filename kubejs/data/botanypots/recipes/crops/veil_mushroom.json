@@ -1,0 +1,40 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:veil_mushroom"
+    },
+    "categories": [
+        "deepturf",
+        "depthrock"
+    ],
+    "growthTicks": 1600,
+    "display": {
+        "block": "undergarden:veil_mushroom"
+    },
+    "results": [
+        {
+            "chance": 0.8,
+            "output": {
+                "item": "undergarden:veil_mushroom"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "undergarden:veil_mushroom_cap"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "undergarden:veil_mushroom_stalk"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}
