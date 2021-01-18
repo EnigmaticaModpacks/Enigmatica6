@@ -10,8 +10,9 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 -   Worldgen: Stopped Thermal Bituminous sands from generating
 -   Disabled Quark/Thermal Carrot, Potato and Beetroot crates, replaced by the new Farmer's Delight variants.
--   Disabled JAOPCA's Ender/Ender Pearl Storage Blocks
-    **Bug Fixes**
+-   Disabled JAOPCA's Ender/Ender Pearl/End Stone Storage Blocks
+
+**Bug Fixes**
 
 -
 
