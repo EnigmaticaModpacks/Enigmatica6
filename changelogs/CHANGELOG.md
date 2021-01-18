@@ -1,3 +1,20 @@
+### Enigmatica 6 v0.3.7
+
+_Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.7.txt)_
+
+**New Mods!**
+
+-   FerriteCore
+
+**Improvements**
+
+-   Worldgen: Stopped Thermal Bituminous sands from generating
+-   Disabled Quark/Thermal Carrot, Potato and Beetroot crates, replaced by the new Farmer's Delight variants.
+-   Disabled JAOPCA's Ender/Ender Pearl Storage Blocks
+    **Bug Fixes**
+
+-
+
 ### Enigmatica 6 v0.3.6
 
 _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.6.txt)_
@@ -6,19 +23,19 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mod!**
 
-- FerriteCore
+-   FerriteCore
 
 **Improvements**
 
 -   Added missing secondary outputs to Immersive Engineering and Thermal Ore Processing [\#745](https://github.com/NillerMedDild/Enigmatica6/pull/745) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Additional Apiary Glass Types [\#871](https://github.com/NillerMedDild/Enigmatica6/issues/871)
 -   \[ImgBot\] Optimize images [\#852](https://github.com/NillerMedDild/Enigmatica6/pull/852) ([imgbot[bot]](https://github.com/apps/imgbot))
--   Bee Update -  Higher output, higher time in hive [\#832](https://github.com/NillerMedDild/Enigmatica6/pull/832) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Bee Update - Higher output, higher time in hive [\#832](https://github.com/NillerMedDild/Enigmatica6/pull/832) ([Ridanisaurus](https://github.com/Ridanisaurus))
 -   Create Ore Processing - Lead [\#838](https://github.com/NillerMedDild/Enigmatica6/pull/838) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix for Create Processing [\#748](https://github.com/NillerMedDild/Enigmatica6/pull/748) ([MuteTiefling](https://github.com/MuteTiefling))
 -   FTB Chunks: Default max chunk loaded claimed chunks is now 10, down from 25.
 -   FTB Chunks: Offline chunkloading is now off by default, but old worlds/servers will still have it on. See above for instructions if you wish to change it.
--   Implementation of Supplementaries  [\#778](https://github.com/NillerMedDild/Enigmatica6/pull/778) ([kil0byt3](https://github.com/kil0byt3))
+-   Implementation of Supplementaries [\#778](https://github.com/NillerMedDild/Enigmatica6/pull/778) ([kil0byt3](https://github.com/kil0byt3))
 -   Lost Trinkets: There is now a 30 minute cooldown between being able to obtain a Lost Trinket.
 -   Lost Trinkets: The following Trinkets can no longer be randomly obtained:
     Note: There will most likely be added a way to obtain some of these in the future
@@ -46,7 +63,7 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Aquaculture Fishing Loot was empty [\#886](https://github.com/NillerMedDild/Enigmatica6/issues/886)
 -   Ars Nouveau Loot fix [\#762](https://github.com/NillerMedDild/Enigmatica6/pull/762) ([MuteTiefling](https://github.com/MuteTiefling))
 -   \[0.3.4\] BloodMagic's Updated Book \(Sanguine Sanctorum\) [\#823](https://github.com/NillerMedDild/Enigmatica6/issues/823) [\#842](https://github.com/NillerMedDild/Enigmatica6/pull/842) ([MuteTiefling](https://github.com/MuteTiefling))
--   \[Client Crash\] Latest Create \(v0.3c\) has an NPE for some users \(not all\)   [\#810](https://github.com/NillerMedDild/Enigmatica6/issues/810)
+-   \[Client Crash\] Latest Create \(v0.3c\) has an NPE for some users \(not all\) [\#810](https://github.com/NillerMedDild/Enigmatica6/issues/810)
 -   \[Server Crash\]\[Ars Noveau\] Using cut spell against ghast's fireball causes ClassCastException [\#819](https://github.com/NillerMedDild/Enigmatica6/issues/819)
 -   \[Suggestion\] Quest condense/cleanup [\#840](https://github.com/NillerMedDild/Enigmatica6/issues/840)
 -   Bug: Tha Ghost Trinket not-functional [\#784](https://github.com/NillerMedDild/Enigmatica6/issues/784)
@@ -75,7 +92,7 @@ _Using Forge-1.16.4-35.1.36_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Sophisticated backpacks can't pull from slot 1 in toolbar [\#834](https://github.com/NillerMedDild/Enigmatica6/issues/834)
 -   Storage Drawers can no longer be picked up with Cardboard Boxes from Mekanism, as they already retain their inventory when broken.
 -   Sulfur Conflict [\#879](https://github.com/NillerMedDild/Enigmatica6/pull/879) ([MuteTiefling](https://github.com/MuteTiefling))
--   Tetra quest tree is incorrect.  [\#831](https://github.com/NillerMedDild/Enigmatica6/issues/831)
+-   Tetra quest tree is incorrect. [\#831](https://github.com/NillerMedDild/Enigmatica6/issues/831)
 -   Unable to craft Industrial Foregoing Ore Laser Drill [\#648](https://github.com/NillerMedDild/Enigmatica6/issues/648)
 
 ### Enigmatica 6 v0.3.5
