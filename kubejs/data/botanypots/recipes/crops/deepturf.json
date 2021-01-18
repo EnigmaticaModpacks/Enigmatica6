@@ -1,0 +1,31 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:deepturf"
+    },
+    "categories": [
+        "deepturf"
+    ],
+    "growthTicks": 800,
+    "display": {
+        "block": "undergarden:deepturf"
+    },
+    "results": [
+        {
+            "chance": 0.75,
+            "output": {
+                "item": "undergarden:deepturf"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        },
+        {
+            "chance": 0.25,
+            "output": {
+                "item": "undergarden:tall_deepturf"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}
