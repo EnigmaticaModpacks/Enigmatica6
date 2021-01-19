@@ -909,7 +909,11 @@
 				"Don't cheat - I know you want to use Mekanism. I challenge you to only generate this billion using Powah alone for energy generation.",
 				"You can do it! Good luck!"
 			],
-			dependencies: [I;392],
+			dependencies: [I;
+				392,
+				3384
+			],
+			hide: true,
 			optional: true,
 			id: 430,
 			tasks: [{

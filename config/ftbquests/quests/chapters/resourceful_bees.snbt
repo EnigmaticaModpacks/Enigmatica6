@@ -25,7 +25,7 @@
 				title: "Any minecraft:beehives",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "minecraft:beehives"
 					}
@@ -241,7 +241,7 @@
 				title: "Checkmark",
 				icon: {
 					id: "patchouli:guide_book",
-					Count: 1b,
+					Count: true,
 					tag: {
 						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 					}
@@ -253,7 +253,7 @@
 				title: "Fifty Shades of Bees",
 				item: {
 					id: "patchouli:guide_book",
-					Count: 1b,
+					Count: true,
 					tag: {
 						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 					}
@@ -274,7 +274,7 @@
 				title: "Any resourcefulbees:resourceful_honeycomb",
 				item: {
 					id: "itemfilters:tag",
-					Count: 1b,
+					Count: true,
 					tag: {
 						value: "resourcefulbees:resourceful_honeycomb"
 					}
@@ -287,7 +287,7 @@
 					title: "Shears",
 					item: {
 						id: "minecraft:shears",
-						Count: 1b,
+						Count: true,
 						tag: {
 							Damage: 0
 						}
