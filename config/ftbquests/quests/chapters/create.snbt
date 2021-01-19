@@ -936,12 +936,27 @@
 		{
 			x: 13.0d,
 			y: 4.0d,
+			description: [
+				"Chassis blocks serve to form a base for larger creations. ",
+				"",
+				"Linear chassis connect to one another along the darker edge and will automatically be treated as a ‘whole’ piece that other parts may be glued to. ",
+				"They will also capture a line of blocks attached to the lighter side if glue is placed on the chassis itself. ",
+				"",
+				"Similarly, Radial chassis can capture blocks in a circular plane so long as they all touch and the one in contact with the light face of the chassis has been glued in place.",
+				"",
+				"This results in the ability to build very large contraptions with very little glue. However, they are not required. Instead, blocks may simply be glued together to form a larger piece in an irregular shape.",
+				"",
+				"Worry not, once the contraption is formed, the glue marks will become invisible, allowing for very aesthetic builds.",
+				"",
+				"Use your scroll wheel while holding a wrench and looking at the chassis to configure its capture range. "
+			],
 			dependencies: [I;
 				3373,
 				3375,
 				3377
 			],
 			dependency_requirement: "one_completed",
+			min_width: 300,
 			id: 3379,
 			tasks: [
 				{
