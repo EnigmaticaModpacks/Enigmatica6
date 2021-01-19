@@ -133,6 +133,8 @@
 	crush = true
 	#Cut enabled?
 	cut = true
+	#Fell enabled?
+	fell = true
 
 #Mana
 [mana]
@@ -337,6 +339,9 @@
 	#Cut cost
 	#Range: > -2147483648
 	cut_cost = 0
+	#Fell cost
+	#Range: > -2147483648
+	fell_cost = 150
 
 #Starting Spells
 ["Starter Spells"]
