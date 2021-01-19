@@ -9,9 +9,10 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Worldgen: Stopped Thermal Bituminous sands from generating
 -   Disabled Quark/Thermal Carrot, Potato and Beetroot crates, replaced by the new Farmer's Delight variants.
 -   Apotheosis: Nerfed Apotheosis spawners:
-    -   Max Spawn Count (Fermented Spider Eyes modifier) reduced to 10, down from 20
-    -   Min/max modifier can now only be applied 10 times each (Sugar/Clocks)
-    -   Max nearby entities, reduced to max 20 down from max 40
+    -   Max Spawn Count (Fermented Spider Eyes modifier) reduced to 5, down from 20
+    -   The minimum delay Sugar can set a Spawner to is now 5 seconds
+    -   Disabled the Clock (maximum delay modifier)
+    -   Max nearby entities, reduced to max 10 down from max 40
 
 **Bug Fixes**
 
