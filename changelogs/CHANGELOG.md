@@ -4,17 +4,18 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mods!**
 
--   FerriteCore
-
-**Improvements**
+-   **Improvements/Changes**
 
 -   Worldgen: Stopped Thermal Bituminous sands from generating
 -   Disabled Quark/Thermal Carrot, Potato and Beetroot crates, replaced by the new Farmer's Delight variants.
--   Disabled JAOPCA's Ender/Ender Pearl/End Stone Storage Blocks
+-   Apotheosis: Nerfed Apotheosis spawners:
+    -   Max Spawn Count (Fermented Spider Eyes modifier) reduced to 10, down from 20
+    -   Min/max modifier can now only be applied 10 times each (Sugar/Clocks)
+    -   Max nearby entities, reduced to max 20 down from max 40
 
 **Bug Fixes**
 
--
+-   Disabled JAOPCA's Ender/Ender Pearl/End Stone Storage Blocks
 
 ### Enigmatica 6 v0.3.6
 
