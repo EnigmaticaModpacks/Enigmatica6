@@ -36,8 +36,9 @@ events.listen('item.tags', function (event) {
         'powah:energy_cell_nitro',
         'powah:energy_cell_spirited',
         'powah:energy_cell_starter',
-        'thermal:flux_capacitor'
+        'thermal:flux_capacitor',
+        'thermal:energy_cell'
     ];
-	event.get('forge:storage').add(items);
-	event.get('forge:storage/energy').add(items);
+    event.get('forge:storage').add(items);
+    event.get('forge:storage/energy').add(items);
 });

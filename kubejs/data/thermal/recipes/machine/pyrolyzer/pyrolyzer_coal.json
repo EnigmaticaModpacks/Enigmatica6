@@ -1,0 +1,20 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+        "tag": "forge:gems/coal"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:coke_gem"
+        },
+        {
+            "item": "thermal:tar",
+            "chance": 0.25
+        },
+        {
+            "fluid": "thermal:creosote",
+            "amount": 250
+        }
+    ],
+    "experience": 0.15
+}

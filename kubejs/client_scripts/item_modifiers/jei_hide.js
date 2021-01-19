@@ -16,6 +16,10 @@ events.listen('jei.hide.items', (event) => {
             'emendatusenigmatica:' + material + '_blackstone_ore',
             'emendatusenigmatica:' + material + '_end_stone_ore',
             'emendatusenigmatica:' + material + '_mossy_stone_ore',
+            'emendatusenigmatica:' + material + '_granite_ore',
+            'emendatusenigmatica:' + material + '_diorite_ore',
+            'emendatusenigmatica:' + material + '_sand_ore',
+            'emendatusenigmatica:' + material + '_gravel_ore',
             'titanium:' + material + '_gear',
             'thermal:' + material,
             'thermal:' + material + '_dust',
@@ -46,13 +50,17 @@ events.listen('jei.hide.items', (event) => {
             'create:' + material + '_sheet',
             'create:' + material + '_nugget',
             'create:' + material + '_ingot',
+            'create:' + material + '_ore',
             'immersiveposts:stick_' + material,
             'buildersaddition:' + material + '_rod',
             'occultism:' + material + '_ingot',
             'occultism:' + material + '_ore',
             'occultism:' + material + '_dust',
             'occultism:' + material + '_nugget',
-            'occultism:' + material + '_block'
+            'occultism:' + material + '_block',
+            'eidolon:' + material + '_ingot',
+            'eidolon:' + material + '_nugget',
+            'eidolon:' + material + '_ore'
         );
     });
 

@@ -26,7 +26,14 @@ events.listen('item.tags', function (event) {
         'undergarden:cloggrum_pickaxe',
         'bloodmagic:soulpickaxe',
         'astralsorcery:crystal_pickaxe',
-        'astralsorcery:infused_crystal_pickaxe'
+        'astralsorcery:infused_crystal_pickaxe',
+        'undergarden:forgotten_pickaxe',
+        'occultism:infused_pickaxe',
+        'eidolon:reversal_pick',
+        'mapperbase:steel_pickaxe',
+        'aiotbotania:livingrock_pickaxe',
+        'aiotbotania:livingwood_pickaxe',
+        'occultism:iesnium_pickaxe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/pickaxe').add(items);

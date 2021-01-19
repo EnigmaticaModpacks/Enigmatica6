@@ -36,7 +36,11 @@ events.listen('item.tags', function (event) {
         'undergarden:froststeel_boots',
         'undergarden:cloggrum_boots',
         'undergarden:utheric_boots',
-        'bloodmagic:livingboots'
+        'bloodmagic:livingboots',
+        'mekanismtools:steel_boots',
+        'dustrial_decor:cardboard_boots',
+        'alexsmobs:roadrunner_boots',
+        'eidolon:warlock_boots'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/boots').add(items);

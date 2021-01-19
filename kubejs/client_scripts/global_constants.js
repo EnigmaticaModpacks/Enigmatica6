@@ -47,7 +47,13 @@ const disabledItems = [
     'mythicbotany:wither_aconite_floating',
 
     'quark:pipe',
+    'quark:potato_crate',
+    'quark:beetroot_crate',
+    'quark:carrot_crate',
 
+    'thermal:beetroot_block',
+    'thermal:carrot_block',
+    'thermal:potato_block',
     'thermal:sugar_cane_block'
 ];
 const materialsToUnify = [

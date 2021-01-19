@@ -1,0 +1,23 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:ashen_deepturf"
+    },
+    "categories": [
+        "ashen_deepturf"
+    ],
+    "growthTicks": 800,
+    "display": {
+        "block": "undergarden:ashen_deepturf"
+    },
+    "results": [
+        {
+            "chance": 1,
+            "output": {
+                "item": "undergarden:ashen_deepturf"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        }
+    ]
+}

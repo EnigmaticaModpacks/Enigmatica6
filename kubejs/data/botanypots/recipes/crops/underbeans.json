@@ -1,0 +1,26 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:underbeans"
+    },
+    "categories": [
+        "deepturf"
+    ],
+    "growthTicks": 1600,
+    "display": {
+        "block": "undergarden:underbean_bush",
+        "properties": {
+            "age": 3
+          }
+    },
+    "results": [
+        {
+            "chance": 0.9,
+            "output": {
+                "item": "undergarden:underbeans"
+            },
+            "minRolls": 2,
+            "maxRolls": 4
+        }
+    ]
+}

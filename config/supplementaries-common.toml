@@ -6,6 +6,8 @@
 		#maximum range
 		#Range: 0 ~ 256
 		range = 64
+		#additional blocks besides fences that can accept a sign post
+		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
 
 	[blocks.bellows]
 		#bellows pushes air following this equation: 
