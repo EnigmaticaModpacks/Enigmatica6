@@ -41,4 +41,5 @@ events.listen('item.tags', function (event) {
     event.get('forge:ingots/iron_copper').add('#forge:ingots/iron').add('#forge:ingots/copper');
     event.get('forge:ingots/iron_lead').add('#forge:ingots/iron').add('#forge:ingots/lead');
     event.get('forge:ingots/iron_tin').add('#forge:ingots/iron').add('#forge:ingots/tin');
+    event.get('forge:ingots/iron_brass').add('#forge:ingots/iron').add('#forge:ingots/brass');
 });
