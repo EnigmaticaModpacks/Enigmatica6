@@ -1,0 +1,18 @@
+{
+    "key": "manasteel",
+    "category": "metal",
+    "primary": "6",
+    "secondary": "4.1",
+    "tertiary": "3.6",
+    "durability": "300",
+    "integrityCost": "2",
+    "integrityGain": "6",
+    "magicCapacity": "150",
+    "toolLevel": "3",
+    "toolEfficiency": "7",
+    "tints": { "glyph": "3287fc", "texture": "3287fc" },
+    "textures": ["shiny", "default"],
+    "material": { "tag": "forge:ingots/manasteel", "count": 1 },
+    "improvements": { "mana_repair": 3 },
+    "requiredTools": { "hammer": 3 }
+}

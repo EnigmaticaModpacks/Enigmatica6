@@ -1,0 +1,34 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:gloomgourd_seeds"
+    },
+    "categories": [
+        "deepsoil_farmland"
+    ],
+    "growthTicks": 800,
+    "display": {
+        "block": "undergarden:gloomgourd_stem",
+        "properties": {
+            "age": 7
+          }
+    },
+    "results": [
+        {
+            "chance": 0.75,
+            "output": {
+                "item": "undergarden:gloomgourd"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.25,
+            "output": {
+                "item": "undergarden:gloomgourd_seeds"
+            },
+            "minRolls": 1,
+            "maxRolls": 4
+        }
+    ]
+}

@@ -54,7 +54,11 @@ events.listen('item.tags', function (event) {
         'bloodmagic:soulsword',
         'bloodmagic:soulscythe',
         'astralsorcery:crystal_sword',
-        'astralsorcery:infused_crystal_sword'
+        'astralsorcery:infused_crystal_sword',
+        'meetyourfight:depth_star',
+        'undergarden:forgotten_sword',
+        'eidolon:reaper_scythe',
+        'eidolon:sapping_sword'
     ];
     event.get('forge:weapons').add(items);
     event.get('forge:weapons/melee').add(items);

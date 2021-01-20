@@ -1,0 +1,23 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:ditchbulb"
+    },
+    "categories": [
+        "depthrock"
+    ],
+    "growthTicks": 800,
+    "display": {
+        "block": "undergarden:ditchbulb"
+    },
+    "results": [
+        {
+            "chance": 0.75,
+            "output": {
+                "item": "undergarden:ditchbulb"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        }
+    ]
+}

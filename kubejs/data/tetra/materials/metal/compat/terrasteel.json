@@ -1,0 +1,18 @@
+{
+    "key": "terrasteel",
+    "category": "metal",
+    "primary": "12",
+    "secondary": "5.1",
+    "tertiary": "7.9",
+    "durability": "2300",
+    "integrityCost": "3",
+    "integrityGain": "8",
+    "magicCapacity": "192",
+    "toolLevel": "4",
+    "toolEfficiency": "11",
+    "tints": { "glyph": "5bfc12", "texture": "5bfc12" },
+    "textures": ["shiny", "default"],
+    "material": { "tag": "forge:ingots/terrasteel", "count": 1 },
+    "improvements": { "mana_repair": 1 },
+    "requiredTools": { "hammer": 5 }
+}

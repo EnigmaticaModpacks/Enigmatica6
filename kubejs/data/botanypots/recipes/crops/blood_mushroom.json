@@ -1,0 +1,48 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:blood_mushroom"
+    },
+    "categories": [
+        "deepturf",
+        "depthrock"
+    ],
+    "growthTicks": 1600,
+    "display": {
+        "block": "undergarden:blood_mushroom"
+    },
+    "results": [
+        {
+            "chance": 0.8,
+            "output": {
+                "item": "undergarden:blood_mushroom"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "undergarden:blood_mushroom_cap"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "undergarden:blood_mushroom_stalk"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        },
+        {
+            "chance": 0.05,
+            "output": {
+                "item": "undergarden:blood_mushroom_globule"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}

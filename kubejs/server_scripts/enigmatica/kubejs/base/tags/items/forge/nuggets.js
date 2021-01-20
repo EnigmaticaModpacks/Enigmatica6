@@ -12,6 +12,7 @@ events.listen('item.tags', function (event) {
 
     event.get('forge:nuggets/iron_copper').add('#forge:nuggets/iron').add('#forge:nuggets/copper');
     event.get('forge:nuggets/gold_bronze').add('#forge:nuggets/gold').add('#forge:nuggets/bronze');
+    event.get('forge:nuggets/gold_brass').add('#forge:nuggets/gold').add('#forge:nuggets/brass');
     event.get('forge:nuggets/gold_copper').add('#forge:nuggets/gold').add('#forge:nuggets/copper');
     event.get('forge:nuggets/gold_silver').add('#forge:nuggets/gold').add('#forge:nuggets/silver');
 });

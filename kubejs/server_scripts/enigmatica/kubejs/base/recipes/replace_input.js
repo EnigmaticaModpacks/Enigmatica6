@@ -70,6 +70,8 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
+    event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen');
+    event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
 
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
 
@@ -165,7 +167,8 @@ events.listen('recipes', function (event) {
                     'ars_nouveau:arcane_core',
                     'ars_nouveau:crystallizer',
                     'ars_nouveau:volcanic_accumulator',
-                    'pneumaticcraft:gun_ammo'
+                    'pneumaticcraft:gun_ammo',
+                    'ars_nouveau:marvelous_clay'
                 ]
             },
             {
@@ -242,12 +245,20 @@ events.listen('recipes', function (event) {
                     'cookingforblockheads:preservation_chamber',
                     'buildersaddition:arcade',
                     'minecraft:compass',
+                    'minecraft:piston',
                     'xnet:antenna_dish',
                     'xnet:antenna_base',
                     'xnet:antenna',
                     'transport:fluid_loader',
-                    'resourcefulbees:centrifuge_casing'
+                    'resourcefulbees:centrifuge_casing',
+                    'engineersdecor:metal_bar'
                 ]
+            },
+            {
+                type: 'ingots',
+                replace: 'iron',
+                replaceWith: 'brass',
+                items: ['ars_nouveau:mana_condenser', 'ars_nouveau:enchanting_apparatus']
             },
             {
                 type: 'ingots',
@@ -338,4 +349,8 @@ events.listen('recipes', function (event) {
         'minecraft:potion',
         item.of('minecraft:potion', { Potion: 'minecraft:water' })
     );
+
+    //TODO: Remove in 0.4.0
+    event.replaceInput({ id: 'quantumstorage:chestgold' }, 'quantumstorage:chestiron', '#forge:storage_blocks/iron');
+    event.replaceInput({ id: 'quantumstorage:chestdiamond' }, 'quantumstorage:chestgold', '#forge:storage_blocks/gold');
 });

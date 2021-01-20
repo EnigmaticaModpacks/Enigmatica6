@@ -1,6 +1,6 @@
 events.listen('item.tags', function (event) {
     var items = [
-		'botania:black_hole_talisman',
+        'botania:black_hole_talisman',
         'dankstorage:dank_1',
         'dankstorage:dank_2',
         'dankstorage:dank_3',
@@ -103,7 +103,13 @@ events.listen('item.tags', function (event) {
         'extrastorage:block_4096k',
         'extrastorage:block_1024k',
         'extrastorage:block_256k',
+        'industrialforegoing:simple_black_hole_unit',
+        'industrialforegoing:common_black_hole_unit',
+        'industrialforegoing:pity_black_hole_unit',
+        'industrialforegoing:supreme_black_hole_unit',
+        'industrialforegoing:advanced_black_hole_unit',
+        'industrialforegoing:black_hole_controller'
     ];
-	event.get('forge:storage').add(items);
-	event.get('forge:storage/bulk').add(items);
+    event.get('forge:storage').add(items);
+    event.get('forge:storage/bulk').add(items);
 });

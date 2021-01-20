@@ -7,7 +7,7 @@ events.listen('recipes', (event) => {
             if (storage_block_tag.stacks.size() > 1) {
                 storage_block_tag.stacks.forEach(function (storage_block) {
                     event.recipes.minecraft.stonecutting({
-                        type: 'minecraft.stonecutting',
+                        type: 'minecraft:stonecutting',
                         ingredient: {
                             tag: 'forge:' + type + '/' + material
                         },
@@ -21,7 +21,7 @@ events.listen('recipes', (event) => {
 
     beamRecipes.forEach((recipe) => {
         event.recipes.minecraft.stonecutting({
-            type: 'minecraft.stonecutting',
+            type: 'minecraft:stonecutting',
             ingredient: {
                 tag: recipe.input
             },
@@ -30,14 +30,20 @@ events.listen('recipes', (event) => {
         });
     });
 
-    ingredient.of('#forge:workbench').stacks.forEach(function (workbench) {
-        event.recipes.minecraft.stonecutting({
-            type: 'minecraft.stonecutting',
+    ['forge:dirt', 'forge:workbench', 'forge:grass'].forEach((tag) => {
+        stonecutterTagConversion(event, tag);
+    });
+});
+
+stonecutterTagConversion = (event, tag) => {
+    ingredient.of(`#${tag}`).stacks.forEach(function (block) {
+        event.custom({
+            type: 'minecraft:stonecutting',
             ingredient: {
-                tag: 'forge:workbench'
+                tag: tag
             },
-            result: workbench.id,
+            result: block.id,
             count: 1
         });
     });
-});
+};

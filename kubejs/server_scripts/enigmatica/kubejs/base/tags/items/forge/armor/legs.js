@@ -35,7 +35,10 @@ events.listen('item.tags', function (event) {
         'undergarden:froststeel_leggings',
         'undergarden:utheric_leggings',
         'undergarden:cloggrum_leggings',
-        'bloodmagic:livingleggings'
+        'bloodmagic:livingleggings',
+        'dustrial_decor:cardboard_leggings',
+        'mekanismtools:steel_leggings',
+        'alexsmobs:centipede_leggings'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/leggings').add(items);
