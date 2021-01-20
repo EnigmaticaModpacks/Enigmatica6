@@ -16,32 +16,58 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/nickel'],
                 output: Item.of('emendatusenigmatica:invar_ingot', 3)
+            },
+            {
+                inputs: ['#forge:storage_blocks/coal'],
+                output: Item.of('emendatusenigmatica:coke_gem', 9)
             }
         ],
         recipes_superheated: [
             {
-                inputs: ['#forge:coal_coke', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron'],
+                inputs: [
+                    '#forge:dusts/coal_coke',
+                    '#forge:ingots/iron',
+                    '#forge:ingots/iron',
+                    '#forge:ingots/iron',
+                    '#forge:ingots/iron'
+                ],
                 output: Item.of('emendatusenigmatica:steel_ingot', 4)
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', 
-                '#forge:ingots/silver', 
-                '#forge:dusts/redstone', '#forge:dusts/redstone', '#forge:dusts/redstone', '#forge:dusts/redstone'],
+                inputs: [
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/copper',
+                    '#forge:ingots/silver',
+                    '#forge:dusts/redstone',
+                    '#forge:dusts/redstone',
+                    '#forge:dusts/redstone',
+                    '#forge:dusts/redstone'
+                ],
                 output: Item.of('emendatusenigmatica:signalum_ingot', 4)
             },
             {
-                inputs: ['#forge:ingots/tin', '#forge:ingots/tin', '#forge:ingots/tin', 
-                '#forge:ingots/silver', 
-                '#forge:dusts/glowstone', '#forge:dusts/glowstone'],
+                inputs: [
+                    '#forge:ingots/tin',
+                    '#forge:ingots/tin',
+                    '#forge:ingots/tin',
+                    '#forge:ingots/silver',
+                    '#forge:dusts/glowstone',
+                    '#forge:dusts/glowstone'
+                ],
                 output: Item.of('emendatusenigmatica:lumium_ingot', 4)
             },
             {
-                inputs: ['#forge:ingots/lead', '#forge:ingots/lead', '#forge:ingots/lead', 
-                '#forge:dusts/diamond', 
-                '#forge:ender_pearls', '#forge:ender_pearls'],
+                inputs: [
+                    '#forge:ingots/lead',
+                    '#forge:ingots/lead',
+                    '#forge:ingots/lead',
+                    '#forge:dusts/diamond',
+                    '#forge:ender_pearls',
+                    '#forge:ender_pearls'
+                ],
                 output: Item.of('emendatusenigmatica:enderium_ingot', 2)
             }
-            
         ]
     };
     data.recipes_heated.forEach((recipe) => {
