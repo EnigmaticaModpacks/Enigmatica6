@@ -1,0 +1,1592 @@
+=======================================
+Enigmatica6 0.3.6 --> Enigmatica6 0.3.7
+=======================================
+
+Added:
+- Advanced Hook Launchers
+- Akashic Tome
+- ForgeEndertech
+- Just Enough Professions (JEP)
+- Morph-o-Tool
+- Ping
+- YUNG's API (Forge)
+- spark
+
+Updated:
+	AIOT Botania (aiotbotania-1.16.4-1.5.0.jar --> aiotbotania-1.16.4-1.6.0.jar):
+		aiotbotania-1.16.4-1.6.0.jar:
+			* more compatibility with modded dirt - MelanX
+			* Sword enchantments on AIOTs (#56) - flier268
+			* fix attack speed of terrasteel/alfsteel hoe/spade - MelanX
+			* add stipping logs to aiot - MelanX
+			* fix offhand item not useable if aiot in mainhand - MelanX
+
+	Architectury (Forge) ([Forge 1.16.4/5] v1.3.80 --> [Forge 1.16.4] v1.3.83):
+		[Forge 1.16.4] v1.3.83:
+			Architectury v1.3.83 for 1.16.4
+			Updated at 2021-01-20 12:36.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/9c61018)
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.82:
+			Architectury v1.3.82 for 1.16.4
+			Updated at 2021-01-19 23:55.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/5df13d4)
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4] v1.3.81:
+			Architectury v1.3.81 for 1.16.4
+			Updated at 2021-01-15 17:42.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/5035221)
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+	Ars Nouveau (ars_nouveau-1.16.4-1.10.6.jar --> ars_nouveau-1.16.4-1.11.1.jar):
+		ars_nouveau-1.16.4-1.11.1.jar:
+			Fixes crash with Spell Bows
+
+		ars_nouveau-1.16.4-1.11.0.jar:
+			Adds the Enchanters Bow and Augment Arrows
+			Brand new book models and GUI
+			Adds the Fell Spell, takes the tree chopping behaviors from Harvest
+			Fell can now target mushrooms, vines, melons, pumpkins, sugar cane, and more
+			Harvest no longer chops trees (now fell)
+
+	AttributeFix (AttributeFix-1.16.4-9.0.2.jar --> AttributeFix-1.16.4-9.0.5.jar):
+		AttributeFix-1.16.4-9.0.5.jar:
+			* Fixed Forge version. - Tyler Hancock
+			* Moved signing cert to a secret file. - Tyler Hancock
+			* Added logs dir to gitignore. - Tyler Hancock
+			* Compile against newer forge and mcp. - Tyler Hancock
+			* Switched to local maven. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?AttributeFix)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Bed Benefits (BedBenefits-1.16.4-4.0.2.jar --> BedBenefits-1.16.4-4.0.3.jar):
+		BedBenefits-1.16.4-4.0.3.jar:
+			* Updated Forge, MCP, and Bookshelf. - Tyler Hancock
+			* Moved to local maven. - Tyler Hancock
+			* Moved signing key to a Jenkins secret file. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BedBenefits)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Better Burning (BetterBurning-1.16.4-5.0.2.jar --> BetterBurning-1.16.4-5.0.3.jar):
+		BetterBurning-1.16.4-5.0.3.jar:
+			* Created a README file on GitHub. - Tyler Hancock
+			* Built against latest Forge and MCP. - Tyler Hancock
+			* Moved to local maven. - Tyler Hancock
+			* Moved signing key from local file to Jenkins secret variable. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BetterBurning)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Biomes O' Plenty (Biomes O' Plenty 1.16.4-13.0.0.428 --> Biomes O' Plenty 1.16.4-13.0.0.429):
+		Biomes O' Plenty 1.16.4-13.0.0.429:
+			adubbz:
+			* Enqueue in common setup, closed #1758
+
+	Blood Magic  (BloodMagic-1.16.3-3.0.5-10.jar --> BloodMagic-1.16.3-3.0.6-11.jar):
+		BloodMagic-1.16.3-3.0.6-11.jar:
+			------------------------------------------------------
+			Version 3.0.6
+			------------------------------------------------------
+			* Reimplemented the Well of Suffering.
+			* Added several new items, called "Anointments"! These are items that provide temporary buffs to your tools and weapons, such as silk touch, higher damage, and more! Look them up in the Utility section of the book. These include:
+			* Honing Oil
+			* Soft Coating
+			* Fortuna Extract
+			* Holy Water
+			* Miner's Secrets
+			* Dexterity Alkahest
+			* Iron Tip
+			* Plunderer's Glint
+			* Slow-burning Oil
+			* Made the shaped charge and deforester charge throwable.
+
+	Botany Pots (BotanyPots-1.16.4-6.0.14.jar --> BotanyPots-1.16.4-6.0.17.jar):
+		BotanyPots-1.16.4-6.0.17.jar:
+			* Fix Forge trying to load CraftTweaker compatibility when CraftTweaker is not installed. #131 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		BotanyPots-1.16.4-6.0.16.jar:
+			* Cleaned up /ct dump support and allowed the message to be translated. - Tyler Hancock
+			* Moved CraftTweaker event initialization to later in the loading process. - Tyler Hancock
+			* Provided dependency info for minimum CraftTweaker version. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		BotanyPots-1.16.4-6.0.15.jar:
+			* Removed tabs from the build.gradle file. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Botany Trees (BotanyTrees-1.16.4-2.0.7.jar --> BotanyTrees-1.16.4-2.0.10.jar):
+		BotanyTrees-1.16.4-2.0.10.jar:
+			* Fix maven publishing. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyTrees)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Builders Crafts & Additions (Forge) (buildersaddition-1.16.4-20210113c --> buildersaddition-1.16.4-20210118a):
+		buildersaddition-1.16.4-20210118a:
+			~ Redstone diode dupe-glitch
+			~ Redstone diode compatibility issue.
+
+	CC: Tweaked (cc-tweaked-1.16.4-1.95.1.jar --> cc-tweaked-1.16.4-1.95.2.jar):
+		cc-tweaked-1.16.4-1.95.2.jar:
+			Release notes can be found on the GitHub repository ([https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.16.4-1.95.2](https://github.com/SquidDev-CC/CC-Tweaked/releases/tag/v1.16.4-1.95.2)).
+
+	Curios API (Forge) (curios-forge-1.16.4-4.0.3.4.jar --> curios-forge-1.16.4-4.0.3.5.jar):
+		curios-forge-1.16.4-4.0.3.5.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project adheres to [Forge Recommended Versioning]().
+			[1.16.4-4.0.3.5] - 2021.01.14
+			Fixed
+			* Fixed crash related to performing logic on empty itemstacks
+			[1.16.4-4.0.3.4] - 2021.01.12
+			Fixed
+			* Fixed command slot type identification for dedicated servers
+			[1.16.4-4.0.3.3] - 2020.12.31
+			Added
+			* Added Korean localization (thanks othuntgithub!) [#97](https://github.com/TheIllusiveC4/Curios/pull/97)
+			[1.16.4-4.0.3.2] - 2020.12.26
+			Changed
+			* Reverted ICurio#onUnequip change from 4.0.3.1
+			[1.16.4-4.0.3.1] - 2020.12.26
+			Changed
+			* [API] ICurio#onUnequip now passes the actual ItemStack instance instead of a copy
+			[1.16.4-4.0.3.0] - 2020.11.24
+			Added
+			* [API] ICurioItem interface for simple hard-dependency item implementations
+			Changed
+			* Minor improvements to "Curio" slot type and tag for universal acceptance
+			Fixed
+			* Fixed infinite log spam when using recipe book [#91](https://github.com/TheIllusiveC4/Curios/issues/91)
+			* Fixed command client crashes [#89](https://github.com/TheIllusiveC4/Curios/issues/89)
+			* Fixed overextended texture in Curios GUI
+			[1.16.4-4.0.2.1] - 2020.11.09
+			Changed
+			* Updated to 1.16.4
+			* "Curio" slot type now accepts any curio item [#78](https://github.com/TheIllusiveC4/Curios/issues/78)
+			Fixed
+			* Fixed NPE with Mahou Tsukai's scrying [#77](https://github.com/TheIllusiveC4/Curios/issues/77)
+			* Fixed empty tags being attached to items [#80](https://github.com/TheIllusiveC4/Curios/issues/80)
+			* Fixed render buttons toggling wrong slot [#75](https://github.com/TheIllusiveC4/Curios/issues/75) [#84](https://github.com/TheIllusiveC4/Curios/issues/84)
+			[1.16.3-4.0.2.0] - 2020.09.20
+			Update courtesy of Extegral, thanks! [#72](https://github.com/TheIllusiveC4/Curios/pull/72)
+			Added
+			* [API] Added ICurio#showAttributesTooltip for toggling attribute tooltips per curio
+			* [API] Added ICurio#getFortuneBonus for adding fortune levels when curio is equipped
+			* [API] Added ICurio#getLootingBonus for adding looting levels when curio is equipped
+			* Added curios:equip_curio criterion trigger for listening to curio equips
+			Changed
+			* Updated Russian localization
+			Fixed
+			* Fixed bug with recipe book persisting on Curios screen when going from Survival to Creative
+			[1.16.3-4.0.1.0] - 2020.09.14
+			Added
+			* Added Brazilian localization (thanks Mikeliro!) [#65](https://github.com/TheIllusiveC4/Curios/pull/65)
+			Changed
+			* Updated to Minecraft 1.16.3
+			Fixed
+			* Fixed crashing when attempting to unlock/lock slots in equip handlers [#68](https://github.com/TheIllusiveC4/Curios/issues/68)
+			* Fixed misaligned render toggle buttons with non-natively-positioned slots
+			[1.16.2-4.0.0.1] - 2020.08.26
+			Changed
+			* Updated to Forge 33.0.21
+			[1.16.2-4.0.0.0] - 2020.08.13
+			Changed
+			* Updated to Minecraft 1.16.2
+			* Archive base name changed from "curios" to "curios-forge"
+			* Mod version no longer contains "FORGE"
+			[3.0.0.2] - 2020.08.03
+			Fixed
+			* Fixed toggle render buttons desyncing when scrolling
+			* Fixed recipe book offsets in Curios GUI
+			[3.0.0.1] - 2020.08.02
+			Changed
+			* [API] Moved ICuriosItemHandler#handleInvalidStacks call to tick event
+			Fixed
+			* Fixed hidden slots still being handled by Curios GUI
+			[3.0] - 2020.07.21
+			Fixed
+			* Fixed Curios button disappearing when switching tabs in Creative menu [#55](https://github.com/TheIllusiveC4/Curios/issues/55)
+			* Fixed being able to right-click Curios items into any slot [#56](https://github.com/TheIllusiveC4/Curios/issues/56)
+			[3.0-beta4] - 2020.07.17
+			Fixed
+			* Fixed crashes with Forge 32.0.67+ [#53](https://github.com/TheIllusiveC4/Curios/issues/53)
+			[3.0-beta3] - 2020.07.14
+			Changed
+			* [API] IMC messages can now process iterable collections of SlotTypeMessage
+			[3.0-beta2] - 2020.07.02
+			Added
+			* [API] Added ICuriosHelper#getEquippedCurios that obtains all equipped, non-cosmetic curios
+			Changed
+			* [API] IDynamicStackHandler now extends IItemHandlerModifiable
+			Fixed
+			* Fixed NPE when registering no icon for a slot type
+			[3.0-beta1] - 2020.07.01
+			Added
+			* Opt-in cosmetic slots for slot types
+			* Toggleable rendering for equipped curio items
+			* "Bracelet" has been added as a potential preset slot type
+			Changed
+			* Ported to 1.16.1 Forge
+			* Slot types are now handled server-side, allowing for per-world slot configurations
+			* Icon registration is now done alongside slot registration without needing a separate IMC message
+			* ItemStacks with different durabilities will trigger curio change events
+			*  Names:
+			* LivingCurioChangeEvent -> CurioChangeEvent
+			* LivingCurioDropRulesEvent -> DropRulesEvent
+			* LivingCurioDropsEvent -> CurioDropsEvent
+			* CurioIMCMessage -> SlotTypeMessage
+			* CuriosAPI -> CuriosApi
+			*  ICurioItemHandler -> ICuriosItemHandler:
+			* getCurioMap -> getCurios
+			* setCurioMap -> setCurios
+			* getStackHandler -> getStacksHandler
+			* enableCurio -> unlockSlotType
+			* disableCurio -> lockSlotType
+			* addCurioSlot -> growSlotType
+			* removeCurioSlot -> shrinkSlotType
+			* getDisabled -> getLockedSlots
+			* addInvalid -> loseInvalidStack
+			* dropInvalidCache -> handleInvalidStacks
+			*  ICurio:
+			* onCurioTick -> curioTick
+			* onCurioAnimate -> curioAnimate
+			* onEquipped -> onEquip
+			* onUnequipped -> onUnequip
+			* playRightClickEquipSound -> playEquipSound
+			* onCurioBreak -> curioBreak
+			* shouldSyncToTracking -> canSync
+			* getSyncTag -> writeSyncData
+			* readSyncTag -> readSyncData
+			* hasRender -> canRender
+			*  Commands:
+			* enable -> unlock
+			* disable -> lock
+			*  Abstraction:
+			* CurioType abstracted to ISlotType
+			* CurioStackHandler abstracted to ICurioStacksHandler
+			* CuriosApi split into three helper interfaces (IIconHelper on the client, ISlotHelper on the server, ICuriosHelper for both)
+			* CurioTags functionality refactored into SlotTypePresets
+			* The above changes are only for the API, the rest of the classes have also had extensive changes
+
+	Dungeons Plus (Dungeons Plus 1.16.4-v1.1.1 --> Dungeons Plus 1.16.4-v1.1.2):
+		Dungeons Plus 1.16.4-v1.1.2:
+			Re-saved structure files to work with mods modifying the DataFixerUpper
+			[Changelog]()
+
+	Emendatus Enigmatica (EmendatusEnigmatica-1.16.4-1.1.3 --> EmendatusEnigmatica-1.16.4-1.1.5):
+		EmendatusEnigmatica-1.16.4-1.1.5:
+			Emendatus Enigmatica
+			MC 1.16.4 | Version 1.1.5
+			* Added BurnTime to Coal Coke (Gem, Dust, Block), Sulfur (Gem, Dust, Block), and Bitumen (Gem, Block)
+			* Added `forge:quartz` to Silicon Cooking Recipe
+			* Added `forge:gems/coal_coke` tag to the Coal Coke gem
+
+		EmendatusEnigmatica-1.16.4-1.1.4:
+			Emendatus Enigmatica
+			MC 1.16.4 | Version 1.1.4
+			NOTE for Modpack Devs: Please make sure you update your configs, or delete the old one and let EE generate a new one as there are massive updates to all the configs, and the way they work.
+			* Dropped the Modifier system of The Nether, and The End ore generation due to a crash with negative values, and it now uses flat numbers like the Overworld.
+			* Added Granite, Diorite, Gravel, and Sand to the Strata
+			* All Strata Blocks are Deactivated by default, and should be activated in the Config as needed
+			* Added Silicon
+			* Added Coal Coke
+			* Fixed Dim Shard Ores dropping only a single shard
+			* Fixed a Crash caused by Redstone Ore and TNT Minecarts
+
+	Engineer's Decor (engineersdecor-1.16.4-1.1.6-b3.jar --> engineersdecor-1.16.4-1.1.6.jar):
+		engineersdecor-1.16.4-1.1.6.jar:
+			* v1.1.6     [F] Added common-config opt-out specification for pack level opt-outs (issue #154,
+			ty gekkone), will replace server config opt-out in MC1.17.
+			* v1.1.6-b3  [M] Config logging edited, E-Furnace GUI capacitor tooltip added, E-Furnace power consumption
+			independent of config speed setting (issue #152 ty Staegrin).
+			* v1.1.6-b2  [M] Alternative Clinker Brick recipe (swapped Bricks/Nether Bricks) added.
+			[M] Furnace XP handling simplified (simply stores/releases XP for each smelting process).
+			[M] Mod devices do not propagate strong Redstone power to adjacent blocks.
+			[M] Minor "librarizing" changes under the hood.
+			* v1.1.6-b1  [F] Fixed Metal Crafting Table Hopper access (issue #147, ty umerrr).
+			[F] Fixed Dark Shingle Roof Chimney placement restriction (issue #149, thx WenXin20).
+			[F] Door tags added for Wood Door and Metal Sliding Door (issue #150, thx WenXin20).
+			[A] Electrical Furnace automatically chokes speed and power consumption when the internally
+			stored power is below 20%.
+			* v1.1.5     [R] Release build v1.1.5.
+			[F] Fixed Crafting Table JEI storage slot count.
+			[F] Fixed Factory Hopper removed item collection dupe bug (issue #146, thx FatheredPuma81).
+			[F] Increased device GUI access ranges beyond the player block selection range.
+			[A] Window placement handling improved.
+			[M] Steel/Wood Pole and Double-T support placement improved (issue #139, thx Biviho).
+			[M] Metal Sliding Door bottom/top shape when opened added.
+			* v1.1.4     [R] Release build v1.1.4.
+			[F] Solar Panel balancing threshold tuned.
+			[F] Fixed Catwalk default state (issue #140, thx hvdklauw).
+			[M] Updated lang ru_ru file (PR#137, Smollet777).
+			[M] Factory Dropper: Added Ignore-External-Redstone mode.
+			* v1.1.4-b2  [A] Steel Catwalks added (top and bottom aligned).
+			[A] Steel Railings added.
+			[F] Fixed Empty Fluid Barrel crafting crash (ty inflamedsebi).
+			[A] Added Solar Panel power balancing.
+			[M] GUI Button tooltip delay reduced to 800ms.
+			[M] Hopper and Placer: Added "Redstone ignored" mode, changed icons from signal-like to Redstone-Torch-like.
+			[M] Treated Wood Ladder now crafted from Old Industrial Wood, as Treated Wood Sticks now count as normal Sticks.
+			* v1.1.4-b1  [U] Ported to 1.16.4.
+			* v1.1.3     [R] Release build v1.1.3.
+			* v1.1.3-b3  [A] Metal Sliding Door added (double door wing style).
+			[A] Doors implicitly open/close adjacent wings of double doors.
+			[A] Disabled injected buttons from other mods in container GUIs.
+			[A] Mob spawning on Rebar/Gas Concrete inhibited (IE Concrete Compliancy).
+			[M] Small Tree Cutter chopping improved (loosened tree volume search restrictions).
+			* v1.1.3-b2  [A] Crafting table shift/ctrl click item move actions tweaked to new metal slot design.
+			[A] Factory Dropper and Block Placer now also support quick-move-all (shift-ctrl-click).
+			[F] Fixed Small Lab Furnace speed boost factor (with IE Heater in aux slot).
+			* v1.1.3-b1  [A] The Factory Block Breaker can insert items into Hoppers underneath it (issue #121, winsrp).
+			[F] Help tooltips manually wrapped.
+			[F] Fixed Labeled Crate item name persistence (issue #127, ty inqie).
+			[F] Help text typo fixed (issue #129, ty Smollet777).
+			* v1.1.2     [U] Updated to Forge 1.16.3-34.1.0.
+			[A] Added Factory Hopper insertion/extraction for entities like Minecarts (issue #125, ty boneskull).
+			* v1.1.2-b8  [F] Fixed Double-T support thick steel pole connection (thx @CastCrafter).
+			[A] Concrete and Clinker walls connect to windows and glass panes.
+			* v1.1.2-b7  [U] Ported to MC1.16.3.
+			[F] Roof lighting improved.
+			* v1.1.2-b6  [A] Signs added: Generic Caution, Magical Hazard, Radioactive Hazard, Laser Hazard,
+			Fire Hazard, Caution Hot Surface, Magnetic Field Caution, Frost Warning.
+			[A] Water Freezer added (generates Ice, Packed Ice, Blue Ice from water).
+			[F] Mineral Smelter GUI model facing fixed.
+			[M] Hatch handling improved.
+			[M] Ladder fast-move improved.
+			[F] Roof Chimney Trunk shape hollow to allow feeding IE Wire power over the roof into the building.
+			[A] Roof Chimney added (smoking offset for Dark Shingle Roof Chimney Trunk block).
+			[A] Metal Bar (ingredient item) added to circumvent recipe collisions with other mods.
+			[M] Recipes for metallic blocks modified accordingly to depend on Metal Bars.
+			* v1.1.2-b5  [A] Sandstone Ornamented Clinker Brick added.
+			[A] Old Industrial Wood Planks/Stairs/Slabs/Slab Slices added.
+			[A] Old Industrial Wood Door added.
+			[M] Wood textures made slightly darker.
+			[F] Milking Machine fluid transfer re-added (thx gebcrafter).
+			[F] Fluid Barrel status overlay message format fixed.
+			[F] Fixed missing Dense Grit Dirt loot table (issue #124, thx vaelzan).
+			* v1.1.2-b4  [F] Mapping adaption to Forge 1.16.2-33.0.22/20200723-1.16.1.
+			[F] Fixed conditional recipe tag dependency (thx Blu, Cyborgmas).
+			* v1.1.2-b3  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.1.2-b2  [A] Dark Shingle Roof added.
+			* v1.1.2-b1  [U] Ported to MC1.16.2.
+
+	Extra Disks (extradisks-1.16.4-1.4.3.jar --> extradisks-1.16.4-1.5.0.jar):
+		extradisks-1.16.4-1.5.0.jar:
+			Compat Edition - adds compat with ExtraStorage to avoid recipe conflicts (not working with ExtraStorage 1.2.2 and below)
+			Add withering processor for higher tier disks
+			Add tags for parts/disks/storage blocks
+			Change recipes to use tags
+
+	Extreme sound muffler (Forge) (Extreme Sound Muffler 3.5 - Forge 1.16.4 --> Extreme Sound Muffler 3.6 - Forge 1.16.4):
+		Extreme Sound Muffler 3.6 - Forge 1.16.4:
+			Fixed crash were sometimes Anchors were never created
+
+	FTB Chunks (ftb-chunks-1604.2.2.57.jar --> ftb-chunks-1604.2.2.60.jar):
+		ftb-chunks-1604.2.2.60.jar:
+			* Fixed color inverting red and blue, ffs - LatvianModder
+
+		ftb-chunks-1604.2.2.59.jar:
+			* Changed format a bit - LatvianModder
+			* Added /ftbchunks block_color command to grap color you are currently looking at for easier integration. Copy that from log/console - LatvianModder
+
+		ftb-chunks-1604.2.2.58.jar:
+			* Possibly fixed FTBC preventing worlds from being deleted if you just closed it - LatvianModder
+			* Updated forge, switched to mojmaps - LatvianModder
+
+	FTB Essentials (ftbessentials-1603.1.0.11.jar --> ftb-essentials-1604.1.0.13.jar):
+		ftb-essentials-1604.1.0.13.jar:
+			* Fixed broken dep - LatvianModder
+
+	FTB GUI Library (ftb-gui-library-1604.1.1.26.jar --> ftb-gui-library-1604.2.0.29-forge.jar):
+		ftb-gui-library-1604.2.0.29-forge.jar:
+			* Fixed crash on server - LatvianModder
+
+		ftb-gui-library-1604.2.0.28-forge.jar:
+			* Ported to Architectury - LatvianModder
+
+	Farmer's Delight (FarmersDelight-1.16.3-1.16.4-0.2.4b.jar --> Farmer's Delight 0.3.1 - 1.16.3+):
+		Farmer's Delight 0.3.1 - 1.16.3+:
+			0.3.1 - Lost Commodities
+			* Fix vanilla crop crates not having loot tables;
+			* Fix Rice Bale, Straw Bale and Wild Crops not being flammable (more to come later);
+			* Fix a visual glitch on Honey Glazed Ham's fourth serving model;
+			* Fix Bowls of Stuffed Pumpkin not giving a bowl back;
+
+		Farmer's Delight 0.3 - 1.16.3+ :
+			0.3.0 - A Glorious Feast!
+			* Added Feasts!
+			* Feasts are very large meals, made to be placed down as a block and shared with friends, or just to decorate a dinner table!
+			* Once placed, use a Bowl against it to take a serving. Feasts contain 4 servings by default. It can be mined back if no servings were taken;
+			* New Feasts:
+			* Roast Chicken
+			* Existing meals turned into Feasts:
+			* Stuffed Pumpkin
+			* Honey Glazed Ham
+			* Added blocks:
+			* Straw Bale
+			* Bag of Rice
+			* Storage Crates for vanilla crops: Carrot, Potato and Beetroot
+			* These specific blocks can be disabled in the configs, in order to prevent recipe overlaps with Quark and Thermal Cultivation;
+			* Added foods:
+			* Bacon: The half-portion of a Porkchop!
+			* Bacon Sandwich;
+			* Usable in all Porkchop-related recipes;
+			* Ham: Porkchop's older sibling!
+			* Slay Pigs or Hoglins with a Knife for a chance of scavenging a Ham piece or two;
+			* Ham can only be smoked, and it takes a little longer than usual;
+			* Gives 1 Bone and 2 Porkchops when cut, allowing for a Peaceful source of bones.
+			* Fruit Salad: Gently fulfilling, but grants Regeneration for a few seconds;
+			* Melon Popsicle: When eaten, grants a very short burst of Fire Resistance in a pinch;
+			* Updated the Cutting Board:
+			* Recipes can now specify a ToolType for axes, pickaxes and shovels instead of imaginary forge tags!
+			* This should broaden cutting compatibility with every single modded tool under the sun, as far as we tested. (thank you, ConductiveFoam!)
+			* Updated some meals and foods:
+			* Steak and Potatoes and Grilled Salmon are now crafted, instead of cooked, since their ingredients are already cooked;
+			* General hunger/saturation/effect tweaks here and there.
+			* Updated Knives:
+			* Knives can now slice a Cake on right-click;
+			* Knives can now carve pumpkins like Shears;
+			* Updated Mushroom Colonies:
+			* They can now be sheared whole at their highest age (5 caps), and planted back in any surface a Mushroom can be planted in;
+			* They only grow more caps if planted in Rich Soil under sufficient darkness;
+			* Shears can now clip colonies one cap at a time, allowing for decorative uses of middle stages;
+			* Updated Organic Compost and Rich Soil:
+			* Brand new improved textures for both blocks!
+			* Compost should now be more distinguishable from Rich Soil at later stages;
+			* Rich Soil has a new look, more earthy and less slimy.
+			* Rich Soil now checks the tag `farmersdelight:unaffected_by_rich_soil` for blocks that shouldn't receive growth boosts;
+			* Both blocks can now sustain Mushrooms at any light level;
+			* Organic Compost now checks every adjacent block for activation, encouraging clumping;
+			* JEI integration explaining how Decomposition works (thank you, ConductiveFoam!)
+			* Update Wild Crops:
+			* They can once again be bone-mealed to obtain more wild crops;
+			* When bone meal is used, they proliferate in a small area, up to 10 units, similar to Mushrooms;
+			* Wild Rice duplicates as an item drop, similar to Tall Flowers;
+			* Fixes:
+			* Recipe types no longer registered twice on load;
+			* Common setup for dispenser behaviors and compostables is properly enqueued to avoid race conditions;
+			* Wild Crops will now respect world-gen configs again;
+			* Rich Soil can now receive bamboo and grow saplings again (thank you, Jozufozu!)
+			* Minor graphics improvements;
+			* Minor data improvements.
+
+	FastFurnace (FastFurnace-1.16.3-4.3.0.jar --> FastFurnace-1.16.4-4.4.0.jar):
+		FastFurnace-1.16.4-4.4.0.jar:
+			Fixes villagers being unable to take jobs from smokers and blast furnaces.
+
+	FastWorkbench (FastWorkbench-1.16.3-4.4.1.jar --> FastWorkbench-1.16.4-4.5.0.jar):
+		FastWorkbench-1.16.4-4.5.0.jar:
+			Fixed a dupe bug and another error that occurred when using a hotbar key to craft a single stack, then shift-click-crafting the remaining stacks.
+			Changed the replacement of objects on PlayerContainer to use a coremod instead of reflection that was not consistently applying.
+			Dynamic Recipes will now forcibly update the output slot whenever the input changes. This should fix issues with recipes that may already be matching (but change their outputs) not displaying the right output.
+			Made the API cleaner so that other mods may integrate with as little work as possible.
+
+	Game Stages (GameStages-1.16.4-6.0.1.jar --> GameStages-1.16.4-6.0.4.jar):
+		GameStages-1.16.4-6.0.4.jar:
+			* Updated README to include maven, jar signing, and sponsorship info. - Tyler Hancock
+			* Fix Forge trying to load CraftTweaker support even when CraftTweaker is missing. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?GameStages)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		GameStages-1.16.4-6.0.3.jar:
+			* Fixed stage changes sometimes not syncing to the client.
+			* Migrated to a new maven setup.
+			* Compiled against latest Forge and Bookshelf.
+			* Finally reimplemented CraftTweaker support.
+			* Fixed JAR signing.
+			* Added built in example for using CraftTweaker.
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?GameStages)
+			* Diablo Crasher
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Gauges and Switches (rsgauges-1.16.4-1.2.7-b2.jar --> rsgauges-1.16.4-1.2.7.jar):
+		rsgauges-1.16.4-1.2.7.jar:
+			* v1.2.7     [R] Release build v1.2.7.
+			[F] Opt-out config pack level based.
+			* v1.2.7-b2  [F] Config load/apply condition fixed.
+			* v1.2.7-b1  [A] Analog Switch Linking signals added.
+			[A] Gauges and Indicators can be wirelessly connected to switches.
+			[A] Comparator Switch and Link Sender support analog data transmissions.
+			[A] Elevator Button up/down arrows added depending on where the wall is
+			clicked when placing.
+			* v1.2.6     [R] Release build  1.2.6.
+			* v1.2.6-b2  [A] Gauges can be explicitly set to Comparator-Input mode (click with a Redstone Torch).
+			[A] Auto switch buttons only display the current configurations on first click.
+			* v1.2.6-b1  [U] Ported to 1.16.4.
+			* v1.2.5     [R] Release build 1.2.5.
+			* v1.2.5-b1  [A] Linked switches are marked with particles when holding the Switch Link Pearl.
+			[U] Partial internal code refurbishments.
+			* v1.2.4     [U] Updated to Forge 1.16.3-34.1.0.
+			[A] Indicators and Gauges are invertible (input from Vallen while Forgecraft'ing).
+			[F] Ambient occlusion and GUI lightning fixes.
+			* v1.2.4-b8  [U] Ported to MC1.16.3.
+			* v1.2.4-b7  [U] Updated Forge to 33.0.37 (breaking change).
+			* v1.2.4-b6  [U] Updated Forge, adapted new mappings to 20200723-1.16.1.
+			[F] Fixed Contact Switch detection range.
+			* v1.2.4-b5  [F] Mapping adaption to Forge 1.16.2-33.0.20.
+			* v1.2.4-b4  [U] Ported to 1.16.2.
+			* v1.2.4-b2  [F] Door sensor look detection angle fixed.
+			[A] JEI integration added.
+			[F] Fixed startup issue by updating to Forge 32.0.97 (issue #28, ty wieselkatze).
+			* v1.2.4-b1  [M] Coloring of Sensitive Glass ported.
+			[F] Indicator power issue fixed.
+			* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+			[M] Modified global switch power placement default setting to strong.
+			* v1.2.4-a1  [A] Initial port.
+
+	KubeJS (kubejs-1604.3.4.143-forge.jar --> kubejs-1605.3.4.151-forge.jar):
+		kubejs-1605.3.4.151-forge.jar:
+			* Fixed AE2 block placing crash - LatvianModder
+
+		kubejs-1605.3.4.150-forge.jar:
+			* Fixed forge mixins not working with new loom - LatvianModder
+			* Merge pull request #62 from shedaniel/master - Kristiāns Micītis
+			* add yeet rei categories - shedaniel
+
+		kubejs-1605.3.4.149-forge.jar:
+			* Added reflection package to class blacklist - LatvianModder
+			* Updated to 1.16.5. Allow some access to java classes with Rhino - LatvianModder
+			* Milk - LatvianModder
+
+		kubejs-1604.3.4.148-forge.jar:
+			* Possibly fixed a crash in fabric with fake players - LatvianModder
+
+		kubejs-1604.3.4.147-forge.jar:
+			* Updated wiki url, added /kubejs reloadstartupscripts, /kubejs export - LatvianModder
+			* Updated wiki url, added /kubejs reloadstartupscripts - LatvianModder
+
+		kubejs-1604.3.4.146-forge.jar:
+			* Removed Item/Ingredient .count(int) Use .withCount(int) or .x(int) - LatvianModder
+
+		kubejs-1604.3.4.145-forge.jar:
+			* Added block loot table event. Wiki page soon - LatvianModder
+			* Added regex support in worldgen events - LatvianModder
+
+		kubejs-1604.3.4.144-forge.jar:
+			* Fixed crash with item builder maxDamage - LatvianModder
+			* Added Platform - you can now use if (Platform.mods.modid) to check if mod is loaded also, Platform.name, Platform.forge (boolean), Platform.fabric (boolean) - LatvianModder
+
+	KubeJS Create (kubejs-create-1604.1.0.3.jar --> kubejs-create-1604.1.0.4.jar):
+		kubejs-create-1604.1.0.4.jar:
+			* Added default processing time 100. This may break some recipes but fix others. You can add .processingTime(200) at end of your create recipes to override that - LatvianModder
+
+	Lost Trinkets (LostTrinkets-1.16.4-0.1.10.jar --> LostTrinkets-1.16.4-0.1.13.jar):
+		LostTrinkets-1.16.4-0.1.13.jar:
+			0.1.13
+			* Fixed Magical Herbs Trinket removes Neutral effects, Closes #33 - Thanks to BlueAgent
+			0.1.12
+			* Fixed ectopic incompatible with silk touch, Closes #19 - Thanks to Blue Agent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+			Fixed (of a number) having a fixed and unchanging value More (Definitions, Synonyms, Translation)
+
+		LostTrinkets-1.16.4-0.1.12.jar:
+			0.1.12
+			* Fixed Octopick incompatible with silk touch, Closes #19 - Thanks to BlueAgent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.11.jar:
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+	Mantle (Mantle 1.6.52 for 1.16.x --> Mantle 1.6.74 for 1.16.5):
+		Mantle 1.6.74 for 1.16.5:
+			* Added softwrapping to book section text
+			* Added recipe serializer base class
+			* Correct fluid ingredient constructor to use ITag instead of Tag
+			* Extracted namable tile entity logic into an interface
+			* Generalized InventoryBlock to support IItemHandler, deprecated some of the IInventory methods
+			* Make multi module container less strict, to discourage IInventory use
+			* Scalable elements can now be scaled upwards
+			* Allow fluid cuboids to be drawn outside the 0,0,0 to 1,1,1 range, in which case the UV will mod between 0 and 1
+			* Added background container screen, for screens that just need a background and no logic
+			* Made recipe advancements optional in the abstract recipe builder
+			* Deprecated multiblock logic, only used in Tinkers which rewrote the logic for 1.16
+			* Extra heart renderer now fires the post event and can be disabled with config
+			* Added config helpers to cache config values
+			* Fixed softwrapper newline handling in books
+
+	More Overlays Updated ([1.16.4] MoreOverlays 1.18.11 --> [1.16.5] MoreOverlays 1.18.13):
+		[1.16.5] MoreOverlays 1.18.13:
+			* - Fixed underwater lag with light overlay enabled.
+			* - Overlays will now automatically be hidden when in 3rd person front view.
+			* - Small fps boost with Chisels & Bits
+
+		[1.16.5] MoreOverlays 1.18.12:
+			* - Better support for Optifine
+			* - Light overlay will now also work on snow layers
+			* - Backwards compatible with 1.16.2, 1.16.3 & 1.16.4
+
+	Occultism (occultism-1.0.3.jar --> occultism-1.0.6.jar):
+		occultism-1.0.6.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+		occultism-1.0.5.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+		occultism-1.0.4.jar:
+			[Automated Build]
+			Find changes at [https://github.com/klikli-dev/occultism/releases](https://github.com/klikli-dev/occultism/releases)
+
+	OpenBlocks Elevator (elevatorid-1.16.4-1.7.9.jar --> elevatorid-1.16.5-1.7.11.jar):
+		elevatorid-1.16.5-1.7.11.jar:
+			Update to 1.16.5
+			Fix mod not loading in 1.16.3 (#73)
+
+		elevatorid-1.16.4-1.7.10.jar:
+			Fix teleport not triggering when having any kind of jump boost active (#63)
+			Built with forge 1.16.4 - 35.1.37
+
+	PackMenu (PackMenu-1.16.3-2.3.0.jar --> PackMenu-1.16.4-2.3.1.jar):
+		PackMenu-1.16.4-2.3.1.jar:
+			Made it so that button lang keys are properly translated at runtime instead of only at load.
+			Added configs to enable panorama fade-in and change panorama rotation speed.
+			Made the "CONNECT_TO_SERVER" action create and save a ServerData so that resource pack prompt results are remembered.
+
+	Pedestals (Pedestals -1.16.4_0.8p --> Pedestals -1.16.4_0.8r_hotfix_2):
+		Pedestals -1.16.4_0.8r_hotfix_2:
+			Balance and Minor Fixes.
+			* Fixed Anvil not repairing at base level, and xp tank buffer size.
+			* Fixed an issue where stackable enchanted/nbt items would be transferred in pedestals and then result in the sent one being voided
+			* Adjusted the size of the energy buffer for energy upgrades to allow the ability to process items at max speed
+			* Added fluid capabilities to pedestals that have fluid upgrades in them, this should allow fluid cables to attach and transfer fluids into the Fluid Importer or out of the Fluid Exporter
+			* Added a blacklist Tag to allow blacklisting some upgrades from being able to use its "Advanced abilities" The XP Anvil will be blacklisted by default, since i believe this is the main concern for balance with enchanting with pedestals currently
+
+		Pedestals -1.16.4_0.8r_hotfix_1:
+			HOTFIX
+			Fixes the xp anvil not repairing by default, and the xp tank's buffer not scaling properly
+
+		Pedestals -1.16.4_0.8r:
+			Texture Update - 2
+			No feature changes, just some more sweet new textures!
+
+		Pedestals -1.16.4_0.8q:
+			1.16.5 Release
+			(Huge Optimization Update)
+			FULL CHANGELOG for PEDESTALS 0.8q
+			TEXTURE UPDATE!!!
+			* Huge thanks to Ridanisaurus for the new textures, they look amazing!
+			* You can usually find them in the Enigmatica discord.
+			FIXED: sometimes particles not showing 'above' the pedestal when placed sideways.
+			FIXED: Fluid Pump(s) work area defaulting to 1x8x1 when it should be 1x2x1.
+			FIXED: Filtered Restock is now Enchantable
+			FIXED: Made a lot of Filters Enchantable that wernt before.
+			FIXED: Energy Transferring is more Consistant across all energy upgrades
+			FIXED: Exp Transferring is more Consistant across all exp upgrades
+			FIXED: added missing tooltip to Exp Restricted Relay
+			FIXED: Updated Fluid Transferring to be a bit faster.
+			FIXED: Color Crafting to disallow fake players trying to call the methods.
+			FIXED: Compacting crafter now uses piston push sound for successful crafts, and Fluid Crafter uses brewing stand brew sound
+			FIXED: patchouli entry for redstone control.
+			FIXED: Books now work in the enchanter
+			ATTEMPTED FIXED: an issue where mekanism pipes could see cobblestone returned from the cobble gen, but because it has 0 items, it saw it as air and was spamming consoles with errors. (Still spams console, will reach out to mek dev for what the pipe is actually erroring on)FIXED: Fluid Filtered Import Recipe
+			FIXED: Auto attacker should now be able to attack Raiders(Pillagers) again.
+			FIXED: Block Breaker, Quarries, and Choppers will now drop XP if the block normally would.
+			OPTIMIZATION: Added a 'cooldown' mechanic to machines like the quarries and choppers to stop working if no work exists, and to only check for new work every 5 seconds (100 game ticks).
+			OPTIMIZATION: Pedestal machines have been optimised to only check their work area on longer intervals based on their total working area allowed. this significantly should reduce them checking blocks every opperation
+			Machines Optimized:
+			* Choppers
+			* Fertilizer
+			* Harvester
+			* Planter
+			* Quarries
+			* Hive Harvester
+			* Pumps
+			OPTIMIZATION: Added Optimizations to Filters across the board. this only works for inventories that update neighbors when items are inserted/extracted (Wont Work on Storage Drawers). When placed and used for the first time, it will 'Queue' up whats in the inventory and filter based off the queue instead of checking the inventory every time.
+			OPTIMIZATION: All Magnets now will try to fill their pedestal with matching items, before it would only grab the first itemstack entity and then stop working. This should speed up some farms reducing the time entities are on the ground.
+			OPTIMIZATION: ANY Upgrade that uses "Entity Filtering" now 'queues' the block below it, this reduces the need to check for the block every time when working.
+			OPTIMIZATION: Crafters now 'queue' their recipes and inventories. Inventories that dont update neighbors (Looking at you storage drawers) may have occasional issues, but should still work most the time.
+			ADDED: Quarries now have a TAG for quarry/advanced and quarry/blacklist. By Default(Respawn anchor and loadstone are advanced, and spawners are disabled)
+			ADDED: Quarries have a "cooldown" if there is nothing in their work area, they will emit a particle above them durring this "cooldown" phase.
+			ADDED: Pedestals can now accept tools by using the Tool Swapper item.- Tool in Offhand, Right Click on pedestals with Tool Swapper, Tool goes in, or Out if one is already in.- Normally works with most tools, but Additional can be added (or removed) with tags allowed_tools/disallowed_tools. By default:(Stick/Shears are added, and wood hoe disabled).
+			ADDED: Backwards Linking Tool, links from the Sender to Receiver. Can be used in any place the Linking Tool Can Be, Also Selecting a pedestal, Holding the BLT in the off hand and Placing new Pedestals will automatically link the selected pedestal to the placed receivers.- Shift+RightClicking this in the Air (When there is no selection) will turn it into a Linking Tool
+			ADDED: Restriction Upgrade, this will only accept up to a set amount of items, once it has items it will not accept any more until it is empty.
+			ADDED: Recycler, this by default will recycle Tools/Weapons/Armor into their 'smelting' outputs. When Enchanted to Advanced, itll return ingots equal to the amount of durability left.- There is a recipe to allow additional items to be recycled into 1 type of output with an amount count returned for max durability, or a tag that can set items to be blacklisted
+			ADDED: Because of moving the tools into the pedestal, a lot of pedestals now are empty, so i added magnet's by default to cover their work areas. This should simplify some setups.
+			Effected Upgrades:
+			* Auto Attacker
+			* Choppers
+			* BlockBreaker
+			* Quarries (already have this by default)
+			* Harvesters
+			ADDED: Dev Tool (no texture)[Creative Only] this can read the inserted coins nbt (with shift + right click) or the nbt of items held in the off hand when rickt clicking in the air.
+			ADDED: Durability (Above) and Durability (Under) Filters, these will only allow items with durability matching the conditions to be received. (Not subject to the advanced required enchant to exceed level 5 capacity)
+			ADDED: Entity Filtering Options:
+			* Lime Glass for Villagers
+			* Black Glass for Raiders
+			* Slime Block for Exp Entities (advanced)
+			* Quartz block for Item Entities (advanced)
+			ADVANCED FEATURE: Quarries now have an "Advanced Block" List that can be configured to allow some blocks only broken when the upgrade has this enchant.
+			ADVANCED FEATURE: Recycler Will Scrap Tools/Armor/Weapons into Ingots of material based on durability (Reposted)ADVANCED FEATURE: Option to Fan Upgrade that allows it to push any Entity
+			ADVANCED FEATURE: Crafters will no longer eject container items.
+			ADVANCED FEATURE: Some Upgrades can now use a pedestal as an input inventory.
+			* Compacting Crafters
+			* Crafters
+			* Crushers
+			* Furnaces
+			* SawMills
+			* Exp Bottler
+			* Exp Enchanter
+			* Exp Grindstone
+			* Fluid Crafters
+			* Milker
+			ADVANCED FEATURE: Adding Advanced enchantment to an upgrade can make it use Capacity / Range / Speed OVER level 5 (normal default)
+			Effective on:
+			* Exp Collector
+			* Exp Dropper
+			* Exp Tank
+			* Exp Anvil (Slight nerf, with no exp cap now, its now 2x more expensive to combine items)
+			* Exp Enchanter
+			* Exp Relays
+			* Generators
+			* Cobble Gen
+			* Item Tank (Nerfed max storage at level 5, now requires level 8 i think to get max storage)
+			* Void Upgrade (Damage)
+			This build may have some bugs in it yet as I haven't had time to fully test it, if you find anything new, please report it to my issues page(linked in the mods description page) Or head over to the discord and chat in the #pedestals channel (DISCORD LINKED AT THE BOTTOM OF THE DESCRIPTION PAGE)
+
+	Placebo (Placebo-1.16.3-4.3.3.jar --> Placebo-1.16.4-4.4.1.jar):
+		Placebo-1.16.4-4.4.1.jar:
+			Made replacements done using placebo automatically assume the original blockstates which preserves compat for most features.
+
+		Placebo-1.16.4-4.4.0.jar:
+			Updated to 1.16.4.
+			Moved coremod logging over to the new system in ASMAPI instead of prints.
+			Should support 1.16.5 just fine.
+
+	Plonk (plonk-1.16.4-9.0.6.jar --> plonk-1.16.5-9.0.7.jar):
+		plonk-1.16.5-9.0.7.jar:
+			[9.0.7] - 2021-01-19
+			* Update to Minecraft 1.16.5 (supports 1.16.x)
+			* Fix #9: Dupe bug when block place is canceled (see MinecraftForge#7609)
+
+	PneumaticCraft: Repressurized (pneumaticcraft-repressurized-1.16.4-2.9.2-116.jar --> pneumaticcraft-repressurized-1.16.4-2.9.3-120.jar):
+		pneumaticcraft-repressurized-1.16.4-2.9.3-120.jar:
+			Note: PNC:R 2.9.3 has been successfully tested with Forge 36.0.0 on Minecraft 1.16.5. Older recent versions will probably also work, but haven't been tested.
+			2.9.3-120 (17 Jan 2020)
+			Updates
+			* Added Reinforced and Smart Chest Upgrade Kit items
+			* - Use these convenience items to upgrade a wooden chest to a Reinforced or Smart Chest, or a Reinforced Chest to Smart Chest
+			* - Operates in-place, no need to remove and re-add any items in the chest
+			* When extended tooltips are active (use F3+H), the Programmer GUI now shows the progwidget ID for programming widgets in their tooltips
+			* - This is useful if you plan to do any Drone programming with Computercraft and the Drone Interface
+			* - The progwidget ID corresponds directly to the action used in the Drone Interface's Lua setAction() method (the "pneumaticcraft:" prefix can be omitted)
+			* Added two new Lua methods to the Drone Interface
+			* - setCanSteal() - used by the "pickup_item" action, controls if the Drone may steal items off e.g. Immersive Engineering conveyors
+			* - setRightClickType() - used by the "block_right_click" action, controls if the Drone should be using an item or activating a block
+			* Jet Boots and Elytra now play more nicely together
+			* - When player is Elytra-flying, switched-on Jet Boots won't fire, or use any air, unless player is actively thrusting (holding down Space bar)
+			* - Allows players to glide with Elytra and fire Jet Boots for occasional thrust or altitude boost, a nice air saver
+			* - Jet Boots HUD now shows an informational Elytra icon if player is Elytra-flying
+			* Item Filter progwidget GUI improvements
+			* - Add radio boxes to choose filtering by item (the default) or by variable
+			* - Cleaner GUI layout: only show GUI controls relevant to the current mode (item or variable)
+			Fixes
+			* Fixed PneumaticCraft blocks not remembering custom names assigned in an Anvil when the block is placed down & broken again
+			* Fixed Pressure Tube shape not always updating properly after a tube module is added or removed
+			* Fixed Redstone Module clock mode tick lengths > 127 not working
+			* Fixed Computer Control (Drone Interface) not working with several programming widgets (Block Right Click, Pickup Items, Place, Void Item, Void Liquid)
+			* - Also cleaned up the Patchouli manual entry for the Drone Interface quite a bit
+			* Fixed Block Tracker causing client crash when tracking vanilla mob spawners with an Enderman (or any angerable creature) spawn egg loaded
+			* - Caused by [https://bugs.mojang.com/browse/MC-189565]() but I've added some extra validation to prevent an outright crash
+			* Hopefully fix worldgen-related crash caused by other worldgen intersecting PneumaticCraft villager houses
+			* - Couldn't reproduce myself, but some extra validation has been added
+			* Fixed logic error in Drone Dig widget item filtering causing blacklisted items to be ignored
+			* Fixed Programmer GUI inventory slots getting messed up after closing an item or inventory search window
+			* - e.g. right click an Item Filter widget then press "Search Items...", then go back to the main Programmer GUI
+			* Fixed Item Filter progwidget GUI not properly sync'ing variable names when GUI closed
+
+	Polymorph (Forge) (polymorph-forge-1.16.4-0.22.jar --> polymorph-forge-1.16.4-0.23.jar):
+		polymorph-forge-1.16.4-0.23.jar:
+			Changelog
+			All notable changes to this project will be documented in this file.
+			The format is based on [Keep a Changelog]() and this project adheres to the format [MCVERSION-MAJORMOD.MAJORAPI.MINOR.PATCH]().
+			[0.23] - 2021.01.17
+			Fixed
+			* Fixed issue with empty pattern outputs in Refined Storage [#56](https://github.com/TheIllusiveC4/Polymorph/issues/56)
+			[0.22] - 2021.01.01
+			Fixed
+			* Fixed duplicate recipe outputs [#51](https://github.com/TheIllusiveC4/Polymorph/issues/51)
+			[0.21] - 2020.12.25
+			Fixed
+			* Attempted fix for empty recipe outputs [#49](https://github.com/TheIllusiveC4/Polymorph/issues/49)
+			[0.20] - 2020.12.20
+			Fixed
+			* Attempted fix for IllegalArgumentException crash with Create [#45](https://github.com/TheIllusiveC4/Polymorph/issues/45)
+			[0.19] - 2020.12.17
+			Added
+			* Added smelting recipe conflict management for the Furnace, Smoker, and the Blast Furnace
+			* Added smelting recipe conflict integration for FastFurnace and Iron Furnaces
+			Changed
+			* JEI integration uses recipe identifiers now instead of crafting outputs
+			Fixed
+			* Fixed Pretty Pipes recipe toggle button overlapping with crafting grid [#40](https://github.com/TheIllusiveC4/Polymorph/issues/40)
+			[0.18] - 2020.11.27
+			Fixed
+			* Fixed dedicated server crash [#38](https://github.com/TheIllusiveC4/Polymorph/issues/38)
+			[0.17] - 2020.11.27
+			Changed
+			* Added automatic integration with the majority of modded crafting tables
+			[0.16] - 2020.10.26
+			Added
+			* Added French localization (thanks Lykrast!)
+			Fixed
+			* Fixed crash with BYG [#32](https://github.com/TheIllusiveC4/Polymorph/issues/32)
+			[0.15] - 2020.09.29
+			Changed
+			* Updated to Minecraft 1.16.3
+			* Added Croatian localization (thanks COMBOhrenovke!)
+			[0.14] - 2020.09.01
+			Changed
+			* Updated to Minecraft 1.16.2
+			[0.13] - 2020.08.13
+			Fixed
+			* Attempted fix for recipes breaking when updating worlds [#24](https://github.com/TheIllusiveC4/Polymorph/issues/24)
+			[0.12] - 2020.08.01
+			Added
+			* Added Chinese localization (thanks Samekichi!)
+			[0.11] - 2020.07.22
+			Fixed
+			* Fixed Oh The Biomes You'll Go crafting tables not display outputs correctly
+			[0.10] - 2020.07.19
+			Changed
+			* Port to 1.16.1 Forge
+
+	Powah! (Powah-1.16.4-2.3.8.jar --> Powah-1.16.4-2.3.9.jar):
+		Powah-1.16.4-2.3.9.jar:
+			2.3.9
+			* Added Traditional Chinese translation zh_tw.json - Thanks to Jeffku0107
+			2.3.8
+			* Added brazilian translation pt_br.json - Thanks to Mikeliro
+			* Added french translation fr_fr.json - Thanks to jordanamr
+			2.3.7
+			* Fixed Powah's dry ice and uraninite ores ConfiguredFeatures should be registered, closes #129.
+			* Fixed Solar Panel has wrong time, closes #132.
+			* Fixed Ender Cell/Ender Gate channel mismatch, closes #131.
+			2.3.6
+			* Fixed Configs for thermo_gen and magmator are mixed up, Closes #126.
+			* Fixed Excessive cable network size issues, Closes #128.
+			* Added uraninite storage blocks tags.
+			* Updated lollipop to v3.2.3.
+			2.3.5
+			* Fixed Impossible to disable worldgen, Closes #124.
+			2.3.4 (1.16.4)
+			* Initial port to 1.16.4
+			2.3.4
+			* Disabled energizing particle temporary to fix a crash.
+			2.3.3
+			* Fix Client Crash Using Powah and Forge 34.1.27+, Closes #119
+			2.3.2
+			* Fixed opening GUI instantly crashes Forge server, Closes #115.
+			* Updated lollipop to v3.2.2
+			2.3.1
+			* Fixed reactor gen mode not stopping reactor when is full.
+			* Fixed JEI not showing info.
+			* Random bug fixes.
+			* Updated lollipop to v3.2.1
+			2.3.0
+			* Did a full rewrite to the Powah: manual.
+			* Improved all tooltips.
+			* Added Energizing orb particles.
+			* Added Energizing orb progress overlay.
+			* Fixed player transmitter and energy hopper bounding boxes (voxel shapes).
+			* Fixed reactor and some other non chargeable blocks getting charged.
+			* Fixed graphics on Energy Cable are counter intuitive, Closes #107.
+			* Fixed cables not stacking, Closes #104.
+			* Moved to 1.16.3
+			* Clean-up.
+			* Updated lollipop to v3.2.0
+			2.2.0
+			* Fix player transmitter not checking top part position, Closes #100.
+			* Fix Uraninite ores breaking hardness.
+			* Fixed random bugs.
+			* Updated lollipop to v3.0.0
+			2.1.3
+			* Added Reactor generation mode (if set to on the reactor will stop if is full and start when has less than 70% of energy).
+			* Fixed losing side config when chunk load/unload.
+			* Fixed Player transmitter not breaking properly.
+			* Updated lollipop to v2.1.3.
+			2.1.2
+			* Fixed magmator creates ungodly amount of pings in server, Closes #97.
+			* Added all uraninite ores to the forge:ores and forge:ores/uraninite tags, Closes #96.
+			* Updated lollipop to v2.1.2.
+			2.1.1
+			* Ignored breaking change from newer forge to fix the crash (now should work with all forge versions without crashing).
+			* Changed min forge version to 32.0.14.
+			* Updated lollipop to v2.1.1.
+			2.1.0
+			* Fixed crash caused by the breaking change from forge 32.0.67.
+			* Changed min forge version to 32.0.67.
+			* Updated lollipop to v2.1.0.
+			2.0.4
+			* Re-implemented Powah! manual.
+			* Re-implemented missing discharger functions.
+			* Fixed Redstone configuration for all blocks.
+			* The fixed reactor not accepting solid coolant.
+			* Updated lollipop to v2.0.2.
+			2.0.3
+			* Fixed crash when adding a binding card to the player transmitter, Closes #90.
+			* Fixed binding card not rendering correctly.
+			2.0.2
+			* Fixed Energizing rods cannot be placed on cables.
+			* Re-Added curios support for the player transmitter.
+			* Updated lollipop to v2.0.1.
+			2.0.1
+			* Fixed reactor placing overlay not showing.
+			2.0.0
+			* First 1.16 beta release.
+
+	Quark (Quark-r2.4-294.jar --> Quark-r2.4-295.jar):
+		Quark-r2.4-295.jar:
+			* Fixed crash when a fake player places down blocks
+			* Fixed Deuteranopia being misspelled
+			* Fixed monster boxes floating in the middle of caves
+			* Fixed sorting inventory with a backpack equipped not sorting the backpack
+
+	RecipeBuffers (recipebuffers-2.0.jar --> recipebuffers-2.1.jar):
+		recipebuffers-2.1.jar:
+			* Fix missing "Automated Shapeless Crafting" category with Create
+			* Allow connections of clients with RB installed to vanilla servers
+
+	Sophisticated Backpacks (sophisticatedbackpacks-1.16.4-1.2.1.127.jar --> sophisticatedbackpacks-1.16.4-1.3.4.136.jar):
+		sophisticatedbackpacks-1.16.4-1.3.4.136.jar:
+			Added support for opening guis of backpacks in backpack using open backpack key
+			Added switches next to upgrades that allow to turn them on and off
+			Added keybinds to be able to switch on/off upgrades in the first 5 upgrade slots of the first backpack that's found in player's inventory.
+			Added button sound to all buttons (can be turned off in client config)
+			Added background to upgrade slots (similar to vanilla armor ones) that roughly shows only upgrade items can go in those.
+			Backpack now renders on all living entities so if one of the pesky zombies picks up your backpack you can see which one it was.
+			Gold backpack will now make piglins neutral if worn in chestplate slot
+			Added support for backpacks to be placeable from dispensers.
+			Fixed saving inventories in subbackpacks to always trigger save of the parent backpack
+			Fixed hidden slots from upgrade tabs sometimes creeping into player's view (especially with lower gui scales)
+
+	Spice of Life: Carrot Edition (solcarrot-1.16.3-1.9.8.jar --> solcarrot-1.16.3-1.9.9.jar):
+		solcarrot-1.16.3-1.9.9.jar:
+			* Russian localization [(thanks, grimmscore!)](https://github.com/Cazsius/Spice-of-Life-Carrot-Edition/pull/103)
+
+	Structure Gel API (Archived file --> Structure Gel 1.16.4-v1.7.5):
+		Structure Gel 1.16.4-v1.7.5:
+			Removed the chat message about mods modifying the DataFixerUpper.
+			[Changelog]()
+
+	Supplementaries (supplementaries-0.9.18.jar --> supplementaries-0.9.21d.jar):
+		supplementaries-0.9.21d.jar:
+			Many small bug fixes, mainly visuals.
+			Safes now display the owner name in the container description.
+			Slightly tweaked firefly ai.
+			Added some tooltips
+			Reworked some signs code, functionality remains the same.
+			Added doormat. Texture is a placeholder
+
+		supplementaries-0.9.21c.jar:
+			Another minor incremental patch
+			With this one you'll be able to update from versions like 0.9.19 or older without worrying about loosing (part) of sign post data or cage mob data.
+			However for caged mobs that are in item form you might want to place them down, break them, free them and capture them again to have them have the correct name and apparence again.
+			Added sign post whitelist where you can add other blocks that can act as a post (like quark posts)
+
+		supplementaries-0.9.21b.jar:
+			If you're updating from older version please also read the 0.9.20 patch notes
+			Fixed yet another very rare crash on startup. All these recent ones were due to some problematic code that I now completely removed.
+			Hourglasses will now accept any forge sand or dust as long as they are tagged as such. They will also (for the most part) display the correct texture for such item.
+			Added configs to add throwable bricks to the whitelist
+			Remade the flute texture, Improved the copper lantern one and tweaked the bellows one.
+			Fixed a bug where dispenser weren't dropping a bottle when emptying a jar when full.
+			Fixed a bug where one could not shift click items into a sack properly
+
+		supplementaries-0.9.21.jar:
+			If you're updating from older version please also read the 0.9.20 patch notes
+			Fixed (hopefully) all start up issues related to tags.
+			Added bells tweaks: bells will now visually connect to chains and you will be able to rind a bell by pulling a chain that's connected to one using an empty hand.
+			You can tweak this via the configs
+			Fixed an issue where you were not able to break your own safe when that option was enabled in the configs
+			Added some flute related configs
+			Added recipe compatibility for Caves & Cliffs Backport mod
+
+		supplementaries-0.9.20c.jar:
+			0.9.20-b/c: the mod now once again loads on servers. I had to fix two separate similar issues hence the many hotfixes
+			0.9.20:
+			Lots of under the hood code changes and cleanups were made in this update.
+			I advise to empty your jars and cages and break your sign posts before updating since their content might get lost after updating. Some other blocks might need to get broken and placed again.
+			Added copper lanterns, a decoration item that works similar to normal lanterns and additionally can be turned on and off using a flint and still or an empty hand.
+			Added flutes: basically a pet whistle that will teleport all your non sitting pets that are near you to you. It can also be bound to a specific pet by left/right clicking one, that way it will onlly call that specific pet, even if it's sitting.
+			Added soul in a jar. A spooky light source that can be obtained by using a tinted jars on soul sand when wearing soul speed boots. Currently only renders properly in fabulous graphic.
+			You can now throw bricks and nether bricks. Be careful because they might break your windows!
+			Captured parrots will now dance when you play a music disk
+			Sacks will now have 4 additional slots that can be enabled via the configs. Additionally they will now accept only items that shulkers can accept. Unfortunately some mods haven't implemented such mechanic this way so that means they you probably won't be able to put your generic "crate" inside a sack, but that wouldn't be the case for the other way around. Same goes for safes.
+			Slightly tweaked globe generation. That means that you'll get a new globe when loading an old world. If you don't like remember you can use /supplementaries globe newseed
+			Tweaked swinging blocks physic so they won't be pushed by non moving entities.
+			Changed blackboard and globe stand texture.
+			Added a config option to disable dispensers behavior, a wall lantern mod blacklist and a command to reload the mod configs (since sometimes they don't get reloaded automatically)
+			All models have now been optimized and receive proper culling
+			Added and changed some sounds.
+			Hourglasses can now hold any type of modded sand as long as it's tagged as such. they will(mostly) also have their respective textures
+			Many small bug fixes and improvements that will probably go unnoticed
+
+		supplementaries-0.9.19-2:
+			Quick hotfix
+			Fixed a rare crash related to tags
+			hanging signs and wall lanterns now can be placed on all blocks that have a hitbox equal to the fence or wall blocks. For example they will work with Quarks posts.
+			Changed candle holder item texture
+			Lunar moths from Druidcraft can now be caught with jars and have a proper animation
+
+		supplementaries-0.9.19-1:
+			Very minor update.
+			Adjusted blackboard gui so it fits properly on all screen resolutions
+			You can now reset an hourglass by shift right clicking
+			Some recipes will not change depending on the mod installed. If you have installed quark or buzzier bees you'll be able to use their candles to craft the related items.
+			Same goes for silver candelabra, cog block and colored sconces.
+			Improved related recipes conditions and advancements.
+			Changed blackboard and candle holder texture.
+			added config to disable firefly despawning during the day
+			re uploaded cause old one for some reason didn't compile properly
+			if you are still having issues send me a crash report
+
+	The Undergarden (The Undergarden 0.4.3 --> The Undergarden 0.4.4):
+		The Undergarden 0.4.4:
+			The Undergarden 0.4.4
+			* Hopefully fixed crash caused by Catacombs not being on the FlatGenerationSettings STRUCTURES map
+			* The Undergarden now makes use of the world seed for terrain generation and biome placement. No two Undergardens shall be the same!
+
+	Toast Control (Toast-Control-1.16.3-4.3.0.jar --> Toast-Control-1.16.4-4.3.1.jar):
+		Toast-Control-1.16.4-4.3.1.jar:
+			Updated to latest forge/placebo combo
+
+	Transport (Transport-1.16.4-3.3.1.jar --> Transport-1.16.4-3.4.1.jar):
+		Transport-1.16.4-3.4.1.jar:
+			Fixes issue pertaining to lack of steam bucket
+
+		Transport-1.16.4-3.4.0.jar:
+			* Added Steam Locomotive (Runs off Furnace Fuel and Water)
+			* Added Rail Rotation Abilities to Rail Breaker
+			* Fixed Elevator Rail Missing Model Errors
+
+	Wither Skeleton Tweaks (Wither-Skeleton-Tweaks-1.16.3-5.2.1.jar --> Wither-Skeleton-Tweaks-1.16.4-5.3.0.jar):
+		Wither-Skeleton-Tweaks-1.16.4-5.3.0.jar:
+			Updated russian translation
+
+	YUNG's Better Caves (Forge) ([1.16.3 / 1.16.4] YUNG's Better Caves v1.0.6 --> [1.16.4 / 1.16.5] YUNG's Better Caves v1.1.1):
+		[1.16.4 / 1.16.5] YUNG's Better Caves v1.1.1:
+			Hotfix for crash with Terraforged. For v1.1 changelog, see below.
+			Now requires [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api) as a dependency. Back up your world before updating!
+			This version brings some long-needed bugfixes and optimizations!! See the changelog below.
+			Hey, if you like my mods, consider joining my Patreon for only $2. I'd really appreciate it :)
+			[](https://www.patreon.com/yungnickyoung)Also join us on Discord!
+			[](https://discord.gg/rns3beq)
+			v1.1 Changelog:
+			* The caves are finally implemented as a carver instead of a feature! Thanks to TelepathicGrunt for this :)
+			* Huge Garbage Collection optimization. Should no longer eat up a ton of allocations.
+			* Plants and other decorations no longer float above cave entrances!
+			* Obsidian/Magma layer no longer generates for flooded caves when the fluid below is water.
+			* No more weird vanilla water/lava lake gen (e.g. lava lake spawning in the middle of underground ocean).
+			* Flooded caves no longer completely close off to non-flooded caves. You can now sometimes find cool "water walls" along ocean biome borders.
+			* Bedrock flattening now uses the proper biome block for replacement instead of always using stone.
+			* Fix buffer region between water and lava regions not spawning in flooded ravines.
+
+		[1.16.4] YUNG's Better Caves v1.1:
+			Now requires [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api) as a dependency. Back up your world before updating!
+			This version brings some long-needed bugfixes and optimizations!! See the changelog below.
+			Hey, if you like my mods, consider joining my Patreon for only $2. I'd really appreciate it :)
+			[](https://www.patreon.com/yungnickyoung)Also join us on Discord!
+			[](https://discord.gg/rns3beq)
+			Changelog:
+			* The caves are finally implemented as a carver instead of a feature! Thanks to TelepathicGrunt for this :)
+			* Huge Garbage Collection optimization. Should no longer eat up a ton of allocations.
+			* Plants and other decorations no longer float above cave entrances!
+			* Obsidian/Magma layer no longer generates for flooded caves when the fluid below is water.
+			* No more weird vanilla water/lava lake gen (e.g. lava lake spawning in the middle of underground ocean).
+			* Flooded caves no longer completely close off to non-flooded caves. You can now sometimes find cool "water walls" along ocean biome borders.
+			* Bedrock flattening now uses the proper biome block for replacement instead of always using stone.
+			* Fix buffer region between water and lava regions not spawning in flooded ravines.
+
+	YUNG's Better Mineshafts (Forge) ([1.16.3 - 1.16.5] YUNG's Better Mineshafts v1.1.1 --> [1.16.4 / 1.16.5] YUNG's Better Mineshafts v2.0):
+		[1.16.4 / 1.16.5] YUNG's Better Mineshafts v2.0:
+			IF YOU'RE UPGRADING FROM AN OLD VERSION, DELETE THE OLD CONFIG FILE FIRST!
+			The config has been reorganized from previous versions. If you've modified the default settings, make a copy of your config file somewhere else so you can copy down the changes once you've loaded in the new config. The same settings are all there, they're just in different places.
+			This mod now requires [YUNG's API](https://www.curseforge.com/minecraft/mc-mods/yungs-api) as a dependency.
+			Big update - v2.0! Introducing the ability to make your own custom mineshafts via a JSON file! When you run the game with v2.0+ for the first time, a new bettermineshafts directory will be created in your Minecraft config folder. There you can find some information on how to use this feature! A full changelog is posted below.
+			Join us on Discord!
+			[](https://discord.gg/rns3beq)
+			Changelog:
+			* All data relating to biome variants is now stored in a JSON file, available for you to use to customize your mineshafts!
+			* When you run the game with v2.0+ for the first time, a new bettermineshafts directory will be created in your Minecraft config folder. There you can find some information on how to use this feature!
+			* Add torches along smaller shaft walls
+			* Add cobwebs in main tunnel
+			* Fix some small shaft pieces not properly connecting
+			* Fix some small shaft pieces not being 3 wide like they should be when spawning out in the open
+			* Fix mineshaft supports not spawning when above the surface
+			* Add config options for the following:
+			* Small shaft piece length
+			* Small shaft spawn rate
+			* Lantern spawn rate
+			* Torch spawn rate
+			* Workstation spawn rate
+			* Workstation Cellar spawn rate
+			* Abandoned Miners' Outpost spawn rate
+			* Chest & TNT Minecart spawn rates
+			* Cobweb spawn rate
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).
