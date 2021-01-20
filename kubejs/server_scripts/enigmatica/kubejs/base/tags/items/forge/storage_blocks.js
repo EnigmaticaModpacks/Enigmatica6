@@ -26,6 +26,11 @@ events.listen('item.tags', function (event) {
         .add('#' + storageBlocks + '/bronze');
 
     event
+        .get(storageBlocks + '/gold_brass')
+        .add('#' + storageBlocks + '/gold')
+        .add('#' + storageBlocks + '/brass');
+
+    event
         .get(storageBlocks + '/iron_aluminum')
         .add('#' + storageBlocks + '/iron')
         .add('#' + storageBlocks + '/aluminum');

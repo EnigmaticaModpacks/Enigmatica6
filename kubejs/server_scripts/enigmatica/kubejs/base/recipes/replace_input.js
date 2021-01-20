@@ -167,7 +167,8 @@ events.listen('recipes', function (event) {
                     'ars_nouveau:arcane_core',
                     'ars_nouveau:crystallizer',
                     'ars_nouveau:volcanic_accumulator',
-                    'pneumaticcraft:gun_ammo'
+                    'pneumaticcraft:gun_ammo',
+                    'ars_nouveau:marvelous_clay'
                 ]
             },
             {
@@ -244,6 +245,7 @@ events.listen('recipes', function (event) {
                     'cookingforblockheads:preservation_chamber',
                     'buildersaddition:arcade',
                     'minecraft:compass',
+                    'minecraft:piston',
                     'xnet:antenna_dish',
                     'xnet:antenna_base',
                     'xnet:antenna',
@@ -251,6 +253,12 @@ events.listen('recipes', function (event) {
                     'resourcefulbees:centrifuge_casing',
                     'engineersdecor:metal_bar'
                 ]
+            },
+            {
+                type: 'ingots',
+                replace: 'iron',
+                replaceWith: 'brass',
+                items: ['ars_nouveau:mana_condenser', 'ars_nouveau:enchanting_apparatus']
             },
             {
                 type: 'ingots',
