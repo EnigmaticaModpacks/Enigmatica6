@@ -154,4 +154,25 @@ events.listen('recipes', function (event) {
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });
+
+    event.remove({
+        input: '#forge:ores/zinc',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/osmium',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/uranium',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/aluminum',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/nickel',
+        type: 'thermal:smelter'
+    });
 });
