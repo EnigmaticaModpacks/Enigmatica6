@@ -60,10 +60,6 @@ events.listen('recipes', function (event) {
     };
 
     data.recipes.forEach((recipe) => {
-        event.remove({
-            input: recipe.inputs,
-            type: 'thermal:smelter'
-        });
         event.recipes.thermal.smelter(recipe.outputs, recipe.inputs).experience(recipe.experience);
     });
 });
