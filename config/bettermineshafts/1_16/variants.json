@@ -15,41 +15,41 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:smooth_red_sandstone": 0.1,
-          "minecraft:chiseled_red_sandstone": 0.1,
-          "minecraft:cave_air": 0.2,
-          "minecraft:cut_red_sandstone": 0.1,
           "minecraft:cracked_stone_bricks": 0.05,
-          "minecraft:stone_bricks": 0.05
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:cave_air": 0.2,
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.1,
+          "minecraft:smooth_red_sandstone": 0.1
         },
         "defaultBlock": "minecraft:red_sandstone"
       },
       "floorSelector": {
         "entries": {
-          "minecraft:smooth_red_sandstone": 0.1,
-          "minecraft:chiseled_red_sandstone": 0.1,
-          "minecraft:red_sand": 0.3,
-          "minecraft:cut_red_sandstone": 0.1,
           "minecraft:cracked_stone_bricks": 0.05,
-          "minecraft:stone_bricks": 0.05
+          "minecraft:red_sand": 0.3,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.1,
+          "minecraft:smooth_red_sandstone": 0.1
         },
         "defaultBlock": "minecraft:red_sandstone"
       },
       "brickSelector": {
         "entries": {
-          "minecraft:smooth_red_sandstone": 0.2,
-          "minecraft:chiseled_red_sandstone": 0.1,
           "minecraft:red_sandstone": 0.5,
-          "minecraft:cut_red_sandstone": 0.2
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.2,
+          "minecraft:smooth_red_sandstone": 0.2
         },
         "defaultBlock": "minecraft:red_sandstone"
       },
       "legSelector": {
         "entries": {
-          "minecraft:smooth_red_sandstone": 0.2,
-          "minecraft:chiseled_red_sandstone": 0.1,
           "minecraft:red_sandstone": 0.5,
-          "minecraft:cut_red_sandstone": 0.2
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.2,
+          "minecraft:smooth_red_sandstone": 0.2
         },
         "defaultBlock": "minecraft:red_sandstone"
       },
@@ -78,8 +78,8 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:blue_ice": 0.4,
           "minecraft:cave_air": 0.1,
+          "minecraft:blue_ice": 0.4,
           "minecraft:snow_block": 0.1
         },
         "defaultBlock": "minecraft:blue_ice"
@@ -128,30 +128,30 @@
       "mainSelector": {
         "entries": {
           "minecraft:white_terracotta": 0.05,
-          "minecraft:yellow_terracotta": 0.05,
-          "minecraft:cave_air": 0.2,
           "minecraft:orange_terracotta": 0.05,
-          "minecraft:brown_terracotta": 0.05
+          "minecraft:yellow_terracotta": 0.05,
+          "minecraft:brown_terracotta": 0.05,
+          "minecraft:cave_air": 0.2
         },
         "defaultBlock": "minecraft:dark_oak_planks"
       },
       "floorSelector": {
         "entries": {
           "minecraft:white_terracotta": 0.1,
-          "minecraft:yellow_terracotta": 0.1,
-          "minecraft:orange_terracotta": 0.1,
-          "minecraft:mossy_stone_bricks": 0.05,
-          "minecraft:brown_terracotta": 0.1,
           "minecraft:chiseled_stone_bricks": 0.05,
-          "minecraft:stone_bricks": 0.1
+          "minecraft:orange_terracotta": 0.1,
+          "minecraft:yellow_terracotta": 0.1,
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:brown_terracotta": 0.1,
+          "minecraft:mossy_stone_bricks": 0.05
         },
         "defaultBlock": "minecraft:dark_oak_planks"
       },
       "brickSelector": {
         "entries": {
-          "minecraft:mossy_stone_bricks": 0.33333,
           "minecraft:cracked_stone_bricks": 0.33333,
-          "minecraft:stone_bricks": 0.33333
+          "minecraft:stone_bricks": 0.33333,
+          "minecraft:mossy_stone_bricks": 0.33333
         },
         "defaultBlock": "minecraft:dark_oak_planks"
       },
@@ -185,31 +185,31 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:cave_air": 0.2,
-          "minecraft:mossy_stone_bricks": 0.2,
+          "minecraft:mossy_cobblestone": 0.1,
           "minecraft:cracked_stone_bricks": 0.05,
           "minecraft:chiseled_stone_bricks": 0.05,
-          "minecraft:mossy_cobblestone": 0.1,
-          "minecraft:stone_bricks": 0.05
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:mossy_stone_bricks": 0.2,
+          "minecraft:cave_air": 0.2
         },
         "defaultBlock": "minecraft:jungle_planks"
       },
       "floorSelector": {
         "entries": {
-          "minecraft:mossy_stone_bricks": 0.2,
+          "minecraft:mossy_cobblestone": 0.1,
           "minecraft:cracked_stone_bricks": 0.05,
           "minecraft:chiseled_stone_bricks": 0.05,
-          "minecraft:mossy_cobblestone": 0.1,
-          "minecraft:stone_bricks": 0.05
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:mossy_stone_bricks": 0.2
         },
         "defaultBlock": "minecraft:jungle_planks"
       },
       "brickSelector": {
         "entries": {
-          "minecraft:mossy_stone_bricks": 0.25,
           "minecraft:cracked_stone_bricks": 0.25,
           "minecraft:chiseled_stone_bricks": 0.25,
-          "minecraft:stone_bricks": 0.25
+          "minecraft:stone_bricks": 0.25,
+          "minecraft:mossy_stone_bricks": 0.25
         },
         "defaultBlock": "minecraft:jungle_planks"
       },
@@ -243,22 +243,22 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:cobblestone": 0.05,
+          "minecraft:cracked_stone_bricks": 0.1,
           "minecraft:packed_ice": 0.2,
           "minecraft:blue_ice": 0.1,
+          "minecraft:cobblestone": 0.05,
           "minecraft:cave_air": 0.2,
-          "minecraft:snow_block": 0.25,
-          "minecraft:cracked_stone_bricks": 0.1
+          "minecraft:snow_block": 0.25
         },
         "defaultBlock": "minecraft:spruce_planks"
       },
       "floorSelector": {
         "entries": {
-          "minecraft:cobblestone": 0.05,
+          "minecraft:cracked_stone_bricks": 0.1,
           "minecraft:packed_ice": 0.2,
           "minecraft:blue_ice": 0.1,
-          "minecraft:snow_block": 0.25,
-          "minecraft:cracked_stone_bricks": 0.1
+          "minecraft:cobblestone": 0.05,
+          "minecraft:snow_block": 0.25
         },
         "defaultBlock": "minecraft:spruce_planks"
       },
@@ -302,28 +302,28 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:cobblestone": 0.1,
-          "minecraft:cave_air": 0.2,
-          "minecraft:mossy_stone_bricks": 0.1,
           "minecraft:cracked_stone_bricks": 0.1,
-          "minecraft:stone_bricks": 0.1
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1,
+          "minecraft:cave_air": 0.2
         },
         "defaultBlock": "minecraft:spruce_planks"
       },
       "floorSelector": {
         "entries": {
-          "minecraft:cobblestone": 0.1,
-          "minecraft:mossy_stone_bricks": 0.1,
           "minecraft:cracked_stone_bricks": 0.1,
-          "minecraft:stone_bricks": 0.1
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1
         },
         "defaultBlock": "minecraft:spruce_planks"
       },
       "brickSelector": {
         "entries": {
-          "minecraft:mossy_stone_bricks": 0.33333,
           "minecraft:cracked_stone_bricks": 0.33333,
-          "minecraft:stone_bricks": 0.33333
+          "minecraft:stone_bricks": 0.33333,
+          "minecraft:mossy_stone_bricks": 0.33333
         },
         "defaultBlock": "minecraft:spruce_planks"
       },
@@ -359,31 +359,31 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:cave_air": 0.2,
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
           "minecraft:cut_sandstone": 0.1,
           "minecraft:smooth_sandstone": 0.1,
-          "minecraft:cracked_stone_bricks": 0.05,
-          "minecraft:chiseled_sandstone": 0.1,
-          "minecraft:stone_bricks": 0.05
+          "minecraft:cave_air": 0.2,
+          "minecraft:chiseled_sandstone": 0.1
         },
         "defaultBlock": "minecraft:sandstone"
       },
       "floorSelector": {
         "entries": {
-          "minecraft:cave_air": 0.2,
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
           "minecraft:cut_sandstone": 0.1,
           "minecraft:smooth_sandstone": 0.1,
-          "minecraft:cracked_stone_bricks": 0.05,
-          "minecraft:chiseled_sandstone": 0.1,
           "minecraft:sand": 0.3,
-          "minecraft:stone_bricks": 0.05
+          "minecraft:cave_air": 0.2,
+          "minecraft:chiseled_sandstone": 0.1
         },
         "defaultBlock": "minecraft:sandstone"
       },
       "brickSelector": {
         "entries": {
-          "minecraft:cut_sandstone": 0.2,
           "minecraft:sandstone": 0.5,
+          "minecraft:cut_sandstone": 0.2,
           "minecraft:smooth_sandstone": 0.2,
           "minecraft:chiseled_sandstone": 0.1
         },
@@ -391,8 +391,8 @@
       },
       "legSelector": {
         "entries": {
-          "minecraft:cut_sandstone": 0.2,
           "minecraft:sandstone": 0.5,
+          "minecraft:cut_sandstone": 0.2,
           "minecraft:smooth_sandstone": 0.2,
           "minecraft:chiseled_sandstone": 0.1
         },
@@ -422,29 +422,29 @@
       ],
       "mainSelector": {
         "entries": {
-          "minecraft:cobblestone": 0.1,
-          "minecraft:cave_air": 0.2,
-          "minecraft:mossy_stone_bricks": 0.1,
           "minecraft:cracked_stone_bricks": 0.1,
-          "minecraft:stone_bricks": 0.1
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1,
+          "minecraft:cave_air": 0.2
         },
         "defaultBlock": "minecraft:acacia_planks"
       },
       "floorSelector": {
         "entries": {
-          "minecraft:cobblestone": 0.1,
-          "minecraft:cave_air": 0.2,
-          "minecraft:mossy_stone_bricks": 0.1,
           "minecraft:cracked_stone_bricks": 0.1,
-          "minecraft:stone_bricks": 0.1
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1,
+          "minecraft:cave_air": 0.2
         },
         "defaultBlock": "minecraft:acacia_planks"
       },
       "brickSelector": {
         "entries": {
-          "minecraft:mossy_stone_bricks": 0.33333,
           "minecraft:cracked_stone_bricks": 0.33333,
-          "minecraft:stone_bricks": 0.33333
+          "minecraft:stone_bricks": 0.33333,
+          "minecraft:mossy_stone_bricks": 0.33333
         },
         "defaultBlock": "minecraft:acacia_planks"
       },
@@ -527,28 +527,28 @@
     "biomeTags": [],
     "mainSelector": {
       "entries": {
-        "minecraft:cobblestone": 0.1,
-        "minecraft:cave_air": 0.2,
-        "minecraft:mossy_stone_bricks": 0.1,
         "minecraft:cracked_stone_bricks": 0.1,
-        "minecraft:stone_bricks": 0.1
+        "minecraft:stone_bricks": 0.1,
+        "minecraft:cobblestone": 0.1,
+        "minecraft:mossy_stone_bricks": 0.1,
+        "minecraft:cave_air": 0.2
       },
       "defaultBlock": "minecraft:oak_planks"
     },
     "floorSelector": {
       "entries": {
-        "minecraft:cobblestone": 0.1,
-        "minecraft:mossy_stone_bricks": 0.1,
         "minecraft:cracked_stone_bricks": 0.1,
-        "minecraft:stone_bricks": 0.1
+        "minecraft:stone_bricks": 0.1,
+        "minecraft:cobblestone": 0.1,
+        "minecraft:mossy_stone_bricks": 0.1
       },
       "defaultBlock": "minecraft:oak_planks"
     },
     "brickSelector": {
       "entries": {
-        "minecraft:mossy_stone_bricks": 0.33333,
         "minecraft:cracked_stone_bricks": 0.33333,
-        "minecraft:stone_bricks": 0.33333
+        "minecraft:stone_bricks": 0.33333,
+        "minecraft:mossy_stone_bricks": 0.33333
       },
       "defaultBlock": "minecraft:oak_planks"
     },
