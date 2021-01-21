@@ -17,7 +17,8 @@ events.listen('item.tags', function (event) {
         .add('mythicbotany:alfsteel_ingot')
         .add('industrialforegoing:pink_slime_ingot')
         .add('occultism:iesnium_ingot')
-        .add('astralsorcery:starmetal_ingot');
+        .add('astralsorcery:starmetal_ingot')
+        .add('create:andesite_alloy');
 
     event.get('forge:ingots/copper').add('immersiveengineering:ingot_copper');
     event.get('forge:ingots/alfsteel').add('mythicbotany:alfsteel_ingot');
@@ -31,6 +32,7 @@ events.listen('item.tags', function (event) {
         .add('naturesaura:tainted_gold')
         .add('naturesaura:infused_iron');
     event.get('forge:ingots').add('botania:gaia_ingot');
+    event.add('forge:ingots/andesite_alloy', ['create:andesite_alloy']);
 
     event.get('forge:ingots/gold_brass').add('#forge:ingots/gold').add('#forge:ingots/brass');
     event.get('forge:ingots/gold_bronze').add('#forge:ingots/gold').add('#forge:ingots/bronze');
