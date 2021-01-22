@@ -1,10 +1,9 @@
 {
 	id: 3135,
 	filename: "create",
-	order_index: 14,
+	order_index: 0,
 	title: "Create",
 	icon: "create:cogwheel",
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -20,7 +19,9 @@
 				"",
 				"Your imagination is the limit. ",
 				"",
-				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. "
+				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. ",
+				"",
+				"~MuteTiefling"
 			],
 			id: 3136,
 			tasks: [{
@@ -36,6 +37,7 @@
 		},
 		{
 			title: "Rotational Force",
+			icon: "create:goggles",
 			x: 4.0d,
 			y: 2.0d,
 			subtitle: "Some Assembly Required",
@@ -56,7 +58,12 @@
 			min_width: 300,
 			id: 3258,
 			tasks: [{
-				id: 3260,
+				id: 3431,
+				type: "checkmark",
+				title: "Rotational Force"
+			}],
+			rewards: [{
+				id: 3430,
 				type: "item",
 				item: "create:goggles"
 			}]
@@ -100,17 +107,27 @@
 					count: 32L
 				}
 			],
-			rewards: [{
-				id: 3264,
-				type: "item",
-				item: {
-					id: "create:super_glue",
-					Count: true,
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: 3264,
+					type: "item",
+					item: {
+						id: "create:super_glue",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
 					}
+				},
+				{
+					id: 3445,
+					type: "command",
+					title: "Epic Create Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+					player_command: false
 				}
-			}]
+			]
 		},
 		{
 			x: 5.0d,
@@ -129,6 +146,14 @@
 				id: 3267,
 				type: "item",
 				item: "create:water_wheel"
+			}],
+			rewards: [{
+				id: 3444,
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -158,23 +183,24 @@
 				3324
 			],
 			id: 3268,
-			tasks: [
+			tasks: [{
+				id: 3269,
+				type: "item",
+				item: "create:encased_fan"
+			}],
+			rewards: [
 				{
-					id: 3269,
+					id: 3274,
 					type: "item",
-					item: "create:encased_fan"
+					item: "create:analog_lever"
 				},
 				{
-					id: 3275,
+					id: 3443,
 					type: "item",
-					item: "minecraft:magma_block"
+					item: "minecraft:magma_block",
+					count: 4
 				}
-			],
-			rewards: [{
-				id: 3274,
-				type: "item",
-				item: "create:analog_lever"
-			}]
+			]
 		},
 		{
 			icon: "create:flywheel",
@@ -200,9 +226,19 @@
 					id: 3272,
 					type: "item",
 					item: "create:flywheel"
+				}
+			],
+			rewards: [
+				{
+					id: 3446,
+					type: "command",
+					title: "Legendary Create Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+					player_command: false
 				},
 				{
-					id: 3273,
+					id: 3466,
 					type: "item",
 					item: "minecraft:blast_furnace"
 				}
@@ -225,7 +261,23 @@
 				type: "item",
 				item: "create:shaft",
 				count: 16L
-			}]
+			}],
+			rewards: [
+				{
+					id: 3449,
+					type: "command",
+					title: "Rare Create Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+					player_command: false
+				},
+				{
+					id: 3456,
+					type: "item",
+					item: "minecraft:kelp",
+					count: 16
+				}
+			]
 		},
 		{
 			x: 1.0d,
@@ -243,24 +295,51 @@
 			tasks: [{
 				id: 3279,
 				type: "item",
-				item: "create:andesite_casing"
+				item: "create:andesite_casing",
+				count: 4L
+			}],
+			rewards: [{
+				id: 3448,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
+			title: "Brackets",
 			x: 2.0d,
 			y: 2.5d,
 			subtitle: "Brace Yourselves",
 			description: [
 				"That’s a long run of shaft you’ve got there. Seems a little unsupported, no?",
 				"",
-				"Brackets are entirely decorative but can make your shaft network look a little more supported.  "
+				"Brackets are entirely decorative but can make your shaft network look much nicer."
 			],
 			dependencies: [I;3276],
 			id: 3280,
-			tasks: [{
-				id: 3281,
-				type: "item",
-				item: "create:wooden_bracket"
+			tasks: [
+				{
+					id: 3281,
+					type: "item",
+					item: "create:wooden_bracket",
+					count: 4L
+				},
+				{
+					id: 3467,
+					type: "item",
+					item: "create:metal_bracket",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: 3447,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -276,6 +355,14 @@
 				type: "item",
 				item: "create:cogwheel",
 				count: 4L
+			}],
+			rewards: [{
+				id: 3455,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -293,6 +380,14 @@
 				id: 3285,
 				type: "item",
 				item: "create:gearbox"
+			}],
+			rewards: [{
+				id: 3459,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -316,6 +411,14 @@
 				type: "item",
 				item: "create:large_cogwheel",
 				count: 4L
+			}],
+			rewards: [{
+				id: 3457,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -336,7 +439,16 @@
 			tasks: [{
 				id: 3289,
 				type: "item",
-				item: "create:belt_connector"
+				item: "create:belt_connector",
+				count: 4L
+			}],
+			rewards: [{
+				id: 3450,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -354,6 +466,14 @@
 				id: 3297,
 				type: "item",
 				item: "create:encased_chain_drive"
+			}],
+			rewards: [{
+				id: 3451,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -368,16 +488,24 @@
 			],
 			dependencies: [I;3286],
 			id: 3298,
-			tasks: [
+			tasks: [{
+				id: 3299,
+				type: "item",
+				item: "create:rotation_speed_controller"
+			}],
+			rewards: [
 				{
-					id: 3299,
-					type: "item",
-					item: "create:rotation_speed_controller"
-				},
-				{
-					id: 3300,
+					id: 3419,
 					type: "item",
 					item: "create:large_cogwheel"
+				},
+				{
+					id: 3420,
+					type: "command",
+					title: "Legendary Create Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+					player_command: false
 				}
 			]
 		},
@@ -396,6 +524,14 @@
 				id: 3302,
 				type: "item",
 				item: "create:andesite_funnel"
+			}],
+			rewards: [{
+				id: 3452,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -414,7 +550,8 @@
 			tasks: [{
 				id: 3304,
 				type: "item",
-				item: "create:chute"
+				item: "create:chute",
+				count: 4L
 			}],
 			rewards: [{
 				id: 3313,
@@ -437,6 +574,14 @@
 				id: 3306,
 				type: "item",
 				item: "create:andesite_tunnel"
+			}],
+			rewards: [{
+				id: 3453,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -450,6 +595,14 @@
 				id: 3310,
 				type: "item",
 				item: "create:brass_funnel"
+			}],
+			rewards: [{
+				id: 3417,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -469,6 +622,14 @@
 				id: 3312,
 				type: "item",
 				item: "create:brass_tunnel"
+			}],
+			rewards: [{
+				id: 3415,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -486,6 +647,14 @@
 				id: 3315,
 				type: "item",
 				item: "create:depot"
+			}],
+			rewards: [{
+				id: 3454,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -505,6 +674,14 @@
 				id: 3317,
 				type: "item",
 				item: "create:mechanical_arm"
+			}],
+			rewards: [{
+				id: 3416,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -522,6 +699,14 @@
 				id: 3325,
 				type: "item",
 				item: "create:millstone"
+			}],
+			rewards: [{
+				id: 3442,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -544,6 +729,14 @@
 				type: "item",
 				item: "create:crushing_wheel",
 				count: 2L
+			}],
+			rewards: [{
+				id: 3412,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -577,7 +770,15 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 3439,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			x: 8.0d,
@@ -596,13 +797,21 @@
 				id: 3331,
 				type: "item",
 				item: "create:electron_tube"
+			}],
+			rewards: [{
+				id: 3437,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			icon: "create:whisk",
 			x: 7.0d,
 			y: 2.0d,
-			subtitle: "Just a Little Something I Whipped up",
+			subtitle: "Just a Little Something I Whipped Up",
 			description: ["With some basic power and logistics under our belts, it’s time we get our hands dirty and get down to business. Create offers several new crafting mechanics that are important to understand to work with the mod. "],
 			dependencies: [I;3136],
 			id: 3332,
@@ -610,6 +819,14 @@
 				id: 3333,
 				type: "checkmark",
 				title: "Crafting"
+			}],
+			rewards: [{
+				id: 3432,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -633,6 +850,14 @@
 				id: 3335,
 				type: "item",
 				item: "create:mechanical_press"
+			}],
+			rewards: [{
+				id: 3441,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -658,7 +883,15 @@
 					type: "item",
 					item: "create:basin"
 				}
-			]
+			],
+			rewards: [{
+				id: 3440,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			x: 6.0d,
@@ -677,6 +910,14 @@
 				id: 3340,
 				type: "item",
 				item: "create:blaze_burner"
+			}],
+			rewards: [{
+				id: 3422,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -694,6 +935,14 @@
 				id: 3342,
 				type: "item",
 				item: "create:blaze_cake"
+			}],
+			rewards: [{
+				id: 3413,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -713,6 +962,14 @@
 				id: 3344,
 				type: "item",
 				item: "create:mechanical_pump"
+			}],
+			rewards: [{
+				id: 3460,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -725,7 +982,16 @@
 			tasks: [{
 				id: 3346,
 				type: "item",
-				item: "create:fluid_pipe"
+				item: "create:fluid_pipe",
+				count: 16L
+			}],
+			rewards: [{
+				id: 3461,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -747,7 +1013,15 @@
 					type: "item",
 					item: "create:copper_valve_handle"
 				}
-			]
+			],
+			rewards: [{
+				id: 3462,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			x: -2.0d,
@@ -760,6 +1034,14 @@
 				id: 3350,
 				type: "item",
 				item: "create:smart_fluid_pipe"
+			}],
+			rewards: [{
+				id: 3418,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -776,7 +1058,16 @@
 			tasks: [{
 				id: 3352,
 				type: "item",
-				item: "create:fluid_tank"
+				item: "create:fluid_tank",
+				count: 4L
+			}],
+			rewards: [{
+				id: 3465,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -805,7 +1096,15 @@
 					type: "item",
 					item: "create:crafter_slot_cover"
 				}
-			]
+			],
+			rewards: [{
+				id: 3438,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			icon: "create:polished_rose_quartz",
@@ -840,6 +1139,14 @@
 				id: 3364,
 				type: "item",
 				item: "create:spout"
+			}],
+			rewards: [{
+				id: 3463,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -915,6 +1222,11 @@
 			tasks: [{
 				id: 3372,
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: 3429,
+				type: "item",
+				item: "minecraft:minecart"
 			}]
 		},
 		{
@@ -929,16 +1241,25 @@
 			],
 			dependencies: [I;3371],
 			id: 3373,
-			tasks: [
+			tasks: [{
+				id: 3374,
+				type: "item",
+				item: "create:mechanical_piston"
+			}],
+			rewards: [
 				{
-					id: 3374,
-					type: "item",
-					item: "create:mechanical_piston"
+					id: 3433,
+					type: "command",
+					title: "Rare Create Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+					player_command: false
 				},
 				{
-					id: 3409,
+					id: 3468,
 					type: "item",
-					item: "create:piston_extension_pole"
+					item: "create:piston_extension_pole",
+					count: 8
 				}
 			]
 		},
@@ -961,6 +1282,14 @@
 				id: 3376,
 				type: "item",
 				item: "create:cart_assembler"
+			}],
+			rewards: [{
+				id: 3434,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -978,6 +1307,14 @@
 				id: 3378,
 				type: "item",
 				item: "create:mechanical_bearing"
+			}],
+			rewards: [{
+				id: 3435,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1018,7 +1355,15 @@
 					type: "item",
 					item: "create:linear_chassis"
 				}
-			]
+			],
+			rewards: [{
+				id: 3428,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			x: 14.5d,
@@ -1031,6 +1376,14 @@
 				id: 3387,
 				type: "item",
 				item: "create:mechanical_harvester"
+			}],
+			rewards: [{
+				id: 3424,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1044,18 +1397,39 @@
 				id: 3389,
 				type: "item",
 				item: "create:mechanical_drill"
+			}],
+			rewards: [{
+				id: 3425,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			x: 13.5d,
 			y: 7.0d,
 			subtitle: "A Groundbreaking Innovation",
+			description: [
+				"Ploughing Fields is hard work. Make a machine to do it for you!",
+				"",
+				"The Mechanical Plow is useful for more than simple farm maintenance, however, and can make a great addition to a moving minecart machine for pulling up extra track behind it."
+			],
 			dependencies: [I;3379],
 			id: 3390,
 			tasks: [{
 				id: 3391,
 				type: "item",
 				item: "create:mechanical_plough"
+			}],
+			rewards: [{
+				id: 3427,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1075,6 +1449,14 @@
 				id: 3393,
 				type: "item",
 				item: "create:mechanical_saw"
+			}],
+			rewards: [{
+				id: 3426,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1105,7 +1487,15 @@
 					type: "item",
 					item: "create:portable_storage_interface"
 				}
-			]
+			],
+			rewards: [{
+				id: 3423,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			x: 12.0d,
@@ -1124,6 +1514,14 @@
 				id: 3398,
 				type: "item",
 				item: "create:rope_pulley"
+			}],
+			rewards: [{
+				id: 3436,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1141,6 +1539,14 @@
 				id: 3400,
 				type: "item",
 				item: "create:adjustable_chain_gearshift"
+			}],
+			rewards: [{
+				id: 3421,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -1160,24 +1566,50 @@
 				id: 3402,
 				type: "item",
 				item: "create:hose_pulley"
+			}],
+			rewards: [{
+				id: 3464,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			x: -0.5d,
 			y: 2.5d,
 			subtitle: "Time to Switch Things Up",
+			description: [
+				"Need to reverse direction? Then the Gearshift is what you’re looking for. ",
+				"",
+				"Applying a Redstone signal to the block will cause the output side to start spinning in the opposite direction relative to the drive side. "
+			],
 			dependencies: [I;3282],
 			id: 3403,
 			tasks: [{
 				id: 3404,
 				type: "item",
 				item: "create:gearshift"
+			}],
+			rewards: [{
+				id: 3458,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			x: -1.0d,
 			y: 1.5d,
 			subtitle: "Going to Have to Stop You Right There",
+			description: [
+				"Quite the simple device, really. A Clutch disengages power on a shaft line, making for a simple on/off switch. ",
+				"",
+				"It could useful for more advanced contraptions that need precise timing, as well."
+			],
 			dependencies: [I;3282],
 			id: 3405,
 			tasks: [{
@@ -1201,6 +1633,14 @@
 				id: 3411,
 				type: "item",
 				item: "create:builders_tea"
+			}],
+			rewards: [{
+				id: 3414,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		}
 	]
