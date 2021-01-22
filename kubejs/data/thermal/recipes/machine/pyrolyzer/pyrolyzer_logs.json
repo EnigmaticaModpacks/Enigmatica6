@@ -1,0 +1,16 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+        "tag": "minecraft:logs"
+    },
+    "result": [
+        {
+            "item": "minecraft:charcoal"
+        },
+        {
+            "fluid": "immersiveengineering:creosote",
+            "amount": 125
+        }
+    ],
+    "experience": 0.15
+}
