@@ -4,7 +4,7 @@
     "sizeModifier": 1,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
-    "traits": ["nether", "wither"],
+    "traits": ["nether", "wither", "can_swim"],
     "baseLayerTexture": "other/obsidian",
     "ColorData": {
         "honeycombColor": "#663399",
@@ -28,14 +28,25 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+
         "mainOutput": "minecraft:obsidian",
         "mainOutputWeight": 0.1,
         "mainOutputCount": 3,
+
+        "secondaryOutput": "apotheosis:obsidian_arrow",
+        "secondaryOutputWeight": 0.02,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:obsidian_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
         "mainInputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:NETHER,OVERWORLD,END",
+        "biomeWhitelist": "tag:END",
+        "biomeBlacklist": "tag:NETHER,OVERWORLD",
         "minGroupSize": 1,
         "maxGroupSize": 2,
         "spawnWeight": 8

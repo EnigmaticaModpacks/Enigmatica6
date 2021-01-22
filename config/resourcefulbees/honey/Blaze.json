@@ -1,0 +1,17 @@
+{
+    "name" : "blaze",
+    "hunger": 3,
+    "honeyColor": "#fff32d",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:fire_resistance",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

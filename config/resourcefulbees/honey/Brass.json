@@ -1,0 +1,17 @@
+{
+    "name" : "brass",
+    "hunger": 3,
+    "honeyColor": "#998d38",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:saturation",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

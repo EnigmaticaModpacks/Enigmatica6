@@ -1,0 +1,53 @@
+{
+    "flower": "byg:soul_shroom",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["nether", "blaze", "can_swim"],
+    "baseLayerTexture": "other/boobee",
+    "ColorData": {
+        "honeycombColor": "#e9f3ea",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:netherrack",
+        "mutationOutput": "minecraft:tnt",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+        "mainOutput": "minecraft:ghast_tear",
+        "secondaryOutput": "minecraft:spectral_arrow",
+        "bottleOutput": "farmersdelight:milk_bottle",
+        "mainOutputWeight": 0.15,
+        "mainOutputCount": 2,
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:NETHER",
+        "biomeBlacklist": "tag:OVERWORLD,END",
+        "lightLevel": "NIGHT"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:ghast_tear",
+        "feedAmount": 24,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name" : "glowstone",
+    "hunger": 3,
+    "honeyColor": "#ffbc5e",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:night_vision",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }
