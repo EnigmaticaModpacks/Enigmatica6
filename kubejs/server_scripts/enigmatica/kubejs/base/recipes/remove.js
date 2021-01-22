@@ -1,6 +1,5 @@
 events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:combining' });
-    event.remove({ type: 'mekanism:crushing', input: 'minecraft:stone' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
     event.remove({ mod: 'prettypipes' });
@@ -71,6 +70,8 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
         'mapperbase:iron_rod',
+
+        'mekanism:crushing/stone/to_cobblestone',
 
         'morevanillalib:obsidian_shard',
 
