@@ -1,5 +1,6 @@
 events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:combining' });
+    event.remove({ type: 'mekanism:crushing', input: 'minecraft:stone' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
     event.remove({ mod: 'prettypipes' });
