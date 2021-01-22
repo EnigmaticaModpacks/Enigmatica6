@@ -1,0 +1,21 @@
+{
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+        "tag": "forge:gems/bitumen"
+    },
+    "result": [
+        {
+            "item": "emendatusenigmatica:coke_gem"
+        },
+        {
+            "item": "thermal:tar",
+            "chance": 0.5
+        },
+        {
+            "fluid": "thermal:heavy_oil",
+            "amount": 50
+        }
+    ],
+    "energy": 4000,
+    "experience": 0.15
+}

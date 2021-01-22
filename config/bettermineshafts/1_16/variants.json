@@ -1,0 +1,577 @@
+{
+  "variants": [
+    {
+      "biomeTags": [
+        [
+          "HOT",
+          "DRY",
+          "SANDY",
+          "RARE"
+        ],
+        [
+          "MESA",
+          "RARE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:cave_air": 0.2,
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.1,
+          "minecraft:smooth_red_sandstone": 0.1
+        },
+        "defaultBlock": "minecraft:red_sandstone"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:red_sand": 0.3,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.1,
+          "minecraft:smooth_red_sandstone": 0.1
+        },
+        "defaultBlock": "minecraft:red_sandstone"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:red_sandstone": 0.5,
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.2,
+          "minecraft:smooth_red_sandstone": 0.2
+        },
+        "defaultBlock": "minecraft:red_sandstone"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:red_sandstone": 0.5,
+          "minecraft:chiseled_red_sandstone": 0.1,
+          "minecraft:cut_red_sandstone": 0.2,
+          "minecraft:smooth_red_sandstone": 0.2
+        },
+        "defaultBlock": "minecraft:red_sandstone"
+      },
+      "mainBlock": "minecraft:red_sandstone",
+      "supportBlock": "minecraft:red_sandstone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "slabBlock": "minecraft:red_sandstone_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:red_sand",
+      "stoneWallBlock": "minecraft:red_sandstone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "stoneSlabBlock": "minecraft:red_sandstone_slab[type=top,waterlogged=false]",
+      "trapdoorBlock": "minecraft:dark_oak_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.1,
+      "snowChance": 0.0,
+      "cactusChance": 0.1,
+      "deadBushChance": 0.1,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": false,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "SNOWY",
+          "RARE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:cave_air": 0.1,
+          "minecraft:blue_ice": 0.4,
+          "minecraft:snow_block": 0.1
+        },
+        "defaultBlock": "minecraft:blue_ice"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:blue_ice": 0.2,
+          "minecraft:snow_block": 0.1
+        },
+        "defaultBlock": "minecraft:blue_ice"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:blue_ice": 0.5
+        },
+        "defaultBlock": "minecraft:blue_ice"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:blue_ice": 0.5
+        },
+        "defaultBlock": "minecraft:blue_ice"
+      },
+      "mainBlock": "minecraft:blue_ice",
+      "supportBlock": "minecraft:blue_ice",
+      "slabBlock": "minecraft:blue_ice",
+      "gravelBlock": "minecraft:snow_block",
+      "stoneWallBlock": "minecraft:blue_ice",
+      "stoneSlabBlock": "minecraft:blue_ice",
+      "trapdoorBlock": "minecraft:spruce_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.05,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 2,
+      "flammableLegs": false,
+      "replacementRate": 0.95
+    },
+    {
+      "biomeTags": [
+        [
+          "MESA"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:white_terracotta": 0.05,
+          "minecraft:orange_terracotta": 0.05,
+          "minecraft:yellow_terracotta": 0.05,
+          "minecraft:brown_terracotta": 0.05,
+          "minecraft:cave_air": 0.2
+        },
+        "defaultBlock": "minecraft:dark_oak_planks"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:white_terracotta": 0.1,
+          "minecraft:chiseled_stone_bricks": 0.05,
+          "minecraft:orange_terracotta": 0.1,
+          "minecraft:yellow_terracotta": 0.1,
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:brown_terracotta": 0.1,
+          "minecraft:mossy_stone_bricks": 0.05
+        },
+        "defaultBlock": "minecraft:dark_oak_planks"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.33333,
+          "minecraft:stone_bricks": 0.33333,
+          "minecraft:mossy_stone_bricks": 0.33333
+        },
+        "defaultBlock": "minecraft:dark_oak_planks"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stripped_dark_oak_log[axis=y]": 1.0
+        },
+        "defaultBlock": "minecraft:dark_oak_planks"
+      },
+      "mainBlock": "minecraft:dark_oak_planks",
+      "supportBlock": "minecraft:dark_oak_fence[east=false,north=false,south=false,waterlogged=false,west=false]",
+      "slabBlock": "minecraft:dark_oak_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "stoneSlabBlock": "minecraft:stone_brick_slab[type=top,waterlogged=false]",
+      "trapdoorBlock": "minecraft:dark_oak_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.15,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.1,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": true,
+      "replacementRate": 0.9
+    },
+    {
+      "biomeTags": [
+        [
+          "JUNGLE"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:mossy_cobblestone": 0.1,
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:chiseled_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:mossy_stone_bricks": 0.2,
+          "minecraft:cave_air": 0.2
+        },
+        "defaultBlock": "minecraft:jungle_planks"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:mossy_cobblestone": 0.1,
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:chiseled_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:mossy_stone_bricks": 0.2
+        },
+        "defaultBlock": "minecraft:jungle_planks"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.25,
+          "minecraft:chiseled_stone_bricks": 0.25,
+          "minecraft:stone_bricks": 0.25,
+          "minecraft:mossy_stone_bricks": 0.25
+        },
+        "defaultBlock": "minecraft:jungle_planks"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stripped_jungle_log[axis=y]": 1.0
+        },
+        "defaultBlock": "minecraft:jungle_planks"
+      },
+      "mainBlock": "minecraft:jungle_planks",
+      "supportBlock": "minecraft:jungle_fence[east=false,north=false,south=false,waterlogged=false,west=false]",
+      "slabBlock": "minecraft:jungle_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "stoneSlabBlock": "minecraft:stone_brick_slab[type=top,waterlogged=false]",
+      "trapdoorBlock": "minecraft:jungle_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.6,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": true,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "SNOWY"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.1,
+          "minecraft:packed_ice": 0.2,
+          "minecraft:blue_ice": 0.1,
+          "minecraft:cobblestone": 0.05,
+          "minecraft:cave_air": 0.2,
+          "minecraft:snow_block": 0.25
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.1,
+          "minecraft:packed_ice": 0.2,
+          "minecraft:blue_ice": 0.1,
+          "minecraft:cobblestone": 0.05,
+          "minecraft:snow_block": 0.25
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:packed_ice": 0.25,
+          "minecraft:blue_ice": 0.25,
+          "minecraft:snow_block": 0.5
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stripped_spruce_log[axis=y]": 1.0
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "mainBlock": "minecraft:spruce_planks",
+      "supportBlock": "minecraft:spruce_fence[east=false,north=false,south=false,waterlogged=false,west=false]",
+      "slabBlock": "minecraft:spruce_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:snow_block",
+      "stoneWallBlock": "minecraft:snow_block",
+      "stoneSlabBlock": "minecraft:snow_block",
+      "trapdoorBlock": "minecraft:spruce_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.2,
+      "snowChance": 1.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": true,
+      "replacementRate": 0.9
+    },
+    {
+      "biomeTags": [
+        [
+          "COLD",
+          "CONIFEROUS",
+          "FOREST"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.1,
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1,
+          "minecraft:cave_air": 0.2
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.1,
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.33333,
+          "minecraft:stone_bricks": 0.33333,
+          "minecraft:mossy_stone_bricks": 0.33333
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stripped_spruce_log[axis=y]": 1.0
+        },
+        "defaultBlock": "minecraft:spruce_planks"
+      },
+      "mainBlock": "minecraft:spruce_planks",
+      "supportBlock": "minecraft:spruce_fence[east=false,north=false,south=false,waterlogged=false,west=false]",
+      "slabBlock": "minecraft:spruce_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "stoneSlabBlock": "minecraft:stone_brick_slab[type=top,waterlogged=false]",
+      "trapdoorBlock": "minecraft:spruce_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.25,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": true,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "HOT",
+          "DRY",
+          "SANDY"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:cut_sandstone": 0.1,
+          "minecraft:smooth_sandstone": 0.1,
+          "minecraft:cave_air": 0.2,
+          "minecraft:chiseled_sandstone": 0.1
+        },
+        "defaultBlock": "minecraft:sandstone"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.05,
+          "minecraft:stone_bricks": 0.05,
+          "minecraft:cut_sandstone": 0.1,
+          "minecraft:smooth_sandstone": 0.1,
+          "minecraft:sand": 0.3,
+          "minecraft:cave_air": 0.2,
+          "minecraft:chiseled_sandstone": 0.1
+        },
+        "defaultBlock": "minecraft:sandstone"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:sandstone": 0.5,
+          "minecraft:cut_sandstone": 0.2,
+          "minecraft:smooth_sandstone": 0.2,
+          "minecraft:chiseled_sandstone": 0.1
+        },
+        "defaultBlock": "minecraft:sandstone"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:sandstone": 0.5,
+          "minecraft:cut_sandstone": 0.2,
+          "minecraft:smooth_sandstone": 0.2,
+          "minecraft:chiseled_sandstone": 0.1
+        },
+        "defaultBlock": "minecraft:sandstone"
+      },
+      "mainBlock": "minecraft:sandstone",
+      "supportBlock": "minecraft:sandstone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "slabBlock": "minecraft:sandstone_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:sand",
+      "stoneWallBlock": "minecraft:sandstone_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "stoneSlabBlock": "minecraft:sandstone_slab[type=top,waterlogged=false]",
+      "trapdoorBlock": "minecraft:oak_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.1,
+      "snowChance": 0.0,
+      "cactusChance": 0.1,
+      "deadBushChance": 0.1,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": false,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "SAVANNA"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.1,
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1,
+          "minecraft:cave_air": 0.2
+        },
+        "defaultBlock": "minecraft:acacia_planks"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.1,
+          "minecraft:stone_bricks": 0.1,
+          "minecraft:cobblestone": 0.1,
+          "minecraft:mossy_stone_bricks": 0.1,
+          "minecraft:cave_air": 0.2
+        },
+        "defaultBlock": "minecraft:acacia_planks"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:cracked_stone_bricks": 0.33333,
+          "minecraft:stone_bricks": 0.33333,
+          "minecraft:mossy_stone_bricks": 0.33333
+        },
+        "defaultBlock": "minecraft:acacia_planks"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:stripped_acacia_log[axis=y]": 1.0
+        },
+        "defaultBlock": "minecraft:acacia_planks"
+      },
+      "mainBlock": "minecraft:acacia_planks",
+      "supportBlock": "minecraft:acacia_fence[east=false,north=false,south=false,waterlogged=false,west=false]",
+      "slabBlock": "minecraft:acacia_slab[type=bottom,waterlogged=false]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+      "stoneSlabBlock": "minecraft:stone_brick_slab[type=top,waterlogged=false]",
+      "trapdoorBlock": "minecraft:acacia_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.25,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.0,
+      "legVariant": 1,
+      "flammableLegs": true,
+      "replacementRate": 0.6
+    },
+    {
+      "biomeTags": [
+        [
+          "MUSHROOM"
+        ]
+      ],
+      "mainSelector": {
+        "entries": {
+          "minecraft:mushroom_stem[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333,
+          "minecraft:brown_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333,
+          "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]"
+      },
+      "floorSelector": {
+        "entries": {
+          "minecraft:mycelium[snowy=false]": 1.0
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]"
+      },
+      "brickSelector": {
+        "entries": {
+          "minecraft:mushroom_stem[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333,
+          "minecraft:brown_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333,
+          "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]"
+      },
+      "legSelector": {
+        "entries": {
+          "minecraft:mushroom_stem[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333,
+          "minecraft:brown_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333,
+          "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]": 0.33333
+        },
+        "defaultBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]"
+      },
+      "mainBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]",
+      "supportBlock": "minecraft:mushroom_stem[down=true,east=true,north=true,south=true,up=true,west=true]",
+      "slabBlock": "minecraft:brown_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]",
+      "gravelBlock": "minecraft:gravel",
+      "stoneWallBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]",
+      "stoneSlabBlock": "minecraft:red_mushroom_block[down=true,east=true,north=true,south=true,up=true,west=true]",
+      "trapdoorBlock": "minecraft:oak_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+      "vineChance": 0.25,
+      "snowChance": 0.0,
+      "cactusChance": 0.0,
+      "deadBushChance": 0.0,
+      "mushroomChance": 0.4,
+      "legVariant": 2,
+      "flammableLegs": true,
+      "replacementRate": 0.95
+    }
+  ],
+  "defaultVariant": {
+    "biomeTags": [],
+    "mainSelector": {
+      "entries": {
+        "minecraft:cracked_stone_bricks": 0.1,
+        "minecraft:stone_bricks": 0.1,
+        "minecraft:cobblestone": 0.1,
+        "minecraft:mossy_stone_bricks": 0.1,
+        "minecraft:cave_air": 0.2
+      },
+      "defaultBlock": "minecraft:oak_planks"
+    },
+    "floorSelector": {
+      "entries": {
+        "minecraft:cracked_stone_bricks": 0.1,
+        "minecraft:stone_bricks": 0.1,
+        "minecraft:cobblestone": 0.1,
+        "minecraft:mossy_stone_bricks": 0.1
+      },
+      "defaultBlock": "minecraft:oak_planks"
+    },
+    "brickSelector": {
+      "entries": {
+        "minecraft:cracked_stone_bricks": 0.33333,
+        "minecraft:stone_bricks": 0.33333,
+        "minecraft:mossy_stone_bricks": 0.33333
+      },
+      "defaultBlock": "minecraft:oak_planks"
+    },
+    "legSelector": {
+      "entries": {
+        "minecraft:stripped_oak_log[axis=y]": 1.0
+      },
+      "defaultBlock": "minecraft:oak_planks"
+    },
+    "mainBlock": "minecraft:oak_planks",
+    "supportBlock": "minecraft:oak_fence[east=false,north=false,south=false,waterlogged=false,west=false]",
+    "slabBlock": "minecraft:oak_slab[type=bottom,waterlogged=false]",
+    "gravelBlock": "minecraft:gravel",
+    "stoneWallBlock": "minecraft:stone_brick_wall[east=none,north=none,south=none,up=true,waterlogged=false,west=none]",
+    "stoneSlabBlock": "minecraft:stone_brick_slab[type=top,waterlogged=false]",
+    "trapdoorBlock": "minecraft:oak_trapdoor[facing=north,half=bottom,open=false,powered=false,waterlogged=false]",
+    "vineChance": 0.25,
+    "snowChance": 0.0,
+    "cactusChance": 0.0,
+    "deadBushChance": 0.0,
+    "mushroomChance": 0.0,
+    "legVariant": 1,
+    "flammableLegs": true,
+    "replacementRate": 0.6
+  }
+}

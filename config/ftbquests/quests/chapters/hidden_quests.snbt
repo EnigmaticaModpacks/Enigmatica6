@@ -1,7 +1,7 @@
 {
 	id: 808,
 	filename: "hidden_quests",
-	order_index: 5,
+	order_index: 6,
 	title: "Hidden_Quests",
 	icon: "minecraft:experience_bottle",
 	always_invisible: true,
@@ -61,6 +61,26 @@
 				type: "advancement",
 				advancement: "tetra:spelunking/ancient_ruins",
 				criterion: ""
+			}]
+		},
+		{
+			x: -8.5d,
+			y: -6.5d,
+			description: [
+				"Only here to use as a hidden dependency for the powah power challenge quest, so we can hide it until it's actually completable",
+				"",
+				"Do not delete before that's the case"
+			],
+			id: 3384,
+			tasks: [{
+				id: 3385,
+				type: "checkmark",
+				title: "PowahChallengeTMP",
+				icon: {
+					id: "powah:battery_nitro",
+					Count: true,
+					tag: {}
+				}
 			}]
 		}
 	]

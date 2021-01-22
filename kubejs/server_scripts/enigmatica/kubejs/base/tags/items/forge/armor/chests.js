@@ -39,8 +39,11 @@ events.listen('item.tags', function (event) {
         'undergarden:cloggrum_chestplate',
         'undergarden:masticated_chestplate',
         'astralsorcery:mantle',
-        'bloodmagic:livingplate'
-
+        'bloodmagic:livingplate',
+        'alexsmobs:crocodile_chestplate',
+        'dustrial_decor:cardboard_chestplate',
+        'mekanismtools:steel_chestplate',
+        'eidolon:warlock_cloak'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/chest').add(items);

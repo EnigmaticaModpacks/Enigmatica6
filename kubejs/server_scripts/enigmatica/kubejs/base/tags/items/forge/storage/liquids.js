@@ -47,7 +47,14 @@ events.listen('item.tags', function (event) {
         'extrastorage:block_262144k_fluid',
         'extrastorage:block_65536k_fluid',
         'extrastorage:block_16384k_fluid',
-        'astralsorcery:chalice'
+        'astralsorcery:chalice',
+        'thermal:fluid_cell',
+        'industrialforegoing:supreme_black_hole_tank',
+        'industrialforegoing:pity_black_hole_tank',
+        'industrialforegoing:simple_black_hole_tank',
+        'industrialforegoing:advanced_black_hole_tank',
+        'industrialforegoing:common_black_hole_tank',
+        'industrialforegoing:black_hole_controller'
     ];
     event.get('forge:storage').add(items);
     event.get('forge:storage/liquid').add(items);

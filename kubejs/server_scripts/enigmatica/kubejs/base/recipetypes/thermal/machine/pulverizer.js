@@ -65,6 +65,70 @@ events.listen('recipes', function (event) {
                 input: '#forge:ores/mana',
                 experience: 0.2,
                 outputs: [item.of('emendatusenigmatica:arcane_gem', 2)]
+            },
+            {
+                input: 'byg:pink_sandstone',
+                outputs: [
+                    item.of('byg:pink_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'byg:purple_sandstone',
+                outputs: [
+                    item.of('byg:purple_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'byg:blue_sandstone',
+                outputs: [
+                    item.of('byg:blue_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'byg:white_sandstone',
+                outputs: [
+                    item.of('byg:white_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'byg:black_sandstone',
+                outputs: [
+                    item.of('byg:black_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'biomesoplenty:black_sandstone',
+                outputs: [
+                    item.of('biomesoplenty:black_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'biomesoplenty:orange_sandstone',
+                outputs: [
+                    item.of('biomesoplenty:orange_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'biomesoplenty:white_sandstone',
+                outputs: [
+                    item.of('biomesoplenty:white_sand', 2),
+                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                ],
+                experience: 0.2
             }
         ]
     };

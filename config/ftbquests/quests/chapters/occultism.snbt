@@ -1,0 +1,638 @@
+{
+	id: 3248,
+	filename: "occultism",
+	order_index: 1,
+	title: "Occultism WIP",
+	icon: {
+		id: "occultism:miner_djinni_ores",
+		Count: true,
+		tag: {
+			spiritName: "Drakarcark",
+			Damage: 0
+		}
+	},
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "We've Got Spirits!",
+			icon: "occultism:dictionary_of_spirits",
+			x: 7.5d,
+			y: 2.0d,
+			shape: "gear",
+			description: [
+				"With Occultism, you will learn to summon various otherworldly spirits to do your bidding! From the simple Foliot Ore Crushing Spirit for early ore doubling to the powerful Djinni Ore Miner to gather up all those valuable resources for you!",
+				"The Dictionary of Spirits has everything you need to get you started on your journey.",
+				"~The_Boo"
+			],
+			id: 3249,
+			tasks: [{
+				id: 3250,
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: 3251,
+					type: "item",
+					item: "occultism:dictionary_of_spirits"
+				},
+				{
+					id: 3252,
+					type: "item",
+					item: "occultism:datura_seeds"
+				}
+			]
+		},
+		{
+			title: "Maybe Just a Little...",
+			x: 7.5d,
+			y: 3.5d,
+			subtitle: "Unlock your Third Eye!",
+			description: [
+				"Eating just a piece of Demon's Dream Fruit can cause powerful short-term hallucinogenic effects! The Third Eye effect will allow you to see and interract with various otherworldly materials.",
+				"",
+				"You will find examples of these materials in lush underground groves disguised as common andesite and harmless oak trees.",
+				"",
+				"Please eat responsibly."
+			],
+			hide_dependency_lines: false,
+			dependencies: [I;3249],
+			id: 3253,
+			tasks: [{
+				id: 3254,
+				type: "item",
+				item: "occultism:datura"
+			}]
+		},
+		{
+			x: 11.0d,
+			y: 3.5d,
+			dependencies: [I;3253],
+			optional: true,
+			id: 3255,
+			tasks: [{
+				id: 3256,
+				type: "item",
+				item: {
+					id: "occultism:divination_rod",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			title: "We Don't Need No Water",
+			icon: "occultism:spirit_fire",
+			x: 7.5d,
+			y: 6.0d,
+			subtitle: "Let the mother trucker burn...",
+			description: [
+				"Spirit Fire is a special flame from the otherworld.",
+				"",
+				"To summon this otherworldly flame, throw a piece of Demon's Dream Fruit on the ground and set it ablaze using a flint and steel.",
+				"",
+				"This flame has the ability to remove the impurities from some items and impart otherworldly properties in to others.",
+				"",
+				"Burn mother trucker... burn..."
+			],
+			id: 3290,
+			tasks: [
+				{
+					id: 3292,
+					type: "item",
+					item: "occultism:spirit_attuned_gem"
+				},
+				{
+					id: 3293,
+					type: "item",
+					item: "occultism:otherstone"
+				}
+			],
+			rewards: [
+				{
+					id: 3294,
+					type: "item",
+					item: {
+						id: "occultism:otherstone",
+						Count: 8b
+					},
+					count: 8
+				},
+				{
+					id: 3295,
+					type: "item",
+					item: "occultism:spirit_attuned_gem",
+					count: 4
+				}
+			]
+		},
+		{
+			title: "I'm Crushing For You So Hard Right Now",
+			x: 2.0d,
+			y: 5.0d,
+			subtitle: "Your First Spirit Friend!!!",
+			description: [
+				"The Foliot Miner Spirit is the first spirit you have access to on your journey with the occult.",
+				"",
+				"This spirit will take your ores and chonky chunks and crush crush crush them in to dusts which you can smelt in to ingots.",
+				"",
+				"Our little spirit friend is very efficient at their job! Each ore/chunk you give it will result in 2 dusts which you can smelt in to ingots effectively doubling your ore count!",
+				"",
+				"While it does work hard, staying in this mortal realm is tough on our little friend. After awhile it will need to travel back to the other world where it will rest peacefully until you summon it again."
+			],
+			id: 3319,
+			tasks: [
+				{
+					id: 3320,
+					type: "advancement",
+					title: "Summon Foliot Crusher",
+					icon: {
+						id: "occultism:book_of_binding_bound_foliot",
+						Count: true,
+						tag: {
+							spiritName: "Reiirtron"
+						}
+					},
+					advancement: "occultism:summon_foliot_crusher",
+					criterion: ""
+				},
+				{
+					id: 3469,
+					type: "item",
+					item: "occultism:book_of_binding_foliot"
+				}
+			],
+			rewards: [{
+				id: 3323,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 0.0d,
+			id: 3472,
+			tasks: [{
+				id: 3473,
+				type: "item",
+				item: "occultism:iesnium_ore"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 2.0d,
+			id: 3474,
+			tasks: [{
+				id: 3475,
+				type: "item",
+				item: {
+					id: "occultism:butcher_knife",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 3.0d,
+			id: 3476,
+			tasks: [{
+				id: 3477,
+				type: "item",
+				item: "occultism:candle_white"
+			}]
+		},
+		{
+			x: 7.5d,
+			y: 7.5d,
+			id: 3478,
+			tasks: [{
+				id: 3479,
+				type: "item",
+				item: "occultism:purified_ink"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 3.0d,
+			id: 3480,
+			tasks: [{
+				id: 3481,
+				type: "item",
+				item: "occultism:chalk_white_impure"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.0d,
+			id: 3482,
+			tasks: [{
+				id: 3483,
+				type: "item",
+				item: {
+					id: "occultism:chalk_white",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 3.0d,
+			id: 3484,
+			tasks: [{
+				id: 3485,
+				type: "item",
+				item: {
+					id: "occultism:chalk_gold",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 3.0d,
+			id: 3486,
+			tasks: [{
+				id: 3487,
+				type: "item",
+				item: {
+					id: "occultism:chalk_purple",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 3.0d,
+			id: 3488,
+			tasks: [{
+				id: 3489,
+				type: "item",
+				item: {
+					id: "occultism:chalk_red",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 5.5d,
+			id: 3490,
+			tasks: [{
+				id: 3491,
+				type: "item",
+				item: "occultism:storage_controller_base"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 5.5d,
+			id: 3492,
+			tasks: [{
+				id: 3493,
+				type: "item",
+				item: "occultism:storage_controller"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 5.5d,
+			id: 3494,
+			tasks: [{
+				id: 3495,
+				type: "item",
+				item: {
+					id: "occultism:dimensional_matrix",
+					Count: true,
+					tag: {
+						spiritName: "Azaklorizur"
+					}
+				}
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 6.5d,
+			id: 3496,
+			tasks: [{
+				id: 3497,
+				type: "item",
+				item: "occultism:storage_stabilizer_tier1"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 6.5d,
+			id: 3498,
+			tasks: [{
+				id: 3499,
+				type: "item",
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 6.5d,
+			id: 3500,
+			tasks: [{
+				id: 3501,
+				type: "item",
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 6.5d,
+			id: 3502,
+			tasks: [{
+				id: 3503,
+				type: "item",
+				item: "occultism:storage_stabilizer_tier4"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 7.5d,
+			id: 3504,
+			tasks: [{
+				id: 3505,
+				type: "item",
+				item: "occultism:storage_remote_inert"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 7.5d,
+			id: 3506,
+			tasks: [{
+				id: 3507,
+				type: "item",
+				item: {
+					id: "occultism:storage_remote",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 7.5d,
+			id: 3508,
+			tasks: [{
+				id: 3509,
+				type: "item",
+				item: "occultism:otherstone_tablet"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 7.5d,
+			id: 3512,
+			tasks: [{
+				id: 3513,
+				type: "item",
+				item: "occultism:wormhole_frame"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 8.5d,
+			id: 3514,
+			tasks: [{
+				id: 3515,
+				type: "item",
+				item: {
+					id: "occultism:stable_wormhole",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -0.5d,
+			id: 3516,
+			tasks: [{
+				id: 3517,
+				type: "item",
+				item: {
+					id: "occultism:soul_gem",
+					Count: true,
+					tag: {}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -0.5d,
+			id: 3518,
+			tasks: [{
+				id: 3519,
+				type: "item",
+				item: {
+					id: "occultism:otherworld_goggles",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -0.5d,
+			id: 3520,
+			tasks: [{
+				id: 3521,
+				type: "item",
+				item: {
+					id: "occultism:satchel",
+					Count: true,
+					tag: {
+						spiritName: "Morredes"
+					}
+				}
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -0.5d,
+			id: 3522,
+			tasks: [{
+				id: 3523,
+				type: "item",
+				item: {
+					id: "occultism:iesnium_pickaxe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -2.5d,
+			id: 3524,
+			tasks: [{
+				id: 3525,
+				type: "kill",
+				icon: "minecraft:end_stone",
+				entity: "occultism:possessed_endermite",
+				value: 1L
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -2.5d,
+			id: 3526,
+			tasks: [{
+				id: 3527,
+				type: "kill",
+				icon: "minecraft:bone",
+				entity: "occultism:possessed_skeleton",
+				value: 1L
+			}]
+		},
+		{
+			x: 4.0d,
+			y: -2.5d,
+			id: 3528,
+			tasks: [{
+				id: 3529,
+				type: "kill",
+				icon: "minecraft:ender_pearl",
+				entity: "occultism:possessed_enderman",
+				value: 100L
+			}]
+		},
+		{
+			x: -5.5d,
+			y: 1.5d,
+			id: 3530,
+			tasks: [{
+				id: 3531,
+				type: "item",
+				item: "occultism:dimensional_mineshaft"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 1.5d,
+			id: 3532,
+			tasks: [{
+				id: 3533,
+				type: "item",
+				item: {
+					id: "occultism:miner_foliot_unspecialized",
+					Count: true,
+					tag: {
+						spiritName: "Raarcarc",
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 1.5d,
+			id: 3534,
+			tasks: [{
+				id: 3535,
+				type: "item",
+				item: {
+					id: "occultism:miner_djinni_ores",
+					Count: true,
+					tag: {
+						spiritName: "Crozerer",
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -0.5d,
+			y: -0.5d,
+			id: 3536,
+			tasks: [{
+				id: 3537,
+				type: "item",
+				item: {
+					id: "occultism:infused_pickaxe",
+					Count: true,
+					tag: {
+						spiritName: "Raslamarmed",
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 3.0d,
+			id: 3538,
+			tasks: [{
+				id: 3539,
+				type: "item",
+				item: "occultism:spirit_attuned_crystal"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 0.0d,
+			id: 3540,
+			tasks: [{
+				id: 3541,
+				type: "item",
+				item: "occultism:otherworld_sapling"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 4.0d,
+			id: 3542,
+			tasks: [{
+				id: 3543,
+				type: "item",
+				item: "occultism:sacrificial_bowl"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 4.0d,
+			id: 3544,
+			tasks: [{
+				id: 3545,
+				type: "item",
+				item: "occultism:golden_sacrificial_bowl"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -0.5d,
+			id: 3546,
+			tasks: [{
+				id: 3547,
+				type: "item",
+				item: "occultism:brush"
+			}]
+		}
+	]
+}

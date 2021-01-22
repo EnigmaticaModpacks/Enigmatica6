@@ -1,7 +1,7 @@
 {
 	id: 366,
 	filename: "powah",
-	order_index: 11,
+	order_index: 12,
 	title: "Powah!",
 	icon: "powah:dielectric_casing",
 	default_quest_shape: "",
@@ -909,7 +909,11 @@
 				"Don't cheat - I know you want to use Mekanism. I challenge you to only generate this billion using Powah alone for energy generation.",
 				"You can do it! Good luck!"
 			],
-			dependencies: [I;392],
+			dependencies: [I;
+				392,
+				3384
+			],
+			hide: true,
 			optional: true,
 			id: 430,
 			tasks: [{

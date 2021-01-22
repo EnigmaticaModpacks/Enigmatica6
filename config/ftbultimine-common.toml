@@ -7,7 +7,7 @@ exhaustion_per_block = 25.0
 #Doesn't stop at different types of stones
 merge_stone = false
 #Tools that won't let you active ultimine when held
-tool_blacklist = ["mininggadgets:mininggadget"]
+tool_blacklist = ["mininggadgets:mininggadget", "ars_nouveau:wand", "ars_nouveau:novice_spell_book", "ars_nouveau:creative_spell_book", "ars_nouveau:archmage_spell_book", "ars_nouveau:apprentice_spell_book"]
 #Required for some modpacks
 #Range: -1 ~ 8
 render_text_manually = -1

@@ -33,7 +33,8 @@ events.listen('item.tags', function (event) {
         'aiotbotania:terra_aiot',
         'undergarden:utheric_hoe',
         'undergarden:froststeel_hoe',
-        'undergarden:cloggrum_hoe'
+        'undergarden:cloggrum_hoe',
+        'undergarden:forgotten_hoe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/hoe').add(items);

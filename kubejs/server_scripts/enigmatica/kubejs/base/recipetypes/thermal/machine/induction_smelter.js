@@ -2,7 +2,7 @@ events.listen('recipes', function (event) {
     var data = {
         recipes: [
             {
-                input: '#forge:ores/nickel',
+                inputs: ['#forge:ores/nickel'],
                 experience: 0.2,
                 outputs: [
                     item.of('emendatusenigmatica:nickel_ingot'),
@@ -11,7 +11,7 @@ events.listen('recipes', function (event) {
                 ]
             },
             {
-                input: '#forge:ores/aluminum',
+                inputs: ['#forge:ores/aluminum'],
                 experience: 0.2,
                 outputs: [
                     item.of('emendatusenigmatica:aluminum_ingot'),
@@ -20,7 +20,7 @@ events.listen('recipes', function (event) {
                 ]
             },
             {
-                input: '#forge:ores/uranium',
+                inputs: ['#forge:ores/uranium'],
                 experience: 0.2,
                 outputs: [
                     item.of('emendatusenigmatica:uranium_ingot'),
@@ -29,7 +29,7 @@ events.listen('recipes', function (event) {
                 ]
             },
             {
-                input: '#forge:ores/osmium',
+                inputs: ['#forge:ores/osmium'],
                 experience: 0.2,
                 outputs: [
                     item.of('emendatusenigmatica:osmium_ingot'),
@@ -38,29 +38,28 @@ events.listen('recipes', function (event) {
                 ]
             },
             {
-                input: '#forge:ores/zinc',
+                inputs: ['#forge:ores/zinc'],
                 experience: 0.2,
                 outputs: [
                     item.of('emendatusenigmatica:zinc_ingot'),
                     item.of('minecraft:gold_ingot').chance(0.1),
                     item.of('thermal:rich_slag').chance(0.2)
                 ]
+            },
+            {
+                inputs: [item.of('minecraft:netherite_scrap', 4), item.of('minecraft:gold_ingot', 2)],
+                experience: 0.2,
+                outputs: ['minecraft:netherite_ingot']
+            },
+            {
+                inputs: [item.of('minecraft:iron_ingot', 1), ingredient.of('#forge:dusts/coal_coke', 1)],
+                experience: 0.2,
+                outputs: ['emendatusenigmatica:steel_ingot']
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.remove({
-            input: recipe.input,
-            type: 'thermal:smelter'
-        });
-        event.recipes.thermal.smelter(recipe.outputs, recipe.input).experience(recipe.experience);
+        event.recipes.thermal.smelter(recipe.outputs, recipe.inputs).experience(recipe.experience);
     });
-
-    event.recipes.thermal
-        .smelter('minecraft:netherite_ingot', [
-            item.of('minecraft:netherite_scrap', 4),
-            item.of('minecraft:gold_ingot', 2)
-        ])
-        .experience(0.2);
 });

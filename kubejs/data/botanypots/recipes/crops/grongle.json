@@ -1,0 +1,39 @@
+{
+    "type": "botanypots:crop",
+    "seed": {
+        "item": "undergarden:gronglet"
+    },
+    "categories": [
+        "deepturf"
+    ],
+    "growthTicks": 2400,
+    "display": {
+        "block": "undergarden:gronglet"
+    },
+    "results": [
+        {
+            "chance": 0.50,
+            "output": {
+                "item": "undergarden:grongle_stem"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        },
+        {
+            "chance": 0.1,
+            "output": {
+                "item": "undergarden:twistytwig"
+            },
+            "minRolls": 1,
+            "maxRolls": 2
+        },
+        {
+            "chance": 0.05,
+            "output": {
+                "item": "undergarden:gronglet"
+            },
+            "minRolls": 1,
+            "maxRolls": 1
+        }
+    ]
+}

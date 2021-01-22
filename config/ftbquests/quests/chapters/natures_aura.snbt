@@ -1,7 +1,7 @@
 {
 	id: 158,
 	filename: "natures_aura",
-	order_index: 22,
+	order_index: 24,
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
 	default_quest_shape: "",
@@ -422,7 +422,7 @@
 			y: -14.0d,
 			subtitle: "Give And Take",
 			description: [
-				"The trees grown from Ancient Saplings server two primary purposes. ",
+				"The trees grown from Ancient Saplings serve two primary purposes. ",
 				"",
 				"First, they allow you to replenish the Aura in an area. ",
 				"",
@@ -826,7 +826,7 @@
 				"",
 				"An Item Frame can be used to alter their behavior as well: ",
 				"● Place shears in the frame to cause them to shear leaves and grass. ",
-				"● Place a shovel in the frame to allow them to pick up snow. (To Be Confirmed)",
+				"● Place a shovel in the frame to allow them to pick up snow.",
 				"● Place a Silk Touch pick in the frame to grant them the ability to silk touch blocks. "
 			],
 			hide_dependency_lines: true,
@@ -1017,7 +1017,7 @@
 			description: [
 				"This basic Aura generator devours flowers nearby to replenish the surrounding Aura. ",
 				"",
-				"Be careful, as it will eat any flower. Feeding it a variety of flowers is key to better Aura generation."
+				"Be careful, as it will eat any small flower. Feeding it a variety of flowers is key to better Aura generation."
 			],
 			dependencies: [I;705],
 			id: 786,

@@ -16,7 +16,7 @@
 	###########################################################################################################
 	["Better Caves"."Bedrock Generation"]
 		# Replaces the usual bedrock generation pattern with flat layers.
-		#     Activates in all whitelisted dimension, where applicable. The End is unaffected.
+		#     Activates in all whitelisted dimensions.
 		# Default: true
 		"Flatten Bedrock" = true
 		# The width of the bedrock layer. Only works if Flatten Bedrock is true.
@@ -87,8 +87,7 @@
 			#Range: 0.0 ~ 100.0
 			"Cave Spawn Chance" = 100.0
 			# Determines how large cave regions are.
-			#     Controls how long a cave system of a certain cave type extends before intersecting with a cave system of another type.
-			#     Larger = more cave interconnectivity for a given area, but less variation.
+			#     Controls the average size of a cave system.
 			# Accepted values: Small, Medium, Large, ExtraLarge, Custom
 			# Default: Small (recommended).
 			"Cave Region Size" = "Small"

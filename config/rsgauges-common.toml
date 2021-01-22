@@ -1,1 +1,40 @@
 
+#Settings affecting the logical server side, but are also configurable in single player.
+[server]
+
+	#Opt-out settings
+	[server.optout]
+		#Opt-out any block by its registry name ('*' wildcard matching, comma separated list, whitespaces ignored. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' excludes everything that has 'wood' or 'steel' in the registry name. The matching result is also traced in the log file. 
+		pattern_excludes = ""
+		#Prevent blocks from being opt'ed by registry name ('*' wildcard matching, comma separated list, whitespaces ignored. Evaluated before all other opt-out checks. You must match the whole name, means maybe add '*' also at the begin and end. Example: '*wood*,*steel*' includes everything that has 'wood' or 'steel' in the registry name.The matching result is also traced in the log file.
+		pattern_includes = ""
+		#Disables switch remote linking.
+		without_switch_linking = false
+
+	#Miscellaneous settings
+	[server.miscellaneous]
+		#Enables experimental features. Use at own risk.
+		with_experimental = false
+		#Defines how far you or a link source switch can be away from the target to activate it. The value 0 means 'no limitation',  as long as the target chunk is loaded.
+		#Range: 0 ~ 64
+		max_switch_linking_distance = 48
+		#Comma separated list of items names that can be used alter configurable blocks of this mod. This applies when the display side of the block is right click (activated) with the item in the main hand.
+		accepted_wrenches = "minecraft:redstone_torch,immersiveengineering:screwdriver,immersiveengineering:hammer"
+		#Enable detailed logging of the config values and resulting calculations in each mod feature config.
+		with_config_logging = false
+
+	#Settings to tweak the performance, or use cases normally no change should be required here.
+	[server.tweaks]
+		#Gauges shall not frequently lookup weak power provided to the block they are attached to.
+		without_gauge_weak_power_measurement = false
+		#Sample interval of the gauges in ticks. Lower values decrease the display latency for indirect weak power measurements. Minor performance impact for values >= 5.
+		#Range: 2 ~ 100
+		gauge_update_interval = 8
+		#Sample interval of volume sensing automatic switches in ticks (e.g infrared motion detector). Lower values make the switches reacting faster, but also have an impact on the server performance due to ray tracing.
+		#Range: 5 ~ 50
+		autoswitch_volumetric_update_interval = 10
+		#Sample interval of the linear switches in ticks (like laser pointer based sensors). Lower values make the switches reacting faster, but also have an impact on the server performance due to ray tracing. Has much less impact
+		#as the volumetric autoswitch interval.
+		#Range: 1 ~ 50
+		autoswitch_linear_update_interval = 4
+

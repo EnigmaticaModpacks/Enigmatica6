@@ -1,0 +1,25 @@
+
+[general]
+	#Maximum distance a Ping can be from you and still be received
+	#Range: 0.0 ~ 255.0
+	pingAcceptDistance = 64.0
+	#How many ticks a Ping should remain active before disappearing
+	#Range: 0 ~ 2147483646
+	pingDuration = 250
+	#Whether to play a sound when a Ping is received
+	sound = true
+
+[visual]
+	#Whether to render a colored overlay on the Pinged block
+	blockOverlay = true
+	#Whether to render the Ping Menu background
+	menuBackground = true
+
+	[visual.pingColor]
+		#Range: 0 ~ 255
+		red = 255
+		#Range: 0 ~ 255
+		green = 0
+		#Range: 0 ~ 255
+		blue = 0
+

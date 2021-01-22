@@ -1,5 +1,6 @@
 events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:combining' });
+    event.remove({ type: 'mekanism:crushing', input: 'minecraft:stone' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
     event.remove({ mod: 'prettypipes' });
@@ -16,7 +17,7 @@ events.listen('recipes', function (event) {
 
         'decorative_blocks:lattice',
 
-        //'akashictome:tome',
+        'akashictome:tome',
 
         'magicfeather:magicfeather',
 
@@ -112,7 +113,7 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
-        output: '/\\w+:\\w+_gear/',
+        output: '/\\w+:\\w+_gear$/',
         type: 'minecraft:crafting_shaped'
     });
 
@@ -153,5 +154,26 @@ events.listen('recipes', function (event) {
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
+    });
+
+    event.remove({
+        input: '#forge:ores/zinc',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/osmium',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/uranium',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/aluminum',
+        type: 'thermal:smelter'
+    });
+    event.remove({
+        input: '#forge:ores/nickel',
+        type: 'thermal:smelter'
     });
 });

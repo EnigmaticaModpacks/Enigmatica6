@@ -1,0 +1,4 @@
+#If true, enables the Mantle heart renderer, which stacks hearts by changing the color instead of vertically stacking them.
+#Mod authors: this config is not meant for compatibility with your heart renderer, cancel the RenderGameOverlayEvent.Pre event and our logic won't run
+extraHeartRenderer = true
+
