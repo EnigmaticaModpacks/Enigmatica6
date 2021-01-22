@@ -4,7 +4,7 @@
     "sizeModifier": 2,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
-    "traits": ["nether"],
+    "traits": ["nether", "blaze", "can_swim"],
     "baseLayerTexture": "other/ghast",
     "ColorData": {
         "honeycombColor": "#faebd7",
@@ -27,9 +27,19 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+
         "mainOutput": "minecraft:ghast_tear",
         "mainOutputWeight": 0.15,
         "mainOutputCount": 2,
+
+        "secondaryOutput": "emendatusenigmatica:potassium_nitrate_gem",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
         "mainInputCount": 1
     },
     "SpawnData": {

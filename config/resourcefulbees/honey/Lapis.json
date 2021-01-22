@@ -1,0 +1,17 @@
+{
+    "name" : "lapis",
+    "hunger": 3,
+    "honeyColor": "#345ec3",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:luck",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

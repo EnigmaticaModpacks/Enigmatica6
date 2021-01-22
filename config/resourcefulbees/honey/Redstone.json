@@ -1,0 +1,17 @@
+{
+    "name" : "redstone",
+    "hunger": 3,
+    "honeyColor": "#aa0f01",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:haste",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

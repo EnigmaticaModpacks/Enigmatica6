@@ -1,0 +1,17 @@
+{
+    "name" : "water",
+    "hunger": 3,
+    "honeyColor": "#5979ef",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:water_breathing",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }
