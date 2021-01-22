@@ -1,0 +1,17 @@
+{
+    "name" : "gold",
+    "hunger": 3,
+    "honeyColor": "#ffdc00",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:regeneration",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

@@ -1,54 +1,65 @@
 {
-  "flower": "ALL",
-  "maxTimeInHive": 3600,
-  "sizeModifier": 1,
-  "hasHoneycomb": true,
-  "apiaryOutputAmounts": [3, 6, 1, 2],
-  "baseLayerTexture": "ores/aluminum/aluminum_bee",
-  "ColorData": {
-    "honeycombColor": "#dce6f7",
-    "isBeeColored": false,
-    "isRainbowBee": false,
-    "isGlowing": false,
-    "isEnchanted": false,
-    "modelType": "ORE"
-  },
-  "CombatData": {
-    "isPassive": false,
-    "removeStingerOnAttack": true,
-    "inflictsPoison": true,
-    "attackDamage": 1
-  },
-  "MutationData": {
-    "hasMutation": true,
-    "mutationInput": "tag:forge:stone",
-    "mutationOutput": "emendatusenigmatica:aluminum_ore",
-    "mutationType": "BLOCK_TO_BLOCK"
-  },
-  "CentrifugeData": {
-    "hasCentrifugeOutput": true,
-    "mainOutput": "emendatusenigmatica:aluminum_ingot",
-    "mainOutputWeight": 0.1,
-    "mainOutputCount": 2,
-    "mainInputCount": 1
-  },
-  "SpawnData": {
-    "canSpawnInWorld": true,
-    "biomeWhitelist": "tag:OVERWORLD",
-    "biomeBlacklist": "tag:OCEAN",
-    "minGroupSize": 1,
-    "maxGroupSize": 2,
-    "spawnWeight": 2,
-    "lightLevel": "DAY"
-  },
-  "BreedData": {
-    "isBreedable": true,
-    "feedItem": "tag:forge:storage_blocks/aluminum",
-    "feedAmount": 4,
-    "childGrowthDelay": -24000,
-    "breedDelay": 6000
-  },
-  "TraitData": {
-    "hasTraits": false
-  }
+    "flower": "ALL",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["can_swim"],
+    "baseLayerTexture": "ores/aluminum/aluminum_bee",
+    "ColorData": {
+        "honeycombColor": "#dce6f7",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutationInput": "tag:forge:stone",
+        "mutationOutput": "emendatusenigmatica:aluminum_ore",
+        "mutationType": "BLOCK_TO_BLOCK"
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:aluminum_ingot",
+        "mainOutputWeight": 0.1,
+        "mainOutputCount": 2,
+
+        "secondaryOutput": "minecraft:iron_nugget",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:ALUMINUM",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
+        "spawnWeight": 2,
+        "lightLevel": "DAY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:storage_blocks/aluminum",
+        "feedAmount": 4,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": false
+    }
 }
