@@ -11,7 +11,11 @@ events.listen('jei.hide.items', (event) => {
             'occultism:' + material + '_block',
             'immersiveengineering:ingot_' + material,
             'immersiveengineering:dust_' + material,
-            'immersiveengineering:nugget_' + material
+            'immersiveengineering:nugget_' + material,
+            'mekanism:nugget_' + material,
+            'mekanism:dust_' + material,
+            'mekanism:ingot_' + material,
+            'mekanism:block_' + material
         );
     });
 
@@ -55,11 +59,8 @@ events.listen('jei.hide.items', (event) => {
         /tmechworks:\w+_nugget/,
         /tmechworks:\w+_ore/,
         /pedestals:dust/,
-        /mekanism:\w+_gem/,
         /mekanism:\w+_ore/,
-        /mekanism:dust_/,
-        /mekanism:ingot_/,
-        /mekanism:nugget_/,
+
         /minecraft:\w+_ore/,
 
         /immersiveengineering:plate_/,
