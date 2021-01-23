@@ -1,9 +1,102 @@
 {
 	id: 150,
 	filename: "building",
-	order_index: 5,
+	order_index: 4,
 	title: "Building",
 	icon: "mcwwindows:oak_plank_window2_2tall",
+	always_invisible: true,
 	default_quest_shape: "",
-	quests: []
+	quests: [
+		{
+			title: "Building",
+			x: 0.0d,
+			y: 0.0d,
+			description: ["This chapter highlights some of the building materials you have available."],
+			id: 3615,
+			tasks: [{
+				id: 3616,
+				type: "checkmark",
+				title: "Building",
+				icon: "minecraft:glass"
+			}]
+		},
+		{
+			title: "Macaw's Bridges",
+			x: 0.0d,
+			y: -2.0d,
+			dependencies: [I;3615],
+			id: 3626,
+			tasks: [{
+				id: 3627,
+				type: "item",
+				item: "mcwbridges:rope_oak_bridge"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: -2.5d,
+			dependencies: [I;3615],
+			id: 3630,
+			tasks: [{
+				id: 3631,
+				type: "item",
+				item: "mcwdoors:oak_japanese_door"
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -2.5d,
+			dependencies: [I;3615],
+			id: 3632,
+			tasks: [{
+				id: 3633,
+				type: "item",
+				item: "mcwroofs:oak_attic_roof"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: -3.0d,
+			dependencies: [I;3615],
+			id: 3634,
+			tasks: [{
+				id: 3635,
+				type: "item",
+				item: "mcwwindows:oak_window"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -3.0d,
+			dependencies: [I;3615],
+			id: 3636,
+			tasks: [{
+				id: 3637,
+				type: "item",
+				item: "mcwtrpdoors:oak_glass_trapdoor"
+			}]
+		},
+		{
+			title: "EmbellishCraft",
+			x: 1.5d,
+			y: 0.0d,
+			id: 3640,
+			tasks: [{
+				id: 3641,
+				type: "item",
+				item: "embellishcraft:iron_beam"
+			}]
+		},
+		{
+			title: "Builders Crafts and Additions",
+			x: 1.0d,
+			y: 1.0d,
+			id: 3643,
+			tasks: [{
+				id: 3644,
+				type: "item",
+				item: "buildersaddition:counter_oak_andesite"
+			}]
+		}
+	]
 }
