@@ -64,9 +64,6 @@ events.listen('jei.hide.items', (event) => {
 
         /immersiveengineering:plate_/,
         /immersiveengineering:stick_/,
-        /bloodmagic:\w+fragment/,
-        /bloodmagic:\w+gravel/,
-        /bloodmagic:\w+sand/,
         /create:\w+_sheet/,
         /create:\w+_nugget/,
         /create:\w+_ingot/,
