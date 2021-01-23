@@ -86,5 +86,6 @@ events.listen('jei.hide.items', (event) => {
 });
 
 onEvent('jei.hide.fluids', (event) => {
-    event.hide(['create:honey', 'cofh_core:honey']);
+    event.hide('cofh_core:honey');
+    event.hide('create:honey');
 });
