@@ -347,6 +347,12 @@ events.listen('recipes', function (event) {
         item.of('minecraft:potion', { Potion: 'minecraft:water' })
     );
 
+    event.replaceInput(
+        { id: 'create:mixing/chromatic_compound' },
+        'create:powdered_obsidian',
+        ingredient.of('#forge:dusts/obsidian')
+    );
+
     //TODO: Remove in 0.4.0
     event.replaceInput({ id: 'quantumstorage:chestgold' }, 'quantumstorage:chestiron', '#forge:storage_blocks/iron');
     event.replaceInput({ id: 'quantumstorage:chestdiamond' }, 'quantumstorage:chestgold', '#forge:storage_blocks/gold');
