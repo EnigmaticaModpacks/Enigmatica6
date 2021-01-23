@@ -12,6 +12,8 @@ events.listen('recipes', function (event) {
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
 
+        'create:crushing/obsidian',
+
         'craftingstation:crafting_station',
 
         'decorative_blocks:lattice',
