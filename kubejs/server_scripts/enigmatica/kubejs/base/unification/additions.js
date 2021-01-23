@@ -6,8 +6,6 @@ events.listen('recipes', function (event) {
         var gem = getPreferredItemInTag(ingredient.of('#forge:gems/' + material)).id;
 
         var crushedOre = getPreferredItemInTag(ingredient.of('#create:crushed_ores/' + material)).id;
-        var clump = getPreferredItemInTag(ingredient.of('#mekanism:clumps/' + material)).id;
-        var dirtyDust = getPreferredItemInTag(ingredient.of('#mekanism:dirty_dusts/' + material)).id;
         var dust = getPreferredItemInTag(ingredient.of('#forge:dusts/' + material)).id;
 
         var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
@@ -21,7 +19,7 @@ events.listen('recipes', function (event) {
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem);
 
         bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem);
-        bloodmagic_ore_processing_arc(event, material, ore, ingot, clump, dirtyDust, dust, gem);
+        bloodmagic_ore_processing_arc(event, material, ore, dust, gem);
 
         create_ore_processing_with_secondary_outputs(event, material, crushedOre);
         create_gem_processing(event, material, ore, gem, dust);
@@ -61,7 +59,7 @@ function gear_unification(event, material, ingot, gem, gear) {
         return;
     }
 
-    var output = item.of(gear, 4),
+    var output = gear,
         input,
         mold = 'immersiveengineering:mold_gear';
 
@@ -76,7 +74,7 @@ function gear_unification(event, material, ingot, gem, gear) {
     // Implemented by Thermal
     // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
-    event.recipes.immersiveengineering.metal_press(output, input, mold);
+    event.recipes.immersiveengineering.metal_press(output, ingredient.of(input, 4), mold);
     event.shaped(gear, [' B ', 'BAB', ' B '], {
         A: '#forge:nuggets/iron',
         B: input
@@ -153,29 +151,17 @@ function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem) 
 }
 
 function bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem) {
-    if (ore == air || material == 'iron' || material == 'gold') {
+    if (ore == air || gem == air) {
         return;
     }
 
     var inputs = ['#forge:ores/' + material, '#bloodmagic:arc/cuttingfluid'],
-        output,
-        count = 2;
-
-    if (gem != air) {
-        output = item.of(gem, count);
-    } else if (dust != air) {
-        output = item.of(dust, count);
-    } else {
-        return;
-    }
+        output = item.of(gem, 2);
 
     event.recipes.bloodmagic.alchemytable(output, inputs).syphon(400).ticks(200).upgradeLevel(1);
 }
 
-function bloodmagic_ore_processing_arc(event, material, ore, ingot, clump, dirtyDust, dust, gem) {
-    if (material == 'iron' || material == 'gold') {
-        return;
-    }
+function bloodmagic_ore_processing_arc(event, material, ore, dust, gem) {
     var data = {
         recipes: []
     };
@@ -189,24 +175,6 @@ function bloodmagic_ore_processing_arc(event, material, ore, ingot, clump, dirty
         });
     }
 
-    if (ore != air && dust != air) {
-        data.recipes.push({
-            input: '#forge:ores/' + material,
-            output: item.of(dust, 2),
-            addedOutput: [],
-            tool: '#bloodmagic:arc/cuttingfluid'
-        });
-    }
-
-    if (ingot != air && dust != air) {
-        data.recipes.push({
-            input: '#forge:ingots/' + material,
-            output: item.of(dust, 1),
-            addedOutput: [],
-            tool: '#bloodmagic:arc/explosive'
-        });
-    }
-
     if (gem != air && dust != air) {
         data.recipes.push({
             input: '#forge:gems/' + material,
@@ -214,32 +182,6 @@ function bloodmagic_ore_processing_arc(event, material, ore, ingot, clump, dirty
             addedOutput: [],
             tool: '#bloodmagic:arc/explosive'
         });
-    }
-
-    if (clump != air && dirtyDust != air) {
-        data.recipes.push(
-            {
-                input: '#forge:ores/' + material,
-                output: item.of(clump, 3),
-                addedOutput: [],
-                tool: '#bloodmagic:arc/explosive'
-            },
-            {
-                input: '#mekanism:clumps/' + material,
-                output: item.of(dirtyDust, 1),
-                addedOutput: [
-                    item.of('bloodmagic:corrupted_tinydust').chance(0.05),
-                    item.of('bloodmagic:corrupted_tinydust').chance(0.01)
-                ],
-                tool: '#bloodmagic:arc/resonator'
-            },
-            {
-                input: '#mekanism:dirty_dusts/' + material,
-                output: item.of(dust, 1),
-                addedOutput: [],
-                tool: '#bloodmagic:arc/cuttingfluid'
-            }
-        );
     }
 
     data.recipes.forEach((recipe) => {

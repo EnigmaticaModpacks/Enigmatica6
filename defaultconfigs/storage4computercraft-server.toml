@@ -1,0 +1,29 @@
+
+[rs_peripheral]
+	#The base RF/t energy used by the RS Peripheral
+	#Range: > 0
+	baseUsage = 10
+	#The RF/t energy used by the RS Peripheral for each connected Computer/Turtle
+	#Range: > 0
+	perComputerUsage = 50
+
+[me_peripheral]
+	#The base RF/t energy used by the ME Peripheral
+	#Range: > 0
+	baseEnergyUsage = 10
+	#The RF/t energy used by the ME Peripheral for each connected Computer/Turtle
+	#Range: > 0
+	perComputerEnergyUsage = 30
+	#The number of channels to use when idle
+	#Range: 0 ~ 32
+	baseChannelUsage = 0
+	#The number of channels to use for each connected computer
+	#Range: 0 ~ 32
+	perComputerChannelUsage = 8
+
+[tags]
+	#If true, exposes tag data as plain JSON.  While enabling powerful sorting options, this has the potential to break the proper progression systems of some mods, so don't enable it lightly.
+	allowJson = false
+	#If true, exposes tag data as an encoded blob.  This is less risky than JSON tags but could still be reverse-engineered by the sufficiently determined.
+	allowEncoded = false
+

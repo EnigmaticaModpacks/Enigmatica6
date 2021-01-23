@@ -12,6 +12,8 @@ events.listen('recipes', function (event) {
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
 
+        'create:crushing/obsidian',
+
         'craftingstation:crafting_station',
 
         'decorative_blocks:lattice',
@@ -56,6 +58,7 @@ events.listen('recipes', function (event) {
 
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
+        'create:fill_minecraft_bucket_with_create_honey',
 
         'engineersdecor:dependent/slag_brick_block_recipe',
 
@@ -71,8 +74,11 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod',
         'mapperbase:iron_rod',
 
+        'mekanism:crushing/stone/to_cobblestone',
+
         'morevanillalib:obsidian_shard',
 
+        'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
     ];

@@ -2,13 +2,13 @@
 #Storage Settings
 [storage]
 	#The amount of slots the storage stabilizer tier 1 provides.
-	stabilizerTier1Slots = 128
+	stabilizerTier1Slots = 256
 	#The amount of slots the storage stabilizer tier 2 provides.
-	stabilizerTier2Slots = 256
+	stabilizerTier2Slots = 512
 	#The amount of slots the storage stabilizer tier 3 provides.
-	stabilizerTier3Slots = 512
+	stabilizerTier3Slots = 2048
 	#The amount of slots the storage stabilizer tier 4 provides.
-	stabilizerTier4Slots = 1024
+	stabilizerTier4Slots = 4096
 	#The amount of slots the storage actuator provides.
 	controllerBaseSlots = 128
 

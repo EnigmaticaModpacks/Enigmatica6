@@ -1,0 +1,71 @@
+{
+    "name": "rainbow",
+    "hunger": 3,
+    "honeyColor": "#FFFFFF",
+    "saturation": 2,
+    "isRainbow": true,
+    "honeyBlockRecipe": true,
+    "generateHoneyBlock": true,
+    "effects": [
+        {
+            "effectID": "minecraft:saturation",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:speed",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:absorption",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:health_boost",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:resistance",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:regeneration",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:strength",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:fire_resistance",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:night_vision",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        },
+        {
+            "effectID": "minecraft:water_breathing",
+            "duration": 600,
+            "strength": 0,
+            "chance": 0.1
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name" : "coal",
+    "hunger": 3,
+    "honeyColor": "#303030",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:slow_falling",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

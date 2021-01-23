@@ -3,6 +3,11 @@
 var itemsToHide = [
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
+    'bloodmagic:coalsand',
+    'bloodmagic:saltpeter',
+    'bloodmagic:sulfur',
+    'create:powdered_obsidian',
+    'create:honey_bucket',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'mapperbase:bitumen_ore',

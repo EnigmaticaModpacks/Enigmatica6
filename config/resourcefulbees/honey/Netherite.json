@@ -1,0 +1,17 @@
+{
+    "name" : "netherite",
+    "hunger": 3,
+    "honeyColor": "#654740",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:strength",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 1
+      }
+    ]
+  }

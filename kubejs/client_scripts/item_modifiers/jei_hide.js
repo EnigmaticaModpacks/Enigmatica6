@@ -1,6 +1,6 @@
 events.listen('jei.hide.items', (event) => {
     global.materialsToUnify.forEach((material) => {
-        if (material == 'iesnium') {
+        if (material == 'iesnium' || material == 'graphite' || material == 'hop_graphite') {
             return;
         }
         itemsToHide.push(
@@ -8,7 +8,14 @@ events.listen('jei.hide.items', (event) => {
             'occultism:' + material + '_ore',
             'occultism:' + material + '_dust',
             'occultism:' + material + '_nugget',
-            'occultism:' + material + '_block'
+            'occultism:' + material + '_block',
+            'immersiveengineering:ingot_' + material,
+            'immersiveengineering:dust_' + material,
+            'immersiveengineering:nugget_' + material,
+            'mekanism:nugget_' + material,
+            'mekanism:dust_' + material,
+            'mekanism:ingot_' + material,
+            'mekanism:block_' + material
         );
     });
 
@@ -52,21 +59,12 @@ events.listen('jei.hide.items', (event) => {
         /tmechworks:\w+_nugget/,
         /tmechworks:\w+_ore/,
         /pedestals:dust/,
-        /mekanism:\w+_gem/,
         /mekanism:\w+_ore/,
-        /mekanism:dust_/,
-        /mekanism:ingot_/,
-        /mekanism:nugget_/,
+
         /minecraft:\w+_ore/,
-        /immersiveengineering:dust_/,
-        /immersiveengineering:ingot_/,
-        /immersiveengineering:nugget_/,
-        /immersiveengineering:ore_/,
+
         /immersiveengineering:plate_/,
         /immersiveengineering:stick_/,
-        /bloodmagic:\w+fragment/,
-        /bloodmagic:\w+gravel/,
-        /bloodmagic:\w+sand/,
         /create:\w+_sheet/,
         /create:\w+_nugget/,
         /create:\w+_ingot/,
@@ -86,4 +84,9 @@ events.listen('jei.hide.items', (event) => {
     regexHide.forEach((regexExpression) => {
         event.hide(regexExpression);
     });
+});
+
+onEvent('jei.hide.fluids', (event) => {
+    event.hide('cofh_core:honey');
+    event.hide('create:honey');
 });
