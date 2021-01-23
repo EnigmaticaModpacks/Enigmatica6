@@ -1,38 +1,77 @@
+### Enigmatica 6 v0.3.8
+
+_Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.8.txt)_
+
+**New Mods!**
+
+- Lootr
+- Tome of Blood
+- Undergarden/Tetra Patch
+
+**Improvements/Changes**
+
+- Suggestion: Unify honey types [\#1001](https://github.com/NillerMedDild/Enigmatica6/issues/1001)
+- Suggestion: Add Use to Thermal Creosote  [\#988](https://github.com/NillerMedDild/Enigmatica6/issues/988)
+- Tetra: Occultism Compatibility [\#658](https://github.com/NillerMedDild/Enigmatica6/issues/658)
+- Tetra: Astral Sorcery Compatibility [\#600](https://github.com/NillerMedDild/Enigmatica6/issues/600)
+- Tetra: Create Compatibility [\#599](https://github.com/NillerMedDild/Enigmatica6/issues/599)
+- **Quests: Create [\#569](https://github.com/NillerMedDild/Enigmatica6/issues/569)**
+- **Quests: Occultism [\#659](https://github.com/NillerMedDild/Enigmatica6/issues/659)**
+
+**Bug Fixes**
+
+- Create: Chocolate and Honey are showing as direct replacements for water in many machines [\#559](https://github.com/NillerMedDild/Enigmatica6/issues/559)
+- Botania's "Spark Augmenter banner patterns" are bugged [\#758](https://github.com/NillerMedDild/Enigmatica6/issues/758)
+- Cannot craft signpost with BYF planks [\#987](https://github.com/NillerMedDild/Enigmatica6/issues/987)
+- Crashing when opening chat [\#965](https://github.com/NillerMedDild/Enigmatica6/issues/965)
+- Create Handheld Blockzapper Requires Create Brass [\#991](https://github.com/NillerMedDild/Enigmatica6/issues/991)
+- Gears are reversed in the Metal Press [\#1011](https://github.com/NillerMedDild/Enigmatica6/issues/1011)
+- Incompletable quest in Immersive Engineering due to unobtainable item [\#992](https://github.com/NillerMedDild/Enigmatica6/issues/992)
+- Locking a villager's trades with item routers [\#853](https://github.com/NillerMedDild/Enigmatica6/issues/853)
+- Mekanism Crusher missing recipes. [\#993](https://github.com/NillerMedDild/Enigmatica6/issues/993)
+- Memory Leak with C&B [\#983](https://github.com/NillerMedDild/Enigmatica6/issues/983)
+- Reduced Sulfur ore weight of Astral Sorcery Mineralis ritual [\#1005](https://github.com/NillerMedDild/Enigmatica6/issues/1005)
+- Refined Obsidian Dust and Obsidian Dust is Ore Dictionaried [\#1009](https://github.com/NillerMedDild/Enigmatica6/issues/1009)
+- Removed Create/Eidolon/Occultism Ores from the Astral Sorcery Mineralis Ritual [\#1019](https://github.com/NillerMedDild/Enigmatica6/issues/1019)
+- RGBee comb missing centrifuge recipe [\#910](https://github.com/NillerMedDild/Enigmatica6/issues/910)
+- Thermal Induction Smelter missing all alloy recipes [\#979](https://github.com/NillerMedDild/Enigmatica6/issues/979)
+- Wrong quest description for Tier 1 Beehive [\#977](https://github.com/NillerMedDild/Enigmatica6/issues/977)
+
 ### Enigmatica 6 v0.3.7
 
 _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.7.txt)_
 
 **New Mods!**
 
-- Advanced Hook Launchers
-- Akashic Tome
-- ForgeEndertech
-- Just Enough Professions (JEP)
-- Morph-o-Tool
-- Ping
-- YUNG's API (Forge)
-- spark
+-   Advanced Hook Launchers
+-   Akashic Tome
+-   ForgeEndertech
+-   Just Enough Professions (JEP)
+-   Morph-o-Tool
+-   Ping
+-   YUNG's API (Forge)
+-   spark
 
 **Improvements/Changes**
 
-- Added botany pots compat for Undergarten plants and soils [\#945](https://github.com/NillerMedDild/Enigmatica6/pull/945) ([Merlo17](https://github.com/Merlo17))
-- Added create compat for alloys [\#954](https://github.com/NillerMedDild/Enigmatica6/pull/954) ([Merlo17](https://github.com/Merlo17))
-- Added Create Steel Processing [\#969](https://github.com/NillerMedDild/Enigmatica6/pull/969) ([MuteTiefling](https://github.com/MuteTiefling))
-- Additional Apiary Glass Types (For realsies this time) [\#871](https://github.com/NillerMedDild/Enigmatica6/issues/871)
-- Akashic Tome and Morph Tool additions [\#930](https://github.com/NillerMedDild/Enigmatica6/pull/930) ([Merlo17](https://github.com/Merlo17))
-- Apotheosis: Nerfed Apotheosis spawners:
-  -   Max Spawn Count (Fermented Spider Eyes modifier) reduced to 5, down from 20
-  -   The minimum delay Sugar can set a Spawner to is now 5 seconds
-  -   Disabled the Clock (maximum delay modifier)
-  -   Max nearby entities, reduced to max 10 down from max 40
-- Ars Nouveau Tweaks [\#967](https://github.com/NillerMedDild/Enigmatica6/pull/967) ([MuteTiefling](https://github.com/MuteTiefling))
-- Buffed Tetra custom materials [\#970](https://github.com/NillerMedDild/Enigmatica6/pull/970) ([Merlo17](https://github.com/Merlo17))
-- Crushing Recipes Update [\#922](https://github.com/NillerMedDild/Enigmatica6/pull/922) ([MuteTiefling](https://github.com/MuteTiefling))
-- Disabled Quark/Thermal Carrot, Potato and Beetroot crates, replaced by the new Farmer's Delight variants.
-- Made Apotheosis Over-enchanting more reasonable [\#966](https://github.com/NillerMedDild/Enigmatica6/pull/966) ([MuteTiefling](https://github.com/MuteTiefling))
-- Recipes for BYG Grass/dirt variants [\#935](https://github.com/NillerMedDild/Enigmatica6/issues/935)
-- Stopped Thermal Bituminous sands from generating
-- Undergarden Flowers/Mushrooms and Botany Pots [\#941](https://github.com/NillerMedDild/Enigmatica6/issues/941)
+-   Added botany pots compat for Undergarten plants and soils [\#945](https://github.com/NillerMedDild/Enigmatica6/pull/945) ([Merlo17](https://github.com/Merlo17))
+-   Added create compat for alloys [\#954](https://github.com/NillerMedDild/Enigmatica6/pull/954) ([Merlo17](https://github.com/Merlo17))
+-   Added Create Steel Processing [\#969](https://github.com/NillerMedDild/Enigmatica6/pull/969) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Additional Apiary Glass Types (For realsies this time) [\#871](https://github.com/NillerMedDild/Enigmatica6/issues/871)
+-   Akashic Tome and Morph Tool additions [\#930](https://github.com/NillerMedDild/Enigmatica6/pull/930) ([Merlo17](https://github.com/Merlo17))
+-   Apotheosis: Nerfed Apotheosis spawners:
+    -   Max Spawn Count (Fermented Spider Eyes modifier) reduced to 5, down from 20
+    -   The minimum delay Sugar can set a Spawner to is now 5 seconds
+    -   Disabled the Clock (maximum delay modifier)
+    -   Max nearby entities, reduced to max 10 down from max 40
+-   Ars Nouveau Tweaks [\#967](https://github.com/NillerMedDild/Enigmatica6/pull/967) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Buffed Tetra custom materials [\#970](https://github.com/NillerMedDild/Enigmatica6/pull/970) ([Merlo17](https://github.com/Merlo17))
+-   Crushing Recipes Update [\#922](https://github.com/NillerMedDild/Enigmatica6/pull/922) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Disabled Quark/Thermal Carrot, Potato and Beetroot crates, replaced by the new Farmer's Delight variants.
+-   Made Apotheosis Over-enchanting more reasonable [\#966](https://github.com/NillerMedDild/Enigmatica6/pull/966) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Recipes for BYG Grass/dirt variants [\#935](https://github.com/NillerMedDild/Enigmatica6/issues/935)
+-   Stopped Thermal Bituminous sands from generating
+-   Undergarden Flowers/Mushrooms and Botany Pots [\#941](https://github.com/NillerMedDild/Enigmatica6/issues/941)
 
 **Bug Fixes**
 
@@ -54,7 +93,7 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Duplication bug for Buildersaddition [\#896](https://github.com/NillerMedDild/Enigmatica6/issues/896)
 -   Duplication Bug [\#957](https://github.com/NillerMedDild/Enigmatica6/issues/957)
 -   Dustrial Decor - fix uncraftable rusty iron [\#924](https://github.com/NillerMedDild/Enigmatica6/pull/924) ([MuteTiefling](https://github.com/MuteTiefling))
--   Eidolon Enchantment Table breaks Apotheosis advancements  [\#756](https://github.com/NillerMedDild/Enigmatica6/issues/756)
+-   Eidolon Enchantment Table breaks Apotheosis advancements [\#756](https://github.com/NillerMedDild/Enigmatica6/issues/756)
 -   Fix for missing Create Gearshift recipes [\#937](https://github.com/NillerMedDild/Enigmatica6/pull/937) ([MuteTiefling](https://github.com/MuteTiefling))
 -   IF breakers can break anything [\#859](https://github.com/NillerMedDild/Enigmatica6/issues/859)
 -   It is impossible to pick up supplementaries safe even if it is yours [\#897](https://github.com/NillerMedDild/Enigmatica6/issues/897)
@@ -65,7 +104,7 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   No recipe for adjustable chain gearshift [\#893](https://github.com/NillerMedDild/Enigmatica6/issues/893)
 -   Osmium Ingot \> Dust recipe missing from Thermal Pulverizer [\#906](https://github.com/NillerMedDild/Enigmatica6/issues/906)
 -   Possible to void nuclear products from Mekanism [\#883](https://github.com/NillerMedDild/Enigmatica6/issues/883)
--   QuantumStorage doesn’t retain inventory on upgrade  [\#908](https://github.com/NillerMedDild/Enigmatica6/issues/908)
+-   QuantumStorage doesn’t retain inventory on upgrade [\#908](https://github.com/NillerMedDild/Enigmatica6/issues/908)
 -   Quest typo in "Tier 1 Beehive" - Missing the A in Apiaries [\#938](https://github.com/NillerMedDild/Enigmatica6/issues/938)
 -   Refined Obsidian is unbalanced [\#907](https://github.com/NillerMedDild/Enigmatica6/issues/907)
 -   RFToolsControl workbench should use tags [\#931](https://github.com/NillerMedDild/Enigmatica6/issues/931)
@@ -73,8 +112,8 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Server crash after flying with paraglider over newly generated chunk [\#882](https://github.com/NillerMedDild/Enigmatica6/issues/882)
 -   Some ore chunks no longer work in Mek machines for ore multiplying [\#917](https://github.com/NillerMedDild/Enigmatica6/issues/917)
 -   Ultimate Powah! achievement bug [\#952](https://github.com/NillerMedDild/Enigmatica6/issues/952)
--   unable to insert repeater into glyph press  [\#943](https://github.com/NillerMedDild/Enigmatica6/issues/943)
--   Update basic\_fusion\_reactor BG schematic [\#956](https://github.com/NillerMedDild/Enigmatica6/pull/956) ([MuteTiefling](https://github.com/MuteTiefling))
+-   unable to insert repeater into glyph press [\#943](https://github.com/NillerMedDild/Enigmatica6/issues/943)
+-   Update basic_fusion_reactor BG schematic [\#956](https://github.com/NillerMedDild/Enigmatica6/pull/956) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Update Broken Jaopca Blacklist config [\#919](https://github.com/NillerMedDild/Enigmatica6/pull/919) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Vanilla chest recipe not using different variants of plank. [\#959](https://github.com/NillerMedDild/Enigmatica6/issues/959)
 -   Visual glitch with Chunk borders [\#466](https://github.com/NillerMedDild/Enigmatica6/issues/466)
