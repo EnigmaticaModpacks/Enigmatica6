@@ -6,6 +6,7 @@ var itemsToHide = [
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
+    'create:honey_bucket',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'mapperbase:bitumen_ore',
