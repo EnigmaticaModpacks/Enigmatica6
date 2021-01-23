@@ -1,8 +1,8 @@
 {
 	id: 3248,
 	filename: "occultism",
-	order_index: 1,
-	title: "Occultism WIP",
+	order_index: 18,
+	title: "Occultism",
 	icon: {
 		id: "occultism:miner_djinni_ores",
 		Count: true,
@@ -11,7 +11,6 @@
 			Damage: 0
 		}
 	},
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -66,9 +65,29 @@
 				id: 3254,
 				type: "item",
 				item: "occultism:datura"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3610,
+					type: "xp",
+					xp: 400
+				},
+				{
+					id: 3611,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
+			icon: {
+				id: "occultism:divination_rod",
+				Count: true,
+				tag: {}
+			},
 			x: 13.0d,
 			y: 0.0d,
 			subtitle: "Why Is It Vibrating?!",
@@ -89,15 +108,22 @@
 			],
 			dependencies: [I;3253],
 			id: 3255,
-			tasks: [{
-				id: 3256,
-				type: "item",
-				item: {
-					id: "occultism:divination_rod",
-					Count: true,
-					tag: {}
+			tasks: [
+				{
+					id: 3256,
+					type: "item",
+					item: {
+						id: "occultism:divination_rod",
+						Count: true,
+						tag: {}
+					}
+				},
+				{
+					id: 3612,
+					type: "item",
+					item: "occultism:otherworld_log"
 				}
-			}],
+			],
 			rewards: [
 				{
 					id: 3575,
@@ -119,6 +145,12 @@
 						tag: {}
 					},
 					count: 3
+				},
+				{
+					id: 3613,
+					type: "item",
+					item: "occultism:otherstone",
+					count: 4
 				}
 			]
 		},
@@ -165,6 +197,14 @@
 					auto: "disabled",
 					item: "occultism:spirit_attuned_gem",
 					count: 4
+				},
+				{
+					id: 3618,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -207,14 +247,22 @@
 					item: "occultism:book_of_binding_foliot"
 				}
 			],
-			rewards: [{
-				id: 3323,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: 3323,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				},
+				{
+					id: 3684,
+					type: "item",
+					item: "occultism:crushed_end_stone",
+					count: 2
+				}
+			]
 		},
 		{
 			icon: "occultism:candle_white",
@@ -251,14 +299,21 @@
 					item: "occultism:tallow"
 				}
 			],
-			rewards: [{
-				id: 3581,
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: 3581,
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
+				},
+				{
+					id: 3622,
+					type: "xp",
+					xp: 400
+				}
+			]
 		},
 		{
 			x: 12.0d,
@@ -286,6 +341,14 @@
 					id: 3564,
 					type: "xp",
 					xp: 300
+				},
+				{
+					id: 3617,
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -305,11 +368,21 @@
 				type: "item",
 				item: "occultism:chalk_white_impure"
 			}],
-			rewards: [{
-				id: 3562,
-				type: "xp",
-				xp: 300
-			}]
+			rewards: [
+				{
+					id: 3562,
+					type: "xp",
+					xp: 300
+				},
+				{
+					id: 3614,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "White Chalk",
@@ -329,7 +402,22 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3620,
+					type: "xp",
+					xp: 400
+				},
+				{
+					id: 3621,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Golden Chalk",
@@ -353,7 +441,25 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3623,
+					type: "item",
+					item: {
+						id: "occultism:chalk_gold",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 3624,
+					type: "xp",
+					xp: 400
+				}
+			]
 		},
 		{
 			x: 3.0d,
@@ -372,7 +478,26 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3648,
+					type: "xp",
+					xp: 500
+				},
+				{
+					id: 3649,
+					type: "item",
+					item: {
+						id: "occultism:chalk_purple",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					},
+					count: 4
+				}
+			]
 		},
 		{
 			x: 3.0d,
@@ -394,7 +519,25 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3666,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3667,
+					type: "command",
+					title: "Occultism Legendary Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 5.0d,
@@ -414,7 +557,22 @@
 				id: 3493,
 				type: "item",
 				item: "occultism:storage_controller"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3691,
+					type: "item",
+					item: "occultism:storage_stabilizer_tier1"
+				},
+				{
+					id: 3692,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "xecute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 5.0d,
@@ -435,7 +593,20 @@
 				id: 3497,
 				type: "item",
 				item: "occultism:storage_stabilizer_tier1"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3673,
+					type: "item",
+					item: "occultism:storage_stabilizer_tier1",
+					count: 2
+				},
+				{
+					id: 3674,
+					type: "xp",
+					xp: 400
+				}
+			]
 		},
 		{
 			x: 5.0d,
@@ -447,7 +618,22 @@
 				id: 3499,
 				type: "item",
 				item: "occultism:storage_stabilizer_tier2"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3681,
+					type: "item",
+					item: "occultism:storage_stabilizer_tier2"
+				},
+				{
+					id: 3682,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 5.0d,
@@ -459,7 +645,24 @@
 				id: 3501,
 				type: "item",
 				item: "occultism:storage_stabilizer_tier3"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3670,
+					type: "xp",
+					xp: 800
+				},
+				{
+					id: 3671,
+					type: "item",
+					item: "occultism:storage_stabilizer_tier3"
+				},
+				{
+					id: 3672,
+					type: "item",
+					item: "occultism:iesnium_block"
+				}
+			]
 		},
 		{
 			x: 3.5d,
@@ -476,7 +679,22 @@
 				id: 3503,
 				type: "item",
 				item: "occultism:storage_stabilizer_tier4"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3668,
+					type: "item",
+					item: "occultism:storage_stabilizer_tier4"
+				},
+				{
+					id: 3669,
+					type: "command",
+					title: "Occultism Legendary Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 6.0d,
@@ -493,7 +711,22 @@
 					Count: true,
 					tag: {}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3677,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3678,
+					type: "xp",
+					xp: 400
+				}
+			]
 		},
 		{
 			x: 4.0d,
@@ -510,7 +743,26 @@
 					Count: true,
 					tag: {}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3675,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3676,
+					type: "item",
+					item: {
+						id: "occultism:stable_wormhole",
+						Count: true,
+						tag: {}
+					}
+				}
+			]
 		},
 		{
 			title: "Soul Gem",
@@ -533,6 +785,14 @@
 					Count: true,
 					tag: {}
 				}
+			}],
+			rewards: [{
+				id: 3638,
+				type: "command",
+				title: "Occultism Epic Loot Chest",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -558,7 +818,23 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3679,
+					type: "item",
+					item: "occultism:iesnium_ingot",
+					count: 4
+				},
+				{
+					id: 3680,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 6.0d,
@@ -584,7 +860,28 @@
 						spiritName: "Morredes"
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3625,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				},
+				{
+					id: 3628,
+					type: "xp",
+					xp: 400
+				},
+				{
+					id: 3629,
+					type: "item",
+					item: "resourcefulbees:oreo_cookie",
+					count: 8
+				}
+			]
 		},
 		{
 			x: 1.0d,
@@ -602,7 +899,30 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3655,
+					type: "xp",
+					xp: 500
+				},
+				{
+					id: 3656,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				},
+				{
+					id: 3657,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			icon: "minecraft:end_stone",
@@ -626,6 +946,22 @@
 					icon: "minecraft:end_stone",
 					entity: "occultism:possessed_endermite",
 					value: 1L
+				}
+			],
+			rewards: [
+				{
+					id: 3686,
+					type: "item",
+					item: "minecraft:end_stone",
+					count: 16
+				},
+				{
+					id: 3687,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -659,6 +995,22 @@
 					entity: "occultism:possessed_skeleton",
 					value: 1L
 				}
+			],
+			rewards: [
+				{
+					id: 3685,
+					type: "item",
+					item: "minecraft:skeleton_skull",
+					count: 2
+				},
+				{
+					id: 3688,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
 			]
 		},
 		{
@@ -684,6 +1036,22 @@
 					entity: "occultism:possessed_enderman",
 					value: 1L
 				}
+			],
+			rewards: [
+				{
+					id: 3639,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3642,
+					type: "item",
+					item: "minecraft:ender_pearl",
+					count: 8
+				}
 			]
 		},
 		{
@@ -703,7 +1071,25 @@
 				id: 3531,
 				type: "item",
 				item: "occultism:dimensional_mineshaft"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3658,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				},
+				{
+					id: 3689,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 1.0d,
@@ -727,7 +1113,27 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3659,
+					type: "xp",
+					xp: 400
+				},
+				{
+					id: 3660,
+					type: "item",
+					item: "occultism:iesnium_block"
+				},
+				{
+					id: 3661,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 2.0d,
@@ -747,7 +1153,25 @@
 						Damage: 0
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3662,
+					type: "command",
+					title: "Occultism Legendary Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary",
+					player_command: false
+				},
+				{
+					id: 3690,
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: 2.0d,
@@ -771,6 +1195,14 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 3653,
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -818,14 +1250,21 @@
 				type: "item",
 				item: "occultism:golden_sacrificial_bowl"
 			}],
-			rewards: [{
-				id: 3580,
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: 3580,
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
+				},
+				{
+					id: 3683,
+					type: "xp",
+					xp: 500
+				}
+			]
 		},
 		{
 			x: 10.0d,
@@ -871,6 +1310,34 @@
 					type: "item",
 					item: "occultism:book_of_binding_djinni"
 				}
+			],
+			rewards: [
+				{
+					id: 3645,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				},
+				{
+					id: 3646,
+					type: "command",
+					title: "Farmer's Delight",
+					icon: "kubejs:farmers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					player_command: false
+				},
+				{
+					id: 3647,
+					type: "xp",
+					xp: 500
+				},
+				{
+					id: 3650,
+					type: "item",
+					item: "artifacts:umbrella"
+				}
 			]
 		},
 		{
@@ -900,9 +1367,25 @@
 					type: "item",
 					item: "occultism:book_of_binding_djinni"
 				}
+			],
+			rewards: [
+				{
+					id: 3651,
+					type: "xp",
+					xp: 500
+				},
+				{
+					id: 3652,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
 			]
 		},
 		{
+			icon: "occultism:afrit_essence",
 			x: 2.5d,
 			y: 4.5d,
 			shape: "hexagon",
@@ -917,23 +1400,86 @@
 			],
 			dependencies: [I;3486],
 			id: 3552,
-			tasks: [{
-				id: 3553,
-				type: "item",
-				item: "occultism:book_of_binding_afrit"
-			}]
+			tasks: [
+				{
+					id: 3553,
+					type: "item",
+					item: "occultism:book_of_binding_afrit"
+				},
+				{
+					id: 3663,
+					type: "item",
+					item: "occultism:afrit_essence"
+				}
+			],
+			rewards: [
+				{
+					id: 3664,
+					type: "command",
+					title: "Occultism Legendary Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary",
+					player_command: false
+				},
+				{
+					id: 3665,
+					type: "command",
+					title: "Occultism Legendary Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_legendary",
+					player_command: false
+				}
+			]
 		},
 		{
+			title: "The Wild Hunt",
+			icon: "minecraft:wither_skeleton_skull",
 			x: 3.5d,
 			y: 4.5d,
 			shape: "hexagon",
+			description: [
+				"Wither Skulls can be a chore to get sometimes.",
+				"",
+				"For those who do not wish to brave the hellish world that is the Nether, we have The Wild Hunt Ritual.",
+				"",
+				"The Wild Hunt Ritual will summon multiple possessed Wither Skeletons as well as their Possessed Skeleton minions. Each Possessed Wither Skeleton is guaranteed to drop at least one Wither Skeleton Skull."
+			],
 			dependencies: [I;3486],
 			id: 3556,
-			tasks: [{
-				id: 3557,
-				type: "item",
-				item: "minecraft:wither_skeleton_skull"
-			}]
+			tasks: [
+				{
+					id: 3693,
+					type: "advancement",
+					title: "Summon The Wild Hunt",
+					icon: "minecraft:wither_skeleton_skull",
+					advancement: "occultism:summon_wild_hunt",
+					criterion: ""
+				},
+				{
+					id: 3694,
+					type: "kill",
+					entity: "occultism:wild_hunt_wither_skeleton",
+					value: 2L
+				}
+			],
+			rewards: [
+				{
+					id: 3695,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3696,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			icon: {
@@ -955,6 +1501,12 @@
 				id: 3608,
 				type: "item",
 				item: "occultism:iesnium_ore"
+			}],
+			rewards: [{
+				id: 3654,
+				type: "item",
+				item: "occultism:iesnium_ore",
+				count: 8
 			}]
 		},
 		{
@@ -1073,7 +1625,15 @@
 					type: "item",
 					item: "occultism:book_of_binding_foliot"
 				}
-			]
+			],
+			rewards: [{
+				id: 3619,
+				type: "command",
+				title: "Occultism Epic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+				player_command: false
+			}]
 		}
 	]
 }
