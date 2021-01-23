@@ -275,3 +275,32 @@ const generatableStone = [
     'create:limestone'
 ];
 const generatableBasalt = [];
+
+const honeyVarieties = [
+    'resourcefulbees:blaze_honey',
+    'resourcefulbees:brass_honey',
+    'resourcefulbees:bronze_honey',
+    'resourcefulbees:catnip_honey',
+    'resourcefulbees:coal_honey',
+    'resourcefulbees:constantan_honey',
+    'resourcefulbees:diamond_honey',
+    'resourcefulbees:electrum_honey',
+    'resourcefulbees:emerald_honey',
+    'resourcefulbees:enderium_honey',
+    'resourcefulbees:glowstone_honey',
+    'resourcefulbees:gold_honey',
+    'resourcefulbees:honey',
+    'resourcefulbees:icy_honey',
+    'resourcefulbees:invar_honey',
+    'resourcefulbees:iron_honey',
+    'resourcefulbees:lapis_honey',
+    'resourcefulbees:lumium_honey',
+    'resourcefulbees:netherite_honey',
+    'resourcefulbees:obsidian_honey',
+    'resourcefulbees:rainbow_honey',
+    'resourcefulbees:redstone_honey',
+    'resourcefulbees:signalum_honey',
+    'resourcefulbees:steel_honey',
+    'resourcefulbees:water_honey',
+    'resourcefulbees:wither_honey'
+];

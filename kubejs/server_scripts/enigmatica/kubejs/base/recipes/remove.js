@@ -56,6 +56,7 @@ events.listen('recipes', function (event) {
 
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
+        'create:fill_minecraft_bucket_with_create_honey',
 
         'engineersdecor:dependent/slag_brick_block_recipe',
 
@@ -75,6 +76,7 @@ events.listen('recipes', function (event) {
 
         'morevanillalib:obsidian_shard',
 
+        'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
     ];
