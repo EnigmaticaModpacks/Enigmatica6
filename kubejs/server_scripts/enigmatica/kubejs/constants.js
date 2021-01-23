@@ -43,7 +43,8 @@ const modPriorities = [
     'mapperbase',
     'bloodmagic',
     'eidolon',
-    'morevanillalib'
+    'morevanillalib',
+    'titanium'
 ];
 
 const colors = [
@@ -134,7 +135,7 @@ var buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {
     var splitVariant = variant.split(':');
-    var modID = splitVariant[0];
+    var modId = splitVariant[0];
     var logType = splitVariant[1];
     var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock;
 
@@ -169,11 +170,11 @@ woodVariantsToConstruct.forEach((variant) => {
             woodSuffix = '_wood';
     }
 
-    logBlock = modID + ':' + logType + logSuffix;
-    woodBlock = modID + ':' + logType + woodSuffix;
-    logBlockStripped = modID + ':stripped_' + logType + logSuffix;
-    woodBlockStripped = modID + ':stripped_' + logType + woodSuffix;
-    plankBlock = modID + ':' + logType + '_planks';
+    logBlock = modId + ':' + logType + logSuffix;
+    woodBlock = modId + ':' + logType + woodSuffix;
+    logBlockStripped = modId + ':stripped_' + logType + logSuffix;
+    woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
+    plankBlock = modId + ':' + logType + '_planks';
 
     // Exceptions
     switch (logType) {
@@ -201,6 +202,7 @@ woodVariantsToConstruct.forEach((variant) => {
     }
 
     var woodVariant = {
+        modId: modId,
         logBlock: logBlock,
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
