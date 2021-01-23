@@ -339,9 +339,6 @@ events.listen('recipes', function (event) {
             E: 'thermal:hazmat_boots',
             F: 'alexsmobs:frontier_cap'
         }),
-        shapedRecipe('minecraft:chest', ['AAA', 'A A', 'AAA'], {
-            A: '#minecraft:planks'
-        }),
         shapedRecipe(
             Item.of('morphtool:tool', {
                 'morphtool:is_morphing': 1,
@@ -395,5 +392,18 @@ events.listen('recipes', function (event) {
 
     recipes.forEach(function (recipe) {
         event.shaped(recipe.result, recipe.pattern, recipe.key);
+    });
+
+    buildWoodVariants.forEach((wood) => {
+        if (wood.modId == 'minecraft') {
+            return;
+        }
+        event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
+            A: wood.plankBlock,
+            B: '#forge:rods/wooden'
+        });
+        event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
+            A: wood.plankBlock
+        });
     });
 });
