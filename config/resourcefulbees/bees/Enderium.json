@@ -4,6 +4,7 @@
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["can_swim"],
     "baseLayerTexture": "metals/enderium",
     "ColorData": {
         "honeycombColor": "#0a4a4a",
@@ -27,9 +28,19 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+
         "mainOutput": "emendatusenigmatica:enderium_ingot",
         "mainOutputWeight": 0.05,
         "mainOutputCount": 2,
+
+        "secondaryOutput": "emendatusenigmatica:diamond_dust",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:enderium_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
         "mainInputCount": 1
     },
     "SpawnData": {

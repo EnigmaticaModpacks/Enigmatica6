@@ -43,7 +43,8 @@ const modPriorities = [
     'mapperbase',
     'bloodmagic',
     'eidolon',
-    'morevanillalib'
+    'morevanillalib',
+    'titanium'
 ];
 
 const colors = [
@@ -134,7 +135,7 @@ var buildWoodVariants = [];
 
 woodVariantsToConstruct.forEach((variant) => {
     var splitVariant = variant.split(':');
-    var modID = splitVariant[0];
+    var modId = splitVariant[0];
     var logType = splitVariant[1];
     var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock;
 
@@ -169,11 +170,11 @@ woodVariantsToConstruct.forEach((variant) => {
             woodSuffix = '_wood';
     }
 
-    logBlock = modID + ':' + logType + logSuffix;
-    woodBlock = modID + ':' + logType + woodSuffix;
-    logBlockStripped = modID + ':stripped_' + logType + logSuffix;
-    woodBlockStripped = modID + ':stripped_' + logType + woodSuffix;
-    plankBlock = modID + ':' + logType + '_planks';
+    logBlock = modId + ':' + logType + logSuffix;
+    woodBlock = modId + ':' + logType + woodSuffix;
+    logBlockStripped = modId + ':stripped_' + logType + logSuffix;
+    woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
+    plankBlock = modId + ':' + logType + '_planks';
 
     // Exceptions
     switch (logType) {
@@ -201,6 +202,7 @@ woodVariantsToConstruct.forEach((variant) => {
     }
 
     var woodVariant = {
+        modId: modId,
         logBlock: logBlock,
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
@@ -273,3 +275,32 @@ const generatableStone = [
     'create:limestone'
 ];
 const generatableBasalt = [];
+
+const honeyVarieties = [
+    'resourcefulbees:blaze_honey',
+    'resourcefulbees:brass_honey',
+    'resourcefulbees:bronze_honey',
+    'resourcefulbees:catnip_honey',
+    'resourcefulbees:coal_honey',
+    'resourcefulbees:constantan_honey',
+    'resourcefulbees:diamond_honey',
+    'resourcefulbees:electrum_honey',
+    'resourcefulbees:emerald_honey',
+    'resourcefulbees:enderium_honey',
+    'resourcefulbees:glowstone_honey',
+    'resourcefulbees:gold_honey',
+    'resourcefulbees:honey',
+    'resourcefulbees:icy_honey',
+    'resourcefulbees:invar_honey',
+    'resourcefulbees:iron_honey',
+    'resourcefulbees:lapis_honey',
+    'resourcefulbees:lumium_honey',
+    'resourcefulbees:netherite_honey',
+    'resourcefulbees:obsidian_honey',
+    'resourcefulbees:rainbow_honey',
+    'resourcefulbees:redstone_honey',
+    'resourcefulbees:signalum_honey',
+    'resourcefulbees:steel_honey',
+    'resourcefulbees:water_honey',
+    'resourcefulbees:wither_honey'
+];

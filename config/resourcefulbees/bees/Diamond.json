@@ -4,6 +4,7 @@
     "sizeModifier": 1,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["can_swim"],
     "baseLayerTexture": "ores/diamond/diamond_bee",
     "ColorData": {
         "honeycombColor": "#00ffff",
@@ -28,14 +29,24 @@
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+
         "mainOutput": "minecraft:diamond",
         "mainOutputWeight": 0.08,
         "mainOutputCount": 2,
+
+        "secondaryOutput": "emendatusenigmatica:apatite_gem",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:diamond_honey_bottle",
+        "bottleOutputWeight": 0.01,
+        "bottleOutputCount": 1,
+
         "mainInputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeWhitelist": "tag:DIAMOND",
         "biomeBlacklist": "tag:OCEAN",
         "minGroupSize": 0,
         "maxGroupSize": 1,

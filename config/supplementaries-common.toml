@@ -56,6 +56,8 @@
 		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
 		#tinted jar catchable mobs
 		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
+		#any item can work here, ideally you should only put cookies and alike
+		cookies = ["minecraft:cookie", "simplefarming:peanut_butter_cookie", "farmersdelight:sweet_berry_cookie", "farmersdelight:honey_cookie"]
 
 	#I haven't tested most of the mods included here. let me know if they work
 	[blocks.cage]
@@ -140,6 +142,10 @@
 		#max chain length that allows a bell to ring
 		#Range: 0 ~ 1024
 		chain_length = 32
+
+	[tweaks.hanging_flower_pots]
+		#allows you to place hanging flower pots. Works with any modded pot too
+		enabled = true
 
 [items]
 

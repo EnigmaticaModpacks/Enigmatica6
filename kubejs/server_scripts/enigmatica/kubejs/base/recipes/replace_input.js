@@ -341,13 +341,16 @@ events.listen('recipes', function (event) {
         'dustrial_decor:barbed_iron_bars'
     );
 
-    event.replaceInput({ mod: 'bloodmagic' }, 'bloodmagic:ironfragment', '#mekanism:clumps/iron');
-    event.replaceInput({ mod: 'bloodmagic' }, 'bloodmagic:goldfragment', '#mekanism:clumps/gold');
-
     event.replaceInput(
         { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
         'minecraft:potion',
         item.of('minecraft:potion', { Potion: 'minecraft:water' })
+    );
+
+    event.replaceInput(
+        { id: 'create:mixing/chromatic_compound' },
+        'create:powdered_obsidian',
+        ingredient.of('#forge:dusts/obsidian')
     );
 
     //TODO: Remove in 0.4.0

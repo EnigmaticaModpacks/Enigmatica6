@@ -64,6 +64,10 @@ events.listen('recipes', (event) => {
                 energy: 20000
             },
             {
+                fluid: 'immersiveengineering:creosote',
+                energy: 20000
+            },
+            {
                 fluid: 'thermal:refined_fuel',
                 energy: 1500000
             }

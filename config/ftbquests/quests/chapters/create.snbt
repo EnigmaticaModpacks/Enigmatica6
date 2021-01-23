@@ -1,10 +1,9 @@
 {
 	id: 3135,
 	filename: "create",
-	order_index: 15,
+	order_index: 11,
 	title: "Create",
 	icon: "create:cogwheel",
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -20,7 +19,9 @@
 				"",
 				"Your imagination is the limit. ",
 				"",
-				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. "
+				"Naturally, with so much ground to cover, these quests will not be exhaustive. Instead, the goal will be to introduce basic concepts of Create to give you a solid footing to begin experimenting on your own. ",
+				"",
+				"~MuteTiefling"
 			],
 			id: 3136,
 			tasks: [{
@@ -36,6 +37,7 @@
 		},
 		{
 			title: "Rotational Force",
+			icon: "create:goggles",
 			x: 4.0d,
 			y: 2.0d,
 			subtitle: "Some Assembly Required",
@@ -56,7 +58,12 @@
 			min_width: 300,
 			id: 3258,
 			tasks: [{
-				id: 3260,
+				id: 3431,
+				type: "checkmark",
+				title: "Rotational Force"
+			}],
+			rewards: [{
+				id: 3430,
 				type: "item",
 				item: "create:goggles"
 			}]
@@ -100,17 +107,27 @@
 					count: 32L
 				}
 			],
-			rewards: [{
-				id: 3264,
-				type: "item",
-				item: {
-					id: "create:super_glue",
-					Count: true,
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: 3264,
+					type: "item",
+					item: {
+						id: "create:super_glue",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
 					}
+				},
+				{
+					id: 3445,
+					type: "command",
+					title: "Epic Create Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+					player_command: false
 				}
-			}]
+			]
 		},
 		{
 			x: 5.0d,
@@ -129,12 +146,21 @@
 				id: 3267,
 				type: "item",
 				item: "create:water_wheel"
+			}],
+			rewards: [{
+				id: 3444,
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
-			icon: "create:encased_fan",
+			icon: "create:propeller",
 			x: 5.5d,
 			y: 4.0d,
+			subtitle: "Renewable Energy? I'm a Big Fan",
 			description: [
 				"More compact still than water, an Encased fan can serve to create small amounts of Rotational Force, in addition to its other functions. More on those later.",
 				"",
@@ -157,28 +183,30 @@
 				3324
 			],
 			id: 3268,
-			tasks: [
+			tasks: [{
+				id: 3269,
+				type: "item",
+				item: "create:encased_fan"
+			}],
+			rewards: [
 				{
-					id: 3269,
+					id: 3274,
 					type: "item",
-					item: "create:encased_fan"
+					item: "create:analog_lever"
 				},
 				{
-					id: 3275,
+					id: 3443,
 					type: "item",
-					item: "minecraft:magma_block"
+					item: "minecraft:magma_block",
+					count: 4
 				}
-			],
-			rewards: [{
-				id: 3274,
-				type: "item",
-				item: "create:analog_lever"
-			}]
+			]
 		},
 		{
 			icon: "create:flywheel",
 			x: 4.0d,
 			y: 5.0d,
+			subtitle: "Held in High Esteem",
 			description: [
 				"The ultimate in compact power generation. The Furnace engine is a three-part multi-block structure that provides the highest possible SU generation. ",
 				"",
@@ -198,16 +226,26 @@
 					id: 3272,
 					type: "item",
 					item: "create:flywheel"
+				}
+			],
+			rewards: [
+				{
+					id: 3446,
+					type: "command",
+					title: "Legendary Create Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+					player_command: false
 				},
 				{
-					id: 3273,
+					id: 3466,
 					type: "item",
 					item: "minecraft:blast_furnace"
 				}
 			]
 		},
 		{
-			title: "Shafts",
+			title: "Shaft",
 			x: 1.5d,
 			y: 3.5d,
 			subtitle: "Shut Yo Mouth",
@@ -223,38 +261,85 @@
 				type: "item",
 				item: "create:shaft",
 				count: 16L
-			}]
+			}],
+			rewards: [
+				{
+					id: 3449,
+					type: "command",
+					title: "Rare Create Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+					player_command: false
+				},
+				{
+					id: 3456,
+					type: "item",
+					item: "minecraft:kelp",
+					count: 16
+				}
+			]
 		},
 		{
 			x: 1.0d,
 			y: 2.5d,
+			subtitle: "That Was Below the Belt",
 			description: [
 				"Tired of unsightly holes in your base? Shivering from drafty shaft seals? Look no further. ",
 				"",
-				"Right click a Casing onto your shaft to convert it to a full block. Perfect for those times when the shaft is passing through walls or floors. "
+				"Right click a Casing onto your shaft to convert it to a full block. Perfect for those times when the shaft is passing through walls or floors. ",
+				"",
+				"They also look great under Mechanical Belts."
 			],
 			dependencies: [I;3276],
 			id: 3278,
 			tasks: [{
 				id: 3279,
 				type: "item",
-				item: "create:andesite_casing"
+				item: "create:andesite_casing",
+				count: 4L
+			}],
+			rewards: [{
+				id: 3448,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
+			title: "Brackets",
 			x: 2.0d,
 			y: 2.5d,
+			subtitle: "Brace Yourselves",
 			description: [
 				"That’s a long run of shaft you’ve got there. Seems a little unsupported, no?",
 				"",
-				"Brackets are entirely decorative but can make your shaft network look a little more supported.  "
+				"Brackets are entirely decorative but can make your shaft network look much nicer."
 			],
 			dependencies: [I;3276],
 			id: 3280,
-			tasks: [{
-				id: 3281,
-				type: "item",
-				item: "create:wooden_bracket"
+			tasks: [
+				{
+					id: 3281,
+					type: "item",
+					item: "create:wooden_bracket",
+					count: 4L
+				},
+				{
+					id: 3467,
+					type: "item",
+					item: "create:metal_bracket",
+					count: 4L
+				}
+			],
+			rewards: [{
+				id: 3447,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -270,11 +355,20 @@
 				type: "item",
 				item: "create:cogwheel",
 				count: 4L
+			}],
+			rewards: [{
+				id: 3455,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
-			x: -2.0d,
+			x: -1.5d,
 			y: 2.5d,
+			subtitle: "Let's Try a Change in Tack",
 			description: [
 				"Slightly more costly than a pair of cogs, Gear Boxes serve the same purpose as perpendicular cogs, to change the direction of a shaft line. ",
 				"",
@@ -286,12 +380,21 @@
 				id: 3285,
 				type: "item",
 				item: "create:gearbox"
+			}],
+			rewards: [{
+				id: 3459,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			title: "Large Cogwheel",
 			x: -2.0d,
 			y: 3.5d,
+			subtitle: "Spacely's Sprockets",
 			description: [
 				"Just because our windmill is running a little slowly doesn’t mean everything else needs to. The rotational speed of a system can be stepped up (or down) by way of simple gear ratios. ",
 				"",
@@ -308,11 +411,20 @@
 				type: "item",
 				item: "create:large_cogwheel",
 				count: 4L
+			}],
+			rewards: [{
+				id: 3457,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			x: 1.5d,
 			y: 4.5d,
+			subtitle: "You're On a Roll Now",
 			description: [
 				"As with many things in Create, the Mechanical Belt is a multi-purpose item.",
 				"",
@@ -327,12 +439,22 @@
 			tasks: [{
 				id: 3289,
 				type: "item",
-				item: "create:belt_connector"
+				item: "create:belt_connector",
+				count: 4L
+			}],
+			rewards: [{
+				id: 3450,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			x: 0.5d,
 			y: 4.5d,
+			subtitle: "Working on the Chain Gang",
 			description: [
 				"Encased Chain Drives may be used much like belts, connecting perpendicular shafts together.",
 				"",
@@ -344,12 +466,21 @@
 				id: 3297,
 				type: "item",
 				item: "create:encased_chain_drive"
+			}],
+			rewards: [{
+				id: 3451,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			icon: "create:rotation_speed_controller",
-			x: -3.0d,
+			x: -4.0d,
 			y: 3.5d,
+			subtitle: "Kick It Into Overdrive",
 			description: [
 				"It is not always practical to chain hundreds of cogs to achieve the exact right speed. Enter, the Rotation Speed Controller. Place a Large Cogwheel in the top slot and power it. ",
 				"",
@@ -357,22 +488,31 @@
 			],
 			dependencies: [I;3286],
 			id: 3298,
-			tasks: [
+			tasks: [{
+				id: 3299,
+				type: "item",
+				item: "create:rotation_speed_controller"
+			}],
+			rewards: [
 				{
-					id: 3299,
-					type: "item",
-					item: "create:rotation_speed_controller"
-				},
-				{
-					id: 3300,
+					id: 3419,
 					type: "item",
 					item: "create:large_cogwheel"
+				},
+				{
+					id: 3420,
+					type: "command",
+					title: "Legendary Create Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+					player_command: false
 				}
 			]
 		},
 		{
 			x: 0.5d,
 			y: 6.0d,
+			subtitle: "Bit of a Slippery Slope",
 			description: [
 				"Funnels serve both to push into and pull from inventories. ",
 				"",
@@ -384,11 +524,20 @@
 				id: 3302,
 				type: "item",
 				item: "create:andesite_funnel"
+			}],
+			rewards: [{
+				id: 3452,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			x: 1.5d,
 			y: 5.5d,
+			subtitle: "Learning To Take Things in Slide",
 			description: [
 				" The chute is a simple yet fast way to convey items downwards. Simply drop them in the top and they’ll come out the bottom. ",
 				"",
@@ -401,7 +550,8 @@
 			tasks: [{
 				id: 3304,
 				type: "item",
-				item: "create:chute"
+				item: "create:chute",
+				count: 4L
 			}],
 			rewards: [{
 				id: 3313,
@@ -412,6 +562,7 @@
 		{
 			x: 2.5d,
 			y: 6.0d,
+			subtitle: "Double Slit Experiment",
 			description: [
 				"Far from simple covers for your Mechanical Belts, Tunnels serve a useful purpose in splitting items. ",
 				"",
@@ -423,23 +574,41 @@
 				id: 3306,
 				type: "item",
 				item: "create:andesite_tunnel"
+			}],
+			rewards: [{
+				id: 3453,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			x: 0.5d,
 			y: 7.0d,
-			description: ["Brass Funnels function similarly to Andesite Funnels, although they can accept a filter, either in the form of a single item clicked into the filter slot, or a configured filter."],
+			subtitle: "Pimp My Slide",
+			description: ["Brass Funnels function similarly to Andesite Funnels, although they can accept a filter, either in the form of a single item clicked into the filter slot, or a configured filter item."],
 			dependencies: [I;3301],
 			id: 3309,
 			tasks: [{
 				id: 3310,
 				type: "item",
 				item: "create:brass_funnel"
+			}],
+			rewards: [{
+				id: 3417,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			x: 2.5d,
 			y: 7.0d,
+			subtitle: "Wave Function Collapse",
 			description: [
 				"Brass Tunnels work a bit differently than Andesite Tunnels. Rather than splitting onto adjacent belts, a line of Tunnels can be formed along multiple parallel belts. ",
 				"",
@@ -453,11 +622,20 @@
 				id: 3312,
 				type: "item",
 				item: "create:brass_tunnel"
+			}],
+			rewards: [{
+				id: 3415,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			x: 1.5d,
 			y: 6.5d,
+			subtitle: "Buffer Allocation Failed",
 			description: [
 				"A simple item buffer. ",
 				"",
@@ -469,11 +647,20 @@
 				id: 3315,
 				type: "item",
 				item: "create:depot"
+			}],
+			rewards: [{
+				id: 3454,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			x: 1.5d,
 			y: 7.5d,
+			subtitle: "Number 5 is Alive",
 			description: [
 				"Mechanical Arms serve as advanced short range item transport. They may be linked to multiple points at once for both extraction and insertion.",
 				"",
@@ -487,11 +674,20 @@
 				id: 3317,
 				type: "item",
 				item: "create:mechanical_arm"
+			}],
+			rewards: [{
+				id: 3416,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			x: 7.0d,
 			y: 3.5d,
+			subtitle: "You Know What Really Grinds My Gears?",
 			description: [
 				"Millstones have been used for ages, representing some of our oldest technology still in use. They’re far more efficient than grinding things by hand.",
 				"",
@@ -503,12 +699,21 @@
 				id: 3325,
 				type: "item",
 				item: "create:millstone"
+			}],
+			rewards: [{
+				id: 3442,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			title: "Crushing Wheels",
 			x: 9.0d,
 			y: 5.5d,
+			subtitle: "It's Crunch Time",
 			description: [
 				"Crushing Wheels are the big brother to the Millstone you have used until now. In general, they do a better job, allowing you to get more for your inputs than you would in the Millstone. ",
 				"Their harder milling surface is also capable of dealing with materials that the Millstone cannot. ",
@@ -524,12 +729,21 @@
 				type: "item",
 				item: "create:crushing_wheel",
 				count: 2L
+			}],
+			rewards: [{
+				id: 3412,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			icon: "create:brass_hand",
 			x: 8.0d,
-			y: 4.5d,
+			y: 5.0d,
+			subtitle: "Getting Down to Brass Tacks",
 			description: [
 				"A Deployer while useful for many things, is the primary means of automating Polished Rose quartz. ",
 				"",
@@ -556,11 +770,20 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 3439,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			x: 8.0d,
 			y: 3.5d,
+			subtitle: "Ohm the Humanity",
 			description: [
 				"Electron Tubes are used to craft the most advanced machinery in Create and they pose a bit of an automation challenge in the form of Polished Rose Quartz.",
 				"",
@@ -574,13 +797,21 @@
 				id: 3331,
 				type: "item",
 				item: "create:electron_tube"
+			}],
+			rewards: [{
+				id: 3437,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			icon: "create:whisk",
 			x: 7.0d,
 			y: 2.0d,
-			subtitle: "Whip It Together",
+			subtitle: "Just a Little Something I Whipped Up",
 			description: ["With some basic power and logistics under our belts, it’s time we get our hands dirty and get down to business. Create offers several new crafting mechanics that are important to understand to work with the mod. "],
 			dependencies: [I;3136],
 			id: 3332,
@@ -588,11 +819,20 @@
 				id: 3333,
 				type: "checkmark",
 				title: "Crafting"
+			}],
+			rewards: [{
+				id: 3432,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
 			x: 7.0d,
 			y: 4.5d,
+			subtitle: "Boil 'em, Mash 'em, Stick 'em in a Stew",
 			description: [
 				"The Mechanical Press is a great way to transform your ingots into plates for more advanced crafting. It will also compact your materials when combined with a basin, making ingots from nuggets.  ",
 				"",
@@ -610,12 +850,21 @@
 				id: 3335,
 				type: "item",
 				item: "create:mechanical_press"
+			}],
+			rewards: [{
+				id: 3441,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			icon: "create:mechanical_mixer",
 			x: 7.0d,
 			y: 5.5d,
+			subtitle: "There's Been a Mix-Up, Officer",
 			description: [
 				"The Mechanical Mixer helps blend both solids and liquids into more useful forms, from brewing potions, making tea, or making advanced alloys, the mixer does it all. A basin below the mixer is required.",
 				"",
@@ -634,11 +883,20 @@
 					type: "item",
 					item: "create:basin"
 				}
-			]
+			],
+			rewards: [{
+				id: 3440,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			x: 6.0d,
 			y: 6.5d,
+			subtitle: "Dat Ash Tho",
 			description: [
 				"When high temperatures are required, there’s nothing quite like the scorching heat of the Nether. Why not bring it home with you too?",
 				"",
@@ -652,11 +910,20 @@
 				id: 3340,
 				type: "item",
 				item: "create:blaze_burner"
+			}],
+			rewards: [{
+				id: 3422,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
-			x: 6.0d,
+			x: 6.5d,
 			y: 7.5d,
+			subtitle: "Forbidden Snacks",
 			description: [
 				"What do you mean that’s not hot enough? Well, let them eat cake!",
 				"",
@@ -668,11 +935,20 @@
 				id: 3342,
 				type: "item",
 				item: "create:blaze_cake"
+			}],
+			rewards: [{
+				id: 3413,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			x: -1.0d,
 			y: 4.5d,
+			subtitle: "Archimedean Screw",
 			description: [
 				"Just as moving items isn’t free, so to does it require some rotational force to pump and work with fluids.",
 				"",
@@ -686,24 +962,43 @@
 				id: 3344,
 				type: "item",
 				item: "create:mechanical_pump"
+			}],
+			rewards: [{
+				id: 3460,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			x: -2.0d,
 			y: 4.5d,
+			subtitle: "Clear the Channel",
 			description: ["Pipes are the primary means of conveying fluids. Fluid goes in, fluid goes out. Simple!"],
 			dependencies: [I;3343],
 			id: 3345,
 			tasks: [{
 				id: 3346,
 				type: "item",
-				item: "create:fluid_pipe"
+				item: "create:fluid_pipe",
+				count: 16L
+			}],
+			rewards: [{
+				id: 3461,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			icon: "create:fluid_valve",
-			x: -1.0d,
+			x: -1.5d,
 			y: 5.5d,
+			subtitle: "Shut The Front Door",
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "],
 			dependencies: [I;3343],
 			id: 3347,
@@ -718,11 +1013,20 @@
 					type: "item",
 					item: "create:copper_valve_handle"
 				}
-			]
+			],
+			rewards: [{
+				id: 3462,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
-			x: -1.0d,
+			x: -2.0d,
 			y: 6.5d,
+			subtitle: "Reverse Osmosis Filter",
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "],
 			dependencies: [I;3343],
 			id: 3349,
@@ -730,18 +1034,40 @@
 				id: 3350,
 				type: "item",
 				item: "create:smart_fluid_pipe"
+			}],
+			rewards: [{
+				id: 3418,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			x: -3.0d,
 			y: 4.5d,
-			description: ["Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "],
+			subtitle: "Unfathomably Deep",
+			description: [
+				"Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. ",
+				"",
+				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
+			],
 			dependencies: [I;3345],
 			id: 3351,
 			tasks: [{
 				id: 3352,
 				type: "item",
-				item: "create:fluid_tank"
+				item: "create:fluid_tank",
+				count: 4L
+			}],
+			rewards: [{
+				id: 3465,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -770,12 +1096,20 @@
 					type: "item",
 					item: "create:crafter_slot_cover"
 				}
-			]
+			],
+			rewards: [{
+				id: 3438,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
 		},
 		{
 			icon: "create:polished_rose_quartz",
 			x: 8.0d,
-			y: 5.5d,
+			y: 6.5d,
 			shape: "octagon",
 			description: [
 				"All the pieces are there. Can you put them together? Create a fully automatic Polished Rose Quartz factory. The only outside input allowed is the quartz and redstone itself.",
@@ -797,6 +1131,7 @@
 		{
 			x: -2.5d,
 			y: 5.5d,
+			subtitle: "Spouting Off Nonsense",
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"],
 			dependencies: [I;3345],
 			id: 3363,
@@ -804,9 +1139,18 @@
 				id: 3364,
 				type: "item",
 				item: "create:spout"
+			}],
+			rewards: [{
+				id: 3463,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
 			}]
 		},
 		{
+			title: "Modular Contraptions",
 			icon: {
 				id: "create:minecart_contraption",
 				Count: true,
@@ -878,12 +1222,18 @@
 			tasks: [{
 				id: 3372,
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: 3429,
+				type: "item",
+				item: "minecraft:minecart"
 			}]
 		},
 		{
+			icon: "create:mechanical_piston",
 			x: 10.5d,
 			y: 3.0d,
-			subtitle: "Long Arm of the Law",
+			subtitle: "Engineering Outreach Program",
 			description: [
 				"When it comes to moving contraptions, Mechanical Pistons can be a great early start. ",
 				"",
@@ -895,11 +1245,28 @@
 				id: 3374,
 				type: "item",
 				item: "create:mechanical_piston"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3433,
+					type: "command",
+					title: "Rare Create Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+					player_command: false
+				},
+				{
+					id: 3468,
+					type: "item",
+					item: "create:piston_extension_pole",
+					count: 8
+				}
+			]
 		},
 		{
 			x: 11.0d,
 			y: 4.0d,
+			subtitle: "Putting the Cart Before the Horse",
 			description: [
 				"Cart Assemblers are used to build a contraption destined to ride a mine cart. ",
 				"",
@@ -915,11 +1282,20 @@
 				id: 3376,
 				type: "item",
 				item: "create:cart_assembler"
+			}],
+			rewards: [{
+				id: 3434,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			x: 11.5d,
 			y: 5.0d,
+			subtitle: "Getting Out of an Unbearable Situation",
 			description: [
 				"Similar to Windmill Bearings, Mechanical Bearings may be used to build rotating contraptions. ",
 				"",
@@ -931,10 +1307,19 @@
 				id: 3378,
 				type: "item",
 				item: "create:mechanical_bearing"
+			}],
+			rewards: [{
+				id: 3435,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
-			x: 13.0d,
+			title: "Chassis",
+			x: 12.5d,
 			y: 4.0d,
 			description: [
 				"Chassis blocks serve to form a base for larger creations. ",
@@ -953,7 +1338,8 @@
 			dependencies: [I;
 				3373,
 				3375,
-				3377
+				3377,
+				3397
 			],
 			dependency_requirement: "one_completed",
 			min_width: 300,
@@ -969,7 +1355,293 @@
 					type: "item",
 					item: "create:linear_chassis"
 				}
-			]
+			],
+			rewards: [{
+				id: 3428,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 4.0d,
+			subtitle: "Outstanding In Its Field",
+			description: ["A smart harvester that gently harvests only mature crops. "],
+			dependencies: [I;3379],
+			id: 3386,
+			tasks: [{
+				id: 3387,
+				type: "item",
+				item: "create:mechanical_harvester"
+			}],
+			rewards: [{
+				id: 3424,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 5.0d,
+			subtitle: "Nothing to See Here, Just a Boring Machine",
+			description: ["Mobile or Stationary, the Mechanical Drill serves as a capable mining apparatus. "],
+			dependencies: [I;3379],
+			id: 3388,
+			tasks: [{
+				id: 3389,
+				type: "item",
+				item: "create:mechanical_drill"
+			}],
+			rewards: [{
+				id: 3425,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 13.5d,
+			y: 7.0d,
+			subtitle: "A Groundbreaking Innovation",
+			description: [
+				"Ploughing Fields is hard work. Make a machine to do it for you!",
+				"",
+				"The Mechanical Plow is useful for more than simple farm maintenance, however, and can make a great addition to a moving minecart machine for pulling up extra track behind it."
+			],
+			dependencies: [I;3379],
+			id: 3390,
+			tasks: [{
+				id: 3391,
+				type: "item",
+				item: "create:mechanical_plough"
+			}],
+			rewards: [{
+				id: 3427,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 14.0d,
+			y: 6.0d,
+			subtitle: "Cutting Edge Technology",
+			description: [
+				"From Chopping Trees to Carving Stone, this Saw has seen it all. ",
+				"",
+				"When stationary and powered, it can serve both for cutting logs to planks and for any stonecutter recipe. Stonecutter recipes will give a random output unless a filter is set on the Saw itself.",
+				"",
+				"When attached to a moving machine, it will chop whole trees in one swoop. Handy for a simple tree farm. "
+			],
+			dependencies: [I;3379],
+			id: 3392,
+			tasks: [{
+				id: 3393,
+				type: "item",
+				item: "create:mechanical_saw"
+			}],
+			rewards: [{
+				id: 3426,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 3.0d,
+			subtitle: "Plug and Play",
+			description: [
+				"In many cases, the tools that can be attached to a moving contraption will also automatically pick up the items they’re harvesting, so long as there is ample storage on the device. ",
+				"",
+				"Simply gluing a chest in place is sufficient for providing that storage place, but getting items out again is another matter. ",
+				"",
+				"Interfaces act as a proxy for the inventories on moving machines. Whenever a Portable Interface on a contraption meets an Interface sitting in the world, the contraption will pause briefly, creating a connection.",
+				"",
+				"If something is set up to pull from, or push to that interface, the machine will remain paused until nothing is flowing through the Interface. Once the flow has stopped, it will move on.",
+				"",
+				"To prevent this pause, or interrupt it early, a Redstone signal can be supplied to the fixed position Interface. "
+			],
+			dependencies: [I;3379],
+			id: 3394,
+			tasks: [
+				{
+					id: 3395,
+					type: "item",
+					item: "create:portable_fluid_interface"
+				},
+				{
+					id: 3396,
+					type: "item",
+					item: "create:portable_storage_interface"
+				}
+			],
+			rewards: [{
+				id: 3423,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 6.0d,
+			subtitle: "It Has It's Ups and Downs",
+			description: [
+				"Need a Lift? ",
+				"",
+				"Build your own with a Rope Pulley by attaching your own platform. ",
+				"",
+				"Use a Gearshift to reverse direction with ease."
+			],
+			dependencies: [I;3371],
+			id: 3397,
+			tasks: [{
+				id: 3398,
+				type: "item",
+				item: "create:rope_pulley"
+			}],
+			rewards: [{
+				id: 3436,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 3.5d,
+			subtitle: "Shifting Into Higher Gear",
+			description: [
+				"Slightly finer control than messing with gear ratios, an Adjustable Chain Gearshift uses a Redstone signal to set the variable speed, up to twice the input speed. ",
+				"",
+				"Consider using an Analogue Lever to easily set a fixed speed. "
+			],
+			dependencies: [I;3286],
+			id: 3399,
+			tasks: [{
+				id: 3400,
+				type: "item",
+				item: "create:adjustable_chain_gearshift"
+			}],
+			rewards: [{
+				id: 3421,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 6.5d,
+			subtitle: "Well, There's an Upside and a Downside",
+			description: [
+				"With a Hose Pulley, fluids may be pumped into or out of the world. Create massive lakes or drain them dry to let your factory grow!",
+				"",
+				"Very large bodies, such as oceans or massive lava lakes in the Nether will be considered infinite, so If you wish to drain something like an Ocean Monument, it may still be necessary to build some retaining walls to break things up. ",
+				"",
+				"Note, the Hose Pulley itself does not pump by itself. Lower the hose into the fluid body and use set up a Mechanical Pump to do the work for you. "
+			],
+			dependencies: [I;3345],
+			id: 3401,
+			tasks: [{
+				id: 3402,
+				type: "item",
+				item: "create:hose_pulley"
+			}],
+			rewards: [{
+				id: 3464,
+				type: "command",
+				title: "Epic Create Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 2.5d,
+			subtitle: "Time to Switch Things Up",
+			description: [
+				"Need to reverse direction? Then the Gearshift is what you’re looking for. ",
+				"",
+				"Applying a Redstone signal to the block will cause the output side to start spinning in the opposite direction relative to the drive side. "
+			],
+			dependencies: [I;3282],
+			id: 3403,
+			tasks: [{
+				id: 3404,
+				type: "item",
+				item: "create:gearshift"
+			}],
+			rewards: [{
+				id: 3458,
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 1.5d,
+			subtitle: "Going to Have to Stop You Right There",
+			description: [
+				"Quite the simple device, really. A Clutch disengages power on a shaft line, making for a simple on/off switch. ",
+				"",
+				"It could useful for more advanced contraptions that need precise timing, as well."
+			],
+			dependencies: [I;3282],
+			id: 3405,
+			tasks: [{
+				id: 3406,
+				type: "item",
+				item: "create:clutch"
+			}]
+		},
+		{
+			x: 5.5d,
+			y: 7.5d,
+			subtitle: "Hello Brew-TEA-Full!",
+			description: [
+				"Stayed out too late par-tea-ing like it's 1773? Need a little more tranquili-tea in your life?",
+				"",
+				"Try some Builder's Tea! It doesn't take oolong to prepare."
+			],
+			dependencies: [I;3339],
+			id: 3410,
+			tasks: [{
+				id: 3411,
+				type: "item",
+				item: "create:builders_tea"
+			}],
+			rewards: [{
+				id: 3414,
+				type: "command",
+				title: "Legendary Create Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
+				player_command: false
+			}]
 		}
 	]
 }

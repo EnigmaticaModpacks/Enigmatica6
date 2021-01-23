@@ -24,6 +24,10 @@ events.listen('recipes', function (event) {
             {
                 input: 'byg:black_sandstone',
                 output: item.of('byg:black_sand', 2)
+            },
+            {
+                input: '#forge:stone',
+                output: 'minecraft:cobblestone'
             }
         ]
     };

@@ -1,7 +1,7 @@
 {
 	id: 2,
 	filename: "immersive_engineering",
-	order_index: 16,
+	order_index: 15,
 	title: "Immersive Engineering",
 	icon: "immersiveengineering:heavy_engineering",
 	default_quest_shape: "",
@@ -70,14 +70,21 @@
 				{
 					id: 12,
 					type: "item",
-					item: "immersiveengineering:coal_coke",
+					title: "Any forge:gems/coal_coke",
+					item: {
+						id: "itemfilters:tag",
+						Count: true,
+						tag: {
+							value: "forge:gems/coal_coke"
+						}
+					},
 					count: 8L
 				}
 			],
 			rewards: [{
 				id: 1546,
 				type: "item",
-				item: "immersiveengineering:coal_coke",
+				item: "emendatusenigmatica:coke_gem",
 				count: 8
 			}]
 		},
