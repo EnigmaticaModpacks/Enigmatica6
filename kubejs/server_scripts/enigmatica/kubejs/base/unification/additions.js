@@ -59,7 +59,7 @@ function gear_unification(event, material, ingot, gem, gear) {
         return;
     }
 
-    var output = item.of(gear, 4),
+    var output = gear,
         input,
         mold = 'immersiveengineering:mold_gear';
 
@@ -74,7 +74,7 @@ function gear_unification(event, material, ingot, gem, gear) {
     // Implemented by Thermal
     // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
 
-    event.recipes.immersiveengineering.metal_press(output, input, mold);
+    event.recipes.immersiveengineering.metal_press(output, ingredient.of(input, 4), mold);
     event.shaped(gear, [' B ', 'BAB', ' B '], {
         A: '#forge:nuggets/iron',
         B: input
