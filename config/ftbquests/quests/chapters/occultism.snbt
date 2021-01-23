@@ -17,12 +17,16 @@
 		{
 			title: "We've Got Spirits!",
 			icon: "occultism:dictionary_of_spirits",
-			x: 7.5d,
-			y: 2.0d,
+			x: 9.0d,
+			y: -1.5d,
 			shape: "gear",
 			description: [
 				"With Occultism, you will learn to summon various otherworldly spirits to do your bidding! From the simple Foliot Ore Crushing Spirit for early ore doubling to the powerful Djinni Ore Miner to gather up all those valuable resources for you!",
+				"",
+				"Any quests in the shape of a hexagon will require a ritual to complete.",
+				"",
 				"The Dictionary of Spirits has everything you need to get you started on your journey.",
+				"",
 				"~The_Boo"
 			],
 			id: 3249,
@@ -45,8 +49,8 @@
 		},
 		{
 			title: "Maybe Just a Little...",
-			x: 7.5d,
-			y: 3.5d,
+			x: 12.0d,
+			y: -1.5d,
 			subtitle: "Unlock your Third Eye!",
 			description: [
 				"Eating just a piece of Demon's Dream Fruit can cause powerful short-term hallucinogenic effects! The Third Eye effect will allow you to see and interract with various otherworldly materials.",
@@ -65,10 +69,25 @@
 			}]
 		},
 		{
-			x: 11.0d,
-			y: 3.5d,
+			x: 13.0d,
+			y: 0.0d,
+			subtitle: "Why Is It Vibrating?!",
+			description: [
+				"The Divination Rod is used to locate the otherworldy materials that lie dormant in this world.",
+				"",
+				"To use the rod, first you must attune it to a material by right clicking a block. Attuning the rod to oak logs to search for otherwood disguised as oak trees, andesite for otherstone.",
+				"",
+				"After the rod has been attuned, simply hold right click until the animation and sound stops. Part of the white crystal will remain purple if you are near any otherworldly materials. It will also highlight the block it found in the world.",
+				"",
+				"In the overworld, these materials are most commonly found in lush underground groves.",
+				"",
+				"If you are having troubles finding these materials through divination, we have added ways for you to create these materials yourself.",
+				"",
+				"Othestone can be crafted by throwing stone in to spirit fire, and otherwood can be acquired by trading a spirit gem with the Farming for Blockheads market villager. It will be disguised as a regular oak tree, look for the occultism tag.",
+				"",
+				"P.S. Sorry for the novel... -The_Boo"
+			],
 			dependencies: [I;3253],
-			optional: true,
 			id: 3255,
 			tasks: [{
 				id: 3256,
@@ -78,23 +97,47 @@
 					Count: true,
 					tag: {}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: 3575,
+					type: "xp",
+					xp: 500
+				},
+				{
+					id: 3576,
+					type: "item",
+					item: "occultism:otherworld_log",
+					count: 4
+				},
+				{
+					id: 3577,
+					type: "item",
+					item: {
+						id: "occultism:otherworld_sapling_natural",
+						Count: true,
+						tag: {}
+					},
+					count: 3
+				}
+			]
 		},
 		{
 			title: "We Don't Need No Water",
 			icon: "occultism:spirit_fire",
-			x: 7.5d,
-			y: 6.0d,
+			x: 11.0d,
+			y: 1.5d,
 			subtitle: "Let the mother trucker burn...",
 			description: [
 				"Spirit Fire is a special flame from the otherworld.",
 				"",
-				"To summon this otherworldly flame, throw a piece of Demon's Dream Fruit on the ground and set it ablaze using a flint and steel.",
+				"To summon this otherworldly flame, throw a piece of Demon's Dream Fruit on the ground and set it ablaze using a flint and steel. Do this on a piece of netherrack for a flame that lasts infinitely.",
 				"",
 				"This flame has the ability to remove the impurities from some items and impart otherworldly properties in to others.",
 				"",
 				"Burn mother trucker... burn..."
 			],
+			dependencies: [I;3480],
 			id: 3290,
 			tasks: [
 				{
@@ -112,15 +155,14 @@
 				{
 					id: 3294,
 					type: "item",
-					item: {
-						id: "occultism:otherstone",
-						Count: 8b
-					},
+					auto: "disabled",
+					item: "occultism:otherstone",
 					count: 8
 				},
 				{
 					id: 3295,
 					type: "item",
+					auto: "disabled",
 					item: "occultism:spirit_attuned_gem",
 					count: 4
 				}
@@ -128,11 +170,13 @@
 		},
 		{
 			title: "I'm Crushing For You So Hard Right Now",
-			x: 2.0d,
-			y: 5.0d,
+			icon: "occultism:crushed_end_stone",
+			x: 9.0d,
+			y: 2.5d,
+			shape: "hexagon",
 			subtitle: "Your First Spirit Friend!!!",
 			description: [
-				"The Foliot Miner Spirit is the first spirit you have access to on your journey with the occult.",
+				"The Foliot Crusher Spirit is the first spirit you have access to on your journey with the occult.",
 				"",
 				"This spirit will take your ores and chonky chunks and crush crush crush them in to dusts which you can smelt in to ingots.",
 				"",
@@ -140,6 +184,7 @@
 				"",
 				"While it does work hard, staying in this mortal realm is tough on our little friend. After awhile it will need to travel back to the other world where it will rest peacefully until you summon it again."
 			],
+			dependencies: [I;3482],
 			id: 3319,
 			tasks: [
 				{
@@ -172,64 +217,107 @@
 			}]
 		},
 		{
-			x: 0.5d,
-			y: 0.0d,
-			id: 3472,
-			tasks: [{
-				id: 3473,
-				type: "item",
-				item: "occultism:iesnium_ore"
-			}]
-		},
-		{
-			x: 1.0d,
-			y: 2.0d,
+			icon: "occultism:candle_white",
+			x: 9.0d,
+			y: 0.5d,
+			subtitle: "Like Pigs to Slaughter",
+			description: [
+				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, or sheep with a Butcher Knife.",
+				"",
+				"They work as a light source and are also great for decoration!"
+			],
+			dependencies: [I;3482],
 			id: 3474,
-			tasks: [{
-				id: 3475,
-				type: "item",
-				item: {
-					id: "occultism:butcher_knife",
-					Count: true,
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: 3571,
+					type: "item",
+					item: "occultism:candle_white"
+				},
+				{
+					id: 3572,
+					type: "item",
+					item: {
+						id: "occultism:butcher_knife",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
 					}
+				},
+				{
+					id: 3573,
+					type: "item",
+					item: "occultism:tallow"
 				}
+			],
+			rewards: [{
+				id: 3581,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
-			x: 1.0d,
-			y: 3.0d,
-			id: 3476,
-			tasks: [{
-				id: 3477,
-				type: "item",
-				item: "occultism:candle_white"
-			}]
-		},
-		{
-			x: 7.5d,
-			y: 7.5d,
+			x: 12.0d,
+			y: 2.5d,
+			description: [
+				"Purified Ink is a special ink made by cleansing black dye in spirit fire",
+				"",
+				"This special ink is required for crafting the Books of Binding used for rituals."
+			],
+			dependencies: [I;3290],
 			id: 3478,
 			tasks: [{
 				id: 3479,
 				type: "item",
 				item: "occultism:purified_ink"
-			}]
+			}],
+			rewards: [
+				{
+					id: 3563,
+					type: "item",
+					item: "occultism:purified_ink",
+					count: 4
+				},
+				{
+					id: 3564,
+					type: "xp",
+					xp: 300
+				}
+			]
 		},
 		{
-			x: -4.0d,
-			y: 3.0d,
+			x: 13.0d,
+			y: 1.5d,
+			subtitle: "Feels Dirty...",
+			description: [
+				"Chalk is an invaluable tool in the Occultist's arsenal. It allows you to draw the cryptic runes used in ritual pentacles.",
+				"",
+				"The chalk you first craft will be full of impurities. Before it can be used in a pentacle, you must clense it with spirit fire."
+			],
+			dependencies: [I;3255],
 			id: 3480,
 			tasks: [{
 				id: 3481,
 				type: "item",
 				item: "occultism:chalk_white_impure"
+			}],
+			rewards: [{
+				id: 3562,
+				type: "xp",
+				xp: 300
 			}]
 		},
 		{
-			x: -3.0d,
-			y: 3.0d,
+			title: "White Chalk",
+			x: 9.0d,
+			y: 1.5d,
+			subtitle: "Feels So Clean!!",
+			description: ["Now that you have cleaned your chalk of impurities, all you need are some candles and some sacrifical bowls and you are ready to perform your first rituals!"],
+			dependencies: [I;3290],
 			id: 3482,
 			tasks: [{
 				id: 3483,
@@ -244,8 +332,16 @@
 			}]
 		},
 		{
-			x: -2.0d,
-			y: 3.0d,
+			title: "Golden Chalk",
+			x: 6.0d,
+			y: 3.5d,
+			subtitle: "Oooooooh Shiney!!",
+			description: [
+				"Golden Chalk is prehaps the most useful chalk type in the occultist's arsenal.",
+				"",
+				"When used in a ritual, it has the effect of binding a spirit to an item. In this way you will be able to make all sorts of useful items to help you on your journey!"
+			],
+			dependencies: [I;3482],
 			id: 3484,
 			tasks: [{
 				id: 3485,
@@ -260,8 +356,11 @@
 			}]
 		},
 		{
-			x: -1.0d,
-			y: 3.0d,
+			x: 3.0d,
+			y: 3.5d,
+			subtitle: "Start Drawing Purple For Me Now!!!",
+			description: ["Purple Chalk is another chalk color in the occultist's arsenal. It allows you to bind more powerful spirits such as the Djinni."],
+			dependencies: [I;3484],
 			id: 3486,
 			tasks: [{
 				id: 3487,
@@ -276,8 +375,14 @@
 			}]
 		},
 		{
-			x: 0.0d,
-			y: 3.0d,
+			x: 3.0d,
+			y: 6.0d,
+			description: [
+				"In order to use your Afrit Essence in a ritual, you will first need to craft and purify it in to Red Chalk.",
+				"",
+				"Using this chalk in your pentacles will allow you to call on more powerful spirits such as the Marid."
+			],
+			dependencies: [I;3552],
 			id: 3488,
 			tasks: [{
 				id: 3489,
@@ -292,18 +397,18 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: 5.5d,
-			id: 3490,
-			tasks: [{
-				id: 3491,
-				type: "item",
-				item: "occultism:storage_controller_base"
-			}]
-		},
-		{
-			x: -3.0d,
-			y: 5.5d,
+			x: 5.0d,
+			y: 4.5d,
+			shape: "hexagon",
+			description: [
+				"The Dimensional Storage Actuator is your gateway in to storing items in the Otherworld!",
+				"",
+				"It starts off rather small, but your storage can be expanded by adding up to 6 Stabilizers(one on each side) pointing at the actuator."
+			],
+			dependencies: [I;
+				3484,
+				3486
+			],
 			id: 3492,
 			tasks: [{
 				id: 3493,
@@ -312,24 +417,19 @@
 			}]
 		},
 		{
-			x: -2.0d,
-			y: 5.5d,
-			id: 3494,
-			tasks: [{
-				id: 3495,
-				type: "item",
-				item: {
-					id: "occultism:dimensional_matrix",
-					Count: true,
-					tag: {
-						spiritName: "Azaklorizur"
-					}
-				}
-			}]
-		},
-		{
-			x: -4.0d,
-			y: 6.5d,
+			x: 5.0d,
+			y: 6.0d,
+			shape: "hexagon",
+			description: [
+				"Dimensional Storage Stabilizers stabilize your actuator's connection with the Otherworld.",
+				"",
+				"The more stable your connection is, the more you are able to store!",
+				"",
+				"Up to 6 stabilizers can be added to any one Actuator. Each Tier will increase the stability allowing you to store more and more items in the Otherworld.",
+				"",
+				"They need to be placed facing the Matrix portion of your actuator and can be up to 5 blocks away. One stabilizer can be placed in each direction, the cardinal directions as well as above and below the actuator."
+			],
+			dependencies: [I;3492],
 			id: 3496,
 			tasks: [{
 				id: 3497,
@@ -338,8 +438,10 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: 6.5d,
+			x: 5.0d,
+			y: 7.0d,
+			shape: "hexagon",
+			dependencies: [I;3496],
 			id: 3498,
 			tasks: [{
 				id: 3499,
@@ -348,8 +450,10 @@
 			}]
 		},
 		{
-			x: -2.0d,
-			y: 6.5d,
+			x: 5.0d,
+			y: 8.0d,
+			shape: "hexagon",
+			dependencies: [I;3498],
 			id: 3500,
 			tasks: [{
 				id: 3501,
@@ -358,8 +462,15 @@
 			}]
 		},
 		{
-			x: -1.0d,
-			y: 6.5d,
+			x: 3.5d,
+			y: 8.0d,
+			shape: "hexagon",
+			subtitle: "*Slaps Roof of Stabilizer* This bad boy can fit so many things inside.",
+			description: ["The final tier of stabilizer. They are expensive though, as each one of these bad boys needs a dragon egg to craft."],
+			dependencies: [I;
+				3500,
+				3488
+			],
 			id: 3502,
 			tasks: [{
 				id: 3503,
@@ -368,18 +479,11 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: 7.5d,
-			id: 3504,
-			tasks: [{
-				id: 3505,
-				type: "item",
-				item: "occultism:storage_remote_inert"
-			}]
-		},
-		{
-			x: -3.0d,
-			y: 7.5d,
+			x: 6.0d,
+			y: 5.5d,
+			shape: "hexagon",
+			description: ["The Storage Accessor is a tablet used to access your storage remotely from any distance and dimension."],
+			dependencies: [I;3492],
 			id: 3506,
 			tasks: [{
 				id: 3507,
@@ -392,28 +496,11 @@
 			}]
 		},
 		{
-			x: -2.0d,
-			y: 7.5d,
-			id: 3508,
-			tasks: [{
-				id: 3509,
-				type: "item",
-				item: "occultism:otherstone_tablet"
-			}]
-		},
-		{
-			x: -1.0d,
-			y: 7.5d,
-			id: 3512,
-			tasks: [{
-				id: 3513,
-				type: "item",
-				item: "occultism:wormhole_frame"
-			}]
-		},
-		{
-			x: -4.0d,
-			y: 8.5d,
+			x: 4.0d,
+			y: 5.5d,
+			shape: "hexagon",
+			description: ["The Stable Wormhole is a placeable object allowing you to both access your storage in any dimension as well as pipe things in and out of your storage."],
+			dependencies: [I;3492],
 			id: 3514,
 			tasks: [{
 				id: 3515,
@@ -426,8 +513,17 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: -0.5d,
+			title: "Soul Gem",
+			x: 6.0d,
+			y: 0.5d,
+			shape: "hexagon",
+			subtitle: "Is That a Mob in Your Pocket, or Are You Just Happy to See Me?",
+			description: [
+				"The Soul Gem allows you to pick up any but the most powerful mobs in the world.",
+				"",
+				"Very useful for hauling sacrifices to your rituals!"
+			],
+			dependencies: [I;3520],
 			id: 3516,
 			tasks: [{
 				id: 3517,
@@ -440,8 +536,17 @@
 			}]
 		},
 		{
-			x: -3.5d,
-			y: -0.5d,
+			x: 7.0d,
+			y: 4.5d,
+			subtitle: "I Wear My Otherworld Goggles at Night",
+			description: [
+				"The Otherworld Goggles allow you to see otherworldy materials without the need to eat Demon's Dream Fruit.",
+				"",
+				"They will not, however, allow you to interract with these items.",
+				"",
+				"Very useful for mining iesnium as it does not require the third eye effect to interract."
+			],
+			dependencies: [I;3484],
 			id: 3518,
 			tasks: [{
 				id: 3519,
@@ -456,8 +561,18 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: -0.5d,
+			x: 6.0d,
+			y: 2.0d,
+			shape: "hexagon",
+			subtitle: "It's Bigger on the Inside!!",
+			description: [
+				"The Surprisingly Substantial Satchel is...",
+				"",
+				"Well...",
+				"",
+				"Surprisingly Substantial!!"
+			],
+			dependencies: [I;3484],
 			id: 3520,
 			tasks: [{
 				id: 3521,
@@ -472,8 +587,10 @@
 			}]
 		},
 		{
-			x: -1.5d,
-			y: -0.5d,
+			x: 1.0d,
+			y: 2.5d,
+			description: ["The Iesnium Pickaxe has the same stats as a normal diamond pickaxe with the added bonus that it is able to mine Iesnium Ore."],
+			dependencies: [I;3558],
 			id: 3522,
 			tasks: [{
 				id: 3523,
@@ -488,44 +605,99 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: -2.5d,
-			id: 3524,
-			tasks: [{
-				id: 3525,
-				type: "kill",
-				icon: "minecraft:end_stone",
-				entity: "occultism:possessed_endermite",
-				value: 1L
-			}]
-		},
-		{
-			x: 3.0d,
-			y: -2.5d,
-			id: 3526,
-			tasks: [{
-				id: 3527,
-				type: "kill",
-				icon: "minecraft:bone",
-				entity: "occultism:possessed_skeleton",
-				value: 1L
-			}]
-		},
-		{
+			icon: "minecraft:end_stone",
 			x: 4.0d,
-			y: -2.5d,
-			id: 3528,
-			tasks: [{
-				id: 3529,
-				type: "kill",
-				icon: "minecraft:ender_pearl",
-				entity: "occultism:possessed_enderman",
-				value: 100L
-			}]
+			y: 1.5d,
+			shape: "hexagon",
+			dependencies: [I;3526],
+			id: 3524,
+			tasks: [
+				{
+					id: 3600,
+					type: "advancement",
+					title: "Summon Possessed Endermite",
+					icon: "occultism:book_of_binding_foliot",
+					advancement: "occultism:possess_endermite",
+					criterion: ""
+				},
+				{
+					id: 3601,
+					type: "kill",
+					icon: "minecraft:end_stone",
+					entity: "occultism:possessed_endermite",
+					value: 1L
+				}
+			]
 		},
 		{
-			x: -5.5d,
-			y: 1.5d,
+			icon: "minecraft:bone",
+			x: 4.5d,
+			y: 2.5d,
+			shape: "hexagon",
+			description: [
+				"Through rituals, you have the ability to possess certain mobs with spirits.",
+				"",
+				"These possessed mobs are a bit stronger, but they also have a chance at dropping a bit more items when killed."
+			],
+			dependencies: [I;
+				3484,
+				3486
+			],
+			id: 3526,
+			tasks: [
+				{
+					id: 3598,
+					type: "advancement",
+					title: "Summon Possessed Skeleton",
+					icon: "occultism:book_of_binding_foliot",
+					advancement: "occultism:possess_skeleton",
+					criterion: ""
+				},
+				{
+					id: 3599,
+					type: "kill",
+					entity: "occultism:possessed_skeleton",
+					value: 1L
+				}
+			]
+		},
+		{
+			icon: "minecraft:ender_pearl",
+			x: 3.5d,
+			y: 0.5d,
+			shape: "hexagon",
+			dependencies: [I;3524],
+			id: 3528,
+			tasks: [
+				{
+					id: 3602,
+					type: "advancement",
+					title: "Summon Possessed Enderman",
+					icon: "occultism:book_of_binding_foliot",
+					advancement: "occultism:possess_enderman",
+					criterion: ""
+				},
+				{
+					id: 3603,
+					type: "kill",
+					icon: "minecraft:ender_pearl",
+					entity: "occultism:possessed_enderman",
+					value: 1L
+				}
+			]
+		},
+		{
+			x: 0.5d,
+			y: 4.5d,
+			shape: "hexagon",
+			description: [
+				"The Dimensional Mineshaft opens a portal to an uninhabited dimension that is full of all kinds of ores just waiting to be mined.",
+				"",
+				"The only problem is, the portal is too small for a normal human to fit.",
+				"",
+				"This is not a problem for spirits however, you will need to summon one of the mining spirits to acquire the ores for you."
+			],
+			dependencies: [I;3558],
 			id: 3530,
 			tasks: [{
 				id: 3531,
@@ -534,8 +706,15 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: 1.5d,
+			x: 1.0d,
+			y: 5.5d,
+			shape: "hexagon",
+			description: [
+				"The Foliot Mining Spirit is able to travel in to the mining dimension to get ores and other precious materials for you.",
+				"",
+				"However, being a weaker spirit, it is slow and runs out of energy fairly quickly."
+			],
+			dependencies: [I;3530],
 			id: 3532,
 			tasks: [{
 				id: 3533,
@@ -551,8 +730,11 @@
 			}]
 		},
 		{
-			x: -3.5d,
-			y: 1.5d,
+			x: 2.0d,
+			y: 5.5d,
+			shape: "hexagon",
+			description: ["The Djinni Mining Spirit is much stronger than its Foliot counterpart. It takes much less time for this stonger spirit to travel to and from the mining dimension, and it can bring back more ores each trip!"],
+			dependencies: [I;3532],
 			id: 3534,
 			tasks: [{
 				id: 3535,
@@ -568,8 +750,15 @@
 			}]
 		},
 		{
-			x: -0.5d,
-			y: -0.5d,
+			x: 2.0d,
+			y: 3.5d,
+			shape: "hexagon",
+			description: [
+				"Normally, Otherworldly ores such are Iesnium can only be mined with tools made from otherworldly materials. ",
+				"",
+				"The occultist, however, has the ability to infuse a pickaxe with a spirit to allow them to mine these ores. The infusion process severely weakens the tool, reducing its durability greatly."
+			],
+			dependencies: [I;3486],
 			id: 3536,
 			tasks: [{
 				id: 3537,
@@ -585,54 +774,306 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: 3.0d,
+			x: 11.0d,
+			y: 0.0d,
+			description: ["Spirit Attuned Crystals are an item used in certain ritual pentacles. They also make great decoration!"],
+			dependencies: [I;3290],
 			id: 3538,
 			tasks: [{
 				id: 3539,
 				type: "item",
 				item: "occultism:spirit_attuned_crystal"
+			}],
+			rewards: [{
+				id: 3565,
+				type: "xp",
+				xp: 300
 			}]
 		},
 		{
-			x: 3.0d,
-			y: 0.0d,
-			id: 3540,
-			tasks: [{
-				id: 3541,
-				type: "item",
-				item: "occultism:otherworld_sapling"
-			}]
-		},
-		{
-			x: -4.0d,
-			y: 4.0d,
+			x: 8.0d,
+			y: 1.0d,
+			description: ["Sacrificial Bowls are used to place sacrificial items on to preform your rituals. They can be placed anywhere touching the pentacle in whatever quantity you need."],
+			dependencies: [I;3482],
 			id: 3542,
 			tasks: [{
 				id: 3543,
 				type: "item",
 				item: "occultism:sacrificial_bowl"
+			}],
+			rewards: [{
+				id: 3578,
+				type: "xp",
+				xp: 300
 			}]
 		},
 		{
-			x: -3.0d,
-			y: 4.0d,
+			x: 7.5d,
+			y: 0.0d,
+			description: ["This is a special Sacrificial Bowl that normally lies in the middle of your pentacle. It is used to activate the ritual."],
+			dependencies: [I;3542],
 			id: 3544,
 			tasks: [{
 				id: 3545,
 				type: "item",
 				item: "occultism:golden_sacrificial_bowl"
+			}],
+			rewards: [{
+				id: 3580,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
 			}]
 		},
 		{
-			x: -5.5d,
-			y: -0.5d,
+			x: 10.0d,
+			y: 1.0d,
+			description: ["The chalk used for making runes can be tough to get rid of using normal tools. That's where the chalk brush comes in. Right click any chalk rune with the brush to remove."],
+			dependencies: [I;3482],
 			id: 3546,
 			tasks: [{
 				id: 3547,
 				type: "item",
 				item: "occultism:brush"
+			}],
+			rewards: [{
+				id: 3569,
+				type: "xp",
+				xp: 100
 			}]
+		},
+		{
+			title: "Control the Weather!",
+			icon: "minecraft:sunflower",
+			x: 3.5d,
+			y: 2.5d,
+			shape: "hexagon",
+			description: [
+				"Certain spirits have the ability to controll the weather in our world.",
+				"",
+				"Summoning the right spirit can bring clear skies, make it rain, or even bring on a thunderstorm!"
+			],
+			dependencies: [I;3486],
+			id: 3548,
+			tasks: [
+				{
+					id: 3604,
+					type: "advancement",
+					title: "Summon a Djinni to Clear the Skies!",
+					icon: "minecraft:sunflower",
+					advancement: "occultism:summon_djinni_clear_weather",
+					criterion: ""
+				},
+				{
+					id: 3605,
+					type: "item",
+					item: "occultism:book_of_binding_djinni"
+				}
+			]
+		},
+		{
+			icon: "minecraft:clock",
+			x: 2.5d,
+			y: 2.5d,
+			shape: "hexagon",
+			subtitle: "What Time is It?!?!",
+			description: [
+				"While the Spirits of the Otherworld do not have the ability to send you forward or backward in time, they do have the power to change the time of day!",
+				"",
+				"Very useful for tasks that require the night to complete."
+			],
+			dependencies: [I;3486],
+			id: 3550,
+			tasks: [
+				{
+					id: 3606,
+					type: "advancement",
+					title: "Summon Djinni to Make it Nighttime",
+					icon: "minecraft:clock",
+					advancement: "occultism:summon_djinni_night_time",
+					criterion: ""
+				},
+				{
+					id: 3607,
+					type: "item",
+					item: "occultism:book_of_binding_djinni"
+				}
+			]
+		},
+		{
+			x: 2.5d,
+			y: 4.5d,
+			shape: "hexagon",
+			description: [
+				"In order to summon more powerful spirits, you will need Afrit Essence.",
+				"",
+				"This essence can only be acquired by summoning an Unbound Afrit Spirit to this mortal plane, and defeating it.",
+				"",
+				"This, however, is no easy task as the Afrit is strong and will summon multiple minions to fight along side it.",
+				"",
+				"Defeate the Afrit to claim its essence."
+			],
+			dependencies: [I;3486],
+			id: 3552,
+			tasks: [{
+				id: 3553,
+				type: "item",
+				item: "occultism:book_of_binding_afrit"
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 4.5d,
+			shape: "hexagon",
+			dependencies: [I;3486],
+			id: 3556,
+			tasks: [{
+				id: 3557,
+				type: "item",
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		},
+		{
+			icon: {
+				id: "occultism:divination_rod",
+				Count: true,
+				tag: {}
+			},
+			x: 1.0d,
+			y: 3.5d,
+			subtitle: "Divination 2: Occultic Boogaloo",
+			description: [
+				"Iesnium is an otherworldy ore found in the Nether. Using your Divination Rod should allow you to find it fairly quickly.",
+				"",
+				"Otherworld Goggles or Demon's Dream Fruit might help you see the material, but you do not need the Third Eye effect to mine it. Though you will need either an Infused Pickaxe or an Iesnium Pickaxe."
+			],
+			dependencies: [I;3536],
+			id: 3558,
+			tasks: [{
+				id: 3608,
+				type: "item",
+				item: "occultism:iesnium_ore"
+			}]
+		},
+		{
+			icon: "occultism:otherworld_sapling",
+			x: 8.0d,
+			y: 3.5d,
+			shape: "hexagon",
+			description: [
+				"The Otherworld Sapling Trader will take the Unstable Otherworld Saplings you get from Groves or the Market and give you stable saplings in return.",
+				"",
+				"These Stable Otherworld Saplings can be seen and mined without the effects of Third Eye."
+			],
+			dependencies: [I;3319],
+			id: 3584,
+			tasks: [
+				{
+					id: 3585,
+					type: "advancement",
+					title: "Summon Otherworld Sapling Trader",
+					icon: "occultism:otherworld_sapling",
+					advancement: "occultism:summon_foliot_sapling_trader",
+					criterion: ""
+				},
+				{
+					id: 3586,
+					type: "item",
+					item: "occultism:book_of_binding_foliot"
+				}
+			],
+			rewards: [{
+				id: 3587,
+				type: "item",
+				item: "occultism:otherworld_sapling",
+				count: 16
+			}]
+		},
+		{
+			title: "Chop Chop Chop!",
+			icon: {
+				id: "minecraft:iron_axe",
+				Count: true,
+				tag: {
+					Damage: 0
+				}
+			},
+			x: 9.0d,
+			y: 3.5d,
+			shape: "hexagon",
+			subtitle: "All your trees are belong to me!!",
+			description: [
+				"The Foliot Lumberjack spirit will harvest all the trees in a set area and deposit them into an inventory of your choosing!",
+				"",
+				"The area he will look for trees in can be set to 16x16, 32x32 and all the way up to 64x64 blocks!"
+			],
+			dependencies: [I;3319],
+			id: 3588,
+			tasks: [
+				{
+					id: 3589,
+					type: "advancement",
+					title: "Summon Foliot Lumberjack",
+					icon: {
+						id: "occultism:book_of_calling_foliot_lumberjack",
+						Count: true,
+						tag: {
+							spiritName: "Azurmiriarc"
+						}
+					},
+					advancement: "occultism:summon_foliot_lumberjack",
+					criterion: ""
+				},
+				{
+					id: 3597,
+					type: "item",
+					item: "occultism:book_of_binding_foliot"
+				}
+			],
+			rewards: [{
+				id: 3590,
+				type: "command",
+				title: "Farmer's Delight",
+				icon: "kubejs:farmers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				player_command: false
+			}]
+		},
+		{
+			title: "Summon Foliot Transporting Spirit",
+			icon: "minecraft:chest_minecart",
+			x: 10.0d,
+			y: 3.5d,
+			shape: "hexagon",
+			subtitle: "Oompa-Loompa Doompety-Doo",
+			description: [
+				"The Foliot Transporter is one of the most useful spirits!",
+				"",
+				"It can transfer items one stack at a time between two inventories. You can even select which side of an infentory to pull from and deposit too!(good for transfering between machines).",
+				"",
+				"While he is in the world, right click him set very basic filtering options.",
+				"",
+				"These little guys make excellent factory workers!"
+			],
+			dependencies: [I;3319],
+			id: 3594,
+			tasks: [
+				{
+					id: 3595,
+					type: "advancement",
+					title: "Summon Foliot Transporter",
+					icon: "minecraft:chest_minecart",
+					advancement: "occultism:summon_foliot_transport_items",
+					criterion: ""
+				},
+				{
+					id: 3596,
+					type: "item",
+					item: "occultism:book_of_binding_foliot"
+				}
+			]
 		}
 	]
 }
