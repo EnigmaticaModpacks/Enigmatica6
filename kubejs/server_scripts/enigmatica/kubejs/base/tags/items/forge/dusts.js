@@ -11,8 +11,10 @@ events.listen('item.tags', function (event) {
         .add('immersiveengineering:dust_coke')
         .add('immersiveengineering:dust_hop_graphite')
         .add('immersiveengineering:dust_saltpeter')
-        .add('thermal:ender_pearl_dust');
+        .add('thermal:ender_pearl_dust')
+        .add('astralsorcery:stardust');
 
+    event.add('forge:dusts/starmetal', 'astralsorcery:stardust');
     event.get('forge:dusts/lapis').add('mekanism:dust_lapis_lazuli');
 
     event.get('forge:dusts').remove('minecraft:prismarine_shard');
