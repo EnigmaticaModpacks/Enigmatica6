@@ -213,6 +213,24 @@ woodVariantsToConstruct.forEach((variant) => {
     buildWoodVariants.push(woodVariant);
 });
 
+const validApiaryBlocks = [
+    'botania:bifrost_pane',
+    'botania:bifrost_perm',
+    'botania:elf_glass_pane',
+    'botania:mana_glass_pane',
+    'botania:elf_glass',
+    'botania:mana_glass',
+
+    'glassential:glass_dark',
+    'glassential:glass_dark_ethereal',
+    'glassential:glass_ethereal',
+    'glassential:glass_light',
+    'glassential:glass_redstone',
+
+    'minecraft:soul_sand',
+    '#minecraft:stone_bricks'
+];
+
 const generatableCobblestone = [
     'byg:dacite_cobblestone',
     'byg:ether_stone',
