@@ -373,7 +373,19 @@ events.listen('recipes', function (event) {
                 E: '#forge:gears/copper',
                 F: 'morphtool:tool'
             }
-        )
+        ),
+        shapedRecipe(item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
+        shapedRecipe(item.of('eidolon:candle', 4), ['B', 'A'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
+        shapedRecipe(item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        })
     ];
 
     recipes.forEach(function (recipe) {

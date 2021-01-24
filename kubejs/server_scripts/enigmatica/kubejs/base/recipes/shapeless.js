@@ -155,7 +155,13 @@ events.listen('recipes', (event) => {
                 }
             }),
             ['minecraft:book', '#forge:bookshelves']
-        )
+        ),
+        shapelessRecipe(Item.of('buildersaddition:large_candle', 4), [
+            '#forge:wax',
+            '#forge:wax',
+            '#forge:wax',
+            '#forge:string'
+        ])
     ];
 
     recipes.forEach(function (recipe) {
