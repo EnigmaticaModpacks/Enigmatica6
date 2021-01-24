@@ -1634,6 +1634,50 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
 				player_command: false
 			}]
+		},
+		{
+			icon: "minecraft:furnace",
+			x: 6.0d,
+			y: 4.5d,
+			subtitle: "I Better Be Gettin' Overtime For This...",
+			description: [
+				"The Djinni Machine Operator Spirit is used with the Dimensional Storage Actuator as a basic form of autocrafting.",
+				"",
+				"Use the Book of Calling to bind the spirit to a machine, then use it again to set which side to have the spirit push items to and pull items from. Finally, assign the djinni an actuator.",
+				"",
+				"In the storage actuator, select a stack of items you want your spirit to process, and put it in the slot on the left of the GUI. This will bring up a menu which will allow you to select the Machine Operator you wish to use."
+			],
+			dependencies: [I;3492],
+			id: 3697,
+			tasks: [
+				{
+					id: 3698,
+					type: "advancement",
+					title: "Summon Djinni Machine Operator",
+					advancement: "occultism:summon_djinni_manage_machine",
+					criterion: ""
+				},
+				{
+					id: 3701,
+					type: "item",
+					item: "occultism:book_of_binding_djinni"
+				}
+			],
+			rewards: [
+				{
+					id: 3702,
+					type: "command",
+					title: "Occultism Epic Loot Chest",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3703,
+					type: "xp",
+					xp: 500
+				}
+			]
 		}
 	]
 }
