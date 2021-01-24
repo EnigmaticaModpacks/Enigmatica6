@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.3.8 Modlist
+## Enigmatica 6 - 0.3.9 Modlist
 - additional_lights-1.16.4-2.1.3
 - AdHooks-1.16.4-6.1.2.0-build.0027
 - AI-Improvements-1.16.2-0.3.0
@@ -11,8 +11,8 @@
 - AppleSkin-mc1.16.2-forge-1.0.14
 - Aquaculture-1.16.4-2.1.12
 - archers_paradox-1.16.3-1.1.1
-- architectury-1.3.88-forge
-- ars_nouveau-1.16.4-1.11.1
+- architectury-1.4.89-forge
+- ars_nouveau-1.16.4-1.11.2
 - Artifacts-1.16.4-2.7.5
 - astralsorcery-1.16.4-1.13.9
 - AttributeFix-1.16.4-9.0.5
@@ -34,7 +34,7 @@
 - BotanyPots-1.16.4-6.0.17
 - BotanyTrees-1.16.4-2.0.10
 - Bountiful Baubles FORGE-1.16.3-0.0.2
-- buildersaddition-1.16.4-20210118a
+- buildersaddition-1.16.4-20210124a
 - buildinggadgets-1.16.4-3.7.3
 - bwncr-1.16.4-3.9.16
 - byg-1.1.7-BETA-v2
@@ -80,19 +80,19 @@
 - dungeons_plus-1.16.4-1.1.2
 - DustrialDecor-1.1.5
 - eidolon-0.2.7
-- elevatorid-1.16.5-1.7.11
+- elevatorid-1.16.5-1.7.12
 - embellishcraft-1.16.4-3.3.0.0
 - EmendatusEnigmatica-1.16.4-1.1.5
 - emojiful-1.16.4-2.1.3
 - EnchantmentDescriptions-1.16.4-6.0.3
 - EnderMail-1.16.4-1.2.0
 - EnderStorage-1.16.4-2.7.1.166-universal
-- engineersdecor-1.16.4-1.1.6
+- engineersdecor-1.16.4-1.1.7
 - enigmatica-1.16.3-0.1.1
 - ensorcellation-1.16.3-1.1.2
 - ensorcelled-0.1a
 - extradisks-1.16.4-1.5.0
-- ExtraStorage-1.16.4-1.3.0
+- ExtraStorage-1.16.4-1.3.1
 - extremeSoundMuffler-3.6_Forge-1.16.4
 - FarmersDelight-1.16.3-0.3.1
 - FarmingForBlockheads_1.16.3-7.2.1
@@ -174,7 +174,7 @@
 - Neat 1.7-26
 - NetherPortalFix_1.16.3-7.2.1
 - observerlib-1.16.4-1.5.1
-- occultism-1.0.6
+- occultism-1.0.8
 - OldJavaWarning-1.16.4-6.0.1
 - overloadedarmorbar-5.1.0
 - PackMenu-1.16.4-2.3.1
@@ -210,7 +210,7 @@
 - rftoolsstorage-1.16-2.0.8
 - rftoolsutility-1.16-3.0.20
 - rhino-1.7.13.10
-- rsgauges-1.16.4-1.2.7
+- rsgauges-1.16.4-1.2.8
 - rsrequestify-1.16.3-2.0.1
 - Runelic-1.16.4-6.0.4
 - SaveYourPets-1.16.2-1.0.0.5
@@ -230,7 +230,7 @@
 - Storage4ComputerCraft-1.16.4-1.2.1
 - StorageDrawers-1.16.3-8.2.1
 - structure_gel-1.16.4-1.7.5
-- supplementaries-0.9.22
+- supplementaries-0.9.22d
 - swingthroughgrass-1.16.4-1.5.3
 - tamedsummon-1.0.0
 - tetra-1.16.4-3.5.3
