@@ -340,42 +340,28 @@ events.listen('recipes', function (event) {
             F: 'alexsmobs:frontier_cap'
         }),
         shapedRecipe(
-            Item.of('morphtool:tool', {
-                'morphtool:is_morphing': 1,
+            Item.of('morphtool:tool').nbt({
                 'morphtool:data': {
-                    blockcarpentry: { id: 'blockcarpentry:texture_wrench', Count: 1 },
-                    powah: { id: 'powah:wrench', Count: 1, tag: { PowahWrenchNBT: {} } },
-                    resourcefulbees: { id: 'resourcefulbees:scraper', Count: 1 },
-                    astralsorcery: { id: 'astralsorcery:wand', Count: 1 },
-                    pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench', Count: 1 },
-                    immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1, tag: { Damage: 0 } },
-                    transport: { id: 'transport:rail_breaker', Count: 1 },
-                    pedestals: { id: 'pedestals:linkingtool', Count: 1 },
-                    botania: { id: 'botania:twig_wand', Count: 1, tag: { color1: 0, color2: 0 } },
-                    ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1, tag: {} },
-                    mekanism: { id: 'mekanism:configurator', Count: 1 },
-                    bloodmagic: { id: 'bloodmagic:ritualtinkerer', Count: 1 },
-                    thermal: { id: 'thermal:wrench', Count: 1 },
-                    rftoolsbase: { id: 'rftoolsbase:smartwrench', Count: 1 },
-                    create: {
-                        id: 'create:wrench',
-                        Count: 1,
-                        tag: {
-                            'morphtool:is_morphing': 1,
-                            'morphtool:displayName': { translate: 'item.create.wrench' },
-                            display: {
-                                Name: {
-                                    translate: 'morphtool.sudo_name',
-                                    with: [{ color: 'green', translate: 'item.create.wrench' }]
-                                }
-                            }
-                        }
-                    },
-                    chiselsandbits: { id: 'chiselsandbits:wrench_wood', Count: 1, tag: { Damage: 0 } },
-                    refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
-                    quantumstorage: { id: 'quantumstorage:hammer', Count: 1, tag: { mode: 'link' } },
-                    prettypipes: { id: 'prettypipes:wrench', Count: 1 },
-                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 }
+                    blockcarpentry: { id: 'blockcarpentry:texture_wrench' },
+                    powah: { id: 'powah:wrench' },
+                    resourcefulbees: { id: 'resourcefulbees:scraper' },
+                    astralsorcery: { id: 'astralsorcery:wand' },
+                    pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench' },
+                    immersiveengineering: { id: 'immersiveengineering:hammer' },
+                    transport: { id: 'transport:rail_breaker' },
+                    pedestals: { id: 'pedestals:linkingtool' },
+                    botania: { id: 'botania:twig_wand', tag: { color1: 0, color2: 0 } },
+                    ars_nouveau: { id: 'ars_nouveau:dominion_wand' },
+                    mekanism: { id: 'mekanism:configurator' },
+                    bloodmagic: { id: 'bloodmagic:ritualtinkerer' },
+                    thermal: { id: 'thermal:wrench' },
+                    rftoolsbase: { id: 'rftoolsbase:smartwrench' },
+                    create: { id: 'create:wrench' },
+                    chiselsandbits: { id: 'chiselsandbits:wrench_wood' },
+                    refinedstorage: { id: 'refinedstorage:wrench' },
+                    quantumstorage: { id: 'quantumstorage:hammer' },
+                    prettypipes: { id: 'prettypipes:wrench' },
+                    storagedrawers: { id: 'storagedrawers:drawer_key' }
                 }
             }),
             ['ABA', 'CFD', 'AEA'],
