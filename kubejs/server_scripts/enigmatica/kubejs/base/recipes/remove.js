@@ -181,4 +181,11 @@ events.listen('recipes', function (event) {
         input: '#forge:ores/nickel',
         type: 'thermal:smelter'
     });
+
+    event.remove({ type: 'pedestals:pedestal_crushing', output: '#forge:dyes' });
+    event.remove({ type: 'create:milling', output: '#forge:dyes' });
+    event.remove({ type: 'create:crushing', output: '#forge:dyes' });
+    event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
+    event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
+    event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
 });
