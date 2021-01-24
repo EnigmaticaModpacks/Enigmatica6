@@ -19,6 +19,48 @@ events.listen('jei.hide.items', (event) => {
         );
     });
 
+    var itemsToHide = [
+        'ars_nouveau:arcane_brick',
+        'ars_nouveau:arcane_ore',
+        'bloodmagic:coalsand',
+        'bloodmagic:saltpeter',
+        'bloodmagic:sulfur',
+        'create:powdered_obsidian',
+        'create:honey_bucket',
+        'eidolon:tallow',
+        'immersiveengineering:dust_saltpeter',
+        'immersiveengineering:dust_wood',
+        'mapperbase:bitumen_ore',
+        'mapperbase:iron_plate',
+        'mapperbase:iron_rod',
+        'mapperbase:raw_bitumen',
+        'morevanillalib:obsidian_shard',
+        'pedestals:dustflour',
+        'powah:uraninite_ore',
+        'powah:uraninite_ore_dense',
+        'powah:uraninite_ore_poor',
+        'powah:uraninite_raw',
+        'powah:uraninite_raw_dense',
+        'powah:uraninite_raw_poor',
+        'quark:biotite',
+        'quark:biotite_ore',
+        'quark:tallow',
+        'thermal:coal_coke',
+        'thermal:coal_coke_block',
+        'thermal:ender_pearl_dust',
+        'thermal:sawdust',
+        'supplementaries:pedestal',
+        'supplementaries:crank',
+        'supplementaries:cog_block',
+        'supplementaries:redstone_illuminator',
+        'supplementaries:turn_table',
+        'supplementaries:jar',
+        'supplementaries:jar_tinted',
+        'supplementaries:firefly_jar',
+        'supplementaries:stone_lamp',
+        'supplementaries:sack',
+        'supplementaries:blackboard'
+    ];
     itemsToHide.forEach((disabledItem) => {
         if (!item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
