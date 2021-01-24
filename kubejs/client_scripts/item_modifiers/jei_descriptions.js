@@ -3,12 +3,13 @@ events.listen('jei.information', (event) => {
         items: [
             {
                 item: 'simplefarming:cheese_slice',
-                description: 'Obtained by right-clicking a Wheel of Cheese.'
+                description: ['Obtained by right-clicking a Wheel of Cheese.']
             }
         ]
     };
-    data.items.forEach(function (pair) {
-        event.add(pair.item, pair.description);
+
+    data.items.forEach(function (item) {
+        event.add(item.item, item.description);
     });
 
     global.disabledItems.forEach((item) => {
