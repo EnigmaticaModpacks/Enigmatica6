@@ -1,6 +1,7 @@
 //priority: 1000
 
 const air = 'minecraft:air';
+//
 const beamRecipes = [
     { output: 'decorative_blocks:hellbark_beam', input: 'biomesoplenty:hellbark_logs' },
     { output: 'decorative_blocks:jungle_beam', input: 'minecraft:jungle_logs' },
@@ -23,6 +24,7 @@ const beamRecipes = [
     { output: 'decorative_blocks:warped_beam', input: 'minecraft:warped_stems' }
 ];
 
+// priority of which mod output should come from, if applicable
 const modPriorities = [
     'emendatusenigmatica',
     'minecraft',
@@ -47,6 +49,7 @@ const modPriorities = [
     'titanium'
 ];
 
+// Used for recipes/tags that use colors
 const colors = [
     'cyan',
     'purple',
@@ -66,10 +69,14 @@ const colors = [
     'light_gray'
 ];
 
+// Used to determine which material types to unify
 const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
 
+// Used for tag generation
 const createStoneTypes = ['scoria', 'limestone', 'weathered_limestone', 'dolomite', 'gabbro', 'dark_scoria'];
 
+// Used to populate the buildWoodVariants constant - Add variants here to enable compat with various cutting mechanics.
+// Be aware that you may need to specify exceptions in the loop below for this to work properly.
 var woodVariantsToConstruct = [
     'minecraft:acacia',
     'minecraft:birch',
@@ -999,7 +1006,7 @@ const dyeSources = [
         tertiary: 'minecraft:pink_dye'
     },
     {
-        input: 'minecraft:cocoea_beans',
+        input: 'minecraft:cocoa_beans',
         type: 'small',
         primary: 'minecraft:brown_dye',
         secondary: 'minecraft:brown_dye',
