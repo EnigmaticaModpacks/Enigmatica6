@@ -267,6 +267,7 @@ const generatableStone = [
     'byg:blue_sandstone',
     'byg:dacite',
     'byg:purple_sandstone',
+    'byg:pink_sandstone',
     'byg:scoria_stone',
     'byg:white_sandstone',
     'embellishcraft:basalt',
