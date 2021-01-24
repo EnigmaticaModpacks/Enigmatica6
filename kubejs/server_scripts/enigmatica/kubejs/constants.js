@@ -70,8 +70,6 @@ const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 
 
 const createStoneTypes = ['scoria', 'limestone', 'weathered_limestone', 'dolomite', 'gabbro', 'dark_scoria'];
 
-const vanillaWoodTypes = ['oak', 'birch', 'spruce', 'jungle', 'acacia', 'dark_oak'];
-
 var woodVariantsToConstruct = [
     'minecraft:acacia',
     'minecraft:birch',
@@ -213,6 +211,7 @@ woodVariantsToConstruct.forEach((variant) => {
     buildWoodVariants.push(woodVariant);
 });
 
+// Items added here will get the 'valid_apiary' tag, and be usable as Apiary multiblock walls
 const validApiaryBlocks = [
     'botania:bifrost_pane',
     'botania:bifrost_perm',
@@ -231,6 +230,7 @@ const validApiaryBlocks = [
     '#minecraft:stone_bricks'
 ];
 
+// Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
 const generatableCobblestone = [
     'byg:dacite_cobblestone',
     'byg:ether_stone',
@@ -256,6 +256,7 @@ const generatableCobblestone = [
     'create:weathered_limestone_cobblestone',
     'create:limestone_cobblestone'
 ];
+// Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
