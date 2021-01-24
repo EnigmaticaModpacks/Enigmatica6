@@ -6,8 +6,6 @@
 		#maximum range
 		#Range: 0 ~ 256
 		range = 64
-		#additional blocks besides fences that can accept a sign post
-		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
 
 	[blocks.bellows]
 		#bellows pushes air following this equation: 
@@ -86,6 +84,10 @@
 		#makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = true
 
+	[blocks.sign_post]
+		#additional blocks besides fences that can accept a sign post
+		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
+
 #Configure spawning conditions
 [spawns]
 
@@ -146,6 +148,12 @@
 	[tweaks.hanging_flower_pots]
 		#allows you to place hanging flower pots. Works with any modded pot too
 		enabled = true
+
+	[tweaks.cake_tweaks]
+		#allows you to place a cake ontop of another
+		double_cake = true
+		#replaces normal cake placement with a directional one
+		directional_cake = true
 
 [items]
 
