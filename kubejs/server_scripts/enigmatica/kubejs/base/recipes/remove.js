@@ -60,6 +60,7 @@ events.listen('recipes', function (event) {
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',
 
+        'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'immersiveengineering:crafting/stick_steel',
@@ -77,6 +78,8 @@ events.listen('recipes', function (event) {
         'mekanism:crushing/stone/to_cobblestone',
 
         'morevanillalib:obsidian_shard',
+
+        'quark:building/crafting/tallow_from_block',
 
         'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',

@@ -161,7 +161,8 @@ events.listen('recipes', (event) => {
             '#forge:wax',
             '#forge:wax',
             '#forge:string'
-        ])
+        ]),
+        shapelessRecipe(Item.of('occultism:tallow', 9), ['quark:tallow_block'])
     ];
 
     recipes.forEach(function (recipe) {
