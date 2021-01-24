@@ -1,3 +1,8 @@
 events.listen('recipes', (event) => {
-    //event.blasting(input, output)
+    var data = {
+        recipes: [{ input: 'minecraft:rotten_flesh', output: 'occultism:tallow', xp: 0.5 }]
+    };
+    data.recipes.forEach((recipe) => {
+        event.blasting(recipe.output, recipe.input).xp(recipe.xp);
+    });
 });
