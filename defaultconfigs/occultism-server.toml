@@ -1,0 +1,59 @@
+
+#Storage Settings
+[storage]
+	#The amount of slots the storage stabilizer tier 1 provides.
+	stabilizerTier1Slots = 256
+	#The amount of slots the storage stabilizer tier 2 provides.
+	stabilizerTier2Slots = 512
+	#The amount of slots the storage stabilizer tier 3 provides.
+	stabilizerTier3Slots = 2048
+	#The amount of slots the storage stabilizer tier 4 provides.
+	stabilizerTier4Slots = 4096
+	#The amount of slots the storage actuator provides.
+	controllerBaseSlots = 128
+
+#Ritual Settings
+[rituals]
+	#Enables the ritual to clear rainy weather.
+	enableClearWeatherRitual = true
+	#Enables the ritual to start rainy weather.
+	enableRainWeatherRitual = true
+	#Enables the ritual to start a thunderstorm.
+	enableThunderWeatherRitual = true
+	#Enables the ritual to set time to day.
+	enableDayTimeRitual = true
+	#Enables the ritual to set time to night.
+	enableNightTimeRitual = true
+
+#Dimensional Mineshaft Settings
+[dimensional_mineshaft]
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_foliot_unspecialized]
+		#The amount of time it takes the spirit to perform one mining operation.
+		maxMiningTime = 400
+		#The amount of blocks the spirit will obtain per mining operation
+		rollsPerOperation = 1
+		#The amount of mining operations the spirit can perform before breaking.
+		durability = 1000
+
+	#Miner Spirit Settings
+	[dimensional_mineshaft.miner_djinni_ores]
+		#The amount of time it takes the spirit to perform one mining operation.
+		maxMiningTime = 300
+		#The amount of blocks the spirit will obtain per mining operation
+		rollsPerOperation = 2
+		#The amount of mining operations the spirit can perform before breaking.
+		durability = 5000
+
+#Spirit Job Settings
+[spirit_job]
+	#The multiplier to each crushing recipe's crushing_time for Tier 1 Crusher Spirits.
+	tier1CrusherTimeMultiplier = 2.0
+	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 2 Crusher Spirits.
+	tier2CrusherTimeMultiplier = 1.0
+	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 3 Crusher Spirits.
+	tier3CrusherTimeMultiplier = 0.5
+	#Currently unused. The multiplier to each crushing recipe's crushing_time for Tier 4 Crusher Spirits.
+	tier4CrusherTimeMultiplier = 0.2
+
