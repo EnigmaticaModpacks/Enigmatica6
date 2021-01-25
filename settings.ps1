@@ -59,12 +59,12 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.3.9"
+$MODPACK_VERSION = "0.3.10"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.3.8"
+$LAST_MODPACK_VERSION = "0.3.9"
 
-$FORGE_VERSION = 35.1.37
+$FORGE_VERSION = 36.0.1
 
 $CLIENT_FILENAME = "Enigmatica6"
 
@@ -74,13 +74,13 @@ $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 - $MODPACK_VERSION"
 # An array of compatible game versions of Minecraft.
 # See GameVersions.json for possible versions.
 # Default: @(6756) - which is Minecraft 1.12.2
-$GAME_VERSIONS = @(8134) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 is 1.16.3, 8134is 1.16.4
+$GAME_VERSIONS = @(8134) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 is 1.16.3, 8134 is 1.16.4
 
 # Can be "markdown", "text" or "html"
 $CLIENT_CHANGELOG_TYPE = "markdown"
 
 $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
-"Using Forge-1.16.4-35.1.37 <br /> <br /> " +
+"Using Forge-1.16.5-36.0.1 <br /> <br /> " +
 "The Changelog is currently being written, it should be done within 10 minutes. "
 
 
