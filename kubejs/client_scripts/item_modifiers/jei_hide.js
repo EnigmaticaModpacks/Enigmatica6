@@ -41,7 +41,7 @@ events.listen('jei.hide.items', (event) => {
         'supplementaries:sack',
         'supplementaries:blackboard'
     ];
-    
+
     global.materialsToUnify.forEach((material) => {
         if (material == 'iesnium' || material == 'graphite' || material == 'hop_graphite') {
             return;
@@ -72,6 +72,12 @@ events.listen('jei.hide.items', (event) => {
         if (!item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
         }
+    });
+
+    global.colors.forEach((color) => {
+        rsitems.forEach(function (rsitem) {
+            event.hide('refinedstorage:' + color + '_' + rsitem);
+        });
     });
 
     var regexHide = [

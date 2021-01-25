@@ -112,5 +112,43 @@ const materialsToUnify = [
     'starmetal'
 ];
 
+const colors = [
+    'cyan',
+    'purple',
+    'blue',
+    'brown',
+    'green',
+    'red',
+    'black',
+    'white',
+    'orange',
+    'magenta',
+    'light_blue',
+    'yellow',
+    'lime',
+    'pink',
+    'gray',
+    'light_gray'
+];
+
+const rsitems = ['grid', 
+'crafting_grid', 
+'pattern_grid', 
+'fluid_grid', 
+'controller', 
+'creative_controller', 
+'network_receiver', 
+'network_transmitter', 
+'relay', 
+'detector', 
+'security_manager', 
+'wireless_transmitter', 
+'crafter', 
+'crafting_monitor',
+'disk_manipulator',
+'crafter_manager'];
+
 global.materialsToUnify = materialsToUnify;
 global.disabledItems = disabledItems;
+global.colors = colors;
+global.rsitems = rsitems;
