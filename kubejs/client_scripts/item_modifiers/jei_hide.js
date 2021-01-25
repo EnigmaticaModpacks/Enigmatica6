@@ -75,7 +75,7 @@ events.listen('jei.hide.items', (event) => {
     });
 
     global.colors.forEach((color) => {
-        rsitems.forEach(function (rsitem) {
+        global.rsitems.forEach((rsitem) => {
             event.hide('refinedstorage:' + color + '_' + rsitem);
         });
     });
