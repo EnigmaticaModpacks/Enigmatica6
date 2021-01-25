@@ -18,10 +18,14 @@ events.listen('jei.information', (event) => {
         event.add(item.item, item.description);
     });
 
-    global.disabledItems.forEach((item) => {
+    disabledItems.forEach((item) => {
         event.add(
             item,
             "This item has been disabled, if you managed to obtain it please report it on Enigmatica 6's issue tracker: https://github.com/NillerMedDild/Enigmatica6/issues"
         );
+    });
+
+    refinedStorageItems.forEach((item) => {
+        event.add(`refinedstorage:${item}`, 'Can be dyed through crafting or by right clicking it with dye in-world.');
     });
 });

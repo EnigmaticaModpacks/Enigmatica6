@@ -1,7 +1,7 @@
 //priority: 1000
 
 const air = 'minecraft:air';
-//
+
 const beamRecipes = [
     { output: 'decorative_blocks:hellbark_beam', input: 'biomesoplenty:hellbark_logs' },
     { output: 'decorative_blocks:jungle_beam', input: 'minecraft:jungle_logs' },
