@@ -131,22 +131,24 @@ const colors = [
     'light_gray'
 ];
 
-const rsitems = ['grid', 
-'crafting_grid', 
-'pattern_grid', 
-'fluid_grid', 
-'controller', 
-'creative_controller', 
-'network_receiver', 
-'network_transmitter', 
-'relay', 
-'detector', 
-'security_manager', 
-'wireless_transmitter', 
-'crafter', 
-'crafting_monitor',
-'disk_manipulator',
-'crafter_manager'];
+const rsitems = [
+    'grid',
+    'crafting_grid',
+    'pattern_grid',
+    'fluid_grid',
+    'controller',
+    'creative_controller',
+    'network_receiver',
+    'network_transmitter',
+    'relay',
+    'detector',
+    'security_manager',
+    'wireless_transmitter',
+    'crafter',
+    'crafting_monitor',
+    'disk_manipulator',
+    'crafter_manager'
+];
 
 global.materialsToUnify = materialsToUnify;
 global.disabledItems = disabledItems;
