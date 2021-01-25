@@ -74,7 +74,7 @@ $CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 - $MODPACK_VERSION"
 # An array of compatible game versions of Minecraft.
 # See GameVersions.json for possible versions.
 # Default: @(6756) - which is Minecraft 1.12.2
-$GAME_VERSIONS = @(8134) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 is 1.16.3, 8134 is 1.16.4
+$GAME_VERSIONS = @(8203) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 is 1.16.3, 8134 is 1.16.4, 8203 is 1.16.5
 
 # Can be "markdown", "text" or "html"
 $CLIENT_CHANGELOG_TYPE = "markdown"
