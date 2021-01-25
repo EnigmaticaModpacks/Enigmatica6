@@ -9,13 +9,8 @@ events.listen('recipes', (event) => {
             }
         ]
     };
+    event.remove({id: 'immersiveengineering:alloysmelter/brass'});
     data.recipes.forEach((recipe) => {
-        event.remove({
-            input1: recipe.input1,
-            input2: recipe.input2,
-            mod: 'immersiveengineering',
-            type: 'immersiveengineering:alloy'
-        });
         event.recipes.immersiveengineering.alloy(recipe.output, recipe.input1, recipe.input2);
     });
 });
