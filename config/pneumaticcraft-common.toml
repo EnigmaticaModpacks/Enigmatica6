@@ -31,6 +31,8 @@
 	#When an Oil Lake would be generated at the surface (see 'oil_generation_chance'), percentage chance that this will actually generate a lake. Set to 0 for no surface oil lakes, and fewer lakes overall. Higher values don't guarantee surface oil lakes, but make them more likely, as well as making oil lakes more likely overall. It is recommended to adjust this value in conjunction with 'oil_generation_chance'.
 	#Range: 0 ~ 100
 	surface_oil_generation_chance = 25
+	#Show particle trail indicating the currently-debugged drone's planned path
+	drone_debugger_path_particles = true
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
