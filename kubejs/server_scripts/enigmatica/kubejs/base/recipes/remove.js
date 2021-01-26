@@ -184,7 +184,11 @@ events.listen('recipes', function (event) {
         input: '#forge:ores/nickel',
         type: 'thermal:smelter'
     });
-
+    event.remove({
+        input: 'minecraft:fire_charge',
+        mod: 'thermal',
+        type: 'minecraft:crafting_shapeless'
+    });
     event.remove({ type: 'pedestals:pedestal_crushing', output: '#forge:dyes' });
     event.remove({ type: 'create:milling', output: '#forge:dyes' });
     event.remove({ type: 'create:crushing', output: '#forge:dyes' });
