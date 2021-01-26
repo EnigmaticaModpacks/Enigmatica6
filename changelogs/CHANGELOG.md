@@ -1,3 +1,25 @@
+### Enigmatica 6 v0.3.10
+
+_Using Forge-1.16.5-36.0.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.10.txt)_
+
+
+
+**Now on Minecraft 1.16.5! You can update existing worlds without issues.**
+
+
+
+**Bug Fixes**
+
+- KubeJS script errors on servers running 0.3.9 [\#1050](https://github.com/NillerMedDild/Enigmatica6/issues/1050)
+- Broken Undergarden [\#1049](https://github.com/NillerMedDild/Enigmatica6/issues/1049)
+- Multiblock Centrifuge Bug [\#1048](https://github.com/NillerMedDild/Enigmatica6/issues/1048)
+- Occultism Ores Generating [\#1045](https://github.com/NillerMedDild/Enigmatica6/issues/1045)
+- Different Brass Alloy Recipes [\#1043](https://github.com/NillerMedDild/Enigmatica6/issues/1043)
+- Wither Bee keeps killing itself \(Fixed by setting size to 1 temporarily\) [\#1003](https://github.com/NillerMedDild/Enigmatica6/issues/1003)
+- ResourcefulBees getting stuck in apiary walls [\#900](https://github.com/NillerMedDild/Enigmatica6/issues/900)
+- Create Empty Placeholders for Removed Scripts [\#1059](https://github.com/NillerMedDild/Enigmatica6/pull/1059) ([MuteTiefling](https://github.com/MuteTiefling))
+- Hide from JEI script fix and Akashic Tome fixes [\#1047](https://github.com/NillerMedDild/Enigmatica6/pull/1047) ([Merlo17](https://github.com/Merlo17))
+
 ### Enigmatica 6 v0.3.9
 
 _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.9.txt)_

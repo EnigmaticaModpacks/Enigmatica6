@@ -12,6 +12,7 @@ $CLIENT_MODS = @(
 )
 
 $CONFIGS_TO_REMOVE = @(
+	"jei/bookmarks.ini",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
 	"artifacts-client.toml",
