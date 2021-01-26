@@ -8,17 +8,28 @@ _Using Forge-1.16.5-36.0.1_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 
 
+**Improvements/Changes**
+
+-   Removed Thermal Fire Charge recipes for alloys, so players have to use more interesting mechanics over crafting.
+-   Removed iron tags from rusty iron, to reduce clutter in JEI [#1051](https://github.com/NillerMedDild/Enigmatica6/pull/1051) ([Merlo17](https://github.com/Merlo17))
+-   hidden Refined Storage colored blocks from JEI [\#1051](https://github.com/NillerMedDild/Enigmatica6/pull/1051) ([Merlo17](https://github.com/Merlo17))
+-   Changed Immersive Engineering's Brass recipes to bring in line with the rest of the pack's mods [\#1046](https://github.com/NillerMedDild/Enigmatica6/pull/1046) ([Merlo17](https://github.com/Merlo17))
+
 **Bug Fixes**
 
-- KubeJS script errors on servers running 0.3.9 [\#1050](https://github.com/NillerMedDild/Enigmatica6/issues/1050)
-- Broken Undergarden [\#1049](https://github.com/NillerMedDild/Enigmatica6/issues/1049)
-- Multiblock Centrifuge Bug [\#1048](https://github.com/NillerMedDild/Enigmatica6/issues/1048)
-- Occultism Ores Generating [\#1045](https://github.com/NillerMedDild/Enigmatica6/issues/1045)
-- Different Brass Alloy Recipes [\#1043](https://github.com/NillerMedDild/Enigmatica6/issues/1043)
-- Wither Bee keeps killing itself \(Fixed by setting size to 1 temporarily\) [\#1003](https://github.com/NillerMedDild/Enigmatica6/issues/1003)
-- ResourcefulBees getting stuck in apiary walls [\#900](https://github.com/NillerMedDild/Enigmatica6/issues/900)
-- Create Empty Placeholders for Removed Scripts [\#1059](https://github.com/NillerMedDild/Enigmatica6/pull/1059) ([MuteTiefling](https://github.com/MuteTiefling))
-- Hide from JEI script fix and Akashic Tome fixes [\#1047](https://github.com/NillerMedDild/Enigmatica6/pull/1047) ([Merlo17](https://github.com/Merlo17))
+-   Server Crash after modpack update [\#1074](https://github.com/NillerMedDild/Enigmatica6/issues/1074)
+-   "Nou're" [\#1073](https://github.com/NillerMedDild/Enigmatica6/issues/1073)
+-   Please add extrastorage to mekanism cardboardModBlacklist [\#1070](https://github.com/NillerMedDild/Enigmatica6/issues/1070)
+-   KubeJS script errors on servers running 0.3.9 [\#1050](https://github.com/NillerMedDild/Enigmatica6/issues/1050)
+-   Broken Undergarden [\#1049](https://github.com/NillerMedDild/Enigmatica6/issues/1049)
+-   Multiblock Centrifuge Bug [\#1048](https://github.com/NillerMedDild/Enigmatica6/issues/1048)
+-   Occultism Ores Generating [\#1045](https://github.com/NillerMedDild/Enigmatica6/issues/1045)
+-   Different Brass Alloy Recipes [\#1043](https://github.com/NillerMedDild/Enigmatica6/issues/1043)
+-   Wither Bee keeps killing itself \(Fixed by setting size to 1 temporarily\) [\#1003](https://github.com/NillerMedDild/Enigmatica6/issues/1003)
+-   ResourcefulBees getting stuck in apiary walls [\#900](https://github.com/NillerMedDild/Enigmatica6/issues/900)
+-   Create Empty Placeholders for Removed Scripts [\#1059](https://github.com/NillerMedDild/Enigmatica6/pull/1059) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Hide from JEI script fix and Akashic Tome fixes [\#1047](https://github.com/NillerMedDild/Enigmatica6/pull/1047) ([Merlo17](https://github.com/Merlo17))
+-   Updates deleting JEI bookmarks [\#1065](https://github.com/NillerMedDild/Enigmatica6/issues/1065)
 
 ### Enigmatica 6 v0.3.9
 
@@ -26,18 +37,18 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements/Changes**
 
-- AS Starmetal suggestions [\#1025](https://github.com/NillerMedDild/Enigmatica6/issues/1025)
-- Crushing to Dye - Recipes Normalized and Outputs Expanded [\#1036](https://github.com/NillerMedDild/Enigmatica6/pull/1036) ([MuteTiefling](https://github.com/MuteTiefling))
-- Custom recipe to make candles from beeswax [\#1026](https://github.com/NillerMedDild/Enigmatica6/issues/1026)
-- Tallow Unification [\#1020](https://github.com/NillerMedDild/Enigmatica6/issues/1020)
+-   AS Starmetal suggestions [\#1025](https://github.com/NillerMedDild/Enigmatica6/issues/1025)
+-   Crushing to Dye - Recipes Normalized and Outputs Expanded [\#1036](https://github.com/NillerMedDild/Enigmatica6/pull/1036) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Custom recipe to make candles from beeswax [\#1026](https://github.com/NillerMedDild/Enigmatica6/issues/1026)
+-   Tallow Unification [\#1020](https://github.com/NillerMedDild/Enigmatica6/issues/1020)
 
 **Bug Fixes**
 
-- Loot Duplication exploit [\#1037](https://github.com/NillerMedDild/Enigmatica6/issues/1037)
-- Stone Bricks not valid Apiary block [\#1033](https://github.com/NillerMedDild/Enigmatica6/issues/1033)
-- Akashic Tome and Morph Tool not behaving properly [\#1032](https://github.com/NillerMedDild/Enigmatica6/issues/1032)
-- Biomes of Plenty sandstone variant recipes missing from custom stone gen. [\#1028](https://github.com/NillerMedDild/Enigmatica6/issues/1028)
-- Crash when putting labeled crate into sophisticated backpack. [\#1010](https://github.com/NillerMedDild/Enigmatica6/issues/1010)
+-   Loot Duplication exploit [\#1037](https://github.com/NillerMedDild/Enigmatica6/issues/1037)
+-   Stone Bricks not valid Apiary block [\#1033](https://github.com/NillerMedDild/Enigmatica6/issues/1033)
+-   Akashic Tome and Morph Tool not behaving properly [\#1032](https://github.com/NillerMedDild/Enigmatica6/issues/1032)
+-   Biomes of Plenty sandstone variant recipes missing from custom stone gen. [\#1028](https://github.com/NillerMedDild/Enigmatica6/issues/1028)
+-   Crash when putting labeled crate into sophisticated backpack. [\#1010](https://github.com/NillerMedDild/Enigmatica6/issues/1010)
 
 ### Enigmatica 6 v0.3.8
 
@@ -45,45 +56,45 @@ _Using Forge-1.16.4-35.1.37_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **New Mods!**
 
-- Lootr
-- Tome of Blood
-- Undergarden/Tetra Patch
+-   Lootr
+-   Tome of Blood
+-   Undergarden/Tetra Patch
 
 **Improvements/Changes**
 
-- Bee Update \(Biomes, Secondary Outputs, and Custom Honey\) [\#996](https://github.com/NillerMedDild/Enigmatica6/pull/996) ([Ridanisaurus](https://github.com/Ridanisaurus))
-- Blood Magic Processing Update, now using Blood Magic style ingredients [\#1002](https://github.com/NillerMedDild/Enigmatica6/pull/1002) ([MuteTiefling](https://github.com/MuteTiefling))
-- Buff Occultism Storage [\#1013](https://github.com/NillerMedDild/Enigmatica6/pull/1013) ([theboo](https://github.com/theboo))
-- Creosote Unification [\#999](https://github.com/NillerMedDild/Enigmatica6/pull/999) ([MuteTiefling](https://github.com/MuteTiefling))
-- Honey Unification [\#1007](https://github.com/NillerMedDild/Enigmatica6/pull/1007) ([MuteTiefling](https://github.com/MuteTiefling))
-- Quests: Create [\#569](https://github.com/NillerMedDild/Enigmatica6/issues/569)
-- Quests: Occultism [\#659](https://github.com/NillerMedDild/Enigmatica6/issues/659)
-- Suggestion: Add Use to Thermal Creosote  [\#988](https://github.com/NillerMedDild/Enigmatica6/issues/988)
-- Suggestion: Unify honey types [\#1001](https://github.com/NillerMedDild/Enigmatica6/issues/1001)
-- Super Secret Occultism Loot of Doom \(No peaking!\) [\#1018](https://github.com/NillerMedDild/Enigmatica6/pull/1018) ([MuteTiefling](https://github.com/MuteTiefling))
-- Tetra: Astral Sorcery Compatibility [\#600](https://github.com/NillerMedDild/Enigmatica6/issues/600)
-- Tetra: Create Compatibility [\#599](https://github.com/NillerMedDild/Enigmatica6/issues/599)
-- Tetra: Occultism Compatibility [\#658](https://github.com/NillerMedDild/Enigmatica6/issues/658)
+-   Bee Update \(Biomes, Secondary Outputs, and Custom Honey\) [\#996](https://github.com/NillerMedDild/Enigmatica6/pull/996) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Blood Magic Processing Update, now using Blood Magic style ingredients [\#1002](https://github.com/NillerMedDild/Enigmatica6/pull/1002) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Buff Occultism Storage [\#1013](https://github.com/NillerMedDild/Enigmatica6/pull/1013) ([theboo](https://github.com/theboo))
+-   Creosote Unification [\#999](https://github.com/NillerMedDild/Enigmatica6/pull/999) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Honey Unification [\#1007](https://github.com/NillerMedDild/Enigmatica6/pull/1007) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Quests: Create [\#569](https://github.com/NillerMedDild/Enigmatica6/issues/569)
+-   Quests: Occultism [\#659](https://github.com/NillerMedDild/Enigmatica6/issues/659)
+-   Suggestion: Add Use to Thermal Creosote [\#988](https://github.com/NillerMedDild/Enigmatica6/issues/988)
+-   Suggestion: Unify honey types [\#1001](https://github.com/NillerMedDild/Enigmatica6/issues/1001)
+-   Super Secret Occultism Loot of Doom \(No peaking!\) [\#1018](https://github.com/NillerMedDild/Enigmatica6/pull/1018) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tetra: Astral Sorcery Compatibility [\#600](https://github.com/NillerMedDild/Enigmatica6/issues/600)
+-   Tetra: Create Compatibility [\#599](https://github.com/NillerMedDild/Enigmatica6/issues/599)
+-   Tetra: Occultism Compatibility [\#658](https://github.com/NillerMedDild/Enigmatica6/issues/658)
 
 **Bug Fixes**
 
-- Botania's "Spark Augmenter banner patterns" are bugged [\#758](https://github.com/NillerMedDild/Enigmatica6/issues/758)
-- Cannot craft signpost with BYF planks [\#987](https://github.com/NillerMedDild/Enigmatica6/issues/987)
-- Crashing when opening chat [\#965](https://github.com/NillerMedDild/Enigmatica6/issues/965)
-- Create: Chocolate and Honey are showing as direct replacements for water in many machines [\#559](https://github.com/NillerMedDild/Enigmatica6/issues/559)
-- Create Handheld Blockzapper Requires Create Brass [\#991](https://github.com/NillerMedDild/Enigmatica6/issues/991)
-- Gears are reversed in the Metal Press [\#1011](https://github.com/NillerMedDild/Enigmatica6/issues/1011)
-- Incompletable quest in Immersive Engineering due to unobtainable item [\#992](https://github.com/NillerMedDild/Enigmatica6/issues/992)
-- Locking a villager's trades with item routers [\#853](https://github.com/NillerMedDild/Enigmatica6/issues/853)
-- Mekanism Crusher missing recipes. [\#993](https://github.com/NillerMedDild/Enigmatica6/issues/993)
-- Memory Leak with C&B [\#983](https://github.com/NillerMedDild/Enigmatica6/issues/983)
-- Nature's Aura Ore Restructuring - remove non EE variants, attempt to reduce sulfur spawn rate [\#1021](https://github.com/NillerMedDild/Enigmatica6/pull/1021) ([MuteTiefling](https://github.com/MuteTiefling))
-- Reduced Sulfur ore weight of Astral Sorcery Mineralis ritual [\#1005](https://github.com/NillerMedDild/Enigmatica6/issues/1005)
-- Reduced weight of Sulfur Ore generated by Nature's Aura [\#1016](https://github.com/NillerMedDild/Enigmatica6/pull/1016) ([MuteTiefling](https://github.com/MuteTiefling))
-- Removed Create/Eidolon/Occultism Ores from the Astral Sorcery Mineralis Ritual [\#1019](https://github.com/NillerMedDild/Enigmatica6/issues/1019)
-- RGBee comb missing centrifuge recipe [\#910](https://github.com/NillerMedDild/Enigmatica6/issues/910)
-- Thermal Induction Smelter missing all alloy recipes [\#979](https://github.com/NillerMedDild/Enigmatica6/issues/979)
-- Wrong quest description for Tier 1 Beehive [\#977](https://github.com/NillerMedDild/Enigmatica6/issues/977)
+-   Botania's "Spark Augmenter banner patterns" are bugged [\#758](https://github.com/NillerMedDild/Enigmatica6/issues/758)
+-   Cannot craft signpost with BYF planks [\#987](https://github.com/NillerMedDild/Enigmatica6/issues/987)
+-   Crashing when opening chat [\#965](https://github.com/NillerMedDild/Enigmatica6/issues/965)
+-   Create: Chocolate and Honey are showing as direct replacements for water in many machines [\#559](https://github.com/NillerMedDild/Enigmatica6/issues/559)
+-   Create Handheld Blockzapper Requires Create Brass [\#991](https://github.com/NillerMedDild/Enigmatica6/issues/991)
+-   Gears are reversed in the Metal Press [\#1011](https://github.com/NillerMedDild/Enigmatica6/issues/1011)
+-   Incompletable quest in Immersive Engineering due to unobtainable item [\#992](https://github.com/NillerMedDild/Enigmatica6/issues/992)
+-   Locking a villager's trades with item routers [\#853](https://github.com/NillerMedDild/Enigmatica6/issues/853)
+-   Mekanism Crusher missing recipes. [\#993](https://github.com/NillerMedDild/Enigmatica6/issues/993)
+-   Memory Leak with C&B [\#983](https://github.com/NillerMedDild/Enigmatica6/issues/983)
+-   Nature's Aura Ore Restructuring - remove non EE variants, attempt to reduce sulfur spawn rate [\#1021](https://github.com/NillerMedDild/Enigmatica6/pull/1021) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reduced Sulfur ore weight of Astral Sorcery Mineralis ritual [\#1005](https://github.com/NillerMedDild/Enigmatica6/issues/1005)
+-   Reduced weight of Sulfur Ore generated by Nature's Aura [\#1016](https://github.com/NillerMedDild/Enigmatica6/pull/1016) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Removed Create/Eidolon/Occultism Ores from the Astral Sorcery Mineralis Ritual [\#1019](https://github.com/NillerMedDild/Enigmatica6/issues/1019)
+-   RGBee comb missing centrifuge recipe [\#910](https://github.com/NillerMedDild/Enigmatica6/issues/910)
+-   Thermal Induction Smelter missing all alloy recipes [\#979](https://github.com/NillerMedDild/Enigmatica6/issues/979)
+-   Wrong quest description for Tier 1 Beehive [\#977](https://github.com/NillerMedDild/Enigmatica6/issues/977)
 
 ### Enigmatica 6 v0.3.7
 
