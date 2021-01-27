@@ -55,6 +55,11 @@ events.listen('recipes', function (event) {
                 inputs: [item.of('minecraft:iron_ingot', 1), ingredient.of('#forge:dusts/coal_coke', 1)],
                 experience: 0.2,
                 outputs: ['emendatusenigmatica:steel_ingot']
+            },
+            {
+                inputs: [item.of('#forge:ingots/iron', 1), ingredient.of('#forge:ingots/lead', 1)],
+                experience: 0.2,
+                outputs: [Item.of('eidolon:pewter_ingot', 2)]
             }
         ]
     };
