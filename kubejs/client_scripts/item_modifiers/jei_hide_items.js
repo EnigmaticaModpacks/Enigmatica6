@@ -15,7 +15,10 @@ events.listen('jei.hide.items', (event) => {
             'mekanism:nugget_' + material,
             'mekanism:dust_' + material,
             'mekanism:ingot_' + material,
-            'mekanism:block_' + material
+            'mekanism:block_' + material,
+            'eidolon:ingot_' + material,
+            'eidolon:nugget_' + material,
+            'eidolon:block_' + material
         );
     });
 
