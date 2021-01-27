@@ -1,21 +1,22 @@
 //priority: 1000
-const refinedStorageItems = [
-    'grid',
-    'crafting_grid',
-    'pattern_grid',
-    'fluid_grid',
-    'controller',
-    'creative_controller',
-    'network_receiver',
-    'network_transmitter',
-    'relay',
-    'detector',
-    'security_manager',
-    'wireless_transmitter',
-    'crafter',
-    'crafting_monitor',
-    'disk_manipulator',
-    'crafter_manager'
+
+const colors = [
+    'cyan',
+    'purple',
+    'blue',
+    'brown',
+    'green',
+    'red',
+    'black',
+    'white',
+    'orange',
+    'magenta',
+    'light_blue',
+    'yellow',
+    'lime',
+    'pink',
+    'gray',
+    'light_gray'
 ];
 
 var itemsToHide = [
