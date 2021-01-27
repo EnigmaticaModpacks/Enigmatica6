@@ -52,12 +52,12 @@ events.listen('recipes', function (event) {
                 outputs: ['minecraft:netherite_ingot']
             },
             {
-                inputs: [item.of('minecraft:iron_ingot', 1), ingredient.of('#forge:dusts/coal_coke', 1)],
+                inputs: ['#forge:ingots/iron', '#forge:dusts/coal_coke', 1],
                 experience: 0.2,
                 outputs: ['emendatusenigmatica:steel_ingot']
             },
             {
-                inputs: [item.of('#forge:ingots/iron', 1), ingredient.of('#forge:ingots/lead', 1)],
+                inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
                 experience: 0.2,
                 outputs: [Item.of('eidolon:pewter_ingot', 2)]
             }
