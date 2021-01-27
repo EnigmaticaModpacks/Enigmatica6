@@ -28,4 +28,18 @@ events.listen('jei.information', (event) => {
     refinedStorageItems.forEach((item) => {
         event.add(`refinedstorage:${item}`, 'Can be dyed through crafting or by right clicking it with dye in-world.');
     });
+
+    generatableCobblestone.forEach((cobblestone) => {
+        event.add(
+            cobblestone,
+            'Can be generated in a Vanilla Cobblestone Generator. The block below where Cobblestone generates needs to be a Block of Iron.'
+        );
+    });
+
+    generatableStone.forEach((stone) => {
+        event.add(
+            stone,
+            'Can be generated in a Vanilla Stone Generator. The block below where Stone generates needs to be a Block of Diamond.'
+        );
+    });
 });
