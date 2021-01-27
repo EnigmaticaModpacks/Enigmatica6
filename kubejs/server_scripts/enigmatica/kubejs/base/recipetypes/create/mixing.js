@@ -20,6 +20,10 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['#forge:storage_blocks/coal'],
                 output: Item.of('emendatusenigmatica:coke_gem', 9)
+            },
+            {
+                inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
+                output: Item.of('eidolon:pewter_ingot', 2)
             }
         ],
         recipes_superheated: [
