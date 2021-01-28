@@ -732,8 +732,8 @@ function thermal_press_wires(event, material, wire) {
         return;
     }
 
-    var output = wire,
-        input = item.of('#forge:ingots/' + material, 2),
+    var output = item.of(wire, 2),
+        input = '#forge:ingots/' + material,
         mold = 'immersiveengineering:mold_wire';
     event.recipes.thermal.press(output, [input, mold]).energy(2400);
 }
