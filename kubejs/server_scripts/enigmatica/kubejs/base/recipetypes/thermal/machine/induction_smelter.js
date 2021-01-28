@@ -46,7 +46,7 @@ events.listen('recipes', function (event) {
                 outputs: ['minecraft:netherite_ingot']
             },
             {
-                inputs: ['#forge:ingots/iron', '#forge:dusts/coal_coke', 1],
+                inputs: ['#forge:ingots/iron', '#forge:dusts/coal_coke'],
                 outputs: ['emendatusenigmatica:steel_ingot']
             },
             {
