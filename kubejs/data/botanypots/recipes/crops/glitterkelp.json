@@ -1,0 +1,11 @@
+{
+    "type": "botanypots:crop",
+    "seed": { "item": "undergarden:glowing_kelp" },
+    "categories": ["water"],
+    "growthTicks": 1000,
+    "display": { "block": "undergarden:glowing_kelp_plant", "renderFluid": false },
+    "results": [
+        { "chance": 0.75, "output": { "item": "undergarden:glowing_kelp" }, "minRolls": 1, "maxRolls": 1 },
+        { "chance": 0.05, "output": { "item": "undergarden:glowing_kelp" }, "minRolls": 1, "maxRolls": 2 }
+    ]
+}
