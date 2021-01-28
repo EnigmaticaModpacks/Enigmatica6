@@ -166,6 +166,10 @@ events.listen('recipes', (event) => {
     ];
 
     recipes.forEach(function (recipe) {
-        event.shapeless(recipe.result, recipe.ingredients);
+        if (recipe.id) {
+            event.shapeless(recipe.result, recipe.ingredients).id(id);
+        } else {
+            event.shapeless(recipe.result, recipe.ingredients);
+        }
     });
 });

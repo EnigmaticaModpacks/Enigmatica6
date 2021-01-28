@@ -389,7 +389,11 @@ events.listen('recipes', function (event) {
     ];
 
     recipes.forEach(function (recipe) {
-        event.shaped(recipe.result, recipe.pattern, recipe.key);
+        if (recipe.id) {
+            event.shaped(recipe.result, recipe.pattern, recipe.key).id(id);
+        } else {
+            event.shaped(recipe.result, recipe.pattern, recipe.key);
+        }
     });
 
     buildWoodVariants.forEach((wood) => {
