@@ -76,6 +76,7 @@ events.listen('recipes', function (event) {
         'mapperbase:iron_rod',
 
         'mekanism:crushing/stone/to_cobblestone',
+        'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
 
