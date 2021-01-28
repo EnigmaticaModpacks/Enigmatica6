@@ -162,12 +162,17 @@ events.listen('recipes', (event) => {
             '#forge:wax',
             '#forge:string'
         ]),
-        shapelessRecipe(Item.of('occultism:tallow', 9), ['quark:tallow_block'])
+        shapelessRecipe(Item.of('occultism:tallow', 9), ['quark:tallow_block']),
+        shapelessRecipe(
+            'minecraft:writable_book',
+            ['minecraft:book', '#forge:dyes/black', '#forge:feathers'],
+            'minecraft:writable_book'
+        )
     ];
 
     recipes.forEach(function (recipe) {
         if (recipe.id) {
-            event.shapeless(recipe.result, recipe.ingredients).id(id);
+            event.shapeless(recipe.result, recipe.ingredients).id(recipe.id);
         } else {
             event.shapeless(recipe.result, recipe.ingredients);
         }

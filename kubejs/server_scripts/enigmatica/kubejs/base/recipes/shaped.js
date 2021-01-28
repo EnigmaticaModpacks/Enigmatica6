@@ -390,7 +390,7 @@ events.listen('recipes', function (event) {
 
     recipes.forEach(function (recipe) {
         if (recipe.id) {
-            event.shaped(recipe.result, recipe.pattern, recipe.key).id(id);
+            event.shaped(recipe.result, recipe.pattern, recipe.key).id(recipe.id);
         } else {
             event.shaped(recipe.result, recipe.pattern, recipe.key);
         }
