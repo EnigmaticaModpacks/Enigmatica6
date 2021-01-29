@@ -503,7 +503,7 @@
 			x: 3.0d,
 			y: 6.0d,
 			description: [
-				"In order to use your Afrit Essence in a ritual, you will first need to craft and purify it in to Red Chalk.",
+				"In order to use your Afrit Essence in a ritual, you will first need to infuse it in to chalk creating Red Chalk.",
 				"",
 				"Using this chalk in your pentacles will allow you to call on more powerful spirits such as the Marid."
 			],
@@ -669,7 +669,7 @@
 			y: 8.0d,
 			shape: "hexagon",
 			subtitle: "*Slaps Roof of Stabilizer* This bad boy can fit so many things inside.",
-			description: ["The final tier of stabilizer. They are expensive though, as each one of these bad boys needs a dragon egg to craft."],
+			description: ["The final tier of stabilizer."],
 			dependencies: [I;
 				3500,
 				3488
@@ -732,7 +732,11 @@
 			x: 4.0d,
 			y: 5.5d,
 			shape: "hexagon",
-			description: ["The Stable Wormhole is a placeable object allowing you to both access your storage in any dimension as well as pipe things in and out of your storage."],
+			description: [
+				"The Stable Wormhole is a placeable object allowing you to both access your storage in any dimension as well as pipe things in and out of your storage.",
+				"",
+				"The wormhole has pretty powerful implications when used with other storage mods."
+			],
 			dependencies: [I;3492],
 			id: 3514,
 			tasks: [{

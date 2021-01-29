@@ -1,0 +1,363 @@
+{
+	id: 3711,
+	filename: "eidolon_wip",
+	order_index: 32,
+	title: "Eidolon WIP",
+	icon: "eidolon:unholy_symbol",
+	default_quest_shape: "",
+	quests: [
+		{
+			x: 1.5d,
+			y: 0.5d,
+			shape: "hexagon",
+			id: 3712,
+			tasks: [{
+				id: 3713,
+				type: "checkmark",
+				icon: "eidolon:codex"
+			}],
+			rewards: [{
+				id: 3714,
+				type: "item",
+				item: "eidolon:codex"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 3.5d,
+			dependencies: [I;3717],
+			id: 3715,
+			tasks: [
+				{
+					id: 3716,
+					type: "item",
+					item: "eidolon:wooden_altar"
+				},
+				{
+					id: 3734,
+					type: "item",
+					item: "eidolon:straw_effigy"
+				}
+			]
+		},
+		{
+			x: 1.5d,
+			y: 2.0d,
+			dependencies: [I;3712],
+			id: 3717,
+			tasks: [{
+				id: 3718,
+				type: "checkmark",
+				title: "Chants",
+				icon: {
+					id: "eidolon:warlock_hat",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 2.0d,
+			dependencies: [I;3712],
+			id: 3719,
+			tasks: [
+				{
+					id: 3720,
+					type: "item",
+					item: "eidolon:brazier"
+				},
+				{
+					id: 3721,
+					type: "item",
+					item: "eidolon:stone_hand",
+					count: 2L
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: 3.0d,
+			dependencies: [I;3719],
+			id: 3722,
+			tasks: [{
+				id: 3723,
+				type: "item",
+				item: "eidolon:necrotic_focus"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 2.0d,
+			dependencies: [I;3712],
+			id: 3726,
+			tasks: [{
+				id: 3727,
+				type: "item",
+				item: "eidolon:pewter_ingot"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 3.0d,
+			dependencies: [I;3726],
+			id: 3728,
+			tasks: [{
+				id: 3729,
+				type: "item",
+				item: "eidolon:crucible"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 3.0d,
+			dependencies: [I;3719],
+			id: 3730,
+			tasks: [{
+				id: 3731,
+				type: "item",
+				item: "eidolon:soul_shard"
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 3.0d,
+			dependencies: [I;3726],
+			id: 3732,
+			tasks: [{
+				id: 3733,
+				type: "item",
+				item: "eidolon:worktable"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 4.0d,
+			shape: "diamond",
+			hide_dependency_lines: true,
+			dependencies: [I;3715],
+			id: 3735,
+			tasks: [{
+				id: 3736,
+				type: "item",
+				item: "eidolon:candlestick"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 3.5d,
+			shape: "diamond",
+			hide_dependency_lines: true,
+			dependencies: [I;3715],
+			id: 3737,
+			tasks: [{
+				id: 3738,
+				type: "item",
+				item: "minecraft:wither_skeleton_skull"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 4.5d,
+			shape: "diamond",
+			hide_dependency_lines: true,
+			dependencies: [I;3715],
+			id: 3739,
+			tasks: [{
+				id: 3740,
+				type: "item",
+				item: "minecraft:wither_rose"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 4.5d,
+			dependencies: [I;3715],
+			id: 3741,
+			tasks: [{
+				id: 3742,
+				type: "item",
+				item: "eidolon:goblet"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 5.5d,
+			shape: "hexagon",
+			dependencies: [I;3741],
+			id: 3743,
+			tasks: [{
+				id: 3744,
+				type: "item",
+				item: "eidolon:unholy_symbol"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 6.5d,
+			dependencies: [I;3743],
+			id: 3745,
+			tasks: [
+				{
+					id: 3746,
+					type: "item",
+					item: "eidolon:stone_altar"
+				},
+				{
+					id: 3747,
+					type: "item",
+					item: "eidolon:unholy_effigy"
+				}
+			]
+		},
+		{
+			x: 6.0d,
+			y: 2.0d,
+			shape: "diamond",
+			dependencies: [I;3719],
+			optional: true,
+			id: 3752,
+			tasks: [{
+				id: 3753,
+				type: "item",
+				item: "eidolon:enchanted_ash"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 4.0d,
+			dependencies: [I;3728],
+			id: 3754,
+			tasks: [
+				{
+					id: 3755,
+					type: "item",
+					item: "eidolon:arcane_gold_ingot"
+				},
+				{
+					id: 3756,
+					type: "item",
+					item: "eidolon:lesser_soul_gem"
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: 4.0d,
+			dependencies: [I;3722],
+			id: 3757,
+			tasks: [
+				{
+					id: 3758,
+					type: "item",
+					item: "eidolon:sanguine_amulet"
+				},
+				{
+					id: 3770,
+					type: "item",
+					item: {
+						id: "eidolon:sapping_sword",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -2.5d,
+			y: 5.5d,
+			hide_dependency_lines: true,
+			dependencies: [I;3754],
+			id: 3759,
+			tasks: [
+				{
+					id: 3760,
+					type: "item",
+					item: {
+						id: "eidolon:soulfire_wand",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				},
+				{
+					id: 3761,
+					type: "item",
+					item: {
+						id: "eidolon:bonechill_wand",
+						Count: true,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: 5.5d,
+			dependencies: [I;3754],
+			id: 3762,
+			tasks: [{
+				id: 3763,
+				type: "item",
+				item: {
+					id: "eidolon:reversal_pick",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 6.5d,
+			hide_dependency_lines: true,
+			dependencies: [I;3754],
+			id: 3764,
+			tasks: [{
+				id: 3765,
+				type: "item",
+				item: "eidolon:soul_enchanter"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 6.5d,
+			hide_dependency_lines: true,
+			dependencies: [I;3754],
+			id: 3766,
+			tasks: [{
+				id: 3767,
+				type: "item",
+				item: "eidolon:glass_hand"
+			}]
+		},
+		{
+			x: -0.5d,
+			y: 5.5d,
+			dependencies: [I;
+				3743,
+				3756
+			],
+			id: 3768,
+			tasks: [{
+				id: 3769,
+				type: "item",
+				item: {
+					id: "eidolon:reaper_scythe",
+					Count: true,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+	]
+}
