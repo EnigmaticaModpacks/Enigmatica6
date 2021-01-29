@@ -381,6 +381,12 @@ events.listen('recipes', (event) => {
                 ],
                 energyModifier: 3.0,
                 waterModifier: 3.0
+            },
+            {
+                input: 'undergarden:glowing_kelp',
+                outputs: [item.of('undergarden:glowing_kelp').chance(2.0)],
+                energyModifier: 1.0,
+                waterModifier: 1.0
             }
         ]
     };

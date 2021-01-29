@@ -28,6 +28,10 @@ events.listen('recipes', function (event) {
             {
                 input: '#forge:stone',
                 output: 'minecraft:cobblestone'
+            },
+            {
+                input: 'buildinggadgets:construction_block_dense',
+                output: Item.of('buildinggadgets:construction_paste', 3)
             }
         ]
     };

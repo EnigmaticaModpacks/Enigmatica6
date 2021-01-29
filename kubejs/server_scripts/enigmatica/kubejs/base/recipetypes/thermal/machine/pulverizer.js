@@ -129,6 +129,14 @@ events.listen('recipes', function (event) {
                     item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
                 ],
                 experience: 0.2
+            },
+            {
+                input: 'buildinggadgets:construction_block_dense',
+                outputs: [
+                    item.of('buildinggadgets:construction_paste', 3),
+                    item.of('buildinggadgets:construction_paste', 2).chance(0.5)
+                ],
+                experience: 0.2
             }
         ]
     };
