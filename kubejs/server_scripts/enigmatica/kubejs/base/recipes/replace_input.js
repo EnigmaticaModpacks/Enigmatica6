@@ -1,5 +1,6 @@
 events.listen('recipes', function (event) {
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
+    event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');

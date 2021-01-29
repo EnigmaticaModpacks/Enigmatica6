@@ -27,6 +27,8 @@
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
 		range = 5
+		#additional blocks that will be ticked by bellows
+		whitelist = []
 
 	[blocks.spring_launcher]
 		#spring launcher launch speed
@@ -79,6 +81,8 @@
 		#additional sack slots divided by 2. Number of slots will be 5 + additional_slots*2
 		#Range: 0 ~ 2
 		additional_slots = 0
+		#additional blocks that can support a sack
+		whitelist = []
 
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
@@ -87,6 +91,14 @@
 	[blocks.sign_post]
 		#additional blocks besides fences that can accept a sign post
 		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
+
+	[blocks.globe]
+		#how many gobe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
+		#Range: 0 ~ 50
+		trades = 2
+		#chanche of finding a globe in a shipwreck treasure chest. default is 20%
+		#Range: 0 ~ 100
+		treasure_chance = 20
 
 #Configure spawning conditions
 [spawns]

@@ -1,4 +1,5 @@
 //priority: 1000
+
 const refinedStorageItems = [
     'grid',
     'crafting_grid',
@@ -16,6 +17,90 @@ const refinedStorageItems = [
     'crafting_monitor',
     'disk_manipulator',
     'crafter_manager'
+];
+// Items added here will get recipes for Pedestals & Cobblegen Randomizer cobblegens.
+const generatableCobblestone = [
+    'byg:dacite_cobblestone',
+    'byg:ether_stone',
+    'byg:red_rock',
+    'byg:scoria_cobblestone',
+    'byg:soapstone',
+    'embellishcraft:basalt_cobblestone',
+    'embellishcraft:gneiss_cobblestone',
+    'embellishcraft:jade_cobblestone',
+    'embellishcraft:larvikite_cobblestone',
+    'embellishcraft:marble_cobblestone',
+    'embellishcraft:slate_cobblestone',
+    'create:andesite_cobblestone',
+    'create:diorite_cobblestone',
+    'create:granite_cobblestone',
+    'quark:cobbedstone',
+    'undergarden:depthrock',
+    'undergarden:shiverstone',
+    'create:dark_scoria_cobblestone',
+    'create:scoria_cobblestone',
+    'create:gabbro_cobblestone',
+    'create:dolomite_cobblestone',
+    'create:weathered_limestone_cobblestone',
+    'create:limestone_cobblestone'
+];
+// Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
+const generatableStone = [
+    'minecraft:andesite',
+    'minecraft:diorite',
+    'minecraft:granite',
+    'biomesoplenty:black_sandstone',
+    'biomesoplenty:orange_sandstone',
+    'biomesoplenty:white_sandstone',
+    'byg:black_sandstone',
+    'byg:blue_sandstone',
+    'byg:dacite',
+    'byg:purple_sandstone',
+    'byg:pink_sandstone',
+    'byg:scoria_stone',
+    'byg:white_sandstone',
+    'embellishcraft:basalt',
+    'embellishcraft:gneiss',
+    'embellishcraft:jade',
+    'embellishcraft:larvikite',
+    'embellishcraft:marble',
+    'embellishcraft:slate',
+    'minecraft:red_sandstone',
+    'minecraft:sandstone',
+    'quark:basalt',
+    'quark:brimstone',
+    'quark:jasper',
+    'quark:limestone',
+    'quark:marble',
+    'quark:permafrost',
+    'quark:slate',
+    'astralsorcery:marble_raw',
+    'create:dark_scoria',
+    'create:scoria',
+    'create:gabbro',
+    'create:dolomite',
+    'create:weathered_limestone',
+    'create:limestone'
+];
+const generatableBasalt = [];
+
+const colors = [
+    'cyan',
+    'purple',
+    'blue',
+    'brown',
+    'green',
+    'red',
+    'black',
+    'white',
+    'orange',
+    'magenta',
+    'light_blue',
+    'yellow',
+    'lime',
+    'pink',
+    'gray',
+    'light_gray'
 ];
 
 var itemsToHide = [
@@ -99,8 +184,6 @@ var regexHide = [
     /create:\w+_ore/,
     /immersiveposts:stick_/,
     /buildersaddition:\w+_rod/,
-    /eidolon:\w+_ingot/,
-    /eidolon:\w+_nugget/,
     /eidolon:\w+_ore/,
     /byg:pendorite/,
     /byg:ametrine/,

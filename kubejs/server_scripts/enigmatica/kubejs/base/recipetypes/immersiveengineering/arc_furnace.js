@@ -4,7 +4,13 @@ events.listen('recipes', (event) => {
             {
                 input1: '#forge:ingots/copper',
                 secondaries: ['#forge:ingots/zinc'],
-                outputs: [item.of('emendatusenigmatica:brass_ingot', 2)],
+                outputs: [item.of('emendatusenigmatica:brass_ingot', 2)]
+                
+            },
+            {
+                input1: '#forge:ingots/iron',
+                secondaries: ['#forge:ingots/lead'],
+                outputs: [Item.of('eidolon:pewter_ingot', 2)]
                 
             }
         ]

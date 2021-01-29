@@ -1,11 +1,11 @@
 //priority: 1000
 
-function shapedRecipe(result, pattern, key) {
-    return { result: result, pattern: pattern, key: key };
+function shapedRecipe(result, pattern, key, id) {
+    return { result: result, pattern: pattern, key: key, id: id };
 }
 
-function shapelessRecipe(result, ingredients) {
-    return { result: result, ingredients: ingredients };
+function shapelessRecipe(result, ingredients, id) {
+    return { result: result, ingredients: ingredients, id: id };
 }
 function unificationBlacklistEntry(material, type) {
     return { material: material, type: type };

@@ -85,6 +85,11 @@ events.listen('recipes', (event) => {
                 input: 'biomesoplenty:white_sandstone',
                 output: item.of('biomesoplenty:white_sand', 2),
                 secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+            },
+            {
+                input: 'buildinggadgets:construction_block_dense',
+                output: item.of('buildinggadgets:construction_paste', 3),
+                secondary: [item.of('buildinggadgets:construction_paste', 2).chance(0.5)]
             }
         ]
     };
