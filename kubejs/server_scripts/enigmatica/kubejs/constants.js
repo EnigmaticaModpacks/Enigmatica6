@@ -332,6 +332,18 @@ const honeyVarieties = [
     'resourcefulbees:wither_honey'
 ];
 
+const candles =[
+    'buildersaddition:large_candle',
+    'buildersaddition:large_soul_candle',
+    'buildersaddition:candle',
+    'buildersaddition:soul_candle',
+    'eidolon:candle',
+    'eidolon:candlestick',
+    'occultism:candle_white',
+    'supplementaries:candelabra',
+    'supplementaries:candelabra_silver'
+];
+
 const dyeSources = [
     {
         input: 'biomesoplenty:blue_hydrangea',
