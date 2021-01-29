@@ -10,6 +10,12 @@ events.listen('jei.information', (event) => {
                 description: [
                     'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
                 ]
+            },
+            {
+                item: 'buildinggadgets:construction_paste',
+                description: [
+                    'Obtained by breaking a Dense Construction Block with a Pickaxe.'
+                ]
             }
         ]
     };
