@@ -34,7 +34,7 @@ Follow these steps to setup your workspace/server:
 
 1. Download [MultiMC](https://multimc.org/#Download) and [Git](https://git-scm.com/downloads) if you haven't already.
 2. Open MultiMC.
-3. Click Add Instance, choose Minecraft 1.16.4, click Ok.
+3. Click Add Instance, choose Minecraft 1.16.5, click Ok.
 4. Click Edit Instance (right hand side)
 5. Click Install Forge, pick the latest version.
 
@@ -45,7 +45,7 @@ Follow these steps to setup your workspace/server:
 
 ```sh
 git init                                           # Initialize git in folder
-git remote add origin URLToYourEnigmatica6Fork     # Set remote origin to your Enigmatica 5 fork
+git remote add origin URLToYourEnigmatica6Fork     # Set remote origin to your Enigmatica 6 fork
 git remote -v                                      # Verify remote
 git fetch
 git pull origin develop
