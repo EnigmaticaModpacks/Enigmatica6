@@ -341,7 +341,8 @@ const candles =[
     'eidolon:candlestick',
     'occultism:candle_white',
     'supplementaries:candelabra',
-    'supplementaries:candelabra_silver'
+    'supplementaries:candelabra_silver',
+    'supplementaries:candle_holder'
 ];
 
 const dyeSources = [
