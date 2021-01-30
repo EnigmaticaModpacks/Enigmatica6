@@ -1,6 +1,14 @@
+### Enigmatica 6 v0.3.13
+
+_Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.13.txt)_
+
+**Bug Fixes**
+
+-   Removed the mod BackTools temporarily to fix a crash [\#1158](https://github.com/NillerMedDild/Enigmatica6/issues/1158)
+
 ### Enigmatica 6 v0.3.12: Industrial Foregoing Hotfix & Eidolon Quest Chapter
 
-_Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.11.txt)_
+_Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.12.txt)_
 
 **Improvements/Changes**
 
@@ -9,11 +17,11 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
-- Industrial foregoing issues after update to v0.3.11 [\#1145](https://github.com/NillerMedDild/Enigmatica6/issues/1145)
-- Titanium 1.16.5-3.2.6 causes crashes, 3.2.6.1 fixes it [\#1143](https://github.com/NillerMedDild/Enigmatica6/issues/1143)
-- Occultism Crafting errors [\#1131](https://github.com/NillerMedDild/Enigmatica6/issues/1131)
-- Akashic tome dupe bug with Occultism storage actuator [\#1064](https://github.com/NillerMedDild/Enigmatica6/issues/1064)
-- Bug: Fletching villagers cannot exist due to modified fletching tables (Fixed in previous version) [\#767](https://github.com/NillerMedDild/Enigmatica6/issues/767)
+-   Industrial foregoing issues after update to v0.3.11 [\#1145](https://github.com/NillerMedDild/Enigmatica6/issues/1145)
+-   Titanium 1.16.5-3.2.6 causes crashes, 3.2.6.1 fixes it [\#1143](https://github.com/NillerMedDild/Enigmatica6/issues/1143)
+-   Occultism Crafting errors [\#1131](https://github.com/NillerMedDild/Enigmatica6/issues/1131)
+-   Akashic tome dupe bug with Occultism storage actuator [\#1064](https://github.com/NillerMedDild/Enigmatica6/issues/1064)
+-   Bug: Fletching villagers cannot exist due to modified fletching tables (Fixed in previous version) [\#767](https://github.com/NillerMedDild/Enigmatica6/issues/767)
 
 ### Enigmatica 6 v0.3.11
 
