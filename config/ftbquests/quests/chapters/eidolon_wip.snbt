@@ -1,8 +1,8 @@
 {
 	id: 3711,
 	filename: "eidolon_wip",
-	order_index: 1,
-	title: "Eidolon WIP",
+	order_index: 27,
+	title: "Eidolon",
 	icon: "eidolon:unholy_symbol",
 	always_invisible: true,
 	default_quest_shape: "",
@@ -432,14 +432,34 @@
 			y: 4.5d,
 			shape: "diamond",
 			subtitle: "Puns 'n' roses",
+			description: [
+				"You can put more stuff on your Altar to make it more powerful. There are two stats you can increase: ",
+				"",
+				"Power will make your prayers more powerful (and so it will take less time and less prayers for the Lord to reveal you new knowledge). ",
+				"",
+				"Capacity is currently unused, but it will allow for more powerful prayers to be cast to the altar in a future update.",
+				"",
+				"There’s three different categories of updates, but note that items from the same category don’t stack, but the altar will instead always take the highest value for that category. ",
+				"",
+				"For example, if you put a Torch and a Candlestick on your altar, the bonus will only be +2 power. Items from different categories, however, stack as you’d expect.",
+				"",
+				"Check out the full list of viable upgrades in your Ars Ecclesia: for the herbs category, the best you can use is a Wither Rose in a Flower Pot."
+			],
 			hide_dependency_lines: true,
 			dependencies: [I;3715],
 			optional: true,
+			min_width: 300,
 			id: 3739,
 			tasks: [{
 				id: 3740,
 				type: "item",
 				item: "minecraft:wither_rose"
+			}],
+			rewards: [{
+				id: 3795,
+				type: "item",
+				item: "wstweaks:fragment",
+				count: 3
 			}]
 		},
 		{
@@ -447,12 +467,27 @@
 			x: 1.5d,
 			y: 4.5d,
 			subtitle: "Blood for the Blood God",
+			description: [
+				"After some time and with enough prayer, the Dark Lord will reveal a new sign to you: the Blood Sign.",
+				"",
+				"This can be used for a more powerful prayer that will give you more favor with the Lord, but that will also require a Blood Sacrifice to perform.",
+				"",
+				"Craft a Goblet and place it on top of the altar, then lure a living creature nearby and slay it. The Goblet will fill with blood, and you will be able to perform the Sacrifice.",
+				"",
+				"You should always try to do this over the Dark Prayer if you can, it’s much more effective and will cut down the time until you get new knowledge significantly."
+			],
 			dependencies: [I;3715],
 			id: 3741,
 			tasks: [{
 				id: 3742,
 				type: "item",
 				item: "eidolon:goblet"
+			}],
+			rewards: [{
+				id: 3796,
+				type: "item",
+				title: "Fresh Sacrifice Meat",
+				item: "minecraft:pig_spawn_egg"
 			}]
 		},
 		{
@@ -460,17 +495,37 @@
 			y: 5.5d,
 			shape: "hexagon",
 			subtitle: "It's not a metal band logo?",
+			description: [
+				"With enough prayer and sacrifice, the Soul Sign will be revealed to you. It can be used to perform the Touch of Darkness chant.",
+				"",
+				"Drop a Pewter Inlay on the ground and perform the chant to create an Unholy Symbol. ",
+				"",
+				"This relic will be needed to craft the most advanced items in the mod, but you’ll only need one, since it won’t be used up during crafting."
+			],
 			dependencies: [I;3741],
 			id: 3743,
 			tasks: [{
 				id: 3744,
 				type: "item",
 				item: "eidolon:unholy_symbol"
+			}],
+			rewards: [{
+				id: 3797,
+				type: "item",
+				item: "eidolon:warped_sprouts",
+				count: 8
 			}]
 		},
 		{
+			icon: "eidolon:stone_altar",
 			x: 1.5d,
 			y: 6.5d,
+			subtitle: "Rolling Stone Altars",
+			description: [
+				"The most powerful chants you’ll unlock may only be performed on an upgraded altar made from stone, with an Elder Statue on top.",
+				"",
+				" This is how you’ll be able to unlock the Mind Sign, the current final sign in the mod. It unfortunately doesn’t have any uses yet, but will allow you to unlock the mod’s endgame very soon."
+			],
 			dependencies: [I;3743],
 			id: 3745,
 			tasks: [
@@ -598,8 +653,17 @@
 			]
 		},
 		{
+			title: "Wands Galore",
 			x: -2.5d,
 			y: 5.5d,
+			subtitle: "Just look at those particle effects!",
+			description: [
+				"Like any respectable magic mod, Eidolon offers some cool wands to aid with ranged combat. ",
+				"",
+				"The Soulfire Wand will deal magic damage to your enemies, while the Bonechill Wand will negate any enemy’s ability to regenerate health. Try them both out!",
+				"",
+				"Maybe consider making some Warlock Armor too: it could boost your magic damage even more. Here's a little something to get started, getting the rest might be a bit harder..."
+			],
 			hide_dependency_lines: true,
 			dependencies: [I;3754],
 			id: 3759,
@@ -626,11 +690,25 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: 3800,
+				type: "item",
+				item: "eidolon:wicked_weave",
+				count: 3
+			}]
 		},
 		{
 			x: -1.5d,
 			y: 5.5d,
+			subtitle: "This is confusing...",
+			description: [
+				"The Pickaxe of Inversion is a fun tool you can use while mining. Like the name implies, it’s the opposite of a normal Pickaxe.",
+				"",
+				"It will mine faster the harder the block, and drop down in speed for the softer blocks. Try it out on some obsidian!",
+				"",
+				"Note that the items showcased here are not all the mod has to offer, I left some out on purpose to let you explore the mod on your own, so go find all the cool stuff!"
+			],
 			dependencies: [I;3754],
 			id: 3762,
 			tasks: [{
@@ -643,11 +721,23 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 3798,
+				type: "item",
+				item: "minecraft:obsidian",
+				count: 16
 			}]
 		},
 		{
 			x: -1.0d,
 			y: 6.5d,
+			subtitle: "Controlled Enchanting",
+			description: [
+				"The Soul Enchanter is a different and peculiar way to enchant your items: it can only do basic level 1 enchants and will use Soul Shards, but you will be able to enchant an already enchanted item and boost it even more. ",
+				"",
+				"If an item already has an enchant, it will also be able to upgrade to a higher level of that enchant, allowing you for even more control. "
+			],
 			hide_dependency_lines: true,
 			dependencies: [I;3754],
 			id: 3764,
@@ -655,11 +745,18 @@
 				id: 3765,
 				type: "item",
 				item: "eidolon:soul_enchanter"
+			}],
+			rewards: [{
+				id: 3802,
+				type: "xp",
+				xp: 400
 			}]
 		},
 		{
 			x: -2.0d,
 			y: 6.5d,
+			subtitle: "It's brittle...",
+			description: ["The Glass Hand is the ultimate glass cannon item for all you daredevils out there: it will double your strength, but increase any damage you get by 5 times. Are you up for the challenge?"],
 			hide_dependency_lines: true,
 			dependencies: [I;3754],
 			id: 3766,
@@ -667,11 +764,22 @@
 				id: 3767,
 				type: "item",
 				item: "eidolon:glass_hand"
+			}],
+			rewards: [{
+				id: 3803,
+				type: "item",
+				item: "eidolon:music_disc_parousia"
 			}]
 		},
 		{
 			x: -0.5d,
 			y: 5.5d,
+			subtitle: "Also try the Cleaving Axe",
+			description: [
+				"Not only is the Reaper’s Scythe a powerful weapon, but killing undead mobs with it will also give you Soul Shards, although a bit less than you would’ve gotten by performing a Crystallization Ritual.",
+				"",
+				"It can still be a good way to stock up on some Shards to craft all the other items in the mod."
+			],
 			dependencies: [I;
 				3743,
 				3756
@@ -687,6 +795,11 @@
 						Damage: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: 3801,
+				type: "xp",
+				xp: 500
 			}]
 		}
 	]
