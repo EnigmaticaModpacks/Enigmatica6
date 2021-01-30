@@ -37,6 +37,14 @@
 		sortRange = ""
 
 	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.container.CrafterManagerContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
+		containerClass = "com.refinedmods.refinedstorage.container.DiskManipulatorContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "appeng.container.implementations.MEMonitorableContainer"
 		sortRange = ""
 
