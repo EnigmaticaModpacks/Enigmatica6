@@ -1,10 +1,10 @@
-## Enigmatica 6 - 0.3.11 Modlist
+## Enigmatica 6 - 0.3.12 Modlist
 - additional_lights-1.16.4-2.1.3
-- AdHooks-1.16.4-6.1.3.0-build.0038
+- AdHooks-1.16.4-6.1.3.1-build.0039
 - AI-Improvements-1.16.2-0.3.0
-- aiotbotania-1.16.4-1.7.0
+- aiotbotania-1.16.4-1.7.1
 - AkashicTome-1.4-15
-- alexsmobs-1.4.1
+- alexsmobs-1.5.0
 - AmbientSounds_v3.1.4_mc1.16.4
 - angelring-1.16.3-1.3.3
 - Apotheosis-1.16.3-4.4.1
@@ -12,7 +12,7 @@
 - Aquaculture-1.16.4-2.1.12
 - archers_paradox-1.16.3-1.1.1
 - architectury-1.5.104-forge
-- ars_nouveau-1.16.4-1.11.2
+- ars_nouveau-1.16.4-1.11.3
 - Artifacts-1.16.4-2.7.5
 - astralsorcery-1.16.4-1.13.9
 - AttributeFix-1.16.5-10.0.1
@@ -64,7 +64,7 @@
 - CreativeCore_v2.0.10_mc1.16.4
 - CTM-MC1.16.1-1.1.2.6
 - curioofundying-forge-1.16.4-5.1.0.0
-- curios-forge-1.16.4-4.0.3.5
+- curios-forge-1.16.5-4.0.4.0
 - Curious Armor Stands-1.16.3-2.0.2
 - curiouselytra-forge-1.16.5-4.0.2.0
 - DangerousStoneCutter-1.16.2-1.4
@@ -100,7 +100,7 @@
 - FastWorkbench-1.16.4-4.5.0
 - ferritecore-1.1.1
 - findme-1.16.3-2.1.0.0
-- forge-1.16.5-geckolib-3.0.6
+- forge-1.16.5-geckolib-3.0.7
 - ForgeEndertech-1.16.4-7.0.10.0-build.0037
 - FpsReducer-mc1.16.4-1.18
 - framedcompactdrawers-1.16-2.2.0
@@ -114,12 +114,12 @@
 - ftb-ultimine-1603.1.1.13
 - GameStages-1.16.5-6.0.1
 - glassential-forge-1.16.4-1.1.5
-- gunswithoutroses-1.16.4-1.0.6
+- gunswithoutroses-1.16.5-1.0.7
 - iChunUtil-1.16.3-10.0.0
 - ImmersiveEngineering-1.16.4-4.1.2-129
 - ImmersivePetroleum-1.16.4-3.1.0-2
 - immersiveposts-1.16.3-3.0.0
-- industrial-foregoing-1.16.5-3.2.9-2215ef4
+- industrial-foregoing-1.16.5-3.2.9.1-fbef27c
 - Interactio-1.16.4-3.1.1
 - InventoryEssentials_1.16.3-2.3.0
 - invtweaks-1.16.4-1.0.1
@@ -130,7 +130,7 @@
 - justenoughbeacons-3.1-1.16.3
 - JustEnoughProfessions-1.16.3-1.1
 - KleeSlabs_1.16.3-9.2.0
-- kubejs-1605.3.5-build.156-forge
+- kubejs-1605.3.5-build.157-forge
 - kubejs-blood-magic-1604.1.0.4
 - kubejs-create-1604.1.0.4
 - kubejs-immersive-engineering-1604.1.0.12
@@ -168,12 +168,12 @@
 - Morpheus-1.16.4-4.2.68
 - MouseTweaks-2.13-mc1.16.2
 - MythicBotany-1.16.3-1.2.0
-- NaturesAura-33.4
+- NaturesAura-34.0
 - NaturesCompass-1.16.4-1.8.6
 - Neat 1.7-27
 - NetherPortalFix_1.16.3-7.2.1
 - observerlib-1.16.4-1.5.1
-- occultism-1.0.8
+- occultism-1.16.5-1.0.9
 - OldJavaWarning-1.16.5-7.0.1
 - overloadedarmorbar-5.1.0
 - PackMenu-1.16.4-2.3.1
@@ -191,7 +191,7 @@
 - Powah-1.16.4-2.3.9
 - PrettyPipes-1.9.1
 - QuantumStorage-1.16.4-5.3.0
-- Quark-r2.4-299
+- Quark-r2.4-300
 - QuarkOddities-1.16.3
 - randompatches-2.2.1-forge
 - rangedpumps-0.8.2
@@ -241,7 +241,7 @@
 - The_Undergarden-1.16.5-0.4.5
 - Tips-1.16.5-4.0.2
 - TipTheScales-1.16.4-3.0.0.10
-- titanium-1.16.5-3.2.6
+- titanium-1.16.5-3.2.6.1
 - TMechworks-1.16.3+-2.2.3
 - Toast-Control-1.16.4-4.3.1
 - tomeofblood-1.16.4-1.0.5
@@ -265,5 +265,5 @@
 - World Stripper-1.16.4-2.0.1
 - xnet-1.16-3.0.11
 - XNetGases-1.16.4-2.2.3
-- YungsApi-1.16.4-Forge-3
+- YungsApi-1.16.4-Forge-4
 - [1.16.4]-additionalbars-1.6.0
