@@ -1,12 +1,25 @@
+### Enigmatica 6 v0.3.12: Industrial Foregoing Hotfix & Eidolon Quest Chapter
+
+_Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.11.txt)_
+
+**Improvements/Changes**
+
+-   Further decreased the spawn chance of Alex's Mobs Orca & Cockroach, as their numbers on servers grow too quickly.
+-   Quests: Eidolon [\#1133](https://github.com/NillerMedDild/Enigmatica6/issues/1133)
+
+**Bug Fixes**
+
+- Industrial foregoing issues after update to v0.3.11 [\#1145](https://github.com/NillerMedDild/Enigmatica6/issues/1145)
+- Titanium 1.16.5-3.2.6 causes crashes, 3.2.6.1 fixes it [\#1143](https://github.com/NillerMedDild/Enigmatica6/issues/1143)
+- Occultism Crafting errors [\#1131](https://github.com/NillerMedDild/Enigmatica6/issues/1131)
+- Akashic tome dupe bug with Occultism storage actuator [\#1064](https://github.com/NillerMedDild/Enigmatica6/issues/1064)
+- Bug: Fletching villagers cannot exist due to modified fletching tables (Fixed in previous version) [\#767](https://github.com/NillerMedDild/Enigmatica6/issues/767)
+
 ### Enigmatica 6 v0.3.11
 
 _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.11.txt)_
 
-
-
 #### This version restores The End for those who had lost it
-
-
 
 **Improvements/Changes**
 
@@ -16,7 +29,7 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   \[Suggestion\] Allow Iron Chest quests to be done with the upgrade [\#1076](https://github.com/NillerMedDild/Enigmatica6/issues/1076)
 -   Botany Pot + Thermal Expansion Insulator recipe for Undergarden's Glitterkelp [\#1078](https://github.com/NillerMedDild/Enigmatica6/issues/1078)
 -   BuildingGadgets: Construction Paste QoL [\#1128](https://github.com/NillerMedDild/Enigmatica6/issues/1128)
--   Create Building Gadget Pattern for a simple ThermoElectric Boiler [\#1094](https://github.com/NillerMedDild/Enigmatica6/pull/1094) 
+-   Create Building Gadget Pattern for a simple ThermoElectric Boiler [\#1094](https://github.com/NillerMedDild/Enigmatica6/pull/1094)
 -   Machine alloying recipes for Eidolon Pewter [\#1099](https://github.com/NillerMedDild/Enigmatica6/issues/1099)
 -   Quest for Mekanism sodium-based cooling/Thermoelectric boiler, and example boiler blueprint [\#1083](https://github.com/NillerMedDild/Enigmatica6/issues/1083)
 -   Refined Storage Colored Crafters usable in Upgraded Crafter recipes [\#1091](https://github.com/NillerMedDild/Enigmatica6/issues/1091)
@@ -25,24 +38,20 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 **Bug Fixes**
 
 -   0.3.10 - Multiservo recipes for IE wire\(copper, electrum, etc\) only take Tinker's Mechworks ingots, not Enigmatica Ingots [\#1121](https://github.com/NillerMedDild/Enigmatica6/issues/1121)
-- 0.3.10 - Server that was upgraded from 0.3.9, the end seems to be non-functional [\#1090](https://github.com/NillerMedDild/Enigmatica6/issues/1090)
-- Blacklist Mimicubes from spawners [\#1109](https://github.com/NillerMedDild/Enigmatica6/pull/1109) ([MuteTiefling](https://github.com/MuteTiefling))
-- Eidolon ingots and nuggets hidden in JEI [\#1100](https://github.com/NillerMedDild/Enigmatica6/issues/1100)
-- End & Nether Biomes not spawning [\#1075](https://github.com/NillerMedDild/Enigmatica6/issues/1075)
-- Fixed RS Grids not showing up in JEI and allow for any colored crafter to be used in recipes [\#1096](https://github.com/NillerMedDild/Enigmatica6/pull/1096) ([Merlo17](https://github.com/Merlo17))
-- Randomized Stone and Cobblestone Catalysts are not showing in JEI on Servers [\#1097](https://github.com/NillerMedDild/Enigmatica6/issues/1097)
-- Refined Storage Fluid Grid not shown in JEI [\#1127](https://github.com/NillerMedDild/Enigmatica6/issues/1127)
-- Updated thermal IE wire recipes to accept EE ingots [\#1122](https://github.com/NillerMedDild/Enigmatica6/pull/1122) ([Merlo17](https://github.com/Merlo17))
+-   0.3.10 - Server that was upgraded from 0.3.9, the end seems to be non-functional [\#1090](https://github.com/NillerMedDild/Enigmatica6/issues/1090)
+-   Blacklist Mimicubes from spawners [\#1109](https://github.com/NillerMedDild/Enigmatica6/pull/1109) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Eidolon ingots and nuggets hidden in JEI [\#1100](https://github.com/NillerMedDild/Enigmatica6/issues/1100)
+-   End & Nether Biomes not spawning [\#1075](https://github.com/NillerMedDild/Enigmatica6/issues/1075)
+-   Fixed RS Grids not showing up in JEI and allow for any colored crafter to be used in recipes [\#1096](https://github.com/NillerMedDild/Enigmatica6/pull/1096) ([Merlo17](https://github.com/Merlo17))
+-   Randomized Stone and Cobblestone Catalysts are not showing in JEI on Servers [\#1097](https://github.com/NillerMedDild/Enigmatica6/issues/1097)
+-   Refined Storage Fluid Grid not shown in JEI [\#1127](https://github.com/NillerMedDild/Enigmatica6/issues/1127)
+-   Updated thermal IE wire recipes to accept EE ingots [\#1122](https://github.com/NillerMedDild/Enigmatica6/pull/1122) ([Merlo17](https://github.com/Merlo17))
 
 ### Enigmatica 6 v0.3.10
 
 _Using Forge-1.16.5-36.0.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.10.txt)_
 
-
-
 **Now on Minecraft 1.16.5! You can update existing worlds without issues.**
-
-
 
 **Improvements/Changes**
 
