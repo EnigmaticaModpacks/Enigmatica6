@@ -51,6 +51,10 @@ events.listen('recipes', function (event) {
         pedestals_dye_crushing(event, recipe);
         thermal_dye_centrifuge(event, recipe);
     });
+
+    cropRegistry.forEach((cropCategories) => {
+        botany_pots_crops(event, cropCategories);
+    });
 });
 
 function getPreferredItemInTag(tag) {
@@ -841,4 +845,35 @@ function thermal_dye_centrifuge(event, recipe) {
         input = recipe.input;
 
     event.recipes.thermal.centrifuge(outputs, input);
+}
+
+function botany_pots_crops(event, cropCategories) {
+    var growthTicks = 1600;
+    if (cropCategories.type == 'cactus') {
+        growthTicks = 3200;
+    }
+
+    cropCategories.crops.forEach((crop) => {
+        event.custom({
+            type: 'botanypots:crop',
+            seed: { item: crop.seed },
+            categories: [crop.substrate],
+            growthTicks: growthTicks,
+            display: { block: crop.render },
+            results: [
+                {
+                    chance: 0.75,
+                    output: { item: crop.plant },
+                    minRolls: 1,
+                    maxRolls: 1
+                },
+                {
+                    chance: 0.05,
+                    output: { item: crop.plant },
+                    minRolls: 1,
+                    maxRolls: 2
+                }
+            ]
+        });
+    });
 }

@@ -15,7 +15,9 @@ events.listen('item.tags', function (event) {
         'undergarden:blood_mushroom_cap',
         'undergarden:ink_mushroom_cap',
         'undergarden:veil_mushroom_cap',
-        'undergarden:indigo_mushroom_cap'
+        'undergarden:indigo_mushroom_cap',
+        'byg:embur_gel_block',
+        'undergarden:grongle_cap'
     ];
-	event.get('forge:mushroom_caps').add(items);
+    event.get('forge:mushroom_caps').add(items);
 });

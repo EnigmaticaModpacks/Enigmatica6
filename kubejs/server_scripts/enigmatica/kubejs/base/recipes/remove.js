@@ -158,6 +158,10 @@ events.listen('recipes', function (event) {
         type: 'occultism:miner'
     });
 
+    event.remove({
+        type: 'botanypots:crop'
+    });
+
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
 
     beamRecipes.forEach((recipe) => {
