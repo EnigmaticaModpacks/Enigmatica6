@@ -16,8 +16,8 @@
 		{
 			title: "We've Got Spirits!",
 			icon: "occultism:dictionary_of_spirits",
-			x: 9.0d,
-			y: -1.5d,
+			x: 12.0d,
+			y: -2.0d,
 			shape: "gear",
 			description: [
 				"With Occultism, you will learn to summon various otherworldly spirits to do your bidding! From the simple Foliot Ore Crushing Spirit for early ore doubling to the powerful Djinni Ore Miner to gather up all those valuable resources for you!",
@@ -49,7 +49,7 @@
 		{
 			title: "Maybe Just a Little...",
 			x: 12.0d,
-			y: -1.5d,
+			y: -0.5d,
 			subtitle: "Unlock your Third Eye!",
 			description: [
 				"Eating just a piece of Demon's Dream Fruit can cause powerful short-term hallucinogenic effects! The Third Eye effect will allow you to see and interract with various otherworldly materials.",
@@ -88,8 +88,8 @@
 				Count: true,
 				tag: {}
 			},
-			x: 13.0d,
-			y: 0.0d,
+			x: 13.5d,
+			y: 2.0d,
 			subtitle: "Why Is It Vibrating?!",
 			description: [
 				"The Divination Rod is used to locate the otherworldy materials that lie dormant in this world.",
@@ -106,7 +106,7 @@
 				"",
 				"P.S. Sorry for the novel... -The_Boo"
 			],
-			dependencies: [I;3253],
+			dependencies: [I;3290],
 			min_width: 300,
 			id: 3255,
 			tasks: [
@@ -158,8 +158,8 @@
 		{
 			title: "We Don't Need No Water",
 			icon: "occultism:spirit_fire",
-			x: 11.0d,
-			y: 1.5d,
+			x: 12.0d,
+			y: 1.0d,
 			subtitle: "Let the mother trucker burn...",
 			description: [
 				"Spirit Fire is a special flame from the otherworld.",
@@ -170,7 +170,7 @@
 				"",
 				"Burn mother trucker... burn..."
 			],
-			dependencies: [I;3480],
+			dependencies: [I;3253],
 			id: 3290,
 			tasks: [
 				{
@@ -223,9 +223,14 @@
 				"",
 				"Our little spirit friend is very efficient at their job! Each ore/chunk you give it will result in 2 dusts which you can smelt in to ingots effectively doubling your ore count!",
 				"",
-				"While it does work hard, staying in this mortal realm is tough on our little friend. After awhile it will need to travel back to the other world where it will rest peacefully until you summon it again."
+				"While it does work hard, staying in this mortal realm is tough on our little friend. After awhile it will need to travel back to the other world where it will rest peacefully until you summon it again.",
+				"",
+				"Note: You must have a golden sacrificial bowl to continue."
 			],
-			dependencies: [I;3482],
+			dependencies: [I;
+				3482,
+				3545
+			],
 			id: 3319,
 			tasks: [
 				{
@@ -273,7 +278,9 @@
 			description: [
 				"Candles are another item used in most ritual pentacles. They are made from the tallow you get by slaughtering pigs, cows, or sheep with a Butcher Knife.",
 				"",
-				"They work as a light source and are also great for decoration!"
+				"They work as a light source and are also great for decoration!",
+				"",
+				"Note: You are now able to use candles from other mods in your rituals!"
 			],
 			dependencies: [I;3482],
 			id: 3474,
@@ -317,8 +324,8 @@
 			]
 		},
 		{
-			x: 12.0d,
-			y: 2.5d,
+			x: 10.5d,
+			y: 0.0d,
 			description: [
 				"Purified Ink is a special ink made by cleansing black dye in spirit fire",
 				"",
@@ -354,15 +361,15 @@
 			]
 		},
 		{
-			x: 13.0d,
-			y: 1.5d,
+			x: 10.5d,
+			y: 2.0d,
 			subtitle: "Feels Dirty...",
 			description: [
 				"Chalk is an invaluable tool in the Occultist's arsenal. It allows you to draw the cryptic runes used in ritual pentacles.",
 				"",
 				"The chalk you first craft will be full of impurities. Before it can be used in a pentacle, you must clense it with spirit fire."
 			],
-			dependencies: [I;3255],
+			dependencies: [I;3290],
 			id: 3480,
 			tasks: [{
 				id: 3481,
@@ -391,7 +398,7 @@
 			y: 1.5d,
 			subtitle: "Feels So Clean!!",
 			description: ["Now that you have cleaned your chalk of impurities, all you need are some candles and some sacrifical bowls and you are ready to perform your first rituals!"],
-			dependencies: [I;3290],
+			dependencies: [I;3480],
 			id: 3482,
 			tasks: [{
 				id: 3483,
@@ -778,7 +785,9 @@
 			description: [
 				"The Soul Gem allows you to pick up any but the most powerful mobs in the world.",
 				"",
-				"Very useful for hauling sacrifices to your rituals!"
+				"Very useful for hauling sacrifices to your rituals!",
+				"",
+				"Put the Soul Gem in your hand and right click any mob with it, the mob will be stored in the soul gem to be placed back in the world at any time with another right click!"
 			],
 			dependencies: [I;3520],
 			id: 3516,
@@ -1211,7 +1220,7 @@
 			}]
 		},
 		{
-			x: 11.0d,
+			x: 13.5d,
 			y: 0.0d,
 			description: ["Spirit Attuned Crystals are an item used in certain ritual pentacles. They also make great decoration!"],
 			dependencies: [I;3290],
@@ -1681,6 +1690,49 @@
 					id: 3703,
 					type: "xp",
 					xp: 500
+				}
+			]
+		},
+		{
+			icon: "minecraft:feather",
+			x: 1.5d,
+			y: 4.5d,
+			description: [
+				"The occultist is also able to summon familiars to assist them on their journey.",
+				"",
+				"The Drikwing is an otherworldly bird that imparts special effects on its master when close."
+			],
+			dependencies: [I;3486],
+			id: 3804,
+			tasks: [
+				{
+					id: 3805,
+					type: "advancement",
+					title: "Summon Drikwing",
+					icon: "minecraft:feather",
+					advancement: "occultism:familiar_otherworld_bird",
+					criterion: ""
+				},
+				{
+					id: 3806,
+					type: "kill",
+					entity: "minecraft:parrot",
+					value: 1L
+				}
+			],
+			rewards: [
+				{
+					id: 3807,
+					type: "xp",
+					xp: 250
+				},
+				{
+					id: 3808,
+					type: "command",
+					title: "Occultism Epic Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					player_command: false
 				}
 			]
 		}
