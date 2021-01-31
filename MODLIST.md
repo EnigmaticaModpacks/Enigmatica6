@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.3.12 Modlist
+## Enigmatica 6 - 0.3.13 Modlist
 - additional_lights-1.16.4-2.1.3
 - AdHooks-1.16.4-6.1.3.1-build.0039
 - AI-Improvements-1.16.2-0.3.0
@@ -17,7 +17,6 @@
 - astralsorcery-1.16.4-1.13.9
 - AttributeFix-1.16.5-10.0.1
 - AutoRegLib-1.6-47
-- BackTools-1.16.3-10.0.0
 - bambooeverything-1.16.3-forge-1.0.0
 - BedBenefits-1.16.5-5.0.3
 - bedspreads-forge-1.16.4-5.1.0.1
@@ -115,7 +114,6 @@
 - GameStages-1.16.5-6.0.1
 - glassential-forge-1.16.4-1.1.5
 - gunswithoutroses-1.16.5-1.0.7
-- iChunUtil-1.16.3-10.0.0
 - ImmersiveEngineering-1.16.4-4.1.2-129
 - ImmersivePetroleum-1.16.4-3.1.0-2
 - immersiveposts-1.16.3-3.0.0
