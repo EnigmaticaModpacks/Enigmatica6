@@ -99,16 +99,6 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({
-        output: '/extrastorage:disk_\\w+/',
-        mod: 'extrastorage'
-    });
-    event.remove({
-        output: '/extrastorage:storagepart_\\w+/',
-        mod: 'extrastorage',
-        type: 'minecraft:crafting_shaped'
-    });
-
-    event.remove({
         output: '/buildersaddition:\\w+_vertical_slab/',
         mod: 'buildersaddition',
         type: 'minecraft:crafting_shaped'
