@@ -308,12 +308,6 @@ events.listen('recipes', (event) => {
                 waterModifier: 1.5
             },
             {
-                input: 'biomesoplenty:maple_sapling',
-                outputs: [item.of('minecraft:oak_log').chance(6.0), item.of('biomesoplenty:maple_sapling').chance(1.1)],
-                energyModifier: 3.0,
-                waterModifier: 3.0
-            },
-            {
                 input: 'byg:ether_sapling',
                 outputs: [item.of('byg:ether_log').chance(6.0), item.of('byg:ether_sapling').chance(1.1)],
                 energyModifier: 3.0,
