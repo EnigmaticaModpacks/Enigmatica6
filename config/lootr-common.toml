@@ -2,4 +2,6 @@
 randomise_seed = true
 #whether or not mineshaft chest minecarts should be converted to standard loot chests
 convert_mineshafts = true
+#catches loot chest creation that this mod cannot convert, reporting the loot table, location and mod
+report_tables = false
 

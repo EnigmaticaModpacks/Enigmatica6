@@ -93,6 +93,9 @@
 
 	# Options related to the Minecraft window.
 	[client.window]
+		# Enables custom Minecraft window titles.
+		# Default: true
+		custom_title = true
 		# The simple Minecraft window title.
 		# The current activity, the number of mods loaded and mod versions are not available.
 		# Variables:
@@ -121,6 +124,9 @@
 		# '$' can be escaped by using an extra '$'.
 		# Default: "Minecraft ${mcversion} - ${activity}"
 		title_with_activity = "Enigmatica 6 - Minecraft ${mcversion} - ${activity}"
+		# Enables custom Minecraft window icons.
+		# Default: true
+		custom_icon = true
 		# The path to the 16x16 Minecraft window icon relative to the Minecraft instance directory.
 		# Forward slashes should be used even on Windows to preserve compatibility with other platforms.
 		# Backward slashes will automatically be replaced.
@@ -270,6 +276,7 @@
 	# - ServerPlayNetHandlerKeepAlive: Required for changing KeepAlive packet settings.
 	# - ServerPlayNetHandlerPlayerSpeedLimits: Required for changing player speed limits.
 	# - ServerRecipePlacer: Required for fixing the recipe book not moving ingredients with tags.
+	# - ToggleableKeyBinding: Required for the secondary sprint key binding.
 	# This option is both client and server-sided.
 	# Changes to this option are applied after a game restart.
 	# Default: []
