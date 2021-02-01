@@ -34,10 +34,7 @@ events.listen('recipes', function (event) {
 
         'simplefarming:raw_bacon',
 
-        'thermal:bamboo_block',
-
-        'quantumstorage:tank',
-        'quantumstorage:qsu'
+        'thermal:bamboo_block'
     ];
 
     var idRemovals = [

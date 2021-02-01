@@ -21,7 +21,6 @@ events.listen('item.tags', function (event) {
         'pneumaticcraft:large_tank',
         'pneumaticcraft:medium_tank',
         'pneumaticcraft:small_tank',
-        'quantumstorage:tank',
         'refinedstorage:1024k_fluid_storage_block',
         'refinedstorage:1024k_fluid_storage_disk',
         'refinedstorage:1024k_fluid_storage_part',

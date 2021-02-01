@@ -86,7 +86,6 @@ const modPriorities = [
     'pneumaticcraft',
     'create',
     'occultism',
-    'tmechworks',
     'industrialforegoing',
     'botania',
     'quark',
