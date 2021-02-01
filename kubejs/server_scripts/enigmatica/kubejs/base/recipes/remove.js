@@ -158,9 +158,9 @@ events.listen('recipes', function (event) {
         type: 'occultism:miner'
     });
 
-    event.remove({
-        type: 'botanypots:crop'
-    });
+    event.remove({ type: 'botanypots:crop' });
+    event.remove({ type: 'thermal:insolator' });
+    event.remove({ type: 'immersiveengineering:cloche' });
 
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
 
