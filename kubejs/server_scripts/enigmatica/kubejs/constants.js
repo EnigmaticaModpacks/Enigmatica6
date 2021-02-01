@@ -3,50 +3,14 @@
 const air = 'minecraft:air';
 
 const beamRecipes = [
-    { output: 'decorative_blocks:hellbark_beam', input: 'biomesoplenty:hellbark_logs' },
     { output: 'decorative_blocks:jungle_beam', input: 'minecraft:jungle_logs' },
     { output: 'decorative_blocks:birch_beam', input: 'minecraft:birch_logs' },
-    { output: 'decorative_blocks:umbran_beam', input: 'biomesoplenty:umbran_logs' },
-    { output: 'decorative_blocks:jacaranda_beam', input: 'biomesoplenty:jacaranda_logs' },
-    { output: 'decorative_blocks:magic_beam', input: 'biomesoplenty:magic_logs' },
-    { output: 'decorative_blocks:palm_beam', input: 'biomesoplenty:palm_logs' },
-    { output: 'decorative_blocks:mahogany_beam', input: 'biomesoplenty:mahogany_logs' },
-    { output: 'decorative_blocks:willow_beam', input: 'biomesoplenty:willow_logs' },
     { output: 'decorative_blocks:acacia_beam', input: 'minecraft:acacia_logs' },
-    { output: 'decorative_blocks:cherry_beam', input: 'biomesoplenty:cherry_logs' },
-    { output: 'decorative_blocks:fir_beam', input: 'biomesoplenty:fir_logs' },
     { output: 'decorative_blocks:dark_oak_beam', input: 'minecraft:dark_oak_logs' },
     { output: 'decorative_blocks:oak_beam', input: 'minecraft:oak_logs' },
-    { output: 'decorative_blocks:redwood_beam', input: 'biomesoplenty:redwood_logs' },
-    { output: 'decorative_blocks:dead_beam', input: 'biomesoplenty:dead_logs' },
     { output: 'decorative_blocks:spruce_beam', input: 'minecraft:spruce_logs' },
     { output: 'decorative_blocks:crimson_beam', input: 'minecraft:crimson_stems' },
     { output: 'decorative_blocks:warped_beam', input: 'minecraft:warped_stems' }
-];
-
-// priority of which mod output should come from, if applicable
-const modPriorities = [
-    'emendatusenigmatica',
-    'minecraft',
-    'immersiveengineering',
-    'thermal',
-    'mekanism',
-    'jaopca',
-    'kubejs',
-    'pneumaticcraft',
-    'create',
-    'occultism',
-    'tmechworks',
-    'industrialforegoing',
-    'botania',
-    'quark',
-    'pedestals',
-    'refinedstorage',
-    'mapperbase',
-    'bloodmagic',
-    'eidolon',
-    'morevanillalib',
-    'titanium'
 ];
 
 // Used for recipes/tags that use colors
@@ -69,9 +33,6 @@ const colors = [
     'light_gray'
 ];
 
-// Used to determine which material types to unify
-const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
-
 // Used for tag generation
 const createStoneTypes = ['scoria', 'limestone', 'weathered_limestone', 'dolomite', 'gabbro', 'dark_scoria'];
 
@@ -89,17 +50,6 @@ var woodVariantsToConstruct = [
     'undergarden:smogstem',
     'undergarden:wigglewood',
     'undergarden:grongle',
-    'biomesoplenty:cherry',
-    'biomesoplenty:dead',
-    'biomesoplenty:fir',
-    'biomesoplenty:hellbark',
-    'biomesoplenty:jacaranda',
-    'biomesoplenty:magic',
-    'biomesoplenty:mahogany',
-    'biomesoplenty:palm',
-    'biomesoplenty:redwood',
-    'biomesoplenty:umbran',
-    'biomesoplenty:willow',
     'byg:aspen',
     'byg:baobab',
     'byg:blue_enchanted',
@@ -268,9 +218,6 @@ const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
     'minecraft:granite',
-    'biomesoplenty:black_sandstone',
-    'biomesoplenty:orange_sandstone',
-    'biomesoplenty:white_sandstone',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',
@@ -332,7 +279,7 @@ const honeyVarieties = [
     'resourcefulbees:wither_honey'
 ];
 
-const candles =[
+const candles = [
     'buildersaddition:large_candle',
     'buildersaddition:large_soul_candle',
     'buildersaddition:candle',
@@ -346,90 +293,6 @@ const candles =[
 ];
 
 const dyeSources = [
-    {
-        input: 'biomesoplenty:blue_hydrangea',
-        type: 'tall',
-        primary: 'minecraft:light_blue_dye',
-        secondary: 'minecraft:light_blue_dye',
-        tertiary: 'minecraft:green_dye'
-    },
-    {
-        input: 'biomesoplenty:burning_blossom',
-        type: 'small',
-        primary: 'minecraft:orange_dye',
-        secondary: 'minecraft:red_dye',
-        tertiary: 'minecraft:yellow_dye'
-    },
-    {
-        input: 'biomesoplenty:glowflower',
-        type: 'small',
-        primary: 'minecraft:cyan_dye',
-        secondary: 'minecraft:white_dye',
-        tertiary: 'minecraft:yellow_dye'
-    },
-    {
-        input: 'biomesoplenty:goldenrod',
-        type: 'tall',
-        primary: 'minecraft:yellow_dye',
-        secondary: 'minecraft:yellow_dye',
-        tertiary: 'minecraft:orange_dye'
-    },
-    {
-        input: 'biomesoplenty:lavender',
-        type: 'small',
-        primary: 'minecraft:purple_dye',
-        secondary: 'minecraft:magenta_dye',
-        tertiary: 'minecraft:green_dye'
-    },
-    {
-        input: 'biomesoplenty:orange_cosmos',
-        type: 'small',
-        primary: 'minecraft:orange_dye',
-        secondary: 'minecraft:yellow_dye',
-        tertiary: 'minecraft:lime_dye'
-    },
-    {
-        input: 'biomesoplenty:pink_daffodil',
-        type: 'small',
-        primary: 'minecraft:pink_dye',
-        secondary: 'minecraft:pink_dye',
-        tertiary: 'minecraft:white_dye'
-    },
-    {
-        input: 'biomesoplenty:pink_hibiscus',
-        type: 'small',
-        primary: 'minecraft:pink_dye',
-        secondary: 'minecraft:yellow_dye',
-        tertiary: 'minecraft:green_dye'
-    },
-    {
-        input: 'biomesoplenty:rose',
-        type: 'small',
-        primary: 'minecraft:red_dye',
-        secondary: 'minecraft:red_dye',
-        tertiary: 'minecraft:pink_dye'
-    },
-    {
-        input: 'biomesoplenty:violet',
-        type: 'small',
-        primary: 'minecraft:purple_dye',
-        secondary: 'minecraft:purple_dye',
-        tertiary: 'minecraft:blue_dye'
-    },
-    {
-        input: 'biomesoplenty:wildflower',
-        type: 'small',
-        primary: 'minecraft:magenta_dye',
-        secondary: 'minecraft:pink_dye',
-        tertiary: 'minecraft:lime_dye'
-    },
-    {
-        input: 'biomesoplenty:wilted_lily',
-        type: 'small',
-        primary: 'minecraft:gray_dye',
-        secondary: 'minecraft:gray_dye',
-        tertiary: 'minecraft:yellow_dye'
-    },
     {
         input: 'byg:allium_flower_bush',
         type: 'small',

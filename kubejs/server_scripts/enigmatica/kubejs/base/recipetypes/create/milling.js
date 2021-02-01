@@ -43,21 +43,6 @@ events.listen('recipes', (event) => {
                 input: 'byg:black_sandstone',
                 outputs: [item.of('byg:black_sand')],
                 processingTime: 150
-            },
-            {
-                input: 'biomesoplenty:black_sandstone',
-                outputs: [item.of('biomesoplenty:black_sand')],
-                processingTime: 150
-            },
-            {
-                input: 'biomesoplenty:orange_sandstone',
-                outputs: [item.of('biomesoplenty:orange_sand')],
-                processingTime: 150
-            },
-            {
-                input: 'biomesoplenty:white_sandstone',
-                outputs: [item.of('biomesoplenty:white_sand')],
-                processingTime: 150
             }
         ]
     };
