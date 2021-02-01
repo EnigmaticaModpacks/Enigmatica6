@@ -778,8 +778,8 @@
 		},
 		{
 			title: "Soul Gem",
-			x: 6.0d,
-			y: 0.5d,
+			x: 6.5d,
+			y: 2.5d,
 			shape: "hexagon",
 			subtitle: "Is That a Mob in Your Pocket, or Are You Just Happy to See Me?",
 			description: [
@@ -789,7 +789,7 @@
 				"",
 				"Put the Soul Gem in your hand and right click any mob with it, the mob will be stored in the soul gem to be placed back in the world at any time with another right click!"
 			],
-			dependencies: [I;3520],
+			dependencies: [I;3484],
 			id: 3516,
 			tasks: [{
 				id: 3517,
@@ -811,7 +811,7 @@
 		},
 		{
 			x: 7.0d,
-			y: 4.5d,
+			y: 4.0d,
 			subtitle: "I Wear My Otherworld Goggles at Night",
 			description: [
 				"The Otherworld Goggles allow you to see otherworldy materials without the need to eat Demon's Dream Fruit.",
@@ -851,8 +851,8 @@
 			]
 		},
 		{
-			x: 6.0d,
-			y: 2.0d,
+			x: 5.5d,
+			y: 2.5d,
 			shape: "hexagon",
 			subtitle: "It's Bigger on the Inside!!",
 			description: [
@@ -1653,6 +1653,7 @@
 			icon: "minecraft:furnace",
 			x: 6.0d,
 			y: 4.5d,
+			shape: "hexagon",
 			subtitle: "I Better Be Gettin' Overtime For This...",
 			description: [
 				"The Djinni Machine Operator Spirit is used with the Dimensional Storage Actuator as a basic form of autocrafting.",
@@ -1697,6 +1698,7 @@
 			icon: "minecraft:feather",
 			x: 1.5d,
 			y: 4.5d,
+			shape: "hexagon",
 			description: [
 				"The occultist is also able to summon familiars to assist them on their journey.",
 				"",
