@@ -1003,7 +1003,6 @@ function crops_thermal_insolator(event, type, crop) {
 
     var input = crop.seed,
         outputs = [item.of(crop.plant).chance(primaryChance)];
-    //, item.of(crop.plantSecondary).chance(secondaryChance)
 
     if (type.includes('crop_')) {
         //add seeds to crop type output
@@ -1078,6 +1077,10 @@ function crops_immersiveengineering_cloche(event, type, crop) {
             break;
         case 'grass_like':
             growthModifier = 0.5;
+            break;
+        case 'shroom':
+            growthModifier = 0.7;
+            plantSecondary = crop.plant;
             break;
         case 'kelp_like':
             //disabled
