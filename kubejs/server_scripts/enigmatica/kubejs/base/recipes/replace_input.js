@@ -1,84 +1,30 @@
 events.listen('recipes', function (event) {
-    var blockNames = ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'];
-    for (var i = 0; i < colors.length; i++) {
-        var dyeTag = '#forge:dyes/' + colors[i];
-        for (var j = 0; j < blockNames.length; j++) {
-            var itemTag = '#forge:' + blockNames[j];
-            var block = 'minecraft:' + colors[i] + '_' + blockNames[j];
-            if (blockNames[j] === 'stained_glass_pane') {
-                event.remove({ id: block + '_from_glass_pane' });
-            } else {
-                event.remove({ id: block });
-            }
-
-            event.shaped({ item: block, count: 8 }, ['SSS', 'SDS', 'SSS'], {
-                S: itemTag,
-                D: dyeTag
-            });
-            event.shapeless({ item: block, count: 1 }, [dyeTag, itemTag]);
-        }
-
-        var itemTag = '#forge:' + 'concrete_powder';
-        var sand = '#forge:sand';
-        var gravel = '#forge:gravel';
-
-        event.shapeless({ item: 'minecraft:' + colors[i] + '_concrete_powder', count: 8 }, [
-            dyeTag,
-            sand,
-            sand,
-            sand,
-            sand,
-            gravel,
-            gravel,
-            gravel,
-            gravel
-        ]);
-
-        var wool = 'minecraft:' + colors[i] + '_wool';
-        event.remove({
-            id: 'minecraft:' + colors[i] + '_carpet_from_white_carpet'
-        });
-        event.shaped({ item: 'minecraft:' + colors[i] + '_carpet', count: 3 }, ['WW'], {
-            W: wool
-        });
-
-        var glass_pane = 'minecraft:glass_pane';
-        event.shaped({ item: 'minecraft:' + colors[i] + '_stained_glass_pane', count: 8 }, ['GGG', 'GDG', 'GGG'], {
-            G: glass_pane,
-            D: dyeTag
-        });
-
-        var glass = 'minecraft:glass';
-        event.shaped({ item: 'minecraft:' + colors[i] + '_stained_glass', count: 8 }, ['GGG', 'GDG', 'GGG'], {
-            G: glass,
-            D: dyeTag
-        });
-    }
-
-    // Replaces recipes not using forge:dyes tag for inputs
-    colors.forEach((color) => {
-        event.replaceInput({}, 'minecraft:' + color + '_dye', '#forge:dyes/' + color);
-    });
-
-    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
-
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
-
-    event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
-
+    event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
     event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
-
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
-
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
-
     event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
     event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
+    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
+    event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
+    event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
+    event.replaceInput({}, 'thermal:slag', '#forge:slag');
+    event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
+    event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
+    event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
+    event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
+    event.replaceInput({ id: 'mcwbridges:iron_platform' }, '#forge:ingots/iron', 'additionalbars:horizontal_iron_bars');
+    event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
+    event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
+    event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
+    event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
 
     event.replaceInput(
         { type: 'minecraft:crafting_shaped', output: 'minecraft:piston' },
@@ -86,18 +32,81 @@ events.listen('recipes', function (event) {
         '#quark:stone_tool_materials'
     );
 
-    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
-    event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
-    event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
-    event.replaceInput({}, 'thermal:slag', '#forge:slag');
-    event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
-    event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+    ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
+        event.replaceInput({}, tallow, '#forge:tallow');
+    });
 
-    event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
+    event.replaceInput(
+        { id: 'dustrial_decor:iron_bar_trapdoor' },
+        'minecraft:iron_bars',
+        'dustrial_decor:barbed_iron_bars'
+    );
 
-    event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
-    event.replaceInput({ id: 'mcwbridges:iron_platform' }, '#forge:ingots/iron', 'additionalbars:horizontal_iron_bars');
+    event.replaceInput(
+        { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
+        'minecraft:potion',
+        item.of('minecraft:potion', { Potion: 'minecraft:water' })
+    );
 
+    event.replaceInput(
+        { id: 'create:mixing/chromatic_compound' },
+        'create:powdered_obsidian',
+        ingredient.of('#forge:dusts/obsidian')
+    );
+
+    colors.forEach((color) => {
+        var dyeTag = `#forge:dyes/${color}`;
+
+        // Replaces recipes not using forge:dyes tag for inputs
+        event.replaceInput({}, `minecraft:${color}_dye`, dyeTag);
+
+        event.remove({
+            id: `minecraft:${color}_carpet_from_white_carpet`
+        });
+        event.shaped(Item.of(`minecraft:${color}_carpet`, 3), ['WW'], {
+            W: `minecraft:${color}_wool`
+        });
+
+        event.shaped(Item.of(`minecraft:${color}_stained_glass_pane`, 8), ['GGG', 'GDG', 'GGG'], {
+            G: 'minecraft:glass_pane',
+            D: dyeTag
+        });
+
+        event.shaped(Item.of(`minecraft:${color}_stained_glass`, 8), ['GGG', 'GDG', 'GGG'], {
+            G: 'minecraft:glass',
+            D: dyeTag
+        });
+
+        ['stained_glass', 'stained_glass_pane', 'terracotta', 'concrete_powder', 'wool', 'carpet'].forEach(
+            (blockName) => {
+                var itemTag = `#forge:${blockName}`;
+                var block = `minecraft:${color}_${blockName}`;
+
+                if (blockName === 'stained_glass_pane') {
+                    event.remove({ id: `${block}_from_glass_pane` });
+                } else {
+                    event.remove({ id: block });
+                }
+
+                event.shaped(Item.of(block, 8), ['SSS', 'SDS', 'SSS'], {
+                    S: itemTag,
+                    D: dyeTag
+                });
+                event.shapeless(Item.of(block, 1), [dyeTag, itemTag]);
+            }
+        );
+        event.shapeless(Item.of(`minecraft:${color}_concrete_powder`, 8), [
+            dyeTag,
+            '#forge:sand',
+            '#forge:sand',
+            '#forge:sand',
+            '#forge:sand',
+            '#forge:gravel',
+            '#forge:gravel',
+            '#forge:gravel',
+            '#forge:gravel'
+        ]);
+    });
     var data = {
         recipes: [
             {
@@ -326,31 +335,4 @@ events.listen('recipes', function (event) {
             );
         });
     });
-
-    event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
-    event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
-    event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
-
-    ['quark:tallow', 'eidolon:tallow', 'occultism:tallow'].forEach((tallow) => {
-        event.replaceInput({}, tallow, '#forge:tallow');
-    });
-
-    event.replaceInput(
-        { id: 'dustrial_decor:iron_bar_trapdoor' },
-        'minecraft:iron_bars',
-        'dustrial_decor:barbed_iron_bars'
-    );
-
-    event.replaceInput({ mod: 'bloodmagic' }, 'bloodmagic:ironfragment', '#mekanism:clumps/iron');
-    event.replaceInput({ mod: 'bloodmagic' }, 'bloodmagic:goldfragment', '#mekanism:clumps/gold');
-
-    event.replaceInput(
-        { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
-        'minecraft:potion',
-        item.of('minecraft:potion', { Potion: 'minecraft:water' })
-    );
-
-    //TODO: Remove in 0.4.0
-    event.replaceInput({ id: 'quantumstorage:chestgold' }, 'quantumstorage:chestiron', '#forge:storage_blocks/iron');
-    event.replaceInput({ id: 'quantumstorage:chestdiamond' }, 'quantumstorage:chestgold', '#forge:storage_blocks/gold');
 });

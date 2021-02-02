@@ -70,21 +70,6 @@ events.listen('recipes', (event) => {
                 input: 'byg:black_sandstone',
                 output: item.of('byg:black_sand', 2),
                 secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
-            },
-            {
-                input: 'biomesoplenty:black_sandstone',
-                output: item.of('biomesoplenty:black_sand', 2),
-                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
-            },
-            {
-                input: 'biomesoplenty:orange_sandstone',
-                output: item.of('biomesoplenty:orange_sand', 2),
-                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
-            },
-            {
-                input: 'biomesoplenty:white_sandstone',
-                output: item.of('biomesoplenty:white_sand', 2),
-                secondary: [item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
             }
         ]
     };

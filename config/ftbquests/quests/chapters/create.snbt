@@ -1,7 +1,7 @@
 {
 	id: 3135,
 	filename: "create",
-	order_index: 0,
+	order_index: 11,
 	title: "Create",
 	icon: "create:cogwheel",
 	default_quest_shape: "",
@@ -1079,11 +1079,16 @@
 				"",
 				"Several advanced items may only be crafted this way.",
 				"",
-				"Crafter Slot Covers can be used to disable a given slot, which is required for any craft that has empty spaces in it. For instance, when crafting a chest with a 3x3 grid of Mechanical Crafters, the middle slot would be covered. ",
+				"Take note when placing the crafters themselves as there will be an arrow pointing towards the block that was clicked to place it. This arrow indicates which way items will travel as the crafters work and all arrows must connect to a single crafter.",
+				"",
+				"For example, placing the first crafter on the ground will make the arrow point down, this would be the output. A crafter to the side of the first would need to be placed against the side so that its arrow points into the first, making a channel. ",
+				"",
+				"Crafter Slot Covers can be used to disable a given slot, which is required for any craft that has empty spaces in it. For instance, when crafting a chest with a 3x3 grid of Mechanical Crafters, the middle slot must be covered. ",
 				"",
 				"Items may be inserted with hoppers, belts and funnels, mechanical arms and more. Experiment to see what you can come up with!"
 			],
 			dependencies: [I;3330],
+			min_width: 250,
 			id: 3354,
 			tasks: [
 				{
@@ -1333,7 +1338,9 @@
 				"",
 				"Worry not, once the contraption is formed, the glue marks will become invisible, allowing for very aesthetic builds.",
 				"",
-				"Use your scroll wheel while holding a wrench and looking at the chassis to configure its capture range. "
+				"Use your scroll wheel while holding a wrench and looking at the chassis to configure its capture range. ",
+				"",
+				"Note: A slime ball may be used infinitely to set glue marks on Chassis blocks themselves. Right-Click with the slime ball to apply to one side. Double Right-Click to apply to all sides."
 			],
 			dependencies: [I;
 				3373,

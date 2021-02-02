@@ -29,16 +29,6 @@ events.listen('recipes', function (event) {
             B: '#forge:grain',
             C: 'aquaculture:fish_fillet_cooked'
         }),
-        shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_fluid_tank',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass_panes'
-        }),
-        shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_bin',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass'
-        }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         }),
@@ -339,46 +329,29 @@ events.listen('recipes', function (event) {
             E: 'thermal:hazmat_boots',
             F: 'alexsmobs:frontier_cap'
         }),
-        shapedRecipe('minecraft:chest', ['AAA', 'A A', 'AAA'], {
-            A: '#minecraft:planks'
-        }),
         shapedRecipe(
-            Item.of('morphtool:tool', {
-                'morphtool:is_morphing': 1,
+            Item.of('morphtool:tool').nbt({
                 'morphtool:data': {
                     blockcarpentry: { id: 'blockcarpentry:texture_wrench', Count: 1 },
-                    powah: { id: 'powah:wrench', Count: 1, tag: { PowahWrenchNBT: {} } },
+                    powah: { id: 'powah:wrench', Count: 1 },
                     resourcefulbees: { id: 'resourcefulbees:scraper', Count: 1 },
                     astralsorcery: { id: 'astralsorcery:wand', Count: 1 },
                     pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench', Count: 1 },
-                    immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1, tag: { Damage: 0 } },
+                    immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1 },
                     transport: { id: 'transport:rail_breaker', Count: 1 },
                     pedestals: { id: 'pedestals:linkingtool', Count: 1 },
                     botania: { id: 'botania:twig_wand', Count: 1, tag: { color1: 0, color2: 0 } },
-                    ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1, tag: {} },
+                    ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1 },
                     mekanism: { id: 'mekanism:configurator', Count: 1 },
                     bloodmagic: { id: 'bloodmagic:ritualtinkerer', Count: 1 },
                     thermal: { id: 'thermal:wrench', Count: 1 },
                     rftoolsbase: { id: 'rftoolsbase:smartwrench', Count: 1 },
-                    create: {
-                        id: 'create:wrench',
-                        Count: 1,
-                        tag: {
-                            'morphtool:is_morphing': 1,
-                            'morphtool:displayName': { translate: 'item.create.wrench' },
-                            display: {
-                                Name: {
-                                    translate: 'morphtool.sudo_name',
-                                    with: [{ color: 'green', translate: 'item.create.wrench' }]
-                                }
-                            }
-                        }
-                    },
-                    chiselsandbits: { id: 'chiselsandbits:wrench_wood', Count: 1, tag: { Damage: 0 } },
+                    create: { id: 'create:wrench', Count: 1 },
+                    chiselsandbits: { id: 'chiselsandbits:wrench_wood', Count: 1 },
                     refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
-                    quantumstorage: { id: 'quantumstorage:hammer', Count: 1, tag: { mode: 'link' } },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
-                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 }
+                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
+                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 }
                 }
             }),
             ['ABA', 'CFD', 'AEA'],
@@ -390,10 +363,39 @@ events.listen('recipes', function (event) {
                 E: '#forge:gears/copper',
                 F: 'morphtool:tool'
             }
-        )
+        ),
+        shapedRecipe(item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
+        shapedRecipe(item.of('eidolon:candle', 4), ['B', 'A'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
+        shapedRecipe(item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        })
     ];
 
     recipes.forEach(function (recipe) {
-        event.shaped(recipe.result, recipe.pattern, recipe.key);
+        if (recipe.id) {
+            event.shaped(recipe.result, recipe.pattern, recipe.key).id(recipe.id);
+        } else {
+            event.shaped(recipe.result, recipe.pattern, recipe.key);
+        }
+    });
+
+    buildWoodVariants.forEach((wood) => {
+        if (wood.modId == 'minecraft') {
+            return;
+        }
+        event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
+            A: wood.plankBlock,
+            B: '#forge:rods/wooden'
+        });
+        event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
+            A: wood.plankBlock
+        });
     });
 });

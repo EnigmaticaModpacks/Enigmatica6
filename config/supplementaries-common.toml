@@ -6,8 +6,6 @@
 		#maximum range
 		#Range: 0 ~ 256
 		range = 64
-		#additional blocks besides fences that can accept a sign post
-		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
 
 	[blocks.bellows]
 		#bellows pushes air following this equation: 
@@ -29,6 +27,8 @@
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
 		range = 5
+		#additional blocks that will be ticked by bellows
+		whitelist = []
 
 	[blocks.spring_launcher]
 		#spring launcher launch speed
@@ -56,6 +56,8 @@
 		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
 		#tinted jar catchable mobs
 		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
+		#any item can work here, ideally you should only put cookies and alike
+		cookies = ["minecraft:cookie", "simplefarming:peanut_butter_cookie", "farmersdelight:sweet_berry_cookie", "farmersdelight:honey_cookie"]
 
 	#I haven't tested most of the mods included here. let me know if they work
 	[blocks.cage]
@@ -79,10 +81,24 @@
 		#additional sack slots divided by 2. Number of slots will be 5 + additional_slots*2
 		#Range: 0 ~ 2
 		additional_slots = 0
+		#additional blocks that can support a sack
+		whitelist = []
 
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = true
+
+	[blocks.sign_post]
+		#additional blocks besides fences that can accept a sign post
+		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
+
+	[blocks.globe]
+		#how many gobe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
+		#Range: 0 ~ 50
+		trades = 2
+		#chanche of finding a globe in a shipwreck treasure chest. default is 20%
+		#Range: 0 ~ 100
+		treasure_chance = 20
 
 #Configure spawning conditions
 [spawns]
@@ -140,6 +156,16 @@
 		#max chain length that allows a bell to ring
 		#Range: 0 ~ 1024
 		chain_length = 32
+
+	[tweaks.hanging_flower_pots]
+		#allows you to place hanging flower pots. Works with any modded pot too
+		enabled = true
+
+	[tweaks.cake_tweaks]
+		#allows you to place a cake ontop of another
+		double_cake = true
+		#replaces normal cake placement with a directional one
+		directional_cake = true
 
 [items]
 

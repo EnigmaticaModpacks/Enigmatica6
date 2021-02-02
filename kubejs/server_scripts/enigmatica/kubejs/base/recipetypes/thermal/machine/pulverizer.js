@@ -107,26 +107,10 @@ events.listen('recipes', function (event) {
                 experience: 0.2
             },
             {
-                input: 'biomesoplenty:black_sandstone',
+                input: 'buildinggadgets:construction_block_dense',
                 outputs: [
-                    item.of('biomesoplenty:black_sand', 2),
-                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
-                ],
-                experience: 0.2
-            },
-            {
-                input: 'biomesoplenty:orange_sandstone',
-                outputs: [
-                    item.of('biomesoplenty:orange_sand', 2),
-                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
-                ],
-                experience: 0.2
-            },
-            {
-                input: 'biomesoplenty:white_sandstone',
-                outputs: [
-                    item.of('biomesoplenty:white_sand', 2),
-                    item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                    item.of('buildinggadgets:construction_paste', 3),
+                    item.of('buildinggadgets:construction_paste', 2).chance(0.5)
                 ],
                 experience: 0.2
             }

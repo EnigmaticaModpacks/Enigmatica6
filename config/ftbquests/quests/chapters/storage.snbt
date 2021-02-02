@@ -1,7 +1,7 @@
 {
 	id: 683,
 	filename: "storage",
-	order_index: 9,
+	order_index: 8,
 	title: "Storage",
 	icon: "minecraft:chest",
 	default_quest_shape: "",
@@ -98,9 +98,15 @@
 			dependencies: [I;1023],
 			id: 1029,
 			tasks: [{
-				id: 1680,
+				id: 3749,
 				type: "item",
-				item: "ironchest:iron_chest"
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "enigmatica:quests/storage/wood_to_iron"
+					}
+				}
 			}],
 			rewards: [{
 				id: 2667,
@@ -395,14 +401,23 @@
 			}]
 		},
 		{
+			title: "Gold Chests",
+			icon: "ironchest:gold_chest",
 			x: -0.5d,
 			y: -11.0d,
+			description: ["Just a touch of extra bling."],
 			dependencies: [I;1029],
 			id: 2383,
 			tasks: [{
-				id: 2384,
+				id: 3750,
 				type: "item",
-				item: "ironchest:gold_chest"
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "enigmatica:quests/storage/iron_to_gold"
+					}
+				}
 			}],
 			rewards: [{
 				id: 2651,
@@ -414,15 +429,23 @@
 			}]
 		},
 		{
+			title: "Diamond Chests",
+			icon: "ironchest:diamond_chest",
 			x: -0.5d,
 			y: -12.0d,
 			description: ["Certainly quite the flex, storing your item in a box of diamond."],
 			dependencies: [I;2383],
 			id: 2385,
 			tasks: [{
-				id: 2386,
+				id: 3751,
 				type: "item",
-				item: "ironchest:diamond_chest"
+				item: {
+					id: "itemfilters:tag",
+					Count: true,
+					tag: {
+						value: "enigmatica:quests/storage/gold_to_diamond"
+					}
+				}
 			}],
 			rewards: [{
 				id: 2467,

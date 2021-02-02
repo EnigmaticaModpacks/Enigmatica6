@@ -41,7 +41,6 @@ events.listen('item.tags', function (event) {
         'mekanism:qio_drive_supermassive',
         'mekanism:qio_drive_time_dilating',
         'mekanism:ultimate_bin',
-        'quantumstorage:qsu',
         'refinedstorage:16k_storage_block',
         'refinedstorage:16k_storage_disk',
         'refinedstorage:16k_storage_part',

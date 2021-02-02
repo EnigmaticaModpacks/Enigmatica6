@@ -1,8 +1,7 @@
-// events.listen('client.item_tooltip', function (event) {
-//     switch (event.item.id) {
-//         case 'appliedenergistics2:quantum_entangled_singularity':
-//             event.add(
-//                 'To create drop 1 Singularity and 1 Ender Dust (From Applied Energistics) and cause an explosion within range of the items.'
-//             );
-//     }
-// });
+onEvent('client.item_tooltip', (event) => {
+    refinedStorageItems.forEach((item) => {
+        if (event.item.id == 'refinedstorage:' + item) {
+            event.add('Can be dyed through crafting or by right clicking it with dye in-world.');
+        }
+    });
+});

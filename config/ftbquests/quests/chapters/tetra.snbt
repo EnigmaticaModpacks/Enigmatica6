@@ -1,7 +1,7 @@
 {
 	id: 1906,
 	filename: "tetra",
-	order_index: 11,
+	order_index: 10,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
@@ -239,7 +239,8 @@
 			tasks: [{
 				id: 3247,
 				type: "item",
-				item: "tetra:hammer_base"
+				item: "tetra:hammer_base",
+				only_from_crafting: false
 			}],
 			rewards: [{
 				id: 2634,
@@ -731,7 +732,7 @@
 			description: [
 				"Netherite Ingots will get you to tier 6. ",
 				"",
-				"Nou're basically a walking Forge, Congrats!"
+				"You're basically a walking Forge, Congratulations!"
 			],
 			dependencies: [I;2181],
 			dependency_requirement: "all_started",

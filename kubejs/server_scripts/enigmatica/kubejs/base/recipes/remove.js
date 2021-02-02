@@ -1,6 +1,5 @@
 events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:combining' });
-    event.remove({ type: 'mekanism:crushing', input: 'minecraft:stone' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
     event.remove({ mod: 'prettypipes' });
@@ -12,6 +11,8 @@ events.listen('recipes', function (event) {
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
+
+        'create:crushing/obsidian',
 
         'craftingstation:crafting_station',
 
@@ -33,10 +34,7 @@ events.listen('recipes', function (event) {
 
         'simplefarming:raw_bacon',
 
-        'thermal:bamboo_block',
-
-        'quantumstorage:tank',
-        'quantumstorage:qsu'
+        'thermal:bamboo_block'
     ];
 
     var idRemovals = [
@@ -57,7 +55,9 @@ events.listen('recipes', function (event) {
 
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
+        'create:fill_minecraft_bucket_with_create_honey',
 
+        'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'immersiveengineering:crafting/stick_steel',
@@ -72,8 +72,13 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod',
         'mapperbase:iron_rod',
 
+        'mekanism:crushing/stone/to_cobblestone',
+
         'morevanillalib:obsidian_shard',
 
+        'quark:building/crafting/tallow_from_block',
+
+        'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
     ];
@@ -86,18 +91,8 @@ events.listen('recipes', function (event) {
         event.remove({ id: removal });
     });
 
-    global.disabledItems.forEach((disabledItem) => {
+    disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
-    });
-
-    event.remove({
-        output: '/extrastorage:disk_\\w+/',
-        mod: 'extrastorage'
-    });
-    event.remove({
-        output: '/extrastorage:storagepart_\\w+/',
-        mod: 'extrastorage',
-        type: 'minecraft:crafting_shaped'
     });
 
     event.remove({
@@ -176,4 +171,15 @@ events.listen('recipes', function (event) {
         input: '#forge:ores/nickel',
         type: 'thermal:smelter'
     });
+    event.remove({
+        input: 'minecraft:fire_charge',
+        mod: 'thermal',
+        type: 'minecraft:crafting_shapeless'
+    });
+    event.remove({ type: 'pedestals:pedestal_crushing', output: '#forge:dyes' });
+    event.remove({ type: 'create:milling', output: '#forge:dyes' });
+    event.remove({ type: 'create:crushing', output: '#forge:dyes' });
+    event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
+    event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
+    event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
 });

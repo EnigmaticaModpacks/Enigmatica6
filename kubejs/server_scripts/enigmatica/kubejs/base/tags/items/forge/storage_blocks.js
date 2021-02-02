@@ -15,11 +15,14 @@ events.listen('item.tags', function (event) {
         .add('powah:uraninite_block')
         .add('occultism:iesnium_block')
         .add('naturesaura:infused_iron_block')
-        .add('naturesaura:tainted_gold_block');
+        .add('naturesaura:tainted_gold_block')
+        .add('astralsorcery:starmetal')
+        .add('ars_nouveau:mana_gem_block');
 
+    event.get(storageBlocks + '/mana').add('ars_nouveau:mana_gem_block');
     event.get(storageBlocks + '/infused_iron').add('naturesaura:infused_iron_block');
     event.get(storageBlocks + '/tainted_gold').add('naturesaura:tainted_gold_block');
-
+    event.get(storageBlocks + '/starmetal').add('astralsorcery:starmetal');
     event
         .get(storageBlocks + '/gold_bronze')
         .add('#' + storageBlocks + '/gold')

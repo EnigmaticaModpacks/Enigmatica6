@@ -10,7 +10,7 @@
 	"Enable 'q' Button" = false
 	#
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen"]
 	"Use Anti Overlap" = true
 	#
 	#Quark messes with the Stonecutter to allow any item that can be used in it to be shift clicked in. Set this to false to turn it off.
@@ -140,6 +140,8 @@
 	"More Potted Plants" = true
 	Grate = true
 	"Variant Bookshelves" = true
+	Stools = true
+	Hedges = true
 
 	[building.rope]
 		"Enable Dispenser Behavior" = true
@@ -210,6 +212,7 @@
 		#
 		#This also includes Red Sandstone Bricks and Soul Sandstone Bricks
 		"Enable Sandstone Bricks" = true
+		"Enable Blackstone Variant Bricks" = true
 
 	[building.tallow_and_candles]
 		"Candles Fall" = true
@@ -242,6 +245,9 @@
 		"Enable Chests" = false
 		"Enable Player Inventory In Chests" = false
 		"Enable Player Inventory" = false
+		#
+		#Play a click when sorting inventories using keybindings
+		"Satisfying Click" = true
 
 	[management.item_sharing]
 		"Render Items In Chat" = true
@@ -1723,6 +1729,8 @@
 	Stonelings = true
 	Foxhound = true
 	Toretoise = true
+	Forgotten = true
+	Wraith = true
 
 	[mobs.stonelings]
 		"Cautious Stonelings" = true
@@ -1861,6 +1869,35 @@
 				# mushroom, nether]
 				"Biome Categories" = ["swamp"]
 
+	[mobs.forgotten]
+		#
+		#1 in this many Skeletons that spawn under the threshold are replaced with Forgotten.
+		"Forgotten Spawn Rate" = 0.05
+		"Max Height For Spawn" = 20
+
+	[mobs.wraith]
+		#
+		#List of sound sets to use with wraiths.
+		#Three sounds must be provided per entry, separated by | (in the format idle|hurt|death). Leave blank for no sound (i.e. if a mob has no ambient noise)
+		"Wraith Sounds" = ["entity.sheep.ambient|entity.sheep.hurt|entity.sheep.death", "entity.cow.ambient|entity.cow.hurt|entity.cow.death", "entity.pig.ambient|entity.pig.hurt|entity.pig.death", "entity.chicken.ambient|entity.chicken.hurt|entity.chicken.death", "entity.horse.ambient|entity.horse.hurt|entity.horse.death", "entity.cat.ambient|entity.cat.hurt|entity.cat.death", "entity.wolf.ambient|entity.wolf.hurt|entity.wolf.death", "entity.villager.ambient|entity.villager.hurt|entity.villager.death", "entity.polar_bear.ambient|entity.polar_bear.hurt|entity.polar_bear.death", "entity.zombie.ambient|entity.zombie.hurt|entity.zombie.death", "entity.skeleton.ambient|entity.skeleton.hurt|entity.skeleton.death", "entity.spider.ambient|entity.spider.hurt|entity.spider.death", "|entity.creeper.hurt|entity.creeper.death", "entity.endermen.ambient|entity.endermen.hurt|entity.endermen.death", "entity.zombie_pig.ambient|entity.zombie_pig.hurt|entity.zombie_pig.death", "entity.witch.ambient|entity.witch.hurt|entity.witch.death", "entity.blaze.ambient|entity.blaze.hurt|entity.blaze.death", "entity.llama.ambient|entity.llama.hurt|entity.llama.death", "|quark:entity.stoneling.cry|quark:entity.stoneling.die", "quark:entity.frog.idle|quark:entity.frog.hurt|quark:entity.frog.die"]
+
+		[mobs.wraith.spawn_config]
+			"Max Cost" = 0.7
+			"Spawn Cost" = 0.15
+			#
+			#Allowed values: (0,)
+			"Spawn Weight" = 8
+			#
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#
+			#Allowed values: [1,)
+			"Max Group Size" = 3
+
+			[mobs.wraith.spawn_config.biomes]
+				Biomes = ["minecraft:soul_sand_valley"]
+				"Is Blacklist" = false
+
 [client]
 	"Greener Grass" = true
 	"Variant Animal Textures" = true
@@ -1914,6 +1951,7 @@
 		"Show Saturation" = true
 		"Map Tooltips" = true
 		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "quark:pickarang"]
+		"Food Compression Threshold" = 4
 
 	[client.greener_grass]
 		"Leaves List" = ["minecraft:spruce_leaves", "minecraft:birch_leaves", "minecraft:oak_leaves", "minecraft:jungle_leaves", "minecraft:acacia_leaves", "minecraft:dark_oak_leaves", "minecraft:vine"]
