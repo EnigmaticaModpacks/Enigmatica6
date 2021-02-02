@@ -58,7 +58,7 @@ events.listen('recipes', function (event) {
         var dyeTag = `#forge:dyes/${color}`;
 
         // Replaces recipes not using forge:dyes tag for inputs
-        event.replaceInput({}, `minecraft:${color}_dye`, dyeTag);
+        event.replaceInput({}, `minecraft:${color}_dye`, dyeTag, true);
 
         event.remove({
             id: `minecraft:${color}_carpet_from_white_carpet`
