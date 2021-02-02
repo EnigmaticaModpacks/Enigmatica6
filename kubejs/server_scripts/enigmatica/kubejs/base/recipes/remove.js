@@ -159,6 +159,7 @@ events.listen('recipes', function (event) {
     });
 
     event.remove({ type: 'botanypots:crop' });
+    event.remove({ type: 'botanypots:soil' });
     event.remove({ type: 'thermal:insolator' });
     event.remove({ type: 'immersiveengineering:cloche' });
 
