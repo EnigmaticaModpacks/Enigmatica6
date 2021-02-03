@@ -29,16 +29,6 @@ events.listen('recipes', function (event) {
             B: '#forge:grain',
             C: 'aquaculture:fish_fillet_cooked'
         }),
-        shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_fluid_tank',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass_panes'
-        }),
-        shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_bin',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass'
-        }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
         }),
@@ -359,9 +349,9 @@ events.listen('recipes', function (event) {
                     create: { id: 'create:wrench', Count: 1 },
                     chiselsandbits: { id: 'chiselsandbits:wrench_wood', Count: 1 },
                     refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
-                    quantumstorage: { id: 'quantumstorage:hammer', Count: 1 },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
-                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 }
+                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
+                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 }
                 }
             }),
             ['ABA', 'CFD', 'AEA'],

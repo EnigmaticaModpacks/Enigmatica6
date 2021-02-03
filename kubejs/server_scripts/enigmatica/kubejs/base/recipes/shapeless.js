@@ -149,7 +149,6 @@ events.listen('recipes', (event) => {
                         Count: 1,
                         tag: { 'patchouli:book': 'modularrouters:book' }
                     },
-                    tmechworks: { id: 'tmechworks:book', Count: 1 },
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                     bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } }
                 }

@@ -34,10 +34,7 @@ events.listen('recipes', function (event) {
 
         'simplefarming:raw_bacon',
 
-        'thermal:bamboo_block',
-
-        'quantumstorage:tank',
-        'quantumstorage:qsu'
+        'thermal:bamboo_block'
     ];
 
     var idRemovals = [
@@ -94,18 +91,8 @@ events.listen('recipes', function (event) {
         event.remove({ id: removal });
     });
 
-    global.disabledItems.forEach((disabledItem) => {
+    disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
-    });
-
-    event.remove({
-        output: '/extrastorage:disk_\\w+/',
-        mod: 'extrastorage'
-    });
-    event.remove({
-        output: '/extrastorage:storagepart_\\w+/',
-        mod: 'extrastorage',
-        type: 'minecraft:crafting_shaped'
     });
 
     event.remove({
@@ -157,6 +144,11 @@ events.listen('recipes', function (event) {
         mod: 'occultism',
         type: 'occultism:miner'
     });
+
+    event.remove({ type: 'botanypots:crop' });
+    event.remove({ type: 'botanypots:soil' });
+    event.remove({ type: 'thermal:insolator' });
+    event.remove({ type: 'immersiveengineering:cloche' });
 
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
 

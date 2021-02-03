@@ -1,0 +1,997 @@
+=========================================
+Enigmatica6 0.3.10 --> Enigmatica6 0.3.11
+=========================================
+
+Updated:
+	Advanced Hook Launchers (AdHooks-1.16.4-6.1.2.0-build.0027.jar --> AdHooks-1.16.4-6.1.3.0-build.0038.jar):
+		AdHooks-1.16.4-6.1.3.0-build.0038.jar:
+			6.1.3.0
+			* implemented: rebindable controls (thanks to waldotheranger and hairlessOrphan)
+			* improved: launcher control tooltips
+			* fixed: hook relaunch cooldown not resetting correctly after releasing the key
+			* requires: ForgeEndertech 7.0.10.0 or above
+
+	Architectury API (Forge) ([Forge 1.16.4/5] v1.5.101 --> [Forge 1.16.4/5] v1.5.104):
+		[Forge 1.16.4/5] v1.5.104:
+			Architectury v1.5.104 for 1.16.4/5
+			Updated at 2021-01-27 22:48.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/5dff982)
+			* Fix AbstractRecipeSerializer's signature
+			* Remove call to target interfaces in mixin plugin
+			* Add javadocs
+			* Add game rule API
+			* [ci skip] This is beautiful
+			* Bump base version to 1.5
+			* Fix mojank stripping containsKey from Registries on Server
+			* [ci skip] Add SET_SCREEN test to testmod
+			* Remove unused import
+			* Attempted fix for #25 (#28)
+			* Update GitHub workflows to support [ci skip] tag
+			* Update architectury-plugin
+			* Update architectury-plugin
+			* Fix crash registering reload listeners
+			* Update architectury plugin
+			* FluidStackHooks in getting the rendering information for the fluids (#26)
+			* Add PlayerEvent#CHANGE_DIMENSION
+			* Fix #25
+			* Add ItemStackHooks
+			* Expose raw id from registries
+			* Set @Unique to be mixin-wide in MixinMinecraft
+			* Add PR snapshots
+			* Only overwrite screen on SUCCESS, fix whitespace changes
+			* Registry API to create modded registries, close #21
+			* Event cleanups
+			* Fix shader effects location being hardcoded to minecraft namespace
+			* Add GuiEvent.SET_SCREEN
+			* Bump minor version to 1.4
+			* Fix compilation error
+			* Add ClientLifecycleEvent.CLIENT_SETUP and allow deferring in ColorHandlers
+			* Add 1.16.5 to CurseForge versions
+			* Fix AW
+			* Add LevelResourceHooks
+			* Add raw input events, close #16
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+		[Forge 1.16.4/5] v1.5.103:
+			Architectury v1.5.103 for 1.16.4/5
+			Updated at 2021-01-27 14:28.
+			[Click here for changelog](https://www.github.com/architectury/architectury/commits/afe197b)
+			* Add javadocs
+			* Add game rule API
+			* [ci skip] This is beautiful
+			* Bump base version to 1.5
+			* Fix mojank stripping containsKey from Registries on Server
+			* [ci skip] Add SET_SCREEN test to testmod
+			* Remove unused import
+			* Attempted fix for #25 (#28)
+			* Update GitHub workflows to support [ci skip] tag
+			* Update architectury-plugin
+			* Update architectury-plugin
+			* Fix crash registering reload listeners
+			* Update architectury plugin
+			* FluidStackHooks in getting the rendering information for the fluids (#26)
+			* Add PlayerEvent#CHANGE_DIMENSION
+			* Fix #25
+			* Add ItemStackHooks
+			* Expose raw id from registries
+			* Set @Unique to be mixin-wide in MixinMinecraft
+			* Add PR snapshots
+			* Only overwrite screen on SUCCESS, fix whitespace changes
+			* Registry API to create modded registries, close #21
+			* Event cleanups
+			* Fix shader effects location being hardcoded to minecraft namespace
+			* Add GuiEvent.SET_SCREEN
+			* Bump minor version to 1.4
+			* Fix compilation error
+			* Add ClientLifecycleEvent.CLIENT_SETUP and allow deferring in ColorHandlers
+			* Add 1.16.5 to CurseForge versions
+			* Fix AW
+			* Add LevelResourceHooks
+			* Add raw input events, close #16
+			* Close #18 Currently testing item / block addition, keybinds and creative tabs.
+			* Add AbstractRecipeSerializer
+			* ArchitecturyBlockEntity to sync data to client (#10)
+			* Fix MenuRegistry crash, thanks @OroArmor
+			* Migrate to ArchitecturyTarget
+			* Fix Chocohead/OptiFabric#147
+			* Update forgified-fabric-loom to 0.5.26
+			* Migrate to non API centralized ExpectPlatform
+			* Bump minor version
+			* Not automatically register the menu type, add methods to open the menu
+			* Upgrade gradle plugins
+			* Some name changes and Javadoc
+			* Added Screen Registry API
+			* License format
+			* Delegate the Screen itself
+			* Add license header to test classes
+			* Rename to ClientScreenInputEvent and fix mixins
+			* Add test mod
+			* Fix some events
+			* Warn additional mod loaders.
+			* Allow DeferredRegister to be created with just the mod id.
+			* Add getModId to Registries
+			* Add license to CriteriaTriggersRegistry
+			* Adds CriteriaTriggersRegistry
+			* Limit GuiEvent.DEBUG_TEXT to when f3 menu is enabled.
+			* Update license header to 2021
+			* Use better createInteractionResult instead of looping ourselves.
+			* Add ClientGuiInputEvent
+			* Update license header year to include 2021
+			* Somehow method references are evil
+			* Limit github actions
+			* Add DeferredRegister
+			* Include discord info in README
+			* Add RegistrySupplier to ease registry delegation
+			* Add ForgeEventCancellable
+			* Fix NPE on Fractions caching
+			* Update architect-plugin
+			* Fix license, remove unused mixin
+			* Architectury Update - Cache fractions from -1024 to 1023 - Add BiomeModifications for platform-agnostic biome additions - Add FluidStackHooksForge to convert architectury FluidStacks to forge FluidStacks - Migrate to Forge Loom & Update Architect Plugin - Mark several methods in Mod as NotNull - Add Env as a replacement for EnvType
+			* Update forge
+			* Better PlatformMethods errors
+			* Remove the use of typetools in EventFactory#of and fix license field
+			* Upload the remap jar for fabric
+			* Upload the shadow jar for fabric
+			* Add tooltip events, new events for server starting
+			* Fix client events, bump version to 1.1, fix FluidStackHooks for fabric.
+			* Fix FluidStackHooksImpl
+			* Remove fabric api dependency on the forge mod
+			* Fix versioning on the forge mod
+			* Add RecipeUpdateEvent
+			* Add isFabric and isForge to Platform
+			* More Platform specific Mod hooks
+			* Add xp to break block
+			* Add block break and block place events
+			* Automatically attach to forge event if the class is annotated with @ForgeEvent.
+			* Add EventFactory.attachToForge
+			* Add @ForgeEvent
+			* Add missing typetools for forge
+			* Fix buildscript
+			* Fix buildscript
+			* Fix buildscript
+			* Publish to CF
+			* Update to 1.16.4
+			* Lazily initialize event invokers
+			* Update architect-plugin
+			* Update architect-plugin
+			* Reorder ToolType variables
+			* Convert to @ExpectPlatform
+			* PlayerHooks#closeContainer
+			* Add byId in ToolType
+			* Fix TextureStitchEvent
+			* Add TextureStitchEvent
+			* Add PackRepositoryHooks and DyeColorHooks
+			* A few more events
+			* Proper mods metadata
+			* More events
+			* GetEncodeId
+			* More hooks
+			* ItemEntityHooks
+			* Allow only using `getRegistryName`
+			* Might have forgotten a true here
+			* PlayerHooks and NetworkChannel
+			* Nbt types utils
+			* Hooks for getting buttons in a screen
+			* Deprecate getId using registry
+			* Hooks for setting radius for explosion
+			* Hooks for getting radius for explosion
+			* ExplosionHooks
+			* More events and hooks
+			* Registries#getId should be static
+			* We forgot to add player into ChatEvent#SERVER
+			* More events and hooks
+			* Set gradle memory to 3GB
+			* Fix compile
+			* Publish to bintray
+			* Deprecate LifecycleEvent client events for now since it is not possible atm
+			* Test for mod annotation for detecting forge
+			* More hooks for registering keybinds, render types, creative tabs, block entity renderers
+			* Command registry events and ReloadListenerRegistry
+			* Fix event proxies
+			* Initial work
+
+	Bed Benefits (BedBenefits-1.16.5-5.0.2.jar --> BedBenefits-1.16.5-5.0.3.jar):
+		BedBenefits-1.16.5-5.0.3.jar:
+			* Fix updating potion effects when a player hasn't fully connected yet. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BedBenefits)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Blood Magic  (BloodMagic-1.16.3-3.0.6-11.jar --> BloodMagic-1.16.4-3.1.0-15.jar):
+		BloodMagic-1.16.4-3.1.0-15.jar:
+			------------------------------------------------------
+			Version 3.1.0
+			------------------------------------------------------
+			* Majorly refactored the progression of the mod. Instead of starting with a Snare, you instead start by crafting the Blood Altar. The changes are documented in the guide, and you can follow its "Getting Started" entry!
+			* Changed the tooltips so that they are gray, more easily differentiating them from the name of the item.
+			* Added the Sigil of Holding
+			* Changed the crafting of Tartaric Gems so that you no longer need to use the previous tier gem in the gem slot.
+			-> The Hellfire Forge will now syphon from the gem in the crafting table first, and all unused will from the consumed gem will be placed in the crafted gem.
+			* Changed the GUI for the Alchemy Table
+			-> You can now select which sides that an input/output slot is accessible from. Click on the slot you wish to change, then click on the directional toggle buttons.
+			* Fixed Plunderer's Glint not properly applying the Looting level.
+			* Also fixed a NPE crash due to Iron Tip. Fixes some crashes due to mods using the ItemUsedFinish event.
+			* Fixed the Blood Altar not being able to input fluids. About time, Way!
+			* Added new Explosive Charges
+			-> Fungal Charge, which is very useful for giant mushrooms and nether mushrooms
+			-> Controlled Charge, which will destroy only blocks that match the block it is placed on.
+			* Added the ability to apply a few select Anointments to the charges. Only one can be applied to a charge at a time.
+			-> Soft Touch, Fortuna, and Smelting
+			* Fixed the Living Armour so that you cannot use an upgrade tome to usurp the point cap.
+			-> Fixed "Strong Legs" so that it no longer runs the program "CrunchyLegs.exe" - as a result, you no longer suffer fall damage from jumping on the same level.
+			-> Removed the direct fall damage mitigation from "Strong Legs"
+			* Added two types of Throwing Daggers to the Blood Mage's offensive kit.
+			-> Iron Throwing Dagger
+			-> Syringe Throwing Dagger
+			* Refactored the guide so that it provides +2 to awesomeness.
+
+	Builders Crafts & Additions (Forge) (buildersaddition-1.16.4-20210124a --> buildersaddition-1.16.4-20210127a):
+		buildersaddition-1.16.4-20210127a:
+			~ Malformed Cabinet recipe jsons.
+
+	Dark Utilities (DarkUtilities-1.16.5-8.0.1.jar --> DarkUtilities-1.16.5-8.0.2.jar):
+		DarkUtilities-1.16.5-8.0.2.jar:
+			* Prevent player plate from becoming a revenge target. - Tyler Hancock
+			* Prevent entities from trying to attack the player plate. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtilities)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Emojiful (emojiful-1.16.4-2.1.3.jar --> emojiful-1.16.4-2.1.4.jar):
+		emojiful-1.16.4-2.1.4.jar:
+			[Dont add chat GUIs if there was an error loading emojis](https://github.com/InnovativeOnlineIndustries/Emojiful/commit/915151a2a626a83abfb3a5f1146e850cd976601f)
+			Fixed Stream not closed (And isn't using UTF-8)
+
+	Enchantment Descriptions (EnchantmentDescriptions-1.16.4-6.0.3.jar --> EnchantmentDescriptions-1.16.5-7.0.1.jar):
+		EnchantmentDescriptions-1.16.5-7.0.1.jar:
+			* Ported to 1.16.5 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?EnchantmentDescriptions)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		EnchantmentDescriptions-1.16.4-6.0.4.jar:
+			* Added maven details and jar signature info in the README. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?EnchantmentDescriptions)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Klouver
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	FTB GUI Library (ftb-gui-library-1604.2.0.30-forge.jar --> ftb-gui-library-1605.2.1.37-forge.jar):
+		ftb-gui-library-1605.2.1.37-forge.jar:
+			* Fixed config screen group names showing component strings - LatvianModder
+
+		ftb-gui-library-1605.2.1.36-forge.jar:
+			* Added GuiHelper.setupDrawing() in more places - LatvianModder
+			* Updated version, that somehow got rolled back - LatvianModder
+
+		ftb-gui-library-1604.1.0.35-forge.jar:
+			* Fixed sidebar buttons breaking when there's text on button - LatvianModder
+
+		ftb-gui-library-1604.1.0.34-forge.jar:
+			* Merge pull request #15 from MaxNeedsSnacks/patch-1 - Kristiāns Micītis
+			* Ｆｉｘｅｄ buildscript - Max
+
+		ftb-gui-library-1604.1.0.32-forge.jar:
+			* Merge remote-tracking branch 'origin/master' - LatvianModder
+			* Fixed buildscript - LatvianModder
+
+	FTB Teams (ftb-teams-1604.1.0.14-forge.jar --> ftb-teams-1604.1.0.15-forge.jar):
+		ftb-teams-1604.1.0.15-forge.jar:
+			* Fixed buildscript - LatvianModder
+			* Changed fabric upload type to release - LatvianModder
+
+	ForgeEndertech (ForgeEndertech-1.16.4-7.0.9.0-build.0032.jar --> ForgeEndertech-1.16.4-7.0.10.0-build.0037.jar):
+		ForgeEndertech-1.16.4-7.0.10.0-build.0037.jar:
+			7.0.10.0
+			* added: compatibility with Minecraft 1.16.5
+			* requires: Forge 35.1.4 or above
+
+	Game Stages (GameStages-1.16.4-6.0.4.jar --> GameStages-1.16.5-6.0.1.jar):
+		GameStages-1.16.5-6.0.1.jar:
+			* Ported to 1.16.5 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?GameStages)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	GeckoLib (forge-1.16.5-geckolib-3.0.4a.jar --> forge-1.16.5-geckolib-3.0.6.jar):
+		forge-1.16.5-geckolib-3.0.6.jar:
+			v3.0.6
+			* Updated Geckolib core for random stuttering fix. #Paspartout
+			* Switch to double precision to fix random stuttering. Implement pause. #Paspartout
+			* Fixed workflow to build checks correctly. #Paspartout/AzureDoom
+			* Updated Botarium for z-fighting fix, closes #87.
+
+		forge-1.16.5-geckolib-3.0.5.jar:
+			v3.0.5
+			* Fixed Geckolib core being outdated. #AzureDoom
+
+	Industrial Foregoing (industrial-foregoing-1.16.5-3.2.8.4-f4f1a4d.jar --> industrial-foregoing-1.16.5-3.2.9-2215ef4.jar):
+		industrial-foregoing-1.16.5-3.2.9-2215ef4.jar:
+			[https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Industrial-Foregoing/blob/changelog/CHANGELOG.md) (might not be properly updated bc gradle is an ass rn)
+
+	Item Filters (item-filters-1605.2.3.20-forge.jar --> item-filters-1605.2.3.27-forge.jar):
+		item-filters-1605.2.3.27-forge.jar:
+			* No that was apparently wrong. ffs. - LatvianModder
+
+	KubeJS (kubejs-1605.3.4.151-forge.jar --> kubejs-1605.3.5-build.156-forge.jar):
+		kubejs-1605.3.5-build.156-forge.jar:
+			* Fixed forge mod version range - LatvianModder
+
+		kubejs-1605.3.5-build.155-forge.jar:
+			* Added Platform.developmentEnvironment and Platform.clientEnvironment booleans. Removed getField reflection. Changed version to semver - LatvianModder
+			* Merge pull request #69 from shedaniel/master - Kristiāns Micītis
+			* Now caching it - shedaniel
+			* Use MethodHandle to cut down on unnecessary InvocationTargetException wrappers with reflections. - shedaniel
+			* Added Platform.developmentEnvironment and Platform.clientEnvironment booleans - LatvianModder
+
+		kubejs-1605.3.4.154-forge.jar:
+			* Merge remote-tracking branch 'origin/master' - LatvianModder
+			* Added wrapper for Rarity, fixed /kubejs errors not printing warning count - LatvianModder
+
+		kubejs-1605.3.4.153-forge.jar:
+			* Merge pull request #67 from shedaniel/master - Kristiāns Micītis
+			* mark KJS Fabric as release - shedaniel
+			* Fix TR Compat right in KJS because I am just simply too lazy to make another mod to do it - shedaniel
+
+		kubejs-1605.3.4.152-forge.jar:
+			* Merge pull request #66 from shedaniel/master - Kristiāns Micītis
+			* Fix shaped recipes with irregular shapes because modpack devs can't do recipes properly - shedaniel
+
+	Lootr (lootr-1.16.4-0.0.4.11.jar --> lootr-1.16.4-0.0.4.13.jar):
+		lootr-1.16.4-0.0.4.13.jar:
+			* Prevent tile entity movers from duplicating loot. Or at least, prevent one method of doing it.
+
+		lootr-1.16.4-0.0.4.12.jar:
+			* Chests you've previously opened (as of this release) will now be visually different to you.
+			* Currently only chests are supported.
+
+	Lost Trinkets (LostTrinkets-1.16.4-0.1.13.jar --> LostTrinkets-1.16.4-0.1.18.jar):
+		LostTrinkets-1.16.4-0.1.18.jar:
+			0.1.18
+			* Re-Fixed a server crash, Closes #48
+			0.1.17
+			* Fixed a server crash, Closes #46 - Thanks to BlueAgent
+			0.1.16
+			* Fixed Mossy ring resets mining progress, Closes #16 - Thanks to BlueAgent
+			* Fixed Mossy ring/belt required the player to have experience, Closes #43 - Thanks to BlueAgent
+			0.1.15
+			* Fixed "Big Foot" trinket doesn't work on baby hoglins and baby zoglins, Closes #37 - Thanks to BlueAgent
+			* Fixed "Fire Mind" trinket does not set hoglins on fire, Closes #38 - Thanks to BlueAgent
+			* Fixed Dark Vexes become aggressive towards the player, Closes #39 - Thanks to BlueAgent
+			* Fixed WarmVoidTrinket being registered instead of BigFootTrinket - Thanks to BlueAgent
+			* Fixed Tha Ghost trinket functionality - Thanks to BlueAgent
+			0.1.14
+			* Fixed Lost trinkets with right click activations don't work, Closes #36 - Thanks to BlueAgent
+			* Fixed Silver Nail Format Error, Closes #40 - Thanks to BlueAgent
+			* Added Korean translation - Thanks to chironader
+			0.1.13
+			* Fixed Magical Herbs Trinket removes Neutral effects, Closes #33 - Thanks to BlueAgent
+			0.1.12
+			* Fixed Octopick incompatible with silk touch, Closes #19 - Thanks to BlueAgent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.17.jar:
+			0.1.17
+			* Fixed a server crash, Closes #46 - Thanks to BlueAgent
+			0.1.16
+			* Fixed Mossy ring resets mining progress, Closes #16 - Thanks to BlueAgent
+			* Fixed Mossy ring/belt required the player to have experience, Closes #43 - Thanks to BlueAgent
+			0.1.15
+			* Fixed "Big Foot" trinket doesn't work on baby hoglins and baby zoglins, Closes #37 - Thanks to BlueAgent
+			* Fixed "Fire Mind" trinket does not set hoglins on fire, Closes #38 - Thanks to BlueAgent
+			* Fixed Dark Vexes become aggressive towards the player, Closes #39 - Thanks to BlueAgent
+			* Fixed WarmVoidTrinket being registered instead of BigFootTrinket - Thanks to BlueAgent
+			* Fixed Tha Ghost trinket functionality - Thanks to BlueAgent
+			0.1.14
+			* Fixed Lost trinkets with right click activations don't work, Closes #36 - Thanks to BlueAgent
+			* Fixed Silver Nail Format Error, Closes #40 - Thanks to BlueAgent
+			* Added Korean translation - Thanks to chironader
+			0.1.13
+			* Fixed Magical Herbs Trinket removes Neutral effects, Closes #33 - Thanks to BlueAgent
+			0.1.12
+			* Fixed Octopick incompatible with silk touch, Closes #19 - Thanks to BlueAgent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.16.jar:
+			0.1.16
+			* Fixed Mossy ring resets mining progress, Closes #16 - Thanks to BlueAgent
+			* Fixed Mossy ring/belt required the player to have experience, Closes #43 - Thanks to BlueAgent
+			0.1.15
+			* Fixed "Big Foot" trinket doesn't work on baby hoglins and baby zoglins, Closes #37 - Thanks to BlueAgent
+			* Fixed "Fire Mind" trinket does not set hoglins on fire, Closes #38 - Thanks to BlueAgent
+			* Fixed Dark Vexes become aggressive towards the player, Closes #39 - Thanks to BlueAgent
+			* Fixed WarmVoidTrinket being registered instead of BigFootTrinket - Thanks to BlueAgent
+			* Fixed Tha Ghost trinket functionality - Thanks to BlueAgent
+			0.1.14
+			* Fixed Lost trinkets with right click activations don't work, Closes #36 - Thanks to BlueAgent
+			* Fixed Silver Nail Format Error, Closes #40 - Thanks to BlueAgent
+			* Added Korean translation - Thanks to chironader
+			0.1.13
+			* Fixed Magical Herbs Trinket removes Neutral effects, Closes #33 - Thanks to BlueAgent
+			0.1.12
+			* Fixed Octopick incompatible with silk touch, Closes #19 - Thanks to BlueAgent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.15.jar:
+			0.1.15
+			* Fixed "Big Foot" trinket doesn't work on baby hoglins and baby zoglins, Closes #37 - Thanks to BlueAgent
+			* Fixed "Fire Mind" trinket does not set hoglins on fire, Closes #38 - Thanks to BlueAgent
+			* Fixed Dark Vexes become aggressive towards the player, Closes #39 - Thanks to BlueAgent
+			* Fixed WarmVoidTrinket being registered instead of BigFootTrinket - Thanks to BlueAgent
+			* Fixed Tha Ghost trinket functionality - Thanks to BlueAgent
+			0.1.14
+			* Fixed Lost trinkets with right click activations don't work, Closes #36 - Thanks to BlueAgent
+			* Fixed Silver Nail Format Error, Closes #40 - Thanks to BlueAgent
+			* Added Korean translation - Thanks to chironader
+			0.1.13
+			* Fixed Magical Herbs Trinket removes Neutral effects, Closes #33 - Thanks to BlueAgent
+			0.1.12
+			* Fixed Octopick incompatible with silk touch, Closes #19 - Thanks to BlueAgent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+		LostTrinkets-1.16.4-0.1.14.jar:
+			0.1.14
+			* Fixed Lost trinkets with right click activations don't work, Closes #36 - Thanks to BlueAgent
+			* Fixed Silver Nail Format Error, Closes #40 - Thanks to BlueAgent
+			* Added Korean translation - Thanks tochironader
+			0.1.13
+			* Fixed Magical Herbs Trinket removes Neutral effects, Closes #33 - Thanks to BlueAgent
+			0.1.12
+			* Fixed Octopick incompatible with silk touch, Closes #19 - Thanks to BlueAgent
+			* Fixed Mining Trinkets not awarding XP, Closes #6 - Thanks to BlueAgent
+			0.1.11
+			* Fixed Karma villager discount does not consider native discounts, Closes #30 - Thanks to BlueAgent
+			0.1.10
+			* Added config for unlock cooldown delay - Thanks to BlueAgent
+			* Added config for non-random trinkets - Thanks to BlueAgent
+			0.1.9
+			* Fixed Tha Ghost does not work bug, Closes #20 - Thanks to BlueAgent
+			* Updated Lollipop to 3.2.4.
+			0.1.8
+			* Fixed Octopus Legs cause crash after being hit by Wither Skeleton, Closes #11 - Thanks to BlueAgent
+			0.1.7
+			* Fixed Magneto Dupe Bug, Closes #15 - Thanks to BlueAgent
+			* Fixed Stack overflow error with Mirror Shard, Closes #9 - Thanks to BlueAgent
+			0.1.6
+			* Fixed Possible Incompatibilities with Scaling Health Mod, Closes #17.
+			0.1.5
+			* Added trinkets blacklist to the general config.
+			* Added info tooltip to active and available trinkets gui.
+			0.1.4
+			* Fixed Tha Bat trinket night vision blinking.
+			* Disabled Octopus Leg trinket temporarily fix a incompatibility crash.
+			0.1.3
+			* Changed some code to trying to fix a incompatibility crash (not confirmed yet)!
+			0.1.2
+			* Initial port to 1.16.4
+			0.1.1
+			* Moved to 1.16.3
+			* Updated lollipop to 3.2.0.
+			0.1.0
+			* Port to 1.16.2
+			0.0.3
+			* Fixed trinkets not unlocking (a really dumb bug)
+			* Fixed some trinkets not functioning correctly
+			0.0.2
+			* Fixed Entities registry.
+			* Clean-Up assets from junk.
+			0.0.1
+
+	Mekanism (Mekanism-1.16.4-10.0.18.445.jar --> Mekanism-1.16.4-10.0.19.446.jar):
+		Mekanism-1.16.4-10.0.19.446.jar:
+			[4267179](https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2) - Use enqueueWork in ClientSetupEvents for things that are not backed by a Concurrent Map [#6775](https://github.com/mekanism/Mekanism/issues/6775)
+			[d20a048](https://github.com/mekanism/Mekanism/commit/d20a04800b8668819e1263ddeae7c227f10c1822) - Fix syncable itemstack syncing empty stacks when nothing actually changed. It turns out ItemStack#isItemEqual checks to make sure the stack is not empty and if it is, returns false even if the other stack is also empty
+			[3bd3fb2](https://github.com/mekanism/Mekanism/commit/3bd3fb2d1294ee0c53300a78a4f06e82936c0cf0) - Fix having moved too much stuff to enqueue work in client setup in [https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2](https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2)
+			[3b80bdf](https://github.com/mekanism/Mekanism/commit/3b80bdfe71684df1801ccec417aa2e8da1608de3) - fix NPE when getGameProfile called from a superclass' constructor
+			[a63277f](https://github.com/mekanism/Mekanism/commit/a63277ffb59a298a93c8ac319606f80095f11e6b) - attempt to prevent null for [#6856](https://github.com/mekanism/Mekanism/issues/6856)
+			[50f5668](https://github.com/mekanism/Mekanism/commit/50f5668134d7d07a41ad1266555bf55c645e9dfd) - attempt to prevent infinite explosions when forge event cancelled
+			[285d0df](https://github.com/mekanism/Mekanism/commit/285d0df4f44c2eb8d4c3998f8b6cc9820e20cc83) - Add a message to the null pointer crash from ol man optifine
+			[e33320c](https://github.com/mekanism/Mekanism/commit/e33320c55e8b8f6fdc0abe3d830a71d4ff27e942) - bump version to 10.0.19
+			[fb9a08c](https://github.com/mekanism/Mekanism/commit/fb9a08ca4794435bbe83b0d6876872a7881d0328) - Updated the maven version in the readme ([#6777](https://github.com/mekanism/Mekanism/issues/6777))
+			[521c257](https://github.com/mekanism/Mekanism/commit/521c257878f8dde267bd1acdc424aa75a97c9923) - New Crowdin updates ([#6772](https://github.com/mekanism/Mekanism/issues/6772))
+
+	Mekanism Generators (MekanismGenerators-1.16.4-10.0.18.445.jar --> MekanismGenerators-1.16.4-10.0.19.446.jar):
+		MekanismGenerators-1.16.4-10.0.19.446.jar:
+			[4267179](https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2) - Use enqueueWork in ClientSetupEvents for things that are not backed by a Concurrent Map [#6775](https://github.com/mekanism/Mekanism/issues/6775)
+			[d20a048](https://github.com/mekanism/Mekanism/commit/d20a04800b8668819e1263ddeae7c227f10c1822) - Fix syncable itemstack syncing empty stacks when nothing actually changed. It turns out ItemStack#isItemEqual checks to make sure the stack is not empty and if it is, returns false even if the other stack is also empty
+			[3bd3fb2](https://github.com/mekanism/Mekanism/commit/3bd3fb2d1294ee0c53300a78a4f06e82936c0cf0) - Fix having moved too much stuff to enqueue work in client setup in [https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2](https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2)
+			[3b80bdf](https://github.com/mekanism/Mekanism/commit/3b80bdfe71684df1801ccec417aa2e8da1608de3) - fix NPE when getGameProfile called from a superclass' constructor
+			[a63277f](https://github.com/mekanism/Mekanism/commit/a63277ffb59a298a93c8ac319606f80095f11e6b) - attempt to prevent null for [#6856](https://github.com/mekanism/Mekanism/issues/6856)
+			[50f5668](https://github.com/mekanism/Mekanism/commit/50f5668134d7d07a41ad1266555bf55c645e9dfd) - attempt to prevent infinite explosions when forge event cancelled
+			[285d0df](https://github.com/mekanism/Mekanism/commit/285d0df4f44c2eb8d4c3998f8b6cc9820e20cc83) - Add a message to the null pointer crash from ol man optifine
+			[e33320c](https://github.com/mekanism/Mekanism/commit/e33320c55e8b8f6fdc0abe3d830a71d4ff27e942) - bump version to 10.0.19
+			[fb9a08c](https://github.com/mekanism/Mekanism/commit/fb9a08ca4794435bbe83b0d6876872a7881d0328) - Updated the maven version in the readme ([#6777](https://github.com/mekanism/Mekanism/issues/6777))
+			[521c257](https://github.com/mekanism/Mekanism/commit/521c257878f8dde267bd1acdc424aa75a97c9923) - New Crowdin updates ([#6772](https://github.com/mekanism/Mekanism/issues/6772))
+
+	Mekanism Tools (MekanismTools-1.16.4-10.0.18.445.jar --> MekanismTools-1.16.4-10.0.19.446.jar):
+		MekanismTools-1.16.4-10.0.19.446.jar:
+			[4267179](https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2) - Use enqueueWork in ClientSetupEvents for things that are not backed by a Concurrent Map [#6775](https://github.com/mekanism/Mekanism/issues/6775)
+			[d20a048](https://github.com/mekanism/Mekanism/commit/d20a04800b8668819e1263ddeae7c227f10c1822) - Fix syncable itemstack syncing empty stacks when nothing actually changed. It turns out ItemStack#isItemEqual checks to make sure the stack is not empty and if it is, returns false even if the other stack is also empty
+			[3bd3fb2](https://github.com/mekanism/Mekanism/commit/3bd3fb2d1294ee0c53300a78a4f06e82936c0cf0) - Fix having moved too much stuff to enqueue work in client setup in [https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2](https://github.com/mekanism/Mekanism/commit/4267179e2fe53b2758c5bc47c5c01f0a1077fad2)
+			[3b80bdf](https://github.com/mekanism/Mekanism/commit/3b80bdfe71684df1801ccec417aa2e8da1608de3) - fix NPE when getGameProfile called from a superclass' constructor
+			[a63277f](https://github.com/mekanism/Mekanism/commit/a63277ffb59a298a93c8ac319606f80095f11e6b) - attempt to prevent null for [#6856](https://github.com/mekanism/Mekanism/issues/6856)
+			[50f5668](https://github.com/mekanism/Mekanism/commit/50f5668134d7d07a41ad1266555bf55c645e9dfd) - attempt to prevent infinite explosions when forge event cancelled
+			[285d0df](https://github.com/mekanism/Mekanism/commit/285d0df4f44c2eb8d4c3998f8b6cc9820e20cc83) - Add a message to the null pointer crash from ol man optifine
+			[e33320c](https://github.com/mekanism/Mekanism/commit/e33320c55e8b8f6fdc0abe3d830a71d4ff27e942) - bump version to 10.0.19
+			[fb9a08c](https://github.com/mekanism/Mekanism/commit/fb9a08ca4794435bbe83b0d6876872a7881d0328) - Updated the maven version in the readme ([#6777](https://github.com/mekanism/Mekanism/issues/6777))
+			[521c257](https://github.com/mekanism/Mekanism/commit/521c257878f8dde267bd1acdc424aa75a97c9923) - New Crowdin updates ([#6772](https://github.com/mekanism/Mekanism/issues/6772))
+
+	Oh The Biomes You'll Go (Biomes You Go 1.1.8 MCV: 1.16.4/1.16.5 --> Biomes You Go 1.1.9 MCV: 1.16.5):
+		Biomes You Go 1.1.9 MCV: 1.16.5:
+			BACKUP YOUR WORLDS
+			-Remove Chocolate Dependency.
+			-Force latest forge(36.0.4 at the time of writing)
+			-No longer supports 1.16.4
+
+	OldJavaWarning (OldJavaWarning-1.16.4-6.0.1.jar --> OldJavaWarning-1.16.5-7.0.1.jar):
+		OldJavaWarning-1.16.5-7.0.1.jar:
+			* Updated for 1.16.5. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?OldJavaWarning)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		OldJavaWarning-1.16.4-6.0.2.jar:
+			* Moved maven group. - Tyler Hancock
+			* Moved to local maven. - Tyler Hancock
+			* Updated Forge. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?OldJavaWarning)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	PneumaticCraft: Repressurized (Archived file --> pneumaticcraft-repressurized-1.16.5-2.9.5-128.jar):
+		pneumaticcraft-repressurized-1.16.5-2.9.5-128.jar:
+			2.9.5-128 (29 Jan 2021)
+			Fixes
+			* Hotfix: fix dedicated server crash when clicking GPS or GPS Area Tool on a block
+			* - Careless use of a client-only method, sorry!
+			2.9.4-126 (26 Jan 2021)
+			Updates
+			* Harvesting Drones (and the Harvesting progwidget) now know about Sweet Berries and Kelp
+			* - For Sweet Berry Harvesting Drones, Item Life upgrades are strongly recommended due to the thorny nature of the bushes
+			* - For Kelp Harvesting Drones, one (and only one) Security Upgrade is vital for the Drone to operate underwater
+			* - Same applies to any Collector Drones you might use in conjunction with Harvesting Drones
+			* - Note: avoid using Lily Pads around Drones which need to fly in and out of water; it confuses their pathfinding badly
+			* Poisonous Potatoes and Sweet Berries can now be used in the Thermopneumatic Processing Plant to make Ethanol
+			* Drone debugger now highlights the planned path for a debugged Drone when it's moving, as a trail of particles
+			* - Can be disabled in config: drone_debugger_path_particles in pneumaticcraft-common.toml
+			* Amadron Tablet: the Order button now shows a summary of items/fluids in basket in its tooltip
+			* Reworked Jetboots flying animations/player pose a bit
+			* - Player now animates into & out of flying pose much more smoothly
+			* - Player has better vertical positioning and hitbox when flying (now possible, if not necessarily easy, to fly through 1-block high gaps)
+			* - Most noticeable in multiplayer, or singleplayer with external camera view
+			* GPS and GPS Area Tools tooltip now show the blockname(s) for the block(s) at the selected position(s)
+			* - Only if those positions are actually chunkloaded, and remember that the GPS/GPS Area Tools aren't dimension-aware, so it's the block in the current world, not the world in which the tool was originally clicked
+			* New food item: Salmon Tempura
+			* - Equivalent in food value to Cod n' Chips (i.e. very nutritious)
+			* - A good alternative if you're in an area with abundant Salmon but no Cod...
+			* - See JEI for how to make it!
+			Fixes
+			* Fixed Block Tracker block highlight frames sometimes not rendering behind solid blocks
+			* Fixed Pneumatic Armor pressure display panel not fully opening when Pneumatic Helmet first equipped
+			* Fixed shaped recipe for Assembly IO Import Unit producing an Assembly IO Export Unit
+			* Fix enchantments getting lost when using Pressure Chamber to transfer enchantments from Enchanted Book to enchantable item
+			* - If the book had multiple enchantments, some of which were applicable to the item, and some not, the inapplicable enchantments would be lost forever
+			* - Now any such enchantments stay on the book
+			* - Also fixed Pressure Chamber enchanting being able to add conflicting enchantments to an item (e.g. both Sharpness and Smite)
+			* Fixed Amadron allowing orders too big for a single Amadrone to carry (>36 itemstacks or >576 buckets of fluid)
+			* - GUI now shows an error if you try to order too much at once; split your order into multiple orders
+			* Fixed Amadron tablet not working with Mekanism (and possibly other) fluid tanks
+			* - Technical detail: no longer checks for a fluid or item capability on the null face, but instead tries each face of the block to find a valid fluid or item capability
+			* Fixed Amadron "Add Trade" sub-gui only being openable once (until main Amadron GUI is closed)
+			* Fixed intermittent Aerial Interface CME crashes when changing dimension
+			* - Aerial Interface player tracking should be much more reliable overall now
+			* Fixed Nether Portal screen overlay (when player is standing in portal) rendering completely solid when Pneumatic Helmet equipped, effectively blinding the player
+			* Fixed Pneumatic Armor initialisation progress bars not going away (and "low pressure" message spam) if player wearing any armor pieces with 0 pressure
+			* Fixed (hopefully) client crash when toggling Redstone Module input/output mode from GUI, when using Vivecraft (VR)
+
+	Quark (Quark-r2.4-298.jar --> Quark-r2.4-299.jar):
+		Quark-r2.4-299.jar:
+			* Added Hedges.
+			* Fixed a bunch of items not being in the right tags. [(EltrutLikes)](https://github.com/Vazkii/Quark/commit/c2efeec38aeb04dc5c4ad55368cfc921d53163f4)
+
+	RandomPatches (Forge) (RandomPatches 2.2.0-forge --> RandomPatches 2.2.1-forge):
+		RandomPatches 2.2.1-forge:
+			* Fixed compatibility with Forge 36.0.2+.
+
+	Rhino (rhino-1.7.13.10.jar --> rhino-1.7.13-build.12.jar):
+		rhino-1.7.13-build.12.jar:
+			* Added version to fabric json. Sort of. - LatvianModder
+
+		rhino-1.7.13-build.11.jar:
+			* Changed version to semver, I think - LatvianModder
+
+	Runelic (Runelic-1.16.4-6.0.4.jar --> Runelic-1.16.5-7.0.1.jar):
+		Runelic-1.16.5-7.0.1.jar:
+			* Updated mod for 1.16.5 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Runelic)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Runelic-1.16.4-6.0.5.jar:
+			* Allow players without this mod to still connect to a server. - Tyler Hancock
+			* Updated forge version. - Tyler Hancock
+			* Removed unused maven repo entry. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Runelic)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Supplementaries (supplementaries-0.9.22d.jar --> supplementaries-1.16.5-0.9.23c.jar):
+		supplementaries-1.16.5-0.9.23c.jar:
+			Fixed shipwreck loot table conflicting with other mods modifying it by simply giving it a name
+			fixed ender sconce missing texture
+
+		supplementaries-1.16.5-0.9.23b.jar:
+			0.9.23b patch notes:
+			Fixed a critical server crash introduced in 0.9.23
+			Added globes to the shipwreck loot table. Added related configs
+			started working on gold doors & trapdoors.
+			0.9.23 patch notes:
+			Added mod compatibility for Autumnity, Endergetic, Enchanced Mushrooms, Outer End, Upgrade Aquatic, and Atmospehric by adding sign posts and hanging signs in all those wood types.
+			Added tag and config whitelist for optional blocks that can be sped up by bellows. Added config whitelist for sack supporting blocks.
+			Added burn times to all wooden items
+			Fixed some bugs
+
+	Tips (Tips-1.16.4-3.0.2.jar --> Tips-1.16.5-4.0.2.jar):
+		Tips-1.16.5-4.0.2.jar:
+			* Corrected maven link. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Tips)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Tips-1.16.5-4.0.1.jar:
+			* Updated for 1.16.5 - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Tips)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		Tips-1.16.4-3.0.3.jar:
+			* Minor code formatting. - Tyler Hancock
+			* Added logs to gitignore. - Tyler Hancock
+			* Updated forge and bookshelf. - Tyler Hancock
+			* Moved to local maven. - Tyler Hancock
+			* Fix CI/CD Script. - Tyler Hancock
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?Tips)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+	Titanium (titanium-1.16.4-3.2.5.jar --> titanium-1.16.5-3.2.6.jar):
+		titanium-1.16.5-3.2.6.jar:
+			[https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md](https://github.com/InnovativeOnlineIndustries/Titanium/blob/changelog/CHANGELOG.md)
+
+	Tool Stats (ToolStats-1.16.4-5.0.1.jar --> ToolStats-1.16.5-6.0.1.jar):
+		ToolStats-1.16.5-6.0.1.jar:
+			* Updated for 1.16.5 - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?ToolStats)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+		ToolStats-1.16.4-5.0.2.jar:
+			* Added config option to always display the enchantability state. #6 - Tyler Hancock
+			* Fix CI/CD script. - Tyler Hancock
+			* Updated Forge version. - Tyler Hancock
+			* Moved to a local maven. - Tyler Hancock
+			Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord]()
+			Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?ToolStats)
+			* Diablo Crasher
+			* shadow Ultima devil Alpha
+			* BigAl607
+			* Edward
+			* Pongo Sapiens
+			* Darkosto
+
+Removed:
+- Chocolate Fix
+
+Generated using [ChangelogGenerator 2.0.0-pre3](https://github.com/TheRandomLabs/ChangelogGenerator).

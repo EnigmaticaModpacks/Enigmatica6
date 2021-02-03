@@ -58,7 +58,7 @@ events.listen('recipes', function (event) {
         var dyeTag = `#forge:dyes/${color}`;
 
         // Replaces recipes not using forge:dyes tag for inputs
-        event.replaceInput({}, `minecraft:${color}_dye`, dyeTag);
+        event.replaceInput({}, `minecraft:${color}_dye`, dyeTag, true);
 
         event.remove({
             id: `minecraft:${color}_carpet_from_white_carpet`
@@ -335,8 +335,4 @@ events.listen('recipes', function (event) {
             );
         });
     });
-
-    //TODO: Remove in 0.4.0
-    event.replaceInput({ id: 'quantumstorage:chestgold' }, 'quantumstorage:chestiron', '#forge:storage_blocks/iron');
-    event.replaceInput({ id: 'quantumstorage:chestdiamond' }, 'quantumstorage:chestgold', '#forge:storage_blocks/gold');
 });

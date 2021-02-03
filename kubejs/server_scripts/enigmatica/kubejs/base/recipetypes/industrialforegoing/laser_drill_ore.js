@@ -34,11 +34,7 @@ events.listen('recipes', function (event) {
         'byg:withering_woods',
         'byg:magma_wastes',
         'byg:wailing_garth',
-        'byg:crimson_gardens',
-        'biomesoplenty:crystalline_chasm',
-        'biomesoplenty:undergrowth',
-        'biomesoplenty:visceral_heap',
-        'biomesoplenty:withered_abyss'
+        'byg:crimson_gardens'
     ];
 
     //var nether_end_biomes = end_biomes.concat(nether_biomes);

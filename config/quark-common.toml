@@ -141,6 +141,7 @@
 	Grate = true
 	"Variant Bookshelves" = true
 	Stools = true
+	Hedges = true
 
 	[building.rope]
 		"Enable Dispenser Behavior" = true
@@ -390,6 +391,7 @@
 	"Snow Golem Player Heads" = true
 	"Glass Shard" = false
 	"Campfires Boost Elytra" = true
+	"Lava Bucket As Trash" = true
 
 	[tweaks.sign_editing]
 		"Requires Empty Hand" = false
@@ -1728,6 +1730,8 @@
 	Stonelings = true
 	Foxhound = true
 	Toretoise = true
+	Forgotten = true
+	Wraith = true
 
 	[mobs.stonelings]
 		"Cautious Stonelings" = true
@@ -1865,6 +1869,35 @@
 				# icy, the_end, beach, forest, ocean, desert, river, swamp,
 				# mushroom, nether]
 				"Biome Categories" = ["swamp"]
+
+	[mobs.forgotten]
+		#
+		#1 in this many Skeletons that spawn under the threshold are replaced with Forgotten.
+		"Forgotten Spawn Rate" = 0.05
+		"Max Height For Spawn" = 20
+
+	[mobs.wraith]
+		#
+		#List of sound sets to use with wraiths.
+		#Three sounds must be provided per entry, separated by | (in the format idle|hurt|death). Leave blank for no sound (i.e. if a mob has no ambient noise)
+		"Wraith Sounds" = ["entity.sheep.ambient|entity.sheep.hurt|entity.sheep.death", "entity.cow.ambient|entity.cow.hurt|entity.cow.death", "entity.pig.ambient|entity.pig.hurt|entity.pig.death", "entity.chicken.ambient|entity.chicken.hurt|entity.chicken.death", "entity.horse.ambient|entity.horse.hurt|entity.horse.death", "entity.cat.ambient|entity.cat.hurt|entity.cat.death", "entity.wolf.ambient|entity.wolf.hurt|entity.wolf.death", "entity.villager.ambient|entity.villager.hurt|entity.villager.death", "entity.polar_bear.ambient|entity.polar_bear.hurt|entity.polar_bear.death", "entity.zombie.ambient|entity.zombie.hurt|entity.zombie.death", "entity.skeleton.ambient|entity.skeleton.hurt|entity.skeleton.death", "entity.spider.ambient|entity.spider.hurt|entity.spider.death", "|entity.creeper.hurt|entity.creeper.death", "entity.endermen.ambient|entity.endermen.hurt|entity.endermen.death", "entity.zombie_pig.ambient|entity.zombie_pig.hurt|entity.zombie_pig.death", "entity.witch.ambient|entity.witch.hurt|entity.witch.death", "entity.blaze.ambient|entity.blaze.hurt|entity.blaze.death", "entity.llama.ambient|entity.llama.hurt|entity.llama.death", "|quark:entity.stoneling.cry|quark:entity.stoneling.die", "quark:entity.frog.idle|quark:entity.frog.hurt|quark:entity.frog.die"]
+
+		[mobs.wraith.spawn_config]
+			"Max Cost" = 0.7
+			"Spawn Cost" = 0.15
+			#
+			#Allowed values: (0,)
+			"Spawn Weight" = 8
+			#
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#
+			#Allowed values: [1,)
+			"Max Group Size" = 3
+
+			[mobs.wraith.spawn_config.biomes]
+				Biomes = ["minecraft:soul_sand_valley"]
+				"Is Blacklist" = false
 
 [client]
 	"Greener Grass" = true
