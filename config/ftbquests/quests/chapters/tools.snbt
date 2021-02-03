@@ -1,7 +1,7 @@
 {
 	id: 147,
 	filename: "tools",
-	order_index: 7,
+	order_index: 8,
 	title: "Tools",
 	icon: {
 		id: "minecraft:netherite_pickaxe",
@@ -2056,6 +2056,110 @@
 				icon: "kubejs:scavengers_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
 				player_command: false
+			}]
+		},
+		{
+			x: -7.5d,
+			y: -15.5d,
+			description: ["The Infinity Drill will allow you mine big areas when using biofuel. It can be upgraded by charging it."],
+			dependencies: [I;130],
+			id: 3935,
+			tasks: [{
+				id: 3936,
+				type: "item",
+				item: {
+					id: "industrialforegoing:infinity_drill",
+					Count: true,
+					tag: {
+						CanCharge: true,
+						Special: false,
+						Selected: "POOR",
+						Energy: 0L,
+						Fluid: {
+							FluidName: "biofuel",
+							Amount: 0
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -6.0d,
+			y: -15.0d,
+			description: ["The Infinity Saw will allow you chop big forests when using biofuel. It can be upgraded by charging it."],
+			dependencies: [I;3849],
+			id: 3937,
+			tasks: [{
+				id: 3938,
+				type: "item",
+				item: {
+					id: "industrialforegoing:infinity_saw",
+					Count: true,
+					tag: {
+						CanCharge: true,
+						Special: false,
+						Selected: "POOR",
+						Energy: 0L,
+						Fluid: {
+							FluidName: "biofuel",
+							Amount: 0
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: -5.0d,
+			y: -15.0d,
+			description: ["The Infinity Trident is an upgraded version of the Minecraft Trident, most of the enchanments can be unlocked by upgrading it. It can be upgraded by charging it."],
+			dependencies: [I;3847],
+			id: 3939,
+			tasks: [{
+				id: 3940,
+				type: "item",
+				item: {
+					id: "industrialforegoing:infinity_trident",
+					Count: true,
+					tag: {
+						CanCharge: true,
+						Riptide: 0,
+						Channeling: false,
+						Energy: 0L,
+						Fluid: {
+							FluidName: "biofuel",
+							Amount: 0
+						},
+						Special: false,
+						Selected: "POOR",
+						Loyalty: 0
+					}
+				}
+			}]
+		},
+		{
+			x: -3.5d,
+			y: -15.5d,
+			description: ["The Infinity Hammer will allow you attack enemies in big areas when using biofuel. It can be upgraded by charging it."],
+			dependencies: [I;3851],
+			id: 3941,
+			tasks: [{
+				id: 3942,
+				type: "item",
+				item: {
+					id: "industrialforegoing:infinity_hammer",
+					Count: true,
+					tag: {
+						CanCharge: true,
+						Energy: 0L,
+						Fluid: {
+							FluidName: "biofuel",
+							Amount: 0
+						},
+						Special: false,
+						Selected: "POOR",
+						Beheading: 0
+					}
+				}
 			}]
 		}
 	]

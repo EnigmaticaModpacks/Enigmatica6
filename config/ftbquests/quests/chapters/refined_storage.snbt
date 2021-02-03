@@ -1,18 +1,20 @@
 {
 	id: 576,
 	filename: "refined_storage",
-	order_index: 13,
+	order_index: 14,
 	title: "Refined Storage",
 	icon: "refinedstorage:controller",
 	default_quest_shape: "",
 	quests: [
 		{
 			title: "Refined Storage",
-			icon: "extradisks:16384k_storage_part",
+			icon: "refinedstorage:wrench",
 			x: 0.5d,
 			y: 0.5d,
 			shape: "gear",
+			subtitle: "Like AE2, but 100% more Refined",
 			description: ["Refined Storage offers the ability to make vast electronic storage and automation networks, storing your items in Magic Computer Space and importing/exporting/autocrafting as desired. It's a rather refined method of storage, you might say."],
+			size: 1.5d,
 			id: 591,
 			tasks: [{
 				id: 593,
@@ -30,6 +32,11 @@
 					type: "item",
 					item: "minecraft:string",
 					count: 4
+				},
+				{
+					id: 3917,
+					type: "item",
+					item: "refinedstorage:wrench"
 				}
 			]
 		},
@@ -38,6 +45,7 @@
 			icon: "refinedstorage:advanced_processor",
 			x: 0.5d,
 			y: 2.0d,
+			subtitle: "But are they Intel or AMD?",
 			description: ["Processors are basic components needed in most RS devices. You'll want to have a decent supply of slime before getting too deep into this."],
 			dependencies: [I;591],
 			id: 594,
@@ -69,6 +77,8 @@
 			icon: "refinedstorage:controller",
 			x: 0.5d,
 			y: 3.5d,
+			shape: "rsquare",
+			subtitle: "Don't throw this into a wall!",
 			description: [
 				"The Controller is the heart of any RS network; exactly one is required for components to work. It accepts normal RF/FE power.",
 				"",
@@ -100,12 +110,15 @@
 			icon: "refinedstorage:64k_storage_disk",
 			x: 0.5d,
 			y: 5.0d,
+			shape: "hexagon",
+			subtitle: "Just like the Birds and the Bees... kinda",
 			description: [
 				"To actually store items in an RS network, you'll want to make storage disks. These come in a variety of sizes; first try making one a 1k disk, the smallest size. You can retrieve the materials used to craft these (storage part/housing) by shift-right-clicking with the item in hand.",
 				"",
 				"The Disk Drive is your main method of holding storage disks. Up to ten can fit in a drive; you can swap them in and out as needed."
 			],
 			dependencies: [I;598],
+			size: 1.5d,
 			id: 600,
 			tasks: [
 				{
@@ -138,10 +151,11 @@
 		},
 		{
 			title: "Fluid Storage Disks",
-			x: -2.5d,
+			x: 5.0d,
 			y: 5.0d,
+			subtitle: "Pouring water in a computer seems like a bad idea...",
 			description: ["Fluid storage disks store fluid. Imagine that! Naturally, this involves somewhat different methods of accessing the contents of the disks; see the Fluid Grid quest for more information."],
-			dependencies: [I;600],
+			dependencies: [I;616],
 			id: 605,
 			tasks: [{
 				id: 606,
@@ -158,7 +172,8 @@
 			title: "Importing and Exporting",
 			icon: "refinedstorage:exporter",
 			x: -1.0d,
-			y: 3.5d,
+			y: 6.5d,
+			subtitle: "Business at its finest!",
 			description: ["Importers automatically pull items from the connected inventory, and exporters automatically push (configured) items to the connected inventory. Both can be set to have filters or sped up with upgrades."],
 			dependencies: [I;600],
 			id: 607,
@@ -184,8 +199,9 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: 6.5d,
+			x: -1.0d,
+			y: 3.5d,
+			subtitle: "When disks aren't enough",
 			description: ["If you set up an External Storage part facing a normal inventory (e.g. a chest), that inventory will be treated as part of the network, and its contents can be accessed as though they were on storage drives."],
 			dependencies: [I;600],
 			id: 610,
@@ -203,6 +219,8 @@
 		{
 			x: 2.0d,
 			y: 5.0d,
+			shape: "rsquare",
+			subtitle: "Off the grid? More like in the grid",
 			description: ["The Grid is the primary means by which you can actually access the items in your storage. Simply connect a grid to the network and you can start chuckin' items in and out."],
 			dependencies: [I;600],
 			id: 612,
@@ -221,6 +239,7 @@
 		{
 			x: 3.5d,
 			y: 3.5d,
+			subtitle: "Just like the one you use for your kids",
 			description: [
 				"The Storage Monitor adds a handy (and stylish) way to see the current number of a given item (or amount of fluid) in your network at a glance. Shift-right click it to open a config GUI.",
 				"",
@@ -243,6 +262,7 @@
 		{
 			x: 3.5d,
 			y: 5.0d,
+			subtitle: "Tanks? Who needs them! They can't even shoot...",
 			description: ["The Fluid Grid works a bit differently from the normal Grid. Fluids can only be inserted/extracted via the use of fluid container items such as buckets."],
 			dependencies: [I;612],
 			id: 616,
@@ -261,6 +281,7 @@
 		{
 			x: 3.5d,
 			y: 6.5d,
+			subtitle: "The one that makes you forget the regular Grid exists",
 			description: [
 				"The Crafting Grid, humanity's most glorious invention, is literally just a Grid with a built-in crafting table.",
 				"",
@@ -285,8 +306,9 @@
 		{
 			title: "Wireless Grid Access",
 			icon: "refinedstorage:wireless_grid",
-			x: 3.5d,
-			y: 8.0d,
+			x: 5.0d,
+			y: 6.5d,
+			subtitle: "It even has a keybind!",
 			description: [
 				"Wireless Grids are exactly what they sound like: handheld grid access in item form. These are exactly as great as they sound, and they come in all the normal types; for now, make a Wireless Crafting Grid.",
 				"",
@@ -316,9 +338,10 @@
 			}]
 		},
 		{
-			x: 3.5d,
-			y: 9.5d,
-			description: ["16 blocks ain't enough! Each Range Upgrade will significantly increase a Wireless Transmitter's range, albeit at an increased power  cost."],
+			x: 5.0d,
+			y: 8.0d,
+			subtitle: "My house isn't that small!",
+			description: ["16 blocks ain't enough! Each Range Upgrade will significantly increase a Wireless Transmitter's range, albeit at an increased power cost."],
 			dependencies: [I;620],
 			id: 622,
 			tasks: [{
@@ -338,6 +361,7 @@
 			icon: "refinedstorage:pattern",
 			x: 2.0d,
 			y: 6.5d,
+			subtitle: "The first thing you'll autocraft",
 			description: [
 				"Patterns and Pattern Grids are both critical to the autocrafting process. In the Pattern Grid, you can encode a specific recipe on a Pattern item, which can then be placed in a Crafter for autocrafting.",
 				"",
@@ -369,8 +393,10 @@
 			}]
 		},
 		{
-			x: 0.5d,
+			x: 2.0d,
 			y: 8.0d,
+			shape: "rsquare",
+			subtitle: "Automation at its finest!",
 			description: [
 				"Glorious autocrafting! Crafters are used to handle both types of pattern recipes. Each crafter can hold up to nine patterns.",
 				"",
@@ -378,10 +404,8 @@
 				"",
 				"For processing recipes, the crafter must be placed facing the input of whichever machine is doing the processing. Note that all the crafter will actually do in this case is give the recipe items to the machine; getting the output into the network must be handled otherwise (e.g. with an Interface)."
 			],
-			dependencies: [I;
-				600,
-				624
-			],
+			dependencies: [I;624],
+			size: 1.25d,
 			id: 626,
 			tasks: [{
 				id: 627,
@@ -408,8 +432,9 @@
 			]
 		},
 		{
-			x: -1.0d,
-			y: 8.0d,
+			x: 2.0d,
+			y: 3.5d,
+			subtitle: "Gotta go fast!",
 			description: ["When placed in a device, the Speed Upgrade will increase its speed (and power consumption). This is useful for Importers, Exporters, Crafters, etc."],
 			dependencies: [I;600],
 			id: 628,
@@ -426,8 +451,9 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: 8.0d,
+			x: 2.0d,
+			y: 2.0d,
+			subtitle: "The need for speed!",
 			description: ["The Stack Upgrade often serves as a more useful Speed Upgrade. It doesn't speed up individual operations, but instead allows each operation to move up to a stack of items."],
 			dependencies: [I;628],
 			id: 630,
@@ -447,7 +473,8 @@
 		},
 		{
 			x: 0.5d,
-			y: 9.5d,
+			y: 8.0d,
+			subtitle: "Just hope they don't get stuck...",
 			description: [
 				"The Crafting Monitor can be used to check the status of any in-progress crafting jobs, including current progress and predicted time remaining.",
 				"",
@@ -470,14 +497,15 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: 3.5d,
+			x: -1.0d,
+			y: 8.0d,
+			subtitle: "A completely abstract Class! Isn't this Java?",
 			description: [
 				"The Interface, like the Importer and Exporter, is a device that handles network input/output. Unlike the Importer and Exporter, it does not push or pull items to/from adjacent inventories.",
 				"",
 				'The Interface is most useful as a simple (and perhaps less laggy) alternative to the Importer when the external item source can handle the "pushing" itself, e.g. depositing items in the Interface with a coneyor belt.'
 			],
-			dependencies: [I;600],
+			dependencies: [I;607],
 			id: 664,
 			tasks: [{
 				id: 665,
@@ -493,8 +521,9 @@
 		{
 			title: "Long-Range Networking",
 			icon: "refinedstorage:network_transmitter",
-			x: -1.0d,
-			y: 9.5d,
+			x: 0.5d,
+			y: 6.5d,
+			subtitle: "Darn 5G will kill us all!",
 			description: [
 				"Sure would be nice if you could connect your network to distant facilities without needing hundreds or thousands of cables. Here's a solution!",
 				"",
@@ -539,6 +568,108 @@
 					player_command: false
 				}
 			]
+		},
+		{
+			title: "Constructors and Destructors",
+			x: -1.0d,
+			y: 5.0d,
+			subtitle: "Build me up Buttercup",
+			description: [
+				"Constructors can place or drop items from your system directly into the world, making in world automation much easier.",
+				"",
+				"Can you guess what Destructors will do too?"
+			],
+			dependencies: [I;600],
+			id: 3903,
+			tasks: [
+				{
+					id: 3904,
+					type: "item",
+					item: "refinedstorage:constructor"
+				},
+				{
+					id: 3905,
+					type: "item",
+					item: "refinedstorage:destructor"
+				}
+			],
+			rewards: [{
+				id: 3916,
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 9.5d,
+			subtitle: "I am Iron Man!",
+			description: [
+				"Do you keep running out of space in your Crafters? Don't you wish a better option existed, with more pattern slots so that you didn't need to keep crafting more? Well today is your lucky day!",
+				"",
+				"Introducing the Iron Crafter! With three times as many slots as a normal Crafter, this machine will help you organize and keep your base tidy. Oh, and it might be upgraded further too..."
+			],
+			dependencies: [I;626],
+			id: 3906,
+			tasks: [{
+				id: 3907,
+				type: "item",
+				item: "extrastorage:iron_crafter"
+			}],
+			rewards: [{
+				id: 3919,
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: 0.5d,
+			y: 9.5d,
+			shape: "hexagon",
+			subtitle: "Too bad Netherite Man doesn't exist!",
+			description: ["Absolute overkill? I don't know what that means! With a whopping 81 slots, the Netherite Crafter is the top tier option for all your autocrafting needs. It's never enough!"],
+			dependencies: [I;3906],
+			id: 3908,
+			tasks: [{
+				id: 3909,
+				type: "item",
+				item: "extrastorage:netherite_crafter"
+			}],
+			rewards: [{
+				id: 3920,
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 8.0d,
+			subtitle: "No Karen, not that manager...",
+			description: [
+				"Tired of going around your base trying to find the right crafter to fit that pattern into? Introducing the Crafter Manager!",
+				"",
+				"This handy block will connect to all the Crafters in your system and give you access to them all from the same block, for easy pattern management. You can even name your Crafters in an Anvil and the name will appear in the Manager!"
+			],
+			dependencies: [I;626],
+			id: 3910,
+			tasks: [{
+				id: 3911,
+				type: "item",
+				item: "refinedstorage:crafter_manager"
+			}],
+			rewards: [{
+				id: 3918,
+				type: "item",
+				item: "refinedstorage:crafter"
+			}]
 		}
 	]
 }

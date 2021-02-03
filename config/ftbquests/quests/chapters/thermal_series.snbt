@@ -46,7 +46,7 @@
 		{
 			icon: "thermal:dynamo_stirling",
 			x: 0.0d,
-			y: 2.0d,
+			y: 1.0d,
 			subtitle: "Power, From the Top",
 			description: [
 				"You can't get something for nothing; doing work means using energy and the search for energy drives all things. Our first step, therefore will be to generate some power to begin working with Thermal machines.",
@@ -100,8 +100,8 @@
 			]
 		},
 		{
-			x: -0.5d,
-			y: 3.0d,
+			x: 0.0d,
+			y: 2.5d,
 			subtitle: "Trickle-Down Economics",
 			description: [
 				"While nothing is without cost, the source of energy isn't always immediately obvious. The Arboreal Extractor uses a combination of gravity and the trees own capillary action to collect the fluids available in the tree. ",
@@ -136,8 +136,8 @@
 		},
 		{
 			icon: "thermal:machine_refinery",
-			x: -1.0d,
-			y: 5.0d,
+			x: -1.5d,
+			y: 2.5d,
 			subtitle: "Not Your Ordinary Moonshine",
 			description: [
 				"With a little bit of energy input, the Fractionating Still can refine Resin into Tree Oil, a fine renewable fuel that burns more efficiently than coal.",
@@ -176,8 +176,8 @@
 			]
 		},
 		{
-			x: 4.5d,
-			y: 3.0d,
+			x: 5.5d,
+			y: 1.0d,
 			subtitle: "Rock and a Hard Place",
 			description: [
 				"Some materials are more abundant than they seem at first glance, they're simply locked up in different forms that require a touch more work to release.",
@@ -203,8 +203,8 @@
 			}]
 		},
 		{
-			x: 5.0d,
-			y: 4.0d,
+			x: 7.0d,
+			y: 1.0d,
 			subtitle: "Bootstrapping Technology",
 			description: [
 				"An ordinary Furnace will need a helping hand to produce advanced alloys. ",
@@ -230,8 +230,8 @@
 			}]
 		},
 		{
-			x: 5.0d,
-			y: 5.0d,
+			x: 7.0d,
+			y: 2.5d,
 			subtitle: "Support the Resistance!",
 			description: [
 				"An advanced furnace used for making alloys directly, as well as many other useful materials, such as hardened glass.",
@@ -255,7 +255,7 @@
 			}]
 		},
 		{
-			x: -1.0d,
+			x: -1.5d,
 			y: 4.0d,
 			subtitle: "A Sticky Mess",
 			description: [
@@ -288,8 +288,8 @@
 			]
 		},
 		{
-			x: 0.0d,
-			y: 6.0d,
+			x: -1.5d,
+			y: 1.0d,
 			subtitle: "ICE, ICE, Baby",
 			description: [
 				"With better fuel in hand, start up a Compression Dynamo for some simple renewable energy. ",
@@ -316,7 +316,7 @@
 		},
 		{
 			x: 4.0d,
-			y: 2.0d,
+			y: 1.0d,
 			subtitle: "Capissen 38 Mark II",
 			description: [
 				"A simple furnace, like a standard coal burning furnace except  faster and more efficient.",
@@ -350,8 +350,8 @@
 			]
 		},
 		{
-			x: 4.0d,
-			y: 6.0d,
+			x: 7.0d,
+			y: 4.0d,
 			subtitle: "Bop It, Pull It, Twist It",
 			description: [
 				"Precision machining typically means greater efficiencies, either in terms of time spent doing a task or materials used. The MultiServo Press is one such machine that makes pressing plates faster and gears cheaper, as well as opening the door to other processing techniques.",
@@ -383,7 +383,7 @@
 		},
 		{
 			x: 5.5d,
-			y: 6.0d,
+			y: 2.5d,
 			subtitle: "Between the Wasteland and Sky...",
 			description: [
 				"Nature does an excellent job of growing plants. It's been at it for a while, after all. But when space is at a premium a Phytogenic Insolator is an excellent alternative to the natural approach. ",
@@ -436,8 +436,8 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: 9.0d,
+			x: 7.0d,
+			y: 8.5d,
 			description: ["A handheld 'explosive' that releases the charged energy of elemental Blitz, causing lightning to strike spontaneously."],
 			dependencies: [I;1245],
 			dependency_requirement: "one_started",
@@ -457,8 +457,8 @@
 			}]
 		},
 		{
-			x: 1.5d,
-			y: 9.0d,
+			x: 5.5d,
+			y: 7.0d,
 			description: ["A handheld 'explosive' that releases the chilling power of elemental Blizz, freezing water and blanketing the area in snow."],
 			dependencies: [I;1245],
 			dependency_requirement: "one_started",
@@ -478,8 +478,8 @@
 			}]
 		},
 		{
-			x: 3.5d,
-			y: 9.0d,
+			x: 8.5d,
+			y: 7.0d,
 			description: ["A handheld 'explosive' that releases the latent power of elemental Basalz, causing the earth to shift and crack."],
 			dependencies: [I;1245],
 			dependency_requirement: "one_started",
@@ -499,8 +499,8 @@
 			}]
 		},
 		{
-			x: 0.5d,
-			y: 9.0d,
+			x: 7.0d,
+			y: 5.5d,
 			description: ["A handheld 'explosive' that releases the smoldering energy of elemental Blaze, lighting the surroundings on fire."],
 			dependencies: [I;1245],
 			dependency_requirement: "one_started",
@@ -521,8 +521,8 @@
 		},
 		{
 			title: "Exotic Elements",
-			x: 2.0d,
-			y: 8.0d,
+			x: 7.0d,
+			y: 7.0d,
 			subtitle: "Our Powers Combined",
 			description: ["Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."],
 			dependencies: [I;931],
@@ -559,18 +559,38 @@
 			}]
 		},
 		{
-			x: 1.5d,
-			y: 5.5d,
-			description: ["One of several augments useful for getting more out of your tools and machines. "],
+			title: "RF Capacity and Transfer Upgrades",
+			x: 1.0d,
+			y: 4.0d,
+			description: ["These upgrades are primarily used for increasing RF Capacity/Transfer in Tools, Dynamos, and Machines. If you want the best of both worlds, you can insert both Stabilized and High-Flux coils to get a 6x multiplier for both RF Capacity and Transfer."],
 			dependencies: [I;
-				1200,
-				1190
+				931,
+				3914
 			],
 			id: 1250,
 			tasks: [{
-				id: 1251,
+				id: 3926,
 				type: "item",
-				item: "thermal:fluid_tank_augment"
+				item: {
+					id: "itemfilters:or",
+					Count: true,
+					tag: {
+						items: [
+							{
+								id: "thermal:rf_coil_augment",
+								Count: true
+							},
+							{
+								id: "thermal:rf_coil_storage_augment",
+								Count: true
+							},
+							{
+								id: "thermal:rf_coil_xfer_augment",
+								Count: true
+							}
+						]
+					}
+				}
 			}],
 			rewards: [{
 				id: 1274,
@@ -582,15 +602,42 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: 5.5d,
+			title: "Machine Upgrades",
+			x: 3.0d,
+			y: 4.0d,
 			description: ["One of several augments useful for getting more out of your tools and machines. "],
-			dependencies: [I;931],
+			dependencies: [I;
+				931,
+				3914
+			],
 			id: 1252,
 			tasks: [{
-				id: 1253,
+				id: 3927,
 				type: "item",
-				item: "thermal:rf_coil_augment"
+				item: {
+					id: "itemfilters:or",
+					Count: true,
+					tag: {
+						items: [
+							{
+								id: "thermal:machine_speed_augment",
+								Count: true
+							},
+							{
+								id: "thermal:machine_output_augment",
+								Count: true
+							},
+							{
+								id: "thermal:machine_catalyst_augment",
+								Count: true
+							},
+							{
+								id: "thermal:machine_cycle_augment",
+								Count: true
+							}
+						]
+					}
+				}
 			}],
 			rewards: [{
 				id: 1271,
@@ -602,15 +649,39 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: 4.5d,
+			title: "Upgrade Augments",
+			x: 3.0d,
+			y: 7.0d,
 			description: ["Integral Components generally upgrade all stats of the machine they're installed in. More advanced versions will require more exotic materials. "],
-			dependencies: [I;1200],
+			dependencies: [I;
+				1200,
+				931,
+				3914
+			],
 			id: 1254,
 			tasks: [{
-				id: 1255,
+				id: 3921,
 				type: "item",
-				item: "thermal:upgrade_augment_1"
+				item: {
+					id: "itemfilters:or",
+					Count: true,
+					tag: {
+						items: [
+							{
+								id: "thermal:upgrade_augment_1",
+								Count: true
+							},
+							{
+								id: "thermal:upgrade_augment_2",
+								Count: true
+							},
+							{
+								id: "thermal:upgrade_augment_3",
+								Count: true
+							}
+						]
+					}
+				}
 			}],
 			rewards: [{
 				id: 1272,
@@ -622,18 +693,34 @@
 			}]
 		},
 		{
-			x: 2.0d,
-			y: 6.5d,
+			title: "Brewery Upgrades",
+			x: 1.0d,
+			y: 7.0d,
 			description: ["One of several augments useful for getting more out of your dynamos. "],
 			dependencies: [I;
-				1221,
-				1200
+				1200,
+				3914
 			],
 			id: 1256,
 			tasks: [{
-				id: 1257,
+				id: 3930,
 				type: "item",
-				item: "thermal:dynamo_output_augment"
+				item: {
+					id: "itemfilters:or",
+					Count: true,
+					tag: {
+						items: [
+							{
+								id: "thermal:potion_duration_augment",
+								Count: true
+							},
+							{
+								id: "thermal:potion_amplifier_augment",
+								Count: true
+							}
+						]
+					}
+				}
 			}],
 			rewards: [{
 				id: 1273,
@@ -642,6 +729,83 @@
 				icon: "kubejs:rare_lootbox",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
 				player_command: false
+			}]
+		},
+		{
+			title: "Machine Upgrades",
+			x: 2.0d,
+			y: 5.5d,
+			subtitle: "Time to kick it up a notch!",
+			description: ["The following four upgrades will help you speed up your Thermal Machines, and take them to the next level. Each individual upgrade has its own pros and cons, so make sure you pick the correct ones for each machine."],
+			id: 3914,
+			tasks: [{
+				id: 3915,
+				type: "checkmark",
+				title: "Machine Upgrades"
+			}]
+		},
+		{
+			title: "Dynamo Upgrades",
+			x: 3.5d,
+			y: 5.5d,
+			dependencies: [I;
+				931,
+				3914
+			],
+			id: 3922,
+			tasks: [{
+				id: 3929,
+				type: "item",
+				item: {
+					id: "itemfilters:or",
+					Count: true,
+					tag: {
+						items: [
+							{
+								id: "thermal:dynamo_output_augment",
+								Count: true
+							},
+							{
+								id: "thermal:dynamo_fuel_augment",
+								Count: true
+							}
+						]
+					}
+				}
+			}]
+		},
+		{
+			title: "Misc Upgrades",
+			x: 0.5d,
+			y: 5.5d,
+			description: [
+				"The Expanded Tank Augment can be used in any Thermal block/item with a tank, and increases the tank's capacity by a factor of 4.",
+				"The Radial Enhancement augment increases the max radius of tools by one. You can iterate through all the radius options by pressing V."
+			],
+			dependencies: [I;
+				931,
+				3914
+			],
+			id: 3924,
+			tasks: [{
+				id: 3928,
+				type: "item",
+				item: {
+					id: "itemfilters:or",
+					Count: true,
+					tag: {
+						items: [
+							{
+								id: "thermal:fluid_tank_augment",
+								Count: true
+							},
+							{
+								id: "thermal:area_radius_augment",
+								Count: true
+							}
+						]
+					}
+				}
 			}]
 		}
 	]
