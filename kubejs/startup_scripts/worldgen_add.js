@@ -1,4 +1,4 @@
-events.listen('worldgen.add', (event) => {
+/*events.listen('worldgen.add', (event) => {
     var data = {
         stones: [
             {
@@ -86,3 +86,4 @@ events.listen('worldgen.add', (event) => {
         i++;
     });
 });
+*/
