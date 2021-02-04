@@ -78,7 +78,10 @@ events.listen('recipes', function (event) {
 
         'quark:building/crafting/tallow_from_block',
 
+        'thermal:machine/refinery/refinery_crude_oil',
         'thermal:machine/centrifuge/centrifuge_honeycomb',
+        'thermal:machine/centrifuge/centrifuge_oil_red_sand',
+        'thermal:machine/centrifuge/centrifuge_oil_sand',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
     ];
