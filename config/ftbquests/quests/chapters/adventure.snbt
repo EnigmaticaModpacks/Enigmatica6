@@ -39,8 +39,8 @@
 		},
 		{
 			icon: "losttrinkets:treasure_bag",
-			x: 0.0d,
-			y: 3.0d,
+			x: -1.0d,
+			y: 2.0d,
 			subtitle: "One Man's Trash Is Another Man's Treasure",
 			description: [
 				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?",
@@ -106,7 +106,7 @@
 		},
 		{
 			title: "Oh, The Biomes You'll Go",
-			x: -1.0d,
+			x: -1.5d,
 			y: 1.0d,
 			subtitle: "It's opener out there, in the wide open air.",
 			description: [
@@ -128,33 +128,9 @@
 			}]
 		},
 		{
-			x: -1.0d,
-			y: 2.0d,
-			subtitle: "Poor Unfortunate Souls",
-			description: [
-				"No, your eyes do not deceive you. ",
-				"",
-				"There are… remains in the ice of adventurer’s whose names are now lost to the frozen winds.",
-				"",
-				"Dig them out and see if you fare any better."
-			],
-			id: 3215,
-			tasks: [{
-				id: 3216,
-				type: "checkmark",
-				title: "Rare Ice",
-				icon: "minecraft:ice"
-			}],
-			rewards: [{
-				id: 3233,
-				type: "xp",
-				xp: 100
-			}]
-		},
-		{
 			icon: "meetyourfight:devils_ante",
 			x: 0.0d,
-			y: -1.0d,
+			y: 1.0d,
 			subtitle: "Leave Nothing To Chance",
 			description: [
 				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. ",
@@ -174,7 +150,7 @@
 			}]
 		},
 		{
-			x: 1.0d,
+			x: 1.5d,
 			y: 1.0d,
 			subtitle: "We're right here on this very spot.",
 			description: [

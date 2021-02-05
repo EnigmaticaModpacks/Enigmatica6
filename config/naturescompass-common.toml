@@ -8,7 +8,7 @@
 	#The maximum number of samples to be taken when searching for a biome.
 	#Range: 0 ~ 1000000
 	maxSamples = 50000
-	#A list of biomes that the compass will not be able to search for. Specify by resource location (ex: minecraft:ocean) or ID (ex: 0)
+	#A list of biomes that the compass will not be able to search for. Specify by resource location or numeric ID. Ex: ["minecraft:desert", "minecraft:savanna"]
 	biomeBlacklist = []
 	#biomeSize * radiusModifier = maxSearchRadius. Raising this value will increase search accuracy but will potentially make the process more resource .
 	#Range: 0 ~ 1000000

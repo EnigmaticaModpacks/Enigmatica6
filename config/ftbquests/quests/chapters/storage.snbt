@@ -150,8 +150,7 @@
 			]
 		},
 		{
-			title: "Quantum Storage",
-			icon: "quantumstorage:controller",
+			title: "Black Hole Storage",
 			x: 1.0d,
 			y: -9.0d,
 			subtitle: "Physics Breaking Hoarding",
@@ -165,9 +164,9 @@
 			dependencies: [I;1023],
 			id: 1033,
 			tasks: [{
-				id: 1691,
+				id: 3931,
 				type: "item",
-				item: "quantumstorage:chestiron"
+				item: "industrialforegoing:common_black_hole_unit"
 			}],
 			rewards: [{
 				id: 1692,
@@ -308,71 +307,23 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: -9.0d,
-			dependencies: [I;1033],
-			id: 2373,
-			tasks: [{
-				id: 2374,
-				type: "item",
-				item: "quantumstorage:chestgold"
-			}],
-			rewards: [{
-				id: 2468,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
-			}]
-		},
-		{
-			x: 3.5d,
-			y: -10.0d,
-			dependencies: [I;2373],
-			id: 2375,
-			tasks: [{
-				id: 2376,
-				type: "item",
-				item: "quantumstorage:chestdiamond"
-			}],
-			rewards: [{
-				id: 2469,
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "kubejs:sorcerers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
-				player_command: false
-			}]
-		},
-		{
-			x: 1.0d,
-			y: -10.5d,
-			dependencies: [I;1033],
-			id: 2377,
-			tasks: [{
-				id: 2378,
-				type: "item",
-				item: "quantumstorage:qsu"
-			}],
-			rewards: [{
-				id: 2454,
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
-			}]
-		},
-		{
 			x: 2.0d,
 			y: -10.0d,
 			dependencies: [I;1033],
 			id: 2379,
 			tasks: [{
-				id: 2380,
+				id: 3932,
 				type: "item",
-				item: "quantumstorage:tank"
+				item: {
+					id: "industrialforegoing:infinity_backpack",
+					Count: true,
+					tag: {
+						CanCharge: true,
+						Special: false,
+						Selected: "POOR",
+						Energy: 0L
+					}
+				}
 			}],
 			rewards: [{
 				id: 2660,
@@ -381,23 +332,6 @@
 				icon: "kubejs:alchemists_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
 				player_command: false
-			}]
-		},
-		{
-			x: 2.0d,
-			y: -11.5d,
-			description: ["The Quantum Controller allows Quantum Storage Units to be linked into a network across great distances, providing centralized access to all of the units. Use the hammer to perform the linking."],
-			dependencies: [I;2377],
-			id: 2381,
-			tasks: [{
-				id: 2382,
-				type: "item",
-				item: "quantumstorage:controller"
-			}],
-			rewards: [{
-				id: 2429,
-				type: "item",
-				item: "quantumstorage:hammer"
 			}]
 		},
 		{
@@ -1042,6 +976,17 @@
 				icon: "kubejs:alchemists_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
 				player_command: false
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -11.0d,
+			dependencies: [I;2379],
+			id: 3933,
+			tasks: [{
+				id: 3934,
+				type: "item",
+				item: "industrialforegoing:black_hole_controller"
 			}]
 		}
 	]

@@ -1,3 +1,15 @@
+### Enigmatica 6 v0.4.0
+
+_Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.0.txt)_
+
+**Improvements/Changes**
+
+-   LostTrinkets: Set maximum number of trinket slots the player can have to 10
+
+**Bug Fixes**
+
+-
+
 ### Enigmatica 6 v0.3.13
 
 _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.3.13.txt)_
