@@ -75,7 +75,7 @@
 
 	[worldgen.ancient_shrine]
 		#Sets the categories to generate this feature in. Available categories: none,taiga,extreme_hills,jungle,mesa,plains,savanna,icy,the_end,beach,forest,ocean,desert,river,swamp,mushroom,nether
-		biomeCategoryNames = ["icy", "extreme_hills"]
+		biomeCategoryNames = ["savanna", "forest", "icy", "swamp", "taiga", "plains"]
 		#Sets the worlds to generate this feature in. (Does NOT work for structures!)
 		worldNames = ["overworld"]
 		#Defines the structure spacing for worldgen
