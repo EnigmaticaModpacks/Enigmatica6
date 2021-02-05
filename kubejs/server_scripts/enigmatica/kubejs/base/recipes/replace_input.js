@@ -8,6 +8,7 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
+    event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen');
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
     event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
     event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
