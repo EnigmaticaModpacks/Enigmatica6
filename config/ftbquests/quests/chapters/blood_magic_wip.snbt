@@ -32,25 +32,17 @@
 				id: 2199,
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: 2200,
-					type: "item",
-					item: {
-						id: "patchouli:guide_book",
-						Count: true,
-						tag: {
-							"patchouli:book": "bloodmagic:guide"
-						}
+			rewards: [{
+				id: 2200,
+				type: "item",
+				item: {
+					id: "patchouli:guide_book",
+					Count: true,
+					tag: {
+						"patchouli:book": "bloodmagic:guide"
 					}
-				},
-				{
-					id: 2222,
-					type: "item",
-					item: "bloodmagic:soulsnare",
-					count: 16
 				}
-			]
+			}]
 		},
 		{
 			icon: {
@@ -70,7 +62,7 @@
 				"",
 				"It can be helpful to gather a few pieces of Demonic Will in this way. Better methods will soon present themselves. "
 			],
-			dependencies: [I;2198],
+			dependencies: [I;2207],
 			id: 2203,
 			tasks: [{
 				id: 2227,
@@ -118,7 +110,7 @@
 				"",
 				"The Sanguine Scientiem has an excellent guide on empowering the Altar. For now, it will suffice to simply place the Altar anywhere, though it may be prudent to plan out a large area for future expansion."
 			],
-			dependencies: [I;2203],
+			dependencies: [I;2198],
 			min_width: 300,
 			id: 2207,
 			tasks: [{
