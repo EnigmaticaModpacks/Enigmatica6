@@ -4,10 +4,10 @@
     "strataRegionSize": 326,
     "strataDecorator": true,
     "oreCompatibleStoneOnly": false,
-    "erosionDecorator": false,
+    "erosionDecorator": true,
     "plainStoneErosion": false,
-    "naturalSnowDecorator": false,
-    "customBiomeFeatures": false,
+    "naturalSnowDecorator": true,
+    "customBiomeFeatures": true,
     "vanillaLakes": false,
     "vanillaSprings": true,
     "vanillaLavaLakes": true,
@@ -22,8 +22,8 @@
       "variance": 0
     },
     "dimensions": {
-      "nether": "default",
-      "end": "default",
+      "nether": "byg:world",
+      "end": "byg:world",
       "includeExtraDimensions": true
     }
   },
@@ -35,7 +35,7 @@
     },
     "structures": {
       "astralsorcery:ancient_shrine": {
-        "spacing": 22,
+        "spacing": 45,
         "separation": 4,
         "salt": 682195674
       },
@@ -50,7 +50,7 @@
         "salt": 1549795925
       },
       "dungeoncrawl:dungeon": {
-        "spacing": 30,
+        "spacing": 60,
         "separation": 10,
         "salt": 10387313
       },
@@ -90,7 +90,7 @@
         "salt": 14357619
       },
       "minecraft:mansion": {
-        "spacing": 80,
+        "spacing": 60,
         "separation": 20,
         "salt": 10387319
       },
@@ -130,7 +130,7 @@
         "salt": 10387312
       },
       "quark:big_dungeon": {
-        "spacing": 20,
+        "spacing": 40,
         "separation": 11,
         "salt": 79234823
       },
@@ -155,12 +155,12 @@
         "salt": 1689778
       },
       "towers_of_the_wild:ocean_tower": {
-        "spacing": 32,
+        "spacing": 40,
         "separation": 10,
         "salt": 1689782
       },
       "towers_of_the_wild:ocean_warm_tower": {
-        "spacing": 32,
+        "spacing": 40,
         "separation": 10,
         "salt": 1689782
       },
@@ -244,7 +244,7 @@
       "bias": 0.028
     },
     "biomeShape": {
-      "biomeSize": 402,
+      "biomeSize": 352,
       "macroNoiseSize": 5,
       "biomeWarpScale": 150,
       "biomeWarpStrength": 80
@@ -261,7 +261,7 @@
   "terrain": {
     "general": {
       "terrainSeedOffset": 0,
-      "terrainRegionSize": 816,
+      "terrainRegionSize": 364,
       "globalVerticalScale": 0.98,
       "globalHorizontalScale": 1.0,
       "fancyMountains": true
@@ -330,7 +330,7 @@
       "maxBankHeight": 8,
       "bedWidth": 10,
       "bankWidth": 25,
-      "fade": 0.814
+      "fade": 0.5
     },
     "branchRivers": {
       "bedDepth": 5,
@@ -338,10 +338,10 @@
       "maxBankHeight": 6,
       "bedWidth": 6,
       "bankWidth": 16,
-      "fade": 0.949
+      "fade": 0.806
     },
     "lakes": {
-      "chance": 0.128,
+      "chance": 0.201,
       "minStartDistance": 0.0,
       "maxStartDistance": 0.126,
       "depth": 12,

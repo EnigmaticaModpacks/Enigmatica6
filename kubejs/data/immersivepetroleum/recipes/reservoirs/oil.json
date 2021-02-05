@@ -1,0 +1,17 @@
+{
+    "type": "immersivepetroleum:reservoirs",
+    "fluid": "pneumaticcraft:oil",
+    "fluidminimum": 2500000,
+    "fluidcapacity": 15000000,
+    "fluidtrace": 6,
+    "weight": 40,
+    "dimension": {
+        "whitelist": [],
+        "blacklist": ["minecraft:the_end"]
+    },
+    "biome": {
+        "whitelist": [],
+        "blacklist": []
+    },
+    "name": "oil"
+}
