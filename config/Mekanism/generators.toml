@@ -4,7 +4,7 @@
 	#Peak output for the Advanced Solar Generator. Note: It can go higher than this value in some extreme environments.
 	advancedSolarGeneration = "300"
 	#Affects the Injection Rate, Max Temp, and Ignition Temp.
-	energyPerFusionFuel = "10000000"
+	energyPerFusionFuel = "550000"
 	#Amount of energy in Joules the Bio Generator produces per tick.
 	bioGeneration = "350"
 	#Peak output for the Solar Generator. Note: It can go higher than this value in some extreme environments.
@@ -17,11 +17,11 @@
 		#The list of dimension ids that the Wind Generator will not generate power in.
 		windGenerationDimBlacklist = []
 		#The maximum Y value that affects the Wind Generators Power generation.
-		windGenerationMaxY = 255
+		windGenerationMaxY = 90
 		#Maximum base generation value of the Wind Generator.
-		windGenerationMax = "480"
+		windGenerationMax = "300"
 		#The minimum Y value that affects the Wind Generators Power generation.
-		windGenerationMinY = 24
+		windGenerationMinY = 40
 
 	#Turbine Settings
 	[generators.turbine]
