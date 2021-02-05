@@ -1,7 +1,7 @@
 {
 	id: 147,
 	filename: "tools",
-	order_index: 8,
+	order_index: 7,
 	title: "Tools",
 	icon: {
 		id: "minecraft:netherite_pickaxe",
@@ -1085,7 +1085,7 @@
 				tag: {}
 			},
 			x: -10.0d,
-			y: -15.5d,
+			y: -16.0d,
 			subtitle: "Frickin' Laser Beams",
 			description: [
 				"A powered tool capable of mining blocks from a distance. ",
@@ -1137,7 +1137,7 @@
 		},
 		{
 			x: -10.5d,
-			y: -12.0d,
+			y: -13.0d,
 			subtitle: "This Little Light of Mine",
 			description: [
 				"A dream come true for any beginning spelunker.",
@@ -1167,8 +1167,8 @@
 			}]
 		},
 		{
-			x: -11.0d,
-			y: -14.5d,
+			x: -10.5d,
+			y: -15.0d,
 			dependencies: [I;1119],
 			id: 1124,
 			tasks: [{
@@ -1187,7 +1187,7 @@
 		},
 		{
 			x: -11.0d,
-			y: -13.5d,
+			y: -14.0d,
 			dependencies: [I;1119],
 			id: 1126,
 			tasks: [{
@@ -1212,8 +1212,8 @@
 			]
 		},
 		{
-			x: -9.0d,
-			y: -14.5d,
+			x: -9.5d,
+			y: -15.0d,
 			dependencies: [I;1119],
 			id: 1128,
 			tasks: [{
@@ -1232,7 +1232,7 @@
 		},
 		{
 			x: -9.0d,
-			y: -13.5d,
+			y: -14.0d,
 			dependencies: [I;1119],
 			id: 1130,
 			tasks: [{
@@ -1842,7 +1842,7 @@
 					Damage: 0
 				}
 			},
-			x: -6.0d,
+			x: -6.5d,
 			y: -4.5d,
 			subtitle: "So Dangerous, You'll Have to Sign a Waiver",
 			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."],
@@ -1912,7 +1912,7 @@
 					Damage: 0
 				}
 			},
-			x: -5.0d,
+			x: -4.5d,
 			y: -4.5d,
 			subtitle: "You'll Think You're Looking at Aquaman",
 			description: ["A technological marvel that allows the wearer to remain productive for longer under water."],
@@ -2031,7 +2031,7 @@
 		},
 		{
 			x: -9.5d,
-			y: -12.0d,
+			y: -13.0d,
 			subtitle: "Chiseled like a Greek God",
 			description: [
 				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!",
@@ -2161,6 +2161,41 @@
 					}
 				}
 			}]
+		},
+		{
+			x: -5.5d,
+			y: -4.5d,
+			dependencies: [I;
+				1188,
+				1168,
+				1170,
+				1176
+			],
+			dependency_requirement: "one_completed",
+			id: 3992,
+			tasks: [{
+				id: 3993,
+				type: "item",
+				item: "thermal:area_radius_augment"
+			}],
+			rewards: [
+				{
+					id: 3994,
+					type: "command",
+					title: "Epic Thermal Series Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+					player_command: false
+				},
+				{
+					id: 3995,
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
 		}
 	]
 }

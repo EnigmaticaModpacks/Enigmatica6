@@ -1,13 +1,13 @@
 {
 	id: 2,
 	filename: "immersive_engineering",
-	order_index: 16,
+	order_index: 15,
 	title: "Immersive Engineering",
 	icon: "immersiveengineering:heavy_engineering",
 	default_quest_shape: "",
 	quests: [
 		{
-			x: 0.0d,
+			x: -1.5d,
 			y: -6.0d,
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."],
 			id: 4,
@@ -24,7 +24,7 @@
 			}]
 		},
 		{
-			x: 0.0d,
+			x: -1.5d,
 			y: -4.5d,
 			description: ["Your trusty Engineer's Hammer is used primarily to form multiblocks and rotate certain blocks. You can also use it to craft plates in a pinch."],
 			dependencies: [I;4],
@@ -55,7 +55,7 @@
 		{
 			title: "Coke Oven",
 			icon: "immersiveengineering:cokebrick",
-			x: 0.0d,
+			x: -3.5d,
 			y: -3.0d,
 			description: ["The Coke Oven is the first important multiblock in IE, made with a 3x3x3 cube of Coke Bricks. This structure can turn coal into coke and wood into charcoal; either operation produces creosote, an important byproduct used for Treated Wood."],
 			dependencies: [I;7],
@@ -90,8 +90,8 @@
 		},
 		{
 			icon: "immersiveengineering:windmill",
-			x: -4.5d,
-			y: -1.5d,
+			x: -6.5d,
+			y: -4.5d,
 			description: ["Windmills can be used as an early power source. They must be connected to a Kinetic Dynamo and placed in a high, unobstructed area."],
 			dependencies: [I;15],
 			id: 13,
@@ -117,8 +117,8 @@
 		{
 			title: "Basic Wiring",
 			icon: "immersiveengineering:wirecoil_copper",
-			x: -1.5d,
-			y: -3.0d,
+			x: -5.0d,
+			y: -6.0d,
 			description: ["IE wires can be used to transfer RF at three different voltages (different RF/t rates). You need a connector on the two devices to be connected and wires between them."],
 			dependencies: [I;4],
 			id: 15,
@@ -143,7 +143,7 @@
 		},
 		{
 			title: "Blast Furnace",
-			x: 0.0d,
+			x: -3.5d,
 			y: -1.5d,
 			description: ["The Blast Furnace is used to process iron into steel, using coke or charcoal. This is a critically important structure... unless you get steel another way, anyway."],
 			dependencies: [I;9],
@@ -163,8 +163,8 @@
 		},
 		{
 			title: "Insulated Wiring",
-			x: -4.5d,
-			y: -3.0d,
+			x: -8.5d,
+			y: -6.0d,
 			description: ["Insulating wires with hemp cloth is an excellent way to not get electrocuted."],
 			dependencies: [I;15],
 			id: 20,
@@ -191,8 +191,8 @@
 			]
 		},
 		{
-			x: -1.5d,
-			y: -1.5d,
+			x: -3.5d,
+			y: -4.5d,
 			description: ["Capacitors can be used to store RF. Right-click a side with your hammer to toggle between input (blue), output (orange), and unused. MV/HV capacitors also exist."],
 			dependencies: [I;
 				9,
@@ -214,7 +214,7 @@
 			}]
 		},
 		{
-			x: 1.5d,
+			x: -5.0d,
 			y: -3.0d,
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."],
 			dependencies: [I;9],
@@ -238,8 +238,8 @@
 		},
 		{
 			icon: "immersiveengineering:watermill",
-			x: 1.5d,
-			y: -1.5d,
+			x: -7.5d,
+			y: 0.0d,
 			description: ["Water Wheels need to have water flowing over them. Up to three can be placed against a Kinetic Dynamo to produce power."],
 			dependencies: [I;18],
 			id: 27,
@@ -263,8 +263,8 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: -4.5d,
+			x: 0.0d,
+			y: -6.0d,
 			description: ["Conveyor belts can be used to automate item transport. Items on conveyor belts will automatically be inserted into inventories on the receiving side. You can also craft extracting or vertical conveyor belts."],
 			dependencies: [I;4],
 			id: 30,
@@ -285,8 +285,8 @@
 		{
 			title: "Crusher",
 			icon: "immersiveengineering:light_engineering",
-			x: 1.5d,
-			y: 0.0d,
+			x: -3.5d,
+			y: 1.0d,
 			description: [
 				"The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI.",
 				"",
@@ -337,7 +337,7 @@
 		{
 			title: "Metal Press",
 			icon: "immersiveengineering:mold_plate",
-			x: -1.5d,
+			x: -1.0d,
 			y: 0.0d,
 			description: [
 				"The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more.",
@@ -393,7 +393,7 @@
 		{
 			title: "Improved Blast Furnace",
 			icon: "immersiveengineering:blastbrick_reinforced",
-			x: 0.0d,
+			x: 0.5d,
 			y: 0.0d,
 			description: [
 				"The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side.",
@@ -426,8 +426,8 @@
 		},
 		{
 			title: "Alloy Kiln",
-			x: 1.5d,
-			y: -4.5d,
+			x: -1.5d,
+			y: -3.0d,
 			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."],
 			dependencies: [I;7],
 			id: 38,
@@ -447,8 +447,8 @@
 		{
 			title: "Arc Furnace",
 			icon: "immersiveengineering:storage_steel",
-			x: 1.5d,
-			y: 1.5d,
+			x: -3.5d,
+			y: 2.5d,
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys and recycle metal gear.",
 				"",
@@ -547,8 +547,8 @@
 			]
 		},
 		{
-			x: -3.0d,
-			y: -1.5d,
+			x: -5.0d,
+			y: -4.5d,
 			description: ["The External Heater is a simple machine that, when powered, will heat adjacent furnaces. This allows the furnaces to smelt more quickly, without using fuel."],
 			dependencies: [I;15],
 			id: 52,
@@ -567,7 +567,7 @@
 			}]
 		},
 		{
-			x: 3.0d,
+			x: -1.5d,
 			y: -1.5d,
 			description: ["Thermoelectric Generators are another straightforward power option. When surrounded with hot and cold blocks, this block generates power based on the difference in temperature (see manual)."],
 			dependencies: [I;18],
@@ -593,7 +593,7 @@
 					Damage: 0
 				}
 			},
-			x: -3.0d,
+			x: -2.5d,
 			y: 0.0d,
 			description: [
 				"The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual.",
@@ -662,8 +662,8 @@
 		{
 			title: "Squeezer and Fermenter",
 			icon: "immersiveengineering:plantoil_bucket",
-			x: 3.0d,
-			y: 0.0d,
+			x: -7.5d,
+			y: 2.5d,
 			description: [
 				"The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel.",
 				"",
@@ -692,8 +692,8 @@
 		},
 		{
 			title: "Biodiesel",
-			x: 3.0d,
-			y: 1.5d,
+			x: -8.5d,
+			y: 2.5d,
 			description: [
 				"Biodiesel is made in the Refinery, and can be used as a fuel for the powerful (if noisy) Diesel Generator, producing massive amounts of RF/t.",
 				"",
@@ -719,7 +719,7 @@
 			title: "Excavator",
 			icon: "minecraft:gold_ore",
 			x: -4.5d,
-			y: 1.5d,
+			y: 1.0d,
 			description: [
 				"Once you've determined an appropriate spot to excavate, you can build this machine there. Note that the Excavator requires a rather hefty 4096 RF/t.",
 				"",
@@ -891,7 +891,7 @@
 		},
 		{
 			title: "Getting Clocher",
-			x: 4.5d,
+			x: -8.5d,
 			y: -3.0d,
 			description: ["The Garden Cloche takes power, water, and optionally fertilizer to grow plants at an accelerated rate."],
 			dependencies: [I;25],
@@ -913,7 +913,7 @@
 		{
 			title: "Engineered Lighting",
 			icon: "immersiveengineering:electric_lantern",
-			x: 4.5d,
+			x: -8.5d,
 			y: -4.5d,
 			description: [
 				"The Powered Lantern, when provided with a tiny amount of power via wire, will suppress mob spawns in a 32-block radius (in addition to, y'know, providing light).",
@@ -944,7 +944,7 @@
 		{
 			title: "Workbench Automation",
 			icon: "immersiveengineering:electron_tube",
-			x: 4.5d,
+			x: -8.5d,
 			y: -1.5d,
 			description: [
 				"The Automated Workbench is a powered multiblock that can automatically process a given type of Engineer's Workbench recipe, when supplied with a blueprint. Handy!",
