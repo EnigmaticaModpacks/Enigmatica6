@@ -37,6 +37,18 @@ events.listen('recipes', function (event) {
         'byg:crimson_gardens'
     ];
 
+    var undergarden_biomes = [
+        'undergarden:barren_abyss',
+        'undergarden:dense_forest',
+        'undergarden:forgotten_field',
+        'undergarden:frostfields',
+        'undergarden:gronglegrowth',
+        'undergarden:mushroom_bog',
+        'undergarden:smog_spires',
+        'undergarden:smogstem_forest',
+        'undergarden:wigglewood_forest'
+    ];
+
     //var nether_end_biomes = end_biomes.concat(nether_biomes);
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
@@ -107,7 +119,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens10'
+            item: 'industrialforegoing:laser_lens2'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -256,7 +268,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens12'
+            item: 'industrialforegoing:laser_lens0'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -396,7 +408,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens14'
+            item: 'industrialforegoing:laser_lens6'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -536,7 +548,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens3'
+            item: 'industrialforegoing:laser_lens9'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -676,7 +688,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens7'
+            item: 'industrialforegoing:laser_lens8'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -746,7 +758,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens8'
+            item: 'industrialforegoing:laser_lens7'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -786,6 +798,8 @@ events.listen('recipes', function (event) {
         type: 'industrialforegoing:laser_drill_ore'
     });
 
+
+
     event.remove({ id: 'industrialforegoing:laser_drill_ore/emerald' });
     event.recipes.industrialforegoing.laser_drill_ore({
         type: 'industrialforegoing.laser_drill_ore',
@@ -823,7 +837,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens5'
+            item: 'industrialforegoing:laser_lens13'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -945,7 +959,7 @@ events.listen('recipes', function (event) {
         ],
         pointer: 0,
         catalyst: {
-            item: 'industrialforegoing:laser_lens12'
+            item: 'industrialforegoing:laser_lens7'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
@@ -1006,6 +1020,126 @@ events.listen('recipes', function (event) {
         pointer: 0,
         catalyst: {
             item: 'industrialforegoing:laser_lens12'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            item: 'undergarden:cloggrum_ore'
+        },
+        rarity: [
+            {
+                whitelist: {
+                    type: 'undergarden:worldgen/biome',
+                    values: undergarden_biomes
+                },
+                blacklist: {},
+                depth_min: 5,
+                depth_max: 50,
+                weight: 20
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens12'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            item: 'undergarden:froststeel_ore'
+        },
+        rarity: [
+            {
+                whitelist: {
+                    type: 'undergarden:worldgen/biome',
+                    values: undergarden_biomes
+                },
+                blacklist: {},
+                depth_min: 5,
+                depth_max: 50,
+                weight: 20
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens9'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            item: 'undergarden:cloggrum_ore'
+        },
+        rarity: [
+            {
+                whitelist: {
+                    type: 'undergarden:worldgen/biome',
+                    values: undergarden_biomes
+                },
+                blacklist: {},
+                depth_min: 5,
+                depth_max: 50,
+                weight: 20
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens12'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            item: 'undergarden:utherium_ore'
+        },
+        rarity: [
+            {
+                whitelist: {
+                    type: 'undergarden:worldgen/biome',
+                    values: undergarden_biomes
+                },
+                blacklist: {},
+                depth_min: 5,
+                depth_max: 50,
+                weight: 20
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens1'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            item: 'undergarden:regalium_ore'
+        },
+        rarity: [
+            {
+                whitelist: {
+                    type: 'undergarden:worldgen/biome',
+                    values: undergarden_biomes
+                },
+                blacklist: {},
+                depth_min: 1,
+                depth_max: 10,
+                weight: 2
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens4'
         },
         type: 'industrialforegoing:laser_drill_ore'
     });

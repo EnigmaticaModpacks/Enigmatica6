@@ -1,4 +1,17 @@
 //priority: 900
+/*
+    This scripts unifies the output of recipes.
+
+    It uses three arrays that define what to unify into what. 
+    You can find those arrays in the constants/materials.js script
+
+    The functions used can be found in the functions.js script, 
+    in the same directory as this script is in.
+
+    You may use this script and modify it as you see fit, as
+    long as you do not claim to have made it. Attribution is
+    appreciated, but not required.
+*/
 events.listen('recipes', (event) => {
     materialsToUnify.forEach((material) => {
         typesToUnify.forEach((type) => {
@@ -13,110 +26,3 @@ events.listen('recipes', (event) => {
         });
     });
 });
-
-// Used to determine which materials to unify
-const materialsToUnify = [
-    'iron',
-    'gold',
-    'copper',
-    'silver',
-    'zinc',
-    'brass',
-    'lead',
-    'tin',
-    'compressed_iron',
-    'nickel',
-    'aluminum',
-    'uranium',
-    'bronze',
-    'electrum',
-    'constantan',
-    'steel',
-    'osmium',
-    'diamond',
-    'lapis',
-    'emerald',
-    'quartz',
-    'coal',
-    'charcoal',
-    'obsidian',
-    'ender',
-    'fluix',
-    'saltpeter',
-    'fluorite',
-    'invar',
-    'signalum',
-    'lumium',
-    'enderium',
-    'sulfur',
-    'cinnabar',
-    'niter',
-    'potassium_nitrate',
-    'saltpeter',
-    'apatite',
-    'bitumen',
-    'redstone',
-    'glowstone',
-    'arcane',
-    'mana',
-    'certus_quartz',
-    'charged_certus_quartz',
-    'iesnium',
-    'dimensional',
-    'cloggrum',
-    'froststeel',
-    'regalium',
-    'utherium',
-    'coal_coke',
-    'starmetal'
-];
-
-// Used to determine which material types to unify
-const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
-
-// Used to determine priority of which mod an output should come from
-const modPriorities = [
-    'emendatusenigmatica',
-    'minecraft',
-    'immersiveengineering',
-    'thermal',
-    'mekanism',
-    'jaopca',
-    'kubejs',
-    'pneumaticcraft',
-    'create',
-    'occultism',
-    'industrialforegoing',
-    'botania',
-    'quark',
-    'pedestals',
-    'refinedstorage',
-    'mapperbase',
-    'bloodmagic',
-    'eidolon',
-    'morevanillalib',
-    'titanium'
-];
-
-// This function is used to sort tags based on the modPriority list - Higher in the list will be higher in the tag
-function compareIndices(a, b, tag) {
-    if (a == b) return 0; // if a == b, they'll be found at the same position in modPriorities
-
-    for (let mod of modPriorities) {
-        if (mod == a) {
-            return -1;
-        } // if a comes before b, then index(a) < index(b), so -1
-        if (mod == b) {
-            return 1;
-        } // if a comes after b, then index(a) > index(b), so 1
-    }
-
-    console.error(`[${a}, ${b}] were both unaccounted for in mod unification${tag ? ' for ' + tag : '!'}`);
-    return 0;
-}
-
-// Material + Type combination to skip unification for
-const unificationBlacklist = [
-    unificationBlacklistEntry('quartz', 'gem'),
-    unificationBlacklistEntry('quartz', 'storage_block')
-];

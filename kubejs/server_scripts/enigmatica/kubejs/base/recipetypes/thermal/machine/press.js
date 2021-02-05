@@ -2,11 +2,19 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
-                inputs: [item.of('#forge:plates/steel', 3), item.of('#forge:wires/steel')],
+                inputs: [ingredient.of('#forge:plates/steel', 3), ingredient.of('#forge:plates/steel')],
+                output: item.of('immersiveengineering:mold_plate', 1)
+            },
+            {
+                inputs: [ingredient.of('#forge:plates/steel', 3), ingredient.of('#forge:wires/steel')],
                 output: item.of('immersiveengineering:mold_wire', 1)
             },
             {
-                inputs: [item.of('#forge:plates/steel', 3), item.of('#forge:rods/steel')],
+                inputs: [ingredient.of('#forge:plates/steel', 3), ingredient.of('#forge:gears/steel')],
+                output: item.of('immersiveengineering:mold_gear', 1)
+            },
+            {
+                inputs: [ingredient.of('#forge:plates/steel', 3), ingredient.of('#forge:rods/steel')],
                 output: item.of('immersiveengineering:mold_rod', 1)
             },
             {

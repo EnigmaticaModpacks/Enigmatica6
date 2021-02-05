@@ -1,16 +1,6 @@
 events.listen('item.tags', function (event) {
     var items = [
         'chiselsandbits:bit_storage',
-        'extradisks:1048576k_fluid_storage_disk',
-        'extradisks:1048576k_fluid_storage_part',
-        'extradisks:16384k_fluid_storage_disk',
-        'extradisks:16384k_fluid_storage_part',
-        'extradisks:262144k_fluid_storage_disk',
-        'extradisks:262144k_fluid_storage_part',
-        'extradisks:65536k_fluid_storage_disk',
-        'extradisks:65536k_fluid_storage_part',
-        'extradisks:infinite_fluid_storage_disk',
-        'extradisks:infinite_fluid_storage_part',
         'mekanism:advanced_fluid_tank',
         'mekanism:basic_fluid_tank',
         'mekanism:creative_fluid_tank',
