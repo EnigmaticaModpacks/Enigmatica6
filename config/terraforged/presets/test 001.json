@@ -12,7 +12,7 @@
     "vanillaSprings": true,
     "vanillaLavaLakes": true,
     "vanillaLavaSprings": true,
-    "mountainBiomeUsage": 0.0,
+    "mountainBiomeUsage": 0.4,
     "volcanoBiomeUsage": 0.4
   },
   "dimensions": {
@@ -35,7 +35,7 @@
     },
     "structures": {
       "astralsorcery:ancient_shrine": {
-        "spacing": 45,
+        "spacing": 32,
         "separation": 4,
         "salt": 682195674
       },
@@ -105,12 +105,12 @@
         "salt": 14357621
       },
       "minecraft:pillager_outpost": {
-        "spacing": 32,
+        "spacing": 22,
         "separation": 8,
         "salt": 165745296
       },
       "minecraft:ruined_portal": {
-        "spacing": 40,
+        "spacing": 24,
         "separation": 15,
         "salt": 34222645
       },
@@ -120,12 +120,12 @@
         "salt": 165745295
       },
       "minecraft:swamp_hut": {
-        "spacing": 32,
+        "spacing": 22,
         "separation": 8,
         "salt": 14357620
       },
       "minecraft:village": {
-        "spacing": 32,
+        "spacing": 34,
         "separation": 8,
         "salt": 10387312
       },
@@ -145,12 +145,12 @@
         "salt": 1689780
       },
       "towers_of_the_wild:ice_tower": {
-        "spacing": 50,
+        "spacing": 42,
         "separation": 20,
         "salt": 1689779
       },
       "towers_of_the_wild:jungle_tower": {
-        "spacing": 50,
+        "spacing": 42,
         "separation": 20,
         "salt": 1689778
       },
@@ -165,32 +165,32 @@
         "salt": 1689782
       },
       "towers_of_the_wild:tower": {
-        "spacing": 50,
+        "spacing": 42,
         "separation": 20,
         "salt": 1689777
       },
       "valhelsia_structures:castle": {
-        "spacing": 40,
+        "spacing": 32,
         "separation": 8,
         "salt": 16987356
       },
       "valhelsia_structures:castle_ruin": {
-        "spacing": 35,
+        "spacing": 32,
         "separation": 8,
         "salt": 14357618
       },
       "valhelsia_structures:desert_house": {
-        "spacing": 30,
+        "spacing": 22,
         "separation": 8,
         "salt": 14862926
       },
       "valhelsia_structures:forge": {
-        "spacing": 30,
+        "spacing": 27,
         "separation": 8,
         "salt": 12857691
       },
       "valhelsia_structures:player_house": {
-        "spacing": 30,
+        "spacing": 22,
         "separation": 8,
         "salt": 17357645
       },
@@ -244,7 +244,7 @@
       "bias": 0.028
     },
     "biomeShape": {
-      "biomeSize": 352,
+      "biomeSize": 326,
       "macroNoiseSize": 5,
       "biomeWarpScale": 150,
       "biomeWarpStrength": 80
@@ -323,7 +323,7 @@
   },
   "rivers": {
     "seedOffset": 0,
-    "riverCount": 19,
+    "riverCount": 20,
     "mainRivers": {
       "bedDepth": 8,
       "minBankHeight": 2,
@@ -338,10 +338,10 @@
       "maxBankHeight": 6,
       "bedWidth": 6,
       "bankWidth": 16,
-      "fade": 0.806
+      "fade": 0.703
     },
     "lakes": {
-      "chance": 0.201,
+      "chance": 0.25,
       "minStartDistance": 0.0,
       "maxStartDistance": 0.126,
       "depth": 12,
