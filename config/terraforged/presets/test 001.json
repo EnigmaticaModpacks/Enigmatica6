@@ -12,7 +12,7 @@
     "vanillaSprings": true,
     "vanillaLavaLakes": true,
     "vanillaLavaSprings": true,
-    "mountainBiomeUsage": 0.4,
+    "mountainBiomeUsage": 0.5,
     "volcanoBiomeUsage": 0.4
   },
   "dimensions": {
@@ -216,7 +216,7 @@
     "controlPoints": {
       "deepOcean": 0.068,
       "shallowOcean": 0.229,
-      "beach": 0.293,
+      "beach": 0.317,
       "coast": 0.328,
       "inland": 0.365
     },
@@ -229,7 +229,7 @@
   "climate": {
     "temperature": {
       "seedOffset": 0,
-      "scale": 6,
+      "scale": 5,
       "falloff": 2,
       "min": 0.0,
       "max": 1.0,
@@ -245,7 +245,7 @@
     },
     "biomeShape": {
       "biomeSize": 326,
-      "macroNoiseSize": 5,
+      "macroNoiseSize": 4,
       "biomeWarpScale": 150,
       "biomeWarpStrength": 80
     },
@@ -293,8 +293,8 @@
     "plateau": {
       "weight": 2.085,
       "baseScale": 1.0,
-      "verticalScale": 1.235,
-      "horizontalScale": 1.0
+      "verticalScale": 3.041,
+      "horizontalScale": 5.206
     },
     "badlands": {
       "weight": 2.036,
