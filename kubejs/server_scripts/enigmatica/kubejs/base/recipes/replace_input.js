@@ -23,8 +23,46 @@ events.listen('recipes', function (event) {
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
     event.replaceInput({ id: 'mcwbridges:iron_platform' }, '#forge:ingots/iron', 'additionalbars:horizontal_iron_bars');
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
+
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
+
+    event.replaceInput(
+        { id: 'powah:crafting/energizing_rod_basic' },
+        'powah:energizing_rod_starter',
+        'powah:dielectric_rod'
+    );
+    event.replaceInput({ id: 'powah:crafting/furnator_basic' }, 'powah:furnator_starter', 'minecraft:furnace');
+    event.replaceInput({ id: 'powah:crafting/magmator_basic' }, 'powah:magmator_starter', 'minecraft:bucket');
+    event.replaceInput(
+        { id: 'powah:crafting/thermo_generator_basic' },
+        'powah:thermo_generator_starter',
+        'powah:thermoelectric_plate'
+    );
+    event.replaceInput(
+        { id: 'powah:crafting/solar_panel_basic' },
+        'powah:solar_panel_starter',
+        'powah:photoelectric_pane'
+    );
+    // no, that's not a typo in the ID
+    event.replaceInput(
+        { id: 'powah:crafting/player_tranmitter_basic' },
+        'powah:player_transmitter_starter',
+        'powah:player_aerial_pearl'
+    );
+    event.replaceInput({ id: 'powah:crafting/energy_hopper_basic' }, 'powah:energy_hopper_starter', 'minecraft:hopper');
+    event.replaceInput({ id: 'powah:crafting/battery_basic' }, 'powah:battery_starter', 'powah:capacitor_basic_large');
+    /*
+    event.replaceInput({ mod: 'powah' }, '#powah:energizing_rod', '#powah:energizing_rod');
+    event.replaceInput({ mod: 'powah' }, '#powah:furnator', '#powah:furnator');
+    event.replaceInput({ mod: 'powah' }, '#powah:magmator', '#powah:magmator');
+    event.replaceInput({ mod: 'powah' }, '#powah:thermo_generator', '#powah:thermo_generator');
+    event.replaceInput({ mod: 'powah' }, '#powah:solar_panel', '#powah:solar_panel');
+    event.replaceInput({ mod: 'powah' }, '#powah:player_transmitter', '#powah:player_transmitter');
+    event.replaceInput({ mod: 'powah' }, '#powah:energy_hopper', '#powah:energy_hopper');
+    event.replaceInput({ mod: 'powah' }, '#powah:battery', '#powah:battery');
+    */
+
     event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
 
     event.replaceInput(

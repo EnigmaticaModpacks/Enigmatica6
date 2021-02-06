@@ -84,7 +84,9 @@ events.listen('recipes', function (event) {
         'thermal:machine/centrifuge/centrifuge_oil_red_sand',
         'thermal:machine/centrifuge/centrifuge_oil_sand',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
-        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
+        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore',
+        'powah:crafting/energy_cell_basic_2',
+        'powah:energy_cable_basic'
     ];
 
     outputRemovals.forEach((removal) => {
@@ -147,6 +149,11 @@ events.listen('recipes', function (event) {
     event.remove({
         mod: 'occultism',
         type: 'occultism:miner'
+    });
+
+    event.remove({
+        output: '/powah:\\w+_starter/',
+        mod: 'powah'
     });
 
     event.remove({ type: 'botanypots:crop' });
