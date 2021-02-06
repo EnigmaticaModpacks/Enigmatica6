@@ -154,13 +154,6 @@
 			x: 1.0d,
 			y: -9.0d,
 			subtitle: "Physics Breaking Hoarding",
-			description: [
-				"Too much stone and nowhere to put it? Quantum Storage offers a few blocks to store even the most absurd quantities of whatever you have. ",
-				"",
-				"Use the Quantum Hammer to link multiple Storage Units to a Quantum Controller for centralized access.",
-				"",
-				"Quantum Storage also offers a variety of backpacks and crates capable of holding large quantities of diverse items."
-			],
 			dependencies: [I;1023],
 			id: 1033,
 			tasks: [{
@@ -807,7 +800,20 @@
 			}]
 		},
 		{
-			icon: "sophisticatedbackpacks:backpack",
+			icon: {
+				id: "sophisticatedbackpacks:backpack",
+				Count: true,
+				tag: {
+					inventorySlots: 27,
+					upgradeSlots: 1,
+					contentsUuid: [I;
+						1681669622,
+						-476822315,
+						-1185337849,
+						-508260231
+					]
+				}
+			},
 			x: 1.5d,
 			y: -7.5d,
 			description: [

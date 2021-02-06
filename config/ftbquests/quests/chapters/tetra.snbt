@@ -133,7 +133,11 @@
 			y: -14.5d,
 			shape: "diamond",
 			subtitle: "I don't mean to pry, but...",
-			description: ["Hit the highlighted areas on crates and containers with the correct tools to break them open."],
+			description: [
+				"Crates and Containers can be found in the underground Forges found deep beneath cold biomes.",
+				"",
+				"Hit the highlighted areas on crates and containers with the correct tools to break them open."
+			],
 			dependencies: [I;1923],
 			optional: true,
 			id: 1911,
@@ -291,7 +295,7 @@
 		},
 		{
 			title: "Useful Junk",
-			x: 2.0d,
+			x: 1.5d,
 			y: -14.5d,
 			shape: "diamond",
 			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."],
@@ -389,9 +393,9 @@
 			]
 		},
 		{
-			title: "Stonecutter",
+			title: "Hack N' Slash",
 			icon: "tetra:stonecutter",
-			x: 1.0d,
+			x: 1.5d,
 			y: -15.5d,
 			shape: "diamond",
 			description: [
@@ -418,7 +422,7 @@
 		{
 			title: "Earthpiercer",
 			icon: "tetra:earthpiercer",
-			x: 1.0d,
+			x: 1.5d,
 			y: -13.5d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi-purpose tool that acts both as a Pickaxe and Shovel."],
@@ -1600,6 +1604,30 @@
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				player_command: false
+			}]
+		},
+		{
+			title: "3x3 Mining!",
+			x: 0.0d,
+			y: -16.5d,
+			shape: "pentagon",
+			description: ["When the Chthonic Extractor is applied as the second head to a tool, the tool will be able to mine in a 3 by 3 area!"],
+			dependencies: [I;1911],
+			size: 1.5d,
+			optional: true,
+			id: 4025,
+			tasks: [{
+				id: 4026,
+				type: "item",
+				item: "tetra:chthonic_extractor"
+			}],
+			rewards: [{
+				id: 4027,
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
 				player_command: false
 			}]
 		}
