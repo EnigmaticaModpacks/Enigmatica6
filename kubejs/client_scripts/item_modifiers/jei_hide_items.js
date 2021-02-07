@@ -22,6 +22,28 @@ events.listen('jei.hide.items', (event) => {
         );
     });
 
+    var bopWoods = [
+        'fir',
+        'redwood',
+        'cherry',
+        'mahogany',
+        'jacaranda',
+        'palm',
+        'willow',
+        'dead',
+        'magic',
+        'umbran',
+        'hellbark'
+    ];
+
+    bopWoods.forEach((material) => {
+        itemsToHide.push(
+            'additionalbars:horizontal_' + material + '_bars',
+            'additionalbars:crossed_' + material + '_bars',
+            'additionalbars:' + material + '_bars'
+        );
+    });
+
     itemsToHide.forEach((disabledItem) => {
         if (!item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
