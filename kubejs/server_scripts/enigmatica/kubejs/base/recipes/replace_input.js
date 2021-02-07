@@ -55,6 +55,17 @@ events.listen('recipes', function (event) {
         ingredient.of('#forge:dusts/obsidian')
     );
 
+    event.replaceInput(
+        { id: 'fluxnetworks:fluxconfigurator' },
+        'minecraft:ender_eye',
+        'powah:ender_core'
+    );
+
+    event.replaceInput(
+        { id: 'fluxnetworks:fluxpoint' },
+        'minecraft:redstone_block',
+        'powah:ender_gate_nitro'
+    );
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;
 
