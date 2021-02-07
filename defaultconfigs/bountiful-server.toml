@@ -1,0 +1,63 @@
+
+[bounty_board]
+	#The maximum number of bounties present at a given board before it must delete some bounties to make room for more.
+	#Range: 1 ~ 21
+	maxBountiesPerBoard = 8
+	#How often, in seconds, we should be adding a bounty to the bounty board.
+	#Range: 1 ~ 100000
+	boardCreationFrequency = 90
+	#How long, in seconds, a bounty should be able to stay on a board (if it ISN'T pushed off by another bounty).
+	#Range: 60 ~ 600000
+	boardLifespan = 3600
+	#The minimum amount of time, in seconds, you should get to complete a bounty.
+	#Range: 10 ~ 600000
+	minBountyTime = 300
+	#Whether bounties should start counting down as soon as they are created
+	instantCountdown = false
+	#Whether bounty boards should be able to be broken (currently will lose all decrees/bounties on break)
+	#This feature requires a world restart to take effect.
+	boardBreakable = true
+	#Whether bounty boards should sometimes generate in the world in villages
+	villageGen = true
+	#How often boards should spawn in villages. Higher = more frequent.
+	#Note/Warning: Boards can show up multiple times, so higher numbers increase the
+	#likelihood of multiple boards showing up in a single village. This is due to how
+	#Minecraft generates villages in newer versions of Minecraft.
+	#Range: 1 ~ 16
+	villageGenRate = 2
+
+[bounties]
+	#A global multiplier for the time needed to complete a bounty.
+	#Range: 1.0 ~ 10000.0
+	timeMultiplier = 7.5
+	#If true, you can fulfill bounties by right clicking on a bounty board.
+	#If false, you can right click anywhere with a bounty.
+	cashInAtBoard = true
+	#The ratio of balance between bounty objectives and rewards.
+	#Numbers above 1.0 will give bounties higher requirements to complete,
+	#and numbers below 1.0 will give bounties lower requirements to complete.
+	#As such, changing this too much can have odd results.
+	#Range: 0.0 ~ 4.0
+	worthRatio = 1.0
+	#The odds of any given bounty going from one tier up to the next.
+	#(Higher Rarity = Higher chance of more rare rewards to show up.)
+	#At 0.0, all bounties will be common. At 1.0, all bounties will be epic.
+	#At 0.5, there is a 50% chance of going from any rarity to the next.
+	#(50% chance of at least Uncommon, 25% of at least Rare, 12.5% chance of Epic)
+	#Range: 0.0 ~ 1.0
+	rarityTierUpChance = 0.4
+
+[entity_bounties]
+	#When true, when a mob dies, players near the mob and the mob killer will also
+	#have their bounties counted towards, if applicable.
+	coopKillsCount = true
+	#If coopKillsCount is true, this determines how far a player can be from the mob
+	#or other player for their bounties to also get updated.
+	coopKillDistance = 6.0
+
+[experience_bounties]
+	#If true, XP point bounty rewards will drop where the player is standing.
+	#If false, rewards will instantly be added to their XP bar.
+	#(NOTE: Experience bounties are currently disabled)
+	doExperienceDrop = true
+
