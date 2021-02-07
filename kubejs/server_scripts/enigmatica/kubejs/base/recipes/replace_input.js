@@ -21,7 +21,6 @@ events.listen('recipes', function (event) {
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
-    event.replaceInput({ id: 'mcwbridges:iron_platform' }, '#forge:ingots/iron', 'additionalbars:horizontal_iron_bars');
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
@@ -55,17 +54,9 @@ events.listen('recipes', function (event) {
         ingredient.of('#forge:dusts/obsidian')
     );
 
-    event.replaceInput(
-        { id: 'fluxnetworks:fluxconfigurator' },
-        'minecraft:ender_eye',
-        'powah:ender_core'
-    );
+    event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
 
-    event.replaceInput(
-        { id: 'fluxnetworks:fluxpoint' },
-        'minecraft:redstone_block',
-        'powah:ender_gate_nitro'
-    );
+    event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;
 

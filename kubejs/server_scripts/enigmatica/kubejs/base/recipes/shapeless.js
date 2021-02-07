@@ -28,17 +28,6 @@ events.listen('recipes', (event) => {
             'aquaculture:fish_fillet_cooked',
             'aquaculture:fish_fillet_cooked'
         ]),
-        shapelessRecipe(item.of('additionalbars:crossed_iron_bars', 9), [
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars'
-        ]),
         shapelessRecipe('minecraft:wheat_seeds', ['minecraft:wheat']),
         shapelessRecipe('quark:root', ['minecraft:vine', '#forge:dyes/brown']),
         shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }), [

@@ -5,8 +5,6 @@ events.listen('recipes', function (event) {
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
-        'additionalbars:crossed_iron_bars',
-
         'bambooeverything:bamboo_bundle',
 
         'byg:blue_enchanted_crafting_table',
