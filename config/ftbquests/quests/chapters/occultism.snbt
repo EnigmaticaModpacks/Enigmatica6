@@ -1,11 +1,12 @@
 {
-	id: 3248,
+	id: "0000000000000CB0",
+	group: "",
+	order_index: 27,
 	filename: "occultism",
-	order_index: 25,
 	title: "Occultism",
 	icon: {
 		id: "occultism:miner_djinni_ores",
-		Count: true,
+		Count: 1b,
 		tag: {
 			spiritName: "Drakarcark",
 			Damage: 0
@@ -28,19 +29,19 @@
 				"",
 				"~The_Boo"
 			],
-			id: 3249,
+			id: "0000000000000CB1",
 			tasks: [{
-				id: 3250,
+				id: "0000000000000CB2",
 				type: "checkmark"
 			}],
 			rewards: [
 				{
-					id: 3251,
+					id: "0000000000000CB3",
 					type: "item",
 					item: "occultism:dictionary_of_spirits"
 				},
 				{
-					id: 3252,
+					id: "0000000000000CB4",
 					type: "item",
 					item: "occultism:datura_seeds"
 				}
@@ -59,21 +60,21 @@
 				"Please eat responsibly."
 			],
 			hide_dependency_lines: false,
-			dependencies: [I;3249],
-			id: 3253,
+			dependencies: ["0000000000000CB1"],
+			id: "0000000000000CB5",
 			tasks: [{
-				id: 3254,
+				id: "0000000000000CB6",
 				type: "item",
 				item: "occultism:datura"
 			}],
 			rewards: [
 				{
-					id: 3610,
+					id: "0000000000000E1A",
 					type: "xp",
 					xp: 400
 				},
 				{
-					id: 3611,
+					id: "0000000000000E1B",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -85,7 +86,7 @@
 		{
 			icon: {
 				id: "occultism:divination_rod",
-				Count: true,
+				Count: 1b,
 				tag: {}
 			},
 			x: 13.5d,
@@ -106,49 +107,49 @@
 				"",
 				"P.S. Sorry for the novel... -The_Boo"
 			],
-			dependencies: [I;3290],
+			dependencies: ["0000000000000CDA"],
 			min_width: 300,
-			id: 3255,
+			id: "0000000000000CB7",
 			tasks: [
 				{
-					id: 3256,
+					id: "0000000000000CB8",
 					type: "item",
 					item: {
 						id: "occultism:divination_rod",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				},
 				{
-					id: 3612,
+					id: "0000000000000E1C",
 					type: "item",
 					item: "occultism:otherworld_log"
 				}
 			],
 			rewards: [
 				{
-					id: 3575,
+					id: "0000000000000DF7",
 					type: "xp",
 					xp: 500
 				},
 				{
-					id: 3576,
+					id: "0000000000000DF8",
 					type: "item",
 					item: "occultism:otherworld_log",
 					count: 4
 				},
 				{
-					id: 3577,
+					id: "0000000000000DF9",
 					type: "item",
 					item: {
 						id: "occultism:otherworld_sapling_natural",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					},
 					count: 3
 				},
 				{
-					id: 3613,
+					id: "0000000000000E1D",
 					type: "item",
 					item: "occultism:otherstone",
 					count: 4
@@ -170,37 +171,37 @@
 				"",
 				"Burn mother trucker... burn..."
 			],
-			dependencies: [I;3253],
-			id: 3290,
+			dependencies: ["0000000000000CB5"],
+			id: "0000000000000CDA",
 			tasks: [
 				{
-					id: 3292,
+					id: "0000000000000CDC",
 					type: "item",
 					item: "occultism:spirit_attuned_gem"
 				},
 				{
-					id: 3293,
+					id: "0000000000000CDD",
 					type: "item",
 					item: "occultism:otherstone"
 				}
 			],
 			rewards: [
 				{
-					id: 3294,
+					id: "0000000000000CDE",
 					type: "item",
 					auto: "disabled",
 					item: "occultism:otherstone",
 					count: 8
 				},
 				{
-					id: 3295,
+					id: "0000000000000CDF",
 					type: "item",
 					auto: "disabled",
 					item: "occultism:spirit_attuned_gem",
 					count: 4
 				},
 				{
-					id: 3618,
+					id: "0000000000000E22",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -227,19 +228,19 @@
 				"",
 				"Note: You must have a golden sacrificial bowl to continue."
 			],
-			dependencies: [I;
-				3482,
-				3545
+			dependencies: [
+				"0000000000000D9A",
+				"0000000000000DD9"
 			],
-			id: 3319,
+			id: "0000000000000CF7",
 			tasks: [
 				{
-					id: 3320,
+					id: "0000000000000CF8",
 					type: "advancement",
 					title: "Summon Foliot Crusher",
 					icon: {
 						id: "occultism:book_of_binding_bound_foliot",
-						Count: true,
+						Count: 1b,
 						tag: {
 							spiritName: "Reiirtron"
 						}
@@ -248,14 +249,14 @@
 					criterion: ""
 				},
 				{
-					id: 3469,
+					id: "0000000000000D8D",
 					type: "item",
 					item: "occultism:book_of_binding_foliot"
 				}
 			],
 			rewards: [
 				{
-					id: 3323,
+					id: "0000000000000CFB",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -263,7 +264,7 @@
 					player_command: false
 				},
 				{
-					id: 3684,
+					id: "0000000000000E64",
 					type: "item",
 					item: "occultism:crushed_end_stone",
 					count: 2
@@ -282,34 +283,34 @@
 				"",
 				"Note: You are now able to use candles from other mods in your rituals!"
 			],
-			dependencies: [I;3482],
-			id: 3474,
+			dependencies: ["0000000000000D9A"],
+			id: "0000000000000D92",
 			tasks: [
 				{
-					id: 3571,
+					id: "0000000000000DF3",
 					type: "item",
 					item: "occultism:candle_white"
 				},
 				{
-					id: 3572,
+					id: "0000000000000DF4",
 					type: "item",
 					item: {
 						id: "occultism:butcher_knife",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 3573,
+					id: "0000000000000DF5",
 					type: "item",
 					item: "occultism:tallow"
 				}
 			],
 			rewards: [
 				{
-					id: 3581,
+					id: "0000000000000DFD",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -317,7 +318,7 @@
 					player_command: false
 				},
 				{
-					id: 3622,
+					id: "0000000000000E26",
 					type: "xp",
 					xp: 400
 				}
@@ -331,27 +332,27 @@
 				"",
 				"This special ink is required for crafting the Books of Binding used for rituals."
 			],
-			dependencies: [I;3290],
-			id: 3478,
+			dependencies: ["0000000000000CDA"],
+			id: "0000000000000D96",
 			tasks: [{
-				id: 3479,
+				id: "0000000000000D97",
 				type: "item",
 				item: "occultism:purified_ink"
 			}],
 			rewards: [
 				{
-					id: 3563,
+					id: "0000000000000DEB",
 					type: "item",
 					item: "occultism:purified_ink",
 					count: 4
 				},
 				{
-					id: 3564,
+					id: "0000000000000DEC",
 					type: "xp",
 					xp: 300
 				},
 				{
-					id: 3617,
+					id: "0000000000000E21",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -369,21 +370,21 @@
 				"",
 				"The chalk you first craft will be full of impurities. Before it can be used in a pentacle, you must clense it with spirit fire."
 			],
-			dependencies: [I;3290],
-			id: 3480,
+			dependencies: ["0000000000000CDA"],
+			id: "0000000000000D98",
 			tasks: [{
-				id: 3481,
+				id: "0000000000000D99",
 				type: "item",
 				item: "occultism:chalk_white_impure"
 			}],
 			rewards: [
 				{
-					id: 3562,
+					id: "0000000000000DEA",
 					type: "xp",
 					xp: 300
 				},
 				{
-					id: 3614,
+					id: "0000000000000E1E",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -398,14 +399,14 @@
 			y: 1.5d,
 			subtitle: "Feels So Clean!!",
 			description: ["Now that you have cleaned your chalk of impurities, all you need are some candles and some sacrifical bowls and you are ready to perform your first rituals!"],
-			dependencies: [I;3480],
-			id: 3482,
+			dependencies: ["0000000000000D98"],
+			id: "0000000000000D9A",
 			tasks: [{
-				id: 3483,
+				id: "0000000000000D9B",
 				type: "item",
 				item: {
 					id: "occultism:chalk_white",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -413,12 +414,12 @@
 			}],
 			rewards: [
 				{
-					id: 3620,
+					id: "0000000000000E24",
 					type: "xp",
 					xp: 400
 				},
 				{
-					id: 3621,
+					id: "0000000000000E25",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -437,14 +438,14 @@
 				"",
 				"When used in a ritual, it has the effect of binding a spirit to an item. In this way you will be able to make all sorts of useful items to help you on your journey!"
 			],
-			dependencies: [I;3482],
-			id: 3484,
+			dependencies: ["0000000000000D9A"],
+			id: "0000000000000D9C",
 			tasks: [{
-				id: 3485,
+				id: "0000000000000D9D",
 				type: "item",
 				item: {
 					id: "occultism:chalk_gold",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -452,18 +453,18 @@
 			}],
 			rewards: [
 				{
-					id: 3623,
+					id: "0000000000000E27",
 					type: "item",
 					item: {
 						id: "occultism:chalk_gold",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 3624,
+					id: "0000000000000E28",
 					type: "xp",
 					xp: 400
 				}
@@ -474,14 +475,14 @@
 			y: 3.5d,
 			subtitle: "Start Drawing Purple For Me Now!!!",
 			description: ["Purple Chalk is another chalk color in the occultist's arsenal. It allows you to bind more powerful spirits such as the Djinni."],
-			dependencies: [I;3484],
-			id: 3486,
+			dependencies: ["0000000000000D9C"],
+			id: "0000000000000D9E",
 			tasks: [{
-				id: 3487,
+				id: "0000000000000D9F",
 				type: "item",
 				item: {
 					id: "occultism:chalk_purple",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -489,16 +490,16 @@
 			}],
 			rewards: [
 				{
-					id: 3648,
+					id: "0000000000000E40",
 					type: "xp",
 					xp: 500
 				},
 				{
-					id: 3649,
+					id: "0000000000000E41",
 					type: "item",
 					item: {
 						id: "occultism:chalk_purple",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -515,14 +516,14 @@
 				"",
 				"Using this chalk in your pentacles will allow you to call on more powerful spirits such as the Marid."
 			],
-			dependencies: [I;3552],
-			id: 3488,
+			dependencies: ["0000000000000DE0"],
+			id: "0000000000000DA0",
 			tasks: [{
-				id: 3489,
+				id: "0000000000000DA1",
 				type: "item",
 				item: {
 					id: "occultism:chalk_red",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -530,7 +531,7 @@
 			}],
 			rewards: [
 				{
-					id: 3666,
+					id: "0000000000000E52",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -538,7 +539,7 @@
 					player_command: false
 				},
 				{
-					id: 3667,
+					id: "0000000000000E53",
 					type: "command",
 					title: "Occultism Legendary Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -556,24 +557,24 @@
 				"",
 				"It starts off rather small, but your storage can be expanded by adding up to 6 Stabilizers(one on each side) pointing at the actuator."
 			],
-			dependencies: [I;
-				3484,
-				3486
+			dependencies: [
+				"0000000000000D9C",
+				"0000000000000D9E"
 			],
-			id: 3492,
+			id: "0000000000000DA4",
 			tasks: [{
-				id: 3493,
+				id: "0000000000000DA5",
 				type: "item",
 				item: "occultism:storage_controller"
 			}],
 			rewards: [
 				{
-					id: 3691,
+					id: "0000000000000E6B",
 					type: "item",
 					item: "occultism:storage_stabilizer_tier1"
 				},
 				{
-					id: 3692,
+					id: "0000000000000E6C",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -595,22 +596,22 @@
 				"",
 				"They need to be placed facing the Matrix portion of your actuator and can be up to 5 blocks away. One stabilizer can be placed in each direction, the cardinal directions as well as above and below the actuator."
 			],
-			dependencies: [I;3492],
-			id: 3496,
+			dependencies: ["0000000000000DA4"],
+			id: "0000000000000DA8",
 			tasks: [{
-				id: 3497,
+				id: "0000000000000DA9",
 				type: "item",
 				item: "occultism:storage_stabilizer_tier1"
 			}],
 			rewards: [
 				{
-					id: 3673,
+					id: "0000000000000E59",
 					type: "item",
 					item: "occultism:storage_stabilizer_tier1",
 					count: 2
 				},
 				{
-					id: 3674,
+					id: "0000000000000E5A",
 					type: "xp",
 					xp: 400
 				}
@@ -620,21 +621,21 @@
 			x: 5.0d,
 			y: 7.0d,
 			shape: "hexagon",
-			dependencies: [I;3496],
-			id: 3498,
+			dependencies: ["0000000000000DA8"],
+			id: "0000000000000DAA",
 			tasks: [{
-				id: 3499,
+				id: "0000000000000DAB",
 				type: "item",
 				item: "occultism:storage_stabilizer_tier2"
 			}],
 			rewards: [
 				{
-					id: 3681,
+					id: "0000000000000E61",
 					type: "item",
 					item: "occultism:storage_stabilizer_tier2"
 				},
 				{
-					id: 3682,
+					id: "0000000000000E62",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -647,26 +648,26 @@
 			x: 5.0d,
 			y: 8.0d,
 			shape: "hexagon",
-			dependencies: [I;3498],
-			id: 3500,
+			dependencies: ["0000000000000DAA"],
+			id: "0000000000000DAC",
 			tasks: [{
-				id: 3501,
+				id: "0000000000000DAD",
 				type: "item",
 				item: "occultism:storage_stabilizer_tier3"
 			}],
 			rewards: [
 				{
-					id: 3670,
+					id: "0000000000000E56",
 					type: "xp",
 					xp: 800
 				},
 				{
-					id: 3671,
+					id: "0000000000000E57",
 					type: "item",
 					item: "occultism:storage_stabilizer_tier3"
 				},
 				{
-					id: 3672,
+					id: "0000000000000E58",
 					type: "item",
 					item: "occultism:iesnium_block"
 				}
@@ -678,24 +679,24 @@
 			shape: "hexagon",
 			subtitle: "*Slaps Roof of Stabilizer* This bad boy can fit so many things inside.",
 			description: ["The final tier of stabilizer."],
-			dependencies: [I;
-				3500,
-				3488
+			dependencies: [
+				"0000000000000DAC",
+				"0000000000000DA0"
 			],
-			id: 3502,
+			id: "0000000000000DAE",
 			tasks: [{
-				id: 3503,
+				id: "0000000000000DAF",
 				type: "item",
 				item: "occultism:storage_stabilizer_tier4"
 			}],
 			rewards: [
 				{
-					id: 3668,
+					id: "0000000000000E54",
 					type: "item",
 					item: "occultism:storage_stabilizer_tier4"
 				},
 				{
-					id: 3669,
+					id: "0000000000000E55",
 					type: "command",
 					title: "Occultism Legendary Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -709,20 +710,20 @@
 			y: 5.5d,
 			shape: "hexagon",
 			description: ["The Storage Accessor is a tablet used to access your storage remotely from any distance and dimension."],
-			dependencies: [I;3492],
-			id: 3506,
+			dependencies: ["0000000000000DA4"],
+			id: "0000000000000DB2",
 			tasks: [{
-				id: 3507,
+				id: "0000000000000DB3",
 				type: "item",
 				item: {
 					id: "occultism:storage_remote",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [
 				{
-					id: 3677,
+					id: "0000000000000E5D",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -730,7 +731,7 @@
 					player_command: false
 				},
 				{
-					id: 3678,
+					id: "0000000000000E5E",
 					type: "xp",
 					xp: 400
 				}
@@ -745,20 +746,20 @@
 				"",
 				"The wormhole has pretty powerful implications when used with other storage mods."
 			],
-			dependencies: [I;3492],
-			id: 3514,
+			dependencies: ["0000000000000DA4"],
+			id: "0000000000000DBA",
 			tasks: [{
-				id: 3515,
+				id: "0000000000000DBB",
 				type: "item",
 				item: {
 					id: "occultism:stable_wormhole",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [
 				{
-					id: 3675,
+					id: "0000000000000E5B",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -766,11 +767,11 @@
 					player_command: false
 				},
 				{
-					id: 3676,
+					id: "0000000000000E5C",
 					type: "item",
 					item: {
 						id: "occultism:stable_wormhole",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				}
@@ -789,19 +790,19 @@
 				"",
 				"Put the Soul Gem in your hand and right click any mob with it, the mob will be stored in the soul gem to be placed back in the world at any time with another right click!"
 			],
-			dependencies: [I;3484],
-			id: 3516,
+			dependencies: ["0000000000000D9C"],
+			id: "0000000000000DBC",
 			tasks: [{
-				id: 3517,
+				id: "0000000000000DBD",
 				type: "item",
 				item: {
 					id: "occultism:soul_gem",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 3638,
+				id: "0000000000000E36",
 				type: "command",
 				title: "Occultism Epic Loot Chest",
 				icon: "kubejs:epic_lootbox",
@@ -820,14 +821,14 @@
 				"",
 				"Very useful for mining iesnium as it does not require the third eye effect to interract."
 			],
-			dependencies: [I;3484],
-			id: 3518,
+			dependencies: ["0000000000000D9C"],
+			id: "0000000000000DBE",
 			tasks: [{
-				id: 3519,
+				id: "0000000000000DBF",
 				type: "item",
 				item: {
 					id: "occultism:otherworld_goggles",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -835,13 +836,13 @@
 			}],
 			rewards: [
 				{
-					id: 3679,
+					id: "0000000000000E5F",
 					type: "item",
 					item: "occultism:iesnium_ingot",
 					count: 4
 				},
 				{
-					id: 3680,
+					id: "0000000000000E60",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -862,14 +863,14 @@
 				"",
 				"Surprisingly Substantial!!"
 			],
-			dependencies: [I;3484],
-			id: 3520,
+			dependencies: ["0000000000000D9C"],
+			id: "0000000000000DC0",
 			tasks: [{
-				id: 3521,
+				id: "0000000000000DC1",
 				type: "item",
 				item: {
 					id: "occultism:satchel",
-					Count: true,
+					Count: 1b,
 					tag: {
 						spiritName: "Morredes"
 					}
@@ -877,7 +878,7 @@
 			}],
 			rewards: [
 				{
-					id: 3625,
+					id: "0000000000000E29",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -885,12 +886,12 @@
 					player_command: false
 				},
 				{
-					id: 3628,
+					id: "0000000000000E2C",
 					type: "xp",
 					xp: 400
 				},
 				{
-					id: 3629,
+					id: "0000000000000E2D",
 					type: "item",
 					item: "resourcefulbees:oreo_cookie",
 					count: 8
@@ -901,14 +902,14 @@
 			x: 1.0d,
 			y: 2.5d,
 			description: ["The Iesnium Pickaxe has the same stats as a normal diamond pickaxe with the added bonus that it is able to mine Iesnium Ore."],
-			dependencies: [I;3558],
-			id: 3522,
+			dependencies: ["0000000000000DE6"],
+			id: "0000000000000DC2",
 			tasks: [{
-				id: 3523,
+				id: "0000000000000DC3",
 				type: "item",
 				item: {
 					id: "occultism:iesnium_pickaxe",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -916,12 +917,12 @@
 			}],
 			rewards: [
 				{
-					id: 3655,
+					id: "0000000000000E47",
 					type: "xp",
 					xp: 500
 				},
 				{
-					id: 3656,
+					id: "0000000000000E48",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -929,7 +930,7 @@
 					player_command: false
 				},
 				{
-					id: 3657,
+					id: "0000000000000E49",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -943,11 +944,11 @@
 			x: 4.0d,
 			y: 1.5d,
 			shape: "hexagon",
-			dependencies: [I;3526],
-			id: 3524,
+			dependencies: ["0000000000000DC6"],
+			id: "0000000000000DC4",
 			tasks: [
 				{
-					id: 3600,
+					id: "0000000000000E10",
 					type: "advancement",
 					title: "Summon Possessed Endermite",
 					icon: "occultism:book_of_binding_foliot",
@@ -955,7 +956,7 @@
 					criterion: ""
 				},
 				{
-					id: 3601,
+					id: "0000000000000E11",
 					type: "kill",
 					icon: "minecraft:end_stone",
 					entity: "occultism:possessed_endermite",
@@ -964,13 +965,13 @@
 			],
 			rewards: [
 				{
-					id: 3686,
+					id: "0000000000000E66",
 					type: "item",
 					item: "minecraft:end_stone",
 					count: 16
 				},
 				{
-					id: 3687,
+					id: "0000000000000E67",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -989,14 +990,14 @@
 				"",
 				"These possessed mobs are a bit stronger, but they also have a chance at dropping a bit more items when killed."
 			],
-			dependencies: [I;
-				3484,
-				3486
+			dependencies: [
+				"0000000000000D9C",
+				"0000000000000D9E"
 			],
-			id: 3526,
+			id: "0000000000000DC6",
 			tasks: [
 				{
-					id: 3598,
+					id: "0000000000000E0E",
 					type: "advancement",
 					title: "Summon Possessed Skeleton",
 					icon: "occultism:book_of_binding_foliot",
@@ -1004,7 +1005,7 @@
 					criterion: ""
 				},
 				{
-					id: 3599,
+					id: "0000000000000E0F",
 					type: "kill",
 					entity: "occultism:possessed_skeleton",
 					value: 1L
@@ -1012,13 +1013,13 @@
 			],
 			rewards: [
 				{
-					id: 3685,
+					id: "0000000000000E65",
 					type: "item",
 					item: "minecraft:skeleton_skull",
 					count: 2
 				},
 				{
-					id: 3688,
+					id: "0000000000000E68",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1032,11 +1033,11 @@
 			x: 3.5d,
 			y: 0.5d,
 			shape: "hexagon",
-			dependencies: [I;3524],
-			id: 3528,
+			dependencies: ["0000000000000DC4"],
+			id: "0000000000000DC8",
 			tasks: [
 				{
-					id: 3602,
+					id: "0000000000000E12",
 					type: "advancement",
 					title: "Summon Possessed Enderman",
 					icon: "occultism:book_of_binding_foliot",
@@ -1044,7 +1045,7 @@
 					criterion: ""
 				},
 				{
-					id: 3603,
+					id: "0000000000000E13",
 					type: "kill",
 					icon: "minecraft:ender_pearl",
 					entity: "occultism:possessed_enderman",
@@ -1053,7 +1054,7 @@
 			],
 			rewards: [
 				{
-					id: 3639,
+					id: "0000000000000E37",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -1061,7 +1062,7 @@
 					player_command: false
 				},
 				{
-					id: 3642,
+					id: "0000000000000E3A",
 					type: "item",
 					item: "minecraft:ender_pearl",
 					count: 8
@@ -1079,16 +1080,16 @@
 				"",
 				"This is not a problem for spirits however, you will need to summon one of the mining spirits to acquire the ores for you."
 			],
-			dependencies: [I;3558],
-			id: 3530,
+			dependencies: ["0000000000000DE6"],
+			id: "0000000000000DCA",
 			tasks: [{
-				id: 3531,
+				id: "0000000000000DCB",
 				type: "item",
 				item: "occultism:dimensional_mineshaft"
 			}],
 			rewards: [
 				{
-					id: 3658,
+					id: "0000000000000E4A",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -1096,7 +1097,7 @@
 					player_command: false
 				},
 				{
-					id: 3689,
+					id: "0000000000000E69",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -1114,14 +1115,14 @@
 				"",
 				"However, being a weaker spirit, it is slow and runs out of energy fairly quickly."
 			],
-			dependencies: [I;3530],
-			id: 3532,
+			dependencies: ["0000000000000DCA"],
+			id: "0000000000000DCC",
 			tasks: [{
-				id: 3533,
+				id: "0000000000000DCD",
 				type: "item",
 				item: {
 					id: "occultism:miner_foliot_unspecialized",
-					Count: true,
+					Count: 1b,
 					tag: {
 						spiritName: "Raarcarc",
 						Damage: 0
@@ -1130,17 +1131,17 @@
 			}],
 			rewards: [
 				{
-					id: 3659,
+					id: "0000000000000E4B",
 					type: "xp",
 					xp: 400
 				},
 				{
-					id: 3660,
+					id: "0000000000000E4C",
 					type: "item",
 					item: "occultism:iesnium_block"
 				},
 				{
-					id: 3661,
+					id: "0000000000000E4D",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -1154,14 +1155,14 @@
 			y: 5.5d,
 			shape: "hexagon",
 			description: ["The Djinni Mining Spirit is much stronger than its Foliot counterpart. It takes much less time for this stonger spirit to travel to and from the mining dimension, and it can bring back more ores each trip!"],
-			dependencies: [I;3532],
-			id: 3534,
+			dependencies: ["0000000000000DCC"],
+			id: "0000000000000DCE",
 			tasks: [{
-				id: 3535,
+				id: "0000000000000DCF",
 				type: "item",
 				item: {
 					id: "occultism:miner_djinni_ores",
-					Count: true,
+					Count: 1b,
 					tag: {
 						spiritName: "Crozerer",
 						Damage: 0
@@ -1170,7 +1171,7 @@
 			}],
 			rewards: [
 				{
-					id: 3662,
+					id: "0000000000000E4E",
 					type: "command",
 					title: "Occultism Legendary Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -1178,7 +1179,7 @@
 					player_command: false
 				},
 				{
-					id: 3690,
+					id: "0000000000000E6A",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -1196,14 +1197,14 @@
 				"",
 				"The occultist, however, has the ability to infuse a pickaxe with a spirit to allow them to mine these ores. The infusion process severely weakens the tool, reducing its durability greatly."
 			],
-			dependencies: [I;3486],
-			id: 3536,
+			dependencies: ["0000000000000D9E"],
+			id: "0000000000000DD0",
 			tasks: [{
-				id: 3537,
+				id: "0000000000000DD1",
 				type: "item",
 				item: {
 					id: "occultism:infused_pickaxe",
-					Count: true,
+					Count: 1b,
 					tag: {
 						spiritName: "Raslamarmed",
 						Damage: 0
@@ -1211,7 +1212,7 @@
 				}
 			}],
 			rewards: [{
-				id: 3653,
+				id: "0000000000000E45",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -1223,15 +1224,15 @@
 			x: 13.5d,
 			y: 0.0d,
 			description: ["Spirit Attuned Crystals are an item used in certain ritual pentacles. They also make great decoration!"],
-			dependencies: [I;3290],
-			id: 3538,
+			dependencies: ["0000000000000CDA"],
+			id: "0000000000000DD2",
 			tasks: [{
-				id: 3539,
+				id: "0000000000000DD3",
 				type: "item",
 				item: "occultism:spirit_attuned_crystal"
 			}],
 			rewards: [{
-				id: 3565,
+				id: "0000000000000DED",
 				type: "xp",
 				xp: 300
 			}]
@@ -1240,15 +1241,15 @@
 			x: 8.0d,
 			y: 1.0d,
 			description: ["Sacrificial Bowls are used to place sacrificial items on to preform your rituals. They can be placed anywhere touching the pentacle in whatever quantity you need."],
-			dependencies: [I;3482],
-			id: 3542,
+			dependencies: ["0000000000000D9A"],
+			id: "0000000000000DD6",
 			tasks: [{
-				id: 3543,
+				id: "0000000000000DD7",
 				type: "item",
 				item: "occultism:sacrificial_bowl"
 			}],
 			rewards: [{
-				id: 3578,
+				id: "0000000000000DFA",
 				type: "xp",
 				xp: 300
 			}]
@@ -1257,16 +1258,16 @@
 			x: 7.5d,
 			y: 0.0d,
 			description: ["This is a special Sacrificial Bowl that normally lies in the middle of your pentacle. It is used to activate the ritual."],
-			dependencies: [I;3542],
-			id: 3544,
+			dependencies: ["0000000000000DD6"],
+			id: "0000000000000DD8",
 			tasks: [{
-				id: 3545,
+				id: "0000000000000DD9",
 				type: "item",
 				item: "occultism:golden_sacrificial_bowl"
 			}],
 			rewards: [
 				{
-					id: 3580,
+					id: "0000000000000DFC",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -1274,7 +1275,7 @@
 					player_command: false
 				},
 				{
-					id: 3683,
+					id: "0000000000000E63",
 					type: "xp",
 					xp: 500
 				}
@@ -1284,15 +1285,15 @@
 			x: 10.0d,
 			y: 1.0d,
 			description: ["The chalk used for making runes can be tough to get rid of using normal tools. That's where the chalk brush comes in. Right click any chalk rune with the brush to remove."],
-			dependencies: [I;3482],
-			id: 3546,
+			dependencies: ["0000000000000D9A"],
+			id: "0000000000000DDA",
 			tasks: [{
-				id: 3547,
+				id: "0000000000000DDB",
 				type: "item",
 				item: "occultism:brush"
 			}],
 			rewards: [{
-				id: 3569,
+				id: "0000000000000DF1",
 				type: "xp",
 				xp: 100
 			}]
@@ -1308,11 +1309,11 @@
 				"",
 				"Summoning the right spirit can bring clear skies, make it rain, or even bring on a thunderstorm!"
 			],
-			dependencies: [I;3486],
-			id: 3548,
+			dependencies: ["0000000000000D9E"],
+			id: "0000000000000DDC",
 			tasks: [
 				{
-					id: 3604,
+					id: "0000000000000E14",
 					type: "advancement",
 					title: "Summon a Djinni to Clear the Skies!",
 					icon: "minecraft:sunflower",
@@ -1320,14 +1321,14 @@
 					criterion: ""
 				},
 				{
-					id: 3605,
+					id: "0000000000000E15",
 					type: "item",
 					item: "occultism:book_of_binding_djinni"
 				}
 			],
 			rewards: [
 				{
-					id: 3645,
+					id: "0000000000000E3D",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1335,7 +1336,7 @@
 					player_command: false
 				},
 				{
-					id: 3646,
+					id: "0000000000000E3E",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -1343,12 +1344,12 @@
 					player_command: false
 				},
 				{
-					id: 3647,
+					id: "0000000000000E3F",
 					type: "xp",
 					xp: 500
 				},
 				{
-					id: 3650,
+					id: "0000000000000E42",
 					type: "item",
 					item: "artifacts:umbrella"
 				}
@@ -1365,11 +1366,11 @@
 				"",
 				"Very useful for tasks that require the night to complete."
 			],
-			dependencies: [I;3486],
-			id: 3550,
+			dependencies: ["0000000000000D9E"],
+			id: "0000000000000DDE",
 			tasks: [
 				{
-					id: 3606,
+					id: "0000000000000E16",
 					type: "advancement",
 					title: "Summon Djinni to Make it Nighttime",
 					icon: "minecraft:clock",
@@ -1377,19 +1378,19 @@
 					criterion: ""
 				},
 				{
-					id: 3607,
+					id: "0000000000000E17",
 					type: "item",
 					item: "occultism:book_of_binding_djinni"
 				}
 			],
 			rewards: [
 				{
-					id: 3651,
+					id: "0000000000000E43",
 					type: "xp",
 					xp: 500
 				},
 				{
-					id: 3652,
+					id: "0000000000000E44",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1412,23 +1413,23 @@
 				"",
 				"Defeate the Afrit to claim its essence."
 			],
-			dependencies: [I;3486],
-			id: 3552,
+			dependencies: ["0000000000000D9E"],
+			id: "0000000000000DE0",
 			tasks: [
 				{
-					id: 3553,
+					id: "0000000000000DE1",
 					type: "item",
 					item: "occultism:book_of_binding_afrit"
 				},
 				{
-					id: 3663,
+					id: "0000000000000E4F",
 					type: "item",
 					item: "occultism:afrit_essence"
 				}
 			],
 			rewards: [
 				{
-					id: 3664,
+					id: "0000000000000E50",
 					type: "command",
 					title: "Occultism Legendary Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -1436,7 +1437,7 @@
 					player_command: false
 				},
 				{
-					id: 3665,
+					id: "0000000000000E51",
 					type: "command",
 					title: "Occultism Legendary Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -1458,11 +1459,11 @@
 				"",
 				"The Wild Hunt Ritual will summon multiple possessed Wither Skeletons as well as their Possessed Skeleton minions. Each Possessed Wither Skeleton is guaranteed to drop at least one Wither Skeleton Skull."
 			],
-			dependencies: [I;3486],
-			id: 3556,
+			dependencies: ["0000000000000D9E"],
+			id: "0000000000000DE4",
 			tasks: [
 				{
-					id: 3693,
+					id: "0000000000000E6D",
 					type: "advancement",
 					title: "Summon The Wild Hunt",
 					icon: "minecraft:wither_skeleton_skull",
@@ -1470,7 +1471,7 @@
 					criterion: ""
 				},
 				{
-					id: 3694,
+					id: "0000000000000E6E",
 					type: "kill",
 					entity: "occultism:wild_hunt_wither_skeleton",
 					value: 2L
@@ -1478,7 +1479,7 @@
 			],
 			rewards: [
 				{
-					id: 3695,
+					id: "0000000000000E6F",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -1486,7 +1487,7 @@
 					player_command: false
 				},
 				{
-					id: 3696,
+					id: "0000000000000E70",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -1498,7 +1499,7 @@
 		{
 			icon: {
 				id: "occultism:divination_rod",
-				Count: true,
+				Count: 1b,
 				tag: {}
 			},
 			x: 1.0d,
@@ -1509,15 +1510,15 @@
 				"",
 				"Otherworld Goggles or Demon's Dream Fruit might help you see the material, but you do not need the Third Eye effect to mine it. Though you will need either an Infused Pickaxe or an Iesnium Pickaxe."
 			],
-			dependencies: [I;3536],
-			id: 3558,
+			dependencies: ["0000000000000DD0"],
+			id: "0000000000000DE6",
 			tasks: [{
-				id: 3608,
+				id: "0000000000000E18",
 				type: "item",
 				item: "occultism:iesnium_ore"
 			}],
 			rewards: [{
-				id: 3654,
+				id: "0000000000000E46",
 				type: "item",
 				item: "occultism:iesnium_ore",
 				count: 8
@@ -1533,11 +1534,11 @@
 				"",
 				"These Stable Otherworld Saplings can be seen and mined without the effects of Third Eye."
 			],
-			dependencies: [I;3319],
-			id: 3584,
+			dependencies: ["0000000000000CF7"],
+			id: "0000000000000E00",
 			tasks: [
 				{
-					id: 3585,
+					id: "0000000000000E01",
 					type: "advancement",
 					title: "Summon Otherworld Sapling Trader",
 					icon: "occultism:otherworld_sapling",
@@ -1545,13 +1546,13 @@
 					criterion: ""
 				},
 				{
-					id: 3586,
+					id: "0000000000000E02",
 					type: "item",
 					item: "occultism:book_of_binding_foliot"
 				}
 			],
 			rewards: [{
-				id: 3587,
+				id: "0000000000000E03",
 				type: "item",
 				item: "occultism:otherworld_sapling",
 				count: 16
@@ -1561,7 +1562,7 @@
 			title: "Chop Chop Chop!",
 			icon: {
 				id: "minecraft:iron_axe",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1575,16 +1576,16 @@
 				"",
 				"The area he will look for trees in can be set to 16x16, 32x32 and all the way up to 64x64 blocks!"
 			],
-			dependencies: [I;3319],
-			id: 3588,
+			dependencies: ["0000000000000CF7"],
+			id: "0000000000000E04",
 			tasks: [
 				{
-					id: 3589,
+					id: "0000000000000E05",
 					type: "advancement",
 					title: "Summon Foliot Lumberjack",
 					icon: {
 						id: "occultism:book_of_calling_foliot_lumberjack",
-						Count: true,
+						Count: 1b,
 						tag: {
 							spiritName: "Azurmiriarc"
 						}
@@ -1593,13 +1594,13 @@
 					criterion: ""
 				},
 				{
-					id: 3597,
+					id: "0000000000000E0D",
 					type: "item",
 					item: "occultism:book_of_binding_foliot"
 				}
 			],
 			rewards: [{
-				id: 3590,
+				id: "0000000000000E06",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -1623,11 +1624,11 @@
 				"",
 				"These little guys make excellent factory workers!"
 			],
-			dependencies: [I;3319],
-			id: 3594,
+			dependencies: ["0000000000000CF7"],
+			id: "0000000000000E0A",
 			tasks: [
 				{
-					id: 3595,
+					id: "0000000000000E0B",
 					type: "advancement",
 					title: "Summon Foliot Transporter",
 					icon: "minecraft:chest_minecart",
@@ -1635,13 +1636,13 @@
 					criterion: ""
 				},
 				{
-					id: 3596,
+					id: "0000000000000E0C",
 					type: "item",
 					item: "occultism:book_of_binding_foliot"
 				}
 			],
 			rewards: [{
-				id: 3619,
+				id: "0000000000000E23",
 				type: "command",
 				title: "Occultism Epic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1662,25 +1663,25 @@
 				"",
 				"In the storage actuator, select a stack of items you want your spirit to process, and put it in the slot on the left of the GUI. This will bring up a menu which will allow you to select the Machine Operator you wish to use."
 			],
-			dependencies: [I;3492],
-			id: 3697,
+			dependencies: ["0000000000000DA4"],
+			id: "0000000000000E71",
 			tasks: [
 				{
-					id: 3698,
+					id: "0000000000000E72",
 					type: "advancement",
 					title: "Summon Djinni Machine Operator",
 					advancement: "occultism:summon_djinni_manage_machine",
 					criterion: ""
 				},
 				{
-					id: 3701,
+					id: "0000000000000E75",
 					type: "item",
 					item: "occultism:book_of_binding_djinni"
 				}
 			],
 			rewards: [
 				{
-					id: 3702,
+					id: "0000000000000E76",
 					type: "command",
 					title: "Occultism Epic Loot Chest",
 					icon: "kubejs:epic_lootbox",
@@ -1688,7 +1689,7 @@
 					player_command: false
 				},
 				{
-					id: 3703,
+					id: "0000000000000E77",
 					type: "xp",
 					xp: 500
 				}
@@ -1704,11 +1705,11 @@
 				"",
 				"The Drikwing is an otherworldly bird that imparts special effects on its master when close."
 			],
-			dependencies: [I;3486],
-			id: 3900,
+			dependencies: ["0000000000000D9E"],
+			id: "0000000000000F3C",
 			tasks: [
 				{
-					id: 3901,
+					id: "0000000000000F3D",
 					type: "advancement",
 					title: "Summon Drikwing",
 					icon: "minecraft:feather",
@@ -1716,7 +1717,7 @@
 					criterion: ""
 				},
 				{
-					id: 3806,
+					id: "0000000000000EDE",
 					type: "kill",
 					entity: "minecraft:parrot",
 					value: 1L
@@ -1724,12 +1725,12 @@
 			],
 			rewards: [
 				{
-					id: 3807,
+					id: "0000000000000EDF",
 					type: "xp",
 					xp: 250
 				},
 				{
-					id: 3902,
+					id: "0000000000000F3E",
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",

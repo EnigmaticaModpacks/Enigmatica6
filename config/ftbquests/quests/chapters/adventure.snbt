@@ -1,7 +1,8 @@
 {
-	id: 151,
+	id: "0000000000000097",
+	group: "",
+	order_index: 10,
 	filename: "adventure",
-	order_index: 8,
 	title: "Adventure",
 	icon: {
 		id: "minecraft:filled_map",
@@ -18,20 +19,20 @@
 			y: 0.0d,
 			subtitle: "Monkeys and Gorillas and Bears, Oh My!",
 			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "],
-			id: 3199,
+			id: "0000000000000C7F",
 			tasks: [{
-				id: 3200,
+				id: "0000000000000C80",
 				type: "checkmark",
 				title: "Alex's Mobs"
 			}],
 			rewards: [
 				{
-					id: 3211,
+					id: "0000000000000C8B",
 					type: "item",
 					item: "alexsmobs:animal_dictionary"
 				},
 				{
-					id: 3229,
+					id: "0000000000000C9D",
 					type: "xp",
 					xp: 100
 				}
@@ -47,14 +48,14 @@
 				"",
 				"Had one pop up on your screen? Read more about it in JEI. New trinkets may be equipped by pressing R (default) to open the menu. "
 			],
-			id: 3201,
+			id: "0000000000000C81",
 			tasks: [{
-				id: 3202,
+				id: "0000000000000C82",
 				type: "checkmark",
 				title: "Lost Trinkets"
 			}],
 			rewards: [{
-				id: 3234,
+				id: "0000000000000CA2",
 				type: "xp",
 				xp: 100
 			}]
@@ -68,15 +69,15 @@
 				"",
 				"Not every site is what it seems. Beware and approach with caution. "
 			],
-			id: 3203,
+			id: "0000000000000C83",
 			tasks: [{
-				id: 3204,
+				id: "0000000000000C84",
 				type: "checkmark",
 				title: "Artifacts",
 				icon: "artifacts:mimic_spawn_egg"
 			}],
 			rewards: [{
-				id: 3232,
+				id: "0000000000000CA0",
 				type: "xp",
 				xp: 100
 			}]
@@ -91,15 +92,15 @@
 				"",
 				"Treasure awaits the brave; death awaits the weak. "
 			],
-			id: 3205,
+			id: "0000000000000C85",
 			tasks: [{
-				id: 3206,
+				id: "0000000000000C86",
 				type: "checkmark",
 				title: "Dungeoneering",
 				icon: "kubejs:scavengers_delight"
 			}],
 			rewards: [{
-				id: 3228,
+				id: "0000000000000C9C",
 				type: "xp",
 				xp: 100
 			}]
@@ -114,15 +115,15 @@
 				"",
 				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
 			],
-			id: 3209,
+			id: "0000000000000C89",
 			tasks: [{
-				id: 3210,
+				id: "0000000000000C8A",
 				type: "checkmark",
 				title: "Oh, The Biomes You'll Go",
 				icon: "byg:pink_cherry_sapling"
 			}],
 			rewards: [{
-				id: 3231,
+				id: "0000000000000C9F",
 				type: "xp",
 				xp: 100
 			}]
@@ -137,14 +138,14 @@
 				"",
 				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
 			],
-			id: 3221,
+			id: "0000000000000C95",
 			tasks: [{
-				id: 3222,
+				id: "0000000000000C96",
 				type: "checkmark",
 				title: "Meet Your Fight"
 			}],
 			rewards: [{
-				id: 3227,
+				id: "0000000000000C9B",
 				type: "xp",
 				xp: 100
 			}]
@@ -158,18 +159,18 @@
 				"",
 				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
 			],
-			id: 3223,
+			id: "0000000000000C97",
 			tasks: [{
-				id: 3224,
+				id: "0000000000000C98",
 				type: "item",
 				item: {
 					id: "naturescompass:naturescompass",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 3230,
+				id: "0000000000000C9E",
 				type: "xp",
 				xp: 100
 			}]

@@ -1,7 +1,8 @@
 {
-	id: 68,
+	id: "0000000000000044",
+	group: "",
+	order_index: 7,
 	filename: "getting_started",
-	order_index: 5,
 	title: "Getting Started",
 	icon: "minecraft:nether_star",
 	default_quest_shape: "",
@@ -25,14 +26,14 @@
 				"Note that we're still working on quests, and many more will be added in the future."
 			],
 			size: 1.5d,
-			id: 69,
+			id: "0000000000000045",
 			tasks: [{
-				id: 70,
+				id: "0000000000000046",
 				type: "checkmark",
 				icon: "minecraft:oak_sapling"
 			}],
 			rewards: [{
-				id: 2707,
+				id: "0000000000000A93",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -53,16 +54,16 @@
 				"- Storage",
 				"- Adventure"
 			],
-			dependencies: [I;69],
-			id: 684,
+			dependencies: ["0000000000000045"],
+			id: "00000000000002AC",
 			tasks: [{
-				id: 685,
+				id: "00000000000002AD",
 				type: "checkmark",
 				title: "Exploring Enigmatica",
 				icon: "minecraft:compass"
 			}],
 			rewards: [{
-				id: 692,
+				id: "00000000000002B4",
 				type: "xp",
 				xp: 100
 			}]
@@ -76,15 +77,15 @@
 				"",
 				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
 			],
-			dependencies: [I;69],
-			id: 686,
+			dependencies: ["0000000000000045"],
+			id: "00000000000002AE",
 			tasks: [{
-				id: 687,
+				id: "00000000000002AF",
 				type: "checkmark",
 				title: "Learning Mods"
 			}],
 			rewards: [{
-				id: 690,
+				id: "00000000000002B2",
 				type: "xp",
 				xp: 100
 			}]
@@ -99,16 +100,16 @@
 				"",
 				"They are still work in progress."
 			],
-			dependencies: [I;69],
-			id: 688,
+			dependencies: ["0000000000000045"],
+			id: "00000000000002B0",
 			tasks: [{
-				id: 689,
+				id: "00000000000002B1",
 				type: "checkmark",
 				title: "Challenges",
 				icon: "minecraft:wither_skeleton_skull"
 			}],
 			rewards: [{
-				id: 691,
+				id: "00000000000002B3",
 				type: "xp",
 				xp: 100
 			}]
@@ -123,26 +124,26 @@
 				"",
 				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
 			],
-			dependencies: [I;69],
-			id: 1769,
+			dependencies: ["0000000000000045"],
+			id: "00000000000006E9",
 			tasks: [{
-				id: 1770,
+				id: "00000000000006EA",
 				type: "checkmark",
 				title: "Hey, listen!",
 				icon: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "patchouli:modded_for_dummies"
 					}
 				}
 			}],
 			rewards: [{
-				id: 1771,
+				id: "00000000000006EB",
 				type: "item",
 				item: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "patchouli:modded_for_dummies"
 					}
@@ -162,11 +163,11 @@
 				"",
 				"A few config changes require a full restart to take effect, but in most cases there's no need to restart now, as those changes will load when you launch the game next time."
 			],
-			dependencies: [I;4075],
+			dependencies: ["0000000000000FEB"],
 			hide: true,
-			id: 4073,
+			id: "0000000000000FE9",
 			tasks: [{
-				id: 4074,
+				id: "0000000000000FEA",
 				type: "item",
 				item: "mekanism:robit"
 			}]

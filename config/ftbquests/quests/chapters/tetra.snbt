@@ -1,11 +1,12 @@
 {
-	id: 1906,
+	id: "0000000000000772",
+	group: "",
+	order_index: 11,
 	filename: "tetra",
-	order_index: 9,
 	title: "Tetra",
 	icon: {
 		id: "tetra:modular_double",
-		Count: true,
+		Count: 1b,
 		tag: {
 			"double/handle": "double/basic_handle",
 			"double/head_left": "double/basic_hammer_left",
@@ -36,15 +37,15 @@
 				"",
 				"Note: Non-vanilla Crafting Tables can be converted to vanilla through crafting."
 			],
-			dependencies: [I;2115],
+			dependencies: ["0000000000000843"],
 			size: 1.5d,
-			id: 1907,
+			id: "0000000000000773",
 			tasks: [{
-				id: 3047,
+				id: "0000000000000BE7",
 				type: "advancement",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -60,11 +61,11 @@
 			}],
 			rewards: [
 				{
-					id: 2117,
+					id: "0000000000000845",
 					type: "item",
 					item: {
 						id: "tetra:modular_double",
-						Count: true,
+						Count: 1b,
 						tag: {
 							"double/handle": "double/basic_handle",
 							"double/head_left": "double/basic_hammer_left",
@@ -77,7 +78,7 @@
 					}
 				},
 				{
-					id: 2193,
+					id: "0000000000000891",
 					type: "item",
 					item: "farmersdelight:hamburger"
 				}
@@ -87,7 +88,7 @@
 			title: "Holoshpere",
 			icon: {
 				id: "tetra:holo",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"holo/core_material": "frame/dim",
 					"holo/frame": "holo/frame",
@@ -104,15 +105,15 @@
 				"",
 				"The Eye of Ender is for an upgrade which allows you to find Forges a bit easier, just put the Holosphere in your Workbench to apply it."
 			],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 1909,
+			id: "0000000000000775",
 			tasks: [{
-				id: 2189,
+				id: "000000000000088D",
 				type: "item",
 				item: {
 					id: "tetra:holo",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"holo/core_material": "frame/dim",
 						"holo/frame": "holo/frame",
@@ -122,7 +123,7 @@
 				}
 			}],
 			rewards: [{
-				id: 2190,
+				id: "000000000000088E",
 				type: "item",
 				item: "minecraft:ender_eye"
 			}]
@@ -138,18 +139,18 @@
 				"",
 				"Hit the highlighted areas on crates and containers with the correct tools to break them open."
 			],
-			dependencies: [I;1923],
+			dependencies: ["0000000000000783"],
 			optional: true,
-			id: 1911,
+			id: "0000000000000777",
 			tasks: [{
-				id: 2194,
+				id: "0000000000000892",
 				type: "advancement",
 				icon: "tetra:forged_container",
 				advancement: "tetra:spelunking/containers",
 				criterion: ""
 			}],
 			rewards: [{
-				id: 2633,
+				id: "0000000000000A49",
 				type: "xp_levels",
 				xp_levels: 5
 			}]
@@ -158,7 +159,7 @@
 			title: "Bows",
 			icon: {
 				id: "tetra:modular_bow",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"bow/stave": "bow/straight_stave",
 					honing_progress: 80,
@@ -185,34 +186,34 @@
 				"",
 				"Tip: Integrity comes from the bowstring"
 			],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 1919,
+			id: "000000000000077F",
 			tasks: [{
-				id: 2187,
+				id: "000000000000088B",
 				type: "advancement",
 				advancement: "tetra:upgrades/bow_upgrade",
 				criterion: ""
 			}],
 			rewards: [
 				{
-					id: 2622,
+					id: "0000000000000A3E",
 					type: "item",
 					item: "archers_paradox:training_arrow",
 					count: 64
 				},
 				{
-					id: 2623,
+					id: "0000000000000A3F",
 					type: "item",
 					item: "archers_paradox:explosive_arrow",
 					count: 16
 				},
 				{
-					id: 2624,
+					id: "0000000000000A40",
 					type: "item",
 					item: {
 						id: "minecraft:tipped_arrow",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Potion: "minecraft:strong_slowness"
 						}
@@ -220,7 +221,7 @@
 					count: 16
 				},
 				{
-					id: 2625,
+					id: "0000000000000A41",
 					type: "item",
 					item: "minecraft:arrow",
 					count: 64
@@ -238,16 +239,16 @@
 				"",
 				"Note: The Forge Hammer is craftable in Enigmatica, in case you'd rather not go looking for it. You'll be missing out on loot though!"
 			],
-			dependencies: [I;2179],
-			id: 1921,
+			dependencies: ["0000000000000883"],
+			id: "0000000000000781",
 			tasks: [{
-				id: 3247,
+				id: "0000000000000CAF",
 				type: "item",
 				item: "tetra:hammer_base",
 				only_from_crafting: false
 			}],
 			rewards: [{
-				id: 2634,
+				id: "0000000000000A4A",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -271,15 +272,15 @@
 				"",
 				"Planar Stabilizer: + Stats when used for forging purposes"
 			],
-			dependencies: [I;2179],
-			id: 1923,
+			dependencies: ["0000000000000883"],
+			id: "0000000000000783",
 			tasks: [{
-				id: 2141,
+				id: "000000000000085D",
 				type: "item",
 				title: "Any tetra:forge_hammer_upgrades",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "tetra:forge_hammer_upgrades"
 					}
@@ -287,7 +288,7 @@
 				count: 2L
 			}],
 			rewards: [{
-				id: 2638,
+				id: "0000000000000A4E",
 				type: "item",
 				item: "thermal:earth_grenade",
 				count: 16
@@ -299,47 +300,47 @@
 			y: -14.5d,
 			shape: "diamond",
 			description: ["You can find all sorts of junk lying around Ancient Forges, and a lot of it can be used as Tool, Weapon or Belt parts. They're better than most other parts."],
-			dependencies: [I;1911],
+			dependencies: ["0000000000000777"],
 			optional: true,
-			id: 1925,
+			id: "0000000000000785",
 			tasks: [
 				{
-					id: 2126,
+					id: "000000000000084E",
 					type: "item",
 					item: "tetra:forged_mesh",
 					consume_items: false
 				},
 				{
-					id: 2127,
+					id: "000000000000084F",
 					type: "item",
 					item: "tetra:metal_scrap",
 					consume_items: false
 				},
 				{
-					id: 2128,
+					id: "0000000000000850",
 					type: "item",
 					item: "tetra:quick_latch",
 					consume_items: false
 				},
 				{
-					id: 2129,
+					id: "0000000000000851",
 					type: "item",
 					item: "tetra:forged_beam",
 					consume_items: false
 				},
 				{
-					id: 2130,
+					id: "0000000000000852",
 					type: "item",
 					item: "tetra:forged_bolt",
 					consume_items: false
 				}
 			],
 			rewards: [{
-				id: 2131,
+				id: "0000000000000853",
 				type: "item",
 				item: {
 					id: "tetra:magmatic_cell",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 128
 					}
@@ -358,17 +359,17 @@
 				"",
 				"Note: Thermal Cells are also craftable."
 			],
-			dependencies: [I;
-				1921,
-				2179
+			dependencies: [
+				"0000000000000781",
+				"0000000000000883"
 			],
-			id: 1927,
+			id: "0000000000000787",
 			tasks: [{
-				id: 2132,
+				id: "0000000000000854",
 				type: "item",
 				item: {
 					id: "tetra:magmatic_cell",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -378,12 +379,12 @@
 			}],
 			rewards: [
 				{
-					id: 2635,
+					id: "0000000000000A4B",
 					type: "item",
 					item: "minecraft:lava_bucket"
 				},
 				{
-					id: 2724,
+					id: "0000000000000AA4",
 					type: "command",
 					title: "Blacksmith's Delight",
 					icon: "kubejs:blacksmiths_delight",
@@ -403,18 +404,18 @@
 				"",
 				"The area mined can be increased through Efficiency."
 			],
-			dependencies: [I;1911],
+			dependencies: ["0000000000000777"],
 			optional: true,
-			id: 1931,
+			id: "000000000000078B",
 			tasks: [{
-				id: 2138,
+				id: "000000000000085A",
 				type: "advancement",
 				icon: "tetra:stonecutter",
 				advancement: "tetra:spelunking/stonecutter",
 				criterion: ""
 			}],
 			rewards: [{
-				id: 2143,
+				id: "000000000000085F",
 				type: "item",
 				item: "tetra:planar_stabilizer"
 			}]
@@ -426,18 +427,18 @@
 			y: -13.5d,
 			shape: "diamond",
 			description: ["The Earthpiercer is a multi-purpose tool that acts both as a Pickaxe and Shovel."],
-			dependencies: [I;1911],
+			dependencies: ["0000000000000777"],
 			optional: true,
-			id: 1933,
+			id: "000000000000078D",
 			tasks: [{
-				id: 2137,
+				id: "0000000000000859",
 				type: "advancement",
 				icon: "tetra:earthpiercer",
 				advancement: "tetra:spelunking/earthpiercer",
 				criterion: ""
 			}],
 			rewards: [{
-				id: 2142,
+				id: "000000000000085E",
 				type: "item",
 				item: "tetra:combustion_chamber"
 			}]
@@ -452,13 +453,13 @@
 				"",
 				"This chapter will show you which tools are available and how you obtain them."
 			],
-			id: 2115,
+			id: "0000000000000843",
 			tasks: [{
-				id: 2116,
+				id: "0000000000000844",
 				type: "checkmark",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -471,7 +472,7 @@
 				}
 			}],
 			rewards: [{
-				id: 3237,
+				id: "0000000000000CA5",
 				type: "xp",
 				xp: 100
 			}]
@@ -495,17 +496,17 @@
 				"",
 				"Note: A few materials never settle."
 			],
-			dependencies: [I;1909],
+			dependencies: ["0000000000000775"],
 			optional: true,
-			id: 2139,
+			id: "000000000000085B",
 			tasks: [{
-				id: 2140,
+				id: "000000000000085C",
 				type: "checkmark",
 				title: "Tetras Tool Leveling",
 				icon: "minecraft:book"
 			}],
 			rewards: [{
-				id: 3238,
+				id: "0000000000000CA6",
 				type: "xp",
 				xp: 100
 			}]
@@ -520,14 +521,14 @@
 				"",
 				"This is where the Wooden Hammer you got as a quest reward comes in handy!"
 			],
-			dependencies: [I;1907],
-			id: 2166,
+			dependencies: ["0000000000000773"],
+			id: "0000000000000876",
 			tasks: [{
-				id: 2176,
+				id: "0000000000000880",
 				type: "advancement",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -543,13 +544,13 @@
 			}],
 			rewards: [
 				{
-					id: 2626,
+					id: "0000000000000A42",
 					type: "item",
 					item: "emendatusenigmatica:copper_chunk",
 					count: 8
 				},
 				{
-					id: 2706,
+					id: "0000000000000A92",
 					type: "command",
 					title: "Blacksmith's Delight",
 					icon: "kubejs:blacksmiths_delight",
@@ -569,14 +570,14 @@
 				"",
 				"Note: If you want to use Wood as the handle, you will need an Axe to perform the upgrade."
 			],
-			dependencies: [I;2166],
-			id: 2168,
+			dependencies: ["0000000000000876"],
+			id: "0000000000000878",
 			tasks: [{
-				id: 2177,
+				id: "0000000000000881",
 				type: "advancement",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -592,24 +593,24 @@
 			}],
 			rewards: [
 				{
-					id: 2627,
+					id: "0000000000000A43",
 					type: "item",
 					item: "emendatusenigmatica:osmium_chunk",
 					count: 8
 				},
 				{
-					id: 2628,
+					id: "0000000000000A44",
 					type: "item",
 					item: {
 						id: "minecraft:splash_potion",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Potion: "minecraft:long_fire_resistance"
 						}
 					}
 				},
 				{
-					id: 2722,
+					id: "0000000000000AA2",
 					type: "command",
 					title: "Blacksmith's Delight",
 					icon: "kubejs:blacksmiths_delight",
@@ -623,14 +624,14 @@
 			x: -2.5d,
 			y: -16.0d,
 			description: ["For the 4th tier you'll need to venture into the Nether to gather Blackstone for the hammer head upgrades."],
-			dependencies: [I;2168],
-			id: 2179,
+			dependencies: ["0000000000000878"],
+			id: "0000000000000883",
 			tasks: [{
-				id: 2180,
+				id: "0000000000000884",
 				type: "advancement",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -646,16 +647,16 @@
 			}],
 			rewards: [
 				{
-					id: 2629,
+					id: "0000000000000A45",
 					type: "item",
 					item: "minecraft:end_rod"
 				},
 				{
-					id: 2631,
+					id: "0000000000000A47",
 					type: "item",
 					item: {
 						id: "minecraft:enchanted_book",
-						Count: true,
+						Count: 1b,
 						tag: {
 							StoredEnchantments: [{
 								lvl: 2s,
@@ -665,18 +666,18 @@
 					}
 				},
 				{
-					id: 2632,
+					id: "0000000000000A48",
 					type: "item",
 					item: {
 						id: "minecraft:splash_potion",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Potion: "minecraft:long_swiftness"
 						}
 					}
 				},
 				{
-					id: 2723,
+					id: "0000000000000AA3",
 					type: "command",
 					title: "Blacksmith's Delight",
 					icon: "kubejs:blacksmiths_delight",
@@ -694,18 +695,18 @@
 				"",
 				"If you need higher integrity, try out an End Rod as a handle."
 			],
-			dependencies: [I;
-				1927,
-				1921,
-				1923
+			dependencies: [
+				"0000000000000787",
+				"0000000000000781",
+				"0000000000000783"
 			],
-			id: 2181,
+			id: "0000000000000885",
 			tasks: [{
-				id: 2182,
+				id: "0000000000000886",
 				type: "advancement",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -720,7 +721,7 @@
 				criterion: ""
 			}],
 			rewards: [{
-				id: 2705,
+				id: "0000000000000A91",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -738,16 +739,16 @@
 				"",
 				"You're basically a walking Forge, Congratulations!"
 			],
-			dependencies: [I;2181],
+			dependencies: ["0000000000000885"],
 			dependency_requirement: "all_started",
 			size: 1.5d,
-			id: 2183,
+			id: "0000000000000887",
 			tasks: [{
-				id: 2185,
+				id: "0000000000000889",
 				type: "advancement",
 				icon: {
 					id: "tetra:modular_double",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"double/handle": "double/basic_handle",
 						"double/head_left": "double/basic_hammer_left",
@@ -763,7 +764,7 @@
 			}],
 			rewards: [
 				{
-					id: 2575,
+					id: "0000000000000A0F",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -771,7 +772,7 @@
 					player_command: false
 				},
 				{
-					id: 2725,
+					id: "0000000000000AA5",
 					type: "command",
 					title: "Blacksmith's Delight",
 					icon: "kubejs:blacksmiths_delight",
@@ -784,7 +785,7 @@
 			title: "Pickaxe",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/handle": "double/basic_handle",
 					honing_progress: 420,
@@ -801,15 +802,15 @@
 			x: -8.0d,
 			y: -21.5d,
 			description: ["The pickaxe head can be used for mining. "],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2330,
+			id: "000000000000091A",
 			tasks: [{
-				id: 2607,
+				id: "0000000000000A2F",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2586,
+				id: "0000000000000A1A",
 				type: "xp",
 				xp: 50
 			}]
@@ -818,7 +819,7 @@
 			title: "Greataxe",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/basic_axe_right_material": "basic_axe/iron",
 					"double/head_left/settle_progress": 312,
@@ -838,15 +839,15 @@
 			x: -7.0d,
 			y: -22.0d,
 			description: ["The axe can be used to break wooden blocks and for stripping logs. Double Axe Heads provides additional Damage."],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2332,
+			id: "000000000000091C",
 			tasks: [{
-				id: 2606,
+				id: "0000000000000A2E",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2587,
+				id: "0000000000000A1B",
 				type: "xp",
 				xp: 50
 			}]
@@ -855,7 +856,7 @@
 			title: "Sickle",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/butt_right_material": "butt/iron",
 					"double/handle": "double/basic_handle",
@@ -872,15 +873,15 @@
 			x: -8.5d,
 			y: -20.5d,
 			description: ["Craft a sickle which can be used to cut down plants in an area."],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2334,
+			id: "000000000000091E",
 			tasks: [{
-				id: 2609,
+				id: "0000000000000A31",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2592,
+				id: "0000000000000A20",
 				type: "xp",
 				xp: 50
 			}]
@@ -889,7 +890,7 @@
 			title: "Hoe",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/butt_right_material": "butt/iron",
 					"double/handle": "double/basic_handle",
@@ -906,15 +907,15 @@
 			x: -8.0d,
 			y: -19.5d,
 			description: ["The hoe can be used for harvesting plants and for tilling soil. "],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2336,
+			id: "0000000000000920",
 			tasks: [{
-				id: 2608,
+				id: "0000000000000A30",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2591,
+				id: "0000000000000A1F",
 				type: "xp",
 				xp: 50
 			}]
@@ -923,7 +924,7 @@
 			title: "Claw",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/butt_right_material": "butt/iron",
 					"double/handle": "double/basic_handle",
@@ -940,15 +941,15 @@
 			x: -7.0d,
 			y: -19.0d,
 			description: ["The claw can be used for prying things open and to quickly break most wooden blocks."],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2338,
+			id: "0000000000000922",
 			tasks: [{
-				id: 2611,
+				id: "0000000000000A33",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2588,
+				id: "0000000000000A1C",
 				type: "xp",
 				xp: 50
 			}]
@@ -957,7 +958,7 @@
 			title: "Adze",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/adze_right_material": "adze/iron",
 					"double/head_left/settle_progress": 267,
@@ -977,15 +978,15 @@
 			x: -6.0d,
 			y: -19.5d,
 			description: ["The adze can be used for digging and for chopping wood."],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2340,
+			id: "0000000000000924",
 			tasks: [{
-				id: 2610,
+				id: "0000000000000A32",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2590,
+				id: "0000000000000A1E",
 				type: "xp",
 				xp: 50
 			}]
@@ -1001,23 +1002,23 @@
 				"",
 				"You can mix-and-match heads, so you can have a tool that's good at both breaking dirt and stone, it's up to you!"
 			],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 2342,
+			id: "0000000000000926",
 			tasks: [{
-				id: 2344,
+				id: "0000000000000928",
 				type: "item",
 				title: "Any forge:tools/pickaxe",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "forge:tools/pickaxe"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2605,
+				id: "0000000000000A2D",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -1030,23 +1031,23 @@
 			x: -4.0d,
 			y: -18.0d,
 			description: ["Single headed tools are Shovels and Spears, useful for digging and killing things respectively."],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 2345,
+			id: "0000000000000929",
 			tasks: [{
-				id: 2359,
+				id: "0000000000000937",
 				type: "item",
 				title: "Any forge:tools/shovel",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "forge:tools/shovel"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2604,
+				id: "0000000000000A2C",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -1058,15 +1059,15 @@
 			x: -4.0d,
 			y: -16.5d,
 			description: ["Spears offer high damage and slow speed. They double as a digging implement."],
-			dependencies: [I;2345],
+			dependencies: ["0000000000000929"],
 			optional: true,
-			id: 2347,
+			id: "000000000000092B",
 			tasks: [{
-				id: 2348,
+				id: "000000000000092C",
 				type: "item",
 				item: {
 					id: "tetra:modular_single",
-					Count: true,
+					Count: 1b,
 					tag: {
 						honing_progress: 112,
 						HideFlags: 1,
@@ -1080,7 +1081,7 @@
 				}
 			}],
 			rewards: [{
-				id: 2721,
+				id: "0000000000000AA1",
 				type: "xp",
 				xp: 50
 			}]
@@ -1094,27 +1095,27 @@
 				"",
 				"Tetra swords can be made from ordinary swords."
 			],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 2349,
+			id: "000000000000092D",
 			tasks: [{
-				id: 2360,
+				id: "0000000000000938",
 				type: "item",
 				title: "Any forge:weapons",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "forge:weapons/sword"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2704,
+				id: "0000000000000A90",
 				type: "item",
 				item: {
 					id: "minecraft:splash_potion",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Potion: "minecraft:long_night_vision"
 					}
@@ -1125,7 +1126,7 @@
 			title: "Sword",
 			icon: {
 				id: "tetra:modular_sword",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"sword/guard": "sword/makeshift_guard",
 					"sword/blade": "sword/basic_blade",
@@ -1144,15 +1145,15 @@
 			x: -8.5d,
 			y: -16.0d,
 			description: ["A Basic Blade with balanced damage and speed."],
-			dependencies: [I;2349],
+			dependencies: ["000000000000092D"],
 			optional: true,
-			id: 2351,
+			id: "000000000000092F",
 			tasks: [{
-				id: 2579,
+				id: "0000000000000A13",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2580,
+				id: "0000000000000A14",
 				type: "xp",
 				xp: 50
 			}]
@@ -1161,7 +1162,7 @@
 			title: "Greatsword",
 			icon: {
 				id: "tetra:modular_sword",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"sword/guard": "sword/makeshift_guard",
 					"sword/blade": "sword/heavy_blade",
@@ -1180,15 +1181,15 @@
 			x: -5.5d,
 			y: -16.0d,
 			description: ["A Heavy Blade with high damage but a decreased attack speed."],
-			dependencies: [I;2349],
+			dependencies: ["000000000000092D"],
 			optional: true,
-			id: 2353,
+			id: "0000000000000931",
 			tasks: [{
-				id: 2577,
+				id: "0000000000000A11",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2581,
+				id: "0000000000000A15",
 				type: "xp",
 				xp: 50
 			}]
@@ -1197,7 +1198,7 @@
 			title: "Machete",
 			icon: {
 				id: "tetra:modular_sword",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"sword/guard": "sword/makeshift_guard",
 					"sword/blade": "sword/machete",
@@ -1216,15 +1217,15 @@
 			x: -7.5d,
 			y: -16.0d,
 			description: ["A machete can be used to cut down web and some types of plants in an area."],
-			dependencies: [I;2349],
+			dependencies: ["000000000000092D"],
 			optional: true,
-			id: 2355,
+			id: "0000000000000933",
 			tasks: [{
-				id: 2578,
+				id: "0000000000000A12",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2582,
+				id: "0000000000000A16",
 				type: "xp",
 				xp: 50
 			}]
@@ -1233,7 +1234,7 @@
 			title: "Shortblade",
 			icon: {
 				id: "tetra:modular_sword",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"sword/guard": "sword/makeshift_guard",
 					"sword/short_blade_material": "short_blade/iron",
@@ -1252,15 +1253,15 @@
 			x: -6.5d,
 			y: -16.0d,
 			description: ["A light and short blad that can be used for crafting and for offhand attacks. "],
-			dependencies: [I;2349],
+			dependencies: ["000000000000092D"],
 			optional: true,
-			id: 2357,
+			id: "0000000000000935",
 			tasks: [{
-				id: 2576,
+				id: "0000000000000A10",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2583,
+				id: "0000000000000A17",
 				type: "xp",
 				xp: 50
 			}]
@@ -1270,15 +1271,15 @@
 			x: -4.5d,
 			y: -25.0d,
 			description: ["Tetra Shields are made from the basic vanilla shield."],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 2361,
+			id: "0000000000000939",
 			tasks: [{
-				id: 2362,
+				id: "000000000000093A",
 				type: "item",
 				item: {
 					id: "minecraft:shield",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0,
 						AS_Amulet_Holder: [I;
@@ -1291,11 +1292,11 @@
 				}
 			}],
 			rewards: [{
-				id: 2617,
+				id: "0000000000000A39",
 				type: "item",
 				item: {
 					id: "vanillahammers:stone_hammer",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -1320,15 +1321,15 @@
 				"",
 				"Tip: You can put the Belt in your Belt slot."
 			],
-			dependencies: [I;1907],
+			dependencies: ["0000000000000773"],
 			optional: true,
-			id: 2363,
+			id: "000000000000093B",
 			tasks: [{
-				id: 2364,
+				id: "000000000000093C",
 				type: "item",
 				item: {
 					id: "tetra:modular_toolbelt",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"toolbelt/belt_material": "belt/rope",
 						"toolbelt/belt": "toolbelt/belt",
@@ -1338,7 +1339,7 @@
 				}
 			}],
 			rewards: [{
-				id: 2603,
+				id: "0000000000000A2B",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -1358,15 +1359,15 @@
 				"",
 				"Note: It still uses durability."
 			],
-			dependencies: [I;1907],
-			id: 2365,
+			dependencies: ["0000000000000773"],
+			id: "000000000000093D",
 			tasks: [{
-				id: 2366,
+				id: "000000000000093E",
 				type: "item",
 				item: "tetra:rack"
 			}],
 			rewards: [{
-				id: 3239,
+				id: "0000000000000CA7",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -1378,7 +1379,7 @@
 			title: "Butt",
 			icon: {
 				id: "tetra:modular_double",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"double/butt_right_material": "butt/iron",
 					"double/handle": "double/basic_handle",
@@ -1395,15 +1396,15 @@
 			x: -6.0d,
 			y: -21.5d,
 			description: ["Used as the back side of single sided tools, typically yields faster swing speed than double sided tools. Can sometimes be used for hammering if crafted from a sturdy material. "],
-			dependencies: [I;2342],
+			dependencies: ["0000000000000926"],
 			optional: true,
-			id: 2559,
+			id: "00000000000009FF",
 			tasks: [{
-				id: 2612,
+				id: "0000000000000A34",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2589,
+				id: "0000000000000A1D",
 				type: "xp",
 				xp: 50
 			}]
@@ -1412,7 +1413,7 @@
 			title: "Buckler",
 			icon: {
 				id: "tetra:modular_shield",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"shield/buckler_material": "buckler/iron",
 					"shield/plate": "shield/buckler",
@@ -1427,15 +1428,15 @@
 			x: -5.5d,
 			y: -25.0d,
 			description: ["Bucklers provide a passive toughness bonus but cannot be used to block."],
-			dependencies: [I;2361],
+			dependencies: ["0000000000000939"],
 			optional: true,
-			id: 2561,
+			id: "0000000000000A01",
 			tasks: [{
-				id: 2600,
+				id: "0000000000000A28",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2596,
+				id: "0000000000000A24",
 				type: "xp",
 				xp: 50
 			}]
@@ -1444,7 +1445,7 @@
 			title: "Heater Shield",
 			icon: {
 				id: "tetra:modular_shield",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"shield/plate": "shield/heater",
 					honing_progress: 112,
@@ -1459,15 +1460,15 @@
 			x: -4.5d,
 			y: -26.0d,
 			description: ["Heaters can block for a limited time before going on cooldown."],
-			dependencies: [I;2361],
+			dependencies: ["0000000000000939"],
 			optional: true,
-			id: 2563,
+			id: "0000000000000A03",
 			tasks: [{
-				id: 2599,
+				id: "0000000000000A27",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2597,
+				id: "0000000000000A25",
 				type: "xp",
 				xp: 50
 			}]
@@ -1476,7 +1477,7 @@
 			title: "Tower Shield",
 			icon: {
 				id: "tetra:modular_shield",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"shield/plate": "shield/tower",
 					honing_progress: 112,
@@ -1491,15 +1492,15 @@
 			x: -3.5d,
 			y: -25.0d,
 			description: ["Tower shields can block indefinitely with no cooldown but uses more integrity than other types of shields."],
-			dependencies: [I;2361],
+			dependencies: ["0000000000000939"],
 			optional: true,
-			id: 2565,
+			id: "0000000000000A05",
 			tasks: [{
-				id: 2598,
+				id: "0000000000000A26",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2595,
+				id: "0000000000000A23",
 				type: "xp",
 				xp: 50
 			}]
@@ -1508,7 +1509,7 @@
 			title: "Longbow",
 			icon: {
 				id: "tetra:modular_bow",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"bow/stave": "bow/long_stave",
 					honing_progress: 80,
@@ -1529,15 +1530,15 @@
 			x: -7.0d,
 			y: -25.0d,
 			description: ["The Longbow has high damage/velocity, but slow draw speed."],
-			dependencies: [I;1919],
+			dependencies: ["000000000000077F"],
 			optional: true,
-			id: 2567,
+			id: "0000000000000A07",
 			tasks: [{
-				id: 2602,
+				id: "0000000000000A2A",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2593,
+				id: "0000000000000A21",
 				type: "xp",
 				xp: 50
 			}]
@@ -1546,7 +1547,7 @@
 			title: "Recurve Bow",
 			icon: {
 				id: "tetra:modular_bow",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"bow/stave": "bow/recurve_stave",
 					honing_progress: 112,
@@ -1567,15 +1568,15 @@
 			x: -8.5d,
 			y: -23.5d,
 			description: ["The Recurve Bow has low damage/velocy, but fast draw speed."],
-			dependencies: [I;1919],
+			dependencies: ["000000000000077F"],
 			optional: true,
-			id: 2613,
+			id: "0000000000000A35",
 			tasks: [{
-				id: 2614,
+				id: "0000000000000A36",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2618,
+				id: "0000000000000A3A",
 				type: "xp",
 				xp: 50
 			}]
@@ -1591,15 +1592,15 @@
 				"",
 				"Warning: If you use more Magic Capacity than the tool has, bad things may happen."
 			],
-			dependencies: [I;1909],
-			id: 2619,
+			dependencies: ["0000000000000775"],
+			id: "0000000000000A3B",
 			tasks: [{
-				id: 2620,
+				id: "0000000000000A3C",
 				type: "item",
 				item: "minecraft:enchanting_table"
 			}],
 			rewards: [{
-				id: 2621,
+				id: "0000000000000A3D",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -1613,17 +1614,17 @@
 			y: -16.5d,
 			shape: "pentagon",
 			description: ["When the Chthonic Extractor is applied as the second head to a tool, the tool will be able to mine in a 3 by 3 area!"],
-			dependencies: [I;1911],
+			dependencies: ["0000000000000777"],
 			size: 1.5d,
 			optional: true,
-			id: 4025,
+			id: "0000000000000FB9",
 			tasks: [{
-				id: 4026,
+				id: "0000000000000FBA",
 				type: "item",
 				item: "tetra:chthonic_extractor"
 			}],
 			rewards: [{
-				id: 4027,
+				id: "0000000000000FBB",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",

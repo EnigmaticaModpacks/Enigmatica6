@@ -1,7 +1,8 @@
 {
-	id: 939,
+	id: "00000000000003AB",
+	group: "",
+	order_index: 23,
 	filename: "ars_nouveau",
-	order_index: 21,
 	title: "Ars Nouveau",
 	icon: "ars_nouveau:mana_gem",
 	default_quest_shape: "",
@@ -19,19 +20,19 @@
 				"",
 				"~MuteTiefling"
 			],
-			id: 940,
+			id: "00000000000003AC",
 			tasks: [{
-				id: 941,
+				id: "00000000000003AD",
 				type: "checkmark"
 			}],
 			rewards: [
 				{
-					id: 942,
+					id: "00000000000003AE",
 					type: "item",
 					item: "ars_nouveau:worn_notebook"
 				},
 				{
-					id: 943,
+					id: "00000000000003AF",
 					type: "item",
 					item: "ars_nouveau:novice_spell_book"
 				}
@@ -45,15 +46,15 @@
 				"",
 				"Like the simpler runes created by Runic Chalk, it can be provided with a prepared Spell Parchment by right clicking the device with the parchment. Unlike runes, it can use both Touch and Projectile Forms. "
 			],
-			dependencies: [I;2541],
-			id: 946,
+			dependencies: ["00000000000009ED"],
+			id: "00000000000003B2",
 			tasks: [{
-				id: 1014,
+				id: "00000000000003F6",
 				type: "item",
 				item: "ars_nouveau:spell_turret"
 			}],
 			rewards: [{
-				id: 1525,
+				id: "00000000000005F5",
 				type: "item",
 				item: "ars_nouveau:glyph_aoe"
 			}]
@@ -78,28 +79,28 @@
 				"Consider setting up a jar and condenser nearby such places. It can detect such events in a roughly 10-15 block radius, depending on the type of event.",
 				"A large crop farm or a basic mob farm can produce mana relatively quickly if automated."
 			],
-			dependencies: [I;940],
-			id: 950,
+			dependencies: ["00000000000003AC"],
+			id: "00000000000003B6",
 			tasks: [
 				{
-					id: 956,
+					id: "00000000000003BC",
 					type: "item",
 					item: "ars_nouveau:mana_condenser"
 				},
 				{
-					id: 957,
+					id: "00000000000003BD",
 					type: "item",
 					item: "ars_nouveau:mana_jar"
 				}
 			],
 			rewards: [
 				{
-					id: 961,
+					id: "00000000000003C1",
 					type: "item",
 					item: "botania:sextant"
 				},
 				{
-					id: 2679,
+					id: "0000000000000A77",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -118,16 +119,16 @@
 				"",
 				"In order to learn new spells, this Magic Clay and its variants may be pressed in a Glyph Press along with some other reagent to form a focus."
 			],
-			dependencies: [I;966],
-			id: 958,
+			dependencies: ["00000000000003C6"],
+			id: "00000000000003BE",
 			tasks: [{
-				id: 960,
+				id: "00000000000003C0",
 				type: "item",
 				item: "ars_nouveau:magic_clay",
 				count: 8L
 			}],
 			rewards: [{
-				id: 1607,
+				id: "0000000000000647",
 				type: "item",
 				item: "ars_nouveau:glyph_craft"
 			}]
@@ -138,23 +139,23 @@
 			x: -4.5d,
 			y: -2.0d,
 			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbok to cast. "],
-			dependencies: [I;958],
-			id: 962,
+			dependencies: ["00000000000003BE"],
+			id: "00000000000003C2",
 			tasks: [
 				{
-					id: 963,
+					id: "00000000000003C3",
 					type: "item",
 					item: "ars_nouveau:marvelous_clay",
 					count: 8L
 				},
 				{
-					id: 1017,
+					id: "00000000000003F9",
 					type: "item",
 					item: "ars_nouveau:apprentice_spell_book"
 				}
 			],
 			rewards: [{
-				id: 1641,
+				id: "0000000000000669",
 				type: "item",
 				item: "ars_nouveau:glyph_grow"
 			}]
@@ -165,23 +166,23 @@
 			x: -3.5d,
 			y: -2.5d,
 			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbok to cast. "],
-			dependencies: [I;962],
-			id: 964,
+			dependencies: ["00000000000003C2"],
+			id: "00000000000003C4",
 			tasks: [
 				{
-					id: 965,
+					id: "00000000000003C5",
 					type: "item",
 					item: "ars_nouveau:mythical_clay",
 					count: 2L
 				},
 				{
-					id: 1018,
+					id: "00000000000003FA",
 					type: "item",
 					item: "ars_nouveau:archmage_spell_book"
 				}
 			],
 			rewards: [{
-				id: 1640,
+				id: "0000000000000668",
 				type: "item",
 				item: "ars_nouveau:glyph_split"
 			}]
@@ -197,15 +198,15 @@
 				"",
 				"Glyphs can be learned by right clicking them. They'll then appear within your spellbook for use in crafting new spells."
 			],
-			dependencies: [I;950],
-			id: 966,
+			dependencies: ["00000000000003B6"],
+			id: "00000000000003C6",
 			tasks: [{
-				id: 967,
+				id: "00000000000003C7",
 				type: "item",
 				item: "ars_nouveau:glyph_press"
 			}],
 			rewards: [{
-				id: 1530,
+				id: "00000000000005FA",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -230,23 +231,23 @@
 				"",
 				"Casting this propels the user in the direction they're facing, while also providing some cushoning for the eventual landing. It can make a great way to traverse rough terrain or escape a pesky mob."
 			],
-			dependencies: [I;958],
+			dependencies: ["00000000000003BE"],
 			min_width: 300,
-			id: 970,
+			id: "00000000000003CA",
 			tasks: [
 				{
-					id: 2548,
+					id: "00000000000009F4",
 					type: "item",
 					item: "ars_nouveau:glyph_leap"
 				},
 				{
-					id: 2549,
+					id: "00000000000009F5",
 					type: "item",
 					item: "ars_nouveau:glyph_slowfall"
 				}
 			],
 			rewards: [{
-				id: 2550,
+				id: "00000000000009F6",
 				type: "item",
 				item: "ars_nouveau:glyph_launch"
 			}]
@@ -261,21 +262,21 @@
 				"",
 				"Now any creature that walks over the rune will receive the effect of the spell. "
 			],
-			dependencies: [I;976],
-			id: 974,
+			dependencies: ["00000000000003D0"],
+			id: "00000000000003CE",
 			tasks: [{
-				id: 975,
+				id: "00000000000003CF",
 				type: "item",
 				item: {
 					id: "ars_nouveau:runic_chalk",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1531,
+				id: "00000000000005FB",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -295,15 +296,15 @@
 				"",
 				"Parchments may be re-used."
 			],
-			dependencies: [I;981],
-			id: 976,
+			dependencies: ["00000000000003D5"],
+			id: "00000000000003D0",
 			tasks: [{
-				id: 979,
+				id: "00000000000003D3",
 				type: "item",
 				item: "ars_nouveau:spell_parchment"
 			}],
 			rewards: [{
-				id: 980,
+				id: "00000000000003D4",
 				type: "item",
 				item: "ars_nouveau:scribes_table"
 			}]
@@ -317,15 +318,15 @@
 				"",
 				"Growing these will serve two purposes to a budding practicioner. First, they produce more mana than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's mana, expanding the practioner's reserves.  "
 			],
-			dependencies: [I;983],
-			id: 981,
+			dependencies: ["00000000000003D7"],
+			id: "00000000000003D5",
 			tasks: [{
-				id: 982,
+				id: "00000000000003D6",
 				type: "item",
 				item: "ars_nouveau:mana_bloom_crop"
 			}],
 			rewards: [{
-				id: 1524,
+				id: "00000000000005F4",
 				type: "item",
 				item: "ars_nouveau:glyph_harvest"
 			}]
@@ -345,28 +346,28 @@
 				"",
 				"To work with it, place the reagents in the pedestals and the focus in the Enchanting Apparatus itself, then Sneak Right Click the Apparatus with an empty hand."
 			],
-			dependencies: [I;940],
-			id: 983,
+			dependencies: ["00000000000003AC"],
+			id: "00000000000003D7",
 			tasks: [
 				{
-					id: 987,
+					id: "00000000000003DB",
 					type: "item",
 					item: "ars_nouveau:arcane_core"
 				},
 				{
-					id: 988,
+					id: "00000000000003DC",
 					type: "item",
 					item: "ars_nouveau:enchanting_apparatus"
 				},
 				{
-					id: 989,
+					id: "00000000000003DD",
 					type: "item",
 					item: "ars_nouveau:arcane_pedestal",
 					count: 8L
 				}
 			],
 			rewards: [{
-				id: 1532,
+				id: "00000000000005FC",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -384,22 +385,22 @@
 				"",
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			],
-			dependencies: [I;983],
-			id: 990,
+			dependencies: ["00000000000003D7"],
+			id: "00000000000003DE",
 			tasks: [
 				{
-					id: 991,
+					id: "00000000000003DF",
 					type: "item",
 					item: "ars_nouveau:amulet_of_mana_regen"
 				},
 				{
-					id: 994,
+					id: "00000000000003E2",
 					type: "item",
 					item: "ars_nouveau:ring_of_lesser_discount"
 				}
 			],
 			rewards: [{
-				id: 2554,
+				id: "00000000000009FA",
 				type: "item",
 				item: "ars_nouveau:void_jar"
 			}]
@@ -414,15 +415,15 @@
 				"",
 				"Build a Crystallizer early on to help obtain more of these very useful gems."
 			],
-			dependencies: [I;950],
-			id: 999,
+			dependencies: ["00000000000003B6"],
+			id: "00000000000003E7",
 			tasks: [{
-				id: 1000,
+				id: "00000000000003E8",
 				type: "item",
 				item: "ars_nouveau:crystallizer"
 			}],
 			rewards: [{
-				id: 1663,
+				id: "000000000000067F",
 				type: "item",
 				item: "ars_nouveau:glyph_light"
 			}]
@@ -437,15 +438,15 @@
 				"",
 				"Use a Dominion Wand to set the links. "
 			],
-			dependencies: [I;983],
-			id: 1003,
+			dependencies: ["00000000000003D7"],
+			id: "00000000000003EB",
 			tasks: [{
-				id: 1004,
+				id: "00000000000003EC",
 				type: "item",
 				item: "ars_nouveau:arcane_relay"
 			}],
 			rewards: [{
-				id: 1007,
+				id: "00000000000003EF",
 				type: "item",
 				item: "ars_nouveau:dominion_wand"
 			}]
@@ -454,15 +455,15 @@
 			x: -2.0d,
 			y: -3.5d,
 			description: ["A more advanced Mana Relay capable of pulling from and sending to multiple locations."],
-			dependencies: [I;1003],
-			id: 1005,
+			dependencies: ["00000000000003EB"],
+			id: "00000000000003ED",
 			tasks: [{
-				id: 1006,
+				id: "00000000000003EE",
 				type: "item",
 				item: "ars_nouveau:arcane_relay_splitter"
 			}],
 			rewards: [{
-				id: 1534,
+				id: "00000000000005FE",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -478,15 +479,15 @@
 				"",
 				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
 			],
-			dependencies: [I;1015],
-			id: 1008,
+			dependencies: ["00000000000003F7"],
+			id: "00000000000003F0",
 			tasks: [{
-				id: 1009,
+				id: "00000000000003F1",
 				type: "item",
 				item: "ars_nouveau:whelp_charm"
 			}],
 			rewards: [{
-				id: 2540,
+				id: "00000000000009EC",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -504,21 +505,21 @@
 				"",
 				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
 			],
-			dependencies: [I;2541],
-			id: 1010,
+			dependencies: ["00000000000009ED"],
+			id: "00000000000003F2",
 			tasks: [{
-				id: 1011,
+				id: "00000000000003F3",
 				type: "item",
 				item: "ars_nouveau:carbuncle_charm"
 			}],
 			rewards: [
 				{
-					id: 2538,
+					id: "00000000000009EA",
 					type: "item",
 					item: "ars_nouveau:allow_scroll"
 				},
 				{
-					id: 2539,
+					id: "00000000000009EB",
 					type: "item",
 					item: "ars_nouveau:deny_scroll"
 				}
@@ -534,15 +535,15 @@
 				"",
 				"The number of wild Sylphs have dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			],
-			dependencies: [I;1015],
-			id: 1012,
+			dependencies: ["00000000000003F7"],
+			id: "00000000000003F4",
 			tasks: [{
-				id: 1013,
+				id: "00000000000003F5",
 				type: "item",
 				item: "ars_nouveau:sylph_charm"
 			}],
 			rewards: [{
-				id: 1538,
+				id: "0000000000000602",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -560,15 +561,15 @@
 				"",
 				"The Summoning Crystal is crafted with the Enchanting Apparatus, as are all Charms."
 			],
-			dependencies: [I;2541],
-			id: 1015,
+			dependencies: ["00000000000009ED"],
+			id: "00000000000003F7",
 			tasks: [{
-				id: 1016,
+				id: "00000000000003F8",
 				type: "item",
 				item: "ars_nouveau:summoning_crystal"
 			}],
 			rewards: [{
-				id: 1598,
+				id: "000000000000063E",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -581,15 +582,15 @@
 			y: -5.5d,
 			subtitle: "Vulcanologist in Training",
 			description: ["Not every practitioner is born with a green-thumb. Thankfully, mana naturally trickles out of molten lava, escaping into the air. This device assists in collecting these trace amounts of mana so they may be put to use."],
-			dependencies: [I;950],
-			id: 1693,
+			dependencies: ["00000000000003B6"],
+			id: "000000000000069D",
 			tasks: [{
-				id: 1694,
+				id: "000000000000069E",
 				type: "item",
 				item: "ars_nouveau:volcanic_accumulator"
 			}],
 			rewards: [{
-				id: 1696,
+				id: "00000000000006A0",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -603,14 +604,14 @@
 			x: 4.5d,
 			y: -6.5d,
 			description: ["What good is magic if it cannot be made to work for us without constant intervention?"],
-			dependencies: [I;940],
-			id: 2541,
+			dependencies: ["00000000000003AC"],
+			id: "00000000000009ED",
 			tasks: [{
-				id: 2542,
+				id: "00000000000009EE",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 3245,
+				id: "0000000000000CAD",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -636,22 +637,22 @@
 				"",
 				"The growth of the crop may then provide mana to a Condenser to keep the Turret running."
 			],
-			dependencies: [I;946],
-			id: 2543,
+			dependencies: ["00000000000003B2"],
+			id: "00000000000009EF",
 			tasks: [
 				{
-					id: 2544,
+					id: "00000000000009F0",
 					type: "item",
 					item: "ars_nouveau:glyph_grow"
 				},
 				{
-					id: 2545,
+					id: "00000000000009F1",
 					type: "item",
 					item: "ars_nouveau:glyph_harvest"
 				}
 			],
 			rewards: [{
-				id: 2556,
+				id: "00000000000009FC",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -670,15 +671,15 @@
 				"",
 				"● Projectile > Redstone Signal"
 			],
-			dependencies: [I;946],
-			id: 2546,
+			dependencies: ["00000000000003B2"],
+			id: "00000000000009F2",
 			tasks: [{
-				id: 2547,
+				id: "00000000000009F3",
 				type: "item",
 				item: "ars_nouveau:glyph_redstone_signal"
 			}],
 			rewards: [{
-				id: 2557,
+				id: "00000000000009FD",
 				type: "command",
 				title: "Rare Ars Nouveau Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -710,23 +711,23 @@
 				"",
 				"Multiple Fortune Augments may be stacked for higher yields. Fortune also applies to mob kills made by the spell, just like the Looting enchant."
 			],
-			dependencies: [I;962],
+			dependencies: ["00000000000003C2"],
 			min_width: 300,
-			id: 2551,
+			id: "00000000000009F7",
 			tasks: [
 				{
-					id: 2552,
+					id: "00000000000009F8",
 					type: "item",
 					item: "ars_nouveau:glyph_smelt"
 				},
 				{
-					id: 2553,
+					id: "00000000000009F9",
 					type: "item",
 					item: "ars_nouveau:glyph_pickup"
 				}
 			],
 			rewards: [{
-				id: 2558,
+				id: "00000000000009FE",
 				type: "item",
 				item: "ars_nouveau:glyph_fortune"
 			}]
@@ -741,15 +742,15 @@
 				"",
 				"Projectile > Splitting x8 > Lightning"
 			],
-			dependencies: [I;964],
-			id: 2573,
+			dependencies: ["00000000000003C4"],
+			id: "0000000000000A0D",
 			tasks: [{
-				id: 2574,
+				id: "0000000000000A0E",
 				type: "item",
 				item: "ars_nouveau:glyph_lightning"
 			}],
 			rewards: [{
-				id: 2615,
+				id: "0000000000000A37",
 				type: "item",
 				item: "ars_nouveau:glyph_fangs"
 			}]

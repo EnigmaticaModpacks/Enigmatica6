@@ -1,7 +1,8 @@
 {
-	id: 683,
+	id: "00000000000002AB",
+	group: "",
+	order_index: 9,
 	filename: "storage",
-	order_index: 7,
 	title: "Storage",
 	icon: "minecraft:chest",
 	default_quest_shape: "",
@@ -25,13 +26,13 @@
 				"● $storage/gas",
 				"● $storage/liquid"
 			],
-			id: 1023,
+			id: "00000000000003FF",
 			tasks: [{
-				id: 1024,
+				id: "0000000000000400",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 3235,
+				id: "0000000000000CA3",
 				type: "xp",
 				xp: 100
 			}]
@@ -47,14 +48,14 @@
 				"",
 				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
 			],
-			dependencies: [I;1023],
-			id: 1025,
+			dependencies: ["00000000000003FF"],
+			id: "0000000000000401",
 			tasks: [{
-				id: 2387,
+				id: "0000000000000953",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 1686,
+				id: "0000000000000696",
 				type: "item",
 				item: "prettypipes:wrench"
 			}]
@@ -68,16 +69,16 @@
 				"",
 				"Proceed to the Refined Storage quests for more help in getting started with this expansive mod."
 			],
-			dependencies: [I;1023],
+			dependencies: ["00000000000003FF"],
 			dependency_requirement: "one_completed",
-			id: 1027,
+			id: "0000000000000403",
 			tasks: [{
-				id: 1689,
+				id: "0000000000000699",
 				type: "item",
 				item: "refinedstorage:controller"
 			}],
 			rewards: [{
-				id: 1787,
+				id: "00000000000006FB",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -95,21 +96,21 @@
 				"",
 				"Chests can be upgraded in place by using an upgrade item on the chest!"
 			],
-			dependencies: [I;1023],
-			id: 1029,
+			dependencies: ["00000000000003FF"],
+			id: "0000000000000405",
 			tasks: [{
-				id: 3749,
+				id: "0000000000000EA5",
 				type: "item",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "enigmatica:quests/storage/wood_to_iron"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2667,
+				id: "0000000000000A6B",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -123,16 +124,16 @@
 			y: -7.5d,
 			subtitle: "I Like Big Bins and I Cannot Lie",
 			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "],
-			dependencies: [I;1023],
-			id: 1031,
+			dependencies: ["00000000000003FF"],
+			id: "0000000000000407",
 			tasks: [{
-				id: 1678,
+				id: "000000000000068E",
 				type: "item",
 				item: "mekanism:basic_bin"
 			}],
 			rewards: [
 				{
-					id: 2652,
+					id: "0000000000000A5C",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -140,7 +141,7 @@
 					player_command: false
 				},
 				{
-					id: 2668,
+					id: "0000000000000A6C",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -154,15 +155,15 @@
 			x: 1.0d,
 			y: -9.0d,
 			subtitle: "Physics Breaking Hoarding",
-			dependencies: [I;1023],
-			id: 1033,
+			dependencies: ["00000000000003FF"],
+			id: "0000000000000409",
 			tasks: [{
-				id: 3931,
+				id: "0000000000000F5B",
 				type: "item",
 				item: "industrialforegoing:common_black_hole_unit"
 			}],
 			rewards: [{
-				id: 1692,
+				id: "000000000000069C",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -176,14 +177,14 @@
 			x: -2.5d,
 			y: -4.5d,
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "],
-			dependencies: [I;1023],
-			id: 1035,
+			dependencies: ["00000000000003FF"],
+			id: "000000000000040B",
 			tasks: [{
-				id: 1036,
+				id: "000000000000040C",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2654,
+				id: "0000000000000A5E",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -201,14 +202,14 @@
 				"",
 				"Plonk allows you to place up to four stacks of items in any block space. Simply hold the item, point at a block, and press P to place. Right click to pick the items back up. "
 			],
-			dependencies: [I;1023],
-			id: 1037,
+			dependencies: ["00000000000003FF"],
+			id: "000000000000040D",
 			tasks: [{
-				id: 1038,
+				id: "000000000000040E",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2653,
+				id: "0000000000000A5D",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -226,15 +227,15 @@
 				"",
 				"Trim blocks may also be used to bridge gaps, allowing the controller to see around corners."
 			],
-			dependencies: [I;2406],
-			id: 1039,
+			dependencies: ["0000000000000966"],
+			id: "000000000000040F",
 			tasks: [{
-				id: 1676,
+				id: "000000000000068C",
 				type: "item",
 				item: "storagedrawers:controller"
 			}],
 			rewards: [{
-				id: 2475,
+				id: "00000000000009AB",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -245,15 +246,15 @@
 		{
 			x: -3.5d,
 			y: -7.5d,
-			dependencies: [I;1031],
-			id: 2367,
+			dependencies: ["0000000000000407"],
+			id: "000000000000093F",
 			tasks: [{
-				id: 2368,
+				id: "0000000000000940",
 				type: "item",
 				item: "mekanism:advanced_bin"
 			}],
 			rewards: [{
-				id: 2659,
+				id: "0000000000000A63",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -264,15 +265,15 @@
 		{
 			x: -4.5d,
 			y: -7.5d,
-			dependencies: [I;2367],
-			id: 2369,
+			dependencies: ["000000000000093F"],
+			id: "0000000000000941",
 			tasks: [{
-				id: 2370,
+				id: "0000000000000942",
 				type: "item",
 				item: "mekanism:elite_bin"
 			}],
 			rewards: [{
-				id: 2669,
+				id: "0000000000000A6D",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -283,15 +284,15 @@
 		{
 			x: -5.5d,
 			y: -7.5d,
-			dependencies: [I;2369],
-			id: 2371,
+			dependencies: ["0000000000000941"],
+			id: "0000000000000943",
 			tasks: [{
-				id: 2372,
+				id: "0000000000000944",
 				type: "item",
 				item: "mekanism:ultimate_bin"
 			}],
 			rewards: [{
-				id: 2472,
+				id: "00000000000009A8",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -302,24 +303,24 @@
 		{
 			x: 2.0d,
 			y: -10.0d,
-			dependencies: [I;1033],
-			id: 2379,
+			dependencies: ["0000000000000409"],
+			id: "000000000000094B",
 			tasks: [{
-				id: 3932,
+				id: "0000000000000F5C",
 				type: "item",
 				item: {
 					id: "industrialforegoing:infinity_backpack",
-					Count: true,
+					Count: 1b,
 					tag: {
-						CanCharge: true,
-						Special: false,
+						CanCharge: 1b,
+						Special: 0b,
 						Selected: "POOR",
 						Energy: 0L
 					}
 				}
 			}],
 			rewards: [{
-				id: 2660,
+				id: "0000000000000A64",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -333,21 +334,21 @@
 			x: -0.5d,
 			y: -11.0d,
 			description: ["Just a touch of extra bling."],
-			dependencies: [I;1029],
-			id: 2383,
+			dependencies: ["0000000000000405"],
+			id: "000000000000094F",
 			tasks: [{
-				id: 3750,
+				id: "0000000000000EA6",
 				type: "item",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "enigmatica:quests/storage/iron_to_gold"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2651,
+				id: "0000000000000A5B",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -361,21 +362,21 @@
 			x: -0.5d,
 			y: -12.0d,
 			description: ["Certainly quite the flex, storing your item in a box of diamond."],
-			dependencies: [I;2383],
-			id: 2385,
+			dependencies: ["000000000000094F"],
+			id: "0000000000000951",
 			tasks: [{
-				id: 3751,
+				id: "0000000000000EA7",
 				type: "item",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "enigmatica:quests/storage/gold_to_diamond"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2467,
+				id: "00000000000009A3",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -403,17 +404,17 @@
 				"",
 				"Finally, pipes may be covered with most any block, even transparent or partial blocks. Simply hold the desired 'cover' in your off hand and right click a section of pipe with the wrench to apply the block. "
 			],
-			dependencies: [I;1025],
+			dependencies: ["0000000000000401"],
 			min_width: 250,
-			id: 2388,
+			id: "0000000000000954",
 			tasks: [{
-				id: 2389,
+				id: "0000000000000955",
 				type: "item",
 				item: "prettypipes:pipe",
 				count: 12L
 			}],
 			rewards: [{
-				id: 2655,
+				id: "0000000000000A5F",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -435,24 +436,24 @@
 				"",
 				"A simple network might consist of two chests connected by two lengths of pipe and either an Extraction Module or a Retrieval Module in one of the pipes. "
 			],
-			dependencies: [I;2388],
-			id: 2390,
+			dependencies: ["0000000000000954"],
+			id: "0000000000000956",
 			tasks: [
 				{
-					id: 2415,
+					id: "000000000000096F",
 					type: "item",
 					item: "prettypipes:low_retrieval_module",
 					count: 3L
 				},
 				{
-					id: 2417,
+					id: "0000000000000971",
 					type: "item",
 					item: "prettypipes:low_extraction_module",
 					count: 3L
 				}
 			],
 			rewards: [{
-				id: 2664,
+				id: "0000000000000A68",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -472,22 +473,22 @@
 				"",
 				"Similarly, the Stack Limiter limits the number of items allowed in an inventory and works alongside the filter. A Stack Limiter set to 1, for instance, will only allow one of each item listed in the Filter module. "
 			],
-			dependencies: [I;2388],
-			id: 2392,
+			dependencies: ["0000000000000954"],
+			id: "0000000000000958",
 			tasks: [
 				{
-					id: 2393,
+					id: "0000000000000959",
 					type: "item",
 					item: "prettypipes:low_filter_module"
 				},
 				{
-					id: 2425,
+					id: "0000000000000979",
 					type: "item",
 					item: "prettypipes:stack_size_module"
 				}
 			],
 			rewards: [{
-				id: 2424,
+				id: "0000000000000978",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -501,17 +502,17 @@
 			y: -2.0d,
 			subtitle: "No Time To Wait",
 			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "],
-			dependencies: [I;2392],
+			dependencies: ["0000000000000958"],
 			dependency_requirement: "one_started",
-			id: 2394,
+			id: "000000000000095A",
 			tasks: [{
-				id: 2395,
+				id: "000000000000095B",
 				type: "item",
 				item: "prettypipes:low_speed_module",
 				count: 3L
 			}],
 			rewards: [{
-				id: 2657,
+				id: "0000000000000A61",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -531,23 +532,23 @@
 				"",
 				"A Low Priority module is excellent for creating a 'default' path, for instance to send to an overflow chest or a trash can. "
 			],
-			dependencies: [I;2390],
+			dependencies: ["0000000000000956"],
 			dependency_requirement: "one_started",
-			id: 2396,
+			id: "000000000000095C",
 			tasks: [
 				{
-					id: 2413,
+					id: "000000000000096D",
 					type: "item",
 					item: "prettypipes:low_high_priority_module"
 				},
 				{
-					id: 2414,
+					id: "000000000000096E",
 					type: "item",
 					item: "prettypipes:low_low_priority_module"
 				}
 			],
 			rewards: [{
-				id: 2656,
+				id: "0000000000000A60",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -567,15 +568,15 @@
 				"",
 				"Items may be easily dumped back into the network by placing them in the right hand slots."
 			],
-			dependencies: [I;2388],
-			id: 2400,
+			dependencies: ["0000000000000954"],
+			id: "0000000000000960",
 			tasks: [{
-				id: 2401,
+				id: "0000000000000961",
 				type: "item",
 				item: "prettypipes:item_terminal"
 			}],
 			rewards: [{
-				id: 2408,
+				id: "0000000000000968",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -591,15 +592,15 @@
 				"",
 				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will reguest for 64 crafts, and Ctrl Click will request for 10."
 			],
-			dependencies: [I;2400],
-			id: 2402,
+			dependencies: ["0000000000000960"],
+			id: "0000000000000962",
 			tasks: [{
-				id: 2403,
+				id: "0000000000000963",
 				type: "item",
 				item: "prettypipes:crafting_terminal"
 			}],
 			rewards: [{
-				id: 2658,
+				id: "0000000000000A62",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -616,16 +617,16 @@
 				"",
 				"The Pipe Pressurizer solves this by increasing the speed of every item passing through the connected network at the cost of a little energy. "
 			],
-			dependencies: [I;2394],
+			dependencies: ["000000000000095A"],
 			dependency_requirement: "one_started",
-			id: 2404,
+			id: "0000000000000964",
 			tasks: [{
-				id: 2405,
+				id: "0000000000000965",
 				type: "item",
 				item: "prettypipes:pressurizer"
 			}],
 			rewards: [{
-				id: 2410,
+				id: "000000000000096A",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -643,22 +644,22 @@
 				"",
 				"Drawers may be used standalone or placed next to a Controller to link them all together. Each Drawer can accept multiple upgrades to expand their capacity and features."
 			],
-			dependencies: [I;1023],
-			id: 2406,
+			dependencies: ["00000000000003FF"],
+			id: "0000000000000966",
 			tasks: [{
-				id: 2407,
+				id: "0000000000000967",
 				type: "item",
 				title: "Any storagedrawers:drawers",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "storagedrawers:drawers"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2649,
+				id: "0000000000000A59",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -688,16 +689,16 @@
 				"",
 				"Creating Proxies like this is an excellent method for setting up more than 3 recipes per machine, also. "
 			],
-			dependencies: [I;2402],
+			dependencies: ["0000000000000962"],
 			min_width: 300,
-			id: 2411,
+			id: "000000000000096B",
 			tasks: [{
-				id: 2412,
+				id: "000000000000096C",
 				type: "item",
 				item: "prettypipes:low_crafting_module"
 			}],
 			rewards: [{
-				id: 2427,
+				id: "000000000000097B",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -716,23 +717,23 @@
 				"",
 				"For either of these to work, they ought to be placed in a section of pipe along with an Extraction module. Both will ignore priorities set on destination pipes. "
 			],
-			dependencies: [I;2396],
+			dependencies: ["000000000000095C"],
 			dependency_requirement: "one_started",
-			id: 2418,
+			id: "0000000000000972",
 			tasks: [
 				{
-					id: 2419,
+					id: "0000000000000973",
 					type: "item",
 					item: "prettypipes:round_robin_sorting_modifier"
 				},
 				{
-					id: 2421,
+					id: "0000000000000975",
 					type: "item",
 					item: "prettypipes:random_sorting_modifier"
 				}
 			],
 			rewards: [{
-				id: 2423,
+				id: "0000000000000977",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -743,15 +744,15 @@
 		{
 			x: -2.5d,
 			y: -10.5d,
-			dependencies: [I;2406],
-			id: 2432,
+			dependencies: ["0000000000000966"],
+			id: "0000000000000980",
 			tasks: [{
-				id: 2464,
+				id: "00000000000009A0",
 				type: "item",
 				item: "storagedrawers:emerald_storage_upgrade"
 			}],
 			rewards: [{
-				id: 2465,
+				id: "00000000000009A1",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -763,15 +764,15 @@
 			x: -3.5d,
 			y: -9.5d,
 			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."],
-			dependencies: [I;2406],
-			id: 2434,
+			dependencies: ["0000000000000966"],
+			id: "0000000000000982",
 			tasks: [{
-				id: 2435,
+				id: "0000000000000983",
 				type: "item",
 				item: "storagedrawers:one_stack_upgrade"
 			}],
 			rewards: [{
-				id: 2474,
+				id: "00000000000009AA",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -783,15 +784,15 @@
 			x: -4.5d,
 			y: -9.0d,
 			description: ["Excess items will be automatically voided."],
-			dependencies: [I;2406],
-			id: 2436,
+			dependencies: ["0000000000000966"],
+			id: "0000000000000984",
 			tasks: [{
-				id: 2437,
+				id: "0000000000000985",
 				type: "item",
 				item: "storagedrawers:void_upgrade"
 			}],
 			rewards: [{
-				id: 2650,
+				id: "0000000000000A5A",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -802,7 +803,7 @@
 		{
 			icon: {
 				id: "sophisticatedbackpacks:backpack",
-				Count: true,
+				Count: 1b,
 				tag: {
 					inventorySlots: 27,
 					upgradeSlots: 1,
@@ -823,15 +824,15 @@
 				"",
 				"Beyond these already excellent features, they can also host a number of very useful upgrades."
 			],
-			dependencies: [I;1023],
-			id: 2438,
+			dependencies: ["00000000000003FF"],
+			id: "0000000000000986",
 			tasks: [{
-				id: 2456,
+				id: "0000000000000998",
 				type: "checkmark",
 				title: "Sophisticated Backpacks"
 			}],
 			rewards: [{
-				id: 2455,
+				id: "0000000000000997",
 				type: "item",
 				item: "sophisticatedbackpacks:backpack"
 			}]
@@ -839,15 +840,15 @@
 		{
 			x: 2.0d,
 			y: -6.5d,
-			dependencies: [I;2438],
-			id: 2440,
+			dependencies: ["0000000000000986"],
+			id: "0000000000000988",
 			tasks: [{
-				id: 2441,
+				id: "0000000000000989",
 				type: "item",
 				item: "sophisticatedbackpacks:iron_backpack"
 			}],
 			rewards: [{
-				id: 2457,
+				id: "0000000000000999",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -858,15 +859,15 @@
 		{
 			x: 3.0d,
 			y: -6.0d,
-			dependencies: [I;2440],
-			id: 2442,
+			dependencies: ["0000000000000988"],
+			id: "000000000000098A",
 			tasks: [{
-				id: 2443,
+				id: "000000000000098B",
 				type: "item",
 				item: "sophisticatedbackpacks:gold_backpack"
 			}],
 			rewards: [{
-				id: 2662,
+				id: "0000000000000A66",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -877,15 +878,15 @@
 		{
 			x: 4.0d,
 			y: -6.0d,
-			dependencies: [I;2442],
-			id: 2444,
+			dependencies: ["000000000000098A"],
+			id: "000000000000098C",
 			tasks: [{
-				id: 2445,
+				id: "000000000000098D",
 				type: "item",
 				item: "sophisticatedbackpacks:diamond_backpack"
 			}],
 			rewards: [{
-				id: 2663,
+				id: "0000000000000A67",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -897,15 +898,15 @@
 			x: 3.5d,
 			y: -7.5d,
 			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."],
-			dependencies: [I;2438],
-			id: 2446,
+			dependencies: ["0000000000000986"],
+			id: "000000000000098E",
 			tasks: [{
-				id: 2447,
+				id: "000000000000098F",
 				type: "item",
 				item: "sophisticatedbackpacks:magnet_upgrade"
 			}],
 			rewards: [{
-				id: 2640,
+				id: "0000000000000A50",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -917,16 +918,16 @@
 			x: 5.5d,
 			y: -7.5d,
 			description: ["Never lose your precious goods again!"],
-			dependencies: [I;2438],
-			id: 2448,
+			dependencies: ["0000000000000986"],
+			id: "0000000000000990",
 			tasks: [{
-				id: 2449,
+				id: "0000000000000991",
 				type: "item",
 				item: "sophisticatedbackpacks:everlasting_upgrade"
 			}],
 			rewards: [
 				{
-					id: 2460,
+					id: "000000000000099C",
 					type: "command",
 					title: "Sorcerer's Delight",
 					icon: "kubejs:sorcerers_delight",
@@ -934,7 +935,7 @@
 					player_command: false
 				},
 				{
-					id: 2666,
+					id: "0000000000000A6A",
 					type: "command",
 					title: "Alchemist's Delight",
 					icon: "kubejs:alchemists_delight",
@@ -947,15 +948,15 @@
 			x: 2.5d,
 			y: -7.5d,
 			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "],
-			dependencies: [I;2438],
-			id: 2450,
+			dependencies: ["0000000000000986"],
+			id: "0000000000000992",
 			tasks: [{
-				id: 2451,
+				id: "0000000000000993",
 				type: "item",
 				item: "sophisticatedbackpacks:pickup_upgrade"
 			}],
 			rewards: [{
-				id: 2461,
+				id: "000000000000099D",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -968,15 +969,15 @@
 			y: -7.5d,
 			subtitle: "You're Not You When You're Hungry",
 			description: ["Need a snack? Let your backpack provide."],
-			dependencies: [I;2438],
-			id: 2452,
+			dependencies: ["0000000000000986"],
+			id: "0000000000000994",
 			tasks: [{
-				id: 2453,
+				id: "0000000000000995",
 				type: "item",
 				item: "sophisticatedbackpacks:feeding_upgrade"
 			}],
 			rewards: [{
-				id: 2641,
+				id: "0000000000000A51",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -987,10 +988,10 @@
 		{
 			x: 3.0d,
 			y: -11.0d,
-			dependencies: [I;2379],
-			id: 3933,
+			dependencies: ["000000000000094B"],
+			id: "0000000000000F5D",
 			tasks: [{
-				id: 3934,
+				id: "0000000000000F5E",
 				type: "item",
 				item: "industrialforegoing:black_hole_controller"
 			}]

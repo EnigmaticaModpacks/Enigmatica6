@@ -1,7 +1,8 @@
 {
-	id: 1280,
+	id: "0000000000000500",
+	group: "",
+	order_index: 22,
 	filename: "botania",
-	order_index: 20,
 	title: "Botania",
 	icon: "botania:mana_pylon",
 	default_quest_shape: "",
@@ -18,20 +19,20 @@
 				"",
 				"~MuteTiefling"
 			],
-			id: 1281,
+			id: "0000000000000501",
 			tasks: [{
-				id: 1282,
+				id: "0000000000000502",
 				type: "checkmark",
 				icon: "botania:lexicon"
 			}],
 			rewards: [
 				{
-					id: 1283,
+					id: "0000000000000503",
 					type: "item",
 					item: "botania:lexicon"
 				},
 				{
-					id: 1284,
+					id: "0000000000000504",
 					type: "item",
 					item: "botania:pestle_and_mortar"
 				}
@@ -48,15 +49,15 @@
 				"",
 				"It is also possible to entice these flowers to grow by placing the petals on the ground and applying bone meal. Be careful harvesting the tall variants, as they're much less hearty than their smaller counterparts. "
 			],
-			dependencies: [I;1281],
-			id: 1285,
+			dependencies: ["0000000000000501"],
+			id: "0000000000000505",
 			tasks: [{
-				id: 1287,
+				id: "0000000000000507",
 				type: "item",
 				title: "Any botania:mystical_flowers",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "botania:mystical_flowers"
 					}
@@ -65,23 +66,23 @@
 			}],
 			rewards: [
 				{
-					id: 1288,
+					id: "0000000000000508",
 					type: "item",
 					item: "botania:flower_bag"
 				},
 				{
-					id: 1293,
+					id: "000000000000050D",
 					type: "item",
 					item: {
 						id: "minecraft:shears",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 2672,
+					id: "0000000000000A70",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -95,15 +96,15 @@
 			y: 1.0d,
 			subtitle: "Miracle Grow",
 			description: ["Having trouble finding some colors of Mystical Flower? A bit of Floral Fertilizer can sprout them in no time."],
-			dependencies: [I;1285],
-			id: 1289,
+			dependencies: ["0000000000000505"],
+			id: "0000000000000509",
 			tasks: [{
-				id: 1290,
+				id: "000000000000050A",
 				type: "item",
 				item: "botania:fertilizer"
 			}],
 			rewards: [{
-				id: 1510,
+				id: "00000000000005E6",
 				type: "item",
 				item: "botania:fertilizer",
 				count: 16
@@ -116,23 +117,23 @@
 			y: 2.5d,
 			subtitle: "Maybe it's Nanites?",
 			description: ["Something strange occurs when Mystical Petals are combined with certain reagents and a seed. They seem to spontaneously unfold and reform, hijacking the seed and making an entirely new construct. "],
-			dependencies: [I;1285],
-			id: 1291,
+			dependencies: ["0000000000000505"],
+			id: "000000000000050B",
 			tasks: [
 				{
-					id: 1292,
+					id: "000000000000050C",
 					type: "item",
 					item: "botania:apothecary_default"
 				},
 				{
-					id: 1294,
+					id: "000000000000050E",
 					type: "item",
 					item: "botania:pure_daisy"
 				}
 			],
 			rewards: [
 				{
-					id: 1610,
+					id: "000000000000064A",
 					type: "command",
 					title: "Rare Botania Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -140,7 +141,7 @@
 					player_command: false
 				},
 				{
-					id: 2673,
+					id: "0000000000000A71",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -155,24 +156,24 @@
 			y: 3.5d,
 			subtitle: "Breathing New Life",
 			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials. Perhaps this essence can itself be exploited more directly?"],
-			dependencies: [I;1291],
-			id: 1295,
+			dependencies: ["000000000000050B"],
+			id: "000000000000050F",
 			tasks: [
 				{
-					id: 1309,
+					id: "000000000000051D",
 					type: "item",
 					item: "botania:livingwood",
 					count: 16L
 				},
 				{
-					id: 1310,
+					id: "000000000000051E",
 					type: "item",
 					item: "botania:livingrock",
 					count: 16L
 				}
 			],
 			rewards: [{
-				id: 1511,
+				id: "00000000000005E7",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -193,15 +194,15 @@
 				"",
 				"A Comparator can be used to read the 'state' of the Runic Altar, creating a helpful control for automation. Refer to the Lexica Botania for more details. "
 			],
-			dependencies: [I;1281],
-			id: 1299,
+			dependencies: ["0000000000000501"],
+			id: "0000000000000513",
 			tasks: [{
-				id: 1300,
+				id: "0000000000000514",
 				type: "item",
 				item: "botania:runic_altar"
 			}],
 			rewards: [{
-				id: 1509,
+				id: "00000000000005E5",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -222,41 +223,41 @@
 				"",
 				"Refer to the Lexica Botania for instructions on building the portal. The Lexica should be one of the first things sent through the portal to unlock further knowleedge"
 			],
-			dependencies: [I;1303],
-			id: 1301,
+			dependencies: ["0000000000000517"],
+			id: "0000000000000515",
 			tasks: [
 				{
-					id: 1302,
+					id: "0000000000000516",
 					type: "item",
 					item: "botania:alfheim_portal"
 				},
 				{
-					id: 1402,
+					id: "000000000000057A",
 					type: "item",
 					item: "botania:natura_pylon",
 					count: 2L
 				},
 				{
-					id: 1403,
+					id: "000000000000057B",
 					type: "item",
 					item: "botania:mana_pool",
 					count: 2L
 				},
 				{
-					id: 1404,
+					id: "000000000000057C",
 					type: "item",
 					item: "botania:glimmering_livingwood",
 					count: 3L
 				},
 				{
-					id: 1405,
+					id: "000000000000057D",
 					type: "item",
 					item: "botania:livingwood",
 					count: 8L
 				}
 			],
 			rewards: [{
-				id: 1496,
+				id: "00000000000005D8",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -273,34 +274,34 @@
 				"",
 				"Upon placing an ingot of Manasteel, a Mana Diamond, and finally a Mana Pearl, something strange happens. The Pearl seems to warp the mana around it and draw it along the conduit lines made by the Spark. Once more, causing spontaneous re-assembly of the materials present to form a new substance."
 			],
-			dependencies: [I;1369],
-			id: 1303,
+			dependencies: ["0000000000000559"],
+			id: "0000000000000517",
 			tasks: [
 				{
-					id: 1304,
+					id: "0000000000000518",
 					type: "item",
 					item: "botania:terra_plate"
 				},
 				{
-					id: 1391,
+					id: "000000000000056F",
 					type: "item",
 					item: "botania:livingrock",
 					count: 5L
 				},
 				{
-					id: 1392,
+					id: "0000000000000570",
 					type: "item",
 					item: "minecraft:lapis_block",
 					count: 4L
 				},
 				{
-					id: 1433,
+					id: "0000000000000599",
 					type: "item",
 					item: "botania:terrasteel_ingot"
 				}
 			],
 			rewards: [{
-				id: 1497,
+				id: "00000000000005D9",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -317,15 +318,15 @@
 				"",
 				"Breaking the Mana Pool will cause all stored mana to be lost. Placing a Comparator against it will allow the volume to be read for automation purposes. "
 			],
-			dependencies: [I;1295],
-			id: 1305,
+			dependencies: ["000000000000050F"],
+			id: "0000000000000519",
 			tasks: [{
-				id: 1306,
+				id: "000000000000051A",
 				type: "item",
 				item: "botania:mana_pool"
 			}],
 			rewards: [{
-				id: 1514,
+				id: "00000000000005EA",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -344,15 +345,15 @@
 				"",
 				"Note that the closer they are to their destination, the faster they'll transfer mana as they won't fire another burst until the previous one has arrived at the destination. "
 			],
-			dependencies: [I;1295],
-			id: 1307,
+			dependencies: ["000000000000050F"],
+			id: "000000000000051B",
 			tasks: [{
-				id: 1308,
+				id: "000000000000051C",
 				type: "item",
 				item: "botania:mana_spreader"
 			}],
 			rewards: [{
-				id: 1513,
+				id: "00000000000005E9",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -368,19 +369,19 @@
 				"",
 				"The Wand of the Forest will be the tool of choice for linking Generating Flora, Mana Spreaders, and Mana Pools. Sneak + Right Click the source, then destination."
 			],
-			dependencies: [I;1295],
-			id: 1311,
+			dependencies: ["000000000000050F"],
+			id: "000000000000051F",
 			tasks: [{
-				id: 1312,
+				id: "0000000000000520",
 				type: "item",
 				item: {
 					id: "botania:twig_wand",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 1515,
+				id: "00000000000005EB",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -401,25 +402,25 @@
 				"",
 				"A simple contraption to deliver fuel automatically can be built with an Open Crate, a Pressure Plate of some sort, and some redstone. Be wary, however, as Mana Spreaders are redstone sensitive and will turn off if they receive a signal. Consider making a master shut-off for when the mana pool is full."
 			],
-			dependencies: [I;
-				1305,
-				1307,
-				1311
+			dependencies: [
+				"0000000000000519",
+				"000000000000051B",
+				"000000000000051F"
 			],
-			id: 1313,
+			id: "0000000000000521",
 			tasks: [{
-				id: 1314,
+				id: "0000000000000522",
 				type: "item",
 				item: "botania:endoflame"
 			}],
 			rewards: [
 				{
-					id: 1315,
+					id: "0000000000000523",
 					type: "item",
 					item: "botania:open_crate"
 				},
 				{
-					id: 1512,
+					id: "00000000000005E8",
 					type: "item",
 					item: "botania:monocle"
 				}
@@ -436,15 +437,15 @@
 				"",
 				"Summon forth the earth's final defenses and silence her cries, once and for all. "
 			],
-			dependencies: [I;1320],
-			id: 1316,
+			dependencies: ["0000000000000528"],
+			id: "0000000000000524",
 			tasks: [{
-				id: 1319,
+				id: "0000000000000527",
 				type: "item",
 				item: "botania:life_essence"
 			}],
 			rewards: [{
-				id: 1490,
+				id: "00000000000005D2",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -465,23 +466,23 @@
 				"",
 				"The Lexica Botania will show the exact structure required to build the arena."
 			],
-			dependencies: [I;1281],
-			id: 1320,
+			dependencies: ["0000000000000501"],
+			id: "0000000000000528",
 			tasks: [
 				{
-					id: 1321,
+					id: "0000000000000529",
 					type: "item",
 					item: "botania:gaia_pylon",
 					count: 4L
 				},
 				{
-					id: 1324,
+					id: "000000000000052C",
 					type: "item",
 					item: "minecraft:beacon"
 				}
 			],
 			rewards: [{
-				id: 1491,
+				id: "00000000000005D3",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -500,15 +501,15 @@
 				"",
 				"Summon and defeat the Guardian's second incarnation. "
 			],
-			dependencies: [I;1316],
-			id: 1322,
+			dependencies: ["0000000000000524"],
+			id: "000000000000052A",
 			tasks: [{
-				id: 1323,
+				id: "000000000000052B",
 				type: "item",
 				item: "botania:dice"
 			}],
 			rewards: [{
-				id: 1484,
+				id: "00000000000005CC",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -526,37 +527,37 @@
 				"",
 				"Now we have a useful method for passing new instructions to the Petal Apothecary without overloading the sensitive petals or to pass more refined instruction sets to the Altar itself. These can almost certainly be put to use in hand held tools, as well. "
 			],
-			dependencies: [I;1299],
-			id: 1325,
+			dependencies: ["0000000000000513"],
+			id: "000000000000052D",
 			tasks: [
 				{
-					id: 1326,
+					id: "000000000000052E",
 					type: "item",
 					item: "botania:rune_water"
 				},
 				{
-					id: 1327,
+					id: "000000000000052F",
 					type: "item",
 					item: "botania:rune_fire"
 				},
 				{
-					id: 1328,
+					id: "0000000000000530",
 					type: "item",
 					item: "botania:rune_earth"
 				},
 				{
-					id: 1329,
+					id: "0000000000000531",
 					type: "item",
 					item: "botania:rune_air"
 				},
 				{
-					id: 1330,
+					id: "0000000000000532",
 					type: "item",
 					item: "botania:rune_mana"
 				}
 			],
 			rewards: [{
-				id: 1508,
+				id: "00000000000005E4",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -569,15 +570,15 @@
 			y: 7.0d,
 			subtitle: "Bose-Enderman Condensate",
 			description: ["As if Ender Pearls weren't already mind bending enough, when soaked in mana they seem to have a warping effect on Mana in the immediate locale, causing it to behave unexpectedly."],
-			dependencies: [I;1313],
-			id: 1331,
+			dependencies: ["0000000000000521"],
+			id: "0000000000000533",
 			tasks: [{
-				id: 1332,
+				id: "0000000000000534",
 				type: "item",
 				item: "botania:mana_pearl"
 			}],
 			rewards: [{
-				id: 1516,
+				id: "00000000000005EC",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -590,15 +591,15 @@
 			y: 7.0d,
 			subtitle: "Superradiant Scattering",
 			description: ["The facets in this gem seem to be amplifying the energies bound within it. Doubtless, this material would serve well as a focus for further exploitation."],
-			dependencies: [I;1313],
-			id: 1333,
+			dependencies: ["0000000000000521"],
+			id: "0000000000000535",
 			tasks: [{
-				id: 1334,
+				id: "0000000000000536",
 				type: "item",
 				item: "botania:mana_diamond"
 			}],
 			rewards: [{
-				id: 1520,
+				id: "00000000000005F0",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -611,15 +612,15 @@
 			y: 9.0d,
 			subtitle: "Everlasting",
 			description: ["When exposed even briefly to a pool of mana, iron transforms into a sort of mana accumulator, storing up more mana for later use and even spontaneously re-organizing after rapid forceful impact events. While this seems like an obvious material to use for a tool or armor, perhaps other more delicate uses can be found as well."],
-			dependencies: [I;1313],
-			id: 1335,
+			dependencies: ["0000000000000521"],
+			id: "0000000000000537",
 			tasks: [{
-				id: 1336,
+				id: "0000000000000538",
 				type: "item",
 				item: "botania:manasteel_ingot"
 			}],
 			rewards: [{
-				id: 1521,
+				id: "00000000000005F1",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -632,15 +633,15 @@
 			y: 8.0d,
 			subtitle: "Is It... Squirming?",
 			description: ["An ordinary piece of string seems a poor choice for the wild nature of mana. It seems to be barely holding itself together. "],
-			dependencies: [I;1313],
-			id: 1337,
+			dependencies: ["0000000000000521"],
+			id: "0000000000000539",
 			tasks: [{
-				id: 1338,
+				id: "000000000000053A",
 				type: "item",
 				item: "botania:mana_string"
 			}],
 			rewards: [{
-				id: 1519,
+				id: "00000000000005EF",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -653,15 +654,15 @@
 			y: 8.0d,
 			subtitle: "Crystal Binding Compound",
 			description: ["It would seem that most any powder, when bathed in condensed mana, becomes a powerful bonding agent. This should prove useful"],
-			dependencies: [I;1313],
-			id: 1339,
+			dependencies: ["0000000000000521"],
+			id: "000000000000053B",
 			tasks: [{
-				id: 1340,
+				id: "000000000000053C",
 				type: "item",
 				item: "botania:mana_powder"
 			}],
 			rewards: [{
-				id: 1517,
+				id: "00000000000005ED",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -678,19 +679,19 @@
 				"",
 				"While primarily used for powering certain hand held devices, Bands of Mana are also an excellent means of long distance mana transportation as they charge and discharge rapidly."
 			],
-			dependencies: [I;1336],
-			id: 1341,
+			dependencies: ["0000000000000538"],
+			id: "000000000000053D",
 			tasks: [{
-				id: 1343,
+				id: "000000000000053F",
 				type: "item",
 				item: {
 					id: "botania:mana_ring",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 1518,
+				id: "00000000000005EE",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -709,22 +710,22 @@
 				"",
 				"Brews are potions with multiple uses and Incense Sticks apply their effects in a wide area. "
 			],
-			dependencies: [I;1325],
-			id: 1344,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000540",
 			tasks: [{
-				id: 1345,
+				id: "0000000000000541",
 				type: "item",
 				item: "botania:brewery"
 			}],
 			rewards: [
 				{
-					id: 1499,
+					id: "00000000000005DB",
 					type: "item",
 					item: "botania:vial",
 					count: 8
 				},
 				{
-					id: 2676,
+					id: "0000000000000A74",
 					type: "command",
 					title: "Alchemist's Delight",
 					icon: "kubejs:alchemists_delight",
@@ -737,15 +738,15 @@
 			x: 2.0d,
 			y: 6.5d,
 			description: ["For reasons yet unknown, globules of impure mana appear briefly after a life has been terminated. A Rosa Arcana is capable of absorbing and purifying these globules for further use."],
-			dependencies: [I;1325],
-			id: 1346,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000542",
 			tasks: [{
-				id: 1347,
+				id: "0000000000000543",
 				type: "item",
 				item: "botania:rosa_arcana"
 			}],
 			rewards: [{
-				id: 1500,
+				id: "00000000000005DC",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -758,25 +759,25 @@
 			y: 6.0d,
 			subtitle: "Don't Look Down",
 			description: ["A gust of wind rushes forth, wrapping the bearer in a protective envelope that pulls them into the sky and cushions their eventual decent. "],
-			dependencies: [I;1325],
-			id: 1348,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000544",
 			tasks: [{
-				id: 1349,
+				id: "0000000000000545",
 				type: "item",
 				item: {
 					id: "botania:tornado_rod",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [
 				{
-					id: 1366,
+					id: "0000000000000556",
 					type: "item",
 					item: "botania:avatar"
 				},
 				{
-					id: 2678,
+					id: "0000000000000A76",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -794,15 +795,15 @@
 				"",
 				"Place an item in an item frame on the chest to control what gets picked up. The Hopperhock will distinguish between a full and empty Mana Tablet or Band of Mana. The flower can be disabled entirely by providing a redstone signal. "
 			],
-			dependencies: [I;1325],
-			id: 1350,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000546",
 			tasks: [{
-				id: 1351,
+				id: "0000000000000547",
 				type: "item",
 				item: "botania:hopperhock"
 			}],
 			rewards: [{
-				id: 1504,
+				id: "00000000000005E0",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -815,15 +816,15 @@
 			y: 6.0d,
 			subtitle: "Mountain or Mole-hill?",
 			description: ["A rumble can be heard when activating this device as the earth shifts, forcing dirt to push up to fill the area at the point of contact. "],
-			dependencies: [I;1325],
-			id: 1352,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000548",
 			tasks: [{
-				id: 1353,
+				id: "0000000000000549",
 				type: "item",
 				item: "botania:dirt_rod"
 			}],
 			rewards: [{
-				id: 1501,
+				id: "00000000000005DD",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -836,15 +837,15 @@
 			y: 5.0d,
 			subtitle: "Attaining Equilibrium",
 			description: ["Thought it functions similarly to the Pure Daisy, the Clayconia requires far more mana than it can drain from the earth on its own. A source of mana is required nearby to power its nanocrystaline-recombination of sand into clay.."],
-			dependencies: [I;1325],
-			id: 1354,
+			dependencies: ["000000000000052D"],
+			id: "000000000000054A",
 			tasks: [{
-				id: 1355,
+				id: "000000000000054B",
 				type: "item",
 				item: "botania:clayconia"
 			}],
 			rewards: [{
-				id: 1502,
+				id: "00000000000005DE",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -857,15 +858,15 @@
 			y: 4.5d,
 			subtitle: "High Tide",
 			description: ["The ability to draw forth water from the earth at a moment's notice is handy indeed."],
-			dependencies: [I;1325],
-			id: 1356,
+			dependencies: ["000000000000052D"],
+			id: "000000000000054C",
 			tasks: [{
-				id: 1357,
+				id: "000000000000054D",
 				type: "item",
 				item: "botania:water_rod"
 			}],
 			rewards: [{
-				id: 1503,
+				id: "00000000000005DF",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -878,15 +879,15 @@
 			y: 4.5d,
 			subtitle: "Deepwater Horizons",
 			description: ["Combining water from deep aquifers with liquid hot magma to create and draw forth raw stone from the earth. One can only imagine the damage it must be causing. "],
-			dependencies: [I;1325],
-			id: 1358,
+			dependencies: ["000000000000052D"],
+			id: "000000000000054E",
 			tasks: [{
-				id: 1359,
+				id: "000000000000054F",
 				type: "item",
 				item: "botania:cobble_rod"
 			}],
 			rewards: [{
-				id: 1505,
+				id: "00000000000005E1",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -903,15 +904,15 @@
 				"",
 				"The Pollidisiac addresses this issue by driving the beasts to at least feed themselves. "
 			],
-			dependencies: [I;1325],
-			id: 1360,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000550",
 			tasks: [{
-				id: 1368,
+				id: "0000000000000558",
 				type: "item",
 				item: "botania:pollidisiac"
 			}],
 			rewards: [{
-				id: 1506,
+				id: "00000000000005E2",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -928,15 +929,15 @@
 				"",
 				"The Narslimmus will absorb and process the entire Slime instead, breaking down its integral structure and releasing far more mana than could be obtained through more primitive methods."
 			],
-			dependencies: [I;1325],
-			id: 1362,
+			dependencies: ["000000000000052D"],
+			id: "0000000000000552",
 			tasks: [{
-				id: 1363,
+				id: "0000000000000553",
 				type: "item",
 				item: "botania:narslimmus"
 			}],
 			rewards: [{
-				id: 1507,
+				id: "00000000000005E3",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -949,15 +950,15 @@
 			y: 9.0d,
 			subtitle: "Clear Sight",
 			description: ["The mana infused in this glass provides a brilliant source of light. Peering through it reveals a hidden world to you."],
-			dependencies: [I;1313],
-			id: 1364,
+			dependencies: ["0000000000000521"],
+			id: "0000000000000554",
 			tasks: [{
-				id: 1365,
+				id: "0000000000000555",
 				type: "item",
 				item: "botania:mana_glass"
 			}],
 			rewards: [{
-				id: 1522,
+				id: "00000000000005F2",
 				type: "command",
 				title: "Rare Botania Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -974,16 +975,16 @@
 				"",
 				"Mana will not flow through a Spark conduit on its own. It needs to be enticed."
 			],
-			dependencies: [I;1281],
-			id: 1369,
+			dependencies: ["0000000000000501"],
+			id: "0000000000000559",
 			tasks: [{
-				id: 1370,
+				id: "000000000000055A",
 				type: "item",
 				item: "botania:spark",
 				count: 2L
 			}],
 			rewards: [{
-				id: 1498,
+				id: "00000000000005DA",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1000,15 +1001,15 @@
 				"",
 				"Explore the new tools and items that are now obtainable with Elementium."
 			],
-			dependencies: [I;1301],
-			id: 1407,
+			dependencies: ["0000000000000515"],
+			id: "000000000000057F",
 			tasks: [{
-				id: 1408,
+				id: "0000000000000580",
 				type: "item",
 				item: "botania:elementium_ingot"
 			}],
 			rewards: [{
-				id: 1495,
+				id: "00000000000005D7",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1025,15 +1026,15 @@
 				"",
 				"Explore the new tools and items that are now obtainable with Dragonstone."
 			],
-			dependencies: [I;1301],
-			id: 1409,
+			dependencies: ["0000000000000515"],
+			id: "0000000000000581",
 			tasks: [{
-				id: 1410,
+				id: "0000000000000582",
 				type: "item",
 				item: "botania:dragonstone"
 			}],
 			rewards: [{
-				id: 1493,
+				id: "00000000000005D5",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1050,15 +1051,15 @@
 				"",
 				"Explore the new tools and items that are now obtainable with Pixie Dust."
 			],
-			dependencies: [I;1301],
-			id: 1411,
+			dependencies: ["0000000000000515"],
+			id: "0000000000000583",
 			tasks: [{
-				id: 1412,
+				id: "0000000000000584",
 				type: "item",
 				item: "botania:pixie_dust"
 			}],
 			rewards: [{
-				id: 1494,
+				id: "00000000000005D6",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1072,22 +1073,22 @@
 			y: 7.0d,
 			subtitle: "Ebb and Flow",
 			description: ["Spark Augments are the missing piece for more direct manipulation of mana over Spark conduits, allowing one to specify when and where the mana travels."],
-			dependencies: [I;1411],
-			id: 1413,
+			dependencies: ["0000000000000583"],
+			id: "0000000000000585",
 			tasks: [
 				{
-					id: 1414,
+					id: "0000000000000586",
 					type: "item",
 					item: "botania:spark_upgrade_recessive"
 				},
 				{
-					id: 1419,
+					id: "000000000000058B",
 					type: "item",
 					item: "botania:spark_upgrade_dominant"
 				}
 			],
 			rewards: [{
-				id: 1423,
+				id: "000000000000058F",
 				type: "item",
 				item: "botania:spark_changer"
 			}]
@@ -1100,15 +1101,15 @@
 				"",
 				"The Elementium core and Dreamwood stabilization seems capable of firing larger bursts at once, greatly enhancing throughput."
 			],
-			dependencies: [I;1407],
-			id: 1417,
+			dependencies: ["000000000000057F"],
+			id: "0000000000000589",
 			tasks: [{
-				id: 1418,
+				id: "000000000000058A",
 				type: "item",
 				item: "botania:elven_spreader"
 			}],
 			rewards: [{
-				id: 1492,
+				id: "00000000000005D4",
 				type: "command",
 				title: "Epic Botania Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1126,22 +1127,22 @@
 				"",
 				"The Corporea system is a powerful item management system that permits the transfer of items across long distances. Explore more by referring to the chapters on Corporea in the Lexica Botania."
 			],
-			dependencies: [I;1409],
-			id: 1420,
+			dependencies: ["0000000000000581"],
+			id: "000000000000058C",
 			tasks: [
 				{
-					id: 1421,
+					id: "000000000000058D",
 					type: "item",
 					item: "botania:corporea_index"
 				},
 				{
-					id: 1422,
+					id: "000000000000058E",
 					type: "item",
 					item: "botania:corporea_spark_master"
 				}
 			],
 			rewards: [{
-				id: 1424,
+				id: "0000000000000590",
 				type: "item",
 				item: "botania:corporea_spark",
 				count: 8
@@ -1159,39 +1160,39 @@
 				"",
 				"Combine the Velocity and Potency lenses to create a composite lens, which will allow a Mana Spreader to send larger bursts that travel faster. "
 			],
-			dependencies: [I;
-				1329,
-				1327
+			dependencies: [
+				"0000000000000531",
+				"000000000000052F"
 			],
-			id: 1425,
+			id: "0000000000000591",
 			tasks: [
 				{
-					id: 1426,
+					id: "0000000000000592",
 					type: "item",
 					item: {
 						id: "botania:lens_speed",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				},
 				{
-					id: 1427,
+					id: "0000000000000593",
 					type: "item",
 					item: {
 						id: "botania:lens_power",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				}
 			],
 			rewards: [
 				{
-					id: 1428,
+					id: "0000000000000594",
 					type: "item",
 					item: "minecraft:slime_block"
 				},
 				{
-					id: 2677,
+					id: "0000000000000A75",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1206,38 +1207,38 @@
 			y: 7.5d,
 			subtitle: "Quixotic Electro-Destabilization",
 			description: ["When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. "],
-			dependencies: [I;
-				1410,
-				1412,
-				1408
+			dependencies: [
+				"0000000000000582",
+				"0000000000000584",
+				"0000000000000580"
 			],
-			id: 1429,
+			id: "0000000000000595",
 			tasks: [
 				{
-					id: 1430,
+					id: "0000000000000596",
 					type: "item",
 					item: "mythicbotany:mana_infuser"
 				},
 				{
-					id: 1434,
+					id: "000000000000059A",
 					type: "item",
 					item: "minecraft:gold_block",
 					count: 4L
 				},
 				{
-					id: 1435,
+					id: "000000000000059B",
 					type: "item",
 					item: "botania:shimmerrock",
 					count: 5L
 				},
 				{
-					id: 1436,
+					id: "000000000000059C",
 					type: "item",
 					item: "mythicbotany:alfsteel_ingot"
 				}
 			],
 			rewards: [{
-				id: 1483,
+				id: "00000000000005CB",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1254,15 +1255,15 @@
 				"",
 				"Use a Mana Spreader to send mana into the Pylon. Any items enchanted with Mending that find themselves atop the Pylon will rapidly repair at the cost of mana."
 			],
-			dependencies: [I;1429],
-			id: 1431,
+			dependencies: ["0000000000000595"],
+			id: "0000000000000597",
 			tasks: [{
-				id: 1432,
+				id: "0000000000000598",
 				type: "item",
 				item: "mythicbotany:alfsteel_pylon"
 			}],
 			rewards: [{
-				id: 1482,
+				id: "00000000000005CA",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1279,22 +1280,22 @@
 				"",
 				"Refer to the Lexica Botania for the full list of rules."
 			],
-			dependencies: [I;1316],
-			id: 1440,
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A0",
 			tasks: [{
-				id: 1441,
+				id: "00000000000005A1",
 				type: "item",
 				item: "botania:dandelifeon"
 			}],
 			rewards: [
 				{
-					id: 1487,
+					id: "00000000000005CF",
 					type: "item",
 					item: "botania:cell_block",
 					count: 8
 				},
 				{
-					id: 1488,
+					id: "00000000000005D0",
 					type: "command",
 					title: "Legendary Botania Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -1312,15 +1313,15 @@
 				"",
 				"Timeless Ivy can be combined with anything that's normally repairable on an anvil. Place the item, a Timeless Ivy, and three of whatever material is used to repair the item in a crafting grid to bind it. For example, a Diamond Sword would require three diamonds. "
 			],
-			dependencies: [I;1316],
-			id: 1442,
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A2",
 			tasks: [{
-				id: 1443,
+				id: "00000000000005A3",
 				type: "item",
 				item: "botaniaadditions:regen_ivy"
 			}],
 			rewards: [{
-				id: 1485,
+				id: "00000000000005CD",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1333,15 +1334,15 @@
 			y: 3.5d,
 			subtitle: "Open Veins",
 			description: ["The final iteration of the Mana Spreader, infused with the very essence of Gaia herself to maximize throughput. "],
-			dependencies: [I;1316],
-			id: 1444,
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A4",
 			tasks: [{
-				id: 1445,
+				id: "00000000000005A5",
 				type: "item",
 				item: "botania:gaia_spreader"
 			}],
 			rewards: [{
-				id: 1486,
+				id: "00000000000005CE",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1354,19 +1355,19 @@
 			y: 3.5d,
 			subtitle: "Mind the Gap",
 			description: ["With the potent energies of Gaia to stabilize it, a small pocket dimension can be formed to store an unreal number of items. "],
-			dependencies: [I;1316],
-			id: 1446,
+			dependencies: ["0000000000000524"],
+			id: "00000000000005A6",
 			tasks: [{
-				id: 1447,
+				id: "00000000000005A7",
 				type: "item",
 				item: {
 					id: "botania:black_hole_talisman",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 1489,
+				id: "00000000000005D1",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",

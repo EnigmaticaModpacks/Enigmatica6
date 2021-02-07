@@ -1,7 +1,8 @@
 {
-	id: 3711,
+	id: "0000000000000E7F",
+	group: "",
+	order_index: 28,
 	filename: "eidolon_wip",
-	order_index: 26,
 	title: "Eidolon",
 	icon: "eidolon:unholy_symbol",
 	default_quest_shape: "",
@@ -22,14 +23,14 @@
 				"~Merlo"
 			],
 			size: 1.5d,
-			id: 3712,
+			id: "0000000000000E80",
 			tasks: [{
-				id: 3713,
+				id: "0000000000000E81",
 				type: "checkmark",
 				icon: "eidolon:codex"
 			}],
 			rewards: [{
-				id: 3714,
+				id: "0000000000000E82",
 				type: "item",
 				item: "eidolon:codex"
 			}]
@@ -51,30 +52,30 @@
 				"",
 				"I recommend setting up an altar as soon as possible and praying once per day even if you don’t plan on progressing in the mod: that way you’ll be ready when the time comes."
 			],
-			dependencies: [I;3717],
+			dependencies: ["0000000000000E85"],
 			min_width: 300,
-			id: 3715,
+			id: "0000000000000E83",
 			tasks: [
 				{
-					id: 3716,
+					id: "0000000000000E84",
 					type: "item",
 					item: "eidolon:wooden_altar"
 				},
 				{
-					id: 3734,
+					id: "0000000000000E96",
 					type: "item",
 					item: "eidolon:straw_effigy"
 				}
 			],
 			rewards: [
 				{
-					id: 3790,
+					id: "0000000000000ECE",
 					type: "item",
 					item: "eidolon:candle",
 					count: 2
 				},
 				{
-					id: 3791,
+					id: "0000000000000ECF",
 					type: "item",
 					item: "minecraft:zombie_head"
 				}
@@ -94,22 +95,22 @@
 				"",
 				"Try paying a visit to your local swamp and throwing your Ars Ecclesia at one of them, you might learn something new..."
 			],
-			dependencies: [I;3712],
-			id: 3717,
+			dependencies: ["0000000000000E80"],
+			id: "0000000000000E85",
 			tasks: [{
-				id: 3718,
+				id: "0000000000000E86",
 				type: "checkmark",
 				title: "Chants",
 				icon: {
 					id: "eidolon:warlock_hat",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 3789,
+				id: "0000000000000ECD",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -130,16 +131,16 @@
 				"",
 				"When you’re ready, take a flint and steel and light up the Brazier to start the ritual."
 			],
-			dependencies: [I;3712],
-			id: 3719,
+			dependencies: ["0000000000000E80"],
+			id: "0000000000000E87",
 			tasks: [
 				{
-					id: 3720,
+					id: "0000000000000E88",
 					type: "item",
 					item: "eidolon:brazier"
 				},
 				{
-					id: 3721,
+					id: "0000000000000E89",
 					type: "item",
 					item: "eidolon:stone_hand",
 					count: 2L
@@ -147,13 +148,13 @@
 			],
 			rewards: [
 				{
-					id: 3782,
+					id: "0000000000000EC6",
 					type: "item",
 					item: "eidolon:stone_hand",
 					count: 2
 				},
 				{
-					id: 3783,
+					id: "0000000000000EC7",
 					type: "item",
 					item: "eidolon:enchanted_ash",
 					count: 16
@@ -171,19 +172,19 @@
 				"",
 				"Make sure you got the right one!"
 			],
-			dependencies: [I;3719],
-			id: 3722,
+			dependencies: ["0000000000000E87"],
+			id: "0000000000000E8A",
 			tasks: [{
-				id: 3723,
+				id: "0000000000000E8B",
 				type: "item",
 				item: "eidolon:necrotic_focus"
 			}],
 			rewards: [{
-				id: 3785,
+				id: "0000000000000EC9",
 				type: "item",
 				item: {
 					id: "minecraft:potion",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Potion: "minecraft:harming"
 					}
@@ -201,17 +202,17 @@
 				"",
 				"You can craft it in most alloying machines, or also by simply combining the two ingots and smelting the blend you get by doing so. Stock up on a bunch, you’ll need it!"
 			],
-			dependencies: [I;3712],
-			id: 3726,
+			dependencies: ["0000000000000E80"],
+			id: "0000000000000E8E",
 			tasks: [
 				{
-					id: 3727,
+					id: "0000000000000E8F",
 					type: "item",
 					item: "eidolon:pewter_ingot",
 					count: 16L
 				},
 				{
-					id: 3771,
+					id: "0000000000000EBB",
 					type: "item",
 					item: "eidolon:pewter_inlay",
 					count: 8L
@@ -219,13 +220,13 @@
 			],
 			rewards: [
 				{
-					id: 3772,
+					id: "0000000000000EBC",
 					type: "item",
 					item: "eidolon:pewter_blend",
 					count: 8
 				},
 				{
-					id: 3773,
+					id: "0000000000000EBD",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -247,34 +248,34 @@
 				"",
 				"Some recipes also require you to stir the Crucible: you can do that by right clicking the Crucible when it’s the right time."
 			],
-			dependencies: [I;3726],
+			dependencies: ["0000000000000E8E"],
 			min_width: 300,
-			id: 3728,
+			id: "0000000000000E90",
 			tasks: [{
-				id: 3729,
+				id: "0000000000000E91",
 				type: "item",
 				item: "eidolon:crucible"
 			}],
 			rewards: [
 				{
-					id: 3774,
+					id: "0000000000000EBE",
 					type: "item",
 					item: "minecraft:redstone",
 					count: 2
 				},
 				{
-					id: 3775,
+					id: "0000000000000EBF",
 					type: "item",
 					item: "eidolon:soul_shard"
 				},
 				{
-					id: 3776,
+					id: "0000000000000EC0",
 					type: "item",
 					item: "minecraft:gold_ingot",
 					count: 2
 				},
 				{
-					id: 3777,
+					id: "0000000000000EC1",
 					type: "item",
 					item: "minecraft:magma_block"
 				}
@@ -293,16 +294,16 @@
 				"",
 				"You can see the items needed for the ritual inside your Ars Ecclesia."
 			],
-			dependencies: [I;3719],
-			id: 3730,
+			dependencies: ["0000000000000E87"],
+			id: "0000000000000E92",
 			tasks: [{
-				id: 3731,
+				id: "0000000000000E93",
 				type: "item",
 				item: "eidolon:soul_shard",
 				count: 16L
 			}],
 			rewards: [{
-				id: 3784,
+				id: "0000000000000EC8",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -319,15 +320,15 @@
 				"",
 				"It’s pretty straight forward: it works exactly like a normal workbench (and can be used as one), but it has four additional slots you’ll need to use for certain magic recipes. "
 			],
-			dependencies: [I;3726],
-			id: 3732,
+			dependencies: ["0000000000000E8E"],
+			id: "0000000000000E94",
 			tasks: [{
-				id: 3733,
+				id: "0000000000000E95",
 				type: "item",
 				item: "eidolon:worktable"
 			}],
 			rewards: [{
-				id: 3778,
+				id: "0000000000000EC2",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -355,17 +356,17 @@
 				"Check out the full list of viable upgrades in your Ars Ecclesia: for the lighting category, the best you can use is a Candlestick (or a Candle)."
 			],
 			hide_dependency_lines: true,
-			dependencies: [I;3715],
+			dependencies: ["0000000000000E83"],
 			optional: true,
 			min_width: 300,
-			id: 3735,
+			id: "0000000000000E97",
 			tasks: [{
-				id: 3736,
+				id: "0000000000000E98",
 				type: "item",
 				item: "eidolon:candlestick"
 			}],
 			rewards: [{
-				id: 3792,
+				id: "0000000000000ED0",
 				type: "item",
 				item: "eidolon:basic_amulet"
 			}]
@@ -390,29 +391,29 @@
 				"Check out the full list of viable upgrades in your Ars Ecclesia: for the skulls category, the best you can use is a Wither Skeleton Skull."
 			],
 			hide_dependency_lines: true,
-			dependencies: [I;3715],
+			dependencies: ["0000000000000E83"],
 			optional: true,
 			min_width: 300,
-			id: 3737,
+			id: "0000000000000E99",
 			tasks: [{
-				id: 3738,
+				id: "0000000000000E9A",
 				type: "item",
 				item: "minecraft:wither_skeleton_skull"
 			}],
 			rewards: [
 				{
-					id: 3793,
+					id: "0000000000000ED1",
 					type: "item",
 					item: {
 						id: "minecraft:potion",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Potion: "apotheosis:wither"
 						}
 					}
 				},
 				{
-					id: 3794,
+					id: "0000000000000ED2",
 					type: "item",
 					item: "wstweaks:fragment",
 					count: 3
@@ -439,17 +440,17 @@
 				"Check out the full list of viable upgrades in your Ars Ecclesia: for the herbs category, the best you can use is a Wither Rose in a Flower Pot."
 			],
 			hide_dependency_lines: true,
-			dependencies: [I;3715],
+			dependencies: ["0000000000000E83"],
 			optional: true,
 			min_width: 300,
-			id: 3739,
+			id: "0000000000000E9B",
 			tasks: [{
-				id: 3740,
+				id: "0000000000000E9C",
 				type: "item",
 				item: "minecraft:wither_rose"
 			}],
 			rewards: [{
-				id: 3795,
+				id: "0000000000000ED3",
 				type: "item",
 				item: "wstweaks:fragment",
 				count: 3
@@ -469,15 +470,15 @@
 				"",
 				"You should always try to do this over the Dark Prayer if you can, it’s much more effective and will cut down the time until you get new knowledge significantly."
 			],
-			dependencies: [I;3715],
-			id: 3741,
+			dependencies: ["0000000000000E83"],
+			id: "0000000000000E9D",
 			tasks: [{
-				id: 3742,
+				id: "0000000000000E9E",
 				type: "item",
 				item: "eidolon:goblet"
 			}],
 			rewards: [{
-				id: 3796,
+				id: "0000000000000ED4",
 				type: "item",
 				title: "Fresh Sacrifice Meat",
 				item: "minecraft:pig_spawn_egg"
@@ -495,15 +496,15 @@
 				"",
 				"This relic will be needed to craft the most advanced items in the mod, but you’ll only need one, since it won’t be used up during crafting."
 			],
-			dependencies: [I;3741],
-			id: 3743,
+			dependencies: ["0000000000000E9D"],
+			id: "0000000000000E9F",
 			tasks: [{
-				id: 3744,
+				id: "0000000000000EA0",
 				type: "item",
 				item: "eidolon:unholy_symbol"
 			}],
 			rewards: [{
-				id: 3797,
+				id: "0000000000000ED5",
 				type: "item",
 				item: "eidolon:warped_sprouts",
 				count: 8
@@ -519,16 +520,16 @@
 				"",
 				" This is how you’ll be able to unlock the Mind Sign, the current final sign in the mod. It unfortunately doesn’t have any uses yet, but will allow you to unlock the mod’s endgame very soon."
 			],
-			dependencies: [I;3743],
-			id: 3745,
+			dependencies: ["0000000000000E9F"],
+			id: "0000000000000EA1",
 			tasks: [
 				{
-					id: 3746,
+					id: "0000000000000EA2",
 					type: "item",
 					item: "eidolon:stone_altar"
 				},
 				{
-					id: 3747,
+					id: "0000000000000EA3",
 					type: "item",
 					item: "eidolon:unholy_effigy"
 				}
@@ -549,36 +550,36 @@
 				"",
 				"If you want a more challenging recipe, try crafting a Shadow Gem too! It’ll be used in the more powerful and advanced recipes."
 			],
-			dependencies: [I;3728],
-			id: 3754,
+			dependencies: ["0000000000000E90"],
+			id: "0000000000000EAA",
 			tasks: [
 				{
-					id: 3755,
+					id: "0000000000000EAB",
 					type: "item",
 					item: "eidolon:arcane_gold_ingot",
 					count: 16L
 				},
 				{
-					id: 3756,
+					id: "0000000000000EAC",
 					type: "item",
 					item: "eidolon:lesser_soul_gem",
 					count: 8L
 				},
 				{
-					id: 3779,
+					id: "0000000000000EC3",
 					type: "item",
 					item: "eidolon:shadow_gem"
 				}
 			],
 			rewards: [
 				{
-					id: 3780,
+					id: "0000000000000EC4",
 					type: "item",
 					item: "eidolon:soul_shard",
 					count: 16
 				},
 				{
-					id: 3781,
+					id: "0000000000000EC5",
 					type: "command",
 					title: "Alchemist's Delight",
 					icon: "kubejs:alchemists_delight",
@@ -604,20 +605,20 @@
 				"",
 				"If the Ritual doesn’t find any, it might even try and take it from you..."
 			],
-			dependencies: [I;3722],
-			id: 3757,
+			dependencies: ["0000000000000E8A"],
+			id: "0000000000000EAD",
 			tasks: [
 				{
-					id: 3758,
+					id: "0000000000000EAE",
 					type: "item",
 					item: "eidolon:sanguine_amulet"
 				},
 				{
-					id: 3770,
+					id: "0000000000000EBA",
 					type: "item",
 					item: {
 						id: "eidolon:sapping_sword",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -626,19 +627,19 @@
 			],
 			rewards: [
 				{
-					id: 3786,
+					id: "0000000000000ECA",
 					type: "item",
 					item: "eidolon:zombie_heart",
 					count: 8
 				},
 				{
-					id: 3787,
+					id: "0000000000000ECB",
 					type: "item",
 					item: "eidolon:tattered_cloth",
 					count: 8
 				},
 				{
-					id: 3788,
+					id: "0000000000000ECC",
 					type: "item",
 					item: "eidolon:wraith_heart",
 					count: 8
@@ -658,26 +659,26 @@
 				"Maybe consider making some Warlock Armor too: it could boost your magic damage even more. Here's a little something to get started, getting the rest might be a bit harder..."
 			],
 			hide_dependency_lines: true,
-			dependencies: [I;3754],
-			id: 3759,
+			dependencies: ["0000000000000EAA"],
+			id: "0000000000000EAF",
 			tasks: [
 				{
-					id: 3760,
+					id: "0000000000000EB0",
 					type: "item",
 					item: {
 						id: "eidolon:soulfire_wand",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 3761,
+					id: "0000000000000EB1",
 					type: "item",
 					item: {
 						id: "eidolon:bonechill_wand",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -685,7 +686,7 @@
 				}
 			],
 			rewards: [{
-				id: 3800,
+				id: "0000000000000ED8",
 				type: "item",
 				item: "eidolon:wicked_weave",
 				count: 3
@@ -702,21 +703,21 @@
 				"",
 				"Note that the items showcased here are not all the mod has to offer, I left some out on purpose to let you explore the mod on your own, so go find all the cool stuff!"
 			],
-			dependencies: [I;3754],
-			id: 3762,
+			dependencies: ["0000000000000EAA"],
+			id: "0000000000000EB2",
 			tasks: [{
-				id: 3763,
+				id: "0000000000000EB3",
 				type: "item",
 				item: {
 					id: "eidolon:reversal_pick",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 3798,
+				id: "0000000000000ED6",
 				type: "item",
 				item: "minecraft:obsidian",
 				count: 16
@@ -732,15 +733,15 @@
 				"If an item already has an enchant, it will also be able to upgrade to a higher level of that enchant, allowing you for even more control. "
 			],
 			hide_dependency_lines: true,
-			dependencies: [I;3754],
-			id: 3764,
+			dependencies: ["0000000000000EAA"],
+			id: "0000000000000EB4",
 			tasks: [{
-				id: 3765,
+				id: "0000000000000EB5",
 				type: "item",
 				item: "eidolon:soul_enchanter"
 			}],
 			rewards: [{
-				id: 3802,
+				id: "0000000000000EDA",
 				type: "xp",
 				xp: 400
 			}]
@@ -751,15 +752,15 @@
 			subtitle: "It's brittle...",
 			description: ["The Glass Hand is the ultimate glass cannon item for all you daredevils out there: it will double your strength, but increase any damage you get by 5 times. Are you up for the challenge?"],
 			hide_dependency_lines: true,
-			dependencies: [I;3754],
-			id: 3766,
+			dependencies: ["0000000000000EAA"],
+			id: "0000000000000EB6",
 			tasks: [{
-				id: 3767,
+				id: "0000000000000EB7",
 				type: "item",
 				item: "eidolon:glass_hand"
 			}],
 			rewards: [{
-				id: 3803,
+				id: "0000000000000EDB",
 				type: "item",
 				item: "eidolon:music_disc_parousia"
 			}]
@@ -773,24 +774,24 @@
 				"",
 				"It can still be a good way to stock up on some Shards to craft all the other items in the mod."
 			],
-			dependencies: [I;
-				3743,
-				3756
+			dependencies: [
+				"0000000000000E9F",
+				"0000000000000EAC"
 			],
-			id: 3768,
+			id: "0000000000000EB8",
 			tasks: [{
-				id: 3769,
+				id: "0000000000000EB9",
 				type: "item",
 				item: {
 					id: "eidolon:reaper_scythe",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 3801,
+				id: "0000000000000ED9",
 				type: "xp",
 				xp: 500
 			}]

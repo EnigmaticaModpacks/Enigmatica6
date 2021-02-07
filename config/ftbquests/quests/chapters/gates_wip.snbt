@@ -1,7 +1,8 @@
 {
-	id: 2917,
+	id: "0000000000000B65",
+	group: "",
+	order_index: 2,
 	filename: "gates_wip",
-	order_index: 0,
 	title: "Expert - Gates",
 	icon: "mapperbase:steel_fence_gate",
 	always_invisible: true,
@@ -13,16 +14,16 @@
 			x: 0.0d,
 			y: 0.0d,
 			description: ["Welcome to Expert mode!"],
-			id: 2924
+			id: "0000000000000B6C"
 		},
 		{
 			title: "Create",
 			x: -3.0d,
 			y: 1.5d,
-			dependencies: [I;2924],
-			id: 4029,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FBD",
 			tasks: [{
-				id: 4030,
+				id: "0000000000000FBE",
 				type: "item",
 				item: "create:cogwheel"
 			}]
@@ -32,10 +33,10 @@
 			icon: "thermal:machine_furnace",
 			x: -1.5d,
 			y: 1.5d,
-			dependencies: [I;2924],
-			id: 4031,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FBF",
 			tasks: [{
-				id: 4032,
+				id: "0000000000000FC0",
 				type: "item",
 				item: "thermal:machine_frame"
 			}]
@@ -45,10 +46,10 @@
 			x: 0.0d,
 			y: 1.5d,
 			shape: "diamond",
-			dependencies: [I;4031],
-			id: 4033,
+			dependencies: ["0000000000000FBF"],
+			id: "0000000000000FC1",
 			tasks: [{
-				id: 4034,
+				id: "0000000000000FC2",
 				type: "item",
 				item: "xnet:netcable_blue"
 			}]
@@ -57,10 +58,10 @@
 			title: "Eidolon",
 			x: 1.5d,
 			y: 1.5d,
-			dependencies: [I;2924],
-			id: 4035,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FC3",
 			tasks: [{
-				id: 4036,
+				id: "0000000000000FC4",
 				type: "item",
 				item: "eidolon:unholy_symbol"
 			}]
@@ -69,10 +70,10 @@
 			title: "Ars Nouveau",
 			x: 3.0d,
 			y: 1.5d,
-			dependencies: [I;2924],
-			id: 4037,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FC5",
 			tasks: [{
-				id: 4038,
+				id: "0000000000000FC6",
 				type: "item",
 				item: "ars_nouveau:creative_spell_book"
 			}]
@@ -81,10 +82,10 @@
 			title: "Nature's Aura",
 			x: 3.0d,
 			y: 3.0d,
-			dependencies: [I;4037],
-			id: 4039,
+			dependencies: ["0000000000000FC5"],
+			id: "0000000000000FC7",
 			tasks: [{
-				id: 4040,
+				id: "0000000000000FC8",
 				type: "item",
 				item: "naturesaura:gold_leaf"
 			}]
@@ -93,10 +94,10 @@
 			title: "Botania",
 			x: 3.0d,
 			y: 4.5d,
-			dependencies: [I;4039],
-			id: 4041,
+			dependencies: ["0000000000000FC7"],
+			id: "0000000000000FC9",
 			tasks: [{
-				id: 4042,
+				id: "0000000000000FCA",
 				type: "item",
 				item: "botania:mana_pylon"
 			}]
@@ -105,13 +106,13 @@
 			title: "Astral Sorcery",
 			x: 1.5d,
 			y: 6.0d,
-			dependencies: [I;
-				4047,
-				4041
+			dependencies: [
+				"0000000000000FCF",
+				"0000000000000FC9"
 			],
-			id: 4043,
+			id: "0000000000000FCB",
 			tasks: [{
-				id: 4044,
+				id: "0000000000000FCC",
 				type: "item",
 				item: "astralsorcery:stardust"
 			}]
@@ -120,14 +121,14 @@
 			title: "Occultism",
 			x: 1.5d,
 			y: 3.0d,
-			dependencies: [I;4035],
-			id: 4045,
+			dependencies: ["0000000000000FC3"],
+			id: "0000000000000FCD",
 			tasks: [{
-				id: 4046,
+				id: "0000000000000FCE",
 				type: "item",
 				item: {
 					id: "occultism:miner_foliot_unspecialized",
-					Count: true,
+					Count: 1b,
 					tag: {
 						spiritName: "Azurzerarc",
 						Damage: 0
@@ -139,10 +140,10 @@
 			title: "Blood Magic",
 			x: 1.5d,
 			y: 4.5d,
-			dependencies: [I;4045],
-			id: 4047,
+			dependencies: ["0000000000000FCD"],
+			id: "0000000000000FCF",
 			tasks: [{
-				id: 4048,
+				id: "0000000000000FD0",
 				type: "item",
 				item: "bloodmagic:altar"
 			}]
@@ -152,10 +153,10 @@
 			x: -4.5d,
 			y: 1.5d,
 			shape: "diamond",
-			dependencies: [I;4029],
-			id: 4049,
+			dependencies: ["0000000000000FBD"],
+			id: "0000000000000FD1",
 			tasks: [{
-				id: 4050,
+				id: "0000000000000FD2",
 				type: "item",
 				item: "prettypipes:pipe"
 			}]
@@ -165,10 +166,10 @@
 			x: -4.5d,
 			y: 3.0d,
 			shape: "diamond",
-			dependencies: [I;4053],
-			id: 4051,
+			dependencies: ["0000000000000FD5"],
+			id: "0000000000000FD3",
 			tasks: [{
-				id: 4052,
+				id: "0000000000000FD4",
 				type: "item",
 				item: "powah:dielectric_casing"
 			}]
@@ -178,14 +179,14 @@
 			x: -3.0d,
 			y: 3.0d,
 			subtitle: "Low Tech",
-			dependencies: [I;4029],
-			id: 4053,
+			dependencies: ["0000000000000FBD"],
+			id: "0000000000000FD5",
 			tasks: [{
-				id: 4054,
+				id: "0000000000000FD6",
 				type: "item",
 				item: {
 					id: "immersiveengineering:hammer",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -196,10 +197,10 @@
 			title: "RFTools",
 			x: -1.5d,
 			y: 3.0d,
-			dependencies: [I;4031],
-			id: 4055,
+			dependencies: ["0000000000000FBF"],
+			id: "0000000000000FD7",
 			tasks: [{
-				id: 4056,
+				id: "0000000000000FD8",
 				type: "item",
 				item: "rftoolsbase:machine_frame"
 			}]
@@ -209,10 +210,10 @@
 			x: 0.0d,
 			y: 3.0d,
 			shape: "diamond",
-			dependencies: [I;4055],
-			id: 4057,
+			dependencies: ["0000000000000FD7"],
+			id: "0000000000000FD9",
 			tasks: [{
-				id: 4058,
+				id: "0000000000000FDA",
 				type: "item",
 				item: "modularrouters:item_router"
 			}]
@@ -221,10 +222,10 @@
 			title: "PneumaticCraft",
 			x: -1.5d,
 			y: 4.5d,
-			dependencies: [I;4055],
-			id: 4059,
+			dependencies: ["0000000000000FD7"],
+			id: "0000000000000FDB",
 			tasks: [{
-				id: 4060,
+				id: "0000000000000FDC",
 				type: "item",
 				item: "pneumaticcraft:pressure_gauge_module"
 			}]
@@ -234,13 +235,13 @@
 			x: 0.0d,
 			y: 4.5d,
 			shape: "diamond",
-			dependencies: [I;
-				4059,
-				4045
+			dependencies: [
+				"0000000000000FDB",
+				"0000000000000FCD"
 			],
-			id: 4061,
+			id: "0000000000000FDD",
 			tasks: [{
-				id: 4062,
+				id: "0000000000000FDE",
 				type: "item",
 				item: "refinedstorage:controller"
 			}]
@@ -249,10 +250,10 @@
 			title: "Industrial Foregoing",
 			x: -3.0d,
 			y: 4.5d,
-			dependencies: [I;4053],
-			id: 4063,
+			dependencies: ["0000000000000FD5"],
+			id: "0000000000000FDF",
 			tasks: [{
-				id: 4064,
+				id: "0000000000000FE0",
 				type: "item",
 				item: "industrialforegoing:pink_slime"
 			}]
@@ -263,10 +264,10 @@
 			x: 4.5d,
 			y: 3.0d,
 			shape: "diamond",
-			dependencies: [I;4039],
-			id: 4065,
+			dependencies: ["0000000000000FC7"],
+			id: "0000000000000FE1",
 			tasks: [{
-				id: 4066,
+				id: "0000000000000FE2",
 				type: "item",
 				item: "minecraft:honeycomb"
 			}]
@@ -276,10 +277,10 @@
 			x: -3.0d,
 			y: 6.0d,
 			subtitle: "High Tech",
-			dependencies: [I;4063],
-			id: 4067,
+			dependencies: ["0000000000000FDF"],
+			id: "0000000000000FE3",
 			tasks: [{
-				id: 4068,
+				id: "0000000000000FE4",
 				type: "item",
 				item: "immersiveengineering:heavy_engineering"
 			}]
@@ -288,10 +289,10 @@
 			title: "Mekanism",
 			x: -1.5d,
 			y: 6.0d,
-			dependencies: [I;4059],
-			id: 4069,
+			dependencies: ["0000000000000FDB"],
+			id: "0000000000000FE5",
 			tasks: [{
-				id: 4070,
+				id: "0000000000000FE6",
 				type: "item",
 				item: "mekanism:alloy_atomic"
 			}]
@@ -302,15 +303,15 @@
 			x: 0.0d,
 			y: 8.0d,
 			shape: "octagon",
-			dependencies: [I;
-				4067,
-				4069,
-				4043
+			dependencies: [
+				"0000000000000FE3",
+				"0000000000000FE5",
+				"0000000000000FCB"
 			],
 			size: 2.0d,
-			id: 4071,
+			id: "0000000000000FE7",
 			tasks: [{
-				id: 4072,
+				id: "0000000000000FE8",
 				type: "item",
 				item: "create:creative_crate"
 			}]

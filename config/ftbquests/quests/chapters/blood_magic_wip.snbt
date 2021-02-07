@@ -1,7 +1,8 @@
 {
-	id: 2197,
+	id: "0000000000000895",
+	group: "",
+	order_index: 26,
 	filename: "blood_magic_wip",
-	order_index: 24,
 	title: "Blood Magic",
 	icon: "bloodmagic:weakbloodshard",
 	default_quest_shape: "",
@@ -10,7 +11,7 @@
 			title: "Blood Magic",
 			icon: {
 				id: "patchouli:guide_book",
-				Count: true,
+				Count: 1b,
 				tag: {
 					"patchouli:book": "bloodmagic:guide"
 				}
@@ -27,17 +28,17 @@
 				"",
 				"~MuteTiefling"
 			],
-			id: 2198,
+			id: "0000000000000896",
 			tasks: [{
-				id: 2199,
+				id: "0000000000000897",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2200,
+				id: "0000000000000898",
 				type: "item",
 				item: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "bloodmagic:guide"
 					}
@@ -47,7 +48,7 @@
 		{
 			icon: {
 				id: "bloodmagic:basemonstersoul",
-				Count: true,
+				Count: 1b,
 				tag: {
 					souls: 5.0d
 				}
@@ -62,31 +63,31 @@
 				"",
 				"It can be helpful to gather a few pieces of Demonic Will in this way. Better methods will soon present themselves. "
 			],
-			dependencies: [I;2207],
-			id: 2203,
+			dependencies: ["000000000000089F"],
+			id: "000000000000089B",
 			tasks: [{
-				id: 2227,
+				id: "00000000000008B3",
 				type: "item",
 				item: {
 					id: "bloodmagic:basemonstersoul",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [
 				{
-					id: 2205,
+					id: "000000000000089D",
 					type: "item",
 					item: {
 						id: "bloodmagic:basemonstersoul",
-						Count: true,
+						Count: 1b,
 						tag: {
 							souls: 5.0d
 						}
 					}
 				},
 				{
-					id: 2684,
+					id: "0000000000000A7C",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -110,28 +111,28 @@
 				"",
 				"The Sanguine Scientiem has an excellent guide on empowering the Altar. For now, it will suffice to simply place the Altar anywhere, though it may be prudent to plan out a large area for future expansion."
 			],
-			dependencies: [I;2198],
+			dependencies: ["0000000000000896"],
 			min_width: 300,
-			id: 2207,
+			id: "000000000000089F",
 			tasks: [{
-				id: 2208,
+				id: "00000000000008A0",
 				type: "item",
 				item: "bloodmagic:altar"
 			}],
 			rewards: [
 				{
-					id: 2241,
+					id: "00000000000008C1",
 					type: "item",
 					item: {
 						id: "bloodmagic:sacrificialdagger",
-						Count: true,
+						Count: 1b,
 						tag: {
-							sacrifice: false
+							sacrifice: 0b
 						}
 					}
 				},
 				{
-					id: 2242,
+					id: "00000000000008C2",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -149,21 +150,21 @@
 				"",
 				"The ashes are used to draw a sigil on the ground, and then a binder and reagent are combined within it to create powerful tokens that may be powered via the Soul Network. "
 			],
-			dependencies: [I;2228],
-			id: 2209,
+			dependencies: ["00000000000008B4"],
+			id: "00000000000008A1",
 			tasks: [{
-				id: 2210,
+				id: "00000000000008A2",
 				type: "item",
 				item: {
 					id: "bloodmagic:arcaneashes",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 2315,
+				id: "000000000000090B",
 				type: "item",
 				item: "bloodmagic:bloodlightsigil"
 			}]
@@ -178,14 +179,14 @@
 				"",
 				"As the amount of Will in a held Tartaric Gem increases, so too does the power of the tool. "
 			],
-			dependencies: [I;2214],
-			id: 2211,
+			dependencies: ["00000000000008A6"],
+			id: "00000000000008A3",
 			tasks: [{
-				id: 2212,
+				id: "00000000000008A4",
 				type: "item",
 				item: {
 					id: "bloodmagic:soulsword",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -193,18 +194,18 @@
 			}],
 			rewards: [
 				{
-					id: 2213,
+					id: "00000000000008A5",
 					type: "item",
 					item: {
 						id: "bloodmagic:soulpickaxe",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 2478,
+					id: "00000000000009AE",
 					type: "command",
 					title: "Sorcerer's Delight",
 					icon: "kubejs:sorcerers_delight",
@@ -226,19 +227,19 @@
 				"",
 				"Be sure to keep both upgraded."
 			],
-			dependencies: [I;2228],
-			id: 2214,
+			dependencies: ["00000000000008B4"],
+			id: "00000000000008A6",
 			tasks: [{
-				id: 2215,
+				id: "00000000000008A7",
 				type: "item",
 				item: {
 					id: "bloodmagic:soulgempetty",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 2479,
+				id: "00000000000009AF",
 				type: "command",
 				title: "Rare Blood Magic Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -257,15 +258,15 @@
 				"",
 				"Note: Many recipes will require a high amount of will in the Hellforge, while only draining a small amount of that for the craft. If the craft doesn't begin immediately, check to be sure the minimum required will has been met."
 			],
-			dependencies: [I;2203],
-			id: 2228,
+			dependencies: ["000000000000089B"],
+			id: "00000000000008B4",
 			tasks: [{
-				id: 2229,
+				id: "00000000000008B5",
 				type: "item",
 				item: "bloodmagic:soulforge"
 			}],
 			rewards: [{
-				id: 2480,
+				id: "00000000000009B0",
 				type: "command",
 				title: "Rare Blood Magic Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -292,34 +293,34 @@
 				"",
 				"A note on Pretty Pipes: A pipe with an Extraction Module cannot input into another inventory. Two lengths of pipe are required, one to extract, and another to insert."
 			],
-			dependencies: [I;2207],
+			dependencies: ["000000000000089F"],
 			min_width: 300,
-			id: 2230,
+			id: "00000000000008B6",
 			tasks: [{
-				id: 2231,
+				id: "00000000000008B7",
 				type: "item",
 				item: "bloodmagic:blankslate"
 			}],
 			rewards: [
 				{
-					id: 2235,
+					id: "00000000000008BB",
 					type: "item",
 					item: "prettypipes:low_filter_module"
 				},
 				{
-					id: 2236,
+					id: "00000000000008BC",
 					type: "item",
 					item: "prettypipes:low_extraction_module",
 					count: 2
 				},
 				{
-					id: 2237,
+					id: "00000000000008BD",
 					type: "item",
 					item: "prettypipes:stack_size_module",
 					count: 2
 				},
 				{
-					id: 2238,
+					id: "00000000000008BE",
 					type: "item",
 					item: "prettypipes:pipe",
 					count: 4
@@ -335,19 +336,19 @@
 				"",
 				"Hold the Orb and right click it once to bind it. Anyone using this Orb will draw from your personal Soul Network."
 			],
-			dependencies: [I;2207],
-			id: 2239,
+			dependencies: ["000000000000089F"],
+			id: "00000000000008BF",
 			tasks: [{
-				id: 2240,
+				id: "00000000000008C0",
 				type: "item",
 				item: "bloodmagic:weakbloodorb"
 			}],
 			rewards: [{
-				id: 2243,
+				id: "00000000000008C3",
 				type: "item",
 				item: {
 					id: "apotheosis:potion_charm",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0,
 						Potion: "minecraft:strong_regeneration"
@@ -368,16 +369,16 @@
 				"",
 				"Be sure to upgrade your Blood Orb as well. "
 			],
-			dependencies: [I;2207],
-			id: 2244,
+			dependencies: ["000000000000089F"],
+			id: "00000000000008C4",
 			tasks: [{
-				id: 2245,
+				id: "00000000000008C5",
 				type: "item",
 				item: "bloodmagic:blankrune",
 				count: 6L
 			}],
 			rewards: [{
-				id: 2246,
+				id: "00000000000008C6",
 				type: "item",
 				item: "bloodmagic:speedrune",
 				count: 2
@@ -396,17 +397,17 @@
 				"",
 				"Refer to the Sanguin Scientiem for a guide on how to build the Tier 3 Altar. "
 			],
-			dependencies: [I;2244],
-			id: 2247,
+			dependencies: ["00000000000008C4"],
+			id: "00000000000008C7",
 			tasks: [
 				{
-					id: 2248,
+					id: "00000000000008C8",
 					type: "item",
 					item: "bloodmagic:blankrune",
 					count: 16L
 				},
 				{
-					id: 2249,
+					id: "00000000000008C9",
 					type: "item",
 					item: "minecraft:glowstone",
 					count: 4L
@@ -414,13 +415,13 @@
 			],
 			rewards: [
 				{
-					id: 2251,
+					id: "00000000000008CB",
 					type: "item",
 					item: "minecraft:sea_lantern",
 					count: 4
 				},
 				{
-					id: 2266,
+					id: "00000000000008DA",
 					type: "item",
 					item: "bloodmagic:sacrificerune",
 					count: 4
@@ -432,15 +433,15 @@
 			y: 7.0d,
 			subtitle: "Finder of Lost Things",
 			description: ["The Ritual Diviner is crucial to the construction and use of Rituals. "],
-			dependencies: [I;2247],
-			id: 2252,
+			dependencies: ["00000000000008C7"],
+			id: "00000000000008CC",
 			tasks: [{
-				id: 2253,
+				id: "00000000000008CD",
 				type: "item",
 				item: "bloodmagic:ritualdiviner"
 			}],
 			rewards: [{
-				id: 2487,
+				id: "00000000000009B7",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -459,15 +460,15 @@
 				"",
 				"The Dagger of Sacrifice is used to extract LP from other entities. Be careful, it's sharp. "
 			],
-			dependencies: [I;2244],
-			id: 2267,
+			dependencies: ["00000000000008C4"],
+			id: "00000000000008DB",
 			tasks: [{
-				id: 2268,
+				id: "00000000000008DC",
 				type: "item",
 				item: "bloodmagic:daggerofsacrifice"
 			}],
 			rewards: [{
-				id: 2489,
+				id: "00000000000009B9",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -490,23 +491,23 @@
 				"",
 				"To build a Ritual, place down the Master Ritual Stone. Next, Sneak + Right Click the Ritual Diviner in the air to choose the desired ritual. Finally, with sufficient Ritual Stones in your inventory, right click the Master Ritual Stone with the Diviner to automatically place the blocks."
 			],
-			dependencies: [I;2252],
-			id: 2271,
+			dependencies: ["00000000000008CC"],
+			id: "00000000000008DF",
 			tasks: [
 				{
-					id: 2275,
+					id: "00000000000008E3",
 					type: "item",
 					item: "bloodmagic:masterritualstone"
 				},
 				{
-					id: 2276,
+					id: "00000000000008E4",
 					type: "item",
 					item: "bloodmagic:ritualstone",
 					count: 8L
 				}
 			],
 			rewards: [{
-				id: 2486,
+				id: "00000000000009B6",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -524,15 +525,15 @@
 				"",
 				"Once activated they will drain LP continuously, which may not always be desired. They may be turned on and off with redstone, however. "
 			],
-			dependencies: [I;2271],
-			id: 2277,
+			dependencies: ["00000000000008DF"],
+			id: "00000000000008E5",
 			tasks: [{
-				id: 2278,
+				id: "00000000000008E6",
 				type: "item",
 				item: "bloodmagic:activationcrystalweak"
 			}],
 			rewards: [{
-				id: 2485,
+				id: "00000000000009B5",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -551,24 +552,24 @@
 				"",
 				"As with previous tiers, check the Sanguine Scientiem for a guide on how to build the upgraded altar, and be sure to upgrade your Blood Orb."
 			],
-			dependencies: [I;2247],
-			id: 2279,
+			dependencies: ["00000000000008C7"],
+			id: "00000000000008E7",
 			tasks: [
 				{
-					id: 2280,
+					id: "00000000000008E8",
 					type: "item",
 					item: "bloodmagic:blankrune",
 					count: 28L
 				},
 				{
-					id: 2317,
+					id: "000000000000090D",
 					type: "item",
 					item: "bloodmagic:bloodstonebrick",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: 2284,
+				id: "00000000000008EC",
 				type: "item",
 				item: "bloodmagic:altarcapacityrune",
 				count: 8
@@ -584,33 +585,33 @@
 				"",
 				"By using different reagents, it can enable stronger reactions that would have been unsafe to perform in the open air. "
 			],
-			dependencies: [I;2247],
-			id: 2281,
+			dependencies: ["00000000000008C7"],
+			id: "00000000000008E9",
 			tasks: [
 				{
-					id: 2282,
+					id: "00000000000008EA",
 					type: "item",
 					item: "bloodmagic:alchemicalreactionchamber"
 				},
 				{
-					id: 2285,
+					id: "00000000000008ED",
 					type: "item",
 					item: {
 						id: "bloodmagic:sanguinereverter",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 2286,
+					id: "00000000000008EE",
 					type: "item",
 					item: "bloodmagic:weakbloodshard"
 				}
 			],
 			rewards: [{
-				id: 2490,
+				id: "00000000000009BA",
 				type: "command",
 				title: "Rare Blood Magic Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -629,18 +630,18 @@
 				"",
 				"Excess Will may be absorb into a Tartaric Gem again by placing a Hellfire Forge in the chunk and inserting the Tartaric Gem."
 			],
-			dependencies: [I;
-				2214,
-				2211
+			dependencies: [
+				"00000000000008A6",
+				"00000000000008A3"
 			],
-			id: 2287,
+			id: "00000000000008EF",
 			tasks: [{
-				id: 2288,
+				id: "00000000000008F0",
 				type: "item",
 				item: "bloodmagic:demoncrucible"
 			}],
 			rewards: [{
-				id: 2293,
+				id: "00000000000008F5",
 				type: "item",
 				item: "bloodmagic:demonwillgauge"
 			}]
@@ -659,16 +660,16 @@
 				"",
 				"There exists a specialized Dusk ritual that would assist in automating this process as well, which causes the secondary spires to fall off naturally. "
 			],
-			dependencies: [I;2287],
+			dependencies: ["00000000000008EF"],
 			min_width: 300,
-			id: 2291,
+			id: "00000000000008F3",
 			tasks: [{
-				id: 2292,
+				id: "00000000000008F4",
 				type: "item",
 				item: "bloodmagic:demoncrystallizer"
 			}],
 			rewards: [{
-				id: 2482,
+				id: "00000000000009B2",
 				type: "command",
 				title: "Rare Blood Magic Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -691,15 +692,15 @@
 				"",
 				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
 			],
-			dependencies: [I;2279],
-			id: 2296,
+			dependencies: ["00000000000008E7"],
+			id: "00000000000008F8",
 			tasks: [{
-				id: 2297,
+				id: "00000000000008F9",
 				type: "item",
 				item: "bloodmagic:ritualdivinerdusk"
 			}],
 			rewards: [{
-				id: 2488,
+				id: "00000000000009B8",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -720,28 +721,28 @@
 				"",
 				"Eventually, another crystal will form here within the bounds of the ritual. Once it has fully grown, the ritual will fragment it into its elemental essences, growing four new crystal types around it which may be harvested in the same way as the previous Demonic Will Crystals. "
 			],
-			dependencies: [I;2291],
-			id: 2298,
+			dependencies: ["00000000000008F3"],
+			id: "00000000000008FA",
 			tasks: [
 				{
-					id: 2308,
+					id: "0000000000000904",
 					type: "item",
 					item: "bloodmagic:masterritualstone"
 				},
 				{
-					id: 2309,
+					id: "0000000000000905",
 					type: "item",
 					item: "bloodmagic:ritualstone",
 					count: 20L
 				},
 				{
-					id: 2316,
+					id: "000000000000090C",
 					type: "item",
 					item: "bloodmagic:defaultcrystal"
 				}
 			],
 			rewards: [{
-				id: 2481,
+				id: "00000000000009B1",
 				type: "item",
 				item: "bloodmagic:defaultcrystal",
 				count: 32
@@ -765,33 +766,33 @@
 				"",
 				"Beyond this, however, these new Demonic Wills open up entirely new avenues by way of Augmenting Rituals. Refer to the Ritual Diviner for more information on how each Will type effects each ritual. "
 			],
-			dependencies: [I;2298],
+			dependencies: ["00000000000008FA"],
 			min_width: 300,
-			id: 2301,
+			id: "00000000000008FD",
 			tasks: [
 				{
-					id: 2302,
+					id: "00000000000008FE",
 					type: "item",
 					item: "bloodmagic:corrosivecrystal"
 				},
 				{
-					id: 2303,
+					id: "00000000000008FF",
 					type: "item",
 					item: "bloodmagic:vengefulcrystal"
 				},
 				{
-					id: 2304,
+					id: "0000000000000900",
 					type: "item",
 					item: "bloodmagic:destructivecrystal"
 				},
 				{
-					id: 2305,
+					id: "0000000000000901",
 					type: "item",
 					item: "bloodmagic:steadfastcrystal"
 				}
 			],
 			rewards: [{
-				id: 2483,
+				id: "00000000000009B3",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -808,15 +809,15 @@
 				"",
 				"Feeding the Ritual the appropriate Will types is as simple as burning those crystals in a Hellfire Forge in the same Chunk. Of course, arranging for that to happen automatically is a whole other challenge. "
 			],
-			dependencies: [I;2301],
-			id: 2311,
+			dependencies: ["00000000000008FD"],
+			id: "0000000000000907",
 			tasks: [{
-				id: 2312,
+				id: "0000000000000908",
 				type: "item",
 				item: "bloodmagic:ritualtinkerer"
 			}],
 			rewards: [{
-				id: 2484,
+				id: "00000000000009B4",
 				type: "command",
 				title: "Epic Blood Magic Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -835,16 +836,16 @@
 				"",
 				"When seeking to automate this work bench, consider using some limiting pipe similar to the earlier Blank Slates. Inputs can be piped in the sides, while the output may be extracted from the bottom. "
 			],
-			dependencies: [I;2239],
-			id: 2313,
+			dependencies: ["00000000000008BF"],
+			id: "0000000000000909",
 			tasks: [{
-				id: 2314,
+				id: "000000000000090A",
 				type: "item",
 				item: "bloodmagic:alchemytable"
 			}],
 			rewards: [
 				{
-					id: 2491,
+					id: "00000000000009BB",
 					type: "command",
 					title: "Rare Blood Magic Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -852,7 +853,7 @@
 					player_command: false
 				},
 				{
-					id: 2685,
+					id: "0000000000000A7D",
 					type: "command",
 					title: "Alchemist's Delight",
 					icon: "kubejs:alchemists_delight",
@@ -871,23 +872,23 @@
 				"",
 				"Refer to the Sanguine Scientem for more information on expanding the Incense Altar, increasing its effect. "
 			],
-			dependencies: [I;2207],
-			id: 2318,
+			dependencies: ["000000000000089F"],
+			id: "000000000000090E",
 			tasks: [
 				{
-					id: 2319,
+					id: "000000000000090F",
 					type: "item",
 					item: "bloodmagic:incensealtar"
 				},
 				{
-					id: 2328,
+					id: "0000000000000918",
 					type: "item",
 					item: "bloodmagic:woodbrickpath",
 					count: 12L
 				}
 			],
 			rewards: [{
-				id: 2329,
+				id: "0000000000000919",
 				type: "item",
 				item: "bloodmagic:divinationsigil"
 			}]

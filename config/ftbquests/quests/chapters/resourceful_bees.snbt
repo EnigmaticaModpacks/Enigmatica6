@@ -1,7 +1,8 @@
 {
-	id: 1805,
+	id: "000000000000070D",
+	group: "",
+	order_index: 15,
 	filename: "resourceful_bees",
-	order_index: 13,
 	title: "Resourceful Bees",
 	icon: "minecraft:honeycomb",
 	subtitle: ["Feed the Bees"],
@@ -17,15 +18,15 @@
 				"",
 				"Note: Bee Nests only produce standard Honeycombs regardless of the type of bees it houses."
 			],
-			dependencies: [I;2708],
-			id: 1806,
+			dependencies: ["0000000000000A94"],
+			id: "000000000000070E",
 			tasks: [{
-				id: 1807,
+				id: "000000000000070F",
 				type: "item",
 				title: "Any minecraft:beehives",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "minecraft:beehives"
 					}
@@ -35,14 +36,14 @@
 			}],
 			rewards: [
 				{
-					id: 1809,
+					id: "0000000000000711",
 					type: "item",
 					title: "Empty Bee Jar",
 					item: "resourcefulbees:bee_jar",
 					count: 4
 				},
 				{
-					id: 2824,
+					id: "0000000000000B08",
 					type: "item",
 					title: "Honey Cookie",
 					item: "farmersdelight:honey_cookie",
@@ -61,14 +62,14 @@
 				"",
 				"Please refer to JEI for more information on specific bees."
 			],
-			dependencies: [I;1812],
-			id: 1810,
+			dependencies: ["0000000000000714"],
+			id: "0000000000000712",
 			tasks: [{
-				id: 1811,
+				id: "0000000000000713",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2834,
+				id: "0000000000000B12",
 				type: "xp",
 				xp: 100
 			}]
@@ -84,14 +85,14 @@
 				"",
 				"Hint: JEI displays whether a bee spawns naturally or not."
 			],
-			dependencies: [I;2708],
-			id: 1812,
+			dependencies: ["0000000000000A94"],
+			id: "0000000000000714",
 			tasks: [{
-				id: 1813,
+				id: "0000000000000715",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2833,
+				id: "0000000000000B11",
 				type: "xp",
 				xp: 100
 			}]
@@ -107,14 +108,14 @@
 				"",
 				"Please refer to JEI for more information on your Bees and their abilities."
 			],
-			dependencies: [I;2708],
-			id: 1814,
+			dependencies: ["0000000000000A94"],
+			id: "0000000000000716",
 			tasks: [{
-				id: 1815,
+				id: "0000000000000717",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2825,
+				id: "0000000000000B09",
 				type: "xp",
 				xp: 100
 			}]
@@ -130,14 +131,14 @@
 				"",
 				"Please refer to JEI for more information on specific bees."
 			],
-			dependencies: [I;1810],
-			id: 1816,
+			dependencies: ["0000000000000712"],
+			id: "0000000000000718",
 			tasks: [{
-				id: 1817,
+				id: "0000000000000719",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2835,
+				id: "0000000000000B13",
 				type: "xp",
 				xp: 100
 			}]
@@ -151,16 +152,16 @@
 				"",
 				"Note: Beehives allow the production of modded Honeycombs which can be further processed for resources."
 			],
-			dependencies: [I;1806],
-			id: 1827,
+			dependencies: ["000000000000070E"],
+			id: "0000000000000723",
 			tasks: [{
-				id: 1828,
+				id: "0000000000000724",
 				type: "item",
 				item: "resourcefulbees:t1_beehive",
 				only_from_crafting: false
 			}],
 			rewards: [{
-				id: 2836,
+				id: "0000000000000B14",
 				type: "item",
 				title: "Honeycomb",
 				item: "minecraft:honeycomb",
@@ -172,15 +173,15 @@
 			x: -9.0d,
 			y: -18.0d,
 			subtitle: "The benefits of having a hive is un-Bee-lievable",
-			dependencies: [I;1827],
-			id: 1831,
+			dependencies: ["0000000000000723"],
+			id: "0000000000000727",
 			tasks: [{
-				id: 1834,
+				id: "000000000000072A",
 				type: "item",
 				item: "resourcefulbees:t2_beehive"
 			}],
 			rewards: [{
-				id: 1894,
+				id: "0000000000000766",
 				type: "item",
 				title: "Honeycomb Block",
 				item: "minecraft:honeycomb_block",
@@ -207,14 +208,14 @@
 				"",
 				"Honeycombs can be collected by right clicking the nest/hive with Shears, or Scraper (for Tiered Beehives)."
 			],
-			dependencies: [I;2708],
-			id: 2164,
+			dependencies: ["0000000000000A94"],
+			id: "0000000000000874",
 			tasks: [{
-				id: 2165,
+				id: "0000000000000875",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2822,
+				id: "0000000000000B06",
 				type: "xp",
 				xp: 100
 			}]
@@ -232,26 +233,26 @@
 				"",
 				"~Ridanisaurus"
 			],
-			id: 2708,
+			id: "0000000000000A94",
 			tasks: [{
-				id: 2709,
+				id: "0000000000000A95",
 				type: "checkmark",
 				title: "Checkmark",
 				icon: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 					}
 				}
 			}],
 			rewards: [{
-				id: 2710,
+				id: "0000000000000A96",
 				type: "item",
 				title: "Fifty Shades of Bees",
 				item: {
 					id: "patchouli:guide_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 					}
@@ -264,15 +265,15 @@
 			y: -15.0d,
 			subtitle: "Bees style their hair with a Honeycomb",
 			description: ["Combs are a byproduct of beekeeping,  which can be harvested from Bee Hives and Bee Nests. It can be processed at a later date in the Centrifuge for Honey, Wax, and a plethora of other Resources."],
-			dependencies: [I;2708],
-			id: 2711,
+			dependencies: ["0000000000000A94"],
+			id: "0000000000000A97",
 			tasks: [{
-				id: 2712,
+				id: "0000000000000A98",
 				type: "item",
 				title: "Any resourcefulbees:resourceful_honeycomb",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "resourcefulbees:resourceful_honeycomb"
 					}
@@ -280,19 +281,19 @@
 			}],
 			rewards: [
 				{
-					id: 2820,
+					id: "0000000000000B04",
 					type: "item",
 					title: "Shears",
 					item: {
 						id: "minecraft:shears",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 2821,
+					id: "0000000000000B05",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -310,15 +311,15 @@
 				"",
 				"Note: Empty Bottles are required to store the liquid honey."
 			],
-			dependencies: [I;2711],
-			id: 2713,
+			dependencies: ["0000000000000A97"],
+			id: "0000000000000A99",
 			tasks: [{
-				id: 2714,
+				id: "0000000000000A9A",
 				type: "item",
 				item: "resourcefulbees:mechanical_centrifuge"
 			}],
 			rewards: [{
-				id: 2819,
+				id: "0000000000000B03",
 				type: "command",
 				title: "Rare Resourceful Bees Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -336,15 +337,15 @@
 				"",
 				"The Centrifuge increases the efficiency of Honeycomb processing at the cost of energy."
 			],
-			dependencies: [I;2713],
-			id: 2715,
+			dependencies: ["0000000000000A99"],
+			id: "0000000000000A9B",
 			tasks: [{
-				id: 2716,
+				id: "0000000000000A9C",
 				type: "item",
 				item: "resourcefulbees:centrifuge"
 			}],
 			rewards: [{
-				id: 2818,
+				id: "0000000000000B02",
 				type: "command",
 				title: "Epic Resourceful Bees Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -364,16 +365,16 @@
 				"",
 				"Once you have collected all the necessary blocks, you can use your ‘Fifty Shades of Bees’ book to visualize the structure, which should help with the correct block placements."
 			],
-			dependencies: [I;2715],
-			id: 2717,
+			dependencies: ["0000000000000A9B"],
+			id: "0000000000000A9D",
 			tasks: [
 				{
-					id: 2718,
+					id: "0000000000000A9E",
 					type: "item",
 					item: "resourcefulbees:centrifuge_controller"
 				},
 				{
-					id: 2758,
+					id: "0000000000000AC6",
 					type: "item",
 					item: "resourcefulbees:centrifuge_casing",
 					count: 35L
@@ -381,7 +382,7 @@
 			],
 			rewards: [
 				{
-					id: 2809,
+					id: "0000000000000AF9",
 					type: "command",
 					title: "Legendary Resourceful Bees Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -389,7 +390,7 @@
 					player_command: false
 				},
 				{
-					id: 2810,
+					id: "0000000000000AFA",
 					type: "item",
 					title: "Epic Oreo",
 					item: "resourcefulbees:oreo_cookie",
@@ -401,15 +402,15 @@
 			x: -5.5d,
 			y: -21.0d,
 			subtitle: "There’s something Bee-tween us and it’s not just your stinger",
-			dependencies: [I;2732],
-			id: 2719,
+			dependencies: ["0000000000000AAC"],
+			id: "0000000000000A9F",
 			tasks: [{
-				id: 2720,
+				id: "0000000000000AA0",
 				type: "item",
 				item: "resourcefulbees:apiary_breeder_upgrade"
 			}],
 			rewards: [{
-				id: 2844,
+				id: "0000000000000B1C",
 				type: "xp",
 				xp: 200
 			}]
@@ -418,15 +419,15 @@
 			x: -8.0d,
 			y: -18.0d,
 			subtitle: "Only Bees who are on their best Bee-havior get to go to the Hive and make Honey",
-			dependencies: [I;1831],
-			id: 2726,
+			dependencies: ["0000000000000727"],
+			id: "0000000000000AA6",
 			tasks: [{
-				id: 2727,
+				id: "0000000000000AA7",
 				type: "item",
 				item: "resourcefulbees:t3_beehive"
 			}],
 			rewards: [{
-				id: 2837,
+				id: "0000000000000B15",
 				type: "item",
 				title: "Honey Block",
 				item: "minecraft:honey_block",
@@ -438,23 +439,23 @@
 			x: -7.0d,
 			y: -18.0d,
 			subtitle: "Hive never felt this way Bee-fore",
-			dependencies: [I;2726],
-			id: 2728,
+			dependencies: ["0000000000000AA6"],
+			id: "0000000000000AA8",
 			tasks: [{
-				id: 2729,
+				id: "0000000000000AA9",
 				type: "item",
 				item: "resourcefulbees:t4_beehive"
 			}],
 			rewards: [
 				{
-					id: 2839,
+					id: "0000000000000B17",
 					type: "item",
 					title: "Honey Glazed Ham",
 					item: "farmersdelight:honey_glazed_ham",
 					random_bonus: 2
 				},
 				{
-					id: 2840,
+					id: "0000000000000B18",
 					type: "item",
 					title: "Honey Bottle",
 					item: "minecraft:honey_bottle",
@@ -462,7 +463,7 @@
 					random_bonus: 8
 				},
 				{
-					id: 3082,
+					id: "0000000000000C0A",
 					type: "command",
 					title: "Alchemist's Delight",
 					icon: "kubejs:alchemists_delight",
@@ -480,16 +481,16 @@
 				"",
 				"The Storage Capacity can also be upgraded with ‘Storage Upgrades’."
 			],
-			dependencies: [I;2744],
-			id: 2730,
+			dependencies: ["0000000000000AB8"],
+			id: "0000000000000AAA",
 			tasks: [{
-				id: 2731,
+				id: "0000000000000AAB",
 				type: "item",
 				item: "resourcefulbees:apiary_storage"
 			}],
 			rewards: [
 				{
-					id: 2846,
+					id: "0000000000000B1E",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -497,7 +498,7 @@
 					player_command: false
 				},
 				{
-					id: 2847,
+					id: "0000000000000B1F",
 					type: "item",
 					title: "Epic Oreo",
 					item: "resourcefulbees:oreo_cookie"
@@ -515,16 +516,16 @@
 				"",
 				"Additional upgrades can help speed up the breeding process by reducing the time required, and the addition of extra breeding slots."
 			],
-			dependencies: [I;2744],
-			id: 2732,
+			dependencies: ["0000000000000AB8"],
+			id: "0000000000000AAC",
 			tasks: [{
-				id: 2733,
+				id: "0000000000000AAD",
 				type: "item",
 				item: "resourcefulbees:apiary_breeder"
 			}],
 			rewards: [
 				{
-					id: 2842,
+					id: "0000000000000B1A",
 					type: "command",
 					title: "Sorcerer's Delight",
 					icon: "kubejs:sorcerers_delight",
@@ -532,7 +533,7 @@
 					player_command: false
 				},
 				{
-					id: 2843,
+					id: "0000000000000B1B",
 					type: "item",
 					title: "Honey Cookie",
 					item: "farmersdelight:honey_cookie",
@@ -544,15 +545,15 @@
 			x: -5.5d,
 			y: -20.0d,
 			subtitle: "The male Bee was such a romantic, he kept Pollen in love with all the female Bees",
-			dependencies: [I;2732],
-			id: 2734,
+			dependencies: ["0000000000000AAC"],
+			id: "0000000000000AAE",
 			tasks: [{
-				id: 2735,
+				id: "0000000000000AAF",
 				type: "item",
 				item: "resourcefulbees:apiary_breed_time_upgrade"
 			}],
 			rewards: [{
-				id: 2845,
+				id: "0000000000000B1D",
 				type: "xp",
 				xp: 200
 			}]
@@ -561,15 +562,15 @@
 			x: -8.5d,
 			y: -20.5d,
 			subtitle: "More space to Bee filled",
-			dependencies: [I;2730],
-			id: 2736,
+			dependencies: ["0000000000000AAA"],
+			id: "0000000000000AB0",
 			tasks: [{
-				id: 2737,
+				id: "0000000000000AB1",
 				type: "item",
 				item: "resourcefulbees:iron_storage_upgrade"
 			}],
 			rewards: [{
-				id: 2848,
+				id: "0000000000000B20",
 				type: "xp",
 				xp: 100
 			}]
@@ -578,21 +579,21 @@
 			x: -9.5d,
 			y: -20.5d,
 			subtitle: "Golden Bee-ling",
-			dependencies: [I;2736],
-			id: 2738,
+			dependencies: ["0000000000000AB0"],
+			id: "0000000000000AB2",
 			tasks: [{
-				id: 2739,
+				id: "0000000000000AB3",
 				type: "item",
 				item: "resourcefulbees:gold_storage_upgrade"
 			}],
 			rewards: [
 				{
-					id: 2849,
+					id: "0000000000000B21",
 					type: "xp",
 					xp: 200
 				},
 				{
-					id: 2854,
+					id: "0000000000000B26",
 					type: "item",
 					title: "Honey Glazed Ham",
 					item: "farmersdelight:honey_glazed_ham",
@@ -604,21 +605,21 @@
 			x: -10.5d,
 			y: -20.5d,
 			subtitle: "We better Bee prepared for a cold winter",
-			dependencies: [I;2738],
-			id: 2740,
+			dependencies: ["0000000000000AB2"],
+			id: "0000000000000AB4",
 			tasks: [{
-				id: 2741,
+				id: "0000000000000AB5",
 				type: "item",
 				item: "resourcefulbees:diamond_storage_upgrade"
 			}],
 			rewards: [
 				{
-					id: 2850,
+					id: "0000000000000B22",
 					type: "xp",
 					xp: 300
 				},
 				{
-					id: 3084,
+					id: "0000000000000C0C",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -631,21 +632,21 @@
 			x: -11.5d,
 			y: -20.5d,
 			subtitle: "Upkeep Rank: Bee+",
-			dependencies: [I;2740],
-			id: 2742,
+			dependencies: ["0000000000000AB4"],
+			id: "0000000000000AB6",
 			tasks: [{
-				id: 2743,
+				id: "0000000000000AB7",
 				type: "item",
 				item: "resourcefulbees:emerald_storage_upgrade"
 			}],
 			rewards: [
 				{
-					id: 2851,
+					id: "0000000000000B23",
 					type: "xp",
 					xp: 400
 				},
 				{
-					id: 3085,
+					id: "0000000000000C0D",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -666,16 +667,16 @@
 				"Please refer to your 'Fifty Shades of Bees’ for more detailed information about the Apiaries, and to visualize the structure which should help you construct it.",
 				""
 			],
-			dependencies: [I;2728],
-			id: 2744,
+			dependencies: ["0000000000000AA8"],
+			id: "0000000000000AB8",
 			tasks: [{
-				id: 2745,
+				id: "0000000000000AB9",
 				type: "item",
 				item: "resourcefulbees:t1_apiary"
 			}],
 			rewards: [
 				{
-					id: 2816,
+					id: "0000000000000B00",
 					type: "item",
 					title: "Honeycomb",
 					item: "minecraft:honeycomb",
@@ -683,7 +684,7 @@
 					random_bonus: 8
 				},
 				{
-					id: 2817,
+					id: "0000000000000B01",
 					type: "item",
 					title: "Honey Bottle",
 					item: "minecraft:honey_bottle",
@@ -691,7 +692,7 @@
 					random_bonus: 8
 				},
 				{
-					id: 2841,
+					id: "0000000000000B19",
 					type: "item",
 					title: "Honeycomb Block",
 					item: "minecraft:honeycomb_block",
@@ -699,7 +700,7 @@
 					random_bonus: 8
 				},
 				{
-					id: 3083,
+					id: "0000000000000C0B",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -712,15 +713,15 @@
 			x: -8.0d,
 			y: -19.5d,
 			subtitle: "Quit Pollen my leg",
-			dependencies: [I;2744],
-			id: 2746,
+			dependencies: ["0000000000000AB8"],
+			id: "0000000000000ABA",
 			tasks: [{
-				id: 2747,
+				id: "0000000000000ABB",
 				type: "item",
 				item: "resourcefulbees:t2_apiary"
 			}],
 			rewards: [{
-				id: 2814,
+				id: "0000000000000AFE",
 				type: "command",
 				title: "Rare Resourceful Bees Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -732,15 +733,15 @@
 			x: -9.0d,
 			y: -19.5d,
 			subtitle: "The Bees went on strike because they wanted more Honey and less working Flowers",
-			dependencies: [I;2746],
-			id: 2748,
+			dependencies: ["0000000000000ABA"],
+			id: "0000000000000ABC",
 			tasks: [{
-				id: 2749,
+				id: "0000000000000ABD",
 				type: "item",
 				item: "resourcefulbees:t3_apiary"
 			}],
 			rewards: [{
-				id: 2813,
+				id: "0000000000000AFD",
 				type: "command",
 				title: "Epic Resourceful Bees Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -752,16 +753,16 @@
 			x: -10.0d,
 			y: -19.5d,
 			subtitle: "Claustropho-Bee-a intensifies",
-			dependencies: [I;2748],
-			id: 2750,
+			dependencies: ["0000000000000ABC"],
+			id: "0000000000000ABE",
 			tasks: [{
-				id: 2751,
+				id: "0000000000000ABF",
 				type: "item",
 				item: "resourcefulbees:t4_apiary"
 			}],
 			rewards: [
 				{
-					id: 2811,
+					id: "0000000000000AFB",
 					type: "command",
 					title: "Legendary Resourceful Bees Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -769,7 +770,7 @@
 					player_command: false
 				},
 				{
-					id: 2812,
+					id: "0000000000000AFC",
 					type: "item",
 					title: "Epic Oreo",
 					item: "resourcefulbees:oreo_cookie",
@@ -787,16 +788,16 @@
 				"",
 				"Example: If an Iron Bee is returning to the nest/hive passes over Stone, it can mutate it into Iron Ore."
 			],
-			dependencies: [I;1814],
-			id: 2752,
+			dependencies: ["0000000000000716"],
+			id: "0000000000000AC0",
 			tasks: [{
-				id: 2829,
+				id: "0000000000000B0D",
 				type: "checkmark",
 				title: "Checkmark",
 				icon: "minecraft:stone"
 			}],
 			rewards: [{
-				id: 2830,
+				id: "0000000000000B0E",
 				type: "xp",
 				xp: 100
 			}]
@@ -811,16 +812,16 @@
 				"",
 				"Example: If an Obsidian Bee is returning to the nest/hive passes over a Lava Source, it can mutate it into Obsidian."
 			],
-			dependencies: [I;1814],
-			id: 2754,
+			dependencies: ["0000000000000716"],
+			id: "0000000000000AC2",
 			tasks: [{
-				id: 2831,
+				id: "0000000000000B0F",
 				type: "checkmark",
 				title: "Checkmark",
 				icon: "minecraft:lava_bucket"
 			}],
 			rewards: [{
-				id: 2832,
+				id: "0000000000000B10",
 				type: "xp",
 				xp: 100
 			}]
@@ -837,16 +838,16 @@
 				"",
 				"Note: At the moment this is the only available mutation for the Entity Based Mutations, but more will be added in the future where fitting."
 			],
-			dependencies: [I;1814],
-			id: 2756,
+			dependencies: ["0000000000000716"],
+			id: "0000000000000AC4",
 			tasks: [{
-				id: 2826,
+				id: "0000000000000B0A",
 				type: "checkmark",
 				title: "Checkmark",
 				icon: "minecraft:pufferfish_spawn_egg"
 			}],
 			rewards: [{
-				id: 2828,
+				id: "0000000000000B0C",
 				type: "xp",
 				xp: 100
 			}]

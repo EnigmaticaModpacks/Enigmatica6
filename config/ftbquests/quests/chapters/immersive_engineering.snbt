@@ -1,7 +1,8 @@
 {
-	id: 2,
+	id: "0000000000000002",
+	group: "",
+	order_index: 16,
 	filename: "immersive_engineering",
-	order_index: 14,
 	title: "Immersive Engineering",
 	icon: "immersiveengineering:heavy_engineering",
 	default_quest_shape: "",
@@ -10,15 +11,15 @@
 			x: -1.5d,
 			y: -6.0d,
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."],
-			id: 4,
+			id: "0000000000000004",
 			tasks: [{
-				id: 5,
+				id: "0000000000000005",
 				type: "checkmark",
 				title: "Immersive Engineering",
 				icon: "immersiveengineering:manual"
 			}],
 			rewards: [{
-				id: 6,
+				id: "0000000000000006",
 				type: "item",
 				item: "immersiveengineering:manual"
 			}]
@@ -27,25 +28,25 @@
 			x: -1.5d,
 			y: -4.5d,
 			description: ["Your trusty Engineer's Hammer is used primarily to form multiblocks and rotate certain blocks. You can also use it to craft plates in a pinch."],
-			dependencies: [I;4],
-			id: 7,
+			dependencies: ["0000000000000004"],
+			id: "0000000000000007",
 			tasks: [{
-				id: 8,
+				id: "0000000000000008",
 				type: "item",
 				item: {
 					id: "immersiveengineering:hammer",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1543,
+				id: "0000000000000607",
 				type: "item",
 				item: {
 					id: "immersiveengineering:wirecutter",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
@@ -58,22 +59,22 @@
 			x: -3.5d,
 			y: -3.0d,
 			description: ["The Coke Oven is the first important multiblock in IE, made with a 3x3x3 cube of Coke Bricks. This structure can turn coal into coke and wood into charcoal; either operation produces creosote, an important byproduct used for Treated Wood."],
-			dependencies: [I;7],
-			id: 9,
+			dependencies: ["0000000000000007"],
+			id: "0000000000000009",
 			tasks: [
 				{
-					id: 11,
+					id: "000000000000000B",
 					type: "item",
 					item: "immersiveengineering:cokebrick",
 					count: 27L
 				},
 				{
-					id: 12,
+					id: "000000000000000C",
 					type: "item",
 					title: "Any forge:gems/coal_coke",
 					item: {
 						id: "itemfilters:tag",
-						Count: true,
+						Count: 1b,
 						tag: {
 							value: "forge:gems/coal_coke"
 						}
@@ -82,7 +83,7 @@
 				}
 			],
 			rewards: [{
-				id: 1546,
+				id: "000000000000060A",
 				type: "item",
 				item: "emendatusenigmatica:coke_gem",
 				count: 8
@@ -93,22 +94,22 @@
 			x: -6.5d,
 			y: -4.5d,
 			description: ["Windmills can be used as an early power source. They must be connected to a Kinetic Dynamo and placed in a high, unobstructed area."],
-			dependencies: [I;15],
-			id: 13,
+			dependencies: ["000000000000000F"],
+			id: "000000000000000D",
 			tasks: [
 				{
-					id: 14,
+					id: "000000000000000E",
 					type: "item",
 					item: "immersiveengineering:windmill"
 				},
 				{
-					id: 22,
+					id: "0000000000000016",
 					type: "item",
 					item: "immersiveengineering:dynamo"
 				}
 			],
 			rewards: [{
-				id: 1557,
+				id: "0000000000000615",
 				type: "item",
 				item: "immersiveengineering:wirecoil_copper_ins",
 				count: 2
@@ -120,22 +121,22 @@
 			x: -5.0d,
 			y: -6.0d,
 			description: ["IE wires can be used to transfer RF at three different voltages (different RF/t rates). You need a connector on the two devices to be connected and wires between them."],
-			dependencies: [I;4],
-			id: 15,
+			dependencies: ["0000000000000004"],
+			id: "000000000000000F",
 			tasks: [
 				{
-					id: 16,
+					id: "0000000000000010",
 					type: "item",
 					item: "immersiveengineering:wirecoil_copper"
 				},
 				{
-					id: 17,
+					id: "0000000000000011",
 					type: "item",
 					item: "immersiveengineering:connector_lv"
 				}
 			],
 			rewards: [{
-				id: 1547,
+				id: "000000000000060B",
 				type: "item",
 				item: "immersiveengineering:connector_lv",
 				count: 4
@@ -146,16 +147,16 @@
 			x: -3.5d,
 			y: -1.5d,
 			description: ["The Blast Furnace is used to process iron into steel, using coke or charcoal. This is a critically important structure... unless you get steel another way, anyway."],
-			dependencies: [I;9],
-			id: 18,
+			dependencies: ["0000000000000009"],
+			id: "0000000000000012",
 			tasks: [{
-				id: 19,
+				id: "0000000000000013",
 				type: "item",
 				item: "immersiveengineering:blastbrick",
 				count: 27L
 			}],
 			rewards: [{
-				id: 1555,
+				id: "0000000000000613",
 				type: "item",
 				item: "emendatusenigmatica:steel_ingot",
 				count: 8
@@ -166,22 +167,22 @@
 			x: -8.5d,
 			y: -6.0d,
 			description: ["Insulating wires with hemp cloth is an excellent way to not get electrocuted."],
-			dependencies: [I;15],
-			id: 20,
+			dependencies: ["000000000000000F"],
+			id: "0000000000000014",
 			tasks: [{
-				id: 21,
+				id: "0000000000000015",
 				type: "item",
 				item: "immersiveengineering:wirecoil_copper_ins"
 			}],
 			rewards: [
 				{
-					id: 1548,
+					id: "000000000000060C",
 					type: "item",
 					item: "immersiveengineering:hemp_fiber",
 					count: 16
 				},
 				{
-					id: 1549,
+					id: "000000000000060D",
 					type: "command",
 					title: "Rare Immersive Engineering Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -194,18 +195,18 @@
 			x: -3.5d,
 			y: -4.5d,
 			description: ["Capacitors can be used to store RF. Right-click a side with your hammer to toggle between input (blue), output (orange), and unused. MV/HV capacitors also exist."],
-			dependencies: [I;
-				9,
-				15
+			dependencies: [
+				"0000000000000009",
+				"000000000000000F"
 			],
-			id: 23,
+			id: "0000000000000017",
 			tasks: [{
-				id: 24,
+				id: "0000000000000018",
 				type: "item",
 				item: "immersiveengineering:capacitor_lv"
 			}],
 			rewards: [{
-				id: 1556,
+				id: "0000000000000614",
 				type: "command",
 				title: "Rare Immersive Engineering Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -217,19 +218,19 @@
 			x: -5.0d,
 			y: -3.0d,
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."],
-			dependencies: [I;9],
-			id: 25,
+			dependencies: ["0000000000000009"],
+			id: "0000000000000019",
 			tasks: [{
-				id: 26,
+				id: "000000000000001A",
 				type: "item",
 				item: "immersiveengineering:workbench"
 			}],
 			rewards: [{
-				id: 1551,
+				id: "000000000000060F",
 				type: "item",
 				item: {
 					id: "immersiveengineering:blueprint",
-					Count: true,
+					Count: 1b,
 					tag: {
 						blueprint: "components"
 					}
@@ -241,22 +242,22 @@
 			x: -7.5d,
 			y: 0.0d,
 			description: ["Water Wheels need to have water flowing over them. Up to three can be placed against a Kinetic Dynamo to produce power."],
-			dependencies: [I;18],
-			id: 27,
+			dependencies: ["0000000000000012"],
+			id: "000000000000001B",
 			tasks: [
 				{
-					id: 28,
+					id: "000000000000001C",
 					type: "item",
 					item: "immersiveengineering:watermill"
 				},
 				{
-					id: 29,
+					id: "000000000000001D",
 					type: "item",
 					item: "immersiveengineering:dynamo"
 				}
 			],
 			rewards: [{
-				id: 1559,
+				id: "0000000000000617",
 				type: "item",
 				item: "immersiveengineering:wirecoil_copper_ins",
 				count: 2
@@ -266,15 +267,15 @@
 			x: 0.0d,
 			y: -6.0d,
 			description: ["Conveyor belts can be used to automate item transport. Items on conveyor belts will automatically be inserted into inventories on the receiving side. You can also craft extracting or vertical conveyor belts."],
-			dependencies: [I;4],
-			id: 30,
+			dependencies: ["0000000000000004"],
+			id: "000000000000001E",
 			tasks: [{
-				id: 31,
+				id: "000000000000001F",
 				type: "item",
 				item: "immersiveengineering:conveyor_basic"
 			}],
 			rewards: [{
-				id: 1550,
+				id: "000000000000060E",
 				type: "command",
 				title: "Rare Immersive Engineering Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -292,41 +293,41 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;18],
-			id: 32,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000020",
 			tasks: [
 				{
-					id: 33,
+					id: "0000000000000021",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 10L
 				},
 				{
-					id: 45,
+					id: "000000000000002D",
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
 					count: 10L
 				},
 				{
-					id: 46,
+					id: "000000000000002E",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: 47,
+					id: "000000000000002F",
 					type: "item",
 					item: "immersiveengineering:steel_fence",
 					count: 8L
 				},
 				{
-					id: 48,
+					id: "0000000000000030",
 					type: "item",
 					item: "minecraft:hopper",
 					count: 9L
 				}
 			],
 			rewards: [{
-				id: 1569,
+				id: "0000000000000621",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -344,32 +345,32 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;18],
-			id: 34,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000022",
 			tasks: [
 				{
-					id: 40,
+					id: "0000000000000028",
 					type: "item",
 					item: "minecraft:piston"
 				},
 				{
-					id: 41,
+					id: "0000000000000029",
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
 					count: 2L
 				},
 				{
-					id: 42,
+					id: "000000000000002A",
 					type: "item",
 					item: "immersiveengineering:heavy_engineering"
 				},
 				{
-					id: 43,
+					id: "000000000000002B",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: 44,
+					id: "000000000000002C",
 					type: "item",
 					item: "immersiveengineering:conveyor_basic",
 					count: 2L
@@ -377,13 +378,13 @@
 			],
 			rewards: [
 				{
-					id: 1566,
+					id: "000000000000061E",
 					type: "item",
 					item: "emendatusenigmatica:iron_plate",
 					count: 8
 				},
 				{
-					id: 1567,
+					id: "000000000000061F",
 					type: "item",
 					item: "emendatusenigmatica:steel_plate",
 					count: 4
@@ -400,23 +401,23 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;18],
-			id: 36,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000024",
 			tasks: [
 				{
-					id: 37,
+					id: "0000000000000025",
 					type: "item",
 					item: "immersiveengineering:blastbrick_reinforced",
 					count: 27L
 				},
 				{
-					id: 49,
+					id: "0000000000000031",
 					type: "item",
 					item: "minecraft:hopper"
 				}
 			],
 			rewards: [{
-				id: 1568,
+				id: "0000000000000620",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -429,16 +430,16 @@
 			x: -1.5d,
 			y: -3.0d,
 			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."],
-			dependencies: [I;7],
-			id: 38,
+			dependencies: ["0000000000000007"],
+			id: "0000000000000026",
 			tasks: [{
-				id: 39,
+				id: "0000000000000027",
 				type: "item",
 				item: "immersiveengineering:alloybrick",
 				count: 8L
 			}],
 			rewards: [{
-				id: 1544,
+				id: "0000000000000608",
 				type: "item",
 				item: "emendatusenigmatica:copper_ingot",
 				count: 8
@@ -454,32 +455,32 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;
-				36,
-				32,
-				58
+			dependencies: [
+				"0000000000000024",
+				"0000000000000020",
+				"000000000000003A"
 			],
-			id: 50,
+			id: "0000000000000032",
 			tasks: [
 				{
-					id: 51,
+					id: "0000000000000033",
 					type: "item",
 					item: "immersiveengineering:graphite_electrode",
 					count: 3L
 				},
 				{
-					id: 109,
+					id: "000000000000006D",
 					type: "item",
 					item: "immersiveengineering:sheetmetal_steel",
 					count: 8L
 				},
 				{
-					id: 110,
+					id: "000000000000006E",
 					type: "item",
 					title: "Any forge:storage_blocks/steel",
 					item: {
 						id: "itemfilters:tag",
-						Count: true,
+						Count: 1b,
 						tag: {
 							value: "forge:storage_blocks/steel"
 						}
@@ -487,41 +488,41 @@
 					count: 6L
 				},
 				{
-					id: 111,
+					id: "000000000000006F",
 					type: "item",
 					item: "immersiveengineering:slab_sheetmetal_steel",
 					count: 14L
 				},
 				{
-					id: 112,
+					id: "0000000000000070",
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
 					count: 5L
 				},
 				{
-					id: 113,
+					id: "0000000000000071",
 					type: "item",
 					item: "immersiveengineering:heavy_engineering",
 					count: 5L
 				},
 				{
-					id: 114,
+					id: "0000000000000072",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: 115,
+					id: "0000000000000073",
 					type: "item",
 					item: "minecraft:cauldron"
 				},
 				{
-					id: 116,
+					id: "0000000000000074",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 10L
 				},
 				{
-					id: 117,
+					id: "0000000000000075",
 					type: "item",
 					item: "immersiveengineering:blastbrick_reinforced",
 					count: 27L
@@ -529,7 +530,7 @@
 			],
 			rewards: [
 				{
-					id: 1570,
+					id: "0000000000000622",
 					type: "command",
 					title: "Epic Immersive Engineering Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -537,7 +538,7 @@
 					player_command: false
 				},
 				{
-					id: 1571,
+					id: "0000000000000623",
 					type: "command",
 					title: "Epic Immersive Engineering Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -550,15 +551,15 @@
 			x: -5.0d,
 			y: -4.5d,
 			description: ["The External Heater is a simple machine that, when powered, will heat adjacent furnaces. This allows the furnaces to smelt more quickly, without using fuel."],
-			dependencies: [I;15],
-			id: 52,
+			dependencies: ["000000000000000F"],
+			id: "0000000000000034",
 			tasks: [{
-				id: 53,
+				id: "0000000000000035",
 				type: "item",
 				item: "immersiveengineering:furnace_heater"
 			}],
 			rewards: [{
-				id: 1558,
+				id: "0000000000000616",
 				type: "command",
 				title: "Rare Immersive Engineering Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -570,15 +571,15 @@
 			x: -1.5d,
 			y: -1.5d,
 			description: ["Thermoelectric Generators are another straightforward power option. When surrounded with hot and cold blocks, this block generates power based on the difference in temperature (see manual)."],
-			dependencies: [I;18],
-			id: 54,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000036",
 			tasks: [{
-				id: 55,
+				id: "0000000000000037",
 				type: "item",
 				item: "immersiveengineering:thermoelectric_generator"
 			}],
 			rewards: [{
-				id: 1560,
+				id: "0000000000000618",
 				type: "item",
 				item: "minecraft:blue_ice",
 				count: 4
@@ -588,7 +589,7 @@
 			title: "Sawmill",
 			icon: {
 				id: "immersiveengineering:sawblade",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -600,58 +601,58 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;18],
-			id: 56,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000038",
 			tasks: [
 				{
-					id: 57,
+					id: "0000000000000039",
 					type: "item",
 					item: {
 						id: "immersiveengineering:sawblade",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 91,
+					id: "000000000000005B",
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_grate_top",
 					count: 8L
 				},
 				{
-					id: 92,
+					id: "000000000000005C",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 6L
 				},
 				{
-					id: 93,
+					id: "000000000000005D",
 					type: "item",
 					item: "immersiveengineering:sheetmetal_iron",
 					count: 4L
 				},
 				{
-					id: 94,
+					id: "000000000000005E",
 					type: "item",
 					item: "immersiveengineering:heavy_engineering",
 					count: 2L
 				},
 				{
-					id: 95,
+					id: "000000000000005F",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: 96,
+					id: "0000000000000060",
 					type: "item",
 					item: "immersiveengineering:conveyor_basic",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: 1565,
+				id: "000000000000061D",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -669,22 +670,22 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;27],
-			id: 58,
+			dependencies: ["000000000000001B"],
+			id: "000000000000003A",
 			tasks: [
 				{
-					id: 59,
+					id: "000000000000003B",
 					type: "item",
 					item: "immersiveengineering:plantoil_bucket"
 				},
 				{
-					id: 108,
+					id: "000000000000006C",
 					type: "item",
 					item: "immersiveengineering:ethanol_bucket"
 				}
 			],
 			rewards: [{
-				id: 1561,
+				id: "0000000000000619",
 				type: "item",
 				item: "immersiveengineering:seed",
 				count: 24
@@ -699,15 +700,15 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;58],
-			id: 60,
+			dependencies: ["000000000000003A"],
+			id: "000000000000003C",
 			tasks: [{
-				id: 61,
+				id: "000000000000003D",
 				type: "item",
 				item: "immersiveengineering:biodiesel_bucket"
 			}],
 			rewards: [{
-				id: 1572,
+				id: "0000000000000624",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -725,47 +726,47 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;97],
-			id: 64,
+			dependencies: ["0000000000000061"],
+			id: "0000000000000040",
 			tasks: [
 				{
-					id: 101,
+					id: "0000000000000065",
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_grate_top",
 					count: 6L
 				},
 				{
-					id: 102,
+					id: "0000000000000066",
 					type: "item",
 					item: "immersiveengineering:sheetmetal_steel",
 					count: 16L
 				},
 				{
-					id: 103,
+					id: "0000000000000067",
 					type: "item",
 					item: "immersiveengineering:radiator",
 					count: 3L
 				},
 				{
-					id: 104,
+					id: "0000000000000068",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 9L
 				},
 				{
-					id: 105,
+					id: "0000000000000069",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: 106,
+					id: "000000000000006A",
 					type: "item",
 					item: "immersiveengineering:heavy_engineering",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: 1564,
+				id: "000000000000061C",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -783,16 +784,16 @@
 					}
 				},
 				id: "immersiveengineering:railgun",
-				Count: true
+				Count: 1b
 			},
 			x: -6.0d,
 			y: 0.0d,
 			description: ["IE has several unique tools and weapons that can be crafted. This quest shows just a few of the craftable tools/weapons available; most can be customized and upgraded in the Engineer's Workbench."],
-			dependencies: [I;18],
-			id: 66,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000042",
 			tasks: [
 				{
-					id: 67,
+					id: "0000000000000043",
 					type: "item",
 					item: {
 						ForgeCaps: {
@@ -802,11 +803,11 @@
 							}
 						},
 						id: "immersiveengineering:railgun",
-						Count: true
+						Count: 1b
 					}
 				},
 				{
-					id: 72,
+					id: "0000000000000048",
 					type: "item",
 					item: {
 						ForgeCaps: {
@@ -816,14 +817,14 @@
 							}
 						},
 						id: "immersiveengineering:shield",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 73,
+					id: "0000000000000049",
 					type: "item",
 					item: {
 						ForgeCaps: {
@@ -833,13 +834,13 @@
 							}
 						},
 						id: "immersiveengineering:drill",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				}
 			],
 			rewards: [{
-				id: 1562,
+				id: "000000000000061A",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -853,37 +854,37 @@
 			x: -4.5d,
 			y: 0.0d,
 			description: ['As described in the "Minerals" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk.'],
-			dependencies: [I;18],
-			id: 97,
+			dependencies: ["0000000000000012"],
+			id: "0000000000000061",
 			tasks: [
 				{
-					id: 98,
+					id: "0000000000000062",
 					type: "item",
 					item: "immersiveengineering:sample_drill"
 				},
 				{
-					id: 99,
+					id: "0000000000000063",
 					type: "item",
 					item: {
 						id: "immersiveengineering:survey_tools",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 100,
+					id: "0000000000000064",
 					type: "item",
 					item: {
 						id: "immersiveengineering:coresample",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				}
 			],
 			rewards: [{
-				id: 1563,
+				id: "000000000000061B",
 				type: "item",
 				item: "emendatusenigmatica:gold_ore",
 				count: 12
@@ -894,15 +895,15 @@
 			x: -8.5d,
 			y: -3.0d,
 			description: ["The Garden Cloche takes power, water, and optionally fertilizer to grow plants at an accelerated rate."],
-			dependencies: [I;25],
-			id: 577,
+			dependencies: ["0000000000000019"],
+			id: "0000000000000241",
 			tasks: [{
-				id: 578,
+				id: "0000000000000242",
 				type: "item",
 				item: "immersiveengineering:cloche"
 			}],
 			rewards: [{
-				id: 1553,
+				id: "0000000000000611",
 				type: "command",
 				title: "Rare Immersive Engineering Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -920,22 +921,22 @@
 				"",
 				"The Floodlight can be used to light up a large cone in front of itself."
 			],
-			dependencies: [I;25],
-			id: 579,
+			dependencies: ["0000000000000019"],
+			id: "0000000000000243",
 			tasks: [
 				{
-					id: 580,
+					id: "0000000000000244",
 					type: "item",
 					item: "immersiveengineering:electric_lantern"
 				},
 				{
-					id: 581,
+					id: "0000000000000245",
 					type: "item",
 					item: "immersiveengineering:floodlight"
 				}
 			],
 			rewards: [{
-				id: 1552,
+				id: "0000000000000610",
 				type: "item",
 				item: "minecraft:glowstone",
 				count: 4
@@ -951,47 +952,47 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [I;25],
-			id: 582,
+			dependencies: ["0000000000000019"],
+			id: "0000000000000246",
 			tasks: [
 				{
-					id: 583,
+					id: "0000000000000247",
 					type: "item",
 					item: "immersiveengineering:steel_scaffolding_standard",
 					count: 5L
 				},
 				{
-					id: 584,
+					id: "0000000000000248",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 4L
 				},
 				{
-					id: 585,
+					id: "0000000000000249",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: 586,
+					id: "000000000000024A",
 					type: "item",
 					item: "immersiveengineering:heavy_engineering",
 					count: 2L
 				},
 				{
-					id: 587,
+					id: "000000000000024B",
 					type: "item",
 					item: "immersiveengineering:slab_treated_wood_horizontal",
 					count: 2L
 				},
 				{
-					id: 588,
+					id: "000000000000024C",
 					type: "item",
 					item: "immersiveengineering:conveyor_basic",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: 1554,
+				id: "0000000000000612",
 				type: "command",
 				title: "Rare Immersive Engineering Loot Box",
 				icon: "kubejs:rare_lootbox",
