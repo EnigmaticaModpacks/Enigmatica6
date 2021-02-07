@@ -5,8 +5,8 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 **Improvements/Changes**
 
 -   LostTrinkets: Set maximum number of trinket slots the player can have to 10
-
-**Bug Fixes**
+-   Chisels&Bits: Increased Bit Bag stack size to 16384 (32 times what it could hold before)
+    **Bug Fixes**
 
 -
 

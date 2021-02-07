@@ -93,7 +93,7 @@ if ($ENABLE_CHANGELOG_GENERATOR_MODULE) {
     Write-Host "Generating changelog..." -ForegroundColor Green
     Write-Host ""
 	
-    java -jar ChangelogGenerator-2.0.0-pre6.jar --markdown
+    java -jar ChangelogGenerator-2.0.0-pre7.jar --markdown --lines=30
     Move-Item -Path changelog.md -Destination "changelogs/CHANGELOG_MODS_$MODPACK_VERSION.md"
     Remove-Item old.json, new.json -ErrorAction SilentlyContinue
 }

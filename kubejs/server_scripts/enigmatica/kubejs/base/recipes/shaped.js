@@ -375,6 +375,20 @@ events.listen('recipes', function (event) {
         shapedRecipe(item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
             A: '#forge:wax',
             B: '#forge:string'
+        }),
+        shapedRecipe(item.of('byg:embur_hyphae', 3), ['AA ', 'AA '], {
+            A: 'byg:embur_pedu'
+        }),
+        shapedRecipe(item.of('fluxnetworks:flux_controller', 1), ['ABA', 'CDC', 'AAA'], {
+            A: 'fluxnetworks:flux_block',
+            B: 'fluxnetworks:flux_core',
+            C: 'fluxnetworks:flux_dust',
+            D: 'powah:player_transmitter_nitro'
+        }),
+        shapedRecipe(item.of('fluxnetworks:flux_core', 8), ['ABA', 'BCB', 'ABA'], {
+            A: 'fluxnetworks:flux_dust',
+            B: '#forge:obsidian',
+            C: 'powah:ender_core'
         })
     ];
 
