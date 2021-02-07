@@ -20,6 +20,9 @@ nonRandom = ["losttrinkets:rock_candy", "losttrinkets:tha_cloud", "losttrinkets:
 	#Levels of xp needed to unlock a trinket slot.
 	#Range: 0 ~ 1000
 	slotCost = 20
+	#Maximum number of trinket slots the player can have (does not remove unlocked slots)
+	#Range: 1 ~ 40
+	maxSlots = 10
 
 [Killing_Unlocks]
 	#Set to false to disable unlocking trinkets from killing non-Boss entities.

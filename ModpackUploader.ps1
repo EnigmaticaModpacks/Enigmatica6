@@ -30,12 +30,6 @@ function Get-GitHubRelease {
     Remove-Item $name -Recurse -Force -ErrorAction SilentlyContinue
 }
 
-
-# Write-Host Removing non-default configs...
-# Get-ChildItem -Path config -Exclude $CONFIGS_TO_KEEP | ForEach-Object {
-#     Remove-Item -Path $_.FullName -Force -ErrorAction SilentlyContinue
-# }
-
 if (-not (test-path "$env:ProgramFiles\7-Zip\7z.exe")) { throw "$env:ProgramFiles\7-Zip\7z.exe needed to use the ModpackUploader." } 
 Set-Alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 
@@ -51,9 +45,9 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
 if ($ENABLE_MANIFEST_BUILDER_MODULE) {
     # $TwitchExportBuilder = "TwitchExportBuilder.exe"
     # if (!(Test-Path $TwitchExportBuilder) -or $ENABLE_ALWAYS_UPDATE_JARS) {
-        # Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
-        # Get-GitHubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
-        # Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
+    # Remove-Item $TwitchExportBuilder -Recurse -Force -ErrorAction SilentlyContinue
+    # Get-GitHubRelease -repo "Gaz492/twitch-export-builder" -file "twitch-export-builder_windows_amd64.exe"
+    # Rename-Item -Path "twitch-export-builder_windows_amd64.exe" -NewName $TwitchExportBuilder -ErrorAction SilentlyContinue
     # }
     # .\TwitchExportBuilder.exe -n "$CLIENT_FILENAME" -p "$MODPACK_VERSION"
 }
@@ -88,7 +82,7 @@ if ($ENABLE_SERVER_FILE_MODULE) {
 }
 
 if ($ENABLE_CHANGELOG_GENERATOR_MODULE) {
-    Remove-Item old.json, new.json, changelog.txt -ErrorAction SilentlyContinue
+    Remove-Item old.json, new.json, changelog.md -ErrorAction SilentlyContinue
     sz e "$CLIENT_FILENAME`-$LAST_MODPACK_VERSION.zip" manifest.json
     Rename-Item -Path manifest.json -NewName old.json
     sz e "$CLIENT_FILENAME`-$MODPACK_VERSION.zip" manifest.json
@@ -99,8 +93,8 @@ if ($ENABLE_CHANGELOG_GENERATOR_MODULE) {
     Write-Host "Generating changelog..." -ForegroundColor Green
     Write-Host ""
 	
-    java -jar ChangelogGenerator-2.0.0-pre3.jar
-    Move-Item -Path changelog.txt -Destination "changelogs/CHANGELOG_MODS_$MODPACK_VERSION.txt"
+    java -jar ChangelogGenerator-2.0.0-pre7.jar --markdown --lines=30
+    Move-Item -Path changelog.md -Destination "changelogs/CHANGELOG_MODS_$MODPACK_VERSION.md"
     Remove-Item old.json, new.json -ErrorAction SilentlyContinue
 }
 

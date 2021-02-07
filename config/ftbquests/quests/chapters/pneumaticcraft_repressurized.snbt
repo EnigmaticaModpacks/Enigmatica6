@@ -334,7 +334,11 @@
 			x: -13.5d,
 			y: -10.5d,
 			subtitle: "Freeze Frame",
-			description: ["The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items."],
+			description: [
+				"The Heat Frame is placed on any inventory and allows the inventory to make use of heat or cold to perform crafting operations. When heated, it smelts items as a furnace would. When cooled, it can make a variety of useful items.",
+				"",
+				"In order to cool liquids, fill a PneumaticCraft tank or a bucket and place it inside the inventory. The cooled items will appear in the chest as long as there's room."
+			],
 			dependencies: [I;210],
 			id: 217,
 			tasks: [{

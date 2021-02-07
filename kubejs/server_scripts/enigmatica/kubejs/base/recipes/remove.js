@@ -60,6 +60,9 @@ events.listen('recipes', function (event) {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'fluxnetworks:fluxcontroller',
+        'fluxnetworks:fluxcore',
+
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
@@ -73,6 +76,7 @@ events.listen('recipes', function (event) {
         'mapperbase:iron_rod',
 
         'mekanism:crushing/stone/to_cobblestone',
+        'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
 

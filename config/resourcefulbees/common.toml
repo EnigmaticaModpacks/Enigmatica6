@@ -88,12 +88,16 @@
 	#Range: 1000 ~ 1000000
 	maxCentrifugeRf = 10000
 	#
-	# Makes it so multiblock centrifuge can only do multiblock recipes. [true/false]
+	#Makes it so multiblock centrifuge can only do multiblock recipes. [true/false]
 	multiblockRecipesOnly = false
 	#
 	#RF/t consumed by the centrifuge when processing recipes. Mutliblock Centrifuge cuts this value in half.
 	#Range: 2 ~ 1000
 	centrifugeRfPerTick = 2
+	#
+	#Sets the max RF/t that the centrifuge can receive. This should idealy be set higher than centrifugeRfPerTick.
+	#Range: 100 ~ 10000
+	maxCentrifugeReceiveRate = 100
 
 ["Beehive Options"]
 	#

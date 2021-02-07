@@ -277,6 +277,7 @@
 	# - ServerPlayNetHandlerPlayerSpeedLimits: Required for changing player speed limits.
 	# - ServerRecipePlacer: Required for fixing the recipe book not moving ingredients with tags.
 	# - ToggleableKeyBinding: Required for the secondary sprint key binding.
+	# - WalkNodeProcessor: Required for fixing mobs not being able to cross rails.
 	# This option is both client and server-sided.
 	# Changes to this option are applied after a game restart.
 	# Default: []
@@ -298,6 +299,15 @@
 		# This also allows players to receive the Conduit Power effect in cauldrons filled with water.
 		# Default: true
 		fix_entities_not_being_considered_wet_in_cauldrons = true
+		# Fixes mobs not being able to cross rails.
+		# This bug is reported as MC-33359: https://bugs.mojang.com/browse/MC-33359
+		# Default: true
+		fix_mobs_not_crossing_rails = true
+		# Fixes boats and players in boats not taking fall damage.
+		# This bug is reported as both MC-98160: https://bugs.mojang.com/browse/MC-98160
+		# and MC-105103: https://bugs.mojang.com/browse/MC-105103
+		# Default: true
+		fix_boat_fall_damage = true
 		# Fixes player heads from the same player sometimes not stacking.
 		# DISABLED: Disables this fix.
 		# REQUIRE_SAME_PLAYER_AND_TEXTURE_URL: Player heads can stack if they are from the same player and have the same texture URL.
