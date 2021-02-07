@@ -375,9 +375,6 @@ events.listen('recipes', function (event) {
         shapedRecipe(item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
             A: '#forge:wax',
             B: '#forge:string'
-        }),
-        shapedRecipe(item.of('byg:embur_hyphae', 3), ['AA ', 'AA '], {
-            A: 'byg:embur_pedu'
         })
     ];
 
