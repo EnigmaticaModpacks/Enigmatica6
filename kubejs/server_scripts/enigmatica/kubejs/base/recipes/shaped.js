@@ -376,6 +376,9 @@ events.listen('recipes', function (event) {
             A: '#forge:wax',
             B: '#forge:string'
         }),
+        shapedRecipe(item.of('byg:embur_hyphae', 3), ['AA ', 'AA '], {
+            A: 'byg:embur_pedu'
+        }),
         shapedRecipe(item.of('fluxnetworks:flux_controller', 1), ['ABA', 'CDC', 'AAA'], {
             A: 'fluxnetworks:flux_block',
             B: 'fluxnetworks:flux_core',
