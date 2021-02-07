@@ -1,7 +1,8 @@
 {
-	id: 150,
+	id: "0000000000000096",
+	group: "",
+	order_index: 6,
 	filename: "building",
-	order_index: 3,
 	title: "Building",
 	icon: "mcwwindows:oak_plank_window2_2tall",
 	always_invisible: true,
@@ -12,9 +13,9 @@
 			x: 0.0d,
 			y: 0.0d,
 			description: ["This chapter highlights some of the building materials you have available."],
-			id: 3615,
+			id: "0000000000000E1F",
 			tasks: [{
-				id: 3616,
+				id: "0000000000000E20",
 				type: "checkmark",
 				title: "Building",
 				icon: "minecraft:glass"
@@ -24,10 +25,10 @@
 			title: "Macaw's Bridges",
 			x: 0.0d,
 			y: -2.0d,
-			dependencies: [I;3615],
-			id: 3626,
+			dependencies: ["0000000000000E1F"],
+			id: "0000000000000E2A",
 			tasks: [{
-				id: 3627,
+				id: "0000000000000E2B",
 				type: "item",
 				item: "mcwbridges:rope_oak_bridge"
 			}]
@@ -35,10 +36,10 @@
 		{
 			x: -1.0d,
 			y: -2.5d,
-			dependencies: [I;3615],
-			id: 3630,
+			dependencies: ["0000000000000E1F"],
+			id: "0000000000000E2E",
 			tasks: [{
-				id: 3631,
+				id: "0000000000000E2F",
 				type: "item",
 				item: "mcwdoors:oak_japanese_door"
 			}]
@@ -46,10 +47,10 @@
 		{
 			x: 1.0d,
 			y: -2.5d,
-			dependencies: [I;3615],
-			id: 3632,
+			dependencies: ["0000000000000E1F"],
+			id: "0000000000000E30",
 			tasks: [{
-				id: 3633,
+				id: "0000000000000E31",
 				type: "item",
 				item: "mcwroofs:oak_attic_roof"
 			}]
@@ -57,10 +58,10 @@
 		{
 			x: 2.0d,
 			y: -3.0d,
-			dependencies: [I;3615],
-			id: 3634,
+			dependencies: ["0000000000000E1F"],
+			id: "0000000000000E32",
 			tasks: [{
-				id: 3635,
+				id: "0000000000000E33",
 				type: "item",
 				item: "mcwwindows:oak_window"
 			}]
@@ -68,10 +69,10 @@
 		{
 			x: -2.0d,
 			y: -3.0d,
-			dependencies: [I;3615],
-			id: 3636,
+			dependencies: ["0000000000000E1F"],
+			id: "0000000000000E34",
 			tasks: [{
-				id: 3637,
+				id: "0000000000000E35",
 				type: "item",
 				item: "mcwtrpdoors:oak_glass_trapdoor"
 			}]
@@ -80,9 +81,9 @@
 			title: "EmbellishCraft",
 			x: 1.5d,
 			y: 0.0d,
-			id: 3640,
+			id: "0000000000000E38",
 			tasks: [{
-				id: 3641,
+				id: "0000000000000E39",
 				type: "item",
 				item: "embellishcraft:iron_beam"
 			}]
@@ -91,9 +92,9 @@
 			title: "Builders Crafts and Additions",
 			x: 1.0d,
 			y: 1.0d,
-			id: 3643,
+			id: "0000000000000E3B",
 			tasks: [{
-				id: 3644,
+				id: "0000000000000E3C",
 				type: "item",
 				item: "buildersaddition:counter_oak_andesite"
 			}]

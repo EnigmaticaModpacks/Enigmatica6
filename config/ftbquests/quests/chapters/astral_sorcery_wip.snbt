@@ -1,7 +1,8 @@
 {
-	id: 2803,
+	id: "0000000000000AF3",
+	group: "",
+	order_index: 25,
 	filename: "astral_sorcery_wip",
-	order_index: 23,
 	title: "Astral Sorcery",
 	icon: "astralsorcery:hand_telescope",
 	default_quest_shape: "",
@@ -19,13 +20,13 @@
 				"",
 				"~MuteTiefling"
 			],
-			id: 2804,
+			id: "0000000000000AF4",
 			tasks: [{
-				id: 2805,
+				id: "0000000000000AF5",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 2806,
+				id: "0000000000000AF6",
 				type: "item",
 				item: "astralsorcery:tome"
 			}]
@@ -48,28 +49,28 @@
 				"",
 				"These may be located far from home, but revisiting this crystal will be vital through much of the early stages of the mod. Use the provided Warp Scrolls to simplify getting back and forth for now."
 			],
-			dependencies: [I;2804],
+			dependencies: ["0000000000000AF4"],
 			min_width: 300,
-			id: 2926,
+			id: "0000000000000B6E",
 			tasks: [{
-				id: 2935,
+				id: "0000000000000B77",
 				type: "item",
 				item: "astralsorcery:altar_discovery"
 			}],
 			rewards: [
 				{
-					id: 2936,
+					id: "0000000000000B78",
 					type: "item",
 					item: "astralsorcery:wand"
 				},
 				{
-					id: 3035,
+					id: "0000000000000BDB",
 					type: "item",
 					item: "ars_nouveau:warp_scroll",
 					count: 16
 				},
 				{
-					id: 3166,
+					id: "0000000000000C5E",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -95,40 +96,40 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2958],
-			id: 2928,
+			dependencies: ["0000000000000B8E"],
+			id: "0000000000000B70",
 			tasks: [
 				{
-					id: 2960,
+					id: "0000000000000B90",
 					type: "item",
 					item: "astralsorcery:ritual_pedestal"
 				},
 				{
-					id: 2961,
+					id: "0000000000000B91",
 					type: "item",
 					item: "astralsorcery:marble_raw",
 					count: 12L
 				},
 				{
-					id: 2962,
+					id: "0000000000000B92",
 					type: "item",
 					item: "astralsorcery:marble_chiseled"
 				},
 				{
-					id: 2963,
+					id: "0000000000000B93",
 					type: "item",
 					item: "astralsorcery:marble_bricks",
 					count: 24L
 				},
 				{
-					id: 2964,
+					id: "0000000000000B94",
 					type: "item",
 					item: "astralsorcery:marble_arch",
 					count: 20L
 				}
 			],
 			rewards: [{
-				id: 3149,
+				id: "0000000000000C4D",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -156,16 +157,16 @@
 				"",
 				"Starlight may be extracted manually with a bucket, or with pipes from the bottom face. "
 			],
-			dependencies: [I;2979],
-			id: 2930,
+			dependencies: ["0000000000000BA3"],
+			id: "0000000000000B72",
 			tasks: [
 				{
-					id: 2950,
+					id: "0000000000000B86",
 					type: "item",
 					item: "astralsorcery:well"
 				},
 				{
-					id: 3039,
+					id: "0000000000000BDF",
 					type: "item",
 					item: "astralsorcery:aquamarine",
 					count: 4L
@@ -173,13 +174,13 @@
 			],
 			rewards: [
 				{
-					id: 3040,
+					id: "0000000000000BE0",
 					type: "item",
 					item: "astralsorcery:aquamarine_sand_ore",
 					count: 8
 				},
 				{
-					id: 3168,
+					id: "0000000000000C60",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -200,21 +201,21 @@
 				"",
 				"Constellation Papers may be found in any of the marble temples and ruins throughout the world. A total of sixteen will be needed eventually. Find as many as possible to begin. "
 			],
-			dependencies: [I;2926],
-			id: 2932,
+			dependencies: ["0000000000000B6E"],
+			id: "0000000000000B74",
 			tasks: [{
-				id: 2951,
+				id: "0000000000000B87",
 				type: "item",
 				item: {
 					id: "astralsorcery:constellation_paper",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {}
 					}
 				}
 			}],
 			rewards: [{
-				id: 3153,
+				id: "0000000000000C51",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -233,47 +234,47 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2926],
-			id: 2937,
+			dependencies: ["0000000000000B6E"],
+			id: "0000000000000B79",
 			tasks: [
 				{
-					id: 2938,
+					id: "0000000000000B7A",
 					type: "item",
 					item: "astralsorcery:altar_attunement"
 				},
 				{
-					id: 3119,
+					id: "0000000000000C2F",
 					type: "item",
 					item: "astralsorcery:marble_pillar",
 					count: 8L
 				},
 				{
-					id: 3120,
+					id: "0000000000000C30",
 					type: "item",
 					item: "astralsorcery:marble_chiseled",
 					count: 8L
 				},
 				{
-					id: 3121,
+					id: "0000000000000C31",
 					type: "item",
 					item: "astralsorcery:marble_bricks",
 					count: 24L
 				},
 				{
-					id: 3122,
+					id: "0000000000000C32",
 					type: "item",
 					item: "astralsorcery:marble_arch",
 					count: 28L
 				},
 				{
-					id: 3123,
+					id: "0000000000000C33",
 					type: "item",
 					item: "astralsorcery:black_marble_raw",
 					count: 21L
 				}
 			],
 			rewards: [{
-				id: 3138,
+				id: "0000000000000C42",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -290,53 +291,53 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2937],
-			id: 2939,
+			dependencies: ["0000000000000B79"],
+			id: "0000000000000B7B",
 			tasks: [
 				{
-					id: 2940,
+					id: "0000000000000B7C",
 					type: "item",
 					item: "astralsorcery:altar_constellation"
 				},
 				{
-					id: 3124,
+					id: "0000000000000C34",
 					type: "item",
 					item: "astralsorcery:marble_runed",
 					count: 4L
 				},
 				{
-					id: 3125,
+					id: "0000000000000C35",
 					type: "item",
 					item: "astralsorcery:marble_chiseled",
 					count: 4L
 				},
 				{
-					id: 3126,
+					id: "0000000000000C36",
 					type: "item",
 					item: "astralsorcery:black_marble_raw",
 					count: 49L
 				},
 				{
-					id: 3127,
+					id: "0000000000000C37",
 					type: "item",
 					item: "astralsorcery:marble_raw",
 					count: 12L
 				},
 				{
-					id: 3128,
+					id: "0000000000000C38",
 					type: "item",
 					item: "astralsorcery:marble_pillar",
 					count: 8L
 				},
 				{
-					id: 3129,
+					id: "0000000000000C39",
 					type: "item",
 					item: "astralsorcery:marble_bricks",
 					count: 40L
 				}
 			],
 			rewards: [{
-				id: 3139,
+				id: "0000000000000C43",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -355,47 +356,47 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2939],
-			id: 2941,
+			dependencies: ["0000000000000B7B"],
+			id: "0000000000000B7D",
 			tasks: [
 				{
-					id: 2942,
+					id: "0000000000000B7E",
 					type: "item",
 					item: "astralsorcery:altar_radiance"
 				},
 				{
-					id: 3130,
+					id: "0000000000000C3A",
 					type: "item",
 					item: "astralsorcery:marble_pillar",
 					count: 8L
 				},
 				{
-					id: 3131,
+					id: "0000000000000C3B",
 					type: "item",
 					item: "astralsorcery:marble_chiseled",
 					count: 4L
 				},
 				{
-					id: 3132,
+					id: "0000000000000C3C",
 					type: "item",
 					item: "astralsorcery:marble_bricks",
 					count: 68L
 				},
 				{
-					id: 3133,
+					id: "0000000000000C3D",
 					type: "item",
 					item: "astralsorcery:marble_raw",
 					count: 12L
 				},
 				{
-					id: 3134,
+					id: "0000000000000C3E",
 					type: "item",
 					item: "astralsorcery:black_marble_raw",
 					count: 49L
 				}
 			],
 			rewards: [{
-				id: 3140,
+				id: "0000000000000C44",
 				type: "command",
 				title: "Legendary Astral Sorcery Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -417,34 +418,34 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2975],
-			id: 2943,
+			dependencies: ["0000000000000B9F"],
+			id: "0000000000000B7F",
 			tasks: [
 				{
-					id: 2944,
+					id: "0000000000000B80",
 					type: "item",
 					item: "astralsorcery:spectral_relay"
 				},
 				{
-					id: 2945,
+					id: "0000000000000B81",
 					type: "item",
 					item: "astralsorcery:black_marble_raw"
 				},
 				{
-					id: 2946,
+					id: "0000000000000B82",
 					type: "item",
 					item: "astralsorcery:marble_arch",
 					count: 4L
 				},
 				{
-					id: 2947,
+					id: "0000000000000B83",
 					type: "item",
 					item: "astralsorcery:marble_chiseled",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: 3142,
+				id: "0000000000000C46",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -471,16 +472,16 @@
 				"",
 				"Not every constellation appears each night, so regularly star gazing is encouraged. "
 			],
-			dependencies: [I;2932],
-			id: 2952,
+			dependencies: ["0000000000000B74"],
+			id: "0000000000000B88",
 			tasks: [{
-				id: 2953,
+				id: "0000000000000B89",
 				type: "item",
 				item: "astralsorcery:hand_telescope"
 			}],
 			rewards: [
 				{
-					id: 3106,
+					id: "0000000000000C22",
 					type: "command",
 					title: "Furball",
 					icon: "aquaculture:fish_bones",
@@ -488,7 +489,7 @@
 					player_command: false
 				},
 				{
-					id: 3107,
+					id: "0000000000000C23",
 					type: "item",
 					item: "minecraft:cod",
 					count: 16
@@ -505,15 +506,15 @@
 				"",
 				"The telescope greatly simplifies the task of searching for constellations. They must still be drawn in to learn them, but the improved optics grants a clearer image of the night sky."
 			],
-			dependencies: [I;2937],
-			id: 2954,
+			dependencies: ["0000000000000B79"],
+			id: "0000000000000B8A",
 			tasks: [{
-				id: 2955,
+				id: "0000000000000B8B",
 				type: "item",
 				item: "astralsorcery:telescope"
 			}],
 			rewards: [{
-				id: 3147,
+				id: "0000000000000C4B",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -533,15 +534,15 @@
 				"",
 				"With the observatory it is possible to locate the final few faint constellations in the night sky. "
 			],
-			dependencies: [I;2941],
-			id: 2956,
+			dependencies: ["0000000000000B7D"],
+			id: "0000000000000B8C",
 			tasks: [{
-				id: 2957,
+				id: "0000000000000B8D",
 				type: "item",
 				item: "astralsorcery:observatory"
 			}],
 			rewards: [{
-				id: 3146,
+				id: "0000000000000C4A",
 				type: "command",
 				title: "Legendary Astral Sorcery Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -566,16 +567,16 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2954],
+			dependencies: ["0000000000000B8A"],
 			min_width: 300,
-			id: 2958,
+			id: "0000000000000B8E",
 			tasks: [{
-				id: 2959,
+				id: "0000000000000B8F",
 				type: "item",
 				item: "astralsorcery:attunement_altar"
 			}],
 			rewards: [{
-				id: 3148,
+				id: "0000000000000C4C",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -596,22 +597,22 @@
 				"",
 				"You have been warned."
 			],
-			dependencies: [I;2926],
-			id: 2965,
+			dependencies: ["0000000000000B6E"],
+			id: "0000000000000B95",
 			tasks: [
 				{
-					id: 2966,
+					id: "0000000000000B96",
 					type: "item",
 					item: "astralsorcery:nocturnal_powder"
 				},
 				{
-					id: 2967,
+					id: "0000000000000B97",
 					type: "item",
 					item: "astralsorcery:illumination_powder"
 				}
 			],
 			rewards: [{
-				id: 3118,
+				id: "0000000000000C2E",
 				type: "item",
 				item: "astralsorcery:illuminator"
 			}]
@@ -620,7 +621,7 @@
 			title: "Enhanced Collector Crystals",
 			icon: {
 				id: "astralsorcery:celestial_collector_crystal",
-				Count: true,
+				Count: 1b,
 				tag: {
 					astralsorcery: {
 						constellation: "astralsorcery:bootes",
@@ -629,27 +630,27 @@
 								{
 									property: "astralsorcery:size",
 									pLevel: 3,
-									discovered: true
+									discovered: 1b
 								},
 								{
 									property: "astralsorcery:purity",
 									pLevel: 2,
-									discovered: true
+									discovered: 1b
 								},
 								{
 									property: "astralsorcery:shape",
 									pLevel: 3,
-									discovered: true
+									discovered: 1b
 								},
 								{
 									property: "astralsorcery:collector.rate",
 									pLevel: 3,
-									discovered: true
+									discovered: 1b
 								},
 								{
 									property: "astralsorcery:constellation.bootes",
 									pLevel: 2,
-									discovered: true
+									discovered: 1b
 								}
 							]
 						}
@@ -670,56 +671,56 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;
-				2928,
-				3021
+			dependencies: [
+				"0000000000000B70",
+				"0000000000000BCD"
 			],
-			id: 2968,
+			id: "0000000000000B98",
 			tasks: [
 				{
-					id: 2969,
+					id: "0000000000000B99",
 					type: "item",
 					title: "Any Collector Crystal",
 					item: {
 						id: "itemfilters:tag",
-						Count: true,
+						Count: 1b,
 						tag: {
 							value: "astralsorcery:crystals/collector"
 						}
 					}
 				},
 				{
-					id: 2970,
+					id: "0000000000000B9A",
 					type: "item",
 					item: "astralsorcery:marble_pillar"
 				},
 				{
-					id: 2971,
+					id: "0000000000000B9B",
 					type: "item",
 					item: "astralsorcery:marble_engraved",
 					count: 5L
 				},
 				{
-					id: 2972,
+					id: "0000000000000B9C",
 					type: "item",
 					item: "astralsorcery:marble_raw",
 					count: 9L
 				},
 				{
-					id: 2973,
+					id: "0000000000000B9D",
 					type: "item",
 					item: "astralsorcery:marble_chiseled",
 					count: 5L
 				},
 				{
-					id: 2974,
+					id: "0000000000000B9E",
 					type: "item",
 					item: "astralsorcery:marble_runed",
 					count: 12L
 				}
 			],
 			rewards: [{
-				id: 3154,
+				id: "0000000000000C52",
 				type: "command",
 				title: "Legendary Astral Sorcery Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -744,15 +745,15 @@
 				"",
 				"Worry not, if an area with a high concentration cannot be found, it is more than possible to get enough starlight into an altar without these boosts. "
 			],
-			dependencies: [I;2926],
+			dependencies: ["0000000000000B6E"],
 			min_width: 300,
-			id: 2975,
+			id: "0000000000000B9F",
 			tasks: [{
-				id: 2976,
+				id: "0000000000000BA0",
 				type: "item",
 				item: {
 					id: "astralsorcery:resonator",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {
 							upgrades: [0],
@@ -762,7 +763,7 @@
 				}
 			}],
 			rewards: [{
-				id: 3141,
+				id: "0000000000000C45",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -784,14 +785,14 @@
 				"",
 				"Holding a Resonating Wand while wandering the surface at night will reveal where to begin digging, as great plumes of light burst from the ground, marking their locations. "
 			],
-			dependencies: [I;2926],
-			id: 2979,
+			dependencies: ["0000000000000B6E"],
+			id: "0000000000000BA3",
 			tasks: [{
-				id: 2980,
+				id: "0000000000000BA4",
 				type: "item",
 				item: {
 					id: "astralsorcery:rock_crystal",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {}
 					}
@@ -799,12 +800,12 @@
 			}],
 			rewards: [
 				{
-					id: 3004,
+					id: "0000000000000BBC",
 					type: "item",
 					item: "astralsorcery:linking_tool"
 				},
 				{
-					id: 3167,
+					id: "0000000000000C5F",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -824,21 +825,21 @@
 				"",
 				"Size, Shape, Durability, and Efficiency traits are all important when crafting Crystal Tools, where the stats of the final tool will be a combination of those used to craft it."
 			],
-			dependencies: [I;2979],
-			id: 2981,
+			dependencies: ["0000000000000BA3"],
+			id: "0000000000000BA5",
 			tasks: [{
-				id: 2982,
+				id: "0000000000000BA6",
 				type: "item",
 				item: {
 					id: "astralsorcery:crystal_pickaxe",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 3156,
+				id: "0000000000000C54",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -860,46 +861,46 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2939],
-			id: 2983,
+			dependencies: ["0000000000000B7B"],
+			id: "0000000000000BA7",
 			tasks: [
 				{
-					id: 2984,
+					id: "0000000000000BA8",
 					type: "item",
 					item: "astralsorcery:infuser"
 				},
 				{
-					id: 2985,
+					id: "0000000000000BA9",
 					type: "item",
 					item: "minecraft:lapis_block"
 				},
 				{
-					id: 2986,
+					id: "0000000000000BAA",
 					type: "item",
 					item: "astralsorcery:marble_chiseled",
 					count: 8L
 				},
 				{
-					id: 2987,
+					id: "0000000000000BAB",
 					type: "item",
 					item: "astralsorcery:marble_pillar",
 					count: 4L
 				},
 				{
-					id: 2988,
+					id: "0000000000000BAC",
 					type: "item",
 					item: "astralsorcery:marble_runed",
 					count: 20L
 				},
 				{
-					id: 2989,
+					id: "0000000000000BAD",
 					type: "item",
 					item: "astralsorcery:marble_raw",
 					count: 16L
 				}
 			],
 			rewards: [{
-				id: 3144,
+				id: "0000000000000C48",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -922,25 +923,25 @@
 				"",
 				"The same process is used to convert Starmetal Ingots into Stardust."
 			],
-			dependencies: [I;2995],
-			id: 2990,
+			dependencies: ["0000000000000BB3"],
+			id: "0000000000000BAE",
 			tasks: [{
-				id: 2991,
+				id: "0000000000000BAF",
 				type: "item",
 				item: {
 					id: "astralsorcery:chisel",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 2992,
+				id: "0000000000000BB0",
 				type: "item",
 				item: {
 					id: "minecraft:enchanted_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						StoredEnchantments: [{
 							lvl: 3s,
@@ -963,15 +964,15 @@
 				"",
 				"Creating a small farm to generate Sand and Aquamarine Shale may prove very useful going forward to produce more Liquid Starlight. Packed Ice may also be of great use for other mods…"
 			],
-			dependencies: [I;2930],
-			id: 2993,
+			dependencies: ["0000000000000B72"],
+			id: "0000000000000BB1",
 			tasks: [{
-				id: 2994,
+				id: "0000000000000BB2",
 				type: "item",
 				item: "astralsorcery:liquid_starlight_bucket"
 			}],
 			rewards: [{
-				id: 3158,
+				id: "0000000000000C56",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -994,15 +995,15 @@
 				"",
 				"Ore Chunks can be freely converted to Vanilla Iron Ore via the Stonecutter. "
 			],
-			dependencies: [I;2979],
-			id: 2995,
+			dependencies: ["0000000000000BA3"],
+			id: "0000000000000BB3",
 			tasks: [{
-				id: 2996,
+				id: "0000000000000BB4",
 				type: "item",
 				item: "astralsorcery:starmetal_ore"
 			}],
 			rewards: [{
-				id: 3157,
+				id: "0000000000000C55",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1018,15 +1019,15 @@
 				"",
 				"The Chalice can be accessed by pipes from the bottom."
 			],
-			dependencies: [I;2941],
-			id: 2997,
+			dependencies: ["0000000000000B7D"],
+			id: "0000000000000BB5",
 			tasks: [{
-				id: 2998,
+				id: "0000000000000BB6",
 				type: "item",
 				item: "astralsorcery:chalice"
 			}],
 			rewards: [{
-				id: 3145,
+				id: "0000000000000C49",
 				type: "command",
 				title: "Legendary Astral Sorcery Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1048,16 +1049,16 @@
 				"",
 				"Use a Linking Tool bind the Anchor above the ritual to the Anchor at the desired location. "
 			],
-			dependencies: [I;2928],
-			id: 2999,
+			dependencies: ["0000000000000B70"],
+			id: "0000000000000BB7",
 			tasks: [{
-				id: 3000,
+				id: "0000000000000BB8",
 				type: "item",
 				item: "astralsorcery:ritual_link",
 				count: 2L
 			}],
 			rewards: [{
-				id: 3155,
+				id: "0000000000000C53",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1079,19 +1080,19 @@
 				"",
 				"When crafting Crystal Lenses, the Purity and Shape of the crystal effect the final attributes of the lens. The size of the crystal effects how many lenses are obtained from the craft."
 			],
-			dependencies: [I;3025],
-			id: 3005,
+			dependencies: ["0000000000000BD1"],
+			id: "0000000000000BBD",
 			tasks: [{
-				id: 3006,
+				id: "0000000000000BBE",
 				type: "item",
 				item: {
 					id: "astralsorcery:lens",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}],
 			rewards: [{
-				id: 3161,
+				id: "0000000000000C59",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1118,23 +1119,23 @@
 				"",
 				"Explore some of the other options to find what these lenses can do for you."
 			],
-			dependencies: [I;3005],
+			dependencies: ["0000000000000BBD"],
 			min_width: 250,
-			id: 3015,
+			id: "0000000000000BC7",
 			tasks: [{
-				id: 3016,
+				id: "0000000000000BC8",
 				type: "item",
 				title: "Any astralsorcery:colored_lens",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "astralsorcery:colored_lens"
 					}
 				}
 			}],
 			rewards: [{
-				id: 3163,
+				id: "0000000000000C5B",
 				type: "command",
 				title: "Rare Astral Sorcery Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1154,15 +1155,15 @@
 				"",
 				"Take great care in crafting these crystals to get the most out of your efforts. It is likely not worth using anything less than a Celestial Crystal for the task."
 			],
-			dependencies: [I;3005],
-			id: 3021,
+			dependencies: ["0000000000000BBD"],
+			id: "0000000000000BCD",
 			tasks: [{
-				id: 3022,
+				id: "0000000000000BCE",
 				type: "item",
 				title: "Collector Crystal",
 				item: {
 					id: "astralsorcery:celestial_collector_crystal",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {
 							constellation: "astralsorcery:pelotrio",
@@ -1171,27 +1172,27 @@
 									{
 										property: "astralsorcery:size",
 										pLevel: 3,
-										discovered: true
+										discovered: 1b
 									},
 									{
 										property: "astralsorcery:purity",
 										pLevel: 2,
-										discovered: true
+										discovered: 1b
 									},
 									{
 										property: "astralsorcery:shape",
 										pLevel: 3,
-										discovered: true
+										discovered: 1b
 									},
 									{
 										property: "astralsorcery:collector.rate",
 										pLevel: 3,
-										discovered: true
+										discovered: 1b
 									},
 									{
 										property: "astralsorcery:constellation.pelotrio",
 										pLevel: 2,
-										discovered: true
+										discovered: 1b
 									}
 								]
 							}
@@ -1200,7 +1201,7 @@
 				}
 			}],
 			rewards: [{
-				id: 3162,
+				id: "0000000000000C5A",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1224,21 +1225,21 @@
 				"",
 				"The growth process can be sped along if the Crystal Cluster is growing atop a Starmetal Ore. This will leech the Starmetal, converting it back into mundane Iron which may be re-transmuted to Starmetal in situ. "
 			],
-			dependencies: [I;3025],
-			id: 3023,
+			dependencies: ["0000000000000BD1"],
+			id: "0000000000000BCF",
 			tasks: [{
-				id: 3041,
+				id: "0000000000000BE1",
 				type: "item",
 				item: {
 					id: "astralsorcery:celestial_crystal",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {}
 					}
 				}
 			}],
 			rewards: [{
-				id: 3160,
+				id: "0000000000000C58",
 				type: "command",
 				title: "Legendary Astral Sorcery Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1250,7 +1251,7 @@
 			title: "Crystal Working",
 			icon: {
 				id: "astralsorcery:celestial_crystal_cluster",
-				Count: true,
+				Count: 1b,
 				tag: {
 					astralsorcery: {},
 					Damage: 4
@@ -1273,19 +1274,19 @@
 				"",
 				"Finally, any leftover pieces with undesirable traits may be recombined with Stardust to form a new Crystal Cluster. The resulting Crystal will have a completely random new set of attributes. "
 			],
-			dependencies: [I;
-				2993,
-				2990
+			dependencies: [
+				"0000000000000BB1",
+				"0000000000000BAE"
 			],
 			min_width: 300,
-			id: 3025,
+			id: "0000000000000BD1",
 			tasks: [{
-				id: 3026,
+				id: "0000000000000BD2",
 				type: "checkmark",
 				title: "splitting and combining crystals"
 			}],
 			rewards: [{
-				id: 3159,
+				id: "0000000000000C57",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -1297,7 +1298,7 @@
 			title: "Celestial Gateway",
 			icon: {
 				id: "astralsorcery:celestial_gateway",
-				Count: true,
+				Count: 1b,
 				tag: {
 					astralsorcery: {}
 				}
@@ -1319,40 +1320,40 @@
 				"",
 				"Note: Building Gadget's Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
-			dependencies: [I;2954],
-			id: 3027,
+			dependencies: ["0000000000000B8A"],
+			id: "0000000000000BD3",
 			tasks: [
 				{
-					id: 3028,
+					id: "0000000000000BD4",
 					type: "item",
 					item: {
 						id: "astralsorcery:celestial_gateway",
-						Count: true,
+						Count: 1b,
 						tag: {
 							astralsorcery: {}
 						}
 					}
 				},
 				{
-					id: 3101,
+					id: "0000000000000C1D",
 					type: "item",
 					item: "astralsorcery:marble_arch",
 					count: 20L
 				},
 				{
-					id: 3102,
+					id: "0000000000000C1E",
 					type: "item",
 					item: "astralsorcery:marble_engraved",
 					count: 4L
 				},
 				{
-					id: 3103,
+					id: "0000000000000C1F",
 					type: "item",
 					item: "astralsorcery:marble_runed",
 					count: 4L
 				},
 				{
-					id: 3104,
+					id: "0000000000000C20",
 					type: "item",
 					item: "astralsorcery:black_marble_raw",
 					count: 25L
@@ -1360,18 +1361,18 @@
 			],
 			rewards: [
 				{
-					id: 3105,
+					id: "0000000000000C21",
 					type: "item",
 					item: {
 						id: "astralsorcery:celestial_gateway",
-						Count: true,
+						Count: 1b,
 						tag: {
 							astralsorcery: {}
 						}
 					}
 				},
 				{
-					id: 3165,
+					id: "0000000000000C5D",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1393,20 +1394,20 @@
 				"",
 				"The Astral Tome will give a brief overview of what enchants to expect from each constellation.  Experimentation is highly encouraged."
 			],
-			dependencies: [I;2939],
-			id: 3029,
+			dependencies: ["0000000000000B7B"],
+			id: "0000000000000BD5",
 			tasks: [{
-				id: 3030,
+				id: "0000000000000BD6",
 				type: "item",
 				item: "astralsorcery:refraction_table"
 			}],
 			rewards: [
 				{
-					id: 3117,
+					id: "0000000000000C2D",
 					type: "item",
 					item: {
 						id: "astralsorcery:infused_glass",
-						Count: true,
+						Count: 1b,
 						tag: {
 							astralsorcery: {},
 							Damage: 0
@@ -1414,7 +1415,7 @@
 					}
 				},
 				{
-					id: 3143,
+					id: "0000000000000C47",
 					type: "command",
 					title: "Epic Astral Sorcery Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -1431,14 +1432,14 @@
 				"",
 				"Crystal Prisms may also be modified with Colored Lenses. For instance, a single Prism with a Growth Len could speed up multiple crops at once.  "
 			],
-			dependencies: [I;3005],
-			id: 3033,
+			dependencies: ["0000000000000BBD"],
+			id: "0000000000000BD9",
 			tasks: [{
-				id: 3034,
+				id: "0000000000000BDA",
 				type: "item",
 				item: {
 					id: "astralsorcery:prism",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {
 							crystalProperties: {
@@ -1446,12 +1447,12 @@
 									{
 										property: "astralsorcery:purity",
 										pLevel: 2,
-										discovered: true
+										discovered: 1b
 									},
 									{
 										property: "astralsorcery:shape",
 										pLevel: 3,
-										discovered: true
+										discovered: 1b
 									}
 								]
 							}
@@ -1460,7 +1461,7 @@
 				}
 			}],
 			rewards: [{
-				id: 3164,
+				id: "0000000000000C5C",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1483,15 +1484,15 @@
 				"",
 				"Hold the star and hold down right-click until it shatters to use it. "
 			],
-			dependencies: [I;2958],
-			id: 3108,
+			dependencies: ["0000000000000B8E"],
+			id: "0000000000000C24",
 			tasks: [{
-				id: 3109,
+				id: "0000000000000C25",
 				type: "item",
 				item: "astralsorcery:shifting_star"
 			}],
 			rewards: [{
-				id: 3151,
+				id: "0000000000000C4F",
 				type: "command",
 				title: "Epic Astral Sorcery Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1512,14 +1513,14 @@
 				"",
 				"Did you know? Cats love to jam. Go ahead, let Furball get her jam on!"
 			],
-			dependencies: [I;3108],
-			id: 3110,
+			dependencies: ["0000000000000C24"],
+			id: "0000000000000C26",
 			tasks: [{
-				id: 3111,
+				id: "0000000000000C27",
 				type: "item",
 				item: {
 					id: "astralsorcery:enchantment_amulet",
-					Count: true,
+					Count: 1b,
 					tag: {
 						astralsorcery: {}
 					}
@@ -1527,17 +1528,17 @@
 			}],
 			rewards: [
 				{
-					id: 3115,
+					id: "0000000000000C2B",
 					type: "item",
 					item: "minecraft:jukebox"
 				},
 				{
-					id: 3116,
+					id: "0000000000000C2C",
 					type: "item",
 					item: "minecraft:music_disc_pigstep"
 				},
 				{
-					id: 3152,
+					id: "0000000000000C50",
 					type: "command",
 					title: "Legendary Astral Sorcery Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -1555,22 +1556,22 @@
 				"",
 				"Using the Irradiant Star will reset all chosen talents, but levels will be retained and may be spent again immediately. Naturally, your root attunement also shifts to match that of the star."
 			],
-			dependencies: [I;3108],
-			id: 3112,
+			dependencies: ["0000000000000C24"],
+			id: "0000000000000C28",
 			tasks: [{
-				id: 3114,
+				id: "0000000000000C2A",
 				type: "item",
 				title: "Any astralsorcery:stars/irradiant",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "astralsorcery:stars/irradiant"
 					}
 				}
 			}],
 			rewards: [{
-				id: 3150,
+				id: "0000000000000C4E",
 				type: "command",
 				title: "Legendary Astral Sorcery Loot Box",
 				icon: "kubejs:legendary_lootbox",

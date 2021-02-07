@@ -1,7 +1,8 @@
 {
-	id: 3135,
+	id: "0000000000000C3F",
+	group: "",
+	order_index: 12,
 	filename: "create",
-	order_index: 10,
 	title: "Create",
 	icon: "create:cogwheel",
 	default_quest_shape: "",
@@ -23,14 +24,14 @@
 				"",
 				"~MuteTiefling"
 			],
-			id: 3136,
+			id: "0000000000000C40",
 			tasks: [{
-				id: 3137,
+				id: "0000000000000C41",
 				type: "checkmark",
 				title: "Create"
 			}],
 			rewards: [{
-				id: 3257,
+				id: "0000000000000CB9",
 				type: "item",
 				item: "create:wrench"
 			}]
@@ -54,16 +55,16 @@
 				"",
 				"As a final note, while Create has no in game guidebook, each component does have very detailed information in the tooltip to help guide you. Read them carefully."
 			],
-			dependencies: [I;3136],
+			dependencies: ["0000000000000C40"],
 			min_width: 300,
-			id: 3258,
+			id: "0000000000000CBA",
 			tasks: [{
-				id: 3431,
+				id: "0000000000000D67",
 				type: "checkmark",
 				title: "Rotational Force"
 			}],
 			rewards: [{
-				id: 3430,
+				id: "0000000000000D66",
 				type: "item",
 				item: "create:goggles"
 			}]
@@ -86,22 +87,22 @@
 				"",
 				"Note that glue is only needed for these initial connections, or if your structure extends in beyond the plane of the chassis. Glue is not needed at all if sails are attached directly to the Chassis, but then, where’s the fun of that? Make it Pretty!"
 			],
-			dependencies: [I;3258],
+			dependencies: ["0000000000000CBA"],
 			min_width: 250,
-			id: 3261,
+			id: "0000000000000CBD",
 			tasks: [
 				{
-					id: 3262,
+					id: "0000000000000CBE",
 					type: "item",
 					item: "create:windmill_bearing"
 				},
 				{
-					id: 3263,
+					id: "0000000000000CBF",
 					type: "item",
 					item: "create:radial_chassis"
 				},
 				{
-					id: 3265,
+					id: "0000000000000CC1",
 					type: "item",
 					item: "create:white_sail",
 					count: 32L
@@ -109,18 +110,18 @@
 			],
 			rewards: [
 				{
-					id: 3264,
+					id: "0000000000000CC0",
 					type: "item",
 					item: {
 						id: "create:super_glue",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 3445,
+					id: "0000000000000D75",
 					type: "command",
 					title: "Epic Create Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -140,15 +141,15 @@
 				"",
 				"To get it going, simply allow water to flow past it. Max speed is achieved by having flowing water on five sides of it. "
 			],
-			dependencies: [I;3261],
-			id: 3266,
+			dependencies: ["0000000000000CBD"],
+			id: "0000000000000CC2",
 			tasks: [{
-				id: 3267,
+				id: "0000000000000CC3",
 				type: "item",
 				item: "create:water_wheel"
 			}],
 			rewards: [{
-				id: 3444,
+				id: "0000000000000D74",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -178,24 +179,24 @@
 				"",
 				"To make efficient use of a fan and belt setup, make it blow across the length of the belt. Faster spin speeds mean the air stream blows farther. This also allows the fan to process multiple stacks at once. "
 			],
-			dependencies: [I;
-				3261,
-				3324
+			dependencies: [
+				"0000000000000CBD",
+				"0000000000000CFC"
 			],
-			id: 3268,
+			id: "0000000000000CC4",
 			tasks: [{
-				id: 3269,
+				id: "0000000000000CC5",
 				type: "item",
 				item: "create:encased_fan"
 			}],
 			rewards: [
 				{
-					id: 3274,
+					id: "0000000000000CCA",
 					type: "item",
 					item: "create:analog_lever"
 				},
 				{
-					id: 3443,
+					id: "0000000000000D73",
 					type: "item",
 					item: "minecraft:magma_block",
 					count: 4
@@ -214,23 +215,23 @@
 				"",
 				"To build it, place the Furnace Engine on top of a Furnace or Blast Furnace. This will cover the furnace and a large section will project out from one side. On that side, leave an air block, then place the Flywheel (third block from the furnace). "
 			],
-			dependencies: [I;3261],
-			id: 3270,
+			dependencies: ["0000000000000CBD"],
+			id: "0000000000000CC6",
 			tasks: [
 				{
-					id: 3271,
+					id: "0000000000000CC7",
 					type: "item",
 					item: "create:furnace_engine"
 				},
 				{
-					id: 3272,
+					id: "0000000000000CC8",
 					type: "item",
 					item: "create:flywheel"
 				}
 			],
 			rewards: [
 				{
-					id: 3446,
+					id: "0000000000000D76",
 					type: "command",
 					title: "Legendary Create Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -238,7 +239,7 @@
 					player_command: false
 				},
 				{
-					id: 3466,
+					id: "0000000000000D8A",
 					type: "item",
 					item: "minecraft:blast_furnace"
 				}
@@ -254,17 +255,17 @@
 				"",
 				"As it happens, conveying rotational force is quite simple. Shafts can be used to convey power linearly while cogs may be used to change direction and speed. "
 			],
-			dependencies: [I;3261],
-			id: 3276,
+			dependencies: ["0000000000000CBD"],
+			id: "0000000000000CCC",
 			tasks: [{
-				id: 3277,
+				id: "0000000000000CCD",
 				type: "item",
 				item: "create:shaft",
 				count: 16L
 			}],
 			rewards: [
 				{
-					id: 3449,
+					id: "0000000000000D79",
 					type: "command",
 					title: "Rare Create Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -272,7 +273,7 @@
 					player_command: false
 				},
 				{
-					id: 3456,
+					id: "0000000000000D80",
 					type: "item",
 					item: "minecraft:kelp",
 					count: 16
@@ -290,16 +291,16 @@
 				"",
 				"They also look great under Mechanical Belts."
 			],
-			dependencies: [I;3276],
-			id: 3278,
+			dependencies: ["0000000000000CCC"],
+			id: "0000000000000CCE",
 			tasks: [{
-				id: 3279,
+				id: "0000000000000CCF",
 				type: "item",
 				item: "create:andesite_casing",
 				count: 4L
 			}],
 			rewards: [{
-				id: 3448,
+				id: "0000000000000D78",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -317,24 +318,24 @@
 				"",
 				"Brackets are entirely decorative but can make your shaft network look much nicer."
 			],
-			dependencies: [I;3276],
-			id: 3280,
+			dependencies: ["0000000000000CCC"],
+			id: "0000000000000CD0",
 			tasks: [
 				{
-					id: 3281,
+					id: "0000000000000CD1",
 					type: "item",
 					item: "create:wooden_bracket",
 					count: 4L
 				},
 				{
-					id: 3467,
+					id: "0000000000000D8B",
 					type: "item",
 					item: "create:metal_bracket",
 					count: 4L
 				}
 			],
 			rewards: [{
-				id: 3447,
+				id: "0000000000000D77",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -348,16 +349,16 @@
 			y: 3.5d,
 			subtitle: "Cogswell's Caper",
 			description: ["Placing two cogs perpendicular to one another allows a change in direction, useful for going around corners or for bringing power down from high above."],
-			dependencies: [I;3276],
-			id: 3282,
+			dependencies: ["0000000000000CCC"],
+			id: "0000000000000CD2",
 			tasks: [{
-				id: 3283,
+				id: "0000000000000CD3",
 				type: "item",
 				item: "create:cogwheel",
 				count: 4L
 			}],
 			rewards: [{
-				id: 3455,
+				id: "0000000000000D7F",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -374,15 +375,15 @@
 				"",
 				"However, they have a slight advantage in that they can be used to split power off in two directions. They also have a vertical variant to get a shaft line running up or down. "
 			],
-			dependencies: [I;3282],
-			id: 3284,
+			dependencies: ["0000000000000CD2"],
+			id: "0000000000000CD4",
 			tasks: [{
-				id: 3285,
+				id: "0000000000000CD5",
 				type: "item",
 				item: "create:gearbox"
 			}],
 			rewards: [{
-				id: 3459,
+				id: "0000000000000D83",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -404,16 +405,16 @@
 				"",
 				"These effects may be chained but bear in mind that the faster the consumers in this system run, the higher the SU cost. "
 			],
-			dependencies: [I;3282],
-			id: 3286,
+			dependencies: ["0000000000000CD2"],
+			id: "0000000000000CD6",
 			tasks: [{
-				id: 3287,
+				id: "0000000000000CD7",
 				type: "item",
 				item: "create:large_cogwheel",
 				count: 4L
 			}],
 			rewards: [{
-				id: 3457,
+				id: "0000000000000D81",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -434,16 +435,16 @@
 				"",
 				"A single belt can stretch up to 20 blocks and each block space could conceivably attach it to another shaft line if necessary. To attach them, simply place the two shafts and then right click each with the belt in hand."
 			],
-			dependencies: [I;3276],
-			id: 3288,
+			dependencies: ["0000000000000CCC"],
+			id: "0000000000000CD8",
 			tasks: [{
-				id: 3289,
+				id: "0000000000000CD9",
 				type: "item",
 				item: "create:belt_connector",
 				count: 4L
 			}],
 			rewards: [{
-				id: 3450,
+				id: "0000000000000D7A",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -460,15 +461,15 @@
 				"",
 				"They may also be used to change the direction of power by placing multiple of them in-line and rotating them 90-degrees from one another. "
 			],
-			dependencies: [I;3288],
-			id: 3296,
+			dependencies: ["0000000000000CD8"],
+			id: "0000000000000CE0",
 			tasks: [{
-				id: 3297,
+				id: "0000000000000CE1",
 				type: "item",
 				item: "create:encased_chain_drive"
 			}],
 			rewards: [{
-				id: 3451,
+				id: "0000000000000D7B",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -486,21 +487,21 @@
 				"",
 				"The Controller will automatically adjust to any RPM on its two output shafts. Set the speed with the scroll-wheel. "
 			],
-			dependencies: [I;3286],
-			id: 3298,
+			dependencies: ["0000000000000CD6"],
+			id: "0000000000000CE2",
 			tasks: [{
-				id: 3299,
+				id: "0000000000000CE3",
 				type: "item",
 				item: "create:rotation_speed_controller"
 			}],
 			rewards: [
 				{
-					id: 3419,
+					id: "0000000000000D5B",
 					type: "item",
 					item: "create:large_cogwheel"
 				},
 				{
-					id: 3420,
+					id: "0000000000000D5C",
 					type: "command",
 					title: "Legendary Create Loot Box",
 					icon: "kubejs:legendary_lootbox",
@@ -518,15 +519,15 @@
 				"",
 				"A funnel attached to a chest, for instance, can extract from the chest and dump onto an adjacent Belt line. Similarly, a belt feeding into a funnel will push items into the attached inventory."
 			],
-			dependencies: [I;3288],
-			id: 3301,
+			dependencies: ["0000000000000CD8"],
+			id: "0000000000000CE5",
 			tasks: [{
-				id: 3302,
+				id: "0000000000000CE6",
 				type: "item",
 				item: "create:andesite_funnel"
 			}],
 			rewards: [{
-				id: 3452,
+				id: "0000000000000D7C",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -545,16 +546,16 @@
 				"",
 				"Chutes may also be used to convey items upwards. If a chute has an encased fan set up directly on top of it, it can be used to pull items off a Belt. Of course, getting that item out requires some way of extracting from the chute, such as a Funnel."
 			],
-			dependencies: [I;3288],
-			id: 3303,
+			dependencies: ["0000000000000CD8"],
+			id: "0000000000000CE7",
 			tasks: [{
-				id: 3304,
+				id: "0000000000000CE8",
 				type: "item",
 				item: "create:chute",
 				count: 4L
 			}],
 			rewards: [{
-				id: 3313,
+				id: "0000000000000CF1",
 				type: "item",
 				item: "create:encased_fan"
 			}]
@@ -568,15 +569,15 @@
 				"",
 				"As a stack of items passes through an Andesite Tunnel, it will automatically take 1 item from the stack and place it onto adjacent belts or depots. "
 			],
-			dependencies: [I;3288],
-			id: 3305,
+			dependencies: ["0000000000000CD8"],
+			id: "0000000000000CE9",
 			tasks: [{
-				id: 3306,
+				id: "0000000000000CEA",
 				type: "item",
 				item: "create:andesite_tunnel"
 			}],
 			rewards: [{
-				id: 3453,
+				id: "0000000000000D7D",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -589,15 +590,15 @@
 			y: 7.0d,
 			subtitle: "Pimp My Slide",
 			description: ["Brass Funnels function similarly to Andesite Funnels, although they can accept a filter, either in the form of a single item clicked into the filter slot, or a configured filter item."],
-			dependencies: [I;3301],
-			id: 3309,
+			dependencies: ["0000000000000CE5"],
+			id: "0000000000000CED",
 			tasks: [{
-				id: 3310,
+				id: "0000000000000CEE",
 				type: "item",
 				item: "create:brass_funnel"
 			}],
 			rewards: [{
-				id: 3417,
+				id: "0000000000000D59",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -616,15 +617,15 @@
 				"",
 				"Filters are respected during these split operations, so a sorting system can be made that takes a lot of mixed inputs and sorts them out onto individual belts. "
 			],
-			dependencies: [I;3305],
-			id: 3311,
+			dependencies: ["0000000000000CE9"],
+			id: "0000000000000CEF",
 			tasks: [{
-				id: 3312,
+				id: "0000000000000CF0",
 				type: "item",
 				item: "create:brass_tunnel"
 			}],
 			rewards: [{
-				id: 3415,
+				id: "0000000000000D57",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -641,15 +642,15 @@
 				"",
 				"Depots will hold a single stack of items, but they will also interact with Encased Fan Washing, Blasting, and Smoking recipes, as well as the Plate Press. "
 			],
-			dependencies: [I;3288],
-			id: 3314,
+			dependencies: ["0000000000000CD8"],
+			id: "0000000000000CF2",
 			tasks: [{
-				id: 3315,
+				id: "0000000000000CF3",
 				type: "item",
 				item: "create:depot"
 			}],
 			rewards: [{
-				id: 3454,
+				id: "0000000000000D7E",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -668,15 +669,15 @@
 				"",
 				"Linking occurs prior to placing the Arm, simply right click it onto permitted inventory types to set it. Right click again to toggle between input and output. The arm reaches four blocks in total. "
 			],
-			dependencies: [I;3288],
-			id: 3316,
+			dependencies: ["0000000000000CD8"],
+			id: "0000000000000CF4",
 			tasks: [{
-				id: 3317,
+				id: "0000000000000CF5",
 				type: "item",
 				item: "create:mechanical_arm"
 			}],
 			rewards: [{
-				id: 3416,
+				id: "0000000000000D58",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -693,15 +694,15 @@
 				"",
 				"Create’s Millstone is an excellent early way to stretch your ores a little further. Be sure to wash the resulting Crushed Ore pieces to further enhance the yield! "
 			],
-			dependencies: [I;3332],
-			id: 3324,
+			dependencies: ["0000000000000D04"],
+			id: "0000000000000CFC",
 			tasks: [{
-				id: 3325,
+				id: "0000000000000CFD",
 				type: "item",
 				item: "create:millstone"
 			}],
 			rewards: [{
-				id: 3442,
+				id: "0000000000000D72",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -722,16 +723,16 @@
 				"",
 				"Place the wheels with a single block gap between them. Items may be either dropped in the top or inserted in a more controlled manner by funneling them into the ‘block’ space where the two wheels meet. "
 			],
-			dependencies: [I;3354],
-			id: 3326,
+			dependencies: ["0000000000000D1A"],
+			id: "0000000000000CFE",
 			tasks: [{
-				id: 3327,
+				id: "0000000000000CFF",
 				type: "item",
 				item: "create:crushing_wheel",
 				count: 2L
 			}],
 			rewards: [{
-				id: 3412,
+				id: "0000000000000D54",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -751,20 +752,20 @@
 				"",
 				"To polish quartz, it is simply a matter of dropping the quartz in the path of the moving deployer hand."
 			],
-			dependencies: [I;3330],
-			id: 3328,
+			dependencies: ["0000000000000D02"],
+			id: "0000000000000D00",
 			tasks: [
 				{
-					id: 3329,
+					id: "0000000000000D01",
 					type: "item",
 					item: "create:deployer"
 				},
 				{
-					id: 3361,
+					id: "0000000000000D21",
 					type: "item",
 					item: {
 						id: "create:sand_paper",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -772,7 +773,7 @@
 				}
 			],
 			rewards: [{
-				id: 3439,
+				id: "0000000000000D6F",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -791,15 +792,15 @@
 				"",
 				"But what’s this you say? Can this not be automated with all these fancy gears and whistles? Of course! But the machines to do so need Electron tubes themselves!"
 			],
-			dependencies: [I;3332],
-			id: 3330,
+			dependencies: ["0000000000000D04"],
+			id: "0000000000000D02",
 			tasks: [{
-				id: 3331,
+				id: "0000000000000D03",
 				type: "item",
 				item: "create:electron_tube"
 			}],
 			rewards: [{
-				id: 3437,
+				id: "0000000000000D6D",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -813,15 +814,15 @@
 			y: 2.0d,
 			subtitle: "Just a Little Something I Whipped Up",
 			description: ["With some basic power and logistics under our belts, it’s time we get our hands dirty and get down to business. Create offers several new crafting mechanics that are important to understand to work with the mod. "],
-			dependencies: [I;3136],
-			id: 3332,
+			dependencies: ["0000000000000C40"],
+			id: "0000000000000D04",
 			tasks: [{
-				id: 3333,
+				id: "0000000000000D05",
 				type: "checkmark",
 				title: "Crafting"
 			}],
 			rewards: [{
-				id: 3432,
+				id: "0000000000000D68",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -844,15 +845,15 @@
 				"",
 				"While over any other block, however, a redstone signal is required to make it start. "
 			],
-			dependencies: [I;3324],
-			id: 3334,
+			dependencies: ["0000000000000CFC"],
+			id: "0000000000000D06",
 			tasks: [{
-				id: 3335,
+				id: "0000000000000D07",
 				type: "item",
 				item: "create:mechanical_press"
 			}],
 			rewards: [{
-				id: 3441,
+				id: "0000000000000D71",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -870,22 +871,22 @@
 				"",
 				"Note that some recipes require heat, this is provided by way of a Blaze Burner. More on that next."
 			],
-			dependencies: [I;3334],
-			id: 3336,
+			dependencies: ["0000000000000D06"],
+			id: "0000000000000D08",
 			tasks: [
 				{
-					id: 3337,
+					id: "0000000000000D09",
 					type: "item",
 					item: "create:mechanical_mixer"
 				},
 				{
-					id: 3338,
+					id: "0000000000000D0A",
 					type: "item",
 					item: "create:basin"
 				}
 			],
 			rewards: [{
-				id: 3440,
+				id: "0000000000000D70",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -904,15 +905,15 @@
 				"",
 				"Feed them coal or other burnable material to get them riled up again if they cool down."
 			],
-			dependencies: [I;3336],
-			id: 3339,
+			dependencies: ["0000000000000D08"],
+			id: "0000000000000D0B",
 			tasks: [{
-				id: 3340,
+				id: "0000000000000D0C",
 				type: "item",
 				item: "create:blaze_burner"
 			}],
 			rewards: [{
-				id: 3422,
+				id: "0000000000000D5E",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -929,15 +930,15 @@
 				"",
 				"Making Blaze Cake will really test your skills as it combines a lot of different mechanics. How far can you take your automation?"
 			],
-			dependencies: [I;3339],
-			id: 3341,
+			dependencies: ["0000000000000D0B"],
+			id: "0000000000000D0D",
 			tasks: [{
-				id: 3342,
+				id: "0000000000000D0E",
 				type: "item",
 				item: "create:blaze_cake"
 			}],
 			rewards: [{
-				id: 3413,
+				id: "0000000000000D55",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -956,15 +957,15 @@
 				"",
 				"The block has a handy little directional indicator to help visualize the flow. A single pump can pressurize a large section of pipe, so be sure to spread them out. "
 			],
-			dependencies: [I;3282],
-			id: 3343,
+			dependencies: ["0000000000000CD2"],
+			id: "0000000000000D0F",
 			tasks: [{
-				id: 3344,
+				id: "0000000000000D10",
 				type: "item",
 				item: "create:mechanical_pump"
 			}],
 			rewards: [{
-				id: 3460,
+				id: "0000000000000D84",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -977,16 +978,16 @@
 			y: 4.5d,
 			subtitle: "Clear the Channel",
 			description: ["Pipes are the primary means of conveying fluids. Fluid goes in, fluid goes out. Simple!"],
-			dependencies: [I;3343],
-			id: 3345,
+			dependencies: ["0000000000000D0F"],
+			id: "0000000000000D11",
 			tasks: [{
-				id: 3346,
+				id: "0000000000000D12",
 				type: "item",
 				item: "create:fluid_pipe",
 				count: 16L
 			}],
 			rewards: [{
-				id: 3461,
+				id: "0000000000000D85",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1000,22 +1001,22 @@
 			y: 5.5d,
 			subtitle: "Shut The Front Door",
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "],
-			dependencies: [I;3343],
-			id: 3347,
+			dependencies: ["0000000000000D0F"],
+			id: "0000000000000D13",
 			tasks: [
 				{
-					id: 3348,
+					id: "0000000000000D14",
 					type: "item",
 					item: "create:fluid_valve"
 				},
 				{
-					id: 3353,
+					id: "0000000000000D19",
 					type: "item",
 					item: "create:copper_valve_handle"
 				}
 			],
 			rewards: [{
-				id: 3462,
+				id: "0000000000000D86",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1028,15 +1029,15 @@
 			y: 6.5d,
 			subtitle: "Reverse Osmosis Filter",
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "],
-			dependencies: [I;3343],
-			id: 3349,
+			dependencies: ["0000000000000D0F"],
+			id: "0000000000000D15",
 			tasks: [{
-				id: 3350,
+				id: "0000000000000D16",
 				type: "item",
 				item: "create:smart_fluid_pipe"
 			}],
 			rewards: [{
-				id: 3418,
+				id: "0000000000000D5A",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1053,16 +1054,16 @@
 				"",
 				"They can have a 1x1, 2x2, or 3x3 base and extend as high as you like. "
 			],
-			dependencies: [I;3345],
-			id: 3351,
+			dependencies: ["0000000000000D11"],
+			id: "0000000000000D17",
 			tasks: [{
-				id: 3352,
+				id: "0000000000000D18",
 				type: "item",
 				item: "create:fluid_tank",
 				count: 4L
 			}],
 			rewards: [{
-				id: 3465,
+				id: "0000000000000D89",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1087,23 +1088,23 @@
 				"",
 				"Items may be inserted with hoppers, belts and funnels, mechanical arms and more. Experiment to see what you can come up with!"
 			],
-			dependencies: [I;3330],
+			dependencies: ["0000000000000D02"],
 			min_width: 250,
-			id: 3354,
+			id: "0000000000000D1A",
 			tasks: [
 				{
-					id: 3355,
+					id: "0000000000000D1B",
 					type: "item",
 					item: "create:mechanical_crafter"
 				},
 				{
-					id: 3356,
+					id: "0000000000000D1C",
 					type: "item",
 					item: "create:crafter_slot_cover"
 				}
 			],
 			rewards: [{
-				id: 3438,
+				id: "0000000000000D6E",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1125,10 +1126,10 @@
 				"",
 				"Good Luck!"
 			],
-			dependencies: [I;3328],
-			id: 3359,
+			dependencies: ["0000000000000D00"],
+			id: "0000000000000D1F",
 			tasks: [{
-				id: 3360,
+				id: "0000000000000D20",
 				type: "checkmark",
 				title: "Challenge: Rose Quartz Automation"
 			}]
@@ -1138,15 +1139,15 @@
 			y: 5.5d,
 			subtitle: "Spouting Off Nonsense",
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"],
-			dependencies: [I;3345],
-			id: 3363,
+			dependencies: ["0000000000000D11"],
+			id: "0000000000000D23",
 			tasks: [{
-				id: 3364,
+				id: "0000000000000D24",
 				type: "item",
 				item: "create:spout"
 			}],
 			rewards: [{
-				id: 3463,
+				id: "0000000000000D87",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1158,7 +1159,7 @@
 			title: "Modular Contraptions",
 			icon: {
 				id: "create:minecart_contraption",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Contraption: {
 						Blocks: [
@@ -1208,7 +1209,7 @@
 						Passengers: [],
 						RotationMode: "ROTATE",
 						FluidStorage: [],
-						Stalled: false
+						Stalled: 0b
 					},
 					display: {}
 				}
@@ -1222,14 +1223,14 @@
 				"",
 				"The following are some of the specialized blocks that may be used for these contraptions."
 			],
-			dependencies: [I;3136],
-			id: 3371,
+			dependencies: ["0000000000000C40"],
+			id: "0000000000000D2B",
 			tasks: [{
-				id: 3372,
+				id: "0000000000000D2C",
 				type: "checkmark"
 			}],
 			rewards: [{
-				id: 3429,
+				id: "0000000000000D65",
 				type: "item",
 				item: "minecraft:minecart"
 			}]
@@ -1244,16 +1245,16 @@
 				"",
 				"As a simple example of where one might use these, imagine a long field of crops. A Mechanical Piston could be used to push a harvesting contraption back and forth over the field periodically to gather crops. "
 			],
-			dependencies: [I;3371],
-			id: 3373,
+			dependencies: ["0000000000000D2B"],
+			id: "0000000000000D2D",
 			tasks: [{
-				id: 3374,
+				id: "0000000000000D2E",
 				type: "item",
 				item: "create:mechanical_piston"
 			}],
 			rewards: [
 				{
-					id: 3433,
+					id: "0000000000000D69",
 					type: "command",
 					title: "Rare Create Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -1261,7 +1262,7 @@
 					player_command: false
 				},
 				{
-					id: 3468,
+					id: "0000000000000D8C",
 					type: "item",
 					item: "create:piston_extension_pole",
 					count: 8
@@ -1281,15 +1282,15 @@
 				"",
 				"A great example of a mine cart-based contraption would be a tunnel bore mining machine. It could be set up to lay down its own track in front of it and pull up track behind it. It could even build its own bridges to avoid ravines!"
 			],
-			dependencies: [I;3371],
-			id: 3375,
+			dependencies: ["0000000000000D2B"],
+			id: "0000000000000D2F",
 			tasks: [{
-				id: 3376,
+				id: "0000000000000D30",
 				type: "item",
 				item: "create:cart_assembler"
 			}],
 			rewards: [{
-				id: 3434,
+				id: "0000000000000D6A",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1306,15 +1307,15 @@
 				"",
 				"For instance, a long sweeping armed contraption could be built that swings through a tree farm, cutting down all the trees it encounters. "
 			],
-			dependencies: [I;3371],
-			id: 3377,
+			dependencies: ["0000000000000D2B"],
+			id: "0000000000000D31",
 			tasks: [{
-				id: 3378,
+				id: "0000000000000D32",
 				type: "item",
 				item: "create:mechanical_bearing"
 			}],
 			rewards: [{
-				id: 3435,
+				id: "0000000000000D6B",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1342,29 +1343,29 @@
 				"",
 				"Note: A slime ball may be used infinitely to set glue marks on Chassis blocks themselves. Right-Click with the slime ball to apply to one side. Double Right-Click to apply to all sides."
 			],
-			dependencies: [I;
-				3373,
-				3375,
-				3377,
-				3397
+			dependencies: [
+				"0000000000000D2D",
+				"0000000000000D2F",
+				"0000000000000D31",
+				"0000000000000D45"
 			],
 			dependency_requirement: "one_completed",
 			min_width: 300,
-			id: 3379,
+			id: "0000000000000D33",
 			tasks: [
 				{
-					id: 3380,
+					id: "0000000000000D34",
 					type: "item",
 					item: "create:radial_chassis"
 				},
 				{
-					id: 3381,
+					id: "0000000000000D35",
 					type: "item",
 					item: "create:linear_chassis"
 				}
 			],
 			rewards: [{
-				id: 3428,
+				id: "0000000000000D64",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1377,15 +1378,15 @@
 			y: 4.0d,
 			subtitle: "Outstanding In Its Field",
 			description: ["A smart harvester that gently harvests only mature crops. "],
-			dependencies: [I;3379],
-			id: 3386,
+			dependencies: ["0000000000000D33"],
+			id: "0000000000000D3A",
 			tasks: [{
-				id: 3387,
+				id: "0000000000000D3B",
 				type: "item",
 				item: "create:mechanical_harvester"
 			}],
 			rewards: [{
-				id: 3424,
+				id: "0000000000000D60",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1398,15 +1399,15 @@
 			y: 5.0d,
 			subtitle: "Nothing to See Here, Just a Boring Machine",
 			description: ["Mobile or Stationary, the Mechanical Drill serves as a capable mining apparatus. "],
-			dependencies: [I;3379],
-			id: 3388,
+			dependencies: ["0000000000000D33"],
+			id: "0000000000000D3C",
 			tasks: [{
-				id: 3389,
+				id: "0000000000000D3D",
 				type: "item",
 				item: "create:mechanical_drill"
 			}],
 			rewards: [{
-				id: 3425,
+				id: "0000000000000D61",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1423,15 +1424,15 @@
 				"",
 				"The Mechanical Plow is useful for more than simple farm maintenance, however, and can make a great addition to a moving minecart machine for pulling up extra track behind it."
 			],
-			dependencies: [I;3379],
-			id: 3390,
+			dependencies: ["0000000000000D33"],
+			id: "0000000000000D3E",
 			tasks: [{
-				id: 3391,
+				id: "0000000000000D3F",
 				type: "item",
 				item: "create:mechanical_plough"
 			}],
 			rewards: [{
-				id: 3427,
+				id: "0000000000000D63",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1450,15 +1451,15 @@
 				"",
 				"When attached to a moving machine, it will chop whole trees in one swoop. Handy for a simple tree farm. "
 			],
-			dependencies: [I;3379],
-			id: 3392,
+			dependencies: ["0000000000000D33"],
+			id: "0000000000000D40",
 			tasks: [{
-				id: 3393,
+				id: "0000000000000D41",
 				type: "item",
 				item: "create:mechanical_saw"
 			}],
 			rewards: [{
-				id: 3426,
+				id: "0000000000000D62",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1481,22 +1482,22 @@
 				"",
 				"To prevent this pause, or interrupt it early, a Redstone signal can be supplied to the fixed position Interface. "
 			],
-			dependencies: [I;3379],
-			id: 3394,
+			dependencies: ["0000000000000D33"],
+			id: "0000000000000D42",
 			tasks: [
 				{
-					id: 3395,
+					id: "0000000000000D43",
 					type: "item",
 					item: "create:portable_fluid_interface"
 				},
 				{
-					id: 3396,
+					id: "0000000000000D44",
 					type: "item",
 					item: "create:portable_storage_interface"
 				}
 			],
 			rewards: [{
-				id: 3423,
+				id: "0000000000000D5F",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1515,15 +1516,15 @@
 				"",
 				"Use a Gearshift to reverse direction with ease."
 			],
-			dependencies: [I;3371],
-			id: 3397,
+			dependencies: ["0000000000000D2B"],
+			id: "0000000000000D45",
 			tasks: [{
-				id: 3398,
+				id: "0000000000000D46",
 				type: "item",
 				item: "create:rope_pulley"
 			}],
 			rewards: [{
-				id: 3436,
+				id: "0000000000000D6C",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1540,15 +1541,15 @@
 				"",
 				"Consider using an Analogue Lever to easily set a fixed speed. "
 			],
-			dependencies: [I;3286],
-			id: 3399,
+			dependencies: ["0000000000000CD6"],
+			id: "0000000000000D47",
 			tasks: [{
-				id: 3400,
+				id: "0000000000000D48",
 				type: "item",
 				item: "create:adjustable_chain_gearshift"
 			}],
 			rewards: [{
-				id: 3421,
+				id: "0000000000000D5D",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1567,15 +1568,15 @@
 				"",
 				"Note, the Hose Pulley itself does not pump by itself. Lower the hose into the fluid body and use set up a Mechanical Pump to do the work for you. "
 			],
-			dependencies: [I;3345],
-			id: 3401,
+			dependencies: ["0000000000000D11"],
+			id: "0000000000000D49",
 			tasks: [{
-				id: 3402,
+				id: "0000000000000D4A",
 				type: "item",
 				item: "create:hose_pulley"
 			}],
 			rewards: [{
-				id: 3464,
+				id: "0000000000000D88",
 				type: "command",
 				title: "Epic Create Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1592,15 +1593,15 @@
 				"",
 				"Applying a Redstone signal to the block will cause the output side to start spinning in the opposite direction relative to the drive side. "
 			],
-			dependencies: [I;3282],
-			id: 3403,
+			dependencies: ["0000000000000CD2"],
+			id: "0000000000000D4B",
 			tasks: [{
-				id: 3404,
+				id: "0000000000000D4C",
 				type: "item",
 				item: "create:gearshift"
 			}],
 			rewards: [{
-				id: 3458,
+				id: "0000000000000D82",
 				type: "command",
 				title: "Rare Create Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -1617,10 +1618,10 @@
 				"",
 				"It could useful for more advanced contraptions that need precise timing, as well."
 			],
-			dependencies: [I;3282],
-			id: 3405,
+			dependencies: ["0000000000000CD2"],
+			id: "0000000000000D4D",
 			tasks: [{
-				id: 3406,
+				id: "0000000000000D4E",
 				type: "item",
 				item: "create:clutch"
 			}]
@@ -1634,15 +1635,15 @@
 				"",
 				"Try some Builder's Tea! It doesn't take oolong to prepare."
 			],
-			dependencies: [I;3339],
-			id: 3410,
+			dependencies: ["0000000000000D0B"],
+			id: "0000000000000D52",
 			tasks: [{
-				id: 3411,
+				id: "0000000000000D53",
 				type: "item",
 				item: "create:builders_tea"
 			}],
 			rewards: [{
-				id: 3414,
+				id: "0000000000000D56",
 				type: "command",
 				title: "Legendary Create Loot Box",
 				icon: "kubejs:legendary_lootbox",

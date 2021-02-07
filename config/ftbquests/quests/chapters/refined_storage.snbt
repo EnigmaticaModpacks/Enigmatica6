@@ -1,7 +1,8 @@
 {
-	id: 576,
+	id: "0000000000000240",
+	group: "",
+	order_index: 14,
 	filename: "refined_storage",
-	order_index: 12,
 	title: "Refined Storage",
 	icon: "refinedstorage:controller",
 	default_quest_shape: "",
@@ -15,26 +16,26 @@
 			subtitle: "Like AE2, but 100% more Refined",
 			description: ["Refined Storage offers the ability to make vast electronic storage and automation networks, storing your items in Magic Computer Space and importing/exporting/autocrafting as desired. It's a rather refined method of storage, you might say."],
 			size: 1.5d,
-			id: 591,
+			id: "000000000000024F",
 			tasks: [{
-				id: 593,
+				id: "0000000000000251",
 				type: "checkmark"
 			}],
 			rewards: [
 				{
-					id: 634,
+					id: "000000000000027A",
 					type: "item",
 					item: "minecraft:slime_ball",
 					count: 4
 				},
 				{
-					id: 635,
+					id: "000000000000027B",
 					type: "item",
 					item: "minecraft:string",
 					count: 4
 				},
 				{
-					id: 3917,
+					id: "0000000000000F4D",
 					type: "item",
 					item: "refinedstorage:wrench"
 				}
@@ -47,27 +48,27 @@
 			y: 2.0d,
 			subtitle: "But are they Intel or AMD?",
 			description: ["Processors are basic components needed in most RS devices. You'll want to have a decent supply of slime before getting too deep into this."],
-			dependencies: [I;591],
-			id: 594,
+			dependencies: ["000000000000024F"],
+			id: "0000000000000252",
 			tasks: [
 				{
-					id: 595,
+					id: "0000000000000253",
 					type: "item",
 					item: "refinedstorage:basic_processor"
 				},
 				{
-					id: 596,
+					id: "0000000000000254",
 					type: "item",
 					item: "refinedstorage:improved_processor"
 				},
 				{
-					id: 597,
+					id: "0000000000000255",
 					type: "item",
 					item: "refinedstorage:advanced_processor"
 				}
 			],
 			rewards: [{
-				id: 1455,
+				id: "00000000000005AF",
 				type: "item",
 				item: "refinedstorage:quartz_enriched_iron",
 				count: 16
@@ -84,22 +85,22 @@
 				"",
 				"All parts of a network (excluding fancy wireless options later) must be connected via Cables. Interacting with the Controller itself will show a breakdown of how much power each component type is using."
 			],
-			dependencies: [I;594],
-			id: 598,
+			dependencies: ["0000000000000252"],
+			id: "0000000000000256",
 			tasks: [
 				{
-					id: 599,
+					id: "0000000000000257",
 					type: "item",
 					item: "refinedstorage:controller"
 				},
 				{
-					id: 647,
+					id: "0000000000000287",
 					type: "item",
 					item: "refinedstorage:cable"
 				}
 			],
 			rewards: [{
-				id: 1456,
+				id: "00000000000005B0",
 				type: "item",
 				item: "refinedstorage:cable",
 				count: 16
@@ -117,24 +118,24 @@
 				"",
 				"The Disk Drive is your main method of holding storage disks. Up to ten can fit in a drive; you can swap them in and out as needed."
 			],
-			dependencies: [I;598],
+			dependencies: ["0000000000000256"],
 			size: 1.5d,
-			id: 600,
+			id: "0000000000000258",
 			tasks: [
 				{
-					id: 601,
+					id: "0000000000000259",
 					type: "item",
 					item: "refinedstorage:disk_drive"
 				},
 				{
-					id: 646,
+					id: "0000000000000286",
 					type: "item",
 					item: "refinedstorage:1k_storage_disk"
 				}
 			],
 			rewards: [
 				{
-					id: 1457,
+					id: "00000000000005B1",
 					type: "command",
 					title: "Refined Storage Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -142,7 +143,7 @@
 					player_command: false
 				},
 				{
-					id: 1469,
+					id: "00000000000005BD",
 					type: "item",
 					item: "refinedstorage:storage_housing",
 					count: 2
@@ -155,15 +156,15 @@
 			y: 5.0d,
 			subtitle: "Pouring water in a computer seems like a bad idea...",
 			description: ["Fluid storage disks store fluid. Imagine that! Naturally, this involves somewhat different methods of accessing the contents of the disks; see the Fluid Grid quest for more information."],
-			dependencies: [I;616],
-			id: 605,
+			dependencies: ["0000000000000268"],
+			id: "000000000000025D",
 			tasks: [{
-				id: 606,
+				id: "000000000000025E",
 				type: "item",
 				item: "refinedstorage:64k_fluid_storage_disk"
 			}],
 			rewards: [{
-				id: 1467,
+				id: "00000000000005BB",
 				type: "item",
 				item: "refinedstorage:256k_fluid_storage_part"
 			}]
@@ -175,22 +176,22 @@
 			y: 6.5d,
 			subtitle: "Business at its finest!",
 			description: ["Importers automatically pull items from the connected inventory, and exporters automatically push (configured) items to the connected inventory. Both can be set to have filters or sped up with upgrades."],
-			dependencies: [I;600],
-			id: 607,
+			dependencies: ["0000000000000258"],
+			id: "000000000000025F",
 			tasks: [
 				{
-					id: 608,
+					id: "0000000000000260",
 					type: "item",
 					item: "refinedstorage:importer"
 				},
 				{
-					id: 609,
+					id: "0000000000000261",
 					type: "item",
 					item: "refinedstorage:exporter"
 				}
 			],
 			rewards: [{
-				id: 1466,
+				id: "00000000000005BA",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -203,15 +204,15 @@
 			y: 3.5d,
 			subtitle: "When disks aren't enough",
 			description: ["If you set up an External Storage part facing a normal inventory (e.g. a chest), that inventory will be treated as part of the network, and its contents can be accessed as though they were on storage drives."],
-			dependencies: [I;600],
-			id: 610,
+			dependencies: ["0000000000000258"],
+			id: "0000000000000262",
 			tasks: [{
-				id: 611,
+				id: "0000000000000263",
 				type: "item",
 				item: "refinedstorage:external_storage"
 			}],
 			rewards: [{
-				id: 1471,
+				id: "00000000000005BF",
 				type: "item",
 				item: "mekanism:advanced_bin"
 			}]
@@ -222,15 +223,15 @@
 			shape: "rsquare",
 			subtitle: "Off the grid? More like in the grid",
 			description: ["The Grid is the primary means by which you can actually access the items in your storage. Simply connect a grid to the network and you can start chuckin' items in and out."],
-			dependencies: [I;600],
-			id: 612,
+			dependencies: ["0000000000000258"],
+			id: "0000000000000264",
 			tasks: [{
-				id: 613,
+				id: "0000000000000265",
 				type: "item",
 				item: "refinedstorage:grid"
 			}],
 			rewards: [{
-				id: 1470,
+				id: "00000000000005BE",
 				type: "item",
 				item: "refinedstorage:cable",
 				count: 8
@@ -245,15 +246,15 @@
 				"",
 				"You can even insert/extract the relevant item/fluid directly to/from this block."
 			],
-			dependencies: [I;612],
-			id: 614,
+			dependencies: ["0000000000000264"],
+			id: "0000000000000266",
 			tasks: [{
-				id: 615,
+				id: "0000000000000267",
 				type: "item",
 				item: "refinedstorage:storage_monitor"
 			}],
 			rewards: [{
-				id: 1472,
+				id: "00000000000005C0",
 				type: "item",
 				item: "refinedstorage:storage_housing",
 				count: 4
@@ -264,15 +265,15 @@
 			y: 5.0d,
 			subtitle: "Tanks? Who needs them! They can't even shoot...",
 			description: ["The Fluid Grid works a bit differently from the normal Grid. Fluids can only be inserted/extracted via the use of fluid container items such as buckets."],
-			dependencies: [I;612],
-			id: 616,
+			dependencies: ["0000000000000264"],
+			id: "0000000000000268",
 			tasks: [{
-				id: 617,
+				id: "0000000000000269",
 				type: "item",
 				item: "refinedstorage:fluid_grid"
 			}],
 			rewards: [{
-				id: 1474,
+				id: "00000000000005C2",
 				type: "item",
 				item: "refinedstorage:256k_fluid_storage_part",
 				count: 2
@@ -287,15 +288,15 @@
 				"",
 				'The "crafting table" part of this block will retain its inventory when closed, and will automatically pull more items from the network into the grid to replace those that you use.'
 			],
-			dependencies: [I;612],
-			id: 618,
+			dependencies: ["0000000000000264"],
+			id: "000000000000026A",
 			tasks: [{
-				id: 619,
+				id: "000000000000026B",
 				type: "item",
 				item: "refinedstorage:crafting_grid"
 			}],
 			rewards: [{
-				id: 1477,
+				id: "00000000000005C5",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -314,22 +315,22 @@
 				"",
 				"These items must be charged, and they only work when near a Wireless Transmitter. These transmitters have a base range of 16 blocks."
 			],
-			dependencies: [I;618],
-			id: 620,
+			dependencies: ["000000000000026A"],
+			id: "000000000000026C",
 			tasks: [
 				{
-					id: 621,
+					id: "000000000000026D",
 					type: "item",
 					item: "refinedstorageaddons:wireless_crafting_grid"
 				},
 				{
-					id: 666,
+					id: "000000000000029A",
 					type: "item",
 					item: "refinedstorage:wireless_transmitter"
 				}
 			],
 			rewards: [{
-				id: 1475,
+				id: "00000000000005C3",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -342,15 +343,15 @@
 			y: 8.0d,
 			subtitle: "My house isn't that small!",
 			description: ["16 blocks ain't enough! Each Range Upgrade will significantly increase a Wireless Transmitter's range, albeit at an increased power cost."],
-			dependencies: [I;620],
-			id: 622,
+			dependencies: ["000000000000026C"],
+			id: "000000000000026E",
 			tasks: [{
-				id: 623,
+				id: "000000000000026F",
 				type: "item",
 				item: "refinedstorage:range_upgrade"
 			}],
 			rewards: [{
-				id: 1476,
+				id: "00000000000005C4",
 				type: "item",
 				item: "minecraft:ender_pearl",
 				count: 4
@@ -369,22 +370,22 @@
 				"",
 				"Processing recipes can take a greater variety of inputs/outputs (e.g. stack sizes larger than 1) and represent operations that need machines or devices to perform."
 			],
-			dependencies: [I;612],
-			id: 624,
+			dependencies: ["0000000000000264"],
+			id: "0000000000000270",
 			tasks: [
 				{
-					id: 625,
+					id: "0000000000000271",
 					type: "item",
 					item: "refinedstorage:pattern_grid"
 				},
 				{
-					id: 663,
+					id: "0000000000000297",
 					type: "item",
 					item: "refinedstorage:pattern"
 				}
 			],
 			rewards: [{
-				id: 1473,
+				id: "00000000000005C1",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -404,17 +405,17 @@
 				"",
 				"For processing recipes, the crafter must be placed facing the input of whichever machine is doing the processing. Note that all the crafter will actually do in this case is give the recipe items to the machine; getting the output into the network must be handled otherwise (e.g. with an Interface)."
 			],
-			dependencies: [I;624],
+			dependencies: ["0000000000000270"],
 			size: 1.25d,
-			id: 626,
+			id: "0000000000000272",
 			tasks: [{
-				id: 627,
+				id: "0000000000000273",
 				type: "item",
 				item: "refinedstorage:crafter"
 			}],
 			rewards: [
 				{
-					id: 1458,
+					id: "00000000000005B2",
 					type: "command",
 					title: "Refined Storage Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -422,7 +423,7 @@
 					player_command: false
 				},
 				{
-					id: 1459,
+					id: "00000000000005B3",
 					type: "command",
 					title: "Refined Storage Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -436,15 +437,15 @@
 			y: 3.5d,
 			subtitle: "Gotta go fast!",
 			description: ["When placed in a device, the Speed Upgrade will increase its speed (and power consumption). This is useful for Importers, Exporters, Crafters, etc."],
-			dependencies: [I;600],
-			id: 628,
+			dependencies: ["0000000000000258"],
+			id: "0000000000000274",
 			tasks: [{
-				id: 629,
+				id: "0000000000000275",
 				type: "item",
 				item: "refinedstorage:speed_upgrade"
 			}],
 			rewards: [{
-				id: 1461,
+				id: "00000000000005B5",
 				type: "item",
 				item: "refinedstorage:speed_upgrade",
 				count: 2
@@ -455,15 +456,15 @@
 			y: 2.0d,
 			subtitle: "The need for speed!",
 			description: ["The Stack Upgrade often serves as a more useful Speed Upgrade. It doesn't speed up individual operations, but instead allows each operation to move up to a stack of items."],
-			dependencies: [I;628],
-			id: 630,
+			dependencies: ["0000000000000274"],
+			id: "0000000000000276",
 			tasks: [{
-				id: 631,
+				id: "0000000000000277",
 				type: "item",
 				item: "refinedstorage:stack_upgrade"
 			}],
 			rewards: [{
-				id: 1460,
+				id: "00000000000005B4",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -480,15 +481,15 @@
 				"",
 				"These blocks are quite important, particularly if you're setting up complex processing recipes and you need to be able to troubleshoot."
 			],
-			dependencies: [I;626],
-			id: 632,
+			dependencies: ["0000000000000272"],
+			id: "0000000000000278",
 			tasks: [{
-				id: 633,
+				id: "0000000000000279",
 				type: "item",
 				item: "refinedstorage:crafting_monitor"
 			}],
 			rewards: [{
-				id: 1468,
+				id: "00000000000005BC",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -505,15 +506,15 @@
 				"",
 				'The Interface is most useful as a simple (and perhaps less laggy) alternative to the Importer when the external item source can handle the "pushing" itself, e.g. depositing items in the Interface with a coneyor belt.'
 			],
-			dependencies: [I;607],
-			id: 664,
+			dependencies: ["000000000000025F"],
+			id: "0000000000000298",
 			tasks: [{
-				id: 665,
+				id: "0000000000000299",
 				type: "item",
 				item: "refinedstorage:interface"
 			}],
 			rewards: [{
-				id: 1465,
+				id: "00000000000005B9",
 				type: "item",
 				item: "refinedstorage:interface"
 			}]
@@ -531,28 +532,28 @@
 				"",
 				"Note that the Transmitter must be chunk loaded for this to work, and that you still must have only one Controller in the entire network (across all locations)."
 			],
-			dependencies: [I;600],
-			id: 667,
+			dependencies: ["0000000000000258"],
+			id: "000000000000029B",
 			tasks: [
 				{
-					id: 668,
+					id: "000000000000029C",
 					type: "item",
 					item: "refinedstorage:network_transmitter"
 				},
 				{
-					id: 669,
+					id: "000000000000029D",
 					type: "item",
 					item: "refinedstorage:network_receiver"
 				},
 				{
-					id: 670,
+					id: "000000000000029E",
 					type: "item",
 					item: "refinedstorage:network_card"
 				}
 			],
 			rewards: [
 				{
-					id: 1462,
+					id: "00000000000005B6",
 					type: "command",
 					title: "Refined Storage Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -560,7 +561,7 @@
 					player_command: false
 				},
 				{
-					id: 1463,
+					id: "00000000000005B7",
 					type: "command",
 					title: "Refined Storage Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -579,22 +580,22 @@
 				"",
 				"Can you guess what Destructors will do too?"
 			],
-			dependencies: [I;600],
-			id: 3903,
+			dependencies: ["0000000000000258"],
+			id: "0000000000000F3F",
 			tasks: [
 				{
-					id: 3904,
+					id: "0000000000000F40",
 					type: "item",
 					item: "refinedstorage:constructor"
 				},
 				{
-					id: 3905,
+					id: "0000000000000F41",
 					type: "item",
 					item: "refinedstorage:destructor"
 				}
 			],
 			rewards: [{
-				id: 3916,
+				id: "0000000000000F4C",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -611,15 +612,15 @@
 				"",
 				"Introducing the Iron Crafter! With three times as many slots as a normal Crafter, this machine will help you organize and keep your base tidy. Oh, and it might be upgraded further too..."
 			],
-			dependencies: [I;626],
-			id: 3906,
+			dependencies: ["0000000000000272"],
+			id: "0000000000000F42",
 			tasks: [{
-				id: 3907,
+				id: "0000000000000F43",
 				type: "item",
 				item: "extrastorage:iron_crafter"
 			}],
 			rewards: [{
-				id: 3919,
+				id: "0000000000000F4F",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -633,15 +634,15 @@
 			shape: "hexagon",
 			subtitle: "Too bad Netherite Man doesn't exist!",
 			description: ["Absolute overkill? I don't know what that means! With a whopping 81 slots, the Netherite Crafter is the top tier option for all your autocrafting needs. It's never enough!"],
-			dependencies: [I;3906],
-			id: 3908,
+			dependencies: ["0000000000000F42"],
+			id: "0000000000000F44",
 			tasks: [{
-				id: 3909,
+				id: "0000000000000F45",
 				type: "item",
 				item: "extrastorage:netherite_crafter"
 			}],
 			rewards: [{
-				id: 3920,
+				id: "0000000000000F50",
 				type: "command",
 				title: "Refined Storage Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -658,15 +659,15 @@
 				"",
 				"This handy block will connect to all the Crafters in your system and give you access to them all from the same block, for easy pattern management. You can even name your Crafters in an Anvil and the name will appear in the Manager!"
 			],
-			dependencies: [I;626],
-			id: 3910,
+			dependencies: ["0000000000000272"],
+			id: "0000000000000F46",
 			tasks: [{
-				id: 3911,
+				id: "0000000000000F47",
 				type: "item",
 				item: "refinedstorage:crafter_manager"
 			}],
 			rewards: [{
-				id: 3918,
+				id: "0000000000000F4E",
 				type: "item",
 				item: "refinedstorage:crafter"
 			}]

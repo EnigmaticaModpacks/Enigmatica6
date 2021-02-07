@@ -1,11 +1,12 @@
 {
-	id: 147,
+	id: "0000000000000093",
+	group: "",
+	order_index: 8,
 	filename: "tools",
-	order_index: 6,
 	title: "Tools",
 	icon: {
 		id: "minecraft:netherite_pickaxe",
-		Count: true,
+		Count: 1b,
 		tag: {
 			Damage: 0
 		}
@@ -21,21 +22,21 @@
 				"",
 				"Accepts Fortune or Silk Touch books."
 			],
-			dependencies: [I;325],
-			id: 454,
+			dependencies: ["0000000000000145"],
+			id: "00000000000001C6",
 			tasks: [{
-				id: 455,
+				id: "00000000000001C7",
 				type: "item",
 				item: "pneumaticcraft:jackhammer"
 			}],
 			rewards: [
 				{
-					id: 456,
+					id: "00000000000001C8",
 					type: "item",
 					item: "pneumaticcraft:drill_bit_compressed_iron"
 				},
 				{
-					id: 2648,
+					id: "0000000000000A58",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -49,22 +50,22 @@
 			y: -7.5d,
 			subtitle: "Lucy In the Sky",
 			description: ["A bit faster than the Compressed Iron Bit and with basic vein mining functions."],
-			dependencies: [I;454],
-			id: 457,
+			dependencies: ["00000000000001C6"],
+			id: "00000000000001C9",
 			tasks: [{
-				id: 458,
+				id: "00000000000001CA",
 				type: "item",
 				item: "pneumaticcraft:drill_bit_diamond"
 			}],
 			rewards: [
 				{
-					id: 459,
+					id: "00000000000001CB",
 					type: "item",
 					item: "pneumaticcraft:volume_upgrade",
 					count: 5
 				},
 				{
-					id: 1784,
+					id: "00000000000006F8",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -78,22 +79,22 @@
 			y: -6.5d,
 			subtitle: "I'm Told You Were The Best",
 			description: ["Faster still and with full vein mining capabilities."],
-			dependencies: [I;457],
-			id: 460,
+			dependencies: ["00000000000001C9"],
+			id: "00000000000001CC",
 			tasks: [{
-				id: 461,
+				id: "00000000000001CD",
 				type: "item",
 				item: "pneumaticcraft:drill_bit_netherite"
 			}],
 			rewards: [
 				{
-					id: 462,
+					id: "00000000000001CE",
 					type: "item",
 					item: "pneumaticcraft:speed_upgrade",
 					count: 2
 				},
 				{
-					id: 1783,
+					id: "00000000000006F7",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -114,21 +115,21 @@
 				"● Block Launcher",
 				"● Self Repairing"
 			],
-			dependencies: [I;357],
-			id: 463,
+			dependencies: ["0000000000000165"],
+			id: "00000000000001CF",
 			tasks: [{
-				id: 464,
+				id: "00000000000001D0",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_chestplate",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1616,
+				id: "0000000000000650",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -150,21 +151,21 @@
 				"● Item Search",
 				"● Self Repairing"
 			],
-			dependencies: [I;357],
-			id: 465,
+			dependencies: ["0000000000000165"],
+			id: "00000000000001D1",
 			tasks: [{
-				id: 466,
+				id: "00000000000001D2",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_helmet",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1615,
+				id: "000000000000064F",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -183,21 +184,21 @@
 				"● Jump Height",
 				"● Self Repairing"
 			],
-			dependencies: [I;357],
-			id: 467,
+			dependencies: ["0000000000000165"],
+			id: "00000000000001D3",
 			tasks: [{
-				id: 468,
+				id: "00000000000001D4",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_leggings",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1617,
+				id: "0000000000000651",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -219,21 +220,21 @@
 				"● Creative Flight",
 				"● Self Repairing"
 			],
-			dependencies: [I;357],
-			id: 469,
+			dependencies: ["0000000000000165"],
+			id: "00000000000001D5",
 			tasks: [{
-				id: 470,
+				id: "00000000000001D6",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:pneumatic_boots",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1618,
+				id: "0000000000000652",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -247,22 +248,22 @@
 			y: -8.5d,
 			subtitle: "You Tried to Be Tough But Your Armor's Just Not Hard Enough",
 			description: ["Each armor piece accepts up to four of these for extreme protection."],
-			dependencies: [I;
-				465,
-				469,
-				467,
-				463
+			dependencies: [
+				"00000000000001D1",
+				"00000000000001D5",
+				"00000000000001D3",
+				"00000000000001CF"
 			],
 			dependency_requirement: "one_completed",
-			id: 471,
+			id: "00000000000001D7",
 			tasks: [{
-				id: 472,
+				id: "00000000000001D8",
 				type: "item",
 				item: "pneumaticcraft:armor_upgrade",
 				count: 4L
 			}],
 			rewards: [{
-				id: 1620,
+				id: "0000000000000654",
 				type: "item",
 				item: "pneumaticcraft:armor_upgrade",
 				count: 4
@@ -271,15 +272,15 @@
 		{
 			x: -9.0d,
 			y: -10.0d,
-			dependencies: [I;465],
-			id: 473,
+			dependencies: ["00000000000001D1"],
+			id: "00000000000001D9",
 			tasks: [{
-				id: 474,
+				id: "00000000000001DA",
 				type: "item",
 				item: "pneumaticcraft:night_vision_upgrade"
 			}],
 			rewards: [{
-				id: 1605,
+				id: "0000000000000645",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -290,15 +291,15 @@
 		{
 			x: -11.0d,
 			y: -10.0d,
-			dependencies: [I;465],
-			id: 475,
+			dependencies: ["00000000000001D1"],
+			id: "00000000000001DB",
 			tasks: [{
-				id: 476,
+				id: "00000000000001DC",
 				type: "item",
 				item: "pneumaticcraft:scuba_upgrade"
 			}],
 			rewards: [{
-				id: 1604,
+				id: "0000000000000644",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -309,15 +310,15 @@
 		{
 			x: -9.0d,
 			y: -9.0d,
-			dependencies: [I;463],
-			id: 477,
+			dependencies: ["00000000000001CF"],
+			id: "00000000000001DD",
 			tasks: [{
-				id: 478,
+				id: "00000000000001DE",
 				type: "item",
 				item: "pneumaticcraft:magnet_upgrade"
 			}],
 			rewards: [{
-				id: 1602,
+				id: "0000000000000642",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -328,15 +329,15 @@
 		{
 			x: -11.0d,
 			y: -9.0d,
-			dependencies: [I;463],
-			id: 479,
+			dependencies: ["00000000000001CF"],
+			id: "00000000000001DF",
 			tasks: [{
-				id: 480,
+				id: "00000000000001E0",
 				type: "item",
 				item: "pneumaticcraft:charging_upgrade"
 			}],
 			rewards: [{
-				id: 1603,
+				id: "0000000000000643",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -347,15 +348,15 @@
 		{
 			x: -11.0d,
 			y: -7.0d,
-			dependencies: [I;469],
-			id: 483,
+			dependencies: ["00000000000001D5"],
+			id: "00000000000001E3",
 			tasks: [{
-				id: 484,
+				id: "00000000000001E4",
 				type: "item",
 				item: "pneumaticcraft:flippers_upgrade"
 			}],
 			rewards: [{
-				id: 1599,
+				id: "000000000000063F",
 				type: "command",
 				title: "Epic PNC:R Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -368,15 +369,15 @@
 			y: -8.0d,
 			subtitle: "Shared Experiences",
 			description: ["Held in the inventory or worn as a Curio, this handy device helps you keep your valuable experience intact."],
-			dependencies: [I;325],
-			id: 487,
+			dependencies: ["0000000000000145"],
+			id: "00000000000001E7",
 			tasks: [{
-				id: 488,
+				id: "00000000000001E8",
 				type: "item",
 				item: "pneumaticcraft:memory_stick"
 			}],
 			rewards: [{
-				id: 1619,
+				id: "0000000000000653",
 				type: "xp_levels",
 				xp_levels: 30
 			}]
@@ -386,15 +387,15 @@
 			x: -11.0d,
 			y: -8.0d,
 			description: [""],
-			dependencies: [I;467],
-			id: 493,
+			dependencies: ["00000000000001D3"],
+			id: "00000000000001ED",
 			tasks: [{
-				id: 494,
+				id: "00000000000001EE",
 				type: "item",
 				item: "pneumaticcraft:jumping_upgrade_4"
 			}],
 			rewards: [{
-				id: 1601,
+				id: "0000000000000641",
 				type: "command",
 				title: "Legendary PNC:R Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -407,15 +408,15 @@
 			x: -9.0d,
 			y: -7.0d,
 			description: [""],
-			dependencies: [I;469],
-			id: 501,
+			dependencies: ["00000000000001D5"],
+			id: "00000000000001F5",
 			tasks: [{
-				id: 502,
+				id: "00000000000001F6",
 				type: "item",
 				item: "pneumaticcraft:jet_boots_upgrade_5"
 			}],
 			rewards: [{
-				id: 1600,
+				id: "0000000000000640",
 				type: "command",
 				title: "Legendary PNC:R Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -432,14 +433,14 @@
 				"",
 				"Micro missiles are target seeking explosives. They do no damage to the terrain and can be configured for varying degrees of explosive damage, travel speed, and turn speed. Sneak right click to configure."
 			],
-			dependencies: [I;357],
-			id: 503,
+			dependencies: ["0000000000000165"],
+			id: "00000000000001F7",
 			tasks: [{
-				id: 504,
+				id: "00000000000001F8",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:micromissiles",
-					Count: true,
+					Count: 1b,
 					tag: {
 						damage: 0.0f,
 						topSpeed: 0.0f,
@@ -449,7 +450,7 @@
 				}
 			}],
 			rewards: [{
-				id: 2646,
+				id: "0000000000000A56",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -462,19 +463,19 @@
 			y: -9.5d,
 			subtitle: "Stand and Deliver",
 			description: ["A smart turret that can be filtered to attack only certain creatures. For instance, only adult animals. "],
-			dependencies: [I;507],
-			id: 505,
+			dependencies: ["00000000000001FB"],
+			id: "00000000000001F9",
 			tasks: [{
-				id: 506,
+				id: "00000000000001FA",
 				type: "item",
 				item: "pneumaticcraft:sentry_turret"
 			}],
 			rewards: [{
-				id: 2152,
+				id: "0000000000000868",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo_ap",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0,
 						Enchantments: [{
@@ -490,19 +491,19 @@
 			y: -9.5d,
 			subtitle: "Leveling the Playing Field",
 			description: ["A modern solution to monster slaying. Pet friendly too!"],
-			dependencies: [I;179],
-			id: 507,
+			dependencies: ["00000000000000B3"],
+			id: "00000000000001FB",
 			tasks: [{
-				id: 508,
+				id: "00000000000001FC",
 				type: "item",
 				item: "pneumaticcraft:minigun"
 			}],
 			rewards: [{
-				id: 2151,
+				id: "0000000000000867",
 				type: "item",
 				item: {
 					id: "pneumaticcraft:gun_ammo",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0,
 						Enchantments: [{
@@ -519,37 +520,37 @@
 			y: -8.5d,
 			subtitle: "Something For Every Occasion",
 			description: ["Craft some specialized ammo and give them a try. Regular ammo can also be coated with a potion to give it a little extra oomph."],
-			dependencies: [I;507],
-			id: 514,
+			dependencies: ["00000000000001FB"],
+			id: "0000000000000202",
 			tasks: [
 				{
-					id: 515,
+					id: "0000000000000203",
 					type: "item",
 					item: {
 						id: "pneumaticcraft:gun_ammo_freezing",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 523,
+					id: "000000000000020B",
 					type: "item",
 					item: {
 						id: "pneumaticcraft:gun_ammo_explosive",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 2153,
+					id: "0000000000000869",
 					type: "item",
 					item: {
 						id: "pneumaticcraft:gun_ammo_incendiary",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -557,7 +558,7 @@
 				}
 			],
 			rewards: [{
-				id: 2645,
+				id: "0000000000000A55",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -574,15 +575,15 @@
 				"",
 				"Look no further. This autonomous sentry system will keep your home monster free with minor upkeep. "
 			],
-			dependencies: [I;507],
-			id: 526,
+			dependencies: ["00000000000001FB"],
+			id: "000000000000020E",
 			tasks: [{
-				id: 527,
+				id: "000000000000020F",
 				type: "item",
 				item: "pneumaticcraft:guard_drone"
 			}],
 			rewards: [{
-				id: 1621,
+				id: "0000000000000655",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -599,15 +600,15 @@
 				"",
 				"Ammunition not included."
 			],
-			dependencies: [I;526],
-			id: 528,
+			dependencies: ["000000000000020E"],
+			id: "0000000000000210",
 			tasks: [{
-				id: 529,
+				id: "0000000000000211",
 				type: "item",
 				item: "pneumaticcraft:minigun_upgrade"
 			}],
 			rewards: [{
-				id: 2647,
+				id: "0000000000000A57",
 				type: "command",
 				title: "Alchemist's Delight",
 				icon: "kubejs:alchemists_delight",
@@ -620,15 +621,15 @@
 			y: -10.5d,
 			subtitle: "It's Over! I Have the High Ground!",
 			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."],
-			dependencies: [I;360],
-			id: 530,
+			dependencies: ["0000000000000168"],
+			id: "0000000000000212",
 			tasks: [{
-				id: 531,
+				id: "0000000000000213",
 				type: "item",
 				item: "pneumaticcraft:aerial_interface"
 			}],
 			rewards: [{
-				id: 2196,
+				id: "0000000000000894",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -651,21 +652,21 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
-			dependencies: [I;1961],
-			id: 1077,
+			dependencies: ["00000000000007A9"],
+			id: "0000000000000435",
 			tasks: [{
-				id: 1078,
+				id: "0000000000000436",
 				type: "item",
 				item: {
 					id: "mekanism:mekasuit_helmet",
-					Count: true,
+					Count: 1b,
 					tag: {
 						HideFlags: 2
 					}
 				}
 			}],
 			rewards: [{
-				id: 2102,
+				id: "0000000000000836",
 				type: "command",
 				title: "Legendary Mekanism Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -686,21 +687,21 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
-			dependencies: [I;1961],
-			id: 1079,
+			dependencies: ["00000000000007A9"],
+			id: "0000000000000437",
 			tasks: [{
-				id: 1080,
+				id: "0000000000000438",
 				type: "item",
 				item: {
 					id: "mekanism:mekasuit_bodyarmor",
-					Count: true,
+					Count: 1b,
 					tag: {
 						HideFlags: 2
 					}
 				}
 			}],
 			rewards: [{
-				id: 2101,
+				id: "0000000000000835",
 				type: "command",
 				title: "Legendary Mekanism Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -719,21 +720,21 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
-			dependencies: [I;1961],
-			id: 1081,
+			dependencies: ["00000000000007A9"],
+			id: "0000000000000439",
 			tasks: [{
-				id: 1082,
+				id: "000000000000043A",
 				type: "item",
 				item: {
 					id: "mekanism:mekasuit_pants",
-					Count: true,
+					Count: 1b,
 					tag: {
 						HideFlags: 2
 					}
 				}
 			}],
 			rewards: [{
-				id: 2100,
+				id: "0000000000000834",
 				type: "command",
 				title: "Legendary Mekanism Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -753,21 +754,21 @@
 				"● Radiation Protection",
 				"● Energy Shielding"
 			],
-			dependencies: [I;1961],
-			id: 1083,
+			dependencies: ["00000000000007A9"],
+			id: "000000000000043B",
 			tasks: [{
-				id: 1084,
+				id: "000000000000043C",
 				type: "item",
 				item: {
 					id: "mekanism:mekasuit_boots",
-					Count: true,
+					Count: 1b,
 					tag: {
 						HideFlags: 2
 					}
 				}
 			}],
 			rewards: [{
-				id: 2099,
+				id: "0000000000000833",
 				type: "command",
 				title: "Legendary Mekanism Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -781,22 +782,22 @@
 			y: -8.0d,
 			subtitle: "Soylent Green",
 			description: ["All your essential vitamins, minerals, and amino acids, neatly condensed into a convenient chewy paste. Yum."],
-			dependencies: [I;1701],
-			id: 1085,
+			dependencies: ["00000000000006A5"],
+			id: "000000000000043D",
 			tasks: [
 				{
-					id: 1086,
+					id: "000000000000043E",
 					type: "item",
 					item: "mekanism:canteen"
 				},
 				{
-					id: 1205,
+					id: "00000000000004B5",
 					type: "item",
 					item: "mekanism:nutritional_liquifier"
 				}
 			],
 			rewards: [{
-				id: 2109,
+				id: "000000000000083D",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -807,15 +808,15 @@
 		{
 			x: 0.0d,
 			y: -10.0d,
-			dependencies: [I;1077],
-			id: 1087,
+			dependencies: ["0000000000000435"],
+			id: "000000000000043F",
 			tasks: [{
-				id: 1088,
+				id: "0000000000000440",
 				type: "item",
 				item: "mekanism:module_vision_enhancement_unit"
 			}],
 			rewards: [{
-				id: 2107,
+				id: "000000000000083B",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -826,15 +827,15 @@
 		{
 			x: -2.0d,
 			y: -10.0d,
-			dependencies: [I;1077],
-			id: 1089,
+			dependencies: ["0000000000000435"],
+			id: "0000000000000441",
 			tasks: [{
-				id: 1090,
+				id: "0000000000000442",
 				type: "item",
 				item: "mekanism:module_electrolytic_breathing_unit"
 			}],
 			rewards: [{
-				id: 2106,
+				id: "000000000000083A",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -845,15 +846,15 @@
 		{
 			x: -2.0d,
 			y: -7.0d,
-			dependencies: [I;1083],
-			id: 1091,
+			dependencies: ["000000000000043B"],
+			id: "0000000000000443",
 			tasks: [{
-				id: 1092,
+				id: "0000000000000444",
 				type: "item",
 				item: "mekanism:module_hydraulic_propulsion_unit"
 			}],
 			rewards: [{
-				id: 2105,
+				id: "0000000000000839",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -864,15 +865,15 @@
 		{
 			x: 0.0d,
 			y: -7.0d,
-			dependencies: [I;1083],
-			id: 1093,
+			dependencies: ["000000000000043B"],
+			id: "0000000000000445",
 			tasks: [{
-				id: 1094,
+				id: "0000000000000446",
 				type: "item",
 				item: "mekanism:module_magnetic_attraction_unit"
 			}],
 			rewards: [{
-				id: 2110,
+				id: "000000000000083E",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -883,15 +884,15 @@
 		{
 			x: -2.0d,
 			y: -9.0d,
-			dependencies: [I;1079],
-			id: 1095,
+			dependencies: ["0000000000000437"],
+			id: "0000000000000447",
 			tasks: [{
-				id: 1096,
+				id: "0000000000000448",
 				type: "item",
 				item: "mekanism:module_charge_distribution_unit"
 			}],
 			rewards: [{
-				id: 2103,
+				id: "0000000000000837",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -904,20 +905,20 @@
 			y: -8.5d,
 			subtitle: "The Cost Of Progress",
 			description: [""],
-			dependencies: [I;
-				1079,
-				1083,
-				1077,
-				1081
+			dependencies: [
+				"0000000000000437",
+				"000000000000043B",
+				"0000000000000435",
+				"0000000000000439"
 			],
-			id: 1097,
+			id: "0000000000000449",
 			tasks: [{
-				id: 1098,
+				id: "000000000000044A",
 				type: "item",
 				item: "mekanism:module_energy_unit"
 			}],
 			rewards: [{
-				id: 2111,
+				id: "000000000000083F",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -928,15 +929,15 @@
 		{
 			x: 0.0d,
 			y: -9.0d,
-			dependencies: [I;1079],
-			id: 1099,
+			dependencies: ["0000000000000437"],
+			id: "000000000000044B",
 			tasks: [{
-				id: 1100,
+				id: "000000000000044C",
 				type: "item",
 				item: "mekanism:module_jetpack_unit"
 			}],
 			rewards: [{
-				id: 2108,
+				id: "000000000000083C",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -947,15 +948,15 @@
 		{
 			x: -2.0d,
 			y: -8.0d,
-			dependencies: [I;1081],
-			id: 1101,
+			dependencies: ["0000000000000439"],
+			id: "000000000000044D",
 			tasks: [{
-				id: 1102,
+				id: "000000000000044E",
 				type: "item",
 				item: "mekanism:module_locomotive_boosting_unit"
 			}],
 			rewards: [{
-				id: 2104,
+				id: "0000000000000838",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -968,21 +969,21 @@
 			y: -8.5d,
 			subtitle: "Don't Leave That Plasma Cutter Running",
 			description: ["A basic multi-tool with built in vein mining and excellent attack damage."],
-			dependencies: [I;1733],
-			id: 1103,
+			dependencies: ["00000000000006C5"],
+			id: "000000000000044F",
 			tasks: [{
-				id: 1104,
+				id: "0000000000000450",
 				type: "item",
 				item: {
 					id: "mekanism:atomic_disassembler",
-					Count: true,
+					Count: 1b,
 					tag: {
 						HideFlags: 2
 					}
 				}
 			}],
 			rewards: [{
-				id: 2097,
+				id: "0000000000000831",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -995,21 +996,21 @@
 			y: -6.5d,
 			subtitle: "Rip and Tear",
 			description: ["A powerful all in one tool capable of accepting several upgrades. "],
-			dependencies: [I;1961],
-			id: 1105,
+			dependencies: ["00000000000007A9"],
+			id: "0000000000000451",
 			tasks: [{
-				id: 1106,
+				id: "0000000000000452",
 				type: "item",
 				item: {
 					id: "mekanism:meka_tool",
-					Count: true,
+					Count: 1b,
 					tag: {
 						HideFlags: 2
 					}
 				}
 			}],
 			rewards: [{
-				id: 2098,
+				id: "0000000000000832",
 				type: "command",
 				title: "Legendary Mekanism Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1021,15 +1022,15 @@
 			x: -3.5d,
 			y: -7.5d,
 			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."],
-			dependencies: [I;1961],
-			id: 1107,
+			dependencies: ["00000000000007A9"],
+			id: "0000000000000453",
 			tasks: [{
-				id: 1108,
+				id: "0000000000000454",
 				type: "item",
 				item: "mekanism:modification_station"
 			}],
 			rewards: [{
-				id: 2096,
+				id: "0000000000000830",
 				type: "command",
 				title: "Epic Mekanism Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1060,20 +1061,20 @@
 				"● $tools/hoe",
 				"● $tools/multi-tool"
 			],
-			id: 1116,
+			id: "000000000000045C",
 			tasks: [{
-				id: 1117,
+				id: "000000000000045D",
 				type: "checkmark",
 				icon: {
 					id: "minecraft:netherite_chestplate",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 3236,
+				id: "0000000000000CA4",
 				type: "xp",
 				xp: 100
 			}]
@@ -1081,7 +1082,7 @@
 		{
 			icon: {
 				id: "mininggadgets:mininggadget",
-				Count: true,
+				Count: 1b,
 				tag: {}
 			},
 			x: -10.0d,
@@ -1101,32 +1102,32 @@
 				"● Filterable Void Upgrade to delete unwanted trash like excess stone",
 				"● Magnet upgrade that draws mined items into your inventory"
 			],
-			dependencies: [I;1132],
-			id: 1119,
+			dependencies: ["000000000000046C"],
+			id: "000000000000045F",
 			tasks: [
 				{
-					id: 1120,
+					id: "0000000000000460",
 					type: "item",
 					item: {
 						id: "mininggadgets:mininggadget",
-						Count: true,
+						Count: 1b,
 						tag: {}
 					}
 				},
 				{
-					id: 1778,
+					id: "00000000000006F2",
 					type: "item",
 					item: "mininggadgets:modificationtable"
 				}
 			],
 			rewards: [
 				{
-					id: 1661,
+					id: "000000000000067D",
 					type: "item",
 					item: "mininggadgets:upgrade_light_placer"
 				},
 				{
-					id: 2642,
+					id: "0000000000000A52",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1144,21 +1145,21 @@
 				"",
 				"The Mining Helmet doesn't stop mobs from spawning, but it will give you that extra little bit of light to help spot those precious shiney blue rocks."
 			],
-			dependencies: [I;1134],
-			id: 1121,
+			dependencies: ["000000000000046E"],
+			id: "0000000000000461",
 			tasks: [{
-				id: 1122,
+				id: "0000000000000462",
 				type: "item",
 				item: {
 					id: "mining_helmet:mining_helmet",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 2670,
+				id: "0000000000000A6E",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -1169,15 +1170,15 @@
 		{
 			x: -10.5d,
 			y: -15.0d,
-			dependencies: [I;1119],
-			id: 1124,
+			dependencies: ["000000000000045F"],
+			id: "0000000000000464",
 			tasks: [{
-				id: 1125,
+				id: "0000000000000465",
 				type: "item",
 				item: "mininggadgets:upgrade_fortune_3"
 			}],
 			rewards: [{
-				id: 1775,
+				id: "00000000000006EF",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -1188,21 +1189,21 @@
 		{
 			x: -11.0d,
 			y: -14.0d,
-			dependencies: [I;1119],
-			id: 1126,
+			dependencies: ["000000000000045F"],
+			id: "0000000000000466",
 			tasks: [{
-				id: 1660,
+				id: "000000000000067C",
 				type: "item",
 				item: "mininggadgets:upgrade_silk"
 			}],
 			rewards: [
 				{
-					id: 1659,
+					id: "000000000000067B",
 					type: "item",
 					item: "mininggadgets:upgrade_magnet"
 				},
 				{
-					id: 2643,
+					id: "0000000000000A53",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1214,15 +1215,15 @@
 		{
 			x: -9.5d,
 			y: -15.0d,
-			dependencies: [I;1119],
-			id: 1128,
+			dependencies: ["000000000000045F"],
+			id: "0000000000000468",
 			tasks: [{
-				id: 1129,
+				id: "0000000000000469",
 				type: "item",
 				item: "mininggadgets:upgrade_efficiency_5"
 			}],
 			rewards: [{
-				id: 1774,
+				id: "00000000000006EE",
 				type: "command",
 				title: "Miner's Delight",
 				icon: "kubejs:miners_delight",
@@ -1233,15 +1234,15 @@
 		{
 			x: -9.0d,
 			y: -14.0d,
-			dependencies: [I;1119],
-			id: 1130,
+			dependencies: ["000000000000045F"],
+			id: "000000000000046A",
 			tasks: [{
-				id: 1131,
+				id: "000000000000046B",
 				type: "item",
 				item: "mininggadgets:upgrade_battery_3"
 			}],
 			rewards: [{
-				id: 2644,
+				id: "0000000000000A54",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -1253,7 +1254,7 @@
 			title: "Alfsteel Armor",
 			icon: {
 				id: "mythicbotany:alfsteel_helmet",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1262,51 +1263,51 @@
 			y: -12.0d,
 			subtitle: "Evolution Complete",
 			description: ["An upgrade to Terrasteel armor, Alfsteel provides bonus reach, speed, and knockback resistance."],
-			dependencies: [I;
-				1141,
-				1429
+			dependencies: [
+				"0000000000000475",
+				"0000000000000595"
 			],
-			id: 1136,
+			id: "0000000000000470",
 			tasks: [
 				{
-					id: 1137,
+					id: "0000000000000471",
 					type: "item",
 					item: {
 						id: "mythicbotany:alfsteel_helmet",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1138,
+					id: "0000000000000472",
 					type: "item",
 					item: {
 						id: "mythicbotany:alfsteel_chestplate",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1139,
+					id: "0000000000000473",
 					type: "item",
 					item: {
 						id: "mythicbotany:alfsteel_leggings",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1140,
+					id: "0000000000000474",
 					type: "item",
 					item: {
 						id: "mythicbotany:alfsteel_boots",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1314,7 +1315,7 @@
 				}
 			],
 			rewards: [{
-				id: 1628,
+				id: "000000000000065C",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1326,7 +1327,7 @@
 			title: "Terrasteel Armor",
 			icon: {
 				id: "botania:terrasteel_helmet",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1335,48 +1336,48 @@
 			y: -13.0d,
 			subtitle: "Direct My Wrath",
 			description: ["Potent armor that's deeply infused with magic, Terrasteel affords excellent protection, reduced mana costs, and knockback resistance."],
-			dependencies: [I;1303],
-			id: 1141,
+			dependencies: ["0000000000000517"],
+			id: "0000000000000475",
 			tasks: [
 				{
-					id: 1142,
+					id: "0000000000000476",
 					type: "item",
 					item: {
 						id: "botania:terrasteel_helmet",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1143,
+					id: "0000000000000477",
 					type: "item",
 					item: {
 						id: "botania:terrasteel_chestplate",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1144,
+					id: "0000000000000478",
 					type: "item",
 					item: {
 						id: "botania:terrasteel_leggings",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1145,
+					id: "0000000000000479",
 					type: "item",
 					item: {
 						id: "botania:terrasteel_boots",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1384,7 +1385,7 @@
 				}
 			],
 			rewards: [{
-				id: 1629,
+				id: "000000000000065D",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1396,14 +1397,14 @@
 			x: -1.5d,
 			y: -13.0d,
 			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."],
-			dependencies: [I;1303],
-			id: 1146,
+			dependencies: ["0000000000000517"],
+			id: "000000000000047A",
 			tasks: [{
-				id: 1147,
+				id: "000000000000047B",
 				type: "item",
 				item: {
 					id: "aiotbotania:terra_aiot",
-					Count: true,
+					Count: 1b,
 					tag: {
 						mana: 9999,
 						Damage: 0
@@ -1411,7 +1412,7 @@
 				}
 			}],
 			rewards: [{
-				id: 1630,
+				id: "000000000000065E",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1423,14 +1424,14 @@
 			x: -2.0d,
 			y: -12.0d,
 			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."],
-			dependencies: [I;1429],
-			id: 1148,
+			dependencies: ["0000000000000595"],
+			id: "000000000000047C",
 			tasks: [{
-				id: 1149,
+				id: "000000000000047D",
 				type: "item",
 				item: {
 					id: "aiotbotania:alfsteel_aiot",
-					Count: true,
+					Count: 1b,
 					tag: {
 						mana: 9999,
 						Damage: 0
@@ -1438,7 +1439,7 @@
 				}
 			}],
 			rewards: [{
-				id: 1627,
+				id: "000000000000065B",
 				type: "command",
 				title: "Legendary Botania Loot Box",
 				icon: "kubejs:legendary_lootbox",
@@ -1450,7 +1451,7 @@
 			title: "Neptunium Armor",
 			icon: {
 				id: "aquaculture:neptunium_helmet",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1459,48 +1460,48 @@
 			y: -14.0d,
 			subtitle: "And With Strange Aeons, Even Death May Die",
 			description: ["Forged in ages past in the deepest depths. Neptunium armor grants it's wearer a taste of the unimaginable power of the Abyssal Depths."],
-			dependencies: [I;1203],
-			id: 1150,
+			dependencies: ["00000000000004B3"],
+			id: "000000000000047E",
 			tasks: [
 				{
-					id: 1151,
+					id: "000000000000047F",
 					type: "item",
 					item: {
 						id: "aquaculture:neptunium_helmet",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1632,
+					id: "0000000000000660",
 					type: "item",
 					item: {
 						id: "aquaculture:neptunium_chestplate",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1633,
+					id: "0000000000000661",
 					type: "item",
 					item: {
 						id: "aquaculture:neptunium_leggings",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1634,
+					id: "0000000000000662",
 					type: "item",
 					item: {
 						id: "aquaculture:neptunium_boots",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1509,12 +1510,12 @@
 			],
 			rewards: [
 				{
-					id: 1631,
+					id: "000000000000065F",
 					type: "item",
 					item: "aquaculture:nether_star_hook"
 				},
 				{
-					id: 1780,
+					id: "00000000000006F4",
 					type: "command",
 					title: "Sorcerer's Delight",
 					icon: "kubejs:sorcerers_delight",
@@ -1527,21 +1528,21 @@
 			x: -2.0d,
 			y: -14.0d,
 			description: ["Neptunium Tools offer many benefits to those who spend most of their time under water. "],
-			dependencies: [I;1203],
-			id: 1152,
+			dependencies: ["00000000000004B3"],
+			id: "0000000000000480",
 			tasks: [{
-				id: 1153,
+				id: "0000000000000481",
 				type: "item",
 				item: {
 					id: "aquaculture:neptunium_pickaxe",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1781,
+				id: "00000000000006F5",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -1553,7 +1554,7 @@
 			title: "Excavators and Hammers",
 			icon: {
 				id: "vanillahammers:netherite_hammer",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1561,14 +1562,14 @@
 			x: -5.5d,
 			y: -11.5d,
 			description: ["Vanilla Hammers and Excavators offers 3x3 mining tools that deal with both stone and dirt type blocks. They make an excellent way to speed up early mining endeavours."],
-			id: 1156,
+			id: "0000000000000484",
 			tasks: [{
-				id: 1157,
+				id: "0000000000000485",
 				type: "item",
 				title: "Any morevanillalib:tools",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "morevanillalib:tools"
 					}
@@ -1576,11 +1577,11 @@
 			}],
 			rewards: [
 				{
-					id: 1658,
+					id: "000000000000067A",
 					type: "item",
 					item: {
 						id: "minecraft:enchanted_book",
-						Count: true,
+						Count: 1b,
 						tag: {
 							StoredEnchantments: [{
 								lvl: 5s,
@@ -1590,7 +1591,7 @@
 					}
 				},
 				{
-					id: 2671,
+					id: "0000000000000A6F",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -1603,7 +1604,7 @@
 			title: "Archmage's Arcana",
 			icon: {
 				id: "ars_nouveau:archmage_hood",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1611,48 +1612,48 @@
 			x: -1.0d,
 			y: -16.0d,
 			description: ["Ars Nouveau has several tiers of armor to assist the aspiring caster. Each permits the wearer to access more mana and regenerate spent mana faster."],
-			dependencies: [I;981],
-			id: 1158,
+			dependencies: ["00000000000003D5"],
+			id: "0000000000000486",
 			tasks: [
 				{
-					id: 1159,
+					id: "0000000000000487",
 					type: "item",
 					item: {
 						id: "ars_nouveau:archmage_hood",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1162,
+					id: "000000000000048A",
 					type: "item",
 					item: {
 						id: "ars_nouveau:archmage_robes",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1163,
+					id: "000000000000048B",
 					type: "item",
 					item: {
 						id: "ars_nouveau:archmage_leggings",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1164,
+					id: "000000000000048C",
 					type: "item",
 					item: {
 						id: "ars_nouveau:archmage_boots",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1661,7 +1662,7 @@
 			],
 			rewards: [
 				{
-					id: 1638,
+					id: "0000000000000666",
 					type: "command",
 					title: "Rare Ars Nouveau Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -1669,11 +1670,11 @@
 					player_command: false
 				},
 				{
-					id: 1646,
+					id: "000000000000066E",
 					type: "item",
 					item: {
 						id: "minecraft:enchanted_book",
-						Count: true,
+						Count: 1b,
 						tag: {
 							StoredEnchantments: [
 								{
@@ -1694,7 +1695,7 @@
 			title: "Skyseeker's Mantle",
 			icon: {
 				id: "naturesaura:sky_helmet",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1702,48 +1703,48 @@
 			x: -0.5d,
 			y: -15.0d,
 			description: ["Skyseeker's Armor imbues the wearer with the affinity of the wind itself, granting speed and a lighter step."],
-			dependencies: [I;745],
-			id: 1160,
+			dependencies: ["00000000000002E9"],
+			id: "0000000000000488",
 			tasks: [
 				{
-					id: 1161,
+					id: "0000000000000489",
 					type: "item",
 					item: {
 						id: "naturesaura:sky_helmet",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1165,
+					id: "000000000000048D",
 					type: "item",
 					item: {
 						id: "naturesaura:sky_chest",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1166,
+					id: "000000000000048E",
 					type: "item",
 					item: {
 						id: "naturesaura:sky_pants",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1167,
+					id: "000000000000048F",
 					type: "item",
 					item: {
 						id: "naturesaura:sky_shoes",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1751,7 +1752,7 @@
 				}
 			],
 			rewards: [{
-				id: 1637,
+				id: "0000000000000665",
 				type: "command",
 				title: "Epic Nature's Aura Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1770,16 +1771,16 @@
 				"● RF Coil",
 				"● Radial Enhancement"
 			],
-			dependencies: [I;1187],
-			id: 1168,
+			dependencies: ["00000000000004A3"],
+			id: "0000000000000490",
 			tasks: [{
-				id: 1169,
+				id: "0000000000000491",
 				type: "item",
 				item: "thermal:flux_drill"
 			}],
 			rewards: [
 				{
-					id: 1623,
+					id: "0000000000000657",
 					type: "command",
 					title: "Epic Thermal Series Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -1787,7 +1788,7 @@
 					player_command: false
 				},
 				{
-					id: 2149,
+					id: "0000000000000865",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -1807,16 +1808,16 @@
 				"● RF Coil",
 				"● Radial Enhancement"
 			],
-			dependencies: [I;1187],
-			id: 1170,
+			dependencies: ["00000000000004A3"],
+			id: "0000000000000492",
 			tasks: [{
-				id: 1171,
+				id: "0000000000000493",
 				type: "item",
 				item: "thermal:flux_saw"
 			}],
 			rewards: [
 				{
-					id: 1622,
+					id: "0000000000000656",
 					type: "command",
 					title: "Epic Thermal Series Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -1824,7 +1825,7 @@
 					player_command: false
 				},
 				{
-					id: 2150,
+					id: "0000000000000866",
 					type: "command",
 					title: "Miner's Delight",
 					icon: "kubejs:miners_delight",
@@ -1837,7 +1838,7 @@
 			title: "Hazmat Suit",
 			icon: {
 				id: "thermal:hazmat_helmet",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1846,48 +1847,48 @@
 			y: -4.5d,
 			subtitle: "So Dangerous, You'll Have to Sign a Waiver",
 			description: ["Sturdy protection against many of the world's hazards, such as fire and very sharp booshes."],
-			dependencies: [I;1190],
-			id: 1172,
+			dependencies: ["00000000000004A6"],
+			id: "0000000000000494",
 			tasks: [
 				{
-					id: 1173,
+					id: "0000000000000495",
 					type: "item",
 					item: {
 						id: "thermal:hazmat_helmet",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1178,
+					id: "000000000000049A",
 					type: "item",
 					item: {
 						id: "thermal:hazmat_chestplate",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1179,
+					id: "000000000000049B",
 					type: "item",
 					item: {
 						id: "thermal:hazmat_leggings",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1180,
+					id: "000000000000049C",
 					type: "item",
 					item: {
 						id: "thermal:hazmat_boots",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1895,7 +1896,7 @@
 				}
 			],
 			rewards: [{
-				id: 1625,
+				id: "0000000000000659",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1907,7 +1908,7 @@
 			title: "Diving Suit",
 			icon: {
 				id: "thermal:diving_helmet",
-				Count: true,
+				Count: 1b,
 				tag: {
 					Damage: 0
 				}
@@ -1916,48 +1917,48 @@
 			y: -4.5d,
 			subtitle: "You'll Think You're Looking at Aquaman",
 			description: ["A technological marvel that allows the wearer to remain productive for longer under water."],
-			dependencies: [I;930],
-			id: 1174,
+			dependencies: ["00000000000003A2"],
+			id: "0000000000000496",
 			tasks: [
 				{
-					id: 1175,
+					id: "0000000000000497",
 					type: "item",
 					item: {
 						id: "thermal:diving_helmet",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1181,
+					id: "000000000000049D",
 					type: "item",
 					item: {
 						id: "thermal:diving_chestplate",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1182,
+					id: "000000000000049E",
 					type: "item",
 					item: {
 						id: "thermal:diving_leggings",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 1183,
+					id: "000000000000049F",
 					type: "item",
 					item: {
 						id: "thermal:diving_boots",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
@@ -1965,7 +1966,7 @@
 				}
 			],
 			rewards: [{
-				id: 1624,
+				id: "0000000000000658",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -1983,15 +1984,15 @@
 				"● RF Coil",
 				"● Radial Enhancement"
 			],
-			dependencies: [I;1187],
-			id: 1176,
+			dependencies: ["00000000000004A3"],
+			id: "0000000000000498",
 			tasks: [{
-				id: 1177,
+				id: "0000000000000499",
 				type: "item",
 				item: "thermal:flux_magnet"
 			}],
 			rewards: [{
-				id: 1626,
+				id: "000000000000065A",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -2007,21 +2008,21 @@
 				"",
 				"Read more about them in the Natural Items section of the Book of Natural Aura."
 			],
-			dependencies: [I;745],
-			id: 1206,
+			dependencies: ["00000000000002E9"],
+			id: "00000000000004B6",
 			tasks: [{
-				id: 1207,
+				id: "00000000000004B7",
 				type: "item",
 				item: {
 					id: "naturesaura:sky_pickaxe",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 1636,
+				id: "0000000000000664",
 				type: "command",
 				title: "Epic Nature's Aura Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -2042,15 +2043,15 @@
 				"",
 				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
 			],
-			dependencies: [I;1134],
-			id: 2807,
+			dependencies: ["000000000000046E"],
+			id: "0000000000000AF7",
 			tasks: [{
-				id: 2808,
+				id: "0000000000000AF8",
 				type: "item",
 				item: "portable_stonecutter:portable_stonecutter"
 			}],
 			rewards: [{
-				id: 2827,
+				id: "0000000000000B0B",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -2062,17 +2063,17 @@
 			x: -7.5d,
 			y: -15.5d,
 			description: ["The Infinity Drill will allow you mine big areas when using biofuel. It can be upgraded by charging it."],
-			dependencies: [I;130],
-			id: 3935,
+			dependencies: ["0000000000000082"],
+			id: "0000000000000F5F",
 			tasks: [{
-				id: 3936,
+				id: "0000000000000F60",
 				type: "item",
 				item: {
 					id: "industrialforegoing:infinity_drill",
-					Count: true,
+					Count: 1b,
 					tag: {
-						CanCharge: true,
-						Special: false,
+						CanCharge: 1b,
+						Special: 0b,
 						Selected: "POOR",
 						Energy: 0L,
 						Fluid: {
@@ -2087,17 +2088,17 @@
 			x: -6.0d,
 			y: -15.0d,
 			description: ["The Infinity Saw will allow you chop big forests when using biofuel. It can be upgraded by charging it."],
-			dependencies: [I;3849],
-			id: 3937,
+			dependencies: ["0000000000000F09"],
+			id: "0000000000000F61",
 			tasks: [{
-				id: 3938,
+				id: "0000000000000F62",
 				type: "item",
 				item: {
 					id: "industrialforegoing:infinity_saw",
-					Count: true,
+					Count: 1b,
 					tag: {
-						CanCharge: true,
-						Special: false,
+						CanCharge: 1b,
+						Special: 0b,
 						Selected: "POOR",
 						Energy: 0L,
 						Fluid: {
@@ -2112,24 +2113,24 @@
 			x: -5.0d,
 			y: -15.0d,
 			description: ["The Infinity Trident is an upgraded version of the Minecraft Trident, most of the enchanments can be unlocked by upgrading it. It can be upgraded by charging it."],
-			dependencies: [I;3847],
-			id: 3939,
+			dependencies: ["0000000000000F07"],
+			id: "0000000000000F63",
 			tasks: [{
-				id: 3940,
+				id: "0000000000000F64",
 				type: "item",
 				item: {
 					id: "industrialforegoing:infinity_trident",
-					Count: true,
+					Count: 1b,
 					tag: {
-						CanCharge: true,
+						CanCharge: 1b,
 						Riptide: 0,
-						Channeling: false,
+						Channeling: 0b,
 						Energy: 0L,
 						Fluid: {
 							FluidName: "biofuel",
 							Amount: 0
 						},
-						Special: false,
+						Special: 0b,
 						Selected: "POOR",
 						Loyalty: 0
 					}
@@ -2140,22 +2141,22 @@
 			x: -3.5d,
 			y: -15.5d,
 			description: ["The Infinity Hammer will allow you attack enemies in big areas when using biofuel. It can be upgraded by charging it."],
-			dependencies: [I;3851],
-			id: 3941,
+			dependencies: ["0000000000000F0B"],
+			id: "0000000000000F65",
 			tasks: [{
-				id: 3942,
+				id: "0000000000000F66",
 				type: "item",
 				item: {
 					id: "industrialforegoing:infinity_hammer",
-					Count: true,
+					Count: 1b,
 					tag: {
-						CanCharge: true,
+						CanCharge: 1b,
 						Energy: 0L,
 						Fluid: {
 							FluidName: "biofuel",
 							Amount: 0
 						},
-						Special: false,
+						Special: 0b,
 						Selected: "POOR",
 						Beheading: 0
 					}
@@ -2165,22 +2166,22 @@
 		{
 			x: -5.5d,
 			y: -4.5d,
-			dependencies: [I;
-				1188,
-				1168,
-				1170,
-				1176
+			dependencies: [
+				"00000000000004A4",
+				"0000000000000490",
+				"0000000000000492",
+				"0000000000000498"
 			],
 			dependency_requirement: "one_completed",
-			id: 3992,
+			id: "0000000000000F98",
 			tasks: [{
-				id: 3993,
+				id: "0000000000000F99",
 				type: "item",
 				item: "thermal:area_radius_augment"
 			}],
 			rewards: [
 				{
-					id: 3994,
+					id: "0000000000000F9A",
 					type: "command",
 					title: "Epic Thermal Series Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -2188,7 +2189,7 @@
 					player_command: false
 				},
 				{
-					id: 3995,
+					id: "0000000000000F9B",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",

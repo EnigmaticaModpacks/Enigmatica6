@@ -1,7 +1,8 @@
 {
-	id: 929,
+	id: "00000000000003A1",
+	group: "",
+	order_index: 20,
 	filename: "thermal_series",
-	order_index: 18,
 	title: "Thermal Series",
 	icon: "thermal:wrench",
 	default_quest_shape: "",
@@ -17,27 +18,27 @@
 				"",
 				"~MuteTiefling"
 			],
-			id: 930,
+			id: "00000000000003A2",
 			tasks: [{
-				id: 931,
+				id: "00000000000003A3",
 				type: "checkmark",
 				title: "The Thermal Series",
 				icon: "thermal:wrench"
 			}],
 			rewards: [
 				{
-					id: 934,
+					id: "00000000000003A6",
 					type: "item",
 					item: {
 						id: "patchouli:guide_book",
-						Count: true,
+						Count: 1b,
 						tag: {
 							"patchouli:book": "thermal:guidebook"
 						}
 					}
 				},
 				{
-					id: 1209,
+					id: "00000000000004B9",
 					type: "item",
 					item: "thermal:wrench"
 				}
@@ -55,21 +56,21 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;930],
-			id: 1187,
+			dependencies: ["00000000000003A2"],
+			id: "00000000000004A3",
 			tasks: [
 				{
-					id: 1188,
+					id: "00000000000004A4",
 					type: "item",
 					item: "thermal:dynamo_stirling"
 				},
 				{
-					id: 1208,
+					id: "00000000000004B8",
 					type: "item",
 					title: "Any minecraft:coals",
 					item: {
 						id: "itemfilters:tag",
-						Count: true,
+						Count: 1b,
 						tag: {
 							value: "minecraft:coals"
 						}
@@ -79,18 +80,18 @@
 			],
 			rewards: [
 				{
-					id: 1260,
+					id: "00000000000004EC",
 					type: "item",
 					item: "powah:energy_cable_basic",
 					count: 8
 				},
 				{
-					id: 1594,
+					id: "000000000000063A",
 					type: "item",
 					item: "powah:energy_cell_basic"
 				},
 				{
-					id: 2686,
+					id: "0000000000000A7E",
 					type: "command",
 					title: "Farmer's Delight",
 					icon: "kubejs:farmers_delight",
@@ -110,23 +111,23 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades as well as a list of what fluids can be extracted from each tree."
 			],
-			dependencies: [I;1187],
-			id: 1189,
+			dependencies: ["00000000000004A3"],
+			id: "00000000000004A5",
 			tasks: [{
-				id: 1190,
+				id: "00000000000004A6",
 				type: "item",
 				item: "thermal:device_tree_extractor"
 			}],
 			rewards: [
 				{
-					id: 1210,
+					id: "00000000000004BA",
 					type: "item",
 					auto: "disabled",
 					item: "minecraft:jungle_sapling",
 					count: 4
 				},
 				{
-					id: 1264,
+					id: "00000000000004F0",
 					type: "command",
 					title: "Rare Thermal Series Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -134,7 +135,7 @@
 					player_command: false
 				},
 				{
-					id: 3975,
+					id: "0000000000000F87",
 					type: "item",
 					item: "minecraft:acacia_sapling",
 					count: 4
@@ -151,23 +152,23 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1211],
-			id: 1191,
+			dependencies: ["00000000000004BB"],
+			id: "00000000000004A7",
 			tasks: [
 				{
-					id: 1192,
+					id: "00000000000004A8",
 					type: "item",
 					item: "thermal:machine_refinery"
 				},
 				{
-					id: 1217,
+					id: "00000000000004C1",
 					type: "item",
 					item: "thermal:tree_oil_bucket"
 				}
 			],
 			rewards: [
 				{
-					id: 1263,
+					id: "00000000000004EF",
 					type: "command",
 					title: "Epic Thermal Series Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -175,7 +176,7 @@
 					player_command: false
 				},
 				{
-					id: 1593,
+					id: "0000000000000639",
 					type: "item",
 					item: "mekanism:basic_mechanical_pipe",
 					count: 8
@@ -193,15 +194,15 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1218],
-			id: 1195,
+			dependencies: ["00000000000004C2"],
+			id: "00000000000004AB",
 			tasks: [{
-				id: 1196,
+				id: "00000000000004AC",
 				type: "item",
 				item: "thermal:machine_pulverizer"
 			}],
 			rewards: [{
-				id: 1266,
+				id: "00000000000004F2",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -220,15 +221,15 @@
 				"",
 				"Pulverize some iron and nickel, combine it by hand, and smelt the result to progress."
 			],
-			dependencies: [I;1195],
-			id: 1197,
+			dependencies: ["00000000000004AB"],
+			id: "00000000000004AD",
 			tasks: [{
-				id: 1198,
+				id: "00000000000004AE",
 				type: "item",
 				item: "emendatusenigmatica:invar_dust"
 			}],
 			rewards: [{
-				id: 1267,
+				id: "00000000000004F3",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -245,15 +246,15 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1197],
-			id: 1199,
+			dependencies: ["00000000000004AD"],
+			id: "00000000000004AF",
 			tasks: [{
-				id: 1200,
+				id: "00000000000004B0",
 				type: "item",
 				item: "thermal:machine_smelter"
 			}],
 			rewards: [{
-				id: 1268,
+				id: "00000000000004F4",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -270,22 +271,22 @@
 				"",
 				"Resin can be extracted from oak, birch, spruce, and acacia trees and with a little work can be made into an excellent fuel source."
 			],
-			dependencies: [I;1189],
-			id: 1211,
+			dependencies: ["00000000000004A5"],
+			id: "00000000000004BB",
 			tasks: [{
-				id: 1212,
+				id: "00000000000004BC",
 				type: "item",
 				item: "thermal:resin_bucket"
 			}],
 			rewards: [
 				{
-					id: 1261,
+					id: "00000000000004ED",
 					type: "item",
 					item: "minecraft:sweet_berries",
 					count: 16
 				},
 				{
-					id: 1595,
+					id: "000000000000063B",
 					type: "command",
 					title: "Rare Thermal Series Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -305,15 +306,15 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1191],
-			id: 1215,
+			dependencies: ["00000000000004A7"],
+			id: "00000000000004BF",
 			tasks: [{
-				id: 1216,
+				id: "00000000000004C0",
 				type: "item",
 				item: "thermal:dynamo_compression"
 			}],
 			rewards: [{
-				id: 1262,
+				id: "00000000000004EE",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -330,16 +331,16 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;930],
-			id: 1218,
+			dependencies: ["00000000000003A2"],
+			id: "00000000000004C2",
 			tasks: [{
-				id: 1219,
+				id: "00000000000004C3",
 				type: "item",
 				item: "thermal:machine_furnace"
 			}],
 			rewards: [
 				{
-					id: 1265,
+					id: "00000000000004F1",
 					type: "command",
 					title: "Rare Thermal Series Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -347,7 +348,7 @@
 					player_command: false
 				},
 				{
-					id: 2687,
+					id: "0000000000000A7F",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -365,21 +366,21 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1199],
-			id: 1220,
+			dependencies: ["00000000000004AF"],
+			id: "00000000000004C4",
 			tasks: [{
-				id: 1221,
+				id: "00000000000004C5",
 				type: "item",
 				item: "thermal:machine_press"
 			}],
 			rewards: [
 				{
-					id: 1270,
+					id: "00000000000004F6",
 					type: "item",
 					item: "thermal:press_gear_die"
 				},
 				{
-					id: 1675,
+					id: "000000000000068B",
 					type: "command",
 					title: "Epic Thermal Series Loot Box",
 					icon: "kubejs:epic_lootbox",
@@ -399,15 +400,15 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1199],
-			id: 1222,
+			dependencies: ["00000000000004AF"],
+			id: "00000000000004C6",
 			tasks: [{
-				id: 1223,
+				id: "00000000000004C7",
 				type: "item",
 				item: "thermal:machine_insolator"
 			}],
 			rewards: [{
-				id: 1269,
+				id: "00000000000004F5",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -426,15 +427,15 @@
 				"",
 				"Check the Thermalpedia for information on relevant upgrades."
 			],
-			dependencies: [I;1199],
-			id: 1224,
+			dependencies: ["00000000000004AF"],
+			id: "00000000000004C8",
 			tasks: [{
-				id: 1225,
+				id: "00000000000004C9",
 				type: "item",
 				item: "thermal:machine_crafter"
 			}],
 			rewards: [{
-				id: 1614,
+				id: "000000000000064E",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -446,16 +447,16 @@
 			x: 3.0d,
 			y: -0.5d,
 			description: ["A handheld 'explosive' that releases the charged energy of elemental Blitz, causing lightning to strike spontaneously."],
-			dependencies: [I;1245],
+			dependencies: ["00000000000004DD"],
 			dependency_requirement: "one_started",
-			id: 1226,
+			id: "00000000000004CA",
 			tasks: [{
-				id: 1244,
+				id: "00000000000004DC",
 				type: "item",
 				item: "thermal:lightning_grenade"
 			}],
 			rewards: [{
-				id: 1277,
+				id: "00000000000004FD",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -467,16 +468,16 @@
 			x: 1.0d,
 			y: -0.5d,
 			description: ["A handheld 'explosive' that releases the chilling power of elemental Blizz, freezing water and blanketing the area in snow."],
-			dependencies: [I;1245],
+			dependencies: ["00000000000004DD"],
 			dependency_requirement: "one_started",
-			id: 1228,
+			id: "00000000000004CC",
 			tasks: [{
-				id: 1243,
+				id: "00000000000004DB",
 				type: "item",
 				item: "thermal:ice_grenade"
 			}],
 			rewards: [{
-				id: 1278,
+				id: "00000000000004FE",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -488,16 +489,16 @@
 			x: 4.0d,
 			y: 0.0d,
 			description: ["A handheld 'explosive' that releases the latent power of elemental Basalz, causing the earth to shift and crack."],
-			dependencies: [I;1245],
+			dependencies: ["00000000000004DD"],
 			dependency_requirement: "one_started",
-			id: 1230,
+			id: "00000000000004CE",
 			tasks: [{
-				id: 1242,
+				id: "00000000000004DA",
 				type: "item",
 				item: "thermal:earth_grenade"
 			}],
 			rewards: [{
-				id: 1276,
+				id: "00000000000004FC",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -509,15 +510,15 @@
 			x: 0.0d,
 			y: 0.0d,
 			description: ["A handheld 'explosive' that releases the smoldering energy of elemental Blaze, lighting the surroundings on fire."],
-			dependencies: [I;1245],
-			id: 1239,
+			dependencies: ["00000000000004DD"],
+			id: "00000000000004D7",
 			tasks: [{
-				id: 1241,
+				id: "00000000000004D9",
 				type: "item",
 				item: "thermal:fire_grenade"
 			}],
 			rewards: [{
-				id: 1279,
+				id: "00000000000004FF",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -531,32 +532,32 @@
 			y: -1.0d,
 			subtitle: "Our Powers Combined",
 			description: ["Simple metallurgy can only go so far. At a certain point, more exotic materials are required. Seek out the elemental creatures that make their homes in the world's most extreme environments."],
-			dependencies: [I;931],
-			id: 1245,
+			dependencies: ["00000000000003A3"],
+			id: "00000000000004DD",
 			tasks: [
 				{
-					id: 1246,
+					id: "00000000000004DE",
 					type: "item",
 					item: "minecraft:blaze_rod"
 				},
 				{
-					id: 1247,
+					id: "00000000000004DF",
 					type: "item",
 					item: "thermal:blitz_rod"
 				},
 				{
-					id: 1248,
+					id: "00000000000004E0",
 					type: "item",
 					item: "thermal:blizz_rod"
 				},
 				{
-					id: 1249,
+					id: "00000000000004E1",
 					type: "item",
 					item: "thermal:basalz_rod"
 				}
 			],
 			rewards: [{
-				id: 1275,
+				id: "00000000000004FB",
 				type: "command",
 				title: "Epic Thermal Series Loot Box",
 				icon: "kubejs:epic_lootbox",
@@ -569,35 +570,35 @@
 			x: 3.0d,
 			y: 2.5d,
 			description: ["Better storage or faster discharge? Consider the application carefully when choosing between these augments. "],
-			dependencies: [I;931],
-			id: 1250,
+			dependencies: ["00000000000003A3"],
+			id: "00000000000004E2",
 			tasks: [{
-				id: 3926,
+				id: "0000000000000F56",
 				type: "item",
 				title: "RF Capacity/Upgrade Augments",
 				item: {
 					id: "itemfilters:or",
-					Count: true,
+					Count: 1b,
 					tag: {
 						items: [
 							{
 								id: "thermal:rf_coil_augment",
-								Count: true
+								Count: 1b
 							},
 							{
 								id: "thermal:rf_coil_storage_augment",
-								Count: true
+								Count: 1b
 							},
 							{
 								id: "thermal:rf_coil_xfer_augment",
-								Count: true
+								Count: 1b
 							}
 						]
 					}
 				}
 			}],
 			rewards: [{
-				id: 1274,
+				id: "00000000000004FA",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -614,18 +615,18 @@
 				"",
 				"More advanced versions will require more exotic materials."
 			],
-			dependencies: [I;
-				1200,
-				931
+			dependencies: [
+				"00000000000004B0",
+				"00000000000003A3"
 			],
-			id: 1254,
+			id: "00000000000004E6",
 			tasks: [{
-				id: 3981,
+				id: "0000000000000F8D",
 				type: "item",
 				item: "thermal:upgrade_augment_1"
 			}],
 			rewards: [{
-				id: 1272,
+				id: "00000000000004F8",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -642,31 +643,31 @@
 				"",
 				"Efficiency pays off when energy can be stored for future use, but sometimes a loss is required to keep up with a steady demand. "
 			],
-			dependencies: [I;931],
-			id: 3922,
+			dependencies: ["00000000000003A3"],
+			id: "0000000000000F52",
 			tasks: [{
-				id: 3929,
+				id: "0000000000000F59",
 				type: "item",
 				title: "Dynamo Augments",
 				item: {
 					id: "itemfilters:or",
-					Count: true,
+					Count: 1b,
 					tag: {
 						items: [
 							{
 								id: "thermal:dynamo_output_augment",
-								Count: true
+								Count: 1b
 							},
 							{
 								id: "thermal:dynamo_fuel_augment",
-								Count: true
+								Count: 1b
 							}
 						]
 					}
 				}
 			}],
 			rewards: [{
-				id: 3999,
+				id: "0000000000000F9F",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -683,15 +684,15 @@
 				"",
 				"Tap a Jungle Tree and begin extracting raw latex. There are no hard limits here. "
 			],
-			dependencies: [I;1189],
-			id: 3943,
+			dependencies: ["00000000000004A5"],
+			id: "0000000000000F67",
 			tasks: [{
-				id: 3944,
+				id: "0000000000000F68",
 				type: "item",
 				item: "thermal:latex_bucket"
 			}],
 			rewards: [{
-				id: 3978,
+				id: "0000000000000F8A",
 				type: "command",
 				icon: "kubejs:rare_lootbox",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
@@ -703,16 +704,16 @@
 			y: 3.5d,
 			subtitle: "Vulcanizing Bond",
 			description: ["Once smooth and supple, latex toughens through a process of vulcanization that makes it suitable for more industrial purposes. "],
-			dependencies: [I;3943],
-			id: 3945,
+			dependencies: ["0000000000000F67"],
+			id: "0000000000000F69",
 			tasks: [{
-				id: 3946,
+				id: "0000000000000F6A",
 				type: "item",
 				item: "thermal:cured_rubber",
 				count: 8L
 			}],
 			rewards: [{
-				id: 3979,
+				id: "0000000000000F8B",
 				type: "command",
 				icon: "kubejs:rare_lootbox",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
@@ -727,13 +728,13 @@
 				"",
 				"Gather some up and begin processing it through a Fractionating Still. With a bit of refining, it can be converted into an excellent fuel source."
 			],
-			dependencies: [I;
-				1192,
-				1191
+			dependencies: [
+				"00000000000004A8",
+				"00000000000004A7"
 			],
-			id: 3947,
+			id: "0000000000000F6B",
 			tasks: [{
-				id: 3948,
+				id: "0000000000000F6C",
 				type: "item",
 				title: "Crude Oil",
 				item: "pneumaticcraft:oil_bucket"
@@ -749,10 +750,10 @@
 				"Useful for a variety of purposes, its also the first step in creating a versatile and energy dense liquid fuel.  "
 			],
 			hide_dependency_lines: false,
-			dependencies: [I;1199],
-			id: 3960,
+			dependencies: ["00000000000004AF"],
+			id: "0000000000000F78",
 			tasks: [{
-				id: 3961,
+				id: "0000000000000F79",
 				type: "item",
 				item: "thermal:machine_centrifuge"
 			}]
@@ -762,20 +763,20 @@
 			y: 4.0d,
 			subtitle: "Can't Help But Feeling a Bit Sloshed",
 			description: ["Expandable, upgradable, portable. An excellent first choice for gathering liquids in the field.  "],
-			dependencies: [I;3945],
-			id: 3971,
+			dependencies: ["0000000000000F69"],
+			id: "0000000000000F83",
 			tasks: [{
-				id: 3972,
+				id: "0000000000000F84",
 				type: "item",
 				item: {
 					id: "thermal:fluid_cell",
-					Count: true,
+					Count: 1b,
 					tag: {
 						BlockEntityTag: {
 							TankInv: [{
 								FluidName: "minecraft:empty",
 								Capacity: 32000,
-								Tank: false,
+								Tank: 0b,
 								Amount: 0
 							}]
 						}
@@ -783,7 +784,7 @@
 				}
 			}],
 			rewards: [{
-				id: 3996,
+				id: "0000000000000F9C",
 				type: "item",
 				item: "thermal:fluid_tank_augment"
 			}]
@@ -796,14 +797,14 @@
 				"",
 				"Expandable, upgradable, portable. Perfect for a quick charge just about anywhere. "
 			],
-			dependencies: [I;3945],
-			id: 3973,
+			dependencies: ["0000000000000F69"],
+			id: "0000000000000F85",
 			tasks: [{
-				id: 3974,
+				id: "0000000000000F86",
 				type: "item",
 				item: {
 					id: "thermal:energy_cell",
-					Count: true,
+					Count: 1b,
 					tag: {
 						BlockEntityTag: {
 							EnergyMax: 1000000,
@@ -815,11 +816,11 @@
 				}
 			}],
 			rewards: [{
-				id: 3976,
+				id: "0000000000000F88",
 				type: "item",
 				item: {
 					id: "minecraft:enchanted_book",
-					Count: true,
+					Count: 1b,
 					tag: {
 						StoredEnchantments: [{
 							lvl: 4s,
@@ -837,15 +838,15 @@
 				"",
 				"The Auxiliary Process Sieve trades speed for extra materials in applicable machines."
 			],
-			dependencies: [I;931],
-			id: 3984,
+			dependencies: ["00000000000003A3"],
+			id: "0000000000000F90",
 			tasks: [{
-				id: 3985,
+				id: "0000000000000F91",
 				type: "item",
 				item: "thermal:machine_output_augment"
 			}],
 			rewards: [{
-				id: 4000,
+				id: "0000000000000FA0",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -857,15 +858,15 @@
 			x: 4.0d,
 			y: 2.0d,
 			description: ["Sometimes a job just needs to get done now and damn the costs. Flux Linkage Amplifiers greatly enhance the speed of machines though they reduce energy efficiency in turn. "],
-			dependencies: [I;931],
-			id: 3997,
+			dependencies: ["00000000000003A3"],
+			id: "0000000000000F9D",
 			tasks: [{
-				id: 3998,
+				id: "0000000000000F9E",
 				type: "item",
 				item: "thermal:machine_speed_augment"
 			}],
 			rewards: [{
-				id: 4001,
+				id: "0000000000000FA1",
 				type: "command",
 				title: "Rare Thermal Series Loot Box",
 				icon: "kubejs:rare_lootbox",

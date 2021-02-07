@@ -1,7 +1,8 @@
 {
-	id: 841,
+	id: "0000000000000349",
+	group: "",
+	order_index: 21,
 	filename: "rftools_wip",
-	order_index: 19,
 	title: "RFTools",
 	icon: "rftoolsbase:machine_frame",
 	default_quest_shape: "",
@@ -20,21 +21,21 @@
 				"",
 				"~Merlo"
 			],
-			id: 842,
+			id: "000000000000034A",
 			tasks: [{
-				id: 843,
+				id: "000000000000034B",
 				type: "checkmark",
 				title: "Intro",
 				icon: "rftoolsbase:smartwrench"
 			}],
 			rewards: [
 				{
-					id: 844,
+					id: "000000000000034C",
 					type: "item",
 					item: "rftoolsbase:manual"
 				},
 				{
-					id: 3072,
+					id: "0000000000000C00",
 					type: "item",
 					item: "rftoolsbase:smartwrench"
 				}
@@ -46,16 +47,16 @@
 			shape: "hexagon",
 			subtitle: "They framed me!",
 			description: ["Get familiar with this guy, it will be the basic block you will have to craft for every RFTools machine, just like his sister, the Machine Base, for the smaller devices. Better stock up on them!"],
-			dependencies: [I;842],
+			dependencies: ["000000000000034A"],
 			size: 1.5d,
-			id: 845,
+			id: "000000000000034D",
 			tasks: [{
-				id: 846,
+				id: "000000000000034E",
 				type: "item",
 				item: "rftoolsbase:machine_frame"
 			}],
 			rewards: [{
-				id: 3178,
+				id: "0000000000000C6A",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -69,16 +70,16 @@
 			shape: "hexagon",
 			subtitle: "Base after Base",
 			description: ["Get familiar with this girl, it will be the basic block you will have to craft for every RFTools device, just like her brother, the Machine Frame, for the bigger machines. Better go make a bunch!"],
-			dependencies: [I;842],
+			dependencies: ["000000000000034A"],
 			size: 1.5d,
-			id: 896,
+			id: "0000000000000380",
 			tasks: [{
-				id: 897,
+				id: "0000000000000381",
 				type: "item",
 				item: "rftoolsbase:machine_base"
 			}],
 			rewards: [{
-				id: 3177,
+				id: "0000000000000C69",
 				type: "command",
 				title: "Scavenger's Delight",
 				icon: "kubejs:scavengers_delight",
@@ -98,22 +99,22 @@
 				"",
 				"To then connect other blocks to the same channel frequency just take them and right click them on another transmitter or receiver that is already on that channel. Pretty sweet huh?"
 			],
-			dependencies: [I;896],
-			id: 898,
+			dependencies: ["0000000000000380"],
+			id: "0000000000000382",
 			tasks: [
 				{
-					id: 899,
+					id: "0000000000000383",
 					type: "item",
 					item: "rftoolsutility:redstone_transmitter"
 				},
 				{
-					id: 1390,
+					id: "000000000000056E",
 					type: "item",
 					item: "rftoolsutility:redstone_receiver"
 				}
 			],
 			rewards: [{
-				id: 3180,
+				id: "0000000000000C6C",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -129,15 +130,15 @@
 				"The inventory checker is a very unique device that can, as its name suggests, check for specific items in specific slots of any inventory it’s looking at. It can even work with tags! ",
 				"Its use cases might be a bit niche, but it will prove to be very useful in complex automation setups."
 			],
-			dependencies: [I;896],
-			id: 902,
+			dependencies: ["0000000000000380"],
+			id: "0000000000000386",
 			tasks: [{
-				id: 903,
+				id: "0000000000000387",
 				type: "item",
 				item: "rftoolsutility:invchecker"
 			}],
 			rewards: [{
-				id: 3179,
+				id: "0000000000000C6B",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -150,15 +151,15 @@
 			y: 3.0d,
 			subtitle: "Tick tock...",
 			description: ["This one is pretty easy, just a regular old redstone timer you can place down and manually program delays for. You can also reset it by giving it a redstone signal on its input (the one with the blue inwards V)."],
-			dependencies: [I;896],
-			id: 904,
+			dependencies: ["0000000000000380"],
+			id: "0000000000000388",
 			tasks: [{
-				id: 905,
+				id: "0000000000000389",
 				type: "item",
 				item: "rftoolsutility:timer"
 			}],
 			rewards: [{
-				id: 3176,
+				id: "0000000000000C68",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -176,15 +177,15 @@
 				"It takes three inputs, from the three different sides of the machine with blue arrows, and outputs a signal from the orange arrow’s side based on the configuration programmed inside of it.",
 				"You can check for any different combination of inputs (for example, two specific sides off and one on) and manually set the desired output."
 			],
-			dependencies: [I;896],
-			id: 906,
+			dependencies: ["0000000000000380"],
+			id: "000000000000038A",
 			tasks: [{
-				id: 907,
+				id: "000000000000038B",
 				type: "item",
 				item: "rftoolsutility:logic"
 			}],
 			rewards: [{
-				id: 3182,
+				id: "0000000000000C6E",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -201,15 +202,15 @@
 				"",
 				"You can also have different factors for the input calculations depending on the comparison of the A and B signals."
 			],
-			dependencies: [I;906],
-			id: 910,
+			dependencies: ["000000000000038A"],
+			id: "000000000000038E",
 			tasks: [{
-				id: 911,
+				id: "000000000000038F",
 				type: "item",
 				item: "rftoolsutility:analog"
 			}],
 			rewards: [{
-				id: 3183,
+				id: "0000000000000C6F",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -230,15 +231,15 @@
 				"",
 				"You can also customize how the sequence will trigger (by default it will only activate once, the first time the block receives an input signal. Check all the modes and cycle through them by clicking on the “Once1” button)."
 			],
-			dependencies: [I;910],
-			id: 912,
+			dependencies: ["000000000000038E"],
+			id: "0000000000000390",
 			tasks: [{
-				id: 913,
+				id: "0000000000000391",
 				type: "item",
 				item: "rftoolsutility:sequencer"
 			}],
 			rewards: [{
-				id: 3184,
+				id: "0000000000000C70",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -251,15 +252,15 @@
 			y: 4.5d,
 			subtitle: "This joke has been sensored...",
 			description: ["Just like its name implies, the sensor can be used to check for the presence of a number of blocks, items, entities and other things in different areas in front of it, giving out a redstone signal when the conditions are met. Pretty handy device!"],
-			dependencies: [I;896],
-			id: 914,
+			dependencies: ["0000000000000380"],
+			id: "0000000000000392",
 			tasks: [{
-				id: 915,
+				id: "0000000000000393",
 				type: "item",
 				item: "rftoolsutility:sensor"
 			}],
 			rewards: [{
-				id: 3181,
+				id: "0000000000000C6D",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -284,28 +285,28 @@
 				"",
 				"Choose which Receiver you want to be dialed to in the Dialing Device and you will see the Transmitter light up: step on it and woosh! Teleportation!"
 			],
-			dependencies: [I;845],
+			dependencies: ["000000000000034D"],
 			min_width: 300,
-			id: 916,
+			id: "0000000000000394",
 			tasks: [
 				{
-					id: 917,
+					id: "0000000000000395",
 					type: "item",
 					item: "rftoolsutility:matter_transmitter"
 				},
 				{
-					id: 918,
+					id: "0000000000000396",
 					type: "item",
 					item: "rftoolsutility:matter_receiver"
 				},
 				{
-					id: 3074,
+					id: "0000000000000C02",
 					type: "item",
 					item: "rftoolsutility:dialing_device"
 				}
 			],
 			rewards: [{
-				id: 3175,
+				id: "0000000000000C67",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -324,22 +325,22 @@
 				"",
 				"While the regular Porter can only store one Receiver, the Advanced one can have up to 8, and you can switch between them by shift right clicking it into the air. Try it out!"
 			],
-			dependencies: [I;916],
+			dependencies: ["0000000000000394"],
 			optional: true,
-			id: 921,
+			id: "0000000000000399",
 			tasks: [{
-				id: 922,
+				id: "000000000000039A",
 				type: "item",
 				item: {
 					id: "rftoolsutility:advanced_charged_porter",
-					Count: true,
+					Count: 1b,
 					tag: {
 						Damage: 0
 					}
 				}
 			}],
 			rewards: [{
-				id: 3185,
+				id: "0000000000000C71",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -353,16 +354,16 @@
 			y: 1.5d,
 			subtitle: "It's from a different world...",
 			description: ["Dimensional shards are the only raw resource introduced by RFTools, found in rare ores but also craftable with rare materials. You will need a bunch of these for crafting and to infuse all of your RFTools machines. Go gather a bunch!"],
-			dependencies: [I;842],
-			id: 923,
+			dependencies: ["000000000000034A"],
+			id: "000000000000039B",
 			tasks: [{
-				id: 924,
+				id: "000000000000039C",
 				type: "item",
 				item: "rftoolsbase:dimensionalshard",
 				count: 16L
 			}],
 			rewards: [{
-				id: 3173,
+				id: "0000000000000C65",
 				type: "command",
 				title: "Farmer's Delight",
 				icon: "kubejs:farmers_delight",
@@ -379,18 +380,18 @@
 				"",
 				"Take any of those machines, place them into the machine infuser with four stacks of dimensional shards and some power, and you’ll have successfully infused that machine, unlocking said bonus and powering up your machine!"
 			],
-			dependencies: [I;
-				923,
-				845
+			dependencies: [
+				"000000000000039B",
+				"000000000000034D"
 			],
-			id: 925,
+			id: "000000000000039D",
 			tasks: [{
-				id: 926,
+				id: "000000000000039E",
 				type: "item",
 				item: "rftoolsbase:machine_infuser"
 			}],
 			rewards: [{
-				id: 3198,
+				id: "0000000000000C7E",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -410,22 +411,22 @@
 				"",
 				"They come in different tiers, and the only real difference between them is the number of recipes they’re able to remember, with 8 being the max amount on the highest tier."
 			],
-			dependencies: [I;845],
-			id: 927,
+			dependencies: ["000000000000034D"],
+			id: "000000000000039F",
 			tasks: [{
-				id: 928,
+				id: "00000000000003A0",
 				type: "item",
 				title: "Crafter",
 				item: {
 					id: "itemfilters:tag",
-					Count: true,
+					Count: 1b,
 					tag: {
 						value: "rftools:crafter"
 					}
 				}
 			}],
 			rewards: [{
-				id: 3190,
+				id: "0000000000000C76",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -450,16 +451,16 @@
 				"",
 				"Quick tip, clicking the lifebuoy icon in the builder will activate preview mode, and you’ll be able to see an outline of the area you’re working with."
 			],
-			dependencies: [I;845],
+			dependencies: ["000000000000034D"],
 			min_width: 300,
-			id: 1371,
+			id: "000000000000055B",
 			tasks: [{
-				id: 1372,
+				id: "000000000000055C",
 				type: "item",
 				item: "rftoolsbuilder:builder"
 			}],
 			rewards: [{
-				id: 3189,
+				id: "0000000000000C75",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -479,16 +480,16 @@
 				"",
 				"The Clearing cards will also actually dig the block and leave a hole in the world, while the normal Quarry cards will replace what they dig with Dirt. You can also Configure the Card to void certain blocks, like stones or dirt."
 			],
-			dependencies: [I;1371],
+			dependencies: ["000000000000055B"],
 			optional: true,
-			id: 1373,
+			id: "000000000000055D",
 			tasks: [{
-				id: 1374,
+				id: "000000000000055E",
 				type: "item",
 				item: "rftoolsbuilder:shape_card_quarry"
 			}],
 			rewards: [{
-				id: 3195,
+				id: "0000000000000C7B",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -502,16 +503,16 @@
 			shape: "diamond",
 			subtitle: "For all your building needs",
 			description: ["This is the default Shape Card for the Builder. If you use this one, the Builder will place blocks from its inventory in the selected area."],
-			dependencies: [I;1371],
+			dependencies: ["000000000000055B"],
 			optional: true,
-			id: 1375,
+			id: "000000000000055F",
 			tasks: [{
-				id: 1376,
+				id: "0000000000000560",
 				type: "item",
 				item: "rftoolsbuilder:shape_card_def"
 			}],
 			rewards: [{
-				id: 3196,
+				id: "0000000000000C7C",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -525,16 +526,16 @@
 			shape: "diamond",
 			subtitle: "For all your fluid needs",
 			description: ["The various pump cards will pump up liquids from the selected area, so you’ll need some sort of tank above or below the builder. There’s also one for placing fluids!"],
-			dependencies: [I;1371],
+			dependencies: ["000000000000055B"],
 			optional: true,
-			id: 1377,
+			id: "0000000000000561",
 			tasks: [{
-				id: 3067,
+				id: "0000000000000BFB",
 				type: "item",
 				item: "rftoolsbuilder:shape_card_pump"
 			}],
 			rewards: [{
-				id: 3197,
+				id: "0000000000000C7D",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -553,21 +554,21 @@
 				"",
 				"The items are also stored in the Module itself, so you can easily take it out, move it to another Modular Storage and transfer all your items there."
 			],
-			dependencies: [I;845],
-			id: 1379,
+			dependencies: ["000000000000034D"],
+			id: "0000000000000563",
 			tasks: [{
-				id: 1380,
+				id: "0000000000000564",
 				type: "item",
 				item: "rftoolsstorage:modular_storage"
 			}],
 			rewards: [
 				{
-					id: 3071,
+					id: "0000000000000BFF",
 					type: "item",
 					item: "rftoolsstorage:storage_module0"
 				},
 				{
-					id: 3191,
+					id: "0000000000000C77",
 					type: "command",
 					title: "Scavenger's Delight",
 					icon: "kubejs:scavengers_delight",
@@ -583,16 +584,16 @@
 			shape: "diamond",
 			subtitle: "Too Many Items!",
 			description: ["Tier up the Storage Module ladder and get up to tier 4, which will be able to store up to 500 stacks of items in a single module! That’s a lot of items, huh?"],
-			dependencies: [I;1379],
+			dependencies: ["0000000000000563"],
 			optional: true,
-			id: 1381,
+			id: "0000000000000565",
 			tasks: [{
-				id: 1382,
+				id: "0000000000000566",
 				type: "item",
 				item: "rftoolsstorage:storage_module3"
 			}],
 			rewards: [{
-				id: 3193,
+				id: "0000000000000C79",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -613,32 +614,32 @@
 				"",
 				"If you’re interested in getting familiar with control, this is the best place to start: https://www.youtube.com/watch?v=18-R5L-CATg."
 			],
-			dependencies: [I;845],
-			id: 1383,
+			dependencies: ["000000000000034D"],
+			id: "0000000000000567",
 			tasks: [
 				{
-					id: 1384,
+					id: "0000000000000568",
 					type: "item",
 					item: "rftoolscontrol:processor"
 				},
 				{
-					id: 1387,
+					id: "000000000000056B",
 					type: "item",
 					item: "rftoolscontrol:programmer"
 				},
 				{
-					id: 1388,
+					id: "000000000000056C",
 					type: "item",
 					item: "rftoolscontrol:workbench"
 				},
 				{
-					id: 1389,
+					id: "000000000000056D",
 					type: "item",
 					item: "rftoolscontrol:program_card"
 				}
 			],
 			rewards: [{
-				id: 3186,
+				id: "0000000000000C72",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -661,24 +662,24 @@
 				"",
 				" It will take some getting used to, but for the more complex automation setups XNet will always be your best friend."
 			],
-			dependencies: [I;842],
+			dependencies: ["000000000000034A"],
 			size: 1.5d,
 			min_width: 300,
-			id: 1393,
+			id: "0000000000000571",
 			tasks: [{
-				id: 1394,
+				id: "0000000000000572",
 				type: "item",
 				item: "xnet:controller"
 			}],
 			rewards: [
 				{
-					id: 3075,
+					id: "0000000000000C03",
 					type: "item",
 					item: "xnet:netcable_blue",
 					count: 32
 				},
 				{
-					id: 3076,
+					id: "0000000000000C04",
 					type: "item",
 					item: "xnet:connector_blue",
 					count: 4
@@ -692,15 +693,15 @@
 			shape: "diamond",
 			subtitle: "Even fancier!",
 			description: ["Advanced connectors can give you extra functionality, like faster speed or access to any side of a machine."],
-			dependencies: [I;1393],
-			id: 1400,
+			dependencies: ["0000000000000571"],
+			id: "0000000000000578",
 			tasks: [{
-				id: 1401,
+				id: "0000000000000579",
 				type: "item",
 				item: "xnet:connector_upgrade"
 			}],
 			rewards: [{
-				id: 3174,
+				id: "0000000000000C66",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -717,15 +718,15 @@
 				"",
 				"So, say you have a wall of chests? A Storage Scanner can easily connect to all of them and show you everything in a single place. It even works with Modular Storages!"
 			],
-			dependencies: [I;1379],
-			id: 3060,
+			dependencies: ["0000000000000563"],
+			id: "0000000000000BF4",
 			tasks: [{
-				id: 3061,
+				id: "0000000000000BF5",
 				type: "item",
 				item: "rftoolsstorage:storage_scanner"
 			}],
 			rewards: [{
-				id: 3192,
+				id: "0000000000000C78",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -743,15 +744,15 @@
 				"",
 				"You can then right click the multiblock with a smart wrench to create input (blue) and output (orange) points, from which you can then start inserting or taking power."
 			],
-			dependencies: [I;845],
-			id: 3062,
+			dependencies: ["000000000000034D"],
+			id: "0000000000000BF6",
 			tasks: [{
-				id: 3063,
+				id: "0000000000000BF7",
 				type: "item",
 				item: "rftoolspower:cell1"
 			}],
 			rewards: [{
-				id: 3187,
+				id: "0000000000000C73",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -776,31 +777,31 @@
 				"",
 				"Now you can go around, place other Dimensional Cells wherever you want in the world, and placing the Card linked to the channel x in the upper left slot will link the new cells to the original one sharing its power buffer and acting like a multiblock"
 			],
-			dependencies: [I;845],
+			dependencies: ["000000000000034D"],
 			dependency_requirement: "one_completed",
 			min_width: 300,
-			id: 3064,
+			id: "0000000000000BF8",
 			tasks: [
 				{
-					id: 3065,
+					id: "0000000000000BF9",
 					type: "item",
 					title: "Dimensional Cell",
 					item: {
 						id: "itemfilters:tag",
-						Count: true,
+						Count: 1b,
 						tag: {
 							value: "rftools:dimensionalcell"
 						}
 					}
 				},
 				{
-					id: 3066,
+					id: "0000000000000BFA",
 					type: "item",
 					item: "rftoolspower:powercell_card"
 				}
 			],
 			rewards: [{
-				id: 3188,
+				id: "0000000000000C74",
 				type: "command",
 				title: "Rare RFTools Loot Box",
 				icon: "kubejs:rare_lootbox",
@@ -818,28 +819,28 @@
 				"",
 				"For example, bind the Storage Control Module you will get from this quest to your Storage Scanner by right clicking it, and as long as the Storage Scanner is chunkloaded you will be able to access it from anywhere in the world!"
 			],
-			dependencies: [I;3060],
+			dependencies: ["0000000000000BF4"],
 			optional: true,
-			id: 3068,
+			id: "0000000000000BFC",
 			tasks: [{
-				id: 3069,
+				id: "0000000000000BFD",
 				type: "item",
 				item: "rftoolsbase:tablet"
 			}],
 			rewards: [
 				{
-					id: 3070,
+					id: "0000000000000BFE",
 					type: "item",
 					item: {
 						id: "rftoolsstorage:storage_control_module",
-						Count: true,
+						Count: 1b,
 						tag: {
 							Damage: 0
 						}
 					}
 				},
 				{
-					id: 3194,
+					id: "0000000000000C7A",
 					type: "command",
 					title: "Rare RFTools Loot Box",
 					icon: "kubejs:rare_lootbox",
@@ -860,16 +861,16 @@
 				"",
 				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
 			],
-			dependencies: [I;1393],
+			dependencies: ["0000000000000571"],
 			optional: true,
-			id: 3092,
+			id: "0000000000000C14",
 			tasks: [{
-				id: 3093,
+				id: "0000000000000C15",
 				type: "checkmark",
 				title: "Xnet tutorial link"
 			}],
 			rewards: [{
-				id: 3094,
+				id: "0000000000000C16",
 				type: "command",
 				title: "XNet Tutorial Link",
 				icon: "pneumaticcraft:tag_filter",
@@ -887,17 +888,17 @@
 				"",
 				"Unfortunately repeatable quests aren't yet implemented so the command will only run once, so be sure to save the link somewhere!"
 			],
-			dependencies: [I;1383],
+			dependencies: ["0000000000000567"],
 			optional: true,
-			id: 3098,
+			id: "0000000000000C1A",
 			tasks: [{
-				id: 3099,
+				id: "0000000000000C1B",
 				type: "checkmark",
 				title: "RFTools Control Tutorial Link",
 				icon: "rftoolscontrol:advanced_network_card"
 			}],
 			rewards: [{
-				id: 3100,
+				id: "0000000000000C1C",
 				type: "command",
 				title: "RFTools Control Tutorial Link",
 				icon: "pneumaticcraft:tag_filter",

@@ -1,7 +1,8 @@
 {
-	id: 808,
+	id: "0000000000000328",
+	group: "",
+	order_index: 3,
 	filename: "hidden_quests",
-	order_index: 0,
 	title: "Hidden_Quests",
 	icon: "minecraft:experience_bottle",
 	always_invisible: true,
@@ -12,9 +13,9 @@
 			x: -10.0d,
 			y: -8.0d,
 			description: ["Visit The End"],
-			id: 809,
+			id: "0000000000000329",
 			tasks: [{
-				id: 810,
+				id: "000000000000032A",
 				type: "dimension",
 				dimension: "minecraft:the_end"
 			}]
@@ -22,9 +23,9 @@
 		{
 			x: -8.5d,
 			y: -8.0d,
-			id: 1132,
+			id: "000000000000046C",
 			tasks: [{
-				id: 1133,
+				id: "000000000000046D",
 				type: "advancement",
 				icon: "minecraft:diamond",
 				advancement: "minecraft:story/mine_diamond",
@@ -34,9 +35,9 @@
 		{
 			x: -7.0d,
 			y: -8.0d,
-			id: 1134,
+			id: "000000000000046E",
 			tasks: [{
-				id: 1135,
+				id: "000000000000046F",
 				type: "advancement",
 				advancement: "minecraft:story/smelt_iron",
 				criterion: ""
@@ -45,9 +46,9 @@
 		{
 			x: -5.5d,
 			y: -8.0d,
-			id: 1203,
+			id: "00000000000004B3",
 			tasks: [{
-				id: 1204,
+				id: "00000000000004B4",
 				type: "item",
 				item: "aquaculture:neptunes_bounty"
 			}]
@@ -55,9 +56,9 @@
 		{
 			x: -10.0d,
 			y: -6.5d,
-			id: 2134,
+			id: "0000000000000856",
 			tasks: [{
-				id: 2135,
+				id: "0000000000000857",
 				type: "advancement",
 				advancement: "tetra:spelunking/ancient_ruins",
 				criterion: ""
@@ -71,14 +72,14 @@
 				"",
 				"Do not delete before that's the case"
 			],
-			id: 3384,
+			id: "0000000000000D38",
 			tasks: [{
-				id: 3385,
+				id: "0000000000000D39",
 				type: "checkmark",
 				title: "PowahChallengeTMP",
 				icon: {
 					id: "powah:battery_nitro",
-					Count: true,
+					Count: 1b,
 					tag: {}
 				}
 			}]
@@ -87,9 +88,9 @@
 			title: "Hidden quest that hides the Expert Mode quest in main",
 			x: -7.0d,
 			y: -6.5d,
-			id: 4075,
+			id: "0000000000000FEB",
 			tasks: [{
-				id: 4076,
+				id: "0000000000000FEC",
 				type: "gamestage",
 				stage: "impossible"
 			}]
