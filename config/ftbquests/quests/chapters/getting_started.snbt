@@ -1,7 +1,7 @@
 {
 	id: 68,
 	filename: "getting_started",
-	order_index: 6,
+	order_index: 5,
 	title: "Getting Started",
 	icon: "minecraft:nether_star",
 	default_quest_shape: "",
@@ -50,7 +50,8 @@
 				"",
 				"It currently has the following chapters:",
 				"- Tools",
-				"- Storage"
+				"- Storage",
+				"- Adventure"
 			],
 			dependencies: [I;69],
 			id: 684,
@@ -146,6 +147,28 @@
 						"patchouli:book": "patchouli:modded_for_dummies"
 					}
 				}
+			}]
+		},
+		{
+			title: "Expert Mode",
+			x: 2.5d,
+			y: -5.0d,
+			description: [
+				"Enigmatica has two modes: Normal and Expert",
+				"",
+				'You can toggle between them using the commands "/mode normal" and "/mode expert"',
+				"",
+				"This will trigger a reload which changes configs and recipes.",
+				"",
+				"A few config changes require a full restart to take effect, but in most cases there's no need to restart now, as those changes will load when you launch the game next time."
+			],
+			dependencies: [I;4075],
+			hide: true,
+			id: 4073,
+			tasks: [{
+				id: 4074,
+				type: "item",
+				item: "mekanism:robit"
 			}]
 		}
 	]

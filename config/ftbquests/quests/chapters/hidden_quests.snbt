@@ -1,7 +1,7 @@
 {
 	id: 808,
 	filename: "hidden_quests",
-	order_index: 5,
+	order_index: 0,
 	title: "Hidden_Quests",
 	icon: "minecraft:experience_bottle",
 	always_invisible: true,
@@ -81,6 +81,17 @@
 					Count: true,
 					tag: {}
 				}
+			}]
+		},
+		{
+			title: "Hidden quest that hides the Expert Mode quest in main",
+			x: -7.0d,
+			y: -6.5d,
+			id: 4075,
+			tasks: [{
+				id: 4076,
+				type: "gamestage",
+				stage: "impossible"
 			}]
 		}
 	]
