@@ -95,7 +95,7 @@
 		#The maximum offset in blocks a directional connector can look for its target.
 		maxDirectionalConnectorOffset = 512
 		#Priority list of mod id's when determining tag-based recipe outputs.
-		recipeTagOutputModPriorities = ["emendatusenigmatica", "minecraft", "immersiveengineering", "thermal", "create", "mekanism", "jaopca", "kubejs", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
+		recipeTagOutputModPriorities = ["emendatusenigmatica", "minecraft", "immersiveengineering", "thermal", "create", "mekanism", "jaopca", "kubejs", "pneumaticcraft", "occultism", "industrialforegoing", "botania", "quark", "pedestals"]
 		#The default update frequency in ticks to use for new parts.
 		defaultPartUpdateFreq = 1
 		#The NBT tags that are not allowed to be read by displaying NBT tags or performing operations on them.
@@ -153,7 +153,7 @@
 
 	[item.on_the_dynamics_of_integration]
 		#If the info book should automatically obtained when the player first spawns.
-		obtainOnSpawn = true
+		obtainOnSpawn = false
 		#If the info book can give item rewards for tutorial completion.
 		bookRewards = true
 
