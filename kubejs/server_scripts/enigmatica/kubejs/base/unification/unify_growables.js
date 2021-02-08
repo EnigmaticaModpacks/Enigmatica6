@@ -349,14 +349,22 @@ function crops_immersiveengineering_cloche(event, type, crop) {
     var input = crop.seed,
         outputs = [item.of(crop.plant, primaryCount)];
 
+    if (type.includes('crop_')) {
+        //add seeds to crop type output
+        outputs.push(item.of(crop.seed, secondaryCount));
+        renderType = 'crop';
+    }
+
     if (crop.plant.includes('kenaf') || crop.plant.includes('hemp')) {
         //override render type
         renderType = 'hemp';
     }
 
-    if (type.includes('crop_')) {
-        //add seeds to crop type output
-        outputs.push(item.of(crop.seed, secondaryCount));
+    if (type == 'crop_gourd' || crop.plant == 'minecraft:melon') {
+        renderType = 'stem';
+    }
+
+    if (crop.plant == 'simplefarming:zucchini' || crop.plant == 'simplefarming:squash_block') {
         renderType = 'crop';
     }
 

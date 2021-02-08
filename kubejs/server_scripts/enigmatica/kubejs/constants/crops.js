@@ -330,7 +330,7 @@ const cropRegistry = [
         crops: [
             {
                 seed: 'farmersdelight:cabbage_seeds',
-                render: 'farmersdelight:wild_cabbages',
+                render: 'farmersdelight:cabbages',
                 plant: 'farmersdelight:cabbage',
                 substrate: 'dirt'
             },
@@ -518,7 +518,7 @@ const cropRegistry = [
         crops: [
             {
                 seed: 'farmersdelight:tomato_seeds',
-                render: 'farmersdelight:wild_tomatoes',
+                render: 'farmersdelight:tomatoes',
                 plant: 'farmersdelight:tomato',
                 substrate: 'dirt'
             },
@@ -1069,8 +1069,8 @@ const cropRegistry = [
                 substrate: 'soul_sand'
             },
             {
-                seed: 'undergarden:ditchbulb',
-                render: 'undergarden:ditchbulb',
+                seed: 'undergarden:ditchbulb_plant',
+                render: 'undergarden:ditchbulb_plant',
                 plant: 'undergarden:ditchbulb',
                 substrate: 'deepturf'
             },
