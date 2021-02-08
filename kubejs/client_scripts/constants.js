@@ -172,6 +172,7 @@ var regexHide = [
     /minecraft:\w+_ore/,
     /immersiveengineering:plate_/,
     /immersiveengineering:stick_/,
+    /immersiveengineering:storage_/,
     /immersiveengineering:ore_/,
     /create:\w+_sheet/,
     /create:\w+_nugget/,
@@ -185,8 +186,7 @@ var regexHide = [
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
     /mapperbase:steel/,
-    /rftoolsbase:dimensionalshard/,
-    /powah:\w+_starter/
+    /rftoolsbase:dimensionalshard/
 ];
 
 const disabledItems = [
