@@ -413,4 +413,77 @@ events.listen('recipes', function (event) {
             A: wood.plankBlock
         });
     });
+
+    powahTiers.forEach(function (tier) {
+        var capacitor = 'powah:capacitor_' + tier,
+            crystal = 'powah:crystal_' + tier;
+
+        if (tier == 'basic' || tier == 'starter') {
+            return;
+        } else if (tier == 'hardened') {
+            crystal = 'powah:steel_energized';
+        }
+
+        event.shaped(Item.of('powah:energy_cell_' + tier), ['ABA', 'BCB', 'ABA'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:energy_cell'
+        });
+
+        event.shaped(Item.of('powah:ender_cell_' + tier), [' A ', 'ABA', ' A '], {
+            A: crystal,
+            B: '#powah:ender_cell'
+        });
+
+        event.shaped(Item.of('powah:energizing_rod_' + tier), ['   ', 'ACA', ' B '], {
+            A: capacitor,
+            B: 'powah:energy_cable_' + tier,
+            C: '#powah:energizing_rod'
+        });
+
+        event.shaped(Item.of('powah:furnator_' + tier), ['AAA', 'BCB', 'A A'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:furnator'
+        });
+
+        event.shaped(Item.of('powah:magmator_' + tier), ['AAA', 'BCB', 'A A'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:magmator'
+        });
+
+        event.shaped(Item.of('powah:thermo_generator_' + tier), [' A ', 'BCB'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:thermo_generator'
+        });
+
+        event.shaped(Item.of('powah:solar_panel_' + tier), ['BCB', 'AAA'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:solar_panel'
+        });
+
+        event.shaped(Item.of('powah:reactor_' + tier), [' A ', 'ABA', ' A '], {
+            A: capacitor,
+            B: '#powah:reactor'
+        });
+
+        event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
+            A: capacitor,
+            B: '#powah:energy_hopper'
+        });
+
+        event.shaped(Item.of('powah:energy_discharger_' + tier), [' A ', ' B ', ' A '], {
+            A: capacitor,
+            B: '#powah:energy_discharger'
+        });
+
+        event.shaped(Item.of('powah:battery_' + tier), [' A ', 'BCB', ' B '], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:battery'
+        });
+    });
 });
