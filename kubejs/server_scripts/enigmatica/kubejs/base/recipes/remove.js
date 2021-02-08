@@ -5,8 +5,6 @@ events.listen('recipes', function (event) {
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
-        'additionalbars:crossed_iron_bars',
-
         'bambooeverything:bamboo_bundle',
 
         'byg:blue_enchanted_crafting_table',
@@ -59,6 +57,9 @@ events.listen('recipes', function (event) {
 
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
+
+        'fluxnetworks:fluxcontroller',
+        'fluxnetworks:fluxcore',
 
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
