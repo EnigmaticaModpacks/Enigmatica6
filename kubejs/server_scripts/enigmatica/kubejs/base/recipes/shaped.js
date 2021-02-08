@@ -351,7 +351,8 @@ events.listen('recipes', function (event) {
                     refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
-                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 }
+                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
+                    integratedtunnels: {id: 'integrateddynamics:wrench', Count: 1}
                 }
             }),
             ['ABA', 'CFD', 'AEA'],
@@ -376,7 +377,7 @@ events.listen('recipes', function (event) {
             A: '#forge:wax',
             B: '#forge:string'
         }),
-        shapedRecipe(item.of('byg:embur_hyphae', 3), ['AA ', 'AA '], {
+        shapedRecipe(item.of('byg:embur_hyphae', 3), ['AA', 'AA'], {
             A: 'byg:embur_pedu'
         }),
         shapedRecipe(item.of('fluxnetworks:flux_controller', 1), ['ABA', 'CDC', 'AAA'], {
