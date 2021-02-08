@@ -126,6 +126,7 @@ var itemsToHide = [
     'quark:biotite',
     'quark:biotite_ore',
     'quark:tallow',
+    'refinedstorage:silicon',
     'thermal:coal_coke',
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
