@@ -29,12 +29,12 @@ lens_of_ender = true
 	#List of coolant fluids used in the Reactor and the Thermo Generator.
 	#Fluid registry name = cooling per mb, eg: ["minecraft:water=1", "examplemod:fluid=-1"]
 	#Less number more cold, min = -100, max = 1
-	coolantFluids = ["minecraft:water=1"]
+	coolantFluids = ["minecraft:water=1", "resourcefulbees:icy_honey=-9", "industrialforegoing:ether_gas=-69"]
 	#
 	#List of heat source blocks used under Thermo Generator.
 	#Block registry name = heat, eg: ["minecraft:lava=1000", "minecraft:magma_block=800"]
 	#Min = 1, max = 900000000
-	heatSources = ["minecraft:lava=1000", "minecraft:magma_block=1200", "minecraft:fire_coral=1800", "powah:nitro_crystal_block=8000", "powah:blazing_crystal_block=2800", "botania:blaze_block=1600", "botania:blaze_lantern=1600", "quark:brimstone=1200"]
+	heatSources = ["minecraft:lava=1000", "minecraft:magma_block=1200", "quark:brimstone=1200", "botania:blaze_block=1400", "botania:blaze_lantern=1400", "minecraft:fire_coral=1500", "powah:blazing_crystal_block=1600", "powah:nitro_crystal_block=2200"]
 	#Energy per solid fuel tick. [default: 30]
 	#Eg: Coal has 1600 fuel tick, so will generate 48000 FE.
 	#Range: 1 ~ 1000000
