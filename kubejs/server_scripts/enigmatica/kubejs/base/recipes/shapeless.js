@@ -165,4 +165,8 @@ events.listen('recipes', (event) => {
             event.shapeless(recipe.result, recipe.ingredients);
         }
     });
+
+    powahTiers.forEach(function (tier) {
+        event.shapeless('powah:reactor_' + tier, 'powah:reactor_' + tier);
+    });
 });

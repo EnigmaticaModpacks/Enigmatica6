@@ -87,7 +87,7 @@ events.listen('recipes', function (event) {
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore',
         'powah:crafting/energy_cell_basic_2',
-        'powah:energy_cable_basic'
+        'powah:crafting/cable_basic'
     ];
 
     outputRemovals.forEach((removal) => {
