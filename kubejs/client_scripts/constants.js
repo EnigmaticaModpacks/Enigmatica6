@@ -103,6 +103,7 @@ const colors = [
 var itemsToHide = [
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
+    'ars_nouveau:mana_gem_block',
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
@@ -186,6 +187,8 @@ var regexHide = [
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
     /mapperbase:steel/,
+    /mapperbase:\w+_block/,
+
     /rftoolsbase:dimensionalshard/
 ];
 
