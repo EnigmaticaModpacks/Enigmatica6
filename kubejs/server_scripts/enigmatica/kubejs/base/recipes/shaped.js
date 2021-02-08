@@ -351,7 +351,8 @@ events.listen('recipes', function (event) {
                     refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
-                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 }
+                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
+                    integratedtunnels: {id: 'integrateddynamics:wrench', Count: 1}
                 }
             }),
             ['ABA', 'CFD', 'AEA'],
