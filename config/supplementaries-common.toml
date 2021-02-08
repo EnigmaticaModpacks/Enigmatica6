@@ -27,8 +27,6 @@
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
 		range = 5
-		#additional blocks that will be ticked by bellows
-		whitelist = []
 
 	[blocks.spring_launcher]
 		#spring launcher launch speed
@@ -88,17 +86,13 @@
 		#makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = true
 
-	[blocks.sign_post]
-		#additional blocks besides fences that can accept a sign post
-		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
-
 	[blocks.globe]
-		#how many gobe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
+		#how many globe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
 		#Range: 0 ~ 50
 		trades = 2
-		#chanche of finding a globe in a shipwreck treasure chest. default is 20%
-		#Range: 0 ~ 100
-		treasure_chance = 20
+		#chanche of finding a globe in a shipwreck treasure chest.
+		#Range: 0.0 ~ 1.0
+		shipwreck_treasure_chance = 0.25
 
 #Configure spawning conditions
 [spawns]
@@ -176,4 +170,8 @@
 		#max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
+
+[comment]
+	#This config is synced server side. If you are on a server you'll get its own version
+	comment = true
 
