@@ -12,6 +12,7 @@ $CLIENT_MODS = @(
 )
 
 $CONFIGS_TO_REMOVE = @(
+	"betterendforge/client-config.toml",
 	"jei/bookmarks.ini",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
