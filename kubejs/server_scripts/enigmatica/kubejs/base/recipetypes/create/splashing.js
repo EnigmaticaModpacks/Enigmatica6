@@ -2,12 +2,16 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
-                output: 'buildinggadgets:construction_block_dense',
+                outputs: ['buildinggadgets:construction_block_dense'],
                 input: 'buildinggadgets:construction_block_powder'
+            },
+            {
+                outputs: [item.of('emendatusenigmatica:silicon_gem').chance(0.5), item.of('emendatusenigmatica:silicon_gem').chance(0.25)],
+                input: 'create:limesand'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.create.splashing(recipe.output, recipe.input);
+        event.recipes.create.splashing(recipe.outputs, recipe.input);
     });
 });
