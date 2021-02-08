@@ -172,6 +172,9 @@ events.listen('recipes', (event) => {
     });
 
     materialsToUnify.forEach((material) => {
-        event.shapeless(`emendatusenigmatica:${material}_ore`, `#forge:ores/${material}`);
+        var ore = item.of(`emendatusenigmatica:${material}_ore`);
+        if (ore.exists) {
+            event.shapeless(ore, `#forge:ores/${material}`);
+        }
     });
 });
