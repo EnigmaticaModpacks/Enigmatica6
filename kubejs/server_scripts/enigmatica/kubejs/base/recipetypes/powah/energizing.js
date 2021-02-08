@@ -1,91 +1,98 @@
 events.listen('recipes', function (event) {
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [
-            { item: 'mekanism:energy_tablet' },
-            { item: 'powah:capacitor_blazing' },
-            { item: 'powah:capacitor_blazing' }
-        ],
-        energy: 250000,
-        result: {
-            item: 'tetra:magmatic_cell',
-            count: 1
-        }
-    });
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [{ tag: 'forge:ingots/uranium' }],
-        energy: 5000,
-        result: {
-            item: 'powah:uraninite',
-            count: 1
-        }
-    });
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [{ tag: 'forge:ingots/uranium' }, { tag: 'forge:ingots/uranium' }],
-        energy: 10000,
-        result: {
-            item: 'powah:uraninite',
-            count: 2
-        }
-    });
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' }
-        ],
-        energy: 15000,
-        result: {
-            item: 'powah:uraninite',
-            count: 3
-        }
-    });
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' }
-        ],
-        energy: 20000,
-        result: {
-            item: 'powah:uraninite',
-            count: 4
-        }
-    });
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' }
-        ],
-        energy: 25000,
-        result: {
-            item: 'powah:uraninite',
-            count: 5
-        }
-    });
-    event.recipes.powah.energizing({
-        type: 'powah.energizing',
-        ingredients: [
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' },
-            { tag: 'forge:ingots/uranium' }
-        ],
-        energy: 30000,
-        result: {
-            item: 'powah:uraninite',
-            count: 6
-        }
-    });
+    const data = {
+        recipes: [
+            {
+                ingredients: [
+                    { item: 'mekanism:energy_tablet' },
+                    { item: 'powah:capacitor_blazing' },
+                    { item: 'powah:capacitor_blazing' }
+                ],
+                energy: 250000,
+                result: {
+                    item: 'tetra:magmatic_cell',
+                    count: 1
+                }
+            },
+            {
+                ingredients: [
+                    { tag: 'forge:storage_blocks/iron' },
+                    { tag: 'forge:storage_blocks/gold' }
+                ],
+                energy: 100000,
+                result: {
+                    item: 'powah:energized_steel_block',
+                    count: 2
+                }
+            },
+            {
+                ingredients: [
+                    { item: 'botania:blaze_block' }
+                ],
+                energy: 900000,
+                result: {
+                    item: 'powah:blazing_crystal_block',
+                    count: 1
+                }
+            },
+            {
+                ingredients: [
+                    { tag: 'forge:storage_blocks/diamond' }
+                ],
+                energy: 3000000,
+                result: {
+                    item: 'powah:niotic_crystal_block',
+                    count: 1
+                }
+            },
+            {
+                ingredients: [
+                    { tag: 'forge:storage_blocks/emerald' }
+                ],
+                energy: 10000000,
+                result: {
+                    item: 'powah:spirited_crystal_block',
+                    count: 1
+                }
+            }
+        ]
+    }
+    
+    data.recipes.forEach((recipe) => {
+        event.custom({
+            type: 'powah:energizing',
+            ingredients: recipe.ingredients,
+            energy: recipe.energy,
+            result: recipe.result
+        })
+    })
+
+    var ingots = [{ tag: 'forge:ingots/uranium' }];
+    var blocks = [{ tag: 'forge:storage_blocks/uranium' }];
+    var ingotvalues = [5000, 10000, 15000, 20000, 25000, 30000];
+    var blockvalues = [45000, 90000, 135000, 180000, 225000, 270000]
+
+    for(i = 1; i <= 6; i++) {
+        
+        event.custom({
+            type: 'powah:energizing',
+            ingredients: ingots,
+            energy: ingotvalues[i-1],
+            result: {
+                item: 'powah:uraninite',
+                count: i
+            }
+        })
+        ingots.push({ tag: 'forge:ingots/uranium' });
+
+        event.custom({
+            type: 'powah:energizing',
+            ingredients: blocks,
+            energy: blockvalues[i-1],
+            result: {
+                item: 'powah:uraninite_block',
+                count: i
+            }
+        })
+        blocks.push({ tag: 'forge:storage_blocks/uranium' });
+    }
 });

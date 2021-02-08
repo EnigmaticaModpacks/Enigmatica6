@@ -172,6 +172,8 @@ var regexHide = [
     /minecraft:\w+_ore/,
     /immersiveengineering:plate_/,
     /immersiveengineering:stick_/,
+    /immersiveengineering:storage_/,
+    /immersiveengineering:ore_/,
     /create:\w+_sheet/,
     /create:\w+_nugget/,
     /create:\w+_ingot/,
