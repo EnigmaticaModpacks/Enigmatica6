@@ -28,17 +28,6 @@ events.listen('recipes', (event) => {
             'aquaculture:fish_fillet_cooked',
             'aquaculture:fish_fillet_cooked'
         ]),
-        shapelessRecipe(item.of('additionalbars:crossed_iron_bars', 9), [
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars',
-            'minecraft:iron_bars'
-        ]),
         shapelessRecipe('minecraft:wheat_seeds', ['minecraft:wheat']),
         shapelessRecipe('quark:root', ['minecraft:vine', '#forge:dyes/brown']),
         shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }), [
@@ -150,7 +139,8 @@ events.listen('recipes', (event) => {
                         tag: { 'patchouli:book': 'modularrouters:book' }
                     },
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
-                    bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } }
+                    bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
+                    integrateddynamics: {id: 'integrateddynamics:on_the_dynamics_of_integration', Count:1}
                 }
             }),
             ['minecraft:book', '#forge:bookshelves']
