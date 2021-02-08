@@ -189,6 +189,12 @@ events.listen('recipes', function (event) {
         type: 'thermal:smelter'
     });
     event.remove({
+        id: /emendatusenigmatica:ore_from_chunk_crafting/
+    });
+    event.remove({
+        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
+    });
+    event.remove({
         input: 'minecraft:fire_charge',
         mod: 'thermal',
         type: 'minecraft:crafting_shapeless'

@@ -140,7 +140,7 @@ events.listen('recipes', (event) => {
                     },
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                     bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
-                    integrateddynamics: {id: 'integrateddynamics:on_the_dynamics_of_integration', Count:1}
+                    integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 }
                 }
             }),
             ['minecraft:book', '#forge:bookshelves']
@@ -168,6 +168,10 @@ events.listen('recipes', (event) => {
     });
 
     powahTiers.forEach(function (tier) {
-        event.shapeless('powah:reactor_' + tier, 'powah:reactor_' + tier);
+        event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+    });
+
+    materialsToUnify.forEach((material) => {
+        event.shapeless(`emendatusenigmatica:${material}_ore`, `#forge:ores/${material}`);
     });
 });
