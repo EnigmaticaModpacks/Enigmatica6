@@ -44,6 +44,15 @@ var woodVariantsToConstruct = [
     'byg:bulbis',
     'byg:embur',
     'byg:withering_oak',
+    'betterendforge:mossy_glowshroom',
+    'betterendforge:lacugrove',
+    'betterendforge:end_lotus',
+    'betterendforge:pythadendron',
+    'betterendforge:dragon_tree',
+    'betterendforge:tenanea',
+    'betterendforge:helix_tree',
+    'betterendforge:umbrella_tree',
+    'betterendforge:jellyshroom',
     'ars_nouveau:red_archwood',
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',
@@ -94,6 +103,17 @@ woodVariantsToConstruct.forEach((variant) => {
     logBlockStripped = modId + ':stripped_' + logType + logSuffix;
     woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
     plankBlock = modId + ':' + logType + '_planks';
+
+    if (modId == 'betterendforge') {
+        logSuffix = '_log';
+        woodSuffix = '_bark';
+
+        logBlock = modId + ':' + logType + logSuffix;
+        woodBlock = modId + ':' + logType + woodSuffix;
+        logBlockStripped = modId + ':' + logType + '_stripped' + logSuffix;
+        woodBlockStripped = modId + ':' + logType + '_stripped' + woodSuffix;
+        plankBlock = modId + ':' + logType + '_planks';
+    }
 
     // Exceptions
     switch (logType) {
