@@ -113,6 +113,14 @@ events.listen('recipes', function (event) {
                     item.of('buildinggadgets:construction_paste', 2).chance(0.5)
                 ],
                 experience: 0.2
+            },
+            {
+                input: 'create:limesand',
+                outputs: [
+                    item.of('emendatusenigmatica:silicon_gem').chance(0.5),
+                    item.of('emendatusenigmatica:silicon_gem').chance(0.25)
+                ],
+                experience: 0.2
             }
         ]
     };

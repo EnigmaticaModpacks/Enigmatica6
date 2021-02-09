@@ -32,6 +32,10 @@ events.listen('recipes', function (event) {
             {
                 input: 'buildinggadgets:construction_block_dense',
                 output: Item.of('buildinggadgets:construction_paste', 3)
+            },
+            {
+                input: item.of('create:limesand', 4),
+                output: item.of('emendatusenigmatica:silicon_gem')
             }
         ]
     };
