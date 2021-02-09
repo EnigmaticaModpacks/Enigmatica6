@@ -7,8 +7,8 @@ events.listen('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.pedestals.pedestal_crushing({
-            type: 'pedestals.pedestal_crushing',
+        event.custom({
+            type: 'pedestals:pedestal_crushing',
             ingredient: {
                 item: recipe.input
             },
