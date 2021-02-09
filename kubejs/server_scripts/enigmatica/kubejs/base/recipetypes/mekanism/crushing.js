@@ -34,7 +34,7 @@ events.listen('recipes', function (event) {
                 output: Item.of('buildinggadgets:construction_paste', 3)
             },
             {
-                input: item.of('create:limesand', 4),
+                input: item.of('create:limesand', 3),
                 output: item.of('emendatusenigmatica:silicon_gem')
             }
         ]
