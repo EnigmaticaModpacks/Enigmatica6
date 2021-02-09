@@ -18,6 +18,9 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+    event.replaceInput({}, 'betterendforge:ender_dust', '#forge:dusts/ender');
+    event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
+    event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
