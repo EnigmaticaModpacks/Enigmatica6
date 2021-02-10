@@ -67,6 +67,10 @@ events.listen('recipes', function (event) {
 
         'immersivepetroleum:distillationtower/oilcracking',
 
+        'industrialforegoing:stonework_generate/andesite',
+        'industrialforegoing:stonework_generate/diorite',
+        'industrialforegoing:stonework_generate/granite',
+
         'mapperbase:steel_nugget_from_blasting',
         'mapperbase:steel_plate_from_blasting',
         'mapperbase:steel_block_from_blasting',
@@ -79,6 +83,8 @@ events.listen('recipes', function (event) {
         'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
+
+        'pedestals:pedestal_cobblegen/blackstone',
 
         'quark:building/crafting/tallow_from_block',
 
