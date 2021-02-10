@@ -7,5 +7,17 @@
 	icon: "minecraft:wither_skeleton_skull",
 	always_invisible: true,
 	default_quest_shape: "",
+	images: [{
+		x: -7.5d,
+		y: 4.0d,
+		width: 1.0d,
+		height: 1.0d,
+		rotation: 0.0d,
+		image: "minecraft:textures/gui/presets/isles.png",
+		hover: [],
+		click: "",
+		dev: false,
+		corner: false
+	}],
 	quests: []
 }
