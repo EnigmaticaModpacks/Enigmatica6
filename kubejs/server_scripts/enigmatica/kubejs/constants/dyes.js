@@ -813,6 +813,111 @@ const dyeSources = [
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:light_gray_dye',
         tertiary: 'minecraft:black_dye'
+    },
+    {
+        input: 'betterendforge:charnia_cyan',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:cyan_dye'
+    },
+    {
+        input: 'betterendforge:charnia_light_blue',
+        type: 'small',
+        primary: 'minecraft:light_blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_blue_dye'
+    },
+    {
+        input: 'betterendforge:charnia_purple',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+    {
+        input: 'betterendforge:charnia_red',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:red_dye'
+    },
+    {
+        input: 'betterendforge:charnia_green',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'betterendforge:charnia_orange',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
+        input: 'betterendforge:purple_polypore',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+    {
+        input: 'betterendforge:umbrella_moss',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'betterendforge:umbrella_moss_tall',
+        type: 'large',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'betterendforge:creeping_moss',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'betterendforge:shadow_plant',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:gray_dye',
+        tertiary: 'minecraft:light_gray_dye'
+    },
+    {
+        input: 'betterendforge:bushy_grass',
+        type: 'small',
+        primary: 'minecraft:magenta_dye',
+        secondary: 'minecraft:gray_dye',
+        tertiary: 'minecraft:blue_dye'
+    },
+    {
+        input: 'betterendforge:tail_moss',
+        type: 'small',
+        primary: 'minecraft:gray_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:light_gray_dye'
+    },
+    {
+        input: 'betterendforge:cyan_moss',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:blue_dye'
+    },
+    {
+        input: 'betterendforge:twisted_moss',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:cyan_dye'
     }
 ];
 
