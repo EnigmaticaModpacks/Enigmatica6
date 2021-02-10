@@ -3,7 +3,7 @@ events.listen('recipes', function (event) {
         var modID = variant.logBlock.split(':')[0];
 
         // mod blacklist
-        if (modID == 'minecraft') {
+        if (modID == 'minecraft' || modID == 'integrateddynamics') {
             return;
         }
 

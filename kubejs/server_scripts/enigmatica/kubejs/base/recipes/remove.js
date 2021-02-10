@@ -94,6 +94,11 @@ events.listen('recipes', function (event) {
         'thermal:machine/centrifuge/centrifuge_oil_sand',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic'
     ];

@@ -12,6 +12,7 @@ events.listen('jei.hide.items', (event) => {
             'immersiveengineering:ingot_' + material,
             'immersiveengineering:dust_' + material,
             'immersiveengineering:nugget_' + material,
+            'immersiveengineering:ore_' + material,
             'mekanism:nugget_' + material,
             'mekanism:dust_' + material,
             'mekanism:ingot_' + material,

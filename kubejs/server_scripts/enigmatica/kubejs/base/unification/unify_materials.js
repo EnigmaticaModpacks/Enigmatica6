@@ -18,6 +18,8 @@ events.listen('recipes', function (event) {
 
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem);
 
+        betterend_alloys(event, material, ore, ingot);
+
         bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem);
         bloodmagic_ore_processing_arc(event, material, ore, dust, gem);
 
@@ -139,6 +141,23 @@ function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem) 
         acceptChaliceInput: true,
         copyNBTToOutputs: false
     });
+}
+
+function betterend_alloys(event, material, ore, ingot) {
+    if(ore == air || ingot == air) {
+        return;
+    }
+    var tag = 'forge:ores/' + material;
+    event.custom({
+        type: 'betterendforge:alloying',
+        ingredients: [
+            {tag: tag},
+            {tag: tag}
+        ],
+        result: ingredient.of(ingot, 3),
+        experience: 2,
+        smelttime: 300
+    })
 }
 
 function bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem) {

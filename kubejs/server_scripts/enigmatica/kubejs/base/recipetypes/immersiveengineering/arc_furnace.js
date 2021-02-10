@@ -12,6 +12,18 @@ events.listen('recipes', (event) => {
                 secondaries: ['#forge:ingots/lead'],
                 outputs: [Item.of('eidolon:pewter_ingot', 2)]
                 
+            },
+            {
+                input1: '#forge:ingots/iron',
+                secondaries: ['#forge:dusts/ender'],
+                outputs: [Item.of('betterendforge:terminite_ingot')]
+                
+            },
+            {
+                input1: '#forge:ingots/netherite',
+                secondaries: ['betterendforge:terminite_ingot'],
+                outputs: [Item.of('betterendforge:aeternium_ingot')]
+                
             }
         ]
     };
