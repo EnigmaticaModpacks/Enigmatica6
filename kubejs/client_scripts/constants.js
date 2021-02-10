@@ -200,6 +200,8 @@ const disabledItems = [
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
 
+    'betterendforge:ender_dust',
+
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
