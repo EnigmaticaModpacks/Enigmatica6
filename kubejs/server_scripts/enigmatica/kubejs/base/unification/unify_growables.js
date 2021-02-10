@@ -339,6 +339,30 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         case 'warped_nylium':
             substrate = 'minecraft:warped_nylium';
             break;
+        case 'shadow_grass':
+            substrate = 'betterendforge:shadow_grass';
+            break;
+        case 'end_mycelium':
+            substrate = 'betterendforge:end_mycelium';
+            break;
+        case 'end_moss':
+            substrate = 'betterendforge:end_moss';
+            break;
+        case 'jungle_moss':
+            substrate = 'betterendforge:jungle_moss';
+            break;
+        case 'crystal_moss':
+            substrate = 'betterendforge:crystal_moss';
+            break;
+        case 'chorus_nylium':
+            substrate = 'betterendforge:chorus_nylium';
+            break;
+        case 'pink_moss':
+            substrate = 'betterendforge:pink_moss';
+            break;
+        case 'amber_moss':
+            substrate = 'betterendforge:amber_moss';
+            break;
         case 'water':
             //disabled
             return;

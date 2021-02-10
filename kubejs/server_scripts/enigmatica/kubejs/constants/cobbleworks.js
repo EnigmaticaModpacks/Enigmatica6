@@ -4,6 +4,7 @@
 const generatableCobblestone = [
     'byg:dacite_cobblestone',
     'byg:ether_stone',
+    'byg:purpur_stone',
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
@@ -31,6 +32,8 @@ const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
     'minecraft:granite',
+    'betterendforge:flavolite',
+    'betterendforge:violecite',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',

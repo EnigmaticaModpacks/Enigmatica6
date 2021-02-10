@@ -200,6 +200,24 @@ const cropRegistry = [
                 render: 'minecraft:tube_coral_fan',
                 plant: 'minecraft:tube_coral_fan',
                 substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:tube_worm',
+                render: 'betterendforge:tube_worm',
+                plant: 'betterendforge:tube_worm',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:hydrothermal_vent',
+                render: 'betterendforge:hydrothermal_vent',
+                plant: 'betterendforge:hydrothermal_vent',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:bubble_coral',
+                render: 'betterendforge:bubble_coral',
+                plant: 'betterendforge:bubble_coral',
+                substrate: 'water'
             }
         ]
     },
@@ -223,6 +241,18 @@ const cropRegistry = [
                 render: 'simplefarming:kenaf_crop',
                 plant: 'simplefarming:kenaf_fiber',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'betterendforge:end_lotus_seed',
+                render: 'betterendforge:end_lotus_flower',
+                plant: 'betterendforge:end_lotus_stem',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:end_lily_seed',
+                render: 'betterendforge:end_lily',
+                plant: 'betterendforge:end_lily_leaf',
+                substrate: 'water'
             }
         ]
     },
@@ -234,6 +264,18 @@ const cropRegistry = [
                 render: 'occultism:datura',
                 plant: 'occultism:datura',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'betterendforge:shadow_berry',
+                render: 'betterendforge:shadow_berry',
+                plant: 'betterendforge:shadow_berry_raw',
+                substrate: 'shadow_grass'
+            },
+            {
+                seed: 'betterendforge:blossom_berry_seed',
+                render: 'betterendforge:blossom_berry_seed',
+                plant: 'betterendforge:blossom_berry',
+                substrate: 'pink_moss'
             }
         ]
     },
@@ -1079,6 +1121,30 @@ const cropRegistry = [
                 render: 'undergarden:shimmerweed',
                 plant: 'undergarden:shimmerweed',
                 substrate: 'deepturf'
+            },
+            {
+                seed: 'betterendforge:umbrella_moss_tall',
+                render: 'betterendforge:umbrella_moss_tall',
+                plant: 'betterendforge:umbrella_moss_tall',
+                substrate: 'end_moss'
+            },
+            {
+                seed: 'betterendforge:umbrella_moss',
+                render: 'betterendforge:umbrella_moss',
+                plant: 'betterendforge:umbrella_moss',
+                substrate: 'end_moss'
+            },
+            {
+                seed: 'betterendforge:twisted_umbrella_moss_tall',
+                render: 'betterendforge:twisted_umbrella_moss_tall',
+                plant: 'betterendforge:twisted_umbrella_moss_tall',
+                substrate: 'jungle_moss'
+            },
+            {
+                seed: 'betterendforge:twisted_umbrella_moss',
+                render: 'betterendforge:twisted_umbrella_moss',
+                plant: 'betterendforge:twisted_umbrella_moss',
+                substrate: 'jungle_moss'
             }
         ]
     },
@@ -1312,6 +1378,84 @@ const cropRegistry = [
                 render: 'undergarden:deepturf',
                 plant: 'undergarden:deepturf',
                 substrate: 'deepturf'
+            },
+            {
+                seed: 'betterendforge:shadow_plant',
+                render: 'betterendforge:shadow_plant',
+                plant: 'betterendforge:shadow_plant',
+                substrate: 'shadow_grass'
+            },
+            {
+                seed: 'betterendforge:needlegrass',
+                render: 'betterendforge:needlegrass',
+                plant: 'betterendforge:needlegrass',
+                substrate: 'shadow_grass'
+            },
+            {
+                seed: 'betterendforge:crystal_grass',
+                render: 'betterendforge:crystal_grass',
+                plant: 'betterendforge:crystal_grass',
+                substrate: 'crystal_moss'
+            },
+            {
+                seed: 'betterendforge:creeping_moss',
+                render: 'betterendforge:creeping_moss',
+                plant: 'betterendforge:creeping_moss',
+                substrate: 'end_moss'
+            },
+            {
+                seed: 'betterendforge:chorus_grass',
+                render: 'betterendforge:chorus_grass',
+                plant: 'betterendforge:chorus_grass',
+                substrate: 'chorus_nylium'
+            },
+            {
+                seed: 'betterendforge:charnia_red',
+                render: 'betterendforge:charnia_red',
+                plant: 'betterendforge:charnia_red',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:charnia_purple',
+                render: 'betterendforge:charnia_purple',
+                plant: 'betterendforge:charnia_purple',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:charnia_orange',
+                render: 'betterendforge:charnia_orange',
+                plant: 'betterendforge:charnia_orange',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:charnia_light_blue',
+                render: 'betterendforge:charnia_light_blue',
+                plant: 'betterendforge:charnia_light_blue',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:charnia_green',
+                render: 'betterendforge:charnia_green',
+                plant: 'betterendforge:charnia_green',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:charnia_cyan',
+                render: 'betterendforge:charnia_cyan',
+                plant: 'betterendforge:charnia_cyan',
+                substrate: 'water'
+            },
+            {
+                seed: 'betterendforge:bushy_grass',
+                render: 'betterendforge:bushy_grass',
+                plant: 'betterendforge:bushy_grass',
+                substrate: 'pink_moss'
+            },
+            {
+                seed: 'betterendforge:amber_grass',
+                render: 'betterendforge:amber_grass',
+                plant: 'betterendforge:amber_grass',
+                substrate: 'amber_moss'
             }
         ]
     },
@@ -1566,6 +1710,94 @@ const cropRegistry = [
                 render: 'undergarden:droopvine',
                 plant: 'undergarden:droopvine_item',
                 substrate: 'nether'
+            },
+            {
+                seed: 'betterendforge:twisted_vine',
+                render: 'betterendforge:twisted_vine',
+                plant: 'betterendforge:twisted_vine',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:twisted_moss',
+                render: 'betterendforge:twisted_moss',
+                plant: 'betterendforge:twisted_moss',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:tenanea_flowers',
+                render: 'betterendforge:tenanea_flowers',
+                plant: 'betterendforge:tenanea_flowers',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:tail_moss',
+                render: 'betterendforge:tail_moss',
+                plant: 'betterendforge:tail_moss',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:purple_polypore',
+                render: 'betterendforge:purple_polypore',
+                plant: 'betterendforge:purple_polypore',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:jungle_vine',
+                render: 'betterendforge:jungle_vine',
+                plant: 'betterendforge:jungle_vine',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:jungle_fern',
+                render: 'betterendforge:jungle_fern',
+                plant: 'betterendforge:jungle_fern',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:dense_vine',
+                render: 'betterendforge:dense_vine',
+                plant: 'betterendforge:dense_vine',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:cyan_moss',
+                render: 'betterendforge:cyan_moss',
+                plant: 'betterendforge:cyan_moss',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:bulb_moss',
+                render: 'betterendforge:bulb_moss',
+                plant: 'betterendforge:bulb_moss',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:bulb_vine_seed',
+                render: 'betterendforge:bulb_vine',
+                plant: 'betterendforge:glowing_bulb',
+                plantSecondary: 'betterendforge:bulb_vine_seed',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'betterendforge:blue_vine_seed',
+                render: 'betterendforge:blue_vine',
+                plant: 'betterendforge:blue_vine_lantern',
+                plantSecondary: 'betterendforge:blue_vine_seed',
+                substrate: 'end_mycelium'
+            },
+            {
+                seed: 'betterendforge:glowing_pillar_seed',
+                render: 'betterendforge:glowing_pillar_roots',
+                plant: 'betterendforge:glowing_pillar_luminophor',
+                plantSecondary: 'betterendforge:glowing_pillar_seed',
+                substrate: 'amber_moss'
+            },
+            {
+                seed: 'betterendforge:hydralux_sapling',
+                render: 'betterendforge:hydralux_sapling',
+                plant: 'betterendforge:hydralux_petal',
+                plantSecondary: 'betterendforge:hydralux_sapling',
+                substrate: 'water'
             }
         ]
     }

@@ -9,7 +9,8 @@ events.listen('item.tags', function (event) {
         .add('ars_nouveau:mana_gem')
         .add('mapperbase:raw_bitumen')
         .add('immersivepetroleum:bitumen')
-        .add('thermal:bitumen');
+        .add('thermal:bitumen')
+        .add('betterendforge:crystalline_sulphur');
     event.add(gems + '/coal_coke', [
         'emendatusenigmatica:coke_gem',
         'immersiveengineering:coal_coke',
@@ -26,4 +27,6 @@ events.listen('item.tags', function (event) {
         .add('thermal:bitumen');
 
     event.get('forge:gems/mana_gem').remove('ars_nouveau:mana_gem');
+
+    event.get('forge:gems/sulfur').add('betterendforge:crystalline_sulphur');
 });

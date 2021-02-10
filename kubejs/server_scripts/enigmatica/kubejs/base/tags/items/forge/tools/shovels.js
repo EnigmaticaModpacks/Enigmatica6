@@ -47,7 +47,9 @@ events.listen('item.tags', function (event) {
         'bloodmagic:soulshovel',
         'astralsorcery:crystal_shovel',
         'astralsorcery:infused_crystal_shovel',
-        'undergarden:forgotten_shovel'
+        'undergarden:forgotten_shovel',
+        'betterendforge:aeternium_shovel',
+        'betterendforge:terminite_shovel'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/shovel').add(items);
