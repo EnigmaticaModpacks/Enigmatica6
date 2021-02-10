@@ -44,6 +44,7 @@ $CONFIGS_TO_REMOVE = @(
 	"sophisticatedbackpacks-client.toml",
 	"supplementaries-client.toml",
 	"thermal-client.toml",
+	"upgrade_aquatic-client.toml",
 	"xnet-client.toml"
 )
 	
