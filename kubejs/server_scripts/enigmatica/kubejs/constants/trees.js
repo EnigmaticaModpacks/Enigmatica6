@@ -500,6 +500,13 @@ const treeRegistry = [
                 trunk: 'betterendforge:dragon_tree_log',
                 leaf: 'betterendforge:dragon_tree_leaves',
                 substrate: 'shadow_grass'
+            }, 
+            {
+                sapling: 'integrateddynamics:menril_sapling',
+                trunk: 'integrateddynamics:menril_log',
+                leaf: 'integrateddynamics:menril_leaves',
+                fruit: 'integrateddynamics:menril_berries',
+                substrate: 'dirt'
             }
         ]
     },
@@ -669,13 +676,6 @@ const treeRegistry = [
                 trunk: 'betterendforge:jellyshroom_log',
                 leaf: 'betterendforge:jellyshroom_cap_purple',
                 substrate: 'end_stone'
-            },
-            {
-                sapling: 'integrateddynamics:menril_sapling',
-                trunk: 'integrateddynamics:menril_log',
-                leaf: 'integrateddynamics:menril_leaves',
-                fruit: 'integrateddynamics:menril_berries',
-                substrate: 'dirt'
             }
         ]
     }
