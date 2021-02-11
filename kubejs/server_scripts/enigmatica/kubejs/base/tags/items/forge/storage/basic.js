@@ -176,7 +176,24 @@ events.listen('item.tags', function (event) {
         'rftoolsstorage:storage_module1',
         'rftoolsstorage:storage_module2',
         'rftoolsstorage:storage_module3',
-        'tetra:rack'
+        'tetra:rack',
+        'betterendforge:jellyshroom_barrel',
+        'betterendforge:umbrella_tree_barrel',
+        'betterendforge:helix_tree_barrel',
+        'betterendforge:dragon_tree_barrel',
+        'betterendforge:pythadendron_barrel',
+        'betterendforge:end_lotus_barrel',
+        'betterendforge:lacugrove_barrel',
+        'betterendforge:mossy_glowshroom_barrel',
+        'betterendforge:jellyshroom_chest',
+        'betterendforge:umbrella_tree_chest',
+        'betterendforge:helix_tree_chest',
+        'betterendforge:tenanea_chest',
+        'betterendforge:dragon_tree_chest',
+        'betterendforge:pythadendron_chest',
+        'betterendforge:end_lotus_chest',
+        'betterendforge:lacugrove_chest',
+        'betterendforge:mossy_glowshroom_chest'
     ];
 
     event.get('forge:storage').add(items);

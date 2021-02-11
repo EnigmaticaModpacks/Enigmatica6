@@ -56,7 +56,8 @@ var woodVariantsToConstruct = [
     'ars_nouveau:red_archwood',
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',
-    'ars_nouveau:blue_archwood'
+    'ars_nouveau:blue_archwood',
+    'integrateddynamics:menril'
 ];
 
 var buildWoodVariants = [];

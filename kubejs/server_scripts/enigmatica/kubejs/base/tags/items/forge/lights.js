@@ -392,7 +392,37 @@ events.listen('item.tags', function (event) {
         'undergarden:tall_shimmerweed',
         'undergarden:shimmerweed',
 
-        'valhelsia_structures:brazier'
+        'valhelsia_structures:brazier',
+
+        'betterendforge:bulb_lantern_black',
+        'betterendforge:bulb_lantern_red',
+        'betterendforge:bulb_lantern_green',
+        'betterendforge:bulb_lantern_brown',
+        'betterendforge:bulb_lantern_blue',
+        'betterendforge:bulb_lantern_purple',
+        'betterendforge:bulb_lantern_cyan',
+        'betterendforge:bulb_lantern_light_gray',
+        'betterendforge:bulb_lantern_gray',
+        'betterendforge:bulb_lantern_pink',
+        'betterendforge:bulb_lantern_lime',
+        'betterendforge:bulb_lantern_yellow',
+        'betterendforge:bulb_lantern_light_blue',
+        'betterendforge:bulb_lantern_magenta',
+        'betterendforge:bulb_lantern_orange',
+        'betterendforge:bulb_lantern_white',
+        'betterendforge:bulb_lantern',
+        'betterendforge:glowing_pillar_luminophor',
+        'betterendforge:sulphuric_rock_lantern',
+        'betterendforge:violecite_lantern',
+        'betterendforge:flavolite_lantern',
+        'betterendforge:blue_vine_lantern',
+        'betterendforge:blackstone_lantern',
+        'betterendforge:end_stone_lantern',
+        'betterendforge:purpur_lantern',
+        'betterendforge:quartz_lantern',
+        'betterendforge:granite_lantern',
+        'betterendforge:diorite_lantern',
+        'betterendforge:andesite_lantern'
     ];
     event.get('forge:lights').add(items);
 });

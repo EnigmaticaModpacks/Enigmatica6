@@ -58,7 +58,13 @@ events.listen('item.tags', function (event) {
         'meetyourfight:depth_star',
         'undergarden:forgotten_sword',
         'eidolon:reaper_scythe',
-        'eidolon:sapping_sword'
+        'eidolon:sapping_sword',
+        'betterendforge:netherite_hammer',
+        'betterendforge:diamond_hammer',
+        'betterendforge:golden_hammer',
+        'betterendforge:iron_hammer',
+        'betterendforge:aeternium_hammer',
+        'betterendforge:terminite_hammer'
     ];
     event.get('forge:weapons').add(items);
     event.get('forge:weapons/melee').add(items);

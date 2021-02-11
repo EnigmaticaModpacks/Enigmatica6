@@ -43,7 +43,10 @@ events.listen('item.tags', function (event) {
         'alexsmobs:crocodile_chestplate',
         'dustrial_decor:cardboard_chestplate',
         'mekanismtools:steel_chestplate',
-        'eidolon:warlock_cloak'
+        'eidolon:warlock_cloak',
+        'betterendforge:crystalite_chestplate',
+        'betterendforge:aeternium_chestplate',
+        'betterendforge:terminite_chestplate'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/chest').add(items);

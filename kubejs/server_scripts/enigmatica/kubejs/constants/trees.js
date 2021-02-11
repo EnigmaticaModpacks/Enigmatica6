@@ -470,6 +470,43 @@ const treeRegistry = [
                 trunk: 'undergarden:wigglewood_log',
                 leaf: 'undergarden:wigglewood_leaves',
                 substrate: 'dirt'
+            },
+            {
+                sapling: 'betterendforge:helix_tree_sapling',
+                trunk: 'betterendforge:helix_tree_log',
+                leaf: 'betterendforge:helix_tree_leaves',
+                substrate: 'amber_moss'
+            },
+            {
+                sapling: 'betterendforge:tenanea_sapling',
+                trunk: 'betterendforge:tenanea_log',
+                leaf: 'betterendforge:tenanea_leaves',
+                substrate: 'pink_moss'
+            },
+            {
+                sapling: 'betterendforge:pythadendron_sapling',
+                trunk: 'betterendforge:pythadendron_log',
+                leaf: 'betterendforge:pythadendron_leaves',
+                substrate: 'chorus_nylium'
+            },
+            {
+                sapling: 'betterendforge:lacugrove_sapling',
+                trunk: 'betterendforge:lacugrove_log',
+                leaf: 'betterendforge:lacugrove_leaves',
+                substrate: 'end_moss'
+            },
+            {
+                sapling: 'betterendforge:dragon_tree_sapling',
+                trunk: 'betterendforge:dragon_tree_log',
+                leaf: 'betterendforge:dragon_tree_leaves',
+                substrate: 'shadow_grass'
+            }, 
+            {
+                sapling: 'integrateddynamics:menril_sapling',
+                trunk: 'integrateddynamics:menril_log',
+                leaf: 'integrateddynamics:menril_leaves',
+                fruit: 'integrateddynamics:menril_berries',
+                substrate: 'dirt'
             }
         ]
     },
@@ -619,6 +656,26 @@ const treeRegistry = [
                 trunk: 'undergarden:veil_mushroom_stalk',
                 leaf: 'undergarden:veil_mushroom_cap',
                 substrate: 'deepturf'
+            },
+            {
+                sapling: 'betterendforge:umbrella_tree_sapling',
+                trunk: 'betterendforge:umbrella_tree_log',
+                leaf: 'betterendforge:umbrella_tree_membrane',
+                extraDecoration: 'betterendforge:umbrella_tree_cluster',
+                substrate: 'jungle_moss'
+            },
+            {
+                sapling: 'betterendforge:mossy_glowshroom_sapling',
+                trunk: 'betterendforge:mossy_glowshroom_log',
+                leaf: 'betterendforge:mossy_glowshroom_cap',
+                extraDecoration: 'betterendforge:mossy_glowshroom_hymenophore',
+                substrate: 'end_moss'
+            },
+            {
+                sapling: 'betterendforge:small_jellyshroom',
+                trunk: 'betterendforge:jellyshroom_log',
+                leaf: 'betterendforge:jellyshroom_cap_purple',
+                substrate: 'end_stone'
             }
         ]
     }

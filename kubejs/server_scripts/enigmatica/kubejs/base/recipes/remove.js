@@ -67,6 +67,10 @@ events.listen('recipes', function (event) {
 
         'immersivepetroleum:distillationtower/oilcracking',
 
+        'industrialforegoing:stonework_generate/andesite',
+        'industrialforegoing:stonework_generate/diorite',
+        'industrialforegoing:stonework_generate/granite',
+
         'mapperbase:steel_nugget_from_blasting',
         'mapperbase:steel_plate_from_blasting',
         'mapperbase:steel_block_from_blasting',
@@ -80,6 +84,8 @@ events.listen('recipes', function (event) {
 
         'morevanillalib:obsidian_shard',
 
+        'pedestals:pedestal_cobblegen/blackstone',
+
         'quark:building/crafting/tallow_from_block',
 
         'thermal:machine/refinery/refinery_crude_oil',
@@ -88,6 +94,11 @@ events.listen('recipes', function (event) {
         'thermal:machine/centrifuge/centrifuge_oil_sand',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
         'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic'
     ];

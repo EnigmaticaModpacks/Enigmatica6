@@ -1,19 +1,18 @@
 //priority: 900
-events.listen('recipes', function (event) {
-    buildWoodVariants.forEach(function (variant) {
-        var modID = variant.logBlock.split(':')[0];
+events.listen('recipes', (event) => {
+    buildWoodVariants.forEach((variant) => {
         var sawDust = 'emendatusenigmatica:wood_dust';
 
-        immersiveengineering_sawing(event, variant, modID, sawDust);
-        mekanism_sawing(event, variant, modID, sawDust);
-        pedestal_sawing(event, variant, modID);
-        thermal_sawing(event, variant, modID, sawDust);
+        immersiveengineering_sawing(event, variant, sawDust);
+        mekanism_sawing(event, variant, sawDust);
+        pedestal_sawing(event, variant);
+        thermal_sawing(event, variant, sawDust);
     });
 });
 
-function immersiveengineering_sawing(event, variant, modID, sawDust) {
+function immersiveengineering_sawing(event, variant, sawDust) {
     // mod blacklist
-    if (modID == 'minecraft') {
+    if (variant.modId == 'minecraft' || variant.modId == 'integrateddynamics') {
         return;
     }
 
@@ -45,8 +44,8 @@ function immersiveengineering_sawing(event, variant, modID, sawDust) {
         .energy(1600);
 }
 
-function mekanism_sawing(event, variant, modID, sawDust) {
-    if (modID == 'minecraft') {
+function mekanism_sawing(event, variant, sawDust) {
+    if (variant.modId == 'minecraft') {
         event.remove({
             output: variant.plankBlock,
             mod: 'mekanism',
@@ -79,57 +78,90 @@ function mekanism_sawing(event, variant, modID, sawDust) {
         ]
     };
 
-    data.recipes.forEach((recipe) => {
-        event.recipes.mekanism.sawing(item.of(recipe.output, 6), recipe.input, item.of(sawDust).chance(0.25));
-    });
-}
-function pedestal_sawing(event, variant, modID) {
-    // mod blacklist
-    if (modID == 'minecraft') {
-        return;
-    }
-
-    var data = {
-        recipes: [
-            {
-                input: variant.logBlock,
-                output: variant.plankBlock,
-                count: 6
-            },
-            {
-                input: variant.woodBlock,
-                output: variant.plankBlock,
-                count: 6
-            },
-            {
-                input: variant.logBlockStripped,
-                output: variant.plankBlock,
-                count: 6
-            },
-            {
-                input: variant.woodBlockStripped,
-                output: variant.plankBlock,
-                count: 6
-            }
-        ]
-    };
-
-    data.recipes.forEach((recipe) => {
-        event.recipes.pedestals.pedestal_sawing({
-            type: 'pedestals:pedestal_sawing',
-            ingredient: {
-                item: recipe.input
-            },
-            result: {
-                item: recipe.output,
-                count: recipe.count
-            }
+    if (variant.modId == 'integrateddynamics') {
+        data.recipes.push({
+            input: 'integrateddynamics:menril_log_filled',
+            output: variant.plankBlock
         });
+    }
+
+    data.recipes.forEach((recipe) => {
+        if (
+            !(
+                variant.modId == 'integrateddynamics' &&
+                (recipe.input == variant.logBlockStripped ||
+                    recipe.input == variant.woodBlockStripped ||
+                    recipe.input == variant.woodBlock)
+            )
+        ) {
+            event.recipes.mekanism.sawing(item.of(recipe.output, 6), recipe.input, item.of(sawDust).chance(0.25));
+        }
     });
 }
-function thermal_sawing(event, variant, modID, sawDust) {
+function pedestal_sawing(event, variant) {
     // mod blacklist
-    if (modID == 'minecraft' || modID == 'byg') {
+    if (variant.modId == 'minecraft') {
+        return;
+    }
+
+    var data = {
+        recipes: [
+            {
+                input: variant.logBlock,
+                output: variant.plankBlock,
+                count: 6
+            },
+            {
+                input: variant.woodBlock,
+                output: variant.plankBlock,
+                count: 6
+            },
+            {
+                input: variant.logBlockStripped,
+                output: variant.plankBlock,
+                count: 6
+            },
+            {
+                input: variant.woodBlockStripped,
+                output: variant.plankBlock,
+                count: 6
+            }
+        ]
+    };
+
+    if (variant.modId == 'integrateddynamics') {
+        data.recipes.push({
+            input: 'integrateddynamics:menril_log_filled',
+            output: variant.plankBlock,
+            count: 6
+        });
+    }
+
+    data.recipes.forEach((recipe) => {
+        if (
+            !(
+                variant.modId == 'integrateddynamics' &&
+                (recipe.input == variant.logBlockStripped ||
+                    recipe.input == variant.woodBlockStripped ||
+                    recipe.input == variant.woodBlock)
+            )
+        ) {
+            event.recipes.pedestals.pedestal_sawing({
+                type: 'pedestals:pedestal_sawing',
+                ingredient: {
+                    item: recipe.input
+                },
+                result: {
+                    item: recipe.output,
+                    count: recipe.count
+                }
+            });
+        }
+    });
+}
+function thermal_sawing(event, variant, sawDust) {
+    // mod blacklist
+    if (variant.modId == 'minecraft' || variant.modId == 'byg') {
         return;
     }
 
@@ -154,9 +186,31 @@ function thermal_sawing(event, variant, modID, sawDust) {
         ]
     };
 
-    data.recipes.forEach((recipe) => {
+    if (variant.modId == 'integrateddynamics') {
         event.recipes.thermal
-            .sawmill([item.of(recipe.output, 6), item.of(sawDust).chance(1.25)], recipe.input)
+            .sawmill(
+                [
+                    item.of('integrateddynamics:menril_planks', 6),
+                    item.of('integrateddynamics:crystalized_menril_chunk'),
+                    item.of('emendatusenigmatica:wood_dust').chance(0.25)
+                ],
+                'integrateddynamics:menril_log_filled'
+            )
             .energy(1000);
+    }
+
+    data.recipes.forEach((recipe) => {
+        if (
+            !(
+                variant.modId == 'integrateddynamics' &&
+                (recipe.input == variant.logBlockStripped ||
+                    recipe.input == variant.woodBlockStripped ||
+                    recipe.input == variant.woodBlock)
+            )
+        ) {
+            event.recipes.thermal
+                .sawmill([item.of(recipe.output, 6), item.of(sawDust).chance(1.25)], recipe.input)
+                .energy(1000);
+        }
     });
 }

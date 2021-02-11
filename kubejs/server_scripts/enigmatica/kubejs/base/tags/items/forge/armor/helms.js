@@ -43,7 +43,10 @@ events.listen('item.tags', function (event) {
         'alexsmobs:frontier_cap',
         'alexsmobs:moose_headgear',
         'eidolon:warlock_hat',
-        'eidolon:top_hat'
+        'eidolon:top_hat',
+        'betterendforge:crystalite_helmet',
+        'betterendforge:aeternium_helmet',
+        'betterendforge:terminite_helmet'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/helm').add(items);

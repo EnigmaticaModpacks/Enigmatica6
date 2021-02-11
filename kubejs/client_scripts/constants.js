@@ -127,6 +127,7 @@ var itemsToHide = [
     'quark:biotite',
     'quark:biotite_ore',
     'quark:tallow',
+    'refinedstorage:silicon',
     'thermal:coal_coke',
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
@@ -198,6 +199,8 @@ const disabledItems = [
     'aquaculture:iron_fillet_knife',
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
+
+    'betterendforge:ender_dust',
 
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',

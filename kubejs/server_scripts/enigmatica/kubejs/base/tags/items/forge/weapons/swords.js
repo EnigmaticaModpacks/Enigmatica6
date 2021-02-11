@@ -27,7 +27,9 @@ events.listen('item.tags', function (event) {
         'wstweaks:blaze_blade',
         'wstweaks:lava_blade',
         'undergarden:forgotten_sword',
-        'eidolon:sapping_sword'
+        'eidolon:sapping_sword',
+        'betterendforge:aeternium_sword',
+        'betterendforge:terminite_sword'
     ];
     event.get('forge:weapons/sword').add(items);
 });
