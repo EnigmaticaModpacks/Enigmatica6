@@ -17,7 +17,7 @@ function immersiveengineering_sawing(event, variant, sawDust) {
     }
 
     event.recipes.immersiveengineering
-        .sawmill(item.of(variant.plankBlock, 6), variant.logBlockStripped, [
+        .sawmill(Item.of(variant.plankBlock, 6), variant.logBlockStripped, [
             {
                 stripping: false,
                 output: sawDust
@@ -27,7 +27,7 @@ function immersiveengineering_sawing(event, variant, sawDust) {
 
     event.recipes.immersiveengineering
         .sawmill(
-            item.of(variant.plankBlock, 6),
+            Item.of(variant.plankBlock, 6),
             [variant.logBlock, variant.woodBlock],
             [
                 {
@@ -94,7 +94,7 @@ function mekanism_sawing(event, variant, sawDust) {
                     recipe.input == variant.woodBlock)
             )
         ) {
-            event.recipes.mekanism.sawing(item.of(recipe.output, 6), recipe.input, item.of(sawDust).chance(0.25));
+            event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25));
         }
     });
 }
@@ -190,9 +190,9 @@ function thermal_sawing(event, variant, sawDust) {
         event.recipes.thermal
             .sawmill(
                 [
-                    item.of('integrateddynamics:menril_planks', 6),
-                    item.of('integrateddynamics:crystalized_menril_chunk'),
-                    item.of('emendatusenigmatica:wood_dust').chance(0.25)
+                    Item.of('integrateddynamics:menril_planks', 6),
+                    Item.of('integrateddynamics:crystalized_menril_chunk'),
+                    Item.of('emendatusenigmatica:wood_dust').chance(0.25)
                 ],
                 'integrateddynamics:menril_log_filled'
             )
@@ -209,7 +209,7 @@ function thermal_sawing(event, variant, sawDust) {
             )
         ) {
             event.recipes.thermal
-                .sawmill([item.of(recipe.output, 6), item.of(sawDust).chance(1.25)], recipe.input)
+                .sawmill([Item.of(recipe.output, 6), Item.of(sawDust).chance(1.25)], recipe.input)
                 .energy(1000);
         }
     });

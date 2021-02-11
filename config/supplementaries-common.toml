@@ -54,8 +54,6 @@
 		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
 		#tinted jar catchable mobs
 		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
-		#any item can work here, ideally you should only put cookies and alike
-		cookies = ["minecraft:cookie", "simplefarming:peanut_butter_cookie", "farmersdelight:sweet_berry_cookie", "farmersdelight:honey_cookie"]
 
 	#I haven't tested most of the mods included here. let me know if they work
 	[blocks.cage]
@@ -85,6 +83,9 @@
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = true
+		#make safes simpler so they do not require keys:
+		#they will be bound to the first person that opens one and only that person will be able to interact with them
+		simple_safes = false
 
 	[blocks.globe]
 		#how many globe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
@@ -135,8 +136,6 @@
 	[tweaks.throwable_bricks]
 		#throw bricks at your foes! Might glass blocks
 		enabled = true
-		#additional items that will be able to be thrown (will work with any item). Items tagges as forge/ingots/bricks or nether bricks will be automatically added
-		whitelist = ["biomesoplenty:mud_brick", "byg:yellow_nether_brick", "byg:blue_nether_brick"]
 
 	[tweaks.wall_lantern]
 		#allow wall lanterns placement
@@ -170,6 +169,8 @@
 		#max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
+		#additional non tameable entities that you can bind to flutes
+		flute_extra_mobs = ["minecraft:horse", "minecraft:llama", "minecraft:donkey", "minecraft:fox"]
 
 [comment]
 	#This config is synced server side. If you are on a server you'll get its own version

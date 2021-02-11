@@ -54,7 +54,7 @@ events.listen('recipes', (event) => {
 
     data.recipes.forEach((recipe) => {
         event.recipes.bloodmagic
-            .alchemytable(item.of(recipe.output, recipe.count), recipe.inputs)
+            .alchemytable(Item.of(recipe.output, recipe.count), recipe.inputs)
             .syphon(recipe.syphon)
             .ticks(recipe.ticks)
             .upgradeLevel(recipe.orbLevel);

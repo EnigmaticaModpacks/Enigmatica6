@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.custom({
         type: 'interactio:item_fluid_transform',
         inputs: [

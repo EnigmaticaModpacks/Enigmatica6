@@ -18,6 +18,6 @@ events.listen('recipes', (event) => {
                 item: output
             }
         });
-        //event.recipes.thermal.chiller(item.of(honeyVariety + '_block'), fluid.of(honeyVariety, 1000));
+        //event.recipes.thermal.chiller(Item.of(honeyVariety + '_block'), fluid.of(honeyVariety, 1000));
     });
 });

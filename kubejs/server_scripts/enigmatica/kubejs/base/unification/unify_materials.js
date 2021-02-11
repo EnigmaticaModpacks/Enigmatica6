@@ -1,17 +1,17 @@
 //priority: 900
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     materialsToUnify.forEach(function (material) {
-        var ore = getPreferredItemInTag(ingredient.of('#forge:ores/' + material)).id;
-        var ingot = getPreferredItemInTag(ingredient.of('#forge:ingots/' + material)).id;
-        var gem = getPreferredItemInTag(ingredient.of('#forge:gems/' + material)).id;
+        var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
+        var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
+        var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
 
-        var crushedOre = getPreferredItemInTag(ingredient.of('#create:crushed_ores/' + material)).id;
-        var dust = getPreferredItemInTag(ingredient.of('#forge:dusts/' + material)).id;
+        var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
+        var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
 
-        var plate = getPreferredItemInTag(ingredient.of('#forge:plates/' + material)).id;
-        var gear = getPreferredItemInTag(ingredient.of('#forge:gears/' + material)).id;
-        var rod = getPreferredItemInTag(ingredient.of('#forge:rods/' + material)).id;
-        var wire = getPreferredItemInTag(ingredient.of('#forge:wires/' + material)).id;
+        var plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
+        var gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
+        var rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
+        var wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
 
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod);
@@ -65,9 +65,9 @@ function gear_unification(event, material, ingot, gem, gear) {
     }
 
     // Implemented by Thermal
-    // event.recipes.thermal.press(gear, [item.of(gearInput, 4), 'thermal:press_gear_die']);
+    // event.recipes.thermal.press(gear, [Item.of(gearInput, 4), 'thermal:press_gear_die']);
 
-    event.recipes.immersiveengineering.metal_press(output, ingredient.of(input, 4), mold);
+    event.recipes.immersiveengineering.metal_press(output, Ingredient.of(input, 4), mold);
     event.shaped(gear, [' B ', 'BAB', ' B '], {
         A: '#forge:nuggets/iron',
         B: input
@@ -81,7 +81,7 @@ function rod_unification(event, material, ingot, gem, rod) {
 
     event.remove({ type: 'minecraft:crafting_shaped', output: rod });
 
-    var output = item.of(rod, 2),
+    var output = Item.of(rod, 2),
         input,
         mold = 'immersiveengineering:mold_rod';
 
@@ -144,20 +144,17 @@ function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem) 
 }
 
 function betterend_alloys(event, material, ore, ingot) {
-    if(ore == air || ingot == air) {
+    if (ore == air || ingot == air) {
         return;
     }
     var tag = 'forge:ores/' + material;
     event.custom({
         type: 'betterendforge:alloying',
-        ingredients: [
-            {tag: tag},
-            {tag: tag}
-        ],
-        result: ingredient.of(ingot, 3),
+        ingredients: [{ tag: tag }, { tag: tag }],
+        result: Ingredient.of(ingot, 3),
         experience: 2,
         smelttime: 300
-    })
+    });
 }
 
 function bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem) {
@@ -166,7 +163,7 @@ function bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem) {
     }
 
     var inputs = ['#forge:ores/' + material, '#bloodmagic:arc/cuttingfluid'],
-        output = item.of(gem, 2);
+        output = Item.of(gem, 2);
 
     event.recipes.bloodmagic.alchemytable(output, inputs).syphon(400).ticks(200).upgradeLevel(1);
 }
@@ -179,7 +176,7 @@ function bloodmagic_ore_processing_arc(event, material, ore, dust, gem) {
     if (ore != air && gem != air) {
         data.recipes.push({
             input: '#forge:ores/' + material,
-            output: item.of(gem, 5),
+            output: Item.of(gem, 5),
             addedOutput: [],
             tool: '#bloodmagic:arc/cuttingfluid'
         });
@@ -188,7 +185,7 @@ function bloodmagic_ore_processing_arc(event, material, ore, dust, gem) {
     if (gem != air && dust != air) {
         data.recipes.push({
             input: '#forge:gems/' + material,
-            output: item.of(dust, 1),
+            output: Item.of(dust, 1),
             addedOutput: [],
             tool: '#bloodmagic:arc/explosive'
         });
@@ -279,14 +276,14 @@ function create_ore_processing_with_secondary_outputs(event, material, crushedOr
             return;
     }
 
-    var secondaryOutput = getPreferredItemInTag(ingredient.of('#create:crushed_ores/' + secondaryMaterial)).id;
+    var secondaryOutput = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + secondaryMaterial)).id;
     var primaryChance = 0.25,
         secondaryChance = 0.05;
 
     var outputs = [
-        item.of(primaryOutput),
-        item.of(primaryOutput, primaryCount).withChance(primaryChance),
-        item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
+        Item.of(primaryOutput),
+        Item.of(primaryOutput, primaryCount).withChance(primaryChance),
+        Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
     ];
 
     event.recipes.create.milling(outputs, input).processingTime(processingTime);
@@ -294,9 +291,9 @@ function create_ore_processing_with_secondary_outputs(event, material, crushedOr
     primaryChance = 0.6;
     secondaryChance = 0.1;
     outputs = [
-        item.of(primaryOutput),
-        item.of(primaryOutput, primaryCount).withChance(primaryChance),
-        item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
+        Item.of(primaryOutput),
+        Item.of(primaryOutput, primaryCount).withChance(primaryChance),
+        Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
         Item.of(stoneOutput).withChance(0.125)
     ];
     event.recipes.create.crushing(outputs, input).processingTime(processingTime);
@@ -374,8 +371,8 @@ function create_gem_processing(event, material, ore, gem, dust) {
             return;
     }
     var outputs = [
-        item.of(output, primaryCount),
-        item.of(output, secondaryCount).withChance(secondaryChance),
+        Item.of(output, primaryCount),
+        Item.of(output, secondaryCount).withChance(secondaryChance),
         Item.of(stoneOutput).withChance(0.125)
     ];
 
@@ -388,7 +385,7 @@ function create_ingot_gem_milling(event, material, ingot, dust, gem) {
     }
 
     var input,
-        outputs = [item.of(dust, 1)],
+        outputs = [Item.of(dust, 1)],
         processingTime = 300;
     if (ingot != air) {
         input = '#forge:ingots/' + material;
@@ -481,7 +478,7 @@ function immersiveengineering_ore_processing(event, material, ore, gem) {
         default:
             return;
     }
-    var output = item.of(gem, count);
+    var output = Item.of(gem, count);
 
     event.recipes.immersiveengineering.crusher(output, input).energy(2000);
 }
@@ -724,7 +721,7 @@ function thermal_press_plates(event, material, gem, plate) {
     var output = plate;
     var input = '#forge:gems/' + material;
 
-    event.recipes.thermal.press(item.of(output), input);
+    event.recipes.thermal.press(Item.of(output), input);
 }
 
 function thermal_press_wires(event, material, wire) {
@@ -732,7 +729,7 @@ function thermal_press_wires(event, material, wire) {
         return;
     }
 
-    var output = item.of(wire, 2),
+    var output = Item.of(wire, 2),
         input = '#forge:ingots/' + material,
         mold = 'immersiveengineering:mold_wire';
     event.recipes.thermal.press(output, [input, mold]).energy(2400);

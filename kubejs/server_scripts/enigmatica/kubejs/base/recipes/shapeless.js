@@ -30,18 +30,18 @@ events.listen('recipes', (event) => {
         ]),
         shapelessRecipe('minecraft:wheat_seeds', ['minecraft:wheat']),
         shapelessRecipe('quark:root', ['minecraft:vine', '#forge:dyes/brown']),
-        shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }), [
+        shapelessRecipe(Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }), [
             'minecraft:book',
             '#forge:dyes/yellow'
         ]),
-        shapelessRecipe(item.of('bambooeverything:bamboo_bundle', 2), ['thermal:bamboo_block', 'thermal:bamboo_block']),
-        shapelessRecipe(item.of('thermal:bamboo_block', 2), ['quark:bamboo_block', 'quark:bamboo_block']),
-        shapelessRecipe(item.of('quark:bamboo_block', 2), [
+        shapelessRecipe(Item.of('bambooeverything:bamboo_bundle', 2), ['thermal:bamboo_block', 'thermal:bamboo_block']),
+        shapelessRecipe(Item.of('thermal:bamboo_block', 2), ['quark:bamboo_block', 'quark:bamboo_block']),
+        shapelessRecipe(Item.of('quark:bamboo_block', 2), [
             'bambooeverything:bamboo_bundle',
             'bambooeverything:bamboo_bundle'
         ]),
         shapelessRecipe('minecraft:crafting_table', ['#forge:workbench']),
-        shapelessRecipe(item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }), [
+        shapelessRecipe(Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }), [
             'minecraft:sugar',
             'minecraft:book'
         ]),
@@ -172,7 +172,7 @@ events.listen('recipes', (event) => {
     });
 
     materialsToUnify.forEach((material) => {
-        var ore = item.of(`emendatusenigmatica:${material}_ore`);
+        var ore = Item.of(`emendatusenigmatica:${material}_ore`);
         if (ore.exists) {
             event.shapeless(ore, `#forge:ores/${material}`);
         }

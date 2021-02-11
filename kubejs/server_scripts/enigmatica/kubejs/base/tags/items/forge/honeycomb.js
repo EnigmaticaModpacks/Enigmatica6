@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     const beeTiers = {
         tier1: [
             { material: 'coal' },
