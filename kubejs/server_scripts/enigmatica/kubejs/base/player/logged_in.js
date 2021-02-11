@@ -3,4 +3,6 @@ events.listen('player.logged_in', (event) => {
         event.player.give(item.of('ftbquests:book'));
         event.addGameStage('starting_items');
     }
+
+    setMode(event.player);
 });

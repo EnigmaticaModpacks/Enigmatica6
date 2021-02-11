@@ -50,3 +50,13 @@ const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
+
+setMode = (player) => {
+    if (global.packmode == 'expert') {
+        console.log('Completing Expert Gate Quest for ' + player.toString());
+        player.data.ftbquests.complete('0000000000000FEC');
+    } else {
+        console.log('Resetting Expert Gate Quest for ' + player.toString());
+        player.data.ftbquests.reset('0000000000000FEC');
+    }
+};
