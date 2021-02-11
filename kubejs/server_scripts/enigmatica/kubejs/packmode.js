@@ -21,7 +21,9 @@ events.listen('server.datapack.high_priority', (event) => {
     global.packmode = config.mode;
     console.log(`Current packmode is: ${global.packmode}`);
 
-    event.server.players.forEach((player) => {
-        setMode(player);
-    });
+    if (event.server) {
+        event.server.players.forEach((player) => {
+            setMode(player);
+        });
+    }
 });
