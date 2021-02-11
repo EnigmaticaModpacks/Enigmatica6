@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var storageBlocks = 'forge:storage_blocks';
     event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');
     event

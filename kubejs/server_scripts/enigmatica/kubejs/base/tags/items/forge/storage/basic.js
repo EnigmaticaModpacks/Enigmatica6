@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aquaculture:neptunes_bounty',
         'blockcarpentry:frame_chest',

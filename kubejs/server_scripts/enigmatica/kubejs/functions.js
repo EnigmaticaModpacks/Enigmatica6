@@ -20,7 +20,7 @@ function entryIsBlacklisted(material, type) {
 }
 
 function tagIsEmpty(tag) {
-    return getPreferredItemInTag(ingredient.of(tag)).id == air;
+    return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 }
 
 function getPreferredItemInTag(tag) {
@@ -28,7 +28,7 @@ function getPreferredItemInTag(tag) {
         utils
             .listOf(tag.stacks)
             .toArray()
-            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
+            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
     return pref;
 }
 function compareIndices(a, b, tag) {

@@ -1,6 +1,6 @@
-events.listen('item.tags', function (event) {
-    var irontags = ['', '_aluminum', '_lead', '_tin', '_copper', '_brass']; 
-    
+events.listen('item.tags', (event) => {
+    var irontags = ['', '_aluminum', '_lead', '_tin', '_copper', '_brass'];
+
     irontags.forEach(function (tag) {
         event.remove('forge:ingots/iron' + tag, 'dustrial_decor:rusty_iron_ingot');
     });

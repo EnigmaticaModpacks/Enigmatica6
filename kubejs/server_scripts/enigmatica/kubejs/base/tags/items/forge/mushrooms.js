@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'byg:death_cap',
         'byg:shulkren_fungus',
@@ -7,5 +7,5 @@ events.listen('item.tags', function (event) {
         'byg:purple_glowshroom',
         'byg:blue_glowshroom'
     ];
-	event.get('forge:mushrooms').add(items);
+    event.get('forge:mushrooms').add(items);
 });

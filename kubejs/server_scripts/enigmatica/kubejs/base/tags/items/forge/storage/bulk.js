@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'botania:black_hole_talisman',
         'dankstorage:dank_1',

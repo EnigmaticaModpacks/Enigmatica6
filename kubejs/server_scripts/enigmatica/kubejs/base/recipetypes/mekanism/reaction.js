@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var energyMultiplier = 3,
         durationMultiplier = 20;
 

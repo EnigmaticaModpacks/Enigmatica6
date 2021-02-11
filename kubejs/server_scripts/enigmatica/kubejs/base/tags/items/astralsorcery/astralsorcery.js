@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     event
         .get('astralsorcery:crystals/collector')
         .add('astralsorcery:celestial_collector_crystal')

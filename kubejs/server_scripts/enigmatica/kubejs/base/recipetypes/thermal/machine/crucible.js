@@ -3,6 +3,6 @@ events.listen('recipes', (event) => {
         if (honeyVariety == 'resourcefulbees:honey') {
             return;
         }
-        event.recipes.thermal.crucible(fluid.of(honeyVariety, 1000), item.of(honeyVariety + '_block'));
+        event.recipes.thermal.crucible(fluid.of(honeyVariety, 1000), Item.of(honeyVariety + '_block'));
     });
 });

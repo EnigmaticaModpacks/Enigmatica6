@@ -3,6 +3,6 @@ events.listen('recipes', (event) => {
         if (honeyVariety == 'resourcefulbees:honey') {
             return;
         }
-        event.recipes.thermal.chiller(item.of(honeyVariety + '_block'), fluid.of(honeyVariety, 1000));
+        event.recipes.thermal.chiller(Item.of(honeyVariety + '_block'), fluid.of(honeyVariety, 1000));
     });
 });

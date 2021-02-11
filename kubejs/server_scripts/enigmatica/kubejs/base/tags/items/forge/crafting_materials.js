@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     event
         .get('enigmatica:crafting_materials/diamond')
         .add('mekanism:enriched_diamond')
