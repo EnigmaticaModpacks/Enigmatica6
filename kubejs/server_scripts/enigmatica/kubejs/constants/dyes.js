@@ -918,6 +918,251 @@ const dyeSources = [
         primary: 'minecraft:pink_dye',
         secondary: 'minecraft:light_blue_dye',
         tertiary: 'minecraft:cyan_dye'
+    },
+    {
+        input: 'atmospheric:tall_yucca_flower',
+        type: 'large',
+        primary: 'minecraft:light_gray_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:gray_dye'
+    },
+    {
+        input: 'atmospheric:gilia',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:magenta_dye'
+    },
+    {
+        input: 'atmospheric:yucca_flower',
+        type: 'small',
+        primary: 'minecraft:light_gray_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:gray_dye'
+    },
+    {
+        input: 'atmospheric:scalding_monkey_brush',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:yellow_dye'
+    },
+    {
+        input: 'atmospheric:hot_monkey_brush',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:red_dye'
+    },
+    {
+        input: 'atmospheric:warm_monkey_brush',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
+        input: 'atmospheric:water_hyacinth',
+        type: 'large',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:magenta_dye'
+    },
+    {
+        input: 'atmospheric:yucca_fruit',
+        type: 'small',
+        primary: 'minecraft:lime_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'atmospheric:roasted_yucca_fruit',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
+        input: 'upgrade_aquatic:acan_coral',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:cyan_dye'
+    },
+    {
+        input: 'upgrade_aquatic:acan_coral_fan',
+        type: 'small',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:cyan_dye'
+    },
+    {
+        input: 'upgrade_aquatic:branch_coral',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
+        input: 'upgrade_aquatic:branch_coral_fan',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
+    },
+    {
+        input: 'upgrade_aquatic:chrome_coral',
+        type: 'small',
+        primary: 'minecraft:gray_dye',
+        secondary: 'minecraft:gray_dye',
+        tertiary: 'minecraft:gray_dye'
+    },
+    {
+        input: 'upgrade_aquatic:chrome_coral_fan',
+        type: 'small',
+        primary: 'minecraft:gray_dye',
+        secondary: 'minecraft:gray_dye',
+        tertiary: 'minecraft:gray_dye'
+    },
+    {
+        input: 'upgrade_aquatic:finger_coral',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
+        input: 'upgrade_aquatic:finger_coral_fan',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
+        input: 'upgrade_aquatic:moss_coral',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'upgrade_aquatic:moss_coral_fan',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'upgrade_aquatic:petal_coral',
+        type: 'small',
+        primary: 'minecraft:light_blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_blue_dye'
+    },
+    {
+        input: 'upgrade_aquatic:petal_coral_fan',
+        type: 'small',
+        primary: 'minecraft:light_blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_blue_dye'
+    },
+    {
+        input: 'upgrade_aquatic:pillow_coral',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:white_dye'
+    },
+    {
+        input: 'upgrade_aquatic:pillow_coral_fan',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:white_dye'
+    },
+    {
+        input: 'upgrade_aquatic:rock_coral',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'upgrade_aquatic:rock_coral_fan',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'upgrade_aquatic:silk_coral',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+    {
+        input: 'upgrade_aquatic:silk_coral_fan',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:purple_dye'
+    },
+    {
+        input: 'upgrade_aquatic:star_coral',
+        type: 'small',
+        primary: 'minecraft:lime_dye',
+        secondary: 'minecraft:lime_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'upgrade_aquatic:star_coral_fan',
+        type: 'small',
+        primary: 'minecraft:lime_dye',
+        secondary: 'minecraft:lime_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'upgrade_aquatic:flowering_rush',
+        type: 'tall',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'upgrade_aquatic:pink_searocket',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'upgrade_aquatic:white_searocket',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:light_gray_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'upgrade_aquatic:purple_pickerelweed',
+        type: 'tall',
+        primary: 'minecraft:cyan_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'upgrade_aquatic:blue_pickerelweed',
+        type: 'tall',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'autumnity:autumn_crocus',
+        type: 'small',
+        primary: 'minecraft:magenta_dye',
+        secondary: 'minecraft:pink_dye',
+        tertiary: 'minecraft:lime_dye'
     }
 ];
 

@@ -43,6 +43,16 @@ events.listen('recipes', (event) => {
                 input: 'byg:black_sandstone',
                 outputs: [Item.of('byg:black_sand')],
                 processingTime: 150
+            },
+            {
+                input: 'atmospheric:arid_sandstone',
+                outputs: [Item.of('atmospheric:arid_sand')],
+                processingTime: 150
+            },
+            {
+                input: 'atmospheric:red_arid_sandstone',
+                outputs: [Item.of('atmospheric:red_arid_sand')],
+                processingTime: 150
             }
         ]
     };

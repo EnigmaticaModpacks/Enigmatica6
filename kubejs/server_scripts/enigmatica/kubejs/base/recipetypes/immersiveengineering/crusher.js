@@ -49,27 +49,37 @@ events.listen('recipes', (event) => {
             {
                 input: 'byg:pink_sandstone',
                 output: Item.of('byg:pink_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
             },
             {
                 input: 'byg:purple_sandstone',
                 output: Item.of('byg:purple_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
             },
             {
                 input: 'byg:blue_sandstone',
                 output: Item.of('byg:blue_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
             },
             {
                 input: 'byg:white_sandstone',
                 output: Item.of('byg:white_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
             },
             {
                 input: 'byg:black_sandstone',
                 output: Item.of('byg:black_sand', 2),
-                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.5)]
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
+            },
+            {
+                input: 'atmospheric:arid_sandstone',
+                output: Item.of('atmospheric:arid_sand', 2),
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
+            },
+            {
+                input: 'atmospheric:red_arid_sandstone',
+                output: Item.of('atmospheric:red_arid_sand', 2),
+                secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
             }
         ]
     };

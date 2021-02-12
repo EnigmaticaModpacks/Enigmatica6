@@ -34,6 +34,19 @@ const cropRegistry = [
                 render: 'minecraft:cactus',
                 plant: 'minecraft:cactus',
                 substrate: 'sand'
+            },
+            {
+                seed: 'atmospheric:aloe_kernels',
+                render: 'atmospheric:aloe_vera',
+                plant: 'atmospheric:aloe_leaves',
+                plantSecondary: 'atmospheric:yellow_blossoms',
+                substrate: 'arid_sand'
+            },
+            {
+                seed: 'atmospheric:barrel_cactus',
+                render: 'atmospheric:barrel_cactus',
+                plant: 'atmospheric:barrel_cactus',
+                substrate: 'arid_sand'
             }
         ]
     },
@@ -217,6 +230,234 @@ const cropRegistry = [
                 seed: 'betterendforge:bubble_coral',
                 render: 'betterendforge:bubble_coral',
                 plant: 'betterendforge:bubble_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:acan_coral',
+                render: 'upgrade_aquatic:acan_coral',
+                plant: 'upgrade_aquatic:acan_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:acan_coral_block',
+                render: 'upgrade_aquatic:acan_coral_block',
+                plant: 'upgrade_aquatic:acan_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:acan_coral_fan',
+                render: 'upgrade_aquatic:acan_coral_fan',
+                plant: 'upgrade_aquatic:acan_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:branch_coral',
+                render: 'upgrade_aquatic:branch_coral',
+                plant: 'upgrade_aquatic:branch_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:branch_coral_block',
+                render: 'upgrade_aquatic:branch_coral_block',
+                plant: 'upgrade_aquatic:branch_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:branch_coral_fan',
+                render: 'upgrade_aquatic:branch_coral_fan',
+                plant: 'upgrade_aquatic:branch_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:chrome_coral',
+                render: 'upgrade_aquatic:chrome_coral',
+                plant: 'upgrade_aquatic:chrome_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:chrome_coral_block',
+                render: 'upgrade_aquatic:chrome_coral_block',
+                plant: 'upgrade_aquatic:chrome_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:chrome_coral_fan',
+                render: 'upgrade_aquatic:chrome_coral_fan',
+                plant: 'upgrade_aquatic:chrome_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:elder_prismarine_coral',
+                render: 'upgrade_aquatic:elder_prismarine_coral',
+                plant: 'upgrade_aquatic:elder_prismarine_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:elder_prismarine_coral_block',
+                render: 'upgrade_aquatic:elder_prismarine_coral_block',
+                plant: 'upgrade_aquatic:elder_prismarine_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:elder_prismarine_coral_fan',
+                render: 'upgrade_aquatic:elder_prismarine_coral_fan',
+                plant: 'upgrade_aquatic:elder_prismarine_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:elder_prismarine_coral_shower',
+                render: 'upgrade_aquatic:elder_prismarine_coral_shower',
+                plant: 'upgrade_aquatic:elder_prismarine_coral_shower',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:finger_coral',
+                render: 'upgrade_aquatic:finger_coral',
+                plant: 'upgrade_aquatic:finger_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:finger_coral_block',
+                render: 'upgrade_aquatic:finger_coral_block',
+                plant: 'upgrade_aquatic:finger_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:finger_coral_fan',
+                render: 'upgrade_aquatic:finger_coral_fan',
+                plant: 'upgrade_aquatic:finger_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:moss_coral',
+                render: 'upgrade_aquatic:moss_coral',
+                plant: 'upgrade_aquatic:moss_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:moss_coral_block',
+                render: 'upgrade_aquatic:moss_coral_block',
+                plant: 'upgrade_aquatic:moss_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:moss_coral_fan',
+                render: 'upgrade_aquatic:moss_coral_fan',
+                plant: 'upgrade_aquatic:moss_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:petal_coral',
+                render: 'upgrade_aquatic:petal_coral',
+                plant: 'upgrade_aquatic:petal_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:petal_coral_block',
+                render: 'upgrade_aquatic:petal_coral_block',
+                plant: 'upgrade_aquatic:petal_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:petal_coral_fan',
+                render: 'upgrade_aquatic:petal_coral_fan',
+                plant: 'upgrade_aquatic:petal_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:pillow_coral',
+                render: 'upgrade_aquatic:pillow_coral',
+                plant: 'upgrade_aquatic:pillow_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:pillow_coral_block',
+                render: 'upgrade_aquatic:pillow_coral_block',
+                plant: 'upgrade_aquatic:pillow_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:pillow_coral_fan',
+                render: 'upgrade_aquatic:pillow_coral_fan',
+                plant: 'upgrade_aquatic:pillow_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:prismarine_coral',
+                render: 'upgrade_aquatic:prismarine_coral',
+                plant: 'upgrade_aquatic:prismarine_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:prismarine_coral_block',
+                render: 'upgrade_aquatic:prismarine_coral_block',
+                plant: 'upgrade_aquatic:prismarine_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:prismarine_coral_fan',
+                render: 'upgrade_aquatic:prismarine_coral_fan',
+                plant: 'upgrade_aquatic:prismarine_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:prismarine_coral_shower',
+                render: 'upgrade_aquatic:prismarine_coral_shower',
+                plant: 'upgrade_aquatic:prismarine_coral_shower',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:rock_coral',
+                render: 'upgrade_aquatic:rock_coral',
+                plant: 'upgrade_aquatic:rock_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:rock_coral_block',
+                render: 'upgrade_aquatic:rock_coral_block',
+                plant: 'upgrade_aquatic:rock_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:rock_coral_fan',
+                render: 'upgrade_aquatic:rock_coral_fan',
+                plant: 'upgrade_aquatic:rock_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:silk_coral',
+                render: 'upgrade_aquatic:silk_coral',
+                plant: 'upgrade_aquatic:silk_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:silk_coral_block',
+                render: 'upgrade_aquatic:silk_coral_block',
+                plant: 'upgrade_aquatic:silk_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:silk_coral_fan',
+                render: 'upgrade_aquatic:silk_coral_fan',
+                plant: 'upgrade_aquatic:silk_coral_fan',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:star_coral',
+                render: 'upgrade_aquatic:star_coral',
+                plant: 'upgrade_aquatic:star_coral',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:star_coral_block',
+                render: 'upgrade_aquatic:star_coral_block',
+                plant: 'upgrade_aquatic:star_coral_block',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:star_coral_fan',
+                render: 'upgrade_aquatic:star_coral_fan',
+                plant: 'upgrade_aquatic:star_coral_fan',
                 substrate: 'water'
             }
         ]
@@ -1145,6 +1386,72 @@ const cropRegistry = [
                 render: 'betterendforge:twisted_umbrella_moss',
                 plant: 'betterendforge:twisted_umbrella_moss',
                 substrate: 'jungle_moss'
+            },
+            {
+                seed: 'atmospheric:tall_yucca_flower',
+                render: 'atmospheric:tall_yucca_flower',
+                plant: 'atmospheric:tall_yucca_flower',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atmospheric:gilia',
+                render: 'atmospheric:gilia',
+                plant: 'atmospheric:gilia',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atmospheric:yucca_flower',
+                render: 'atmospheric:yucca_flower',
+                plant: 'atmospheric:yucca_flower',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atmospheric:scalding_monkey_brush',
+                render: 'atmospheric:scalding_monkey_brush',
+                plant: 'atmospheric:scalding_monkey_brush',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atmospheric:hot_monkey_brush',
+                render: 'atmospheric:hot_monkey_brush',
+                plant: 'atmospheric:hot_monkey_brush',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atmospheric:warm_monkey_brush',
+                render: 'atmospheric:warm_monkey_brush',
+                plant: 'atmospheric:warm_monkey_brush',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atmospheric:water_hyacinth',
+                render: 'atmospheric:water_hyacinth',
+                plant: 'atmospheric:water_hyacinth',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:flowering_rush',
+                render: 'upgrade_aquatic:flowering_rush',
+                plant: 'upgrade_aquatic:flowering_rush',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:pink_searocket',
+                render: 'upgrade_aquatic:pink_searocket',
+                plant: 'upgrade_aquatic:pink_searocket',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'upgrade_aquatic:white_searocket',
+                render: 'upgrade_aquatic:white_searocket',
+                plant: 'upgrade_aquatic:white_searocket',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'autumnity:autumn_crocus',
+                render: 'autumnity:autumn_crocus',
+                plant: 'autumnity:autumn_crocus',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1456,6 +1763,18 @@ const cropRegistry = [
                 render: 'betterendforge:amber_grass',
                 plant: 'betterendforge:amber_grass',
                 substrate: 'amber_moss'
+            },
+            {
+                seed: 'upgrade_aquatic:tall_beachgrass',
+                render: 'upgrade_aquatic:tall_beachgrass',
+                plant: 'upgrade_aquatic:tall_beachgrass',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'upgrade_aquatic:beachgrass',
+                render: 'upgrade_aquatic:beachgrass',
+                plant: 'upgrade_aquatic:beachgrass',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1472,6 +1791,30 @@ const cropRegistry = [
                 seed: 'undergarden:glowing_kelp',
                 render: 'undergarden:glowing_kelp_plant',
                 plant: 'undergarden:glowing_kelp',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:polar_kelp',
+                render: 'upgrade_aquatic:polar_kelp',
+                plant: 'upgrade_aquatic:polar_kelp',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:ochre_kelp',
+                render: 'upgrade_aquatic:ochre_kelp',
+                plant: 'upgrade_aquatic:ochre_kelp',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:thorny_kelp',
+                render: 'upgrade_aquatic:thorny_kelp',
+                plant: 'upgrade_aquatic:thorny_kelp',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:tongue_kelp',
+                render: 'upgrade_aquatic:tongue_kelp',
+                plant: 'upgrade_aquatic:tongue_kelp',
                 substrate: 'water'
             }
         ]
@@ -1645,6 +1988,13 @@ const cropRegistry = [
                 render: 'undergarden:underbean_bush',
                 plant: 'undergarden:underbeans',
                 substrate: 'deepturf'
+            },
+            {
+                seed: 'autumnity:foul_berries',
+                render: 'autumnity:foul_berry_bush',
+                plant: 'autumnity:foul_berries',
+                plantSecondary: '',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1798,6 +2148,12 @@ const cropRegistry = [
                 plant: 'betterendforge:hydralux_petal',
                 plantSecondary: 'betterendforge:hydralux_sapling',
                 substrate: 'water'
+            },
+            {
+                seed: 'atmospheric:passion_vine',
+                render: 'atmospheric:passion_vine',
+                plant: 'atmospheric:passion_vine',
+                substrate: 'dirt'
             }
         ]
     }
