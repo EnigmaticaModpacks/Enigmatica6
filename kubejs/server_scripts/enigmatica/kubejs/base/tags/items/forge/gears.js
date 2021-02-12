@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     event.get('forge:gears/gold_bronze').add('#forge:gears/gold').add('#forge:gears/bronze');
     event.get('forge:gears/gold_copper').add('#forge:gears/gold').add('#forge:gears/copper');
     event.get('forge:gears/gold_diamond').add('#forge:gears/gold').add('#forge:gears/diamond');

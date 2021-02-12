@@ -524,8 +524,12 @@
 				item: "industrialforegoing:mycelial_reactor"
 			}],
 			rewards: [{
-				id: "0000000000000F26",
-				type: "loot"
+				id: "00EAC9D358EBDA6E",
+				type: "command",
+				title: "Epic Industrial Foregoing Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_industrial_foregoing_loot_epic",
+				player_command: false
 			}]
 		},
 		{

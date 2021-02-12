@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'botania:bauble_box',
         'botania:ender_hand',

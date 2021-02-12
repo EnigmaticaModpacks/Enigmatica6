@@ -1,4 +1,4 @@
-// events.listen('fluid.tags', function (event) {
+// events.listen('fluid.tags', (event) => {
 //     event
 //         .get('minecraft:water')
 //         .remove([

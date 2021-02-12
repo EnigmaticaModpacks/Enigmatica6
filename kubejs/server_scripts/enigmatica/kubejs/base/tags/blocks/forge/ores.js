@@ -1,4 +1,4 @@
-events.listen('block.tags', function (event) {
+events.listen('block.tags', (event) => {
     event
         .get('forge:ores')
         .add(['powah:uraninite_ore_poor', 'powah:uraninite_ore', 'powah:uraninite_ore_dense'])

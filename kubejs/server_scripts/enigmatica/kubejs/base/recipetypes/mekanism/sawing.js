@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var sawDust = 'emendatusenigmatica:wood_dust';
-    event.recipes.mekanism.sawing(item.of(sawDust), '#forge:rods/wooden');
+    event.recipes.mekanism.sawing(Item.of(sawDust), '#forge:rods/wooden');
 });

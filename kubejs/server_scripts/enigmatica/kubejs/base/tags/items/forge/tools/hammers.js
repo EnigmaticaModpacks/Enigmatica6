@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'vanillahammers:bone_hammer',
         'vanillahammers:coal_hammer',

@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var gems = 'forge:gems';
     var gems_ender = gems + '/ender';
 

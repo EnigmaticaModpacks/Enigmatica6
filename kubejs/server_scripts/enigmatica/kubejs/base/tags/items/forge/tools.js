@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     const knives = [
         'farmersdelight:flint_knife',
         'farmersdelight:iron_knife',
