@@ -131,6 +131,7 @@
 		},
 		{
 			title: "Fluid Transportation",
+			icon: "minecraft:water_bucket",
 			x: -3.0d,
 			y: 0.0d,
 			description: ["The following 3 blocks relate to Fluid Transportation."],
@@ -143,6 +144,13 @@
 		},
 		{
 			title: "RF Transportation",
+			icon: {
+				id: "integrateddynamics:energy_battery",
+				Count: 1b,
+				tag: {
+					energy: 1000000
+				}
+			},
 			x: 3.0d,
 			y: 0.0d,
 			description: ["The following 3 blocks relate to RF transportation."],
@@ -155,6 +163,7 @@
 		},
 		{
 			title: "Item Transportation",
+			icon: "minecraft:item_frame",
 			x: 0.0d,
 			y: -3.0d,
 			description: ["The following 3 blocks relate to Item Transportation."],
