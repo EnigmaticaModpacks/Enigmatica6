@@ -500,12 +500,81 @@ const treeRegistry = [
                 trunk: 'betterendforge:dragon_tree_log',
                 leaf: 'betterendforge:dragon_tree_leaves',
                 substrate: 'shadow_grass'
-            }, 
+            },
             {
                 sapling: 'integrateddynamics:menril_sapling',
                 trunk: 'integrateddynamics:menril_log',
                 leaf: 'integrateddynamics:menril_leaves',
                 fruit: 'integrateddynamics:menril_berries',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:rosewood_sapling',
+                trunk: 'atmospheric:rosewood_log',
+                leaf: 'atmospheric:rosewood_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:morado_sapling',
+                trunk: 'atmospheric:morado_log',
+                leaf: 'atmospheric:morado_leaves',
+                extraDecoration: 'atmospheric:flowering_morado_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:yucca_sapling',
+                trunk: 'atmospheric:yucca_log',
+                leaf: 'atmospheric:yucca_leaves',
+                fruit: 'atmospheric:yucca_bundle',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:kousa_sapling',
+                trunk: 'atmospheric:kousa_log',
+                leaf: 'atmospheric:kousa_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:aspen_sapling',
+                trunk: 'atmospheric:aspen_log',
+                leaf: 'atmospheric:aspen_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:grimwood_sapling',
+                trunk: 'atmospheric:grimwood_log',
+                leaf: 'atmospheric:grimwood_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'upgrade_aquatic:river_sapling',
+                trunk: 'upgrade_aquatic:river_log',
+                leaf: 'upgrade_aquatic:river_leaves',
+                fruit: 'upgrade_aquatic:mulberry',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:red_maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:red_maple_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:orange_maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:orange_maple_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:yellow_maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:yellow_maple_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:maple_leaves',
                 substrate: 'dirt'
             }
         ]

@@ -36,6 +36,14 @@ events.listen('recipes', (event) => {
             {
                 inputs: [Item.of('byg:black_sandstone', 1), Item.of('thermal:press_unpacking_die')],
                 output: Item.of('byg:black_sand', 4)
+            },
+            {
+                inputs: [Item.of('atmospheric:arid_sandstone', 1), Item.of('thermal:press_unpacking_die')],
+                output: Item.of('atmospheric:arid_sand', 4)
+            },
+            {
+                inputs: [Item.of('atmospheric:red_arid_sandstone', 1), Item.of('thermal:press_unpacking_die')],
+                output: Item.of('atmospheric:red_arid_sand', 4)
             }
         ]
     };

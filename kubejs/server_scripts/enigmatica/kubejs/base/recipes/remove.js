@@ -218,4 +218,7 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
     event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
     event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
+    event.remove({
+        id: '/integrateddynamics:\\w+/convenience/minecraft_dye/'
+    });
 });

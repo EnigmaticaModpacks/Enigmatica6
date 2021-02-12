@@ -3,12 +3,75 @@ events.listen('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         var sawDust = 'emendatusenigmatica:wood_dust';
 
+        create_cutting(event, variant);
         immersiveengineering_sawing(event, variant, sawDust);
         mekanism_sawing(event, variant, sawDust);
         pedestal_sawing(event, variant);
         thermal_sawing(event, variant, sawDust);
     });
 });
+
+function create_cutting(event, variant) {
+    var modID = variant.logBlock.split(':')[0];
+
+    // mod blacklist
+    if (
+        modID == 'minecraft' ||
+        modID == 'integrateddynamics' ||
+        variant.modId == 'autumnity' ||
+        variant.modId == 'atmospheric' ||
+        variant.modId == 'upgrade_aquatic'
+    ) {
+        return;
+    }
+
+    data = {
+        recipes: [
+            {
+                input: variant.logBlock,
+                output: variant.logBlockStripped,
+                count: 1,
+                time: 50
+            },
+            {
+                input: variant.woodBlock,
+                output: variant.woodBlockStripped,
+                count: 1,
+                time: 50
+            },
+            {
+                input: variant.logBlockStripped,
+                output: variant.plankBlock,
+                count: 5,
+                time: 100
+            },
+            {
+                input: variant.woodBlockStripped,
+                output: variant.plankBlock,
+                count: 5,
+                time: 100
+            }
+        ]
+    };
+
+    data.recipes.forEach((recipe) => {
+        event.recipes.create.cutting({
+            type: 'create:cutting',
+            ingredients: [
+                {
+                    item: recipe.input
+                }
+            ],
+            results: [
+                {
+                    item: recipe.output,
+                    count: recipe.count
+                }
+            ],
+            processingTime: recipe.time
+        });
+    });
+}
 
 function immersiveengineering_sawing(event, variant, sawDust) {
     // mod blacklist
@@ -161,7 +224,13 @@ function pedestal_sawing(event, variant) {
 }
 function thermal_sawing(event, variant, sawDust) {
     // mod blacklist
-    if (variant.modId == 'minecraft' || variant.modId == 'byg') {
+    if (
+        variant.modId == 'minecraft' ||
+        variant.modId == 'byg' ||
+        variant.modId == 'autumnity' ||
+        variant.modId == 'atmospheric' ||
+        variant.modId == 'upgrade_aquatic'
+    ) {
         return;
     }
 
