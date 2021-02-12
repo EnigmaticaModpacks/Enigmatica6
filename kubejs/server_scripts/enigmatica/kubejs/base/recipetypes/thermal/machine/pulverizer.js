@@ -70,7 +70,7 @@ events.listen('recipes', (event) => {
                 input: 'byg:pink_sandstone',
                 outputs: [
                     Item.of('byg:pink_sand', 2),
-                    Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
                 experience: 0.2
             },
@@ -78,7 +78,7 @@ events.listen('recipes', (event) => {
                 input: 'byg:purple_sandstone',
                 outputs: [
                     Item.of('byg:purple_sand', 2),
-                    Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
                 experience: 0.2
             },
@@ -86,7 +86,7 @@ events.listen('recipes', (event) => {
                 input: 'byg:blue_sandstone',
                 outputs: [
                     Item.of('byg:blue_sand', 2),
-                    Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
                 experience: 0.2
             },
@@ -94,7 +94,7 @@ events.listen('recipes', (event) => {
                 input: 'byg:white_sandstone',
                 outputs: [
                     Item.of('byg:white_sand', 2),
-                    Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
                 experience: 0.2
             },
@@ -102,7 +102,23 @@ events.listen('recipes', (event) => {
                 input: 'byg:black_sandstone',
                 outputs: [
                     Item.of('byg:black_sand', 2),
-                    Item.of('emendatusenigmatica:potassium_nitrate_gem').chance(0.3)
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'atmospheric:arid_sandstone',
+                outputs: [
+                    Item.of('atmospheric:arid_sand', 2),
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
+                ],
+                experience: 0.2
+            },
+            {
+                input: 'atmospheric:red_arid_sandstone',
+                outputs: [
+                    Item.of('atmospheric:red_arid_sand', 2),
+                    Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
                 experience: 0.2
             },

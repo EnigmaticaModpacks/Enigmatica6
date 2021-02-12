@@ -57,7 +57,19 @@ var woodVariantsToConstruct = [
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',
     'ars_nouveau:blue_archwood',
-    'integrateddynamics:menril'
+    'integrateddynamics:menril',
+    'atmospheric:rosewood',
+    'atmospheric:morado',
+    'atmospheric:yucca',
+    'atmospheric:kousa',
+    'atmospheric:aspen',
+    'atmospheric:watchful_aspen',
+    'atmospheric:crustose',
+    'atmospheric:grimwood',
+    'upgrade_aquatic:driftwood',
+    'upgrade_aquatic:river',
+    'autumnity:maple',
+    'autumnity:sappy_maple'
 ];
 
 var buildWoodVariants = [];
@@ -137,6 +149,33 @@ woodVariantsToConstruct.forEach((variant) => {
             break;
         case 'blue_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            break;
+        case 'crustose':
+            logBlockStripped = 'atmospheric:stripped_aspen_log';
+            woodBlockStripped = 'atmospheric:stripped_aspen_wood';
+            plankBlock = 'atmospheric:aspen_planks';
+            break;
+        case 'watchful_aspen':
+            logBlockStripped = 'atmospheric:stripped_aspen_log';
+            woodBlockStripped = 'atmospheric:stripped_aspen_wood';
+            plankBlock = 'atmospheric:aspen_planks';
+            break;
+        case 'sappy_maple':
+            logBlockStripped = 'autumnity:stripped_maple_log';
+            woodBlockStripped = 'autumnity:stripped_maple_wood';
+            plankBlock = 'autumnity:maple_planks';
+            break;
+        case 'driftwood':
+            woodBlock = modId + ':' + logType;
+            woodBlockStripped = modId + ':stripped_' + logType;
+            break;
+        case 'grimwood':
+            woodBlock = modId + ':' + logType;
+            woodBlockStripped = modId + ':stripped_' + logType;
+            break;
+        case 'rosewood':
+            woodBlock = modId + ':' + logType;
+            woodBlockStripped = modId + ':stripped_' + logType;
             break;
         default:
     }

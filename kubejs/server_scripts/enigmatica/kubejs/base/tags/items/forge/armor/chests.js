@@ -46,7 +46,8 @@ events.listen('item.tags', (event) => {
         'eidolon:warlock_cloak',
         'betterendforge:crystalite_chestplate',
         'betterendforge:aeternium_chestplate',
-        'betterendforge:terminite_chestplate'
+        'betterendforge:terminite_chestplate',
+        'autumnity:snail_shell_chestplate'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/chest').add(items);
