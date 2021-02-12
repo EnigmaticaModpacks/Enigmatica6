@@ -3,12 +3,75 @@ events.listen('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         var sawDust = 'emendatusenigmatica:wood_dust';
 
+        create_cutting(event, variant);
         immersiveengineering_sawing(event, variant, sawDust);
         mekanism_sawing(event, variant, sawDust);
         pedestal_sawing(event, variant);
         thermal_sawing(event, variant, sawDust);
     });
 });
+
+function create_cutting(event, variant) {
+    var modID = variant.logBlock.split(':')[0];
+
+    // mod blacklist
+    if (
+        modID == 'minecraft' ||
+        modID == 'integrateddynamics' ||
+        variant.modId == 'autumnity' ||
+        variant.modId == 'atmospheric' ||
+        variant.modId == 'upgrade_aquatic'
+    ) {
+        return;
+    }
+
+    data = {
+        recipes: [
+            {
+                input: variant.logBlock,
+                output: variant.logBlockStripped,
+                count: 1,
+                time: 50
+            },
+            {
+                input: variant.woodBlock,
+                output: variant.woodBlockStripped,
+                count: 1,
+                time: 50
+            },
+            {
+                input: variant.logBlockStripped,
+                output: variant.plankBlock,
+                count: 5,
+                time: 100
+            },
+            {
+                input: variant.woodBlockStripped,
+                output: variant.plankBlock,
+                count: 5,
+                time: 100
+            }
+        ]
+    };
+
+    data.recipes.forEach((recipe) => {
+        event.recipes.create.cutting({
+            type: 'create:cutting',
+            ingredients: [
+                {
+                    item: recipe.input
+                }
+            ],
+            results: [
+                {
+                    item: recipe.output,
+                    count: recipe.count
+                }
+            ],
+            processingTime: recipe.time
+        });
+    });
+}
 
 function immersiveengineering_sawing(event, variant, sawDust) {
     // mod blacklist
@@ -17,7 +80,7 @@ function immersiveengineering_sawing(event, variant, sawDust) {
     }
 
     event.recipes.immersiveengineering
-        .sawmill(item.of(variant.plankBlock, 6), variant.logBlockStripped, [
+        .sawmill(Item.of(variant.plankBlock, 6), variant.logBlockStripped, [
             {
                 stripping: false,
                 output: sawDust
@@ -27,7 +90,7 @@ function immersiveengineering_sawing(event, variant, sawDust) {
 
     event.recipes.immersiveengineering
         .sawmill(
-            item.of(variant.plankBlock, 6),
+            Item.of(variant.plankBlock, 6),
             [variant.logBlock, variant.woodBlock],
             [
                 {
@@ -94,7 +157,7 @@ function mekanism_sawing(event, variant, sawDust) {
                     recipe.input == variant.woodBlock)
             )
         ) {
-            event.recipes.mekanism.sawing(item.of(recipe.output, 6), recipe.input, item.of(sawDust).chance(0.25));
+            event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25));
         }
     });
 }
@@ -161,7 +224,13 @@ function pedestal_sawing(event, variant) {
 }
 function thermal_sawing(event, variant, sawDust) {
     // mod blacklist
-    if (variant.modId == 'minecraft' || variant.modId == 'byg') {
+    if (
+        variant.modId == 'minecraft' ||
+        variant.modId == 'byg' ||
+        variant.modId == 'autumnity' ||
+        variant.modId == 'atmospheric' ||
+        variant.modId == 'upgrade_aquatic'
+    ) {
         return;
     }
 
@@ -190,9 +259,9 @@ function thermal_sawing(event, variant, sawDust) {
         event.recipes.thermal
             .sawmill(
                 [
-                    item.of('integrateddynamics:menril_planks', 6),
-                    item.of('integrateddynamics:crystalized_menril_chunk'),
-                    item.of('emendatusenigmatica:wood_dust').chance(0.25)
+                    Item.of('integrateddynamics:menril_planks', 6),
+                    Item.of('integrateddynamics:crystalized_menril_chunk'),
+                    Item.of('emendatusenigmatica:wood_dust').chance(0.25)
                 ],
                 'integrateddynamics:menril_log_filled'
             )
@@ -209,7 +278,7 @@ function thermal_sawing(event, variant, sawDust) {
             )
         ) {
             event.recipes.thermal
-                .sawmill([item.of(recipe.output, 6), item.of(sawDust).chance(1.25)], recipe.input)
+                .sawmill([Item.of(recipe.output, 6), Item.of(sawDust).chance(1.25)], recipe.input)
                 .energy(1000);
         }
     });
