@@ -26,6 +26,14 @@ events.listen('recipes', function (event) {
                 output: item.of('byg:black_sand', 2)
             },
             {
+                input: 'atmospheric:arid_sandstone',
+                output: item.of('atmospheric:arid_sand', 2)
+            },
+            {
+                input: 'atmospheric:red_arid_sandstone',
+                output: item.of('atmospheric:red_arid_sand', 2)
+            },
+            {
                 input: '#forge:stone',
                 output: 'minecraft:cobblestone'
             },
