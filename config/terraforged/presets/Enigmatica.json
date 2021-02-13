@@ -1,0 +1,414 @@
+{
+  "miscellaneous": {
+    "smoothLayerDecorator": true,
+    "strataRegionSize": 123,
+    "strataDecorator": true,
+    "oreCompatibleStoneOnly": false,
+    "erosionDecorator": true,
+    "plainStoneErosion": false,
+    "naturalSnowDecorator": true,
+    "customBiomeFeatures": true,
+    "vanillaLakes": false,
+    "vanillaSprings": true,
+    "vanillaLavaLakes": true,
+    "vanillaLavaSprings": true,
+    "mountainBiomeUsage": 0.5,
+    "volcanoBiomeUsage": 0.4
+  },
+  "dimensions": {
+    "bedrockLayer": {
+      "material": "minecraft:bedrock",
+      "minDepth": 1,
+      "variance": 0
+    },
+    "dimensions": {
+      "nether": "byg:world",
+      "end": "betterendforge:world_type",
+      "includeExtraDimensions": true
+    }
+  },
+  "structures": {
+    "stronghold": {
+      "distance": 32,
+      "spread": 3,
+      "count": 128
+    },
+    "structures": {
+      "astralsorcery:ancient_shrine": {
+        "spacing": 32,
+        "separation": 4,
+        "salt": 682195674,
+        "disabled": false
+      },
+      "astralsorcery:desert_shrine": {
+        "spacing": 22,
+        "separation": 4,
+        "salt": 1384822269,
+        "disabled": false
+      },
+      "astralsorcery:small_shrine": {
+        "spacing": 22,
+        "separation": 4,
+        "salt": 1549795925,
+        "disabled": false
+      },
+      "dungeoncrawl:dungeon": {
+        "spacing": 60,
+        "separation": 10,
+        "salt": 10387313,
+        "disabled": false
+      },
+      "eidolon:catacomb": {
+        "spacing": 11,
+        "separation": 7,
+        "salt": 1347,
+        "disabled": false
+      },
+      "eidolon:lab": {
+        "spacing": 7,
+        "separation": 5,
+        "salt": 1337,
+        "disabled": false
+      },
+      "eidolon:stray_tower": {
+        "spacing": 16,
+        "separation": 8,
+        "salt": 1341,
+        "disabled": false
+      },
+      "minecraft:buried_treasure": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 0,
+        "disabled": false
+      },
+      "minecraft:desert_pyramid": {
+        "spacing": 24,
+        "separation": 8,
+        "salt": 14357617,
+        "disabled": false
+      },
+      "minecraft:igloo": {
+        "spacing": 24,
+        "separation": 8,
+        "salt": 14357618,
+        "disabled": false
+      },
+      "minecraft:jungle_pyramid": {
+        "spacing": 24,
+        "separation": 8,
+        "salt": 14357619,
+        "disabled": false
+      },
+      "minecraft:mansion": {
+        "spacing": 60,
+        "separation": 20,
+        "salt": 10387319,
+        "disabled": false
+      },
+      "minecraft:mineshaft": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 0,
+        "disabled": false
+      },
+      "minecraft:monument": {
+        "spacing": 32,
+        "separation": 5,
+        "salt": 10387313,
+        "disabled": false
+      },
+      "minecraft:ocean_ruin": {
+        "spacing": 20,
+        "separation": 8,
+        "salt": 14357621,
+        "disabled": false
+      },
+      "minecraft:pillager_outpost": {
+        "spacing": 22,
+        "separation": 8,
+        "salt": 165745296,
+        "disabled": false
+      },
+      "minecraft:ruined_portal": {
+        "spacing": 24,
+        "separation": 15,
+        "salt": 34222645,
+        "disabled": false
+      },
+      "minecraft:shipwreck": {
+        "spacing": 24,
+        "separation": 4,
+        "salt": 165745295,
+        "disabled": false
+      },
+      "minecraft:swamp_hut": {
+        "spacing": 22,
+        "separation": 8,
+        "salt": 14357620,
+        "disabled": false
+      },
+      "minecraft:village": {
+        "spacing": 34,
+        "separation": 8,
+        "salt": 10387312,
+        "disabled": false
+      },
+      "quark:big_dungeon": {
+        "spacing": 40,
+        "separation": 11,
+        "salt": 79234823,
+        "disabled": false
+      },
+      "towers_of_the_wild:derelict_grass_tower": {
+        "spacing": 50,
+        "separation": 24,
+        "salt": 1689781,
+        "disabled": false
+      },
+      "towers_of_the_wild:derelict_tower": {
+        "spacing": 50,
+        "separation": 24,
+        "salt": 1689780,
+        "disabled": false
+      },
+      "towers_of_the_wild:ice_tower": {
+        "spacing": 32,
+        "separation": 20,
+        "salt": 1689779,
+        "disabled": false
+      },
+      "towers_of_the_wild:jungle_tower": {
+        "spacing": 32,
+        "separation": 20,
+        "salt": 1689778,
+        "disabled": false
+      },
+      "towers_of_the_wild:ocean_tower": {
+        "spacing": 32,
+        "separation": 10,
+        "salt": 1689782,
+        "disabled": false
+      },
+      "towers_of_the_wild:ocean_warm_tower": {
+        "spacing": 32,
+        "separation": 10,
+        "salt": 1689782,
+        "disabled": false
+      },
+      "towers_of_the_wild:tower": {
+        "spacing": 32,
+        "separation": 20,
+        "salt": 1689777,
+        "disabled": false
+      },
+      "valhelsia_structures:castle": {
+        "spacing": 22,
+        "separation": 8,
+        "salt": 16987356,
+        "disabled": false
+      },
+      "valhelsia_structures:castle_ruin": {
+        "spacing": 24,
+        "separation": 8,
+        "salt": 14357618,
+        "disabled": false
+      },
+      "valhelsia_structures:desert_house": {
+        "spacing": 18,
+        "separation": 8,
+        "salt": 14862926,
+        "disabled": false
+      },
+      "valhelsia_structures:forge": {
+        "spacing": 22,
+        "separation": 8,
+        "salt": 12857691,
+        "disabled": false
+      },
+      "valhelsia_structures:player_house": {
+        "spacing": 12,
+        "separation": 8,
+        "salt": 17357645,
+        "disabled": false
+      },
+      "valhelsia_structures:small_dungeon": {
+        "spacing": 30,
+        "separation": 8,
+        "salt": 23498567,
+        "disabled": false
+      },
+      "valhelsia_structures:tower_ruin": {
+        "spacing": 28,
+        "separation": 8,
+        "salt": 24357670,
+        "disabled": false
+      }
+    }
+  },
+  "world": {
+    "continent": {
+      "continentType": "MULTI",
+      "continentShape": "NATURAL",
+      "continentScale": 1963,
+      "continentJitter": 0.699
+    },
+    "controlPoints": {
+      "deepOcean": 0.056,
+      "shallowOcean": 0.115,
+      "beach": 0.247,
+      "coast": 0.328,
+      "inland": 0.365
+    },
+    "properties": {
+      "spawnType": "CONTINENT_CENTER",
+      "worldHeight": 256,
+      "seaLevel": 63
+    }
+  },
+  "climate": {
+    "temperature": {
+      "seedOffset": 0,
+      "scale": 2,
+      "falloff": 3,
+      "min": 0.0,
+      "max": 1.0,
+      "bias": 0.05
+    },
+    "moisture": {
+      "seedOffset": 0,
+      "scale": 5,
+      "falloff": 2,
+      "min": 0.0,
+      "max": 1.0,
+      "bias": 0.028
+    },
+    "biomeShape": {
+      "biomeSize": 326,
+      "macroNoiseSize": 4,
+      "biomeWarpScale": 150,
+      "biomeWarpStrength": 80
+    },
+    "biomeEdgeShape": {
+      "type": "SIMPLEX",
+      "scale": 24,
+      "octaves": 2,
+      "gain": 0.5,
+      "lacunarity": 2.65,
+      "strength": 72
+    }
+  },
+  "terrain": {
+    "general": {
+      "terrainSeedOffset": 0,
+      "terrainRegionSize": 364,
+      "globalVerticalScale": 0.98,
+      "globalHorizontalScale": 1.0,
+      "fancyMountains": true
+    },
+    "steppe": {
+      "weight": 2.293,
+      "baseScale": 1.0,
+      "verticalScale": 1.159,
+      "horizontalScale": 1.0
+    },
+    "plains": {
+      "weight": 1.005,
+      "baseScale": 1.0,
+      "verticalScale": 1.029,
+      "horizontalScale": 1.0
+    },
+    "hills": {
+      "weight": 2.0,
+      "baseScale": 1.0,
+      "verticalScale": 1.133,
+      "horizontalScale": 1.0
+    },
+    "dales": {
+      "weight": 2.0,
+      "baseScale": 1.0,
+      "verticalScale": 1.0,
+      "horizontalScale": 1.0
+    },
+    "plateau": {
+      "weight": 2.085,
+      "baseScale": 1.0,
+      "verticalScale": 2.01,
+      "horizontalScale": 1.649
+    },
+    "badlands": {
+      "weight": 1.005,
+      "baseScale": 1.0,
+      "verticalScale": 1.082,
+      "horizontalScale": 1.0
+    },
+    "torridonian": {
+      "weight": 2.422,
+      "baseScale": 1.118,
+      "verticalScale": 1.391,
+      "horizontalScale": 1.932
+    },
+    "mountains": {
+      "weight": 1.983,
+      "baseScale": 1.149,
+      "verticalScale": 1.261,
+      "horizontalScale": 1.0
+    },
+    "volcano": {
+      "weight": 1.5,
+      "baseScale": 1.0,
+      "verticalScale": 1.0,
+      "horizontalScale": 1.0
+    }
+  },
+  "rivers": {
+    "seedOffset": 0,
+    "riverCount": 20,
+    "mainRivers": {
+      "bedDepth": 8,
+      "minBankHeight": 2,
+      "maxBankHeight": 8,
+      "bedWidth": 10,
+      "bankWidth": 25,
+      "fade": 0.5
+    },
+    "branchRivers": {
+      "bedDepth": 5,
+      "minBankHeight": 1,
+      "maxBankHeight": 6,
+      "bedWidth": 6,
+      "bankWidth": 16,
+      "fade": 0.703
+    },
+    "lakes": {
+      "chance": 0.25,
+      "minStartDistance": 0.0,
+      "maxStartDistance": 0.126,
+      "depth": 12,
+      "sizeMin": 65,
+      "sizeMax": 100,
+      "minBankHeight": 1,
+      "maxBankHeight": 10
+    },
+    "wetlands": {
+      "chance": 0.541,
+      "sizeMin": 153,
+      "sizeMax": 209
+    }
+  },
+  "filters": {
+    "erosion": {
+      "dropletsPerChunk": 135,
+      "dropletLifetime": 25,
+      "dropletVolume": 0.699,
+      "dropletVelocity": 0.699,
+      "erosionRate": 0.5,
+      "depositeRate": 0.5
+    },
+    "smoothing": {
+      "iterations": 1,
+      "smoothingRadius": 1.75,
+      "smoothingRate": 0.85
+    }
+  }
+}
