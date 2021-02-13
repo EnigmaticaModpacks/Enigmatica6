@@ -157,7 +157,8 @@ events.listen('recipes', (event) => {
             'minecraft:writable_book',
             ['minecraft:book', '#forge:dyes/black', '#forge:feathers'],
             'minecraft:writable_book'
-        )
+        ),
+        shapelessRecipe(Item.of('minecraft:honeycomb', 9), ['minecraft:honeycomb_block']),
     ];
 
     recipes.forEach(function (recipe) {
