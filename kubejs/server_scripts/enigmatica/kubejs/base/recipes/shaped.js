@@ -390,7 +390,13 @@ events.listen('recipes', (event) => {
             A: 'fluxnetworks:flux_dust',
             B: '#forge:obsidian',
             C: 'powah:ender_core'
-        })
+        }),
+
+        //ID Overrides
+        shapedRecipe(Item.of('minecraft:honeycomb_block'), ['AAA', 'AAA', 'AAA'], {
+            A: 'minecraft:honeycomb'
+        },
+        'minecraft:honeycomb_block')
     ];
 
     recipes.forEach(function (recipe) {
