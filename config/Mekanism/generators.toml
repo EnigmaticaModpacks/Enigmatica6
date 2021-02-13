@@ -33,6 +33,9 @@
 		turbineDisperserGasFlow = 1280.0
 		#The rate at which steam is condensed in the turbine.
 		condenserRate = 64000
+		#The percentage of the turbine's steam tank to leave steam in when set to dumping excess.
+		#Range: 0.001 ~ 1.0
+		dumpExcessKeepRatio = 0.9
 
 	#Heat Generator Settings
 	[generators.heat_generator]
@@ -59,6 +62,12 @@
 		surfaceAreaTarget = 4.0
 		#Amount of energy created (in heat) from each whole mB of fission fuel.
 		energyPerFissionFuel = "1000000"
+		#The default burn rate of the fission reactor.
+		#Range: 0.001 ~ 1.0
+		defaultBurnRate = 0.1
+		#The burn rate increase each fuel assembly provides. Max Burn Rate = fuelAssemblies * burnPerAssembly
+		#Range: 1 ~ 1000000
+		burnPerAssembly = 1
 
 	#Hohlraum Settings
 	[generators.hohlraum]
@@ -68,4 +77,16 @@
 		#Hohlraum capacity in mB.
 		#Range: 1 ~ 9223372036854775807
 		maxGas = 10
+
+	#Fusion Settings
+	[generators.fusion_reactor]
+		#The fraction of the heat dissipated from the case that is converted to Joules.
+		#Range: 0.0 ~ 1.0
+		thermocoupleEfficiency = 0.05
+		#The fraction fraction of heat from the casing that can be transfered to all sources that are not water. Will impact max heat, heat transfer to thermodynamic conductors, and power generation.
+		#Range: 0.001 ~ 1.0
+		casingThermalConductivity = 0.1
+		#The fraction of the heat from the casing that is dissipated to water when water cooling is in use. Will impact max heat, and steam generation.
+		#Range: 0.0 ~ 1.0
+		waterHeatingRatio = 0.3
 
