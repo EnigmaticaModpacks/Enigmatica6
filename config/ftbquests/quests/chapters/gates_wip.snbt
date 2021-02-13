@@ -13,12 +13,13 @@
 			icon: "mekanism:robit",
 			x: 0.0d,
 			y: 0.0d,
+			shape: "rsquare",
 			description: [
-				"Welcome to Enigmatica 6: Expert mode!",
+				"Welcome to Enigmatica 6: Expert mode! This chapter serves as a general guide to the progression.",
 				"",
-				"The Goal of Enigmatica 6: Expert is to complete all quests in the Bragging Rights chapter.",
+				"The Goal of E6E is to complete all quests in the Bragging Rights chapter. Good luck, and have fun :D",
+				"- Niller",
 				"",
-				"This chapter serves as a general guide to the progression of Enigmatica 6: Expert.",
 				"",
 				'Please note that mods are rarely "strictly" gated - Some of their items will be obtaintable prior to the Gate being unlocked, and not all things will be immediately obtainable once the Gate is unlocked.',
 				""
@@ -219,7 +220,7 @@
 			x: -4.5d,
 			y: 4.5d,
 			shape: "diamond",
-			dependencies: ["0000000000000FDF"],
+			dependencies: ["0000000000000FD3"],
 			id: "0000000000000FD9",
 			tasks: [{
 				id: "0000000000000FDA",
@@ -284,7 +285,7 @@
 		},
 		{
 			title: "Immersive Engineering",
-			x: -3.0d,
+			x: -1.5d,
 			y: 6.0d,
 			subtitle: "High Tech",
 			dependencies: ["0000000000000FDF"],
@@ -297,7 +298,7 @@
 		},
 		{
 			title: "Mekanism",
-			x: -1.5d,
+			x: 0.0d,
 			y: 6.0d,
 			dependencies: ["0000000000000FDB"],
 			id: "0000000000000FE5",
