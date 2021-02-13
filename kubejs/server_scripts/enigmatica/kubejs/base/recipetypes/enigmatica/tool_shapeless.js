@@ -1,6 +1,6 @@
-events.listen('recipes', function (event) {
-    event.recipes.enigmatica.tool_shapeless({
-        type: 'enigmatica.tool_shapeless',
+events.listen('recipes', (event) => {
+    event.custom({
+        type: 'enigmatica:tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/knife'
@@ -15,8 +15,8 @@ events.listen('recipes', function (event) {
         }
     });
 
-    event.recipes.enigmatica.tool_shapeless({
-        type: 'enigmatica.tool_shapeless',
+    event.custom({
+        type: 'enigmatica:tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/axe'
@@ -48,8 +48,8 @@ events.listen('recipes', function (event) {
     tillsIntoFarmland.forEach(function (category) {
         var farmland = category.type;
         category.soils.forEach(function (soil) {
-            event.recipes.enigmatica.tool_shapeless({
-                type: 'enigmatica.tool_shapeless',
+            event.custom({
+                type: 'enigmatica:tool_shapeless',
                 ingredients: [
                     {
                         tag: 'forge:tools/hoe'
@@ -69,9 +69,9 @@ events.listen('recipes', function (event) {
         //var modID = variant.logBlock.split(':')[0];
 
         // mod blacklist
-        /*if (modID == 'undergarden') {
+        if (variant.modId == 'integrateddynamics') {
             return;
-        }*/
+        }
 
         data = {
             recipes: [

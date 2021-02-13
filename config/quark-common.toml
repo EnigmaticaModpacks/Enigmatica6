@@ -194,6 +194,9 @@
 		#
 		#Allowed values: [0,)
 		"Stick Block Fuel Time" = 900
+		#
+		#Allowed values: [0,)
+		"Bamboo Bundle Fuel Time" = 500
 
 	[building.variant_chests]
 		"Replace Worldgen Chests" = false
@@ -221,13 +224,13 @@
 		"Tallow Burn Time" = 200
 		#
 		#Allowed values: [0,)
-		"Max Drop" = 3
+		"Max Drop" = 0
 		#
 		#Allowed values: [0,15]
 		"Enchant Power" = 0.5
 		#
 		#Allowed values: [0,)
-		"Min Drop" = 1
+		"Min Drop" = 0
 
 	[building.variant_bookshelves]
 		"Change Names" = true
@@ -2009,7 +2012,7 @@
 		Shader = "none"
 
 [oddities]
-	"Totem Of Holding" = true
+	"Totem Of Holding" = false
 	Backpack = false
 	"Matrix Enchanting" = false
 	Magnets = false

@@ -1,6 +1,6 @@
 //priority: 1000
 
-events.listen('recipes', (event) => {
+events.listen('server.datapack.high_priority', (event) => {
     const defaultConfig = {
         mode: 'normal',
         message: 'Valid modes are normal and expert.'
@@ -9,7 +9,7 @@ events.listen('recipes', (event) => {
     let config = json.read(configName);
     if (!config || !config.mode) {
         json.write(configName, defaultConfig);
-        console.log('Created new ' + configName);
+        console.log(`Created new ${configName}`);
     }
     if (config.mode == 'none') {
         json.write(configName, defaultConfig);
@@ -19,5 +19,11 @@ events.listen('recipes', (event) => {
         );
     }
     global.packmode = config.mode;
-    console.log('Current packmode is: ' + global.packmode);
+    console.log(`Current packmode is: ${global.packmode}`);
+
+    if (event.server) {
+        event.server.players.forEach((player) => {
+            setMode(player);
+        });
+    }
 });

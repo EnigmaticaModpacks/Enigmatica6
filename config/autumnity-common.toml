@@ -1,0 +1,13 @@
+
+[snail]
+	#A list of biomes where snails can spawn. The list doesn't include maple forests.
+	"Snail Spawn Biomes" = []
+
+[biomes]
+	#A list of biomes where maple trees can naturally generate. The list doesn't include maple forests.
+	"Maple Tree Biomes" = ["minecraft:forest", "minecraft:wooded_hills", "minecraft:flower_forest"]
+	#The greater the number the more common the biome is.
+	"Maple Forest Weight" = 6
+	#The greater the number the more common the biome is.
+	"Pumpkin Fields Weight" = 1
+

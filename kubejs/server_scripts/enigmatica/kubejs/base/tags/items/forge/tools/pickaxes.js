@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aquaculture:neptunium_pickaxe',
         'botania:elementium_pickaxe',
@@ -33,7 +33,9 @@ events.listen('item.tags', function (event) {
         'mapperbase:steel_pickaxe',
         'aiotbotania:livingrock_pickaxe',
         'aiotbotania:livingwood_pickaxe',
-        'occultism:iesnium_pickaxe'
+        'occultism:iesnium_pickaxe',
+        'betterendforge:aeternium_pickaxe',
+        'betterendforge:terminite_pickaxe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/pickaxe').add(items);

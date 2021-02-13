@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     output = 'emendatusenigmatica:dimensional_gem';
     count = 8;
     event.recipes.mekanism.enriching({

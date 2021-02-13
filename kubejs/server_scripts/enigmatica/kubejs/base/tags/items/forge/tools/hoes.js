@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aiotbotania:alfsteel_aiot',
         'aiotbotania:alfsteel_hoe',
@@ -34,7 +34,9 @@ events.listen('item.tags', function (event) {
         'undergarden:utheric_hoe',
         'undergarden:froststeel_hoe',
         'undergarden:cloggrum_hoe',
-        'undergarden:forgotten_hoe'
+        'undergarden:forgotten_hoe',
+        'betterendforge:aeternium_hoe',
+        'betterendforge:terminite_hoe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/hoe').add(items);

@@ -470,6 +470,112 @@ const treeRegistry = [
                 trunk: 'undergarden:wigglewood_log',
                 leaf: 'undergarden:wigglewood_leaves',
                 substrate: 'dirt'
+            },
+            {
+                sapling: 'betterendforge:helix_tree_sapling',
+                trunk: 'betterendforge:helix_tree_log',
+                leaf: 'betterendforge:helix_tree_leaves',
+                substrate: 'amber_moss'
+            },
+            {
+                sapling: 'betterendforge:tenanea_sapling',
+                trunk: 'betterendforge:tenanea_log',
+                leaf: 'betterendforge:tenanea_leaves',
+                substrate: 'pink_moss'
+            },
+            {
+                sapling: 'betterendforge:pythadendron_sapling',
+                trunk: 'betterendforge:pythadendron_log',
+                leaf: 'betterendforge:pythadendron_leaves',
+                substrate: 'chorus_nylium'
+            },
+            {
+                sapling: 'betterendforge:lacugrove_sapling',
+                trunk: 'betterendforge:lacugrove_log',
+                leaf: 'betterendforge:lacugrove_leaves',
+                substrate: 'end_moss'
+            },
+            {
+                sapling: 'betterendforge:dragon_tree_sapling',
+                trunk: 'betterendforge:dragon_tree_log',
+                leaf: 'betterendforge:dragon_tree_leaves',
+                substrate: 'shadow_grass'
+            },
+            {
+                sapling: 'integrateddynamics:menril_sapling',
+                trunk: 'integrateddynamics:menril_log',
+                leaf: 'integrateddynamics:menril_leaves',
+                fruit: 'integrateddynamics:menril_berries',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:rosewood_sapling',
+                trunk: 'atmospheric:rosewood_log',
+                leaf: 'atmospheric:rosewood_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:morado_sapling',
+                trunk: 'atmospheric:morado_log',
+                leaf: 'atmospheric:morado_leaves',
+                extraDecoration: 'atmospheric:flowering_morado_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:yucca_sapling',
+                trunk: 'atmospheric:yucca_log',
+                leaf: 'atmospheric:yucca_leaves',
+                fruit: 'atmospheric:yucca_bundle',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:kousa_sapling',
+                trunk: 'atmospheric:kousa_log',
+                leaf: 'atmospheric:kousa_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:aspen_sapling',
+                trunk: 'atmospheric:aspen_log',
+                leaf: 'atmospheric:aspen_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'atmospheric:grimwood_sapling',
+                trunk: 'atmospheric:grimwood_log',
+                leaf: 'atmospheric:grimwood_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'upgrade_aquatic:river_sapling',
+                trunk: 'upgrade_aquatic:river_log',
+                leaf: 'upgrade_aquatic:river_leaves',
+                fruit: 'upgrade_aquatic:mulberry',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:red_maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:red_maple_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:orange_maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:orange_maple_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:yellow_maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:yellow_maple_leaves',
+                substrate: 'dirt'
+            },
+            {
+                sapling: 'autumnity:maple_sapling',
+                trunk: 'autumnity:maple_log',
+                leaf: 'autumnity:maple_leaves',
+                substrate: 'dirt'
             }
         ]
     },
@@ -619,6 +725,26 @@ const treeRegistry = [
                 trunk: 'undergarden:veil_mushroom_stalk',
                 leaf: 'undergarden:veil_mushroom_cap',
                 substrate: 'deepturf'
+            },
+            {
+                sapling: 'betterendforge:umbrella_tree_sapling',
+                trunk: 'betterendforge:umbrella_tree_log',
+                leaf: 'betterendforge:umbrella_tree_membrane',
+                extraDecoration: 'betterendforge:umbrella_tree_cluster',
+                substrate: 'jungle_moss'
+            },
+            {
+                sapling: 'betterendforge:mossy_glowshroom_sapling',
+                trunk: 'betterendforge:mossy_glowshroom_log',
+                leaf: 'betterendforge:mossy_glowshroom_cap',
+                extraDecoration: 'betterendforge:mossy_glowshroom_hymenophore',
+                substrate: 'end_moss'
+            },
+            {
+                sapling: 'betterendforge:small_jellyshroom',
+                trunk: 'betterendforge:jellyshroom_log',
+                leaf: 'betterendforge:jellyshroom_cap_purple',
+                substrate: 'end_stone'
             }
         ]
     }

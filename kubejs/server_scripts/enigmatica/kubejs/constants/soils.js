@@ -83,5 +83,19 @@ const soilRegistry = [
     { block: 'minecraft:sand', categories: ['sand', 'red_sand'], growthModifier: 0 },
     { block: 'byg:white_sand', categories: ['sand', 'white_sand'], growthModifier: 0 },
     { block: 'minecraft:soul_sand', categories: ['soul_sand', 'nether'], growthModifier: -0.3 },
-    { block: 'minecraft:soul_soil', categories: ['soul_sand', 'nether'], growthModifier: 0 }
+    { block: 'minecraft:soul_soil', categories: ['soul_sand', 'nether'], growthModifier: 0 },
+
+    { block: 'betterendforge:crystal_moss', categories: ['end_stone', 'crystal_moss'], growthModifier: 0.5 },
+    { block: 'betterendforge:amber_moss', categories: ['end_stone', 'amber_moss'], growthModifier: 0.5 },
+    { block: 'betterendforge:chorus_nylium', categories: ['end_stone', 'chorus_nylium'], growthModifier: 0.5 },
+    { block: 'betterendforge:jungle_moss', categories: ['end_stone', 'jungle_moss'], growthModifier: 0.5 },
+    { block: 'betterendforge:end_moss', categories: ['end_stone', 'end_moss'], growthModifier: 0.5 },
+    { block: 'betterendforge:shadow_grass', categories: ['end_stone', 'shadow_grass'], growthModifier: 0.5 },
+    {
+        block: 'betterendforge:end_mycelium',
+        categories: ['end_stone', 'end_mycelium', 'mushroom'],
+        growthModifier: 0.5
+    },
+    { block: 'atmospheric:arid_sand', categories: ['sand', 'arid_sand'], growthModifier: '0' },
+    { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: '0' }
 ];

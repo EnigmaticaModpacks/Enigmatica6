@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aquaculture:neptunium_boots',
         'ars_nouveau:apprentice_boots',
@@ -40,7 +40,10 @@ events.listen('item.tags', function (event) {
         'mekanismtools:steel_boots',
         'dustrial_decor:cardboard_boots',
         'alexsmobs:roadrunner_boots',
-        'eidolon:warlock_boots'
+        'eidolon:warlock_boots',
+        'betterendforge:crystalite_boots',
+        'betterendforge:aeternium_boots',
+        'betterendforge:terminite_boots'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/boots').add(items);

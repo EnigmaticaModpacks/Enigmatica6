@@ -12,6 +12,7 @@ $CLIENT_MODS = @(
 )
 
 $CONFIGS_TO_REMOVE = @(
+	"betterendforge/client-config.toml",
 	"jei/bookmarks.ini",
 	"pneumaticcraft/ArmorFeatureStatus.cfg",
 	"pneumaticcraft/PneumaticArmorHUDLayout.cfg",
@@ -43,6 +44,7 @@ $CONFIGS_TO_REMOVE = @(
 	"sophisticatedbackpacks-client.toml",
 	"supplementaries-client.toml",
 	"thermal-client.toml",
+	"upgrade_aquatic-client.toml",
 	"xnet-client.toml"
 )
 	

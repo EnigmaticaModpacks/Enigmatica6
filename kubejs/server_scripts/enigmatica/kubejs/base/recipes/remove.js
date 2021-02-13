@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
@@ -65,6 +65,12 @@ events.listen('recipes', function (event) {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
 
+        'immersivepetroleum:distillationtower/oilcracking',
+
+        'industrialforegoing:stonework_generate/andesite',
+        'industrialforegoing:stonework_generate/diorite',
+        'industrialforegoing:stonework_generate/granite',
+
         'mapperbase:steel_nugget_from_blasting',
         'mapperbase:steel_plate_from_blasting',
         'mapperbase:steel_block_from_blasting',
@@ -78,6 +84,8 @@ events.listen('recipes', function (event) {
 
         'morevanillalib:obsidian_shard',
 
+        'pedestals:pedestal_cobblegen/blackstone',
+
         'quark:building/crafting/tallow_from_block',
 
         'thermal:machine/refinery/refinery_crude_oil',
@@ -85,7 +93,14 @@ events.listen('recipes', function (event) {
         'thermal:machine/centrifuge/centrifuge_oil_red_sand',
         'thermal:machine/centrifuge/centrifuge_oil_sand',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
-        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
+        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+
+        'powah:crafting/energy_cell_basic_2',
+        'powah:crafting/cable_basic'
     ];
 
     outputRemovals.forEach((removal) => {
@@ -150,6 +165,11 @@ events.listen('recipes', function (event) {
         type: 'occultism:miner'
     });
 
+    event.remove({
+        output: '/powah:\\w+_starter/',
+        mod: 'powah'
+    });
+
     event.remove({ type: 'botanypots:crop' });
     event.remove({ type: 'botanypots:soil' });
     event.remove({ type: 'thermal:insolator' });
@@ -182,6 +202,12 @@ events.listen('recipes', function (event) {
         type: 'thermal:smelter'
     });
     event.remove({
+        id: /emendatusenigmatica:ore_from_chunk_crafting/
+    });
+    event.remove({
+        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
+    });
+    event.remove({
         input: 'minecraft:fire_charge',
         mod: 'thermal',
         type: 'minecraft:crafting_shapeless'
@@ -192,4 +218,7 @@ events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
     event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
     event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
+    event.remove({
+        id: '/integrateddynamics:\\w+/convenience/minecraft_dye/'
+    });
 });

@@ -1,6 +1,6 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
-		'aiotbotania:alfsteel_aiot',
+        'aiotbotania:alfsteel_aiot',
         'aiotbotania:elementium_aiot',
         'aiotbotania:livingrock_aiot',
         'aiotbotania:livingwood_aiot',
@@ -30,6 +30,6 @@ events.listen('item.tags', function (event) {
         'thermal:flux_drill',
         'thermal:flux_saw'
     ];
-	event.get('forge:tools').add(items);
-	event.get('forge:tools/multi-tool').add(items);
+    event.get('forge:tools').add(items);
+    event.get('forge:tools/multi-tool').add(items);
 });

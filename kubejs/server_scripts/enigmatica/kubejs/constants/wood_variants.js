@@ -44,10 +44,32 @@ var woodVariantsToConstruct = [
     'byg:bulbis',
     'byg:embur',
     'byg:withering_oak',
+    'betterendforge:mossy_glowshroom',
+    'betterendforge:lacugrove',
+    'betterendforge:end_lotus',
+    'betterendforge:pythadendron',
+    'betterendforge:dragon_tree',
+    'betterendforge:tenanea',
+    'betterendforge:helix_tree',
+    'betterendforge:umbrella_tree',
+    'betterendforge:jellyshroom',
     'ars_nouveau:red_archwood',
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',
-    'ars_nouveau:blue_archwood'
+    'ars_nouveau:blue_archwood',
+    'integrateddynamics:menril',
+    'atmospheric:rosewood',
+    'atmospheric:morado',
+    'atmospheric:yucca',
+    'atmospheric:kousa',
+    'atmospheric:aspen',
+    'atmospheric:watchful_aspen',
+    'atmospheric:crustose',
+    'atmospheric:grimwood',
+    'upgrade_aquatic:driftwood',
+    'upgrade_aquatic:river',
+    'autumnity:maple',
+    'autumnity:sappy_maple'
 ];
 
 var buildWoodVariants = [];
@@ -95,6 +117,17 @@ woodVariantsToConstruct.forEach((variant) => {
     woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
     plankBlock = modId + ':' + logType + '_planks';
 
+    if (modId == 'betterendforge') {
+        logSuffix = '_log';
+        woodSuffix = '_bark';
+
+        logBlock = modId + ':' + logType + logSuffix;
+        woodBlock = modId + ':' + logType + woodSuffix;
+        logBlockStripped = modId + ':' + logType + '_stripped' + logSuffix;
+        woodBlockStripped = modId + ':' + logType + '_stripped' + woodSuffix;
+        plankBlock = modId + ':' + logType + '_planks';
+    }
+
     // Exceptions
     switch (logType) {
         case 'palo_verde':
@@ -116,6 +149,33 @@ woodVariantsToConstruct.forEach((variant) => {
             break;
         case 'blue_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            break;
+        case 'crustose':
+            logBlockStripped = 'atmospheric:stripped_aspen_log';
+            woodBlockStripped = 'atmospheric:stripped_aspen_wood';
+            plankBlock = 'atmospheric:aspen_planks';
+            break;
+        case 'watchful_aspen':
+            logBlockStripped = 'atmospheric:stripped_aspen_log';
+            woodBlockStripped = 'atmospheric:stripped_aspen_wood';
+            plankBlock = 'atmospheric:aspen_planks';
+            break;
+        case 'sappy_maple':
+            logBlockStripped = 'autumnity:stripped_maple_log';
+            woodBlockStripped = 'autumnity:stripped_maple_wood';
+            plankBlock = 'autumnity:maple_planks';
+            break;
+        case 'driftwood':
+            woodBlock = modId + ':' + logType;
+            woodBlockStripped = modId + ':stripped_' + logType;
+            break;
+        case 'grimwood':
+            woodBlock = modId + ':' + logType;
+            woodBlockStripped = modId + ':stripped_' + logType;
+            break;
+        case 'rosewood':
+            woodBlock = modId + ':' + logType;
+            woodBlockStripped = modId + ':stripped_' + logType;
             break;
         default:
     }

@@ -1,5 +1,5 @@
 //priority: 900
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     soilRegistry.forEach((soil) => {
         soils_botany_pots(event, soil);
     });
@@ -211,16 +211,16 @@ function crops_thermal_insolator(event, type, crop) {
     }
 
     var input = crop.seed,
-        outputs = [item.of(crop.plant).chance(primaryChance)];
+        outputs = [Item.of(crop.plant).chance(primaryChance)];
 
     if (type.includes('crop_')) {
         //add seeds to crop type output
-        outputs.push(item.of(crop.seed).chance(secondaryChance));
+        outputs.push(Item.of(crop.seed).chance(secondaryChance));
     }
 
     if (plantSecondary) {
         //add any secondary
-        outputs.push(item.of(plantSecondary).chance(secondaryChance));
+        outputs.push(Item.of(plantSecondary).chance(secondaryChance));
     }
 
     event.recipes.thermal
@@ -339,6 +339,30 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         case 'warped_nylium':
             substrate = 'minecraft:warped_nylium';
             break;
+        case 'shadow_grass':
+            substrate = 'betterendforge:shadow_grass';
+            break;
+        case 'end_mycelium':
+            substrate = 'betterendforge:end_mycelium';
+            break;
+        case 'end_moss':
+            substrate = 'betterendforge:end_moss';
+            break;
+        case 'jungle_moss':
+            substrate = 'betterendforge:jungle_moss';
+            break;
+        case 'crystal_moss':
+            substrate = 'betterendforge:crystal_moss';
+            break;
+        case 'chorus_nylium':
+            substrate = 'betterendforge:chorus_nylium';
+            break;
+        case 'pink_moss':
+            substrate = 'betterendforge:pink_moss';
+            break;
+        case 'amber_moss':
+            substrate = 'betterendforge:amber_moss';
+            break;
         case 'water':
             //disabled
             return;
@@ -347,22 +371,30 @@ function crops_immersiveengineering_cloche(event, type, crop) {
     }
 
     var input = crop.seed,
-        outputs = [item.of(crop.plant, primaryCount)];
+        outputs = [Item.of(crop.plant, primaryCount)];
+
+    if (type.includes('crop_')) {
+        //add seeds to crop type output
+        outputs.push(Item.of(crop.seed, secondaryCount));
+        renderType = 'crop';
+    }
 
     if (crop.plant.includes('kenaf') || crop.plant.includes('hemp')) {
         //override render type
         renderType = 'hemp';
     }
 
-    if (type.includes('crop_')) {
-        //add seeds to crop type output
-        outputs.push(item.of(crop.seed, secondaryCount));
+    if (type == 'crop_gourd' || crop.plant == 'minecraft:melon') {
+        renderType = 'stem';
+    }
+
+    if (crop.plant == 'simplefarming:zucchini' || crop.plant == 'simplefarming:squash_block') {
         renderType = 'crop';
     }
 
     if (plantSecondary) {
         //add any secondary
-        outputs.push(item.of(plantSecondary, secondaryCount));
+        outputs.push(Item.of(plantSecondary, secondaryCount));
     }
     event.recipes.immersiveengineering
         .cloche(outputs, input, substrate, {
@@ -472,19 +504,19 @@ function trees_thermal_insolator(event, tree) {
 
     var input = tree.sapling,
         outputs = [
-            item.of(tree.sapling).chance(saplingRate),
-            item.of(tree.trunk).chance(trunkRate),
-            item.of(tree.leaf).chance(leafRate)
+            Item.of(tree.sapling).chance(saplingRate),
+            Item.of(tree.trunk).chance(trunkRate),
+            Item.of(tree.leaf).chance(leafRate)
         ];
 
     if (tree.fruit) {
         //add any fruits
-        outputs.push(item.of(tree.fruit).chance(fruitRate));
+        outputs.push(Item.of(tree.fruit).chance(fruitRate));
     }
 
     if (tree.extraDecoration) {
         //add any extra decorations
-        outputs.push(item.of(tree.extraDecoration).chance(extraDecorationRate));
+        outputs.push(Item.of(tree.extraDecoration).chance(extraDecorationRate));
     }
 
     event.recipes.thermal
@@ -508,7 +540,7 @@ function trees_immersiveengineering_cloche(event, tree) {
         renderType = 'generic';
 
     var input = tree.sapling,
-        outputs = [item.of(tree.sapling, saplingRate), item.of(tree.trunk, trunkRate), item.of(tree.leaf, leafRate)];
+        outputs = [Item.of(tree.sapling, saplingRate), Item.of(tree.trunk, trunkRate), Item.of(tree.leaf, leafRate)];
 
     var substrate = tree.substrate;
     switch (substrate) {
@@ -539,12 +571,12 @@ function trees_immersiveengineering_cloche(event, tree) {
 
     if (tree.fruit) {
         //add any fruits
-        outputs.push(item.of(tree.fruit, fruitRate));
+        outputs.push(Item.of(tree.fruit, fruitRate));
     }
 
     if (tree.extraDecoration) {
         //add any extra decorations
-        outputs.push(item.of(tree.extraDecoration, extraDecorationRate));
+        outputs.push(Item.of(tree.extraDecoration, extraDecorationRate));
     }
     event.recipes.immersiveengineering
         .cloche(outputs, input, substrate, {

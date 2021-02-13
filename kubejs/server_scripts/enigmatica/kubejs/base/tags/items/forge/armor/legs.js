@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aquaculture:neptunium_leggings',
         'ars_nouveau:apprentice_leggings',
@@ -38,7 +38,10 @@ events.listen('item.tags', function (event) {
         'bloodmagic:livingleggings',
         'dustrial_decor:cardboard_leggings',
         'mekanismtools:steel_leggings',
-        'alexsmobs:centipede_leggings'
+        'alexsmobs:centipede_leggings',
+        'betterendforge:crystalite_leggings',
+        'betterendforge:aeternium_leggings',
+        'betterendforge:terminite_leggings'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/leggings').add(items);

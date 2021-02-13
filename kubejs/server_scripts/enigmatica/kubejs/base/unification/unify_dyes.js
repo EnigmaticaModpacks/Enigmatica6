@@ -1,9 +1,10 @@
 //priority: 900
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     dyeSources.forEach((recipe) => {
         botania_dye_pestle_mortar(event, recipe);
         create_dye_milling(event, recipe);
         immersiveengineering_dye_crusher(event, recipe);
+        integrateddynamics_dye_squeezing(event, recipe);
         mekanism_dye_enriching(event, recipe);
         pedestals_dye_crushing(event, recipe);
         thermal_dye_centrifuge(event, recipe);
@@ -62,6 +63,73 @@ function immersiveengineering_dye_crusher(event, recipe) {
 
     event.recipes.immersiveengineering.crusher(output, input, extras);
 }
+function integrateddynamics_dye_squeezing(event, recipe) {
+    var baseCount = 2,
+        multiplier = 1;
+
+    if (recipe.type == 'large') {
+        multiplier = 2;
+    }
+
+    var count = baseCount * multiplier,
+        input = recipe.input;
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: input,
+        result: {
+            items: [
+                {
+                    item: recipe.primary,
+                    count: count
+                },
+                {
+                    item: {
+                        item: recipe.secondary,
+                        count: count
+                    },
+                    chance: 0.25
+                },
+                {
+                    item: {
+                        item: recipe.tertiary
+                    },
+                    chance: 0.05
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            item: input
+        },
+        result: {
+            items: [
+                {
+                    item: recipe.primary,
+                    count: count
+                },
+                {
+                    item: {
+                        item: recipe.secondary,
+                        count: count
+                    },
+                    chance: 0.25
+                },
+                {
+                    item: {
+                        item: recipe.tertiary
+                    },
+                    chance: 0.05
+                }
+            ]
+        },
+        duration: 5
+    });
+}
+
 function mekanism_dye_enriching(event, recipe) {
     var baseCount = 3,
         multiplier = 1;

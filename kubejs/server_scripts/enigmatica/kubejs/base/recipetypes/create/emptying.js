@@ -5,8 +5,8 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.create.emptying(
-            [fluid.of(honeyVariety, 250), item.of('minecraft:glass_bottle')],
-            item.of(honeyVariety + '_bottle')
+            [fluid.of(honeyVariety, 250), Item.of('minecraft:glass_bottle')],
+            Item.of(honeyVariety + '_bottle')
         );
     });
 });

@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
@@ -18,12 +18,49 @@ events.listen('recipes', function (event) {
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+    event.replaceInput({}, 'betterendforge:ender_dust', '#forge:dusts/ender');
+    event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
+    event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
+
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
+
+    powahTiers.forEach(function (tier) {
+        var capacitor = 'powah:capacitor_' + tier;
+        event.replaceInput({ id: 'powah:crafting/energy_cell_' + tier }, '#powah:energy_cell', capacitor);
+        event.replaceInput(
+            { id: 'powah:crafting/energizing_rod_' + tier },
+            '#powah:energizing_rod',
+            'powah:energy_cable_' + tier
+        );
+        if (tier == 'basic') {
+            capacitor = 'powah:capacitor_' + tier + '_large';
+        }
+        event.replaceInput({ id: 'powah:crafting/battery_' + tier }, '#powah:battery', capacitor);
+    });
+
+    event.replaceInput({ mod: 'powah' }, '#powah:furnator', 'minecraft:blast_furnace');
+    event.replaceInput({ mod: 'powah' }, '#powah:magmator', 'mekanism:dynamic_tank');
+    event.replaceInput({ mod: 'powah' }, '#powah:thermo_generator', 'powah:thermoelectric_plate');
+    event.replaceInput({ mod: 'powah' }, '#powah:solar_panel', 'powah:photoelectric_pane');
+
+    event.replaceInput(
+        { id: 'powah:crafting/solar_panel_basic' },
+        'powah:solar_panel_starter',
+        'powah:photoelectric_pane'
+    );
+    event.replaceInput({ mod: 'powah' }, '#powah:energy_hopper', 'minecraft:hopper');
+    // no, that's not a typo in the ID
+    event.replaceInput(
+        { id: 'powah:crafting/player_tranmitter_basic' },
+        'powah:player_transmitter_starter',
+        'powah:player_aerial_pearl'
+    );
+
     event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
 
     event.replaceInput(
@@ -45,13 +82,13 @@ events.listen('recipes', function (event) {
     event.replaceInput(
         { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
         'minecraft:potion',
-        item.of('minecraft:potion', { Potion: 'minecraft:water' })
+        Item.of('minecraft:potion', { Potion: 'minecraft:water' })
     );
 
     event.replaceInput(
         { id: 'create:mixing/chromatic_compound' },
         'create:powdered_obsidian',
-        ingredient.of('#forge:dusts/obsidian')
+        Ingredient.of('#forge:dusts/obsidian')
     );
 
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');

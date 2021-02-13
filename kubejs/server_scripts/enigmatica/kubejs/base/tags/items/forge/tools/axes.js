@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aiotbotania:alfsteel_aiot',
         'aiotbotania:livingrock_axe',
@@ -49,7 +49,9 @@ events.listen('item.tags', function (event) {
         'astralsorcery:crystal_axe',
         'astralsorcery:infused_crystal_axe',
         'undergarden:forgotten_axe',
-        'eidolon:cleaving_axe'
+        'eidolon:cleaving_axe',
+        'betterendforge:aeternium_axe',
+        'betterendforge:terminite_axe'
     ];
     event.get('forge:tools').add(items);
     event.get('forge:tools/axe').add(items);
