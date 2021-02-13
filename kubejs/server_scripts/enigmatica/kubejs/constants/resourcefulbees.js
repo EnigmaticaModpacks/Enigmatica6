@@ -54,6 +54,7 @@ const combVariants = [
     'boobee',
     'brass',
     'bronze',
+    'catnip',
     'clay',
     'coal',
     'constantan',
