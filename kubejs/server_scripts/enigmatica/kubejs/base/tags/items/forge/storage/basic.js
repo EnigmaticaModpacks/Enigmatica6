@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aquaculture:neptunes_bounty',
         'blockcarpentry:frame_chest',
@@ -193,7 +193,24 @@ events.listen('item.tags', function (event) {
         'betterendforge:pythadendron_chest',
         'betterendforge:end_lotus_chest',
         'betterendforge:lacugrove_chest',
-        'betterendforge:mossy_glowshroom_chest'
+        'betterendforge:mossy_glowshroom_chest',
+        'autumnity:maple_trapped_chest',
+        'autumnity:maple_chest',
+        'upgrade_aquatic:river_trapped_chest',
+        'upgrade_aquatic:driftwood_trapped_chest',
+        'upgrade_aquatic:river_chest',
+        'upgrade_aquatic:driftwood_chest',
+        'atmospheric:aspen_trapped_chest',
+        'atmospheric:kousa_trapped_chest',
+        'atmospheric:yucca_trapped_chest',
+        'atmospheric:morado_trapped_chest',
+        'atmospheric:rosewood_trapped_chest',
+        'atmospheric:grimwood_chest',
+        'atmospheric:aspen_chest',
+        'atmospheric:kousa_chest',
+        'atmospheric:yucca_chest',
+        'atmospheric:morado_chest',
+        'atmospheric:rosewood_chest'
     ];
 
     event.get('forge:storage').add(items);

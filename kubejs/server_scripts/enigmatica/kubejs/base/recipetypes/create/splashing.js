@@ -6,7 +6,10 @@ events.listen('recipes', (event) => {
                 input: 'buildinggadgets:construction_block_powder'
             },
             {
-                outputs: [item.of('emendatusenigmatica:silicon_gem').chance(0.5), item.of('emendatusenigmatica:silicon_gem').chance(0.25)],
+                outputs: [
+                    Item.of('emendatusenigmatica:silicon_gem').chance(0.5),
+                    Item.of('emendatusenigmatica:silicon_gem').chance(0.25)
+                ],
                 input: 'create:limesand'
             }
         ]

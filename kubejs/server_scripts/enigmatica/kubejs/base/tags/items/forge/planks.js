@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     event.get('forge:planks/ancient').add('naturesaura:ancient_planks');
 
     event.get('forge:planks/oak').add('minecraft:oak_planks');

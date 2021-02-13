@@ -344,29 +344,6 @@
 			}]
 		},
 		{
-			title: "Cogwheels",
-			x: -1.0d,
-			y: 3.5d,
-			subtitle: "Cogswell's Caper",
-			description: ["Placing two cogs perpendicular to one another allows a change in direction, useful for going around corners or for bringing power down from high above."],
-			dependencies: ["0000000000000CCC"],
-			id: "0000000000000CD2",
-			tasks: [{
-				id: "0000000000000CD3",
-				type: "item",
-				item: "create:cogwheel",
-				count: 4L
-			}],
-			rewards: [{
-				id: "0000000000000D7F",
-				type: "command",
-				title: "Rare Create Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
-				player_command: false
-			}]
-		},
-		{
 			x: -1.5d,
 			y: 2.5d,
 			subtitle: "Let's Try a Change in Tack",
@@ -375,7 +352,7 @@
 				"",
 				"However, they have a slight advantage in that they can be used to split power off in two directions. They also have a vertical variant to get a shaft line running up or down. "
 			],
-			dependencies: ["0000000000000CD2"],
+			dependencies: ["0000000000000CD6"],
 			id: "0000000000000CD4",
 			tasks: [{
 				id: "0000000000000CD5",
@@ -392,8 +369,8 @@
 			}]
 		},
 		{
-			title: "Large Cogwheel",
-			x: -2.0d,
+			title: "Cogwheels",
+			x: -1.0d,
 			y: 3.5d,
 			subtitle: "Spacely's Sprockets",
 			description: [
@@ -403,16 +380,26 @@
 				"",
 				"Similarly, a large cogwheel that is interlocked with the teeth of a small cogwheel will cause that cogwheel’s shaft to rotate at twice the speed. ",
 				"",
-				"These effects may be chained but bear in mind that the faster the consumers in this system run, the higher the SU cost. "
+				"These effects may be chained but bear in mind that the faster the consumers in this system run, the higher the SU cost. ",
+				"",
+				"Additionally, two large cogwheels can be interlocked perpendicularly to allow a shaft to change directions. Useful for going around corners or bringing power down from high above."
 			],
-			dependencies: ["0000000000000CD2"],
+			dependencies: ["0000000000000CCC"],
 			id: "0000000000000CD6",
-			tasks: [{
-				id: "0000000000000CD7",
-				type: "item",
-				item: "create:large_cogwheel",
-				count: 4L
-			}],
+			tasks: [
+				{
+					id: "0000000000000CD7",
+					type: "item",
+					item: "create:large_cogwheel",
+					count: 4L
+				},
+				{
+					id: "48C68E5C0B154689",
+					type: "item",
+					item: "create:cogwheel",
+					count: 4L
+				}
+			],
 			rewards: [{
 				id: "0000000000000D81",
 				type: "command",
@@ -957,7 +944,7 @@
 				"",
 				"The block has a handy little directional indicator to help visualize the flow. A single pump can pressurize a large section of pipe, so be sure to spread them out. "
 			],
-			dependencies: ["0000000000000CD2"],
+			dependencies: ["0000000000000CD6"],
 			id: "0000000000000D0F",
 			tasks: [{
 				id: "0000000000000D10",
@@ -1593,7 +1580,7 @@
 				"",
 				"Applying a Redstone signal to the block will cause the output side to start spinning in the opposite direction relative to the drive side. "
 			],
-			dependencies: ["0000000000000CD2"],
+			dependencies: ["0000000000000CD6"],
 			id: "0000000000000D4B",
 			tasks: [{
 				id: "0000000000000D4C",
@@ -1618,7 +1605,7 @@
 				"",
 				"It could useful for more advanced contraptions that need precise timing, as well."
 			],
-			dependencies: ["0000000000000CD2"],
+			dependencies: ["0000000000000CD6"],
 			id: "0000000000000D4D",
 			tasks: [{
 				id: "0000000000000D4E",

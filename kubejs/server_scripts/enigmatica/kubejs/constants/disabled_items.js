@@ -6,6 +6,8 @@ const disabledItems = [
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
 
+    'betterendforge:ender_dust',
+
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
@@ -46,6 +48,13 @@ const disabledItems = [
     'mythicbotany:wither_aconite_floating',
 
     'quark:pipe',
+    'quark:potato_crate',
+    'quark:beetroot_crate',
+    'quark:carrot_crate',
 
-    'thermal:sugar_cane_block'
+    'thermal:beetroot_block',
+    'thermal:carrot_block',
+    'thermal:potato_block',
+    'thermal:sugar_cane_block',
+    'thermal:apple_block'
 ];

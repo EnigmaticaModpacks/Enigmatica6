@@ -1,48 +1,48 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
                 inputs: ['#forge:ores/nickel'],
                 outputs: [
-                    item.of('emendatusenigmatica:nickel_ingot'),
-                    item.of('minecraft:iron_ingot').chance(0.1),
-                    item.of('thermal:rich_slag').chance(0.2)
+                    Item.of('emendatusenigmatica:nickel_ingot'),
+                    Item.of('minecraft:iron_ingot').chance(0.1),
+                    Item.of('thermal:rich_slag').chance(0.2)
                 ]
             },
             {
                 inputs: ['#forge:ores/aluminum'],
                 outputs: [
-                    item.of('emendatusenigmatica:aluminum_ingot'),
-                    item.of('minecraft:iron_ingot').chance(0.1),
-                    item.of('thermal:rich_slag').chance(0.2)
+                    Item.of('emendatusenigmatica:aluminum_ingot'),
+                    Item.of('minecraft:iron_ingot').chance(0.1),
+                    Item.of('thermal:rich_slag').chance(0.2)
                 ]
             },
             {
                 inputs: ['#forge:ores/uranium'],
                 outputs: [
-                    item.of('emendatusenigmatica:uranium_ingot'),
-                    item.of('emendatusenigmatica:lead_ingot').chance(0.1),
-                    item.of('thermal:rich_slag').chance(0.2)
+                    Item.of('emendatusenigmatica:uranium_ingot'),
+                    Item.of('emendatusenigmatica:lead_ingot').chance(0.1),
+                    Item.of('thermal:rich_slag').chance(0.2)
                 ]
             },
             {
                 inputs: ['#forge:ores/osmium'],
                 outputs: [
-                    item.of('emendatusenigmatica:osmium_ingot'),
-                    item.of('emendatusenigmatica:tin_ingot').chance(0.1),
-                    item.of('thermal:rich_slag').chance(0.2)
+                    Item.of('emendatusenigmatica:osmium_ingot'),
+                    Item.of('emendatusenigmatica:tin_ingot').chance(0.1),
+                    Item.of('thermal:rich_slag').chance(0.2)
                 ]
             },
             {
                 inputs: ['#forge:ores/zinc'],
                 outputs: [
-                    item.of('emendatusenigmatica:zinc_ingot'),
-                    item.of('minecraft:gold_ingot').chance(0.1),
-                    item.of('thermal:rich_slag').chance(0.2)
+                    Item.of('emendatusenigmatica:zinc_ingot'),
+                    Item.of('minecraft:gold_ingot').chance(0.1),
+                    Item.of('thermal:rich_slag').chance(0.2)
                 ]
             },
             {
-                inputs: [item.of('minecraft:netherite_scrap', 4), item.of('minecraft:gold_ingot', 2)],
+                inputs: [Item.of('minecraft:netherite_scrap', 4), Item.of('minecraft:gold_ingot', 2)],
                 outputs: ['minecraft:netherite_ingot']
             },
             {

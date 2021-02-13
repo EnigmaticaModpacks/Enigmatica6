@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'additional_lights:al_lamp_acacia_planks',
         'additional_lights:al_lamp_birch_planks',

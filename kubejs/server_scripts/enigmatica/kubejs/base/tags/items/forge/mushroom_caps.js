@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'byg:shulkren_wart_block',
         'byg:death_cap_mushroom_block',

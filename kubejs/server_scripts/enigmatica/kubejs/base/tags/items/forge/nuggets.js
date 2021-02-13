@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     event
         .get('forge:nuggets')
         .add('immersiveengineering:nugget_aluminum')

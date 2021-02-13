@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.remove({ id: 'industrialforegoing:laser_drill_fluid/oil' });
     event.recipes.industrialforegoing.laser_drill_fluid({
         type: 'industrialforegoing.laser_drill_fluid',
@@ -111,7 +111,7 @@ events.listen('recipes', function (event) {
         entity: 'minecraft:empty',
         type: 'industrialforegoing:laser_drill_fluid'
     });
-    
+
     event.recipes.industrialforegoing.laser_drill_fluid({
         type: 'industrialforegoing.laser_drill_fluid',
         output: '{FluidName:"industrialforegoing:essence",Amount:5}',
@@ -167,7 +167,7 @@ events.listen('recipes', function (event) {
         entity: 'minecraft:empty',
         type: 'industrialforegoing:laser_drill_fluid'
     });
-    
+
     event.recipes.industrialforegoing.laser_drill_fluid({
         type: 'industrialforegoing.laser_drill_fluid',
         output: '{FluidName:"bloodmagic:life_essence_fluid",Amount:5}',
@@ -192,8 +192,9 @@ events.listen('recipes', function (event) {
                         'byg:withering_woods',
                         'byg:magma_wastes',
                         'byg:wailing_garth',
-                        'byg:crimson_gardens',
-                ]},
+                        'byg:crimson_gardens'
+                    ]
+                },
                 blacklist: {},
                 depth_min: 5,
                 depth_max: 10,

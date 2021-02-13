@@ -1,5 +1,5 @@
 //priority: 900
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
         pedestals_stoneworks(event, material, type);

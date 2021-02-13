@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
@@ -218,4 +218,7 @@ events.listen('recipes', function (event) {
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
     event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
     event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
+    event.remove({
+        id: '/integrateddynamics:\\w+/convenience/minecraft_dye/'
+    });
 });

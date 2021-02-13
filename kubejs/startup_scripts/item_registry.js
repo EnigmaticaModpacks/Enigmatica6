@@ -1,4 +1,4 @@
-events.listen('item.registry', function (event) {
+events.listen('item.registry', (event) => {
     const items = [
         'rare_lootbox',
         'epic_lootbox',

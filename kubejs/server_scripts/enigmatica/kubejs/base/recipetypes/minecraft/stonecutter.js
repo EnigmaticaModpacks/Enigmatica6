@@ -3,7 +3,7 @@ events.listen('recipes', (event) => {
     var conversionTypes = ['storage_blocks', 'ores'];
     conversionTypes.forEach(function (type) {
         materialsToUnify.forEach(function (material) {
-            let storage_block_tag = ingredient.of('#forge:' + type + '/' + material);
+            let storage_block_tag = Ingredient.of('#forge:' + type + '/' + material);
             if (storage_block_tag.stacks.size() > 1) {
                 storage_block_tag.stacks.forEach(function (storage_block) {
                     event.recipes.minecraft.stonecutting({
@@ -36,7 +36,7 @@ events.listen('recipes', (event) => {
 });
 
 stonecutterTagConversion = (event, tag) => {
-    ingredient.of(`#${tag}`).stacks.forEach(function (block) {
+    Ingredient.of(`#${tag}`).stacks.forEach(function (block) {
         event.custom({
             type: 'minecraft:stonecutting',
             ingredient: {

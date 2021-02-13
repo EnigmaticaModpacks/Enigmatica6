@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     var items = [
         'aquaculture:neptunium_chestplate',
         'ars_nouveau:apprentice_robes',
@@ -46,7 +46,8 @@ events.listen('item.tags', function (event) {
         'eidolon:warlock_cloak',
         'betterendforge:crystalite_chestplate',
         'betterendforge:aeternium_chestplate',
-        'betterendforge:terminite_chestplate'
+        'betterendforge:terminite_chestplate',
+        'autumnity:snail_shell_chestplate'
     ];
     event.get('forge:armor').add(items);
     event.get('forge:armor/chest').add(items);

@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     var end_biomes = [
         'minecraft:the_end',
         'minecraft:the_void',
@@ -797,8 +797,6 @@ events.listen('recipes', function (event) {
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
-
-
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/emerald' });
     event.recipes.industrialforegoing.laser_drill_ore({

@@ -1,4 +1,4 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
@@ -82,13 +82,13 @@ events.listen('recipes', function (event) {
     event.replaceInput(
         { id: 'bloodmagic:alchemytable/basic_cutting_fluid' },
         'minecraft:potion',
-        item.of('minecraft:potion', { Potion: 'minecraft:water' })
+        Item.of('minecraft:potion', { Potion: 'minecraft:water' })
     );
 
     event.replaceInput(
         { id: 'create:mixing/chromatic_compound' },
         'create:powdered_obsidian',
-        ingredient.of('#forge:dusts/obsidian')
+        Ingredient.of('#forge:dusts/obsidian')
     );
 
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');

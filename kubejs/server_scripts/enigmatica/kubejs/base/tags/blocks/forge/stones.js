@@ -1,4 +1,4 @@
-events.listen('block.tags', function (event) {
+events.listen('block.tags', (event) => {
     event
         .get('forge:stone')
         .add([
