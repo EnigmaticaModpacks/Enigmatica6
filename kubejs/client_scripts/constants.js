@@ -112,6 +112,7 @@ var itemsToHide = [
     'eidolon:tallow',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
+    'immersiveengineering:coal_coke',
     'mapperbase:bitumen_ore',
     'mapperbase:iron_plate',
     'mapperbase:iron_rod',
