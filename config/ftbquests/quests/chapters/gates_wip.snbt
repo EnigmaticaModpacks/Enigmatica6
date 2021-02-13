@@ -13,7 +13,16 @@
 			icon: "mekanism:robit",
 			x: 0.0d,
 			y: 0.0d,
-			description: ["Welcome to Expert mode!"],
+			description: [
+				"Welcome to Enigmatica 6: Expert mode!",
+				"",
+				"The Goal of Enigmatica 6: Expert is to complete all quests in the Bragging Rights chapter.",
+				"",
+				"This chapter serves as a general guide to the progression of Enigmatica 6: Expert.",
+				"",
+				'Please note that mods are rarely "strictly" gated - Some of their items will be obtaintable prior to the Gate being unlocked, and not all things will be immediately obtainable once the Gate is unlocked.',
+				""
+			],
 			id: "0000000000000B6C"
 		},
 		{
@@ -75,7 +84,7 @@
 			tasks: [{
 				id: "0000000000000FC6",
 				type: "item",
-				item: "ars_nouveau:creative_spell_book"
+				item: "ars_nouveau:novice_spell_book"
 			}]
 		},
 		{
@@ -207,10 +216,10 @@
 		},
 		{
 			title: "Modular Routers",
-			x: 0.0d,
-			y: 3.0d,
+			x: -4.5d,
+			y: 4.5d,
 			shape: "diamond",
-			dependencies: ["0000000000000FD7"],
+			dependencies: ["0000000000000FDF"],
 			id: "0000000000000FD9",
 			tasks: [{
 				id: "0000000000000FDA",
@@ -237,7 +246,8 @@
 			shape: "diamond",
 			dependencies: [
 				"0000000000000FDB",
-				"0000000000000FCD"
+				"0000000000000FCD",
+				"218FBDC6B17EDF33"
 			],
 			id: "0000000000000FDD",
 			tasks: [{
@@ -314,6 +324,19 @@
 				id: "0000000000000FE8",
 				type: "item",
 				item: "create:creative_crate"
+			}]
+		},
+		{
+			title: "Integrated Dynamics",
+			icon: "integrateddynamics:crystalized_menril_chunk",
+			x: 0.0d,
+			y: 3.0d,
+			dependencies: ["0000000000000FC1"],
+			id: "218FBDC6B17EDF33",
+			tasks: [{
+				id: "2A11C229CEEEBE6F",
+				type: "item",
+				item: "integrateddynamics:crystalized_menril_chunk"
 			}]
 		}
 	]
