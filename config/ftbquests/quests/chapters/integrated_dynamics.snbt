@@ -10,6 +10,7 @@
 		{
 			x: 0.0d,
 			y: 0.0d,
+			subtitle: "Prepare for Trouble! And make it Double!",
 			description: [
 				"Integrated Dynamics is a mod that focuses on transporting Items, Fluids, FE/RF, and Data.",
 				"",
@@ -36,7 +37,8 @@
 		},
 		{
 			x: 0.0d,
-			y: 3.5d,
+			y: 3.0d,
+			subtitle: "Minecraft's Blue Sky",
 			description: ["Menril is one of the most important substances in Integrated Dynamics, and it will be used in almost every item and blocks from ID. At first, you can get menril from breaking Enriched Menril Logs."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "42D9F6E36CF8F06E",
@@ -55,7 +57,8 @@
 		},
 		{
 			x: -1.5d,
-			y: 3.5d,
+			y: 4.0d,
+			subtitle: "Keep JUMPING!",
 			description: ["This should be the first block that you make from ID, along with the Drying Basin. This block creates 1B Menril per each Menril Log. However, you need to jump on the top of it numerous times in order to get the Menril Resin. To reset the Squeezer, add a button next to it and click on it."],
 			dependencies: ["42D9F6E36CF8F06E"],
 			id: "4666E2A199FC676E",
@@ -67,7 +70,8 @@
 		},
 		{
 			x: 1.5d,
-			y: 3.5d,
+			y: 4.0d,
+			subtitle: "Dryer than my Jokes",
 			description: ["This, along with the Squeezer, will make getting Menril a lot easier. Place this block right next to the Squeezer, with the spout of the squeezer facing it. Every time a Menril Log is squeezed, the Menril Resin enters the drying basin, and dries into a Menril Block."],
 			dependencies: ["42D9F6E36CF8F06E"],
 			id: "510121D501040EA5",
@@ -79,7 +83,8 @@
 		},
 		{
 			x: 0.0d,
-			y: 4.5d,
+			y: 5.0d,
+			subtitle: "*Insert Bad Generator Joke*",
 			description: ["The Generator is the only way to produce RF in Integrated Dynamics, producing 20rf/t. Each fuel lasts for the same time as in a furnace, so a piece of coal burns for 80 seconds and produces a total of 32krf. The generator doesn't have a power buffer, so it needs to be next to a Battery in order to work."],
 			dependencies: [
 				"4666E2A199FC676E",
@@ -107,7 +112,8 @@
 		},
 		{
 			x: 1.5d,
-			y: 5.5d,
+			y: 6.0d,
+			subtitle: "Drying, but FASTER",
 			description: ["The same as the regular Drying Basin, but is faster and uses RF."],
 			dependencies: ["16EAF5653A205232"],
 			id: "05C24B4CAB4AC124",
@@ -119,7 +125,8 @@
 		},
 		{
 			x: -1.5d,
-			y: 5.5d,
+			y: 6.0d,
+			subtitle: "No more Jumping",
 			description: ["The same as the Squeezer, but is faster, requires RF, and doesn't require the player to be jumping on it."],
 			dependencies: ["16EAF5653A205232"],
 			id: "5183909586CBC38F",
@@ -134,6 +141,7 @@
 			icon: "minecraft:water_bucket",
 			x: -3.0d,
 			y: 0.0d,
+			subtitle: "Where's my Water?",
 			description: ["The following 3 blocks relate to Fluid Transportation."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "0EC4E05346C842DC",
@@ -153,6 +161,7 @@
 			},
 			x: 3.0d,
 			y: 0.0d,
+			subtitle: "near INFINITE POWAH transportation.",
 			description: ["The following 3 blocks relate to RF transportation."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "69C09D451357D847",
@@ -166,6 +175,7 @@
 			icon: "minecraft:item_frame",
 			x: 0.0d,
 			y: -3.0d,
+			subtitle: "Glorified Hoppers",
 			description: ["The following 3 blocks relate to Item Transportation."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "47BF421FFE9A02B6",
@@ -285,6 +295,7 @@
 			title: "World Exporters",
 			x: 1.0d,
 			y: 2.0d,
+			subtitle: "Different name for a Dropper",
 			description: ["These 3 blocks place Items, Fluids, and RF into the world."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "629FE9742ED9DA8E",
@@ -318,6 +329,7 @@
 			title: "World Importers",
 			x: -1.0d,
 			y: 2.0d,
+			subtitle: "Pick-up Sticks (or any item)",
 			description: ["These 3 blocks pick up Items, Fluids, and RF from the world."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "0D2453FD06A1207B",
@@ -350,6 +362,7 @@
 		{
 			x: 1.0d,
 			y: -2.0d,
+			subtitle: "I prefer Kindles",
 			description: ["These 10 blocks can read information, whether that is Redstone, Block Data, or Entities."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "39AED68EE6F495B1",
@@ -410,6 +423,7 @@
 		{
 			x: 2.0d,
 			y: -1.0d,
+			subtitle: "Pen, not Pencil",
 			description: ["These 4 blocks write to Redstone, Inventories, Output Audio and Music, and Output Particles."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "61D790A907882415",
@@ -447,6 +461,7 @@
 			title: "Long Distance Connections",
 			x: -2.0d,
 			y: -1.0d,
+			subtitle: "This Relationship will Work Out",
 			description: [
 				"A Mono-Directional Connector can transfer an ID network over a straight line to another Mono-Directional Connector without having to run Logic Cables all the way there. However, it can only connect to Mono-Directional connectors that are in a straight line.",
 				"A Omni-Directional Connector can connect to any other Omni-Directional connector, even over Dimensions."
@@ -479,6 +494,7 @@
 			title: "Item Management, Crafting, and Autocrafting with ID",
 			x: -1.0d,
 			y: -2.0d,
+			subtitle: "RS but Worse",
 			description: [
 				"Integrated Dynamics can be used as an alternative to RS, with many of the features that RS contains. ID has a way to craft with all your items, a way to store items, a way to autocraft items, and a way to persistently craft items.",
 				"",
@@ -516,6 +532,7 @@
 		{
 			x: -2.0d,
 			y: 1.0d,
+			subtitle: "Botania is a Tech mod now?",
 			description: ["This block can extract specific NBT Data from NBT acquirred from a Block Reader. This can be used to find the amount of Mana in a Mana Pool."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "11A8433289EFF772",
@@ -528,6 +545,7 @@
 		{
 			x: 2.0d,
 			y: 1.0d,
+			subtitle: "Minecraft: Become Player",
 			description: ["As the name suggests, this can perform Player Actions, such as clicking with an item."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "0AD26267625F46D8",
