@@ -50,6 +50,11 @@ events.listen('recipes', function (event) {
                 input: 'buildinggadgets:construction_block_dense',
                 output: 'buildinggadgets:construction_paste',
                 count: 3
+            },
+            {
+                input: 'minecraft:obsidian',
+                output: 'emendatusenigmatica:obsidian_dust',
+                count: 4
             }
         ]
     };

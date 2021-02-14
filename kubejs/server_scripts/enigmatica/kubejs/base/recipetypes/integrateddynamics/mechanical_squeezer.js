@@ -60,6 +60,12 @@ events.listen('recipes', function (event) {
                 output: 'buildinggadgets:construction_paste',
                 count: 3,
                 duration: 20
+            },
+            {
+                input: 'minecraft:obsidian',
+                output: 'emendatusenigmatica:obsidian_dust',
+                count: 4,
+                duration: 60
             }
         ]
     };

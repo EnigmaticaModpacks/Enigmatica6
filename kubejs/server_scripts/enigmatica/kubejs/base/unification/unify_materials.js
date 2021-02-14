@@ -35,6 +35,10 @@ events.listen('recipes', (event) => {
         immersiveengineering_ore_processing(event, material, ore, gem);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
 
+        integrated_dynamics_gem_squeezing(event, material, ore, gem, dust);
+        integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
+        integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, gem);
+
         occultism_ore_crushing(event, material, ore, dust, gem);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
 
@@ -325,13 +329,13 @@ function create_gem_processing(event, material, ore, gem, dust) {
             break;
         case 'diamond':
             primaryCount = 2;
-            secondaryCount = 1;
+            secondaryCount = 2;
             secondaryChance = 0.25;
             processingTime = 500;
             break;
         case 'emerald':
             primaryCount = 2;
-            secondaryCount = 1;
+            secondaryCount = 2;
             secondaryChance = 0.25;
             processingTime = 500;
             break;
@@ -529,6 +533,303 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     }
 
     event.recipes.immersiveengineering.metal_press(output, input, mold).energy(2400);
+}
+
+function integrated_dynamics_gem_squeezing(event, material, ore, gem, dust) {
+    if (ore == air) {
+        return;
+    }
+    var primaryCount,
+        secondaryCount,
+        secondaryChance = 0.25,
+        output = gem,
+        processingTime = 200,
+        input = 'forge:ores/' + material;
+
+    switch (material) {
+        case 'redstone':
+            primaryCount = 8;
+            secondaryCount = 6;
+            output = dust;
+            break;
+        case 'coal':
+            primaryCount = 2;
+            secondaryCount = 2;
+            secondaryChance = 0.5;
+            break;
+        case 'diamond':
+            primaryCount = 2;
+            secondaryCount = 2;
+            break;
+        case 'emerald':
+            primaryCount = 2;
+            secondaryCount = 2;
+            break;
+        case 'lapis':
+            primaryCount = 8;
+            secondaryCount = 4;
+            break;
+        case 'quartz':
+            primaryCount = 2;
+            secondaryCount = 4;
+            secondaryChance = 0.5;
+            break;
+        case 'apatite':
+            primaryCount = 4;
+            secondaryCount = 4;
+            break;
+        case 'fluorite':
+            primaryCount = 6;
+            secondaryCount = 3;
+            break;
+        case 'dimensional':
+            primaryCount = 6;
+            secondaryCount = 3;
+            break;
+        case 'arcane':
+            primaryCount = 4;
+            secondaryCount = 4;
+            break;
+        default:
+            primaryCount = 2;
+            secondaryCount = 1;
+    }
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: primaryCount
+                    }
+                },
+                {
+                    item: {
+                        item: output,
+                        count: secondaryCount
+                    },
+                    chance: secondaryChance
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: primaryCount
+                    }
+                },
+                {
+                    item: {
+                        item: output,
+                        count: secondaryCount
+                    },
+                    chance: secondaryChance
+                }
+            ]
+        },
+        duration: processingTime
+    });
+}
+
+function integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust) {
+    if (ore == air) {
+        return;
+    }
+
+    var primaryOutput = dust,
+        primaryCount = 2,
+        secondaryCount = 2,
+        secondaryMaterial,
+        input = 'forge:ores/' + material,
+        processingTime = 200;
+
+    switch (material) {
+        case 'iron':
+            secondaryMaterial = 'nickel';
+            break;
+        case 'nickel':
+            secondaryMaterial = 'iron';
+            break;
+        case 'gold':
+            secondaryMaterial = 'zinc';
+            break;
+        case 'copper':
+            secondaryMaterial = 'gold';
+            break;
+        case 'aluminum':
+            secondaryMaterial = 'iron';
+            break;
+        case 'lead':
+            secondaryMaterial = 'silver';
+            break;
+        case 'silver':
+            secondaryMaterial = 'lead';
+            break;
+        case 'uranium':
+            secondaryMaterial = 'lead';
+            break;
+        case 'osmium':
+            secondaryMaterial = 'tin';
+            break;
+        case 'tin':
+            secondaryMaterial = 'osmium';
+            break;
+        case 'zinc':
+            secondaryMaterial = 'gold';
+            break;
+        case 'iesnium':
+            secondaryMaterial = 'iesnium';
+            break;
+        case 'cloggrum':
+            secondaryMaterial = 'cloggrum';
+            break;
+        case 'froststeel':
+            secondaryMaterial = 'froststeel';
+            break;
+        case 'regalium':
+            secondaryMaterial = 'regalium';
+            break;
+        case 'utherium':
+            secondaryMaterial = 'utherium';
+            break;
+        default:
+            return;
+    }
+
+    var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + secondaryMaterial)).id;
+    var primaryChance = 0.25,
+        secondaryChance = 0.05;
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: 1
+                    }
+                },
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: primaryCount
+                    },
+                    chance: primaryChance
+                },
+                {
+                    item: {
+                        item: secondaryOutput,
+                        count: secondaryCount
+                    },
+                    chance: secondaryChance
+                }
+            ]
+        }
+    });
+
+    primaryChance = 0.6;
+    secondaryChance = 0.1;
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: 1
+                    }
+                },
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: primaryCount
+                    },
+                    chance: primaryChance
+                },
+                {
+                    item: {
+                        item: secondaryOutput,
+                        count: secondaryCount
+                    },
+                    chance: secondaryChance
+                }
+            ]
+        },
+        duration: processingTime
+    });
+}
+
+function integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    if (dust == air) {
+        return;
+    }
+
+    var input,
+        output = dust;
+    if (ingot != air) {
+        input = 'forge:ingots/' + material;
+    } else if (gem != air) {
+        input = 'forge:gems/' + material;
+    } else {
+        return;
+    }
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: 1
+                    }
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: 1
+                    }
+                }
+            ]
+        },
+        duration: 100
+    });
 }
 
 function occultism_ore_crushing(event, material, ore, dust, gem) {
