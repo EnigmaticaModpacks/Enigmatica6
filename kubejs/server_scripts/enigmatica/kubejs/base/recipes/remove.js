@@ -221,4 +221,7 @@ events.listen('recipes', (event) => {
     event.remove({
         id: '/integrateddynamics:\\w+/convenience/minecraft_dye/'
     });
+    event.remove({
+        id: '/integrateddynamics:\\w+/ore/dust/'
+    });
 });
