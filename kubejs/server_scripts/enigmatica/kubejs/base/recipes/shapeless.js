@@ -140,7 +140,8 @@ events.listen('recipes', (event) => {
                     },
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                     bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
-                    integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 }
+                    integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 },
+                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 }
                 }
             }),
             ['minecraft:book', '#forge:bookshelves']
@@ -156,7 +157,8 @@ events.listen('recipes', (event) => {
             'minecraft:writable_book',
             ['minecraft:book', '#forge:dyes/black', '#forge:feathers'],
             'minecraft:writable_book'
-        )
+        ),
+        shapelessRecipe(Item.of('minecraft:honeycomb', 9), ['minecraft:honeycomb_block']),
     ];
 
     recipes.forEach(function (recipe) {

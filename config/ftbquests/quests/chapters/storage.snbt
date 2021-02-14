@@ -155,6 +155,11 @@
 			x: 1.0d,
 			y: -9.0d,
 			subtitle: "Physics Breaking Hoarding",
+			description: [
+				"Industrial Foregoing has massive storage capabilities. ",
+				"",
+				"Head over to the Industrial Foregoing Chapter to learn about Black Hole Storage."
+			],
 			dependencies: ["00000000000003FF"],
 			id: "0000000000000409",
 			tasks: [{
@@ -297,34 +302,6 @@
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
-				player_command: false
-			}]
-		},
-		{
-			x: 2.0d,
-			y: -10.0d,
-			dependencies: ["0000000000000409"],
-			id: "000000000000094B",
-			tasks: [{
-				id: "0000000000000F5C",
-				type: "item",
-				item: {
-					id: "industrialforegoing:infinity_backpack",
-					Count: 1b,
-					tag: {
-						CanCharge: 1b,
-						Special: 0b,
-						Selected: "POOR",
-						Energy: 0L
-					}
-				}
-			}],
-			rewards: [{
-				id: "0000000000000A64",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
 				player_command: false
 			}]
 		},
@@ -983,17 +960,6 @@
 				icon: "kubejs:alchemists_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
 				player_command: false
-			}]
-		},
-		{
-			x: 3.0d,
-			y: -11.0d,
-			dependencies: ["000000000000094B"],
-			id: "0000000000000F5D",
-			tasks: [{
-				id: "0000000000000F5E",
-				type: "item",
-				item: "industrialforegoing:black_hole_controller"
 			}]
 		}
 	]

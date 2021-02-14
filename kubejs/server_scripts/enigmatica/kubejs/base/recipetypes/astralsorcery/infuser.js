@@ -34,7 +34,7 @@ events.listen('recipes', (event) => {
                 duration: 50
             },
             {
-                input: { item: 'emendatusenigmatica:iron_chunk' },
+                input: { tag: 'forge:dusts/iron' },
                 fluid: 'astralsorcery:liquid_starlight',
                 consumptionChance: 0.1,
                 output: 'astralsorcery:stardust',
