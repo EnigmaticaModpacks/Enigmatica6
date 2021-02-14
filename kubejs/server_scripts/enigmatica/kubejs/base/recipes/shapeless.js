@@ -159,6 +159,7 @@ events.listen('recipes', (event) => {
             'minecraft:writable_book'
         ),
         shapelessRecipe(Item.of('minecraft:honeycomb', 9), ['minecraft:honeycomb_block']),
+        shapelessRecipe(Item.of('byg:pollen_dust', 4), ['byg:pollen_block'])
     ];
 
     recipes.forEach(function (recipe) {

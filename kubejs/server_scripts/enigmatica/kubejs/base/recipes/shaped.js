@@ -391,6 +391,9 @@ events.listen('recipes', (event) => {
             B: '#forge:obsidian',
             C: 'powah:ender_core'
         }),
+        shapedRecipe(Item.of('byg:pollen_block', 1), ['AA', 'AA'], {
+            A: 'byg:pollen_dust'
+        }),
 
         //ID Overrides
         shapedRecipe(Item.of('minecraft:honeycomb_block'), ['AAA', 'AAA', 'AAA'], {
