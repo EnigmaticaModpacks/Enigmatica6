@@ -64,7 +64,9 @@ events.listen('item.tags', (event) => {
         'betterendforge:golden_hammer',
         'betterendforge:iron_hammer',
         'betterendforge:aeternium_hammer',
-        'betterendforge:terminite_hammer'
+        'betterendforge:terminite_hammer',
+        'betterendforge:aeternium_sword',
+        'betterendforge:terminite_sword'
     ];
     event.get('forge:weapons').add(items);
     event.get('forge:weapons/melee').add(items);

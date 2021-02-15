@@ -66,6 +66,12 @@ events.listen('recipes', function (event) {
                 output: 'emendatusenigmatica:obsidian_dust',
                 count: 4,
                 duration: 60
+            },
+            {
+                input: 'betterendforge:aurora_crystal',
+                output: 'betterendforge:crystal_shards',
+                count: 4,
+                duration: 300
             }
         ]
     };

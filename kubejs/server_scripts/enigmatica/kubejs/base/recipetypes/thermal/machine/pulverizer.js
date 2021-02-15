@@ -137,6 +137,11 @@ events.listen('recipes', (event) => {
                     Item.of('emendatusenigmatica:silicon_gem').chance(0.25)
                 ],
                 experience: 0.2
+            },
+            {
+                input: '#forge:storage_blocks/aurora',
+                outputs: [Item.of('betterendforge:crystal_shards', 4)],
+                experience: 0.2
             }
         ]
     };

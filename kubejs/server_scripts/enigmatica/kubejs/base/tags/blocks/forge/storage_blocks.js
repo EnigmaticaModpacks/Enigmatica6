@@ -1,4 +1,6 @@
 events.listen('block.tags', (event) => {
-    event.get('forge:storage_blocks').add('minecraft:glowstone');
-    event.get('forge:storage_blocks/glowstone').add('minecraft:glowstone');
+    event.add('forge:storage_blocks', ['minecraft:glowstone', 'betterendforge:aurora_crystal']);
+
+    event.add('forge:storage_blocks/glowstone', ['minecraft:glowstone']);
+    event.add('forge:storage_blocks/aurora', ['betterendforge:aurora_crystal']);
 });
