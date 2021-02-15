@@ -55,6 +55,11 @@ events.listen('recipes', function (event) {
                 input: 'minecraft:obsidian',
                 output: 'emendatusenigmatica:obsidian_dust',
                 count: 4
+            },
+            {
+                input: 'betterendforge:aurora_crystal',
+                output: 'betterendforge:crystal_shards',
+                count: 4
             }
         ]
     };
