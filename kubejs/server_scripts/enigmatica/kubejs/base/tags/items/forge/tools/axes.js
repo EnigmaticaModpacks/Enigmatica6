@@ -1,58 +1,16 @@
 events.listen('item.tags', (event) => {
-    var items = [
-        'aiotbotania:alfsteel_aiot',
-        'aiotbotania:livingrock_axe',
-        'aiotbotania:livingwood_axe',
-        'aquaculture:neptunium_axe',
-        'botania:elementium_axe',
-        'botania:manasteel_axe',
-        'botania:terra_axe',
-        'byg:pendorite_axe',
-        'immersiveengineering:axe_steel',
-        'mapperbase:steel_axe',
-        'mekanismtools:bronze_axe',
-        'mekanismtools:lapis_lazuli_axe',
-        'mekanismtools:osmium_axe',
-        'mekanismtools:refined_glowstone_axe',
-        'mekanismtools:refined_obsidian_axe',
-        'mekanismtools:steel_axe',
-        'minecraft:diamond_axe',
-        'minecraft:golden_axe',
-        'minecraft:iron_axe',
-        'minecraft:netherite_axe',
-        'minecraft:stone_axe',
-        'minecraft:wooden_axe',
-        'mythicbotany:alfsteel_axe',
-        'naturesaura:infused_iron_axe',
-        'naturesaura:sky_axe',
-        'aiotbotania:elementium_aiot',
-        'aiotbotania:livingrock_aiot',
-        'aiotbotania:livingwood_aiot',
-        'aiotbotania:manasteel_aiot',
-        'aiotbotania:terra_aiot',
-        'mekanismtools:bronze_paxel',
-        'mekanismtools:diamond_paxel',
-        'mekanismtools:gold_paxel',
-        'mekanismtools:iron_paxel',
-        'mekanismtools:lapis_lazuli_paxel',
-        'mekanismtools:netherite_paxel',
-        'mekanismtools:osmium_paxel',
-        'mekanismtools:refined_glowstone_paxel',
-        'mekanismtools:refined_obsidian_paxel',
-        'mekanismtools:steel_paxel',
-        'mekanismtools:stone_paxel',
-        'mekanismtools:wood_paxel',
-        'undergarden:utheric_axe',
-        'undergarden:froststeel_axe',
-        'undergarden:cloggrum_axe',
-        'bloodmagic:soulaxe',
-        'astralsorcery:crystal_axe',
-        'astralsorcery:infused_crystal_axe',
-        'undergarden:forgotten_axe',
-        'eidolon:cleaving_axe',
-        'betterendforge:aeternium_axe',
-        'betterendforge:terminite_axe'
-    ];
-    event.get('forge:tools').add(items);
-    event.get('forge:tools/axe').add(items);
+    var items = ['immersiveengineering:axe_steel', 'bloodmagic:soulaxe'];
+    var exceptions = ['betterendforge:aeternium_axe_head'];
+
+    var tags = ['forge:tools', 'forge:tools/axe'];
+
+    tags.forEach((tag) => {
+        event
+            .get(tag)
+            .add(items)
+            .add(/_axe/)
+            .add(/_paxel/)
+            .add(/_aiot/)
+            .remove(exceptions);
+    });
 });
