@@ -80,6 +80,10 @@ events.listen('recipes', (event) => {
                 input: 'atmospheric:red_arid_sandstone',
                 output: Item.of('atmospheric:red_arid_sand', 2),
                 secondary: [Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.5)]
+            },
+            {
+                input: '#forge:storage_blocks/aurora',
+                output: Item.of('betterendforge:crystal_shards', 4)
             }
         ]
     };
@@ -89,6 +93,11 @@ events.listen('recipes', (event) => {
             mod: 'immersiveengineering',
             type: 'immersiveengineering:crusher'
         });
-        event.recipes.immersiveengineering.crusher(recipe.output, recipe.input, recipe.secondary);
+
+        if (recipe.secondary) {
+            event.recipes.immersiveengineering.crusher(recipe.output, recipe.input, recipe.secondary);
+        } else {
+            event.recipes.immersiveengineering.crusher(recipe.output, recipe.input);
+        }
     });
 });

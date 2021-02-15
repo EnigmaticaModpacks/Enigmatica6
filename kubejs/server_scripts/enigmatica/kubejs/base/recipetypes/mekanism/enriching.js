@@ -1,16 +1,17 @@
 events.listen('recipes', (event) => {
-    output = 'emendatusenigmatica:dimensional_gem';
-    count = 8;
-    event.recipes.mekanism.enriching({
-        type: 'mekanism.enriching',
-        input: {
-            ingredient: {
-                tag: 'forge:ores/dimensional'
+    var data = {
+        recipes: [
+            {
+                input: '#forge:storage_blocks/aurora',
+                output: Item.of('betterendforge:crystal_shards', 4)
+            },
+            {
+                input: '#forge:ores/dimensional',
+                output: Item.of('emendatusenigmatica:dimensional_gem', 8)
             }
-        },
-        output: {
-            item: output,
-            count: count
-        }
+        ]
+    };
+    data.recipes.forEach((recipe) => {
+        event.recipes.mekanism.enriching(recipe.output, recipe.input);
     });
 });
