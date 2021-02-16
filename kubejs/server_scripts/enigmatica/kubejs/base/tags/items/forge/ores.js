@@ -6,8 +6,10 @@ events.listen('item.tags', (event) => {
         'betterendforge:ender_ore',
         'betterendforge:amber_ore',
         'minecraft:ancient_debris',
-        'occultism:iesnium_ore'
+        'occultism:iesnium_ore',
+        'byg:cryptic_redstone_ore'
     ]);
+
     event.add('forge:ores/dimensional', [
         'rftoolsbase:dimensionalshard_overworld',
         'rftoolsbase:dimensionalshard_nether',
@@ -19,6 +21,6 @@ events.listen('item.tags', (event) => {
     event.get('forge:ores/netherite').add('minecraft:ancient_debris');
 
     event.add('forge:ores/ender', ['betterendforge:ender_ore']);
-
     event.add('forge:ores/amber', ['betterendforge:amber_ore']);
+    event.add('forge:ores/redstone', ['byg:cryptic_redstone_ore']);
 });
