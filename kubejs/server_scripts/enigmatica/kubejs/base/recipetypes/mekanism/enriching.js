@@ -8,6 +8,14 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:ores/dimensional',
                 output: Item.of('emendatusenigmatica:dimensional_gem', 8)
+            },
+            {
+                input: '#forge:ores/ender',
+                output: Item.of('#forge:shards/ender', 3)
+            },
+            {
+                input: '#forge:ores/amber',
+                output: Item.of('#forge:shards/amber', 3)
             }
         ]
     };
