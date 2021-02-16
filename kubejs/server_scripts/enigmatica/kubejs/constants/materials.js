@@ -54,7 +54,8 @@ const materialsToUnify = [
     'regalium',
     'utherium',
     'coal_coke',
-    'starmetal'
+    'starmetal',
+    'amber'
 ];
 
 // Used to determine which material types to unify
