@@ -414,6 +414,8 @@ events.listen('recipes', (event) => {
         )
     ];
 
+    // recipes = [{ output: '', pattern: [], key: {} }];
+
     recipes.forEach(function (recipe) {
         if (recipe.id) {
             event.shaped(recipe.result, recipe.pattern, recipe.key).id(recipe.id);
