@@ -391,12 +391,27 @@ events.listen('recipes', (event) => {
             B: '#forge:obsidian',
             C: 'powah:ender_core'
         }),
+        shapedRecipe(Item.of('byg:pollen_block', 1), ['AA', 'AA'], {
+            A: 'byg:pollen_dust'
+        }),
+        shapedRecipe('losttrinkets:magical_feathers', ['FAF', 'EBE', 'CDC'], {
+            A: 'minecraft:elytra',
+            B: 'magicfeather:magicfeather',
+            C: 'minecraft:prismarine_shard',
+            D: Item.of('minecraft:potion', { Potion: 'bountifulbaubles:flight' }),
+            E: 'rftoolsbase:infused_diamond',
+            F: 'minecraft:ender_eye'
+        }),
 
         //ID Overrides
-        shapedRecipe(Item.of('minecraft:honeycomb_block'), ['AAA', 'AAA', 'AAA'], {
-            A: 'minecraft:honeycomb'
-        },
-        'minecraft:honeycomb_block')
+        shapedRecipe(
+            Item.of('minecraft:honeycomb_block'),
+            ['AAA', 'AAA', 'AAA'],
+            {
+                A: 'minecraft:honeycomb'
+            },
+            'minecraft:honeycomb_block'
+        )
     ];
 
     recipes.forEach(function (recipe) {

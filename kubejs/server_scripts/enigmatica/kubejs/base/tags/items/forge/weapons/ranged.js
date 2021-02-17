@@ -1,11 +1,7 @@
 events.listen('item.tags', (event) => {
     var items = [
-        'aquaculture:neptunium_bow',
-        'botania:crystal_bow',
         'botania:flare_chakram',
-        'botania:livingwood_bow',
         'botania:thorn_chakram',
-        'botaniaadditions:terra_bow',
         'gunswithoutroses:diamond_gatling',
         'gunswithoutroses:diamond_shotgun',
         'gunswithoutroses:diamond_sniper',
@@ -16,7 +12,7 @@ events.listen('item.tags', (event) => {
         'immersiveengineering:revolver',
         'industrialforegoing:infinity_trident',
         'meetyourfight:phantasmal_rifle',
-        'mekanism:electric_bow',
+        'meetyourfight:cocktail_shotgun',
         'mekanism:flamethrower',
         'minecraft:bow',
         'minecraft:crossbow',
@@ -24,9 +20,12 @@ events.listen('item.tags', (event) => {
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun',
         'undergarden:slingshot',
-        'alexsmobs:blood_sprayer',
-        'meetyourfight:cocktail_shotgun'
+        'alexsmobs:blood_sprayer'
     ];
-    event.get('forge:weapons').add(items);
-    event.get('forge:weapons/ranged').add(items);
+
+    var tags = ['forge:weapons', 'forge:weapons/ranged'];
+
+    tags.forEach((tag) => {
+        event.get(tag).add(items).add(/_bow$/);
+    });
 });

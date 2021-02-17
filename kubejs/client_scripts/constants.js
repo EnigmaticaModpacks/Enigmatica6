@@ -107,6 +107,7 @@ var itemsToHide = [
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
+    // 'bountifulbaubles:potion_wormhole',
     'create:powdered_obsidian',
     'create:honey_bucket',
     'eidolon:tallow',

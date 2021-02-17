@@ -66,6 +66,12 @@ events.listen('recipes', (event) => {
         shapelessRecipe('emendatusenigmatica:dimensional_gem', ['rftoolsbase:dimensionalshard']),
         shapelessRecipe('rftoolsbase:dimensionalshard', ['emendatusenigmatica:dimensional_gem']),
 
+        shapelessRecipe(Item.of('#forge:shards/ender'), ['#forge:ores/ender', 'emendatusenigmatica:enigmatic_hammer']),
+        shapelessRecipe(Item.of('#forge:shards/amber'), ['#forge:ores/amber', 'emendatusenigmatica:enigmatic_hammer']),
+
+        shapelessRecipe(Item.of('#forge:shards/ender'), ['#forge:ores/ender', 'thermal:earth_charge']),
+        shapelessRecipe(Item.of('#forge:shards/amber'), ['#forge:ores/amber', 'thermal:earth_charge']),
+
         shapelessRecipe('emendatusenigmatica:fluorite_dust', ['thermal:earth_charge', '#forge:ores/fluorite']),
         shapelessRecipe('emendatusenigmatica:dimensional_dust', ['thermal:earth_charge', '#forge:ores/dimensional']),
         shapelessRecipe('emendatusenigmatica:potassium_nitrate_dust', [
@@ -159,6 +165,7 @@ events.listen('recipes', (event) => {
             'minecraft:writable_book'
         ),
         shapelessRecipe(Item.of('minecraft:honeycomb', 9), ['minecraft:honeycomb_block']),
+        shapelessRecipe(Item.of('byg:pollen_dust', 4), ['byg:pollen_block'])
     ];
 
     recipes.forEach(function (recipe) {
