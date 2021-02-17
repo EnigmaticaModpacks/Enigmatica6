@@ -59,7 +59,7 @@ function crops_botany_pots(event, type, crop) {
         growthModifier = 1.0;
 
     // chance, minRolls, maxRolls
-    var primary = [1.0, 1, 2],
+    var primary = [1.0, 10, 20],
         growthTicks = baseGrowthTicks,
         plantSecondary;
 
@@ -83,7 +83,7 @@ function crops_botany_pots(event, type, crop) {
             growthModifier = 1.5;
             break;
         case 'crop_seed':
-            primary = [1.0, 1, 3];
+            primary = [1.0, 10, 30];
             break;
         case 'flower':
             growthModifier = 0.5;
@@ -95,7 +95,7 @@ function crops_botany_pots(event, type, crop) {
             growthModifier = 0.25;
             break;
         case 'shroom':
-            primary = [1.0, 1, 3];
+            primary = [1.0, 10, 30];
             plantSecondary = crop.plant;
             break;
         case 'vine':
