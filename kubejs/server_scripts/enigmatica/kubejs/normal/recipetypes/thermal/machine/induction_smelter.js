@@ -7,11 +7,11 @@ events.listen('recipes', (event) => {
         recipes: [
             {
                 inputs: [
-                    '#forge:storage_blocks/enderium',
+                    '#forge:ingots/enderium',
                     Item.of('fluxnetworks:flux_dust', 8)
                 ],
                 outputs: [
-                    Item.of('compactmachines:wall', 64)
+                    Item.of('compactmachines:wall', 32)
                 ]
             }
         ]

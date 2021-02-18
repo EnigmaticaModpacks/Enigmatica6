@@ -6,10 +6,10 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
-                output: Item.of('compactmachines:wall', 64),
+                output: Item.of('compactmachines:wall', 32),
                 inputItem: '#forge:storage_blocks/ender',
                 infusionInput: 'mekanism:refined_obsidian',
-                infusionAmount: 160
+                infusionAmount: 80
             }
         ]
     };
