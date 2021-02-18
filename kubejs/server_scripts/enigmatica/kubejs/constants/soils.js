@@ -96,6 +96,6 @@ const soilRegistry = [
         categories: ['end_stone', 'end_mycelium', 'mushroom'],
         growthModifier: 0.5
     },
-    { block: 'atmospheric:arid_sand', categories: ['sand', 'arid_sand'], growthModifier: '0' },
-    { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: '0' }
+    { block: 'atmospheric:arid_sand', categories: ['sand', 'arid_sand'], growthModifier: 0.0 },
+    { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: 0.0 }
 ];

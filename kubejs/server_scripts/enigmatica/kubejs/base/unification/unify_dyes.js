@@ -4,7 +4,7 @@ events.listen('recipes', (event) => {
         botania_dye_pestle_mortar(event, recipe);
         create_dye_milling(event, recipe);
         immersiveengineering_dye_crusher(event, recipe);
-        integrateddynamics_dye_squeezing(event, recipe);
+        //integrateddynamics_dye_squeezing(event, recipe);
         mekanism_dye_enriching(event, recipe);
         pedestals_dye_crushing(event, recipe);
         thermal_dye_centrifuge(event, recipe);
@@ -71,17 +71,20 @@ function integrateddynamics_dye_squeezing(event, recipe) {
         multiplier = 2;
     }
 
-    var count = baseCount * multiplier,
-        input = recipe.input;
+    var count = baseCount * multiplier;
 
     event.custom({
         type: 'integrateddynamics:squeezer',
-        item: input,
+        item: {
+            item: recipe.input
+        },
         result: {
             items: [
                 {
-                    item: recipe.primary,
-                    count: count
+                    item: {
+                        item: recipe.primary,
+                        count: count
+                    }
                 },
                 {
                     item: {
@@ -103,13 +106,15 @@ function integrateddynamics_dye_squeezing(event, recipe) {
     event.custom({
         type: 'integrateddynamics:mechanical_squeezer',
         item: {
-            item: input
+            item: recipe.input
         },
         result: {
             items: [
                 {
-                    item: recipe.primary,
-                    count: count
+                    item: {
+                        item: recipe.primary,
+                        count: count
+                    }
                 },
                 {
                     item: {

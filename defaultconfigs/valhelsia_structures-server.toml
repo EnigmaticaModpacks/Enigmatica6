@@ -1,5 +1,7 @@
 
 [structures]
+	#Biomes in which Structures cant generate in
+	blacklisted_biomes = ["minecraft:ocean", "minecraft:river", "minecraft:frozen_ocean", "minecraft:frozen_river", "minecraft:deep_ocean", "minecraft:warm_ocean", "minecraft:lukewarm_ocean", "minecraft:cold_ocean", "minecraft:deep_warm_ocean", "minecraft:deep_lukewarm_ocean", "minecraft:deep_cold_ocean", "minecraft:deep_frozen_ocean"]
 
 	[structures.tower_ruin]
 		#Tower Ruin Distance (in chunks) [default: 25]
@@ -13,11 +15,15 @@
 		#Tower Ruin Spawn Chance [default: 0.8]
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.8
+		#Biome Types the Tower Ruin can generate in
+		biome_categories = ["PLAINS", "FOREST", "EXTREME_HILLS", "TAIGA"]
+		#Biomes the Tower Ruin can NOT generate in
+		biome_blacklist = []
 
 	[structures.castle]
 		#Castle Distance (in chunks) [default: 40]
 		#Range: 1 ~ 500
-		distance = 40
+		distance = 24
 		#Castle Minimum Separation (in chunks) [default: 8]
 		#Range: 1 ~ 500
 		separation = 8
@@ -25,12 +31,16 @@
 		generate = true
 		#Castle Spawn Chance [default: 0.5]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.5
+		spawn_chance = 0.8
+		#Biome Types the Castle can generate in
+		biome_categories = ["PLAINS", "FOREST", "TAIGA", "EXTREME_HILLS", "ICY", "SAVANNA"]
+		#Biomes the Castle can NOT generate in
+		biome_blacklist = []
 
 	[structures.player_house]
 		#Desert House Distance (in chunks) [default: 30]
 		#Range: 1 ~ 500
-		distance = 30
+		distance = 10
 		#Desert House Minimum Separation (in chunks) [default: 8]
 		#Range: 1 ~ 500
 		separation = 8
@@ -38,12 +48,16 @@
 		generate = true
 		#Player House Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
-		spawn_chance = 0.7
+		spawn_chance = 1.0
+		#Biome Types the Player House can generate in
+		biome_categories = ["PLAINS", "FOREST", "EXTREME_HILLS", "TAIGA", "DESERT", "MESA", "SAVANNA", "JUNGLE", "ICY", "SWAMP"]
+		#Biomes the Player House can NOT generate in
+		biome_blacklist = []
 
 	[structures.forge]
 		#Forge Distance (in chunks) [default: 30]
 		#Range: 1 ~ 500
-		distance = 30
+		distance = 24
 		#Forge Minimum Separation (in chunks) [default: 8]
 		#Range: 1 ~ 500
 		separation = 8
@@ -52,6 +66,10 @@
 		#Forge Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
+		#Biome Types the Forge can generate in
+		biome_categories = ["PLAINS", "FOREST", "EXTREME_HILLS", "TAIGA"]
+		#Biomes the Forge can NOT generate in
+		biome_blacklist = []
 
 	[structures.small_dungeon]
 		#Small Dungeon Distance (in chunks) [default: 30]
@@ -65,11 +83,15 @@
 		#Small Dungeon Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
+		#Biome Types the Small Dungeon can generate in
+		biome_categories = ["PLAINS", "FOREST", "EXTREME_HILLS", "TAIGA", "DESERT", "MESA", "SAVANNA", "JUNGLE", "ICY", "SWAMP"]
+		#Biomes the Small Dungeon can NOT generate in
+		biome_blacklist = []
 
 	[structures.desert_house]
 		#Desert House Distance (in chunks) [default: 30]
 		#Range: 1 ~ 500
-		distance = 30
+		distance = 15
 		#Desert House Minimum Separation (in chunks) [default: 8]
 		#Range: 1 ~ 500
 		separation = 8
@@ -78,11 +100,15 @@
 		#Desert House Spawn Chance [default: 0.7]
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.7
+		#Biome Types the Desert House can generate in
+		biome_categories = ["DESERT"]
+		#Biomes the Desert House can NOT generate in
+		biome_blacklist = []
 
 	[structures.global]
-		#How flat does terrain need to be for surface structures to spawn? (in blocks) [default: 3]
+		#How flat does terrain need to be for surface structures to spawn? (in blocks) [default: 4]
 		#Range: 0 ~ 64
-		flatness_delta = 3
+		flatness_delta = 64
 
 	[structures.castle_ruin]
 		#Castle Ruin Distance (in chunks) [default: 35]
@@ -96,4 +122,8 @@
 		#Castle Ruin Spawn Chance [default: 0.6]
 		#Range: 0.0 ~ 1.0
 		spawn_chance = 0.6
+		#Biome Types the Castle Ruin can generate in
+		biome_categories = ["PLAINS", "FOREST", "TAIGA"]
+		#Biomes the Castle Ruin can NOT generate in
+		biome_blacklist = []
 

@@ -1,5 +1,5 @@
 events.listen('item.tags', (event) => {
-    var items = [
+    event.add('forge:mushroom_stems', [
         'byg:soul_shroom_stem',
         'byg:yellow_glowshroom_stem',
         'byg:red_glowshroom_stem',
@@ -8,7 +8,9 @@ events.listen('item.tags', (event) => {
         'quark:glowshroom_stem',
         'undergarden:veil_mushroom_stalk',
         'undergarden:blood_mushroom_stalk',
-        'undergarden:indigo_mushroom_stalk'
-    ];
-    event.get('forge:mushroom_stems').add(items);
+        'undergarden:indigo_mushroom_stalk',
+        'betterendforge:umbrella_tree_log',
+        'betterendforge:mossy_glowshroom_log',
+        'betterendforge:jellyshroom_log'
+    ]);
 });

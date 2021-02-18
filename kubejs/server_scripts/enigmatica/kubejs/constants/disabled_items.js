@@ -12,6 +12,8 @@ const disabledItems = [
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
 
+    // 'bountifulbaubles:potion_wormhole',
+
     'byg:ametrine_block',
     'byg:ametrine_boots',
     'byg:ametrine_chestplate',

@@ -13,8 +13,12 @@ events.listen('jei.information', (event) => {
             },
             {
                 item: 'buildinggadgets:construction_paste',
+                description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
+            },
+            {
+                item: 'bountifulbaubles:potion_wormhole',
                 description: [
-                    'Obtained by breaking a Dense Construction Block with a Pickaxe.'
+                    'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
                 ]
             }
         ]

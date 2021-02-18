@@ -30,14 +30,13 @@
 		#Range: > 0
 		steelPaxelHarvestLevel = 3
 		#Attack damage modifier of steel paxels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		steelPaxelDamage = 4.0
 		#Attack damage modifier of steel pickaxes.
-		steelPickaxeDamage = 1
+		steelPickaxeDamage = 1.0
 		#Attack damage modifier of steel swords.
-		steelSwordDamage = 3
+		steelSwordDamage = 3.0
 		#Attack damage modifier of steel hoes.
-		steelHoeDamage = -1
+		steelHoeDamage = -4.0
 		#Attack speed of steel pickaxes.
 		steelPickaxeAtkSpeed = -2.799999952316284
 		#Maximum durability of steel tools.
@@ -66,10 +65,8 @@
 		#Attack speed of steel paxels.
 		steelPaxelAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of steel axes.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		steelAxeDamage = 1.5
 		#Attack damage modifier of steel shovels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		steelShovelDamage = 1.0
 		#Attack speed of steel shovels.
 		steelShovelAtkSpeed = -3.0
@@ -111,7 +108,7 @@
 		#Range: > 1
 		refined_glowstoneHelmetDurability = 198
 		#Attack damage modifier of refined_glowstone pickaxes.
-		refined_glowstonePickaxeDamage = 1
+		refined_glowstonePickaxeDamage = 1.0
 		#Maximum durability of refined_glowstone paxels.
 		#Range: > 1
 		refined_glowstonePaxelMaxUses = 450
@@ -135,7 +132,7 @@
 		#Range: > 1
 		refined_glowstoneToolMaxUses = 250
 		#Attack damage modifier of refined_glowstone hoes.
-		refined_glowstoneHoeDamage = -1
+		refined_glowstoneHoeDamage = -5.0
 		#Efficiency of refined_glowstone paxels.
 		refined_glowstonePaxelEfficiency = 14.0
 		#Efficiency of refined_glowstone tools.
@@ -144,7 +141,6 @@
 		#Range: > 0
 		refined_glowstonePaxelHarvestLevel = 3
 		#Attack damage modifier of refined_glowstone axes.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneAxeDamage = 1.5
 		#Maximum durability of refined_glowstone boots.
 		#Range: > 1
@@ -153,12 +149,11 @@
 		#Range: > 1
 		refined_glowstoneChestplateDurability = 288
 		#Attack damage modifier of refined_glowstone shovels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneShovelDamage = 1.0
 		#Attack speed of refined_glowstone pickaxes.
 		refined_glowstonePickaxeAtkSpeed = -2.799999952316284
 		#Attack damage modifier of refined_glowstone swords.
-		refined_glowstoneSwordDamage = 3
+		refined_glowstoneSwordDamage = 3.0
 		#Base armor knockback resistance value of refined_glowstone armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstoneKnockbackResistance = 0.0
@@ -166,7 +161,6 @@
 		#Range: > 0
 		refined_glowstonePaxelEnchantability = 22
 		#Attack damage modifier of refined_glowstone paxels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_glowstonePaxelDamage = 3.0
 		#Maximum durability of refined_glowstone leggings.
 		#Range: > 1
@@ -192,7 +186,6 @@
 		#Range: > 0
 		lapis_lazuliHelmetArmor = 2
 		#Attack damage modifier of lapis_lazuli paxels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliPaxelDamage = 6.0
 		#Efficiency of lapis_lazuli tools.
 		lapis_lazuliEfficiency = 5.0
@@ -212,7 +205,7 @@
 		#Attack speed of lapis_lazuli paxels.
 		lapis_lazuliPaxelAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of lapis_lazuli pickaxes.
-		lapis_lazuliPickaxeDamage = 1
+		lapis_lazuliPickaxeDamage = 1.0
 		#Maximum durability of lapis_lazuli tools.
 		#Range: > 1
 		lapis_lazuliToolMaxUses = 200
@@ -222,7 +215,6 @@
 		#Attack speed of lapis_lazuli swords.
 		lapis_lazuliSwordAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of lapis_lazuli axes.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliAxeDamage = 6.0
 		#Maximum durability of lapis_lazuli leggings.
 		#Range: > 1
@@ -231,10 +223,9 @@
 		#Range: > 1
 		lapis_lazuliBootDurability = 169
 		#Attack damage modifier of lapis_lazuli shovels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliShovelDamage = 1.5
 		#Attack damage modifier of lapis_lazuli swords.
-		lapis_lazuliSwordDamage = 3
+		lapis_lazuliSwordDamage = 3.0
 		#Base armor toughness value of lapis_lazuli armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		lapis_lazuliToughness = 0.0
@@ -245,7 +236,7 @@
 		#Range: > 1
 		lapis_lazuliPaxelMaxUses = 250
 		#Attack damage modifier of lapis_lazuli hoes.
-		lapis_lazuliHoeDamage = -1
+		lapis_lazuliHoeDamage = -2.0
 		#Harvest level of lapis_lazuli tools.
 		#Range: > 0
 		lapis_lazuliHarvestLevel = 2
@@ -269,7 +260,7 @@
 	# Material Settings for osmium
 	[tools.osmium]
 		#Attack damage modifier of osmium swords.
-		osmiumSwordDamage = 3
+		osmiumSwordDamage = 3.0
 		#Protection value of osmium chestplates.
 		#Range: > 0
 		osmiumChestplateArmor = 5
@@ -294,12 +285,11 @@
 		#Attack speed of osmium shovels.
 		osmiumShovelAtkSpeed = -3.0
 		#Attack damage modifier of osmium hoes.
-		osmiumHoeDamage = -1
+		osmiumHoeDamage = -4.0
 		#Base armor knockback resistance value of osmium armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		osmiumKnockbackResistance = 0.0
 		#Attack damage modifier of osmium paxels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		osmiumPaxelDamage = 4.0
 		#Attack speed of osmium hoes.
 		osmiumHoeAtkSpeed = 1.0
@@ -310,13 +300,11 @@
 		#Range: > 1
 		osmiumHelmetDurability = 330
 		#Attack damage modifier of osmium axes.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		osmiumAxeDamage = 1.5
 		#Protection value of osmium helmets.
 		#Range: > 0
 		osmiumHelmetArmor = 3
 		#Attack damage modifier of osmium shovels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		osmiumShovelDamage = 1.0
 		#Base attack damage of osmium items.
 		#Range: 0.0 ~ 3.4028234663852886E38
@@ -341,7 +329,7 @@
 		#Attack speed of osmium paxels.
 		osmiumPaxelAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of osmium pickaxes.
-		osmiumPickaxeDamage = 1
+		osmiumPickaxeDamage = 1.0
 		#Protection value of osmium boots.
 		#Range: > 0
 		osmiumBootArmor = 3
@@ -360,7 +348,6 @@
 		#Range: > 0
 		refined_obsidianChestplateArmor = 9
 		#Attack damage modifier of refined_obsidian axes.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianAxeDamage = 5.0
 		#Attack speed of refined_obsidian pickaxes.
 		refined_obsidianPickaxeAtkSpeed = -2.799999952316284
@@ -386,18 +373,16 @@
 		#Attack speed of refined_obsidian axes.
 		refined_obsidianAxeAtkSpeed = -2.0
 		#Attack damage modifier of refined_obsidian paxels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianPaxelDamage = 4.0
 		#Natural enchantability factor of refined_obsidian paxels.
 		#Range: > 0
 		refined_obsidianPaxelEnchantability = 50
 		#Attack damage modifier of refined_obsidian swords.
-		refined_obsidianSwordDamage = 3
+		refined_obsidianSwordDamage = 3.0
 		#Attack damage modifier of refined_obsidian shovels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianShovelDamage = 1.0
 		#Attack damage modifier of refined_obsidian hoes.
-		refined_obsidianHoeDamage = -1
+		refined_obsidianHoeDamage = -10.0
 		#Maximum durability of refined_obsidian boots.
 		#Range: > 1
 		refined_obsidianBootDurability = 650
@@ -415,7 +400,7 @@
 		#Range: > 1
 		refined_obsidianLeggingDurability = 750
 		#Attack damage modifier of refined_obsidian pickaxes.
-		refined_obsidianPickaxeDamage = 1
+		refined_obsidianPickaxeDamage = 1.0
 		#Base armor knockback resistance value of refined_obsidian armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		refined_obsidianKnockbackResistance = 0.10000000149011612
@@ -572,7 +557,7 @@
 		#Range: > 0
 		bronzeChestplateArmor = 6
 		#Attack damage modifier of bronze pickaxes.
-		bronzePickaxeDamage = 1
+		bronzePickaxeDamage = 1.0
 		#Attack speed of bronze axes.
 		bronzeAxeAtkSpeed = -3.0999999046325684
 		#Maximum durability of bronze paxels.
@@ -587,7 +572,6 @@
 		#Range: > 0
 		bronzeHelmetArmor = 3
 		#Attack damage modifier of bronze axes.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		bronzeAxeDamage = 1.5
 		#Maximum durability of bronze tools.
 		#Range: > 1
@@ -610,7 +594,7 @@
 		#Range: > 0
 		bronzeEnchantability = 10
 		#Attack damage modifier of bronze swords.
-		bronzeSwordDamage = 3
+		bronzeSwordDamage = 3.0
 		#Attack speed of bronze shovels.
 		bronzeShovelAtkSpeed = -3.0
 		#Maximum durability of bronze chestplates.
@@ -631,14 +615,12 @@
 		#Range: > 1
 		bronzeHelmetDurability = 385
 		#Attack damage modifier of bronze shovels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		bronzeShovelDamage = 0.5
 		#Attack damage modifier of bronze hoes.
-		bronzeHoeDamage = -1
+		bronzeHoeDamage = -6.0
 		#Attack speed of bronze paxels.
 		bronzePaxelAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of bronze paxels.
-		#Range: 0.0 ~ 3.4028234663852886E38
 		bronzePaxelDamage = 3.0
 		#Efficiency of bronze paxels.
 		bronzePaxelEfficiency = 9.0

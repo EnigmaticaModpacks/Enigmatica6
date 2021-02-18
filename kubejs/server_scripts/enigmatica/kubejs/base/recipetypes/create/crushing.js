@@ -6,8 +6,19 @@ events.listen('recipes', (event) => {
                 input: 'minecraft:obsidian'
             },
             {
-                outputs: [Item.of('buildinggadgets:construction_paste', 3), Item.of('buildinggadgets:construction_paste').withChance(0.75), Item.of('buildinggadgets:construction_paste').withChance(0.50)],
+                outputs: [
+                    Item.of('buildinggadgets:construction_paste', 3),
+                    Item.of('buildinggadgets:construction_paste').withChance(0.75),
+                    Item.of('buildinggadgets:construction_paste').withChance(0.5)
+                ],
                 input: 'buildinggadgets:construction_block_dense'
+            },
+            {
+                outputs: [
+                    Item.of('betterendforge:crystal_shards', 3),
+                    Item.of('betterendforge:crystal_shards').withChance(0.5)
+                ],
+                input: '#forge:storage_blocks/aurora'
             }
         ]
     };

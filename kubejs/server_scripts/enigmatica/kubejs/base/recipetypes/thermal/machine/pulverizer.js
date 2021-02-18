@@ -7,66 +7,6 @@ events.listen('recipes', (event) => {
                 outputs: [Item.of('minecraft:netherite_scrap', 2)]
             },
             {
-                input: '#forge:ores/nickel',
-                experience: 0.2,
-                outputs: [
-                    Item.of('emendatusenigmatica:nickel_dust', 2),
-                    Item.of('emendatusenigmatica:iron_dust').chance(0.1),
-                    Item.of('minecraft:gravel').chance(0.2)
-                ]
-            },
-            {
-                input: '#forge:ores/aluminum',
-                experience: 0.2,
-                outputs: [
-                    Item.of('emendatusenigmatica:aluminum_dust', 2),
-                    Item.of('emendatusenigmatica:iron_dust').chance(0.1),
-                    Item.of('minecraft:gravel').chance(0.2)
-                ]
-            },
-            {
-                input: '#forge:ores/uranium',
-                experience: 0.2,
-                outputs: [
-                    Item.of('emendatusenigmatica:uranium_dust', 2),
-                    Item.of('emendatusenigmatica:lead_dust').chance(0.1),
-                    Item.of('minecraft:gravel').chance(0.2)
-                ]
-            },
-            {
-                input: '#forge:ores/osmium',
-                experience: 0.2,
-                outputs: [
-                    Item.of('emendatusenigmatica:osmium_dust', 2),
-                    Item.of('emendatusenigmatica:tin_dust').chance(0.1),
-                    Item.of('minecraft:gravel').chance(0.2)
-                ]
-            },
-            {
-                input: '#forge:ores/zinc',
-                experience: 0.2,
-                outputs: [
-                    Item.of('emendatusenigmatica:zinc_dust', 2),
-                    Item.of('emendatusenigmatica:gold_dust').chance(0.1),
-                    Item.of('minecraft:gravel').chance(0.2)
-                ]
-            },
-            {
-                input: '#forge:ores/bitumen',
-                experience: 0.2,
-                outputs: [Item.of('emendatusenigmatica:bitumen_gem', 2), Item.of('minecraft:gravel').chance(0.2)]
-            },
-            {
-                input: '#forge:ores/dimensional',
-                experience: 0.2,
-                outputs: [Item.of('emendatusenigmatica:dimensional_gem', 8)]
-            },
-            {
-                input: '#forge:ores/mana',
-                experience: 0.2,
-                outputs: [Item.of('emendatusenigmatica:arcane_gem', 2)]
-            },
-            {
                 input: 'byg:pink_sandstone',
                 outputs: [
                     Item.of('byg:pink_sand', 2),
@@ -136,6 +76,11 @@ events.listen('recipes', (event) => {
                     Item.of('emendatusenigmatica:silicon_gem').chance(0.5),
                     Item.of('emendatusenigmatica:silicon_gem').chance(0.25)
                 ],
+                experience: 0.2
+            },
+            {
+                input: '#forge:storage_blocks/aurora',
+                outputs: [Item.of('betterendforge:crystal_shards', 4)],
                 experience: 0.2
             }
         ]

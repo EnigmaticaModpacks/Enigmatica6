@@ -31,11 +31,14 @@
 	energyColor = 3997338
 	#How far (in blocks) from the player radiation particles can spawn.
 	radiationParticleRadius = 30
-	#Align HUD with left (if true) or right (if false)
+	#Align HUD (text) with left (if true) or right (if false)
 	alignHUDLeft = true
 	#How much light to produce if ambient lighting is enabled.
 	#Range: 1 ~ 15
 	ambientLightingLevel = 15
+	#Scale of the text displayed on the HUD.
+	#Range: 0.25 ~ 1.0
+	hudScale = 0.6
 
 	#QIO Config
 	[client.qio]

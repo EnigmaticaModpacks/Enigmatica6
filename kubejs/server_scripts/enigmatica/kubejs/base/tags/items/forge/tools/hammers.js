@@ -1,26 +1,13 @@
 events.listen('item.tags', (event) => {
-    var items = [
-        'vanillahammers:bone_hammer',
-        'vanillahammers:coal_hammer',
-        'vanillahammers:diamond_hammer',
-        'vanillahammers:emerald_hammer',
-        'vanillahammers:ender_hammer',
-        'vanillahammers:fiery_hammer',
-        'vanillahammers:glowstone_hammer',
-        'vanillahammers:gold_hammer',
-        'vanillahammers:iron_hammer',
-        'vanillahammers:lapis_hammer',
-        'vanillahammers:nether_hammer',
-        'vanillahammers:netherite_hammer',
-        'vanillahammers:obsidian_hammer',
-        'vanillahammers:paper_hammer',
-        'vanillahammers:prismarine_hammer',
-        'vanillahammers:quartz_hammer',
-        'vanillahammers:redstone_hammer',
-        'vanillahammers:slime_hammer',
-        'vanillahammers:stone_hammer',
-        'vanillahammers:wood_hammer'
-    ];
-    event.get('forge:tools').add(items);
-    event.get('forge:tools/hammer').add(items);
+    var exceptions = ['betterendforge:aeternium_hammer_head'];
+
+    var tags = ['forge:tools', 'forge:tools/hammer'];
+
+    tags.forEach((tag) => {
+        event
+            .get(tag)
+            .add(/vanillahammers:\w+_hammer/)
+            .add(/betterendforge:\w+_hammer/)
+            .remove(exceptions);
+    });
 });

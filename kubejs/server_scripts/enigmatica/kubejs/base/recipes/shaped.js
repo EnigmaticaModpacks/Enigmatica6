@@ -1,4 +1,19 @@
 events.listen('recipes', (event) => {
+    // Please add new recipes to this object instead of recipes
+    const newRecipes = [
+        {
+            output: 'botanypots:botany_pot',
+            pattern: ['ADA', 'ABA', 'ACA'],
+            key: {
+                A: 'minecraft:terracotta',
+                B: 'minecraft:flower_pot',
+                C: 'minecraft:bone_block',
+                D: 'minecraft:water_bucket'
+            },
+            id: 'botanypots:crafting/botany_pot'
+        }
+    ];
+
     var recipes = [
         shapedRecipe('tetra:hammer_base', ['LXL', 'LCL', 'LXL'], {
             L: '#forge:ingots/steel',
@@ -391,12 +406,27 @@ events.listen('recipes', (event) => {
             B: '#forge:obsidian',
             C: 'powah:ender_core'
         }),
+        shapedRecipe(Item.of('byg:pollen_block', 1), ['AA', 'AA'], {
+            A: 'byg:pollen_dust'
+        }),
+        shapedRecipe('losttrinkets:magical_feathers', ['FAF', 'EBE', 'CDC'], {
+            A: 'minecraft:elytra',
+            B: 'magicfeather:magicfeather',
+            C: 'minecraft:prismarine_shard',
+            D: Item.of('minecraft:potion', { Potion: 'bountifulbaubles:flight' }),
+            E: 'rftoolsbase:infused_diamond',
+            F: 'minecraft:ender_eye'
+        }),
 
         //ID Overrides
-        shapedRecipe(Item.of('minecraft:honeycomb_block'), ['AAA', 'AAA', 'AAA'], {
-            A: 'minecraft:honeycomb'
-        },
-        'minecraft:honeycomb_block')
+        shapedRecipe(
+            Item.of('minecraft:honeycomb_block'),
+            ['AAA', 'AAA', 'AAA'],
+            {
+                A: 'minecraft:honeycomb'
+            },
+            'minecraft:honeycomb_block'
+        )
     ];
 
     recipes.forEach(function (recipe) {
@@ -404,6 +434,14 @@ events.listen('recipes', (event) => {
             event.shaped(recipe.result, recipe.pattern, recipe.key).id(recipe.id);
         } else {
             event.shaped(recipe.result, recipe.pattern, recipe.key);
+        }
+    });
+
+    newRecipes.forEach((recipe) => {
+        if (recipe.id) {
+            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+        } else {
+            event.shaped(recipe.output, recipe.pattern, recipe.key);
         }
     });
 
@@ -491,5 +529,17 @@ events.listen('recipes', (event) => {
             B: capacitor,
             C: '#powah:battery'
         });
+    });
+
+    colors.forEach((color) => {
+        event
+            .shaped(`botanypots:${color}_botany_pot`, ['ADA', 'ABA', 'ACA'], {
+                A: `minecraft:${color}_terracotta`,
+                B: 'minecraft:flower_pot',
+                C: 'minecraft:bone_block',
+                D: 'minecraft:water_bucket'
+            })
+            .id(`botanypots:crafting/${color}_botany_pot`);
+        event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
     });
 });

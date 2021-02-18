@@ -37,6 +37,7 @@ const generatableStone = [
     'minecraft:diorite',
     'minecraft:granite',
     'betterendforge:flavolite',
+    'betterendforge:sulphuric_rock',
     'betterendforge:violecite',
     'byg:black_sandstone',
     'byg:blue_sandstone',

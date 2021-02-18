@@ -1,43 +1,10 @@
 events.listen('item.tags', (event) => {
-    var items = [
-        'aiotbotania:alfsteel_aiot',
-        'aiotbotania:alfsteel_hoe',
-        'aiotbotania:elementium_hoe',
-        'aiotbotania:livingrock_hoe',
-        'aiotbotania:livingwood_hoe',
-        'aiotbotania:manasteel_hoe',
-        'aiotbotania:terra_hoe',
-        'aquaculture:neptunium_hoe',
-        'aquaculture:neptunium_hoe',
-        'byg:pendorite_hoe',
-        'immersiveengineering:hoe_steel',
-        'mapperbase:steel_hoe',
-        'mekanismtools:bronze_hoe',
-        'mekanismtools:lapis_lazuli_hoe',
-        'mekanismtools:osmium_hoe',
-        'mekanismtools:refined_glowstone_hoe',
-        'mekanismtools:refined_obsidian_hoe',
-        'mekanismtools:steel_hoe',
-        'minecraft:diamond_hoe',
-        'minecraft:golden_hoe',
-        'minecraft:iron_hoe',
-        'minecraft:netherite_hoe',
-        'minecraft:stone_hoe',
-        'minecraft:wooden_hoe',
-        'naturesaura:infused_iron_hoe',
-        'naturesaura:sky_hoe',
-        'aiotbotania:livingwood_aiot',
-        'aiotbotania:livingrock_aiot',
-        'aiotbotania:manasteel_aiot',
-        'aiotbotania:elementium_aiot',
-        'aiotbotania:terra_aiot',
-        'undergarden:utheric_hoe',
-        'undergarden:froststeel_hoe',
-        'undergarden:cloggrum_hoe',
-        'undergarden:forgotten_hoe',
-        'betterendforge:aeternium_hoe',
-        'betterendforge:terminite_hoe'
-    ];
-    event.get('forge:tools').add(items);
-    event.get('forge:tools/hoe').add(items);
+    var items = ['immersiveengineering:hoe_steel'];
+    var exceptions = ['betterendforge:aeternium_hoe_head'];
+
+    var tags = ['forge:tools', 'forge:tools/hoe'];
+
+    tags.forEach((tag) => {
+        event.get(tag).add(items).add(/_hoe/).add(/_aiot/).remove(exceptions);
+    });
 });
