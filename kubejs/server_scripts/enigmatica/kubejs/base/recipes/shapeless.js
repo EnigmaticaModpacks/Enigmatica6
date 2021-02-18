@@ -1,4 +1,13 @@
 events.listen('recipes', (event) => {
+    // Please add new recipes to this object instead of recipes
+    const newRecipes = [
+        {
+            // output: 'botanypots:hopper_botany_pot',
+            // inputs: ['botanypots:botany_pot', 'minecraft:hopper'],
+            // id: 'botanypots:crafting/compact_hopper_botany_pot'
+        }
+    ];
+
     var recipes = [
         shapelessRecipe('botania:enchanted_soil', ['minecraft:grass_block', 'botania:overgrowth_seed']),
         shapelessRecipe('minecraft:sticky_piston', ['minecraft:piston', '#forge:slimeballs']),
@@ -173,6 +182,14 @@ events.listen('recipes', (event) => {
             event.shapeless(recipe.result, recipe.ingredients).id(recipe.id);
         } else {
             event.shapeless(recipe.result, recipe.ingredients);
+        }
+    });
+
+    newRecipes.forEach((recipe) => {
+        if (recipe.id) {
+            event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
+        } else {
+            event.shapeless(recipe.output, recipe.inputs);
         }
     });
 

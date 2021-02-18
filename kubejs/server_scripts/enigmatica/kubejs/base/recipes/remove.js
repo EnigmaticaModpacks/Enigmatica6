@@ -49,6 +49,8 @@ events.listen('recipes', (event) => {
 
         'botania:fertilizer_dye',
 
+        'botanypots:crafting/compact_hopper_botany_pot',
+
         'buildersaddition:iron_rod',
 
         'create:mechanical_crafting/integrated_circuit',
@@ -78,6 +80,8 @@ events.listen('recipes', (event) => {
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
         'mapperbase:iron_rod',
+        'mapperbase:iron_plate',
+        'mapperbase:steel_plate',
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:reaction/substrate/water_hydrogen',
