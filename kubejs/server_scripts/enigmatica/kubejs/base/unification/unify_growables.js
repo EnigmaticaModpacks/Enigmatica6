@@ -117,20 +117,20 @@ function crops_botany_pots(event, type, crop) {
     if (type.includes('crop_')) {
         //add seeds to crop type output
         outputs.push({
-            chance: 0.05,
+            chance: 0.2,
             output: { item: crop.seed },
             minRolls: 1,
-            maxRolls: 1
+            maxRolls: 5
         });
     }
 
     if (plantSecondary) {
         //add any secondary
         outputs.push({
-            chance: 0.01,
+            chance: 0.05,
             output: { item: plantSecondary },
             minRolls: 1,
-            maxRolls: 1
+            maxRolls: 5
         });
     }
 
@@ -411,12 +411,12 @@ function trees_botany_pots(event, type, tree) {
         growthModifier = 1.0;
 
     // chance, minRolls, maxRolls
-    var saplingRate = [1, 1, 2],
-        trunkRate = [1.0, 3, 5],
+    var saplingRate = [1.0, 3, 6],
+        trunkRate = [1.0, 15, 20],
         leafRate = [1.0, 15, 20],
         stickRate = [1.0, 5, 10],
-        extraDecorationRate = [0.2, 1, 3],
-        fruitRate = [0.5, 1, 3],
+        extraDecorationRate = [0.2, 5, 10],
+        fruitRate = [0.5, 5, 10],
         growthTicks = baseGrowthTicks;
 
     var input = tree.sapling,
