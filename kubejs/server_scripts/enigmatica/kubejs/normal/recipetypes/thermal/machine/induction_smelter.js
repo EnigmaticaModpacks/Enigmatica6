@@ -11,7 +11,7 @@ events.listen('recipes', (event) => {
                     Item.of('fluxnetworks:flux_dust', 8)
                 ],
                 outputs: [
-                    Item.of('compactmachines:wall', 32)
+                    Item.of('compactmachines:wall', 64)
                 ]
             }
         ]

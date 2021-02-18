@@ -7,7 +7,7 @@ events.listen('recipes', (event) => {
         recipes: [
             {
                 input: Ingredient.of('#forge:storage_blocks/enderium'),
-                output: Item.of('compactmachines:wall', 32),
+                output: Item.of('compactmachines:wall', 64),
                 aura_type: 'naturesaura:overworld',
                 aura: 15000,
                 time: 100
