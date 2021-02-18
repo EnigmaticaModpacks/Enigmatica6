@@ -100,7 +100,15 @@ events.listen('recipes', (event) => {
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
 
         'powah:crafting/energy_cell_basic_2',
-        'powah:crafting/cable_basic'
+        'powah:crafting/cable_basic',
+
+        '/integrateddynamics:\\w+/convenience/minecraft_dye/',
+        '/integrateddynamics:\\w+/ore/dust/',
+        '/integrateddynamics:\\w+/ore/redstone/',
+        '/integrateddynamics:\\w+/ore/quartz/',
+
+        '/integrateddynamics:\\w+/convenience/',
+        '/integrateddynamics:\\w+/ore/'
     ];
 
     outputRemovals.forEach((removal) => {
@@ -218,10 +226,4 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
     event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
     event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
-    event.remove({
-        id: '/integrateddynamics:\\w+/convenience/minecraft_dye/'
-    });
-    event.remove({
-        id: '/integrateddynamics:\\w+/ore/dust/'
-    });
 });
