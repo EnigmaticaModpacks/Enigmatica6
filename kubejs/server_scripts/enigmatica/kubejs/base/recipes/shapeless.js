@@ -186,11 +186,11 @@ events.listen('recipes', (event) => {
     });
 
     newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
-        } else {
-            event.shapeless(recipe.output, recipe.inputs);
-        }
+        // if (recipe.id) {
+        //     event.shapeless(recipe.output, recipe.inputs).id(recipe.id);
+        // } else {
+        //     event.shapeless(recipe.output, recipe.inputs);
+        // }
     });
 
     powahTiers.forEach(function (tier) {
