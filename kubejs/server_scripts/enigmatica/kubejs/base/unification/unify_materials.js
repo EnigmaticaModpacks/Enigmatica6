@@ -36,9 +36,9 @@ events.listen('recipes', (event) => {
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
 
-        integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
-        integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
-        integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, gem);
+        //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
+        //integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
+        //integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, gem);
 
         occultism_ore_crushing(event, material, ore, dust, gem, shard);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
@@ -576,7 +576,7 @@ function integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shar
         secondaryCount,
         secondaryChance = 0.25,
         output = gem,
-        processingTime = 200,
+        processingTime = 80,
         input = 'forge:ores/' + material;
 
     switch (material) {
@@ -694,11 +694,9 @@ function integrated_dynamics_ore_squeezing_with_secondary_outputs(event, materia
     }
 
     var primaryOutput = dust,
-        primaryCount = 2,
-        secondaryCount = 2,
         secondaryMaterial,
         input = 'forge:ores/' + material,
-        processingTime = 200;
+        processingTime = 80;
 
     switch (material) {
         case 'iron':
@@ -754,8 +752,6 @@ function integrated_dynamics_ore_squeezing_with_secondary_outputs(event, materia
     }
 
     var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + secondaryMaterial)).id;
-    var primaryChance = 0.25,
-        secondaryChance = 0.05;
 
     event.custom({
         type: 'integrateddynamics:squeezer',
@@ -772,24 +768,14 @@ function integrated_dynamics_ore_squeezing_with_secondary_outputs(event, materia
                 },
                 {
                     item: {
-                        item: primaryOutput,
-                        count: primaryCount
-                    },
-                    chance: primaryChance
-                },
-                {
-                    item: {
                         item: secondaryOutput,
-                        count: secondaryCount
+                        count: 1
                     },
-                    chance: secondaryChance
+                    chance: 0.05
                 }
             ]
         }
     });
-
-    primaryChance = 0.6;
-    secondaryChance = 0.1;
 
     event.custom({
         type: 'integrateddynamics:mechanical_squeezer',
@@ -807,16 +793,16 @@ function integrated_dynamics_ore_squeezing_with_secondary_outputs(event, materia
                 {
                     item: {
                         item: primaryOutput,
-                        count: primaryCount
+                        count: 1
                     },
-                    chance: primaryChance
+                    chance: 0.75
                 },
                 {
                     item: {
                         item: secondaryOutput,
-                        count: secondaryCount
+                        count: 1
                     },
-                    chance: secondaryChance
+                    chance: 0.1
                 }
             ]
         },
@@ -830,7 +816,9 @@ function integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, ge
     }
 
     var input,
-        output = dust;
+        output = dust,
+        processingTime = 80;
+
     if (ingot != air) {
         input = 'forge:ingots/' + material;
     } else if (gem != air) {
@@ -871,7 +859,7 @@ function integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, ge
                 }
             ]
         },
-        duration: 100
+        duration: processingTime
     });
 }
 
