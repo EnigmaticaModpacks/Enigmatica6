@@ -74,6 +74,9 @@
                     "condition": "random_chance_with_looting",
                     "chance": 0.75,
                     "looting_multiplier": 0.1
+                },
+                {
+                    "condition": "killed_by_player"
                 }
             ],
             "entries": [
@@ -81,11 +84,6 @@
                     "type": "item",
                     "weight": 20,
                     "name": "minecraft:book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -101,11 +99,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:weapon_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -118,11 +111,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:armor_head_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -135,11 +123,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:armor_chest_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -152,11 +135,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:armor_legs_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -169,11 +147,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:armor_feet_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -186,11 +159,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:digger_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -203,11 +171,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:fishing_rod_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -220,11 +183,6 @@
                     "type": "item",
                     "weight": 1,
                     "name": "apotheosis:bow_book",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ],
                     "functions": [
                         {
                             "function": "enchant_with_levels",
@@ -236,12 +194,7 @@
                 {
                     "type": "loot_table",
                     "weight": 20,
-                    "name": "minecraft:chests/nether_bridge",
-                    "conditions": [
-                        {
-                            "condition": "killed_by_player"
-                        }
-                    ]
+                    "name": "minecraft:chests/nether_bridge"
                 },
                 {
                     "type": "loot_table",
@@ -251,9 +204,6 @@
                         {
                             "condition": "random_chance",
                             "chance": 0.1
-                        },
-                        {
-                            "condition": "killed_by_player"
                         }
                     ]
                 }
