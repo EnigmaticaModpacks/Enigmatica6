@@ -1,0 +1,260 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:coal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": -1,
+                                "max": 1
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:bone",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 0,
+                                "max": 2
+                            }
+                        },
+                        {
+                            "function": "looting_enchant",
+                            "count": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "killed_by_player"
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:wither_skeleton_skull"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.75,
+                    "looting_multiplier": 0.1
+                }
+            ],
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "minecraft:book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": {
+                                "min": 20,
+                                "max": 30
+                            },
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:weapon_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:armor_head_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:armor_chest_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:armor_legs_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:armor_feet_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:digger_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:fishing_rod_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "apotheosis:bow_book",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ],
+                    "functions": [
+                        {
+                            "function": "enchant_with_levels",
+                            "levels": 50,
+                            "treasure": true
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 20,
+                    "name": "minecraft:chests/nether_bridge",
+                    "conditions": [
+                        {
+                            "condition": "killed_by_player"
+                        }
+                    ]
+                },
+                {
+                    "type": "loot_table",
+                    "weight": 1,
+                    "name": "artifact:entity/mimic",
+                    "conditions": [
+                        {
+                            "condition": "random_chance",
+                            "chance": 0.1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
