@@ -81,14 +81,14 @@
             "entries": [
                 {
                     "type": "item",
-                    "weight": 15,
+                    "weight": 12,
                     "name": "minecraft:book",
                     "functions": [
                         {
                             "function": "enchant_with_levels",
                             "levels": {
                                 "min": 20,
-                                "max": 30
+                                "max": 50
                             },
                             "treasure": true
                         }
@@ -180,7 +180,7 @@
                 },
                 {
                     "type": "loot_table",
-                    "weight": 20,
+                    "weight": 10,
                     "name": "minecraft:chests/nether_bridge"
                 }
             ]
@@ -198,7 +198,7 @@
                 {
                     "type": "loot_table",
                     "weight": 1,
-                    "name": "artifact:entity/mimic",
+                    "name": "artifacts:artifact",
                     "conditions": [
                         {
                             "condition": "killed_by_player"
@@ -211,8 +211,9 @@
             "rolls": 1,
             "conditions": [
                 {
-                    "condition": "random_chance",
-                    "chance": 0.3
+                    "condition": "random_chance_with_looting",
+                    "chance": 0.3,
+                    "looting_multiplier": 0.05
                 }
             ],
             "entries": [
