@@ -251,6 +251,9 @@
                         {
                             "condition": "random_chance",
                             "chance": 0.1
+                        },
+                        {
+                            "condition": "killed_by_player"
                         }
                     ]
                 }
