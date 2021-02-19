@@ -1,71 +1,36 @@
 events.listen('item.tags', (event) => {
     var items = [
-        'aiotbotania:elementium_aiot',
-        'aiotbotania:livingrock_aiot',
-        'aiotbotania:livingwood_aiot',
-        'aiotbotania:manasteel_aiot',
-        'aiotbotania:terra_aiot',
-        'aquaculture:neptunium_sword',
-        'botania:elementium_sword',
         'botania:ender_dagger',
-        'botania:manasteel_sword',
-        'botania:star_sword',
-        'botania:terra_sword',
-        'botania:thunder_sword',
         'byg:pendorite_battleaxe',
-        'byg:pendorite_sword',
         'immersiveengineering:sword_steel',
         'industrialforegoing:infinity_hammer',
         'meetyourfight:cocktail_cutlass',
         'mekanism:atomic_disassembler',
         'mekanism:meka_tool',
-        'mekanismtools:bronze_paxel',
-        'mekanismtools:bronze_sword',
-        'mekanismtools:diamond_paxel',
-        'mekanismtools:gold_paxel',
-        'mekanismtools:iron_paxel',
-        'mekanismtools:lapis_lazuli_paxel',
-        'mekanismtools:lapis_lazuli_sword',
-        'mekanismtools:netherite_paxel',
-        'mekanismtools:osmium_sword',
-        'mekanismtools:refined_glowstone_paxel',
-        'mekanismtools:refined_glowstone_sword',
-        'mekanismtools:refined_obsidian_paxel',
-        'mekanismtools:refined_obsidian_sword',
-        'mekanismtools:steel_paxel',
-        'mekanismtools:steel_sword',
-        'mekanismtools:stone_paxel',
-        'mekanismtools:wood_paxel',
-        'minecraft:diamond_sword',
-        'minecraft:golden_sword',
-        'minecraft:iron_sword',
-        'minecraft:netherite_sword',
-        'minecraft:stone_sword',
-        'minecraft:wooden_sword',
-        'mythicbotany:alfsteel_sword',
-        'naturesaura:infused_iron_sword',
-        'naturesaura:sky_sword',
         'wstweaks:blaze_blade',
         'wstweaks:lava_blade',
-        'undergarden:utheric_sword',
-        'undergarden:froststeel_sword',
-        'undergarden:cloggrum_sword',
         'undergarden:cloggrum_battleaxe',
         'bloodmagic:soulsword',
         'bloodmagic:soulscythe',
-        'astralsorcery:crystal_sword',
-        'astralsorcery:infused_crystal_sword',
         'meetyourfight:depth_star',
-        'undergarden:forgotten_sword',
-        'eidolon:reaper_scythe',
-        'eidolon:sapping_sword',
-        'betterendforge:netherite_hammer',
-        'betterendforge:diamond_hammer',
-        'betterendforge:golden_hammer',
-        'betterendforge:iron_hammer',
-        'betterendforge:aeternium_hammer',
-        'betterendforge:terminite_hammer'
+        'eidolon:reaper_scythe'
     ];
-    event.get('forge:weapons').add(items);
-    event.get('forge:weapons/melee').add(items);
+    var exceptions = [
+        'betterendforge:aeternium_hammer_head',
+        'betterendforge:aeternium_sword_handle',
+        'betterendforge:aeternium_sword_blade'
+    ];
+
+    var tags = ['forge:weapons', 'forge:weapons/melee'];
+
+    tags.forEach((tag) => {
+        event
+            .get(tag)
+            .add(items)
+            .add(/_sword/)
+            .add(/_paxel/)
+            .add(/_aiot/)
+            .add(/betterendforge:\w+_hammer/)
+            .remove(exceptions);
+    });
 });

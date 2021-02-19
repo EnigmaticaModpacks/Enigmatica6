@@ -1,51 +1,31 @@
 events.listen('item.tags', (event) => {
     var items = [
         'chiselsandbits:bit_storage',
-        'mekanism:advanced_fluid_tank',
-        'mekanism:basic_fluid_tank',
-        'mekanism:creative_fluid_tank',
-        'mekanism:dynamic_tank',
-        'mekanism:dynamic_valve',
-        'mekanism:elite_fluid_tank',
-        'mekanism:ultimate_fluid_tank',
-        'pneumaticcraft:large_tank',
-        'pneumaticcraft:medium_tank',
-        'pneumaticcraft:small_tank',
-        'refinedstorage:1024k_fluid_storage_block',
-        'refinedstorage:1024k_fluid_storage_disk',
-        'refinedstorage:1024k_fluid_storage_part',
-        'refinedstorage:256k_fluid_storage_block',
-        'refinedstorage:256k_fluid_storage_disk',
-        'refinedstorage:256k_fluid_storage_part',
-        'refinedstorage:4096k_fluid_storage_block',
-        'refinedstorage:4096k_fluid_storage_disk',
-        'refinedstorage:4096k_fluid_storage_part',
-        'refinedstorage:64k_fluid_storage_block',
-        'refinedstorage:64k_fluid_storage_disk',
-        'refinedstorage:64k_fluid_storage_part',
         'rftoolsutility:tank',
-        'extrastorage:disk_1048576k_fluid',
-        'extrastorage:disk_262144k_fluid',
-        'extrastorage:disk_65536k_fluid',
-        'extrastorage:disk_16384k_fluid',
-        'extrastorage:storagepart_1048576k_fluid',
-        'extrastorage:storagepart_262144k_fluid',
-        'extrastorage:storagepart_65536k_fluid',
-        'extrastorage:storagepart_16384k_fluid',
-        'extrastorage:block_1048576k_fluid',
-        'extrastorage:block_262144k_fluid',
-        'extrastorage:block_65536k_fluid',
-        'extrastorage:block_16384k_fluid',
         'astralsorcery:chalice',
         'thermal:fluid_cell',
-        'industrialforegoing:supreme_black_hole_tank',
-        'industrialforegoing:pity_black_hole_tank',
-        'industrialforegoing:simple_black_hole_tank',
-        'industrialforegoing:advanced_black_hole_tank',
-        'industrialforegoing:common_black_hole_tank',
-        'industrialforegoing:black_hole_controller'
+        'industrialforegoing:black_hole_controller',
+        'mekanism:dynamic_valve'
     ];
-    event.get('forge:storage').add(items);
-    event.get('forge:storage/liquid').add(items);
-    event.get('forge:storage/fluid').add(items);
+    var exceptions = [
+        'pneumaticcraft:etching_tank',
+        'immersivepetroleum:upgrade_tank',
+        'mekanism:scuba_tank',
+        'mekanism:basic_chemical_tank',
+        'mekanism:advanced_chemical_tank',
+        'mekanism:elite_chemical_tank',
+        'mekanism:ultimate_chemical_tank',
+        'mekanism:creative_chemical_tank'
+    ];
+    var tags = ['forge:storage', 'forge:storage/liquid', 'forge:storage/fluid'];
+
+    tags.forEach((tag) => {
+        event
+            .get(tag)
+            .add(items)
+            .add(/_tank/)
+            .add(/fluid_storage/)
+            .add(/extrastorage:\w+_fluid/)
+            .remove(exceptions);
+    });
 });

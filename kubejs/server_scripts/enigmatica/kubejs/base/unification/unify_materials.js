@@ -7,6 +7,7 @@ events.listen('recipes', (event) => {
 
         var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
         var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
+        var shard = getPreferredItemInTag(Ingredient.of('#forge:shards/' + material)).id;
 
         var plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
         var gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
@@ -16,15 +17,15 @@ events.listen('recipes', (event) => {
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod);
 
-        astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem);
+        astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 
         betterend_alloys(event, material, ore, ingot);
 
-        bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem);
-        bloodmagic_ore_processing_arc(event, material, ore, dust, gem);
+        bloodmagic_ore_processing_alchemy(event, material, ore, gem, shard);
+        bloodmagic_ore_processing_arc(event, material, ore, dust, gem, shard);
 
         create_ore_processing_with_secondary_outputs(event, material, crushedOre);
-        create_gem_processing(event, material, ore, gem, dust);
+        create_gem_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
         create_press_plates(event, material, gem, plate);
 
@@ -32,15 +33,20 @@ events.listen('recipes', (event) => {
 
         immersiveengineering_gem_crushing(event, material, dust, gem);
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
-        immersiveengineering_ore_processing(event, material, ore, gem);
+        immersiveengineering_ore_processing(event, material, ore, gem, shard);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
 
-        occultism_ore_crushing(event, material, ore, dust, gem);
+        //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
+        //integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
+        //integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, gem);
+
+        occultism_ore_crushing(event, material, ore, dust, gem, shard);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        pedestals_ore_crushing(event, material, ore, dust, gem);
+        pedestals_ore_crushing(event, material, ore, dust, shard, gem);
         pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
 
+        thermal_ore_pulverizing(event, material, ore, dust, gem, shard);
         thermal_press_wires(event, material, wire);
         thermal_press_plates(event, material, gem, plate);
     });
@@ -100,7 +106,7 @@ function rod_unification(event, material, ingot, gem, rod) {
     });
 }
 
-function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem) {
+function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
     if (ore == air) {
         return;
     }
@@ -115,7 +121,10 @@ function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem) 
     var input = 'forge:ores/' + material,
         output,
         count;
-    if (gem != air) {
+    if (shard != air) {
+        output = shard;
+        count = 3;
+    } else if (gem != air) {
         output = gem;
         count = 5;
     } else if (ingot != air) {
@@ -157,35 +166,43 @@ function betterend_alloys(event, material, ore, ingot) {
     });
 }
 
-function bloodmagic_ore_processing_alchemy(event, material, ore, dust, gem) {
+function bloodmagic_ore_processing_alchemy(event, material, ore, gem, shard) {
     if (ore == air || gem == air) {
         return;
     }
 
     var inputs = ['#forge:ores/' + material, '#bloodmagic:arc/cuttingfluid'],
         output = Item.of(gem, 2);
+    if (shard != air) {
+        output = Item.of(shard, 2);
+    }
 
     event.recipes.bloodmagic.alchemytable(output, inputs).syphon(400).ticks(200).upgradeLevel(1);
 }
 
-function bloodmagic_ore_processing_arc(event, material, ore, dust, gem) {
+function bloodmagic_ore_processing_arc(event, material, ore, dust, gem, shard) {
     var data = {
         recipes: []
     };
-
+    var output;
     if (ore != air && gem != air) {
+        output = Item.of(gem, 5);
+        if (shard != air) {
+            output = Item.of(shard, 3);
+        }
         data.recipes.push({
             input: '#forge:ores/' + material,
-            output: Item.of(gem, 5),
+            output: output,
             addedOutput: [],
             tool: '#bloodmagic:arc/cuttingfluid'
         });
     }
 
     if (gem != air && dust != air) {
+        output = Item.of(dust, 1);
         data.recipes.push({
             input: '#forge:gems/' + material,
-            output: Item.of(dust, 1),
+            output: output,
             addedOutput: [],
             tool: '#bloodmagic:arc/explosive'
         });
@@ -299,7 +316,7 @@ function create_ore_processing_with_secondary_outputs(event, material, crushedOr
     event.recipes.create.crushing(outputs, input).processingTime(processingTime);
 }
 
-function create_gem_processing(event, material, ore, gem, dust) {
+function create_gem_processing(event, material, ore, gem, dust, shard) {
     if (ore == air) {
         return;
     }
@@ -325,13 +342,13 @@ function create_gem_processing(event, material, ore, gem, dust) {
             break;
         case 'diamond':
             primaryCount = 2;
-            secondaryCount = 1;
+            secondaryCount = 2;
             secondaryChance = 0.25;
             processingTime = 500;
             break;
         case 'emerald':
             primaryCount = 2;
-            secondaryCount = 1;
+            secondaryCount = 2;
             secondaryChance = 0.25;
             processingTime = 500;
             break;
@@ -366,6 +383,18 @@ function create_gem_processing(event, material, ore, gem, dust) {
             primaryCount = 6;
             secondaryCount = 3;
             secondaryChance = 0.25;
+            break;
+        case 'ender':
+            primaryCount = 2;
+            secondaryCount = 2;
+            secondaryChance = 0.25;
+            output = shard;
+            break;
+        case 'amber':
+            primaryCount = 2;
+            secondaryCount = 2;
+            secondaryChance = 0.25;
+            output = shard;
             break;
         default:
             return;
@@ -446,12 +475,13 @@ function immersiveengineering_ingot_crushing(event, material, dust, ingot) {
     }
 }
 
-function immersiveengineering_ore_processing(event, material, ore, gem) {
+function immersiveengineering_ore_processing(event, material, ore, gem, shard) {
     if (ore == air || gem == air) {
         return;
     }
     var count,
-        input = '#forge:ores/' + material;
+        input = '#forge:ores/' + material,
+        output = gem;
 
     switch (material) {
         case 'sulfur':
@@ -475,12 +505,19 @@ function immersiveengineering_ore_processing(event, material, ore, gem) {
         case 'bitumen':
             count = 2;
             break;
+        case 'ender':
+            count = 3;
+            output = shard;
+            break;
+        case 'amber':
+            count = 3;
+            output = shard;
+            break;
         default:
             return;
     }
-    var output = Item.of(gem, count);
 
-    event.recipes.immersiveengineering.crusher(output, input).energy(2000);
+    event.recipes.immersiveengineering.crusher(Item.of(output, count), input).energy(2000);
 }
 
 function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
@@ -531,7 +568,302 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     event.recipes.immersiveengineering.metal_press(output, input, mold).energy(2400);
 }
 
-function occultism_ore_crushing(event, material, ore, dust, gem) {
+function integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard) {
+    if (ore == air) {
+        return;
+    }
+    var primaryCount,
+        secondaryCount,
+        secondaryChance = 0.25,
+        output = gem,
+        processingTime = 80,
+        input = 'forge:ores/' + material;
+
+    switch (material) {
+        case 'redstone':
+            primaryCount = 8;
+            secondaryCount = 6;
+            output = dust;
+            break;
+        case 'coal':
+            primaryCount = 2;
+            secondaryCount = 2;
+            secondaryChance = 0.5;
+            break;
+        case 'diamond':
+            primaryCount = 2;
+            secondaryCount = 2;
+            break;
+        case 'emerald':
+            primaryCount = 2;
+            secondaryCount = 2;
+            break;
+        case 'lapis':
+            primaryCount = 8;
+            secondaryCount = 4;
+            break;
+        case 'quartz':
+            primaryCount = 2;
+            secondaryCount = 4;
+            secondaryChance = 0.5;
+            break;
+        case 'apatite':
+            primaryCount = 4;
+            secondaryCount = 4;
+            break;
+        case 'fluorite':
+            primaryCount = 6;
+            secondaryCount = 3;
+            break;
+        case 'dimensional':
+            primaryCount = 6;
+            secondaryCount = 3;
+            break;
+        case 'arcane':
+            primaryCount = 4;
+            secondaryCount = 4;
+            break;
+        case 'ender':
+            primaryCount = 2;
+            secondaryCount = 2;
+            output = shard;
+            break;
+        case 'amber':
+            primaryCount = 2;
+            secondaryCount = 2;
+            output = shard;
+            break;
+        default:
+            primaryCount = 2;
+            secondaryCount = 1;
+    }
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: primaryCount
+                    }
+                },
+                {
+                    item: {
+                        item: output,
+                        count: secondaryCount
+                    },
+                    chance: secondaryChance
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: primaryCount
+                    }
+                },
+                {
+                    item: {
+                        item: output,
+                        count: secondaryCount
+                    },
+                    chance: secondaryChance
+                }
+            ]
+        },
+        duration: processingTime
+    });
+}
+
+function integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust) {
+    if (ore == air) {
+        return;
+    }
+
+    var primaryOutput = dust,
+        secondaryMaterial,
+        input = 'forge:ores/' + material,
+        processingTime = 80;
+
+    switch (material) {
+        case 'iron':
+            secondaryMaterial = 'nickel';
+            break;
+        case 'nickel':
+            secondaryMaterial = 'iron';
+            break;
+        case 'gold':
+            secondaryMaterial = 'zinc';
+            break;
+        case 'copper':
+            secondaryMaterial = 'gold';
+            break;
+        case 'aluminum':
+            secondaryMaterial = 'iron';
+            break;
+        case 'lead':
+            secondaryMaterial = 'silver';
+            break;
+        case 'silver':
+            secondaryMaterial = 'lead';
+            break;
+        case 'uranium':
+            secondaryMaterial = 'lead';
+            break;
+        case 'osmium':
+            secondaryMaterial = 'tin';
+            break;
+        case 'tin':
+            secondaryMaterial = 'osmium';
+            break;
+        case 'zinc':
+            secondaryMaterial = 'gold';
+            break;
+        case 'iesnium':
+            secondaryMaterial = 'iesnium';
+            break;
+        case 'cloggrum':
+            secondaryMaterial = 'cloggrum';
+            break;
+        case 'froststeel':
+            secondaryMaterial = 'froststeel';
+            break;
+        case 'regalium':
+            secondaryMaterial = 'regalium';
+            break;
+        case 'utherium':
+            secondaryMaterial = 'utherium';
+            break;
+        default:
+            return;
+    }
+
+    var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + secondaryMaterial)).id;
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: 1
+                    }
+                },
+                {
+                    item: {
+                        item: secondaryOutput,
+                        count: 1
+                    },
+                    chance: 0.05
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: 1
+                    }
+                },
+                {
+                    item: {
+                        item: primaryOutput,
+                        count: 1
+                    },
+                    chance: 0.75
+                },
+                {
+                    item: {
+                        item: secondaryOutput,
+                        count: 1
+                    },
+                    chance: 0.1
+                }
+            ]
+        },
+        duration: processingTime
+    });
+}
+
+function integrated_dynamics_ingot_gem_crushing(event, material, ingot, dust, gem) {
+    if (dust == air) {
+        return;
+    }
+
+    var input,
+        output = dust,
+        processingTime = 80;
+
+    if (ingot != air) {
+        input = 'forge:ingots/' + material;
+    } else if (gem != air) {
+        input = 'forge:gems/' + material;
+    } else {
+        return;
+    }
+
+    event.custom({
+        type: 'integrateddynamics:squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: 1
+                    }
+                }
+            ]
+        }
+    });
+
+    event.custom({
+        type: 'integrateddynamics:mechanical_squeezer',
+        item: {
+            tag: input
+        },
+        result: {
+            items: [
+                {
+                    item: {
+                        item: output,
+                        count: 1
+                    }
+                }
+            ]
+        },
+        duration: processingTime
+    });
+}
+
+function occultism_ore_crushing(event, material, ore, dust, gem, shard) {
     if (ore == air) {
         return;
     }
@@ -577,6 +909,9 @@ function occultism_ore_crushing(event, material, ore, dust, gem) {
     var output,
         input = 'forge:ores/' + material,
         output = dust;
+    if (shard != air) {
+        output = shard;
+    }
     if (gem != air) {
         output = gem;
     }
@@ -630,7 +965,7 @@ function occultism_ingot_gem_crushing(event, material, ingot, dust, gem) {
     });
 }
 
-function pedestals_ore_crushing(event, material, ore, dust, gem) {
+function pedestals_ore_crushing(event, material, ore, dust, shard, gem) {
     if (ore == air) {
         return;
     }
@@ -667,7 +1002,10 @@ function pedestals_ore_crushing(event, material, ore, dust, gem) {
     var output,
         input = 'forge:ores/' + material,
         output = dust;
-    if (gem != air) {
+
+    if (shard != air) {
+        output = shard;
+    } else if (gem != air) {
         output = gem;
     }
 
@@ -711,6 +1049,90 @@ function pedestals_ingot_gem_crushing(event, material, ingot, dust, gem) {
             count: 1
         }
     });
+}
+
+function thermal_ore_pulverizing(event, material, ore, dust, gem, shard) {
+    if (ore == air) {
+        return;
+    }
+
+    var primaryOutput = dust,
+        stoneOutput = 'minecraft:gravel',
+        primaryCount = 2,
+        secondaryMaterial,
+        input = '#forge:ores/' + material,
+        experience = 0.2;
+
+    /*experience: 0.2,
+    outputs: [
+        Item.of('emendatusenigmatica:aluminum_dust', 2),
+        Item.of('emendatusenigmatica:iron_dust').chance(0.1),
+        Item.of('minecraft:gravel').chance(0.2)
+    ]*/
+
+    switch (material) {
+        case 'nickel':
+            secondaryMaterial = 'iron';
+            break;
+        case 'aluminum':
+            secondaryMaterial = 'iron';
+            break;
+        case 'uranium':
+            secondaryMaterial = 'lead';
+            break;
+        case 'osmium':
+            secondaryMaterial = 'tin';
+            break;
+        case 'zinc':
+            secondaryMaterial = 'gold';
+            break;
+        case 'ender':
+            secondaryMaterial = 'ender';
+            stoneOutput = 'betterendforge:endstone_dust';
+            primaryOutput = shard;
+            break;
+        case 'amber':
+            secondaryMaterial = 'amber';
+            stoneOutput = 'betterendforge:endstone_dust';
+            primaryOutput = shard;
+            break;
+        case 'bitumen':
+            secondaryMaterial = 'bitumen';
+            primaryOutput = gem;
+            break;
+        case 'dimensional':
+            secondaryMaterial = 'dimensional';
+            stoneOutput = 'betterendforge:endstone_dust';
+            primaryOutput = gem;
+            break;
+        case 'mana':
+            secondaryMaterial = 'mana';
+            primaryOutput = gem;
+            break;
+        default:
+            return;
+    }
+    var secondaryType = 'dusts';
+    if (shard != air) {
+        secondaryType = 'shards';
+    } else if (gem != air) {
+        secondaryType = 'gems';
+    }
+
+    var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:' + secondaryType + '/' + secondaryMaterial)).id;
+
+    outputs = [
+        Item.of(primaryOutput, primaryCount),
+        Item.of(secondaryOutput).chance(0.1),
+        Item.of(stoneOutput).chance(0.2)
+    ];
+
+    event.remove({
+        input: input,
+        mod: 'thermal',
+        type: 'thermal:pulverizer'
+    });
+    event.recipes.thermal.pulverizer(outputs, input).experience(experience);
 }
 
 function thermal_press_plates(event, material, gem, plate) {

@@ -1,5 +1,5 @@
 events.listen('item.tags', (event) => {
-    var items = [
+    event.add('forge:mushroom_caps', [
         'byg:shulkren_wart_block',
         'byg:death_cap_mushroom_block',
         'byg:soul_shroom_block',
@@ -15,7 +15,9 @@ events.listen('item.tags', (event) => {
         'undergarden:veil_mushroom_cap',
         'undergarden:indigo_mushroom_cap',
         'byg:embur_gel_block',
-        'undergarden:grongle_cap'
-    ];
-    event.get('forge:mushroom_caps').add(items);
+        'undergarden:grongle_cap',
+        'betterendforge:umbrella_tree_membrane',
+        'betterendforge:mossy_glowshroom_cap',
+        'betterendforge:jellyshroom_cap_purple'
+    ]);
 });

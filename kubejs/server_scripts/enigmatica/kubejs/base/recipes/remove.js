@@ -49,7 +49,11 @@ events.listen('recipes', (event) => {
 
         'botania:fertilizer_dye',
 
+        'botanypots:crafting/compact_hopper_botany_pot',
+
         'buildersaddition:iron_rod',
+
+        'compactmachines:wall',
 
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
@@ -78,6 +82,8 @@ events.listen('recipes', (event) => {
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
         'mapperbase:iron_rod',
+        'mapperbase:iron_plate',
+        'mapperbase:steel_plate',
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:reaction/substrate/water_hydrogen',
@@ -100,7 +106,15 @@ events.listen('recipes', (event) => {
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
 
         'powah:crafting/energy_cell_basic_2',
-        'powah:crafting/cable_basic'
+        'powah:crafting/cable_basic',
+
+        '/integrateddynamics:\\w+/convenience/minecraft_dye/',
+        '/integrateddynamics:\\w+/ore/dust/',
+        '/integrateddynamics:\\w+/ore/redstone/',
+        '/integrateddynamics:\\w+/ore/quartz/',
+
+        '/integrateddynamics:\\w+/convenience/',
+        '/integrateddynamics:\\w+/ore/'
     ];
 
     outputRemovals.forEach((removal) => {
@@ -218,7 +232,4 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
     event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
     event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
-    event.remove({
-        id: '/integrateddynamics:\\w+/convenience/minecraft_dye/'
-    });
 });

@@ -1,48 +1,18 @@
 events.listen('item.tags', (event) => {
     var items = [
-        'aquaculture:neptunium_leggings',
-        'ars_nouveau:apprentice_leggings',
-        'ars_nouveau:archmage_leggings',
-        'ars_nouveau:novice_leggings',
-        'botania:elementium_leggings',
-        'botania:manasteel_leggings',
-        'botania:manaweave_leggings',
-        'botania:terrasteel_leggings',
-        'byg:ametrine_leggings',
         'immersiveengineering:armor_faraday_legs',
         'immersiveengineering:armor_steel_legs',
-        'mapperbase:steel_leggings',
         'mekanism:hazmat_pants',
         'mekanism:mekasuit_pants',
-        'mekanismtools:bronze_leggings',
-        'mekanismtools:lapis_lazuli_leggings',
-        'mekanismtools:osmium_leggings',
-        'mekanismtools:refined_glowstone_leggings',
-        'mekanismtools:refined_obsidian_leggings',
-        'minecraft:chainmail_leggings',
-        'minecraft:diamond_leggings',
-        'minecraft:golden_leggings',
-        'minecraft:iron_leggings',
-        'minecraft:leather_leggings',
-        'minecraft:netherite_leggings',
-        'mythicbotany:alfsteel_leggings',
         'naturesaura:infused_iron_pants',
-        'naturesaura:sky_pants',
-        'pneumaticcraft:pneumatic_leggings',
-        'thermal:beekeeper_leggings',
-        'thermal:diving_leggings',
-        'thermal:hazmat_leggings',
-        'undergarden:froststeel_leggings',
-        'undergarden:utheric_leggings',
-        'undergarden:cloggrum_leggings',
-        'bloodmagic:livingleggings',
-        'dustrial_decor:cardboard_leggings',
-        'mekanismtools:steel_leggings',
-        'alexsmobs:centipede_leggings',
-        'betterendforge:crystalite_leggings',
-        'betterendforge:aeternium_leggings',
-        'betterendforge:terminite_leggings'
+        'naturesaura:sky_pants'
     ];
-    event.get('forge:armor').add(items);
-    event.get('forge:armor/leggings').add(items);
+    var tags = ['forge:armor', 'forge:armor/leggings'];
+
+    tags.forEach((tag) => {
+        event
+            .get(tag)
+            .add(items)
+            .add(/_leggings/);
+    });
 });

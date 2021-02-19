@@ -6,7 +6,9 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 -   LostTrinkets: Set maximum number of trinket slots the player can have to 10
 -   Chisels&Bits: Increased Bit Bag stack size to 16384 (32 times what it could hold before)
-    **Bug Fixes**
+-   Undergarden: TwistyTwig can no longer be used in place of string
+
+**Bug Fixes**
 
 -
 

@@ -17,7 +17,6 @@ function create_cutting(event, variant) {
     // mod blacklist
     if (
         modID == 'minecraft' ||
-        modID == 'integrateddynamics' ||
         variant.modId == 'autumnity' ||
         variant.modId == 'atmospheric' ||
         variant.modId == 'upgrade_aquatic'
@@ -75,7 +74,7 @@ function create_cutting(event, variant) {
 
 function immersiveengineering_sawing(event, variant, sawDust) {
     // mod blacklist
-    if (variant.modId == 'minecraft' || variant.modId == 'integrateddynamics') {
+    if (variant.modId == 'minecraft') {
         return;
     }
 
@@ -141,24 +140,8 @@ function mekanism_sawing(event, variant, sawDust) {
         ]
     };
 
-    if (variant.modId == 'integrateddynamics') {
-        data.recipes.push({
-            input: 'integrateddynamics:menril_log_filled',
-            output: variant.plankBlock
-        });
-    }
-
     data.recipes.forEach((recipe) => {
-        if (
-            !(
-                variant.modId == 'integrateddynamics' &&
-                (recipe.input == variant.logBlockStripped ||
-                    recipe.input == variant.woodBlockStripped ||
-                    recipe.input == variant.woodBlock)
-            )
-        ) {
-            event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25));
-        }
+        event.recipes.mekanism.sawing(Item.of(recipe.output, 6), recipe.input, Item.of(sawDust).chance(0.25));
     });
 }
 function pedestal_sawing(event, variant) {
@@ -192,34 +175,17 @@ function pedestal_sawing(event, variant) {
         ]
     };
 
-    if (variant.modId == 'integrateddynamics') {
-        data.recipes.push({
-            input: 'integrateddynamics:menril_log_filled',
-            output: variant.plankBlock,
-            count: 6
-        });
-    }
-
     data.recipes.forEach((recipe) => {
-        if (
-            !(
-                variant.modId == 'integrateddynamics' &&
-                (recipe.input == variant.logBlockStripped ||
-                    recipe.input == variant.woodBlockStripped ||
-                    recipe.input == variant.woodBlock)
-            )
-        ) {
-            event.recipes.pedestals.pedestal_sawing({
-                type: 'pedestals:pedestal_sawing',
-                ingredient: {
-                    item: recipe.input
-                },
-                result: {
-                    item: recipe.output,
-                    count: recipe.count
-                }
-            });
-        }
+        event.recipes.pedestals.pedestal_sawing({
+            type: 'pedestals:pedestal_sawing',
+            ingredient: {
+                item: recipe.input
+            },
+            result: {
+                item: recipe.output,
+                count: recipe.count
+            }
+        });
     });
 }
 function thermal_sawing(event, variant, sawDust) {
@@ -255,31 +221,9 @@ function thermal_sawing(event, variant, sawDust) {
         ]
     };
 
-    if (variant.modId == 'integrateddynamics') {
-        event.recipes.thermal
-            .sawmill(
-                [
-                    Item.of('integrateddynamics:menril_planks', 6),
-                    Item.of('integrateddynamics:crystalized_menril_chunk'),
-                    Item.of('emendatusenigmatica:wood_dust').chance(0.25)
-                ],
-                'integrateddynamics:menril_log_filled'
-            )
-            .energy(1000);
-    }
-
     data.recipes.forEach((recipe) => {
-        if (
-            !(
-                variant.modId == 'integrateddynamics' &&
-                (recipe.input == variant.logBlockStripped ||
-                    recipe.input == variant.woodBlockStripped ||
-                    recipe.input == variant.woodBlock)
-            )
-        ) {
-            event.recipes.thermal
-                .sawmill([Item.of(recipe.output, 6), Item.of(sawDust).chance(1.25)], recipe.input)
-                .energy(1000);
-        }
+        event.recipes.thermal
+            .sawmill([Item.of(recipe.output, 6), Item.of(sawDust).chance(1.25)], recipe.input)
+            .energy(1000);
     });
 }
