@@ -181,7 +181,10 @@ events.listen('recipes', (event) => {
             : event.shapeless(recipe.output, recipe.inputs);
     });
 
-    powahTiers.forEach(function (tier) {
+    powahTiers.forEach((tier) => {
+        if (tier == 'starter') {
+            return;
+        }
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
     });
 
