@@ -53,6 +53,7 @@ var woodVariantsToConstruct = [
     'betterendforge:helix_tree',
     'betterendforge:umbrella_tree',
     'betterendforge:jellyshroom',
+    'betterendforge:end_lotus',
     'ars_nouveau:red_archwood',
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',

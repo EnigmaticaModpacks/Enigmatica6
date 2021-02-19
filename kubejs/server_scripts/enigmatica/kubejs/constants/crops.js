@@ -605,6 +605,12 @@ const cropRegistry = [
                 render: 'simplefarming:sorghum_crop',
                 plant: 'simplefarming:sorghum',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'betterendforge:lumecorn_seed',
+                render: 'betterendforge:lumecorn_seed',
+                plant: 'betterendforge:lumecorn_rod',
+                substrate: 'end_moss'
             }
         ]
     },

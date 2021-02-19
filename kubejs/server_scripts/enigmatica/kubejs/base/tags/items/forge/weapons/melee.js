@@ -18,7 +18,11 @@ events.listen('item.tags', (event) => {
     var exceptions = [
         'betterendforge:aeternium_hammer_head',
         'betterendforge:aeternium_sword_handle',
-        'betterendforge:aeternium_sword_blade'
+        'betterendforge:aeternium_sword_blade',
+        'betterendforge:thallasium_sword_handle',
+        'betterendforge:thallasium_sword_blade',
+        'betterendforge:terminite_sword_handle',
+        'betterendforge:terminite_sword_blade'
     ];
 
     var tags = ['forge:weapons', 'forge:weapons/melee'];

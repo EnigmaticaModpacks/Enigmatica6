@@ -1,6 +1,10 @@
 events.listen('item.tags', (event) => {
     var items = ['immersiveengineering:shovel_steel', 'bloodmagic:soulshovel'];
-    var exceptions = ['betterendforge:aeternium_shovel_head'];
+    var exceptions = [
+        'betterendforge:aeternium_shovel_head',
+        'betterendforge:thallasium_shovel_head',
+        'betterendforge:terminite_shovel_head'
+    ];
 
     var tags = ['forge:tools', 'forge:tools/shovel'];
 
