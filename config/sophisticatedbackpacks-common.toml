@@ -3,6 +3,8 @@
 [common]
 	#Disable / enable any items here (disables their recipes)
 	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "advanced_compacting_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "upgrade_base:true", "refill_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true"]
+	#Turns on/off loot added to various vanilla chest loot tables
+	chestLootEnabled = true
 
 	#Leather Backpack Settings
 	[common.leatherBackpack]
@@ -226,4 +228,16 @@
 		upgradesUseInventoriesOfBackpacksInBackpack = true
 		#Allows / Disallows upgrades to be functional even when they are in Backpacks in the inventory of Backpack with Inception Upgrade
 		upgradesInContainedBackpacksAreFunctional = true
+
+	#Settings for Spawning Entities with Backpack
+	[common.entityBackpackAdditions]
+		#Chance of an entity spawning with Backpack
+		#Range: 0.0 ~ 1.0
+		chance = 0.01
+		#Turns on/off addition of loot into backpacks
+		addLoot = true
+		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
+		buffWithPotionEffects = true
+		#Map of entities that can spawn with backpack and related loot tables (if adding a loot is enabled) in format of "EntityRegistryName|LootTableName
+		entityLootTableList = ["minecraft:witch|minecraft:chests/buried_treasure", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:piglin_brute|minecraft:chests/bastion_treasure", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:enderman|minecraft:chests/end_city_treasure", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:zombified_piglin|minecraft:chests/bastion_other"]
 
