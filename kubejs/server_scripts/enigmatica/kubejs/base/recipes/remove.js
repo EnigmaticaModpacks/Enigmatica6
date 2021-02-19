@@ -53,6 +53,8 @@ events.listen('recipes', (event) => {
 
         'buildersaddition:iron_rod',
 
+        'compactmachines:wall',
+
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
         'create:fill_minecraft_bucket_with_create_honey',

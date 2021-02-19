@@ -1930,6 +1930,33 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic",
 				player_command: false
 			}]
+		},
+		{
+			x: 0.5d,
+			y: -0.5d,
+			subtitle: "Better Than a Stick in the Eye",
+			description: [
+				"It’s bound to happen. With pipes and cables running everywhere, who knows what’s going to get into that machine when it’s plonked down. Water? Hydrogen? And once things are in, often times it’s not clear how to get them out. ",
+				"",
+				"This is where the Gauge Dropper comes in. This small tool will help extract unwanted inputs from various machines. Clicking on an input inside the GUI of a machine with the Dropper will extract a small amount of the input, allowing it to be easily transported to another machine. Sneak + Left Click will instead void the material. ",
+				"",
+				"Similarly, Sneak + Right Clicking the air with the gauge dropper will void whatever is currently stored. "
+			],
+			dependencies: ["00000000000006A5"],
+			id: "1100DDF4FA8D31C3",
+			tasks: [{
+				id: "590FDCF2C714EE6B",
+				type: "item",
+				item: "mekanism:gauge_dropper"
+			}],
+			rewards: [{
+				id: "3954C7F86F9C301B",
+				type: "command",
+				title: "Rare Mekanism Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare",
+				player_command: false
+			}]
 		}
 	]
 }
