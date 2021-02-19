@@ -172,7 +172,16 @@ events.listen('recipes', (event) => {
             id: 'minecraft:writable_book'
         },
         { output: Item.of('minecraft:honeycomb', 9), inputs: ['minecraft:honeycomb_block'] },
-        { output: Item.of('byg:pollen_dust', 4), inputs: ['byg:pollen_block'] }
+        { output: Item.of('byg:pollen_dust', 4), inputs: ['byg:pollen_block'] },
+
+        { output: Item.of('betterendforge:lumecorn_seed', 6), inputs: ['betterendforge:lumecorn_rod'] },
+        { output: Item.of('betterendforge:bulb_vine_seed', 4), inputs: ['betterendforge:glowing_bulb'] },
+        { output: Item.of('betterendforge:end_lily_seed', 1), inputs: ['betterendforge:end_lily_leaf'] },
+        { output: Item.of('betterendforge:blue_vine_seed', 4), inputs: ['betterendforge:blue_vine_lantern'] },
+        {
+            output: Item.of('betterendforge:glowing_pillar_seed', 4),
+            inputs: ['betterendforge:glowing_pillar_luminophor']
+        }
     ];
 
     recipes.forEach((recipe) => {

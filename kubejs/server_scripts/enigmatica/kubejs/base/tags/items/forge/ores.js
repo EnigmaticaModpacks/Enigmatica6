@@ -7,7 +7,8 @@ events.listen('item.tags', (event) => {
         'betterendforge:amber_ore',
         'minecraft:ancient_debris',
         'occultism:iesnium_ore',
-        'byg:cryptic_redstone_ore'
+        'byg:cryptic_redstone_ore',
+        'betterendforge:thallasium_ore'
     ]);
 
     event.add('forge:ores/dimensional', [
@@ -20,7 +21,8 @@ events.listen('item.tags', (event) => {
     event.get('forge:ores/netherite_scrap').remove('minecraft:ancient_debris');
     event.get('forge:ores/netherite').add('minecraft:ancient_debris');
 
-    event.add('forge:ores/ender', ['betterendforge:ender_ore']);
-    event.add('forge:ores/amber', ['betterendforge:amber_ore']);
-    event.add('forge:ores/redstone', ['byg:cryptic_redstone_ore']);
+    event.add('forge:ores/ender', 'betterendforge:ender_ore');
+    event.add('forge:ores/amber', 'betterendforge:amber_ore');
+    event.add('forge:ores/redstone', 'byg:cryptic_redstone_ore');
+    event.get('forge:ores/thallasium').add('betterendforge:thallasium_ore');
 });
