@@ -87,6 +87,7 @@ events.listen('recipes', (event) => {
             output: 'emendatusenigmatica:potassium_nitrate_dust',
             inputs: ['thermal:earth_charge', '#forge:ores/potassium_nitrate']
         },
+        { output:'betterendforge:endstone_dust', inputs: ['#forge:dusts/end_stone', '#forge:dusts/end_stone', '#forge:dusts/end_stone', '#forge:dusts/end_stone',] },
         {
             output: Item.of('akashictome:tome').nbt({
                 'akashictome:data': {
