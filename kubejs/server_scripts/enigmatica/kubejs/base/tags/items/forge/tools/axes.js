@@ -1,6 +1,10 @@
 events.listen('item.tags', (event) => {
     var items = ['immersiveengineering:axe_steel', 'bloodmagic:soulaxe'];
-    var exceptions = ['betterendforge:aeternium_axe_head'];
+    var exceptions = [
+        'betterendforge:aeternium_axe_head',
+        'betterendforge:thallasium_axe_head',
+        'betterendforge:terminite_axe_head'
+    ];
 
     var tags = ['forge:tools', 'forge:tools/axe'];
 

@@ -68,11 +68,6 @@ events.listen('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         //var modID = variant.logBlock.split(':')[0];
 
-        // mod blacklist
-        if (variant.modId == 'integrateddynamics') {
-            return;
-        }
-
         data = {
             recipes: [
                 {

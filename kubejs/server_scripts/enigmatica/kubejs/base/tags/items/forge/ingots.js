@@ -7,6 +7,7 @@ events.listen('item.tags', (event) => {
         'astralsorcery:starmetal_ingot',
         'betterendforge:aeternium_ingot',
         'betterendforge:terminite_ingot',
+        'betterendforge:thallasium_ingot',
         'botania:gaia_ingot',
         'create:andesite_alloy',
         'immersiveengineering:ingot_aluminum',
@@ -36,6 +37,7 @@ events.listen('item.tags', (event) => {
 
     event.add('forge:ingots/aeternium', ['betterendforge:aeternium_ingot']);
     event.add('forge:ingots/terminite', ['betterendforge:terminite_ingot']);
+    event.add('forge:ingots/thallasium', ['betterendforge:thallasium_ingot']);
 
     event.get('forge:ingots/gold_brass').add('#forge:ingots/gold').add('#forge:ingots/brass');
     event.get('forge:ingots/gold_bronze').add('#forge:ingots/gold').add('#forge:ingots/bronze');

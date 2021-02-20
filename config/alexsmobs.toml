@@ -38,6 +38,12 @@
 	soulVultureSpawnOnFossil = true
 	#Whether acacia blossoms should drop from blocks tagged with #alexsmobs:drops_acacia_blossoms
 	acaciaBlossomsDropFromLeaves = true
+	#Whether bone serpents are neutral or hostile.
+	neutralBoneSerpents = false
+	#Whether fish oil gives players a special levitation effect.
+	fishOilMeme = true
+	#Whether wandering traders offer items like acacia blossoms, mosquito larva, crocodile egg, etc.
+	wanderingTraderOffers = true
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn

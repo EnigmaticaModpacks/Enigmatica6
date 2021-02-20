@@ -53,11 +53,13 @@ var woodVariantsToConstruct = [
     'betterendforge:helix_tree',
     'betterendforge:umbrella_tree',
     'betterendforge:jellyshroom',
+    'betterendforge:end_lotus',
     'ars_nouveau:red_archwood',
     'ars_nouveau:green_archwood',
     'ars_nouveau:purple_archwood',
     'ars_nouveau:blue_archwood',
     'integrateddynamics:menril',
+    'integrateddynamics:menril_filled',
     'atmospheric:rosewood',
     'atmospheric:morado',
     'atmospheric:yucca',
@@ -117,6 +119,7 @@ woodVariantsToConstruct.forEach((variant) => {
     woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
     plankBlock = modId + ':' + logType + '_planks';
 
+    // Exceptions
     if (modId == 'betterendforge') {
         logSuffix = '_log';
         woodSuffix = '_bark';
@@ -128,7 +131,6 @@ woodVariantsToConstruct.forEach((variant) => {
         plankBlock = modId + ':' + logType + '_planks';
     }
 
-    // Exceptions
     switch (logType) {
         case 'palo_verde':
             plankBlock = 'minecraft:birch_planks';
@@ -176,6 +178,20 @@ woodVariantsToConstruct.forEach((variant) => {
         case 'rosewood':
             woodBlock = modId + ':' + logType;
             woodBlockStripped = modId + ':stripped_' + logType;
+            break;
+        case 'menril':
+            logBlock = 'integrateddynamics:menril_log';
+            woodBlock = 'integrateddynamics:menril_wood';
+            logBlockStripped = 'integrateddynamics:menril_log_stripped';
+            woodBlockStripped = 'integrateddynamics:menril_wood_stripped';
+            plankBlock = 'integrateddynamics:menril_planks';
+            break;
+        case 'menril_filled':
+            logBlock = 'integrateddynamics:menril_log_filled';
+            woodBlock = 'integrateddynamics:menril_wood';
+            logBlockStripped = 'integrateddynamics:menril_log_stripped';
+            woodBlockStripped = 'integrateddynamics:menril_wood_stripped';
+            plankBlock = 'integrateddynamics:menril_planks';
             break;
         default:
     }

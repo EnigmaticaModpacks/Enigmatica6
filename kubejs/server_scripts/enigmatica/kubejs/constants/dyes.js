@@ -1163,6 +1163,13 @@ const dyeSources = [
         primary: 'minecraft:magenta_dye',
         secondary: 'minecraft:pink_dye',
         tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'betterendforge:hydralux_petal',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:white_dye',
+        tertiary: 'minecraft:brown_dye'
     }
 ];
 
