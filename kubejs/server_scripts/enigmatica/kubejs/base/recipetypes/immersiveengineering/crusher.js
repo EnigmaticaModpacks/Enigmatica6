@@ -84,6 +84,10 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:storage_blocks/aurora',
                 output: Item.of('betterendforge:crystal_shards', 4)
+            },
+            {
+                input: '#forge:end_stones',
+                output: Item.of('occultism:crushed_end_stone', 4)
             }
         ]
     };

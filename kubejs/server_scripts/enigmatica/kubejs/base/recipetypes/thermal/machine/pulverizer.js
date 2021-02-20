@@ -82,6 +82,11 @@ events.listen('recipes', (event) => {
                 input: '#forge:storage_blocks/aurora',
                 outputs: [Item.of('betterendforge:crystal_shards', 4)],
                 experience: 0.2
+            },
+            {
+                input: '#forge:end_stones',
+                outputs: [Item.of('occultism:crushed_end_stone', 4)],
+                experience: 0.2
             }
         ]
     };
