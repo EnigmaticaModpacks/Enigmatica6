@@ -44,6 +44,10 @@ events.listen('recipes', (event) => {
             {
                 input: Item.of('create:limesand', 3),
                 output: Item.of('emendatusenigmatica:silicon_gem')
+            },
+            {
+                input: '#forge:end_stones',
+                output: Item.of('occultism:crushed_end_stone', 4)
             }
         ]
     };
