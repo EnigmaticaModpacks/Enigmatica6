@@ -8,7 +8,8 @@ events.listen('item.tags', (event) => {
         'betterendforge:lanceleaf_seed',
         'betterendforge:end_lotus_seed',
         'betterendforge:end_lily_seed',
-        'betterendforge:blue_vine_seed'
+        'betterendforge:blue_vine_seed',
+        'betterendforge:lumecorn_seed'
     ]);
     event.add('forge:seeds/hemp', ['immersiveengineering:seed']);
 
@@ -20,4 +21,5 @@ events.listen('item.tags', (event) => {
     event.add('forge:seeds/end_lotus', ['betterendforge:end_lotus_seed']);
     event.add('forge:seeds/end_lily', ['betterendforge:end_lily_seed']);
     event.add('forge:seeds/blue_vine', ['betterendforge:blue_vine_seed']);
+    event.add('forge:seeds/lumecorn', ['betterendforge:lumecorn_seed']);
 });

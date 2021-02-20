@@ -8,6 +8,12 @@ events.listen('item.tags', (event) => {
         'eidolon:reversal_pick'
     ];
 
+    var exceptions = [
+        'betterendforge:aeternium_pickaxe_head',
+        'betterendforge:thallasium_pickaxe_head',
+        'betterendforge:terminite_pickaxe_head'
+    ];
+
     var tags = ['forge:tools', 'forge:tools/pickaxe'];
 
     tags.forEach((tag) => {
@@ -16,6 +22,7 @@ events.listen('item.tags', (event) => {
             .add(items)
             .add(/_pickaxe/)
             .add(/_paxel/)
-            .add(/_aiot/);
+            .add(/_aiot/)
+            .remove(exceptions);
     });
 });

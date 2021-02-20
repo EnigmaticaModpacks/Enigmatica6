@@ -4,6 +4,8 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements/Changes**
 
+-   BotanyPots: Have been changed greatly. They now grow things very very slowly, but with increased drops.
+    -   This was done to incentivize using other methods that requires more planning, namely IE's Garden Cloche and Thermal's Insolator.
 -   LostTrinkets: Set maximum number of trinket slots the player can have to 10
 -   Chisels&Bits: Increased Bit Bag stack size to 16384 (32 times what it could hold before)
 -   Undergarden: TwistyTwig can no longer be used in place of string

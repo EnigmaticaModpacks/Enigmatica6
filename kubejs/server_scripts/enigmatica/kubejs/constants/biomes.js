@@ -28,7 +28,8 @@ const end_biomes = [
     'betterendforge:painted_mountains',
     'betterendforge:shadow_forest',
     'betterendforge:sulphur_springs',
-    'betterendforge:umbrella_jungle'
+    'betterendforge:umbrella_jungle',
+    'betterendforge:glowing_grasslands'
 ];
 
 const nether_biomes = [
