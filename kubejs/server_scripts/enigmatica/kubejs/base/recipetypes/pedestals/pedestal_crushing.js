@@ -1,0 +1,22 @@
+events.listen('recipes', (event) => {
+    var data = {
+        recipes: [
+            { input: 'thermal:blizz_rod', output: 'thermal:blizz_powder', count: 3 },
+            { input: 'thermal:blitz_rod', output: 'thermal:blitz_powder', count: 3 },
+            { input: 'thermal:basalz_rod', output: 'thermal:basalz_powder', count: 3 },
+            { input: 'minecraft:end_stone', output: 'occultism:crushed_end_stone', count: 4} 
+        ]
+    };
+    data.recipes.forEach((recipe) => {
+        event.custom({
+            type: 'pedestals:pedestal_crushing',
+            ingredient: {
+                item: recipe.input
+            },
+            result: {
+                item: recipe.output,
+                count: recipe.count
+            }
+        });
+    });
+});
