@@ -12,7 +12,7 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
--
+-   Powah: At long last fixed a heat sources issue, credit BlueAgent
 
 ### Enigmatica 6 v0.3.13
 
