@@ -1,7 +1,5 @@
 #!/bin/sh
 
-cd ..
-
 echo "#!/bin/sh" > .git/hooks/post-merge
 echo "java -jar InstanceSync.jar" >> .git/hooks/post-merge
 

@@ -51,7 +51,7 @@ git fetch
 git pull origin develop
 ```
 
-8. Now double click the script `setup.sh` to setup InstanceSync. It is found in the `development` folder.
+8. Now double click the script `InstanceSyncSetup.sh` to setup InstanceSync. It is found in the root folder.
 
 You're done!
 
@@ -64,7 +64,7 @@ Tip: If you run into issues, verifying you are using the right Minecraft and For
 
     _Note: If you've previously used the Twitch App the path will most likely be `C:\Users\User\Documents\Twitch\Minecraft\Instances`._
 
-3. Double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+3. Double click the script `InstanceSyncSetup.bat` to setup InstanceSync. It is found in the root folder.
 4. Pull.
 5. Open the CurseForge App and you should see Enigmatica 6. If you already had CurseForge App open, restart it.
 

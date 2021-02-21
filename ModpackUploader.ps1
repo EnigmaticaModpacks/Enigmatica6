@@ -62,7 +62,7 @@ if ($ENABLE_SERVER_FILE_MODULE) {
     Write-Host ""
 
     $CONTENTS_TO_MOVE | ForEach-Object {
-        $FilePath = "$PSScriptRoot/development/include-in-server-files/$_"
+        $FilePath = "$PSScriptRoot/server/$_"
         Copy-Item -Path $FilePath -Destination $PSScriptRoot
     }
 
