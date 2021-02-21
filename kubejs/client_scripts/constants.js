@@ -201,7 +201,7 @@ var regexHide = [
     /emendatusenigmatica:\w+fluix/,
     /mapperbase:steel/,
     /mapperbase:\w+_block/,
-
+    /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/
 ];
 
