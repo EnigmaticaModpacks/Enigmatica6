@@ -34,6 +34,7 @@ events.listen('recipes', (event) => {
         immersiveengineering_gem_crushing(event, material, dust, gem);
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
+        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
 
         //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
@@ -518,6 +519,76 @@ function immersiveengineering_ore_processing(event, material, ore, gem, shard) {
     }
 
     event.recipes.immersiveengineering.crusher(Item.of(output, count), input).energy(2000);
+}
+
+function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust) {
+    if (ore == air) {
+        return;
+    }
+
+    var primaryOutput = dust,
+        secondaryMaterial,
+        secondaryChance = 0.1,
+        input = '#forge:ores/' + material;
+
+    switch (material) {
+        case 'iron':
+            secondaryMaterial = 'nickel';
+            break;
+        case 'nickel':
+            secondaryMaterial = 'iron';
+            break;
+        case 'gold':
+            secondaryMaterial = 'zinc';
+            break;
+        case 'copper':
+            secondaryMaterial = 'gold';
+            break;
+        case 'aluminum':
+            secondaryMaterial = 'iron';
+            break;
+        case 'lead':
+            secondaryMaterial = 'silver';
+            break;
+        case 'silver':
+            secondaryMaterial = 'lead';
+            break;
+        case 'uranium':
+            secondaryMaterial = 'lead';
+            break;
+        case 'osmium':
+            secondaryMaterial = 'tin';
+            break;
+        case 'tin':
+            secondaryMaterial = 'osmium';
+            break;
+        case 'zinc':
+            secondaryMaterial = 'gold';
+            break;
+        case 'iesnium':
+            secondaryMaterial = 'iesnium';
+            break;
+        case 'cloggrum':
+            secondaryMaterial = 'cloggrum';
+            break;
+        case 'froststeel':
+            secondaryMaterial = 'froststeel';
+            break;
+        case 'regalium':
+            secondaryMaterial = 'regalium';
+            break;
+        case 'utherium':
+            secondaryMaterial = 'utherium';
+            break;
+        default:
+            return;
+    }
+
+    var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + secondaryMaterial)).id;
+
+    event.recipes.immersiveengineering
+        .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
+        .id('immersiveengineering:crusher/ore_' + material);
 }
 
 function immersiveengineering_press_plates(event, material, ingot, gem, plate) {

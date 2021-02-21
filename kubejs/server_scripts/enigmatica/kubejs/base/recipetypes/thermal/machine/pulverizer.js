@@ -4,7 +4,8 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:ores/netherite',
                 experience: 0.2,
-                outputs: [Item.of('minecraft:netherite_scrap', 2)]
+                outputs: [Item.of('minecraft:netherite_scrap', 2)],
+                id: 'thermal:machine/pulverizer/pulverizer_netherite'
             },
             {
                 input: 'byg:pink_sandstone',
@@ -12,6 +13,7 @@ events.listen('recipes', (event) => {
                     Item.of('byg:pink_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_pink_sandstone',
                 experience: 0.2
             },
             {
@@ -20,6 +22,7 @@ events.listen('recipes', (event) => {
                     Item.of('byg:purple_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_purple_sandstone',
                 experience: 0.2
             },
             {
@@ -28,6 +31,7 @@ events.listen('recipes', (event) => {
                     Item.of('byg:blue_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_blue_sandstone',
                 experience: 0.2
             },
             {
@@ -36,6 +40,7 @@ events.listen('recipes', (event) => {
                     Item.of('byg:white_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_white_sandstone',
                 experience: 0.2
             },
             {
@@ -44,6 +49,7 @@ events.listen('recipes', (event) => {
                     Item.of('byg:black_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_black_sandstone',
                 experience: 0.2
             },
             {
@@ -52,6 +58,7 @@ events.listen('recipes', (event) => {
                     Item.of('atmospheric:arid_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_arid_sandstone',
                 experience: 0.2
             },
             {
@@ -60,6 +67,7 @@ events.listen('recipes', (event) => {
                     Item.of('atmospheric:red_arid_sand', 2),
                     Item.of('emendatusenigmatica:potassium_nitrate_dust').chance(0.3)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_red_arid_sandstone',
                 experience: 0.2
             },
             {
@@ -68,6 +76,7 @@ events.listen('recipes', (event) => {
                     Item.of('buildinggadgets:construction_paste', 3),
                     Item.of('buildinggadgets:construction_paste', 2).chance(0.5)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_construction_block',
                 experience: 0.2
             },
             {
@@ -76,27 +85,34 @@ events.listen('recipes', (event) => {
                     Item.of('emendatusenigmatica:silicon_gem').chance(0.5),
                     Item.of('emendatusenigmatica:silicon_gem').chance(0.25)
                 ],
+                id: 'thermal:machine/pulverizer/pulverizer_limesand',
                 experience: 0.2
             },
             {
                 input: '#forge:storage_blocks/aurora',
                 outputs: [Item.of('betterendforge:crystal_shards', 4)],
+                id: 'thermal:machine/pulverizer/pulverizer_aurora',
                 experience: 0.2
             },
             {
                 input: '#forge:end_stones',
                 outputs: [Item.of('occultism:crushed_end_stone', 4)],
+                id: 'thermal:machine/pulverizer/pulverizer_end_stone',
                 experience: 0.2
+            },
+            {
+                input: '#forge:obsidian',
+                outputs: [Item.of('emendatusenigmatica:obsidian_dust'), Item.of('minecraft:obsidian').chance(0.75)],
+                experience: 0.2,
+                id: 'thermal:machine/pulverizer/pulverizer_obsidian'
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.remove({
-            input: recipe.input,
-            mod: 'thermal',
-            type: 'thermal:pulverizer'
-        });
-        event.recipes.thermal.pulverizer(recipe.outputs, recipe.input).experience(recipe.experience);
+        const re = event.recipes.thermal.pulverizer(recipe.outputs, recipe.input).experience(recipe.experience);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });
