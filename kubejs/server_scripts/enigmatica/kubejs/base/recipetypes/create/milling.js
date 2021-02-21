@@ -53,6 +53,13 @@ events.listen('recipes', (event) => {
                 input: 'atmospheric:red_arid_sandstone',
                 outputs: [Item.of('atmospheric:red_arid_sand')],
                 processingTime: 150
+            },
+            {
+                input: '#forge:end_stones',
+                outputs: [
+                    Item.of('occultism:crushed_end_stone', 4)
+                ],
+                processingTime: 150
             }
         ]
     };
