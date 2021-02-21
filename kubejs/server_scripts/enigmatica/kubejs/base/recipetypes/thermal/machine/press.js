@@ -45,6 +45,34 @@ events.listen('recipes', (event) => {
                 inputs: [Item.of('atmospheric:red_arid_sandstone', 1), Item.of('thermal:press_unpacking_die')],
                 output: Item.of('atmospheric:red_arid_sand', 4)
             },
+            {
+                inputs: [Ingredient.of('#integrateddynamics:menril_logs', 1)],
+                output: [
+                    Item.of('integrateddynamics:crystalized_menril_chunk', 4),
+                    Fluid.of('integrateddynamics:menril_resin', 1000)
+                ]
+            },
+            {
+                inputs: [Item.of('integrateddynamics:menril_planks', 1)],
+                output: [
+                    Item.of('integrateddynamics:crystalized_menril_chunk', 1),
+                    Fluid.of('integrateddynamics:menril_resin', 250)
+                ]
+            },
+            {
+                inputs: [Item.of('minecraft:popped_chorus_fruit', 1)],
+                output: [
+                    Item.of('integrateddynamics:crystalized_chorus_chunk', 4),
+                    Fluid.of('integrateddynamics:liquid_chorus', 125)
+                ]
+            },
+            {
+                inputs: [Item.of('integrateddynamics:proto_chorus', 1)],
+                output: [
+                    Item.of('integrateddynamics:crystalized_chorus_chunk', 2),
+                    Fluid.of('integrateddynamics:liquid_chorus', 125)
+                ]
+            },
 
             //ID Overrides
             {
@@ -61,21 +89,28 @@ events.listen('recipes', (event) => {
     };
 
     combVariants.forEach((variant) => {
-        data.recipes.push({
-            inputs: [Item.of('resourcefulbees:' + variant + '_honeycomb', 9), Item.of('thermal:press_packing_3x3_die')],
-            output: Item.of('resourcefulbees:' + variant + '_honeycomb_block', 1)
-        },
-        {
-            inputs: [Item.of('resourcefulbees:' + variant + '_honeycomb_block', 1), Item.of('thermal:press_unpacking_die')],
-            output: Item.of('resourcefulbees:' + variant + '_honeycomb', 9)
-        });
+        data.recipes.push(
+            {
+                inputs: [
+                    Item.of('resourcefulbees:' + variant + '_honeycomb', 9),
+                    Item.of('thermal:press_packing_3x3_die')
+                ],
+                output: Item.of('resourcefulbees:' + variant + '_honeycomb_block', 1)
+            },
+            {
+                inputs: [
+                    Item.of('resourcefulbees:' + variant + '_honeycomb_block', 1),
+                    Item.of('thermal:press_unpacking_die')
+                ],
+                output: Item.of('resourcefulbees:' + variant + '_honeycomb', 9)
+            }
+        );
     });
 
     data.recipes.forEach((recipe) => {
-        if(recipe.id) {
-            event.recipes.thermal.press(recipe.output, recipe.inputs).energy(2400).id(recipe.id);
-        } else {
-            event.recipes.thermal.press(recipe.output, recipe.inputs).energy(2400);
+        const re = event.recipes.thermal.press(recipe.output, recipe.inputs).energy(2400);
+        if (recipe.id) {
+            re.id(recipe.id);
         }
     });
 });
