@@ -102,7 +102,7 @@ events.listen('recipes', (event) => {
             },
             {
                 input: '#forge:obsidian',
-                outputs: [Item.of('emendatusenigmatica:obsidian_dust'), Item.of('minecraft:obsidian').chance(0.75)],
+                outputs: [Item.of('emendatusenigmatica:obsidian_dust', 4)],
                 experience: 0.2,
                 id: 'thermal:machine/pulverizer/pulverizer_obsidian'
             }
