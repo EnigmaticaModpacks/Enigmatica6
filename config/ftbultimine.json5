@@ -1,31 +1,19 @@
 {
-	/* 
-	   Max amount of blocks that can be ultimined at once
+	/* Max amount of blocks that can be ultimined at once
 	   Range: 1 - 32768
 	*/
 	"maxBlocks": 128,
-	/* 
-	   Hunger multiplied for each block mined with ultimine
+	/* Hunger multiplied for each block mined with ultimine
 	   Range: 0 - 10000
 	*/
 	"exhaustionPerBlock": 25.0,
 	// Groups stone types together so you can mine all of them at once
 	"mergeStone": true,
-	// Tools that won't let you activate ultimine when held
-	"toolBlacklist": [
-		"mininggadgets:mininggadget",
-		"ars_nouveau:wand",
-		"ars_nouveau:novice_spell_book",
-		"ars_nouveau:creative_spell_book",
-		"ars_nouveau:archmage_spell_book",
-		"ars_nouveau:apprentice_spell_book"
-	],
-	// Disable warnings for potentially laggy config settingsJ
+	// Disable warnings for potentially laggy config settings
 	"noLagWarnings": false,
 	// Manual x offset of FTB Ultimine overlay, required for some modpacks
 	"renderTextManually": -1,
-	/* 
-	   Render the white outline around blocks to be mined
+	/* Render the white outline around blocks to be mined
 	   Should be disabled for more than 512 blocks!
 	*/
 	"renderOutline": true
