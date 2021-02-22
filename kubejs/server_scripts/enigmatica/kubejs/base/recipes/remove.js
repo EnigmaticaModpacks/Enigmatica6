@@ -32,7 +32,11 @@ events.listen('recipes', (event) => {
 
         'simplefarming:raw_bacon',
 
-        'thermal:bamboo_block'
+        'thermal:bamboo_block',
+
+        'betterendforge:thallasium_anvil',
+        'betterendforge:terminite_anvil',
+        'betterendforge:aeternium_anvil'
     ];
 
     var idRemovals = [
