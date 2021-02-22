@@ -5,7 +5,15 @@ This is the official repository and issue-tracker for the modpack Enigmatica 6, 
 ### Table of Contents
 
 -   [Testing](#testing)
+-   [Setup](#setup)
+    -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
+    -   [CurseForge App (Windows/Mac)](#curseforge-app-windows--mac)
+    -   [Alternatives](#alternatives)
+-   [Server Automation](#server-automation)
+-   [Docker](#docker)
 -   [Links](#links)
+
+<hr></hr>
 
 ## Testing
 
@@ -70,7 +78,13 @@ Tip: If you run into issues, verifying you are using the right Minecraft and For
 
 You're done!
 
-## Server Automation
+### Alternatives
+
+It is possible to setup a development instance for Enigmatica 6 in other ways, for example running it through the .Minecraft folder.
+
+# Server Automation
+
+## Automatic updates with Git
 
 _Note: You only have to do this setup once, afterwards you simply need to do step 8._
 
@@ -87,9 +101,10 @@ _Note: You only have to do this setup once, afterwards you simply need to do ste
 Using the `update-server` script will reset changes you've made to all files tracked by the repository.
 Anything put in the `overrides` folder will be copied into the root folder when the `update-server` script is finished - I recommend you put any changed configs and added mods there.
 
-### Alternatives
+## Docker
 
-It is possible to setup a development instance for Enigmatica 6 in other ways, for example running it through the .Minecraft folder.
+There's an example `docker-compose.yml` in the `docker` folder, for those who want to run an Enigmatica 6 server through Docker.
+It's based on [Docker Minecraft Server](https://github.com/itzg/docker-minecraft-server), please see the link for configuration and advanced usage.
 
 ## Links
 
