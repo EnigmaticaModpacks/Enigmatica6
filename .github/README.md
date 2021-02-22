@@ -75,12 +75,12 @@ You're done!
 _Note: You only have to do this setup once, afterwards you simply need to do step 8._
 
 1. Clone the Enigmatica 6 repository to an empty folder.
-2. Double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+2. Double click the script `InstanceSyncSetup.bat` to setup InstanceSync. It is found in the root folder.
 3. Open a command line, and navigate to the folder.
 4. Use the command `git pull`
-5. Navigate to the folder `development/include-in-server-files`
+5. Navigate to the folder `server`
 6. Open the file `settings.cfg` and change `MAX_RAM=4G` to the amount you wish to allocate.
-7. Copy all files from the folder `development/include-in-server-files` into the root.
+7. Copy all files from the folder `server` into the root.
 8. Run `remove-client-mods` to ensure that no client-side mods are on the server.
 9. Double clicking `update-server.bat` will now update the modpack.
 
