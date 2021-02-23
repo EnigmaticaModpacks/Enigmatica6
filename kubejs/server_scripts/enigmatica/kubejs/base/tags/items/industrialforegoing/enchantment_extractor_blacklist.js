@@ -1,4 +1,4 @@
-events.listen('item.tags', function (event) {
+events.listen('item.tags', (event) => {
     event
         .get('industrialforegoing:enchantment_extractor_blacklist')
         .add('tetra:modular_double')

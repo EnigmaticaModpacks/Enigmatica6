@@ -1,16 +1,344 @@
 {
-	id: 2917,
+	id: "0000000000000B65",
+	group: "",
+	order_index: 2,
 	filename: "gates_wip",
-	order_index: 29,
-	title: "Gates WIP",
+	title: "Expert - Gates",
 	icon: "mapperbase:steel_fence_gate",
 	always_invisible: true,
 	default_quest_shape: "",
-	quests: [{
-		title: "The Experts 2: Electric Boogalo",
-		icon: "mekanism:robit",
-		x: 0.0d,
-		y: 0.0d,
-		id: 2924
-	}]
+	quests: [
+		{
+			title: "The Experts 2: Electric Boogalo",
+			icon: "mekanism:robit",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "rsquare",
+			description: [
+				"Welcome to Enigmatica 6: Expert mode! This chapter serves as a general guide to the progression.",
+				"",
+				"The Goal of E6E is to complete all quests in the Bragging Rights chapter. Good luck, and have fun :D",
+				"- Niller",
+				"",
+				"",
+				'Please note that mods are rarely "strictly" gated - Some of their items will be obtaintable prior to the Gate being unlocked, and not all things will be immediately obtainable once the Gate is unlocked.',
+				""
+			],
+			id: "0000000000000B6C"
+		},
+		{
+			title: "Create",
+			x: -3.0d,
+			y: 1.5d,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FBD",
+			tasks: [{
+				id: "0000000000000FBE",
+				type: "item",
+				item: "create:cogwheel"
+			}]
+		},
+		{
+			title: "Thermal",
+			icon: "thermal:machine_furnace",
+			x: -1.5d,
+			y: 1.5d,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FBF",
+			tasks: [{
+				id: "0000000000000FC0",
+				type: "item",
+				item: "thermal:machine_frame"
+			}]
+		},
+		{
+			title: "XNet",
+			x: 0.0d,
+			y: 1.5d,
+			shape: "diamond",
+			dependencies: ["0000000000000FBF"],
+			id: "0000000000000FC1",
+			tasks: [{
+				id: "0000000000000FC2",
+				type: "item",
+				item: "xnet:netcable_blue"
+			}]
+		},
+		{
+			title: "Eidolon",
+			x: 1.5d,
+			y: 1.5d,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FC3",
+			tasks: [{
+				id: "0000000000000FC4",
+				type: "item",
+				item: "eidolon:unholy_symbol"
+			}]
+		},
+		{
+			title: "Ars Nouveau",
+			x: 3.0d,
+			y: 1.5d,
+			dependencies: ["0000000000000B6C"],
+			id: "0000000000000FC5",
+			tasks: [{
+				id: "0000000000000FC6",
+				type: "item",
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		},
+		{
+			title: "Nature's Aura",
+			x: 3.0d,
+			y: 3.0d,
+			dependencies: ["0000000000000FC5"],
+			id: "0000000000000FC7",
+			tasks: [{
+				id: "0000000000000FC8",
+				type: "item",
+				item: "naturesaura:gold_leaf"
+			}]
+		},
+		{
+			title: "Botania",
+			x: 3.0d,
+			y: 4.5d,
+			dependencies: ["0000000000000FC7"],
+			id: "0000000000000FC9",
+			tasks: [{
+				id: "0000000000000FCA",
+				type: "item",
+				item: "botania:mana_pylon"
+			}]
+		},
+		{
+			title: "Astral Sorcery",
+			x: 1.5d,
+			y: 6.0d,
+			dependencies: [
+				"0000000000000FCF",
+				"0000000000000FC9"
+			],
+			id: "0000000000000FCB",
+			tasks: [{
+				id: "0000000000000FCC",
+				type: "item",
+				item: "astralsorcery:stardust"
+			}]
+		},
+		{
+			title: "Occultism",
+			x: 1.5d,
+			y: 3.0d,
+			dependencies: ["0000000000000FC3"],
+			id: "0000000000000FCD",
+			tasks: [{
+				id: "0000000000000FCE",
+				type: "item",
+				item: {
+					id: "occultism:miner_foliot_unspecialized",
+					Count: 1b,
+					tag: {
+						spiritName: "Azurzerarc",
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Blood Magic",
+			x: 1.5d,
+			y: 4.5d,
+			dependencies: ["0000000000000FCD"],
+			id: "0000000000000FCF",
+			tasks: [{
+				id: "0000000000000FD0",
+				type: "item",
+				item: "bloodmagic:altar"
+			}]
+		},
+		{
+			title: "Pretty Pipes",
+			x: -4.5d,
+			y: 1.5d,
+			shape: "diamond",
+			dependencies: ["0000000000000FBD"],
+			id: "0000000000000FD1",
+			tasks: [{
+				id: "0000000000000FD2",
+				type: "item",
+				item: "prettypipes:pipe"
+			}]
+		},
+		{
+			title: "Powah",
+			x: -4.5d,
+			y: 3.0d,
+			shape: "diamond",
+			dependencies: ["0000000000000FD5"],
+			id: "0000000000000FD3",
+			tasks: [{
+				id: "0000000000000FD4",
+				type: "item",
+				item: "powah:dielectric_casing"
+			}]
+		},
+		{
+			title: "Immersive Engineering",
+			x: -3.0d,
+			y: 3.0d,
+			subtitle: "Low Tech",
+			dependencies: ["0000000000000FBD"],
+			id: "0000000000000FD5",
+			tasks: [{
+				id: "0000000000000FD6",
+				type: "item",
+				item: {
+					id: "immersiveengineering:hammer",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "RFTools",
+			x: -1.5d,
+			y: 3.0d,
+			dependencies: ["0000000000000FBF"],
+			id: "0000000000000FD7",
+			tasks: [{
+				id: "0000000000000FD8",
+				type: "item",
+				item: "rftoolsbase:machine_frame"
+			}]
+		},
+		{
+			title: "Modular Routers",
+			x: -4.5d,
+			y: 4.5d,
+			shape: "diamond",
+			dependencies: ["0000000000000FD3"],
+			id: "0000000000000FD9",
+			tasks: [{
+				id: "0000000000000FDA",
+				type: "item",
+				item: "modularrouters:item_router"
+			}]
+		},
+		{
+			title: "PneumaticCraft",
+			x: -1.5d,
+			y: 4.5d,
+			dependencies: ["0000000000000FD7"],
+			id: "0000000000000FDB",
+			tasks: [{
+				id: "0000000000000FDC",
+				type: "item",
+				item: "pneumaticcraft:pressure_gauge_module"
+			}]
+		},
+		{
+			title: "Refined Storage",
+			x: 0.0d,
+			y: 4.5d,
+			shape: "diamond",
+			dependencies: [
+				"0000000000000FDB",
+				"0000000000000FCD",
+				"218FBDC6B17EDF33"
+			],
+			id: "0000000000000FDD",
+			tasks: [{
+				id: "0000000000000FDE",
+				type: "item",
+				item: "refinedstorage:controller"
+			}]
+		},
+		{
+			title: "Industrial Foregoing",
+			x: -3.0d,
+			y: 4.5d,
+			dependencies: ["0000000000000FD5"],
+			id: "0000000000000FDF",
+			tasks: [{
+				id: "0000000000000FE0",
+				type: "item",
+				item: "industrialforegoing:pink_slime"
+			}]
+		},
+		{
+			title: "Resourceful Bees",
+			icon: "minecraft:honeycomb",
+			x: 4.5d,
+			y: 3.0d,
+			shape: "diamond",
+			dependencies: ["0000000000000FC7"],
+			id: "0000000000000FE1",
+			tasks: [{
+				id: "0000000000000FE2",
+				type: "item",
+				item: "minecraft:honeycomb"
+			}]
+		},
+		{
+			title: "Immersive Engineering",
+			x: -1.5d,
+			y: 6.0d,
+			subtitle: "High Tech",
+			dependencies: ["0000000000000FDF"],
+			id: "0000000000000FE3",
+			tasks: [{
+				id: "0000000000000FE4",
+				type: "item",
+				item: "immersiveengineering:heavy_engineering"
+			}]
+		},
+		{
+			title: "Mekanism",
+			x: 0.0d,
+			y: 6.0d,
+			dependencies: ["0000000000000FDB"],
+			id: "0000000000000FE5",
+			tasks: [{
+				id: "0000000000000FE6",
+				type: "item",
+				item: "mekanism:alloy_atomic"
+			}]
+		},
+		{
+			title: "Bragging Rights",
+			icon: "create:creative_crate",
+			x: 0.0d,
+			y: 8.0d,
+			shape: "octagon",
+			dependencies: [
+				"0000000000000FE3",
+				"0000000000000FE5",
+				"0000000000000FCB"
+			],
+			size: 2.0d,
+			id: "0000000000000FE7",
+			tasks: [{
+				id: "0000000000000FE8",
+				type: "item",
+				item: "create:creative_crate"
+			}]
+		},
+		{
+			title: "Integrated Dynamics",
+			icon: "integrateddynamics:crystalized_menril_chunk",
+			x: 0.0d,
+			y: 3.0d,
+			dependencies: ["0000000000000FC1"],
+			id: "218FBDC6B17EDF33",
+			tasks: [{
+				id: "2A11C229CEEEBE6F",
+				type: "item",
+				item: "integrateddynamics:crystalized_menril_chunk"
+			}]
+		}
+	]
 }

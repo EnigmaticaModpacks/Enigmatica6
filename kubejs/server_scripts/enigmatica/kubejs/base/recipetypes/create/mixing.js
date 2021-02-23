@@ -24,6 +24,10 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
                 output: Item.of('eidolon:pewter_ingot', 2)
+            },
+            {
+                inputs: ['#forge:ingots/iron', '#forge:dusts/ender'],
+                output: Item.of('betterendforge:terminite_ingot')
             }
         ],
         recipes_superheated: [
@@ -71,6 +75,13 @@ events.listen('recipes', (event) => {
                     '#forge:ender_pearls'
                 ],
                 output: Item.of('emendatusenigmatica:enderium_ingot', 2)
+            },
+            {
+                inputs: [
+                    '#forge:ingots/netherite',
+                    'betterendforge:terminite_ingot'
+                ],
+                output: Item.of('betterendforge:aeternium_ingot')
             }
         ]
     };

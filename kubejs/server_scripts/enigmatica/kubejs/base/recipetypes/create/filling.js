@@ -4,9 +4,9 @@ events.listen('recipes', (event) => {
             return;
         }
 
-        event.recipes.create.filling(item.of(honeyVariety + '_bottle'), [
+        event.recipes.create.filling(Item.of(honeyVariety + '_bottle'), [
             fluid.of(honeyVariety, 250),
-            item.of('minecraft:glass_bottle')
+            Item.of('minecraft:glass_bottle')
         ]);
     });
 });

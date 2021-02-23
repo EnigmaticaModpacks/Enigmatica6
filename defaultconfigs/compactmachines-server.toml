@@ -1,0 +1,12 @@
+
+#Machines
+[machines]
+	#Specifies machine breakability while players are inside.
+	# 'unbreakable' = Nobody can break while players are inside.
+	# 'owner' = Only the owner can break while players are inside.
+	# 'anyone' = Anyone can break while players are inside.
+	#Allowed Values: UNBREAKABLE, OWNER, ANYONE
+	breakHandling = "UNBREAKABLE"
+	#Allow machines to chunkload their insides when the machines are loaded.
+	chunkloading = true
+

@@ -88,12 +88,16 @@
 	#Range: 1000 ~ 1000000
 	maxCentrifugeRf = 10000
 	#
-	# Makes it so multiblock centrifuge can only do multiblock recipes. [true/false]
+	#Makes it so multiblock centrifuge can only do multiblock recipes. [true/false]
 	multiblockRecipesOnly = false
 	#
 	#RF/t consumed by the centrifuge when processing recipes. Mutliblock Centrifuge cuts this value in half.
 	#Range: 2 ~ 1000
 	centrifugeRfPerTick = 2
+	#
+	#Sets the max RF/t that the centrifuge can receive. This should idealy be set higher than centrifugeRfPerTick.
+	#Range: 100 ~ 10000
+	maxCentrifugeReceiveRate = 100
 
 ["Beehive Options"]
 	#
@@ -210,4 +214,37 @@
 	#
 	#Should honey block recipies be generated? [true/false]
 	honeyBlockRecipies = true
+
+["Ender Beecon Options"]
+	#
+	#If true, the below values will be mulitplied with the base value, if false they will be added instead.
+	beeconDoMultiplier = true
+	#
+	#Multiplier for the drain rate for the Ender Beecon when the Calming effect is active.
+	#Range: 1.0 ~ 128.0
+	beeconCalmingValue = 2.0
+	#
+	#Multiplier for the drain rate for the Ender Beecon when the Water Breathing effect is active.
+	#Range: 1.0 ~ 128.0
+	beeconWaterBreathingValue = 1.5
+	#
+	#Multiplier for the drain rate for the Ender Beecon when the Fire Resistance effect is active.
+	#Range: 1.0 ~ 128.0
+	beeconFireResistanceValue = 2.0
+	#
+	#Multiplier for the drain rate for the Ender Beecon when the Regeneration effect is active.
+	#Range: 1.0 ~ 128.0
+	beeconRegenerationValue = 2.5
+	#
+	#Range in blocks added for each effect that is currently active.
+	#Range: 1 ~ 25
+	beeconRangePerEffect = 10
+	#
+	#The base drain rate for the Ender Beecon when an effect is active.
+	#Range: 1 ~ 128
+	beeconBaseDrain = 1
+	#
+	#The amount of fluid per tick the Ender Beecon can pull from below blocks.
+	#Range: 1 ~ 16000
+	beeconPullAmount = 250
 

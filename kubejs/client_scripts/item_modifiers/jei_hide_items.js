@@ -12,24 +12,26 @@ events.listen('jei.hide.items', (event) => {
             'immersiveengineering:ingot_' + material,
             'immersiveengineering:dust_' + material,
             'immersiveengineering:nugget_' + material,
+            'immersiveengineering:ore_' + material,
             'mekanism:nugget_' + material,
             'mekanism:dust_' + material,
             'mekanism:ingot_' + material,
             'mekanism:block_' + material,
             'eidolon:ingot_' + material,
             'eidolon:nugget_' + material,
-            'eidolon:block_' + material
+            'eidolon:block_' + material,
+            'thermal:' + material + '_block'
         );
     });
 
     itemsToHide.forEach((disabledItem) => {
-        if (!item.of(disabledItem).isEmpty()) {
+        if (!Item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
         }
     });
 
     disabledItems.forEach((disabledItem) => {
-        if (!item.of(disabledItem).isEmpty()) {
+        if (!Item.of(disabledItem).isEmpty()) {
             event.hide(disabledItem);
         }
     });

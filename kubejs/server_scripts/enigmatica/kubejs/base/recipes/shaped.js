@@ -1,4 +1,19 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
+    // Please add new recipes to this object instead of recipes
+    const newRecipes = [
+        {
+            output: 'botanypots:botany_pot',
+            pattern: ['ADA', 'ABA', 'ACA'],
+            key: {
+                A: 'minecraft:terracotta',
+                B: 'minecraft:flower_pot',
+                C: 'minecraft:bone_block',
+                D: 'minecraft:water_bucket'
+            },
+            id: 'botanypots:crafting/botany_pot'
+        }
+    ];
+
     var recipes = [
         shapedRecipe('tetra:hammer_base', ['LXL', 'LCL', 'LXL'], {
             L: '#forge:ingots/steel',
@@ -10,7 +25,7 @@ events.listen('recipes', function (event) {
             X: '#forge:circuits/basic',
             C: 'industrialforegoing:fluid_extractor'
         }),
-        shapedRecipe(item.of('minecraft:stick', 16), ['A', 'A'], {
+        shapedRecipe(Item.of('minecraft:stick', 16), ['A', 'A'], {
             A: '#minecraft:logs'
         }),
 
@@ -28,16 +43,6 @@ events.listen('recipes', function (event) {
             A: '#forge:crops/potato',
             B: '#forge:grain',
             C: 'aquaculture:fish_fillet_cooked'
-        }),
-        shapedRecipe('quantumstorage:tank', ['CBC', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_fluid_tank',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass_panes'
-        }),
-        shapedRecipe('quantumstorage:qsu', ['BBB', 'BLB', 'CCC'], {
-            L: 'mekanism:ultimate_bin',
-            C: '#forge:ingots/compressed_iron',
-            B: '#forge:glass'
         }),
         shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
             L: '#forge:stone'
@@ -75,186 +80,186 @@ events.listen('recipes', function (event) {
         shapedRecipe('decorative_blocks:lattice', ['A A', '   ', 'A A'], {
             A: '#forge:rods/wooden'
         }),
-        shapedRecipe(item.of('valhelsia_structures:oak_post', 6), ['A', 'A', 'A'], {
+        shapedRecipe(Item.of('valhelsia_structures:oak_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:oak_log'
         }),
-        shapedRecipe(item.of('valhelsia_structures:spruce_post', 6), ['A', 'A', 'A'], {
+        shapedRecipe(Item.of('valhelsia_structures:spruce_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:spruce_log'
         }),
-        shapedRecipe(item.of('valhelsia_structures:birch_post', 6), ['A', 'A', 'A'], {
+        shapedRecipe(Item.of('valhelsia_structures:birch_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:birch_log'
         }),
-        shapedRecipe(item.of('valhelsia_structures:jungle_post', 6), ['A', 'A', 'A'], {
+        shapedRecipe(Item.of('valhelsia_structures:jungle_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:jungle_log'
         }),
-        shapedRecipe(item.of('valhelsia_structures:dark_oak_post', 6), ['A', 'A', 'A'], {
+        shapedRecipe(Item.of('valhelsia_structures:dark_oak_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:dark_oak_log'
         }),
-        shapedRecipe(item.of('valhelsia_structures:acacia_post', 6), ['A', 'A', 'A'], {
+        shapedRecipe(Item.of('valhelsia_structures:acacia_post', 6), ['A', 'A', 'A'], {
             A: 'minecraft:acacia_log'
         }),
-        shapedRecipe(item.of('minecraft:ladder', 4), ['A A', 'ABA', 'A A'], {
+        shapedRecipe(Item.of('minecraft:ladder', 4), ['A A', 'ABA', 'A A'], {
             A: '#forge:rods/wooden',
             B: '#minecraft:planks'
         }),
-        shapedRecipe(item.of('engineersdecor:slag_brick_block', 8), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('engineersdecor:slag_brick_block', 8), ['AAA', 'ABA', 'AAA'], {
             A: '#engineersdecor:brick_ingots',
             B: '#forge:slag'
         }),
-        shapedRecipe(item.of('prettypipes:wrench', 1), [' A ', 'AB ', '  B'], {
+        shapedRecipe(Item.of('prettypipes:wrench', 1), [' A ', 'AB ', '  B'], {
             A: '#forge:nuggets/iron',
             B: 'prettypipes:pipe'
         }),
-        shapedRecipe(item.of('prettypipes:blank_module', 3), [' A ', 'BBB', 'CCC'], {
+        shapedRecipe(Item.of('prettypipes:blank_module', 3), [' A ', 'BBB', 'CCC'], {
             A: '#forge:dusts/redstone',
             B: 'minecraft:stone_slab',
             C: '#forge:nuggets/copper'
         }),
-        shapedRecipe(item.of('prettypipes:low_extraction_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_extraction_module', 1), [' A ', ' B ', ' C '], {
             A: '#forge:dusts/redstone',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_extraction_module', 1), [' C ', 'ABA', ' A '], {
+        shapedRecipe(Item.of('prettypipes:medium_extraction_module', 1), [' C ', 'ABA', ' A '], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_extraction_module',
             C: '#forge:ingots/invar'
         }),
-        shapedRecipe(item.of('prettypipes:high_extraction_module', 1), [' C ', 'ABA', ' A '], {
+        shapedRecipe(Item.of('prettypipes:high_extraction_module', 1), [' C ', 'ABA', ' A '], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_extraction_module',
             C: '#forge:ingots/electrum'
         }),
-        shapedRecipe(item.of('prettypipes:low_filter_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_filter_module', 1), [' A ', ' B ', ' C '], {
             A: '#forge:paper',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_filter_module', 1), [' C ', 'ABA', ' C '], {
+        shapedRecipe(Item.of('prettypipes:medium_filter_module', 1), [' C ', 'ABA', ' C '], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_filter_module',
             C: 'minecraft:iron_bars'
         }),
-        shapedRecipe(item.of('prettypipes:high_filter_module', 1), [' C ', 'ABA', ' C '], {
+        shapedRecipe(Item.of('prettypipes:high_filter_module', 1), [' C ', 'ABA', ' C '], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_filter_module',
             C: 'minecraft:iron_bars'
         }),
-        shapedRecipe(item.of('prettypipes:low_speed_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_speed_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:sugar',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_speed_module', 1), ['ACA', 'CBC', 'ACA'], {
+        shapedRecipe(Item.of('prettypipes:medium_speed_module', 1), ['ACA', 'CBC', 'ACA'], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_speed_module',
             C: 'minecraft:sugar'
         }),
-        shapedRecipe(item.of('prettypipes:high_speed_module', 1), ['ACA', 'CBC', 'ACA'], {
+        shapedRecipe(Item.of('prettypipes:high_speed_module', 1), ['ACA', 'CBC', 'ACA'], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_speed_module',
             C: 'minecraft:sugar'
         }),
-        shapedRecipe(item.of('prettypipes:low_low_priority_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_low_priority_module', 1), [' A ', ' B ', ' C '], {
             A: '#forge:nuggets/lead',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_low_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
+        shapedRecipe(Item.of('prettypipes:medium_low_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_low_priority_module',
             C: '#forge:nuggets/lead'
         }),
-        shapedRecipe(item.of('prettypipes:high_low_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
+        shapedRecipe(Item.of('prettypipes:high_low_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_low_priority_module',
             C: '#forge:nuggets/lead'
         }),
-        shapedRecipe(item.of('prettypipes:low_high_priority_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_high_priority_module', 1), [' A ', ' B ', ' C '], {
             A: '#forge:nuggets/silver',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_high_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
+        shapedRecipe(Item.of('prettypipes:medium_high_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_high_priority_module',
             C: '#forge:nuggets/silver'
         }),
-        shapedRecipe(item.of('prettypipes:high_high_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
+        shapedRecipe(Item.of('prettypipes:high_high_priority_module', 1), ['ACA', 'CBC', 'ACA'], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_high_priority_module',
             C: '#forge:nuggets/silver'
         }),
-        shapedRecipe(item.of('prettypipes:low_retrieval_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_retrieval_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:observer',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_retrieval_module', 1), [' A ', 'ABA', ' C '], {
+        shapedRecipe(Item.of('prettypipes:medium_retrieval_module', 1), [' A ', 'ABA', ' C '], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_retrieval_module',
             C: '#forge:ingots/invar'
         }),
-        shapedRecipe(item.of('prettypipes:high_retrieval_module', 1), [' A ', 'ABA', ' C '], {
+        shapedRecipe(Item.of('prettypipes:high_retrieval_module', 1), [' A ', 'ABA', ' C '], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_retrieval_module',
             C: '#forge:ingots/electrum'
         }),
-        shapedRecipe(item.of('prettypipes:stack_size_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:stack_size_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:comparator',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:damage_filter_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:damage_filter_modifier', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:stone_pickaxe',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:nbt_filter_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:nbt_filter_modifier', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:book',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:tag_filter_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:tag_filter_modifier', 1), [' A ', ' B ', ' C '], {
             A: '#forge:chunks',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:mod_filter_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:mod_filter_modifier', 1), [' A ', ' B ', ' C '], {
             A: 'prettypipes:wrench',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:redstone_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:redstone_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:redstone_torch',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:filter_increase_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:filter_increase_modifier', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:iron_bars',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:low_crafting_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:low_crafting_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:crafting_table',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:medium_crafting_module', 1), [' A ', 'ABA', ' C '], {
+        shapedRecipe(Item.of('prettypipes:medium_crafting_module', 1), [' A ', 'ABA', ' C '], {
             A: '#forge:nuggets/invar',
             B: 'prettypipes:low_crafting_module',
             C: '#forge:ingots/invar'
         }),
-        shapedRecipe(item.of('prettypipes:high_crafting_module', 1), [' A ', 'ABA', ' C '], {
+        shapedRecipe(Item.of('prettypipes:high_crafting_module', 1), [' A ', 'ABA', ' C '], {
             A: '#forge:nuggets/electrum',
             B: 'prettypipes:medium_crafting_module',
             C: '#forge:ingots/electrum'
         }),
-        shapedRecipe(item.of('prettypipes:pipe', 12), ['   ', 'ABA', '   '], {
+        shapedRecipe(Item.of('prettypipes:pipe', 12), ['   ', 'ABA', '   '], {
             A: '#forge:ingots/tin',
             B: '#forge:glass/colorless'
         }),
-        shapedRecipe(item.of('prettypipes:item_terminal', 1), [' B ', 'CAD', 'EFE'], {
+        shapedRecipe(Item.of('prettypipes:item_terminal', 1), [' B ', 'CAD', 'EFE'], {
             A: 'thermal:machine_frame',
             B: 'minecraft:observer',
             C: 'prettypipes:high_extraction_module',
@@ -262,35 +267,35 @@ events.listen('recipes', function (event) {
             E: '#forge:gears/invar',
             F: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:pressurizer', 1), [' E ', 'BAB', 'CDC'], {
+        shapedRecipe(Item.of('prettypipes:pressurizer', 1), [' E ', 'BAB', 'CDC'], {
             A: 'thermal:machine_frame',
             B: 'prettypipes:high_speed_module',
             C: '#forge:gears/invar',
             D: 'thermal:rf_coil',
             E: 'prettypipes:pipe'
         }),
-        shapedRecipe(item.of('prettypipes:round_robin_sorting_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:round_robin_sorting_modifier', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:clock',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('prettypipes:random_sorting_modifier', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('prettypipes:random_sorting_modifier', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:dropper',
             B: 'prettypipes:blank_module',
             C: 'thermal:redstone_servo'
         }),
-        shapedRecipe(item.of('bloodmagic:demonwillgauge', 1), [' B ', 'ACA', ' B '], {
+        shapedRecipe(Item.of('bloodmagic:demonwillgauge', 1), [' B ', 'ACA', ' B '], {
             A: '#forge:ingots/tin',
             B: '#forge:nuggets/tin',
             C: '#bloodmagic:crystals/demon'
         }),
-        shapedRecipe(item.of('emendatusenigmatica:steel_ingot', 2), ['AA'], {
+        shapedRecipe(Item.of('emendatusenigmatica:steel_ingot', 2), ['AA'], {
             A: 'immersiveengineering:ingot_steel'
         }),
-        shapedRecipe(item.of('immersiveengineering:ingot_steel', 2), ['AA'], {
+        shapedRecipe(Item.of('immersiveengineering:ingot_steel', 2), ['AA'], {
             A: 'mekanism:ingot_steel'
         }),
-        shapedRecipe(item.of('mekanism:ingot_steel', 2), ['AA'], {
+        shapedRecipe(Item.of('mekanism:ingot_steel', 2), ['AA'], {
             A: 'emendatusenigmatica:steel_ingot'
         }),
         shapedRecipe('tetra:combustion_chamber', ['CBC', 'BAB', 'CBC'], {
@@ -299,27 +304,27 @@ events.listen('recipes', function (event) {
             C: 'mekanism:ultimate_thermodynamic_conductor'
         }),
         // Remove in 0.4.0
-        shapedRecipe(item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
             A: '#forge:gems/certus_quartz',
             B: '#forge:dyes/blue'
         }),
-        shapedRecipe(item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
             A: '#forge:gems/certus_quartz',
             B: '#forge:dyes/light_blue'
         }),
-        shapedRecipe(item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
             A: '#forge:gems/certus_quartz',
             B: '#forge:dyes/green'
         }),
-        shapedRecipe(item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('minecraft:lapis_lazuli', 4), ['AAA', 'ABA', 'AAA'], {
             A: '#forge:gems/charged_certus_quartz',
             B: '#forge:dyes/blue'
         }),
-        shapedRecipe(item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('minecraft:diamond', 1), ['AAA', 'ABA', 'AAA'], {
             A: '#forge:gems/charged_certus_quartz',
             B: '#forge:dyes/light_blue'
         }),
-        shapedRecipe(item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
+        shapedRecipe(Item.of('minecraft:emerald', 2), ['AAA', 'ABA', 'AAA'], {
             A: '#forge:gems/charged_certus_quartz',
             B: '#forge:dyes/green'
         }),
@@ -359,9 +364,10 @@ events.listen('recipes', function (event) {
                     create: { id: 'create:wrench', Count: 1 },
                     chiselsandbits: { id: 'chiselsandbits:wrench_wood', Count: 1 },
                     refinedstorage: { id: 'refinedstorage:wrench', Count: 1 },
-                    quantumstorage: { id: 'quantumstorage:hammer', Count: 1 },
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
-                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 }
+                    storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
+                    fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
+                    integratedtunnels: { id: 'integrateddynamics:wrench', Count: 1 }
                 }
             }),
             ['ABA', 'CFD', 'AEA'],
@@ -374,18 +380,53 @@ events.listen('recipes', function (event) {
                 F: 'morphtool:tool'
             }
         ),
-        shapedRecipe(item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
+        shapedRecipe(Item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
             A: '#forge:wax',
             B: '#forge:string'
         }),
-        shapedRecipe(item.of('eidolon:candle', 4), ['B', 'A'], {
+        shapedRecipe(Item.of('eidolon:candle', 4), ['B', 'A'], {
             A: '#forge:wax',
             B: '#forge:string'
         }),
-        shapedRecipe(item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
+        shapedRecipe(Item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
             A: '#forge:wax',
             B: '#forge:string'
-        })
+        }),
+        shapedRecipe(Item.of('byg:embur_hyphae', 3), ['AA', 'AA'], {
+            A: 'byg:embur_pedu'
+        }),
+        shapedRecipe(Item.of('fluxnetworks:flux_controller', 1), ['ABA', 'CDC', 'AAA'], {
+            A: 'fluxnetworks:flux_block',
+            B: 'fluxnetworks:flux_core',
+            C: 'fluxnetworks:flux_dust',
+            D: 'powah:player_transmitter_nitro'
+        }),
+        shapedRecipe(Item.of('fluxnetworks:flux_core', 8), ['ABA', 'BCB', 'ABA'], {
+            A: 'fluxnetworks:flux_dust',
+            B: '#forge:obsidian',
+            C: 'powah:ender_core'
+        }),
+        shapedRecipe(Item.of('byg:pollen_block', 1), ['AA', 'AA'], {
+            A: 'byg:pollen_dust'
+        }),
+        shapedRecipe('losttrinkets:magical_feathers', ['FAF', 'EBE', 'CDC'], {
+            A: 'minecraft:elytra',
+            B: 'magicfeather:magicfeather',
+            C: 'minecraft:prismarine_shard',
+            D: Item.of('minecraft:potion', { Potion: 'bountifulbaubles:flight' }),
+            E: 'rftoolsbase:infused_diamond',
+            F: 'minecraft:ender_eye'
+        }),
+
+        //ID Overrides
+        shapedRecipe(
+            Item.of('minecraft:honeycomb_block'),
+            ['AAA', 'AAA', 'AAA'],
+            {
+                A: 'minecraft:honeycomb'
+            },
+            'minecraft:honeycomb_block'
+        )
     ];
 
     recipes.forEach(function (recipe) {
@@ -393,6 +434,14 @@ events.listen('recipes', function (event) {
             event.shaped(recipe.result, recipe.pattern, recipe.key).id(recipe.id);
         } else {
             event.shaped(recipe.result, recipe.pattern, recipe.key);
+        }
+    });
+
+    newRecipes.forEach((recipe) => {
+        if (recipe.id) {
+            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+        } else {
+            event.shaped(recipe.output, recipe.pattern, recipe.key);
         }
     });
 
@@ -407,5 +456,90 @@ events.listen('recipes', function (event) {
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
         });
+    });
+
+    powahTiers.forEach(function (tier) {
+        var capacitor = 'powah:capacitor_' + tier,
+            crystal = 'powah:crystal_' + tier;
+
+        if (tier == 'basic' || tier == 'starter') {
+            return;
+        } else if (tier == 'hardened') {
+            crystal = 'powah:steel_energized';
+        }
+
+        event.shaped(Item.of('powah:energy_cell_' + tier), ['ABA', 'BCB', 'ABA'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:energy_cell'
+        });
+
+        event.shaped(Item.of('powah:ender_cell_' + tier), [' A ', 'ABA', ' A '], {
+            A: crystal,
+            B: '#powah:ender_cell'
+        });
+
+        event.shaped(Item.of('powah:energizing_rod_' + tier), ['   ', 'ACA', ' B '], {
+            A: capacitor,
+            B: 'powah:energy_cable_' + tier,
+            C: '#powah:energizing_rod'
+        });
+
+        event.shaped(Item.of('powah:furnator_' + tier), ['AAA', 'BCB', 'A A'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:furnator'
+        });
+
+        event.shaped(Item.of('powah:magmator_' + tier), ['AAA', 'BCB', 'A A'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:magmator'
+        });
+
+        event.shaped(Item.of('powah:thermo_generator_' + tier), [' A ', 'BCB'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:thermo_generator'
+        });
+
+        event.shaped(Item.of('powah:solar_panel_' + tier), ['BCB', 'AAA'], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:solar_panel'
+        });
+
+        event.shaped(Item.of('powah:reactor_' + tier), [' A ', 'ABA', ' A '], {
+            A: capacitor,
+            B: '#powah:reactor'
+        });
+
+        event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
+            A: capacitor,
+            B: '#powah:energy_hopper'
+        });
+
+        event.shaped(Item.of('powah:energy_discharger_' + tier), [' A ', ' B ', ' A '], {
+            A: capacitor,
+            B: '#powah:energy_discharger'
+        });
+
+        event.shaped(Item.of('powah:battery_' + tier), [' A ', 'BCB', ' B '], {
+            A: crystal,
+            B: capacitor,
+            C: '#powah:battery'
+        });
+    });
+
+    colors.forEach((color) => {
+        event
+            .shaped(`botanypots:${color}_botany_pot`, ['ADA', 'ABA', 'ACA'], {
+                A: `minecraft:${color}_terracotta`,
+                B: 'minecraft:flower_pot',
+                C: 'minecraft:bone_block',
+                D: 'minecraft:water_bucket'
+            })
+            .id(`botanypots:crafting/${color}_botany_pot`);
+        event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
     });
 });

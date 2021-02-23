@@ -1,6 +1,6 @@
-events.listen('recipes', function (event) {
-    event.recipes.enigmatica.tool_shapeless({
-        type: 'enigmatica.tool_shapeless',
+events.listen('recipes', (event) => {
+    event.custom({
+        type: 'enigmatica:tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/knife'
@@ -15,8 +15,8 @@ events.listen('recipes', function (event) {
         }
     });
 
-    event.recipes.enigmatica.tool_shapeless({
-        type: 'enigmatica.tool_shapeless',
+    event.custom({
+        type: 'enigmatica:tool_shapeless',
         ingredients: [
             {
                 tag: 'forge:tools/axe'
@@ -31,46 +31,42 @@ events.listen('recipes', function (event) {
         }
     });
 
-    var tillsIntoFarmland = ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:dirt'];
-    tillsIntoFarmland.forEach(function (block) {
-        event.recipes.enigmatica.tool_shapeless({
-            type: 'enigmatica.tool_shapeless',
-            ingredients: [
-                {
-                    tag: 'forge:tools/hoe'
-                },
-                {
-                    item: block
-                }
-            ],
-            result: {
-                item: 'minecraft:farmland'
-            }
-        });
-    });
-
-    event.recipes.enigmatica.tool_shapeless({
-        type: 'enigmatica.tool_shapeless',
-        ingredients: [
-            {
-                tag: 'forge:tools/hoe'
-            },
-            {
-                item: 'farmersdelight:rich_soil'
-            }
-        ],
-        result: {
-            item: 'farmersdelight:rich_soil_farmland'
+    var tillsIntoFarmland = [
+        { type: 'minecraft:farmland', soils: ['minecraft:grass_block', 'minecraft:dirt', 'minecraft:coarse_dirt'] },
+        { type: 'farmersdelight:rich_soil_farmland', soils: ['farmersdelight:rich_soil'] },
+        {
+            type: 'undergarden:deepsoil_farmland',
+            soils: [
+                'undergarden:deepturf_block',
+                'undergarden:ashen_deepturf_block',
+                'undergarden:deepsoil',
+                'undergarden:coarse_deepsoil'
+            ]
         }
+    ];
+
+    tillsIntoFarmland.forEach(function (category) {
+        var farmland = category.type;
+        category.soils.forEach(function (soil) {
+            event.custom({
+                type: 'enigmatica:tool_shapeless',
+                ingredients: [
+                    {
+                        tag: 'forge:tools/hoe'
+                    },
+                    {
+                        item: soil
+                    }
+                ],
+                result: {
+                    item: farmland
+                }
+            });
+        });
     });
 
     buildWoodVariants.forEach((variant) => {
         //var modID = variant.logBlock.split(':')[0];
-
-        // mod blacklist
-        /*if (modID == 'undergarden') {
-            return;
-        }*/
 
         data = {
             recipes: [

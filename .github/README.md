@@ -5,7 +5,15 @@ This is the official repository and issue-tracker for the modpack Enigmatica 6, 
 ### Table of Contents
 
 -   [Testing](#testing)
+-   [Setup](#setup)
+    -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
+    -   [CurseForge App (Windows/Mac)](#curseforge-app-windows--mac)
+    -   [Alternatives](#alternatives)
+-   [Server Automation](#server-automation)
+-   [Docker](#docker)
 -   [Links](#links)
+
+<hr></hr>
 
 ## Testing
 
@@ -51,7 +59,7 @@ git fetch
 git pull origin develop
 ```
 
-8. Now double click the script `setup.sh` to setup InstanceSync. It is found in the `development` folder.
+8. Now double click the script `InstanceSyncSetup.sh` to setup InstanceSync. It is found in the root folder.
 
 You're done!
 
@@ -64,32 +72,39 @@ Tip: If you run into issues, verifying you are using the right Minecraft and For
 
     _Note: If you've previously used the Twitch App the path will most likely be `C:\Users\User\Documents\Twitch\Minecraft\Instances`._
 
-3. Double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+3. Double click the script `InstanceSyncSetup.bat` to setup InstanceSync. It is found in the root folder.
 4. Pull.
 5. Open the CurseForge App and you should see Enigmatica 6. If you already had CurseForge App open, restart it.
 
 You're done!
 
-## Server Automation
+### Alternatives
+
+It is possible to setup a development instance for Enigmatica 6 in other ways, for example running it through the .Minecraft folder.
+
+# Server Automation
+
+## Automatic updates with Git
 
 _Note: You only have to do this setup once, afterwards you simply need to do step 8._
 
 1. Clone the Enigmatica 6 repository to an empty folder.
-2. Double click the script `setup.bat` to setup InstanceSync. It is found in the `development` folder.
+2. Double click the script `InstanceSyncSetup.bat` to setup InstanceSync. It is found in the root folder.
 3. Open a command line, and navigate to the folder.
 4. Use the command `git pull`
-5. Navigate to the folder `development/include-in-server-files`
+5. Navigate to the folder `server`
 6. Open the file `settings.cfg` and change `MAX_RAM=4G` to the amount you wish to allocate.
-7. Copy all files from the folder `development/include-in-server-files` into the root.
+7. Copy all files from the folder `server` into the root.
 8. Run `remove-client-mods` to ensure that no client-side mods are on the server.
 9. Double clicking `update-server.bat` will now update the modpack.
 
 Using the `update-server` script will reset changes you've made to all files tracked by the repository.
 Anything put in the `overrides` folder will be copied into the root folder when the `update-server` script is finished - I recommend you put any changed configs and added mods there.
 
-### Alternatives
+## Docker
 
-It is possible to setup a development instance for Enigmatica 6 in other ways, for example running it through the .Minecraft folder.
+There's an example `docker-compose.yml` in the `docker` folder, for those who want to run an Enigmatica 6 server through Docker.
+It's based on [Docker Minecraft Server](https://github.com/itzg/docker-minecraft-server), please see the link for configuration and advanced usage.
 
 ## Links
 

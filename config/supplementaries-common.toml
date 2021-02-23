@@ -27,8 +27,6 @@
 		#note that it will still only keep alive the two fire blocks closer to it
 		#Range: 0 ~ 16
 		range = 5
-		#additional blocks that will be ticked by bellows
-		whitelist = []
 
 	[blocks.spring_launcher]
 		#spring launcher launch speed
@@ -56,8 +54,6 @@
 		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
 		#tinted jar catchable mobs
 		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
-		#any item can work here, ideally you should only put cookies and alike
-		cookies = ["minecraft:cookie", "simplefarming:peanut_butter_cookie", "farmersdelight:sweet_berry_cookie", "farmersdelight:honey_cookie"]
 
 	#I haven't tested most of the mods included here. let me know if they work
 	[blocks.cage]
@@ -67,6 +63,8 @@
 		cage_baby_mobs = ["minecraft:cow", "minecraft:sheep", "minecraft:pig"]
 		#allow all mobs to be captured by cages
 		cage_allow_all_mobs = false
+		#allow all baby mobs to be captured by cages
+		cage_allow_all_babies = false
 
 	[blocks.notice_board]
 		#allow notice boards to accept and display any item, not just maps and books
@@ -87,18 +85,17 @@
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = true
-
-	[blocks.sign_post]
-		#additional blocks besides fences that can accept a sign post
-		whitelist = ["quark:oak_post", "quark:birch_post", "quark:spruce_post", "quark:acacia_post", "quark:dark_oak_post", "quark:jungle_post", "quark:warped_post", "quark:crimson_post"]
+		#make safes simpler so they do not require keys:
+		#they will be bound to the first person that opens one and only that person will be able to interact with them
+		simple_safes = false
 
 	[blocks.globe]
-		#how many gobe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
+		#how many globe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
 		#Range: 0 ~ 50
 		trades = 2
-		#chanche of finding a globe in a shipwreck treasure chest. default is 20%
-		#Range: 0 ~ 100
-		treasure_chance = 20
+		#chanche of finding a globe in a shipwreck treasure chest.
+		#Range: 0.0 ~ 1.0
+		shipwreck_treasure_chance = 0.25
 
 #Configure spawning conditions
 [spawns]
@@ -141,8 +138,6 @@
 	[tweaks.throwable_bricks]
 		#throw bricks at your foes! Might glass blocks
 		enabled = true
-		#additional items that will be able to be thrown (will work with any item). Items tagges as forge/ingots/bricks or nether bricks will be automatically added
-		whitelist = ["biomesoplenty:mud_brick", "byg:yellow_nether_brick", "byg:blue_nether_brick"]
 
 	[tweaks.wall_lantern]
 		#allow wall lanterns placement
@@ -176,4 +171,10 @@
 		#max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
+		#additional non tameable entities that you can bind to flutes
+		flute_extra_mobs = ["minecraft:horse", "minecraft:llama", "minecraft:donkey", "minecraft:fox"]
+
+[comment]
+	#This config is synced server side. If you are on a server you'll get its own version
+	comment = true
 

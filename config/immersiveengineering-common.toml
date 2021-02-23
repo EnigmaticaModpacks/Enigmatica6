@@ -1,6 +1,13 @@
 #A list of preferred Mod IDs that results of IE processes should stem from, aka which mod you want the copper to come from.
 #This affects the ores dug by the excavator, as well as those crushing recipes that don't have associated IE items. This list is in oreder of priority.
 preferredOres = ["emendatusenigmatica", "minecraft", "immersiveengineering", "thermal", "create", "mekanism", "jaopca", "kubejs", "appliedenergistics2", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
+#IMPORTANT NOTICE:
+#THIS IS ONLY THE COMMON CONFIG. It does not contain all the values adjustable for IE.
+#All modifiers for machines, all ore gen, the retrogen features and most other adjustable values have been moved to immersiveengineering-server.toml.
+#That file is PER WORLD, meaning you have to go into 'saves/<world name>/serverconfig' to adjust it. Those changes will then only apply for THAT WORLD.
+#You can then take that config file and put it in the 'defaultconfigs' folder to make it apply automatically to all NEW worlds you generate FROM THERE ON.
+#This may appear confusing to many of you, but it is a new sensible way to handle configuration, because the server configuration is synced when playing multiplayer.
+importantInfo = true
 
 [debug]
 	#A config setting to enable debug features. These features may vary between releases, may cause crashes, and are unsupported. Do not enable unless asked to by a developer of IE.
@@ -16,4 +23,6 @@ preferredOres = ["emendatusenigmatica", "minecraft", "immersiveengineering", "th
 #Setting any of these to false disables the respective compat
 [compat]
 	computercraft = true
+	crafttweaker = true
+	theoneprobe = true
 

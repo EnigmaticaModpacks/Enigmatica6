@@ -1,12 +1,10 @@
-events.listen('recipes', function (event) {
+events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
-        'additionalbars:crossed_iron_bars',
-
         'bambooeverything:bamboo_bundle',
 
         'byg:blue_enchanted_crafting_table',
@@ -36,8 +34,9 @@ events.listen('recipes', function (event) {
 
         'thermal:bamboo_block',
 
-        'quantumstorage:tank',
-        'quantumstorage:qsu'
+        'betterendforge:thallasium_anvil',
+        'betterendforge:terminite_anvil',
+        'betterendforge:aeternium_anvil'
     ];
 
     var idRemovals = [
@@ -54,7 +53,11 @@ events.listen('recipes', function (event) {
 
         'botania:fertilizer_dye',
 
+        'botanypots:crafting/compact_hopper_botany_pot',
+
         'buildersaddition:iron_rod',
+
+        'compactmachines:wall',
 
         'create:mechanical_crafting/integrated_circuit',
         'create:pressing/lapis_block',
@@ -63,9 +66,18 @@ events.listen('recipes', function (event) {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'fluxnetworks:fluxcontroller',
+        'fluxnetworks:fluxcore',
+
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
+
+        'immersivepetroleum:distillationtower/oilcracking',
+
+        'industrialforegoing:stonework_generate/andesite',
+        'industrialforegoing:stonework_generate/diorite',
+        'industrialforegoing:stonework_generate/granite',
 
         'mapperbase:steel_nugget_from_blasting',
         'mapperbase:steel_plate_from_blasting',
@@ -74,16 +86,39 @@ events.listen('recipes', function (event) {
         'mapperbase:steel_rod_from_blasting',
         'mapperbase:steel_rod',
         'mapperbase:iron_rod',
+        'mapperbase:iron_plate',
+        'mapperbase:steel_plate',
 
         'mekanism:crushing/stone/to_cobblestone',
+        'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
 
+        'pedestals:pedestal_cobblegen/blackstone',
+
         'quark:building/crafting/tallow_from_block',
 
+        'thermal:machine/refinery/refinery_crude_oil',
         'thermal:machine/centrifuge/centrifuge_honeycomb',
+        'thermal:machine/centrifuge/centrifuge_oil_red_sand',
+        'thermal:machine/centrifuge/centrifuge_oil_sand',
         'thermal:machine/plugins/create/pulverizer_create_zinc_ore',
-        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore'
+        'thermal:machine/plugins/mekanism/pulverizer_mek_osmium_ore',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
+        'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+        'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
+
+        'powah:crafting/energy_cell_basic_2',
+        'powah:crafting/cable_basic',
+
+        '/integrateddynamics:\\w+/convenience/minecraft_dye/',
+        '/integrateddynamics:\\w+/ore/dust/',
+        '/integrateddynamics:\\w+/ore/redstone/',
+        '/integrateddynamics:\\w+/ore/quartz/',
+
+        '/integrateddynamics:\\w+/convenience/',
+        '/integrateddynamics:\\w+/ore/'
     ];
 
     outputRemovals.forEach((removal) => {
@@ -94,18 +129,8 @@ events.listen('recipes', function (event) {
         event.remove({ id: removal });
     });
 
-    global.disabledItems.forEach((disabledItem) => {
+    disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
-    });
-
-    event.remove({
-        output: '/extrastorage:disk_\\w+/',
-        mod: 'extrastorage'
-    });
-    event.remove({
-        output: '/extrastorage:storagepart_\\w+/',
-        mod: 'extrastorage',
-        type: 'minecraft:crafting_shaped'
     });
 
     event.remove({
@@ -158,6 +183,16 @@ events.listen('recipes', function (event) {
         type: 'occultism:miner'
     });
 
+    event.remove({
+        output: '/powah:\\w+_starter/',
+        mod: 'powah'
+    });
+
+    event.remove({ type: 'botanypots:crop' });
+    event.remove({ type: 'botanypots:soil' });
+    event.remove({ type: 'thermal:insolator' });
+    event.remove({ type: 'immersiveengineering:cloche' });
+
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
 
     beamRecipes.forEach((recipe) => {
@@ -183,6 +218,12 @@ events.listen('recipes', function (event) {
     event.remove({
         input: '#forge:ores/nickel',
         type: 'thermal:smelter'
+    });
+    event.remove({
+        id: /emendatusenigmatica:ore_from_chunk_crafting/
+    });
+    event.remove({
+        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
     });
     event.remove({
         input: 'minecraft:fire_charge',

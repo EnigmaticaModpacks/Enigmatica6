@@ -1,4 +1,4 @@
-//priority: 1000
+//priority: 1005
 
 function shapedRecipe(result, pattern, key, id) {
     return { result: result, pattern: pattern, key: key, id: id };
@@ -20,12 +20,15 @@ function entryIsBlacklisted(material, type) {
 }
 
 function tagIsEmpty(tag) {
-    return getPreferredItemInTag(ingredient.of(tag)).id == air;
+    return getPreferredItemInTag(Ingredient.of(tag)).id == air;
 }
 
 function getPreferredItemInTag(tag) {
-    const pref = wrapArray(tag.stacks).sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || item.of(air);
-    // console.info('Preferred item: ' + tag + ' => ' + pref);
+    let pref =
+        utils
+            .listOf(tag.stacks)
+            .toArray()
+            .sort(({ mod: a }, { mod: b }) => compareIndices(a, b, tag))[0] || Item.of(air);
     return pref;
 }
 function compareIndices(a, b, tag) {
@@ -42,7 +45,18 @@ function compareIndices(a, b, tag) {
 function wrapArray(array) {
     return utils.listOf(array).toArray();
 }
+
 const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
+
+setMode = (player) => {
+    if (global.packmode == 'expert') {
+        console.log('Completing Expert Gate Quest for ' + player.toString());
+        player.data.ftbquests.complete('0000000000000FEC');
+    } else {
+        console.log('Resetting Expert Gate Quest for ' + player.toString());
+        player.data.ftbquests.reset('0000000000000FEC');
+    }
+};

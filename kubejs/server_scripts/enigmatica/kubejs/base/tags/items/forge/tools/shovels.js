@@ -1,54 +1,21 @@
-events.listen('item.tags', function (event) {
-    var items = [
-        'aiotbotania:alfsteel_shovel',
-        'aiotbotania:terra_shovel',
-        'aquaculture:neptunium_shovel',
-        'botania:elementium_shovel',
-        'botania:manasteel_shovel',
-        'byg:pendorite_shovel',
-        'immersiveengineering:shovel_steel',
-        'mekanismtools:bronze_shovel',
-        'mekanismtools:lapis_lazuli_shovel',
-        'mekanismtools:osmium_shovel',
-        'mekanismtools:refined_glowstone_shovel',
-        'mekanismtools:refined_obsidian_shovel',
-        'mekanismtools:steel_shovel',
-        'minecraft:diamond_shovel',
-        'minecraft:golden_shovel',
-        'minecraft:iron_shovel',
-        'minecraft:netherite_shovel',
-        'minecraft:stone_shovel',
-        'minecraft:wooden_shovel',
-        'naturesaura:infused_iron_shovel',
-        'naturesaura:sky_shovel',
-        'vanillaexcavators:bone_excavator',
-        'vanillaexcavators:coal_excavator',
-        'vanillaexcavators:diamond_excavator',
-        'vanillaexcavators:emerald_excavator',
-        'vanillaexcavators:ender_excavator',
-        'vanillaexcavators:fiery_excavator',
-        'vanillaexcavators:glowstone_excavator',
-        'vanillaexcavators:gold_excavator',
-        'vanillaexcavators:iron_excavator',
-        'vanillaexcavators:lapis_excavator',
-        'vanillaexcavators:nether_excavator',
-        'vanillaexcavators:netherite_excavator',
-        'vanillaexcavators:obsidian_excavator',
-        'vanillaexcavators:paper_excavator',
-        'vanillaexcavators:prismarine_excavator',
-        'vanillaexcavators:quartz_excavator',
-        'vanillaexcavators:redstone_excavator',
-        'vanillaexcavators:slime_excavator',
-        'vanillaexcavators:stone_excavator',
-        'vanillaexcavators:wood_excavator',
-        'undergarden:utheric_shovel',
-        'undergarden:froststeel_shovel',
-        'undergarden:cloggrum_shovel',
-        'bloodmagic:soulshovel',
-        'astralsorcery:crystal_shovel',
-        'astralsorcery:infused_crystal_shovel',
-        'undergarden:forgotten_shovel'
+events.listen('item.tags', (event) => {
+    var items = ['immersiveengineering:shovel_steel', 'bloodmagic:soulshovel'];
+    var exceptions = [
+        'betterendforge:aeternium_shovel_head',
+        'betterendforge:thallasium_shovel_head',
+        'betterendforge:terminite_shovel_head'
     ];
-    event.get('forge:tools').add(items);
-    event.get('forge:tools/shovel').add(items);
+
+    var tags = ['forge:tools', 'forge:tools/shovel'];
+
+    tags.forEach((tag) => {
+        event
+            .get(tag)
+            .add(items)
+            .add(/_shovel/)
+            .add(/_aiot/)
+            .add(/_paxel/)
+            .add(/_excavator/)
+            .remove(exceptions);
+    });
 });

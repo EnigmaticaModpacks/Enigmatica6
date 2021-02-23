@@ -1,0 +1,23 @@
+
+[networks]
+	#Maximum networks each player can have. -1 = no limit
+	#Range: > -1
+	maximumPerPlayer = 5
+	#Allows someone to be a network super admin, otherwise, no one can access or dismantle your flux devices or delete your networks without permission
+	enableSuperAdmin = true
+	#See ops.json. If the player has permission level equal or greater to the value set here they will be able to Activate Super Admin. Setting this to 0 will allow anyone to active Super Admin.
+	#Range: > 0
+	superAdminRequiredPermission = 1
+
+[general]
+	#Enables redstone being compressed with the bedrock and obsidian to get flux
+	enableFluxRecipe = true
+	#Allows flux tiles to work as chunk loaders
+	enableChunkLoading = true
+
+[blacklist]
+	#A blacklist for blocks which flux devices shouldn't connect to, use format 'modid:registry_name'
+	blockBlacklistStrings = ["actuallyadditions:block_phantom_energyface"]
+	#A blacklist for items which wireless charging shouldn't charge to, use format 'modid:registry_name'
+	itemBlackListStrings = [""]
+

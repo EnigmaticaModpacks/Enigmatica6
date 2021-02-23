@@ -1,33 +1,17 @@
-events.listen('item.tags', function (event) {
-    var items = [
-        'aquaculture:neptunium_sword',
-        'botania:elementium_sword',
-        'botania:manasteel_sword',
-        'botania:star_sword',
-        'botania:terra_sword',
-        'botania:thunder_sword',
-        'byg:pendorite_sword',
-        'immersiveengineering:sword_steel',
-        'mekanismtools:bronze_sword',
-        'mekanismtools:lapis_lazuli_sword',
-        'mekanismtools:osmium_sword',
-        'mekanismtools:refined_glowstone_sword',
-        'mekanismtools:refined_obsidian_sword',
-        'mekanismtools:steel_paxel',
-        'mekanismtools:steel_sword',
-        'minecraft:diamond_sword',
-        'minecraft:golden_sword',
-        'minecraft:iron_sword',
-        'minecraft:netherite_sword',
-        'minecraft:stone_sword',
-        'minecraft:wooden_sword',
-        'mythicbotany:alfsteel_sword',
-        'naturesaura:infused_iron_sword',
-        'naturesaura:sky_sword',
-        'wstweaks:blaze_blade',
-        'wstweaks:lava_blade',
-        'undergarden:forgotten_sword',
-        'eidolon:sapping_sword'
+events.listen('item.tags', (event) => {
+    var items = ['immersiveengineering:sword_steel', 'wstweaks:blaze_blade', 'wstweaks:lava_blade'];
+    var exceptions = [
+        'betterendforge:aeternium_sword_handle',
+        'betterendforge:aeternium_sword_blade',
+        'betterendforge:thallasium_sword_handle',
+        'betterendforge:thallasium_sword_blade',
+        'betterendforge:terminite_sword_handle',
+        'betterendforge:terminite_sword_blade'
     ];
-    event.get('forge:weapons/sword').add(items);
+
+    event
+        .get('forge:weapons/sword')
+        .add(items)
+        .add(/_sword/)
+        .remove(exceptions);
 });

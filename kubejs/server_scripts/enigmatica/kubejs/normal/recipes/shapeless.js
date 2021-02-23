@@ -1,5 +1,5 @@
-events.listen('recipes', function (event) {
-    if (global.packmode !== 'normal') {
+events.listen('recipes', (event) => {
+    if (global.packmode != 'normal') {
         return;
     }
 });

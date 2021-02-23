@@ -1,24 +1,31 @@
-events.listen('item.tags', function (event) {
-    event.get('forge:ingots').add('powah:uraninite');
+events.listen('item.tags', (event) => {
     event.get('forge:ingots/uraninite').add('powah:uraninite');
     event.get('forge:ingots/energized_steel').add('powah:steel_energized');
     event.get('forge:ingots/radioactive').add('#forge:ingots/uraninite').add('#forge:ingots/uranium');
 
-    event
-        .get('forge:ingots')
-        .add('immersiveengineering:ingot_aluminum')
-        .add('immersiveengineering:ingot_lead')
-        .add('immersiveengineering:ingot_silver')
-        .add('immersiveengineering:ingot_nickel')
-        .add('immersiveengineering:ingot_uranium')
-        .add('immersiveengineering:ingot_constantan')
-        .add('immersiveengineering:ingot_electrum')
-        .add('immersiveengineering:ingot_hop_graphite')
-        .add('mythicbotany:alfsteel_ingot')
-        .add('industrialforegoing:pink_slime_ingot')
-        .add('occultism:iesnium_ingot')
-        .add('astralsorcery:starmetal_ingot')
-        .add('create:andesite_alloy');
+    event.add('forge:ingots', [
+        'astralsorcery:starmetal_ingot',
+        'betterendforge:aeternium_ingot',
+        'betterendforge:terminite_ingot',
+        'betterendforge:thallasium_ingot',
+        'botania:gaia_ingot',
+        'create:andesite_alloy',
+        'immersiveengineering:ingot_aluminum',
+        'immersiveengineering:ingot_constantan',
+        'immersiveengineering:ingot_electrum',
+        'immersiveengineering:ingot_hop_graphite',
+        'immersiveengineering:ingot_lead',
+        'immersiveengineering:ingot_nickel',
+        'immersiveengineering:ingot_silver',
+        'immersiveengineering:ingot_uranium',
+        'industrialforegoing:pink_slime_ingot',
+        'mythicbotany:alfsteel_ingot',
+        'naturesaura:infused_iron',
+        'naturesaura:sky_ingot',
+        'naturesaura:tainted_gold',
+        'occultism:iesnium_ingot',
+        'powah:uraninite'
+    ]);
 
     event.get('forge:ingots/copper').add('immersiveengineering:ingot_copper');
     event.get('forge:ingots/alfsteel').add('mythicbotany:alfsteel_ingot');
@@ -26,13 +33,11 @@ events.listen('item.tags', function (event) {
     event.get('forge:ingots/gaia').add('botania:gaia_ingot');
     event.get('forge:ingots/gaia_spirit').add('botania:gaia_ingot');
     event.add('forge:ingots/starmetal', ['astralsorcery:starmetal_ingot']);
-    event
-        .get('forge:ingots')
-        .add('naturesaura:sky_ingot')
-        .add('naturesaura:tainted_gold')
-        .add('naturesaura:infused_iron');
-    event.get('forge:ingots').add('botania:gaia_ingot');
     event.add('forge:ingots/andesite_alloy', ['create:andesite_alloy']);
+
+    event.add('forge:ingots/aeternium', ['betterendforge:aeternium_ingot']);
+    event.add('forge:ingots/terminite', ['betterendforge:terminite_ingot']);
+    event.add('forge:ingots/thallasium', ['betterendforge:thallasium_ingot']);
 
     event.get('forge:ingots/gold_brass').add('#forge:ingots/gold').add('#forge:ingots/brass');
     event.get('forge:ingots/gold_bronze').add('#forge:ingots/gold').add('#forge:ingots/bronze');

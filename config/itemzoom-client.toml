@@ -1,0 +1,30 @@
+
+[itemzoom]
+
+	[itemzoom.toggled]
+		#If set to "false", Item Zoom will be disabled.
+		enabled = true
+
+	[itemzoom.zoom]
+		#Set lower amount to make the item zoom less.
+		#Range: 10 ~ 100
+		amount = 50
+
+	[itemzoom.jei]
+		#Zoom items only from the JEI overlay with ingredients list.
+		only = false
+
+	[itemzoom.show]
+
+		[itemzoom.show.help]
+			#Display name "Item Zoom" and the hotkey to toggle this mod below the zoomed item.
+			text = true
+
+		[itemzoom.show.damage]
+			#Display the item's durability bar when zoomed.
+			bar = false
+
+		[itemzoom.show.stack]
+			#Display the item's stack size when zoomed.
+			size = false
+

@@ -7,7 +7,7 @@ events.listen('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        ingredient.of(recipe.inputTag).stacks.forEach((input) => {
+        Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
             if (!input.id.includes('chunk')) {
                 event.recipes.astralsorcery.block_transmutation({
                     type: 'astralsorcery.block_transmutation',

@@ -49,9 +49,6 @@ const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
     'minecraft:granite',
-    'biomesoplenty:black_sandstone',
-    'biomesoplenty:orange_sandstone',
-    'biomesoplenty:white_sandstone',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',
@@ -106,14 +103,17 @@ const colors = [
 var itemsToHide = [
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
+    'ars_nouveau:mana_gem_block',
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
+    // 'bountifulbaubles:potion_wormhole',
     'create:powdered_obsidian',
     'create:honey_bucket',
     'eidolon:tallow',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
+    'immersiveengineering:coal_coke',
     'mapperbase:bitumen_ore',
     'mapperbase:iron_plate',
     'mapperbase:iron_rod',
@@ -129,6 +129,7 @@ var itemsToHide = [
     'quark:biotite',
     'quark:biotite_ore',
     'quark:tallow',
+    'refinedstorage:silicon',
     'thermal:coal_coke',
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
@@ -163,6 +164,16 @@ var regexHide = [
     /emendatusenigmatica:\w+_diorite_ore/,
     /emendatusenigmatica:\w+_sand_ore/,
     /emendatusenigmatica:\w+_gravel_ore/,
+    /emendatusenigmatica:\w+_violecite_ore/,
+    /emendatusenigmatica:\w+_sulphuric_rock_ore/,
+    /emendatusenigmatica:\w+_flavolite_ore/,
+    /emendatusenigmatica:\w+_cryptic_stone_ore/,
+    /emendatusenigmatica:\w+_ether_stone_ore/,
+    /emendatusenigmatica:\w+_nylium_soul_soil_ore/,
+    /emendatusenigmatica:\w+_subzero_ash_ore/,
+    /emendatusenigmatica:\w+_brimstone_ore/,
+    /emendatusenigmatica:\w+_soul_soil_ore/,
+    /emendatusenigmatica:\w+_basalt_ore/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
     /thermal:\w+_gear/,
@@ -170,14 +181,13 @@ var regexHide = [
     /thermal:\w+_nugget/,
     /thermal:\w+_ore/,
     /thermal:\w+_plate/,
-    /tmechworks:\w+_ingot/,
-    /tmechworks:\w+_nugget/,
-    /tmechworks:\w+_ore/,
     /pedestals:dust/,
     /mekanism:\w+_ore/,
     /minecraft:\w+_ore/,
     /immersiveengineering:plate_/,
     /immersiveengineering:stick_/,
+    /immersiveengineering:storage_/,
+    /immersiveengineering:ore_/,
     /create:\w+_sheet/,
     /create:\w+_nugget/,
     /create:\w+_ingot/,
@@ -190,7 +200,10 @@ var regexHide = [
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
     /mapperbase:steel/,
-    /rftoolsbase:dimensionalshard/
+    /mapperbase:\w+_block/,
+    /powah:\w+_starter/,
+    /rftoolsbase:dimensionalshard/,
+    /betterendforge:\w+_anvil/
 ];
 
 const disabledItems = [
@@ -199,6 +212,8 @@ const disabledItems = [
     'aquaculture:iron_fillet_knife',
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
+
+    'betterendforge:ender_dust',
 
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
@@ -247,7 +262,8 @@ const disabledItems = [
     'thermal:beetroot_block',
     'thermal:carrot_block',
     'thermal:potato_block',
-    'thermal:sugar_cane_block'
+    'thermal:sugar_cane_block',
+    'thermal:apple_block'
 ];
 const materialsToUnify = [
     'iron',

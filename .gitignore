@@ -13,6 +13,7 @@ config/forgeendertech/Biomes/
 screenshots/
 /mods/
 /world/
+/world_backup/
 /defaultconfig/
 /data/
 /ct_dumps/
@@ -25,13 +26,6 @@ github_changelog_generator.gemspec
 twitch_export-win.exe
 ChangelogGenerator.bat
 .build.json
-
-# Client Configs
-config/InvTweaks.cfg
-config/MouseTweaks.cfg
-config/jei/worldSettings.cfg
-config/jei/lookupHistory.zip
-config/jei/bookmarks.ini
 .curseclient
 .ReAuth.cfg
 usernamecache.json
@@ -39,7 +33,6 @@ usercache.json
 knownkeys.txt
 servers.dat
 realms_persistence.json
-WailaErrorOutput.txt
 ItemDump.txt
 BotaniaVars.dat
 crafttweaker.log
@@ -68,17 +61,12 @@ post-file-to-discord.bat
 .curseclient
 config/XaeroWorldMap/
 eula.txt
-scb_resources/
 XaeroWaypoints/
 XaeroWorldMap/
 options.txt
 secrets.ps1
 **/*.zip
 CHANGELOG-GENERATED.md
-stdlib_Result$Error.class
-stdlib_Result$Ok.class
-ttt.class
-.persistent/multibeds/embroidery.dat
 ds_private_storage.json
 TwitchExportBuilder.exe
 reauth.toml
@@ -87,15 +75,9 @@ new.json
 old.json
 config/cherishedworlds/favorites.dat
 soundsMuffled.dat
-MakeModpackFiles.bat
-MakeModpackFilesPostToDiscord.bat
-PostToDiscord.bat
 
-!thirdpartymods/*.jar
-!openloader/*/*.zip
 !packmenu/*.zip
 TrashSlotSaveState.json
-scripts/experiments/*
 mode.json
 emojiful/cache/*
 config/betteradvancements-client.toml
@@ -121,6 +103,7 @@ config/xnet-client.toml
 config/buildinggadgets-client.toml
 config/mining_helmet-client.toml
 1.16.4.json
+stop-java-detection.txt
 remove-client-mods.bat
 remove-client-mods.ps1
 server-guide.txt
@@ -131,11 +114,31 @@ server-start.bat
 server-start.sh
 server.properties
 settings.cfg
-stop-java-detection.txt
 update-and-start-server.bat
 update-and-start-server.ps1
 update-server.bat
 update-server.ps1
+!server/remove-client-mods.bat
+!server/remove-client-mods.ps1
+!server/server-guide.txt
+!server/server-install.sh
+!server/server-start-license.md
+!server/server-start-readme.md
+!server/server-start.bat
+!server/server-start.sh
+!server/server.properties
+!server/settings.cfg
+!server/update-and-start-server.bat
+!server/update-and-start-server.ps1
+!server/update-server.bat
+!server/update-server.ps1
+
+# Client Configs
+config/InvTweaks.cfg
+config/MouseTweaks.cfg
+config/jei/worldSettings.cfg
+config/jei/lookupHistory.zip
+config/jei/bookmarks.ini
 config/rftoolsutility-client.toml
 config/rftoolsstorage-client.toml
 config/rftoolscontrol-client.toml
@@ -155,6 +158,8 @@ config/computercraft-client.toml
 config/supplementaries-client.toml
 config/artifacts-client.toml
 config/occultism-client.toml
+config/betterendforge/client-config.toml
+config/upgrade_aquatic-client.toml
 
 # GDLauncher
 config.json

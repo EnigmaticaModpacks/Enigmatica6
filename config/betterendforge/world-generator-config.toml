@@ -1,0 +1,62 @@
+
+["End generation settings"]
+	#
+	#Enable/disable BetterEnd integration with vanilla End biome provider.
+	#This allows BetterEnd to inject its own biome generation infos into the vanilla EndBiomeProvider,
+	#making BetterEnd biomes integrate with Biomes O' Plenty worlds and already generated worlds.
+	#If, for some reason, you don't want this feature, here is the option to change it
+	#Default value: true
+	vanillaEndIntegrationEnabled = true
+	#
+	#Land biome map size.
+	#Default value: 256
+	biomeSizeLand = 256
+	#
+	#Void biome map size.
+	#Default value: 256
+	biomeSizeVoid = 256
+	#
+	#Enable/disable dragon fight.
+	#Default value: true
+	dragonFightEnabled = true
+	#
+	#Enable/disable vanilla portal generation.
+	#Default value: true
+	generateVanillaPortal = true
+	#
+	#Enable/disable obsidian pillars generation.
+	#Default value: true
+	generateObsidianPillars = true
+	#
+	#Enable/disable generation of the obsidian platform where the player spawns in the End.
+	#Default value: true
+	generateObsidianPlatform = true
+	#
+	#Enable/disable custom chorus plant (set this to false if you experience block shifting issues)
+	#Default value: true
+	customChorusPlantEnabled = true
+	#
+	#Enable/disable chorus generation in vanilla biomes.
+	#Default value: true
+	chorusInVanillaBiomesEnabled = true
+	#
+	#Enable/disable new End terrain generation.
+	#Default value: false
+	enableNewGenerator = false
+	#
+	#Enable/disable the void ring around central island.
+	#Default value: false
+	noRingVoid = false
+	#
+	#Enable/disable generation of the central island.
+	#Default value: false
+	generateCentralIsland = false
+	#
+	#Allows the player to spawn in the End instead of the Overworld.
+	#Default value: false
+	swapOverWorldWithEnd = false
+	#
+	#Set the chance for end city generation to fail. Higher values means lower chance of spawning
+	#Default value: 5
+	endCityGenerationFailChance = 5
+

@@ -32,30 +32,41 @@ key_key.hotbar.6:key.keyboard.6:NONE
 key_key.hotbar.7:key.keyboard.7:NONE
 key_key.hotbar.8:key.keyboard.8:NONE
 key_key.hotbar.9:key.keyboard.9:NONE
+key_key.secondarySprint:key.keyboard.w:NONE
 key_key.dismount:key.keyboard.left.shift:NONE
 key_key.narrator:key.keyboard.b:CONTROL
+key_key.pause:key.keyboard.escape:NONE
+key_key.gui:key.keyboard.f1:NONE
+key_key.debugInfo:key.keyboard.f3:NONE
 key_key.findme.search:key.keyboard.y:NONE
 key_key.ftbultimine:key.keyboard.grave.accent:NONE
 key_key.ftbchunks.map:key.keyboard.m:NONE
+key_key.enchdesc.show:key.keyboard.left.shift:NONE
+key_bloodmagic.keybind.open_holding:key.keyboard.unknown:NONE
+key_key.itemzoom.toggle:key.keyboard.z:SHIFT
+key_key.itemzoom.hold:key.keyboard.unknown:NONE
+key_key.itemzoom.zoom.in:key.keyboard.unknown:NONE
+key_key.itemzoom.zoom.out:key.keyboard.unknown:NONE
 key_key.immersivepetroleum.projector.flip:key.keyboard.unknown:NONE
 key_key.toggleLiquids:key.keyboard.unknown:NONE
 key_key.toggleVisible:key.keyboard.unknown:NONE
 key_key.immersiveengineering.magnetEquip:key.keyboard.s:NONE
 key_key.immersiveengineering.railgunZoom:key.mouse.middle:NONE
 key_key.immersiveengineering.chemthrowerSwitch:key.keyboard.unknown:NONE
-key_tetra.toolbelt.binding.access:key.keyboard.b:NONE
+key_tetra.toolbelt.binding.access:key.keyboard.unknown:NONE
 key_tetra.toolbelt.binding.restock:key.keyboard.b:SHIFT
+key_tetra.toolbelt.binding.open:key.keyboard.b:ALT
 key_Strip World:key.keyboard.delete:NONE
 key_Dress World:key.keyboard.insert:NONE
-key_Open Config:key.keyboard.home:NONE
-key_Add Block:key.keyboard.page.up:NONE
-key_Remove Block:key.keyboard.page.down:NONE
+key_Open Config:key.keyboard.unknown:NONE
+key_Add Block:key.keyboard.unknown:NONE
+key_Remove Block:key.keyboard.unknown:NONE
 key_Cycle Profile:key.keyboard.end:NONE
-key_key.ping:key.keyboard.unknown:NONE
-key_ping.key.alert:key.keyboard.1:CONTROL
-key_ping.key.mine:key.keyboard.4:CONTROL
-key_ping.key.look:key.keyboard.3:CONTROL
-key_ping.key.goto:key.keyboard.2:CONTROL
+key_key.integratedterminals.terminal.tab.next:key.keyboard.tab:NONE
+key_key.integratedterminals.terminal.tab.previous:key.keyboard.tab:SHIFT
+key_key.integratedterminals.terminal.craftinggrid.clearplayer:key.keyboard.c:SHIFT
+key_key.integratedterminals.terminal.craftinggrid.clearstorage:key.keyboard.c:NONE
+key_key.integratedterminals.terminal.craftinggrid.balance:key.keyboard.b:NONE
 key_neat.keybind.toggle:key.keyboard.unknown:NONE
 key_key.refinedstorage.focusSearchBar:key.keyboard.tab:NONE
 key_key.refinedstorage.clearGridCraftingMatrix:key.keyboard.x:CONTROL
@@ -63,28 +74,46 @@ key_key.refinedstorage.openWirelessGrid:key.keyboard.unknown:NONE
 key_key.refinedstorage.openWirelessFluidGrid:key.keyboard.unknown:NONE
 key_key.refinedstorage.openWirelessCraftingMonitor:key.keyboard.unknown:NONE
 key_key.refinedstorage.openPortableGrid:key.keyboard.unknown:NONE
-key_key.botania_corporea_request:key.keyboard.unknown:NONE
+key_key.industrialforegoing.backpack.desc:key.keyboard.unknown:NONE
 key_key.curios.open.desc:key.keyboard.unknown:NONE
+key_key.botania_corporea_request:key.keyboard.unknown:NONE
 key_key.invtweaks_sort_player.desc:key.keyboard.unknown:NONE
 key_key.invtweaks_sort_inventory.desc:key.keyboard.unknown:NONE
 key_key.invtweaks_sort_either.desc:key.mouse.middle:NONE
-key_key.mekanism.mode:key.keyboard.n:NONE
-key_key.mekanism.head_mode:key.keyboard.v:NONE
+key_key.mekanism.mode:key.keyboard.unknown:NONE
+key_key.mekanism.head_mode:key.keyboard.unknown:NONE
 key_key.mekanism.chest_mode:key.keyboard.world.2:NONE
-key_key.mekanism.feet_mode:key.keyboard.h:NONE
+key_key.mekanism.legs_mode:key.keyboard.unknown:NONE
+key_key.mekanism.feet_mode:key.keyboard.unknown:NONE
 key_key.mekanism.details:key.keyboard.left.shift:NONE
 key_key.mekanism.description:key.keyboard.n:SHIFT
 key_key.mekanism.module_tweaker:key.keyboard.backslash:NONE
 key_key.mekanism.key_boost:key.keyboard.left.control:NONE
 key_key.mekanism.key_hud:key.keyboard.h:NONE
-key_pneumaticcraft.armor.options:key.keyboard.unknown:NONE
+key_key.adhooks.main_hand.launching:key.mouse.left:NONE
+key_key.adhooks.main_hand.pulling:key.mouse.left:NONE
+key_key.adhooks.main_hand.jumping:key.keyboard.space:NONE
+key_key.adhooks.main_hand.loosening:key.keyboard.left.control:NONE
+key_key.adhooks.main_hand.unhooking:key.keyboard.left.shift:NONE
+key_key.adhooks.off_hand.launching:key.mouse.right:NONE
+key_key.adhooks.off_hand.pulling:key.mouse.right:NONE
+key_key.adhooks.off_hand.jumping:key.keyboard.space:NONE
+key_key.adhooks.off_hand.loosening:key.keyboard.left.control:NONE
+key_key.adhooks.off_hand.unhooking:key.keyboard.left.shift:NONE
+key_pneumaticcraft.armor.options:key.keyboard.x:CONTROL
 key_pneumaticcraft.helmet.hack:key.keyboard.unknown:NONE
 key_pneumaticcraft.helmet.debugging.drone:key.keyboard.unknown:NONE
-key_pneumaticcraft.boots.kick:key.keyboard.x:CONTROL
-key_pneumaticcraft.chestplate.launcher:key.keyboard.c:CONTROL
+key_pneumaticcraft.boots.kick:key.keyboard.unknown:NONE
+key_pneumaticcraft.chestplate.launcher:key.keyboard.unknown:NONE
+key_key.integrateddynamics.logic_programmer_focus_search:key.keyboard.f:ALT
+key_key.integrateddynamics.logic_programmer_open_rename:key.keyboard.r:ALT
+key_dropoff:key.keyboard.unknown:NONE
+key_dropoff:key.keyboard.z:SHIFT
+key_key.diet.open.desc:key.keyboard.n:NONE
 key_Open sound muffle screen:key.keyboard.unknown:NONE
 key_cos.key.opencosarmorinventory:key.keyboard.unknown:NONE
-key_key.dankstorage.construction:key.keyboard.i:NONE
+key_Start composing:key.keyboard.c:NONE
+key_Tool Menu (Hold):key.keyboard.left.alt:NONE
 key_key.cofh.mode_change_increment:key.keyboard.v:NONE
 key_key.buildinggadgets.settings_menu:key.keyboard.g:NONE
 key_key.buildinggadgets.range:key.keyboard.unknown:NONE
@@ -94,34 +123,42 @@ key_key.buildinggadgets.fuzzy:key.keyboard.unknown:NONE
 key_key.buildinggadgets.connected_area:key.keyboard.unknown:NONE
 key_key.buildinggadgets.rotate_mirror:key.keyboard.unknown:NONE
 key_key.buildinggadgets.material_list:key.keyboard.unknown:NONE
-key_key.astralsorcery.disable_perk_abilities:key.keyboard.unknown:NONE
-key_Start composing:key.keyboard.c:NONE
-key_Tool Menu (Hold):key.keyboard.left.alt:NONE
 key_key.plonk.place:key.keyboard.p:NONE
-key_key.trinket:key.keyboard.r:NONE
-key_key.usefulbackpacks.curiosintegration.description:key.keyboard.v:NONE
+key_key.dankstorage.construction:key.keyboard.i:NONE
+key_key.losttrinkets.trinket:key.keyboard.r:NONE
+key_key.losttrinkets.magneto:key.keyboard.unknown:NONE
 key_fpsreducer.key.openGui:key.keyboard.unknown:NONE
 key_fpsreducer.key.forceIdle:key.keyboard.unknown:NONE
+key_key.ping:key.keyboard.unknown:NONE
+key_ping.key.alert:key.keyboard.1:CONTROL
+key_ping.key.mine:key.keyboard.4:CONTROL
+key_ping.key.look:key.keyboard.3:CONTROL
+key_ping.key.goto:key.keyboard.2:CONTROL
+key_key.astralsorcery.disable_perk_abilities:key.keyboard.unknown:NONE
 key_key.ars_nouveau.open_book:key.keyboard.c:SHIFT
 key_key.ars_nouveau.selection_hud:key.keyboard.v:NONE
 key_key.ars_nouveau.previous_slot:key.keyboard.z:NONE
 key_key.ars_nouveau.next_slot:key.keyboard.x:NONE
+key_key.ftbquests.quests:key.keyboard.q:SHIFT
 key_key.moreoverlays.lightoverlay.desc:key.keyboard.f7:NONE
 key_key.moreoverlays.chunkbounds.desc:key.keyboard.f9:NONE
 key_servertabinfo.keys.show:key.keyboard.tab:CONTROL
-key_key.ftbquests.quests:key.keyboard.q:SHIFT
-key_key.openManual:key.keyboard.f1:NONE
 key_key.nextDestination:key.keyboard.right.bracket:NONE
 key_key.prevDestination:key.keyboard.left.bracket:NONE
+key_key.openManual:key.keyboard.unknown:NONE
 key_key.toastcontrol.clear:key.keyboard.j:NONE
 key_mininggadgets.text.open_gui:key.keyboard.g:SHIFT
-key_quark.keybind.back:key.mouse.4:NONE
-key_quark.keybind.change_hotbar:key.keyboard.unknown:NONE
-key_key.refinedstorageaddons.openWirelessCraftingGrid:key.keyboard.g:CONTROL
+key_create.keyinfo.toolmenu:key.keyboard.left.alt:NONE
+key_bloodmagic.keybind.cycle_holding_pos:key.keyboard.unknown:NONE
+key_bloodmagic.keybind.cycle_holding_neg:key.keyboard.unknown:NONE
+key_quark.keybind.lock_rotation:key.keyboard.k:NONE
+key_quark.keybind.sort_player:key.keyboard.unknown:NONE
+key_quark.keybind.sort_container:key.keyboard.unknown:NONE
 key_quark.keybind.camera_mode:key.keyboard.f12:NONE
+key_quark.keybind.back:key.mouse.4:NONE
 key_quark.keybind.transfer_insert:key.keyboard.unknown:NONE
 key_quark.keybind.transfer_extract:key.keyboard.unknown:NONE
-key_quark.keybind.lock_rotation:key.keyboard.k:NONE
+key_quark.keybind.shift_lock:key.keyboard.unknown:NONE
 key_quark.emote.no:key.keyboard.unknown:NONE
 key_quark.emote.yes:key.keyboard.unknown:NONE
 key_quark.emote.wave:key.keyboard.unknown:NONE
@@ -140,8 +177,9 @@ key_quark.keybind.patreon_emote.dab:key.keyboard.unknown:NONE
 key_quark.keybind.patreon_emote.jet:key.keyboard.unknown:NONE
 key_quark.keybind.patreon_emote.exorcist:key.keyboard.unknown:NONE
 key_quark.keybind.patreon_emote.zombie:key.keyboard.unknown:NONE
-key_quark.keybind.sort_player:key.keyboard.unknown:NONE
-key_quark.keybind.sort_container:key.keyboard.unknown:NONE
+key_quark.keybind.autorun:key.keyboard.caps.lock:NONE
+key_key.refinedstorageaddons.openWirelessCraftingGrid:key.keyboard.g:CONTROL
+key_quark.keybind.change_hotbar:key.keyboard.unknown:NONE
 key_mod.chiselsandbits.chiselmode.single:key.keyboard.unknown:NONE
 key_mod.chiselsandbits.chiselmode.snap2:key.keyboard.unknown:NONE
 key_mod.chiselsandbits.chiselmode.snap4:key.keyboard.unknown:NONE
@@ -170,7 +208,6 @@ key_mod.chiselsandbits.other.offgrid:key.keyboard.unknown:NONE
 key_mod.chiselsandbits.other.undo:key.keyboard.unknown:NONE
 key_mod.chiselsandbits.other.redo:key.keyboard.unknown:NONE
 key_mod.chiselsandbits.other.add_to_clipboard:key.keyboard.unknown:NONE
-key_create.keyinfo.toolmenu:key.keyboard.left.alt:NONE
 key_pneumaticcraft.armor.upgrade.core_components:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.block_tracker:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.block_tracker.module.hackables:key.keyboard.unknown:NONE
@@ -194,7 +231,14 @@ key_pneumaticcraft.armor.upgrade.jump_boost:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.jet_boots:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.jet_boots.module.builder_mode:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.step_assist:key.keyboard.unknown:NONE
-key_keybind.sophisticatedbackpacks.backpack.open:key.keyboard.b:NONE
+key_key.occultism.backpack:key.keyboard.s:SHIFT
+key_keybind.sophisticatedbackpacks.open_backpack:key.keyboard.b:NONE
+key_keybind.sophisticatedbackpacks.inventory_interaction:key.keyboard.c:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_1:key.keyboard.z:ALT
+key_keybind.sophisticatedbackpacks.toggle_upgrade_2:key.keyboard.x:ALT
+key_keybind.sophisticatedbackpacks.toggle_upgrade_3:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_4:key.keyboard.unknown:NONE
+key_keybind.sophisticatedbackpacks.toggle_upgrade_5:key.keyboard.unknown:NONE
 key_key.trashslot.toggle:key.keyboard.unknown:NONE
 key_key.trashslot.delete:key.keyboard.delete:NONE
 key_key.trashslot.deleteAll:key.keyboard.delete:SHIFT
