@@ -11,6 +11,9 @@ events.listen('item.tags', (event) => {
     });
 
     honeyVarieties.forEach((honey) => {
+        if (honey == 'resourcefulbees:honey') {
+            honey = 'minecraft:honey';
+        }
         event.get('diet:sugars').add(honey + '_bottle');
     });
 });
