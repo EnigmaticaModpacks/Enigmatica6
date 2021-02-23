@@ -20,6 +20,18 @@ events.listen('jei.information', (event) => {
                 description: [
                     'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
                 ]
+            },
+            {
+                item: 'powah:uraninite',
+                description: [
+                    'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
+                ]
+            },
+            {
+                item: 'powah:uraninite_block',
+                description: [
+                    'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
+                ]
             }
         ]
     };

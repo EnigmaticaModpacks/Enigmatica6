@@ -201,8 +201,9 @@ var regexHide = [
     /emendatusenigmatica:\w+fluix/,
     /mapperbase:steel/,
     /mapperbase:\w+_block/,
-
-    /rftoolsbase:dimensionalshard/
+    /powah:\w+_starter/,
+    /rftoolsbase:dimensionalshard/,
+    /betterendforge:\w+_anvil/
 ];
 
 const disabledItems = [

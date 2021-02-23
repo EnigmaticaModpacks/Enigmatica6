@@ -1,6 +1,14 @@
-### Enigmatica 6 v0.4.0
+### Enigmatica 6 v0.4.0 - TerraForged
 
-_Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.0.txt)_
+_Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.0.txt)_
+
+It's recommended that you make a new world, to get all the new features.
+_We can't force you to make a new world, but we will not be offering support to 0.4.x worlds generated before 0.4.0._
+_See the bottom of the v0.4.0 changelog for a list of possible issues when not making a new world._
+
+You **must** update to a new profile if using the CurseForge App or GDLauncher. This is to clean up old files that we have removed in the update.
+
+Lastly, we recommend not changing the default world type as we are using Terraforged with datapacks to provide a custom experience our team has been working on for a while with highly customized terrain and underground.
 
 **Improvements/Changes**
 
@@ -12,7 +20,14 @@ _Using Forge-1.16.5-36.0.10_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
--
+-   Powah: At long last fixed a heat sources issue, credit BlueAgent
+
+**Some of the possible issues when updating an old world**
+
+-   Refined Storage Extra Disks have been moved to a new mod, so existing disks will vanish.
+-   Crashes/world corruption, especially if you were using BoP worldgen
+-   Lack of end biomes
+-   Countless errors in the console
 
 ### Enigmatica 6 v0.3.13
 
