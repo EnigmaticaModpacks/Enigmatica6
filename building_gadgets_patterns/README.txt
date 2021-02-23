@@ -23,3 +23,11 @@ Finally, some templates will require some manual effort once pasted. For example
 *	This pack offers many options for power generation, many of which are very accessible. For example, consider Thermal's Dynamos for some simple options that can get you started without much trouble. 
 ** 	Check your Controls for the appropriate keybind. 
 
+Optional:
+  For those who may learn best with a visual example, the mod maker himself spotlighted Building Gadgets. You can check out DireWolf20 covering the basics of using the Template Manager here:
+
+    "Mod Spotlight Building Gadgets v2" -- https://youtu.be/JS1Xx_kwQQ0?t=749
+
+  The link above should jump you right to where he covers the Template Manager. You can apply what you learn in this video to the above instructions on how to use the template files in your world.
+  (NOTE: The UI of the Template Manager has changed a bit since he made this video, but the functionality of copying/pasting/loading remains the same.)
+  
