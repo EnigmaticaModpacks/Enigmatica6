@@ -4,8 +4,6 @@ about: Suggest a change or addition to the modpack
 labels: Suggestion
 ---
 
-**CurseForge Link**
-
 **Description**
 Write a short description of your suggestion here.
 
