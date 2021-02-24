@@ -1,6 +1,6 @@
 ### Enigmatica 6 v0.4.0 - TerraForged
 
-_Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.0.txt)_
+_Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.0.md)_
 
 
 
