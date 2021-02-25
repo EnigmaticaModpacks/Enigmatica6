@@ -824,6 +824,8 @@
 			description: [
 				"Before moving on, that Brine will need to be run through a second Evaporation Tower to form Liquid Lithium. ",
 				"",
+				"Next step is to turn the liquid Lithium into Lithium gas using the Rotary Condensentrator.",
+				"",
 				"This may then be processed in a Chemical Crystallizer to produce a solid form of the element."
 			],
 			dependencies: ["00000000000006C7"],
@@ -835,7 +837,12 @@
 					item: "mekanism:chemical_crystallizer"
 				},
 				{
-					id: "000000000000070B",
+					id: "0A65673DD920A57E",
+					type: "item",
+					item: "mekanism:rotary_condensentrator"
+				},
+				{
+					id: "65ABA5E4FB3C53C2",
 					type: "item",
 					item: "emendatusenigmatica:lithium_dust"
 				}
