@@ -95,7 +95,7 @@
 			description: [
 				"The Divination Rod is used to locate the otherworldy materials that lie dormant in this world.",
 				"",
-				"To use the rod, first you must attune it to a material by right clicking a block. Attuning the rod to oak logs to search for otherwood disguised as oak trees, andesite for otherstone.",
+				"To use the rod, first you must attune it to a material by sneak-right clicking a block. Attuning the rod to oak logs to search for otherwood disguised as oak trees, andesite for otherstone.",
 				"",
 				"After the rod has been attuned, simply hold right click until the animation and sound stops. Part of the white crystal will remain purple if you are near any otherworldly materials. It will also highlight the block it found in the world.",
 				"",
@@ -103,7 +103,7 @@
 				"",
 				"If you are having troubles finding these materials through divination, we have added ways for you to create these materials yourself.",
 				"",
-				"Othestone can be crafted by throwing stone in to spirit fire, and otherwood can be acquired by trading a spirit gem with the Farming for Blockheads market villager. It will be disguised as a regular oak tree, look for the occultism tag.",
+				"Othestone can be crafted by throwing andesite in to spirit fire, and otherwood can be acquired by throwing an oak sapling into the spirit flame and planting the resulting unstable sapling/harvesting the wood.",
 				"",
 				"P.S. Sorry for the novel... -The_Boo"
 			],
@@ -1154,7 +1154,11 @@
 			x: 2.0d,
 			y: 5.5d,
 			shape: "hexagon",
-			description: ["The Djinni Mining Spirit is much stronger than its Foliot counterpart. It takes much less time for this stonger spirit to travel to and from the mining dimension, and it can bring back more ores each trip!"],
+			description: [
+				"The Djinni Mining Spirit is much stronger than its Foliot counterpart. It takes much less time for this stonger spirit to travel to and from the mining dimension, and it can bring back more ores each trip!",
+				"",
+				"The durability of this miner has been boosted in this pack, you will not see this change until the miner loses its first point of durability in the mineshaft."
+			],
 			dependencies: ["0000000000000DCC"],
 			id: "0000000000000DCE",
 			tasks: [{
@@ -1459,7 +1463,7 @@
 				"",
 				"The Wild Hunt Ritual will summon multiple possessed Wither Skeletons as well as their Possessed Skeleton minions. Each Possessed Wither Skeleton is guaranteed to drop at least one Wither Skeleton Skull.",
 				"",
-				"These Wither Skeletons also have a chance of droping some extra loot!!!"
+				"These Wither Skeletons also have a chance of dropping some extra loot!!!"
 			],
 			dependencies: ["0000000000000D9E"],
 			id: "0000000000000DE4",
@@ -1534,7 +1538,7 @@
 			description: [
 				"The Otherworld Sapling Trader will take the Unstable Otherworld Saplings you get from Groves or the Market and give you stable saplings in return.",
 				"",
-				"These Stable Otherworld Saplings can be seen and mined without the effects of Third Eye."
+				"These Stable Otherworld Saplings can be seen and harvested without the effects of Third Eye."
 			],
 			dependencies: ["0000000000000CF7"],
 			id: "0000000000000E00",
@@ -1705,7 +1709,9 @@
 			description: [
 				"The occultist is also able to summon familiars to assist them on their journey.",
 				"",
-				"The Drikwing is an otherworldly bird that imparts special effects on its master when close."
+				"The Drikwing is an otherworldly bird that imparts special effects on its master when close.",
+				"",
+				"Tip: There is a ritual you can use to summon a wild parrot that can make the sacrifice needed for this ritual much easier."
 			],
 			dependencies: ["0000000000000D9E"],
 			id: "0000000000000F3C",
