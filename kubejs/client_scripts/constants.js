@@ -249,6 +249,10 @@ const disabledItems = [
     'mapperbase:steel_leggings',
     'mapperbase:steel_boots',
 
+    'mekanism:sawdust',
+    'mekanism:dust_lapis_lazuli',
+    'mekanism:dust_lithium',
+
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',
     'mythicbotany:wither_aconite',
