@@ -13,6 +13,7 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
     -   Raccoon
     -   Crow
 -   Editing Signs now requires an empty hand
+-   Mekansim: Advanced and Elite Bins can no hold more stacks of items
 
 **Bug Fixes**
 
