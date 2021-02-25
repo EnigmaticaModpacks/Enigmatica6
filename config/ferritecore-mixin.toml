@@ -8,4 +8,10 @@ cacheMultipartPredicates = true
 modelResourceLocations = true
 #Do not create a new MultipartBakedModel instance for each block state using the same multipartmodel. Requires cacheMultipartPredicates to be enabled
 multipartDeduplication = true
+#Deduplicate cached data for blockstates, most importantly collision and render shapes
+blockstateCacheDeduplication = true
+#Deduplicate vertex data of baked quads in the basic model implementations
+bakedQuadDeduplication = true
+#Use a slightly more compact, but also slightly slower representation for block states
+compactFastMap = false
 

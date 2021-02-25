@@ -85,6 +85,10 @@
 	#Changing this value will alter the hydraulic bar production of the Pneumatic Pump. The input, air, will stay the same
 	#Range: > 0
 	pneumatic_pump_efficiency = 40
+	#Fluid registry ID's that the Seismic Sensor will search for. It's recommended to use 'seismicSensorFluidTags' where possible, but this setting can be used if you want to add fluids which don't have any associated fluid tags.
+	seismic_sensor_fluids = []
+	#Fluid tag names that the Seismic Sensor will search for. Known vanilla tags are 'minecraft:water' and 'minecraft:lava'. Other available fluid tags are mod-dependent.
+	seismic_sensor_fluid_tags = ["forge:crude_oil"]
 
 ["Pneumatic Armor"]
 	#Air usage for armor repair, in mL per Item Life Upgrade per point of damage repaired
