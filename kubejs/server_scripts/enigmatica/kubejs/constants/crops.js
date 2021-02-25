@@ -1781,6 +1781,12 @@ const cropRegistry = [
                 render: 'upgrade_aquatic:beachgrass',
                 plant: 'upgrade_aquatic:beachgrass',
                 substrate: 'dirt'
+            },
+            {
+            seed: 'byg:reeds',
+            render: 'byg:reeds',
+            plant: 'byg:reeds',
+            substrate: 'water'
             }
         ]
     },
