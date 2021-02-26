@@ -5,6 +5,7 @@ events.listen('recipes', (event) => {
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
         { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
+        { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
         {
             output: 'minecraft:crafting_table',
             inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
