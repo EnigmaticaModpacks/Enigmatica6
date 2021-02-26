@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.4.0 Modlist
+## Enigmatica 6 - 0.4.1 Modlist
 - abnormals_core-1.16.4-3.0.6
 - additional_lights-1.16.4-2.1.3
 - AdHooks-1.16.4-6.1.3.1-build.0039
@@ -11,9 +11,9 @@
 - AppleSkin-mc1.16.2-forge-1.0.14
 - Aquaculture-1.16.5-2.1.15
 - archers_paradox-1.16.3-1.1.1
-- architectury-1.7.117-forge
+- architectury-1.8.126-forge
 - ars_nouveau-1.16.4-1.11.5
-- Artifacts-1.16.5-2.8.1
+- Artifacts-1.16.5-2.8.2
 - astralsorcery-1.16.4-1.13.9
 - atmospheric-1.16.4-3.0.0
 - AttributeFix-1.16.5-10.0.1
@@ -75,7 +75,7 @@
 - curiouselytra-forge-1.16.5-4.0.2.0
 - CyclopsCore-1.16.5-1.11.3
 - dankstorage-3.14
-- DarkUtilities-1.16.5-8.0.3
+- DarkUtilities-1.16.5-8.0.4
 - decorative_blocks-1.16.4-1.7.2
 - DefaultOptions_1.16.3-12.2.0
 - demagnetize-forge-1.16.2-1.2.2
@@ -103,7 +103,7 @@
 - FastFurnace-1.16.4-4.4.0
 - FastLeafDecay-v25
 - FastWorkbench-1.16.4-4.5.0
-- ferritecore-1.1.1
+- ferritecore-2.0.2-forge
 - findme-1.16.3-2.1.0.0
 - FluxNetworks-1.16.5-6.1.6.11
 - ForgeEndertech-1.16.4-7.0.10.0-build.0037
@@ -112,15 +112,15 @@
 - ftb-backups-2.1.1.6
 - ftb-chunks-1604.2.2.62
 - ftb-essentials-1604.1.0.13
-- ftb-gui-library-1605.2.1.39-forge
-- ftb-quests-1605.2.0-build.30-forge
+- ftb-gui-library-1605.2.1.40-forge
+- ftb-quests-1605.2.0-build.32-forge
 - ftb-ranks-1604.1.1.11
 - ftb-teams-1604.1.0.15-forge
-- ftb-ultimine-1605.2.0-build.21-forge
+- ftb-ultimine-1605.2.0-build.22-forge
 - GameStages-1.16.5-6.0.1
 - geckolib-forge-1.16.5-3.0.14
-- glassential-forge-1.16.4-1.1.5
-- gunswithoutroses-1.16.5-1.0.7
+- glassential-forge-1.16.5-1.1.6
+- gunswithoutroses-1.16.5-1.0.8
 - ImmersiveEngineering-1.16.5-4.2.1-131
 - ImmersivePetroleum-1.16.4-3.1.0-2
 - immersiveposts-1.16.3-3.0.0
@@ -150,11 +150,12 @@
 - kubejs-immersive-engineering-1604.1.0.12
 - kubejs-mekanism-1604.1.1.6
 - kubejs-thermal-1605.1.1.6
-- LibX-1.16.3-1.0.15
+- LibX-1.16.3-1.0.17
 - Lollipop-1.16.4-3.2.7
 - lootr-1.16.4-0.0.4.15
 - LostTrinkets-1.16.4-0.1.22
 - magicfeather-1.16.2-3.1.0
+- Mantle-1.16.5-1.6.79
 - mapperbase-1.16.4-2.3.0.0
 - masonry-1.16.3-0.3.6
 - mcjtylib-1.16-5.0.16
@@ -163,7 +164,7 @@
 - mcw-roofs-2.0.1-mc1.16.5-4
 - mcw-trapdors-1.0.1-mc1.16.5
 - mcw-windows-1.0.3-mc1.16.5
-- meetyourfight-1.16.5-1.1.1
+- meetyourfight-1.16.5-1.1.2
 - Mekanism-1.16.5-10.0.21.448
 - MekanismGenerators-1.16.5-10.0.21.448
 - MekanismTools-1.16.5-10.0.21.448
@@ -178,7 +179,7 @@
 - moreoverlays-1.18.13-mc1.16.5
 - morevanillalib-1.16.4-1.3.9
 - Morph-o-Tool-1.4-27
-- Morpheus-1.16.4-4.2.68
+- Morpheus-1.16.5-4.2.70
 - MouseTweaks-2.14-mc1.16.2
 - MythicBotany-1.16.3-1.2.5
 - NaturesAura-34.0
@@ -198,12 +199,12 @@
 - pitg-1.16.3-1.4.1
 - Placebo-1.16.4-4.4.1
 - plonk-1.16.5-9.0.7
-- pneumaticcraft-repressurized-1.16.5-2.10.0-134
+- pneumaticcraft-repressurized-1.16.5-2.10.1-140
 - polymorph-forge-1.16.5-0.24
 - portable_stonecutter-1.16.4-1.3.3
 - Powah-1.16.4-2.3.13
 - PrettyPipes-1.9.2
-- Quark-r2.4-306
+- Quark-r2.4-307
 - quickstack-4.0.1
 - rad-1.16-4.1.0
 - randompatches-2.4.4-forge
@@ -227,7 +228,6 @@
 - SaveMyStronghold-1.16.4-1.0
 - SaveYourPets-1.16.2-1.0.0.5
 - scaffoldingpower-1.16.5-1.3.0
-- ScreenshotToClipboard-1.15.1-1.0.5
 - seals-1.16.3-2.0.0
 - serverconfigupdater-1.3
 - ServerTabInfo-1.16.4-1.3.3
@@ -237,16 +237,16 @@
 - simpletomb-1.16.5-1.0.4
 - simplylight-1.16.4-1.1.2
 - solcarrot-1.16.3-1.9.9
-- sophisticatedbackpacks-1.16.4-2.2.0.171
+- sophisticatedbackpacks-1.16.4-2.2.1.183
 - spark-forge
 - SpawnerFix-1.16.2-1.0.0.2
 - Storage4ComputerCraft-1.16.4-1.2.2
 - StorageDrawers-1.16.3-8.2.2
 - structure_gel-1.16.4-1.7.5
-- supplementaries-1.16.5-0.9.27
+- supplementaries-1.16.5-0.10.0a
 - swingthroughgrass-1.16.4-1.5.3
 - tamedsummon-1.0.0
-- TerraForged-1.16.4-0.2.5
+- TerraForged-1.16.4-0.2.8
 - tetra-1.16.4-3.6.1
 - tetranomicon-1.0
 - theoneprobe-1.16-3.0.7
@@ -268,7 +268,7 @@
 - Transport-1.16.4-3.4.2
 - trashcans-1.0.8-mc1.16.4
 - TrashSlot_1.16.3-12.2.1
-- TravelAnchors-2.2
+- TravelAnchors-2.3
 - Undergarden-Tetra Patch-1.1.1
 - upgrade_aquatic-1.16.5-3.0.1
 - useful_railroads-1.16.4-1.4.6.35
