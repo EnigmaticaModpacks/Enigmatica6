@@ -3,7 +3,8 @@ events.listen('recipes', (event) => {
         recipes: [
             {
                 outputs: [Item.of('emendatusenigmatica:obsidian_dust'), Item.of('minecraft:obsidian').withChance(0.75)],
-                input: 'minecraft:obsidian'
+                input: 'minecraft:obsidian',
+                id: 'create:crushing/obsidian'
             },
             {
                 outputs: [
@@ -23,6 +24,9 @@ events.listen('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.create.crushing(recipe.outputs, recipe.input);
+        const re = event.recipes.create.crushing(recipe.outputs, recipe.input);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

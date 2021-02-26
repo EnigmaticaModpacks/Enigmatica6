@@ -1,0 +1,17 @@
+
+[death_penalty]
+	#The minimum percentage that diet groups can be reduced to upon death.
+	#Range: 0.0 ~ 1.0
+	deathPenaltyMin = 0.05
+	#The reduction in percentage applied to all diet groups upon death.
+	#Range: 0.0 ~ 1.0
+	deathPenaltyLoss = 0.25
+
+[calculation]
+	#The percent reduction in total gain for each diet group consumed at once.
+	#Range: 0.0 ~ 1.0
+	gainPenaltyPerGroup = 0.15000000596046448
+	#The percent reduction in total decay for each diet group decayed at once.
+	#Range: 0.0 ~ 1.0
+	decayPenaltyPerGroup = 0.15000000596046448
+

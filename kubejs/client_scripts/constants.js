@@ -201,8 +201,9 @@ var regexHide = [
     /emendatusenigmatica:\w+fluix/,
     /mapperbase:steel/,
     /mapperbase:\w+_block/,
-
-    /rftoolsbase:dimensionalshard/
+    /powah:\w+_starter/,
+    /rftoolsbase:dimensionalshard/,
+    /betterendforge:\w+_anvil/
 ];
 
 const disabledItems = [
@@ -247,6 +248,10 @@ const disabledItems = [
     'mapperbase:steel_chestplate',
     'mapperbase:steel_leggings',
     'mapperbase:steel_boots',
+
+    'mekanism:sawdust',
+    'mekanism:dust_lapis_lazuli',
+    'mekanism:dust_lithium',
 
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',

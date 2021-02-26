@@ -239,5 +239,14 @@
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
 		buffWithPotionEffects = true
 		#Map of entities that can spawn with backpack and related loot tables (if adding a loot is enabled) in format of "EntityRegistryName|LootTableName
-		entityLootTableList = ["minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:zombified_piglin|minecraft:chests/bastion_other", "minecraft:enderman|minecraft:chests/end_city_treasure", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:witch|minecraft:chests/buried_treasure", "minecraft:piglin_brute|minecraft:chests/bastion_treasure"]
+		entityLootTableList = ["minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:witch|minecraft:chests/buried_treasure", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:zombified_piglin|minecraft:chests/bastion_other", "minecraft:piglin_brute|minecraft:chests/bastion_treasure", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:enderman|minecraft:chests/end_city_treasure"]
+
+	#Netherite Backpack Settings
+	[common.netheriteBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 120
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 7
 

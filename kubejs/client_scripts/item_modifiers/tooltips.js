@@ -7,6 +7,14 @@ onEvent('item.tooltip', (event) => {
                     'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
                 ).red()
             ]
+        },
+        {
+            item: /sophisticatedbackpacks:\w+backpack/,
+            text: [Text.of('Clear before upgrading!').red()]
+        },
+        {
+            item: 'sophisticatedbackpacks:backpack',
+            text: [Text.of('Clear before upgrading!').red()]
         }
     ];
 

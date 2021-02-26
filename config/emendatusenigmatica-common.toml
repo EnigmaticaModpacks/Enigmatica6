@@ -26,10 +26,10 @@
 	["Coal Config".Overworld]
 		#Baseline Y-Level [Default: 60]
 		#Range: 0 ~ 256
-		overworld_base = 60
+		overworld_base = 80
 		#Average Ores per Chunk [Default: 15]
 		#Range: 0 ~ 64
-		overworld_count = 15
+		overworld_count = 20
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -37,7 +37,7 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 60]
 		#Range: 0 ~ 256
-		overworld_spread = 60
+		overworld_spread = 100
 		#Configure the ore Vein Size [Default: 17]
 		#Range: 0 ~ 64
 		overworld_size = 17
@@ -91,10 +91,10 @@
 	["Iron Config".Overworld]
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
-		overworld_base = 32
+		overworld_base = 90
 		#Average Ores per Chunk [Default: 17]
 		#Range: 0 ~ 64
-		overworld_count = 17
+		overworld_count = 28
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -102,7 +102,7 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 32]
 		#Range: 0 ~ 256
-		overworld_spread = 32
+		overworld_spread = 70
 		#Configure the ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		overworld_size = 11
@@ -481,10 +481,10 @@
 	["Copper Config".Overworld]
 		#Baseline Y-Level [Default: 52]
 		#Range: 0 ~ 256
-		overworld_base = 52
+		overworld_base = 120
 		#Average Ores per Chunk [Default: 17]
 		#Range: 0 ~ 64
-		overworld_count = 17
+		overworld_count = 25
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -492,10 +492,10 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
 		#Range: 0 ~ 256
-		overworld_spread = 8
+		overworld_spread = 80
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
-		overworld_size = 7
+		overworld_size = 8
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
 		generate_in_the_overworld = true
 
@@ -936,10 +936,10 @@
 	["Tin Config".Overworld]
 		#Baseline Y-Level [Default: 47]
 		#Range: 0 ~ 256
-		overworld_base = 47
+		overworld_base = 80
 		#Average Ores per Chunk [Default: 15]
 		#Range: 0 ~ 64
-		overworld_count = 15
+		overworld_count = 23
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -947,10 +947,10 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 7]
 		#Range: 0 ~ 256
-		overworld_spread = 7
+		overworld_spread = 50
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
-		overworld_size = 7
+		overworld_size = 8
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
 		generate_in_the_overworld = true
 
@@ -1001,7 +1001,7 @@
 	["Zinc Config".Overworld]
 		#Baseline Y-Level [Default: 42]
 		#Range: 0 ~ 256
-		overworld_base = 42
+		overworld_base = 64
 		#Average Ores per Chunk [Default: 9]
 		#Range: 0 ~ 64
 		overworld_count = 9
@@ -1012,7 +1012,7 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
 		#Range: 0 ~ 256
-		overworld_spread = 8
+		overworld_spread = 20
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
