@@ -738,6 +738,14 @@
 				type: "item",
 				title: "Crude Oil",
 				item: "pneumaticcraft:oil_bucket"
+			}],
+			rewards: [{
+				id: "124C10AC728F1A8C",
+				type: "command",
+				title: "Rare Thermal Series Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
+				player_command: false
 			}]
 		},
 		{
