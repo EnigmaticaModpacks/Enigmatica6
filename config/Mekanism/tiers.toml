@@ -48,10 +48,10 @@
 		basicStorage = 4096
 		#The number of items Elite bins can store.
 		#Range: > 1
-		eliteStorage = 32768
+		eliteStorage = 65536
 		#The number of items Advanced bins can store.
 		#Range: > 1
-		advancedStorage = 8192
+		advancedStorage = 16384
 
 	#Induction
 	[tier.induction]

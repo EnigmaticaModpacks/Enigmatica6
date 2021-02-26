@@ -783,13 +783,7 @@
 				Count: 1b,
 				tag: {
 					inventorySlots: 27,
-					upgradeSlots: 1,
-					contentsUuid: [I;
-						1681669622,
-						-476822315,
-						-1185337849,
-						-508260231
-					]
+					upgradeSlots: 1
 				}
 			},
 			x: 1.5d,
@@ -811,12 +805,15 @@
 			rewards: [{
 				id: "0000000000000997",
 				type: "item",
-				item: "sophisticatedbackpacks:backpack"
+				icon: "minecraft:leather",
+				item: "minecraft:leather",
+				random_bonus: 3
 			}]
 		},
 		{
 			x: 2.0d,
 			y: -6.5d,
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."],
 			dependencies: ["0000000000000986"],
 			id: "0000000000000988",
 			tasks: [{
@@ -836,6 +833,7 @@
 		{
 			x: 3.0d,
 			y: -6.0d,
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."],
 			dependencies: ["0000000000000988"],
 			id: "000000000000098A",
 			tasks: [{
@@ -855,6 +853,7 @@
 		{
 			x: 4.0d,
 			y: -6.0d,
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."],
 			dependencies: ["000000000000098A"],
 			id: "000000000000098C",
 			tasks: [{

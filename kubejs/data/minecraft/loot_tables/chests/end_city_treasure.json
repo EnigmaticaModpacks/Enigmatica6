@@ -305,16 +305,6 @@
                             "treasure": true
                         }
                     ]
-                },
-                {
-                    "type": "loot_table",
-                    "weight": 40,
-                    "name": "artifacts:artifact"
-                },
-                {
-                    "type": "item",
-                    "weight": 5,
-                    "name": "artifacts:crystal_heart"
                 }
             ]
         },
@@ -337,6 +327,27 @@
                     "type": "item",
                     "weight": 1,
                     "name": "minecraft:elytra"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "conditions": [
+                {
+                    "condition": "random_chance",
+                    "chance": 0.2
+                }
+            ],
+            "entries": [
+                {
+                    "type": "loot_table",
+                    "weight": 8,
+                    "name": "artifacts:artifact"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "artifacts:crystal_heart"
                 }
             ]
         }
