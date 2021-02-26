@@ -417,6 +417,9 @@ events.listen('recipes', (event) => {
             E: 'rftoolsbase:infused_diamond',
             F: 'minecraft:ender_eye'
         }),
+        shapedRecipe(Item.of('quark:turf', 1), ['A', 'A'], {
+            A: 'quark:turf_slab'
+        }),
 
         //ID Overrides
         shapedRecipe(
