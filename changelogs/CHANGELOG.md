@@ -4,7 +4,7 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **If you're updating from 0.3.x please read the last changelog**
 
-**New Mods!**
+
 
 **Improvements/Changes**
 
@@ -14,11 +14,23 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
     -   Crow
 -   Editing Signs now requires an empty hand
 -   Mekansim: Advanced and Elite Bins can no hold more stacks of items
+-   Mekanism Ore Tripling Quest  [\#1403](https://github.com/NillerMedDild/Enigmatica6/issues/1403)
+-   Missing recipe for Pumpkin Slice [\#1391](https://github.com/NillerMedDild/Enigmatica6/issues/1391)
 
 **Bug Fixes**
 
 -   Zombies can no longer drop Rusty Iron Ingots
 -   Signs on chests are now "clicked through" unless you have an empty hand
+-   Botania Quest Text Error [\#1429](https://github.com/NillerMedDild/Enigmatica6/issues/1429)
+-   Thermal Quest Chapter missing a few rewards [\#1421](https://github.com/NillerMedDild/Enigmatica6/issues/1421)
+-   Integrated Dynamics guide book in the Akashic Tome broken [\#1416](https://github.com/NillerMedDild/Enigmatica6/issues/1416)
+-   **Periodic disconnect with ConcurrentModificationException [\#1409](https://github.com/NillerMedDild/Enigmatica6/issues/1409)**
+-   **Sophisticated Backpacks Sometimes Voids Inventory On Upgrade [\#1406](https://github.com/NillerMedDild/Enigmatica6/issues/1406)**
+-   Quark config reload msg spam [\#1396](https://github.com/NillerMedDild/Enigmatica6/issues/1396)
+-   Create Stone Variants & Tetra [\#1395](https://github.com/NillerMedDild/Enigmatica6/issues/1395)
+-   Re-add Mantle [\#1392](https://github.com/NillerMedDild/Enigmatica6/issues/1392)
+-   Lowered artifact rates in end city loot \(and accidentally fixed \#1391\) [\#1428](https://github.com/NillerMedDild/Enigmatica6/pull/1428) ([theboo](https://github.com/theboo))
+-   Update akashictome-common.toml [\#1402](https://github.com/NillerMedDild/Enigmatica6/pull/1402) ([Jerzyn2601](https://github.com/Jerzyn2601))
 
 ### Enigmatica 6 v0.4.0 - TerraForged
 
