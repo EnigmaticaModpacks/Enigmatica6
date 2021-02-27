@@ -32,14 +32,6 @@ events.listen('jei.information', (event) => {
                 description: [
                     'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
                 ]
-            },
-            {
-                item: /sophisticatedbackpacks:\w+backpack/,
-                description: ['Clear before upgrading!']
-            },
-            {
-                item: 'sophisticatedbackpacks:backpack',
-                description: ['Clear before upgrading!']
             }
         ]
     };
