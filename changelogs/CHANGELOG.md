@@ -7,6 +7,12 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
 **Improvements/Changes**
 
 -   Quark: Turf Slab to Turf recipe
+-   Neat: Centipede body no longer displays a Neat-bar
+-   Quark: Monster Box loot changes a bit. Ores are now chunks, infested blocks are no longer in the pool.
+-   Ores:
+    -   Decreased Gold a bit: Larger veins, fewer of them
+    -   Decreased Fluorite a bit: Larger veins, fewer of them
+    -   Decreased Potassium Nitrate
 
 **Bug Fixes**
 
