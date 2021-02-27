@@ -32,7 +32,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 2
+                            "count": 1
                         }
                     ]
                 },
@@ -88,6 +88,20 @@
                         {
                             "function": "set_count",
                             "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "occultism:storage_stabilizer_tier2",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
                         }
                     ]
                 }
