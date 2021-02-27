@@ -481,10 +481,10 @@
 	["Copper Config".Overworld]
 		#Baseline Y-Level [Default: 52]
 		#Range: 0 ~ 256
-		overworld_base = 120
+		overworld_base = 90
 		#Average Ores per Chunk [Default: 17]
 		#Range: 0 ~ 64
-		overworld_count = 25
+		overworld_count = 28
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
@@ -492,7 +492,7 @@
 		overworld_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 8]
 		#Range: 0 ~ 256
-		overworld_spread = 80
+		overworld_spread = 90
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		overworld_size = 8
