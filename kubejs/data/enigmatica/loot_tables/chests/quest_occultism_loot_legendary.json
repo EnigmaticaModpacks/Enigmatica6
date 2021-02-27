@@ -1,11 +1,10 @@
 {
-    "type": "minecraft:chest",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:iesnium_block",
                     "functions": [
@@ -16,7 +15,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:miner_djinni_ores",
                     "functions": [
@@ -27,9 +26,9 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
-                    "name": "occultism:storage_stabilizer_tier2",
+                    "name": "occultism:storage_stabilizer_tier4",
                     "functions": [
                         {
                             "function": "set_count",
@@ -38,13 +37,13 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "occultism:storage_stabilizer_tier3",
+                    "type": "item",
+                    "weight": 2,
+                    "name": "occultism:stable_wormhole",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 1
+                            "count": 4
                         }
                     ]
                 }
