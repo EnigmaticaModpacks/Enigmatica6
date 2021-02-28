@@ -1,0 +1,21 @@
+
+[general]
+	#The material blacklist of this module.
+	materialBlacklist = ["*"]
+
+[recipes]
+	#The materials that should not have crusher recipes added.
+	toDustMaterialBlacklist = []
+	#The materials that should not have arc furnace recipes added.
+	toIngotMaterialBlacklist = []
+	#The materials that should not have press to gear recipes added.
+	toGearMaterialBlacklist = []
+	#The materials that should not have press to plate recipes added.
+	toPlateMaterialBlacklist = []
+	#The materials that should not have press to rod recipes added.
+	toRodMaterialBlacklist = []
+	#The materials that should not have press to wire recipes added.
+	toWireMaterialBlacklist = []
+	#The materials that should not have hammering recipes added.
+	hammerToPlateMaterialBlacklist = []
+
