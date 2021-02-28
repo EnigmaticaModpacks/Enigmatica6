@@ -14,29 +14,29 @@
 #Settings for ArmorStatus HUD
 [armorhud]
 	#Is Armor Damage HUD enabled
-	ArmorDamage = true
+	ArmorDamage = false
 	#Hide if durability is above this (in percentage):
 	#Range: 0 ~ 100
 	armAbove = 100
 	#Show/Hide armor
-	showArmor = true
+	showArmor = false
 	#Show/Hide armor
-	showMain = true
+	showMain = false
 	#Show/Hide armor
-	showOff = true
+	showOff = false
 	#Show/Hide armor
-	showArrows = true
+	showArrows = false
 	#Show/Hide armor
-	showInv = true
+	showInv = false
 	#Armor HUD durability view (PERCENTAGE, DAMAGE, DAMAGE LEFT)
 	#Allowed Values: PERCENTAGE, DAMAGE, DAMAGE_LEFT, OFF
 	armView = "PERCENTAGE"
 	#Show item durability bar
 	armBars = false
 	#Move all items at once or each one
-	moveAll = true
+	moveAll = false
 	#Show/Hide empty slot icon
-	showEmpty = true
+	showEmpty = false
 
 #Settings for Potions HUD
 [potionshud]
