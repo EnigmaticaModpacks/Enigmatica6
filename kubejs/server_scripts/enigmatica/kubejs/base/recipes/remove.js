@@ -95,6 +95,7 @@ events.listen('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'pedestals:pedestal_cobblegen/blackstone',
+        'pitg:green_dye',
 
         'quark:building/crafting/tallow_from_block',
 
