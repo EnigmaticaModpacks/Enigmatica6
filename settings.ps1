@@ -31,6 +31,7 @@ $CONFIGS_TO_REMOVE = @(
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
 	"ftbchunks-client.toml",
+	"inventory_hud-client.toml",
 	"itemzoom-client.toml",
 	"jei-client.toml",
 	"mcjtylib-client.toml",
