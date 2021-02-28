@@ -527,7 +527,7 @@ function immersiveengineering_ore_processing_with_secondary_outputs(event, mater
         return;
     }
 
-    var primaryOutput = dust,
+    var primaryOutput = Item.of(dust, 2),
         secondaryMaterial,
         secondaryChance = 0.1,
         input = '#forge:ores/' + material;

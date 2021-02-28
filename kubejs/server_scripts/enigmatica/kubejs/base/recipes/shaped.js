@@ -459,6 +459,16 @@ events.listen('recipes', (event) => {
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
         });
+        var chest = wood.modId + ':' + wood.logType + '_chest'
+        if(!Item.exists(chest)) {
+            event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
+                A: wood.logBlock,
+            });
+        } else {
+            event.shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
+                A: wood.logBlock,
+            });
+        }
     });
 
     powahTiers.forEach(function (tier) {
