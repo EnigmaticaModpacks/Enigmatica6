@@ -198,6 +198,7 @@ woodVariantsToConstruct.forEach((variant) => {
 
     var woodVariant = {
         modId: modId,
+        logType: logType,
         logBlock: logBlock,
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
