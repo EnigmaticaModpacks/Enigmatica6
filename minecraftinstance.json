@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-03-01T19:19:25.8275881Z",
+  "lastPreviousMatchUpdate": "2021-03-01T20:28:08.2401778Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -13719,11 +13719,91 @@
     {
       "addonID": 287342,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
-      "installedFile": null,
-      "dateInstalled": "2021-01-24T23:41:09.6251723Z",
-      "dateUpdated": "2021-02-15T21:03:52.1624553Z",
-      "dateLastUpdateAttempted": "2021-02-15T21:03:52.1624553Z",
-      "status": 5,
+      "installedFile": {
+        "id": 3223141,
+        "displayName": "titanium-1.16.5-3.2.8.jar",
+        "fileName": "titanium-1.16.5-3.2.8.jar",
+        "fileDate": "2021-03-01T19:34:06.873Z",
+        "fileLength": 631621,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3223/141/titanium-1.16.5-3.2.8.jar",
+        "isAlternate": false,
+        "alternateFileId": 3223142,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3173409103,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 340652012,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "LICENSE.txt",
+            "fingerprint": 1136524626,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "LICENSE.html",
+            "fingerprint": 3618638319,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1368271518,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3273911401,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "mcmod.info",
+            "fingerprint": 973258688,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 988698250,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 1702718784,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "titanium-1.16.5-3.2.8.jar"
+      },
+      "dateInstalled": "2021-03-01T20:28:03.7326881Z",
+      "dateUpdated": "2021-03-01T20:28:03.7366111Z",
+      "dateLastUpdateAttempted": "2021-03-01T20:28:03.7366111Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13732,7 +13812,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 428277,
