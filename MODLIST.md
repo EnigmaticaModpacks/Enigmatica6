@@ -1,5 +1,6 @@
-## Enigmatica 6 - 0.4.1 Modlist
-- abnormals_core-1.16.4-3.0.6
+## Enigmatica 6 - 0.4.2 Modlist
+- abnormals_core-1.16.5-3.1.0
+- abnormals_delight-1.16.5-1.0.1
 - additional_lights-1.16.4-2.1.3
 - AdHooks-1.16.4-6.1.3.1-build.0039
 - AI-Improvements-1.16.2-0.3.0
@@ -11,7 +12,7 @@
 - AppleSkin-mc1.16.2-forge-1.0.14
 - Aquaculture-1.16.5-2.1.15
 - archers_paradox-1.16.3-1.1.1
-- architectury-1.8.126-forge
+- architectury-1.8.130-forge
 - ars_nouveau-1.16.4-1.11.5
 - Artifacts-1.16.5-2.8.2
 - astralsorcery-1.16.4-1.13.9
@@ -23,10 +24,9 @@
 - bambooeverything-1.16.3-forge-1.0.0
 - BedBenefits-1.16.5-5.0.3
 - bedspreads-forge-1.16.4-5.1.0.1
-- BetterAdvancements-1.16.4-0.1.0.104
+- BetterAdvancements-1.16.5-0.1.0.105
 - BetterBurning-1.16.5-6.0.2
-- BetterCaves-Forge-1.16.4-1.1.1
-- betterendforge-1.16.4-1.5.0
+- betterendforge-1.16.4-1.5.1
 - BetterMineshafts-Forge-1.16.4-2.0.1
 - blockcarpentry-1.16-0.3.5a
 - BloodMagic-1.16.4-3.1.0-15
@@ -47,7 +47,7 @@
 - cc-tweaked-1.16.4-1.95.2
 - cherishedworlds-forge-1.16.4-5.1.0.0
 - chiselsandbits-0.2.10-RELEASE
-- citadel-1.6.1
+- citadel-1.6.2
 - clockout-1.16.4-2.0.0.1
 - cloth-config-4.11.14-forge
 - Clumps-6.0.0.17
@@ -67,6 +67,7 @@
 - craftingstation-4.1.1
 - CraftingTweaks_1.16.3-12.2.0
 - create-mc1.16.3_v0.3e
+- createplus-1.16.4_v0.3.1
 - CreativeCore_v2.0.10_mc1.16.4
 - CTM-MC1.16.1-1.1.2.6
 - curioofundying-forge-1.16.4-5.1.0.0
@@ -79,8 +80,8 @@
 - decorative_blocks-1.16.4-1.7.2
 - DefaultOptions_1.16.3-12.2.0
 - demagnetize-forge-1.16.2-1.2.2
-- diet-forge-1.16.5-0.7
-- Ding-1.16.3-1.2.0
+- diet-forge-1.16.5-0.11
+- Ding-1.16.5-1.3.0
 - DrawersTooltip-1.16.2-2.1.0
 - DungeonCrawl-1.16.3-2.2.4
 - dungeons_plus-1.16.4-1.1.3
@@ -88,22 +89,22 @@
 - eidolon-0.2.7
 - elevatorid-1.16.5-1.7.12
 - embellishcraft-1.16.4-3.3.0.0
-- EmendatusEnigmatica-1.16.5-1.2.1
+- EmendatusEnigmatica-1.16.5-1.2.2
 - emojiful-1.16.4-2.1.4
 - EnchantmentDescriptions-1.16.5-7.0.3
 - EnderMail-1.16.5-1.2.0
 - EnderStorage-1.16.4-2.7.1.166-universal
-- engineersdecor-1.16.4-1.1.8-b2
+- engineersdecor-1.16.4-1.1.8
 - enigmatica-1.16.3-0.1.1
 - ensorcellation-1.16.3-1.1.2
 - ExtraStorage-1.16.4-1.3.1
-- extremeSoundMuffler-3.7_Forge-1.16.5
+- extremeSoundMuffler-3.8_Forge-1.16.4
 - FarmersDelight-1.16.3-0.3.2
-- FarmingForBlockheads_1.16.3-7.2.1
+- FarmingForBlockheads_1.16.3-7.3.0
 - FastFurnace-1.16.4-4.4.0
 - FastLeafDecay-v25
 - FastWorkbench-1.16.4-4.5.0
-- ferritecore-2.0.2-forge
+- ferritecore-2.0.3-forge
 - findme-1.16.3-2.1.0.0
 - FluxNetworks-1.16.5-6.1.6.11
 - ForgeEndertech-1.16.4-7.0.10.0-build.0037
@@ -124,27 +125,28 @@
 - ImmersiveEngineering-1.16.5-4.2.1-131
 - ImmersivePetroleum-1.16.4-3.1.0-2
 - immersiveposts-1.16.3-3.0.0
-- industrial-foregoing-1.16.5-3.2.10-09eb824
+- industrial-foregoing-1.16.5-3.2.10.1-decb7ae
 - IntegratedCrafting-1.16.4-1.0.11
 - IntegratedDynamics-1.16.5-1.5.0
 - integratednbt-1.16.4-1.4.1
 - IntegratedTerminals-1.16.5-1.1.2
 - IntegratedTunnels-1.16.4-1.6.16
 - Interactio-1.16.4-3.1.1
-- InventoryEssentials_1.16.3-2.3.0
+- InventoryEssentials_1.16.3-2.3.1
+- InventoryHud_[1.16.2-1.16.5].forge-3.2.2
 - invtweaks-1.16.4-1.0.1
 - ironchest-1.16.4-11.2.10
 - item-filters-1605.2.4-build.29-forge
 - itemzoom-1.16.4-2.3.0
-- JAOPCA-1.16.4-3.4.0.4
+- JAOPCA-1.16.5-3.4.0.5
 - jei-1.16.4-7.6.1.71
 - JEPB-1.0.0
 - justenoughbeacons-3.1-1.16.3
 - JustEnoughProfessions-1.16.5-1.2.1
-- JustEnoughResources-1.16.4-0.12.0.104
-- KleeSlabs_1.16.3-9.2.0
-- kotlinforforge-1.9.0-obf
-- kubejs-1605.3.6-build.170-forge
+- JustEnoughResources-1.16.4-0.12.0.107
+- KleeSlabs_1.16.5-9.2.1
+- kotlinforforge-1.10.0-obf
+- kubejs-1605.3.6-build.171-forge
 - kubejs-blood-magic-1604.1.0.4
 - kubejs-create-1604.1.0.4
 - kubejs-immersive-engineering-1604.1.0.12
@@ -187,7 +189,7 @@
 - Neat 1.7-27
 - NetherPortalFix_1.16.3-7.2.1
 - observerlib-1.16.4-1.5.1
-- occultism-1.16.5-1.0.12
+- occultism-1.16.5-1.0.14
 - OldJavaWarning-1.16.5-7.0.1
 - overloadedarmorbar-5.1.0
 - PackMenu-1.16.4-2.3.1
@@ -201,10 +203,10 @@
 - plonk-1.16.5-9.0.7
 - pneumaticcraft-repressurized-1.16.5-2.10.1-140
 - polymorph-forge-1.16.5-0.24
-- portable_stonecutter-1.16.4-1.3.3
+- portable_stonecutter-1.16.4-1.3.4
 - Powah-1.16.4-2.3.13
 - PrettyPipes-1.9.2
-- Quark-r2.4-307
+- Quark-r2.4-308
 - quickstack-4.0.1
 - rad-1.16-4.1.0
 - randompatches-2.4.4-forge
@@ -234,7 +236,7 @@
 - Shrink-1.16.4-1.0.7
 - SimpleDiscordRichPresence-1.16.4-1.3.5
 - simplefarming-1.16.4-1.3.5
-- simpletomb-1.16.5-1.0.4
+- simpletomb-1.16.5-1.0.5
 - simplylight-1.16.4-1.1.2
 - solcarrot-1.16.3-1.9.9
 - sophisticatedbackpacks-1.16.4-2.2.1.183
@@ -258,7 +260,7 @@
 - time-in-a-bottle-1.0.1
 - Tips-1.16.5-4.0.2
 - TipTheScales-1.16.5-3.0.0.11
-- titanium-1.16.5-3.2.7
+- titanium-1.16.5-3.2.8
 - Toast-Control-1.16.4-4.3.1
 - tomeofblood-1.16.4-1.0.5
 - ToolStats-1.16.5-6.0.1
@@ -276,7 +278,7 @@
 - valhelsia_structures-16.0.5
 - vanillaexcavators-1.16.4-2.2.0
 - vanillahammers-1.16.4-2.2.0
-- Waystones_1.16.3-7.3.1
+- Waystones_1.16.5-7.4.0
 - Wither-Skeleton-Tweaks-1.16.4-5.3.0
 - World Stripper-1.16.4-2.0.1
 - xnet-1.16-3.0.11
