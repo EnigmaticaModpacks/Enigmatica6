@@ -37,6 +37,7 @@ events.listen('recipes', (event) => {
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
         immersiveengineering_hammer_plates(event, material, ingot, gem, plate);
+        immersiveengineering_hammer_crushing(event, material, ore, dust);
 
         //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
         //integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
@@ -445,12 +446,24 @@ function emendatus_hammer_crushing(event, material, ore, dust) {
         return;
     }
 
-    event.remove({ id: 'immersiveengineering:crafting/hammercrushing_' + material });
     event.replaceInput(
         { id: 'emendatusenigmatica:dust_from_chunk/' + material },
         'emendatusenigmatica:' + material + '_chunk',
         '#forge:ores/' + material
     );
+}
+
+function immersiveengineering_hammer_crushing(event, material, ore, dust) {
+    if (ore == air || dust == air) {
+        return;
+    }
+
+    let output = dust,
+        input = '#forge:ores/' + material,
+        hammer = 'immersiveengineering:hammer';
+
+    event.remove({ id: 'immersiveengineering:crafting/hammercrushing' + material });
+    event.shapeless(output, [input, hammer]).id('kubejs:immersiveengineering_hammer_crushing/' + material);
 }
 
 function immersiveengineering_gem_crushing(event, material, dust, gem) {
@@ -597,10 +610,7 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
         return;
     }
 
-    //var hammer = 'immersiveengineering:hammer';
-    //event.shapeless(plate, [hammer, ingot]);
     event.remove({ id: 'immersiveengineering:crafting/plate_' + material + '_hammering' });
-
     blacklistedMaterials = [
         'iron',
         'gold',
@@ -646,8 +656,6 @@ function immersiveengineering_hammer_plates(event, material, ingot, gem, plate) 
     }
 
     const hammer = 'immersiveengineering:hammer';
-    event.remove({ id: 'immersiveengineering:crafting/plate_' + material + '_hammering' });
-
     for (let i = 0; i < blacklistedMaterials.length; i++) {
         if (blacklistedMaterials[i] == material) {
             return;
