@@ -1,22 +1,10 @@
 {
-    "type": "minecraft:chest",
     "pools": [
         {
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "occultism:otherstone",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 8
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:spirit_attuned_gem",
                     "functions": [
@@ -27,7 +15,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:otherworld_sapling",
                     "functions": [
@@ -38,40 +26,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "occultism:chalk_white",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "occultism:chalk_purple",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 2,
-                    "name": "occultism:chalk_gold",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 1
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:soul_gem",
                     "functions": [
@@ -82,7 +37,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:book_of_binding_foliot",
                     "functions": [
@@ -93,7 +48,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 2,
                     "name": "occultism:book_of_binding_djinni",
                     "functions": [
@@ -104,7 +59,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 1,
                     "name": "occultism:iesnium_block",
                     "functions": [
@@ -115,7 +70,7 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 1,
                     "name": "occultism:iesnium_ore",
                     "functions": [
@@ -126,13 +81,27 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 1,
                     "name": "occultism:stable_wormhole",
                     "functions": [
                         {
                             "function": "set_count",
                             "count": 1
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "occultism:storage_stabilizer_tier2",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
                         }
                     ]
                 }

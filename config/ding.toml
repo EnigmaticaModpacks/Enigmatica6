@@ -6,8 +6,6 @@
 	pitchResourcesReload = 1.0
 	#Play sound when resources complete reloading. Requires game to be restarted.
 	playOnResourcesReload = true
-	#If Ding can't find the third party sound you added with other mods (EG: Additional Resources), try turning this on to skip that check.
-	skipSoundEventCheck = false
 	#Resource Location based name of the sound file to play when Minecraft finishes loading.
 	#EG: "ui.button.click" or "entity.experience_orb.pickup"
 	#
@@ -34,4 +32,10 @@
 	#
 	#Look at the "name" config for more details.
 	nameWorld = "entity.experience_orb.pickup"
+	#Sound category for the sound played when Minecraft finishes loading. EG: "ambient" or "music". Defaults to "master" if Ding cannot find your category.
+	category = "master"
+	#Sound category for the sound played when the world finishes loading (after connecting to a server). EG: "ambient" or "music". Defaults to "master" if Ding cannot find your category.
+	categoryWorld = "master"
+	#Sound category for the sound played when resources complete reloading. EG: "ambient" or "music". Defaults to "master" if Ding cannot find your category.
+	categoryResourcesReload = "master"
 

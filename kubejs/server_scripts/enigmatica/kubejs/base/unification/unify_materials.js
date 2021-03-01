@@ -36,6 +36,7 @@ events.listen('recipes', (event) => {
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
+        immersiveengineering_hammer_plates(event, material, ingot, gem, plate);
 
         //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
         //integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
@@ -526,7 +527,7 @@ function immersiveengineering_ore_processing_with_secondary_outputs(event, mater
         return;
     }
 
-    var primaryOutput = dust,
+    var primaryOutput = Item.of(dust, 2),
         secondaryMaterial,
         secondaryChance = 0.1,
         input = '#forge:ores/' + material;
@@ -637,6 +638,31 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     }
 
     event.recipes.immersiveengineering.metal_press(output, input, mold).energy(2400);
+}
+
+function immersiveengineering_hammer_plates(event, material, ingot, gem, plate) {
+    if (plate == air) {
+        return;
+    }
+
+    const hammer = 'immersiveengineering:hammer';
+    event.remove({ id: 'immersiveengineering:crafting/plate_' + material + '_hammering' });
+
+    for (let i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
+    let output = plate;
+    if (ingot != air) {
+        input = '#forge:ingots/' + material;
+    } else if (gem != air) {
+        input = '#forge:gems/' + material;
+    } else {
+        return;
+    }
+    event.shapeless(output, [input, hammer]).id('kubejs:immersiveengineering_hammer_plates/' + material);
 }
 
 function integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard) {

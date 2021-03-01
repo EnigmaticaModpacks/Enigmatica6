@@ -32,11 +32,7 @@ events.listen('recipes', (event) => {
 
         'simplefarming:raw_bacon',
 
-        'thermal:bamboo_block',
-
-        'betterendforge:thallasium_anvil',
-        'betterendforge:terminite_anvil',
-        'betterendforge:aeternium_anvil'
+        'thermal:bamboo_block'
     ];
 
     var idRemovals = [
@@ -95,6 +91,7 @@ events.listen('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'pedestals:pedestal_cobblegen/blackstone',
+        'pitg:green_dye',
 
         'quark:building/crafting/tallow_from_block',
 

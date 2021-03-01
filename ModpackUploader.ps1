@@ -33,6 +33,8 @@ function Get-GitHubRelease {
 if (-not (test-path "$env:ProgramFiles\7-Zip\7z.exe")) { throw "$env:ProgramFiles\7-Zip\7z.exe needed to use the ModpackUploader." } 
 Set-Alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 
+if (-not (test-path $CLIENT_FILENAME)) { throw "Missing Manifest!" }
+
 if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
     $CONFIGS_TO_REMOVE | ForEach-Object {
         $configPath = "$PSScriptRoot/config/$_"
@@ -40,6 +42,13 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
         Write-Host $configPath -ForegroundColor Yellow
         Remove-Item -Path $configPath -ErrorAction SilentlyContinue -Recurse
     }
+
+    Write-Host "Removing Client configs from Client Files" -ForegroundColor Cyan
+    foreach ($config in $CONFIGS_TO_REMOVE) {
+        Write-Host "Removing Client config $config"
+        sz d $CLIENT_FILENAME "config/$config*" | Out-Null
+    }
+    pause
 }
 
 if ($ENABLE_MANIFEST_BUILDER_MODULE) {
