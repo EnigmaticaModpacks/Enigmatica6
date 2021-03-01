@@ -208,7 +208,11 @@ events.listen('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
+        var capacitor = 'powah:capacitor_' + tier;
+
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+
+        event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
     });
 
     materialsToUnify.forEach((material) => {
