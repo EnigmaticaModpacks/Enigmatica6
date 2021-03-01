@@ -549,4 +549,18 @@ events.listen('recipes', (event) => {
             .id(`botanypots:crafting/${color}_botany_pot`);
         event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
     });
+
+    [
+        { ingredient: '#forge:ingots/copper', tier: 'basic' },
+        { ingredient: '#forge:dusts/redstone', tier: 'advanced' },
+        { ingredient: '#forge:ingots/osmium', tier: 'elite' },
+        { ingredient: '#forge:obsidian', tier: 'ultimate' }
+    ].forEach((recipe) => {
+        event
+            .shaped(`mekanism:${recipe.tier}_bin`, ['ABA', 'A A', 'AAA'], {
+                A: 'minecraft:smooth_stone',
+                B: recipe.ingredient
+            })
+            .id(`mekanism:bin/${recipe.tier}`);
+    });
 });
