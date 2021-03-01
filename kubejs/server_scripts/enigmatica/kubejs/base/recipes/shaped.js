@@ -459,14 +459,14 @@ events.listen('recipes', (event) => {
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
         });
-        var chest = wood.modId + ':' + wood.logType + '_chest'
-        if(!Item.exists(chest)) {
+        var chest = wood.modId + ':' + wood.logType + '_chest';
+        if (!Item.exists(chest)) {
             event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
-                A: wood.logBlock,
+                A: wood.logBlock
             });
         } else {
             event.shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
-                A: wood.logBlock,
+                A: wood.logBlock
             });
         }
     });
@@ -520,11 +520,6 @@ events.listen('recipes', (event) => {
             A: crystal,
             B: capacitor,
             C: '#powah:solar_panel'
-        });
-
-        event.shaped(Item.of('powah:reactor_' + tier), [' A ', 'ABA', ' A '], {
-            A: capacitor,
-            B: '#powah:reactor'
         });
 
         event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
