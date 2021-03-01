@@ -48,7 +48,6 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
         Write-Host "Removing Client config $config"
         sz d $CLIENT_FILENAME "config/$config*" | Out-Null
     }
-    pause
 }
 
 if ($ENABLE_MANIFEST_BUILDER_MODULE) {
