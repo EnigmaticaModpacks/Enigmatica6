@@ -30,10 +30,14 @@ $CONFIGS_TO_REMOVE = @(
 	"emojiful-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
+	"ftbchunks-client.toml",
+	"inventory_hud-client.toml",
+	"itemzoom-client.toml",
 	"jei-client.toml",
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",
 	"mythicbotany-client.toml",
+	"neat-client.toml",
 	"occultism-client.toml",
 	"refinedstorage-client.toml",
 	"rftoolsbuilder-client.toml",
@@ -62,10 +66,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.4.1"
+$MODPACK_VERSION = "0.4.2"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.4.0"
+$LAST_MODPACK_VERSION = "0.4.1"
 
 $FORGE_VERSION = 36.0.40
 

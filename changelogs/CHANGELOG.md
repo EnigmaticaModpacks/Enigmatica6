@@ -1,10 +1,28 @@
+### Enigmatica 6 v0.4.2
+
+_Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.2.md)_
+
+**If you're updating from 0.3.x please read the last two changelogs**
+
+**Improvements/Changes**
+
+-   Quark: Turf Slab to Turf recipe
+-   Neat: Centipede body no longer displays a Neat-bar
+-   Quark: Monster Box loot changes a bit. Ores are now chunks, infested blocks are no longer in the pool.
+-   Ores:
+    -   Decreased Gold a bit: Larger veins, fewer of them
+    -   Decreased Fluorite a bit: Larger veins, fewer of them
+    -   Decreased Potassium Nitrate
+
+**Bug Fixes**
+
+-
+
 ### Enigmatica 6 v0.4.1
 
 _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.1.md)_
 
 **If you're updating from 0.3.x please read the last changelog**
-
-
 
 **Improvements/Changes**
 
@@ -14,7 +32,7 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
     -   Crow
 -   Editing Signs now requires an empty hand
 -   Mekansim: Advanced and Elite Bins can no hold more stacks of items
--   Mekanism Ore Tripling Quest  [\#1403](https://github.com/NillerMedDild/Enigmatica6/issues/1403)
+-   Mekanism Ore Tripling Quest [\#1403](https://github.com/NillerMedDild/Enigmatica6/issues/1403)
 -   Missing recipe for Pumpkin Slice [\#1391](https://github.com/NillerMedDild/Enigmatica6/issues/1391)
 
 **Bug Fixes**

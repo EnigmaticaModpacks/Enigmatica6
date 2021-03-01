@@ -578,7 +578,7 @@
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
-					command: "xecute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
 					player_command: false
 				}
 			]

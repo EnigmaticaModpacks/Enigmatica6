@@ -354,7 +354,6 @@ events.listen('recipes', (event) => {
                     pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench', Count: 1 },
                     immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1 },
                     transport: { id: 'transport:rail_breaker', Count: 1 },
-                    pedestals: { id: 'pedestals:linkingtool', Count: 1 },
                     botania: { id: 'botania:twig_wand', Count: 1, tag: { color1: 0, color2: 0 } },
                     ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1 },
                     mekanism: { id: 'mekanism:configurator', Count: 1 },
@@ -417,6 +416,9 @@ events.listen('recipes', (event) => {
             E: 'rftoolsbase:infused_diamond',
             F: 'minecraft:ender_eye'
         }),
+        shapedRecipe(Item.of('quark:turf', 1), ['A', 'A'], {
+            A: 'quark:turf_slab'
+        }),
 
         //ID Overrides
         shapedRecipe(
@@ -456,6 +458,16 @@ events.listen('recipes', (event) => {
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
         });
+        var chest = wood.modId + ':' + wood.logType + '_chest';
+        if (!Item.exists(chest)) {
+            event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
+                A: wood.logBlock
+            });
+        } else {
+            event.shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
+                A: wood.logBlock
+            });
+        }
     });
 
     powahTiers.forEach(function (tier) {
@@ -509,11 +521,6 @@ events.listen('recipes', (event) => {
             C: '#powah:solar_panel'
         });
 
-        event.shaped(Item.of('powah:reactor_' + tier), [' A ', 'ABA', ' A '], {
-            A: capacitor,
-            B: '#powah:reactor'
-        });
-
         event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
             A: capacitor,
             B: '#powah:energy_hopper'
@@ -541,5 +548,19 @@ events.listen('recipes', (event) => {
             })
             .id(`botanypots:crafting/${color}_botany_pot`);
         event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
+    });
+
+    [
+        { ingredient: '#forge:ingots/copper', tier: 'basic' },
+        { ingredient: '#forge:dusts/redstone', tier: 'advanced' },
+        { ingredient: '#forge:ingots/osmium', tier: 'elite' },
+        { ingredient: '#forge:obsidian', tier: 'ultimate' }
+    ].forEach((recipe) => {
+        event
+            .shaped(`mekanism:${recipe.tier}_bin`, ['ABA', 'A A', 'AAA'], {
+                A: 'minecraft:smooth_stone',
+                B: recipe.ingredient
+            })
+            .id(`mekanism:bin/${recipe.tier}`);
     });
 });

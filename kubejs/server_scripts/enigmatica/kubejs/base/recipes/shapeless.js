@@ -88,7 +88,15 @@ events.listen('recipes', (event) => {
             output: 'emendatusenigmatica:potassium_nitrate_dust',
             inputs: ['thermal:earth_charge', '#forge:ores/potassium_nitrate']
         },
-        { output:'betterendforge:endstone_dust', inputs: ['#forge:dusts/end_stone', '#forge:dusts/end_stone', '#forge:dusts/end_stone', '#forge:dusts/end_stone',] },
+        {
+            output: 'betterendforge:endstone_dust',
+            inputs: [
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone'
+            ]
+        },
         {
             output: Item.of('akashictome:tome').nbt({
                 'akashictome:data': {
@@ -183,6 +191,10 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('betterendforge:glowing_pillar_seed', 4),
             inputs: ['betterendforge:glowing_pillar_luminophor']
+        },
+        {
+            output: Item.of('minecraft:paper', 3),
+            inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
         }
     ];
 
@@ -196,7 +208,11 @@ events.listen('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
+        var capacitor = 'powah:capacitor_' + tier;
+
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+
+        event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
     });
 
     materialsToUnify.forEach((material) => {
