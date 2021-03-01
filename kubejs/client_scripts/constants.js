@@ -207,6 +207,24 @@ var regexHide = [
 ];
 
 const disabledItems = [
+    'abnormals_delight:adzuki_cake_slice',
+    'abnormals_delight:banana_cake_slice',
+    'abnormals_delight:cherry_pantry',
+    'abnormals_delight:chocolate_cake_slice',
+    'abnormals_delight:cooked_duck_fillet',
+    'abnormals_delight:cooked_venison_shanks',
+    'abnormals_delight:duck_fillet',
+    'abnormals_delight:mint_cake_slice',
+    'abnormals_delight:necromium_knife',
+    'abnormals_delight:passionfruit_glazed_duck',
+    'abnormals_delight:seared_venison',
+    'abnormals_delight:silver_knife',
+    'abnormals_delight:strawberry_cake_slice',
+    'abnormals_delight:vanilla_cake_slice',
+    'abnormals_delight:venison_shanks',
+    'abnormals_delight:willow_pantry',
+    'abnormals_delight:wisteria_pantry',
+
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',
