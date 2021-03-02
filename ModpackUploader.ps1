@@ -33,7 +33,7 @@ function Get-GitHubRelease {
 if (-not (test-path "$env:ProgramFiles\7-Zip\7z.exe")) { throw "$env:ProgramFiles\7-Zip\7z.exe needed to use the ModpackUploader." } 
 Set-Alias sz "$env:ProgramFiles\7-Zip\7z.exe"
 
-if (-not (test-path $CLIENT_FILENAME)) { throw "Missing Manifest!" }
+if (-not (test-path "$CLIENT_FILENAME-$MODPACK_VERSION.zip")) { throw "Missing Manifest! You probably forgot to generate it. Tsk tsk." }
 
 if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
     $CONFIGS_TO_REMOVE | ForEach-Object {
@@ -48,7 +48,6 @@ if ($ENABLE_MANIFEST_BUILDER_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
         Write-Host "Removing Client config $config"
         sz d $CLIENT_FILENAME "config/$config*" | Out-Null
     }
-    pause
 }
 
 if ($ENABLE_MANIFEST_BUILDER_MODULE) {
