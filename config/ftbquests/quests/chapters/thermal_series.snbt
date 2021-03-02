@@ -25,24 +25,11 @@
 				title: "The Thermal Series",
 				icon: "thermal:wrench"
 			}],
-			rewards: [
-				{
-					id: "00000000000003A6",
-					type: "item",
-					item: {
-						id: "patchouli:guide_book",
-						Count: 1b,
-						tag: {
-							"patchouli:book": "thermal:guidebook"
-						}
-					}
-				},
-				{
-					id: "00000000000004B9",
-					type: "item",
-					item: "thermal:wrench"
-				}
-			]
+			rewards: [{
+				id: "00000000000004B9",
+				type: "item",
+				item: "thermal:wrench"
+			}]
 		},
 		{
 			icon: "thermal:dynamo_stirling",

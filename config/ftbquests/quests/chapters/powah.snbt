@@ -29,9 +29,15 @@
 				title: "Welcome to Powah!"
 			}],
 			rewards: [{
-				id: "0000000000000171",
+				id: "413EB9C7629D2B60",
 				type: "item",
-				item: "powah:book"
+				item: {
+					id: "powah:wrench",
+					Count: 1b,
+					tag: {
+						PowahWrenchNBT: {}
+					}
+				}
 			}]
 		},
 		{
@@ -88,15 +94,10 @@
 				item: "powah:dielectric_casing"
 			}],
 			rewards: [{
-				id: "00000000000001B1",
+				id: "7698C3956B71648E",
 				type: "item",
-				item: {
-					id: "powah:wrench",
-					Count: 1b,
-					tag: {
-						PowahWrenchNBT: {}
-					}
-				}
+				item: "powah:dielectric_casing",
+				count: 2
 			}]
 		},
 		{
