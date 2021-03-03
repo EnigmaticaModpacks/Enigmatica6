@@ -1144,14 +1144,14 @@ const dyeSources = [
         tertiary: 'minecraft:lime_dye'
     },
     {
-        input: 'upgrade_aquatic:purple_pickerelweed',
+        input: 'upgrade_aquatic:blue_pickerelweed',
         type: 'tall',
         primary: 'minecraft:cyan_dye',
         secondary: 'minecraft:green_dye',
         tertiary: 'minecraft:lime_dye'
     },
     {
-        input: 'upgrade_aquatic:blue_pickerelweed',
+        input: 'upgrade_aquatic:purple_pickerelweed',
         type: 'tall',
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:green_dye',
