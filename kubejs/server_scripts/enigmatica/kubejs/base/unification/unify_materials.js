@@ -31,13 +31,17 @@ events.listen('recipes', (event) => {
 
         emendatus_hammer_crushing(event, material, ore, dust);
 
-        immersiveengineering_gem_crushing(event, material, dust, gem);
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
         immersiveengineering_hammer_plates(event, material, ingot, gem, plate);
         immersiveengineering_hammer_crushing(event, material, ore, dust);
+        immersiveengineering_gem_crushing(event, material, dust, gem);
+
+        minecraft_ore_ingot_smelting(event, material, ore, ingot);
+        minecraft_ore_gem_smelting(event, material, ore, gem);
+        minecraft_dust_smelting(event, material, dust, ingot);
 
         //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
         //integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
@@ -671,6 +675,49 @@ function immersiveengineering_hammer_plates(event, material, ingot, gem, plate) 
         return;
     }
     event.shapeless(output, [input, hammer]).id('kubejs:immersiveengineering_hammer_plates/' + material);
+}
+
+function minecraft_ore_ingot_smelting(event, material, ore, ingot) {
+    if (ore == air || ingot == air) {
+        return;
+    }
+
+    blacklistedMaterials = ['ender'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
+    var output = ingot,
+        input = '#forge:ores/' + material;
+
+    event.smelting(output, input).xp(0.7);
+    event.blasting(output, input).xp(0.7);
+}
+
+function minecraft_ore_gem_smelting(event, material, ore, gem) {
+    if (ore == air || gem == air) {
+        return;
+    }
+    var output = gem,
+        input = '#forge:ores/' + material;
+
+    event.smelting(output, input).xp(0.7);
+    event.blasting(output, input).xp(0.7);
+}
+
+function minecraft_dust_smelting(event, material, dust, ingot) {
+    if (ingot == air || dust == air) {
+        return;
+    }
+
+    var output = ingot,
+        input = '#forge:dusts/' + material;
+
+    event.smelting(output, input).xp(0.7);
+    event.blasting(output, input).xp(0.7);
 }
 
 function integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard) {
