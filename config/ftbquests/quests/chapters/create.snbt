@@ -1637,6 +1637,77 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary",
 				player_command: false
 			}]
+		},
+		{
+			x: 9.5d,
+			y: 0.0d,
+			description: [
+				"Create has a set of tools dedicated to saving schematics of structures and replicating them.",
+				"",
+				"The Schematic and Quill will allow you to save a schematic of an existing structure. This saved schematic will allow you to build the structure somewhere else.",
+				"",
+				"1) Right-Click to select the two opposite corners of the structure you want to save.",
+				"2) Point at a face of the selected area and ctrl-scroll to adjust that side.",
+				"3) Right-click to name and save the schematic."
+			],
+			dependencies: ["0000000000000C40"],
+			min_width: 250,
+			id: "5A581A8DF6CCC352",
+			tasks: [{
+				id: "188710CC3F5AE8D2",
+				type: "item",
+				item: "create:schematic_and_quill"
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 0.0d,
+			description: [
+				"In order to build your saved structures, you need to create a Schematic - this is done on the Schematic Table.",
+				"",
+				"Choose the schematic you want to create by mousing over the box in the middle of the GUI and scrolling. Place an Empty Schematic into the left slot on the table. Click the checkmark to print the schematic - this uploads it to the server, and can take a while for very large schematics. You can close the table while this process completes and come back later. Pressing the “Open Folder” button will open the Schematic folder in your instance, and pressing “Refresh” will update the list of available schematics.",
+				"",
+				"Schematic in hand, you can place it in-world by right clicking. An on-screen HUD provides options for adjusting the schematic - moving, rotating, or flipping. Shift-right clicking the schematic will also allow you edit placement and rotation/mirroring. You can use this as a building guide, but there are better uses for it...",
+				"",
+				'Note: Schematics for common multiblocks are included by default. You can use the "Open Folder" button to relocate any schematics you aren’t using and then refresh the list.'
+			],
+			dependencies: ["5A581A8DF6CCC352"],
+			min_width: 300,
+			id: "3542632905883686",
+			tasks: [{
+				id: "2816C6E8336001CD",
+				type: "item",
+				item: "create:schematic_table"
+			}],
+			rewards: [{
+				id: "1CC172C5323EADC6",
+				type: "item",
+				item: "create:empty_schematic"
+			}]
+		},
+		{
+			x: 14.5d,
+			y: 0.0d,
+			description: [
+				"The Schematicannon is how you're going to build your structures. It uses gunpowder as a propellent, and will take blocks from adjacent inventories.",
+				"",
+				"Take your freshly placed schematic and load it into the Schematicannon. ",
+				"",
+				""
+			],
+			dependencies: ["3542632905883686"],
+			id: "6305EF196599FC7C",
+			tasks: [{
+				id: "5C7274B5040C6D7D",
+				type: "item",
+				item: "create:schematicannon"
+			}],
+			rewards: [{
+				id: "123B498A6DDBFD23",
+				type: "item",
+				item: "minecraft:gunpowder",
+				count: 16
+			}]
 		}
 	]
 }
