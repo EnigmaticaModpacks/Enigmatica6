@@ -49,6 +49,12 @@
 	mungusBiomeTransformationType = 2
 	#List of all mungus mushrooms, biome transformations and surface blocks. Each is seperated by a |. Add an entry with a block registry name, biome registry name, and block registry name(for the ground).
 	mungusBiomeMatches = ["minecraft:red_mushroom|minecraft:mushroom_fields|minecraft:mycelium", "minecraft:brown_mushroom|minecraft:mushroom_fields|minecraft:mycelium", "minecraft:crimson_fungus|minecraft:crimson_forest|minecraft:crimson_nylium", "minecraft:warped_fungus|minecraft:warped_forest|minecraft:warped_nylium"]
+	#Whether guster spawns are limited to when it is raining/thundering.
+	limitGusterSpawnsToWeather = true
+	#Whether Crimson Mosquitoes can transform into Warped Moscos if attacking a Mungus or any listed creature.
+	warpedMoscoTransformation = true
+	#List of extra(non mungus) mobs that will trigger a crimson mosquito to become a warped mosquito. Ex: "minecraft:mooshroom", "alexsmobs:warped_toad"
+	warpedMoscoMobTriggers = [""]
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -255,4 +261,28 @@
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		mantisShrimpSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		gusterSpawnWeight = 35
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		gusterSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn. NOTE: By default the warped mosco doesn't spawn in any biomes.
+		#Range: 0 ~ 1000
+		warpedMoscoSpawnWeight = 1
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		warpedMoscoSpawnRolls = 1000
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		straddlerSpawnWeight = 85
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		straddlerSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		stradpoleSpawnWeight = 10
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		stradpoleSpawnRolls = 3
 
