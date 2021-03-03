@@ -2,6 +2,13 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#forge:ores' });
+    event.remove({ type: 'minecraft:blasting', input: '#forge:ores' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#forge:dusts' });
+    event.remove({ type: 'minecraft:blasting', input: '#forge:dusts' });
+
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [

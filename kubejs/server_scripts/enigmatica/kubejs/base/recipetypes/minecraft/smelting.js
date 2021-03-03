@@ -10,6 +10,16 @@ events.listen('recipes', (event) => {
                 input: '#forge:ores/amber',
                 output: Item.of('#forge:shards/amber'),
                 xp: 0.5
+            },
+            {
+                input: '#forge:ores/netherite',
+                output: Item.of('minecraft:netherite_scrap'),
+                xp: 2.0
+            },
+            {
+                input: '#forge:ores/thallasium',
+                output: Item.of('#forge:ingots/thallasium'),
+                xp: 0.7
             }
         ]
     };
