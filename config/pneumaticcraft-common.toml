@@ -56,9 +56,6 @@
 	#Base chance (1/x) per tick of a lightning strike on/around the Electrostatic Generator
 	#Range: > 0
 	electrostatic_lightning_chance = 100000
-	#The ratio of liquid plastic to solid plastic sheets in the Plastic Mixer, in mB per sheet.  If set to 0, no default liquid->solid plastic recipe will be added (but CraftTweaker or API can be used to add recipes)
-	#Range: > 0
-	plastic_mixer_plastic_ratio = 1000
 	#The max height of an elevator per stacked Elevator Base block.
 	#Range: 1 ~ 256
 	elevator_base_blocks_per_base = 4
@@ -87,8 +84,10 @@
 	pneumatic_pump_efficiency = 40
 	#Fluid registry ID's that the Seismic Sensor will search for. It's recommended to use 'seismicSensorFluidTags' where possible, but this setting can be used if you want to add fluids which don't have any associated fluid tags.
 	seismic_sensor_fluids = []
-	#Fluid tag names that the Seismic Sensor will search for. Known vanilla tags are 'minecraft:water' and 'minecraft:lava'. Other available fluid tags are mod-dependent.
+	#Fluid tag names that the Seismic Sensor will search for. Known vanilla tags are 'minecraft:water' and 'minecraft:lava'. Other available fluid tags are mod-dependent. By default, 'forge:crude_oil' is matched, allowing PneumaticCraft (and potentially other mods) crude oil.
 	seismic_sensor_fluid_tags = ["forge:crude_oil"]
+	#Blacklist items from being allowed in the Pressure Chamber disenchanting system. This is a starts-with string match, so you can match by mod, or individual item names as you need. Blacklisted by default are Quark Ancient Tomes, and all Tetra items; both can lead to enchantment duping as they have special enchantment mechanics.
+	disenchanting_blacklist = ["quark:ancient_tome", "tetra:"]
 
 ["Pneumatic Armor"]
 	#Air usage for armor repair, in mL per Item Life Upgrade per point of damage repaired
