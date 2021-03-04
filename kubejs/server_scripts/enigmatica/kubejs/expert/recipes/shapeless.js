@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (global.packmode !== 'expert') {
+    if (!expertMode) {
         return;
     }
 });
