@@ -76,6 +76,8 @@ events.listen('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
 
+        'immersiveengineering:crafting/jerrycan',
+
         'immersivepetroleum:distillationtower/oilcracking',
 
         'industrialforegoing:stonework_generate/andesite',
