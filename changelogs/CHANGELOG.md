@@ -6,10 +6,11 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements/Changes**
 
--
+-   Disabled the "Reloaded with no KubeJs errors" message on world-join.
 
 **Bug Fixes**
 
+-   JustEnoughResources: No more double reloading, should speed up the time it takes to load singleplayer
 -   UpdateServerScript: Fixed overrides folder not being moved correctly on Unix based operating systems.
 -   ImmersiveEngineering: Temporarily removed Jerrycan recipe due to an issue with the Jerrycan
 -   Powah: Cleaned up ways to obtain Uranitite, only the valid ones are shown now.
