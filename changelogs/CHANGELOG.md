@@ -1,14 +1,17 @@
 ### Enigmatica 6 v0.4.3
 
-_Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.3.md)_
+_Using Forge-1.16.5-36.0.45_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.3.md)_
 
-**If you're updating from 0.3.x please read the last two changelogs**
+
+
+**If you're updating from 0.3.x please read the last 3 changelogs**
+
+
 
 **Improvements/Changes**
 
 -   Add IE Creosote as valid fuel for PNC [\#1513](https://github.com/NillerMedDild/Enigmatica6/pull/1513) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Add pickerelweed to crops list [\#1520](https://github.com/NillerMedDild/Enigmatica6/pull/1520) ([MuteTiefling](https://github.com/MuteTiefling))
--   Block Drops\[Not Ready\] [\#1511](https://github.com/NillerMedDild/Enigmatica6/issues/1511)
 -   Disabled the "Reloaded with no KubeJs errors" message on world-join.
 -   Give our Akashic Tome instead of all manuals separately [\#1459](https://github.com/NillerMedDild/Enigmatica6/issues/1459)
 -   remove duplicate ore and dust smelting recipes [\#1521](https://github.com/NillerMedDild/Enigmatica6/pull/1521) ([MuteTiefling](https://github.com/MuteTiefling))
