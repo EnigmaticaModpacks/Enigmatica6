@@ -1,18 +1,18 @@
 {
-  "modId": "immersiveengineering",
-  "group": {
-    "name": "Immersive Engineering Seeds",
-    "enabledByDefault": true,
-    "defaultPayment": {
-      "item": "minecraft:emerald"
+    "modId": "immersiveengineering",
+    "group": {
+        "name": "Immersive Engineering Seeds",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:seeds"
     },
-    "defaultCategory": "farmingforblockheads:seeds"
-  },
-  "customEntries": [
-    {
-      "output": {
-        "item": "immersiveengineering:seed"
-      }
-    }
-  ]
+    "customEntries": [
+        {
+            "output": {
+                "item": "immersiveengineering:seed"
+            }
+        }
+    ]
 }

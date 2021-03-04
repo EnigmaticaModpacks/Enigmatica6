@@ -135,6 +135,10 @@
 	cut = true
 	#Fell enabled?
 	fell = true
+	#Summon Steed enabled?
+	summon_steed = true
+	#Summon Wolves enabled?
+	summon_wolves = true
 
 #Mana
 [mana]
@@ -342,6 +346,12 @@
 	#Fell cost
 	#Range: > -2147483648
 	fell_cost = 150
+	#Summon Steed cost
+	#Range: > -2147483648
+	summon_steed_cost = 0
+	#Summon Wolves cost
+	#Range: > -2147483648
+	summon_wolves_cost = 0
 
 #Starting Spells
 ["Starter Spells"]

@@ -2,6 +2,13 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#forge:ores' });
+    event.remove({ type: 'minecraft:blasting', input: '#forge:ores' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#forge:dusts' });
+    event.remove({ type: 'minecraft:blasting', input: '#forge:dusts' });
+
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
@@ -31,6 +38,7 @@ events.listen('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'simplefarming:raw_bacon',
+        'powah:uraninite',
 
         'thermal:bamboo_block'
     ];
@@ -68,6 +76,8 @@ events.listen('recipes', (event) => {
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
+
+        'immersiveengineering:crafting/jerrycan',
 
         'immersivepetroleum:distillationtower/oilcracking',
 

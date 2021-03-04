@@ -25,30 +25,17 @@
 				type: "checkmark",
 				title: "PneumaticCraft: Repressurized"
 			}],
-			rewards: [
-				{
-					id: "00000000000000B1",
-					type: "item",
-					item: {
-						id: "pneumaticcraft:pneumatic_wrench",
-						Count: 1b,
-						tag: {
-							"pneumaticcraft:air": 30000
-						}
-					}
-				},
-				{
-					id: "00000000000000B2",
-					type: "item",
-					item: {
-						id: "patchouli:guide_book",
-						Count: 1b,
-						tag: {
-							"patchouli:book": "pneumaticcraft:book"
-						}
+			rewards: [{
+				id: "00000000000000B1",
+				type: "item",
+				item: {
+					id: "pneumaticcraft:pneumatic_wrench",
+					Count: 1b,
+					tag: {
+						"pneumaticcraft:air": 30000
 					}
 				}
-			]
+			}]
 		},
 		{
 			title: "Ethically Sourced",

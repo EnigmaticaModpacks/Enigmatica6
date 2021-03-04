@@ -8,8 +8,10 @@
 	default_quest_shape: "",
 	quests: [
 		{
+			icon: "immersiveengineering:manual",
 			x: -1.5d,
 			y: -6.0d,
+			shape: "gear",
 			description: ["Immersive Engineering is a versatile tech mod with a focus on large multiblock structures. You can find more information about anything in the mod in the Engineer's Handbook."],
 			id: "0000000000000004",
 			tasks: [{
@@ -19,19 +21,7 @@
 				icon: "immersiveengineering:manual"
 			}],
 			rewards: [{
-				id: "0000000000000006",
-				type: "item",
-				item: "immersiveengineering:manual"
-			}]
-		},
-		{
-			x: -1.5d,
-			y: -4.5d,
-			description: ["Your trusty Engineer's Hammer is used primarily to form multiblocks and rotate certain blocks. You can also use it to craft plates in a pinch."],
-			dependencies: ["0000000000000004"],
-			id: "0000000000000007",
-			tasks: [{
-				id: "0000000000000008",
+				id: "3D55700B5A77131D",
 				type: "item",
 				item: {
 					id: "immersiveengineering:hammer",
@@ -40,17 +30,46 @@
 						Damage: 0
 					}
 				}
-			}],
-			rewards: [{
-				id: "0000000000000607",
-				type: "item",
-				item: {
-					id: "immersiveengineering:wirecutter",
-					Count: 1b,
-					tag: {
-						Damage: 0
+			}]
+		},
+		{
+			title: "Tools of the Trade",
+			x: -1.5d,
+			y: -4.5d,
+			description: [
+				"Your trusty Engineer's Hammer is used primarily to form multiblocks and rotate certain blocks. You can also use it to craft plates in a pinch.",
+				"",
+				"Wire Cutters are a useful tool for early wire crafting, as well as quickly disconnecting live hanging wires safely.",
+				"",
+				"The Screwdriver is handy for making precise changes to redstone connectors among other things."
+			],
+			dependencies: ["0000000000000004"],
+			id: "0000000000000007",
+			tasks: [
+				{
+					id: "20930556EBD4C23B",
+					type: "item",
+					item: {
+						id: "immersiveengineering:wirecutter",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
 					}
+				},
+				{
+					id: "49501ECA376AF301",
+					type: "item",
+					item: "immersiveengineering:screwdriver"
 				}
+			],
+			rewards: [{
+				id: "14FA4A24C7409F77",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
 			}]
 		},
 		{

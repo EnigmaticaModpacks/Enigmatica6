@@ -65,30 +65,17 @@
 				id: "00000000000000A0",
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: "00000000000000A1",
-					type: "item",
-					item: {
-						id: "patchouli:guide_book",
-						Count: 1b,
-						tag: {
-							"patchouli:book": "naturesaura:book"
-						}
-					}
-				},
-				{
-					id: "00000000000000A6",
-					type: "item",
-					item: {
-						id: "minecraft:shears",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
+			rewards: [{
+				id: "00000000000000A6",
+				type: "item",
+				item: {
+					id: "minecraft:shears",
+					Count: 1b,
+					tag: {
+						Damage: 0
 					}
 				}
-			]
+			}]
 		},
 		{
 			title: "Ritual of the Forest",

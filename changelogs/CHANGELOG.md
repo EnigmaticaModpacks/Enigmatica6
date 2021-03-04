@@ -1,18 +1,32 @@
+### Enigmatica 6 v0.4.3
+
+_Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.3.md)_
+
+**If you're updating from 0.3.x please read the last two changelogs**
+
+**Improvements/Changes**
+
+-   Disabled the "Reloaded with no KubeJs errors" message on world-join.
+
+**Bug Fixes**
+
+-   JustEnoughResources: No more double reloading, should speed up the time it takes to load singleplayer
+-   UpdateServerScript: Fixed overrides folder not being moved correctly on Unix based operating systems.
+-   ImmersiveEngineering: Temporarily removed Jerrycan recipe due to an issue with the Jerrycan
+-   Powah: Cleaned up ways to obtain Uranitite, only the valid ones are shown now.
+
 ### Enigmatica 6 v0.4.2
 
 _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.2.md)_
 
-
-
 **If you're updating from 0.3.x please read the last two changelogs**
-
-
 
 **New Mods!**
 
-- [Abnormals Delight](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight)
-* [Create Plus](https://www.curseforge.com/minecraft/mc-mods/create-plus)
-* [Inventory HUD+](https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge)
+-   [Abnormals Delight](https://www.curseforge.com/minecraft/mc-mods/abnormals-delight)
+
+*   [Create Plus](https://www.curseforge.com/minecraft/mc-mods/create-plus)
+*   [Inventory HUD+](https://www.curseforge.com/minecraft/mc-mods/inventory-hud-forge)
 
 **Improvements/Changes**
 
@@ -46,23 +60,23 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
-- **Extremely slow nether/end generation**
-- Aluminum Ore Texture \(World Generation\) [\#1404](https://github.com/NillerMedDild/Enigmatica6/issues/1404)
-- \[0.4.1\] Can't create the "Feedthrough Insulator" multiblock [\#1451](https://github.com/NillerMedDild/Enigmatica6/issues/1451)
-- Compact Crafting Field Projector does not drop itself when broken with a valid tool [\#1438](https://github.com/NillerMedDild/Enigmatica6/issues/1438)
-- Crash when "crafting" the stonecutter [\#921](https://github.com/NillerMedDild/Enigmatica6/issues/921)
-- Ender Biotite has no use [\#1497](https://github.com/NillerMedDild/Enigmatica6/issues/1497)
-- Ether \(BYG\) crafting table cannot be converted to vanilla crafting table [\#1492](https://github.com/NillerMedDild/Enigmatica6/issues/1492)
-- Green Dye crafting recipe from Yellow and Blue Dye [\#1467](https://github.com/NillerMedDild/Enigmatica6/issues/1467)
-- Integrated Dynamics guide book in the Akashic Tome broken [\#1416](https://github.com/NillerMedDild/Enigmatica6/issues/1416)
-- Issues with recipes that use Farmer's Delight knife with Cooking for Blockheads and Refined Storage. [\#920](https://github.com/NillerMedDild/Enigmatica6/issues/920)
-- New tips! [#1453](https://github.com/NillerMedDild/Enigmatica6/pull/1453) ([Merlo17](https://github.com/Merlo17))
-- Non-functional "small" crafting recipe for Compact Crafting [\#1430](https://github.com/NillerMedDild/Enigmatica6/issues/1430)
-- RFTools Quests - XNet Tutorial Link is timestamped [\#1494](https://github.com/NillerMedDild/Enigmatica6/issues/1494)
+-   **Extremely slow nether/end generation**
+-   Aluminum Ore Texture \(World Generation\) [\#1404](https://github.com/NillerMedDild/Enigmatica6/issues/1404)
+-   \[0.4.1\] Can't create the "Feedthrough Insulator" multiblock [\#1451](https://github.com/NillerMedDild/Enigmatica6/issues/1451)
+-   Compact Crafting Field Projector does not drop itself when broken with a valid tool [\#1438](https://github.com/NillerMedDild/Enigmatica6/issues/1438)
+-   Crash when "crafting" the stonecutter [\#921](https://github.com/NillerMedDild/Enigmatica6/issues/921)
+-   Ender Biotite has no use [\#1497](https://github.com/NillerMedDild/Enigmatica6/issues/1497)
+-   Ether \(BYG\) crafting table cannot be converted to vanilla crafting table [\#1492](https://github.com/NillerMedDild/Enigmatica6/issues/1492)
+-   Green Dye crafting recipe from Yellow and Blue Dye [\#1467](https://github.com/NillerMedDild/Enigmatica6/issues/1467)
+-   Integrated Dynamics guide book in the Akashic Tome broken [\#1416](https://github.com/NillerMedDild/Enigmatica6/issues/1416)
+-   Issues with recipes that use Farmer's Delight knife with Cooking for Blockheads and Refined Storage. [\#920](https://github.com/NillerMedDild/Enigmatica6/issues/920)
+-   New tips! [#1453](https://github.com/NillerMedDild/Enigmatica6/pull/1453) ([Merlo17](https://github.com/Merlo17))
+-   Non-functional "small" crafting recipe for Compact Crafting [\#1430](https://github.com/NillerMedDild/Enigmatica6/issues/1430)
+-   RFTools Quests - XNet Tutorial Link is timestamped [\#1494](https://github.com/NillerMedDild/Enigmatica6/issues/1494)
 
 **Mod Removals**
 
-- Temporarily removed [YUNG's Better Caves (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves) while we find a solution to dimensional worldgen issues.
+-   Temporarily removed [YUNG's Better Caves (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-caves) while we find a solution to dimensional worldgen issues.
 
 ### Enigmatica 6 v0.4.1
 

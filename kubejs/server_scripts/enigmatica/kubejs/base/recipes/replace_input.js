@@ -96,6 +96,7 @@ events.listen('recipes', (event) => {
 
     event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
     event.replaceInput({ id: 'pneumaticcraft:reinforced_stone' }, 'minecraft:stone', '#forge:stone');
+    event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbench');
 
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;

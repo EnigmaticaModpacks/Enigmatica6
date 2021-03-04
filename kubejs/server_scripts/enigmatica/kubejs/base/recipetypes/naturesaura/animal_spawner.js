@@ -48,6 +48,18 @@ events.listen('recipes', (event) => {
                 entity: 'thermal:basalz',
                 aura: 150000,
                 time: 120
+            },
+            {
+                ingredients: ['minecraft:coarse_dirt', 'industrialforegoing:fertilizer'],
+                entity: 'alexsmobs:cockroach',
+                aura: 30000,
+                time: 40
+            },
+            {
+                ingredients: ['minecraft:coarse_dirt', 'minecraft:brown_mushroom'],
+                entity: 'alexsmobs:cockroach',
+                aura: 150000,
+                time: 120
             }
         ]
     };
