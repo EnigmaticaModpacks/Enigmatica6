@@ -484,7 +484,13 @@
 				{
 					id: "0000000000000033",
 					type: "item",
-					item: "immersiveengineering:graphite_electrode",
+					item: {
+						id: "immersiveengineering:graphite_electrode",
+						Count: 1b,
+						tag: {
+							graphDmg: 0
+						}
+					},
 					count: 3L
 				},
 				{
