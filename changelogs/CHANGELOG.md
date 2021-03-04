@@ -6,10 +6,13 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements/Changes**
 
--   **Bug Fixes**
+-
+
+**Bug Fixes**
 
 -   UpdateServerScript: Fixed overrides folder not being moved correctly on Unix based operating systems.
 -   ImmersiveEngineering: Temporarily removed Jerrycan recipe due to an issue with the Jerrycan
+-   Powah: Cleaned up ways to obtain Uranitite, only the valid ones are shown now.
 
 ### Enigmatica 6 v0.4.2
 

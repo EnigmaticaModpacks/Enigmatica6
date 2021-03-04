@@ -38,6 +38,7 @@ events.listen('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'simplefarming:raw_bacon',
+        'powah:uraninite',
 
         'thermal:bamboo_block'
     ];
