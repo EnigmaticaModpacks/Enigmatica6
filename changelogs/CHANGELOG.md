@@ -6,14 +6,37 @@ _Using Forge-1.16.5-36.0.40_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Improvements/Changes**
 
+-   Add IE Creosote as valid fuel for PNC [\#1513](https://github.com/NillerMedDild/Enigmatica6/pull/1513) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add pickerelweed to crops list [\#1520](https://github.com/NillerMedDild/Enigmatica6/pull/1520) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Block Drops\[Not Ready\] [\#1511](https://github.com/NillerMedDild/Enigmatica6/issues/1511)
 -   Disabled the "Reloaded with no KubeJs errors" message on world-join.
+-   Give our Akashic Tome instead of all manuals separately [\#1459](https://github.com/NillerMedDild/Enigmatica6/issues/1459)
+-   remove duplicate ore and dust smelting recipes [\#1521](https://github.com/NillerMedDild/Enigmatica6/pull/1521) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Thermoelectric Boiler quest gives no size. [\#1525](https://github.com/NillerMedDild/Enigmatica6/issues/1525)
 
 **Bug Fixes**
 
--   JustEnoughResources: No more double reloading, should speed up the time it takes to load singleplayer
--   UpdateServerScript: Fixed overrides folder not being moved correctly on Unix based operating systems.
+-   Amadron Tablet offers use non EE Aluminum [\#1507](https://github.com/NillerMedDild/Enigmatica6/issues/1507)
+-   \[Tetra&Pneumaticcraft\] Disenchanting Exploit [\#1506](https://github.com/NillerMedDild/Enigmatica6/issues/1506)
+-   Blast Furnace Smelt Iron Dust at Half Speed/Half Efficiency [\#1519](https://github.com/NillerMedDild/Enigmatica6/issues/1519)
+-   Cooking for Blockheads Book Recipe [\#1529](https://github.com/NillerMedDild/Enigmatica6/issues/1529)
+-   Crashing using Pneumatic helmet with tetra  [\#639](https://github.com/NillerMedDild/Enigmatica6/issues/639)
+-   Crash when using Occultism machine operator [\#1530](https://github.com/NillerMedDild/Enigmatica6/issues/1530)
+-   Create crushed ores accidentally hidden in JEI [\#1512](https://github.com/NillerMedDild/Enigmatica6/issues/1512)
+-   Cutting Board recipe using wrong item [\#1422](https://github.com/NillerMedDild/Enigmatica6/issues/1422)
+-   Dupe Bug: PNC vacuum Chamber and Quark Ancient Tome [\#1514](https://github.com/NillerMedDild/Enigmatica6/issues/1514)
+-   Elytra doesn't break properly when worn as a curio [\#1496](https://github.com/NillerMedDild/Enigmatica6/issues/1496)
+-   Ender cells reset energy levels [\#1445](https://github.com/NillerMedDild/Enigmatica6/issues/1445)
+-   End Stone smelter has broken GUI [\#1426](https://github.com/NillerMedDild/Enigmatica6/issues/1426)
+-   IE Arc furnace Recycling recipe wrong  [\#654](https://github.com/NillerMedDild/Enigmatica6/issues/654)
 -   ImmersiveEngineering: Temporarily removed Jerrycan recipe due to an issue with the Jerrycan
+	-   JustEnoughResources: No more double reloading, should speed up the time it takes to load singleplayer
+-   Lootr & Dungeon Crawl Interaction [\#1508](https://github.com/NillerMedDild/Enigmatica6/issues/1508)
+-   Mob Duplicator no longer spawning mobs [\#1518](https://github.com/NillerMedDild/Enigmatica6/issues/1518)
 -   Powah: Cleaned up ways to obtain Uranitite, only the valid ones are shown now.
+-   Remove Natural Spawning of Cockroaches  [\#1535](https://github.com/NillerMedDild/Enigmatica6/issues/1535)
+-   Undergarden SMP generation [\#1472](https://github.com/NillerMedDild/Enigmatica6/issues/1472)
+-   UpdateServerScript: Fixed overrides folder not being moved correctly on Unix based operating systems.
 
 ### Enigmatica 6 v0.4.2
 
