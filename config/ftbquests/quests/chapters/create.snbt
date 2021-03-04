@@ -1611,6 +1611,14 @@
 				id: "0000000000000D4E",
 				type: "item",
 				item: "create:clutch"
+			}],
+			rewards: [{
+				id: "6E8C331AB8382D16",
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
