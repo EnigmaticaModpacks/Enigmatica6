@@ -50,13 +50,13 @@ events.listen('recipes', (event) => {
                 time: 120
             },
             {
-                ingredients: ['#forge:dirt', 'industrialforegoing:fertilizer'],
+                ingredients: ['minecraft:coarse_dirt', 'industrialforegoing:fertilizer'],
                 entity: 'alexsmobs:cockroach',
                 aura: 30000,
                 time: 40
             },
             {
-                ingredients: ['#forge:dirt', 'minecraft:brown_mushroom'],
+                ingredients: ['minecraft:coarse_dirt', 'minecraft:brown_mushroom'],
                 entity: 'alexsmobs:cockroach',
                 aura: 150000,
                 time: 120
