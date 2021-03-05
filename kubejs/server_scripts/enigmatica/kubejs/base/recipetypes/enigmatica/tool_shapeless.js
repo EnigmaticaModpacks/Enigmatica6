@@ -3,22 +3,6 @@ events.listen('recipes', (event) => {
         type: 'enigmatica:tool_shapeless',
         ingredients: [
             {
-                tag: 'forge:tools/knife'
-            },
-            {
-                item: 'minecraft:porkchop'
-            }
-        ],
-        result: {
-            item: 'simplefarming:raw_bacon',
-            count: 2
-        }
-    });
-
-    event.custom({
-        type: 'enigmatica:tool_shapeless',
-        ingredients: [
-            {
                 tag: 'forge:tools/axe'
             },
             {
