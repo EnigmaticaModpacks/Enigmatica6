@@ -1,0 +1,36 @@
+{
+  "header": {
+    "version": "2.1.0",
+    "mc_version": "1.16.5",
+    "name": "Normal Compact Machine",
+    "author": "Enigmatica",
+    "bounding_box": {
+      "min_x": 0,
+      "min_y": 0,
+      "min_z": 0,
+      "max_x": 4,
+      "max_y": 4,
+      "max_z": 4
+    },
+    "material_list": {
+      "root_type": "buildinggadgets:entries",
+      "root_entry": [
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 1,
+          "item": {
+            "id": "minecraft:diamond_block"
+          }
+        },
+        {
+          "item_type": "buildinggadgets:simple_item",
+          "count": 98,
+          "item": {
+            "id": "compactmachines:wall"
+          }
+        }
+      ]
+    }
+  },
+  "body": "H4sIAAAAAAAAAI2Uy27bMBBFOY8arhZdFci23+GP6DrJxqAlxRYqioEkI4+vD20ftbZX1YJnKA1575AYVSF8D97EOVYhBK0ucbBQTe3Yxb77bMfyIVTh2zTHuV0H/x1TG37WOb3Gek6xPnRDO23eYt+f0v5z/UMqq+oxvsybpospD8121+f6z8mOvebJy5o6XD0CFRr0uwSBCg363QYCFRr0OwGBCg36nQGBCg36X4MXhwIVGvSlAmEOS6LgS/Al6Av6gr6gL+gL+jeVC1Ro0JeTEeawjGerqryHZaHiQ/Gh+FB8KD4UHzcnK1ChQV9OXpjDkmjoG7sY+oa+oW/oG/qG/s2NCVRo0JcbFfKgQoMOywaXPKjQoMMicMmDCg06LKNTh1OHU4dTh1dhdWhj047rsIrH+ZDH8CN109yO2488lX7MJWOXj0MzlV1Lpz1hoISPSxjfn5Et4dO/8HEJu+H5bKi07HBq2dWQxxT70qBXvb0+n9Sv3bHrm27Y72Ozb+dp0xxT+the/QK+AFWOcPNoBAAA"
+}
