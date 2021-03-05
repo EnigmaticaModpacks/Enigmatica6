@@ -9,6 +9,9 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:smelting', input: '#forge:dusts' });
     event.remove({ type: 'minecraft:blasting', input: '#forge:dusts' });
 
+    event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
+    event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
+
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
