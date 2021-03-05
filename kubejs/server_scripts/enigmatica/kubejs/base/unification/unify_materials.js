@@ -713,6 +713,14 @@ function minecraft_dust_smelting(event, material, dust, ingot) {
         return;
     }
 
+    blacklistedMaterials = ['starmetal'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
     var output = ingot,
         input = '#forge:dusts/' + material;
 

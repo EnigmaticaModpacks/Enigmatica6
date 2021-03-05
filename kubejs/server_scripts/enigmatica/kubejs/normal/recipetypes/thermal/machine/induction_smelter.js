@@ -1,18 +1,13 @@
 events.listen('recipes', (event) => {
-    if (global.packmode != 'normal') {
+    if (!normalMode) {
         return;
     }
 
     var data = {
         recipes: [
             {
-                inputs: [
-                    '#forge:ingots/enderium',
-                    Item.of('fluxnetworks:flux_dust', 8)
-                ],
-                outputs: [
-                    Item.of('compactmachines:wall', 32)
-                ]
+                inputs: ['#forge:ingots/enderium', Item.of('fluxnetworks:flux_dust', 8)],
+                outputs: [Item.of('compactmachines:wall', 32)]
             }
         ]
     };

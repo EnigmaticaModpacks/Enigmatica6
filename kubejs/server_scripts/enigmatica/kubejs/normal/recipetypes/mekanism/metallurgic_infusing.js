@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (global.packmode != 'normal') {
+    if (!normalMode) {
         return;
     }
 
@@ -15,6 +15,11 @@ events.listen('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.mekanism.metallurgic_infusing(recipe.output, recipe.inputItem, recipe.infusionInput, recipe.infusionAmount)
+        event.recipes.mekanism.metallurgic_infusing(
+            recipe.output,
+            recipe.inputItem,
+            recipe.infusionInput,
+            recipe.infusionAmount
+        );
     });
 });
