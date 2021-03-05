@@ -1,6 +1,6 @@
-### Enigmatica 6 v0.4.3
+### Enigmatica 6 v0.4.4
 
-_Using Forge-1.16.5-36.0.45_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.3.md)_
+_Using Forge-1.16.5-36.0.46_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.4.md)_
 
 **If you're updating from 0.3.x please read the last 3 changelogs**
 
