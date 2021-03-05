@@ -6,6 +6,7 @@ events.listen('recipes', (event) => {
         { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
         { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
+        { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         {
             output: 'minecraft:crafting_table',
             inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
