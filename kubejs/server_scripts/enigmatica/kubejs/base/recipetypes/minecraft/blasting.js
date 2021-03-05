@@ -32,7 +32,7 @@ events.listen('recipes', (event) => {
                 xp: 0.1
             },
             {
-                input: 'farmersdelight:gold_knife',
+                input: 'farmersdelight:golden_knife',
                 output: Item.of('#forge:nuggets/gold'),
                 xp: 0.1
             }
