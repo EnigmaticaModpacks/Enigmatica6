@@ -1204,7 +1204,7 @@
 			x: 10.0d,
 			y: 2.0d,
 			description: [
-				"Modular Contraptions are a build it yourself multiblock structures with nearly endless possibilities. ",
+				"Modular Contraptions are build-it-yourself multiblock structures with nearly endless possibilities. ",
 				"",
 				"They can either be fixed in place and run using rotational power, or they can be attached to a minecart and run for free, requiring only powered rails to keep the cart moving. ",
 				"",
@@ -1647,8 +1647,10 @@
 			}]
 		},
 		{
-			x: 9.5d,
-			y: 0.0d,
+			title: "Saving Schematics",
+			x: 4.0d,
+			y: -0.5d,
+			subtitle: "Archetecture 101",
 			description: [
 				"Create has a set of tools dedicated to saving schematics of structures and replicating them.",
 				"",
@@ -1656,7 +1658,9 @@
 				"",
 				"1) Right-Click to select the two opposite corners of the structure you want to save.",
 				"2) Point at a face of the selected area and ctrl-scroll to adjust that side.",
-				"3) Right-click to name and save the schematic."
+				"3) Right-click to name and save the schematic.",
+				"",
+				"The Create GitHub has a wiki page with examples of saving schematics: https://github.com/Creators-of-Create/Create/wiki/Saving-a-Schematic"
 			],
 			dependencies: ["0000000000000C40"],
 			min_width: 250,
@@ -1665,19 +1669,31 @@
 				id: "188710CC3F5AE8D2",
 				type: "item",
 				item: "create:schematic_and_quill"
+			}],
+			rewards: [{
+				id: "454AB192859C2BA1",
+				type: "command",
+				title: "Rare Create Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare",
+				player_command: false
 			}]
 		},
 		{
-			x: 12.0d,
-			y: 0.0d,
+			title: "Placing Schematics",
+			x: 2.5d,
+			y: -0.5d,
+			subtitle: "Filing for Building Permits",
 			description: [
-				"In order to build your saved structures, you need to create a Schematic - this is done on the Schematic Table.",
+				"In order to place your saved structures, you need to create a Schematic - this is done on the Schematic Table.",
 				"",
-				"Choose the schematic you want to create by mousing over the box in the middle of the GUI and scrolling. Place an Empty Schematic into the left slot on the table. Click the checkmark to print the schematic - this uploads it to the server, and can take a while for very large schematics. You can close the table while this process completes and come back later. Pressing the “Open Folder” button will open the Schematic folder in your instance, and pressing “Refresh” will update the list of available schematics.",
+				"Choose the schematic you want to create by mousing over the box in the middle of the GUI and scrolling. Place an Empty Schematic into the left slot on the table. Click the checkmark to print the schematic - this uploads it to the server and can take a while for very large schematics. You can close the table while this process completes and come back later. Pressing the “Open Folder” button will open the Schematic folder in your instance, and pressing “Refresh” will update the list of available schematics.",
 				"",
 				"Schematic in hand, you can place it in-world by right clicking. An on-screen HUD provides options for adjusting the schematic - moving, rotating, or flipping. Shift-right clicking the schematic will also allow you edit placement and rotation/mirroring. You can use this as a building guide, but there are better uses for it...",
 				"",
-				'Note: Schematics for common multiblocks are included by default. You can use the "Open Folder" button to relocate any schematics you aren’t using and then refresh the list.'
+				'Note: Schematics for common multiblocks are included by default. You can use the "Open Folder" button to relocate any schematics you aren’t using and then refresh the list.',
+				"",
+				"The Create GitHub has a wiki with examples of loading schematics: https://github.com/Creators-of-Create/Create/wiki/Loading-a-Schematic"
 			],
 			dependencies: ["5A581A8DF6CCC352"],
 			min_width: 300,
@@ -1694,16 +1710,23 @@
 			}]
 		},
 		{
-			x: 14.5d,
-			y: 0.0d,
+			title: "Printing Schematics",
+			x: 1.0d,
+			y: -0.5d,
+			subtitle: "Constructive Detonation",
 			description: [
 				"The Schematicannon is how you're going to build your structures. It uses gunpowder as a propellent, and will take blocks from adjacent inventories.",
 				"",
-				"Take your freshly placed schematic and load it into the Schematicannon. ",
+				"Take your freshly placed schematic and load it into the Schematicannon. Load gunpowder in the top left - the cannon will use one for each 400 blocks. Hit the Play button in the middle of the interface to begin placing blocks!",
 				"",
-				""
+				"By default the cannon will pause if it doesn't have the block required, and it will replace any blocks in the way, but will protect tile entities (think chests and similar). Replaced blocks don't drop and are lost - the cannon IS NOT a quarry tool! These settings can be controlled by clicking the button in the bottom left.",
+				"",
+				"Note: The cannon isn't very fast, but it's possible to splitt the workload between multiple cannons, and Time in a Bottle works wonders on it!",
+				"",
+				"The Create GitHub has a wiki with examples of printing schematics: https://github.com/Creators-of-Create/Create/wiki/Printing-a-Schematic"
 			],
 			dependencies: ["3542632905883686"],
+			min_width: 300,
 			id: "6305EF196599FC7C",
 			tasks: [{
 				id: "5C7274B5040C6D7D",
