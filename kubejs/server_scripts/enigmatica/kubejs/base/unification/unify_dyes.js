@@ -22,6 +22,9 @@ function botania_dye_pestle_mortar(event, recipe) {
     if (recipe.type == 'large') {
         multiplier = 2;
     }
+    if(recipe.primary == 'minecraft:bone_meal') {
+        multiplier = 2;
+    }
 
     var count = baseCount * multiplier,
         output = Item.of(recipe.primary, count),
