@@ -79,6 +79,7 @@ events.listen('recipes', (event) => {
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
+        'immersiveengineering:cruser/bone_meal',
 
         'immersiveengineering:crafting/jerrycan',
 
