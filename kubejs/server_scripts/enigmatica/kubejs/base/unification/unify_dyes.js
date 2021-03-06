@@ -17,6 +17,10 @@ function botania_dye_pestle_mortar(event, recipe) {
         return;
     }
 
+    if (recipe.input == 'minecraft:bone') {
+        return;
+    }
+
     var baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
@@ -152,6 +156,10 @@ function mekanism_dye_enriching(event, recipe) {
     event.recipes.mekanism.enriching(output, input);
 }
 function pedestals_dye_crushing(event, recipe) {
+    if (recipe.input == 'minecraft:bone') {
+        return;
+    }
+
     var baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
@@ -174,6 +182,10 @@ function pedestals_dye_crushing(event, recipe) {
     });
 }
 function thermal_dye_centrifuge(event, recipe) {
+    if (recipe.input == 'minecraft:bone') {
+        return;
+    }
+
     var baseCount = 2,
         multiplier = 1;
     if (recipe.type == 'large') {
