@@ -455,9 +455,11 @@ events.listen('recipes', (event) => {
             A: wood.plankBlock,
             B: '#forge:rods/wooden'
         });
+
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
         });
+
         var chest = wood.modId + ':' + wood.logType + '_chest';
         if (!Item.exists(chest)) {
             event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
@@ -468,6 +470,32 @@ events.listen('recipes', (event) => {
                 A: wood.logBlock
             });
         }
+
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_1'), ['AAA', ' C ', 'AAA'], {
+            A: wood.plankBlock,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+            A: wood.plankBlock,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+            A: wood.plankBlock,
+            C: '#forge:chests'
+        });
+        var slab = wood.modId + ':' + wood.logType + '_slab';
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_1'), ['AAA', ' C ', 'AAA'], {
+            A: slab,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+            A: slab,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+            A: slab,
+            C: '#forge:chests'
+        });
     });
 
     powahTiers.forEach(function (tier) {
