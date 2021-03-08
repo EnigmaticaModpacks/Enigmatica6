@@ -53,6 +53,7 @@ events.listen('recipes', (event) => {
         'aquaculture:iron_nugget_from_smelting',
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
+        'aquaculture:planks_from_driftwood',
         'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
