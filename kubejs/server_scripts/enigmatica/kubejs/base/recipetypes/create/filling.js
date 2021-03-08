@@ -9,4 +9,33 @@ events.listen('recipes', (event) => {
             Item.of('minecraft:glass_bottle')
         ]);
     });
+
+    var data = {
+        recipes: [
+        	{
+        		output: Item.of('upgrade_aquatic:glow_squid_bucket'),
+        		container: Item.of('upgrade_aquatic:squid_bucket'),
+        		fluid: fluid.of('astralsorcery:liquid_starlight', 250)
+        	},
+        	{
+        		output: Item.of('minecraft:experience_bottle'),
+        		container: Item.of('minecraft:glass_bottle'),
+        		fluid: fluid.of('industrialforegoing:essence', 250)
+        	},
+        	{
+        		output: Item.of('minecraft:experience_bottle'),
+        		container: Item.of('minecraft:glass_bottle'),
+        		fluid: fluid.of('pneumaticcraft:memory_essence', 250)
+        	},
+        	{
+        		output: Item.of('minecraft:experience_bottle'),
+        		container: Item.of('minecraft:glass_bottle'),
+        		fluid: fluid.of('cofh_core:experience', 250)
+        	}
+        ]
+    };
+
+    data.recipes.forEach((recipe) => {
+        event.recipes.create.filling(recipe.output, [recipe.fluid, recipe.container]);
+    });
 });
