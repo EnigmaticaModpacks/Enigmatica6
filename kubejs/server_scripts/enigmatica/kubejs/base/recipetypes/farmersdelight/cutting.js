@@ -4,7 +4,7 @@ events.listen('recipes', (event) => {
             {
                 ingredient: Ingredient.of('aquaculture:frog'),
                 tool: Ingredient.of('#forge:tools/knives'),
-                result: [Item.of('aquaculture:frog_legs_raw', 1)]
+                result: [Item.of('quark:frog_leg', 2)]
             },
             {
                 ingredient: Ingredient.of('aquaculture:goldfish'),
