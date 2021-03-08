@@ -61,7 +61,11 @@ events.listen('recipes', (event) => {
             filletRecipe('aquaculture:arapaima', 10),
             filletRecipe('aquaculture:tuna', 10),
             filletRecipe('aquaculture:bluegill', 1),
-            filletRecipe('aquaculture:gar', 4)
+            filletRecipe('aquaculture:gar', 4),
+            filletRecipe('undergarden:raw_gwibling', 4),
+            filletRecipe('alexsmobs:blobfish', 6),
+            filletRecipe('betterendforge:end_fish_raw', 2),
+            filletRecipe('upgrade_aquatic:lionfish', 12)
         ]
     };
 
