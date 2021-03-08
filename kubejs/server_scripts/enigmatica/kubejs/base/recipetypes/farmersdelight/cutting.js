@@ -12,16 +12,6 @@ events.listen('recipes', (event) => {
                 result: [Item.of('emendatusenigmatica:gold_chunk', 1)]
             },
             {
-                ingredient: Ingredient.of('aquaculture:brown_shrooma'),
-                tool: Ingredient.of('#forge:tools/knives'),
-                result: [Item.of('minecraft:brown_mushroom', 5)]
-            },
-            {
-                ingredient: Ingredient.of('aquaculture:red_shrooma'),
-                tool: Ingredient.of('#forge:tools/knives'),
-                result: [Item.of('minecraft:red_mushroom', 5)]
-            },
-            {
                 ingredient: Ingredient.of('aquaculture:atlantic_cod'),
                 tool: Ingredient.of('#forge:tools/knives'),
                 result: [Item.of('farmersdelight:cod_slice', 6), Item.of('minecraft:bone_meal', 3)]
