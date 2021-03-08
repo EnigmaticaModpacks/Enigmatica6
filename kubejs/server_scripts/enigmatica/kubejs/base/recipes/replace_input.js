@@ -10,8 +10,6 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen');
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
-    event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
-    event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
     event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
