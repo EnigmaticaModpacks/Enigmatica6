@@ -30,6 +30,30 @@ events.listen('recipes', (event) => {
             {
                 gem: 'forge:gems/dragonstone',
                 energy: 750000
+            },
+            {
+                gem: 'forge:gems/mana',
+                energy: 10000
+            },
+            {
+                gem: 'forge:gems/fluorite',
+                energy: 40000
+            },
+            {
+                gem: 'forge:gems/dimensional',
+                energy: 700000
+            },
+            {
+                gem: 'forge:gems/apatite',
+                energy: 40000
+            },
+            {
+                gem: 'forge:gems/aquarmarine',
+                energy: 10000
+            },
+            {
+                gem: 'forge:gems/amber',
+                energy: 160000
             }
         ]
     };
