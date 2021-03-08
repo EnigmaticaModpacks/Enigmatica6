@@ -78,6 +78,8 @@ events.listen('recipes', (event) => {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
+
         'fluxnetworks:fluxcontroller',
         'fluxnetworks:fluxcore',
 

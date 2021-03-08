@@ -1,5 +1,64 @@
 events.listen('recipes', (event) => {
     var data = {
+        recipes_unheated: [
+            {
+                inputs: [
+                    '#minecraft:planks',
+                    '#minecraft:planks',
+                    fluid.of('immersiveengineering:creosote', 250)
+                ],
+                output: Item.of('immersiveengineering:treated_wood_horizontal', 2)
+            },
+            {
+                inputs: [
+                    '#minecraft:coals',
+                    '#minecraft:coals',
+                    '#forge:clay',
+                    fluid.of('minecraft:lava', 500)
+                ],
+                output: Item.of('powah:dielectric_paste', 16)
+            },
+            {
+                inputs: [
+                    '#forge:clay',
+                    '#forge:gravel',
+                    '#forge:sand',
+                    '#forge:sand',
+                    {fluidTag: 'minecraft:water', amount: 500}
+                ],
+                output: fluid.of('immersiveengineering:concrete', 500)
+            },
+            {
+                inputs: [
+                    '#forge:clay',
+                    '#forge:gravel',
+                    '#forge:slag',
+                    '#forge:slag',
+                    {fluidTag: 'minecraft:water', amount: 750}
+                ],
+                output: fluid.of('immersiveengineering:concrete', 750)
+            },
+            {
+                inputs: [
+                    '#forge:gems/bitumen',
+                    '#forge:gravel',
+                    '#forge:sand',
+                    '#forge:sand',
+                    {fluidTag: 'minecraft:water', amount: 500}
+                ],
+                output: Item.of('immersivepetroleum:asphalt', 12)
+            },
+            {
+                inputs: [
+                    '#forge:gems/bitumen',
+                    '#forge:gravel',
+                    '#forge:slag',
+                    '#forge:slag',
+                    {fluidTag: 'minecraft:water', amount: 500}
+                ],
+                output: Item.of('immersivepetroleum:asphalt', 16)
+            }
+        ],
         recipes_heated: [
             {
                 inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/tin'],
@@ -85,6 +144,10 @@ events.listen('recipes', (event) => {
             }
         ]
     };
+
+    data.recipes_unheated.forEach((recipe) => {
+        event.recipes.create.mixing(recipe.output, recipe.inputs);
+    });
     data.recipes_heated.forEach((recipe) => {
         event.recipes.create.mixing(recipe.output, recipe.inputs).heated();
     });
