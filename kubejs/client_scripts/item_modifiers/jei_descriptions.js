@@ -1,43 +1,61 @@
 events.listen('jei.information', (event) => {
-    var data = {
-        items: [
-            {
-                item: 'simplefarming:cheese_slice',
-                description: ['Obtained by right-clicking a Wheel of Cheese.']
-            },
-            {
-                item: 'astralsorcery:stardust',
-                description: [
-                    'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
-                ]
-            },
-            {
-                item: 'buildinggadgets:construction_paste',
-                description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
-            },
-            {
-                item: 'bountifulbaubles:potion_wormhole',
-                description: [
-                    'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
-                ]
-            },
-            {
-                item: 'powah:uraninite',
-                description: [
-                    'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
-                ]
-            },
-            {
-                item: 'powah:uraninite_block',
-                description: [
-                    'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
-                ]
-            }
-        ]
-    };
+    const recipes = [
+        {
+            item: ['simplefarming:cheese_slice'],
+            description: ['Obtained by right-clicking a Wheel of Cheese.']
+        },
+        {
+            item: ['astralsorcery:stardust'],
+            description: [
+                'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
+            ]
+        },
+        {
+            item: ['buildinggadgets:construction_paste'],
+            description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
+        },
+        {
+            item: ['bountifulbaubles:potion_wormhole'],
+            description: [
+                'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
+            ]
+        },
+        {
+            item: ['powah:uraninite'],
+            description: [
+                'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
+            ]
+        },
+        {
+            item: ['powah:uraninite_block'],
+            description: [
+                'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
+            ]
+        },
+        {
+            item: ['thermal:blizz_rod', 'thermal:blizz_spawn_egg'],
+            description: [
+                'The Blizz spawn naturally in cold biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+            ]
+        },
+        {
+            item: ['thermal:blitz_rod', 'thermal:blitz_spawn_egg'],
+            description: [
+                'The Blitz spawn naturally in warm, dry biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+            ]
+        },
+        {
+            item: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
+            description: [
+                'The Basalz spawn naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+            ]
+        }
+    ];
 
-    data.items.forEach(function (item) {
-        event.add(item.item, item.description);
+    recipes.forEach((recipe) => {
+        recipe.items.forEach((item) => {
+            event.add(item, recipe.description);
+        });
     });
 
     disabledItems.forEach((item) => {
