@@ -82,4 +82,13 @@ events.listen('jei.information', (event) => {
             'Can be generated in a Vanilla Stone Generator. The block below where the Stone generates needs to be a Block of Diamond.'
         );
     });
+
+    var framedDrawers = ['compact_drawer', 'drawer_controller', 'slave', 'trim', 'full_one', 'full_two', 'full_four', 'half_one', 'half_two', 'half_four'];
+    framedDrawers.forEach((drawer) => {
+        event.add(
+            'framedcompactdrawers:framed_' + drawer,
+            ['Must be painted with any block to be used. To paint, put in any crafting grid with one block directly above and to its left diagonally.',
+            'You can also put a different block directly on top of the drawer and/or directly to its left to customize it even further!']
+        );
+    });
 });
