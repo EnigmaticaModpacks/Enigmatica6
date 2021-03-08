@@ -451,15 +451,7 @@ events.listen('recipes', (event) => {
         if (wood.modId == 'minecraft') {
             return;
         }
-        event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
-            A: wood.plankBlock,
-            B: '#forge:rods/wooden'
-        });
-
-        event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
-            A: wood.plankBlock
-        });
-
+        //All recipes using logs here
         var chest = wood.modId + ':' + wood.logType + '_chest';
         if (!Item.exists(chest)) {
             event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
@@ -470,6 +462,30 @@ events.listen('recipes', (event) => {
                 A: wood.logBlock
             });
         }
+
+        var dupes = ['palo_verde',
+            'withering_oak',
+            'blue_archwood',
+            'green_archwood',
+            'purple_archwood',
+            'menril_filled',
+            'watchful_aspen',
+            'crustose',
+            'sappy_maple'];
+        dupes.forEach((dupe) => {
+            if(wood.logType == dupe) {
+                return;
+            }
+        })
+        //All recipes using planks here
+        event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
+            A: wood.plankBlock,
+            B: '#forge:rods/wooden'
+        });
+
+        event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
+            A: wood.plankBlock
+        });
 
         event.shaped(Item.of('storagedrawers:oak_full_drawers_1'), ['AAA', ' C ', 'AAA'], {
             A: wood.plankBlock,
@@ -484,6 +500,9 @@ events.listen('recipes', (event) => {
             C: '#forge:chests'
         });
         var slab = wood.modId + ':' + wood.logType + '_slab';
+        if(wood.logType == 'red_archwood') {
+            slab = 'ars_nouveau:archwood_slab';
+        };
         event.shaped(Item.of('storagedrawers:oak_half_drawers_1'), ['AAA', ' C ', 'AAA'], {
             A: slab,
             C: '#forge:chests'
