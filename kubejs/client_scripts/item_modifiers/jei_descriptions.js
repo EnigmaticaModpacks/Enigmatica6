@@ -35,19 +35,19 @@ events.listen('jei.information', (event) => {
         {
             items: ['thermal:blizz_rod', 'thermal:blizz_spawn_egg'],
             description: [
-                'The Blizz spawn naturally in cold biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+                'The Blizz spawns naturally in cold biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
             items: ['thermal:blitz_rod', 'thermal:blitz_spawn_egg'],
             description: [
-                'The Blitz spawn naturally in warm, dry biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+                'The Blitz spawns naturally in warm, dry biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
             items: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
             description: [
-                'The Basalz spawn naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+                'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         }
     ];
