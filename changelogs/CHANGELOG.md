@@ -7,6 +7,7 @@ _Using Forge-1.16.5-36.0.46_ | _[Mod Updates](https://github.com/NillerMedDild/E
 **Improvements/Changes**
 
 -   Bees: I-C-Bee Honey Bottles output chance increased to 50% from 2%
+-   Dropoff/quickstack once again ignores the hotbar
 
 **Bug Fixes**
 
