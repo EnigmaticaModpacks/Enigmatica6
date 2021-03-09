@@ -13,7 +13,7 @@ events.listen('recipes', (event) => {
                 inputs: [
                     Fluid.of('resourcefulbees:honey')
                 ],
-                output: Item.of('minecraft:honey_block')
+                output: 'minecraft:honey_block'
             },
             {
                 inputs: [
@@ -22,7 +22,7 @@ events.listen('recipes', (event) => {
                     'create:wheat_flour',
                     {fluidTag: 'forge:milk', amount: 250}
                 ],
-                output: Item.of('farmersdelight:pie_crust', 1)
+                output: 'farmersdelight:pie_crust'
             },
             {
                 inputs: [
@@ -37,7 +37,7 @@ events.listen('recipes', (event) => {
                 inputs: [
                     Fluid.of('immersiveengineering:concrete', 500)
                 ],
-                output: Item.of('immersiveengineering:slab_concrete', 1)
+                output: 'immersiveengineering:slab_concrete'
             },
             {
                 inputs: [

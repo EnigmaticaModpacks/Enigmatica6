@@ -13,44 +13,44 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
         	{
-        		input: Item.of('upgrade_aquatic:squid_bucket'),
+        		input: 'upgrade_aquatic:squid_bucket',
         		fluid: Fluid.of('astralsorcery:liquid_starlight', 250),
-        		output: Item.of('upgrade_aquatic:glow_squid_bucket')
+        		output: 'upgrade_aquatic:glow_squid_bucket'
         	},
         	{
-        		input: Item.of('minecraft:glass_bottle'),
+        		input: 'minecraft:glass_bottle',
         		fluid: {fluidTag: 'forge:milk', amount: 250},
-        		output: Item.of('farmersdelight:milk_bottle')
+        		output: 'farmersdelight:milk_bottle'
         	},
         	{
-        		input: Item.of('farmersdelight:milk_bottle'),
+        		input: 'farmersdelight:milk_bottle',
         		fluid: Fluid.of('create:chocolate', 250),
-        		output: Item.of('farmersdelight:hot_cocoa')
+        		output: 'farmersdelight:hot_cocoa'
         	},
         	{
-        		input: Item.of('minecraft:glass_bottle'),
+        		input: 'minecraft:glass_bottle',
         		fluid: Fluid.of('thermal:syrup', 25),
-        		output: Item.of('autumnity:syrup_bottle')
+        		output: 'autumnity:syrup_bottle'
         	},
         	{
-        		input: Item.of('minecraft:glass_bottle'),
+        		input: 'minecraft:glass_bottle',
         		fluid: Fluid.of('thermal:sap', 500),
-        		output: Item.of('autumnity:sap_bottle')
+        		output: 'autumnity:sap_bottle'
         	},
         	{
-        		input: Item.of('minecraft:glass_bottle'),
+        		input: 'minecraft:glass_bottle',
         		fluid: Fluid.of('industrialforegoing:essence', 250),
-        		output: Item.of('minecraft:experience_bottle')
+        		output: 'minecraft:experience_bottle'
         	},
         	{
-        		input: Item.of('minecraft:glass_bottle'),
+        		input: 'minecraft:glass_bottle',
         		fluid: Fluid.of('pneumaticcraft:memory_essence', 250),
-        		output: Item.of('minecraft:experience_bottle')
+        		output: 'minecraft:experience_bottle'
         	},
         	{
-        		input: Item.of('minecraft:glass_bottle'),
+        		input: 'minecraft:glass_bottle',
         		fluid: Fluid.of('cofh_core:experience', 250),
-        		output: Item.of('minecraft:experience_bottle')
+        		output: 'minecraft:experience_bottle'
         	},
             {
                 input: Ingredient.of('#forge:glass/colorless'),

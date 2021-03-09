@@ -13,18 +13,18 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
         	{
-        		input: Item.of('farmersdelight:milk_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
+        		input: 'farmersdelight:milk_bottle',
+        		container: 'minecraft:glass_bottle',
         		fluid: Fluid.of('minecraft:milk', 250)
         	},
         	{
-        		input: Item.of('autumnity:syrup_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
+        		input: 'autumnity:syrup_bottle',
+        		container: 'minecraft:glass_bottle',
         		fluid: Fluid.of('thermal:syrup', 25)
         	},
         	{
-        		input: Item.of('autumnity:sap_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
+        		input: 'autumnity:sap_bottle',
+        		container: 'minecraft:glass_bottle',
         		fluid: Fluid.of('thermal:sap', 500)
         	}
         ]
