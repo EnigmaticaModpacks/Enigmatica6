@@ -463,6 +463,7 @@ events.listen('recipes', (event) => {
             });
         }
 
+        console.log("wood type: " + wood.logType)
         var dupes = ['palo_verde',
             'withering_oak',
             'blue_archwood',
@@ -472,11 +473,15 @@ events.listen('recipes', (event) => {
             'watchful_aspen',
             'crustose',
             'sappy_maple'];
+        var ret = false;
         dupes.forEach((dupe) => {
             if(wood.logType == dupe) {
-                return;
+                ret = true;
             }
         })
+        if(ret) {
+            return;
+        }
         //All recipes using planks here
         event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
             A: wood.plankBlock,
