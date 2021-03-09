@@ -5,7 +5,7 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.create.filling(Item.of(honeyVariety + '_bottle'), [
-            fluid.of(honeyVariety, 250),
+            Fluid.of(honeyVariety, 250),
             Item.of('minecraft:glass_bottle')
         ]);
     });
@@ -13,39 +13,59 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
         	{
-        		output: Item.of('upgrade_aquatic:glow_squid_bucket'),
-        		container: Item.of('upgrade_aquatic:squid_bucket'),
-        		fluid: fluid.of('astralsorcery:liquid_starlight', 250)
+        		input: Item.of('upgrade_aquatic:squid_bucket'),
+        		fluid: Fluid.of('astralsorcery:liquid_starlight', 250),
+        		output: Item.of('upgrade_aquatic:glow_squid_bucket')
         	},
         	{
-        		output: Item.of('farmersdelight:milk_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
-        		fluid: {fluidTag: 'forge:milk', amount: 250}
+        		input: Item.of('minecraft:glass_bottle'),
+        		fluid: {fluidTag: 'forge:milk', amount: 250},
+        		output: Item.of('farmersdelight:milk_bottle')
         	},
         	{
-        		output: Item.of('farmersdelight:hot_cocoa'),
-        		container: Item.of('farmersdelight:milk_bottle'),
-        		fluid: fluid.of('create:chocolate', 250)
+        		input: Item.of('farmersdelight:milk_bottle'),
+        		fluid: Fluid.of('create:chocolate', 250),
+        		output: Item.of('farmersdelight:hot_cocoa')
         	},
         	{
-        		output: Item.of('minecraft:experience_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
-        		fluid: fluid.of('industrialforegoing:essence', 250)
+        		input: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('thermal:syrup', 25),
+        		output: Item.of('autumnity:syrup_bottle')
         	},
         	{
-        		output: Item.of('minecraft:experience_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
-        		fluid: fluid.of('pneumaticcraft:memory_essence', 250)
+        		input: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('thermal:sap', 500),
+        		output: Item.of('autumnity:sap_bottle')
         	},
         	{
-        		output: Item.of('minecraft:experience_bottle'),
-        		container: Item.of('minecraft:glass_bottle'),
-        		fluid: fluid.of('cofh_core:experience', 250)
-        	}
+        		input: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('industrialforegoing:essence', 250),
+        		output: Item.of('minecraft:experience_bottle')
+        	},
+        	{
+        		input: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('pneumaticcraft:memory_essence', 250),
+        		output: Item.of('minecraft:experience_bottle')
+        	},
+        	{
+        		input: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('cofh_core:experience', 250),
+        		output: Item.of('minecraft:experience_bottle')
+        	},
+            {
+                input: Ingredient.of('#forge:glass/colorless'),
+                fluid: Fluid.of('integrateddynamics:menril_resin', 1000),
+                output: 'integratedterminals:menril_glass'
+            },
+            {
+                input: Ingredient.of('#forge:glass/colorless'),
+                fluid: Fluid.of('integrateddynamics:liquid_chorus', 1000),
+                output: 'integratedterminals:chorus_glass'
+            }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.create.filling(recipe.output, [recipe.fluid, recipe.container]);
+        event.recipes.create.filling(recipe.output, [recipe.fluid, recipe.input]);
     });
 });

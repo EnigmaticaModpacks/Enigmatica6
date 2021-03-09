@@ -5,7 +5,7 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.create.emptying(
-            [fluid.of(honeyVariety, 250), Item.of('minecraft:glass_bottle')],
+            [Fluid.of(honeyVariety, 250), Item.of('minecraft:glass_bottle')],
             Item.of(honeyVariety + '_bottle')
         );
     });
@@ -15,7 +15,17 @@ events.listen('recipes', (event) => {
         	{
         		input: Item.of('farmersdelight:milk_bottle'),
         		container: Item.of('minecraft:glass_bottle'),
-        		fluid: {fluidTag: 'forge:milk', amount: 250}
+        		fluid: Fluid.of('minecraft:milk', 250)
+        	},
+        	{
+        		input: Item.of('autumnity:syrup_bottle'),
+        		container: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('thermal:syrup', 25)
+        	},
+        	{
+        		input: Item.of('autumnity:sap_bottle'),
+        		container: Item.of('minecraft:glass_bottle'),
+        		fluid: Fluid.of('thermal:sap', 500)
         	}
         ]
     };

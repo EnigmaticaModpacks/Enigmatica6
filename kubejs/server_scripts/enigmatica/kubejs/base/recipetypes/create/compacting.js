@@ -4,14 +4,14 @@ events.listen('recipes', (event) => {
             return;
         }
 
-        event.recipes.create.compacting(Item.of(honeyVariety + '_block'), [fluid.of(honeyVariety, 1000)]);
+        event.recipes.create.compacting(Item.of(honeyVariety + '_block'), [Fluid.of(honeyVariety, 1000)]);
     });
 
     var data = {
         recipes_unheated: [
             {
                 inputs: [
-                    fluid.of('resourcefulbees:honey')
+                    Fluid.of('resourcefulbees:honey')
                 ],
                 output: Item.of('minecraft:honey_block')
             },
@@ -35,7 +35,7 @@ events.listen('recipes', (event) => {
             },
             {
                 inputs: [
-                    fluid.of('immersiveengineering:concrete', 500)
+                    Fluid.of('immersiveengineering:concrete', 500)
                 ],
                 output: Item.of('immersiveengineering:slab_concrete', 1)
             }

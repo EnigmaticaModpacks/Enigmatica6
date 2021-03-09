@@ -5,7 +5,7 @@ events.listen('recipes', (event) => {
                 inputs: [
                     '#minecraft:planks',
                     '#minecraft:planks',
-                    fluid.of('immersiveengineering:creosote', 250)
+                    Fluid.of('immersiveengineering:creosote', 250)
                 ],
                 output: Item.of('immersiveengineering:treated_wood_horizontal', 2)
             },
@@ -14,7 +14,7 @@ events.listen('recipes', (event) => {
                     '#minecraft:coals',
                     '#minecraft:coals',
                     '#forge:clay',
-                    fluid.of('minecraft:lava', 500)
+                    Fluid.of('minecraft:lava', 500)
                 ],
                 output: Item.of('powah:dielectric_paste', 16)
             },
@@ -26,7 +26,7 @@ events.listen('recipes', (event) => {
                     '#forge:sand',
                     {fluidTag: 'minecraft:water', amount: 500}
                 ],
-                output: fluid.of('immersiveengineering:concrete', 500)
+                output: Fluid.of('immersiveengineering:concrete', 500)
             },
             {
                 inputs: [
@@ -36,7 +36,7 @@ events.listen('recipes', (event) => {
                     '#forge:slag',
                     {fluidTag: 'minecraft:water', amount: 750}
                 ],
-                output: fluid.of('immersiveengineering:concrete', 750)
+                output: Fluid.of('immersiveengineering:concrete', 750)
             },
             {
                 inputs: [
@@ -60,6 +60,10 @@ events.listen('recipes', (event) => {
             }
         ],
         recipes_heated: [
+            {
+                inputs: [Fluid.of('thermal:sap', 500)],
+                output: Fluid.of('thermal:syrup', 25)
+            },
             {
                 inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/tin'],
                 output: Item.of('emendatusenigmatica:bronze_ingot', 4)
