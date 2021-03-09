@@ -1,10 +1,10 @@
 
 ["Add New Version"]
 	#ModID's of the ServerConfigs that will be deleted when a world with a version lower than this version is loaded the first time. Comma Separated list. (ServerConfig without -server.toml)
-	toDelete = "astralsorcery"
+	toDelete = ""
 	#Version Number. VersionNumbers are simple Integers. Use a number larger than the last version.
 	#Range: > 0
-	newVersion = 2
+	newVersion = 0
 
 ["File Deleter"]
 	#By default Folders are only deleted if they are empty. Set to true to change that.
@@ -14,5 +14,5 @@
 
 ["Version History"]
 	#Editing these values will not affect any worlds that are already on that version.
-	history = "1=travel_anchors;"
+	history = "1=travel_anchors;2=astralsorcery;"
 
