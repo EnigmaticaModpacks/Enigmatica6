@@ -30,6 +30,7 @@ events.listen('recipes', (event) => {
         create_press_plates(event, material, gem, plate);
 
         emendatus_hammer_crushing(event, material, ore, dust);
+        emendatus_shapeless_transform(event, material, ore);
 
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
@@ -455,6 +456,14 @@ function emendatus_hammer_crushing(event, material, ore, dust) {
         'emendatusenigmatica:' + material + '_chunk',
         '#forge:ores/' + material
     );
+}
+
+function emendatus_shapeless_transform(event, material, ore) {
+    if (ore == air) {
+        return;
+    }
+
+    event.shapeless('emendatusenigmatica:' + material + '_ore', ['emendatusenigmatica:' + material + '_chunk']);
 }
 
 function immersiveengineering_hammer_crushing(event, material, ore, dust) {
