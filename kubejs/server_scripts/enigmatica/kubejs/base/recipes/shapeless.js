@@ -200,6 +200,10 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('supplementaries:flax_seeds', 1),
             inputs: ['supplementaries:flax']
+        },
+        {
+            output: Item.of('refinedstorage:quartz_enriched_iron', 4),
+            inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:gems/quartz']
         }
     ];
 
