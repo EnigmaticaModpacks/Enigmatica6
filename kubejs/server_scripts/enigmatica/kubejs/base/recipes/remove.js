@@ -79,6 +79,8 @@ events.listen('recipes', (event) => {
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
+        'farmersdelight:milk_bottle',
+        'farmersdelight:milk_bucket_from_bottles',
 
         'fluxnetworks:fluxcontroller',
         'fluxnetworks:fluxcore',

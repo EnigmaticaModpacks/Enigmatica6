@@ -18,6 +18,16 @@ events.listen('recipes', (event) => {
         		fluid: fluid.of('astralsorcery:liquid_starlight', 250)
         	},
         	{
+        		output: Item.of('farmersdelight:milk_bottle'),
+        		container: Item.of('minecraft:glass_bottle'),
+        		fluid: {fluidTag: 'forge:milk', amount: 250}
+        	},
+        	{
+        		output: Item.of('farmersdelight:hot_cocoa'),
+        		container: Item.of('farmersdelight:milk_bottle'),
+        		fluid: fluid.of('create:chocolate', 250)
+        	},
+        	{
         		output: Item.of('minecraft:experience_bottle'),
         		container: Item.of('minecraft:glass_bottle'),
         		fluid: fluid.of('industrialforegoing:essence', 250)
