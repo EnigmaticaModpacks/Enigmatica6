@@ -463,7 +463,6 @@ events.listen('recipes', (event) => {
             });
         }
 
-        console.log("wood type: " + wood.logType)
         var dupes = ['palo_verde',
             'withering_oak',
             'blue_archwood',
