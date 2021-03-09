@@ -477,15 +477,11 @@ events.listen('recipes', (event) => {
             'crustose',
             'sappy_maple'
         ];
-        var ret = false;
-        dupes.forEach((dupe) => {
-            if (wood.logType == dupe) {
-                ret = true;
-            }
-        });
-        if (ret) {
+
+        if (dupes.includes(wood.logType)) {
             return;
         }
+
         //All recipes using planks here
         event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
             A: wood.plankBlock,
