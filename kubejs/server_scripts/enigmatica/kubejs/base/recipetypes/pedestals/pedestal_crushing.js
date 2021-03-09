@@ -30,6 +30,11 @@ events.listen('recipes', (event) => {
                 output: 'emendatusenigmatica:obsidian_dust',
                 count: 4,
                 id: 'pedestals:pedestal_crushing/obsidian'
+            },
+            {
+                input: '#forge:grain',
+                output: 'create:wheat_flour',
+                count: 1,
             }
         ]
     };

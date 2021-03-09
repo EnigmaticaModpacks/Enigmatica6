@@ -105,6 +105,11 @@ events.listen('recipes', (event) => {
                 outputs: [Item.of('emendatusenigmatica:obsidian_dust', 4)],
                 experience: 0.2,
                 id: 'thermal:machine/pulverizer/pulverizer_obsidian'
+            },
+            {
+                input: '#forge:grain',
+                outputs: [Item.of('create:wheat_flour'), Item.of('create:wheat_flour').chance(0.25)],
+                experience: 0.2
             }
         ]
     };

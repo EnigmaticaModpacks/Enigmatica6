@@ -139,11 +139,21 @@ events.listen('recipes', (event) => {
         '/integrateddynamics:\\w+/ore/'
     ];
 
+    var regexIdRemovals = [
+        /emendatusenigmatica:ore_from_chunk_crafting/,
+        /emendatusenigmatica:ore_from_chunk_stonecutting/,
+        /create:\w+\/bread/
+    ];
+
     outputRemovals.forEach((removal) => {
         event.remove({ output: removal });
     });
 
     idRemovals.forEach((removal) => {
+        event.remove({ id: removal });
+    });
+
+    regexIdRemovals.forEach((removal) => {
         event.remove({ id: removal });
     });
 
@@ -239,9 +249,6 @@ events.listen('recipes', (event) => {
     });
     event.remove({
         id: /emendatusenigmatica:ore_from_chunk_crafting/
-    });
-    event.remove({
-        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
     });
     event.remove({
         input: 'minecraft:fire_charge',
