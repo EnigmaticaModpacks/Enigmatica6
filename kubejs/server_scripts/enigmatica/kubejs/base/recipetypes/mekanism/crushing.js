@@ -48,6 +48,10 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:end_stones',
                 output: Item.of('occultism:crushed_end_stone', 4)
+            },
+            {
+                input: '#forge:grain',
+                output: Item.of('create:wheat_flour', 1)
             }
         ]
     };

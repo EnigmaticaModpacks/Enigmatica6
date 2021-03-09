@@ -22,6 +22,11 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
     event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');
     event.replaceInput({}, 'upgrade_aquatic:beachgrass', '#enigmatica:crafting_materials/beach_grass');
+    event.replaceInput({}, 'pneumaticcraft:wheat_flour', '#forge:dusts/flour');
+    event.replaceInput({}, 'create:wheat_flour', '#forge:dusts/flour');
+    event.replaceInput({}, 'pedestals:dustflour', '#forge:dusts/flour');
+    event.replaceInput({}, 'create:dough', '#forge:doughs');
+    event.replaceInput({}, 'farmersdelight:wheat_dough', '#forge:doughs');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');

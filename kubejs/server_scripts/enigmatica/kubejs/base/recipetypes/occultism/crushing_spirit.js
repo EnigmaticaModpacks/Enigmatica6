@@ -14,6 +14,12 @@ events.listen('recipes', (event) => {
                 count: 4,
                 time: 400,
                 id: 'occultism:crushing/obsidian_dust'
+            },
+            {
+                input: 'forge:grain',
+                output: 'create:wheat_flour',
+                count: 1,
+                time: 400,
             }
         ]
     };

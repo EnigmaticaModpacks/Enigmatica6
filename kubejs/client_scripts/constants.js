@@ -259,6 +259,8 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'create:dough',
+
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
@@ -280,6 +282,8 @@ const disabledItems = [
     'mythicbotany:wither_aconite_floating',
 
     'pitg:green_dye',
+
+    'pneumaticcraft:wheat_flour',
 
     'quark:pipe',
     'quark:potato_crate',

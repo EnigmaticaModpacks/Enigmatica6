@@ -31,6 +31,13 @@ events.listen('recipes', (event) => {
                 ],
                 pressure: 1.0,
                 output: [{ item: 'pneumaticcraft:transistor' }]
+            },
+            {
+                ingredients: [
+                    { type: 'pneumaticcraft:stacked_item', tag: 'forge:grain', count: 1 }
+                ],
+                pressure: 1.5,
+                output: [{ item: 'create:wheat_flour', count: 2}]
             }
         ]
     };
