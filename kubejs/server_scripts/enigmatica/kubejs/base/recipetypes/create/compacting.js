@@ -11,6 +11,12 @@ events.listen('recipes', (event) => {
         recipes_unheated: [
             {
                 inputs: [
+                    fluid.of('resourcefulbees:honey')
+                ],
+                output: Item.of('minecraft:honey_block')
+            },
+            {
+                inputs: [
                     'create:wheat_flour',
                     'create:wheat_flour',
                     'create:wheat_flour',
