@@ -214,7 +214,10 @@
 			subtitle: "Super. Hot.",
 			description: [
 				"Ever wondered if you could use lava as a renewable, self sufficient power source? Well the Thermo Generator is for you!",
-				"This handy device will generate a small amount of power as long as it’s placed over a heat source (lava, magma blocks, etc.) and has a liquid coolant (like water) in its internal tank. "
+				"",
+				"This handy device will generate a small amount of power as long as it’s placed over a heat source (lava, magma blocks, etc.) and has a liquid coolant (like water) in its internal tank.",
+				"",
+				"Note: The FE/t values displayed in JEI are only the baseline. Liquid Coolants play an important role in energy production. "
 			],
 			dependencies: ["0000000000000176"],
 			optional: true,
@@ -348,7 +351,9 @@
 				"Simply make 36 reactor blocks of any tier (all of the same tier) and place one on the ground to automatically build the 3x4 structure. ",
 				"",
 				"Since the reactor is fairly complex and there would be not enough space to accurately describe how it works here, I will redirect you to its entry in Powah’s manual. You can learn all about how to make it work there.",
-				"Happy powering!"
+				"Happy powering!",
+				"",
+				"Note: The FE/t values displayed in JEI are only the baseline. These reactors are heavily influenced by the auxiliary materials added to them such as Carbon and Redstone. Liquid and Solid Coolants also play an important role in fuel efficiency. "
 			],
 			dependencies: ["0000000000000186"],
 			size: 1.5d,
