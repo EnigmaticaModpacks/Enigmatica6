@@ -542,7 +542,7 @@ events.listen('recipes', (event) => {
     event.recipes.industrialforegoing.laser_drill_ore({
         type: 'industrialforegoing.laser_drill_ore',
         output: {
-            item: 'minecraft:nether_quartz_ore'
+            tag: 'forge:chunks/quartz'
         },
         rarity: [
             {
