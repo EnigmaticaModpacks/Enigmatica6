@@ -38,9 +38,28 @@ events.listen('recipes', (event) => {
                     Fluid.of('immersiveengineering:concrete', 500)
                 ],
                 output: Item.of('immersiveengineering:slab_concrete', 1)
+            },
+            {
+                inputs: [
+                    Fluid.of('thermal:latex', 1000)
+                ],
+                output: Item.of('thermal:rubber', 3)
             }
         ],
-        recipes_heated: [],
+        recipes_heated: [
+            {
+                inputs: [
+                    'minecraft:vine'
+                ],
+                output: Fluid.of('thermal:latex', 50)
+            },
+            {
+                inputs: [
+                    'minecraft:dandelion'
+                ],
+                output: Fluid.of('thermal:latex', 50)
+            }
+        ],
         recipes_superheated: []
     };
     
