@@ -611,6 +611,12 @@ const cropRegistry = [
                 render: 'betterendforge:lumecorn_seed',
                 plant: 'betterendforge:lumecorn_rod',
                 substrate: 'end_moss'
+            },
+            {
+                seed: 'supplementaries:flax_seeds',
+                render: 'supplementaries:flax',
+                plant: 'supplementaries:flax',
+                substrate: 'dirt'
             }
         ]
     },

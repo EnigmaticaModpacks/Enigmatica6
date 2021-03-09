@@ -1,12 +1,15 @@
-### Enigmatica 6 v0.4.3
+### Enigmatica 6 v0.4.4
 
-_Using Forge-1.16.5-36.0.45_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.3.md)_
+_Using Forge-1.16.5-36.0.46_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.4.md)_
 
 **If you're updating from 0.3.x please read the last 3 changelogs**
 
 **Improvements/Changes**
 
 -   Bees: I-C-Bee Honey Bottles output chance increased to 50% from 2%
+-   Dropoff/quickstack once again ignores the hotbar
+-   Thermal: Added JEI info about Blitz, Blizz & Basalz
+-   StorageDrawers: Added JEI info about Framed Drawers (Merlo)
 
 **Bug Fixes**
 

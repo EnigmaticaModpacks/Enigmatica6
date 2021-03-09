@@ -10,14 +10,14 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen');
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
-    event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
-    event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
     event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+    event.replaceInput({}, 'farmersdelight:brown_mushroom_colony', '#forge:mushroom_colonies/brown');
+    event.replaceInput({}, 'farmersdelight:red_mushroom_colony', '#forge:mushroom_colonies/red');
     event.replaceInput({}, 'betterendforge:ender_dust', '#forge:dusts/ender');
     event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
     event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');

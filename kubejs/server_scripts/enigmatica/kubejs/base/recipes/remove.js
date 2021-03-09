@@ -47,12 +47,17 @@ events.listen('recipes', (event) => {
     ];
 
     var idRemovals = [
+        'aquaculture:brown_mushroom_from_fish',
+        'aquaculture:frog_legs',
         'aquaculture:gold_nugget_from_blasting',
+        'aquaculture:gold_nugget_from_gold_fish',
         'aquaculture:gold_nugget_from_smelting',
         'aquaculture:iron_nugget_from_blasting',
         'aquaculture:iron_nugget_from_smelting',
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
+        'aquaculture:planks_from_driftwood',
+        'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
 
@@ -79,6 +84,7 @@ events.listen('recipes', (event) => {
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
+        'immersiveengineering:crusher/bone_meal',
 
         'immersiveengineering:crafting/jerrycan',
 
@@ -121,6 +127,8 @@ events.listen('recipes', (event) => {
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+
+        'supplementaries:strings_recipe',
 
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',

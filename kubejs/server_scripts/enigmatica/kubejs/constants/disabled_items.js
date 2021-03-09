@@ -23,6 +23,8 @@ const disabledItems = [
     'aquaculture:iron_fillet_knife',
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
+    'aquaculture:frog_legs_raw',
+    'aquaculture:frog_legs_cooked',
 
     'betterendforge:ender_dust',
 
