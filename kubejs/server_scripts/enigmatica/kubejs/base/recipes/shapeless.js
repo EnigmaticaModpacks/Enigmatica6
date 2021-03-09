@@ -196,6 +196,10 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('minecraft:paper', 3),
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
+        },
+        {
+            output: Item.of('supplementaries:flax_seeds', 1),
+            inputs: ['supplementaries:flax']
         }
     ];
 

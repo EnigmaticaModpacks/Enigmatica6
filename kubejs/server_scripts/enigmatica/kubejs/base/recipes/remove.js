@@ -128,6 +128,8 @@ events.listen('recipes', (event) => {
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
+        'supplementaries:strings_recipe',
+
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',
         '/integrateddynamics:\\w+/ore/redstone/',
