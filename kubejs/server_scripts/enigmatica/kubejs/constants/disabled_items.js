@@ -84,4 +84,5 @@ const disabledItems = [
 
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon'
+    'simplefarming:noodles'
 ];
