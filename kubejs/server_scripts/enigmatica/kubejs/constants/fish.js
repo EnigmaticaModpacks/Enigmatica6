@@ -44,7 +44,5 @@ const fishBuckets = [
     'upgrade_aquatic:glow_squid_bucket',
     'upgrade_aquatic:nautilus_bucket',
     'upgrade_aquatic:pike_bucket',
-    'upgrade_aquatic:lionfish_bucket',
-    'environmental:slabfish_bucket',
-    'environmental:koi_bucket'
+    'upgrade_aquatic:lionfish_bucket'
 ];
