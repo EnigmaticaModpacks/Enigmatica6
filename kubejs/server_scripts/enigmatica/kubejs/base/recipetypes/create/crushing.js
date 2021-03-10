@@ -20,6 +20,13 @@ events.listen('recipes', (event) => {
                     Item.of('betterendforge:crystal_shards').withChance(0.5)
                 ],
                 input: '#forge:storage_blocks/aurora'
+            },
+            {
+                outputs: [
+                    Item.of('byg:quartzite_sand', 2),
+                    Item.of('byg:quartzite_sand').withChance(0.5)
+                ],
+                input: 'byg:raw_quartz_block'
             }
         ]
     };

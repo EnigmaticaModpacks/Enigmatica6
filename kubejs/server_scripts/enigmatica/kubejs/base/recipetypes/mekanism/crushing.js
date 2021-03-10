@@ -52,6 +52,10 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:grain',
                 output: Item.of('create:wheat_flour', 1)
+            },
+            {
+                input: 'byg:raw_quartz_block',
+                output: Item.of('byg:quartzite_sand', 2)
             }
         ]
     };

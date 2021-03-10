@@ -13,6 +13,13 @@ events.listen('recipes', (event) => {
                 input: 'create:limesand'
             },
             {
+                outputs: [
+                    Item.of('minecraft:quartz', 2),
+                    Item.of('minecraft:quartz').chance(0.25)
+                ],
+                input: 'byg:quartzite_sand'
+            },
+            {
                 outputs: ['embellishcraft:rusty_wall_ladder'],
                 input: 'embellishcraft:steel_wall_ladder'
             },
