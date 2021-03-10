@@ -27,6 +27,14 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'pedestals:dustflour', '#forge:dusts/flour');
     event.replaceInput({}, 'create:dough', '#forge:doughs');
     event.replaceInput({}, 'farmersdelight:wheat_dough', '#forge:doughs');
+    event.replaceInput({}, 'create:bar_of_chocolate', '#forge:chocolate_bars');
+    event.replaceInput({}, 'simplefarming:chocolate', '#forge:chocolate_bars');
+    event.replaceInput({}, 'simplefarming:noodles', '#forge:pasta/raw_pasta');
+    event.replaceInput({}, 'simplefarming:jam', '#forge:jams');
+    event.replaceInput({}, 'simplefarming:raw_bacon', '#forge:raw_bacon');
+    event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
+    event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
+    event.replaceInput({ id: '/simplefarming:\\w+burger/'}, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
     event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');

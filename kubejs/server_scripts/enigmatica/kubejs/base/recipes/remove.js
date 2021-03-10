@@ -48,7 +48,6 @@ events.listen('recipes', (event) => {
 
     var idRemovals = [
         'aquaculture:brown_mushroom_from_fish',
-        'aquaculture:frog_legs',
         'aquaculture:gold_nugget_from_blasting',
         'aquaculture:gold_nugget_from_gold_fish',
         'aquaculture:gold_nugget_from_smelting',
@@ -60,6 +59,8 @@ events.listen('recipes', (event) => {
         'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+
+        'autumnity:turkey_piece',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
@@ -78,6 +79,7 @@ events.listen('recipes', (event) => {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
         'farmersdelight:milk_bottle',
         'farmersdelight:milk_bucket_from_bottles',
@@ -131,6 +133,8 @@ events.listen('recipes', (event) => {
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+
+        'simplefarming:raw_chicken_wings',
 
         'supplementaries:strings_recipe',
 
