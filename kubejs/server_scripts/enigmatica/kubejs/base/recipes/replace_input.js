@@ -27,6 +27,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'pedestals:dustflour', '#forge:dusts/flour');
     event.replaceInput({}, 'create:dough', '#forge:doughs');
     event.replaceInput({}, 'farmersdelight:wheat_dough', '#forge:doughs');
+    event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:raw_chicken');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
