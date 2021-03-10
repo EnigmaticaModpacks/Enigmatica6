@@ -83,6 +83,7 @@ const disabledItems = [
     'thermal:apple_block',
 
     'simplefarming:raw_bacon',
-    'simplefarming:cooked_bacon'
+    'simplefarming:cooked_bacon',
+    'simplefarming:cooked_egg',
     'simplefarming:noodles'
 ];
