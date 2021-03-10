@@ -236,6 +236,8 @@ const disabledItems = [
 
     'betterendforge:ender_dust',
 
+    'blockcarpentry:frame_chest',
+
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
@@ -261,6 +263,7 @@ const disabledItems = [
 
     'create:dough',
 
+    'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
