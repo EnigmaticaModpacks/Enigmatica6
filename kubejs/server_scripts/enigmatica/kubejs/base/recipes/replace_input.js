@@ -33,7 +33,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:jam', '#forge:jams');
     event.replaceInput({}, 'simplefarming:raw_bacon', '#forge:raw_bacon');
     event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
-    event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:raw_chicken');
+    event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
     event.replaceInput({ id: '/simplefarming:\\w+burger/'}, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
     event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
