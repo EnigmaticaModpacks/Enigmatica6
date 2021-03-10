@@ -31,6 +31,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:chocolate', '#forge:chocolate_bars');
     event.replaceInput({}, 'simplefarming:noodles', '#forge:pasta/raw_pasta');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:raw_chicken');
+    event.replaceInput({ id: '/simplefarming:\\w+burger/'}, 'minecraft:cooked_beef', 'farmersdelight:beef_patty')
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
