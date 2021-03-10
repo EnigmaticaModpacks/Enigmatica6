@@ -459,7 +459,7 @@ function emendatus_hammer_crushing(event, material, ore, dust) {
     );
 }
 
-function emendatus_shapeless_transform(event, material, ore) {
+function emendatus_shapeless_transform(event, material, ore, chunk) {
     if (ore == air || chunk == air) {
         return;
     }
