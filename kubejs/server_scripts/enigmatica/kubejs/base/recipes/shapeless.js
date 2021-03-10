@@ -197,6 +197,15 @@ events.listen('recipes', (event) => {
             output: Item.of('minecraft:paper', 3),
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
         },
+        {
+            output: Item.of('supplementaries:flax_seeds', 1),
+            inputs: ['supplementaries:flax']
+        },
+        {
+            output: Item.of('refinedstorage:quartz_enriched_iron', 4),
+            inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:gems/quartz'],
+            id: 'refinedstorage:quartz_enriched_iron'
+        },
         { output: Item.of('byg:quartz_crystal'), inputs: ['minecraft:quartz'] }
     ];
 
