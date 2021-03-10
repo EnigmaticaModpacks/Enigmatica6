@@ -13,7 +13,14 @@ events.listen('recipes', (event) => {
                 input: 'create:limesand'
             },
             {
-            outputs: ['embellishcraft:rusty_wall_ladder'],
+                outputs: [
+                    Item.of('minecraft:quartz', 2),
+                    Item.of('minecraft:quartz').chance(0.25)
+                ],
+                input: 'byg:quartzite_sand'
+            },
+            {
+                outputs: ['embellishcraft:rusty_wall_ladder'],
                 input: 'embellishcraft:steel_wall_ladder'
             },
             {
@@ -55,17 +62,31 @@ events.listen('recipes', (event) => {
             {
                 outputs: ['dustrial_decor:rusty_iron_trapdoor'],
                 input: 'minecraft:iron_trapdoor'
-            },
-            {
-                outputs: [
-                    Item.of('minecraft:quartz', 2),
-                    Item.of('minecraft:quartz').chance(0.25)
-                ],
-                input: 'byg:quartzite_sand'
             }
+        ],
+        rusty_items: [
+            'quark:rusty_iron_plate_slab',
+            'quark:rusty_iron_plate_stairs',
+            'quark:rusty_iron_plate_vertical_slab',
+            'dustrial_decor:rusty_sheet_metal',
+            'dustrial_decor:rusty_sheet_metal_plating',
+            'dustrial_decor:rusty_sheet_metal_plating_slab',
+            'dustrial_decor:rusty_sheet_metal_plating_stairs',
+            'dustrial_decor:rusty_sheet_metal_paneling',
+            'dustrial_decor:rusty_sheet_metal_siding',
+            'dustrial_decor:rusty_sheet_metal_walling',
+            'dustrial_decor:rusty_sheet_metal_treading',
+            'dustrial_decor:rusty_sheet_metal_treading_slab',
+            'dustrial_decor:rusty_sheet_metal_treading_stairs',
+            'dustrial_decor:rusty_sheet_metal_trapdoor',
+            'dustrial_decor:rusty_sheet_metal_door'
         ]
     };
+    
     data.recipes.forEach((recipe) => {
         event.recipes.create.splashing(recipe.outputs, recipe.input);
+    });
+    data.rusty_items.forEach((item) => {
+        event.recipes.create.splashing([item], item.replace('rusty_', ''));
     });
 });
