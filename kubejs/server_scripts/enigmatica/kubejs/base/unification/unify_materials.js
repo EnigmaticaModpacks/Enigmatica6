@@ -4,6 +4,7 @@ events.listen('recipes', (event) => {
         var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
         var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        var chunk = getPreferredItemInTag(Ingredient.of('#forge:chunks/' + material)).id;
 
         var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
         var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
@@ -30,7 +31,7 @@ events.listen('recipes', (event) => {
         create_press_plates(event, material, gem, plate);
 
         emendatus_hammer_crushing(event, material, ore, dust);
-        emendatus_shapeless_transform(event, material, ore);
+        emendatus_shapeless_transform(event, material, ore, chunk);
 
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
@@ -459,7 +460,7 @@ function emendatus_hammer_crushing(event, material, ore, dust) {
 }
 
 function emendatus_shapeless_transform(event, material, ore) {
-    if (ore == air) {
+    if (ore == air || chunk == air) {
         return;
     }
 
