@@ -302,7 +302,8 @@ const disabledItems = [
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
-    'simplefarming:noodles'
+    'simplefarming:noodles',
+    'simplefarming:chocolate'
 ];
 const materialsToUnify = [
     'iron',

@@ -134,6 +134,7 @@ events.listen('recipes', (event) => {
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
+        'simplefarming:candy',
         'simplefarming:raw_chicken_wings',
 
         'supplementaries:strings_recipe',

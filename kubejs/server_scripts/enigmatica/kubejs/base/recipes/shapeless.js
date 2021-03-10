@@ -54,6 +54,14 @@ events.listen('recipes', (event) => {
                 'farmersdelight:milk_bottle'
             ]
         },
+        {
+            output: Item.of('simplefarming:candy', 2),
+            inputs: [
+                '#forge:chocolate_bars',
+                'minecraft:sugar',
+                'minecraft:sugar'
+            ]
+        },
         { output: 'minecraft:wheat_seeds', inputs: ['minecraft:wheat'] },
         { output: 'quark:root', inputs: ['minecraft:vine', '#forge:dyes/brown'] },
         {
