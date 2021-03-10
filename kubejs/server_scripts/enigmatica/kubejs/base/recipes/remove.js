@@ -140,7 +140,8 @@ events.listen('recipes', (event) => {
         '/integrateddynamics:\\w+/ore/quartz/',
 
         '/integrateddynamics:\\w+/convenience/',
-        '/integrateddynamics:\\w+/ore/'
+        '/integrateddynamics:\\w+/ore/',
+        '/integrateddynamics:blasting/menril_log/'
     ];
 
     var regexIdRemovals = [
