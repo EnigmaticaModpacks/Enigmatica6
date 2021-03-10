@@ -19,6 +19,11 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             cuttingRecipe(
+                Ingredient.of('minecraft:chicken'),
+                Ingredient.of('#forge:tools/knives'),
+                [Item.of('farmersdelight:chicken_cuts', 2), Item.of('simplefarming:raw_chicken_wings'), Item.of('minecraft:bone_meal')]
+            ),
+            cuttingRecipe(
                 Ingredient.of('aquaculture:frog'),
                 Ingredient.of('#forge:tools/knives'),
                 [Item.of('quark:frog_leg', 2)]
