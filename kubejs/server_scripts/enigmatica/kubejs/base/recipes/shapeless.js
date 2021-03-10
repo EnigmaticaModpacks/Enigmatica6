@@ -196,7 +196,8 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('minecraft:paper', 3),
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
-        }
+        },
+        { output: Item.of('byg:quartz_crystal'), inputs: ['minecraft:quartz'] }
     ];
 
     recipes.forEach((recipe) => {

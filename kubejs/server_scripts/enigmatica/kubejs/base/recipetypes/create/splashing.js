@@ -11,6 +11,13 @@ events.listen('recipes', (event) => {
                     Item.of('emendatusenigmatica:silicon_gem').chance(0.25)
                 ],
                 input: 'create:limesand'
+            },
+            {
+                outputs: [
+                    Item.of('minecraft:quartz', 2),
+                    Item.of('minecraft:quartz').chance(0.25)
+                ],
+                input: 'byg:quartzite_sand'
             }
         ]
     };
