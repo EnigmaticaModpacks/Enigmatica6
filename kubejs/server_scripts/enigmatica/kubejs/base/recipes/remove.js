@@ -48,7 +48,6 @@ events.listen('recipes', (event) => {
 
     var idRemovals = [
         'aquaculture:brown_mushroom_from_fish',
-        'aquaculture:frog_legs',
         'aquaculture:gold_nugget_from_blasting',
         'aquaculture:gold_nugget_from_gold_fish',
         'aquaculture:gold_nugget_from_smelting',
