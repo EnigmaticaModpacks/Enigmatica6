@@ -463,6 +463,9 @@ function emendatus_shapeless_transform(event, material, ore, chunk) {
     if (ore == air || chunk == air) {
         return;
     }
+    if (material == 'mana') {
+        material = 'arcane';
+    }
 
     event.shapeless('emendatusenigmatica:' + material + '_ore', ['emendatusenigmatica:' + material + '_chunk']);
 }
