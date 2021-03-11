@@ -6,6 +6,8 @@ events.listen('recipes', (event) => {
     event.replaceOutput({}, 'thermal:bitumen', '#forge:gems/bitumen');
     event.replaceOutput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
     event.replaceOutput({}, 'refinedstorage:silicon', '#forge:gems/silicon');
+    event.replaceOutput({}, 'create:dough', 'farmersdelight:wheat_dough');
+    event.replaceOutput({}, 'simplefarming:chocolate', 'create:bar_of_chocolate');
 
     event.replaceOutput({ mod: 'dustrial_decor' }, 'minecraft:iron_ingot', 'dustrial_decor:rusty_iron_ingot');
     event.replaceOutput({ mod: 'dustrial_decor' }, 'minecraft:iron_nugget', 'dustrial_decor:rusty_iron_nugget');

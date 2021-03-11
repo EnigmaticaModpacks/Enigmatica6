@@ -33,6 +33,7 @@ const disabledItems = [
     'bloodmagic:fragment_netherite_scrap',
 
     // 'bountifulbaubles:potion_wormhole',
+    'blockcarpentry:frame_chest',
 
     'byg:ametrine_block',
     'byg:ametrine_boots',
@@ -53,6 +54,7 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
@@ -83,5 +85,7 @@ const disabledItems = [
     'thermal:apple_block',
 
     'simplefarming:raw_bacon',
-    'simplefarming:cooked_bacon'
+    'simplefarming:cooked_bacon',
+    'simplefarming:cooked_egg',
+    'simplefarming:noodles'
 ];

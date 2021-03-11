@@ -236,6 +236,8 @@ const disabledItems = [
 
     'betterendforge:ender_dust',
 
+    'blockcarpentry:frame_chest',
+
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
@@ -259,6 +261,9 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'create:dough',
+
+    'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
@@ -281,6 +286,8 @@ const disabledItems = [
 
     'pitg:green_dye',
 
+    'pneumaticcraft:wheat_flour',
+
     'quark:pipe',
     'quark:potato_crate',
     'quark:beetroot_crate',
@@ -293,7 +300,10 @@ const disabledItems = [
     'thermal:apple_block',
 
     'simplefarming:raw_bacon',
-    'simplefarming:cooked_bacon'
+    'simplefarming:cooked_bacon',
+    'simplefarming:cooked_egg',
+    'simplefarming:noodles',
+    'simplefarming:chocolate'
 ];
 const materialsToUnify = [
     'iron',

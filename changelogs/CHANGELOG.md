@@ -10,6 +10,7 @@ _Using Forge-1.16.5-36.0.46_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Dropoff/quickstack once again ignores the hotbar
 -   Thermal: Added JEI info about Blitz, Blizz & Basalz
 -   StorageDrawers: Added JEI info about Framed Drawers (Merlo)
+-   Create: Rockwool & Quilted Wool can now be used as Windmill Sails
 
 **Bug Fixes**
 

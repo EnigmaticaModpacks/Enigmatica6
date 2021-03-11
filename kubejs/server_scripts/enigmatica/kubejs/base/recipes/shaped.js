@@ -431,7 +431,13 @@ events.listen('recipes', (event) => {
                 A: 'minecraft:honeycomb'
             },
             'minecraft:honeycomb_block'
-        )
+        ),
+
+        // Torch from Stick+Standing Fire
+        shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
+            A: 'additional_lights:fire_for_standing_torch_s',
+            B: '#forge:rods/wooden'
+        }),
     ];
 
     recipes.forEach(function (recipe) {
@@ -477,15 +483,11 @@ events.listen('recipes', (event) => {
             'crustose',
             'sappy_maple'
         ];
-        var ret = false;
-        dupes.forEach((dupe) => {
-            if (wood.logType == dupe) {
-                ret = true;
-            }
-        });
-        if (ret) {
+
+        if (dupes.includes(wood.logType)) {
             return;
         }
+
         //All recipes using planks here
         event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
             A: wood.plankBlock,

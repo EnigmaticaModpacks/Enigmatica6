@@ -48,7 +48,6 @@ events.listen('recipes', (event) => {
 
     var idRemovals = [
         'aquaculture:brown_mushroom_from_fish',
-        'aquaculture:frog_legs',
         'aquaculture:gold_nugget_from_blasting',
         'aquaculture:gold_nugget_from_gold_fish',
         'aquaculture:gold_nugget_from_smelting',
@@ -60,6 +59,8 @@ events.listen('recipes', (event) => {
         'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+
+        'autumnity:turkey_piece',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
@@ -77,6 +78,11 @@ events.listen('recipes', (event) => {
 
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
+
+        'farmersdelight:cutting/chicken',
+        'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
+        'farmersdelight:milk_bottle',
+        'farmersdelight:milk_bucket_from_bottles',
 
         'fluxnetworks:fluxcontroller',
         'fluxnetworks:fluxcore',
@@ -128,6 +134,9 @@ events.listen('recipes', (event) => {
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
+        'simplefarming:candy',
+        'simplefarming:raw_chicken_wings',
+
         'supplementaries:strings_recipe',
 
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
@@ -136,7 +145,14 @@ events.listen('recipes', (event) => {
         '/integrateddynamics:\\w+/ore/quartz/',
 
         '/integrateddynamics:\\w+/convenience/',
-        '/integrateddynamics:\\w+/ore/'
+        '/integrateddynamics:\\w+/ore/',
+        '/integrateddynamics:blasting/menril_log/'
+    ];
+
+    var regexIdRemovals = [
+        /emendatusenigmatica:ore_from_chunk_crafting/,
+        /emendatusenigmatica:ore_from_chunk_stonecutting/,
+        /create:\w+\/bread/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -144,6 +160,10 @@ events.listen('recipes', (event) => {
     });
 
     idRemovals.forEach((removal) => {
+        event.remove({ id: removal });
+    });
+
+    regexIdRemovals.forEach((removal) => {
         event.remove({ id: removal });
     });
 
@@ -239,9 +259,6 @@ events.listen('recipes', (event) => {
     });
     event.remove({
         id: /emendatusenigmatica:ore_from_chunk_crafting/
-    });
-    event.remove({
-        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
     });
     event.remove({
         input: 'minecraft:fire_charge',
