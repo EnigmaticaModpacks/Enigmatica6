@@ -258,8 +258,8 @@
 		},
 		{
 			icon: "immersiveengineering:watermill",
-			x: -7.5d,
-			y: 0.0d,
+			x: -1.5d,
+			y: -3.0d,
 			description: ["Water Wheels need to have water flowing over them. Up to three can be placed against a Kinetic Dynamo to produce power."],
 			dependencies: ["0000000000000012"],
 			id: "000000000000001B",
@@ -305,8 +305,8 @@
 		{
 			title: "Crusher",
 			icon: "immersiveengineering:light_engineering",
-			x: -3.5d,
-			y: 1.0d,
+			x: -4.0d,
+			y: 0.5d,
 			description: [
 				"The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI.",
 				"",
@@ -357,8 +357,8 @@
 		{
 			title: "Metal Press",
 			icon: "immersiveengineering:mold_plate",
-			x: -1.0d,
-			y: 0.0d,
+			x: -1.5d,
+			y: 0.5d,
 			description: [
 				"The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more.",
 				"",
@@ -413,14 +413,16 @@
 		{
 			title: "Improved Blast Furnace",
 			icon: "immersiveengineering:blastbrick_reinforced",
-			x: 0.5d,
-			y: 0.0d,
+			x: -4.0d,
+			y: -2.0d,
+			shape: "diamond",
 			description: [
 				"The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
 			dependencies: ["0000000000000012"],
+			size: 0.75d,
 			id: "0000000000000024",
 			tasks: [
 				{
@@ -446,7 +448,7 @@
 		},
 		{
 			title: "Alloy Kiln",
-			x: -1.5d,
+			x: 0.0d,
 			y: -3.0d,
 			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."],
 			dependencies: ["0000000000000007"],
@@ -467,15 +469,14 @@
 		{
 			title: "Arc Furnace",
 			icon: "immersiveengineering:storage_steel",
-			x: -3.5d,
+			x: -4.0d,
 			y: 2.5d,
 			description: [
-				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys and recycle metal gear.",
+				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
 			dependencies: [
-				"0000000000000024",
 				"0000000000000020",
 				"000000000000003A"
 			],
@@ -619,8 +620,8 @@
 					Damage: 0
 				}
 			},
-			x: -2.5d,
-			y: 0.0d,
+			x: 0.0d,
+			y: 0.5d,
 			description: [
 				"The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual.",
 				"",
@@ -688,14 +689,14 @@
 		{
 			title: "Squeezer and Fermenter",
 			icon: "immersiveengineering:plantoil_bucket",
-			x: -7.5d,
-			y: 2.5d,
+			x: -3.0d,
+			y: 0.5d,
 			description: [
 				"The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: ["000000000000001B"],
+			dependencies: ["0000000000000012"],
 			id: "000000000000003A",
 			tasks: [
 				{
@@ -718,7 +719,7 @@
 		},
 		{
 			title: "Biodiesel",
-			x: -8.5d,
+			x: -3.0d,
 			y: 2.5d,
 			description: [
 				"Biodiesel is made in the Refinery, and can be used as a fuel for the powerful (if noisy) Diesel Generator, producing massive amounts of RF/t.",
@@ -744,8 +745,8 @@
 		{
 			title: "Excavator",
 			icon: "minecraft:gold_ore",
-			x: -4.5d,
-			y: 1.0d,
+			x: -7.0d,
+			y: 0.5d,
 			description: [
 				"Once you've determined an appropriate spot to excavate, you can build this machine there. Note that the Excavator requires a rather hefty 4096 RF/t.",
 				"",
@@ -811,10 +812,10 @@
 				id: "immersiveengineering:railgun",
 				Count: 1b
 			},
-			x: -6.0d,
-			y: 0.0d,
+			x: -5.0d,
+			y: -1.5d,
 			description: ["IE has several unique tools and weapons that can be crafted. This quest shows just a few of the craftable tools/weapons available; most can be customized and upgraded in the Engineer's Workbench."],
-			dependencies: ["0000000000000012"],
+			dependencies: ["0000000000000019"],
 			id: "0000000000000042",
 			tasks: [
 				{
@@ -876,8 +877,8 @@
 		{
 			title: "Mineral Veins",
 			icon: "immersiveengineering:sample_drill",
-			x: -4.5d,
-			y: 0.0d,
+			x: -5.5d,
+			y: 0.5d,
 			description: ['As described in the "Minerals" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk.'],
 			dependencies: ["0000000000000012"],
 			id: "0000000000000061",
