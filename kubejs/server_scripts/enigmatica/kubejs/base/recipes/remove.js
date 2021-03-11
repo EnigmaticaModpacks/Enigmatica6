@@ -2,6 +2,16 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#forge:ores' });
+    event.remove({ type: 'minecraft:blasting', input: '#forge:ores' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#forge:dusts' });
+    event.remove({ type: 'minecraft:blasting', input: '#forge:dusts' });
+
+    event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
+    event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
+
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
@@ -31,23 +41,26 @@ events.listen('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'simplefarming:raw_bacon',
+        'powah:uraninite',
 
-        'thermal:bamboo_block',
-
-        'betterendforge:thallasium_anvil',
-        'betterendforge:terminite_anvil',
-        'betterendforge:aeternium_anvil'
+        'thermal:bamboo_block'
     ];
 
     var idRemovals = [
+        'aquaculture:brown_mushroom_from_fish',
         'aquaculture:gold_nugget_from_blasting',
+        'aquaculture:gold_nugget_from_gold_fish',
         'aquaculture:gold_nugget_from_smelting',
         'aquaculture:iron_nugget_from_blasting',
         'aquaculture:iron_nugget_from_smelting',
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
+        'aquaculture:planks_from_driftwood',
+        'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+
+        'autumnity:turkey_piece',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
@@ -66,12 +79,20 @@ events.listen('recipes', (event) => {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'farmersdelight:cutting/chicken',
+        'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
+        'farmersdelight:milk_bottle',
+        'farmersdelight:milk_bucket_from_bottles',
+
         'fluxnetworks:fluxcontroller',
         'fluxnetworks:fluxcore',
 
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
+        'immersiveengineering:crusher/bone_meal',
+
+        'immersiveengineering:crafting/jerrycan',
 
         'immersivepetroleum:distillationtower/oilcracking',
 
@@ -95,6 +116,7 @@ events.listen('recipes', (event) => {
         'morevanillalib:obsidian_shard',
 
         'pedestals:pedestal_cobblegen/blackstone',
+        'pitg:green_dye',
 
         'quark:building/crafting/tallow_from_block',
 
@@ -112,13 +134,25 @@ events.listen('recipes', (event) => {
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
+        'simplefarming:candy',
+        'simplefarming:raw_chicken_wings',
+
+        'supplementaries:strings_recipe',
+
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',
         '/integrateddynamics:\\w+/ore/redstone/',
         '/integrateddynamics:\\w+/ore/quartz/',
 
         '/integrateddynamics:\\w+/convenience/',
-        '/integrateddynamics:\\w+/ore/'
+        '/integrateddynamics:\\w+/ore/',
+        '/integrateddynamics:blasting/menril_log/'
+    ];
+
+    var regexIdRemovals = [
+        /emendatusenigmatica:ore_from_chunk_crafting/,
+        /emendatusenigmatica:ore_from_chunk_stonecutting/,
+        /create:\w+\/bread/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -126,6 +160,10 @@ events.listen('recipes', (event) => {
     });
 
     idRemovals.forEach((removal) => {
+        event.remove({ id: removal });
+    });
+
+    regexIdRemovals.forEach((removal) => {
         event.remove({ id: removal });
     });
 
@@ -221,9 +259,6 @@ events.listen('recipes', (event) => {
     });
     event.remove({
         id: /emendatusenigmatica:ore_from_chunk_crafting/
-    });
-    event.remove({
-        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
     });
     event.remove({
         input: 'minecraft:fire_charge',

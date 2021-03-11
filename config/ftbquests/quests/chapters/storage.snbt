@@ -62,8 +62,8 @@
 		},
 		{
 			title: "Refined Storage",
-			x: 1.5d,
-			y: -5.0d,
+			x: 1.0d,
+			y: -6.0d,
 			description: [
 				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. ",
 				"",
@@ -120,16 +120,40 @@
 		},
 		{
 			icon: "mekanism:basic_bin",
-			x: -2.5d,
-			y: -7.5d,
+			x: -2.0d,
+			y: -9.0d,
 			subtitle: "I Like Big Bins and I Cannot Lie",
 			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "],
 			dependencies: ["00000000000003FF"],
 			id: "0000000000000407",
 			tasks: [{
-				id: "000000000000068E",
+				id: "3635395991201030",
 				type: "item",
-				item: "mekanism:basic_bin"
+				title: "Bins",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_bin",
+								Count: 1b
+							},
+							{
+								id: "mekanism:advanced_bin",
+								Count: 1b
+							},
+							{
+								id: "mekanism:elite_bin",
+								Count: 1b
+							},
+							{
+								id: "mekanism:ultimate_bin",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}],
 			rewards: [
 				{
@@ -179,8 +203,8 @@
 		{
 			title: "Find Me",
 			icon: "naturesaura:range_visualizer",
-			x: -2.5d,
-			y: -4.5d,
+			x: -2.0d,
+			y: -6.0d,
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "],
 			dependencies: ["00000000000003FF"],
 			id: "000000000000040B",
@@ -200,8 +224,8 @@
 		{
 			title: "Plonk",
 			icon: "botania:cosmetic_thinking_hand",
-			x: -3.5d,
-			y: -6.0d,
+			x: -3.0d,
+			y: -5.0d,
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!",
 				"",
@@ -223,10 +247,10 @@
 			}]
 		},
 		{
-			title: "Storage Drawers",
+			title: "Drawer Controller",
 			icon: "storagedrawers:controller",
-			x: -3.5d,
-			y: -10.5d,
+			x: -4.5d,
+			y: -7.0d,
 			description: [
 				"The Drawer Controller must be in contact with drawers in order to 'see' them. Of course, drawers may also be chained together into a wall or line, with a single Drawer Controller able to connect to many drawers. ",
 				"",
@@ -241,63 +265,6 @@
 			}],
 			rewards: [{
 				id: "00000000000009AB",
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "kubejs:sorcerers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
-				player_command: false
-			}]
-		},
-		{
-			x: -3.5d,
-			y: -7.5d,
-			dependencies: ["0000000000000407"],
-			id: "000000000000093F",
-			tasks: [{
-				id: "0000000000000940",
-				type: "item",
-				item: "mekanism:advanced_bin"
-			}],
-			rewards: [{
-				id: "0000000000000A63",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
-				player_command: false
-			}]
-		},
-		{
-			x: -4.5d,
-			y: -7.5d,
-			dependencies: ["000000000000093F"],
-			id: "0000000000000941",
-			tasks: [{
-				id: "0000000000000942",
-				type: "item",
-				item: "mekanism:elite_bin"
-			}],
-			rewards: [{
-				id: "0000000000000A6D",
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
-				player_command: false
-			}]
-		},
-		{
-			x: -5.5d,
-			y: -7.5d,
-			dependencies: ["0000000000000941"],
-			id: "0000000000000943",
-			tasks: [{
-				id: "0000000000000944",
-				type: "item",
-				item: "mekanism:ultimate_bin"
-			}],
-			rewards: [{
-				id: "00000000000009A8",
 				type: "command",
 				title: "Sorcerer's Delight",
 				icon: "kubejs:sorcerers_delight",
@@ -614,8 +581,8 @@
 		{
 			title: "Drawers",
 			icon: "storagedrawers:oak_full_drawers_1",
-			x: -2.0d,
-			y: -9.0d,
+			x: -3.0d,
+			y: -7.5d,
 			description: [
 				"Customizable drawers for all your deep storage needs.",
 				"",
@@ -626,7 +593,7 @@
 			tasks: [{
 				id: "0000000000000967",
 				type: "item",
-				title: "Any storagedrawers:drawers",
+				title: "Storage Drawers",
 				item: {
 					id: "itemfilters:tag",
 					Count: 1b,
@@ -719,8 +686,8 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: -10.5d,
+			x: -4.5d,
+			y: -8.0d,
 			dependencies: ["0000000000000966"],
 			id: "0000000000000980",
 			tasks: [{
@@ -739,7 +706,7 @@
 		},
 		{
 			x: -3.5d,
-			y: -9.5d,
+			y: -8.5d,
 			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."],
 			dependencies: ["0000000000000966"],
 			id: "0000000000000982",
@@ -758,8 +725,8 @@
 			}]
 		},
 		{
-			x: -4.5d,
-			y: -9.0d,
+			x: -3.5d,
+			y: -6.5d,
 			description: ["Excess items will be automatically voided."],
 			dependencies: ["0000000000000966"],
 			id: "0000000000000984",

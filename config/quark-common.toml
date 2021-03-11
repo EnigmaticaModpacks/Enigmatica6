@@ -604,20 +604,20 @@
 			"Is Blacklist" = false
 
 	[world.biotite]
-		"Clusters Per Dragon Tick" = 16
-		"Generate On Dragon Death" = true
-		"Dragon Ticks Per Cluster" = 1
+		"Clusters Per Dragon Tick" = 0
+		"Generate On Dragon Death" = false
+		"Dragon Ticks Per Cluster" = 0
 		"Generate Naturally" = false
 
 		[world.biotite.dimensions]
-			Dimensions = ["minecraft:the_end"]
+			Dimensions = []
 			"Is Blacklist" = false
 
 		[world.biotite.ore_settings]
 			#Allowed values: [0,255]
 			"Max Height" = 64
 			#Allowed values: [0,)
-			"Cluster Count" = 16
+			"Cluster Count" = 0
 			#Allowed values: [0,255]
 			"Min Height" = 1
 			#Allowed values: [0,)

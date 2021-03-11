@@ -34,18 +34,11 @@
 				id: "0000000000000CB2",
 				type: "checkmark"
 			}],
-			rewards: [
-				{
-					id: "0000000000000CB3",
-					type: "item",
-					item: "occultism:dictionary_of_spirits"
-				},
-				{
-					id: "0000000000000CB4",
-					type: "item",
-					item: "occultism:datura_seeds"
-				}
-			]
+			rewards: [{
+				id: "0000000000000CB4",
+				type: "item",
+				item: "occultism:datura_seeds"
+			}]
 		},
 		{
 			title: "Maybe Just a Little...",
@@ -578,7 +571,7 @@
 					type: "command",
 					title: "Occultism Epic Loot Box",
 					icon: "kubejs:epic_lootbox",
-					command: "xecute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic",
 					player_command: false
 				}
 			]

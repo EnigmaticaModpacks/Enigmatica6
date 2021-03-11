@@ -9,6 +9,8 @@ events.listen('item.tags', (event) => {
         'betterendforge:terminite_ingot',
         'betterendforge:thallasium_ingot',
         'botania:gaia_ingot',
+        'byg:blue_nether_brick',
+        'byg:yellow_nether_brick',
         'create:andesite_alloy',
         'immersiveengineering:ingot_aluminum',
         'immersiveengineering:ingot_constantan',
@@ -50,4 +52,6 @@ events.listen('item.tags', (event) => {
     event.get('forge:ingots/iron_lead').add('#forge:ingots/iron').add('#forge:ingots/lead');
     event.get('forge:ingots/iron_tin').add('#forge:ingots/iron').add('#forge:ingots/tin');
     event.get('forge:ingots/iron_brass').add('#forge:ingots/iron').add('#forge:ingots/brass');
+
+    event.add('forge:ingots/nether_brick', ['byg:blue_nether_brick', 'byg:yellow_nether_brick']);
 });

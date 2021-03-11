@@ -23,6 +23,11 @@ events.listen('recipes', (event) => {
                 rate: 0.25
             },
             {
+                fluid: 'immersiveengineering:creosote',
+                air: 20,
+                rate: 0.25
+            },
+            {
                 fluid: 'thermal:refined_fuel',
                 air: 1500,
                 rate: 1.5

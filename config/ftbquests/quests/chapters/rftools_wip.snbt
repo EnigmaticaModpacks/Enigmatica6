@@ -28,18 +28,11 @@
 				title: "Intro",
 				icon: "rftoolsbase:smartwrench"
 			}],
-			rewards: [
-				{
-					id: "000000000000034C",
-					type: "item",
-					item: "rftoolsbase:manual"
-				},
-				{
-					id: "0000000000000C00",
-					type: "item",
-					item: "rftoolsbase:smartwrench"
-				}
-			]
+			rewards: [{
+				id: "0000000000000C00",
+				type: "item",
+				item: "rftoolsbase:smartwrench"
+			}]
 		},
 		{
 			x: 0.0d,
@@ -874,7 +867,7 @@
 				type: "command",
 				title: "XNet Tutorial Link",
 				icon: "pneumaticcraft:tag_filter",
-				command: '/tellraw @p {"text":"XNet Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=ksaJgiipaOg&t=608s"}}',
+				command: '/tellraw @p {"text":"XNet Tutorial Link","bold":true,"color":"dark_green","clickEvent":{"action":"open_url","value":"https://youtu.be/ksaJgiipaOg"}}',
 				player_command: false
 			}]
 		},

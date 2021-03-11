@@ -611,6 +611,12 @@ const cropRegistry = [
                 render: 'betterendforge:lumecorn_seed',
                 plant: 'betterendforge:lumecorn_rod',
                 substrate: 'end_moss'
+            },
+            {
+                seed: 'supplementaries:flax_seeds',
+                render: 'supplementaries:flax',
+                plant: 'supplementaries:flax',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1458,6 +1464,18 @@ const cropRegistry = [
                 render: 'autumnity:autumn_crocus',
                 plant: 'autumnity:autumn_crocus',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'upgrade_aquatic:purple_pickerelweed',
+                render: 'upgrade_aquatic:purple_pickerelweed',
+                plant: 'upgrade_aquatic:purple_pickerelweed',
+                substrate: 'water'
+            },
+            {
+                seed: 'upgrade_aquatic:blue_pickerelweed',
+                render: 'upgrade_aquatic:blue_pickerelweed',
+                plant: 'upgrade_aquatic:blue_pickerelweed',
+                substrate: 'water'
             }
         ]
     },
@@ -1783,10 +1801,10 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-            seed: 'byg:reeds',
-            render: 'byg:reeds',
-            plant: 'byg:reeds',
-            substrate: 'water'
+                seed: 'byg:reeds',
+                render: 'byg:reeds',
+                plant: 'byg:reeds',
+                substrate: 'water'
             }
         ]
     },

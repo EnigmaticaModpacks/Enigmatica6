@@ -79,8 +79,6 @@
 		#additional sack slots divided by 2. Number of slots will be 5 + additional_slots*2
 		#Range: 0 ~ 2
 		additional_slots = 0
-		#additional blocks that can support a sack
-		whitelist = []
 
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
@@ -173,6 +171,10 @@
 		bound_distance = 64
 		#additional non tameable entities that you can bind to flutes
 		flute_extra_mobs = ["minecraft:horse", "minecraft:llama", "minecraft:donkey", "minecraft:fox"]
+
+	[items.rope_arrow]
+		#If you really don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
+		rope_arrow_override = "supplementaries:rope"
 
 [comment]
 	#This config is synced server side. If you are on a server you'll get its own version

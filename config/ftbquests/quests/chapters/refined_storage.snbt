@@ -130,7 +130,31 @@
 				{
 					id: "0000000000000286",
 					type: "item",
-					item: "refinedstorage:1k_storage_disk"
+					title: "Storage Disk",
+					item: {
+						id: "itemfilters:or",
+						Count: 1b,
+						tag: {
+							items: [
+								{
+									id: "refinedstorage:1k_storage_disk",
+									Count: 1b
+								},
+								{
+									id: "refinedstorage:4k_storage_disk",
+									Count: 1b
+								},
+								{
+									id: "refinedstorage:16k_storage_disk",
+									Count: 1b
+								},
+								{
+									id: "refinedstorage:64k_storage_disk",
+									Count: 1b
+								}
+							]
+						}
+					}
 				}
 			],
 			rewards: [
@@ -161,7 +185,31 @@
 			tasks: [{
 				id: "000000000000025E",
 				type: "item",
-				item: "refinedstorage:64k_fluid_storage_disk"
+				title: "Fluid Storage Disk",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "refinedstorage:64k_fluid_storage_disk",
+								Count: 1b
+							},
+							{
+								id: "refinedstorage:256k_fluid_storage_disk",
+								Count: 1b
+							},
+							{
+								id: "refinedstorage:1024k_fluid_storage_disk",
+								Count: 1b
+							},
+							{
+								id: "refinedstorage:4096k_fluid_storage_disk",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}],
 			rewards: [{
 				id: "00000000000005BB",

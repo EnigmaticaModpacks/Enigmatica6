@@ -1,0 +1,267 @@
+{
+	id: "7DE17548AC012723",
+	group: "",
+	order_index: 30,
+	filename: "pedestals",
+	title: "Pedestals [WIP]",
+	icon: "pedestals:pedestal/stone333",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Pedestals",
+			x: 0.0d,
+			y: 0.0d,
+			shape: "gear",
+			id: "1F68F65F2A0E3229",
+			tasks: [{
+				id: "16795FC459119F11",
+				type: "checkmark",
+				icon: "pedestals:pedestal/stone333"
+			}],
+			rewards: [{
+				id: "66E1EA36B5FE9D51",
+				type: "item",
+				item: "pedestals:linkingtool"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -2.0d,
+			id: "215EA91229D2CB56",
+			tasks: [{
+				id: "0399E51C27863913",
+				type: "item",
+				item: "pedestals:itemcolorpalletdefault"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: 0.0d,
+			id: "04E9F681A7D93BC7",
+			tasks: [
+				{
+					id: "7BC584C4EB7CA040",
+					type: "item",
+					item: "pedestals:coin/import"
+				},
+				{
+					id: "6B60E2AD9BD1B2FD",
+					type: "item",
+					item: "pedestals:coin/export"
+				}
+			]
+		},
+		{
+			x: 2.5d,
+			y: -1.5d,
+			id: "7E40EFCF70079E34",
+			tasks: [{
+				id: "1E6DF2FC4DE65C12",
+				type: "item",
+				item: "pedestals:bookspeed"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: -0.5d,
+			id: "2884CBE0400A726A",
+			tasks: [{
+				id: "0A0AEEC2762E5ED6",
+				type: "item",
+				item: "pedestals:bookrange"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 0.5d,
+			id: "262DBED27EC9505F",
+			tasks: [{
+				id: "5CF393932A9E0B74",
+				type: "item",
+				item: "pedestals:bookarea"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 1.5d,
+			id: "387ECC5D8254ACE2",
+			tasks: [{
+				id: "3630289A27482A46",
+				type: "item",
+				item: "pedestals:bookcapacity"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			id: "3D505992F1F47451",
+			tasks: [{
+				id: "2E490DE57B21553B",
+				type: "item",
+				item: "pedestals:bookadvanced"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: -1.0d,
+			id: "764015462A7EC23C",
+			tasks: [{
+				id: "5401044FF30D8620",
+				type: "item",
+				item: "pedestals:upgradespeed"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 1.0d,
+			id: "130594C38D4F46A4",
+			tasks: [{
+				id: "35642C1455E0863C",
+				type: "item",
+				item: "pedestals:upgradecapacity"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 0.0d,
+			id: "6B4E809D3EF4EC18",
+			tasks: [{
+				id: "635AF367BFEA4A14",
+				type: "item",
+				item: "pedestals:upgraderange"
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -1.5d,
+			id: "3B1E29F56796E3CB",
+			tasks: [{
+				id: "4C3E81FAA288C5EA",
+				type: "item",
+				item: "pedestals:coin/filteritem"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 5.0d,
+			id: "2F0BA64F120AC01D",
+			tasks: [{
+				id: "2C00694467D9F744",
+				type: "item",
+				item: "pedestals:coin/attack"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 4.5d,
+			id: "471D29D943071F70",
+			tasks: [{
+				id: "7489E1C5D2AD52D1",
+				type: "item",
+				item: "pedestals:coin/fan"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 5.5d,
+			id: "60A68B9F974B6657",
+			tasks: [
+				{
+					id: "27A16AC5DFAF949F",
+					type: "item",
+					item: "pedestals:coin/magnet"
+				},
+				{
+					id: "1AAA2C72EA896441",
+					type: "item",
+					item: "pedestals:coin/xpmagnet"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 3.5d,
+			id: "5B965827DB02DAFD",
+			tasks: [{
+				id: "1FC88CE0C0CAF005",
+				type: "item",
+				item: "pedestals:coin/cobble"
+			}],
+			rewards: [{
+				id: "524510595571DB0F",
+				type: "item",
+				item: {
+					id: "minecraft:enchanted_book",
+					Count: 1b,
+					tag: {
+						StoredEnchantments: [{
+							lvl: 1s,
+							id: "minecraft:silk_touch"
+						}]
+					}
+				}
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 6.0d,
+			id: "064CDAA04220C326",
+			tasks: [{
+				id: "6019948EB53A00C9",
+				type: "item",
+				item: "minecraft:diamond_block"
+			}]
+		},
+		{
+			x: -3.0d,
+			y: 7.5d,
+			id: "72C7A8AA9E61807F",
+			tasks: [{
+				id: "7F7E129E6A7969BA",
+				type: "item",
+				item: "pedestals:coin/harvester"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 6.5d,
+			id: "423724779D1C1953",
+			tasks: [{
+				id: "1E4E4D247F5CBCE3",
+				type: "item",
+				item: "pedestals:coin/planter"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 8.0d,
+			id: "181F09668BE81A8A",
+			tasks: [{
+				id: "4154E90331B66625",
+				type: "item",
+				item: "pedestals:coin/grower"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 9.0d,
+			id: "746A1DEFF6808816",
+			tasks: [{
+				id: "5094EB0BBC1E2AC8",
+				type: "item",
+				item: "pedestals:coin/harvesterhives"
+			}]
+		},
+		{
+			x: -4.0d,
+			y: 7.0d,
+			id: "45488D9006262BCD",
+			tasks: [{
+				id: "1E1FC590E1DE62C2",
+				type: "item",
+				item: "pedestals:coin/chopper"
+			}]
+		}
+	]
+}

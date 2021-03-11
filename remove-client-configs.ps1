@@ -6,5 +6,3 @@ $CONFIGS_TO_REMOVE | ForEach-Object {
     Write-Host $configPath -ForegroundColor Yellow
     Remove-Item -Path $configPath -ErrorAction SilentlyContinue -Recurse
 }
-
-pause

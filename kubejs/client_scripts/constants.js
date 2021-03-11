@@ -110,6 +110,8 @@ var itemsToHide = [
     // 'bountifulbaubles:potion_wormhole',
     'create:powdered_obsidian',
     'create:honey_bucket',
+    'create:copper_ore',
+    'create:zinc_ore',
     'eidolon:tallow',
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
@@ -191,7 +193,6 @@ var regexHide = [
     /create:\w+_sheet/,
     /create:\w+_nugget/,
     /create:\w+_ingot/,
-    /create:\w+_ore/,
     /immersiveposts:stick_/,
     /buildersaddition:\w+_rod/,
     /eidolon:\w+_ore/,
@@ -207,13 +208,35 @@ var regexHide = [
 ];
 
 const disabledItems = [
+    'abnormals_delight:adzuki_cake_slice',
+    'abnormals_delight:banana_cake_slice',
+    'abnormals_delight:cherry_pantry',
+    'abnormals_delight:chocolate_cake_slice',
+    'abnormals_delight:cooked_duck_fillet',
+    'abnormals_delight:cooked_venison_shanks',
+    'abnormals_delight:duck_fillet',
+    'abnormals_delight:mint_cake_slice',
+    'abnormals_delight:necromium_knife',
+    'abnormals_delight:passionfruit_glazed_duck',
+    'abnormals_delight:seared_venison',
+    'abnormals_delight:silver_knife',
+    'abnormals_delight:strawberry_cake_slice',
+    'abnormals_delight:vanilla_cake_slice',
+    'abnormals_delight:venison_shanks',
+    'abnormals_delight:willow_pantry',
+    'abnormals_delight:wisteria_pantry',
+
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
+    'aquaculture:frog_legs_raw',
+    'aquaculture:frog_legs_cooked',
 
     'betterendforge:ender_dust',
+
+    'blockcarpentry:frame_chest',
 
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
@@ -238,6 +261,9 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'create:dough',
+
+    'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
@@ -258,6 +284,10 @@ const disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
+    'pitg:green_dye',
+
+    'pneumaticcraft:wheat_flour',
+
     'quark:pipe',
     'quark:potato_crate',
     'quark:beetroot_crate',
@@ -267,7 +297,13 @@ const disabledItems = [
     'thermal:carrot_block',
     'thermal:potato_block',
     'thermal:sugar_cane_block',
-    'thermal:apple_block'
+    'thermal:apple_block',
+
+    'simplefarming:raw_bacon',
+    'simplefarming:cooked_bacon',
+    'simplefarming:cooked_egg',
+    'simplefarming:noodles',
+    'simplefarming:chocolate'
 ];
 const materialsToUnify = [
     'iron',

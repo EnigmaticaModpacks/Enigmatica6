@@ -78,3 +78,15 @@
 		#Range: 0.0 ~ Infinity
 		globalWaystonesXpCostMultiplier = 1.0
 
+	#These options apply to taking leashed mobs with you when teleporting.
+	[server.leashedMobs]
+		#If enabled, leashed mobs/animals will be teleported with you
+		transportLeashed = true
+		#Take animals with you when travelling between dimensions
+		transportLeashedDimensional = true
+		#How much xp is need per leashed animal to travel with you
+		#Range: > 0
+		costPerLeashed = 1
+		#Which leashed mobs cannot be taken with you when travelling.
+		leashedBlacklist = ["minecraft:wither"]
+

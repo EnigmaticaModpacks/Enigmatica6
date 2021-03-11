@@ -10,19 +10,35 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen');
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
-    event.replaceInput({}, '#forge:fillet_knife', '#forge:tools/knife');
-    event.replaceInput({}, '#farmersdelight:tools/knife', '#forge:tools/knife');
     event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
     event.replaceInput({}, 'simplefarming:cooked_egg', '#forge:cooked_eggs');
     event.replaceInput({}, 'farmersdelight:fried_egg', '#forge:cooked_eggs');
+    event.replaceInput({}, 'farmersdelight:brown_mushroom_colony', '#forge:mushroom_colonies/brown');
+    event.replaceInput({}, 'farmersdelight:red_mushroom_colony', '#forge:mushroom_colonies/red');
     event.replaceInput({}, 'betterendforge:ender_dust', '#forge:dusts/ender');
     event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
     event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');
     event.replaceInput({}, 'upgrade_aquatic:beachgrass', '#enigmatica:crafting_materials/beach_grass');
+    event.replaceInput({}, 'pneumaticcraft:wheat_flour', '#forge:dusts/flour');
+    event.replaceInput({}, 'create:wheat_flour', '#forge:dusts/flour');
+    event.replaceInput({}, 'pedestals:dustflour', '#forge:dusts/flour');
+    event.replaceInput({}, 'create:dough', '#forge:doughs');
+    event.replaceInput({}, 'farmersdelight:wheat_dough', '#forge:doughs');
+    event.replaceInput({}, 'create:bar_of_chocolate', '#forge:chocolate_bars');
+    event.replaceInput({}, 'simplefarming:chocolate', '#forge:chocolate_bars');
+    event.replaceInput({}, 'simplefarming:noodles', '#forge:pasta/raw_pasta');
+    event.replaceInput({}, 'simplefarming:jam', '#forge:jams');
+    event.replaceInput({}, 'simplefarming:raw_bacon', '#forge:raw_bacon');
+    event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
+    event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
+    event.replaceInput({ id: '/simplefarming:\\w+burger/'}, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
+    event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
+    event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
+    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:netherrack', '#forge:netherrack');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
@@ -95,6 +111,12 @@ events.listen('recipes', (event) => {
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
 
     event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
+    event.replaceInput({ id: 'pneumaticcraft:reinforced_stone' }, 'minecraft:stone', '#forge:stone');
+    event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbench');
+
+    event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
+    event.replaceInput({ id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
+
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;
 

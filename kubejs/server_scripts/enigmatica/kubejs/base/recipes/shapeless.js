@@ -6,6 +6,7 @@ events.listen('recipes', (event) => {
         { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
         { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
+        { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         {
             output: 'minecraft:crafting_table',
             inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
@@ -32,6 +33,34 @@ events.listen('recipes', (event) => {
         {
             output: 'simplefarming:fish_fillet',
             inputs: ['#forge:grain', '#forge:grain', 'aquaculture:fish_fillet_cooked', 'aquaculture:fish_fillet_cooked']
+        },
+        {
+            output: Item.of('farmersdelight:milk_bottle', 4),
+            inputs: [
+                'minecraft:milk_bucket', 
+                'minecraft:glass_bottle', 
+                'minecraft:glass_bottle', 
+                'minecraft:glass_bottle', 
+                'minecraft:glass_bottle'
+            ]
+        },
+        {
+            output: 'minecraft:milk_bucket',
+            inputs: [
+                'minecraft:bucket', 
+                'farmersdelight:milk_bottle', 
+                'farmersdelight:milk_bottle', 
+                'farmersdelight:milk_bottle', 
+                'farmersdelight:milk_bottle'
+            ]
+        },
+        {
+            output: Item.of('simplefarming:candy', 2),
+            inputs: [
+                '#forge:chocolate_bars',
+                'minecraft:sugar',
+                'minecraft:sugar'
+            ]
         },
         { output: 'minecraft:wheat_seeds', inputs: ['minecraft:wheat'] },
         { output: 'quark:root', inputs: ['minecraft:vine', '#forge:dyes/brown'] },
@@ -88,7 +117,15 @@ events.listen('recipes', (event) => {
             output: 'emendatusenigmatica:potassium_nitrate_dust',
             inputs: ['thermal:earth_charge', '#forge:ores/potassium_nitrate']
         },
-        { output:'betterendforge:endstone_dust', inputs: ['#forge:dusts/end_stone', '#forge:dusts/end_stone', '#forge:dusts/end_stone', '#forge:dusts/end_stone',] },
+        {
+            output: 'betterendforge:endstone_dust',
+            inputs: [
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone',
+                '#forge:dusts/end_stone'
+            ]
+        },
         {
             output: Item.of('akashictome:tome').nbt({
                 'akashictome:data': {
@@ -183,7 +220,22 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('betterendforge:glowing_pillar_seed', 4),
             inputs: ['betterendforge:glowing_pillar_luminophor']
-        }
+        },
+        {
+            output: Item.of('minecraft:paper', 3),
+            inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
+        },
+        {
+            output: Item.of('supplementaries:flax_seeds', 1),
+            inputs: ['supplementaries:flax']
+        },
+        {
+            output: Item.of('refinedstorage:quartz_enriched_iron', 4),
+            inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:gems/quartz'],
+            id: 'refinedstorage:quartz_enriched_iron'
+        },
+        { output: Item.of('byg:quartz_crystal'), inputs: ['minecraft:quartz'] },
+        { output: Item.of('minecraft:quartz'), inputs: ['byg:quartz_crystal'] }
     ];
 
     recipes.forEach((recipe) => {
@@ -196,7 +248,11 @@ events.listen('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
+        var capacitor = 'powah:capacitor_' + tier;
+
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+
+        event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
     });
 
     materialsToUnify.forEach((material) => {

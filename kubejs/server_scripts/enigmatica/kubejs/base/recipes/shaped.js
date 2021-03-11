@@ -354,7 +354,6 @@ events.listen('recipes', (event) => {
                     pneumaticcraft: { id: 'pneumaticcraft:pneumatic_wrench', Count: 1 },
                     immersiveengineering: { id: 'immersiveengineering:hammer', Count: 1 },
                     transport: { id: 'transport:rail_breaker', Count: 1 },
-                    pedestals: { id: 'pedestals:linkingtool', Count: 1 },
                     botania: { id: 'botania:twig_wand', Count: 1, tag: { color1: 0, color2: 0 } },
                     ars_nouveau: { id: 'ars_nouveau:dominion_wand', Count: 1 },
                     mekanism: { id: 'mekanism:configurator', Count: 1 },
@@ -420,6 +419,9 @@ events.listen('recipes', (event) => {
         shapedRecipe(Item.of('quark:turf', 1), ['A', 'A'], {
             A: 'quark:turf_slab'
         }),
+        shapedRecipe(Item.of('minecraft:string', 3), ['AA', 'A '], {
+            A: 'supplementaries:flax'
+        }),
 
         //ID Overrides
         shapedRecipe(
@@ -452,12 +454,71 @@ events.listen('recipes', (event) => {
         if (wood.modId == 'minecraft') {
             return;
         }
+        //All recipes using logs here
+        var chest = wood.modId + ':' + wood.logType + '_chest';
+        if (!Item.exists(chest)) {
+            event.shaped(Item.of('minecraft:chest', 4), ['AAA', 'A A', 'AAA'], {
+                A: wood.logBlock
+            });
+        } else {
+            event.shaped(Item.of(chest, 4), ['AAA', 'A A', 'AAA'], {
+                A: wood.logBlock
+            });
+        }
+
+        var dupes = [
+            'palo_verde',
+            'withering_oak',
+            'blue_archwood',
+            'green_archwood',
+            'purple_archwood',
+            'menril_filled',
+            'watchful_aspen',
+            'crustose',
+            'sappy_maple'
+        ];
+
+        if (dupes.includes(wood.logType)) {
+            return;
+        }
+
+        //All recipes using planks here
         event.shaped(Item.of('minecraft:oak_sign', 3), ['AAA', 'AAA', ' B '], {
             A: wood.plankBlock,
             B: '#forge:rods/wooden'
         });
+
         event.shaped(Item.of('minecraft:chest'), ['AAA', 'A A', 'AAA'], {
             A: wood.plankBlock
+        });
+
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_1'), ['AAA', ' C ', 'AAA'], {
+            A: wood.plankBlock,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+            A: wood.plankBlock,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+            A: wood.plankBlock,
+            C: '#forge:chests'
+        });
+        var slab = wood.modId + ':' + wood.logType + '_slab';
+        if (wood.logType == 'red_archwood') {
+            slab = 'ars_nouveau:archwood_slab';
+        }
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_1'), ['AAA', ' C ', 'AAA'], {
+            A: slab,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+            A: slab,
+            C: '#forge:chests'
+        });
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+            A: slab,
+            C: '#forge:chests'
         });
     });
 
@@ -512,11 +573,6 @@ events.listen('recipes', (event) => {
             C: '#powah:solar_panel'
         });
 
-        event.shaped(Item.of('powah:reactor_' + tier), [' A ', 'ABA', ' A '], {
-            A: capacitor,
-            B: '#powah:reactor'
-        });
-
         event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
             A: capacitor,
             B: '#powah:energy_hopper'
@@ -544,5 +600,19 @@ events.listen('recipes', (event) => {
             })
             .id(`botanypots:crafting/${color}_botany_pot`);
         event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
+    });
+
+    [
+        { ingredient: '#forge:ingots/copper', tier: 'basic' },
+        { ingredient: '#forge:dusts/redstone', tier: 'advanced' },
+        { ingredient: '#forge:ingots/osmium', tier: 'elite' },
+        { ingredient: '#forge:obsidian', tier: 'ultimate' }
+    ].forEach((recipe) => {
+        event
+            .shaped(`mekanism:${recipe.tier}_bin`, ['ABA', 'A A', 'AAA'], {
+                A: 'minecraft:smooth_stone',
+                B: recipe.ingredient
+            })
+            .id(`mekanism:bin/${recipe.tier}`);
     });
 });

@@ -1,0 +1,18 @@
+{
+    "modId": "autumnity",
+    "group": {
+        "name": "Autumnity Saplings",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        { "output": { "item": "autumnity:red_maple_sapling" } },
+        { "output": { "item": "autumnity:red_maple_sapling" } },
+        { "output": { "item": "autumnity:yellow_maple_sapling" } },
+        { "output": { "item": "autumnity:maple_sapling" } },
+        { "output": { "item": "atmospheric:aspen_sapling" } }
+    ]
+}

@@ -4,6 +4,7 @@ events.listen('recipes', (event) => {
         var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
         var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        var chunk = getPreferredItemInTag(Ingredient.of('#forge:chunks/' + material)).id;
 
         var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
         var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
@@ -30,12 +31,19 @@ events.listen('recipes', (event) => {
         create_press_plates(event, material, gem, plate);
 
         emendatus_hammer_crushing(event, material, ore, dust);
+        emendatus_shapeless_transform(event, material, ore, chunk);
 
-        immersiveengineering_gem_crushing(event, material, dust, gem);
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust);
         immersiveengineering_press_plates(event, material, ingot, gem, plate);
+        immersiveengineering_hammer_plates(event, material, ingot, gem, plate);
+        immersiveengineering_hammer_crushing(event, material, ore, dust);
+        immersiveengineering_gem_crushing(event, material, dust, gem);
+
+        minecraft_ore_ingot_smelting(event, material, ore, ingot);
+        minecraft_ore_gem_smelting(event, material, ore, gem);
+        minecraft_dust_smelting(event, material, dust, ingot);
 
         //integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard);
         //integrated_dynamics_ore_squeezing_with_secondary_outputs(event, material, ore, dust);
@@ -444,12 +452,35 @@ function emendatus_hammer_crushing(event, material, ore, dust) {
         return;
     }
 
-    event.remove({ id: 'immersiveengineering:crafting/hammercrushing_' + material });
     event.replaceInput(
         { id: 'emendatusenigmatica:dust_from_chunk/' + material },
         'emendatusenigmatica:' + material + '_chunk',
         '#forge:ores/' + material
     );
+}
+
+function emendatus_shapeless_transform(event, material, ore, chunk) {
+    if (ore == air || chunk == air) {
+        return;
+    }
+    if (material == 'mana') {
+        material = 'arcane';
+    }
+
+    event.shapeless('emendatusenigmatica:' + material + '_ore', ['emendatusenigmatica:' + material + '_chunk']);
+}
+
+function immersiveengineering_hammer_crushing(event, material, ore, dust) {
+    if (ore == air || dust == air) {
+        return;
+    }
+
+    let output = dust,
+        input = '#forge:ores/' + material,
+        hammer = 'immersiveengineering:hammer';
+
+    event.remove({ id: 'immersiveengineering:crafting/hammercrushing' + material });
+    event.shapeless(output, [input, hammer]).id('kubejs:immersiveengineering_hammer_crushing/' + material);
 }
 
 function immersiveengineering_gem_crushing(event, material, dust, gem) {
@@ -526,7 +557,7 @@ function immersiveengineering_ore_processing_with_secondary_outputs(event, mater
         return;
     }
 
-    var primaryOutput = dust,
+    var primaryOutput = Item.of(dust, 2),
         secondaryMaterial,
         secondaryChance = 0.1,
         input = '#forge:ores/' + material;
@@ -596,10 +627,7 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
         return;
     }
 
-    //var hammer = 'immersiveengineering:hammer';
-    //event.shapeless(plate, [hammer, ingot]);
     event.remove({ id: 'immersiveengineering:crafting/plate_' + material + '_hammering' });
-
     blacklistedMaterials = [
         'iron',
         'gold',
@@ -637,6 +665,80 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     }
 
     event.recipes.immersiveengineering.metal_press(output, input, mold).energy(2400);
+}
+
+function immersiveengineering_hammer_plates(event, material, ingot, gem, plate) {
+    if (plate == air) {
+        return;
+    }
+
+    const hammer = 'immersiveengineering:hammer';
+    for (let i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
+    let output = plate;
+    if (ingot != air) {
+        input = '#forge:ingots/' + material;
+    } else if (gem != air) {
+        input = '#forge:gems/' + material;
+    } else {
+        return;
+    }
+    event.shapeless(output, [input, hammer]).id('kubejs:immersiveengineering_hammer_plates/' + material);
+}
+
+function minecraft_ore_ingot_smelting(event, material, ore, ingot) {
+    if (ore == air || ingot == air) {
+        return;
+    }
+
+    blacklistedMaterials = ['ender'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
+    var output = ingot,
+        input = '#forge:ores/' + material;
+
+    event.smelting(output, input).xp(0.7);
+    event.blasting(output, input).xp(0.7);
+}
+
+function minecraft_ore_gem_smelting(event, material, ore, gem) {
+    if (ore == air || gem == air) {
+        return;
+    }
+    var output = gem,
+        input = '#forge:ores/' + material;
+
+    event.smelting(output, input).xp(0.7);
+    event.blasting(output, input).xp(0.7);
+}
+
+function minecraft_dust_smelting(event, material, dust, ingot) {
+    if (ingot == air || dust == air) {
+        return;
+    }
+
+    blacklistedMaterials = ['starmetal'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
+    var output = ingot,
+        input = '#forge:dusts/' + material;
+
+    event.smelting(output, input).xp(0.7);
+    event.blasting(output, input).xp(0.7);
 }
 
 function integrated_dynamics_gem_squeezing(event, material, ore, gem, dust, shard) {
