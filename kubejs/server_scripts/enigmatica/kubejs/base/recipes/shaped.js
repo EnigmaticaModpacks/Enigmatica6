@@ -431,7 +431,13 @@ events.listen('recipes', (event) => {
                 A: 'minecraft:honeycomb'
             },
             'minecraft:honeycomb_block'
-        )
+        ),
+
+        // Torch from Stick+Standing Fire
+        shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
+            A: 'additional_lights:fire_for_standing_torch_s',
+            B: '#forge:rods/wooden'
+        }),
     ];
 
     recipes.forEach(function (recipe) {
