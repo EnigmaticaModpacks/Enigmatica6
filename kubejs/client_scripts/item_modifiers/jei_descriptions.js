@@ -51,8 +51,8 @@ events.listen('jei.information', (event) => {
             ]
         },
         {
-            items: ['simplefarming:golden_habanero'],
-            description: ['A very rare drop from farming Habaneros.']
+            items: ['simplefarming:habanero'],
+            description: ['A very rare drop from farming Peppers.']
         }
     ];
 
