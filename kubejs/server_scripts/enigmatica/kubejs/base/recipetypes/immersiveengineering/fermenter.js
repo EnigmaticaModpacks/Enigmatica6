@@ -8,7 +8,7 @@ events.listen('recipes', (event) => {
 
     const normalAmountInputs = [
         'alexsmobs:banana',
-        'ars_nouveau:source_berry',
+        'ars_nouveau:mana_berry',
         'atmospheric:aloe_leaves',
         'atmospheric:passionfruit',
         'atmospheric:yucca_fruit',
