@@ -121,7 +121,6 @@ var itemsToHide = [
     'mapperbase:iron_rod',
     'mapperbase:raw_bitumen',
     'morevanillalib:obsidian_shard',
-    'pedestals:dustflour',
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
     'powah:uraninite_ore_poor',
@@ -283,6 +282,8 @@ const disabledItems = [
     'mythicbotany:raindeletia_floating',
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
+
+    'pedestals:dustflour',
 
     'pitg:green_dye',
 
