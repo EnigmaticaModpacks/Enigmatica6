@@ -11,18 +11,25 @@
 		{
 			title: "Pedestals",
 			x: 0.0d,
-			y: 0.0d,
+			y: 2.5d,
 			shape: "gear",
+			subtitle: "Magically Technological Item Displays",
+			description: [
+				"Pedestals look pretty and do a great job of showing off collector’s pieces, but they can do so much more. Through a series of augments, upgrades, and enchantments, they can perform a number of useful tasks throughout your base and look good doing it.",
+				"",
+				"We’ll be covering a selection of useful functionality that you can deploy throughout your base, but if you want to learn even more than these quests, JEI, or the in-game manual can teach you, the Pedestals developer has a great wiki (with a link to YouTube) covering many details of the mod:",
+				"",
+				"https://github.com/Mowmaster/Pedestals/wiki",
+				"",
+				"~TemperedFool"
+			],
+			size: 1.5d,
+			min_width: 250,
 			id: "1F68F65F2A0E3229",
 			tasks: [{
 				id: "16795FC459119F11",
 				type: "checkmark",
 				icon: "pedestals:pedestal/stone333"
-			}],
-			rewards: [{
-				id: "66E1EA36B5FE9D51",
-				type: "item",
-				item: "pedestals:linkingtool"
 			}]
 		},
 		{
@@ -36,8 +43,13 @@
 			}]
 		},
 		{
-			x: -1.5d,
-			y: 0.0d,
+			title: "Item Transfer",
+			icon: "pedestals:coin/import",
+			x: 0.0d,
+			y: 6.5d,
+			shape: "rsquare",
+			description: ["Being able to move items from pedestal to pedestal is great, but being able to interact with inventories is even better. The Import and Export augments allow you to do just that. Import will pull from an inventory below the pedestal into the its display slot, while Export will push items from the pedestal into the inventory below."],
+			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "04E9F681A7D93BC7",
 			tasks: [
 				{
@@ -143,8 +155,8 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: 5.0d,
+			x: -5.0d,
+			y: 3.0d,
 			id: "2F0BA64F120AC01D",
 			tasks: [{
 				id: "2C00694467D9F744",
@@ -153,8 +165,8 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 4.5d,
+			x: -4.0d,
+			y: 2.0d,
 			id: "471D29D943071F70",
 			tasks: [{
 				id: "7489E1C5D2AD52D1",
@@ -163,25 +175,18 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 5.5d,
+			x: -3.0d,
+			y: 2.5d,
 			id: "60A68B9F974B6657",
-			tasks: [
-				{
-					id: "27A16AC5DFAF949F",
-					type: "item",
-					item: "pedestals:coin/magnet"
-				},
-				{
-					id: "1AAA2C72EA896441",
-					type: "item",
-					item: "pedestals:coin/xpmagnet"
-				}
-			]
+			tasks: [{
+				id: "27A16AC5DFAF949F",
+				type: "item",
+				item: "pedestals:coin/magnet"
+			}]
 		},
 		{
-			x: -2.0d,
-			y: 3.5d,
+			x: 0.0d,
+			y: 10.0d,
 			id: "5B965827DB02DAFD",
 			tasks: [{
 				id: "1FC88CE0C0CAF005",
@@ -204,8 +209,8 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: 6.0d,
+			x: -5.5d,
+			y: 1.5d,
 			id: "064CDAA04220C326",
 			tasks: [{
 				id: "6019948EB53A00C9",
@@ -214,8 +219,9 @@
 			}]
 		},
 		{
-			x: -3.0d,
-			y: 7.5d,
+			x: -2.0d,
+			y: 9.0d,
+			description: ["Drops on ground"],
 			id: "72C7A8AA9E61807F",
 			tasks: [{
 				id: "7F7E129E6A7969BA",
@@ -224,27 +230,24 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: 6.5d,
+			x: -1.0d,
+			y: 9.0d,
 			id: "423724779D1C1953",
-			tasks: [{
-				id: "1E4E4D247F5CBCE3",
-				type: "item",
-				item: "pedestals:coin/planter"
-			}]
+			tasks: [
+				{
+					id: "1E4E4D247F5CBCE3",
+					type: "item",
+					item: "pedestals:coin/planter"
+				},
+				{
+					id: "1F0E7063C7757A50",
+					type: "item",
+					item: "pedestals:coin/grower"
+				}
+			]
 		},
 		{
-			x: -2.0d,
-			y: 8.0d,
-			id: "181F09668BE81A8A",
-			tasks: [{
-				id: "4154E90331B66625",
-				type: "item",
-				item: "pedestals:coin/grower"
-			}]
-		},
-		{
-			x: -2.5d,
+			x: 1.0d,
 			y: 9.0d,
 			id: "746A1DEFF6808816",
 			tasks: [{
@@ -254,13 +257,294 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: 7.0d,
+			x: -2.5d,
+			y: 9.5d,
 			id: "45488D9006262BCD",
 			tasks: [{
 				id: "1E1FC590E1DE62C2",
 				type: "item",
 				item: "pedestals:coin/chopper"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 9.5d,
+			id: "7A4BFA66CD8E3884",
+			tasks: [
+				{
+					id: "06A8E34C2DAB9341",
+					type: "item",
+					item: "pedestals:coin/xpmagnet"
+				},
+				{
+					id: "353D30A855006CDB",
+					type: "item",
+					item: "pedestals:coin/xpgrindstone"
+				}
+			]
+		},
+		{
+			x: 4.0d,
+			y: 10.5d,
+			id: "78991F3E1F2CDB09",
+			tasks: [
+				{
+					id: "3A48A301A7CEE73B",
+					type: "item",
+					item: "pedestals:coin/xpdropper"
+				},
+				{
+					id: "0C43528EB07E329D",
+					type: "item",
+					item: "pedestals:coin/xptank"
+				},
+				{
+					id: "32C28F702DFDF8FA",
+					type: "item",
+					item: "pedestals:coin/xpbottler"
+				}
+			]
+		},
+		{
+			x: 5.0d,
+			y: 10.5d,
+			id: "733EA0092EE4A490",
+			tasks: [{
+				id: "2885D8E72156A816",
+				type: "item",
+				item: "pedestals:coin/xpenchanter"
+			}]
+		},
+		{
+			x: 6.0d,
+			y: 10.5d,
+			id: "71548F1D17633FBC",
+			tasks: [{
+				id: "24EDA20ED95D7ADE",
+				type: "item",
+				item: "pedestals:coin/xpanvil"
+			}]
+		},
+		{
+			x: 2.5d,
+			y: 5.0d,
+			id: "500A2940C0C3AF6C",
+			tasks: [
+				{
+					id: "4FC68D9410BD5157",
+					type: "item",
+					item: "pedestals:coin/fluidimport"
+				},
+				{
+					id: "1DCE38E92AB8A491",
+					type: "item",
+					item: "pedestals:coin/fluidexport"
+				}
+			]
+		},
+		{
+			x: 3.5d,
+			y: 6.0d,
+			id: "5103383AF580A723",
+			tasks: [
+				{
+					id: "03426DC34F589B83",
+					type: "item",
+					item: "pedestals:coin/fluidpump"
+				},
+				{
+					id: "0D9AE163A1947D45",
+					type: "item",
+					item: "pedestals:coin/fluiddrain"
+				}
+			]
+		},
+		{
+			x: 2.5d,
+			y: 6.5d,
+			id: "1D4B0DDBC3A5523C",
+			tasks: [{
+				id: "6778060035ECD402",
+				type: "item",
+				item: "pedestals:coin/fluidxpconverter"
+			}]
+		},
+		{
+			x: -2.5d,
+			y: 4.5d,
+			dependencies: ["3ECCA6558FDB4A5E"],
+			id: "3F9545A78B985E50",
+			tasks: [
+				{
+					id: "23D0BA532E6FC8AA",
+					type: "item",
+					item: "pedestals:coin/rfimport"
+				},
+				{
+					id: "633E32DD1A37DBAC",
+					type: "item",
+					item: "pedestals:coin/rfexport"
+				}
+			]
+		},
+		{
+			x: -2.0d,
+			y: 5.5d,
+			dependencies: ["3F9545A78B985E50"],
+			id: "5E9B10EA68EF56F0",
+			tasks: [{
+				id: "56080B05B48EB964",
+				type: "item",
+				item: "pedestals:coin/rftank"
+			}]
+		},
+		{
+			x: 4.0d,
+			y: 4.5d,
+			id: "6186950B1DBA6D90",
+			tasks: [{
+				id: "3760A5BFE15C3672",
+				type: "item",
+				item: "pedestals:coin/rfcrusher"
+			}]
+		},
+		{
+			x: -3.5d,
+			y: 7.0d,
+			id: "1D0A4C2E2E3C3949",
+			tasks: [{
+				id: "7BF4F3E960EBC2A3",
+				type: "item",
+				item: "pedestals:coin/rfsmelter"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 3.5d,
+			id: "55DA0B9C9A170193",
+			tasks: [{
+				id: "55B9B2280AC595F9",
+				type: "item",
+				item: "pedestals:coin/rfsawmill"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 4.5d,
+			id: "039F6656F4A696D6",
+			tasks: [{
+				id: "13383C1AA308274A",
+				type: "item",
+				item: "pedestals:coin/rfquarry"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 9.0d,
+			id: "1E809DFCA38FD467",
+			tasks: [
+				{
+					id: "22103634AC29A0D5",
+					type: "item",
+					item: "pedestals:coin/shearer"
+				},
+				{
+					id: "28C5A679F2260C8B",
+					type: "item",
+					item: "pedestals:coin/milker"
+				}
+			]
+		},
+		{
+			x: -1.5d,
+			y: 6.5d,
+			dependencies: ["04E9F681A7D93BC7"],
+			id: "68810A837A049E50",
+			tasks: [{
+				id: "651C9CFDFBC162AF",
+				type: "item",
+				item: "pedestals:coin/itemtank"
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 5.5d,
+			id: "7F9DCB2205D9F899",
+			tasks: [{
+				id: "6F49698AFF667D88",
+				type: "item",
+				item: "pedestals:coin/fluidtank"
+			}]
+		},
+		{
+			x: 1.5d,
+			y: 8.0d,
+			id: "0F70C994D2D08157",
+			tasks: [{
+				id: "1669D9A394582F6C",
+				type: "item",
+				item: "pedestals:coin/compactor3"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 5.5d,
+			id: "073C08A302E0B019",
+			tasks: [{
+				id: "127277E89345C67E",
+				type: "item",
+				item: "pedestals:coin/fluidcrafter3"
+			}]
+		},
+		{
+			title: "Pedestal Linking",
+			x: 0.0d,
+			y: 4.5d,
+			shape: "diamond",
+			description: [
+				"Pedestals can transfer displayed items from one to another by linking them together. They can also transfer fluids, FE, and XP in their upgrades this way.",
+				"",
+				"This is done with the Linking Tool: Shift-Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards, you can craft the linking tool into a Reverse Linking Tool, which links Sender -> Receiver.",
+				"",
+				"Each Sending Pedestal can be linked to a maximum of 8 Receivers; Receivers can be linked to any number of senders.You can right click a Sender with the Linking wand to display information about it, and to get a visual indication of which pedestals it’s linked to. By default the sending mechanism uses a priority system, which is indicated by the color particles emitted - black is first, white is last."
+			],
+			dependencies: ["1F68F65F2A0E3229"],
+			id: "3ECCA6558FDB4A5E",
+			tasks: [{
+				id: "1D29F32F0D57B96E",
+				type: "item",
+				item: {
+					id: "pedestals:linkingtool",
+					Count: 1b,
+					tag: {
+						storedlist_z: [I;],
+						stored_y: -2000,
+						storedlist_x: [I;],
+						stored_x: 0,
+						storedlist_y: [I;],
+						stored_z: 0
+					}
+				}
+			}]
+		},
+		{
+			title: "Redstone Control",
+			x: -1.0d,
+			y: 3.5d,
+			description: [
+				"Under normal conditions Sending pedestals will attempt to send whatever Items/Fluids/XP/FE they have to their linked receivers.",
+				"",
+				"Powering a Recieving pedestal with a Redstone signal will prevent it from receiving Items/Fluids/XP/FE from a sender. This can be used to create custom routing systems. It will also disable its upgrade from functioning, and prevent it from being teleported to (Via the Teleport Upgrade).",
+				"",
+				"Pedestals can also be read by a comparator, and will give off a signal relative to their fill level."
+			],
+			dependencies: ["3ECCA6558FDB4A5E"],
+			size: 0.75d,
+			id: "578398B7265DCB89",
+			tasks: [{
+				id: "6731301F006613B4",
+				type: "item",
+				item: "minecraft:redstone"
 			}]
 		}
 	]
