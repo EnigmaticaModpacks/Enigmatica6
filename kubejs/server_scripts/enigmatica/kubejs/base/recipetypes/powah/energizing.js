@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    const data = {
+    var data = {
         recipes: [
             {
                 ingredients: [
