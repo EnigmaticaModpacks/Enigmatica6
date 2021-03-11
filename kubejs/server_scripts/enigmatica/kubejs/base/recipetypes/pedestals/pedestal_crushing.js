@@ -46,13 +46,8 @@ events.listen('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         const re = event.custom({
             type: 'pedestals:pedestal_crushing',
-            ingredient: {
-                item: recipe.input
-            },
-            result: {
-                item: recipe.output,
-                count: recipe.count
-            }
+            ingredient: Ingredient.of(recipe.input),
+            result: Item.of(recipe.output, recipe.count)
         });
         if (recipe.id) {
             re.id(recipe.id);
