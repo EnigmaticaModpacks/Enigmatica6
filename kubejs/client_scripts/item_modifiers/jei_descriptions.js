@@ -49,6 +49,10 @@ events.listen('jei.information', (event) => {
             description: [
                 'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
+        },
+        {
+            items: ['simplefarming:golden_habanero'],
+            description: ['A very rare drop from farming Habaneros.']
         }
     ];
 
