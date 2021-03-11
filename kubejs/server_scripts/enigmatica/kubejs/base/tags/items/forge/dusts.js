@@ -12,7 +12,8 @@ events.listen('item.tags', (event) => {
         .add('immersiveengineering:dust_hop_graphite')
         .add('immersiveengineering:dust_saltpeter')
         .add('thermal:ender_pearl_dust')
-        .add('astralsorcery:stardust');
+        .add('astralsorcery:stardust')
+        .add('#forge:dusts/flour');
 
     event.add('forge:dusts/starmetal', 'astralsorcery:stardust');
     event.get('forge:dusts/lapis').add('mekanism:dust_lapis_lazuli');
@@ -29,6 +30,7 @@ events.listen('item.tags', (event) => {
     event.get('forge:dusts/netherite_scrap').remove('bloodmagic:sand_netherite');
 
     event.add('forge:dusts/flour', 'create:wheat_flour');
+    event.add('forge:dusts/flour', 'pedestals:dustflour');
 
     // Temporary until EE adapts this change
     event.get('forge:chunks/arcane').remove('emendatusenigmatica:arcane_chunk');
