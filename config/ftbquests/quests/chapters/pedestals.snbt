@@ -371,7 +371,8 @@
 		},
 		{
 			x: -2.5d,
-			y: 4.5d,
+			y: 3.5d,
+			shape: "rsquare",
 			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "3F9545A78B985E50",
 			tasks: [
@@ -388,8 +389,8 @@
 			]
 		},
 		{
-			x: -2.0d,
-			y: 5.5d,
+			x: -1.5d,
+			y: 5.0d,
 			dependencies: ["3F9545A78B985E50"],
 			id: "5E9B10EA68EF56F0",
 			tasks: [{
@@ -399,43 +400,119 @@
 			}]
 		},
 		{
-			x: 4.0d,
-			y: 4.5d,
+			x: -5.0d,
+			y: 6.0d,
+			dependencies: ["69E5C4BFCE2AC042"],
+			dependency_requirement: "one_completed",
 			id: "6186950B1DBA6D90",
 			tasks: [{
-				id: "3760A5BFE15C3672",
+				id: "2C89A17FEE1D81F5",
 				type: "item",
-				item: "pedestals:coin/rfcrusher"
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/crusher",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/rfcrusher",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
-			x: -3.5d,
+			x: -4.0d,
 			y: 7.0d,
+			dependencies: ["69E5C4BFCE2AC042"],
+			dependency_requirement: "one_completed",
 			id: "1D0A4C2E2E3C3949",
 			tasks: [{
-				id: "7BF4F3E960EBC2A3",
+				id: "213EE2964AAEC897",
 				type: "item",
-				item: "pedestals:coin/rfsmelter"
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/smelter",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/rfsmelter",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
-			x: 5.0d,
-			y: 3.5d,
+			x: -3.0d,
+			y: 7.0d,
+			dependencies: ["69E5C4BFCE2AC042"],
+			dependency_requirement: "one_completed",
 			id: "55DA0B9C9A170193",
 			tasks: [{
-				id: "55B9B2280AC595F9",
+				id: "375DDC70C36E87DB",
 				type: "item",
-				item: "pedestals:coin/rfsawmill"
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/sawmill",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/rfsawmill",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
-			x: 5.0d,
-			y: 4.5d,
+			x: -5.0d,
+			y: 5.0d,
+			dependencies: ["69E5C4BFCE2AC042"],
+			dependency_requirement: "one_completed",
 			id: "039F6656F4A696D6",
 			tasks: [{
-				id: "13383C1AA308274A",
+				id: "19FD33FF26CBC42B",
 				type: "item",
-				item: "pedestals:coin/rfquarry"
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/quarry",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/quarryb",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/rfquarry",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/rfquarryb",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
@@ -456,8 +533,8 @@
 			]
 		},
 		{
-			x: -1.5d,
-			y: 6.5d,
+			x: 0.5d,
+			y: 5.5d,
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "68810A837A049E50",
 			tasks: [{
@@ -545,6 +622,29 @@
 				id: "6731301F006613B4",
 				type: "item",
 				item: "minecraft:redstone"
+			}]
+		},
+		{
+			title: "Pedestal Machinery",
+			x: -3.5d,
+			y: 5.5d,
+			subtitle: "Decoration Meets Technology",
+			description: [
+				"Pedestals has a series of upgrades to allow you to process materials with them. These upgrades have two versions:",
+				"",
+				"One version runs on burnables dropped near them. When the pedestal has fuel on board, it will emit black particles.",
+				"",
+				"The other version runs on FE supplied by the Pedestal network. Supply them with FE by linking them to Pedestals with FE stored in them."
+			],
+			dependencies: [
+				"3F9545A78B985E50",
+				"04E9F681A7D93BC7"
+			],
+			dependency_requirement: "one_completed",
+			id: "69E5C4BFCE2AC042",
+			tasks: [{
+				id: "11352D320468872A",
+				type: "checkmark"
 			}]
 		}
 	]
