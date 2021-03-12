@@ -6,6 +6,8 @@ events.listen('item.tags', (event) => {
         'engineersdecor:iron_floor_edge_light',
         'engineersdecor:iron_inset_light',
         'immersiveengineering:floodlight',
+        'immersiveengineering:lantern',
+        'immersiveengineering:balloon',
         'minecraft:beacon',
         'minecraft:end_rod',
         'minecraft:glowstone',
