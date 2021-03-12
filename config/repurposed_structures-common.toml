@@ -1,0 +1,139 @@
+
+["Mod-wide Impacting Options"]
+	#
+	# Add the identifier for the dimension that you want
+	# no Repurposed Structures structure to spawn in.
+	# Separate multiple entries with a comma.
+	#   Example: "minecraft:the_end,awesome_mod:awesome_dimension"
+	blacklistedDimensions = "the_bumblezone:the_bumblezone"
+
+	["Mod-wide Impacting Options"."Feature Options"]
+
+		["Mod-wide Impacting Options"."Feature Options".Misc]
+			#
+			# Adds giant boulders to modded Giant Tree Taiga (or Redwood) biomes.
+			addGiantBouldersModdedBiomes = false
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's boulders to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedBoulderBiomes = " "
+			#
+			# How many Giant Boulders per chunk. (Can be decimal too)
+			#Range: 0.0 ~ 100.0
+			giantBouldersPerChunk = 0.5
+			#
+			# 1 out of ___ chance of Diamond Ore when placing
+			# a block in giant Boulders. Lower number = more common.
+			# Enter 0 to disable Diamond Ores completely.
+			#Range: 0 ~ 1000000
+			diamondChanceInGiantBoulders = 7000
+			#
+			# Adds tiny boulders to modded Taiga biomes.
+			addTinyBouldersModdedBiomes = false
+			#
+			# Adds tiny boulders to Taiga Mountains and Snowy Taiga Mountains biomes 
+			# that can contain small amounts of Coal and Iron ores.
+			boulderTiny = true
+			#
+			# Replaces boulders in Giant Tree Taiga Hills and Giant Spruce Taiga Hills
+			# biomes with a larger boulder that can contain Coal, Iron, and extremely
+			# rarely, can also have Diamond Ores.
+			boulderGiant = true
+
+	["Mod-wide Impacting Options"."Structure Options"]
+
+		["Mod-wide Impacting Options"."Structure Options"."Jungle Fortress"]
+			#
+			# How rare are Jungle Fortresses.
+			# 1 for spawning in most chunks and 1001 for no spawn.
+			#Range: 1 ~ 1001
+			jungleFortressMaxChunkDistance = 50
+			#
+			# Add Jungle Fortress to modded jungle biomes.
+			addJungleFortressToModdedBiomes = true
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Jungle Fortresses to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedFortressBiomes = " "
+			#
+			# How often Silverfish Blocks will generate in Jungle Fortress as a percentage.
+			# Note: Mossy Stone Bricks block cannot be infected by Silverfish
+			# 0 for no Silverfish Blocks and 100 for max spawnrate.
+			#Range: 0.0 ~ 100.0
+			silverfishSpawnrate = 0.5
+			#
+			# Silverfish Mob Spawners generate in Stone Fortresses.
+			# If turned off, the spawners will become Skeleton spawners.
+			allowSilverfishSpawner = true
+			#
+			# Controls whether loot chests spawn or not in Jungle Fortresses.
+			lootChests = true
+
+		["Mod-wide Impacting Options"."Structure Options".Igloos]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Igloos to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedIglooBiomes = " "
+			#
+			# How rare are Grassy Igloos in Plains and Forests.
+			# 1 for spawning in most chunks and 1001 for no spawn.
+			#Range: 1 ~ 1001
+			grassyIglooMaxChunkDistance = 20
+			#
+			# Add Grassy Igloos to modded biomes that are most likely grassy fields or temperate forests.
+			addGrassyIglooToModdedBiomes = true
+			#
+			# How rare are Stone Igloos in Giant Tree Taiga biomes.
+			# 1 for spawning in most chunks and 1001 for no spawn.
+			#Range: 1 ~ 1001
+			stoneIglooMaxChunkDistance = 20
+			#
+			# Add Stone Igloos to modded biomes that are most likely Giant Tree Taiga variants.
+			addStoneIglooToModdedBiomes = true
+
+		["Mod-wide Impacting Options"."Structure Options"."Ruined Portals"]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Ruined Portals to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedRuinedPortalsBiomes = " "
+			#
+			# How rare are End themed Ruined Portals in End category biomes. 1 for spawning in most
+			# chunks and 1001 for none.
+			#Range: 1 ~ 1001
+			ruinedPortalEndMaxChunkDistance = 57
+			#
+			# Add End themed ruined portals to modded End category biomes.
+			addRuinedPortalEndToModdedBiomes = true
+
+		["Mod-wide Impacting Options"."Structure Options".Ruins]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Ruins to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedRuinsBiomes = " "
+			#
+			# How rare are Nether Ruins. 1 for spawning in most chunks and 1001 for none.
+			#Range: 1 ~ 1001
+			ruinsNetherMaxChunkDistance = 35
+			#
+			# Add Nether Ruins to modded Nether category biomes.
+			addRuinsNetherToModdedBiomes = true
+
+		["Mod-wide Impacting Options"."Structure Options".Cities]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Cities to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedCitiesBiomes = " "
+			#
+			# How rare are Nether Cities. 1 for spawning in most chunks and 1001 for none.
+			#Range: 1 ~ 1001
+			citiesNetherMaxChunkDistance = 160
+			#
+			# Add Nether Cities to modded Nether category biomes.
+			addCitiesNetherToModdedBiomes = true
+
