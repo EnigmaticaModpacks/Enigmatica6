@@ -82,7 +82,7 @@
 	[generators.fusion_reactor]
 		#The fraction of the heat dissipated from the case that is converted to Joules.
 		#Range: 0.0 ~ 1.0
-		thermocoupleEfficiency = 0.007
+		thermocoupleEfficiency = 0.014
 		#The fraction fraction of heat from the casing that can be transfered to all sources that are not water. Will impact max heat, heat transfer to thermodynamic conductors, and power generation.
 		#Range: 0.001 ~ 1.0
 		casingThermalConductivity = 0.1
