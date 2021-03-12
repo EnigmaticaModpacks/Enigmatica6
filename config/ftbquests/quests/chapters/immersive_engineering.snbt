@@ -234,7 +234,7 @@
 			}]
 		},
 		{
-			x: -5.0d,
+			x: -5.5d,
 			y: -3.0d,
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."],
 			dependencies: ["0000000000000009"],
@@ -413,16 +413,14 @@
 		{
 			title: "Improved Blast Furnace",
 			icon: "immersiveengineering:blastbrick_reinforced",
-			x: -4.0d,
-			y: -2.0d,
-			shape: "diamond",
+			x: -5.5d,
+			y: -1.5d,
 			description: [
 				"The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
 			dependencies: ["0000000000000012"],
-			size: 0.75d,
 			id: "0000000000000024",
 			tasks: [
 				{
@@ -793,80 +791,6 @@
 			],
 			rewards: [{
 				id: "000000000000061C",
-				type: "command",
-				title: "Epic Immersive Engineering Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
-				player_command: false
-			}]
-		},
-		{
-			title: "Engineer's Tools and Weaponry",
-			icon: {
-				ForgeCaps: {
-					Parent: {
-						Size: 3,
-						Items: []
-					}
-				},
-				id: "immersiveengineering:railgun",
-				Count: 1b
-			},
-			x: -5.0d,
-			y: -1.5d,
-			description: ["IE has several unique tools and weapons that can be crafted. This quest shows just a few of the craftable tools/weapons available; most can be customized and upgraded in the Engineer's Workbench."],
-			dependencies: ["0000000000000019"],
-			id: "0000000000000042",
-			tasks: [
-				{
-					id: "0000000000000043",
-					type: "item",
-					item: {
-						ForgeCaps: {
-							Parent: {
-								Size: 3,
-								Items: []
-							}
-						},
-						id: "immersiveengineering:railgun",
-						Count: 1b
-					}
-				},
-				{
-					id: "0000000000000048",
-					type: "item",
-					item: {
-						ForgeCaps: {
-							Parent: {
-								Size: 2,
-								Items: []
-							}
-						},
-						id: "immersiveengineering:shield",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "0000000000000049",
-					type: "item",
-					item: {
-						ForgeCaps: {
-							Parent: {
-								Size: 5,
-								Items: []
-							}
-						},
-						id: "immersiveengineering:drill",
-						Count: 1b,
-						tag: {}
-					}
-				}
-			],
-			rewards: [{
-				id: "000000000000061A",
 				type: "command",
 				title: "Epic Immersive Engineering Loot Box",
 				icon: "kubejs:epic_lootbox",
