@@ -20,6 +20,12 @@ events.listen('recipes', (event) => {
                 input: 'byg:quartzite_sand'
             },
             {
+                outputs: [
+                    Item.of('upgrade_aquatic:driftwood_log')
+                ],
+                input: '#minecraft:logs'
+            },
+            {
                 outputs: ['embellishcraft:rusty_wall_ladder'],
                 input: 'embellishcraft:steel_wall_ladder'
             },
