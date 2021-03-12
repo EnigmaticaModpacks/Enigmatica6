@@ -186,7 +186,7 @@
 		consumption = 64
 		#The Flux per tick the chemthrower turret consumes to shoot
 		#Range: > 1
-		chem_consumption = 32
+		chem_consumption = 16
 		#The Flux per tick the gun turret consumes to shoot
 		#Range: > 1
 		gun_consumption = 32
@@ -322,7 +322,7 @@
 		consumption = 4096
 		#The speed of the Excavator. Basically translates to how many degrees per tick it will turn.
 		#Range: 0.001 ~ 1000.0
-		speed = 1.0
+		speed = 1.5
 		#Set this to false to disable the ridiculous amounts of particles the Excavator spawns
 		particles = true
 		#The threshold the perlin noise has to cross for a mineral vein to be generated. Higher means less likely.
@@ -461,28 +461,28 @@
 	[tools.bullet_damage]
 		#The amount of base damage a Casull Cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		casull = 10.0
+		casull = 16.0
 		#The amount of base damage a armor piercing Cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		ap = 10.0
+		ap = 16.0
 		#The amount of base damage a single part of buckshot inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		buck = 2.0
+		buck = 3.0
 		#The amount of base damage a dragon breath cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		dragon = 3.0
+		dragon = 4.0
 		#The amount of base damage a homing cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		homing = 10.0
+		homing = 16.0
 		#The amount of base damage a wolfpack cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		wolfpack = 4.0
+		wolfpack = 5.0
 		#The amount of base damage the sub-projectiles of a  wolfpack cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		wolfpack_part = 8.0
+		wolfpack_part = 10.0
 		#The amount of damage a silver bullet inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
-		silver = 10.0
+		silver = 12.0
 		#The amount of base damage a phial cartridge inflicts
 		#Range: 0.0 ~ 1.7976931348623157E308
 		phial = 1.0
@@ -490,17 +490,17 @@
 	[tools.chemthrower]
 		#The mb of fluid the Chemical Thrower will consume per tick of usage
 		#Range: > 1
-		consumption = 10
+		consumption = 2
 		#Set this to false to disable the use of Sneak+Scroll to switch Chemthrower tanks.
 		scroll = true
 
 	[tools.railgun]
 		#The base amount of Flux consumed per shot by the Railgun
 		#Range: > 1
-		consumption = 800
+		consumption = 600
 		#A modifier for the damage of all projectiles fired by the Railgun
 		#Range: 0.0 ~ 1.7976931348623157E308
-		damage_modifier = 1.0
+		damage_modifier = 2.0
 
 	[tools.powerpack]
 		#A whitelist of armor pieces to allow attaching the capacitor backpack, formatting: [mod id]:[item name]
