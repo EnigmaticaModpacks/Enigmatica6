@@ -70,7 +70,7 @@
 		#Disables Forge Energy (FE,RF,IF,uF,CF) power integration. Requires world restart (server-side option in SMP).
 		blacklistForge = false
 		#Maximum Joules per mB of Steam. Also affects Thermoelectric Boiler.
-		maxEnergyPerSteam = "2"
+		maxEnergyPerSteam = "4"
 		#Conversion multiplier from Forge Energy to Joules (FE * JoulePerForgeEnergy = Joules)
 		JoulePerForgeEnergy = "2.5000"
 		#Conversion multiplier from EU to Joules (EU * JoulePerEU = Joules)
