@@ -12,6 +12,8 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
+    event.remove({ mod: 'aquaculture', type: 'farmersdelight:cutting' })
+
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
