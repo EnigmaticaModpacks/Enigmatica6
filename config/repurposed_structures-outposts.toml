@@ -1,0 +1,103 @@
+#
+# Add the ID/resource location of the biome you don't want
+# RS's outposts to spawn in. Separate each ID with a comma ,
+#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+blacklistedOutpostBiomes = " "
+
+[Outposts]
+	#
+	# How rare are Nether Brick Outposts in non-warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	addNetherBrickOutpostToModdedBiomes = true
+	#
+	# Add Nether Brick Outposts to modded Nether biomes
+	# that other nether outposts don't fit in.
+	#Range: 1 ~ 1001
+	netherBrickOutpostMaxChunkDistance = 34
+	#
+	# How rare are Warped Outposts in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	addWarpedOutpostToModdedBiomes = true
+	#
+	# Add Warped Outposts to modded Nether Warped biomes.
+	#Range: 1 ~ 1001
+	warpedOutpostMaxChunkDistance = 34
+	#
+	# How rare are Crimson Outposts in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	addCrimsonOutpostToModdedBiomes = true
+	#
+	# Add Crimson Outposts to modded Nether Warped biomes.
+	#Range: 1 ~ 1001
+	crimsonOutpostMaxChunkDistance = 34
+	#
+	# How rare are Birch Outposts in Birch Forest biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostBirchMaxChunkDistance = 45
+	#
+	# Add Birch Outposts to modded Birch biomes.
+	addOutpostBirchToModdedBiomes = true
+	#
+	# How rare are Jungle Outposts in Jungle biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostJungleMaxChunkDistance = 45
+	#
+	# Add Jungle Outposts to modded Jungle biomes.
+	addOutpostJungleToModdedBiomes = true
+	#
+	# How rare are Giant Tree Taiga Outposts in Giant Tree Taiga biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostGiantTreeTaigaMaxChunkDistance = 45
+	#
+	# Add Giant Tree Taiga Outposts to modded Giant Tree Taiga biomes.
+	addOutpostGiantTreeTaigaToModdedBiomes = true
+	#
+	# How rare are Desert Outposts in Desert biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostDesertMaxChunkDistance = 45
+	#
+	# Add Desert Outposts to modded Desert biomes.
+	addOutpostDesertToModdedBiomes = true
+	#
+	# How rare are Badlands Outposts in Badlands biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostBadlandsMaxChunkDistance = 45
+	#
+	# Add Badlands Outposts to modded Badlands biomes.
+	addOutpostBadlandsToModdedBiomes = true
+	#
+	# How rare are Snowy Outposts in snowy biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostSnowyMaxChunkDistance = 45
+	#
+	# Add Snowy Outposts to modded snowy biomes.
+	addOutpostSnowyToModdedBiomes = true
+	#
+	# How rare are Icy Outposts in icy/extremely cold biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostIcyMaxChunkDistance = 41
+	#
+	# Add Icy Outposts to modded icy/extremely cold biomes.
+	addOutpostIcyToModdedBiomes = true
+	#
+	# Add Oak Outposts to modded forest biomes that are not birch or dark forest.
+	#Range: 1 ~ 1001
+	outpostOakMaxChunkDistance = 45
+	#
+	# Add Oak Outposts to modded forest biomes that are not birch or dark forest.
+	addOutpostOakToModdedBiomes = true
+	#
+	# Add Taiga Outposts to modded non-snowy and non-giant taiga biomes.
+	#Range: 1 ~ 1001
+	outpostTaigaMaxChunkDistance = 45
+	#
+	# Add Taiga Outposts to modded non-snowy and non-giant taiga biomes.
+	addOutpostTaigaToModdedBiomes = true
+
