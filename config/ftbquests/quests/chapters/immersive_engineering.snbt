@@ -716,7 +716,8 @@
 			}]
 		},
 		{
-			title: "Biodiesel",
+			title: "Diesel Generator",
+			icon: "immersiveengineering:biodiesel_bucket",
 			x: -3.0d,
 			y: 2.5d,
 			description: [
@@ -726,11 +727,43 @@
 			],
 			dependencies: ["000000000000003A"],
 			id: "000000000000003C",
-			tasks: [{
-				id: "000000000000003D",
-				type: "item",
-				item: "immersiveengineering:biodiesel_bucket"
-			}],
+			tasks: [
+				{
+					id: "37AAA90BDAB5CD72",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 5L
+				},
+				{
+					id: "284769224493A777",
+					type: "item",
+					item: "immersiveengineering:generator",
+					count: 4L
+				},
+				{
+					id: "459D17A377D44D7F",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 13L
+				},
+				{
+					id: "63E9727F7E04EBDA",
+					type: "item",
+					item: "immersiveengineering:radiator",
+					count: 9L
+				},
+				{
+					id: "06375C08B6AE1B06",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: "3D8DA60F68FB5A23",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 6L
+				}
+			],
 			rewards: [{
 				id: "0000000000000624",
 				type: "command",
@@ -806,14 +839,14 @@
 			description: ['As described in the "Minerals" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk.'],
 			dependencies: ["0000000000000012"],
 			id: "0000000000000061",
-			tasks: [
+			tasks: [{
+				id: "0000000000000062",
+				type: "item",
+				item: "immersiveengineering:sample_drill"
+			}],
+			rewards: [
 				{
-					id: "0000000000000062",
-					type: "item",
-					item: "immersiveengineering:sample_drill"
-				},
-				{
-					id: "0000000000000063",
+					id: "63F8CD5DAAB0252B",
 					type: "item",
 					item: {
 						id: "immersiveengineering:survey_tools",
@@ -824,21 +857,14 @@
 					}
 				},
 				{
-					id: "0000000000000064",
-					type: "item",
-					item: {
-						id: "immersiveengineering:coresample",
-						Count: 1b,
-						tag: {}
-					}
+					id: "35731B5937BBF8EB",
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
-			],
-			rewards: [{
-				id: "000000000000061B",
-				type: "item",
-				item: "emendatusenigmatica:gold_ore",
-				count: 12
-			}]
+			]
 		},
 		{
 			title: "Getting Clocher",
