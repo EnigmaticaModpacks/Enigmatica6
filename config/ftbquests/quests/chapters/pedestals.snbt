@@ -30,6 +30,12 @@
 				id: "16795FC459119F11",
 				type: "checkmark",
 				icon: "pedestals:pedestal/stone333"
+			}],
+			rewards: [{
+				id: "38DDD047E1FD3A07",
+				type: "item",
+				item: "pedestals:pedestal/stone333",
+				count: 2
 			}]
 		},
 		{
@@ -48,7 +54,7 @@
 			x: 0.0d,
 			y: 6.5d,
 			shape: "rsquare",
-			description: ["Being able to move items from pedestal to pedestal is great, but being able to interact with inventories is even better. The Import and Export augments allow you to do just that. Import will pull from an inventory below the pedestal into the its display slot, while Export will push items from the pedestal into the inventory below."],
+			description: ["Being able to move items from pedestal to pedestal is great, but being able to interact with inventories is even better. The Import and Export augments allow you to do just that. Import will pull from an inventory below the pedestal into the its display slot, while Export will push items from the display slot into the inventory below."],
 			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "04E9F681A7D93BC7",
 			tasks: [
@@ -185,8 +191,10 @@
 			}]
 		},
 		{
-			x: 0.0d,
-			y: 10.0d,
+			title: "Cobble Generator",
+			x: -1.5d,
+			y: 7.0d,
+			dependencies: ["04E9F681A7D93BC7"],
 			id: "5B965827DB02DAFD",
 			tasks: [{
 				id: "1FC88CE0C0CAF005",
@@ -222,6 +230,7 @@
 			x: -2.0d,
 			y: 9.0d,
 			description: ["Drops on ground"],
+			dependencies: ["04E9F681A7D93BC7"],
 			id: "72C7A8AA9E61807F",
 			tasks: [{
 				id: "7F7E129E6A7969BA",
@@ -232,6 +241,7 @@
 		{
 			x: -1.0d,
 			y: 9.0d,
+			dependencies: ["04E9F681A7D93BC7"],
 			id: "423724779D1C1953",
 			tasks: [
 				{
@@ -249,6 +259,7 @@
 		{
 			x: 1.0d,
 			y: 9.0d,
+			dependencies: ["04E9F681A7D93BC7"],
 			id: "746A1DEFF6808816",
 			tasks: [{
 				id: "5094EB0BBC1E2AC8",
@@ -257,8 +268,9 @@
 			}]
 		},
 		{
-			x: -2.5d,
-			y: 9.5d,
+			x: -2.0d,
+			y: 8.0d,
+			dependencies: ["04E9F681A7D93BC7"],
 			id: "45488D9006262BCD",
 			tasks: [{
 				id: "1E1FC590E1DE62C2",
@@ -267,8 +279,10 @@
 			}]
 		},
 		{
-			x: 5.0d,
-			y: 9.5d,
+			title: "XP Input",
+			x: 2.5d,
+			y: 3.5d,
+			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "7A4BFA66CD8E3884",
 			tasks: [
 				{
@@ -284,8 +298,10 @@
 			]
 		},
 		{
-			x: 4.0d,
-			y: 10.5d,
+			title: "XP Storage",
+			x: 3.5d,
+			y: 2.0d,
+			dependencies: ["7A4BFA66CD8E3884"],
 			id: "78991F3E1F2CDB09",
 			tasks: [
 				{
@@ -306,8 +322,9 @@
 			]
 		},
 		{
-			x: 5.0d,
-			y: 10.5d,
+			x: 4.0d,
+			y: 3.0d,
+			dependencies: ["7A4BFA66CD8E3884"],
 			id: "733EA0092EE4A490",
 			tasks: [{
 				id: "2885D8E72156A816",
@@ -316,8 +333,9 @@
 			}]
 		},
 		{
-			x: 6.0d,
-			y: 10.5d,
+			x: 4.5d,
+			y: 4.0d,
+			dependencies: ["7A4BFA66CD8E3884"],
 			id: "71548F1D17633FBC",
 			tasks: [{
 				id: "24EDA20ED95D7ADE",
@@ -326,8 +344,10 @@
 			}]
 		},
 		{
-			x: 2.5d,
-			y: 5.0d,
+			title: "Fluid Transfer",
+			x: 2.0d,
+			y: 6.0d,
+			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "500A2940C0C3AF6C",
 			tasks: [
 				{
@@ -343,8 +363,9 @@
 			]
 		},
 		{
-			x: 3.5d,
-			y: 6.0d,
+			x: 3.0d,
+			y: 7.0d,
+			dependencies: ["500A2940C0C3AF6C"],
 			id: "5103383AF580A723",
 			tasks: [
 				{
@@ -360,8 +381,12 @@
 			]
 		},
 		{
-			x: 2.5d,
-			y: 6.5d,
+			x: 4.0d,
+			y: 5.0d,
+			dependencies: [
+				"7A4BFA66CD8E3884",
+				"500A2940C0C3AF6C"
+			],
 			id: "1D4B0DDBC3A5523C",
 			tasks: [{
 				id: "6778060035ECD402",
@@ -370,8 +395,9 @@
 			}]
 		},
 		{
+			title: "Energy Transfer",
 			x: -2.5d,
-			y: 3.5d,
+			y: 4.0d,
 			shape: "rsquare",
 			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "3F9545A78B985E50",
@@ -389,7 +415,7 @@
 			]
 		},
 		{
-			x: -1.5d,
+			x: -2.0d,
 			y: 5.0d,
 			dependencies: ["3F9545A78B985E50"],
 			id: "5E9B10EA68EF56F0",
@@ -400,8 +426,16 @@
 			}]
 		},
 		{
+			title: "Crusher Upgrade",
 			x: -5.0d,
 			y: 6.0d,
+			description: [
+				"The Crusher upgrades will perform various crushing operations on items in the inventory below the pedestal, and display the products. This will allow basic ore and dye doubling, allow the production of various dusts, and more - see JEI for a complete listing.",
+				"",
+				"The upgrade will only process if its pedestal is empty; make sure to link it to a receiving pedestal to clear the products.",
+				"",
+				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action."
+			],
 			dependencies: ["69E5C4BFCE2AC042"],
 			dependency_requirement: "one_completed",
 			id: "6186950B1DBA6D90",
@@ -427,8 +461,16 @@
 			}]
 		},
 		{
+			title: "Smelting Upgrade",
 			x: -4.0d,
 			y: 7.0d,
+			description: [
+				"The Smelting upgrades will perform vanilla smelting recipes on items in the inventory below the pedestal, and display the products. This will also produce XP like a vanilla furnace, dropping the XP orbs on the ground.",
+				"",
+				"The upgrades will only process if its pedestal is empty; make sure to link it to a receiving pedestal to clear the products.",
+				"",
+				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action."
+			],
 			dependencies: ["69E5C4BFCE2AC042"],
 			dependency_requirement: "one_completed",
 			id: "1D0A4C2E2E3C3949",
@@ -454,8 +496,16 @@
 			}]
 		},
 		{
+			title: "Sawmill Upgrade",
 			x: -3.0d,
 			y: 7.0d,
+			description: [
+				"The Sawmill upgrades will take wood prodcuts from the inventory below, cut them up, and display the products. Generally used for Log -> Plank processing.",
+				"",
+				"The upgrades will only process if its pedestal is empty; make sure to link it to a receiving pedestal to clear the products.",
+				"",
+				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action."
+			],
 			dependencies: ["69E5C4BFCE2AC042"],
 			dependency_requirement: "one_completed",
 			id: "55DA0B9C9A170193",
@@ -481,8 +531,16 @@
 			}]
 		},
 		{
+			title: "Quarry Upgrade",
 			x: -5.0d,
 			y: 5.0d,
+			description: [
+				"The Quarry upgrades will mine blocks around the pedestal. They come in whitelist and blacklist versions - these read the inventories below them to decide what to mine. The upgrade also has a built-in magnet - it will pull in mined products and display them.",
+				"",
+				"The upgrades will only mine any blocks available, but the magnet will only draw up items if the display has the same item or is empty; make sure to link it to a receiving pedestal to clear the products.",
+				"",
+				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action. Pedestal Range and Area enchantments will increase the operating space of the quarry. The upgrade can also be enchanted with vanilla Fortune or Silk Touch, which will effect how blocks are broken."
+			],
 			dependencies: ["69E5C4BFCE2AC042"],
 			dependency_requirement: "one_completed",
 			id: "039F6656F4A696D6",
@@ -518,6 +576,7 @@
 		{
 			x: 0.0d,
 			y: 9.0d,
+			dependencies: ["04E9F681A7D93BC7"],
 			id: "1E809DFCA38FD467",
 			tasks: [
 				{
@@ -533,7 +592,7 @@
 			]
 		},
 		{
-			x: 0.5d,
+			x: -1.0d,
 			y: 5.5d,
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "68810A837A049E50",
@@ -544,8 +603,9 @@
 			}]
 		},
 		{
-			x: 3.0d,
-			y: 5.5d,
+			x: 3.5d,
+			y: 6.0d,
+			dependencies: ["500A2940C0C3AF6C"],
 			id: "7F9DCB2205D9F899",
 			tasks: [{
 				id: "6F49698AFF667D88",
@@ -554,23 +614,58 @@
 			}]
 		},
 		{
-			x: 1.5d,
+			title: "Crafting Upgrades",
+			x: 2.5d,
 			y: 8.0d,
+			dependencies: [
+				"04E9F681A7D93BC7",
+				"500A2940C0C3AF6C"
+			],
+			dependency_requirement: "one_completed",
 			id: "0F70C994D2D08157",
 			tasks: [{
-				id: "1669D9A394582F6C",
+				id: "67DB4F5A0E9B46F4",
 				type: "item",
-				item: "pedestals:coin/compactor3"
-			}]
-		},
-		{
-			x: 2.0d,
-			y: 5.5d,
-			id: "073C08A302E0B019",
-			tasks: [{
-				id: "127277E89345C67E",
-				type: "item",
-				item: "pedestals:coin/fluidcrafter3"
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/compactor2",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/compactor3",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/crafter1",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/crafter2",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/crafter3",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/fluidcrafter1",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/fluidcrafter2",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/fluidcrafter3",
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
@@ -602,6 +697,11 @@
 						stored_z: 0
 					}
 				}
+			}],
+			rewards: [{
+				id: "17C1C8CA8C95E178",
+				type: "item",
+				item: "pedestals:linkingtoolbackwards"
 			}]
 		},
 		{
@@ -626,13 +726,14 @@
 		},
 		{
 			title: "Pedestal Machinery",
+			icon: "minecraft:coal",
 			x: -3.5d,
 			y: 5.5d,
 			subtitle: "Decoration Meets Technology",
 			description: [
 				"Pedestals has a series of upgrades to allow you to process materials with them. These upgrades have two versions:",
 				"",
-				"One version runs on burnables dropped near them. When the pedestal has fuel on board, it will emit black particles.",
+				"One version runs on burnables dropped near them. When the pedestal has fuel on board, it will emit fire particles around its base.",
 				"",
 				"The other version runs on FE supplied by the Pedestal network. Supply them with FE by linking them to Pedestals with FE stored in them."
 			],
