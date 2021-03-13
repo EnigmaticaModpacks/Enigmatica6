@@ -1,5 +1,5 @@
 //Tiers array
-const powahTiers = ['starter', 'basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro'];
+const powahTiers = ['basic', 'hardened', 'blazing', 'niotic', 'spirited', 'nitro'];
 
 //Blocks array
 const powahBlocks = [
