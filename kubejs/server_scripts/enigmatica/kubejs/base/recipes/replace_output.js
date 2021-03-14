@@ -5,6 +5,7 @@ events.listen('recipes', (event) => {
     event.replaceOutput({}, 'thermal:niter', '#forge:gems/niter');
     event.replaceOutput({}, 'thermal:bitumen', '#forge:gems/bitumen');
     event.replaceOutput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
+    event.replaceOutput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
     event.replaceOutput({}, 'refinedstorage:silicon', '#forge:gems/silicon');
     event.replaceOutput({}, 'create:dough', 'farmersdelight:wheat_dough');
     event.replaceOutput({}, 'simplefarming:chocolate', 'create:bar_of_chocolate');

@@ -28,33 +28,33 @@
 
 	[chances.doubleDropValue]
 		#Default 1 = 0.1%
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1.0
 		diamond = 1
-		#Range: 0 ~ 1000
-		coal = 500
-		#Range: 0 ~ 1000
-		quartz = 500
-		#Range: 0 ~ 1000
-		lapis = 500
+		#Range: 0.0 ~ 1.0
+		coal = 1.0
+		#Range: 0.0 ~ 1.0
+		quartz = 1.0
+		#Range: 0.0 ~ 1.0
+		lapis = 1.0
 		#Default 1 = 0.1%
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1.0
 		emerald = 1
-		#Range: 0 ~ 1000
-		redstone = 500
+		#Range: 0.0 ~ 1.0
+		redstone = 1.0
 
 	[chances.extraDropValue]
-		#Sets the chance of an extra drop when using a tool. [Default 5 = 0.5%]
-		#Range: 0 ~ 1000
-		extraDrop = 5
-		#Sets the chance of extra damage when using bone axe or sword on a (wither) skeleton. [Default 200 = 20%]
-		#Range: 0 ~ 1000
-		extraDamage = 200
-		#Sets the chance to take an half heart damage if using paper tools. [Default 100 = 10%]
-		#Range: > 0
-		damageByPaperTools = 100
-		#Sets the chance of an head drop when using bone axe or sword. [Default 50 = 5%]
-		#Range: 0 ~ 1000
-		headDrop = 50
+		#Sets the chance of an extra drop when using a tool. [Default 0.0005 = 0.05%]
+		#Range: 0.0 ~ 1.0
+		extraDrop = 1.0
+		#Sets the chance of extra damage when using bone axe or sword on a (wither) skeleton. [Default 0.2 = 20%]
+		#Range: 0.0 ~ 1.0
+		extraDamage = 1.0
+		#Sets the chance to take an half heart damage if using paper tools. [Default 0.1 = 10%]
+		#Range: 0.0 ~ 1.0
+		damageByPaperTools = 1.0
+		#Sets the chance of an head drop when using bone axe or sword. [Default 0.05 = 5%]
+		#Range: 0.0 ~ 1.0
+		headDrop = 1.0
 
 [amounts]
 	#The maximum amount of damage. Default: 5 = 2.5 hearts
@@ -142,45 +142,45 @@
 		redstone = 6.2
 
 	[amounts.harvestlevels]
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		prismarine = 3
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		nether = 1
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		obsidian = 4
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		fiery = 2
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		quartz = 2
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		bone = 1
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		ender = 3
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		glowstone = 2
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		stone = 1
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		netherite = 4
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		slime = 2
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		gold = 0
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		diamond = 3
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		paper = 0
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		iron = 2
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		coal = 1
-		#The harvestlevel of the tools (0 = wood; 1 = stone; 2 = iron; 3 = diamond; 4-5 = higher)
-		#Range: 0 ~ 5
+		#The harvestlevel of the tools (0 = wood; 1 = stone; 2 = iron; 3 = diamond; 4 = netherite, 5-10 = higher)
+		#Range: 0 ~ 10
 		wood = 0
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		lapis = 2
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		emerald = 3
-		#Range: 0 ~ 5
+		#Range: 0 ~ 10
 		redstone = 2
 

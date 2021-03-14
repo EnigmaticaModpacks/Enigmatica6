@@ -7,11 +7,66 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "emendatusenigmatica:steel_ingot",
+                    "name": "immersiveengineering:balloon",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:lantern",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:electric_lantern",
                     "functions": [
                         {
                             "function": "set_count",
                             "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:component_iron",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:component_steel",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:treated_wood_horizontal",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
                         }
                     ]
                 },
@@ -33,29 +88,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "immersiveengineering:shader_bag_uncommon",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 4
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "immersiveengineering:coal_coke",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 32
+                            "count": 16
                         }
                     ]
                 },
@@ -66,14 +99,14 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 32
+                            "count": 64
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "immersiveengineering:heavy_engineering",
+                    "name": "immersiveengineering:light_engineering",
                     "functions": [
                         {
                             "function": "set_count",
@@ -84,13 +117,50 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "immersiveengineering:wirecoil_copper_ins",
+                    "name": "immersiveengineering:wirecoil_electrum_ins",
                     "functions": [
                         {
                             "function": "set_count",
                             "count": 8
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:connector_mv_relay",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:connector_mv",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "immersiveengineering:shader_bag_common"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "immersiveengineering:shader_bag_uncommon"
                 }
             ]
         }

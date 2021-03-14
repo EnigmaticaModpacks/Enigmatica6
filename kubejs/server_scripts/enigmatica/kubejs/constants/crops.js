@@ -90,12 +90,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'minecraft:chorus_flower',
-                render: 'minecraft:chorus_flower',
-                plant: 'minecraft:chorus_fruit',
-                substrate: 'end_stone'
-            },
-            {
                 seed: 'minecraft:sugar_cane',
                 render: 'minecraft:sugar_cane',
                 plant: 'minecraft:sugar_cane',
@@ -517,6 +511,12 @@ const cropRegistry = [
                 render: 'betterendforge:blossom_berry_seed',
                 plant: 'betterendforge:blossom_berry',
                 substrate: 'pink_moss'
+            },
+            {
+                seed: 'minecraft:chorus_flower',
+                render: 'minecraft:chorus_flower',
+                plant: 'minecraft:chorus_fruit',
+                substrate: 'end_stone'
             }
         ]
     },
