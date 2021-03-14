@@ -1,1 +1,3 @@
-// Remove in 0.5.0
+events.listen('item.tags', (event) => {
+    event.add('diet:proteins', ['mekanism:canteen']);
+});
