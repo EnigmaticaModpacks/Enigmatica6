@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    const data = {
+    var data = {
         recipes: [
             {
                 ingredients: [{ tag: 'forge:ingots/gold' }, { tag: 'forge:ingots/silver' }],

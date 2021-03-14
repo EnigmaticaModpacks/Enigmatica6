@@ -4,9 +4,17 @@ events.listen('block.tags', (event) => {
         .add(/bars/)
         .add(/chain_link/)
         .add(/leaves/)
+        .add(/scaffolding_standard/)
+        .add(/scaffolding_grate/)
+        .add('immersiveengineering:metal_ladder_alu')
+        .add('immersiveengineering:metal_ladder_steel')
+        .add('byg:sythian_scaffolding')
+        .add('transport:scaffolding_slab')
+        .add('farmersdelight:safety_net')
         .add('darkutils:item_grate')
         .add('engineersdecor:steel_floor_grating')
         .add('quark:grate')
+        .add('minecraft:scaffolding')
         .add('minecraft:chain')
         .add('decorative_blocks:chain');
 });

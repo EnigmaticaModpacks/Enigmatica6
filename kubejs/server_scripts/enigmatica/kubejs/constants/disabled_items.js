@@ -71,6 +71,8 @@ const disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
+    'pedestals:dustflour',
+
     'pitg:green_dye',
 
     'quark:pipe',
