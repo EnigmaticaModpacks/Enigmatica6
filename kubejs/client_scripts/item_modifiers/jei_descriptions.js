@@ -60,6 +60,9 @@ events.listen('jei.information', (event) => {
             items: ['betterendforge:ancient_emerald_ice'],
             description: [
                 'Found naturally in Ice Starfields in the End, it can convert adjacent water blocks to Emerald Ice and those to Dense Emerald Ice.'
+            ]
+        },
+        {
             items: ['simplefarming:habanero'],
             description: ['A very rare drop from farming Peppers.']
         },
