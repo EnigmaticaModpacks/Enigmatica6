@@ -1,0 +1,10 @@
+{
+    "block": "minecraft:soul_campfire",
+    "statePredicate": { "lit": "true" },
+    "temperature": 1700,
+    "thermalResistance": 2500,
+    "heatCapacity": 10000,
+    "transformCold": {
+        "block": "minecraft:soul_campfire[lit=false]"
+    }
+}

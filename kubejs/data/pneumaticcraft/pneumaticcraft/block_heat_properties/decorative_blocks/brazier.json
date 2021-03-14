@@ -1,0 +1,10 @@
+{
+    "block": "decorative_blocks:brazier",
+    "statePredicate": { "lit": "true" },
+    "temperature": 1700,
+    "thermalResistance": 1000,
+    "heatCapacity": 10000,
+    "transformCold": {
+        "block": "decorative_blocks:brazier[lit=false]"
+    }
+}

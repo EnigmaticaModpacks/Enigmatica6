@@ -49,6 +49,24 @@ events.listen('jei.information', (event) => {
             description: [
                 'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
+        },
+        {
+            items: ['betterendforge:emerald_ice'],
+            description: [
+                'Found naturally in Ice Starfields in the End, it can also be created from water placed next to Ancient Emerald Ice.'
+            ]
+        },
+        {
+            items: ['betterendforge:dense_emerald_ice'],
+            description: [
+                'Found naturally in Ice Starfields in the End, it can also be created from Emerald Ice placed next to Ancient Emerald Ice.'
+            ]
+        },
+        {
+            items: ['betterendforge:ancient_emerald_ice'],
+            description: [
+                'Found naturally in Ice Starfields in the End, it can convert adjacent water blocks to Emerald Ice and those to Dense Emerald Ice.'
+            ]
         }
     ];
 
