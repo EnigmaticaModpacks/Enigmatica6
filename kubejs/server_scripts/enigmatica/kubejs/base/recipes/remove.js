@@ -130,7 +130,7 @@ events.listen('recipes', (event) => {
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
         'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
-
+        'thermal:storage/sugar_cane_from_block',
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
