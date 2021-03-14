@@ -467,7 +467,7 @@
 		{
 			title: "Arc Furnace",
 			icon: "immersiveengineering:storage_steel",
-			x: -4.0d,
+			x: -3.5d,
 			y: 2.5d,
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys.",
@@ -501,7 +501,7 @@
 				{
 					id: "000000000000006E",
 					type: "item",
-					title: "Any forge:storage_blocks/steel",
+					title: "6x Block of Steel",
 					item: {
 						id: "itemfilters:tag",
 						Count: 1b,
@@ -718,7 +718,7 @@
 		{
 			title: "Diesel Generator",
 			icon: "immersiveengineering:biodiesel_bucket",
-			x: -3.0d,
+			x: -2.0d,
 			y: 2.5d,
 			description: [
 				"Biodiesel is made in the Refinery, and can be used as a fuel for the powerful (if noisy) Diesel Generator, producing massive amounts of RF/t.",
@@ -779,47 +779,60 @@
 			x: -7.0d,
 			y: 0.5d,
 			description: [
-				"Once you've determined an appropriate spot to excavate, you can build this machine there. Note that the Excavator requires a rather hefty 4096 RF/t.",
+				"Once you've determined an appropriate spot to excavate, you can build this machine there. Be warned that the Excavator requires a rather hefty amount of energy to run.",
 				"",
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
 			dependencies: ["0000000000000061"],
 			id: "0000000000000040",
 			tasks: [
 				{
-					id: "0000000000000065",
+					id: "5B9AAE9A66CF1A1F",
 					type: "item",
-					item: "immersiveengineering:steel_scaffolding_grate_top",
-					count: 6L
+					item: "immersiveengineering:heavy_engineering",
+					count: 4L
 				},
 				{
-					id: "0000000000000066",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_steel",
-					count: 16L
-				},
-				{
-					id: "0000000000000067",
-					type: "item",
-					item: "immersiveengineering:radiator",
-					count: 3L
-				},
-				{
-					id: "0000000000000068",
+					id: "14152385FF2C7F94",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 9L
 				},
 				{
-					id: "0000000000000069",
+					id: "715D9FF0DF871042",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: "000000000000006A",
+					id: "0DC27129321B844B",
 					type: "item",
-					item: "immersiveengineering:heavy_engineering",
-					count: 4L
+					item: "immersiveengineering:radiator",
+					count: 3L
+				},
+				{
+					id: "486083D949A6EB82",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_steel",
+					count: 16L
+				},
+				{
+					id: "14349203FE43E315",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 26L
+				},
+				{
+					id: "1CA9D0AFE77C2611",
+					type: "item",
+					title: "9x Block of Steel",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					},
+					count: 9L
 				}
 			],
 			rewards: [{
