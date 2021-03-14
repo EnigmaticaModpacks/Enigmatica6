@@ -256,10 +256,10 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         case 'cactus':
             growthModifier = 1.5;
             renderType = 'stacking';
-            return;
+            break;
         case 'cane_like':
             renderType = 'stacking';
-            return;
+            break;
         case 'coral':
             //disabled
             return;
