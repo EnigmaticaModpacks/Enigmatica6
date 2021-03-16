@@ -21,13 +21,7 @@ events.listen('jei.information', (event) => {
             ]
         },
         {
-            items: ['powah:uraninite'],
-            description: [
-                'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
-            ]
-        },
-        {
-            items: ['powah:uraninite_block'],
+            items: ['powah:uraninite', 'powah:uraninite_block'],
             description: [
                 'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
             ]
@@ -48,6 +42,35 @@ events.listen('jei.information', (event) => {
             items: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
             description: [
                 'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+            ]
+        },
+        {
+            items: ['betterendforge:emerald_ice'],
+            description: [
+                'Found naturally in Ice Starfields in the End, it can also be created from water placed next to Ancient Emerald Ice.'
+            ]
+        },
+        {
+            items: ['betterendforge:dense_emerald_ice'],
+            description: [
+                'Found naturally in Ice Starfields in the End, it can also be created from Emerald Ice placed next to Ancient Emerald Ice.'
+            ]
+        },
+        {
+            items: ['betterendforge:ancient_emerald_ice'],
+            description: [
+                'Found naturally in Ice Starfields in the End, it can convert adjacent water blocks to Emerald Ice and those to Dense Emerald Ice.'
+            ]
+        },
+        {
+            items: ['simplefarming:habanero'],
+            description: ['A very rare drop from farming Peppers.']
+        },
+        {
+            items: ['mekanismgenerators:fusion_reactor_controller'],
+            description: [
+                'The Fusion Reactor has been nerfed quite heavily.',
+                'It produces 60k-250k rf/t passively, but has potential for far higher output when paired with one or multiple Steam Turbines.'
             ]
         }
     ];

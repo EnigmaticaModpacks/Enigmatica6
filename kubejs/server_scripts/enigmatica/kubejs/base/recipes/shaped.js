@@ -433,6 +433,53 @@ events.listen('recipes', (event) => {
             'minecraft:honeycomb_block'
         ),
 
+        shapedRecipe(
+            Item.of('resourcefulbees:t1_apiary'),
+            ['ABA', 'BCB', 'ABA'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'minecraft:honey_block',
+                C: 'resourcefulbees:t4_beehive'
+            },
+            'resourcefulbees:t1_apiary'
+        ),
+
+        shapedRecipe(
+            Item.of('resourcefulbees:t2_apiary'),
+            ['ACA', 'BDB', 'ACA'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'resourcefulbees:t4_beehive',
+                C: 'resourcefulbees:t1_apiary',
+                D: 'minecraft:nether_star'
+            },
+            'resourcefulbees:t2_apiary'
+        ),
+
+        shapedRecipe(
+            Item.of('resourcefulbees:t3_apiary'),
+            ['DCD', 'BAB', 'DCD'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'resourcefulbees:t4_beehive',
+                C: 'resourcefulbees:t2_apiary',
+                D: 'minecraft:nether_star'
+            },
+            'resourcefulbees:t3_apiary'
+        ),
+
+        shapedRecipe(
+            Item.of('resourcefulbees:t4_apiary'),
+            ['DCD', 'BAB', 'DCD'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'resourcefulbees:t4_beehive',
+                C: 'resourcefulbees:t3_apiary',
+                D: 'minecraft:nether_star'
+            },
+            'resourcefulbees:t4_apiary'
+        ),
+
         // Torch from Stick+Standing Fire
         shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
             A: 'additional_lights:fire_for_standing_torch_s',
@@ -532,67 +579,76 @@ events.listen('recipes', (event) => {
         var capacitor = 'powah:capacitor_' + tier,
             crystal = 'powah:crystal_' + tier;
 
-        if (tier == 'basic' || tier == 'starter') {
+        if (tier == 'basic') {
             return;
         } else if (tier == 'hardened') {
             crystal = 'powah:steel_energized';
         }
 
+        let lowerTiers = [],
+            i = 0,
+            j = powahTiers.indexOf(tier);
+
+        while (i < j) {
+            lowerTiers.push(powahTiers[i]);
+            i++;
+        }
+
         event.shaped(Item.of('powah:energy_cell_' + tier), ['ABA', 'BCB', 'ABA'], {
             A: crystal,
             B: capacitor,
-            C: '#powah:energy_cell'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:energy_cell_' + item))
         });
 
         event.shaped(Item.of('powah:ender_cell_' + tier), [' A ', 'ABA', ' A '], {
             A: crystal,
-            B: '#powah:ender_cell'
+            B: Ingredient.of(lowerTiers.map((item) => 'powah:ender_cell_' + item))
         });
 
         event.shaped(Item.of('powah:energizing_rod_' + tier), ['   ', 'ACA', ' B '], {
             A: capacitor,
             B: 'powah:energy_cable_' + tier,
-            C: '#powah:energizing_rod'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:energizing_rod_' + item))
         });
 
         event.shaped(Item.of('powah:furnator_' + tier), ['AAA', 'BCB', 'A A'], {
             A: crystal,
             B: capacitor,
-            C: '#powah:furnator'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:furnator_' + item))
         });
 
         event.shaped(Item.of('powah:magmator_' + tier), ['AAA', 'BCB', 'A A'], {
             A: crystal,
             B: capacitor,
-            C: '#powah:magmator'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:magmator_' + item))
         });
 
         event.shaped(Item.of('powah:thermo_generator_' + tier), [' A ', 'BCB'], {
             A: crystal,
             B: capacitor,
-            C: '#powah:thermo_generator'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:thermo_generator_' + item))
         });
 
         event.shaped(Item.of('powah:solar_panel_' + tier), ['BCB', 'AAA'], {
             A: crystal,
             B: capacitor,
-            C: '#powah:solar_panel'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:solar_panel_' + item))
         });
 
         event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
             A: capacitor,
-            B: '#powah:energy_hopper'
+            B: Ingredient.of(lowerTiers.map((item) => 'powah:energy_hopper_' + item))
         });
 
         event.shaped(Item.of('powah:energy_discharger_' + tier), [' A ', ' B ', ' A '], {
             A: capacitor,
-            B: '#powah:energy_discharger'
+            B: Ingredient.of(lowerTiers.map((item) => 'powah:energy_discharger_' + item))
         });
 
         event.shaped(Item.of('powah:battery_' + tier), [' A ', 'BCB', ' B '], {
             A: crystal,
             B: capacitor,
-            C: '#powah:battery'
+            C: Ingredient.of(lowerTiers.map((item) => 'powah:battery_' + item))
         });
     });
 

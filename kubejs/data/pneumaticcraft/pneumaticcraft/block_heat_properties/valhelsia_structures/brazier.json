@@ -1,0 +1,10 @@
+{
+    "block": "valhelsia_structures:brazier",
+    "statePredicate": { "lit": "true" },
+    "temperature": 1700,
+    "thermalResistance": 1000,
+    "heatCapacity": 10000,
+    "transformCold": {
+        "block": "valhelsia_structures:brazier[lit=false]"
+    }
+}

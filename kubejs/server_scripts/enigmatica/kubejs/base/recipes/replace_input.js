@@ -5,12 +5,12 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
-    event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen');
+    event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
-    event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen');
-    event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen');
+    event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen', true);
+    event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen', true);
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
-    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen');
+    event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
     event.replaceInput({}, 'immersiveengineering:slag', '#forge:slag');
     event.replaceInput({}, 'thermal:slag', '#forge:slag');
@@ -34,7 +34,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:raw_bacon', '#forge:raw_bacon');
     event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
-    event.replaceInput({ id: '/simplefarming:\\w+burger/'}, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
+    event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
     event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
@@ -115,7 +115,11 @@ events.listen('recipes', (event) => {
     event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbench');
 
     event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
-    event.replaceInput({ id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
+    event.replaceInput(
+        { id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' },
+        '#forge:ingots/nether_brick',
+        'minecraft:nether_brick'
+    );
 
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;

@@ -234,7 +234,7 @@
 			}]
 		},
 		{
-			x: -5.0d,
+			x: -5.5d,
 			y: -3.0d,
 			description: ["The Engineer's Workbench is needed to craft certain parts with the use of blueprints. You can also use it to modify certain tools later on."],
 			dependencies: ["0000000000000009"],
@@ -258,8 +258,8 @@
 		},
 		{
 			icon: "immersiveengineering:watermill",
-			x: -7.5d,
-			y: 0.0d,
+			x: -1.5d,
+			y: -3.0d,
 			description: ["Water Wheels need to have water flowing over them. Up to three can be placed against a Kinetic Dynamo to produce power."],
 			dependencies: ["0000000000000012"],
 			id: "000000000000001B",
@@ -305,8 +305,8 @@
 		{
 			title: "Crusher",
 			icon: "immersiveengineering:light_engineering",
-			x: -3.5d,
-			y: 1.0d,
+			x: -4.0d,
+			y: 0.5d,
 			description: [
 				"The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI.",
 				"",
@@ -357,8 +357,8 @@
 		{
 			title: "Metal Press",
 			icon: "immersiveengineering:mold_plate",
-			x: -1.0d,
-			y: 0.0d,
+			x: -1.5d,
+			y: 0.5d,
 			description: [
 				"The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more.",
 				"",
@@ -413,8 +413,8 @@
 		{
 			title: "Improved Blast Furnace",
 			icon: "immersiveengineering:blastbrick_reinforced",
-			x: 0.5d,
-			y: 0.0d,
+			x: -5.5d,
+			y: -1.5d,
 			description: [
 				"The Improved Blast Furnace makes it easier to automate input/output. You can also make it run much more quickly by attaching one or two powered Blast Furnace Preheaters on either side.",
 				"",
@@ -446,7 +446,7 @@
 		},
 		{
 			title: "Alloy Kiln",
-			x: -1.5d,
+			x: 0.0d,
 			y: -3.0d,
 			description: ["The Alloy Kiln is a simple 2x2x2 structure that can smelt different types of metal together to form alloys."],
 			dependencies: ["0000000000000007"],
@@ -470,12 +470,11 @@
 			x: -3.5d,
 			y: 2.5d,
 			description: [
-				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys and recycle metal gear.",
+				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
 			dependencies: [
-				"0000000000000024",
 				"0000000000000020",
 				"000000000000003A"
 			],
@@ -502,7 +501,7 @@
 				{
 					id: "000000000000006E",
 					type: "item",
-					title: "Any forge:storage_blocks/steel",
+					title: "6x Block of Steel",
 					item: {
 						id: "itemfilters:tag",
 						Count: 1b,
@@ -619,8 +618,8 @@
 					Damage: 0
 				}
 			},
-			x: -2.5d,
-			y: 0.0d,
+			x: 0.0d,
+			y: 0.5d,
 			description: [
 				"The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual.",
 				"",
@@ -688,14 +687,14 @@
 		{
 			title: "Squeezer and Fermenter",
 			icon: "immersiveengineering:plantoil_bucket",
-			x: -7.5d,
-			y: 2.5d,
+			x: -3.0d,
+			y: 0.5d,
 			description: [
 				"The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: ["000000000000001B"],
+			dependencies: ["0000000000000012"],
 			id: "000000000000003A",
 			tasks: [
 				{
@@ -717,8 +716,9 @@
 			}]
 		},
 		{
-			title: "Biodiesel",
-			x: -8.5d,
+			title: "Diesel Generator",
+			icon: "immersiveengineering:biodiesel_bucket",
+			x: -2.0d,
 			y: 2.5d,
 			description: [
 				"Biodiesel is made in the Refinery, and can be used as a fuel for the powerful (if noisy) Diesel Generator, producing massive amounts of RF/t.",
@@ -727,11 +727,43 @@
 			],
 			dependencies: ["000000000000003A"],
 			id: "000000000000003C",
-			tasks: [{
-				id: "000000000000003D",
-				type: "item",
-				item: "immersiveengineering:biodiesel_bucket"
-			}],
+			tasks: [
+				{
+					id: "37AAA90BDAB5CD72",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 5L
+				},
+				{
+					id: "284769224493A777",
+					type: "item",
+					item: "immersiveengineering:generator",
+					count: 4L
+				},
+				{
+					id: "459D17A377D44D7F",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 13L
+				},
+				{
+					id: "63E9727F7E04EBDA",
+					type: "item",
+					item: "immersiveengineering:radiator",
+					count: 9L
+				},
+				{
+					id: "06375C08B6AE1B06",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: "3D8DA60F68FB5A23",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 6L
+				}
+			],
 			rewards: [{
 				id: "0000000000000624",
 				type: "command",
@@ -744,50 +776,63 @@
 		{
 			title: "Excavator",
 			icon: "minecraft:gold_ore",
-			x: -4.5d,
-			y: 1.0d,
+			x: -7.0d,
+			y: 0.5d,
 			description: [
-				"Once you've determined an appropriate spot to excavate, you can build this machine there. Note that the Excavator requires a rather hefty 4096 RF/t.",
+				"Once you've determined an appropriate spot to excavate, you can build this machine there. Be warned that the Excavator requires a rather hefty amount of energy to run.",
 				"",
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. "
 			],
 			dependencies: ["0000000000000061"],
 			id: "0000000000000040",
 			tasks: [
 				{
-					id: "0000000000000065",
+					id: "5B9AAE9A66CF1A1F",
 					type: "item",
-					item: "immersiveengineering:steel_scaffolding_grate_top",
-					count: 6L
+					item: "immersiveengineering:heavy_engineering",
+					count: 4L
 				},
 				{
-					id: "0000000000000066",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_steel",
-					count: 16L
-				},
-				{
-					id: "0000000000000067",
-					type: "item",
-					item: "immersiveengineering:radiator",
-					count: 3L
-				},
-				{
-					id: "0000000000000068",
+					id: "14152385FF2C7F94",
 					type: "item",
 					item: "immersiveengineering:light_engineering",
 					count: 9L
 				},
 				{
-					id: "0000000000000069",
+					id: "715D9FF0DF871042",
 					type: "item",
 					item: "immersiveengineering:rs_engineering"
 				},
 				{
-					id: "000000000000006A",
+					id: "0DC27129321B844B",
 					type: "item",
-					item: "immersiveengineering:heavy_engineering",
-					count: 4L
+					item: "immersiveengineering:radiator",
+					count: 3L
+				},
+				{
+					id: "486083D949A6EB82",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_steel",
+					count: 16L
+				},
+				{
+					id: "14349203FE43E315",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 26L
+				},
+				{
+					id: "1CA9D0AFE77C2611",
+					type: "item",
+					title: "9x Block of Steel",
+					item: {
+						id: "itemfilters:tag",
+						Count: 1b,
+						tag: {
+							value: "forge:storage_blocks/steel"
+						}
+					},
+					count: 9L
 				}
 			],
 			rewards: [{
@@ -800,95 +845,21 @@
 			}]
 		},
 		{
-			title: "Engineer's Tools and Weaponry",
-			icon: {
-				ForgeCaps: {
-					Parent: {
-						Size: 3,
-						Items: []
-					}
-				},
-				id: "immersiveengineering:railgun",
-				Count: 1b
-			},
-			x: -6.0d,
-			y: 0.0d,
-			description: ["IE has several unique tools and weapons that can be crafted. This quest shows just a few of the craftable tools/weapons available; most can be customized and upgraded in the Engineer's Workbench."],
-			dependencies: ["0000000000000012"],
-			id: "0000000000000042",
-			tasks: [
-				{
-					id: "0000000000000043",
-					type: "item",
-					item: {
-						ForgeCaps: {
-							Parent: {
-								Size: 3,
-								Items: []
-							}
-						},
-						id: "immersiveengineering:railgun",
-						Count: 1b
-					}
-				},
-				{
-					id: "0000000000000048",
-					type: "item",
-					item: {
-						ForgeCaps: {
-							Parent: {
-								Size: 2,
-								Items: []
-							}
-						},
-						id: "immersiveengineering:shield",
-						Count: 1b,
-						tag: {
-							Damage: 0
-						}
-					}
-				},
-				{
-					id: "0000000000000049",
-					type: "item",
-					item: {
-						ForgeCaps: {
-							Parent: {
-								Size: 5,
-								Items: []
-							}
-						},
-						id: "immersiveengineering:drill",
-						Count: 1b,
-						tag: {}
-					}
-				}
-			],
-			rewards: [{
-				id: "000000000000061A",
-				type: "command",
-				title: "Epic Immersive Engineering Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
-				player_command: false
-			}]
-		},
-		{
 			title: "Mineral Veins",
 			icon: "immersiveengineering:sample_drill",
-			x: -4.5d,
-			y: 0.0d,
+			x: -5.5d,
+			y: 0.5d,
 			description: ['As described in the "Minerals" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk.'],
 			dependencies: ["0000000000000012"],
 			id: "0000000000000061",
-			tasks: [
+			tasks: [{
+				id: "0000000000000062",
+				type: "item",
+				item: "immersiveengineering:sample_drill"
+			}],
+			rewards: [
 				{
-					id: "0000000000000062",
-					type: "item",
-					item: "immersiveengineering:sample_drill"
-				},
-				{
-					id: "0000000000000063",
+					id: "63F8CD5DAAB0252B",
 					type: "item",
 					item: {
 						id: "immersiveengineering:survey_tools",
@@ -899,21 +870,14 @@
 					}
 				},
 				{
-					id: "0000000000000064",
-					type: "item",
-					item: {
-						id: "immersiveengineering:coresample",
-						Count: 1b,
-						tag: {}
-					}
+					id: "35731B5937BBF8EB",
+					type: "command",
+					title: "Miner's Delight",
+					icon: "kubejs:miners_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+					player_command: false
 				}
-			],
-			rewards: [{
-				id: "000000000000061B",
-				type: "item",
-				item: "emendatusenigmatica:gold_ore",
-				count: 12
-			}]
+			]
 		},
 		{
 			title: "Getting Clocher",
