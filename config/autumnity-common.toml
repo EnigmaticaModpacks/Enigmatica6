@@ -1,13 +1,26 @@
 
-[snail]
-	#A list of biomes where snails can spawn. The list doesn't include maple forests.
-	"Snail Spawn Biomes" = []
+#Common configurations for Autumnity
+[common]
 
-[biomes]
-	#A list of biomes where maple trees can naturally generate. The list doesn't include maple forests.
-	"Maple Tree Biomes" = ["minecraft:forest", "minecraft:wooded_hills", "minecraft:flower_forest"]
-	#The greater the number the more common the biome is.
-	"Maple Forest Weight" = 6
-	#The greater the number the more common the biome is.
-	"Pumpkin Fields Weight" = 1
+	[common.entities]
+		#A list of biomes where snails can spawn. The list doesn't include biomes from this mod.
+		"Snail Spawn Biomes" = []
+		#A list of biomes where turkeys can spawn. The list doesn't include biomes from this mod.
+		#Chickens will not spawn in these biomes.
+		"Turkey Spawn Biomes" = []
+
+	#Values for biome frequencies; lower = more rare. (Requires restart)
+	#If a biome has a default weight of 0, it generates as a sub-biome and not on its own.
+	[common.biome_weights]
+		"Maple Forest weight" = 6
+		"Maple Forest Hills weight" = 0
+		"Pumpkin Fields weight" = 1
+
+	[common.misc]
+		#A list of biomes where green maple trees can generate naturally.
+		#The list does not include biomes from this mod.
+		"Maple Tree Biomes" = ["minecraft:forest", "minecraft:wooded_hills", "minecraft:flower_forest"]
+		"Yellow Spotted Forest" = true
+		"Orange Spotted Dark Forest" = true
+		"Red Spotted Taiga" = true
 
