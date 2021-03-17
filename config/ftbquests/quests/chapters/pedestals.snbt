@@ -52,11 +52,12 @@
 		{
 			title: "Item Transfer",
 			icon: "pedestals:coin/import",
-			x: -0.5d,
+			x: -0.75d,
 			y: 4.5d,
 			shape: "rsquare",
 			description: ["Being able to move items from pedestal to pedestal is great, but being able to interact with inventories is even better. The Import and Export augments allow you to do just that. Import will pull from an inventory below the pedestal into the its display slot, while Export will push items from the display slot into the inventory below."],
 			dependencies: ["5519E152C45C620F"],
+			size: 1.5d,
 			id: "04E9F681A7D93BC7",
 			tasks: [
 				{
@@ -75,6 +76,11 @@
 			title: "Advanced Enchantment",
 			x: 4.5d,
 			y: -2.5d,
+			description: [
+				"The Advanced enchantment allows upgrades that manipulate an inventory below the pedestal to interact with the inventories of entities. This can, for example, be used to import items from or export items to mobs using the appropriate upgrades.",
+				"",
+				"The Advanced enchantment requires an enchanting level of 92; because of this it will need a modded anchanting method such as the XP Enchanter upgrade."
+			],
 			dependencies: ["1D239668DA764C52"],
 			id: "3D505992F1F47451",
 			tasks: [{
@@ -87,6 +93,7 @@
 			title: "Pedestal Filters",
 			x: -2.5d,
 			y: -2.5d,
+			description: ["Pedestal Filters can be crafted with many of the upgrades available, offering control of what the upgrade will operate on. There are both whitelist and blacklist options, and for those filters that need input (like the Item filters) they will read the inventory below the pedestal."],
 			dependencies: ["5519E152C45C620F"],
 			id: "3B1E29F56796E3CB",
 			tasks: [{
@@ -180,9 +187,19 @@
 		},
 		{
 			title: "Mob Farming",
-			x: -1.5d,
+			x: -3.5d,
 			y: 7.5d,
+			description: [
+				"Pedestals provides a number of upgrades to help you build a mob farm. Combine them with an XP magnet upgrade to finish your mob farm off. There are also other potential uses for the various upgrades - most notably the Magnet upgrade.",
+				"",
+				"The Auto Attacker upgrade will attack entities within its range, dealing a default damage of 2. This damage can be upgraded via the Pedestal Capacity enchantment. You can also add a sword to the pedestal, increasing its damage output and conferring any vanilla damage enchantments to the pedestal.",
+				"",
+				"The Fan upgrade will push entities away from the top of the pedestal, to the end of its area. Pedestal Range enchantments will increase the push height, while Pedestal Capacity will increase the AOE. Pedestal Speed enchants will increase its push speed. Crouching will negate the pushing effect.",
+				"",
+				"The Magnet upgrade will grab items in the AOE around the pedestal and display them. It will only draw in items if the display is empty, so it is important to transfer items out quickly."
+			],
 			dependencies: ["04E9F681A7D93BC7"],
+			min_width: 300,
 			id: "2F0BA64F120AC01D",
 			tasks: [
 				{
@@ -204,14 +221,14 @@
 		},
 		{
 			title: "Cobble Generator",
-			x: 0.5d,
+			x: -0.5d,
 			y: 7.5d,
 			description: [
 				"By default, this will generate cobblestone and place it in the display. It will continue to generate cobblestone until the display is full.",
 				"",
 				"By enchanting the upgrade with Silk Touch, it will produce Stone instead.",
 				"",
-				"You can also affect what is produced; for example, putting Blue Ice under a Silky Cobble Gen will produce Packed Ice."
+				"You can also modify what is produced by the generator; for example, putting Blue Ice under a Silky Cobble Gen will produce Packed Ice."
 			],
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "5B965827DB02DAFD",
@@ -239,7 +256,19 @@
 			title: "Entity Filters",
 			x: -2.5d,
 			y: 7.5d,
+			description: [
+				"Entity Filters can be used to control what entities the Auto Attacker, Fan, and Potion Diffuser upgrades interact with. Filtering these upgrades is as easy as putting a specific block underneath the pedestal. The type of block determines the filter:",
+				"",
+				"Netherite - Usually has special amplified effects.",
+				"Emerald - Targets Players.",
+				"Diamond - Targets Monsters (Most Hostile Mobs, but not Slimes).",
+				"Gold - Targets Animals (Most Passive Mobs)",
+				"Lapis - Targets Flying Mobs (Bats, Phantoms)",
+				"Iron - Targets Creatures (Monsters + Animals)",
+				"Coal - Targets Mobs (Monsters + Animals + Flying)"
+			],
 			dependencies: ["2F0BA64F120AC01D"],
+			min_width: 300,
 			id: "064CDAA04220C326",
 			tasks: [{
 				id: "2FEB4963910F1366",
@@ -284,17 +313,17 @@
 		},
 		{
 			title: "Farming Upgrades",
-			x: 1.5d,
+			x: 0.5d,
 			y: 7.5d,
 			subtitle: "Wheat and Oak and Mushrooms, Oh My!",
 			description: [
-				"Pedestals has a number of upgrades that work together to build a farm. They will operate in a specified area that can be upgraded via enchanting.",
+				"Pedestals has a number of upgrades that can work together to build a farm. They will operate in a specified area that can be upgraded via enchanting.",
 				"",
-				"The Planting upgrade will plant seeds or saplings from it's display. The Fertilizing upgrade will use Bonemeal from it's display to fertilize plants.",
+				"The Planting upgrade will plant seeds or saplings from its display. The Fertilizing upgrade will use Bonemeal from its display to fertilize plants.",
 				"",
 				"The Harvester upgrade will break fully grown plants, dropping their seeds and crops on the ground. The upgraded pedestal can be given a Hoe, which it will use to harvest the crops (gaining the benefit of its enchants).",
 				"",
-				"The Tree Chopper upgrade will randomly break logs within it's operating area. If given an Axe it will use that, gaining the benefits of its enchants. If given shears, it will shear off and the leaves and drop them on the ground.",
+				"The Tree Chopper upgrade will randomly break logs within its operating area. If given an Axe the upgrade will use it, gaining the benefits of its enchants. If given shears, it will shear off and the leaves and drop them on the ground.",
 				"",
 				"The Mushroom Chopper upgrade operates similarly. It will break Mushroom or Nether Mushroom blocks within range, and will use an Axe if one is supplied."
 			],
@@ -336,10 +365,18 @@
 		},
 		{
 			title: "XP Input",
-			x: 1.5d,
+			x: 2.25d,
 			y: 4.5d,
 			shape: "rsquare",
+			description: [
+				"Pedestals with XP upgrades that are linked together form an XP Network. There are two main upgrades that allow you to add XP to a Pedestals XP Network - The XP Magnet and XP Grindstone.",
+				"",
+				"The XP Magnet upgrade will collect XP orbs from its AOE and store them. It can also draw XP from a player that is on top of it. The Pedestal Speed enchantment will increase the speed at which it draws XP, while the Pedestal Capacity enchant will raise the number of levels it draws at once. The upgrade has a small buffer of 30 levels, so it is best to transfer the levels somewhere else (such as aa pedestal with an XP Tank upgrade).",
+				"",
+				"The XP Grindstone upgrade will draw up items from an inventory below the pedestal, grind off the enchantments, and display the newly unenchanted item. The upgrade will collect XP for the enchantments the items have and store it in its buffer."
+			],
 			dependencies: ["5519E152C45C620F"],
+			size: 1.5d,
 			id: "7A4BFA66CD8E3884",
 			tasks: [
 				{
@@ -355,9 +392,16 @@
 			]
 		},
 		{
-			title: "Using XP",
+			title: "XP Output",
 			x: 6.5d,
 			y: 4.5d,
+			description: [
+				"XP can be removed from the network with two upgrades - the XP Dropper and XP Bottler. For both of these upgrades, XP can only be transferred into them - not out.",
+				"",
+				"The XP Dropper will drop XP orbs from its top when XP is transferred to it. Because it immediately drops any XP it receives, redstone control is particularly useful with it.",
+				"",
+				"The XP Bottler will pull empty bottles from the inventory below the pedestal, fill them with XP, and place Bottles of Experience in the display. These can then be thrown on the ground to produce XP orbs."
+			],
 			dependencies: ["7A4BFA66CD8E3884"],
 			id: "78991F3E1F2CDB09",
 			tasks: [
@@ -399,10 +443,12 @@
 		},
 		{
 			title: "Fluid Transfer",
-			x: 0.5d,
+			x: 0.75d,
 			y: 4.5d,
 			shape: "rsquare",
+			description: ["Linked Pedestals with Fluid upgrades form a Fluid Network. The Fluid Importer and Exporter upgrades allow you to import and export fluids from inventories below their pedestals."],
 			dependencies: ["5519E152C45C620F"],
+			size: 1.5d,
 			id: "500A2940C0C3AF6C",
 			tasks: [
 				{
@@ -419,7 +465,7 @@
 		},
 		{
 			title: "Manipulating In-World Fluids",
-			x: 4.5d,
+			x: 4.0d,
 			y: 7.5d,
 			dependencies: ["500A2940C0C3AF6C"],
 			id: "5103383AF580A723",
@@ -454,7 +500,7 @@
 		},
 		{
 			title: "Energy Transfer",
-			x: -1.5d,
+			x: -2.25d,
 			y: 4.5d,
 			shape: "rsquare",
 			description: [
@@ -463,6 +509,7 @@
 				"This network can be used to move power around your base, but it can also be used to power certain upgrades."
 			],
 			dependencies: ["5519E152C45C620F"],
+			size: 1.5d,
 			id: "3F9545A78B985E50",
 			tasks: [
 				{
@@ -479,7 +526,7 @@
 		},
 		{
 			title: "Crusher Upgrade",
-			x: -5.5d,
+			x: -6.5d,
 			y: 6.5d,
 			description: [
 				"The Crusher upgrades will perform various crushing operations on items in the inventory below the pedestal, and display the products. This will allow basic ore and dye doubling, allow the production of various dusts, and more - see JEI for a complete listing.",
@@ -514,7 +561,7 @@
 		},
 		{
 			title: "Smelting Upgrade",
-			x: -4.5d,
+			x: -5.5d,
 			y: 7.5d,
 			description: [
 				"The Smelting upgrades will perform vanilla smelting recipes on items in the inventory below the pedestal, and display the products. This will also produce XP like a vanilla furnace, dropping the XP orbs on the ground.",
@@ -549,7 +596,7 @@
 		},
 		{
 			title: "Sawmill Upgrade",
-			x: -3.5d,
+			x: -4.5d,
 			y: 7.5d,
 			description: [
 				"The Sawmill upgrades will take wood prodcuts from the inventory below, cut them up, and display the products. Generally used for Log -> Plank processing.",
@@ -584,7 +631,7 @@
 		},
 		{
 			title: "Quarry Upgrade",
-			x: -5.5d,
+			x: -6.5d,
 			y: 5.5d,
 			description: [
 				"The Quarry upgrades will mine blocks around the pedestal. They come in whitelist and blacklist versions - these read the inventories below them to decide what to mine. The upgrade also has a built-in magnet - it will pull in mined products and display them.",
@@ -630,7 +677,7 @@
 		},
 		{
 			title: "Animal Harvesting",
-			x: 2.5d,
+			x: 1.5d,
 			y: 7.5d,
 			description: [
 				"These upgrades will harvest products from animals in fixed area, placing displaying the products.",
@@ -666,7 +713,7 @@
 		},
 		{
 			title: "Crafting Upgrades",
-			x: 3.5d,
+			x: 2.5d,
 			y: 7.5d,
 			dependencies: [
 				"04E9F681A7D93BC7",
@@ -755,6 +802,7 @@
 			],
 			dependencies: ["1F68F65F2A0E3229"],
 			size: 1.5d,
+			min_width: 300,
 			id: "3ECCA6558FDB4A5E",
 			tasks: [{
 				id: "1D29F32F0D57B96E",
@@ -800,7 +848,7 @@
 		{
 			title: "Pedestal Machinery",
 			icon: "minecraft:coal",
-			x: -4.0d,
+			x: -5.0d,
 			y: 6.0d,
 			subtitle: "Decoration Meets Technology",
 			description: [
@@ -967,8 +1015,8 @@
 		},
 		{
 			title: "Relays",
-			x: -2.0d,
-			y: 3.0d,
+			x: -1.5d,
+			y: 0.0d,
 			dependencies: ["5519E152C45C620F"],
 			id: "196FD7272F86F936",
 			tasks: [{
@@ -1010,8 +1058,8 @@
 		},
 		{
 			title: "Storage Tanks",
-			x: 2.0d,
-			y: 3.0d,
+			x: 1.5d,
+			y: 0.0d,
 			dependencies: ["5519E152C45C620F"],
 			id: "002E681F34281A6B",
 			tasks: [{
@@ -1066,7 +1114,7 @@
 		},
 		{
 			title: "Manipulating Blocks",
-			x: -0.5d,
+			x: -1.5d,
 			y: 7.5d,
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "189DF6D6ECA2E3D8",
