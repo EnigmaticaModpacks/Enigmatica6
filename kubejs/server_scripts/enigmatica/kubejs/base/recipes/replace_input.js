@@ -121,6 +121,18 @@ events.listen('recipes', (event) => {
         'minecraft:nether_brick'
     );
 
+    sharedDies.forEach((die) => {
+        var dieTag = `#thermal:crafting/dies/${die.thermalName}`;
+        event.replaceInput({}, `immersiveengineering:mold_${die.immersiveEngineeringName}`, dieTag);
+        event.replaceInput({}, `thermal:press_${die.thermalName}_die`, dieTag);
+    });
+    thermalDies.forEach((dieName) => {
+        event.replaceInput({}, `thermal:press_${dieName}_die`, `#thermal:crafting/dies/${dieName}`);
+    });
+    immersiveEngineeringDies.forEach((dieName) => {
+        event.replaceInput({}, `immersiveengineering:mold_${dieName}`, `#thermal:crafting/dies/${dieName}`);
+    });
+
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;
 
