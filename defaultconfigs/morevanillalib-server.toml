@@ -29,32 +29,32 @@
 	[chances.doubleDropValue]
 		#Default 1 = 0.1%
 		#Range: 0.0 ~ 1.0
-		diamond = 1
+		diamond = 0.0
 		#Range: 0.0 ~ 1.0
-		coal = 1.0
+		coal = 0.0
 		#Range: 0.0 ~ 1.0
-		quartz = 1.0
+		quartz = 0.0
 		#Range: 0.0 ~ 1.0
-		lapis = 1.0
+		lapis = 0.0
 		#Default 1 = 0.1%
 		#Range: 0.0 ~ 1.0
-		emerald = 1
+		emerald = 0.0
 		#Range: 0.0 ~ 1.0
-		redstone = 1.0
+		redstone = 0.0
 
 	[chances.extraDropValue]
 		#Sets the chance of an extra drop when using a tool. [Default 0.0005 = 0.05%]
 		#Range: 0.0 ~ 1.0
-		extraDrop = 1.0
+		extraDrop = 0.0
 		#Sets the chance of extra damage when using bone axe or sword on a (wither) skeleton. [Default 0.2 = 20%]
 		#Range: 0.0 ~ 1.0
-		extraDamage = 1.0
+		extraDamage = 0.1
 		#Sets the chance to take an half heart damage if using paper tools. [Default 0.1 = 10%]
 		#Range: 0.0 ~ 1.0
-		damageByPaperTools = 1.0
+		damageByPaperTools = 0.01
 		#Sets the chance of an head drop when using bone axe or sword. [Default 0.05 = 5%]
 		#Range: 0.0 ~ 1.0
-		headDrop = 1.0
+		headDrop = 0.05
 
 [amounts]
 	#The maximum amount of damage. Default: 5 = 2.5 hearts
