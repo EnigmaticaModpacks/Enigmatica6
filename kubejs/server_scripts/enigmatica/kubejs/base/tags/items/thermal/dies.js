@@ -1,14 +1,17 @@
 events.listen('item.tags', (event) => {
-    var dies = [
-        'immersiveengineering:mold_unpacking',
-        'immersiveengineering:mold_packing_9',
-        'immersiveengineering:mold_packing_4',
-        'immersiveengineering:mold_wire',
-        'immersiveengineering:mold_bullet_casing',
-        'immersiveengineering:mold_rod',
-        'immersiveengineering:mold_gear',
-        'immersiveengineering:mold_plate'
-    ];
-
-    event.get('thermal:crafting/dies').add(dies);
+    sharedDies.forEach((die) => {
+        event.add('thermal:crafting/dies', [`#thermal:crafting/dies/${die.thermalName}`])
+        event.add(`thermal:crafting/dies/${die.thermalName}`, [
+            `thermal:press_${die.thermalName}_die`,
+            `immersiveengineering:mold_${die.immersiveEngineeringName}`
+        ])
+    });
+    thermalDies.forEach((dieName) => {
+        event.add('thermal:crafting/dies', [`#thermal:crafting/dies/${dieName}`])
+        event.add(`thermal:crafting/dies/${dieName}`, [`thermal:press_${dieName}_die`])
+    });
+    immersiveEngineeringDies.forEach((dieName) => {
+        event.add('thermal:crafting/dies', [`#thermal:crafting/dies/${dieName}`])
+        event.add(`thermal:crafting/dies/${dieName}`, [`immersiveengineering:mold_${dieName}`])
+    });
 });
