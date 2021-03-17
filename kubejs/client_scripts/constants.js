@@ -177,7 +177,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_basalt_ore/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
-    /thermal:\w+_gear/,
+    /thermal:\w+_gear$/,
     /thermal:\w+_ingot/,
     /thermal:\w+_nugget/,
     /thermal:\w+_ore/,
