@@ -95,7 +95,7 @@
 	#Range: 2 ~ 1000
 	centrifugeRfPerTick = 2
 	#
-	#Sets the max RF/t that the centrifuge can receive. This should idealy be set higher than centrifugeRfPerTick.
+	#Sets the max RF/t that the centrifuge can receive. This should ideally be set higher than centrifugeRfPerTick.
 	#Range: 100 ~ 10000
 	maxCentrifugeReceiveRate = 100
 
@@ -135,6 +135,9 @@
 	#Set this to false when you want to overwrite the default bee files. [true/false]
 	#This should be run at least once for initial generation.
 	generateDefaults = false
+	#
+	#Set to true to hide certain data in the Beepedia until the player has unlocked the bee. [true/false]
+	beepediaHideLocked = false
 
 ["Honey Generator Options"]
 	#
@@ -212,12 +215,12 @@
 	#Set to false if you don't want the custom honey blocks to be generated [true/false]
 	generateHoneyBlocks = true
 	#
-	#Should honey block recipies be generated? [true/false]
-	honeyBlockRecipies = true
+	#Should honey block recipes be generated? [true/false]
+	honeyBlockRecipes = true
 
 ["Ender Beecon Options"]
 	#
-	#If true, the below values will be mulitplied with the base value, if false they will be added instead.
+	#If true, the below values will be multiplied with the base value, if false they will be added instead.
 	beeconDoMultiplier = true
 	#
 	#Multiplier for the drain rate for the Ender Beecon when the Calming effect is active.
@@ -247,4 +250,9 @@
 	#The amount of fluid per tick the Ender Beecon can pull from below blocks.
 	#Range: 1 ~ 16000
 	beeconPullAmount = 250
+
+["Mod Options"]
+	#Set this to true if you wish to live life on the edge!
+	#Seriously though it is recommended this only be used for testing purposes!!!
+	bypassPerformantCheck = false
 

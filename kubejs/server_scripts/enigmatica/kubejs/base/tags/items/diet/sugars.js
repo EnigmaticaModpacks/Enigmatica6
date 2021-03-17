@@ -9,4 +9,6 @@ events.listen('item.tags', (event) => {
         }
         event.get('diet:sugars').add(honey + '_bottle');
     });
+
+    event.add('diet:sugars', ['mekanism:canteen']);
 });

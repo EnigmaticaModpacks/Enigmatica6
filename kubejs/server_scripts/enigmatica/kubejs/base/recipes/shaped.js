@@ -433,6 +433,53 @@ events.listen('recipes', (event) => {
             'minecraft:honeycomb_block'
         ),
 
+        shapedRecipe(
+            Item.of('resourcefulbees:t1_apiary'),
+            ['ABA', 'BCB', 'ABA'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'minecraft:honey_block',
+                C: 'resourcefulbees:t4_beehive'
+            },
+            'resourcefulbees:t1_apiary'
+        ),
+
+        shapedRecipe(
+            Item.of('resourcefulbees:t2_apiary'),
+            ['ACA', 'BDB', 'ACA'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'resourcefulbees:t4_beehive',
+                C: 'resourcefulbees:t1_apiary',
+                D: 'minecraft:nether_star'
+            },
+            'resourcefulbees:t2_apiary'
+        ),
+
+        shapedRecipe(
+            Item.of('resourcefulbees:t3_apiary'),
+            ['DCD', 'BAB', 'DCD'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'resourcefulbees:t4_beehive',
+                C: 'resourcefulbees:t2_apiary',
+                D: 'minecraft:nether_star'
+            },
+            'resourcefulbees:t3_apiary'
+        ),
+
+        shapedRecipe(
+            Item.of('resourcefulbees:t4_apiary'),
+            ['DCD', 'BAB', 'DCD'],
+            {
+                A: 'minecraft:honeycomb_block',
+                B: 'resourcefulbees:t4_beehive',
+                C: 'resourcefulbees:t3_apiary',
+                D: 'minecraft:nether_star'
+            },
+            'resourcefulbees:t4_apiary'
+        ),
+
         // Torch from Stick+Standing Fire
         shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
             A: 'additional_lights:fire_for_standing_torch_s',

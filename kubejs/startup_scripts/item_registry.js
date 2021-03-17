@@ -8,7 +8,8 @@ events.listen('item.registry', (event) => {
         'farmers_delight',
         'blacksmiths_delight',
         'scavengers_delight',
-        'alchemists_delight'
+        'alchemists_delight',
+        'quintuple_alfsteel_ingot'
     ];
 
     items.forEach((item) => {
