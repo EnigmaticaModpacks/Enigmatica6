@@ -37,30 +37,26 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('farmersdelight:milk_bottle', 4),
             inputs: [
-                'minecraft:milk_bucket', 
-                'minecraft:glass_bottle', 
-                'minecraft:glass_bottle', 
-                'minecraft:glass_bottle', 
+                'minecraft:milk_bucket',
+                'minecraft:glass_bottle',
+                'minecraft:glass_bottle',
+                'minecraft:glass_bottle',
                 'minecraft:glass_bottle'
             ]
         },
         {
             output: 'minecraft:milk_bucket',
             inputs: [
-                'minecraft:bucket', 
-                'farmersdelight:milk_bottle', 
-                'farmersdelight:milk_bottle', 
-                'farmersdelight:milk_bottle', 
+                'minecraft:bucket',
+                'farmersdelight:milk_bottle',
+                'farmersdelight:milk_bottle',
+                'farmersdelight:milk_bottle',
                 'farmersdelight:milk_bottle'
             ]
         },
         {
             output: Item.of('simplefarming:candy', 2),
-            inputs: [
-                '#forge:chocolate_bars',
-                'minecraft:sugar',
-                'minecraft:sugar'
-            ]
+            inputs: ['#forge:chocolate_bars', 'minecraft:sugar', 'minecraft:sugar']
         },
         { output: 'minecraft:wheat_seeds', inputs: ['minecraft:wheat'] },
         { output: 'quark:root', inputs: ['minecraft:vine', '#forge:dyes/brown'] },
@@ -235,7 +231,18 @@ events.listen('recipes', (event) => {
             id: 'refinedstorage:quartz_enriched_iron'
         },
         { output: Item.of('byg:quartz_crystal'), inputs: ['minecraft:quartz'] },
-        { output: Item.of('minecraft:quartz'), inputs: ['byg:quartz_crystal'] }
+        { output: Item.of('minecraft:quartz'), inputs: ['byg:quartz_crystal'] },
+        {
+            output: 'kubejs:quintuple_alfsteel_ingot',
+            inputs: [
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:dusts/mana'
+            ]
+        }
     ];
 
     recipes.forEach((recipe) => {
