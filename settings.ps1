@@ -28,6 +28,7 @@ $CONFIGS_TO_REMOVE = @(
 	"create-client.toml",
 	"eidolon-client.toml",
 	"emojiful-client.toml",
+	"entity_culling-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
 	"ftbchunks-client.toml",
