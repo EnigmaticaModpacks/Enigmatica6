@@ -33,7 +33,17 @@ events.listen('recipes', (event) => {
             }
         ]
     };
+
     data.recipes.forEach((recipe) => {
         event.smelting(recipe.output, recipe.input).xp(recipe.xp);
     });
+
+    var stones = ['granite', 'diorite', 'andesite', 'limestone', 'weathered_limestone', 'dolomite', 'gabbro', 'scoria', 'dark_scoria']
+    stones.forEach((cobblestone) => {
+        var stone = 'create:' + cobblestone;
+        if(!Item.exists(stone)) {
+            stone = 'minecraft:' + cobblestone;
+        }
+        event.smelting(stone, 'create:' + cobblestone + '_cobblestone');
+    })
 });
