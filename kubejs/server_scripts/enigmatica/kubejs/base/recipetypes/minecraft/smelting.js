@@ -42,7 +42,6 @@ events.listen('recipes', (event) => {
     stones.forEach((cobblestone) => {
         var stone = 'create:' + cobblestone;
         if(!Item.exists(stone)) {
-            console.log('Im here woo ' + cobblestone);
             stone = 'minecraft:' + cobblestone;
         }
         event.smelting(stone, 'create:' + cobblestone + '_cobblestone');
