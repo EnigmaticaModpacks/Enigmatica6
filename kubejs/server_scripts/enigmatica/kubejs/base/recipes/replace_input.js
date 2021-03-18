@@ -1,4 +1,5 @@
 events.listen('recipes', (event) => {
+    const recipes = [{ replaceTarget: {}, toReplace: '', replaceWith: '' }];
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
