@@ -7,7 +7,8 @@ events.listen('item.tags', (event) => {
             'astralsorcery:marble_chiseled',
             'astralsorcery:marble_engraved',
             'astralsorcery:marble_raw',
-            'astralsorcery:marble_runed'
+            'astralsorcery:marble_runed',
+            'create:natural_scoria'
         ]);
     event
         .get('forge:stones/basalt')

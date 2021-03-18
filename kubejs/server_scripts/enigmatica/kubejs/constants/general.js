@@ -47,7 +47,15 @@ const colors = [
 ];
 
 // Used for tag generation
-const createStoneTypes = ['scoria', 'limestone', 'weathered_limestone', 'dolomite', 'gabbro', 'dark_scoria'];
+const createStoneTypes = [
+    'scoria',
+    'limestone',
+    'weathered_limestone',
+    'dolomite',
+    'gabbro',
+    'dark_scoria',
+    'natural_scoria'
+];
 
 const normalMode = global.packmode == 'expert';
 const expertMode = global.packmode == 'expert';
