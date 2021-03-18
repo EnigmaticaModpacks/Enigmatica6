@@ -120,6 +120,7 @@ events.listen('recipes', (event) => {
 
         'quark:building/crafting/tallow_from_block',
 
+        'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',
         'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/centrifuge/centrifuge_oil_red_sand',
