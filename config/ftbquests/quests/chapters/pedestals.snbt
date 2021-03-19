@@ -228,7 +228,7 @@
 				"",
 				"By enchanting the upgrade with Silk Touch, it will produce Stone instead.",
 				"",
-				"You can also modify what is produced by the generator; for example, putting Blue Ice under a Silky Cobble Gen will produce Packed Ice."
+				"You can also modify what is produced by the generator; for example, putting Blue Ice under a Silky Cobble Gen will produce Packed Ice. These recipes can be seen in JEI, under the Cobble Gen and Silky Cobble Gen tabs."
 			],
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "5B965827DB02DAFD",
@@ -421,6 +421,11 @@
 			title: "Enchanter Upgrade",
 			x: 6.5d,
 			y: 5.5d,
+			description: [
+				"The Enchanter will allow you to enchant items, similar to a Vanilla enchanting table. It is worth noting that XP can only be transferred into this upgrade - not out. The upgrade will pull items from an inventory below the pedestal, enchant them using the levels in the upgrade, and display the resulting item.",
+				"",
+				"This upgrade uses items with enchanting power, such as bookshelves, around it to determine the level it enchants at. Unlike a standard enchanting table, it can use bookshelves stacked 3 high, and they will not be blocked by torches or water. It can reach as high as level 96 with vanilla shelves surrounding it."
+			],
 			dependencies: ["7A4BFA66CD8E3884"],
 			id: "733EA0092EE4A490",
 			tasks: [{
@@ -433,7 +438,17 @@
 			title: "XP Anvil",
 			x: 6.5d,
 			y: 6.5d,
+			description: [
+				"The XP Anvil can be used for repairing and combining items. It is worth noting that XP can only be transferred into this upgrade - not out.",
+				"",
+				"Items placed in an inventory below the pedestal will be repaired using XP from the upgrade, similarly to the Mending upgrade. Once they are repaired, the upgrade will check up to 4 surrounding pedestals (one block from the anvil in each cardinal direction) for items to combine with it. It will then move the item to its display, combining with those items if possible. The following conditions apply to combining items:",
+				"",
+				"- A renamed nametag in a surrounding pedestal will be consumed to rename the item.",
+				"- Books or even enchanted items can be placed on the surrouding pedestals, and their enchants will be transferred to the center item.",
+				"- When combining enchantments (Fortune 3 + Fortune 3 -> Fortune 4), if the resulting enchantment will be above the normal vanilla limit diamonds equaling the total of all enchant levels over the vanilla maximum are needed. These should be placed on one of the adjacent pedestals. Failing to supply enough diamonds will result in vanilla enchantment maximums."
+			],
 			dependencies: ["7A4BFA66CD8E3884"],
+			min_width: 300,
 			id: "71548F1D17633FBC",
 			tasks: [{
 				id: "24EDA20ED95D7ADE",
@@ -464,9 +479,10 @@
 			]
 		},
 		{
-			title: "Manipulating In-World Fluids",
+			title: "Manipulating Fluids In The World",
 			x: 4.0d,
 			y: 7.5d,
+			description: ["The Fluid Pump and Drain upgrades allow pedestals to manipulate fluid source blocks in world. Both will work on their working area. The pump will pull source blocks into its internal tank, while the drain will place source blocks from its internal tank. The drain can only receive fluids - it cannot send them."],
 			dependencies: ["500A2940C0C3AF6C"],
 			id: "5103383AF580A723",
 			tasks: [
@@ -486,6 +502,7 @@
 			title: "Fluid to XP Conversion",
 			x: 5.5d,
 			y: 7.5d,
+			description: ["The Fluid to XP upgrade imports liquid XP from a tank below the pedestal and convert it to XP for the XP network. The exchange rate is... bad... but it's super easy to automate."],
 			dependencies: [
 				"7A4BFA66CD8E3884",
 				"500A2940C0C3AF6C"
@@ -599,7 +616,7 @@
 			x: -4.5d,
 			y: 7.5d,
 			description: [
-				"The Sawmill upgrades will take wood prodcuts from the inventory below, cut them up, and display the products. Generally used for Log -> Plank processing.",
+				"The Sawmill upgrades will take wood products from the inventory below, cut them up, and display the products. This is generally used for Log to Plank processing, but there are other useful recipes that can be found in JEI.",
 				"",
 				"The upgrades will only process if its pedestal is empty; make sure to link it to a receiving pedestal to clear the products.",
 				"",
@@ -636,11 +653,11 @@
 			description: [
 				"The Quarry upgrades will mine blocks around the pedestal. They come in whitelist and blacklist versions - these read the inventories below them to decide what to mine. The upgrade also has a built-in magnet - it will pull in mined products and display them.",
 				"",
-				"The upgrades will only mine any blocks available, but the magnet will only draw up items if the display has the same item or is empty; make sure to link it to a receiving pedestal to clear the products.",
+				"The upgrades will mine any blocks in the working area, and the will grab any mined materials like as a Magnet upgrade would and display them. The pedestal can only display one type of item at a time, so make sure to link it to a receiving pedestal to clear the products.",
 				"",
 				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action. Pedestal Range and Area enchantments will increase the operating space of the quarry. The upgrade can also be enchanted with vanilla Fortune or Silk Touch, which will effect how blocks are broken.",
 				"",
-				"The upgrade can also take a pickaxe, which will confer it's enchantments (i.e. Fortune or Silk Touch) to the quarry."
+				"The upgrade can also take a pickaxe, which will confer its enchantments (i.e. Fortune or Silk Touch) to the quarry."
 			],
 			dependencies: ["69E5C4BFCE2AC042"],
 			dependency_requirement: "one_completed",
@@ -682,7 +699,11 @@
 			description: [
 				"These upgrades will harvest products from animals in fixed area, placing displaying the products.",
 				"",
-				"The Milking upgrade requires an inventory below the pedestal with buckets. To extract honey from a hive, the inventory below needs to have empty bottles."
+				"The Shearer upgrade will shear sheep in its AOE, displaying the wool produced. It will only operate if the display is empty, so make sure to transfer the products out as they are produced.",
+				"",
+				"The Hive Harvester upgrade will harvest combs and honey from nearby bee hives and display the products. To extract honey from a hive, the inventory below needs to have empty bottles the upgrade can fill.",
+				"",
+				"The Milking upgrade will use empty buckets in an inventory below the pedestal to milk any cows in range, placing the filled bucket in its display."
 			],
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "1E809DFCA38FD467",
@@ -715,11 +736,21 @@
 			title: "Crafting Upgrades",
 			x: 2.5d,
 			y: 7.5d,
+			description: [
+				"Pedestals features various crafting and fluid crafting upgrades that will scan the inventory below the pedestal for recipes, and craft and display the resulting items if valid recipes are found. The upgrades come in 3 versions - 1x1, 2x2, and 3x3, which will scan inventory slots in groups of 1, 4, and 9 respectively. So for a vanilla chest, these upgrades will look for 27, 6, and 3 recipes respectively. The upgrade will not consume the last item in each slot of a recipe, allowing it to remember the recipe.",
+				"",
+				"Crafting Placeholders are optional, but can be used to fill empty slots. The crafting upgrade will see these and ignore the slots, making it easier for you to read the recipe. The Fluid Crafter upgrades can also make use of Fluid Crafting Placeholders - these represent a bucket of fluid that the recipe requires, and they will use fluid stored in the upgrade (transferred from the fluid network) instead of a bucket.",
+				"",
+				"The Compacting upgrades will look for at least 4 or 9 items in a single slot (2x2 and 3x3 respectively) that can be compacted, and display the resulting item. They will only operate if the display is empty, so you need to make sure to transfer products out of the display.",
+				"",
+				"Pro Tips: You can use any inventory below the pedestal, even droppers and dispensers. Using these gives you a 3x3 inventory, making it easy to lay out a crafting table recipe. Additionally, these crafting upgrades function by continually scanning the inventory for applicable recipes, so the less inventory slots they needs to scan the faster they will operate."
+			],
 			dependencies: [
 				"04E9F681A7D93BC7",
 				"500A2940C0C3AF6C"
 			],
 			dependency_requirement: "one_completed",
+			min_width: 350,
 			id: "0F70C994D2D08157",
 			tasks: [
 				{
@@ -854,9 +885,9 @@
 			description: [
 				"Pedestals has a series of upgrades to allow you to process materials with them. These upgrades have two versions:",
 				"",
-				"One version runs on burnables dropped near them. When the pedestal has fuel on board, it will emit fire particles around its base.",
+				"The regular versions run on burnables dropped near them. When the pedestal has fuel on board, it will emit fire particles around its base.",
 				"",
-				"The other version runs on FE supplied by the Pedestal network. Supply them with FE by linking them to Pedestals with FE stored in them."
+				"The Energy versions run on FE supplied by the Pedestal network. Supply them with FE by linking them to Pedestals with FE stored in them."
 			],
 			dependencies: [
 				"3F9545A78B985E50",
