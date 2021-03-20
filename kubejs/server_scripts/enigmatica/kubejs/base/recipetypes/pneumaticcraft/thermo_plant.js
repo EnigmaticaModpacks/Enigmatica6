@@ -7,7 +7,7 @@ events.listen('recipes', (event) => {
                 fluid_output: { fluid: 'pneumaticcraft:memory_essence', amount: 1000 },
                 pressure: 1.0,
                 exothermic: false
-            } /*,
+            },
             {
                 type: 'pneumaticcraft:thermo_plant',
                 item_input: { tag: 'integrateddynamics:menril_logs' },
@@ -57,7 +57,7 @@ events.listen('recipes', (event) => {
                 pressure: 3.0,
                 exothermic: false,
                 temperature: { min_temp: 1273 }
-            }*/
+            }
         ]
     };
 
