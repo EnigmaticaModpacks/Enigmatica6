@@ -17,7 +17,7 @@ events.listen('recipes', (event) => {
                         Channeling: 0,
                         Energy: 9223372036854775807,
                         Fluid: { FluidName: 'biofuel', Amount: 0 },
-                        Special: 1,
+                        Special: 0,
                         Selected: 'ARTIFACT',
                         Loyalty: 0
                     }
@@ -34,7 +34,7 @@ events.listen('recipes', (event) => {
                         CanCharge: 1,
                         Energy: 9223372036854775807,
                         Fluid: { FluidName: 'biofuel', Amount: 0 },
-                        Special: 1,
+                        Special: 0,
                         Selected: 'ARTIFACT',
                         Beheading: 0
                     }
@@ -49,7 +49,7 @@ events.listen('recipes', (event) => {
                     item: 'industrialforegoing:infinity_drill',
                     nbt: {
                         CanCharge: 1,
-                        Special: 1,
+                        Special: 0,
                         Selected: 'ARTIFACT',
                         Energy: 9223372036854775807,
                         Fluid: { FluidName: 'biofuel', Amount: 0 }
@@ -65,7 +65,7 @@ events.listen('recipes', (event) => {
                     item: 'industrialforegoing:infinity_saw',
                     nbt: {
                         CanCharge: 1,
-                        Special: 1,
+                        Special: 0,
                         Selected: 'ARTIFACT',
                         Energy: 9223372036854775807,
                         Fluid: { FluidName: 'biofuel', Amount: 0 }
@@ -81,7 +81,7 @@ events.listen('recipes', (event) => {
                     item: 'industrialforegoing:infinity_backpack',
                     nbt: {
                         CanCharge: 1,
-                        Special: 1,
+                        Special: 0,
                         Selected: 'ARTIFACT',
                         Energy: 9223372036854775807
                     }
