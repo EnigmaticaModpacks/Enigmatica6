@@ -2027,6 +2027,22 @@ const cropRegistry = [
                 render: 'autumnity:foul_berry_bush',
                 plant: 'autumnity:foul_berries',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'betterendforge:blue_vine_seed',
+                render: 'betterendforge:blue_vine_lantern',
+                plant: 'betterendforge:blue_vine_lantern',
+                plantSecondary: 'betterendforge:blue_vine_seed',
+                plantSecondaryRate: 'high',
+                substrate: 'end_mycelium'
+            },
+            {
+                seed: 'betterendforge:glowing_pillar_seed',
+                render: 'betterendforge:glowing_pillar_luminophor',
+                plant: 'betterendforge:glowing_pillar_luminophor',
+                plantSecondary: 'betterendforge:glowing_pillar_seed',
+                plantSecondaryRate: 'high',
+                substrate: 'amber_moss'
             }
         ]
     },
@@ -2159,18 +2175,7 @@ const cropRegistry = [
                 plant: 'betterendforge:glowing_bulb',
                 substrate: 'end_stone'
             },
-            {
-                seed: 'betterendforge:blue_vine_seed',
-                render: 'betterendforge:blue_vine',
-                plant: 'betterendforge:blue_vine_lantern',
-                substrate: 'end_mycelium'
-            },
-            {
-                seed: 'betterendforge:glowing_pillar_seed',
-                render: 'betterendforge:glowing_pillar_roots',
-                plant: 'betterendforge:glowing_pillar_luminophor',
-                substrate: 'amber_moss'
-            },
+
             {
                 seed: 'betterendforge:hydralux_sapling',
                 render: 'betterendforge:hydralux_sapling',
