@@ -40,6 +40,7 @@ const cropRegistry = [
                 render: 'atmospheric:aloe_vera',
                 plant: 'atmospheric:aloe_leaves',
                 plantSecondary: 'atmospheric:yellow_blossoms',
+                plantSecondaryRate: 'high',
                 substrate: 'arid_sand'
             },
             {
@@ -733,6 +734,7 @@ const cropRegistry = [
                 render: 'minecraft:potatoes',
                 plant: 'minecraft:potato',
                 plantSecondary: 'minecraft:poisonous_potato',
+                plantSecondaryRate: 'low',
                 substrate: 'dirt'
             },
             {
@@ -2011,6 +2013,7 @@ const cropRegistry = [
                 render: 'undergarden:blisterberry_bush',
                 plant: 'undergarden:blisterberry',
                 plantSecondary: 'undergarden:rotten_blisterberry',
+                plantSecondaryRate: 'low',
                 substrate: 'deepturf'
             },
             {
@@ -2023,7 +2026,6 @@ const cropRegistry = [
                 seed: 'autumnity:foul_berries',
                 render: 'autumnity:foul_berry_bush',
                 plant: 'autumnity:foul_berries',
-                plantSecondary: '',
                 substrate: 'dirt'
             }
         ]
@@ -2155,21 +2157,18 @@ const cropRegistry = [
                 seed: 'betterendforge:bulb_vine_seed',
                 render: 'betterendforge:bulb_vine',
                 plant: 'betterendforge:glowing_bulb',
-                plantSecondary: 'betterendforge:bulb_vine_seed',
                 substrate: 'end_stone'
             },
             {
                 seed: 'betterendforge:blue_vine_seed',
                 render: 'betterendforge:blue_vine',
                 plant: 'betterendforge:blue_vine_lantern',
-                plantSecondary: 'betterendforge:blue_vine_seed',
                 substrate: 'end_mycelium'
             },
             {
                 seed: 'betterendforge:glowing_pillar_seed',
                 render: 'betterendforge:glowing_pillar_roots',
                 plant: 'betterendforge:glowing_pillar_luminophor',
-                plantSecondary: 'betterendforge:glowing_pillar_seed',
                 substrate: 'amber_moss'
             },
             {
@@ -2177,6 +2176,7 @@ const cropRegistry = [
                 render: 'betterendforge:hydralux_sapling',
                 plant: 'betterendforge:hydralux_petal',
                 plantSecondary: 'betterendforge:hydralux_sapling',
+                plantSecondaryRate: 'high',
                 substrate: 'water'
             },
             {
