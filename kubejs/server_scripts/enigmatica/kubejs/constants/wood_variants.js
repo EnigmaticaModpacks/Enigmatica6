@@ -81,7 +81,7 @@ woodVariantsToConstruct.forEach((variant) => {
     var splitVariant = variant.split(':');
     var modId = splitVariant[0];
     var logType = splitVariant[1];
-    var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock;
+    var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock, slabBlock;
 
     //suffix exceptions
     switch (logType) {
@@ -123,6 +123,7 @@ woodVariantsToConstruct.forEach((variant) => {
     logBlockStripped = modId + ':stripped_' + logType + logSuffix;
     woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
     plankBlock = modId + ':' + logType + '_planks';
+    slabBlock = modId + ':' + logType + '_slab';
 
     // Exceptions
     if (modId == 'betterendforge') {
@@ -147,6 +148,7 @@ woodVariantsToConstruct.forEach((variant) => {
             break;
         case 'red_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            slabBlock = 'ars_nouveau:archwood_slab';
             break;
         case 'green_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
@@ -202,6 +204,7 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'byg:imparius_stem';
             woodBlockStripped = 'byg:imparius_hyphae';
             plankBlock = 'byg:imparius_planks';
+            slabBlock = 'byg:imparius_slab';
             break;
         default:
     }
@@ -213,7 +216,8 @@ woodVariantsToConstruct.forEach((variant) => {
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
         woodBlockStripped: woodBlockStripped,
-        plankBlock: plankBlock
+        plankBlock: plankBlock,
+        slabBlock: slabBlock
     };
 
     buildWoodVariants.push(woodVariant);
