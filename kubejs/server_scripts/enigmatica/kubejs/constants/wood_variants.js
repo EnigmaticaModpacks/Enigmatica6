@@ -44,6 +44,7 @@ var woodVariantsToConstruct = [
     'byg:bulbis',
     'byg:embur',
     'byg:withering_oak',
+    'byg:fungal_imparius',
     'betterendforge:mossy_glowshroom',
     'betterendforge:lacugrove',
     'betterendforge:end_lotus',
@@ -105,6 +106,10 @@ woodVariantsToConstruct.forEach((variant) => {
             woodSuffix = '_hyphae';
             break;
         case 'grongle':
+            logSuffix = '_stem';
+            woodSuffix = '_hyphae';
+            break;
+        case 'fungal_imparius':
             logSuffix = '_stem';
             woodSuffix = '_hyphae';
             break;
@@ -192,6 +197,11 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'integrateddynamics:menril_log_stripped';
             woodBlockStripped = 'integrateddynamics:menril_wood_stripped';
             plankBlock = 'integrateddynamics:menril_planks';
+            break;
+        case 'fungal_imparius':
+            logBlockStripped = 'byg:imparius_stem';
+            woodBlockStripped = 'byg:imparius_hyphae';
+            plankBlock = 'byg:imparius_planks';
             break;
         default:
     }
