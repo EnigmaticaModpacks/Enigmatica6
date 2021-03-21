@@ -1,7 +1,7 @@
 {
 	id: "529A046A403F6A21",
-	group: "",
-	order_index: 22,
+	group: "0856CF7F5CBEB20A",
+	order_index: 2,
 	filename: "integrated_dynamics",
 	title: "Integrated Dynamics",
 	icon: "integrateddynamics:crystalized_menril_chunk",
@@ -53,20 +53,41 @@
 					type: "item",
 					item: "integrateddynamics:crystalized_menril_chunk"
 				}
-			]
+			],
+			rewards: [{
+				id: "27A45121C7D34FAD",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
+			}]
 		},
 		{
 			x: -1.5d,
 			y: 4.0d,
 			subtitle: "Keep JUMPING!",
-			description: ["This should be the first block that you make from ID, along with the Drying Basin. This block creates 1B Menril per each Menril Log. However, you need to jump on the top of it numerous times in order to get the Menril Resin. To reset the Squeezer, add a button next to it and click on it."],
+			description: ["This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."],
 			dependencies: ["42D9F6E36CF8F06E"],
 			id: "4666E2A199FC676E",
 			tasks: [{
 				id: "53097394003302F7",
 				type: "item",
 				item: "integrateddynamics:squeezer"
-			}]
+			}],
+			rewards: [
+				{
+					id: "5476A59853122500",
+					type: "item",
+					item: "minecraft:armor_stand"
+				},
+				{
+					id: "1822E8DD1641B839",
+					type: "item",
+					item: "minecraft:slime_block",
+					count: 2
+				}
+			]
 		},
 		{
 			x: 1.5d,
@@ -79,6 +100,14 @@
 				id: "6DFFC1D94075DA22",
 				type: "item",
 				item: "integrateddynamics:drying_basin"
+			}],
+			rewards: [{
+				id: "6FCCEF89844BC6E9",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -108,7 +137,13 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: "43CE6F2A10A769E2",
+				type: "item",
+				item: "minecraft:coal",
+				count: 16
+			}]
 		},
 		{
 			x: 1.5d,
@@ -121,6 +156,14 @@
 				id: "4884D5DED8B35CFD",
 				type: "item",
 				item: "integrateddynamics:mechanical_drying_basin"
+			}],
+			rewards: [{
+				id: "2490003809DE5195",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -134,6 +177,14 @@
 				id: "256E9E07904E5A4A",
 				type: "item",
 				item: "integrateddynamics:mechanical_squeezer"
+			}],
+			rewards: [{
+				id: "7C49676D6152BAE1",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -142,12 +193,17 @@
 			x: -3.0d,
 			y: 0.0d,
 			subtitle: "Where's my Water?",
-			description: ["The following 3 blocks relate to Fluid Transportation."],
+			description: ["The following three blocks relate to Fluid Transportation."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "0EC4E05346C842DC",
 			tasks: [{
 				id: "50DF9F183B30FD05",
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: "0BACBA6E6F6282A6",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -168,6 +224,11 @@
 			tasks: [{
 				id: "67D84A2961098D39",
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: "35DB2C6D79D15457",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -176,12 +237,17 @@
 			x: 0.0d,
 			y: -3.0d,
 			subtitle: "Glorified Hoppers",
-			description: ["The following 3 blocks relate to Item Transportation."],
+			description: ["The following three blocks relate to Item Transportation."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "47BF421FFE9A02B6",
 			tasks: [{
 				id: "19A2827522FB5641",
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: "62AA590D2815B802",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -296,7 +362,7 @@
 			x: 1.0d,
 			y: 2.0d,
 			subtitle: "Different name for a Dropper",
-			description: ["These 3 blocks place Items, Fluids, and RF into the world."],
+			description: ["These three blocks place Items, Fluids, and RF into the world."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "629FE9742ED9DA8E",
 			tasks: [{
@@ -330,7 +396,7 @@
 			x: -1.0d,
 			y: 2.0d,
 			subtitle: "Pick-up Sticks (or any item)",
-			description: ["These 3 blocks pick up Items, Fluids, and RF from the world."],
+			description: ["These three blocks pick up Items, Fluids, and RF from the world."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "0D2453FD06A1207B",
 			tasks: [{
@@ -357,6 +423,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "1F96D4CC5E668E12",
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -424,7 +498,7 @@
 			x: 2.0d,
 			y: -1.0d,
 			subtitle: "Pen, not Pencil",
-			description: ["These 4 blocks write to Redstone, Inventories, Output Audio and Music, and Output Particles."],
+			description: ["These four blocks write to Redstone, Inventories, Output Audio and Music, and Output Particles."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "61D790A907882415",
 			tasks: [{
@@ -527,7 +601,15 @@
 					type: "item",
 					item: "integratedcrafting:part_crafting_writer"
 				}
-			]
+			],
+			rewards: [{
+				id: "182ED3A3806D1D78",
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
+			}]
 		},
 		{
 			x: -2.0d,
@@ -540,6 +622,14 @@
 				id: "35A5BE48B97046AD",
 				type: "item",
 				item: "integratednbt:nbt_extractor"
+			}],
+			rewards: [{
+				id: "03B350B9FF56379D",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		},
 		{

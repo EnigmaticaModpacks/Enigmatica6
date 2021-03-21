@@ -158,6 +158,10 @@ function crops_thermal_insolator(event, type, crop) {
         plantSecondary = crop.plantSecondary;
     }
 
+    if (crop.plantSecondaryRate == 'low') {
+        secondaryChance = 0.01;
+    }
+
     /*
     types:  cactus, cane_like, coral, crop_fiber, crop_fruit, 
             crop_gourd, crop_grain, crop_leafy, crop_legume,  
@@ -256,10 +260,10 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         case 'cactus':
             growthModifier = 1.5;
             renderType = 'stacking';
-            return;
+            break;
         case 'cane_like':
             renderType = 'stacking';
-            return;
+            break;
         case 'coral':
             //disabled
             return;
@@ -392,7 +396,7 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         renderType = 'crop';
     }
 
-    if (plantSecondary) {
+    if (plantSecondary && crop.plantSecondaryRate != 'low') {
         //add any secondary
         outputs.push(Item.of(plantSecondary, secondaryCount));
     }

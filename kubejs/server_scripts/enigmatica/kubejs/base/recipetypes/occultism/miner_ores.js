@@ -11,7 +11,7 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:arcane_chunk',
-                weight: 200
+                weight: 600
             },
             {
                 result: 'emendatusenigmatica:bitumen_chunk',
@@ -23,7 +23,7 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:coal_chunk',
-                weight: 5200
+                weight: 2500
             },
             {
                 result: 'emendatusenigmatica:copper_chunk',
@@ -31,19 +31,19 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:diamond_chunk',
-                weight: 120
+                weight: 400
             },
             {
                 result: 'emendatusenigmatica:dimensional_chunk',
-                weight: 20
+                weight: 200
             },
             {
                 result: 'emendatusenigmatica:emerald_chunk',
-                weight: 20
+                weight: 350
             },
             {
                 result: 'emendatusenigmatica:fluorite_chunk',
-                weight: 50
+                weight: 450
             },
             {
                 result: 'emendatusenigmatica:gold_chunk',
@@ -51,11 +51,11 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:iron_chunk',
-                weight: 2500
+                weight: 2000
             },
             {
                 result: 'emendatusenigmatica:lapis_chunk',
-                weight: 360
+                weight: 500
             },
             {
                 result: 'emendatusenigmatica:lead_chunk',
@@ -63,7 +63,7 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:nickel_chunk',
-                weight: 100
+                weight: 1000
             },
             {
                 result: 'emendatusenigmatica:osmium_chunk',
@@ -71,7 +71,7 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:potassium_nitrate_chunk',
-                weight: 250
+                weight: 400
             },
             {
                 result: 'emendatusenigmatica:redstone_chunk',
@@ -83,7 +83,7 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:sulfur_chunk',
-                weight: 3000
+                weight: 2000
             },
             {
                 result: 'emendatusenigmatica:tin_chunk',
@@ -91,27 +91,27 @@ events.listen('recipes', (event) => {
             },
             {
                 result: 'emendatusenigmatica:uranium_chunk',
-                weight: 400
+                weight: 500
             },
             {
                 result: 'emendatusenigmatica:zinc_chunk',
                 weight: 1000
             },
             {
-                result: 'occultism:otherstone',
-                weight: 50
-            },
-            {
                 result: 'occultism:iesnium_ore',
-                weight: 50
+                weight: 100
             },
             {
                 result: 'minecraft:glowstone',
                 weight: 100
             },
             {
-                result: 'minecraft:nether_quartz_ore',
-                weight: 200
+                result: 'emendatusenigmatica:quartz_chunk',
+                weight: 400
+            },
+            {
+                result: 'minecraft:ancient_debris',
+                weight: 80
             }
         ]
     };

@@ -121,7 +121,6 @@ var itemsToHide = [
     'mapperbase:iron_rod',
     'mapperbase:raw_bitumen',
     'morevanillalib:obsidian_shard',
-    'pedestals:dustflour',
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
     'powah:uraninite_ore_poor',
@@ -136,6 +135,10 @@ var itemsToHide = [
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
     'thermal:sawdust',
+    'thermal:press_gear_die',
+    'thermal:press_packing_3x3_die',
+    'thermal:press_packing_2x2_die',
+    'thermal:press_unpacking_die',
     'supplementaries:pedestal',
     'supplementaries:crank',
     'supplementaries:cog_block',
@@ -178,7 +181,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_basalt_ore/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
-    /thermal:\w+_gear/,
+    /thermal:\w+_gear$/,
     /thermal:\w+_ingot/,
     /thermal:\w+_nugget/,
     /thermal:\w+_ore/,
@@ -231,8 +234,12 @@ const disabledItems = [
     'aquaculture:iron_fillet_knife',
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
+    'aquaculture:frog_legs_raw',
+    'aquaculture:frog_legs_cooked',
 
     'betterendforge:ender_dust',
+
+    'blockcarpentry:frame_chest',
 
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
@@ -257,6 +264,9 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'create:dough',
+
+    'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
@@ -277,7 +287,11 @@ const disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
+    'pedestals:dustflour',
+
     'pitg:green_dye',
+
+    'pneumaticcraft:wheat_flour',
 
     'quark:pipe',
     'quark:potato_crate',
@@ -288,7 +302,12 @@ const disabledItems = [
     'thermal:carrot_block',
     'thermal:potato_block',
     'thermal:sugar_cane_block',
-    'thermal:apple_block'
+    'thermal:apple_block',
+    'simplefarming:raw_bacon',
+    'simplefarming:cooked_bacon',
+    'simplefarming:cooked_egg',
+    'simplefarming:noodles',
+    'simplefarming:chocolate'
 ];
 const materialsToUnify = [
     'iron',

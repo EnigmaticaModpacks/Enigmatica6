@@ -25,4 +25,5 @@ events.listen('item.tags', (event) => {
     event.add('forge:ores/amber', 'betterendforge:amber_ore');
     event.add('forge:ores/redstone', 'byg:cryptic_redstone_ore');
     event.get('forge:ores/thallasium').add('betterendforge:thallasium_ore');
+    event.get('forge:ores/starmetal').add('astralsorcery:starmetal_ore');
 });

@@ -78,6 +78,11 @@ events.listen('recipes', (event) => {
                 output: Item.of('emendatusenigmatica:obsidian_dust', 1),
                 secondary: [Item.of('minecraft:obsidian').chance(0.75)],
                 id: 'immersiveengineering:crusher/obsidian'
+            },
+            {
+                input: 'byg:raw_quartz_block',
+                output: Item.of('byg:quartzite_sand', 2),
+                secondary: [Item.of('byg:quartzite_sand').chance(0.5)]
             }
         ]
     };

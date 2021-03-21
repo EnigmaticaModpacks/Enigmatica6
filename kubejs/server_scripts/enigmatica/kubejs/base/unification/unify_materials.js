@@ -4,6 +4,7 @@ events.listen('recipes', (event) => {
         var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
         var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        var chunk = getPreferredItemInTag(Ingredient.of('#forge:chunks/' + material)).id;
 
         var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
         var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
@@ -30,6 +31,7 @@ events.listen('recipes', (event) => {
         create_press_plates(event, material, gem, plate);
 
         emendatus_hammer_crushing(event, material, ore, dust);
+        emendatus_shapeless_transform(event, material, ore, chunk);
 
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
@@ -67,7 +69,7 @@ function gear_unification(event, material, ingot, gem, gear) {
 
     var output = gear,
         input,
-        mold = 'immersiveengineering:mold_gear';
+        mold = '#thermal:crafting/dies/gear';
 
     if (ingot != air) {
         input = '#forge:ingots/' + material;
@@ -96,7 +98,7 @@ function rod_unification(event, material, ingot, gem, rod) {
 
     var output = Item.of(rod, 2),
         input,
-        mold = 'immersiveengineering:mold_rod';
+        mold = '#thermal:crafting/dies/rod';
 
     if (ingot != air) {
         input = '#forge:ingots/' + material;
@@ -457,6 +459,17 @@ function emendatus_hammer_crushing(event, material, ore, dust) {
     );
 }
 
+function emendatus_shapeless_transform(event, material, ore, chunk) {
+    if (ore == air || chunk == air) {
+        return;
+    }
+    if (material == 'mana') {
+        material = 'arcane';
+    }
+
+    event.shapeless('emendatusenigmatica:' + material + '_ore', ['emendatusenigmatica:' + material + '_chunk']);
+}
+
 function immersiveengineering_hammer_crushing(event, material, ore, dust) {
     if (ore == air || dust == air) {
         return;
@@ -642,7 +655,7 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     }
 
     var output = plate,
-        mold = 'immersiveengineering:mold_plate';
+        mold = '#thermal:crafting/dies/plate';
     if (ingot != air) {
         input = '#forge:ingots/' + material;
     } else if (gem != air) {
@@ -711,6 +724,14 @@ function minecraft_ore_gem_smelting(event, material, ore, gem) {
 function minecraft_dust_smelting(event, material, dust, ingot) {
     if (ingot == air || dust == air) {
         return;
+    }
+
+    blacklistedMaterials = ['starmetal'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
     }
 
     var output = ingot,
@@ -1305,6 +1326,6 @@ function thermal_press_wires(event, material, wire) {
 
     var output = Item.of(wire, 2),
         input = '#forge:ingots/' + material,
-        mold = 'immersiveengineering:mold_wire';
+        mold = '#thermal:crafting/dies/wire';
     event.recipes.thermal.press(output, [input, mold]).energy(2400);
 }

@@ -1,0 +1,62 @@
+{
+	id: "1FCAA673EA0588CC",
+	group: "0856CF7F5CBEB20A",
+	order_index: 3,
+	filename: "modular_routers",
+	title: "Modular Routers [WIP]",
+	icon: "modularrouters:blank_module",
+	always_invisible: true,
+	default_quest_shape: "",
+	quests: [
+		{
+			title: "Item Router",
+			icon: "modularrouters:item_router",
+			x: -1.0d,
+			y: -1.5d,
+			subtitle: "Have you tried turning off and on again",
+			guide_page: "Modular Routers is a powerful item transport and automation mod that revolves around a single block, the item router",
+			id: "15E49A6B00BE744C",
+			tasks: [{
+				id: "6E188990D39CEE2E",
+				type: "item",
+				item: "modularrouters:item_router"
+			}]
+		},
+		{
+			title: "Modular Routers",
+			icon: {
+				id: "patchouli:guide_book",
+				Count: 1b,
+				tag: {
+					"patchouli:book": "modularrouters:book"
+				}
+			},
+			x: -2.0d,
+			y: -2.5d,
+			subtitle: "RTFM",
+			id: "29F69BABA4692043",
+			tasks: [{
+				id: "301E9040E6762D2E",
+				type: "checkmark"
+			}],
+			rewards: [
+				{
+					id: "6D87D14D24ACEE49",
+					type: "item",
+					item: {
+						id: "patchouli:guide_book",
+						Count: 1b,
+						tag: {
+							"patchouli:book": "modularrouters:book"
+						}
+					}
+				},
+				{
+					id: "76440DE33FE05CAB",
+					type: "xp",
+					xp: 100
+				}
+			]
+		}
+	]
+}

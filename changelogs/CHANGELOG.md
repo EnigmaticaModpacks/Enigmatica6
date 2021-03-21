@@ -1,12 +1,31 @@
+### Enigmatica 6 v0.4.4
+
+_Using Forge-1.16.5-36.0.46_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.4.md)_
+
+**If you're updating from 0.3.x please read the last 3 changelogs**
+
+**Improvements/Changes**
+
+-   Bees: I-C-Bee Honey Bottles output chance increased to 50% from 2%
+-   Dropoff/quickstack once again ignores the hotbar
+-   Thermal: Added JEI info about Blitz, Blizz & Basalz
+-   StorageDrawers: Added JEI info about Framed Drawers (Merlo)
+-   Create: Rockwool & Quilted Wool can now be used as Windmill Sails
+-   Curios: Added Goggles support for all Goggles.
+
+**Bug Fixes**
+
+-
+
+**Removed Mods**
+
+-   CreatePlus: We added our own Curios support
+
 ### Enigmatica 6 v0.4.3
 
 _Using Forge-1.16.5-36.0.45_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.3.md)_
 
-
-
 **If you're updating from 0.3.x please read the last 3 changelogs**
-
-
 
 **Improvements/Changes**
 
@@ -23,7 +42,7 @@ _Using Forge-1.16.5-36.0.45_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   \[Tetra&Pneumaticcraft\] Disenchanting Exploit [\#1506](https://github.com/NillerMedDild/Enigmatica6/issues/1506)
 -   Blast Furnace Smelt Iron Dust at Half Speed/Half Efficiency [\#1519](https://github.com/NillerMedDild/Enigmatica6/issues/1519)
 -   Cooking for Blockheads Book Recipe [\#1529](https://github.com/NillerMedDild/Enigmatica6/issues/1529)
--   Crashing using Pneumatic helmet with tetra  [\#639](https://github.com/NillerMedDild/Enigmatica6/issues/639)
+-   Crashing using Pneumatic helmet with tetra [\#639](https://github.com/NillerMedDild/Enigmatica6/issues/639)
 -   Crash when using Occultism machine operator [\#1530](https://github.com/NillerMedDild/Enigmatica6/issues/1530)
 -   Create crushed ores accidentally hidden in JEI [\#1512](https://github.com/NillerMedDild/Enigmatica6/issues/1512)
 -   Cutting Board recipe using wrong item [\#1422](https://github.com/NillerMedDild/Enigmatica6/issues/1422)
@@ -31,13 +50,13 @@ _Using Forge-1.16.5-36.0.45_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Elytra doesn't break properly when worn as a curio [\#1496](https://github.com/NillerMedDild/Enigmatica6/issues/1496)
 -   Ender cells reset energy levels [\#1445](https://github.com/NillerMedDild/Enigmatica6/issues/1445)
 -   End Stone smelter has broken GUI [\#1426](https://github.com/NillerMedDild/Enigmatica6/issues/1426)
--   IE Arc furnace Recycling recipe wrong  [\#654](https://github.com/NillerMedDild/Enigmatica6/issues/654)
+-   IE Arc furnace Recycling recipe wrong [\#654](https://github.com/NillerMedDild/Enigmatica6/issues/654)
 -   ImmersiveEngineering: Temporarily removed Jerrycan recipe due to an issue with the Jerrycan
-	-   JustEnoughResources: No more double reloading, should speed up the time it takes to load singleplayer
+    -   JustEnoughResources: No more double reloading, should speed up the time it takes to load singleplayer
 -   Lootr & Dungeon Crawl Interaction [\#1508](https://github.com/NillerMedDild/Enigmatica6/issues/1508)
 -   Mob Duplicator no longer spawning mobs [\#1518](https://github.com/NillerMedDild/Enigmatica6/issues/1518)
 -   Powah: Cleaned up ways to obtain Uranitite, only the valid ones are shown now.
--   Remove Natural Spawning of Cockroaches  [\#1535](https://github.com/NillerMedDild/Enigmatica6/issues/1535)
+-   Remove Natural Spawning of Cockroaches [\#1535](https://github.com/NillerMedDild/Enigmatica6/issues/1535)
 -   Undergarden SMP generation [\#1472](https://github.com/NillerMedDild/Enigmatica6/issues/1472)
 -   UpdateServerScript: Fixed overrides folder not being moved correctly on Unix based operating systems.
 

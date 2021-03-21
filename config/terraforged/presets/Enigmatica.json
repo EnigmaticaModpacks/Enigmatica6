@@ -31,29 +31,32 @@
     "stronghold": {
       "distance": 32,
       "spread": 3,
-      "count": 128
+      "count": 128,
+      "salt": 0,
+      "constrainToBiomes": false,
+      "disabled": false
     },
     "structures": {
       "astralsorcery:ancient_shrine": {
         "spacing": 32,
         "separation": 4,
-        "salt": 682195674,
+        "salt": 682195648,
         "disabled": false
       },
       "astralsorcery:desert_shrine": {
         "spacing": 22,
         "separation": 4,
-        "salt": 1384822269,
+        "salt": 1384822272,
         "disabled": false
       },
       "astralsorcery:small_shrine": {
         "spacing": 22,
         "separation": 4,
-        "salt": 1549795925,
+        "salt": 1549795968,
         "disabled": false
       },
       "dungeoncrawl:dungeon": {
-        "spacing": 60,
+        "spacing": 40,
         "separation": 10,
         "salt": 10387313,
         "disabled": false
@@ -83,7 +86,7 @@
         "disabled": false
       },
       "minecraft:desert_pyramid": {
-        "spacing": 24,
+        "spacing": 19,
         "separation": 8,
         "salt": 14357617,
         "disabled": false
@@ -101,7 +104,7 @@
         "disabled": false
       },
       "minecraft:mansion": {
-        "spacing": 60,
+        "spacing": 45,
         "separation": 20,
         "salt": 10387319,
         "disabled": false
@@ -133,13 +136,13 @@
       "minecraft:ruined_portal": {
         "spacing": 24,
         "separation": 15,
-        "salt": 34222645,
+        "salt": 34222644,
         "disabled": false
       },
       "minecraft:shipwreck": {
-        "spacing": 24,
+        "spacing": 16,
         "separation": 4,
-        "salt": 165745295,
+        "salt": 165745296,
         "disabled": false
       },
       "minecraft:swamp_hut": {
@@ -149,7 +152,7 @@
         "disabled": false
       },
       "minecraft:village": {
-        "spacing": 34,
+        "spacing": 29,
         "separation": 8,
         "salt": 10387312,
         "disabled": false
@@ -157,29 +160,293 @@
       "quark:big_dungeon": {
         "spacing": 40,
         "separation": 11,
-        "salt": 79234823,
+        "salt": 79234824,
+        "disabled": false
+      },
+      "repurposed_structures:fortress_jungle": {
+        "spacing": 32,
+        "separation": 16,
+        "salt": 1464189184,
+        "disabled": true
+      },
+      "repurposed_structures:igloo_grassy": {
+        "spacing": 20,
+        "separation": 10,
+        "salt": 1460835584,
+        "disabled": false
+      },
+      "repurposed_structures:igloo_stone": {
+        "spacing": 20,
+        "separation": 10,
+        "salt": 1327428992,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_birch": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 182367040,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_desert": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 724317376,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_jungle": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 1267916672,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_oak": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 147853728,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_savanna": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 2024558976,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_snowy": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 1115107840,
+        "disabled": false
+      },
+      "repurposed_structures:mansion_taiga": {
+        "spacing": 140,
+        "separation": 70,
+        "salt": 418506496,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_birch": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 399117344,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_desert": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1990612736,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_icy": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1451015296,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_jungle": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1434412928,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_ocean": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1774808704,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_savanna": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1960212224,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_stone": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1436736640,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_swamp_or_dark_forest": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 2037177728,
+        "disabled": false
+      },
+      "repurposed_structures:mineshaft_taiga": {
+        "spacing": 1,
+        "separation": 0,
+        "salt": 1383003136,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_badlands": {
+        "spacing": 31,
+        "separation": 15,
+        "salt": 1702026880,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_birch": {
+        "spacing": 39,
+        "separation": 19,
+        "salt": 1676743168,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_desert": {
+        "spacing": 39,
+        "separation": 19,
+        "salt": 593099392,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_giant_tree_taiga": {
+        "spacing": 37,
+        "separation": 18,
+        "salt": 993252544,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_icy": {
+        "spacing": 37,
+        "separation": 18,
+        "salt": 935294656,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_jungle": {
+        "spacing": 39,
+        "separation": 19,
+        "salt": 548433024,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_oak": {
+        "spacing": 45,
+        "separation": 22,
+        "salt": 698118400,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_snowy": {
+        "spacing": 39,
+        "separation": 19,
+        "salt": 849388480,
+        "disabled": false
+      },
+      "repurposed_structures:outpost_taiga": {
+        "spacing": 45,
+        "separation": 22,
+        "salt": 272805088,
+        "disabled": false
+      },
+      "repurposed_structures:pyramid_badlands": {
+        "spacing": 20,
+        "separation": 10,
+        "salt": 1718729472,
+        "disabled": false
+      },
+      "repurposed_structures:pyramid_snowy": {
+        "spacing": 37,
+        "separation": 18,
+        "salt": 1630533504,
+        "disabled": false
+      },
+      "repurposed_structures:stronghold_stonebrick": {
+        "spacing": 85,
+        "separation": 42,
+        "salt": 1098192640,
+        "disabled": false
+      },
+      "repurposed_structures:village_badlands": {
+        "spacing": 23,
+        "separation": 11,
+        "salt": 1319707520,
+        "disabled": false
+      },
+      "repurposed_structures:village_birch": {
+        "spacing": 31,
+        "separation": 15,
+        "salt": 1102567424,
+        "disabled": false
+      },
+      "repurposed_structures:village_dark_oak": {
+        "spacing": 31,
+        "separation": 15,
+        "salt": 1921339392,
+        "disabled": false
+      },
+      "repurposed_structures:village_giant_taiga": {
+        "spacing": 29,
+        "separation": 14,
+        "salt": 1559528832,
+        "disabled": false
+      },
+      "repurposed_structures:village_jungle": {
+        "spacing": 29,
+        "separation": 14,
+        "salt": 1229975168,
+        "disabled": false
+      },
+      "repurposed_structures:village_mountains": {
+        "spacing": 31,
+        "separation": 15,
+        "salt": 2010876032,
+        "disabled": false
+      },
+      "repurposed_structures:village_oak": {
+        "spacing": 33,
+        "separation": 16,
+        "salt": 2112891008,
+        "disabled": false
+      },
+      "repurposed_structures:village_swamp": {
+        "spacing": 31,
+        "separation": 15,
+        "salt": 1559650944,
+        "disabled": false
+      },
+      "repurposed_structures:witch_hut_birch": {
+        "spacing": 48,
+        "separation": 24,
+        "salt": 904634496,
+        "disabled": false
+      },
+      "repurposed_structures:witch_hut_dark_forest": {
+        "spacing": 48,
+        "separation": 24,
+        "salt": 165100144,
+        "disabled": false
+      },
+      "repurposed_structures:witch_hut_giant_tree_taiga": {
+        "spacing": 48,
+        "separation": 24,
+        "salt": 200289408,
+        "disabled": false
+      },
+      "repurposed_structures:witch_hut_oak": {
+        "spacing": 48,
+        "separation": 24,
+        "salt": 741641344,
+        "disabled": false
+      },
+      "repurposed_structures:witch_hut_taiga": {
+        "spacing": 48,
+        "separation": 24,
+        "salt": 1925189632,
         "disabled": false
       },
       "towers_of_the_wild:derelict_grass_tower": {
-        "spacing": 50,
+        "spacing": 34,
         "separation": 24,
         "salt": 1689781,
         "disabled": false
       },
       "towers_of_the_wild:derelict_tower": {
-        "spacing": 50,
+        "spacing": 32,
         "separation": 24,
         "salt": 1689780,
         "disabled": false
       },
       "towers_of_the_wild:ice_tower": {
-        "spacing": 32,
+        "spacing": 21,
         "separation": 20,
         "salt": 1689779,
         "disabled": false
       },
       "towers_of_the_wild:jungle_tower": {
-        "spacing": 32,
+        "spacing": 21,
         "separation": 20,
         "salt": 1689778,
         "disabled": false
@@ -197,7 +464,7 @@
         "disabled": false
       },
       "towers_of_the_wild:tower": {
-        "spacing": 32,
+        "spacing": 27,
         "separation": 20,
         "salt": 1689777,
         "disabled": false
@@ -221,7 +488,7 @@
         "disabled": false
       },
       "valhelsia_structures:forge": {
-        "spacing": 22,
+        "spacing": 14,
         "separation": 8,
         "salt": 12857691,
         "disabled": false
@@ -229,13 +496,13 @@
       "valhelsia_structures:player_house": {
         "spacing": 12,
         "separation": 8,
-        "salt": 17357645,
+        "salt": 17357644,
         "disabled": false
       },
       "valhelsia_structures:small_dungeon": {
-        "spacing": 30,
+        "spacing": 14,
         "separation": 8,
-        "salt": 23498567,
+        "salt": 23498568,
         "disabled": false
       },
       "valhelsia_structures:tower_ruin": {
@@ -256,7 +523,7 @@
     "controlPoints": {
       "deepOcean": 0.056,
       "shallowOcean": 0.115,
-      "beach": 0.247,
+      "beach": 0.246,
       "coast": 0.328,
       "inland": 0.365
     },
@@ -307,13 +574,13 @@
       "fancyMountains": true
     },
     "steppe": {
-      "weight": 2.293,
+      "weight": 2.292,
       "baseScale": 1.0,
       "verticalScale": 1.159,
       "horizontalScale": 1.0
     },
     "plains": {
-      "weight": 1.005,
+      "weight": 1.003,
       "baseScale": 1.0,
       "verticalScale": 1.029,
       "horizontalScale": 1.0
@@ -333,17 +600,17 @@
     "plateau": {
       "weight": 2.085,
       "baseScale": 1.0,
-      "verticalScale": 2.01,
+      "verticalScale": 2.009,
       "horizontalScale": 1.649
     },
     "badlands": {
-      "weight": 1.005,
+      "weight": 1.003,
       "baseScale": 1.0,
       "verticalScale": 1.082,
       "horizontalScale": 1.0
     },
     "torridonian": {
-      "weight": 2.422,
+      "weight": 2.421,
       "baseScale": 1.118,
       "verticalScale": 1.391,
       "horizontalScale": 1.932

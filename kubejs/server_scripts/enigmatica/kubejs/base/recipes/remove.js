@@ -9,6 +9,9 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:smelting', input: '#forge:dusts' });
     event.remove({ type: 'minecraft:blasting', input: '#forge:dusts' });
 
+    event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
+    event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
+
     event.remove({ mod: 'prettypipes' });
 
     var outputRemovals = [
@@ -44,14 +47,20 @@ events.listen('recipes', (event) => {
     ];
 
     var idRemovals = [
+        'aquaculture:brown_mushroom_from_fish',
         'aquaculture:gold_nugget_from_blasting',
+        'aquaculture:gold_nugget_from_gold_fish',
         'aquaculture:gold_nugget_from_smelting',
         'aquaculture:iron_nugget_from_blasting',
         'aquaculture:iron_nugget_from_smelting',
         'aquaculture:neptunium_ingot_from_blasting',
         'aquaculture:neptinium_ingot_from_blasting',
+        'aquaculture:planks_from_driftwood',
+        'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+
+        'autumnity:turkey_piece',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
@@ -70,12 +79,18 @@ events.listen('recipes', (event) => {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'farmersdelight:cutting/chicken',
+        'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
+        'farmersdelight:milk_bottle',
+        'farmersdelight:milk_bucket_from_bottles',
+
         'fluxnetworks:fluxcontroller',
         'fluxnetworks:fluxcore',
 
         'immersiveengineering:crafting/stick_steel',
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
+        'immersiveengineering:crusher/bone_meal',
 
         'immersiveengineering:crafting/jerrycan',
 
@@ -105,6 +120,7 @@ events.listen('recipes', (event) => {
 
         'quark:building/crafting/tallow_from_block',
 
+        'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',
         'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/centrifuge/centrifuge_oil_red_sand',
@@ -115,9 +131,14 @@ events.listen('recipes', (event) => {
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
         'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
-
+        'thermal:storage/sugar_cane_from_block',
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
+
+        'simplefarming:candy',
+        'simplefarming:raw_chicken_wings',
+
+        'supplementaries:strings_recipe',
 
         '/integrateddynamics:\\w+/convenience/minecraft_dye/',
         '/integrateddynamics:\\w+/ore/dust/',
@@ -125,7 +146,14 @@ events.listen('recipes', (event) => {
         '/integrateddynamics:\\w+/ore/quartz/',
 
         '/integrateddynamics:\\w+/convenience/',
-        '/integrateddynamics:\\w+/ore/'
+        '/integrateddynamics:\\w+/ore/',
+        '/integrateddynamics:blasting/menril_log/'
+    ];
+
+    var regexIdRemovals = [
+        /emendatusenigmatica:ore_from_chunk_crafting/,
+        /emendatusenigmatica:ore_from_chunk_stonecutting/,
+        /create:\w+\/bread/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -133,6 +161,10 @@ events.listen('recipes', (event) => {
     });
 
     idRemovals.forEach((removal) => {
+        event.remove({ id: removal });
+    });
+
+    regexIdRemovals.forEach((removal) => {
         event.remove({ id: removal });
     });
 
@@ -228,9 +260,6 @@ events.listen('recipes', (event) => {
     });
     event.remove({
         id: /emendatusenigmatica:ore_from_chunk_crafting/
-    });
-    event.remove({
-        id: /emendatusenigmatica:ore_from_chunk_stonecutting/
     });
     event.remove({
         input: 'minecraft:fire_charge',

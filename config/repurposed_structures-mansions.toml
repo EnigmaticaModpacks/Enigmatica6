@@ -1,0 +1,64 @@
+
+[Mansions]
+	#
+	# Add the ID/resource location of the biome you don't want
+	# RS's mansions to spawn in. Separate each ID with a comma ,
+	#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+	blacklistedMansionBiomes = " "
+	#
+	# Add Birch Mansions to modded Birch biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionBirchMaxChunkDistance = 140
+	#
+	# Add Birch Mansions to modded Birch biomes.
+	addMansionBirchToModdedBiomes = true
+	#
+	# Add Jungle Mansions to modded Jungle biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionJungleMaxChunkDistance = 140
+	#
+	# Add Jungle Mansions to modded Jungle biomes.
+	addMansionJungleToModdedBiomes = true
+	#
+	# Add Oak Mansions to modded forest category biomes that are not birch or dark forest.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionOakMaxChunkDistance = 140
+	#
+	# Add Oak Mansions to modded forest category biomes that are not birch or dark forest.
+	addMansionOakToModdedBiomes = true
+	#
+	# Add Savanna Mansions to modded Savanna biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionSavannaMaxChunkDistance = 140
+	#
+	# Add Savanna Mansions to modded Savanna biomes.
+	addMansionSavannaToModdedBiomes = true
+	#
+	# Add Taiga Mansions to modded non-snowy Taiga biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionTaigaMaxChunkDistance = 140
+	#
+	# Add Taiga Mansions to modded non-snowy Taiga biomes.
+	addMansionTaigaToModdedBiomes = true
+	#
+	# Add Desert Mansions to modded Desert biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionDesertMaxChunkDistance = 140
+	#
+	# Add Desert Mansions to modded Desert biomes.
+	addMansionDesertToModdedBiomes = true
+	#
+	# Add Snowy Mansions to modded Snowy biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	mansionSnowyMaxChunkDistance = 140
+	#
+	# Add Snowy Mansions to modded Snowy biomes.
+	addMansionSnowyToModdedBiomes = true
+

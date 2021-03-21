@@ -1,7 +1,11 @@
 events.listen('recipes', (event) => {
-    if (global.packmode != 'normal') {
+    if (!normalMode) {
         return;
     }
 
-    event.replaceInput({id: 'compactmachines:personal_shrinking_device'}, 'minecraft:book', 'shrink:shrinking_device');
+    event.replaceInput(
+        { id: 'compactmachines:personal_shrinking_device' },
+        'minecraft:book',
+        'shrink:shrinking_device'
+    );
 });

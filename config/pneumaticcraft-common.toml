@@ -118,7 +118,7 @@
 	pressurizable_sync_precision = 10
 	#When set to true, the Kerosene Lamp's fake air blocks won't be registered and therefore removed from the world. Useful if this causes trouble (it shouldn't though)
 	disable_kerosene_lamp_fake_air_block = false
-	#When set to true, Drones will not execute any program. This is useful to set to true when due to a bug Drones are lagging your server or crashing it. Please report the bug if you encounter it.
+	#When set to true, Drones will not execute any program. This is useful to set to true when due to a bug Drones are lagging your server or crashing it. Please report any such bugs as a PneumaticCraft: Repressurized issue so it can be investigated.
 	stop_drone_ai = false
 	#The minimum interval in ticks between which fluid tank contents should be synced to clients. Smaller values mean smoother visual tank updates, but more of a performance cost in terms of network syncing. Note that fluid tank sync packets are also only sent when a fluid tank changes by more than 1% of its capacity, or 1000mB, whichever is smaller.
 	#Range: 1 ~ 100
@@ -128,6 +128,9 @@
 	#How far will a drone go to find a Charging Station when it's low on air? Note: drones will teleport, possibly across the world to someone else's base, if this range is very large.
 	#Range: > 16
 	max_drone_charging_station_search_range = 80
+	#If a Drone has found a path, but gets stuck on a block along that path, it will teleport to its destination after this many ticks of being stuck. Set this to 0 to disable teleporting, which will likely leave the drone waiting there forever (or until it runs out of air). Note that getting stuck on a block is usually the fault of the mod that added the block (especially if the block has a non-full-cube shape), but if you encounter this behaviour, please report it as a PneumaticCraft: Repressurized issue so it can be investigated.
+	#Range: > 0
+	stuck_drone_teleport_ticks = 20
 
 ["Micromissile Properties"]
 	#Base explosion damage (modified by missile setup)
@@ -171,7 +174,7 @@
 	block_hit_particles = true
 	#Base bullet damage of the Sentry Gun, Handheld Minigun, and Drone Minigun, before ammo bonuses are considered
 	#Range: 0.0 ~ 1.7976931348623157E308
-	base_damage = 4.0
+	base_damage = 6.0
 	#Freezing Ammo cartridge size
 	#Range: > 0
 	freezing_ammo_cartridge_size = 500
@@ -233,6 +236,9 @@
 	#Mekanism <-> PneumaticCraft heat conversion efficiency. Set to 0 to disable Mekanism heat integration entirely. Note that Mekanism and PNC use a similar heat system, but scale things quite differently (Mekanism heaters produces a LOT of heat by PneumaticCraft standards), so conversion efficiency tuning is important for inter-mod balance.
 	#Range: 0.0 ~ 2.0
 	mek_thermal_conversion_efficiency = 0.01
+	#Volume boost multiplier for pressurizable items with the CoFH Holding enchantment; air volume is multiplied by (1 + level_of_holding_enchantment) x this value. Set to 0 to disallow pressurizable items by enchanted with the Holding enchantment at all.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	cofh_holding_multiplier = 1.0
 
 [Recipes]
 	#Enable/disable explosion crafting (iron->compressed iron).  If you disable this, you'll need another way to get compressed iron initially.

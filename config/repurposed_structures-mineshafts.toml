@@ -1,0 +1,244 @@
+
+[Mineshaft]
+	#
+	# Controls whether loot chests spawn or not in modded Mineshafts.
+	lootChestsMS = true
+	#
+	# Add the custom Mineshafts to modded biomes of the same categories/type.
+	addMineshaftsToModdedBiomes = true
+	#
+	# Add the ID/resource location of the biome you don't want
+	# RS's mineshafts to spawn in. Separate each ID with a comma ,
+	#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+	blacklistedMineshaftBiomes = " "
+
+	[Mineshaft.Spawnrate]
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Birch biomes with a Birch themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		birchMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Jungle biomes with a Jungle themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		jungleMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Desert biomes with a Desert themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		desertMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Mountain (Extreme Hills) biomes with a Stone themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		stoneMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Savanna biomes with a Savanna themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		savannaMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Snowy/Icy biomes with an Ice themed Mineshaft.
+		# Note: Snowy Taiga Biomes will get Ice Mineshaft instead of Taiga theme.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		icyMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Ocean biomes with an Ocean themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		oceanMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Taiga biomes with a Taiga themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		taigaMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
+		# Replace Mineshafts in Swamps and Dark Forests with a swampy/dark oak themed Mineshaft.
+		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
+		#Range: 0.0 ~ 1000.0
+		swampAndDarkForestMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
+		# Adds End themed Mineshafts to End biomes outside the Enderdragon island.
+		#Range: 0.0 ~ 1000.0
+		endMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
+		# Adds Nether themed Mineshafts to non-crimson and non-warped Nether biomes.
+		#Range: 0.0 ~ 1000.0
+		netherMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
+		# Adds Crimson themed Mineshafts to Crimson Nether biomes.
+		#Range: 0.0 ~ 1000.0
+		crimsonMineshaftSpawnrate = 0
+		#
+		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
+		# Adds Warped themed Mineshafts to Warped Nether biomes.
+		#Range: 0.0 ~ 1000.0
+		warpedMineshaftSpawnrate = 0
+
+	[Mineshaft."Min height"]
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		birchMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		jungleMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		desertMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		stoneMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		savannaMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		icyMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		oceanMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		taigaMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		swampAndDarkForestMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 30.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		endMineshaftMinHeight = 30
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		netherMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		crimsonMineshaftMinHeight = 8
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 8.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		#Range: 5 ~ 255
+		warpedMineshaftMinHeight = 8
+
+	[Mineshaft."Max height"]
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		birchMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		jungleMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		desertMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		stoneMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		savannaMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		icyMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 25.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		oceanMineshaftMaxHeight = 25
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		taigaMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 45.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		swampAndDarkForestMineshaftMaxHeight = 45
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 37.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		endMineshaftMaxHeight = 37
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 13.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		netherMineshaftMaxHeight = 13
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 13.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		crimsonMineshaftMaxHeight = 13
+		#
+		# Minimum Y height that this mineshaft can spawn at. Default is 13.
+		# Note: The mineshaft will spawn between min and max y height set in config.
+		# Setting this to below min height config will make mineshaft spawn only at min height.
+		#Range: 5 ~ 255
+		warpedMineshaftMaxHeight = 13
+
+	[Mineshaft.Misc]
+		#
+		# Add End Mineshafts to End Barrens and End Islands biome.
+		barrensIslandsEndMineshafts = false
+
