@@ -41,6 +41,7 @@
 		{
 			x: 0.0d,
 			y: -7.0d,
+			description: ["The Color Pallet can be used to customize the color of your Pedestals. Throw the pallet on the ground with up to 3 each of Red, Green, and/or Blue dye, and right click it with your Linking tool to set its color. You can then right-click pedestals with it to paint them."],
 			dependencies: ["1F68F65F2A0E3229"],
 			id: "215EA91229D2CB56",
 			tasks: [{
@@ -954,6 +955,13 @@
 			title: "Energy Generation",
 			x: -6.5d,
 			y: 4.5d,
+			description: [
+				"Pedestals provides two upgrades that will generate FE - the Energy Generator and Dis Enchantment Generator.",
+				"",
+				"The Energy Generator will burn furnace fuels dropped on the ground to create RF, generating RF every 20 ticks. This energy is stored in the enchantment and is available for the Pedestals Energy Network.",
+				"",
+				"The Dis Enchantment Generator will pick up enchanted items dropped near it (including enchanted books), grind the enchantments off of them, and produce energy from the enchantments. It will display the newly disenchanted item and store the resulting energy for the Pedestals Energy Network."
+			],
 			dependencies: ["3F9545A78B985E50"],
 			id: "5DDFF348CB1978A0",
 			tasks: [{
@@ -981,6 +989,13 @@
 			title: "Augments",
 			x: 1.5d,
 			y: -2.5d,
+			description: [
+				"Augments can be added to a Pedestal to enhance a pedestal's item sending behavior. You can add up to 5 of each of the augments.",
+				"",
+				"Speed - Decreases the delay between transfers.",
+				"Capacity - Increases how many items are transferred.",
+				"Range - Increases the distance allowed between linked pedestals."
+			],
 			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "62A1AE30CAEF1424",
 			tasks: [{
@@ -1012,7 +1027,7 @@
 			title: "Enchantment Focus Books",
 			x: 3.5d,
 			y: -2.5d,
-			description: [""],
+			description: ["It's wonderful that you can enchant your upgrades, but it can be so... random. These books allow you to ensure you get the particular enchant you need. Keep in mind that you cannot combine these with an upgrade in a vanilla anvil - you MUST use the XP Anvil from Pedestals."],
 			dependencies: ["305B5A8507D4567A"],
 			id: "1D239668DA764C52",
 			tasks: [{
@@ -1048,6 +1063,7 @@
 			title: "Relays",
 			x: -1.5d,
 			y: 0.0d,
+			description: ["Moving items around with Pedestals is as simple as linking them, but pedestals without upgrades are not part of the Pedestal network for Fluid, XP, or FE. Relay upgrades allow you to add pedestals to their respective networks, while having significantly smaller buffers than tanks. They also have Blocked versions that will prevent the passage of items - this is very hand for ensuring items aren't accidentally moved where you aren't expecting."],
 			dependencies: ["5519E152C45C620F"],
 			id: "196FD7272F86F936",
 			tasks: [{
@@ -1091,6 +1107,7 @@
 			title: "Storage Tanks",
 			x: 1.5d,
 			y: 0.0d,
+			description: ["Sometimes you want to store lots of stuff, and Pedestals has your back. These upgrades will enhance your ability to hoard large volumes of everything, and act as buffers in your Pedestals networks."],
 			dependencies: ["5519E152C45C620F"],
 			id: "002E681F34281A6B",
 			tasks: [{
@@ -1125,6 +1142,15 @@
 		{
 			x: 2.5d,
 			y: -2.5d,
+			description: [
+				"Pedestal Upgrades can be enchanted; they can take vanilla enchants like Fortune and Silk Touch, but the mod also has five enchantments specific to it:",
+				"",
+				"Capacity - In general this will increase the amount of stuff the upgrade can store. A typical progression of item storage would be 4/8/16/32/64 for levels 1-5.",
+				"Range - Typically Range enchantments will how far away from the pedestal the upgrade operates.",
+				"Speed - This will increase the operating speed of upgrades from 2-20x. The resulting speed will depend on the upgrade.",
+				"Area - Area enchants will generally increase the cube area that the upgrade works on.",
+				"Advanced - This allows the upgrade to interact with entities, and is detailed in its own quest."
+			],
 			dependencies: ["5519E152C45C620F"],
 			id: "305B5A8507D4567A",
 			tasks: [{
@@ -1147,6 +1173,15 @@
 			title: "Manipulating Blocks",
 			x: -1.5d,
 			y: 7.5d,
+			description: [
+				"Pedestals has upgrades for manipulating items and blocks in world - the Dropper, Placer, and Breaker upgrades.",
+				"",
+				"The Dropper upgrade will drop items in the display from the top of the pedestal. Range enchantments modify how far from the top the items are dropped.",
+				"",
+				"The Placer upgrade will place items from the display below the pedestal. Range enchantments will modify how far away the item is placed.",
+				"",
+				"The Breaker upgrade will break blocks below the pedestal and display the result. Range enchantments will modify how far away from the pedestal the block that is broken is. A pickaxe can be placed in the pedestal - the upgrade will use this to break the blocks, conferring its Silk Touch or Fortune enchants on the upgrade."
+			],
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "189DF6D6ECA2E3D8",
 			tasks: [{
