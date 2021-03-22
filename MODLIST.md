@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.4.4 Modlist
+## Enigmatica 6 - 0.4.5 Modlist
 - abnormals_core-1.16.5-3.1.1
 - abnormals_delight-1.16.5-1.0.1
 - additional_lights-1.16.4-2.1.3
@@ -11,8 +11,8 @@
 - Apotheosis-1.16.3-4.4.1
 - AppleSkin-mc1.16.2-forge-1.0.14
 - Aquaculture-1.16.5-2.1.16
-- archers_paradox-1.16.3-1.1.1
-- architectury-1.9.136-forge
+- archers_paradox-1.16.4-1.2.0
+- architectury-1.10.137-forge
 - ars_nouveau-1.16.4-1.11.6
 - Artifacts-1.16.5-2.8.3
 - astralsorcery-1.16.4-1.13.9
@@ -40,7 +40,7 @@
 - buildersaddition-1.16.4-20210214a
 - buildinggadgets-1.16.5-3.8.0
 - bwncr-1.16.4-3.9.16
-- byg-1.1.12
+- byg-1.1.14
 - caelus-forge-1.16.5-2.1.3.0
 - cakechomps-forge-1.16.4-5.0.0.2
 - campfiretorches-1.16.3-1.0.3
@@ -54,7 +54,7 @@
 - Clumps-6.0.0.17
 - cobblegenrandomizer-1.16-5.1.2
 - CodeChickenLib-1.16.4-3.5.1.408-universal
-- cofh_core-1.16.3-1.1.6
+- cofh_core-1.16.4-1.2.0
 - comforts-forge-1.16.4-4.0.1.0
 - CommonCapabilities-1.16.5-2.5.7
 - compact-crafting-1.0.0-alpha.2
@@ -96,7 +96,7 @@
 - EnderStorage-1.16.4-2.7.1.166-universal
 - engineersdecor-1.16.4-1.1.10
 - enigmatica-1.16.3-0.1.1
-- ensorcellation-1.16.3-1.1.2
+- ensorcellation-1.16.4-1.2.0
 - ExtraStorage-1.16.4-1.3.1
 - extremeSoundMuffler-3.8_Forge-1.16.4
 - FarmersDelight-1.16.3-0.3.2
@@ -114,7 +114,7 @@
 - ftb-chunks-1605.2.3-build.71
 - ftb-essentials-1604.1.0.13
 - ftb-gui-library-1605.2.1.41-forge
-- ftb-quests-1605.2.1-build.35-forge
+- ftb-quests-1605.2.1-build.36-forge
 - ftb-ranks-1604.1.1.11
 - ftb-teams-1604.1.0.16-forge
 - ftb-ultimine-1605.2.0-build.25-forge
@@ -146,7 +146,7 @@
 - JustEnoughResources-1.16.4-0.12.0.109
 - KleeSlabs_1.16.5-9.2.1
 - kotlinforforge-1.10.0-obf
-- kubejs-1605.3.6-build.176-forge
+- kubejs-1605.3.6-build.177-forge
 - kubejs-blood-magic-1604.1.0.4
 - kubejs-create-1604.1.0.4
 - kubejs-immersive-engineering-1604.1.0.12
@@ -202,7 +202,7 @@
 - pitg-1.16.3-1.4.1
 - Placebo-1.16.4-4.4.1
 - plonk-1.16.5-9.0.7
-- pneumaticcraft-repressurized-1.16.5-2.11.0-155
+- pneumaticcraft-repressurized-1.16.5-2.11.1-163
 - polymorph-forge-1.16.5-0.24
 - portable_stonecutter-1.16.4-1.3.4
 - Powah-1.16.5-2.3.16
@@ -256,10 +256,10 @@
 - tetra-1.16.5-3.8.0
 - tetranomicon-1.0
 - theoneprobe-1.16-3.0.7
-- thermal_expansion-1.16.3-1.1.6
-- thermal_foundation-1.16.3-1.1.6
-- thermal_innovation-1.16.3-1.1.7
-- thermal_locomotion-1.16.3-1.1.6
+- thermal_expansion-1.16.4-1.2.0
+- thermal_foundation-1.16.4-1.2.0
+- thermal_innovation-1.16.4-1.2.0
+- thermal_locomotion-1.16.4-1.2.0
 - The_Undergarden-1.16.5-0.4.5
 - time-in-a-bottle-1.0.1
 - Tips-1.16.5-4.0.8
@@ -271,7 +271,7 @@
 - torchmaster-2.3.6
 - toughnessbar-6.1
 - towers_of_the_wild-1.16.4-2.0.1
-- Transport-1.16.5-3.5.0
+- Transport-1.16.5-3.5.1
 - trashcans-1.0.8-mc1.16.4
 - TrashSlot_1.16.3-12.2.1
 - TravelAnchors-2.3
