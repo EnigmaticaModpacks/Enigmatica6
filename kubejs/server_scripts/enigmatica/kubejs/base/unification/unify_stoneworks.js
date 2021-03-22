@@ -54,3 +54,14 @@ function industrialforegoing_stoneworks(event, material, type) {
         type: 'industrialforegoing:stonework_generate'
     });
 }
+
+function pedestals_stoneworks(event, material) {
+    event.custom({
+        type: 'thermal:rock_gen',
+        adjacent: 'minecraft:water',
+        below: material,
+        result: {
+            item: material
+        }
+    });
+}
