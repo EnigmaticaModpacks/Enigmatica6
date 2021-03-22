@@ -17,76 +17,76 @@
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Birch biomes with a Birch themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		birchMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Jungle biomes with a Jungle themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		jungleMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Desert biomes with a Desert themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		desertMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Mountain (Extreme Hills) biomes with a Stone themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		stoneMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Savanna biomes with a Savanna themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		savannaMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Snowy/Icy biomes with an Ice themed Mineshaft.
 		# Note: Snowy Taiga Biomes will get Ice Mineshaft instead of Taiga theme.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		icyMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Ocean biomes with an Ocean themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		oceanMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Taiga biomes with a Taiga themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		taigaMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 is no Mineshafts while 1000 is max spawnrate.
 		# Replace Mineshafts in Swamps and Dark Forests with a swampy/dark oak themed Mineshaft.
 		# Note: Vanilla Mineshafts will start spawning when this is set to 0 and game is restarted.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		swampAndDarkForestMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
 		# Adds End themed Mineshafts to End biomes outside the Enderdragon island.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		endMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
 		# Adds Nether themed Mineshafts to non-crimson and non-warped Nether biomes.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		netherMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
 		# Adds Crimson themed Mineshafts to Crimson Nether biomes.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		crimsonMineshaftSpawnrate = 0
 		#
 		# Controls how often Mineshafts will spawn. 0 for no Mineshafts and 1000 for max spawnrate.
 		# Adds Warped themed Mineshafts to Warped Nether biomes.
-		#Range: 0 ~ 1000
+		#Range: 0.0 ~ 1000.0
 		warpedMineshaftSpawnrate = 0
 
 	[Mineshaft."Min height"]

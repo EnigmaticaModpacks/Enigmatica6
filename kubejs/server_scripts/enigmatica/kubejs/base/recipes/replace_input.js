@@ -1,4 +1,5 @@
 events.listen('recipes', (event) => {
+    const recipes = [{ replaceTarget: {}, toReplace: '', replaceWith: '' }];
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
@@ -37,6 +38,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
     event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
+    event.replaceInput({}, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:netherrack', '#forge:netherrack');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
@@ -120,6 +122,18 @@ events.listen('recipes', (event) => {
         '#forge:ingots/nether_brick',
         'minecraft:nether_brick'
     );
+
+    sharedDies.forEach((die) => {
+        var dieTag = `#thermal:crafting/dies/${die.thermalName}`;
+        event.replaceInput({}, `immersiveengineering:mold_${die.immersiveEngineeringName}`, dieTag);
+        event.replaceInput({}, `thermal:press_${die.thermalName}_die`, dieTag);
+    });
+    thermalDies.forEach((dieName) => {
+        event.replaceInput({}, `thermal:press_${dieName}_die`, `#thermal:crafting/dies/${dieName}`);
+    });
+    immersiveEngineeringDies.forEach((dieName) => {
+        event.replaceInput({}, `immersiveengineering:mold_${dieName}`, `#thermal:crafting/dies/${dieName}`);
+    });
 
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;

@@ -72,6 +72,30 @@ events.listen('jei.information', (event) => {
                 'The Fusion Reactor has been nerfed quite heavily.',
                 'It produces 60k-250k rf/t passively, but has potential for far higher output when paired with one or multiple Steam Turbines.'
             ]
+        },
+        {
+            items: [
+                'industrialforegoing:infinity_backpack',
+                'industrialforegoing:infinity_saw',
+                'industrialforegoing:infinity_drill',
+                'industrialforegoing:infinity_hammer',
+                'industrialforegoing:infinity_trident'
+            ],
+            description: [
+                "Nine Quintillion is big. Really big. You just won't believe how vastly hugely mind-bogglingly big it is."
+            ]
+        },
+        {
+            items: [
+                'industrialforegoing:infinity_backpack',
+                'industrialforegoing:infinity_saw',
+                'industrialforegoing:infinity_drill',
+                'industrialforegoing:infinity_hammer',
+                'industrialforegoing:infinity_trident'
+            ],
+            description: [
+                "Unless you plan on sitting here for a few centuries, filling this tool isn't possible through conventional means. Some say the answer lies in Nucleosynthesis instead."
+            ]
         }
     ];
 

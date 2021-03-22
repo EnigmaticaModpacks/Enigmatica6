@@ -28,6 +28,7 @@ $CONFIGS_TO_REMOVE = @(
 	"create-client.toml",
 	"eidolon-client.toml",
 	"emojiful-client.toml",
+	"entity_culling-client.toml",
 	"extremesoundmuffler-client.toml", 
 	"farmersdelight-client.toml",
 	"ftbchunks-client.toml",
@@ -67,10 +68,10 @@ $CURSEFORGE_PROJECT_ID = 389471
 # =====================================================================//
 
 # Default: "1.0.0"
-$MODPACK_VERSION = "0.4.4"
+$MODPACK_VERSION = "0.4.5"
 
 # Only used by the Changelog Generator
-$LAST_MODPACK_VERSION = "0.4.3"
+$LAST_MODPACK_VERSION = "0.4.4"
 
 $FORGE_VERSION = 36.1.0
 

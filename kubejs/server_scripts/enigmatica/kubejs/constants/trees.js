@@ -744,7 +744,7 @@ const treeRegistry = [
                 sapling: 'betterendforge:small_jellyshroom',
                 trunk: 'betterendforge:jellyshroom_log',
                 leaf: 'betterendforge:jellyshroom_cap_purple',
-                substrate: 'end_stone'
+                substrate: 'jungle_moss'
             }
         ]
     }

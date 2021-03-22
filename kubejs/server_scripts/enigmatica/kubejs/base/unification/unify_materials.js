@@ -69,7 +69,7 @@ function gear_unification(event, material, ingot, gem, gear) {
 
     var output = gear,
         input,
-        mold = 'immersiveengineering:mold_gear';
+        mold = '#thermal:crafting/dies/gear';
 
     if (ingot != air) {
         input = '#forge:ingots/' + material;
@@ -98,7 +98,7 @@ function rod_unification(event, material, ingot, gem, rod) {
 
     var output = Item.of(rod, 2),
         input,
-        mold = 'immersiveengineering:mold_rod';
+        mold = '#thermal:crafting/dies/rod';
 
     if (ingot != air) {
         input = '#forge:ingots/' + material;
@@ -655,7 +655,7 @@ function immersiveengineering_press_plates(event, material, ingot, gem, plate) {
     }
 
     var output = plate,
-        mold = 'immersiveengineering:mold_plate';
+        mold = '#thermal:crafting/dies/plate';
     if (ingot != air) {
         input = '#forge:ingots/' + material;
     } else if (gem != air) {
@@ -714,6 +714,15 @@ function minecraft_ore_gem_smelting(event, material, ore, gem) {
     if (ore == air || gem == air) {
         return;
     }
+
+    blacklistedMaterials = ['amber'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
     var output = gem,
         input = '#forge:ores/' + material;
 
@@ -1084,8 +1093,7 @@ function occultism_ore_crushing(event, material, ore, dust, gem, shard) {
         output = dust;
     if (shard != air) {
         output = shard;
-    }
-    if (gem != air) {
+    } else if (gem != air) {
         output = gem;
     }
 
@@ -1326,6 +1334,6 @@ function thermal_press_wires(event, material, wire) {
 
     var output = Item.of(wire, 2),
         input = '#forge:ingots/' + material,
-        mold = 'immersiveengineering:mold_wire';
+        mold = '#thermal:crafting/dies/wire';
     event.recipes.thermal.press(output, [input, mold]).energy(2400);
 }

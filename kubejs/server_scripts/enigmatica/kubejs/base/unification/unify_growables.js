@@ -158,6 +158,10 @@ function crops_thermal_insolator(event, type, crop) {
         plantSecondary = crop.plantSecondary;
     }
 
+    if (crop.plantSecondaryRate == 'low') {
+        secondaryChance = 0.01;
+    }
+
     /*
     types:  cactus, cane_like, coral, crop_fiber, crop_fruit, 
             crop_gourd, crop_grain, crop_leafy, crop_legume,  
@@ -392,7 +396,7 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         renderType = 'crop';
     }
 
-    if (plantSecondary) {
+    if (plantSecondary && crop.plantSecondaryRate != 'low') {
         //add any secondary
         outputs.push(Item.of(plantSecondary, secondaryCount));
     }
@@ -564,6 +568,27 @@ function trees_immersiveengineering_cloche(event, tree) {
             break;
         case 'warped_nylium':
             substrate = 'minecraft:warped_nylium';
+            break;
+        case 'jungle_moss':
+            substrate = 'betterendforge:jungle_moss';
+            break;
+        case 'end_moss':
+            substrate = 'betterendforge:end_moss';
+            break;
+        case 'amber_moss':
+            substrate = 'betterendforge:amber_moss';
+            break;
+        case 'pink_moss':
+            substrate = 'betterendforge:pink_moss';
+            break;
+        case 'chorus_nylium':
+            substrate = 'betterendforge:chorus_nylium';
+            break;
+        case 'end_moss':
+            substrate = 'betterendforge:end_moss';
+            break;
+        case 'shadow_grass':
+            substrate = 'betterendforge:shadow_grass';
             break;
         default:
             substrate = 'minecraft:dirt';
