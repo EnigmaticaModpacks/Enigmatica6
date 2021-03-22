@@ -7,6 +7,12 @@ events.listen('recipes', (event) => {
 	event.replaceInput({type: 'minecraft:stonecutting'}, 'quark:myalite', '#enigmatica:stonecutter/myalite_cutables')
 	event.replaceInput({type: 'minecraft:stonecutting'}, 'ars_nouveau:arcane_stone', '#enigmatica:stonecutter/ars_arcane_cutables')
 
+	event.stonecutting('minecraft:stone', 'minecraft:stone_bricks')
+	event.stonecutting('minecraft:stone', 'minecraft:chiseled_stone_bricks')
+	event.stonecutting('minecraft:stone_bricks', 'minecraft:chiseled_stone_bricks')
+	event.stonecutting('minecraft:stone', '#masonry:stone_cutables')
+	event.stonecutting('minecraft:stone_bricks', '#masonry:stone_cutables')
+
 	event.remove({id: 'minecraft:polished_granite_from_granite_stonecutting'})
 	event.remove({id: 'quark:building/stonecutting/stonevariants/chiseled_granite_bricks_stonecutter'})
 	event.remove({id: 'quark:building/stonecutting/stonevariants/granite_bricks_stonecutter'})
@@ -72,7 +78,6 @@ events.listen('recipes', (event) => {
 	event.stonecutting('create:mossy_andesite', '#enigmatica:stonecutter/andesite_cutables')
 	event.stonecutting('create:overgrown_andesite', '#enigmatica:stonecutter/andesite_cutables')
 	
-	
 	event.stonecutting('quark:marble', 'embellishcraft:marble')
 	event.stonecutting('astralsorcery:marble_raw', 'embellishcraft:marble')
 	event.stonecutting('quark:marble', 'astralsorcery:marble_raw')
@@ -83,8 +88,8 @@ events.listen('recipes', (event) => {
 	event.stonecutting('quark:limestone', 'create:limestone')
 	event.stonecutting('create:limestone', 'quark:limestone')
 	
-// 	event.stonecutting('byg:scoria_stone', 'create:scoria')
-// 	event.stonecutting('create:scoria', 'byg:scoria_stone')
+	event.stonecutting('byg:scoria_stone', 'create:scoria')
+	event.stonecutting('create:scoria', 'byg:scoria_stone')
 	
 	event.remove({type: 'minecraft:stonecutting', input: 'create:dolomite'})
 	event.stonecutting('create:dolomite', '#enigmatica:stonecutter/dolomite_cutables')
@@ -150,6 +155,65 @@ events.listen('recipes', (event) => {
 	event.stonecutting('create:mossy_dark_scoria', '#enigmatica:stonecutter/dark_scoria_cutables')
 	event.stonecutting('create:overgrown_dark_scoria', '#enigmatica:stonecutter/dark_scoria_cutables')
 	event.stonecutting('create:dark_scoria_cobblestone', '#enigmatica:stonecutter/dark_scoria_cutables')
+
+	event.remove({id: 'byg:polished_soapstone'})
+	event.remove({id: 'byg:soapstone_bricks'})
+	event.remove({id: 'byg:soapstone_pillar'})
+	event.remove({id: 'byg:soapstone_tile'})
+	event.stonecutting('byg:soapstone', '#enigmatica:stonecutter/soapstone_cutables')
+	event.stonecutting('byg:polished_soapstone', '#enigmatica:stonecutter/soapstone_cutables')
+	event.stonecutting('byg:soapstone_bricks', '#enigmatica:stonecutter/soapstone_cutables')
+	event.stonecutting('byg:soapstone_pillar', '#enigmatica:stonecutter/soapstone_cutables')
+	event.stonecutting('byg:soapstone_tile', '#enigmatica:stonecutter/soapstone_cutables')
+
+	event.remove({id: 'byg:dacite_bricks'})
+	event.remove({id: 'byg:dacite_pillar'})
+	event.remove({id: 'byg:dacite_tile'})
+	event.stonecutting('byg:dacite', '#enigmatica:stonecutter/dacite_cutables')
+	event.stonecutting('byg:dacite_bricks', '#enigmatica:stonecutter/dacite_cutables')
+	event.stonecutting('byg:dacite_pillar', '#enigmatica:stonecutter/dacite_cutables')
+	event.stonecutting('byg:dacite_tile', '#enigmatica:stonecutter/dacite_cutables')
+	event.stonecutting('byg:dacite_cobblestone', '#enigmatica:stonecutter/dacite_cutables')
+
+	event.remove({type: 'minecraft:stonecutting', input: 'byg:red_rock'})
+	event.remove({type: 'minecraft:stonecutting', input: 'byg:red_rock_bricks'})
+	event.remove({type: 'minecraft:stonecutting', input: 'byg:chiseled_red_rock_bricks'})
+	event.remove({type: 'minecraft:stonecutting', input: 'byg:cracked_red_rock_bricks'})
+	event.remove({type: 'minecraft:stonecutting', input: 'byg:mossy_red_rock_bricks'})
+	event.stonecutting('byg:red_rock', '#enigmatica:stonecutter/red_rock_cutables')
+	event.stonecutting('byg:red_rock_bricks', '#enigmatica:stonecutter/red_rock_cutables')
+	event.stonecutting('byg:mossy_red_rock_bricks', '#enigmatica:stonecutter/red_rock_cutables')
+	event.stonecutting('byg:chiseled_red_rock_bricks', '#enigmatica:stonecutter/red_rock_cutables')
+	event.stonecutting('byg:cracked_red_rock_bricks', '#enigmatica:stonecutter/red_rock_cutables')
+	
+	event.stonecutting('2x byg:red_rock_slab', 'byg:red_rock')
+	event.stonecutting('byg:red_rock_wall', 'byg:red_rock')
+	event.stonecutting('byg:red_rock_stairs', 'byg:red_rock')
+	
+	event.stonecutting('2x byg:red_rock_brick_slab', 'byg:red_rock_bricks')
+	event.stonecutting('byg:red_rock_brick_wall', 'byg:red_rock_bricks')
+	event.stonecutting('byg:red_rock_brick_stairs', 'byg:red_rock_bricks')
+
+	event.stonecutting('2x byg:chiseled_red_rock_brick_slab', 'byg:chiseled_red_rock_bricks')
+	event.stonecutting('byg:chiseled_red_rock_brick_wall', 'byg:chiseled_red_rock_bricks')
+	event.stonecutting('byg:chiseled_red_rock_brick_stairs', 'byg:chiseled_red_rock_bricks')
+	
+	event.stonecutting('2x byg:cracked_red_rock_brick_slab', 'byg:cracked_red_rock_bricks')
+	event.stonecutting('byg:cracked_red_rock_brick_wall', 'byg:cracked_red_rock_bricks')
+	event.stonecutting('byg:cracked_red_rock_brick_stairs', 'byg:cracked_red_rock_bricks')
+	
+	event.stonecutting('2x byg:mossy_red_rock_brick_slab', 'byg:mossy_red_rock_bricks')
+	event.stonecutting('byg:mossy_red_rock_brick_wall', 'byg:mossy_red_rock_bricks')
+	event.stonecutting('byg:mossy_red_rock_brick_stairs', 'byg:mossy_red_rock_bricks')
+
+	event.remove({id: 'byg:scoria_pillar'})
+	event.remove({id: 'byg:scoria_stonebricks'})
+	event.stonecutting('byg:scoria_stone', '#enigmatica:stonecutter/byg_scoria_cutables')
+	event.stonecutting('byg:scoria_pillar', '#enigmatica:stonecutter/byg_scoria_cutables')
+	event.stonecutting('byg:scoria_stonebricks', '#enigmatica:stonecutter/byg_scoria_cutables')
+	event.stonecutting('byg:scoria_cobblestone', '#enigmatica:stonecutter/byg_scoria_cutables')
+	
+	event.stonecutting('minecraft:cobblestone', 'byg:rocky_stone')
 
 	event.stonecutting('quark:soul_sandstone', 'quark:soul_sandstone_bricks')
 	event.stonecutting('quark:soul_sandstone', 'quark:chiseled_soul_sandstone')

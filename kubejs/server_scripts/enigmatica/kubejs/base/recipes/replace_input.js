@@ -38,6 +38,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
     event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
+    event.replaceInput({}, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:netherrack', '#forge:netherrack');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
