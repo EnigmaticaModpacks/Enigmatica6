@@ -575,7 +575,7 @@ events.listen('recipes', (event) => {
         var capacitor = 'powah:capacitor_' + tier,
             crystal = 'powah:crystal_' + tier;
 
-        if (tier == 'basic') {
+        if (tier == 'basic' || tier == 'starter') {
             return;
         } else if (tier == 'hardened') {
             crystal = 'powah:steel_energized';
