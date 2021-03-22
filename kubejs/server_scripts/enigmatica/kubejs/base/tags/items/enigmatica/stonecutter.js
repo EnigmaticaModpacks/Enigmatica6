@@ -223,7 +223,39 @@ events.listen('item.tags', (event) => {
             'quark:myalite_pillar',
             'quark:polished_myalite'
         ]);
-        
+    event
+        .get('enigmatica:stonecutter/soapstone_cutables')
+        .add([
+            'byg:soapstone',
+            'byg:polished_soapstone',
+            'byg:soapstone_bricks',
+            'byg:soapstone_pillar',
+            'byg:soapstone_tile'
+        ]);
+    event
+        .get('enigmatica:stonecutter/dacite_cutables')
+        .add([
+            'byg:dacite',
+            'byg:dacite_bricks',
+            'byg:dacite_pillar',
+            'byg:dacite_tile'
+        ]);
+    event
+        .get('enigmatica:stonecutter/red_rock_cutables')
+        .add([
+            'byg:red_rock',
+            'byg:red_rock_bricks',
+            'byg:mossy_red_rock_bricks',
+            'byg:chiseled_red_rock_bricks',
+            'byg:cracked_red_rock_bricks'
+        ]);
+    event
+        .get('enigmatica:stonecutter/byg_scoria_cutables')
+        .add([
+            'byg:scoria_stone',
+            'byg:scoria_pillar',
+            'byg:scoria_stonebricks'
+        ]);
     event
         .get('enigmatica:stonecutter/pnc_stone_cutables')
         .add([
@@ -232,7 +264,6 @@ events.listen('item.tags', (event) => {
             'pneumaticcraft:reinforced_brick_tile',
             'pneumaticcraft:reinforced_brick_pillar'
         ]);
-    
     event
         .get('enigmatica:stonecutter/ars_arcane_cutables')
         .add([
