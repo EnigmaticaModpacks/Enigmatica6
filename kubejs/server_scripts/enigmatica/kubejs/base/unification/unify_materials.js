@@ -714,6 +714,15 @@ function minecraft_ore_gem_smelting(event, material, ore, gem) {
     if (ore == air || gem == air) {
         return;
     }
+
+    blacklistedMaterials = ['amber'];
+
+    for (var i = 0; i < blacklistedMaterials.length; i++) {
+        if (blacklistedMaterials[i] == material) {
+            return;
+        }
+    }
+
     var output = gem,
         input = '#forge:ores/' + material;
 
@@ -1084,8 +1093,7 @@ function occultism_ore_crushing(event, material, ore, dust, gem, shard) {
         output = dust;
     if (shard != air) {
         output = shard;
-    }
-    if (gem != air) {
+    } else if (gem != air) {
         output = gem;
     }
 
