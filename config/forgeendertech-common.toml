@@ -8,4 +8,7 @@ debug = false
 	#Maximum distance from vent to the gas block to inhale
 	#Range: 1 ~ 16
 	ventInhaleDistance = 4
+	#Maximum amount of blocks that will be checked when searching for multiblock boundaries.
+	#Range: 1 ~ 512
+	maxBlocksInMultiblock = 81
 

@@ -484,7 +484,7 @@ events.listen('recipes', (event) => {
         shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
             A: 'additional_lights:fire_for_standing_torch_s',
             B: '#forge:rods/wooden'
-        }),
+        })
     ];
 
     recipes.forEach(function (recipe) {
@@ -557,20 +557,16 @@ events.listen('recipes', (event) => {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
-        var slab = wood.modId + ':' + wood.logType + '_slab';
-        if (wood.logType == 'red_archwood') {
-            slab = 'ars_nouveau:archwood_slab';
-        }
         event.shaped(Item.of('storagedrawers:oak_half_drawers_1'), ['AAA', ' C ', 'AAA'], {
-            A: slab,
+            A: wood.slabBlock,
             C: '#forge:chests'
         });
         event.shaped(Item.of('storagedrawers:oak_half_drawers_2'), ['ACA', 'AAA', 'ACA'], {
-            A: slab,
+            A: wood.slabBlock,
             C: '#forge:chests'
         });
         event.shaped(Item.of('storagedrawers:oak_half_drawers_4'), ['CAC', 'AAA', 'CAC'], {
-            A: slab,
+            A: wood.slabBlock,
             C: '#forge:chests'
         });
     });
@@ -579,7 +575,7 @@ events.listen('recipes', (event) => {
         var capacitor = 'powah:capacitor_' + tier,
             crystal = 'powah:crystal_' + tier;
 
-        if (tier == 'basic') {
+        if (tier == 'basic' || tier == 'starter') {
             return;
         } else if (tier == 'hardened') {
             crystal = 'powah:steel_energized';
