@@ -22,9 +22,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:stone",
-        "mutationOutput": "emendatusenigmatica:coal_ore",
-        "mutationType": "BLOCK_TO_BLOCK"
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:coal_ore", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
