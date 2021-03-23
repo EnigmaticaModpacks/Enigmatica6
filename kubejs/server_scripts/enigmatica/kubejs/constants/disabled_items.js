@@ -23,6 +23,8 @@ const disabledItems = [
     'aquaculture:iron_fillet_knife',
     'aquaculture:gold_fillet_knife',
     'aquaculture:diamond_fillet_knife',
+    'aquaculture:frog_legs_raw',
+    'aquaculture:frog_legs_cooked',
 
     'betterendforge:ender_dust',
 
@@ -31,6 +33,7 @@ const disabledItems = [
     'bloodmagic:fragment_netherite_scrap',
 
     // 'bountifulbaubles:potion_wormhole',
+    'blockcarpentry:frame_chest',
 
     'byg:ametrine_block',
     'byg:ametrine_boots',
@@ -51,6 +54,7 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',
     'mapperbase:steel_pickaxe',
@@ -67,6 +71,8 @@ const disabledItems = [
     'mythicbotany:wither_aconite',
     'mythicbotany:wither_aconite_floating',
 
+    'pedestals:dustflour',
+
     'pitg:green_dye',
 
     'quark:pipe',
@@ -78,5 +84,10 @@ const disabledItems = [
     'thermal:carrot_block',
     'thermal:potato_block',
     'thermal:sugar_cane_block',
-    'thermal:apple_block'
+    'thermal:apple_block',
+
+    'simplefarming:raw_bacon',
+    'simplefarming:cooked_bacon',
+    'simplefarming:cooked_egg',
+    'simplefarming:noodles'
 ];

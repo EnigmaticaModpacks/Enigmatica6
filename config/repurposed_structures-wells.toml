@@ -1,0 +1,51 @@
+
+["Small Wells"]
+	#
+	# Add the custom wells to modded biomes of the same categories/type.
+	addWellsToModdedBiomes = true
+	#
+	# Determines if Wells can have a chance of spawning a Bell.
+	canHaveBells = true
+	#
+	# Add the ID/resource location of the biome you don't want
+	# RS's wells to spawn in. Separate each ID with a comma ,
+	#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+	blacklistedWellBiomes = " "
+
+	["Small Wells".RarityPerChunk]
+		#
+		# Adds Badlands themed wells to Badlands biomes.
+		# This effects how often wells will attempt to spawn per chunk.
+		# The chance of a well generating at a chunk is 1/rarityPerChunk.
+		# 1 for wells spawning in every chunk and 10000 for no wells.
+		#Range: 1 ~ 10000
+		badlandsWellRarityPerChunk = 250
+		#
+		# Adds Nether themed wells to Nether biomes.
+		# This effects how often wells will attempt to spawn per chunk.
+		# The chance of a well generating at a chunk is 1/rarityPerChunk.
+		# 1 for wells spawning in every chunk and 10000 for no wells.
+		#Range: 1 ~ 10000
+		netherWellRarityPerChunk = 200
+		#
+		# Adds Snow themed wells to snowy and icy biomes.
+		# This effects how often wells will attempt to spawn per chunk.
+		# The chance of a well generating at a chunk is 1/rarityPerChunk.
+		# 1 for wells spawning in every chunk and 10000 for no wells.
+		#Range: 1 ~ 10000
+		snowWellRarityPerChunk = 350
+		#
+		# Adds mossy stone themed wells to Jungles, Dark Oak, and Swamp biomes.
+		# This effects how often wells will attempt to spawn per chunk.
+		# The chance of a well generating at a chunk is 1/rarityPerChunk.
+		# 1 for wells spawning in every chunk and 10000 for no wells.
+		#Range: 1 ~ 10000
+		mossyStoneWellRarityPerChunk = 350
+		#
+		# Adds a wood themed wells to Forest and Birch Forest biomes.
+		# This effects how often wells will attempt to spawn per chunk.
+		# The chance of a well generating at a chunk is 1/rarityPerChunk.
+		# 1 for wells spawning in every chunk and 10000 for no wells.
+		#Range: 1 ~ 10000
+		forestWellRarityPerChunk = 350
+

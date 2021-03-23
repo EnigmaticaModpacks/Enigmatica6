@@ -1,7 +1,7 @@
 {
     "flower": "ALL",
     "maxTimeInHive": 2400,
-    "sizeModifier": 0.5,
+    "sizeModifier": 1,
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
@@ -27,7 +27,7 @@
         "mainOutput": "minecraft:experience_bottle",
         "mainOutputWeight": 0.01,
         "mainOutputCount": 2,
-        
+
         "secondaryOutput": "quark:rainbow_rune",
         "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 1,

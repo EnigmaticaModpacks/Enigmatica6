@@ -14,6 +14,8 @@
 	auraTypeOverrides = []
 	#The amount of blocks that can be between two Aura Field Creators for them to be connectable and work together
 	fieldCreatorRange = 10
+	#The maximum amount of animals that can be around the powder of fertility before it stops working
+	maxAnimalsAroundPowder = 200
 
 [features]
 	#If the Aura Imbalance effect of ores spawning in the area if Aura levels are too high should occur

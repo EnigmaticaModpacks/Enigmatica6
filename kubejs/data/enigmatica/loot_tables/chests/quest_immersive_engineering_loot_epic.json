@@ -7,44 +7,71 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "mekanism:basic_fluid_tank",
+                    "name": "immersiveengineering:cloche"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:connector_hv_relay",
                     "functions": [
                         {
-                            "function": "set_nbt",
-                            "tag": "{mekData:{FluidTanks:[{Tank:0,stored:{FluidName:\"immersiveengineering:ethanol\",Amount:14000}}]}}"
+                            "function": "set_count",
+                            "count": 16
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "immersiveengineering:shader_bag_rare",
+                    "name": "immersiveengineering:connector_hv",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 1
+                            "count": 8
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "immersiveengineering:shader_bag_epic",
+                    "name": "immersiveengineering:wirecoil_steel",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 1
+                            "count": 8
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "immersiveengineering:coke",
+                    "name": "immersiveengineering:coil_lv",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 32
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:circuit_board",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:steel_scaffolding_standard",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 16
                         }
                     ]
                 },
@@ -55,7 +82,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 32
+                            "count": 1
                         }
                     ]
                 },
@@ -66,7 +93,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 64
                         }
                     ]
                 },
@@ -77,20 +104,62 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 64
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "immersiveengineering:generator",
+                    "name": "immersiveengineering:wolfpack",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 64
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:light_engineering",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 4
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:heavy_engineering",
                     "functions": [
                         {
                             "function": "set_count",
                             "count": 2
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "immersiveengineering:shader_bag_rare"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "immersiveengineering:shader_bag_epic"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "immersiveengineering:shader_bag_ie_masterwork"
                 }
             ]
         }

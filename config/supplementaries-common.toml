@@ -2,6 +2,14 @@
 #Server side blocks configs
 [blocks]
 
+	[blocks.globe]
+		#how many globe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
+		#Range: 0 ~ 50
+		trades = 2
+		#chanche of finding a globe in a shipwreck treasure chest.
+		#Range: 0.0 ~ 1.0
+		shipwreck_treasure_chance = 0.25
+
 	[blocks.speaker_block]
 		#maximum range
 		#Range: 0 ~ 256
@@ -51,17 +59,17 @@
 		drink_from_jar = true
 		#catchable mobs 
 		#due to a vanilla bug some mobs might not render correctly or at all
-		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
+		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:fish", "minecraft:tropical_fish", "minecraft:salmon", "minecraft:cod", "minecraft:pufferfish", "minecraft:axolotl", "fins:pea_wee", "fins:wee_wee", "fins:vibra_wee", "fins:blu_wee", "fins:ornate_bugfish", "fins:spindly_gem_crab", "fins:phantom_nudibranch", "fins:high_finned_blue", "fins:teal_arrowfish", "fins:midnight_squid", "fins:banded_redback_shrimp", "fins:flatback_sucker", "fins:swamp_mucker", "upgrade_aquatic:lionfish", "upgrade_aquatic:nautilus", "upgrade_aquatic:pike", "alexsmobs:stradpole", "alexsmobs:blobfish", "unnamedanimalmod:flashlight_fish", "unnamedanimalmod:elephantnose_fish", "unnamedanimalmod:black_diamond_stingray", "unnamedanimalmod:humphead_parrotfish", "unnamedanimalmod:tomato_frog", "unnamedanimalmod:pacman_frog", "bettas:betta_fish", "pogfish:pogfish", "undergarden:gwibling", "environmental:koi", "betterendforge:end_fish", "betteranimalsplus:flying_fish", "betteranimalsplus:nautilus", "betteranimalsplus:eel_freshwater", "betteranimalsplus:eel_saltwater", "betteranimalsplus:lamprey", "betteranimalsplus:piranha", "betteranimalsplus:barracuda", "rediscovered:fish"]
 		#tinted jar catchable mobs
-		tinted_jar_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "iceandfire:pixie", "alexmobs:crimson_mosquito", "mysticalworld:frog", "mysticalworld:beetle", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "savageandravage:creepie", "betteranimalsplus:butterfly"]
+		tinted_jar_mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:endermite", "minecraft:vex", "alexsmobs:mimicube", "minecraft:fish", "minecraft:tropical_fish", "minecraft:salmon", "minecraft:cod", "minecraft:pufferfish", "minecraft:axolotl", "fins:pea_wee", "fins:wee_wee", "fins:vibra_wee", "fins:blu_wee", "fins:ornate_bugfish", "fins:spindly_gem_crab", "fins:phantom_nudibranch", "fins:high_finned_blue", "fins:teal_arrowfish", "fins:midnight_squid", "fins:banded_redback_shrimp", "fins:flatback_sucker", "fins:swamp_mucker", "upgrade_aquatic:lionfish", "upgrade_aquatic:nautilus", "upgrade_aquatic:pike", "alexsmobs:stradpole", "alexsmobs:blobfish", "unnamedanimalmod:flashlight_fish", "unnamedanimalmod:elephantnose_fish", "unnamedanimalmod:black_diamond_stingray", "unnamedanimalmod:humphead_parrotfish", "unnamedanimalmod:tomato_frog", "unnamedanimalmod:pacman_frog", "bettas:betta_fish", "pogfish:pogfish", "undergarden:gwibling", "environmental:koi", "betterendforge:end_fish", "betteranimalsplus:flying_fish", "betteranimalsplus:nautilus", "betteranimalsplus:eel_freshwater", "betteranimalsplus:eel_saltwater", "betteranimalsplus:lamprey", "betteranimalsplus:piranha", "betteranimalsplus:barracuda", "rediscovered:fish"]
 
 	#I haven't tested most of the mods included here. let me know if they work
 	[blocks.cage]
 		#catchable mobs
-		cage_mobs = ["minecraft:endermite", "minecraft:slime", "minecraft:parrot", "minecraft:bee", "minecraft:magma_cube", "minecraft:vex", "minecraft:rabbit", "minecraft:cat", "minecraft:chicken", "minecraft:bat", "iceandfire:pixie", "minecraft:fox", "minecraft:ocelot", "alexsmobs:roadrunner", "alexsmobs:hummingbird", "alexsmobs:crimson_mosquito", "alexsmobs:rattlesnake", "alexsmobs:lobster", "alexsmobs:capuchin_monkey", "alexsmobs:warped_toad", "mysticalworld:beetle", "mysticalworld:frog", "mysticalworld:silver_fox", "mysticalworld:sprout", "mysticalworld:endermini", "mysticalworld:lava_cat", "mysticalworld:owl", "mysticalworld:silkworm", "mysticalworld:hell_sprout", "quark:toretoise", "quark:crab", "quark:foxhound", "quark:stoneling", "quark:frog", "rats:rat", "rats:piper", "rats:plague_doctor", "rats:black_death", "rats:plague_cloud", "rats:plague_beast", "rats:rat_king", "rats:demon_rat", "rats:ratlantean_spirit", "rats:ratlantean_automation", "rats:feral_ratlantean", "rats:neo_ratlantean", "rats:pirat", "rats:ghost_pirat", "rats:dutchrat", "rats:ratfish", "rats:ratlantean_ratbot", "rats:rat_baron", "goblintraders:goblin_trader", "goblintraders:vein_goblin_trader", "autumnity:snail", "buzzierbees:honey_slime", "betteranimalsplus:lammergeier", "betteranimalsplus:songbird", "betteranimalsplus:pheasant", "betteranimalsplus:squirrel", "betteranimalsplus:badger", "betteranimalsplus:turkey", "exoticbirds:roadrunner", "exoticbirds:hummingbird", "exoticbirds:woodpecker", "exoticbirds:kingfisher", "exoticbirds:toucan", "exoticbirds:macaw", "exoticbirds:magpie", "exoticbirds:kiwi", "exoticbirds:owl", "exoticbirds:gouldianfinch", "exoticbirds:gull", "exoticbirds:pigeon", "exoticbirds:penguin", "exoticbirds:duck", "exoticbirds:booby", "exoticbirds:cardinal", "exoticbirds:bluejay", "exoticbirds:robin", "exoticbirds:kookaburra", "exoticbirds:budgerigar", "exoticbirds:cockatoo", "swampexpansion:slabfish"]
+		cage_mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:endermite", "minecraft:vex", "alexsmobs:mimicube", "minecraft:parrot", "minecraft:rabbit", "minecraft:cat", "minecraft:chicken", "minecraft:bat", "minecraft:fox", "minecraft:ocelot", "alexsmobs:roadrunner", "alexsmobs:rattlesnake", "alexsmobs:lobster", "alexsmobs:capuchin_monkey", "mysticalworld:silver_fox", "mysticalworld:sprout", "mysticalworld:endermini", "mysticalworld:lava_cat", "mysticalworld:owl", "mysticalworld:hell_sprout", "quark:toretoise", "quark:crab", "quark:foxhound", "quark:stoneling", "quark:frog", "rats:rat", "rats:piper", "rats:plague_doctor", "rats:black_death", "rats:plague_cloud", "rats:plague_beast", "rats:rat_king", "rats:demon_rat", "rats:ratlantean_spirit", "rats:ratlantean_automation", "rats:feral_ratlantean", "rats:neo_ratlantean", "rats:pirat", "rats:ghost_pirat", "rats:dutchrat", "rats:ratfish", "rats:ratlantean_ratbot", "rats:rat_baron", "goblintraders:goblin_trader", "goblintraders:vein_goblin_trader", "autumnity:snail", "betteranimalsplus:lammergeier", "betteranimalsplus:songbird", "betteranimalsplus:pheasant", "betteranimalsplus:squirrel", "betteranimalsplus:badger", "betteranimalsplus:turkey", "exoticbirds:roadrunner", "exoticbirds:hummingbird", "exoticbirds:woodpecker", "exoticbirds:kingfisher", "exoticbirds:toucan", "exoticbirds:macaw", "exoticbirds:magpie", "exoticbirds:kiwi", "exoticbirds:owl", "exoticbirds:gouldianfinch", "exoticbirds:gull", "exoticbirds:pigeon", "exoticbirds:penguin", "exoticbirds:duck", "exoticbirds:booby", "exoticbirds:cardinal", "exoticbirds:bluejay", "exoticbirds:robin", "exoticbirds:kookaburra", "exoticbirds:budgerigar", "exoticbirds:cockatoo", "swampexpansion:slabfish", "betteranimalsplus:horseshoecrab", "betteranimalsplus:crab", "whisperwoods:wisp", "undergarden:muncher", "undergarden:scintling", "undergarden:rotling", "undergarden:sploogie", "dungeonsmod:crow", "dungeonsmod:anthermite", "pandoras_creatures:crab", "fins:flatback_leaf_snail", "fins:penglil", "fins:river_pebble_snail", "fins:siderol_whiskered_snail", "fins:red_bull_crab", "fins:white_bull_crab"]
 		#additional mobs that you'll be able to catch with the added condition that it has to be a baby variant. No need to include the ones already in cage_mobs
-		cage_baby_mobs = ["minecraft:cow", "minecraft:sheep", "minecraft:pig"]
-		#allow all mobs to be captured by cages
+		cage_baby_mobs = ["minecraft:cow", "minecraft:sheep", "minecraft:pig", "alexsmobs:crocodile", "alexsmobs:endergrade", "alexsmobs:gazelle", "alexsmobs:gorilla", "alexsmobs:komodo_dragon", "alexsmobs:raccoon", "alexsmobs:seal", "alexsmobs:warped_toad"]
+		#allow all entities to be captured by cages and jars. Not meant for survival
 		cage_allow_all_mobs = false
 		#allow all baby mobs to be captured by cages
 		cage_allow_all_babies = false
@@ -78,7 +86,7 @@
 		sack_increment = 2
 		#additional sack slots divided by 2. Number of slots will be 5 + additional_slots*2
 		#Range: 0 ~ 2
-		additional_slots = 0
+		additional_slots = 1
 
 	[blocks.safe]
 		#makes safes only breakable by their owner or by a player in creative
@@ -86,14 +94,6 @@
 		#make safes simpler so they do not require keys:
 		#they will be bound to the first person that opens one and only that person will be able to interact with them
 		simple_safes = false
-
-	[blocks.globe]
-		#how many globe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
-		#Range: 0 ~ 50
-		trades = 2
-		#chanche of finding a globe in a shipwreck treasure chest.
-		#Range: 0.0 ~ 1.0
-		shipwreck_treasure_chance = 0.25
 
 #Configure spawning conditions
 [spawns]
@@ -133,34 +133,38 @@
 #Vanilla tweaks
 [tweaks]
 
-	[tweaks.throwable_bricks]
-		#throw bricks at your foes! Might glass blocks
-		enabled = true
-
-	[tweaks.wall_lantern]
-		#allow wall lanterns placement
-		enabled = true
-		#mod ids of mods that have lantern block that extend the base lantern class but don't look like one
-		mod_blacklist = ["extlights"]
-
-	[tweaks.bells_tweaks]
-		#ring a bell by clicking on a chain that's connected to it
-		chain_ringing = true
-		#max chain length that allows a bell to ring
-		#Range: 0 ~ 1024
-		chain_length = 32
-
-	[tweaks.hanging_flower_pots]
-		#allows you to place hanging flower pots. Works with any modded pot too
-		enabled = true
-
 	[tweaks.cake_tweaks]
 		#allows you to place a cake ontop of another
 		double_cake = true
 		#replaces normal cake placement with a directional one
 		directional_cake = true
 
+	[tweaks.hanging_flower_pots]
+		#allows you to place hanging flower pots. Works with any modded pot too
+		enabled = true
+
+	[tweaks.throwable_bricks]
+		#throw bricks at your foes! Might break glass blocks
+		enabled = true
+
+	[tweaks.wall_lantern]
+		#allow wall lanterns placement
+		enabled = true
+		#mod ids of mods that have lantern block that extend the base lantern class but don't look like one
+		mod_blacklist = ["extlights", "betterendforge"]
+
+	[tweaks.bells_tweaks]
+		#ring a bell by clicking on a chain that's connected to it
+		chain_ringing = true
+		#max chain length that allows a bell to ring
+		#Range: 0 ~ 1024
+		chain_length = 16
+
 [items]
+
+	[items.rope_arrow]
+		#If you really don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
+		rope_arrow_override = "supplementaries:rope"
 
 	[items.flute]
 		#radius in which an unbound flute will search pets
@@ -170,9 +174,5 @@
 		#Range: 0 ~ 500
 		bound_distance = 64
 		#additional non tameable entities that you can bind to flutes
-		flute_extra_mobs = ["minecraft:horse", "minecraft:llama", "minecraft:donkey", "minecraft:fox"]
-
-[comment]
-	#This config is synced server side. If you are on a server you'll get its own version
-	comment = true
+		flute_extra_mobs = ["minecraft:horse", "minecraft:llama", "minecraft:mule", "minecraft:donkey", "minecraft:fox"]
 

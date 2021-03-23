@@ -1,7 +1,7 @@
 {
 	id: "0000000000000093",
-	group: "",
-	order_index: 8,
+	group: "74B3CF67FCEAB20F",
+	order_index: 0,
 	filename: "tools",
 	title: "Tools",
 	icon: {
@@ -618,7 +618,7 @@
 		},
 		{
 			x: -7.5d,
-			y: -10.5d,
+			y: -9.5d,
 			subtitle: "It's Over! I Have the High Ground!",
 			description: ["Provides automation access to the player's inventory, allows auto feeding, and auto charging of equipment, among other perks."],
 			dependencies: ["0000000000000168"],
@@ -995,7 +995,18 @@
 			x: -3.5d,
 			y: -6.5d,
 			subtitle: "Rip and Tear",
-			description: ["A powerful all in one tool capable of accepting several upgrades. "],
+			description: [
+				"A powerful all in one tool capable of accepting several upgrades. ",
+				"",
+				"Notable Upgrades",
+				"",
+				"● Attack Amplification Unit",
+				"● Excavation Escalation Unit",
+				"● Vein Mining Unit",
+				"● Silk Touch Unit",
+				"● Teleportation Unit",
+				"● Farming Unit"
+			],
 			dependencies: ["00000000000007A9"],
 			id: "0000000000000451",
 			tasks: [{
@@ -1041,7 +1052,7 @@
 		{
 			title: "Tools and Armor",
 			x: -5.5d,
-			y: -13.0d,
+			y: -12.0d,
 			shape: "gear",
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions.",
@@ -1559,8 +1570,8 @@
 					Damage: 0
 				}
 			},
-			x: -5.5d,
-			y: -11.5d,
+			x: -10.0d,
+			y: -12.0d,
 			description: ["Vanilla Hammers and Excavators offers 3x3 mining tools that deal with both stone and dirt type blocks. They make an excellent way to speed up early mining endeavours."],
 			id: "0000000000000484",
 			tasks: [{
@@ -2061,7 +2072,7 @@
 		},
 		{
 			x: -7.5d,
-			y: -15.5d,
+			y: -13.5d,
 			description: ["The Infinity Drill will allow you mine big areas when using biofuel. It can be upgraded by charging it."],
 			dependencies: ["0000000000000082"],
 			id: "0000000000000F5F",
@@ -2086,7 +2097,7 @@
 		},
 		{
 			x: -6.0d,
-			y: -15.0d,
+			y: -13.0d,
 			description: ["The Infinity Saw will allow you chop big forests when using biofuel. It can be upgraded by charging it."],
 			dependencies: ["0000000000000F09"],
 			id: "0000000000000F61",
@@ -2111,7 +2122,7 @@
 		},
 		{
 			x: -5.0d,
-			y: -15.0d,
+			y: -13.0d,
 			description: ["The Infinity Trident is an upgraded version of the Minecraft Trident, most of the enchanments can be unlocked by upgrading it. It can be upgraded by charging it."],
 			dependencies: ["0000000000000F07"],
 			id: "0000000000000F63",
@@ -2139,7 +2150,7 @@
 		},
 		{
 			x: -3.5d,
-			y: -15.5d,
+			y: -13.5d,
 			description: ["The Infinity Hammer will allow you attack enemies in big areas when using biofuel. It can be upgraded by charging it."],
 			dependencies: ["0000000000000F0B"],
 			id: "0000000000000F65",
@@ -2197,6 +2208,599 @@
 					player_command: false
 				}
 			]
+		},
+		{
+			x: -4.0d,
+			y: -2.0d,
+			subtitle: "Goes Brrr",
+			description: [
+				"A handheld saw perfect for chopping down trees or chopping through zombies. ",
+				"",
+				"This tool runs on biodiesel, though the internal tank is on the smaller side. Consider carrying a tank with you for refueling in the field. Simply place it in the input slot of the tank to fill it up. ",
+				"",
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			],
+			dependencies: ["0000000000000012"],
+			id: "1487479CFA348530",
+			tasks: [{
+				id: "716019716B2915F9",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 5,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:buzzsaw",
+					Count: 1b
+				}
+			}],
+			rewards: [
+				{
+					id: "4AA86E1E20DADE27",
+					type: "item",
+					item: {
+						id: "mekanism:advanced_fluid_tank",
+						Count: 1b,
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b,
+									stored: {
+										FluidName: "immersiveengineering:biodiesel",
+										Amount: 16000
+									}
+								}]
+							}
+						}
+					}
+				},
+				{
+					id: "17E85BEC398930AD",
+					type: "item",
+					item: {
+						id: "immersiveengineering:sawblade",
+						Count: 1b,
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		},
+		{
+			x: -1.0d,
+			y: -5.0d,
+			subtitle: "First comes smiles, then lies. Last is gunfire.",
+			description: [
+				"A trusty side-arm suitable for any Gunslinger.",
+				"",
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			],
+			dependencies: ["0000000000000012"],
+			id: "52DFEA36FFFBCDD5",
+			tasks: [{
+				id: "54E76BD7C4FB9D97",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 21,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:revolver",
+					Count: 1b
+				}
+			}],
+			rewards: [
+				{
+					id: "098BE70A0BFCDBDC",
+					type: "command",
+					title: "Rare Immersive Engineering Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+					player_command: false
+				},
+				{
+					id: "02E988D98405DAFB",
+					type: "item",
+					item: "immersiveengineering:casull",
+					count: 64
+				}
+			]
+		},
+		{
+			x: -7.0d,
+			y: -2.0d,
+			subtitle: "Workin' in a coal mine. Oops, about to slip down.",
+			description: [
+				"A handheld tunnel bore capable of quickly digging through the toughest rocks. ",
+				"",
+				"This tool runs on biodiesel, though the internal tank is on the smaller side. Consider carrying a tank with you for refueling in the field. Simply place it in the input slot of the tank to fill it up. ",
+				"",
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			],
+			dependencies: ["0000000000000012"],
+			id: "0A476C6332EB6477",
+			tasks: [{
+				id: "5B3CC19ED97DFA26",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 5,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:drill",
+					Count: 1b
+				}
+			}],
+			rewards: [
+				{
+					id: "5D7232BCA248639D",
+					type: "item",
+					item: {
+						id: "mekanism:advanced_fluid_tank",
+						Count: 1b,
+						tag: {
+							mekData: {
+								FluidTanks: [{
+									Tank: 0b,
+									stored: {
+										FluidName: "immersiveengineering:biodiesel",
+										Amount: 16000
+									}
+								}]
+							}
+						}
+					}
+				},
+				{
+					id: "7683853C5B00EE25",
+					type: "item",
+					item: "immersiveengineering:drillhead_iron"
+				}
+			]
+		},
+		{
+			x: -10.0d,
+			y: -5.0d,
+			subtitle: "See the TURTLE, ain't he keen?",
+			description: [
+				"Capable of launching projectiles at immense velocities and ripping through targets with impunity, the Railgun is a fierce weapon. ",
+				"",
+				"Suitable ammunition includes Iron and Steel Rods, as well as Graphite Electrodes and many others. ",
+				"",
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			],
+			dependencies: ["0000000000000012"],
+			id: "69C4E9422B0C695A",
+			tasks: [{
+				id: "404F5C421F8FFFD5",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 3,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:railgun",
+					Count: 1b
+				}
+			}],
+			rewards: [
+				{
+					id: "57BCCB513CA91D6B",
+					type: "command",
+					title: "Rare Immersive Engineering Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+					player_command: false
+				},
+				{
+					id: "6BCA8B2194807B4D",
+					type: "item",
+					item: "emendatusenigmatica:iron_rod",
+					count: 16
+				}
+			]
+		},
+		{
+			x: 0.0d,
+			y: -4.0d,
+			subtitle: "When the shooting starts, we kill what moves.",
+			description: [
+				"The Speedloader will automatically reload the Revolver when it runs out of ammo, making it a great way to continue the fight. ",
+				"",
+				"To refill it on the go, simply right click and place your cartridges in it. However, it can also be filled in a 3x3 crafting grid by surrounding it with ammo. Combined with some automation and a Player Module, this could mean never running out of ammo again."
+			],
+			dependencies: ["52DFEA36FFFBCDD5"],
+			id: "3FC9C9BA6C4B9597",
+			tasks: [{
+				id: "46FB2138D39F9238",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 8,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:speedloader",
+					Count: 1b
+				}
+			}],
+			rewards: [{
+				id: "24A27D154F9FB236",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -4.0d,
+			subtitle: "The man in black fled across the desert...",
+			description: ["For those times when the beasts get too close, or your ammo runs dry. "],
+			dependencies: ["52DFEA36FFFBCDD5"],
+			id: "3C6A4FF4F12DCAB2",
+			tasks: [{
+				id: "4E1995B3908BE0A1",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_revolver_bayonet"
+			}],
+			rewards: [{
+				id: "1EE1E0D6A82D9B90",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -9.0d,
+			y: -4.0d,
+			subtitle: "The wheel turns and the world moves on.",
+			description: ["Heatsinks allow the Railgun to recharge faster for more rapid-fire destruction. "],
+			dependencies: ["69C4E9422B0C695A"],
+			id: "4AEF4EECF33AAD14",
+			tasks: [{
+				id: "1722BA00297D1CD5",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_railgun_capacitors"
+			}],
+			rewards: [{
+				id: "388801C14A6A9916",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -11.0d,
+			y: -4.0d,
+			subtitle: "All things serve the beam.",
+			description: ["The Middle Mouse button will enable the scope when installed and scrolling will adjust the magnification level. Great for picking off a target at a distance. "],
+			dependencies: ["69C4E9422B0C695A"],
+			id: "375C292687CF5637",
+			tasks: [{
+				id: "258019F9C44FA366",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_railgun_scope"
+			}],
+			rewards: [{
+				id: "231932437B4E9839",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -10.0d,
+			y: -3.5d,
+			subtitle: "Pain is a tool, after all. Sometimes it's the best tool.",
+			description: [
+				"The Railgun, mighty as it is, holds relatively little FE. A Capacitor Backpack is an excellent way to extend the battery life.",
+				"",
+				"While it can go in a Curios slot, the Capacitor Backpack is perhaps better combined with a chest armor in a crafting grid."
+			],
+			dependencies: ["69C4E9422B0C695A"],
+			id: "149EC37E85BC39BB",
+			tasks: [{
+				id: "0946F869835964E3",
+				type: "item",
+				item: {
+					id: "immersiveengineering:powerpack",
+					Count: 1b,
+					tag: {
+						energy: 100000
+					}
+				}
+			}]
+		},
+		{
+			title: "Ammo Cartridges",
+			x: -1.0d,
+			y: -3.5d,
+			subtitle: "...and the gunslinger followed.",
+			description: [
+				"Casull Cartridges are the cheapest, most basic ammo; however, they still pack quite a punch. ",
+				"",
+				"Armor-Piercing Cartridges will quickly dispatch a well armored foe and Silver Cartridges are potent against the Undead. ",
+				"",
+				"For controlling large crowds, consider something a little more potent, like Buckshot or Dragon’s Breath Cartridges which fire a short-range conical burst. And if your aim is simply terrible, consider the Wolfpack Cartridge, which bursts on impact launching homing shrapnel in all directions, quickly dispatching anything they encounter. ",
+				"",
+				"Explore your options and read more in the Engineer’s Manual."
+			],
+			dependencies: ["52DFEA36FFFBCDD5"],
+			id: "7EA4E88D7230D94D",
+			tasks: [{
+				id: "3E8BA9F57E3C4452",
+				type: "item",
+				title: "Ammo Cartridges",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "immersiveengineering:casull",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:armor_piercing",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:buckshot",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:he",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:silver",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:dragons_breath",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:potion",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:flare",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:firework",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:homing",
+								Count: 1b
+							},
+							{
+								id: "immersiveengineering:wolfpack",
+								Count: 1b
+							}
+						]
+					}
+				},
+				count: 24L
+			}],
+			rewards: [{
+				id: "673B7ECE0BDE897E",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -1.5d,
+			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "],
+			dependencies: ["1487479CFA348530"],
+			id: "650F8ED52289B8AC",
+			tasks: [{
+				id: "07CF70C497212059",
+				type: "item",
+				item: {
+					id: "immersiveengineering:rockcutter",
+					Count: 1b,
+					tag: {
+						Damage: 0
+					}
+				}
+			}],
+			rewards: [{
+				id: "541EA45AC0E8D7CF",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -1.0d,
+			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."],
+			dependencies: ["0A476C6332EB6477"],
+			id: "322F7E60078AC6F6",
+			tasks: [{
+				id: "4D1F4C0716B593B9",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_drill_waterproof"
+			}],
+			rewards: [{
+				id: "5691DD3285ADB605",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -1.5d,
+			description: [
+				"Drill heads do wear out over time, though they can be removed from the drill and repaired in an Anvil. ",
+				"",
+				"Upgrading to a steel drill head not only increases the durability, but also allows mining Obsidian without wasting your precious shiny blue rocks. "
+			],
+			dependencies: ["0A476C6332EB6477"],
+			id: "13AA0065B8167EF4",
+			tasks: [{
+				id: "6A6D387D221FEC38",
+				type: "item",
+				item: "immersiveengineering:drillhead_steel"
+			}],
+			rewards: [{
+				id: "39097B6C7B38506A",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -5.5d,
+			y: 0.5d,
+			description: ["Adding some lubricant to a Drill or Saw destined for rugged digging and cutting tough material can greatly extend the lifetime of the tool. "],
+			dependencies: [
+				"5B3CC19ED97DFA26",
+				"716019716B2915F9"
+			],
+			dependency_requirement: "one_completed",
+			id: "546222019B6470BA",
+			tasks: [{
+				id: "4A295A3D115FE1F2",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_drill_lube"
+			}],
+			rewards: [{
+				id: "713B059CB5DBEBCA",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -0.5d,
+			description: ["An extended Fuel tank that works in the Mining Drill, Buzzsaw, and even the Chemical Thrower. Well worth the cost."],
+			dependencies: [
+				"716019716B2915F9",
+				"672C630D81BD8E94",
+				"5B3CC19ED97DFA26"
+			],
+			dependency_requirement: "one_completed",
+			id: "7B384B41FCA9F17A",
+			tasks: [{
+				id: "5761B4339C81361F",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_drill_capacity"
+			}],
+			rewards: [{
+				id: "60482427F2F16E9B",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -8.0d,
+			y: -0.5d,
+			description: ["Up to three of these Additional Augers may be added to a drill, each one speeding up the mining speed and even improving the damage dealt to anything unlucky enough to be standing in front of it. "],
+			dependencies: ["0A476C6332EB6477"],
+			id: "1A0053922B30B033",
+			tasks: [{
+				id: "762650E500C59FAF",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_drill_damage"
+			}],
+			rewards: [{
+				id: "1D732032B9C86AB5",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -1.0d,
+			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to spot between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "],
+			dependencies: ["1487479CFA348530"],
+			id: "283516E560D1D20E",
+			tasks: [{
+				id: "59195DC2ADAA355B",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_buzzsaw_spareblades"
+			}],
+			rewards: [{
+				id: "36142E0E21AC2474",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -1.5d,
+			subtitle: "So anyway, I started blasting.",
+			description: [
+				"Ever wanted a flame thrower? Now’s your chance. Fill this with any flammable fuel, ignite the pilot light with Sneak + Right Click, and start spraying. ",
+				"",
+				"Place it in an Engineer’s Workbench to add or remove augments. "
+			],
+			dependencies: ["0000000000000012"],
+			id: "4498690DCA41A562",
+			tasks: [{
+				id: "672C630D81BD8E94",
+				type: "item",
+				item: {
+					ForgeCaps: {
+						Parent: {
+							Size: 4,
+							Items: []
+						}
+					},
+					id: "immersiveengineering:chemthrower",
+					Count: 1b
+				}
+			}],
+			rewards: [{
+				id: "2DBC321E9D2AE461",
+				type: "item",
+				item: "immersiveengineering:toolupgrade_chemthrower_focus"
+			}]
 		}
 	]
 }

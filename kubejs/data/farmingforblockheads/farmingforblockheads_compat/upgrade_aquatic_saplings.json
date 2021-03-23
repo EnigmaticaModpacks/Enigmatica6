@@ -1,0 +1,18 @@
+{
+    "modId": "upgrade_aquatic",
+    "group": {
+        "name": "Upgrade Aquatic Saplings",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        {
+            "output": {
+                "item": "upgrade_aquatic:river_sapling"
+            }
+        }
+    ]
+}

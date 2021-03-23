@@ -214,7 +214,7 @@
 		#Range: 1 ~ 100
 		"Effect Chance" = 20
 		#If TRUE, the Displacement Enchantment is available for Armor, Shields, and Horse Armor.
-		Enable = true
+		Enable = false
 		#If TRUE, mobs wearing armor with this Enchantment can teleport players.
 		"Mobs Teleport Players" = false
 
@@ -366,7 +366,7 @@
 		#Range: 1 ~ 10
 		"Max Level" = 3
 		#If TRUE, the Looting Enchantment is replaced with a more configurable version which works on more items, such as Axes.
-		Enable = true
+		Enable = false
 
 	[Overrides.Protection]
 		#This option adjusts the maximum allowable level for the Enchantment.
