@@ -48,7 +48,27 @@
 				id: "0399E51C27863913",
 				type: "item",
 				item: "pedestals:itemcolorpalletdefault"
-			}]
+			}],
+			rewards: [
+				{
+					id: "098E3EA6ABFDA468",
+					type: "item",
+					item: "minecraft:red_dye",
+					count: 16
+				},
+				{
+					id: "79F92867195F75CE",
+					type: "item",
+					item: "minecraft:green_dye",
+					count: 16
+				},
+				{
+					id: "1EECE18CC58046AC",
+					type: "item",
+					item: "minecraft:blue_dye",
+					count: 16
+				}
+			]
 		},
 		{
 			title: "Item Transfer",
@@ -64,14 +84,24 @@
 				{
 					id: "7BC584C4EB7CA040",
 					type: "item",
+					title: "Item Import Upgrade",
 					item: "pedestals:coin/import"
 				},
 				{
 					id: "6B60E2AD9BD1B2FD",
 					type: "item",
+					title: "Item Export Upgrade",
 					item: "pedestals:coin/export"
 				}
-			]
+			],
+			rewards: [{
+				id: "2D03153B0921EA16",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Advanced Enchantment",
@@ -88,6 +118,14 @@
 				id: "2E490DE57B21553B",
 				type: "item",
 				item: "pedestals:bookadvanced"
+			}],
+			rewards: [{
+				id: "6C75052583A613E3",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -100,6 +138,7 @@
 			tasks: [{
 				id: "6DB2626B9071D2F8",
 				type: "item",
+				title: "Filters",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -184,6 +223,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "75C154C379370AA9",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -206,19 +253,30 @@
 				{
 					id: "2C00694467D9F744",
 					type: "item",
+					title: "Auto-Attacker Upgrade",
 					item: "pedestals:coin/attack"
 				},
 				{
 					id: "778B44D0C706315F",
 					type: "item",
+					title: "Mob Fan Upgrade",
 					item: "pedestals:coin/fan"
 				},
 				{
 					id: "517ED5A445756751",
 					type: "item",
+					title: "Item Magnet Upgrade",
 					item: "pedestals:coin/magnet"
 				}
-			]
+			],
+			rewards: [{
+				id: "285E5CC316FD0399",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			title: "Cobble Generator",
@@ -236,11 +294,13 @@
 			tasks: [{
 				id: "1FC88CE0C0CAF005",
 				type: "item",
+				title: "Cobble Gen Upgrade",
 				item: "pedestals:coin/cobble"
 			}],
 			rewards: [{
 				id: "524510595571DB0F",
 				type: "item",
+				title: "Silk Touch",
 				item: {
 					id: "minecraft:enchanted_book",
 					Count: 1b,
@@ -274,6 +334,7 @@
 			tasks: [{
 				id: "2FEB4963910F1366",
 				type: "item",
+				title: "Entity Filters",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -310,6 +371,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0513EB136510EFC4",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -334,6 +403,7 @@
 			tasks: [{
 				id: "7D5E20C46615FE41",
 				type: "item",
+				title: "Farming Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -362,7 +432,23 @@
 						]
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "06E7A9FE610657CD",
+					type: "item",
+					item: "farmersdelight:rich_soil_farmland",
+					count: 24
+				},
+				{
+					id: "10C04CD16CCFB794",
+					type: "command",
+					title: "Epic Pedestals Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "XP Input",
@@ -379,16 +465,40 @@
 			dependencies: ["5519E152C45C620F"],
 			size: 1.5d,
 			id: "7A4BFA66CD8E3884",
-			tasks: [
+			tasks: [{
+				id: "4AB13C88D19A545E",
+				type: "item",
+				title: "XP Input",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/xpmagnet",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/xpgrindstone",
+								Count: 1b
+							}
+						]
+					}
+				}
+			}],
+			rewards: [
 				{
-					id: "06A8E34C2DAB9341",
-					type: "item",
-					item: "pedestals:coin/xpmagnet"
+					id: "7B73E2B538C62D25",
+					type: "xp",
+					xp: 100
 				},
 				{
-					id: "353D30A855006CDB",
-					type: "item",
-					item: "pedestals:coin/xpgrindstone"
+					id: "75CCFE4D8F0F7B7A",
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "kubejs:sorcerers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -405,16 +515,40 @@
 			],
 			dependencies: ["7A4BFA66CD8E3884"],
 			id: "78991F3E1F2CDB09",
-			tasks: [
+			tasks: [{
+				id: "2712FCFCE5FC2D8F",
+				type: "item",
+				title: "XP Output",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/xpbottler",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/xpdropper",
+								Count: 1b
+							}
+						]
+					}
+				}
+			}],
+			rewards: [
 				{
-					id: "3A48A301A7CEE73B",
-					type: "item",
-					item: "pedestals:coin/xpdropper"
+					id: "69463270A467BDE5",
+					type: "command",
+					title: "Epic Pedestals Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+					player_command: false
 				},
 				{
-					id: "32C28F702DFDF8FA",
-					type: "item",
-					item: "pedestals:coin/xpbottler"
+					id: "5D63028F49060803",
+					type: "xp",
+					xp: 100
 				}
 			]
 		},
@@ -432,8 +566,24 @@
 			tasks: [{
 				id: "2885D8E72156A816",
 				type: "item",
+				title: "Enchanter Upgrade",
 				item: "pedestals:coin/xpenchanter"
-			}]
+			}],
+			rewards: [
+				{
+					id: "091142AE33565937",
+					type: "command",
+					title: "Legendary Pedestals Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+					player_command: false
+				},
+				{
+					id: "7E4890853E93CD10",
+					type: "xp",
+					xp: 100
+				}
+			]
 		},
 		{
 			title: "XP Anvil",
@@ -454,8 +604,27 @@
 			tasks: [{
 				id: "24EDA20ED95D7ADE",
 				type: "item",
+				title: "XP Anvil Upgrade",
 				item: "pedestals:coin/xpanvil"
-			}]
+			}],
+			rewards: [
+				{
+					id: "71930DA696A6F583",
+					type: "command",
+					title: "Legendary Pedestals Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+					player_command: false
+				},
+				{
+					id: "1D6A6F954563D7B2",
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "kubejs:sorcerers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Fluid Transfer",
@@ -470,14 +639,24 @@
 				{
 					id: "4FC68D9410BD5157",
 					type: "item",
+					title: "Fluid Import Upgrade",
 					item: "pedestals:coin/fluidimport"
 				},
 				{
 					id: "1DCE38E92AB8A491",
 					type: "item",
+					title: "Fluid Export Upgrade",
 					item: "pedestals:coin/fluidexport"
 				}
-			]
+			],
+			rewards: [{
+				id: "3BF44DDBB88BEFF0",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Manipulating Fluids In The World",
@@ -490,14 +669,24 @@
 				{
 					id: "03426DC34F589B83",
 					type: "item",
+					title: "Fluid Pump Upgrade",
 					item: "pedestals:coin/fluidpump"
 				},
 				{
 					id: "0D9AE163A1947D45",
 					type: "item",
+					title: "Fluid Drain Upgrade",
 					item: "pedestals:coin/fluiddrain"
 				}
-			]
+			],
+			rewards: [{
+				id: "1DE68B6E8E866DE4",
+				type: "command",
+				title: "Pedestals Legendary Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			title: "Fluid to XP Conversion",
@@ -513,8 +702,22 @@
 			tasks: [{
 				id: "6778060035ECD402",
 				type: "item",
+				title: "Fluid to XP Conversion Upgrade",
 				item: "pedestals:coin/fluidxpconverter"
-			}]
+			}],
+			rewards: [
+				{
+					id: "7D69D5766C6797ED",
+					type: "item",
+					item: "pneumaticcraft:memory_essence_bucket",
+					count: 4
+				},
+				{
+					id: "0B8959A9559A7AFF",
+					type: "item",
+					item: "pneumaticcraft:small_tank"
+				}
+			]
 		},
 		{
 			title: "Energy Transfer",
@@ -533,14 +736,24 @@
 				{
 					id: "23D0BA532E6FC8AA",
 					type: "item",
+					title: "Energy Import Upgrade",
 					item: "pedestals:coin/rfimport"
 				},
 				{
 					id: "633E32DD1A37DBAC",
 					type: "item",
+					title: "Energy Export Upgrade",
 					item: "pedestals:coin/rfexport"
 				}
-			]
+			],
+			rewards: [{
+				id: "63DF0CF17CEF0500",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Crusher Upgrade",
@@ -559,6 +772,7 @@
 			tasks: [{
 				id: "2C89A17FEE1D81F5",
 				type: "item",
+				title: "Crusher Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -575,6 +789,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "1ED931F1F141D930",
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -594,6 +816,7 @@
 			tasks: [{
 				id: "213EE2964AAEC897",
 				type: "item",
+				title: "Smelting Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -610,6 +833,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "1B04CC06B42A1526",
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
@@ -629,6 +860,7 @@
 			tasks: [{
 				id: "375DDC70C36E87DB",
 				type: "item",
+				title: "Sawmill Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -645,7 +877,24 @@
 						]
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "00EB9A9E96BE6AE7",
+					type: "item",
+					item: "minecraft:oak_log",
+					count: 32,
+					random_bonus: 32
+				},
+				{
+					id: "0B94C6A7C119EBF7",
+					type: "command",
+					title: "Rare Pedestals Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Quarry Upgrade",
@@ -667,6 +916,7 @@
 			tasks: [{
 				id: "19FD33FF26CBC42B",
 				type: "item",
+				title: "Quarry Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -691,6 +941,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0381C81A23FD888C",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -731,7 +989,24 @@
 						]
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "6B5F421D7DB51A89",
+					type: "item",
+					item: "minecraft:bee_spawn_egg"
+				},
+				{
+					id: "4C89A90467F66E70",
+					type: "item",
+					item: "minecraft:sheep_spawn_egg"
+				},
+				{
+					id: "7EB80E7590BDF726",
+					type: "item",
+					item: "minecraft:cow_spawn_egg"
+				}
+			]
 		},
 		{
 			title: "Crafting Upgrades",
@@ -757,6 +1032,7 @@
 				{
 					id: "67DB4F5A0E9B46F4",
 					type: "item",
+					title: "Crafting Upgrades",
 					item: {
 						id: "itemfilters:or",
 						Count: 1b,
@@ -801,6 +1077,7 @@
 				{
 					id: "766693A91B7DA1E7",
 					type: "item",
+					title: "Placeholders",
 					item: {
 						id: "itemfilters:or",
 						Count: 1b,
@@ -818,7 +1095,15 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: "1108A6323A6A28A6",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			title: "Pedestal Linking",
@@ -875,6 +1160,11 @@
 				id: "6731301F006613B4",
 				type: "item",
 				item: "minecraft:redstone"
+			}],
+			rewards: [{
+				id: "6F7D317666B0957F",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -899,6 +1189,14 @@
 			tasks: [{
 				id: "11352D320468872A",
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: "5555385A057F11AB",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -916,12 +1214,22 @@
 				type: "item",
 				item: "pedestals:coin/default"
 			}],
-			rewards: [{
-				id: "4BB47F1EBB842C15",
-				type: "item",
-				item: "pedestals:coin/default",
-				count: 7
-			}]
+			rewards: [
+				{
+					id: "4BB47F1EBB842C15",
+					type: "item",
+					item: "pedestals:coin/default",
+					count: 7
+				},
+				{
+					id: "0D53E6296F286954",
+					type: "command",
+					title: "Rare Pedestals Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -3.5d,
@@ -933,6 +1241,11 @@
 				id: "6CF87B9FDBF0F57E",
 				type: "item",
 				item: "pedestals:upgradetool"
+			}],
+			rewards: [{
+				id: "53A40AFDE18FBBEB",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -949,6 +1262,11 @@
 				id: "195F71E5D15D557A",
 				type: "item",
 				item: "pedestals:toolswapper"
+			}],
+			rewards: [{
+				id: "429AB1D13E35C616",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -967,6 +1285,7 @@
 			tasks: [{
 				id: "13B8EBFFC9B4CFE1",
 				type: "item",
+				title: "FE Generators",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -983,6 +1302,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "079B55734F05F67A",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1001,6 +1328,7 @@
 			tasks: [{
 				id: "6FDAD12F85326869",
 				type: "item",
+				title: "Augments",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1021,6 +1349,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "7EF6847AFBA8EF14",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1033,6 +1369,7 @@
 			tasks: [{
 				id: "41ED7B173A272114",
 				type: "item",
+				title: "Enchantment Focus Books",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1057,6 +1394,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0D33D903DE919312",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1069,6 +1414,7 @@
 			tasks: [{
 				id: "7AB8C73E5215ED39",
 				type: "item",
+				title: "Relays",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1101,6 +1447,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "34316DE310845284",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1113,6 +1467,7 @@
 			tasks: [{
 				id: "22221D08292F3871",
 				type: "item",
+				title: "Tank Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1137,6 +1492,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "157D6C650B8AFA14",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1167,6 +1530,14 @@
 						}]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0EF443D327EE222B",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1187,6 +1558,7 @@
 			tasks: [{
 				id: "1371F2CF8EE10097",
 				type: "item",
+				title: "Block Manipulation Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1207,6 +1579,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "2959BEBA6F82546F",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		}
 	]
