@@ -21,10 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:netherrack",
-        "mutationOutput": "minecraft:obsidian",
-        "mutationType": "BLOCK_TO_BLOCK",
-        "mutationCount": 4
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:netherrack",
+            "outputs": [
+              {"outputID": "minecraft:obsidian", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

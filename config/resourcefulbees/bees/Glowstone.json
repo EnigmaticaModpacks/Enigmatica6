@@ -21,9 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:netherrack",
-        "mutationOutput": "minecraft:glowstone",
-        "mutationType": "BLOCK_TO_BLOCK"
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:netherrack",
+            "outputs": [
+              {"outputID": "minecraft:glowstone", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
