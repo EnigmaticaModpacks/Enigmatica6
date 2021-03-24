@@ -153,7 +153,8 @@ events.listen('recipes', (event) => {
     var regexIdRemovals = [
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
-        /create:\w+\/bread/
+        /create:\w+\/bread/,
+        /byg:\w*red_rock_\w+_from_\w*stonecutting/
     ];
 
     outputRemovals.forEach((removal) => {
