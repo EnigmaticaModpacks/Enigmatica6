@@ -437,7 +437,7 @@ events.listen('recipes', (event) => {
             Item.of('resourcefulbees:t1_apiary'),
             ['ABA', 'BCB', 'ABA'],
             {
-                A: 'minecraft:honeycomb_block',
+                A: '#resourcefulbees:resourceful_honeycomb_block',
                 B: 'minecraft:honey_block',
                 C: 'resourcefulbees:t4_beehive'
             },
@@ -448,7 +448,7 @@ events.listen('recipes', (event) => {
             Item.of('resourcefulbees:t2_apiary'),
             ['ACA', 'BDB', 'ACA'],
             {
-                A: 'minecraft:honeycomb_block',
+                A: '#resourcefulbees:resourceful_honeycomb_block',
                 B: 'resourcefulbees:t4_beehive',
                 C: 'resourcefulbees:t1_apiary',
                 D: 'minecraft:nether_star'
@@ -460,7 +460,7 @@ events.listen('recipes', (event) => {
             Item.of('resourcefulbees:t3_apiary'),
             ['DCD', 'BAB', 'DCD'],
             {
-                A: 'minecraft:honeycomb_block',
+                A: '#resourcefulbees:resourceful_honeycomb_block',
                 B: 'resourcefulbees:t4_beehive',
                 C: 'resourcefulbees:t2_apiary',
                 D: 'minecraft:nether_star'
@@ -472,7 +472,7 @@ events.listen('recipes', (event) => {
             Item.of('resourcefulbees:t4_apiary'),
             ['DCD', 'BAB', 'DCD'],
             {
-                A: 'minecraft:honeycomb_block',
+                A: '#resourcefulbees:resourceful_honeycomb_block',
                 B: 'resourcefulbees:t4_beehive',
                 C: 'resourcefulbees:t3_apiary',
                 D: 'minecraft:nether_star'
