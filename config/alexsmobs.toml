@@ -59,6 +59,9 @@
 	straddleboardEnchants = true
 	#Whether emu should target skeletons.
 	emuTargetSkeletons = true
+	#Percent chance for emu leggings to dodge projectile attacks.
+	#Range: 0.0 ~ 1.0
+	emuPantsDodgeChance = 0.45
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
