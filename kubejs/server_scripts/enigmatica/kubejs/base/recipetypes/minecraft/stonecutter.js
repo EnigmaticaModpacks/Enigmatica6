@@ -30,6 +30,22 @@ events.listen('recipes', (event) => {
         });
     });
 
+    stonecuttables.forEach((stoneType) => {
+        var tag = `#enigmatica:stonecuttables/${stoneType.name}`;
+        stoneType.stones.forEach((stone) => {
+            event.stonecutting(stone, tag);
+        });
+        stoneType.onlyAsOutput.forEach((stone) => {
+            event.stonecutting(stone, tag);
+        });
+    });
+
+    event.stonecutting('minecraft:terracotta', 'quark:shingles');
+
+    colors.forEach((color) => {
+        event.stonecutting(`minecraft:${color}_terracotta`, `quark:${color}_shingles`);
+    });
+
     ['forge:dirt', 'forge:workbench', 'forge:grass'].forEach((tag) => {
         stonecutterTagConversion(event, tag);
     });
