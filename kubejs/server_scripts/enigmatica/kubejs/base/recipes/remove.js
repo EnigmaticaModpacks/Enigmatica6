@@ -237,6 +237,15 @@ events.listen('recipes', (event) => {
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
     });
+    
+    stonecuttables.forEach((stoneType) => {
+        stoneType.stones.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone })
+        });
+        stoneType.onlyAsOutput.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone })
+        });
+    });
 
     event.remove({
         input: '#forge:ores/zinc',
