@@ -4,7 +4,8 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Improvements/Changes**
 
--   AlexsMobs: Disabled the the Cave Centipede
+-   AlexsMobs: Cave Centipedes no longer naturally spawn.
+    -   Their spawn eggs can be purchased from the Market
 
 **Bug Fixes**
 
