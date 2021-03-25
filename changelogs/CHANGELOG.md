@@ -1,3 +1,15 @@
+### Enigmatica 6 v0.4.6
+
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_
+
+**Improvements/Changes**
+
+-   AlexsMobs: Disabled the the Cave Centipede
+
+**Bug Fixes**
+
+-
+
 ### Enigmatica 6 v0.4.5
 
 _Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.5.md)_
