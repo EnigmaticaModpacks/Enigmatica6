@@ -20,6 +20,10 @@ events.listen('recipes', (event) => {
             {
                 input: 'byg:quartzite_sand',
                 output: Item.of('minecraft:quartz')
+            },
+            {
+                input: 'minecraft:sugar_cane',
+                output: Item.of('minecraft:sugar', 2)
             }
         ]
     };

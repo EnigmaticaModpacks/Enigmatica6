@@ -88,6 +88,11 @@ events.listen('recipes', (event) => {
                 input: 'byg:quartzite_sand',
                 output: Item.of('minecraft:sand'),
                 secondary: [Item.of('minecraft:quartz').chance(0.1)]
+            },
+            {
+                input: 'minecraft:sugar_cane',
+                output: Item.of('minecraft:sugar', 2),
+                secondary: [Item.of('minecraft:sugar').chance(0.1)]
             }
         ]
     };
