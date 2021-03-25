@@ -242,6 +242,10 @@ events.listen('recipes', (event) => {
                 '#forge:ingots/alfsteel',
                 '#forge:dusts/mana'
             ]
+        },
+        {
+            output: 'minecraft:quartz',
+            inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand']
         }
     ];
 
