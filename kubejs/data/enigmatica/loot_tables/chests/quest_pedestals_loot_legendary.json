@@ -2,48 +2,52 @@
     "pools": [
         {
             "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
             "entries": [
                 {
                     "type": "item",
                     "weight": 4,
-                    "name": "minecraft:enchanted_book",
+                    "name": "pedestals:bookcapacity",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{StoredEnchantments: [{lvl:5s, id: \"pedestals:upgradecapacity\"}]}"
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgradearea\"}]}"
                         }
                     ]
                 },
                 {
                     "type": "item",
                     "weight": 4,
-                    "name": "minecraft:enchanted_book",
+                    "name": "pedestals:bookarea",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{StoredEnchantments: [{lvl:5s, id: \"pedestals:upgradearea\"}]}"
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgradearea\"}]}"
                         }
                     ]
                 },
                 {
                     "type": "item",
                     "weight": 4,
-                    "name": "minecraft:enchanted_book",
+                    "name": "pedestals:bookrange",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{StoredEnchantments: [{lvl:5s, id: \"pedestals:upgraderange\"}]}"
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgraderange\"}]}"
                         }
                     ]
                 },
                 {
                     "type": "item",
-                    "weight": 4,
-                    "name": "minecraft:enchanted_book",
+                    "weight": 6,
+                    "name": "pedestals:bookspeed",
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{StoredEnchantments: [{lvl:5s, id: \"pedestals:upgradespeed\"}]}"
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgradespeed\"}]}"
                         }
                     ]
                 },
