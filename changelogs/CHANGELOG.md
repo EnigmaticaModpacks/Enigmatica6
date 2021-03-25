@@ -9,7 +9,7 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Bug Fixes**
 
--
+-   Reverted Curios changes. Everything is pretty much as it was in 0.4.3
 
 ### Enigmatica 6 v0.4.5
 
