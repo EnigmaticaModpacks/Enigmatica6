@@ -22,10 +22,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:stone",
-        "mutationOutput": "emendatusenigmatica:lapis_ore",
-        "mutationType": "BLOCK_TO_BLOCK",
-        "mutationCount": 1
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:lapis_ore", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

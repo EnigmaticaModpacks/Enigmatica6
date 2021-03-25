@@ -21,9 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "minecraft:gravel",
-        "mutationOutput": "minecraft:sand",
-        "mutationType": "BLOCK_TO_BLOCK"
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:gravel",
+            "outputs": [
+              {"outputID": "minecraft:sand", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

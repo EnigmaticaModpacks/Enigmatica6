@@ -21,10 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "minecraft:lava",
-        "mutationOutput": "minecraft:obsidian",
-        "mutationType": "FLUID_TO_BLOCK",
-        "mutationCount": 20
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:lava",
+            "outputs": [
+              {"outputID": "minecraft:obsidian", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

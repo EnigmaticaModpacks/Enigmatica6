@@ -21,10 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:storage_blocks/diamond",
-        "mutationOutput": "emendatusenigmatica:brass_block",
-        "mutationType": "BLOCK_TO_BLOCK",
-        "mutationCount": 1
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:storage_blocks/diamond",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:brass_block", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
