@@ -21,10 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:storage_blocks/gold",
-        "mutationOutput": "emendatusenigmatica:lumium_block",
-        "mutationType": "BLOCK_TO_BLOCK",
-        "mutationCount": 1
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:storage_blocks/gold",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:lumium_block", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

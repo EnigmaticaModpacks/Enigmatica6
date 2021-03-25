@@ -21,9 +21,15 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "entity:resourcefulbees:creeper_bee",
-        "mutationOutput": "entity:resourcefulbees:ghast_bee",
-        "mutationType": "ENTITY_TO_ENTITY"
+        "mutations" : [
+          {
+            "type": "ENTITY",
+            "inputID": "entity:resourcefulbees:creeper_bee",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:ghast_bee", "weight": 10}
+            ]
+          }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

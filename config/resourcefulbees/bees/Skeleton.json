@@ -21,10 +21,13 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutationInput": "tag:forge:stone",
-        "mutationOutput": "minecraft:bone_block",
-        "mutationType": "BLOCK_TO_BLOCK",
-        "mutationCount": 1
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "minecraft:bone_block", "weight": 10 }]
+            }
+        ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,

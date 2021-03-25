@@ -114,6 +114,7 @@ events.listen('recipes', (event) => {
         'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
+        'morevanillalib:obsidian',
 
         'pedestals:pedestal_cobblegen/blackstone',
         'pitg:green_dye',
@@ -153,7 +154,8 @@ events.listen('recipes', (event) => {
     var regexIdRemovals = [
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
-        /create:\w+\/bread/
+        /create:\w+\/bread/,
+        /byg:\w*red_rock_\w+_from_\w*stonecutting/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -236,6 +238,15 @@ events.listen('recipes', (event) => {
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
+    });
+
+    stonecuttables.forEach((stoneType) => {
+        stoneType.stones.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone });
+        });
+        stoneType.onlyAsOutput.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone });
+        });
     });
 
     event.remove({
