@@ -3,9 +3,8 @@
 	group: "0856CF7F5CBEB20A",
 	order_index: 4,
 	filename: "pedestals",
-	title: "Pedestals [WIP]",
+	title: "Pedestals",
 	icon: "pedestals:pedestal/stone333",
-	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
@@ -17,7 +16,7 @@
 			description: [
 				"Pedestals look pretty and do a great job of showing off collector’s pieces, but they can do so much more. Through a series of augments, upgrades, and enchantments, they can perform a number of useful tasks throughout your base and look good doing it.",
 				"",
-				"We’ll be covering a selection of useful functionality that you can deploy throughout your base, but if you want to learn even more than these quests, JEI, or the in-game manual can teach you, the Pedestals developer has a great wiki (with a link to YouTube) covering many details of the mod:",
+				"We’ll be covering a selection of useful functionality that you can deploy throughout your base, but if you want to learn even more than these quests, JEI, or the in-game manual can teach you, the Pedestals developer has a wiki (with a link to YouTube) covering many details of the mod:",
 				"",
 				"https://github.com/Mowmaster/Pedestals/wiki",
 				"",
@@ -39,16 +38,42 @@
 			}]
 		},
 		{
+			title: "Pedestal Aesthetics",
 			x: 0.0d,
 			y: -7.0d,
-			description: ["The Color Pallet can be used to customize the color of your Pedestals. Throw the pallet on the ground with up to 3 each of Red, Green, and/or Blue dye, and right click it with your Linking tool to set its color. You can then right-click pedestals with it to paint them."],
+			subtitle: "Aesthetics or Organization - You Decide",
+			description: [
+				"The Color Pallet can be used to customize the color of your Pedestals. Throw the pallet on the ground with up to 3 each of Red, Green, and/or Blue dye, and right click it with your Linking tool to set its color. You can then right-click pedestals with it to paint them. The pedestal will retain its color if you break it.",
+				"",
+				"Pedestals can be lit up by right-clicking them with a glowstone block. They can also be water-logged by shift-right-clicking them with a bucket of water."
+			],
 			dependencies: ["1F68F65F2A0E3229"],
 			id: "215EA91229D2CB56",
 			tasks: [{
 				id: "0399E51C27863913",
 				type: "item",
 				item: "pedestals:itemcolorpalletdefault"
-			}]
+			}],
+			rewards: [
+				{
+					id: "098E3EA6ABFDA468",
+					type: "item",
+					item: "minecraft:red_dye",
+					count: 16
+				},
+				{
+					id: "79F92867195F75CE",
+					type: "item",
+					item: "minecraft:green_dye",
+					count: 16
+				},
+				{
+					id: "1EECE18CC58046AC",
+					type: "item",
+					item: "minecraft:blue_dye",
+					count: 16
+				}
+			]
 		},
 		{
 			title: "Item Transfer",
@@ -56,6 +81,7 @@
 			x: -0.75d,
 			y: 4.5d,
 			shape: "rsquare",
+			subtitle: "Enabling Enhanced Logistics",
 			description: ["Being able to move items from pedestal to pedestal is great, but being able to interact with inventories is even better. The Import and Export augments allow you to do just that. Import will pull from an inventory below the pedestal into the its display slot, while Export will push items from the display slot into the inventory below."],
 			dependencies: ["5519E152C45C620F"],
 			size: 1.5d,
@@ -64,14 +90,24 @@
 				{
 					id: "7BC584C4EB7CA040",
 					type: "item",
+					title: "Item Import Upgrade",
 					item: "pedestals:coin/import"
 				},
 				{
 					id: "6B60E2AD9BD1B2FD",
 					type: "item",
+					title: "Item Export Upgrade",
 					item: "pedestals:coin/export"
 				}
-			]
+			],
+			rewards: [{
+				id: "2D03153B0921EA16",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Advanced Enchantment",
@@ -80,7 +116,7 @@
 			description: [
 				"The Advanced enchantment allows upgrades that manipulate an inventory below the pedestal to interact with the inventories of entities. This can, for example, be used to import items from or export items to mobs using the appropriate upgrades.",
 				"",
-				"The Advanced enchantment requires an enchanting level of 92; because of this it will need a modded anchanting method such as the XP Enchanter upgrade."
+				"The Advanced enchantment requires an enchanting level of 92; because of this it will need a modded enchanting method such as the XP Enchanter upgrade."
 			],
 			dependencies: ["1D239668DA764C52"],
 			id: "3D505992F1F47451",
@@ -88,18 +124,28 @@
 				id: "2E490DE57B21553B",
 				type: "item",
 				item: "pedestals:bookadvanced"
+			}],
+			rewards: [{
+				id: "6C75052583A613E3",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
 			title: "Pedestal Filters",
 			x: -2.5d,
 			y: -2.5d,
+			subtitle: "For Discriminating Consumers",
 			description: ["Pedestal Filters can be crafted with many of the upgrades available, offering control of what the upgrade will operate on. There are both whitelist and blacklist options, and for those filters that need input (like the Item filters) they will read the inventory below the pedestal."],
 			dependencies: ["5519E152C45C620F"],
 			id: "3B1E29F56796E3CB",
 			tasks: [{
 				id: "6DB2626B9071D2F8",
 				type: "item",
+				title: "Filters",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -184,16 +230,25 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "75C154C379370AA9",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			title: "Mob Farming",
 			x: -3.5d,
 			y: 7.5d,
+			subtitle: "Turning Skeletons into Bone Meal",
 			description: [
 				"Pedestals provides a number of upgrades to help you build a mob farm. Combine them with an XP magnet upgrade to finish your mob farm off. There are also other potential uses for the various upgrades - most notably the Magnet upgrade.",
 				"",
-				"The Auto Attacker upgrade will attack entities within its range, dealing a default damage of 2. This damage can be upgraded via the Pedestal Capacity enchantment. You can also add a sword to the pedestal, increasing its damage output and conferring any vanilla damage enchantments to the pedestal.",
+				"The Auto Attacker upgrade will attack entities within its range, dealing a default damage of 2. This damage can be upgraded via the Pedestal Capacity enchantment. You can also add a sword to the pedestal using the Tool Swapper, increasing its damage output and conferring any vanilla damage enchantments to the pedestal.",
 				"",
 				"The Fan upgrade will push entities away from the top of the pedestal, to the end of its area. Pedestal Range enchantments will increase the push height, while Pedestal Capacity will increase the AOE. Pedestal Speed enchants will increase its push speed. Crouching will negate the pushing effect.",
 				"",
@@ -206,19 +261,30 @@
 				{
 					id: "2C00694467D9F744",
 					type: "item",
+					title: "Auto-Attacker Upgrade",
 					item: "pedestals:coin/attack"
 				},
 				{
 					id: "778B44D0C706315F",
 					type: "item",
+					title: "Mob Fan Upgrade",
 					item: "pedestals:coin/fan"
 				},
 				{
 					id: "517ED5A445756751",
 					type: "item",
+					title: "Item Magnet Upgrade",
 					item: "pedestals:coin/magnet"
 				}
-			]
+			],
+			rewards: [{
+				id: "285E5CC316FD0399",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			title: "Cobble Generator",
@@ -236,11 +302,13 @@
 			tasks: [{
 				id: "1FC88CE0C0CAF005",
 				type: "item",
+				title: "Cobble Gen Upgrade",
 				item: "pedestals:coin/cobble"
 			}],
 			rewards: [{
 				id: "524510595571DB0F",
 				type: "item",
+				title: "Silk Touch",
 				item: {
 					id: "minecraft:enchanted_book",
 					Count: 1b,
@@ -257,6 +325,7 @@
 			title: "Entity Filters",
 			x: -2.5d,
 			y: 7.5d,
+			subtitle: "Please Don't Hit Me",
 			description: [
 				"Entity Filters can be used to control what entities the Auto Attacker, Fan, and Potion Diffuser upgrades interact with. Filtering these upgrades is as easy as putting a specific block underneath the pedestal. The type of block determines the filter:",
 				"",
@@ -274,6 +343,7 @@
 			tasks: [{
 				id: "2FEB4963910F1366",
 				type: "item",
+				title: "Entity Filters",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -310,6 +380,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0513EB136510EFC4",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
 			}]
 		},
 		{
@@ -334,6 +412,7 @@
 			tasks: [{
 				id: "7D5E20C46615FE41",
 				type: "item",
+				title: "Farming Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -362,33 +441,74 @@
 						]
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "06E7A9FE610657CD",
+					type: "item",
+					item: "farmersdelight:rich_soil_farmland",
+					count: 24
+				},
+				{
+					id: "10C04CD16CCFB794",
+					type: "command",
+					title: "Epic Pedestals Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "XP Input",
 			x: 2.25d,
 			y: 4.5d,
 			shape: "rsquare",
+			subtitle: "Wisdom in Upgrade Form",
 			description: [
 				"Pedestals with XP upgrades that are linked together form an XP Network. There are two main upgrades that allow you to add XP to a Pedestals XP Network - The XP Magnet and XP Grindstone.",
 				"",
-				"The XP Magnet upgrade will collect XP orbs from its AOE and store them. It can also draw XP from a player that is on top of it. The Pedestal Speed enchantment will increase the speed at which it draws XP, while the Pedestal Capacity enchant will raise the number of levels it draws at once. The upgrade has a small buffer of 30 levels, so it is best to transfer the levels somewhere else (such as aa pedestal with an XP Tank upgrade).",
+				"The XP Magnet upgrade will collect XP orbs from its AOE and store them. It can also draw XP from a player that is on top of it. The Pedestal Speed enchantment will increase the speed at which it draws XP, while the Pedestal Capacity enchant will raise the number of levels it draws at once. The upgrade has a small buffer of 30 levels, so it is best to transfer the levels somewhere else (such as a pedestal with an XP Tank upgrade).",
 				"",
 				"The XP Grindstone upgrade will draw up items from an inventory below the pedestal, grind off the enchantments, and display the newly unenchanted item. The upgrade will collect XP for the enchantments the items have and store it in its buffer."
 			],
 			dependencies: ["5519E152C45C620F"],
 			size: 1.5d,
 			id: "7A4BFA66CD8E3884",
-			tasks: [
+			tasks: [{
+				id: "4AB13C88D19A545E",
+				type: "item",
+				title: "XP Input",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/xpmagnet",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/xpgrindstone",
+								Count: 1b
+							}
+						]
+					}
+				}
+			}],
+			rewards: [
 				{
-					id: "06A8E34C2DAB9341",
-					type: "item",
-					item: "pedestals:coin/xpmagnet"
+					id: "7B73E2B538C62D25",
+					type: "xp",
+					xp: 100
 				},
 				{
-					id: "353D30A855006CDB",
-					type: "item",
-					item: "pedestals:coin/xpgrindstone"
+					id: "75CCFE4D8F0F7B7A",
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "kubejs:sorcerers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
 				}
 			]
 		},
@@ -405,16 +525,40 @@
 			],
 			dependencies: ["7A4BFA66CD8E3884"],
 			id: "78991F3E1F2CDB09",
-			tasks: [
+			tasks: [{
+				id: "2712FCFCE5FC2D8F",
+				type: "item",
+				title: "XP Output",
+				item: {
+					id: "itemfilters:or",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "pedestals:coin/xpbottler",
+								Count: 1b
+							},
+							{
+								id: "pedestals:coin/xpdropper",
+								Count: 1b
+							}
+						]
+					}
+				}
+			}],
+			rewards: [
 				{
-					id: "3A48A301A7CEE73B",
-					type: "item",
-					item: "pedestals:coin/xpdropper"
+					id: "69463270A467BDE5",
+					type: "command",
+					title: "Epic Pedestals Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+					player_command: false
 				},
 				{
-					id: "32C28F702DFDF8FA",
-					type: "item",
-					item: "pedestals:coin/xpbottler"
+					id: "5D63028F49060803",
+					type: "xp",
+					xp: 100
 				}
 			]
 		},
@@ -432,8 +576,24 @@
 			tasks: [{
 				id: "2885D8E72156A816",
 				type: "item",
+				title: "Enchanter Upgrade",
 				item: "pedestals:coin/xpenchanter"
-			}]
+			}],
+			rewards: [
+				{
+					id: "091142AE33565937",
+					type: "command",
+					title: "Legendary Pedestals Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+					player_command: false
+				},
+				{
+					id: "7E4890853E93CD10",
+					type: "xp",
+					xp: 100
+				}
+			]
 		},
 		{
 			title: "XP Anvil",
@@ -444,9 +604,11 @@
 				"",
 				"Items placed in an inventory below the pedestal will be repaired using XP from the upgrade, similarly to the Mending upgrade. Once they are repaired, the upgrade will check up to 4 surrounding pedestals (one block from the anvil in each cardinal direction) for items to combine with it. It will then move the item to its display, combining with those items if possible. The following conditions apply to combining items:",
 				"",
-				"- A renamed nametag in a surrounding pedestal will be consumed to rename the item.",
-				"- Books or even enchanted items can be placed on the surrouding pedestals, and their enchants will be transferred to the center item.",
-				"- When combining enchantments (Fortune 3 + Fortune 3 -> Fortune 4), if the resulting enchantment will be above the normal vanilla limit diamonds equaling the total of all enchant levels over the vanilla maximum are needed. These should be placed on one of the adjacent pedestals. Failing to supply enough diamonds will result in vanilla enchantment maximums."
+				"● A renamed nametag in a surrounding pedestal will be consumed to rename the item.",
+				"",
+				"● Books or even enchanted items can be placed on the surrounding pedestals, and their enchants will be transferred to the center item.",
+				"",
+				"● When combining enchantments (Fortune 3 + Fortune 3 -> Fortune 4), if the resulting enchantment will be above the normal vanilla limit diamonds equaling the total of all enchant levels over the vanilla maximum are needed. These should be placed on one of the adjacent pedestals. Failing to supply enough diamonds will result in vanilla enchantment maximums."
 			],
 			dependencies: ["7A4BFA66CD8E3884"],
 			min_width: 300,
@@ -454,14 +616,34 @@
 			tasks: [{
 				id: "24EDA20ED95D7ADE",
 				type: "item",
+				title: "XP Anvil Upgrade",
 				item: "pedestals:coin/xpanvil"
-			}]
+			}],
+			rewards: [
+				{
+					id: "71930DA696A6F583",
+					type: "command",
+					title: "Legendary Pedestals Loot Box",
+					icon: "kubejs:legendary_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+					player_command: false
+				},
+				{
+					id: "1D6A6F954563D7B2",
+					type: "command",
+					title: "Sorcerer's Delight",
+					icon: "kubejs:sorcerers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Fluid Transfer",
 			x: 0.75d,
 			y: 4.5d,
 			shape: "rsquare",
+			subtitle: "Getting Upgrades Wet",
 			description: ["Linked Pedestals with Fluid upgrades form a Fluid Network. The Fluid Importer and Exporter upgrades allow you to import and export fluids from inventories below their pedestals."],
 			dependencies: ["5519E152C45C620F"],
 			size: 1.5d,
@@ -470,14 +652,24 @@
 				{
 					id: "4FC68D9410BD5157",
 					type: "item",
+					title: "Fluid Import Upgrade",
 					item: "pedestals:coin/fluidimport"
 				},
 				{
 					id: "1DCE38E92AB8A491",
 					type: "item",
+					title: "Fluid Export Upgrade",
 					item: "pedestals:coin/fluidexport"
 				}
-			]
+			],
+			rewards: [{
+				id: "3BF44DDBB88BEFF0",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Manipulating Fluids In The World",
@@ -490,20 +682,30 @@
 				{
 					id: "03426DC34F589B83",
 					type: "item",
+					title: "Fluid Pump Upgrade",
 					item: "pedestals:coin/fluidpump"
 				},
 				{
 					id: "0D9AE163A1947D45",
 					type: "item",
+					title: "Fluid Drain Upgrade",
 					item: "pedestals:coin/fluiddrain"
 				}
-			]
+			],
+			rewards: [{
+				id: "1DE68B6E8E866DE4",
+				type: "command",
+				title: "Pedestals Legendary Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			title: "Fluid to XP Conversion",
 			x: 5.5d,
 			y: 7.5d,
-			description: ["The Fluid to XP upgrade imports liquid XP from a tank below the pedestal and convert it to XP for the XP network. The exchange rate is... bad... but it's super easy to automate."],
+			description: ["The Fluid to XP upgrade imports liquid XP from a tank below the pedestal and convert it to XP for the XP network. This is very easy to automate, and makes integrating other mob farming tools with Pedestals simple."],
 			dependencies: [
 				"7A4BFA66CD8E3884",
 				"500A2940C0C3AF6C"
@@ -513,14 +715,29 @@
 			tasks: [{
 				id: "6778060035ECD402",
 				type: "item",
+				title: "Fluid to XP Conversion Upgrade",
 				item: "pedestals:coin/fluidxpconverter"
-			}]
+			}],
+			rewards: [
+				{
+					id: "7D69D5766C6797ED",
+					type: "item",
+					item: "pneumaticcraft:memory_essence_bucket",
+					count: 4
+				},
+				{
+					id: "0B8959A9559A7AFF",
+					type: "item",
+					item: "pneumaticcraft:small_tank"
+				}
+			]
 		},
 		{
 			title: "Energy Transfer",
 			x: -2.25d,
 			y: 4.5d,
 			shape: "rsquare",
+			subtitle: "Electrifying",
 			description: [
 				"Pedestals with Energy upgrades form an FE-based energy network. The Energy Importer and Exporter upgrades allow you to move energy into and out of the network from external sources.",
 				"",
@@ -533,14 +750,24 @@
 				{
 					id: "23D0BA532E6FC8AA",
 					type: "item",
+					title: "Energy Import Upgrade",
 					item: "pedestals:coin/rfimport"
 				},
 				{
 					id: "633E32DD1A37DBAC",
 					type: "item",
+					title: "Energy Export Upgrade",
 					item: "pedestals:coin/rfexport"
 				}
-			]
+			],
+			rewards: [{
+				id: "63DF0CF17CEF0500",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
+			}]
 		},
 		{
 			title: "Crusher Upgrade",
@@ -559,6 +786,7 @@
 			tasks: [{
 				id: "2C89A17FEE1D81F5",
 				type: "item",
+				title: "Crusher Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -575,12 +803,21 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "1ED931F1F141D930",
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
 			title: "Smelting Upgrade",
 			x: -5.5d,
 			y: 7.5d,
+			subtitle: "Smokin'",
 			description: [
 				"The Smelting upgrades will perform vanilla smelting recipes on items in the inventory below the pedestal, and display the products. This will also produce XP like a vanilla furnace, dropping the XP orbs on the ground.",
 				"",
@@ -594,6 +831,7 @@
 			tasks: [{
 				id: "213EE2964AAEC897",
 				type: "item",
+				title: "Smelting Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -610,12 +848,21 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "1B04CC06B42A1526",
+				type: "command",
+				title: "Miner's Delight",
+				icon: "kubejs:miners_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				player_command: false
 			}]
 		},
 		{
 			title: "Sawmill Upgrade",
 			x: -4.5d,
 			y: 7.5d,
+			subtitle: "Let's Cut a Log",
 			description: [
 				"The Sawmill upgrades will take wood products from the inventory below, cut them up, and display the products. This is generally used for Log to Plank processing, but there are other useful recipes that can be found in JEI.",
 				"",
@@ -629,6 +876,7 @@
 			tasks: [{
 				id: "375DDC70C36E87DB",
 				type: "item",
+				title: "Sawmill Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -645,7 +893,24 @@
 						]
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "00EB9A9E96BE6AE7",
+					type: "item",
+					item: "minecraft:oak_log",
+					count: 32,
+					random_bonus: 32
+				},
+				{
+					id: "0B94C6A7C119EBF7",
+					type: "command",
+					title: "Rare Pedestals Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Quarry Upgrade",
@@ -654,7 +919,7 @@
 			description: [
 				"The Quarry upgrades will mine blocks around the pedestal. They come in whitelist and blacklist versions - these read the inventories below them to decide what to mine. The upgrade also has a built-in magnet - it will pull in mined products and display them.",
 				"",
-				"The upgrades will mine any blocks in the working area, and the will grab any mined materials like as a Magnet upgrade would and display them. The pedestal can only display one type of item at a time, so make sure to link it to a receiving pedestal to clear the products.",
+				"The upgrades will mine any blocks in the working area, and the will grab any mined materials and display them. The pedestal can only display one type of item at a time, so make sure to link it to a receiving pedestal to clear the products.",
 				"",
 				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action. Pedestal Range and Area enchantments will increase the operating space of the quarry. The upgrade can also be enchanted with vanilla Fortune or Silk Touch, which will effect how blocks are broken.",
 				"",
@@ -667,6 +932,7 @@
 			tasks: [{
 				id: "19FD33FF26CBC42B",
 				type: "item",
+				title: "Quarry Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -691,12 +957,21 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0381C81A23FD888C",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			title: "Animal Harvesting",
 			x: 1.5d,
 			y: 7.5d,
+			subtitle: "Working With Our Animal Friends",
 			description: [
 				"These upgrades will harvest products from animals in a fixed area, placing displaying the products.",
 				"",
@@ -731,7 +1006,24 @@
 						]
 					}
 				}
-			}]
+			}],
+			rewards: [
+				{
+					id: "6B5F421D7DB51A89",
+					type: "item",
+					item: "minecraft:bee_spawn_egg"
+				},
+				{
+					id: "4C89A90467F66E70",
+					type: "item",
+					item: "minecraft:sheep_spawn_egg"
+				},
+				{
+					id: "7EB80E7590BDF726",
+					type: "item",
+					item: "minecraft:cow_spawn_egg"
+				}
+			]
 		},
 		{
 			title: "Crafting Upgrades",
@@ -744,7 +1036,7 @@
 				"",
 				"The Compacting upgrades will look for at least 4 or 9 items in a single slot (2x2 and 3x3 respectively) that can be compacted, and display the resulting item. They will only operate if the display is empty, so you need to make sure to transfer products out of the display.",
 				"",
-				"Pro Tips: You can use any inventory below the pedestal, even droppers and dispensers. Using these gives you a 3x3 inventory, making it easy to lay out a crafting table recipe. Additionally, these crafting upgrades function by continually scanning the inventory for applicable recipes, so the less inventory slots they needs to scan the faster they will operate."
+				"Pro Tips: You can use any inventory below the pedestal, even droppers and dispensers. Using these gives you a 3x3 inventory, making it easy to lay out a crafting table recipe. Additionally, these crafting upgrades function by continually scanning the inventory for applicable recipes, so the fewer inventory slots they needs to scan the faster they will operate."
 			],
 			dependencies: [
 				"04E9F681A7D93BC7",
@@ -757,6 +1049,7 @@
 				{
 					id: "67DB4F5A0E9B46F4",
 					type: "item",
+					title: "Crafting Upgrades",
 					item: {
 						id: "itemfilters:or",
 						Count: 1b,
@@ -801,6 +1094,7 @@
 				{
 					id: "766693A91B7DA1E7",
 					type: "item",
+					title: "Placeholders",
 					item: {
 						id: "itemfilters:or",
 						Count: 1b,
@@ -818,13 +1112,22 @@
 						}
 					}
 				}
-			]
+			],
+			rewards: [{
+				id: "1108A6323A6A28A6",
+				type: "command",
+				title: "Legendary Pedestals Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_legendary",
+				player_command: false
+			}]
 		},
 		{
 			title: "Pedestal Linking",
 			x: 0.0d,
 			y: -2.5d,
 			shape: "diamond",
+			subtitle: "Getting Pedestals Together",
 			description: [
 				"Pedestals can transfer displayed items from one to another by linking them together. They can also transfer fluids, FE, and XP in their upgrades this way.",
 				"",
@@ -875,6 +1178,11 @@
 				id: "6731301F006613B4",
 				type: "item",
 				item: "minecraft:redstone"
+			}],
+			rewards: [{
+				id: "6F7D317666B0957F",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -899,6 +1207,14 @@
 			tasks: [{
 				id: "11352D320468872A",
 				type: "checkmark"
+			}],
+			rewards: [{
+				id: "5555385A057F11AB",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -916,12 +1232,22 @@
 				type: "item",
 				item: "pedestals:coin/default"
 			}],
-			rewards: [{
-				id: "4BB47F1EBB842C15",
-				type: "item",
-				item: "pedestals:coin/default",
-				count: 7
-			}]
+			rewards: [
+				{
+					id: "4BB47F1EBB842C15",
+					type: "item",
+					item: "pedestals:coin/default",
+					count: 7
+				},
+				{
+					id: "0D53E6296F286954",
+					type: "command",
+					title: "Rare Pedestals Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+					player_command: false
+				}
+			]
 		},
 		{
 			x: -3.5d,
@@ -933,6 +1259,11 @@
 				id: "6CF87B9FDBF0F57E",
 				type: "item",
 				item: "pedestals:upgradetool"
+			}],
+			rewards: [{
+				id: "53A40AFDE18FBBEB",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -949,6 +1280,11 @@
 				id: "195F71E5D15D557A",
 				type: "item",
 				item: "pedestals:toolswapper"
+			}],
+			rewards: [{
+				id: "429AB1D13E35C616",
+				type: "xp",
+				xp: 100
 			}]
 		},
 		{
@@ -958,7 +1294,7 @@
 			description: [
 				"Pedestals provides two upgrades that will generate FE - the Energy Generator and Dis Enchantment Generator.",
 				"",
-				"The Energy Generator will burn furnace fuels dropped on the ground to create RF, generating RF every 20 ticks. This energy is stored in the enchantment and is available for the Pedestals Energy Network.",
+				"The Energy Generator will burn furnace fuels dropped on the ground and generate FE every 20 ticks. This energy is stored in the enchantment and is available for the Pedestals Energy Network.",
 				"",
 				"The Dis Enchantment Generator will pick up enchanted items dropped near it (including enchanted books), grind the enchantments off of them, and produce energy from the enchantments. It will display the newly disenchanted item and store the resulting energy for the Pedestals Energy Network."
 			],
@@ -967,6 +1303,7 @@
 			tasks: [{
 				id: "13B8EBFFC9B4CFE1",
 				type: "item",
+				title: "FE Generators",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -983,6 +1320,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "079B55734F05F67A",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
@@ -1001,6 +1346,7 @@
 			tasks: [{
 				id: "6FDAD12F85326869",
 				type: "item",
+				title: "Augments",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1021,18 +1367,27 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "7EF6847AFBA8EF14",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			title: "Enchantment Focus Books",
 			x: 3.5d,
 			y: -2.5d,
-			description: ["It's wonderful that you can enchant your upgrades, but it can be so... random. These books allow you to ensure you get the particular enchant you need. Keep in mind that you cannot combine these with an upgrade in a vanilla anvil - you MUST use the XP Anvil from Pedestals."],
+			description: ["It's wonderful that you can enchant your upgrades, but that can be so... random. These books allow you to ensure you get the particular enchant you need. Keep in mind that you cannot combine these with an upgrade in a vanilla anvil - you MUST use the XP Anvil from Pedestals."],
 			dependencies: ["305B5A8507D4567A"],
 			id: "1D239668DA764C52",
 			tasks: [{
 				id: "41ED7B173A272114",
 				type: "item",
+				title: "Enchantment Focus Books",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1057,18 +1412,31 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0D33D903DE919312",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		},
 		{
 			title: "Relays",
 			x: -1.5d,
 			y: 0.0d,
-			description: ["Moving items around with Pedestals is as simple as linking them, but pedestals without upgrades are not part of the Pedestal network for Fluid, XP, or FE. Relay upgrades allow you to add pedestals to their respective networks, while having significantly smaller buffers than tanks. They also have Blocked versions that will prevent the passage of items - this is very hand for ensuring items aren't accidentally moved where you aren't expecting."],
+			description: [
+				"Moving items around with Pedestals is as simple as linking them, but pedestals without upgrades are not part of the Pedestal network for Fluid, XP, or FE.",
+				"",
+				"Relay upgrades allow you to add pedestals to their respective networks, while having significantly smaller buffers than tanks. They also have Blocked versions that will prevent the passage of items - this is very handy for ensuring items aren't accidentally moved where you aren't expecting."
+			],
 			dependencies: ["5519E152C45C620F"],
 			id: "196FD7272F86F936",
 			tasks: [{
 				id: "7AB8C73E5215ED39",
 				type: "item",
+				title: "Relays",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1101,18 +1469,32 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "34316DE310845284",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
 			title: "Storage Tanks",
 			x: 1.5d,
 			y: 0.0d,
-			description: ["Sometimes you want to store lots of stuff, and Pedestals has your back. These upgrades will enhance your ability to hoard large volumes of everything, and act as buffers in your Pedestals networks."],
+			subtitle: "Aesthetic Hoarding",
+			description: [
+				"Sometimes you want to store lots of stuff, and Pedestals has your back. These upgrades will enhance your ability to hoard large volumes of everything, and act as buffers in your Pedestals networks.",
+				"",
+				"Capacity Enchantments greatly increase the capacity of these tanks, making them some of the highest density storage available."
+			],
 			dependencies: ["5519E152C45C620F"],
 			id: "002E681F34281A6B",
 			tasks: [{
 				id: "22221D08292F3871",
 				type: "item",
+				title: "Tank Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1137,6 +1519,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "157D6C650B8AFA14",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1146,12 +1536,17 @@
 				"Pedestal Upgrades can be enchanted; they can take vanilla enchants like Fortune and Silk Touch, but the mod also has five enchantments specific to it:",
 				"",
 				"Capacity - In general this will increase the amount of stuff the upgrade can store. A typical progression of item storage would be 4/8/16/32/64 for levels 1-5.",
-				"Range - Typically Range enchantments will how far away from the pedestal the upgrade operates.",
+				"",
+				"Range - Typically Range enchantments will influence how far away from the pedestal the upgrade operates.",
+				"",
 				"Speed - This will increase the operating speed of upgrades from 2-20x. The resulting speed will depend on the upgrade.",
+				"",
 				"Area - Area enchants will generally increase the cube area that the upgrade works on.",
+				"",
 				"Advanced - This allows the upgrade to interact with entities, and is detailed in its own quest."
 			],
 			dependencies: ["5519E152C45C620F"],
+			min_width: 300,
 			id: "305B5A8507D4567A",
 			tasks: [{
 				id: "6BA98FE9D6ED9FA9",
@@ -1167,6 +1562,14 @@
 						}]
 					}
 				}
+			}],
+			rewards: [{
+				id: "0EF443D327EE222B",
+				type: "command",
+				title: "Rare Pedestals Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_rare",
+				player_command: false
 			}]
 		},
 		{
@@ -1180,13 +1583,16 @@
 				"",
 				"The Placer upgrade will place items from the display below the pedestal. Range enchantments will modify how far away the item is placed.",
 				"",
-				"The Breaker upgrade will break blocks below the pedestal and display the result. Range enchantments will modify how far away from the pedestal the block that is broken is. A pickaxe can be placed in the pedestal - the upgrade will use this to break the blocks, conferring its Silk Touch or Fortune enchants on the upgrade."
+				"The Breaker upgrade will break blocks below the pedestal and display the result. Range enchantments will modify how far away from the pedestal the block that is broken is.",
+				"",
+				"A pickaxe can be placed in the pedestal with the Tool Swapper - the upgrade will use this to break the blocks, conferring its Silk Touch or Fortune enchants on the upgrade."
 			],
 			dependencies: ["04E9F681A7D93BC7"],
 			id: "189DF6D6ECA2E3D8",
 			tasks: [{
 				id: "1371F2CF8EE10097",
 				type: "item",
+				title: "Block Manipulation Upgrades",
 				item: {
 					id: "itemfilters:or",
 					Count: 1b,
@@ -1207,6 +1613,14 @@
 						]
 					}
 				}
+			}],
+			rewards: [{
+				id: "2959BEBA6F82546F",
+				type: "command",
+				title: "Epic Pedestals Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_pedestals_loot_epic",
+				player_command: false
 			}]
 		}
 	]

@@ -1,28 +1,39 @@
+### Enigmatica 6 v0.4.6
+
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_
+
+**Improvements/Changes**
+
+-   AlexsMobs: Cave Centipedes no longer naturally spawn.
+    -   Their spawn eggs can be purchased from the Market
+
+**Bug Fixes**
+
+-   Reverted Curios changes. Everything is pretty much as it was in 0.4.3
+
 ### Enigmatica 6 v0.4.5
 
 _Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.5.md)_
 
-**Use the command `/curios reset [playername]` to gain access to the new Goggle slot.** (We're aware of the weird armor stand slots, no need to report that :P)
+**Remove all Curios and then use the command `/curios reset [playername]` to gain access to the new Goggle slot.** (We're aware of the weird armor stand slots, no need to report that :P)
 
 **Improvements/Changes**
 
-- Add byg stones to the stonecutter tweaks [\#1768](https://github.com/NillerMedDild/Enigmatica6/pull/1768) ([Rodg88](https://github.com/Rodg88))
-- Add PNC essence compat to Pedestals and increase conversion rates [\#1777](https://github.com/NillerMedDild/Enigmatica6/pull/1777) ([MuteTiefling](https://github.com/MuteTiefling))
-- Change many recipes to allow any forge:stone input instead of only vanilla "stone" [\#1770](https://github.com/NillerMedDild/Enigmatica6/issues/1770)
-- Igneous Extruder Compat [\#1781](https://github.com/NillerMedDild/Enigmatica6/issues/1781)
+-   Add byg stones to the stonecutter tweaks [\#1768](https://github.com/NillerMedDild/Enigmatica6/pull/1768) ([Rodg88](https://github.com/Rodg88))
+-   Add PNC essence compat to Pedestals and increase conversion rates [\#1777](https://github.com/NillerMedDild/Enigmatica6/pull/1777) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Change many recipes to allow any forge:stone input instead of only vanilla "stone" [\#1770](https://github.com/NillerMedDild/Enigmatica6/issues/1770)
+-   Igneous Extruder Compat [\#1781](https://github.com/NillerMedDild/Enigmatica6/issues/1781)
 
 **Bug Fixes**
 
--   Amber ore from Better end  [\#1772](https://github.com/NillerMedDild/Enigmatica6/issues/1772)
+-   Amber ore from Better end [\#1772](https://github.com/NillerMedDild/Enigmatica6/issues/1772)
 -   \[0.4.3\] create-client.toml in use by another process [\#1775](https://github.com/NillerMedDild/Enigmatica6/issues/1775)
--   \[0.4.3\] Missing crafting recipes on ranked Botania Terra Shatterer  [\#1773](https://github.com/NillerMedDild/Enigmatica6/issues/1773)
+-   \[0.4.3\] Missing crafting recipes on ranked Botania Terra Shatterer [\#1773](https://github.com/NillerMedDild/Enigmatica6/issues/1773)
 -   \[0.4.4\] Goggle Curio Slot Not Present on Curio Reset Command [\#1779](https://github.com/NillerMedDild/Enigmatica6/issues/1779)
 -   Crafting from JEI with Refined Storage provides blank output [\#798](https://github.com/NillerMedDild/Enigmatica6/issues/798)
 -   Minor mold/die unification fixes [\#1776](https://github.com/NillerMedDild/Enigmatica6/pull/1776) ([ochotonida](https://github.com/ochotonida))
 -   Really remove Powah's starter blocks [\#1765](https://github.com/NillerMedDild/Enigmatica6/pull/1765) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Updated BYG to fix a crash
-
-
 
 ### Enigmatica 6 v0.4.4
 

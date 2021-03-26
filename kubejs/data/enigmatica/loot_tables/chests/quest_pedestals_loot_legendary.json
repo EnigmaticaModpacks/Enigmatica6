@@ -1,0 +1,62 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookcapacity",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgradearea\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookarea",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgradearea\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookrange",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgraderange\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "name": "pedestals:bookspeed",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:5s, id: \"pedestals:upgradespeed\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "pedestals:upgraderange"
+                }
+            ]
+        }
+    ]
+}

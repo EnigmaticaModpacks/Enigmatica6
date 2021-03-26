@@ -15,6 +15,15 @@
 	#Should items inside the tag 'farmersdelight:comfort_foods' grant 5 minutes of Comfort when eaten? (defaults to vanilla SoupItems)
 	comfortFoodTagEffect = true
 
+	#Stack size overrides
+	[overrides.stack_size]
+		#Should SoupItems in the following list become stackable to 16, much like Farmer's Delight's meals?
+		enableStackableSoupItems = true
+		#List of SoupItems. Default: vanilla soups and stews.
+		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
+		#Toggle this setting to instead make ALL SoupItems stackable, except the ones on the list (deny-list). This affects items from other mods, so be careful!
+		overrideAllSoupItems = false
+
 #World generation
 [world]
 	#Generate crop items on Village houses (all biomes)

@@ -64,6 +64,10 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['#forge:dusts/refined_obsidian', '#forge:ingots/osmium'],
                 outputs: [Item.of('mekanism:ingot_refined_obsidian')]
+            },
+            {
+                inputs: ['byg:quartzite_sand'],
+                outputs: [Item.of('minecraft:quartz'), Item.of('thermal:slag')]
             }
         ]
     };

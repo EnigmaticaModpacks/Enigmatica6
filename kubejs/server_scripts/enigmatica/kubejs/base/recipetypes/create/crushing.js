@@ -22,11 +22,12 @@ events.listen('recipes', (event) => {
                 input: '#forge:storage_blocks/aurora'
             },
             {
-                outputs: [
-                    Item.of('byg:quartzite_sand', 2),
-                    Item.of('byg:quartzite_sand').withChance(0.5)
-                ],
+                outputs: [Item.of('byg:quartzite_sand', 2), Item.of('byg:quartzite_sand').withChance(0.5)],
                 input: 'byg:raw_quartz_block'
+            },
+            {
+                outputs: [Item.of('minecraft:sand'), Item.of('minecraft:quartz').withChance(0.1)],
+                input: 'byg:quartzite_sand'
             }
         ]
     };

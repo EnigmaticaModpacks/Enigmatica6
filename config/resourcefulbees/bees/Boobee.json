@@ -21,23 +21,29 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:netherrack",
-            "outputs": [
-              {"outputID": "minecraft:tnt", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:netherrack",
+                "outputs": [{ "outputID": "minecraft:tnt", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
+
         "mainOutput": "minecraft:ghast_tear",
-        "secondaryOutput": "minecraft:spectral_arrow",
-        "bottleOutput": "farmersdelight:milk_bottle",
         "mainOutputWeight": 0.15,
         "mainOutputCount": 2,
+
+        "secondaryOutput": "minecraft:spectral_arrow",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "farmersdelight:milk_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
         "mainInputCount": 1
     },
     "SpawnData": {
