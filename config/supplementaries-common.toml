@@ -114,6 +114,13 @@
 		#Range: 0 ~ 64
 		max = 9
 
+	[spawns.structures]
+		#enable experimental road sign structures. This will likely change in the nar future
+		experimental_road_signs = true
+		#the higher this number is the less sign posts you'll find
+		#Range: 1 ~ 2000
+		rarity = 80
+
 #entities parameters
 [entities]
 
