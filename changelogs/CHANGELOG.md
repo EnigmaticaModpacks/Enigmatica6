@@ -1,14 +1,14 @@
-### Enigmatica 6 v0.4.6
+### Enigmatica 6 v0.4.7 (+0.4.6)
 
-_Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.6](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_ | _[Mod Updates 0.4.7](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.7.md)_
 
 **Known issues**
 
-- Several Atmospheric biomes may change when updating from 0.4.3 to anything above. We have been unable to fix this issue unfortunately.
+-   Several Atmospheric biomes may change when updating from 0.4.3 to anything above. We have been unable to fix this issue unfortunately.
 
 **New Mods**
 
-- [Lazy DataFixerUpper(LazyDFU) [FORGE]](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge)
+-   [Lazy DataFixerUpper(LazyDFU) [FORGE]](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge)
 
 **Improvements/Changes**
 
@@ -20,6 +20,7 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Bug Fixes**
 
+-   \[0.4.6\] Crash on world load [\#1821](https://github.com/NillerMedDild/Enigmatica6/issues/1821)
 -   Reverted Curios changes. Everything is pretty much as it was in 0.4.3
 -   \[0.4.5\] Missing Sugar Crushing recipes [\#1807](https://github.com/NillerMedDild/Enigmatica6/issues/1807)
 -   \[0.4.5\] Server crash when upgrading Dank [\#1806](https://github.com/NillerMedDild/Enigmatica6/issues/1806)
