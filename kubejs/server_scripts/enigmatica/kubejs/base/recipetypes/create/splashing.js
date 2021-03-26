@@ -61,10 +61,7 @@ events.listen('recipes', (event) => {
                 input: 'minecraft:iron_trapdoor'
             },
             {
-                outputs: [
-                    Item.of('minecraft:quartz').withChance(0.25),
-                    Item.of('minecraft:redstone_dust').withChance(0.05)
-                ],
+                outputs: [Item.of('minecraft:quartz').withChance(0.25), Item.of('minecraft:redstone').withChance(0.05)],
                 input: 'byg:quartzite_sand'
             }
         ],
