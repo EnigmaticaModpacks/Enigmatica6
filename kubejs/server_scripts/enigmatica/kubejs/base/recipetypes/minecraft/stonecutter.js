@@ -1,20 +1,22 @@
 events.listen('recipes', (event) => {
     // Conversion between different storage_blocks of the same material
     var conversionTypes = ['storage_blocks', 'ores'];
-    conversionTypes.forEach(function (type) {
-        materialsToUnify.forEach(function (material) {
-            let storage_block_tag = Ingredient.of('#forge:' + type + '/' + material);
-            if (storage_block_tag.stacks.size() > 1) {
-                storage_block_tag.stacks.forEach(function (storage_block) {
-                    event.recipes.minecraft.stonecutting({
-                        type: 'minecraft:stonecutting',
-                        ingredient: {
-                            tag: 'forge:' + type + '/' + material
-                        },
-                        result: storage_block.id,
-                        count: 1
+    conversionTypes.forEach((type) => {
+        materialsToUnify.forEach((material) => {
+            if (!entryIsBlacklisted(material, type)) {
+                let tag = Ingredient.of('#forge:' + type + '/' + material);
+                if (tag.stacks.size() > 1) {
+                    tag.stacks.forEach((block) => {
+                        event.recipes.minecraft.stonecutting({
+                            type: 'minecraft:stonecutting',
+                            ingredient: {
+                                tag: 'forge:' + type + '/' + material
+                            },
+                            result: block.id,
+                            count: 1
+                        });
                     });
-                });
+                }
             }
         });
     });
