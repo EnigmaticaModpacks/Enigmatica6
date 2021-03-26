@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.4.6 Modlist
+## Enigmatica 6 - 0.4.7 Modlist
 - abnormals_core-1.16.5-3.1.1
 - abnormals_delight-1.16.5-1.1.0
 - additional_lights-1.16.4-2.1.3
@@ -112,7 +112,7 @@
 - FpsReducer-mc1.16.4-1.18
 - framedcompactdrawers-1.16-2.2.0
 - ftb-backups-2.1.1.6
-- ftb-chunks-1605.2.4-dev.8
+- ftb-chunks-1605.2.3-build.75
 - ftb-essentials-1604.1.0.13
 - ftb-gui-library-1605.2.1.41-forge
 - ftb-quests-1605.2.1-build.39-forge
