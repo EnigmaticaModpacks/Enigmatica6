@@ -34,6 +34,7 @@ const disabledItems = [
 
     // 'bountifulbaubles:potion_wormhole',
     'blockcarpentry:frame_chest',
+    'blockcarpentry:illusion_chest',
 
     'byg:ametrine_block',
     'byg:ametrine_boots',
