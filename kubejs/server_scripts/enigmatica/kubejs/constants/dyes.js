@@ -1170,6 +1170,13 @@ const dyeSources = [
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:white_dye',
         tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'byg:oddity_bush',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_gray_udye'
     }
 ];
 
