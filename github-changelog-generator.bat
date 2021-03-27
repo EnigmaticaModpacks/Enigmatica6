@@ -1,1 +1,1 @@
-github_changelog_generator --since-tag 0.4.3
+github_changelog_generator --since-tag 0.4.6
