@@ -2043,6 +2043,12 @@ const cropRegistry = [
                 plantSecondary: 'betterendforge:glowing_pillar_seed',
                 plantSecondaryRate: 'high',
                 substrate: 'amber_moss'
+            },
+            {
+                seed: 'byg:oddity_bush',
+                render: 'byg:oddity_bush',
+                plant: 'byg:oddity_bush',
+                substrate: 'end_stone'
             }
         ]
     },
