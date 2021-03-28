@@ -1807,6 +1807,18 @@ const cropRegistry = [
                 render: 'byg:reeds',
                 plant: 'byg:reeds',
                 substrate: 'water'
+            },
+            {
+                seed: 'projectvibrantjourneys:cattail',
+                render: 'projectvibrantjourneys:cattail',
+                plant: 'projectvibrantjourneys:cattail',
+                substrate: 'water'
+            },
+            {
+                seed: 'projectvibrantjourneys:sea_oats',
+                render: 'projectvibrantjourneys:sea_oats',
+                plant: 'projectvibrantjourneys:sea_oats',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1984,6 +1996,12 @@ const cropRegistry = [
                 render: 'minecraft:sea_pickle',
                 plant: 'minecraft:sea_pickle',
                 substrate: 'water'
+            },
+            {
+                seed: 'projectvibrantjourneys:bark_mushroom',
+                render: 'projectvibrantjourneys:bark_mushroom',
+                plant: 'projectvibrantjourneys:bark_mushroom',
+                substrate: 'mushroom'
             }
         ]
     },
@@ -2049,6 +2067,18 @@ const cropRegistry = [
                 render: 'byg:oddity_bush',
                 plant: 'byg:oddity_bush',
                 substrate: 'end_stone'
+            },
+            {
+                seed: 'projectvibrantjourneys:warped_nettle',
+                render: 'projectvibrantjourneys:warped_nettle',
+                plant: 'projectvibrantjourneys:warped_nettle',
+                substrate: 'warped_nylium'
+            },
+            {
+                seed: 'projectvibrantjourneys:crimson_nettle',
+                render: 'projectvibrantjourneys:crimson_nettle',
+                plant: 'projectvibrantjourneys:crimson_nettle',
+                substrate: 'crimson_nylium'
             }
         ]
     },
@@ -2194,6 +2224,12 @@ const cropRegistry = [
                 seed: 'atmospheric:passion_vine',
                 render: 'atmospheric:passion_vine',
                 plant: 'atmospheric:passion_vine',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'byg:imparius_vine',
+                render: 'byg:imparius_vine',
+                plant: 'byg:imparius_vine',
                 substrate: 'dirt'
             }
         ]
