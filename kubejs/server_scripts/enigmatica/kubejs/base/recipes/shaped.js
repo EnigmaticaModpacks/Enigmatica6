@@ -44,9 +44,6 @@ events.listen('recipes', (event) => {
             B: '#forge:grain',
             C: 'aquaculture:fish_fillet_cooked'
         }),
-        shapedRecipe('minecraft:furnace', ['LLL', 'L L', 'LLL'], {
-            L: '#forge:stone'
-        }),
         shapedRecipe('minecraft:tube_coral_block', ['AA', 'AA'], {
             A: 'minecraft:tube_coral_fan'
         }),
