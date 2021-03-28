@@ -1176,7 +1176,7 @@ const dyeSources = [
         type: 'small',
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:light_blue_dye',
-        tertiary: 'minecraft:light_gray_udye'
+        tertiary: 'minecraft:light_gray_dye'
     }
 ];
 
