@@ -484,6 +484,20 @@ events.listen('recipes', (event) => {
         shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
             A: 'additional_lights:fire_for_standing_torch_s',
             B: '#forge:rods/wooden'
+        }),
+
+        shapedRecipe(Item.of('projectvibrantjourneys:bones', 8), ['AAA', 'A A', 'AAA'], {
+            A: 'minecraft:bone'
+        }),
+
+        shapedRecipe(Item.of('projectvibrantjourneys:charred_bones', 8), ['AAA', 'ABA', 'AAA'], {
+            A: 'minecraft:bone',
+            B: 'minecraft:charcoal'
+        }),
+
+        shapedRecipe(Item.of('projectvibrantjourneys:seashells', 8), ['AAA', 'ABA', 'AAA'], {
+            A: 'minecraft:prismarine_shard',
+            B: 'minecraft:nautilus_shell'
         })
     ];
 

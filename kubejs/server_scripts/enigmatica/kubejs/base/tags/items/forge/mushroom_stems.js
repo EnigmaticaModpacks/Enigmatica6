@@ -5,6 +5,8 @@ events.listen('item.tags', (event) => {
         'byg:red_glowshroom_stem',
         'byg:brown_mushroom_stem',
         'byg:white_mushroom_stem',
+        'byg:imparius_stem',
+        'byg:fungal_imparius_stem',
         'quark:glowshroom_stem',
         'undergarden:veil_mushroom_stalk',
         'undergarden:blood_mushroom_stalk',

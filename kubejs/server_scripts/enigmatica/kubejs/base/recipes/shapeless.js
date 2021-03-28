@@ -246,6 +246,50 @@ events.listen('recipes', (event) => {
         {
             output: 'minecraft:quartz',
             inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:twigs', 4),
+            inputs: ['#minecraft:leaves', '#forge:shears']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:pinecones', 6),
+            inputs: [
+                '#minecraft:leaves/coniferous',
+                '#minecraft:leaves/coniferous',
+                '#minecraft:leaves/coniferous',
+                '#forge:shears'
+            ]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:fallen_leaves', 1),
+            inputs: ['quark:oak_leaf_carpet']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:rocks', 4),
+            inputs: ['minecraft:cobblestone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:mossy_rocks', 4),
+            inputs: [
+                'minecraft:mossy_cobblestone',
+                ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']
+            ]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:sandstone_rocks', 4),
+            inputs: ['minecraft:sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:red_sandstone_rocks', 4),
+            inputs: ['minecraft:red_sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:ice_chunks', 4),
+            inputs: ['minecraft:ice', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:glowcap'),
+            inputs: ['minecraft:glowstone_dust', ['minecraft:brown_mushroom', 'minecraft:red_mushroom']]
         }
     ];
 
