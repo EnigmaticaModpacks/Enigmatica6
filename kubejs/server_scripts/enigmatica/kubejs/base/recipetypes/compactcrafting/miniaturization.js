@@ -29,7 +29,7 @@ events.listen('recipes', (event) => {
               }*/
     ];
 
-    data.recipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.custom({
             type: 'compactcrafting:miniaturization',
             version: 1,
