@@ -36,35 +36,4 @@ events.listen('item.tags', (event) => {
     event.add(storageBlocks + '/ender', ['betterendforge:ender_block']);
     event.add(storageBlocks + '/aurora', ['betterendforge:aurora_crystal']);
     event.add(storageBlocks + '/amber', ['betterendforge:amber_block']);
-
-    event
-        .get(storageBlocks + '/gold_bronze')
-        .add('#' + storageBlocks + '/gold')
-        .add('#' + storageBlocks + '/bronze');
-
-    event
-        .get(storageBlocks + '/gold_brass')
-        .add('#' + storageBlocks + '/gold')
-        .add('#' + storageBlocks + '/brass');
-
-    event
-        .get(storageBlocks + '/iron_aluminum')
-        .add('#' + storageBlocks + '/iron')
-        .add('#' + storageBlocks + '/aluminum');
-    event
-        .get(storageBlocks + '/iron_brass')
-        .add('#' + storageBlocks + '/iron')
-        .add('#' + storageBlocks + '/brass');
-    event
-        .get(storageBlocks + '/iron_invar')
-        .add('#' + storageBlocks + '/iron')
-        .add('#' + storageBlocks + '/invar');
-    event
-        .get(storageBlocks + '/iron_lead')
-        .add('#' + storageBlocks + '/iron')
-        .add('#' + storageBlocks + '/lead');
-    event
-        .get(storageBlocks + '/iron_tin')
-        .add('#' + storageBlocks + '/iron')
-        .add('#' + storageBlocks + '/tin');
 });
