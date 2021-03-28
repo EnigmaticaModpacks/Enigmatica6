@@ -96,6 +96,18 @@ events.listen('jei.information', (event) => {
             description: [
                 "Unless you plan on sitting here for a few centuries, filling this tool isn't possible through conventional means. Some say the answer lies in Nucleosynthesis instead."
             ]
+        },
+        {
+            items: ['farmersdelight:brown_mushroom_colony', 'minecraft:brown_mushroom'],
+            description: [
+                'Plant a Brown Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
+            ]
+        },
+        {
+            items: ['farmersdelight:red_mushroom_colony', 'minecraft:red_mushroom'],
+            description: [
+                'Plant a Red Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
+            ]
         }
     ];
 

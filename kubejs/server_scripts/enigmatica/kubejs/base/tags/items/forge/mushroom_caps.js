@@ -8,6 +8,8 @@ events.listen('item.tags', (event) => {
         'byg:black_puff_mushroom_block',
         'byg:green_mushroom_block',
         'byg:sythian_wart_block',
+        'byg:imparius_mushroom_block',
+        'byg:fungal_imparius_block',
         'quark:glowshroom_block',
         'byg:purple_shroomlight',
         'undergarden:blood_mushroom_cap',

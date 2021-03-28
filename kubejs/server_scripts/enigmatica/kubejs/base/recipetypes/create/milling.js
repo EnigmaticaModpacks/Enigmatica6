@@ -63,6 +63,11 @@ events.listen('recipes', (event) => {
                 input: 'byg:quartzite_sand',
                 outputs: ['minecraft:quartz'],
                 processingTime: 50
+            },
+            {
+                input: 'minecraft:ancient_debris',
+                outputs: ['minecraft:netherite_scrap', Item.of('minecraft:ancient_debris', 1).withChance(0.66)],
+                processingTime: 200
             }
         ]
     };
