@@ -155,7 +155,9 @@ events.listen('recipes', (event) => {
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
         /create:\w+\/bread/,
-        /byg:\w*red_rock_\w+_from_\w*stonecutting/
+        /byg:\w*red_rock_\w+_from_\w*stonecutting/,
+        /masonry:\w+wall_from_\w+_stonecutting/,
+        /masonry:\w+slab_from_\w+_stonecutting/
     ];
 
     outputRemovals.forEach((removal) => {
