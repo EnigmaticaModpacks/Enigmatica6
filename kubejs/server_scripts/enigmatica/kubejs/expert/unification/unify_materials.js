@@ -14,7 +14,7 @@ events.listen('recipes', (event) => {
         var wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
 
         gear_unification(event, material, ingot, gem, gear);
-        rod_unification(event, material, ingot, gem, rod);
+        rod_unification(event, material, ingot, gem, rod, plate);
         plate_unification(event, material, ingot, gem, plate);
         wire_unification(event, material, ingot, gem, wire, plate);
     });
@@ -55,7 +55,7 @@ events.listen('recipes', (event) => {
             .id(`kubejs:crafting_shaped_${material}_gear`);
     }
 
-    function rod_unification(event, material, ingot, gem, rod) {
+    function rod_unification(event, material, ingot, gem, rod, plate) {
         if (rod == air) {
             return;
         }
@@ -67,7 +67,9 @@ events.listen('recipes', (event) => {
             mold = '#thermal:crafting/dies/rod';
         const hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
 
-        if (ingot != air) {
+        if (plate != air) {
+            input = '#forge:plates/' + material;
+        } else if (ingot != air) {
             input = '#forge:ingots/' + material;
         } else if (gem != air) {
             input = '#forge:gems/' + material;
@@ -107,7 +109,7 @@ events.listen('recipes', (event) => {
         } else {
             return;
         }
-        event.shapeless(output, [input, input, hammer]).id(`kubejs:shapeless_crafting_${material}_plate`);
+        event.shapeless(output, [input, hammer, input]).id(`kubejs:shapeless_crafting_${material}_plate`);
 
         event.recipes.immersiveengineering
             .metal_press(output, input, mold)
