@@ -673,12 +673,6 @@ function immersiveengineering_hammer_plates(event, material, ingot, gem, plate) 
     }
 
     const hammer = 'immersiveengineering:hammer';
-    for (let i = 0; i < blacklistedMaterials.length; i++) {
-        if (blacklistedMaterials[i] == material) {
-            return;
-        }
-    }
-
     let output = plate;
     if (ingot != air) {
         input = '#forge:ingots/' + material;
