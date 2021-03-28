@@ -1,12 +1,10 @@
 events.listen('recipes', (event) => {
-    
     //https://github.com/CompactMods/CompactCrafting/wiki/Recipe-Specification
 
     //Also note, can't use Item.of because Count is caps sensitive (Name too)
 
-    var data = {
-        recipes: [
-            /*{
+    const recipes = [
+        /*{
                 //test recipe
                 recipeSize: 1,
                 layers: [ 
@@ -29,8 +27,7 @@ events.listen('recipes', (event) => {
                     Count: 1
                 }]
               }*/
-        ]
-    };
+    ];
 
     data.recipes.forEach((recipe) => {
         event.custom({
@@ -41,6 +38,6 @@ events.listen('recipes', (event) => {
             catalyst: recipe.catalyst,
             components: recipe.components,
             outputs: recipe.outputs
-        })
-    })   
+        });
+    });
 });
