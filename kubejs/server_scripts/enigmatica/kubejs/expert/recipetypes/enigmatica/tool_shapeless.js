@@ -1,4 +1,7 @@
 events.listen('recipes', (event) => {
+    if (!expertMode) {
+        return;
+    }
     const recipes = [
         {
             ingredients: [
@@ -10,7 +13,7 @@ events.listen('recipes', (event) => {
                 }
             ],
             result: {
-                item: 'minecraft:sticks',
+                item: 'minecraft:stick',
                 count: 2
             },
             id: 'minecraft:stick'
@@ -25,7 +28,7 @@ events.listen('recipes', (event) => {
                 }
             ],
             result: {
-                item: 'minecraft:sticks',
+                item: 'minecraft:stick',
                 count: 8
             }
         }
