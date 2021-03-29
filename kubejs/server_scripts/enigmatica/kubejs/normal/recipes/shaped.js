@@ -49,6 +49,13 @@ events.listen('recipes', (event) => {
             key: {
                 L: '#forge:stone'
             }
+        },
+        {
+            output: Item.of('minecraft:stick', 16),
+            pattern: ['A', 'A'],
+            key: {
+                L: '#minecraft:logs'
+            }
         }
     ];
 

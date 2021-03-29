@@ -25,9 +25,6 @@ events.listen('recipes', (event) => {
             X: '#forge:circuits/basic',
             C: 'industrialforegoing:fluid_extractor'
         }),
-        shapedRecipe(Item.of('minecraft:stick', 16), ['A', 'A'], {
-            A: '#minecraft:logs'
-        }),
 
         shapedRecipe('minecraft:hopper', ['ABA', 'ABA', ' A '], {
             A: '#forge:ingots/iron',
