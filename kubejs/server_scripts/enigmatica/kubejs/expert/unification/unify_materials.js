@@ -66,10 +66,8 @@ events.listen('recipes', (event) => {
             input,
             mold = '#thermal:crafting/dies/rod';
         const hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
-
-        if (plate != air) {
-            input = '#forge:plates/' + material;
-        } else if (ingot != air) {
+        const plateTag = '#forge:plates/' + material;
+        if (ingot != air) {
             input = '#forge:ingots/' + material;
         } else if (gem != air) {
             input = '#forge:gems/' + material;
@@ -86,7 +84,7 @@ events.listen('recipes', (event) => {
             .metal_press(Item.of(rod, 2), Item.of(input, 2), mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
-        event.shapeless(output, [input, hammer, input]).id(`kubejs:shapeless_crafting_${material}_rod`);
+        event.shapeless(output, [plateTag, hammer, plateTag]).id(`kubejs:shapeless_crafting_${material}_rod`);
     }
 
     function plate_unification(event, material, ingot, gem, plate) {
