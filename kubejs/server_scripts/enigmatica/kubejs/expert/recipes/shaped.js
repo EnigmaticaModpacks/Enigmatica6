@@ -3,6 +3,18 @@ events.listen('recipes', (event) => {
         return;
     }
 
+    /*
+        ,
+        {
+            output: '',
+            pattern: ['', '', ''],
+            key: {
+                A: ''
+            },
+            id: ''
+        }
+    */
+
     const newRecipes = [
         {
             output: 'thermal:machine_frame',
@@ -13,6 +25,15 @@ events.listen('recipes', (event) => {
                 C: '#forge:gears/iron_aluminum'
             },
             id: 'thermal:machine_frame'
+        },
+        {
+            output: 'minecraft:furnace',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#quark:stone_tool_materials',
+                B: '#minecraft:coals'
+            },
+            id: 'minecraft:furnace'
         }
     ];
 
