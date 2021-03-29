@@ -18,7 +18,7 @@ events.listen('recipes', (event) => {
     const newRecipes = [
         {
             output: 'thermal:machine_frame',
-            pattern: ['ABA', 'B B', 'ABA'],
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: '#forge:plates/iron_tin',
                 B: '#forge:glass_panes',
