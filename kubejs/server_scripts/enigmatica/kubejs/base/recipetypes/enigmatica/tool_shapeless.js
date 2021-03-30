@@ -1,18 +1,26 @@
 events.listen('recipes', (event) => {
-    event.custom({
-        type: 'enigmatica:tool_shapeless',
-        ingredients: [
-            {
-                tag: 'forge:tools/axe'
-            },
-            {
-                tag: 'forge:workbench'
+    const recipes = [
+        {
+            ingredients: [
+                {
+                    tag: 'forge:tools/axe'
+                },
+                {
+                    tag: 'forge:workbench'
+                }
+            ],
+            result: {
+                item: 'craftingstation:crafting_station',
+                count: 1
             }
-        ],
-        result: {
-            item: 'craftingstation:crafting_station',
-            count: 1
         }
+    ];
+    recipes.forEach((recipe) => {
+        event.custom({
+            type: 'enigmatica:tool_shapeless',
+            ingredients: recipe.ingredients,
+            result: recipe.result
+        });
     });
 
     var tillsIntoFarmland = [

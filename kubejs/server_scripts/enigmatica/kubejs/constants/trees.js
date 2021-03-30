@@ -745,6 +745,20 @@ const treeRegistry = [
                 trunk: 'betterendforge:jellyshroom_log',
                 leaf: 'betterendforge:jellyshroom_cap_purple',
                 substrate: 'jungle_moss'
+            },
+            {
+                sapling: 'byg:imparius_mushroom',
+                trunk: 'byg:imparius_stem',
+                leaf: 'byg:imparius_mushroom_block',
+                extraDecoration: 'byg:imparius_mushroom_branch',
+                substrate: 'mushroom'
+            },
+            {
+                sapling: 'byg:fungal_imparius',
+                trunk: 'byg:fungal_imparius_stem',
+                leaf: 'byg:fungal_imparius_block',
+                extraDecoration: 'byg:fungal_imparius_filament_block',
+                substrate: 'mushroom'
             }
         ]
     }

@@ -1,4 +1,4 @@
-## Enigmatica 6 - 0.4.7 Modlist
+## Enigmatica 6 - 0.4.8 Modlist
 - abnormals_core-1.16.5-3.1.1
 - abnormals_delight-1.16.5-1.1.0
 - additional_lights-1.16.4-2.1.3
@@ -33,7 +33,7 @@
 - Bookshelf-1.16.5-10.0.7
 - Botania-1.16.4-414
 - BotaniaAdditionsMC1.16.4-1.0.4
-- BotanyPots-1.16.5-7.0.10
+- BotanyPots-1.16.5-7.0.11
 - BotanyTrees-1.16.5-3.0.2
 - Bountiful Baubles FORGE-1.16.3-0.0.2
 - Bountiful-1.16.4-3.3.1
@@ -192,7 +192,7 @@
 - Neat 1.7-27
 - NetherPortalFix_1.16.3-7.2.1
 - observerlib-1.16.4-1.5.1
-- occultism-1.16.5-1.0.16
+- occultism-1.16.5-1.0.17
 - OldJavaWarning-1.16.5-7.0.1
 - overloadedarmorbar-5.1.0
 - PackMenu-1.16.4-2.4.0

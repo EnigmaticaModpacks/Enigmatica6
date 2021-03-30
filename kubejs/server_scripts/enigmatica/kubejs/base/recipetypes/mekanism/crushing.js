@@ -50,10 +50,6 @@ events.listen('recipes', (event) => {
                 output: Item.of('occultism:crushed_end_stone', 4)
             },
             {
-                input: '#forge:grain',
-                output: Item.of('create:wheat_flour', 1)
-            },
-            {
                 input: 'byg:raw_quartz_block',
                 output: Item.of('byg:quartzite_sand', 2)
             }

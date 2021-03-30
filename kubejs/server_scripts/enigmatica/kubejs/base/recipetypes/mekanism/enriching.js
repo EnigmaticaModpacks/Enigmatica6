@@ -22,6 +22,10 @@ events.listen('recipes', (event) => {
                 output: Item.of('minecraft:quartz')
             },
             {
+                input: '#forge:grain',
+                output: Item.of('create:wheat_flour', 1)
+            },
+            {
                 input: 'minecraft:sugar_cane',
                 output: Item.of('minecraft:sugar', 2)
             }

@@ -50,7 +50,11 @@ events.listen('recipes', (event) => {
                 orbLevel: 1
             },
             {
-                inputs: [{ item: 'byg:quartzite_sand' }, { item: 'byg:quartzite_sand' }, { tag: 'byg:quartzite_sand' }],
+                inputs: [
+                    { item: 'byg:quartzite_sand' },
+                    { item: 'byg:quartzite_sand' },
+                    { item: 'byg:quartzite_sand' }
+                ],
                 output: 'minecraft:quartz',
                 count: 3,
                 syphon: 50,

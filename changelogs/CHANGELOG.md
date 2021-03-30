@@ -1,10 +1,44 @@
-### Enigmatica 6 v0.4.7 (+0.4.6)
+### Enigmatica 6 v0.4.9
 
-_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.6](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_ | _[Mod Updates 0.4.7](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.7.md)_
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.9.md)_
+
+**Improvements/Changes**
+
+-
+
+**Bug Fixes**
+
+-
+
+**Removed Mods**
+
+-   Botany Trees (The mod doesn't do anything due to our recipe changes)
+
+### Enigmatica 6 v0.4.8
+
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.8.md)_
 
 **Known issues**
 
 -   Several Atmospheric biomes may change when updating from 0.4.3 to anything above. We have been unable to fix this issue unfortunately.
+-   Updating from 0.4.3 to 0.4.5 and above will remove crops with Botany Pots.
+    -   Updates from version 0.4.5 do not have this issue, so it should only happen the one time.
+
+**Bug Fixes**
+
+-   \[0.4.7\] Inventory appears on HUD after update from 0.4.3 to 0.4.7 [\#1830](https://github.com/NillerMedDild/Enigmatica6/issues/1830)
+-   \[0.4.6\] Stonecutter tweaks issues [\#1820](https://github.com/NillerMedDild/Enigmatica6/issues/1820)
+-   Occultism Storage crafting eats honey bottles [\#1624](https://github.com/NillerMedDild/Enigmatica6/issues/1624)
+-   \[0.4.7\] Pedestal quests issue [\#1831](https://github.com/NillerMedDild/Enigmatica6/issues/1831)
+-   \[0.4.5\] Frame chest is disabled but Illusion chest is not [\#1828](https://github.com/NillerMedDild/Enigmatica6/issues/1828)
+-   \[0.4.7\] Server start and settings files changed encoding [\#1827](https://github.com/NillerMedDild/Enigmatica6/issues/1827)
+-   0.4.7 Worn Notebook - Many entries broken and showing 2d cubes [\#1826](https://github.com/NillerMedDild/Enigmatica6/issues/1826)
+-   Restore Pedestal's cobble and stoneworks [\#1835](https://github.com/NillerMedDild/Enigmatica6/pull/1835) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix beam stonecutting recipes [\#1836](https://github.com/NillerMedDild/Enigmatica6/pull/1836) ([ochotonida](https://github.com/ochotonida))
+
+### Enigmatica 6 v0.4.7 (+0.4.6)
+
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.6](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_ | _[Mod Updates 0.4.7](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.7.md)_
 
 **New Mods**
 

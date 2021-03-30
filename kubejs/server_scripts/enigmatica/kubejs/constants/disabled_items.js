@@ -32,7 +32,9 @@ const disabledItems = [
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
 
-    // 'bountifulbaubles:potion_wormhole',
+    'bountifulbaubles:potion_wormhole',
+    'bountifulbaubles:wormhole_mirror',
+
     'blockcarpentry:frame_chest',
     'blockcarpentry:illusion_chest',
 

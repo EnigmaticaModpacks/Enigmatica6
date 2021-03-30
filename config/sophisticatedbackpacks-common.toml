@@ -2,7 +2,7 @@
 #Common Settings
 [common]
 	#Disable / enable any items here (disables their recipes)
-	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "advanced_compacting_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "upgrade_base:true", "refill_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "stonecutter_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "jukebox_upgrade:true"]
+	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "stonecutter_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "upgrade_base:true", "refill_upgrade:true", "advanced_compacting_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true"]
 	#Turns on/off loot added to various vanilla chest loot tables
 	chestLootEnabled = true
 	#Shift clicking will first move the stack into open tab and only then to player's inventory or to backpack (based on where shift clicking from backpack or from player's inventory).
@@ -44,6 +44,15 @@
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 5
+
+	#Netherite Backpack Settings
+	[common.netheriteBackpack]
+		#Number of inventory slots in the backpack
+		#Range: 1 ~ 144
+		inventorySlotCount = 120
+		#Number of upgrade slots in the backpack
+		#Range: 0 ~ 10
+		upgradeSlotCount = 7
 
 	#Compacting Upgrade Settings
 	[common.compactingUpgrade]
@@ -88,7 +97,7 @@
 		filterSlots = 9
 		#Number of filter slots displayed in a row
 		#Range: 1 ~ 6
-		slotsInRow = 4
+		slotsInRow = 3
 
 	#Filter Upgrade Settings
 	[common.filterUpgrade]
@@ -241,23 +250,14 @@
 		addLoot = true
 		#Turns on/off buffing the entity that wears backpack with potion effects. These are scaled based on how much loot is added.
 		buffWithPotionEffects = true
-		#Map of entities that can spawn with backpack and related loot tables (if adding a loot is enabled) in format of "EntityRegistryName|LootTableName"
-		entityLootTableList = ["minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:witch|minecraft:chests/buried_treasure", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:zombified_piglin|minecraft:chests/bastion_other", "minecraft:piglin_brute|minecraft:chests/bastion_treasure", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:enderman|minecraft:chests/end_city_treasure"]
 		#Turns on/off buffing the entity that wears backpack with additional health. Health is scaled based on backpack tier the mob wears.
 		buffHealth = true
 		#Turns on/off equiping the entity that wears backpack with armor. What armor material and how enchanted is scaled based on backpack tier the mob wears.
 		equipWithArmor = true
+		#Map of entities that can spawn with backpack and related loot tables (if adding a loot is enabled) in format of "EntityRegistryName|LootTableName"
+		entityLootTableList = ["minecraft:creeper|minecraft:chests/desert_pyramid", "minecraft:drowned|minecraft:chests/shipwreck_treasure", "minecraft:enderman|minecraft:chests/end_city_treasure", "minecraft:evoker|minecraft:chests/woodland_mansion", "minecraft:husk|minecraft:chests/desert_pyramid", "minecraft:piglin|minecraft:chests/bastion_bridge", "minecraft:piglin_brute|minecraft:chests/bastion_treasure", "minecraft:pillager|minecraft:chests/pillager_outpost", "minecraft:skeleton|minecraft:chests/simple_dungeon", "minecraft:stray|minecraft:chests/igloo_chest", "minecraft:vex|minecraft:chests/woodland_mansion", "minecraft:vindicator|minecraft:chests/woodland_mansion", "minecraft:witch|minecraft:chests/buried_treasure", "minecraft:wither_skeleton|minecraft:chests/nether_bridge", "minecraft:zombie|minecraft:chests/simple_dungeon", "minecraft:zombie_villager|minecraft:chests/village/village_armorer", "minecraft:zombified_piglin|minecraft:chests/bastion_other"]
 		#List of music discs that are not supposed to be played by entities
-		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2"]
+		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2", "eidolon:music_disc_parousia"]
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
 		playJukebox = true
-
-	#Netherite Backpack Settings
-	[common.netheriteBackpack]
-		#Number of inventory slots in the backpack
-		#Range: 1 ~ 144
-		inventorySlotCount = 120
-		#Number of upgrade slots in the backpack
-		#Range: 0 ~ 10
-		upgradeSlotCount = 7
 
