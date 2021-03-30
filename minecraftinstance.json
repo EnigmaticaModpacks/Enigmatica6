@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-03-29T18:04:30.4059914Z",
+  "lastPlayed": "2021-03-30T18:49:50.0848452Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -2407,20 +2407,20 @@
       "addonID": 306626,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3246921,
-        "displayName": "NaturesAura-34.1.jar",
-        "fileName": "NaturesAura-34.1.jar",
-        "fileDate": "2021-03-21T16:55:57.487Z",
-        "fileLength": 1367658,
+        "id": 3255666,
+        "displayName": "NaturesAura-34.2.jar",
+        "fileName": "NaturesAura-34.2.jar",
+        "fileDate": "2021-03-30T14:25:16.343Z",
+        "fileLength": 1356579,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3246/921/NaturesAura-34.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3255/666/NaturesAura-34.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 238222,
+            "addonId": 313272,
             "type": 2,
             "fileId": 0
           },
@@ -2432,13 +2432,13 @@
           },
           {
             "id": 0,
-            "addonId": 309927,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 313272,
+            "addonId": 309927,
             "type": 2,
             "fileId": 0
           }
@@ -2447,19 +2447,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 842769202,
+            "fingerprint": 2175767982,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "de",
-            "fingerprint": 2040397727,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": ".cache",
-            "fingerprint": 1993351543,
+            "fingerprint": 620215593,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -2482,7 +2476,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4189620664,
+        "packageFingerprint": 2315005427,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -2498,12 +2492,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "NaturesAura-34.1.jar"
+        "FileNameOnDisk": "NaturesAura-34.2.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.7278504Z",
-      "dateUpdated": "2021-03-21T21:11:37.6536185Z",
-      "dateLastUpdateAttempted": "2021-03-21T21:11:37.6536185Z",
-      "status": 5,
+      "dateUpdated": "2021-03-30T18:50:06.77734Z",
+      "dateLastUpdateAttempted": "2021-03-30T18:50:06.77734Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3124,29 +3118,17 @@
       "addonID": 445385,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3199383,
-        "displayName": "Tetranomicon 1.0",
-        "fileName": "tetranomicon-1.0.jar",
-        "fileDate": "2021-02-10T19:08:47.747Z",
-        "fileLength": 47885,
+        "id": 3254968,
+        "displayName": "Tetranomicon 1.1",
+        "fileName": "tetranomicon-1.1.jar",
+        "fileDate": "2021-03-29T18:57:42.477Z",
+        "fileLength": 82997,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3199/383/tetranomicon-1.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3254/968/tetranomicon-1.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 428877,
-            "type": 1,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 220318,
-            "type": 1,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 289712,
@@ -3155,20 +3137,74 @@
           },
           {
             "id": 0,
-            "addonId": 340333,
-            "type": 1,
+            "addonId": 220318,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 326895,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 362393,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 264231,
+            "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
             "addonId": 401284,
-            "type": 1,
+            "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 247560,
-            "type": 1,
+            "addonId": 328085,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 430404,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 348215,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 365045,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 243121,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 340333,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 428877,
+            "type": 2,
             "fileId": 0
           },
           {
@@ -3179,7 +3215,19 @@
           },
           {
             "id": 0,
-            "addonId": 243121,
+            "addonId": 247560,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 406825,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 291509,
             "type": 2,
             "fileId": 0
           }
@@ -3188,7 +3236,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 366461641,
+            "fingerprint": 1648177807,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3200,13 +3248,13 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 126896126,
+            "fingerprint": 52615064,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1602808523,
+            "fingerprint": 4261112198,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3217,7 +3265,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 193049760,
+        "packageFingerprint": 91477254,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -3232,12 +3280,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "tetranomicon-1.0.jar"
+        "FileNameOnDisk": "tetranomicon-1.1.jar"
       },
       "dateInstalled": "2021-02-11T18:27:41.3272097Z",
-      "dateUpdated": "2021-02-11T18:27:41.3476922Z",
-      "dateLastUpdateAttempted": "2021-02-11T18:27:41.3476922Z",
-      "status": 5,
+      "dateUpdated": "2021-03-30T18:50:01.7800002Z",
+      "dateLastUpdateAttempted": "2021-03-30T18:50:01.7800002Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3504,7 +3552,7 @@
       "dateInstalled": "2021-01-24T23:41:09.6590349Z",
       "dateUpdated": "2021-03-29T18:04:17.6375214Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:17.6375214Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6395,7 +6443,7 @@
       "dateInstalled": "2021-03-28T18:25:06.2317269Z",
       "dateUpdated": "2021-03-29T18:04:09.2135238Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:09.2135238Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9509,7 +9557,7 @@
       "dateInstalled": "2021-01-24T23:45:54.27988Z",
       "dateUpdated": "2021-03-28T18:30:11.0404616Z",
       "dateLastUpdateAttempted": "2021-03-28T18:30:11.0404616Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9791,14 +9839,14 @@
       "addonID": 266936,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3223206,
-        "displayName": "JAOPCA-1.16.5-3.4.0.6.jar",
-        "fileName": "JAOPCA-1.16.5-3.4.0.6.jar",
-        "fileDate": "2021-03-01T20:12:00.26Z",
-        "fileLength": 549343,
+        "id": 3254983,
+        "displayName": "JAOPCA-1.16.5-3.4.0.7.jar",
+        "fileName": "JAOPCA-1.16.5-3.4.0.7.jar",
+        "fileDate": "2021-03-29T19:15:44.617Z",
+        "fileLength": 573347,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3223/206/JAOPCA-1.16.5-3.4.0.6.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3254/983/JAOPCA-1.16.5-3.4.0.7.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -9806,19 +9854,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3462081140,
+            "fingerprint": 2447858318,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "thelm",
-            "fingerprint": 2647213062,
+            "fingerprint": 2107119182,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 259811010,
+            "fingerprint": 3204543077,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -9841,7 +9889,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 299168722,
+        "packageFingerprint": 4023265296,
         "gameVersion": [
           "1.16.5",
           "1.16.4"
@@ -9855,12 +9903,12 @@
         "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "JAOPCA-1.16.5-3.4.0.6.jar"
+        "FileNameOnDisk": "JAOPCA-1.16.5-3.4.0.7.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.6779856Z",
-      "dateUpdated": "2021-03-03T19:15:48.7698426Z",
-      "dateLastUpdateAttempted": "2021-03-03T19:15:48.7698426Z",
-      "status": 5,
+      "dateUpdated": "2021-03-30T18:50:08.9401757Z",
+      "dateLastUpdateAttempted": "2021-03-30T18:50:08.9401757Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12127,14 +12175,14 @@
       "addonID": 412525,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3251911,
-        "displayName": "LibX-1.16.3-1.0.25.jar",
-        "fileName": "LibX-1.16.3-1.0.25.jar",
-        "fileDate": "2021-03-26T15:36:04.023Z",
-        "fileLength": 189277,
-        "releaseType": 1,
+        "id": 3255815,
+        "displayName": "LibX-1.16.3-1.0.26.jar",
+        "fileName": "LibX-1.16.3-1.0.26.jar",
+        "fileDate": "2021-03-30T16:47:25.707Z",
+        "fileLength": 207109,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3251/911/LibX-1.16.3-1.0.25.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3255/815/LibX-1.16.3-1.0.26.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -12142,13 +12190,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1260251815,
+            "fingerprint": 2631930364,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "io",
-            "fingerprint": 159104494,
+            "fingerprint": 1291125694,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -12177,7 +12225,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2461388854,
+        "packageFingerprint": 2713637688,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -12193,12 +12241,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "LibX-1.16.3-1.0.25.jar"
+        "FileNameOnDisk": "LibX-1.16.3-1.0.26.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.6341029Z",
-      "dateUpdated": "2021-03-26T18:37:25.3471394Z",
-      "dateLastUpdateAttempted": "2021-03-26T18:37:25.3471394Z",
-      "status": 5,
+      "dateUpdated": "2021-03-30T18:50:07.4106955Z",
+      "dateLastUpdateAttempted": "2021-03-30T18:50:07.4106955Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12984,7 +13032,7 @@
       "dateInstalled": "2021-01-28T19:22:35.0824655Z",
       "dateUpdated": "2021-03-28T18:30:09.2547578Z",
       "dateLastUpdateAttempted": "2021-03-28T18:30:09.2547578Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15176,7 +15224,7 @@
       "dateInstalled": "2021-01-24T23:45:34.9623612Z",
       "dateUpdated": "2021-03-28T18:30:10.8144611Z",
       "dateLastUpdateAttempted": "2021-03-28T18:30:10.8144611Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17572,7 +17620,7 @@
       "dateInstalled": "2021-02-15T21:03:42.3542083Z",
       "dateUpdated": "2021-03-29T18:04:11.4865245Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:11.4865245Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17748,7 +17796,7 @@
       "dateInstalled": "2021-01-24T23:41:09.6221337Z",
       "dateUpdated": "2021-03-28T18:30:12.2774611Z",
       "dateLastUpdateAttempted": "2021-03-28T18:30:12.2774611Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20221,7 +20269,7 @@
       "dateInstalled": "2021-02-09T20:24:22.1747545Z",
       "dateUpdated": "2021-03-29T18:04:20.3449127Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:20.3449127Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20950,7 +20998,7 @@
       "dateInstalled": "2021-02-12T20:47:22.2688873Z",
       "dateUpdated": "2021-03-29T18:04:09.2145253Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:09.2145253Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21057,23 +21105,17 @@
       "addonID": 401955,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3254037,
-        "displayName": "ars_nouveau-1.16.4-1.12.0.jar",
-        "fileName": "ars_nouveau-1.16.4-1.12.0.jar",
-        "fileDate": "2021-03-28T19:42:35.357Z",
-        "fileLength": 2851673,
+        "id": 3255319,
+        "displayName": "ars_nouveau-1.16.4-1.12.1.jar",
+        "fileName": "ars_nouveau-1.16.4-1.12.1.jar",
+        "fileDate": "2021-03-30T02:16:38.007Z",
+        "fileLength": 2856477,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3254/37/ars_nouveau-1.16.4-1.12.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3255/319/ars_nouveau-1.16.4-1.12.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 306770,
-            "type": 3,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 309927,
@@ -21085,25 +21127,31 @@
             "addonId": 388172,
             "type": 3,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 306770,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2890536598,
+            "fingerprint": 1660410309,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 995222318,
+            "fingerprint": 3248599054,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 440113613,
+            "fingerprint": 1563126853,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -21120,7 +21168,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2986930767,
+        "packageFingerprint": 2731490953,
         "gameVersion": [
           "1.16.5",
           "1.16.4"
@@ -21134,11 +21182,11 @@
         "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ars_nouveau-1.16.4-1.12.0.jar"
+        "FileNameOnDisk": "ars_nouveau-1.16.4-1.12.1.jar"
       },
       "dateInstalled": "2021-01-24T23:45:35.2264903Z",
-      "dateUpdated": "2021-03-29T18:04:10.8755225Z",
-      "dateLastUpdateAttempted": "2021-03-29T18:04:10.8755225Z",
+      "dateUpdated": "2021-03-30T18:49:56.2918943Z",
+      "dateLastUpdateAttempted": "2021-03-30T18:49:56.2918943Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -22323,7 +22371,7 @@
       "dateInstalled": "2021-01-24T23:57:53.7151588Z",
       "dateUpdated": "2021-03-28T18:30:27.3097064Z",
       "dateLastUpdateAttempted": "2021-03-28T18:30:27.3097064Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23365,7 +23413,7 @@
       "dateInstalled": "2021-01-24T23:41:09.7837017Z",
       "dateUpdated": "2021-03-29T18:04:19.0073373Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:19.0073373Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23536,7 +23584,7 @@
       "dateInstalled": "2021-01-24T23:40:54.7442922Z",
       "dateUpdated": "2021-03-28T18:29:16.8634721Z",
       "dateLastUpdateAttempted": "2021-03-28T18:29:16.8634721Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23831,7 +23879,7 @@
       "dateInstalled": "2021-02-20T19:04:50.7021646Z",
       "dateUpdated": "2021-03-28T18:30:11.9374617Z",
       "dateLastUpdateAttempted": "2021-03-28T18:30:11.9374617Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26130,102 +26178,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 384508,
-      "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
-      "installedFile": {
-        "id": 3245153,
-        "displayName": "ResourcefulBees-1.16.5-0.6.5b",
-        "fileName": "ResourcefulBees-1.16.5-0.6.5b.jar",
-        "fileDate": "2021-03-19T21:30:59.793Z",
-        "fileLength": 3979999,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3245/153/ResourcefulBees-1.16.5-0.6.5b.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 1420007424,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 3059528388,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2479992103,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 3238670870,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "logo.png",
-            "fingerprint": 1074719077,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 684766769,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "resourcefulbees.mixins.json",
-            "fingerprint": 2804224158,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "resourcefulbees.refmap.json",
-            "fingerprint": 3102961468,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 871546120,
-        "gameVersion": [
-          "1.16.5",
-          "Forge"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "ResourcefulBees-1.16.5-0.6.5b.jar"
-      },
-      "dateInstalled": "2021-01-24T23:41:09.7607632Z",
-      "dateUpdated": "2021-03-20T18:19:18.9982841Z",
-      "dateLastUpdateAttempted": "2021-03-20T18:19:18.9982841Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 250294,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
@@ -27521,14 +27473,14 @@
       "addonID": 445025,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3201211,
-        "displayName": "time-in-a-bottle-1.0.1.jar",
-        "fileName": "time-in-a-bottle-1.0.1.jar",
-        "fileDate": "2021-02-12T07:09:58.233Z",
-        "fileLength": 33499,
+        "id": 3255801,
+        "displayName": "time-in-a-bottle-1.1.0.jar",
+        "fileName": "time-in-a-bottle-1.1.0.jar",
+        "fileDate": "2021-03-30T16:33:15.897Z",
+        "fileLength": 37088,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3201/211/time-in-a-bottle-1.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3255/801/time-in-a-bottle-1.1.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -27536,25 +27488,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4084511163,
+            "fingerprint": 178001372,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2429117897,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 794024988,
+            "fingerprint": 2663929952,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2679309275,
+            "fingerprint": 1378863282,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 3601938090,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -27565,7 +27517,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 387943078,
+        "packageFingerprint": 2016503207,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -27580,12 +27532,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "time-in-a-bottle-1.0.1.jar"
+        "FileNameOnDisk": "time-in-a-bottle-1.1.0.jar"
       },
       "dateInstalled": "2021-02-13T20:01:34.6103731Z",
-      "dateUpdated": "2021-02-13T20:01:34.6193087Z",
-      "dateLastUpdateAttempted": "2021-02-13T20:01:34.6193087Z",
-      "status": 5,
+      "dateUpdated": "2021-03-30T18:50:01.0084476Z",
+      "dateLastUpdateAttempted": "2021-03-30T18:50:01.0084476Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28292,7 +28244,7 @@
       "dateInstalled": "2021-01-24T23:41:09.6390889Z",
       "dateUpdated": "2021-03-29T18:04:09.7915251Z",
       "dateLastUpdateAttempted": "2021-03-29T18:04:09.7915251Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

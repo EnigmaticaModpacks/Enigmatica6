@@ -1,0 +1,15 @@
+
+["Time In A Bottle"]
+	#Define maximum time the items can be used continuously. Corresponding to maximum times faster: Eg. 2^8=256
+	#Range: 1 ~ 12
+	"Max Time Rate Power" = 8
+	#Define duration for each use - in second
+	#Range: 1 ~ 60
+	"Each Use Duration" = 30
+	#Define Average Update Random Tick on block in chunk (eg: sapling growth). On average, blocks are updated every 68.27 seconds (1365.33 game ticks)... https://minecraft.gamepedia.com/Tick#Random_tick
+	#Range: 600 ~ 2100
+	"Average Update Random Tick" = 1365
+	#Define max time the items can store - in tick (1 second = 20 ticks)
+	#Range: 600 ~ 622080000
+	"Max Stored Time" = 622080000
+
