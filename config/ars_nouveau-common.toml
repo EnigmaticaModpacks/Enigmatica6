@@ -16,6 +16,15 @@
 	#Rate of tree spawn per chunk
 	#Range: 0.0 ~ 1.0
 	genTrees = 0.002
+	#How often Wilden Guardians spawn
+	#Range: 0 ~ 200
+	wguardianWeight = 50
+	#How often Wilden Stalkers spawn
+	#Range: 0 ~ 200
+	wstalkerWeight = 50
+	#How often Wilden Hunter spawn
+	#Range: 0 ~ 200
+	whunterWeight = 50
 
 #Enabled Spells
 [spells]

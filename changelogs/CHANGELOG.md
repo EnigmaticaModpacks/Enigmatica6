@@ -1,15 +1,75 @@
-### Enigmatica 6 v0.4.6
+### Enigmatica 6 v0.4.9
 
-_Using Forge-1.16.5-36.1.0_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.9.md)_
+
+**Improvements/Changes**
+
+-
+
+**Bug Fixes**
+
+-
+
+**Removed Mods**
+
+-   Botany Trees (The mod doesn't do anything due to our recipe changes)
+
+### Enigmatica 6 v0.4.8
+
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.8.md)_
+
+**Known issues**
+
+-   Several Atmospheric biomes may change when updating from 0.4.3 to anything above. We have been unable to fix this issue unfortunately.
+-   Updating from 0.4.3 to 0.4.5 and above will remove crops with Botany Pots.
+    -   Updates from version 0.4.5 do not have this issue, so it should only happen the one time.
+
+**Bug Fixes**
+
+-   \[0.4.7\] Inventory appears on HUD after update from 0.4.3 to 0.4.7 [\#1830](https://github.com/NillerMedDild/Enigmatica6/issues/1830)
+-   \[0.4.6\] Stonecutter tweaks issues [\#1820](https://github.com/NillerMedDild/Enigmatica6/issues/1820)
+-   Occultism Storage crafting eats honey bottles [\#1624](https://github.com/NillerMedDild/Enigmatica6/issues/1624)
+-   \[0.4.7\] Pedestal quests issue [\#1831](https://github.com/NillerMedDild/Enigmatica6/issues/1831)
+-   \[0.4.5\] Frame chest is disabled but Illusion chest is not [\#1828](https://github.com/NillerMedDild/Enigmatica6/issues/1828)
+-   \[0.4.7\] Server start and settings files changed encoding [\#1827](https://github.com/NillerMedDild/Enigmatica6/issues/1827)
+-   0.4.7 Worn Notebook - Many entries broken and showing 2d cubes [\#1826](https://github.com/NillerMedDild/Enigmatica6/issues/1826)
+-   Restore Pedestal's cobble and stoneworks [\#1835](https://github.com/NillerMedDild/Enigmatica6/pull/1835) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix beam stonecutting recipes [\#1836](https://github.com/NillerMedDild/Enigmatica6/pull/1836) ([ochotonida](https://github.com/ochotonida))
+
+### Enigmatica 6 v0.4.7 (+0.4.6)
+
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.6](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.6.md)_ | _[Mod Updates 0.4.7](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.7.md)_
+
+**New Mods**
+
+-   [Lazy DataFixerUpper(LazyDFU) [FORGE]](https://www.curseforge.com/minecraft/mc-mods/lazy-dfu-forge)
 
 **Improvements/Changes**
 
 -   AlexsMobs: Cave Centipedes no longer naturally spawn.
     -   Their spawn eggs can be purchased from the Market
+-   BYG Nether biomes Compatibility changes.\(part 1, probably\) [\#1602](https://github.com/NillerMedDild/Enigmatica6/issues/1602)
+-   Recutting with stonecutter [\#1342](https://github.com/NillerMedDild/Enigmatica6/issues/1342)
+-   Pedestals Quests [\#1811](https://github.com/NillerMedDild/Enigmatica6/pull/1811) ([TemperedFool](https://github.com/TemperedFool))
 
 **Bug Fixes**
 
--
+-   \[0.4.6\] Crash on world load [\#1821](https://github.com/NillerMedDild/Enigmatica6/issues/1821)
+-   Reverted Curios changes. Everything is pretty much as it was in 0.4.3
+-   \[0.4.5\] Missing Sugar Crushing recipes [\#1807](https://github.com/NillerMedDild/Enigmatica6/issues/1807)
+-   \[0.4.5\] Server crash when upgrading Dank [\#1806](https://github.com/NillerMedDild/Enigmatica6/issues/1806)
+-   \[0.4.3\] Obsidian Dupe with IE Crusher [\#1805](https://github.com/NillerMedDild/Enigmatica6/issues/1805)
+-   \[0.4.5\] Apiary honeycombs [\#1800](https://github.com/NillerMedDild/Enigmatica6/issues/1800)
+-   \[0.4.5\] BooBee honeycombs won't process in a Centrifuge [\#1799](https://github.com/NillerMedDild/Enigmatica6/issues/1799)
+-   \[0.4.5\] Looting enchant missing [\#1792](https://github.com/NillerMedDild/Enigmatica6/issues/1792)
+-   \[0.4.5\] Create goggles in new curio slot don't work [\#1791](https://github.com/NillerMedDild/Enigmatica6/issues/1791)
+-   \[0.4.5\] Mending enchant broken [\#1788](https://github.com/NillerMedDild/Enigmatica6/issues/1788)
+-   \[0.4.3\] Bad Material Stonework Factory recipe [\#1785](https://github.com/NillerMedDild/Enigmatica6/issues/1785)
+-   \[Enigmatica 6\] Crafting Tweaks and Sophisticated Backpacks [\#1740](https://github.com/NillerMedDild/Enigmatica6/issues/1740)
+-   End oregen y-levels [\#1601](https://github.com/NillerMedDild/Enigmatica6/issues/1601)
+-   Batch spellchecking fixes to quest descriptions [\#1816](https://github.com/NillerMedDild/Enigmatica6/pull/1816) ([ylou](https://github.com/ylou))
+-   Fix swapped Powah reactor transfer rates [\#1815](https://github.com/NillerMedDild/Enigmatica6/pull/1815) ([ylou](https://github.com/ylou))
+-   Fix Apiary Recipies [\#1802](https://github.com/NillerMedDild/Enigmatica6/pull/1802) ([TemperedFool](https://github.com/TemperedFool))
 
 ### Enigmatica 6 v0.4.5
 

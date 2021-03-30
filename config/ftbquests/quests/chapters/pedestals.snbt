@@ -116,7 +116,7 @@
 			description: [
 				"The Advanced enchantment allows upgrades that manipulate an inventory below the pedestal to interact with the inventories of entities. This can, for example, be used to import items from or export items to mobs using the appropriate upgrades.",
 				"",
-				"The Advanced enchantment requires an enchanting level of 92; because of this it will need a modded anchanting method such as the XP Enchanter upgrade."
+				"The Advanced enchantment requires an enchanting level of 92; because of this it will need a modded enchanting method such as the XP Enchanter upgrade."
 			],
 			dependencies: ["1D239668DA764C52"],
 			id: "3D505992F1F47451",
@@ -606,7 +606,7 @@
 				"",
 				"● A renamed nametag in a surrounding pedestal will be consumed to rename the item.",
 				"",
-				"● Books or even enchanted items can be placed on the surrouding pedestals, and their enchants will be transferred to the center item.",
+				"● Books or even enchanted items can be placed on the surrounding pedestals, and their enchants will be transferred to the center item.",
 				"",
 				"● When combining enchantments (Fortune 3 + Fortune 3 -> Fortune 4), if the resulting enchantment will be above the normal vanilla limit diamonds equaling the total of all enchant levels over the vanilla maximum are needed. These should be placed on one of the adjacent pedestals. Failing to supply enough diamonds will result in vanilla enchantment maximums."
 			],
@@ -1158,7 +1158,10 @@
 			rewards: [{
 				id: "17C1C8CA8C95E178",
 				type: "item",
-				item: "pedestals:linkingtoolbackwards"
+				item: "minecraft:gold_ingot",
+				count: 3,
+				random_bonus: 6,
+				only_one: true
 			}]
 		},
 		{

@@ -240,6 +240,7 @@ const disabledItems = [
     'betterendforge:ender_dust',
 
     'blockcarpentry:frame_chest',
+    'blockcarpentry:illusion_chest',
 
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',

@@ -13,16 +13,7 @@ events.listen('recipes', (event) => {
                 input: 'create:limesand'
             },
             {
-                outputs: [
-                    Item.of('minecraft:quartz', 2),
-                    Item.of('minecraft:quartz').chance(0.25)
-                ],
-                input: 'byg:quartzite_sand'
-            },
-            {
-                outputs: [
-                    Item.of('upgrade_aquatic:driftwood_log')
-                ],
+                outputs: [Item.of('upgrade_aquatic:driftwood_log')],
                 input: '#minecraft:logs'
             },
             {
@@ -68,6 +59,10 @@ events.listen('recipes', (event) => {
             {
                 outputs: ['dustrial_decor:rusty_iron_trapdoor'],
                 input: 'minecraft:iron_trapdoor'
+            },
+            {
+                outputs: [Item.of('minecraft:quartz').withChance(0.25), Item.of('minecraft:redstone').withChance(0.05)],
+                input: 'byg:quartzite_sand'
             }
         ],
         rusty_items: [
@@ -88,7 +83,7 @@ events.listen('recipes', (event) => {
             'dustrial_decor:rusty_sheet_metal_door'
         ]
     };
-    
+
     data.recipes.forEach((recipe) => {
         event.recipes.create.splashing(recipe.outputs, recipe.input);
     });

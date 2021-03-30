@@ -16,6 +16,18 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:ores/amber',
                 output: Item.of('#forge:shards/amber', 3)
+            },
+            {
+                input: 'byg:quartzite_sand',
+                output: Item.of('minecraft:quartz')
+            },
+            {
+                input: '#forge:grain',
+                output: Item.of('create:wheat_flour', 1)
+            },
+            {
+                input: 'minecraft:sugar_cane',
+                output: Item.of('minecraft:sugar', 2)
             }
         ]
     };

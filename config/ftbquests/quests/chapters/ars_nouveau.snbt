@@ -131,7 +131,7 @@
 			icon: "ars_nouveau:marvelous_clay",
 			x: -4.5d,
 			y: -2.0d,
-			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbok to cast. "],
+			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbook to cast. "],
 			dependencies: ["00000000000003BE"],
 			id: "00000000000003C2",
 			tasks: [
@@ -158,7 +158,7 @@
 			icon: "ars_nouveau:mythical_clay",
 			x: -3.5d,
 			y: -2.5d,
-			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbok to cast. "],
+			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbook to cast. "],
 			dependencies: ["00000000000003C2"],
 			id: "00000000000003C4",
 			tasks: [
@@ -216,13 +216,13 @@
 			description: [
 				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to begin.",
 				"",
-				"By now, you'll know a few different Forms and Effects. Place a form first, followed by an effect, give it a name, then press Create. Mutliple Effects can be chained.",
+				"By now, you'll know a few different Forms and Effects. Place a form first, followed by an effect, give it a name, then press Create. Multiple Effects can be chained.",
 				"",
 				"For example, a simple early form of flight can be crafted using the following spell:",
 				"",
 				"● Self > Leap > Slowfall ",
 				"",
-				"Casting this propels the user in the direction they're facing, while also providing some cushoning for the eventual landing. It can make a great way to traverse rough terrain or escape a pesky mob."
+				"Casting this propels the user in the direction they're facing, while also providing some cushioning for the eventual landing. It can make a great way to traverse rough terrain or escape a pesky mob."
 			],
 			dependencies: ["00000000000003BE"],
 			min_width: 300,
@@ -309,7 +309,7 @@
 			description: [
 				"The Mana Bloom sits at the border between the mundane and the magical. It grows as any other plant, but its roots reach through the veil, soaking in more of the mana that infuses the earth.",
 				"",
-				"Growing these will serve two purposes to a budding practicioner. First, they produce more mana than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's mana, expanding the practioner's reserves.  "
+				"Growing these will serve two purposes to a budding practitioner. First, they produce more mana than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's mana, expanding the practitioner's reserves.  "
 			],
 			dependencies: ["00000000000003D7"],
 			id: "00000000000003D5",
@@ -374,7 +374,7 @@
 			x: -1.5d,
 			y: -5.5d,
 			description: [
-				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspring practitioners may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves.",
+				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves.",
 				"",
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			],
@@ -660,7 +660,7 @@
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?",
 				"",
-				"A simple redstone clock can be made with two turrets containg the following spell:",
+				"A simple redstone clock can be made with two turrets containing the following spell:",
 				"",
 				"● Projectile > Redstone Signal"
 			],
