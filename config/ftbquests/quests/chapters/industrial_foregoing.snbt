@@ -326,7 +326,7 @@
 		},
 		{
 			x: 0.0d,
-			y: -5.0d,
+			y: -5.5d,
 			description: ["The Bioreactor can process up to nine different types of plant-based items at once to make Biofuel; the more slots that are filled, the higher the efficiency. Biofuel can be used to make power with the Biofuel Generator, or to run Infinity tools."],
 			dependencies: ["000000000000004F"],
 			id: "0000000000000080",
@@ -1119,6 +1119,64 @@
 				id: "0000000000000F30",
 				type: "xp",
 				xp: 512
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -5.5d,
+			description: ["Mechanical Dirt is used to convert FE and Liquid Meat into Mob Spawns. It respects light requirements and will spawn based on the biome it is in. It will also distribute Power and Liquid Meat to adjacent Mechanical Dirt blocks."],
+			dependencies: ["0000000000000057"],
+			id: "68F315FF23CD8A22",
+			tasks: [{
+				id: "3991AE48C18012EC",
+				type: "item",
+				item: "industrialforegoing:mechanical_dirt"
+			}],
+			rewards: [{
+				id: "0997C2E0E6DE8F76",
+				type: "item",
+				item: {
+					id: "industrialforegoing:common_black_hole_tank",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST",
+								Pointer: 0,
+								Filter: {}
+							},
+							tank: {
+								FluidName: "industrialforegoing:meat",
+								FacingModes: {
+									TOP: "ENABLED",
+									LEFT: "ENABLED",
+									FRONT: "ENABLED",
+									RIGHT: "ENABLED",
+									BACK: "ENABLED",
+									BOTTOM: "ENABLED"
+								},
+								Amount: 16000
+							}
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -0.5d,
+			description: ["The Mob Duplicator will convert FE and Essence into Mobs. Capture the mob you would like to duplicate in a Mob Imprisonment Tool, put it in the Mob Duplicator, and enjoy an endless supply of your mobs."],
+			dependencies: ["000000000000007A"],
+			id: "73E9574B069570BD",
+			tasks: [{
+				id: "27D665ECBDA02E5A",
+				type: "item",
+				item: "industrialforegoing:mob_duplicator"
+			}],
+			rewards: [{
+				id: "24B8F1EFDCF5A2D9",
+				type: "item",
+				item: "industrialforegoing:mob_imprisonment_tool"
 			}]
 		}
 	]
