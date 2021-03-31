@@ -11,9 +11,10 @@ onEvent('item.tooltip', (event) => {
     ];
 
     refinedStorageItems.forEach((item) => {
-        recipes.push('refinedstorage:' + item, [
-            'Can be dyed through crafting or by right clicking it with dye in-world.'
-        ]);
+        recipes.push({
+            items: ['refinedstorage:' + item],
+            text: ['Can be dyed through crafting or by right clicking it with dye in-world.']
+        });
     });
 
     recipes.forEach((recipe) => {
