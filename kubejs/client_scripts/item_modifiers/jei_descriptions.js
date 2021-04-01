@@ -112,13 +112,13 @@ events.listen('jei.information', (event) => {
         {
             items: ['integratedtunnels:part_interface_energy', 'integratedtunnels:part_importer_energy', 'integratedtunnels:part_exporter_energy'],
             description: [
-                'Max Energy Transfer Rate has been limited to 16,384 FE per tick.'
+                'Max Energy Transfer Rate has been limited to 65,536 FE per tick.'
             ]
         },
         {
             items: ['integratedtunnels:part_interface_fluid', 'integratedtunnels:part_importer_fluid', 'integratedtunnels:part_exporter_fluid'],
             description: [
-                'Max Fluid Transfer Rate has been limited to 16,384mb per tick.'
+                'Max Fluid Transfer Rate has been limited to 65,536 mb per tick.'
             ]
         }
     ];

@@ -61,7 +61,7 @@
 
 	[core.general]
 		#The maximum network fluid transfer rate.
-		fluidRateLimit = 16384
+		fluidRateLimit = 65536
 		#If particles should be shown and sounds should be played when tunnels are interacting with the world.
 		worldInteractionEvents = true
 		#If an anonymous mod startup analytics request may be sent to our analytics service.
@@ -74,4 +74,3 @@
 		ejectItemsOnInconsistentSimulationMovement = true
 		#If the version checker should be enabled.
 		versionChecker = false
-

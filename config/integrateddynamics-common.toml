@@ -21,7 +21,7 @@
 		#When enabled, networks will stop ticking and values will not be shown and evaluated again. This can be used to fix crashing networks by temporarily enabling this option.
 		safeMode = false
 		#The maximum network energy transfer rate.
-		energyRateLimit = 16384
+		energyRateLimit = 65536
 		#How deep the recursion stack on an operator can become. This is to avoid game crashes when building things like the omega operator.
 		operatorRecursionLimit = 256
 		#The number of threads that the ingredient network observer can use.
@@ -162,4 +162,3 @@
 	[biome.meneglin]
 		#The weight of spawning in the overworld, 0 disables spawning.
 		spawnWeight = 5
-

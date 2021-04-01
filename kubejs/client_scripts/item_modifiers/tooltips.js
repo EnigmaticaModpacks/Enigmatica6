@@ -12,7 +12,7 @@ onEvent('item.tooltip', (event) => {
             items: ['integratedtunnels:part_interface_fluid', 'integratedtunnels:part_importer_fluid', 'integratedtunnels:part_exporter_fluid'],
             text: [
                 Text.of(
-                    'Max Fluid Transfer Rate has been limited to 16,384mb per tick.'
+                    'Max Fluid Transfer Rate has been limited to 65,536 mb per tick.'
                 ).red()
             ],
         },
@@ -20,7 +20,7 @@ onEvent('item.tooltip', (event) => {
             items: ['integratedtunnels:part_interface_energy', 'integratedtunnels:part_importer_energy', 'integratedtunnels:part_exporter_energy'],
             text: [
                 Text.of(
-                    'Max Energy Transfer Rate has been limited to 16,384 FE per tick.'
+                    'Max Energy Transfer Rate has been limited to 65,536 FE per tick.'
                 ).red()
             ]
         }
