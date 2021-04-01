@@ -21,7 +21,7 @@
 		#When enabled, networks will stop ticking and values will not be shown and evaluated again. This can be used to fix crashing networks by temporarily enabling this option.
 		safeMode = false
 		#The maximum network energy transfer rate.
-		energyRateLimit = 2147483647
+		energyRateLimit = 65536
 		#How deep the recursion stack on an operator can become. This is to avoid game crashes when building things like the omega operator.
 		operatorRecursionLimit = 256
 		#The number of threads that the ingredient network observer can use.
@@ -97,7 +97,7 @@
 		#Priority list of mod id's when determining tag-based recipe outputs.
 		recipeTagOutputModPriorities = ["emendatusenigmatica", "minecraft", "immersiveengineering", "thermal", "create", "mekanism", "jaopca", "kubejs", "pneumaticcraft", "occultism", "industrialforegoing", "botania", "quark", "pedestals"]
 		#The default update frequency in ticks to use for new parts.
-		defaultPartUpdateFreq = 1
+		defaultPartUpdateFreq = 10
 		#The NBT tags that are not allowed to be read by displaying NBT tags or performing operations on them.
 		nbtTagBlacklist = []
 
@@ -162,4 +162,3 @@
 	[biome.meneglin]
 		#The weight of spawning in the overworld, 0 disables spawning.
 		spawnWeight = 5
-

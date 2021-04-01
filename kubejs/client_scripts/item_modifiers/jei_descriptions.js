@@ -107,6 +107,18 @@ events.listen('jei.information', (event) => {
             items: ['farmersdelight:red_mushroom_colony', 'minecraft:red_mushroom'],
             description: [
                 'Plant a Red Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
+            ],
+        },
+        {
+            items: ['integratedtunnels:part_interface_energy', 'integratedtunnels:part_importer_energy', 'integratedtunnels:part_exporter_energy'],
+            description: [
+                'Max Energy Transfer Rate has been limited to 65,536 FE per tick.'
+            ]
+        },
+        {
+            items: ['integratedtunnels:part_interface_fluid', 'integratedtunnels:part_importer_fluid', 'integratedtunnels:part_exporter_fluid'],
+            description: [
+                'Max Fluid Transfer Rate has been limited to 65,536 mb per tick.'
             ]
         }
     ];
