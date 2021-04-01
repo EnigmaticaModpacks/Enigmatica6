@@ -138,6 +138,19 @@
 	#
 	#Set to true to hide certain data in the Beepedia until the player has unlocked the bee. [true/false]
 	beepediaHideLocked = false
+	#
+	#Amount of time in ticks required to finish processing a honey bottle.
+	#Range: 0 ~ 2400
+	honeyProcessTime = 5
+	#
+	#Multiplier to the amount of ticks needed to process honey into honey blocks in the congealer.
+	#This value is multiplying the honeyProcessTime.
+	#Range: 1 ~ 16
+	congealerTimeMultiplier = 4
+	#
+	#Amount of honey Honey Pipes can transfer per tick.
+	#Range: 10 ~ 16000
+	maxHoneyPipeFlow = 250
 
 ["Honey Generator Options"]
 	#
