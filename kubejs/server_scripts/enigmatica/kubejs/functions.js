@@ -89,5 +89,5 @@ recipetypes_crushing = (event, recipe) => {
         .experience(recipe.experience);
     event.recipes.mekanism.enriching(recipe.output, recipe.input);
     event.recipes.immersiveengineering.crusher(recipe.output, recipe.input, recipe.secondary_output);
-    event.recipes.create.crushing([recipe.output, recipe.secondary_output], recipe.input);
+    event.recipes.create.milling([recipe.output, recipe.secondary_output], recipe.input);
 };
