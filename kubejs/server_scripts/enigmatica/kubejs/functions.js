@@ -84,6 +84,11 @@ recipetypes_crushing = (event, recipe) => {
         acceptChaliceInput: true,
         copyNBTToOutputs: false
     });
+    event.custom({
+        type: 'industrialforegoing:crusher',
+        input: recipe.input,
+        output: recipe.output
+    });
     event.recipes.thermal
         .pulverizer([recipe.output, recipe.secondary_output], recipe.input)
         .experience(recipe.experience);
