@@ -30,7 +30,7 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-04-01T17:49:51.6259671Z",
+  "lastPlayed": "2021-04-02T18:57:23.6258453Z",
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -46,7 +46,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-03-30T21:01:52.4931834Z",
+  "lastPreviousMatchUpdate": "2021-04-01T20:04:18.3889113Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -3112,17 +3112,23 @@
       "addonID": 445385,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3254968,
-        "displayName": "Tetranomicon 1.1",
-        "fileName": "tetranomicon-1.1.jar",
-        "fileDate": "2021-03-29T18:57:42.477Z",
-        "fileLength": 82997,
+        "id": 3258289,
+        "displayName": "Tetranomicon 1.2",
+        "fileName": "tetranomicon-1.2.jar",
+        "fileDate": "2021-04-02T00:03:34.523Z",
+        "fileLength": 87505,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3254/968/tetranomicon-1.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3258/289/tetranomicon-1.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 388992,
+            "type": 2,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 289712,
@@ -3131,13 +3137,7 @@
           },
           {
             "id": 0,
-            "addonId": 220318,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 326895,
+            "addonId": 365045,
             "type": 2,
             "fileId": 0
           },
@@ -3149,25 +3149,13 @@
           },
           {
             "id": 0,
-            "addonId": 264231,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 401284,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
             "addonId": 328085,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 430404,
+            "addonId": 264231,
             "type": 2,
             "fileId": 0
           },
@@ -3179,13 +3167,7 @@
           },
           {
             "id": 0,
-            "addonId": 365045,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 243121,
+            "addonId": 406825,
             "type": 2,
             "fileId": 0
           },
@@ -3197,14 +3179,20 @@
           },
           {
             "id": 0,
-            "addonId": 428877,
+            "addonId": 243121,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 351914,
-            "type": 3,
+            "addonId": 220318,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 430404,
+            "type": 2,
             "fileId": 0
           },
           {
@@ -3215,7 +3203,25 @@
           },
           {
             "id": 0,
-            "addonId": 406825,
+            "addonId": 401284,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 326895,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 428877,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 452344,
             "type": 2,
             "fileId": 0
           },
@@ -3224,13 +3230,19 @@
             "addonId": 291509,
             "type": 2,
             "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 351914,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1648177807,
+            "fingerprint": 787599430,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3242,13 +3254,13 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 52615064,
+            "fingerprint": 2907865259,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 4261112198,
+            "fingerprint": 273656688,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3259,7 +3271,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 91477254,
+        "packageFingerprint": 3096159729,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -3274,12 +3286,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "tetranomicon-1.1.jar"
+        "FileNameOnDisk": "tetranomicon-1.2.jar"
       },
       "dateInstalled": "2021-02-11T18:27:41.3272097Z",
-      "dateUpdated": "2021-03-30T18:50:01.7800002Z",
-      "dateLastUpdateAttempted": "2021-03-30T18:50:01.7800002Z",
-      "status": 5,
+      "dateUpdated": "2021-04-02T18:57:12.6120848Z",
+      "dateLastUpdateAttempted": "2021-04-02T18:57:12.6120848Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7205,14 +7217,14 @@
       "addonID": 392039,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3177300,
-        "displayName": "Pedestals -1.16.5_0.8r_hotfix_4",
-        "fileName": "pedestals-0.8r_hotfix_4.jar",
-        "fileDate": "2021-01-22T14:37:42.24Z",
-        "fileLength": 2036060,
-        "releaseType": 2,
+        "id": 3258445,
+        "displayName": "Pedestals - 1.16.5_0.8s",
+        "fileName": "pedestals-0.8s.jar",
+        "fileDate": "2021-04-02T03:58:32.217Z",
+        "fileLength": 2150158,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3177/300/pedestals-0.8r_hotfix_4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3258/445/pedestals-0.8s.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -7220,87 +7232,55 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2645839855,
-            "type": 3,
+            "fingerprint": 1348603594,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 1833324252,
-            "type": 3,
+            "fingerprint": 2363318348,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 72670770,
-            "type": 3,
+            "fingerprint": 3907831081,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 902818906,
-            "type": 3,
+            "fingerprint": 3467989504,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1413471134,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2929839102,
+        "packageFingerprint": 2246163147,
         "gameVersion": [
-          "1.16.3",
           "1.16.5",
-          "Forge",
-          "1.16.4"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2137623,
-        "projectId": 392039,
-        "packageFingerprintId": 591307690,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2664301,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "pedestals-0.8r_hotfix_4.jar"
+        "FileNameOnDisk": "pedestals-0.8s.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.7458032Z",
-      "dateUpdated": "2021-01-24T23:41:09.7458032Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-04-02T18:57:14.0892265Z",
+      "dateLastUpdateAttempted": "2021-04-02T18:57:14.0892265Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8522,22 +8502,22 @@
       "addonID": 443570,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3257525,
-        "displayName": "diet-forge-1.16.5-0.21.jar",
-        "fileName": "diet-forge-1.16.5-0.21.jar",
-        "fileDate": "2021-04-01T07:33:55.36Z",
-        "fileLength": 153855,
+        "id": 3258650,
+        "displayName": "diet-forge-1.16.5-0.22.jar",
+        "fileName": "diet-forge-1.16.5-0.22.jar",
+        "fileDate": "2021-04-02T11:04:48.857Z",
+        "fileLength": 154502,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3257/525/diet-forge-1.16.5-0.21.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3258/650/diet-forge-1.16.5-0.22.jar",
         "isAlternate": false,
-        "alternateFileId": 3257526,
+        "alternateFileId": 3258651,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3206957250,
+            "fingerprint": 1309712558,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -8549,13 +8529,13 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 1121736437,
+            "fingerprint": 3881101531,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "CHANGELOG.md",
-            "fingerprint": 3601244530,
+            "fingerprint": 2774859878,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -8603,7 +8583,7 @@
           },
           {
             "foldername": "README.md",
-            "fingerprint": 3560264821,
+            "fingerprint": 1231120630,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -8614,7 +8594,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2687718568,
+        "packageFingerprint": 4100483870,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -8628,11 +8608,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "diet-forge-1.16.5-0.21.jar"
+        "FileNameOnDisk": "diet-forge-1.16.5-0.22.jar"
       },
       "dateInstalled": "2021-02-22T20:52:28.1690228Z",
-      "dateUpdated": "2021-04-01T17:49:30.5083596Z",
-      "dateLastUpdateAttempted": "2021-04-01T17:49:30.5083596Z",
+      "dateUpdated": "2021-04-02T18:57:15.5100775Z",
+      "dateLastUpdateAttempted": "2021-04-02T18:57:15.5100775Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -13458,34 +13438,34 @@
       "addonID": 287342,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3223141,
-        "displayName": "titanium-1.16.5-3.2.8.jar",
-        "fileName": "titanium-1.16.5-3.2.8.jar",
-        "fileDate": "2021-03-01T19:34:06.873Z",
-        "fileLength": 631621,
+        "id": 3259754,
+        "displayName": "titanium-1.16.5-3.2.8.1.jar",
+        "fileName": "titanium-1.16.5-3.2.8.1.jar",
+        "fileDate": "2021-04-02T14:14:52.893Z",
+        "fileLength": 632290,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3223/141/titanium-1.16.5-3.2.8.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3259/754/titanium-1.16.5-3.2.8.1.jar",
         "isAlternate": false,
-        "alternateFileId": 3223142,
+        "alternateFileId": 3259755,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3173409103,
+            "fingerprint": 2716749116,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 340652012,
+            "fingerprint": 950355219,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "LICENSE.txt",
-            "fingerprint": 1136524626,
+            "foldername": "assets",
+            "fingerprint": 988698250,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -13502,8 +13482,8 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3273911401,
+            "foldername": "LICENSE.txt",
+            "fingerprint": 1136524626,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -13514,13 +13494,13 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "assets",
-            "fingerprint": 988698250,
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3273911401,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1702718784,
+        "packageFingerprint": 1473475888,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -13536,12 +13516,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "titanium-1.16.5-3.2.8.jar"
+        "FileNameOnDisk": "titanium-1.16.5-3.2.8.1.jar"
       },
       "dateInstalled": "2021-03-01T20:28:03.7326881Z",
-      "dateUpdated": "2021-03-01T20:28:03.7366111Z",
-      "dateLastUpdateAttempted": "2021-03-01T20:28:03.7366111Z",
-      "status": 5,
+      "dateUpdated": "2021-04-02T18:57:11.7105863Z",
+      "dateLastUpdateAttempted": "2021-04-02T18:57:11.7105863Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16688,108 +16668,84 @@
       "addonID": 433071,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3156413,
-        "displayName": "Undergarden-Tetra Patch 1.1.1",
-        "fileName": "Undergarden-Tetra Patch-1.1.1.jar",
-        "fileDate": "2021-01-02T18:22:48.84Z",
-        "fileLength": 15452,
+        "id": 3258301,
+        "displayName": "Undergarden-Tetra Patch 1.2.0",
+        "fileName": "Undergarden-Tetra Patch-1.2.0.jar",
+        "fileDate": "2021-04-02T00:13:27.963Z",
+        "fileLength": 21326,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3156/413/Undergarden-Tetra Patch-1.1.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3258/301/Undergarden-Tetra Patch-1.2.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 53767069,
+            "id": 0,
             "addonId": 289712,
             "type": 3,
-            "fileId": 3156413
+            "fileId": 0
           },
           {
-            "id": 53767070,
+            "id": 0,
             "addonId": 379849,
             "type": 3,
-            "fileId": 3156413
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1652266060,
-            "type": 3,
+            "fingerprint": 3780387607,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3611722448,
-            "type": 3,
+            "fingerprint": 476573060,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 433646799,
-            "type": 3,
+            "fingerprint": 4053830541,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 3931258181,
-            "type": 3,
+            "fingerprint": 4134009527,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 2975439979,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 581516100,
+        "packageFingerprint": 1937114415,
         "gameVersion": [
-          "1.16.3",
+          "1.16.5",
           "Forge",
           "1.16.4"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2110990,
-        "projectId": 433071,
-        "packageFingerprintId": 578903262,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 2622371,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Undergarden-Tetra Patch-1.1.1.jar"
+        "FileNameOnDisk": "Undergarden-Tetra Patch-1.2.0.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.7009239Z",
-      "dateUpdated": "2021-01-24T23:41:09.7009239Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-04-02T18:57:11.7825861Z",
+      "dateLastUpdateAttempted": "2021-04-02T18:57:11.7825861Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20861,92 +20817,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 227443,
-      "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
-      "installedFile": {
-        "id": 3257497,
-        "displayName": "thermal_dyenamics-1.16.4-1.0.0.jar",
-        "fileName": "thermal_dyenamics-1.16.4-1.0.0.jar",
-        "fileDate": "2021-04-01T06:56:58.61Z",
-        "fileLength": 55942,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3257/497/thermal_dyenamics-1.16.4-1.0.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 222880,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2685714249,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "cofh",
-            "fingerprint": 3014969928,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2635045668,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 354527838,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3700272641,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1303263362,
-        "gameVersion": [
-          "1.16.5",
-          "Forge",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "thermal_dyenamics-1.16.4-1.0.0.jar"
-      },
-      "dateInstalled": "2021-04-01T17:49:41.2657563Z",
-      "dateUpdated": "2021-04-01T17:49:41.2687538Z",
-      "dateLastUpdateAttempted": "2021-04-01T17:49:41.2687538Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 285612,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
@@ -21258,17 +21128,23 @@
       "addonID": 401955,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
-        "id": 3257240,
-        "displayName": "ars_nouveau-1.16.4-1.12.3.jar",
-        "fileName": "ars_nouveau-1.16.4-1.12.3.jar",
-        "fileDate": "2021-03-31T23:56:19.877Z",
-        "fileLength": 2866582,
+        "id": 3259810,
+        "displayName": "ars_nouveau-1.16.4-1.12.4.jar",
+        "fileName": "ars_nouveau-1.16.4-1.12.4.jar",
+        "fileDate": "2021-04-02T15:22:37.557Z",
+        "fileLength": 2868426,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3257/240/ars_nouveau-1.16.4-1.12.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3259/810/ars_nouveau-1.16.4-1.12.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 388172,
+            "type": 3,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 309927,
@@ -21280,25 +21156,19 @@
             "addonId": 306770,
             "type": 3,
             "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 388172,
-            "type": 3,
-            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2634706264,
+            "fingerprint": 1499474833,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3339111537,
+            "fingerprint": 2252269816,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -21316,7 +21186,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 1805843599,
+            "fingerprint": 3425111143,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -21333,7 +21203,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2861863869,
+        "packageFingerprint": 415115011,
         "gameVersion": [
           "1.16.5",
           "1.16.4"
@@ -21347,11 +21217,11 @@
         "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ars_nouveau-1.16.4-1.12.3.jar"
+        "FileNameOnDisk": "ars_nouveau-1.16.4-1.12.4.jar"
       },
       "dateInstalled": "2021-01-24T23:45:35.2264903Z",
-      "dateUpdated": "2021-04-01T17:49:24.2532908Z",
-      "dateLastUpdateAttempted": "2021-04-01T17:49:24.2532908Z",
+      "dateUpdated": "2021-04-02T18:57:06.9449962Z",
+      "dateLastUpdateAttempted": "2021-04-02T18:57:06.9449962Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -28262,7 +28132,7 @@
       "dateInstalled": "2021-01-24T23:41:09.7288477Z",
       "dateUpdated": "2021-01-24T23:41:09.7288477Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
