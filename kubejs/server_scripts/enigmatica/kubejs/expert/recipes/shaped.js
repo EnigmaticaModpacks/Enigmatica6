@@ -27,6 +27,26 @@ events.listen('recipes', (event) => {
             id: 'thermal:machine_frame'
         },
         {
+            output: 'thermal:energy_cell_frame',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:plates/lead',
+                B: '#forge:glass_panes',
+                C: '#forge:gears/electrum'
+            },
+            id: 'thermal:energy_cell_frame'
+        },
+        {
+            output: 'thermal:fluid_cell_frame',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:plates/copper',
+                B: '#forge:glass_panes',
+                C: '#forge:gears/bronze'
+            },
+            id: 'thermal:fluid_cell_frame'
+        },
+        {
             output: 'minecraft:furnace',
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
@@ -37,9 +57,9 @@ events.listen('recipes', (event) => {
         },
         {
             output: 'minecraft:piston',
-            pattern: ['EDE', 'ABA', 'ACA'],
+            pattern: ['EBE', 'ADA', 'ACA'],
             key: {
-                A: '#forge:stone',
+                A: 'minecraft:smooth_stone',
                 B: ['#forge:ingots/iron', '#forge:ingots/aluminum', '#forge:ingots/copper', '#forge:ingots/tin'],
                 C: '#forge:dusts/redstone',
                 D: ['#forge:rods/iron', '#forge:rods/aluminum', '#forge:rods/copper', '#forge:rods/tin'],
@@ -49,9 +69,9 @@ events.listen('recipes', (event) => {
         },
         {
             output: Item.of('minecraft:piston', 2),
-            pattern: ['EDE', 'ABA', 'ACA'],
+            pattern: ['EBE', 'ADA', 'ACA'],
             key: {
-                A: '#forge:stone',
+                A: 'minecraft:smooth_stone',
                 B: [
                     '#forge:ingots/silver',
                     '#forge:ingots/lead',
@@ -70,6 +90,66 @@ events.listen('recipes', (event) => {
                 E: '#minecraft:planks'
             },
             id: 'minecraft:piston_alternative'
+        },
+        {
+            output: Item.of('minecraft:blast_furnace'),
+            pattern: ['DDD', 'DBD', 'ACA'],
+            key: {
+                A: 'minecraft:smooth_stone',
+                B: 'minecraft:furnace',
+                C: 'minecraft:campfire',
+                D: ['#forge:plates/iron', '#forge:plates/tin', '#forge:plates/aluminum']
+            },
+            id: 'minecraft:blast_furnace'
+        },
+        {
+            output: Item.of('minecraft:smoker'),
+            pattern: ['DAD', 'ABA', 'DCD'],
+            key: {
+                A: '#minecraft:logs',
+                B: 'minecraft:furnace',
+                C: 'minecraft:campfire',
+                D: '#forge:rods/wooden'
+            },
+            id: 'minecraft:smoker'
+        },
+        {
+            output: Item.of('thermal:rf_coil'),
+            pattern: ['CA ', 'ABA', ' AC'],
+            key: {
+                A: '#forge:dusts/redstone',
+                B: '#forge:rods/gold_copper',
+                C: '#forge:nuggets/gold'
+            },
+            id: 'thermal:rf_coil'
+        },
+        {
+            output: Item.of('thermal:rf_coil'),
+            pattern: [' AC', 'ABA', 'CA '],
+            key: {
+                A: '#forge:dusts/redstone',
+                B: '#forge:rods/gold_copper',
+                C: '#forge:nuggets/gold'
+            },
+            id: 'thermal:rf_coil_mirrored'
+        },
+        {
+            output: Item.of('thermal:redstone_servo'),
+            pattern: ['A A', ' B ', 'A A'],
+            key: {
+                A: '#forge:dusts/redstone',
+                B: ['#forge:rods/iron', '#forge:rods/tin']
+            },
+            id: 'thermal:redstone_servo'
+        },
+        {
+            output: Item.of('thermal:redstone_servo', 2),
+            pattern: ['A A', ' B ', 'A A'],
+            key: {
+                A: '#forge:dusts/redstone',
+                B: '#forge:rods/lead'
+            },
+            id: 'kubejs:thermal_redstone_servo_with_lead'
         }
     ];
 
