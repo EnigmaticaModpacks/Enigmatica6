@@ -8,7 +8,7 @@ events.listen('recipes', (event) => {
         'pneumaticcraft:explosion_crafting/compressed_iron_block'
     ];
 
-    const outputRemovals = ['create:andesite_alloy'];
+    const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
 
     idRemovals.forEach((id) => {
         event.remove({ id: id });

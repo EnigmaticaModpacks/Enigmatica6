@@ -120,6 +120,7 @@ var itemsToHide = [
     'mapperbase:iron_plate',
     'mapperbase:iron_rod',
     'mapperbase:raw_bitumen',
+    'mekanism:fluorite_gem',
     'morevanillalib:obsidian_shard',
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',

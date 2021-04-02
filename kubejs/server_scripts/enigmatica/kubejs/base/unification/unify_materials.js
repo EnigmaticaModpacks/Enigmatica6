@@ -75,6 +75,17 @@ events.listen('recipes', (event) => {
             return;
         }
 
+        switch (material) {
+            case 'dimensional':
+                count = 9;
+                break;
+            case 'fluorite':
+                count = 7;
+                break;
+            default:
+                break;
+        }
+
         event.custom({
             type: 'astralsorcery:infuser',
             fluidInput: 'astralsorcery:liquid_starlight',
@@ -1136,8 +1147,8 @@ events.listen('recipes', (event) => {
                 break;
             case 'dimensional':
                 secondaryMaterial = 'dimensional';
-                stoneOutput = 'betterendforge:endstone_dust';
                 primaryOutput = gem;
+                primaryCount = 8;
                 break;
             case 'mana':
                 secondaryMaterial = 'mana';

@@ -4,7 +4,12 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedD
 
 **Improvements/Changes**
 
--
+-   XNet: Buffed fluid transfer rate
+    -   Normal Connectors can now move 4000 mb per operation, up from 1000
+    -   Advanced Connectors can now move 32000 mb per operation, up from 5000
+-   XNet: Buffed energy transfer rate 5x
+    -   Normal Connectors: 25000 FE up from 5000 FE
+    -   Advanced Connectors: 500000 FE up from 100000 FE
 
 **Bug Fixes**
 

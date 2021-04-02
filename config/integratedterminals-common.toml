@@ -6,6 +6,10 @@
 		terminalCraftingBaseConsumption = 1
 		#The base energy usage for the storage terminal.
 		terminalStorageBaseConsumption = 2
+		#If shift-clicking on the crafting terminal's crafting result slot should only produce a single result.
+		shiftClickCraftingResultLimit = false
+		#If the search box and button states should be synchronized between the item storage and crafting tabs.
+		syncItemStorageAndCraftingTabStates = true
 
 [core]
 

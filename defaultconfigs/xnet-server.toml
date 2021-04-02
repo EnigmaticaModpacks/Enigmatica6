@@ -32,16 +32,16 @@
 	maxRfAdvancedConnector = 500000
 	#Maximum RF/rate that a normal connector can input or output
 	#Range: 1 ~ 1000000000
-	maxRfRateNormal = 10000
+	maxRfRateNormal = 25000
 	#Maximum RF/rate that an advanced connector can input or output
 	#Range: 1 ~ 1000000000
-	maxRfRateAdvanced = 100000
+	maxRfRateAdvanced = 500000
 	#Maximum fluid per operation that a normal connector can input or output
 	#Range: 1 ~ 1000000000
-	maxFluidRateNormal = 1000
+	maxFluidRateNormal = 4000
 	#Maximum fluid per operation that an advanced connector can input or output
 	#Range: 1 ~ 1000000000
-	maxFluidRateAdvanced = 5000
+	maxFluidRateAdvanced = 32000
 	#Maximum number of published channels that a routing channel can support
 	#Range: 1 ~ 1000000000
 	maxPublishedChannels = 32
