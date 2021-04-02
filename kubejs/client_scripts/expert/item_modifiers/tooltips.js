@@ -1,4 +1,7 @@
 onEvent('item.tooltip', (event) => {
+    if (!expertMode) {
+        return;
+    }
     const recipes = [
         {
             items: ['tiab:timeinabottle'],
