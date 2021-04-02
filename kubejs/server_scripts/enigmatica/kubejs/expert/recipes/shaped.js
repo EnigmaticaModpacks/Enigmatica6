@@ -56,18 +56,6 @@ events.listen('recipes', (event) => {
             id: 'minecraft:furnace'
         },
         {
-            output: 'minecraft:piston',
-            pattern: ['EBE', 'ADA', 'ACA'],
-            key: {
-                A: 'minecraft:smooth_stone',
-                B: ['#forge:ingots/iron', '#forge:ingots/aluminum', '#forge:ingots/copper', '#forge:ingots/tin'],
-                C: '#forge:dusts/redstone',
-                D: ['#forge:rods/iron', '#forge:rods/aluminum', '#forge:rods/copper', '#forge:rods/tin'],
-                E: '#minecraft:planks'
-            },
-            id: 'minecraft:piston'
-        },
-        {
             output: Item.of('minecraft:piston', 2),
             pattern: ['EBE', 'ADA', 'ACA'],
             key: {
@@ -90,6 +78,18 @@ events.listen('recipes', (event) => {
                 E: '#minecraft:planks'
             },
             id: 'minecraft:piston_alternative'
+        },
+        {
+            output: 'minecraft:piston',
+            pattern: ['EBE', 'ADA', 'ACA'],
+            key: {
+                A: 'minecraft:smooth_stone',
+                B: ['#forge:ingots/iron', '#forge:ingots/aluminum', '#forge:ingots/copper', '#forge:ingots/tin'],
+                C: '#forge:dusts/redstone',
+                D: ['#forge:rods/iron', '#forge:rods/aluminum', '#forge:rods/copper', '#forge:rods/tin'],
+                E: '#minecraft:planks'
+            },
+            id: 'minecraft:piston'
         },
         {
             output: Item.of('minecraft:blast_furnace'),
