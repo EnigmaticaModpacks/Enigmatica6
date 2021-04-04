@@ -366,3 +366,6 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal'
 ];
+
+const normalMode = global.packmode == 'normal';
+const expertMode = global.packmode == 'expert';
