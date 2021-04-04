@@ -15,6 +15,8 @@ const validApiaryBlocks = [
     'glassential:glass_light',
     'glassential:glass_redstone',
 
+    /mcwwindows:/,
+
     'minecraft:soul_sand',
     '#minecraft:stone_bricks'
 ];
@@ -95,4 +97,4 @@ const combVariants = [
     'wither',
     'zinc',
     'zombie'
-]
+];
