@@ -63,6 +63,18 @@ events.listen('recipes', (event) => {
             {
                 outputs: [Item.of('minecraft:quartz').withChance(0.25), Item.of('minecraft:redstone').withChance(0.05)],
                 input: 'byg:quartzite_sand'
+            },
+            {
+                outputs: ['botanypots:botany_pot'],
+                input: '#enigmatica:washables/simplebotanypots'
+            },
+            {
+                outputs: ['botanypots:hopper_botany_pot'],
+                input: '#enigmatica:washables/hopperbotanypots'
+            },
+            {
+                outputs: ['minecraft:terracotta'],
+                input: '#enigmatica:washables/terracotta'
             }
         ],
         rusty_items: [
@@ -87,6 +99,7 @@ events.listen('recipes', (event) => {
     data.recipes.forEach((recipe) => {
         event.recipes.create.splashing(recipe.outputs, recipe.input);
     });
+
     data.rusty_items.forEach((item) => {
         event.recipes.create.splashing([item], item.replace('rusty_', ''));
     });
