@@ -28,6 +28,22 @@ events.listen('recipes', (event) => {
             {
                 input: 'minecraft:sugar_cane',
                 output: Item.of('minecraft:sugar', 2)
+            },
+            {
+                input: 'thermal:blizz_rod',
+                output: Item.of('thermal:blizz_powder', 4)
+            },
+            {
+                input: 'thermal:blitz_rod',
+                output: Item.of('thermal:blitz_powder', 4)
+            },
+            {
+                input: 'thermal:basalz_rod',
+                output: Item.of('thermal:basalz_powder', 4)
+            },
+            {
+                input: 'minecraft:blaze_rod',
+                output: Item.of('minecraft:blaze_powder', 4)
             }
         ]
     };
