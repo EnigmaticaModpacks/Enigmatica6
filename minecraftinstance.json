@@ -12422,7 +12422,7 @@
       "dateInstalled": "2021-01-24T23:41:09.6341029Z",
       "dateUpdated": "2021-04-05T18:05:04.0996714Z",
       "dateLastUpdateAttempted": "2021-04-05T18:05:04.0996714Z",
-      "status": 4,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14529,84 +14529,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 432817,
-      "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
-      "installedFile": {
-        "id": 3256638,
-        "displayName": "dpanvil-1.16.4-1.1.3.jar",
-        "fileName": "dpanvil-1.16.4-1.1.3.jar",
-        "fileDate": "2021-03-31T13:02:33.773Z",
-        "fileLength": 117706,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3256/638/dpanvil-1.16.4-1.1.3.jar",
-        "isAlternate": false,
-        "alternateFileId": 3256639,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3930389711,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "sirttas",
-            "fingerprint": 2395764534,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "dpanvil.mixins.json",
-            "fingerprint": 525088682,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 654560874,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "dpanvil.refmap.json",
-            "fingerprint": 2133986271,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 645631621,
-        "gameVersion": [
-          "1.16.5",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "dpanvil-1.16.4-1.1.3.jar"
-      },
-      "dateInstalled": "2021-04-04T15:45:17.874351Z",
-      "dateUpdated": "2021-04-04T15:45:17.878353Z",
-      "dateLastUpdateAttempted": "2021-04-04T15:45:17.878353Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
       "addonID": 354522,
       "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
       "installedFile": {
@@ -16354,7 +16276,7 @@
       "dateInstalled": "2021-01-24T23:41:09.7677447Z",
       "dateUpdated": "2021-01-24T23:41:09.7677447Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20101,120 +20023,6 @@
       "dateInstalled": "2021-01-24T23:41:09.6401296Z",
       "dateUpdated": "2021-01-24T23:41:09.6401296Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 395158,
-      "gameInstanceID": "b68b5dc4-7bd5-4e6f-834a-a24d23b7a5d0",
-      "installedFile": {
-        "id": 3261996,
-        "displayName": "elementalcraft-1.16.5-2.6.7.jar",
-        "fileName": "elementalcraft-1.16.5-2.6.7.jar",
-        "fileDate": "2021-04-04T14:17:25.603Z",
-        "fileLength": 1674284,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3261/996/elementalcraft-1.16.5-2.6.7.jar",
-        "isAlternate": false,
-        "alternateFileId": 3261997,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 432817,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 306770,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2160695682,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "sirttas",
-            "fingerprint": 2417060892,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": ".cache",
-            "fingerprint": 4120403876,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 1770891951,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 1126575266,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "elementalcraft.mixins.json",
-            "fingerprint": 3308070037,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 819089247,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "elementalcraft.refmap.json",
-            "fingerprint": 801939372,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 2518090995,
-        "gameVersion": [
-          "1.16.5"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2021-01-15T14:14:48.91Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "elementalcraft-1.16.5-2.6.7.jar"
-      },
-      "dateInstalled": "2021-04-04T15:45:18.1465354Z",
-      "dateUpdated": "2021-04-04T15:45:18.1547503Z",
-      "dateLastUpdateAttempted": "2021-04-04T15:45:18.1547503Z",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
