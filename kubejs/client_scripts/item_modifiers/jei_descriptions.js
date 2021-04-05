@@ -41,7 +41,7 @@ events.listen('jei.information', (event) => {
         {
             items: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
             description: [
-                'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+                'The Basalz spawns naturally in barren biomes, such as Badlands. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {

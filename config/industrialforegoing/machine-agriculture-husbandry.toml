@@ -111,3 +111,11 @@
 		#Essence needed to spawn [Mob health*EssenceNeeded] - Default: [12]
 		essenceNeeded = 12
 
+	[MachineAgricultureHusbandryConfig.WitherBuilderConfig]
+		#Cooldown Time in Ticks [20 Ticks per Second] - Default: [40 (5s)]
+		maxProgress = 40
+		#Amount of Power Consumed per Operation - Default: [500FE]
+		powerPerOperation = 20000
+		#Max Stored Power [FE] - Default: [70000 FE]
+		maxStoredPower = 70000
+
