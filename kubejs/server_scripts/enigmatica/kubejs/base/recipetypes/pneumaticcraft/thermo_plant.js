@@ -57,6 +57,30 @@ events.listen('recipes', (event) => {
                 pressure: 3.0,
                 exothermic: false,
                 temperature: { min_temp: 1273 }
+            },
+            {
+                type: 'pneumaticcraft:thermo_plant',
+                fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:sap', amount: 20 },
+                fluid_output: { fluid: 'thermal:syrup', amount: 1 },
+                speed: 10.0,
+                exothermic: false,
+                temperature: { min_temp: 377 }
+            },
+            {
+                type: 'pneumaticcraft:thermo_plant',
+                fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:syrup', amount: 25 },
+                item_output: { item: 'minecraft:sugar', count: 2 },
+                speed: 10.0,
+                exothermic: false,
+                temperature: { min_temp: 377 }
+            },
+            {
+                type: 'pneumaticcraft:thermo_plant',
+                fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'thermal:resin', amount: 400 },
+                fluid_output: { fluid: 'thermal:tree_oil', amount: 200 },
+                item_output: { item: 'thermal:rosin', count: 1 },
+                exothermic: false,
+                temperature: { min_temp: 377 }
             }
         ]
     };

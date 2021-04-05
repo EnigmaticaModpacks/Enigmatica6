@@ -9,28 +9,36 @@ const treeRegistry = [
                 trunk: 'ars_nouveau:blue_archwood_log',
                 leaf: 'ars_nouveau:blue_archwood_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
             },
             {
                 sapling: 'ars_nouveau:green_archwood_sapling',
                 trunk: 'ars_nouveau:green_archwood_log',
                 leaf: 'ars_nouveau:green_archwood_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
             },
             {
                 sapling: 'ars_nouveau:purple_archwood_sapling',
                 trunk: 'ars_nouveau:purple_archwood_log',
                 leaf: 'ars_nouveau:purple_archwood_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
             },
             {
                 sapling: 'ars_nouveau:red_archwood_sapling',
                 trunk: 'ars_nouveau:red_archwood_log',
                 leaf: 'ars_nouveau:red_archwood_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
             },
             {
                 sapling: 'byg:araucaria_sapling',
@@ -49,7 +57,9 @@ const treeRegistry = [
                 trunk: 'byg:baobab_log',
                 leaf: 'byg:baobab_leaves',
                 fruit: 'byg:baobab_fruit',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:latex',
+                amount: 50
             },
             {
                 sapling: 'byg:blue_enchanted_sapling',
@@ -156,7 +166,9 @@ const treeRegistry = [
                 sapling: 'byg:mahogany_sapling',
                 trunk: 'byg:mahogany_log',
                 leaf: 'byg:mahogany_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:latex',
+                amount: 50
             },
             {
                 sapling: 'byg:mangrove_sapling',
@@ -232,7 +244,9 @@ const treeRegistry = [
                 sapling: 'byg:rainbow_eucalyptus_sapling',
                 trunk: 'byg:rainbow_eucalyptus_log',
                 leaf: 'byg:rainbow_eucalyptus_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:latex',
+                amount: 50
             },
             {
                 sapling: 'byg:red_birch_sapling',
@@ -345,7 +359,9 @@ const treeRegistry = [
                 trunk: 'minecraft:jungle_log',
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'alexsmobs:banana',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:latex',
+                amount: 50
             },
             {
                 sapling: 'minecraft:oak_sapling',
@@ -364,142 +380,186 @@ const treeRegistry = [
                 sapling: 'quark:blue_blossom_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'quark:blue_blossom_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 50
             },
             {
                 sapling: 'quark:lavender_blossom_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'quark:lavender_blossom_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 50
             },
             {
                 sapling: 'quark:orange_blossom_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'quark:orange_blossom_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 50
             },
             {
                 sapling: 'quark:pink_blossom_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'quark:pink_blossom_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 50
             },
             {
                 sapling: 'quark:red_blossom_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'quark:red_blossom_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 50
             },
             {
                 sapling: 'quark:yellow_blossom_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'quark:yellow_blossom_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 50
             },
             {
                 sapling: 'simplefarming:apple_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:oak_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:apricot_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:birch_leaves',
                 fruit: 'simplefarming:apricot',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:banana_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'simplefarming:banana',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:cherry_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'simplefarming:cherries',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:mango_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'simplefarming:mango',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:olive_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:birch_leaves',
                 fruit: 'simplefarming:olives',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:orange_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'simplefarming:orange',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:pear_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:oak_leaves',
                 fruit: 'simplefarming:pear',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'simplefarming:plum_sapling',
                 trunk: 'simplefarming:fruit_log',
                 leaf: 'minecraft:birch_leaves',
                 fruit: 'simplefarming:plum',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'undergarden:smogstem_sapling',
                 trunk: 'undergarden:smogstem_log',
                 leaf: 'undergarden:smogstem_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'undergarden:wigglewood_sapling',
                 trunk: 'undergarden:wigglewood_log',
                 leaf: 'undergarden:wigglewood_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'betterendforge:helix_tree_sapling',
                 trunk: 'betterendforge:helix_tree_log',
                 leaf: 'betterendforge:helix_tree_leaves',
-                substrate: 'amber_moss'
+                substrate: 'amber_moss',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'betterendforge:tenanea_sapling',
                 trunk: 'betterendforge:tenanea_log',
                 leaf: 'betterendforge:tenanea_leaves',
-                substrate: 'pink_moss'
+                substrate: 'pink_moss',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'betterendforge:pythadendron_sapling',
                 trunk: 'betterendforge:pythadendron_log',
                 leaf: 'betterendforge:pythadendron_leaves',
-                substrate: 'chorus_nylium'
+                substrate: 'chorus_nylium',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'betterendforge:lacugrove_sapling',
                 trunk: 'betterendforge:lacugrove_log',
                 leaf: 'betterendforge:lacugrove_leaves',
-                substrate: 'end_moss'
+                substrate: 'end_moss',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'betterendforge:dragon_tree_sapling',
                 trunk: 'betterendforge:dragon_tree_log',
                 leaf: 'betterendforge:dragon_tree_leaves',
-                substrate: 'shadow_grass'
+                substrate: 'shadow_grass',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'integrateddynamics:menril_sapling',
@@ -512,70 +572,92 @@ const treeRegistry = [
                 sapling: 'atmospheric:rosewood_sapling',
                 trunk: 'atmospheric:rosewood_log',
                 leaf: 'atmospheric:rosewood_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'atmospheric:morado_sapling',
                 trunk: 'atmospheric:morado_log',
                 leaf: 'atmospheric:morado_leaves',
                 extraDecoration: 'atmospheric:flowering_morado_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'atmospheric:yucca_sapling',
                 trunk: 'atmospheric:yucca_log',
                 leaf: 'atmospheric:yucca_leaves',
                 fruit: 'atmospheric:yucca_bundle',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'atmospheric:kousa_sapling',
                 trunk: 'atmospheric:kousa_log',
                 leaf: 'atmospheric:kousa_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'atmospheric:aspen_sapling',
                 trunk: 'atmospheric:aspen_log',
                 leaf: 'atmospheric:aspen_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'atmospheric:grimwood_sapling',
                 trunk: 'atmospheric:grimwood_log',
                 leaf: 'atmospheric:grimwood_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'upgrade_aquatic:river_sapling',
                 trunk: 'upgrade_aquatic:river_log',
                 leaf: 'upgrade_aquatic:river_leaves',
                 fruit: 'upgrade_aquatic:mulberry',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 25
             },
             {
                 sapling: 'autumnity:red_maple_sapling',
                 trunk: 'autumnity:maple_log',
                 leaf: 'autumnity:red_maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                amount: 25
             },
             {
                 sapling: 'autumnity:orange_maple_sapling',
                 trunk: 'autumnity:maple_log',
                 leaf: 'autumnity:orange_maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                amount: 25
             },
             {
                 sapling: 'autumnity:yellow_maple_sapling',
                 trunk: 'autumnity:maple_log',
                 leaf: 'autumnity:yellow_maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                amount: 25
             },
             {
                 sapling: 'autumnity:maple_sapling',
                 trunk: 'autumnity:maple_log',
                 leaf: 'autumnity:maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                amount: 25
             }
         ]
     },
