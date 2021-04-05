@@ -61,6 +61,10 @@ events.listen('recipes', (event) => {
         'astralsorcery:infuser/gold_ore',
 
         'autumnity:turkey_piece',
+        'autumnity:syrup_bottle',
+        'autumnity:syrup_bottle_from_smoking',
+        'autumnity:syrup_bottle_from_campfire_cooking',
+        'autumnity:sugar_from_sap_bottle',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
 
@@ -133,6 +137,11 @@ events.listen('recipes', (event) => {
         'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:storage/sugar_cane_from_block',
+        'thermal:devices/plugins/byg/tree_extractor_byg_rainbow_eucalyptus',
+        'thermal:devices/plugins/byg/tree_extractor_byg_mahogany',
+        'thermal:devices/plugins/byg/tree_extractor_byg_baobab',
+        'thermal:devices/tree_extractor/tree_extractor_jungle',
+
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 

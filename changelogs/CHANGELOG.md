@@ -2,6 +2,8 @@
 
 _Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.9.md)_
 
+**Note: Integrated Dynamics energy and fluid transfer is being nerfed, make sure your Reactor can handle the change before updating :D**
+
 **Improvements/Changes**
 
 -   XNet: Buffed fluid transfer rate
@@ -10,10 +12,13 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedD
 -   XNet: Buffed energy transfer rate 5x
     -   Normal Connectors: 25000 FE up from 5000 FE
     -   Advanced Connectors: 500000 FE up from 100000 FE
+-   Alex's Mobs: Lowered Kangaroo spawn weight
+-   ArsNouveau: Lowered new Wilden creature's spawn weight
+-   IntegratedDynamics: Lowered max FE transfer of a network to 65,536 FE/t
+-   IntegratedDynamics: Lowered max fluid transfer of a network to 65,536 mb/t
+-   IntegratedDynamics: Default new part update frequency of 10 ticks (up from 1)
 
 **Bug Fixes**
-
--
 
 **Removed Mods**
 

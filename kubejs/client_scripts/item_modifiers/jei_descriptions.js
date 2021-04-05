@@ -41,7 +41,7 @@ events.listen('jei.information', (event) => {
         {
             items: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
             description: [
-                'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+                'The Basalz spawns naturally in barren biomes, such as Badlands. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
@@ -107,18 +107,28 @@ events.listen('jei.information', (event) => {
             items: ['farmersdelight:red_mushroom_colony', 'minecraft:red_mushroom'],
             description: [
                 'Plant a Red Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
-            ],
-        },
-        {
-            items: ['integratedtunnels:part_interface_energy', 'integratedtunnels:part_importer_energy', 'integratedtunnels:part_exporter_energy'],
-            description: [
-                'Max Energy Transfer Rate has been limited to 65,536 FE per tick.'
             ]
         },
         {
-            items: ['integratedtunnels:part_interface_fluid', 'integratedtunnels:part_importer_fluid', 'integratedtunnels:part_exporter_fluid'],
+            items: [
+                'integratedtunnels:part_interface_energy',
+                'integratedtunnels:part_importer_energy',
+                'integratedtunnels:part_exporter_energy'
+            ],
+            description: ['Max Energy Transfer Rate has been limited to 65,536 FE per tick.']
+        },
+        {
+            items: [
+                'integratedtunnels:part_interface_fluid',
+                'integratedtunnels:part_importer_fluid',
+                'integratedtunnels:part_exporter_fluid'
+            ],
+            description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
+        },
+        {
+            items: ['autumnity:sap_bottle', 'autumnity:sappy_maple_log', 'autumnity:sappy_maple_wood'],
             description: [
-                'Max Fluid Transfer Rate has been limited to 65,536 mb per tick.'
+                'Right-clicking a sappy maple log or sappy maple wood with a glass battle will turn the block into its stripped variant and fill the bottle with sap.'
             ]
         }
     ];

@@ -129,7 +129,6 @@ events.listen('recipes', (event) => {
         }
 
         event.remove({ output: wire });
-        event.remove({ id: /immersiveengineering:crafting\/wire/ });
 
         const wireCutters = 'immersiveengineering:wirecutter';
         let output = wire,
