@@ -291,9 +291,9 @@
 			x: -0.5d,
 			y: 7.5d,
 			description: [
-				"By default, this will generate cobblestone and place it in the display. It will continue to generate cobblestone until the display is full.",
+				"By default, this will generate cobblestone and place it in the display. It will add up to a stack of cobblestone to the display, and then continue to buffer more until it hits its capacity limit.",
 				"",
-				"By enchanting the upgrade with Silk Touch, it will produce Stone instead.",
+				"By using the Pedestals XP Anvil to enchant the upgrade with Silk Touch, it will produce Stone instead.",
 				"",
 				"You can also modify what is produced by the generator; for example, putting Blue Ice under a Silky Cobble Gen will produce Packed Ice. These recipes can be seen in JEI, under the Cobble Gen and Silky Cobble Gen tabs."
 			],
@@ -1131,7 +1131,7 @@
 			description: [
 				"Pedestals can transfer displayed items from one to another by linking them together. They can also transfer fluids, FE, and XP in their upgrades this way.",
 				"",
-				"This is done with the Linking Tool: Shift-Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards, you can craft the linking tool into a Reverse Linking Tool, which links Sender -> Receiver.",
+				"This is done with the Linking Tool: Shift-Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards, you can craft the Reverse Linking Tool, which links Sender -> Receiver.",
 				"",
 				"Each Sending Pedestal can be linked to a maximum of 8 Receivers; Receivers can be linked to any number of senders.You can right click a Sender with the Linking wand to display information about it, and to get a visual indication of which pedestals it’s linked to. By default the sending mechanism uses a priority system, which is indicated by the color particles emitted - black is first, white is last."
 			],
