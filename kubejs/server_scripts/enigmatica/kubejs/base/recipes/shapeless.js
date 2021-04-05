@@ -323,14 +323,7 @@ events.listen('recipes', (event) => {
     });
 
     colors.forEach(function (color) {
-        let otherColors = [],
-            i = 0,
-            j = colors.indexOf(color);
-
-        while (i < j) {
-            otherColors.push(colors[i]);
-            i++;
-        }
+        let otherColors = colors.filter((filterColor) => filterColor !== color);
 
         let otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`),
             otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
