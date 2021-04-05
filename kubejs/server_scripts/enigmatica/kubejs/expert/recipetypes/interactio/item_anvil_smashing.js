@@ -7,6 +7,7 @@ events.listen('recipes', (event) => {
         {
             inputs: [
                 {
+                    type: 'forge:nbt',
                     item: 'minecraft:potion',
                     count: 1,
                     nbt: {
