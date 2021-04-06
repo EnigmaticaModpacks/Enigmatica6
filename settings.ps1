@@ -51,7 +51,9 @@ $CONFIGS_TO_REMOVE = @(
 	"rftoolsutility-client.toml",
 	"sophisticatedbackpacks-client.toml",
 	"supplementaries-client.toml",
+	"tconstruct-client.toml",
 	"thermal-client.toml",
+	"travel_anchors-client.toml",
 	"upgrade_aquatic-client.toml",
 	"xnet-client.toml"
 )
