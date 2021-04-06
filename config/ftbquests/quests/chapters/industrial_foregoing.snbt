@@ -174,15 +174,150 @@
 			],
 			id: "0000000000000076",
 			tasks: [{
-				id: "0000000000000077",
+				id: "4575DF59F40FC7EF",
 				type: "item",
+				title: "Any Addon",
 				item: {
-					id: "industrialforegoing:range_addon3",
+					id: "itemfilters:or",
 					Count: 1b,
 					tag: {
-						TitaniumAugment: {
-							Range: 3.0f
-						}
+						items: [
+							{
+								id: "industrialforegoing:range_addon0",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 0.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon1",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 1.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon2",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 2.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon3",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 3.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon4",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 4.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon5",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 5.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon6",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 6.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon7",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 7.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon9",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 9.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon10",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 10.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon11",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 11.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:efficiency_addon_1",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Efficiency: 0.9f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:efficiency_addon_2",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Efficiency: 0.8f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:speed_addon_1",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Speed: 2.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:speed_addon_2",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Speed: 3.0f
+									}
+								}
+							}
+						]
 					}
 				}
 			}],

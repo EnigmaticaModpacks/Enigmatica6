@@ -69,11 +69,26 @@
 	#Range: 1 ~ 1001
 	badlandsPyramidMaxChunkDistance = 37
 	#
-	# Add Snowy Pyramid to modded snowy biomes.
+	# How rare are Snowy Pyramid in snowy biomes.
 	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	pyramidSnowyMaxChunkDistance = 37
 	#
 	# Add Snowy Pyramid to modded snowy biomes.
 	addPyramidSnowyToModdedBiomes = true
+	#
+	# How rare are End Pyramid in End biomes.
+	#Range: 1 ~ 1001
+	pyramidEndMaxChunkDistance = 68
+	#
+	# Add End Pyramid to modded end biomes.
+	addPyramidEndToModdedBiomes = true
+	#
+	# How rare are Icy Pyramid in super cold or icy biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	pyramidIcyMaxChunkDistance = 37
+	#
+	# Add Icy Pyramid to modded icy biomes.
+	addPyramidIcyToModdedBiomes = true
 

@@ -1,21 +1,26 @@
-events.listen('recipes', (event) => {
-    if (!expertMode) {
-        return;
-    }
-    const recipes = [
-        // {
-        //     output: Item.of('tiab:timeinabottle'),
-        //     inputs: [Item.of('eidolon:soul_shard'), Item.of('create:cuckoo_clock')],
-        //     fluids: [Fluid.of('industrialforegoing:essence', 1000), Fluid.of('pneumaticcraft:memory_essence', 1000)]
-        // }
-    ];
+// events.listen('recipes', (event) => {
+//     if (!expertMode) {
+//         return;
+//     }
+//     const recipes = [
+//         {
+//             output: Item.of('tiab:timeinabottle'),
+//             inputs: [Item.of('eidolon:soul_shard'), Item.of('create:cuckoo_clock')],
+//             fluid: {
+//                 type: 'pneumaticcraft:fluid',
+//                 fluid: 'cofh_core:potion',
+//                 amount: 1000,
+//                 nbt: {
+//                     Potion: 'minecraft:long_swiftness'
+//                 }
+//             }
+//         }
+//     ];
 
-    recipes.forEach((recipe) => {
-        recipe.inputs.forEach((input) => {
-            recipe.fluids.forEach((fluid) => {
-                event.recipes.create.filling(recipe.output, [recipe.inputs, recipe.fluids]);
-                event.recipes.thermal.bottler(recipe.output, [recipe.fluids, recipe.inputs]);
-            });
-        });
-    });
-});
+//     recipes.forEach((recipe) => {
+//         recipe.inputs.forEach((input) => {
+//             event.recipes.create.filling(recipe.output, [input, recipe.fluid]);
+//             event.recipes.thermal.bottler(recipe.output, [recipe.fluid, input]);
+//         });
+//     });
+// });

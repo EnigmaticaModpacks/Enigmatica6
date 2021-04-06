@@ -87,17 +87,27 @@ blacklistedOutpostBiomes = " "
 	# Add Icy Outposts to modded icy/extremely cold biomes.
 	addOutpostIcyToModdedBiomes = true
 	#
-	# Add Oak Outposts to modded forest biomes that are not birch or dark forest.
+	# How rare Taiga Icy Outposts in forest biomes that are not birch or dark forest biomes.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	outpostOakMaxChunkDistance = 45
 	#
 	# Add Oak Outposts to modded forest biomes that are not birch or dark forest.
 	addOutpostOakToModdedBiomes = true
 	#
-	# Add Taiga Outposts to modded non-snowy and non-giant taiga biomes.
+	# How rare Taiga Icy Outposts in non-snowy and non-giant taiga biomes.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	outpostTaigaMaxChunkDistance = 45
 	#
 	# Add Taiga Outposts to modded non-snowy and non-giant taiga biomes.
 	addOutpostTaigaToModdedBiomes = true
+	#
+	# How rare are End Outposts in End biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	outpostEndMaxChunkDistance = 61
+	#
+	# Add End Outposts to modded End biomes.
+	addOutpostEndToModdedBiomes = true
 

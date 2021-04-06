@@ -290,6 +290,18 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('projectvibrantjourneys:glowcap'),
             inputs: ['minecraft:glowstone_dust', ['minecraft:brown_mushroom', 'minecraft:red_mushroom']]
+        },
+        {
+            output: Item.of('botanypots:botany_pot'),
+            inputs: ['#enigmatica:washables/simplebotanypots', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('botanypots:hopper_botany_pot'),
+            inputs: ['#enigmatica:washables/hopperbotanypots', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('minecraft:terracotta'),
+            inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         }
     ];
 
@@ -308,6 +320,23 @@ events.listen('recipes', (event) => {
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
 
         event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
+    });
+
+    colors.forEach(function (color) {
+        let otherColors = colors.filter((filterColor) => filterColor !== color);
+
+        let otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`),
+            otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
+
+        otherSimplePots.push('botanypots:botany_pot');
+        otherHopperPots.push('botanypots:hopper_botany_pot');
+
+        event.shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`]);
+
+        event.shapeless(`botanypots:hopper_${color}_botany_pot`, [
+            Ingredient.of(otherHopperPots),
+            `#forge:dyes/${color}`
+        ]);
     });
 
     materialsToUnify.forEach((material) => {

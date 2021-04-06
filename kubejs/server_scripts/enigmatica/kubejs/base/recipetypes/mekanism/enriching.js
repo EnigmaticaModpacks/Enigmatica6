@@ -44,10 +44,17 @@ events.listen('recipes', (event) => {
             {
                 input: 'minecraft:blaze_rod',
                 output: Item.of('minecraft:blaze_powder', 4)
+            },
+            {
+                input: '#forge:ores/quartz',
+                output: Item.of('minecraft:quartz', 3),
+                id: 'mekanism:processing/quartz/from_ore'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.mekanism.enriching(recipe.output, recipe.input);
+        recipe.id
+            ? event.recipes.mekanism.enriching(recipe.output, recipe.input).id(recipe.id)
+            : event.recipes.mekanism.enriching(recipe.output, recipe.input);
     });
 });
