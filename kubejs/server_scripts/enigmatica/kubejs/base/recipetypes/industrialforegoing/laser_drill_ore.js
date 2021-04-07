@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    //var nether_end_biomes = end_biomes.concat(nether_biomes);
+    var nether_end_biomes = end_biomes.concat(nether_biomes);
 
     event.remove({ id: 'industrialforegoing:laser_drill_ore/sapphire' });
     event.remove({ id: 'industrialforegoing:laser_drill_ore/ruby' });
@@ -1091,4 +1091,39 @@ events.listen('recipes', (event) => {
         },
         type: 'industrialforegoing:laser_drill_ore'
     });
+
+    event.recipes.industrialforegoing.laser_drill_ore({
+        type: 'industrialforegoing.laser_drill_ore',
+        output: {
+            tag: 'forge:ores/aquamarine'
+        },
+        rarity: [
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: nether_end_biomes
+                },
+                depth_min: 60,
+                depth_max: 70,
+                weight: 8
+            },
+            {
+                whitelist: {},
+                blacklist: {
+                    type: 'minecraft:worldgen/biome',
+                    values: nether_end_biomes
+                },
+                depth_min: 0,
+                depth_max: 255,
+                weight: 1
+            }
+        ],
+        pointer: 0,
+        catalyst: {
+            item: 'industrialforegoing:laser_lens3'
+        },
+        type: 'industrialforegoing:laser_drill_ore'
+    });
+
 });
