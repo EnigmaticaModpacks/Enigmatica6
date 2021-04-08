@@ -3,8 +3,8 @@
 	group: "",
 	order_index: 4,
 	filename: "challenges",
-	title: "Challenges WIP",
-	icon: "minecraft:wither_skeleton_skull",
+	title: "Challenges",
+	icon: "minecraft:dragon_head",
 	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
@@ -15,16 +15,62 @@
 			y: 2.5d,
 			subtitle: "Unlimited Power!!!",
 			description: [
-				"Obtain a Full Ultimate Induction Cell.",
+				"The Ultimate Induction Cell can store up to 1.600.000.000.000 FE, also known as 1.6TFE",
 				"",
 				"To charge an Induction Cell, place it inside an Induction Cell multiblock and charge it."
 			],
 			dependencies: ["1C6E46EA96373E74"],
 			id: "4473CCD6EB0E60E0",
 			tasks: [{
-				id: "43F65BEF363D95C1",
+				id: "43D8479933BD78E5",
 				type: "item",
-				item: "mininggadgets:upgrade_battery_3"
+				title: "Full Ultimate Induction Cell",
+				icon: {
+					id: "mekanism:ultimate_induction_cell",
+					Count: 1b,
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b,
+								stored: "4000000000000"
+							}]
+						}
+					}
+				},
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "itemfilters:strong_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										mekData: {
+											EnergyContainers: [{
+												Container: 0b,
+												stored: "4000000000000"
+											}]
+										}
+									}
+								}
+							},
+							{
+								id: "mekanism:ultimate_induction_cell",
+								Count: 1b,
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b,
+											stored: "4000000000000"
+										}]
+									}
+								}
+							}
+						]
+					}
+				}
 			}]
 		},
 		{
@@ -32,6 +78,8 @@
 			icon: "minecraft:dragon_head",
 			x: 0.0d,
 			y: 0.0d,
+			shape: "hexagon",
+			description: ["Slaying the Ender Dragon has given you access to the Challenges chapter of Enigmatica 6"],
 			size: 1.5d,
 			id: "1C6E46EA96373E74",
 			tasks: [{
