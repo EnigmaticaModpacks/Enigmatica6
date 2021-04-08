@@ -828,7 +828,7 @@ events.listen('recipes', (event) => {
         recipe.id
             ? event
                   .custom({
-                      type: 'industrialforegoing.laser_drill_ore',
+                      type: 'industrialforegoing:laser_drill_ore',
                       output: recipe.output,
                       rarity: recipe.rarity,
                       pointer: 0,
@@ -837,7 +837,7 @@ events.listen('recipes', (event) => {
                   })
                   .id(recipe.id)
             : event.custom({
-                  type: 'industrialforegoing.laser_drill_ore',
+                  type: 'industrialforegoing:laser_drill_ore',
                   output: recipe.output,
                   rarity: recipe.rarity,
                   pointer: 0,
