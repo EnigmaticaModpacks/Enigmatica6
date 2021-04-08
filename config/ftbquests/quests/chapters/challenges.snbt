@@ -7,5 +7,41 @@
 	icon: "minecraft:wither_skeleton_skull",
 	always_invisible: true,
 	default_quest_shape: "",
-	quests: []
+	quests: [
+		{
+			title: "Full Ultimate Induction Cell",
+			icon: "mininggadgets:upgrade_battery_3",
+			x: 0.0d,
+			y: 2.5d,
+			subtitle: "Unlimited Power!!!",
+			description: [
+				"Obtain a Full Ultimate Induction Cell.",
+				"",
+				"To charge an Induction Cell, place it inside an Induction Cell multiblock and charge it."
+			],
+			dependencies: ["1C6E46EA96373E74"],
+			id: "4473CCD6EB0E60E0",
+			tasks: [{
+				id: "43F65BEF363D95C1",
+				type: "item",
+				item: "mininggadgets:upgrade_battery_3"
+			}]
+		},
+		{
+			title: "Challenger",
+			icon: "minecraft:dragon_head",
+			x: 0.0d,
+			y: 0.0d,
+			size: 1.5d,
+			id: "1C6E46EA96373E74",
+			tasks: [{
+				id: "6C159C9408B0C66C",
+				type: "advancement",
+				title: "Kill the Ender Dragon",
+				icon: "minecraft:dragon_head",
+				advancement: "minecraft:end/kill_dragon",
+				criterion: ""
+			}]
+		}
+	]
 }
