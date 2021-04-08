@@ -38,6 +38,10 @@ events.listen('recipes', (event) => {
             {
                 input: Item.of('dustrial_decor:rusty_iron_nugget'),
                 output: Item.of('#forge:nuggets/iron')
+            },
+            {
+                input: '#forge:dusts/netherite',
+                output: Item.of('#forge:ingots/netherite')
             }
         ]
     };
