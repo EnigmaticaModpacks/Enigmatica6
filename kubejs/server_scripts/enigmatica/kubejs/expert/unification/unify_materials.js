@@ -39,7 +39,7 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(gear, [Ingredient.of(input, 4), 'thermal:press_gear_die'])
+            .press(gear, [Ingredient.of(input, 4), mold])
             .id(`thermal:machine/press/press_${material}_ingot_to_gear`);
 
         event.recipes.immersiveengineering
