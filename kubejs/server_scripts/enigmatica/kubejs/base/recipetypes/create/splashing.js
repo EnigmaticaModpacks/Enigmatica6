@@ -13,7 +13,7 @@ events.listen('recipes', (event) => {
                 input: 'create:limesand'
             },
             {
-                outputs: [Item.of('upgrade_aquatic:driftwood_log')],
+                outputs: ['upgrade_aquatic:driftwood_log'],
                 input: '#minecraft:logs'
             },
             {
@@ -39,18 +39,6 @@ events.listen('recipes', (event) => {
             {
                 outputs: ['embellishcraft:warning_rusty_door'],
                 input: 'embellishcraft:warning_steel_door'
-            },
-            {
-                outputs: ['dustrial_decor:rusty_iron_nugget'],
-                input: '#forge:nuggets/iron'
-            },
-            {
-                outputs: ['dustrial_decor:rusty_iron_ingot'],
-                input: '#forge:ingots/iron'
-            },
-            {
-                outputs: ['dustrial_decor:rusty_iron_block'],
-                input: '#forge:storage_blocks/iron'
             },
             {
                 outputs: ['dustrial_decor:rusty_iron_door'],
