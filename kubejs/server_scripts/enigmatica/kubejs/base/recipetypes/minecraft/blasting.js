@@ -35,10 +35,20 @@ events.listen('recipes', (event) => {
                 input: 'farmersdelight:golden_knife',
                 output: Item.of('#forge:nuggets/gold'),
                 xp: 0.1
+            },
+            {
+                input: Item.of('dustrial_decor:rusty_iron_ingot'),
+                output: Item.of('#forge:ingots/iron')
+            },
+            {
+                input: Item.of('dustrial_decor:rusty_iron_nugget'),
+                output: Item.of('#forge:nuggets/iron')
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.blasting(recipe.output, recipe.input).xp(recipe.xp);
+        recipe.xp
+            ? event.blasting(recipe.output, recipe.input).xp(recipe.xp)
+            : event.blasting(recipe.output, recipe.input);
     });
 });
