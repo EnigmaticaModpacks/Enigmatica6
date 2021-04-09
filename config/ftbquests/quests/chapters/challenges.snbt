@@ -559,6 +559,48 @@
 					}
 				}
 			}]
+		},
+		{
+			title: "Zoology",
+			x: 3.0d,
+			y: 0.5d,
+			subtitle: "Pets and kisses",
+			description: [
+				"Tame every animal there is to tame!",
+				"",
+				"(You can track the progress you've made by looking at the 'Zoology' advancement in the Husbandry tab)"
+			],
+			dependencies: ["1C6E46EA96373E74"],
+			id: "2AEE1AFA3BC416CE",
+			tasks: [{
+				id: "6550FEDCE5175F8C",
+				type: "advancement",
+				title: "Tame all tameable animals",
+				icon: "farmersdelight:horse_feed",
+				advancement: "enigmatica:husbandry/tame_all_animals",
+				criterion: ""
+			}]
+		},
+		{
+			title: "Two by Two",
+			x: 3.0d,
+			y: -0.5d,
+			subtitle: "The bees and the birds...",
+			description: [
+				"Breed every animal there is to breed!",
+				"",
+				"(You can track the progress you've made by looking at the 'Two by Two' advancement in the Husbandry tab)"
+			],
+			dependencies: ["1C6E46EA96373E74"],
+			id: "24ED473C9C545C09",
+			tasks: [{
+				id: "76A9D7B6C6D4C04F",
+				type: "advancement",
+				title: "Breed all breedable animals",
+				icon: "minecraft:golden_carrot",
+				advancement: "minecraft:husbandry/bred_all_animals",
+				criterion: ""
+			}]
 		}
 	]
 }
