@@ -40,6 +40,7 @@ $CONFIGS_TO_REMOVE = @(
 	"jei-client.toml",
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",
+	"morered-client.toml",
 	"mythicbotany-client.toml",
 	"neat-client.toml",
 	"occultism-client.toml",
