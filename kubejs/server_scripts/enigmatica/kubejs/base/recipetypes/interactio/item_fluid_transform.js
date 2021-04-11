@@ -40,14 +40,14 @@ events.listen('recipes', (event) => {
         {
             input: 'forge:storage_blocks/iron',
             output: 'dustrial_decor:rusty_iron_block'
+        },
+        {
+            input: 'minecraft:logs',
+            output: 'upgrade_aquatic:driftwood_log'
         }
     ];
 
     const simpleItemRecipes = [
-        {
-            output: 'upgrade_aquatic:driftwood_log',
-            input: '#minecraft:logs'
-        },
         {
             output: 'embellishcraft:rusty_wall_ladder',
             input: 'embellishcraft:steel_wall_ladder'
