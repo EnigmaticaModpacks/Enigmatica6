@@ -3,7 +3,6 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "other/water",
     "ColorData": {
@@ -50,16 +49,16 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:OCEAN,BEACH",
+        "biomeWhitelist": "tag:OCEAN,WET",
         "biomeBlacklist": "tag:NETHER,END",
-        "minGroupSize": 4,
-        "maxGroupSize": 6,
-        "spawnWeight": 6
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "spawnWeight": 8
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "minecraft:seagrass",
-        "feedAmount": 16,
+        "feedAmount": 4,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

@@ -3,7 +3,6 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "ores/redstone/redstone_bee",
     "ColorData": {
@@ -35,9 +34,9 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "minecraft:redstone",
-        "mainOutputWeight": 0.3,
-        "mainOutputCount": 6,
+        "mainOutput": "emendatusenigmatica:redstone_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "emendatusenigmatica:cinnabar_gem",
         "secondaryOutputWeight": 0.1,
@@ -50,20 +49,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:REDSTONE",
-        "biomeBlacklist": "tag:OCEAN",
-        "minGroupSize": 0,
-        "maxGroupSize": 1,
-        "spawnWeight": 2,
-        "lightLevel": "DAY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "lead",
-        "parent2": "copper",
+        "parent1": "rgbee",
+        "parent2": "sand",
         "feedItem": "tag:forge:storage_blocks/redstone",
-        "feedAmount": 8,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

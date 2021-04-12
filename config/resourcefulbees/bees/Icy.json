@@ -1,9 +1,8 @@
 {
     "flower": "ALL",
-    "maxTimeInHive": 3600,
+    "maxTimeInHive": 2400,
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "other/icy",
     "ColorData": {
@@ -51,15 +50,15 @@
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:COLD",
-        "biomeBlacklist": "tag:HOT,NETHER,END",
-        "minGroupSize": 2,
-        "maxGroupSize": 4,
-        "spawnWeight": 4
+        "biomeBlacklist": "tag:HOT,NETHER,END,OCEAN",
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
+        "spawnWeight": 8
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "minecraft:snow_block",
-        "feedAmount": 2,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

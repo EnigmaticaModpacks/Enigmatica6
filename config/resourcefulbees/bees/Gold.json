@@ -3,7 +3,6 @@
     "maxTimeInHive": 3600,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "ores/gold/gold_bee",
     "ColorData": {
@@ -29,15 +28,22 @@
             "outputs": [
               {"outputID": "emendatusenigmatica:gold_ore", "weight": 10}
             ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/silver",
+            "outputs": [
+              {"outputID": "resourcefulbees:electrum_bee_spawn_egg", "weight": 10}
+            ]
           }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "minecraft:gold_ingot",
-        "mainOutputWeight": 0.1,
-        "mainOutputCount": 2,
+        "mainOutput": "emendatusenigmatica:gold_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "emendatusenigmatica:copper_nugget",
         "secondaryOutputWeight": 0.1,
@@ -50,20 +56,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:GOLD",
-        "biomeBlacklist": "tag:OCEAN",
-        "minGroupSize": 0,
-        "maxGroupSize": 1,
-        "spawnWeight": 2,
-        "lightLevel": "DAY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "iron",
-        "parent2": "copper",
+        "parent1": "pigman",
+        "parent2": "sand",
         "feedItem": "tag:forge:storage_blocks/gold",
-        "feedAmount": 8,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

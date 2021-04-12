@@ -4,7 +4,6 @@
     "sizeModifier": 0.75,
     "traits": ["can_swim"],
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "baseLayerTexture": "other/sand",
     "ColorData": {
         "honeycombColor": "#e7e4bb",
@@ -35,11 +34,11 @@
         "hasCentrifugeOutput": true,
 
         "mainOutput": "minecraft:sand",
-        "mainOutputWeight": 0.3,
-        "mainOutputCount": 6,
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 3,
 
         "secondaryOutput": "minecraft:glass",
-        "secondaryOutputWeight": 0.01,
+        "secondaryOutputWeight": 0.05,
         "secondaryOutputCount": 1,
 
         "bottleOutput": "minecraft:honey_bottle",
@@ -50,17 +49,17 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "spawnWeight": 4,
-        "biomeWhitelist": "tag:BEACH,OCEAN",
-        "biomeBlacklist": "tag:NETHER,END",
-        "minGroupSize": 2,
-        "maxGroupSize": 4,
+        "spawnWeight": 8,
+        "biomeWhitelist": "tag:BEACH,HOT",
+        "biomeBlacklist": "tag:NETHER,END,OCEAN",
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
         "lightLevel": "DAY"
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "tag:minecraft:sand",
-        "feedAmount": 8,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

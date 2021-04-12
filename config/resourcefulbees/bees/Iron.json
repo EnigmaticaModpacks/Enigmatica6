@@ -3,7 +3,6 @@
     "maxTimeInHive": 3600,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "ores/iron/iron_bee",
     "ColorData": {
@@ -29,15 +28,29 @@
             "outputs": [
               {"outputID": "emendatusenigmatica:iron_ore", "weight": 10}
             ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/nickel",
+            "outputs": [
+              {"outputID": "resourcefulbees:invar_bee_spawn_egg", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/coal",
+            "outputs": [
+              {"outputID": "resourcefulbees:steel_bee_spawn_egg", "weight": 10}
+            ]
           }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "minecraft:iron_ingot",
-        "mainOutputWeight": 0.1,
-        "mainOutputCount": 2,
+        "mainOutput": "emendatusenigmatica:iron_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "emendatusenigmatica:nickel_nugget",
         "secondaryOutputWeight": 0.1,
@@ -50,20 +63,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:IRON",
-        "biomeBlacklist": "tag:OCEAN",
-        "minGroupSize": 0,
-        "maxGroupSize": 1,
-        "spawnWeight": 2,
-        "lightLevel": "DAY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "coal",
-        "parent2": "aluminum",
+        "parent1": "clay",
+        "parent2": "coal",
         "feedItem": "tag:forge:storage_blocks/iron",
-        "feedAmount": 8,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

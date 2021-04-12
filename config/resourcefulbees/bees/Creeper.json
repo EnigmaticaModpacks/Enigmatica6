@@ -3,7 +3,6 @@
     "maxTimeInHive": 2400,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "baseLayerTexture": "/creeper/creeper_bee",
     "traits": ["creeper", "can_swim"],
     "ColorData": {
@@ -61,8 +60,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "tag:forge:gravel",
-        "feedAmount": 8,
+        "feedItem": "minecraft:gunpowder",
+        "feedAmount": 2,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

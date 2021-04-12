@@ -3,7 +3,6 @@
     "maxTimeInHive": 2400,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "ColorData": {
         "honeycombColor": "#ffffff",
@@ -40,9 +39,9 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:OVERWORLD",
+        "biomeWhitelist": "tag:PLAINS",
         "biomeBlacklist": "tag:OCEAN",
-        "minGroupSize": 2,
+        "minGroupSize": 1,
         "maxGroupSize": 3,
         "spawnWeight": 8
     },

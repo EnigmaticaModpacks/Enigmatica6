@@ -3,7 +3,6 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["ender", "can_swim"],
     "baseLayerTexture": "other/ender",
     "ColorData": {
@@ -35,8 +34,8 @@
         "hasCentrifugeOutput": true,
 
         "mainOutput": "minecraft:ender_pearl",
-        "mainOutputWeight": 0.2,
-        "mainOutputCount": 2,
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "emendatusenigmatica:enderium_nugget",
         "secondaryOutputWeight": 0.01,
@@ -52,15 +51,15 @@
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:ENDER",
         "biomeBlacklist": "tag:OVERWORLD,NETHER",
-        "lightLevel": "NIGHT",
-        "minGroupSize": 0,
-        "maxGroupSize": 1,
+        "lightLevel": "ALL",
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
         "spawnWeight": 10
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "tag:forge:gems/ender",
-        "feedAmount": 4,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

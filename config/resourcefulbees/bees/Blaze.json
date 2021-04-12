@@ -34,12 +34,12 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "minecraft:blaze_rod",
-        "mainOutputWeight": 0.05,
-        "mainOutputCount": 2,
+        "mainOutput": "minecraft:blaze_powder",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "minecraft:blaze_powder",
-        "secondaryOutputWeight": 0.02,
+        "secondaryOutputWeight": 0.05,
         "secondaryOutputCount": 1,
 
         "bottleOutput": "resourcefulbees:blaze_honey_bottle",
@@ -49,18 +49,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "spawnWeight": 4,
-        "biomeWhitelist": "tag:BLAZE",
-        "biomeBlacklist": "tag:OVERWORLD,END",
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "NIGHT"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
+        "parent1": "creeper",
+        "parent2": "glowstone",
         "feedItem": "tag:forge:rods/blaze",
-        "feedAmount": 16,
+        "feedAmount": 3,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

@@ -3,7 +3,6 @@
     "maxTimeInHive": 3600,
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "metals/invar",
     "ColorData": {
@@ -24,7 +23,7 @@
         "mutations" : [
           {
             "type": "BLOCK",
-            "inputID": "tag:forge:storage_blocks/invar",
+            "inputID": "tag:forge:storage_blocks/nickel",
             "outputs": [
               {"outputID": "emendatusenigmatica:invar_block", "weight": 10}
             ]
@@ -34,9 +33,9 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "emendatusenigmatica:invar_ingot",
-        "mainOutputWeight": 0.2,
-        "mainOutputCount": 2,
+        "mainOutput": "emendatusenigmatica:invar_dust",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "emendatusenigmatica:nickel_nugget",
         "secondaryOutputWeight": 0.1,
@@ -49,16 +48,12 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:OVERWORLD",
-        "biomeBlacklist": "tag:OCEAN"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "nickel",
-        "parent2": "iron",
         "feedItem": "tag:forge:storage_blocks/invar",
-        "feedAmount": 2,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

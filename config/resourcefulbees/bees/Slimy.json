@@ -3,7 +3,6 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["slimy", "can_swim"],
     "baseLayerTexture": "slime/slime_bee",
     "ColorData": {
@@ -36,8 +35,8 @@
         "hasCentrifugeOutput": true,
 
         "mainOutput": "minecraft:slime_ball",
-        "mainOutputWeight": 0.25,
-        "mainOutputCount": 8,
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 4,
 
         "secondaryOutput": "refinedstorage:processor_binding",
         "secondaryOutputWeight": 0.02,
@@ -50,18 +49,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:OVERWORLD",
-        "biomeBlacklist": "tag:NETHER,END",
-        "lightLevel": "NIGHT",
-        "spawnWeight": 12
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "zombie",
+        "parent1": "rgbee",
         "parent2": "clay",
         "feedItem": "tag:forge:slime_block",
-        "feedAmount": 2,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

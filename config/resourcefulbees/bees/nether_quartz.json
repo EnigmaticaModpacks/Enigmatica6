@@ -4,7 +4,6 @@
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
     "traits": ["nether", "can_swim"],
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "baseLayerTexture": "other/quartz",
     "ColorData": {
         "honeycombColor": "#d4caba",
@@ -34,12 +33,12 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "minecraft:quartz",
-        "mainOutputWeight": 0.15,
-        "mainOutputCount": 8,
+        "mainOutput": "emendatusenigmatica:quartz_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "emendatusenigmatica:silicon_gem",
-        "secondaryOutputWeight": 0.01,
+        "secondaryOutputWeight": 0.05,
         "secondaryOutputCount": 1,
 
         "bottleOutput": "minecraft:honey_bottle",
@@ -49,18 +48,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:QUARTZ",
-        "biomeBlacklist": "tag:OVERWORLD,END",
-        "lightLevel": "NIGHT",
-        "spawnWeight": 8,
-        "minGroupSize": 2,
-        "maxGroupSize": 4
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
+        "parent1": "icy",
+        "parent2": "pigman",
         "feedItem": "tag:forge:storage_blocks/quartz",
-        "feedAmount": 8,
+        "feedAmount": 2,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

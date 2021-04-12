@@ -3,7 +3,6 @@
     "maxTimeInHive": 3600,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "ores/aluminum/aluminum_bee",
     "ColorData": {
@@ -35,9 +34,9 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "emendatusenigmatica:aluminum_ingot",
-        "mainOutputWeight": 0.1,
-        "mainOutputCount": 2,
+        "mainOutput": "emendatusenigmatica:aluminum_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
 
         "secondaryOutput": "minecraft:iron_nugget",
         "secondaryOutputWeight": 0.1,
@@ -50,18 +49,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:ALUMINUM",
-        "biomeBlacklist": "tag:OCEAN",
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "spawnWeight": 2,
-        "lightLevel": "DAY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
+        "parent1": "iron",
+        "parent2": "tin",
         "feedItem": "tag:forge:storage_blocks/aluminum",
-        "feedAmount": 4,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

@@ -4,7 +4,6 @@
     "sizeModifier": 0.75,
     "traits": ["nether", "can_swim"],
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "baseLayerTexture": "other/glowstone",
     "ColorData": {
         "honeycombColor": "#ffbc5e",
@@ -35,11 +34,11 @@
         "hasCentrifugeOutput": true,
 
         "mainOutput": "minecraft:glowstone_dust",
-        "mainOutputWeight": 0.3,
-        "mainOutputCount": 12,
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 6,
 
         "secondaryOutput": "emendatusenigmatica:sulfur_gem",
-        "secondaryOutputWeight": 0.1,
+        "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 3,
 
         "bottleOutput": "resourcefulbees:glowstone_honey_bottle",
@@ -50,17 +49,17 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "spawnWeight": 4,
+        "spawnWeight": 8,
         "biomeWhitelist": "tag:GLOWSTONE",
         "biomeBlacklist": "tag:OVERWORLD,END",
-        "minGroupSize": 1,
-        "maxGroupSize": 2,
-        "lightLevel": "NIGHT"
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "lightLevel": "ALL"
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "tag:forge:storage_blocks/glowstone",
-        "feedAmount": 8,
+        "feedAmount": 2,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

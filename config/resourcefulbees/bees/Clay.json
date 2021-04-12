@@ -4,7 +4,6 @@
     "sizeModifier": 0.75,
     "traits": ["can_swim"],
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "baseLayerTexture": "other/clay",
     "ColorData": {
         "honeycombColor": "#acaebd",
@@ -34,7 +33,7 @@
         "hasCentrifugeOutput": true,
 
         "mainOutput": "minecraft:clay",
-        "mainOutputWeight": 0.3,
+        "mainOutputWeight": 0.5,
         "mainOutputCount": 2,
 
         "secondaryOutput": "minecraft:terracotta",
@@ -49,17 +48,17 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "spawnWeight": 4,
-        "biomeWhitelist": "tag:CLAY",
+        "spawnWeight": 8,
+        "biomeWhitelist": "tag:CLAY,SWAMP",
         "biomeBlacklist": "tag:NETHER,END",
-        "minGroupSize": 2,
-        "maxGroupSize": 4,
+        "minGroupSize": 1,
+        "maxGroupSize": 3,
         "lightLevel": "DAY"
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "tag:forge:storage_blocks/clay",
-        "feedAmount": 8,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

@@ -3,7 +3,6 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "traits": ["can_swim"],
     "baseLayerTexture": "skeleton/skeleton_bee",
     "ColorData": {
@@ -49,16 +48,16 @@
     "SpawnData": {
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:OVERWORLD,NETHER",
-        "biomeBlacklist": "tag:END",
+        "biomeBlacklist": "tag:END,OCEAN",
         "lightLevel": "NIGHT",
         "minGroupSize": 2,
         "maxGroupSize": 3,
-        "spawnWeight": 14
+        "spawnWeight": 8
     },
     "BreedData": {
         "isBreedable": true,
         "feedItem": "tag:forge:bone_block",
-        "feedAmount": 2,
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },
