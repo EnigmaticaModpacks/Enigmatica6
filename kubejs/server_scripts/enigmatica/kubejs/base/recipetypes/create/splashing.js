@@ -63,6 +63,10 @@ events.listen('recipes', (event) => {
             {
                 outputs: ['minecraft:terracotta'],
                 input: '#enigmatica:washables/terracotta'
+            },
+            {
+                outputs: ['betterendforge:dense_snow'],
+                input: 'minecraft:snow_block'
             }
         ],
         rusty_items: [
