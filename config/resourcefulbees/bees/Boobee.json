@@ -48,9 +48,12 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:NETHER",
+        "biomeWhitelist": "tag:BOO",
         "biomeBlacklist": "tag:OVERWORLD,END",
-        "lightLevel": "NIGHT"
+        "spawnWeight": 1,
+        "minGroupSize": 0,
+        "maxGroupSize": 2,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,

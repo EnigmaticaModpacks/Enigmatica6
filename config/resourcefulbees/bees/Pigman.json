@@ -28,6 +28,13 @@
             "outputs": [
               {"outputID": "minecraft:gilded_blackstone", "weight": 10}
             ]
+          },
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:obsidian",
+            "outputs": [
+              {"outputID": "minecraft:crying_obsidian", "weight": 10}
+            ]
           }
         ]
     },
@@ -49,16 +56,14 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": false,
-        "biomeWhitelist": "tag:NETHER",
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:PIGMAN",
         "biomeBlacklist": "tag:OVERWORLD,END",
-        "lightLevel": "NIGHT",
-        "spawnWeight": 16
+        "lightLevel": "ANY",
+        "spawnWeight": 8
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "zombie",
-        "parent2": "gold",
         "feedItem": "tag:forge:storage_blocks/gold",
         "feedAmount": 2,
         "childGrowthDelay": -24000,
