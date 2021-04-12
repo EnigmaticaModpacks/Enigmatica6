@@ -49,6 +49,14 @@ events.listen('recipes', (event) => {
             output: Item.of('atmospheric:red_arid_sand', 4)
         },
         {
+            inputs: [Item.of('betterendforge:dense_snow', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
+            output: Item.of('minecraft:snow_block', 9)
+        },
+        {
+            inputs: [Item.of('minecraft:snow_block', 9), Ingredient.of('#thermal:crafting/dies/packing_3x3')],
+            output: Item.of('betterendforge:dense_snow', 1)
+        },
+        {
             inputs: [Ingredient.of('#integrateddynamics:menril_logs', 1)],
             output: [
                 Item.of('integrateddynamics:crystalized_menril_chunk', 4),

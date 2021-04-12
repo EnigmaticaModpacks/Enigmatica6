@@ -209,6 +209,13 @@ events.listen('recipes', (event) => {
                 C: 'powah:furnator_nitro',
                 D: 'powah:reactor_nitro'
             }
+        },
+        {
+            output: 'betterendforge:dense_snow',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: 'minecraft:snow_block'
+            }
         }
     ];
 

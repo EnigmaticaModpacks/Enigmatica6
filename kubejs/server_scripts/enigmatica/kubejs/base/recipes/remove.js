@@ -75,6 +75,8 @@ events.listen('recipes', (event) => {
 
         'buildersaddition:iron_rod',
 
+        'byg:vermilion_sculk',
+
         'compactmachines:wall',
 
         'create:mechanical_crafting/integrated_circuit',
