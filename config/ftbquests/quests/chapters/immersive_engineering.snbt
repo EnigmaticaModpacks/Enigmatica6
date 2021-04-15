@@ -305,8 +305,8 @@
 		{
 			title: "Crusher",
 			icon: "immersiveengineering:light_engineering",
-			x: -4.0d,
-			y: 0.5d,
+			x: -5.5d,
+			y: -0.5d,
 			description: [
 				"The Crusher can be used to crush ores into dusts, which can then be smelted for a total of two ingots per ore. Certain other items can also be ground down in this way - see JEI.",
 				"",
@@ -358,7 +358,7 @@
 			title: "Metal Press",
 			icon: "immersiveengineering:mold_plate",
 			x: -1.5d,
-			y: 0.5d,
+			y: -0.5d,
 			description: [
 				"The Metal Press, when supplied with a mold and power, provides a more material-efficient way to craft plates, wires, and more.",
 				"",
@@ -467,17 +467,14 @@
 		{
 			title: "Arc Furnace",
 			icon: "immersiveengineering:storage_steel",
-			x: -3.5d,
-			y: 2.5d,
+			x: -7.0d,
+			y: -0.5d,
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: [
-				"0000000000000020",
-				"000000000000003A"
-			],
+			dependencies: ["0000000000000020"],
 			id: "0000000000000032",
 			tasks: [
 				{
@@ -618,7 +615,7 @@
 					Damage: 0
 				}
 			},
-			x: 0.0d,
+			x: -1.5d,
 			y: 0.5d,
 			description: [
 				"The Sawmill operates in two stages. Without a sawblade, it strips logs; with a sawblade, it cuts stripped logs into six planks each. See the Engineer's Manual for more info, as usual.",
@@ -685,14 +682,14 @@
 			}]
 		},
 		{
-			title: "Squeezer and Fermenter",
+			title: "Industrial Squeezer and Fermenter",
 			icon: "immersiveengineering:plantoil_bucket",
-			x: -3.0d,
+			x: -2.5d,
 			y: 0.5d,
 			description: [
 				"The Squeezer can make plant oil from seeds (ideally hemp) and is also necessary to make HOP Graphite for the Arc Furnace. The Fermenter produces ethanol, used with plant oil to make biodiesel.",
 				"",
-				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with these multiblocks."
 			],
 			dependencies: ["0000000000000012"],
 			id: "000000000000003A",
@@ -706,26 +703,93 @@
 					id: "000000000000006C",
 					type: "item",
 					item: "immersiveengineering:ethanol_bucket"
+				},
+				{
+					id: "70D08B4C82FB5C6B",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 4L
+				},
+				{
+					id: "4441E2386DEA216C",
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 4L
+				},
+				{
+					id: "5ED3D91D2AD0971A",
+					type: "item",
+					item: "minecraft:piston"
+				},
+				{
+					id: "464B4E72E3BC8AED",
+					type: "item",
+					item: "immersiveengineering:rs_engineering",
+					count: 2L
+				},
+				{
+					id: "7666B18B85178129",
+					type: "item",
+					item: "immersiveengineering:steel_fence",
+					count: 3L
+				},
+				{
+					id: "052258FF50F1F0B4",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 12L
+				},
+				{
+					id: "01D48BF4891BC4B4",
+					type: "item",
+					item: "immersiveengineering:wooden_barrel",
+					count: 4L
+				},
+				{
+					id: "1DFE9615C079A317",
+					type: "item",
+					item: "minecraft:cauldron",
+					count: 4L
+				},
+				{
+					id: "0070E8EF982C0C6B",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_iron",
+					count: 4L
 				}
 			],
-			rewards: [{
-				id: "0000000000000619",
-				type: "item",
-				item: "immersiveengineering:seed",
-				count: 24
-			}]
+			rewards: [
+				{
+					id: "0000000000000619",
+					type: "item",
+					item: "immersiveengineering:seed",
+					count: 24
+				},
+				{
+					id: "7FF68906D9C40250",
+					type: "command",
+					title: "Epic Immersive Engineering Loot Box",
+					icon: "kubejs:epic_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+					player_command: false
+				}
+			]
 		},
 		{
 			title: "Diesel Generator",
 			icon: "immersiveengineering:biodiesel_bucket",
-			x: -2.0d,
+			x: -3.5d,
 			y: 2.5d,
 			description: [
-				"Biodiesel is made in the Refinery, and can be used as a fuel for the powerful (if noisy) Diesel Generator, producing massive amounts of RF/t.",
+				"With Biodiesel or Diesel acquired, they can be used as a fuel for the powerful (if noisy) Diesel Generator, producing respectable amounts of FE/t.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
-			dependencies: ["000000000000003A"],
+			dependencies: [
+				"7A3633A43D7AB0F2",
+				"09AEE48CED288DD1"
+			],
+			dependency_requirement: "one_completed",
 			id: "000000000000003C",
 			tasks: [
 				{
@@ -982,6 +1046,238 @@
 			],
 			rewards: [{
 				id: "0000000000000612",
+				type: "command",
+				title: "Rare Immersive Engineering Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			title: "Pumpjack",
+			icon: "immersivepetroleum:oil_bucket",
+			x: -4.5d,
+			y: 0.5d,
+			description: [
+				"Abundant fuel is just a few steps away, buried beneath your feet. Obtaining it will require a bit of drilling, however. The Pumpjack can mine up huge underground reservoirs of Crude Oil that would otherwise be unobtainable.",
+				"",
+				"Locating these reservoirs requires the use of the Core Sample Drill or Mineral Survey tools.",
+				"",
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			],
+			dependencies: [
+				"0000000000000012",
+				"0000000000000061"
+			],
+			id: "16D342C092566FC6",
+			tasks: [
+				{
+					id: "5A23A05F50722946",
+					type: "item",
+					item: "immersivepetroleum:oil_bucket"
+				},
+				{
+					id: "00C3EC1299DC28D3",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 4L
+				},
+				{
+					id: "0979E7EEF3363277",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 2L
+				},
+				{
+					id: "4E9E3DB8FE1E9406",
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 2L
+				},
+				{
+					id: "121E4FCB71513163",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: "324063E74778D1C4",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_steel",
+					count: 4L
+				},
+				{
+					id: "36B2E60B1BBB4CD2",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 11L
+				},
+				{
+					id: "6391CC96CDA5D45C",
+					type: "item",
+					item: "immersiveengineering:storage_steel",
+					count: 2L
+				},
+				{
+					id: "7CB80FBAE32E36B9",
+					type: "item",
+					item: "immersiveengineering:treated_fence",
+					count: 6L
+				}
+			],
+			rewards: [{
+				id: "476B1A4F7D366E7E",
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			title: "Distillation Tower",
+			icon: "immersivepetroleum:diesel_bucket",
+			x: -4.5d,
+			y: 1.5d,
+			description: [
+				"Crude Oil by itself is terrible to burn, but with a bit of refinement it can be made into a powerfuel liquid fuel. This process requires an Distillation tower and a fair amount of energy. ",
+				"",
+				"Getting Diesel and other fluids out of the Distillation tower can be tricky at times. The simplest way is to let it automatically output into a short Immersive Engineering Fluid Pipe that branches off into different tanks, then pipe individual fluids from there.",
+				"",
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			],
+			dependencies: ["16D342C092566FC6"],
+			id: "7A3633A43D7AB0F2",
+			tasks: [
+				{
+					id: "4B40C2072585A5BE",
+					type: "item",
+					item: "immersivepetroleum:diesel_bucket"
+				},
+				{
+					id: "23D0F4ECEEEB2BF9",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 17L
+				},
+				{
+					id: "1EC253B069B31B15",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 4L
+				},
+				{
+					id: "21E025217CA464E6",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: "26987C7F97249516",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_iron",
+					count: 60L
+				},
+				{
+					id: "36C971AF0DBF15ED",
+					type: "item",
+					item: "immersiveengineering:slab_steel_scaffolding_grate_top",
+					count: 30L
+				},
+				{
+					id: "2AADE46005D7EF64",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 25L
+				}
+			],
+			rewards: [{
+				id: "055894AE837032DE",
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			title: "Refinery",
+			icon: "immersiveengineering:biodiesel_bucket",
+			x: -2.5d,
+			y: 1.5d,
+			description: [
+				"The final step in producing Biodiesel, the Refinery combines Ethanol and Plant Oil to make this liquid gold. ",
+				"",
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			],
+			dependencies: ["000000000000003A"],
+			id: "09AEE48CED288DD1",
+			tasks: [
+				{
+					id: "54C23E962353498A",
+					type: "item",
+					item: "immersiveengineering:biodiesel_bucket"
+				},
+				{
+					id: "1A67249D2C25F193",
+					type: "item",
+					item: "immersiveengineering:fluid_pipe",
+					count: 5L
+				},
+				{
+					id: "5F4622889A0ABCD6",
+					type: "item",
+					item: "immersiveengineering:heavy_engineering",
+					count: 2L
+				},
+				{
+					id: "574214EAB054A87C",
+					type: "item",
+					item: "immersiveengineering:light_engineering",
+					count: 2L
+				},
+				{
+					id: "24F2731428E8E04E",
+					type: "item",
+					item: "immersiveengineering:rs_engineering"
+				},
+				{
+					id: "470D34BD4B7D2F05",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_iron",
+					count: 16L
+				},
+				{
+					id: "1B5140A06836C865",
+					type: "item",
+					item: "immersiveengineering:steel_scaffolding_standard",
+					count: 8L
+				}
+			],
+			rewards: [{
+				id: "7B4485A51E367C74",
+				type: "command",
+				title: "Epic Immersive Engineering Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			x: 0.0d,
+			y: -4.5d,
+			description: [
+				"The Projector is a tool used to assist in building multiblocks for Immersive Engineering and Immersive Petroleum. Simply select a structure and right click to project it in the world. If any blocks are placed incorrectly, they'll be highlighted. ",
+				"",
+				"Of course, we've also provided you with Building Gadgets Patterns and Create Schematics for all of these structures and more, so feel free to use whichever you enjoy the most!"
+			],
+			dependencies: ["0000000000000007"],
+			id: "2A0DC00944171C4C",
+			tasks: [{
+				id: "2EE6CC769EA7C9E7",
+				type: "item",
+				item: "immersivepetroleum:projector"
+			}],
+			rewards: [{
+				id: "1CEC542F2D9E02C3",
 				type: "command",
 				title: "Rare Immersive Engineering Loot Box",
 				icon: "kubejs:rare_lootbox",
