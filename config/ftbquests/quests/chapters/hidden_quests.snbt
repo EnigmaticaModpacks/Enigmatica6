@@ -44,8 +44,8 @@
 			}]
 		},
 		{
-			x: -5.5d,
-			y: -8.0d,
+			x: -8.5d,
+			y: -6.5d,
 			id: "00000000000004B3",
 			tasks: [{
 				id: "00000000000004B4",
@@ -62,26 +62,6 @@
 				type: "advancement",
 				advancement: "tetra:spelunking/ancient_ruins",
 				criterion: ""
-			}]
-		},
-		{
-			x: -8.5d,
-			y: -6.5d,
-			description: [
-				"Only here to use as a hidden dependency for the powah power challenge quest, so we can hide it until it's actually completable",
-				"",
-				"Do not delete before that's the case"
-			],
-			id: "0000000000000D38",
-			tasks: [{
-				id: "0000000000000D39",
-				type: "checkmark",
-				title: "PowahChallengeTMP",
-				icon: {
-					id: "powah:battery_nitro",
-					Count: 1b,
-					tag: {}
-				}
 			}]
 		},
 		{

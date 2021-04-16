@@ -1,8 +1,8 @@
 events.listen('recipes', (event) => {
-    var materials = ['aeternium', 'terminite', 'thallasium'],
+    const materials = ['aeternium', 'terminite', 'thallasium'],
         types = ['shovel_head', 'hammer_head', 'hoe_head', 'pickaxe_head', 'axe_head', 'sword_blade'];
 
-    var data = {
+    const data = {
         recipes: [
             {
                 id: 'betterendforge:ender_shard_to_dust',
@@ -27,7 +27,12 @@ events.listen('recipes', (event) => {
 
     materials.forEach((material) => {
         types.forEach((type) => {
-            var count, damage;
+            // Neither terminite nor thallasium have a hammer head.
+            if (type == 'hammer_head' && material != 'aeternium') {
+                return;
+            }
+
+            let count, damage;
             switch (type) {
                 case 'hoe_head':
                     count = 2;

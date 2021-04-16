@@ -40,6 +40,7 @@ $CONFIGS_TO_REMOVE = @(
 	"jei-client.toml",
 	"mcjtylib-client.toml",
 	"mining_helmet-client.toml",
+	"morered-client.toml",
 	"mythicbotany-client.toml",
 	"neat-client.toml",
 	"occultism-client.toml",
@@ -51,7 +52,9 @@ $CONFIGS_TO_REMOVE = @(
 	"rftoolsutility-client.toml",
 	"sophisticatedbackpacks-client.toml",
 	"supplementaries-client.toml",
+	"tconstruct-client.toml",
 	"thermal-client.toml",
+	"travel_anchors-client.toml",
 	"upgrade_aquatic-client.toml",
 	"xnet-client.toml"
 )
@@ -75,7 +78,7 @@ $MODPACK_VERSION = "0.4.9"
 # Only used by the Changelog Generator
 $LAST_MODPACK_VERSION = "0.4.8"
 
-$FORGE_VERSION = 36.1.0
+$FORGE_VERSION = 36.1.4
 
 $CLIENT_FILENAME = "Enigmatica6"
 
@@ -91,7 +94,7 @@ $GAME_VERSIONS = @(8203) # 7675 is 1.15.1, 7722 is 1.15.2, 7892 is 1.16.1, 8056 
 $CLIENT_CHANGELOG_TYPE = "markdown"
 
 $CLIENT_CHANGELOG = "### Enigmatica 6 v$MODPACK_VERSION <br /> <br />" +
-"Using Forge-1.16.5-36.1.0 <br /> <br /> " +
+"Using Forge-1.16.5-36.1.4 <br /> <br /> " +
 "The Changelog is currently being written, it should be done within 10 minutes. "
 
 

@@ -1,0 +1,29 @@
+
+#No comment
+[Restrictions]
+	#Defines the chat box cooldown for message sending.
+	#Range: 1 ~ 100000
+	chatBoxCooldown = 10
+	#The max range of the player detector functions. If anyone use a higher range, the detector will use this max range
+	#Range: 0 ~ 2147483646
+	playerDetMaxRange = 2147483646
+
+#No comment
+[Features]
+	#Enable the Chat Box or not.
+	enableChatBox = true
+	#Enable the Me Bridge or not.
+	enableMeBridge = true
+	#Enable the Rs Bridge or not.
+	enableRsBridge = true
+	#Enable the Player Detector or not.
+	enablePlayerDetector = true
+	#Enable the Environment Detector or not.
+	enableEnvironmentDetector = true
+	#Enable the Chunky Turtle or not.
+	enableChunkyTurtle = true
+	#Enable the debug mode, you should only enable it, if a developer say it or something does not work.
+	enableDebugMode = false
+	#Enable the Energy Detector or not.
+	enableEnergyDetector = true
+

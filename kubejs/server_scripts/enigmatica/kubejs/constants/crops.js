@@ -1509,6 +1509,30 @@ const cropRegistry = [
                 substrate: 'end_stone'
             },
             {
+                seed: 'byg:tall_ether_grass',
+                render: 'byg:tall_ether_grass',
+                plant: 'byg:tall_ether_grass',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'byg:ether_bush',
+                render: 'byg:ether_bush',
+                plant: 'byg:ether_bush',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'byg:imparius_bush',
+                render: 'byg:imparius_bush',
+                plant: 'byg:imparius_bush',
+                substrate: 'end_stone'
+            },
+            {
+                seed: 'byg:bulbis_sprouts',
+                render: 'byg:bulbis_sprouts',
+                plant: 'byg:bulbis_sprouts',
+                substrate: 'end_stone'
+            },
+            {
                 seed: 'byg:flower_patch',
                 render: 'byg:flower_patch',
                 plant: 'byg:flower_patch',
