@@ -49,11 +49,13 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:OCEAN,WET",
-        "biomeBlacklist": "tag:NETHER,END",
+        "biomeWhitelist": "tag:RIVER,WET,BEACH",
+        "biomeBlacklist": "tag:NETHER,END,OCEAN,SPOOKY",
         "minGroupSize": 2,
         "maxGroupSize": 3,
-        "spawnWeight": 14,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 12,
         "lightLevel": "ANY"
     },
     "BreedData": {
