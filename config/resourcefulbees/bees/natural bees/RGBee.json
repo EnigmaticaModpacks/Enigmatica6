@@ -39,11 +39,12 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:PLAINS",
+        "biomeWhitelist": "tag:PLAINS,FOREST",
         "biomeBlacklist": "tag:OCEAN",
-        "minGroupSize": 1,
+        "minGroupSize": 2,
         "maxGroupSize": 3,
-        "spawnWeight": 8
+        "spawnWeight": 14,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,

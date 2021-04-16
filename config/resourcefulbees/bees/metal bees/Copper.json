@@ -1,16 +1,17 @@
 {
     "flower": "ALL",
-    "maxTimeInHive": 2400,
-    "sizeModifier": 0.75,
-    "traits": ["can_swim"],
+    "maxTimeInHive": 3600,
+    "sizeModifier": 1,
     "hasHoneycomb": true,
-    "baseLayerTexture": "other/clay",
+    "traits": ["can_swim"],
+    "baseLayerTexture": "ores/copper/copper_bee",
     "ColorData": {
-        "honeycombColor": "#acaebd",
+        "honeycombColor": "#bb5b30",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "isEnchanted": false
+        "isEnchanted": false,
+        "modelType": "ORE"
     },
     "CombatData": {
         "isPassive": false,
@@ -19,26 +20,27 @@
         "attackDamage": 1
     },
     "MutationData": {
+        "hasMutation": true,
         "mutations" : [
           {
             "type": "BLOCK",
-            "inputID": "tag:minecraft:sand",
+            "inputID": "tag:forge:stone",
             "outputs": [
-              {"outputID": "minecraft:clay", "weight": 10}
+              {"outputID": "emendatusenigmatica:copper_ore", "weight": 10}
             ]
           }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-
-        "mainOutput": "minecraft:clay",
+        
+        "mainOutput": "emendatusenigmatica:copper_chunk",
         "mainOutputWeight": 0.5,
-        "mainOutputCount": 2,
+        "mainOutputCount": 1,
 
-        "secondaryOutput": "minecraft:terracotta",
+        "secondaryOutput": "minecraft:gold_nugget",
         "secondaryOutputWeight": 0.1,
-        "secondaryOutputCount": 1,
+        "secondaryOutputCount": 3,
 
         "bottleOutput": "minecraft:honey_bottle",
         "bottleOutputWeight": 0.25,
@@ -47,17 +49,13 @@
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": true,
-        "spawnWeight": 8,
-        "biomeWhitelist": "tag:CLAY,SWAMP",
-        "biomeBlacklist": "tag:NETHER,END",
-        "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "lightLevel": "DAY"
+        "canSpawnInWorld": false
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "tag:forge:storage_blocks/clay",
+        "parent1": "slimy",
+        "parent2": "water",
+        "feedItem": "tag:forge:storage_blocks/copper",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

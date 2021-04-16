@@ -49,11 +49,12 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:COLD",
+        "biomeWhitelist": "tag:COLD,SNOWY",
         "biomeBlacklist": "tag:HOT,NETHER,END,OCEAN",
-        "minGroupSize": 1,
+        "minGroupSize": 2,
         "maxGroupSize": 3,
-        "spawnWeight": 8
+        "spawnWeight": 14,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,

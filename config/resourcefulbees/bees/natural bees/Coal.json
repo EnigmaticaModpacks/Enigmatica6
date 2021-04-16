@@ -1,12 +1,12 @@
 {
     "flower": "ALL",
-    "maxTimeInHive": 3600,
-    "sizeModifier": 1,
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
-    "baseLayerTexture": "ores/copper/copper_bee",
+    "baseLayerTexture": "ores/coal/coal_bee",
     "ColorData": {
-        "honeycombColor": "#bb5b30",
+        "honeycombColor": "#303030",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
@@ -26,36 +26,42 @@
             "type": "BLOCK",
             "inputID": "tag:forge:stone",
             "outputs": [
-              {"outputID": "emendatusenigmatica:copper_ore", "weight": 10}
+              {"outputID": "emendatusenigmatica:coal_ore", "weight": 10}
             ]
           }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        
-        "mainOutput": "emendatusenigmatica:copper_chunk",
-        "mainOutputWeight": 0.5,
-        "mainOutputCount": 1,
 
-        "secondaryOutput": "minecraft:gold_nugget",
-        "secondaryOutputWeight": 0.1,
+        "mainOutput": "emendatusenigmatica:coal_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 2,
+
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.5,
         "secondaryOutputCount": 3,
 
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
+        "bottleOutput": "resourcefulbees:coal_honey_bottle",
+        "bottleOutputWeight": 0.02,
         "bottleOutputCount": 1,
 
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": false
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:HILLS,MOUNTAIN,CLEARINGS",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "spawnWeight": 14,
+        "minYLevel": 12,
+        "maxYLevel": 250,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "clay",
-        "parent2": "water",
-        "feedItem": "tag:forge:storage_blocks/copper",
+        "feedItem": "tag:forge:storage_blocks/coal",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

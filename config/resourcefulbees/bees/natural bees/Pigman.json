@@ -1,19 +1,17 @@
 {
-    "flower": "ALL",
-    "maxTimeInHive": 2400,
+    "flower": "tag:forge:mushrooms",
+    "maxTimeInHive": 4800,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "baseLayerTexture": "/creeper/creeper_bee",
-    "traits": ["creeper", "can_swim"],
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["nether", "pigman", "can_swim"],
+    "baseLayerTexture": "pigman/pigman_bee",
     "ColorData": {
-        "honeycombColor": "#0c9f0a",
+        "honeycombColor": "#885956",
         "isBeeColored": false,
         "isRainbowBee": false,
-        "isGlowing": true,
-        "isEnchanted": false,
-        "glowColor": "#e2d3d3",
-        "glowingPulse": 2,
-        "emissiveLayerTexture": "/creeper/creeper_bee_emissive"
+        "isGlowing": false,
+        "isEnchanted": false
     },
     "CombatData": {
         "isPassive": false,
@@ -22,12 +20,20 @@
         "attackDamage": 2
     },
     "MutationData": {
+        "hasMutation": true,
         "mutations" : [
           {
             "type": "BLOCK",
-            "inputID": "tag:minecraft:lava",
+            "inputID": "minecraft:blackstone",
             "outputs": [
-              {"outputID": "minecraft:mossy_cobblestone", "weight": 10}
+              {"outputID": "minecraft:gilded_blackstone", "weight": 10}
+            ]
+          },
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:obsidian",
+            "outputs": [
+              {"outputID": "minecraft:crying_obsidian", "weight": 10}
             ]
           }
         ]
@@ -35,9 +41,9 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "minecraft:gunpowder",
-        "mainOutputWeight": 0.6,
-        "mainOutputCount": 3,
+        "mainOutput": "minecraft:gold_nugget",
+        "mainOutputWeight": 0.2,
+        "mainOutputCount": 6,
 
         "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.5,
@@ -51,17 +57,15 @@
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:OVERWORLD",
-        "biomeBlacklist": "tag:OCEAN",
-        "lightLevel": "NIGHT",
-        "minGroupSize": 1,
-        "maxGroupSize": 4,
-        "spawnWeight": 8
+        "biomeWhitelist": "minecraft:nether_wastes, minecraft:crimson_forest",
+        "biomeBlacklist": "tag:OVERWORLD,END",
+        "lightLevel": "ANY",
+        "spawnWeight": 10
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "minecraft:gunpowder",
-        "feedAmount": 2,
+        "feedItem": "tag:forge:storage_blocks/gold",
+        "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
     },

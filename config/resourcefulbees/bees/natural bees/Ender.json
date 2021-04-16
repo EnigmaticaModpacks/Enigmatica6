@@ -1,23 +1,22 @@
 {
-    "flower": "ALL",
-    "maxTimeInHive": 2400,
-    "sizeModifier": 0.75,
+    "flower": "minecraft:chorus_flower",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
     "hasHoneycomb": true,
-    "traits": ["can_swim"],
-    "baseLayerTexture": "ores/coal/coal_bee",
+    "traits": ["ender", "can_swim"],
+    "baseLayerTexture": "other/ender",
     "ColorData": {
-        "honeycombColor": "#303030",
+        "honeycombColor": "#339786",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "isEnchanted": false,
-        "modelType": "ORE"
+        "isEnchanted": false
     },
     "CombatData": {
         "isPassive": false,
-        "removeStingerOnAttack": true,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 2
     },
     "MutationData": {
         "hasMutation": true,
@@ -26,7 +25,7 @@
             "type": "BLOCK",
             "inputID": "tag:forge:stone",
             "outputs": [
-              {"outputID": "emendatusenigmatica:coal_ore", "weight": 10}
+              {"outputID": "minecraft:end_stone", "weight": 10}
             ]
           }
         ]
@@ -34,32 +33,32 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "emendatusenigmatica:coal_chunk",
+        "mainOutput": "minecraft:ender_pearl",
         "mainOutputWeight": 0.5,
-        "mainOutputCount": 2,
+        "mainOutputCount": 1,
 
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.5,
+        "secondaryOutput": "emendatusenigmatica:enderium_nugget",
+        "secondaryOutputWeight": 0.01,
         "secondaryOutputCount": 3,
 
-        "bottleOutput": "resourcefulbees:coal_honey_bottle",
-        "bottleOutputWeight": 0.02,
+        "bottleOutput": "minecraft:dragon_breath",
+        "bottleOutputWeight": 0.01,
         "bottleOutputCount": 1,
 
         "mainInputCount": 1
     },
     "SpawnData": {
         "canSpawnInWorld": true,
-        "biomeWhitelist": "tag:HILLS,MOUNTAINS",
-        "biomeBlacklist": "tag:OCEAN",
+        "biomeWhitelist": "tag:END",
+        "biomeBlacklist": "tag:OVERWORLD,NETHER",
+        "lightLevel": "ALL",
         "minGroupSize": 1,
-        "maxGroupSize": 3,
-        "spawnWeight": 8,
-        "lightLevel": "DAY"
+        "maxGroupSize": 2,
+        "spawnWeight": 10
     },
     "BreedData": {
         "isBreedable": true,
-        "feedItem": "tag:forge:storage_blocks/coal",
+        "feedItem": "tag:forge:gems/ender",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000
