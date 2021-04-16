@@ -1200,7 +1200,11 @@
 			x: 12.0d,
 			y: 7.5d,
 			subtitle: "Quixotic Electro-Destabilization",
-			description: ["When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. "],
+			description: [
+				"When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. ",
+				"",
+				"Unlike the Terrestrial Agglomeration Plate, this requires a Dominant Spark Augment installed on the Spark in order to draw in mana for crafting. "
+			],
 			dependencies: [
 				"0000000000000582",
 				"0000000000000584",

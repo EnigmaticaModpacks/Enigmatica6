@@ -39,7 +39,7 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(gear, [Ingredient.of(input, 4), 'thermal:press_gear_die'])
+            .press(output, [Ingredient.of(input, 4), mold])
             .id(`thermal:machine/press/press_${material}_ingot_to_gear`);
 
         event.recipes.immersiveengineering
@@ -47,7 +47,7 @@ events.listen('recipes', (event) => {
             .id(`kubejs:immersiveengineering_metal_press_${material}_gear`);
 
         event
-            .shaped(gear, ['CAC', 'ABA', 'CAC'], {
+            .shaped(output, ['CAC', 'ABA', 'CAC'], {
                 A: input,
                 B: '#forge:plates/iron_tin',
                 C: '#forge:nuggets/aluminum'

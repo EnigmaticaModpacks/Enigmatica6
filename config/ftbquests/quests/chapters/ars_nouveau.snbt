@@ -465,7 +465,7 @@
 			}]
 		},
 		{
-			x: 3.0d,
+			x: 3.5d,
 			y: -4.0d,
 			description: [
 				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone.",
@@ -494,6 +494,8 @@
 			description: [
 				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. ",
 				"",
+				"To tell a Carbuncle where to store items, Right-Click it with a Dominion Wand and then Sneak Right-Click any inventory with the wand.",
+				"",
 				"Refer to the Worn Notebook for an in-depth guide on using Carbuncles.",
 				"",
 				"These critters can be an uncommon sight even in ancient forests. If none can be found, consider summoning them with the Altar of Birthing."
@@ -519,7 +521,7 @@
 			]
 		},
 		{
-			x: 4.0d,
+			x: 2.5d,
 			y: -3.5d,
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you.",
@@ -615,7 +617,7 @@
 		{
 			title: "Turret Practice: Micro Farms",
 			icon: "ars_nouveau:glyph_harvest",
-			x: 5.0d,
+			x: 6.5d,
 			y: -3.5d,
 			description: [
 				"A simple and compact crop farm can be made with a spell turret with the following spell:",
@@ -655,7 +657,7 @@
 		},
 		{
 			title: "Turret Practice: Redstone Clock",
-			x: 6.0d,
+			x: 5.5d,
 			y: -4.0d,
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?",
@@ -746,6 +748,63 @@
 				id: "0000000000000A37",
 				type: "item",
 				item: "ars_nouveau:glyph_fangs"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -3.0d,
+			description: ["Mana isn't the only source of power in this world, and some clever Sanguimancers have found a way to bind a spellbook to their Soul Network, allowing them to draw on a deeper well of power to cast their spells. "],
+			dependencies: [
+				"00000000000003C2",
+				"00000000000008C7"
+			],
+			id: "221C600F3E3C813C",
+			tasks: [{
+				id: "106C65C1B54C90C6",
+				type: "item",
+				item: "tomeofblood:tome_of_blood"
+			}],
+			rewards: [{
+				id: "23A1C4CCC95A1F45",
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			icon: "ars_nouveau:wixie_charm",
+			x: 4.5d,
+			y: -3.5d,
+			description: [
+				"Wouldn't it be helpful to have a hand around the Crafting Table? Someone to pass you this, or fetch you that? Or perhaps they could just do the job for you while you further your studies of the arcane?",
+				"",
+				"The Wixie is the friend you seek. Bound by casting Dispel on a Witch at low health, Wixies are summoned by using their Charm on a standard Cauldron, transforming it into a Wixie Cauldron. ",
+				"",
+				"To specify what the Wixie ought to craft, simply make one of the items yourself and Right-Click it on her cauldron. She'll take care of gathering the required items from nearby inventories. She will need a source of Mana nearby, however, so leave a Jar of Mana and be sure it stays full. "
+			],
+			dependencies: ["00000000000009ED"],
+			id: "0BC6D824A7A10356",
+			tasks: [
+				{
+					id: "5A68031815311494",
+					type: "item",
+					item: "ars_nouveau:wixie_charm"
+				},
+				{
+					id: "67D65A1F1B80B28B",
+					type: "item",
+					item: "minecraft:cauldron"
+				}
+			],
+			rewards: [{
+				id: "7C201B55C9F00AD3",
+				type: "command",
+				title: "Rare Ars Nouveau Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+				player_command: false
 			}]
 		}
 	]

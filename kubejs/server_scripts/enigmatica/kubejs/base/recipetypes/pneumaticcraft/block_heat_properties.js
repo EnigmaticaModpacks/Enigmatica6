@@ -44,6 +44,15 @@ events.listen('recipes', (event) => {
                     block: 'emendatusenigmatica:lead_block'
                 },
                 heatCapacity: 500000
+            },
+            {
+                block: 'betterendforge:dense_snow',
+                temperature: 263,
+                thermalResistance: 500,
+                transformCold: {
+                    block: 'minecraft:snow_block'
+                },
+                heatCapacity: 2000
             }
         ]
     };

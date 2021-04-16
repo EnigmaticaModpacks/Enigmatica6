@@ -20,6 +20,7 @@ const generatableCobblestone = [
     'quark:cobbedstone',
     'undergarden:depthrock',
     'undergarden:shiverstone',
+    'undergarden:tremblecrust',
     'create:dark_scoria_cobblestone',
     'create:scoria_cobblestone',
     'create:gabbro_cobblestone',

@@ -719,6 +719,77 @@
 				type: "item",
 				item: "refinedstorage:crafter"
 			}]
+		},
+		{
+			x: 5.0d,
+			y: 9.5d,
+			subtitle: "Living Large",
+			description: [
+				"Enjoy the mobility to build anywhere (almost) with a fancy new Infinity Range Booster!",
+				"",
+				"Only one card is required."
+			],
+			dependencies: ["000000000000026E"],
+			id: "2306493F2E5034A9",
+			tasks: [{
+				id: "6F47C4273FB03E51",
+				type: "item",
+				item: "rsinfinitybooster:infinity_card"
+			}],
+			rewards: [{
+				id: "20EF5FBDB4D844CB",
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 9.5d,
+			subtitle: "Moving Abroad",
+			description: [
+				"Perfect for that Summer home in the Ivis Fields.",
+				"",
+				"This replaces the Infinity Booster, allowing limitless range even across dimensions."
+			],
+			dependencies: ["2306493F2E5034A9"],
+			id: "005B9AE555D13DE7",
+			tasks: [{
+				id: "7AFFE72DF5E94D4F",
+				type: "item",
+				item: "rsinfinitybooster:dimension_card"
+			}],
+			rewards: [{
+				id: "3E28C6692FC99AEB",
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 9.5d,
+			subtitle: "You Want How Many?",
+			description: ["An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "],
+			dependencies: ["0000000000000298"],
+			id: "5DA4C492523C7D72",
+			tasks: [{
+				id: "34568F90E5706133",
+				type: "item",
+				item: "rsrequestify:requester"
+			}],
+			rewards: [{
+				id: "504B58199A20F9B0",
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
 		}
 	]
 }

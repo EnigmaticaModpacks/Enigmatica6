@@ -2,20 +2,11 @@ events.listen('recipes', (event) => {
     var data = {
         recipes_unheated: [
             {
-                inputs: [
-                    '#minecraft:planks',
-                    '#minecraft:planks',
-                    Fluid.of('immersiveengineering:creosote', 250)
-                ],
+                inputs: ['#minecraft:planks', '#minecraft:planks', Fluid.of('immersiveengineering:creosote', 250)],
                 output: Item.of('immersiveengineering:treated_wood_horizontal', 2)
             },
             {
-                inputs: [
-                    '#minecraft:coals',
-                    '#minecraft:coals',
-                    '#forge:clay',
-                    Fluid.of('minecraft:lava', 500)
-                ],
+                inputs: ['#minecraft:coals', '#minecraft:coals', '#forge:clay', Fluid.of('minecraft:lava', 500)],
                 output: Item.of('powah:dielectric_paste', 16)
             },
             {
@@ -24,7 +15,7 @@ events.listen('recipes', (event) => {
                     '#forge:gravel',
                     '#forge:sand',
                     '#forge:sand',
-                    {fluidTag: 'minecraft:water', amount: 500}
+                    Fluid.of('minecraft:water', 500)
                 ],
                 output: Fluid.of('immersiveengineering:concrete', 500)
             },
@@ -34,7 +25,7 @@ events.listen('recipes', (event) => {
                     '#forge:gravel',
                     '#forge:slag',
                     '#forge:slag',
-                    {fluidTag: 'minecraft:water', amount: 750}
+                    Fluid.of('minecraft:water', 750)
                 ],
                 output: Fluid.of('immersiveengineering:concrete', 750)
             },
@@ -44,7 +35,7 @@ events.listen('recipes', (event) => {
                     '#forge:gravel',
                     '#forge:sand',
                     '#forge:sand',
-                    {fluidTag: 'minecraft:water', amount: 500}
+                    Fluid.of('minecraft:water', 500)
                 ],
                 output: Item.of('immersivepetroleum:asphalt', 12)
             },
@@ -54,9 +45,41 @@ events.listen('recipes', (event) => {
                     '#forge:gravel',
                     '#forge:slag',
                     '#forge:slag',
-                    {fluidTag: 'minecraft:water', amount: 500}
+                    Fluid.of('minecraft:water', 500)
                 ],
                 output: Item.of('immersivepetroleum:asphalt', 16)
+            },
+            {
+                inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:bulbis_sprouts'],
+                output: Item.of('byg:bulbis_phycelium')
+            },
+            {
+                inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:imparius_vine'],
+                output: Item.of('byg:imparius_phylium')
+            },
+            {
+                inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:shulkren_moss_blanket'],
+                output: Item.of('byg:shulkren_phylium')
+            },
+            {
+                inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:nightshade_sprouts'],
+                output: Item.of('byg:nightshade_phylium')
+            },
+            {
+                inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:ivis_sprout'],
+                output: Item.of('byg:ivis_phylium')
+            },
+            {
+                inputs: ['byg:ether_soil', 'minecraft:bone_meal', 'byg:ether_foliage'],
+                output: Item.of('byg:ether_phylium')
+            },
+            {
+                inputs: ['minecraft:dirt', 'minecraft:bone_meal', 'byg:ether_foliage'],
+                output: Item.of('byg:ether_soil')
+            },
+            {
+                inputs: ['byg:ether_stone', 'minecraft:bone_meal', 'byg:vermilion_sculk_growth'],
+                output: Item.of('byg:vermilion_sculk')
             }
         ],
         recipes_heated: [
@@ -140,10 +163,7 @@ events.listen('recipes', (event) => {
                 output: Item.of('emendatusenigmatica:enderium_ingot', 2)
             },
             {
-                inputs: [
-                    '#forge:ingots/netherite',
-                    'betterendforge:terminite_ingot'
-                ],
+                inputs: ['#forge:ingots/netherite', 'betterendforge:terminite_ingot'],
                 output: Item.of('betterendforge:aeternium_ingot')
             }
         ]

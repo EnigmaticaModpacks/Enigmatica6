@@ -1843,3 +1843,68 @@
 ["Stratum Config: astral_marble"]
 	active = true
 
+["Cobalt Config"]
+
+	["Cobalt Config".Overworld]
+		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
+		generate_in_the_overworld = false
+		#Baseline Y-Level [Default: 32]
+		#Range: 0 ~ 256
+		overworld_base = 32
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
+		#Range: 0 ~ 256
+		overworld_spread = 16
+		#Average Ores per Chunk [Default: 4]
+		#Range: 0 ~ 64
+		overworld_count = 4
+		#Configure the ore Vein Size [Default: 8]
+		#Range: 0 ~ 64
+		overworld_size = 8
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		overworld_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		overworld_biome_list_invert = false
+
+	["Cobalt Config"."The Nether"]
+		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
+		generate_in_the_nether = false
+		#Baseline Y-Level [Default: 62]
+		#Range: 0 ~ 128
+		nether_base = 62
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
+		#Range: 0 ~ 128
+		nether_spread = 16
+		#Average Ores per Chunk [Default: 4]
+		#Range: 0 ~ 64
+		nether_count = 4
+		#Ore Vein Size [Default: 8]
+		#Range: 0 ~ 64
+		nether_size = 8
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		nether_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		nether_biome_list_invert = false
+
+	["Cobalt Config"."The End"]
+		#Activate/Deactivate the Ore Gen in The End [Default: false]
+		generate_in_the_end = false
+		#Baseline Y-Level [Default: 52]
+		#Range: 0 ~ 256
+		end_base = 52
+		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
+		#Range: 0 ~ 256
+		end_spread = 16
+		#Average Ores per Chunk [Default: 4]
+		#Range: 0 ~ 64
+		end_count = 4
+		#Ore Vein Size [Default: 8]
+		#Range: 0 ~ 64
+		end_size = 8
+		#List of biome IDs in which the ore is not allowed to generate.
+		#To blacklist all biomes from a single mod, use 'modid:*'
+		end_biome_blacklist = []
+		#Invert Blacklist to Whitelist [Default: false]
+		end_biome_list_invert = false
+

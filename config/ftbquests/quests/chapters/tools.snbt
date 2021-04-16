@@ -2177,6 +2177,11 @@
 		{
 			x: -5.5d,
 			y: -4.5d,
+			description: [
+				"When installed in Flux Tools, the Radial Enhancement allows them to work on larger areas. Drillin or Sawing a 3x3, 5x5, or 7x7 area. ",
+				"",
+				"Likewise, it increase the pickup range for a FluxoMagnet."
+			],
 			dependencies: [
 				"00000000000004A4",
 				"0000000000000490",
@@ -2800,6 +2805,80 @@
 				id: "2DBC321E9D2AE461",
 				type: "item",
 				item: "immersiveengineering:toolupgrade_chemthrower_focus"
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -14.5d,
+			dependencies: ["00000000000001A3"],
+			id: "360AA4847973AD50",
+			tasks: [{
+				id: "5EA90FC0CC6ACA71",
+				type: "item",
+				item: {
+					id: "ironjetpacks:nitro_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			x: -7.0d,
+			y: -11.0d,
+			subtitle: "Head in the Clouds",
+			description: [
+				"Ever wish you could start building a platform in the sky without having to nerd-pole your way up there? ",
+				"",
+				"Well, if you can't fly you may still need that nerd-pole. If you can, however, grab a bottle of cloud to act as a starting point for the platform. ",
+				"",
+				"Using a glass bottle between y126 and y132 will get you a Bottled Cloud. Right-Clicking the air again will place the cloud, allowing other blocks to be placed against it. It will disappear after a few moments, but will go back into your bottle on it's own if another block is placed against it in time. "
+			],
+			id: "322E9DDDEE1623E3",
+			tasks: [{
+				id: "2AF9B5D1BACA4A59",
+				type: "item",
+				item: "quark:bottled_cloud"
+			}],
+			rewards: [{
+				id: "43188DFF0C8F9DDC",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
+			}]
+		},
+		{
+			x: -4.0d,
+			y: -11.0d,
+			subtitle: "Just to Spend it With You...",
+			description: [
+				"Save every day like a treasure and spend them on whatever you like.",
+				"",
+				"Sneak Right-Click most machines to spend stored time on them, speeding them up briefly. "
+			],
+			dependencies: ["000000000000046D"],
+			id: "7AE1180EFAF22376",
+			tasks: [{
+				id: "4D29649F3F51D7D3",
+				type: "item",
+				item: {
+					id: "tiab:timeinabottle",
+					Count: 1b,
+					tag: {
+						timeData: {}
+					}
+				}
+			}],
+			rewards: [{
+				id: "4FDD99B9F9F65B1D",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
 			}]
 		}
 	]

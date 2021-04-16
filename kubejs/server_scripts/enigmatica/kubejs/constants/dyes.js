@@ -927,6 +927,13 @@ const dyeSources = [
         tertiary: 'minecraft:gray_dye'
     },
     {
+        input: 'atmospheric:yellow_blossoms',
+        type: 'large',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
         input: 'atmospheric:gilia',
         type: 'small',
         primary: 'minecraft:purple_dye',
