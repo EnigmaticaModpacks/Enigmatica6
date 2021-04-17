@@ -1,0 +1,68 @@
+{
+    "flower": "byg:soul_shroom",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "traits": ["nether", "blaze", "can_swim"],
+    "baseLayerTexture": "other/boobee",
+    "ColorData": {
+        "honeycombColor": "#e9f3ea",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:netherrack",
+                "outputs": [{ "outputID": "minecraft:tnt", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:ghast_tear",
+        "mainOutputWeight": 0.15,
+        "mainOutputCount": 2,
+
+        "secondaryOutput": "minecraft:spectral_arrow",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "farmersdelight:milk_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "minecraft:nether_wastes, minecraft:soul_sand_valley, minecraft:basalt_deltas",
+        "biomeBlacklist": "tag:OVERWORLD,END",
+        "spawnWeight": 1,
+        "minGroupSize": 1,
+        "maxGroupSize": 2,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:ghast_tear",
+        "feedAmount": 24,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

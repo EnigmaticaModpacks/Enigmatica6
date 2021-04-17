@@ -1,0 +1,66 @@
+{
+    "flower": "minecraft:nether_wart",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1.0,
+    "traits": ["blaze", "nether", "can_swim"],
+    "hasHoneycomb": true,
+    "apiaryOutputAmounts": [3, 6, 1, 2],
+    "baseLayerTexture": "other/blaze",
+    "ColorData": {
+        "honeycombColor": "#fff32d",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations" : [
+          {
+            "type": "ENTITY",
+            "inputID": "entity:resourcefulbees:creeper_bee",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:ghast_bee", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:blaze_powder",
+        "mainOutputWeight": 0.20,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:blaze_powder",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:blaze_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "creeper",
+        "parent2": "glowstone",
+        "feedItem": "tag:forge:rods/blaze",
+        "feedAmount": 3,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

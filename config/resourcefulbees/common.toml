@@ -122,7 +122,7 @@
 	#
 	#Set this to false when you want to overwrite the default provided Biome Dictionary files. [true/false]
 	#This should be run at least once for initial generation.
-	generateBiomeDictionaries = true
+	generateBiomeDictionaries = false
 	#
 	#Set this to false when you want to use our custom Biome Dictionary system. [true/false]
 	#At a later time we will look into either combining with the Forge system or making the Forge system data pack capable.
@@ -186,12 +186,12 @@
 	nether_nest_generation_chance = 8
 	#The value added to weight for bees in a flower forests
 	#Range: 0 ~ 9
-	beesMoreCommonInFlowerForests = 4
+	beesMoreCommonInFlowerForests = 8
 	#
 	#Chance for nest to spawn when generating chunks in overworld category biomes. [1/x]
 	#A higher value means the nest is less likely to spawn.
 	#Range: 4 ~ 100
-	overworld_nest_generation_chance = 64
+	overworld_nest_generation_chance = 48
 	#
 	#Chance for nest to spawn when generating chunks in end category biomes. [1/x]
 	#A higher value means the nest is less likely to spawn.

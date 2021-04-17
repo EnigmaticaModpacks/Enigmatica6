@@ -1,0 +1,61 @@
+{
+    "flower": "ALL",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "ColorData": {
+        "honeycombColor": "#ffffff",
+        "isBeeColored": false,
+        "isRainbowBee": true,
+        "isGlowing": true,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": false
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:experience_bottle",
+        "mainOutputWeight": 0.01,
+        "mainOutputCount": 2,
+
+        "secondaryOutput": "quark:rainbow_rune",
+        "secondaryOutputWeight": 0.01,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:rainbow_honey_bottle",
+        "bottleOutputWeight": 0.01,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:PLAINS,FOREST",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 12,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:minecraft:flowers",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}
