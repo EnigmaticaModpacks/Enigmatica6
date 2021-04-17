@@ -120,13 +120,13 @@ events.listen('recipes', (event) => {
             {
                 entity: 'minecraft:cat',
                 size: sizes.small,
-                special: { tag: 'forge:fishes' },
+                special: { tag: 'minecraft:fishes' },
                 base: substrates.basic
             },
             {
                 entity: 'minecraft:ocelot',
                 size: sizes.small,
-                special: { tag: 'forge:fishes' },
+                special: { tag: 'minecraft:fishes' },
                 base: substrates.basic
             },
             {
