@@ -31,6 +31,8 @@
 	stalkerHuntsAnimals = false
 	#Should the Wilden Defender attack animals?
 	defenderHuntsAnimals = false
+	#Dimensions where hostile mobs will not spawn. Ex: minecraft:overworld. Run /forge dimensions for a list.
+	dimensionBlacklist = []
 
 #Enabled Spells
 [spells]
