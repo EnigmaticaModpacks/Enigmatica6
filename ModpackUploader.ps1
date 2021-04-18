@@ -205,7 +205,7 @@ if ($ENABLE_SERVER_FILE_MODULE -and $ENABLE_MODPACK_UPLOADER_MODULE) {
 }
 
 # Keep an up-to-date modlist
-$MODLIST_PATH = "$PSScriptRoot/MODLIST.md"
+$MODLIST_PATH = "$PSScriptRoot/changelogs/MODLIST_$MODPACK_VERSION.md"
 
 Remove-Item $MODLIST_PATH -ErrorAction SilentlyContinue
 "## $CLIENT_FILE_DISPLAY_NAME Modlist" | Out-File -FilePath $MODLIST_PATH -Encoding ASCII
