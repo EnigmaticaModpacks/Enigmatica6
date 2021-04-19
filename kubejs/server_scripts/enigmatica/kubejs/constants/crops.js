@@ -1366,7 +1366,7 @@ const cropRegistry = [
                 substrate: 'soul_sand'
             },
             {
-                seed: 'undergarden:ditchbulb_plant',
+                seed: 'undergarden:ditchbulb',
                 render: 'undergarden:ditchbulb_plant',
                 plant: 'undergarden:ditchbulb',
                 substrate: 'deepturf'
