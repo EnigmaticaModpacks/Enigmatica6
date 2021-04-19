@@ -834,6 +834,13 @@ events.listen('recipes', (event) => {
             B: capacitor,
             C: Ingredient.of(lowerTiers.map((item) => 'powah:battery_' + item))
         });
+
+        event.shaped(Item.of('powah:reactor_' + tier, 4), ['BAB', 'A A', 'BAB'], {
+            A: capacitor,
+            B: Ingredient.of(lowerTiers.map((item) => 'powah:reactor_' + item))
+        });
+
+        //event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
     });
 
     colors.forEach((color) => {
