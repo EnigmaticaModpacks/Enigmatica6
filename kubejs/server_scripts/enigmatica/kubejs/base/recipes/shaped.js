@@ -760,8 +760,9 @@ events.listen('recipes', (event) => {
     });
 
     powahTiers.forEach(function (tier) {
-        var capacitor = 'powah:capacitor_' + tier,
-            crystal = 'powah:crystal_' + tier;
+        let capacitor = 'powah:capacitor_' + tier,
+            crystal = 'powah:crystal_' + tier,
+            cable = 'powah:energy_cable_' + tier;
 
         if (tier == 'basic' || tier == 'starter') {
             return;
@@ -840,7 +841,10 @@ events.listen('recipes', (event) => {
             B: Ingredient.of(lowerTiers.map((item) => 'powah:reactor_' + item))
         });
 
-        //event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
+        event.shaped(Item.of('powah:ender_gate_' + tier, 4), ['BAB', 'A A', 'BAB'], {
+            A: cable,
+            B: Ingredient.of(lowerTiers.map((item) => 'powah:ender_gate_' + item))
+        });
     });
 
     colors.forEach((color) => {
