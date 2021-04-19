@@ -828,7 +828,7 @@ events.listen('recipes', (event) => {
             },
             {
                 entity: 'ars_nouveau:wilden_guardian',
-                size: sizes.medium,
+                size: sizes.large,
                 special: { item: 'ars_nouveau:wilden_spike' },
                 base: substrates.frozen
             },
