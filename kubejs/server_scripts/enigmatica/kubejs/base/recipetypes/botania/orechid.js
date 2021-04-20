@@ -44,5 +44,4 @@ events.listen('server.datapack.low_priority', (event) => {
     });
 
     event.addJson('botania:orechid_ore_weights/orechid.json', { values: recipeList });
-    console.log({ values: recipeList });
 });
