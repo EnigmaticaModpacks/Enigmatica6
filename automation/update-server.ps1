@@ -15,16 +15,6 @@ param(
 	[int]$backupsToKeep = 12,
 
 	[Parameter(Position = 5)]
-	$clientOnlyMods = @(
-		"Ding", 
-		"ReAuth", 
-		"moreoverlays",
-		"Neat", 
-		"Toast-Control", 
-		"PackMenu"
-	),
-
-	[Parameter(Position = 6)]
 	[string]$serverFileFolder = "$PSScriptRoot/../server_files"
 )
 
