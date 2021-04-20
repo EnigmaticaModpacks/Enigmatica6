@@ -1,26 +1,40 @@
-rocks = true
-twigs = true
-fallenLeaves = true
-bones = true
-charredBones = true
-iceChunks = true
-pinecones = true
-seashells = true
-seaOats = true
-cattails = true
-barkMushrooms = true
-cobwebs = true
-bushes = true
-glowcap = true
-#Seagrass in lakes
-moreSeagrass = true
-#Denser river grass
-moreGrassInRivers = true
-#Tropical fish in jungles
-jungleTropicalFish = true
-netherNettles = true
-fallenTrees = true
-# % chance of groundcover placement
-#Range: 0 ~ 100
-groundcoverChance = 100
+
+#Project: Vibrant Journeys settings
+[Settings]
+
+	#World Gen Settings
+	[Settings."World Gen"]
+		rocks = true
+		twigs = true
+		fallenLeaves = true
+		bones = true
+		charredBones = true
+		iceChunks = true
+		pinecones = true
+		seashells = true
+		seaOats = true
+		cattails = true
+		barkMushrooms = true
+		cobwebs = true
+		bushes = true
+		glowcap = true
+		netherNettles = true
+		fallenTrees = true
+		#Seagrass in lakes
+		moreSeagrass = true
+		#Denser river grass
+		moreGrassInRivers = true
+		# % chance of groundcover placement
+		#Range: 0 ~ 100
+		groundcoverChance = 100
+
+	#Mob Spawn Settings
+	[Settings."Mob Spawns"]
+		#Tropical fish in jungles
+		jungleTropicalFish = true
+
+	#Biome Settings
+	[Settings.Biomes]
+		overgrownSpires = true
+		verdantSands = true
 

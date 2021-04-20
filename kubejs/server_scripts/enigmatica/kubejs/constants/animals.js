@@ -17,6 +17,7 @@ const tameableAnimals = [
     'alexsmobs:kangaroo',
     'alexsmobs:komodo_dragon',
     'alexsmobs:mantis_shrimp',
+    'alexsmobs:raccoon',
     'alexsmobs:warped_toad',
     'quark:foxhound'
 ];
@@ -70,7 +71,4 @@ const breedableAnimals = [
 ];
 
 // animals that can be bred, but don't immediately spawn a child after breeding
-const eggLayingAnimals = [
-    'minecraft:turtle',
-    'alexsmobs:crocodile'
-];
+const eggLayingAnimals = ['minecraft:turtle', 'alexsmobs:crocodile'];

@@ -130,6 +130,21 @@ events.listen('jei.information', (event) => {
             description: [
                 'Right-clicking a sappy maple log or sappy maple wood with a glass battle will turn the block into its stripped variant and fill the bottle with sap.'
             ]
+        },
+        {
+            items: [
+                'resourcefulbees:brass_bee',
+                'resourcefulbees:bronze_bee',
+                'resourcefulbees:constantan_bee',
+                'resourcefulbees:electrum_bee',
+                'resourcefulbees:enderium_bee',
+                'resourcefulbees:invar_bee',
+                'resourcefulbees:lumium_bee',
+                'resourcefulbees:signalum_bee'
+            ],
+            description: [
+                "Alloy Bees are made through Block to Item Mutations. Click this Bee's spawn egg in JEI for specifics."
+            ]
         }
     ];
 

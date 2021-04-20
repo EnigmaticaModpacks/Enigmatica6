@@ -760,8 +760,9 @@ events.listen('recipes', (event) => {
     });
 
     powahTiers.forEach(function (tier) {
-        var capacitor = 'powah:capacitor_' + tier,
-            crystal = 'powah:crystal_' + tier;
+        let capacitor = 'powah:capacitor_' + tier,
+            crystal = 'powah:crystal_' + tier,
+            cable = 'powah:energy_cable_' + tier;
 
         if (tier == 'basic' || tier == 'starter') {
             return;
@@ -778,62 +779,80 @@ events.listen('recipes', (event) => {
             i++;
         }
 
-        event.shaped(Item.of('powah:energy_cell_' + tier), ['ABA', 'BCB', 'ABA'], {
+        event.shaped(Item.of(`powah:energy_cell_${tier}`), ['ABA', 'BCB', 'ABA'], {
             A: crystal,
             B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:energy_cell_' + item))
+            C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
         });
 
-        event.shaped(Item.of('powah:ender_cell_' + tier), [' A ', 'ABA', ' A '], {
+        event.shaped(Item.of(`powah:ender_cell_${tier}`), [' A ', 'ABA', ' A '], {
             A: crystal,
-            B: Ingredient.of(lowerTiers.map((item) => 'powah:ender_cell_' + item))
+            B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
         });
 
-        event.shaped(Item.of('powah:energizing_rod_' + tier), ['   ', 'ACA', ' B '], {
+        event.shaped(Item.of(`powah:energizing_rod_${tier}`), ['   ', 'ACA', ' B '], {
             A: capacitor,
-            B: 'powah:energy_cable_' + tier,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:energizing_rod_' + item))
+            B: `powah:energy_cable_${tier}`,
+            C: Ingredient.of(lowerTiers.map((item) => `powah:energizing_rod_${item}`))
         });
 
-        event.shaped(Item.of('powah:furnator_' + tier), ['AAA', 'BCB', 'A A'], {
+        event.shaped(Item.of(`powah:furnator_${tier}`), ['AAA', 'BCB', 'A A'], {
             A: crystal,
             B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:furnator_' + item))
+            C: Ingredient.of(lowerTiers.map((item) => `powah:furnator_${item}`))
         });
 
-        event.shaped(Item.of('powah:magmator_' + tier), ['AAA', 'BCB', 'A A'], {
+        event.shaped(Item.of(`powah:magmator_${tier}`), ['AAA', 'BCB', 'A A'], {
             A: crystal,
             B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:magmator_' + item))
+            C: Ingredient.of(lowerTiers.map((item) => `powah:magmator_${item}`))
         });
 
-        event.shaped(Item.of('powah:thermo_generator_' + tier), [' A ', 'BCB'], {
+        event.shaped(Item.of(`powah:thermo_generator_${tier}`), [' A ', 'BCB'], {
             A: crystal,
             B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:thermo_generator_' + item))
+            C: Ingredient.of(lowerTiers.map((item) => `powah:thermo_generator_${item}`))
         });
 
-        event.shaped(Item.of('powah:solar_panel_' + tier), ['BCB', 'AAA'], {
+        event.shaped(Item.of(`powah:solar_panel_${tier}`), ['BCB', 'AAA'], {
             A: crystal,
             B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:solar_panel_' + item))
+            C: Ingredient.of(lowerTiers.map((item) => `powah:solar_panel_${item}`))
         });
 
-        event.shaped(Item.of('powah:energy_hopper_' + tier), ['ABA'], {
+        event.shaped(Item.of(`powah:energy_hopper_${tier}`), ['ABA'], {
             A: capacitor,
-            B: Ingredient.of(lowerTiers.map((item) => 'powah:energy_hopper_' + item))
+            B: Ingredient.of(lowerTiers.map((item) => `powah:energy_hopper_${item}`))
         });
 
-        event.shaped(Item.of('powah:energy_discharger_' + tier), [' A ', ' B ', ' A '], {
+        event.shaped(Item.of(`powah:energy_discharger_${tier}`), [' A ', ' B ', ' A '], {
             A: capacitor,
-            B: Ingredient.of(lowerTiers.map((item) => 'powah:energy_discharger_' + item))
+            B: Ingredient.of(lowerTiers.map((item) => `powah:energy_discharger_${item}`))
         });
 
-        event.shaped(Item.of('powah:battery_' + tier), [' A ', 'BCB', ' B '], {
+        event.shaped(Item.of(`powah:battery_${tier}`), [' A ', 'BCB', ' B '], {
             A: crystal,
             B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => 'powah:battery_' + item))
+            C: Ingredient.of(lowerTiers.map((item) => `powah:battery_${item}`))
         });
+
+        event.shaped(Item.of(`powah:reactor_${tier}`, 4), ['BAB', 'A A', 'BAB'], {
+            A: capacitor,
+            B: Ingredient.of(lowerTiers.map((item) => `powah:reactor_${item}`))
+        });
+
+        event.shaped(Item.of(`powah:ender_gate_${tier}`, 4), ['BAB', 'A A', 'BAB'], {
+            A: cable,
+            B: Ingredient.of(lowerTiers.map((item) => `powah:ender_gate_${item}`))
+        });
+
+        event
+            .shaped(Item.of(`powah:energy_cable_${tier}`, 6), ['CCC', 'BAB', 'CCC'], {
+                A: capacitor,
+                B: Ingredient.of(lowerTiers.map((item) => `powah:energy_cable_${item}`)),
+                C: Ingredient.of('powah:dielectric_rod_horizontal')
+            })
+            .id(`powah:crafting/cable_${tier}`);
     });
 
     colors.forEach((color) => {

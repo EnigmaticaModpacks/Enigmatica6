@@ -13,6 +13,7 @@ events.listen('item.tags', (event) => {
         'minecraft:glowstone',
         'minecraft:lava_bucket',
         'minecraft:magma_block',
+        'minecraft:shroomlight',
         'naturesaura:light_staff',
         'rsgauges:sensitive_glass_block',
         'simplylight:edge_light',

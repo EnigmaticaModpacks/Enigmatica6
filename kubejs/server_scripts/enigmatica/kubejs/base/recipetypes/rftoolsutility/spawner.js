@@ -120,13 +120,13 @@ events.listen('recipes', (event) => {
             {
                 entity: 'minecraft:cat',
                 size: sizes.small,
-                special: { tag: 'forge:fishes' },
+                special: { tag: 'minecraft:fishes' },
                 base: substrates.basic
             },
             {
                 entity: 'minecraft:ocelot',
                 size: sizes.small,
-                special: { tag: 'forge:fishes' },
+                special: { tag: 'minecraft:fishes' },
                 base: substrates.basic
             },
             {
@@ -825,6 +825,24 @@ events.listen('recipes', (event) => {
                 size: sizes.medium,
                 special: { item: 'minecraft:warped_fungus' },
                 base: substrates.hellish
+            },
+            {
+                entity: 'ars_nouveau:wilden_guardian',
+                size: sizes.large,
+                special: { item: 'ars_nouveau:wilden_spike' },
+                base: substrates.frozen
+            },
+            {
+                entity: 'ars_nouveau:wilden_stalker',
+                size: sizes.medium,
+                special: { item: 'ars_nouveau:wilden_wing' },
+                base: substrates.basic
+            },
+            {
+                entity: 'ars_nouveau:wilden_hunter',
+                size: sizes.medium,
+                special: { item: 'ars_nouveau:wilden_horn' },
+                base: substrates.basic
             }
         ]
     };

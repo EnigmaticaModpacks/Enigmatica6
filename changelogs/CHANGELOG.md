@@ -17,6 +17,7 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedD
 -   IntegratedDynamics: Lowered max FE transfer of a network to 65,536 FE/t
 -   IntegratedDynamics: Lowered max fluid transfer of a network to 65,536 mb/t
 -   IntegratedDynamics: Default new part update frequency of 10 ticks (up from 1)
+-   Bee Update Part 3! [#2000](https://github.com/NillerMedDild/Enigmatica6/pull/2000) [TemperedFool](https://github.com/TemperedFool) - More balancing and updates to the breeding tree are coming eventually, along with a breeding chart of some sort.
 
 **Bug Fixes**
 
