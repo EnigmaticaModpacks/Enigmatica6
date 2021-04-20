@@ -106,17 +106,9 @@ function Move-ServerFiles {
 }
 
 function Remove-ClientOnlyMods {
-	Write-Host
-	Write-Host "Removing client only mods..." -ForegroundColor Cyan
-	Get-ChildItem $modFolder -Name -Filter  "*.jar" | ForEach-Object {
-		foreach ($clientOnlyMod in $clientOnlyMods) {
-			if ($_.StartsWith($clientOnlyMod)) {
-				Remove-Item "$modfolder/$_" -Force
-				Write-Host "Removed the client mod $clientOnlyMod"
-			}
-		}
-	}
+	. "./remove-client-mods.ps1"
 }
+
 
 function Copy-Overrides {
 	Write-Host
