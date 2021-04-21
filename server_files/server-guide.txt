@@ -1,0 +1,17 @@
+## Installation
+
+1. Go to the CurseForge page for the modpack version you want to install, and download the server files.
+2. Unzip these into an empty folder.
+   - Make sure you do not have this in OneDrive or another synced folder, as those can lock up the installer.
+3. Run "start-server.bat" and wait for it to complete. When the installation is complete, you should see a prompt to accept the EULA.
+4. Once you accept the EULA, the server will start running. Startup will typically take 3-5 minutes.
+
+## Updating
+
+1. Follow the Installation steps above.
+2. Stop the server.
+3. Delete the "world" folder.
+4. Copy the "world" folder from your old installation to the new.
+	- Remember to reapply any changes you have made to configs, whitelist, server.properties etc.
+5. Start the server.
+	
