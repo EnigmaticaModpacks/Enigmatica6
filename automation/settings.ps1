@@ -31,10 +31,6 @@ $MODPACK_VERSION = "0.4.9"
 # Needed For Changelog Parsing
 $LAST_MODPACK_VERSION = "0.4.8"
 
-# Modpacks Forge Version:
-# Default: "14.23.5.2854"
-$FORGE_VERSION = 36.1.4
-
 # =====================================================================//
 #  CHANGELOG SETTINGS
 # =====================================================================//
