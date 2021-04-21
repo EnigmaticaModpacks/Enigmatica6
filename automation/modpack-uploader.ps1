@@ -146,8 +146,8 @@ function New-Changelog {
             --lines=50 `
             --entries=1
 
+        Remove-Item $ChangelogPath, $oldManifest, $newManifest -ErrorAction SilentlyContinue
         Move-Item -Path $changelogOriginalName -Destination $ChangelogPath
-        Remove-Item $oldManifest, $newManifest -ErrorAction SilentlyContinue
     }
 }
 
@@ -265,6 +265,36 @@ function Push-ServerFiles {
     }
 }
 
+function New-GitHubRelease {
+    if ($ENABLE_GITHUB_CHANGELOG_GENERATOR_MODULE) {
+
+        $BASE64TOKEN = [System.Convert]::ToBase64String([char[]]$GITHUB_TOKEN);
+        $Uri = "https://api.github.com/repos/$GITHUB_NAME/$GITHUB_REPOSITORY/releases?access_token=$GITHUB_TOKEN"
+    
+        $Headers = @{
+            Authorization = 'Basic {0}' -f $Base64Token;
+        };
+    
+        $Body = @{
+            tag_name         = $MODPACK_VERSION;
+            target_commitish = 'master';
+            name             = $MODPACK_VERSION;
+            body             = $CLIENT_CHANGELOG;
+            draft            = $false;
+            prerelease       = $false;
+        } | ConvertTo-Json;
+
+    
+        Write-Host 
+        Write-Host "Making GitHub Release..." -ForegroundColor Green
+        Write-Host 
+    
+        Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
+    
+        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
+    }
+}
+
 function Update-Modlist {
     if ($ENABLE_MODLIST_CREATOR_MODULE) {
         if (-not (Test-Path $ModlistCreatorJar) -or $ENABLE_ALWAYS_UPDATE_JARS) {
@@ -277,15 +307,18 @@ function Update-Modlist {
         java -jar $ModlistCreatorJar --markdown --output ".\"
         Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
         Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Remove-Item $manifest -ErrorAction SilentlyContinue
     }
 }
 
-Test-ForDependencies
-New-ClientFiles
-Push-ClientFiles
-if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-    New-ServerFiles
-}
-New-Changelog
-Update-Modlist
+# Test-ForDependencies
+# New-ClientFiles
+# Push-ClientFiles
+# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+#     New-ServerFiles
+# }
+# New-GitHubRelease
+# New-Changelog
+# Update-Modlist
 
+Update-Modlist
