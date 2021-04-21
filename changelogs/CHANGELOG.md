@@ -2,7 +2,22 @@
 
 _Using Forge-1.16.5-36.1.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.9.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.9.md)_
 
-**Note: Integrated Dynamics energy and fluid transfer is being nerfed, make sure your Reactor can handle the change before updating :D**
+
+
+**New Mods**
+
+- [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
+* [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
+* [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
+* [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
+* [Decorative Blocks modded compat](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks-modded-compat)
+* [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
+* [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
+* [Nature's Starlight](https://www.curseforge.com/minecraft/mc-mods/natures-starlight)
+* [Refined Storage Large Patterns](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
+* [Tactical Fishing](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing)
+
+
 
 **Improvements/Changes**
 
@@ -10,26 +25,70 @@ _Using Forge-1.16.5-36.1.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
     -   Our server file structure has changed, in order to make installing and updating easier.
     -   The server files contain a `server-guide.txt` that explains what to do, but it's pretty much just download, unzip and double-click the appropriate start-server script`
     -   The automated server setup has also changed, make sure to check [the README](https://github.com/NillerMedDild/Enigmatica6#server-automation) for instructions.
+-   0.4.8 IF addon quest accept any addon [\#1912](https://github.com/NillerMedDild/Enigmatica6/issues/1912)
+-   Add Aquamarine Shale IF Ore Laser Recipe [\#1934](https://github.com/NillerMedDild/Enigmatica6/pull/1934) ([TemperedFool](https://github.com/TemperedFool))
+-   Add Ars Nouveau's New Mobs to RFTools Spawner [\#2017](https://github.com/NillerMedDild/Enigmatica6/pull/2017) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add Elemental Rod processing to Mekanism Enrichment Chamber [\#1904](https://github.com/NillerMedDild/Enigmatica6/pull/1904) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add Refined Glowstone to Thermal Series Induction Smelter [\#1903](https://github.com/NillerMedDild/Enigmatica6/pull/1903) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Adds Manaseer Monocles to Goggles slot in Curios [\#1858](https://github.com/NillerMedDild/Enigmatica6/pull/1858) ([OneLemonyBoi](https://github.com/OneLemonyBoi))
+-   Aquamarine From IF laser drill? [\#1932](https://github.com/NillerMedDild/Enigmatica6/issues/1932)
+-   Alex's Mobs: Lowered Kangaroo spawn weight
+-   ArsNouveau: Lowered new Wilden creature's spawn weight
+-   Bee Update Part 3! [#2000](https://github.com/NillerMedDild/Enigmatica6/pull/2000) [TemperedFool](https://github.com/TemperedFool)
+    -   More balancing and updates to the breeding tree are coming eventually, along with a breeding chart of some sort.
+-   Ars Nouveau Quest Updates - Potion Crafting [\#2019](https://github.com/NillerMedDild/Enigmatica6/pull/2019) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Suggestion\] recipes for legendary varients of infinity tools [\#1694](https://github.com/NillerMedDild/Enigmatica6/issues/1694)
+-   Buff IF Fluid Laser BM Life Essence Recipe [\#1868](https://github.com/NillerMedDild/Enigmatica6/pull/1868) ([TemperedFool](https://github.com/TemperedFool))
+-   Challenge Quests - Infinity Tools and Potatoes [\#1992](https://github.com/NillerMedDild/Enigmatica6/pull/1992) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Chunkification of IE Excavator [\#2026](https://github.com/NillerMedDild/Enigmatica6/pull/2026) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Host of minor integrations additions [\#1971](https://github.com/NillerMedDild/Enigmatica6/pull/1971) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Integrated Dynamics/Tunnels Energy & Liquid Transfer rate Nerf [\#1881](https://github.com/NillerMedDild/Enigmatica6/pull/1881) ([TemperedFool](https://github.com/TemperedFool)): 
+    -   **Reactor users using ID pipes should make sure the changes will not make their reactor unstable**
+    -   IntegratedDynamics: Lowered max FE transfer of a network to 65,536 FE/t
+    -   IntegratedDynamics: Lowered max fluid transfer of a network to 65,536 mb/t
+    -   IntegratedDynamics: Default new part update frequency of 10 ticks (up from 1)
+-   Iron Jetpacks Update [\#1930](https://github.com/NillerMedDild/Enigmatica6/pull/1930) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Make Botany Pots and Terracotta washable and Botany Pots re-dyeable and other improvements [\#1907](https://github.com/NillerMedDild/Enigmatica6/pull/1907) ([MuteTiefling](https://github.com/MuteTiefling))
+-   More IE Excavator Mineral Nodes [\#2029](https://github.com/NillerMedDild/Enigmatica6/pull/2029) ([MuteTiefling](https://github.com/MuteTiefling))
+-   More Quests! [\#1989](https://github.com/NillerMedDild/Enigmatica6/pull/1989) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Powah QOL Crafting for upgrading Reactors, Cables, and Ender Gates [\#2009](https://github.com/NillerMedDild/Enigmatica6/pull/2009) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Quest Update Suggestion: Bee Box [\#1697](https://github.com/NillerMedDild/Enigmatica6/issues/1697)
+-   Recipe suggestion: Add a recipe for converting rusty iron to iron [\#1942](https://github.com/NillerMedDild/Enigmatica6/issues/1942)
+-   RFTools Control Spawner Expansion [\#1945](https://github.com/NillerMedDild/Enigmatica6/pull/1945) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tetra: Buffed all materials with 20% more durability and magic capacity.
+-   Tetra Buffs & Scriptification [\#1996](https://github.com/NillerMedDild/Enigmatica6/pull/1996) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tree Enhancements [\#1910](https://github.com/NillerMedDild/Enigmatica6/pull/1910) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Pedestal Quests [\#1937](https://github.com/NillerMedDild/Enigmatica6/pull/1937) ([TemperedFool](https://github.com/TemperedFool))
 -   XNet: Buffed fluid transfer rate
     -   Normal Connectors can now move 4000 mb per operation, up from 1000
     -   Advanced Connectors can now move 32000 mb per operation, up from 5000
 -   XNet: Buffed energy transfer rate 5x
     -   Normal Connectors: 25000 FE up from 5000 FE
     -   Advanced Connectors: 500000 FE up from 100000 FE
--   Alex's Mobs: Lowered Kangaroo spawn weight
--   ArsNouveau: Lowered new Wilden creature's spawn weight
--   IntegratedDynamics: Lowered max FE transfer of a network to 65,536 FE/t
--   IntegratedDynamics: Lowered max fluid transfer of a network to 65,536 mb/t
--   IntegratedDynamics: Default new part update frequency of 10 ticks (up from 1)
--   Bee Update Part 3! [#2000](https://github.com/NillerMedDild/Enigmatica6/pull/2000) [TemperedFool](https://github.com/TemperedFool)
-    -   More balancing and updates to the breeding tree are coming eventually, along with a breeding chart of some sort.
--   Tetra: Buffed all materials with 20% more durability and magic capacity.
+-   Zoology challenges [\#1954](https://github.com/NillerMedDild/Enigmatica6/pull/1954) ([ochotonida](https://github.com/ochotonida))
 
 **Bug Fixes**
+
+- \[0.4.7\] Music plays when muted in Sounds menu [\#1838](https://github.com/NillerMedDild/Enigmatica6/issues/1838)
+- \[0.4.8\] Basalz not spawning in mountain biomes [\#1900](https://github.com/NillerMedDild/Enigmatica6/issues/1900)
+- \[0.4.8\] Dimentional shard crusher recipes [\#1861](https://github.com/NillerMedDild/Enigmatica6/issues/1861)
+- \[0.4.8\] Netherite dust not smeltable in furnaces [\#1948](https://github.com/NillerMedDild/Enigmatica6/issues/1948)
+- \[0.4.8\] Nether quartz chunks give more quartz in enrichment chamber [\#1913](https://github.com/NillerMedDild/Enigmatica6/issues/1913)
+- \[0.4.8\] No recipe for compact machines [\#1844](https://github.com/NillerMedDild/Enigmatica6/issues/1844)
+- \[0.4.8\] Unable to make wheat flour from wheat in Mekanism crusher [\#1848](https://github.com/NillerMedDild/Enigmatica6/issues/1848)
+- Better End Compat - add Ingot \> Nugget recipe. Remove excess Jaopca blocks for Better End Metals [\#2023](https://github.com/NillerMedDild/Enigmatica6/pull/2023) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix Interactio script: move tag recipe to correct recipe type array. [\#1966](https://github.com/NillerMedDild/Enigmatica6/pull/1966) ([sciguyryan](https://github.com/sciguyryan))
+- Fix missing Wire Coil Recipes [\#1905](https://github.com/NillerMedDild/Enigmatica6/pull/1905) ([MuteTiefling](https://github.com/MuteTiefling))
+- Gear unification fix [\#1944](https://github.com/NillerMedDild/Enigmatica6/pull/1944) ([ochotonida](https://github.com/ochotonida))
+- Pedestals Quests Updates [\#1919](https://github.com/NillerMedDild/Enigmatica6/pull/1919) ([TemperedFool](https://github.com/TemperedFool))
+- Re-add RS tooltips about recoloring [\#1880](https://github.com/NillerMedDild/Enigmatica6/pull/1880) ([MuteTiefling](https://github.com/MuteTiefling))
+- Sync generatableCobblestone and generatableStone lists between client… [\#2022](https://github.com/NillerMedDild/Enigmatica6/pull/2022) ([sciguyryan](https://github.com/sciguyryan))
+- [0.4.8\] Salvaging Tetra metal scrap gives duplicate metal types [\#2027](https://github.com/NillerMedDild/Enigmatica6/issues/2027)
 
 **Removed Mods**
 
 -   Botany Trees (The mod doesn't do anything due to our recipe changes)
+-   Save My Stronghold (Doesn't work with Repurposed Structures)
 
 ### Enigmatica 6 v0.4.8
 
