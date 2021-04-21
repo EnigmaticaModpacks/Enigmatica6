@@ -122,15 +122,20 @@ function New-Changelog {
             -and (Test-Path "$LAST_MODPACK_ZIP_NAME.zip") `
             -and (Test-Path "$CLIENT_ZIP_NAME.zip")
     ) {
+        if (-not (Test-Path $ChangelogGeneratorDL) -or $ENABLE_ALWAYS_UPDATE_JARS) {
+            Remove-Item $ChangelogGeneratorDL -Recurse -Force -ErrorAction SilentlyContinue
+            Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $ChangelogGeneratorDL
+        }
+
         $oldManifest = "old.json"
         $newManifest = "new.json"
         $changelogOriginalName = "changelog.md"
         
         Remove-Item $oldManifest, $newManifest, $changelogOriginalName -ErrorAction SilentlyContinue
         7z e "$CLIENT_ZIP_NAME.zip" $manifest
-        Rename-Item -Path $manifest -NewName $oldManifest
-        7z e "$LAST_MODPACK_ZIP_NAME.zip" $manifest
         Rename-Item -Path $manifest -NewName $newManifest
+        7z e "$LAST_MODPACK_ZIP_NAME.zip" $manifest
+        Rename-Item -Path $manifest -NewName $oldManifest
     
         Write-Host 
         Write-Host "Generating changelog..." -ForegroundColor Green
@@ -214,8 +219,7 @@ function New-ServerFiles {
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
         7z a -tzip "$SERVER_ZIP_NAME.zip" "$ServerFilesFolder\*"
-        Move-Item -Path "$SERVER_ZIP_NAME.zip" -Destination "$InstanceRoot\$SERVER_ZIP_NAME.zip" -ErrorAction SilentlyContinue
-        Remove-Item "$SERVER_ZIP_NAME.zip" -Force -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\automation\$SERVER_ZIP_NAME.zip" -Destination "$InstanceRoot\$SERVER_ZIP_NAME.zip" -ErrorAction SilentlyContinue
 
         if ($ENABLE_MODPACK_UPLOADER_MODULE) {
             Push-ServerFiles -ClientFileId $ClientFileId
@@ -284,3 +288,4 @@ if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
 }
 New-Changelog
 Update-Modlist
+
