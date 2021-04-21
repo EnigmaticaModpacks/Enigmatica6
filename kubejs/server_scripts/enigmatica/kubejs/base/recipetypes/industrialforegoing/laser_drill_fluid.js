@@ -73,12 +73,12 @@ events.listen('recipes', (event) => {
 
     event.recipes.industrialforegoing.laser_drill_fluid({
         type: 'industrialforegoing.laser_drill_fluid',
-        output: '{FluidName:"bloodmagic:life_essence_fluid",Amount:5}',
+        output: '{FluidName:"bloodmagic:life_essence_fluid",Amount:500}',
         rarity: [
             {
                 whitelist: {
-                    type: 'minecraft:worldgen/biome',
-                    values: nether_biomes
+                  type: 'minecraft:worldgen/biome',
+                  values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 5,
@@ -90,7 +90,7 @@ events.listen('recipes', (event) => {
         catalyst: {
             item: 'industrialforegoing:laser_lens14'
         },
-        entity: 'minecraft:empty',
+        entity: 'minecraft:villager',
         type: 'industrialforegoing:laser_drill_fluid'
     });
 

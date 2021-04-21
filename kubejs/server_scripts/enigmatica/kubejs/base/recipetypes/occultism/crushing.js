@@ -1,27 +1,27 @@
 events.listen('recipes', (event) => {
     const recipes = [
         {
-            input: 'forge:end_stones',
+            input: { tag: 'forge:end_stones' },
             output: 'occultism:crushed_end_stone',
             count: 4,
             time: 200,
             id: 'occultism:crushing/crushed_end_stone'
         },
         {
-            input: 'forge:obsidian',
+            input: { tag: 'forge:obsidian' },
             output: 'emendatusenigmatica:obsidian_dust',
             count: 4,
             time: 400,
             id: 'occultism:crushing/obsidian_dust'
         },
         {
-            input: 'forge:grain',
+            input: { tag: 'forge:grain' },
             output: 'create:wheat_flour',
             count: 1,
             time: 400
         },
         {
-            input: 'minecraft:sugar_cane',
+            input: { item: 'minecraft:sugar_cane' },
             output: 'minecraft:sugar',
             count: 2,
             time: 400
@@ -31,9 +31,7 @@ events.listen('recipes', (event) => {
     recipes.forEach((recipe) => {
         let re = event.custom({
             type: 'occultism:crushing',
-            ingredient: {
-                tag: recipe.input
-            },
+            ingredient: recipe.input,
             result: {
                 item: recipe.output,
                 count: recipe.count

@@ -1071,8 +1071,8 @@
 		{
 			title: "Esoteric Ecology",
 			icon: "naturesaura:chorus_generator",
-			x: -1.5d,
-			y: -15.0d,
+			x: -1.0d,
+			y: -15.5d,
 			description: ["Generating Aura doesn't stop here. Check the Book of Natural Aura for other more advanced options for keeping the Aura around you from depleting."],
 			dependencies: ["00000000000002C1"],
 			id: "000000000000031A",
@@ -1180,6 +1180,27 @@
 					player_command: false
 				}
 			]
+		},
+		{
+			x: -2.0d,
+			y: -15.5d,
+			subtitle: "To the Stars!",
+			description: ["Growing Crystals under clear view of the sky has been known to bind the great energies of the stars into their lattice, but it seems not all of the energies are bound. The Crystalline Extractor absorbs this lost energy as crystals grow nearby, converting it into a powerful source of Aura."],
+			dependencies: ["00000000000002C1"],
+			id: "212224CE33D89381",
+			tasks: [{
+				id: "280C9FCBE6C8646D",
+				type: "item",
+				item: "naturesstarlight:crystal_generator"
+			}],
+			rewards: [{
+				id: "6C5991B03D429D92",
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
+			}]
 		}
 	]
 }

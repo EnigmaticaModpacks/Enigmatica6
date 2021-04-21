@@ -22,12 +22,39 @@ events.listen('recipes', (event) => {
                 output: Item.of('minecraft:quartz')
             },
             {
+                input: '#forge:grain',
+                output: Item.of('create:wheat_flour', 1)
+            },
+            {
                 input: 'minecraft:sugar_cane',
                 output: Item.of('minecraft:sugar', 2)
+            },
+            {
+                input: 'thermal:blizz_rod',
+                output: Item.of('thermal:blizz_powder', 4)
+            },
+            {
+                input: 'thermal:blitz_rod',
+                output: Item.of('thermal:blitz_powder', 4)
+            },
+            {
+                input: 'thermal:basalz_rod',
+                output: Item.of('thermal:basalz_powder', 4)
+            },
+            {
+                input: 'minecraft:blaze_rod',
+                output: Item.of('minecraft:blaze_powder', 4)
+            },
+            {
+                input: '#forge:ores/quartz',
+                output: Item.of('minecraft:quartz', 3),
+                id: 'mekanism:processing/quartz/from_ore'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.mekanism.enriching(recipe.output, recipe.input);
+        recipe.id
+            ? event.recipes.mekanism.enriching(recipe.output, recipe.input).id(recipe.id)
+            : event.recipes.mekanism.enriching(recipe.output, recipe.input);
     });
 });

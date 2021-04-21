@@ -206,6 +206,12 @@
 	[building.variant_bookshelves]
 		"Change Names" = true
 
+	[building.cobblestone_bricks]
+		"Enable Blackstone Bricks" = true
+		"Enable Dirt Bricks" = true
+		"Enable Netherrack Bricks" = true
+		"Enable Basalt Bricks" = true
+
 [management]
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
@@ -456,6 +462,9 @@
 		#How many times the algorithm for finding out where a block would be placed is allowed to turn. If you set this to large values (> 3) it may start producing weird effects.
 		"Max Bounces" = 1
 
+	[tweaks.note_block_mob_sounds]
+		"Enable Vocaloid" = true
+
 [world]
 	"New Stone Types" = true
 	"Lush Underground Biome" = true
@@ -503,10 +512,15 @@
 	[world.cave_crystal_underground_biome]
 		#The chance that a crystal can grow, this is on average 1 in X world ticks, set to a higher value to make them grow slower. Minimum is 1, for every tick. Set to 0 to disable growth.
 		"Cave Crystal Growth Chance" = 5
-		"Crystals Grow In Lava" = false
-		#Allowed values: [0,1]
-		"Crystal Spawn Chance" = 0.05
 		"Crystals Craft Runes" = true
+		#Allowed values: [0,1]
+		"Crystal Chance" = 0.16
+		#Allowed values: [0,1]
+		"Crystal Cluster Chance" = 0.2
+		#Allowed values: [0,1]
+		"Crystal Cluster On Sides Chance" = 0.6
+		#Allowed values: [0,1]
+		"Double Crystal Chance" = 0.2
 
 		[world.cave_crystal_underground_biome.biome_settings]
 			#Allowed values: [0,)
@@ -1648,6 +1662,7 @@
 	"Game Nerfs" = false
 	"Narrator Readout" = false
 	"Overlay Shader" = false
+	Shiba = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1678,6 +1693,23 @@
 		#Some useful shaders include 'desaturate', 'oversaturate', 'bumpy'
 		#Colorblind simulation shaders are available in the form of 'deuteranopia', 'protanopia', 'tritanopia', and 'achromatopsia'
 		Shader = "none"
+
+	[experimental.shiba]
+
+		[experimental.shiba.spawn_config]
+			#Allowed values: (0,)
+			"Spawn Weight" = 40
+			#Allowed values: [1,)
+			"Min Group Size" = 1
+			#Allowed values: [1,)
+			"Max Group Size" = 3
+
+			[experimental.shiba.spawn_config.biomes]
+				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
+				# icy, the_end, beach, forest, ocean, desert, river, swamp,
+				# mushroom, nether]
+				"Biome Categories" = ["extreme_hills"]
+				"Is Blacklist" = false
 
 [oddities]
 	"Totem Of Holding" = false

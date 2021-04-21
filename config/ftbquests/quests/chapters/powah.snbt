@@ -913,19 +913,64 @@
 				"Can you create a sustainable and efficient reactor setup to make all this power?",
 				"",
 				"Don't cheat - I know you want to use Mekanism. I challenge you to only generate this billion using Powah alone for energy generation.",
-				"You can do it! Good luck!"
+				"You can do it! Good luck!",
+				"",
+				"Fill the Basic Induction Cell by putting it in an Induction Cell multiblock and then feeding it power."
 			],
-			dependencies: [
-				"0000000000000188",
-				"0000000000000D38"
-			],
+			dependencies: ["0000000000000188"],
 			hide: true,
 			optional: true,
 			id: "00000000000001AE",
 			tasks: [{
-				id: "00000000000001AF",
-				type: "forge_energy",
-				value: 1000000000L
+				id: "4D1EA493FB926104",
+				type: "item",
+				title: "Fully Charged Basic Induction Cell",
+				icon: {
+					id: "mekanism:basic_induction_cell",
+					Count: 1b,
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b,
+								stored: "8000000000"
+							}]
+						}
+					}
+				},
+				item: {
+					id: "itemfilters:and",
+					Count: 1b,
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_induction_cell",
+								Count: 1b,
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b,
+											stored: "8000000000"
+										}]
+									}
+								}
+							},
+							{
+								id: "itemfilters:strong_nbt",
+								Count: 1b,
+								tag: {
+									value: {
+										mekData: {
+											EnergyContainers: [{
+												Container: 0b,
+												stored: "8000000000"
+											}]
+										}
+									}
+								}
+							}
+						]
+					}
+				}
 			}],
 			rewards: [
 				{

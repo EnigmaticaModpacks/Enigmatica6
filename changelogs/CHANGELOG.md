@@ -1,6 +1,39 @@
+### Enigmatica 6 v0.4.9
+
+_Using Forge-1.16.5-36.1.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.9.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.9.md)_
+
+**Note: Integrated Dynamics energy and fluid transfer is being nerfed, make sure your Reactor can handle the change before updating :D**
+
+**Improvements/Changes**
+
+-   **Server file changes**
+    -   Our server file structure has changed, in order to make installing and updating easier.
+    -   The server files contain a `server-guide.txt` that explains what to do, but it's pretty much just download, unzip and double-click the appropriate start-server script`
+    -   The automated server setup has also changed, make sure to check [the README](https://github.com/NillerMedDild/Enigmatica6#server-automation) for instructions.
+-   XNet: Buffed fluid transfer rate
+    -   Normal Connectors can now move 4000 mb per operation, up from 1000
+    -   Advanced Connectors can now move 32000 mb per operation, up from 5000
+-   XNet: Buffed energy transfer rate 5x
+    -   Normal Connectors: 25000 FE up from 5000 FE
+    -   Advanced Connectors: 500000 FE up from 100000 FE
+-   Alex's Mobs: Lowered Kangaroo spawn weight
+-   ArsNouveau: Lowered new Wilden creature's spawn weight
+-   IntegratedDynamics: Lowered max FE transfer of a network to 65,536 FE/t
+-   IntegratedDynamics: Lowered max fluid transfer of a network to 65,536 mb/t
+-   IntegratedDynamics: Default new part update frequency of 10 ticks (up from 1)
+-   Bee Update Part 3! [#2000](https://github.com/NillerMedDild/Enigmatica6/pull/2000) [TemperedFool](https://github.com/TemperedFool)
+    -   More balancing and updates to the breeding tree are coming eventually, along with a breeding chart of some sort.
+-   Tetra: Buffed all materials with 20% more durability and magic capacity.
+
+**Bug Fixes**
+
+**Removed Mods**
+
+-   Botany Trees (The mod doesn't do anything due to our recipe changes)
+
 ### Enigmatica 6 v0.4.8
 
-_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.7.md)_
+_Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/CHANGELOG_MODS_0.4.8.md)_
 
 **Known issues**
 
@@ -10,15 +43,15 @@ _Using Forge-1.16.5-36.1.0_ | _[Mod Updates 0.4.8](https://github.com/NillerMedD
 
 **Bug Fixes**
 
-- \[0.4.7\] Inventory appears on HUD after update from 0.4.3 to 0.4.7 [\#1830](https://github.com/NillerMedDild/Enigmatica6/issues/1830)
-- \[0.4.6\] Stonecutter tweaks issues [\#1820](https://github.com/NillerMedDild/Enigmatica6/issues/1820)
-- Occultism Storage crafting eats honey bottles [\#1624](https://github.com/NillerMedDild/Enigmatica6/issues/1624)
-- \[0.4.7\] Pedestal quests issue [\#1831](https://github.com/NillerMedDild/Enigmatica6/issues/1831)
-- \[0.4.5\] Frame chest is disabled but Illusion chest is not [\#1828](https://github.com/NillerMedDild/Enigmatica6/issues/1828)
-- \[0.4.7\] Server start and settings files changed encoding [\#1827](https://github.com/NillerMedDild/Enigmatica6/issues/1827)
-- 0.4.7 Worn Notebook - Many entries broken and showing 2d cubes [\#1826](https://github.com/NillerMedDild/Enigmatica6/issues/1826)
-- Restore Pedestal's cobble and stoneworks [\#1835](https://github.com/NillerMedDild/Enigmatica6/pull/1835) ([MuteTiefling](https://github.com/MuteTiefling))
-- Fix beam stonecutting recipes [\#1836](https://github.com/NillerMedDild/Enigmatica6/pull/1836) ([ochotonida](https://github.com/ochotonida))
+-   \[0.4.7\] Inventory appears on HUD after update from 0.4.3 to 0.4.7 [\#1830](https://github.com/NillerMedDild/Enigmatica6/issues/1830)
+-   \[0.4.6\] Stonecutter tweaks issues [\#1820](https://github.com/NillerMedDild/Enigmatica6/issues/1820)
+-   Occultism Storage crafting eats honey bottles [\#1624](https://github.com/NillerMedDild/Enigmatica6/issues/1624)
+-   \[0.4.7\] Pedestal quests issue [\#1831](https://github.com/NillerMedDild/Enigmatica6/issues/1831)
+-   \[0.4.5\] Frame chest is disabled but Illusion chest is not [\#1828](https://github.com/NillerMedDild/Enigmatica6/issues/1828)
+-   \[0.4.7\] Server start and settings files changed encoding [\#1827](https://github.com/NillerMedDild/Enigmatica6/issues/1827)
+-   0.4.7 Worn Notebook - Many entries broken and showing 2d cubes [\#1826](https://github.com/NillerMedDild/Enigmatica6/issues/1826)
+-   Restore Pedestal's cobble and stoneworks [\#1835](https://github.com/NillerMedDild/Enigmatica6/pull/1835) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix beam stonecutting recipes [\#1836](https://github.com/NillerMedDild/Enigmatica6/pull/1836) ([ochotonida](https://github.com/ochotonida))
 
 ### Enigmatica 6 v0.4.7 (+0.4.6)
 

@@ -845,6 +845,51 @@
 				type: "xp",
 				xp: 100
 			}]
+		},
+		{
+			x: -11.5d,
+			y: -15.0d,
+			subtitle: "Jar Jar Beenks",
+			description: ["Right-click a Bee with an Empty Bee Jar, and it'll be caught inside."],
+			dependencies: ["0000000000000A94"],
+			id: "24D88FC1C6DCE052",
+			tasks: [{
+				id: "57CDAF18A5A66D82",
+				type: "item",
+				item: "resourcefulbees:bee_jar"
+			}],
+			rewards: [{
+				id: "7ECD253B38639D34",
+				type: "item",
+				item: "resourcefulbees:bee_jar",
+				count: 2,
+				random_bonus: 3
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -14.0d,
+			subtitle: "Bee-tboxing",
+			description: [
+				"Used the same way as the Bee Jar.",
+				"",
+				"Can be used to transport up to 10 bees at a time."
+			],
+			dependencies: ["24D88FC1C6DCE052"],
+			id: "2F7254D5AD380CB4",
+			tasks: [{
+				id: "78200ABCDC11BF2F",
+				type: "item",
+				item: "resourcefulbees:bee_box"
+			}],
+			rewards: [{
+				id: "4D2AFDFEAA880455",
+				type: "command",
+				title: "Rare Resourceful Bees Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare",
+				player_command: false
+			}]
 		}
 	]
 }

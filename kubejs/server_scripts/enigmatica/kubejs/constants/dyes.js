@@ -927,6 +927,13 @@ const dyeSources = [
         tertiary: 'minecraft:gray_dye'
     },
     {
+        input: 'atmospheric:yellow_blossoms',
+        type: 'large',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:orange_dye'
+    },
+    {
         input: 'atmospheric:gilia',
         type: 'small',
         primary: 'minecraft:purple_dye',
@@ -1170,6 +1177,13 @@ const dyeSources = [
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:white_dye',
         tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'byg:oddity_bush',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:light_gray_dye'
     }
 ];
 

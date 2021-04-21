@@ -40,6 +40,20 @@ events.listen('recipes', (event) => {
                 output: 'astralsorcery:stardust',
                 count: 1,
                 duration: 100
+            },
+            {
+                input: Ingredient.of([
+                    'byg:amaranth',
+                    'byg:cyan_amaranth',
+                    'byg:magenta_amaranth',
+                    'byg:orange_amaranth',
+                    'byg:purple_amaranth'
+                ]),
+                fluid: 'astralsorcery:liquid_starlight',
+                consumptionChance: 1.1,
+                output: 'astralsorcery:glow_flower',
+                count: 1,
+                duration: 100
             }
         ]
     };

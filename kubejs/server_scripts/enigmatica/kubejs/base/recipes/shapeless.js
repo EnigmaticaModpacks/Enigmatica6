@@ -7,6 +7,8 @@ events.listen('recipes', (event) => {
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
         { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
+        { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
+        { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
         {
             output: 'minecraft:crafting_table',
             inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
@@ -246,6 +248,62 @@ events.listen('recipes', (event) => {
         {
             output: 'minecraft:quartz',
             inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:twigs', 4),
+            inputs: ['#minecraft:leaves', '#forge:shears']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:pinecones', 6),
+            inputs: [
+                '#minecraft:leaves/coniferous',
+                '#minecraft:leaves/coniferous',
+                '#minecraft:leaves/coniferous',
+                '#forge:shears'
+            ]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:fallen_leaves', 1),
+            inputs: ['quark:oak_leaf_carpet']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:rocks', 4),
+            inputs: ['minecraft:cobblestone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:mossy_rocks', 4),
+            inputs: [
+                'minecraft:mossy_cobblestone',
+                ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']
+            ]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:sandstone_rocks', 4),
+            inputs: ['minecraft:sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:red_sandstone_rocks', 4),
+            inputs: ['minecraft:red_sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:ice_chunks', 4),
+            inputs: ['minecraft:ice', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:glowcap'),
+            inputs: ['minecraft:glowstone_dust', ['minecraft:brown_mushroom', 'minecraft:red_mushroom']]
+        },
+        {
+            output: Item.of('botanypots:botany_pot'),
+            inputs: ['#enigmatica:washables/simplebotanypots', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('botanypots:hopper_botany_pot'),
+            inputs: ['#enigmatica:washables/hopperbotanypots', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('minecraft:terracotta'),
+            inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         }
     ];
 
@@ -259,11 +317,24 @@ events.listen('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
-        var capacitor = 'powah:capacitor_' + tier;
-
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+    });
 
-        event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
+    colors.forEach(function (color) {
+        let otherColors = colors.filter((filterColor) => filterColor !== color);
+
+        let otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`),
+            otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
+
+        otherSimplePots.push('botanypots:botany_pot');
+        otherHopperPots.push('botanypots:hopper_botany_pot');
+
+        event.shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`]);
+
+        event.shapeless(`botanypots:hopper_${color}_botany_pot`, [
+            Ingredient.of(otherHopperPots),
+            `#forge:dyes/${color}`
+        ]);
     });
 
     materialsToUnify.forEach((material) => {

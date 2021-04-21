@@ -22,6 +22,7 @@ const refinedStorageItems = [
 const generatableCobblestone = [
     'byg:dacite_cobblestone',
     'byg:ether_stone',
+    'byg:purpur_stone',
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
@@ -37,18 +38,26 @@ const generatableCobblestone = [
     'quark:cobbedstone',
     'undergarden:depthrock',
     'undergarden:shiverstone',
+    'undergarden:tremblecrust',
     'create:dark_scoria_cobblestone',
     'create:scoria_cobblestone',
     'create:gabbro_cobblestone',
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
-    'create:limestone_cobblestone'
+    'create:limestone_cobblestone',
+    'atmospheric:saffron_travertine',
+    'atmospheric:persimmon_travertine',
+    'atmospheric:peach_travertine',
+    'atmospheric:ivory_travertine'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
     'minecraft:granite',
+    'betterendforge:flavolite',
+    'betterendforge:sulphuric_rock',
+    'betterendforge:violecite',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',
@@ -77,7 +86,9 @@ const generatableStone = [
     'create:gabbro',
     'create:dolomite',
     'create:weathered_limestone',
-    'create:limestone'
+    'create:limestone',
+    'atmospheric:red_arid_sandstone',
+    'atmospheric:arid_sandstone'
 ];
 const generatableBasalt = [];
 
@@ -120,6 +131,7 @@ var itemsToHide = [
     'mapperbase:iron_plate',
     'mapperbase:iron_rod',
     'mapperbase:raw_bitumen',
+    'mekanism:fluorite_gem',
     'morevanillalib:obsidian_shard',
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
@@ -190,7 +202,6 @@ var regexHide = [
     /mekanism:\w+_ore/,
     /minecraft:\w+_ore/,
     /immersiveengineering:plate_/,
-    /immersiveengineering:stick_/,
     /immersiveengineering:storage_/,
     /immersiveengineering:ore_/,
     /create:\w+_sheet/,
@@ -266,6 +277,30 @@ const disabledItems = [
     'byg:pendorite_sword',
 
     'create:dough',
+
+    'ironjetpacks:strap',
+    'ironjetpacks:basic_coil',
+    'ironjetpacks:advanced_coil',
+    'ironjetpacks:elite_coil',
+    'ironjetpacks:ultimate_coil',
+    'ironjetpacks:hardened_cell',
+    'ironjetpacks:hardened_capacitor',
+    'ironjetpacks:invar_cell',
+    'ironjetpacks:invar_capacitor',
+    'ironjetpacks:blazing_cell',
+    'ironjetpacks:blazing_capacitor',
+    'ironjetpacks:signalum_cell',
+    'ironjetpacks:signalum_capacitor',
+    'ironjetpacks:niotic_cell',
+    'ironjetpacks:niotic_capacitor',
+    'ironjetpacks:lumium_cell',
+    'ironjetpacks:lumium_capacitor',
+    'ironjetpacks:spirited_cell',
+    'ironjetpacks:spirited_capacitor',
+    'ironjetpacks:enderium_cell',
+    'ironjetpacks:enderium_capacitor',
+    'ironjetpacks:nitro_cell',
+    'ironjetpacks:nitro_capacitor',
 
     'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
@@ -365,3 +400,6 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal'
 ];
+
+const normalMode = global.packmode == 'normal';
+const expertMode = global.packmode == 'expert';

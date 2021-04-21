@@ -3,109 +3,43 @@
 
 	#
 	#Modify Create's impact on your terrain
-	[worldgen.v1]
+	[worldgen.v2]
 		#
 		#Prevents all worldgen added by Create from taking effect
-		disableWorldGen = false
+		disableWorldGen = true
 		#
 		#Forward caught TileEntityExceptions to the log at debug level.
 		logTeErrors = false
 
-		[worldgen.v1.copper_ore]
-			#
-			#Whether to spawn this in your World
-			enable = false
+		[worldgen.v2.copper_ore]
 			#No comment
 			#Range: > 0
 			clusterSize = 18
-			#No comment
-			#Range: > 0
-			clusterCount = 2
+			#
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
 			#No comment
 			#Range: > 0
 			minHeight = 40
 			#No comment
 			#Range: > 0
-			maxHeight = 86
-
-		[worldgen.v1.copper_ore_ocean]
-			#
-			#Whether to spawn this in your World
-			enable = false
-			#No comment
-			#Range: > 0
-			clusterSize = 15
-			#No comment
-			#Range: > 0
-			clusterCount = 4
-			#No comment
-			#Range: > 0
-			minHeight = 20
-			#No comment
-			#Range: > 0
-			maxHeight = 55
-
-		[worldgen.v1.zinc_ore]
-			#
-			#Whether to spawn this in your World
-			enable = false
-			#No comment
-			#Range: > 0
-			clusterSize = 14
-			#No comment
-			#Range: > 0
-			clusterCount = 4
-			#No comment
-			#Range: > 0
-			minHeight = 15
-			#No comment
-			#Range: > 0
-			maxHeight = 70
-
-		[worldgen.v1.zinc_ore_desert]
-			#
-			#Whether to spawn this in your World
-			enable = false
-			#No comment
-			#Range: > 0
-			clusterSize = 17
-			#No comment
-			#Range: > 0
-			clusterCount = 5
-			#No comment
-			#Range: > 0
-			minHeight = 10
-			#No comment
-			#Range: > 0
 			maxHeight = 85
 
-		[worldgen.v1.limestone]
+		[worldgen.v2.weathered_limestone]
+			#No comment
+			#Range: > 0
+			clusterSize = 128
 			#
-			#Whether to spawn this in your World
-			enable = false
-			#No comment
-			#Range: > 0
-			clusterSize = 256
-			#No comment
-			#Range: 0.0 ~ 1.0
-			clusterChance = 0.05
-			#No comment
-			#Range: > 0
-			minHeight = 30
-			#No comment
-			#Range: > 0
-			maxHeight = 70
-
-		[worldgen.v1.weathered_limestone]
-			#
-			#Whether to spawn this in your World
-			enable = false
-			#No comment
-			#Range: > 0
-			clusterSize = 256
-			#No comment
-			#Range: 0.0 ~ 1.0
-			clusterChance = 0.05
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
 			#No comment
 			#Range: > 0
 			minHeight = 10
@@ -113,16 +47,53 @@
 			#Range: > 0
 			maxHeight = 30
 
-		[worldgen.v1.dolomite]
-			#
-			#Whether to spawn this in your World
-			enable = false
+		[worldgen.v2.zinc_ore]
 			#No comment
 			#Range: > 0
-			clusterSize = 256
+			clusterSize = 14
+			#
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
 			#No comment
-			#Range: 0.0 ~ 1.0
-			clusterChance = 0.05
+			#Range: > 0
+			minHeight = 15
+			#No comment
+			#Range: > 0
+			maxHeight = 70
+
+		[worldgen.v2.limestone]
+			#No comment
+			#Range: > 0
+			clusterSize = 128
+			#
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
+			#No comment
+			#Range: > 0
+			minHeight = 30
+			#No comment
+			#Range: > 0
+			maxHeight = 70
+
+		[worldgen.v2.dolomite]
+			#No comment
+			#Range: > 0
+			clusterSize = 128
+			#
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
 			#No comment
 			#Range: > 0
 			minHeight = 20
@@ -130,16 +101,17 @@
 			#Range: > 0
 			maxHeight = 70
 
-		[worldgen.v1.gabbro]
-			#
-			#Whether to spawn this in your World
-			enable = false
+		[worldgen.v2.gabbro]
 			#No comment
 			#Range: > 0
-			clusterSize = 256
-			#No comment
-			#Range: 0.0 ~ 1.0
-			clusterChance = 0.05
+			clusterSize = 128
+			#
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
 			#No comment
 			#Range: > 0
 			minHeight = 20
@@ -147,16 +119,17 @@
 			#Range: > 0
 			maxHeight = 70
 
-		[worldgen.v1.scoria]
-			#
-			#Whether to spawn this in your World
-			enable = false
+		[worldgen.v2.scoria]
 			#No comment
 			#Range: > 0
-			clusterSize = 256
-			#No comment
-			#Range: 0.0 ~ 1.0
-			clusterChance = 0.05
+			clusterSize = 128
+			#
+			#Amount of clusters generated per Chunk.
+			#  >1 to spawn multiple.
+			#  <1 to make it a chance.
+			#  0 to disable.
+			#Range: 0.0 ~ 512.0
+			frequency = 0.0
 			#No comment
 			#Range: > 0
 			minHeight = 0

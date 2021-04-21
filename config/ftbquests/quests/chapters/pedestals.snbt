@@ -139,98 +139,28 @@
 			x: -2.5d,
 			y: -2.5d,
 			subtitle: "For Discriminating Consumers",
-			description: ["Pedestal Filters can be crafted with many of the upgrades available, offering control of what the upgrade will operate on. There are both whitelist and blacklist options, and for those filters that need input (like the Item filters) they will read the inventory below the pedestal."],
+			description: [
+				"Filters allow control over what items are allowed in a pedestal display. Filter type (whitelist/blacklist) can be changed by crouch-right-clicking the air. The filters that need to be programmed (such as Item or Mod filters) can be crouch-right-clicked on an inventory to set them to the contents of that inventory.",
+				"",
+				"Filters can be added to a pedestal by holding them in your offhand while right-clicking the pedestal with an empty hand. They can be removed by doing the same with either a filter or a filter tool in your offhand.",
+				"",
+				"The Filter Tool will allow you to remove filters (as above), but it will also allow you to get information on the filter in a pedestal by right-clicking it."
+			],
 			dependencies: ["5519E152C45C620F"],
 			id: "3B1E29F56796E3CB",
-			tasks: [{
-				id: "6DB2626B9071D2F8",
-				type: "item",
-				title: "Filters",
-				item: {
-					id: "itemfilters:or",
-					Count: 1b,
-					tag: {
-						items: [
-							{
-								id: "pedestals:coin/filteritem",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filteritemb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filteritemstack",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filteritemstackb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filtertag",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filtertagb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filtermod",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filtermodb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterfood",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterfoodb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterdurability",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterdurabilityless",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchanted",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchantedb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchantedfuzzy",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchantedfuzzyb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchantedexact",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchantedexactb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/filterenchantedcount",
-								Count: 1b
-							}
-						]
-					}
+			tasks: [
+				{
+					id: "6DB2626B9071D2F8",
+					type: "item",
+					title: "Filters",
+					item: "pedestals:filter/filterbase"
+				},
+				{
+					id: "1C9B32BE95682776",
+					type: "item",
+					item: "pedestals:filterswapper"
 				}
-			}],
+			],
 			rewards: [{
 				id: "75C154C379370AA9",
 				type: "command",
@@ -291,9 +221,9 @@
 			x: -0.5d,
 			y: 7.5d,
 			description: [
-				"By default, this will generate cobblestone and place it in the display. It will continue to generate cobblestone until the display is full.",
+				"By default, this will generate cobblestone and place it in the display. It will add up to a stack of cobblestone to the display, and then continue to buffer more until it hits its capacity limit.",
 				"",
-				"By enchanting the upgrade with Silk Touch, it will produce Stone instead.",
+				"You can enchant use the Pedestals XP Anvil to enchant the upgrade with Silk Touch - this will cause it to produce Stone instead.",
 				"",
 				"You can also modify what is produced by the generator; for example, putting Blue Ice under a Silky Cobble Gen will produce Packed Ice. These recipes can be seen in JEI, under the Cobble Gen and Silky Cobble Gen tabs."
 			],
@@ -470,7 +400,7 @@
 				"",
 				"The XP Magnet upgrade will collect XP orbs from its AOE and store them. It can also draw XP from a player that is on top of it. The Pedestal Speed enchantment will increase the speed at which it draws XP, while the Pedestal Capacity enchant will raise the number of levels it draws at once. The upgrade has a small buffer of 30 levels, so it is best to transfer the levels somewhere else (such as a pedestal with an XP Tank upgrade).",
 				"",
-				"The XP Grindstone upgrade will draw up items from an inventory below the pedestal, grind off the enchantments, and display the newly unenchanted item. The upgrade will collect XP for the enchantments the items have and store it in its buffer."
+				"The XP Grindstone upgrade will draw up items from an inventory below the pedestal, grind off the enchantments, and display the newly disenchanted item. The upgrade will collect XP for the enchantments the items have and store it in its buffer."
 			],
 			dependencies: ["5519E152C45C620F"],
 			size: 1.5d,
@@ -860,8 +790,8 @@
 		},
 		{
 			title: "Sawmill Upgrade",
-			x: -4.5d,
-			y: 7.5d,
+			x: -6.5d,
+			y: 5.5d,
 			subtitle: "Let's Cut a Log",
 			description: [
 				"The Sawmill upgrades will take wood products from the inventory below, cut them up, and display the products. This is generally used for Log to Plank processing, but there are other useful recipes that can be found in JEI.",
@@ -914,49 +844,24 @@
 		},
 		{
 			title: "Quarry Upgrade",
-			x: -6.5d,
-			y: 5.5d,
+			x: -4.5d,
+			y: 7.5d,
 			description: [
-				"The Quarry upgrades will mine blocks around the pedestal. They come in whitelist and blacklist versions - these read the inventories below them to decide what to mine. The upgrade also has a built-in magnet - it will pull in mined products and display them.",
+				"The Quarry upgrade will mine blocks around the pedestal. They will use inserted filters to decide what to mine.",
 				"",
-				"The upgrades will mine any blocks in the working area, and the will grab any mined materials and display them. The pedestal can only display one type of item at a time, so make sure to link it to a receiving pedestal to clear the products.",
-				"",
-				"Pedestal Speed enchantments will decrease processing time, while Pedestal Capacity will make it process more items per action. Pedestal Range and Area enchantments will increase the operating space of the quarry. The upgrade can also be enchanted with vanilla Fortune or Silk Touch, which will effect how blocks are broken.",
+				"Pedestal Speed enchantments will decrease processing time. Pedestal Range and Area enchantments will increase the operating space of the quarry. The upgrade can also be enchanted with vanilla Fortune or Silk Touch, which will effect how blocks are broken.",
 				"",
 				"The upgrade can also take a pickaxe, which will confer its enchantments (i.e. Fortune or Silk Touch) to the quarry."
 			],
-			dependencies: ["69E5C4BFCE2AC042"],
+			dependencies: ["04E9F681A7D93BC7"],
 			dependency_requirement: "one_completed",
 			min_width: 300,
 			id: "039F6656F4A696D6",
 			tasks: [{
-				id: "19FD33FF26CBC42B",
+				id: "2BBE9152232B22E2",
 				type: "item",
-				title: "Quarry Upgrades",
-				item: {
-					id: "itemfilters:or",
-					Count: 1b,
-					tag: {
-						items: [
-							{
-								id: "pedestals:coin/quarry",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/quarryb",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/rfquarry",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/rfquarryb",
-								Count: 1b
-							}
-						]
-					}
-				}
+				title: "Quarry Upgrade",
+				item: "pedestals:coin/quarry"
 			}],
 			rewards: [{
 				id: "0381C81A23FD888C",
@@ -1131,7 +1036,7 @@
 			description: [
 				"Pedestals can transfer displayed items from one to another by linking them together. They can also transfer fluids, FE, and XP in their upgrades this way.",
 				"",
-				"This is done with the Linking Tool: Shift-Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards, you can craft the linking tool into a Reverse Linking Tool, which links Sender -> Receiver.",
+				"This is done with the Linking Tool: Shift-Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards crouch-right-click the Linking Tool in the air to convert it into a Backwards Linking Tool, which links Sender -> Receiver.",
 				"",
 				"Each Sending Pedestal can be linked to a maximum of 8 Receivers; Receivers can be linked to any number of senders.You can right click a Sender with the Linking wand to display information about it, and to get a visual indication of which pedestals it’s linked to. By default the sending mechanism uses a priority system, which is indicated by the color particles emitted - black is first, white is last."
 			],
@@ -1171,7 +1076,7 @@
 			description: [
 				"Under normal conditions Sending pedestals will attempt to send whatever Items/Fluids/XP/FE they have to their linked receivers.",
 				"",
-				"Powering a Recieving pedestal with a Redstone signal will prevent it from receiving Items/Fluids/XP/FE from a sender. This can be used to create custom routing systems. It will also disable its upgrade from functioning, and prevent it from being teleported to (Via the Teleport Upgrade).",
+				"Powering a Recieving pedestal with a Redstone signal will prevent it from receiving Items/Fluids/XP/FE from a sender. This can be used to create custom routing systems. It will also disable its upgrade from functioning, and prevent it from being teleported to (Via the Teleport Upgrade). This behavior can be reversed by holding a redstone torch in your offhand and shift-right-clicking the pedestal - this will insert the torch and make the pedestal active with a redstone signal.",
 				"",
 				"Pedestals can also be read by a comparator, and will give off a signal relative to their fill level."
 			],
@@ -1226,7 +1131,11 @@
 			y: 0.0d,
 			shape: "hexagon",
 			subtitle: "Adding Function To Your Displays",
-			description: ["Displaying items and moving them between pedestals is good, but you can add additional functionality with Upgrades. You'll need a number of these Upgrade Bases to get started."],
+			description: [
+				"Displaying items and moving them between pedestals is good, but you can add additional functionality with Upgrades. You'll need a number of these Upgrade Bases to get started.",
+				"",
+				"Pedestal Upgrades can be added to a pedestal by holding them in your offhand and right-clicking the pedestal. They can be removed by holding another upgrade or the Upgrade Tool in your offhand while left-clicking the pedestal."
+			],
 			dependencies: ["3ECCA6558FDB4A5E"],
 			size: 1.5d,
 			id: "5519E152C45C620F",
@@ -1338,11 +1247,14 @@
 			x: 1.5d,
 			y: -2.5d,
 			description: [
-				"Augments can be added to a Pedestal to enhance a pedestal's item sending behavior. You can add up to 5 of each of the augments.",
+				"Augments can be added to a Pedestal to enhance a pedestal's item sending behavior. You can add up to 5 of each of the first 3 augments - the other 3 only require 1.",
 				"",
 				"Speed - Decreases the delay between transfers.",
 				"Capacity - Increases how many items are transferred.",
-				"Range - Increases the distance allowed between linked pedestals."
+				"Range - Increases the distance allowed between linked pedestals.",
+				"Sound Muffler - Removes any sound an upgrade makes (except for tool equip sounds).",
+				"Particle Diffuser - Removes any particles produced by the upgrade.",
+				"Round Robin Augment - Changes the sending behavior of the pedestal from Priority to Round Robin."
 			],
 			dependencies: ["3ECCA6558FDB4A5E"],
 			id: "62A1AE30CAEF1424",
@@ -1388,7 +1300,7 @@
 			dependencies: ["305B5A8507D4567A"],
 			id: "1D239668DA764C52",
 			tasks: [{
-				id: "41ED7B173A272114",
+				id: "56AAC5339E833399",
 				type: "item",
 				title: "Enchantment Focus Books",
 				item: {
@@ -1411,6 +1323,10 @@
 							{
 								id: "pedestals:bookcapacity",
 								Count: 1b
+							},
+							{
+								id: "pedestals:bookmagnet",
+								Count: 1b
 							}
 						]
 					}
@@ -1432,7 +1348,7 @@
 			description: [
 				"Moving items around with Pedestals is as simple as linking them, but pedestals without upgrades are not part of the Pedestal network for Fluid, XP, or FE.",
 				"",
-				"Relay upgrades allow you to add pedestals to their respective networks, while having significantly smaller buffers than tanks. They also have Blocked versions that will prevent the passage of items - this is very handy for ensuring items aren't accidentally moved where you aren't expecting."
+				"Relay upgrades allow you to add pedestals to their respective networks, while having significantly smaller buffers than tanks. They can also take filters to control what items are allowed to transfer through them, allowing you to prevent items from being sent places you don't want them."
 			],
 			dependencies: ["5519E152C45C620F"],
 			id: "196FD7272F86F936",
@@ -1450,23 +1366,11 @@
 								Count: 1b
 							},
 							{
-								id: "pedestals:coin/xprelayblocked",
-								Count: 1b
-							},
-							{
 								id: "pedestals:coin/rfrelay",
 								Count: 1b
 							},
 							{
-								id: "pedestals:coin/rfrelayblocked",
-								Count: 1b
-							},
-							{
 								id: "pedestals:coin/fluidrelay",
-								Count: 1b
-							},
-							{
-								id: "pedestals:coin/fluidrelayblocked",
 								Count: 1b
 							}
 						]
@@ -1536,7 +1440,7 @@
 			x: 2.5d,
 			y: -2.5d,
 			description: [
-				"Pedestal Upgrades can be enchanted; they can take vanilla enchants like Fortune and Silk Touch, but the mod also has five enchantments specific to it:",
+				"Pedestal Upgrades can be enchanted; they can take vanilla enchants like Fortune and Silk Touch, but the mod also has six enchantments specific to it:",
 				"",
 				"Capacity - In general this will increase the amount of stuff the upgrade can store. A typical progression of item storage would be 4/8/16/32/64 for levels 1-5.",
 				"",
@@ -1545,6 +1449,8 @@
 				"Speed - This will increase the operating speed of upgrades from 2-20x. The resulting speed will depend on the upgrade.",
 				"",
 				"Area - Area enchants will generally increase the cube area that the upgrade works on.",
+				"",
+				"Magnet - Will add Item Magnet functionality to Harvester, Block Breaker, Quarry, and Chopper upgrades.",
 				"",
 				"Advanced - This allows the upgrade to interact with entities, and is detailed in its own quest."
 			],

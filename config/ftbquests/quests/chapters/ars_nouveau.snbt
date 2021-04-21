@@ -34,6 +34,7 @@
 		{
 			x: 6.0d,
 			y: -5.5d,
+			subtitle: "T-U-R-R-E-T, Turret",
 			description: [
 				"The Spell Turret is an enhanced apparatus used to cast spells on demand with a redstone pulse. ",
 				"",
@@ -131,6 +132,7 @@
 			icon: "ars_nouveau:marvelous_clay",
 			x: -4.5d,
 			y: -2.0d,
+			subtitle: "The Marvelous is Built from the Mundane",
 			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbook to cast. "],
 			dependencies: ["00000000000003BE"],
 			id: "00000000000003C2",
@@ -158,6 +160,7 @@
 			icon: "ars_nouveau:mythical_clay",
 			x: -3.5d,
 			y: -2.5d,
+			subtitle: "Body of Clay, Mind Full of Play",
 			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbook to cast. "],
 			dependencies: ["00000000000003C2"],
 			id: "00000000000003C4",
@@ -246,8 +249,9 @@
 			}]
 		},
 		{
-			x: -0.5d,
+			x: 0.0d,
 			y: -3.0d,
+			subtitle: "Chalk it up to Experience",
 			description: [
 				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door.",
 				"",
@@ -279,8 +283,8 @@
 		},
 		{
 			title: "Spell Parchment",
-			x: 0.5d,
-			y: -3.5d,
+			x: 1.0d,
+			y: -4.0d,
 			subtitle: "Jousting Snails",
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways.",
@@ -329,7 +333,7 @@
 			icon: "ars_nouveau:enchanting_apparatus",
 			x: -0.5d,
 			y: -6.0d,
-			subtitle: "The Spirit is Willing, but the Flesh is Spongy and Bruised",
+			subtitle: "The Spirit is Willing but the Flesh is Spongy and Bruised",
 			description: [
 				"One's own reservoir of mana is limited: the flesh can only hold so much. Certain magical materials exist to assist this but they themselves require access to greater reservoirs to even make.",
 				"",
@@ -337,9 +341,12 @@
 				"",
 				"To construct the Enchanting Apparatus, place down the Arcane Core with the Enchanting Apparatus on top of it. The Pedestals can be placed anywhere in an 11x11 area centered on the Core. A Mana Jar with mana must also be present nearby. ",
 				"",
-				"To work with it, place the reagents in the pedestals and the focus in the Enchanting Apparatus itself, then Sneak Right Click the Apparatus with an empty hand."
+				"To work with it, place the reagents in the pedestals and the focus in the Enchanting Apparatus itself, then Sneak Right Click the Apparatus with an empty hand.",
+				"",
+				"The Enchanting Apparatus may also be used to apply specific enchantments to tools and armor, simplifying the process of getting a specific enchant to round out a piece of gear. The recipes are detailed in the Worn Notebook. "
 			],
 			dependencies: ["00000000000003AC"],
+			min_width: 250,
 			id: "00000000000003D7",
 			tasks: [
 				{
@@ -371,8 +378,9 @@
 		{
 			title: "Curious Trinkets",
 			icon: "ars_nouveau:amulet_of_mana_regen",
-			x: -1.5d,
-			y: -5.5d,
+			x: -2.0d,
+			y: -5.0d,
+			subtitle: "Draw Me Like Your French Girls",
 			description: [
 				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves.",
 				"",
@@ -401,6 +409,7 @@
 		{
 			x: -6.5d,
 			y: -5.5d,
+			subtitle: "One Dub-Step at a Time",
 			description: [
 				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding mana. ",
 				"",
@@ -424,6 +433,7 @@
 		{
 			x: -1.0d,
 			y: -4.0d,
+			subtitle: "Witches Abroad",
 			description: [
 				"Mana permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing mana for later use, but moving it from place to place can be a touchy subject.",
 				"",
@@ -446,7 +456,8 @@
 		},
 		{
 			x: -2.0d,
-			y: -3.5d,
+			y: -3.0d,
+			subtitle: "Equal Rites",
 			description: ["A more advanced Mana Relay capable of pulling from and sending to multiple locations."],
 			dependencies: ["00000000000003EB"],
 			id: "00000000000003ED",
@@ -465,8 +476,9 @@
 			}]
 		},
 		{
-			x: 3.0d,
+			x: 3.5d,
 			y: -4.0d,
+			subtitle: "Boop the Snoot",
 			description: [
 				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone.",
 				"",
@@ -491,8 +503,11 @@
 		{
 			x: 4.5d,
 			y: -5.0d,
+			subtitle: "In Search of the Golden Acorn",
 			description: [
 				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. ",
+				"",
+				"To tell a Carbuncle where to store items, Right-Click it with a Dominion Wand and then Sneak Right-Click any inventory with the wand.",
 				"",
 				"Refer to the Worn Notebook for an in-depth guide on using Carbuncles.",
 				"",
@@ -519,8 +534,9 @@
 			]
 		},
 		{
-			x: 4.0d,
+			x: 2.5d,
 			y: -3.5d,
+			subtitle: "Whispering Winds",
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you.",
 				"",
@@ -535,14 +551,34 @@
 				type: "item",
 				item: "ars_nouveau:sylph_charm"
 			}],
-			rewards: [{
-				id: "0000000000000602",
-				type: "command",
-				title: "Rare Ars Nouveau Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "0000000000000602",
+					type: "command",
+					title: "Rare Ars Nouveau Loot Box",
+					icon: "kubejs:rare_lootbox",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+					player_command: false
+				},
+				{
+					id: "0AC24D43ED187EBE",
+					type: "item",
+					item: "minecraft:bamboo",
+					count: 4
+				},
+				{
+					id: "4A7B725DE75256E3",
+					type: "item",
+					item: "minecraft:pumpkin_seeds",
+					count: 4
+				},
+				{
+					id: "307E04AA8AC5B992",
+					type: "item",
+					item: "minecraft:dark_oak_sapling",
+					count: 4
+				}
+			]
 		},
 		{
 			x: 3.0d,
@@ -615,7 +651,7 @@
 		{
 			title: "Turret Practice: Micro Farms",
 			icon: "ars_nouveau:glyph_harvest",
-			x: 5.0d,
+			x: 6.5d,
 			y: -3.5d,
 			description: [
 				"A simple and compact crop farm can be made with a spell turret with the following spell:",
@@ -655,7 +691,7 @@
 		},
 		{
 			title: "Turret Practice: Redstone Clock",
-			x: 6.0d,
+			x: 5.5d,
 			y: -4.0d,
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?",
@@ -746,6 +782,189 @@
 				id: "0000000000000A37",
 				type: "item",
 				item: "ars_nouveau:glyph_fangs"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -3.0d,
+			subtitle: "The Demon Barber of Fleet Street",
+			description: ["Mana isn't the only source of power in this world, and some clever Sanguimancers have found a way to bind a spellbook to their Soul Network, allowing them to draw on a deeper well of power to cast their spells. "],
+			dependencies: [
+				"00000000000003C2",
+				"00000000000008C7"
+			],
+			id: "221C600F3E3C813C",
+			tasks: [{
+				id: "106C65C1B54C90C6",
+				type: "item",
+				item: "tomeofblood:tome_of_blood"
+			}],
+			rewards: [{
+				id: "23A1C4CCC95A1F45",
+				type: "command",
+				title: "Epic Blood Magic Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				player_command: false
+			}]
+		},
+		{
+			icon: "ars_nouveau:wixie_charm",
+			x: 4.5d,
+			y: -3.5d,
+			subtitle: "Wyrd Sisters",
+			description: [
+				"Wouldn't it be helpful to have a hand around the Crafting Table? Someone to pass you this, or fetch you that? Or perhaps they could just do the job for you while you further your studies of the arcane?",
+				"",
+				"The Wixie is the friend you seek. Bound by casting Dispel on a Witch at low health, Wixies are summoned by using their Charm on a standard Cauldron, transforming it into a Wixie Cauldron. ",
+				"",
+				"To specify what the Wixie ought to craft, simply make one of the items yourself and Right-Click it on her cauldron. She'll take care of gathering the required items from nearby inventories. She will need a source of Mana nearby, however, so leave a Jar of Mana and be sure it stays full. "
+			],
+			dependencies: ["00000000000009ED"],
+			id: "0BC6D824A7A10356",
+			tasks: [
+				{
+					id: "5A68031815311494",
+					type: "item",
+					item: "ars_nouveau:wixie_charm"
+				},
+				{
+					id: "67D65A1F1B80B28B",
+					type: "item",
+					item: "minecraft:cauldron"
+				}
+			],
+			rewards: [{
+				id: "7C201B55C9F00AD3",
+				type: "command",
+				title: "Rare Ars Nouveau Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -2.5d,
+			subtitle: "Nanny Ogg's Cookbook",
+			description: [
+				"Simple item crafting isn’t the only thing these crafty ladies have hidden up their sleeves. They’re quite the adept in a brewery as well, making potions of all types. ",
+				"",
+				"Just like with regular crafting, Wixies will need some extras at hand. A Mana Jar, a Potion Jar, and an inventory of ingredients. ",
+				"",
+				"Each Wixie can only make one potion type at a time. The type is determined by first brewing one the traditional way and, with potion in hand, right-click her cauldron to set the recipe. She’ll get to work as soon as everything is available. Just like traditional brewing, potions must be made in steps. One Wixie will make an Awkward Potion with Nether Wart, the next will add a Golden Carrot to make a Night Vision potion, and a third could add Redstone to extend it. ",
+				"",
+				"It is recommended to take that potion and stick it in the jar immediately so that the potion jar can be locked to that type. Sneak + Right-Click the jar with a Dominion Wand to lock it to that type of potion. This is handy when multiple Wixies are at work in the same area.  "
+			],
+			dependencies: ["0BC6D824A7A10356"],
+			min_width: 250,
+			id: "4DC7DC466B1F2D0B",
+			tasks: [{
+				id: "38EA6B9C79DD69C5",
+				type: "item",
+				item: "ars_nouveau:potion_jar"
+			}],
+			rewards: [{
+				id: "3B92D3705AEB3AA2",
+				type: "command",
+				title: "Rare Ars Nouveau Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			icon: "ars_nouveau:potion_melder",
+			x: 3.5d,
+			y: -1.5d,
+			subtitle: "Subtle Infusions",
+			description: [
+				"The clever arcanist finds ways to save themselves time, and nothing wastes time like drinking five different potions in preparation for a fight. Why not mix them and drink them all at once? ",
+				"",
+				"This is exactly what the Potion Melder does.",
+				"",
+				"Place it on top of a Potion Jar and place two more Potion Jars on either side of it. The bottom jar will serve as the output and the side jars will be the inputs. The process uses some mana but produces potions that combine all the effects of the inputs. This process can be chained to produce potions with many effects. "
+			],
+			dependencies: ["4DC7DC466B1F2D0B"],
+			id: "22CD0875E6AFD43E",
+			tasks: [
+				{
+					id: "094638F810C5F8C4",
+					type: "item",
+					item: "ars_nouveau:potion_melder"
+				},
+				{
+					id: "4D548D5C01D56188",
+					type: "item",
+					item: "ars_nouveau:potion_jar",
+					count: 3L
+				}
+			],
+			rewards: [
+				{
+					id: "3775F901374943C8",
+					type: "item",
+					item: {
+						id: "minecraft:potion",
+						Count: 1b,
+						tag: {
+							Potion: "apotheosis:long_absorption"
+						}
+					}
+				},
+				{
+					id: "77257BF40CBAC438",
+					type: "item",
+					item: {
+						id: "minecraft:potion",
+						Count: 1b,
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+				}
+			]
+		},
+		{
+			x: 5.5d,
+			y: -1.5d,
+			subtitle: "Why Limit Happy Hour?",
+			description: ["Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. Each Flask can hold up to eight doses of potion and may even be enchanted to increase the potency or duration of the potions within. "],
+			dependencies: ["4DC7DC466B1F2D0B"],
+			id: "4B150C43E143F401",
+			tasks: [{
+				id: "0AD6FC05A8659F5D",
+				type: "item",
+				item: "ars_nouveau:potion_flask"
+			}],
+			rewards: [{
+				id: "13A4D5D0FB6AAF30",
+				type: "command",
+				title: "Rare Ars Nouveau Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: 1.0d,
+			y: -2.5d,
+			subtitle: "Cast Wide, Your Net",
+			description: ["A traditional casting focus, the Wand may be inscribed with a single spell. Contrary to other casting methods, however, no Form is required. All spells cast from a Casting Wand are automatically Projectile and come Accelerated. This means extra slots for adding Effects or Augments. This makes them ideal for specialized tools. "],
+			dependencies: ["00000000000003D0"],
+			id: "6EE073C749AE697F",
+			tasks: [{
+				id: "04C35BF0605E9EA6",
+				type: "item",
+				item: "ars_nouveau:wand"
+			}],
+			rewards: [{
+				id: "185995ACE655011B",
+				type: "command",
+				title: "Rare Ars Nouveau Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare",
+				player_command: false
 			}]
 		}
 	]
