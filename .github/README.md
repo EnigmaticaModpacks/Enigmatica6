@@ -25,10 +25,6 @@ There are a few things we would like testers to consider/look for:
 -   Things you find boring/tedious
 -   Things that need small optimizations, such as advancement text and textures.
 
-We would also appreciate if you let us know what you think of the gameplay and why, especially if you didn't like it :)
-
-Note: You do not have to use the below setup method, you can use the available files from CurseForge or Discord, however those are not updated as frequently as this repository.
-
 # Setup
 
 ### For Contributors and Testers
@@ -95,6 +91,7 @@ Re-run the script `update-server` whenever you want to update to a new modpack v
 **Notes**
 
 -   Using the `update-server` script will reset changes you've made to all files tracked by the repository.
+-   A world and mod folder backup are created before updating
 -   Anything put in the `overrides` folder will be copied into the root folder when the `update-server` script is finished - I recommend you put any changed configs and added mods there.
 
 ## Server Automation with Docker
