@@ -1,6 +1,10 @@
 # Settings for the ModpackUploader
 # For details/help see: https://github.com/NillerMedDild/ModpackUploader
-	
+
+# The main modpack folder
+# Do not change or move
+$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+
 # =====================================================================//
 #  CURSEFORGE ACCOUNT SETTINGS
 # =====================================================================//
@@ -133,9 +137,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 
 # $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES has been moved to remove-client-mods.ps1 
 
-$ServerFilesFolder = "$PSScriptRoot/../server_files"
+$ServerFilesFolder = "$InstanceRoot/server_files"
 
-$ServerSetupConfigPath = "$PSScriptRoot/../server_files/server-setup-config.yaml"
+$ServerSetupConfigPath = "$InstanceRoot/server_files/server-setup-config.yaml"
 
 # A continuous line of the folders and files (with extensions) to zip into Server Files.
 # Default: @("mods", "config")
@@ -223,13 +227,10 @@ $SERVER_CHANGELOG = $CLIENT_CHANGELOG
 $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 
 # Default: "$CLIENT_NAME Server $MODPACK_VERSION"
-$SERVER_ZIP_NAME = "$CLIENT_NAME`-Server-$MODPACK_VERSION"
+$SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 
 # Default: $SERVER_FILENAME
 $SERVER_FILE_DISPLAY_NAME = "$CLIENT_NAME Server $MODPACK_VERSION"
-
-# The main modpack folder
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
 
 # Path to the ModListCreators output file
 $ModlistPath = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"
