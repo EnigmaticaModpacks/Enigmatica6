@@ -78,6 +78,9 @@ You're done!
 
 # Server Automation
 
+An easier way to keep your server running on the latest modpack version.
+Follow the below steps to be able to update modpack version with only a few clicks.
+
 ## Automatic updates with Git
 
 _Note: `.bat` files are for Windows, `.sh` are for Mac / Linux._
