@@ -1,12 +1,14 @@
 param(
+	$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path),
+
 	[Parameter(Position = 0)]
 	[string]$targetBranch = "master",
 
 	[Parameter(Position = 1)]
-	[string]$worldFolder = "$PSScriptRoot/../world",
+	[string]$worldFolder = "$InstanceRoot/world",
 
 	[Parameter(Position = 2)]
-	[string]$backupFolder = "$PSScriptRoot/../backups",
+	[string]$backupFolder = "$InstanceRoot/backups",
 
 	[Parameter(Position = 3)]
 	[bool]$backupWorld = $true,
@@ -15,10 +17,9 @@ param(
 	[int]$backupsToKeep = 12,
 
 	[Parameter(Position = 5)]
-	[string]$serverFileFolder = "$PSScriptRoot/../server_files"
+	[string]$serverFileFolder = "$InstanceRoot/server_files"
 )
 
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
 $modFolder = "$InstanceRoot/mods"
 $overridesFolder = "$InstanceRoot/overrides"
 
