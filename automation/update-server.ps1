@@ -18,8 +18,9 @@ param(
 	[string]$serverFileFolder = "$PSScriptRoot/../server_files"
 )
 
-$modFolder = "$PSScriptRoot/../mods"
-$overridesFolder = "$PSScriptRoot/../overrides"
+$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$modFolder = "$InstanceRoot/mods"
+$overridesFolder = "$InstanceRoot/overrides"
 
 function Update-IsAvailable {
 	Write-Host
@@ -96,17 +97,22 @@ function Move-ServerFiles {
 	Write-Host
 	Write-Host "Copying server files to base folder..." -ForegroundColor Cyan
 	Write-Host "This will not overwrite existing files." -ForegroundColor Gray
-	Get-ChildItem -Path "$PSScriptRoot/../server_files" | ForEach-Object {
-		Write-Host "Copying $($_.Name)"
-		$destination = "$PSScriptRoot/../$($_.Name)" 
+	@(
+		"$InstanceRoot/automation/settings.cfg", 
+		"$InstanceRoot/automation/start-automated-server.bat", 
+		"$InstanceRoot/automation/start-automated-server.sh"
+	) | ForEach-Object {
+		$splitFileName = $_ -split "/"
+		$fileName = $splitFileName[$splitFileName.length - 1]
+		$destination = "$InstanceRoot/$fileName" 
 		if (-not (Test-Path $destination)) {
-			Copy-Item -Path $_.FullName -Destination $destination
+			Copy-Item -Path $_ -Destination $destination
 		}
 	}
 }
 
 function Remove-ClientOnlyMods {
-	. "./remove-client-mods.ps1"
+	. "$InstanceRoot/automation/remove-client-mods.ps1"
 }
 
 
@@ -121,12 +127,14 @@ function Copy-Overrides {
 	}
 }
 
-if (Update-IsAvailable) {	
-	Prune-Backups
-	Backup-ModsFolder
-	Backup-WorldFolder
-	Pull-Changes
-	Move-ServerFiles
-	Remove-ClientOnlyMods
-	Copy-Overrides
-}
+Move-ServerFiles
+
+# if (Update-IsAvailable) {	
+# 	Prune-Backups
+# 	Backup-ModsFolder
+# 	Backup-WorldFolder
+# 	Pull-Changes
+# 	Move-ServerFiles
+# 	Remove-ClientOnlyMods
+# 	Copy-Overrides
+# }

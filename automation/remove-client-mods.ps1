@@ -9,7 +9,8 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"PackMenu"
 )
 
-$modFolder = "$PSScriptRoot/../mods"
+$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$modFolder = "$InstanceRoot/mods"
 
 Write-Host
 Write-Host "Removing client only mods..." -ForegroundColor Cyan
