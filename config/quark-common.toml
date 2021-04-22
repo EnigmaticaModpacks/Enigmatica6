@@ -21,6 +21,8 @@
 	"Enable Worldgen Watchdog" = false
 	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
 	"Interpret Shulker Box Like Blocks" = true
+	#Allowed values: (0,)
+	"Advancement Visibility Depth" = 2
 
 [categories]
 	Building = true
@@ -461,9 +463,6 @@
 	[tweaks.replace_scaffolding]
 		#How many times the algorithm for finding out where a block would be placed is allowed to turn. If you set this to large values (> 3) it may start producing weird effects.
 		"Max Bounces" = 1
-
-	[tweaks.note_block_mob_sounds]
-		"Enable Vocaloid" = true
 
 [world]
 	"New Stone Types" = true

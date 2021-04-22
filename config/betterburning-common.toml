@@ -22,4 +22,14 @@
 	flameArrowSkeletons = true
 	#Should the fire/burning HUD overlay be hidden if the player has fire immunity?
 	hideFireOverlayWhenImmune = true
+	#How long should Fire burn players if they try to punch it out?
+	#Range: > 0
+	fireHitBurnTime = 1
+	#How long should Soulfire burn players if they try to punch it out?
+	#Range: > 0
+	soulfireHitBurnTime = 2
+	#Should players be able to put out fire blocks by punching them?
+	punchOutFlames = true
+	#Can players put out fire with bottled water?
+	extinguishWithBottledWater = true
 
