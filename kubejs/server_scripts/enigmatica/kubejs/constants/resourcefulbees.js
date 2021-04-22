@@ -17,8 +17,8 @@ const validApiaryBlocks = [
 
     /mcwwindows:/,
 
-    /minecraft:\w+_concrete$/
-    /minecraft:\w+_terracotta/
+    /minecraft:\w+_concrete$/,
+    /minecraft:\w+_terracotta/,
 
     'minecraft:soul_sand',
     '#minecraft:stone_bricks'
