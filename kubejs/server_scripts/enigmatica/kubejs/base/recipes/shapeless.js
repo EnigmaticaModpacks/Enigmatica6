@@ -7,6 +7,8 @@ events.listen('recipes', (event) => {
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
         { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
+        { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
+        { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
         {
             output: 'minecraft:crafting_table',
             inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']

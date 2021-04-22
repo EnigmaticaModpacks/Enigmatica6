@@ -22,6 +22,7 @@ const refinedStorageItems = [
 const generatableCobblestone = [
     'byg:dacite_cobblestone',
     'byg:ether_stone',
+    'byg:purpur_stone',
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
@@ -37,18 +38,26 @@ const generatableCobblestone = [
     'quark:cobbedstone',
     'undergarden:depthrock',
     'undergarden:shiverstone',
+    'undergarden:tremblecrust',
     'create:dark_scoria_cobblestone',
     'create:scoria_cobblestone',
     'create:gabbro_cobblestone',
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
-    'create:limestone_cobblestone'
+    'create:limestone_cobblestone',
+    'atmospheric:saffron_travertine',
+    'atmospheric:persimmon_travertine',
+    'atmospheric:peach_travertine',
+    'atmospheric:ivory_travertine'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
     'minecraft:granite',
+    'betterendforge:flavolite',
+    'betterendforge:sulphuric_rock',
+    'betterendforge:violecite',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',
@@ -77,7 +86,9 @@ const generatableStone = [
     'create:gabbro',
     'create:dolomite',
     'create:weathered_limestone',
-    'create:limestone'
+    'create:limestone',
+    'atmospheric:red_arid_sandstone',
+    'atmospheric:arid_sandstone'
 ];
 const generatableBasalt = [];
 
@@ -145,8 +156,6 @@ var itemsToHide = [
     'supplementaries:cog_block',
     'supplementaries:redstone_illuminator',
     'supplementaries:turn_table',
-    'supplementaries:jar',
-    'supplementaries:jar_tinted',
     'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
