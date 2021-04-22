@@ -127,14 +127,13 @@ function Copy-Overrides {
 	}
 }
 
-Move-ServerFiles
 
-# if (Update-IsAvailable) {	
-# 	Prune-Backups
-# 	Backup-ModsFolder
-# 	Backup-WorldFolder
-# 	Pull-Changes
-# 	Move-ServerFiles
-# 	Remove-ClientOnlyMods
-# 	Copy-Overrides
-# }
+if (Update-IsAvailable) {	
+	Prune-Backups
+	Backup-ModsFolder
+	Backup-WorldFolder
+	Pull-Changes
+	Move-ServerFiles
+	Remove-ClientOnlyMods
+	Copy-Overrides
+}
