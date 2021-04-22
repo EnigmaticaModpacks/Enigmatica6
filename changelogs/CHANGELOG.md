@@ -79,7 +79,6 @@ _Using Forge-1.16.5-36.1.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Bug Fixes**
 
--   \[0.4.9\] Removed Restrictions: Re-restricted temporarily, as it prevented the server files from working in the first upload of 0.4.9 ^^'
 -   0.4.8 crash when breaking PNC refinery outputs in middle of stack \(already fixed in new mod release\) [\#1887](https://github.com/NillerMedDild/Enigmatica6/issues/1887)
 -   0.4.8 Mod interaction? causing enchant levels to rise on items unintentionally. [\#1874](https://github.com/NillerMedDild/Enigmatica6/issues/1874)
 -   0.4.8 Using lava crystal from blood magic in advanced air compressor consumes the lava crystal [\#1888](https://github.com/NillerMedDild/Enigmatica6/issues/1888)
