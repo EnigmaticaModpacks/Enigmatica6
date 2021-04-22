@@ -156,8 +156,6 @@ var itemsToHide = [
     'supplementaries:cog_block',
     'supplementaries:redstone_illuminator',
     'supplementaries:turn_table',
-    'supplementaries:jar',
-    'supplementaries:jar_tinted',
     'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
