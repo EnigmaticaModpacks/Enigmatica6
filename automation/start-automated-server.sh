@@ -44,6 +44,8 @@
 #
 # Make sure users aren't trying to run script via sh directly (won't work)
 
+powershell $PWD/remove-client-mods.ps1
+
 unameOut="$(uname -s)"
 case "${unameOut}" in
     Linux*)     machine=Linux;;

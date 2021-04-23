@@ -72,6 +72,8 @@
 
 :::: *** THIS FILE NOT INTENDED TO BE EDITED, USE "settings.cfg" INSTEAD ***
 
+Powershell.exe -ExecutionPolicy RemoteSigned -File %~dp0remove-client-mods.ps1
+
 SETLOCAL
 REM Internal Scripty stuff
 REM Define system root so we can run CORRECT version of things (like FIND)
