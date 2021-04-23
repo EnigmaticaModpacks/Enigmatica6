@@ -47,6 +47,7 @@ function Backup-ModsFolder {
 	Write-Host
 	Write-Host "Backing up the mods folder..." -ForegroundColor Cyan
 	New-Item -ItemType Directory -Path $backupFolder -ErrorAction SilentlyContinue
+	New-Item -ItemType Directory -Path "$backupFolder/mods" -ErrorAction SilentlyContinue
 	if (Test-Path $modFolder) {
 		if ((Get-ChildItem -Path $modFolder | Measure-Object).Count -gt 0) {
 			Compress-Archive -Path $modFolder "$backupFolder/mods/$(Get-Date -Format "MM.dd.yyyy-HH.mm").zip"
