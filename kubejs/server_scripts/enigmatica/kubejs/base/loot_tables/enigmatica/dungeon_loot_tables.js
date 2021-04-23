@@ -535,7 +535,7 @@ events.listen('server.datapack.low_priority', (event) => {
                 { item: 'eidolon:basic_belt', weight: 100 },
                 { item: 'eidolon:basic_amulet', weight: 100 },
                 { item: 'eidolon:basic_ring', weight: 100 },
-                { item: 'eidolon:soul_shard	', weight: 100 },
+                { item: 'eidolon:soul_shard', weight: 100 },
                 { item: 'eidolon:pewter_ingot', weight: 100 },
                 { item: 'eidolon:arcane_gold_ingot', weight: 100 },
                 { item: 'eidolon:pewter_inlay', weight: 100 },
