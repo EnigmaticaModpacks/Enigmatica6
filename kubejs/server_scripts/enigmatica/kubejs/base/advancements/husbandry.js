@@ -1,7 +1,6 @@
 events.listen('server.datapack.high_priority', function (event) {
-
     var tamingCriteria = {};
-    tameableAnimals.forEach(entityType => {
+    tameableAnimals.forEach((entityType) => {
         tamingCriteria[entityType] = {
             trigger: 'minecraft:tame_animal',
             conditions: {
@@ -38,7 +37,7 @@ events.listen('server.datapack.high_priority', function (event) {
     });
 
     var breedingCriteria = {};
-    breedableAnimals.forEach(entityType => {
+    breedableAnimals.forEach((entityType) => {
         breedingCriteria[entityType] = {
             trigger: 'minecraft:bred_animals',
             conditions: {
@@ -54,7 +53,7 @@ events.listen('server.datapack.high_priority', function (event) {
             }
         };
     });
-    eggLayingAnimals.forEach(entityType => {
+    eggLayingAnimals.forEach((entityType) => {
         breedingCriteria[entityType] = {
             trigger: 'minecraft:bred_animals',
             conditions: {

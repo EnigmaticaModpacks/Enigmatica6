@@ -21,14 +21,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:stone",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:aluminum_ore", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "emendatusenigmatica:aluminum_ore", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

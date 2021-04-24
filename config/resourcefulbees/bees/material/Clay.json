@@ -19,14 +19,12 @@
         "attackDamage": 1
     },
     "MutationData": {
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:minecraft:sand",
-            "outputs": [
-              {"outputID": "minecraft:clay", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:minecraft:sand",
+                "outputs": [{ "outputID": "minecraft:clay", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

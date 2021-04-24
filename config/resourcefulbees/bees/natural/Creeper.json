@@ -22,14 +22,12 @@
         "attackDamage": 2
     },
     "MutationData": {
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:minecraft:lava",
-            "outputs": [
-              {"outputID": "minecraft:mossy_cobblestone", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:minecraft:lava",
+                "outputs": [{ "outputID": "minecraft:mossy_cobblestone", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

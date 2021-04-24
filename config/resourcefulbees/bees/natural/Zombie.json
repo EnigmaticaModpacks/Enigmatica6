@@ -19,15 +19,13 @@
         "attackDamage": 2
     },
     "MutationData": {
-    	"hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:stone",
-            "outputs": [
-              {"outputID": "minecraft:cobblestone", "weight": 10}
-            ]
-          }
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:stone",
+                "outputs": [{ "outputID": "minecraft:cobblestone", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

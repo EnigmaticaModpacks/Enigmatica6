@@ -21,28 +21,22 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:stone",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:iron_ore", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/nickel",
-            "outputs": [
-              {"outputID": "resourcefulbees:invar_bee_spawn_egg", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/coal",
-            "outputs": [
-              {"outputID": "resourcefulbees:steel_bee_spawn_egg", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "emendatusenigmatica:iron_ore", "weight": 10 }]
+            },
+            {
+                "type": "ITEM",
+                "inputID": "tag:forge:storage_blocks/nickel",
+                "outputs": [{ "outputID": "resourcefulbees:invar_bee_spawn_egg", "weight": 10 }]
+            },
+            {
+                "type": "ITEM",
+                "inputID": "tag:forge:storage_blocks/coal",
+                "outputs": [{ "outputID": "resourcefulbees:steel_bee_spawn_egg", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
