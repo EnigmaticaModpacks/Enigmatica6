@@ -76,7 +76,7 @@ events.listen('recipes', (event) => {
     masonryStoneTypes.forEach((stoneType) => {
         masonryPatterns.forEach((pattern) => {
             masonryCuttingTypes.forEach((cuttingType) => {
-                let input = stoneType + pattern
+                let input = stoneType + pattern;
                 if (!masonryIgnoredInputs.includes(input)) {
                     event.stonecutting('masonry:' + input + cuttingType, 'masonry:' + input);
                 }

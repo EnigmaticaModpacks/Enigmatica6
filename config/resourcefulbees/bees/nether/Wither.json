@@ -20,22 +20,18 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:water",
-            "chance": 0.1,
-            "outputs": [
-              {"outputID": "minecraft:lava", "weight": 10}
-            ]
-          },
-          {
-            "type": "ENTITY",
-            "inputID": "entity:minecraft:skeleton",
-            "outputs": [
-              {"outputID": "entity:minecraft:wither_skeleton", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:water",
+                "chance": 0.1,
+                "outputs": [{ "outputID": "minecraft:lava", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:skeleton",
+                "outputs": [{ "outputID": "entity:minecraft:wither_skeleton", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

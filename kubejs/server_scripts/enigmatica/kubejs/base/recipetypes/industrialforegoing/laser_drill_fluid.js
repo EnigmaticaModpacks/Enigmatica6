@@ -77,8 +77,8 @@ events.listen('recipes', (event) => {
         rarity: [
             {
                 whitelist: {
-                  type: 'minecraft:worldgen/biome',
-                  values: nether_biomes
+                    type: 'minecraft:worldgen/biome',
+                    values: nether_biomes
                 },
                 blacklist: {},
                 depth_min: 5,

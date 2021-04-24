@@ -21,19 +21,17 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:stone",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:copper_ore", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "emendatusenigmatica:copper_ore", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
-        
+
         "mainOutput": "emendatusenigmatica:copper_chunk",
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,

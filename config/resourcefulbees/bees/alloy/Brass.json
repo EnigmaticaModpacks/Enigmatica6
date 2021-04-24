@@ -20,21 +20,17 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:storage_blocks/copper",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:brass_block", "weight": 10}
-            ]
-          },
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:storage_blocks/zinc",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:brass_block", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:storage_blocks/copper",
+                "outputs": [{ "outputID": "emendatusenigmatica:brass_block", "weight": 10 }]
+            },
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:storage_blocks/zinc",
+                "outputs": [{ "outputID": "emendatusenigmatica:brass_block", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

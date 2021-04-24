@@ -20,14 +20,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:storage_blocks/diamond",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:enderium_block", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:storage_blocks/diamond",
+                "outputs": [{ "outputID": "emendatusenigmatica:enderium_block", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

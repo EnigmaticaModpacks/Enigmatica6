@@ -20,14 +20,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:lava",
-            "outputs": [
-              {"outputID": "minecraft:obsidian", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:lava",
+                "outputs": [{ "outputID": "minecraft:obsidian", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
