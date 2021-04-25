@@ -25,12 +25,6 @@ cannot-prettify-message: >
 # - {{commitSha}}: the SHA of your commit that Prettifier formats
 commitMessage: "Format {{commitSha}}"
 
-# Branches that Prettifier should ignore.
-# Default: empty
-excludeBranches:
-  - development
-  - production
-
 # Files that Prettifier should ignore.
 # Please try ignoring them using Prettier first: https://prettier.io/docs/en/ignore.html.
 # Values are globs similar to how .gitignore works: https://git-scm.com/docs/gitignore.
