@@ -11,6 +11,8 @@ events.listen('item.tags', (event) => {
             .add(/energy_cube/)
             .add(/immersiveengineering:capacitor/)
             .add(/induction/)
-            .add(/battery/);
+            .add(/battery/)
+            .add(/rftoolspower:cell/)
+            .add(/rftoolspower:dimensionalcell/);
     });
 });
