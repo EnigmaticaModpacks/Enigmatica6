@@ -305,18 +305,21 @@ function Update-Modlist {
         7z e "$InstanceRoot\$CLIENT_ZIP_NAME.zip" $manifest
         Remove-Item $ModlistPath -ErrorAction SilentlyContinue
         java -jar $ModlistCreatorJar --markdown --output ".\"
-        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Copy-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
+
+        Copy-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
         Remove-Item $manifest -ErrorAction SilentlyContinue
     }
 }
 
-Test-ForDependencies
-New-ClientFiles
-Push-ClientFiles
-if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-    New-ServerFiles
-}
-New-GitHubRelease
-New-Changelog
+# Test-ForDependencies
+# New-ClientFiles
+# Push-ClientFiles
+# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+#     New-ServerFiles
+# }
+# New-GitHubRelease
+# New-Changelog
 Update-Modlist
