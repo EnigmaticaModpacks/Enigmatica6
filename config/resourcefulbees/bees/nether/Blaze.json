@@ -21,21 +21,19 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "ENTITY",
-            "inputID": "entity:resourcefulbees:creeper_bee",
-            "outputs": [
-              {"outputID": "entity:resourcefulbees:ghast_bee", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "ENTITY",
+                "inputID": "entity:resourcefulbees:creeper_bee",
+                "outputs": [{ "outputID": "entity:resourcefulbees:ghast_bee", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
         "mainOutput": "minecraft:blaze_powder",
-        "mainOutputWeight": 0.20,
+        "mainOutputWeight": 0.2,
         "mainOutputCount": 1,
 
         "secondaryOutput": "minecraft:blaze_powder",

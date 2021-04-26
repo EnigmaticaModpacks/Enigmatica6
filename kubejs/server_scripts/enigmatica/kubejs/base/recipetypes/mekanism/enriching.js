@@ -49,6 +49,11 @@ events.listen('recipes', (event) => {
                 input: '#forge:ores/quartz',
                 output: Item.of('minecraft:quartz', 3),
                 id: 'mekanism:processing/quartz/from_ore'
+            },
+            {
+                input: 'mekanism:hdpe_pellet',
+                output: 'mekanism:hdpe_sheet',
+                id: 'mekanism:enriching/hdpe_sheet'
             }
         ]
     };

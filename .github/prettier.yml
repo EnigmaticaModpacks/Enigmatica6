@@ -1,0 +1,52 @@
+# Template for Prettifier's announcement when it cannot make commits to somebody's feature branch,
+# for example on pull requests from outside the organization.
+# Default: enabled
+cannot-prettify-message: >
+    Hey there! :wave: This repository uses the [Prettier](https://prettier.io)
+    code style.
+
+    You forgot to format these files in your pull request:
+
+    {{#files}}
+
+    - {{.}}
+
+    {{/files}}
+
+    The [Prettier installation guide](https://prettier.io/docs/en/install.html) is
+    a good place to get started with formatting your code properly. Thanks!
+
+    :heart:
+
+    Your friendly [Prettifier bot](https://www.prettifier.io).
+
+# Template for commit messages from Prettifier.
+# Placeholders are:
+# - {{commitSha}}: the SHA of your commit that Prettifier formats
+commitMessage: 'Format {{commitSha}}'
+
+# Files that Prettifier should ignore.
+# Please try ignoring them using Prettier first: https://prettier.io/docs/en/ignore.html.
+# Values are globs similar to how .gitignore works: https://git-scm.com/docs/gitignore.
+# Default: empty
+excludeFiles:
+    - minecraftinstance.json
+
+# Whether to fix formatting issues by directly committing into the branches that introduce them
+fixByCommit: true
+
+# When unable to directly commit changes, whether to open a pull request containing the formatting fixes.
+fixByPullRequest: true
+
+# Template for Prettifier's announcement when it made commits to somebody's feature branch.
+# Default: disabled, provide this option to enable the feature
+prettified-message: >
+    Thanks for your contribution and welcome to this project! We format our source
+    code using [Prettier](https://prettier.io). I have adjusted the formatting of
+    this pull request for you.
+
+    To stop seeing this message, please install Prettier on your machine and run
+    `prettier --write .` to format your changes before submitting them.
+
+# Whether to only check branches that have an active pull request.
+pulls-only: false

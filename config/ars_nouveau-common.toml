@@ -156,6 +156,8 @@
 	summon_steed = true
 	#Summon Wolves enabled?
 	summon_wolves = true
+	#Decoy enabled?
+	decoy = true
 
 #Mana
 [mana]
@@ -369,6 +371,9 @@
 	#Summon Wolves cost
 	#Range: > -2147483648
 	summon_wolves_cost = 0
+	#Decoy cost
+	#Range: > -2147483648
+	decoy_cost = 50
 
 #Starting Spells
 ["Starter Spells"]

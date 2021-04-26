@@ -21,21 +21,17 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:blackstone",
-            "outputs": [
-              {"outputID": "minecraft:gilded_blackstone", "weight": 10}
-            ]
-          },
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:obsidian",
-            "outputs": [
-              {"outputID": "minecraft:crying_obsidian", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:blackstone",
+                "outputs": [{ "outputID": "minecraft:gilded_blackstone", "weight": 10 }]
+            },
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:obsidian",
+                "outputs": [{ "outputID": "minecraft:crying_obsidian", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

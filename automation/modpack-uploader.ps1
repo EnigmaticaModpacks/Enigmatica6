@@ -57,18 +57,20 @@ function Test-ForDependencies {
 
 function New-ClientFiles {
     if ($ENABLE_CURSE_CLIENT_MODULE) {
-        if (-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -or $ENABLE_ALWAYS_UPDATE_JARS) {
+        if ((-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -or 
+                -not (Test-Path "$InstanceRoot/TwitchExportBuilder")) -or 
+            $ENABLE_ALWAYS_UPDATE_JARS) {
+
             Write-Host 
             Write-Host "Downloading Twitch Export Builder..." -ForegroundColor Cyan
             Write-Host 
     
+            $TwitchExportBuilderDLDestination = "$InstanceRoot/TwitchExportBuilder"
             if ($IsLinux) {
                 $TwitchExportBuilderDL = $TwitchExportBuilderDLLinux
-                $TwitchExportBuilderDLDestination = "$InstanceRoot/TwitchExportBuilder"
             }                
             elseif ($IsMacOS) {
                 $TwitchExportBuilderDL = $TwitchExportBuilderDLMac
-                $TwitchExportBuilderDLDestination = "$InstanceRoot/TwitchExportBuilder"
             }
             elseif ($IsWindows) {
                 $TwitchExportBuilderDL = $TwitchExportBuilderDLWindows
@@ -126,17 +128,9 @@ function New-Changelog {
             Remove-Item $ChangelogGeneratorDL -Recurse -Force -ErrorAction SilentlyContinue
             Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $ChangelogGeneratorDL
         }
-
-        $oldManifest = "old.json"
-        $newManifest = "new.json"
-        $changelogOriginalName = "changelog.md"
         
-        Remove-Item $oldManifest, $newManifest, $changelogOriginalName -ErrorAction SilentlyContinue
-        7z e "$CLIENT_ZIP_NAME.zip" $manifest
-        Rename-Item -Path $manifest -NewName $newManifest
-        7z e "$LAST_MODPACK_ZIP_NAME.zip" $manifest
-        Rename-Item -Path $manifest -NewName $oldManifest
-    
+        Remove-Item $changelogOriginalName -ErrorAction SilentlyContinue
+
         Write-Host 
         Write-Host "Generating changelog..." -ForegroundColor Green
         Write-Host 
@@ -144,10 +138,12 @@ function New-Changelog {
         java -jar $ChangelogGeneratorDL `
             --markdown `
             --lines=50 `
-            --entries=1
+            --entries=1 `
+            --new="$CLIENT_ZIP_NAME.zip" `
+            --old="$LAST_MODPACK_ZIP_NAME.zip"
 
-        Remove-Item $ChangelogPath, $oldManifest, $newManifest -ErrorAction SilentlyContinue
-        Move-Item -Path $changelogOriginalName -Destination $ChangelogPath
+        Remove-Item $ChangelogPath -ErrorAction SilentlyContinue
+        Move-Item -Path "changelog.md" -Destination $ChangelogPath
     }
 }
 
@@ -279,7 +275,7 @@ function New-GitHubRelease {
             tag_name         = $MODPACK_VERSION;
             target_commitish = 'master';
             name             = $MODPACK_VERSION;
-            body             = $CLIENT_CHANGELOG;
+            body             = '';
             draft            = $false;
             prerelease       = $false;
         } | ConvertTo-Json;
@@ -304,21 +300,22 @@ function Update-Modlist {
         Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
         7z e "$InstanceRoot\$CLIENT_ZIP_NAME.zip" $manifest
         Remove-Item $ModlistPath -ErrorAction SilentlyContinue
-        java -jar $ModlistCreatorJar --markdown --output ".\"
-        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        java -jar $ModlistCreatorJar --markdown --output ".\" --detailed
+        Copy-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
+
+        Copy-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
         Remove-Item $manifest -ErrorAction SilentlyContinue
     }
 }
 
-# Test-ForDependencies
-# New-ClientFiles
-# Push-ClientFiles
-# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-#     New-ServerFiles
-# }
-# New-GitHubRelease
-# New-Changelog
-# Update-Modlist
-
+Test-ForDependencies
+New-ClientFiles
+Push-ClientFiles
+if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+    New-ServerFiles
+}
+New-GitHubRelease
+New-Changelog
 Update-Modlist

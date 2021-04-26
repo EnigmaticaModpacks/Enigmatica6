@@ -20,21 +20,17 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:netherrack",
-            "outputs": [
-              {"outputID": "minecraft:blackstone", "weight": 10}
-            ]
-          },
-          {
-            "type": "ENTITY",
-            "inputID": "entity:resourcefulbees:ender_bee",
-            "outputs": [
-              {"outputID": "resourcefulbees:wither_bee", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:netherrack",
+                "outputs": [{ "outputID": "minecraft:blackstone", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:resourcefulbees:ender_bee",
+                "outputs": [{ "outputID": "resourcefulbees:wither_bee", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

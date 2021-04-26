@@ -20,14 +20,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:gravel",
-            "outputs": [
-              {"outputID": "minecraft:sand", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:gravel",
+                "outputs": [{ "outputID": "minecraft:sand", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

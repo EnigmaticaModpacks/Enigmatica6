@@ -20,14 +20,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:storage_blocks/coal",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:steel_block", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:storage_blocks/coal",
+                "outputs": [{ "outputID": "emendatusenigmatica:steel_block", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

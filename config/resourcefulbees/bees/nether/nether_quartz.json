@@ -20,14 +20,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:netherrack",
-            "outputs": [
-              {"outputID": "minecraft:nether_quartz_ore", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:netherrack",
+                "outputs": [{ "outputID": "minecraft:nether_quartz_ore", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

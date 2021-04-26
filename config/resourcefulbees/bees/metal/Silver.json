@@ -21,28 +21,22 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:stone",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:silver_ore", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/tin",
-            "outputs": [
-              {"outputID": "resourcefulbees:lumium_bee_spawn_egg", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/copper",
-            "outputs": [
-              {"outputID": "resourcefulbees:signalum_bee_spawn_egg", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "emendatusenigmatica:silver_ore", "weight": 10 }]
+            },
+            {
+                "type": "ITEM",
+                "inputID": "tag:forge:storage_blocks/tin",
+                "outputs": [{ "outputID": "resourcefulbees:lumium_bee_spawn_egg", "weight": 10 }]
+            },
+            {
+                "type": "ITEM",
+                "inputID": "tag:forge:storage_blocks/copper",
+                "outputs": [{ "outputID": "resourcefulbees:signalum_bee_spawn_egg", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
