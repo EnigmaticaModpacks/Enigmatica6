@@ -2,8 +2,6 @@
 
 _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.9.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.9.md)_
 
-
-
 **New Mods**
 
 -   [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
