@@ -2,18 +2,18 @@
 
 ## Added
 
-* [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
-* [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
-* [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
-* [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
-* [Dark Paintings](https://www.curseforge.com/minecraft/mc-mods/dark-paintings)
-* [Decorative Blocks modded compat](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks-modded-compat)
-* [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
-* [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
-* [Nature's Starlight](https://www.curseforge.com/minecraft/mc-mods/natures-starlight)
-* [Refined Storage Large Patterns](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
-* [Tactical Fishing](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing)
-* [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)
+-   [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
+-   [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
+-   [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
+-   [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
+-   [Dark Paintings](https://www.curseforge.com/minecraft/mc-mods/dark-paintings)
+-   [Decorative Blocks modded compat](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks-modded-compat)
+-   [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
+-   [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
+-   [Nature's Starlight](https://www.curseforge.com/minecraft/mc-mods/natures-starlight)
+-   [Refined Storage Large Patterns](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
+-   [Tactical Fishing](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing)
+-   [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)
 
 ## Updated
 
@@ -27,8 +27,8 @@ Added new config option for loot table modification and tweaked recipes
 
 #### [aiotbotania-1.16.4-1.7.5.jar](https://www.curseforge.com/minecraft/mc-mods/aiot-botania/files/3261322)
 
-* re-texture everything by Vik - MelanX
-* fix manasteel aiot doesn't except sword enchantments - MelanX
+-   re-texture everything by Vik - MelanX
+-   fix manasteel aiot doesn't except sword enchantments - MelanX
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/aiot-botania/files/all)
 
@@ -38,12 +38,12 @@ Added new config option for loot table modification and tweaked recipes
 
 6.1.4.0
 
-* added: ability to hook dropped items
-* added: 'shooterWeightFactor' parameter to control player's weight advantage/disadvantage over the hooked target (thanks to EpicDRC)
-* increased: player's weight advantage when using Pudge Hook to avoid excessive pulling towards the hooked mob (thanks to catomax26)
-* increased: entity hitboxes for easier hitting the target
-* fixed: hooks being attached to grass and plants
-* requires: ForgeEndertech 7.1.0.0 or above
+-   added: ability to hook dropped items
+-   added: 'shooterWeightFactor' parameter to control player's weight advantage/disadvantage over the hooked target (thanks to EpicDRC)
+-   increased: player's weight advantage when using Pudge Hook to avoid excessive pulling towards the hooked mob (thanks to catomax26)
+-   increased: entity hitboxes for easier hitting the target
+-   fixed: hooks being attached to grass and plants
+-   requires: ForgeEndertech 7.1.0.0 or above
 
 ### [Alex's Mobs](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs) ([alexsmobs-1.8.1](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs/files/3248100)⟶[alexsmobs-1.9.1](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs/files/3282106))
 
@@ -109,7 +109,7 @@ Reduced the default spawn rates of Tome Towers.
 
 #### [Aquaculture-1.16.5-2.1.18.jar](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/3287743)
 
-* Properly fix for Neptunium Hoe issue with Ensorcellation
+-   Properly fix for Neptunium Hoe issue with Ensorcellation
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/all)
 
@@ -123,53 +123,53 @@ Updated at 2021-04-17 14:08.
 
 [Click here for changelog](https://www.github.com/architectury/architectury/commits/5accb65)
 
-* Add interruptTrue/Default/False as util methods
-* Bump to 1.11
-* Some more (mostly Entity-based) Events (#75)
-* Re-license header
-* Add docs
-* Add getCustomEquipmentSlot
-* Close #39
-* Fix invalid events
-* Bump forge event priority to HIGH
-* Add EntityHooks.fromCollision to retrieve an entity from block collision (#64)
-* Add @SubscribeEvent to ColorHandlersImpl
-* Remove addListener from ColorHandlersImpl
-* Fix Forge Screen Events to be consistent with the fabric implementation: InteractionResult.SUCCESS should also indicate that the event should be cancelled.
-* More annotation event migration
-* Migrate Forge ReloadListeners events to annotations
-* Fix CLIENT_WORLD_LOAD on Forge
-* Bump to 1.9
-* Change at
-* Rewrite the GuiEvent.SET_SCREEN mixin to fix #35
-* Update plugins
-* Add lightning strikes to the debug mod
-* Update plugin
-* Update plugins
-* Add EntityRenderers (#52)
-* Fix BlockEntityExtension @Shadow remapping
-* Update architectury-plugin to 3.0.89 and fix #51
-* Revert "Remove locals requirements from BlockLandingInvoker"
-* Remove local testing build of transformer
-* Remove locals requirements from BlockLandingInvoker
-* Update architectury-plugin to 3.0.88
-* Implement onDataPacket (#48)
-* Add null checks to networking for better errors.
-* Remove jcenter from settings.gradle
-* Bump to 1.8
-* Fix block entity without position
-* Implement Tag#equals and Tag#hashCode on forge because forge is nice
-* Add license
-* Add test mod and fix game rules on forge
-* Add licenses and implement optional tags, requires some testing.
-* Fix forge publishing as fabric
-* Migrate to Arch Plugin 3
-* Update README.md
-* Publish the platform specific jars on a different artifact id to resolve issues with transitive dependencies.
-* (Retroactively) bump version to 1.6
-* Fix falling block land event to handle all (vanilla) blocks correctly (Modded blocks need to have super.onLand(...) and then they'll be fine too)
-* Delay the breakage of ALL THE THINGS™ until 1.17 You're safe, NetworkChannel... for now
-* Add LightningEvent, FallingBlock land, move break/place to BlockEvent
+-   Add interruptTrue/Default/False as util methods
+-   Bump to 1.11
+-   Some more (mostly Entity-based) Events (#75)
+-   Re-license header
+-   Add docs
+-   Add getCustomEquipmentSlot
+-   Close #39
+-   Fix invalid events
+-   Bump forge event priority to HIGH
+-   Add EntityHooks.fromCollision to retrieve an entity from block collision (#64)
+-   Add @SubscribeEvent to ColorHandlersImpl
+-   Remove addListener from ColorHandlersImpl
+-   Fix Forge Screen Events to be consistent with the fabric implementation: InteractionResult.SUCCESS should also indicate that the event should be cancelled.
+-   More annotation event migration
+-   Migrate Forge ReloadListeners events to annotations
+-   Fix CLIENT_WORLD_LOAD on Forge
+-   Bump to 1.9
+-   Change at
+-   Rewrite the GuiEvent.SET_SCREEN mixin to fix #35
+-   Update plugins
+-   Add lightning strikes to the debug mod
+-   Update plugin
+-   Update plugins
+-   Add EntityRenderers (#52)
+-   Fix BlockEntityExtension @Shadow remapping
+-   Update architectury-plugin to 3.0.89 and fix #51
+-   Revert "Remove locals requirements from BlockLandingInvoker"
+-   Remove local testing build of transformer
+-   Remove locals requirements from BlockLandingInvoker
+-   Update architectury-plugin to 3.0.88
+-   Implement onDataPacket (#48)
+-   Add null checks to networking for better errors.
+-   Remove jcenter from settings.gradle
+-   Bump to 1.8
+-   Fix block entity without position
+-   Implement Tag#equals and Tag#hashCode on forge because forge is nice
+-   Add license
+-   Add test mod and fix game rules on forge
+-   Add licenses and implement optional tags, requires some testing.
+-   Fix forge publishing as fabric
+-   Migrate to Arch Plugin 3
+-   Update README.md
+-   Publish the platform specific jars on a different artifact id to resolve issues with transitive dependencies.
+-   (Retroactively) bump version to 1.6
+-   Fix falling block land event to handle all (vanilla) blocks correctly (Modded blocks need to have super.onLand(...) and then they'll be fine too)
+-   Delay the breakage of ALL THE THINGS™ until 1.17 You're safe, NetworkChannel... for now
+-   Add LightningEvent, FallingBlock land, move break/place to BlockEvent
 
 [(129 more lines)](https://www.curseforge.com/minecraft/mc-mods/architectury-forge/files/3279826)
 
@@ -195,13 +195,13 @@ Fixes spells ignoring chunk claims
 
 #### [Artifacts-1.16.5-2.8.4.jar](https://www.curseforge.com/minecraft/mc-mods/artifacts/files/3276108)
 
-* [Neubulae](https://github.com/ochotonida/artifacts/issues?q=is:pr author:Neubulae): Updated Simplified Chinese translation
-* [kuroneko1996](https://github.com/ochotonida/artifacts/issues?q=is:pr author:kuroneko1996), sportiboy: Updated Russian translation
-* Fixed Mimics counting towards the hostile mob spawn cap
-* Fixed a crash that could occur when removing mods that add entities
-* Fixed villager hats not spawning in snowy and taiga village chests
-* Fixed pocket pistons rendering incorrectly on slim player models
-* Remapped to Mojang mappings
+-   [Neubulae](https://github.com/ochotonida/artifacts/issues?q=is:pr author:Neubulae): Updated Simplified Chinese translation
+-   [kuroneko1996](https://github.com/ochotonida/artifacts/issues?q=is:pr author:kuroneko1996), sportiboy: Updated Russian translation
+-   Fixed Mimics counting towards the hostile mob spawn cap
+-   Fixed a crash that could occur when removing mods that add entities
+-   Fixed villager hats not spawning in snowy and taiga village chests
+-   Fixed pocket pistons rendering incorrectly on slim player models
+-   Remapped to Mojang mappings
 
 ### [Bamboo Everything (Forge)](https://www.curseforge.com/minecraft/mc-mods/bamboo-everything-forge) ([bambooeverything-1.16.3-forge-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/bamboo-everything-forge/files/3071140)⟶[bambooeverything-1.16.5-1.0.0-forge.jar](https://www.curseforge.com/minecraft/mc-mods/bamboo-everything-forge/files/3271749))
 
@@ -223,84 +223,84 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 Fixed
 
-* Fixed rendering crash [#15](https://github.com/TheIllusiveC4/Bedspreads/issues/15)
+-   Fixed rendering crash [#15](https://github.com/TheIllusiveC4/Bedspreads/issues/15)
 
 [1.16.4-5.1.0.1] - 2020.11.21
 
 Fixed
 
-* Fixed Optifine crash [#14](https://github.com/TheIllusiveC4/Bedspreads/issues/14)
+-   Fixed Optifine crash [#14](https://github.com/TheIllusiveC4/Bedspreads/issues/14)
 
 [1.16.4-5.1.0.0] - 2020.11.20
 
 Added
 
-* Added Additional Banners integration
-* Added Ice and Fire: Dragons integration
-* Added Rats integration
-* Added French localization (thanks Lykrast!) [#10](https://github.com/TheIllusiveC4/Bedspreads/pull/10)
-* Added Russian localization (thanks BardinTheDwarf!) [#8](https://github.com/TheIllusiveC4/Bedspreads/pull/8)
+-   Added Additional Banners integration
+-   Added Ice and Fire: Dragons integration
+-   Added Rats integration
+-   Added French localization (thanks Lykrast!) [#10](https://github.com/TheIllusiveC4/Bedspreads/pull/10)
+-   Added Russian localization (thanks BardinTheDwarf!) [#8](https://github.com/TheIllusiveC4/Bedspreads/pull/8)
 
 Changed
 
-* Updated to Minecraft 1.16.4
+-   Updated to Minecraft 1.16.4
 
 Fixed
 
-* Fixed villagers not recognizing decorated beds as valid beds
+-   Fixed villagers not recognizing decorated beds as valid beds
 
 [1.16.3-5.0.0.1] - 2020.09.29
 
 Changed
 
-* Updated to Minecraft 1.16.3
+-   Updated to Minecraft 1.16.3
 
 [1.16.2-5.0.0.0] - 2020.08.17
 
 Added
 
-* Added Chinese localization (thanks qsefthuopq!) [#7](https://github.com/TheIllusiveC4/Bedspreads/pull/7)
+-   Added Chinese localization (thanks qsefthuopq!) [#7](https://github.com/TheIllusiveC4/Bedspreads/pull/7)
 
 Changed
 
-* Updated to Minecraft 1.16.2
+-   Updated to Minecraft 1.16.2
 
 [4.0.0.2] - 2020.08.05
 
 Added
 
-* Added Croatian localization (thanks COMBOhrenovke!) [#6](https://github.com/TheIllusiveC4/Bedspreads/pull/6)
+-   Added Croatian localization (thanks COMBOhrenovke!) [#6](https://github.com/TheIllusiveC4/Bedspreads/pull/6)
 
 [4.0.0.1] - 2020.08.03
 
 Changed
 
-* Updated texture blending and compression
+-   Updated texture blending and compression
 
 [4.0](https://github.com/TheIllusiveC4/Bedspreads/compare/1.15.x...master) - 2020.07.04
 
 Changed
 
-* Ported to 1.16.1 Forge
+-   Ported to 1.16.1 Forge
 
 ### [Better Burning](https://www.curseforge.com/minecraft/mc-mods/better-burning) ([BetterBurning-1.16.5-6.0.2.jar](https://www.curseforge.com/minecraft/mc-mods/better-burning/files/3181436)⟶[BetterBurning-1.16.5-6.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/better-burning/files/3283731))
 
 #### [BetterBurning-1.16.5-6.0.5.jar](https://www.curseforge.com/minecraft/mc-mods/better-burning/files/3283731)
 
-* Fix merge conflict. - Tyler Hancock
-* Allow fire to be put out with a water bottle. - Tyler Hancock
-* Added config to turn off punching out fire blocks. #9 - Tyler Hancock
-* Punching out fire will now set the player on fire. 1 second for fire, 2 seconds for soul fire. - Tyler Hancock
+-   Fix merge conflict. - Tyler Hancock
+-   Allow fire to be put out with a water bottle. - Tyler Hancock
+-   Added config to turn off punching out fire blocks. #9 - Tyler Hancock
+-   Punching out fire will now set the player on fire. 1 second for fire, 2 seconds for soul fire. - Tyler Hancock
 
 Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord](https://discord.darkhax.net/)
 
 Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BetterBurning)
 
-* Diablo Crasher
-* BigAl607
-* arcanearchivesmod
-* Pongo Sapiens
-* Darkosto
+-   Diablo Crasher
+-   BigAl607
+-   arcanearchivesmod
+-   Pongo Sapiens
+-   Darkosto
 
 #### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/better-burning/files/all)
 
@@ -310,9 +310,9 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 
 0.3.5b - Bug fixes and additional language files
 
-* Added russian and swedish language files - thanks to pgkrol and torrtoise
-* Fixed automatic extracting/inserting from/into frame and illusion chests causing crashes - you can now connect them via hoppers or cables without crashes (fixes #21, #32 and #33)
-* Fixed frame and illusion walls: they are now more similar to vanilla walls
+-   Added russian and swedish language files - thanks to pgkrol and torrtoise
+-   Fixed automatic extracting/inserting from/into frame and illusion chests causing crashes - you can now connect them via hoppers or cables without crashes (fixes #21, #32 and #33)
+-   Fixed frame and illusion walls: they are now more similar to vanilla walls
 
 ### [Botania](https://www.curseforge.com/minecraft/mc-mods/botania) ([Botania-1.16.4-414.jar](https://www.curseforge.com/minecraft/mc-mods/botania/files/3233810)⟶[Botania-1.16.5-415.jar](https://www.curseforge.com/minecraft/mc-mods/botania/files/3281106))
 
@@ -324,17 +324,17 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 
 #### [BotanyPots-1.16.5-7.0.17.jar](https://www.curseforge.com/minecraft/mc-mods/botany-pots/files/3283196)
 
-* Add support for Ellpeck's More Flower Bushes mod. - Tyler Hancock
+-   Add support for Ellpeck's More Flower Bushes mod. - Tyler Hancock
 
 Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord](https://discord.darkhax.net/)
 
 Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?BotanyPots)
 
-* Diablo Crasher
-* BigAl607
-* arcanearchivesmod
-* Pongo Sapiens
-* Darkosto
+-   Diablo Crasher
+-   BigAl607
+-   arcanearchivesmod
+-   Pongo Sapiens
+-   Darkosto
 
 #### [5 more entries](https://www.curseforge.com/minecraft/mc-mods/botany-pots/files/all)
 
@@ -344,7 +344,7 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 
 ~ Fixed some panel-related recipes overriding vanilla recipes.
 
-* Removed Breakout from the arcade.
+-   Removed Breakout from the arcade.
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/all)
 
@@ -368,25 +368,25 @@ No changelog available.
 
 Current version: 6.0.0.21
 
-* [Rework how mending is applied](https://github.com/jaredlll08/Clumps/commit/87e9b53c60750a795dd68ee4b988aee3f88fd550) - Jared - Wed Apr 14 14:43:14 2021
-* [mark mcmt as compatible for now](https://github.com/jaredlll08/Clumps/commit/1b2ea8c2abf459e4e9334fa032ee6b7b0ce6a37d) - Jared - Tue Apr 13 15:30:29 2021
-* [Add discord webhook](https://github.com/jaredlll08/Clumps/commit/9ab3c9d11ad16040406f4cc672811c0dd3a056c9) - Jared - Tue Apr 13 15:27:55 2021
-* [Fix mending Calculation. Thanks @TheNormMan! Fixes #60](https://github.com/jaredlll08/Clumps/commit/bbecec20f9fbc37511f050d02e05443c48b94de7) - Jared - Sat Apr 10 19:04:30 2021
-* [Migrate to deferred register, safeRunWhenOn, add localization (#54)](https://github.com/jaredlll08/Clumps/commit/38896602c4081a862d25d2cbe0b648fd1d14f079) - Chloe Dawn - Tue Feb 16 04:37:37 2021
-* [update to 1.16.5](https://github.com/jaredlll08/Clumps/commit/13bfd39f1be7670a5a72e53377e9c8923556df09) - Jared - Sun Feb 14 20:31:57 2021
-* [Mark MCMT as incompatible](https://github.com/jaredlll08/Clumps/commit/902b3a49672c883eb1d5859ee7e7a0065b1ccba8) - Jared - Mon Feb 8 04:21:14 2021
-* [Fixed Clumps and Mending close $49](https://github.com/jaredlll08/Clumps/commit/d3c3fb10543e12f15a7e6ae8c257a3971f6e6c06) - Jared - Wed Feb 3 22:02:56 2021
-* [proper port to 1.16.4](https://github.com/jaredlll08/Clumps/commit/bd5b5c4cd7e0de5141e8f64fa8b39a2e7bc24faf) - Jared - Sun Dec 13 01:25:18 2020
-* [Cleanup and Efficiency (#42)](https://github.com/jaredlll08/Clumps/commit/321e4bd8458ea144990daa4f1f460901cee9ff44) - ChampionAsh5357 - Sun Nov 1 23:40:27 2020
-* [Implement XP orb events (#41)](https://github.com/jaredlll08/Clumps/commit/129d87d18a24972051fbb036b421e918dce700c3) - FalseHonesty - Sat Oct 3 22:25:05 2020
-* [port to 1.16.3](https://github.com/jaredlll08/Clumps/commit/810f040c82d4ee818bd2cbae92a1caafbc2290a5) - Jared - Wed Sep 16 23:15:08 2020
-* [1.16.2 3rd times the charm](https://github.com/jaredlll08/Clumps/commit/49fd7690a8d32d1134009670a0df750a88c37446) - Jared - Tue Aug 25 17:55:44 2020
-* [fix mapping issue](https://github.com/jaredlll08/Clumps/commit/0fd50c1855ad7c20126d0382f3d32ff032825489) - Jared - Tue Aug 25 17:24:46 2020
-* [Fixed xp not dropping in dims (1.16.1) Close #192](https://github.com/jaredlll08/Clumps/commit/8fc3d38208a9b9aa1f36e96b5dc95fce2e61a954) - Jared - Tue Aug 25 17:16:30 2020
-* [orb improvements](https://github.com/jaredlll08/Clumps/commit/75899ddf5dcb03398bd491266e6c325b7d8e78c6) - Jared - Thu Aug 20 20:21:10 2020
-* [re-fix clumps causing crashes close #35](https://github.com/jaredlll08/Clumps/commit/234a169d959f1aefb65151a4328f04e70d1c7cc4) - Jared - Sun Jul 19 21:03:52 2020
-* [update version](https://github.com/jaredlll08/Clumps/commit/91b94baf80891a34d0ad95fc90f8ce05deb4cf3c) - Jared - Sat Jul 18 01:58:06 2020
-* [update commit](https://github.com/jaredlll08/Clumps/commit/1228c2b85508b66799487f0b16600a35f4e34d25) - Jared - Sat Jul 18 01:54:03 2020
+-   [Rework how mending is applied](https://github.com/jaredlll08/Clumps/commit/87e9b53c60750a795dd68ee4b988aee3f88fd550) - Jared - Wed Apr 14 14:43:14 2021
+-   [mark mcmt as compatible for now](https://github.com/jaredlll08/Clumps/commit/1b2ea8c2abf459e4e9334fa032ee6b7b0ce6a37d) - Jared - Tue Apr 13 15:30:29 2021
+-   [Add discord webhook](https://github.com/jaredlll08/Clumps/commit/9ab3c9d11ad16040406f4cc672811c0dd3a056c9) - Jared - Tue Apr 13 15:27:55 2021
+-   [Fix mending Calculation. Thanks @TheNormMan! Fixes #60](https://github.com/jaredlll08/Clumps/commit/bbecec20f9fbc37511f050d02e05443c48b94de7) - Jared - Sat Apr 10 19:04:30 2021
+-   [Migrate to deferred register, safeRunWhenOn, add localization (#54)](https://github.com/jaredlll08/Clumps/commit/38896602c4081a862d25d2cbe0b648fd1d14f079) - Chloe Dawn - Tue Feb 16 04:37:37 2021
+-   [update to 1.16.5](https://github.com/jaredlll08/Clumps/commit/13bfd39f1be7670a5a72e53377e9c8923556df09) - Jared - Sun Feb 14 20:31:57 2021
+-   [Mark MCMT as incompatible](https://github.com/jaredlll08/Clumps/commit/902b3a49672c883eb1d5859ee7e7a0065b1ccba8) - Jared - Mon Feb 8 04:21:14 2021
+-   [Fixed Clumps and Mending close $49](https://github.com/jaredlll08/Clumps/commit/d3c3fb10543e12f15a7e6ae8c257a3971f6e6c06) - Jared - Wed Feb 3 22:02:56 2021
+-   [proper port to 1.16.4](https://github.com/jaredlll08/Clumps/commit/bd5b5c4cd7e0de5141e8f64fa8b39a2e7bc24faf) - Jared - Sun Dec 13 01:25:18 2020
+-   [Cleanup and Efficiency (#42)](https://github.com/jaredlll08/Clumps/commit/321e4bd8458ea144990daa4f1f460901cee9ff44) - ChampionAsh5357 - Sun Nov 1 23:40:27 2020
+-   [Implement XP orb events (#41)](https://github.com/jaredlll08/Clumps/commit/129d87d18a24972051fbb036b421e918dce700c3) - FalseHonesty - Sat Oct 3 22:25:05 2020
+-   [port to 1.16.3](https://github.com/jaredlll08/Clumps/commit/810f040c82d4ee818bd2cbae92a1caafbc2290a5) - Jared - Wed Sep 16 23:15:08 2020
+-   [1.16.2 3rd times the charm](https://github.com/jaredlll08/Clumps/commit/49fd7690a8d32d1134009670a0df750a88c37446) - Jared - Tue Aug 25 17:55:44 2020
+-   [fix mapping issue](https://github.com/jaredlll08/Clumps/commit/0fd50c1855ad7c20126d0382f3d32ff032825489) - Jared - Tue Aug 25 17:24:46 2020
+-   [Fixed xp not dropping in dims (1.16.1) Close #192](https://github.com/jaredlll08/Clumps/commit/8fc3d38208a9b9aa1f36e96b5dc95fce2e61a954) - Jared - Tue Aug 25 17:16:30 2020
+-   [orb improvements](https://github.com/jaredlll08/Clumps/commit/75899ddf5dcb03398bd491266e6c325b7d8e78c6) - Jared - Thu Aug 20 20:21:10 2020
+-   [re-fix clumps causing crashes close #35](https://github.com/jaredlll08/Clumps/commit/234a169d959f1aefb65151a4328f04e70d1c7cc4) - Jared - Sun Jul 19 21:03:52 2020
+-   [update version](https://github.com/jaredlll08/Clumps/commit/91b94baf80891a34d0ad95fc90f8ce05deb4cf3c) - Jared - Sat Jul 18 01:58:06 2020
+-   [update commit](https://github.com/jaredlll08/Clumps/commit/1228c2b85508b66799487f0b16600a35f4e34d25) - Jared - Sat Jul 18 01:54:03 2020
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/clumps/files/all)
 
@@ -400,7 +400,7 @@ Requires CyclopsCore version 1.11.1 or higher.
 
 Additions:
 
-* Add getDisplayName to IIngredientMatcher
+-   Add getDisplayName to IIngredientMatcher
 
 ### [Compact Crafting](https://www.curseforge.com/minecraft/mc-mods/compact-crafting) ([compact-crafting-1.0.0-alpha.2.jar](https://www.curseforge.com/minecraft/mc-mods/compact-crafting/files/3143822)⟶[compactcrafting-1.0.0-beta.2.jar](https://www.curseforge.com/minecraft/mc-mods/compact-crafting/files/3263148))
 
@@ -410,7 +410,7 @@ v1.0.0-beta.2
 
 Fixes
 
-* Fix issue where JEI plugin (and render type) would crash client [[57aaeef77b](https://github.com/CompactMods/CompactCrafting/commit/57aaeef77b8f39ebf5f18fb65e37b17bf8c5fd7d)]
+-   Fix issue where JEI plugin (and render type) would crash client [[57aaeef77b](https://github.com/CompactMods/CompactCrafting/commit/57aaeef77b8f39ebf5f18fb65e37b17bf8c5fd7d)]
 
 For more details, see [v1.0.0-beta.1..v1.0.0-beta.2](https://github.com/CompactMods/CompactCrafting/compare/v1.0.0-beta.1...v1.0.0-beta.2)
 
@@ -420,8 +420,8 @@ For more details, see [v1.0.0-beta.1..v1.0.0-beta.2](https://github.com/CompactM
 
 #### [connectedglass-1.0.8-mc1.16.5](https://www.curseforge.com/minecraft/mc-mods/connected-glass/files/3274263)
 
-* Updated the Spanish translations (thanks to 16N1C0!)
-* Added all glass blocks to the "minecraft:impermeable" tag to prevent water from dripping through
+-   Updated the Spanish translations (thanks to 16N1C0!)
+-   Added all glass blocks to the "minecraft:impermeable" tag to prevent water from dripping through
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/connected-glass/files/all)
 
@@ -431,28 +431,28 @@ For more details, see [v1.0.0-beta.1..v1.0.0-beta.2](https://github.com/CompactM
 
 Current version: 7.0.0.15
 
-* [Add events for modcompat](https://github.com/jaredlll08/Controlling/commit/c00b736dd9af0f64b297bb9631d49af98bc5ee5e) - Jared - Mon Apr 19 00:40:07 2021
-* [move to the open link screen. Close #78](https://github.com/jaredlll08/Controlling/commit/53eb677d91f71f931e503190f8361b9c38013e81) - Jared - Tue Mar 2 03:25:12 2021
-* [Fix tooltips rendering underneath scrollbar and overlaps](https://github.com/jaredlll08/Controlling/commit/6879f8ba8fca49e109c84483a4498a62e150e79a) - Jared - Tue Mar 2 03:11:26 2021
-* [Re-add an available keys screen. Close #76](https://github.com/jaredlll08/Controlling/commit/44c28e2a760b3fd48f72a930eaab0666becc650f) - Jared - Thu Feb 11 20:38:33 2021
-* [Attempt a fix for names being too long](https://github.com/jaredlll08/Controlling/commit/e8c7860a0f29536f77ac46ffbfb6793e74b7357a) - Jared - Thu Feb 11 20:38:33 2021
-* [port to 1.16.5 and close #75](https://github.com/jaredlll08/Controlling/commit/b077f253e57cd317b41a020e7b8d6e0c4e25fe56) - Jared - Fri Jan 15 22:38:55 2021
-* [fix trailing comma. Close #73](https://github.com/jaredlll08/Controlling/commit/cc83b06d9af22e9ef154e08e8fe869a51edc248f) - Jared - Sat Nov 14 02:36:06 2020
-* [port to 1.16.4](https://github.com/jaredlll08/Controlling/commit/c33d4527925a6d13ad106f5c1c080278f2e2ee84) - Jared - Fri Nov 13 22:15:46 2020
-* [Add Italian localization](https://github.com/jaredlll08/Controlling/commit/bf276e0c0b8d00a12f28ed78c7512dbfacc69050) - TheSilkMiner - Mon Oct 19 17:00:56 2020
-* [Translated to Canadian](https://github.com/jaredlll08/Controlling/commit/84e372abd0542fbb4d19fbca7e68457c5c3910a1) - Arsnole - Sun Oct 4 05:11:05 2020
-* [Rename ta-in.json to ta_in.json](https://github.com/jaredlll08/Controlling/commit/056bd9ecbc28fff3f45511f7b0d815b635642015) - Striker Rocker - Fri Oct 2 19:59:24 2020
-* [Rename ta-IN.json to ta-in.json](https://github.com/jaredlll08/Controlling/commit/80951cbe422ff1562033d2fcd4edf55dad4f7505) - Striker Rocker - Fri Oct 2 19:37:51 2020
-* [Create ta-IN.json](https://github.com/jaredlll08/Controlling/commit/ca99859d0c4740969fdcb214d532882753c46563) - Striker Rocker - Fri Oct 2 18:09:36 2020
-* [Add pt_br translation](https://github.com/jaredlll08/Controlling/commit/49aa82f379e8bac12adcb27aedf6bff8f127a1cc) - Nukeologist - Thu Oct 1 15:27:41 2020
-* [Added missing override annotations and applied proper mappings to some local variables.](https://github.com/jaredlll08/Controlling/commit/2fcff4bcaa9eab61a22670a7d789a176de93b2f3) - Tyler Hancock - Thu Oct 1 10:04:56 2020
-* [Prevent Patreon supporter initialization on the server.](https://github.com/jaredlll08/Controlling/commit/2b0f273b608c25a4d6932badc18e7d00f57580d6) - Tyler Hancock - Thu Oct 1 09:55:41 2020
-* [Removed "this" from static method calls.](https://github.com/jaredlll08/Controlling/commit/7e5fa5fc2e2500101878813a33fb8dac047779f2) - Tyler Hancock - Thu Oct 1 09:52:44 2020
-* [Add eclipse run configs to .gitignore.](https://github.com/jaredlll08/Controlling/commit/9625be986067f4e959b99ad569be365047da3f07) - Tyler Hancock - Thu Oct 1 09:50:19 2020
-* [Gave launch configs proper names.](https://github.com/jaredlll08/Controlling/commit/5920eccec2caf4d793c76a695f6046ce87994b02) - Tyler Hancock - Thu Oct 1 09:49:01 2020
-* [1.16.3 update](https://github.com/jaredlll08/Controlling/commit/a32a514af9696230efadb96cde150a1997c8480f) - Jared - Wed Sep 16 21:10:23 2020
-* [1.16.2 update](https://github.com/jaredlll08/Controlling/commit/9a7c6d707c9599929550a4db822799a73c3ea0f3) - Jared - Thu Aug 20 21:11:50 2020
-* [Updated Polish translation](https://github.com/jaredlll08/Controlling/commit/208676a7fdc5ff6c679c1118e8baba5a29a2ef84) - Greg-21 - Fri Jul 31 13:43:42 2020
+-   [Add events for modcompat](https://github.com/jaredlll08/Controlling/commit/c00b736dd9af0f64b297bb9631d49af98bc5ee5e) - Jared - Mon Apr 19 00:40:07 2021
+-   [move to the open link screen. Close #78](https://github.com/jaredlll08/Controlling/commit/53eb677d91f71f931e503190f8361b9c38013e81) - Jared - Tue Mar 2 03:25:12 2021
+-   [Fix tooltips rendering underneath scrollbar and overlaps](https://github.com/jaredlll08/Controlling/commit/6879f8ba8fca49e109c84483a4498a62e150e79a) - Jared - Tue Mar 2 03:11:26 2021
+-   [Re-add an available keys screen. Close #76](https://github.com/jaredlll08/Controlling/commit/44c28e2a760b3fd48f72a930eaab0666becc650f) - Jared - Thu Feb 11 20:38:33 2021
+-   [Attempt a fix for names being too long](https://github.com/jaredlll08/Controlling/commit/e8c7860a0f29536f77ac46ffbfb6793e74b7357a) - Jared - Thu Feb 11 20:38:33 2021
+-   [port to 1.16.5 and close #75](https://github.com/jaredlll08/Controlling/commit/b077f253e57cd317b41a020e7b8d6e0c4e25fe56) - Jared - Fri Jan 15 22:38:55 2021
+-   [fix trailing comma. Close #73](https://github.com/jaredlll08/Controlling/commit/cc83b06d9af22e9ef154e08e8fe869a51edc248f) - Jared - Sat Nov 14 02:36:06 2020
+-   [port to 1.16.4](https://github.com/jaredlll08/Controlling/commit/c33d4527925a6d13ad106f5c1c080278f2e2ee84) - Jared - Fri Nov 13 22:15:46 2020
+-   [Add Italian localization](https://github.com/jaredlll08/Controlling/commit/bf276e0c0b8d00a12f28ed78c7512dbfacc69050) - TheSilkMiner - Mon Oct 19 17:00:56 2020
+-   [Translated to Canadian](https://github.com/jaredlll08/Controlling/commit/84e372abd0542fbb4d19fbca7e68457c5c3910a1) - Arsnole - Sun Oct 4 05:11:05 2020
+-   [Rename ta-in.json to ta_in.json](https://github.com/jaredlll08/Controlling/commit/056bd9ecbc28fff3f45511f7b0d815b635642015) - Striker Rocker - Fri Oct 2 19:59:24 2020
+-   [Rename ta-IN.json to ta-in.json](https://github.com/jaredlll08/Controlling/commit/80951cbe422ff1562033d2fcd4edf55dad4f7505) - Striker Rocker - Fri Oct 2 19:37:51 2020
+-   [Create ta-IN.json](https://github.com/jaredlll08/Controlling/commit/ca99859d0c4740969fdcb214d532882753c46563) - Striker Rocker - Fri Oct 2 18:09:36 2020
+-   [Add pt_br translation](https://github.com/jaredlll08/Controlling/commit/49aa82f379e8bac12adcb27aedf6bff8f127a1cc) - Nukeologist - Thu Oct 1 15:27:41 2020
+-   [Added missing override annotations and applied proper mappings to some local variables.](https://github.com/jaredlll08/Controlling/commit/2fcff4bcaa9eab61a22670a7d789a176de93b2f3) - Tyler Hancock - Thu Oct 1 10:04:56 2020
+-   [Prevent Patreon supporter initialization on the server.](https://github.com/jaredlll08/Controlling/commit/2b0f273b608c25a4d6932badc18e7d00f57580d6) - Tyler Hancock - Thu Oct 1 09:55:41 2020
+-   [Removed "this" from static method calls.](https://github.com/jaredlll08/Controlling/commit/7e5fa5fc2e2500101878813a33fb8dac047779f2) - Tyler Hancock - Thu Oct 1 09:52:44 2020
+-   [Add eclipse run configs to .gitignore.](https://github.com/jaredlll08/Controlling/commit/9625be986067f4e959b99ad569be365047da3f07) - Tyler Hancock - Thu Oct 1 09:50:19 2020
+-   [Gave launch configs proper names.](https://github.com/jaredlll08/Controlling/commit/5920eccec2caf4d793c76a695f6046ce87994b02) - Tyler Hancock - Thu Oct 1 09:49:01 2020
+-   [1.16.3 update](https://github.com/jaredlll08/Controlling/commit/a32a514af9696230efadb96cde150a1997c8480f) - Jared - Wed Sep 16 21:10:23 2020
+-   [1.16.2 update](https://github.com/jaredlll08/Controlling/commit/9a7c6d707c9599929550a4db822799a73c3ea0f3) - Jared - Thu Aug 20 21:11:50 2020
+-   [Updated Polish translation](https://github.com/jaredlll08/Controlling/commit/208676a7fdc5ff6c679c1118e8baba5a29a2ef84) - Greg-21 - Fri Jul 31 13:43:42 2020
 
 ### [Create](https://www.curseforge.com/minecraft/mc-mods/create) ([Create 1.16.3+ v0.3e ](https://www.curseforge.com/minecraft/mc-mods/create/files/3167531)⟶[Create 1.16.4+ v0.3.1c](https://www.curseforge.com/minecraft/mc-mods/create/files/3278516))
 
@@ -468,31 +468,31 @@ Notice: Minimum Forge Version raised to 35.1.16
 
 Enhancements, Fixes
 
-* Mechanical Press can no longer create sheets in bulk, unless configured otherwise
-* Fixed Mechanical Press missing items passing on a belt while retracting
-* Millstone now accepts items from belts/ejectors directly
-* Fixed Redstone-triggered components losing tile data after moved by a Contraption
-* Super glue between non-solids can now be removed while the glue item is equipped
-* Fixed Deployers not able to interact with glued blocks
-* Fixed incorrect lang mapping of UI button descriptions
-* Placement assist block preview now lights properly, doesn't z-fight and fades in gradually
-* Pickaxe and Axe are now effective on piston extension poles
-* Fixed block breaking animations inside the ponder UI
-* Fixed Ponder Scenes rendering on top of the progress bar
-* Fixed Mechanical Press not retracting when items were removed early
-* Mechanical Press now makes less noise when pressing onto wool or belts
-* Fixed Windmill Bearings allowing to be moved while assembled
-* Mechanical Pistons now silence the "missing poles" error after poles were added
-* Fixed basins not continuing their processing when items are actively extracted
-* Basins now accept full stacks for items thrown into the top manually
-* Fixed Smart Chutes not dropping filter items
-* Fixed Smart Chutes not updating attached diagonal chutes properly when removed
-* Fixed Server-side crash when coupling two minecarts from a glitched self-colliding pile
-* Contraptions with exceeding spawn packet sizes no longer get sent to the client
-* Minecart Contraptions with exceeding nbt packet sizes can no longer be picked up
-* Renamed "Metal Blocks" to "Blocks of Metal"
-* Fixed Seat interaction being too restrictive with max reach
-* Contraption seats can no longer be mounted while riding something else
+-   Mechanical Press can no longer create sheets in bulk, unless configured otherwise
+-   Fixed Mechanical Press missing items passing on a belt while retracting
+-   Millstone now accepts items from belts/ejectors directly
+-   Fixed Redstone-triggered components losing tile data after moved by a Contraption
+-   Super glue between non-solids can now be removed while the glue item is equipped
+-   Fixed Deployers not able to interact with glued blocks
+-   Fixed incorrect lang mapping of UI button descriptions
+-   Placement assist block preview now lights properly, doesn't z-fight and fades in gradually
+-   Pickaxe and Axe are now effective on piston extension poles
+-   Fixed block breaking animations inside the ponder UI
+-   Fixed Ponder Scenes rendering on top of the progress bar
+-   Fixed Mechanical Press not retracting when items were removed early
+-   Mechanical Press now makes less noise when pressing onto wool or belts
+-   Fixed Windmill Bearings allowing to be moved while assembled
+-   Mechanical Pistons now silence the "missing poles" error after poles were added
+-   Fixed basins not continuing their processing when items are actively extracted
+-   Basins now accept full stacks for items thrown into the top manually
+-   Fixed Smart Chutes not dropping filter items
+-   Fixed Smart Chutes not updating attached diagonal chutes properly when removed
+-   Fixed Server-side crash when coupling two minecarts from a glitched self-colliding pile
+-   Contraptions with exceeding spawn packet sizes no longer get sent to the client
+-   Minecart Contraptions with exceeding nbt packet sizes can no longer be picked up
+-   Renamed "Metal Blocks" to "Blocks of Metal"
+-   Fixed Seat interaction being too restrictive with max reach
+-   Contraption seats can no longer be mounted while riding something else
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/create/files/all)
 
@@ -518,72 +518,72 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 Changed
 
-* Reverted some changes from previous version so that invalidation only happens due to tag updates, modified curio behavior may cause lingering items but fixes issues with invalidating curios from various mods [#124](https://github.com/TheIllusiveC4/Curios/issues/124)
+-   Reverted some changes from previous version so that invalidation only happens due to tag updates, modified curio behavior may cause lingering items but fixes issues with invalidating curios from various mods [#124](https://github.com/TheIllusiveC4/Curios/issues/124)
 
 Fixed
 
-* Fixed button offset with Quark backpack (thanks BookerCatch!) [#119](https://github.com/TheIllusiveC4/Curios/pull/119)
+-   Fixed button offset with Quark backpack (thanks BookerCatch!) [#119](https://github.com/TheIllusiveC4/Curios/pull/119)
 
 [1.16.5-4.0.5.0] - 2021.03.07
 
 Added
 
-* ICurio#onEquip(SlotContext, ItemStack)
-* ICurio#onUnequip(SlotContext, ItemStack)
-* ICuriosHelper#isStackValid(SlotContext, ItemStack)
+-   ICurio#onEquip(SlotContext, ItemStack)
+-   ICurio#onUnequip(SlotContext, ItemStack)
+-   ICuriosHelper#isStackValid(SlotContext, ItemStack)
 
 Changed
 
-* Items that are invalidated while in a slot, due to modified tags or changed curio behavior, will now automatically eject from its slot and be given to the player
-* Corrected Chinese translation (thanks qsefthuopq!) [#106](https://github.com/TheIllusiveC4/Curios/pull/106)
+-   Items that are invalidated while in a slot, due to modified tags or changed curio behavior, will now automatically eject from its slot and be given to the player
+-   Corrected Chinese translation (thanks qsefthuopq!) [#106](https://github.com/TheIllusiveC4/Curios/pull/106)
 
 Deprecated
 
-* ICurio#onEquip(String, int, LivingEntity)
-* Icurio#onUnequip(String, int, LivingEntity)
+-   ICurio#onEquip(String, int, LivingEntity)
+-   Icurio#onUnequip(String, int, LivingEntity)
 
 [1.16.5-4.0.4.0] - 2021.01.29
 
 Added
 
-* SlotContext for providing and retrieving slot context throughout the API
-* ICurio#getEquipSound(SlotContext) [#104](https://github.com/TheIllusiveC4/Curios/issues/104)
-* ICurio#canEquipFromUse(SlotContext)
-* ICurio#onEquipFromUse(SlotContext)
-* ICurio#getAttributeModifiers(SlotContext, UUID)
-* ICurioItem#getEquipSound(SlotContext, ItemStack)
-* ICurioItem#canEquipFromUse(SlotContext, ItemStack)
-* ICurioItem#onEquipFromUse(SlotContext, ItemStack)
-* ICurioItem#getAttributeModifiers(SlotContext, UUID, ItemStack)
-* ICuriosHelper#getAttributeModifiers(SlotContext, UUID, ItemStack)
+-   SlotContext for providing and retrieving slot context throughout the API
+-   ICurio#getEquipSound(SlotContext) [#104](https://github.com/TheIllusiveC4/Curios/issues/104)
+-   ICurio#canEquipFromUse(SlotContext)
+-   ICurio#onEquipFromUse(SlotContext)
+-   ICurio#getAttributeModifiers(SlotContext, UUID)
+-   ICurioItem#getEquipSound(SlotContext, ItemStack)
+-   ICurioItem#canEquipFromUse(SlotContext, ItemStack)
+-   ICurioItem#onEquipFromUse(SlotContext, ItemStack)
+-   ICurioItem#getAttributeModifiers(SlotContext, UUID, ItemStack)
+-   ICuriosHelper#getAttributeModifiers(SlotContext, UUID, ItemStack)
 
 Deprecated
 
-* ICurio#canRightClickEquip() [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
-* ICurio#playRightClickEquipSound(LivingEntity) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
-* ICurio#getAttributeModifiers(String)
-* ICurioItem#canRightClickEquip(ItemStack) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
-* ICurioItem#playRightClickEquipSound(LivingEntity, ItemStack) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
-* ICurioItem#getAttributeModifiers(String, ItemStack)
-* ICuriosHelper#getAttributeModifiers(String, ItemStack)
+-   ICurio#canRightClickEquip() [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+-   ICurio#playRightClickEquipSound(LivingEntity) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+-   ICurio#getAttributeModifiers(String)
+-   ICurioItem#canRightClickEquip(ItemStack) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+-   ICurioItem#playRightClickEquipSound(LivingEntity, ItemStack) [#102](https://github.com/TheIllusiveC4/Curios/issues/102)
+-   ICurioItem#getAttributeModifiers(String, ItemStack)
+-   ICuriosHelper#getAttributeModifiers(String, ItemStack)
 
 [1.16.4-4.0.3.5] - 2021.01.14
 
 Fixed
 
-* Fixed crash related to performing logic on empty itemstacks
+-   Fixed crash related to performing logic on empty itemstacks
 
 [1.16.4-4.0.3.4] - 2021.01.12
 
 Fixed
 
-* Fixed command slot type identification for dedicated servers
+-   Fixed command slot type identification for dedicated servers
 
 [1.16.4-4.0.3.3] - 2020.12.31
 
 Added
 
-* Added Korean localization (thanks othuntgithub!) [#97](https://github.com/TheIllusiveC4/Curios/pull/97)
+-   Added Korean localization (thanks othuntgithub!) [#97](https://github.com/TheIllusiveC4/Curios/pull/97)
 
 [1.16.4-4.0.3.2] - 2020.12.26
 
@@ -599,15 +599,15 @@ As always, don't forget to backup your world before updating!
 
 Additions:
 
-* Create it_it.json
+-   Create it_it.json
 
 Fixes:
 
-* Fix scrolling guis blocking JEI hotkeys
+-   Fix scrolling guis blocking JEI hotkeys
 
 Closes CyclopsMC/IntegratedDynamics#1011
 
-* Avoid expensive IngredientSet copy on keySet invocation
+-   Avoid expensive IngredientSet copy on keySet invocation
 
 Fixes performance issue in large ID storage networks.
 
@@ -617,16 +617,16 @@ Closes CyclopsMC/IntegratedDynamics#1008
 
 #### [DarkUtilities-1.16.5-8.0.10.jar](https://www.curseforge.com/minecraft/mc-mods/dark-utilities/files/3283227)
 
-* Formatting. - Tyler Hancock
-* Anchor plate now checks if chunk is loaded. Removed despawning feature. - Tyler Hancock
+-   Formatting. - Tyler Hancock
+-   Anchor plate now checks if chunk is loaded. Removed despawning feature. - Tyler Hancock
 
 Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?DarkUtilities)
 
-* Diablo Crasher
-* BigAl607
-* arcanearchivesmod
-* Pongo Sapiens
-* Darkosto
+-   Diablo Crasher
+-   BigAl607
+-   arcanearchivesmod
+-   Pongo Sapiens
+-   Darkosto
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/dark-utilities/files/all)
 
@@ -644,69 +644,69 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 Added
 
-* Added 5-food-group support for:
-* Advent of Ascension (Nevermine)
+-   Added 5-food-group support for:
+-   Advent of Ascension (Nevermine)
 
 [1.16.5-0.25] - 2021.04.20
 
 Added
 
-* Added 5-food-group support for:
-* Charcoal Pit
-* Fruitful
-* Updated 5-food-group support for:
-* Alex's Mobs
+-   Added 5-food-group support for:
+-   Charcoal Pit
+-   Fruitful
+-   Updated 5-food-group support for:
+-   Alex's Mobs
 
 [1.16.5-0.24] - 2021.04.12
 
 Added
 
-* Added 5-food-group support for:
-* Delicate and Dainty
-* Added /diet export for logging diet information for foods
+-   Added 5-food-group support for:
+-   Delicate and Dainty
+-   Added /diet export for logging diet information for foods
 
 [1.16.5-0.23] - 2021.04.05
 
 Added
 
-* Added 5-food-group support for:
-* Gilded Ingot
-* Supplementaries
-* Tinkers' Construct
-* Turkish Meals
-* Twilight Forest
+-   Added 5-food-group support for:
+-   Gilded Ingot
+-   Supplementaries
+-   Tinkers' Construct
+-   Turkish Meals
+-   Twilight Forest
 
 Changed
 
-* Updated 5-food-group support for:
-* Create
+-   Updated 5-food-group support for:
+-   Create
 
 [1.16.5-0.22] - 2021.04.02
 
 Added
 
-* Added Russian localization (thanks LEDshade!) [#32](https://github.com/TheIllusiveC4/Diet/pull/32)
+-   Added Russian localization (thanks LEDshade!) [#32](https://github.com/TheIllusiveC4/Diet/pull/32)
 
 [1.16.5-0.21] - 2021.04.01
 
 Added
 
-* Added five-food-group support for:
-* Endless Oceans: Adventure
-* EvilCraft
-* Gaia Dimension
-* Glow Bats
-* Greek Fantasy
-* Kray's Magic Candles
-* Mowzie's Mobs
-* Nether Soups Mob
-* Turtlemancy
+-   Added five-food-group support for:
+-   Endless Oceans: Adventure
+-   EvilCraft
+-   Gaia Dimension
+-   Glow Bats
+-   Greek Fantasy
+-   Kray's Magic Candles
+-   Mowzie's Mobs
+-   Nether Soups Mob
+-   Turtlemancy
 
 Changed
 
-* Updated five-food-group support for:
-* Fins and Tails
-* Terrain Incognita
+-   Updated five-food-group support for:
+-   Fins and Tails
+-   Terrain Incognita
 
 [1.16.5-0.20] - 2021.03.31
 
@@ -730,27 +730,27 @@ Emendatus Enigmatica
 
 MC 1.16.5 | Version 1.2.4
 
-* Added Cobalt to the Materials List in anticipation of Tinker's Construct full release. (NOTE for Modpack Devs: Review the Config file to activate/deactivate as needed)
-* Added the 'Guarded by Piglin' tag to the Gold Ores which should anger Piglins if mined near them, similar to Vanilla Nether Gold Ore
-* Added continuous rotation to the Patreon reward renderer, moved it a little higher to avoid interfering with other renderers, and slightly smaller in size.
-* Updated Chinese Lang file (credit: [Aemande123](https://github.com/Aemande123))
-* Updated the Enderium textures to match closer to Thermal Enderium new colour palette (making Shiny happy)
+-   Added Cobalt to the Materials List in anticipation of Tinker's Construct full release. (NOTE for Modpack Devs: Review the Config file to activate/deactivate as needed)
+-   Added the 'Guarded by Piglin' tag to the Gold Ores which should anger Piglins if mined near them, similar to Vanilla Nether Gold Ore
+-   Added continuous rotation to the Patreon reward renderer, moved it a little higher to avoid interfering with other renderers, and slightly smaller in size.
+-   Updated Chinese Lang file (credit: [Aemande123](https://github.com/Aemande123))
+-   Updated the Enderium textures to match closer to Thermal Enderium new colour palette (making Shiny happy)
 
 ### [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) ([EnchantmentDescriptions-1.16.5-7.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3198902)⟶[EnchantmentDescriptions-1.16.5-7.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3285665))
 
 #### [EnchantmentDescriptions-1.16.5-7.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3285665)
 
-* Fix Golden Helmet, Golden Leggings, and Turtle Shell Helmet being hidden in JEI. - Tyler Hancock
+-   Fix Golden Helmet, Golden Leggings, and Turtle Shell Helmet being hidden in JEI. - Tyler Hancock
 
 Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord](https://discord.darkhax.net/)
 
 Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChangelog?EnchantmentDescriptions)
 
-* Diablo Crasher
-* BigAl607
-* arcanearchivesmod
-* Pongo Sapiens
-* Darkosto
+-   Diablo Crasher
+-   BigAl607
+-   arcanearchivesmod
+-   Pongo Sapiens
+-   Darkosto
 
 #### [4 more entries](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/all)
 
@@ -758,29 +758,29 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 
 #### [engineersdecor-1.16.4-1.1.13-b2.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3287340)
 
-* v1.1.13-b2 [F] Fixed explosion resistance values for standard blocks.
+-   v1.1.13-b2 [F] Fixed explosion resistance values for standard blocks.
 
 [F] Sandstone Ornated Clinker loot table fixed (ty czbuendel, Valen).
 
-* v1.1.13-b1 [F] Hotfix Electrical Furnace inventory import from Storage Drawers (issue #174, ty anto-fire/IchigoGames).
-* v1.1.12    [F] Chisels&Bits compatibility addressed (issue #172, ty rodg88).
+-   v1.1.13-b1 [F] Hotfix Electrical Furnace inventory import from Storage Drawers (issue #174, ty anto-fire/IchigoGames).
+-   v1.1.12 [F] Chisels&Bits compatibility addressed (issue #172, ty rodg88).
 
 [F] Labeled Crate drop list made stateless (issue #173, ty HopsandBarley && Harmonised).
 
-* v1.1.11    [F] Fixed Window placement dupe (issue #170, ty NillerMedDild).
-* v1.1.10    [A] Added Small Lab Furnace config for accepted speed-boost heaters (PR#165, ty mrh0).
+-   v1.1.11 [F] Fixed Window placement dupe (issue #170, ty NillerMedDild).
+-   v1.1.10 [A] Added Small Lab Furnace config for accepted speed-boost heaters (PR#165, ty mrh0).
 
 [F] Fixed Labeled Crate mouse scrolling crash (issue #169, ty vaelzan).
 
-* v1.1.9     [A] Dark Shingle Roof Wire Conduit recipe added.
+-   v1.1.9 [A] Dark Shingle Roof Wire Conduit recipe added.
 
 [F] Fixed Ladder climbing (affects forge>=36.0.45, issue #167, thx ZED).
 
-* v1.1.8     [F] Crafting Table Output slot sync rework (issue #138).
+-   v1.1.8 [F] Crafting Table Output slot sync rework (issue #138).
 
 [A] Dark Shingle Roof Wire Conduit added (CFR#347).
 
-* v1.1.8-b2  [F] Fixed Iron Hatch isLadder bug (thx jerryw09).
+-   v1.1.8-b2 [F] Fixed Iron Hatch isLadder bug (thx jerryw09).
 
 [F] Fixed Block Placer block placing pre-conditions (issue #160, ty XFactHD).
 
@@ -788,25 +788,25 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 
 [F] Fixed directional waterloggable block default state forwarding (issue #162, ty b52src).
 
-* v1.1.8-b1  [F] Fluid Funnel waterlogged fluid picking fixed (issue #158, thx ZoMadeStuff).
+-   v1.1.8-b1 [F] Fluid Funnel waterlogged fluid picking fixed (issue #158, thx ZoMadeStuff).
 
 [F] Roof rendering fixes (issues #153/#159, thx Salamance73/Murph).
 
 [A] Recessed Clinkers, Vertically Slit Clinkers, and Structured Vertical Clinker Slab added.
 
-* v1.1.7     [M] 1.16.5 support.
+-   v1.1.7 [M] 1.16.5 support.
 
 [F] Fixed Labeled Crate include (issue #157, ty NillerMedDild).
 
-* v1.1.6     [F] Added common-config opt-out specification for pack level opt-outs (issue #154,
+-   v1.1.6 [F] Added common-config opt-out specification for pack level opt-outs (issue #154,
 
 ty gekkone), will replace server config opt-out in MC1.17.
 
-* v1.1.6-b3  [M] Config logging edited, E-Furnace GUI capacitor tooltip added, E-Furnace power consumption
+-   v1.1.6-b3 [M] Config logging edited, E-Furnace GUI capacitor tooltip added, E-Furnace power consumption
 
 independent of config speed setting (issue #152 ty Staegrin).
 
-* v1.1.6-b2  [M] Alternative Clinker Brick recipe (swapped Bricks/Nether Bricks) added.
+-   v1.1.6-b2 [M] Alternative Clinker Brick recipe (swapped Bricks/Nether Bricks) added.
 
 [M] Furnace XP handling simplified (simply stores/releases XP for each smelting process).
 
@@ -814,7 +814,7 @@ independent of config speed setting (issue #152 ty Staegrin).
 
 [M] Minor "librarizing" changes under the hood.
 
-* v1.1.6-b1  [F] Fixed Metal Crafting Table Hopper access (issue #147, ty umerrr).
+-   v1.1.6-b1 [F] Fixed Metal Crafting Table Hopper access (issue #147, ty umerrr).
 
 [F] Fixed Dark Shingle Roof Chimney placement restriction (issue #149, thx WenXin20).
 
@@ -824,7 +824,7 @@ independent of config speed setting (issue #152 ty Staegrin).
 
 stored power is below 20%.
 
-* v1.1.5     [R] Release build v1.1.5.
+-   v1.1.5 [R] Release build v1.1.5.
 
 [F] Fixed Crafting Table JEI storage slot count.
 
@@ -838,7 +838,7 @@ stored power is below 20%.
 
 [M] Metal Sliding Door bottom/top shape when opened added.
 
-* v1.1.4     [R] Release build v1.1.4.
+-   v1.1.4 [R] Release build v1.1.4.
 
 [F] Solar Panel balancing threshold tuned.
 
@@ -848,7 +848,7 @@ stored power is below 20%.
 
 [M] Factory Dropper: Added Ignore-External-Redstone mode.
 
-* v1.1.4-b2  [A] Steel Catwalks added (top and bottom aligned).
+-   v1.1.4-b2 [A] Steel Catwalks added (top and bottom aligned).
 
 [A] Steel Railings added.
 
@@ -874,75 +874,75 @@ If you find a bug please report it to [GITHUB](https://github.com/LeoBeliik/Extr
 
 v1.19
 
-* Fixed the issue "Server mod list is incompatible" message.
+-   Fixed the issue "Server mod list is incompatible" message.
 
 v1.18
 
-* Initial release to Minecraft 1.16.3 and 1.16.4.
-* Improved configuration GUI.
-* Added a dedicated setting for disabling the HUD.
+-   Initial release to Minecraft 1.16.3 and 1.16.4.
+-   Improved configuration GUI.
+-   Added a dedicated setting for disabling the HUD.
 
 v1.17.1
 
-* Initial release to Minecraft 1.16.2.
-* Changed default HUD info to "FPS only".
-* Fixed information in mod list.
+-   Initial release to Minecraft 1.16.2.
+-   Changed default HUD info to "FPS only".
+-   Fixed information in mod list.
 
 v1.17
 
-* Updated pl_pl.json. (Thanks to Grreg21)
-* Fixed PAUSE key works unintentionally when the FPS Reducer is disabled.
+-   Updated pl_pl.json. (Thanks to Grreg21)
+-   Fixed PAUSE key works unintentionally when the FPS Reducer is disabled.
 
 v1.16
 
-* Initial release to mc1.16.1.
-* Added shortcut key to enter to idle mode manually. (PAUSE key by default)
-* Improved sliders to inherit vanilla slider class.
-* Improved debug logs.
+-   Initial release to mc1.16.1.
+-   Added shortcut key to enter to idle mode manually. (PAUSE key by default)
+-   Improved sliders to inherit vanilla slider class.
+-   Improved debug logs.
 
 v1.15
 
-* Enabled the config button in modlist.
-* Added Simplified Chinese translation. (Thanks to cutedobe)
-* Added Traditional Chinese translation. (Thanks to cutedobe)
-* Added Russian translation. (Thanks to agent_rby_)
+-   Enabled the config button in modlist.
+-   Added Simplified Chinese translation. (Thanks to cutedobe)
+-   Added Traditional Chinese translation. (Thanks to cutedobe)
+-   Added Russian translation. (Thanks to agent*rby*)
 
 v1.14.1
 
-* Initial release for mc1.15.2.
-* Fixed the crash when using OpenJ9. (for mc1.12.2)
-* Updated Polish translation. (Thanks to Grreg21)
-* Updated English lang file. (Thanks to Grreg21)
-* Fixed wrong comment in config file.
+-   Initial release for mc1.15.2.
+-   Fixed the crash when using OpenJ9. (for mc1.12.2)
+-   Updated Polish translation. (Thanks to Grreg21)
+-   Updated English lang file. (Thanks to Grreg21)
+-   Fixed wrong comment in config file.
 
 v1.14
 
-* Initial release for mc1.15.1.
-* Changed default settings: "Reudce FPS when inactive": OFF -> ON
-* Changed default settings: "Suppress sound when inactive": OFF -> ON
-* Changed default settings: suppressedVolume: 10 -> 20
-* Changed the function of "FPS Reducer" button. All suppression functions are now off.
-* Changed "Waiting Timer" can be OFF by moving the slider to the right end.
-* Added CPU usage information of client thread.
-* Added new settings related to CPU usage information. (cpuUsageThread, cpuUsageType)
-* Added new GUI for adjusting HUD layout.
-* Improved the accuracy of FPS information.
-* Updated Polish translation. (Thanks to Grreg21)
-* Fixed issue where idle fps mode might not be applied when gui fps mode was enabled.
-* Optimized conditions for reducing and recovering FPS.
+-   Initial release for mc1.15.1.
+-   Changed default settings: "Reudce FPS when inactive": OFF -> ON
+-   Changed default settings: "Suppress sound when inactive": OFF -> ON
+-   Changed default settings: suppressedVolume: 10 -> 20
+-   Changed the function of "FPS Reducer" button. All suppression functions are now off.
+-   Changed "Waiting Timer" can be OFF by moving the slider to the right end.
+-   Added CPU usage information of client thread.
+-   Added new settings related to CPU usage information. (cpuUsageThread, cpuUsageType)
+-   Added new GUI for adjusting HUD layout.
+-   Improved the accuracy of FPS information.
+-   Updated Polish translation. (Thanks to Grreg21)
+-   Fixed issue where idle fps mode might not be applied when gui fps mode was enabled.
+-   Optimized conditions for reducing and recovering FPS.
 
 v1.13
 
-* Added an option to limit FPS in menu/inventory screen.
-* Added Polish translation. (Thanks to Grreg21)
+-   Added an option to limit FPS in menu/inventory screen.
+-   Added Polish translation. (Thanks to Grreg21)
 
 v1.12.5
 
-* Fixed an incompatibility with Forge 1.14.4-28.0.45.
+-   Fixed an incompatibility with Forge 1.14.4-28.0.45.
 
 v1.12.4
 
-* Initial release for mc1.14.4.
+-   Initial release for mc1.14.4.
 
 [(20 more lines)](https://www.curseforge.com/minecraft/mc-mods/fps-reducer/files/3281559)
 
@@ -950,7 +950,7 @@ v1.12.4
 
 #### [ftb-ultimine-1605.2.0-build.26-forge.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine/files/3269868)
 
-* Update, refactor and add "ftbultimine:excluded_tools/strict" tag - Max
+-   Update, refactor and add "ftbultimine:excluded_tools/strict" tag - Max
 
 ### [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) ([Farmer's Delight 0.4 - 1.16.3+](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/3249879)⟶[Farmer's Delight 0.4.1 - 1.16.3+](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/3272000))
 
@@ -958,25 +958,25 @@ v1.12.4
 
 0.4.1 - Thinking Out Loud
 
-* Certain actions will now display a status message on your HUD (similar to beds), to assist players regarding successful and failed attempts:
-* Trying to plant Rice outside of a shallow puddle;
-* Trying to cut an improper item in the Cutting Board;
-* Trying to use the wrong tool against a cuttable item in the Cutting Board;
-* Shovels can now split Clay into 4 Clay Balls on the Cutting Board (come on, Mojang, make this a thing already...);
-* Feasts have been slightly nerfed on Nourished length, to match other equivalent meals;
-* Cabbage Rolls have been nerfed just a little bit;
-* Recipe changes:
-* Raw Pasta is now made 2 at a time with 4 Wheat when using Water Buckets, to ease on water refilling;
-* Egg-based Raw Pasta remains the same ratio;
-* Fixes:
-* Corrected wrong rotation on the Cooking Pot's spoon;
-* Horizontal facing blocks will now rotate properly when placed from a structure or command;
-* Improved Rich Soil tilling to increase compatibility with modded hoes;
-* Updated translations:
-* zh_CN (thank you, WuzgXY!);
-* ko_KR (thank you, qkrehf2!)
-* de_DE (thank you, DaLumma!);
-* ja_JP (thank you, haru!);
+-   Certain actions will now display a status message on your HUD (similar to beds), to assist players regarding successful and failed attempts:
+-   Trying to plant Rice outside of a shallow puddle;
+-   Trying to cut an improper item in the Cutting Board;
+-   Trying to use the wrong tool against a cuttable item in the Cutting Board;
+-   Shovels can now split Clay into 4 Clay Balls on the Cutting Board (come on, Mojang, make this a thing already...);
+-   Feasts have been slightly nerfed on Nourished length, to match other equivalent meals;
+-   Cabbage Rolls have been nerfed just a little bit;
+-   Recipe changes:
+-   Raw Pasta is now made 2 at a time with 4 Wheat when using Water Buckets, to ease on water refilling;
+-   Egg-based Raw Pasta remains the same ratio;
+-   Fixes:
+-   Corrected wrong rotation on the Cooking Pot's spoon;
+-   Horizontal facing blocks will now rotate properly when placed from a structure or command;
+-   Improved Rich Soil tilling to increase compatibility with modded hoes;
+-   Updated translations:
+-   zh_CN (thank you, WuzgXY!);
+-   ko_KR (thank you, qkrehf2!)
+-   de_DE (thank you, DaLumma!);
+-   ja_JP (thank you, haru!);
 
 ### [FerriteCore (Forge)](https://www.curseforge.com/minecraft/mc-mods/ferritecore) ([ferritecore-2.0.3-forge.jar](https://www.curseforge.com/minecraft/mc-mods/ferritecore/files/3222545)⟶[ferritecore-2.0.4-forge.jar](https://www.curseforge.com/minecraft/mc-mods/ferritecore/files/3272785))
 
@@ -994,89 +994,89 @@ Changelog 1.16.5-6.1.7.12 (2021-04-22)
 
 (Install Modern UI for better font looking)
 
-* Fix network packet security leaks
-* Fix super admin can't transfer ownership to self
+-   Fix network packet security leaks
+-   Fix super admin can't transfer ownership to self
 
 Changelog 1.16.5-6.1.6.11 (2021-01-20)
 
-* Make flux plugs and points waterlogged
-* Fix server config not synced to client
-* Fix possible crash with some blocks
+-   Make flux plugs and points waterlogged
+-   Fix server config not synced to client
+-   Fix possible crash with some blocks
 
 Changelog 1.16.4-6.1.5.10 (2020-11-14)
 
-* Add feedback text animation
-* Move super admin text from action bar into GUI
-* Disable players to be charged by multiple networks
-* Fix GUI not closed when block removed
-* Fix possible strong reference bug
-* Make devices able to disconnect in any case
+-   Add feedback text animation
+-   Move super admin text from action bar into GUI
+-   Disable players to be charged by multiple networks
+-   Fix GUI not closed when block removed
+-   Fix possible strong reference bug
+-   Make devices able to disconnect in any case
 
 Changelog 1.16.4-6.1.3.8 (2020-11-10)
 
-* Fix chunk loading flag not updated when re-entering world
+-   Fix chunk loading flag not updated when re-entering world
 
 Changelog 1.16.4-6.1.2.7 (2020-11-10)
 
-* Update localization
-* Improve GUI
-* Remove debug logs
+-   Update localization
+-   Improve GUI
+-   Remove debug logs
 
 Changelog 1.16.4-6.1.1.6 (2020-11-08)
 
-* Fix various GUI bugs
-* Optimize GUI code
+-   Fix various GUI bugs
+-   Optimize GUI code
 
 Changelog 1.16.4-6.1.0.5 (2020-11-06)
 
-* Update to 1.16.4 (1.16.3 works as well)
-* Add energy capacity tooltip for storages
-* Improve text display
-* Optimize GUI code
-* Fix possible crash
-* Fix diffuse lighting in GUI
-* Fix flux storage rendering
-* Fix network buffer limiter
+-   Update to 1.16.4 (1.16.3 works as well)
+-   Add energy capacity tooltip for storages
+-   Improve text display
+-   Optimize GUI code
+-   Fix possible crash
+-   Fix diffuse lighting in GUI
+-   Fix flux storage rendering
+-   Fix network buffer limiter
 
 Changelog 1.16.3-6.0.1.4 (2020-10-26)
 
-* Improve controller transfer logic
-* Fix crash caused by bad API implementations of other mods
-* Fix client only method crash
+-   Improve controller transfer logic
+-   Fix crash caused by bad API implementations of other mods
+-   Fix client only method crash
 
 Changelog 1.16.3-6.0.0.3 (2020-10-25)
 
-* Fix some packets without security check
-* Fix chunk loading system
-* Fix blacklist system
-* Fix many other bugs
-* Add support for Curios API
-* Enhance flux storage capacity limit to Long.MAX_VALUE
-* Optimize data synchronization and client cache
-* Optimize network transfer
-* More code standardizing and optimization
+-   Fix some packets without security check
+-   Fix chunk loading system
+-   Fix blacklist system
+-   Fix many other bugs
+-   Add support for Curios API
+-   Enhance flux storage capacity limit to Long.MAX_VALUE
+-   Optimize data synchronization and client cache
+-   Optimize network transfer
+-   More code standardizing and optimization
 
 ### [Gauges and Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) ([rsgauges-1.16.4-1.2.9-b1.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches/files/3194049)⟶[rsgauges-1.16.4-1.2.9.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches/files/3287295))
 
 #### [rsgauges-1.16.4-1.2.9.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches/files/3287295)
 
-* v1.2.9     [F] Lang file update zh_cn (PR#41, ty kappa-maintainer).
+-   v1.2.9 [F] Lang file update zh_cn (PR#41, ty kappa-maintainer).
 
 [F] Fixed Power Plant documentation (issue#42, ty Artin).
 
-* v1.2.9-b1  [F] Fixed Stained Redstone Sensitive Glass recipe (issue #40).
-* v1.2.8     [R] Release build.
+-   v1.2.9-b1 [F] Fixed Stained Redstone Sensitive Glass recipe (issue #40).
+-   v1.2.8 [R] Release build.
 
 [U] MC1.16.5 enabled.
 
 [M] Block materials unified.
 
-* v1.2.7     [R] Release build v1.2.7.
+-   v1.2.7 [R] Release build v1.2.7.
 
 [F] Opt-out config pack level based.
 
-* v1.2.7-b2  [F] Config load/apply condition fixed.
-* v1.2.7-b1  [A] Analog Switch Linking signals added.
+-   v1.2.7-b2 [F] Config load/apply condition fixed.
+-   v1.2.7-b1 [A] Analog Switch Linking signals added.
 
 [A] Gauges and Indicators can be wirelessly connected to switches.
 
@@ -1086,46 +1086,46 @@ Changelog 1.16.3-6.0.0.3 (2020-10-25)
 
 clicked when placing.
 
-* v1.2.6     [R] Release build  1.2.6.
-* v1.2.6-b2  [A] Gauges can be explicitly set to Comparator-Input mode (click with a Redstone Torch).
+-   v1.2.6 [R] Release build 1.2.6.
+-   v1.2.6-b2 [A] Gauges can be explicitly set to Comparator-Input mode (click with a Redstone Torch).
 
 [A] Auto switch buttons only display the current configurations on first click.
 
-* v1.2.6-b1  [U] Ported to 1.16.4.
-* v1.2.5     [R] Release build 1.2.5.
-* v1.2.5-b1  [A] Linked switches are marked with particles when holding the Switch Link Pearl.
+-   v1.2.6-b1 [U] Ported to 1.16.4.
+-   v1.2.5 [R] Release build 1.2.5.
+-   v1.2.5-b1 [A] Linked switches are marked with particles when holding the Switch Link Pearl.
 
 [U] Partial internal code refurbishments.
 
-* v1.2.4     [U] Updated to Forge 1.16.3-34.1.0.
+-   v1.2.4 [U] Updated to Forge 1.16.3-34.1.0.
 
 [A] Indicators and Gauges are invertible (input from Vallen while Forgecraft'ing).
 
 [F] Ambient occlusion and GUI lightning fixes.
 
-* v1.2.4-b8  [U] Ported to MC1.16.3.
-* v1.2.4-b7  [U] Updated Forge to 33.0.37 (breaking change).
-* v1.2.4-b6  [U] Updated Forge, adapted new mappings to 20200723-1.16.1.
+-   v1.2.4-b8 [U] Ported to MC1.16.3.
+-   v1.2.4-b7 [U] Updated Forge to 33.0.37 (breaking change).
+-   v1.2.4-b6 [U] Updated Forge, adapted new mappings to 20200723-1.16.1.
 
 [F] Fixed Contact Switch detection range.
 
-* v1.2.4-b5  [F] Mapping adaption to Forge 1.16.2-33.0.20.
-* v1.2.4-b4  [U] Ported to 1.16.2.
-* v1.2.4-b2  [F] Door sensor look detection angle fixed.
+-   v1.2.4-b5 [F] Mapping adaption to Forge 1.16.2-33.0.20.
+-   v1.2.4-b4 [U] Ported to 1.16.2.
+-   v1.2.4-b2 [F] Door sensor look detection angle fixed.
 
 [A] JEI integration added.
 
 [F] Fixed startup issue by updating to Forge 32.0.97 (issue #28, ty wieselkatze).
 
-* v1.2.4-b1  [M] Coloring of Sensitive Glass ported.
+-   v1.2.4-b1 [M] Coloring of Sensitive Glass ported.
 
 [F] Indicator power issue fixed.
 
-* v1.2.4-a2  [A] Sensitive glass ported, overlay frame style ported.
+-   v1.2.4-a2 [A] Sensitive glass ported, overlay frame style ported.
 
 [M] Modified global switch power placement default setting to strong.
 
-* v1.2.4-a1  [A] Initial port.
+-   v1.2.4-a1 [A] Initial port.
 
 ### [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib) ([geckolib-forge-1.16.5-3.0.15.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/3224454)⟶[geckolib-forge-1.16.5-3.0.31.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/3282081))
 
@@ -1133,7 +1133,7 @@ clicked when placing.
 
 v3.0.31
 
-* Fixed items with tags always returning a value of 1, causing all stacks to play the animation. #DenimRed/AzureDoom
+-   Fixed items with tags always returning a value of 1, causing all stacks to play the animation. #DenimRed/AzureDoom
 
 #### [5 more entries](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/all)
 
@@ -1153,7 +1153,7 @@ Requires CyclopsCore version 1.11.1 or higher.
 
 Fixes:
 
-* Fix crash when showing all recipes in JEI, Closes #1018
+-   Fix crash when showing all recipes in JEI, Closes #1018
 
 #### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics/files/all)
 
@@ -1167,7 +1167,7 @@ Requires CyclopsCore version 1.11.1 or higher.
 
 Fixes:
 
-* Fix server crash on some terminal operations, Closes #68
+-   Fix server crash on some terminal operations, Closes #68
 
 #### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/integrated-terminals/files/all)
 
@@ -1181,7 +1181,7 @@ Requires CyclopsCore version 1.11.1 or higher.
 
 Fixes:
 
-* Fix server crash on inconsistent transfer error
+-   Fix server crash on inconsistent transfer error
 
 Closes CyclopsMC/IntegratedDynamics#1010
 
@@ -1197,19 +1197,19 @@ Actually fixed blocks not dropping
 
 #### [Just Enough Items (JEI) 7.6.4](https://www.curseforge.com/minecraft/mc-mods/jei/files/3280247)
 
-* [Update sv_se.json (#2314)](https://github.com/mezz/JustEnoughItems/commit/3ce95b9fcc1cb5284fca2a84c3fe4f1655e71cab) - A. Regnander
-* [Generalize recipe name callback to work for all ingredient types (#2313)](https://github.com/mezz/JustEnoughItems/commit/0e58723f360d6a329dc15be21bd467e47b79affe) - Sara Freimer
-* [Minor cleanup and error handling improvements](https://github.com/mezz/JustEnoughItems/commit/221390c73e88bd8e1852e1793c4d0d2e291039a6) - mezz
-* [Transition various string based APIs over to text components (#2306)](https://github.com/mezz/JustEnoughItems/commit/272235ef00e4cae3351e23b2118fc3868894090f) - Sara Freimer
-* [Remove disabled vote prompt code](https://github.com/mezz/JustEnoughItems/commit/e70e0f22dcf8ac0c6dad63653ad69bc23b77ba01) - mezz
-* [Auto code formatting](https://github.com/mezz/JustEnoughItems/commit/769271e409b76a1ad09a64151c678f5f38b25dfd) - mezz
-* [Fix memory leak when reloading (#2238)](https://github.com/mezz/JustEnoughItems/commit/26b71266fc1a101d51a04fd557ace600c9d53cd0) - malte0811
-* [Close #2282 Add hotkey for navigating recipe categories](https://github.com/mezz/JustEnoughItems/commit/e1309e8271d5b88b0074f7b8f8625070d707eeb6) - mezz
-* [Close the recipe screen even if parent screen is null (#2298)](https://github.com/mezz/JustEnoughItems/commit/3cf55c21e0a8e199bf46de56b2fe0e6001c5f74d) - deirn
-* [Update ForgeGradle & mappings (#2288)](https://github.com/mezz/JustEnoughItems/commit/bf73a1138cb49b246d0d330a0ed1cc897635898c) - iTitus
-* Co-authored-by: mezz
-* [Update it_it.json (#2232)](https://github.com/mezz/JustEnoughItems/commit/348e2b3317d1ec0b868750d5f05116e03280c28e) - Matteo Tossuto
-* [Add in support for showing shulker box coloring recipes (#2290)](https://github.com/mezz/JustEnoughItems/commit/b5d3b5ca63e7bb51d5889452948fdd5f2debabcb) - Sara Freimer
+-   [Update sv_se.json (#2314)](https://github.com/mezz/JustEnoughItems/commit/3ce95b9fcc1cb5284fca2a84c3fe4f1655e71cab) - A. Regnander
+-   [Generalize recipe name callback to work for all ingredient types (#2313)](https://github.com/mezz/JustEnoughItems/commit/0e58723f360d6a329dc15be21bd467e47b79affe) - Sara Freimer
+-   [Minor cleanup and error handling improvements](https://github.com/mezz/JustEnoughItems/commit/221390c73e88bd8e1852e1793c4d0d2e291039a6) - mezz
+-   [Transition various string based APIs over to text components (#2306)](https://github.com/mezz/JustEnoughItems/commit/272235ef00e4cae3351e23b2118fc3868894090f) - Sara Freimer
+-   [Remove disabled vote prompt code](https://github.com/mezz/JustEnoughItems/commit/e70e0f22dcf8ac0c6dad63653ad69bc23b77ba01) - mezz
+-   [Auto code formatting](https://github.com/mezz/JustEnoughItems/commit/769271e409b76a1ad09a64151c678f5f38b25dfd) - mezz
+-   [Fix memory leak when reloading (#2238)](https://github.com/mezz/JustEnoughItems/commit/26b71266fc1a101d51a04fd557ace600c9d53cd0) - malte0811
+-   [Close #2282 Add hotkey for navigating recipe categories](https://github.com/mezz/JustEnoughItems/commit/e1309e8271d5b88b0074f7b8f8625070d707eeb6) - mezz
+-   [Close the recipe screen even if parent screen is null (#2298)](https://github.com/mezz/JustEnoughItems/commit/3cf55c21e0a8e199bf46de56b2fe0e6001c5f74d) - deirn
+-   [Update ForgeGradle & mappings (#2288)](https://github.com/mezz/JustEnoughItems/commit/bf73a1138cb49b246d0d330a0ed1cc897635898c) - iTitus
+-   Co-authored-by: mezz
+-   [Update it_it.json (#2232)](https://github.com/mezz/JustEnoughItems/commit/348e2b3317d1ec0b868750d5f05116e03280c28e) - Matteo Tossuto
+-   [Add in support for showing shulker box coloring recipes (#2290)](https://github.com/mezz/JustEnoughItems/commit/b5d3b5ca63e7bb51d5889452948fdd5f2debabcb) - Sara Freimer
 
 #### [19 more entries](https://www.curseforge.com/minecraft/mc-mods/jei/files/all)
 
@@ -1219,7 +1219,7 @@ Actually fixed blocks not dropping
 
 Kotlin for Forge 1.11.1
 
-* Downgraded to coroutines 1.4.2 due to missing class errors
+-   Downgraded to coroutines 1.4.2 due to missing class errors
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/all)
 
@@ -1227,7 +1227,7 @@ Kotlin for Forge 1.11.1
 
 #### [kubejs-1605.3.7-build.186-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3286650)
 
-* Added Detector blocks for puzzles, KubeJS tab, improved resource generation a bit - LatvianModder
+-   Added Detector blocks for puzzles, KubeJS tab, improved resource generation a bit - LatvianModder
 
 #### [8 more entries](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/all)
 
@@ -1235,7 +1235,7 @@ Kotlin for Forge 1.11.1
 
 #### [LibX-1.16.3-1.0.47.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3286728)
 
-* automatically generate correct models for leaves in BlockStateProviderBase - noeppi_noeppi
+-   automatically generate correct models for leaves in BlockStateProviderBase - noeppi_noeppi
 
 #### [20 more entries](https://www.curseforge.com/minecraft/mc-mods/libx/files/all)
 
@@ -1243,30 +1243,30 @@ Kotlin for Forge 1.11.1
 
 #### [lootr-1.16.4-0.0.5.17.jar](https://www.curseforge.com/minecraft/mc-mods/lootr/files/3272069)
 
-* New major release.
-* Fixed issues with custom inventories always referencing the same ItemStack, resulting in any adjustment changing both a) the reference inventory, and b) everyone else's inventory. Oops.
+-   New major release.
+-   Fixed issues with custom inventories always referencing the same ItemStack, resulting in any adjustment changing both a) the reference inventory, and b) everyone else's inventory. Oops.
 
 ### [Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors) ([[1.0.1 / 1.16.5/4] Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors/files/3182352)⟶[[1.0.2 / 1.16.5/4] Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors/files/3273512))
 
 #### [[1.0.2 / 1.16.5/4] Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors/files/3273512)
 
-* Added resourcepack compatible trapdoors
-* Added two metal trapdoors
+-   Added resourcepack compatible trapdoors
+-   Added two metal trapdoors
 
 Translations
 
-* Korean by othuntgithub
-* Chinese by Aemande123
-* Slovak by Sketch Macaw
-* Czech by Sketch Macaw
+-   Korean by othuntgithub
+-   Chinese by Aemande123
+-   Slovak by Sketch Macaw
+-   Czech by Sketch Macaw
 
 ### [Mantle](https://www.curseforge.com/minecraft/mc-mods/mantle) ([Mantle 1.6.79 for 1.16.5](https://www.curseforge.com/minecraft/mc-mods/mantle/files/3180804)⟶[Mantle 1.6.92 for 1.16.5](https://www.curseforge.com/minecraft/mc-mods/mantle/files/3273201))
 
 #### [Mantle 1.6.92 for 1.16.5](https://www.curseforge.com/minecraft/mc-mods/mantle/files/3273201)
 
-* Structures in books now render properly, and make use of structure block NBT instead of the JSON format
-* Fix text shadows in the book when not desired
-* Improve book text wrapping
+-   Structures in books now render properly, and make use of structure block NBT instead of the JSON format
+-   Fix text shadows in the book when not desired
+-   Improve book text wrapping
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/mantle/files/all)
 
@@ -1276,13 +1276,13 @@ Translations
 
 General
 
-* Added a config option for the brightness of the mining helmet. Can be set from 0 to 15 and defaults to 12.
-* Made the config file more readable.
-* Cleanup and optimizations to the dynamic lighting engine
+-   Added a config option for the brightness of the mining helmet. Can be set from 0 to 15 and defaults to 12.
+-   Made the config file more readable.
+-   Cleanup and optimizations to the dynamic lighting engine
 
 Fixes
 
-* Fixed flickering when placing/breaking blocks near a mob/player wearing the mining helmet.
+-   Fixed flickering when placing/breaking blocks near a mob/player wearing the mining helmet.
 
 ### [Mining Gadgets](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets) ([mininggadgets-1.7.1.jar](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets/files/3121177)⟶[mininggadgets-1.7.5.jar](https://www.curseforge.com/minecraft/mc-mods/mining-gadgets/files/3279909))
 
@@ -1292,22 +1292,22 @@ Fixes
 
 Added
 
-* All new and amazing textures for the gadgets, modification table, and upgrades courtesy of the one and only [Ridanisaurus Rid](https://github.com/Ridanisaurus)
-* All new laser gadgets models! They're all amazing and yes, they're you now have 3 amazing lasers to pick from!
-* A new and fancy Modification table
-* You can hold shift whilst looking at the table to see what upgrades are on a gadget! It's super nice
-* We've also added a super fancy render of the laser on the outside of the block. You'll see what I'm talking about...
+-   All new and amazing textures for the gadgets, modification table, and upgrades courtesy of the one and only [Ridanisaurus Rid](https://github.com/Ridanisaurus)
+-   All new laser gadgets models! They're all amazing and yes, they're you now have 3 amazing lasers to pick from!
+-   A new and fancy Modification table
+-   You can hold shift whilst looking at the table to see what upgrades are on a gadget! It's super nice
+-   We've also added a super fancy render of the laser on the outside of the block. You'll see what I'm talking about...
 
 Changed
 
-* Changed the strength of the render block to stop players being able to hit the block and void its drops. [#130](https://github.com/Direwolf20-MC/MiningGadgets/issues/130)
-* Modified the gadgets recipes slightly to allow for multiple lasers.
+-   Changed the strength of the render block to stop players being able to hit the block and void its drops. [#130](https://github.com/Direwolf20-MC/MiningGadgets/issues/130)
+-   Modified the gadgets recipes slightly to allow for multiple lasers.
 
 Fixed
 
-* Added blocking area on JEI to stop the modification gadgets slot overlapping a deletion area when in cheat mode. [#142](https://github.com/Direwolf20-MC/MiningGadgets/issues/142)
-* Fixed a checking error allowing the freezing mode to replace waterlogged blocks... We now remove its water logged state as long as it's not a tile entity. [#139](https://github.com/Direwolf20-MC/MiningGadgets/issues/139)
-* Fixed an issue where you could delete upgrades if you attempted to place a different tier of an upgrade into the modification table. [#137](https://github.com/Direwolf20-MC/MiningGadgets/issues/137)
+-   Added blocking area on JEI to stop the modification gadgets slot overlapping a deletion area when in cheat mode. [#142](https://github.com/Direwolf20-MC/MiningGadgets/issues/142)
+-   Fixed a checking error allowing the freezing mode to replace waterlogged blocks... We now remove its water logged state as long as it's not a tile entity. [#139](https://github.com/Direwolf20-MC/MiningGadgets/issues/139)
+-   Fixed an issue where you could delete upgrades if you attempted to place a different tier of an upgrade into the modification table. [#137](https://github.com/Direwolf20-MC/MiningGadgets/issues/137)
 
 ### [MythicBotany](https://www.curseforge.com/minecraft/mc-mods/mythicbotany) ([MythicBotany-1.16.3-1.2.9.jar](https://www.curseforge.com/minecraft/mc-mods/mythicbotany/files/3249568)⟶[MythicBotany-1.16.3-1.2.12.jar](https://www.curseforge.com/minecraft/mc-mods/mythicbotany/files/3276052))
 
@@ -1321,8 +1321,8 @@ Aded chinese translation (DevilJueChen & wisdommen)
 
 #### [NaturesAura-34.2.jar](https://www.curseforge.com/minecraft/mc-mods/natures-aura/files/3255666)
 
-* Fixed a server side crash when dispensing tridents
-* Updated dependency-related code to ensure compatibility
+-   Fixed a server side crash when dispensing tridents
+-   Updated dependency-related code to ensure compatibility
 
 ### [PackMenu](https://www.curseforge.com/minecraft/mc-mods/packmenu) ([PackMenu-1.16.4-2.4.0.jar](https://www.curseforge.com/minecraft/mc-mods/packmenu/files/3223408)⟶[PackMenu-1.16.4-2.4.1.jar](https://www.curseforge.com/minecraft/mc-mods/packmenu/files/3264418))
 
@@ -1366,38 +1366,38 @@ Make SpawnerEditor use IWorld
 
 Updates
 
-* Logistics Frames are now sided, meaning multiple frames can be placed on one block!
-* - Greatly reduces the need for auxiliary input/output inventories and tanks when using logistics with machines
-* - The side can no longer be changed via the GUI; you will need to detach and replace a frame to change its side
-* - Rendering has been altered to show a frame only on the side that the frame was placed on
-* Logistics Frames now have independently-settable item and fluid white/blacklisting
-* - In addition, the button to switch white/blacklisting is now on the main GUI, not the Filter side tab
-* Logistics Frames GUI: clicking a fluid-containing item (e.g. bucket or tank) on a liquid filter slot will now copy the contained fluid into that slot
-* Logistics Drones will now completely ignore any frames whose facing side is obstructed by any solid (non-pathfindable) block
-* - This means that drones won't attempt to handle any frame which already has a Logistics Module on it, so drones and modules now co-exist better
-* Breaking machines with a pickaxe now "rewards" the player a new advancement (hinting that using a wrench is preferable)
-* - Pickaxing pressurized machines now causes particles and a sound to played, indicating that air has been lost
-* Thermopneumatic Processing Plant now consumes air and/or heat as it runs, not once when the current recipe run has completed
-* - Overall air/heat usage has not been changed
-* In the Programmer GUI, clicking with an item (other than GPS tools) on the background area now creates an Item Filter widget for that item
-* - Clicking an existing Item Filter widget with an item updates the item for that widget
-* All numeric-entry textfields in all GUI's can now be modified by scrolling the mouse wheel
-* - Hold Shift while scrolling for a faster adjustment
-* - The actual modification depends on the context but should make sense for each situation
-* Drones will now repair their held item with imported experience orbs if the item is enchanted with Mending
-* - Reminder: use an Import Entity widget with an @orb filter to import experience orbs (excess Memory Essence fluid can be put in a tank with the Export Fluid widget)
-* Changes to rendered fluid levels in fluid-containing tile entities are now interpolated smoothly on the client (for a nicer visual appearance)
+-   Logistics Frames are now sided, meaning multiple frames can be placed on one block!
+-   -   Greatly reduces the need for auxiliary input/output inventories and tanks when using logistics with machines
+-   -   The side can no longer be changed via the GUI; you will need to detach and replace a frame to change its side
+-   -   Rendering has been altered to show a frame only on the side that the frame was placed on
+-   Logistics Frames now have independently-settable item and fluid white/blacklisting
+-   -   In addition, the button to switch white/blacklisting is now on the main GUI, not the Filter side tab
+-   Logistics Frames GUI: clicking a fluid-containing item (e.g. bucket or tank) on a liquid filter slot will now copy the contained fluid into that slot
+-   Logistics Drones will now completely ignore any frames whose facing side is obstructed by any solid (non-pathfindable) block
+-   -   This means that drones won't attempt to handle any frame which already has a Logistics Module on it, so drones and modules now co-exist better
+-   Breaking machines with a pickaxe now "rewards" the player a new advancement (hinting that using a wrench is preferable)
+-   -   Pickaxing pressurized machines now causes particles and a sound to played, indicating that air has been lost
+-   Thermopneumatic Processing Plant now consumes air and/or heat as it runs, not once when the current recipe run has completed
+-   -   Overall air/heat usage has not been changed
+-   In the Programmer GUI, clicking with an item (other than GPS tools) on the background area now creates an Item Filter widget for that item
+-   -   Clicking an existing Item Filter widget with an item updates the item for that widget
+-   All numeric-entry textfields in all GUI's can now be modified by scrolling the mouse wheel
+-   -   Hold Shift while scrolling for a faster adjustment
+-   -   The actual modification depends on the context but should make sense for each situation
+-   Drones will now repair their held item with imported experience orbs if the item is enchanted with Mending
+-   -   Reminder: use an Import Entity widget with an @orb filter to import experience orbs (excess Memory Essence fluid can be put in a tank with the Export Fluid widget)
+-   Changes to rendered fluid levels in fluid-containing tile entities are now interpolated smoothly on the client (for a nicer visual appearance)
 
 Fixes
 
-* Fixed Blood Magic Lava Crystals (and other container-like items) being consumed by the (Advanced) Air Compressor
-* - Note that Lava Buckets are still not accepted by Air Compressors (use Liquid Compressors for lava fuel)
-* Fixed north & west temperature widgets being swapped in the Thermal Compressor GUI
-* Fixed Amadron player-player trading not paying the seller
-* Fixed NPE when placing down Pressure Chamber blocks with a Building Gadget
-* - Fix actually applies to any situation where multiple PNC tile entities are placed in a single tick
-* Fixed fluid-containing tile entities not rendering their fluid when any GUI is open
-* Placing an item on a Display Table in creative mode no longer removes the item from the player
+-   Fixed Blood Magic Lava Crystals (and other container-like items) being consumed by the (Advanced) Air Compressor
+-   -   Note that Lava Buckets are still not accepted by Air Compressors (use Liquid Compressors for lava fuel)
+-   Fixed north & west temperature widgets being swapped in the Thermal Compressor GUI
+-   Fixed Amadron player-player trading not paying the seller
+-   Fixed NPE when placing down Pressure Chamber blocks with a Building Gadget
+-   -   Fix actually applies to any situation where multiple PNC tile entities are placed in a single tick
+-   Fixed fluid-containing tile entities not rendering their fluid when any GUI is open
+-   Placing an item on a Display Table in creative mode no longer removes the item from the player
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized/files/all)
 
@@ -1415,8 +1415,8 @@ Fixed crash with fallen trees when a non-rotatable block uses Minecraft's vanill
 
 #### [Quark-r2.4-311.jar](https://www.curseforge.com/minecraft/mc-mods/quark/files/3282239)
 
-* Fixed the file containing roughly 2MB of voice files I put there for a meme and forgot to take out lol
-* Added a general config to modify advancement visibility depth, which is mostly for personal use so I just stuck it in there but I guess someone else might want it idk
+-   Fixed the file containing roughly 2MB of voice files I put there for a meme and forgot to take out lol
+-   Added a general config to modify advancement visibility depth, which is mostly for personal use so I just stuck it in there but I guess someone else might want it idk
 
 #### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/quark/files/all)
 
@@ -1424,7 +1424,7 @@ Fixed crash with fallen trees when a non-rotatable block uses Minecraft's vanill
 
 #### [quickstack-4.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/quickstack/files/3275942)
 
-* Fix crashing from bad blockentity names
+-   Fix crashing from bad blockentity names
 
 ### [Reload Audio Driver (RAD) [Forge]](https://www.curseforge.com/minecraft/mc-mods/reload-audio-driver-rad) ([rad-1.16-4.1.0](https://www.curseforge.com/minecraft/mc-mods/reload-audio-driver-rad/files/3054516)⟶[rad-1.16-4.1.1](https://www.curseforge.com/minecraft/mc-mods/reload-audio-driver-rad/files/3280843))
 
@@ -1440,17 +1440,17 @@ Fixed crash with fallen trees when a non-rotatable block uses Minecraft's vanill
 
 Dungeons:
 
-* Fixed potential crash if someone set RS's dungeon spawners to not have any nbt.
+-   Fixed potential crash if someone set RS's dungeon spawners to not have any nbt.
 
 (V.2.6.4 Changes) (1.16.5 Minecraft)
 
 Dungeons:
 
-* Improved the RNG for Dungeon processors.
+-   Improved the RNG for Dungeon processors.
 
 Strongholds:
 
-* Moved Eyes of Ender mixin code out of mixin to be compatible with Better Strongholds.
+-   Moved Eyes of Ender mixin code out of mixin to be compatible with Better Strongholds.
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures/files/all)
 
@@ -1460,71 +1460,71 @@ Strongholds:
 
 ----- [0.6.7.2b] -----
 
-* Fixed an error trying to process bee damage immunities, in doing so we actually added the ability for all damage sources including modded ones to be allowed.
+-   Fixed an error trying to process bee damage immunities, in doing so we actually added the ability for all damage sources including modded ones to be allowed.
 
 ----- [0.6.7.1b] -----
 
-* Fixed a crash when attempting to breed bees with no feed return item
+-   Fixed a crash when attempting to breed bees with no feed return item
 
 ----- [0.6.7b] -----
 
-* Added Spider trait, this trait allows bees to pass through spider webs without being slowed.
-* Changed default bees to use various types of flowers
-* Updated chinese translation
-* Added Bottomless Honey Pot, this block allows for voiding of honey with ease.
-* Added 7 more patreon reward textures.
-* Added the ability for each bee to have their apiary output types set individually (e.g. "apiaryOutputTypes" : ["COMB", "COMB", "BLOCK", "COMB"],)
-* Mutations that result or use a bee will now show up in the beepedia breeding tab of that bee
-* Spawn egg item mutations will now show up in the beepedia breeding tab of that bee
+-   Added Spider trait, this trait allows bees to pass through spider webs without being slowed.
+-   Changed default bees to use various types of flowers
+-   Updated chinese translation
+-   Added Bottomless Honey Pot, this block allows for voiding of honey with ease.
+-   Added 7 more patreon reward textures.
+-   Added the ability for each bee to have their apiary output types set individually (e.g. "apiaryOutputTypes" : ["COMB", "COMB", "BLOCK", "COMB"],)
+-   Mutations that result or use a bee will now show up in the beepedia breeding tab of that bee
+-   Spawn egg item mutations will now show up in the beepedia breeding tab of that bee
 
-*
+-
 
 Added flower and hive positions for bees to TOP display
 
-*
+-
 
 Fixed base layer textures not showing up on additions if the bee had custom colors.
 
-* Fixed honey generator not sending power to immersive engineering wires.
-* Fixed the NBT tag persistanceRequired not being respected with bee despawning rules.
-* Fixed blocks without items not showing as bee flowers.
-* Fixed entity mutations not working when natural spawns are turned off.
-* Made optimisations for bees finding their flowers.
-* Fixed comb blocks being able to be centrifuged in non multiblock centrifuges.
-* Fixed comb block centrifuge timing.
-* Fixed custom honey/comb recipes not showing up on multiplayer in some cases.
-* Fixed Bees reappearing out of hive makes honeycomb count decrease to miminum of 2.
-* Fixed bee shadows not changing with bee size
-* Fixed a duplication bug
-* Fixed Ender beecon options page in Fifty Shades of Bees not showing up properly
-* Disabled an experimental item.
+-   Fixed honey generator not sending power to immersive engineering wires.
+-   Fixed the NBT tag persistanceRequired not being respected with bee despawning rules.
+-   Fixed blocks without items not showing as bee flowers.
+-   Fixed entity mutations not working when natural spawns are turned off.
+-   Made optimisations for bees finding their flowers.
+-   Fixed comb blocks being able to be centrifuged in non multiblock centrifuges.
+-   Fixed comb block centrifuge timing.
+-   Fixed custom honey/comb recipes not showing up on multiplayer in some cases.
+-   Fixed Bees reappearing out of hive makes honeycomb count decrease to miminum of 2.
+-   Fixed bee shadows not changing with bee size
+-   Fixed a duplication bug
+-   Fixed Ender beecon options page in Fifty Shades of Bees not showing up properly
+-   Disabled an experimental item.
 
 ----- [0.6.6a] -----
 
-* Added Honey Congealer (honey goes in, blocks come out)
-* added an interface to all honey tanks, you can now input and output honey bottles from the interface
-* doubled the capactity of all honey tanks
-* fixed a bug causing beecons to not save their inventory properly
-* added an extra check to hopefully stop the beepedia from crashing if for SOME reason the comb of a bee suddenly decides to stop existing.
-* added missing angry textures for armoured and crop bees.
-* added kitten bee base texture for use with patreon bees
-* when a bee file breaks it will now crash again, this time with a more detailed crash report stating exactly which bee/honey/trait broke
-* fixed a crash when attempting to toggle a beecon's beam/sound on multiplayer
-* fixed Hive not getting Tier Modifier as a float preventing T2 Hive from having the correct number of combs and bees.
-* fixes for interfaces to hopefully stop them from moving items to other slots in their interfaces when shift clicking an item.
-* baby bees are now immune to despawning
+-   Added Honey Congealer (honey goes in, blocks come out)
+-   added an interface to all honey tanks, you can now input and output honey bottles from the interface
+-   doubled the capactity of all honey tanks
+-   fixed a bug causing beecons to not save their inventory properly
+-   added an extra check to hopefully stop the beepedia from crashing if for SOME reason the comb of a bee suddenly decides to stop existing.
+-   added missing angry textures for armoured and crop bees.
+-   added kitten bee base texture for use with patreon bees
+-   when a bee file breaks it will now crash again, this time with a more detailed crash report stating exactly which bee/honey/trait broke
+-   fixed a crash when attempting to toggle a beecon's beam/sound on multiplayer
+-   fixed Hive not getting Tier Modifier as a float preventing T2 Hive from having the correct number of combs and bees.
+-   fixes for interfaces to hopefully stop them from moving items to other slots in their interfaces when shift clicking an item.
+-   baby bees are now immune to despawning
 
 Alpha Features - Honey pipes exist in code but do not work and are purely cosmetic in this patch.
 
 ----- [0.6.5b] -----
 
-* fixed a crash related to centrifuges when it can't find a valid tank
-* cleaned up patchouli effects page
+-   fixed a crash related to centrifuges when it can't find a valid tank
+-   cleaned up patchouli effects page
 
 ----- [0.6.4b] -----
 
-* fixed bee box not properly supplying bee with data upon release
-* updated patchouli (#188) (note: beecon gif doesn't work but doesn't crash now)
+-   fixed bee box not properly supplying bee with data upon release
+-   updated patchouli (#188) (note: beecon gif doesn't work but doesn't crash now)
 
 [(51 more lines)](https://www.curseforge.com/minecraft/mc-mods/resourceful-bees/files/3281371)
 
@@ -1546,8 +1546,8 @@ fixed level restriction not accepting ==
 
 #### [rhino-1.7.13-build.23.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/3279704)
 
-* Updated fabric version - LatvianModder
-* Made Context.getClassShutter() public - LatvianModder
+-   Updated fabric version - LatvianModder
+-   Made Context.getClassShutter() public - LatvianModder
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/rhino/files/all)
 
@@ -1583,8 +1583,8 @@ Updated Chinese translation.
 
 #### [solcarrot-1.16.3-1.9.10.jar](https://www.curseforge.com/minecraft/mc-mods/spice-of-life-carrot-edition/files/3254169)
 
-* Awesome new logo, reworked by the legendary Vik!
-* Compatibility with First Aid ([thanks to ichttt](https://github.com/Cazsius/Spice-of-Life-Carrot-Edition/pull/105))
+-   Awesome new logo, reworked by the legendary Vik!
+-   Compatibility with First Aid ([thanks to ichttt](https://github.com/Cazsius/Spice-of-Life-Carrot-Edition/pull/105))
 
 ### [Structure Gel API](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api) ([Structure Gel 1.16.4-v1.7.5](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api/files/3171697)⟶[Structure Gel 1.16.5-v1.7.7](https://www.curseforge.com/minecraft/mc-mods/structure-gel-api/files/3268432))
 
@@ -1644,8 +1644,8 @@ All 0.2.x versions of the mod are compatible with each other but back-up importa
 
 Changes:
 
-* - Fixed rare bug that could cause single block tall stone forest spires to generate on coasts
-* - Adds extra handling & logging for structures that have been configured with settings that will crash the game
+-   -   Fixed rare bug that could cause single block tall stone forest spires to generate on coasts
+-   -   Adds extra handling & logging for structures that have been configured with settings that will crash the game
 
 ### [Tetranomicon](https://www.curseforge.com/minecraft/mc-mods/tetranomicon) ([Tetranomicon 1.0](https://www.curseforge.com/minecraft/mc-mods/tetranomicon/files/3199383)⟶[Tetranomicon 1.2](https://www.curseforge.com/minecraft/mc-mods/tetranomicon/files/3258289))
 
@@ -1667,13 +1667,13 @@ Changes:
 
 The Undergarden 0.5.1
 
-* Fixed issue where Frostfields ambience was way too loud
-* Reduced volume of Muncher sounds
-* Made Muncher chew sound have a random pitch
-* The tops of the 3 Deepturf blocks are now randomly rotated, similarly to vanilla grass blocks
-* Made all entity glow textures 50% transparent
-* Fixed issue where beds did not set your spawn when used in the Undergarden
-* Made Nargoyles drop string
+-   Fixed issue where Frostfields ambience was way too loud
+-   Reduced volume of Muncher sounds
+-   Made Muncher chew sound have a random pitch
+-   The tops of the 3 Deepturf blocks are now randomly rotated, similarly to vanilla grass blocks
+-   Made all entity glow textures 50% transparent
+-   Fixed issue where beds did not set your spawn when used in the Undergarden
+-   Made Nargoyles drop string
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/the-undergarden/files/all)
 
@@ -1707,74 +1707,74 @@ The configuration file path is: config/tiab-common.toml
 
 v2.3.7
 
-* Fix phantoms not being blocked by shroomdog27
-* Add kr-kr Translation by myoun
-* Add zh-cn Translation by 1478599553
+-   Fix phantoms not being blocked by shroomdog27
+-   Add kr-kr Translation by myoun
+-   Add zh-cn Translation by 1478599553
 
 v2.3.6
 
-* Update to MC 1.16.5
+-   Update to MC 1.16.5
 
 v2.3.5-alpha
 
-* Update to MC 1.16.4
+-   Update to MC 1.16.4
 
 v2.3.4-alpha
 
-* Update to MC 1.16.3
+-   Update to MC 1.16.3
 
 v2.3.3-alpha
 
-* Update to MC 1.16.2 (Forge 33.0.0)
+-   Update to MC 1.16.2 (Forge 33.0.0)
 
 v2.3.2-alpha
 
-* replace InvisibleLight Blocks from Feral Flare Lantern with actual light emitting Air Blocks. This should improve compatibility with other mods and MC itself.
+-   replace InvisibleLight Blocks from Feral Flare Lantern with actual light emitting Air Blocks. This should improve compatibility with other mods and MC itself.
 
 v2.3.1-alpha
 
-* add aggresiveSpawnChecks configuration option. This will override the spawn checks of other mods if they returned "ALLOW" earlier in the chain.
-* Remove fatal logging of config changes on disk
+-   add aggresiveSpawnChecks configuration option. This will override the spawn checks of other mods if they returned "ALLOW" earlier in the chain.
+-   Remove fatal logging of config changes on disk
 
 v2.3.0-alpha
 
-* Initial Port to MC 1.16
+-   Initial Port to MC 1.16
 
 v2.2.1
 
-* Add missing Translations [thanks to ChloeDawn]
-* Do not log debug statements by default [thanks to ChloeDawn]
+-   Add missing Translations [thanks to ChloeDawn]
+-   Do not log debug statements by default [thanks to ChloeDawn]
 
 v2.2.0
 
-* Last feature release for MC 1.15, sorry no terrain lighter :/
-* Fix dread lamp not working at all
-* Fix dread lamp hit box
+-   Last feature release for MC 1.15, sorry no terrain lighter :/
+-   Fix dread lamp not working at all
+-   Fix dread lamp hit box
 
 v2.1.0-rc1
 
-* Upgrade to MC 1.15.2
+-   Upgrade to MC 1.15.2
 
 v2.1.0-rc0
 
-* Initial Port to 1.15.1
+-   Initial Port to 1.15.1
 
 v2.0.0-rc2
 
-* Fixed feral flare lantern and dreadlamp not dropping when broken.
+-   Fixed feral flare lantern and dreadlamp not dropping when broken.
 
 v2.0.0-rc1
 
-* Fixed tesselating crash when placing a feral flare lantern
+-   Fixed tesselating crash when placing a feral flare lantern
 
 v2.0.0-rc0
 
-* first release candidate, written from scratch
-* Improved Mega Torch from first 1.14 release
-* Added Dread Lamp
-* Added Feral Flare Lantern (LoS feature is currently missing but will come in the next release candidate)
-* Added Frozen Pearl (Not really that useful anymore since the lantern now removes all lights when it gets removed, but just in case)
-* Added entity black/white listing for megatorch and dreadlamp via config
+-   first release candidate, written from scratch
+-   Improved Mega Torch from first 1.14 release
+-   Added Dread Lamp
+-   Added Feral Flare Lantern (LoS feature is currently missing but will come in the next release candidate)
+-   Added Frozen Pearl (Not really that useful anymore since the lantern now removes all lights when it gets removed, but just in case)
+-   Added entity black/white listing for megatorch and dreadlamp via config
 
 ### [Transport](https://www.curseforge.com/minecraft/mc-mods/transport) ([Transport-1.16.5-3.5.1.jar](https://www.curseforge.com/minecraft/mc-mods/transport/files/3247184)⟶[Transport-1.16.5-3.6.0.jar](https://www.curseforge.com/minecraft/mc-mods/transport/files/3271777))
 
@@ -1794,7 +1794,7 @@ Fixed: Steam Locomotive Fluid/Item handlers were inaccessible
 
 #### [trashcans-1.0.9-mc1.16.5](https://www.curseforge.com/minecraft/mc-mods/trash-cans/files/3278995)
 
-* Added Russian translations (thanks to Big Energy!)
+-   Added Russian translations (thanks to Big Energy!)
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/trash-cans/files/all)
 
@@ -1818,10 +1818,10 @@ Added a clien tconfig to toggle between elevation and teleportation when jumping
 
 Overhauled effects to be more in line with default Undergarden tools:
 
-* Threnody of the Deep restricted to Forgotten Metal spears and swords
-* Rotbane restricted to Utherium spears and swords
-* Bloodlust restricted to Utherium axes
-* Frostbite varies in strength depending on tool type
+-   Threnody of the Deep restricted to Forgotten Metal spears and swords
+-   Rotbane restricted to Utherium spears and swords
+-   Bloodlust restricted to Utherium axes
+-   Frostbite varies in strength depending on tool type
 
 All of the above changes are now available on tools made in the workbench, as well as ones directly modified, with no datapack required!
 
@@ -1839,9 +1839,9 @@ Add ItemSetSelector + relevant GSON adapters.
 
 ## Removed
 
-* [Botany Trees](https://www.curseforge.com/minecraft/mc-mods/botany-trees)
-* [RecipeBuffers](https://www.curseforge.com/minecraft/mc-mods/recipebuffers)
-* [Save My Stronghold! (Forge)](https://www.curseforge.com/minecraft/mc-mods/save-my-stronghold)
-* [The Official Enigmatica Resource Pack](https://www.curseforge.com/minecraft/texture-packs/the-official-enigmatica-resource-pack-16x16)
+-   [Botany Trees](https://www.curseforge.com/minecraft/mc-mods/botany-trees)
+-   [RecipeBuffers](https://www.curseforge.com/minecraft/mc-mods/recipebuffers)
+-   [Save My Stronghold! (Forge)](https://www.curseforge.com/minecraft/mc-mods/save-my-stronghold)
+-   [The Official Enigmatica Resource Pack](https://www.curseforge.com/minecraft/texture-packs/the-official-enigmatica-resource-pack-16x16)
 
 Generated using [ChangelogGenerator 2.0.0-pre10](https://github.com/TheRandomLabs/ChangelogGenerator).
