@@ -6,12 +6,14 @@
 -   [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 -   [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
 -   [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
+-   [Dark Paintings](https://www.curseforge.com/minecraft/mc-mods/dark-paintings)
 -   [Decorative Blocks modded compat](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks-modded-compat)
 -   [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
 -   [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
 -   [Nature's Starlight](https://www.curseforge.com/minecraft/mc-mods/natures-starlight)
 -   [Refined Storage Large Patterns](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
 -   [Tactical Fishing](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing)
+-   [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)
 
 ## Updated
 
@@ -81,6 +83,14 @@ Added new config option for loot table modification and tweaked recipes
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/alexs-mobs/files/all)
 
+### [AmbientSounds 3](https://www.curseforge.com/minecraft/mc-mods/ambientsounds) ([AmbientSounds_v3.1.5_mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/ambientsounds/files/3223300)⟶[AmbientSounds_v3.1.6_mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/ambientsounds/files/3285728))
+
+#### [AmbientSounds_v3.1.6_mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/ambientsounds/files/3285728)
+
+Fixed client command not being thread safe
+
+Ported to 1.16.5
+
 ### [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) ([Apotheosis-1.16.3-4.4.1.jar](https://www.curseforge.com/minecraft/mc-mods/apotheosis/files/3095843)⟶[Apotheosis-1.16.4-4.5.1.jar](https://www.curseforge.com/minecraft/mc-mods/apotheosis/files/3283173))
 
 #### [Apotheosis-1.16.4-4.5.1.jar](https://www.curseforge.com/minecraft/mc-mods/apotheosis/files/3283173)
@@ -94,6 +104,14 @@ Lowered the attack damage multiplier of endermen bosses.
 Reduced the default spawn rates of Tome Towers.
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/apotheosis/files/all)
+
+### [Aquaculture 2](https://www.curseforge.com/minecraft/mc-mods/aquaculture) ([Aquaculture-1.16.5-2.1.16.jar](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/3216633)⟶[Aquaculture-1.16.5-2.1.18.jar](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/3287743))
+
+#### [Aquaculture-1.16.5-2.1.18.jar](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/3287743)
+
+-   Properly fix for Neptunium Hoe issue with Ensorcellation
+
+#### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/aquaculture/files/all)
 
 ### [Architectury API (Forge)](https://www.curseforge.com/minecraft/mc-mods/architectury-forge) ([[Forge 1.16.4/5] v1.10.138](https://www.curseforge.com/minecraft/mc-mods/architectury-forge/files/3248258)⟶[[Forge 1.16.4/5] v1.12.145](https://www.curseforge.com/minecraft/mc-mods/architectury-forge/files/3279826))
 
@@ -157,15 +175,21 @@ Updated at 2021-04-17 14:08.
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/architectury-forge/files/all)
 
-### [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau) ([ars_nouveau-1.16.4-1.11.6.jar](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/3225308)⟶[ars_nouveau-1.16.4-1.14.0.jar](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/3282452))
+### [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau) ([ars_nouveau-1.16.4-1.11.6.jar](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/3225308)⟶[ars_nouveau-1.16.4-1.14.1.jar](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/3286983))
 
-#### [ars_nouveau-1.16.4-1.14.0.jar](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/3282452)
+#### [ars_nouveau-1.16.4-1.14.1.jar](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/3286983)
 
-Adds enchanting datapack support and most of the vanilla enchantments to the Enchanting Apparatus
+Heal now damages undead similar to health potions
 
-Reworks explosion - higher mana cost, less damage, larger max size.
+Strength is now capped up to level 3
 
-#### [9 more entries](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/all)
+Adds enchanting recipes for mana boost and mana break
+
+Fixes broken reactive 2 recipe
+
+Fixes spells ignoring chunk claims
+
+#### [10 more entries](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau/files/all)
 
 ### [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts) ([Artifacts-1.16.5-2.8.3.jar](https://www.curseforge.com/minecraft/mc-mods/artifacts/files/3225672)⟶[Artifacts-1.16.5-2.8.4.jar](https://www.curseforge.com/minecraft/mc-mods/artifacts/files/3276108))
 
@@ -314,15 +338,15 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 
 #### [5 more entries](https://www.curseforge.com/minecraft/mc-mods/botany-pots/files/all)
 
-### [Builders Crafts & Additions (Forge)](https://www.curseforge.com/minecraft/mc-mods/buildersaddition) ([buildersaddition-1.16.4-20210214a](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/3203759)⟶[buildersaddition-1.16.5-20210407a](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/3268622))
+### [Builders Crafts & Additions (Forge)](https://www.curseforge.com/minecraft/mc-mods/buildersaddition) ([buildersaddition-1.16.4-20210214a](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/3203759)⟶[buildersaddition-1.16.5-20210421a](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/3284813))
 
-#### [buildersaddition-1.16.5-20210407a](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/3268622)
+#### [buildersaddition-1.16.5-20210421a](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/3284813)
 
-~ Updated Forge.
+~ Fixed some panel-related recipes overriding vanilla recipes.
 
-~ Fixed missing tag.
+-   Removed Breakout from the arcade.
 
-~ Fixed incorrect Quartz Panel recipes.
+#### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/buildersaddition/files/all)
 
 ### [Cat Jammies](https://www.curseforge.com/minecraft/mc-mods/cat-jammies) ([catjammies-1.0.0.jar](https://www.curseforge.com/minecraft/mc-mods/cat-jammies/files/3150242)⟶[catjammies-1.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/cat-jammies/files/3252734))
 
@@ -471,6 +495,14 @@ Enhancements, Fixes
 -   Contraption seats can no longer be mounted while riding something else
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/create/files/all)
+
+### [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore) ([CreativeCore_v2.1.0_mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/3223308)⟶[CreativeCore_v2.1.2_mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/3286587))
+
+#### [CreativeCore_v2.1.2_mc1.16.5.jar](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/3286587)
+
+Reverted client command registry changes
+
+#### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/creativecore/files/all)
 
 ### [Curios API (Forge)](https://www.curseforge.com/minecraft/mc-mods/curios) ([curios-forge-1.16.5-4.0.5.0.jar](https://www.curseforge.com/minecraft/mc-mods/curios/files/3231111)⟶[curios-forge-1.16.5-4.0.5.1.jar](https://www.curseforge.com/minecraft/mc-mods/curios/files/3275653))
 
@@ -704,12 +736,11 @@ MC 1.16.5 | Version 1.2.4
 -   Updated Chinese Lang file (credit: [Aemande123](https://github.com/Aemande123))
 -   Updated the Enderium textures to match closer to Thermal Enderium new colour palette (making Shiny happy)
 
-### [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) ([EnchantmentDescriptions-1.16.5-7.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3198902)⟶[EnchantmentDescriptions-1.16.5-7.0.7.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3276267))
+### [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions) ([EnchantmentDescriptions-1.16.5-7.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3198902)⟶[EnchantmentDescriptions-1.16.5-7.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3285665))
 
-#### [EnchantmentDescriptions-1.16.5-7.0.7.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3276267)
+#### [EnchantmentDescriptions-1.16.5-7.0.8.jar](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/3285665)
 
--   Added support for different enchantment description formats. #52 - Tyler Hancock
--   Cache translation text components. Minor memory improvement when looking at item tooltips. - Tyler Hancock
+-   Fix Golden Helmet, Golden Leggings, and Turtle Shell Helmet being hidden in JEI. - Tyler Hancock
 
 Like the mod? Consider following me on [Twitter](https://twitter.com/darkhaxdev) and joining the [Discord](https://discord.darkhax.net/)
 
@@ -721,11 +752,15 @@ Huge thanks to my supporters on [Patreon](https://www.patreon.com/Darkhax?MCChan
 -   Pongo Sapiens
 -   Darkosto
 
-#### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/all)
+#### [4 more entries](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions/files/all)
 
-### [Engineer's Decor](https://www.curseforge.com/minecraft/mc-mods/engineers-decor) ([engineersdecor-1.16.4-1.1.10.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3244958)⟶[engineersdecor-1.16.4-1.1.13-b1.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3282061))
+### [Engineer's Decor](https://www.curseforge.com/minecraft/mc-mods/engineers-decor) ([engineersdecor-1.16.4-1.1.10.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3244958)⟶[engineersdecor-1.16.4-1.1.13-b2.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3287340))
 
-#### [engineersdecor-1.16.4-1.1.13-b1.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3282061)
+#### [engineersdecor-1.16.4-1.1.13-b2.jar](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3287340)
+
+-   v1.1.13-b2 [F] Fixed explosion resistance values for standard blocks.
+
+[F] Sandstone Ornated Clinker loot table fixed (ty czbuendel, Valen).
 
 -   v1.1.13-b1 [F] Hotfix Electrical Furnace inventory import from Storage Drawers (issue #174, ty anto-fire/IchigoGames).
 -   v1.1.12 [F] Chisels&Bits compatibility addressed (issue #172, ty rodg88).
@@ -821,13 +856,9 @@ stored power is below 20%.
 
 [A] Added Solar Panel power balancing.
 
-[M] GUI Button tooltip delay reduced to 800ms.
+[(45 more lines)](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3287340)
 
-[M] Hopper and Placer: Added "Redstone ignored" mode, changed icons from signal-like to Redstone-Torch-like.
-
-[(43 more lines)](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/3282061)
-
-#### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/all)
+#### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/engineers-decor/files/all)
 
 ### [Extreme sound muffler (Forge)](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler) ([Extreme Sound Muffler 3.8 - Forge 1.16.5](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler/files/3219144)⟶[Extreme Sound Muffler 3.9 - Forge 1.16.5](https://www.curseforge.com/minecraft/mc-mods/extreme-sound-muffler/files/3256613))
 
@@ -955,6 +986,147 @@ No actual changes compared to 2.0.3, more specifically only Fabric-specific chan
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/ferritecore/files/all)
 
+### [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks) ([Flux-Networks-1.16.5-6.1.6](https://www.curseforge.com/minecraft/mc-mods/flux-networks/files/3174798)⟶[Flux-Networks-1.16.5-6.1.7](https://www.curseforge.com/minecraft/mc-mods/flux-networks/files/3285556))
+
+#### [Flux-Networks-1.16.5-6.1.7](https://www.curseforge.com/minecraft/mc-mods/flux-networks/files/3285556)
+
+Changelog 1.16.5-6.1.7.12 (2021-04-22)
+
+(Install Modern UI for better font looking)
+
+-   Fix network packet security leaks
+-   Fix super admin can't transfer ownership to self
+
+Changelog 1.16.5-6.1.6.11 (2021-01-20)
+
+-   Make flux plugs and points waterlogged
+-   Fix server config not synced to client
+-   Fix possible crash with some blocks
+
+Changelog 1.16.4-6.1.5.10 (2020-11-14)
+
+-   Add feedback text animation
+-   Move super admin text from action bar into GUI
+-   Disable players to be charged by multiple networks
+-   Fix GUI not closed when block removed
+-   Fix possible strong reference bug
+-   Make devices able to disconnect in any case
+
+Changelog 1.16.4-6.1.3.8 (2020-11-10)
+
+-   Fix chunk loading flag not updated when re-entering world
+
+Changelog 1.16.4-6.1.2.7 (2020-11-10)
+
+-   Update localization
+-   Improve GUI
+-   Remove debug logs
+
+Changelog 1.16.4-6.1.1.6 (2020-11-08)
+
+-   Fix various GUI bugs
+-   Optimize GUI code
+
+Changelog 1.16.4-6.1.0.5 (2020-11-06)
+
+-   Update to 1.16.4 (1.16.3 works as well)
+-   Add energy capacity tooltip for storages
+-   Improve text display
+-   Optimize GUI code
+-   Fix possible crash
+-   Fix diffuse lighting in GUI
+-   Fix flux storage rendering
+-   Fix network buffer limiter
+
+Changelog 1.16.3-6.0.1.4 (2020-10-26)
+
+-   Improve controller transfer logic
+-   Fix crash caused by bad API implementations of other mods
+-   Fix client only method crash
+
+Changelog 1.16.3-6.0.0.3 (2020-10-25)
+
+-   Fix some packets without security check
+-   Fix chunk loading system
+-   Fix blacklist system
+-   Fix many other bugs
+-   Add support for Curios API
+-   Enhance flux storage capacity limit to Long.MAX_VALUE
+-   Optimize data synchronization and client cache
+-   Optimize network transfer
+-   More code standardizing and optimization
+
+### [Gauges and Switches](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches) ([rsgauges-1.16.4-1.2.9-b1.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches/files/3194049)⟶[rsgauges-1.16.4-1.2.9.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches/files/3287295))
+
+#### [rsgauges-1.16.4-1.2.9.jar](https://www.curseforge.com/minecraft/mc-mods/redstone-gauges-and-switches/files/3287295)
+
+-   v1.2.9 [F] Lang file update zh_cn (PR#41, ty kappa-maintainer).
+
+[F] Fixed Power Plant documentation (issue#42, ty Artin).
+
+-   v1.2.9-b1 [F] Fixed Stained Redstone Sensitive Glass recipe (issue #40).
+-   v1.2.8 [R] Release build.
+
+[U] MC1.16.5 enabled.
+
+[M] Block materials unified.
+
+-   v1.2.7 [R] Release build v1.2.7.
+
+[F] Opt-out config pack level based.
+
+-   v1.2.7-b2 [F] Config load/apply condition fixed.
+-   v1.2.7-b1 [A] Analog Switch Linking signals added.
+
+[A] Gauges and Indicators can be wirelessly connected to switches.
+
+[A] Comparator Switch and Link Sender support analog data transmissions.
+
+[A] Elevator Button up/down arrows added depending on where the wall is
+
+clicked when placing.
+
+-   v1.2.6 [R] Release build 1.2.6.
+-   v1.2.6-b2 [A] Gauges can be explicitly set to Comparator-Input mode (click with a Redstone Torch).
+
+[A] Auto switch buttons only display the current configurations on first click.
+
+-   v1.2.6-b1 [U] Ported to 1.16.4.
+-   v1.2.5 [R] Release build 1.2.5.
+-   v1.2.5-b1 [A] Linked switches are marked with particles when holding the Switch Link Pearl.
+
+[U] Partial internal code refurbishments.
+
+-   v1.2.4 [U] Updated to Forge 1.16.3-34.1.0.
+
+[A] Indicators and Gauges are invertible (input from Vallen while Forgecraft'ing).
+
+[F] Ambient occlusion and GUI lightning fixes.
+
+-   v1.2.4-b8 [U] Ported to MC1.16.3.
+-   v1.2.4-b7 [U] Updated Forge to 33.0.37 (breaking change).
+-   v1.2.4-b6 [U] Updated Forge, adapted new mappings to 20200723-1.16.1.
+
+[F] Fixed Contact Switch detection range.
+
+-   v1.2.4-b5 [F] Mapping adaption to Forge 1.16.2-33.0.20.
+-   v1.2.4-b4 [U] Ported to 1.16.2.
+-   v1.2.4-b2 [F] Door sensor look detection angle fixed.
+
+[A] JEI integration added.
+
+[F] Fixed startup issue by updating to Forge 32.0.97 (issue #28, ty wieselkatze).
+
+-   v1.2.4-b1 [M] Coloring of Sensitive Glass ported.
+
+[F] Indicator power issue fixed.
+
+-   v1.2.4-a2 [A] Sensitive glass ported, overlay frame style ported.
+
+[M] Modified global switch power placement default setting to strong.
+
+-   v1.2.4-a1 [A] Initial port.
+
 ### [GeckoLib](https://www.curseforge.com/minecraft/mc-mods/geckolib) ([geckolib-forge-1.16.5-3.0.15.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/3224454)⟶[geckolib-forge-1.16.5-3.0.31.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/3282081))
 
 #### [geckolib-forge-1.16.5-3.0.31.jar](https://www.curseforge.com/minecraft/mc-mods/geckolib/files/3282081)
@@ -1051,22 +1223,21 @@ Kotlin for Forge 1.11.1
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/all)
 
-### [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) ([kubejs-1605.3.6-build.177-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3247934)⟶[kubejs-1605.3.7-build.185-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3283592))
+### [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) ([kubejs-1605.3.6-build.177-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3247934)⟶[kubejs-1605.3.7-build.186-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3286650))
 
-#### [kubejs-1605.3.7-build.185-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3283592)
+#### [kubejs-1605.3.7-build.186-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/3286650)
 
--   Added support for kubejs.classfilter.txt. Put that in resources with +package.name or -package.name to allow or deny packages in mod - LatvianModder
--   Added more stuff to class list - LatvianModder
+-   Added Detector blocks for puzzles, KubeJS tab, improved resource generation a bit - LatvianModder
 
-#### [7 more entries](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/all)
+#### [8 more entries](https://www.curseforge.com/minecraft/mc-mods/kubejs/files/all)
 
-### [LibX](https://www.curseforge.com/minecraft/mc-mods/libx) ([LibX-1.16.3-1.0.25.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3251911)⟶[LibX-1.16.3-1.0.42.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3283125))
+### [LibX](https://www.curseforge.com/minecraft/mc-mods/libx) ([LibX-1.16.3-1.0.25.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3251911)⟶[LibX-1.16.3-1.0.47.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3286728))
 
-#### [LibX-1.16.3-1.0.42.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3283125)
+#### [LibX-1.16.3-1.0.47.jar](https://www.curseforge.com/minecraft/mc-mods/libx/files/3286728)
 
--   Fix a null pointer exception for blocks that do not need loot tables - noeppi_noeppi
+-   automatically generate correct models for leaves in BlockStateProviderBase - noeppi_noeppi
 
-#### [15 more entries](https://www.curseforge.com/minecraft/mc-mods/libx/files/all)
+#### [20 more entries](https://www.curseforge.com/minecraft/mc-mods/libx/files/all)
 
 ### [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr) ([lootr-1.16.4-0.0.4.16.jar](https://www.curseforge.com/minecraft/mc-mods/lootr/files/3224494)⟶[lootr-1.16.4-0.0.5.17.jar](https://www.curseforge.com/minecraft/mc-mods/lootr/files/3272069))
 
@@ -1359,19 +1530,17 @@ Alpha Features - Honey pipes exist in code but do not work and are purely cosmet
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/resourceful-bees/files/all)
 
-### [Restriction: Re-Restricted](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted) ([restriction-1.16.4-0.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3156593)⟶[restriction-1.16.5-0.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3271429))
+### [Restriction: Re-Restricted](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted) ([restriction-1.16.4-0.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3156593)⟶[restriction-1.16.5-0.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3287364))
 
-#### [restriction-1.16.5-0.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3271429)
+#### [restriction-1.16.5-0.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3287364)
 
-Refactored the entire mod to be simpler and more performant.
+fixed various client and serverside issues.
 
-Some restriction types are no longer possible.
+tools tips are now filtered so duplicate restrictions do not appear
 
-Some others are now possible.
+fixed level restriction not accepting ==
 
-Restrictions are now defined in datapacks. The format has also been simplified.
-
-See the wiki for info.
+#### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/all)
 
 ### [Rhino](https://www.curseforge.com/minecraft/mc-mods/rhino) ([rhino-1.7.13-build.14.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/3187177)⟶[rhino-1.7.13-build.23.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/3279704))
 
@@ -1464,6 +1633,19 @@ Changed cog block, copper lantern and flax textures
 Added an LOD system for many tile entities so they will get progressively less detailed the further the player is away from them. Sign posts and notice board won't render their text at all when looked from the back
 
 Fixed many small bugs
+
+### [TerraForged](https://www.curseforge.com/minecraft/mc-mods/terraforged) ([0.2.9](https://www.curseforge.com/minecraft/mc-mods/terraforged/files/3224185)⟶[0.2.10](https://www.curseforge.com/minecraft/mc-mods/terraforged/files/3285909))
+
+#### [0.2.10](https://www.curseforge.com/minecraft/mc-mods/terraforged/files/3285909)
+
+Reminder:
+
+All 0.2.x versions of the mod are compatible with each other but back-up important worlds just in case :]
+
+Changes:
+
+-   -   Fixed rare bug that could cause single block tall stone forest spires to generate on coasts
+-   -   Adds extra handling & logging for structures that have been configured with settings that will crash the game
 
 ### [Tetranomicon](https://www.curseforge.com/minecraft/mc-mods/tetranomicon) ([Tetranomicon 1.0](https://www.curseforge.com/minecraft/mc-mods/tetranomicon/files/3199383)⟶[Tetranomicon 1.2](https://www.curseforge.com/minecraft/mc-mods/tetranomicon/files/3258289))
 
@@ -1658,6 +1840,7 @@ Add ItemSetSelector + relevant GSON adapters.
 ## Removed
 
 -   [Botany Trees](https://www.curseforge.com/minecraft/mc-mods/botany-trees)
+-   [RecipeBuffers](https://www.curseforge.com/minecraft/mc-mods/recipebuffers)
 -   [Save My Stronghold! (Forge)](https://www.curseforge.com/minecraft/mc-mods/save-my-stronghold)
 -   [The Official Enigmatica Resource Pack](https://www.curseforge.com/minecraft/texture-packs/the-official-enigmatica-resource-pack-16x16)
 

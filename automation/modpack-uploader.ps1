@@ -57,7 +57,7 @@ function Test-ForDependencies {
 
 function New-ClientFiles {
     if ($ENABLE_CURSE_CLIENT_MODULE) {
-        if ((-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -or 
+        if ((-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -and 
                 -not (Test-Path "$InstanceRoot/TwitchExportBuilder")) -or 
             $ENABLE_ALWAYS_UPDATE_JARS) {
 
@@ -121,15 +121,15 @@ function New-Changelog {
     if ($ENABLE_CHANGELOG_GENERATOR_MODULE `
             -and $null -ne $MODPACK_VERSION `
             -and $null -ne $LAST_MODPACK_VERSION `
-            -and (Test-Path "$LAST_MODPACK_ZIP_NAME.zip") `
-            -and (Test-Path "$CLIENT_ZIP_NAME.zip")
+            -and (Test-Path "$InstanceRoot/$LAST_MODPACK_ZIP_NAME.zip") `
+            -and (Test-Path "$InstanceRoot/$CLIENT_ZIP_NAME.zip")
     ) {
         if (-not (Test-Path $ChangelogGeneratorDL) -or $ENABLE_ALWAYS_UPDATE_JARS) {
             Remove-Item $ChangelogGeneratorDL -Recurse -Force -ErrorAction SilentlyContinue
             Get-GitHubRelease -repo "TheRandomLabs/ChangelogGenerator" -file $ChangelogGeneratorDL
         }
         
-        Remove-Item $changelogOriginalName -ErrorAction SilentlyContinue
+        Remove-Item "changelog.md" -ErrorAction SilentlyContinue
 
         Write-Host 
         Write-Host "Generating changelog..." -ForegroundColor Green
@@ -139,8 +139,8 @@ function New-Changelog {
             --markdown `
             --lines=50 `
             --entries=1 `
-            --new="$CLIENT_ZIP_NAME.zip" `
-            --old="$LAST_MODPACK_ZIP_NAME.zip"
+            --new="$InstanceRoot\$CLIENT_ZIP_NAME.zip" `
+            --old="$InstanceRoot\$LAST_MODPACK_ZIP_NAME.zip"
 
         Remove-Item $ChangelogPath -ErrorAction SilentlyContinue
         Move-Item -Path "changelog.md" -Destination $ChangelogPath
@@ -210,7 +210,7 @@ function New-ServerFiles {
         [int]$ClientFileId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
-        Remove-Item "$SERVER_ZIP_NAME.zip", "$SERVER_ZIP_NAME" -Force -ErrorAction SilentlyContinue
+        Remove-Item "$SERVER_ZIP_NAME.zip", "$InstanceRoot\$SERVER_ZIP_NAME.zip" -Force -ErrorAction SilentlyContinue
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
@@ -310,12 +310,12 @@ function Update-Modlist {
     }
 }
 
-Test-ForDependencies
-New-ClientFiles
-Push-ClientFiles
-if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
-    New-ServerFiles
-}
-New-GitHubRelease
+# Test-ForDependencies
+# New-ClientFiles
+# Push-ClientFiles
+# if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
+#     New-ServerFiles
+# }
+# New-GitHubRelease
 New-Changelog
-Update-Modlist
+# Update-Modlist

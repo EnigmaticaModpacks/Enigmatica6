@@ -7,6 +7,18 @@
 3. Run the `start-server` script and wait for it to complete. When the installation is complete, you should see a prompt to accept the EULA.
     - _Note: `.bat` files are for Windows, `.sh` are for Mac / Linux._
 4. Once you accept the EULA, the server will start running. Startup will typically take 3-5 minutes.
+5. When the server has started fully, close the window.
+    - This works around a known issue where you cannot type in the console the first time you start the server.
+
+## Server.properties
+
+We recommend the following settings in the `server.properties` file:
+
+```properties
+allow-flight=true
+max-tick-time=300000
+level-type=terraforged
+```
 
 # Updating
 

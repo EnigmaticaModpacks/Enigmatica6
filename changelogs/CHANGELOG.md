@@ -8,12 +8,14 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 -   [Architect's Palette](https://www.curseforge.com/minecraft/mc-mods/architects-palette)
 -   [Cucumber Library](https://www.curseforge.com/minecraft/mc-mods/cucumber)
+-   [Dark Paintings](https://www.curseforge.com/minecraft/mc-mods/dark-paintings)
 -   [Decorative Blocks modded compat](https://www.curseforge.com/minecraft/mc-mods/decorative-blocks-modded-compat)
 -   [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
 -   [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
 -   [Nature's Starlight](https://www.curseforge.com/minecraft/mc-mods/natures-starlight)
 -   [Refined Storage Large Patterns](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
 -   [Tactical Fishing](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing)
+-   [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)
 
 **Improvements/Changes**
 
@@ -24,6 +26,7 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Add Elemental Rod processing to Mekanism Enrichment Chamber [\#1904](https://github.com/NillerMedDild/Enigmatica6/pull/1904) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Add quests for mod addon items \[Suggest addons in comments please :D\] [\#1978](https://github.com/NillerMedDild/Enigmatica6/issues/1978)
 -   Add Refined Glowstone to Thermal Series Induction Smelter [\#1903](https://github.com/NillerMedDild/Enigmatica6/pull/1903) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add TEG values to Dry Ice [\#1285](https://github.com/NillerMedDild/Enigmatica6/issues/1285)
 -   Adds Manaseer Monocles to Goggles slot in Curios [\#1858](https://github.com/NillerMedDild/Enigmatica6/pull/1858) ([OneLemonyBoi](https://github.com/OneLemonyBoi))
 -   Alex's Mobs: Lowered Kangaroo spawn weight
 -   Aquamarine From IF laser drill? [\#1932](https://github.com/NillerMedDild/Enigmatica6/issues/1932)
@@ -40,6 +43,7 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Create Fluid Tanks should hold more [\#1872](https://github.com/NillerMedDild/Enigmatica6/issues/1872)
 -   Create processing recipes for Ancient debris [\#1842](https://github.com/NillerMedDild/Enigmatica6/issues/1842)
 -   Enable Supplementaries Jars [\#2013](https://github.com/NillerMedDild/Enigmatica6/issues/2013)
+-   Give concrete blocks the valid apiary tag [\#1964](https://github.com/NillerMedDild/Enigmatica6/issues/1964)
 -   Give Macaw's windows the apiary tag [\#1902](https://github.com/NillerMedDild/Enigmatica6/issues/1902)
 -   Grow/expand Oh The Biomes You'll Go ground coverings with bonemeal [\#1960](https://github.com/NillerMedDild/Enigmatica6/issues/1960)
 -   Host of minor integrations additions [\#1971](https://github.com/NillerMedDild/Enigmatica6/pull/1971) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -50,7 +54,9 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Iron Jetpacks Update [\#1930](https://github.com/NillerMedDild/Enigmatica6/pull/1930) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Make Botany Pots and Terracotta washable and Botany Pots re-dyeable and other improvements [\#1907](https://github.com/NillerMedDild/Enigmatica6/pull/1907) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Make Tetra-made hoe tillable rich soil [\#1933](https://github.com/NillerMedDild/Enigmatica6/issues/1933)
+-   Make Tetra more useful [\#1692](https://github.com/NillerMedDild/Enigmatica6/issues/1692)
 -   Manaseer Monocle should be able to be placed in the goggles bauble slot [\#1856](https://github.com/NillerMedDild/Enigmatica6/issues/1856)
+-   Mekanism HDPE production buff [\#2030](https://github.com/NillerMedDild/Enigmatica6/issues/2030)
 -   More IE Excavator Mineral Nodes [\#2029](https://github.com/NillerMedDild/Enigmatica6/pull/2029) ([MuteTiefling](https://github.com/MuteTiefling))
 -   More Quests! [\#1989](https://github.com/NillerMedDild/Enigmatica6/pull/1989) ([MuteTiefling](https://github.com/MuteTiefling))
 -   More Wiki Entries [\#1898](https://github.com/NillerMedDild/Enigmatica6/issues/1898)
@@ -65,11 +71,12 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   RFTools Control Spawner Expansion [\#1945](https://github.com/NillerMedDild/Enigmatica6/pull/1945) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Servers: Our server file structure has changed, in order to make installing and updating easier.
 -   Servers: The automated server setup has also changed, make sure to check [the README](https://github.com/NillerMedDild/Enigmatica6#server-automation) for instructions.
--   Servers: The server files contain a `server-guide.txt` that explains what to do, but it's pretty much just download, unzip and double-click the appropriate start-server script`
+-   Servers: The server files contain a `server-guide.txt` that explains what to do, but it's pretty much just download, unzip and double-click the appropriate start-server script
 -   Tetra: Buffed all materials with 20% more durability and magic capacity.
 -   Tetra Buffs & Scriptification [\#1996](https://github.com/NillerMedDild/Enigmatica6/pull/1996) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Tree Enhancements [\#1910](https://github.com/NillerMedDild/Enigmatica6/pull/1910) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Update Pedestal Quests [\#1937](https://github.com/NillerMedDild/Enigmatica6/pull/1937) ([TemperedFool](https://github.com/TemperedFool))
+-   Wandering Trader Armor Trade Tweaks: Nerfs Levels and Adds Variety [\#2041](https://github.com/NillerMedDild/Enigmatica6/pull/2041) ([MuteTiefling](https://github.com/MuteTiefling))
 -   XNet: Advanced Connectors: 500000 FE up from 100000 FE
 -   XNet: Advanced Connectors can now move 32000 mb per operation, up from 5000
 -   XNet: Normal Connectors: 25000 FE up from 5000 FE
@@ -104,6 +111,10 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   \[0.4.8\] Salvaging Tetra metal scrap gives duplicate metal types [\#2027](https://github.com/NillerMedDild/Enigmatica6/issues/2027)
 -   \[0.4.8\] T1 Beehive fewer combs at honey level 5 [\#1950](https://github.com/NillerMedDild/Enigmatica6/issues/1950)
 -   \[0.4.8\] Unable to make wheat flour from wheat in Mekanism crusher [\#1848](https://github.com/NillerMedDild/Enigmatica6/issues/1848)
+-   \[0.4.8\] Wheat Flour from putting Wheat in Pneumaticcraft pressure chamber [\#2051](https://github.com/NillerMedDild/Enigmatica6/issues/2051)
+-   \[0.4.8\] Missing energy storage tag for RFTools powercell [\#2046](https://github.com/NillerMedDild/Enigmatica6/issues/2046)
+-   \[0.4.8\] Possible to get the disabled Fillet Knives from the bounty board [\#2040](https://github.com/NillerMedDild/Enigmatica6/issues/2040)
+-   \[0.4.9\] Automation Specific Start Server Scripts [\#2033](https://github.com/NillerMedDild/Enigmatica6/issues/2033)
 -   \[Dev\] Metal Press Gear from Immersive Engineering [\#1941](https://github.com/NillerMedDild/Enigmatica6/issues/1941)
 -   \[E6 0.4.8\] Sophisticated Backpacks - Item void bug [\#1867](https://github.com/NillerMedDild/Enigmatica6/issues/1867)
 -   Better End Compat - add Ingot \> Nugget recipe. Remove excess Jaopca blocks for Better End Metals [\#2023](https://github.com/NillerMedDild/Enigmatica6/pull/2023) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -123,6 +134,7 @@ _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 -   Botany Trees (The mod doesn't do anything due to our recipe changes)
 -   Save My Stronghold (Doesn't work with Repurposed Structures)
+-   RecipeBuffers (Merged into Forge more or less)
 
 ### Enigmatica 6 v0.4.8
 
