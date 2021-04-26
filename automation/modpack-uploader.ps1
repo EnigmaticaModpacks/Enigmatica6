@@ -210,7 +210,7 @@ function New-ServerFiles {
         [int]$ClientFileId
     )
     if ($ENABLE_SERVER_FILE_MODULE) {
-        Remove-Item "$SERVER_ZIP_NAME.zip", "$SERVER_ZIP_NAME" -Force -ErrorAction SilentlyContinue
+        Remove-Item "$SERVER_ZIP_NAME.zip", "$InstanceRoot\$SERVER_ZIP_NAME.zip" -Force -ErrorAction SilentlyContinue
         Write-Host 
         Write-Host "Creating server files..." -ForegroundColor Cyan
         Write-Host 
