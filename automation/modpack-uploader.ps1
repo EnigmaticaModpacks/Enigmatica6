@@ -275,7 +275,7 @@ function New-GitHubRelease {
             tag_name         = $MODPACK_VERSION;
             target_commitish = 'master';
             name             = $MODPACK_VERSION;
-            body             = $CLIENT_CHANGELOG;
+            body             = '';
             draft            = $false;
             prerelease       = $false;
         } | ConvertTo-Json;
