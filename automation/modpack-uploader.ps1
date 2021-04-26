@@ -57,7 +57,7 @@ function Test-ForDependencies {
 
 function New-ClientFiles {
     if ($ENABLE_CURSE_CLIENT_MODULE) {
-        if ((-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -or 
+        if ((-not (Test-Path "$InstanceRoot/TwitchExportBuilder.exe") -and 
                 -not (Test-Path "$InstanceRoot/TwitchExportBuilder")) -or 
             $ENABLE_ALWAYS_UPDATE_JARS) {
 
