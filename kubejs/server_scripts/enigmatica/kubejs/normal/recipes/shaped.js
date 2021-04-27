@@ -31,7 +31,8 @@ events.listen('recipes', (event) => {
                 B: '#forge:gems/dimensional',
                 C: 'occultism:wormhole_frame',
                 D: '#forge:chests'
-            }
+            },
+            id: 'compactmachines:tunnel/item'
         },
         {
             output: Item.of('compactmachines:tunnel', { definition: { id: 'compactmachines:redstone_in' } }),
@@ -41,7 +42,8 @@ events.listen('recipes', (event) => {
                 B: '#forge:gems/dimensional',
                 C: 'occultism:wormhole_frame',
                 D: 'minecraft:redstone_torch'
-            }
+            },
+            id: 'compactmachines:tunnel/redstone'
         },
         {
             output: 'minecraft:furnace',

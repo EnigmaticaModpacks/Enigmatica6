@@ -38,7 +38,8 @@ events.listen('recipes', (event) => {
             },
             components: {
                 W: {
-                    Name: 'compactmachines:wall'
+                    type: 'compactcrafting:block',
+                    block: 'compactmachines:wall'
                 }
             },
             outputs: [
@@ -85,10 +86,12 @@ events.listen('recipes', (event) => {
             },
             components: {
                 W: {
-                    Name: 'compactmachines:wall'
+                    type: 'compactcrafting:block',
+                    block: 'compactmachines:wall'
                 },
                 R: {
-                    Name: 'minecraft:redstone_block'
+                    type: 'compactcrafting:block',
+                    block: 'minecraft:redstone_block'
                 }
             },
             outputs: [
@@ -135,10 +138,12 @@ events.listen('recipes', (event) => {
             },
             components: {
                 W: {
-                    Name: 'compactmachines:wall'
+                    type: 'compactcrafting:block',
+                    block: 'compactmachines:wall'
                 },
                 D: {
-                    Name: 'minecraft:diamond_block'
+                    type: 'compactcrafting:block',
+                    block: 'minecraft:diamond_block'
                 }
             },
             outputs: [
@@ -195,10 +200,12 @@ events.listen('recipes', (event) => {
             },
             components: {
                 W: {
-                    Name: 'compactmachines:wall'
+                    type: 'compactcrafting:block',
+                    block: 'compactmachines:wall'
                 },
                 R: {
-                    Name: 'minecraft:redstone_block'
+                    type: 'compactcrafting:block',
+                    block: 'minecraft:redstone_block'
                 }
             },
             outputs: [
@@ -255,10 +262,12 @@ events.listen('recipes', (event) => {
             },
             components: {
                 W: {
-                    Name: 'compactmachines:wall'
+                    type: 'compactcrafting:block',
+                    block: 'compactmachines:wall'
                 },
                 D: {
-                    Name: 'minecraft:diamond_block'
+                    type: 'compactcrafting:block',
+                    block: 'minecraft:diamond_block'
                 }
             },
             outputs: [
@@ -315,10 +324,12 @@ events.listen('recipes', (event) => {
             },
             components: {
                 W: {
-                    Name: 'compactmachines:wall'
+                    type: 'compactcrafting:block',
+                    block: 'compactmachines:wall'
                 },
                 E: {
-                    Name: 'emendatusenigmatica:enderium_block'
+                    type: 'compactcrafting:block',
+                    block: 'emendatusenigmatica:enderium_block'
                 }
             },
             outputs: [
