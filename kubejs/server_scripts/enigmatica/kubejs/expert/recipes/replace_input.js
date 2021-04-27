@@ -12,7 +12,7 @@ events.listen('recipes', (event) => {
         {
             filter: { id: 'thermal:machine_pyrolyzer' },
             toReplace: 'minecraft:blaze_rod',
-            replaceWith: 'forge:gems/coal_coke'
+            replaceWith: '#forge:gems/coal_coke'
         }
     ];
 
