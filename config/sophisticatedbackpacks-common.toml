@@ -2,7 +2,7 @@
 #Common Settings
 [common]
 	#Disable / enable any items here (disables their recipes)
-	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "stonecutter_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "upgrade_base:true", "refill_upgrade:true", "advanced_compacting_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true"]
+	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "stonecutter_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "upgrade_base:true", "refill_upgrade:true", "advanced_compacting_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "advanced_tool_swapper_upgrade:true", "tool_swapper_upgrade:true"]
 	#Turns on/off loot added to various vanilla chest loot tables
 	chestLootEnabled = true
 	#Shift clicking will first move the stack into open tab and only then to player's inventory or to backpack (based on where shift clicking from backpack or from player's inventory).
@@ -260,4 +260,10 @@
 		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2", "eidolon:music_disc_parousia", "simplefarming:music_disc_nourish"]
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
 		playJukebox = false
+
+	#Tool Swapper Upgrade Settings
+	[common.toolSwapperUpgrade]
+		#Number of tool filter slots displayed in a row
+		#Range: 1 ~ 6
+		slotsInRow = 4
 
