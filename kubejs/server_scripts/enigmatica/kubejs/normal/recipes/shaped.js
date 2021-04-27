@@ -56,7 +56,7 @@ events.listen('recipes', (event) => {
             output: Item.of('minecraft:stick', 16),
             pattern: ['A', 'A'],
             key: {
-                L: '#minecraft:logs'
+                A: '#minecraft:logs'
             }
         }
     ];
