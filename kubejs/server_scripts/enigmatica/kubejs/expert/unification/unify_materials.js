@@ -76,12 +76,12 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(Item.of(rod, 2), [Item.of(input, 2), mold])
+            .press(Item.of(rod, 2), [Ingredient.of(input, 2), mold])
             .energy(2400)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.recipes.immersiveengineering
-            .metal_press(Item.of(rod, 2), Item.of(input, 2), mold)
+            .metal_press(Item.of(rod, 2), Ingredient.of(input, 2), mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.shapeless(output, [plateTag, hammer, plateTag]).id(`kubejs:shapeless_crafting_${material}_rod`);
