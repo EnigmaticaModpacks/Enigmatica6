@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    const recipes = [{}];
+    const recipes = [];
 
     recipes.forEach((recipe) => {
         if (recipe.heated) {
