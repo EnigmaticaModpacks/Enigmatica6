@@ -1,6 +1,6 @@
 //priority: 900
 events.listen('recipes', (event) => {
-    if (!global.isExpertMode) {
+    if (!expertMode) {
         return;
     }
 

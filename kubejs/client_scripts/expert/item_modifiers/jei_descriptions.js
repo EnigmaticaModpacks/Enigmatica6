@@ -1,5 +1,5 @@
 events.listen('jei.information', (event) => {
-    if (!global.isExpertMode) {
+    if (!expertMode) {
         return;
     }
     const recipes = [

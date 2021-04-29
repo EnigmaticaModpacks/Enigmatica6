@@ -17,10 +17,8 @@ events.listen('server.datapack.high_priority', (event) => {
             `Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`
         );
     }
-    global.mode = config.mode;
-    global.isNormalMode = global.mode == 'normal';
-    global.isExpertMode = global.mode == 'expert';
-    console.log(`Current packmode is: ${global.mode}`);
+    global.packmode = config.mode;
+    console.log(`Current packmode is: ${global.packmode}`);
 
     if (event.server) {
         if (event.server.players) {

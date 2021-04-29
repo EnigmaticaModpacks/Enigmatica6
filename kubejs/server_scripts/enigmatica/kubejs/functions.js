@@ -52,9 +52,11 @@ const unificationBlacklist = [
 ];
 
 setMode = (player) => {
-    if (global.mode == 'expert') {
+    if (global.packmode == 'expert') {
+        console.log('Completing Expert Gate Quest for ' + player.toString());
         player.data.ftbquests.complete('0000000000000FEC');
     } else {
+        console.log('Resetting Expert Gate Quest for ' + player.toString());
         player.data.ftbquests.reset('0000000000000FEC');
     }
 };
