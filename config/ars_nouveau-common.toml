@@ -156,8 +156,12 @@
 	summon_steed = true
 	#Summon Wolves enabled?
 	summon_wolves = true
-	#Decoy enabled?
-	decoy = true
+	#Underfoot enabled?
+	underfoot = true
+	#Summon Decoy enabled?
+	summon_decoy = true
+	#Hex enabled?
+	hex = true
 
 #Mana
 [mana]
@@ -371,9 +375,15 @@
 	#Summon Wolves cost
 	#Range: > -2147483648
 	summon_wolves_cost = 0
-	#Decoy cost
+	#Underfoot cost
 	#Range: > -2147483648
-	decoy_cost = 50
+	underfoot_cost = 5
+	#Summon Decoy cost
+	#Range: > -2147483648
+	summon_decoy_cost = 200
+	#Hex cost
+	#Range: > -2147483648
+	hex_cost = 100
 
 #Starting Spells
 ["Starter Spells"]
