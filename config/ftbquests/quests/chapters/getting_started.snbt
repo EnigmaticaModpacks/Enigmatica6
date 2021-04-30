@@ -163,7 +163,10 @@
 				"",
 				"A few config changes require a full restart to take effect, but in most cases there's no need to restart now, as those changes will load when you launch the game next time."
 			],
-			dependencies: ["0000000000000FEB"],
+			dependencies: [
+				"0000000000000FEB",
+				"0000000000000045"
+			],
 			hide: true,
 			id: "0000000000000FE9",
 			tasks: [{
