@@ -92,7 +92,7 @@ function Pull-Changes {
 	Write-Host "Pulling changes from Git..." -ForegroundColor Cyan
 	git stash
 	git reset --hard
-	git pull
+	git pull origin $targetBranch
 }
 
 function Move-ServerFiles {
