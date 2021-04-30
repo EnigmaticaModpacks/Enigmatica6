@@ -57,5 +57,5 @@ const createStoneTypes = [
     'natural_scoria'
 ];
 
-const normalMode = global.mode == 'normal';
-const expertMode = global.mode == 'expert';
+const normalMode = global.packmode == 'normal';
+const expertMode = global.packmode == 'expert';

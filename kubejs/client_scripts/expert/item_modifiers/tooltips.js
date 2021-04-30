@@ -1,5 +1,5 @@
 onEvent('item.tooltip', (event) => {
-    if (!global.isExpertMode) {
+    if (global.isExpertMode == false) {
         return;
     }
     const recipes = [
