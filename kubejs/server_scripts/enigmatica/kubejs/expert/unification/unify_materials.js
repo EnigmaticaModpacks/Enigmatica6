@@ -75,7 +75,7 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(od, [input, mold])
+            .press(rod, [input, mold])
             .energy(2400)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
