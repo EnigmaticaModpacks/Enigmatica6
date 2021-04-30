@@ -1,8 +1,4 @@
 events.listen('recipes', (event) => {
-    if (global.isNormalMode == false) {
-        return;
-    }
-
     materialsToUnify.forEach((material) => {
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
         var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;

@@ -1,8 +1,4 @@
 events.listen('recipes', (event) => {
-    if (global.isNormalMode == false) {
-        return;
-    }
-
     const recipes = [
         {
             output: 'mekanism:hdpe_sheet',

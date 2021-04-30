@@ -51,14 +51,6 @@ const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
 
-setMode = (player) => {
-    if (global.packmode == 'expert') {
-        player.data.ftbquests.complete('0000000000000FEC');
-    } else {
-        player.data.ftbquests.reset('0000000000000FEC');
-    }
-};
-
 recipetypes_crushing = (event, recipe) => {
     event.custom({
         type: 'pedestals:pedestal_crushing',
