@@ -16,6 +16,9 @@ events.listen('recipes', (event) => {
     event.remove({ mod: 'ironjetpacks' });
 
     var outputRemovals = [
+        'aiotbotania:livingwood_shears',
+        'aiotbotania:livingrock_shears',
+
         'bambooeverything:bamboo_bundle',
 
         'byg:blue_enchanted_crafting_table',
