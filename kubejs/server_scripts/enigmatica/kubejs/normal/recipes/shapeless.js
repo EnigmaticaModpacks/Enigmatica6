@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (!normalMode) {
+    if (global.isNormalMode == false) {
         return;
     }
 

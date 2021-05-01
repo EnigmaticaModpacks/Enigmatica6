@@ -18,6 +18,9 @@ const disabledItems = [
     'abnormals_delight:willow_pantry',
     'abnormals_delight:wisteria_pantry',
 
+    'aiotbotania:livingwood_shears',
+    'aiotbotania:livingrock_shears',
+
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',

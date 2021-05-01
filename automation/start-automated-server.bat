@@ -708,9 +708,9 @@ IF NOT EXIST "%~dp0server.properties" (
 	ECHO INFO: server.properties not found... populating default 1>>  "%~dp0logs\serverstart.log" 2>&1
 	ECHO view-distance=8 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	ECHO allow-flight=true 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO level-type=BIOMESOP 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO level-type=terraforged 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	ECHO snooper-enabled=false 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO max-tick-time=90000 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO max-tick-time=300000 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	ECHO motd=%MC_SERVER_PACKNAME% 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	)
 IF NOT EXIST "%~dp0eula.txt" (

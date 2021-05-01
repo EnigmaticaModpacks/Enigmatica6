@@ -64,8 +64,8 @@ events.listen('recipes', (event) => {
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.naturesaura.animal_spawner({
-            type: 'naturesaura.animal_spawner',
+        event.custom({
+            type: 'naturesaura:animal_spawner',
             ingredients: [
                 {
                     item: 'naturesaura:birth_spirit'

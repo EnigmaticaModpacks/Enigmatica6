@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (!expertMode) {
+    if (global.isExpertMode == false) {
         return;
     }
 
@@ -171,6 +171,16 @@ events.listen('recipes', (event) => {
                 C: 'create:shaft'
             },
             id: 'create:crafting/kinetics/windmill_bearing'
+        },
+        {
+            output: Item.of('immersiveengineering:cokebrick', 3),
+            pattern: ['CAC', 'ABA', 'CAC'],
+            key: {
+                A: '#forge:stones/basalt',
+                B: 'create:cinder_flour',
+                C: '#forge:clay'
+            },
+            id: 'immersiveengineering:crafting/cokebrick'
         }
     ];
 

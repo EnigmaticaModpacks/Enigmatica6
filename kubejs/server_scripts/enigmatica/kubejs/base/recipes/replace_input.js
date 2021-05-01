@@ -171,7 +171,7 @@ events.listen('recipes', (event) => {
                 var itemTag = `#forge:${blockName}`;
                 var block = `minecraft:${color}_${blockName}`;
 
-                if (blockName === 'stained_glass_pane') {
+                if (blockName == 'stained_glass_pane') {
                     event.remove({ id: `${block}_from_glass_pane` });
                 } else {
                     event.remove({ id: block });

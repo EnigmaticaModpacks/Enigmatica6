@@ -34,7 +34,7 @@
 	#Note: Each entry needs to be put in quotes! Multiple Entries should be separated by comma.
 	#Block zombies: "+minecraft:zombie"
 	#Allow creepers: "-minecraft:creeper"
-	megaTorchEntityBlockListOverrides = ["+alexsmobs:rattlesnake", "+alexsmobs:orca", "+alexsmobs:grizzly_bear", "+alexsmobs:alligator_snapping_turtle", "+alexsmobs:crocodile", "+alexsmobs:hammerhead_shark", "+alexsmobs:snow_leopard", "+alexsmobs:stradpole", "+alexsmobs:straddler", "+alexsmobs:spectre", "+alexsmobs:soul_vulture", "+alexsmobs:hammerhead_shark", "+alexsmobs:crimson_mosquito", "+alexsmobs:cave_centipede", "+alexsmobs:bone_serpent", "+alexsmobs:guster"]
+	megaTorchEntityBlockListOverrides = ["+alexsmobs:rattlesnake", "+alexsmobs:orca", "+alexsmobs:grizzly_bear", "+alexsmobs:alligator_snapping_turtle", "+alexsmobs:crocodile", "+alexsmobs:hammerhead_shark", "+alexsmobs:snow_leopard", "+alexsmobs:stradpole", "+alexsmobs:straddler", "+alexsmobs:spectre", "+alexsmobs:soul_vulture", "+alexsmobs:hammerhead_shark", "+alexsmobs:crimson_mosquito", "+alexsmobs:centipede", "+alexsmobs:bone_serpent", "+alexsmobs:guster"]
 	#Controls how often the flare should try to place lights. 1 means every tick, 10 every 10th tick, etc
 	#Range: > 1
 	feralFlareTickRate = 5

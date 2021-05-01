@@ -7,5 +7,151 @@
 	icon: "create:creative_crate",
 	always_invisible: true,
 	default_quest_shape: "",
-	quests: []
+	quests: [
+		{
+			x: 0.0d,
+			y: 0.0d,
+			shape: "pentagon",
+			description: ["Obtaining the Creative Crate is the ultimate goal - Complete this quest and you complete the modpack!"],
+			size: 2.0d,
+			id: "6D3FE88DB30DEE00",
+			tasks: [{
+				id: "446147A7DA834368",
+				type: "item",
+				item: "create:creative_crate"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 0.0d,
+			shape: "hexagon",
+			id: "36CDE03E505E0F94",
+			tasks: [{
+				id: "720841254075293B",
+				type: "item",
+				item: "mekanism:creative_fluid_tank"
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 0.0d,
+			shape: "hexagon",
+			id: "477CEC2E3F4736C3",
+			tasks: [{
+				id: "6BDE4D704EAF5C05",
+				type: "item",
+				item: "mekanism:creative_chemical_tank"
+			}]
+		},
+		{
+			x: 0.0d,
+			y: 2.0d,
+			id: "4AB9649C1D2FE587",
+			tasks: [{
+				id: "571A2D485D7D82AD",
+				type: "item",
+				item: {
+					id: "ars_nouveau:creative_spell_book",
+					Count: 1b,
+					tag: {
+						mode: 0,
+						spells: ",intangible,ignite,flare,underfoot,strength,craft,cold_snap,rune,snare,slowfall,freeze,split,crush,smelt,summon_decoy,summon_steed,accelerate,hex,summon_vex,lightning,grow,dampen,touch,invisibility,extract,delay,light,duration_down,exchange,place_block,summon_wolves,shield,conjure_water,cut,harm,interact,blink,amplify,phantom_block,fell,extend_time,heal,leap,redstone_signal,pierce,harvest,fortune,break,pickup,launch,dispel,haste,ender_inventory,pull,explosion,fangs,aoe,gravity,self,aquatic,projectile,wither,gust"
+					}
+				}
+			}]
+		},
+		{
+			x: -1.0d,
+			y: 2.0d,
+			id: "6218AF7644C178A7",
+			tasks: [{
+				id: "2BB3E567517D599F",
+				type: "item",
+				item: {
+					id: "botania:mana_tablet",
+					Count: 1b,
+					tag: {
+						mana: 500000,
+						creative: 1b
+					}
+				}
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 2.0d,
+			id: "5DA9A0C75EA47DFF",
+			tasks: [{
+				id: "3F5DB81D50286BAC",
+				type: "item",
+				item: "botania:creative_pool"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: -1.0d,
+			id: "188BE70C3D176BCA",
+			tasks: [{
+				id: "5C9CA9991302C5CA",
+				type: "item",
+				item: "buildinggadgets:construction_paste_container_creative"
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 0.0d,
+			id: "72C894BE4081603D",
+			tasks: [{
+				id: "5A6A9B10EF0B2E06",
+				type: "item",
+				item: {
+					id: "ironjetpacks:creative_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			x: -4.5d,
+			y: 1.0d,
+			id: "3AB61B2854483CE3",
+			tasks: [{
+				id: "7C2A6AD9D846702E",
+				type: "item",
+				item: "create:creative_motor"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 0.0d,
+			id: "474DFFBB63FE90BA",
+			tasks: [{
+				id: "7DE2D48092C045AA",
+				type: "item",
+				item: "rftoolsutility:creative_screen"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: -1.0d,
+			id: "65F9021D56312C9B",
+			tasks: [{
+				id: "15599A14E7C2F230",
+				type: "item",
+				item: "pneumaticcraft:creative_compressor"
+			}]
+		},
+		{
+			x: 4.5d,
+			y: 1.0d,
+			id: "2A79C4CDDA045886",
+			tasks: [{
+				id: "4BA322BD06DE3777",
+				type: "item",
+				item: "refinedstorage:creative_controller"
+			}]
+		}
+	]
 }

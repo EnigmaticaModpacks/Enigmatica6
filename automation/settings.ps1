@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.4.9"
+$MODPACK_VERSION = "0.4.10"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.4.8"
+$LAST_MODPACK_VERSION = "0.4.9"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -212,7 +212,7 @@ $CLIENT_ZIP_NAME = "$CLIENT_NAME-$MODPACK_VERSION"
 $LAST_MODPACK_ZIP_NAME = "$CLIENT_NAME-$LAST_MODPACK_VERSION"
 
 # Default: "$CLIENT_NAME $MODPACK_VERSION"
-$CLIENT_FILE_DISPLAY_NAME = "$CLIENT_NAME $MODPACK_VERSION"
+$CLIENT_FILE_DISPLAY_NAME = "Enigmatica 6 $MODPACK_VERSION"
 
 # Can be "markdown", "text" or "html"
 # Default: $CLIENT_CHANGELOG_TYPE
@@ -230,7 +230,7 @@ $SERVER_RELEASE_TYPE = $CLIENT_RELEASE_TYPE
 $SERVER_ZIP_NAME = "$CLIENT_NAME`Server-$MODPACK_VERSION"
 
 # Default: $SERVER_FILENAME
-$SERVER_FILE_DISPLAY_NAME = "$CLIENT_NAME Server $MODPACK_VERSION"
+$SERVER_FILE_DISPLAY_NAME = "Enigmatica 6 Server $MODPACK_VERSION"
 
 # Path to the ModListCreators output file
 $ModlistPath = "$InstanceRoot/changelogs/modlist_$MODPACK_VERSION.md"

@@ -145,6 +145,10 @@ events.listen('jei.information', (event) => {
             description: [
                 "Alloy Bees are made through Block to Item Mutations. Click this Bee's spawn egg in JEI for specifics."
             ]
+        },
+        {
+            items: ['minecraft:nautilus_shell'],
+            description: ['Obtained by killing Nautilus, found in Oceans.']
         }
     ];
 

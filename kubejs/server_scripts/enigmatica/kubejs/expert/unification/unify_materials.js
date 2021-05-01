@@ -1,6 +1,5 @@
-//priority: 900
 events.listen('recipes', (event) => {
-    if (!expertMode) {
+    if (global.isExpertMode == false) {
         return;
     }
 
@@ -55,7 +54,7 @@ events.listen('recipes', (event) => {
             .id(`kubejs:crafting_shaped_${material}_gear`);
     }
 
-    function rod_unification(event, material, ingot, gem, rod, plate) {
+    function rod_unification(event, material, ingot, gem, rod) {
         if (rod == air) {
             return;
         }
@@ -76,12 +75,12 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(Item.of(rod, 2), [Item.of(input, 2), mold])
+            .press(rod, [input, mold])
             .energy(2400)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.recipes.immersiveengineering
-            .metal_press(Item.of(rod, 2), Item.of(input, 2), mold)
+            .metal_press(rod, input, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.shapeless(output, [plateTag, hammer, plateTag]).id(`kubejs:shapeless_crafting_${material}_rod`);
