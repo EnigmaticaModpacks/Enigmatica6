@@ -1,4 +1,8 @@
 events.listen('recipes', (event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
+
     const recipes = [
         {
             output: 'torchmaster:megatorch',

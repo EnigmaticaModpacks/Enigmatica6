@@ -112,6 +112,9 @@ const colors = [
 ];
 
 var itemsToHide = [
+    'aiotbotania:livingwood_shears',
+    'aiotbotania:livingrock_shears',
+
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
     'ars_nouveau:mana_gem_block',
@@ -399,5 +402,5 @@ const materialsToUnify = [
     'starmetal'
 ];
 
-const normalMode = global.packmode == 'normal';
-const expertMode = global.packmode == 'expert';
+const isNormalMode = packMode == 'normal';
+const isExpertMode = packMode == 'expert';

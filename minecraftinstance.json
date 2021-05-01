@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-04-30T21:47:23.9284621Z",
-  "playedCount": 66,
+  "lastPlayed": "2021-05-01T21:12:04.3638085Z",
+  "playedCount": 69,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,7 +47,7 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-04-30T20:20:02.9566021Z",
+  "lastPreviousMatchUpdate": "2021-05-01T20:52:36.6337336Z",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -348,6 +348,84 @@
       "installedTargets": null
     },
     {
+      "addonID": 407174,
+      "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
+      "installedFile": {
+        "id": 3188120,
+        "displayName": "Shutup Experimental Settings! 1.0.3 MCV: 1.16.5",
+        "fileName": "shutupexperimentalsettings-1.0.3.jar",
+        "fileDate": "2021-01-31T20:52:15.273Z",
+        "fileLength": 4140,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3188/120/shutupexperimentalsettings-1.0.3.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 320847970,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "corgitaco",
+            "fingerprint": 1863411352,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 120273643,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "shutupexperimentalsettings.mixins.json",
+            "fingerprint": 2002995717,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "shutupexperimentalsettings.refmap.json",
+            "fingerprint": 576557739,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 577234596,
+        "gameVersion": [
+          "1.16.5",
+          "Forge"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "shutupexperimentalsettings-1.0.3.jar"
+      },
+      "dateInstalled": "2021-05-01T21:06:42.57654Z",
+      "dateUpdated": "2021-05-01T21:06:42.6315818Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:06:42.6315818Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 351264,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
@@ -458,6 +536,72 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 409429,
+      "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
+      "installedFile": {
+        "id": 3294697,
+        "displayName": "configswapper-1.3.jar",
+        "fileName": "configswapper-1.3.jar",
+        "fileDate": "2021-05-01T11:40:49.73Z",
+        "fileLength": 18719,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3294/697/configswapper-1.3.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3338427546,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 2905304598,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1438559181,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 1524906378,
+        "gameVersion": [
+          "1.16.5",
+          "Forge"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "configswapper-1.3.jar"
+      },
+      "dateInstalled": "2021-05-01T21:10:55.6660491Z",
+      "dateUpdated": "2021-05-01T21:10:55.7390662Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:10:55.7390662Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 250603,
@@ -3228,6 +3372,85 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
+    },
+    {
+      "addonID": 416306,
+      "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
+      "installedFile": {
+        "id": 3166929,
+        "displayName": "chocolate-1.3.0-1.16.4.jar",
+        "fileName": "chocolate-1.3.0-1.16.4.jar",
+        "fileDate": "2021-01-13T01:54:34.927Z",
+        "fileLength": 23054,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3166/929/chocolate-1.3.0-1.16.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3796170451,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 317641360,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1717457410,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "chocolate.mixins.json",
+            "fingerprint": 2393272439,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "chocolate.refmap.json",
+            "fingerprint": 1532057177,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 312453768,
+        "gameVersion": [
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "chocolate-1.3.0-1.16.4.jar"
+      },
+      "dateInstalled": "2021-05-01T21:03:24.4788864Z",
+      "dateUpdated": "2021-05-01T21:03:24.6233933Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:03:24.6233933Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
     },
     {
       "addonID": 284324,
@@ -6109,7 +6332,7 @@
       "dateInstalled": "2021-04-30T19:13:45.019805Z",
       "dateUpdated": "2021-04-30T19:13:45.0298331Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:45.0298331Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -9426,7 +9649,7 @@
       "dateInstalled": "2021-04-30T19:17:39.6764893Z",
       "dateUpdated": "2021-04-30T19:17:39.6874839Z",
       "dateLastUpdateAttempted": "2021-04-30T19:17:39.6874839Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11756,7 +11979,7 @@
       "dateInstalled": "2021-04-30T19:13:31.1631085Z",
       "dateUpdated": "2021-04-30T19:13:31.2971226Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:31.2971226Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12275,7 +12498,7 @@
       "dateInstalled": "2021-04-23T21:07:37.1452463Z",
       "dateUpdated": "2021-04-30T19:12:59.0721964Z",
       "dateLastUpdateAttempted": "2021-04-30T19:12:59.0721964Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12936,23 +13159,17 @@
       "addonID": 238086,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
-        "id": 3286650,
-        "displayName": "kubejs-1605.3.7-build.186-forge.jar",
-        "fileName": "kubejs-1605.3.7-build.186-forge.jar",
-        "fileDate": "2021-04-23T15:38:45.163Z",
-        "fileLength": 689826,
+        "id": 3295116,
+        "displayName": "kubejs-1605.3.7-build.187-forge.jar",
+        "fileName": "kubejs-1605.3.7-build.187-forge.jar",
+        "fileDate": "2021-05-01T19:37:17.37Z",
+        "fileLength": 690071,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3286/650/kubejs-1605.3.7-build.186-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3295/116/kubejs-1605.3.7-build.187-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 419699,
@@ -12961,14 +13178,20 @@
           },
           {
             "id": 0,
-            "addonId": 268655,
+            "addonId": 416294,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 416294,
-            "type": 3,
+            "addonId": 268655,
+            "type": 2,
             "fileId": 0
           }
         ],
@@ -13024,13 +13247,13 @@
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 3219011008,
+            "fingerprint": 1653636732,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 619333244,
+            "fingerprint": 3950406337,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -13047,7 +13270,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2729659415,
+        "packageFingerprint": 1587520814,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -13062,11 +13285,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "kubejs-1605.3.7-build.186-forge.jar"
+        "FileNameOnDisk": "kubejs-1605.3.7-build.187-forge.jar"
       },
       "dateInstalled": "2021-04-29T22:30:53.9108715Z",
-      "dateUpdated": "2021-04-30T15:45:50.0224017Z",
-      "dateLastUpdateAttempted": "2021-04-30T15:45:50.0224017Z",
+      "dateUpdated": "2021-05-01T21:11:50.7600619Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:11:50.7600619Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -15150,7 +15373,7 @@
       "dateInstalled": "2021-04-28T06:33:20.6397126Z",
       "dateUpdated": "2021-04-30T19:13:05.7212847Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:05.7212847Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16411,7 +16634,7 @@
       "dateInstalled": "2021-04-30T19:13:24.4675895Z",
       "dateUpdated": "2021-04-30T19:13:24.4765912Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:24.4765912Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17645,7 +17868,7 @@
       "dateInstalled": "2021-04-30T19:13:37.3922893Z",
       "dateUpdated": "2021-04-30T19:13:37.4012891Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:37.4012891Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19167,14 +19390,14 @@
       "addonID": 368293,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
-        "id": 3281243,
-        "displayName": "Repurposed Structures v2.6.5 (1.16.5 MC) (36.0.25+ Forge)",
-        "fileName": "repurposed_structures-1.16.5-2.6.5-forge.jar",
-        "fileDate": "2021-04-18T19:45:46.777Z",
-        "fileLength": 4026057,
+        "id": 3295005,
+        "displayName": "Repurposed Structures v2.6.6 (1.16.5 MC) (36.0.25+ Forge)",
+        "fileName": "repurposed_structures-1.16.5-2.6.6-forge.jar",
+        "fileDate": "2021-05-01T18:04:45.167Z",
+        "fileLength": 4027635,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3281/243/repurposed_structures-1.16.5-2.6.5-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3295/5/repurposed_structures-1.16.5-2.6.6-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -19182,13 +19405,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 52359130,
+            "fingerprint": 826451440,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3667254577,
+            "fingerprint": 3805997987,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -19200,7 +19423,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 243034594,
+            "fingerprint": 940371627,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -19229,7 +19452,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4079062404,
+        "packageFingerprint": 4181821422,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -19243,12 +19466,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "repurposed_structures-1.16.5-2.6.5-forge.jar"
+        "FileNameOnDisk": "repurposed_structures-1.16.5-2.6.6-forge.jar"
       },
       "dateInstalled": "2021-03-05T22:35:14.303494Z",
-      "dateUpdated": "2021-04-20T18:04:37.4228245Z",
-      "dateLastUpdateAttempted": "2021-04-20T18:04:37.4228245Z",
-      "status": 5,
+      "dateUpdated": "2021-05-01T21:11:53.1131144Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:11:53.1131144Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21312,7 +21535,7 @@
       "dateInstalled": "2021-04-30T19:13:19.5186521Z",
       "dateUpdated": "2021-04-30T19:13:19.5986661Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:19.5986661Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21721,7 +21944,7 @@
       "dateInstalled": "2021-04-24T17:54:53.1871984Z",
       "dateUpdated": "2021-04-30T15:45:41.9845618Z",
       "dateLastUpdateAttempted": "2021-04-30T15:45:41.9845618Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22199,7 +22422,7 @@
       "dateInstalled": "2021-04-30T19:13:54.7412025Z",
       "dateUpdated": "2021-04-30T19:13:54.7507522Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:54.7507522Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23439,7 +23662,7 @@
       "dateInstalled": "2021-01-24T23:41:09.7208709Z",
       "dateUpdated": "2021-04-30T20:38:02.8945366Z",
       "dateLastUpdateAttempted": "2021-04-30T20:38:02.8945366Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23945,32 +24168,20 @@
       "addonID": 422301,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
-        "id": 3293800,
-        "displayName": "sophisticatedbackpacks-1.16.4-2.4.0.257.jar",
-        "fileName": "sophisticatedbackpacks-1.16.4-2.4.0.257.jar",
-        "fileDate": "2021-04-30T11:05:48.993Z",
-        "fileLength": 957972,
+        "id": 3294628,
+        "displayName": "sophisticatedbackpacks-1.16.4-2.4.0.259.jar",
+        "fileName": "sophisticatedbackpacks-1.16.4-2.4.0.259.jar",
+        "fileDate": "2021-05-01T08:51:21.687Z",
+        "fileLength": 957971,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3293/800/sophisticatedbackpacks-1.16.4-2.4.0.257.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3294/628/sophisticatedbackpacks-1.16.4-2.4.0.259.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 301356,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 309927,
+            "addonId": 243121,
             "type": 2,
             "fileId": 0
           },
@@ -23982,13 +24193,25 @@
           },
           {
             "id": 0,
+            "addonId": 309927,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 225643,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 243121,
+            "addonId": 301356,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
             "type": 2,
             "fileId": 0
           }
@@ -23997,13 +24220,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3626639691,
+            "fingerprint": 3273652414,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "net",
-            "fingerprint": 3317913855,
+            "fingerprint": 2174372540,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -24032,10 +24255,9 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2187534159,
+        "packageFingerprint": 2465254040,
         "gameVersion": [
-          "1.16.5",
-          "1.16.4"
+          "1.16.5"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
@@ -24043,14 +24265,14 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
+        "gameVersionDateReleased": "2021-01-15T14:14:48.91Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "sophisticatedbackpacks-1.16.4-2.4.0.257.jar"
+        "FileNameOnDisk": "sophisticatedbackpacks-1.16.4-2.4.0.259.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.7837017Z",
-      "dateUpdated": "2021-04-30T19:13:07.2342454Z",
-      "dateLastUpdateAttempted": "2021-04-30T19:13:07.2342454Z",
+      "dateUpdated": "2021-05-01T21:11:55.6952988Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:11:55.6952988Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -25804,7 +26026,7 @@
       "dateInstalled": "2021-04-23T21:07:37.3047839Z",
       "dateUpdated": "2021-04-30T19:13:01.788675Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:01.788675Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28333,7 +28555,7 @@
       "dateInstalled": "2021-04-30T19:13:24.3208757Z",
       "dateUpdated": "2021-04-30T19:13:24.3378759Z",
       "dateLastUpdateAttempted": "2021-04-30T19:13:24.3378759Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28776,17 +28998,29 @@
       "addonID": 431725,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
-        "id": 3290179,
-        "displayName": "Advanced Peripherals 0.5.2b",
-        "fileName": "advancedperipherals-0.5.2b.jar",
-        "fileDate": "2021-04-26T22:02:44.113Z",
-        "fileLength": 292558,
+        "id": 3294374,
+        "displayName": "Advanced Peripherals 0.5.3b",
+        "fileName": "advancedperipherals-0.5.3b.jar",
+        "fileDate": "2021-04-30T23:03:20.17Z",
+        "fileLength": 304409,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3290/179/advancedperipherals-0.5.2b.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3294/374/advancedperipherals-0.5.3b.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 243076,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 223794,
+            "type": 2,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 309927,
@@ -28798,43 +29032,31 @@
             "addonId": 282001,
             "type": 3,
             "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 223794,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 243076,
-            "type": 2,
-            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 106581554,
+            "fingerprint": 526672640,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "de",
-            "fingerprint": 2665250471,
+            "fingerprint": 512067405,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3629512162,
+            "fingerprint": 4113241280,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1646243216,
+            "fingerprint": 832289859,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -28851,7 +29073,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 61413395,
+        "packageFingerprint": 667638694,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -28865,12 +29087,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "advancedperipherals-0.5.2b.jar"
+        "FileNameOnDisk": "advancedperipherals-0.5.3b.jar"
       },
       "dateInstalled": "2021-04-24T17:56:06.1281527Z",
-      "dateUpdated": "2021-04-27T04:48:14.4507945Z",
-      "dateLastUpdateAttempted": "2021-04-27T04:48:14.4507945Z",
-      "status": 5,
+      "dateUpdated": "2021-05-01T21:11:47.7615692Z",
+      "dateLastUpdateAttempted": "2021-05-01T21:11:47.7615692Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

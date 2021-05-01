@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (global.isNormalMode == false) {
+    if (global.isExpertMode == false) {
         return;
     }
 
@@ -13,7 +13,7 @@ events.listen('recipes', (event) => {
         var wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
 
         gear_unification(event, material, ingot, gem, gear);
-        rod_unification(event, material, ingot, gem, rod);
+        rod_unification(event, material, ingot, gem, rod, plate);
         plate_unification(event, material, ingot, gem, plate);
         wire_unification(event, material, ingot, gem, wire, plate);
     });
@@ -46,9 +46,10 @@ events.listen('recipes', (event) => {
             .id(`kubejs:immersiveengineering_metal_press_${material}_gear`);
 
         event
-            .shaped(output, [' B ', 'BAB', ' B '], {
-                A: '#forge:nuggets/iron',
-                B: input
+            .shaped(output, ['CAC', 'ABA', 'CAC'], {
+                A: input,
+                B: '#forge:plates/iron_tin',
+                C: '#forge:nuggets/aluminum'
             })
             .id(`kubejs:crafting_shaped_${material}_gear`);
     }
@@ -60,10 +61,11 @@ events.listen('recipes', (event) => {
 
         event.remove({ output: rod });
 
-        var output = rod,
+        let output = rod,
             input,
             mold = '#thermal:crafting/dies/rod';
-
+        const hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
+        const plateTag = '#forge:plates/' + material;
         if (ingot != air) {
             input = '#forge:ingots/' + material;
         } else if (gem != air) {
@@ -73,19 +75,15 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(Item.of(rod, 2), [input, mold])
+            .press(rod, [input, mold])
             .energy(2400)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
         event.recipes.immersiveengineering
-            .metal_press(Item.of(rod, 2), input, mold)
+            .metal_press(rod, input, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_rod`);
 
-        event
-            .shaped(output, ['A', 'A'], {
-                A: input
-            })
-            .id(`kubejs:shaped_crafting_${material}_rod`);
+        event.shapeless(output, [plateTag, hammer, plateTag]).id(`kubejs:shapeless_crafting_${material}_rod`);
     }
 
     function plate_unification(event, material, ingot, gem, plate) {
@@ -108,7 +106,7 @@ events.listen('recipes', (event) => {
         } else {
             return;
         }
-        event.shapeless(output, [input, hammer]).id(`kubejs:shapeless_crafting_${material}_plate`);
+        event.shapeless(output, [input, hammer, input]).id(`kubejs:shapeless_crafting_${material}_plate`);
 
         event.recipes.immersiveengineering
             .metal_press(output, input, mold)
@@ -128,10 +126,10 @@ events.listen('recipes', (event) => {
         }
 
         event.remove({ output: wire });
+        event.remove({ id: /immersiveengineering:crafting\/wire/ });
 
         const wireCutters = 'immersiveengineering:wirecutter';
         let output = wire,
-            input,
             mold = '#thermal:crafting/dies/wire';
 
         if (ingot != air) {
@@ -143,14 +141,14 @@ events.listen('recipes', (event) => {
         }
 
         event.recipes.thermal
-            .press(Item.of(output, 2), [input, mold])
+            .press(Item.of(output, 4), [plate, mold])
             .energy(2400)
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
         event.recipes.immersiveengineering
-            .metal_press(Item.of(output, 2), input, mold)
+            .metal_press(Item.of(output, 4), plate, mold)
             .id(`kubejs:immersiveengineering_metal_press_${material}_wire`);
 
-        event.shapeless(output, [plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
+        event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
     }
 });

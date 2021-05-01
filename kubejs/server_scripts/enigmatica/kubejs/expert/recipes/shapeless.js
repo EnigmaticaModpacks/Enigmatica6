@@ -1,12 +1,16 @@
 events.listen('recipes', (event) => {
-    if (global.isNormalMode == false) {
+    if (global.isExpertMode == false) {
         return;
     }
 
     const recipes = [
         {
             output: 'mekanism:hdpe_sheet',
-            inputs: [['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'], 'mekanism:hdpe_pellet'],
+            inputs: [
+                'mekanism:hdpe_pellet',
+                ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'],
+                'mekanism:hdpe_pellet'
+            ],
             id: 'mekanism:hdpe_sheet'
         }
     ];
