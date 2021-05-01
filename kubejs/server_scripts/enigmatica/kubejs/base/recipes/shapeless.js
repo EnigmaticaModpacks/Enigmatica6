@@ -322,7 +322,7 @@ events.listen('recipes', (event) => {
         },
         {
             inputs: [
-                '#minecraft:fire_charge',
+                'minecraft:fire_charge',
                 '#minecraft:coals',
                 '#minecraft:coals',
                 '#minecraft:soul_fire_base_blocks'
