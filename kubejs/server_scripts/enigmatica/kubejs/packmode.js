@@ -14,17 +14,18 @@ if (config.mode == 'none') {
     config.mode = defaultConfig.mode;
     console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`);
 }
+
 let packMode = config.mode;
-global.packmode = config.mode;
+
+global.packmode = packMode;
 global.isNormalMode = packMode == 'normal';
 global.isExpertMode = packMode == 'expert';
-console.log(`Current packmode is: ${global.packmode}`);
-console.log(`isNormalMode: ${global.isNormalMode}`);
-console.log(`isExpertMode: ${global.isExpertMode}`);
-
 const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
 
+console.log(`Current packmode is: ${global.packmode}`);
+console.log(`isNormalMode: ${global.isNormalMode}`);
+console.log(`isExpertMode: ${global.isExpertMode}`);
 console.log(`isNormalMode var: ${isNormalMode}`);
 console.log(`isExpertMode var: ${isExpertMode}`);
 
