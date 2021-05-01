@@ -1,3 +1,42 @@
+### Enigmatica 6 v0.4.10
+
+_Using Forge-1.16.5-36.1.13_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.10.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.10.md)_
+
+**New Mods**
+
+* [Chocolate Fix](https://www.curseforge.com/minecraft/mc-mods/chocolate-fix)
+* [Client Tweaks](https://www.curseforge.com/minecraft/mc-mods/client-tweaks)
+* [Construction Wand](https://www.curseforge.com/minecraft/mc-mods/construction-wand)
+* [Crash Utilities](https://www.curseforge.com/minecraft/mc-mods/crash-utilities)
+* [Dynamic View](https://www.curseforge.com/minecraft/mc-mods/dynamic-view)
+* [Entangled](https://www.curseforge.com/minecraft/mc-mods/entangled)
+* [Portality](https://www.curseforge.com/minecraft/mc-mods/portality)
+* [RFTools Dimensions](https://www.curseforge.com/minecraft/mc-mods/rftools-dimensions)
+* [Shutup Experimental Settings!](https://www.curseforge.com/minecraft/mc-mods/shutup-experimental-settings)
+* [SuperMartijn642's Config Lib](https://www.curseforge.com/minecraft/mc-mods/supermartijn642s-config-lib)
+
+**Improvements/Changes**
+
+- Suggestion for compact machines recipe tweaks and quest line [\#2061](https://github.com/NillerMedDild/Enigmatica6/issues/2061)
+- Mekanism HDPE production buff [\#2030](https://github.com/NillerMedDild/Enigmatica6/issues/2030)
+
+**Bug Fixes**
+
+- \[0.4.9\] Pumpjack Quest [\#2064](https://github.com/NillerMedDild/Enigmatica6/issues/2064)
+- \[0.4.9\] Rods can't be crafted in a metal press [\#2062](https://github.com/NillerMedDild/Enigmatica6/issues/2062)
+- \[0.4.9\] Gears cannot be crafted [\#2057](https://github.com/NillerMedDild/Enigmatica6/issues/2057)
+- \[0.4.9\] Compact Crafting Recipes are still missing [\#2056](https://github.com/NillerMedDild/Enigmatica6/issues/2056)
+- \[0.4.8\] Wheat Flour from putting Wheat in Pneumaticcraft pressure chamber [\#2051](https://github.com/NillerMedDild/Enigmatica6/issues/2051)
+- \[0.4.8\] Missing energy storage tag for RFTools powercell [\#2046](https://github.com/NillerMedDild/Enigmatica6/issues/2046)
+
+**Removed Mods**
+
+* [AI Improvements](https://www.curseforge.com/minecraft/mc-mods/ai-improvements)
+* [AmbientSounds 3](https://www.curseforge.com/minecraft/mc-mods/ambientsounds)
+* [CreativeCore](https://www.curseforge.com/minecraft/mc-mods/creativecore)
+* [Enchantment Descriptions](https://www.curseforge.com/minecraft/mc-mods/enchantment-descriptions)
+* [Runelic](https://www.curseforge.com/minecraft/mc-mods/runelic)
+
 ### Enigmatica 6 v0.4.9
 
 _Using Forge-1.16.5-36.1.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.9.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.9.md)_
