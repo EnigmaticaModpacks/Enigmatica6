@@ -1,4 +1,8 @@
 events.listen('recipes', (event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
+
     var outputRemovals = ['torchmaster:feral_flare_lantern', 'torchmaster:megatorch'];
 
     var idRemovals = [];
