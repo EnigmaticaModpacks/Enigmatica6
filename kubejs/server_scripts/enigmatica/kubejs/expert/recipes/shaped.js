@@ -181,6 +181,51 @@ events.listen('recipes', (event) => {
                 C: '#forge:clay'
             },
             id: 'immersiveengineering:crafting/cokebrick'
+        },
+        {
+            output: 'ars_nouveau:mana_condenser',
+            pattern: ['CAC', 'BDB', 'BEB'],
+            key: {
+                A: 'minecraft:conduit',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: 'ars_nouveau:arcane_stone',
+                E: 'minecraft:hopper'
+            },
+            id: 'ars_nouveau:mana_condenser'
+        },
+        {
+            output: 'ars_nouveau:arcane_core',
+            pattern: ['CAC', 'BDB', 'CAC'],
+            key: {
+                A: 'ars_nouveau:warding_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: ['#forge:storage_blocks/lapis', '#forge:storage_blocks/fluorite']
+            },
+            id: 'ars_nouveau:arcane_core'
+        },
+        {
+            output: 'ars_nouveau:arcane_pedestal',
+            pattern: ['CAC', 'BDB', 'CDC'],
+            key: {
+                A: 'ars_nouveau:arcane_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: ['#forge:gems/lapis', '#forge:gems/fluorite']
+            },
+            id: 'ars_nouveau:arcane_pedestal'
+        },
+        {
+            output: 'ars_nouveau:enchanting_apparatus',
+            pattern: ['CAC', 'BDB', 'CAC'],
+            key: {
+                A: 'ars_nouveau:warding_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: 'minecraft:heart_of_the_sea'
+            },
+            id: 'ars_nouveau:enchanting_apparatus'
         }
     ];
 
