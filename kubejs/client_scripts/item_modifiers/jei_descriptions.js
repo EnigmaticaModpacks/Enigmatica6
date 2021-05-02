@@ -149,6 +149,41 @@ events.listen('jei.information', (event) => {
         {
             items: ['minecraft:nautilus_shell'],
             description: ['Obtained by killing Nautilus, found in Oceans.']
+        },
+        {
+            items: ['architects_palette:twisted_sapling'],
+            description: ['Obtained by tossing Saplings through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['architects_palette:warpstone'],
+            description: ['Obtained by tossing Clay Blocks through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['architects_palette:chiseled_abyssaline_bricks'],
+            description: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
+        },
+        {
+            items: [
+                'architects_palette:abyssaline_lamp',
+                'architects_palette:abyssaline_tile_slab',
+                'architects_palette:abyssaline_tiles',
+                'architects_palette:abyssaline_brick_slab',
+                'architects_palette:abyssaline_pillar',
+                'architects_palette:abyssaline_bricks',
+                'architects_palette:abyssaline'
+            ],
+            description: [
+                'Powered by placing next to a Charged Chiseled Abyssaline Bricks. Power is transmitted through to other Abyssaline blocks.'
+            ]
+        },
+        {
+            items: [
+                'architects_palette:blank_acacia_totem',
+                'architects_palette:shocked_acacia_totem',
+                'architects_palette:placid_acacia_totem',
+                'architects_palette:grinning_acacia_totem'
+            ],
+            description: ['Right-Click with an Axe to change the face.']
         }
     ];
 
