@@ -226,6 +226,14 @@ events.listen('recipes', (event) => {
                 D: 'minecraft:heart_of_the_sea'
             },
             id: 'ars_nouveau:enchanting_apparatus'
+        },
+        {
+            output: 'architects_palette:sunmetal_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: 'architects_palette:sunmetal_brick'
+            },
+            id: 'architects_palette:sunmetal_block'
         }
     ];
 
