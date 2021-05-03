@@ -2,6 +2,74 @@ events.listen('recipes', (event) => {
     data = {
         recipes: [
             {
+                inputs: ['minecraft:gravel', 'minecraft:gravel', 'minecraft:gravel'],
+                output: 'minecraft:flint',
+                count: 3,
+                syphon: 50,
+                ticks: 20,
+                orbLevel: 0,
+                id: 'flint_from_gravel'
+            },
+            {
+                inputs: [
+                    'minecraft:rotten_flesh',
+                    'minecraft:rotten_flesh',
+                    'minecraft:rotten_flesh',
+                    'minecraft:rotten_flesh'
+                ],
+                output: 'minecraft:leather',
+                count: 4,
+                syphon: 100,
+                ticks: 200,
+                orbLevel: 1,
+                id: 'leather_from_flesh'
+            },
+            {
+                inputs: ['#forge:crops/potato', '#forge:crops/potato', '#forge:crops/potato', 'minecraft:bone_meal'],
+                output: 'bloodmagic:plantoil',
+                count: 1,
+                syphon: 100,
+                ticks: 100,
+                orbLevel: 1,
+                id: 'plantoil_from_taters'
+            },
+            {
+                inputs: ['#forge:crops', '#forge:crops', '#forge:crops', 'minecraft:bone_meal'],
+                output: 'bloodmagic:plantoil',
+                count: 1,
+                syphon: 100,
+                ticks: 100,
+                orbLevel: 1,
+                id: 'plantoil_from_wheat'
+            },
+            {
+                inputs: ['minecraft:coal', 'minecraft:coal'],
+                output: 'emendatusenigmatica:coal_dust',
+                count: 2,
+                syphon: 400,
+                ticks: 200,
+                orbLevel: 1,
+                id: 'sand_coal'
+            },
+            {
+                inputs: ['#minecraft:wool'],
+                output: 'minecraft:string',
+                count: 4,
+                syphon: 100,
+                ticks: 100,
+                orbLevel: 0,
+                id: 'string'
+            },
+            {
+                inputs: ['#forge:sand', '#forge:sand', 'minecraft:water_bucket'],
+                output: 'minecraft:clay',
+                count: 2,
+                syphon: 50,
+                ticks: 100,
+                orbLevel: 2,
+                id: 'clay_from_sand'
+            },
+            {
                 inputs: ['#forge:rods/blaze'],
                 output: 'minecraft:blaze_powder',
                 count: 4,
@@ -141,10 +209,13 @@ events.listen('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.bloodmagic
+        const re = event.recipes.bloodmagic
             .alchemytable(Item.of(recipe.output, recipe.count), recipe.inputs)
             .syphon(recipe.syphon)
             .ticks(recipe.ticks)
             .upgradeLevel(recipe.orbLevel);
+        if (recipe.id) {
+            re.id(`bloodmagic:alchemytable/${recipe.id}`);
+        }
     });
 });

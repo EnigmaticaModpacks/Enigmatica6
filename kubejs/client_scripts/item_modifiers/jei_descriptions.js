@@ -184,6 +184,10 @@ events.listen('jei.information', (event) => {
                 'architects_palette:grinning_acacia_totem'
             ],
             description: ['Right-Click with an Axe to change the face.']
+        },
+        {
+            items: ['betterendforge:silk_fiber'],
+            description: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
         }
     ];
 
