@@ -6,7 +6,8 @@ events.listen('recipes', (event) => {
     const idRemovals = [
         'architects_palette:sunmetal_blend',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-        'pneumaticcraft:explosion_crafting/compressed_iron_block'
+        'pneumaticcraft:explosion_crafting/compressed_iron_block',
+        'minecraft:conduit'
     ];
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
