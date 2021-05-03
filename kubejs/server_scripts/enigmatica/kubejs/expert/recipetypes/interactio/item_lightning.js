@@ -41,6 +41,19 @@ events.listen('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             }
+        },
+        {
+            inputs: [
+                { item: 'eidolon:gold_inlay', count: 2 },
+                { item: 'ars_nouveau:green_archwood_log', count: 1 },
+                { item: 'naturesaura:gold_leaf', count: 1 },
+                { tag: 'forge:dusts/apatite', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'naturesaura:wood_stand', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            }
         }
     ];
 
