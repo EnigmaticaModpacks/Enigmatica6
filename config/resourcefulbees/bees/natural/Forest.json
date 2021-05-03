@@ -1,17 +1,14 @@
 {
     "flower": "ALL",
-    "maxTimeInHive": 3600,
-    "sizeModifier": 1,
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
-    "baseLayerTexture": "ores/aluminum/aluminum_bee",
     "ColorData": {
-        "honeycombColor": "#dce6f7",
-        "isBeeColored": false,
-        "isRainbowBee": false,
-        "isGlowing": false,
-        "isEnchanted": false,
-        "modelType": "ORE"
+        "honeycombColor": "DARKGREEN",
+        "isBeeColored": true,
+        "primaryColor": "DARKGREEN",
+        "secondaryColor": "BURLYWOOD"
     },
     "CombatData": {
         "isPassive": false,
@@ -26,7 +23,7 @@
             "type": "BLOCK",
             "inputID": "tag:forge:stone",
             "outputs": [
-              {"outputID": "emendatusenigmatica:aluminum_ore", "weight": 10}
+              {"outputID": "miecraft:oak_log", "weight": 10}
             ]
           }
         ]
@@ -34,28 +31,34 @@
     "CentrifugeData": {
         "hasCentrifugeOutput": true,
 
-        "mainOutput": "emendatusenigmatica:aluminum_chunk",
+        "mainOutput": "minecraft:oak_log",
         "mainOutputWeight": 0.5,
-        "mainOutputCount": 1,
+        "mainOutputCount": 4,
 
-        "secondaryOutput": "minecraft:iron_nugget",
-        "secondaryOutputWeight": 0.1,
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.5,
         "secondaryOutputCount": 3,
 
-        "bottleOutput": "minecraft:honey_bottle",
-        "bottleOutputWeight": 0.25,
+        "bottleOutput": "resourcefulbees:illuminating_honey_bottle",
+        "bottleOutputWeight": 0.2,
         "bottleOutputCount": 1,
 
         "mainInputCount": 1
     },
     "SpawnData": {
-        "canSpawnInWorld": false
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:FOREST,CLEARING",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 14,
+        "lightLevel": "ANY"
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "tin",
-        "parent2": "osmium",
-        "feedItem": "tag:forge:storage_blocks/aluminum",
+        "feedItem": "tag:minecraft:logs",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
         "breedDelay": 6000

@@ -31,14 +31,14 @@
           },
           {
             "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/tin",
+            "inputID": "resourcefulbees:tin_honeycomb_block",
             "outputs": [
               {"outputID": "resourcefulbees:lumium_bee_spawn_egg", "weight": 10}
             ]
           },
           {
             "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/copper",
+            "inputID": "resourcefulbees:copper_honeycomb_block",
             "outputs": [
               {"outputID": "resourcefulbees:signalum_bee_spawn_egg", "weight": 10}
             ]
@@ -67,8 +67,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "icy",
-        "parent2": "lead",
+        "parent1": "lead",
+        "parent2": "water",
         "feedItem": "tag:forge:storage_blocks/silver",
         "feedAmount": 1,
         "childGrowthDelay": -24000,

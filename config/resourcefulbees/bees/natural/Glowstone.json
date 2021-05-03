@@ -27,6 +27,13 @@
             "outputs": [
               {"outputID": "minecraft:glowstone", "weight": 10}
             ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:resourcefulbees:coal_bee",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:blaze_bee", "weight": 10}
+            ]
           }
         ]
     },
@@ -37,7 +44,7 @@
         "mainOutputWeight": 0.6,
         "mainOutputCount": 6,
 
-        "secondaryOutput": "emendatusenigmatica:sulfur_gem",
+        "secondaryOutput": "resourcefulbees:wax",
         "secondaryOutputWeight": 0.2,
         "secondaryOutputCount": 3,
 

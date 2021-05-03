@@ -38,8 +38,8 @@
         "mainOutputWeight": 0.20,
         "mainOutputCount": 1,
 
-        "secondaryOutput": "minecraft:blaze_powder",
-        "secondaryOutputWeight": 0.05,
+        "secondaryOutput": "emendatusenigmatica:sulfur_chunk",
+        "secondaryOutputWeight": 0.25,
         "secondaryOutputCount": 1,
 
         "bottleOutput": "resourcefulbees:blaze_honey_bottle",
@@ -53,8 +53,6 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "creeper",
-        "parent2": "glowstone",
         "feedItem": "tag:forge:rods/blaze",
         "feedAmount": 3,
         "childGrowthDelay": -24000,
