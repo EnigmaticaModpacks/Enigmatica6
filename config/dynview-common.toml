@@ -13,7 +13,7 @@
 	#Range: 1 ~ 1000
 	viewDistanceUpdateRate = 30
 	#Whether to output log messages for actions done. This can be helpful to balance the other settings nicely.
-	logMessages = true
+	logMessages = false
 
 ["Chunk slow unload settings"]
 	#Enable slightly slower chunk unloading after load, helps with mods hot-loading chunks frequently. Default: true
