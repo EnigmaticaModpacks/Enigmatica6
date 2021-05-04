@@ -1,3 +1,7 @@
+if (global.isExpertMode == false) {
+    return;
+}
+
 function cuttingRecipe(ingredient, tool, result) {
     return {
         type: 'farmersdelight:cutting',
