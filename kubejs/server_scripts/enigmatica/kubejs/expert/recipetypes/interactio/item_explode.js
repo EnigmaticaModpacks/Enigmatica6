@@ -36,7 +36,8 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 4 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot'
         },
         {
             inputs: [
@@ -48,7 +49,8 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'pneumaticcraft:compressed_iron_block', count: 4 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'pneumaticcraft:explosion_crafting/compressed_iron_block'
         },
         {
             inputs: [{ tag: 'forge:gems/fluorite', count: 1 }],
@@ -85,10 +87,13 @@ events.listen('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
+        const re = event.custom({
             type: 'interactio:item_explode',
             inputs: recipe.inputs,
             output: recipe.output
         });
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

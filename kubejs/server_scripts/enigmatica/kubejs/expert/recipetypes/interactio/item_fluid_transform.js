@@ -17,7 +17,8 @@ events.listen('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            consume_fluid: 1.0
+            consume_fluid: 1.0,
+            id: 'ars_nouveau:magic_clay'
         }
     ];
 

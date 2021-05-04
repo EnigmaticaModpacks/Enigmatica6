@@ -7,19 +7,27 @@ events.listen('recipes', (event) => {
         {
             input: 'ars_nouveau:magic_clay',
             output: 'bloodmagic:arcaneashes'
+        },
+        {
+            input: 'ars_nouveau:arcane_stone',
+            output: 'occultism:otherstone',
+            id: 'otherstone'
+        },
+        {
+            input: 'eidolon:shadow_gem',
+            output: 'occultism:spirit_attuned_gem',
+            id: 'spirit_attuned_gem'
         }
     ];
 
     recipes.forEach((recipe) => {
-        let input = recipe.input.charAt(0) == '#' ? { tag: recipe.input.slice(1) } : { item: recipe.input };
-
         let re = event.custom({
             type: 'occultism:spirit_fire',
-            ingredient: input,
-            result: { item: recipe.output }
+            ingredient: Ingredient.of(recipe.input).toJson(),
+            result: Ingredient.of(recipe.output).toJson()
         });
         if (recipe.id) {
-            re.id(recipe.id);
+            re.id(`occultism:spirit_fire/${recipe.id}`);
         }
     });
 });

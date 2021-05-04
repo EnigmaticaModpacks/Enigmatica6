@@ -234,6 +234,41 @@ events.listen('recipes', (event) => {
                 A: 'architects_palette:sunmetal_brick'
             },
             id: 'architects_palette:sunmetal_block'
+        },
+        {
+            output: 'bloodmagic:altar',
+            pattern: ['ABA', 'CDC', 'EEE'],
+            key: {
+                A: 'eidolon:gold_inlay',
+                B: 'eidolon:crucible',
+                C: 'occultism:otherstone',
+                D: 'minecraft:heart_of_the_sea',
+                E: '#forge:ingots/arcane_gold'
+            },
+            id: 'bloodmagic:blood_altar'
+        },
+        {
+            output: 'bloodmagic:alchemytable',
+            pattern: ['ABC', 'DDD', 'EEE'],
+            key: {
+                A: 'minecraft:brewing_stand',
+                B: 'bloodmagic:blankslate',
+                C: 'supplementaries:jar_tinted',
+                D: 'eidolon:wicked_weave',
+                E: 'eidolon:stone_altar'
+            },
+            id: 'bloodmagic:alchemy_table'
+        },
+        {
+            output: 'occultism:divination_rod',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: 'betterendforge:leather_wrapped_stick',
+                B: 'eidolon:tattered_cloth',
+                C: '#forge:rods/copper',
+                D: 'occultism:spirit_attuned_gem'
+            },
+            id: 'occultism:crafting/divination_rod'
         }
     ];
 

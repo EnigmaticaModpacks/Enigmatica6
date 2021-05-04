@@ -9,7 +9,8 @@ events.listen('recipes', (event) => {
                 inputs: ['#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver', '#forge:dusts/silver'],
                 reagent: '#forge:dusts/sulfur',
                 output: 'architects_palette:sunmetal_blend',
-                count: 4
+                count: 4,
+                id: 'architects_palette:sunmetal_blend'
             },
             {
                 inputs: [
@@ -35,7 +36,49 @@ events.listen('recipes', (event) => {
                 ],
                 reagent: 'betterendforge:silk_fiber',
                 output: 'naturesaura:gold_fiber',
-                count: 4
+                count: 4,
+                id: 'naturesaura:gold_fiber'
+            },
+            {
+                inputs: [
+                    'eidolon:pewter_inlay',
+                    'betterendforge:andesite_pedestal',
+                    'eidolon:pewter_inlay',
+                    'thermal:phytogro'
+                ],
+                reagent: 'eidolon:crucible',
+                output: 'botania:apothecary_default',
+                count: 1,
+                id: 'botania:apothecary_default'
+            },
+            {
+                inputs: [
+                    'occultism:otherstone',
+                    '#forge:dusts/mana',
+                    'occultism:otherstone',
+                    'eidolon:pewter_inlay',
+                    'eidolon:pewter_inlay',
+                    'occultism:otherstone',
+                    'occultism:otherstone',
+                    'occultism:otherstone'
+                ],
+                reagent: 'minecraft:bowl',
+                output: 'occultism:sacrificial_bowl',
+                count: 1,
+                id: 'occultism:crafting/sacrificial_bowl'
+            },
+            {
+                inputs: [
+                    'eidolon:gold_inlay',
+                    '#forge:dusts/mana',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'occultism:sacrificial_bowl',
+                output: 'occultism:golden_sacrificial_bowl',
+                count: 1,
+                id: 'occultism:crafting/golden_sacrificial_bowl'
             }
         ]
     };
