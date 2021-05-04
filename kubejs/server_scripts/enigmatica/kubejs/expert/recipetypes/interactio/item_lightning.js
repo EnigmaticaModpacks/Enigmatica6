@@ -26,7 +26,8 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 1 }, weight: 9 }],
                 empty_weight: 1,
                 rolls: 4
-            }
+            },
+            id: 'ars_nouveau:arcane_stone'
         },
         {
             inputs: [
@@ -40,7 +41,8 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'minecraft:conduit', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'minecraft:conduit'
         },
         {
             inputs: [
@@ -53,7 +55,8 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'naturesaura:wood_stand', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'naturesaura:wood_stand'
         }
     ];
 
