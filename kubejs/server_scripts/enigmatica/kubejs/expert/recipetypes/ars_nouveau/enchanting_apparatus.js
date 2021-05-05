@@ -79,6 +79,38 @@ events.listen('recipes', (event) => {
                 output: 'occultism:golden_sacrificial_bowl',
                 count: 1,
                 id: 'occultism:crafting/golden_sacrificial_bowl'
+            },
+            {
+                inputs: [
+                    'eidolon:pewter_inlay',
+                    'occultism:stable_wormhole',
+                    'eidolon:pewter_inlay',
+                    'occultism:otherstone',
+                    'occultism:otherstone',
+                    'eidolon:pewter_inlay',
+                    'occultism:otherstone_pedestal',
+                    'eidolon:pewter_inlay'
+                ],
+                reagent: 'eidolon:crucible',
+                output: 'bloodmagic:soulforge',
+                count: 1,
+                id: 'bloodmagic:soul_forge'
+            },
+            {
+                inputs: [
+                    'eidolon:gold_inlay',
+                    '#forge:ingots/silver',
+                    'eidolon:gold_inlay',
+                    '#forge:ingots/silver',
+                    '#forge:ingots/silver',
+                    'eidolon:gold_inlay',
+                    '#forge:ingots/silver',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'astralsorcery:aquamarine',
+                output: 'undergarden:catalyst',
+                count: 1,
+                id: 'undergarden:catalyst'
             }
         ]
     };

@@ -57,6 +57,21 @@ events.listen('recipes', (event) => {
                 rolls: 1
             },
             id: 'naturesaura:wood_stand'
+        },
+        {
+            inputs: [
+                { item: 'undergarden:music_disc_relict', count: 1, return_chance: 1.0 },
+                { item: 'aquaculture:fish_bones', count: 1 },
+                { tag: 'forge:dusts/lapis', count: 2 },
+                { item: 'minecraft:fermented_spider_eye', count: 2 },
+                { item: 'undergarden:raw_dweller_meat', count: 4 }
+            ],
+            output: {
+                entries: [{ result: { item: 'meetyourfight:fossil_bait', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: 'meetyourfight:fossil_bait'
         }
     ];
 

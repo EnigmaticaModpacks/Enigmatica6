@@ -8,21 +8,64 @@ events.listen('recipes', (event) => {
                 input: 'eidolon:unholy_symbol',
                 output: 'bloodmagic:weakbloodorb',
                 syphon: 7000,
-                ticks: 200,
                 altarLevel: 0,
                 consumptionRate: 5,
                 drainRate: 1,
                 id: 'bloodmagic:altar/weakbloodorb'
             },
             {
+                input: 'meetyourfight:caged_heart',
+                output: 'bloodmagic:apprenticebloodorb',
+                syphon: 7000,
+                altarLevel: 1,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:altar/apprenticebloodorb'
+            },
+            {
                 input: 'occultism:chalk_white_impure',
                 output: 'occultism:chalk_white',
-                syphon: 1000,
-                ticks: 200,
+                syphon: 7000,
                 altarLevel: 0,
                 consumptionRate: 5,
                 drainRate: 1,
                 id: 'occultism:spirit_fire/chalk_white'
+            },
+            {
+                input: 'occultism:chalk_gold_impure',
+                output: 'occultism:chalk_gold',
+                syphon: 7000,
+                altarLevel: 1,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'occultism:spirit_fire/chalk_gold'
+            },
+            {
+                input: 'occultism:chalk_purple_impure',
+                output: 'occultism:chalk_purple',
+                syphon: 25000,
+                altarLevel: 2,
+                consumptionRate: 20,
+                drainRate: 20,
+                id: 'occultism:spirit_fire/chalk_purple'
+            },
+            {
+                input: 'occultism:chalk_red_impure',
+                output: 'occultism:chalk_red',
+                syphon: 40000,
+                altarLevel: 3,
+                consumptionRate: 30,
+                drainRate: 50,
+                id: 'occultism:spirit_fire/chalk_red'
+            },
+            {
+                input: 'ars_nouveau:mana_fiber',
+                output: 'bloodmagic:soulsnare',
+                syphon: 500,
+                altarLevel: 1,
+                consumptionRate: 5,
+                drainRate: 1,
+                id: 'bloodmagic:altar/soul_snare'
             }
         ]
     };
