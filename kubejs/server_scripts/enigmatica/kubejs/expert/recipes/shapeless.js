@@ -12,6 +12,10 @@ events.listen('recipes', (event) => {
                 'mekanism:hdpe_pellet'
             ],
             id: 'mekanism:hdpe_sheet'
+        },
+        {
+            output: Item.of('architects_palette:sunmetal_brick', 9),
+            inputs: ['architects_palette:sunmetal_block']
         }
     ];
 

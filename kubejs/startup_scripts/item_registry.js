@@ -9,7 +9,8 @@ events.listen('item.registry', (event) => {
         'blacksmiths_delight',
         'scavengers_delight',
         'alchemists_delight',
-        'quintuple_alfsteel_ingot'
+        'quintuple_alfsteel_ingot',
+        'altered_recipe_indicator'
     ];
 
     items.forEach((item) => {
