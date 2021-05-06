@@ -67,6 +67,48 @@ events.listen('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 1,
                 id: 'occultism:crafting/chalk_white_impure'
+            },
+            {
+                inputs: [
+                    'bloodmagic:plantoil',
+                    'occultism:chalk_white_impure',
+                    'architects_palette:sunmetal_blend',
+                    'naturesaura:gold_powder'
+                ],
+                output: 'occultism:chalk_gold_impure',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 2,
+                id: 'occultism:crafting/chalk_gold_impure'
+            },
+            {
+                inputs: [
+                    'bloodmagic:plantoil',
+                    'occultism:chalk_white_impure',
+                    'betterendforge:enchanted_petal',
+                    'eidolon:ender_calx'
+                ],
+                output: 'occultism:chalk_purple_impure',
+                count: 1,
+                syphon: 1500,
+                ticks: 200,
+                orbLevel: 3,
+                id: 'occultism:crafting/chalk_purple_impure'
+            },
+            {
+                inputs: [
+                    'bloodmagic:plantoil',
+                    'occultism:chalk_white_impure',
+                    'occultism:afrit_essence',
+                    'create:cinder_flour'
+                ],
+                output: 'occultism:chalk_red_impure',
+                count: 1,
+                syphon: 5000,
+                ticks: 200,
+                orbLevel: 4,
+                id: 'occultism:crafting/chalk_red_impure'
             }
         ]
     };

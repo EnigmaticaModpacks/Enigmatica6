@@ -269,6 +269,16 @@ events.listen('recipes', (event) => {
                 D: 'occultism:spirit_attuned_gem'
             },
             id: 'occultism:crafting/divination_rod'
+        },
+        {
+            output: 'meetyourfight:caged_heart',
+            pattern: ['AAA', 'ABA', 'ACA'],
+            key: {
+                A: '#forge:bones',
+                B: 'eidolon:zombie_heart',
+                C: 'meetyourfight:mossy_tooth'
+            },
+            id: 'meetyourfight:caged_heart'
         }
     ];
 
