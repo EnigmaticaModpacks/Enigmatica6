@@ -111,6 +111,22 @@ events.listen('recipes', (event) => {
                 output: 'undergarden:catalyst',
                 count: 1,
                 id: 'undergarden:catalyst'
+            },
+            {
+                inputs: [
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle',
+                    'buildersaddition:large_soul_candle'
+                ],
+                reagent: 'bloodmagic:holy_water_anointment',
+                output: 'eidolon:candle',
+                count: 8,
+                id: 'eidolon:candle'
             }
         ]
     };
