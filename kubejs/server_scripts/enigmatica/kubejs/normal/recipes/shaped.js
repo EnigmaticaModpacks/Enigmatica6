@@ -58,6 +58,30 @@ events.listen('recipes', (event) => {
             key: {
                 A: '#minecraft:logs'
             }
+        },
+        {
+            output: Item.of('occultism:candle_white'),
+            pattern: [' B ', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:wax',
+                B: '#forge:string'
+            }
+        },
+        {
+            output: Item.of('eidolon:candle', 4),
+            pattern: ['B', 'A'],
+            key: {
+                A: '#forge:wax',
+                B: '#forge:string'
+            }
+        },
+        {
+            output: Item.of('quark:white_candle', 2),
+            pattern: ['B', 'A', 'A'],
+            key: {
+                A: '#forge:wax',
+                B: '#forge:string'
+            }
         }
     ];
 

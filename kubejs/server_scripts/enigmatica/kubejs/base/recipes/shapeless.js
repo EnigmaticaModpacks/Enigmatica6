@@ -198,10 +198,6 @@ events.listen('recipes', (event) => {
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']
         },
-        {
-            output: Item.of('buildersaddition:large_candle', 4),
-            inputs: ['#forge:wax', '#forge:wax', '#forge:wax', '#forge:string']
-        },
         { output: Item.of('occultism:tallow', 9), inputs: ['quark:tallow_block'] },
         {
             output: 'minecraft:writable_book',
