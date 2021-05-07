@@ -74,7 +74,7 @@ $TwitchExportBuilderDLMac = "twitch-export-builder_darwin_amd64"
 $ChangelogGeneratorDL = "ChangelogGenerator-2.0.0-pre10.jar"
 
 # File name of the latest https://github.com/MelanX/ModListCreator/releases
-$ModlistCreatorJar = "ModListCreator-1.1.5.jar"
+$ModlistCreatorJar = "ModListCreator-1.2.0.jar"
 
 #=====================================================================//
 #  CLIENT FILE SETTINGS
