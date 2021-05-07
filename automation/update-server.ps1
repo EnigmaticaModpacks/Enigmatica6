@@ -1,12 +1,14 @@
 param(
+	$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path),
+
 	[Parameter(Position = 0)]
 	[string]$targetBranch = "master",
 
 	[Parameter(Position = 1)]
-	[string]$worldFolder = "$PSScriptRoot/../world",
+	[string]$worldFolder = "$InstanceRoot/world",
 
 	[Parameter(Position = 2)]
-	[string]$backupFolder = "$PSScriptRoot/../backups",
+	[string]$backupFolder = "$InstanceRoot/backups",
 
 	[Parameter(Position = 3)]
 	[bool]$backupWorld = $true,
@@ -15,11 +17,11 @@ param(
 	[int]$backupsToKeep = 12,
 
 	[Parameter(Position = 5)]
-	[string]$serverFileFolder = "$PSScriptRoot/../server_files"
+	[string]$serverFileFolder = "$InstanceRoot/server_files"
 )
 
-$modFolder = "$PSScriptRoot/../mods"
-$overridesFolder = "$PSScriptRoot/../overrides"
+$modFolder = "$InstanceRoot/mods"
+$overridesFolder = "$InstanceRoot/overrides"
 
 function Update-IsAvailable {
 	Write-Host
@@ -45,6 +47,7 @@ function Backup-ModsFolder {
 	Write-Host
 	Write-Host "Backing up the mods folder..." -ForegroundColor Cyan
 	New-Item -ItemType Directory -Path $backupFolder -ErrorAction SilentlyContinue
+	New-Item -ItemType Directory -Path "$backupFolder/mods" -ErrorAction SilentlyContinue
 	if (Test-Path $modFolder) {
 		if ((Get-ChildItem -Path $modFolder | Measure-Object).Count -gt 0) {
 			Compress-Archive -Path $modFolder "$backupFolder/mods/$(Get-Date -Format "MM.dd.yyyy-HH.mm").zip"
@@ -89,24 +92,29 @@ function Pull-Changes {
 	Write-Host "Pulling changes from Git..." -ForegroundColor Cyan
 	git stash
 	git reset --hard
-	git pull
+	git pull origin $targetBranch
 }
 
 function Move-ServerFiles {
 	Write-Host
 	Write-Host "Copying server files to base folder..." -ForegroundColor Cyan
 	Write-Host "This will not overwrite existing files." -ForegroundColor Gray
-	Get-ChildItem -Path "$PSScriptRoot/../server_files" | ForEach-Object {
-		Write-Host "Copying $($_.Name)"
-		$destination = "$PSScriptRoot/../$($_.Name)" 
+	@(
+		"$InstanceRoot/automation/settings.cfg", 
+		"$InstanceRoot/automation/start-automated-server.bat", 
+		"$InstanceRoot/automation/start-automated-server.sh"
+	) | ForEach-Object {
+		$splitFileName = $_ -split "/"
+		$fileName = $splitFileName[$splitFileName.length - 1]
+		$destination = "$InstanceRoot/$fileName" 
 		if (-not (Test-Path $destination)) {
-			Copy-Item -Path $_.FullName -Destination $destination
+			Copy-Item -Path $_ -Destination $destination
 		}
 	}
 }
 
 function Remove-ClientOnlyMods {
-	. "./remove-client-mods.ps1"
+	. "$InstanceRoot/automation/remove-client-mods.ps1"
 }
 
 
@@ -120,6 +128,7 @@ function Copy-Overrides {
 		Copy-Item -Path $CopyFrom -Destination $CopyTo -Force
 	}
 }
+
 
 if (Update-IsAvailable) {	
 	Prune-Backups

@@ -12,7 +12,7 @@ function unificationBlacklistEntry(material, type) {
 }
 function entryIsBlacklisted(material, type) {
     for (var i = 0; i < unificationBlacklist.length; i++) {
-        if (unificationBlacklist[i].material === material && unificationBlacklist[i].type === type) {
+        if (unificationBlacklist[i].material == material && unificationBlacklist[i].type == type) {
             return true;
         }
     }
@@ -53,10 +53,8 @@ const unificationBlacklist = [
 
 setMode = (player) => {
     if (global.packmode == 'expert') {
-        console.log('Completing Expert Gate Quest for ' + player.toString());
         player.data.ftbquests.complete('0000000000000FEC');
     } else {
-        console.log('Resetting Expert Gate Quest for ' + player.toString());
         player.data.ftbquests.reset('0000000000000FEC');
     }
 };

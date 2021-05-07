@@ -36,7 +36,13 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
     event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
-    event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
+    event.replaceInput(
+        {
+            not: [{ type: 'ars_nouveau:glyph_recipe' }]
+        },
+        'minecraft:nether_brick',
+        '#forge:ingots/nether_brick'
+    );
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shapeless' }, 'minecraft:stone', '#forge:stone', true);
@@ -165,7 +171,7 @@ events.listen('recipes', (event) => {
                 var itemTag = `#forge:${blockName}`;
                 var block = `minecraft:${color}_${blockName}`;
 
-                if (blockName === 'stained_glass_pane') {
+                if (blockName == 'stained_glass_pane') {
                     event.remove({ id: `${block}_from_glass_pane` });
                 } else {
                     event.remove({ id: block });

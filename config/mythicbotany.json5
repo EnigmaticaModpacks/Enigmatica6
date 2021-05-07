@@ -1,0 +1,63 @@
+{
+  // Whether the alfheim dimension is enabled. When this is set to false, you'll still be able to use
+  // the mead of kvasir as usual but the portal to alfheim will not work.
+  "enableAlfheim": true,
+  
+  // Whether to replace the recipe for the Gaia Pylon with a recipe that requires Alfsteel.
+  "replaceGaiaRecipe": true,
+  
+  "alftools": {
+  
+    // Jump boost modifier for the alfsteel boots
+    // Minumum: 0.0
+    "jump_modifier": 0.025,
+    
+    // Knockback resistance modifier for the alfsteel chestplate
+    // Minumum: 0.0
+    "knockback_resistance_modifier": 1.0,
+    
+    // Reach distance modifier for the alfsteel helmet
+    // Minumum: 0.0
+    "reach_modifier": 2.0,
+    
+    // Speed modifier for the alfsteel leggings
+    // Minumum: 0.0
+    "speed_modifier": 0.05
+  },
+  
+  "flowers": {
+  
+    // How much mana a wither aconite should generate per nether star.
+    // Minumum: 1
+    "witherAconiteMana": 2000000,
+    
+    // Can be used to tweak the multipliers for the raindeletia. All matching values are multiplied
+    // The result is the mana generated per tick.
+    "raindeletia": {
+    
+      // Base modifier. This one will always be applied
+      // Minumum: 0.0
+      "base": 5.0,
+      
+      // Modifier for dry grass
+      // Minumum: 0.0
+      "dry_grass": 0.5,
+      
+      // Modifier for enchanted soil
+      // Minumum: 0.0
+      "enchanted_soil": 5.0,
+      
+      // Modifier for normal rain, not for thunder
+      // Minumum: 0.0
+      "rain": 0.09,
+      
+      // Modifier for thundering
+      // Minumum: 0.0
+      "thunder": 3.0,
+      
+      // Modifier for vivid grass
+      // Minumum: 0.0
+      "vivid_grass": 2.0
+    }
+  }
+}

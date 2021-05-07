@@ -21,14 +21,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "minecraft:honey_block",
-            "outputs": [
-              {"outputID": "minecraft:slime_block", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:honey_block",
+                "outputs": [{ "outputID": "minecraft:slime_block", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

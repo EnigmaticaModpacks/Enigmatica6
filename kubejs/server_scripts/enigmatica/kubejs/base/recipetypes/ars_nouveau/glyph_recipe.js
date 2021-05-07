@@ -1,12 +1,5 @@
 events.listen('recipes', (event) => {
-    const recipes = [
-        {
-            tier: 'TWO',
-            input: 'minecraft:nether_brick',
-            output: 'ars_nouveau:glyph_dampen',
-            id: 'ars_nouveau:glyph_dampen'
-        }
-    ];
+    const recipes = [];
 
     recipes.forEach((recipe) => {
         recipe.id

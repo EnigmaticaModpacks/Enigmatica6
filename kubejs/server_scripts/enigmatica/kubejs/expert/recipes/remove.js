@@ -1,14 +1,17 @@
 events.listen('recipes', (event) => {
-    if (!expertMode) {
+    if (global.isExpertMode == false) {
         return;
     }
 
     const idRemovals = [
-        'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-        'pneumaticcraft:explosion_crafting/compressed_iron_block'
+        'ars_nouveau:stone_2',
+        'minecraft:leather_to_stripes',
+        'quark:building/crafting/candles/candle_basic'
     ];
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
+
+    const patchouli_safe_removals = [];
 
     idRemovals.forEach((id) => {
         event.remove({ id: id });
@@ -16,5 +19,9 @@ events.listen('recipes', (event) => {
 
     outputRemovals.forEach((output) => {
         event.remove({ output: output });
+    });
+
+    patchouli_safe_removals.forEach((recipe) => {
+        event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);
     });
 });

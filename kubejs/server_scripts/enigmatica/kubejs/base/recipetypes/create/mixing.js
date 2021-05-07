@@ -104,10 +104,6 @@ events.listen('recipes', (event) => {
                 output: Item.of('emendatusenigmatica:invar_ingot', 3)
             },
             {
-                inputs: ['#forge:storage_blocks/coal'],
-                output: Item.of('emendatusenigmatica:coke_gem', 9)
-            },
-            {
                 inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
                 output: Item.of('eidolon:pewter_ingot', 2)
             },

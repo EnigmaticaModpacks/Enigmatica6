@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (!expertMode) {
+    if (global.isExpertMode == false) {
         return;
     }
 
@@ -50,7 +50,7 @@ events.listen('recipes', (event) => {
                     count: 4
                 }
             ],
-            id: 'pneumaticcraft:pressure_chamber:compressed_iron_block'
+            id: 'pneumaticcraft:pressure_chamber/compressed_iron_block'
         }
     ];
 

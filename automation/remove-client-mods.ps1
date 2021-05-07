@@ -9,12 +9,13 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"PackMenu"
 )
 
-$modFolder = "$PSScriptRoot/../mods"
+$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
+$modFolder = "$InstanceRoot/mods"
 
 Write-Host
 Write-Host "Removing client only mods..." -ForegroundColor Cyan
 Get-ChildItem $modFolder -Name -Filter  "*.jar" | ForEach-Object {
-	foreach ($clientOnlyMod in $clientOnlyMods) {
+	foreach ($clientOnlyMod in $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES) {
 		if ($_.StartsWith($clientOnlyMod)) {
 			Remove-Item "$modfolder/$_" -Force
 			Write-Host "Removed the client mod $clientOnlyMod"

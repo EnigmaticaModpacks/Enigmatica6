@@ -1,5 +1,5 @@
 events.listen('recipes', (event) => {
-    if (!expertMode) {
+    if (global.isExpertMode == false) {
         return;
     }
 
@@ -171,6 +171,114 @@ events.listen('recipes', (event) => {
                 C: 'create:shaft'
             },
             id: 'create:crafting/kinetics/windmill_bearing'
+        },
+        {
+            output: Item.of('immersiveengineering:cokebrick', 3),
+            pattern: ['CAC', 'ABA', 'CAC'],
+            key: {
+                A: '#forge:stones/basalt',
+                B: 'create:cinder_flour',
+                C: '#forge:clay'
+            },
+            id: 'immersiveengineering:crafting/cokebrick'
+        },
+        {
+            output: 'ars_nouveau:mana_condenser',
+            pattern: ['CAC', 'BDB', 'BEB'],
+            key: {
+                A: 'minecraft:conduit',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: 'ars_nouveau:arcane_stone',
+                E: 'minecraft:hopper'
+            },
+            id: 'ars_nouveau:mana_condenser'
+        },
+        {
+            output: 'ars_nouveau:arcane_core',
+            pattern: ['CAC', 'BDB', 'CAC'],
+            key: {
+                A: 'ars_nouveau:warding_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: ['#forge:storage_blocks/lapis', '#forge:storage_blocks/fluorite']
+            },
+            id: 'ars_nouveau:arcane_core'
+        },
+        {
+            output: 'ars_nouveau:arcane_pedestal',
+            pattern: ['CAC', 'BDB', 'CDC'],
+            key: {
+                A: 'ars_nouveau:arcane_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: ['#forge:gems/lapis', '#forge:gems/fluorite']
+            },
+            id: 'ars_nouveau:arcane_pedestal'
+        },
+        {
+            output: 'ars_nouveau:enchanting_apparatus',
+            pattern: ['CAC', 'BDB', 'CAC'],
+            key: {
+                A: 'ars_nouveau:warding_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: 'minecraft:heart_of_the_sea'
+            },
+            id: 'ars_nouveau:enchanting_apparatus'
+        },
+        {
+            output: 'architects_palette:sunmetal_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: 'architects_palette:sunmetal_brick'
+            },
+            id: 'architects_palette:sunmetal_block'
+        },
+        {
+            output: 'bloodmagic:altar',
+            pattern: ['ABA', 'CDC', 'EEE'],
+            key: {
+                A: 'eidolon:gold_inlay',
+                B: 'eidolon:crucible',
+                C: 'occultism:otherstone',
+                D: 'minecraft:heart_of_the_sea',
+                E: '#forge:ingots/arcane_gold'
+            },
+            id: 'bloodmagic:blood_altar'
+        },
+        {
+            output: 'bloodmagic:alchemytable',
+            pattern: ['ABC', 'DDD', 'EEE'],
+            key: {
+                A: 'minecraft:brewing_stand',
+                B: 'bloodmagic:blankslate',
+                C: 'supplementaries:jar_tinted',
+                D: 'eidolon:wicked_weave',
+                E: 'eidolon:stone_altar'
+            },
+            id: 'bloodmagic:alchemy_table'
+        },
+        {
+            output: 'occultism:divination_rod',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: 'betterendforge:leather_wrapped_stick',
+                B: 'eidolon:tattered_cloth',
+                C: '#forge:rods/copper',
+                D: 'occultism:spirit_attuned_gem'
+            },
+            id: 'occultism:crafting/divination_rod'
+        },
+        {
+            output: 'meetyourfight:caged_heart',
+            pattern: ['AAA', 'ABA', 'ACA'],
+            key: {
+                A: '#forge:bones',
+                B: 'eidolon:zombie_heart',
+                C: 'meetyourfight:mossy_tooth'
+            },
+            id: 'meetyourfight:caged_heart'
         }
     ];
 

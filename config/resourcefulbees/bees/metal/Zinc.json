@@ -21,21 +21,17 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:stone",
-            "outputs": [
-              {"outputID": "emendatusenigmatica:zinc_ore", "weight": 10}
-            ]
-          },
-          {
-            "type": "ITEM",
-            "inputID": "tag:forge:storage_blocks/copper",
-            "outputs": [
-              {"outputID": "resourcefulbees:brass_bee_spawn_egg", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "emendatusenigmatica:zinc_ore", "weight": 10 }]
+            },
+            {
+                "type": "ITEM",
+                "inputID": "tag:forge:storage_blocks/copper",
+                "outputs": [{ "outputID": "resourcefulbees:brass_bee_spawn_egg", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

@@ -10,16 +10,20 @@ events.listen('recipes', (event) => {
                         item: 'create:wheat_flour'
                     }
                 ],
-                loss_rate: 50
+                loss_rate: 50,
+                id: 'wheat_flour'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.custom({
+        let re = event.custom({
             type: 'pneumaticcraft:explosion_crafting',
             input: recipe.input,
             results: recipe.results,
             loss_rate: recipe.loss_rate
         });
+        if (recipe.id) {
+            re.id(`pneumaticcraft:explosion_crafting/${recipe.id}`);
+        }
     });
 });

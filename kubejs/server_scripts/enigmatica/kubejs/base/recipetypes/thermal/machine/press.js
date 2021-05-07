@@ -84,8 +84,6 @@ events.listen('recipes', (event) => {
                 Fluid.of('integrateddynamics:liquid_chorus', 125)
             ]
         },
-
-        //ID Overrides
         {
             id: 'thermal:machine/press/packing2x2/press_honeycomb_packing',
             inputs: [Item.of('minecraft:honeycomb', 9), Ingredient.of('#thermal:crafting/dies/unpacking')],
@@ -95,6 +93,10 @@ events.listen('recipes', (event) => {
             id: 'thermal:machine/press/unpacking/press_honeycomb_unpacking',
             inputs: [Item.of('minecraft:honeycomb_block', 1), Ingredient.of('#thermal:crafting/dies/unpacking')],
             output: Item.of('minecraft:honeycomb', 9)
+        },
+        {
+            inputs: [Item.of('mekanism:hdpe_pellet')],
+            output: [Item.of('mekanism:hdpe_sheet')]
         }
     ];
 

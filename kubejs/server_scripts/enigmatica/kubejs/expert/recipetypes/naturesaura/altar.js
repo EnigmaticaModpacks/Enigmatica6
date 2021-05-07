@@ -1,0 +1,52 @@
+events.listen('recipes', (event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
+
+    const data = {
+        recipes: [
+            {
+                input: 'architects_palette:sunmetal_brick',
+                output: 'naturesaura:infused_iron',
+                aura_type: 'naturesaura:overworld',
+                aura: 15000,
+                time: 80,
+                id: 'naturesaura:altar/infused_iron'
+            },
+            {
+                input: 'architects_palette:sunmetal_block',
+                output: 'naturesaura:infused_iron_block',
+                aura_type: 'naturesaura:overworld',
+                aura: 135000,
+                time: 700,
+                id: 'naturesaura:altar/infused_iron_block'
+            },
+            {
+                input: 'eidolon:candle',
+                output: 'occultism:candle_white',
+                aura_type: 'naturesaura:nether',
+                aura: 5000,
+                time: 60,
+                id: 'occultism:crafting/candle'
+            }
+        ]
+    };
+
+    data.recipes.forEach((recipe) => {
+        let constructed_recipe = {
+            type: 'naturesaura:altar',
+            input: Ingredient.of(recipe.input).toJson(),
+            output: Ingredient.of(recipe.output).toJson(),
+            aura_type: recipe.aura_type,
+            aura: recipe.aura,
+            time: recipe.time
+        };
+        if (recipe.catalyst) {
+            constructed_recipe.catalyst = Ingredient.of(recipe.catalyst).toJson();
+        }
+        const re = event.custom(constructed_recipe);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
+    });
+});

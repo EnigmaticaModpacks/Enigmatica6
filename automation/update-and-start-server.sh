@@ -1,4 +1,4 @@
 #!/bin/bash
 
 powershell $PWD/update-server.ps1
-$PWD/../start-server.sh
+$PWD/../start-automated-server.sh
