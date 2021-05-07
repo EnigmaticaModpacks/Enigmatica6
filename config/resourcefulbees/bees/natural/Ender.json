@@ -3,7 +3,7 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1,
     "hasHoneycomb": true,
-    "traits": ["ender", "can_swim"],
+    "traits": ["ender", "can_swim", "desert"],
     "baseLayerTexture": "other/ender",
     "ColorData": {
         "honeycombColor": "#339786",
@@ -20,12 +20,14 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "minecraft:end_stone", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "minecraft:end_stone", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -35,9 +37,9 @@
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
 
-        "secondaryOutput": "emendatusenigmatica:enderium_nugget",
-        "secondaryOutputWeight": 0.01,
-        "secondaryOutputCount": 3,
+        "secondaryOutput": "emendatusenigmatica:dimensional_shard_chunk",
+        "secondaryOutputWeight": 0.25,
+        "secondaryOutputCount": 1,
 
         "bottleOutput": "minecraft:dragon_breath",
         "bottleOutputWeight": 0.01,

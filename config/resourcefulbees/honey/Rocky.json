@@ -1,0 +1,29 @@
+{
+    "name" : "rocky",
+    "hunger": 3,
+    "honeyColor": "SLATEGRAY",
+    "saturation": 2,
+    "isRainbow" : false,
+    "honeyBlockRecipe" : true,
+    "generateHoneyBlock" : true,
+    "effects": [
+      {
+        "effectID": "minecraft:resistance",
+        "duration": 2400,
+        "strength": 2,
+        "chance": 0.8
+      },
+      {
+        "effectID": "minecraft:haste",
+        "duration": 2400,
+        "strength": 2,
+        "chance": 0.3
+      },
+      {
+        "effectID": "minecraft:night_vision",
+        "duration": 2400,
+        "strength": 0,
+        "chance": 0.5
+      }
+    ]
+  }

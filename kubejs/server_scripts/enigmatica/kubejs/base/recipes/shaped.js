@@ -216,24 +216,6 @@ events.listen('recipes', (event) => {
             key: {
                 A: 'minecraft:snow_block'
             }
-        },
-        {
-            output: 'buildersaddition:candle',
-            pattern: ['A', 'B'],
-            key: {
-                A: 'buildersaddition:large_candle',
-                B: '#forge:nuggets/gold'
-            },
-            id: 'buildersaddition:candle'
-        },
-        {
-            output: 'buildersaddition:soul_candle',
-            pattern: ['A', 'B'],
-            key: {
-                A: 'buildersaddition:large_soul_candle',
-                B: '#forge:nuggets/gold'
-            },
-            id: 'buildersaddition:soul_candle'
         }
     ];
 
@@ -571,7 +553,18 @@ events.listen('recipes', (event) => {
                 F: 'morphtool:tool'
             }
         ),
-
+        shapedRecipe(Item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
+        shapedRecipe(Item.of('eidolon:candle', 4), ['B', 'A'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
+        shapedRecipe(Item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
+            A: '#forge:wax',
+            B: '#forge:string'
+        }),
         shapedRecipe(Item.of('byg:embur_hyphae', 3), ['AA', 'AA'], {
             A: 'byg:embur_pedu'
         }),
@@ -612,6 +605,16 @@ events.listen('recipes', (event) => {
                 A: 'minecraft:honeycomb'
             },
             'minecraft:honeycomb_block'
+        ),
+
+       shapedRecipe(
+            Item.of('resourcefulbees:t1_beehive'),
+            ['AAA', 'ABA', 'AAA'],
+            {
+                A: 'minecraft:grass',
+                B: '#forge:beehives/tier_0'
+            },
+            'resourcefulbees:t1_beehive'
         ),
 
         shapedRecipe(

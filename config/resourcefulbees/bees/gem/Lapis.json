@@ -21,12 +21,14 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:lapis_ore", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:lapis_ore", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -36,9 +38,9 @@
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
 
-        "secondaryOutput": "resourcefulbees:wax",
-        "secondaryOutputWeight": 0.5,
-        "secondaryOutputCount": 3,
+        "secondaryOutput": "emendatusenigmatica:apatite_chunk",
+        "secondaryOutputWeight": 0.25,
+        "secondaryOutputCount": 1,
 
         "bottleOutput": "resourcefulbees:lapis_honey_bottle",
         "bottleOutputWeight": 0.02,
@@ -51,8 +53,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "icy",
-        "parent2": "rgbee",
+        "parent1": "water",
+        "parent2": "coal",
         "feedItem": "tag:forge:storage_blocks/lapis",
         "feedAmount": 1,
         "childGrowthDelay": -24000,

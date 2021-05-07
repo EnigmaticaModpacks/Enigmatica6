@@ -1,0 +1,69 @@
+{
+    "flower": "ALL",
+    "maxTimeInHive": 2400,
+    "sizeModifier": 0.75,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "ColorData": {
+        "honeycombColor": "DARKGREEN",
+        "isBeeColored": true,
+        "primaryColor": "DARKGREEN",
+        "secondaryColor": "BURLYWOOD"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "miecraft:oak_log", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:oak_log",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 4,
+
+        "secondaryOutput": "resourcefulbees:wax",
+        "secondaryOutputWeight": 0.5,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:illuminating_honey_bottle",
+        "bottleOutputWeight": 0.2,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:FOREST,CLEARING",
+        "biomeBlacklist": "tag:OCEAN",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "spawnWeight": 14,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:minecraft:logs",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

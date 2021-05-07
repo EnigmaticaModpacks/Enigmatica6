@@ -50,7 +50,9 @@ const honeyVarieties = [
     'resourcefulbees:signalum_honey',
     'resourcefulbees:steel_honey',
     'resourcefulbees:water_honey',
-    'resourcefulbees:wither_honey'
+    'resourcefulbees:wither_honey',
+    'resourcefulbees:illuminating_honey',
+    'resourcefulbees:rocky_honey'
 ];
 
 const combVariants = [
@@ -99,5 +101,7 @@ const combVariants = [
     'water',
     'wither',
     'zinc',
-    'zombie'
+    'zombie',
+    'forest',
+    'rocky'
 ];

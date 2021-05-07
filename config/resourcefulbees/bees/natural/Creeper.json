@@ -22,12 +22,14 @@
         "attackDamage": 2
     },
     "MutationData": {
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:minecraft:lava",
-                "outputs": [{ "outputID": "minecraft:mossy_cobblestone", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:minecraft:lava",
+            "outputs": [
+              {"outputID": "minecraft:mossy_cobblestone", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -54,7 +56,7 @@
         "lightLevel": "NIGHT",
         "minGroupSize": 2,
         "maxGroupSize": 4,
-        "minYLevel": 60,
+        "minYLevel": 12,
         "maxYLevel": 250,
         "spawnWeight": 12
     },

@@ -21,12 +21,14 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:redstone_ore", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:redstone_ore", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -36,7 +38,7 @@
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
 
-        "secondaryOutput": "emendatusenigmatica:cinnabar_gem",
+        "secondaryOutput": "emendatusenigmatica:cinnabar_chunk",
         "secondaryOutputWeight": 0.1,
         "secondaryOutputCount": 3,
 
@@ -52,7 +54,7 @@
     "BreedData": {
         "isBreedable": true,
         "parent1": "rgbee",
-        "parent2": "sand",
+        "parent2": "coal",
         "feedItem": "tag:forge:storage_blocks/redstone",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
