@@ -301,11 +301,8 @@ function Update-Modlist {
         7z e "$InstanceRoot\$CLIENT_ZIP_NAME.zip" $manifest
         Remove-Item $ModlistPath -ErrorAction SilentlyContinue
         java -jar $ModlistCreatorJar --markdown --output ".\" --detailed
-        Copy-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
-
         Copy-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
         Remove-Item $manifest -ErrorAction SilentlyContinue
     }
 }
