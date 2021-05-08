@@ -1,7 +1,6 @@
 ---
 name: Bug Report
 about: Create a report to help us improve
-title: '[ModpackVersion] Short_Bug_Description'
 labels: Bug
 ---
 
