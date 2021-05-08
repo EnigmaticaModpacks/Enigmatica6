@@ -279,6 +279,50 @@ events.listen('recipes', (event) => {
                 C: 'meetyourfight:mossy_tooth'
             },
             id: 'meetyourfight:caged_heart'
+        },
+        {
+            output: 'bloodmagic:lavacrystal',
+            pattern: ['BDB', 'CAC', 'BCB'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },
+                B: '#forge:dusts/obsidian',
+                C: 'bloodmagic:reagentlava',
+                D: 'minecraft:conduit'
+            },
+            id: 'bloodmagic:lava_crystal'
+        },
+        {
+            output: 'ars_nouveau:mana_jar',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:nuggets/gold_brass',
+                B: '#forge:ingots/gold_brass',
+                C: 'supplementaries:jar',
+                D: 'ars_nouveau:warding_stone'
+            },
+            id: 'ars_nouveau:mana_jar'
+        },
+        {
+            output: 'ars_nouveau:glyph_press',
+            pattern: ['BDB', 'ACA', 'BDB'],
+            key: {
+                A: '#forge:nuggets/gold_brass',
+                B: '#forge:ingots/gold_brass',
+                C: 'minecraft:piston',
+                D: 'ars_nouveau:warding_stone'
+            },
+            id: 'ars_nouveau:glyph_press'
+        },
+        {
+            output: 'ars_nouveau:crystallizer',
+            pattern: ['BDB', 'ACA', 'BDB'],
+            key: {
+                A: '#forge:nuggets/gold_brass',
+                B: '#forge:ingots/gold_brass',
+                C: '#forge:gems/mana',
+                D: 'ars_nouveau:warding_stone'
+            },
+            id: 'ars_nouveau:crystallizer'
         }
     ];
 

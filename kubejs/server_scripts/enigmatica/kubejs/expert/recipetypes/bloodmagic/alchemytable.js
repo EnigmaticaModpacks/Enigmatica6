@@ -109,6 +109,20 @@ events.listen('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 4,
                 id: 'occultism:crafting/chalk_red_impure'
+            },
+            {
+                inputs: [
+                    'alexsmobs:bone_serpent_tooth',
+                    '#forge:dusts/sulfur',
+                    'minecraft:magma_cream',
+                    'ars_nouveau:red_archwood_wood'
+                ],
+                output: 'bloodmagic:reagentlava',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 0,
+                id: 'bloodmagic:alchemytable/reagent_lava'
             }
         ]
     };

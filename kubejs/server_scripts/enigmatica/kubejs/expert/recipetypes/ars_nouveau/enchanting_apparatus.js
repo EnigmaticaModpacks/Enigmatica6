@@ -127,6 +127,22 @@ events.listen('recipes', (event) => {
                 output: 'eidolon:candle',
                 count: 8,
                 id: 'eidolon:candle'
+            },
+            {
+                inputs: [
+                    '#forge:nuggets/gold_brass',
+                    'bloodmagic:lavacrystal',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'ars_nouveau:mana_jar',
+                output: 'ars_nouveau:volcanic_accumulator',
+                count: 1,
+                id: 'ars_nouveau:volcanic_accumulator'
             }
         ]
     };
