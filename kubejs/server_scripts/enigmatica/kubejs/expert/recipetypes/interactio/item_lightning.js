@@ -72,6 +72,30 @@ events.listen('recipes', (event) => {
                 rolls: 1
             },
             id: 'meetyourfight:fossil_bait'
+        },
+        {
+            inputs: [
+                { item: 'supplementaries:jar', count: 1 },
+                { tag: 'forge:dusts/fluorite', count: 3 }
+            ],
+            output: {
+                entries: [{ result: { item: 'ars_nouveau:jar_of_light', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: 'ars_nouveau:jar_of_light'
+        },
+        {
+            inputs: [
+                { item: 'supplementaries:jar', count: 1 },
+                { tag: 'forge:dusts/obsidian', count: 3 }
+            ],
+            output: {
+                entries: [{ result: { item: 'ars_nouveau:void_jar', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: 'ars_nouveau:void_jar'
         }
     ];
 

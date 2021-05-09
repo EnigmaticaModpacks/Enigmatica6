@@ -143,6 +143,38 @@ events.listen('recipes', (event) => {
                 output: 'ars_nouveau:volcanic_accumulator',
                 count: 1,
                 id: 'ars_nouveau:volcanic_accumulator'
+            },
+            {
+                inputs: [
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:warding_stone',
+                    '#forge:ingots/gold_brass',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:warding_stone',
+                    '#forge:ingots/gold_brass'
+                ],
+                reagent: '#forge:gems/mana',
+                output: 'ars_nouveau:crystallizer',
+                count: 1,
+                id: 'ars_nouveau:crystallizer'
+            },
+            {
+                inputs: [
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:warding_stone',
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:glyph_extract',
+                    'ars_nouveau:glyph_extract',
+                    'astralsorcery:illumination_powder',
+                    'astralsorcery:illumination_powder',
+                    'astralsorcery:illumination_powder'
+                ],
+                reagent: 'ars_nouveau:potion_jar',
+                output: 'ars_nouveau:potion_melder',
+                count: 1,
+                id: 'ars_nouveau:potion_melder'
             }
         ]
     };

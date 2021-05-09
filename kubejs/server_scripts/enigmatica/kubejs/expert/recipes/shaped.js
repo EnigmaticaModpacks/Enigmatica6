@@ -314,15 +314,13 @@ events.listen('recipes', (event) => {
             id: 'ars_nouveau:glyph_press'
         },
         {
-            output: 'ars_nouveau:crystallizer',
-            pattern: ['BDB', 'ACA', 'BDB'],
+            output: 'naturesaura:grated_chute',
+            pattern: ['A A', 'ABA', ' A '],
             key: {
-                A: '#forge:nuggets/gold_brass',
-                B: '#forge:ingots/gold_brass',
-                C: '#forge:gems/mana',
-                D: 'ars_nouveau:warding_stone'
+                A: 'naturesaura:infused_iron',
+                B: '#forge:chests'
             },
-            id: 'ars_nouveau:crystallizer'
+            id: 'naturesaura:grated_chute'
         }
     ];
 
