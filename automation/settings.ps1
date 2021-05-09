@@ -128,7 +128,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"thermal-client.toml",
 	"travel_anchors-client.toml",
 	"upgrade_aquatic-client.toml",
-	"xnet-client.toml"
+	"xnet-client.toml",
+	"findme-client.toml",
+	"PregenConfig.toml"
 )
 
 #=====================================================================//

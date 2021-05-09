@@ -244,10 +244,14 @@
 	cofh_holding_multiplier = 1.0
 
 [Recipes]
-	#Enable/disable explosion crafting (iron->compressed iron).  If you disable this, you'll need another way to get compressed iron initially.
+	#Enable/disable explosion crafting (iron->compressed iron).  If you disable this, you'll need another way to get compressed iron initially. NOTE: this should be considered deprecated, and will be removed in a future release. You should control this via data pack recipes (recipe type 'pneumaticcraft:explosion_crafting').
 	explosion_crafting = true
-	#Enable crafting diamonds from coal blocks in the pressure chamber
+	#Enable crafting diamonds from coal blocks in the pressure chamber?  NOTE: this should be considered deprecated, and will be removed in a future release. You should control this via datapack recipe (default recipe ID: 'pneumaticcraft:pressure_chamber/coal_to_diamond').
 	coal_to_diamonds = true
+	#Does Molten Plastic solidify to Plastic Sheets when poured into the world? If set to false, then Heat Frame cooling is the only other default way to make Plastic Sheets.
+	in_world_plastic_solidification = true
+	#Is in-world Yeast crafting allowed (making more Yeast Culture by pouring Water next to a Yeast Culture block with Sugar in it)? If set to false, then the default TPP Mushroom & Water -> Yeast Culture recipe is the only way to get Yeast Culture.
+	in_world_yeast_crafting = true
 
 [Amadron]
 	#Time in ticks between each periodic offer reshuffle (24000 ticks = one Minecraft day)

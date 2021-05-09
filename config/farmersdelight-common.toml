@@ -5,6 +5,9 @@
 	farmersBuyFDCrops = true
 	#Farmer's Delight adds crates (3x3) for vanilla crops, similar to Quark and Thermal Cultivation. Should they be craftable?
 	enableVanillaCropCrates = true
+	#How often (in percentage) should Rich Soil succeed in boosting a plant's growth at each random tick? Setting it to 0.0 disables boosting.
+	#Range: 0.0 ~ 1.0
+	richSoilBoostChance = 0.2
 
 #Vanilla item overrides
 [overrides]

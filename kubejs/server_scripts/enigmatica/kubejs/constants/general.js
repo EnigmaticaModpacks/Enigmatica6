@@ -23,7 +23,9 @@ const modPriorities = [
     'bloodmagic',
     'eidolon',
     'morevanillalib',
-    'titanium'
+    'titanium',
+    'mythicbotany',
+    'undergarden'
 ];
 
 // Used for recipes/tags that use colors
