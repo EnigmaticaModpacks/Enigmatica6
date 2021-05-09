@@ -68,7 +68,6 @@ events.listen('recipes', (event) => {
         'create:fill_minecraft_bucket_with_create_honey',
 
         'eidolon:tallow',
-        'emendatusenigmatica:alloy_dust/signalum',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'fluxnetworks:fluxcontroller',
@@ -116,7 +115,6 @@ events.listen('recipes', (event) => {
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log',
         'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
-        'thermal:signalum_dust_4',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
