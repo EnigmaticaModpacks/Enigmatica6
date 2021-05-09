@@ -42,7 +42,7 @@ events.listen('recipes', (event) => {
             output: 'dustrial_decor:rusty_iron_block'
         },
         {
-            input: 'minecraft:logs',
+            input: 'minecraft:logs_that_burn',
             output: 'upgrade_aquatic:driftwood_log'
         }
     ];
