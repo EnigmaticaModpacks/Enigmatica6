@@ -196,6 +196,19 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('minecraft:paper', 3),
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
+        },
+        {
+            output: Item.of('emendatusenigmatica:signalum_dust', 4),
+            inputs: [
+                '#forge:dusts/silver',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+            ]
         }
     ];
 
