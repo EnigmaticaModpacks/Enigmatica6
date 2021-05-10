@@ -66,6 +66,23 @@ events.listen('recipes', (event) => {
                 consumptionRate: 5,
                 drainRate: 1,
                 id: 'bloodmagic:altar/soul_snare'
+            },
+            {
+                input: 'kubejs:firmament',
+                output: 'architects_palette:moonstone',
+                syphon: 25000,
+                altarLevel: 2,
+                consumptionRate: 20,
+                drainRate: 20
+            },
+            {
+                input: 'eidolon:sapping_sword',
+                output: 'bloodmagic:sacrificialdagger',
+                syphon: 7000,
+                altarLevel: 1,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:sacrificial_dagger'
             }
         ]
     };

@@ -44,6 +44,13 @@ events.listen('recipes', (event) => {
                 aura: 5000,
                 time: 60,
                 id: 'occultism:crafting/candle'
+            },
+            {
+                input: 'kubejs:firmament',
+                output: 'architects_palette:sunstone',
+                aura_type: 'naturesaura:overworld',
+                aura: 15000,
+                time: 80
             }
         ]
     };

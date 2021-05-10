@@ -19,16 +19,11 @@ events.listen('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        let primaryinput =
-            recipe.inputs[0].charAt(0) == '#' ? { tag: recipe.inputs[0].slice(1) } : { item: recipe.inputs[0] };
-        let secondaryinput =
-            recipe.inputs[1].charAt(0) == '#' ? { tag: recipe.inputs[1].slice(1) } : { item: recipe.inputs[1] };
-
         event.custom({
             type: 'bloodmagic:array',
             texture: `bloodmagic:textures/models/alchemyarrays/${recipe.texture}.png`,
-            baseinput: primaryinput,
-            addedinput: secondaryinput,
+            baseinput: Ingredient.of(recipe.inputs[0]).toJson(),
+            addedinput: Ingredient.of(recipe.inputs[1]).toJson(),
             output: {
                 item: recipe.output
             }

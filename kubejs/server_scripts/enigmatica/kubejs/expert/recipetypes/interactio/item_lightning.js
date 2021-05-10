@@ -26,8 +26,7 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 1 }, weight: 9 }],
                 empty_weight: 1,
                 rolls: 4
-            },
-            id: 'ars_nouveau:arcane_stone'
+            }
         },
         {
             inputs: [
@@ -47,7 +46,7 @@ events.listen('recipes', (event) => {
         {
             inputs: [
                 { item: 'eidolon:gold_inlay', count: 2 },
-                { item: 'ars_nouveau:green_archwood_log', count: 1 },
+                { item: 'botania:livingwood', count: 1 },
                 { item: 'naturesaura:gold_leaf', count: 1 },
                 { tag: 'forge:dusts/apatite', count: 1 }
             ],
@@ -82,8 +81,7 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:jar_of_light', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            },
-            id: 'ars_nouveau:jar_of_light'
+            }
         },
         {
             inputs: [
@@ -94,8 +92,7 @@ events.listen('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:void_jar', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            },
-            id: 'ars_nouveau:void_jar'
+            }
         }
     ];
 

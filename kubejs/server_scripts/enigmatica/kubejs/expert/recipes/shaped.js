@@ -321,6 +321,33 @@ events.listen('recipes', (event) => {
                 B: '#forge:chests'
             },
             id: 'naturesaura:grated_chute'
+        },
+        {
+            output: 'kubejs:firmament',
+            pattern: ['AAB', 'ABA', 'BAA'],
+            key: {
+                A: 'minecraft:prismarine',
+                B: 'undergarden:tremblecrust'
+            }
+        },
+        {
+            output: 'eidolon:wooden_altar',
+            pattern: ['AAA', 'B B', 'B B'],
+            key: {
+                A: 'eidolon:polished_planks_slab',
+                B: 'eidolon:polished_planks'
+            },
+            id: 'eidolon:wooden_altar'
+        },
+        {
+            output: 'bloodmagic:daggerofsacrifice',
+            pattern: ['  A', 'BA ', 'CB '],
+            key: {
+                A: '#forge:ingots/gold_bronze',
+                B: 'eidolon:pewter_inlay',
+                C: '#forge:rods/wooden'
+            },
+            id: 'bloodmagic:altar/daggerofsacrifice'
         }
     ];
 
