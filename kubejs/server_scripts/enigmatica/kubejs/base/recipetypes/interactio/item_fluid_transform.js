@@ -80,6 +80,14 @@ events.listen('recipes', (event) => {
         {
             output: 'dustrial_decor:rusty_iron_trapdoor',
             input: 'minecraft:iron_trapdoor'
+        },
+        {
+            output: 'minecraft:soul_sand',
+            input: 'byg:nylium_soul_sand'
+        },
+        {
+            output: 'minecraft:soul_soil',
+            input: 'byg:nylium_soul_soil'
         }
     ];
 
