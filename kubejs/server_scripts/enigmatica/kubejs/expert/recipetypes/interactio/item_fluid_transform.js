@@ -19,6 +19,38 @@ events.listen('recipes', (event) => {
             },
             consume_fluid: 1.0,
             id: 'ars_nouveau:magic_clay'
+        },
+        {
+            inputs: [
+                { item: 'ars_nouveau:magic_clay', count: 2 },
+                { item: 'naturesaura:gold_powder', count: 1 },
+                { tag: 'forge:dusts/mana', count: 1 },
+                { tag: 'forge:dusts/lapis', count: 2 }
+            ],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'ars_nouveau:marvelous_clay', count: 2 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0,
+            id: 'ars_nouveau:marvelous_clay'
+        },
+        {
+            inputs: [
+                { item: 'ars_nouveau:marvelous_clay', count: 2 },
+                { tag: 'forge:dusts/emerald', count: 2 },
+                { tag: 'forge:dusts/mana', count: 1 },
+                { item: 'thermal:blitz_powder', count: 2 }
+            ],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'ars_nouveau:mythical_clay', count: 2 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0,
+            id: 'ars_nouveau:mythical_clay'
         }
     ];
 

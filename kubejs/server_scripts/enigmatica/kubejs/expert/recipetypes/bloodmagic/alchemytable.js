@@ -109,6 +109,52 @@ events.listen('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 4,
                 id: 'occultism:crafting/chalk_red_impure'
+            },
+            {
+                inputs: [
+                    'alexsmobs:bone_serpent_tooth',
+                    '#forge:dusts/sulfur',
+                    'minecraft:magma_cream',
+                    'ars_nouveau:red_archwood_wood'
+                ],
+                output: 'bloodmagic:reagentlava',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 0,
+                id: 'bloodmagic:alchemytable/reagent_lava'
+            },
+            {
+                inputs: ['#forge:saplings', '#forge:saplings', 'minecraft:sugar_cane', 'thermal:phytogro'],
+                output: 'bloodmagic:reagentgrowth',
+                count: 1,
+                syphon: 2000,
+                ticks: 200,
+                orbLevel: 2,
+                id: 'bloodmagic:alchemytable/reagent_growth'
+            },
+            {
+                inputs: [
+                    'eidolon:ender_calx',
+                    'astralsorcery:nocturnal_powder',
+                    'astralsorcery:nocturnal_powder',
+                    'astralsorcery:nocturnal_powder'
+                ],
+                output: 'bloodmagic:reagentvoid',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 2,
+                id: 'bloodmagic:alchemytable/reagent_void'
+            },
+            {
+                inputs: ['minecraft:ghast_tear', 'alexsmobs:tarantula_hawk_wing', 'ars_nouveau:wilden_wing'],
+                output: 'bloodmagic:reagentair',
+                count: 1,
+                syphon: 2000,
+                ticks: 200,
+                orbLevel: 2,
+                id: 'bloodmagic:alchemytable/reagent_air'
             }
         ]
     };

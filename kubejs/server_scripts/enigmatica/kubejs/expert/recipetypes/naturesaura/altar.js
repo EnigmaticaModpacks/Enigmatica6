@@ -22,12 +22,35 @@ events.listen('recipes', (event) => {
                 id: 'naturesaura:altar/infused_iron_block'
             },
             {
+                input: '#forge:ingots/arcane_gold',
+                output: 'naturesaura:tainted_gold',
+                aura_type: 'naturesaura:nether',
+                aura: 15000,
+                time: 80,
+                id: 'naturesaura:altar/tainted_gold'
+            },
+            {
+                input: '#forge:storage_blocks/arcane_gold',
+                output: 'naturesaura:tainted_gold_block',
+                aura_type: 'naturesaura:nether',
+                aura: 135000,
+                time: 700,
+                id: 'naturesaura:altar/tainted_gold_block'
+            },
+            {
                 input: 'eidolon:candle',
                 output: 'occultism:candle_white',
                 aura_type: 'naturesaura:nether',
                 aura: 5000,
                 time: 60,
                 id: 'occultism:crafting/candle'
+            },
+            {
+                input: 'kubejs:firmament',
+                output: 'architects_palette:sunstone',
+                aura_type: 'naturesaura:overworld',
+                aura: 15000,
+                time: 80
             }
         ]
     };

@@ -13,7 +13,7 @@ events.listen('recipes', (event) => {
                 { item: 'thermal:phytogro' }
             ],
             output: { item: 'botania:pure_daisy' },
-            id: 'pure_daisy'
+            id: 'botania:petal_apothecary/pure_daisy'
         },
         {
             inputs: [{ tag: 'forge:mushrooms' }, { item: 'thermal:phytogro' }],
@@ -28,7 +28,7 @@ events.listen('recipes', (event) => {
             ingredients: recipe.inputs
         });
         if (recipe.id) {
-            re.id(`botania:petal_apothecary/${recipe.id}`);
+            re.id(recipe.id);
         }
     });
 });
