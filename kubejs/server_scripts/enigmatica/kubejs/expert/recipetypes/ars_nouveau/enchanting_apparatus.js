@@ -23,7 +23,7 @@ events.listen('recipes', (event) => {
                     'quark:bottled_cloud',
                     'aquaculture:worm'
                 ],
-                reagent: '#minecraft:beehives',
+                reagent: '#forge:beehives/tier_0',
                 output: 'betterendforge:silk_moth_nest',
                 count: 1
             },
@@ -127,19 +127,97 @@ events.listen('recipes', (event) => {
                 output: 'eidolon:candle',
                 count: 8,
                 id: 'eidolon:candle'
+            },
+            {
+                inputs: [
+                    '#forge:nuggets/gold_brass',
+                    'bloodmagic:lavacrystal',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'ars_nouveau:mana_jar',
+                output: 'ars_nouveau:volcanic_accumulator',
+                count: 1
+            },
+            {
+                inputs: [
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:warding_stone',
+                    '#forge:ingots/gold_brass',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:warding_stone',
+                    '#forge:ingots/gold_brass'
+                ],
+                reagent: '#forge:gems/mana',
+                output: 'ars_nouveau:crystallizer',
+                count: 1
+            },
+            {
+                inputs: [
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:warding_stone',
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:glyph_extract',
+                    'ars_nouveau:glyph_extract',
+                    'astralsorcery:illumination_powder',
+                    'astralsorcery:illumination_powder',
+                    'astralsorcery:illumination_powder'
+                ],
+                reagent: 'ars_nouveau:potion_jar',
+                output: 'ars_nouveau:potion_melder',
+                count: 1,
+                id: 'ars_nouveau:potion_melder'
+            },
+            {
+                inputs: [
+                    '#forge:ingots/gold_brass',
+                    'ars_nouveau:glyph_projectile',
+                    'minecraft:conduit',
+                    '#forge:gems/mana',
+                    'ars_nouveau:glyph_accelerate',
+                    'ars_nouveau:spell_parchment',
+                    '#forge:gems/mana',
+                    '#forge:ingots/gold_brass'
+                ],
+                reagent: 'botania:livingwood',
+                output: 'ars_nouveau:wand',
+                count: 1,
+                id: 'ars_nouveau:wand'
+            },
+
+            /// Patchouli Removals
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                reagent: 'kubejs:altered_recipe_indicator',
+                output: 'ars_nouveau:void_jar',
+                count: 1,
+                id: 'ars_nouveau:jar_of_light'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                reagent: 'kubejs:altered_recipe_indicator',
+                output: 'ars_nouveau:void_jar',
+                count: 1,
+                id: 'ars_nouveau:void_jar'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
         let constructed_recipe = {
             type: 'ars_nouveau:enchanting_apparatus',
-            reagent: recipe.reagent.charAt(0) == '#' ? [{ tag: recipe.reagent.slice(1) }] : [{ item: recipe.reagent }],
+            reagent: [Ingredient.of(recipe.reagent).toJson()],
             output: { item: recipe.output, count: recipe.count }
         };
 
         recipe.inputs.forEach((input, index) => {
             let i = index + 1;
-            constructed_recipe[`item_${i}`] = input.charAt(0) == '#' ? [{ tag: input.slice(1) }] : [{ item: input }];
+            constructed_recipe[`item_${i}`] = [Ingredient.of(input).toJson()];
         });
 
         if (recipe.mana) {

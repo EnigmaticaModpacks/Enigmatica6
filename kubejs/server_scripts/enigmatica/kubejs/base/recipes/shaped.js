@@ -607,7 +607,7 @@ events.listen('recipes', (event) => {
             'minecraft:honeycomb_block'
         ),
 
-       shapedRecipe(
+        shapedRecipe(
             Item.of('resourcefulbees:t1_beehive'),
             ['AAA', 'ABA', 'AAA'],
             {
@@ -726,7 +726,8 @@ events.listen('recipes', (event) => {
             'menril_filled',
             'watchful_aspen',
             'crustose',
-            'sappy_maple'
+            'sappy_maple',
+            'avocado'
         ];
 
         if (dupes.includes(wood.logType)) {

@@ -11,7 +11,11 @@ events.listen('recipes', (event) => {
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
 
-    const patchouli_safe_removals = [];
+    const patchouli_safe_removals = [
+        { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
+        { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
+        { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' }
+    ];
 
     idRemovals.forEach((id) => {
         event.remove({ id: id });
