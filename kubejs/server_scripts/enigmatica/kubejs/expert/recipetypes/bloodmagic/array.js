@@ -14,12 +14,24 @@ events.listen('recipes', (event) => {
                 inputs: ['architects_palette:algal_lamp', '#forge:dusts/lapis'],
                 output: 'minecraft:heart_of_the_sea',
                 texture: 'watersigil'
+            },
+            {
+                inputs: ['architects_palette:moonstone', 'minecraft:lapis_lazuli'],
+                output: 'bloodmagic:arcaneashes',
+                texture: 'moonarray',
+                id: 'bloodmagic:array/night'
+            },
+            {
+                inputs: ['architects_palette:sunstone', 'minecraft:coal'],
+                output: 'bloodmagic:arcaneashes',
+                texture: 'sunarray',
+                id: 'bloodmagic:array/day'
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.custom({
+        const re = event.custom({
             type: 'bloodmagic:array',
             texture: `bloodmagic:textures/models/alchemyarrays/${recipe.texture}.png`,
             baseinput: Ingredient.of(recipe.inputs[0]).toJson(),
@@ -28,5 +40,8 @@ events.listen('recipes', (event) => {
                 item: recipe.output
             }
         });
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });
