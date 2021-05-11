@@ -658,6 +658,23 @@ const treeRegistry = [
                 substrate: 'dirt',
                 sap: 'thermal:sap',
                 amount: 25
+            },
+            {
+                sapling: 'sushigocrafting:avocado_sapling',
+                trunk: 'sushigocrafting:avocado_log',
+                leaf: 'sushigocrafting:avocado_leaves',
+                fruit: 'sushigocrafting:avocado',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'architects_palette:twisted_sapling',
+                trunk: 'architects_palette:twisted_log',
+                leaf: 'architects_palette:twisted_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
             }
         ]
     },
