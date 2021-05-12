@@ -25,7 +25,9 @@ const modPriorities = [
     'morevanillalib',
     'titanium',
     'mythicbotany',
-    'undergarden'
+    'undergarden',
+    'byg',
+    'atum'
 ];
 
 // Used for recipes/tags that use colors
