@@ -213,6 +213,7 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'minecraft:stripped_oak_log';
             woodBlockStripped = 'minecraft:stripped_oak_wood';
             plankBlock = 'minecraft:oak_planks';
+            break;
         default:
     }
 
