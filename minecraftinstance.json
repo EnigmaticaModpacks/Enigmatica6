@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-05-11T20:10:43.6186622Z",
-  "playedCount": 80,
+  "lastPlayed": "2021-05-12T18:45:02.8864257Z",
+  "playedCount": 83,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -6342,26 +6342,26 @@
       "addonID": 371813,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
-        "id": 3279703,
-        "displayName": "crashutilities-3.10.0.jar",
-        "fileName": "crashutilities-3.10.0.jar",
-        "fileDate": "2021-04-17T10:49:58.293Z",
-        "fileLength": 2067530,
-        "releaseType": 1,
+        "id": 3306113,
+        "displayName": "crashutilities-3.11.0.jar",
+        "fileName": "crashutilities-3.11.0.jar",
+        "fileDate": "2021-05-11T17:32:13.123Z",
+        "fileLength": 2071163,
+        "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3279/703/crashutilities-3.10.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3306/113/crashutilities-3.11.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 309927,
+            "addonId": 361579,
             "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 361579,
+            "addonId": 309927,
             "type": 2,
             "fileId": 0
           }
@@ -6370,13 +6370,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2520706757,
+            "fingerprint": 183891787,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3195363117,
+            "fingerprint": 646776553,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -6411,7 +6411,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 102231710,
+        "packageFingerprint": 2666968400,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -6425,12 +6425,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "crashutilities-3.10.0.jar"
+        "FileNameOnDisk": "crashutilities-3.11.0.jar"
       },
       "dateInstalled": "2021-04-30T19:13:45.019805Z",
-      "dateUpdated": "2021-04-30T19:13:45.0298331Z",
-      "dateLastUpdateAttempted": "2021-04-30T19:13:45.0298331Z",
-      "status": 3,
+      "dateUpdated": "2021-05-12T15:09:42.9303928Z",
+      "dateLastUpdateAttempted": "2021-05-12T15:09:42.9303928Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8655,109 +8655,6 @@
       "dateInstalled": "2021-02-07T16:28:59.4558347Z",
       "dateUpdated": "2021-04-29T06:39:13.1688967Z",
       "dateLastUpdateAttempted": "2021-04-29T06:39:13.1688967Z",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 452500,
-      "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
-      "installedFile": {
-        "id": 3296298,
-        "displayName": "sushigocrafting-1.16.4-0.1.1.jar",
-        "fileName": "sushigocrafting-1.16.4-0.1.1.jar",
-        "fileDate": "2021-05-02T20:09:45.227Z",
-        "fileLength": 566058,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3296/298/sushigocrafting-1.16.4-0.1.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 306770,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 287342,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2389553620,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 3370852021,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": ".cache",
-            "fingerprint": 2485118984,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3545191530,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 731327526,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3273911401,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 796173642,
-        "gameVersion": [
-          "1.16.5",
-          "1.16.4"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "sushigocrafting-1.16.4-0.1.1.jar"
-      },
-      "dateInstalled": "2021-05-02T18:07:33.7844275Z",
-      "dateUpdated": "2021-05-04T20:01:14.3002332Z",
-      "dateLastUpdateAttempted": "2021-05-04T20:01:14.3002332Z",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -13632,14 +13529,14 @@
       "addonID": 363363,
       "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
       "installedFile": {
-        "id": 3256613,
-        "displayName": "Extreme Sound Muffler 3.9 - Forge 1.16.5",
-        "fileName": "extremeSoundMuffler-3.9_Forge-1.16.5.jar",
-        "fileDate": "2021-03-31T12:34:57.277Z",
-        "fileLength": 291338,
+        "id": 3305112,
+        "displayName": "Extreme Sound Muffler 3.10 - Forge 1.16.5",
+        "fileName": "extremeSoundMuffler-3.10_Forge-1.16.5.jar",
+        "fileDate": "2021-05-10T20:11:15.977Z",
+        "fileLength": 296796,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3256/613/extremeSoundMuffler-3.9_Forge-1.16.5.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3305/112/extremeSoundMuffler-3.10_Forge-1.16.5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -13647,19 +13544,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2230864656,
+            "fingerprint": 3570887062,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3489751912,
+            "fingerprint": 3469611422,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1474397346,
+            "fingerprint": 2454256471,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -13676,7 +13573,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 299010649,
+        "packageFingerprint": 2739259610,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -13692,12 +13589,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "extremeSoundMuffler-3.9_Forge-1.16.5.jar"
+        "FileNameOnDisk": "extremeSoundMuffler-3.10_Forge-1.16.5.jar"
       },
       "dateInstalled": "2021-01-24T23:41:09.6949399Z",
-      "dateUpdated": "2021-03-31T17:45:11.8000856Z",
-      "dateLastUpdateAttempted": "2021-03-31T17:45:11.8000856Z",
-      "status": 3,
+      "dateUpdated": "2021-05-12T15:09:46.1971714Z",
+      "dateLastUpdateAttempted": "2021-05-12T15:09:46.1971714Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14583,7 +14480,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 372372,
@@ -20821,91 +20718,6 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
-    },
-    {
-      "addonID": 59621,
-      "gameInstanceID": "4b4f3545-95ef-4c73-ade8-24056eea3be8",
-      "installedFile": {
-        "id": 3306216,
-        "displayName": "Atum-1.16.5-2.2.0.jar",
-        "fileName": "Atum-1.16.5-2.2.0.jar",
-        "fileDate": "2021-05-11T18:50:21.907Z",
-        "fileLength": 4529183,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3306/216/Atum-1.16.5-2.2.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 309927,
-            "type": 3,
-            "fileId": 0
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 3405783781,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 3566992225,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 793855759,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 1511109577,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 801415253,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 2743239236,
-        "gameVersion": [
-          "1.16.5",
-          "Forge"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "Atum-1.16.5-2.2.0.jar"
-      },
-      "dateInstalled": "2021-05-11T21:09:40.2707326Z",
-      "dateUpdated": "2021-05-11T21:09:40.2857341Z",
-      "dateLastUpdateAttempted": "2021-05-11T21:09:40.2857341Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
     },
     {
       "addonID": 377281,
