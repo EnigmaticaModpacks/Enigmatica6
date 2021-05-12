@@ -482,7 +482,7 @@
 	"Mega Caves" = true
 	"Realistic World Gen" = true
 	Biotite = false
-	"Big Stone Clusters" = true
+	"Big Stone Clusters" = false
 	"Brimstone Underground Biome" = true
 	"Cave Crystal Underground Biome" = true
 	"Spiral Spires" = true
@@ -642,13 +642,13 @@
 			#Allowed values: [0,)
 			"Horizontal Size" = 60
 			#Allowed values: [0,)
-			Rarity = 120
+			Rarity = 180
 			#Allowed values: [0,255]
-			"Min Y Level" = 15
+			"Min Y Level" = 10
 			#Allowed values: [0,)
 			"Horizontal Variation" = 20
 			#Allowed values: [0,255]
-			"Max Y Level" = 50
+			"Max Y Level" = 45
 			#Allowed values: [0,)
 			"Vertical Size" = 4
 			#Allowed values: [0,)
@@ -693,7 +693,7 @@
 				#Allowed values: [0,255]
 				"Max Height" = 255
 				#Allowed values: [0,)
-				"Cluster Count" = 0
+				"Cluster Count" = 3
 				#Allowed values: [0,255]
 				"Min Height" = 0
 				#Allowed values: [0,)
@@ -741,7 +741,7 @@
 				#Allowed values: [0,255]
 				"Max Height" = 255
 				#Allowed values: [0,)
-				"Cluster Count" = 0
+				"Cluster Count" = 3
 				#Allowed values: [0,255]
 				"Min Height" = 0
 				#Allowed values: [0,)
@@ -757,7 +757,7 @@
 				#Allowed values: [0,255]
 				"Max Height" = 255
 				#Allowed values: [0,)
-				"Cluster Count" = 0
+				"Cluster Count" = 3
 				#Allowed values: [0,255]
 				"Min Height" = 0
 				#Allowed values: [0,)

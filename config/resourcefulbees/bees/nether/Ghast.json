@@ -20,17 +20,21 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:forge:netherrack",
-                "outputs": [{ "outputID": "minecraft:tnt", "weight": 10 }]
-            },
-            {
-                "type": "ENTITY",
-                "inputID": "entity:resourcefulbees:diamond_bee",
-                "outputs": [{ "outputID": "entity:resourcefulbees:netherite_bee", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:netherrack",
+            "outputs": [
+              {"outputID": "minecraft:tnt", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:resourcefulbees:diamond_bee",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:netherite_bee", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -40,8 +44,8 @@
         "mainOutputWeight": 0.3,
         "mainOutputCount": 1,
 
-        "secondaryOutput": "emendatusenigmatica:potassium_nitrate_gem",
-        "secondaryOutputWeight": 0.2,
+        "secondaryOutput": "emendatusenigmatica:potassium_nitrate_chunk",
+        "secondaryOutputWeight": 0.25,
         "secondaryOutputCount": 3,
 
         "bottleOutput": "minecraft:honey_bottle",

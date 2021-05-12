@@ -10,4 +10,7 @@
 	"Inventory Button Book" = ""
 	#Enable testing mode. By default this doesn't do anything, but you can use the config flag in your books if you want. Config Flag: testing_mode
 	"Testing Mode" = false
+	#Set how text overflow should be coped with: overflow the text off the page, truncate overflowed text, or resize everything to fit. Relogin after changing.
+	#Allowed Values: OVERFLOW, TRUNCATE, RESIZE
+	textOverflowMode = "OVERFLOW"
 

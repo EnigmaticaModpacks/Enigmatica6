@@ -1,5 +1,17 @@
 
 ["YUNG's Better Strongholds"]
+	# List of dimensions that will have Better Strongholds.
+	# List must be comma-separated values enclosed in square brackets.
+	# Entries must have the mod namespace included.
+	# For example: "[minecraft:overworld, minecraft:the_nether, undergarden:undergarden]"
+	# Default: "[minecraft:overworld]"
+	"Whitelisted Dimensions" = "[minecraft:overworld]"
+	# List of biomes that will NOT have Better Strongholds.
+	# List must be comma-separated values enclosed in square brackets.
+	# Entries must have the mod namespace included.
+	# For example: "[minecraft:plains, byg:alps]"
+	# Default: "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river]"
+	"Blacklisted Biomes" = "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river]"
 
 	###########################################################################################################
 	## General settings.

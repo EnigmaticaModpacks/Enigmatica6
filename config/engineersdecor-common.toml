@@ -15,6 +15,6 @@
 		with_experimental = false
 		#Enable that devices are dropped as item also in creative mode, allowing  to relocate them with contents and settings.
 		with_creative_mode_device_drops = false
-		#Enable detailed logging of the config values and resulting calculations in each mod feature config.
-		with_config_logging = false
+		#Enable debug log messages for trouble shooting. Don't activate if not really needed, this can spam the log file.
+		with_debug_logging = false
 

@@ -12,6 +12,15 @@ events.listen('recipes', (event) => {
                 'mekanism:hdpe_pellet'
             ],
             id: 'mekanism:hdpe_sheet'
+        },
+        {
+            output: Item.of('architects_palette:sunmetal_brick', 9),
+            inputs: ['architects_palette:sunmetal_block']
+        },
+        {
+            output: Item.of('ars_nouveau:potion_jar'),
+            inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
+            id: 'ars_nouveau:potion_jar'
         }
     ];
 

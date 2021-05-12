@@ -21,17 +21,21 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:gold_ore", "weight": 10 }]
-            },
-            {
-                "type": "ITEM",
-                "inputID": "tag:forge:storage_blocks/silver",
-                "outputs": [{ "outputID": "resourcefulbees:electrum_bee_spawn_egg", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:gold_ore", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/silver",
+            "outputs": [
+              {"outputID": "resourcefulbees:electrum_bee_spawn_egg", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -56,8 +60,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "pigman",
-        "parent2": "sand",
+        "parent1": "nickel",
+        "parent2": "water",
         "feedItem": "tag:forge:storage_blocks/gold",
         "feedAmount": 1,
         "childGrowthDelay": -24000,

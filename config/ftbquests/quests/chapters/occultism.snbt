@@ -1695,6 +1695,7 @@
 			]
 		},
 		{
+			title: "Summon Drikwing Familiar",
 			icon: "minecraft:feather",
 			x: 1.5d,
 			y: 4.5d,
@@ -1704,7 +1705,9 @@
 				"",
 				"The Drikwing is an otherworldly bird that imparts special effects on its master when close.",
 				"",
-				"Tip: There is a ritual you can use to summon a wild parrot that can make the sacrifice needed for this ritual much easier."
+				"Tip: There is a ritual you can use to summon a wild parrot that can make the sacrifice needed for this ritual much easier.",
+				"",
+				"Tip #2: You must summon the Drikwing Familiar, the Wild Drikwing Summon will not work for this quest."
 			],
 			dependencies: ["0000000000000D9E"],
 			id: "0000000000000F3C",
@@ -1712,7 +1715,7 @@
 				{
 					id: "0000000000000F3D",
 					type: "advancement",
-					title: "Summon Drikwing",
+					title: "Summon Drikwing Familiar",
 					icon: "minecraft:feather",
 					advancement: "occultism:familiar_otherworld_bird",
 					criterion: ""

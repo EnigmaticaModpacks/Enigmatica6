@@ -942,11 +942,18 @@
 			],
 			dependencies: ["2A74822BE970E9D4"],
 			id: "0AD2769DC173D26D",
-			tasks: [{
-				id: "6B198B6A029D9333",
-				type: "item",
-				item: "compactmachines:personal_shrinking_device"
-			}],
+			tasks: [
+				{
+					id: "6B198B6A029D9333",
+					type: "item",
+					item: "compactmachines:personal_shrinking_device"
+				},
+				{
+					id: "183F540AE4005AB2",
+					type: "item",
+					item: "compactmachines:machine_tiny"
+				}
+			],
 			rewards: [{
 				id: "07BAD39E967F6B85",
 				type: "item",
@@ -956,7 +963,7 @@
 		{
 			title: "Field Projector",
 			x: -4.5d,
-			y: -5.0d,
+			y: -3.5d,
 			subtitle: "Non-renormalizability",
 			description: [
 				"Crafting Compact Machines themselves is done with Field Projectors. Four of them need to be placed facing each other in a cross shape. ",
@@ -967,7 +974,7 @@
 				"",
 				"If done correctly, an orange force field will appear in the center. This area is where the Compact Machines themselves must be constructed. "
 			],
-			dependencies: ["0AD2769DC173D26D"],
+			dependencies: ["4DB24091326F4C47"],
 			min_width: 250,
 			id: "5A1F6BA9BE06D643",
 			tasks: [{
@@ -1026,7 +1033,7 @@
 		{
 			icon: "compactmachines:machine_tiny",
 			x: -4.5d,
-			y: -3.5d,
+			y: -2.0d,
 			subtitle: "One, cut a hole in a box",
 			description: [
 				"Gather the materials for your first Compact Machine!",
@@ -1087,7 +1094,7 @@
 		},
 		{
 			x: -3.0d,
-			y: -3.5d,
+			y: -2.0d,
 			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "],
 			dependencies: ["3787A109AABC8921"],
 			id: "0DAA452348B02827",
@@ -1107,7 +1114,7 @@
 		},
 		{
 			x: -5.5d,
-			y: -2.5d,
+			y: -1.0d,
 			subtitle: "Quantum Tunneling",
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. ",
@@ -1138,6 +1145,20 @@
 				icon: "kubejs:scavengers_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
 				player_command: false
+			}]
+		},
+		{
+			icon: "minecraft:structure_void",
+			x: -4.0d,
+			y: -4.5d,
+			dependencies: ["0AD2769DC173D26D"],
+			hide: true,
+			id: "4DB24091326F4C47",
+			tasks: [{
+				id: "0E48747CD5A70977",
+				type: "gamestage",
+				title: "impossible",
+				stage: "impossible"
 			}]
 		}
 	]

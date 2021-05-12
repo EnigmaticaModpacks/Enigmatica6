@@ -19,13 +19,15 @@
         "attackDamage": 2
     },
     "MutationData": {
-        "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "minecraft:stone",
-                "outputs": [{ "outputID": "minecraft:cobblestone", "weight": 10 }]
-            }
+    	"hasMutation": true,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "minecraft:stone",
+            "outputs": [
+              {"outputID": "minecraft:cobblestone", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -51,7 +53,7 @@
         "biomeBlacklist": "tag:OCEAN,END",
         "lightLevel": "ANY",
         "spawnWeight": 12,
-        "minYLevel": 60,
+        "minYLevel": 12,
         "maxYLevel": 250,
         "minGroupSize": 2,
         "maxGroupSize": 4

@@ -181,6 +181,173 @@ events.listen('recipes', (event) => {
                 C: '#forge:clay'
             },
             id: 'immersiveengineering:crafting/cokebrick'
+        },
+        {
+            output: 'ars_nouveau:mana_condenser',
+            pattern: ['CAC', 'BDB', 'BEB'],
+            key: {
+                A: 'minecraft:conduit',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: 'ars_nouveau:arcane_stone',
+                E: 'minecraft:hopper'
+            },
+            id: 'ars_nouveau:mana_condenser'
+        },
+        {
+            output: 'ars_nouveau:arcane_core',
+            pattern: ['CAC', 'BDB', 'CAC'],
+            key: {
+                A: 'ars_nouveau:warding_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: ['#forge:storage_blocks/lapis', '#forge:storage_blocks/fluorite']
+            },
+            id: 'ars_nouveau:arcane_core'
+        },
+        {
+            output: 'ars_nouveau:arcane_pedestal',
+            pattern: ['CAC', 'BDB', 'CDC'],
+            key: {
+                A: 'ars_nouveau:arcane_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: ['#forge:gems/lapis', '#forge:gems/fluorite']
+            },
+            id: 'ars_nouveau:arcane_pedestal'
+        },
+        {
+            output: 'ars_nouveau:enchanting_apparatus',
+            pattern: ['CAC', 'BDB', 'CAC'],
+            key: {
+                A: 'ars_nouveau:warding_stone',
+                B: '#forge:nuggets/gold_brass',
+                C: '#forge:ingots/gold_brass',
+                D: 'minecraft:heart_of_the_sea'
+            },
+            id: 'ars_nouveau:enchanting_apparatus'
+        },
+        {
+            output: 'architects_palette:sunmetal_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: 'architects_palette:sunmetal_brick'
+            },
+            id: 'architects_palette:sunmetal_block'
+        },
+        {
+            output: 'bloodmagic:altar',
+            pattern: ['ABA', 'CDC', 'EEE'],
+            key: {
+                A: 'eidolon:gold_inlay',
+                B: 'eidolon:crucible',
+                C: 'occultism:otherstone',
+                D: 'minecraft:heart_of_the_sea',
+                E: '#forge:ingots/arcane_gold'
+            },
+            id: 'bloodmagic:blood_altar'
+        },
+        {
+            output: 'bloodmagic:alchemytable',
+            pattern: ['ABC', 'DDD', 'EEE'],
+            key: {
+                A: 'minecraft:brewing_stand',
+                B: 'bloodmagic:blankslate',
+                C: 'supplementaries:jar_tinted',
+                D: 'eidolon:wicked_weave',
+                E: 'eidolon:stone_altar'
+            },
+            id: 'bloodmagic:alchemy_table'
+        },
+        {
+            output: 'occultism:divination_rod',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: 'betterendforge:leather_wrapped_stick',
+                B: 'eidolon:tattered_cloth',
+                C: '#forge:rods/copper',
+                D: 'occultism:spirit_attuned_gem'
+            },
+            id: 'occultism:crafting/divination_rod'
+        },
+        {
+            output: 'meetyourfight:caged_heart',
+            pattern: ['AAA', 'ABA', 'ACA'],
+            key: {
+                A: '#forge:bones',
+                B: 'eidolon:zombie_heart',
+                C: 'meetyourfight:mossy_tooth'
+            },
+            id: 'meetyourfight:caged_heart'
+        },
+        {
+            output: 'bloodmagic:lavacrystal',
+            pattern: ['BDB', 'CAC', 'BCB'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },
+                B: '#forge:dusts/obsidian',
+                C: 'bloodmagic:reagentlava',
+                D: 'minecraft:conduit'
+            },
+            id: 'bloodmagic:lava_crystal'
+        },
+        {
+            output: 'ars_nouveau:mana_jar',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:nuggets/gold_brass',
+                B: '#forge:ingots/gold_brass',
+                C: 'supplementaries:jar',
+                D: 'ars_nouveau:warding_stone'
+            },
+            id: 'ars_nouveau:mana_jar'
+        },
+        {
+            output: 'ars_nouveau:glyph_press',
+            pattern: ['BDB', 'ACA', 'BDB'],
+            key: {
+                A: '#forge:nuggets/gold_brass',
+                B: '#forge:ingots/gold_brass',
+                C: 'minecraft:piston',
+                D: 'ars_nouveau:warding_stone'
+            },
+            id: 'ars_nouveau:glyph_press'
+        },
+        {
+            output: 'naturesaura:grated_chute',
+            pattern: ['A A', 'ABA', ' A '],
+            key: {
+                A: 'naturesaura:infused_iron',
+                B: '#forge:chests'
+            },
+            id: 'naturesaura:grated_chute'
+        },
+        {
+            output: 'kubejs:firmament',
+            pattern: ['AAB', 'ABA', 'BAA'],
+            key: {
+                A: 'minecraft:prismarine',
+                B: 'undergarden:tremblecrust'
+            }
+        },
+        {
+            output: 'eidolon:wooden_altar',
+            pattern: ['AAA', 'B B', 'B B'],
+            key: {
+                A: 'eidolon:polished_planks_slab',
+                B: 'eidolon:polished_planks'
+            },
+            id: 'eidolon:wooden_altar'
+        },
+        {
+            output: 'bloodmagic:daggerofsacrifice',
+            pattern: ['  A', 'BA ', 'CB '],
+            key: {
+                A: '#forge:ingots/gold_bronze',
+                B: 'eidolon:pewter_inlay',
+                C: '#forge:rods/wooden'
+            },
+            id: 'bloodmagic:altar/daggerofsacrifice'
         }
     ];
 

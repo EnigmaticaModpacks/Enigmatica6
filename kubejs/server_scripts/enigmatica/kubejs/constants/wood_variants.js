@@ -72,7 +72,9 @@ var woodVariantsToConstruct = [
     'upgrade_aquatic:driftwood',
     'upgrade_aquatic:river',
     'autumnity:maple',
-    'autumnity:sappy_maple'
+    'autumnity:sappy_maple',
+    'architects_palette:twisted'
+    // 'sushigocrafting:avocado'
 ];
 
 var buildWoodVariants = [];
@@ -205,6 +207,12 @@ woodVariantsToConstruct.forEach((variant) => {
             woodBlockStripped = 'byg:imparius_hyphae';
             plankBlock = 'byg:imparius_planks';
             slabBlock = 'byg:imparius_slab';
+            break;
+        case 'avocado':
+            woodBlock = 'minecraft:oak_wood';
+            logBlockStripped = 'minecraft:stripped_oak_log';
+            woodBlockStripped = 'minecraft:stripped_oak_wood';
+            plankBlock = 'minecraft:oak_planks';
             break;
         default:
     }

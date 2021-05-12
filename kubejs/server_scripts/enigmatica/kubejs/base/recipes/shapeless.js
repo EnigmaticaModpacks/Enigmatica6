@@ -198,10 +198,6 @@ events.listen('recipes', (event) => {
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']
         },
-        {
-            output: Item.of('buildersaddition:large_candle', 4),
-            inputs: ['#forge:wax', '#forge:wax', '#forge:wax', '#forge:string']
-        },
         { output: Item.of('occultism:tallow', 9), inputs: ['quark:tallow_block'] },
         {
             output: 'minecraft:writable_book',
@@ -329,6 +325,20 @@ events.listen('recipes', (event) => {
             ],
             output: Item.of('additional_lights:soul_fire_for_standing_torch_l', 4),
             id: 'additional_lights:soul_fire_for_standing_torch_l'
+        },
+        {
+            output: Item.of('emendatusenigmatica:signalum_dust', 4),
+            inputs: [
+                '#forge:dusts/silver',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
+            id: 'emendatusenigmatica:alloy_dust/signalum'
         }
     ];
 

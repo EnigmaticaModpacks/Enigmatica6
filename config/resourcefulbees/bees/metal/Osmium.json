@@ -21,12 +21,14 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations": [
-            {
-                "type": "BLOCK",
-                "inputID": "tag:forge:stone",
-                "outputs": [{ "outputID": "emendatusenigmatica:osmium_ore", "weight": 10 }]
-            }
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:osmium_ore", "weight": 10}
+            ]
+          }
         ]
     },
     "CentrifugeData": {
@@ -51,8 +53,8 @@
     },
     "BreedData": {
         "isBreedable": true,
-        "parent1": "iron",
-        "parent2": "obsidian",
+        "parent1": "skeleton",
+        "parent2": "zombie",
         "feedItem": "tag:forge:storage_blocks/osmium",
         "feedAmount": 1,
         "childGrowthDelay": -24000,
