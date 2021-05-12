@@ -62,7 +62,7 @@ events.listen('recipes', (event) => {
             // alex's mobs
             {
                 ingredients: [{item: 'alexsmobs:shark_tooth'}, { tag: 'forge:rods/wooden' }, { item: 'minecraft:kelp' }],
-                result: Item.of('alexsmobs:shark_tooth_arrow', 5)
+                result: Item.of('alexsmobs:shark_tooth_arrow', 8)
             },
         ]
     };
