@@ -23,7 +23,7 @@
 			tasks: [{
 				id: "000000000000070F",
 				type: "item",
-				title: "Any minecraft:beehives",
+				title: "Any forge:beehives/tier_0",
 				item: {
 					id: "itemfilters:tag",
 					Count: 1b,
@@ -246,12 +246,19 @@
 					}
 				}
 			}],
-			rewards: [{
-				id: "6DA6F6AC7E54E2C9",
-				type: "item",
-				item: "resourcefulbees:bee_jar",
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "6DA6F6AC7E54E2C9",
+					type: "item",
+					item: "resourcefulbees:bee_jar",
+					count: 8
+				},
+				{
+					id: "0C1504955F2C86AD",
+					type: "item",
+					item: "resourcefulbees:beepedia"
+				}
+			]
 		},
 		{
 			title: "Combs",
@@ -828,9 +835,7 @@
 			description: [
 				"Certain types of Bees have the ability to mutate Entities into other Entities, as long as they meet the requirements, and are able to fly close to those entities.",
 				"",
-				"Example: If a Blaze Bee is returning to the nest/hive passes near a Creeper Bee, it can mutate it into a Ghast Bee.",
-				"",
-				"Note: At the moment this is the only available mutation for the Entity Based Mutations, but more will be added in the future where fitting."
+				"Example: If a Blaze Bee is returning to the nest/hive passes near a Creeper Bee, it can mutate it into a Ghast Bee."
 			],
 			dependencies: ["0000000000000716"],
 			id: "0000000000000AC4",
