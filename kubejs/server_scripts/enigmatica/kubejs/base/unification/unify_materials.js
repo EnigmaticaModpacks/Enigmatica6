@@ -579,7 +579,7 @@ events.listen('recipes', (event) => {
             return;
         }
 
-        blacklistedMaterials = ['amber'];
+        blacklistedMaterials = ['amber', 'ender'];
 
         for (var i = 0; i < blacklistedMaterials.length; i++) {
             if (blacklistedMaterials[i] == material) {

@@ -74,6 +74,8 @@
 	#Percent chance for leafcutter ants to break leaves blocks when harvesting. Set to zero so that they can not break any blocks.
 	#Range: 0.0 ~ 1.0
 	leafcutterAntBreakLeavesChance = 0.2
+	#Makes Tarantula Hawks fireproof, perfect if you also want these guys to spawn in the nether.
+	fireproofTarantulaHawk = false
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -346,6 +348,18 @@
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		enderiophageSpawnRolls = 3
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		baldEagleSpawnWeight = 100
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		baldEagleSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		tarantulaHawkSpawnWeight = 6
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		tarantulaHawkSpawnRolls = 1
 
 		[general.spawning.uniqueSpawning]
 			#Whether to enable beached cachalot whales to spawn on beaches during thunder storms.

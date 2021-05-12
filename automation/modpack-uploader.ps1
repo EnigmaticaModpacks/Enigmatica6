@@ -297,16 +297,13 @@ function Update-Modlist {
             Remove-Item $ModlistCreatorJar -Recurse -Force -ErrorAction SilentlyContinue
             Get-GitHubRelease -repo "MelanX/ModListCreator" -file $ModlistCreatorJar
         }
-        Remove-Item $manifest -Force -Recurse -ErrorAction SilentlyContinue
-        7z e "$InstanceRoot\$CLIENT_ZIP_NAME.zip" $manifest
-        Remove-Item $ModlistPath -ErrorAction SilentlyContinue
-        java -jar $ModlistCreatorJar --markdown --output ".\" --detailed
-        Copy-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
 
+        Remove-Item $ModlistPath -ErrorAction SilentlyContinue
+        java -jar $ModlistCreatorJar --markdown --output ".\" --detailed --manifest "$InstanceRoot\$CLIENT_ZIP_NAME.zip"
+        Copy-Item -Path "$InstanceRoot\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
         Copy-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
-        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue
-        Remove-Item $manifest -ErrorAction SilentlyContinue
+        Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
     }
 }
 

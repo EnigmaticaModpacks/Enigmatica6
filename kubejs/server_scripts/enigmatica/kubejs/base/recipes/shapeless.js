@@ -325,6 +325,20 @@ events.listen('recipes', (event) => {
             ],
             output: Item.of('additional_lights:soul_fire_for_standing_torch_l', 4),
             id: 'additional_lights:soul_fire_for_standing_torch_l'
+        },
+        {
+            output: Item.of('emendatusenigmatica:signalum_dust', 4),
+            inputs: [
+                '#forge:dusts/silver',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
+            id: 'emendatusenigmatica:alloy_dust/signalum'
         }
     ];
 

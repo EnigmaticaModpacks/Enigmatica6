@@ -175,6 +175,7 @@ events.listen('recipes', (event) => {
         'thermal:devices/plugins/byg/tree_extractor_byg_mahogany',
         'thermal:devices/plugins/byg/tree_extractor_byg_baobab',
         'thermal:devices/tree_extractor/tree_extractor_jungle',
+        'thermal:signalum_dust_4',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
