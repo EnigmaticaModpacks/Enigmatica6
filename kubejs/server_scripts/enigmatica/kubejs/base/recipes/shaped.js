@@ -216,6 +216,47 @@ events.listen('recipes', (event) => {
             key: {
                 A: 'minecraft:snow_block'
             }
+        },
+        {// Add Oak Recipes for Forest Combs
+            output: Item.of("minecraft:oak_log", 16),
+            pattern: ['BCB', 'C C', 'BCB'],
+            key: {
+                B: 'resourcefulbees:forest_honeycomb',
+                C: 'resourcefulbees:wax'
+            }
+        },
+        {
+            output: Item.of("minecraft:oak_sapling", 8),
+            pattern: [' C ', 'B B', ' C '],
+            key: {
+                B: 'resourcefulbees:forest_honeycomb',
+                C: 'resourcefulbees:wax'
+            }
+        },
+        {
+            output: Item.of("minecraft:oak_leaves", 16),
+            pattern: ['   ', 'B C', '   '],
+            key: {
+                B: 'resourcefulbees:forest_honeycomb',
+                C: 'resourcefulbees:wax'
+            }
+        },
+        {// Add Stone Recipes for Rocky Combs
+            output: Item.of("minecraft:stone", 32),
+            pattern: ['BCB', 'CAC', 'BCB'],
+            key: {
+                A: ['#forge:storage_blocks/coal','#forge:storage_blocks/charcoal','#forge:storage_blocks/coal_coke','minecraft:lava_bucket'],
+                B: 'resourcefulbees:rocky_honeycomb',
+                C: 'resourcefulbees:wax'
+            }
+        },
+        {
+            output: Item.of("minecraft:cobblestone", 32),
+            pattern: ['BCB', 'C C', 'BCB'],
+            key: {
+                B: 'resourcefulbees:rocky_honeycomb',
+                C: 'resourcefulbees:wax'
+            }
         }
     ];
 
@@ -875,6 +916,42 @@ events.listen('recipes', (event) => {
             })
             .id(`botanypots:crafting/${color}_botany_pot`);
         event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
+    });
+
+    //Generate Forest Comb recipes for each tree type
+    treeRegistry.forEach((treeCategories) => {
+        if (treeCategories.type == "tree") {
+        treeCategories.trees.forEach((tree) => {
+            if (tree.trunk != "minecraft:oak_log") {
+             event.shaped(Item.of(tree.trunk, 16), ['BCB', 'CAC', 'BCB'], {
+                A: tree.sapling,
+                B: 'resourcefulbees:forest_honeycomb',
+                C: 'resourcefulbees:wax'
+            })};
+            if (tree.sapling != "minecraft:oak_sapling") {
+            event.shaped(Item.of(tree.sapling, 8), [' C ', 'BAB', ' C '], {
+                A: tree.sapling,
+                B: 'resourcefulbees:forest_honeycomb',
+                C: 'resourcefulbees:wax'
+            })};
+            if (tree.leaf != "minecraft:oak_leaves") {
+            event.shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
+                A: tree.sapling,
+                B: 'resourcefulbees:forest_honeycomb',
+                C: 'resourcefulbees:wax'
+            })};
+        })};
+    });
+
+    //Generate one RGBee Comb recipe for each dye
+    colors.forEach((color) => {
+        let flowers = dyeSources.filter((dyeSource) => dyeSource.primary == `minecraft:${color}_dye`);
+        let ingredients = flowers.map((flower) => flower.input)
+        event.shaped(Item.of(`minecraft:${color}_dye`, 16), ['BCB', 'CAC', 'BCB'], {
+            A: ingredients,
+            B: 'resourcefulbees:rgbee_honeycomb',
+            C: 'resourcefulbees:wax'
+        });
     });
 
     [
