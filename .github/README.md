@@ -51,7 +51,8 @@ git init                                            # Initialize git in folder
 git remote add origin URLToYourForkOfTheModpack     # Set remote origin to your fork of the modpack
 git remote -v                                       # Verify remote
 git fetch
-git pull origin develop
+git checkout develop
+git pull
 ```
 
 8. Now double click the script `InstanceSyncSetup.sh` to setup InstanceSync. It is found in the `automation` folder.
