@@ -5,6 +5,7 @@
 	filename: "natures_aura",
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
+	subtitle: ["Drain your surroundings"],
 	default_quest_shape: "",
 	images: [
 		{
@@ -68,6 +69,7 @@
 			rewards: [{
 				id: "00000000000000A6",
 				type: "item",
+				title: "Shears",
 				item: {
 					id: "minecraft:shears",
 					Count: 1b,
@@ -284,6 +286,7 @@
 				{
 					id: "000000000000035F",
 					type: "item",
+					title: "Eir's Token",
 					item: "naturesaura:break_prevention"
 				},
 				{
@@ -395,6 +398,7 @@
 				{
 					id: "000000000000035E",
 					type: "item",
+					title: "Token of Undying Friendship",
 					item: "naturesaura:pet_reviver"
 				},
 				{
@@ -440,6 +444,7 @@
 				{
 					id: "0000000000000702",
 					type: "item",
+					title: "Ancient Log",
 					item: "naturesaura:ancient_log",
 					count: 32
 				}
@@ -489,6 +494,7 @@
 			rewards: [{
 				id: "0000000000000359",
 				type: "item",
+				title: "Gold Leaf",
 				item: "naturesaura:gold_leaf",
 				count: 32
 			}]
@@ -583,6 +589,7 @@
 			rewards: [{
 				id: "000000000000032D",
 				type: "item",
+				title: "Botanist's Pickaxe",
 				item: {
 					id: "naturesaura:infused_iron_pickaxe",
 					Count: 1b,
@@ -719,6 +726,7 @@
 			rewards: [{
 				id: "000000000000032B",
 				type: "item",
+				title: "Industrial Dimmer",
 				item: "rsgauges:industrial_dimmer"
 			}]
 		},
@@ -770,6 +778,7 @@
 			rewards: [{
 				id: "0000000000000364",
 				type: "item",
+				title: "Staff of Baldur",
 				item: "naturesaura:light_staff"
 			}]
 		},
@@ -796,11 +805,13 @@
 				{
 					id: "000000000000031E",
 					type: "item",
+					title: "Item Frame",
 					item: "minecraft:item_frame"
 				},
 				{
 					id: "000000000000031F",
 					type: "item",
+					title: "Farming Stencil",
 					item: "naturesaura:farming_stencil"
 				}
 			]
@@ -919,11 +930,13 @@
 				{
 					id: "000000000000033D",
 					type: "item",
+					title: "Ender Ocular",
 					item: "naturesaura:ender_access"
 				},
 				{
 					id: "000000000000033E",
 					type: "item",
+					title: "Eye of Ender",
 					item: "minecraft:ender_eye",
 					count: 2
 				}
@@ -945,6 +958,7 @@
 			rewards: [{
 				id: "0000000000000363",
 				type: "item",
+				title: "Portal Charm",
 				item: "darkutils:charm_portal"
 			}]
 		},
@@ -968,6 +982,7 @@
 			rewards: [{
 				id: "000000000000031D",
 				type: "item",
+				title: "Item Frame",
 				item: "minecraft:item_frame",
 				count: 4
 			}]
@@ -1169,6 +1184,7 @@
 				{
 					id: "0000000000000354",
 					type: "item",
+					title: "Powder Manipulator",
 					item: "naturesaura:powder_placer"
 				},
 				{

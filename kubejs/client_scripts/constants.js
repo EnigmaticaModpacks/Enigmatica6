@@ -219,7 +219,8 @@ var regexHide = [
     /mapperbase:\w+_block/,
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
-    /betterendforge:\w+_anvil/
+    /betterendforge:\w+_anvil/,
+    /theoneprobe:/
 ];
 
 const disabledItems = [

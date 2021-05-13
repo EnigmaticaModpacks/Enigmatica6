@@ -4,6 +4,7 @@
 	order_index: 4,
 	filename: "pedestals",
 	title: "Pedestals",
+	subtitle: ["Getting on top of it all"],
 	icon: "pedestals:pedestal/stone333",
 	default_quest_shape: "",
 	quests: [
@@ -33,6 +34,7 @@
 			rewards: [{
 				id: "38DDD047E1FD3A07",
 				type: "item",
+				title: "Pedestal",
 				item: "pedestals:pedestal/stone333",
 				count: 2
 			}]
@@ -58,18 +60,21 @@
 				{
 					id: "098E3EA6ABFDA468",
 					type: "item",
+					title: "Red Dye",
 					item: "minecraft:red_dye",
 					count: 16
 				},
 				{
 					id: "79F92867195F75CE",
 					type: "item",
+					title: "Green Dye",
 					item: "minecraft:green_dye",
 					count: 16
 				},
 				{
 					id: "1EECE18CC58046AC",
 					type: "item",
+					title: "Blue Dye",
 					item: "minecraft:blue_dye",
 					count: 16
 				}
@@ -376,6 +381,7 @@
 				{
 					id: "06E7A9FE610657CD",
 					type: "item",
+					title: "Rich Soil Farmland",
 					item: "farmersdelight:rich_soil_farmland",
 					count: 24
 				},
@@ -652,12 +658,14 @@
 				{
 					id: "7D69D5766C6797ED",
 					type: "item",
+					title: "Memory Essence Bucket",
 					item: "pneumaticcraft:memory_essence_bucket",
 					count: 4
 				},
 				{
 					id: "0B8959A9559A7AFF",
 					type: "item",
+					title: "Small Fluid Tank",
 					item: "pneumaticcraft:small_tank"
 				}
 			]
@@ -828,6 +836,7 @@
 				{
 					id: "00EB9A9E96BE6AE7",
 					type: "item",
+					title: "Oak Log",
 					item: "minecraft:oak_log",
 					count: 32,
 					random_bonus: 32
@@ -916,16 +925,19 @@
 				{
 					id: "6B5F421D7DB51A89",
 					type: "item",
+					title: "Bee Spawn Egg",
 					item: "minecraft:bee_spawn_egg"
 				},
 				{
 					id: "4C89A90467F66E70",
 					type: "item",
+					title: "Sheep Spawn Egg",
 					item: "minecraft:sheep_spawn_egg"
 				},
 				{
 					id: "7EB80E7590BDF726",
 					type: "item",
+					title: "Cow Spawn Egg",
 					item: "minecraft:cow_spawn_egg"
 				}
 			]
@@ -1063,6 +1075,7 @@
 			rewards: [{
 				id: "17C1C8CA8C95E178",
 				type: "item",
+				title: "Gold Ingot",
 				item: "minecraft:gold_ingot",
 				count: 3,
 				random_bonus: 6,
@@ -1148,6 +1161,7 @@
 				{
 					id: "4BB47F1EBB842C15",
 					type: "item",
+					title: "Pedestal Upgrade Base",
 					item: "pedestals:coin/default",
 					count: 7
 				},

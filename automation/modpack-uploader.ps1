@@ -3,8 +3,6 @@
 . "$PSScriptRoot\settings.ps1"
 . "$PSScriptRoot\secrets.ps1"
 
-$manifest = "manifest.json"
-
 function Get-GitHubRelease {
     param(
         [parameter(Mandatory = $true)]
@@ -187,6 +185,8 @@ function Push-ClientFiles {
 }
 
 
+
+
 function Update-FileLinkInServerFiles {
     param(
         [int]$ClientFileId
@@ -195,6 +195,7 @@ function Update-FileLinkInServerFiles {
         $clientFileIdString = $ClientFileId.toString()
         $idPart1 = $clientFileIdString.Substring(0, 4)
         $idPart2 = $clientFileIdString.Substring(4, $clientFileIdString.length - 4)
+        $idPart2 = Remove-LeadingZero -text $idPart2
         $curseForgeCdnUrl = "https://media.forgecdn.net/files/$idPart1/$idPart2/$CLIENT_ZIP_NAME.zip"
         $content = (Get-Content -Path $ServerSetupConfigPath) -replace "https://media.forgecdn.net/files/\d+/\d+/.*.zip", $curseForgeCdnUrl 
         [IO.File]::WriteAllLines(($ServerSetupConfigPath | Resolve-Path), $content)
@@ -304,6 +305,18 @@ function Update-Modlist {
         Move-Item -Path "$InstanceRoot\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
         Copy-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination $ModlistPath -ErrorAction SilentlyContinue
         Move-Item -Path "$InstanceRoot\automation\MODLIST.md" -Destination "$InstanceRoot\MODLIST.md" -ErrorAction SilentlyContinue -Force
+    }
+}
+
+function Remove-LeadingZero {
+    param(
+        [string]$text
+    )
+    if ($text[0] -eq "0") {
+        return $text.Substring(1)
+    }
+    else {
+        return $text
     }
 }
 

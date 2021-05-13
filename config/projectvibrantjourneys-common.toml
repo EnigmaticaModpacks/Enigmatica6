@@ -4,14 +4,6 @@
 
 	#World Gen Settings
 	[Settings."World Gen"]
-		rocks = true
-		twigs = true
-		fallenLeaves = true
-		bones = true
-		charredBones = true
-		iceChunks = true
-		pinecones = true
-		seashells = true
 		seaOats = true
 		cattails = true
 		barkMushrooms = true
@@ -24,9 +16,21 @@
 		moreSeagrass = true
 		#Denser river grass
 		moreGrassInRivers = true
-		# % chance of groundcover placement
-		#Range: 0 ~ 100
-		groundcoverChance = 100
+
+		[Settings."World Gen".Groundcover]
+			rocks = true
+			twigs = true
+			fallenLeaves = true
+			bones = true
+			charredBones = true
+			iceChunks = true
+			pinecones = true
+			seashells = true
+			# % chance of groundcover placement
+			#Range: 0 ~ 100
+			groundcoverChance = 100
+			#Groundcover Biome Blacklist, example: ["minecraft:plains", "minecraft:beach"]
+			groundcoverBlacklist = []
 
 	#Mob Spawn Settings
 	[Settings."Mob Spawns"]
