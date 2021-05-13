@@ -72,6 +72,7 @@
 				{
 					id: "000000000000089D",
 					type: "item",
+					title: "Demon Will",
 					item: {
 						id: "bloodmagic:basemonstersoul",
 						Count: 1b,
@@ -117,6 +118,7 @@
 				{
 					id: "00000000000008C1",
 					type: "item",
+					title: "Sacrificial Knife",
 					item: {
 						id: "bloodmagic:sacrificialdagger",
 						Count: 1b,
@@ -160,6 +162,7 @@
 			rewards: [{
 				id: "000000000000090B",
 				type: "item",
+				title: "Sigil of the Blood Lamp",
 				item: "bloodmagic:bloodlightsigil"
 			}]
 		},
@@ -190,6 +193,7 @@
 				{
 					id: "00000000000008A5",
 					type: "item",
+					title: "Sentient Pickaxe",
 					item: {
 						id: "bloodmagic:soulpickaxe",
 						Count: 1b,
@@ -299,23 +303,27 @@
 				{
 					id: "00000000000008BB",
 					type: "item",
+					title: "Low Filter Module",
 					item: "prettypipes:low_filter_module"
 				},
 				{
 					id: "00000000000008BC",
 					type: "item",
+					title: "Low Extraction Module",
 					item: "prettypipes:low_extraction_module",
 					count: 2
 				},
 				{
 					id: "00000000000008BD",
 					type: "item",
+					title: "Stack Limiter Module",
 					item: "prettypipes:stack_size_module",
 					count: 2
 				},
 				{
 					id: "00000000000008BE",
 					type: "item",
+					title: "Pipe",
 					item: "prettypipes:pipe",
 					count: 4
 				}
@@ -340,6 +348,7 @@
 			rewards: [{
 				id: "00000000000008C3",
 				type: "item",
+				title: "Charm of Regeneration II",
 				item: {
 					id: "apotheosis:potion_charm",
 					Count: 1b,
@@ -374,6 +383,7 @@
 			rewards: [{
 				id: "00000000000008C6",
 				type: "item",
+				title: "Speed Rune",
 				item: "bloodmagic:speedrune",
 				count: 2
 			}]
@@ -411,12 +421,14 @@
 				{
 					id: "00000000000008CB",
 					type: "item",
+					title: "Sea Lantern",
 					item: "minecraft:sea_lantern",
 					count: 4
 				},
 				{
 					id: "00000000000008DA",
 					type: "item",
+					title: "Rune of Sacrifice",
 					item: "bloodmagic:sacrificerune",
 					count: 4
 				}
@@ -565,6 +577,7 @@
 			rewards: [{
 				id: "00000000000008EC",
 				type: "item",
+				title: "Rune of Capacity",
 				item: "bloodmagic:altarcapacityrune",
 				count: 8
 			}]
@@ -637,6 +650,7 @@
 			rewards: [{
 				id: "00000000000008F5",
 				type: "item",
+				title: "Demon Will Gauge",
 				item: "bloodmagic:demonwillgauge"
 			}]
 		},
@@ -738,6 +752,7 @@
 			rewards: [{
 				id: "00000000000009B1",
 				type: "item",
+				title: "Demon Will Crystal",
 				item: "bloodmagic:defaultcrystal",
 				count: 32
 			}]
@@ -884,6 +899,7 @@
 			rewards: [{
 				id: "0000000000000919",
 				type: "item",
+				title: "Divination Sigil",
 				item: "bloodmagic:divinationsigil"
 			}]
 		}

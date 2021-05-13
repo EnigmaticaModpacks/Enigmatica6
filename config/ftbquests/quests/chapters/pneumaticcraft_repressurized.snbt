@@ -28,6 +28,7 @@
 			rewards: [{
 				id: "00000000000000B1",
 				type: "item",
+				title: "Pneumatic Wrench",
 				item: {
 					id: "pneumaticcraft:pneumatic_wrench",
 					Count: 1b,
@@ -125,12 +126,14 @@
 				{
 					id: "00000000000000C1",
 					type: "item",
+					title: "Redstone Dust",
 					item: "minecraft:redstone",
 					count: 9
 				},
 				{
 					id: "00000000000000C2",
 					type: "item",
+					title: "Redstone Repeater",
 					item: "minecraft:repeater"
 				}
 			]
@@ -198,6 +201,7 @@
 			rewards: [{
 				id: "000000000000022D",
 				type: "item",
+				title: "Medium Fluid Tank",
 				item: {
 					id: "pneumaticcraft:medium_tank",
 					Count: 1b,
@@ -233,6 +237,7 @@
 				{
 					id: "00000000000000CE",
 					type: "item",
+					title: "Camouflage Applicator",
 					item: {
 						id: "pneumaticcraft:camo_applicator",
 						Count: 1b,
@@ -266,6 +271,7 @@
 			rewards: [{
 				id: "00000000000000D1",
 				type: "item",
+				title: "Heat Sink",
 				item: "pneumaticcraft:heat_sink"
 			}]
 		},
@@ -290,6 +296,7 @@
 			rewards: [{
 				id: "00000000000000D4",
 				type: "item",
+				title: "Thermal Lagging",
 				item: "pneumaticcraft:thermal_lagging",
 				count: 12
 			}]
@@ -337,6 +344,7 @@
 			rewards: [{
 				id: "00000000000000DB",
 				type: "item",
+				title: "Reinforced Chest",
 				item: "pneumaticcraft:reinforced_chest"
 			}]
 		},
@@ -360,11 +368,13 @@
 				{
 					id: "00000000000000DE",
 					type: "item",
+					title: "Block Tracker Upgrade",
 					item: "pneumaticcraft:block_tracker_upgrade"
 				},
 				{
 					id: "00000000000000DF",
 					type: "item",
+					title: "GPS Tool",
 					item: "pneumaticcraft:gps_tool"
 				}
 			]
@@ -429,6 +439,7 @@
 			rewards: [{
 				id: "00000000000000E5",
 				type: "item",
+				title: "Seismic Sensor",
 				item: "pneumaticcraft:seismic_sensor"
 			}]
 		},
@@ -489,12 +500,14 @@
 				{
 					id: "00000000000000EC",
 					type: "item",
+					title: "Cod n Chips",
 					item: "pneumaticcraft:cod_n_chips",
 					count: 16
 				},
 				{
 					id: "00000000000000ED",
 					type: "item",
+					title: "Dispenser Upgrade",
 					item: "pneumaticcraft:dispenser_upgrade",
 					count: 4
 				}
@@ -516,6 +529,7 @@
 			rewards: [{
 				id: "00000000000000F0",
 				type: "item",
+				title: "Speed Upgrade",
 				item: "pneumaticcraft:speed_upgrade",
 				count: 2
 			}]
@@ -605,12 +619,14 @@
 				{
 					id: "0000000000000105",
 					type: "item",
+					title: "Red Mushroom",
 					item: "minecraft:red_mushroom",
 					count: 16
 				},
 				{
 					id: "0000000000000106",
 					type: "item",
+					title: "Podzol",
 					item: "minecraft:podzol",
 					count: 4
 				}
@@ -756,24 +772,28 @@
 				{
 					id: "000000000000010D",
 					type: "item",
+					title: "Logistic Requester Frame",
 					item: "pneumaticcraft:logistics_frame_requester",
 					count: 8
 				},
 				{
 					id: "000000000000010E",
 					type: "item",
+					title: "Logistic Passive Provider Frame",
 					item: "pneumaticcraft:logistics_frame_passive_provider",
 					count: 8
 				},
 				{
 					id: "000000000000010F",
 					type: "item",
+					title: "Logistic Storage Frame",
 					item: "pneumaticcraft:logistics_frame_storage",
 					count: 8
 				},
 				{
 					id: "00000000000006FF",
 					type: "item",
+					title: "Logistic Active Provider Frame",
 					item: "pneumaticcraft:logistics_frame_active_provider",
 					count: 8
 				}
@@ -824,6 +844,7 @@
 				{
 					id: "0000000000000118",
 					type: "item",
+					title: "Magnet Upgrade",
 					item: "pneumaticcraft:magnet_upgrade"
 				}
 			]
@@ -852,6 +873,7 @@
 			rewards: [{
 				id: "000000000000011C",
 				type: "item",
+				title: "Speed Upgrade",
 				item: "pneumaticcraft:speed_upgrade",
 				count: 2
 			}]
@@ -989,11 +1011,13 @@
 				{
 					id: "000000000000012B",
 					type: "item",
+					title: "Collector Drone",
 					item: "pneumaticcraft:collector_drone"
 				},
 				{
 					id: "0000000000000701",
 					type: "item",
+					title: "Refined Obsidian Hoe",
 					item: {
 						id: "mekanismtools:refined_obsidian_hoe",
 						Count: 1b,
@@ -1026,11 +1050,13 @@
 				{
 					id: "000000000000012E",
 					type: "item",
+					title: "Dispenser Upgrade",
 					item: "pneumaticcraft:dispenser_upgrade"
 				},
 				{
 					id: "0000000000000700",
 					type: "item",
+					title: "Volume Upgrade",
 					item: "pneumaticcraft:volume_upgrade",
 					count: 4
 				}
@@ -1095,6 +1121,7 @@
 			rewards: [{
 				id: "0000000000000137",
 				type: "item",
+				title: "Inventory Upgrade",
 				item: "pneumaticcraft:inventory_upgrade",
 				count: 8
 			}]
@@ -1114,6 +1141,7 @@
 			rewards: [{
 				id: "000000000000013A",
 				type: "item",
+				title: "Range Upgrade",
 				item: "pneumaticcraft:range_upgrade",
 				count: 2
 			}]
@@ -1133,6 +1161,7 @@
 			rewards: [{
 				id: "000000000000013D",
 				type: "item",
+				title: "Speed Upgrade",
 				item: "pneumaticcraft:speed_upgrade",
 				count: 2
 			}]
@@ -1171,6 +1200,7 @@
 			rewards: [{
 				id: "0000000000000140",
 				type: "item",
+				title: "Programming Puzzle Piece",
 				item: "pneumaticcraft:programming_puzzle",
 				count: 64
 			}]
@@ -1218,6 +1248,7 @@
 			rewards: [{
 				id: "0000000000000147",
 				type: "item",
+				title: "Plastic Sheet",
 				item: "pneumaticcraft:plastic",
 				count: 8
 			}]
@@ -1237,6 +1268,7 @@
 			rewards: [{
 				id: "000000000000014A",
 				type: "item",
+				title: "Block of Emerald",
 				item: "minecraft:emerald_block"
 			}]
 		},
@@ -1415,12 +1447,14 @@
 				{
 					id: "0000000000000162",
 					type: "item",
+					title: "Transistor",
 					item: "pneumaticcraft:transistor",
 					count: 2
 				},
 				{
 					id: "0000000000000163",
 					type: "item",
+					title: "Capacitor",
 					item: "pneumaticcraft:capacitor",
 					count: 2
 				}
@@ -1494,6 +1528,7 @@
 			rewards: [{
 				id: "000000000000016D",
 				type: "item",
+				title: "Medium Fluid Tank",
 				item: "pneumaticcraft:medium_tank"
 			}]
 		},
@@ -1537,6 +1572,7 @@
 			rewards: [{
 				id: "0000000000000423",
 				type: "item",
+				title: "Memory Stick",
 				item: "pneumaticcraft:memory_stick"
 			}]
 		},

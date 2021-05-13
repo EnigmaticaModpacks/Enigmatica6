@@ -28,6 +28,7 @@
 			rewards: [{
 				id: "0000000000000504",
 				type: "item",
+				title: "Pestle and Mortar",
 				item: "botania:pestle_and_mortar"
 			}]
 		},
@@ -61,11 +62,13 @@
 				{
 					id: "0000000000000508",
 					type: "item",
+					title: "Flower Pouch",
 					item: "botania:flower_bag"
 				},
 				{
 					id: "000000000000050D",
 					type: "item",
+					title: "Shears",
 					item: {
 						id: "minecraft:shears",
 						Count: 1b,
@@ -99,6 +102,7 @@
 			rewards: [{
 				id: "00000000000005E6",
 				type: "item",
+				title: "Floral Fertilizer",
 				item: "botania:fertilizer",
 				count: 16
 			}]
@@ -410,12 +414,18 @@
 				{
 					id: "0000000000000523",
 					type: "item",
+					title: "Open Crate",
 					item: "botania:open_crate"
 				},
 				{
 					id: "00000000000005E8",
 					type: "item",
-					item: "botania:monocle"
+					title: "Manaseer Monacle",
+					item: {
+						id: "botania:monocle",
+						Count: 1b,
+						tag: {}
+					}
 				}
 			]
 		},
@@ -714,6 +724,7 @@
 				{
 					id: "00000000000005DB",
 					type: "item",
+					title: "Managlass Vial",
 					item: "botania:vial",
 					count: 8
 				},
@@ -767,6 +778,7 @@
 				{
 					id: "0000000000000556",
 					type: "item",
+					title: "Livingwood Avatar",
 					item: "botania:avatar"
 				},
 				{
@@ -1084,6 +1096,7 @@
 			rewards: [{
 				id: "000000000000058F",
 				type: "item",
+				title: "Spark Tinkerer",
 				item: "botania:spark_changer"
 			}]
 		},
@@ -1138,6 +1151,7 @@
 			rewards: [{
 				id: "0000000000000590",
 				type: "item",
+				title: "Corporea Spark",
 				item: "botania:corporea_spark",
 				count: 8
 			}]
@@ -1183,6 +1197,7 @@
 				{
 					id: "0000000000000594",
 					type: "item",
+					title: "Green Slime Block",
 					item: "minecraft:slime_block"
 				},
 				{
@@ -1289,6 +1304,7 @@
 				{
 					id: "00000000000005CF",
 					type: "item",
+					title: "Cellular Block",
 					item: "botania:cell_block",
 					count: 8
 				},

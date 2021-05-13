@@ -37,6 +37,7 @@
 			rewards: [{
 				id: "0000000000000CB4",
 				type: "item",
+				title: "Demon's Dream Seeds",
 				item: "occultism:datura_seeds"
 			}]
 		},
@@ -128,12 +129,14 @@
 				{
 					id: "0000000000000DF8",
 					type: "item",
+					title: "Otherworld Wood",
 					item: "occultism:otherworld_log",
 					count: 4
 				},
 				{
 					id: "0000000000000DF9",
 					type: "item",
+					title: "Oak Sapling",
 					item: {
 						id: "occultism:otherworld_sapling_natural",
 						Count: 1b,
@@ -144,6 +147,7 @@
 				{
 					id: "0000000000000E1D",
 					type: "item",
+					title: "Otherstone",
 					item: "occultism:otherstone",
 					count: 4
 				}
@@ -182,6 +186,7 @@
 				{
 					id: "0000000000000CDE",
 					type: "item",
+					title: "Otherstone",
 					auto: "disabled",
 					item: "occultism:otherstone",
 					count: 8
@@ -189,6 +194,7 @@
 				{
 					id: "0000000000000CDF",
 					type: "item",
+					title: "Spirit Attuned Gem",
 					auto: "disabled",
 					item: "occultism:spirit_attuned_gem",
 					count: 4
@@ -259,6 +265,7 @@
 				{
 					id: "0000000000000E64",
 					type: "item",
+					title: "Crushed End Stone",
 					item: "occultism:crushed_end_stone",
 					count: 2
 				}
@@ -336,6 +343,7 @@
 				{
 					id: "0000000000000DEB",
 					type: "item",
+					title: "Purified Ink",
 					item: "occultism:purified_ink",
 					count: 4
 				},
@@ -448,6 +456,7 @@
 				{
 					id: "0000000000000E27",
 					type: "item",
+					title: "Golden Chalk",
 					item: {
 						id: "occultism:chalk_gold",
 						Count: 1b,
@@ -490,6 +499,7 @@
 				{
 					id: "0000000000000E41",
 					type: "item",
+					title: "Purple Chalk",
 					item: {
 						id: "occultism:chalk_purple",
 						Count: 1b,
@@ -564,6 +574,7 @@
 				{
 					id: "0000000000000E6B",
 					type: "item",
+					title: "Tier 1 Dimensional Storage Stabilizer",
 					item: "occultism:storage_stabilizer_tier1"
 				},
 				{
@@ -600,6 +611,7 @@
 				{
 					id: "0000000000000E59",
 					type: "item",
+					title: "Tier 1 Dimensional Storage Stabilizer",
 					item: "occultism:storage_stabilizer_tier1",
 					count: 2
 				},
@@ -625,6 +637,7 @@
 				{
 					id: "0000000000000E61",
 					type: "item",
+					title: "Tier 2 Dimensional Storage Stabilizer",
 					item: "occultism:storage_stabilizer_tier2"
 				},
 				{
@@ -657,6 +670,7 @@
 				{
 					id: "0000000000000E57",
 					type: "item",
+					title: "Tier 3 Dimensional Storage Stabilizer",
 					item: "occultism:storage_stabilizer_tier3"
 				},
 				{
@@ -686,6 +700,7 @@
 				{
 					id: "0000000000000E54",
 					type: "item",
+					title: "Tier 4 Dimensional Storage Stabilizer",
 					item: "occultism:storage_stabilizer_tier4"
 				},
 				{
@@ -762,6 +777,7 @@
 				{
 					id: "0000000000000E5C",
 					type: "item",
+					title: "Stable Wormhole",
 					item: {
 						id: "occultism:stable_wormhole",
 						Count: 1b,
@@ -831,6 +847,7 @@
 				{
 					id: "0000000000000E5F",
 					type: "item",
+					title: "Iesnium Ingot",
 					item: "occultism:iesnium_ingot",
 					count: 4
 				},
@@ -886,6 +903,7 @@
 				{
 					id: "0000000000000E2D",
 					type: "item",
+					title: "Epic Oreo",
 					item: "resourcefulbees:oreo_cookie",
 					count: 8
 				}
@@ -960,6 +978,7 @@
 				{
 					id: "0000000000000E66",
 					type: "item",
+					title: "End Stone",
 					item: "minecraft:end_stone",
 					count: 16
 				},
@@ -1008,6 +1027,7 @@
 				{
 					id: "0000000000000E65",
 					type: "item",
+					title: "Skeleton Skull",
 					item: "minecraft:skeleton_skull",
 					count: 2
 				},
@@ -1057,6 +1077,7 @@
 				{
 					id: "0000000000000E3A",
 					type: "item",
+					title: "Ender Pearl",
 					item: "minecraft:ender_pearl",
 					count: 8
 				}
@@ -1131,6 +1152,7 @@
 				{
 					id: "0000000000000E4C",
 					type: "item",
+					title: "Iesnium Block",
 					item: "occultism:iesnium_block"
 				},
 				{
@@ -1348,6 +1370,7 @@
 				{
 					id: "0000000000000E42",
 					type: "item",
+					title: "Umbrella",
 					item: "artifacts:umbrella"
 				}
 			]
@@ -1519,6 +1542,7 @@
 			rewards: [{
 				id: "0000000000000E46",
 				type: "item",
+				title: "Iesnium Ore",
 				item: "occultism:iesnium_ore",
 				count: 8
 			}]
@@ -1553,6 +1577,7 @@
 			rewards: [{
 				id: "0000000000000E03",
 				type: "item",
+				title: "Otherworld Sapling",
 				item: "occultism:otherworld_sapling",
 				count: 16
 			}]
@@ -1695,7 +1720,6 @@
 			]
 		},
 		{
-			title: "Summon Drikwing Familiar",
 			icon: "minecraft:feather",
 			x: 1.5d,
 			y: 4.5d,
@@ -1705,9 +1729,7 @@
 				"",
 				"The Drikwing is an otherworldly bird that imparts special effects on its master when close.",
 				"",
-				"Tip: There is a ritual you can use to summon a wild parrot that can make the sacrifice needed for this ritual much easier.",
-				"",
-				"Tip #2: You must summon the Drikwing Familiar, the Wild Drikwing Summon will not work for this quest."
+				"Tip: There is a ritual you can use to summon a wild parrot that can make the sacrifice needed for this ritual much easier."
 			],
 			dependencies: ["0000000000000D9E"],
 			id: "0000000000000F3C",
@@ -1715,7 +1737,7 @@
 				{
 					id: "0000000000000F3D",
 					type: "advancement",
-					title: "Summon Drikwing Familiar",
+					title: "Summon Drikwing",
 					icon: "minecraft:feather",
 					advancement: "occultism:familiar_otherworld_bird",
 					criterion: ""
