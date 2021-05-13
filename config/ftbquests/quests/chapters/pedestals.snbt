@@ -4,8 +4,8 @@
 	order_index: 4,
 	filename: "pedestals",
 	title: "Pedestals",
+	subtitle: "Getting on top of it all",
 	icon: "pedestals:pedestal/stone333",
-	subtitle: ["Put things on top"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -112,8 +112,8 @@
 		},
 		{
 			title: "Advanced Enchantment",
-			x: 1.0d,
-			y: -1.5d,
+			x: 4.5d,
+			y: -2.5d,
 			description: [
 				"The Advanced enchantment allows upgrades that manipulate an inventory below the pedestal to interact with the inventories of entities. This can, for example, be used to import items from or export items to mobs using the appropriate upgrades.",
 				"",
@@ -137,8 +137,8 @@
 		},
 		{
 			title: "Pedestal Filters",
-			x: -1.5d,
-			y: 0.0d,
+			x: -2.5d,
+			y: -2.5d,
 			subtitle: "For Discriminating Consumers",
 			description: [
 				"Filters allow control over what items are allowed in a pedestal display. Filter type (whitelist/blacklist) can be changed by crouch-right-clicking the air. The filters that need to be programmed (such as Item or Mod filters) can be crouch-right-clicked on an inventory to set them to the contents of that inventory.",
@@ -1163,8 +1163,8 @@
 			]
 		},
 		{
-			x: -2.0d,
-			y: -1.0d,
+			x: -3.5d,
+			y: -2.5d,
 			description: ["Right-Click a pedestal with the Upgrade Tool to get information about the upgrade on it."],
 			dependencies: ["5519E152C45C620F"],
 			id: "1A8004185DA47AF8",
@@ -1180,8 +1180,8 @@
 			}]
 		},
 		{
-			x: -1.0d,
-			y: -1.5d,
+			x: -4.5d,
+			y: -2.5d,
 			description: [
 				"The Tool Swapper will allow you to add or remove Tools to some upgrades. Hold a tool you'd like to add in your off-hand and Right-Click the pedestal with the swapper to insert a tool, or Right-Click the pedestal with the tool when your off-hand is empty to remove one.",
 				"",
@@ -1295,8 +1295,8 @@
 		},
 		{
 			title: "Enchantment Focus Books",
-			x: 2.0d,
-			y: -1.0d,
+			x: 3.5d,
+			y: -2.5d,
 			description: ["It's wonderful that you can enchant your upgrades, but that can be so... random. These books allow you to ensure you get the particular enchant you need. Keep in mind that you cannot combine these with an upgrade in a vanilla anvil - you MUST use the XP Anvil from Pedestals."],
 			dependencies: ["305B5A8507D4567A"],
 			id: "1D239668DA764C52",
@@ -1344,8 +1344,8 @@
 		},
 		{
 			title: "Relays",
-			x: -2.0d,
-			y: 1.0d,
+			x: -1.5d,
+			y: 0.0d,
 			description: [
 				"Moving items around with Pedestals is as simple as linking them, but pedestals without upgrades are not part of the Pedestal network for Fluid, XP, or FE.",
 				"",
@@ -1389,8 +1389,8 @@
 		},
 		{
 			title: "Storage Tanks",
-			x: 2.0d,
-			y: 1.0d,
+			x: 1.5d,
+			y: 0.0d,
 			subtitle: "Aesthetic Hoarding",
 			description: [
 				"Sometimes you want to store lots of stuff, and Pedestals has your back. These upgrades will enhance your ability to hoard large volumes of everything, and act as buffers in your Pedestals networks.",
@@ -1438,8 +1438,8 @@
 			}]
 		},
 		{
-			x: 1.5d,
-			y: 0.0d,
+			x: 2.5d,
+			y: -2.5d,
 			description: [
 				"Pedestal Upgrades can be enchanted; they can take vanilla enchants like Fortune and Silk Touch, but the mod also has six enchantments specific to it:",
 				"",
