@@ -28,6 +28,7 @@
 			rewards: [{
 				id: "00000000000004B9",
 				type: "item",
+				title: "Crescent Hammer",
 				item: "thermal:wrench"
 			}]
 		},
@@ -69,12 +70,14 @@
 				{
 					id: "00000000000004EC",
 					type: "item",
+					title: "Energy Cable (Basic)",
 					item: "powah:energy_cable_basic",
 					count: 8
 				},
 				{
 					id: "000000000000063A",
 					type: "item",
+					title: "Energy Cell (Basic)",
 					item: "powah:energy_cell_basic"
 				},
 				{
@@ -109,6 +112,7 @@
 				{
 					id: "00000000000004BA",
 					type: "item",
+					title: "Jungle Sapling",
 					auto: "disabled",
 					item: "minecraft:jungle_sapling",
 					count: 4
@@ -124,6 +128,7 @@
 				{
 					id: "0000000000000F87",
 					type: "item",
+					title: "Acacia Sapling",
 					item: "minecraft:acacia_sapling",
 					count: 4
 				}
@@ -165,6 +170,7 @@
 				{
 					id: "0000000000000639",
 					type: "item",
+					title: "Basic Mechanical Pipe",
 					item: "mekanism:basic_mechanical_pipe",
 					count: 8
 				}
@@ -269,6 +275,7 @@
 				{
 					id: "00000000000004ED",
 					type: "item",
+					title: "Sweet Berries",
 					item: "minecraft:sweet_berries",
 					count: 16
 				},
@@ -364,6 +371,7 @@
 				{
 					id: "00000000000004F6",
 					type: "item",
+					title: "Metal Press Mold: Gear",
 					item: "immersiveengineering:mold_gear"
 				},
 				{
@@ -791,6 +799,7 @@
 			rewards: [{
 				id: "0000000000000F9C",
 				type: "item",
+				title: "Expanded Tank Construction",
 				item: "thermal:fluid_tank_augment"
 			}]
 		},
@@ -823,6 +832,7 @@
 			rewards: [{
 				id: "0000000000000F88",
 				type: "item",
+				title: "Holding IV",
 				item: {
 					id: "minecraft:enchanted_book",
 					Count: 1b,

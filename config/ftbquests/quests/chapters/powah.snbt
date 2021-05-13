@@ -31,6 +31,7 @@
 			rewards: [{
 				id: "413EB9C7629D2B60",
 				type: "item",
+				title: "Wrench",
 				item: {
 					id: "powah:wrench",
 					Count: 1b,
@@ -96,6 +97,7 @@
 			rewards: [{
 				id: "7698C3956B71648E",
 				type: "item",
+				title: "Dielectric Casing",
 				item: "powah:dielectric_casing",
 				count: 2
 			}]
@@ -131,6 +133,7 @@
 				{
 					id: "00000000000001B2",
 					type: "item",
+					title: "Block of Coal",
 					item: "minecraft:coal_block",
 					count: 4
 				},
@@ -203,6 +206,7 @@
 			rewards: [{
 				id: "00000000000001B4",
 				type: "item",
+				title: "Lava Bucket",
 				item: "minecraft:lava_bucket"
 			}]
 		},
@@ -238,6 +242,7 @@
 				{
 					id: "00000000000001B6",
 					type: "item",
+					title: "Sink",
 					item: "cookingforblockheads:sink"
 				},
 				{
@@ -278,6 +283,7 @@
 				{
 					id: "00000000000001B8",
 					type: "item",
+					title: "Sunglasses",
 					item: "bountifulbaubles:sunglasses"
 				},
 				{
@@ -335,6 +341,7 @@
 			rewards: [{
 				id: "00000000000001BB",
 				type: "item",
+				title: "Block of Uraninite",
 				item: "powah:uraninite_block",
 				count: 8
 			}]
@@ -375,6 +382,7 @@
 				{
 					id: "00000000000001BD",
 					type: "item",
+					title: "Uraninite",
 					item: "powah:uraninite",
 					count: 32,
 					only_one: true
@@ -382,6 +390,7 @@
 				{
 					id: "00000000000001BE",
 					type: "item",
+					title: "Blue Ice",
 					item: "minecraft:blue_ice",
 					count: 32,
 					only_one: true
@@ -406,6 +415,7 @@
 			rewards: [{
 				id: "00000000000001C2",
 				type: "item",
+				title: "Charged Snowball",
 				item: "powah:charged_snowball",
 				count: 8
 			}]
@@ -449,6 +459,7 @@
 			rewards: [{
 				id: "00000000000001C5",
 				type: "item",
+				title: "Energizing Rod (Basic)",
 				item: "powah:energizing_rod_basic",
 				count: 2
 			}]
@@ -522,6 +533,7 @@
 			rewards: [{
 				id: "0000000000000226",
 				type: "item",
+				title: "Energy Cell (Hardened)",
 				item: "powah:energy_cell_hardened"
 			}]
 		},
@@ -597,6 +609,7 @@
 			rewards: [{
 				id: "0000000000000227",
 				type: "item",
+				title: "Ender Core",
 				item: "powah:ender_core",
 				count: 4
 			}]
@@ -641,6 +654,7 @@
 			rewards: [{
 				id: "0000000000000215",
 				type: "item",
+				title: "Battery (Hardened)",
 				item: {
 					id: "powah:battery_hardened",
 					Count: 1b,
@@ -663,6 +677,7 @@
 			rewards: [{
 				id: "0000000000000217",
 				type: "item",
+				title: "Block of Energized Steel",
 				item: "powah:energized_steel_block",
 				count: 4
 			}]
@@ -686,6 +701,7 @@
 			rewards: [{
 				id: "0000000000000219",
 				type: "item",
+				title: "Energizing Rod (Niotic)",
 				item: "powah:energizing_rod_niotic",
 				count: 2
 			}]
@@ -706,18 +722,21 @@
 				{
 					id: "000000000000021B",
 					type: "item",
+					title: "Block of Uraninite",
 					item: "powah:uraninite_block",
 					count: 8
 				},
 				{
 					id: "000000000000021C",
 					type: "item",
+					title: "Block of Niotic Crystal",
 					item: "powah:niotic_crystal_block",
 					count: 8
 				},
 				{
 					id: "000000000000021D",
 					type: "item",
+					title: "Dry Ice",
 					item: "powah:dry_ice",
 					count: 8
 				}
@@ -744,6 +763,7 @@
 				{
 					id: "000000000000021F",
 					type: "item",
+					title: "Energy Cell (Nitro)",
 					item: "powah:energy_cell_nitro"
 				},
 				{

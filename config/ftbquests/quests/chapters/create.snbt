@@ -33,6 +33,7 @@
 			rewards: [{
 				id: "0000000000000CB9",
 				type: "item",
+				title: "Wrench",
 				item: "create:wrench"
 			}]
 		},
@@ -66,6 +67,7 @@
 			rewards: [{
 				id: "0000000000000D66",
 				type: "item",
+				title: "Engineer's Goggles",
 				item: "create:goggles"
 			}]
 		},
@@ -112,6 +114,7 @@
 				{
 					id: "0000000000000CC0",
 					type: "item",
+					title: "Super Glue",
 					item: {
 						id: "create:super_glue",
 						Count: 1b,
@@ -193,11 +196,13 @@
 				{
 					id: "0000000000000CCA",
 					type: "item",
+					title: "Analog Lever",
 					item: "create:analog_lever"
 				},
 				{
 					id: "0000000000000D73",
 					type: "item",
+					title: "Magma Block",
 					item: "minecraft:magma_block",
 					count: 4
 				}
@@ -241,6 +246,7 @@
 				{
 					id: "0000000000000D8A",
 					type: "item",
+					title: "Blast Furnace",
 					item: "minecraft:blast_furnace"
 				}
 			]
@@ -275,6 +281,7 @@
 				{
 					id: "0000000000000D80",
 					type: "item",
+					title: "Kelp",
 					item: "minecraft:kelp",
 					count: 16
 				}
@@ -485,6 +492,7 @@
 				{
 					id: "0000000000000D5B",
 					type: "item",
+					title: "Large Cogwheel",
 					item: "create:large_cogwheel"
 				},
 				{
@@ -544,6 +552,7 @@
 			rewards: [{
 				id: "0000000000000CF1",
 				type: "item",
+				title: "Encased Fan",
 				item: "create:encased_fan"
 			}]
 		},
@@ -1219,6 +1228,7 @@
 			rewards: [{
 				id: "0000000000000D65",
 				type: "item",
+				title: "Minecart",
 				item: "minecraft:minecart"
 			}]
 		},
@@ -1251,6 +1261,7 @@
 				{
 					id: "0000000000000D8C",
 					type: "item",
+					title: "Piston Extension Pole",
 					item: "create:piston_extension_pole",
 					count: 8
 				}
@@ -1706,6 +1717,7 @@
 			rewards: [{
 				id: "1CC172C5323EADC6",
 				type: "item",
+				title: "Empty Schematic",
 				item: "create:empty_schematic"
 			}]
 		},
@@ -1736,6 +1748,7 @@
 			rewards: [{
 				id: "123B498A6DDBFD23",
 				type: "item",
+				title: "Gunpowder",
 				item: "minecraft:gunpowder",
 				count: 16
 			}]
