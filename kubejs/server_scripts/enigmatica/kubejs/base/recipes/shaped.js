@@ -218,27 +218,27 @@ events.listen('recipes', (event) => {
             }
         },
         {// Add Oak Recipes for Forest Combs
-            output: Item.of("minecraft:oak_log", 16),
+            output: Item.of("minecraft:oak_log", 8),
             pattern: ['BCB', 'C C', 'BCB'],
             key: {
-                B: 'resourcefulbees:forest_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:wax'
             }
         },
         {
-            output: Item.of("minecraft:oak_sapling", 8),
+            output: Item.of("minecraft:oak_sapling", 4),
             pattern: [' C ', 'B B', ' C '],
             key: {
-                B: 'resourcefulbees:forest_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:wax'
             }
         },
         {
             output: Item.of("minecraft:oak_leaves", 16),
             pattern: ['   ', 'B C', '   '],
             key: {
-                B: 'resourcefulbees:forest_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:wax'
             }
         },
         {// Add Stone Recipes for Rocky Combs
@@ -246,16 +246,55 @@ events.listen('recipes', (event) => {
             pattern: ['BCB', 'CAC', 'BCB'],
             key: {
                 A: ['#forge:storage_blocks/coal','#forge:storage_blocks/charcoal','#forge:storage_blocks/coal_coke','minecraft:lava_bucket'],
-                B: 'resourcefulbees:rocky_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:rocky_honeycomb',
+                B: 'resourcefulbees:wax'
             }
         },
         {
             output: Item.of("minecraft:cobblestone", 32),
             pattern: ['BCB', 'C C', 'BCB'],
             key: {
+                C: 'resourcefulbees:rocky_honeycomb',
+                B: 'resourcefulbees:wax'
+            }
+        },
+        {
+            output: Item.of("minecraft:diorite", 32),
+            pattern: ['CBC', 'DAD', 'CBC'],
+            key: {
+                A: ['#forge:storage_blocks/coal','#forge:storage_blocks/charcoal','#forge:storage_blocks/coal_coke','minecraft:lava_bucket'],
                 B: 'resourcefulbees:rocky_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:wax',
+                D: 'resourcefulbees:nether_quartz_honeycomb'
+            }
+        },
+        {
+            output: Item.of("minecraft:andesite", 32),
+            pattern: ['CDC', 'BAB', 'CDC'],
+            key: {
+                A: ['#forge:storage_blocks/coal','#forge:storage_blocks/charcoal','#forge:storage_blocks/coal_coke','minecraft:lava_bucket'],
+                B: 'resourcefulbees:rocky_honeycomb',
+                C: 'resourcefulbees:wax',
+                D: 'resourcefulbees:nether_quartz_honeycomb'
+            }
+        },
+        {// Add Wet Comb -> Water Bucket Recipe
+            output: "minecraft:water_bucket",
+            pattern: ['BCB', 'CAC', 'BCB'],
+            key: {
+                C: 'resourcefulbees:water_honeycomb',
+                B: 'resourcefulbees:wax',
+                A: 'minecraft:bucket'
+            }
+        },
+        {// Add Blaze + Coal Comb -> Lava Bucket Recipe
+            output: "minecraft:lava_bucket",
+            pattern: ['BCB', 'CAC', 'BCB'],
+            key: {
+                D: 'resourcefulbees:blaze_honeycomb',
+                C: 'resourcefulbees:coal_honeycomb',
+                B: 'resourcefulbees:wax',
+                A: 'minecraft:bucket'
             }
         }
     ];
@@ -919,39 +958,39 @@ events.listen('recipes', (event) => {
         event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
     });
 
-    //Generate Forest Comb recipes for each tree type
+    //Generate Forest Comb recipes for each tree type other than Oak (those are handled under newRecipes)
     treeRegistry.forEach((treeCategories) => {
         if (treeCategories.type == "tree") {
         treeCategories.trees.forEach((tree) => {
             if (tree.trunk != "minecraft:oak_log") {
-             event.shaped(Item.of(tree.trunk, 16), ['BCB', 'CAC', 'BCB'], {
+             event.shaped(Item.of(tree.trunk, 8), ['BCB', 'CAC', 'BCB'], {
                 A: tree.sapling,
-                B: 'resourcefulbees:forest_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:wax'
             })};
             if (tree.sapling != "minecraft:oak_sapling") {
-            event.shaped(Item.of(tree.sapling, 8), [' C ', 'BAB', ' C '], {
+            event.shaped(Item.of(tree.sapling, 4), [' C ', 'BAB', ' C '], {
                 A: tree.sapling,
-                B: 'resourcefulbees:forest_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:wax'
             })};
             if (tree.leaf != "minecraft:oak_leaves") {
             event.shaped(Item.of(tree.leaf, 16), ['   ', 'BAC', '   '], {
                 A: tree.sapling,
-                B: 'resourcefulbees:forest_honeycomb',
-                C: 'resourcefulbees:wax'
+                C: 'resourcefulbees:forest_honeycomb',
+                B: 'resourcefulbees:wax'
             })};
         })};
     });
 
-    //Generate one RGBee Comb recipe for each dye
+    //Generate one RGBee Comb recipe for each dye, usting the appropriate flowers from dyeSources
     colors.forEach((color) => {
         let flowers = dyeSources.filter((dyeSource) => dyeSource.primary == `minecraft:${color}_dye`);
         let ingredients = flowers.map((flower) => flower.input)
-        event.shaped(Item.of(`minecraft:${color}_dye`, 16), ['BCB', 'CAC', 'BCB'], {
+        event.shaped(Item.of(`minecraft:${color}_dye`, 8), ['BCB', 'CAC', 'BCB'], {
             A: ingredients,
-            B: 'resourcefulbees:rgbee_honeycomb',
-            C: 'resourcefulbees:wax'
+            C: 'resourcefulbees:rgbee_honeycomb',
+            B: 'resourcefulbees:wax'
         });
     });
 
