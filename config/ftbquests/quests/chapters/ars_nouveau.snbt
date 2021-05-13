@@ -28,6 +28,7 @@
 			rewards: [{
 				id: "00000000000003AF",
 				type: "item",
+				title: "Novice Spell Book",
 				item: "ars_nouveau:novice_spell_book"
 			}]
 		},
@@ -50,6 +51,7 @@
 			rewards: [{
 				id: "00000000000005F5",
 				type: "item",
+				title: "Glyph: AOE",
 				item: "ars_nouveau:glyph_aoe"
 			}]
 		},
@@ -91,6 +93,7 @@
 				{
 					id: "00000000000003C1",
 					type: "item",
+					title: "Worldshaper's Sextant",
 					item: "botania:sextant"
 				},
 				{
@@ -124,6 +127,7 @@
 			rewards: [{
 				id: "0000000000000647",
 				type: "item",
+				title: "Glyph: Craft",
 				item: "ars_nouveau:glyph_craft"
 			}]
 		},
@@ -152,6 +156,7 @@
 			rewards: [{
 				id: "0000000000000669",
 				type: "item",
+				title: "Glyph: Grow",
 				item: "ars_nouveau:glyph_grow"
 			}]
 		},
@@ -180,6 +185,7 @@
 			rewards: [{
 				id: "0000000000000668",
 				type: "item",
+				title: "Glyph: Split",
 				item: "ars_nouveau:glyph_split"
 			}]
 		},
@@ -245,6 +251,7 @@
 			rewards: [{
 				id: "00000000000009F6",
 				type: "item",
+				title: "Glyph: Launch",
 				item: "ars_nouveau:glyph_launch"
 			}]
 		},
@@ -303,6 +310,7 @@
 			rewards: [{
 				id: "00000000000003D4",
 				type: "item",
+				title: "Scribes Table",
 				item: "ars_nouveau:scribes_table"
 			}]
 		},
@@ -325,6 +333,7 @@
 			rewards: [{
 				id: "00000000000005F4",
 				type: "item",
+				title: "Glyph: Harvest",
 				item: "ars_nouveau:glyph_harvest"
 			}]
 		},
@@ -403,6 +412,7 @@
 			rewards: [{
 				id: "00000000000009FA",
 				type: "item",
+				title: "Jar of Voiding",
 				item: "ars_nouveau:void_jar"
 			}]
 		},
@@ -427,6 +437,7 @@
 			rewards: [{
 				id: "000000000000067F",
 				type: "item",
+				title: "Glyph: Light",
 				item: "ars_nouveau:glyph_light"
 			}]
 		},
@@ -451,6 +462,7 @@
 			rewards: [{
 				id: "00000000000003EF",
 				type: "item",
+				title: "Dominion Wand",
 				item: "ars_nouveau:dominion_wand"
 			}]
 		},
@@ -524,11 +536,13 @@
 				{
 					id: "00000000000009EA",
 					type: "item",
+					title: "Item Scroll: Allow",
 					item: "ars_nouveau:allow_scroll"
 				},
 				{
 					id: "00000000000009EB",
 					type: "item",
+					title: "Item Scroll: Deny",
 					item: "ars_nouveau:deny_scroll"
 				}
 			]
@@ -563,18 +577,21 @@
 				{
 					id: "0AC24D43ED187EBE",
 					type: "item",
+					title: "Bamboo",
 					item: "minecraft:bamboo",
 					count: 4
 				},
 				{
 					id: "4A7B725DE75256E3",
 					type: "item",
+					title: "Pumpkin Seeds",
 					item: "minecraft:pumpkin_seeds",
 					count: 4
 				},
 				{
 					id: "307E04AA8AC5B992",
 					type: "item",
+					title: "Dark Oak Sapling",
 					item: "minecraft:dark_oak_sapling",
 					count: 4
 				}
@@ -758,6 +775,7 @@
 			rewards: [{
 				id: "00000000000009FE",
 				type: "item",
+				title: "Glyph: Fortune",
 				item: "ars_nouveau:glyph_fortune"
 			}]
 		},
@@ -781,6 +799,7 @@
 			rewards: [{
 				id: "0000000000000A37",
 				type: "item",
+				title: "Glyph: Fangs",
 				item: "ars_nouveau:glyph_fangs"
 			}]
 		},
@@ -904,6 +923,7 @@
 				{
 					id: "3775F901374943C8",
 					type: "item",
+					title: "Potion of Absorption",
 					item: {
 						id: "minecraft:potion",
 						Count: 1b,
@@ -915,6 +935,7 @@
 				{
 					id: "77257BF40CBAC438",
 					type: "item",
+					title: "Potion of Fire Resistance",
 					item: {
 						id: "minecraft:potion",
 						Count: 1b,
