@@ -3,7 +3,7 @@
 	group: "74B3CF67FCEAB20F",
 	order_index: 0,
 	filename: "tools",
-	title: "Tools",
+	title: "Tools and Armor",
 	icon: {
 		id: "minecraft:netherite_pickaxe",
 		Count: 1b,
@@ -11,6 +11,7 @@
 			Damage: 0
 		}
 	},
+	subtitle: ["(Or armour)"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -1038,6 +1039,7 @@
 		{
 			x: -3.5d,
 			y: -7.5d,
+			subtitle: "Be the Change",
 			description: ["Used for applying all upgrades to the MekaTool and MekaSuit pieces."],
 			dependencies: ["00000000000007A9"],
 			id: "0000000000000453",
@@ -1186,6 +1188,7 @@
 			}]
 		},
 		{
+			title: "Fortune Laser Upgrade (Tier 3)",
 			x: -10.5d,
 			y: -15.0d,
 			dependencies: ["000000000000045F"],
@@ -1205,6 +1208,7 @@
 			}]
 		},
 		{
+			title: "Silk Touch Laser Upgrade (Tier 1)",
 			x: -11.0d,
 			y: -14.0d,
 			dependencies: ["000000000000045F"],
@@ -1232,6 +1236,7 @@
 			]
 		},
 		{
+			title: "Efficiency Laser Upgrade (Tier 5)",
 			x: -9.5d,
 			y: -15.0d,
 			dependencies: ["000000000000045F"],
@@ -1251,6 +1256,7 @@
 			}]
 		},
 		{
+			title: "Battery Laser Upgrade (Tier 3)",
 			x: -9.0d,
 			y: -14.0d,
 			dependencies: ["000000000000045F"],
@@ -1415,6 +1421,7 @@
 		{
 			x: -1.5d,
 			y: -13.0d,
+			subtitle: "It's Something, Not Sure What",
 			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."],
 			dependencies: ["0000000000000517"],
 			id: "000000000000047A",
@@ -1442,6 +1449,7 @@
 		{
 			x: -2.0d,
 			y: -12.0d,
+			subtitle: "Thing of Beauty",
 			description: ["Magically imbued and magically combined. This tool can absorb mana to increase its power, just like the Terrashatterer."],
 			dependencies: ["0000000000000595"],
 			id: "000000000000047C",
@@ -1547,6 +1555,7 @@
 		{
 			x: -2.0d,
 			y: -14.0d,
+			subtitle: "Dig the Water",
 			description: ["Neptunium Tools offer many benefits to those who spend most of their time under water. "],
 			dependencies: ["00000000000004B3"],
 			id: "0000000000000480",
@@ -2025,6 +2034,7 @@
 		{
 			x: -1.5d,
 			y: -15.0d,
+			subtitle: "Dig the Air",
 			description: [
 				"Nature's Aura has a variety of useful mining implements, each with their own special features beyond basic block breaking.",
 				"",
@@ -2084,6 +2094,7 @@
 		{
 			x: -7.5d,
 			y: -13.5d,
+			subtitle: "Cannot dig beyond bedrock",
 			description: ["The Infinity Drill will allow you mine big areas when using biofuel. It can be upgraded by charging it."],
 			dependencies: ["0000000000000082"],
 			id: "0000000000000F5F",
@@ -2109,6 +2120,7 @@
 		{
 			x: -6.0d,
 			y: -13.0d,
+			subtitle: "Beat that, buzzsaw",
 			description: ["The Infinity Saw will allow you chop big forests when using biofuel. It can be upgraded by charging it."],
 			dependencies: ["0000000000000F09"],
 			id: "0000000000000F61",
@@ -2134,6 +2146,7 @@
 		{
 			x: -5.0d,
 			y: -13.0d,
+			subtitle: "Trident * ♾",
 			description: ["The Infinity Trident is an upgraded version of the Minecraft Trident, most of the enchantments can be unlocked by upgrading it. It can be upgraded by charging it."],
 			dependencies: ["0000000000000F07"],
 			id: "0000000000000F63",
@@ -2162,6 +2175,7 @@
 		{
 			x: -3.5d,
 			y: -13.5d,
+			subtitle: "Sadly Cannot Make Multiblocks",
 			description: ["The Infinity Hammer will allow you attack enemies in big areas when using biofuel. It can be upgraded by charging it."],
 			dependencies: ["0000000000000F0B"],
 			id: "0000000000000F65",
@@ -2637,6 +2651,7 @@
 		{
 			x: -3.0d,
 			y: -1.5d,
+			subtitle: "A Clean Job",
 			description: ["An exceptional cutting implement that can cleanly carve out blocks of Stone, Ice, or Glass, effectively acting as a tool with Silk Touch. "],
 			dependencies: ["1487479CFA348530"],
 			id: "650F8ED52289B8AC",
@@ -2663,6 +2678,7 @@
 		{
 			x: -7.0d,
 			y: -1.0d,
+			subtitle: "Don't Burst It",
 			description: ["The Mining Drill’s engine is not normally capable of operating under water. However, with the addition of a Pressurized Air Tank it can be kept running at full speed."],
 			dependencies: ["0A476C6332EB6477"],
 			id: "322F7E60078AC6F6",
@@ -2683,6 +2699,7 @@
 		{
 			x: -8.0d,
 			y: -1.5d,
+			subtitle: "Diggy Diggy Hole",
 			description: [
 				"Drill heads do wear out over time, though they can be removed from the drill and repaired in an Anvil. ",
 				"",
@@ -2776,6 +2793,7 @@
 		{
 			x: -4.0d,
 			y: -1.0d,
+			subtitle: "So Wait, Instead of Arrows...",
 			description: ["The Blade Quiver may be attached to the Buzzsaw in the Engineer’s Workbench, holds additional blades, and allows you to spot between them on-the-fly in the field. Sneak + Scroll Wheel to change blades. "],
 			dependencies: ["1487479CFA348530"],
 			id: "283516E560D1D20E",
@@ -2826,9 +2844,17 @@
 			}]
 		},
 		{
+			title: "Up Goer Five",
 			x: -5.5d,
-			y: -14.5d,
-			dependencies: ["00000000000001A3"],
+			y: -20.5d,
+			shape: "gear",
+			subtitle: "Crash Bandicoot's Favourite Toy",
+			description: ["The final tier of jetpack is created with Nitro-tier Powah items. Have fun flying! No, I don't want a ride, you keep your supersonic jetpack to yourself, thanks."],
+			dependencies: [
+				"00000000000001A3",
+				"1A130224F6ED7BB8"
+			],
+			size: 2.0d,
 			id: "360AA4847973AD50",
 			tasks: [{
 				id: "5EA90FC0CC6ACA71",
@@ -2897,6 +2923,184 @@
 				icon: "kubejs:scavengers_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
 				player_command: false
+			}]
+		},
+		{
+			title: "Iron Jetpacks",
+			x: -5.5d,
+			y: -14.5d,
+			subtitle: "Hang On, This Isn't Iron",
+			description: [
+				"These jetpacks are tier-based utility items that allow you to fly, provided they contain enough RF, which can be inserted into them via some sort of charger.",
+				"",
+				"In Enigmatica 6, the jetpacks are crafted using Thermal Series and Powah items in particular. This first one, the Hardened Jetpack, is made using a Thermal Hazmat Suit and various Hardened-tier Powah machines and materials."
+			],
+			hide_dependency_lines: true,
+			dependencies: [
+				"000000000000045C",
+				"000000000000019A"
+			],
+			id: "6C9046DD534227BB",
+			tasks: [{
+				id: "5F9573C427773344",
+				type: "item",
+				item: {
+					id: "ironjetpacks:hardened_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "Still Not Iron",
+			x: -4.5d,
+			y: -15.5d,
+			subtitle: "Close enough",
+			description: ["The second jetpack is mainly made out of Invar, an alloy created using Nickel and Iron, plus your old Hardened Jetpack."],
+			dependencies: ["6C9046DD534227BB"],
+			hide: true,
+			id: "2BE340CC8F9992BD",
+			tasks: [{
+				id: "54ACAE89C86D51BC",
+				type: "item",
+				item: {
+					id: "ironjetpacks:invar_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "It's Literally On Fire",
+			x: -6.5d,
+			y: -15.5d,
+			subtitle: "Ironic how none of these are actually iron",
+			description: ["The third tier of jetpacks is made solely using items from Powah's Blazing tier (plus the Invar Jetpack)."],
+			dependencies: [
+				"2BE340CC8F9992BD",
+				"000000000000019C"
+			],
+			id: "5C9DC1D3A9E0B2B9",
+			tasks: [{
+				id: "5E36811B34078E60",
+				type: "item",
+				item: {
+					id: "ironjetpacks:blazing_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "No Signal",
+			x: -4.5d,
+			y: -16.5d,
+			subtitle: "No, wait-it's actually too much signal.",
+			description: ["The fourth jetpack is made out of signalum, an alloy of silver and redstone that conducts electricity very well. It also, of course, requires a Blazing Jetpack."],
+			dependencies: ["5C9DC1D3A9E0B2B9"],
+			id: "41E91BBBA20FD3C5",
+			tasks: [{
+				id: "2A2ABCFB10362FD8",
+				type: "item",
+				item: {
+					id: "ironjetpacks:signalum_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "Powered by Energy Drinks",
+			x: -6.5d,
+			y: -16.5d,
+			subtitle: "...what even is this made of?!",
+			description: ["The fifth jetpack, Niotic, is created using materials from Powah's Niotic tier and the previous jetpack tier."],
+			dependencies: [
+				"000000000000019E",
+				"41E91BBBA20FD3C5"
+			],
+			id: "30BEC55425929127",
+			tasks: [{
+				id: "2DA07891BC7D9073",
+				type: "item",
+				item: {
+					id: "ironjetpacks:niotic_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "You Lumatic",
+			x: -4.5d,
+			y: -17.5d,
+			subtitle: "This is not even anywhere NEAR iron",
+			description: ["Lumium is an alloy of tin, silver and glowstone."],
+			dependencies: ["30BEC55425929127"],
+			hide: true,
+			id: "1B00EE4C35E66AC1",
+			tasks: [{
+				id: "4BD041695A7B9388",
+				type: "item",
+				item: {
+					id: "ironjetpacks:lumium_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "Rising Spirit",
+			x: -6.5d,
+			y: -17.5d,
+			subtitle: "Fine, fine, I'll stop",
+			description: ["The Spirited Jetpack is made using Powah's Spirited tier."],
+			dependencies: [
+				"00000000000001A0",
+				"1B00EE4C35E66AC1"
+			],
+			id: "36E4EA66B9E64AA8",
+			tasks: [{
+				id: "6AE556439E1CBE2C",
+				type: "item",
+				item: {
+					id: "ironjetpacks:spirited_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
+			}]
+		},
+		{
+			title: "Basically Teleportation",
+			x: -5.5d,
+			y: -18.5d,
+			subtitle: "So this is how the Endermen go long distances",
+			dependencies: ["36E4EA66B9E64AA8"],
+			id: "1A130224F6ED7BB8",
+			tasks: [{
+				id: "5DA9B95C18D6B28E",
+				type: "item",
+				item: {
+					id: "ironjetpacks:enderium_jetpack",
+					Count: 1b,
+					tag: {
+						Throttle: 1.0d
+					}
+				}
 			}]
 		}
 	]

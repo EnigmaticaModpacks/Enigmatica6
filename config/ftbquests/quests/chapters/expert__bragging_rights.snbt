@@ -5,6 +5,7 @@
 	filename: "expert__bragging_rights",
 	title: "Bragging Rights",
 	icon: "create:creative_crate",
+	subtitle: ["Balance (TM)"],
 	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
@@ -22,7 +23,7 @@
 			}]
 		},
 		{
-			x: -2.0d,
+			x: -4.0d,
 			y: 0.0d,
 			shape: "hexagon",
 			id: "36CDE03E505E0F94",
@@ -33,7 +34,7 @@
 			}]
 		},
 		{
-			x: 2.0d,
+			x: 4.0d,
 			y: 0.0d,
 			shape: "hexagon",
 			id: "477CEC2E3F4736C3",
@@ -88,7 +89,7 @@
 			}]
 		},
 		{
-			x: -4.5d,
+			x: -2.0d,
 			y: -1.0d,
 			id: "188BE70C3D176BCA",
 			tasks: [{
@@ -98,7 +99,7 @@
 			}]
 		},
 		{
-			x: -4.5d,
+			x: -2.0d,
 			y: 0.0d,
 			id: "72C894BE4081603D",
 			tasks: [{
@@ -114,7 +115,7 @@
 			}]
 		},
 		{
-			x: -4.5d,
+			x: -2.0d,
 			y: 1.0d,
 			id: "3AB61B2854483CE3",
 			tasks: [{
@@ -124,7 +125,7 @@
 			}]
 		},
 		{
-			x: 4.5d,
+			x: 2.0d,
 			y: 0.0d,
 			id: "474DFFBB63FE90BA",
 			tasks: [{
@@ -134,7 +135,7 @@
 			}]
 		},
 		{
-			x: 4.5d,
+			x: 2.0d,
 			y: -1.0d,
 			id: "65F9021D56312C9B",
 			tasks: [{
@@ -144,7 +145,7 @@
 			}]
 		},
 		{
-			x: 4.5d,
+			x: 2.0d,
 			y: 1.0d,
 			id: "2A79C4CDDA045886",
 			tasks: [{
