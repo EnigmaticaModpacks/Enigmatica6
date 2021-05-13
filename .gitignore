@@ -24,6 +24,7 @@ screenshots/
 **/*.exe
 *.dll
 **/*.zip
+/config/*.bak
 
 # Instance Sync
 **/*.jar
@@ -164,3 +165,4 @@ biomeidfixer.temp
 config/findme-client.toml
 config/PregenConfig.toml
 NewWorldBiomeIdFixer.json
+

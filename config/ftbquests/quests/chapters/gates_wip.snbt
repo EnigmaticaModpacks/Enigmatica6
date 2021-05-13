@@ -5,15 +5,17 @@
 	filename: "gates_wip",
 	title: "Gates",
 	icon: "mapperbase:steel_fence_gate",
+	subtitle: ["The master progression chapter"],
 	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
 		{
-			title: "The Experts 2: Electric Boogalo",
+			title: "Expert 2: Electric Boogaloo",
 			icon: "mekanism:robit",
 			x: 0.0d,
 			y: 0.0d,
 			shape: "rsquare",
+			subtitle: "But Isn't It Expert Six?",
 			description: [
 				"Welcome to Enigmatica 6: Expert mode! This chapter serves as a general guide to the progression.",
 				"",
@@ -30,6 +32,7 @@
 			title: "Create",
 			x: -3.0d,
 			y: 1.5d,
+			subtitle: "What Goes Around...",
 			dependencies: ["0000000000000B6C"],
 			id: "0000000000000FBD",
 			tasks: [{
@@ -39,10 +42,11 @@
 			}]
 		},
 		{
-			title: "Thermal",
+			title: "Thermal Series",
 			icon: "thermal:machine_furnace",
 			x: -1.5d,
 			y: 1.5d,
+			subtitle: "Bring the Heat",
 			dependencies: ["0000000000000B6C"],
 			id: "0000000000000FBF",
 			tasks: [{
@@ -56,6 +60,7 @@
 			x: 0.0d,
 			y: 1.5d,
 			shape: "diamond",
+			subtitle: "I'm Fine and I Believe In Ghosts Now",
 			dependencies: ["0000000000000FBF"],
 			id: "0000000000000FC1",
 			tasks: [{
@@ -68,6 +73,7 @@
 			title: "Eidolon",
 			x: 1.5d,
 			y: 1.5d,
+			subtitle: "Direct Prayers to This Email Address",
 			dependencies: ["0000000000000B6C"],
 			id: "0000000000000FC3",
 			tasks: [{
@@ -80,6 +86,7 @@
 			title: "Ars Nouveau",
 			x: 3.0d,
 			y: 1.5d,
+			subtitle: "Spells, Smells, Spells that Smell and Smells that Spell",
 			dependencies: ["0000000000000B6C"],
 			id: "0000000000000FC5",
 			tasks: [{
@@ -92,6 +99,7 @@
 			title: "Nature's Aura",
 			x: 3.0d,
 			y: 3.0d,
+			subtitle: "Abusing Nature, As Always",
 			dependencies: ["0000000000000FC5"],
 			id: "0000000000000FC7",
 			tasks: [{
@@ -104,6 +112,7 @@
 			title: "Botania",
 			x: 3.0d,
 			y: 4.5d,
+			subtitle: "It's Actually an <UNREADABLE> Mod",
 			dependencies: ["0000000000000FC7"],
 			id: "0000000000000FC9",
 			tasks: [{
@@ -116,6 +125,7 @@
 			title: "Astral Sorcery",
 			x: 1.5d,
 			y: 6.0d,
+			subtitle: "Things are Looking Up",
 			dependencies: [
 				"0000000000000FCF",
 				"0000000000000FC9"
@@ -131,6 +141,7 @@
 			title: "Occultism",
 			x: 1.5d,
 			y: 3.0d,
+			subtitle: "Probably Illegal",
 			dependencies: ["0000000000000FC3"],
 			id: "0000000000000FCD",
 			tasks: [{
@@ -150,6 +161,7 @@
 			title: "Blood Magic",
 			x: 1.5d,
 			y: 4.5d,
+			subtitle: "Definitely Illegal",
 			dependencies: ["0000000000000FCD"],
 			id: "0000000000000FCF",
 			tasks: [{
@@ -163,6 +175,7 @@
 			x: -4.5d,
 			y: 1.5d,
 			shape: "diamond",
+			subtitle: "Depends What You Mean by Pretty",
 			dependencies: ["0000000000000FBD"],
 			id: "0000000000000FD1",
 			tasks: [{
@@ -176,6 +189,7 @@
 			x: -4.5d,
 			y: 3.0d,
 			shape: "diamond",
+			subtitle: "No, no, it ISN'T URANIUM",
 			dependencies: ["0000000000000FD5"],
 			id: "0000000000000FD3",
 			tasks: [{
@@ -185,10 +199,10 @@
 			}]
 		},
 		{
-			title: "Immersive Engineering",
+			title: "Immersive Engineering (Part One)",
 			x: -3.0d,
 			y: 3.0d,
-			subtitle: "Low Tech",
+			subtitle: "Hitting Things With Hammers",
 			dependencies: ["0000000000000FBD"],
 			id: "0000000000000FD5",
 			tasks: [{
@@ -207,6 +221,7 @@
 			title: "RFTools",
 			x: -1.5d,
 			y: 3.0d,
+			subtitle: "But what does the Tools stand for?",
 			dependencies: ["0000000000000FBF"],
 			id: "0000000000000FD7",
 			tasks: [{
@@ -220,6 +235,7 @@
 			x: -4.5d,
 			y: 4.5d,
 			shape: "diamond",
+			subtitle: "Probably the 3938329th thing with Modular in its name here",
 			dependencies: ["0000000000000FD3"],
 			id: "0000000000000FD9",
 			tasks: [{
@@ -232,6 +248,7 @@
 			title: "PneumaticCraft",
 			x: -1.5d,
 			y: 4.5d,
+			subtitle: "Under Pressure",
 			dependencies: ["0000000000000FD7"],
 			id: "0000000000000FDB",
 			tasks: [{
@@ -245,6 +262,7 @@
 			x: 0.0d,
 			y: 4.5d,
 			shape: "diamond",
+			subtitle: "Posh Production",
 			dependencies: [
 				"0000000000000FDB",
 				"0000000000000FCD",
@@ -261,6 +279,7 @@
 			title: "Industrial Foregoing",
 			x: -3.0d,
 			y: 4.5d,
+			subtitle: "ELSE: you don't need to automate all the things",
 			dependencies: ["0000000000000FD5"],
 			id: "0000000000000FDF",
 			tasks: [{
@@ -275,6 +294,7 @@
 			x: 4.5d,
 			y: 3.0d,
 			shape: "diamond",
+			subtitle: "I Don't Beelieve It!",
 			dependencies: ["0000000000000FC7"],
 			id: "0000000000000FE1",
 			tasks: [{
@@ -284,10 +304,10 @@
 			}]
 		},
 		{
-			title: "Immersive Engineering",
+			title: "Immersive Engineering (Part Two)",
 			x: -3.0d,
 			y: 6.0d,
-			subtitle: "High Tech",
+			subtitle: "Do I Get a Bigger Hammer This Time?",
 			dependencies: ["0000000000000FDF"],
 			id: "0000000000000FE3",
 			tasks: [{
@@ -300,6 +320,7 @@
 			title: "Mekanism",
 			x: -1.5d,
 			y: 6.0d,
+			subtitle: "Over-The-Top Ore Processing",
 			dependencies: ["0000000000000FDB"],
 			id: "0000000000000FE5",
 			tasks: [{
@@ -314,6 +335,7 @@
 			x: 0.0d,
 			y: 8.0d,
 			shape: "octagon",
+			subtitle: "You Deserve Them",
 			dependencies: [
 				"0000000000000FE3",
 				"0000000000000FE5",
@@ -333,6 +355,7 @@
 			icon: "integrateddynamics:crystalized_menril_chunk",
 			x: 0.0d,
 			y: 3.0d,
+			subtitle: "When the Going Gets Dynamic, The Tough Get Really Confused",
 			dependencies: ["0000000000000FC1"],
 			id: "218FBDC6B17EDF33",
 			tasks: [{
@@ -342,8 +365,10 @@
 			}]
 		},
 		{
+			title: "Flux Networks",
 			x: 0.0d,
 			y: 6.0d,
+			subtitle: "What a Flux",
 			dependencies: ["0000000000000FDD"],
 			id: "11FC40A4B8CBA98A",
 			tasks: [{
