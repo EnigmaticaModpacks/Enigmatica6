@@ -73,8 +73,8 @@ var woodVariantsToConstruct = [
     'upgrade_aquatic:river',
     'autumnity:maple',
     'autumnity:sappy_maple',
-    'architects_palette:twisted',
-    'sushigocrafting:avocado'
+    'architects_palette:twisted'
+    // 'sushigocrafting:avocado'
 ];
 
 var buildWoodVariants = [];
