@@ -2,6 +2,12 @@
 
 _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.11.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.11.md)_
 
+**New Mods**
+
+* [Biome Id Fixer (Forge)](https://www.curseforge.com/minecraft/mc-mods/biome-id-fixer)
+* [Chunk-Pregenerator](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator)
+* [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships)
+
 **Improvements/Changes**
 
 -   Add Apotheosis Fletching recipes for Archer's Paradox and Alex's Mobs arrows [\#2148](https://github.com/NillerMedDild/Enigmatica6/pull/2148) ([pm065](https://github.com/pm065))
