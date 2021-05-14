@@ -77,6 +77,10 @@ install:
         - resources/**
         - packmenu/**
         - kubejs/assets/**
+        - kubejs/client_scripts/**
+        - building_gadgets_patterns/**
+        - config/*-client.toml
+        - defaultconfigs/*-client.toml
 
     # This makes the program check the folder for whether it is supposed to use the
     checkFolder: yes
