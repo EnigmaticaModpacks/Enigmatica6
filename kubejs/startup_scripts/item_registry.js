@@ -19,7 +19,7 @@ events.listen('item.registry', (event) => {
         'starmetal_chunk',
         'froststeel_chunk',
         'cloggrum_chunk',
-        'ultherium_chunk',
+        'utherium_chunk',
         'regalium_chunk'
     ];
 
