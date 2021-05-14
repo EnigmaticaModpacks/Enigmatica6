@@ -106,10 +106,10 @@ function New-ClientFiles {
 
 function Remove-BlacklistedFiles {
     if ($ENABLE_CURSE_CLIENT_MODULE -or $ENABLE_SERVER_FILE_MODULE) {
-        if (Test-Path "$CLIENT_ZIP_NAME.zip") {
+        if (Test-Path "$InstanceRoot/$CLIENT_ZIP_NAME.zip") {
             foreach ($config in $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES) {
                 Write-Host "Removing config $config from client files"
-                7z d "$CLIENT_ZIP_NAME.zip" "overrides/config/$config*" | Out-Null
+                7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "overrides/config/$config*" | Out-Null
             }
         }
     }
@@ -329,3 +329,5 @@ if ($ENABLE_SERVER_FILE_MODULE -and -not $ENABLE_MODPACK_UPLOADER_MODULE) {
 New-GitHubRelease
 New-Changelog
 Update-Modlist
+
+
