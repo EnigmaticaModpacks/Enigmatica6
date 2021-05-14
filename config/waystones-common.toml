@@ -1,15 +1,34 @@
 
 [common]
+	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
+	allowWaystoneToWaystoneTeleport = true
+	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
+	dimensionalWarpAllowList = []
+	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
+	worldGenDimensionDenyList = []
 
-	[common.worldgen]
-		#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
-		#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
-		worldGenStyle = "BIOME"
-		#NOT YET IMPLEMENTED: Set to true if waystones should be added to the generation of villages. THIS OPTION DOES NOT WORK YET.
-		addVillageStructure = false
-		#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
-		#Range: > 0
-		worldGenFrequency = 100
-		#The Name Generator will pick from these names until they have all been used, then it will generate random ones again.
-		customWaystoneNames = ["Sandy City", "Chocolate Island", "Sahara", "The Perimeter"]
+	[common.villagegen]
+		#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.
+		spawnInVillages = true
+		#Ensures that pretty much every village will have a waystone, by spawning it as early as possible. In addition, this means waystones will generally be located in the center of the village.
+		forceSpawnInVillages = false
+
+		[common.villagegen.worldgen]
+			#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
+			#Range: > 0
+			worldGenFrequency = 25
+			#Set to 'DEFAULT' to only generate the normally textured waystones. Set to 'MOSSY' or 'SANDY' to generate all as that variant. Set to 'BIOME' to make the style depend on the biome it is generated in.
+			#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
+			worldGenStyle = "BIOME"
+			#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
+			worldGenDimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
+			#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.
+			worldGenDimensionDenyList = []
+
+		[common.villagegen.namegen]
+			#Set to 'PRESET_FIRST' to first use names from the custom names list. Set to 'PRESET_ONLY' to use only those custom names. Set to 'MIXED' to have some waystones use custom names, and others random names.
+			#Allowed Values: PRESET_FIRST, RANDOM_ONLY, PRESET_ONLY, MIXED
+			nameGenerationMode = "PRESET_FIRST"
+			#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
+			customWaystoneNames = []
 
