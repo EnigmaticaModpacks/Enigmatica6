@@ -13,7 +13,7 @@ events.listen('item.registry', (event) => {
         'altered_recipe_indicator'
     ];
     
-    const generalItems = [
+    const chunkItems = [
         'iesnium_chunk',
         'thallasium_chunk',
         'starmetal_chunk',
