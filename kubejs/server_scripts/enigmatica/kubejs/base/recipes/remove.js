@@ -14,6 +14,7 @@ events.listen('recipes', (event) => {
 
     event.remove({ mod: 'prettypipes' });
     event.remove({ mod: 'ironjetpacks' });
+    event.remove({ mod: 'theoneprobe' });
 
     var outputRemovals = [
         'aiotbotania:livingwood_shears',

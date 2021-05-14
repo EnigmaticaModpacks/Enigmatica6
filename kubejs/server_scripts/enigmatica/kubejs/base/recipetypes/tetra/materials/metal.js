@@ -54,6 +54,40 @@ events.listen('server.datapack.low_priority', (event) => {
                     textures: ['metal', 'default'],
                     material: { item: 'minecraft:netherite_ingot' },
                     requiredTools: { hammer: 4 }
+                },
+                {
+                    key: 'brass',
+                    category: 'metal',
+                    primary: '5.5',
+                    secondary: '4.7',
+                    tertiary: '3.1',
+                    durability: '450',
+                    integrityCost: '2',
+                    integrityGain: '4',
+                    magicCapacity: '118',
+                    toolLevel: '2',
+                    toolEfficiency: '7',
+                    tints: { glyph: '978b37', texture: '978b37' },
+                    textures: ['shiny', 'default'],
+                    material: { tag: 'forge:ingots/brass', count: 1 },
+                    requiredTools: { hammer: 2 }
+                },
+                {
+                    key: 'andesite_alloy',
+                    category: 'metal',
+                    primary: '5.1',
+                    secondary: '3.9',
+                    tertiary: '3.2',
+                    durability: '275',
+                    integrityCost: '2',
+                    integrityGain: '5',
+                    magicCapacity: '60',
+                    toolLevel: '3',
+                    toolEfficiency: '6.3',
+                    tints: { glyph: '656565', texture: '656565' },
+                    textures: ['shiny', 'default'],
+                    material: { tag: 'forge:ingots/andesite_alloy', count: 1 },
+                    requiredTools: { hammer: 2 }
                 }
             ],
             type: 'compat',
@@ -321,23 +355,6 @@ events.listen('server.datapack.low_priority', (event) => {
                     requiredTools: { hammer: 2 }
                 },
                 {
-                    key: 'brass',
-                    category: 'metal',
-                    primary: '5.5',
-                    secondary: '4.7',
-                    tertiary: '3.1',
-                    durability: '450',
-                    integrityCost: '2',
-                    integrityGain: '4',
-                    magicCapacity: '118',
-                    toolLevel: '2',
-                    toolEfficiency: '7',
-                    tints: { glyph: '978b37', texture: '978b37' },
-                    textures: ['shiny', 'default'],
-                    material: { tag: 'forge:ingots/brass', count: 1 },
-                    requiredTools: { hammer: 2 }
-                },
-                {
                     key: 'signalum',
                     category: 'metal',
                     primary: '7.5',
@@ -421,23 +438,6 @@ events.listen('server.datapack.low_priority', (event) => {
                     textures: ['shiny', 'default'],
                     material: { tag: 'forge:ingots/starmetal', count: 1 },
                     requiredTools: { hammer: 4 }
-                },
-                {
-                    key: 'andesite_alloy',
-                    category: 'metal',
-                    primary: '5.1',
-                    secondary: '3.9',
-                    tertiary: '3.2',
-                    durability: '275',
-                    integrityCost: '2',
-                    integrityGain: '5',
-                    magicCapacity: '60',
-                    toolLevel: '3',
-                    toolEfficiency: '6.3',
-                    tints: { glyph: '656565', texture: '656565' },
-                    textures: ['shiny', 'default'],
-                    material: { tag: 'forge:ingots/andesite_alloy', count: 1 },
-                    requiredTools: { hammer: 2 }
                 },
                 {
                     key: 'manasteel',

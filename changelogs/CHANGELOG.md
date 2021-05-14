@@ -2,9 +2,51 @@
 
 _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.11.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.11.md)_
 
+**New Mods**
+
+* [Biome Id Fixer (Forge)](https://www.curseforge.com/minecraft/mc-mods/biome-id-fixer)
+* [Chunk-Pregenerator](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator)
+* [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships)
+
 **Improvements/Changes**
 
+-   Add Apotheosis Fletching recipes for Archer's Paradox and Alex's Mobs arrows [\#2148](https://github.com/NillerMedDild/Enigmatica6/pull/2148) ([pm065](https://github.com/pm065))
+-   Added missing titles to quest rewards [\#2158](https://github.com/NillerMedDild/Enigmatica6/pull/2158) ([GregariousJB](https://github.com/GregariousJB))
+-   \[0.4.10\] Nylium Soul Sand/Soil [\#2101](https://github.com/NillerMedDild/Enigmatica6/issues/2101)
+-   \[0.4.10\] Signalum Ingot Recipe Balance \(OneLemonyBoi\) [\#2100](https://github.com/NillerMedDild/Enigmatica6/issues/2100)
+-   \[Suggestion\] On servers, single waystone on first join per player [\#1803](https://github.com/NillerMedDild/Enigmatica6/issues/1803)
+-   Better looking Morph-O-tool? [\#1578](https://github.com/NillerMedDild/Enigmatica6/issues/1578)
 -   FTB Essentials: Convenience commands are now off by default in new worlds. Guide: [Guide](https://github.com/NillerMedDild/Enigmatica6/wiki/Commands) Re-enabling the ones you want to use.
+-   Honeycomb Recipe Changes [\#2157](https://github.com/NillerMedDild/Enigmatica6/pull/2157) ([TemperedFool](https://github.com/TemperedFool))
+-   Items from Bee Combs [\#2147](https://github.com/NillerMedDild/Enigmatica6/pull/2147) ([TemperedFool](https://github.com/TemperedFool))
+-   More Bee Updates [\#2110](https://github.com/NillerMedDild/Enigmatica6/pull/2110) ([TemperedFool](https://github.com/TemperedFool))
+-   Suggestions for Challenge Quests [\#1947](https://github.com/NillerMedDild/Enigmatica6/issues/1947)
+-   Various quest improvements/additions [\#2159](https://github.com/NillerMedDild/Enigmatica6/pull/2159) ([pm065](https://github.com/pm065))
+
+**Bug Fixes**
+
+-   0.4.10 Building Gadget Patterns are MIA from client [\#2113](https://github.com/NillerMedDild/Enigmatica6/issues/2113)
+-   Advancement 'Adventuring Time' not achievable [\#2136](https://github.com/NillerMedDild/Enigmatica6/issues/2136)
+-   Any non TF world only spawns with stone in their worldgen [\#1701](https://github.com/NillerMedDild/Enigmatica6/issues/1701)
+-   \[0.4.3\] Drikwing quest from Occultism quest tree not completing [\#1786](https://github.com/NillerMedDild/Enigmatica6/issues/1786)
+-   \[0.4.8\] Mapple Ladder doesnt work as a ladder [\#1958](https://github.com/NillerMedDild/Enigmatica6/issues/1958)
+-   \[0.4.8\] Vein mining grass with shears makes items stop dropping [\#2073](https://github.com/NillerMedDild/Enigmatica6/issues/2073)
+-   \[0.4.9\] Mobs spawn switch between nether and overworld [\#2078](https://github.com/NillerMedDild/Enigmatica6/issues/2078)
+-   \[0.4.9\] Server pack changes overworld biome [\#2058](https://github.com/NillerMedDild/Enigmatica6/issues/2058)
+-   \[0.4.10\] Apotheosis Towers [\#2115](https://github.com/NillerMedDild/Enigmatica6/issues/2115)
+-   \[0.4.10\] Compact Machines Quest and Construction [\#2116](https://github.com/NillerMedDild/Enigmatica6/issues/2116)
+-   \[0.4.10\] Crashutilities... crash [\#2085](https://github.com/NillerMedDild/Enigmatica6/issues/2085)
+-   \[0.4.10\] Ender Shard recipe conflict [\#2107](https://github.com/NillerMedDild/Enigmatica6/issues/2107)
+-   \[0.4.10\] Remove fluid to item recipe: Driftwood \> Driftwood  [\#2119](https://github.com/NillerMedDild/Enigmatica6/issues/2119)
+-   \[0.4.10\] Server crash on update \(Integrated Tunnels\) [\#2083](https://github.com/NillerMedDild/Enigmatica6/issues/2083)
+-   Cannot open certain inventories \[Restart game to fix\] [\#667](https://github.com/NillerMedDild/Enigmatica6/issues/667)
+-   Disabled blocks in RFTools dimensions [\#2122](https://github.com/NillerMedDild/Enigmatica6/issues/2122)
+-   Enchant Duping with Enchantment Extraction Mechanics [\#697](https://github.com/NillerMedDild/Enigmatica6/issues/697)
+-   Integrated Dynamics book tutorial rewards/advancement issue [\#1603](https://github.com/NillerMedDild/Enigmatica6/issues/1603)
+-   Nature's Compass quest bug [\#2125](https://github.com/NillerMedDild/Enigmatica6/issues/2125)
+-   Optifine Crash when Searching in Creative Inventory Screen [\#603](https://github.com/NillerMedDild/Enigmatica6/issues/603)
+-   Painting create a visual glitch [\#876](https://github.com/NillerMedDild/Enigmatica6/issues/876)
+
 
 ### Enigmatica 6 v0.4.10
 

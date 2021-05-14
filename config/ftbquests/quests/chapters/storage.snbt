@@ -5,6 +5,7 @@
 	filename: "storage",
 	title: "Storage",
 	icon: "minecraft:chest",
+	subtitle: ["Where should you put all this cool stuff, though?"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -57,6 +58,7 @@
 			rewards: [{
 				id: "0000000000000696",
 				type: "item",
+				title: "Pipe Wrench",
 				item: "prettypipes:wrench"
 			}]
 		},
@@ -773,6 +775,7 @@
 			rewards: [{
 				id: "0000000000000997",
 				type: "item",
+				title: "Leather",
 				icon: "minecraft:leather",
 				item: "minecraft:leather",
 				random_bonus: 3
@@ -986,6 +989,7 @@
 			rewards: [{
 				id: "36C4E2AF07DE5E40",
 				type: "item",
+				title: "Ender Chest",
 				item: "enderstorage:ender_chest"
 			}]
 		},
@@ -1017,6 +1021,7 @@
 				{
 					id: "39498CF292AB8B53",
 					type: "item",
+					title: "Glass Bottle",
 					item: "minecraft:glass_bottle",
 					count: 8
 				},

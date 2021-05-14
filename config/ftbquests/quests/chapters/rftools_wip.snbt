@@ -5,6 +5,7 @@
 	filename: "rftools_wip",
 	title: "RFTools",
 	icon: "rftoolsbase:machine_frame",
+	subtitle: ["A Massive Flux"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -31,6 +32,7 @@
 			rewards: [{
 				id: "0000000000000C00",
 				type: "item",
+				title: "Smart Wrench",
 				item: "rftoolsbase:smartwrench"
 			}]
 		},
@@ -558,6 +560,7 @@
 				{
 					id: "0000000000000BFF",
 					type: "item",
+					title: "Tier 1 Storage Module",
 					item: "rftoolsstorage:storage_module0"
 				},
 				{
@@ -668,12 +671,14 @@
 				{
 					id: "0000000000000C03",
 					type: "item",
+					title: "Blue Network Cable",
 					item: "xnet:netcable_blue",
 					count: 32
 				},
 				{
 					id: "0000000000000C04",
 					type: "item",
+					title: "Blue Connector",
 					item: "xnet:connector_blue",
 					count: 4
 				}
@@ -824,6 +829,7 @@
 				{
 					id: "0000000000000BFE",
 					type: "item",
+					title: "Storage Control Screen Module",
 					item: {
 						id: "rftoolsstorage:storage_control_module",
 						Count: 1b,

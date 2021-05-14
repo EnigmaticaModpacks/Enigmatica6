@@ -5,6 +5,7 @@
 	filename: "integrated_dynamics",
 	title: "Integrated Dynamics",
 	icon: "integrateddynamics:crystalized_menril_chunk",
+	subtitle: ["The integration is dynamic, but are the dynamics integrated?"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -79,11 +80,13 @@
 				{
 					id: "5476A59853122500",
 					type: "item",
+					title: "Armor Stand",
 					item: "minecraft:armor_stand"
 				},
 				{
 					id: "1822E8DD1641B839",
 					type: "item",
+					title: "Green Slime Block",
 					item: "minecraft:slime_block",
 					count: 2
 				}
@@ -141,6 +144,7 @@
 			rewards: [{
 				id: "43CE6F2A10A769E2",
 				type: "item",
+				title: "Coal",
 				item: "minecraft:coal",
 				count: 16
 			}]

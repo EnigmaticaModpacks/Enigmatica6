@@ -5,6 +5,7 @@
 	filename: "getting_started",
 	title: "Getting Started",
 	icon: "minecraft:nether_star",
+	subtitle: ["All journeys, no matter how grand, must start somewhere"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -141,6 +142,7 @@
 			rewards: [{
 				id: "00000000000006EB",
 				type: "item",
+				title: "Modded for Dummies",
 				item: {
 					id: "patchouli:guide_book",
 					Count: 1b,
