@@ -1,5 +1,5 @@
 events.listen('item.registry', (event) => {
-    const items = [
+    const generalItems = [
         'rare_lootbox',
         'epic_lootbox',
         'legendary_lootbox',
@@ -12,8 +12,22 @@ events.listen('item.registry', (event) => {
         'quintuple_alfsteel_ingot',
         'altered_recipe_indicator'
     ];
+    
+    const chunkItems = [
+        'iesnium_chunk',
+        'thallasium_chunk',
+        'starmetal_chunk',
+        'froststeel_chunk',
+        'cloggrum_chunk',
+        'ultherium_chunk',
+        'regalium_chunk'
+    ];
 
-    items.forEach((item) => {
+    generalItems.forEach((item) => {
         event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);
+    });
+    
+    chunkItems.forEach((item) => {
+        event.create(item).group('KubeJS').texture(`kubejs:item/chunks/${item}`);
     });
 });
