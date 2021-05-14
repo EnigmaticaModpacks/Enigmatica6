@@ -20,14 +20,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:stone",
-            "outputs": [
-              {"outputID": "minecraft:end_stone", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "tag:forge:stone",
+                "outputs": [{ "outputID": "minecraft:end_stone", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {
@@ -37,7 +35,7 @@
         "mainOutputWeight": 0.5,
         "mainOutputCount": 1,
 
-        "secondaryOutput": "emendatusenigmatica:dimensional_shard_chunk",
+        "secondaryOutput": "emendatusenigmatica:dimensional_chunk",
         "secondaryOutputWeight": 0.25,
         "secondaryOutputCount": 1,
 
