@@ -20,7 +20,8 @@ events.listen('item.registry', (event) => {
         'froststeel_chunk',
         'cloggrum_chunk',
         'utherium_chunk',
-        'regalium_chunk'
+        'regalium_chunk',
+        'elementium_chunk'
     ];
 
     generalItems.forEach((item) => {

@@ -25,6 +25,7 @@ events.listen('item.tags', (event) => {
     event.add('forge:ores/amber', 'betterendforge:amber_ore');
     event.add('forge:ores/redstone', 'byg:cryptic_redstone_ore');
     event.get('forge:ores/thallasium').add(['betterendforge:thallasium_ore' , 'kubejs:thallasium_chunk']);
+    event.get('forge:ores/elementium').add(['mythicbotany:elementium_ore' , 'kubejs:elementium_chunk']);
     event.get('forge:ores/starmetal').add(['astralsorcery:starmetal_ore', 'kubejs:starmetal_chunk']);
     event.get('forge:ores/iesnium').add(['occultism:iesnium_ore', 'kubejs:iesnium_chunk']);
     event.get('forge:ores/cloggrum').add(['undergarden:cloggrum_ore', 'kubejs:cloggrum_chunk']);

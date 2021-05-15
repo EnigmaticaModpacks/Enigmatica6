@@ -4,6 +4,7 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'betterendforge:thallasium_ore', '#forge:ores/thallasium');
     event.replaceInput({}, 'astralsorcery:starmetal_ore', '#forge:ores/starmetal');
+    event.replaceInput({}, 'mythicbotany:elementium_ore', '#forge:ores/elementium');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
