@@ -1,4 +1,7 @@
 events.listen('recipes', (event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
     var data = {
         recipes: [
             {
