@@ -21,6 +21,11 @@ events.listen('recipes', (event) => {
             output: Item.of('ars_nouveau:potion_jar'),
             inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
             id: 'ars_nouveau:potion_jar'
+        },
+        {
+            output: Item.of('naturesaura:bottle_two_the_rebottling'),
+            inputs: ['minecraft:glass_bottle', 'farmersdelight:tree_bark'],
+            id: 'naturesaura:bottle_two_the_rebottling'
         }
     ];
 

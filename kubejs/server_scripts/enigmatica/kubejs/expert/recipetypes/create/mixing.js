@@ -1,5 +1,15 @@
 events.listen('recipes', (event) => {
-    const recipes = [];
+    if (global.isExpertMode == false) {
+        return;
+    }
+
+    const recipes = [
+        {
+            heated: true,
+            inputs: ['#forge:ingots/cobalt', '#forge:ingots/cobalt', '#forge:ingots/cobalt', 'thermal:blizz_powder'],
+            output: Item.of('undergarden:froststeel_ingot', 3)
+        }
+    ];
 
     recipes.forEach((recipe) => {
         if (recipe.heated) {
