@@ -348,6 +348,33 @@ events.listen('recipes', (event) => {
                 C: '#forge:rods/wooden'
             },
             id: 'bloodmagic:altar/daggerofsacrifice'
+        },
+        {
+            output: 'botania:mana_pool',
+            pattern: ['A A', 'ABA'],
+            key: {
+                A: 'botania:livingrock',
+                B: 'ars_nouveau:warding_stone'
+            },
+            id: 'botania:mana_pool'
+        },
+        {
+            output: 'botania:diluted_pool',
+            pattern: ['A A', 'ABA'],
+            key: {
+                A: 'botania:livingrock_slab',
+                B: 'ars_nouveau:warding_stone'
+            },
+            id: 'botania:diluted_pool'
+        },
+        {
+            output: 'botania:fabulous_pool',
+            pattern: ['A A', 'ABA'],
+            key: {
+                A: 'botania:shimmerrock',
+                B: 'ars_nouveau:warding_stone'
+            },
+            id: 'botania:fabulous_pool'
         }
     ];
 

@@ -1,5 +1,7 @@
 events.listen('recipes', (event) => {
-    const recipes = [{ replaceTarget: {}, toReplace: '', replaceWith: '' }];
+    const recipes = [
+        { replaceTarget: { id: 'entangled:block' }, toReplace: 'minecraft:chest', replaceWith: '#forge:chests/wooden' }
+    ];
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
@@ -423,5 +425,8 @@ events.listen('recipes', (event) => {
                 '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith
             );
         });
+    });
+    recipes.forEach((recipe) => {
+        event.replaceInput(recipe.replaceTarget, recipe.toReplace, recipe.replaceWith);
     });
 });

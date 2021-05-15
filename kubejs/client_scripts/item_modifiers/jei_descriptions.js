@@ -188,6 +188,42 @@ events.listen('jei.information', (event) => {
         {
             items: ['betterendforge:silk_fiber'],
             description: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
+        },
+        {
+            items: [/upgrade_aquatic:\w+_coralstone$/],
+            description: ['Obtained by placing Coralstone next to living coral.']
+        },
+        {
+            items: ['upgrade_aquatic:coralstone'],
+            description: ['Place next to living coral to infuse.']
+        },
+        {
+            items: [/quark:\w+_crystal$/],
+            description: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.'
+            ]
+        },
+        {
+            items: ['quark:bottled_cloud'],
+            description: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
+            ]
         }
     ];
 
