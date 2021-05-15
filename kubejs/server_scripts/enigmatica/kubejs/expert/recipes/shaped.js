@@ -351,7 +351,7 @@ events.listen('recipes', (event) => {
         },
         {
             output: 'botania:mana_pool',
-            pattern: ['   ', 'A A', 'ABA'],
+            pattern: ['A A', 'ABA'],
             key: {
                 A: 'botania:livingrock',
                 B: 'ars_nouveau:warding_stone'
@@ -360,7 +360,7 @@ events.listen('recipes', (event) => {
         },
         {
             output: 'botania:diluted_pool',
-            pattern: ['   ', 'A A', 'ABA'],
+            pattern: ['A A', 'ABA'],
             key: {
                 A: 'botania:livingrock_slab',
                 B: 'ars_nouveau:warding_stone'
@@ -369,7 +369,7 @@ events.listen('recipes', (event) => {
         },
         {
             output: 'botania:fabulous_pool',
-            pattern: ['   ', 'A A', 'ABA'],
+            pattern: ['A A', 'ABA'],
             key: {
                 A: 'botania:shimmerrock',
                 B: 'ars_nouveau:warding_stone'
