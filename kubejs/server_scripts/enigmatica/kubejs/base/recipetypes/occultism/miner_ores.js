@@ -98,7 +98,7 @@ events.listen('recipes', (event) => {
                 weight: 1000
             },
             {
-                result: 'kubejs:iesnium_chunk',
+                result: 'occultism:iesnium_ore',
                 weight: 100
             },
             {
