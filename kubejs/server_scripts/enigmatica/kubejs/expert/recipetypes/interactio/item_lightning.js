@@ -93,6 +93,33 @@ events.listen('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             }
+        },
+        {
+            inputs: [
+                {
+                    type: 'forge:nbt',
+                    item: 'naturesaura:aura_bottle',
+                    count: 1,
+                    nbt: '{stored_type:"naturesaura:overworld"}'
+                },
+                { item: 'naturesaura:infused_iron', count: 1 },
+                { item: 'botania:rune_water', count: 1, return_chance: 0.75 },
+                { item: 'botania:rune_earth', count: 1, return_chance: 0.75 },
+                {
+                    type: 'forge:nbt',
+                    item: 'naturesaura:aura_bottle',
+                    count: 1,
+                    nbt: '{stored_type:"naturesaura:nether"}'
+                },
+                { item: 'naturesaura:tainted_gold', count: 1 },
+                { item: 'botania:rune_fire', count: 1, return_chance: 0.75 },
+                { item: 'botania:rune_air', count: 1, return_chance: 0.75 }
+            ],
+            output: {
+                entries: [{ result: { item: 'naturesaura:calling_spirit', count: 3 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            }
         }
     ];
 
