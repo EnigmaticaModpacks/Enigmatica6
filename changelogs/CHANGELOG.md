@@ -1,12 +1,36 @@
+### Enigmatica 6 v0.4.12
+
+_Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.12.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.12.md)_
+
+**New Mods**
+
+- [Sushi Go Crafting](https://www.curseforge.com/minecraft/mc-mods/sushigocrafting)
+- [Valhelsia Core](https://www.curseforge.com/minecraft/mc-mods/valhelsia-core)
+
+**Improvements/Changes**
+
+-   Endermen can no longer hold any blocks
+-   Initial Magic Bee support - Botania [\#2168](https://github.com/NillerMedDild/Enigmatica6/pull/2168) ([TemperedFool](https://github.com/TemperedFool))
+
+**Bug Fixes**
+
+- \[0.4.11\] Diamond Honeycomb has no Centrifuge recipe [\#2166](https://github.com/NillerMedDild/Enigmatica6/issues/2166)
+- \[0.4.10\] Server crash on update \(Integrated Tunnels\) [\#2083](https://github.com/NillerMedDild/Enigmatica6/issues/2083)
+- Fixed Bee File Typos [\#2167](https://github.com/NillerMedDild/Enigmatica6/pull/2167) ([TemperedFool](https://github.com/TemperedFool))
+
+**Removed Mods**
+
+-   More MobGriefing Options
+
 ### Enigmatica 6 v0.4.11
 
 _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.11.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.11.md)_
 
 **New Mods**
 
-* [Biome Id Fixer (Forge)](https://www.curseforge.com/minecraft/mc-mods/biome-id-fixer)
-* [Chunk-Pregenerator](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator)
-* [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships)
+-   [Biome Id Fixer (Forge)](https://www.curseforge.com/minecraft/mc-mods/biome-id-fixer)
+-   [Chunk-Pregenerator](https://www.curseforge.com/minecraft/mc-mods/chunkpregenerator)
+-   [Small Ships](https://www.curseforge.com/minecraft/mc-mods/small-ships)
 
 **Improvements/Changes**
 
@@ -37,7 +61,7 @@ _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   \[0.4.10\] Compact Machines Quest and Construction [\#2116](https://github.com/NillerMedDild/Enigmatica6/issues/2116)
 -   \[0.4.10\] Crashutilities... crash [\#2085](https://github.com/NillerMedDild/Enigmatica6/issues/2085)
 -   \[0.4.10\] Ender Shard recipe conflict [\#2107](https://github.com/NillerMedDild/Enigmatica6/issues/2107)
--   \[0.4.10\] Remove fluid to item recipe: Driftwood \> Driftwood  [\#2119](https://github.com/NillerMedDild/Enigmatica6/issues/2119)
+-   \[0.4.10\] Remove fluid to item recipe: Driftwood \> Driftwood [\#2119](https://github.com/NillerMedDild/Enigmatica6/issues/2119)
 -   \[0.4.10\] Server crash on update \(Integrated Tunnels\) [\#2083](https://github.com/NillerMedDild/Enigmatica6/issues/2083)
 -   Cannot open certain inventories \[Restart game to fix\] [\#667](https://github.com/NillerMedDild/Enigmatica6/issues/667)
 -   Disabled blocks in RFTools dimensions [\#2122](https://github.com/NillerMedDild/Enigmatica6/issues/2122)
@@ -46,7 +70,6 @@ _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/E
 -   Nature's Compass quest bug [\#2125](https://github.com/NillerMedDild/Enigmatica6/issues/2125)
 -   Optifine Crash when Searching in Creative Inventory Screen [\#603](https://github.com/NillerMedDild/Enigmatica6/issues/603)
 -   Painting create a visual glitch [\#876](https://github.com/NillerMedDild/Enigmatica6/issues/876)
-
 
 ### Enigmatica 6 v0.4.10
 
