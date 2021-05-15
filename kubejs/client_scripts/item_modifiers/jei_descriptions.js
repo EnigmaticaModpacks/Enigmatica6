@@ -206,6 +206,24 @@ events.listen('jei.information', (event) => {
         {
             items: ['quark:bottled_cloud'],
             description: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
+            ]
         }
     ];
 
