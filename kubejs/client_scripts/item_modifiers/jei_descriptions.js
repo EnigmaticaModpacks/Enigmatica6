@@ -202,6 +202,10 @@ events.listen('jei.information', (event) => {
             description: [
                 'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.'
             ]
+        },
+        {
+            items: ['quark:bottled_cloud'],
+            description: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
         }
     ];
 
