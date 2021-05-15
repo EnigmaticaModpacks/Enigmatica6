@@ -188,6 +188,20 @@ events.listen('jei.information', (event) => {
         {
             items: ['betterendforge:silk_fiber'],
             description: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
+        },
+        {
+            items: [/upgrade_aquatic:\w+_coralstone$/],
+            description: ['Obtained by placing Coralstone next to living coral.']
+        },
+        {
+            items: ['upgrade_aquatic:coralstone'],
+            description: ['Place next to living coral to infuse.']
+        },
+        {
+            items: [/quark:\w+_crystal$/],
+            description: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.'
+            ]
         }
     ];
 
