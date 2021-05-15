@@ -59,6 +59,20 @@ events.listen('recipes', (event) => {
             output: 'botania:rune_air',
             count: 2,
             id: 'botania:runic_altar/air'
+        },
+        {
+            inputs: [
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'naturesaura:sky_ingot',
+                '#forge:ingots/manasteel',
+                '#forge:ingots/manasteel',
+                'botania:mana_pearl'
+            ],
+            mana: 10400,
+            output: 'botania:rune_mana',
+            count: 1,
+            id: 'botania:runic_altar/mana'
         }
     ];
 
@@ -68,7 +82,6 @@ events.listen('recipes', (event) => {
         recipe.inputs.forEach((input) => {
             ingredients.push(Ingredient.of(input).toJson());
         });
-        console.log(ingredients);
 
         const re = event.custom({
             type: 'botania:runic_altar',

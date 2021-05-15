@@ -224,6 +224,10 @@ events.listen('jei.information', (event) => {
             description: [
                 'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
             ]
+        },
+        {
+            items: ['quark:root_item'],
+            description: ['Drops occasionally when breaking Cave Roots.']
         }
     ];
 

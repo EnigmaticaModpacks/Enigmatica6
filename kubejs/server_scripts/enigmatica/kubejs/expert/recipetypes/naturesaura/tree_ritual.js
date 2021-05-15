@@ -259,6 +259,20 @@ events.listen('recipes', (event) => {
                 count: 1,
                 sapling: 'quark:lavender_blossom_sapling',
                 id: 'naturesstarlight:crystal_generator'
+            },
+            {
+                inputs: [
+                    { item: 'botania:livingrock' }, //top
+                    { item: 'botania:livingrock' }, //bottom
+                    { item: 'botania:livingrock' }, //left
+                    { item: 'botania:livingrock' }, //right
+                    { item: 'minecraft:heart_of_the_sea' }, //topleft
+                    { item: 'botania:livingrock' } //bottomright
+                ],
+                output: 'botania:runic_altar',
+                count: 1,
+                sapling: 'quark:lavender_blossom_sapling',
+                id: 'botania:runic_altar'
             }
             /*
             ,

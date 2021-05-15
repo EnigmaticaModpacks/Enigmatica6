@@ -375,6 +375,18 @@ events.listen('recipes', (event) => {
                 B: 'ars_nouveau:warding_stone'
             },
             id: 'botania:fabulous_pool'
+        },
+        {
+            output: 'bloodmagic:incensealtar',
+            pattern: ['CBC', 'CDC', 'EAE'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: Item.of('botania:incense_stick', { brewKey: 'botania:soul_cross' }),
+                C: 'eidolon:polished_planks',
+                D: 'eidolon:crucible',
+                E: 'eidolon:polished_wood_pillar'
+            },
+            id: 'bloodmagic:incense_altar'
         }
     ];
 
