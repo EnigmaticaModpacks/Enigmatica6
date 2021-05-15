@@ -55,6 +55,7 @@ events.listen('recipes', (event) => {
             }
         ]
     };
+    
     data.recipes.forEach((recipe) => {
         recipe.xp
             ? event.blasting(recipe.output, recipe.input).xp(recipe.xp)

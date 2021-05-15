@@ -36,7 +36,6 @@ const materialsToUnify = [
     'enderium',
     'sulfur',
     'cinnabar',
-    'elementium',
     'niter',
     'potassium_nitrate',
     'saltpeter',

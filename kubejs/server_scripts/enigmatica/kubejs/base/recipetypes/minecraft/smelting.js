@@ -68,6 +68,7 @@ events.listen('recipes', (event) => {
         'scoria',
         'dark_scoria'
     ];
+    
     stones.forEach((cobblestone) => {
         var stone = 'create:' + cobblestone;
         if (!Item.exists(stone)) {
