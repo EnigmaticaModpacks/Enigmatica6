@@ -3,12 +3,12 @@
 [blocks]
 
 	[blocks.globe]
-		#how many globe trades to give to the wandering trader. If you have mods that add more trades to him you might want to increase this so it's not as rare
-		#Range: 0 ~ 50
-		trades = 2
 		#chanche of finding a globe in a shipwreck treasure chest.
 		#Range: 0.0 ~ 1.0
 		shipwreck_treasure_chance = 0.25
+		#how many globe trades to give to the wandering trader. This will effectively increase the chance of him having a globe trader. Increase this if you have other mods that add stuff to that trader
+		#Range: 0 ~ 50
+		chance = 2
 
 	[blocks.speaker_block]
 		#maximum range
@@ -57,18 +57,8 @@
 		#allow right click to instantly eat or drink food or potions inside a jar.
 		#Disable if you think this ability is op. Cookies are excluded
 		drink_from_jar = true
-		#catchable mobs 
-		#due to a vanilla bug some mobs might not render correctly or at all
-		mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:fish", "minecraft:tropical_fish", "minecraft:salmon", "minecraft:cod", "minecraft:pufferfish", "minecraft:axolotl", "fins:pea_wee", "fins:wee_wee", "fins:vibra_wee", "fins:blu_wee", "fins:ornate_bugfish", "fins:spindly_gem_crab", "fins:phantom_nudibranch", "fins:high_finned_blue", "fins:teal_arrowfish", "fins:midnight_squid", "fins:banded_redback_shrimp", "fins:flatback_sucker", "fins:swamp_mucker", "upgrade_aquatic:lionfish", "upgrade_aquatic:nautilus", "upgrade_aquatic:pike", "alexsmobs:stradpole", "alexsmobs:blobfish", "unnamedanimalmod:flashlight_fish", "unnamedanimalmod:elephantnose_fish", "unnamedanimalmod:black_diamond_stingray", "unnamedanimalmod:humphead_parrotfish", "unnamedanimalmod:tomato_frog", "unnamedanimalmod:pacman_frog", "bettas:betta_fish", "pogfish:pogfish", "undergarden:gwibling", "environmental:koi", "betterendforge:end_fish", "betteranimalsplus:flying_fish", "betteranimalsplus:nautilus", "betteranimalsplus:eel_freshwater", "betteranimalsplus:eel_saltwater", "betteranimalsplus:lamprey", "betteranimalsplus:piranha", "betteranimalsplus:barracuda", "rediscovered:fish"]
-		#tinted jar catchable mobs
-		tinted_jar_mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:endermite", "minecraft:vex", "alexsmobs:mimicube", "minecraft:fish", "minecraft:tropical_fish", "minecraft:salmon", "minecraft:cod", "minecraft:pufferfish", "minecraft:axolotl", "fins:pea_wee", "fins:wee_wee", "fins:vibra_wee", "fins:blu_wee", "fins:ornate_bugfish", "fins:spindly_gem_crab", "fins:phantom_nudibranch", "fins:high_finned_blue", "fins:teal_arrowfish", "fins:midnight_squid", "fins:banded_redback_shrimp", "fins:flatback_sucker", "fins:swamp_mucker", "upgrade_aquatic:lionfish", "upgrade_aquatic:nautilus", "upgrade_aquatic:pike", "alexsmobs:stradpole", "alexsmobs:blobfish", "unnamedanimalmod:flashlight_fish", "unnamedanimalmod:elephantnose_fish", "unnamedanimalmod:black_diamond_stingray", "unnamedanimalmod:humphead_parrotfish", "unnamedanimalmod:tomato_frog", "unnamedanimalmod:pacman_frog", "bettas:betta_fish", "pogfish:pogfish", "undergarden:gwibling", "environmental:koi", "betterendforge:end_fish", "betteranimalsplus:flying_fish", "betteranimalsplus:nautilus", "betteranimalsplus:eel_freshwater", "betteranimalsplus:eel_saltwater", "betteranimalsplus:lamprey", "betteranimalsplus:piranha", "betteranimalsplus:barracuda", "rediscovered:fish"]
 
-	#I haven't tested most of the mods included here. let me know if they work
 	[blocks.cage]
-		#catchable mobs
-		cage_mobs = ["minecraft:slime", "minecraft:bee", "minecraft:magma_cube", "iceandfire:pixie", "alexsmobs:fly", "alexsmobs:hummingbird", "alexsmobs:cockroach", "buzzierbees:honey_slime", "mysticalworld:frog", "mysticalworld:beetle", "mysticalworld:silkworm", "druidcraft:lunar_moth", "druidcraft:dreadfish", "swampexpansion:slabfish", "betteranimalsplus:goose", "endergetic:puff_bug", "betterendforge:end_slime", "betterendforge:dragonfly", "betterendforge:silk_moth", "savageandravage:creepie", "betteranimalsplus:butterfly", "whisperwoods:moth", "fins:river_pebble_snail", "minecraft:endermite", "minecraft:vex", "alexsmobs:mimicube", "minecraft:parrot", "minecraft:rabbit", "minecraft:cat", "minecraft:chicken", "minecraft:bat", "minecraft:fox", "minecraft:ocelot", "alexsmobs:roadrunner", "alexsmobs:rattlesnake", "alexsmobs:lobster", "alexsmobs:capuchin_monkey", "mysticalworld:silver_fox", "mysticalworld:sprout", "mysticalworld:endermini", "mysticalworld:lava_cat", "mysticalworld:owl", "mysticalworld:hell_sprout", "quark:toretoise", "quark:crab", "quark:foxhound", "quark:stoneling", "quark:frog", "rats:rat", "rats:piper", "rats:plague_doctor", "rats:black_death", "rats:plague_cloud", "rats:plague_beast", "rats:rat_king", "rats:demon_rat", "rats:ratlantean_spirit", "rats:ratlantean_automation", "rats:feral_ratlantean", "rats:neo_ratlantean", "rats:pirat", "rats:ghost_pirat", "rats:dutchrat", "rats:ratfish", "rats:ratlantean_ratbot", "rats:rat_baron", "goblintraders:goblin_trader", "goblintraders:vein_goblin_trader", "autumnity:snail", "betteranimalsplus:lammergeier", "betteranimalsplus:songbird", "betteranimalsplus:pheasant", "betteranimalsplus:squirrel", "betteranimalsplus:badger", "betteranimalsplus:turkey", "exoticbirds:roadrunner", "exoticbirds:hummingbird", "exoticbirds:woodpecker", "exoticbirds:kingfisher", "exoticbirds:toucan", "exoticbirds:macaw", "exoticbirds:magpie", "exoticbirds:kiwi", "exoticbirds:owl", "exoticbirds:gouldianfinch", "exoticbirds:gull", "exoticbirds:pigeon", "exoticbirds:penguin", "exoticbirds:duck", "exoticbirds:booby", "exoticbirds:cardinal", "exoticbirds:bluejay", "exoticbirds:robin", "exoticbirds:kookaburra", "exoticbirds:budgerigar", "exoticbirds:cockatoo", "swampexpansion:slabfish", "betteranimalsplus:horseshoecrab", "betteranimalsplus:crab", "whisperwoods:wisp", "undergarden:muncher", "undergarden:scintling", "undergarden:rotling", "undergarden:sploogie", "dungeonsmod:crow", "dungeonsmod:anthermite", "pandoras_creatures:crab", "fins:flatback_leaf_snail", "fins:penglil", "fins:river_pebble_snail", "fins:siderol_whiskered_snail", "fins:red_bull_crab", "fins:white_bull_crab"]
-		#additional mobs that you'll be able to catch with the added condition that it has to be a baby variant. No need to include the ones already in cage_mobs
-		cage_baby_mobs = ["minecraft:cow", "minecraft:sheep", "minecraft:pig", "alexsmobs:crocodile", "alexsmobs:endergrade", "alexsmobs:gazelle", "alexsmobs:gorilla", "alexsmobs:komodo_dragon", "alexsmobs:raccoon", "alexsmobs:seal", "alexsmobs:warped_toad"]
 		#allow all entities to be captured by cages and jars. Not meant for survival
 		cage_allow_all_mobs = false
 		#allow all baby mobs to be captured by cages
@@ -104,6 +94,10 @@
 		#Range: 1 ~ 15
 		light_level = 12
 
+	[blocks.timber_frame]
+		#replace a timber frame with wattle and daub when daub is placed in it
+		replace_daub = true
+
 #Configure spawning conditions
 [spawns]
 
@@ -125,13 +119,13 @@
 
 	[spawns.structures]
 
-		[spawns.structures.road_sign]
+		[spawns.structures.way_sign]
 			#average distance apart in chunks between spawn attempts
-			#Range: 0 ~ 200
-			average_distance = 18
-			#minimum distance apart in chunks between spawn attempts
-			#Range: 0 ~ 200
-			minimum_distance = 9
+			#Range: 0 ~ 1001
+			average_distance = 19
+			#minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
+			#Range: 0 ~ 1001
+			minimum_distance = 10
 			#with this option road signs will display the distance to the structure that they are pointing to
 			show_distance_text = true
 			#list of structure that a sign can point to. Note that they will only spawn in dimensions where vanilla villages can
@@ -183,6 +177,10 @@
 		#Range: 0 ~ 1024
 		chain_length = 16
 
+	[tweaks.placeable_sticks]
+		#allow placeable blaze rods
+		enabled = true
+
 [items]
 
 	[items.rope_arrow]
@@ -196,6 +194,4 @@
 		#max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
-		#additional non tameable entities that you can bind to flutes
-		flute_extra_mobs = ["minecraft:horse", "minecraft:llama", "minecraft:mule", "minecraft:donkey", "minecraft:fox"]
 
