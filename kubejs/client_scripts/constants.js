@@ -405,5 +405,7 @@ const materialsToUnify = [
     'starmetal'
 ];
 
+const packMode = global.packmode;
+
 const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
