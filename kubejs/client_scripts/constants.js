@@ -154,6 +154,8 @@ var itemsToHide = [
     'thermal:press_packing_3x3_die',
     'thermal:press_packing_2x2_die',
     'thermal:press_unpacking_die',
+    'simplefarming:apple_pie',
+    'simplefarming:blueberry_pie',
     'supplementaries:pedestal',
     'supplementaries:crank',
     'supplementaries:cog_block',

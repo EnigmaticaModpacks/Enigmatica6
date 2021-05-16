@@ -297,6 +297,201 @@ events.listen('recipes', (event) => {
                 B: 'resourcefulbees:wax',
                 A: 'minecraft:bucket'
             }
+        },
+        {
+            output: Item.of('farmersdelight:pie_crust', 3),
+            pattern: ['A A', 'AAA'],
+            key: {
+                A: 'farmersdelight:wheat_dough'
+            },
+            id: 'farmersdelight:pie_crust'
+        },
+        {
+            output: 'upgrade_aquatic:mulberry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'upgrade_aquatic:mulberry'
+            },
+            id: 'upgrade_aquatic:mulberry_pie'
+        },
+        {
+            output: 'byg:blueberry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: '#forge:fruits/blueberries'
+            },
+            id: 'byg:blueberry_pie'
+        },
+        {
+            output: 'byg:nightshade_berry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'byg:nightshade_berries'
+            },
+            id: 'byg:nightshade_berry_pie'
+        },
+        {
+            output: 'byg:crimson_berry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'byg:crimson_berries'
+            },
+            id: 'byg:crimson_berry_pie'
+        },
+        {
+            output: 'byg:green_apple_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'byg:green_apple'
+            },
+            id: 'byg:green_apple_pie'
+        },
+        {
+            output: 'farmersdelight:chocolate_pie',
+            pattern: ['DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                D: 'create:bar_of_chocolate'
+            },
+            id: 'farmersdelight:chocolate_pie'
+        },
+        {
+            output: 'farmersdelight:apple_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'minecraft:apple'
+            },
+            id: 'farmersdelight:apple_pie'
+        },
+        {
+            output: 'simplefarming:strawberry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:strawberries'
+            },
+            id: 'simplefarming:strawberry_pie'
+        },
+        {
+            output: 'simplefarming:raspberry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:raspberries'
+            },
+            id: 'simplefarming:raspberry_pie'
+        },
+        {
+            output: 'simplefarming:plum_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:plum'
+            },
+            id: 'simplefarming:plum_pie'
+        },
+        {
+            output: 'simplefarming:pear_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:pear'
+            },
+            id: 'simplefarming:pear_pie'
+        },
+        {
+            output: 'simplefarming:peanut_butter_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:peanut'
+            },
+            id: 'simplefarming:peanut_butter_pie'
+        },
+        {
+            output: 'simplefarming:cherry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:cherries'
+            },
+            id: 'simplefarming:cherry_pie'
+        },
+        {
+            output: 'simplefarming:blackberry_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:blackberries'
+            },
+            id: 'simplefarming:blackberry_pie'
+        },
+        {
+            output: 'simplefarming:apricot_pie',
+            pattern: [' C ', 'DDD', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: 'farmersdelight:wheat_dough',
+                D: 'simplefarming:apricot'
+            },
+            id: 'simplefarming:apricot_pie'
+        },
+        {
+            output: 'minecraft:pumpkin_pie',
+            pattern: ['CDC', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: 'minecraft:sugar',
+                C: '#forge:eggs',
+                D: '#forge:pumpkins'
+            },
+            id: 'minecraft:pumpkin_pie'
+        },
+        {
+            output: 'undergarden:gloomgourd_pie',
+            pattern: ['CCC', 'EDE', 'BAB'],
+            key: {
+                A: 'farmersdelight:pie_crust',
+                B: '#undergarden:mushrooms',
+                C: 'undergarden:glowing_kelp',
+                D: 'undergarden:gloomgourd',
+                E: '#forge:eggs'
+            },
+            id: 'undergarden:gloomgourd_pie'
         }
     ];
 

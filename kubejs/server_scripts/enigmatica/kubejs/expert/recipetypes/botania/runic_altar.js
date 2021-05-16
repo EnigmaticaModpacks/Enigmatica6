@@ -69,10 +69,74 @@ events.listen('recipes', (event) => {
                 '#forge:ingots/manasteel',
                 'botania:mana_pearl'
             ],
-            mana: 10400,
+            mana: 16000,
             output: 'botania:rune_mana',
             count: 1,
             id: 'botania:runic_altar/mana'
+        },
+        {
+            inputs: [
+                '#botania:runes/water',
+                '#botania:runes/fire',
+                'naturesaura:birth_spirit',
+                'thermal:syrup_bucket',
+                '#minecraft:saplings',
+                '#minecraft:saplings',
+                'quark:turf',
+                'quark:turf'
+            ],
+            mana: 16000,
+            output: 'botania:rune_spring',
+            count: 1,
+            id: 'botania:runic_altar/spring'
+        },
+        {
+            inputs: [
+                '#botania:runes/earth',
+                '#botania:runes/air',
+                '#forge:sand',
+                '#forge:sand',
+                'farmersdelight:melon_popsicle',
+                'farmersdelight:melon_popsicle',
+                '#forge:pies',
+                '#forge:pies'
+            ],
+            mana: 16000,
+            output: 'botania:rune_summer',
+            count: 1,
+            id: 'botania:runic_altar/summer'
+        },
+        {
+            inputs: [
+                '#botania:runes/fire',
+                '#botania:runes/air',
+                'minecraft:carved_pumpkin',
+                'minecraft:carved_pumpkin',
+                'create:honeyed_apple',
+                'create:honeyed_apple',
+                'farmersdelight:hot_cocoa',
+                'farmersdelight:hot_cocoa'
+            ],
+            mana: 16000,
+            output: 'botania:rune_autumn',
+            count: 1,
+            id: 'botania:runic_altar/autumn'
+        },
+        {
+            inputs: [
+                '#botania:runes/water',
+                '#botania:runes/earth',
+                'farmersdelight:shepherds_pie_block',
+                '#upgrade_aquatic:bedrolls',
+                '#forge:hay_bales',
+                '#forge:hay_bales',
+                'betterendforge:dense_snow',
+                'betterendforge:dense_snow'
+            ],
+            mana: 16000,
+            output: 'botania:rune_winter',
+            count: 1,
+            id: 'botania:runic_altar/winter'
         }
     ];
 
