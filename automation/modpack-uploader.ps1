@@ -312,12 +312,7 @@ function Remove-LeadingZero {
     param(
         [string]$text
     )
-    if ($text[0] -eq "0") {
-        return $text.Substring(1)
-    }
-    else {
-        return $text
-    }
+    return $text.TrimStart(0)
 }
 
 Test-ForDependencies
