@@ -23,6 +23,15 @@ events.listen('recipes', (event) => {
                 id: 'bloodmagic:altar/apprenticebloodorb'
             },
             {
+                input: 'occultism:otherstone_tablet',
+                output: 'bloodmagic:blankslate',
+                syphon: 1000,
+                altarLevel: 0,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:altar/slate'
+            },
+            {
                 input: 'occultism:chalk_white_impure',
                 output: 'occultism:chalk_white',
                 syphon: 7000,

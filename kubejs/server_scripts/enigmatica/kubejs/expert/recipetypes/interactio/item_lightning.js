@@ -120,6 +120,19 @@ events.listen('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             }
+        },
+        {
+            inputs: [
+                { tag: 'forge:storage_blocks/iron', count: 1 },
+                { tag: 'forge:dusts/iron', count: 1 },
+                { tag: 'forge:dusts/fluorite', count: 1 },
+                { tag: 'forge:dusts/copper', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'minecraft:lodestone', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            }
         }
     ];
 
