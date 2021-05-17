@@ -1,11 +1,31 @@
+### Enigmatica 6 v0.4.13
+
+_Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.132.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.13.md)_
+
+**Improvements/Changes**
+
+- More Emendatus Enigmatica Chunk Compatibility for Modded Ores [\#2181](https://github.com/NillerMedDild/Enigmatica6/pull/2181) ([pm065](https://github.com/pm065))
+
+**Bug Fixes**
+
+- \[0.4.8\] spell break veinvanishes blocks [\#1939](https://github.com/NillerMedDild/Enigmatica6/issues/1939)
+- \[0.4.10\] Ametrine Gem is dropping. [\#2097](https://github.com/NillerMedDild/Enigmatica6/issues/2097)
+- \[0.4.10\] Seeds can be used to repair tools [\#2099](https://github.com/NillerMedDild/Enigmatica6/issues/2099)
+- \[0.4.10\] Server crash Integrated Crafting, IF [\#2109](https://github.com/NillerMedDild/Enigmatica6/issues/2109)
+- \[0.4.12\] Updating from 0.4.9 has resulted in the world becoming corrupted. [\#2195](https://github.com/NillerMedDild/Enigmatica6/issues/2195)
+- Crash when placing logistics modules on pressure tubes [\#2193](https://github.com/NillerMedDild/Enigmatica6/issues/2193)
+- Looking at PneumaticCraft Spawner Agitator results in crash [\#2198](https://github.com/NillerMedDild/Enigmatica6/issues/2198)
+- Missing recipes for IE Wire Cutters and Wire Coils in expert mode [\#2201](https://github.com/NillerMedDild/Enigmatica6/issues/2201)
+- [0.4.12\] Pillagers don't spawn with crossbows [\#2203](https://github.com/NillerMedDild/Enigmatica6/issues/2203)
+
 ### Enigmatica 6 v0.4.12
 
 _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.12.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.12.md)_
 
 **New Mods**
 
-- [Sushi Go Crafting](https://www.curseforge.com/minecraft/mc-mods/sushigocrafting)
-- [Valhelsia Core](https://www.curseforge.com/minecraft/mc-mods/valhelsia-core)
+-   [Sushi Go Crafting](https://www.curseforge.com/minecraft/mc-mods/sushigocrafting)
+-   [Valhelsia Core](https://www.curseforge.com/minecraft/mc-mods/valhelsia-core)
 
 **Improvements/Changes**
 
@@ -14,9 +34,9 @@ _Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
-- \[0.4.11\] Diamond Honeycomb has no Centrifuge recipe [\#2166](https://github.com/NillerMedDild/Enigmatica6/issues/2166)
-- \[0.4.10\] Server crash on update \(Integrated Tunnels\) [\#2083](https://github.com/NillerMedDild/Enigmatica6/issues/2083)
-- Fixed Bee File Typos [\#2167](https://github.com/NillerMedDild/Enigmatica6/pull/2167) ([TemperedFool](https://github.com/TemperedFool))
+-   \[0.4.11\] Diamond Honeycomb has no Centrifuge recipe [\#2166](https://github.com/NillerMedDild/Enigmatica6/issues/2166)
+-   \[0.4.10\] Server crash on update \(Integrated Tunnels\) [\#2083](https://github.com/NillerMedDild/Enigmatica6/issues/2083)
+-   Fixed Bee File Typos [\#2167](https://github.com/NillerMedDild/Enigmatica6/pull/2167) ([TemperedFool](https://github.com/TemperedFool))
 
 **Removed Mods**
 
