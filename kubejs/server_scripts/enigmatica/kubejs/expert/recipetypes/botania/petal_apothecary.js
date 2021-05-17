@@ -18,6 +18,21 @@ events.listen('recipes', (event) => {
         {
             inputs: [{ tag: 'forge:mushrooms' }, { item: 'thermal:phytogro' }],
             output: { item: 'eidolon:fungus_sprouts', count: 2 }
+        },
+        {
+            inputs: [
+                { tag: 'botania:petals/pink' },
+                { tag: 'botania:petals/pink' },
+                { tag: 'botania:petals/purple' },
+                { tag: 'botania:petals/purple' },
+                { tag: 'botania:petals/lime' },
+                { item: 'botania:life_essence' },
+                { tag: 'botania:runes/mana' },
+                { tag: 'botania:runes/mana' },
+                { tag: 'botania:runes/mana' }
+            ],
+            output: { item: 'botania:rosa_arcana' },
+            id: 'botania:petal_apothecary/rosa_arcana'
         }
     ];
 

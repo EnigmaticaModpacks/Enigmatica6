@@ -159,6 +159,9 @@ events.listen('recipes', (event) => {
 
         'quark:building/crafting/tallow_from_block',
 
+        'simplefarming:apple_pie',
+        'simplefarming:blueberry_pie',
+
         'thermal:machine/smelter/smelter_alloy_netherite',
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',

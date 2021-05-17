@@ -14,7 +14,8 @@ events.listen('recipes', (event) => {
     const patchouli_safe_removals = [
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
-        { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' }
+        { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' },
+        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' }
     ];
 
     idRemovals.forEach((id) => {

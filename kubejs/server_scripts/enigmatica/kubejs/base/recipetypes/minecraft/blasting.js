@@ -27,6 +27,11 @@ events.listen('recipes', (event) => {
                 xp: 0.7
             },
             {
+                input: '#forge:ores/elementium',
+                output: Item.of('#forge:ingots/elementium'),
+                xp: 1.0
+            },
+            {
                 input: 'farmersdelight:iron_knife',
                 output: Item.of('#forge:nuggets/iron'),
                 xp: 0.1
@@ -50,6 +55,7 @@ events.listen('recipes', (event) => {
             }
         ]
     };
+    
     data.recipes.forEach((recipe) => {
         recipe.xp
             ? event.blasting(recipe.output, recipe.input).xp(recipe.xp)

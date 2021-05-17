@@ -1,153 +1,66 @@
 
-[The_End]
-	#
+#End related settings
+[end]
 	#Does BYG control The End?
-	ControlEnd = true
-	#
-	#End Biome Size.
-	#Default: 3
-	#Range: 0 ~ 10
-	IslandBiomeSize = 3
-	#
+	#This only applies when making NEW worlds!
+	#Is not guaranteed to work in specific world types.
+	#You can find more info here in regards to specific world types: https://github.com/CorgiTaco/BYG/wiki/Enabling-BYG-Nether-&-End-Biomes
+	#For existing worlds, follow the steps listed here: https://wiki.griefed.de/SCP/edit-world.
+	controlEnd = true
 	#End Biome Size
 	#Default: 3
-	#Range: 0 ~ 10
-	EndBiomeSize = 3
+	#Range: 1-10
+	endBiomeSize = 3
+	#Void Biome Size
+	#Default: 2
+	#Range: 1-10
+	voidBiomeSize = 2
 
-	[The_End.Void]
-		#
-		#Void Biome(where small end islands generate in vanilla) size.
-		#Default: 3
-		#Range: 0 ~ 10
-		VoidBiomeSize = 2
-
-[Overworld]
-
-	[Overworld.Ores]
-
-		[Overworld.Ores.Pendorite]
-			#
-			#Number of times to spawn per chunk.
-			#Default: 10
-			#Range: 1 ~ 100
-			PendoritePerChunk = 10
-			#
-			#Generate Pendorite Ore? Only spawns in Forest Fault.
-			GeneratePendorite = false
-			#
-			#Y level to start generating at.
-			#Default: 56
-			#Range: 1 ~ 256
-			PendoriteY = 56
-			#
-			#Size of the clusters.
-			#Default: 4
-			#Range: 1 ~ 100
-			PendoriteSize = 4
-
-		#Datapacks can and will override all values in the "Ore" category so keep that in mind!
-		[Overworld.Ores.Ametrine]
-			#
-			#Number of times to spawn per chunk.
-			#Default: 10
-			#Range: 1 ~ 100
-			AmetrinePerChunk = 10
-			#
-			#Size of the clusters.
-			#Default: 4
-			#Range: 1 ~ 100
-			AmetrineSize = 4
-			#
-			#Generate Ametrine Ore? Only spawns in Guiana Shield, Stone Forest, and Pointed Stone Forest!
-			GenerateAmetrine = false
-			#
-			#Y level to start generating at.
-			#Default: 56
-			#Range: 1 ~ 256
-			AmetrineY = 56
-
-	[Overworld.Stones]
-
-		[Overworld.Stones.Scoria_Stone]
-			#
-			#Number of times to spawn per chunk.
-			#Default: 10
-			#Range: 1 ~ 100
-			ScoriaStonePerChunk = 1
-			#
-			#Y level to start generating at.
-			#Default: 63
-			#Range: 1 ~ 256
-			ScoriaStoneY = 63
-			#
-			#Size of the clusters.
-			#Default: 20
-			#Range: 1 ~ 100
-			ScoriaStoneSize = 32
-			#
-			#Generate Scoria Stone?
-			GenerateScoriaStone = false
-
-		[Overworld.Stones.Soap_Stone]
-			#
-			#Number of times to spawn per chunk.
-			#Default: 10
-			#Range: 1 ~ 100
-			SoapStonePerChunk = 1
-			#
-			#Size of the clusters.
-			#Default: 20
-			#Range: 1 ~ 100
-			SoapStoneSize = 32
-			#
-			#Generate Soap Stone?
-			GenerateSoapStone = false
-			#
-			#Y level to start generating at.
-			#Default: 63
-			#Range: 1 ~ 256
-			SoapStoneY = 63
-
-		#Datapacks can and will override all values in the "Stone" category so keep that in mind!
-		[Overworld.Stones.Rocky_Stone]
-			#
-			#Y level to start generating at.
-			#Default: 63
-			#Range: 1 ~ 256
-			RockyStoneY = 63
-			#
-			#Size of the clusters.
-			#Default: 20
-			#Range: 1 ~ 100
-			RockyStoneSize = 32
-			#
-			#Number of times to spawn per chunk.
-			#Default: 10
-			#Range: 1 ~ 100
-			RockyStonePerChunk = 1
-			#
-			#Generate Rocky Stone?
-			GenerateRockyStone = false
-
-[The_Nether]
-	#
-	#Is the list of biomes a blacklist or whitelist?
-	#When this list is a blacklist, the values in the list will not be in world generation.
-	#When this list is a whitelist, Adding a biome several times gives it more weight in generation and it must contain at least 1 value.
-	#When set to true, datapack biomes will work automatically! When set to false, you will need to manually add datapack entries.
-	#Default: true
-	isBlacklistNether = true
-	#
+#Nether related settings
+[nether]
+	#Does BYG control The Nether?
+	#This only applies when making NEW worlds!
+	#Is not guaranteed to work in specific world types.
+	#You can find more info here in regards to specific world types: https://github.com/CorgiTaco/BYG/wiki/Enabling-BYG-Nether-&-End-Biomes
+	#For existing worlds, follow the steps listed here: https://wiki.griefed.de/SCP/edit-world.
+	controlNether = true
 	#Nether Biome Size
 	#Default: 3
-	#Range: 0 ~ 10
-	NetherBiomeSize = 3
-	#
-	#Does BYG control The Nether?
-	ControlNether = true
-	#
-	#This works as a whitelist or blacklist depending on the "isBlacklistNether" value.
-	#NO SPACES AFTER COMMAS!
-	#Default: ""
-	BlacklistNether = ""
+	#Range: 1-10
+	netherBiomeSize = 3
+
+#BYG uses a prefix system for its ore spawns.
+# Prefix Guide:
+# "#" - Biome category representable.
+# "$" - Biome dictionary representable.
+# "," - Creates a new condition, separate from the previous.
+# "ALL" - Spawn in all biomes(no condition).
+# "!" - Negates/flips/does the reverse of the condition.
+# "" - No prefix serves as a biome ID OR Mod ID representable.
+#
+# Here are a few examples:
+#1. "byg#THE_END, $OCEAN" would mean that the ore may spawn in biomes with the name space "byg" AND in the "END" biome category, OR all biomes in the "OCEAN" dictionary.
+#2. "byg:guiana_shield, #MESA" would mean that the ore may spawn in the "byg:guiana_shield" OR all biomes in the "MESA" category.
+#3. "byg#ICY$MOUNTAIN" would mean that the ore may only spawn in biomes from byg in the "ICY" category and "MOUNTAIN" dictionary type.
+#4. "!byg#DESERT" would mean that the ore may only spawn in biomes that are NOT from byg and NOT in the "DESERT" category.
+#5. "ALL", spawn everywhere. 
+#6. "" Don't spawn anywhere.
+[ores]
+	#What biome(s) does Ametrine spawn in? Default: "byg:shattered_viscal_isles".
+	ametrineSpawns = ""
+	#What biome(s) does Budding Ametrine spawn in? Default: "byg:shattered_viscal_isles".
+	buddingAmetrineSpawns = ""
+	#What biome(s) does Pendorite spawn in? Default: "byg:forest_fault".
+	pendoriteSpawns = ""
+	#What biome(s) does Therium spawn in? Default: "byg#THE_END".
+	theriumSpawns = ""
+
+#See the explanation for ores for configuring stones.
+[stones]
+	#What biome(s) does Rocky Stone spawn in? Default: "!#THEEND#NETHER".
+	rockyStoneSpawns = ""
+	#What biome(s) does Scoria Stone spawn in? Default: "!#THEEND#NETHER".
+	scoriaStoneSpawns = ""
+	#What biome(s) does Soap Stone spawn in? Default: "!#THEEND#NETHER".
+	soapStoneSpawns = ""
 

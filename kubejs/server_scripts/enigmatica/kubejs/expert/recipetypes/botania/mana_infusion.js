@@ -7,6 +7,7 @@ events.listen('recipes', (event) => {
         {
             input: '#forge:ingots/froststeel',
             output: 'botania:manasteel_ingot',
+            count: 1,
             mana: 3000,
             catalyst: 'architects_palette:sunstone',
             id: 'botania:mana_infusion/manasteel'
@@ -14,9 +15,18 @@ events.listen('recipes', (event) => {
         {
             input: '#forge:storage_blocks/froststeel',
             output: 'botania:manasteel_block',
+            count: 1,
             mana: 27000,
             catalyst: 'architects_palette:sunstone',
             id: 'botania:mana_infusion/manasteel_block'
+        },
+        {
+            input: 'betterendforge:silk_fiber',
+            output: 'botania:mana_string',
+            count: 6,
+            mana: 5000,
+            catalyst: 'architects_palette:sunstone',
+            id: 'botania:mana_infusion/mana_string'
         }
     ];
 
@@ -24,7 +34,7 @@ events.listen('recipes', (event) => {
         let constructed_recipe = {
             type: 'botania:mana_infusion',
             input: Ingredient.of(recipe.input).toJson(),
-            output: Ingredient.of(recipe.output).toJson(),
+            output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana
         };
         if (recipe.catalyst) {

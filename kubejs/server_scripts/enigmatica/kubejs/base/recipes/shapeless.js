@@ -61,7 +61,7 @@ events.listen('recipes', (event) => {
             inputs: ['#forge:chocolate_bars', 'minecraft:sugar', 'minecraft:sugar']
         },
         { output: 'minecraft:wheat_seeds', inputs: ['minecraft:wheat'] },
-        { output: 'quark:root', inputs: ['minecraft:vine', '#forge:dyes/brown'] },
+
         {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }),
             inputs: ['minecraft:book', '#forge:dyes/yellow']

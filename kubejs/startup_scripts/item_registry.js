@@ -1,5 +1,5 @@
 events.listen('item.registry', (event) => {
-    const items = [
+    const generalItems = [
         'rare_lootbox',
         'epic_lootbox',
         'legendary_lootbox',
@@ -13,7 +13,7 @@ events.listen('item.registry', (event) => {
         'altered_recipe_indicator'
     ];
 
-    items.forEach((item) => {
+    generalItems.forEach((item) => {
         event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);
     });
 });

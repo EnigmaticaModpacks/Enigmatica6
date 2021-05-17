@@ -51,6 +51,14 @@ events.listen('recipes', (event) => {
                 aura_type: 'naturesaura:overworld',
                 aura: 15000,
                 time: 80
+            },
+            {
+                input: 'minecraft:vine',
+                output: 'quark:root',
+                aura_type: 'naturesaura:nether',
+                catalyst: 'naturesaura:conversion_catalyst',
+                aura: 30000,
+                time: 250
             }
         ]
     };

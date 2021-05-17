@@ -18,14 +18,19 @@ events.listen('recipes', (event) => {
             inputs: ['architects_palette:sunmetal_block']
         },
         {
-            output: Item.of('ars_nouveau:potion_jar'),
+            output: 'ars_nouveau:potion_jar',
             inputs: ['ars_nouveau:mana_jar', ['minecraft:nether_wart', 'eidolon:fungus_sprouts']],
             id: 'ars_nouveau:potion_jar'
         },
         {
-            output: Item.of('naturesaura:bottle_two_the_rebottling'),
+            output: 'naturesaura:bottle_two_the_rebottling',
             inputs: ['minecraft:glass_bottle', 'farmersdelight:tree_bark'],
             id: 'naturesaura:bottle_two_the_rebottling'
+        },
+        {
+            output: 'botania:redstone_root',
+            inputs: ['quark:root_item', '#forge:dusts/redstone'],
+            id: 'botania:redstone_root'
         }
     ];
 
