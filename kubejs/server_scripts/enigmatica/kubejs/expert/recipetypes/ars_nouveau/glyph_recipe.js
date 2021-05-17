@@ -28,7 +28,7 @@ events.listen('recipes', (event) => {
             id: 'ars_nouveau:glyph_amplify'
         },
         {
-            input: 'thermal:ice_charge',
+            input: 'bloodmagic:reagentwater',
             output: 'ars_nouveau:glyph_conjure_water',
             tier: 'TWO',
             id: 'ars_nouveau:glyph_conjure_water'
@@ -50,6 +50,66 @@ events.listen('recipes', (event) => {
             output: 'ars_nouveau:glyph_strength',
             tier: 'THREE',
             id: 'ars_nouveau:glyph_strength'
+        },
+        {
+            input: 'create:adjustable_chain_gearshift',
+            output: 'ars_nouveau:glyph_accelerate',
+            tier: 'TWO',
+            id: 'ars_nouveau:glyph_accelerate'
+        },
+        {
+            input: 'bloodmagic:reagentlava',
+            output: 'ars_nouveau:glyph_ignite',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_ignite'
+        },
+        {
+            input: 'bloodmagic:reagentvoid',
+            output: 'ars_nouveau:glyph_dispel',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_dispel'
+        },
+        {
+            input: 'bloodmagic:reagentgrowth',
+            output: 'ars_nouveau:glyph_grow',
+            tier: 'TWO',
+            id: 'ars_nouveau:glyph_grow'
+        },
+        {
+            input: 'bloodmagic:reagentfastminer',
+            output: 'ars_nouveau:glyph_haste',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_haste'
+        },
+        {
+            input: 'bloodmagic:reagentmagnetism',
+            output: 'ars_nouveau:glyph_pull',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_pull'
+        },
+        {
+            input: 'bloodmagic:reagentair',
+            output: 'ars_nouveau:glyph_launch',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_launch'
+        },
+        {
+            input: 'eidolon:tattered_cloth',
+            output: 'ars_nouveau:glyph_phantom_block',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_phantom_block'
+        },
+        {
+            input: 'create:adjustable_repeater',
+            output: 'ars_nouveau:glyph_delay',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_delay'
+        },
+        {
+            input: 'botania:tiny_planet_block',
+            output: 'ars_nouveau:glyph_gravity',
+            tier: 'TWO',
+            id: 'ars_nouveau:glyph_gravity'
         }
     ];
 
