@@ -23,6 +23,15 @@ events.listen('recipes', (event) => {
                 id: 'bloodmagic:altar/apprenticebloodorb'
             },
             {
+                input: '#forge:storage_blocks/iesnium',
+                output: 'bloodmagic:magicianbloodorb',
+                syphon: 50000,
+                altarLevel: 2,
+                consumptionRate: 20,
+                drainRate: 20,
+                id: 'bloodmagic:altar/magicianbloodorb'
+            },
+            {
                 input: 'occultism:otherstone_tablet',
                 output: 'bloodmagic:blankslate',
                 syphon: 1000,
