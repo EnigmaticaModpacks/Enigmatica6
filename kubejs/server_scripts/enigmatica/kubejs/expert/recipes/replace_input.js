@@ -23,6 +23,11 @@ events.listen('recipes', (event) => {
             filter: { id: 'glassential:glass_ghostly' },
             toReplace: 'minecraft:ender_pearl',
             replaceWith: Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })
+        },
+        {
+            filter: { id: 'occultism:crafting/iesnium_pickaxe' },
+            toReplace: '#forge:rods/wooden',
+            replaceWith: 'betterendforge:leather_wrapped_stick'
         }
     ];
 
