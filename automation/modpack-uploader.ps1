@@ -288,7 +288,7 @@ function New-GitHubRelease {
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
     
-        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
+        Start-Process Powershell.exe -Argument "-NoProfile -Command $InstanceRoot/github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
     }
 }
 
