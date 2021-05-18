@@ -31,6 +31,17 @@ events.listen('recipes', (event) => {
             output: 'botania:redstone_root',
             inputs: ['quark:root_item', '#forge:dusts/redstone'],
             id: 'botania:redstone_root'
+        },
+        {
+            output: Item.of('bloodmagic:woodbrickpath', 4),
+            inputs: [
+                'eidolon:polished_planks',
+                'eidolon:polished_planks',
+                'eidolon:polished_planks',
+                'eidolon:polished_planks',
+                { type: 'bloodmagic:bloodorb', orb_tier: 2 }
+            ],
+            id: 'bloodmagic:path/path_wood'
         }
     ];
 

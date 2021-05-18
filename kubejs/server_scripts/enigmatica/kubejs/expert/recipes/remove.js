@@ -6,7 +6,8 @@ events.listen('recipes', (event) => {
     const idRemovals = [
         'ars_nouveau:stone_2',
         'minecraft:leather_to_stripes',
-        'quark:building/crafting/candles/candle_basic'
+        'quark:building/crafting/candles/candle_basic',
+        'betterendforge:leather_to_stripes'
     ];
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];

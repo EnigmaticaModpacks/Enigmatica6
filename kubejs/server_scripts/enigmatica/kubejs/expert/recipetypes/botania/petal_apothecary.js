@@ -33,6 +33,21 @@ events.listen('recipes', (event) => {
             ],
             output: { item: 'botania:rosa_arcana' },
             id: 'botania:petal_apothecary/rosa_arcana'
+        },
+        {
+            inputs: [
+                { tag: 'botania:petals/blue' },
+                { tag: 'botania:petals/blue' },
+                { tag: 'botania:petals/light_blue' },
+                { tag: 'botania:petals/light_blue' },
+                { tag: 'botania:petals/green' },
+                { tag: 'botania:petals/green' },
+                { tag: 'botania:runes/water' },
+                { tag: 'botania:runes/sloth' },
+                { item: 'botania:pixie_dust' }
+            ],
+            output: { item: 'mythicbotany:aquapanthus' },
+            id: 'mythicbotany:petal_apothecary/aquapanthus'
         }
     ];
 
