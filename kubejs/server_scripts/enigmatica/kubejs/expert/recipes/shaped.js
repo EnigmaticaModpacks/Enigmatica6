@@ -527,6 +527,40 @@ events.listen('recipes', (event) => {
                 D: '#minecraft:flowers'
             },
             id: 'resourcefulbees:apiary_breeder'
+        },
+        {
+            output: 'resourcefulbees:centrifuge',
+            pattern: ['CBC', 'CAC', 'EDE'],
+            key: {
+                A: 'thermal:machine_frame',
+                B: 'immersiveengineering:circuit_board',
+                C: 'emendatusenigmatica:steel_ingot',
+                D: 'minecraft:piston',
+                E: 'minecraft:smooth_stone'
+            },
+            id: 'resourcefulbees:centrifuge'
+        },
+        {
+            output: 'resourcefulbees:centrifuge_casing',
+            pattern: ['CBC', 'BAB', 'CBC'],
+            key: {
+                A: 'rftoolsbase:machine_frame',
+                B: 'minecraft:redstone',
+                C: 'naturesaura:infused_iron'
+            },
+            id: 'resourcefulbees:centrifuge_casing'
+        },
+        {
+            output: 'resourcefulbees:centrifuge_controller',
+            pattern: ['EBE', 'CAC', 'EDE'],
+            key: {
+                A: 'rftoolsbase:machine_frame',
+                B: 'immersiveengineering:rs_engineering',
+                C: 'naturesaura:infused_iron',
+                D: 'resourcefulbees:centrifuge',
+                E: 'resourcefulbees:centrifuge_casing'
+            },
+            id: 'resourcefulbees:centrifuge_controller'
         }
     ];
 
