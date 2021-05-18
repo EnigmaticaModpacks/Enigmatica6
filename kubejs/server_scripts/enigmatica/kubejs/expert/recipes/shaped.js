@@ -541,7 +541,7 @@ events.listen('recipes', (event) => {
             id: 'resourcefulbees:centrifuge'
         },
         {
-            output: 'resourcefulbees:centrifuge_casing',
+            output: Item.of('resourcefulbees:centrifuge_casing',4),
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
                 A: 'rftoolsbase:machine_frame',
@@ -563,7 +563,7 @@ events.listen('recipes', (event) => {
             id: 'resourcefulbees:centrifuge_controller'
         },
         {
-            output: 'resourcefulbees:elite_centrifuge_casing',
+            output: Item.of('resourcefulbees:elite_centrifuge_casing', 4),
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
                 A: 'resourcefulbees:centrifuge_casing',
