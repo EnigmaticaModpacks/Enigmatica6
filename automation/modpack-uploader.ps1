@@ -288,7 +288,7 @@ function New-GitHubRelease {
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
     
-        Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
+        Start-Process Powershell.exe -Argument "-NoProfile -Command $InstanceRoot/github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
     }
 }
 
@@ -312,12 +312,7 @@ function Remove-LeadingZero {
     param(
         [string]$text
     )
-    if ($text[0] -eq "0") {
-        return $text.Substring(1)
-    }
-    else {
-        return $text
-    }
+    return $text.TrimStart(0)
 }
 
 Test-ForDependencies
