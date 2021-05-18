@@ -561,6 +561,28 @@ events.listen('recipes', (event) => {
                 E: 'resourcefulbees:centrifuge_casing'
             },
             id: 'resourcefulbees:centrifuge_controller'
+        },
+        {
+            output: 'resourcefulbees:elite_centrifuge_casing',
+            pattern: ['CBC', 'BAB', 'CBC'],
+            key: {
+                A: 'resourcefulbees:centrifuge_casing',
+                B: 'minecraft:redstone',
+                C: 'occultism:iesnium_ingot'
+            },
+            id: 'resourcefulbees:elite_centrifuge_casing'
+        },
+        {
+            output: 'resourcefulbees:elite_centrifuge_controller',
+            pattern: ['EBE', 'CAC', 'EDE'],
+            key: {
+                A: 'industrialforegoing:machine_frame_advanced',
+                B: 'pneumaticcraft:advanced_pcb',
+                C: 'occultism:iesnium_ingot',
+                D: 'resourcefulbees:centrifuge_controller',
+                E: 'resourcefulbees:elite_centrifuge_casing'
+            },
+            id: 'resourcefulbees:elite_centrifuge_controller'
         }
     ];
 
