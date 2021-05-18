@@ -388,6 +388,125 @@ events.listen('recipes', (event) => {
             },
             id: 'bloodmagic:incense_altar'
         },
+        {
+            output: 'bloodmagic:blankrune',
+            pattern: ['CBC', 'CAC', 'CBC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:blankslate',
+                C: 'occultism:otherstone'
+            },
+            id: 'bloodmagic:blood_rune_blank'
+        },
+        {
+            output: 'bloodmagic:speedrune',
+            pattern: ['CBC', 'DAD', 'CBC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:blankslate',
+                C: 'occultism:otherstone',
+                D: 'ars_nouveau:glyph_accelerate'
+            },
+            id: 'bloodmagic:blood_rune_speed'
+        },
+        {
+            output: 'bloodmagic:sacrificerune',
+            pattern: ['CBC', 'EDF', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:reinforcedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_touch',
+                F: 'ars_nouveau:glyph_harm'
+            },
+            id: 'bloodmagic:blood_rune_sacrifice'
+        },
+        {
+            output: 'bloodmagic:selfsacrificerune',
+            pattern: ['CBC', 'EDF', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:reinforcedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_self',
+                F: 'ars_nouveau:glyph_harm'
+            },
+            id: 'bloodmagic:blood_rune_self_sacrifice'
+        },
+        {
+            output: 'bloodmagic:dislocationrune',
+            pattern: ['CBC', 'EDF', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:infusedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_extract',
+                F: 'ars_nouveau:glyph_accelerate'
+            },
+            id: 'bloodmagic:blood_rune_displacement'
+        },
+        {
+            output: 'bloodmagic:altarcapacityrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:infusedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'bloodmagic:reagentholding'
+            },
+            id: 'bloodmagic:blood_rune_capacity'
+        },
+        {
+            output: 'bloodmagic:bettercapacityrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:demonslate',
+                C: 'minecraft:dark_prismarine',
+                D: 'bloodmagic:altarcapacityrune',
+                E: 'ars_nouveau:glyph_amplify'
+            },
+            id: 'bloodmagic:blood_rune_aug_capacity'
+        },
+        {
+            output: 'bloodmagic:orbcapacityrune',
+            pattern: ['CAC', 'DBD', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:blankrune',
+                C: 'minecraft:dark_prismarine',
+                D: 'ars_nouveau:glyph_amplify'
+            },
+            id: 'bloodmagic:blood_rune_orb'
+        },
+        {
+            output: 'bloodmagic:accelerationrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:demonslate',
+                C: 'minecraft:dark_prismarine',
+                D: 'bloodmagic:speedrune',
+                E: 'ars_nouveau:glyph_amplify'
+            },
+            id: 'bloodmagic:blood_rune_acceleration'
+        },
+        {
+            output: 'bloodmagic:chargingrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:demonslate',
+                C: 'minecraft:dark_prismarine',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_delay'
+            },
+            id: 'bloodmagic:blood_rune_charging'
+        },
         { //Gate Beehive behind starting Nature's Aura
             output: 'resourcefulbees:t1_beehive',
             pattern: ['ACA', 'ABA', 'ACA'],
