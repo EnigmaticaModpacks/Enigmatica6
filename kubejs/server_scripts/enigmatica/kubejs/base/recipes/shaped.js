@@ -884,16 +884,6 @@ events.listen('recipes', (event) => {
         ),
 
         shapedRecipe(
-            Item.of('resourcefulbees:t1_beehive'),
-            ['AAA', 'ABA', 'AAA'],
-            {
-                A: 'minecraft:grass',
-                B: '#forge:beehives/tier_0'
-            },
-            'resourcefulbees:t1_beehive'
-        ),
-
-        shapedRecipe(
             Item.of('resourcefulbees:t1_apiary'),
             ['ABA', 'BCB', 'ABA'],
             {
