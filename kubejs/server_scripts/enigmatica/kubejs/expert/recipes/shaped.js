@@ -506,27 +506,6 @@ events.listen('recipes', (event) => {
                 E: 'ars_nouveau:glyph_delay'
             },
             id: 'bloodmagic:blood_rune_charging'
-        },
-        { //Gate Beehive behind starting Nature's Aura
-            output: 'resourcefulbees:t1_beehive',
-            pattern: ['ACA', 'ABA', 'ACA'],
-            key: {
-                A: 'minecraft:grass',
-                B: '#forge:beehives/tier_0',
-                C: 'naturesaura:gold_powder'
-            },
-            id: 'resourcefulbees:t1_beehive'
-        },
-        {
-            output: 'resourcefulbees:apiary_breeder',
-            pattern: ['ACA', 'DBD', 'ACA'],
-            key: {
-                A: 'resourcefulbees:bee_jar',
-                B: 'resourcefulbees:apiary_storage',
-                C: 'naturesaura:token_joy',
-                D: '#minecraft:flowers'
-            },
-            id: 'resourcefulbees:apiary_breeder'
         }
     ];
 
