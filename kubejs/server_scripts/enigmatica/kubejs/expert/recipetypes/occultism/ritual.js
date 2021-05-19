@@ -80,6 +80,126 @@ events.listen('recipes', (event) => {
                 ],
                 result: { item: 'occultism:jei_dummy/none' },
                 id: 'occultism:ritual/summon_wild_afrit'
+            },
+            {
+                type: 'occultism:ritual',
+                activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+                pentacle_id: 'occultism:craft_djinni',
+                require_item_use: false,
+                require_sacrifice: false,
+                ritual: { item: 'occultism:ritual_dummy/craft_dimensional_matrix' },
+                ingredients: [
+                    { tag: 'quark:crystal_clusters' },
+                    { tag: 'quark:crystal_clusters' },
+                    { tag: 'quark:crystal_clusters' },
+                    { tag: 'quark:crystal_clusters' },
+                    { item: 'eidolon:ender_calx' },
+                    { item: 'eidolon:ender_calx' },
+                    { item: 'eidolon:ender_calx' },
+                    { item: 'eidolon:ender_calx' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' }
+                ],
+                result: { item: 'occultism:dimensional_matrix' },
+                id: 'occultism:ritual/craft_dimensional_matrix'
+            },
+            {
+                type: 'occultism:ritual',
+                activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+                pentacle_id: 'occultism:craft_foliot',
+                require_item_use: false,
+                require_sacrifice: false,
+                ritual: { item: 'occultism:ritual_dummy/craft_stabilizer_tier1' },
+                ingredients: [
+                    { item: 'occultism:otherstone_pedestal' },
+                    { tag: 'forge:storage_blocks/bronze' },
+                    { tag: 'botania:runes/greed' },
+                    { tag: 'forge:storage_blocks/bronze' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { tag: 'quark:runes' },
+                    { tag: 'quark:runes' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' }
+                ],
+                result: { item: 'occultism:storage_stabilizer_tier1' },
+                id: 'occultism:ritual/craft_stabilizer_tier1'
+            },
+            {
+                type: 'occultism:ritual',
+                activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+                pentacle_id: 'occultism:craft_djinni',
+                require_item_use: false,
+                require_sacrifice: false,
+                ritual: { item: 'occultism:ritual_dummy/craft_stabilizer_tier2' },
+                ingredients: [
+                    { item: 'occultism:storage_stabilizer_tier1' },
+                    { tag: 'forge:storage_blocks/silver' },
+                    { tag: 'botania:runes/pride' },
+                    { tag: 'forge:storage_blocks/silver' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { tag: 'forge:gems/dimensional' },
+                    { tag: 'forge:gems/dimensional' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' },
+                    { item: 'bloodmagic:defaultcrystal' }
+                ],
+                result: { item: 'occultism:storage_stabilizer_tier2' },
+                id: 'occultism:ritual/craft_stabilizer_tier2'
+            },
+            {
+                type: 'occultism:ritual',
+                activation_item: { item: 'occultism:book_of_binding_bound_afrit' },
+                pentacle_id: 'occultism:craft_afrit',
+                require_item_use: false,
+                require_sacrifice: false,
+                ritual: { item: 'occultism:ritual_dummy/craft_stabilizer_tier3' },
+                ingredients: [
+                    { item: 'occultism:storage_stabilizer_tier2' },
+                    { tag: 'forge:storage_blocks/electrum' },
+                    { tag: 'botania:runes/sloth' },
+                    { tag: 'forge:storage_blocks/electrum' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { item: 'astralsorcery:celestial_crystal' },
+                    { item: 'astralsorcery:celestial_crystal' },
+                    { item: 'bloodmagic:steadfastcrystal' },
+                    { item: 'bloodmagic:steadfastcrystal' },
+                    { item: 'bloodmagic:steadfastcrystal' },
+                    { item: 'bloodmagic:steadfastcrystal' }
+                ],
+                result: { item: 'occultism:storage_stabilizer_tier3' },
+                id: 'occultism:ritual/craft_stabilizer_tier3'
+            },
+            {
+                type: 'occultism:ritual',
+                activation_item: { item: 'occultism:book_of_binding_bound_marid' },
+                pentacle_id: 'occultism:craft_marid',
+                require_item_use: false,
+                require_sacrifice: false,
+                ritual: { item: 'occultism:ritual_dummy/craft_stabilizer_tier4' },
+                ingredients: [
+                    { item: 'occultism:storage_stabilizer_tier3' },
+                    { tag: 'forge:storage_blocks/iesnium' },
+                    { tag: 'botania:runes/envy' },
+                    { tag: 'forge:storage_blocks/iesnium' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { item: 'occultism:spirit_attuned_crystal' },
+                    { item: 'betterendforge:eternal_crystal' },
+                    { item: 'betterendforge:eternal_crystal' },
+                    { item: 'bloodmagic:steadfastdemoncrystal' },
+                    { item: 'bloodmagic:steadfastdemoncrystal' },
+                    { item: 'bloodmagic:steadfastdemoncrystal' },
+                    { item: 'bloodmagic:steadfastdemoncrystal' }
+                ],
+                result: { item: 'occultism:storage_stabilizer_tier4' },
+                id: 'occultism:ritual/craft_stabilizer_tier4'
             }
         ]
     };
