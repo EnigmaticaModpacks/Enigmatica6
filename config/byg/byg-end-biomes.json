@@ -1,0 +1,211 @@
+{
+  "biomes": {
+    "betterendforge:amber_land": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:blossoming_spires": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:chorus_forest": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:crystal_mountains": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:dragon_graveyards": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:dry_shrubland": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:dust_wastelands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:foggy_mushroomland": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:glowing_grasslands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:ice_starfield": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:lantern_woods": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:megalake": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:megalake_grove": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:neon_oasis": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:painted_mountains": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:shadow_forest": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:sulphur_springs": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "betterendforge:umbrella_jungle": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:bulbis_gardens": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "byg:bulbis_gardens_edge",
+      "hills": []
+    },
+    "byg:cryptic_wastes": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:ethereal_islands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "byg:ethereal_clearing",
+      "hills": [
+        {
+          "name": "byg:ethereal_forest",
+          "weight": 10
+        },
+        {
+          "name": "byg:ethereal_clearing",
+          "weight": 5
+        }
+      ]
+    },
+    "byg:imparius_grove": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "byg:imparius_clearing",
+      "hills": [
+        {
+          "name": "byg:imparius_clearing",
+          "weight": 10
+        }
+      ]
+    },
+    "byg:ivis_fields": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:nightshade_forest": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:purpur_peaks": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:shattered_desert": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:shulkren_forest": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "minecraft:end_highlands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "minecraft:end_midlands": {
+      "dictionary": "END",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    }
+  },
+  "void-biomes": {
+    "byg:shattered_desert_isles": {
+      "dictionary": "END,VOID",
+      "weight": 5,
+      "edge": "",
+      "hills": []
+    },
+    "byg:viscal_isles": {
+      "dictionary": "END,VOID",
+      "weight": 5,
+      "edge": "",
+      "hills": [
+        {
+          "name": "byg:shattered_viscal_isles",
+          "weight": 10
+        }
+      ]
+    }
+  }
+}

@@ -1,51 +1,4 @@
 
-["Miscellaneous Features"]
-	#Configures if right-click harvesting of crops should be enabled. Which crops are affected by right-clicking can be configured in the "Right-click Harvesting Settings" section.
-	#DISABLED -> disables right-click harvesting feature for all crops completely
-	#ENABLED_DROP -> loot is dropped on the ground
-	#ENABLED_SMART -> loot is placed in the player's inventory
-	#Allowed Values: DISABLED, ENABLED_DROP, ENABLED_SMART
-	"Right-Click Harvest" = "ENABLED_DROP"
-	#Configures if Double Crops (i.e. Corn, Sorghum, Kenaf) slow down living entities (Default: false)
-	"Double Crops Slow Down Motion" = true
-
-["Dimensions Settings"]
-	#Enter a dimension id to whitelist feature generation
-	white_dim = [0]
-	#Enter a dimension id to blacklist feature generation
-	black_dim = [-1, 1]
-
-["Tweak World Generation Rates"]
-	#Chance of fruit trees generating in the overworld. Higher numbers indicate a lower probability (Default: 1500)
-	#Range: 1 ~ 1000000000
-	"Probability of fruit trees generating" = 10000
-	#Chance of opuntias generating in deserts. Higher numbers indicate a lower probability (Default: 150)
-	#Range: 1 ~ 1000000000
-	"Probability of opuntias generating" = 1500
-	#Chance of wild crops generating in the overworld. Higher numbers indicate a lower probability (Default: 100)
-	#Range: 1 ~ 1000000000
-	"Probability of wild crops generating" = 3000
-	#Chance of wild plants generating in the overworld. Higher numbers indicate a lower probability (Default: 800)
-	#Range: 1 ~ 1000000000
-	"Probability of wild plants generating" = 8000
-	#Chance of berry bushes generating in the overworld. Higher numbers indicate a lower probability (Default: 300)
-	#Range: 1 ~ 1000000000
-	"Probability of berry bushes generating" = 2000
-
-["Enable/Disable World Generation"]
-	#Enable this feature to avoid conflicts with other mods that add grass drops (And disable grass drops).
-	"Generate wild crops" = true
-	#Indicates whether opuntias (cactus crops) should generate
-	"Generate opuntias" = true
-	#Indicates whether fruit trees should generate
-	"Generate fruit trees" = true
-	#Indicates whether wild plants, such as quinoa and cumin, should generate
-	"Generate wild plants" = true
-	#Indicates whether berry bushes should generate
-	"Generate berry bushes" = true
-	#Indicates whether vanilla pumpkin and melon stems should be replaced by a single block crop
-	"Replace stems" = false
-
 ["Right-click Harvesting Settings"]
 	#Indicates whether right-click harvesting opuntias should be enabled
 	"Enable right-click harvesting for opuntias" = true
@@ -61,4 +14,337 @@
 	"Enable right-click harvesting for tree leaves" = true
 	#Indicates whether right-click harvesting wild plants should be enabled
 	"Enable right-click harvesting for wild plants" = true
+	#Configures if right-click harvesting of crops should be enabled. Which crops are affected by right-clicking can be configured in the "Right-click Harvesting Settings" section.
+	#	DISABLED -> disables right-click harvesting feature for all crops completely
+	#	ENABLED_DROP -> loot is dropped on the ground
+	#	ENABLED_SMART -> loot is placed in the player's inventory
+	#Allowed Values: DISABLED, ENABLED_DROP, ENABLED_SMART
+	"Right-Click Harvest" = "ENABLED_DROP"
+
+["World Generation Features"]
+	#Indicates whether berry bushes should generate
+	"Generate berry bushes" = true
+	#Indicates whether opuntias (cactus crops) should generate
+	"Generate opuntias" = true
+	#Indicates whether fruit trees should generate
+	"Generate fruit trees" = true
+	#Enable this feature to generate wild crop blocks that drop seeds.
+	#If you want to disable seed drops from grass as well, this must be done in the 'Seed Drop Settings' section.
+	"Generate wild crops" = true
+	#Indicates whether wild plants, such as quinoa and cumin, should generate
+	"Generate wild plants" = true
+	#Chance of berry bushes generating in the overworld. Higher numbers indicate a lower probability (Default: 2000)
+	#Range: > 0
+	"Probability of berry bushes generating" = 2000
+	#Chance of opuntias generating in deserts. Higher numbers indicate a lower probability (Default: 1500)
+	#Range: > 0
+	"Probability of opuntias generating" = 1500
+	#Chance of fruit trees generating in the overworld. Higher numbers indicate a lower probability (Default: 10000)
+	#Range: > 0
+	"Probability of fruit trees generating" = 10000
+	#Chance of wild crops generating in the overworld. Higher numbers indicate a lower probability (Default: 3000)
+	#Range: > 0
+	"Probability of wild crops generating" = 3000
+	#Chance of wild plants generating in the overworld. Higher numbers indicate a lower probability (Default: 8000)
+	#Range: > 0
+	"Probability of wild plants generating" = 8000
+	#Enter a dimension location to whitelist feature generation.
+	#Correct format -> "mod_id:dimension"
+	white_dim = ["minecraft:overworld"]
+	#Enter a dimension location to blacklist feature generation.
+	#Correct format -> "mod_id:dimension"
+	black_dim = ["minecraft:nether", "minecraft:end"]
+
+["Miscellaneous Settings"]
+	#Configures if double crops (i.e. corn, sorghum, kenaf) slow down living entities (Default: false)
+	"Double Crops Slow Down Motion" = false
+	#Indicates whether vanilla pumpkin and melon stems should be replaced by a single block crop (Default: false)
+	"Replace stems" = false
+	#Indicates whether cantaloupe, honeydew, and squash crops should grow like vanilla pumpkin and melon crops (Default: true)
+	"Vanilla stem crops" = true
+	#Indicates whether village chests should have a chance of containing simple farming items (Default: true)
+	"Village loot" = true
+
+["Hunger Value Settings"]
+	#Range: > 0
+	"berry (default = 2)" = 2
+	#Range: > 0
+	"fruit (default = 4)" = 4
+	#Range: > 0
+	"gourd_slice (default = 2)" = 2
+	#Range: > 0
+	"cassava (default = 3)" = 3
+	#Range: > 0
+	"corn (default = 6)" = 6
+	#Range: > 0
+	"cucumber (default = 3)" = 3
+	#Range: > 0
+	"eggplant (default = 3)" = 3
+	#Range: > 0
+	"ginger (default = 2)" = 2
+	#Range: > 0
+	"onion (default = 3)" = 3
+	#Range: > 0
+	"peanut (default = 1)" = 1
+	#Range: > 0
+	"pepper (default = 2)" = 2
+	#Range: > 0
+	"pea_pod (default = 2)" = 2
+	#Range: > 0
+	"radish (default = 1)" = 1
+	#Range: > 0
+	"soybean (default = 2)" = 2
+	#Range: > 0
+	"sorghum (default = 4)" = 4
+	#Range: > 0
+	"salad_greens (default = 2)" = 2
+	#Range: > 0
+	"tomato (default = 3)" = 3
+	#Range: > 0
+	"turnip (default = 2)" = 2
+	#Range: > 0
+	"sweet_potato (default = 2)" = 2
+	#Range: > 0
+	"seeds (default = 1)" = 1
+	#Range: > 0
+	"zucchini (default = 3)" = 3
+	#Range: > 0
+	"broccoli (default = 3)" = 3
+	#Range: > 0
+	"olives (default = 2)" = 2
+	#Range: > 0
+	"golden_habanero (default = 2)" = 2
+	#Range: > 0
+	"berry_pie (default = 4)" = 4
+	#Range: > 0
+	"fruit_pie (default = 6)" = 6
+	#Range: > 0
+	"baked_sweet_potato (default = 6)" = 6
+	#Range: > 0
+	"banana_bread (default = 7)" = 7
+	#Range: > 0
+	"blt (default = 14)" = 14
+	#Range: > 0
+	"caesar_salad (default = 11)" = 11
+	#Range: > 0
+	"cassava_cake (default = 5)" = 5
+	#Range: > 0
+	"cheese_slice (default = 3)" = 3
+	#Range: > 0
+	"cheese_burger (default = 21)" = 21
+	#Range: > 0
+	"chicken_parmesan (default = 15)" = 15
+	#Range: > 0
+	"chili (default = 13)" = 13
+	#Range: > 0
+	"chocolate (default = 3)" = 3
+	#Range: > 0
+	"cooked_bacon (default = 4)" = 4
+	#Range: > 0
+	"cooked_chicken_wings (default = 3)" = 3
+	#Range: > 0
+	"cooked_egg (default = 5)" = 5
+	#Range: > 0
+	"cooked_sausage (default = 4)" = 4
+	#Range: > 0
+	"corn_salad (default = 9)" = 9
+	#Range: > 0
+	"corn_bread (default = 7)" = 7
+	#Range: > 0
+	"cucumber_soup (default = 6)" = 6
+	#Range: > 0
+	"egg_sandwich (default = 14)" = 14
+	#Range: > 0
+	"eggplant_parmesan (default = 16)" = 16
+	#Range: > 0
+	"fish_fillet (default = 8)" = 8
+	#Range: > 0
+	"fish_sandwich (default = 15)" = 15
+	#Range: > 0
+	"fried_calamari (default = 5)" = 5
+	#Range: > 0
+	"fruit_salad (default = 8)" = 8
+	#Range: > 0
+	"hamburger (default = 18)" = 18
+	#Range: > 0
+	"hotdog (default = 9)" = 9
+	#Range: > 0
+	"jaffa_cake (default = 8)" = 8
+	#Range: > 0
+	"lasagna (default = 24)" = 24
+	#Range: > 0
+	"mac_and_cheese (default = 10)" = 10
+	#Range: > 0
+	"oatmeal (default = 3)" = 3
+	#Range: > 0
+	"onion_soup (default = 6)" = 6
+	#Range: > 0
+	"pancakes (default = 4)" = 4
+	#Range: > 0
+	"pasta (default = 10)" = 10
+	#Range: > 0
+	"pickle (default = 5)" = 5
+	#Range: > 0
+	"pickled_beetroot (default = 3)" = 3
+	#Range: > 0
+	"pizza (default = 10)" = 10
+	#Range: > 0
+	"popcorn (default = 1)" = 1
+	#Range: > 0
+	"pulled_pork_sandwich (default = 18)" = 18
+	#Range: > 0
+	"radish_soup (default = 6)" = 6
+	#Range: > 0
+	"raw_bacon (default = 2)" = 2
+	#Range: > 0
+	"raw_calamari (default = 2)" = 2
+	#Range: > 0
+	"raw_chicken_wings (default = 1)" = 1
+	#Range: > 0
+	"raw_sausage (default = 2)" = 2
+	#Range: > 0
+	"rice_bowl (default = 3)" = 3
+	#Range: > 0
+	"salad (default = 12)" = 12
+	#Range: > 0
+	"sandwich (default = 16)" = 16
+	#Range: > 0
+	"spaghetti (default = 10)" = 10
+	#Range: > 0
+	"spinach_mushroom_quiche (default = 10)" = 10
+	#Range: > 0
+	"squash_casserole (default = 9)" = 9
+	#Range: > 0
+	"sushi (default = 8)" = 8
+	#Range: > 0
+	"tofu (default = 6)" = 6
+	#Range: > 0
+	"tomato_soup (default = 6)" = 6
+	#Range: > 0
+	"vegetable_medley (default = 6)" = 6
+	#Range: > 0
+	"veggie_burger (default = 16)" = 16
+	#Range: > 0
+	"tofu_scramble (default = 12)" = 12
+	#Range: > 0
+	"raisins (default = 8)" = 8
+	#Range: > 0
+	"chicken_noodle_soup (default = 13)" = 13
+	#Range: > 0
+	"quinoa_salad (default = 5)" = 5
+	#Range: > 0
+	"squash_soup (default = 12)" = 12
+	#Range: > 0
+	"spinach_quinoa_quiche (default = 10)" = 10
+	#Range: > 0
+	"beef_curry (default = 18)" = 18
+	#Range: > 0
+	"chicken_curry (default = 16)" = 16
+	#Range: > 0
+	"mutton_curry (default = 16)" = 16
+	#Range: > 0
+	"pork_curry (default = 18)" = 18
+	#Range: > 0
+	"vegetable_curry (default = 12)" = 12
+	#Range: > 0
+	"peanut_butter_pie (default = 3)" = 3
+	#Range: > 0
+	"sorghum_bread (default = 7)" = 7
+	#Range: > 0
+	"sorghum_porridge (default = 8)" = 8
+	#Range: > 0
+	"italian_beef (default = 18)" = 18
+	#Range: > 0
+	"peanut_butter_cookie (default = 4)" = 4
+	#Range: > 0
+	"pbj (default = 8)" = 8
+	#Range: > 0
+	"trail_mix (default = 12)" = 12
+	#Range: > 0
+	"carrot_soup (default = 6)" = 6
+	#Range: > 0
+	"pumpkin_soup (default = 6)" = 6
+	#Range: > 0
+	"pea_soup (default = 4)" = 4
+	#Range: > 0
+	"fried_rice (default = 9)" = 9
+	#Range: > 0
+	"sweet_potato_quinoa_cakes (default = 6)" = 6
+	#Range: > 0
+	"sausage_barley (default = 10)" = 10
+	#Range: > 0
+	"mushroom_barley (default = 4)" = 4
+	#Range: > 0
+	"beef_and_broccoli (default = 14)" = 14
+	#Range: > 0
+	"broccoli_cheese_soup (default = 6)" = 6
+	#Range: > 0
+	"stuffed_corn_zucchini (default = 14)" = 14
+	#Range: > 0
+	"zucchini_bread (default = 6)" = 6
+	#Range: > 0
+	"olive_tomato_salad (default = 5)" = 5
+	#Range: > 0
+	"candy (default = 5)" = 5
+	#Range: > 0
+	"borscht (default = 6)" = 6
+	#Range: > 0
+	"squid_ink_pasta (default = 12)" = 12
+	#Range: > 0
+	"fish_and_chips (default = 9)" = 9
+	#Range: > 0
+	"marshmallow (default = 3)" = 3
+	#Range: > 0
+	"pad_thai (default = 18)" = 18
+	#Range: > 0
+	"potato_knish (default = 8)" = 8
+	#Range: > 0
+	"chicory_gratin (default = 9)" = 9
+	#Range: > 0
+	"turnip_beetroot_gratin (default = 10)" = 10
+	#Range: > 0
+	"ice_cream_sundae (default = 7)" = 7
+	#Range: > 0
+	"candy_cane (default = 6)" = 6
+
+["Seed Drop Settings"]
+	#Should seeds drop from grasslike blocks?
+	#If false, all other seed drops will be ignored.
+	#(Default: true)
+	"Seeds drop from grass blocks" = false
+	cantaloupe = false
+	carrot = false
+	cassava = false
+	corn = false
+	cucumber = false
+	eggplant = false
+	honeydew = false
+	kenaf = false
+	lettuce = false
+	oat = false
+	onion = false
+	potato = false
+	pepper = false
+	radish = false
+	rice = false
+	rye = false
+	soybean = false
+	spinach = false
+	squash = false
+	tomato = false
+	yam = false
+	ginger = false
+	grape = false
+	sorghum = false
+	peanut = false
+	barley = false
+	pea = false
+	cotton = false
+	sweet_potato = false
+	broccoli = false
+	zucchini = false
+	turnip = false
+	pumpkin = false
+	melon = false
+	beetroot = false
 
