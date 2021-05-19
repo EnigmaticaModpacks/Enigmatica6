@@ -47,19 +47,19 @@ events.listen('recipes', (event) => {
                 inputs: ['resourcefulbees:iron_bee_spawn_egg', 'resourcefulbees:iron_honeycomb','naturesaura:infused_iron_block'],
                 entity: 'resourcefulbees:infused_bee',
                 aura: 400000,
-                time: 120
+                time: 320
             },
             {
                 inputs: ['resourcefulbees:gold_bee_spawn_egg', 'resourcefulbees:gold_honeycomb','naturesaura:tainted_gold_block'],
                 entity: 'resourcefulbees:tainted_bee',
                 aura: 500000,
-                time: 120
+                time: 400
             },
             {
                 inputs: ['resourcefulbees:gold_bee_spawn_egg', 'resourcefulbees:tainted_honeycomb','naturesaura:sky_ingot'],
                 entity: 'resourcefulbees:sky_bee',
                 aura: 600000,
-                time: 120
+                time: 480
             }
         ]
     };
