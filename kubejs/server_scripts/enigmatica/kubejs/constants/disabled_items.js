@@ -60,6 +60,8 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
+    'decorative_blocks_abnormals:ender_brazier',
+
     'mapperbase:bituminous_coal',
     'mapperbase:steel_fence',
     'mapperbase:steel_axe',

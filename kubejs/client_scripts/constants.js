@@ -282,6 +282,8 @@ const disabledItems = [
 
     'create:dough',
 
+    'decorative_blocks_abnormals:ender_brazier',
+
     'ironjetpacks:strap',
     'ironjetpacks:basic_coil',
     'ironjetpacks:advanced_coil',
