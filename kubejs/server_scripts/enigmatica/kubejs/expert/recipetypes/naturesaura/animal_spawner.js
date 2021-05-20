@@ -35,6 +35,24 @@ events.listen('recipes', (event) => {
                 aura: 150000,
                 time: 120,
                 id: 'naturesaura:animal_spawner/blaze'
+            },
+            {
+                inputs: ['resourcefulbees:bloody_honeycomb', 'minecraft:blue_ice'],
+                entity: 'ars_nouveau:wilden_guardian',
+                aura: 250000,
+                time: 120
+            },
+            {
+                inputs: ['resourcefulbees:bloody_honeycomb', 'valhelsia_structures:bone_pile'],
+                entity: 'ars_nouveau:wilden_hunter',
+                aura: 150000,
+                time: 120
+            },
+            {
+                inputs: ['resourcefulbees:bloody_honeycomb', 'astralsorcery:nocturnal_powder'],
+                entity: 'ars_nouveau:wilden_stalker',
+                aura: 150000,
+                time: 120
             }
         ]
     };

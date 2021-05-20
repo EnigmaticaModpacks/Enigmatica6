@@ -158,6 +158,43 @@ events.listen('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 2,
                 id: 'bloodmagic:alchemytable/reagent_air'
+            },
+            {
+                inputs: [
+                    'upgrade_aquatic:thrasher_tooth',
+                    '#forge:dusts/lapis',
+                    'minecraft:prismarine_shard',
+                    'minecraft:kelp'
+                ],
+                output: 'bloodmagic:reagentwater',
+                count: 1,
+                syphon: 300,
+                ticks: 200,
+                orbLevel: 2,
+                id: 'bloodmagic:alchemytable/reagent_water'
+            },
+            {
+                inputs: [
+                    'alexsmobs:kangaroo_hide',
+                    'alexsmobs:kangaroo_hide',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber'
+                ],
+                output: 'bloodmagic:reagentholding',
+                count: 1,
+                syphon: 2000,
+                ticks: 200,
+                orbLevel: 2,
+                id: 'bloodmagic:alchemytable/reagent_holding'
+            },
+            {
+                inputs: ['minecraft:lodestone', 'ars_nouveau:mana_fiber', 'eidolon:gold_inlay'],
+                output: 'bloodmagic:reagentmagnetism',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 3,
+                id: 'bloodmagic:alchemytable/reagent_magnetism'
             }
         ]
     };

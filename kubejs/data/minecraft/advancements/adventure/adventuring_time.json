@@ -276,14 +276,6 @@
         }
       }
     },
-    "minecraft:wooded_mountains": {
-      "trigger": "minecraft:location",
-      "conditions": {
-        "location": {
-          "biome": "minecraft:wooded_mountains"
-        }
-      }
-    },
     "minecraft:warm_ocean": {
       "trigger": "minecraft:location",
       "conditions": {
@@ -445,9 +437,6 @@
     ],
     [
       "minecraft:mushroom_fields"
-    ],
-    [
-      "minecraft:wooded_mountains"
     ],
     [
       "minecraft:warm_ocean"

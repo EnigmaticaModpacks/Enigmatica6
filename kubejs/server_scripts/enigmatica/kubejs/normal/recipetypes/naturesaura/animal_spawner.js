@@ -21,6 +21,24 @@ events.listen('recipes', (event) => {
                 entity: 'thermal:basalz',
                 aura: 150000,
                 time: 120
+            },
+            {
+                inputs: ['ars_nouveau:wilden_spike', 'minecraft:snow_block'],
+                entity: 'ars_nouveau:wilden_guardian',
+                aura: 250000,
+                time: 120
+            },
+            {
+                inputs: ['ars_nouveau:wilden_horn', 'minecraft:bone'],
+                entity: 'ars_nouveau:wilden_hunter',
+                aura: 150000,
+                time: 120
+            },
+            {
+                inputs: ['ars_nouveau:wilden_wing', 'astralsorcery:nocturnal_powder'],
+                entity: 'ars_nouveau:wilden_stalker',
+                aura: 150000,
+                time: 120
             }
         ]
     };

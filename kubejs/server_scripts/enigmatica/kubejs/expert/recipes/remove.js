@@ -6,7 +6,8 @@ events.listen('recipes', (event) => {
     const idRemovals = [
         'ars_nouveau:stone_2',
         'minecraft:leather_to_stripes',
-        'quark:building/crafting/candles/candle_basic'
+        'quark:building/crafting/candles/candle_basic',
+        'betterendforge:leather_to_stripes'
     ];
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
@@ -15,7 +16,8 @@ events.listen('recipes', (event) => {
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
         { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' },
-        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' }
+        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
+        { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' }
     ];
 
     idRemovals.forEach((id) => {

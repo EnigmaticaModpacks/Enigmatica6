@@ -387,6 +387,202 @@ events.listen('recipes', (event) => {
                 E: 'eidolon:polished_wood_pillar'
             },
             id: 'bloodmagic:incense_altar'
+        },
+        {
+            output: 'bloodmagic:blankrune',
+            pattern: ['CBC', 'CAC', 'CBC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:blankslate',
+                C: 'occultism:otherstone'
+            },
+            id: 'bloodmagic:blood_rune_blank'
+        },
+        {
+            output: 'bloodmagic:speedrune',
+            pattern: ['CBC', 'DAD', 'CBC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:blankslate',
+                C: 'occultism:otherstone',
+                D: 'ars_nouveau:glyph_accelerate'
+            },
+            id: 'bloodmagic:blood_rune_speed'
+        },
+        {
+            output: 'bloodmagic:sacrificerune',
+            pattern: ['CBC', 'EDF', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:reinforcedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_touch',
+                F: 'ars_nouveau:glyph_harm'
+            },
+            id: 'bloodmagic:blood_rune_sacrifice'
+        },
+        {
+            output: 'bloodmagic:selfsacrificerune',
+            pattern: ['CBC', 'EDF', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:reinforcedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_self',
+                F: 'ars_nouveau:glyph_harm'
+            },
+            id: 'bloodmagic:blood_rune_self_sacrifice'
+        },
+        {
+            output: 'bloodmagic:dislocationrune',
+            pattern: ['CBC', 'EDF', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:infusedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_extract',
+                F: 'ars_nouveau:glyph_accelerate'
+            },
+            id: 'bloodmagic:blood_rune_displacement'
+        },
+        {
+            output: 'bloodmagic:altarcapacityrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 1 },
+                B: 'bloodmagic:infusedslate',
+                C: 'occultism:otherstone',
+                D: 'bloodmagic:blankrune',
+                E: 'bloodmagic:reagentholding'
+            },
+            id: 'bloodmagic:blood_rune_capacity'
+        },
+        {
+            output: 'bloodmagic:bettercapacityrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:demonslate',
+                C: 'minecraft:dark_prismarine',
+                D: 'bloodmagic:altarcapacityrune',
+                E: 'ars_nouveau:glyph_amplify'
+            },
+            id: 'bloodmagic:blood_rune_aug_capacity'
+        },
+        {
+            output: 'bloodmagic:orbcapacityrune',
+            pattern: ['CAC', 'DBD', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:blankrune',
+                C: 'minecraft:dark_prismarine',
+                D: 'ars_nouveau:glyph_amplify'
+            },
+            id: 'bloodmagic:blood_rune_orb'
+        },
+        {
+            output: 'bloodmagic:accelerationrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:demonslate',
+                C: 'minecraft:dark_prismarine',
+                D: 'bloodmagic:speedrune',
+                E: 'ars_nouveau:glyph_amplify'
+            },
+            id: 'bloodmagic:blood_rune_acceleration'
+        },
+        {
+            output: 'bloodmagic:chargingrune',
+            pattern: ['CBC', 'EDE', 'CAC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 4 },
+                B: 'bloodmagic:demonslate',
+                C: 'minecraft:dark_prismarine',
+                D: 'bloodmagic:blankrune',
+                E: 'ars_nouveau:glyph_delay'
+            },
+            id: 'bloodmagic:blood_rune_charging'
+        },
+        { //Gate Beehive behind starting Nature's Aura
+            output: 'resourcefulbees:t1_beehive',
+            pattern: ['ACA', 'ABA', 'ACA'],
+            key: {
+                A: 'minecraft:grass',
+                B: '#forge:beehives/tier_0',
+                C: 'naturesaura:gold_powder'
+            },
+            id: 'resourcefulbees:t1_beehive'
+        },
+        {
+            output: 'resourcefulbees:apiary_breeder',
+            pattern: ['ACA', 'DBD', 'ACA'],
+            key: {
+                A: 'resourcefulbees:bee_jar',
+                B: 'resourcefulbees:apiary_storage',
+                C: 'naturesaura:token_joy',
+                D: '#minecraft:flowers'
+            },
+            id: 'resourcefulbees:apiary_breeder'
+        },
+        {
+            output: 'resourcefulbees:centrifuge',
+            pattern: ['CBC', 'CAC', 'EDE'],
+            key: {
+                A: 'thermal:machine_frame',
+                B: 'immersiveengineering:circuit_board',
+                C: 'emendatusenigmatica:steel_ingot',
+                D: 'minecraft:piston',
+                E: 'minecraft:smooth_stone'
+            },
+            id: 'resourcefulbees:centrifuge'
+        },
+        {
+            output: Item.of('resourcefulbees:centrifuge_casing',4),
+            pattern: ['CBC', 'BAB', 'CBC'],
+            key: {
+                A: 'rftoolsbase:machine_frame',
+                B: 'minecraft:redstone',
+                C: 'naturesaura:infused_iron'
+            },
+            id: 'resourcefulbees:centrifuge_casing'
+        },
+        {
+            output: 'resourcefulbees:centrifuge_controller',
+            pattern: ['EBE', 'CAC', 'EDE'],
+            key: {
+                A: 'rftoolsbase:machine_frame',
+                B: 'immersiveengineering:rs_engineering',
+                C: 'naturesaura:infused_iron',
+                D: 'resourcefulbees:centrifuge',
+                E: 'resourcefulbees:centrifuge_casing'
+            },
+            id: 'resourcefulbees:centrifuge_controller'
+        },
+        {
+            output: Item.of('resourcefulbees:elite_centrifuge_casing', 4),
+            pattern: ['CBC', 'BAB', 'CBC'],
+            key: {
+                A: 'resourcefulbees:centrifuge_casing',
+                B: 'minecraft:redstone',
+                C: 'occultism:iesnium_ingot'
+            },
+            id: 'resourcefulbees:elite_centrifuge_casing'
+        },
+        {
+            output: 'resourcefulbees:elite_centrifuge_controller',
+            pattern: ['EBE', 'CAC', 'EDE'],
+            key: {
+                A: 'industrialforegoing:machine_frame_advanced',
+                B: 'pneumaticcraft:advanced_pcb',
+                C: 'occultism:iesnium_ingot',
+                D: 'resourcefulbees:centrifuge_controller',
+                E: 'resourcefulbees:elite_centrifuge_casing'
+            },
+            id: 'resourcefulbees:elite_centrifuge_controller'
         }
     ];
 

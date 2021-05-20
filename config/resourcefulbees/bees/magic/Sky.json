@@ -1,0 +1,23 @@
+{
+    "flower": "tag:minecraft:flowers",
+    "maxTimeInHive": 4800,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "ColorData": {
+        "honeycombColor": "#75CEFC",
+        "isBeeColored": true,
+        "primaryColor": "#75CEFC",
+        "secondaryColor": "#75CEFC"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": true,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {"hasMutation": false},
+    "CentrifugeData": {"hasCentrifugeOutput": false},
+    "SpawnData": {"canSpawnInWorld": false},
+    "BreedData": {"isBreedable": false},
+    "TraitData": {"hasTraits": true}
+}

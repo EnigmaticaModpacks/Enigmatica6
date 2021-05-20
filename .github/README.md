@@ -95,11 +95,6 @@ Re-run the script `update-server` whenever you want to update to a new modpack v
 -   A world and mod folder backup are created before updating
 -   Anything put in the `overrides` folder will be copied into the root folder when the `update-server` script is finished - I recommend you put any changed configs and added mods there.
 
-## Server Automation with Docker
-
-There's an example `docker-compose.yml` in the `docker` folder, for those who want to run the modpack server through Docker.
-It's based on [Docker Minecraft Server](https://github.com/itzg/docker-minecraft-server), please see the link for configuration and advanced usage.
-
 ## Links
 
 -   [CurseForge](https://www.curseforge.com/minecraft/modpacks/enigmatica6)

@@ -190,6 +190,22 @@ events.listen('recipes', (event) => {
                 count: 1,
                 id: 'ars_nouveau:wand'
             },
+            {
+                inputs: [
+                    '#resourcefulbees:resourceful_honeycomb_block',
+                    'ars_nouveau:summoning_crystal',
+                    '#resourcefulbees:resourceful_honeycomb_block',
+                    'naturesaura:token_joy',
+                    'naturesaura:token_anger',
+                    '#resourcefulbees:resourceful_honeycomb_block',
+                    'ars_nouveau:summoning_crystal',
+                    '#resourcefulbees:resourceful_honeycomb_block'
+                ],
+                reagent: 'minecraft:spawner',
+                output: 'naturesaura:animal_spawner',
+                count: 1,
+                id: 'naturesaura:animal_spawner'
+            },
 
             /// Patchouli Removals
             {
