@@ -146,6 +146,7 @@ function Copy-Overrides {
 	}
 }
 
+Determine-Location
 
 #if (Update-IsAvailable) {	
 Prune-Backups
