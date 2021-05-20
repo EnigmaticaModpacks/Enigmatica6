@@ -1,14 +1,12 @@
 param(
-	$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path),
-
 	[Parameter(Position = 0)]
 	[string]$targetBranch = "master",
 
 	[Parameter(Position = 1)]
-	[string]$worldFolder = "$InstanceRoot/world",
+	[string]$worldFolder = "world",
 
 	[Parameter(Position = 2)]
-	[string]$backupFolder = "$InstanceRoot/backups",
+	[string]$backupFolder = "backups",
 
 	[Parameter(Position = 3)]
 	[bool]$backupWorld = $true,
@@ -17,11 +15,24 @@ param(
 	[int]$backupsToKeep = 12,
 
 	[Parameter(Position = 5)]
-	[string]$serverFileFolder = "$InstanceRoot/server_files"
+	[string]$serverFileFolder = "server_files"
 )
 
-$modFolder = "$InstanceRoot/mods"
-$overridesFolder = "$InstanceRoot/overrides"
+$initialLocation = (Get-Location)
+$modFolder = "mods"
+$overridesFolder = "overrides"
+
+function Determine-Location {
+	if (-not (Test-Path $modFolder)) {
+		cd..
+		if (-not (Test-Path $modFolder)) {
+			Write-Host "Unable to determine where the main folder is. " -ForegroundColor Red
+			Write-Host "This script should be run from the instance root, or from the automation folder." -ForegroundColor Red
+			pause
+			throw
+		}
+	}
+}
 
 function Update-IsAvailable {
 	Write-Host
@@ -63,13 +74,18 @@ function Prune-Backups {
 	Write-Host
 	Write-Host "Pruning backups folder contents..." -ForegroundColor Cyan
 	Write-Host "The current limit for backups to keep is $backupsToKeep"
-	$backupFiles = Get-ChildItem -Path $backupFolder 
-	$backupFileCount = ($backupFiles | Measure-Object ).Count
-	if ($backupFileCount -gt $backupsToKeep) {
-		$backupFiles | 
-		Sort-Object -Property CreationTime -Descending | 
-		Select-Object -Last ($backupFileCount - $backupsToKeep) | 
-		Foreach-Object { Remove-Item "$backupFolder/$_" }
+	if (Test-Path $backupFolder) {
+		$backupFiles = Get-ChildItem -Path $backupFolder 
+		$backupFileCount = ($backupFiles | Measure-Object ).Count
+		if ($backupFileCount -gt $backupsToKeep) {
+			$backupFiles | 
+			Sort-Object -Property CreationTime -Descending | 
+			Select-Object -Last ($backupFileCount - $backupsToKeep) | 
+			Foreach-Object { Remove-Item "$backupFolder/$_" }
+		}
+	}
+	else {
+		Write-Host "No backups found."
 	}
 }
 
@@ -100,13 +116,13 @@ function Move-ServerFiles {
 	Write-Host "Copying server files to base folder..." -ForegroundColor Cyan
 	Write-Host "This will not overwrite existing files." -ForegroundColor Gray
 	@(
-		"$InstanceRoot/automation/settings.cfg", 
-		"$InstanceRoot/automation/start-automated-server.bat", 
-		"$InstanceRoot/automation/start-automated-server.sh"
+		"automation/settings.cfg", 
+		"automation/start-automated-server.bat", 
+		"automation/start-automated-server.sh"
 	) | ForEach-Object {
 		$splitFileName = $_ -split "/"
 		$fileName = $splitFileName[$splitFileName.length - 1]
-		$destination = "$InstanceRoot/$fileName" 
+		$destination = "$fileName" 
 		if (-not (Test-Path $destination)) {
 			Copy-Item -Path $_ -Destination $destination
 		}
@@ -114,7 +130,7 @@ function Move-ServerFiles {
 }
 
 function Remove-ClientOnlyMods {
-	. "$InstanceRoot/automation/remove-client-mods.ps1"
+	. "automation/remove-client-mods.ps1"
 }
 
 
@@ -129,6 +145,7 @@ function Copy-Overrides {
 	}
 }
 
+Determine-Location
 
 if (Update-IsAvailable) {	
 	Prune-Backups
@@ -139,3 +156,5 @@ if (Update-IsAvailable) {
 	Remove-ClientOnlyMods
 	Copy-Overrides
 }
+
+Set-Location $initialLocation

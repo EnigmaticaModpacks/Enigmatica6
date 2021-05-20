@@ -187,21 +187,6 @@ SET /A "MC_SERVER_TMP_FLAG=%MAX_RAM:~0,-1%/2"
 FOR /f "tokens=1 delims=." %%a  in ("%MC_SERVER_TMP_FLAG%") DO (SET MC_SERVER_TMP_FLAG=%%a)
 IF %MC_SERVER_TMP_FLAG% LSS 1 (SET MC_SERVER_TMP_FLAG=1)
 
-REM Set some placeholder defaults (failsafe if settings.cfg is old version or corrupt somehow
-SET MC_SERVER_MAX_RAM=5G
-SET MC_SERVER_JVM_ARGS=-Xmx%MC_SERVER_MAX_RAM%
-SET MC_SERVER_MAX_CRASH=5
-SET MC_SERVER_CRASH_TIMER=600
-SET MC_SERVER_RUN_FROM_BAD_FOLDER=0
-SET MC_SERVER_IGNORE_OFFLINE=0
-SET MC_SERVER_IGNORE_JAVA=0
-SET MC_SERVER_MCVER=1.12.2
-SET MC_SERVER_FORGEVER=14.23.2.2625
-SET MC_SERVER_FORGEURL=DISABLE
-SET MC_SERVER_SPONGE=0
-SET MC_SERVER_HIGH_PRIORITY=0
-SET MC_SERVER_PACKNAME=PLACEHOLDER
-
 REM Re-map imported vars (from settings.cfg) into script-standard variables
 SET MC_SERVER_MAX_RAM=%MAX_RAM%
 SET MC_SERVER_JVM_ARGS=-Xmx%MC_SERVER_MAX_RAM% -Xms%MC_SERVER_TMP_FLAG%%MC_SERVER_MAX_RAM:~-1% %JAVA_ARGS%
@@ -280,169 +265,6 @@ ECHO DEBUG: MC_SERVER_CRASH_YYYYMMDD=%MC_SERVER_CRASH_YYYYMMDD% 1>>  "%~dp0logs\
 ECHO DEBUG: MC_SERVER_CRASH_HHMMSS=%MC_SERVER_CRASH_HHMMSS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: Current directory file listing: 1>>  "%~dp0logs\serverstart.log" 2>&1
 DIR 1>>  "%~dp0logs\serverstart.log" 2>&1
-
-REM Check for 64-bit OS, not needed since 64-bit java is checked
-REM reg query "HKLM\System\CurrentControlSet\Control\Session Manager\Environment" /v PROCESSOR_ARCHITECTURE | find /i "x86" || GOTO CHECKJAVA 1>> "%~dp0logs\serverstart.log" 2>&1
-
-:CHECKJAVA
-ECHO INFO: Checking java installation...
-ECHO DEBUG: JAVA version output (java -d64 -version): 1>>  "%~dp0logs\serverstart.log" 2>&1
-java -d64 -version || GOTO JAVAERROR 1>>  "%~dp0logs\serverstart.log" 2>&1
-
-java -d64 -version 2>&1 | %MC_SYS32%\FIND.EXE "1.8"  1>>  "%~dp0logs\serverstart.log" 2>&1
-IF %ERRORLEVEL% EQU 0 (
-	ECHO INFO: Found 64-bit Java 1.8 1>> "%~dp0logs\serverstart.log" 2>&1
-	ECHO ...64-bit Java 1.8 found! 1>> "%~dp0logs\serverstart.log" 2>&1
-	GOTO CHECKFOLDER
-) ELSE (
-    GOTO JAVAERROR
-)
-
-:JAVAERROR
-IF NOT %MC_SERVER_IGNORE_JAVA% EQU 0 (
-	ECHO WARN: Skipping validation of proper Java install/version...
-	ECHO IF Java is not installed, too old, or not 64-bit, the server probably won't start/run correctly
-	ECHO WARN: Skipping validation of Java install... 1>>  "%~dp0logs\serverstart.log" 2>&1
-	GOTO CHECKFOLDER
-)
-COLOR CF
-ECHO ERROR: Could not find 64-bit Java 1.8 installed or in PATH 1>> "%~dp0logs\serverstart.log" 2>&1
-SET MC_SERVER_ERROR_REASON="JavaVersionOrPathError"
-CLS
-ECHO.
-ECHO ERROR: Could not find valid java version installed. 
->nul TIMEOUT 1
-ECHO 64-bit Java ver 1.8+ is highly recomended. Check here for latest downloads:
-ECHO https://java.com/en/download/manual.jsp
-ECHO.
->nul TIMEOUT 1
-GOTO ERROR
-
-:CHECKFOLDER
-IF NOT %MC_SERVER_RUN_FROM_BAD_FOLDER% EQU 0 (
-	ECHO WARN: Skipping check if server directory is in potentially problematic location...
-	ECHO WARN: Skipping check if server directory is in potentially problematic location... 1>>  "%~dp0logs\serverstart.log" 2>&1
-	GOTO CHECKONLINE
-)
-ECHO Checking if current folder is valid...
-ECHO INFO: Checking if current folder is valid... 1>>  "%~dp0logs\serverstart.log" 2>&1
-
-REM Check if current directory is in ProgramFiles
-IF NOT DEFINED ProgramFiles ( GOTO CHECKPROG86 )
-ECHO.x%CD%x | %MC_SYS32%\FINDSTR.EXE /I /C:"%ProgramFiles%" >nul
-REM ECHO Error Level: %ERRORLEVEL%
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-ProgramFiles;
-	GOTO FOLDERERROR
-)
-ECHO.x%~dp0x | %MC_SYS32%\FINDSTR.EXE /I /C:"%ProgramFiles%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-ProgramFiles;
-	GOTO FOLDERERROR
-)
-
-:CHECKPROG86
-IF NOT DEFINED ProgramFiles^(x86^) ( GOTO CHECKSYS )
-ECHO.x%CD%x | %MC_SYS32%\FINDSTR.EXE /I /C:"%ProgramFiles(x86)%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-ProgramFiles86;
-	GOTO FOLDERERROR
-)
-ECHO.x%~dp0x | %MC_SYS32%\FINDSTR.EXE /I /C:"%ProgramFiles(x86)%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-ProgramFiles86;
-	GOTO FOLDERERROR
-)
-
-:CHECKSYS
-REM Check if current directory is in SystemRoot
-IF NOT DEFINED SystemRoot ( GOTO CHECKTEMP )
-ECHO.x%CD%x | %MC_SYS32%\FINDSTR.EXE /I /C:"%SystemRoot%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-System;
-	GOTO FOLDERERROR
-)
-ECHO.x%~dp0x | %MC_SYS32%\FINDSTR.EXE /I /C:"%SystemRoot%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-System;
-	GOTO FOLDERERROR
-)
-
-:CHECKTEMP
-REM Check if current directory is in TEMP
-IF NOT DEFINED TEMP ( GOTO CHECKTMP )
-ECHO.x%CD%x | %MC_SYS32%\FINDSTR.EXE /I /C:"%TEMP%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-Temp;
-	GOTO FOLDERERROR
-)
-ECHO.x%~dp0x | %MC_SYS32%\FINDSTR.EXE /I /C:"%TEMP%" >nul
-IF %ERRORLEVEL% EQU 0 (
-	SET MC_SERVER_ERROR_REASON=BadFolder-Temp;
-	GOTO FOLDERERROR
-)
-
-:CHECKTMP
-IF NOT DEFINED TMP ( GOTO CHECKONLINE )
-	ECHO.x%CD%x | %MC_SYS32%\FINDSTR.EXE /I /C:"%TMP%" >nul
-	IF %ERRORLEVEL% EQU 0 (
-		SET MC_SERVER_ERROR_REASON=BadFolder-Temp;
-		GOTO FOLDERERROR
-	)
-	ECHO.x%~dp0x | %MC_SYS32%\FINDSTR.EXE /I /C:"%TMP%" >nul
-	IF %ERRORLEVEL% EQU 0 (
-		SET MC_SERVER_ERROR_REASON=BadFolder-Temp;
-		GOTO FOLDERERROR
-	)
-)
-GOTO CHECKONLINE
-
-:FOLDERERROR
-ECHO WARN: Running from "Program Files," "Temporary," or "System" folders can lead to permissions issues and data loss
-ECHO WARN: If you want to do this anyway, you need change script setting MC_SERVER_RUN_FROM_BAD_FOLDER to 1
-ECHO WARN: Running from "Program Files," "Temporary," or "System" folders can lead to permissions issues and data loss 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO WARN: If you want to do this anyway, you need change script setting MC_SERVER_RUN_FROM_BAD_FOLDER to 1 1>>  "%~dp0logs\serverstart.log" 2>&1
-GOTO ERROR
-
-:CHECKONLINE
-IF NOT %MC_SERVER_IGNORE_OFFLINE% EQU 0 (
-	ECHO Skipping internet connectivity check...
-	ECHO WARN: Skipping internet connectivity check... 1>>  "%~dp0logs\serverstart.log" 2>&1
-	GOTO CHECKFILES
-)
-
-ECHO Checking for basic internet connectivity...
-ECHO INFO: Checking for basic internet connectivity... 1>>  "%~dp0logs\serverstart.log" 2>&1
-
-REM Try with Google DNS
-%MC_SYS32%\PING.EXE -n 2 -w 1000 8.8.8.8 | %MC_SYS32%\FIND.EXE "TTL="  1>>  "%~dp0logs\serverstart.log" 2>&1
-IF %ERRORLEVEL% EQU 0 (
-    SET MC_SERVER_TMP_FLAG=0
-	ECHO INFO: Ping of "8.8.8.8" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
-) ELSE (
-    SET MC_SERVER_TMP_FLAG=1
-	ECHO WARN: Ping of "8.8.8.8" Failed 1>>  "%~dp0logs\serverstart.log" 2>&1
-)
-
-REM If Google ping failed try one more time with L3 just in case
-IF MC_SERVER_TMP_FLAG EQU 1 (
-	%MC_SYS32%\PING.EXE -n 2 -w 1000 4.2.2.1 | %MC_SYS32%\FIND.EXE "TTL="  1>>  "%~dp0logs\serverstart.log" 2>&1
-	IF %ERRORLEVEL% EQU 0 (
-		SET MC_SERVER_TMP_FLAG=0
-		INFO: Ping of "4.4.2.1" Successfull 1>>  "%~dp0logs\serverstart.log" 2>&1
-	) ELSE (
-		SET MC_SERVER_TMP_FLAG=1
-		ECHO WARN: Ping of "4.4.2.1" Failed 1>>  "%~dp0logs\serverstart.log" 2>&1
-	)
-)
-
-REM Possibly no internet connection...
-IF MC_SERVER_TMP_FLAG EQU 1 (
-	ECHO ERROR: No internet connectivity found
-	ECHO ERROR: No internet connectivity found 1>>  "%~dp0logs\serverstart.log" 2>&1
-	SET MC_SERVER_ERROR_REASON=NoInternetConnectivity
-	GOTO ERROR
-	)
 
 :CHECKFILES
 ECHO Checking for forge/minecraft binaries...
@@ -634,23 +456,6 @@ IF NOT EXIST "%~dp0forge-%MC_SERVER_MCVER%.html" (
 	)
 )
 
-REM Simple search for matching text to make sure we got the correct webpage/html (and not a 404, for example)
-REM ECHO DEBUG: Checking simple pattern match for forge ver to validate HTML... 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM FIND /I "%MC_SERVER_FORGEVER%" forge-%MC_SERVER_MCVER%.html 1>> "%~dp0logs\serverstart.log" 2>&1 || (
-REM 	IF %MC_SERVER_TMP_FLAG% LEQ 0 (
-REM 		ECHO Something wrong with Forge download part 1 of 2
-REM 		ECHO Something wrong with Forge download part 1 of 2 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM 		SET MC_SERVER_TMP_FLAG=1
-REM 		DEL /F /Q "%~dp0*forge-index.html"  1>> "%~dp0logs\serverstart.log" 2>&1 || ECHO INFO: No forge-index to delete 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM 		GOTO FETCHHTML
-REM 	) ELSE (
-REM 		ECHO HTML Download failed a second time... stopping. 
-REM 		ECHO ERROR: HTML Download failed a second time... stopping. 1>>  "%~dp0logs\serverstart.log" 2>&1
-REM 		SET MC_SERVER_ERROR_REASON=ForgeDownloadURLNotFound
-REM 		GOTO ERROR
-REM 	)
-REM )
-
 REM More complex wannabe-regex (aka magic)
 FOR /f tokens^=^5^ delims^=^=^<^>^" %%G in ('%MC_SYS32%\FINDSTR.EXE /ir "https://files.minecraftforge.net/maven/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar" "%~dp0forge-%MC_SERVER_MCVER%.html"') DO SET MC_SERVER_FORGEURL=%%G & GOTO FETCHHTML1
 
@@ -747,59 +552,6 @@ IF /i "%1"=="install" (
 	GOTO BEGIN
 )
 
-:DOWNLOADSPONGE
-REM Auto-Download not implemented yet, and might not ever be
-REM Problems with scraping github for link for bootsreapper were problematic
-
-REM ---Rename any spongeforge*.jar to .jar.disabled
-REM (FOR /f "tokens=* delims=*" %%x in ('dir "%~dp0mods\*spongeforge*.jar" /B /O:-D') DO MOVE /Y "%%x" "%%x.disabled") 1>> "%~dp0logs\serverstart.log" 2>&1
-REM ---Rename any sponge*bootstrap*.jar to .jar.disabled
-REM (FOR /f "tokens=* delims=*" %%x in ('dir "%~dp0*sponge*bootstrap*.jar" /B /O:-D') DO MOVE /Y "%~dp0%%x" "%%x.disabled") 1>> "%~dp0logs\serverstart.log" 2>&1
-REM ---Download spongeforge index to parse for jar download
-REM bitsadmin /rawreturn /nowrap /transfer dlspongehtml /download /priority FOREGROUND "http://files.minecraftforge.net/maven/org/spongepowered/spongeforge/index_%MC_SERVER_MCVER%.html" "%~dp0spongeforge-%MC_SERVER_MCVER%.html"  1>> "%~dp0logs\serverstart.log" 2>&1
-REM ---Download sponge bootstrap html to parse for jar download 
-REM bitsadmin /rawreturn /nowrap /transfer dlspongebootstrap /download /priority FOREGROUND "https://api.github.com/repos/simon816/spongebootstrap/releases/latest" "%~dp0spongebootstrap.html"  1>> "%~dp0logs\serverstart.log" 2>&1
-REM ---Find latest bootstrap download and save to var
-REM FOR /f tokens^=* delims^=^" %%F in ('findstr /ir "https:\/\/github.*releases.*Bootstrap.*\.jar" "%~dp0spongebootstrap.html"') DO (
-REM 	SET "MC_SERVER_SPONGEBOOTSTRAPURL=%%F"
-REM 	FOR /f tokens^=^30 delims^=^/ %%B in ("%%G") DO ECHO Bootstrap Filename: %%B
-REM ---Find latest SpongeForge download and save to var http://files.minecraftforge.net/maven/org/spongepowered/spongeforge/1.10.2-2281-5.2.0-BETA-2274/spongeforge-1.10.2-2281-5.2.0-BETA-2274.jar
-REM FOR /f tokens^=* delims^=^" %%G in ('findstr /ir "https:\/\/files.*%MC_SERVER_MCVER%.*%MC_SERVER_FORGESHORT%.*[0-9]*\.jar" "%~dp0spongeforge-%MC_SERVER_MCVER%.html"') DO (
-REM 	SET "MC_SERVER_SPONGEURL=%%G"
-REM 	FOR /f tokens^=^30 delims^=^/ %%S in ("%%G") DO ECHO SpongeForge Filename: %%S
-REM )
-REM ECHO DEBUG: Attempting to download "%MC_SERVER_SPONGEBOOTSTRAPURL%" 1>> "%~dp0logs\serverstart.log" 2>&1
-REM bitsadmin /rawreturn /nowrap /transfer dlforgeinstaller /download /priority FOREGROUND %MC_SERVER_SPONGEBOOTSTRAPURL% "%~dp0%%B"  1>>  "%~dp0logs\serverstart.log" 2>&1
-REM ECHO DEBUG: Attempting to download "%MC_SERVER_SPONGEURL%" 1>> "%~dp0logs\serverstart.log" 2>&1
-REM bitsadmin /rawreturn /nowrap /transfer dlforgeinstaller /download /priority FOREGROUND %MC_SERVER_SPONGEURL% "%~dp0%%S"  1>>  "%~dp0logs\serverstart.log" 2>&1
-
-CLS
-TITLE ERROR! SPONGE FILES NOT FOUND!! (ServerStart)
-COLOR cf
-ECHO.
-ECHO **** ERROR ****
-ECHO SPONGE has been enabled in settings.cfg but necessary files were not found...
-ECHO.
-ECHO To use Sponge:
-ECHO    1) "MODS" folder must have a SpongeForge JAR matching Forge %MC_SERVER_FORGESHORT%
-ECHO    2) SpongeBootstrap JAR must be present in same folder as Forge "universal"
-ECHO.
-ECHO **** PLEASE NOTE ****
-ECHO YOU MAY NOT RECIEVE SUPPORT from modpack devs if you use Sponge
-ECHO Use at your own risk OR DISABLE SPONGE in settings.cfg
-ECHO.
-TIMEOUT 1 >nul 
-COLOR 4f
-TIMEOUT 1 >nul 
-COLOR cf
-TIMEOUT 1 >nul 
-COLOR 4f
-TIMEOUT 1 >nul
-COLOR cf
-TIMEOUT 1 >nul
-COLOR 0c
-PAUSE
-GOTO CLEANUP
 
 :ERROR
 COLOR cf
@@ -937,8 +689,6 @@ ECHO DEBUG: MC_SERVER_CRASH_YYYYMMDD=%MC_SERVER_CRASH_YYYYMMDD% 1>>  "%~dp0logs\
 ECHO DEBUG: MC_SERVER_CRASH_HHMMSS=%MC_SERVER_CRASH_HHMMSS% 1>>  "%~dp0logs\serverstart.log" 2>&1
 ECHO DEBUG: Current directory file listing: 1>>  "%~dp0logs\serverstart.log" 2>&1
 DIR 1>>  "%~dp0logs\serverstart.log" 2>&1
-ECHO DEBUG: JAVA version output (java -d64 -version): 1>>  "%~dp0logs\serverstart.log" 2>&1
-java -d64 -version 1>>  "%~dp0logs\serverstart.log" 2>&1
 
 REM Clear variables -- probably not necessary since we SETLOCAL but doesn't hurt either
 SET MC_SERVER_MAX_RAM=
