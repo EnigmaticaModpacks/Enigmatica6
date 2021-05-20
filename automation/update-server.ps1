@@ -1,14 +1,12 @@
 param(
-	$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path),
-
 	[Parameter(Position = 0)]
 	[string]$targetBranch = "master",
 
 	[Parameter(Position = 1)]
-	[string]$worldFolder = "$InstanceRoot/world",
+	[string]$worldFolder = "world",
 
 	[Parameter(Position = 2)]
-	[string]$backupFolder = "$InstanceRoot/backups",
+	[string]$backupFolder = "backups",
 
 	[Parameter(Position = 3)]
 	[bool]$backupWorld = $true,
@@ -17,11 +15,24 @@ param(
 	[int]$backupsToKeep = 12,
 
 	[Parameter(Position = 5)]
-	[string]$serverFileFolder = "$InstanceRoot/server_files"
+	[string]$serverFileFolder = "server_files"
 )
 
-$modFolder = "$InstanceRoot/mods"
-$overridesFolder = "$InstanceRoot/overrides"
+$modFolder = "mods"
+$overridesFolder = "overrides"
+
+function Determine-Location {
+	$initialLocation = Get-Location
+	if (Test-Path -Path "mods") {
+		$InstanceRoot = Get-Location
+	}
+ else {
+		cd..
+		if (Test-Path -Path "mods") {
+			$InstanceRoot = Get-Location
+		}
+	}
+}
 
 function Update-IsAvailable {
 	Write-Host
@@ -100,9 +111,9 @@ function Move-ServerFiles {
 	Write-Host "Copying server files to base folder..." -ForegroundColor Cyan
 	Write-Host "This will not overwrite existing files." -ForegroundColor Gray
 	@(
-		"$InstanceRoot/automation/settings.cfg", 
-		"$InstanceRoot/automation/start-automated-server.bat", 
-		"$InstanceRoot/automation/start-automated-server.sh"
+		"automation/settings.cfg", 
+		"automation/start-automated-server.bat", 
+		"automation/start-automated-server.sh"
 	) | ForEach-Object {
 		$splitFileName = $_ -split "/"
 		$fileName = $splitFileName[$splitFileName.length - 1]
@@ -114,7 +125,7 @@ function Move-ServerFiles {
 }
 
 function Remove-ClientOnlyMods {
-	. "$InstanceRoot/automation/remove-client-mods.ps1"
+	. "automation/remove-client-mods.ps1"
 }
 
 
@@ -130,12 +141,14 @@ function Copy-Overrides {
 }
 
 
-if (Update-IsAvailable) {	
-	Prune-Backups
-	Backup-ModsFolder
-	Backup-WorldFolder
-	Pull-Changes
-	Move-ServerFiles
-	Remove-ClientOnlyMods
-	Copy-Overrides
-}
+#if (Update-IsAvailable) {	
+Prune-Backups
+Backup-ModsFolder
+Backup-WorldFolder
+Pull-Changes
+Move-ServerFiles
+Remove-ClientOnlyMods
+Copy-Overrides
+#}
+
+Set-Location $initialLocation
