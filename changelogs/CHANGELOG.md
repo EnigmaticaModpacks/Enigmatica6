@@ -1,22 +1,42 @@
-### Enigmatica 6 v0.4.13
+### Enigmatica 6 v0.4.14
 
-_Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.132.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.13.md)_
+_Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.14.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.14.md)_
 
 **Improvements/Changes**
 
-- More Emendatus Enigmatica Chunk Compatibility for Modded Ores [\#2181](https://github.com/NillerMedDild/Enigmatica6/pull/2181) ([pm065](https://github.com/pm065))
+- Add Nature's Aura Bee Recipes [\#2219](https://github.com/NillerMedDild/Enigmatica6/pull/2219) ([TemperedFool](https://github.com/TemperedFool))
+- Altar of Birthing tweaks [\#2221](https://github.com/NillerMedDild/Enigmatica6/pull/2221) ([MuteTiefling](https://github.com/MuteTiefling))
+- Suggestion: Fewer Seeds from grass [\#1142](https://github.com/NillerMedDild/Enigmatica6/issues/1142)
 
 **Bug Fixes**
 
-- \[0.4.8\] spell break veinvanishes blocks [\#1939](https://github.com/NillerMedDild/Enigmatica6/issues/1939)
-- \[0.4.10\] Ametrine Gem is dropping. [\#2097](https://github.com/NillerMedDild/Enigmatica6/issues/2097)
-- \[0.4.10\] Seeds can be used to repair tools [\#2099](https://github.com/NillerMedDild/Enigmatica6/issues/2099)
-- \[0.4.10\] Server crash Integrated Crafting, IF [\#2109](https://github.com/NillerMedDild/Enigmatica6/issues/2109)
-- \[0.4.12\] Updating from 0.4.9 has resulted in the world becoming corrupted. [\#2195](https://github.com/NillerMedDild/Enigmatica6/issues/2195)
+- 0.4.8 Ctrl+crafting makes half of output rather than multiplying it [\#1864](https://github.com/NillerMedDild/Enigmatica6/issues/1864)
+- crash on create new world with biomeidfixer on certain Linux distros [\#2216](https://github.com/NillerMedDild/Enigmatica6/issues/2216)
 - Crash when placing logistics modules on pressure tubes [\#2193](https://github.com/NillerMedDild/Enigmatica6/issues/2193)
-- Looking at PneumaticCraft Spawner Agitator results in crash [\#2198](https://github.com/NillerMedDild/Enigmatica6/issues/2198)
-- Missing recipes for IE Wire Cutters and Wire Coils in expert mode [\#2201](https://github.com/NillerMedDild/Enigmatica6/issues/2201)
-- [0.4.12\] Pillagers don't spawn with crossbows [\#2203](https://github.com/NillerMedDild/Enigmatica6/issues/2203)
+- Found error in adventuring\_time.json and corrected it [\#2223](https://github.com/NillerMedDild/Enigmatica6/pull/2223) ([Sinvoll](https://github.com/Sinvoll))
+- Indefinite Duplication with Dank/Null and unlimited XP using insightful crystal. [\#2218](https://github.com/NillerMedDild/Enigmatica6/issues/2218)
+- Misleading mod page information [\#2210](https://github.com/NillerMedDild/Enigmatica6/issues/2210)
+- Simple Farming Temp Goal Crash [\#813](https://github.com/NillerMedDild/Enigmatica6/issues/813)
+
+### Enigmatica 6 v0.4.13
+
+_Using Forge-1.16.5-36.1.16_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.4.13.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.4.13.md)_
+
+**Improvements/Changes**
+
+-   More Emendatus Enigmatica Chunk Compatibility for Modded Ores [\#2181](https://github.com/NillerMedDild/Enigmatica6/pull/2181) ([pm065](https://github.com/pm065))
+
+**Bug Fixes**
+
+-   \[0.4.8\] spell break veinvanishes blocks [\#1939](https://github.com/NillerMedDild/Enigmatica6/issues/1939)
+-   \[0.4.10\] Ametrine Gem is dropping. [\#2097](https://github.com/NillerMedDild/Enigmatica6/issues/2097)
+-   \[0.4.10\] Seeds can be used to repair tools [\#2099](https://github.com/NillerMedDild/Enigmatica6/issues/2099)
+-   \[0.4.10\] Server crash Integrated Crafting, IF [\#2109](https://github.com/NillerMedDild/Enigmatica6/issues/2109)
+-   \[0.4.12\] Updating from 0.4.9 has resulted in the world becoming corrupted. [\#2195](https://github.com/NillerMedDild/Enigmatica6/issues/2195)
+-   Crash when placing logistics modules on pressure tubes [\#2193](https://github.com/NillerMedDild/Enigmatica6/issues/2193)
+-   Looking at PneumaticCraft Spawner Agitator results in crash [\#2198](https://github.com/NillerMedDild/Enigmatica6/issues/2198)
+-   Missing recipes for IE Wire Cutters and Wire Coils in expert mode [\#2201](https://github.com/NillerMedDild/Enigmatica6/issues/2201)
+-   [0.4.12\] Pillagers don't spawn with crossbows [\#2203](https://github.com/NillerMedDild/Enigmatica6/issues/2203)
 
 ### Enigmatica 6 v0.4.12
 
