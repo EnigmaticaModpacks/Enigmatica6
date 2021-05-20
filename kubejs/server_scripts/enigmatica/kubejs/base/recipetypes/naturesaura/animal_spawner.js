@@ -44,22 +44,55 @@ events.listen('recipes', (event) => {
                 time: 120
             },
             {
-                inputs: ['resourcefulbees:iron_bee_spawn_egg', 'resourcefulbees:iron_honeycomb','naturesaura:infused_iron_block'],
+                inputs: [
+                    'resourcefulbees:iron_bee_spawn_egg',
+                    'resourcefulbees:iron_honeycomb',
+                    'naturesaura:infused_iron_block'
+                ],
                 entity: 'resourcefulbees:infused_bee',
                 aura: 400000,
                 time: 320
             },
             {
-                inputs: ['resourcefulbees:gold_bee_spawn_egg', 'resourcefulbees:gold_honeycomb','naturesaura:tainted_gold_block'],
+                inputs: [
+                    'resourcefulbees:gold_bee_spawn_egg',
+                    'resourcefulbees:gold_honeycomb',
+                    'naturesaura:tainted_gold_block'
+                ],
                 entity: 'resourcefulbees:tainted_bee',
                 aura: 500000,
                 time: 400
             },
             {
-                inputs: ['resourcefulbees:gold_bee_spawn_egg', 'resourcefulbees:tainted_honeycomb','naturesaura:sky_ingot'],
+                inputs: [
+                    'resourcefulbees:gold_bee_spawn_egg',
+                    'resourcefulbees:tainted_honeycomb',
+                    'naturesaura:sky_ingot'
+                ],
                 entity: 'resourcefulbees:sky_bee',
                 aura: 600000,
                 time: 480
+            },
+            {
+                inputs: ['farmersdelight:cabbage_leaf', 'simplefarming:lettuce', 'minecraft:carrot'],
+                entity: 'minecraft:rabbit',
+                aura: 30000,
+                time: 40,
+                id: 'naturesaura:animal_spawner/rabbit'
+            },
+            {
+                inputs: ['astralsorcery:nocturnal_powder'],
+                entity: 'minecraft:phantom',
+                aura: 200000,
+                time: 200,
+                id: 'naturesaura:animal_spawner/phantom'
+            },
+            {
+                inputs: ['minecraft:feather', 'minecraft:jungle_sapling'],
+                entity: 'minecraft:parrot',
+                aura: 50000,
+                time: 60,
+                id: 'naturesaura:animal_spawner/parrot'
             }
         ]
     };
