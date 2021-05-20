@@ -18,15 +18,14 @@ param(
 	[string]$serverFileFolder = "server_files"
 )
 
-$initialLocation = Get-Location
+$initialLocation = (Get-Location)
 $modFolder = "mods"
 $overridesFolder = "overrides"
 
 function Determine-Location {
-	if (-not (Test-Path -Path $modFolder)) {
+	if (-not (Test-Path $modFolder)) {
 		cd..
-		pause
-		if (-not (Test-Path -Path $modFolder)) {
+		if (-not (Test-Path $modFolder)) {
 			Write-Host "Unable to determine where the main folder is. " -ForegroundColor Red
 			Write-Host "This script should be run from the instance root, or from the automation folder." -ForegroundColor Red
 			pause
@@ -148,14 +147,14 @@ function Copy-Overrides {
 
 Determine-Location
 
-#if (Update-IsAvailable) {	
-Prune-Backups
-Backup-ModsFolder
-Backup-WorldFolder
-Pull-Changes
-Move-ServerFiles
-Remove-ClientOnlyMods
-Copy-Overrides
-#}
+if (Update-IsAvailable) {	
+	Prune-Backups
+	Backup-ModsFolder
+	Backup-WorldFolder
+	Pull-Changes
+	Move-ServerFiles
+	Remove-ClientOnlyMods
+	Copy-Overrides
+}
 
 Set-Location $initialLocation
