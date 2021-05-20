@@ -122,7 +122,7 @@ function Move-ServerFiles {
 	) | ForEach-Object {
 		$splitFileName = $_ -split "/"
 		$fileName = $splitFileName[$splitFileName.length - 1]
-		$destination = "$InstanceRoot/$fileName" 
+		$destination = "$fileName" 
 		if (-not (Test-Path $destination)) {
 			Copy-Item -Path $_ -Destination $destination
 		}
