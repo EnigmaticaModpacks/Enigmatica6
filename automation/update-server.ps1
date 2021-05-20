@@ -18,18 +18,18 @@ param(
 	[string]$serverFileFolder = "server_files"
 )
 
+$initialLocation = Get-Location
 $modFolder = "mods"
 $overridesFolder = "overrides"
 
 function Determine-Location {
-	$initialLocation = Get-Location
-	if (Test-Path -Path "mods") {
-		$InstanceRoot = Get-Location
-	}
- else {
+	if (-not (Test-Path -Path $modFolder)) {
 		cd..
-		if (Test-Path -Path "mods") {
-			$InstanceRoot = Get-Location
+		if (-not (Test-Path -Path $modFolder)) {
+			Write-Host "Unable to determine where the main folder is. " -ForegroundColor Red
+			Write-Host "This script should be run from the instance root, or from the automation folder." -ForegroundColor Red
+			pause
+			throw
 		}
 	}
 }
@@ -74,13 +74,18 @@ function Prune-Backups {
 	Write-Host
 	Write-Host "Pruning backups folder contents..." -ForegroundColor Cyan
 	Write-Host "The current limit for backups to keep is $backupsToKeep"
-	$backupFiles = Get-ChildItem -Path $backupFolder 
-	$backupFileCount = ($backupFiles | Measure-Object ).Count
-	if ($backupFileCount -gt $backupsToKeep) {
-		$backupFiles | 
-		Sort-Object -Property CreationTime -Descending | 
-		Select-Object -Last ($backupFileCount - $backupsToKeep) | 
-		Foreach-Object { Remove-Item "$backupFolder/$_" }
+	if (Test-Path $backupFolder) {
+		$backupFiles = Get-ChildItem -Path $backupFolder 
+		$backupFileCount = ($backupFiles | Measure-Object ).Count
+		if ($backupFileCount -gt $backupsToKeep) {
+			$backupFiles | 
+			Sort-Object -Property CreationTime -Descending | 
+			Select-Object -Last ($backupFileCount - $backupsToKeep) | 
+			Foreach-Object { Remove-Item "$backupFolder/$_" }
+		}
+	}
+	else {
+		Write-Host "No backups found."
 	}
 }
 
