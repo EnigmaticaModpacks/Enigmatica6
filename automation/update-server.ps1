@@ -25,6 +25,7 @@ $overridesFolder = "overrides"
 function Determine-Location {
 	if (-not (Test-Path -Path $modFolder)) {
 		cd..
+		pause
 		if (-not (Test-Path -Path $modFolder)) {
 			Write-Host "Unable to determine where the main folder is. " -ForegroundColor Red
 			Write-Host "This script should be run from the instance root, or from the automation folder." -ForegroundColor Red
