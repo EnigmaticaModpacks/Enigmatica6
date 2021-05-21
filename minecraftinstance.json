@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-05-21T20:06:44.8496156Z",
-  "playedCount": 115,
+  "lastPlayed": "2021-05-21T20:10:23.3014555Z",
+  "playedCount": 116,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -11225,6 +11225,90 @@
       "installedTargets": null
     },
     {
+      "addonID": 436964,
+      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
+      "installedFile": {
+        "id": 3196072,
+        "displayName": "Babel-1.0.5.jar",
+        "fileName": "Babel-1.0.5.jar",
+        "fileDate": "2021-02-07T19:27:53.32Z",
+        "fileLength": 169895,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3196/72/Babel-1.0.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1894740131,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 161197484,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "babel.mixins.json",
+            "fingerprint": 211910296,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 4077331125,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1438559181,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "babel.refmap.json",
+            "fingerprint": 2693877171,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2164717903,
+        "gameVersion": [
+          "1.16.5",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "Babel-1.0.5.jar"
+      },
+      "dateInstalled": "2021-05-21T20:09:02.2206034Z",
+      "dateUpdated": "2021-05-21T20:09:02.2356064Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:09:02.2356064Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 378802,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
@@ -12589,150 +12673,132 @@
       "addonID": 289412,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3249257,
-        "displayName": "ftb-quests-1605.2.1-build.39-forge.jar",
-        "fileName": "ftb-quests-1605.2.1-build.39-forge.jar",
-        "fileDate": "2021-03-23T22:10:31.927Z",
-        "fileLength": 903036,
-        "releaseType": 1,
+        "id": 3316497,
+        "displayName": "ftb-quests-1605.3.0-build.56-forge.jar",
+        "fileName": "ftb-quests-1605.3.0-build.56-forge.jar",
+        "fileDate": "2021-05-20T12:57:43.923Z",
+        "fileLength": 921805,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3249/257/ftb-quests-1605.2.1-build.39-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3316/497/ftb-quests-1605.3.0-build.56-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 59738631,
+            "id": 0,
+            "addonId": 404468,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 238222,
             "type": 2,
-            "fileId": 3249257
+            "fileId": 0
           },
           {
-            "id": 59738629,
-            "addonId": 419699,
-            "type": 3,
-            "fileId": 3249257
-          },
-          {
-            "id": 59738626,
-            "addonId": 404465,
-            "type": 3,
-            "fileId": 3249257
-          },
-          {
-            "id": 59738627,
+            "id": 0,
             "addonId": 309674,
             "type": 3,
-            "fileId": 3249257
+            "fileId": 0
           },
           {
-            "id": 59738628,
+            "id": 0,
+            "addonId": 419699,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 238086,
             "type": 2,
-            "fileId": 3249257
+            "fileId": 0
           },
           {
-            "id": 59738630,
+            "id": 0,
             "addonId": 268655,
             "type": 2,
-            "fileId": 3249257
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 404465,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "ftbquests-common.mixins.json",
-            "fingerprint": 1359069529,
-            "type": 3,
+            "fingerprint": 3144290272,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 1908987372,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 698902038,
-            "type": 3,
+            "fingerprint": 3837852317,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "ftb-quests-common-refmap.json",
-            "fingerprint": 3368223417,
-            "type": 3,
+            "fingerprint": 4018949139,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 239616976,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 3039132331,
-            "type": 3,
+            "fingerprint": 3665644053,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "com",
-            "fingerprint": 1750176954,
-            "type": 3,
+            "foldername": "dev",
+            "fingerprint": 171880073,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "architectury_inject_FTBQuests1165_common_2fd3fb3eff5e4b64a677b5f21cab0f41",
             "fingerprint": 2018518264,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3843819971,
+        "packageFingerprint": 2757222420,
         "gameVersion": [
           "1.16.5",
           "Forge",
           "1.16.4"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2231776,
-        "projectId": 289412,
-        "packageFingerprintId": 630871066,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2813788,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-quests-1605.2.1-build.39-forge.jar"
+        "FileNameOnDisk": "ftb-quests-1605.3.0-build.56-forge.jar"
       },
       "dateInstalled": "2021-05-13T19:57:29.2938944Z",
-      "dateUpdated": "2021-05-13T19:57:29.2938944Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-05-21T20:10:12.4677305Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:10:12.4677305Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22143,97 +22209,76 @@
       "addonID": 410811,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3170610,
-        "displayName": "ftb-essentials-1604.1.0.13.jar",
-        "fileName": "ftb-essentials-1604.1.0.13.jar",
-        "fileDate": "2021-01-16T17:38:51.48Z",
-        "fileLength": 73670,
-        "releaseType": 1,
+        "id": 3313692,
+        "displayName": "ftb-essentials-1605.1.2-build.20.jar",
+        "fileName": "ftb-essentials-1605.1.2-build.20.jar",
+        "fileDate": "2021-05-18T13:45:18.907Z",
+        "fileLength": 70706,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3170/610/ftb-essentials-1604.1.0.13.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3313/692/ftb-essentials-1605.1.2-build.20.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 54535413,
+            "id": 0,
             "addonId": 314905,
             "type": 2,
-            "fileId": 3170610
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 404465,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "META-INF",
-            "fingerprint": 2111409958,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 1973225953,
-            "type": 3,
+            "foldername": "kubejs.classfilter.txt",
+            "fingerprint": 2278401661,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1298629587,
-            "type": 3,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "META-INF",
+            "fingerprint": 524812275,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "dev",
+            "fingerprint": 3494111676,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3627275976,
+        "packageFingerprint": 1239323844,
         "gameVersion": [
-          "1.16.3",
-          "1.16.5",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000002",
-            "gameVersion": "1.16.2",
-            "gameVersionReleaseDate": "2020-08-11T16:42:21.863Z",
-            "gameVersionName": "1.16.2"
-          }
+          "1.16.5"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2129047,
-        "projectId": 410811,
-        "packageFingerprintId": 587264670,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2649477,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-essentials-1604.1.0.13.jar"
+        "FileNameOnDisk": "ftb-essentials-1605.1.2-build.20.jar"
       },
       "dateInstalled": "2021-05-13T19:57:42.2997928Z",
-      "dateUpdated": "2021-05-13T19:57:42.2997928Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-05-21T20:10:08.9107312Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:10:08.9107312Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26866,96 +26911,77 @@
       "addonID": 314905,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3200263,
-        "displayName": "ftb-ranks-1604.1.1.11.jar",
-        "fileName": "ftb-ranks-1604.1.1.11.jar",
-        "fileDate": "2021-02-11T12:25:21.237Z",
-        "fileLength": 62598,
-        "releaseType": 1,
+        "id": 3313044,
+        "displayName": "ftb-ranks-1605.1.2-build.17-forge.jar",
+        "fileName": "ftb-ranks-1605.1.2-build.17-forge.jar",
+        "fileDate": "2021-05-17T21:18:26.433Z",
+        "fileLength": 65440,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3200/263/ftb-ranks-1604.1.1.11.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3313/44/ftb-ranks-1605.1.2-build.17-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
-        "dependencies": [],
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 419699,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "META-INF",
-            "fingerprint": 1804724927,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 1628538027,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
             "foldername": "ftbranks-common.mixins.json",
-            "fingerprint": 4072326113,
-            "type": 3,
+            "fingerprint": 2929449231,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 2229603719,
-            "type": 3,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1883449626,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "dev",
+            "fingerprint": 2288351062,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "architectury_inject_FTBRanks1165_common_1635d3fa93614f7399acc56de2282b4a",
+            "fingerprint": 3030513174,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3371993872,
+        "packageFingerprint": 958977192,
         "gameVersion": [
-          "1.16.3",
           "1.16.5",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000002",
-            "gameVersion": "1.16.2",
-            "gameVersionReleaseDate": "2020-08-11T16:42:21.863Z",
-            "gameVersionName": "1.16.2"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2167366,
-        "projectId": 314905,
-        "packageFingerprintId": 603605241,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2714617,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-ranks-1604.1.1.11.jar"
+        "FileNameOnDisk": "ftb-ranks-1605.1.2-build.17-forge.jar"
       },
       "dateInstalled": "2021-05-13T19:57:42.29378Z",
-      "dateUpdated": "2021-05-13T19:57:42.29378Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-05-21T20:10:04.4547324Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:10:04.4547324Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26970,146 +26996,131 @@
       "addonID": 314906,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3248884,
-        "displayName": "ftb-chunks-1605.2.3-build.75.jar",
-        "fileName": "ftb-chunks-1605.2.3-build.75.jar",
-        "fileDate": "2021-03-23T15:38:41.633Z",
-        "fileLength": 329181,
-        "releaseType": 1,
+        "id": 3315017,
+        "displayName": "ftb-chunks-1605.3.0-build.87-forge.jar",
+        "fileName": "ftb-chunks-1605.3.0-build.87-forge.jar",
+        "fileDate": "2021-05-19T12:35:48.9Z",
+        "fileLength": 295195,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3248/884/ftb-chunks-1605.2.3-build.75.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3315/17/ftb-chunks-1605.3.0-build.87-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 59713214,
-            "addonId": 404468,
-            "type": 2,
-            "fileId": 3248884
-          },
-          {
-            "id": 59713211,
-            "addonId": 404465,
-            "type": 3,
-            "fileId": 3248884
-          },
-          {
-            "id": 59713213,
-            "addonId": 238086,
-            "type": 2,
-            "fileId": 3248884
-          },
-          {
-            "id": 59713212,
+            "id": 0,
             "addonId": 314905,
             "type": 2,
-            "fileId": 3248884
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 419699,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 404468,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 348521,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 404465,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 812797178,
-            "type": 3,
+            "foldername": "kubejs.plugins.txt",
+            "fingerprint": 1949217215,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "ftbchunks.mixins.json",
-            "fingerprint": 4244091212,
-            "type": 3,
+            "foldername": "kubejs.classfilter.txt",
+            "fingerprint": 666273691,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "ftbchunks-common.mixins.json",
+            "fingerprint": 959151663,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 116981138,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2689879968,
-            "type": 3,
+            "fingerprint": 1265190878,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "ftb-chunks-common-refmap.json",
+            "fingerprint": 3981367353,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 812797178,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 1553137409,
-            "type": 3,
+            "fingerprint": 3183906523,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "com",
-            "fingerprint": 787558686,
-            "type": 3,
+            "foldername": "dev",
+            "fingerprint": 1255367175,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "ftb-chunks-refmap.json",
-            "fingerprint": 2049789376,
-            "type": 3,
+            "foldername": "architectury_inject_FTBChunks1165_common_8dc61e8281514b2d92278c32b1a26337",
+            "fingerprint": 2498191454,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3645872122,
+        "packageFingerprint": 3008024650,
         "gameVersion": [
-          "1.16.3",
           "1.16.5",
-          "Forge",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000002",
-            "gameVersion": "1.16.2",
-            "gameVersionReleaseDate": "2020-08-11T16:42:21.863Z",
-            "gameVersionName": "1.16.2"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2231264,
-        "projectId": 314906,
-        "packageFingerprintId": 630660608,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2813011,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-chunks-1605.2.3-build.75.jar"
+        "FileNameOnDisk": "ftb-chunks-1605.3.0-build.87-forge.jar"
       },
       "dateInstalled": "2021-05-13T19:57:47.2084611Z",
-      "dateUpdated": "2021-05-13T19:57:47.2084611Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-05-21T20:10:10.7067356Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:10:10.7067356Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28412,122 +28423,89 @@
       "addonID": 404465,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3237039,
-        "displayName": "ftb-gui-library-1605.2.1.41-forge.jar",
-        "fileName": "ftb-gui-library-1605.2.1.41-forge.jar",
-        "fileDate": "2021-03-12T18:28:39.76Z",
-        "fileLength": 432190,
-        "releaseType": 1,
+        "id": 3313036,
+        "displayName": "ftb-library-1605.3.0-build.67-forge.jar",
+        "fileName": "ftb-library-1605.3.0-build.67-forge.jar",
+        "fileDate": "2021-05-17T21:09:07.137Z",
+        "fileLength": 485695,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3237/39/ftb-gui-library-1605.2.1.41-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3313/36/ftb-library-1605.3.0-build.67-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 58866311,
+            "id": 0,
             "addonId": 419699,
             "type": 3,
-            "fileId": 3237039
+            "fileId": 0
           },
           {
-            "id": 58866312,
+            "id": 0,
             "addonId": 238222,
             "type": 2,
-            "fileId": 3237039
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
+            "foldername": "kubejs.classfilter.txt",
+            "fingerprint": 1091646804,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
             "foldername": "assets",
-            "fingerprint": 2831787380,
-            "type": 3,
+            "fingerprint": 1764736169,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 524945892,
-            "type": 3,
+            "fingerprint": 239616976,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 72649789,
-            "type": 3,
+            "fingerprint": 1501624595,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "com",
-            "fingerprint": 1823192663,
-            "type": 3,
+            "foldername": "dev",
+            "fingerprint": 2936561574,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBGUILibrary_common_b4d2c353c7344184bb9aeb07df7a15c7",
-            "fingerprint": 2661664430,
-            "type": 3,
+            "foldername": "architectury_inject_FTBLibrary1165_common_158bb9b7c7c44f509d317afb62937a91",
+            "fingerprint": 2876903452,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2390050676,
+        "packageFingerprint": 949615031,
         "gameVersion": [
-          "1.16.3",
           "1.16.5",
-          "Forge",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000002",
-            "gameVersion": "1.16.2",
-            "gameVersionReleaseDate": "2020-08-11T16:42:21.863Z",
-            "gameVersionName": "1.16.2"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2214659,
-        "projectId": 404465,
-        "packageFingerprintId": 622985181,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2788801,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-gui-library-1605.2.1.41-forge.jar"
+        "FileNameOnDisk": "ftb-library-1605.3.0-build.67-forge.jar"
       },
       "dateInstalled": "2021-05-13T19:57:47.2224641Z",
-      "dateUpdated": "2021-05-13T19:57:47.2224641Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-05-21T20:10:08.5217333Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:10:08.5217333Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28542,116 +28520,83 @@
       "addonID": 404468,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3237174,
-        "displayName": "ftb-teams-1604.1.0.16-forge.jar",
-        "fileName": "ftb-teams-1604.1.0.16-forge.jar",
-        "fileDate": "2021-03-12T20:45:44.34Z",
-        "fileLength": 64800,
-        "releaseType": 1,
+        "id": 3313041,
+        "displayName": "ftb-teams-1605.2.0-build.56-forge.jar",
+        "fileName": "ftb-teams-1605.2.0-build.56-forge.jar",
+        "fileDate": "2021-05-17T21:14:13.87Z",
+        "fileLength": 151858,
+        "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3237/174/ftb-teams-1604.1.0.16-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3313/41/ftb-teams-1605.2.0-build.56-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 58874901,
+            "id": 0,
             "addonId": 419699,
             "type": 3,
-            "fileId": 3237174
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
+            "foldername": "kubejs.classfilter.txt",
+            "fingerprint": 4244743998,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
             "foldername": "assets",
-            "fingerprint": 3587819498,
-            "type": 3,
+            "fingerprint": 917352451,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 524945892,
-            "type": 3,
+            "fingerprint": 239616976,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 2902900910,
-            "type": 3,
+            "fingerprint": 479472696,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "com",
-            "fingerprint": 3634464989,
-            "type": 3,
+            "foldername": "architectury_inject_FTBTeams1165_common_6ce2081043aa4bbdba44d9f7575069e2",
+            "fingerprint": 2893778706,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBTeams_common_6ce2081043aa4bbdba44d9f7575069e2",
-            "fingerprint": 2039487706,
-            "type": 3,
+            "foldername": "dev",
+            "fingerprint": 3775827129,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2961726476,
+        "packageFingerprint": 2692650826,
         "gameVersion": [
-          "1.16.3",
           "1.16.5",
-          "Forge",
-          "1.16.4",
-          "1.16.2"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000002",
-            "gameVersion": "1.16.2",
-            "gameVersionReleaseDate": "2020-08-11T16:42:21.863Z",
-            "gameVersionName": "1.16.2"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2214838,
-        "projectId": 404468,
-        "packageFingerprintId": 623044360,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2789060,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-teams-1604.1.0.16-forge.jar"
+        "FileNameOnDisk": "ftb-teams-1605.2.0-build.56-forge.jar"
       },
       "dateInstalled": "2021-05-13T19:57:47.1904608Z",
-      "dateUpdated": "2021-05-13T19:57:47.1904608Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-05-21T20:09:55.6227326Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:09:55.6227326Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
