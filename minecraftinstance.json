@@ -443,7 +443,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 407174,
@@ -1299,7 +1299,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 232758,
@@ -4101,7 +4101,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 454372,
@@ -5453,7 +5453,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 418651,
@@ -5841,7 +5841,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 264353,
@@ -6229,7 +6229,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 389665,
@@ -9005,95 +9005,6 @@
       "installedTargets": null
     },
     {
-      "addonID": 456956,
-      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
-      "installedFile": {
-        "id": 3314306,
-        "displayName": "Chipped 1.0.4",
-        "fileName": "chipped-1.0.4.jar",
-        "fileDate": "2021-05-18T21:33:16.56Z",
-        "fileLength": 6026239,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3314/306/chipped-1.0.4.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2501322735,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 3362931875,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": ".cache",
-            "fingerprint": 1949132180,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 463131239,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "Chipped Logo big Remastered.png",
-            "fingerprint": 2735710099,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 79680447,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 2085338806,
-            "type": 0,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 3464760813,
-        "gameVersion": [
-          "1.16.5"
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 0,
-        "restrictProjectFileAccess": 0,
-        "projectStatus": 0,
-        "projectId": 0,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameId": 0,
-        "isServerPack": false,
-        "FileNameOnDisk": "chipped-1.0.4.jar"
-      },
-      "dateInstalled": "2021-05-21T20:05:01.7733029Z",
-      "dateUpdated": "2021-05-21T20:05:01.7892992Z",
-      "dateLastUpdateAttempted": "2021-05-21T20:05:01.7892992Z",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
-    },
-    {
       "addonID": 324973,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
@@ -9187,6 +9098,95 @@
       "dateUpdated": "2021-05-13T19:57:26.4713774Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
+      "addonID": 456956,
+      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
+      "installedFile": {
+        "id": 3314306,
+        "displayName": "Chipped 1.0.4",
+        "fileName": "chipped-1.0.4.jar",
+        "fileDate": "2021-05-18T21:33:16.56Z",
+        "fileLength": 6026239,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3314/306/chipped-1.0.4.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2501322735,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3362931875,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": ".cache",
+            "fingerprint": 1949132180,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 463131239,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "Chipped Logo big Remastered.png",
+            "fingerprint": 2735710099,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 79680447,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 2085338806,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3464760813,
+        "gameVersion": [
+          "1.16.5"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "chipped-1.0.4.jar"
+      },
+      "dateInstalled": "2021-05-21T20:05:01.7733029Z",
+      "dateUpdated": "2021-05-21T20:05:01.7892992Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:05:01.7892992Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11306,7 +11306,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 378802,
@@ -13639,7 +13639,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 475117,
@@ -13723,7 +13723,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 255902,
@@ -14863,7 +14863,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 238086,
@@ -17368,7 +17368,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 388172,
@@ -19101,7 +19101,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 381605,
@@ -19837,7 +19837,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 359289,
@@ -23072,7 +23072,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 377281,
@@ -23452,7 +23452,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 243076,
@@ -26472,53 +26472,34 @@
       "addonID": 227639,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3317102,
-        "displayName": "Twilight Forest - MC 1.16.5 - 4.0.467",
-        "fileName": "twilightforest-1.16.5-4.0.467-universal.jar",
-        "fileDate": "2021-05-20T20:38:45.463Z",
-        "fileLength": 32212133,
+        "id": 3286532,
+        "displayName": "Twilight Forest - MC 1.16.5 - 4.0.435",
+        "fileName": "twilightforest-1.16.5-4.0.435-universal.jar",
+        "fileDate": "2021-04-23T13:42:03.84Z",
+        "fileLength": 31334124,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3317/102/twilightforest-1.16.5-4.0.467-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3286/532/twilightforest-1.16.5-4.0.435-universal.jar",
         "isAlternate": false,
         "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 0,
-            "addonId": 306770,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 231951,
-            "type": 2,
-            "fileId": 0
-          }
-        ],
+        "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1504535202,
+            "fingerprint": 4085696981,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "twilightforest",
-            "fingerprint": 31311956,
+            "fingerprint": 1842227300,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3359941491,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 4189616509,
+            "foldername": "classic",
+            "fingerprint": 697184082,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -26529,25 +26510,31 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "assets",
-            "fingerprint": 774531484,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
             "foldername": ".cache",
-            "fingerprint": 60978169,
+            "fingerprint": 1136579060,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "classic",
-            "fingerprint": 697184082,
+            "foldername": "data",
+            "fingerprint": 1097168475,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1873979998,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3359941491,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4112286911,
+        "packageFingerprint": 2316251377,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -26561,11 +26548,11 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "twilightforest-1.16.5-4.0.467-universal.jar"
+        "FileNameOnDisk": "twilightforest-1.16.5-4.0.435-universal.jar"
       },
-      "dateInstalled": "2021-05-21T20:06:27.4441151Z",
-      "dateUpdated": "2021-05-21T20:06:27.4831125Z",
-      "dateLastUpdateAttempted": "2021-05-21T20:06:27.4831125Z",
+      "dateInstalled": "2021-05-21T20:32:44.9526309Z",
+      "dateUpdated": "2021-05-21T20:32:44.9856304Z",
+      "dateLastUpdateAttempted": "2021-05-21T20:32:44.9856304Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -27376,7 +27363,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 261251,
@@ -32450,7 +32437,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 391382,
