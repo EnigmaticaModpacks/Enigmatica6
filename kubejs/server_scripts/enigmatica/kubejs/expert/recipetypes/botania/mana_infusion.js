@@ -27,6 +27,14 @@ events.listen('recipes', (event) => {
             mana: 5000,
             catalyst: 'architects_palette:sunstone',
             id: 'botania:mana_infusion/mana_string'
+        },
+        {
+            input: '#forge:gems/aquamarine',
+            output: 'astralsorcery:resonating_gem',
+            count: 1,
+            mana: 50000,
+            catalyst: 'architects_palette:moonstone',
+            id: 'astralsorcery:infuser/aquamarine'
         }
     ];
 

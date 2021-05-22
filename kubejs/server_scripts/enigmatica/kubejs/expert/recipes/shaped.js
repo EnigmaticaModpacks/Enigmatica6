@@ -223,7 +223,7 @@ events.listen('recipes', (event) => {
                 A: 'ars_nouveau:warding_stone',
                 B: '#forge:nuggets/gold_brass',
                 C: '#forge:ingots/gold_brass',
-                D: 'minecraft:heart_of_the_sea'
+                D: 'minecraft:conduit'
             },
             id: 'ars_nouveau:enchanting_apparatus'
         },
@@ -507,7 +507,8 @@ events.listen('recipes', (event) => {
             },
             id: 'bloodmagic:blood_rune_charging'
         },
-        { //Gate Beehive behind starting Nature's Aura
+        {
+            //Gate Beehive behind starting Nature's Aura
             output: 'resourcefulbees:t1_beehive',
             pattern: ['ACA', 'ABA', 'ACA'],
             key: {
@@ -541,7 +542,7 @@ events.listen('recipes', (event) => {
             id: 'resourcefulbees:centrifuge'
         },
         {
-            output: Item.of('resourcefulbees:centrifuge_casing',4),
+            output: Item.of('resourcefulbees:centrifuge_casing', 4),
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {
                 A: 'rftoolsbase:machine_frame',
@@ -583,6 +584,33 @@ events.listen('recipes', (event) => {
                 E: 'resourcefulbees:elite_centrifuge_casing'
             },
             id: 'resourcefulbees:elite_centrifuge_controller'
+        },
+        {
+            output: 'astralsorcery:linking_tool',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: 'betterendforge:leather_wrapped_stick',
+                B: '#forge:gems/aquamarine',
+                C: '#forge:rods/brass',
+                D: [
+                    'astralsorcery:rock_crystal',
+                    'astralsorcery:celestial_crystal',
+                    'astralsorcery:attuned_rock_crystal',
+                    'astralsorcery:attuned_celestial_crystal'
+                ]
+            },
+            id: 'astralsorcery:altar/linking_tool'
+        },
+        {
+            output: 'eidolon:worktable',
+            pattern: ['AAA', 'BCB', 'DDD'],
+            key: {
+                A: 'minecraft:red_carpet',
+                B: 'eidolon:pewter_inlay',
+                C: 'minecraft:conduit',
+                D: 'ars_nouveau:purple_archwood_wood'
+            },
+            id: 'eidolon:worktable'
         }
     ];
 
