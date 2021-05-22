@@ -14,6 +14,39 @@ events.listen('recipes', (event) => {
                 D: '#botania:runes/autumn'
             },
             id: 'astralsorcery:altar/hand_telescope'
+        },
+        {
+            output: 'astralsorcery:observatory',
+            pattern: [
+                '      ABC',
+                '     DBPB',
+                '    EBCBA',
+                '   FBJBG ',
+                '  ABKBH  ',
+                ' LB BI   ',
+                'M CBAO   ',
+                'MN L O   ',
+                'MMMOOO   '
+            ],
+            key: {
+                A: '#forge:rods/brass',
+                B: 'astralsorcery:marble_runed',
+                C: 'astralsorcery:glass_lens',
+                D: 'quark:lime_rune',
+                E: 'quark:orange_rune',
+                F: 'quark:red_rune',
+                G: 'quark:magenta_rune',
+                H: 'quark:blue_rune',
+                I: 'quark:light_blue_rune',
+                J: 'quark:black_rune',
+                K: 'mythicbotany:asgard_rune',
+                L: '#forge:nuggets/brass',
+                M: '#forge:plates/brass',
+                N: '#create:seats',
+                O: 'create:brass_casing',
+                P: 'astralsorcery:infused_glass'
+            },
+            id: 'astralsorcery:altar/observatory'
         }
     ];
 
