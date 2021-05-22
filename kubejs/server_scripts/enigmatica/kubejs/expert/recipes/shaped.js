@@ -611,6 +611,73 @@ events.listen('recipes', (event) => {
                 D: 'ars_nouveau:purple_archwood_wood'
             },
             id: 'eidolon:worktable'
+        },
+        {
+            output: 'astralsorcery:wand',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: '#forge:rods/silver',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/aquamarine',
+                D: 'eidolon:ender_calx'
+            },
+            id: 'astralsorcery:altar/wand'
+        },
+        {
+            output: 'astralsorcery:blink_wand',
+            pattern: [' EC', 'EAD', 'AB '],
+            key: {
+                A: '#forge:rods/silver',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/aquamarine',
+                D: 'bloodmagic:reagentair',
+                E: 'integrateddynamics:crystalized_menril_chunk'
+            },
+            id: 'astralsorcery:altar/blink_wand'
+        },
+        {
+            output: 'astralsorcery:exchange_wand',
+            pattern: [' DC', 'CA ', 'AB '],
+            key: {
+                A: '#forge:rods/silver',
+                B: 'betterendforge:leather_stripe',
+                C: 'byg:warped_coral_block',
+                D: '#forge:ingots/lead'
+            },
+            id: 'astralsorcery:altar/exchange_wand'
+        },
+        {
+            output: 'astralsorcery:grapple_wand',
+            pattern: [' CD', 'CA ', 'AB '],
+            key: {
+                A: '#forge:rods/silver',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/aquamarine',
+                D: 'alexsmobs:guster_eye'
+            },
+            id: 'astralsorcery:altar/grapple_wand'
+        },
+        {
+            output: 'astralsorcery:illumination_wand',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: '#forge:rods/silver',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/aquamarine',
+                D: 'astralsorcery:illumination_powder'
+            },
+            id: 'astralsorcery:altar/illumination_wand'
+        },
+        {
+            output: 'astralsorcery:architect_wand',
+            pattern: [' CD', ' AC', 'AB '],
+            key: {
+                A: '#forge:rods/silver',
+                B: 'betterendforge:leather_stripe',
+                C: 'integrateddynamics:crystalized_chorus_chunk',
+                D: '#forge:gems/aquamarine'
+            },
+            id: 'astralsorcery:altar/architect_wand'
         }
     ];
 
