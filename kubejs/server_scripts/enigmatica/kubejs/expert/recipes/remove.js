@@ -7,7 +7,10 @@ events.listen('recipes', (event) => {
         'ars_nouveau:stone_2',
         'minecraft:leather_to_stripes',
         'quark:building/crafting/candles/candle_basic',
-        'betterendforge:leather_to_stripes'
+        'betterendforge:leather_to_stripes',
+        'astralsorcery:shaped/black_marble/black_marble_raw',
+        'astralsorcery:altar/black_marble_raw',
+        'astralsorcery:shaped/wand'
     ];
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];

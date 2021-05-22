@@ -266,7 +266,7 @@ events.listen('recipes', (event) => {
                     { item: 'botania:livingrock' }, //bottom
                     { item: 'botania:livingrock' }, //left
                     { item: 'botania:livingrock' }, //right
-                    { item: 'minecraft:heart_of_the_sea' }, //topleft
+                    { item: 'minecraft:conduit' }, //topleft
                     { item: 'botania:livingrock' } //bottomright
                 ],
                 output: 'botania:runic_altar',

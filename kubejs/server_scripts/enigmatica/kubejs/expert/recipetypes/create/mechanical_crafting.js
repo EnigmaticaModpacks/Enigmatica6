@@ -1,7 +1,60 @@
 events.listen('recipes', (event) => {
-    const recipes = [];
+    if (global.isExpertMode == false) {
+        return;
+    }
+
+    const recipes = [
+        {
+            output: 'astralsorcery:hand_telescope',
+            pattern: [' A    ', 'ABA   ', ' ABC  ', '  CDC ', '   CCA', '    AB'],
+            key: {
+                A: '#forge:plates/brass',
+                B: 'astralsorcery:glass_lens',
+                C: 'botania:livingwood_planks',
+                D: '#botania:runes/autumn'
+            },
+            id: 'astralsorcery:altar/hand_telescope'
+        },
+        {
+            output: 'astralsorcery:observatory',
+            pattern: [
+                '      ABC',
+                '     DBPB',
+                '    EBCBA',
+                '   FBJBG ',
+                '  ABKBH  ',
+                ' LB BI   ',
+                'M CBAO   ',
+                'MN LQO   ',
+                'MMMOOO   '
+            ],
+            key: {
+                A: '#forge:rods/brass',
+                B: 'astralsorcery:marble_runed',
+                C: 'astralsorcery:glass_lens',
+                D: 'quark:lime_rune',
+                E: 'quark:orange_rune',
+                F: 'quark:red_rune',
+                G: 'quark:magenta_rune',
+                H: 'quark:blue_rune',
+                I: 'quark:light_blue_rune',
+                J: 'quark:black_rune',
+                K: 'mythicbotany:asgard_rune',
+                L: '#forge:nuggets/brass',
+                M: '#forge:plates/brass',
+                N: '#create:seats',
+                O: 'create:brass_casing',
+                P: 'astralsorcery:infused_glass',
+                Q: 'immersiveengineering:furnace_heater'
+            },
+            id: 'astralsorcery:altar/observatory'
+        }
+    ];
 
     recipes.forEach((recipe) => {
-        event.recipes.create.mechanical_crafting(recipe.result, recipe.pattern, recipe.key);
+        const re = event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });
