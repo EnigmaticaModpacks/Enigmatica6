@@ -25,7 +25,7 @@ events.listen('recipes', (event) => {
                 '  ABKBH  ',
                 ' LB BI   ',
                 'M CBAO   ',
-                'MN L O   ',
+                'MN LQO   ',
                 'MMMOOO   '
             ],
             key: {
@@ -44,7 +44,8 @@ events.listen('recipes', (event) => {
                 M: '#forge:plates/brass',
                 N: '#create:seats',
                 O: 'create:brass_casing',
-                P: 'astralsorcery:infused_glass'
+                P: 'astralsorcery:infused_glass',
+                Q: 'immersiveengineering:furnace_heater'
             },
             id: 'astralsorcery:altar/observatory'
         }
