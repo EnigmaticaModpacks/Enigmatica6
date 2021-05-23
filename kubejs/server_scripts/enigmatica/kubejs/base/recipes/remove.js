@@ -132,16 +132,6 @@ events.listen('recipes', (event) => {
 
         'immersivepetroleum:distillationtower/oilcracking',
 
-        'mapperbase:steel_nugget_from_blasting',
-        'mapperbase:steel_plate_from_blasting',
-        'mapperbase:steel_block_from_blasting',
-        'mapperbase:steel_ingot_from_blasting',
-        'mapperbase:steel_rod_from_blasting',
-        'mapperbase:steel_rod',
-        'mapperbase:iron_rod',
-        'mapperbase:iron_plate',
-        'mapperbase:steel_plate',
-
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:reaction/substrate/water_hydrogen',
 

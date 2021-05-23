@@ -67,7 +67,7 @@ events.listen('recipes', (event) => {
                 dimensions: ['minecraft:overworld'],
                 weight: 20,
                 fail_chance: 0.05,
-                sample_background: 'embellishcraft:larvikite',
+                sample_background: 'create:limestone',
                 id: 'cassiterite'
             },
             {

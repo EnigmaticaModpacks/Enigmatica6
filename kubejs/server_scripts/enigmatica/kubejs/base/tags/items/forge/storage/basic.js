@@ -45,7 +45,6 @@ events.listen('item.tags', (event) => {
             .add(/cupboard/)
             .add(/shulker_box/)
             .add(/_pantry/)
-            .add(/embellishcraft:\w+_crate/)
             .add(/rftoolsstorage:storage_module/)
             .remove(exceptions);
     });

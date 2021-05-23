@@ -13,8 +13,6 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
     event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
-    event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen', true);
-    event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen', true);
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
     event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');

@@ -19,16 +19,14 @@ events.listen('block.tags', (event) => {
             'quark:basalt_pillar',
             'quark:polished_basalt',
             'quark:basalt_bricks',
-            'minecraft:basalt',
-            'embellishcraft:basalt'
+            'minecraft:basalt'
         ]);
-    event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate', 'embellishcraft:slate']);
+    event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate']);
     event
         .get('forge:stones/marble')
         .add([
             'quark:marble',
             'quark:polished_marble',
-            'embellishcraft:marble',
             'astralsorcery:marble_arch',
             'astralsorcery:marble_bricks',
             'astralsorcery:marble_chiseled',

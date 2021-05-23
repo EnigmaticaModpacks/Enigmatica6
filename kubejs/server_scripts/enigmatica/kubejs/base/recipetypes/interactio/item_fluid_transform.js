@@ -49,31 +49,6 @@ events.listen('recipes', (event) => {
 
     const simpleItemRecipes = [
         {
-            output: 'embellishcraft:rusty_wall_ladder',
-            input: 'embellishcraft:steel_wall_ladder'
-        },
-        {
-            output: 'embellishcraft:rusty_rungs',
-            input: 'embellishcraft:steel_rungs'
-        },
-        {
-            output: 'embellishcraft:rusty_suspended_stairs',
-            input: 'embellishcraft:steel_suspended_stairs'
-        },
-        {
-            output: 'embellishcraft:rusty_door',
-            input: 'embellishcraft:steel_door'
-        },
-        {
-            output: 'embellishcraft:sturdy_rusty_door',
-            input: 'embellishcraft:sturdy_steel_door'
-        },
-        {
-            output: 'embellishcraft:warning_rusty_door',
-            input: 'embellishcraft:warning_steel_door'
-        },
-
-        {
             output: 'dustrial_decor:rusty_iron_door',
             input: 'minecraft:iron_door'
         },

@@ -62,18 +62,6 @@ const disabledItems = [
 
     'decorative_blocks_abnormals:ender_brazier',
 
-    'mapperbase:bituminous_coal',
-    'mapperbase:steel_fence',
-    'mapperbase:steel_axe',
-    'mapperbase:steel_pickaxe',
-    'mapperbase:steel_shovel',
-    'mapperbase:steel_hoe',
-    'mapperbase:steel_sword',
-    'mapperbase:steel_helmet',
-    'mapperbase:steel_chestplate',
-    'mapperbase:steel_leggings',
-    'mapperbase:steel_boots',
-
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',
     'mythicbotany:wither_aconite',
