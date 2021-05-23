@@ -65,15 +65,6 @@ events.listen('recipes', (event) => {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }),
             inputs: ['minecraft:book', '#forge:dyes/yellow']
         },
-        {
-            output: Item.of('bambooeverything:bamboo_bundle', 2),
-            inputs: ['thermal:bamboo_block', 'thermal:bamboo_block']
-        },
-        { output: Item.of('thermal:bamboo_block', 2), inputs: ['quark:bamboo_block', 'quark:bamboo_block'] },
-        {
-            output: Item.of('quark:bamboo_block', 2),
-            inputs: ['bambooeverything:bamboo_bundle', 'bambooeverything:bamboo_bundle']
-        },
         { output: 'minecraft:crafting_table', inputs: ['#forge:workbench'] },
         {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }),

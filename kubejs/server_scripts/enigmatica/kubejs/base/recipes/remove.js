@@ -20,8 +20,6 @@ events.listen('recipes', (event) => {
         'aiotbotania:livingwood_shears',
         'aiotbotania:livingrock_shears',
 
-        'bambooeverything:bamboo_bundle',
-
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
 
