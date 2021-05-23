@@ -36,4 +36,6 @@ events.listen('item.tags', (event) => {
     event.add(storageBlocks + '/ender', ['betterendforge:ender_block']);
     event.add(storageBlocks + '/aurora', ['betterendforge:aurora_crystal']);
     event.add(storageBlocks + '/amber', ['betterendforge:amber_block']);
+
+    event.add(storageBlocks + '/sunmetal', ['architects_palette:sunmetal_block']);
 });

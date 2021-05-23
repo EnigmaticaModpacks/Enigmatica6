@@ -10,7 +10,9 @@ events.listen('item.registry', (event) => {
         'scavengers_delight',
         'alchemists_delight',
         'quintuple_alfsteel_ingot',
-        'altered_recipe_indicator'
+        'altered_recipe_indicator',
+        'observatory_lens',
+        'syrup_bottle'
     ];
 
     generalItems.forEach((item) => {
