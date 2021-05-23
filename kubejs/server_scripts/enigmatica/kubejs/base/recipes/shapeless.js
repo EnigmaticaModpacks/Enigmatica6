@@ -301,31 +301,6 @@ events.listen('recipes', (event) => {
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         },
         {
-            inputs: ['minecraft:fire_charge', '#minecraft:coals'],
-            output: Item.of('additional_lights:fire_for_standing_torch_s', 4),
-            id: 'additional_lights:fire_for_standing_torch_s'
-        },
-        {
-            inputs: ['minecraft:fire_charge', '#minecraft:coals', '#minecraft:coals'],
-            output: Item.of('additional_lights:fire_for_standing_torch_l', 4),
-            id: 'additional_lights:fire_for_standing_torch_l'
-        },
-        {
-            inputs: ['minecraft:fire_charge', '#minecraft:coals', '#minecraft:soul_fire_base_blocks'],
-            output: Item.of('additional_lights:soul_fire_for_standing_torch_s', 4),
-            id: 'additional_lights:soul_fire_for_standing_torch_s'
-        },
-        {
-            inputs: [
-                'minecraft:fire_charge',
-                '#minecraft:coals',
-                '#minecraft:coals',
-                '#minecraft:soul_fire_base_blocks'
-            ],
-            output: Item.of('additional_lights:soul_fire_for_standing_torch_l', 4),
-            id: 'additional_lights:soul_fire_for_standing_torch_l'
-        },
-        {
             output: Item.of('emendatusenigmatica:signalum_dust', 4),
             inputs: [
                 '#forge:dusts/silver',

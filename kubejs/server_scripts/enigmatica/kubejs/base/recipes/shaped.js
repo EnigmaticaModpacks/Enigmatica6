@@ -930,12 +930,6 @@ events.listen('recipes', (event) => {
             'resourcefulbees:t4_apiary'
         ),
 
-        // Torch from Stick+Standing Fire
-        shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
-            A: 'additional_lights:fire_for_standing_torch_s',
-            B: '#forge:rods/wooden'
-        }),
-
         shapedRecipe(Item.of('projectvibrantjourneys:bones', 8), ['AAA', 'A A', 'AAA'], {
             A: 'minecraft:bone'
         }),
