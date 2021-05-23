@@ -110,7 +110,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "minecraft:lava",
@@ -141,7 +141,7 @@
 											filter: {
 												Type: "WHITELIST",
 												Pointer: 0,
-												Filter: {}
+												Filter: { }
 											},
 											tank: {
 												FluidName: "minecraft:lava",
@@ -167,7 +167,7 @@
 										filter: {
 											Type: "WHITELIST",
 											Pointer: 0,
-											Filter: {}
+											Filter: { }
 										},
 										tank: {
 											FluidName: "minecraft:lava",
@@ -199,7 +199,7 @@
 						filter: {
 							Type: "WHITELIST",
 							Pointer: 0,
-							Filter: {}
+							Filter: { }
 						},
 						tank: {
 							FluidName: "minecraft:water",
@@ -232,7 +232,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "minecraft:water",
@@ -263,7 +263,7 @@
 											filter: {
 												Type: "WHITELIST",
 												Pointer: 0,
-												Filter: {}
+												Filter: { }
 											},
 											tank: {
 												FluidName: "minecraft:water",
@@ -289,7 +289,7 @@
 										filter: {
 											Type: "WHITELIST",
 											Pointer: 0,
-											Filter: {}
+											Filter: { }
 										},
 										tank: {
 											FluidName: "minecraft:water",
@@ -321,7 +321,7 @@
 						filter: {
 							Type: "WHITELIST",
 							Pointer: 0,
-							Filter: {}
+							Filter: { }
 						},
 						tank: {
 							FluidName: "thermal:crude_oil",
@@ -354,7 +354,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "immersivepetroleum:oil",
@@ -389,7 +389,7 @@
 													filter: {
 														Type: "WHITELIST",
 														Pointer: 0,
-														Filter: {}
+														Filter: { }
 													},
 													tank: {
 														FluidName: "thermal:crude_oil",
@@ -415,7 +415,7 @@
 														filter: {
 															Type: "WHITELIST",
 															Pointer: 0,
-															Filter: {}
+															Filter: { }
 														},
 														tank: {
 															FluidName: "thermal:crude_oil",
@@ -449,7 +449,7 @@
 													filter: {
 														Type: "WHITELIST",
 														Pointer: 0,
-														Filter: {}
+														Filter: { }
 													},
 													tank: {
 														FluidName: "pneumaticcraft:oil",
@@ -475,7 +475,7 @@
 														filter: {
 															Type: "WHITELIST",
 															Pointer: 0,
-															Filter: {}
+															Filter: { }
 														},
 														tank: {
 															FluidName: "pneumaticcraft:oil",
@@ -509,7 +509,7 @@
 													filter: {
 														Type: "WHITELIST",
 														Pointer: 0,
-														Filter: {}
+														Filter: { }
 													},
 													tank: {
 														FluidName: "immersivepetroleum:oil",
@@ -535,7 +535,7 @@
 														filter: {
 															Type: "WHITELIST",
 															Pointer: 0,
-															Filter: {}
+															Filter: { }
 														},
 														tank: {
 															FluidName: "immersivepetroleum:oil",
@@ -794,7 +794,7 @@
 					item: {
 						id: "botania:cosmetic_tiny_potato_mask",
 						Count: 1b,
-						tag: {}
+						tag: { }
 					},
 					count: 2863L,
 					consume_items: true

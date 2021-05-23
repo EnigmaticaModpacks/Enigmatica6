@@ -4,8 +4,8 @@
 	order_index: 4,
 	filename: "pedestals",
 	title: "Pedestals",
-	subtitle: ["Getting on top of it all"],
 	icon: "pedestals:pedestal/stone333",
+	subtitle: ["Getting on top of it all"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -1063,11 +1063,11 @@
 					id: "pedestals:linkingtool",
 					Count: 1b,
 					tag: {
-						storedlist_z: [I;],
+						storedlist_z: [I; ],
 						stored_y: -2000,
-						storedlist_x: [I;],
+						storedlist_x: [I; ],
 						stored_x: 0,
-						storedlist_y: [I;],
+						storedlist_y: [I; ],
 						stored_z: 0
 					}
 				}

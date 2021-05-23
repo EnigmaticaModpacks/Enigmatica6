@@ -1102,7 +1102,7 @@
 			icon: {
 				id: "mininggadgets:mininggadget",
 				Count: 1b,
-				tag: {}
+				tag: { }
 			},
 			x: -10.0d,
 			y: -16.0d,
@@ -1130,7 +1130,7 @@
 					item: {
 						id: "mininggadgets:mininggadget",
 						Count: 1b,
-						tag: {}
+						tag: { }
 					}
 				},
 				{
@@ -2256,14 +2256,14 @@
 				id: "716019716B2915F9",
 				type: "item",
 				item: {
+					id: "immersiveengineering:buzzsaw",
+					Count: 1b,
 					ForgeCaps: {
 						Parent: {
 							Size: 5,
-							Items: []
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:buzzsaw",
-					Count: 1b
+					}
 				}
 			}],
 			rewards: [
@@ -2316,14 +2316,14 @@
 				id: "54E76BD7C4FB9D97",
 				type: "item",
 				item: {
+					id: "immersiveengineering:revolver",
+					Count: 1b,
 					ForgeCaps: {
 						Parent: {
 							Size: 21,
-							Items: []
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:revolver",
-					Count: 1b
+					}
 				}
 			}],
 			rewards: [
@@ -2361,14 +2361,14 @@
 				id: "5B3CC19ED97DFA26",
 				type: "item",
 				item: {
+					id: "immersiveengineering:drill",
+					Count: 1b,
 					ForgeCaps: {
 						Parent: {
 							Size: 5,
-							Items: []
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:drill",
-					Count: 1b
+					}
 				}
 			}],
 			rewards: [
@@ -2417,14 +2417,14 @@
 				id: "404F5C421F8FFFD5",
 				type: "item",
 				item: {
+					id: "immersiveengineering:railgun",
+					Count: 1b,
 					ForgeCaps: {
 						Parent: {
 							Size: 3,
-							Items: []
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:railgun",
-					Count: 1b
+					}
 				}
 			}],
 			rewards: [
@@ -2460,14 +2460,14 @@
 				id: "46FB2138D39F9238",
 				type: "item",
 				item: {
+					id: "immersiveengineering:speedloader",
+					Count: 1b,
 					ForgeCaps: {
 						Parent: {
 							Size: 8,
-							Items: []
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:speedloader",
-					Count: 1b
+					}
 				}
 			}],
 			rewards: [{
@@ -2826,14 +2826,14 @@
 				id: "672C630D81BD8E94",
 				type: "item",
 				item: {
+					id: "immersiveengineering:chemthrower",
+					Count: 1b,
 					ForgeCaps: {
 						Parent: {
 							Size: 4,
-							Items: []
+							Items: [ ]
 						}
-					},
-					id: "immersiveengineering:chemthrower",
-					Count: 1b
+					}
 				}
 			}],
 			rewards: [{
@@ -2912,7 +2912,7 @@
 					id: "tiab:timeinabottle",
 					Count: 1b,
 					tag: {
-						timeData: {}
+						timeData: { }
 					}
 				}
 			}],

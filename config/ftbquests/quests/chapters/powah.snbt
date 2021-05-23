@@ -37,7 +37,7 @@
 					id: "powah:wrench",
 					Count: 1b,
 					tag: {
-						PowahWrenchNBT: {}
+						PowahWrenchNBT: { }
 					}
 				}
 			}]
@@ -47,7 +47,7 @@
 				id: "powah:wrench",
 				Count: 1b,
 				tag: {
-					PowahWrenchNBT: {}
+					PowahWrenchNBT: { }
 				}
 			},
 			x: -1.5d,
@@ -659,7 +659,7 @@
 				item: {
 					id: "powah:battery_hardened",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}]
 		},
@@ -923,7 +923,7 @@
 			icon: {
 				id: "powah:battery_nitro",
 				Count: 1b,
-				tag: {}
+				tag: { }
 			},
 			x: 4.5d,
 			y: -3.0d,
@@ -1006,7 +1006,7 @@
 					icon: {
 						id: "powah:battery_nitro",
 						Count: 1b,
-						tag: {}
+						tag: { }
 					},
 					auto: "enabled",
 					command: "/say @p completed Powah's Ultimate Power Quest! Woot!",
