@@ -1164,8 +1164,9 @@ events.listen('recipes', (event) => {
             secondaryType = 'gems';
         }
 
-        var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:' + secondaryType + '/' + secondaryMaterial))
-            .id;
+        var secondaryOutput = getPreferredItemInTag(
+            Ingredient.of('#forge:' + secondaryType + '/' + secondaryMaterial)
+        ).id;
 
         outputs = [
             Item.of(primaryOutput, primaryCount),
