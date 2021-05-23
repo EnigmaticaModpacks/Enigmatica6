@@ -862,7 +862,7 @@ events.listen('recipes', (event) => {
             A: 'minecraft:elytra',
             B: 'magicfeather:magicfeather',
             C: 'minecraft:prismarine_shard',
-            D: Item.of('minecraft:potion', { Potion: 'bountifulbaubles:flight' }),
+            D: '#forge:nether_stars',
             E: 'rftoolsbase:infused_diamond',
             F: 'minecraft:ender_eye'
         }),

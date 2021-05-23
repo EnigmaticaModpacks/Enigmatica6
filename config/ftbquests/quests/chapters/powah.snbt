@@ -280,22 +280,14 @@
 					}
 				}
 			}],
-			rewards: [
-				{
-					id: "00000000000001B8",
-					type: "item",
-					title: "Sunglasses",
-					item: "bountifulbaubles:sunglasses"
-				},
-				{
-					id: "000000000000028A",
-					type: "command",
-					title: "Powah Loot Box",
-					icon: "kubejs:epic_lootbox",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
-					player_command: false
-				}
-			]
+			rewards: [{
+				id: "000000000000028A",
+				type: "command",
+				title: "Powah Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_powah_loot",
+				player_command: false
+			}]
 		},
 		{
 			title: "Lens of Ender",

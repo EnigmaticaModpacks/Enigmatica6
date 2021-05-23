@@ -1,14 +1,6 @@
 onEvent('item.tooltip', (event) => {
     const recipes = [
         {
-            items: ['bountifulbaubles:potion_wormhole', 'bountifulbaubles:wormhole_mirror'],
-            text: [
-                Text.of(
-                    'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
-                ).red()
-            ]
-        },
-        {
             items: [
                 'integratedtunnels:part_interface_fluid',
                 'integratedtunnels:part_importer_fluid',

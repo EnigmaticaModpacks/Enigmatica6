@@ -15,12 +15,6 @@ events.listen('jei.information', (event) => {
             description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
         },
         {
-            items: ['bountifulbaubles:potion_wormhole', 'bountifulbaubles:wormhole_mirror'],
-            description: [
-                'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
-            ]
-        },
-        {
             items: ['powah:uraninite', 'powah:uraninite_block'],
             description: [
                 'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'

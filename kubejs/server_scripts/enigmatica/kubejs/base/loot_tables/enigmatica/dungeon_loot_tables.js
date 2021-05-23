@@ -414,7 +414,6 @@ events.listen('server.datapack.low_priority', (event) => {
                 { item: 'minecraft:ghast_tear', weight: 100 },
                 { item: 'bloodmagic:weakbloodshard', weight: 100 },
                 { item: 'bloodmagic:infusedslate', weight: 100 },
-                { item: 'bountifulbaubles:obsidian_skull', weight: 100 },
                 { item: 'minecraft:gold_ingot', weight: 100 },
                 { item: 'minecraft:golden_apple', weight: 100 },
                 {
@@ -527,8 +526,6 @@ events.listen('server.datapack.low_priority', (event) => {
                 { item: 'artifacts:vampiric_glove', weight: 100 },
                 { item: 'artifacts:superstitious_hat', weight: 100 },
                 { item: 'artifacts:crystal_heart', weight: 100 },
-                { item: 'bountifulbaubles:magic_mirror', weight: 100 },
-                { item: 'bountifulbaubles:phylactery_charm', weight: 100 },
                 { item: 'minecraft:ender_eye', weight: 100 },
                 { item: 'botania:mana_tablet', weight: 100, nbt: '{mana:250000}' },
                 { item: 'emendatusenigmatica:lead_ingot', weight: 100 },
