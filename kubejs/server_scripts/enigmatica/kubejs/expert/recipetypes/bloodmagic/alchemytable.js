@@ -195,6 +195,19 @@ events.listen('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 3,
                 id: 'bloodmagic:alchemytable/reagent_magnetism'
+            },
+            {
+                inputs: [
+                    'occultism:afrit_essence',
+                    Item.of('botania:incense_stick', { brewKey: 'botania:bloodthirst' }),
+                    'eidolon:crimson_essence'
+                ],
+                output: 'bloodmagic:weakbloodshard',
+                count: 2,
+                syphon: 20000,
+                ticks: 200,
+                orbLevel: 3,
+                id: 'bloodmagic:arc/weakbloodshard'
             }
         ]
     };

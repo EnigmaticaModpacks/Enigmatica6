@@ -8,16 +8,26 @@ events.listen('recipes', (event) => {
             heated: true,
             inputs: ['#forge:ingots/cobalt', '#forge:ingots/cobalt', '#forge:ingots/cobalt', 'thermal:blizz_powder'],
             output: Item.of('undergarden:froststeel_ingot', 3)
+        },
+        {
+            superheated: true,
+            inputs: ['#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble'],
+            output: Item.of('astralsorcery:black_marble_raw', 4)
         }
     ];
 
     recipes.forEach((recipe) => {
+        const re = event.recipes.create.mixing(recipe.output, recipe.inputs);
+
         if (recipe.heated) {
-            event.recipes.create.mixing(recipe.output, recipe.inputs).heated();
+            re.heated();
         } else if (recipe.superheated) {
-            event.recipes.create.mixing(recipe.output, recipe.inputs).superheated();
+            re.superheated();
         } else {
-            event.recipes.create.mixing(recipe.output, recipe.inputs);
+            //unheated
+        }
+        if (recipe.id) {
+            re.id(recipe.id);
         }
     });
 });

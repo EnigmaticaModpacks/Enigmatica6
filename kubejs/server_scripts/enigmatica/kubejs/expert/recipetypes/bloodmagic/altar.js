@@ -101,6 +101,15 @@ events.listen('recipes', (event) => {
                 consumptionRate: 5,
                 drainRate: 5,
                 id: 'bloodmagic:sacrificial_dagger'
+            },
+            {
+                input: 'create:shadow_steel',
+                output: 'bloodmagic:masterbloodorb',
+                syphon: 80000,
+                altarLevel: 3,
+                consumptionRate: 30,
+                drainRate: 50,
+                id: 'bloodmagic:altar/masterbloodorb'
             }
         ]
     };

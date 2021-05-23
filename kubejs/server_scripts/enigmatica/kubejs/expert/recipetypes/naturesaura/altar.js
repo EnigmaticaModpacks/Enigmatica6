@@ -41,7 +41,7 @@ events.listen('recipes', (event) => {
                 input: 'eidolon:candle',
                 output: 'occultism:candle_white',
                 aura_type: 'naturesaura:nether',
-                aura: 5000,
+                aura: 50000,
                 time: 60,
                 id: 'occultism:crafting/candle'
             },
@@ -59,6 +59,14 @@ events.listen('recipes', (event) => {
                 catalyst: 'naturesaura:conversion_catalyst',
                 aura: 30000,
                 time: 250
+            },
+            {
+                input: 'kubejs:firmament',
+                output: 'naturesaura:infused_stone',
+                aura_type: 'naturesaura:nether',
+                aura: 15000,
+                time: 40,
+                id: 'naturesaura:altar/infused_stone'
             }
         ]
     };

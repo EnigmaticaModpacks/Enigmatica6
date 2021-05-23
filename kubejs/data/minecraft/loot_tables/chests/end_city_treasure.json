@@ -341,13 +341,23 @@
             "entries": [
                 {
                     "type": "loot_table",
-                    "weight": 8,
+                    "weight": 5,
                     "name": "artifacts:artifact"
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "artifacts:helium_flamingo"
                 },
                 {
                     "type": "item",
                     "weight": 1,
                     "name": "artifacts:crystal_heart"
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "artifacts:cloud_in_a_bottle"
                 }
             ]
         }
