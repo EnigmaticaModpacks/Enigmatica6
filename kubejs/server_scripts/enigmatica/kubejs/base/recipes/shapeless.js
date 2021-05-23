@@ -9,10 +9,6 @@ events.listen('recipes', (event) => {
         { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
         { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
         {
-            output: 'minecraft:crafting_table',
-            inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
-        },
-        {
             output: 'simplefarming:fish_sandwich',
             inputs: [
                 '#forge:bread',

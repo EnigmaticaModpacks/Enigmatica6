@@ -1,19 +1,19 @@
 events.listen('recipes', (event) => {
     const recipes = [
-        {
-            ingredients: [
-                {
-                    tag: 'forge:tools/axe'
-                },
-                {
-                    tag: 'forge:workbench'
-                }
-            ],
-            result: {
-                item: 'craftingstation:crafting_station',
-                count: 1
-            }
-        }
+        // {
+        //     ingredients: [
+        //         {
+        //             tag: 'forge:tools/axe'
+        //         },
+        //         {
+        //             tag: 'forge:workbench'
+        //         }
+        //     ],
+        //     result: {
+        //         item: 'minecraft:crafting_table',
+        //         count: 1
+        //     }
+        // }
     ];
     recipes.forEach((recipe) => {
         event.custom({
