@@ -112,3 +112,13 @@
 	#What dimensions should this structure be placed in. Type "all" to allow all dimensions
 	valid_dimensions = "minecraft:the_nether"
 
+["quark compat"]
+	#Percent chance for monster boxes from Quark to generate in the buried dungeon
+	#Range: 0 ~ 100
+	bigger_dungeon_monster_box_chance = 35
+
+["waystones compat"]
+	#Percent chance for a waystone from Waystones to generate on top of the tower
+	#Range: 0 ~ 100
+	tower_waystone_chance = 100
+
