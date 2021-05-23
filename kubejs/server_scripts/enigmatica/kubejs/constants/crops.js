@@ -1462,12 +1462,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'autumnity:autumn_crocus',
-                render: 'autumnity:autumn_crocus',
-                plant: 'autumnity:autumn_crocus',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'upgrade_aquatic:purple_pickerelweed',
                 render: 'upgrade_aquatic:purple_pickerelweed',
                 plant: 'upgrade_aquatic:purple_pickerelweed',
@@ -2063,12 +2057,6 @@ const cropRegistry = [
                 render: 'undergarden:underbean_bush',
                 plant: 'undergarden:underbeans',
                 substrate: 'deepturf'
-            },
-            {
-                seed: 'autumnity:foul_berries',
-                render: 'autumnity:foul_berry_bush',
-                plant: 'autumnity:foul_berries',
-                substrate: 'dirt'
             },
             {
                 seed: 'betterendforge:blue_vine_seed',

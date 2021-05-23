@@ -627,38 +627,6 @@ const treeRegistry = [
                 sap: 'thermal:resin',
                 amount: 25
             },
-            {
-                sapling: 'autumnity:red_maple_sapling',
-                trunk: 'autumnity:maple_log',
-                leaf: 'autumnity:red_maple_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:sap',
-                amount: 25
-            },
-            {
-                sapling: 'autumnity:orange_maple_sapling',
-                trunk: 'autumnity:maple_log',
-                leaf: 'autumnity:orange_maple_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:sap',
-                amount: 25
-            },
-            {
-                sapling: 'autumnity:yellow_maple_sapling',
-                trunk: 'autumnity:maple_log',
-                leaf: 'autumnity:yellow_maple_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:sap',
-                amount: 25
-            },
-            {
-                sapling: 'autumnity:maple_sapling',
-                trunk: 'autumnity:maple_log',
-                leaf: 'autumnity:maple_leaves',
-                substrate: 'dirt',
-                sap: 'thermal:sap',
-                amount: 25
-            },
             // {
             //     sapling: 'sushigocrafting:avocado_sapling',
             //     trunk: 'sushigocrafting:avocado_log',

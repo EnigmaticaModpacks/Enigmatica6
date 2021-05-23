@@ -126,12 +126,6 @@ events.listen('jei.information', (event) => {
             description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
         },
         {
-            items: ['autumnity:sap_bottle', 'autumnity:sappy_maple_log', 'autumnity:sappy_maple_wood'],
-            description: [
-                'Right-clicking a sappy maple log or sappy maple wood with a glass battle will turn the block into its stripped variant and fill the bottle with sap.'
-            ]
-        },
-        {
             items: [
                 'resourcefulbees:brass_bee',
                 'resourcefulbees:bronze_bee',

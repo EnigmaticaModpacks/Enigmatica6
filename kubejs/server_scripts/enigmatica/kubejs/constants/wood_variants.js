@@ -71,8 +71,6 @@ var woodVariantsToConstruct = [
     'atmospheric:grimwood',
     'upgrade_aquatic:driftwood',
     'upgrade_aquatic:river',
-    'autumnity:maple',
-    'autumnity:sappy_maple',
     'architects_palette:twisted'
     // 'sushigocrafting:avocado'
 ];
@@ -170,11 +168,6 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'atmospheric:stripped_aspen_log';
             woodBlockStripped = 'atmospheric:stripped_aspen_wood';
             plankBlock = 'atmospheric:aspen_planks';
-            break;
-        case 'sappy_maple':
-            logBlockStripped = 'autumnity:stripped_maple_log';
-            woodBlockStripped = 'autumnity:stripped_maple_wood';
-            plankBlock = 'autumnity:maple_planks';
             break;
         case 'driftwood':
             woodBlock = modId + ':' + logType;

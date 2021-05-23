@@ -1165,13 +1165,6 @@ const dyeSources = [
         tertiary: 'minecraft:lime_dye'
     },
     {
-        input: 'autumnity:autumn_crocus',
-        type: 'small',
-        primary: 'minecraft:magenta_dye',
-        secondary: 'minecraft:pink_dye',
-        tertiary: 'minecraft:lime_dye'
-    },
-    {
         input: 'betterendforge:hydralux_petal',
         type: 'small',
         primary: 'minecraft:white_dye',
