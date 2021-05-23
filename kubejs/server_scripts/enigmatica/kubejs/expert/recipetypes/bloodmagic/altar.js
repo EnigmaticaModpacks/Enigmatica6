@@ -109,7 +109,7 @@ events.listen('recipes', (event) => {
                 altarLevel: 3,
                 consumptionRate: 30,
                 drainRate: 50,
-                id: 'altar:masterbloodorb'
+                id: 'bloodmagic:altar/masterbloodorb'
             }
         ]
     };
