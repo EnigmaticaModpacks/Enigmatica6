@@ -65,12 +65,6 @@ events.listen('recipes', (event) => {
 
         'astralsorcery:infuser/gold_ore',
 
-        'autumnity:turkey_piece',
-        'autumnity:syrup_bottle',
-        'autumnity:syrup_bottle_from_smoking',
-        'autumnity:syrup_bottle_from_campfire_cooking',
-        'autumnity:sugar_from_sap_bottle',
-
         'bloodmagic:smelting/ingot_netherite_scrap',
 
         'botania:fertilizer_dye',

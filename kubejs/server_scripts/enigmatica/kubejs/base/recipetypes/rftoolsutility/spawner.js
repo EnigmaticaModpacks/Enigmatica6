@@ -544,20 +544,6 @@ events.listen('recipes', (event) => {
                 base: substrates.alien
             },
 
-            /// Autumnity
-            {
-                entity: 'autumnity:turkey',
-                size: sizes.medium,
-                special: { item: 'minecraft:feather' },
-                base: substrates.basic
-            },
-            {
-                entity: 'autumnity:snail',
-                size: sizes.small,
-                special: { item: 'autumnity:snail_slime' },
-                base: substrates.basic
-            },
-
             /// Upgrade Aquatic
             {
                 entity: 'upgrade_aquatic:flare',
