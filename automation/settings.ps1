@@ -130,7 +130,12 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"upgrade_aquatic-client.toml",
 	"xnet-client.toml",
 	"findme-client.toml",
-	"PregenConfig.toml"
+	"PregenConfig.toml",
+	"sounddeviceoptions-client.toml",
+	"personality-client.toml",
+	"miniutilities-client.toml",
+	"twilightforest-client.toml",
+	"framedblocks-client.toml"
 )
 
 #=====================================================================//
