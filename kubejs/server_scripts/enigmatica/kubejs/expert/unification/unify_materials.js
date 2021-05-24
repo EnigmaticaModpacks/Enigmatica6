@@ -264,7 +264,10 @@ events.listen('recipes', (event) => {
         // Step Two: Zap!
         event.custom({
             type: 'interactio:item_lightning',
-            inputs: [Ingredient.of(zapping_input).toJson(), Ingredient.of('#botania:runes/asgard').toJson()],
+            inputs: [
+                Ingredient.of(zapping_input).toJson(),
+                { tag: 'botania:runes/asgard', count: 1, return_chance: 0.5 }
+            ],
             output: {
                 entries: [
                     { result: { item: fulminated_cluster, count: 1 }, weight: 10 },
