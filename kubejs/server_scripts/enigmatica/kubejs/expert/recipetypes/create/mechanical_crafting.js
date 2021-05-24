@@ -46,6 +46,17 @@ events.listen('recipes', (event) => {
                 O: 'create:brass_casing',
                 P: 'immersiveengineering:furnace_heater'
             }
+        },
+        {
+            output: Item.of('immersiveengineering:blastbrick', 9),
+            pattern: ['ADA', 'CBC', 'ACA'],
+            key: {
+                C: 'quark:soul_sandstone_bricks',
+                B: 'minecraft:blast_furnace',
+                A: 'minecraft:red_nether_bricks',
+                D: 'thermal:fire_tnt'
+            },
+            id: 'immersiveengineering:crafting/blastbrick'
         }
     ];
 
