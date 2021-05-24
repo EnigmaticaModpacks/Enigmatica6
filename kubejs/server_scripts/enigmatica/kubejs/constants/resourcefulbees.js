@@ -38,7 +38,19 @@ const validApiaryBlocks = [
 
     /botania:\w+grass$/,
 
-    '#forge:treated_wood'
+    '#forge:treated_wood',
+
+    /engineersdecor:dense\w+/,
+    'engineersdecor:clinker_brick_block',
+    'engineersdecor:clinker_brick_stained_block',
+    'engineersdecor:clinker_brick_sastor_corner_block',
+    'engineersdecor:slag_brick_block',
+    'engineersdecor:rebar_concrete',
+    'engineersdecor:rebar_concrete_tile',
+    'engineersdecor:gas_concrete',
+    'engineersdecor:rebar_concrete',
+    'engineersdecor:dark_shingle_roof_block',
+    'engineersdecor:old_industrial_wood_planks'
 ];
 
 const honeyVarieties = [
