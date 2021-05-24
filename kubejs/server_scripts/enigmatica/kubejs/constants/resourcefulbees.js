@@ -21,7 +21,24 @@ const validApiaryBlocks = [
     /minecraft:(|\w+)terracotta$/,
 
     'minecraft:soul_sand',
-    '#minecraft:stone_bricks'
+    '#minecraft:stone_bricks',
+
+    '#enigmatica:stonecuttables',
+
+    /bloodmagic:\w+rune$/,
+    /bloodmagic:(|\w+)ritualstone$/,
+    /bloodmagic:\w+path$/,
+    'bloodmagic:largebloodstonebrick',
+    'bloodmagic:bloodstonebrick',
+    'bloodmagic:dungeon_brick1',
+    'bloodmagic:dungeon_brick2',
+    'bloodmagic:dungeon_brick3',
+    'bloodmagic:dungeon_smallbrick',
+    'bloodmagic:dungeon_brick_assorted',
+
+    /botania:\w+grass$/,
+
+    '#forge:treated_wood'
 ];
 
 const honeyVarieties = [
