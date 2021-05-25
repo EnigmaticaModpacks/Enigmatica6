@@ -33,15 +33,13 @@ events.listen('recipes', (event) => {
     ];
 
     honeyVarieties.forEach((honeyVariety) => {
-        let output = `${honeyVariety}_bottle`,
-            honey = honeyVariety.split(':')[1];
-        if (honeyVariety == 'resourcefulbees:honey') {
-            output = 'minecraft:honey_bottle';
-        }
+        let honey = honeyVariety.split(':')[1];
         recipes.push({
             input: Item.of('minecraft:glass_bottle'),
             fluid: Fluid.of(honeyVariety, 250),
-            output: Item.of(output),
+            output: Item.of(
+                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_bottle' : `${honeyVariety}_bottle`
+            ),
             id: `thermal:machine/bottler/bottler_${honey}_bottle`
         });
     });

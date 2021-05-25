@@ -2,14 +2,10 @@ events.listen('recipes', (event) => {
     const recipes = [];
 
     honeyVarieties.forEach((honeyVariety) => {
-        let input = `${honeyVariety}_block`,
-            honey = honeyVariety.split(':')[1];
-        if (honeyVariety == 'resourcefulbees:honey') {
-            input = 'minecraft:honey_block';
-        }
+        let honey = honeyVariety.split(':')[1];
         recipes.push({
             output: Fluid.of(honeyVariety, 1000),
-            input: Item.of(input),
+            input: Item.of(honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_block' : `${honeyVariety}_block`),
             energy: 2000,
             id: `thermal:machine/crucible/crucible_${honey}_block_to_${honey}`
         });
