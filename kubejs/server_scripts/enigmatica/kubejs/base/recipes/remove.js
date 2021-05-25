@@ -131,7 +131,6 @@ events.listen('recipes', (event) => {
         'immersivepetroleum:distillationtower/oilcracking',
 
         'mekanism:crushing/stone/to_cobblestone',
-        'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
