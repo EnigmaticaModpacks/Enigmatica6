@@ -814,7 +814,7 @@ events.listen('recipes', (event) => {
                         type: 'minecraft:worldgen/biome',
                         values: nether_end_biomes
                     },
-                    depth_min: 0,
+                    depth_min: 10,
                     depth_max: 255,
                     weight: 1
                 }

@@ -1,6 +1,6 @@
 {
-    "flower": "tag:minecraft:flowers",
-    "maxTimeInHive": 4800,
+    "flower": "undergarden:blood_mushroom",
+    "maxTimeInHive": 6000,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
     "ColorData": {
@@ -11,12 +11,33 @@
     },
     "CombatData": {
         "isPassive": false,
-        "removeStingerOnAttack": true,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
-        "attackDamage": 1
+        "attackDamage": 3
     },
-    "MutationData": {"hasMutation": false},
-    "CentrifugeData": {"hasCentrifugeOutput": false},
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:water",
+                "outputs": [{ "outputID": "bloodmagic:life_essence_fluid", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "bloodmagic:slate_ampoule",
+        "mainOutputWeight": 0.10,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "bloodmagic:blankslate",
+        "secondaryOutputWeight": 0.03,
+        "secondaryOutputCount": 1,
+
+        "mainInputCount": 1
+    },
     "SpawnData": {"canSpawnInWorld": false},
     "BreedData": {"isBreedable": false},
     "TraitData": {"hasTraits": true}
