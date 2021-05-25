@@ -1060,7 +1060,7 @@
 		{
 			title: "Tools and Armor",
 			x: -5.5d,
-			y: -12.0d,
+			y: -11.0d,
 			shape: "gear",
 			description: [
 				"Many mods add a variety of very useful tools that can be easy to overlook. These quests won't cover everything, but will serve to highlight some of the more notable mentions.",
@@ -1155,37 +1155,6 @@
 					player_command: false
 				}
 			]
-		},
-		{
-			x: -10.5d,
-			y: -13.0d,
-			subtitle: "This Little Light of Mine",
-			description: [
-				"A dream come true for any beginning spelunker.",
-				"",
-				"The Mining Helmet doesn't stop mobs from spawning, but it will give you that extra little bit of light to help spot those precious shiney blue rocks."
-			],
-			dependencies: ["000000000000046E"],
-			id: "0000000000000461",
-			tasks: [{
-				id: "0000000000000462",
-				type: "item",
-				item: {
-					id: "mining_helmet:mining_helmet",
-					Count: 1b,
-					tag: {
-						Damage: 0
-					}
-				}
-			}],
-			rewards: [{
-				id: "0000000000000A6E",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
-				player_command: false
-			}]
 		},
 		{
 			title: "Fortune Laser Upgrade (Tier 3)",
@@ -1578,57 +1547,6 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
 				player_command: false
 			}]
-		},
-		{
-			title: "Excavators and Hammers",
-			icon: {
-				id: "vanillahammers:netherite_hammer",
-				Count: 1b,
-				tag: {
-					Damage: 0
-				}
-			},
-			x: -10.0d,
-			y: -12.0d,
-			description: ["Vanilla Hammers and Excavators offers 3x3 mining tools that deal with both stone and dirt type blocks. They make an excellent way to speed up early mining endeavours."],
-			id: "0000000000000484",
-			tasks: [{
-				id: "0000000000000485",
-				type: "item",
-				title: "Any morevanillalib:tools",
-				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
-					tag: {
-						value: "morevanillalib:tools"
-					}
-				}
-			}],
-			rewards: [
-				{
-					id: "000000000000067A",
-					type: "item",
-					title: "Unbreaking V",
-					item: {
-						id: "minecraft:enchanted_book",
-						Count: 1b,
-						tag: {
-							StoredEnchantments: [{
-								lvl: 5s,
-								id: "minecraft:unbreaking"
-							}]
-						}
-					}
-				},
-				{
-					id: "0000000000000A6F",
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
-					player_command: false
-				}
-			]
 		},
 		{
 			title: "Archmage's Arcana",
@@ -2869,8 +2787,8 @@
 			}]
 		},
 		{
-			x: -7.0d,
-			y: -11.0d,
+			x: -10.0d,
+			y: -12.0d,
 			subtitle: "Head in the Clouds",
 			description: [
 				"Ever wish you could start building a platform in the sky without having to nerd-pole your way up there? ",
@@ -2895,8 +2813,8 @@
 			}]
 		},
 		{
-			x: -4.0d,
-			y: -11.0d,
+			x: -10.5d,
+			y: -13.0d,
 			subtitle: "Just to Spend it With You...",
 			description: [
 				"Save every day like a treasure and spend them on whatever you like.",

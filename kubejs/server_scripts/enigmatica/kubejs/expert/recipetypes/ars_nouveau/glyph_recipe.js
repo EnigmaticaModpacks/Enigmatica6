@@ -34,7 +34,7 @@ events.listen('recipes', (event) => {
             id: 'ars_nouveau:glyph_conjure_water'
         },
         {
-            input: 'vanillahammers:iron_hammer',
+            input: 'emendatusenigmatica:enigmatic_hammer',
             output: 'ars_nouveau:glyph_crush',
             tier: 'TWO',
             id: 'ars_nouveau:glyph_crush'

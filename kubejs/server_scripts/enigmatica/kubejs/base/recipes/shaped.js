@@ -290,7 +290,7 @@ events.listen('recipes', (event) => {
         {
             // Add Blaze + Coal Comb -> Lava Bucket Recipe
             output: 'minecraft:lava_bucket',
-            pattern: ['BCB', 'CAC', 'BCB'],
+            pattern: ['BDB', 'CAC', 'BDB'],
             key: {
                 D: 'resourcefulbees:blaze_honeycomb',
                 C: 'resourcefulbees:coal_honeycomb',
@@ -477,7 +477,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: '#forge:eggs',
-                D: '#forge:pumpkins'
+                D: 'minecraft:pumpkin'
             },
             id: 'minecraft:pumpkin_pie'
         },
@@ -499,7 +499,7 @@ events.listen('recipes', (event) => {
         shapedRecipe('tetra:hammer_base', ['LXL', 'LCL', 'LXL'], {
             L: '#forge:ingots/steel',
             X: '#forge:circuits/basic',
-            C: '#morevanillalib:tools'
+            C: 'emendatusenigmatica:enigmatic_hammer'
         }),
         shapedRecipe('tetra:core_extractor', ['LXL', 'LCL', 'LXL'], {
             L: '#forge:ingots/steel',
