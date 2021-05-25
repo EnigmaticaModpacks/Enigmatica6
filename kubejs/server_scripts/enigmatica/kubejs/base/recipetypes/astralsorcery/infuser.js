@@ -60,7 +60,7 @@ events.listen('recipes', (event) => {
                 fluid: 'astralsorcery:liquid_starlight',
                 consumptionChance: 0.1,
                 output: 'astralsorcery:starmetal_ingot',
-                count: 1,
+                count: 3,
                 duration: 100
             },
             {
@@ -68,7 +68,7 @@ events.listen('recipes', (event) => {
                 fluid: 'astralsorcery:liquid_starlight',
                 consumptionChance: 0.1,
                 output: 'astralsorcery:starmetal',
-                count: 1,
+                count: 3,
                 duration: 100
             }
         ]
