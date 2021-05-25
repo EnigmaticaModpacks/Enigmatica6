@@ -4,6 +4,17 @@ events.listen('recipes', (event) => {
     }
     data = {
         recipes: [
+
+            /*{
+                input: 'input item here',
+                output: 'output item here',
+                syphon: 1000,                       //Recipe LP Cost
+                altarLevel: 0,                      //Altar Level is zero idexed
+                consumptionRate: 5,                 //How much LP is infused per operation
+                drainRate: 5,                       //How much LP is lost per operation when the altar is empty
+                id: 'input item here'
+            }*/
+
             {
                 input: 'eidolon:unholy_symbol',
                 output: 'bloodmagic:weakbloodorb',
