@@ -221,12 +221,12 @@ events.listen('recipes', (event) => {
             {
                 inputs: [
                     '#forge:gems/diamond',
-                    '#forge:gems/blaze',
+                    '#forge:rods/blaze',
                     '#forge:gems/diamond',
                     '#forge:gems/mana',
                     '#forge:gems/mana',
                     '#forge:gems/diamond',
-                    '#forge:gems/blaze',
+                    '#forge:rods/blaze',
                     '#forge:gems/diamond'
                 ],
                 reagent: 'ars_nouveau:ring_of_lesser_discount',
