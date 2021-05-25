@@ -147,7 +147,13 @@ var itemsToHide = [
     'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
-    'supplementaries:blackboard'
+    'supplementaries:blackboard',
+    'quark:bonded_ravager_hide',
+    'quark:ravager_hide',
+    'quark:backpack',
+    'quark:crate',
+    'quark:magnet',
+    'quark:soul_compass'
 ];
 
 var regexHide = [
@@ -203,7 +209,8 @@ var regexHide = [
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
     /betterendforge:\w+_anvil/,
-    /theoneprobe:/
+    /theoneprobe:/,
+    /upgrade_aquatic:\w+_jelly_torch/
 ];
 
 const disabledItems = [
