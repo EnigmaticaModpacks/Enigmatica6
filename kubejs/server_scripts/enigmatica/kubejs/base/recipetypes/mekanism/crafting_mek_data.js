@@ -123,7 +123,7 @@ events.listen('recipes', (event) => {
             output: 'mekanism:advanced_fluid_tank',
             pattern: ['AIA', 'IPI', 'AIA'],
             key: {
-                P: { item: 'mekanism:advanced_fluid_tank' },
+                P: { item: 'mekanism:basic_fluid_tank' },
                 I: { tag: 'forge:ingots/iron_aluminum' },
                 A: { tag: 'mekanism:alloys/infused' }
             },
@@ -133,7 +133,7 @@ events.listen('recipes', (event) => {
             output: 'mekanism:elite_fluid_tank',
             pattern: ['AIA', 'IPI', 'AIA'],
             key: {
-                P: { item: 'mekanism:elite_fluid_tank' },
+                P: { item: 'mekanism:advanced_fluid_tank' },
                 I: { tag: 'forge:ingots/iron_aluminum' },
                 A: { tag: 'mekanism:alloys/reinforced' }
             },
@@ -143,7 +143,7 @@ events.listen('recipes', (event) => {
             output: 'mekanism:ultimate_fluid_tank',
             pattern: ['AIA', 'IPI', 'AIA'],
             key: {
-                P: { item: 'mekanism:ultimate_fluid_tank' },
+                P: { item: 'mekanism:elite_fluid_tank' },
                 I: { tag: 'forge:ingots/iron_aluminum' },
                 A: { tag: 'mekanism:alloys/atomic' }
             },
