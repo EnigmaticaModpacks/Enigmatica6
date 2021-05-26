@@ -22,7 +22,7 @@
       "variance": 0
     },
     "dimensions": {
-      "nether": "byg:world",
+      "nether": "default",
       "end": "betterendforge:world_type",
       "includeExtraDimensions": true
     }
@@ -34,7 +34,7 @@
       "count": 128,
       "salt": 0,
       "constrainToBiomes": false,
-      "disabled": false
+      "disabled": true
     },
     "structures": {
       "astralsorcery:ancient_shrine": {
@@ -560,7 +560,7 @@
     "properties": {
       "spawnType": "CONTINENT_CENTER",
       "worldHeight": 256,
-      "seaLevel": 56
+      "seaLevel": 58
     }
   },
   "climate": {
@@ -678,7 +678,7 @@
       "fade": 0.703
     },
     "lakes": {
-      "chance": 0.25,
+      "chance": 0.349,
       "minStartDistance": 0.0,
       "maxStartDistance": 0.126,
       "depth": 12,
