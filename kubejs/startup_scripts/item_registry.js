@@ -12,7 +12,8 @@ events.listen('item.registry', (event) => {
         'quintuple_alfsteel_ingot',
         'altered_recipe_indicator',
         'observatory_lens',
-        'syrup_bottle'
+        'syrup_bottle',
+        'disabled_recipe_indicator'
     ];
 
     generalItems.forEach((item) => {
