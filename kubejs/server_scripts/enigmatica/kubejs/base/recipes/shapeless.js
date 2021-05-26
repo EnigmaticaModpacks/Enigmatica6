@@ -300,6 +300,16 @@ events.listen('recipes', (event) => {
                 '#forge:dusts/redstone'
             ],
             id: 'emendatusenigmatica:alloy_dust/signalum'
+        },
+        {
+            output: 'mythicbotany:raindeletia_floating',
+            inputs: ['kubejs:disabled_recipe_indicator'],
+            id: 'mythicbotany:raindeletia_floating'
+        },
+        {
+            output: 'mythicbotany:wither_aconite_floating',
+            inputs: ['kubejs:disabled_recipe_indicator'],
+            id: 'mythicbotany:wither_aconite_floating'
         }
     ];
 
