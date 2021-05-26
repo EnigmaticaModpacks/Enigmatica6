@@ -7,7 +7,8 @@ events.listen('item.tags', (event) => {
             'astralsorcery:marble_chiseled',
             'astralsorcery:marble_engraved',
             'astralsorcery:marble_raw',
-            'astralsorcery:marble_runed'
+            'astralsorcery:marble_runed',
+            'create:natural_scoria'
         ]);
     event
         .get('forge:stones/basalt')
@@ -18,16 +19,14 @@ events.listen('item.tags', (event) => {
             'quark:basalt_pillar',
             'quark:polished_basalt',
             'quark:basalt_bricks',
-            'minecraft:basalt',
-            'embellishcraft:basalt'
+            'minecraft:basalt'
         ]);
-    event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate', 'embellishcraft:slate']);
+    event.get('forge:stones/slate').add(['quark:slate', 'quark:polished_slate']);
     event
         .get('forge:stones/marble')
         .add([
             'quark:marble',
             'quark:polished_marble',
-            'embellishcraft:marble',
             'astralsorcery:marble_arch',
             'astralsorcery:marble_bricks',
             'astralsorcery:marble_chiseled',

@@ -1,0 +1,70 @@
+{
+    "flower": "ALL",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["slimy", "can_swim"],
+    "baseLayerTexture": "slime/slime_bee",
+    "ColorData": {
+        "honeycombColor": "#73c262",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "GELATINOUS"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:honey_block",
+                "outputs": [{ "outputID": "minecraft:slime_block", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:slime_ball",
+        "mainOutputWeight": 0.6,
+        "mainOutputCount": 4,
+
+        "secondaryOutput": "refinedstorage:processor_binding",
+        "secondaryOutputWeight": 0.02,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "minecraft:honey_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "spawnWeight": 12,
+        "biomeWhitelist": "tag:SWAMP",
+        "biomeBlacklist": "tag:NETHER,END",
+        "minGroupSize": 2,
+        "maxGroupSize": 3,
+        "minYLevel": 60,
+        "maxYLevel": 250,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "tag:forge:slime_block",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

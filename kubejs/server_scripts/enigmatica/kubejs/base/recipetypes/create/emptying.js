@@ -1,36 +1,28 @@
 events.listen('recipes', (event) => {
-    honeyVarieties.forEach((honeyVariety) => {
-        if (honeyVariety == 'resourcefulbees:honey') {
-            return;
+    const recipes = [
+        {
+            input: 'farmersdelight:milk_bottle',
+            container: 'minecraft:glass_bottle',
+            fluid: Fluid.of('minecraft:milk', 250)
         }
+    ];
 
-        event.recipes.create.emptying(
-            [Fluid.of(honeyVariety, 250), Item.of('minecraft:glass_bottle')],
-            Item.of(honeyVariety + '_bottle')
-        );
+    honeyVarieties.forEach((honeyVariety) => {
+        let honey = honeyVariety.split(':')[1];
+        recipes.push({
+            input: Item.of(
+                honeyVariety == 'resourcefulbees:honey' ? 'minecraft:honey_bottle' : `${honeyVariety}_bottle`
+            ),
+            container: Item.of('minecraft:glass_bottle'),
+            fluid: Fluid.of(honeyVariety, 250),
+            id: `create:emptying/${honey}_bottle`
+        });
     });
 
-    var data = {
-        recipes: [
-        	{
-        		input: 'farmersdelight:milk_bottle',
-        		container: 'minecraft:glass_bottle',
-        		fluid: Fluid.of('minecraft:milk', 250)
-        	},
-        	{
-        		input: 'autumnity:syrup_bottle',
-        		container: 'minecraft:glass_bottle',
-        		fluid: Fluid.of('thermal:syrup', 25)
-        	},
-        	{
-        		input: 'autumnity:sap_bottle',
-        		container: 'minecraft:glass_bottle',
-        		fluid: Fluid.of('thermal:sap', 500)
-        	}
-        ]
-    };
-
-    data.recipes.forEach((recipe) => {
-        event.recipes.create.emptying([recipe.fluid, recipe.container], recipe.input);
+    recipes.forEach((recipe) => {
+        const re = event.recipes.create.emptying([recipe.fluid, recipe.container], recipe.input);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

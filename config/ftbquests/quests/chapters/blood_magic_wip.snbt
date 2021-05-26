@@ -1,10 +1,11 @@
 {
 	id: "0000000000000895",
-	group: "",
-	order_index: 27,
+	group: "5A8B89F87F77CF4C",
+	order_index: 3,
 	filename: "blood_magic_wip",
 	title: "Blood Magic",
 	icon: "bloodmagic:weakbloodshard",
+	subtitle: ["This is a good idea"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -51,7 +52,7 @@
 			y: 3.0d,
 			subtitle: "The Void Stares Back",
 			description: [
-				"Despite the name of the mod, simply going out and slaughtering wontonly is exactly the wrong way to go about gathering LP. This is a process that requires finesse... precision. Your vict... Donor might need to be held down.",
+				"Despite the name of the mod, simply going out and slaughtering wantonly is exactly the wrong way to go about gathering LP. This is a process that requires finesse... precision. Your vict... Donor might need to be held down.",
 				"",
 				"Throw Soul Snares at mobs until potion particles appear around them, then proceed with the kill. With the target snared, Demonic Will may be extracted as the creature's life force passes.",
 				"",
@@ -65,13 +66,14 @@
 				item: {
 					id: "bloodmagic:basemonstersoul",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [
 				{
 					id: "000000000000089D",
 					type: "item",
+					title: "Demon Will",
 					item: {
 						id: "bloodmagic:basemonstersoul",
 						Count: 1b,
@@ -99,7 +101,7 @@
 				"",
 				"It also serves as the basis for fueling your Soul Network, an ethereal web of souls that may be tapped into from anywhere.",
 				"",
-				"More fundamentally, the Altar will serve as a recepticle for transmuting objects with stored LP. To begin filling it, use the provided knife near it to drain some of your own blood into the Altar. ",
+				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use the provided knife near it to drain some of your own blood into the Altar. ",
 				"",
 				"Once it is full, right click an item into the Altar to begin the transmutation process. Red particles mean the craft is proceeding normally, whereas grey particles mean there's not enough LP and the craft is losing progress. ",
 				"",
@@ -117,6 +119,7 @@
 				{
 					id: "00000000000008C1",
 					type: "item",
+					title: "Sacrificial Knife",
 					item: {
 						id: "bloodmagic:sacrificialdagger",
 						Count: 1b,
@@ -160,6 +163,7 @@
 			rewards: [{
 				id: "000000000000090B",
 				type: "item",
+				title: "Sigil of the Blood Lamp",
 				item: "bloodmagic:bloodlightsigil"
 			}]
 		},
@@ -190,6 +194,7 @@
 				{
 					id: "00000000000008A5",
 					type: "item",
+					title: "Sentient Pickaxe",
 					item: {
 						id: "bloodmagic:soulpickaxe",
 						Count: 1b,
@@ -229,7 +234,7 @@
 				item: {
 					id: "bloodmagic:soulgempetty",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{
@@ -299,23 +304,27 @@
 				{
 					id: "00000000000008BB",
 					type: "item",
+					title: "Low Filter Module",
 					item: "prettypipes:low_filter_module"
 				},
 				{
 					id: "00000000000008BC",
 					type: "item",
+					title: "Low Extraction Module",
 					item: "prettypipes:low_extraction_module",
 					count: 2
 				},
 				{
 					id: "00000000000008BD",
 					type: "item",
+					title: "Stack Limiter Module",
 					item: "prettypipes:stack_size_module",
 					count: 2
 				},
 				{
 					id: "00000000000008BE",
 					type: "item",
+					title: "Pipe",
 					item: "prettypipes:pipe",
 					count: 4
 				}
@@ -340,6 +349,7 @@
 			rewards: [{
 				id: "00000000000008C3",
 				type: "item",
+				title: "Charm of Regeneration II",
 				item: {
 					id: "apotheosis:potion_charm",
 					Count: 1b,
@@ -359,7 +369,7 @@
 			description: [
 				"With a few slates to craft into Blank Runes, the Altar can be augmented, increasing its capacity, transmutational abilities, and even allowing for specializations. ",
 				"",
-				"To upgrade to a Tier 2 Altar, 8 Runes of any type are required. The Sanguine Scietiem shows the exact structure required. Use the provided Speed runes to fill out the structure and give it a little kick. ",
+				"To upgrade to a Tier 2 Altar, 8 Runes of any type are required. The Sanguine Scientiem shows the exact structure required. Use the provided Speed runes to fill out the structure and give it a little kick. ",
 				"",
 				"Be sure to upgrade your Blood Orb as well. "
 			],
@@ -374,6 +384,7 @@
 			rewards: [{
 				id: "00000000000008C6",
 				type: "item",
+				title: "Speed Rune",
 				item: "bloodmagic:speedrune",
 				count: 2
 			}]
@@ -411,12 +422,14 @@
 				{
 					id: "00000000000008CB",
 					type: "item",
+					title: "Sea Lantern",
 					item: "minecraft:sea_lantern",
 					count: 4
 				},
 				{
 					id: "00000000000008DA",
 					type: "item",
+					title: "Rune of Sacrifice",
 					item: "bloodmagic:sacrificerune",
 					count: 4
 				}
@@ -565,6 +578,7 @@
 			rewards: [{
 				id: "00000000000008EC",
 				type: "item",
+				title: "Rune of Capacity",
 				item: "bloodmagic:altarcapacityrune",
 				count: 8
 			}]
@@ -618,7 +632,7 @@
 			y: 7.0d,
 			subtitle: "Out of the Frying Pan, Into the Fire",
 			description: [
-				"Though keeping Demonic Will locked up is advised, an experienced Sanuimancer may choose to release some into the environment in order to refine it further. ",
+				"Though keeping Demonic Will locked up is advised, an experienced Sanguimancer may choose to release some into the environment in order to refine it further. ",
 				"",
 				"Placing a Tartaric Gem into a Demon Crucible will release the Will, binding it to the local chunk. The amount of will present may be seen with the aid of a Demon Will Aura Gauge. ",
 				"",
@@ -637,6 +651,7 @@
 			rewards: [{
 				id: "00000000000008F5",
 				type: "item",
+				title: "Demon Will Gauge",
 				item: "bloodmagic:demonwillgauge"
 			}]
 		},
@@ -738,6 +753,7 @@
 			rewards: [{
 				id: "00000000000009B1",
 				type: "item",
+				title: "Demon Will Crystal",
 				item: "bloodmagic:defaultcrystal",
 				count: 32
 			}]
@@ -864,7 +880,7 @@
 			description: [
 				"The Incense Altar serves to help calm and center a Sanguimancer prior to using the Sacrificial Knife for self-sacrifice. Standing near the altar will cause the knife to glow. It may then be used to draw a larger portion of health instantly, filling the Blood Alter with an equivalent amount of LP. ",
 				"",
-				"Refer to the Sanguine Scientem for more information on expanding the Incense Altar, increasing its effect. "
+				"Refer to the Sanguine Scientiem for more information on expanding the Incense Altar, increasing its effect. "
 			],
 			dependencies: ["000000000000089F"],
 			id: "000000000000090E",
@@ -884,6 +900,7 @@
 			rewards: [{
 				id: "0000000000000919",
 				type: "item",
+				title: "Divination Sigil",
 				item: "bloodmagic:divinationsigil"
 			}]
 		}

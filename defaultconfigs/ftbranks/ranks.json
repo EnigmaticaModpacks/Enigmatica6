@@ -1,23 +1,29 @@
 {
-  "member": {
-    "name": "Member",
-    "power": 1,
-    "condition": {
-      "type": "always_active"
+    "member": {
+        "name": "Member",
+        "power": 1,
+        "condition": {
+            "type": "always_active"
+        },
+        "ftbranks.name_format": "<{name}>",
+        "ftbchunks.max_claimed": 100,
+        "ftbchunks.max_force_loaded": 5,
+        "command.back": false,
+        "command.warp": false,
+        "command.setwarp": false,
+        "command.delwarp": false,
+        "command.listwarps": false,
+        "command.home": false,
+        "command.sethome": false,
+        "command.delhome": false,
+        "command.listhome": false
     },
-    "ftbranks.name_format": "<{name}>"
-  },
-  "vip": {
-    "name": "VIP",
-    "power": 50,
-    "ftbranks.name_format": "<&bVIP {name}&r>"
-  },
-  "admin": {
-    "name": "Admin",
-    "power": 1000,
-    "condition": {
-      "type": "op"
-    },
-    "ftbranks.name_format": "<&2{name}&r>"
-  }
+    "admin": {
+        "name": "Admin",
+        "power": 1000,
+        "condition": {
+            "type": "op"
+        },
+        "ftbranks.name_format": "<&2{name}&r>"
+    }
 }

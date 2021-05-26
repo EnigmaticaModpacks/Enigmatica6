@@ -1,10 +1,11 @@
 {
 	id: "0000000000000240",
-	group: "",
-	order_index: 14,
+	group: "0856CF7F5CBEB20A",
+	order_index: 1,
 	filename: "refined_storage",
 	title: "Refined Storage",
 	icon: "refinedstorage:controller",
+	subtitle: ["An elegant solution to your piles of barrels"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -25,18 +26,21 @@
 				{
 					id: "000000000000027A",
 					type: "item",
+					title: "Slimeball",
 					item: "minecraft:slime_ball",
 					count: 4
 				},
 				{
 					id: "000000000000027B",
 					type: "item",
+					title: "String",
 					item: "minecraft:string",
 					count: 4
 				},
 				{
 					id: "0000000000000F4D",
 					type: "item",
+					title: "Wrench",
 					item: "refinedstorage:wrench"
 				}
 			]
@@ -70,6 +74,7 @@
 			rewards: [{
 				id: "00000000000005AF",
 				type: "item",
+				title: "Quartz Enriched Iron",
 				item: "refinedstorage:quartz_enriched_iron",
 				count: 16
 			}]
@@ -102,6 +107,7 @@
 			rewards: [{
 				id: "00000000000005B0",
 				type: "item",
+				title: "Cable",
 				item: "refinedstorage:cable",
 				count: 16
 			}]
@@ -169,6 +175,7 @@
 				{
 					id: "00000000000005BD",
 					type: "item",
+					title: "Storage Housing",
 					item: "refinedstorage:storage_housing",
 					count: 2
 				}
@@ -214,6 +221,7 @@
 			rewards: [{
 				id: "00000000000005BB",
 				type: "item",
+				title: "256k Fluid Storage Part",
 				item: "refinedstorage:256k_fluid_storage_part"
 			}]
 		},
@@ -262,6 +270,7 @@
 			rewards: [{
 				id: "00000000000005BF",
 				type: "item",
+				title: "Advanced Bin",
 				item: "mekanism:advanced_bin"
 			}]
 		},
@@ -281,6 +290,7 @@
 			rewards: [{
 				id: "00000000000005BE",
 				type: "item",
+				title: "Cable",
 				item: "refinedstorage:cable",
 				count: 8
 			}]
@@ -304,6 +314,7 @@
 			rewards: [{
 				id: "00000000000005C0",
 				type: "item",
+				title: "Storage Housing",
 				item: "refinedstorage:storage_housing",
 				count: 4
 			}]
@@ -323,6 +334,7 @@
 			rewards: [{
 				id: "00000000000005C2",
 				type: "item",
+				title: "256k Fluid Storage Part",
 				item: "refinedstorage:256k_fluid_storage_part",
 				count: 2
 			}]
@@ -401,6 +413,7 @@
 			rewards: [{
 				id: "00000000000005C4",
 				type: "item",
+				title: "Ender Pearl",
 				item: "minecraft:ender_pearl",
 				count: 4
 			}]
@@ -495,6 +508,7 @@
 			rewards: [{
 				id: "00000000000005B5",
 				type: "item",
+				title: "Speed Upgrade",
 				item: "refinedstorage:speed_upgrade",
 				count: 2
 			}]
@@ -552,7 +566,7 @@
 			description: [
 				"The Interface, like the Importer and Exporter, is a device that handles network input/output. Unlike the Importer and Exporter, it does not push or pull items to/from adjacent inventories.",
 				"",
-				'The Interface is most useful as a simple (and perhaps less laggy) alternative to the Importer when the external item source can handle the "pushing" itself, e.g. depositing items in the Interface with a coneyor belt.'
+				'The Interface is most useful as a simple (and perhaps less laggy) alternative to the Importer when the external item source can handle the "pushing" itself, e.g. depositing items in the Interface with a conveyor belt.'
 			],
 			dependencies: ["000000000000025F"],
 			id: "0000000000000298",
@@ -564,6 +578,7 @@
 			rewards: [{
 				id: "00000000000005B9",
 				type: "item",
+				title: "Interface",
 				item: "refinedstorage:interface"
 			}]
 		},
@@ -717,7 +732,79 @@
 			rewards: [{
 				id: "0000000000000F4E",
 				type: "item",
+				title: "Crafter",
 				item: "refinedstorage:crafter"
+			}]
+		},
+		{
+			x: 5.0d,
+			y: 9.5d,
+			subtitle: "Living Large",
+			description: [
+				"Enjoy the mobility to build anywhere (almost) with a fancy new Infinity Range Booster!",
+				"",
+				"Only one card is required."
+			],
+			dependencies: ["000000000000026E"],
+			id: "2306493F2E5034A9",
+			tasks: [{
+				id: "6F47C4273FB03E51",
+				type: "item",
+				item: "rsinfinitybooster:infinity_card"
+			}],
+			rewards: [{
+				id: "20EF5FBDB4D844CB",
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: 3.5d,
+			y: 9.5d,
+			subtitle: "Moving Abroad",
+			description: [
+				"Perfect for that Summer home in the Ivis Fields.",
+				"",
+				"This replaces the Infinity Booster, allowing limitless range even across dimensions."
+			],
+			dependencies: ["2306493F2E5034A9"],
+			id: "005B9AE555D13DE7",
+			tasks: [{
+				id: "7AFFE72DF5E94D4F",
+				type: "item",
+				item: "rsinfinitybooster:dimension_card"
+			}],
+			rewards: [{
+				id: "3E28C6692FC99AEB",
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
+			}]
+		},
+		{
+			x: -2.0d,
+			y: 9.5d,
+			subtitle: "You Want How Many?",
+			description: ["An Interface with a Crafting card is pretty good at keeping a small amount of several items in stock, but what if we need to go bigger? Well, now we can. The Requester is an addon block that allows Refined Storage to keep an internal stock of a given item at all times. Want 5000 glass ready and waiting for you? Set up a Requester to do just that. "],
+			dependencies: ["0000000000000298"],
+			id: "5DA4C492523C7D72",
+			tasks: [{
+				id: "34568F90E5706133",
+				type: "item",
+				item: "rsrequestify:requester"
+			}],
+			rewards: [{
+				id: "504B58199A20F9B0",
+				type: "command",
+				title: "Refined Storage Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_refined_storage_loot",
+				player_command: false
 			}]
 		}
 	]

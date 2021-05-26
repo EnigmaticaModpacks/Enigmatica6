@@ -2,84 +2,116 @@ events.listen('recipes', (event) => {
     var data = {
         recipes: [
             {
-                ingredients: ['emendatusenigmatica:arcane_gem', 'naturesaura:gold_leaf'],
+                inputs: ['emendatusenigmatica:arcane_gem', 'naturesaura:gold_leaf'],
                 entity: 'ars_nouveau:carbuncle',
                 aura: 100000,
                 time: 100
             },
             {
-                ingredients: ['emendatusenigmatica:arcane_gem', 'naturesaura:ancient_sapling'],
+                inputs: ['emendatusenigmatica:arcane_gem', 'naturesaura:ancient_sapling'],
                 entity: 'ars_nouveau:sylph',
                 aura: 100000,
                 time: 100
             },
             {
-                ingredients: ['minecraft:cod', 'minecraft:iron_bars'],
+                inputs: ['minecraft:cod', 'minecraft:iron_bars'],
                 entity: 'quark:crab',
                 aura: 30000,
                 time: 40
             },
             {
-                ingredients: ['minecraft:spider_eye', 'minecraft:lily_pad'],
+                inputs: ['minecraft:spider_eye', 'minecraft:lily_pad'],
                 entity: 'quark:frog',
                 aura: 30000,
                 time: 40
             },
             {
-                ingredients: ['minecraft:leather', 'minecraft:coal'],
+                inputs: ['minecraft:leather', 'minecraft:coal'],
                 entity: 'quark:foxhound',
                 aura: 150000,
                 time: 120
             },
             {
-                ingredients: ['thermal:blitz_rod', 'thermal:blitz_powder'],
-                entity: 'thermal:blitz',
-                aura: 150000,
-                time: 120
-            },
-            {
-                ingredients: ['thermal:blizz_rod', 'thermal:blizz_powder'],
-                entity: 'thermal:blizz',
-                aura: 150000,
-                time: 120
-            },
-            {
-                ingredients: ['thermal:basalz_rod', 'thermal:basalz_powder'],
-                entity: 'thermal:basalz',
-                aura: 150000,
-                time: 120
-            },
-            {
-                ingredients: ['minecraft:coarse_dirt', 'industrialforegoing:fertilizer'],
+                inputs: ['minecraft:coarse_dirt', 'industrialforegoing:fertilizer'],
                 entity: 'alexsmobs:cockroach',
                 aura: 30000,
                 time: 40
             },
             {
-                ingredients: ['minecraft:coarse_dirt', 'minecraft:brown_mushroom'],
+                inputs: ['minecraft:coarse_dirt', 'minecraft:brown_mushroom'],
                 entity: 'alexsmobs:cockroach',
                 aura: 150000,
                 time: 120
+            },
+            {
+                inputs: [
+                    'resourcefulbees:iron_bee_spawn_egg',
+                    'resourcefulbees:iron_honeycomb',
+                    'naturesaura:infused_iron_block'
+                ],
+                entity: 'resourcefulbees:infused_bee',
+                aura: 400000,
+                time: 320
+            },
+            {
+                inputs: [
+                    'resourcefulbees:gold_bee_spawn_egg',
+                    'resourcefulbees:gold_honeycomb',
+                    'naturesaura:tainted_gold_block'
+                ],
+                entity: 'resourcefulbees:tainted_bee',
+                aura: 500000,
+                time: 400
+            },
+            {
+                inputs: [
+                    'resourcefulbees:gold_bee_spawn_egg',
+                    'resourcefulbees:tainted_honeycomb',
+                    'naturesaura:sky_ingot'
+                ],
+                entity: 'resourcefulbees:sky_bee',
+                aura: 600000,
+                time: 480
+            },
+            {
+                inputs: ['farmersdelight:cabbage_leaf', 'simplefarming:lettuce', 'minecraft:carrot'],
+                entity: 'minecraft:rabbit',
+                aura: 30000,
+                time: 40,
+                id: 'naturesaura:animal_spawner/rabbit'
+            },
+            {
+                inputs: ['astralsorcery:nocturnal_powder'],
+                entity: 'minecraft:phantom',
+                aura: 200000,
+                time: 200,
+                id: 'naturesaura:animal_spawner/phantom'
+            },
+            {
+                inputs: ['minecraft:feather', 'minecraft:jungle_sapling'],
+                entity: 'minecraft:parrot',
+                aura: 50000,
+                time: 60,
+                id: 'naturesaura:animal_spawner/parrot'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.naturesaura.animal_spawner({
-            type: 'naturesaura.animal_spawner',
-            ingredients: [
-                {
-                    item: 'naturesaura:birth_spirit'
-                },
-                {
-                    item: recipe.ingredients[0]
-                },
-                {
-                    item: recipe.ingredients[1]
-                }
-            ],
+        let ingredients = [Ingredient.of('naturesaura:birth_spirit').toJson()];
+
+        recipe.inputs.forEach((input) => {
+            ingredients.push(Ingredient.of(input).toJson());
+        });
+
+        const re = event.custom({
+            type: 'naturesaura:animal_spawner',
+            ingredients: ingredients,
             entity: recipe.entity,
             aura: recipe.aura,
             time: recipe.time
         });
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

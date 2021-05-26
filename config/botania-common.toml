@@ -15,6 +15,7 @@ invertMagnetRing = false
 #List of modids to prioritize when choosing a random ore from the tag.
 #By default, the chosen ore is randomly picked from all ores in the ore's tag.
 #Ores from mods present on this list will be picked over mods listed lower or not listed at all.
+#Applying changes at runtime requires /reload afterwards.
 orechidPriorityMods = ["emendatusenigmatica", "minecraft", "immersiveengineering", "create", "mekanism", "jaopca", "kubejs", "refinedstorage", "pneumaticcraft", "occultism", "tmechworks", "industrialforegoing", "botania", "quark", "pedestals"]
 #Set this to false to disable mystical flower and mushroom worldgen. More fine-tuned customization should be done with datapacks.
 worldgen = true

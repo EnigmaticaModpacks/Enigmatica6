@@ -13,53 +13,8 @@ events.listen('recipes', (event) => {
                 input: 'create:limesand'
             },
             {
-                outputs: [
-                    Item.of('minecraft:quartz', 2),
-                    Item.of('minecraft:quartz').chance(0.25)
-                ],
-                input: 'byg:quartzite_sand'
-            },
-            {
-                outputs: [
-                    Item.of('upgrade_aquatic:driftwood_log')
-                ],
+                outputs: ['upgrade_aquatic:driftwood_log'],
                 input: '#minecraft:logs'
-            },
-            {
-                outputs: ['embellishcraft:rusty_wall_ladder'],
-                input: 'embellishcraft:steel_wall_ladder'
-            },
-            {
-                outputs: ['embellishcraft:rusty_rungs'],
-                input: 'embellishcraft:steel_rungs'
-            },
-            {
-                outputs: ['embellishcraft:rusty_suspended_stairs'],
-                input: 'embellishcraft:steel_suspended_stairs'
-            },
-            {
-                outputs: ['embellishcraft:rusty_door'],
-                input: 'embellishcraft:steel_door'
-            },
-            {
-                outputs: ['embellishcraft:sturdy_rusty_door'],
-                input: 'embellishcraft:sturdy_steel_door'
-            },
-            {
-                outputs: ['embellishcraft:warning_rusty_door'],
-                input: 'embellishcraft:warning_steel_door'
-            },
-            {
-                outputs: ['dustrial_decor:rusty_iron_nugget'],
-                input: '#forge:nuggets/iron'
-            },
-            {
-                outputs: ['dustrial_decor:rusty_iron_ingot'],
-                input: '#forge:ingots/iron'
-            },
-            {
-                outputs: ['dustrial_decor:rusty_iron_block'],
-                input: '#forge:storage_blocks/iron'
             },
             {
                 outputs: ['dustrial_decor:rusty_iron_door'],
@@ -68,6 +23,26 @@ events.listen('recipes', (event) => {
             {
                 outputs: ['dustrial_decor:rusty_iron_trapdoor'],
                 input: 'minecraft:iron_trapdoor'
+            },
+            {
+                outputs: [Item.of('minecraft:quartz').withChance(0.25), Item.of('minecraft:redstone').withChance(0.05)],
+                input: 'byg:quartzite_sand'
+            },
+            {
+                outputs: ['botanypots:botany_pot'],
+                input: '#enigmatica:washables/simplebotanypots'
+            },
+            {
+                outputs: ['botanypots:hopper_botany_pot'],
+                input: '#enigmatica:washables/hopperbotanypots'
+            },
+            {
+                outputs: ['minecraft:terracotta'],
+                input: '#enigmatica:washables/terracotta'
+            },
+            {
+                outputs: ['betterendforge:dense_snow'],
+                input: 'minecraft:snow_block'
             }
         ],
         rusty_items: [
@@ -88,10 +63,11 @@ events.listen('recipes', (event) => {
             'dustrial_decor:rusty_sheet_metal_door'
         ]
     };
-    
+
     data.recipes.forEach((recipe) => {
         event.recipes.create.splashing(recipe.outputs, recipe.input);
     });
+
     data.rusty_items.forEach((item) => {
         event.recipes.create.splashing([item], item.replace('rusty_', ''));
     });

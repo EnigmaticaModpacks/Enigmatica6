@@ -1,0 +1,114 @@
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 1,
+                "max": 2
+            },
+            "bonus_rolls": {
+                "min": 0,
+                "max": 2
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookcapacity",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:3s, id: \"pedestals:upgradecapacity\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookarea",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:3s, id: \"pedestals:upgradearea\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookrange",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:3s, id: \"pedestals:upgraderange\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 6,
+                    "name": "pedestals:bookspeed",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:3s, id: \"pedestals:upgradespeed\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "pedestals:bookcapacity",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:4s, id: \"pedestals:upgradecapacity\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "pedestals:bookarea",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:4s, id: \"pedestals:upgradearea\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 2,
+                    "name": "pedestals:bookrange",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:4s, id: \"pedestals:upgraderange\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "pedestals:bookspeed",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Enchantments: [{lvl:4s, id: \"pedestals:upgradespeed\"}]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "pedestals:upgradecapacity"
+                },
+                {
+                    "type": "item",
+                    "weight": 8,
+                    "name": "pedestals:upgradespeed"
+                }
+            ]
+        }
+    ]
+}

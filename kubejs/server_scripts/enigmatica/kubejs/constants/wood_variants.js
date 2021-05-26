@@ -44,6 +44,7 @@ var woodVariantsToConstruct = [
     'byg:bulbis',
     'byg:embur',
     'byg:withering_oak',
+    'byg:fungal_imparius',
     'betterendforge:mossy_glowshroom',
     'betterendforge:lacugrove',
     'betterendforge:end_lotus',
@@ -70,8 +71,8 @@ var woodVariantsToConstruct = [
     'atmospheric:grimwood',
     'upgrade_aquatic:driftwood',
     'upgrade_aquatic:river',
-    'autumnity:maple',
-    'autumnity:sappy_maple'
+    'architects_palette:twisted'
+    // 'sushigocrafting:avocado'
 ];
 
 var buildWoodVariants = [];
@@ -80,7 +81,7 @@ woodVariantsToConstruct.forEach((variant) => {
     var splitVariant = variant.split(':');
     var modId = splitVariant[0];
     var logType = splitVariant[1];
-    var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock;
+    var logSuffix, woodSuffix, logBlockStripped, woodBlockStripped, logBlock, woodBlock, plankBlock, slabBlock;
 
     //suffix exceptions
     switch (logType) {
@@ -108,6 +109,10 @@ woodVariantsToConstruct.forEach((variant) => {
             logSuffix = '_stem';
             woodSuffix = '_hyphae';
             break;
+        case 'fungal_imparius':
+            logSuffix = '_stem';
+            woodSuffix = '_hyphae';
+            break;
         default:
             logSuffix = '_log';
             woodSuffix = '_wood';
@@ -118,6 +123,7 @@ woodVariantsToConstruct.forEach((variant) => {
     logBlockStripped = modId + ':stripped_' + logType + logSuffix;
     woodBlockStripped = modId + ':stripped_' + logType + woodSuffix;
     plankBlock = modId + ':' + logType + '_planks';
+    slabBlock = modId + ':' + logType + '_slab';
 
     // Exceptions
     if (modId == 'betterendforge') {
@@ -142,6 +148,7 @@ woodVariantsToConstruct.forEach((variant) => {
             break;
         case 'red_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
+            slabBlock = 'ars_nouveau:archwood_slab';
             break;
         case 'green_archwood':
             plankBlock = 'ars_nouveau:archwood_planks';
@@ -161,11 +168,6 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'atmospheric:stripped_aspen_log';
             woodBlockStripped = 'atmospheric:stripped_aspen_wood';
             plankBlock = 'atmospheric:aspen_planks';
-            break;
-        case 'sappy_maple':
-            logBlockStripped = 'autumnity:stripped_maple_log';
-            woodBlockStripped = 'autumnity:stripped_maple_wood';
-            plankBlock = 'autumnity:maple_planks';
             break;
         case 'driftwood':
             woodBlock = modId + ':' + logType;
@@ -193,6 +195,18 @@ woodVariantsToConstruct.forEach((variant) => {
             woodBlockStripped = 'integrateddynamics:menril_wood_stripped';
             plankBlock = 'integrateddynamics:menril_planks';
             break;
+        case 'fungal_imparius':
+            logBlockStripped = 'byg:imparius_stem';
+            woodBlockStripped = 'byg:imparius_hyphae';
+            plankBlock = 'byg:imparius_planks';
+            slabBlock = 'byg:imparius_slab';
+            break;
+        case 'avocado':
+            woodBlock = 'minecraft:oak_wood';
+            logBlockStripped = 'minecraft:stripped_oak_log';
+            woodBlockStripped = 'minecraft:stripped_oak_wood';
+            plankBlock = 'minecraft:oak_planks';
+            break;
         default:
     }
 
@@ -203,7 +217,8 @@ woodVariantsToConstruct.forEach((variant) => {
         woodBlock: woodBlock,
         logBlockStripped: logBlockStripped,
         woodBlockStripped: woodBlockStripped,
-        plankBlock: plankBlock
+        plankBlock: plankBlock,
+        slabBlock: slabBlock
     };
 
     buildWoodVariants.push(woodVariant);

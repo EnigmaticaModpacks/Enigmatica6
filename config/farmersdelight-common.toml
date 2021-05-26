@@ -5,6 +5,9 @@
 	farmersBuyFDCrops = true
 	#Farmer's Delight adds crates (3x3) for vanilla crops, similar to Quark and Thermal Cultivation. Should they be craftable?
 	enableVanillaCropCrates = true
+	#How often (in percentage) should Rich Soil succeed in boosting a plant's growth at each random tick? Setting it to 0.0 disables boosting.
+	#Range: 0.0 ~ 1.0
+	richSoilBoostChance = 0.2
 
 #Vanilla item overrides
 [overrides]
@@ -14,6 +17,15 @@
 	dispenserUsesToolsOnCuttingBoard = true
 	#Should items inside the tag 'farmersdelight:comfort_foods' grant 5 minutes of Comfort when eaten? (defaults to vanilla SoupItems)
 	comfortFoodTagEffect = true
+
+	#Stack size overrides
+	[overrides.stack_size]
+		#Should SoupItems in the following list become stackable to 16, much like Farmer's Delight's meals?
+		enableStackableSoupItems = true
+		#List of SoupItems. Default: vanilla soups and stews.
+		soupItemList = ["minecraft:mushroom_stew", "minecraft:beetroot_soup", "minecraft:rabbit_stew"]
+		#Toggle this setting to instead make ALL SoupItems stackable, except the ones on the list (deny-list). This affects items from other mods, so be careful!
+		overrideAllSoupItems = false
 
 #World generation
 [world]

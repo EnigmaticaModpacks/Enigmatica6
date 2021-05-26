@@ -1,0 +1,80 @@
+{
+    "flower": "ALL",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "ores/gold/gold_bee",
+    "ColorData": {
+        "honeycombColor": "#ffdc00",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:gold_ore", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/silver",
+            "outputs": [
+              {"outputID": "resourcefulbees:electrum_bee_spawn_egg", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/gold",
+            "outputs": [
+              {"outputID": "resourcefulbees:gold_bee_spawn_egg", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:gold_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:copper_nugget",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:gold_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "nickel",
+        "parent2": "water",
+        "feedItem": "tag:forge:storage_blocks/gold",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

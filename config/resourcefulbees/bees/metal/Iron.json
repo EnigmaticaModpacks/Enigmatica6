@@ -1,0 +1,87 @@
+{
+    "flower": "ALL",
+    "maxTimeInHive": 3600,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "ores/iron/iron_bee",
+    "ColorData": {
+        "honeycombColor": "#ffcc99",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false,
+        "modelType": "ORE"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 1
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations" : [
+          {
+            "type": "BLOCK",
+            "inputID": "tag:forge:stone",
+            "outputs": [
+              {"outputID": "emendatusenigmatica:iron_ore", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/nickel",
+            "outputs": [
+              {"outputID": "resourcefulbees:invar_bee_spawn_egg", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/coal",
+            "outputs": [
+              {"outputID": "resourcefulbees:steel_bee_spawn_egg", "weight": 10}
+            ]
+          },
+          {
+            "type": "ITEM",
+            "inputID": "tag:forge:storage_blocks/iron",
+            "outputs": [
+              {"outputID": "resourcefulbees:iron_bee_spawn_egg", "weight": 10}
+            ]
+          }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "emendatusenigmatica:iron_chunk",
+        "mainOutputWeight": 0.5,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "emendatusenigmatica:nickel_nugget",
+        "secondaryOutputWeight": 0.1,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "resourcefulbees:iron_honey_bottle",
+        "bottleOutputWeight": 0.02,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "parent1": "forest",
+        "parent2": "sand",
+        "feedItem": "tag:forge:storage_blocks/iron",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -8,7 +8,7 @@
 	#Same as the mega torch block list override, just for the dread lamp
 	#Block squid: +minecraft:squid
 	#Allow pigs: -minecraft:pig
-	dreadLampEntityBlockListOverrides = ["alexsmobs:crimson_mosquito"]
+	dreadLampEntityBlockListOverrides = ["+alexsmobs:sunbird", "+alexsmobs:warped_toad", "+alexsmobs:shoebill", "+alexsmobs:seal", "+alexsmobs:roadrunner", "+alexsmobs:raccoon", "+alexsmobs:mungus", "+alexsmobs:moose", "+alexsmobs:mantis_shrimp", "+alexsmobs:lobster", "+alexsmobs:komodo_dragon", "+alexsmobs:hummingbird", "+alexsmobs:grizzly_bear", "+alexsmobs:gorilla", "+alexsmobs:gazelle", "+alexsmobs:fly", "+alexsmobs:endergrade", "+alexsmobs:elephant", "+alexsmobs:crow", "+alexsmobs:cockroach", "+alexsmobs:capuchin_monkey", "+alexsmobs:blobfish", "+alexsmobs:crimson_mosquito"]
 	#The radius of the mega torch in each direction (cube) with the torch at its center
 	#Range: > 0
 	megaTorchRadius = 32
@@ -34,7 +34,7 @@
 	#Note: Each entry needs to be put in quotes! Multiple Entries should be separated by comma.
 	#Block zombies: "+minecraft:zombie"
 	#Allow creepers: "-minecraft:creeper"
-	megaTorchEntityBlockListOverrides = ["alexsmobs:crimson_mosquito"]
+	megaTorchEntityBlockListOverrides = ["+alexsmobs:rattlesnake", "+alexsmobs:orca", "+alexsmobs:grizzly_bear", "+alexsmobs:alligator_snapping_turtle", "+alexsmobs:crocodile", "+alexsmobs:hammerhead_shark", "+alexsmobs:snow_leopard", "+alexsmobs:stradpole", "+alexsmobs:straddler", "+alexsmobs:spectre", "+alexsmobs:soul_vulture", "+alexsmobs:hammerhead_shark", "+alexsmobs:crimson_mosquito", "+alexsmobs:centipede", "+alexsmobs:bone_serpent", "+alexsmobs:guster"]
 	#Controls how often the flare should try to place lights. 1 means every tick, 10 every 10th tick, etc
 	#Range: > 1
 	feralFlareTickRate = 5

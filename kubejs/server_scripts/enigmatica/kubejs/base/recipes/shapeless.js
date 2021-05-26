@@ -5,12 +5,9 @@ events.listen('recipes', (event) => {
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
         { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
-        { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
-        {
-            output: 'minecraft:crafting_table',
-            inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
-        },
+        { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
+        { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
         {
             output: 'simplefarming:fish_sandwich',
             inputs: [
@@ -37,45 +34,32 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('farmersdelight:milk_bottle', 4),
             inputs: [
-                'minecraft:milk_bucket', 
-                'minecraft:glass_bottle', 
-                'minecraft:glass_bottle', 
-                'minecraft:glass_bottle', 
+                'minecraft:milk_bucket',
+                'minecraft:glass_bottle',
+                'minecraft:glass_bottle',
+                'minecraft:glass_bottle',
                 'minecraft:glass_bottle'
             ]
         },
         {
             output: 'minecraft:milk_bucket',
             inputs: [
-                'minecraft:bucket', 
-                'farmersdelight:milk_bottle', 
-                'farmersdelight:milk_bottle', 
-                'farmersdelight:milk_bottle', 
+                'minecraft:bucket',
+                'farmersdelight:milk_bottle',
+                'farmersdelight:milk_bottle',
+                'farmersdelight:milk_bottle',
                 'farmersdelight:milk_bottle'
             ]
         },
         {
             output: Item.of('simplefarming:candy', 2),
-            inputs: [
-                '#forge:chocolate_bars',
-                'minecraft:sugar',
-                'minecraft:sugar'
-            ]
+            inputs: ['#forge:chocolate_bars', 'minecraft:sugar', 'minecraft:sugar']
         },
         { output: 'minecraft:wheat_seeds', inputs: ['minecraft:wheat'] },
-        { output: 'quark:root', inputs: ['minecraft:vine', '#forge:dyes/brown'] },
+
         {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }),
             inputs: ['minecraft:book', '#forge:dyes/yellow']
-        },
-        {
-            output: Item.of('bambooeverything:bamboo_bundle', 2),
-            inputs: ['thermal:bamboo_block', 'thermal:bamboo_block']
-        },
-        { output: Item.of('thermal:bamboo_block', 2), inputs: ['quark:bamboo_block', 'quark:bamboo_block'] },
-        {
-            output: Item.of('quark:bamboo_block', 2),
-            inputs: ['bambooeverything:bamboo_bundle', 'bambooeverything:bamboo_bundle']
         },
         { output: 'minecraft:crafting_table', inputs: ['#forge:workbench'] },
         {
@@ -200,10 +184,6 @@ events.listen('recipes', (event) => {
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']
         },
-        {
-            output: Item.of('buildersaddition:large_candle', 4),
-            inputs: ['#forge:wax', '#forge:wax', '#forge:wax', '#forge:string']
-        },
         { output: Item.of('occultism:tallow', 9), inputs: ['quark:tallow_block'] },
         {
             output: 'minecraft:writable_book',
@@ -235,7 +215,102 @@ events.listen('recipes', (event) => {
             id: 'refinedstorage:quartz_enriched_iron'
         },
         { output: Item.of('byg:quartz_crystal'), inputs: ['minecraft:quartz'] },
-        { output: Item.of('minecraft:quartz'), inputs: ['byg:quartz_crystal'] }
+        { output: Item.of('minecraft:quartz'), inputs: ['byg:quartz_crystal'] },
+        {
+            output: 'kubejs:quintuple_alfsteel_ingot',
+            inputs: [
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:ingots/alfsteel',
+                '#forge:dusts/mana'
+            ]
+        },
+        {
+            output: 'minecraft:quartz',
+            inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:twigs', 4),
+            inputs: ['#minecraft:leaves', '#forge:shears']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:pinecones', 6),
+            inputs: [
+                '#minecraft:leaves/coniferous',
+                '#minecraft:leaves/coniferous',
+                '#minecraft:leaves/coniferous',
+                '#forge:shears'
+            ]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:fallen_leaves', 1),
+            inputs: ['quark:oak_leaf_carpet']
+        },
+        {
+            output: Item.of('projectvibrantjourneys:rocks', 4),
+            inputs: ['minecraft:cobblestone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:mossy_rocks', 4),
+            inputs: [
+                'minecraft:mossy_cobblestone',
+                ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']
+            ]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:sandstone_rocks', 4),
+            inputs: ['minecraft:sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:red_sandstone_rocks', 4),
+            inputs: ['minecraft:red_sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:ice_chunks', 4),
+            inputs: ['minecraft:ice', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+        },
+        {
+            output: Item.of('projectvibrantjourneys:glowcap'),
+            inputs: ['minecraft:glowstone_dust', ['minecraft:brown_mushroom', 'minecraft:red_mushroom']]
+        },
+        {
+            output: Item.of('botanypots:botany_pot'),
+            inputs: ['#enigmatica:washables/simplebotanypots', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('botanypots:hopper_botany_pot'),
+            inputs: ['#enigmatica:washables/hopperbotanypots', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('minecraft:terracotta'),
+            inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
+        },
+        {
+            output: Item.of('emendatusenigmatica:signalum_dust', 4),
+            inputs: [
+                '#forge:dusts/silver',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/copper',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone',
+                '#forge:dusts/redstone'
+            ],
+            id: 'emendatusenigmatica:alloy_dust/signalum'
+        },
+        {
+            output: 'mythicbotany:raindeletia_floating',
+            inputs: ['kubejs:disabled_recipe_indicator'],
+            id: 'mythicbotany:raindeletia_floating'
+        },
+        {
+            output: 'mythicbotany:wither_aconite_floating',
+            inputs: ['kubejs:disabled_recipe_indicator'],
+            id: 'mythicbotany:wither_aconite_floating'
+        }
     ];
 
     recipes.forEach((recipe) => {
@@ -248,11 +323,24 @@ events.listen('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
-        var capacitor = 'powah:capacitor_' + tier;
-
         event.shapeless(`powah:reactor_${tier}`, `powah:reactor_${tier}`);
+    });
 
-        event.shapeless(`powah:reactor_${tier}`, ['#powah:reactor', capacitor]);
+    colors.forEach(function (color) {
+        let otherColors = colors.filter((filterColor) => filterColor !== color);
+
+        let otherSimplePots = otherColors.map((otherColor) => `botanypots:${otherColor}_botany_pot`),
+            otherHopperPots = otherColors.map((otherColor) => `botanypots:hopper_${otherColor}_botany_pot`);
+
+        otherSimplePots.push('botanypots:botany_pot');
+        otherHopperPots.push('botanypots:hopper_botany_pot');
+
+        event.shapeless(`botanypots:${color}_botany_pot`, [Ingredient.of(otherSimplePots), `#forge:dyes/${color}`]);
+
+        event.shapeless(`botanypots:hopper_${color}_botany_pot`, [
+            Ingredient.of(otherHopperPots),
+            `#forge:dyes/${color}`
+        ]);
     });
 
     materialsToUnify.forEach((material) => {

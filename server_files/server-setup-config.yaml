@@ -1,0 +1,163 @@
+# Version of the specs, only for internal usage if this format should ever change drastically
+_specver: 2
+
+# modpack related settings, changes the supposed to change the visual appearance of the launcher
+modpack:
+    # Name of the mod pack, that is displayed in various places where it fits
+    name: Enigmatica 6
+
+    # Description
+    description: Play with new mods and old favorites in Minecraft 1.16.5! Enigmatica 6 offers a boatload of custom content including quests!
+
+# settings regarding the installation of the modpack
+install:
+    # version of minecraft, needs the exact version
+    mcVersion: 1.16.5
+
+    # exact version of forge or fabric that is supposed to be used
+    # if this value is a null value so ( ~, null, or "" ) then the version from the mod pack is going to be used
+    loaderVersion: ~
+
+    # If a custom installer is supposed to used, specify the url here: (Otherwise put "", ~ or null here)
+    # supports variables: {{@loaderversion@}} and {{@mcversion@}}
+    # For forge: "http://files.minecraftforge.net/maven/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar"
+    # For Fabric: "https://maven.fabricmc.net/net/fabricmc/fabric-installer/{{@loaderversion@}}/fabric-installer-{{@loaderversion@}}.jar"
+    installerUrl: http://files.minecraftforge.net/maven/net/minecraftforge/forge/{{@mcversion@}}-{{@loaderversion@}}/forge-{{@mcversion@}}-{{@loaderversion@}}-installer.jar
+
+    # Installer Arguments
+    # These Arguments have to be passed to the installer
+    #
+    # For Fabric:
+    # installerArguments:
+    #   - "server"
+    #   - "-downloadMinecraft"
+    #
+    # For Fabric if you want to use snapshot version:
+    # installerArguments:
+    #   - "server"
+    #   - "-mcversion 20w07a"
+    #   - "-downloadMinecraft"
+    #
+    # For Forge:
+    # installerArguments:
+    #   - "--installServer"
+    installerArguments:
+        - '--installServer'
+
+    # Link to where the file where the modpack can be distributed
+    # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
+    modpackUrl: https://media.forgecdn.net/files/3316/874/Enigmatica6-0.4.14.zip
+    # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
+    # current supported formats:
+    # - curseforge or curse
+    # - curseid
+    # - zip or zipfile
+    modpackFormat: curse
+
+    # Settings which are specific to the format used, might not be needed in some casese
+    formatSpecific:
+        # optional paramenter used for curse to specify a whole project to ignore (mostly if it is client side only)
+        ignoreProject:
+            - 254284
+            - 231275
+            - 237701
+            - 391382
+            - 238372
+            - 271740
+            - 358191
+            - 237701
+
+    # The base path where the server should be installed to, ~ for current path
+    baseInstallPath: ~
+
+    # a list of files which are supposed to be ignored when installing it from the client files
+    # this can either use regex or glob {default glob: https://docs.oracle.com/javase/8/docs/api/java/nio/file/FileSystem.html#getPathMatcher-java.lang.String-}
+    # specify with regex:.... or glob:.... if you want to force a matching type
+    ignoreFiles:
+        - resources/**
+        - packmenu/**
+        - kubejs/assets/**
+        - kubejs/client_scripts/**
+        - building_gadgets_patterns/**
+        - config/*-client.toml
+        - defaultconfigs/*-client.toml
+
+    # This makes the program check the folder for whether it is supposed to use the
+    checkFolder: yes
+
+    # Whether to install the Loader (Forge or Fabric) or not, should always be yes/true unless you only want to install the pack
+    installLoader: yes
+
+    # Sponge bootstrapper jar URL
+    # Only needed if you have spongefix enabled
+    spongeBootstrapper: https://github.com/simon816/SpongeBootstrap/releases/download/v0.7.1/SpongeBootstrap-0.7.1.jar
+
+# settings regarding the launching of the pack
+launch:
+    # applies the launch wrapper to fix sponge for a few mods
+    spongefix: no
+
+    # Use a RAMDisk for the world folder
+    # case-sensitive; use only lowercase `yes` or `no`
+    # NOTE: The server must have run once fully before switching to `yes`!
+    ramDisk: no
+
+    # checks with the help of a few unrelated server whether the server is online
+    checkOffline: no
+
+    # specifies the max amount of ram the server is supposed to launch with
+    maxRam: 5G
+
+    # specifies whether the server is supposed to auto restart after crash
+    autoRestart: yes
+
+    # after a given amount of crashes in a given time the server will stop auto restarting
+    crashLimit: 10
+
+    # Time a crash should be still accounted for in the {crashLimit}
+    # syntax is either [number]h or [number]min or [number]s
+    crashTimer: 60min
+
+    # Arguments that need to go before the 'java' argument, something like linux niceness
+    # This is only a string, not a list.
+    preJavaArgs: ~
+
+    # Start File Name, variables: {{@loaderversion@}} and {{@mcversion@}}
+    # This has to be the name the installer spits out
+    # For Forge 1.12-: "forge-{{@mcversion@}}-{{@loaderversion@}}-universal.jar"
+    # For Forge 1.13+: "forge-{{@mcversion@}}-{{@loaderversion@}}.jar"
+    # For Fabric: "fabric-server-launch.jar"
+    startFile: forge-{{@mcversion@}}-{{@loaderversion@}}.jar
+
+    # In case you have multiple javas installed you can add a absolute path to it here
+    # if the value is "", null, or ~ then 'java' from PATH is going to be used
+    # Example: "\"C:/Program Files/Java/jre1.8.0_201/bin/java.exe\""
+    forcedJavaPath: ~
+
+    # Java args that are supposed to be used when the server launches
+    # keep in mind java args often need ' - ' in front of it to work, use clarifying parentheses to make sure it uses it correctly
+    # reference: https://aikar.co/2018/07/02/tuning-the-jvm-g1gc-garbage-collector-flags-for-minecraft/
+    # tested on Java 8 and 11
+    javaArgs:
+        - '-XX:+UseG1GC'
+        - '-XX:+ParallelRefProcEnabled'
+        - '-XX:MaxGCPauseMillis=200'
+        - '-XX:+UnlockExperimentalVMOptions'
+        - '-XX:+DisableExplicitGC'
+        - '-XX:+AlwaysPreTouch'
+        - '-XX:G1NewSizePercent=30'
+        - '-XX:G1MaxNewSizePercent=40'
+        - '-XX:G1HeapRegionSize=8M'
+        - '-XX:G1ReservePercent=20'
+        - '-XX:G1HeapWastePercent=5'
+        - '-XX:G1MixedGCCountTarget=4'
+        - '-XX:InitiatingHeapOccupancyPercent=15'
+        - '-XX:G1MixedGCLiveThresholdPercent=90'
+        - '-XX:G1RSetUpdatingPauseTimePercent=5'
+        - '-XX:SurvivorRatio=32'
+        - '-XX:+PerfDisableSharedMem'
+        - '-XX:MaxTenuringThreshold=1'
+        - '-Dusing.aikars.flags=https://mcflags.emc.gs'
+        - '-Daikars.new.flags=true'
+        - '-Dfml.readTimeout=180' # servertimeout
+        - '-Dfml.queryResult=confirm' # auto /fmlconfirm

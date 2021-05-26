@@ -13,29 +13,14 @@ events.listen('recipes', (event) => {
                 rate: 1
             },
             {
-                fluid: 'thermal:tree_oil',
-                air: 100,
-                rate: 0.5
-            },
-            {
-                fluid: 'thermal:creosote',
-                air: 20,
-                rate: 0.25
-            },
-            {
                 fluid: 'immersiveengineering:creosote',
-                air: 20,
+                air: 50,
                 rate: 0.25
-            },
-            {
-                fluid: 'thermal:refined_fuel',
-                air: 1500,
-                rate: 1.5
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.pneumaticcraft.fuel_quality({
+        event.custom({
             type: 'pneumaticcraft:fuel_quality',
             fluid: {
                 type: 'pneumaticcraft:fluid',

@@ -1,7 +1,7 @@
 {
 	id: "000000000000070D",
-	group: "",
-	order_index: 15,
+	group: "5A8B89F87F77CF4C",
+	order_index: 8,
 	filename: "resourceful_bees",
 	title: "Resourceful Bees",
 	icon: "minecraft:honeycomb",
@@ -23,7 +23,7 @@
 			tasks: [{
 				id: "000000000000070F",
 				type: "item",
-				title: "Any minecraft:beehives",
+				title: "Any forge:beehives/tier_0",
 				item: {
 					id: "itemfilters:tag",
 					Count: 1b,
@@ -246,12 +246,21 @@
 					}
 				}
 			}],
-			rewards: [{
-				id: "6DA6F6AC7E54E2C9",
-				type: "item",
-				item: "resourcefulbees:bee_jar",
-				count: 8
-			}]
+			rewards: [
+				{
+					id: "6DA6F6AC7E54E2C9",
+					type: "item",
+					title: "Empty Bee Jar",
+					item: "resourcefulbees:bee_jar",
+					count: 8
+				},
+				{
+					id: "0C1504955F2C86AD",
+					type: "item",
+					title: "Beepedia",
+					item: "resourcefulbees:beepedia"
+				}
+			]
 		},
 		{
 			title: "Combs",
@@ -828,9 +837,7 @@
 			description: [
 				"Certain types of Bees have the ability to mutate Entities into other Entities, as long as they meet the requirements, and are able to fly close to those entities.",
 				"",
-				"Example: If a Blaze Bee is returning to the nest/hive passes near a Creeper Bee, it can mutate it into a Ghast Bee.",
-				"",
-				"Note: At the moment this is the only available mutation for the Entity Based Mutations, but more will be added in the future where fitting."
+				"Example: If a Blaze Bee is returning to the nest/hive passes near a Creeper Bee, it can mutate it into a Ghast Bee."
 			],
 			dependencies: ["0000000000000716"],
 			id: "0000000000000AC4",
@@ -844,6 +851,52 @@
 				id: "0000000000000B0C",
 				type: "xp",
 				xp: 100
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -15.0d,
+			subtitle: "Jar Jar Beenks",
+			description: ["Right-click a Bee with an Empty Bee Jar, and it'll be caught inside."],
+			dependencies: ["0000000000000A94"],
+			id: "24D88FC1C6DCE052",
+			tasks: [{
+				id: "57CDAF18A5A66D82",
+				type: "item",
+				item: "resourcefulbees:bee_jar"
+			}],
+			rewards: [{
+				id: "7ECD253B38639D34",
+				type: "item",
+				title: "Empty Bee Jar",
+				item: "resourcefulbees:bee_jar",
+				count: 2,
+				random_bonus: 3
+			}]
+		},
+		{
+			x: -11.5d,
+			y: -14.0d,
+			subtitle: "Bee-tboxing",
+			description: [
+				"Used the same way as the Bee Jar.",
+				"",
+				"Can be used to transport up to 10 bees at a time."
+			],
+			dependencies: ["24D88FC1C6DCE052"],
+			id: "2F7254D5AD380CB4",
+			tasks: [{
+				id: "78200ABCDC11BF2F",
+				type: "item",
+				item: "resourcefulbees:bee_box"
+			}],
+			rewards: [{
+				id: "4D2AFDFEAA880455",
+				type: "command",
+				title: "Rare Resourceful Bees Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare",
+				player_command: false
 			}]
 		}
 	]

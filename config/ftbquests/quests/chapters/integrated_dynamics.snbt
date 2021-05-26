@@ -1,10 +1,11 @@
 {
 	id: "529A046A403F6A21",
-	group: "",
-	order_index: 22,
+	group: "0856CF7F5CBEB20A",
+	order_index: 2,
 	filename: "integrated_dynamics",
 	title: "Integrated Dynamics",
 	icon: "integrateddynamics:crystalized_menril_chunk",
+	subtitle: ["The integration is dynamic, but are the dynamics integrated?"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -79,11 +80,13 @@
 				{
 					id: "5476A59853122500",
 					type: "item",
+					title: "Armor Stand",
 					item: "minecraft:armor_stand"
 				},
 				{
 					id: "1822E8DD1641B839",
 					type: "item",
+					title: "Green Slime Block",
 					item: "minecraft:slime_block",
 					count: 2
 				}
@@ -141,6 +144,7 @@
 			rewards: [{
 				id: "43CE6F2A10A769E2",
 				type: "item",
+				title: "Coal",
 				item: "minecraft:coal",
 				count: 16
 			}]
@@ -615,7 +619,7 @@
 			x: -2.0d,
 			y: 1.0d,
 			subtitle: "Botania is a Tech mod now?",
-			description: ["This block can extract specific NBT Data from NBT acquirred from a Block Reader. This can be used to find the amount of Mana in a Mana Pool."],
+			description: ["This block can extract specific NBT Data from NBT acquired from a Block Reader. This can be used to find the amount of Mana in a Mana Pool."],
 			dependencies: ["7E516ACCF6DA5588"],
 			id: "11A8433289EFF772",
 			tasks: [{

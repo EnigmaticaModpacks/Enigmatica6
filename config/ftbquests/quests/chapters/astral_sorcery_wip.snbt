@@ -1,10 +1,11 @@
 {
 	id: "0000000000000AF3",
-	group: "",
-	order_index: 26,
+	group: "5A8B89F87F77CF4C",
+	order_index: 2,
 	filename: "astral_sorcery_wip",
 	title: "Astral Sorcery",
 	icon: "astralsorcery:hand_telescope",
+	subtitle: ["Stop staring at the sky, you might fall into a gravity well"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -14,7 +15,7 @@
 			y: -10.5d,
 			shape: "gear",
 			description: [
-				"Remnants of an ancienct civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed “Hrms”, though they avoid the structures in fear.",
+				"Remnants of an ancient civilization dot the land, though they give little clue as to what became of them. The villagers who remain share legends of them in hushed “Hrms”, though they avoid the structures in fear.",
 				"",
 				"Pillagers, fierce as they may be, seem to share in this superstition... What secrets await discovery?",
 				"",
@@ -28,6 +29,7 @@
 			rewards: [{
 				id: "0000000000000AF6",
 				type: "item",
+				title: "Resonating Wand",
 				item: "astralsorcery:wand"
 			}]
 		},
@@ -61,6 +63,7 @@
 				{
 					id: "0000000000000BDB",
 					type: "item",
+					title: "Warp Scroll",
 					item: "ars_nouveau:warp_scroll",
 					count: 16
 				},
@@ -171,6 +174,7 @@
 				{
 					id: "0000000000000BE0",
 					type: "item",
+					title: "Aquamarine Shale",
 					item: "astralsorcery:aquamarine_sand_ore",
 					count: 8
 				},
@@ -205,7 +209,7 @@
 					id: "astralsorcery:constellation_paper",
 					Count: 1b,
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}],
@@ -486,6 +490,7 @@
 				{
 					id: "0000000000000C23",
 					type: "item",
+					title: "Raw Cod",
 					item: "minecraft:cod",
 					count: 16
 				}
@@ -609,6 +614,7 @@
 			rewards: [{
 				id: "0000000000000C2E",
 				type: "item",
+				title: "Cave Illuminator",
 				item: "astralsorcery:illuminator"
 			}]
 		},
@@ -789,7 +795,7 @@
 					id: "astralsorcery:rock_crystal",
 					Count: 1b,
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}],
@@ -797,6 +803,7 @@
 				{
 					id: "0000000000000BBC",
 					type: "item",
+					title: "Linking Tool",
 					item: "astralsorcery:linking_tool"
 				},
 				{
@@ -934,6 +941,7 @@
 			rewards: [{
 				id: "0000000000000BB0",
 				type: "item",
+				title: "Unbreaking III",
 				item: {
 					id: "minecraft:enchanted_book",
 					Count: 1b,
@@ -1083,7 +1091,7 @@
 				item: {
 					id: "astralsorcery:lens",
 					Count: 1b,
-					tag: {}
+					tag: { }
 				}
 			}],
 			rewards: [{
@@ -1229,7 +1237,7 @@
 					id: "astralsorcery:celestial_crystal",
 					Count: 1b,
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}],
@@ -1248,7 +1256,7 @@
 				id: "astralsorcery:celestial_crystal_cluster",
 				Count: 1b,
 				tag: {
-					astralsorcery: {},
+					astralsorcery: { },
 					Damage: 4
 				}
 			},
@@ -1295,7 +1303,7 @@
 				id: "astralsorcery:celestial_gateway",
 				Count: 1b,
 				tag: {
-					astralsorcery: {}
+					astralsorcery: { }
 				}
 			},
 			x: 4.0d,
@@ -1325,7 +1333,7 @@
 						id: "astralsorcery:celestial_gateway",
 						Count: 1b,
 						tag: {
-							astralsorcery: {}
+							astralsorcery: { }
 						}
 					}
 				},
@@ -1358,11 +1366,12 @@
 				{
 					id: "0000000000000C21",
 					type: "item",
+					title: "Celestial Gateway",
 					item: {
 						id: "astralsorcery:celestial_gateway",
 						Count: 1b,
 						tag: {
-							astralsorcery: {}
+							astralsorcery: { }
 						}
 					}
 				},
@@ -1400,11 +1409,12 @@
 				{
 					id: "0000000000000C2D",
 					type: "item",
+					title: "Infused Glass",
 					item: {
 						id: "astralsorcery:infused_glass",
 						Count: 1b,
 						tag: {
-							astralsorcery: {},
+							astralsorcery: { },
 							Damage: 0
 						}
 					}
@@ -1517,7 +1527,7 @@
 					id: "astralsorcery:enchantment_amulet",
 					Count: 1b,
 					tag: {
-						astralsorcery: {}
+						astralsorcery: { }
 					}
 				}
 			}],
@@ -1525,11 +1535,13 @@
 				{
 					id: "0000000000000C2B",
 					type: "item",
+					title: "Jukebox",
 					item: "minecraft:jukebox"
 				},
 				{
 					id: "0000000000000C2C",
 					type: "item",
+					title: "Music Disc",
 					item: "minecraft:music_disc_pigstep"
 				},
 				{

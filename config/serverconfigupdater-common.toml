@@ -10,9 +10,9 @@
 	#By default Folders are only deleted if they are empty. Set to true to change that.
 	deleteFoldersWithContent = false
 	#This is intended for deleting datapacks and/or craft tweaker scripts. The file will be deleted every launch if it exists! No access to saves or world folder. Specify the path to the file. Comma Separated List. Example: scripts/badscript.zs
-	filesToDelete = "kubejs/server_scripts/enigmatica/kubejs/base/recipetypes/occultism/spirit_fire.js,kubejs/server_scripts/enigmatica/kubejs/base/tags/items/forge/tools.js"
+	filesToDelete = "kubejs/server_scripts/enigmatica/kubejs/base/recipetypes/occultism/spirit_fire.js,kubejs/server_scripts/enigmatica/kubejs/base/tags/items/forge/tools.js,kubejs/data/tetra/loot_tables/actions/geode.json"
 
 ["Version History"]
 	#Editing these values will not affect any worlds that are already on that version.
-	history = "1=travel_anchors;2=astralsorcery;3=valhelsia_structures,immersiveengineering,curios;"
+	history = "1=travel_anchors;2=astralsorcery;3=valhelsia_structures,immersiveengineering,curios;4=valhelsia_structures,immersiveengineering,curios;5=ensorcellation,curios;6=create;"
 

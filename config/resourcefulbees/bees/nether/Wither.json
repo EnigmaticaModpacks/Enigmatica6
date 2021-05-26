@@ -1,0 +1,67 @@
+{
+    "flower": "minecraft:wither_rose",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["nether", "wither", "can_swim"],
+    "baseLayerTexture": "wither/wither_bee",
+    "ColorData": {
+        "honeycombColor": "#444444",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:water",
+                "chance": 0.1,
+                "outputs": [{ "outputID": "minecraft:lava", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:skeleton",
+                "outputs": [{ "outputID": "entity:minecraft:wither_skeleton", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "wstweaks:fragment",
+        "mainOutputWeight": 0.3,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:wither_rose",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "resourcefulbees:wither_honey_bottle",
+        "bottleOutputWeight": 0.01,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:nether_star",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

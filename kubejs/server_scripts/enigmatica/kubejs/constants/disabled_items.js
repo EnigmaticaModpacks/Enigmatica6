@@ -18,6 +18,9 @@ const disabledItems = [
     'abnormals_delight:willow_pantry',
     'abnormals_delight:wisteria_pantry',
 
+    'aiotbotania:livingwood_shears',
+    'aiotbotania:livingrock_shears',
+
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',
@@ -32,8 +35,8 @@ const disabledItems = [
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
 
-    // 'bountifulbaubles:potion_wormhole',
     'blockcarpentry:frame_chest',
+    'blockcarpentry:illusion_chest',
 
     'byg:ametrine_block',
     'byg:ametrine_boots',
@@ -54,17 +57,7 @@ const disabledItems = [
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
 
-    'mapperbase:bituminous_coal',
-    'mapperbase:steel_fence',
-    'mapperbase:steel_axe',
-    'mapperbase:steel_pickaxe',
-    'mapperbase:steel_shovel',
-    'mapperbase:steel_hoe',
-    'mapperbase:steel_sword',
-    'mapperbase:steel_helmet',
-    'mapperbase:steel_chestplate',
-    'mapperbase:steel_leggings',
-    'mapperbase:steel_boots',
+    'decorative_blocks_abnormals:ender_brazier',
 
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',

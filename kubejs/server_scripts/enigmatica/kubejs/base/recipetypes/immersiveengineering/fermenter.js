@@ -12,7 +12,6 @@ events.listen('recipes', (event) => {
         'atmospheric:aloe_leaves',
         'atmospheric:passionfruit',
         'atmospheric:yucca_fruit',
-        'autumnity:foul_berries',
         'betterendforge:blossom_berry',
         'betterendforge:shadow_berry_raw',
         'byg:baobab_fruit',

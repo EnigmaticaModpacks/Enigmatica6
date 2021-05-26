@@ -91,11 +91,13 @@ const soilRegistry = [
     { block: 'betterendforge:jungle_moss', categories: ['end_stone', 'jungle_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:end_moss', categories: ['end_stone', 'end_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:shadow_grass', categories: ['end_stone', 'shadow_grass'], growthModifier: 0.5 },
+    { block: 'betterendforge:pink_moss', categories: ['end_stone', 'pink_moss'], growthModifier: 0.5 },
     {
         block: 'betterendforge:end_mycelium',
         categories: ['end_stone', 'end_mycelium', 'mushroom'],
         growthModifier: 0.5
     },
     { block: 'atmospheric:arid_sand', categories: ['sand', 'arid_sand'], growthModifier: 0.0 },
-    { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: 0.0 }
+    { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: 0.0 },
+    { block: 'byg:imparius_phylium', categories: ['end_stone', 'mushroom', 'imparius_phylium'], growthModifier: 0.5 }
 ];

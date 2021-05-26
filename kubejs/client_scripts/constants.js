@@ -22,33 +22,36 @@ const refinedStorageItems = [
 const generatableCobblestone = [
     'byg:dacite_cobblestone',
     'byg:ether_stone',
+    'byg:purpur_stone',
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
-    'embellishcraft:basalt_cobblestone',
-    'embellishcraft:gneiss_cobblestone',
-    'embellishcraft:jade_cobblestone',
-    'embellishcraft:larvikite_cobblestone',
-    'embellishcraft:marble_cobblestone',
-    'embellishcraft:slate_cobblestone',
     'create:andesite_cobblestone',
     'create:diorite_cobblestone',
     'create:granite_cobblestone',
     'quark:cobbedstone',
     'undergarden:depthrock',
     'undergarden:shiverstone',
+    'undergarden:tremblecrust',
     'create:dark_scoria_cobblestone',
     'create:scoria_cobblestone',
     'create:gabbro_cobblestone',
     'create:dolomite_cobblestone',
     'create:weathered_limestone_cobblestone',
-    'create:limestone_cobblestone'
+    'create:limestone_cobblestone',
+    'atmospheric:saffron_travertine',
+    'atmospheric:persimmon_travertine',
+    'atmospheric:peach_travertine',
+    'atmospheric:ivory_travertine'
 ];
 // Items added here will get recipes for Pedestals & Cobblegen Randomizer stonegens.
 const generatableStone = [
     'minecraft:andesite',
     'minecraft:diorite',
     'minecraft:granite',
+    'betterendforge:flavolite',
+    'betterendforge:sulphuric_rock',
+    'betterendforge:violecite',
     'byg:black_sandstone',
     'byg:blue_sandstone',
     'byg:dacite',
@@ -56,12 +59,6 @@ const generatableStone = [
     'byg:pink_sandstone',
     'byg:scoria_stone',
     'byg:white_sandstone',
-    'embellishcraft:basalt',
-    'embellishcraft:gneiss',
-    'embellishcraft:jade',
-    'embellishcraft:larvikite',
-    'embellishcraft:marble',
-    'embellishcraft:slate',
     'minecraft:red_sandstone',
     'minecraft:sandstone',
     'quark:basalt',
@@ -77,7 +74,9 @@ const generatableStone = [
     'create:gabbro',
     'create:dolomite',
     'create:weathered_limestone',
-    'create:limestone'
+    'create:limestone',
+    'atmospheric:red_arid_sandstone',
+    'atmospheric:arid_sandstone'
 ];
 const generatableBasalt = [];
 
@@ -101,13 +100,15 @@ const colors = [
 ];
 
 var itemsToHide = [
+    'aiotbotania:livingwood_shears',
+    'aiotbotania:livingrock_shears',
+
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
     'ars_nouveau:mana_gem_block',
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
-    // 'bountifulbaubles:potion_wormhole',
     'create:powdered_obsidian',
     'create:honey_bucket',
     'create:copper_ore',
@@ -116,10 +117,7 @@ var itemsToHide = [
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
-    'mapperbase:bitumen_ore',
-    'mapperbase:iron_plate',
-    'mapperbase:iron_rod',
-    'mapperbase:raw_bitumen',
+    'mekanism:fluorite_gem',
     'morevanillalib:obsidian_shard',
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
@@ -135,17 +133,27 @@ var itemsToHide = [
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
     'thermal:sawdust',
+    'thermal:press_gear_die',
+    'thermal:press_packing_3x3_die',
+    'thermal:press_packing_2x2_die',
+    'thermal:press_unpacking_die',
+    'simplefarming:apple_pie',
+    'simplefarming:blueberry_pie',
     'supplementaries:pedestal',
     'supplementaries:crank',
     'supplementaries:cog_block',
     'supplementaries:redstone_illuminator',
     'supplementaries:turn_table',
-    'supplementaries:jar',
-    'supplementaries:jar_tinted',
     'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
-    'supplementaries:blackboard'
+    'supplementaries:blackboard',
+    'quark:bonded_ravager_hide',
+    'quark:ravager_hide',
+    'quark:backpack',
+    'quark:crate',
+    'quark:magnet',
+    'quark:soul_compass'
 ];
 
 var regexHide = [
@@ -177,7 +185,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_basalt_ore/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
-    /thermal:\w+_gear/,
+    /thermal:\w+_gear$/,
     /thermal:\w+_ingot/,
     /thermal:\w+_nugget/,
     /thermal:\w+_ore/,
@@ -186,7 +194,6 @@ var regexHide = [
     /mekanism:\w+_ore/,
     /minecraft:\w+_ore/,
     /immersiveengineering:plate_/,
-    /immersiveengineering:stick_/,
     /immersiveengineering:storage_/,
     /immersiveengineering:ore_/,
     /create:\w+_sheet/,
@@ -199,11 +206,11 @@ var regexHide = [
     /byg:ametrine/,
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
-    /mapperbase:steel/,
-    /mapperbase:\w+_block/,
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
-    /betterendforge:\w+_anvil/
+    /betterendforge:\w+_anvil/,
+    /theoneprobe:/,
+    /upgrade_aquatic:\w+_jelly_torch/
 ];
 
 const disabledItems = [
@@ -236,6 +243,7 @@ const disabledItems = [
     'betterendforge:ender_dust',
 
     'blockcarpentry:frame_chest',
+    'blockcarpentry:illusion_chest',
 
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
@@ -262,17 +270,31 @@ const disabledItems = [
 
     'create:dough',
 
-    'mapperbase:bituminous_coal',
-    'mapperbase:steel_fence',
-    'mapperbase:steel_axe',
-    'mapperbase:steel_pickaxe',
-    'mapperbase:steel_shovel',
-    'mapperbase:steel_hoe',
-    'mapperbase:steel_sword',
-    'mapperbase:steel_helmet',
-    'mapperbase:steel_chestplate',
-    'mapperbase:steel_leggings',
-    'mapperbase:steel_boots',
+    'decorative_blocks_abnormals:ender_brazier',
+
+    'ironjetpacks:strap',
+    'ironjetpacks:basic_coil',
+    'ironjetpacks:advanced_coil',
+    'ironjetpacks:elite_coil',
+    'ironjetpacks:ultimate_coil',
+    'ironjetpacks:hardened_cell',
+    'ironjetpacks:hardened_capacitor',
+    'ironjetpacks:invar_cell',
+    'ironjetpacks:invar_capacitor',
+    'ironjetpacks:blazing_cell',
+    'ironjetpacks:blazing_capacitor',
+    'ironjetpacks:signalum_cell',
+    'ironjetpacks:signalum_capacitor',
+    'ironjetpacks:niotic_cell',
+    'ironjetpacks:niotic_capacitor',
+    'ironjetpacks:lumium_cell',
+    'ironjetpacks:lumium_capacitor',
+    'ironjetpacks:spirited_cell',
+    'ironjetpacks:spirited_capacitor',
+    'ironjetpacks:enderium_cell',
+    'ironjetpacks:enderium_capacitor',
+    'ironjetpacks:nitro_cell',
+    'ironjetpacks:nitro_capacitor',
 
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
@@ -299,7 +321,6 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
-
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
@@ -361,3 +382,8 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal'
 ];
+
+const packMode = global.packmode;
+
+const isNormalMode = packMode == 'normal';
+const isExpertMode = packMode == 'expert';

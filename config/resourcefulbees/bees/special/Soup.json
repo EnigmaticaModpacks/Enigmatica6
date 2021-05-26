@@ -1,0 +1,70 @@
+{
+    "flower": "forge:mushrooms",
+    "maxTimeInHive": 6000,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "ColorData": {
+        "honeycombColor": "ROSYBROWN",
+        "isBeeColored": true,
+        "primaryColor": "RED",
+        "secondaryColor": "ROSYBROWN"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 3
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "ITEM",
+                "inputID": "minecraft:oak_log",
+                "outputs": [{ "outputID": "minecraft:mushroom_stew", "weight": 10 }]
+            },
+            {
+                "type": "ENTITY",
+                "inputID": "entity:minecraft:cow",
+                "outputs": [{ "outputID": "entity:minecraft:mooshroom", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "minecraft:mushroom_stew",
+        "mainOutputWeight": 0.40,
+        "mainOutputCount": 1,
+
+        "secondaryOutput": "minecraft:beef",
+        "secondaryOutputWeight": 0.2,
+        "secondaryOutputCount": 3,
+
+        "bottleOutput": "farmersdelight:milk_bottle",
+        "bottleOutputWeight": 0.25,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": true,
+        "biomeWhitelist": "tag:RARE",
+        "biomeBlacklist": "tag:OCEAN",
+        "spawnWeight": 1,
+        "minGroupSize": 2,
+        "maxGroupSize": 4,
+        "lightLevel": "ANY"
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "minecraft:red_mushroom",
+        "feedAmount": 4,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

@@ -123,3 +123,39 @@
 		#Max progress of the machine
 		maxProgress = 20
 
+	[MachineResourceProductionConfig.FermentationStationConfig]
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Amount of ticks for 2x production - Default: [20 * 5 FE]
+		ticksFor2XProduction = 100
+		#Amount of ticks for 3x production - Default: [20 * 45 FE]
+		ticksFor3XProduction = 900
+		#Amount of ticks for 4x production - Default: [20 * 60 * 2 FE]
+		ticksFor4XProduction = 2400
+		#Amount of ticks for 5x production - Default: [20 * 60 * 5 FE]
+		ticksFor5XProduction = 6000
+
+	[MachineResourceProductionConfig.FluidSievingMachineConfig]
+		#Progress bar size [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Tick - Default: [40FE]
+		powerPerTick = 40
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Max Amount of Stored Fluid - Default: [8000mB]
+		maxTankSize = 8000
+
+	[MachineResourceProductionConfig.WashingFactoryConfig]
+		#Progress bar size [20 Ticks per Second] - Default: [100 (5s)]
+		maxProgress = 100
+		#Amount of Power Consumed per Tick - Default: [60FE]
+		powerPerTick = 60
+		#Max Stored Power [FE] - Default: [10000 FE]
+		maxStoredPower = 10000
+		#Max Amount of Stored Fluid [Meat] - Default: [8000mB]
+		maxTankSize = 8000
+		#Max Amount of Output Fluid  - Default: [8000mB]
+		maxOutputSize = 8000
+

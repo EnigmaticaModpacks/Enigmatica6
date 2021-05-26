@@ -3,7 +3,7 @@ events.listen('recipes', (event) => {
         recipes: [
             { inputTag: '#forge:ores/iron', output: 'astralsorcery:starmetal_ore', starlight: 100 },
             { inputTag: '#forge:ores/diamond', output: 'emendatusenigmatica:emerald_ore', starlight: 1000 },
-            { inputTag: '#forge:workbench', output: 'astralsorcery:altar_discovery', starlight: 60 }
+            { inputTag: 'resourcefulbees:starry_honeycomb_block', output: 'astralsorcery:rock_crystal_ore', starlight: 1000 }
         ]
     };
     data.recipes.forEach((recipe) => {

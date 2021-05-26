@@ -1,10 +1,11 @@
 {
 	id: "000000000000009E",
-	group: "",
-	order_index: 25,
+	group: "5A8B89F87F77CF4C",
+	order_index: 6,
 	filename: "natures_aura",
 	title: "Nature's Aura",
 	icon: "naturesaura:gold_leaf",
+	subtitle: ["Drain your surroundings"],
 	default_quest_shape: "",
 	images: [
 		{
@@ -14,7 +15,7 @@
 			height: 0.0d,
 			rotation: 0.0d,
 			image: "#FFFFFF",
-			hover: [],
+			hover: [ ],
 			click: "",
 			dev: false,
 			corner: false
@@ -26,7 +27,7 @@
 			height: 0.0d,
 			rotation: 0.0d,
 			image: "#FFFFFF",
-			hover: [],
+			hover: [ ],
 			click: "",
 			dev: false,
 			corner: false
@@ -38,7 +39,7 @@
 			height: 0.0d,
 			rotation: 0.0d,
 			image: "#FFFFFF",
-			hover: [],
+			hover: [ ],
 			click: "",
 			dev: false,
 			corner: false
@@ -54,7 +55,7 @@
 			description: [
 				"Nature's Aura is a druidic themed magi-tech mod that uses the omnipresent 'aura' to derive its power. ",
 				"",
-				"Be warned, Aura is a limited resoure which must be managed and replenished lest the natural order be disturbed. Draining too much can cause dire consequences.",
+				"Be warned, Aura is a limited resource which must be managed and replenished lest the natural order be disturbed. Draining too much can cause dire consequences.",
 				"",
 				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information. Chapters will unlock as you complete these quests and their associated achievements. ",
 				"",
@@ -68,6 +69,7 @@
 			rewards: [{
 				id: "00000000000000A6",
 				type: "item",
+				title: "Shears",
 				item: {
 					id: "minecraft:shears",
 					Count: 1b,
@@ -284,6 +286,7 @@
 				{
 					id: "000000000000035F",
 					type: "item",
+					title: "Eir's Token",
 					item: "naturesaura:break_prevention"
 				},
 				{
@@ -300,7 +303,7 @@
 			x: 1.5d,
 			y: -14.0d,
 			subtitle: "In Wrong, There Is Some Right",
-			description: ["Gold makes an excellent recepticle for the souls of the departed."],
+			description: ["Gold makes an excellent receptacle for the souls of the departed."],
 			dependencies: ["00000000000002B5"],
 			id: "00000000000002B9",
 			tasks: [{
@@ -345,7 +348,7 @@
 			x: 3.0d,
 			y: -13.5d,
 			subtitle: "In Darkness, Some Light",
-			description: ["Iron makes an excellent recepticle for the essence of life. "],
+			description: ["Iron makes an excellent receptacle for the essence of life. "],
 			dependencies: ["00000000000002B5"],
 			id: "00000000000002BD",
 			tasks: [{
@@ -366,7 +369,7 @@
 			title: "The Body Follows the Mind",
 			x: 1.0d,
 			y: -12.5d,
-			description: ["To master your emotions is not to supress them. It is to process them with diligence."],
+			description: ["To master your emotions is not to suppress them. It is to process them with diligence."],
 			dependencies: ["00000000000000A2"],
 			id: "00000000000002BF",
 			tasks: [
@@ -395,6 +398,7 @@
 				{
 					id: "000000000000035E",
 					type: "item",
+					title: "Token of Undying Friendship",
 					item: "naturesaura:pet_reviver"
 				},
 				{
@@ -440,6 +444,7 @@
 				{
 					id: "0000000000000702",
 					type: "item",
+					title: "Ancient Log",
 					item: "naturesaura:ancient_log",
 					count: 32
 				}
@@ -489,6 +494,7 @@
 			rewards: [{
 				id: "0000000000000359",
 				type: "item",
+				title: "Gold Leaf",
 				item: "naturesaura:gold_leaf",
 				count: 32
 			}]
@@ -583,6 +589,7 @@
 			rewards: [{
 				id: "000000000000032D",
 				type: "item",
+				title: "Botanist's Pickaxe",
 				item: {
 					id: "naturesaura:infused_iron_pickaxe",
 					Count: 1b,
@@ -719,6 +726,7 @@
 			rewards: [{
 				id: "000000000000032B",
 				type: "item",
+				title: "Industrial Dimmer",
 				item: "rsgauges:industrial_dimmer"
 			}]
 		},
@@ -770,6 +778,7 @@
 			rewards: [{
 				id: "0000000000000364",
 				type: "item",
+				title: "Staff of Baldur",
 				item: "naturesaura:light_staff"
 			}]
 		},
@@ -796,11 +805,13 @@
 				{
 					id: "000000000000031E",
 					type: "item",
+					title: "Item Frame",
 					item: "minecraft:item_frame"
 				},
 				{
 					id: "000000000000031F",
 					type: "item",
+					title: "Farming Stencil",
 					item: "naturesaura:farming_stencil"
 				}
 			]
@@ -903,7 +914,7 @@
 			y: -7.0d,
 			subtitle: "Abaddon's Gate",
 			description: [
-				"Ender Chests with a twist. Ender Crates can be assigned to a channel in an Anvil by simulatneously renaming them and combining them with an Eye of Ender.",
+				"Ender Chests with a twist. Ender Crates can be assigned to a channel in an Anvil by simultaneously renaming them and combining them with an Eye of Ender.",
 				"",
 				"A small amount of Aura is used every time and items is moved in or out of the crate."
 			],
@@ -919,11 +930,13 @@
 				{
 					id: "000000000000033D",
 					type: "item",
+					title: "Ender Ocular",
 					item: "naturesaura:ender_access"
 				},
 				{
 					id: "000000000000033E",
 					type: "item",
+					title: "Eye of Ender",
 					item: "minecraft:ender_eye",
 					count: 2
 				}
@@ -945,6 +958,7 @@
 			rewards: [{
 				id: "0000000000000363",
 				type: "item",
+				title: "Portal Charm",
 				item: "darkutils:charm_portal"
 			}]
 		},
@@ -968,6 +982,7 @@
 			rewards: [{
 				id: "000000000000031D",
 				type: "item",
+				title: "Item Frame",
 				item: "minecraft:item_frame",
 				count: 4
 			}]
@@ -1071,8 +1086,8 @@
 		{
 			title: "Esoteric Ecology",
 			icon: "naturesaura:chorus_generator",
-			x: -1.5d,
-			y: -15.0d,
+			x: -1.0d,
+			y: -15.5d,
 			description: ["Generating Aura doesn't stop here. Check the Book of Natural Aura for other more advanced options for keeping the Aura around you from depleting."],
 			dependencies: ["00000000000002C1"],
 			id: "000000000000031A",
@@ -1169,6 +1184,7 @@
 				{
 					id: "0000000000000354",
 					type: "item",
+					title: "Powder Manipulator",
 					item: "naturesaura:powder_placer"
 				},
 				{
@@ -1180,6 +1196,27 @@
 					player_command: false
 				}
 			]
+		},
+		{
+			x: -2.0d,
+			y: -15.5d,
+			subtitle: "To the Stars!",
+			description: ["Growing Crystals under clear view of the sky has been known to bind the great energies of the stars into their lattice, but it seems not all of the energies are bound. The Crystalline Extractor absorbs this lost energy as crystals grow nearby, converting it into a powerful source of Aura."],
+			dependencies: ["00000000000002C1"],
+			id: "212224CE33D89381",
+			tasks: [{
+				id: "280C9FCBE6C8646D",
+				type: "item",
+				item: "naturesstarlight:crystal_generator"
+			}],
+			rewards: [{
+				id: "6C5991B03D429D92",
+				type: "command",
+				title: "Epic Nature's Aura Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_natures_aura_loot_epic",
+				player_command: false
+			}]
 		}
 	]
 }

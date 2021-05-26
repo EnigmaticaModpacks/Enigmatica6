@@ -1,3 +1,4 @@
 events.listen('item.tags', (event) => {
-    event.get('minecraft:birch_logs').add('#byg:palo_verde_logs');
+    event.add('minecraft:birch_logs', ['#byg:palo_verde_logs']);
+    event.add('minecraft:logs', ['#upgrade_aquatic:driftwood_logs']);
 });

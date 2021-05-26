@@ -2,14 +2,18 @@
 events.listen('recipes', (event) => {
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
+        //console.log(`Recipe for Material: ${material}, Type: ${type}`);
         pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
+        thermal_stoneworks(event, material);
     });
 
     generatableStone.forEach((material) => {
         var type = 'stone';
+        //console.log(`Recipe for Material: ${material}, Type: ${type}`);
         pedestals_stoneworks(event, material, type);
         industrialforegoing_stoneworks(event, material, type);
+        thermal_stoneworks(event, material);
     });
 });
 
@@ -20,7 +24,7 @@ function pedestals_stoneworks(event, material, type) {
     if (type == 'stone') {
         recipeType = 'pedestals:pedestal_cobblegensilk';
     }
-
+    //console.log(`Pedestals Recipe for Material: ${material}, Type: ${type}`);
     event.custom({
         type: recipeType,
         ingredient: {
@@ -52,5 +56,16 @@ function industrialforegoing_stoneworks(event, material, type) {
         waterConsume: waterConsume,
         lavaConsume: lavaConsume,
         type: 'industrialforegoing:stonework_generate'
+    });
+}
+
+function thermal_stoneworks(event, material) {
+    event.custom({
+        type: 'thermal:rock_gen',
+        adjacent: 'minecraft:water',
+        below: material,
+        result: {
+            item: material
+        }
     });
 }

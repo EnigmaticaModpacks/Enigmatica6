@@ -1,7 +1,7 @@
 {
 	id: "0000000000000772",
-	group: "",
-	order_index: 11,
+	group: "74B3CF67FCEAB20F",
+	order_index: 1,
 	filename: "tetra",
 	title: "Tetra",
 	icon: {
@@ -17,6 +17,7 @@
 			"double/basic_hammer_left_material": "basic_hammer/iron"
 		}
 	},
+	subtitle: ["Blocksmithing"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -63,6 +64,7 @@
 				{
 					id: "0000000000000845",
 					type: "item",
+					title: "Wooden Hammer",
 					item: {
 						id: "tetra:modular_double",
 						Count: 1b,
@@ -80,12 +82,13 @@
 				{
 					id: "0000000000000891",
 					type: "item",
+					title: "Hamburger",
 					item: "farmersdelight:hamburger"
 				}
 			]
 		},
 		{
-			title: "Holoshpere",
+			title: "Holosphere",
 			icon: {
 				id: "tetra:holo",
 				Count: 1b,
@@ -100,7 +103,7 @@
 			y: -22.0d,
 			subtitle: "It's your only hope!",
 			description: [
-				"The Holoshpere has information about every material, tool and upgrade available in Tetra.",
+				"The Holosphere has information about every material, tool and upgrade available in Tetra.",
 				"",
 				"",
 				"The Eye of Ender is for an upgrade which allows you to find Forges a bit easier, just put the Holosphere in your Workbench to apply it."
@@ -125,6 +128,7 @@
 			rewards: [{
 				id: "000000000000088E",
 				type: "item",
+				title: "Eye of Ender",
 				item: "minecraft:ender_eye"
 			}]
 		},
@@ -199,18 +203,21 @@
 				{
 					id: "0000000000000A3E",
 					type: "item",
+					title: "Training Arrow",
 					item: "archers_paradox:training_arrow",
 					count: 64
 				},
 				{
 					id: "0000000000000A3F",
 					type: "item",
+					title: "Explosive Arrow",
 					item: "archers_paradox:explosive_arrow",
 					count: 16
 				},
 				{
 					id: "0000000000000A40",
 					type: "item",
+					title: "Arrow of Slowness",
 					item: {
 						id: "minecraft:tipped_arrow",
 						Count: 1b,
@@ -223,6 +230,7 @@
 				{
 					id: "0000000000000A41",
 					type: "item",
+					title: "Arrow",
 					item: "minecraft:arrow",
 					count: 64
 				}
@@ -290,6 +298,7 @@
 			rewards: [{
 				id: "0000000000000A4E",
 				type: "item",
+				title: "Tectonic Grenade",
 				item: "thermal:earth_grenade",
 				count: 16
 			}]
@@ -338,6 +347,7 @@
 			rewards: [{
 				id: "0000000000000853",
 				type: "item",
+				title: "Thermal Cell",
 				item: {
 					id: "tetra:magmatic_cell",
 					Count: 1b,
@@ -381,6 +391,7 @@
 				{
 					id: "0000000000000A4B",
 					type: "item",
+					title: "Lava Bucket",
 					item: "minecraft:lava_bucket"
 				},
 				{
@@ -417,6 +428,7 @@
 			rewards: [{
 				id: "000000000000085F",
 				type: "item",
+				title: "Planar Stabilizer",
 				item: "tetra:planar_stabilizer"
 			}]
 		},
@@ -440,6 +452,7 @@
 			rewards: [{
 				id: "000000000000085E",
 				type: "item",
+				title: "Combustion Chamber",
 				item: "tetra:combustion_chamber"
 			}]
 		},
@@ -546,6 +559,7 @@
 				{
 					id: "0000000000000A42",
 					type: "item",
+					title: "Copper Chunk",
 					item: "emendatusenigmatica:copper_chunk",
 					count: 8
 				},
@@ -595,12 +609,14 @@
 				{
 					id: "0000000000000A43",
 					type: "item",
+					title: "Osmium Chunk",
 					item: "emendatusenigmatica:osmium_chunk",
 					count: 8
 				},
 				{
 					id: "0000000000000A44",
 					type: "item",
+					title: "Splash Potion of Fire Resistance",
 					item: {
 						id: "minecraft:splash_potion",
 						Count: 1b,
@@ -649,11 +665,13 @@
 				{
 					id: "0000000000000A45",
 					type: "item",
+					title: "End Rod",
 					item: "minecraft:end_rod"
 				},
 				{
 					id: "0000000000000A47",
 					type: "item",
+					title: "Unbreaking II",
 					item: {
 						id: "minecraft:enchanted_book",
 						Count: 1b,
@@ -668,6 +686,7 @@
 				{
 					id: "0000000000000A48",
 					type: "item",
+					title: "Splash Potion of Swiftness",
 					item: {
 						id: "minecraft:splash_potion",
 						Count: 1b,
@@ -1113,6 +1132,7 @@
 			rewards: [{
 				id: "0000000000000A90",
 				type: "item",
+				title: "Splash Potion of Night Vision",
 				item: {
 					id: "minecraft:splash_potion",
 					Count: 1b,
@@ -1252,7 +1272,7 @@
 			},
 			x: -6.5d,
 			y: -16.0d,
-			description: ["A light and short blad that can be used for crafting and for offhand attacks. "],
+			description: ["A light and short blade that can be used for crafting and for offhand attacks. "],
 			dependencies: ["000000000000092D"],
 			optional: true,
 			id: "0000000000000935",
@@ -1294,6 +1314,7 @@
 			rewards: [{
 				id: "0000000000000A39",
 				type: "item",
+				title: "Stone Hammer",
 				item: {
 					id: "vanillahammers:stone_hammer",
 					Count: 1b,
@@ -1567,7 +1588,7 @@
 			},
 			x: -8.5d,
 			y: -23.5d,
-			description: ["The Recurve Bow has low damage/velocy, but fast draw speed."],
+			description: ["The Recurve Bow has low damage/velocity, but fast draw speed."],
 			dependencies: ["000000000000077F"],
 			optional: true,
 			id: "0000000000000A35",

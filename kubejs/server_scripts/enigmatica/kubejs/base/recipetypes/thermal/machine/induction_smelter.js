@@ -60,6 +60,18 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['#forge:ingots/netherite', 'betterendforge:terminite_ingot'],
                 outputs: [Item.of('betterendforge:aeternium_ingot')]
+            },
+            {
+                inputs: ['#forge:dusts/refined_obsidian', '#forge:ingots/osmium'],
+                outputs: [Item.of('mekanism:ingot_refined_obsidian')]
+            },
+            {
+                inputs: ['#forge:dusts/glowstone', '#forge:ingots/osmium'],
+                outputs: [Item.of('mekanism:ingot_refined_glowstone')]
+            },
+            {
+                inputs: ['byg:quartzite_sand'],
+                outputs: [Item.of('minecraft:quartz'), Item.of('thermal:slag')]
             }
         ]
     };

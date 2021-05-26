@@ -1,10 +1,11 @@
 {
 	id: "0000000000000E7F",
-	group: "",
-	order_index: 29,
+	group: "5A8B89F87F77CF4C",
+	order_index: 5,
 	filename: "eidolon_wip",
 	title: "Eidolon",
 	icon: "eidolon:unholy_symbol",
+	subtitle: ["Praise Herobrine"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -71,12 +72,14 @@
 				{
 					id: "0000000000000ECE",
 					type: "item",
+					title: "Candle",
 					item: "eidolon:candle",
 					count: 2
 				},
 				{
 					id: "0000000000000ECF",
 					type: "item",
+					title: "Zombie Head",
 					item: "minecraft:zombie_head"
 				}
 			]
@@ -150,12 +153,14 @@
 				{
 					id: "0000000000000EC6",
 					type: "item",
+					title: "Stone Hand",
 					item: "eidolon:stone_hand",
 					count: 2
 				},
 				{
 					id: "0000000000000EC7",
 					type: "item",
+					title: "Enchanted Ash",
 					item: "eidolon:enchanted_ash",
 					count: 16
 				}
@@ -182,6 +187,7 @@
 			rewards: [{
 				id: "0000000000000EC9",
 				type: "item",
+				title: "Potion of Harming",
 				item: {
 					id: "minecraft:potion",
 					Count: 1b,
@@ -222,6 +228,7 @@
 				{
 					id: "0000000000000EBC",
 					type: "item",
+					title: "Pewter Blend",
 					item: "eidolon:pewter_blend",
 					count: 8
 				},
@@ -260,23 +267,27 @@
 				{
 					id: "0000000000000EBE",
 					type: "item",
+					title: "Redstone Dust",
 					item: "minecraft:redstone",
 					count: 2
 				},
 				{
 					id: "0000000000000EBF",
 					type: "item",
+					title: "Soul Shard",
 					item: "eidolon:soul_shard"
 				},
 				{
 					id: "0000000000000EC0",
 					type: "item",
+					title: "Gold Ingot",
 					item: "minecraft:gold_ingot",
 					count: 2
 				},
 				{
 					id: "0000000000000EC1",
 					type: "item",
+					title: "Magma Block",
 					item: "minecraft:magma_block"
 				}
 			]
@@ -368,6 +379,7 @@
 			rewards: [{
 				id: "0000000000000ED0",
 				type: "item",
+				title: "Basic Amulet",
 				item: "eidolon:basic_amulet"
 			}]
 		},
@@ -404,6 +416,7 @@
 				{
 					id: "0000000000000ED1",
 					type: "item",
+					title: "Potion of Wither",
 					item: {
 						id: "minecraft:potion",
 						Count: 1b,
@@ -415,6 +428,7 @@
 				{
 					id: "0000000000000ED2",
 					type: "item",
+					title: "Wither Skull Fragment",
 					item: "wstweaks:fragment",
 					count: 3
 				}
@@ -452,6 +466,7 @@
 			rewards: [{
 				id: "0000000000000ED3",
 				type: "item",
+				title: "Wither Skull Fragment",
 				item: "wstweaks:fragment",
 				count: 3
 			}]
@@ -506,6 +521,7 @@
 			rewards: [{
 				id: "0000000000000ED5",
 				type: "item",
+				title: "Warped Sprouts",
 				item: "eidolon:warped_sprouts",
 				count: 8
 			}]
@@ -575,6 +591,7 @@
 				{
 					id: "0000000000000EC4",
 					type: "item",
+					title: "Soul Shard",
 					item: "eidolon:soul_shard",
 					count: 16
 				},
@@ -629,18 +646,21 @@
 				{
 					id: "0000000000000ECA",
 					type: "item",
+					title: "Zombie Heart",
 					item: "eidolon:zombie_heart",
 					count: 8
 				},
 				{
 					id: "0000000000000ECB",
 					type: "item",
+					title: "Tattered Cloth",
 					item: "eidolon:tattered_cloth",
 					count: 8
 				},
 				{
 					id: "0000000000000ECC",
 					type: "item",
+					title: "Wraith Heart",
 					item: "eidolon:wraith_heart",
 					count: 8
 				}
@@ -688,6 +708,7 @@
 			rewards: [{
 				id: "0000000000000ED8",
 				type: "item",
+				title: "Wicked Weave",
 				item: "eidolon:wicked_weave",
 				count: 3
 			}]
@@ -719,6 +740,7 @@
 			rewards: [{
 				id: "0000000000000ED6",
 				type: "item",
+				title: "Obsidian",
 				item: "minecraft:obsidian",
 				count: 16
 			}]
@@ -762,6 +784,7 @@
 			rewards: [{
 				id: "0000000000000EDB",
 				type: "item",
+				title: "Music Disc",
 				item: "eidolon:music_disc_parousia"
 			}]
 		},

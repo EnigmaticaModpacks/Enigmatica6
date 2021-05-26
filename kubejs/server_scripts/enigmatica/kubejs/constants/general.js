@@ -23,7 +23,13 @@ const modPriorities = [
     'bloodmagic',
     'eidolon',
     'morevanillalib',
-    'titanium'
+    'titanium',
+    'mythicbotany',
+    'undergarden',
+    'byg',
+    'atum',
+    'betterendforge',
+    'miniutilities'
 ];
 
 // Used for recipes/tags that use colors
@@ -46,8 +52,20 @@ const colors = [
     'light_gray'
 ];
 
-// Used for tag generation
-const createStoneTypes = ['scoria', 'limestone', 'weathered_limestone', 'dolomite', 'gabbro', 'dark_scoria'];
+// Quark Crystal Cluster Colors
 
-const normalMode = global.packmode == 'expert';
+const quark_crystal_colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'white', 'black'];
+
+// Used for tag generation
+const createStoneTypes = [
+    'scoria',
+    'limestone',
+    'weathered_limestone',
+    'dolomite',
+    'gabbro',
+    'dark_scoria',
+    'natural_scoria'
+];
+
+const normalMode = global.packmode == 'normal';
 const expertMode = global.packmode == 'expert';

@@ -1,10 +1,11 @@
 {
 	id: "0000000000000044",
 	group: "",
-	order_index: 7,
+	order_index: 1,
 	filename: "getting_started",
 	title: "Getting Started",
 	icon: "minecraft:nether_star",
+	subtitle: ["All journeys, no matter how grand, must start somewhere"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -141,6 +142,7 @@
 			rewards: [{
 				id: "00000000000006EB",
 				type: "item",
+				title: "Modded for Dummies",
 				item: {
 					id: "patchouli:guide_book",
 					Count: 1b,
@@ -163,7 +165,10 @@
 				"",
 				"A few config changes require a full restart to take effect, but in most cases there's no need to restart now, as those changes will load when you launch the game next time."
 			],
-			dependencies: ["0000000000000FEB"],
+			dependencies: [
+				"0000000000000FEB",
+				"0000000000000045"
+			],
 			hide: true,
 			id: "0000000000000FE9",
 			tasks: [{
@@ -255,7 +260,7 @@
 							botania: {
 								id: "botania:lexicon",
 								Count: 1.0d,
-								tag: {}
+								tag: { }
 							},
 							thermal: {
 								id: "patchouli:guide_book",
@@ -411,7 +416,7 @@
 							botania: {
 								id: "botania:lexicon",
 								Count: 1.0d,
-								tag: {}
+								tag: { }
 							},
 							thermal: {
 								id: "patchouli:guide_book",

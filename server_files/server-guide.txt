@@ -1,0 +1,47 @@
+# Installation
+
+
+1. Run the start-server script and wait for it to complete. It will download mods, configs etc. 
+    - When the installation is complete, you should see a prompt to accept the EULA.
+    - .bat files are for Windows, .sh are for Mac / Linux.
+    - Make sure you do not have this in OneDrive or another synced folder, as those can lock up the installer.
+2. Once you accept the EULA, the server will start running. Startup will typically take 3-5 minutes.
+3. When the server has started fully, close the window.
+    - This works around a known issue where you cannot type in the console the first time you start the server.
+
+# Updating
+
+## If you are hosting the pack yourself
+
+1. Follow the Installation steps above.
+2. Stop the server.
+3. Delete the world folder.
+4. Copy the world folder from your old installation to the new.
+    - Remember to reapply any changes you have made to configs, whitelist, server.properties etc.
+5. Start the server.
+
+## If you're using a server host
+
+1. Follow the Installation steps above.
+2. Stop the server.
+3. Delete the Forge jar and the following folders from the server:
+    - configs
+    - defaultconfigs
+    - kubejs
+    - libraries
+    - mods
+4. Upload the Forge jar and the list of folders from the new server folder to your server.
+    - Remember to reapply any changes you have made to configs, mods etc.
+5. Start the server.
+
+
+**If your old server contains the file `server-setup-config.yaml`, you should also:**
+
+* Delete the following files from the server:
+    - server-setup-config.yaml
+    - serverstarter.lock
+    - startserver.bat
+    - startserver.sh
+* Upload those same files from the new server folder.
+
+_Most server hosts launch the server with the Forge jar. Steps 5-6 are only needed for server hosts that use the serverstarter script._

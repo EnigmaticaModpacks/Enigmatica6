@@ -1,10 +1,11 @@
 {
 	id: "0000000000000096",
 	group: "",
-	order_index: 6,
+	order_index: 2,
 	filename: "building",
 	title: "Building",
 	icon: "mcwwindows:oak_plank_window2_2tall",
+	subtitle: ["Spruce up your base. Or oak it up. Whatever."],
 	always_invisible: true,
 	default_quest_shape: "",
 	quests: [
@@ -34,6 +35,7 @@
 			}]
 		},
 		{
+			title: "Macaw's Doors",
 			x: -1.0d,
 			y: -2.5d,
 			dependencies: ["0000000000000E1F"],
@@ -45,6 +47,7 @@
 			}]
 		},
 		{
+			title: "Macaw's Roofs",
 			x: 1.0d,
 			y: -2.5d,
 			dependencies: ["0000000000000E1F"],
@@ -56,6 +59,7 @@
 			}]
 		},
 		{
+			title: "Macaw's Windows",
 			x: 2.0d,
 			y: -3.0d,
 			dependencies: ["0000000000000E1F"],
@@ -67,6 +71,7 @@
 			}]
 		},
 		{
+			title: "Macaw's Trapdoors",
 			x: -2.0d,
 			y: -3.0d,
 			dependencies: ["0000000000000E1F"],
@@ -75,17 +80,6 @@
 				id: "0000000000000E35",
 				type: "item",
 				item: "mcwtrpdoors:oak_glass_trapdoor"
-			}]
-		},
-		{
-			title: "EmbellishCraft",
-			x: 1.5d,
-			y: 0.0d,
-			id: "0000000000000E38",
-			tasks: [{
-				id: "0000000000000E39",
-				type: "item",
-				item: "embellishcraft:iron_beam"
 			}]
 		},
 		{

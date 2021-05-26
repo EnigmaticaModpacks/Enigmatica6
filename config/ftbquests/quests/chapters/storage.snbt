@@ -1,10 +1,11 @@
 {
 	id: "00000000000002AB",
-	group: "",
-	order_index: 9,
+	group: "0856CF7F5CBEB20A",
+	order_index: 0,
 	filename: "storage",
 	title: "Storage",
 	icon: "minecraft:chest",
+	subtitle: ["Where should you put all this cool stuff, though?"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -57,6 +58,7 @@
 			rewards: [{
 				id: "0000000000000696",
 				type: "item",
+				title: "Pipe Wrench",
 				item: "prettypipes:wrench"
 			}]
 		},
@@ -64,6 +66,7 @@
 			title: "Refined Storage",
 			x: 1.0d,
 			y: -6.0d,
+			subtitle: "Energy Mass Conversion in a Square",
 			description: [
 				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. ",
 				"",
@@ -120,8 +123,8 @@
 		},
 		{
 			icon: "mekanism:basic_bin",
-			x: -2.0d,
-			y: -9.0d,
+			x: 0.5d,
+			y: -9.5d,
 			subtitle: "I Like Big Bins and I Cannot Lie",
 			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "],
 			dependencies: ["00000000000003FF"],
@@ -176,8 +179,8 @@
 		},
 		{
 			title: "Black Hole Storage",
-			x: 1.0d,
-			y: -9.0d,
+			x: 1.5d,
+			y: -8.5d,
 			subtitle: "Physics Breaking Hoarding",
 			description: [
 				"Industrial Foregoing has massive storage capabilities. ",
@@ -204,7 +207,7 @@
 			title: "Find Me",
 			icon: "naturesaura:range_visualizer",
 			x: -2.0d,
-			y: -6.0d,
+			y: -9.0d,
 			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "],
 			dependencies: ["00000000000003FF"],
 			id: "000000000000040B",
@@ -225,7 +228,7 @@
 			title: "Plonk",
 			icon: "botania:cosmetic_thinking_hand",
 			x: -3.0d,
-			y: -5.0d,
+			y: -10.0d,
 			description: [
 				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!",
 				"",
@@ -534,7 +537,7 @@
 			description: [
 				"The Crafting Terminal upgrades the Item Terminal with built in crafting. ",
 				"",
-				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will reguest for 64 crafts, and Ctrl Click will request for 10."
+				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will request for 64 crafts, and Ctrl Click will request for 10."
 			],
 			dependencies: ["0000000000000960"],
 			id: "0000000000000962",
@@ -772,6 +775,7 @@
 			rewards: [{
 				id: "0000000000000997",
 				type: "item",
+				title: "Leather",
 				icon: "minecraft:leather",
 				item: "minecraft:leather",
 				random_bonus: 3
@@ -926,6 +930,240 @@
 				icon: "kubejs:alchemists_delight",
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
 				player_command: false
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -5.0d,
+			subtitle: "Do not screw with the regulator",
+			description: [
+				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. ",
+				"",
+				"Build your own contraption within them to suit your needs, complete with custom input and output sides. ",
+				"",
+				"Simply Right-Click a Compact Machine with the PSD to warp inside of it. "
+			],
+			dependencies: ["2A74822BE970E9D4"],
+			id: "0AD2769DC173D26D",
+			tasks: [
+				{
+					id: "6B198B6A029D9333",
+					type: "item",
+					item: "compactmachines:personal_shrinking_device"
+				},
+				{
+					id: "183F540AE4005AB2",
+					type: "item",
+					item: "compactmachines:machine_tiny"
+				}
+			],
+			rewards: [{
+				id: "07BAD39E967F6B85",
+				type: "item",
+				item: "enderstorage:ender_pouch"
+			}]
+		},
+		{
+			title: "Field Projector",
+			x: -4.5d,
+			y: -3.5d,
+			subtitle: "Non-renormalizability",
+			description: [
+				"Crafting Compact Machines themselves is done with Field Projectors. Four of them need to be placed facing each other in a cross shape. ",
+				"",
+				"Begin by placing one a few blocks off the ground and then right click it. It will show you a series of marks floating in front of it that represent valid locations for the next Projector. ",
+				"",
+				"Once the second Projector is placed, Right-Clicking again will show the final two Projector locations. ",
+				"",
+				"If done correctly, an orange force field will appear in the center. This area is where the Compact Machines themselves must be constructed. "
+			],
+			dependencies: ["4DB24091326F4C47"],
+			min_width: 250,
+			id: "5A1F6BA9BE06D643",
+			tasks: [{
+				id: "5D5A7187E1979D0D",
+				type: "item",
+				item: "compactcrafting:field_projector",
+				count: 4L
+			}],
+			rewards: [{
+				id: "36C4E2AF07DE5E40",
+				type: "item",
+				title: "Ender Chest",
+				item: "enderstorage:ender_chest"
+			}]
+		},
+		{
+			x: -2.0d,
+			y: -6.0d,
+			subtitle: "Pym Powered",
+			description: [
+				"Smaller, but equally strong? Impossible!",
+				"",
+				"Until now. ",
+				"",
+				"With Shrink’s Personal Shrinking Device in hand, shrink to the tiniest of sizes and slip through cracks even a mouse would scoff at. ",
+				"",
+				"Sneak + Right Click to shrink yourself, or left click an entity to shrink it instead. Right click a shrunken entity to bottle it up and carry it with you. Keep a villager in your pocket for good luck!"
+			],
+			dependencies: ["00000000000003FF"],
+			id: "2A74822BE970E9D4",
+			tasks: [{
+				id: "417D1AA02B005770",
+				type: "item",
+				item: {
+					id: "shrink:shrinking_device",
+					Count: 1b,
+					tag: { }
+				}
+			}],
+			rewards: [
+				{
+					id: "39498CF292AB8B53",
+					type: "item",
+					title: "Glass Bottle",
+					item: "minecraft:glass_bottle",
+					count: 8
+				},
+				{
+					id: "00012916E3BF0CC7",
+					type: "command",
+					title: "Scavenger's Delight",
+					icon: "kubejs:scavengers_delight",
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					player_command: false
+				}
+			]
+		},
+		{
+			icon: "compactmachines:machine_tiny",
+			x: -4.5d,
+			y: -2.0d,
+			subtitle: "One, cut a hole in a box",
+			description: [
+				"Gather the materials for your first Compact Machine!",
+				"",
+				"To construct it, build the multi-block shown in JEI within the field and finally drop the catalyst item into the field. The structure will animate and begin to shrink down, finally dropping the fully crafted Compact Machine on the ground. ",
+				"",
+				"The Tiny Compact Machine has an internal volume of 3x3x3 and while that seems terribly small, it is perfect for certain smaller automations. And if you yourself are shrunk it can make placing the blocks inside quite simple. ",
+				"",
+				"Make a challenge for yourself and try to automate Industrial Foregoing Latex and Rubber in one. With clever use of other mods, this could be entirely self contained, including wood, power, and transformation from latex to plastic sheets all within this tiny box. "
+			],
+			dependencies: ["5A1F6BA9BE06D643"],
+			min_width: 250,
+			id: "3787A109AABC8921",
+			tasks: [
+				{
+					id: "16A0C1D718EA19AF",
+					type: "item",
+					item: "compactmachines:machine_tiny"
+				},
+				{
+					id: "32D8F9B8CDED9E06",
+					type: "item",
+					item: "minecraft:brown_concrete",
+					count: 48L
+				},
+				{
+					id: "1AC67E05941AD859",
+					type: "item",
+					item: "immersiveengineering:sheetmetal_colored_black",
+					count: 44L
+				},
+				{
+					id: "7825B867D82C7434",
+					type: "item",
+					item: "compactmachines:wall",
+					count: 26L
+				},
+				{
+					id: "10B5CC28DFBCC2DF",
+					type: "item",
+					item: "immersiveengineering:insulating_glass",
+					count: 6L
+				},
+				{
+					id: "1E69615DDBADE72F",
+					type: "item",
+					item: "emendatusenigmatica:copper_block"
+				}
+			],
+			rewards: [{
+				id: "3E2CA8D755178794",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
+			}]
+		},
+		{
+			x: -3.0d,
+			y: -2.0d,
+			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "],
+			dependencies: ["3787A109AABC8921"],
+			id: "0DAA452348B02827",
+			tasks: [{
+				id: "21ED2337B44743E5",
+				type: "item",
+				item: "compactmachines:machine_maximum"
+			}],
+			rewards: [{
+				id: "299A8E596E259DC4",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
+			}]
+		},
+		{
+			x: -5.5d,
+			y: -1.0d,
+			subtitle: "Quantum Tunneling",
+			description: [
+				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. ",
+				"",
+				"For example, place a Tunnel on a wall and right click it until it reports it is configured to the up position, then place a chest against it. Warp back outside and place a Hopper on the top of the machine and feed in a few items. They’ll be whisked away into that chest inside. Use this concept to feed items into or out of the machine, as necessary. ",
+				"",
+				"Of course, many other options exist for getting stuff in and out. Ender Storage for items and fluids, Ender Gates for power, etc. "
+			],
+			dependencies: ["3787A109AABC8921"],
+			id: "5511E0236BA3BDCA",
+			tasks: [{
+				id: "2D8BF6B60DE16FC8",
+				type: "item",
+				item: {
+					id: "compactmachines:tunnel",
+					Count: 1b,
+					tag: {
+						definition: {
+							id: "compactmachines:item"
+						}
+					}
+				}
+			}],
+			rewards: [{
+				id: "526E10A2F22FF97C",
+				type: "command",
+				title: "Scavenger's Delight",
+				icon: "kubejs:scavengers_delight",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				player_command: false
+			}]
+		},
+		{
+			icon: "minecraft:structure_void",
+			x: -4.0d,
+			y: -4.5d,
+			dependencies: ["0AD2769DC173D26D"],
+			hide: true,
+			id: "4DB24091326F4C47",
+			tasks: [{
+				id: "0E48747CD5A70977",
+				type: "gamestage",
+				title: "impossible",
+				stage: "impossible"
 			}]
 		}
 	]

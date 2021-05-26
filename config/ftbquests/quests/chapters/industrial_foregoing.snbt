@@ -1,10 +1,11 @@
 {
 	id: "0000000000000003",
-	group: "",
-	order_index: 18,
+	group: "72A9465344128AF9",
+	order_index: 2,
 	filename: "industrial_foregoing",
 	title: "Industrial Foregoing",
 	icon: "industrialforegoing:latex_processing_unit",
+	subtitle: ["Single-block shenanigans"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -40,12 +41,14 @@
 				{
 					id: "0000000000000628",
 					type: "item",
+					title: "Acacia Log",
 					item: "minecraft:acacia_log",
 					count: 32
 				},
 				{
 					id: "0000000000000CAB",
 					type: "item",
+					title: "Acacia Sapling",
 					item: "minecraft:acacia_sapling",
 					count: 8
 				}
@@ -66,6 +69,7 @@
 			rewards: [{
 				id: "0000000000000625",
 				type: "item",
+				title: "Iron Ingot",
 				item: "minecraft:iron_ingot",
 				count: 8
 			}]
@@ -128,6 +132,7 @@
 			rewards: [{
 				id: "0000000000000626",
 				type: "item",
+				title: "Meat Feeder",
 				item: "industrialforegoing:meat_feeder"
 			}]
 		},
@@ -174,15 +179,150 @@
 			],
 			id: "0000000000000076",
 			tasks: [{
-				id: "0000000000000077",
+				id: "4575DF59F40FC7EF",
 				type: "item",
+				title: "Any Addon",
 				item: {
-					id: "industrialforegoing:range_addon3",
+					id: "itemfilters:or",
 					Count: 1b,
 					tag: {
-						TitaniumAugment: {
-							Range: 3.0f
-						}
+						items: [
+							{
+								id: "industrialforegoing:range_addon0",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 0.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon1",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 1.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon2",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 2.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon3",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 3.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon4",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 4.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon5",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 5.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon6",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 6.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon7",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 7.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon9",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 9.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon10",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 10.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:range_addon11",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Range: 11.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:efficiency_addon_1",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Efficiency: 0.9f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:efficiency_addon_2",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Efficiency: 0.8f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:speed_addon_1",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Speed: 2.0f
+									}
+								}
+							},
+							{
+								id: "industrialforegoing:speed_addon_2",
+								Count: 1b,
+								tag: {
+									TitaniumAugment: {
+										Speed: 3.0f
+									}
+								}
+							}
+						]
 					}
 				}
 			}],
@@ -276,6 +416,7 @@
 				{
 					id: "0000000000000F3B",
 					type: "item",
+					title: "Common Black Hole Tank",
 					item: {
 						id: "industrialforegoing:common_black_hole_tank",
 						Count: 1b,
@@ -284,7 +425,7 @@
 								filter: {
 									Type: "WHITELIST",
 									Pointer: 0,
-									Filter: {}
+									Filter: { }
 								},
 								tank: {
 									FluidName: "industrialforegoing:essence",
@@ -326,7 +467,7 @@
 		},
 		{
 			x: 0.0d,
-			y: -5.0d,
+			y: -5.5d,
 			description: ["The Bioreactor can process up to nine different types of plant-based items at once to make Biofuel; the more slots that are filled, the higher the efficiency. Biofuel can be used to make power with the Biofuel Generator, or to run Infinity tools."],
 			dependencies: ["000000000000004F"],
 			id: "0000000000000080",
@@ -339,18 +480,21 @@
 				{
 					id: "000000000000062C",
 					type: "item",
+					title: "Beetroot",
 					item: "minecraft:beetroot",
 					count: 8
 				},
 				{
 					id: "000000000000062D",
 					type: "item",
+					title: "Carrot",
 					item: "minecraft:carrot",
 					count: 8
 				},
 				{
 					id: "000000000000062E",
 					type: "item",
+					title: "Potato",
 					item: "minecraft:potato",
 					count: 8
 				}
@@ -387,6 +531,7 @@
 			rewards: [{
 				id: "0000000000000F36",
 				type: "item",
+				title: "Common Black Hole Tank",
 				item: {
 					id: "industrialforegoing:common_black_hole_tank",
 					Count: 1b,
@@ -395,7 +540,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "industrialforegoing:biofuel",
@@ -431,6 +576,7 @@
 			rewards: [{
 				id: "0000000000000634",
 				type: "item",
+				title: "Fertilizer",
 				item: "industrialforegoing:fertilizer",
 				count: 16
 			}]
@@ -472,6 +618,7 @@
 			rewards: [{
 				id: "0000000000000EE0",
 				type: "item",
+				title: "Ether Gas Bucket",
 				item: "industrialforegoing:ether_gas_bucket"
 			}]
 		},
@@ -730,6 +877,7 @@
 			rewards: [{
 				id: "0000000000000F37",
 				type: "item",
+				title: "Common Black Hole Tank",
 				item: {
 					id: "industrialforegoing:common_black_hole_tank",
 					Count: 1b,
@@ -738,7 +886,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "industrialforegoing:biofuel",
@@ -787,6 +935,7 @@
 			rewards: [{
 				id: "0000000000000F38",
 				type: "item",
+				title: "Common Black Hole Tank",
 				item: {
 					id: "industrialforegoing:common_black_hole_tank",
 					Count: 1b,
@@ -795,7 +944,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "industrialforegoing:biofuel",
@@ -841,6 +990,7 @@
 			rewards: [{
 				id: "0000000000000F39",
 				type: "item",
+				title: "Common Black Hole Tank",
 				item: {
 					id: "industrialforegoing:common_black_hole_tank",
 					Count: 1b,
@@ -849,7 +999,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "industrialforegoing:biofuel",
@@ -896,6 +1046,7 @@
 			rewards: [{
 				id: "0000000000000F3A",
 				type: "item",
+				title: "Common Black Hole Tank",
 				item: {
 					id: "industrialforegoing:common_black_hole_tank",
 					Count: 1b,
@@ -904,7 +1055,7 @@
 							filter: {
 								Type: "WHITELIST",
 								Pointer: 0,
-								Filter: {}
+								Filter: { }
 							},
 							tank: {
 								FluidName: "industrialforegoing:biofuel",
@@ -1106,7 +1257,7 @@
 		{
 			x: 11.0d,
 			y: -4.0d,
-			description: ["This block will store up to 16 black hole units or tanks and will make their contents accesible externally."],
+			description: ["This block will store up to 16 black hole units or tanks and will make their contents accessible externally."],
 			hide_dependency_lines: true,
 			dependencies: ["0000000000000EDC"],
 			id: "0000000000000F24",
@@ -1119,6 +1270,66 @@
 				id: "0000000000000F30",
 				type: "xp",
 				xp: 512
+			}]
+		},
+		{
+			x: -1.5d,
+			y: -5.5d,
+			description: ["Mechanical Dirt is used to convert FE and Liquid Meat into Mob Spawns. It respects light requirements and will spawn based on the biome it is in. It will also distribute Power and Liquid Meat to adjacent Mechanical Dirt blocks."],
+			dependencies: ["0000000000000057"],
+			id: "68F315FF23CD8A22",
+			tasks: [{
+				id: "3991AE48C18012EC",
+				type: "item",
+				item: "industrialforegoing:mechanical_dirt"
+			}],
+			rewards: [{
+				id: "0997C2E0E6DE8F76",
+				type: "item",
+				title: "Common Black Hole Tank",
+				item: {
+					id: "industrialforegoing:common_black_hole_tank",
+					Count: 1b,
+					tag: {
+						BlockEntityTag: {
+							filter: {
+								Type: "WHITELIST",
+								Pointer: 0,
+								Filter: { }
+							},
+							tank: {
+								FluidName: "industrialforegoing:meat",
+								FacingModes: {
+									TOP: "ENABLED",
+									LEFT: "ENABLED",
+									FRONT: "ENABLED",
+									RIGHT: "ENABLED",
+									BACK: "ENABLED",
+									BOTTOM: "ENABLED"
+								},
+								Amount: 16000
+							}
+						}
+					}
+				}
+			}]
+		},
+		{
+			x: 6.0d,
+			y: -0.5d,
+			description: ["The Mob Duplicator will convert FE and Essence into Mobs. Capture the mob you would like to duplicate in a Mob Imprisonment Tool, put it in the Mob Duplicator, and enjoy an endless supply of your mobs."],
+			dependencies: ["000000000000007A"],
+			id: "73E9574B069570BD",
+			tasks: [{
+				id: "27D665ECBDA02E5A",
+				type: "item",
+				item: "industrialforegoing:mob_duplicator"
+			}],
+			rewards: [{
+				id: "24B8F1EFDCF5A2D9",
+				type: "item",
+				title: "Mob Imprisonment Tool",
+				item: "industrialforegoing:mob_imprisonment_tool"
 			}]
 		}
 	]

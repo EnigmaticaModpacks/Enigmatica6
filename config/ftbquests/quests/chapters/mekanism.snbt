@@ -1,10 +1,11 @@
 {
 	id: "00000000000000A5",
-	group: "",
-	order_index: 17,
+	group: "72A9465344128AF9",
+	order_index: 3,
 	filename: "mekanism",
 	title: "Mekanism",
 	icon: "mekanism:alloy_atomic",
+	subtitle: ["Marvelous Mekinery"],
 	default_quest_shape: "",
 	quests: [
 		{
@@ -17,7 +18,7 @@
 				"",
 				"Its systems do aim towards a certain amount of realism with certain concessions along the way for better game play. Within the context of the mod, the player will need to master power generation, manage heat and radiation, all while seeking the most efficient path. ",
 				"",
-				"Beyond these quests, there is no in game guide to Mekanism. However a very throuough official wiki can be found here: ",
+				"Beyond these quests, there is no in game guide to Mekanism. However a very thorough official wiki can be found here: ",
 				"",
 				"https://wiki.aidancbrady.com",
 				"",
@@ -54,6 +55,7 @@
 			rewards: [{
 				id: "00000000000006CD",
 				type: "item",
+				title: "Configurator",
 				item: {
 					id: "mekanism:configurator",
 					Count: 1b,
@@ -95,6 +97,7 @@
 			rewards: [{
 				id: "0000000000000817",
 				type: "item",
+				title: "Geiger Counter",
 				item: "mekanism:geiger_counter"
 			}]
 		},
@@ -122,12 +125,14 @@
 				{
 					id: "000000000000080D",
 					type: "item",
+					title: "Block of Coal",
 					item: "minecraft:coal_block",
 					count: 32
 				},
 				{
 					id: "0000000000000CAA",
 					type: "item",
+					title: "Advanced Energy Cube",
 					item: "mekanism:advanced_energy_cube"
 				}
 			]
@@ -137,7 +142,7 @@
 			y: 2.0d,
 			subtitle: "100% Cancer-Free",
 			description: [
-				"Lava has a tendency to set things on fire, which some would deem undesireable. As a step up from the Heat Generator, there's the Wind Generator. ",
+				"Lava has a tendency to set things on fire, which some would deem undesirable. As a step up from the Heat Generator, there's the Wind Generator. ",
 				"",
 				"Even at sea-level this will out-produce the heat generator's passive mode, however placing it higher in the world allows it to generate even more. "
 			],
@@ -160,6 +165,7 @@
 				{
 					id: "0000000000000864",
 					type: "item",
+					title: "Basic Universal Cable",
 					item: "mekanism:basic_universal_cable",
 					count: 16
 				}
@@ -172,7 +178,7 @@
 			description: [
 				"The Gas-Burning Generator primarily burns Ethylene to produce energy, however it can also be used to burn excess Hydrogen. Hydrogen itself produces no net gain in power, instead serving as a useful energy storage medium.",
 				"",
-				"Warning: Enigmatica 6 has reduced the efficency of Ethylene. It is slower and more costly to produce, leading to a more balanced total power gain. Ethylene retains it's high energy density and burn rate, however, so it makes an excellent burst source of power."
+				"Warning: Enigmatica 6 has reduced the efficiency of Ethylene. It is slower and more costly to produce, leading to a more balanced total power gain. Ethylene retains it's high energy density and burn rate, however, so it makes an excellent burst source of power."
 			],
 			dependencies: [
 				"00000000000006B1",
@@ -187,6 +193,7 @@
 			rewards: [{
 				id: "00000000000007D2",
 				type: "item",
+				title: "Quantum Entangloporter",
 				item: "mekanism:quantum_entangloporter",
 				count: 2
 			}]
@@ -202,7 +209,7 @@
 				"",
 				"The Induction Matrix is a roughly free-form multiblock that can be any rectangular prism from 3x3x4 up to 18x18x18.",
 				"",
-				"It consists of Induction Providers, Induction Cells, Induction Casing, and Induction Ports. The sides may be made of Structural Glass as well, though the edges must be made of Induction Casing. The interior need not be filled either, so a larger casing may be built to accomodate for future expansion. "
+				"It consists of Induction Providers, Induction Cells, Induction Casing, and Induction Ports. The sides may be made of Structural Glass as well, though the edges must be made of Induction Casing. The interior need not be filled either, so a larger casing may be built to accommodate for future expansion. "
 			],
 			dependencies: ["0000000000000709"],
 			id: "00000000000006B5",
@@ -234,6 +241,7 @@
 				{
 					id: "0000000000000705",
 					type: "item",
+					title: "Advanced Induction Cell",
 					item: "mekanism:advanced_induction_cell"
 				},
 				{
@@ -261,6 +269,7 @@
 			rewards: [{
 				id: "00000000000006CC",
 				type: "item",
+				title: "Network Reader",
 				item: {
 					id: "mekanism:network_reader",
 					Count: 1b,
@@ -331,6 +340,7 @@
 				{
 					id: "0000000000000860",
 					type: "item",
+					title: "Steel Casing",
 					item: "mekanism:steel_casing"
 				}
 			]
@@ -395,12 +405,14 @@
 				{
 					id: "0000000000000861",
 					type: "item",
+					title: "Enriched Redstone",
 					item: "mekanism:enriched_redstone",
 					count: 4
 				},
 				{
 					id: "0000000000000862",
 					type: "item",
+					title: "Enriched Carbon",
 					item: "mekanism:enriched_carbon",
 					count: 8
 				}
@@ -410,7 +422,7 @@
 			x: 0.0d,
 			y: 1.5d,
 			subtitle: "Follow Me, Don't Follow Me",
-			description: ["The crusher is an integral machine to advanaced ore processing methods, but it can also be used to mash up organics to make Bio Fuel, which can be further refined into Ethylene. "],
+			description: ["The crusher is an integral machine to advanced ore processing methods, but it can also be used to mash up organics to make Bio Fuel, which can be further refined into Ethylene. "],
 			dependencies: ["00000000000006BF"],
 			id: "00000000000006C1",
 			tasks: [{
@@ -458,6 +470,7 @@
 				{
 					id: "000000000000082C",
 					type: "item",
+					title: "Orange",
 					item: "simplefarming:orange",
 					count: 16
 				}
@@ -467,7 +480,7 @@
 			x: -1.0d,
 			y: 2.5d,
 			subtitle: "Pushing Down On Me, Pressing Down On You",
-			description: ["Certain chemical reactions only occur at greater pressures. The PRC can be used to facilitate these reactions. Of particular interest at this time is to combine the Hydrgen and Bio Fuel made in the prior steps in order to produce Ethylene for an upgraded and renewable fuel source."],
+			description: ["Certain chemical reactions only occur at greater pressures. The PRC can be used to facilitate these reactions. Of particular interest at this time is to combine the Hydrogen and Bio Fuel made in the prior steps in order to produce Ethylene for an upgraded and renewable fuel source."],
 			dependencies: [
 				"00000000000006C1",
 				"00000000000006CE"
@@ -539,6 +552,7 @@
 				{
 					id: "0000000000000CA9",
 					type: "item",
+					title: "Personal Chest",
 					item: "mekanism:personal_chest"
 				}
 			]
@@ -591,11 +605,13 @@
 				{
 					id: "0000000000000703",
 					type: "item",
+					title: "Resistive Heater",
 					item: "mekanism:resistive_heater"
 				},
 				{
 					id: "0000000000000704",
 					type: "item",
+					title: "Advanced Thermodynamic Conductor",
 					item: "mekanism:advanced_thermodynamic_conductor",
 					count: 16
 				}
@@ -606,7 +622,7 @@
 			y: 2.5d,
 			subtitle: "Keep 'Em Separated",
 			description: [
-				"Electrolysis is most commonly used to separate Water into its component parts of Hydrogen and Oxygen, though it does find itself in use in many other industrial processes. Here the Hydrgogen will be useful for combining with Bio Fuel to make Ethylene. ",
+				"Electrolysis is most commonly used to separate Water into its component parts of Hydrogen and Oxygen, though it does find itself in use in many other industrial processes. Here the Hydrogen will be useful for combining with Bio Fuel to make Ethylene. ",
 				"",
 				"Note that while Energy and Speed upgrades have no impact on the amount of Hydrogen is produced for a given amount of FE, they do still speed up the machine and both are required to run this machine at its fastest. "
 			],
@@ -621,6 +637,7 @@
 				{
 					id: "0000000000000829",
 					type: "item",
+					title: "Jetpack",
 					item: {
 						id: "mekanism:jetpack",
 						Count: 1b,
@@ -806,6 +823,7 @@
 				{
 					id: "00000000000006D5",
 					type: "item",
+					title: "Basic Tier Installer",
 					item: "mekanism:basic_tier_installer",
 					count: 3
 				},
@@ -854,6 +872,7 @@
 			rewards: [{
 				id: "000000000000070C",
 				type: "item",
+				title: "Lithium Dust",
 				item: "emendatusenigmatica:lithium_dust",
 				count: 16
 			}]
@@ -1263,24 +1282,28 @@
 				{
 					id: "000000000000082B",
 					type: "item",
+					title: "Sweet Berry Cookie",
 					item: "farmersdelight:sweet_berry_cookie",
 					count: 3
 				},
 				{
 					id: "000000000000082D",
 					type: "item",
+					title: "Honey Cookie",
 					item: "farmersdelight:honey_cookie",
 					count: 3
 				},
 				{
 					id: "000000000000082E",
 					type: "item",
+					title: "Peanut Butter Cookie",
 					item: "simplefarming:peanut_butter_cookie",
 					count: 3
 				},
 				{
 					id: "000000000000082F",
 					type: "item",
+					title: "Cookie",
 					item: "minecraft:cookie",
 					count: 3
 				},
@@ -1337,7 +1360,7 @@
 				"The materials gathered up to this point are enough to build a 5x5x9 reactor with glass top and sides, which is quite a respectable starting reactor. Use the Configurator to set the Reactor Ports appropriately.",
 				"",
 				"Tip: Place an Input Valve near the top of the structure, in line with the vents for the turbine, to allow for simpler routing of Mechanical Pipes. ",
-				"Similarly, the Coolant Output is best placed lower in the structure, again in line with the Turbine's Input Valve, to simplifiy routing of Pressurized Tubes. ",
+				"Similarly, the Coolant Output is best placed lower in the structure, again in line with the Turbine's Input Valve, to simplify routing of Pressurized Tubes. ",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock. This will automatically configure the ports when pasted."
 			],
@@ -1378,7 +1401,7 @@
 				"",
 				"The Fission reactor itself can be quite large, up to 18x18x18 if one so desires. Though it is wise to keep the entire structure contained within a single chunk. There's no sense starting off that large, however, so we'll focus on something a little more reasonable with a 5x5 base and 9 blocks tall.",
 				"",
-				'The Configurator may be used to toggle the ports betweein "Input Only", "Output Waste", and "Output Coolant". Be sure to set these accordingly.',
+				'The Configurator may be used to toggle the ports between "Input Only", "Output Waste", and "Output Coolant". Be sure to set these accordingly.',
 				"",
 				"Note: F3 + G will show the chunk boundaries. Try to plan out your reactor accordingly."
 			],
@@ -1419,7 +1442,7 @@
 			y: 0.0d,
 			subtitle: "Getting Out In Front",
 			description: [
-				"History has shown us time and time again that a Safety-First approach is the only sane way to work with something as dangerouns as nuclear physics. Three Mile Island may have been a disaster, but the fact that nobody died is a testament to the importance of safety protocols. ",
+				"History has shown us time and time again that a Safety-First approach is the only sane way to work with something as dangerous as nuclear physics. Three Mile Island may have been a disaster, but the fact that nobody died is a testament to the importance of safety protocols. ",
 				"",
 				"With that said, it's worth the effort to build some safety systems into a Mekanism fission reactor as well. The wiki has an excellent entry on circuit breakers here: ",
 				"",
@@ -1442,21 +1465,25 @@
 				{
 					id: "000000000000079C",
 					type: "item",
+					title: "Gravel",
 					item: "minecraft:gravel"
 				},
 				{
 					id: "000000000000079D",
 					type: "item",
+					title: "Observer",
 					item: "minecraft:observer"
 				},
 				{
 					id: "000000000000079E",
 					type: "item",
+					title: "Piston",
 					item: "minecraft:piston"
 				},
 				{
 					id: "000000000000079F",
 					type: "item",
+					title: "Redstone Dust",
 					item: "minecraft:redstone"
 				}
 			]
@@ -1484,6 +1511,7 @@
 				{
 					id: "00000000000007D3",
 					type: "item",
+					title: "Hazmat Mask",
 					item: {
 						id: "mekanism:hazmat_mask",
 						Count: 1b,
@@ -1495,6 +1523,7 @@
 				{
 					id: "00000000000007D4",
 					type: "item",
+					title: "Hazmat Gown",
 					item: {
 						id: "mekanism:hazmat_gown",
 						Count: 1b,
@@ -1506,6 +1535,7 @@
 				{
 					id: "00000000000007D5",
 					type: "item",
+					title: "Hazmat Pants",
 					item: {
 						id: "mekanism:hazmat_pants",
 						Count: 1b,
@@ -1517,6 +1547,7 @@
 				{
 					id: "00000000000007D7",
 					type: "item",
+					title: "Hazmat Boots",
 					item: {
 						id: "mekanism:hazmat_boots",
 						Count: 1b,
@@ -1528,6 +1559,7 @@
 				{
 					id: "00000000000007D8",
 					type: "item",
+					title: 'Sign "Radioactive Hazard"',
 					item: "engineersdecor:sign_radioactive",
 					count: 16
 				}
@@ -1642,7 +1674,7 @@
 				"",
 				"Refer to the Mekanism Wiki for assistance with the shape of this structure. Two ports with Supercharged Coils will accept power input. The other two ports will be used for inputting waste and outputting antimatter.",
 				"",
-				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that suffcient power and waste can be supplied. ",
+				"Adding more Ports with Supercharged Ports attached to them will allow the machine to run faster, assuming of course that sufficient power and waste can be supplied. ",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
@@ -1682,6 +1714,7 @@
 				{
 					id: "00000000000007D9",
 					type: "item",
+					title: "Uranium Ore",
 					item: "emendatusenigmatica:uranium_ore",
 					count: 64
 				},
@@ -1704,15 +1737,17 @@
 			description: [
 				"Fusion, the power of the stars, without which no heavier elements would exist.",
 				"",
-				"The Mekansim Wiki will assist in building the odd shape of this structure, however building the fuel supply chain is up to you. Be sure to use Reactor glass on all sides to dramatically reduce the cost of building this structure.",
+				"The Mekanism Wiki will assist in building the odd shape of this structure, however building the fuel supply chain is up to you. Be sure to use Reactor glass on all sides to dramatically reduce the cost of building this structure.",
 				"",
 				"There are a few important things to keep in mind with a Fusion Reactor. First and foremost, this is a safe energy supply that, unlike a Fission Reactor, will never melt down or cause any adverse effects.",
 				"",
 				"● When fueling the Reactor, pipe in Deuterium and Tritium separately. ",
 				"",
-				"●  Piping in D-T Fuel in addition to the direct Deuterium and Tritium feeds will drastically increase the heat of the reactor, causing it to generate steam far more quickly. ",
-				"",
 				"● The Reactor generates very little FE directly. To get the most out of it, run water through to convert to steam. Then run the steam through an Industrial Turbine. Like the Fission Reactor, keeping up with the water requirements will likely require recycling the Steam back to Water in the Turbine.",
+				"",
+				"● Piping in D-T Fuel in addition to the direct Deuterium and Tritium feeds will drastically increase the heat of the reactor, causing it to generate steam far more quickly. ",
+				"",
+				"● Connecting the Fusion Reactor to a Thermoelectric Boiler is another great way of boosting the total steam production, and therefore power production.",
 				"",
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			],
@@ -1944,7 +1979,7 @@
 			x: 3.5d,
 			y: 7.5d,
 			subtitle: "Garbage In, Garbage Out",
-			description: ["Storing items in a QIO Drive Array is rather daft if there's no way of actually getting things in or out automatically. The QIO Importers and Exporters facilitate this, allowing the ssystem to work as a wireless item transfer and storage system."],
+			description: ["Storing items in a QIO Drive Array is rather daft if there's no way of actually getting things in or out automatically. The QIO Importers and Exporters facilitate this, allowing the system to work as a wireless item transfer and storage system."],
 			dependencies: ["00000000000007C7"],
 			id: "00000000000007CB",
 			tasks: [
@@ -2045,6 +2080,7 @@
 				{
 					id: "00000000000007DF",
 					type: "item",
+					title: "Hohlraum",
 					item: "mekanismgenerators:hohlraum"
 				},
 				{
@@ -2058,6 +2094,7 @@
 				{
 					id: "0000000000000873",
 					type: "item",
+					title: 'Sign "Laser Hazard"',
 					item: "engineersdecor:sign_laser",
 					count: 16
 				}

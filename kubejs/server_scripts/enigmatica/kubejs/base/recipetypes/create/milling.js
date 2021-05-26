@@ -56,10 +56,18 @@ events.listen('recipes', (event) => {
             },
             {
                 input: '#forge:end_stones',
-                outputs: [
-                    Item.of('occultism:crushed_end_stone', 4)
-                ],
+                outputs: [Item.of('occultism:crushed_end_stone', 4)],
                 processingTime: 150
+            },
+            {
+                input: 'byg:quartzite_sand',
+                outputs: ['minecraft:quartz'],
+                processingTime: 50
+            },
+            {
+                input: 'minecraft:ancient_debris',
+                outputs: ['minecraft:netherite_scrap', Item.of('minecraft:ancient_debris', 1).withChance(0.66)],
+                processingTime: 200
             }
         ]
     };

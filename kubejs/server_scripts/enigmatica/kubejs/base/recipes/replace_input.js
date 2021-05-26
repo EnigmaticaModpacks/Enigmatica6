@@ -1,14 +1,18 @@
 events.listen('recipes', (event) => {
+    const recipes = [
+        { replaceTarget: { id: 'entangled:block' }, toReplace: 'minecraft:chest', replaceWith: '#forge:chests/wooden' }
+    ];
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
+    event.replaceInput({}, 'betterendforge:thallasium_ore', '#forge:ores/thallasium');
+    event.replaceInput({}, 'astralsorcery:starmetal_ore', '#forge:ores/starmetal');
+    event.replaceInput({}, 'mythicbotany:elementium_ore', '#forge:ores/elementium');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
     event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
     event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'thermal:coal_coke', '#forge:gems/coal_coke');
-    event.replaceInput({}, 'mapperbase:raw_bitumen', '#forge:gems/bitumen', true);
-    event.replaceInput({}, 'mapperbase:bitumen_ore', '#forge:ores/bitumen', true);
     event.replaceInput({}, 'rftoolsbase:dimensionalshard', '#forge:gems/dimensional');
     event.replaceInput({}, 'immersivepetroleum:bitumen', '#forge:gems/bitumen', true);
     event.replaceInput({}, 'ars_nouveau:mana_gem', '#forge:gems/mana');
@@ -35,13 +39,22 @@ events.listen('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
     event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
-    event.replaceInput({}, 'minecraft:nether_brick', '#forge:ingots/nether_brick');
+    event.replaceInput(
+        {
+            not: [{ type: 'ars_nouveau:glyph_recipe' }]
+        },
+        'minecraft:nether_brick',
+        '#forge:ingots/nether_brick'
+    );
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
+    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:stone', '#forge:stone', true);
+    event.replaceInput({ type: 'minecraft:crafting_shapeless' }, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:netherrack', '#forge:netherrack');
     event.replaceInput({ id: 'tetra:hammer/stone' }, 'minecraft:cobblestone', '#quark:stone_tool_materials');
     event.replaceInput({ id: 'dustrial_decor:sheet_metal' }, '#forge:ingots/iron', '#forge:plates/iron');
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
+    event.replaceInput({ id: 'tanknull:1' }, 'minecraft:coal_block', 'minecraft:sponge');
 
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
@@ -121,6 +134,18 @@ events.listen('recipes', (event) => {
         'minecraft:nether_brick'
     );
 
+    sharedDies.forEach((die) => {
+        var dieTag = `#thermal:crafting/dies/${die.thermalName}`;
+        event.replaceInput({}, `immersiveengineering:mold_${die.immersiveEngineeringName}`, dieTag);
+        event.replaceInput({}, `thermal:press_${die.thermalName}_die`, dieTag);
+    });
+    thermalDies.forEach((dieName) => {
+        event.replaceInput({}, `thermal:press_${dieName}_die`, `#thermal:crafting/dies/${dieName}`);
+    });
+    immersiveEngineeringDies.forEach((dieName) => {
+        event.replaceInput({}, `immersiveengineering:mold_${dieName}`, `#thermal:crafting/dies/${dieName}`);
+    });
+
     colors.forEach((color) => {
         var dyeTag = `#forge:dyes/${color}`;
 
@@ -149,7 +174,7 @@ events.listen('recipes', (event) => {
                 var itemTag = `#forge:${blockName}`;
                 var block = `minecraft:${color}_${blockName}`;
 
-                if (blockName === 'stained_glass_pane') {
+                if (blockName == 'stained_glass_pane') {
                     event.remove({ id: `${block}_from_glass_pane` });
                 } else {
                     event.remove({ id: block });
@@ -401,5 +426,8 @@ events.listen('recipes', (event) => {
                 '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith
             );
         });
+    });
+    recipes.forEach((recipe) => {
+        event.replaceInput(recipe.replaceTarget, recipe.toReplace, recipe.replaceWith);
     });
 });

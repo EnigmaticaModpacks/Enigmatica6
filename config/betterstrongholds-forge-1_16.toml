@@ -1,0 +1,85 @@
+
+["YUNG's Better Strongholds"]
+	# List of dimensions that will have Better Strongholds.
+	# List must be comma-separated values enclosed in square brackets.
+	# Entries must have the mod namespace included.
+	# For example: "[minecraft:overworld, minecraft:the_nether, undergarden:undergarden]"
+	# Default: "[minecraft:overworld]"
+	"Whitelisted Dimensions" = "[minecraft:overworld]"
+	# List of biomes that will NOT have Better Strongholds.
+	# List must be comma-separated values enclosed in square brackets.
+	# Entries must have the mod namespace included.
+	# For example: "[minecraft:plains, byg:alps]"
+	# Default: "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river]"
+	"Blacklisted Biomes" = "[minecraft:ocean, minecraft:frozen_ocean, minecraft:deep_ocean, minecraft:warm_ocean, minecraft:lukewarm_ocean, minecraft:cold_ocean, minecraft:deep_lukewarm_ocean, minecraft:deep_cold_ocean, minecraft:deep_frozen_ocean, minecraft:beach, minecraft:snowy_beach, minecraft:river, minecraft:frozen_river]"
+
+	###########################################################################################################
+	## General settings.
+	###########################################################################################################
+	["YUNG's Better Strongholds".General]
+		# The minimum y-value at which the STARTING ROOM of the stronghold can spawn.
+		# Note that the various pieces of the stronghold can extend above or below this value.
+		# Default: 30
+		"Min Start Y" = 30
+		# The maximum y-value at which the STARTING ROOM of the stronghold can spawn.
+		# Note that the various pieces of the stronghold can extend above or below this value.
+		# Default: 31
+		"Max Start Y" = 31
+		# The maximum y-value at which ANY piece of the stronghold can spawn.
+		# If any piece attempts to spawn such that any part of it is above this y-value,
+		# it will not spawn.
+		# In other words, this is a hard cap above which no part of the stronghold can generate.
+		# Default: 60
+		"Max Y" = 60
+		# The max number of "pieces" the stronghold will generate from the center.
+		# This number controls the general size of strongholds. Bigger number = bigger strongholds.
+		# It is HIGHLY recommended to keep this an even number!
+		# Default: 16
+		"Stronghold Size" = 16
+		# The rate at which cobwebs will spawn in various parts of the stronghold.
+		# Default: 0.1
+		"Cobweb Spawn Rate (NORMAL)" = 0.1
+		# The rate at which cobwebs will spawn around spider spawners in libraries.
+		# Default: 0.3
+		"Cobweb Spawn Rate (SPAWNER)" = 0.3
+		# The rate at which torches spawn throughout the stronghold.
+		# Default: 0.1
+		"Torch Spawn Rate" = 0.1
+		# The rate at which lanterns spawn throughout the stronghold.
+		# Default: 0.2
+		"Lantern Spawn Rate" = 0.2
+
+	###########################################################################################################
+	## Options for controlling individual pieces/rooms in the stronghold.
+	###########################################################################################################
+	["YUNG's Better Strongholds"."Piece Settings"]
+		# The max number of Grand Libraries that can spawn in a single stronghold.
+		# Default: 1
+		"Grand Library Max Count" = 1
+		# The max number of small libraries that can spawn in a single stronghold.
+		# Note that these are distinct rooms from the Grand Library, being smaller
+		# and more common (by default).
+		# Default: 2
+		"Small Library Max Count" = 2
+		# The max number of prisons that can spawn in a single stronghold.
+		# Default: 2
+		"Prison Max Count" = 2
+		# The max number of Commander (Acarii) rooms that can spawn in a single stronghold.
+		# Default: 1
+		"Commander Room (Acarii) Max Count" = 1
+		# The max number of Commander (YUNG) rooms that can spawn in a single stronghold.
+		# Default: 1
+		"Commander Room (YUNG) Max Count" = 1
+		# The max number of treasure rooms that can spawn in a single stronghold.
+		# Default: 2
+		"Treasure Room Max Count" = 2
+		# The max number of large armoury rooms that can spawn in a single stronghold.
+		# Default: 2
+		"Armoury Room (Large) Max Count" = 2
+		# The max number of small armoury rooms that can spawn in a single stronghold.
+		# Default: 2
+		"Armoury Room (Small) Max Count" = 2
+		# The max number of portal rooms that can spawn in a single stronghold.
+		# Default: 1
+		"Portal Room Max Count" = 1
+

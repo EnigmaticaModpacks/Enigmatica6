@@ -6,7 +6,7 @@
 	#Should space-clicking an item move all items from that inventory at once?
 	enableBulkTransferAll = true
 	#Should ctrl-clicking only move one item at a time instead of the full stack?
-	enableSingleTransfer = true
+	enableSingleTransfer = false
 	#Use the client implementation even on servers that have the mod installed - only useful for development purposes.
 	forceClientImplementation = false
 	#Should space-clicking move all items even if an empty slot was clicked?

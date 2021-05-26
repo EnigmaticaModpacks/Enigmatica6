@@ -13,9 +13,12 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
     event.remove({ mod: 'prettypipes' });
+    event.remove({ mod: 'ironjetpacks' });
+    event.remove({ mod: 'theoneprobe' });
 
     var outputRemovals = [
-        'bambooeverything:bamboo_bundle',
+        'aiotbotania:livingwood_shears',
+        'aiotbotania:livingrock_shears',
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
@@ -60,8 +63,6 @@ events.listen('recipes', (event) => {
 
         'astralsorcery:infuser/gold_ore',
 
-        'autumnity:turkey_piece',
-
         'bloodmagic:smelting/ingot_netherite_scrap',
 
         'botania:fertilizer_dye',
@@ -69,6 +70,8 @@ events.listen('recipes', (event) => {
         'botanypots:crafting/compact_hopper_botany_pot',
 
         'buildersaddition:iron_rod',
+
+        'byg:vermilion_sculk',
 
         'compactmachines:wall',
 
@@ -87,39 +90,61 @@ events.listen('recipes', (event) => {
         'fluxnetworks:fluxcontroller',
         'fluxnetworks:fluxcore',
 
-        'immersiveengineering:crafting/stick_steel',
-        'immersiveengineering:crafting/stick_aluminum',
-        'immersiveengineering:crafting/stick_iron',
-        'immersiveengineering:crusher/bone_meal',
-
-        'immersiveengineering:crafting/jerrycan',
-
-        'immersivepetroleum:distillationtower/oilcracking',
-
+        'industrialforegoing:laser_drill_ore/niter',
+        'industrialforegoing:laser_drill_ore/sapphire',
+        'industrialforegoing:laser_drill_ore/ruby',
+        'industrialforegoing:laser_drill_ore/ancient_debris',
+        'industrialforegoing:laser_drill_ore/arcane',
+        'industrialforegoing:laser_drill_ore/mana',
+        'industrialforegoing:laser_drill_ore/bitumen',
+        'industrialforegoing:laser_drill_ore/fluorite',
+        'industrialforegoing:laser_drill_ore/osmium',
+        'industrialforegoing:laser_drill_ore/iron',
+        'industrialforegoing:laser_drill_ore/gold',
+        'industrialforegoing:laser_drill_ore/glowstone',
+        'industrialforegoing:laser_drill_ore/emerald',
+        'industrialforegoing:laser_drill_ore/uranium',
+        'industrialforegoing:laser_drill_ore/tin',
+        'industrialforegoing:laser_drill_ore/sulfur',
+        'industrialforegoing:laser_drill_ore/silver',
+        'industrialforegoing:laser_drill_ore/redstone',
+        'industrialforegoing:laser_drill_ore/quartz',
+        'industrialforegoing:laser_drill_ore/nickel',
+        'industrialforegoing:laser_drill_ore/zinc',
+        'industrialforegoing:laser_drill_ore/lead',
+        'industrialforegoing:laser_drill_ore/lapis',
+        'industrialforegoing:laser_drill_ore/cinnabar',
+        'industrialforegoing:laser_drill_ore/diamond',
+        'industrialforegoing:laser_drill_ore/copper',
+        'industrialforegoing:laser_drill_ore/aluminum',
+        'industrialforegoing:laser_drill_ore/coal',
         'industrialforegoing:stonework_generate/andesite',
         'industrialforegoing:stonework_generate/diorite',
         'industrialforegoing:stonework_generate/granite',
 
-        'mapperbase:steel_nugget_from_blasting',
-        'mapperbase:steel_plate_from_blasting',
-        'mapperbase:steel_block_from_blasting',
-        'mapperbase:steel_ingot_from_blasting',
-        'mapperbase:steel_rod_from_blasting',
-        'mapperbase:steel_rod',
-        'mapperbase:iron_rod',
-        'mapperbase:iron_plate',
-        'mapperbase:steel_plate',
+        'immersiveengineering:crafting/stick_steel',
+        'immersiveengineering:crafting/stick_aluminum',
+        'immersiveengineering:crafting/stick_iron',
+        'immersiveengineering:crusher/bone_meal',
+        'immersiveengineering:crafting/jerrycan',
+
+        'immersivepetroleum:distillationtower/oilcracking',
 
         'mekanism:crushing/stone/to_cobblestone',
-        'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
+        'morevanillalib:obsidian',
 
         'pedestals:pedestal_cobblegen/blackstone',
         'pitg:green_dye',
 
         'quark:building/crafting/tallow_from_block',
 
+        'simplefarming:apple_pie',
+        'simplefarming:blueberry_pie',
+
+        'thermal:machine/smelter/smelter_alloy_netherite',
+        'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',
         'thermal:machine/centrifuge/centrifuge_honeycomb',
         'thermal:machine/centrifuge/centrifuge_oil_red_sand',
@@ -131,6 +156,12 @@ events.listen('recipes', (event) => {
         'thermal:machine/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:machine/plugins/integrateddynamics/sawmill_integrateddynamics_menril_log_filled',
         'thermal:storage/sugar_cane_from_block',
+        'thermal:devices/plugins/byg/tree_extractor_byg_rainbow_eucalyptus',
+        'thermal:devices/plugins/byg/tree_extractor_byg_mahogany',
+        'thermal:devices/plugins/byg/tree_extractor_byg_baobab',
+        'thermal:devices/tree_extractor/tree_extractor_jungle',
+        'thermal:signalum_dust_4',
+
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
 
@@ -152,7 +183,10 @@ events.listen('recipes', (event) => {
     var regexIdRemovals = [
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
-        /create:\w+\/bread/
+        /create:\w+\/bread/,
+        /byg:\w*red_rock_\w+_from_\w*stonecutting/,
+        /masonry:\w+wall_from_\w+_stonecutting/,
+        /masonry:\w+slab_from_\w+_stonecutting/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -235,6 +269,15 @@ events.listen('recipes', (event) => {
 
     beamRecipes.forEach((recipe) => {
         event.remove({ output: recipe.output });
+    });
+
+    stonecuttables.forEach((stoneType) => {
+        stoneType.stones.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone });
+        });
+        stoneType.onlyAsOutput.forEach((stone) => {
+            event.remove({ type: 'minecraft:stonecutting', output: stone });
+        });
     });
 
     event.remove({

@@ -15,12 +15,6 @@ events.listen('jei.information', (event) => {
             description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
         },
         {
-            items: ['bountifulbaubles:potion_wormhole'],
-            description: [
-                'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
-            ]
-        },
-        {
             items: ['powah:uraninite', 'powah:uraninite_block'],
             description: [
                 'Uraninite Ore has been removed and does not spawn naturally. To obtain Uraninite, use the Powah Energizing Orb recipe.'
@@ -41,7 +35,7 @@ events.listen('jei.information', (event) => {
         {
             items: ['thermal:basalz_rod', 'thermal:basalz_spawn_egg'],
             description: [
-                'The Basalz spawns naturally in barren or mountainous biomes. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
+                'The Basalz spawns naturally in barren biomes, such as Badlands. Mechanical Dirt and Nocturnal Powder work wonders for farming them.'
             ]
         },
         {
@@ -72,6 +66,156 @@ events.listen('jei.information', (event) => {
                 'The Fusion Reactor has been nerfed quite heavily.',
                 'It produces 60k-250k rf/t passively, but has potential for far higher output when paired with one or multiple Steam Turbines.'
             ]
+        },
+        {
+            items: [
+                'industrialforegoing:infinity_backpack',
+                'industrialforegoing:infinity_saw',
+                'industrialforegoing:infinity_drill',
+                'industrialforegoing:infinity_hammer',
+                'industrialforegoing:infinity_trident'
+            ],
+            description: [
+                "Nine Quintillion is big. Really big. You just won't believe how vastly hugely mind-bogglingly big it is."
+            ]
+        },
+        {
+            items: [
+                'industrialforegoing:infinity_backpack',
+                'industrialforegoing:infinity_saw',
+                'industrialforegoing:infinity_drill',
+                'industrialforegoing:infinity_hammer',
+                'industrialforegoing:infinity_trident'
+            ],
+            description: [
+                "Unless you plan on sitting here for a few centuries, filling this tool isn't possible through conventional means. Some say the answer lies in Nucleosynthesis instead."
+            ]
+        },
+        {
+            items: ['farmersdelight:brown_mushroom_colony', 'minecraft:brown_mushroom'],
+            description: [
+                'Plant a Brown Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
+            ]
+        },
+        {
+            items: ['farmersdelight:red_mushroom_colony', 'minecraft:red_mushroom'],
+            description: [
+                'Plant a Red Mushroom on Rich Soil in darkness to grow mushroom colonies, which may be broken for a nice yield.'
+            ]
+        },
+        {
+            items: [
+                'integratedtunnels:part_interface_energy',
+                'integratedtunnels:part_importer_energy',
+                'integratedtunnels:part_exporter_energy'
+            ],
+            description: ['Max Energy Transfer Rate has been limited to 65,536 FE per tick.']
+        },
+        {
+            items: [
+                'integratedtunnels:part_interface_fluid',
+                'integratedtunnels:part_importer_fluid',
+                'integratedtunnels:part_exporter_fluid'
+            ],
+            description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
+        },
+        {
+            items: [
+                'resourcefulbees:brass_bee',
+                'resourcefulbees:bronze_bee',
+                'resourcefulbees:constantan_bee',
+                'resourcefulbees:electrum_bee',
+                'resourcefulbees:enderium_bee',
+                'resourcefulbees:invar_bee',
+                'resourcefulbees:lumium_bee',
+                'resourcefulbees:signalum_bee'
+            ],
+            description: [
+                "Alloy Bees are made through Block to Item Mutations. Click this Bee's spawn egg in JEI for specifics."
+            ]
+        },
+        {
+            items: ['minecraft:nautilus_shell'],
+            description: ['Obtained by killing Nautilus, found in Oceans.']
+        },
+        {
+            items: ['architects_palette:twisted_sapling'],
+            description: ['Obtained by tossing Saplings through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['architects_palette:warpstone'],
+            description: ['Obtained by tossing Clay Blocks through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['architects_palette:chiseled_abyssaline_bricks'],
+            description: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
+        },
+        {
+            items: [
+                'architects_palette:abyssaline_lamp',
+                'architects_palette:abyssaline_tile_slab',
+                'architects_palette:abyssaline_tiles',
+                'architects_palette:abyssaline_brick_slab',
+                'architects_palette:abyssaline_pillar',
+                'architects_palette:abyssaline_bricks',
+                'architects_palette:abyssaline'
+            ],
+            description: [
+                'Powered by placing next to a Charged Chiseled Abyssaline Bricks. Power is transmitted through to other Abyssaline blocks.'
+            ]
+        },
+        {
+            items: [
+                'architects_palette:blank_acacia_totem',
+                'architects_palette:shocked_acacia_totem',
+                'architects_palette:placid_acacia_totem',
+                'architects_palette:grinning_acacia_totem'
+            ],
+            description: ['Right-Click with an Axe to change the face.']
+        },
+        {
+            items: ['betterendforge:silk_fiber'],
+            description: ['Obtained by killing Silk Moths which are spawned by Silk Moth Nests.']
+        },
+        {
+            items: [/upgrade_aquatic:\w+_coralstone$/],
+            description: ['Obtained by placing Coralstone next to living coral.']
+        },
+        {
+            items: ['upgrade_aquatic:coralstone'],
+            description: ['Place next to living coral to infuse.']
+        },
+        {
+            items: [/quark:\w+_crystal$/],
+            description: [
+                'Will grow up to four blocks tall if placed deep underground. Will emit particles while growing.'
+            ]
+        },
+        {
+            items: ['quark:bottled_cloud'],
+            description: ['Obtained by Right-Clicking a Glass Bottle in the air between Y Levels 126 and 132.']
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
+            description: [
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
+            ]
+        },
+        {
+            items: ['quark:root_item'],
+            description: ['Drops occasionally when breaking Cave Roots.']
         }
     ];
 
