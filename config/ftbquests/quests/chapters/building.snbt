@@ -1,95 +1,95 @@
 {
-	id: "0000000000000096",
-	group: "",
-	order_index: 2,
-	filename: "building",
-	title: "Building",
-	icon: "mcwwindows:oak_plank_window2_2tall",
-	subtitle: ["Spruce up your base. Or oak it up. Whatever."],
-	always_invisible: true,
-	default_quest_shape: "",
+	id: "0000000000000096"
+	group: ""
+	order_index: 2
+	filename: "building"
+	title: "Building"
+	icon: "mcwwindows:oak_plank_window2_2tall"
+	subtitle: ["Spruce up your base. Or oak it up. Whatever."]
+	always_invisible: true
+	default_quest_shape: ""
 	quests: [
 		{
-			title: "Building",
-			x: 0.0d,
-			y: 0.0d,
-			description: ["This chapter highlights some of the building materials you have available."],
-			id: "0000000000000E1F",
+			title: "Building"
+			x: 0.0d
+			y: 0.0d
+			description: ["This chapter highlights some of the building materials you have available."]
+			id: "0000000000000E1F"
 			tasks: [{
-				id: "0000000000000E20",
-				type: "checkmark",
-				title: "Building",
+				id: "0000000000000E20"
+				type: "checkmark"
+				title: "Building"
 				icon: "minecraft:glass"
 			}]
-		},
+		}
 		{
-			title: "Macaw's Bridges",
-			x: 0.0d,
-			y: -2.0d,
-			dependencies: ["0000000000000E1F"],
-			id: "0000000000000E2A",
+			title: "Macaw's Bridges"
+			x: 0.0d
+			y: -2.0d
+			dependencies: ["0000000000000E1F"]
+			id: "0000000000000E2A"
 			tasks: [{
-				id: "0000000000000E2B",
-				type: "item",
+				id: "0000000000000E2B"
+				type: "item"
 				item: "mcwbridges:rope_oak_bridge"
 			}]
-		},
+		}
 		{
-			title: "Macaw's Doors",
-			x: -1.0d,
-			y: -2.5d,
-			dependencies: ["0000000000000E1F"],
-			id: "0000000000000E2E",
+			title: "Macaw's Doors"
+			x: -1.0d
+			y: -2.5d
+			dependencies: ["0000000000000E1F"]
+			id: "0000000000000E2E"
 			tasks: [{
-				id: "0000000000000E2F",
-				type: "item",
+				id: "0000000000000E2F"
+				type: "item"
 				item: "mcwdoors:oak_japanese_door"
 			}]
-		},
+		}
 		{
-			title: "Macaw's Roofs",
-			x: 1.0d,
-			y: -2.5d,
-			dependencies: ["0000000000000E1F"],
-			id: "0000000000000E30",
+			title: "Macaw's Roofs"
+			x: 1.0d
+			y: -2.5d
+			dependencies: ["0000000000000E1F"]
+			id: "0000000000000E30"
 			tasks: [{
-				id: "0000000000000E31",
-				type: "item",
+				id: "0000000000000E31"
+				type: "item"
 				item: "mcwroofs:oak_attic_roof"
 			}]
-		},
+		}
 		{
-			title: "Macaw's Windows",
-			x: 2.0d,
-			y: -3.0d,
-			dependencies: ["0000000000000E1F"],
-			id: "0000000000000E32",
+			title: "Macaw's Windows"
+			x: 2.0d
+			y: -3.0d
+			dependencies: ["0000000000000E1F"]
+			id: "0000000000000E32"
 			tasks: [{
-				id: "0000000000000E33",
-				type: "item",
+				id: "0000000000000E33"
+				type: "item"
 				item: "mcwwindows:oak_window"
 			}]
-		},
+		}
 		{
-			title: "Macaw's Trapdoors",
-			x: -2.0d,
-			y: -3.0d,
-			dependencies: ["0000000000000E1F"],
-			id: "0000000000000E34",
+			title: "Macaw's Trapdoors"
+			x: -2.0d
+			y: -3.0d
+			dependencies: ["0000000000000E1F"]
+			id: "0000000000000E34"
 			tasks: [{
-				id: "0000000000000E35",
-				type: "item",
+				id: "0000000000000E35"
+				type: "item"
 				item: "mcwtrpdoors:oak_glass_trapdoor"
 			}]
-		},
+		}
 		{
-			title: "Builders Crafts and Additions",
-			x: 1.0d,
-			y: 1.0d,
-			id: "0000000000000E3B",
+			title: "Builders Crafts and Additions"
+			x: 1.0d
+			y: 1.0d
+			id: "0000000000000E3B"
 			tasks: [{
-				id: "0000000000000E3C",
-				type: "item",
+				id: "0000000000000E3C"
+				type: "item"
 				item: "buildersaddition:counter_oak_andesite"
 			}]
 		}
