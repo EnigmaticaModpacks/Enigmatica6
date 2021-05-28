@@ -149,13 +149,13 @@
 			]
 		}
 		{
-			title: "Livingwood \\& Livingrock"
-			x: -3.0d
-			y: 3.5d
-			subtitle: "Breathing New Life"
-			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials. Perhaps this essence can itself be exploited more directly?"]
-			dependencies: ["000000000000050B"]
-			id: "000000000000050F"
+			title: "Livingwood \\\\& Livingrock",
+			x: -3.0d,
+			y: 3.5d,
+			subtitle: "Breathing New Life",
+			description: ["The Pure Daisy appears to draw some essence from the earth itself, infusing it into certain nearby materials. Perhaps this essence can itself be exploited more directly?"],
+			dependencies: ["000000000000050B"],
+			id: "000000000000050F",
 			tasks: [
 				{
 					id: "000000000000051D"
@@ -495,18 +495,18 @@
 			}]
 		}
 		{
-			title: "Dice of Fate"
-			icon: "botania:dice"
-			x: 12.0d
-			y: 5.5d
-			subtitle: "Twist the Blade"
+			title: "Dice of Fate",
+			icon: "botania:dice",
+			x: 12.0d,
+			y: 4.5d,
+			subtitle: "Twist the Blade",
 			description: [
-				"It would seem that for all of your efforts, you still lack the power to kill Gaia's Guardian for good, let alone Gaia herself. It's time to dig in and double down. "
-				""
-				"Summon and defeat the Guardian's second incarnation. "
-			]
-			dependencies: ["0000000000000524"]
-			id: "000000000000052A"
+				"It would seem that for all of your efforts, you still lack the power to kill Gaia's Guardian for good, let alone Gaia herself. It's time to dig in and double down. ",
+				"",
+				"Use a Gaia Spirit Ingot in place of Terrasteel in the Gaia Arena to summon the second incarnation of the Guardian of Gaia. "
+			],
+			dependencies: ["0000000000000524"],
+			id: "000000000000052A",
 			tasks: [{
 				id: "000000000000052B"
 				type: "item"
@@ -1212,10 +1212,10 @@
 			]
 		}
 		{
-			icon: "mythicbotany:mana_infuser"
-			x: 12.0d
-			y: 7.5d
-			subtitle: "Quixotic Electro-Destabilization"
+			icon: "mythicbotany:mana_infuser",
+			x: 7.0d,
+			y: 8.0d,
+			subtitle: "Quixotic Electro-Destabilization",
 			description: [
 				"When exposed to an intense mana field, the materials native to Alfheim seem to spontaneously bond into a new substance in much the same way as Terrasteel is formed from native materials. "
 				""
@@ -1261,9 +1261,9 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 8.5d
-			subtitle: "Constuct Additional Pylons"
+			x: 7.0d,
+			y: 9.0d,
+			subtitle: "Constuct Additional Pylons",
 			description: [
 				"It has been well established at this point that mana is excellent at performing spontaneous recombinations. Some limited magics have managed to harness this by absorbing the latent mana in the globules left behind when the living pass. The Alfsteel Pylon helps to speed that process along, injecting pure mana directly into these Mendable items. "
 				""
@@ -1387,6 +1387,127 @@
 				title: "Legendary Botania Loot Box"
 				icon: "kubejs:legendary_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		},
+		{
+			title: "Water from the Well of Mimir",
+			icon: "mythicbotany:gjallar_horn_full",
+			x: 12.0d,
+			y: 5.5d,
+			subtitle: "Just a Sip and the Fae'll Love Ya!",
+			description: [
+				"Sacred water sourced from the very tree of life whose roots reach deep into all the realms. Dare you drink that which is reserved for divinity?",
+				"",
+				"Obtaining this forbidden drink will require tapping into Yggdrasil itself by making a proxy that will bind to it. ",
+				"",
+				"Craft a Branch of Yggdrasil, Right-Click it with a Gjallarhorn, and supply it mana from a Mana Spreader. After some time, the horn will fill and may be consumed."
+			],
+			dependencies: ["0000000000000524"],
+			id: "5584BFC2DE3C29D7",
+			tasks: [
+				{
+					id: "16324032C65F1E46",
+					type: "item",
+					item: "mythicbotany:yggdrasil_branch"
+				},
+				{
+					id: "7F1EEC9AD6E865F7",
+					type: "item",
+					item: "mythicbotany:gjallar_horn_empty"
+				},
+				{
+					id: "2971617F05C67734",
+					type: "item",
+					item: "mythicbotany:gjallar_horn_full"
+				}
+			],
+			rewards: [{
+				id: "620D77CA6FA8C011",
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
+			}]
+		},
+		{
+			x: 11.0d,
+			y: 8.0d,
+			subtitle: "Draining the Source",
+			description: [
+				"Once the bloodletting begins, it never stops. Find a Wandering Trader and entice them to stand in the middle of your circle of runes. ",
+				"",
+				"At least it will be quick.",
+				"",
+				"Set the ritual as described in the Lexica Botanica. The runes must be placed on Rune Holders and the Tablet placed on a Master Rune Holder. The required items are to be dropped on the ground near the Master while the Trader stands nearby. ",
+				"",
+				"Activate the ritual by right clicking the master rune with a wand of the forest. Mana is supplied from tablets or rings on your person. "
+			],
+			dependencies: ["3EA3751B482189B7"],
+			id: "1C1D719B824FB0AB",
+			tasks: [{
+				id: "0BFCAE28C250A671",
+				type: "item",
+				item: "mythicbotany:kvasir_blood"
+			}],
+			rewards: [{
+				id: "195C2F28DEEC1AE6",
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
+			}]
+		},
+		{
+			title: "Alfheim",
+			x: 12.0d,
+			y: 9.0d,
+			subtitle: "From Darkness into Light",
+			description: [
+				"Upon imbibing this disturbing drink, the portal to Alfheim will open to you allowing you to pass. ",
+				"",
+				"What awaits you on the other side?"
+			],
+			dependencies: ["1C1D719B824FB0AB"],
+			id: "47CDA7739244CE6F",
+			tasks: [{
+				id: "6D37E48268B35E38",
+				type: "item",
+				item: "mythicbotany:kvasir_mead"
+			}],
+			rewards: [{
+				id: "3542522DA81D210F",
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				player_command: false
+			}]
+		},
+		{
+			x: 12.0d,
+			y: 7.0d,
+			subtitle: "Waxing Poetic",
+			description: [
+				"With the wisdom of the Aesir safely secured, it becomes clear the only way forward is to take a step back and redouble your efforts against the guardian of this land, Gaia. Bait her once more with a Gaia Spirit Ingot and call her forth for another bout.",
+				"",
+				"With the knowledge of Mimir, you will obtain a Rune Tablet of Fimbultyr upon defeating the Guardian of Gaia II. "
+			],
+			dependencies: ["0000000000000524"],
+			id: "3EA3751B482189B7",
+			tasks: [{
+				id: "1F77ECAE16AF537E",
+				type: "item",
+				item: "mythicbotany:fimbultyr_tablet"
+			}],
+			rewards: [{
+				id: "44A3C1F87AB6977B",
+				type: "command",
+				title: "Legendary Botania Loot Box",
+				icon: "kubejs:legendary_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
 				player_command: false
 			}]
 		}
