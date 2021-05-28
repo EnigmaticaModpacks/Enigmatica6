@@ -1,194 +1,194 @@
 {
-	id: "0000000000000097",
-	group: "",
-	order_index: 3,
-	filename: "adventure",
-	title: "Adventure",
+	id: "0000000000000097"
+	group: ""
+	order_index: 3
+	filename: "adventure"
+	title: "Adventure"
 	icon: {
-		id: "minecraft:filled_map",
-		Count: 2b,
+		id: "minecraft:filled_map"
+		Count: 2b
 		tag: {
 			map: 1
 		}
-	},
-	subtitle: ["Going outside"],
-	default_quest_shape: "",
+	}
+	subtitle: ["Going outside"]
+	default_quest_shape: ""
 	quests: [
 		{
-			icon: "alexsmobs:banana",
-			x: -1.0d,
-			y: 0.0d,
-			subtitle: "Monkeys and Gorillas and Bears, Oh My!",
-			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "],
-			id: "0000000000000C7F",
+			icon: "alexsmobs:banana"
+			x: -1.0d
+			y: 0.0d
+			subtitle: "Monkeys and Gorillas and Bears, Oh My!"
+			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "]
+			id: "0000000000000C7F"
 			tasks: [{
-				id: "0000000000000C80",
-				type: "checkmark",
+				id: "0000000000000C80"
+				type: "checkmark"
 				title: "Alex's Mobs"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000C9D",
-				type: "xp",
+				id: "0000000000000C9D"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			icon: "losttrinkets:treasure_bag",
-			x: -1.0d,
-			y: 2.0d,
-			subtitle: "One Man's Trash Is Another Man's Treasure",
+			icon: "losttrinkets:treasure_bag"
+			x: -1.0d
+			y: 2.0d
+			subtitle: "One Man's Trash Is Another Man's Treasure"
 			description: [
-				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?",
-				"",
+				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?"
+				""
 				"Had one pop up on your screen? Read more about it in JEI. New trinkets may be equipped by pressing R (default) to open the menu. "
-			],
-			id: "0000000000000C81",
+			]
+			id: "0000000000000C81"
 			tasks: [{
-				id: "0000000000000C82",
-				type: "checkmark",
+				id: "0000000000000C82"
+				type: "checkmark"
 				title: "Lost Trinkets"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000CA2",
-				type: "xp",
+				id: "0000000000000CA2"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: 2.0d,
-			subtitle: "Treasure or Trap? ",
+			x: 1.0d
+			y: 2.0d
+			subtitle: "Treasure or Trap? "
 			description: [
-				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? ",
-				"",
+				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
+				""
 				"Not every site is what it seems. Beware and approach with caution. "
-			],
-			id: "0000000000000C83",
+			]
+			id: "0000000000000C83"
 			tasks: [{
-				id: "0000000000000C84",
-				type: "checkmark",
-				title: "Artifacts",
+				id: "0000000000000C84"
+				type: "checkmark"
+				title: "Artifacts"
 				icon: "artifacts:mimic_spawn_egg"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000CA0",
-				type: "xp",
+				id: "0000000000000CA0"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Dungeoneering",
-			x: 1.0d,
-			y: 0.0d,
-			subtitle: "Hack 'n Slash",
+			title: "Dungeoneering"
+			x: 1.0d
+			y: 0.0d
+			subtitle: "Hack 'n Slash"
 			description: [
-				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. ",
-				"",
+				"Explorers beware, for terrors await in many seemingly abandoned structures throughout the lands. "
+				""
 				"Treasure awaits the brave; death awaits the weak. "
-			],
-			id: "0000000000000C85",
+			]
+			id: "0000000000000C85"
 			tasks: [{
-				id: "0000000000000C86",
-				type: "checkmark",
-				title: "Dungeoneering",
+				id: "0000000000000C86"
+				type: "checkmark"
+				title: "Dungeoneering"
 				icon: "kubejs:scavengers_delight"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000C9C",
-				type: "xp",
+				id: "0000000000000C9C"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Oh, The Biomes You'll Go",
-			x: 0.0d,
-			y: -0.5d,
-			subtitle: "It's opener out there, in the wide open air.",
+			title: "Oh, The Biomes You'll Go"
+			x: 0.0d
+			y: -0.5d
+			subtitle: "It's opener out there, in the wide open air."
 			description: [
-				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. ",
-				"",
+				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
+				""
 				"Take a stroll, look around, see what you like. Maybe you’ll find a new place to call home? "
-			],
-			id: "0000000000000C89",
+			]
+			id: "0000000000000C89"
 			tasks: [{
-				id: "0000000000000C8A",
-				type: "checkmark",
-				title: "Oh, The Biomes You'll Go",
+				id: "0000000000000C8A"
+				type: "checkmark"
+				title: "Oh, The Biomes You'll Go"
 				icon: "byg:pink_cherry_sapling"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000C9F",
-				type: "xp",
+				id: "0000000000000C9F"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			icon: "meetyourfight:devils_ante",
-			x: 0.0d,
-			y: 2.5d,
-			subtitle: "Leave Nothing To Chance",
+			icon: "meetyourfight:devils_ante"
+			x: 0.0d
+			y: 2.5d
+			subtitle: "Leave Nothing To Chance"
 			description: [
-				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. ",
-				"",
+				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. "
+				""
 				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
-			],
-			id: "0000000000000C95",
+			]
+			id: "0000000000000C95"
 			tasks: [{
-				id: "0000000000000C96",
-				type: "checkmark",
+				id: "0000000000000C96"
+				type: "checkmark"
 				title: "Meet Your Fight"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000C9B",
-				type: "xp",
+				id: "0000000000000C9B"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			x: 1.5d,
-			y: 1.0d,
-			subtitle: "We're right here on this very spot.",
+			x: 1.5d
+			y: 1.0d
+			subtitle: "We're right here on this very spot."
 			description: [
-				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?",
-				"",
+				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
+				""
 				"Craft a Nature’s Compass to help locate rare or unusual biomes. "
-			],
-			id: "0000000000000C97",
+			]
+			id: "0000000000000C97"
 			tasks: [{
-				id: "0000000000000C98",
-				type: "item",
+				id: "0000000000000C98"
+				type: "item"
 				item: {
-					id: "naturescompass:naturescompass",
-					Count: 1b,
+					id: "naturescompass:naturescompass"
+					Count: 1b
 					tag: { }
 				}
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000C9E",
-				type: "xp",
+				id: "0000000000000C9E"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "The Undergarden",
-			icon: "undergarden:catalyst",
-			x: -1.5d,
-			y: 1.0d,
-			subtitle: "Down Beneath",
+			title: "The Undergarden"
+			icon: "undergarden:catalyst"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "Down Beneath"
 			description: [
-				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped.",
-				"",
+				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped."
+				""
 				"Using a catalyst on a frame of stone bricks will open the portal. The Undergarden mainly consists of several odd stone variants, but it also contains some unique ores that can be used to make tools with unique abilities."
-			],
-			id: "386EC8C30DD8EF00",
+			]
+			id: "386EC8C30DD8EF00"
 			tasks: [{
-				id: "7ACC9974FA0E7D85",
-				type: "item",
+				id: "7ACC9974FA0E7D85"
+				type: "item"
 				item: "undergarden:catalyst"
-			}],
+			}]
 			rewards: [{
-				id: "50D671240789A59B",
-				type: "xp",
+				id: "50D671240789A59B"
+				type: "xp"
 				xp: 100
 			}]
 		}
