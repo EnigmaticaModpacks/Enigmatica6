@@ -889,6 +889,98 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
 				player_command: false
 			}]
+		},
+		{
+			x: 2.0d,
+			y: 4.5d,
+			subtitle: "Sick of Tea? That's like being sick of breathing. ",
+			description: [
+				"Feeling a bit peckish? How ‘bout a nice cold one, fresh from the tap?",
+				"",
+				"Place water sources on each side to produce infinite water that can be extracted by any fluid pipe. Perfect for automation!"
+			],
+			dependencies: ["00000000000003A3"],
+			id: "3D23E5D7FA0F0A3E",
+			tasks: [{
+				id: "6EC90AFC954E42C8",
+				type: "item",
+				item: "thermal:device_water_gen"
+			}],
+			rewards: [{
+				id: "052C23B5160E5C9A",
+				type: "command",
+				title: "Rare Thermal Series Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: 2.0d,
+			y: 6.0d,
+			subtitle: "Flameo, Hotman!",
+			description: [
+				"A bit of lava, a bit of water. Boom, box of rocks. ",
+				"",
+				"The type of stone output by the Igneous Extruder is controlled by the block placed beneath it. "
+			],
+			dependencies: ["00000000000003A3"],
+			id: "724E414250F20D9C",
+			tasks: [{
+				id: "2395D1B3DDEB3FB6",
+				type: "item",
+				item: "thermal:device_rock_gen"
+			}],
+			rewards: [{
+				id: "5FF0D0F905311B5F",
+				type: "command",
+				title: "Rare Thermal Series Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: 1.0d,
+			y: 5.5d,
+			subtitle: "I laugh at gravity all the time. Hahaha, gravity!",
+			description: ["A handy device for picking up that mess those zombies left. Such inconsiderate house-guests. "],
+			dependencies: ["00000000000003A3"],
+			id: "505A3C679D3EDD3B",
+			tasks: [{
+				id: "66FA40C40EA10DE7",
+				type: "item",
+				item: "thermal:device_collector"
+			}],
+			rewards: [{
+				id: "7AE5586CD4CAE2A9",
+				type: "command",
+				title: "Rare Thermal Series Loot Box",
+				icon: "kubejs:rare_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_rare",
+				player_command: false
+			}]
+		},
+		{
+			x: 3.0d,
+			y: 5.5d,
+			subtitle: "Why is it that every time you play with magic water, I get soaked?",
+			description: ["A multi purpose cooling chamber, equally suited to making a highball or a fully formed ingot. "],
+			dependencies: ["00000000000003A3"],
+			id: "47B80FE2B94D5548",
+			tasks: [{
+				id: "7DFFBA48694F1143",
+				type: "item",
+				item: "thermal:machine_chiller"
+			}],
+			rewards: [{
+				id: "111267C52D39C197",
+				type: "command",
+				title: "Epic Thermal Series Loot Box",
+				icon: "kubejs:epic_lootbox",
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_thermal_series_loot_epic",
+				player_command: false
+			}]
 		}
 	]
 }
