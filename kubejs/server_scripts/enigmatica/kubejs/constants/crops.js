@@ -489,14 +489,6 @@ const cropRegistry = [
                 render: 'betterendforge:end_lily',
                 plant: 'betterendforge:end_lily_leaf',
                 substrate: 'water'
-            },
-            {
-                seed: 'environmental:cattail_seeds',
-                render: 'environmental:cattail_sprouts',
-                plant: 'environmental:cattail_seeds',
-                plantSecondary: 'environmental:cattail',
-                plantSecondaryRate: 'high',
-                substrate: 'dirt'
             }
         ]
     },
@@ -1983,6 +1975,14 @@ const cropRegistry = [
                 render: 'environmental:mycelium_sprouts',
                 plant: 'environmental:mycelium_sprouts',
                 substrate: 'mushroom'
+            },
+            {
+                seed: 'environmental:cattail_seeds',
+                render: 'environmental:cattail',
+                plant: 'environmental:cattail_seeds',
+                plantSecondary: 'environmental:cattail',
+                plantSecondaryRate: 'high',
+                substrate: 'dirt'
             }
         ]
     },
