@@ -12,7 +12,7 @@ events.listen('item.tags', (event) => {
         event
             .get(tag)
             .add(items)
-            .add(/_shovel/)
+            .add(/_shovel$/)
             .add(/_aiot/)
             .add(/_paxel/)
             .add(/_excavator/)
