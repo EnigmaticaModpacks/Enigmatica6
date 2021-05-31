@@ -10,13 +10,24 @@ events.listen('recipes', (event) => {
         {
             input: '#forge:gems/bitumen',
             outputs: [
-                Item.of('#emendatusenigmatica:coke_gem').toJson(),
+                Item.of('emendatusenigmatica:coke_gem').toJson(),
                 Item.of('thermal:tar').withChance(0.5).toJson(),
-                Fluid.of('thermal:creosote', heavy_oil).toJson()
+                Fluid.of('thermal:heavy_oil', 50).toJson()
             ],
             experience: 0.15,
             energy: 4000,
             id: 'thermal:machine/pyrolyzer/pyrolyzer_bitumen'
+        },
+        {
+            input: '#forge:gems/coal',
+            outputs: [
+                Item.of('emendatusenigmatica:coke_gem').toJson(),
+                Item.of('thermal:tar').withChance(0.25).toJson(),
+                Fluid.of('immersiveengineering:creosote', 250).toJson()
+            ],
+            experience: 0.15,
+            energy: 4000,
+            id: 'thermal:machine/pyrolyzer/pyrolyzer_coal'
         }
     ];
     recipes.forEach((recipe) => {

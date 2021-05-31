@@ -1177,6 +1177,140 @@ const dyeSources = [
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:light_blue_dye',
         tertiary: 'minecraft:light_gray_dye'
+    },
+
+    {
+        input: 'environmental:bird_of_paradise',
+        type: 'tall',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:white_delphinium',
+        type: 'tall',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:light_gray_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:purple_delphinium',
+        type: 'tall',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:magenta_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:blue_delphinium',
+        type: 'tall',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:pink_delphinium',
+        type: 'tall',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:magenta_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:purple_hibiscus',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:blue_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:magenta_hibiscus',
+        type: 'small',
+        primary: 'minecraft:magenta_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:pink_hibiscus',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:red_hibiscus',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:orange_hibiscus',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:yellow_hibiscus',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:white_lotus_flower',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:red_lotus_flower',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:dianthus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:lime_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:violet',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:magenta_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:bluebell',
+        type: 'small',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:cartwheel',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:cattail',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:tall_cattail',
+        type: 'tall',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:green_dye'
     }
 ];
 
