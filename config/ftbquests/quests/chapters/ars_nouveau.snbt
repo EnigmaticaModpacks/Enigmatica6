@@ -11,8 +11,8 @@
 		{
 			title: "Ars Nouveau"
 			icon: "ars_nouveau:creative_spell_book"
-			x: -0.5d
-			y: -7.5d
+			x: 2.5d
+			y: -8.0d
 			shape: "gear"
 			description: [
 				"With Ars Nouveau you will learn to harness the mana infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. "
@@ -34,7 +34,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 12.0d
 			y: -5.5d
 			subtitle: "T-U-R-R-E-T, Turret"
 			description: [
@@ -489,7 +489,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 9.5d
 			y: -4.0d
 			subtitle: "Boop the Snoot"
 			description: [
@@ -514,7 +514,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 10.5d
 			y: -5.0d
 			subtitle: "In Search of the Golden Acorn"
 			description: [
@@ -549,7 +549,7 @@
 			]
 		}
 		{
-			x: 2.5d
+			x: 8.5d
 			y: -3.5d
 			subtitle: "Whispering Winds"
 			description: [
@@ -599,7 +599,7 @@
 			]
 		}
 		{
-			x: 3.0d
+			x: 9.0d
 			y: -5.5d
 			description: [
 				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come."
@@ -648,7 +648,7 @@
 		{
 			title: "Auto-magically"
 			icon: "ars_nouveau:glyph_self"
-			x: 4.5d
+			x: 10.5d
 			y: -6.5d
 			description: ["What good is magic if it cannot be made to work for us without constant intervention?"]
 			dependencies: ["00000000000003AC"]
@@ -669,7 +669,7 @@
 		{
 			title: "Turret Practice: Micro Farms"
 			icon: "ars_nouveau:glyph_harvest"
-			x: 6.5d
+			x: 12.5d
 			y: -3.5d
 			description: [
 				"A simple and compact crop farm can be made with a spell turret with the following spell:"
@@ -709,7 +709,7 @@
 		}
 		{
 			title: "Turret Practice: Redstone Clock"
-			x: 5.5d
+			x: 11.5d
 			y: -4.0d
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?"
@@ -830,7 +830,7 @@
 		}
 		{
 			icon: "ars_nouveau:wixie_charm"
-			x: 4.5d
+			x: 10.5d
 			y: -3.5d
 			subtitle: "Wyrd Sisters"
 			description: [
@@ -864,7 +864,7 @@
 			}]
 		}
 		{
-			x: 4.5d
+			x: 10.5d
 			y: -2.5d
 			subtitle: "Nanny Ogg's Cookbook"
 			description: [
@@ -895,7 +895,7 @@
 		}
 		{
 			icon: "ars_nouveau:potion_melder"
-			x: 3.5d
+			x: 9.5d
 			y: -1.5d
 			subtitle: "Subtle Infusions"
 			description: [
@@ -948,7 +948,7 @@
 			]
 		}
 		{
-			x: 5.5d
+			x: 11.5d
 			y: -1.5d
 			subtitle: "Why Limit Happy Hour?"
 			description: ["Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. Each Flask can hold up to eight doses of potion and may even be enchanted to increase the potency or duration of the potions within. "]
@@ -982,6 +982,175 @@
 			}]
 			rewards: [{
 				id: "185995ACE655011B"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 5.5d
+			y: -6.0d
+			subtitle: "I Love the Smell of Napalm in the Morning"
+			description: [
+				"Nothing quite says “Magic” like burning reagents on a pyre!"
+				""
+				"With a specially crafted Tablet to guide the process and optional reagents to augment it, the Ritual Brazier is capable of producing a wide variety of effects. "
+				""
+				"To get it going, Right-Click the Brazier with any Tablet. If extra materials are required, they should be thrown atop the flame to be consumed. Once everything is set, Right-Click again with an empty hand to finalize the ritual. "
+			]
+			dependencies: ["00000000000003AC"]
+			id: "5ED080DAA2A7E19A"
+			tasks: [{
+				id: "729AECF6F582CCBA"
+				type: "item"
+				item: "ars_nouveau:ritual"
+			}]
+			rewards: [{
+				id: "37237F9CB81E3546"
+				type: "item"
+				item: "ars_nouveau:ritual_burrowing"
+			}]
+		}
+		{
+			icon: "ars_nouveau:ritual_disintegration"
+			x: 4.5d
+			y: -5.0d
+			subtitle: "XP = MC Squared "
+			description: [
+				"Killing monsters can be a … messy affair. Why not skip the trouble and simply distill them down into their very essence? "
+				""
+				"Monsters killed with this ritual will drop Experience Gems worth roughly double the XP they’d drop normally. But, all drops are lost in the process."
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "1DF20BDED102423B"
+			tasks: [
+				{
+					id: "688576970974E9C1"
+					type: "item"
+					item: "ars_nouveau:ritual_disintegration"
+				}
+				{
+					id: "219D304E19730D2B"
+					type: "item"
+					item: "ars_nouveau:experience_gem"
+				}
+			]
+			rewards: [{
+				id: "0E0F5F21781358A3"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 6.5d
+			y: -4.0d
+			subtitle: "Here Comes the Rain Again, Falling on my Head Like a Memory"
+			description: [
+				"Sometimes it feels like the rain just never lets up. It has soaked through your armor, flooded your cave, corroded all those fancy schmancy circuits you were told would solve your problems. "
+				""
+				"But did they solve the rain? No. Now let’s magic that rain away.  "
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "5225FAAF4623B6D0"
+			tasks: [{
+				id: "67AB5005F89FC564"
+				type: "item"
+				item: "ars_nouveau:ritual_cloudshaping"
+			}]
+			rewards: [{
+				id: "0FD4169B6D7D9DCB"
+				type: "item"
+				item: "thermal:gunpowder_block"
+			}]
+		}
+		{
+			title: "Celestial Manipulation"
+			x: 6.5d
+			y: -5.0d
+			subtitle: "Ain't nobody got time for that!"
+			description: [
+				"Are your days too short? Not enough time for your nocturnal pursuits? "
+				""
+				"Consider bending time and space to bring the sun or moon around again to for that extra boost of energy or to finish charting out those constellations you find so fascinating. "
+				""
+				"Surely nothing bad could come of this?"
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "5DDAEAD762E63EAB"
+			tasks: [
+				{
+					id: "741FD9A5813C870E"
+					type: "item"
+					item: "ars_nouveau:ritual_sunrise"
+				}
+				{
+					id: "3FFE686263CB82B2"
+					type: "item"
+					item: "ars_nouveau:ritual_moonfall"
+				}
+			]
+			rewards: [{
+				id: "658E6A4D80FA8301"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.0d
+			subtitle: "Hear Ye, Hear Ye"
+			description: [
+				"All you Lowly Pillagers, Ravaging Vindicators, and Summoners of Questionable Merit are here-by formally summoned to participate in the coming tournaments! "
+				""
+				"Summons a Pillager Raid to your back door, just in time!"
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "392EA2D4DE9EAFAB"
+			tasks: [{
+				id: "776E3AC22361BA3E"
+				type: "item"
+				item: "ars_nouveau:ritual_challenge"
+			}]
+			rewards: [{
+				id: "203CECCC321A0C3D"
+				type: "item"
+				item: "minecraft:emerald_block"
+			}]
+		}
+		{
+			title: "Fertility and Growth"
+			x: 5.5d
+			y: -3.5d
+			subtitle: "Magically Sustained Gestation"
+			description: [
+				"If you sad in life – use MSG. If you happy in life – use MSG. Put MSG in everything, it’ll turn out better. You just get baby? Put MSG on baby, make smarter."
+				""
+				"Magic does wonders when it comes to growing crops and breeding animals. Combine these two rituals to keep your livestock busy and growing quickly. "
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "54B7E584C433DC5B"
+			tasks: [
+				{
+					id: "28404A71FAAED79D"
+					type: "item"
+					item: "ars_nouveau:ritual_fertility"
+				}
+				{
+					id: "7B8A119F2B3E0B6A"
+					type: "item"
+					item: "ars_nouveau:ritual_overgrowth"
+				}
+			]
+			rewards: [{
+				id: "37131D5E140365A2"
 				type: "command"
 				title: "Rare Ars Nouveau Loot Box"
 				icon: "kubejs:rare_lootbox"
