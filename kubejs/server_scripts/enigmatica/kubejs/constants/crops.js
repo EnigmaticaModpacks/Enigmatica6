@@ -618,6 +618,18 @@ const cropRegistry = [
                 render: 'supplementaries:flax',
                 plant: 'supplementaries:flax',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:rice',
+                render: 'environmental:tall_rice',
+                plant: 'environmental:rice',
+                substrate: 'water'
+            },
+            {
+                seed: 'sushigocrafting:rice_seeds',
+                render: 'sushigocrafting:rice_crop',
+                plant: 'sushigocrafting:rice',
+                substrate: 'water'
             }
         ]
     },
@@ -681,6 +693,18 @@ const cropRegistry = [
                 seed: 'simplefarming:soybean_seeds',
                 render: 'simplefarming:soybean_crop',
                 plant: 'simplefarming:soybean',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:cucumber_seeds',
+                render: 'sushigocrafting:cucumber_crop',
+                plant: 'sushigocrafting:cucumber',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:soy_seeds',
+                render: 'sushigocrafting:soy_crop',
+                plant: 'sushigocrafting:soy_bean',
                 substrate: 'dirt'
             }
         ]
@@ -806,6 +830,12 @@ const cropRegistry = [
                 seed: 'simplefarming:peanut_seeds',
                 render: 'simplefarming:peanut_crop',
                 plant: 'simplefarming:peanut',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:sesame_seeds',
+                render: 'sushigocrafting:sesame_crop',
+                plant: 'sushigocrafting:sesame_seeds',
                 substrate: 'dirt'
             }
         ]
@@ -1472,6 +1502,108 @@ const cropRegistry = [
                 render: 'upgrade_aquatic:blue_pickerelweed',
                 plant: 'upgrade_aquatic:blue_pickerelweed',
                 substrate: 'water'
+            },
+            {
+                seed: 'environmental:bird_of_paradise',
+                render: 'environmental:bird_of_paradise',
+                plant: 'environmental:bird_of_paradise',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:white_delphinium',
+                render: 'environmental:white_delphinium',
+                plant: 'environmental:white_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:purple_delphinium',
+                render: 'environmental:purple_delphinium',
+                plant: 'environmental:purple_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:blue_delphinium',
+                render: 'environmental:blue_delphinium',
+                plant: 'environmental:blue_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:pink_delphinium',
+                render: 'environmental:pink_delphinium',
+                plant: 'environmental:pink_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:purple_hibiscus',
+                render: 'environmental:purple_hibiscus',
+                plant: 'environmental:purple_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:pink_hibiscus',
+                render: 'environmental:pink_hibiscus',
+                plant: 'environmental:pink_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:magenta_hibiscus',
+                render: 'environmental:magenta_hibiscus',
+                plant: 'environmental:magenta_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:red_hibiscus',
+                render: 'environmental:red_hibiscus',
+                plant: 'environmental:red_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:orange_hibiscus',
+                render: 'environmental:orange_hibiscus',
+                plant: 'environmental:orange_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:yellow_hibiscus',
+                render: 'environmental:yellow_hibiscus',
+                plant: 'environmental:yellow_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:white_lotus_flower',
+                render: 'environmental:white_lotus_flower',
+                plant: 'environmental:white_lotus_flower',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:red_lotus_flower',
+                render: 'environmental:red_lotus_flower',
+                plant: 'environmental:red_lotus_flower',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:dianthus',
+                render: 'environmental:dianthus',
+                plant: 'environmental:dianthus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:violet',
+                render: 'environmental:violet',
+                plant: 'environmental:violet',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:bluebell',
+                render: 'environmental:bluebell',
+                plant: 'environmental:bluebell',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:cartwheel',
+                render: 'environmental:cartwheel',
+                plant: 'environmental:cartwheel',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1837,6 +1969,20 @@ const cropRegistry = [
                 render: 'projectvibrantjourneys:sea_oats',
                 plant: 'projectvibrantjourneys:sea_oats',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:mycelium_sprouts',
+                render: 'environmental:mycelium_sprouts',
+                plant: 'environmental:mycelium_sprouts',
+                substrate: 'mushroom'
+            },
+            {
+                seed: 'environmental:cattail_seeds',
+                render: 'environmental:cattail',
+                plant: 'environmental:cattail_seeds',
+                plantSecondary: 'environmental:cattail',
+                plantSecondaryRate: 'high',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1900,6 +2046,24 @@ const cropRegistry = [
                 seed: 'minecraft:lily_pad',
                 render: 'minecraft:lily_pad',
                 plant: 'minecraft:lily_pad',
+                substrate: 'water'
+            },
+            {
+                seed: 'environmental:large_lily_pad',
+                render: 'environmental:large_lily_pad',
+                plant: 'environmental:large_lily_pad',
+                substrate: 'water'
+            },
+            {
+                seed: 'environmental:duckweed',
+                render: 'environmental:duckweed',
+                plant: 'environmental:duckweed',
+                substrate: 'water'
+            },
+            {
+                seed: 'environmental:giant_lily_pad',
+                render: 'environmental:giant_lily_pad',
+                plant: 'environmental:giant_lily_pad',
                 substrate: 'water'
             }
         ]

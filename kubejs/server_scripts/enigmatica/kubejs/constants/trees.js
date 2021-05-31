@@ -643,6 +643,55 @@ const treeRegistry = [
                 substrate: 'dirt',
                 sap: 'thermal:resin',
                 amount: 75
+            },
+            {
+                sapling: 'environmental:white_wisteria_sapling',
+                trunk: 'environmental:wisteria_log',
+                leaf: 'environmental:white_wisteria_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'environmental:purple_wisteria_sapling',
+                trunk: 'environmental:wisteria_log',
+                leaf: 'environmental:purple_wisteria_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'environmental:blue_wisteria_sapling',
+                trunk: 'environmental:wisteria_log',
+                leaf: 'environmental:blue_wisteria_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'environmental:pink_wisteria_sapling',
+                trunk: 'environmental:wisteria_log',
+                leaf: 'environmental:pink_wisteria_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'environmental:cherry_sapling',
+                trunk: 'environmental:cherry_log',
+                leaf: 'environmental:cherry_leaves',
+                fruit: 'environmental:cherries',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'environmental:willow_sapling',
+                trunk: 'environmental:willow_log',
+                leaf: 'environmental:willow_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
             }
         ]
     },

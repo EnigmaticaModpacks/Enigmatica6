@@ -1318,7 +1318,7 @@
 		#Range: 0 ~ 64
 		nether_count = 2
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = true
+		generate_in_the_nether = false
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = ["byg:glowstone_gardens", "minecraft:crimson_forest"]
@@ -1342,7 +1342,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 5
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Cinnabar Config"."The End"]
 		#Baseline Y-Level [Default: 30]
@@ -1448,7 +1448,7 @@
 		#Range: 0 ~ 64
 		nether_count = 3
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
-		generate_in_the_nether = true
+		generate_in_the_nether = false
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = ["byg:brimstone_caverns", "byg:embur_bog"]
@@ -1472,7 +1472,7 @@
 		#Range: 0 ~ 64
 		overworld_size = 7
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = true
+		generate_in_the_overworld = false
 
 	["Sulfur Config"."The End"]
 		#Baseline Y-Level [Default: 28]
@@ -1487,7 +1487,7 @@
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = ["betterendforge:sulphur_springs"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
-		generate_in_the_end = true
+		generate_in_the_end = false
 		#Average Ores per Chunk [Default: 3]
 		#Range: 0 ~ 64
 		end_count = 2

@@ -575,6 +575,35 @@ events.listen('recipes', (event) => {
                 special: { item: 'upgrade_aquatic:thrasher_tooth' },
                 base: substrates.basic
             },
+            /// Environmental
+
+            {
+                entity: 'environmental:duck',
+                size: sizes.small,
+                special: { tag: 'forge:feathers' },
+                base: substrates.basic
+            },
+            {
+                entity: 'environmental:yak',
+                size: sizes.large,
+                special: { item: 'environmental:yak_hair' },
+                base: substrates.basic
+            },
+            {
+                entity: 'environmental:deer',
+                size: sizes.medium,
+                special: { tag: 'forge:leather' },
+                base: substrates.basic
+            },
+
+            /// SushiGo Crafting
+
+            {
+                entity: 'sushigocrafting:shrimp',
+                size: sizes.tiny,
+                special: { tag: 'minecraft:fishes' },
+                base: substrates.basic
+            },
 
             /// Alex's Mobs
             {
@@ -812,6 +841,9 @@ events.listen('recipes', (event) => {
                 special: { item: 'minecraft:warped_fungus' },
                 base: substrates.hellish
             },
+
+            /// Ars Nouveau
+
             {
                 entity: 'ars_nouveau:wilden_guardian',
                 size: sizes.large,
@@ -903,7 +935,10 @@ events.listen('recipes', (event) => {
         'upgrade_aquatic:lionfish',
         'upgrade_aquatic:nautilus',
         'upgrade_aquatic:perch',
-        'upgrade_aquatic:pike'
+        'upgrade_aquatic:pike',
+        'environmental:koi',
+        'environmental:slabfish',
+        'sushigocrafting:tuna'
     ];
 
     fishList.forEach((fish) => {
