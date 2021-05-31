@@ -14,6 +14,14 @@ events.listen('recipes', (event) => {
         //         count: 1
         //     }
         // }
+
+        {
+            ingredients: [{ tag: 'forge:tools/shovels' }, { tag: 'forge:storage_blocks/clay' }],
+            result: {
+                item: 'minecraft:clay_ball',
+                count: 4
+            }
+        }
     ];
     recipes.forEach((recipe) => {
         event.custom({
