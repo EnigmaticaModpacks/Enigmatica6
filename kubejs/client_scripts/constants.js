@@ -148,6 +148,9 @@ var itemsToHide = [
     'supplementaries:stone_lamp',
     'supplementaries:sack',
     'supplementaries:blackboard',
+
+    'thermal:rubber',
+
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
     'quark:backpack',
