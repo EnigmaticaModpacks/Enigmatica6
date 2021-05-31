@@ -948,6 +948,24 @@ events.listen('recipes', (event) => {
                 E: '#forge:ingots/elementium'
             },
             id: 'mythicbotany:modified_gaia_pylon_with_alfsteel'
+        },
+        {
+            output: Item.of('industrialforegoing:tinydryrubber', 3),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:vine',
+                B: 'minecraft:water_bucket'
+            },
+            id: 'thermal:rubber_from_vine'
+        },
+        {
+            output: Item.of('industrialforegoing:tinydryrubber', 3),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:dandelion',
+                B: 'minecraft:water_bucket'
+            },
+            id: 'thermal:rubber_from_dandelion'
         }
     ];
 
