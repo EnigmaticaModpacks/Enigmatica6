@@ -71,7 +71,10 @@ var woodVariantsToConstruct = [
     'atmospheric:grimwood',
     'upgrade_aquatic:driftwood',
     'upgrade_aquatic:river',
-    'architects_palette:twisted'
+    'architects_palette:twisted',
+    'environmental:willow',
+    'environmental:cherry',
+    'environmental:wisteria'
     // 'sushigocrafting:avocado'
 ];
 
