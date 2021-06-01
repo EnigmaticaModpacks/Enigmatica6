@@ -58,7 +58,7 @@ const treeRegistry = [
                 leaf: 'byg:baobab_leaves',
                 fruit: 'byg:baobab_fruit',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -167,7 +167,7 @@ const treeRegistry = [
                 trunk: 'byg:mahogany_log',
                 leaf: 'byg:mahogany_leaves',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -245,7 +245,7 @@ const treeRegistry = [
                 trunk: 'byg:rainbow_eucalyptus_log',
                 leaf: 'byg:rainbow_eucalyptus_leaves',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -360,7 +360,7 @@ const treeRegistry = [
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'alexsmobs:banana',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {

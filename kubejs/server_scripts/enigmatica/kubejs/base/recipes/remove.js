@@ -82,6 +82,9 @@ events.listen('recipes', (event) => {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'environmental:misc/cherries/cherry_pie',
+        'environmental:misc/apple_pie',
+
         'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
         'farmersdelight:milk_bottle',
@@ -161,6 +164,8 @@ events.listen('recipes', (event) => {
         'thermal:devices/plugins/byg/tree_extractor_byg_baobab',
         'thermal:devices/tree_extractor/tree_extractor_jungle',
         'thermal:signalum_dust_4',
+        'thermal:rubber_3',
+        'thermal:smelting/cured_rubber_from_smelting',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',

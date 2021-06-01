@@ -72,11 +72,19 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['byg:quartzite_sand'],
                 outputs: [Item.of('minecraft:quartz'), Item.of('thermal:slag')]
+            },
+            {
+                inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:gems/sulfur'],
+                outputs: [Item.of('thermal:cured_rubber', 2)],
+                id: 'thermal:machine/smelter/smeler_cured_rubber'
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
+        const re = event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

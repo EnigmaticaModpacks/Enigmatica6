@@ -114,6 +114,10 @@ var itemsToHide = [
     'create:copper_ore',
     'create:zinc_ore',
     'eidolon:tallow',
+
+    'environmental:cherry_pie',
+    'environmental:apple_pie',
+
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
@@ -148,6 +152,9 @@ var itemsToHide = [
     'supplementaries:stone_lamp',
     'supplementaries:sack',
     'supplementaries:blackboard',
+
+    'thermal:rubber',
+
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
     'quark:backpack',
