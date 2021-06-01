@@ -630,6 +630,18 @@ const cropRegistry = [
                 render: 'sushigocrafting:rice_crop',
                 plant: 'sushigocrafting:rice',
                 substrate: 'water'
+            },
+            {
+                seed: 'atum:emmer_seeds',
+                render: 'atum:emmer_wheat',
+                plant: 'atum:emmer',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:flax_seeds',
+                render: 'atum:flax_block',
+                plant: 'atum:flax',
+                substrate: 'dirt'
             }
         ]
     },
