@@ -74,7 +74,9 @@ var woodVariantsToConstruct = [
     'architects_palette:twisted',
     'environmental:willow',
     'environmental:cherry',
-    'environmental:wisteria'
+    'environmental:wisteria',
+    'atum:palm',
+    'atum:deadwood'
     // 'sushigocrafting:avocado'
 ];
 

@@ -367,6 +367,9 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         case 'amber_moss':
             substrate = 'betterendforge:amber_moss';
             break;
+        case 'strange_sand':
+            substrate = 'atum:sand';
+            break;
         case 'water':
             //disabled
             return;

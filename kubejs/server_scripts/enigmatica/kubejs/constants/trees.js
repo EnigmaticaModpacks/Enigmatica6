@@ -692,6 +692,12 @@ const treeRegistry = [
                 substrate: 'dirt',
                 sap: 'thermal:resin',
                 amount: 75
+            },
+            {
+                sapling: 'atum:palm_sapling',
+                trunk: 'atum:palm_log',
+                leaf: 'atum:palm_leaves',
+                substrate: 'dirt'
             }
         ]
     },

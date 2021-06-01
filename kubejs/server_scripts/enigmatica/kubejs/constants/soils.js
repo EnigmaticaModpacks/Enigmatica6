@@ -48,6 +48,9 @@ const soilRegistry = [
     { block: 'byg:overgrown_dacite', categories: ['dirt', 'grass'], growthModifier: 0.05 },
     { block: 'minecraft:grass_block', categories: ['dirt', 'grass'], growthModifier: 0.05 },
     { block: 'byg:peat', categories: ['dirt', 'mushroom'], growthModifier: 0.25 },
+    { block: 'atum:fertile_soil', categories: ['dirt'], growthModifier: 0.2 },
+    { block: 'atum:sand', categories: ['sand', 'strange_sand'], growthModifier: 0.2 },
+
     { block: 'minecraft:mycelium', categories: ['dirt', 'mushroom'], growthModifier: 0.05 },
     { block: 'byg:overgrown_netherrack', categories: ['dirt', 'netherrack', 'nether', 'grass'], growthModifier: 0.05 },
     { block: 'byg:sythian_nylium', categories: ['dirt', 'sythian_nylium', 'nylium', 'mushroom'], growthModifier: 0.05 },
