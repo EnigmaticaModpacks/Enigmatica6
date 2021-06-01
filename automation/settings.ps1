@@ -135,7 +135,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"personality-client.toml",
 	"miniutilities-client.toml",
 	"twilightforest-client.toml",
-	"framedblocks-client.toml"
+	"framedblocks-client.toml",
+	"cfm-client.toml"
 )
 
 #=====================================================================//
