@@ -82,6 +82,9 @@ events.listen('recipes', (event) => {
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
+        'environmental:misc/cherries/cherry_pie',
+        'environmental:misc/apple_pie',
+
         'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
         'farmersdelight:milk_bottle',
