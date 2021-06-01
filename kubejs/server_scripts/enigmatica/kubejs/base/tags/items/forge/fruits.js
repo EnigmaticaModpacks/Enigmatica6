@@ -14,4 +14,5 @@ events.listen('item.tags', (event) => {
     event.add('forge:fruits/passionfruit', ['atmospheric:passionfruit']);
     event.add('forge:fruits/menril_berries', ['integrateddynamics:menril_berries']);
     event.add('forge:fruits/blueberries', ['byg:blueberries']);
+    event.add('forge:fruits/cherries', ['environmental:cherries']);
 });
