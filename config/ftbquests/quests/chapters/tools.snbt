@@ -3020,28 +3020,28 @@
 					}
 				}
 			}]
-		},
+		}
 		{
-			x: -1.0d,
-			y: -11.5d,
+			x: -1.0d
+			y: -11.5d
 			description: [
-				"A mighty weapon indeed which may only be wielded by those it finds worthy.",
-				"",
+				"A mighty weapon indeed which may only be wielded by those it finds worthy."
+				""
 				"And how does it find you?"
-			],
-			dependencies: ["3EA3751B482189B7"],
-			id: "1C861BDF9266B721",
+			]
+			dependencies: ["3EA3751B482189B7"]
+			id: "1C861BDF9266B721"
 			tasks: [{
-				id: "14ED2E5760DB70B5",
-				type: "item",
+				id: "14ED2E5760DB70B5"
+				type: "item"
 				item: "mythicbotany:mjoellnir"
-			}],
+			}]
 			rewards: [{
-				id: "196A0F3B1A3EB04F",
-				type: "command",
-				title: "Legendary Botania Loot Box",
-				icon: "kubejs:legendary_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary",
+				id: "196A0F3B1A3EB04F"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
 		}
