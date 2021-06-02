@@ -13,7 +13,26 @@ events.listen('item.tags', (event) => {
         'bloodmagic:soulsword',
         'bloodmagic:soulscythe',
         'meetyourfight:depth_star',
-        'eidolon:reaper_scythe'
+        'eidolon:reaper_scythe',
+        'atum:shus_exile',
+        'atum:seths_sting',
+        'atum:nuits_quarter',
+        'atum:nuits_ire',
+        'atum:nepthys_banishing',
+        'atum:montus_strike',
+        'atum:gebs_might',
+        'atum:atems_will',
+        'atum:anubis_wrath',
+        'atum:anputs_hunger',
+        'atum:stoneguard_khopesh',
+        'atum:stoneguard_club',
+        'atum:stoneguard_greatsword',
+        'atum:iron_khopesh',
+        'atum:iron_club',
+        'atum:iron_greatsword',
+        'atum:iron_scimitar',
+        'atum:dagger_poison',
+        'atum:iron_dagger'
     ];
     var exceptions = [
         'betterendforge:aeternium_hammer_head',

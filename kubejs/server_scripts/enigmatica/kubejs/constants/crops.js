@@ -95,6 +95,12 @@ const cropRegistry = [
                 render: 'minecraft:sugar_cane',
                 plant: 'minecraft:sugar_cane',
                 substrate: 'sand'
+            },
+            {
+                seed: 'atum:papyrus_plant',
+                render: 'atum:papyrus',
+                plant: 'atum:papyrus_plant',
+                substrate: 'strange_sand'
             }
         ]
     },

@@ -966,6 +966,22 @@ events.listen('recipes', (event) => {
                 B: 'minecraft:water_bucket'
             },
             id: 'thermal:rubber_from_dandelion'
+        },
+        {
+            output: Item.of('atum:linen_thread', 8),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:crops/flax',
+                B: '#forge:rods/wooden'
+            }
+        },
+        {
+            output: Item.of('atum:linen_thread', 4),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'atum:cloth_scrap',
+                B: '#forge:rods/wooden'
+            }
         }
     ];
 

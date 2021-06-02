@@ -5,7 +5,8 @@ events.listen('item.tags', (event) => {
         'immersiveengineering:pickaxe_steel',
         'mythicbotany:alfsteel_pick',
         'bloodmagic:soulpickaxe',
-        'eidolon:reversal_pick'
+        'eidolon:reversal_pick',
+        'atum:ptahs_decadence'
     ];
 
     var exceptions = [
