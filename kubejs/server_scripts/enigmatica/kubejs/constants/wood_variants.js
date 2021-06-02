@@ -110,10 +110,6 @@ woodVariantsToConstruct.forEach((variant) => {
             logSuffix = '_pedu';
             woodSuffix = '_hyphae';
             break;
-        case 'grongle':
-            logSuffix = '_stem';
-            woodSuffix = '_hyphae';
-            break;
         case 'fungal_imparius':
             logSuffix = '_stem';
             woodSuffix = '_hyphae';

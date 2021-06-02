@@ -698,6 +698,12 @@ const treeRegistry = [
                 trunk: 'atum:palm_log',
                 leaf: 'atum:palm_leaves',
                 substrate: 'dirt'
+            },
+            {
+                sapling: 'undergarden:grongle_sapling',
+                trunk: 'undergarden:grongle_log',
+                leaf: 'undergarden:grongle_leaves',
+                substrate: 'deepturf'
             }
         ]
     },
@@ -823,13 +829,7 @@ const treeRegistry = [
                 extraDecoration: 'undergarden:blood_mushroom_globule',
                 substrate: 'deepturf'
             },
-            {
-                sapling: 'undergarden:gronglet',
-                trunk: 'undergarden:grongle_stem',
-                leaf: 'undergarden:grongle_cap',
-                extraDecoration: 'minecraft:shroomlight',
-                substrate: 'deepturf'
-            },
+
             {
                 sapling: 'undergarden:indigo_mushroom',
                 trunk: 'undergarden:indigo_mushroom_stalk',
