@@ -1881,6 +1881,12 @@ const cropRegistry = [
                 substrate: 'deepturf'
             },
             {
+                seed: 'undergarden:frozen_deepturf',
+                render: 'undergarden:frozen_deepturf',
+                plant: 'undergarden:frozen_deepturf',
+                substrate: 'frozen_deepturf'
+            },
+            {
                 seed: 'betterendforge:shadow_plant',
                 render: 'betterendforge:shadow_plant',
                 plant: 'betterendforge:shadow_plant',
