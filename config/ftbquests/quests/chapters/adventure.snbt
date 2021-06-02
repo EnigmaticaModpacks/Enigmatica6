@@ -35,7 +35,7 @@
 		{
 			icon: "losttrinkets:treasure_bag"
 			x: -1.0d
-			y: 2.0d
+			y: 3.0d
 			subtitle: "One Man's Trash Is Another Man's Treasure"
 			description: [
 				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?"
@@ -56,7 +56,7 @@
 		}
 		{
 			x: 1.0d
-			y: 2.0d
+			y: 3.0d
 			subtitle: "Treasure or Trap? "
 			description: [
 				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
@@ -188,6 +188,68 @@
 			}]
 			rewards: [{
 				id: "50D671240789A59B"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "bountiful:bountyboard"
+			x: 2.0d
+			y: 2.0d
+			subtitle: "This is the Way."
+			description: [
+				"Looking for something to do? Go find a village and see what you can do to help them out!"
+				""
+				"Bounty Boards can be found in most any village and provide random tasks based on the decrees in the board. Tasks vary from simple gathering objectives to mob hunting. "
+				""
+				"Find a bounty that interests you? Take it out of the board and keep it in your inventory while you go about completing it. Be careful, however, as these are timed tasks! Be sure to get the completed bounty back to a board in time to claim your reward. "
+			]
+			id: "3B63337D83616524"
+			tasks: [{
+				id: "6C7F0A0389326A73"
+				type: "checkmark"
+				title: "Bountiful Bounties"
+			}]
+			rewards: [{
+				id: "5FF113B2959E2911"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Atum"
+			x: -2.0d
+			y: 2.0d
+			subtitle: "Shining, shimmering, splendid"
+			description: [
+				"A whole new world to discover. Bring a change of clothes though, the sand gets everywhere."
+				""
+				"To access Atum, a portal will be required. It is built entirely from Sandstone and Water and looks a bit like a well. "
+				""
+				"Begin with a 5x5 filled square of Sandstone. "
+				""
+				"Next place a 5x5 hollow square on top of it. "
+				""
+				"The 3x3 area in the middle will be filled with water. "
+				""
+				"Finally, build 2 block tall posts on each corner and throw a Scarab into the water. "
+			]
+			id: "7FCB0C026902B90C"
+			tasks: [
+				{
+					id: "4828663C763E74C1"
+					type: "item"
+					item: "atum:scarab"
+				}
+				{
+					id: "45B0E7E11B0D38AF"
+					type: "item"
+					item: "minecraft:sandstone"
+					count: 49L
+				}
+			]
+			rewards: [{
+				id: "4117CA9FCFFD42FA"
 				type: "xp"
 				xp: 100
 			}]

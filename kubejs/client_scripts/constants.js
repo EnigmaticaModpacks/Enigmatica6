@@ -133,6 +133,10 @@ var itemsToHide = [
     'quark:biotite_ore',
     'quark:tallow',
     'refinedstorage:silicon',
+
+    'tconstruct:copper_ore',
+    'tconstruct:cobalt_ore',
+
     'thermal:coal_coke',
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
@@ -141,6 +145,7 @@ var itemsToHide = [
     'thermal:press_packing_3x3_die',
     'thermal:press_packing_2x2_die',
     'thermal:press_unpacking_die',
+
     'simplefarming:apple_pie',
     'simplefarming:blueberry_pie',
     'supplementaries:pedestal',

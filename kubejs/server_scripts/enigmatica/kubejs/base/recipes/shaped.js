@@ -966,6 +966,22 @@ events.listen('recipes', (event) => {
                 B: 'minecraft:water_bucket'
             },
             id: 'thermal:rubber_from_dandelion'
+        },
+        {
+            output: Item.of('atum:linen_thread', 8),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:crops/flax',
+                B: '#forge:rods/wooden'
+            }
+        },
+        {
+            output: Item.of('atum:linen_thread', 4),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'atum:cloth_scrap',
+                B: '#forge:rods/wooden'
+            }
         }
     ];
 
@@ -1079,6 +1095,22 @@ events.listen('recipes', (event) => {
             B: 'prettypipes:medium_extraction_module',
             C: '#forge:ingots/electrum'
         }),
+        shapedRecipe(Item.of('ppfluids:low_fluid_extraction_module', 1), [' A ', 'DBD', ' C '], {
+            A: '#forge:dusts/redstone',
+            B: 'prettypipes:blank_module',
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
+        }),
+        shapedRecipe(Item.of('ppfluids:medium_fluid_extraction_module', 1), [' C ', 'ABA', ' A '], {
+            A: '#forge:nuggets/aluminum',
+            B: 'ppfluids:low_fluid_extraction_module',
+            C: '#forge:ingots/aluminum'
+        }),
+        shapedRecipe(Item.of('ppfluids:high_fluid_extraction_module', 1), [' C ', 'ABA', ' A '], {
+            A: '#forge:nuggets/bronze',
+            B: 'ppfluids:medium_fluid_extraction_module',
+            C: '#forge:ingots/bronze'
+        }),
         shapedRecipe(Item.of('prettypipes:low_filter_module', 1), [' A ', ' B ', ' C '], {
             A: '#forge:paper',
             B: 'prettypipes:blank_module',
@@ -1094,6 +1126,24 @@ events.listen('recipes', (event) => {
             B: 'prettypipes:medium_filter_module',
             C: 'minecraft:iron_bars'
         }),
+
+        shapedRecipe(Item.of('ppfluids:low_fluid_filter_module', 1), [' A ', 'DBD', ' C '], {
+            A: 'thermal:diving_fabric',
+            B: 'prettypipes:blank_module',
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
+        }),
+        shapedRecipe(Item.of('ppfluids:medium_fluid_filter_module', 1), [' C ', 'ABA', ' C '], {
+            A: '#forge:nuggets/aluminum',
+            B: 'ppfluids:low_fluid_filter_module',
+            C: 'minecraft:iron_bars'
+        }),
+        shapedRecipe(Item.of('ppfluids:high_fluid_filter_module', 1), [' C ', 'ABA', ' C '], {
+            A: '#forge:nuggets/bronze',
+            B: 'ppfluids:medium_fluid_filter_module',
+            C: 'minecraft:iron_bars'
+        }),
+
         shapedRecipe(Item.of('prettypipes:low_speed_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:sugar',
             B: 'prettypipes:blank_module',
@@ -1154,6 +1204,24 @@ events.listen('recipes', (event) => {
             B: 'prettypipes:medium_retrieval_module',
             C: '#forge:ingots/electrum'
         }),
+
+        shapedRecipe(Item.of('ppfluids:low_fluid_retrieval_module', 1), [' A ', 'DBD', ' C '], {
+            A: 'minecraft:observer',
+            B: 'prettypipes:blank_module',
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
+        }),
+        shapedRecipe(Item.of('ppfluids:medium_fluid_retrieval_module', 1), [' A ', 'ABA', ' C '], {
+            A: '#forge:nuggets/aluminum',
+            B: 'ppfluids:low_fluid_retrieval_module',
+            C: '#forge:ingots/aluminum'
+        }),
+        shapedRecipe(Item.of('ppfluids:high_fluid_retrieval_module', 1), [' A ', 'ABA', ' C '], {
+            A: '#forge:nuggets/bronze',
+            B: 'ppfluids:medium_fluid_retrieval_module',
+            C: '#forge:ingots/bronze'
+        }),
+
         shapedRecipe(Item.of('prettypipes:stack_size_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:comparator',
             B: 'prettypipes:blank_module',
@@ -1207,6 +1275,11 @@ events.listen('recipes', (event) => {
         shapedRecipe(Item.of('prettypipes:pipe', 12), ['   ', 'ABA', '   '], {
             A: '#forge:ingots/tin',
             B: '#forge:glass/colorless'
+        }),
+        shapedRecipe(Item.of('ppfluids:fluid_pipe', 12), [' C ', 'ABA', ' C '], {
+            A: '#forge:ingots/tin',
+            B: '#forge:glass/colorless',
+            C: 'thermal:cured_rubber'
         }),
         shapedRecipe(Item.of('prettypipes:item_terminal', 1), [' B ', 'CAD', 'EFE'], {
             A: 'thermal:machine_frame',

@@ -13,6 +13,7 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
     event.remove({ mod: 'prettypipes' });
+    event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
@@ -191,7 +192,8 @@ events.listen('recipes', (event) => {
         /create:\w+\/bread/,
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
-        /masonry:\w+slab_from_\w+_stonecutting/
+        /masonry:\w+slab_from_\w+_stonecutting/,
+        /atum:.*dye$/
     ];
 
     outputRemovals.forEach((removal) => {

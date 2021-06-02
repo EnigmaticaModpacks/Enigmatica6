@@ -76,7 +76,7 @@ events.listen('recipes', (event) => {
             {
                 inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:gems/sulfur'],
                 outputs: [Item.of('thermal:cured_rubber', 2)],
-                id: 'thermal:machine/smelter/smeler_cured_rubber'
+                id: 'thermal:machine/smelter/smelter_cured_rubber'
             }
         ]
     };

@@ -198,6 +198,14 @@ events.listen('recipes', (event) => {
                 orbLevel: 1
             },
             {
+                inputs: ['#forge:gems/sulfur', 'industrialforegoing:dryrubber', 'industrialforegoing:dryrubber'],
+                output: 'thermal:cured_rubber',
+                count: 2,
+                syphon: 400,
+                ticks: 200,
+                orbLevel: 1
+            },
+            {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', '#forge:mushrooms'],
                 output: 'betterendforge:end_mycelium',
                 count: 1,
