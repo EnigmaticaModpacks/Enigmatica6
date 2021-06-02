@@ -14,8 +14,13 @@ const soilRegistry = [
     },
     { block: 'undergarden:deepsoil', categories: ['dirt', 'deepturf'], growthModifier: 0 },
     { block: 'undergarden:deepturf_block', categories: ['dirt', 'deepturf'], growthModifier: 0 },
+    {
+        block: 'undergarden:frozen_deepturf_block',
+        categories: ['dirt', 'deepturf', 'frozen_deepturf'],
+        growthModifier: 0
+    },
     { block: 'undergarden:deepsoil_farmland', categories: ['dirt', 'deepturf', 'farmland'], growthModifier: 0.15 },
-
+    { block: 'undergarden:sediment', categories: ['sand', 'sediment'], growthModifier: 0.2 },
     {
         block: 'byg:embur_nylium',
         categories: ['dirt', 'embur_nylium', 'nylium', 'blue_netherrack', 'mushroom'],
