@@ -13,6 +13,7 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
     event.remove({ mod: 'prettypipes' });
+    event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
