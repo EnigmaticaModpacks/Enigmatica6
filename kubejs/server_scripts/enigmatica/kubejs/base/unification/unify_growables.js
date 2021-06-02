@@ -370,6 +370,12 @@ function crops_immersiveengineering_cloche(event, type, crop) {
         case 'strange_sand':
             substrate = 'atum:sand';
             break;
+        case 'frozen_deepturf':
+            substrate = 'undergarden:frozen_deepturf_block';
+            break;
+        case 'sediment':
+            substrate = 'undergarden:sediment';
+            break;
         case 'water':
             //disabled
             return;
