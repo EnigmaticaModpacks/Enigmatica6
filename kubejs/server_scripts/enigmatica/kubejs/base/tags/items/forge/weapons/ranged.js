@@ -20,7 +20,16 @@ events.listen('item.tags', (event) => {
         'pneumaticcraft:micromissiles',
         'pneumaticcraft:minigun',
         'undergarden:slingshot',
-        'alexsmobs:blood_sprayer'
+        'alexsmobs:blood_sprayer',
+        'atum:tefnuts_call',
+        'atum:tefnuts_rain',
+        'atum:shus_breath',
+        'atum:seths_venom',
+        'atum:ras_fury',
+        'atum:montus_blast',
+        'atum:isis_division',
+        'atum:horus_soaring',
+        'atum:anputs_grounding'
     ];
 
     var tags = ['forge:weapons', 'forge:weapons/ranged'];

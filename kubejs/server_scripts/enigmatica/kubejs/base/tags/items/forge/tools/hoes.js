@@ -1,5 +1,5 @@
 events.listen('item.tags', (event) => {
-    var items = ['immersiveengineering:hoe_steel'];
+    var items = ['immersiveengineering:hoe_steel', 'atum:osiris_blessing', 'atum:gebs_undoing'];
     var exceptions = [
         'betterendforge:aeternium_hoe_head',
         'betterendforge:thallasium_hoe_head',

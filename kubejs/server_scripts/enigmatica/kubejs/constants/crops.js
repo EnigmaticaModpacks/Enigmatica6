@@ -95,6 +95,12 @@ const cropRegistry = [
                 render: 'minecraft:sugar_cane',
                 plant: 'minecraft:sugar_cane',
                 substrate: 'sand'
+            },
+            {
+                seed: 'atum:papyrus_plant',
+                render: 'atum:papyrus',
+                plant: 'atum:papyrus_plant',
+                substrate: 'strange_sand'
             }
         ]
     },
@@ -630,6 +636,18 @@ const cropRegistry = [
                 render: 'sushigocrafting:rice_crop',
                 plant: 'sushigocrafting:rice',
                 substrate: 'water'
+            },
+            {
+                seed: 'atum:emmer_seeds',
+                render: 'atum:emmer_wheat',
+                plant: 'atum:emmer',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:flax_seeds',
+                render: 'atum:flax_block',
+                plant: 'atum:flax',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1983,6 +2001,18 @@ const cropRegistry = [
                 plantSecondary: 'environmental:cattail',
                 plantSecondaryRate: 'high',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'atum:dry_grass',
+                render: 'atum:dry_grass',
+                plant: 'atum:dry_grass',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:oasis_grass',
+                render: 'atum:oasis_grass',
+                plant: 'atum:oasis_grass',
+                substrate: 'dirt'
             }
         ]
     },
@@ -2184,6 +2214,12 @@ const cropRegistry = [
                 render: 'projectvibrantjourneys:bark_mushroom',
                 plant: 'projectvibrantjourneys:bark_mushroom',
                 substrate: 'mushroom'
+            },
+            {
+                seed: 'atum:anputs_fingers_spores',
+                render: 'atum:anputs_fingers',
+                plant: 'atum:anputs_fingers_spores',
+                substrate: 'strange_sand'
             }
         ]
     },
@@ -2255,6 +2291,18 @@ const cropRegistry = [
                 render: 'projectvibrantjourneys:crimson_nettle',
                 plant: 'projectvibrantjourneys:crimson_nettle',
                 substrate: 'crimson_nylium'
+            },
+            {
+                seed: 'atum:weed',
+                render: 'atum:weed',
+                plant: 'atum:weed',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:shrub',
+                render: 'atum:shrub',
+                plant: 'atum:shrub',
+                substrate: 'dirt'
             }
         ]
     },
@@ -2406,6 +2454,12 @@ const cropRegistry = [
                 seed: 'byg:imparius_vine',
                 render: 'byg:imparius_vine',
                 plant: 'byg:imparius_vine',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:ophidian_tongue',
+                render: 'atum:ophidian_tongue',
+                plant: 'atum:ophidian_tongue',
                 substrate: 'dirt'
             }
         ]

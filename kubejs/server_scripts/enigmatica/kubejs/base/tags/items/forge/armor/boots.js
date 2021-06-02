@@ -21,6 +21,7 @@ events.listen('item.tags', (event) => {
             .get(tag)
             .add(items)
             .add(/_boots/)
+            .add(/atum:feet/)
             .remove(exceptions);
     });
 });
