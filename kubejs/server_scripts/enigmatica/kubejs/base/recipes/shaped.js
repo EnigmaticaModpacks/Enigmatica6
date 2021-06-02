@@ -1127,10 +1127,11 @@ events.listen('recipes', (event) => {
             C: 'minecraft:iron_bars'
         }),
 
-        shapedRecipe(Item.of('ppfluids:low_fluid_filter_module', 1), [' A ', ' B ', ' C '], {
+        shapedRecipe(Item.of('ppfluids:low_fluid_filter_module', 1), [' A ', 'DBD', ' C '], {
             A: 'thermal:diving_fabric',
             B: 'prettypipes:blank_module',
-            C: 'thermal:redstone_servo'
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
         }),
         shapedRecipe(Item.of('ppfluids:medium_fluid_filter_module', 1), [' C ', 'ABA', ' C '], {
             A: '#forge:nuggets/aluminum',
