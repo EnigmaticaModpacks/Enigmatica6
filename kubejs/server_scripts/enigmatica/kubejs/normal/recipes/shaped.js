@@ -82,15 +82,6 @@ events.listen('recipes', (event) => {
                 A: '#forge:wax',
                 B: '#forge:string'
             }
-        },
-        {   // Adjust T1 Beehive Recipe to use beehive tag in Normal mode
-            output: 'resourcefulbees:t1_beehive',
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: 'minecraft:grass',
-                B: '#forge:beehives/tier_0'
-            },
-            id: 'resourcefulbees:t1_beehive'
         }
     ];
 
