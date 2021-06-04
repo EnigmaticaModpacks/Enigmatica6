@@ -73,6 +73,7 @@ events.listen('recipes', (event) => {
         'buildersaddition:iron_rod',
 
         'byg:vermilion_sculk',
+        '/byg:\\w+_glass_from_sand/',
 
         'compactmachines:wall',
 
