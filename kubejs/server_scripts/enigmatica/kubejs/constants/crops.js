@@ -2019,6 +2019,54 @@ const cropRegistry = [
                 render: 'atum:oasis_grass',
                 plant: 'atum:oasis_grass',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'tconstruct:blood_slime_tall_grass',
+                render: 'tconstruct:blood_slime_tall_grass',
+                plant: 'tconstruct:blood_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:ender_slime_tall_grass',
+                render: 'tconstruct:ender_slime_tall_grass',
+                plant: 'tconstruct:ender_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:sky_slime_tall_grass',
+                render: 'tconstruct:sky_slime_tall_grass',
+                plant: 'tconstruct:sky_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:earth_slime_tall_grass',
+                render: 'tconstruct:earth_slime_tall_grass',
+                plant: 'tconstruct:earth_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:blood_slime_fern',
+                render: 'tconstruct:blood_slime_fern',
+                plant: 'tconstruct:blood_slime_fern',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:ender_slime_fern',
+                render: 'tconstruct:ender_slime_fern',
+                plant: 'tconstruct:ender_slime_fern',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:sky_slime_fern',
+                render: 'tconstruct:sky_slime_fern',
+                plant: 'tconstruct:sky_slime_fern',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:earth_slime_fern',
+                render: 'tconstruct:earth_slime_fern',
+                plant: 'tconstruct:earth_slime_fern',
+                substrate: 'slimy_dirt'
             }
         ]
     },
@@ -2467,6 +2515,18 @@ const cropRegistry = [
                 render: 'atum:ophidian_tongue',
                 plant: 'atum:ophidian_tongue',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'tconstruct:sky_slime_vine',
+                render: 'tconstruct:sky_slime_vine',
+                plant: 'tconstruct:sky_slime_vine',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:ender_slime_vine',
+                render: 'tconstruct:ender_slime_vine',
+                plant: 'tconstruct:ender_slime_vine',
+                substrate: 'slimy_dirt'
             }
         ]
     }

@@ -179,7 +179,12 @@ events.listen('recipes', (event) => {
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                     bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
                     integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 },
-                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 }
+                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 },
+                    sushigocrafting: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: { 'patchouli:book': 'sushigocrafting:sushigocrafting' }
+                    }
                 }
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']
