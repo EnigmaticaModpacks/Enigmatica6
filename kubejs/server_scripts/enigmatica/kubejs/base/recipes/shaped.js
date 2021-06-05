@@ -982,6 +982,14 @@ events.listen('recipes', (event) => {
                 A: 'atum:cloth_scrap',
                 B: '#forge:rods/wooden'
             }
+        },
+        {
+            output: Item.of('minecraft:paper', 3),
+            pattern: ['AAA'],
+            key: {
+                A: '#forge:dusts/wood'
+            },
+            id: 'mekanism:paper'
         }
     ];
 
