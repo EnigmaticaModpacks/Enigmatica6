@@ -109,3 +109,24 @@ const soilRegistry = [
     { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: 0.0 },
     { block: 'byg:imparius_phylium', categories: ['end_stone', 'mushroom', 'imparius_phylium'], growthModifier: 0.5 }
 ];
+
+let dirt_types = ['blood', 'earth', 'ender', 'sky'],
+    grass_types = ['earth', 'ender', 'ichor', 'sky', 'vanilla'];
+
+dirt_types.forEach((dirt_type) => {
+    if (dirt_type != 'blood') {
+        soilRegistry.push({
+            block: `tconstruct:${dirt_type}_slime_dirt`,
+            categories: ['slimy_dirt'],
+            growthModifier: 0.0
+        });
+    }
+
+    grass_types.forEach((grass_type) => {
+        soilRegistry.push({
+            block: `tconstruct:${dirt_type}_${grass_type}_slime_grass`,
+            categories: ['slimy_dirt'],
+            growthModifier: 0.05
+        });
+    });
+});
