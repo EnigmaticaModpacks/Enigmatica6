@@ -18,9 +18,10 @@ events.listen('recipes', (event) => {
                     '#forge:dusts/wood',
                     '#forge:dusts/wood',
                     '#forge:dusts/wood',
+                    '#forge:dusts/wood',
                     { fluidTag: 'minecraft:water', amount: 250 }
                 ],
-                output: Item.of('minecraft:paper', 2)
+                output: Item.of('minecraft:paper', 6)
             },
             {
                 inputs: [Fluid.of('immersiveengineering:concrete', 500)],
