@@ -1,7 +1,8 @@
-events.listen('server.datapack.low_priority', (event) => {
+onEvent('server.datapack.low_priority', (event) => {
     const modules = {
-        replace: false,
-
+        type: 'tetra:multi_major_module',
+        slots: ['double/head_left', 'double/head_right'],
+        slotSuffixes: ['_left', '_right'],
         variants: [
             {
                 materials: ['tetra:metal/netherite'],
@@ -146,5 +147,5 @@ events.listen('server.datapack.low_priority', (event) => {
         ]
     };
 
-    event.addJson(`tetra:modules/double/basic_hammer_custom.json`, modules);
+    event.addJson(`tetra:modules/double/basic_hammer.json`, modules);
 });

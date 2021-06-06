@@ -1,6 +1,12 @@
-events.listen('server.datapack.low_priority', (event) => {
+onEvent('server.datapack.low_priority', (event) => {
     const schematics = {
-        replace: false,
+        slots: ['double/head_left', 'double/head_right'],
+        keySuffixes: ['_left', '_right'],
+        materialSlotCount: 1,
+        glyph: {
+            textureX: 64
+        },
+        displayType: 'major',
         outcomes: [
             {
                 material: {
@@ -35,5 +41,5 @@ events.listen('server.datapack.low_priority', (event) => {
         ]
     };
 
-    event.addJson(`tetra:schematics/double/basic_hammer/basic_hammer_custom.json`, schematics);
+    event.addJson(`tetra:schematics/double/basic_hammer/basic_hammer.json`, schematics);
 });
