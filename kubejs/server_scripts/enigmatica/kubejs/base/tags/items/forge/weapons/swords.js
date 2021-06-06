@@ -1,5 +1,16 @@
 events.listen('item.tags', (event) => {
-    var items = ['immersiveengineering:sword_steel', 'wstweaks:blaze_blade', 'wstweaks:lava_blade'];
+    var items = [
+        'immersiveengineering:sword_steel',
+        'wstweaks:blaze_blade',
+        'wstweaks:lava_blade',
+        'atum:nepthys_banishing',
+        'atum:atems_will',
+        'atum:anubis_wrath',
+        'atum:iron_khopesh',
+        'atum:stoneguard_khopesh',
+        'atum:stoneguard_greatsword',
+        'atum:iron_greatsword'
+    ];
     var exceptions = [
         'betterendforge:aeternium_sword_handle',
         'betterendforge:aeternium_sword_blade',

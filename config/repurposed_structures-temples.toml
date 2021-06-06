@@ -78,6 +78,7 @@
 	addPyramidSnowyToModdedBiomes = true
 	#
 	# How rare are End Pyramid in End biomes.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	pyramidEndMaxChunkDistance = 68
 	#
@@ -91,4 +92,43 @@
 	#
 	# Add Icy Pyramid to modded icy biomes.
 	addPyramidIcyToModdedBiomes = true
+	#
+	# How rare are Jungle Pyramid in Jungle biomes. 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	pyramidJungleMaxChunkDistance = 44
+	#
+	# Add Jungle Pyramid to modded Jungle biomes.
+	addPyramidJungleToModdedBiomes = true
+	#
+	# How rare are Mushroom Pyramid in Mushroom biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	pyramidMushroomMaxChunkDistance = 24
+	#
+	# Add Mushroom Pyramid to modded Mushroom biomes.
+	addPyramidMushroomToModdedBiomes = true
+	#
+	# How rare are Ocean Pyramid in Ocean biomes. 
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	pyramidOceanMaxChunkDistance = 40
+	#
+	# Add Ocean Pyramid to modded Ocean biomes.
+	addPyramidOceanToModdedBiomes = true
+	#
+	# How rare are Giant Tree Taiga Pyramid in Giant Tree Taiga biomes.
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	pyramidGiantTreeTaigaMaxChunkDistance = 40
+	#
+	# Add Giant Tree Taiga Pyramid to modded taiga biomes with giant or redwood in its name.
+	addPyramidGiantTreeTaigaToModdedBiomes = true
+	#
+	# How rare are Flower Forest Pyramid in Flower Forest biomes. 
+	# 1 for spawning in most chunks and 1001 for none.
+	#Range: 1 ~ 1001
+	pyramidFlowerForestMaxChunkDistance = 36
+	#
+	# Add Flower Forest Pyramid to modded Plains or Forest biomes with flower or blossom in its name.
+	addPyramidFlowerForestToModdedBiomes = true
 

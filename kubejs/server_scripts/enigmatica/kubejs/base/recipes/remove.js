@@ -13,6 +13,7 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
     event.remove({ mod: 'prettypipes' });
+    event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
@@ -72,6 +73,7 @@ events.listen('recipes', (event) => {
         'buildersaddition:iron_rod',
 
         'byg:vermilion_sculk',
+        '/byg:\\w+_glass_from_sand/',
 
         'compactmachines:wall',
 
@@ -81,6 +83,9 @@ events.listen('recipes', (event) => {
 
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
+
+        'environmental:misc/cherries/cherry_pie',
+        'environmental:misc/apple_pie',
 
         'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
@@ -161,6 +166,8 @@ events.listen('recipes', (event) => {
         'thermal:devices/plugins/byg/tree_extractor_byg_baobab',
         'thermal:devices/tree_extractor/tree_extractor_jungle',
         'thermal:signalum_dust_4',
+        'thermal:rubber_3',
+        'thermal:smelting/cured_rubber_from_smelting',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
@@ -186,7 +193,8 @@ events.listen('recipes', (event) => {
         /create:\w+\/bread/,
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
-        /masonry:\w+slab_from_\w+_stonecutting/
+        /masonry:\w+slab_from_\w+_stonecutting/,
+        /atum:.*dye$/
     ];
 
     outputRemovals.forEach((removal) => {

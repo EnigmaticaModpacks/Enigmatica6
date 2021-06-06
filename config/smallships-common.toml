@@ -1,7 +1,7 @@
 #
 ###Version, do not change!##
 #Range: > 0
-Version = 7
+Version = 8
 
 #Small Ships Config:
 [Ships]
@@ -98,4 +98,46 @@ Version = 7
 	#	(takes effect after restart)
 	#	default: true
 	MakeWaveAnimation = true
+	#
+	#----Brigg Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 600
+	#Range: 0.0 ~ 10000.0
+	BriggHealth = 600.0
+	#
+	#----Cog Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 300.0
+	#Range: 0.0 ~ 10000.0
+	CogHealth = 300.0
+	#
+	#----Drakkar Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 360
+	#Range: 0.0 ~ 10000.0
+	DrakkarHealth = 360.0
+	#
+	#----Galley Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 600
+	#Range: 0.0 ~ 10000.0
+	GalleyHealth = 600.0
+	#
+	#----Row Boat Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 100
+	#Range: 0.0 ~ 10000.0
+	RowBoatHealth = 100.0
+	#
+	#----War Galley Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 600
+	#Range: 0.0 ~ 10000.0
+	WarGalleyHealth = 600.0
 

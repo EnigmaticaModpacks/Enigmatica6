@@ -6,28 +6,27 @@ blacklistedOutpostBiomes = " "
 
 [Outposts]
 	#
-	# How rare are Nether Brick Outposts in non-warped Nether biomes.
-	# 1 for spawning in most chunks and 1001 for none.
+	# Add Nether Brick Outposts to modded Nether biomes that other nether outposts don't fit in.
 	addNetherBrickOutpostToModdedBiomes = true
 	#
-	# Add Nether Brick Outposts to modded Nether biomes
-	# that other nether outposts don't fit in.
+	# How rare are Nether Brick Outposts in non-warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	netherBrickOutpostMaxChunkDistance = 34
 	#
-	# How rare are Warped Outposts in Warped Nether biomes.
-	# 1 for spawning in most chunks and 1001 for none.
+	# Add Warped Outposts to modded Nether Warped biomes.
 	addWarpedOutpostToModdedBiomes = true
 	#
-	# Add Warped Outposts to modded Nether Warped biomes.
+	# How rare are Warped Outposts in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	warpedOutpostMaxChunkDistance = 34
 	#
-	# How rare are Crimson Outposts in Warped Nether biomes.
-	# 1 for spawning in most chunks and 1001 for none.
+	# Add Crimson Outposts to modded Nether Warped biomes.
 	addCrimsonOutpostToModdedBiomes = true
 	#
-	# Add Crimson Outposts to modded Nether Warped biomes.
+	# How rare are Crimson Outposts in Warped Nether biomes.
+	# 1 for spawning in most chunks and 1001 for none.
 	#Range: 1 ~ 1001
 	crimsonOutpostMaxChunkDistance = 34
 	#

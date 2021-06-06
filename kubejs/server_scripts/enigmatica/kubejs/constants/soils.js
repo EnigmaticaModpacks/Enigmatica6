@@ -14,8 +14,13 @@ const soilRegistry = [
     },
     { block: 'undergarden:deepsoil', categories: ['dirt', 'deepturf'], growthModifier: 0 },
     { block: 'undergarden:deepturf_block', categories: ['dirt', 'deepturf'], growthModifier: 0 },
+    {
+        block: 'undergarden:frozen_deepturf_block',
+        categories: ['dirt', 'deepturf', 'frozen_deepturf'],
+        growthModifier: 0
+    },
     { block: 'undergarden:deepsoil_farmland', categories: ['dirt', 'deepturf', 'farmland'], growthModifier: 0.15 },
-
+    { block: 'undergarden:sediment', categories: ['sand', 'sediment'], growthModifier: 0.2 },
     {
         block: 'byg:embur_nylium',
         categories: ['dirt', 'embur_nylium', 'nylium', 'blue_netherrack', 'mushroom'],
@@ -48,6 +53,9 @@ const soilRegistry = [
     { block: 'byg:overgrown_dacite', categories: ['dirt', 'grass'], growthModifier: 0.05 },
     { block: 'minecraft:grass_block', categories: ['dirt', 'grass'], growthModifier: 0.05 },
     { block: 'byg:peat', categories: ['dirt', 'mushroom'], growthModifier: 0.25 },
+    { block: 'atum:fertile_soil', categories: ['dirt'], growthModifier: 0.2 },
+    { block: 'atum:sand', categories: ['sand', 'strange_sand'], growthModifier: 0.2 },
+
     { block: 'minecraft:mycelium', categories: ['dirt', 'mushroom'], growthModifier: 0.05 },
     { block: 'byg:overgrown_netherrack', categories: ['dirt', 'netherrack', 'nether', 'grass'], growthModifier: 0.05 },
     { block: 'byg:sythian_nylium', categories: ['dirt', 'sythian_nylium', 'nylium', 'mushroom'], growthModifier: 0.05 },
@@ -101,3 +109,24 @@ const soilRegistry = [
     { block: 'atmospheric:red_arid_sand', categories: ['sand', 'arid_sand', 'red_arid_sand'], growthModifier: 0.0 },
     { block: 'byg:imparius_phylium', categories: ['end_stone', 'mushroom', 'imparius_phylium'], growthModifier: 0.5 }
 ];
+
+let dirt_types = ['blood', 'earth', 'ender', 'sky'],
+    grass_types = ['earth', 'ender', 'ichor', 'sky', 'vanilla'];
+
+dirt_types.forEach((dirt_type) => {
+    if (dirt_type != 'blood') {
+        soilRegistry.push({
+            block: `tconstruct:${dirt_type}_slime_dirt`,
+            categories: ['slimy_dirt'],
+            growthModifier: 0.0
+        });
+    }
+
+    grass_types.forEach((grass_type) => {
+        soilRegistry.push({
+            block: `tconstruct:${dirt_type}_${grass_type}_slime_grass`,
+            categories: ['slimy_dirt'],
+            growthModifier: 0.05
+        });
+    });
+});

@@ -35,7 +35,7 @@
 		{
 			icon: "losttrinkets:treasure_bag"
 			x: -1.0d
-			y: 2.0d
+			y: 3.0d
 			subtitle: "One Man's Trash Is Another Man's Treasure"
 			description: [
 				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?"
@@ -56,7 +56,7 @@
 		}
 		{
 			x: 1.0d
-			y: 2.0d
+			y: 3.0d
 			subtitle: "Treasure or Trap? "
 			description: [
 				"Spelunkers report stumbling across abandoned camp sites deep in the caves they explore. But who, or what, could have left them? "
@@ -147,7 +147,7 @@
 		{
 			x: 1.5d
 			y: 1.0d
-			subtitle: "We're right here on this very spot."
+			subtitle: "We're right here on this very spot"
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
 				""
@@ -172,8 +172,8 @@
 		{
 			title: "The Undergarden"
 			icon: "undergarden:catalyst"
-			x: -1.5d
-			y: 1.0d
+			x: 2.0d
+			y: 2.0d
 			subtitle: "Down Beneath"
 			description: [
 				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped."
@@ -190,6 +190,678 @@
 				id: "50D671240789A59B"
 				type: "xp"
 				xp: 100
+			}]
+		}
+		{
+			icon: "bountiful:bountyboard"
+			x: -1.5d
+			y: 1.0d
+			subtitle: "This is the Way"
+			description: [
+				"Looking for something to do? Go find a village and see what you can do to help them out!"
+				""
+				"Bounty Boards can be found in most any village and provide random tasks based on the decrees in the board. Tasks vary from simple gathering objectives to mob hunting. "
+				""
+				"Find a bounty that interests you? Take it out of the board and keep it in your inventory while you go about completing it. Be careful, however, as these are timed tasks! Be sure to get the completed bounty back to a board in time to claim your reward. "
+			]
+			id: "3B63337D83616524"
+			tasks: [{
+				id: "6C7F0A0389326A73"
+				type: "checkmark"
+				title: "Bountiful Bounties"
+			}]
+			rewards: [{
+				id: "5FF113B2959E2911"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Atum"
+			icon: "atum:scarab"
+			x: -2.0d
+			y: 2.0d
+			subtitle: "Shining, Shimmering, Splendid"
+			description: [
+				"A whole new world to discover. Bring a change of clothes though, the sand gets everywhere."
+				""
+				"To access Atum, a portal will be required. It is built entirely from Sandstone and Water and looks a bit like a well. "
+				""
+				"Begin with a 5x5 filled square of Sandstone. "
+				""
+				"Next place a 5x5 hollow square on top of it. "
+				""
+				"The 3x3 area in the middle will be filled with water. "
+				""
+				"Finally, build 2 block tall posts on each corner and throw a Scarab into the water. "
+			]
+			id: "7FCB0C026902B90C"
+			tasks: [
+				{
+					id: "4828663C763E74C1"
+					type: "item"
+					item: "atum:scarab"
+				}
+				{
+					id: "45B0E7E11B0D38AF"
+					type: "item"
+					item: "minecraft:sandstone"
+					count: 49L
+				}
+			]
+			rewards: [{
+				id: "4117CA9FCFFD42FA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Pyramids!"
+			x: -1.5d
+			y: 4.5d
+			subtitle: "Breaking Ground"
+			description: [
+				"Grab a shovel and get to digging, there’s Nebu in them there hills!"
+				""
+				"Nebu Ore can be found deep underground and is used to craft Nebu Torches, the key to opening the pyramids that dot the land. "
+				""
+				"Gather some torches, then seek out the buried entrance to a pyramid. Place torches on each Quandry Block located near the entrance to open the way. "
+				""
+				"Once inside, tread carefully and seek out the Pharaoh’s Chamber where more Quandry Blocks will need to be activated. With all of them lit up, the Sarcophagus’ treasures are yours to plunder. "
+			]
+			hide_dependency_lines: true
+			dependencies: ["7FCB0C026902B90C"]
+			hide: true
+			id: "3A6AE256747CFC1D"
+			tasks: [{
+				id: "3BC303A931EA3D28"
+				type: "item"
+				item: "atum:nebu_torch"
+				count: 6L
+			}]
+			rewards: [{
+				id: "34BDC736FE34B9ED"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			icon: "atum:godforge"
+			x: 0.0d
+			y: 6.0d
+			subtitle: "Renowned Artificer"
+			description: ["With a Godforge, unwanted artifacts may be rendered down into Godshards; items of great power unto themselves. "]
+			dependencies: ["68A4A5043858181B"]
+			id: "02CCE8639F56F007"
+			tasks: [
+				{
+					id: "5BCC3A511531AE2C"
+					type: "item"
+					item: "atum:godforge"
+				}
+				{
+					id: "792618FCBFF7E262"
+					type: "item"
+					title: "Godshard"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "atum:anput_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:anubis_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:atem_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:geb_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:horus_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:isis_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:montu_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:nepthys_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:nuit_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:osiris_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:ptah_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:ra_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:seth_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:shu_godshard"
+									Count: 1b
+								}
+								{
+									id: "atum:tefnut_godshard"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+			rewards: [{
+				id: "48AA5AE834D2E95C"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.0d
+			subtitle: "Reduce, Reuse, Recycle"
+			description: ["Crafted from precious material and Godshards from rendered artifacts, the Godforged Block may be placed and broken open with a Nebu Hammer. Doing so will result in a new Artifact. "]
+			dependencies: ["02CCE8639F56F007"]
+			id: "5695DE9BCDF64302"
+			tasks: [
+				{
+					id: "117913EE85B58990"
+					type: "item"
+					title: "Godforged Blocks"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "atum:godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:anput_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:atem_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:geb_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:horus_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:ra_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:ptah_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:osiris_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:nuit_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:nepthys_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:montu_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:isis_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:seth_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:shu_godforged_block"
+									Count: 1b
+								}
+								{
+									id: "atum:tefnut_godforged_block"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "61E0AF842C54D624"
+					type: "item"
+					item: "atum:nebu_hammer"
+				}
+			]
+			rewards: [{
+				id: "53A2DDBBE322E06E"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			title: "God Torches"
+			x: 1.5d
+			y: 4.5d
+			subtitle: "Call My Name"
+			description: ["When used in place of Nebu Torches in a Sarcophagus Chamber, these will call forth a Pharaoh with a link to the deity in question; quite useful if one is seeking out specific artifacts. "]
+			dependencies: ["5695DE9BCDF64302"]
+			id: "7FE27B11109B41D7"
+			tasks: [{
+				id: "396862609A53439A"
+				type: "item"
+				title: "God Torches"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "atum:torch_of_anput"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_anubis"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_atem"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_geb"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_horus"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_isis"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_montu"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_nepthys"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_nuit"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_osiris"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_ptah"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_ra"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_seth"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_shu"
+								Count: 1b
+							}
+							{
+								id: "atum:torch_of_tefnut"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "23BFB971FA19252E"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.0d
+			subtitle: "It's my birthday and I wants it."
+			description: ["That’s quite a nice treasure you’ve found for yourself. Would be a shame if something were to happen to it… "]
+			dependencies: ["3A6AE256747CFC1D"]
+			hide: true
+			id: "68A4A5043858181B"
+			tasks: [{
+				id: "3CECEAAAA80EBB9F"
+				type: "item"
+				title: "Artifacts!"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "atum:anubis_wrath"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:anputs_hunger"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:eyes_of_atem"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:body_of_atem"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:legs_of_atem"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:feet_of_atem"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:atems_bounty"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:atems_homecoming"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:atems_protection"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:atems_will"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:gebs_might"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:gebs_toil"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:gebs_undoing"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:horus_ascension"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:horus_soaring"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:isis_division"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:isis_healing"
+								Count: 1b
+							}
+							{
+								id: "atum:montus_blast"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:montus_strike"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:nepthys_banishing"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:nepthys_guard"
+								Count: 1b
+							}
+							{
+								id: "atum:nuits_ire"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:nuits_quarter"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:nuits_vanishing"
+								Count: 1b
+							}
+							{
+								id: "atum:osiris_blessing"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "atum:osiris_mercy"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "itemfilters:or"
+								Count: 1b
+								tag: {
+									items: [
+										{
+											id: "atum:ptahs_decadence"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:halo_of_ra"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:body_of_ra"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:legs_of_ra"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:feet_of_ra"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:ras_fury"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:ras_step"
+											Count: 1b
+										}
+										{
+											id: "atum:seths_sting"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:seths_venom"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:shus_breath"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:shus_exile"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:shus_swiftness"
+											Count: 1b
+										}
+										{
+											id: "atum:tefnuts_call"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+										{
+											id: "atum:tefnuts_rain"
+											Count: 1b
+											tag: {
+												Damage: 0
+											}
+										}
+									]
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "563CCA75A137FE84"
+				type: "item"
+				item: "atum:coin_gold"
+				random_bonus: 7
 			}]
 		}
 	]

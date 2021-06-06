@@ -27,6 +27,14 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:disabled_recipe_indicator'],
             text: [Text.of('Recipe disabled for Enigmatica 6').gold()]
+        },
+        {
+            items: ['tconstruct:crafting_station', 'tconstruct:part_builder', 'tconstruct:tinker_station'],
+            text: [Text.of('Craftable with any wood.').gold()]
+        },
+        {
+            items: ['tconstruct:scorched_anvil', 'tconstruct:tinkers_anvil'],
+            text: [Text.of('Craftable with almost any metal block.').gold()]
         }
     ];
 

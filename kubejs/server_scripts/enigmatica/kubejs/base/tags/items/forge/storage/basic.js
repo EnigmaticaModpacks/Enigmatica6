@@ -26,7 +26,9 @@ events.listen('item.tags', (event) => {
         'naturesaura:sky_chest',
         'naturesaura:infused_iron_chest',
         'immersiveengineering:armor_steel_chest',
-        'immersiveengineering:armor_faraday_chest'
+        'immersiveengineering:armor_faraday_chest',
+        'atum:mummy_chest',
+        'atum:wanderer_chest'
     ];
 
     var tags = ['forge:storage', 'forge:storage/basic'];

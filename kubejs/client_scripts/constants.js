@@ -114,6 +114,10 @@ var itemsToHide = [
     'create:copper_ore',
     'create:zinc_ore',
     'eidolon:tallow',
+
+    'environmental:cherry_pie',
+    'environmental:apple_pie',
+
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
@@ -129,6 +133,10 @@ var itemsToHide = [
     'quark:biotite_ore',
     'quark:tallow',
     'refinedstorage:silicon',
+
+    'tconstruct:copper_ore',
+    'tconstruct:cobalt_ore',
+
     'thermal:coal_coke',
     'thermal:coal_coke_block',
     'thermal:ender_pearl_dust',
@@ -137,6 +145,7 @@ var itemsToHide = [
     'thermal:press_packing_3x3_die',
     'thermal:press_packing_2x2_die',
     'thermal:press_unpacking_die',
+
     'simplefarming:apple_pie',
     'simplefarming:blueberry_pie',
     'supplementaries:pedestal',
@@ -148,6 +157,9 @@ var itemsToHide = [
     'supplementaries:stone_lamp',
     'supplementaries:sack',
     'supplementaries:blackboard',
+
+    'thermal:rubber',
+
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
     'quark:backpack',
@@ -183,6 +195,9 @@ var regexHide = [
     /emendatusenigmatica:\w+_brimstone_ore/,
     /emendatusenigmatica:\w+_soul_soil_ore/,
     /emendatusenigmatica:\w+_basalt_ore/,
+    /tconstruct:\w+_station/,
+    /tconstruct:\w+_anvil/,
+    /tconstruct:part_builder/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
     /thermal:\w+_gear$/,

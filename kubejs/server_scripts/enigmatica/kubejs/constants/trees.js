@@ -58,7 +58,7 @@ const treeRegistry = [
                 leaf: 'byg:baobab_leaves',
                 fruit: 'byg:baobab_fruit',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -167,7 +167,7 @@ const treeRegistry = [
                 trunk: 'byg:mahogany_log',
                 leaf: 'byg:mahogany_leaves',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -245,7 +245,7 @@ const treeRegistry = [
                 trunk: 'byg:rainbow_eucalyptus_log',
                 leaf: 'byg:rainbow_eucalyptus_leaves',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -360,7 +360,7 @@ const treeRegistry = [
                 leaf: 'minecraft:jungle_leaves',
                 fruit: 'alexsmobs:banana',
                 substrate: 'dirt',
-                sap: 'thermal:latex',
+                sap: 'industrialforegoing:latex',
                 amount: 50
             },
             {
@@ -692,6 +692,49 @@ const treeRegistry = [
                 substrate: 'dirt',
                 sap: 'thermal:resin',
                 amount: 75
+            },
+            {
+                sapling: 'atum:palm_sapling',
+                trunk: 'atum:palm_log',
+                leaf: 'atum:palm_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'undergarden:grongle_sapling',
+                trunk: 'undergarden:grongle_log',
+                leaf: 'undergarden:grongle_leaves',
+                substrate: 'deepturf',
+                sap: 'thermal:resin',
+                amount: 75
+            },
+            {
+                sapling: 'tconstruct:earth_slime_sapling',
+                trunk: 'tconstruct:greenheart_log',
+                leaf: 'tconstruct:earth_slime_leaves',
+                fruit: 'minecraft:slime_ball',
+                substrate: 'slimy_dirt',
+                sap: 'tconstruct:earth_slime',
+                amount: 25
+            },
+            {
+                sapling: 'tconstruct:sky_slime_sapling',
+                trunk: 'tconstruct:skyroot_log',
+                leaf: 'tconstruct:sky_slime_leaves',
+                fruit: 'tconstruct:sky_slime_ball',
+                substrate: 'slimy_dirt',
+                sap: 'tconstruct:sky_slime',
+                amount: 25
+            },
+            {
+                sapling: 'tconstruct:ender_slime_sapling',
+                trunk: 'tconstruct:greenheart_log',
+                leaf: 'tconstruct:ender_slime_leaves',
+                fruit: 'tconstruct:ender_slime_ball',
+                substrate: 'slimy_dirt',
+                sap: 'tconstruct:ender_slime',
+                amount: 25
             }
         ]
     },
@@ -815,15 +858,11 @@ const treeRegistry = [
                 trunk: 'undergarden:blood_mushroom_stalk',
                 leaf: 'undergarden:blood_mushroom_cap',
                 extraDecoration: 'undergarden:blood_mushroom_globule',
-                substrate: 'deepturf'
+                substrate: 'deepturf',
+                sap: 'tconstruct:blood',
+                amount: 25
             },
-            {
-                sapling: 'undergarden:gronglet',
-                trunk: 'undergarden:grongle_stem',
-                leaf: 'undergarden:grongle_cap',
-                extraDecoration: 'minecraft:shroomlight',
-                substrate: 'deepturf'
-            },
+
             {
                 sapling: 'undergarden:indigo_mushroom',
                 trunk: 'undergarden:indigo_mushroom_stalk',
@@ -875,6 +914,15 @@ const treeRegistry = [
                 leaf: 'byg:fungal_imparius_block',
                 extraDecoration: 'byg:fungal_imparius_filament_block',
                 substrate: 'mushroom'
+            },
+            {
+                sapling: 'tconstruct:blood_slime_sapling',
+                trunk: 'tconstruct:bloodshroom_log',
+                leaf: 'tconstruct:blood_slime_leaves',
+                fruit: 'tconstruct:ichor_slime_ball',
+                substrate: 'slimy_dirt',
+                sap: 'tconstruct:blood',
+                amount: 25
             }
         ]
     }
