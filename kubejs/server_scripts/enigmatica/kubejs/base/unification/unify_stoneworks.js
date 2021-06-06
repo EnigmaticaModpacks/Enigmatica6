@@ -1,5 +1,5 @@
 //priority: 900
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     generatableCobblestone.forEach((material) => {
         var type = 'cobble';
         //console.log(`Recipe for Material: ${material}, Type: ${type}`);

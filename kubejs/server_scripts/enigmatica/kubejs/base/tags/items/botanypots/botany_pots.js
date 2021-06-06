@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event
         .get('botanypots:simple_botany_pots')
         .add('botanypots:botany_pot')

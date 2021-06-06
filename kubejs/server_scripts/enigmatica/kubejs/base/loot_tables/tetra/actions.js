@@ -1,4 +1,4 @@
-events.listen('server.datapack.low_priority', (event) => {
+onEvent('server.datapack.low_priority', (event) => {
     const actionRecipes = [
         {
             loot_table: 'tetra:loot_tables/actions/beam_salvage.json',

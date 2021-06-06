@@ -1,10 +1,9 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
     data = {
         recipes: [
-
             /*{
                 input: 'input item here',
                 output: 'output item here',

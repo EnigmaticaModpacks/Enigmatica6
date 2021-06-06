@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const lowAmountInputs = [
         'farmersdelight:pumpkin_slice',
         'simplefarming:cantaloupe',

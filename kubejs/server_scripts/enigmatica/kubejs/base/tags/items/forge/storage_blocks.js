@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var storageBlocks = 'forge:storage_blocks';
     event.add(storageBlocks, [
         'minecraft:glowstone',

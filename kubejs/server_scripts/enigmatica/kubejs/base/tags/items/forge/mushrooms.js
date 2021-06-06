@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:mushrooms', [
         'byg:death_cap',
         'byg:shulkren_fungus',

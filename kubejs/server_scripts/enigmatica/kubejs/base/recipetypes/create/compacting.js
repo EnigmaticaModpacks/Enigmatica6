@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     honeyVarieties.forEach((honeyVariety) => {
         if (honeyVariety == 'resourcefulbees:honey') {
             return;

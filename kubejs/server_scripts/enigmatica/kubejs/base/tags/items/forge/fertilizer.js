@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:fertilizer', [
         'botania:fertilizer',
         'thermal:phytogro',

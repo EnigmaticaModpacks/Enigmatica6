@@ -1,13 +1,13 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: {tag: 'resourcefulbees:resourceful_honeycomb_block'},
-                B: {item: 'minecraft:honey_block'},
-                C: {item: 'resourcefulbees:t4_beehive'}
+                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                B: { item: 'minecraft:honey_block' },
+                C: { item: 'resourcefulbees:t4_beehive' }
             },
-            result: {item: 'resourcefulbees:t1_apiary'},
+            result: { item: 'resourcefulbees:t1_apiary' },
             id: 'resourcefulbees:t1_apiary'
         }
     ];

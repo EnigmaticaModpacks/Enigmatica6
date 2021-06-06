@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     /* 
         Recipes use about 40k rf per point of duration. 
         Duration is not a fixed speed, as the machine runs at 10000% speed when the energy buffer is full.  

@@ -1,4 +1,4 @@
-events.listen('server.datapack.low_priority', (event) => {
+onEvent('server.datapack.low_priority', (event) => {
     let lootTables = [
         {
             name: 'dungeon_ocean_common',

@@ -1,5 +1,5 @@
 function cuttingRecipe(ingredient, tool, result) {
-    return { 
+    return {
         type: 'farmersdelight:cutting',
         ingredients: [ingredient],
         tool: tool,
@@ -8,41 +8,34 @@ function cuttingRecipe(ingredient, tool, result) {
 }
 
 function filletRecipe(fish, filletCount) {
-    return cuttingRecipe(
-        Ingredient.of(fish), 
-        Ingredient.of('#forge:tools/knives'), 
-        [Item.of('aquaculture:fish_fillet_raw', filletCount), Item.of('minecraft:bone_meal', Math.ceil(filletCount / 3))]
-    )
+    return cuttingRecipe(Ingredient.of(fish), Ingredient.of('#forge:tools/knives'), [
+        Item.of('aquaculture:fish_fillet_raw', filletCount),
+        Item.of('minecraft:bone_meal', Math.ceil(filletCount / 3))
+    ]);
 }
 
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var data = {
         recipes: [
-            cuttingRecipe(
-                Ingredient.of('minecraft:chicken'),
-                Ingredient.of('#forge:tools/knives'),
-                [Item.of('farmersdelight:chicken_cuts', 2), Item.of('simplefarming:raw_chicken_wings'), Item.of('minecraft:bone_meal')]
-            ),
-            cuttingRecipe(
-                Ingredient.of('aquaculture:frog'),
-                Ingredient.of('#forge:tools/knives'),
-                [Item.of('quark:frog_leg', 2)]
-            ),
-            cuttingRecipe(
-                Ingredient.of('aquaculture:goldfish'),
-                Ingredient.of('#forge:tools/pickaxes'),
-                [Item.of('emendatusenigmatica:gold_chunk', 1)]
-            ),
-            cuttingRecipe(
-                Ingredient.of('aquaculture:atlantic_cod'),
-                Ingredient.of('#forge:tools/knives'),
-                [Item.of('farmersdelight:cod_slice', 6), Item.of('minecraft:bone_meal', 3)]
-            ),
-            cuttingRecipe(
-                Ingredient.of('aquaculture:pink_salmon'),
-                Ingredient.of('#forge:tools/knives'),
-                [Item.of('farmersdelight:salmon_slice', 2), Item.of('minecraft:bone_meal', 1)]
-            ),
+            cuttingRecipe(Ingredient.of('minecraft:chicken'), Ingredient.of('#forge:tools/knives'), [
+                Item.of('farmersdelight:chicken_cuts', 2),
+                Item.of('simplefarming:raw_chicken_wings'),
+                Item.of('minecraft:bone_meal')
+            ]),
+            cuttingRecipe(Ingredient.of('aquaculture:frog'), Ingredient.of('#forge:tools/knives'), [
+                Item.of('quark:frog_leg', 2)
+            ]),
+            cuttingRecipe(Ingredient.of('aquaculture:goldfish'), Ingredient.of('#forge:tools/pickaxes'), [
+                Item.of('emendatusenigmatica:gold_chunk', 1)
+            ]),
+            cuttingRecipe(Ingredient.of('aquaculture:atlantic_cod'), Ingredient.of('#forge:tools/knives'), [
+                Item.of('farmersdelight:cod_slice', 6),
+                Item.of('minecraft:bone_meal', 3)
+            ]),
+            cuttingRecipe(Ingredient.of('aquaculture:pink_salmon'), Ingredient.of('#forge:tools/knives'), [
+                Item.of('farmersdelight:salmon_slice', 2),
+                Item.of('minecraft:bone_meal', 1)
+            ]),
             filletRecipe('minecraft:pufferfish', 2),
             filletRecipe('aquaculture:boulti', 1),
             filletRecipe('aquaculture:smallmouth_bass', 2),

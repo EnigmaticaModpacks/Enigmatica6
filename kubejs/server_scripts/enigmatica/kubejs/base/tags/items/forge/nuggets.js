@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:nuggets', [
         'immersiveengineering:nugget_aluminum',
         'immersiveengineering:nugget_lead',

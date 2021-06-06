@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var nether_end_biomes = end_biomes.concat(nether_biomes);
 
     event.remove({ id: 'industrialforegoing:laser_drill_fluid/oil' });

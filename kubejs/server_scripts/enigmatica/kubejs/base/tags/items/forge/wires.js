@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event
         .get('forge:wires')
         .add('immersiveengineering:wire_steel')

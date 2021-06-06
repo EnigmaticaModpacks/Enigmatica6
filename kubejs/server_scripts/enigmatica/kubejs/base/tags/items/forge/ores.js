@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:ores', [
         'powah:uraninite_ore_poor',
         'powah:uraninite_ore',

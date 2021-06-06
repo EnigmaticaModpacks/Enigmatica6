@@ -1,4 +1,4 @@
-events.listen('jei.information', (event) => {
+onEvent('jei.information', (event) => {
     const recipes = [
         {
             items: ['simplefarming:cheese_slice'],

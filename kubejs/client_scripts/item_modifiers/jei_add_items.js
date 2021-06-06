@@ -1,4 +1,4 @@
-events.listen('jei.add.items', (event) => {
+onEvent('jei.add.items', (event) => {
     const items = [
         Item.of('morphtool:tool').nbt({
             'morphtool:data': {

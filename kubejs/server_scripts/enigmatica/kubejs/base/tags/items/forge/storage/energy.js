@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = ['immersiveengineering:powerpack', 'mekanism:energy_tablet'];
 
     var tags = ['forge:storage', 'forge:storage/energy'];

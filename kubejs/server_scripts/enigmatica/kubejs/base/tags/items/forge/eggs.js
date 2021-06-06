@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     let items = ['atum:quail_egg'];
     event.get('forge:eggs').add(items);
 });

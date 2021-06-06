@@ -1,8 +1,6 @@
-events.listen('recipes', (event) => {
-
+onEvent('recipes', (event) => {
     data = {
         recipes: [
-
             /*{
                 input: 'input item here',
                 output: 'output item here',

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [{ output: 'mekanism:hdpe_sheet', inputs: ['mekanism:hdpe_pellet'] }];
 
     recipes.forEach((recipe) => {

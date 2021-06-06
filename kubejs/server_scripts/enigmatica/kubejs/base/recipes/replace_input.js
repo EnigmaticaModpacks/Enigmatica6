@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         { replaceTarget: { id: 'entangled:block' }, toReplace: 'minecraft:chest', replaceWith: '#forge:chests/wooden' }
     ];

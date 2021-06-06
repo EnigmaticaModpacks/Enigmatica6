@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             input: Fluid.of('integrateddynamics:menril_resin', 1000),

@@ -1,4 +1,4 @@
-/*events.listen('recipes', function (event) {
+/*onEvent('recipes', function (event) {
     // Item Inputs
     var data = {
         recipes: [
