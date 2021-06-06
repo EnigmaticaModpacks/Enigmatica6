@@ -65,7 +65,7 @@
 		{
 			title: "Refined Storage"
 			x: 1.0d
-			y: -6.0d
+			y: -5.5d
 			subtitle: "Energy Mass Conversion in a Square"
 			description: [
 				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
@@ -124,7 +124,7 @@
 		{
 			icon: "mekanism:basic_bin"
 			x: 0.5d
-			y: -9.5d
+			y: -10.0d
 			subtitle: "I Like Big Bins and I Cannot Lie"
 			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "]
 			dependencies: ["00000000000003FF"]
@@ -179,7 +179,7 @@
 		}
 		{
 			title: "Black Hole Storage"
-			x: 1.5d
+			x: 2.0d
 			y: -8.5d
 			subtitle: "Physics Breaking Hoarding"
 			description: [
@@ -756,7 +756,7 @@
 					upgradeSlots: 1
 				}
 			}
-			x: 1.5d
+			x: 2.0d
 			y: -7.5d
 			description: [
 				"Sophisticated backpacks is the backpack mod you never knew you were missing. "
@@ -782,7 +782,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 2.5d
 			y: -6.5d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["0000000000000986"]
@@ -802,7 +802,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 3.5d
 			y: -6.0d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["0000000000000988"]
@@ -822,7 +822,7 @@
 			}]
 		}
 		{
-			x: 4.0d
+			x: 4.5d
 			y: -6.0d
 			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
 			dependencies: ["000000000000098A"]
@@ -842,7 +842,7 @@
 			}]
 		}
 		{
-			x: 3.5d
+			x: 4.0d
 			y: -7.5d
 			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."]
 			dependencies: ["0000000000000986"]
@@ -862,7 +862,7 @@
 			}]
 		}
 		{
-			x: 5.5d
+			x: 6.0d
 			y: -7.5d
 			description: ["Never lose your precious goods again!"]
 			dependencies: ["0000000000000986"]
@@ -892,7 +892,7 @@
 			]
 		}
 		{
-			x: 2.5d
+			x: 3.0d
 			y: -7.5d
 			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "]
 			dependencies: ["0000000000000986"]
@@ -912,7 +912,8 @@
 			}]
 		}
 		{
-			x: 4.5d
+			title: "Feeding Upgrade"
+			x: 5.0d
 			y: -7.5d
 			subtitle: "You're Not You When You're Hungry"
 			description: ["Need a snack? Let your backpack provide."]
@@ -921,6 +922,7 @@
 			tasks: [{
 				id: "0000000000000995"
 				type: "item"
+				title: "Feeding Upgrade"
 				item: "sophisticatedbackpacks:feeding_upgrade"
 			}]
 			rewards: [{
@@ -945,18 +947,11 @@
 			]
 			dependencies: ["2A74822BE970E9D4"]
 			id: "0AD2769DC173D26D"
-			tasks: [
-				{
-					id: "6B198B6A029D9333"
-					type: "item"
-					item: "compactmachines:personal_shrinking_device"
-				}
-				{
-					id: "183F540AE4005AB2"
-					type: "item"
-					item: "compactmachines:machine_tiny"
-				}
-			]
+			tasks: [{
+				id: "6B198B6A029D9333"
+				type: "item"
+				item: "compactmachines:personal_shrinking_device"
+			}]
 			rewards: [{
 				id: "07BAD39E967F6B85"
 				type: "item"
@@ -965,8 +960,8 @@
 		}
 		{
 			title: "Field Projector"
-			x: -4.5d
-			y: -3.5d
+			x: -3.0d
+			y: -4.0d
 			subtitle: "Non-renormalizability"
 			description: [
 				"Crafting Compact Machines themselves is done with Field Projectors. Four of them need to be placed facing each other in a cross shape. "
@@ -977,7 +972,11 @@
 				""
 				"If done correctly, an orange force field will appear in the center. This area is where the Compact Machines themselves must be constructed. "
 			]
-			dependencies: ["4DB24091326F4C47"]
+			dependencies: [
+				"0AD2769DC173D26D"
+				"0000000000000FEB"
+			]
+			hide: true
 			min_width: 250
 			id: "5A1F6BA9BE06D643"
 			tasks: [{
@@ -1037,57 +1036,24 @@
 		}
 		{
 			icon: "compactmachines:machine_tiny"
-			x: -4.5d
-			y: -2.0d
+			x: -4.0d
+			y: -4.0d
 			subtitle: "One, cut a hole in a box"
 			description: [
 				"Gather the materials for your first Compact Machine!"
-				""
-				"To construct it, build the multi-block shown in JEI within the field and finally drop the catalyst item into the field. The structure will animate and begin to shrink down, finally dropping the fully crafted Compact Machine on the ground. "
 				""
 				"The Tiny Compact Machine has an internal volume of 3x3x3 and while that seems terribly small, it is perfect for certain smaller automations. And if you yourself are shrunk it can make placing the blocks inside quite simple. "
 				""
 				"Make a challenge for yourself and try to automate Industrial Foregoing Latex and Rubber in one. With clever use of other mods, this could be entirely self contained, including wood, power, and transformation from latex to plastic sheets all within this tiny box. "
 			]
-			dependencies: ["5A1F6BA9BE06D643"]
+			dependencies: ["0AD2769DC173D26D"]
 			min_width: 250
 			id: "3787A109AABC8921"
-			tasks: [
-				{
-					id: "16A0C1D718EA19AF"
-					type: "item"
-					item: "compactmachines:machine_tiny"
-				}
-				{
-					id: "32D8F9B8CDED9E06"
-					type: "item"
-					item: "minecraft:brown_concrete"
-					count: 48L
-				}
-				{
-					id: "1AC67E05941AD859"
-					type: "item"
-					item: "immersiveengineering:sheetmetal_colored_black"
-					count: 44L
-				}
-				{
-					id: "7825B867D82C7434"
-					type: "item"
-					item: "compactmachines:wall"
-					count: 26L
-				}
-				{
-					id: "10B5CC28DFBCC2DF"
-					type: "item"
-					item: "immersiveengineering:insulating_glass"
-					count: 6L
-				}
-				{
-					id: "1E69615DDBADE72F"
-					type: "item"
-					item: "emendatusenigmatica:copper_block"
-				}
-			]
+			tasks: [{
+				id: "16A0C1D718EA19AF"
+				type: "item"
+				item: "compactmachines:machine_tiny"
+			}]
 			rewards: [{
 				id: "3E2CA8D755178794"
 				type: "command"
@@ -1098,8 +1064,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -2.0d
+			x: -3.5d
+			y: -3.0d
 			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "]
 			dependencies: ["3787A109AABC8921"]
 			id: "0DAA452348B02827"
@@ -1118,8 +1084,8 @@
 			}]
 		}
 		{
-			x: -5.5d
-			y: -1.0d
+			x: -5.0d
+			y: -4.5d
 			subtitle: "Quantum Tunneling"
 			description: [
 				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
@@ -1153,17 +1119,49 @@
 			}]
 		}
 		{
-			icon: "minecraft:structure_void"
-			x: -4.0d
-			y: -4.5d
-			dependencies: ["0AD2769DC173D26D"]
-			hide: true
-			id: "4DB24091326F4C47"
+			x: 5.5d
+			y: -6.0d
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
+			dependencies: ["000000000000098C"]
+			id: "585A22AF9FB84AFD"
 			tasks: [{
-				id: "0E48747CD5A70977"
-				type: "gamestage"
-				title: "impossible"
-				stage: "impossible"
+				id: "4F51BBE2671F8947"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+			rewards: [{
+				id: "5319BF6929089EA6"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Dimensional Storage"
+			x: 1.5d
+			y: -9.5d
+			subtitle: "Wouldn't you think my collection's complete?"
+			description: [
+				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
+				""
+				"Occultism offers extensive storage capabilities with cross-dimensional access both manually and via automation. Check out the Occultism chapter for more details on the process. "
+			]
+			dependencies: ["00000000000003FF"]
+			id: "662DA1135F00D6B6"
+			tasks: [{
+				id: "0B58FB5EED4BBC33"
+				type: "item"
+				item: "occultism:storage_controller"
+			}]
+			rewards: [{
+				id: "44BA68CC5061BD0A"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 	]
