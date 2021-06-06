@@ -138,7 +138,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"framedblocks-client.toml",
 	"cfm-client.toml",
 	"entity_culling-client.toml",
-	"terraforged/performance_internal.conf"
+	"terraforged/performance_internal.conf",
+	"gravestone-client.toml"
 )
 
 #=====================================================================//
