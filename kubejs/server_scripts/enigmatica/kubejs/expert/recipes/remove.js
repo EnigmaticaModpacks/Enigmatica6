@@ -20,7 +20,8 @@ onEvent('recipes', (event) => {
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
         { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' },
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
-        { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' }
+        { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
+        { output: 'botania:spark', id: 'botania:spark' }
     ];
 
     idRemovals.forEach((id) => {

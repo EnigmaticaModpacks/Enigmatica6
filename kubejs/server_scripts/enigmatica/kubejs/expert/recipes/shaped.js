@@ -622,6 +622,27 @@ onEvent('recipes', (event) => {
                 D: 'alexsmobs:guster_eye'
             },
             id: 'astralsorcery:altar/grapple_wand'
+        },
+        {
+            output: 'botania:corporea_index',
+            pattern: ['ABA', 'BCB', 'DBD'],
+            key: {
+                A: 'atum:ectoplasm',
+                B: 'glassential:glass_ghostly',
+                C: 'botania:corporea_block',
+                D: 'occultism:spirit_attuned_gem'
+            },
+            id: 'botania:corporea_index'
+        },
+        {
+            output: 'botania:corporea_crystal_cube',
+            pattern: ['A', 'B', 'C'],
+            key: {
+                A: 'botania:corporea_spark',
+                B: 'glassential:glass_ghostly',
+                C: 'botania:corporea_block'
+            },
+            id: 'botania:corporea_crystal_cube'
         }
     ];
 
