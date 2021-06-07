@@ -8,6 +8,7 @@ onEvent('recipes', (event) => {
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
         { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
+        { output: Item.of('atum:nebu_drop', 9), inputs: ['#forge:ingots/nebu'] },
         {
             output: 'simplefarming:fish_sandwich',
             inputs: [
