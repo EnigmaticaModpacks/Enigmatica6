@@ -114,14 +114,14 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle',
-                    'buildersaddition:large_soul_candle'
+                    'quark:white_candle',
+                    'quark:white_candle',
+                    'quark:white_candle',
+                    'quark:white_candle',
+                    'quark:white_candle',
+                    'quark:white_candle',
+                    'quark:white_candle',
+                    'quark:white_candle'
                 ],
                 reagent: 'bloodmagic:holy_water_anointment',
                 output: 'eidolon:candle',

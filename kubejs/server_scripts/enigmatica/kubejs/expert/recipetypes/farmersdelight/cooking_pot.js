@@ -4,46 +4,12 @@ onEvent('recipes', (event) => {
     }
 
     var data = {
-        recipes: [
-            {
-                inputs: ['#forge:wax', '#forge:string'],
-                output: 'buildersaddition:large_candle',
-                count: 1,
-                cookingTime: 100,
-                id: 'buildersaddition:large_candle'
-            },
-            {
-                inputs: ['#forge:tallow', '#forge:string'],
-                output: 'buildersaddition:large_candle',
-                count: 1,
-                cookingTime: 100
-            },
-            {
-                inputs: ['minecraft:honeycomb', '#forge:string'],
-                output: 'buildersaddition:large_candle',
-                count: 1,
-                cookingTime: 100
-            },
-            {
-                inputs: ['minecraft:soul_sand', 'buildersaddition:large_candle'],
-                output: 'buildersaddition:large_soul_candle',
-                count: 1,
-                cookingTime: 100,
-                id: 'buildersaddition:large_soul_candle_soul_sand'
-            },
-            {
-                inputs: ['minecraft:soul_soil', 'buildersaddition:large_candle'],
-                output: 'buildersaddition:large_soul_candle',
-                count: 1,
-                cookingTime: 100,
-                id: 'buildersaddition:large_soul_candle_soul_soil'
-            }
-        ]
+        recipes: []
     };
 
     colors.forEach((color) => {
         data.recipes.push({
-            inputs: [`#forge:dyes/${color}`, 'buildersaddition:large_candle'],
+            inputs: [`#forge:dyes/${color}`, '#enigmatica:candle_materials', '#forge:string'],
             output: `quark:${color}_candle`,
             count: 1,
             cookingTime: 100,
