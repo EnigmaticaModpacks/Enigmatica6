@@ -168,6 +168,37 @@ var itemsToHide = [
     'quark:soul_compass'
 ];
 
+/*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
+    that have been changed to use a different crafting type or that have been disabled. It allows creating a
+    recipe pointer that will display in Patchouli but not in JEI.  
+
+    Use the below logger to discover the correct CategoryID. They do not match the recipe type.
+*/
+//console.log('JEI RECIPE TYPES: ' + event.getCategoryIds());
+const recipesToHide = [
+    {
+        category: 'minecraft:crafting',
+        recipes_by_id: [
+            'ars_nouveau:arcane_stone',
+            'ars_nouveau:crystallizer',
+            'ars_nouveau:volcanic_accumulator',
+            'naturesaura:calling_spirit',
+            'naturesaura:animal_spawner',
+            'botania:spark',
+            'mythicbotany:wither_aconite_floating',
+            'mythicbotany:raindeletia_floating'
+        ]
+    },
+    {
+        category: 'ars_nouveau:apparatus',
+        recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
+    },
+    {
+        category: 'botania:petals',
+        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    }
+];
+
 var regexHide = [
     /emendatusenigmatica:\w+_andesite_ore/,
     /emendatusenigmatica:\w+_gabbro_ore/,
