@@ -70,8 +70,6 @@ onEvent('recipes', (event) => {
 
         'botanypots:crafting/compact_hopper_botany_pot',
 
-        'buildersaddition:iron_rod',
-
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
 
@@ -211,12 +209,6 @@ onEvent('recipes', (event) => {
 
     disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
-    });
-
-    event.remove({
-        output: '/buildersaddition:\\w+_vertical_slab/',
-        mod: 'buildersaddition',
-        type: 'minecraft:crafting_shaped'
     });
 
     event.remove({

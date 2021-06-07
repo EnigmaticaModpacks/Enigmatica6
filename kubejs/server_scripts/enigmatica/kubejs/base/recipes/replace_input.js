@@ -349,7 +349,6 @@ onEvent('recipes', (event) => {
                 'endermail:locker',
                 'endermail:package_controller',
                 'cookingforblockheads:preservation_chamber',
-                'buildersaddition:arcade',
                 'minecraft:compass',
                 'minecraft:piston',
                 'xnet:antenna_dish',

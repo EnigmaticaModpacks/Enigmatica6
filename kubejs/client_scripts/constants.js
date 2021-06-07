@@ -215,7 +215,6 @@ var regexHide = [
     /create:\w+_nugget/,
     /create:\w+_ingot/,
     /immersiveposts:stick_/,
-    /buildersaddition:\w+_rod/,
     /eidolon:\w+_ore/,
     /byg:pendorite/,
     /byg:ametrine/,

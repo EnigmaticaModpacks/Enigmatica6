@@ -10,10 +10,6 @@ onEvent('recipes', (event) => {
             id: 'mekanism:hdpe_sheet'
         },
         {
-            output: Item.of('buildersaddition:large_candle', 4),
-            inputs: ['#forge:wax', '#forge:wax', '#forge:wax', '#forge:string']
-        },
-        {
             output: 'quark:root',
             inputs: ['minecraft:vine', '#forge:dyes/brown']
         }
