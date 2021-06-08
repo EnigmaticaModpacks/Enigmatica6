@@ -1,8 +1,3 @@
-#
-# Add the ID/resource location of the biome you don't want
-# RS's outposts to spawn in. Separate each ID with a comma ,
-#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
-blacklistedOutpostBiomes = " "
 
 [Outposts]
 	#
@@ -109,4 +104,9 @@ blacklistedOutpostBiomes = " "
 	#
 	# Add End Outposts to modded End biomes.
 	addOutpostEndToModdedBiomes = true
+	#
+	# Add the ID/resource location of the biome you don't want
+	# RS's outposts to spawn in. Separate each ID with a comma ,
+	#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+	blacklistedOutpostBiomes = " "
 
