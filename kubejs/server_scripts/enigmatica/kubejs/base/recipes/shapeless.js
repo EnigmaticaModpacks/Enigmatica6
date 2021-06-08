@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
@@ -8,6 +8,7 @@ events.listen('recipes', (event) => {
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
         { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
+        { output: Item.of('atum:nebu_drop', 9), inputs: ['#forge:ingots/nebu'] },
         {
             output: 'simplefarming:fish_sandwich',
             inputs: [
@@ -179,7 +180,12 @@ events.listen('recipes', (event) => {
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                     bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
                     integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 },
-                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 }
+                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 },
+                    sushigocrafting: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: { 'patchouli:book': 'sushigocrafting:sushigocrafting' }
+                    }
                 }
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']

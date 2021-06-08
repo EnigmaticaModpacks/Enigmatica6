@@ -29,7 +29,7 @@ console.log(`isExpertMode: ${global.isExpertMode}`);
 console.log(`isNormalMode var: ${isNormalMode}`);
 console.log(`isExpertMode var: ${isExpertMode}`);
 
-events.listen('server.datapack.high_priority', (event) => {
+onEvent('server.datapack.high_priority', (event) => {
     if (event.server) {
         event.server.players.forEach((player) => {
             setMode(player);

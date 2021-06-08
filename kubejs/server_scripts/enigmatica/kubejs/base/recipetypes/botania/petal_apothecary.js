@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [{ item: 'kubejs:disabled_recipe_indicator' }],

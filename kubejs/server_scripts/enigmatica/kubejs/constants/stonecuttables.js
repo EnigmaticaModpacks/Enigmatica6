@@ -480,9 +480,8 @@ const stonecuttables = [
         onlyAsInput: []
     },
     {
-        name: 'prismarine',
+        name: 'prismarine_brick',
         stones: [
-            'minecraft:prismarine',
             'minecraft:prismarine_bricks',
             'masonry:prismarinetiled',
             'masonry:prismarinecarvedcreeper',
@@ -498,14 +497,18 @@ const stonecuttables = [
             'masonry:prismarinepolished',
             'masonry:prismarineroughcut',
             'masonry:prismarinechiseled',
-            'masonry:prismarinecobbled',
-            'masonry:prismarinecobbledmossy',
             'masonry:prismarinediamondpavers',
             'masonry:prismarinelargebricks',
             'masonry:prismarinelargebrickscracked',
             'masonry:prismarinelargebricksmossy',
             'masonry:prismarinesmallbrick'
         ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'prismarine',
+        stones: ['minecraft:prismarine', 'masonry:prismarinecobbled', 'masonry:prismarinecobbledmossy'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -654,6 +657,45 @@ const stonecuttables = [
             'create:overgrown_weathered_limestone'
         ],
         onlyAsOutput: ['create:weathered_limestone_cobblestone'],
+        onlyAsInput: []
+    },
+    {
+        name: 'flavolite',
+        stones: [
+            'betterendforge:flavolite_bricks',
+            'betterendforge:flavolite_pedestal',
+            'betterendforge:flavolite_pillar',
+            'betterendforge:flavolite_tiles',
+            'betterendforge:flavolite_polished',
+            'betterendforge:flavolite'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'violecite',
+        stones: [
+            'betterendforge:violecite_bricks',
+            'betterendforge:violecite_pedestal',
+            'betterendforge:violecite_pillar',
+            'betterendforge:violecite_tiles',
+            'betterendforge:violecite_polished',
+            'betterendforge:violecite'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'sulphuric_rock',
+        stones: [
+            'betterendforge:sulphuric_rock_pedestal',
+            'betterendforge:sulphuric_rock_bricks',
+            'betterendforge:sulphuric_rock_pillar',
+            'betterendforge:sulphuric_rock_tiles',
+            'betterendforge:sulphuric_rock_polished',
+            'betterendforge:sulphuric_rock'
+        ],
+        onlyAsOutput: [],
         onlyAsInput: []
     }
 ];

@@ -1,14 +1,8 @@
-events.listen('recipes', (event) => {
-
+onEvent('recipes', (event) => {
     const recipes = [
         {
             output: Item.of('resourcefulbees:starry_bee_spawn_egg', 1),
-            pattern: [
-                '_____',
-                '__E__',
-                '_DCB_',
-                '__A__',
-                '_____'],
+            pattern: ['_____', '__E__', '_DCB_', '__A__', '_____'],
             key: {
                 A: {
                     type: 'astralsorcery:crystal',

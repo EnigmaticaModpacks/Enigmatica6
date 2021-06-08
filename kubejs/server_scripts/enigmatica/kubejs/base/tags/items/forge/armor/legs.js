@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'immersiveengineering:armor_faraday_legs',
         'immersiveengineering:armor_steel_legs',

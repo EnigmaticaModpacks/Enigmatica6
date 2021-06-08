@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     treeRegistry.forEach((treeCategories) => {
         treeCategories.trees.forEach((tree) => {
             if (tree.sap) {

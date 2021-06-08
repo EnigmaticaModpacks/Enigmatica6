@@ -1,5 +1,5 @@
 //priority: 900
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
         var sawDust = 'emendatusenigmatica:wood_dust';
 

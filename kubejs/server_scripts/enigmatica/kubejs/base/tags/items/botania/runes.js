@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     let realms = [
         'asgard',
         'vanaheim',

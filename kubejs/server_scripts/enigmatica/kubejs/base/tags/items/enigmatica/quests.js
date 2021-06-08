@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event
         .get('enigmatica:quests/storage/gold_to_diamond')
         .add(['ironchest:diamond_chest', 'ironchest:gold_to_diamond_chest_upgrade']);

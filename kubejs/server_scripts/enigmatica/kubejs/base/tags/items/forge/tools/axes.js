@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = ['immersiveengineering:axe_steel', 'bloodmagic:soulaxe', 'atum:montus_strike', 'atum:shus_exile'];
     var exceptions = [
         'betterendforge:aeternium_axe_head',

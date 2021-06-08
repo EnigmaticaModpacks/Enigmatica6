@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = ['mekanism:dynamic_tank', 'mekanism:dynamic_valve'];
 
     var tags = ['forge:storage', 'forge:storage/gas'];

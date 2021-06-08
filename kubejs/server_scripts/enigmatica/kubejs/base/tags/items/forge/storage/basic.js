@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'aquaculture:neptunes_bounty',
         'cookingforblockheads:corner',
@@ -40,9 +40,6 @@ events.listen('item.tags', (event) => {
             .add(/chest$/)
             .add(/betterendforge:\w+barrel/)
             .add(/bedside_table/)
-            .add(/buildersaddition:bookshelf/)
-            .add(/buildersaddition:shelf/)
-            .add(/buildersaddition:\w+counter/)
             .add(/cabinet/)
             .add(/cupboard/)
             .add(/shulker_box/)

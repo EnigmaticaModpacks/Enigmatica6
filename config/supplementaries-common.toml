@@ -94,9 +94,34 @@
 		#Range: 1 ~ 15
 		light_level = 12
 
-	[blocks.timber_frame]
-		#replace a timber frame with wattle and daub when daub is placed in it
-		replace_daub = true
+	[blocks.hourglass]
+		#Time in ticks for sugar
+		#Range: 0 ~ 10000
+		sugar_time = 40
+		#Time in ticks for sand blocks
+		#Range: 0 ~ 10000
+		sand_time = 70
+		#Time in ticks for concrete blocks
+		#Range: 0 ~ 10000
+		concrete_time = 105
+		#Time in ticks for generic dust
+		#Range: 0 ~ 10000
+		dust_time = 150
+		#Time in ticks for glowstone dust
+		#Range: 0 ~ 10000
+		glowstone_time = 190
+		#Time in ticks for blaze powder
+		#Range: 0 ~ 10000
+		blaze_powder_time = 277
+		#Time in ticks for redstone dust
+		#Range: 0 ~ 10000
+		redstone_time = 400
+		#Time in ticks for slime balls
+		#Range: 0 ~ 10000
+		slime_time = 1750
+		#Time in ticks for honey
+		#Range: 0 ~ 10000
+		honey_time = 2000
 
 #Configure spawning conditions
 [spawns]
@@ -177,9 +202,19 @@
 		#Range: 0 ~ 1024
 		chain_length = 16
 
-	[tweaks.placeable_sticks]
-		#allow placeable blaze rods
+	[tweaks.raked_gravel]
+		#allow gravel to be raked with a hoe
 		enabled = true
+
+	[tweaks.bottle_xp]
+		#allow bottling up xp by using a bottle on an enchanting table
+		enabled = true
+		#bottling health cost
+		#Range: 0 ~ 20
+		cost = 2
+
+	[tweaks.adventurer_maps]
+		custom_adventurer_maps = [[""]]
 
 [items]
 

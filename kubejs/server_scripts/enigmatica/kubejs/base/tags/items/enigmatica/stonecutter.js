@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     stonecuttables.forEach((stoneType) => {
         var tag = `enigmatica:stonecuttables/${stoneType.name}`;
         event.add('enigmatica:stonecuttables', ['#' + tag]);

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             input: 'minecraft:glass_bottle',

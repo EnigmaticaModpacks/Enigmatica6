@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:fruits', [
         'ars_nouveau:mana_berry',
         'betterendforge:blossom_berry',

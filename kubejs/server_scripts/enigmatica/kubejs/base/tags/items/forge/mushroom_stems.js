@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:mushroom_stems', [
         'byg:soul_shroom_stem',
         'byg:yellow_glowshroom_stem',

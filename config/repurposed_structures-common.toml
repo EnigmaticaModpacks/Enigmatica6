@@ -7,40 +7,6 @@
 	#   Example: "minecraft:the_end,awesome_mod:awesome_dimension"
 	blacklistedDimensions = "the_bumblezone:the_bumblezone"
 
-	["Mod-wide Impacting Options"."Feature Options"]
-
-		["Mod-wide Impacting Options"."Feature Options".Misc]
-			#
-			# Adds giant boulders to modded Giant Tree Taiga (or Redwood) biomes.
-			addGiantBouldersModdedBiomes = false
-			#
-			# Add the ID/resource location of the biome you don't want
-			# RS's boulders to spawn in. Separate each ID with a comma ,
-			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
-			blacklistedBoulderBiomes = " "
-			#
-			# How many Giant Boulders per chunk. (Can be decimal too)
-			#Range: 0.0 ~ 100.0
-			giantBouldersPerChunk = 0.5
-			#
-			# 1 out of ___ chance of Diamond Ore when placing
-			# a block in giant Boulders. Lower number = more common.
-			# Enter 0 to disable Diamond Ores completely.
-			#Range: 0 ~ 1000000
-			diamondChanceInGiantBoulders = 7000
-			#
-			# Adds tiny boulders to modded Taiga biomes.
-			addTinyBouldersModdedBiomes = false
-			#
-			# Adds tiny boulders to Taiga Mountains and Snowy Taiga Mountains biomes 
-			# that can contain small amounts of Coal and Iron ores.
-			boulderTiny = true
-			#
-			# Replaces boulders in Giant Tree Taiga Hills and Giant Spruce Taiga Hills
-			# biomes with a larger boulder that can contain Coal, Iron, and extremely
-			# rarely, can also have Diamond Ores.
-			boulderGiant = true
-
 	["Mod-wide Impacting Options"."Structure Options"]
 
 		["Mod-wide Impacting Options"."Structure Options"."Jungle Fortress"]
@@ -58,18 +24,24 @@
 			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
 			blacklistedFortressBiomes = " "
 			#
-			# How often Silverfish Blocks will generate in Jungle Fortress as a percentage.
-			# Note: Mossy Stone Bricks block cannot be infected by Silverfish
-			# 0 for no Silverfish Blocks and 100 for max spawnrate.
-			#Range: 0.0 ~ 100.0
-			silverfishSpawnrate = 0.5
+			# Size of the fortress. This is how many pieces long a branch can be from the start piece.
+			#Range: 1 ~ 18
+			jungleFortressSize = 10
 			#
-			# Silverfish Mob Spawners generate in Stone Fortresses.
-			# If turned off, the spawners will become Skeleton spawners.
-			allowSilverfishSpawner = true
+			# Min Y height that the starting point can spawn at.
+			#Default is 56.
+			#Range: 0 ~ 255
+			jungleFortressMinHeight = 56
 			#
-			# Controls whether loot chests spawn or not in Jungle Fortresses.
-			lootChests = true
+			# Max Y height that the starting point can spawn at.
+			#Default is 63.
+			#If below min height, this will be read as min.
+			#Range: 0 ~ 255
+			jungleFortressMaxHeight = 63
+			#
+			# How far above or below the fortress's pieces can generate away from the center piece.
+			#Range: 0 ~ 255
+			jungleFortressVerticalRange = 33
 
 		["Mod-wide Impacting Options"."Structure Options".Igloos]
 			#
@@ -122,6 +94,36 @@
 			#
 			# Add Nether Ruins to modded Nether category biomes.
 			addRuinsNetherToModdedBiomes = true
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Ruins to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedUndergroundBastionBiomes = " "
+			#How rare are Underground Bastions in non-ocean and non-beach Overworld biomes.
+			#1 for spawning in most chunks and 10001 for none.
+			#Range: 1 ~ 1001
+			bastionUndergroundMaxChunkDistance = 500
+			#
+			# Add Underground Bastions to modded non-ocean and non-beach Overworld biomes.
+			addBastionUndergroundToModdedBiomes = true
+			#How rare are Warm Land Ruins in Plains, Forests, Swamps, and non-snowy Taiga biomes.
+			#
+			#1 for spawning in most chunks and 1001 for none.
+			#Range: 1 ~ 1001
+			ruinsLandWarmMaxChunkDistance = 36
+			#
+			# Add Warm Land Ruins to modded Plains, Forests,
+			#
+			#and non-snowy Taiga biomes.
+			addRuinsLandWarmToModdedBiomes = true
+			#How rare are Hot Land Ruins in Desert biomes.
+			#
+			#1 for spawning in most chunks and 1001 for none.
+			#Range: 1 ~ 1001
+			ruinsLandHotMaxChunkDistance = 39
+			#
+			# Add Hot Land Ruins to modded Desert biomes.
+			addRuinsLandHotToModdedBiomes = true
 
 		["Mod-wide Impacting Options"."Structure Options".Cities]
 			#

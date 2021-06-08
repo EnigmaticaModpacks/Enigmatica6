@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             itemInput: { amount: 2, ingredient: { tag: 'forge:fuels/bio' } },

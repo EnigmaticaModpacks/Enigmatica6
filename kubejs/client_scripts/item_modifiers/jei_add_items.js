@@ -1,4 +1,4 @@
-events.listen('jei.add.items', (event) => {
+onEvent('jei.add.items', (event) => {
     const items = [
         Item.of('morphtool:tool').nbt({
             'morphtool:data': {
@@ -93,9 +93,19 @@ events.listen('jei.add.items', (event) => {
                 ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                 bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
                 integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 },
-                betterendforge: { id: 'betterendforge:guidebook', Count: 1 }
+                betterendforge: { id: 'betterendforge:guidebook', Count: 1 },
+                sushigocrafting: {
+                    id: 'patchouli:guide_book',
+                    Count: 1,
+                    tag: { 'patchouli:book': 'sushigocrafting:sushigocrafting' }
+                }
             }
-        })
+        }),
+        Item.of('tconstruct:tinker_station').nbt({ texture: 'minecraft:oak_planks' }),
+        Item.of('tconstruct:crafting_station').nbt({ texture: 'minecraft:oak_planks' }),
+        Item.of('tconstruct:part_builder').nbt({ texture: 'minecraft:oak_planks' }),
+        Item.of('tconstruct:scorched_anvil').nbt({ texture: 'emendatusenigmatica:steel_block' }),
+        Item.of('tconstruct:tinkers_anvil').nbt({ texture: 'emendatusenigmatica:steel_block' })
     ];
 
     items.forEach((item) => event.add(item));

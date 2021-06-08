@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         // {
         //     output: Item.of('tiab:timeinabottle'),

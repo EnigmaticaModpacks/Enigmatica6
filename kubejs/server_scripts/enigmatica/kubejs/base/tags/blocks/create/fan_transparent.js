@@ -1,4 +1,4 @@
-events.listen('block.tags', (event) => {
+onEvent('block.tags', (event) => {
     event
         .get('create:fan_transparent')
         .add(/bars/)

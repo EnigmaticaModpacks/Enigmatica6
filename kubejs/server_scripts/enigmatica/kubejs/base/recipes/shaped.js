@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     // Please add new recipes to this object instead of recipes
     const newRecipes = [
         {
@@ -12,7 +12,6 @@ events.listen('recipes', (event) => {
             },
             id: 'botanypots:crafting/botany_pot'
         },
-
         {
             output: 'ironjetpacks:hardened_jetpack',
             pattern: ['ABA', 'ECE', 'D D'],
@@ -982,6 +981,23 @@ events.listen('recipes', (event) => {
                 A: 'atum:cloth_scrap',
                 B: '#forge:rods/wooden'
             }
+        },
+        {
+            output: Item.of('minecraft:paper', 3),
+            pattern: ['AAA'],
+            key: {
+                A: '#forge:dusts/wood'
+            },
+            id: 'mekanism:paper'
+        },
+        {
+            output: 'supplementaries:candle_holder',
+            pattern: ['A', 'B'],
+            key: {
+                A: '#quark:candles',
+                B: '#forge:nuggets/pewter'
+            },
+            id: 'supplementaries:candle_holder'
         }
     ];
 
@@ -1376,18 +1392,6 @@ events.listen('recipes', (event) => {
                 F: 'morphtool:tool'
             }
         ),
-        shapedRecipe(Item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
-            A: '#forge:wax',
-            B: '#forge:string'
-        }),
-        shapedRecipe(Item.of('eidolon:candle', 4), ['B', 'A'], {
-            A: '#forge:wax',
-            B: '#forge:string'
-        }),
-        shapedRecipe(Item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
-            A: '#forge:wax',
-            B: '#forge:string'
-        }),
         shapedRecipe(Item.of('byg:embur_hyphae', 3), ['AA', 'AA'], {
             A: 'byg:embur_pedu'
         }),

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -17,7 +17,7 @@ events.listen('recipes', (event) => {
                 B: {tag: 'resourcefulbees:resourceful_honey_block'},
                 C: {item: 'resourcefulbees:t4_beehive'}
             },
-            result: {item: 'resourcefulbees:t1_apiary'},
+            result: { item: 'resourcefulbees:t1_apiary' },
             id: 'resourcefulbees:t1_apiary'
         }
     ];

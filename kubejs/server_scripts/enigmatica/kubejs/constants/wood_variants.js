@@ -76,7 +76,10 @@ var woodVariantsToConstruct = [
     'environmental:cherry',
     'environmental:wisteria',
     'atum:palm',
-    'atum:deadwood'
+    'atum:deadwood',
+    'tconstruct:greenheart',
+    'tconstruct:bloodshroom',
+    'tconstruct:skyroot'
     // 'sushigocrafting:avocado'
 ];
 
@@ -136,6 +139,10 @@ woodVariantsToConstruct.forEach((variant) => {
         logBlockStripped = modId + ':' + logType + '_stripped' + logSuffix;
         woodBlockStripped = modId + ':' + logType + '_stripped' + woodSuffix;
         plankBlock = modId + ':' + logType + '_planks';
+    }
+
+    if (modId == 'tconstruct') {
+        slabBlock = modId + ':' + logType + '_planks_slab';
     }
 
     switch (logType) {
