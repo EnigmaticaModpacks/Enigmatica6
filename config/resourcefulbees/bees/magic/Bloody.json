@@ -20,8 +20,9 @@
         "mutations": [
             {
                 "type": "BLOCK",
+                "chance": 0.2,
                 "inputID": "minecraft:water",
-                "outputs": [{ "outputID": "bloodmagic:life_essence_fluid", "weight": 10 }]
+                "outputs": [{ "outputID": "bloodmagic:life_essence_block", "weight": 10 }]
             }
         ]
     },
