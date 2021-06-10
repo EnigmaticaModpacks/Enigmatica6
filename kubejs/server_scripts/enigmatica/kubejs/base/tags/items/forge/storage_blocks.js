@@ -38,4 +38,5 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/amber', ['betterendforge:amber_block']);
 
     event.add(storageBlocks + '/sunmetal', ['architects_palette:sunmetal_block']);
+    event.add(storageBlocks + '/tinkers_bronze', ['tconstruct:tinkers_bronze_block']);
 });
