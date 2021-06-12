@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var multiplier = 1000;
     var data = {
         recipes: [

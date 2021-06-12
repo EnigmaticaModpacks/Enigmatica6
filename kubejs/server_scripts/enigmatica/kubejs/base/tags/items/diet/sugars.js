@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     combVariants.forEach((comb) => {
         event.get('diet:sugars').add('resourcefulbees:' + comb + '_honeycomb');
     });

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             ingredient: {
@@ -18,6 +18,30 @@ events.listen('recipes', (event) => {
                 {
                     fluid: 'minecraft:milk',
                     amount: 250,
+                    chance: 0.25
+                }
+            ],
+            time: 200,
+            noBottleInput: true
+        },
+        {
+            ingredient: {
+                item: 'resourcefulbees:boobee_honeycomb_block'
+            },
+            results: [
+                {
+                    item: 'minecraft:ghast_tear',
+                    chance: 0.15,
+                    count: 18
+                },
+                {
+                    item: 'minecraft:spectral_arrow',
+                    chance: 0.2,
+                    count: 27
+                },
+                {
+                    fluid: 'minecraft:milk',
+                    amount: 2250,
                     chance: 0.25
                 }
             ],

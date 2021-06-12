@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'botania:ender_dagger',
         'byg:pendorite_battleaxe',

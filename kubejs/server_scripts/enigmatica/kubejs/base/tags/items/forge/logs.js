@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event
         .get('forge:logs/smogstem')
         .add('undergarden:smogstem_log')

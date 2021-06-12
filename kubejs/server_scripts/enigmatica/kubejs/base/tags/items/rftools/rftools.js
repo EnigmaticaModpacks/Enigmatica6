@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     //Crafters
     for (i = 1; i <= 3; i++) {
         event.get('rftools:crafter').add('rftoolsutility:crafter' + i);

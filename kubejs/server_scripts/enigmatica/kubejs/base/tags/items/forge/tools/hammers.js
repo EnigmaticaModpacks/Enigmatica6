@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var exceptions = ['betterendforge:aeternium_hammer_head'];
 
     var tags = ['forge:tools', 'forge:tools/hammer'];

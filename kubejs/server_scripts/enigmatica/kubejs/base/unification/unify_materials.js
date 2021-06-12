@@ -1,14 +1,21 @@
 //priority: 900
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     materialsToUnify.forEach((material) => {
         var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
+        var block = getPreferredItemInTag(Ingredient.of('#forge:storage_blocks/' + material)).id;
         var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
+        var nugget = getPreferredItemInTag(Ingredient.of('#forge:nuggets/' + material)).id;
+
         var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
         var chunk = getPreferredItemInTag(Ingredient.of('#forge:chunks/' + material)).id;
 
         var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
         var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
         var shard = getPreferredItemInTag(Ingredient.of('#forge:shards/' + material)).id;
+
+        var gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
+        var rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
+        var plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
 
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 
@@ -45,6 +52,11 @@ events.listen('recipes', (event) => {
         pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
 
         thermal_ore_pulverizing(event, material, ore, dust, gem, shard);
+        thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate);
+        thermal_gem_casting(event, material, gem, gear, rod, plate);
+
+        tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
+        tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
     });
 
     function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
@@ -1180,5 +1192,180 @@ events.listen('recipes', (event) => {
             type: 'thermal:pulverizer'
         });
         event.recipes.thermal.pulverizer(outputs, input).experience(experience);
+    }
+
+    function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
+        if (!Fluid.exists(`tconstruct:molten_${material}`) || ingot == air) {
+            return;
+        }
+
+        let recipes = [{ type: 'ingot', amount: 144, output: ingot, energy: 5000 }];
+        if (nugget != air) {
+            recipes.push({ type: 'nugget', amount: 16, output: nugget, energy: 555 });
+        }
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, output: gear, energy: 20000 });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, output: rod, energy: 2500 });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, output: plate, energy: 5000 });
+        }
+
+        recipes.forEach((recipe) => {
+            event.recipes.thermal
+                .chiller(recipe.output, [
+                    Fluid.of(`tconstruct:molten_${material}`, recipe.amount),
+                    `tconstruct:${recipe.type}_cast`
+                ])
+                .energy(recipe.energy)
+                .id(`thermal:compat/tconstruct/chiller_tconstruct_${material}_${recipe.type}`);
+        });
+    }
+
+    function thermal_gem_casting(event, material, gem, gear, rod, plate) {
+        if (!Fluid.exists(`tconstruct:molten_${material}`) || gem == air) {
+            return;
+        }
+
+        blacklistedMaterials = ['ender'];
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        let recipes = [{ type: 'gem', amount: 144, output: gem, energy: 5000 }];
+
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, output: gear, energy: 20000 });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, output: rod, energy: 2500 });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, output: plate, energy: 5000 });
+        }
+
+        recipes.forEach((recipe) => {
+            event.recipes.thermal
+                .chiller(recipe.output, [
+                    Fluid.of(`tconstruct:molten_${material}`, recipe.amount),
+                    `tconstruct:${recipe.type}_cast`
+                ])
+                .energy(recipe.energy)
+                .id(`thermal:compat/tconstruct/chiller_tconstruct_${material}_${recipe.type}`);
+        });
+    }
+
+    function tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate) {
+        if (!Fluid.exists(`tconstruct:molten_${material}`) || ingot == air) {
+            return;
+        }
+
+        let recipes = [{ type: 'ingot', amount: 144, cooling: 57, output: ingot }];
+
+        if (nugget != air) {
+            recipes.push({ type: 'nugget', amount: 16, cooling: 19, output: nugget });
+        }
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, cooling: 114, output: gear });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, cooling: 40, output: rod });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, cooling: 57, output: plate });
+        }
+
+        let casts = ['gold', 'sand'];
+        casts.forEach((cast) => {
+            recipes.forEach((recipe) => {
+                event
+                    .custom({
+                        type: 'tconstruct:casting_table',
+                        cast: {
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
+                        },
+                        cast_consumed: cast == 'sand' ? true : false,
+                        fluid: {
+                            name: `tconstruct:molten_${material}`,
+                            amount: recipe.amount
+                        },
+                        result: recipe.output,
+                        cooling_time: recipe.cooling
+                    })
+                    .id(`tconstruct:smeltery/casting/metal/${material}/${recipe.type}_${cast}_cast`);
+            });
+        });
+        event
+            .custom({
+                type: 'tconstruct:casting_basin',
+                fluid: {
+                    name: `tconstruct:molten_${material}`,
+                    amount: 1296
+                },
+                result: block,
+                cooling_time: 171
+            })
+            .id(`tconstruct:smeltery/casting/metal/${material}/block`);
+    }
+
+    function tconstruct_gem_casting(event, material, block, gem, gear, rod, plate) {
+        if (!Fluid.exists(`tconstruct:molten_${material}`) || gem == air) {
+            return;
+        }
+
+        blacklistedMaterials = ['ender'];
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        let recipes = [{ type: 'gem', amount: 144, cooling: 64, output: gem }];
+
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, cooling: 256, output: gear });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, cooling: 32, output: rod });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, cooling: 64, output: plate });
+        }
+
+        let casts = ['gold', 'sand'];
+        casts.forEach((cast) => {
+            recipes.forEach((recipe) => {
+                event
+                    .custom({
+                        type: 'tconstruct:casting_table',
+                        cast: {
+                            tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
+                        },
+                        cast_consumed: cast == 'sand' ? true : false,
+                        fluid: {
+                            name: `tconstruct:molten_${material}`,
+                            amount: recipe.amount
+                        },
+                        result: recipe.output,
+                        cooling_time: recipe.cooling
+                    })
+                    .id(`tconstruct:smeltery/casting/${material}/${recipe.type}_${cast}_cast`);
+            });
+        });
+        event
+            .custom({
+                type: 'tconstruct:casting_basin',
+                fluid: {
+                    name: `tconstruct:molten_${material}`,
+                    amount: 1296
+                },
+                result: block,
+                cooling_time: 193
+            })
+            .id(`tconstruct:smeltery/casting/${material}/block`);
     }
 });

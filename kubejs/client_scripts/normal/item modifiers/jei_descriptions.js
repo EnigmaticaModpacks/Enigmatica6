@@ -1,11 +1,13 @@
-events.listen('jei.information', (event) => {
+onEvent('jei.information', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
     const recipes = [
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
-            description: ['Crafting this will return any bees in the hives/apiaries used ONLY if all hives/apiaries have been previously placed in-world and recieved NBT.']
+            description: [
+                'Crafting this will return any bees in the hives/apiaries used ONLY if all hives/apiaries have been previously placed in-world and recieved NBT.'
+            ]
         }
     ];
 

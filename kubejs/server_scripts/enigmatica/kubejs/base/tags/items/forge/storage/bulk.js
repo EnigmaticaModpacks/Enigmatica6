@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = ['botania:black_hole_talisman', 'dankstorage:dock', 'industrialforegoing:black_hole_controller'];
 
     var tags = ['forge:storage', 'forge:storage/bulk'];

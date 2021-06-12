@@ -1,5 +1,5 @@
 //priority: 900
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     dyeSources.forEach((recipe) => {
         botania_dye_pestle_mortar(event, recipe);
         create_dye_milling(event, recipe);

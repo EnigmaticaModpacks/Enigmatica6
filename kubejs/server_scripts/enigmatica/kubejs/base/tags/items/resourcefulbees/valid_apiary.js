@@ -1,3 +1,3 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('resourcefulbees:valid_apiary', validApiaryBlocks);
 });

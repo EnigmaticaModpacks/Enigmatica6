@@ -480,9 +480,8 @@ const stonecuttables = [
         onlyAsInput: []
     },
     {
-        name: 'prismarine',
+        name: 'prismarine_brick',
         stones: [
-            'minecraft:prismarine',
             'minecraft:prismarine_bricks',
             'masonry:prismarinetiled',
             'masonry:prismarinecarvedcreeper',
@@ -498,14 +497,18 @@ const stonecuttables = [
             'masonry:prismarinepolished',
             'masonry:prismarineroughcut',
             'masonry:prismarinechiseled',
-            'masonry:prismarinecobbled',
-            'masonry:prismarinecobbledmossy',
             'masonry:prismarinediamondpavers',
             'masonry:prismarinelargebricks',
             'masonry:prismarinelargebrickscracked',
             'masonry:prismarinelargebricksmossy',
             'masonry:prismarinesmallbrick'
         ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'prismarine',
+        stones: ['minecraft:prismarine', 'masonry:prismarinecobbled', 'masonry:prismarinecobbledmossy'],
         onlyAsOutput: [],
         onlyAsInput: []
     },

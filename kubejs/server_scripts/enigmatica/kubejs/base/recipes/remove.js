@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
@@ -69,8 +69,6 @@ events.listen('recipes', (event) => {
         'botania:fertilizer_dye',
 
         'botanypots:crafting/compact_hopper_botany_pot',
-
-        'buildersaddition:iron_rod',
 
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
@@ -148,6 +146,7 @@ events.listen('recipes', (event) => {
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
+        'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',
@@ -211,12 +210,6 @@ events.listen('recipes', (event) => {
 
     disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
-    });
-
-    event.remove({
-        output: '/buildersaddition:\\w+_vertical_slab/',
-        mod: 'buildersaddition',
-        type: 'minecraft:crafting_shaped'
     });
 
     event.remove({

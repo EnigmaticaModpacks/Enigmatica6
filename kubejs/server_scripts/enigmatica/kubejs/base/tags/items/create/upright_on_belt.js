@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('create:upright_on_belt', [
         /bucket/,
         /bottle$/,
@@ -6,5 +6,5 @@ events.listen('item.tags', (event) => {
         'botania:vial',
         'botania:brew_vial',
         'quark:bottled_cloud'
-    ])
+    ]);
 });

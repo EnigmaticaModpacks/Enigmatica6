@@ -56,7 +56,15 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal',
     'amber',
-    'cobalt'
+    'cobalt',
+    'queens_slime',
+    'rose_gold',
+    'tinkers_bronze',
+    'knightslime',
+    'slimesteel',
+    'manyullyn',
+    'soulsteel',
+    'hepatizon'
 ];
 
 // Used to determine which material types to unify

@@ -1,5 +1,5 @@
 //priority: 900
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     soilRegistry.forEach((soil) => {
         soils_botany_pots(event, soil);
     });

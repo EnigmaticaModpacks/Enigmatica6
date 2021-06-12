@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -130,6 +130,18 @@ events.listen('recipes', (event) => {
             ],
             output: {
                 entries: [{ result: { item: 'minecraft:lodestone', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            }
+        },
+        {
+            inputs: [
+                { tag: 'botania:petals', count: 2 },
+                { item: 'botania:quartz_blaze', count: 2 },
+                { tag: 'forge:nuggets/nebu', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'botania:spark', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             }

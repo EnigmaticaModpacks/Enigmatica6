@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const nether_end_biomes = end_biomes.concat(nether_biomes);
     const endBiomes = {
         type: 'minecraft:worldgen/biome',

@@ -5,7 +5,6 @@
 	filename: "create"
 	title: "Create"
 	icon: "create:cogwheel"
-	subtitle: ["It spins"]
 	default_quest_shape: ""
 	quests: [
 		{
@@ -84,11 +83,11 @@
 				"Where to begin? Place down the Windmill Bearing. The sticky looking green side is where the rest of the structure will be built. Power will come out the opposite end. Note that they may be built in any orientation."
 				""
 				"Next, attach the Radial Chassis to the sticky side of the bearing. The Radial Chassis here acts as the axle for the windmill and the blades will extend from it. "
-				"Glue should be applied to each side of the Chassis and most any decorative block may be attached out to the connection limit of the windmill."
+				"The Chassis can be made sticky by Right-Clicking with a Slime Ball (does not consume the slime) and most any decorative block may be attached out to the connection limit of the Windmill. "
 				""
 				"To view the current connective radius of the Chassis, hold your wrench and look at the chassis. The highlighted blocks will be part of the structure. The radius may be adjusted with your scroll-wheel."
 				""
-				"Note that glue is only needed for these initial connections, or if your structure extends in beyond the plane of the chassis. Glue is not needed at all if sails are attached directly to the Chassis, but then, where’s the fun of that? Make it Pretty!"
+				"Note that glue is only needed for connecting blocks that aren't captured by a Chassis, for instance if blocks extend in front of the wind mill. Glue is not needed at all if sails are attached directly to the Chassis, but then, where’s the fun of that? Make it Pretty!"
 			]
 			dependencies: ["0000000000000CBA"]
 			min_width: 250

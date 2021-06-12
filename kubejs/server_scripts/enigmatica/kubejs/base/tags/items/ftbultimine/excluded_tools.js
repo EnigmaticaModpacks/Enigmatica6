@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     // Added by Ultimine natively
     // event
     //     .get('ftbultimine:excluded_tools')

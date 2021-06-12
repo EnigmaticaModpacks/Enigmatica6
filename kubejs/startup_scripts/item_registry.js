@@ -1,4 +1,4 @@
-events.listen('item.registry', (event) => {
+onEvent('item.registry', (event) => {
     const generalItems = [
         'rare_lootbox',
         'epic_lootbox',

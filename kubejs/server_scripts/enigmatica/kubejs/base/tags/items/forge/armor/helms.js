@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'ars_nouveau:apprentice_hood',
         'ars_nouveau:archmage_hood',

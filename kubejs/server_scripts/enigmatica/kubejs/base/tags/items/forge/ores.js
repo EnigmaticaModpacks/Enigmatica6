@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:ores', [
         'powah:uraninite_ore_poor',
         'powah:uraninite_ore',
@@ -18,7 +18,7 @@ events.listen('item.tags', (event) => {
     ]);
 
     event.get('forge:ores/nether/gold').add('minecraft:nether_gold_ore');
-    event.get('forge:ores/netherite_scrap').remove('minecraft:ancient_debris');
+    //event.get('forge:ores/netherite_scrap').remove('minecraft:ancient_debris');
     event.get('forge:ores/netherite').add('minecraft:ancient_debris');
 
     event.add('forge:ores/ender', 'betterendforge:ender_ore');

@@ -1,5 +1,4 @@
-events.listen('recipes', (event) => {
-
+onEvent('recipes', (event) => {
     const data = {
         recipes: [
             {

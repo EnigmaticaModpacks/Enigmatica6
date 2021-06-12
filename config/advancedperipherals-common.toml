@@ -5,8 +5,8 @@
 	#Range: > 1
 	chatBoxCooldown = 10
 	#The max range of the player detector functions. If anyone use a higher range, the detector will use this max range
-	#Range: > 0
-	playerDetMaxRange = 2147483646
+	#Range: 0 ~ 100000000
+	playerDetMaxRange = 100000000
 	#Defines the maximum energy flow of the energy detector.
 	#Range: > 1
 	energyDetectorMaxFlow = 64000
@@ -35,4 +35,6 @@
 	enableInventoryManager = true
 	#Enable the redstone integrator or not.
 	enableRedstoneIntegrator = true
+	#Enable the villager structures for the computer scientist.
+	enableVillagerStructures = true
 

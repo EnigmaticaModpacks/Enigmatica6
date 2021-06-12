@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     event.recipes.bloodmagic.soulforge({
         type: 'bloodmagic:soulforge',
         input0: {

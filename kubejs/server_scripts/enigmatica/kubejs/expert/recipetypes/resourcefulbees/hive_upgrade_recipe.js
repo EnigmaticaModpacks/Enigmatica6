@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -8,11 +8,11 @@ events.listen('recipes', (event) => {
             //Gate Beehive behind starting Nature's Aura
             pattern: ['ACA', 'ABA', 'ACA'],
             key: {
-                A: {item: 'minecraft:grass'},
-                B: {tag: '#forge:beehives/tier_0'},
-                C: {item: 'naturesaura:gold_powder'}
+                A: { item: 'minecraft:grass' },
+                B: { tag: '#forge:beehives/tier_0' },
+                C: { item: 'naturesaura:gold_powder' }
             },
-            result: {item: 'resourcefulbees:t1_beehive'},
+            result: { item: 'resourcefulbees:t1_beehive' },
             id: 'resourcefulbees:t1_beehive'
         }
     ];

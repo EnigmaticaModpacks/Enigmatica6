@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             input: {
@@ -27,7 +27,7 @@ events.listen('recipes', (event) => {
             },
             mana: 19000
         }
-     /* Leaving this as a full template - this has both multiple outputs & a catalyst requirement
+        /* Leaving this as a full template - this has both multiple outputs & a catalyst requirement
         {
             input: {
                 item: 'resourcefulbees:mana_honeycomb_block'
@@ -50,7 +50,7 @@ events.listen('recipes', (event) => {
             type: 'botania:mana_infusion',
             input: recipe.input,
             output: recipe.output,
-            catalyst:recipe.catalyst,
+            catalyst: recipe.catalyst,
             mana: recipe.mana
         });
         if (recipe.id) {

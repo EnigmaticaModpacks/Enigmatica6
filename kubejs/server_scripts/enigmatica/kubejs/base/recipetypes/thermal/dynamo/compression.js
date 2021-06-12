@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     event.remove({ type: 'thermal:compression_fuel' });
     var multiplier = 10;
     var data = {

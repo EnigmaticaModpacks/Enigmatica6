@@ -1,3 +1,3 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     //event.smoking(input, output)
 });

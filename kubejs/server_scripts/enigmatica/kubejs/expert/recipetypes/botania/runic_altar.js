@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -25,7 +25,7 @@ events.listen('recipes', (event) => {
                 '#forge:dusts/sulfur',
                 'quark:magma_bricks',
                 'undergarden:ditchbulb',
-                'buildersaddition:large_soul_candle'
+                'quark:white_candle'
             ],
             mana: 16000,
             output: 'botania:rune_fire',

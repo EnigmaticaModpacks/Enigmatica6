@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:nuggets', [
         'immersiveengineering:nugget_aluminum',
         'immersiveengineering:nugget_lead',
@@ -14,4 +14,5 @@ events.listen('item.tags', (event) => {
 
     event.get('forge:nuggets/thallasium').add('betterendforge:thallasium_nugget');
     event.get('forge:nuggets/terminite').add('betterendforge:terminite_nugget');
+    event.get('forge:nuggets/tinkers_bronze').add('tconstruct:tinkers_bronze_nugget');
 });

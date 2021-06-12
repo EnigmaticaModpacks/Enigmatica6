@@ -1,18 +1,13 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
-            inputs: [
-                { item: 'resourcefulbees:mana_bee_spawn_egg' }
-            ],
+            inputs: [{ item: 'resourcefulbees:mana_bee_spawn_egg' }],
             output: {
                 item: 'resourcefulbees:elven_bee_spawn_egg'
             }
         },
         {
-            inputs: [
-                { item: 'resourcefulbees:elven_honeycomb' },
-                { item: "resourcefulbees:elven_honeycomb" }
-            ],
+            inputs: [{ item: 'resourcefulbees:elven_honeycomb' }, { item: 'resourcefulbees:elven_honeycomb' }],
             output: {
                 item: 'botania:elementium_ingot'
             }
@@ -20,11 +15,11 @@ events.listen('recipes', (event) => {
         {
             inputs: [
                 { item: 'resourcefulbees:elven_honeycomb_block' },
-                { item: "resourcefulbees:elven_honeycomb_block" }
+                { item: 'resourcefulbees:elven_honeycomb_block' }
             ],
             output: {
                 item: 'botania:elementium_block'
-            },
+            }
         }
     ];
 

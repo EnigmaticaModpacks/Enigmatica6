@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var data = {
         recipes: [
             {
@@ -34,12 +34,12 @@ events.listen('recipes', (event) => {
             {
                 input: '#forge:grain',
                 output: 'create:wheat_flour',
-                count: 1,
+                count: 1
             },
             {
                 input: 'byg:raw_quartz_block',
                 output: 'byg:quartzite_sand',
-                count: 2,
+                count: 2
             }
         ]
     };

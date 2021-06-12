@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'immersiveengineering:sword_steel',
         'wstweaks:blaze_blade',

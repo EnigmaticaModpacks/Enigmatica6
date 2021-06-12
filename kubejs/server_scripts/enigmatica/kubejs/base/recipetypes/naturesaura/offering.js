@@ -1,5 +1,4 @@
-events.listen('recipes', (event) => {
-
+onEvent('recipes', (event) => {
     const data = {
         recipes: [
             /*{
@@ -17,14 +16,14 @@ events.listen('recipes', (event) => {
             }*/
             {
                 input: {
-                    item: 'resourcefulbees:sky_honeycomb',
+                    item: 'resourcefulbees:sky_honeycomb'
                 },
                 start_item: {
-                    item: 'naturesaura:calling_spirit',
+                    item: 'naturesaura:calling_spirit'
                 },
                 output: {
                     item: 'naturesaura:sky_ingot',
-                    count: 3,
+                    count: 3
                 }
             }
         ]
@@ -34,8 +33,8 @@ events.listen('recipes', (event) => {
         const re = event.custom({
             type: 'naturesaura:offering',
             input: recipe.input,
-            start_item:recipe.start_item,
-            output:recipe.output,
+            start_item: recipe.start_item,
+            output: recipe.output
         });
         if (recipe.id) {
             re.id(recipe.id);

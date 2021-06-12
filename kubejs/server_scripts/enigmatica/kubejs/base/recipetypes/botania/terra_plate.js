@@ -1,9 +1,7 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
-            inputs: [
-                { item: 'resourcefulbees:mana_bee_spawn_egg' }
-            ],
+            inputs: [{ item: 'resourcefulbees:mana_bee_spawn_egg' }],
             output: {
                 item: 'resourcefulbees:terrestrial_bee_spawn_egg'
             },
@@ -12,8 +10,8 @@ events.listen('recipes', (event) => {
         {
             inputs: [
                 { item: 'resourcefulbees:terrestrial_honeycomb' },
-                { item: "botania:mana_pearl" },
-                { item: "botania:mana_diamond" },
+                { item: 'botania:mana_pearl' },
+                { item: 'botania:mana_diamond' }
             ],
             output: {
                 item: 'botania:terrasteel_ingot'
