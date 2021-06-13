@@ -1,21 +1,23 @@
 //priority: 900
 onEvent('recipes', (event) => {
     materialsToUnify.forEach((material) => {
-        var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
-        var block = getPreferredItemInTag(Ingredient.of('#forge:storage_blocks/' + material)).id;
-        var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
-        var nugget = getPreferredItemInTag(Ingredient.of('#forge:nuggets/' + material)).id;
+        let ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
+        let block = getPreferredItemInTag(Ingredient.of('#forge:storage_blocks/' + material)).id;
+        let ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
+        let nugget = getPreferredItemInTag(Ingredient.of('#forge:nuggets/' + material)).id;
 
-        var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
-        var chunk = getPreferredItemInTag(Ingredient.of('#forge:chunks/' + material)).id;
+        let gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        let chunk = getPreferredItemInTag(Ingredient.of('#forge:chunks/' + material)).id;
 
-        var crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
-        var dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
-        var shard = getPreferredItemInTag(Ingredient.of('#forge:shards/' + material)).id;
+        let crushedOre = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + material)).id;
+        let dust = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + material)).id;
+        let shard = getPreferredItemInTag(Ingredient.of('#forge:shards/' + material)).id;
 
-        var gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
-        var rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
-        var plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
+        let gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
+        let rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
+        let plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
+
+        let liquid = Fluid.of(`emendatusenigmatica:molten_${material}`);
 
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 
@@ -27,12 +29,10 @@ onEvent('recipes', (event) => {
         create_ore_metal_processing(event, material, crushedOre);
         create_ore_gem_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
-        // TODO: Implement
-        create_crushed_ore_wishing(event, material, crushedOre, nugget);
-
-        //TODO: Implement
-        emendatus_liquid_casting(event, material, ore, gem); // fluid
-
+        //TODO
+        create_crushed_ore_washing(event, material, crushedOre, nugget);
+        //TODO
+        emendatus_liquid_casting(event, material, ore, gem, liquid);
         emendatus_hammer_crushing(event, material, ore, dust);
         emendatus_shapeless_transform(event, material, ore, chunk);
 
@@ -67,6 +67,10 @@ onEvent('recipes', (event) => {
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
         tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
     });
+    //TODO
+    function create_crushed_ore_washing(event, material, crushedOre, nugget) {}
+    function emendatus_liquid_casting(event, material, ore, gem, liquid) {}
+    function mekanism_5x(event, material) {}
 
     function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
         if (ore == air) {
