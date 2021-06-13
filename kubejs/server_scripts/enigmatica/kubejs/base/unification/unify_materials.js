@@ -24,8 +24,8 @@ onEvent('recipes', (event) => {
         bloodmagic_ore_processing_alchemy(event, material, ore, gem, shard);
         bloodmagic_ore_processing_arc(event, material, ore, dust, gem, shard);
 
-        create_ore_processing_with_secondary_outputs(event, material, crushedOre);
-        create_gem_processing(event, material, ore, gem, dust, shard);
+        create_ore_metal_processing(event, material, crushedOre);
+        create_ore_gem_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
 
         emendatus_hammer_crushing(event, material, ore, dust);
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
 
         immersiveengineering_ingot_crushing(event, material, dust, ingot);
         immersiveengineering_ore_processing(event, material, ore, gem, shard);
-        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust);
+        immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot);
         immersiveengineering_hammer_crushing(event, material, ore, dust);
         immersiveengineering_gem_crushing(event, material, dust, gem);
 
@@ -51,7 +51,8 @@ onEvent('recipes', (event) => {
         pedestals_ore_crushing(event, material, ore, dust, shard, gem);
         pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        thermal_ore_pulverizing(event, material, ore, dust, gem, shard);
+        thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
+        thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
         thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate);
         thermal_gem_casting(event, material, gem, gear, rod, plate);
 
@@ -179,94 +180,43 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function create_ore_processing_with_secondary_outputs(event, material, crushedOre) {
+    function create_ore_metal_processing(event, material, crushedOre) {
         if (crushedOre == air) {
             return;
         }
 
         var primaryOutput = crushedOre,
+            secondaryOutput,
+            processingTime,
             stoneOutput = 'minecraft:cobblestone',
             primaryCount = 2,
             secondaryCount = 2,
-            secondaryMaterial,
             input = '#forge:ores/' + material,
-            processingTime = 300;
+            materialProperties;
 
-        switch (material) {
-            case 'iron':
-                secondaryMaterial = 'nickel';
-                processingTime = 400;
-                break;
-            case 'nickel':
-                secondaryMaterial = 'iron';
-                processingTime = 350;
-                break;
-            case 'gold':
-                secondaryMaterial = 'zinc';
-                break;
-            case 'copper':
-                secondaryMaterial = 'gold';
-                processingTime = 350;
-                break;
-            case 'aluminum':
-                secondaryMaterial = 'iron';
-                break;
-            case 'lead':
-                secondaryMaterial = 'silver';
-                break;
-            case 'silver':
-                secondaryMaterial = 'lead';
-                break;
-            case 'uranium':
-                secondaryMaterial = 'lead';
-                processingTime = 400;
-                break;
-            case 'osmium':
-                secondaryMaterial = 'tin';
-                processingTime = 400;
-                break;
-            case 'tin':
-                secondaryMaterial = 'osmium';
-                processingTime = 350;
-                break;
-            case 'zinc':
-                secondaryMaterial = 'gold';
-                processingTime = 350;
-                break;
-            case 'iesnium':
-                secondaryMaterial = 'iesnium';
-                processingTime = 350;
-                break;
-            case 'cloggrum':
-                secondaryMaterial = 'cloggrum';
-                processingTime = 350;
-                break;
-            case 'froststeel':
-                secondaryMaterial = 'froststeel';
-                processingTime = 350;
-                break;
-            case 'regalium':
-                secondaryMaterial = 'regalium';
-                processingTime = 350;
-                break;
-            case 'utherium':
-                secondaryMaterial = 'utherium';
-                processingTime = 350;
-                break;
-            default:
-                return;
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
         }
 
-        var secondaryOutput = getPreferredItemInTag(Ingredient.of('#create:crushed_ores/' + secondaryMaterial)).id;
+        try {
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of('#create:crushed_ores/' + materialProperties.secondary)
+            ).id;
+            processingTime = materialProperties.createProcessingTime;
+        } catch (err) {
+            secondaryOutput = crushedOre;
+            processingTime = 400;
+        }
+
         var primaryChance = 0.25,
             secondaryChance = 0.05;
-
         var outputs = [
             Item.of(primaryOutput),
             Item.of(primaryOutput, primaryCount).withChance(primaryChance),
             Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance)
         ];
-
         event.recipes.create.milling(outputs, input).processingTime(processingTime);
 
         primaryChance = 0.6;
@@ -280,96 +230,50 @@ onEvent('recipes', (event) => {
         event.recipes.create.crushing(outputs, input).processingTime(processingTime);
     }
 
-    function create_gem_processing(event, material, ore, gem, dust, shard) {
+    function create_ore_gem_processing(event, material, ore, gem, dust, shard) {
         if (ore == air) {
             return;
         }
+        var materialProperties;
+        //console.log('Create Ore Gem Processing: ' + material);
 
-        var stoneOutput = 'minecraft:cobblestone',
-            processingTime = 300,
-            output = gem,
-            primaryCount,
-            secondaryCount,
+        try {
+            materialProperties = gemProcessingProperties[material].create;
+        } catch (err) {
+            return;
+        }
+
+        var stoneOutput = materialProperties.stoneOutput,
+            processingTime = materialProperties.processingTime,
+            primaryCount = materialProperties.primaryCount,
+            secondaryCount = materialProperties.secondaryCount,
+            secondaryChance = materialProperties.secondaryChance,
             input = '#forge:ores/' + material;
 
-        switch (material) {
-            case 'redstone':
-                primaryCount = 8;
-                secondaryCount = 6;
-                secondaryChance = 0.25;
+        switch (materialProperties.output) {
+            case 'dust':
                 output = dust;
                 break;
-            case 'coal':
-                primaryCount = 2;
-                secondaryCount = 2;
-                secondaryChance = 0.5;
+            case 'gem':
+                output = gem;
                 break;
-            case 'diamond':
-                primaryCount = 2;
-                secondaryCount = 2;
-                secondaryChance = 0.25;
-                processingTime = 500;
-                break;
-            case 'emerald':
-                primaryCount = 2;
-                secondaryCount = 2;
-                secondaryChance = 0.25;
-                processingTime = 500;
-                break;
-            case 'lapis':
-                primaryCount = 8;
-                secondaryCount = 4;
-                secondaryChance = 0.25;
-                break;
-            case 'quartz':
-                primaryCount = 2;
-                secondaryCount = 4;
-                secondaryChance = 0.5;
-                processingTime = 350;
-                stoneOutput = 'minecraft:netherrack';
-                break;
-            case 'sulfur':
-                primaryCount = 6;
-                secondaryCount = 2;
-                secondaryChance = 0.25;
-                break;
-            case 'apatite':
-                primaryCount = 8;
-                secondaryCount = 4;
-                secondaryChance = 0.25;
-                break;
-            case 'fluorite':
-                primaryCount = 6;
-                secondaryCount = 3;
-                secondaryChance = 0.25;
-                break;
-            case 'dimensional':
-                primaryCount = 6;
-                secondaryCount = 3;
-                secondaryChance = 0.25;
-                break;
-            case 'ender':
-                primaryCount = 2;
-                secondaryCount = 2;
-                secondaryChance = 0.25;
-                output = shard;
-                break;
-            case 'amber':
-                primaryCount = 2;
-                secondaryCount = 2;
-                secondaryChance = 0.25;
+            case 'shard':
                 output = shard;
                 break;
             default:
                 return;
         }
+
         var outputs = [
             Item.of(output, primaryCount),
             Item.of(output, secondaryCount).withChance(secondaryChance),
             Item.of(stoneOutput).withChance(0.125)
         ];
 
-        event.recipes.create.crushing(outputs, input).processingTime(processingTime);
+        event.recipes.create
+            .crushing(outputs, input)
+            .processingTime(processingTime)
+            .id(`create:crushing/${material}_ore`);
     }
 
     function create_ingot_gem_milling(event, material, ingot, dust, gem) {
@@ -496,70 +400,27 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering.crusher(Item.of(output, count), input).energy(2000);
     }
 
-    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust) {
-        if (ore == air) {
+    function immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot) {
+        if (ore == air || dust == air || ingot == air) {
             return;
         }
 
         var primaryOutput = Item.of(dust, 2),
-            secondaryMaterial,
             secondaryChance = 0.1,
-            input = '#forge:ores/' + material;
+            input = '#forge:ores/' + material,
+            materialProperties;
 
-        switch (material) {
-            case 'iron':
-                secondaryMaterial = 'nickel';
-                break;
-            case 'nickel':
-                secondaryMaterial = 'iron';
-                break;
-            case 'gold':
-                secondaryMaterial = 'zinc';
-                break;
-            case 'copper':
-                secondaryMaterial = 'gold';
-                break;
-            case 'aluminum':
-                secondaryMaterial = 'iron';
-                break;
-            case 'lead':
-                secondaryMaterial = 'silver';
-                break;
-            case 'silver':
-                secondaryMaterial = 'lead';
-                break;
-            case 'uranium':
-                secondaryMaterial = 'lead';
-                break;
-            case 'osmium':
-                secondaryMaterial = 'tin';
-                break;
-            case 'tin':
-                secondaryMaterial = 'osmium';
-                break;
-            case 'zinc':
-                secondaryMaterial = 'gold';
-                break;
-            case 'iesnium':
-                secondaryMaterial = 'iesnium';
-                break;
-            case 'cloggrum':
-                secondaryMaterial = 'cloggrum';
-                break;
-            case 'froststeel':
-                secondaryMaterial = 'froststeel';
-                break;
-            case 'regalium':
-                secondaryMaterial = 'regalium';
-                break;
-            case 'utherium':
-                secondaryMaterial = 'utherium';
-                break;
-            default:
-                return;
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
         }
 
-        var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + secondaryMaterial)).id;
+        try {
+            secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + materialProperties.secondary)).id;
+        } catch (err) {
+            secondaryOutput = dust;
+        }
 
         event.recipes.immersiveengineering
             .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
@@ -752,64 +613,21 @@ onEvent('recipes', (event) => {
         }
 
         var primaryOutput = dust,
-            secondaryMaterial,
             input = 'forge:ores/' + material,
-            processingTime = 80;
+            processingTime = 80,
+            materialProperties;
 
-        switch (material) {
-            case 'iron':
-                secondaryMaterial = 'nickel';
-                break;
-            case 'nickel':
-                secondaryMaterial = 'iron';
-                break;
-            case 'gold':
-                secondaryMaterial = 'zinc';
-                break;
-            case 'copper':
-                secondaryMaterial = 'gold';
-                break;
-            case 'aluminum':
-                secondaryMaterial = 'iron';
-                break;
-            case 'lead':
-                secondaryMaterial = 'silver';
-                break;
-            case 'silver':
-                secondaryMaterial = 'lead';
-                break;
-            case 'uranium':
-                secondaryMaterial = 'lead';
-                break;
-            case 'osmium':
-                secondaryMaterial = 'tin';
-                break;
-            case 'tin':
-                secondaryMaterial = 'osmium';
-                break;
-            case 'zinc':
-                secondaryMaterial = 'gold';
-                break;
-            case 'iesnium':
-                secondaryMaterial = 'iesnium';
-                break;
-            case 'cloggrum':
-                secondaryMaterial = 'cloggrum';
-                break;
-            case 'froststeel':
-                secondaryMaterial = 'froststeel';
-                break;
-            case 'regalium':
-                secondaryMaterial = 'regalium';
-                break;
-            case 'utherium':
-                secondaryMaterial = 'utherium';
-                break;
-            default:
-                return;
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
         }
 
-        var secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + secondaryMaterial)).id;
+        try {
+            secondaryOutput = getPreferredItemInTag(Ingredient.of('#forge:dusts/' + materialProperties.secondary)).id;
+        } catch (err) {
+            secondaryOutput = dust;
+        }
 
         event.custom({
             type: 'integrateddynamics:squeezer',
@@ -1108,7 +926,47 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function thermal_ore_pulverizing(event, material, ore, dust, gem, shard) {
+    function thermal_metal_ore_pulverizing(event, material, ore, dust, ingot) {
+        if (ore == air || dust == air || ingot == air) {
+            return;
+        }
+
+        var primaryOutput = dust,
+            stoneOutput = 'minecraft:gravel',
+            primaryCount = 2,
+            input = `#forge:ores/${material}`,
+            experience = 0.2,
+            materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
+        }
+
+        try {
+            secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${materialProperties.secondary}`)).id;
+        } catch (err) {
+            secondaryOutput = dust;
+        }
+
+        outputs = [
+            Item.of(primaryOutput, primaryCount),
+            Item.of(secondaryOutput).chance(0.1),
+            Item.of(stoneOutput).chance(0.2)
+        ];
+
+        if (material == 'gold') {
+            outputs.push(Item.of('emendatusenigmatica:cinnabar_gem').chance(0.05));
+        }
+
+        event.recipes.thermal
+            .pulverizer(outputs, input)
+            .experience(experience)
+            .id(`thermal:machine/pulverizer/pulverizer_${material}_ore`);
+    }
+
+    function thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard) {
         if (ore == air) {
             return;
         }
@@ -1120,29 +978,7 @@ onEvent('recipes', (event) => {
             input = '#forge:ores/' + material,
             experience = 0.2;
 
-        /*experience: 0.2,
-    outputs: [
-        Item.of('emendatusenigmatica:aluminum_dust', 2),
-        Item.of('emendatusenigmatica:iron_dust').chance(0.1),
-        Item.of('minecraft:gravel').chance(0.2)
-    ]*/
-
         switch (material) {
-            case 'nickel':
-                secondaryMaterial = 'iron';
-                break;
-            case 'aluminum':
-                secondaryMaterial = 'iron';
-                break;
-            case 'uranium':
-                secondaryMaterial = 'lead';
-                break;
-            case 'osmium':
-                secondaryMaterial = 'tin';
-                break;
-            case 'zinc':
-                secondaryMaterial = 'gold';
-                break;
             case 'ender':
                 secondaryMaterial = 'ender';
                 stoneOutput = 'betterendforge:endstone_dust';
@@ -1169,6 +1005,7 @@ onEvent('recipes', (event) => {
             default:
                 return;
         }
+
         var secondaryType = 'dusts';
         if (shard != air) {
             secondaryType = 'shards';
