@@ -27,6 +27,11 @@ onEvent('recipes', (event) => {
         create_ore_metal_processing(event, material, crushedOre);
         create_ore_gem_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
+        // TODO: Implement
+        create_crushed_ore_wishing(event, material, crushedOre, nugget);
+
+        //TODO: Implement
+        emendatus_liquid_casting(event, material, ore, gem); // fluid
 
         emendatus_hammer_crushing(event, material, ore, dust);
         emendatus_shapeless_transform(event, material, ore, chunk);
@@ -36,6 +41,9 @@ onEvent('recipes', (event) => {
         immersiveengineering_ore_processing_with_secondary_outputs(event, material, ore, dust, ingot);
         immersiveengineering_hammer_crushing(event, material, ore, dust);
         immersiveengineering_gem_crushing(event, material, dust, gem);
+
+        // TODO: Implement
+        mekanism_5x(event, material); // dirty_dust, clump, shard, crystal, clean_slurry, dirty_slurry
 
         minecraft_ore_ingot_smelting(event, material, ore, ingot);
         minecraft_ore_gem_smelting(event, material, ore, gem);
