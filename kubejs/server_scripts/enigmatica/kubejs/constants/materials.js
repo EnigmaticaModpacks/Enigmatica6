@@ -63,7 +63,6 @@ const materialsToUnify = [
     'knightslime',
     'slimesteel',
     'manyullyn',
-    'soulsteel',
     'hepatizon'
 ];
 
