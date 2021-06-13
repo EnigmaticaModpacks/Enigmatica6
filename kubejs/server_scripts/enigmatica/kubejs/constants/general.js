@@ -9,7 +9,6 @@ const modPriorities = [
     'immersiveengineering',
     'thermal',
     'mekanism',
-    'jaopca',
     'kubejs',
     'pneumaticcraft',
     'create',
