@@ -1673,8 +1673,9 @@
 					"double/basic_hammer_left_material": "basic_hammer/starmetal"
 				}
 			}
-			x: -2.5d
-			y: -10.0d
+			x: -4.0d
+			y: -11.5d
+			description: ["We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools, bows in particular."]
 			dependencies: ["0000000000000887"]
 			id: "03E874538CC29EAF"
 			tasks: [{
@@ -1713,32 +1714,16 @@
 					"double/basic_hammer_left_material": "basic_hammer/sky"
 				}
 			}
-			x: -2.5d
-			y: -9.0d
+			x: -5.0d
+			y: -11.5d
+			description: ["We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools, bows in particular."]
 			dependencies: ["03E874538CC29EAF"]
 			id: "6021E8E72AD98AB6"
 			tasks: [{
 				id: "665CC8BF12C14289"
 				type: "item"
-				item: {
-					id: "tetra:modular_double"
-					Count: 1b
-					tag: {
-						"double/head_left/settle_progress": 592
-						"double/basic_handle_material": "basic_handle/end_rod"
-						"double/handle": "double/basic_handle"
-						honing_progress: 410
-						HideFlags: 1
-						"double/head_left": "double/basic_hammer_left"
-						"double/head_right": "double/basic_hammer_right"
-						"double/head_right/settle_progress": 592
-						id: "595b6b9f-c12d-42f7-bb35-e12a0acaaa25"
-						Damage: 0
-						"double/basic_hammer_right_material": "basic_hammer/sky"
-						"double/handle/settle_progress": 175
-						"double/basic_hammer_left_material": "basic_hammer/sky"
-					}
-				}
+				item: "naturesaura:sky_ingot"
+				count: 2L
 			}]
 			rewards: [{
 				id: "49D9C81C252CD109"
@@ -1770,9 +1755,15 @@
 					"double/basic_hammer_left_material": "basic_hammer/alfsteel"
 				}
 			}
-			x: -2.5d
-			y: -7.5d
+			x: -6.0d
+			y: -12.75d
 			shape: "hexagon"
+			description: [
+				"We've added a few extra Hammer tiers, to allow making the most advanced Tetra tools."
+				""
+				"... an Alfsteel Recurve Bow for example."
+				""
+			]
 			dependencies: ["6021E8E72AD98AB6"]
 			size: 1.5d
 			id: "5DA0E2DDC46C8721"
@@ -1783,14 +1774,13 @@
 				count: 2L
 			}]
 			rewards: [{
-					id: "25764538285A2048"
-					type: "command"
-					title: "Blacksmith's Delight"
-					icon: "kubejs:blacksmiths_delight"
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
-					player_command: false
-				}]
-			
+				id: "25764538285A2048"
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
+				player_command: false
+			}]
 		}
 	]
 }
