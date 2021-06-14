@@ -14,4 +14,5 @@ onEvent('item.tags', (event) => {
         event.add('thermal:crafting/dies', [`#thermal:crafting/dies/${dieName}`]);
         event.add(`thermal:crafting/dies/${dieName}`, [`immersiveengineering:mold_${dieName}`]);
     });
+    event.add('thermal:crafting/casts', ['#tconstruct:casts/multi_use']);
 });

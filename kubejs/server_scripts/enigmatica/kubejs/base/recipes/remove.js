@@ -146,6 +146,7 @@ onEvent('recipes', (event) => {
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
+        'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',
@@ -189,6 +190,10 @@ onEvent('recipes', (event) => {
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
         /create:\w+\/bread/,
+        /create:smelting\/ingot_\w+_compat/,
+        /create:smelting\/\w+_ingot_compat/,
+        /create:blasting\/ingot_\w+_compat/,
+        /create:blasting\/\w+_ingot_compat/,
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
@@ -237,7 +242,7 @@ onEvent('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-
+/*
     event.remove({
         input: '#forge:ores',
         mod: 'create',
@@ -249,7 +254,7 @@ onEvent('recipes', (event) => {
         mod: 'create',
         type: 'create:crushing'
     });
-
+*/
     event.remove({
         mod: 'occultism',
         type: 'occultism:miner'

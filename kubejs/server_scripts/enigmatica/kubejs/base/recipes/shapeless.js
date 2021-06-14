@@ -316,6 +316,11 @@ onEvent('recipes', (event) => {
             output: 'mythicbotany:wither_aconite_floating',
             inputs: ['kubejs:disabled_recipe_indicator'],
             id: 'mythicbotany:wither_aconite_floating'
+        },
+        {
+            output: 'eidolon:pewter_blend',
+            inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
+            id: 'eidolon:pewter_blend'
         }
     ];
 

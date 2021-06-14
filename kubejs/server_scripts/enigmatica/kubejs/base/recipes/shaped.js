@@ -1345,7 +1345,7 @@ onEvent('recipes', (event) => {
             A: 'alexsmobs:roadrunner_feather',
             B: '#forge:ingots/enderium',
             C: 'ars_nouveau:mana_fiber',
-            D: 'paraglider:deku_leaf',
+            D: 'byg:leaf_pile',
             E: 'ars_nouveau:glyph_launch',
             F: 'ars_nouveau:glyph_slowfall'
         }),
@@ -1353,7 +1353,7 @@ onEvent('recipes', (event) => {
             A: 'thermal:lightning_charge',
             B: '#mekanism:alloys/atomic',
             C: 'thermal:hazmat_fabric',
-            D: 'paraglider:deku_leaf',
+            D: 'byg:leaf_pile',
             E: 'thermal:hazmat_boots',
             F: 'alexsmobs:frontier_cap'
         }),

@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'ABA', 'ACA'],
             key: {
                 A: { item: 'minecraft:grass' },
-                B: { tag: '#forge:beehives/tier_0' },
+                B: { tag: 'forge:beehives/tier_0' },
                 C: { item: 'naturesaura:gold_powder' }
             },
             result: { item: 'resourcefulbees:t1_beehive' },
