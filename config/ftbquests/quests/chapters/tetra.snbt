@@ -1652,5 +1652,145 @@
 				player_command: false
 			}]
 		}
+		{
+			title: "Tier 7"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/head_left/settle_progress": 708
+					"double/basic_handle_material": "basic_handle/end_rod"
+					"double/handle": "double/basic_handle"
+					honing_progress: 470
+					HideFlags: 1
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					"double/head_right/settle_progress": 708
+					id: "b262f1bb-de92-4835-a8ed-783e131c5dd9"
+					Damage: 0
+					"double/basic_hammer_right_material": "basic_hammer/starmetal"
+					"double/handle/settle_progress": 205
+					"double/basic_hammer_left_material": "basic_hammer/starmetal"
+				}
+			}
+			x: -2.5d
+			y: -10.0d
+			dependencies: ["0000000000000887"]
+			id: "03E874538CC29EAF"
+			tasks: [{
+				id: "019F3FE0B1C8CDEB"
+				type: "item"
+				item: "astralsorcery:starmetal_ingot"
+				count: 2L
+			}]
+			rewards: [{
+				id: "59B2B9FCD1E15324"
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tier 8"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/head_left/settle_progress": 592
+					"double/basic_handle_material": "basic_handle/end_rod"
+					"double/handle": "double/basic_handle"
+					honing_progress: 410
+					HideFlags: 1
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					"double/head_right/settle_progress": 592
+					id: "595b6b9f-c12d-42f7-bb35-e12a0acaaa25"
+					Damage: 0
+					"double/basic_hammer_right_material": "basic_hammer/sky"
+					"double/handle/settle_progress": 175
+					"double/basic_hammer_left_material": "basic_hammer/sky"
+				}
+			}
+			x: -2.5d
+			y: -9.0d
+			dependencies: ["03E874538CC29EAF"]
+			id: "6021E8E72AD98AB6"
+			tasks: [{
+				id: "665CC8BF12C14289"
+				type: "item"
+				item: {
+					id: "tetra:modular_double"
+					Count: 1b
+					tag: {
+						"double/head_left/settle_progress": 592
+						"double/basic_handle_material": "basic_handle/end_rod"
+						"double/handle": "double/basic_handle"
+						honing_progress: 410
+						HideFlags: 1
+						"double/head_left": "double/basic_hammer_left"
+						"double/head_right": "double/basic_hammer_right"
+						"double/head_right/settle_progress": 592
+						id: "595b6b9f-c12d-42f7-bb35-e12a0acaaa25"
+						Damage: 0
+						"double/basic_hammer_right_material": "basic_hammer/sky"
+						"double/handle/settle_progress": 175
+						"double/basic_hammer_left_material": "basic_hammer/sky"
+					}
+				}
+			}]
+			rewards: [{
+				id: "49D9C81C252CD109"
+				type: "command"
+				title: "Blacksmith's Delight"
+				icon: "kubejs:blacksmiths_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Tier 9"
+			icon: {
+				id: "tetra:modular_double"
+				Count: 1b
+				tag: {
+					"double/head_left/settle_progress": 1068
+					"double/basic_handle_material": "basic_handle/end_rod"
+					"double/handle": "double/basic_handle"
+					honing_progress: 665
+					HideFlags: 1
+					"double/head_left": "double/basic_hammer_left"
+					"double/head_right": "double/basic_hammer_right"
+					"double/head_right/settle_progress": 1068
+					id: "e771cd1b-c641-4b37-bbd9-e805f1c75dc2"
+					Damage: 0
+					"double/basic_hammer_right_material": "basic_hammer/alfsteel"
+					"double/handle/settle_progress": 120
+					"double/basic_hammer_left_material": "basic_hammer/alfsteel"
+				}
+			}
+			x: -2.5d
+			y: -7.5d
+			shape: "hexagon"
+			dependencies: ["6021E8E72AD98AB6"]
+			size: 1.5d
+			id: "5DA0E2DDC46C8721"
+			tasks: [{
+				id: "4F7E103E546BD020"
+				type: "item"
+				item: "mythicbotany:alfsteel_ingot"
+				count: 2L
+			}]
+			rewards: [{
+					id: "25764538285A2048"
+					type: "command"
+					title: "Blacksmith's Delight"
+					icon: "kubejs:blacksmiths_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blacksmiths_delight"
+					player_command: false
+				}]
+			
+		}
 	]
 }
