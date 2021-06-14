@@ -26,7 +26,7 @@ if command -v wget >>/dev/null; then
 else
     if command -v curl >>/dev/null; then
         echo "DEBUG: (curl) Downloading ${URL}"
-        curl -o serverstarter-2.0.1.jar "${URL}"
+        curl -L -o serverstarter-2.0.1.jar "${URL}"
     else
         echo "Neither wget or curl were found on your system. Please install one and try again"
     fi
