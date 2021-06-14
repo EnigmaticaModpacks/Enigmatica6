@@ -137,6 +137,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 6
+        },
+        bloodmagic: {
+            count: 6
         }
     },
     coal: {
@@ -155,6 +158,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 4
+        },
+        bloodmagic: {
+            count: 4
         }
     },
     diamond: {
@@ -171,6 +177,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 2
+        },
+        bloodmagic: {
+            count: 2
         }
     },
     emerald: {
@@ -186,7 +195,10 @@ const gemProcessingProperties = {
             count: 4
         },
         occultism: {
-            count: 2
+            count: 4
+        },
+        bloodmagic: {
+            count: 4
         }
     },
     lapis: {
@@ -204,6 +216,9 @@ const gemProcessingProperties = {
             secondaryChance: 0.2
         },
         occultism: {
+            count: 9
+        },
+        bloodmagic: {
             count: 9
         }
     },
@@ -223,6 +238,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 3
+        },
+        bloodmagic: {
+            count: 3
         }
     },
     sulfur: {
@@ -238,6 +256,9 @@ const gemProcessingProperties = {
             count: 6
         },
         occultism: {
+            count: 6
+        },
+        bloodmagic: {
             count: 6
         }
     },
@@ -255,6 +276,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 12
+        },
+        bloodmagic: {
+            count: 12
         }
     },
     fluorite: {
@@ -270,6 +294,9 @@ const gemProcessingProperties = {
             count: 6
         },
         occultism: {
+            count: 6
+        },
+        bloodmagic: {
             count: 6
         }
     },
@@ -287,6 +314,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 8
+        },
+        bloodmagic: {
+            count: 8
         }
     },
     ender: {
@@ -302,6 +332,9 @@ const gemProcessingProperties = {
             count: 3
         },
         occultism: {
+            count: 3
+        },
+        bloodmagic: {
             count: 3
         }
     },
@@ -319,6 +352,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 3
+        },
+        bloodmagic: {
+            count: 3
         }
     },
     potassium_nitrate: {
@@ -334,6 +370,9 @@ const gemProcessingProperties = {
             count: 3
         },
         occultism: {
+            count: 3
+        },
+        bloodmagic: {
             count: 3
         }
     },
@@ -351,6 +390,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 4
+        },
+        bloodmagic: {
+            count: 4
         }
     },
     cinnabar: {
@@ -367,6 +409,9 @@ const gemProcessingProperties = {
         },
         occultism: {
             count: 4
+        },
+        bloodmagic: {
+            count: 4
         }
     },
     mana: {
@@ -382,6 +427,9 @@ const gemProcessingProperties = {
             count: 4
         },
         occultism: {
+            count: 4
+        },
+        bloodmagic: {
             count: 4
         }
     }
