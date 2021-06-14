@@ -20,11 +20,11 @@ else
     export URL="https://github.com/Yoosk/ServerStarter/releases/download/v2.0.1/serverstarter-2.0.1.jar"
 fi
 echo $URL
-if ! command - v wget >> /dev/null; then
+if command -v wget >>/dev/null; then
     echo "DEBUG: (wget) Downloading ${URL}"
     wget -O serverstarter-2.0.1.jar "${URL}"
 else
-    if ! command - v curl >> /dev/null; then
+    if command -v curl >>/dev/null; then
         echo "DEBUG: (curl) Downloading ${URL}"
         curl -o serverstarter-2.0.1.jar "${URL}"
     else
