@@ -63,7 +63,9 @@ const materialsToUnify = [
     'knightslime',
     'slimesteel',
     'manyullyn',
-    'hepatizon'
+    'hepatizon',
+    'thallasium',
+    'nebu'
 ];
 
 // Used to determine which material types to unify
@@ -122,133 +124,265 @@ const oreProcessingSecondaries = {
 
 const gemProcessingProperties = {
     redstone: {
+        output: 'dust',
         create: {
             primaryCount: 8,
             secondaryCount: 6,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'dust',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 6
+        },
+        occultism: {
+            count: 6
         }
     },
     coal: {
+        output: 'gem',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 4,
+            secondary: 'emendatusenigmatica:sulfur_dust',
+            secondaryChance: 0.15
+        },
+        occultism: {
+            count: 4
         }
     },
     diamond: {
+        output: 'gem',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 500
+        },
+        immersiveengineering: {
+            count: 2
+        },
+        occultism: {
+            count: 2
         }
     },
     emerald: {
+        output: 'gem',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 500
+        },
+        immersiveengineering: {
+            count: 4
+        },
+        occultism: {
+            count: 2
         }
     },
     lapis: {
+        output: 'gem',
         create: {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.5,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 9,
+            secondary: 'emendatusenigmatica:sulfur_dust',
+            secondaryChance: 0.2
+        },
+        occultism: {
+            count: 9
         }
     },
     quartz: {
+        output: 'gem',
         create: {
             primaryCount: 2,
             secondaryCount: 4,
             secondaryChance: 0.5,
             stoneOutput: 'minecraft:netherrack',
-            output: 'gem',
             processingTime: 350
+        },
+        immersiveengineering: {
+            count: 3,
+            secondary: 'emendatusenigmatica:sulfur_dust',
+            secondaryChance: 0.25
+        },
+        occultism: {
+            count: 3
         }
     },
     sulfur: {
+        output: 'gem',
         create: {
             primaryCount: 6,
             secondaryCount: 2,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 6
+        },
+        occultism: {
+            count: 6
         }
     },
     apatite: {
+        output: 'gem',
         create: {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 12
+        },
+        occultism: {
+            count: 12
         }
     },
     fluorite: {
+        output: 'gem',
         create: {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 6
+        },
+        occultism: {
+            count: 6
         }
     },
     dimensional: {
+        output: 'gem',
         create: {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25,
             stoneOutput: 'minecraft:cobblestone',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 8
+        },
+        occultism: {
+            count: 8
         }
     },
     ender: {
+        output: 'shard',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
             stoneOutput: 'betterendforge:endstone_dust',
-            output: 'shard',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 3
+        },
+        occultism: {
+            count: 3
         }
     },
     amber: {
+        output: 'shard',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
             stoneOutput: 'betterendforge:endstone_dust',
-            output: 'shard',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 3
+        },
+        occultism: {
+            count: 3
         }
     },
     potassium_nitrate: {
+        output: 'gem',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
             stoneOutput: 'betterendforge:endstone_dust',
-            output: 'gem',
             processingTime: 300
+        },
+        immersiveengineering: {
+            count: 3
+        },
+        occultism: {
+            count: 3
+        }
+    },
+    bitumen: {
+        output: 'gem',
+        create: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5,
+            stoneOutput: 'minecraft:cobblestone',
+            processingTime: 300
+        },
+        immersiveengineering: {
+            count: 4
+        },
+        occultism: {
+            count: 4
+        }
+    },
+    cinnabar: {
+        output: 'gem',
+        create: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5,
+            stoneOutput: 'minecraft:cobblestone',
+            processingTime: 300
+        },
+        immersiveengineering: {
+            count: 4
+        },
+        occultism: {
+            count: 4
+        }
+    },
+    mana: {
+        output: 'gem',
+        create: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5,
+            stoneOutput: 'minecraft:cobblestone',
+            processingTime: 300
+        },
+        immersiveengineering: {
+            count: 4
+        },
+        occultism: {
+            count: 4
         }
     }
 };
