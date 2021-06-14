@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
         let gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
         let chunk = getPreferredItemInTag(Ingredient.of(`#forge:chunks/${material}`)).id;
 
-        let crushedOre = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
+        let crushed_ore = getPreferredItemInTag(Ingredient.of(`#create:crushed_ores/${material}`)).id;
         let dust = getPreferredItemInTag(Ingredient.of(`#forge:dusts/${material}`)).id;
         let shard = getPreferredItemInTag(Ingredient.of(`#forge:shards/${material}`)).id;
 
@@ -17,6 +17,9 @@ onEvent('recipes', (event) => {
         let mek_shard = getPreferredItemInTag(Ingredient.of(`#mekanism:shards/${material}`)).id;
         let mek_clump = getPreferredItemInTag(Ingredient.of(`#mekanism:clumps/${material}`)).id;
         let mek_dirty_dust = getPreferredItemInTag(Ingredient.of(`#mekanism:dirty_dusts/${material}`)).id;
+
+        let fragment = getPreferredItemInTag(Ingredient.of(`#bloodmagic:fragments/${material}`)).id;
+        let gravel = getPreferredItemInTag(Ingredient.of(`#bloodmagic:gravels/${material}`)).id;
 
         let gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
         let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
@@ -28,10 +31,11 @@ onEvent('recipes', (event) => {
 
         betterend_alloys(event, material, ore, ingot);
 
-        bloodmagic_ore_processing_alchemy(event, material, ore, gem, shard);
-        bloodmagic_ore_processing_arc(event, material, ore, dust, gem, shard);
+        bloodmagic_metal_ore_processing(event, material, ore, fragment, gravel, dust, ingot);
+        bloodmagic_gem_ore_processing(event, material, ore, gem, shard, dust);
+        bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        create_metal_ore_processing(event, material, ore, crushedOre, ingot, nugget);
+        create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget);
         create_gem_ore_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
 
@@ -151,61 +155,122 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function bloodmagic_ore_processing_alchemy(event, material, ore, gem, shard) {
-        if (ore == air || gem == air) {
+    function bloodmagic_metal_ore_processing(event, material, ore, fragment, gravel, dust, ingot) {
+        if (ore == air || ingot == air || fragment == air) {
             return;
         }
 
-        var inputs = [`#forge:ores/${material}`, '#bloodmagic:arc/cuttingfluid'],
-            output = Item.of(gem, 2);
-        if (shard != air) {
-            output = Item.of(shard, 2);
+        var secondaryOutput, materialProperties;
+
+        try {
+            materialProperties = oreProcessingSecondaries[material];
+        } catch (err) {
+            return;
         }
 
-        event.recipes.bloodmagic.alchemytable(output, inputs).syphon(400).ticks(200).upgradeLevel(1);
+        try {
+            secondaryOutput = getPreferredItemInTag(
+                Ingredient.of(`#bloodmagic:fragments/${materialProperties.secondary}`)
+            ).id;
+        } catch (err) {
+            secondaryOutput = fragment;
+        }
+        console.log(`BM Processing Fragment: ${fragment}`);
+        console.log(`BM Processing Fragment: ${secondaryOutput}`);
+        // Ore to Fragment in ARC
+        event.recipes.bloodmagic
+            .arc(Item.of(fragment, 3), `#forge:ores/${material}`, '#bloodmagic:arc/explosive', [
+                Item.of(fragment, 2).chance(0.25),
+                Item.of(secondaryOutput, 2).chance(0.25)
+            ])
+            .consumeIngredient(false)
+            .id(`bloodmagic:arc/fragments${material}`);
+
+        // Fragment to Gravel in ARC
+        event.recipes.bloodmagic
+            .arc(gravel, `#bloodmagic:fragments/${material}`, '#bloodmagic:arc/resonator', [
+                Item.of('bloodmagic:corrupted_tinydust', 1).chance(0.05),
+                Item.of('bloodmagic:corrupted_tinydust', 1).chance(0.01)
+            ])
+            .consumeIngredient(false)
+            .id(`bloodmagic:arc/gravels${material}`);
+
+        // Gravel to Dust in ARC
+        event.recipes.bloodmagic
+            .arc(dust, `#bloodmagic:gravels/${material}`, '#bloodmagic:arc/cuttingfluid', [])
+            .consumeIngredient(false)
+            .id(`bloodmagic:arc/dustsfrom_gravel_${material}`);
+
+        // Ore to Dust in Alchemy
+        event.recipes.bloodmagic
+            .alchemytable(Item.of(dust, 3), ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`])
+            .syphon(400)
+            .ticks(200)
+            .upgradeLevel(1)
+            .id(`bloodmagic:alchemytable/sand_${material}`);
     }
+    function bloodmagic_gem_ore_processing(event, material, ore, gem, shard, dust) {
+        if (ore == air) {
+            return;
+        }
+        var materialProperties;
 
-    function bloodmagic_ore_processing_arc(event, material, ore, dust, gem, shard) {
-        var data = {
-            recipes: []
-        };
-        var output;
-        if (ore != air && gem != air) {
-            output = Item.of(gem, 5);
-            if (shard != air) {
-                output = Item.of(shard, 3);
-            }
-            data.recipes.push({
-                input: `#forge:ores/${material}`,
-                output: output,
-                addedOutput: [],
-                tool: '#bloodmagic:arc/cuttingfluid'
-            });
+        try {
+            materialProperties = gemProcessingProperties[material].bloodmagic;
+        } catch (err) {
+            return;
         }
 
-        if (gem != air && dust != air) {
+        var count = materialProperties.count,
+            inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`];
+
+        switch (gemProcessingProperties[material].output) {
+            case 'dust':
+                output = dust;
+                break;
+            case 'gem':
+                output = gem;
+                break;
+            case 'shard':
+                output = shard;
+                break;
+            default:
+                return;
+        }
+
+        // Alchemy Table Processing
+        event.recipes.bloodmagic.alchemytable(Item.of(output, count), inputs).syphon(400).ticks(200).upgradeLevel(1);
+    }
+    function bloodmagic_ingot_gem_crushing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+
+        var input,
             output = Item.of(dust, 1);
-            data.recipes.push({
-                input: `#forge:gems/${material}`,
-                output: output,
-                addedOutput: [],
-                tool: '#bloodmagic:arc/explosive'
-            });
-        }
-
-        data.recipes.forEach((recipe) => {
-            event.recipes.bloodmagic
-                .arc(recipe.output, recipe.input, recipe.tool, recipe.addedOutput)
-                .consumeIngredient(false);
-        });
-    }
-
-    function create_metal_ore_processing(event, material, ore, crushedOre, ingot, nugget) {
-        if (ore == air || crushedOre == air || ingot == air) {
+        if (ingot != air) {
+            type = 'ingot';
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+            type = 'gem';
+        } else {
             return;
         }
 
-        var primaryOutput = crushedOre,
+        // Ingots and Gems to Dust in ARC
+        event.recipes.bloodmagic
+            .arc(output, input, '#bloodmagic:arc/explosive', [])
+            .consumeIngredient(false)
+            .id(`bloodmagic:arc/dustsfrom_${type}_${material}`);
+    }
+
+    function create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget) {
+        if (ore == air || crushed_ore == air || ingot == air) {
+            return;
+        }
+
+        var primaryOutput = crushed_ore,
             secondaryOutput,
             processingTime,
             stoneOutput = 'minecraft:cobblestone',
@@ -226,7 +291,7 @@ onEvent('recipes', (event) => {
             ).id;
             processingTime = materialProperties.createProcessingTime;
         } catch (err) {
-            secondaryOutput = crushedOre;
+            secondaryOutput = crushed_ore;
             processingTime = 400;
         }
         // Milling - Lower rates
@@ -257,7 +322,7 @@ onEvent('recipes', (event) => {
             .id(`create:crushing/${material}_ore`);
 
         // Washing
-        (outputs = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)]), (input = crushedOre);
+        (outputs = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)]), (input = crushed_ore);
 
         event.recipes.create.splashing(outputs, input).id(`create:splashing/crushed_${material}_ore`);
 
@@ -1053,10 +1118,7 @@ onEvent('recipes', (event) => {
                             tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
                         },
                         cast_consumed: cast == 'sand' ? true : false,
-                        fluid: {
-                            name: `tconstruct:molten_${material}`,
-                            amount: recipe.amount
-                        },
+                        fluid: { name: `tconstruct:molten_${material}`, amount: recipe.amount },
                         result: recipe.output,
                         cooling_time: recipe.cooling
                     })
@@ -1066,10 +1128,7 @@ onEvent('recipes', (event) => {
         event
             .custom({
                 type: 'tconstruct:casting_basin',
-                fluid: {
-                    name: `tconstruct:molten_${material}`,
-                    amount: 1296
-                },
+                fluid: { name: `tconstruct:molten_${material}`, amount: 1296 },
                 result: block,
                 cooling_time: 193
             })
