@@ -71,6 +71,30 @@ const materialsToUnify = [
 // Used to determine which material types to unify
 const typesToUnify = ['nugget', 'ingot', 'gem', 'storage_block', 'ore', 'dust', 'gear', 'plate', 'rod'];
 
+// Used for creating tags on custom ore processing materials
+const metals = [
+    'aluminum',
+    'cloggrum',
+    'cobalt',
+    'copper',
+    'froststeel',
+    'gold',
+    'iesnium',
+    'iron',
+    'lead',
+    'nebu',
+    'nickel',
+    'osmium',
+    'regalium',
+    'silver',
+    'thallasium',
+    'tin',
+    'uranium',
+    'utherium',
+    'zinc'
+];
+
+// Defines the secondary metal each metal type will produce.
 const oreProcessingSecondaries = {
     iron: {
         secondary: 'nickel',
@@ -119,9 +143,38 @@ const oreProcessingSecondaries = {
     nebu: {
         secondary: 'uranium',
         createProcessingTime: 400
+    },
+    cobalt: {
+        secondary: 'iron',
+        createProcessingTime: 400
+    },
+    cloggrum: {
+        secondary: 'lead',
+        createProcessingTime: 300
+    },
+    froststeel: {
+        secondary: 'cobalt',
+        createProcessingTime: 400
+    },
+    regalium: {
+        secondary: 'utherium',
+        createProcessingTime: 400
+    },
+    utherium: {
+        secondary: 'regalium',
+        createProcessingTime: 400
+    },
+    thallasium: {
+        secondary: 'thallasium',
+        createProcessingTime: 300
+    },
+    iesnium: {
+        secondary: 'silver',
+        createProcessingTime: 500
     }
 };
 
+// Used to drive Unify_Materials outputs for gem processing.
 const gemProcessingProperties = {
     redstone: {
         output: 'dust',
