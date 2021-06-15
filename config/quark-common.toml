@@ -1959,7 +1959,7 @@
 					"Is Blacklist" = true
 
 [oddities]
-	"Totem Of Holding" = false
+	"Totem Of Holding" = true
 	Backpack = false
 	"Matrix Enchanting" = false
 	Magnets = false
@@ -1974,7 +1974,7 @@
 		"Destroy Lost Items" = false
 		"Enable Soul Compass" = true
 		#Set this to false to only allow the owner of a totem to collect its items rather than any player
-		"Allow Anyone To Collect" = true
+		"Allow Anyone To Collect" = false
 
 	[oddities.magnets]
 		"Magnetic Blacklist" = ["minecraft:tripwire_hook"]
