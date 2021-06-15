@@ -240,7 +240,6 @@ onEvent('server.datapack.low_priority', (event) => {
                 { item: 'emendatusenigmatica:brass_nugget', weight: 15, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:bronze_nugget', weight: 15, amount: [8.0, 16.0] },
                 { item: 'emendatusenigmatica:steel_nugget', weight: 15, amount: [8.0, 16.0] },
-                { item: 'paraglider:paraglider', weight: 20 },
                 { item: 'artifacts:whoopee_cushion', weight: 20 },
                 { item: 'minecraft:leather_boots', weight: 100, enchantRange: [10.0, 20.0] },
                 { item: 'minecraft:leather_leggings', weight: 100, enchantRange: [10.0, 20.0] },
