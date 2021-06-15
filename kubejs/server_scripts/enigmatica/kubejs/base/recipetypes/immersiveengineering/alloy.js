@@ -4,7 +4,8 @@ onEvent('recipes', (event) => {
             {
                 input1: '#forge:ingots/copper',
                 input2: '#forge:ingots/zinc',
-                output: Item.of('emendatusenigmatica:brass_ingot', 2)
+                output: Item.of('emendatusenigmatica:brass_ingot', 2),
+                id: 'immersiveengineering:alloysmelter/brass'
             },
             {
                 input1: '#forge:ingots/iron',
@@ -28,8 +29,10 @@ onEvent('recipes', (event) => {
             }
         ]
     };
-    event.remove({ id: 'immersiveengineering:alloysmelter/brass' });
     data.recipes.forEach((recipe) => {
-        event.recipes.immersiveengineering.alloy(recipe.output, recipe.input1, recipe.input2);
+        const re = event.recipes.immersiveengineering.alloy(recipe.output, recipe.input1, recipe.input2);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

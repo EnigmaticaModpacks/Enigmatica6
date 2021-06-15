@@ -82,6 +82,29 @@ onEvent('recipes', (event) => {
                 inputs: [Ingredient.of('#forge:glass'), Ingredient.of('#forge:ingots/copper', 3)],
                 outputs: [Item.of('tconstruct:tinkers_bronze_ingot', 3)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_tinkers_bronze_ingot'
+            },
+            {
+                inputs: [
+                    Ingredient.of('#forge:ingots/copper', 2),
+                    Ingredient.of('#forge:ingots/cobalt', 1),
+                    Ingredient.of('#forge:obsidian')
+                ],
+                outputs: [Item.of('tconstruct:hepatizon_ingot', 4)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_hepatizon_ingot'
+            },
+            {
+                inputs: [
+                    Ingredient.of('#forge:ingots/gold', 1),
+                    Ingredient.of('#forge:ingots/cobalt', 1),
+                    Ingredient.of('minecraft:magma_cream')
+                ],
+                outputs: [Item.of('tconstruct:queens_slime_ingot', 2)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_queens_slime_ingot'
+            },
+            {
+                inputs: ['#forge:ingots/iron', 1, 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
+                outputs: [Item.of('tconstruct:pig_iron_ingot', 2)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_pig_iron_ingot'
             }
         ]
     };
