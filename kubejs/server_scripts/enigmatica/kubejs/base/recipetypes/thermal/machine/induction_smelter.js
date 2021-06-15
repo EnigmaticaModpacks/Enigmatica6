@@ -102,7 +102,7 @@ onEvent('recipes', (event) => {
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_queens_slime_ingot'
             },
             {
-                inputs: ['#forge:ingots/iron', 1, 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
+                inputs: ['#forge:ingots/iron', 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
                 outputs: [Item.of('tconstruct:pig_iron_ingot', 2)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_pig_iron_ingot'
             }
