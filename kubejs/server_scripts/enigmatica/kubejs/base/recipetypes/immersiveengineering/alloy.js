@@ -20,6 +20,11 @@ onEvent('recipes', (event) => {
                 input1: '#forge:ingots/netherite',
                 input2: 'betterendforge:terminite_ingot',
                 output: Item.of('betterendforge:aeternium_ingot')
+            },
+            {
+                input1: '#forge:glass',
+                input2: Ingredient.of('#forge:ingots/copper', 3),
+                output: Item.of('tconstruct:tinkers_bronze_ingot', 3)
             }
         ]
     };
