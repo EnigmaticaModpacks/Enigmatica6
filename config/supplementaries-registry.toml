@@ -1,15 +1,5 @@
 
-#all these don't actually disable blocks anymore, they just remove their recipe and remove them from the creative tabs(like all other mods do)
-#to access server configuration go into /saves/serverconfigs
-[general]
-	#enable creative tab
-	creative_tab = false
-	#set to false to disable custom dispenser behaviors (filling jars) if for some reason they are causing trouble
-	dispensers = true
-	#creates a creative tab full of filled jars
-	jar_tab = false
-
-#Enable and disable blocks / entities
+#Here are configs that are only needed very early when the mod starts to disable blocks & tabs
 [registration]
 
 	[registration.blocks]
@@ -71,4 +61,12 @@
 
 	[registration.entities]
 		firefly = true
+
+	[registration.general]
+		#Enable Creative Tab
+		creative_tab = false
+		#Set to false to disable custom dispenser behaviors (i.e: filling jars) if for some reason they are causing trouble
+		dispensers = true
+		#Creates a creative tab full of filled jars
+		jar_tab = false
 

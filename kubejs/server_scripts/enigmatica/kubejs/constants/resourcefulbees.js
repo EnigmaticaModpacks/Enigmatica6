@@ -20,6 +20,9 @@ const validApiaryBlocks = [
     /minecraft:\w+_concrete$/,
     /minecraft:(|\w+)terracotta$/,
 
+    /chipped:\w+_concrete_\w+$/,
+    /chipped:\w+terracotta_\w+$/,
+
     'minecraft:soul_sand',
     '#minecraft:stone_bricks',
 

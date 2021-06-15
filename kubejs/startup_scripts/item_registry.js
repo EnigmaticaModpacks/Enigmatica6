@@ -16,6 +16,36 @@ onEvent('item.registry', (event) => {
         'disabled_recipe_indicator'
     ];
 
+    let metals = [
+        'aluminum',
+        'cloggrum',
+        'cobalt',
+        'copper',
+        'froststeel',
+        'gold',
+        'iesnium',
+        'iron',
+        'lead',
+        'nebu',
+        'nickel',
+        'osmium',
+        'regalium',
+        'silver',
+        'thallasium',
+        'tin',
+        'uranium',
+        'utherium',
+        'zinc'
+    ];
+
+    let metalTypes = ['suffused', 'fulminated', 'levigated', 'sliver'];
+
+    metalTypes.forEach((metalType) => {
+        metals.forEach((metal) => {
+            generalItems.push(`${metalType}_${metal}`);
+        });
+    });
+
     generalItems.forEach((item) => {
         event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);
     });

@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
                     { item: 'powah:capacitor_blazing' },
                     { item: 'powah:capacitor_blazing' }
                 ],
-                energy: 250000,
+                energy: '250000',
                 result: {
                     item: 'tetra:magmatic_cell',
                     count: 1
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [{ tag: 'forge:storage_blocks/iron' }, { tag: 'forge:storage_blocks/gold' }],
-                energy: 100000,
+                energy: '100000',
                 result: {
                     item: 'powah:energized_steel_block',
                     count: 2
@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [{ item: 'botania:blaze_block' }],
-                energy: 900000,
+                energy: '900000',
                 result: {
                     item: 'powah:blazing_crystal_block',
                     count: 1
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [{ tag: 'forge:storage_blocks/diamond' }],
-                energy: 3000000,
+                energy: '3000000',
                 result: {
                     item: 'powah:niotic_crystal_block',
                     count: 1
@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [{ tag: 'forge:storage_blocks/emerald' }],
-                energy: 10000000,
+                energy: '10000000',
                 result: {
                     item: 'powah:spirited_crystal_block',
                     count: 1
@@ -59,8 +59,8 @@ onEvent('recipes', (event) => {
 
     var ingots = [{ tag: 'forge:ingots/uranium' }];
     var blocks = [{ tag: 'forge:storage_blocks/uranium' }];
-    var ingotvalues = [5000, 10000, 15000, 20000, 25000, 30000];
-    var blockvalues = [45000, 90000, 135000, 180000, 225000, 270000];
+    var ingotvalues = ['5000', '10000', '15000', '20000', '25000', '30000'];
+    var blockvalues = ['45000', '90000', '135000', '180000', '225000', '270000'];
 
     for (i = 1; i <= 6; i++) {
         event.custom({

@@ -9,7 +9,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: { item: 'minecraft:grass' },
-                B: { tag: '#forge:beehives/tier_0' }
+                B: { tag: 'forge:beehives/tier_0' }
             },
             nbt: {},
             result: { item: 'resourcefulbees:t1_beehive' /*, nbt: {BlockEntityTag: {Bees:[]}}*/ },
