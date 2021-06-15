@@ -860,14 +860,19 @@
 			title: "Infinity Tools"
 			x: -0.5d
 			y: 2.5d
-			description: ["That's a lot of power! But there is a way to fill these up. Find it, and these Artifacts are yours for the taking."]
+			description: [
+				"In order to complete this quest, you must obtain all Infinity Tools and get them to the Artifact tier."
+				""
+				"It's possible to upgrade Infinity Tools to Artifact tier without infinite power, we leave it to you to discover how."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "17E8CDC64C0FB5EA"
 			tasks: [
 				{
 					id: "4801DE27B925DA50"
 					type: "item"
-					item: {
+					title: "Infinity Drill: Artififact Tier"
+					icon: {
 						id: "industrialforegoing:infinity_drill"
 						Count: 1b
 						tag: {
@@ -881,11 +886,50 @@
 							}
 						}
 					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:infinity_drill"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								{
+									id: "itemfilters:strong_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											CanCharge: 1b
+											Special: 0b
+											Selected: "ARTIFACT"
+											Energy: 9223372036854775807L
+											Fluid: {
+												FluidName: "biofuel"
+												Amount: 0
+											}
+										}
+									}
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "7FD0249142690FBD"
 					type: "item"
-					item: {
+					title: "Infinity Hammer: Artififact Tier"
+					icon: {
 						id: "industrialforegoing:infinity_hammer"
 						Count: 1b
 						tag: {
@@ -900,11 +944,52 @@
 							Beheading: 0
 						}
 					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:infinity_hammer"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0b
+										Selected: "ARTIFACT"
+										Beheading: 0
+									}
+								}
+								{
+									id: "itemfilters:strong_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											CanCharge: 1b
+											Energy: 9223372036854775807L
+											Fluid: {
+												FluidName: "biofuel"
+												Amount: 0
+											}
+											Special: 0b
+											Selected: "ARTIFACT"
+											Beheading: 0
+										}
+									}
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "625720B1A137C6DF"
 					type: "item"
-					item: {
+					title: "Infinity Trident: Artififact Tier"
+					icon: {
 						id: "industrialforegoing:infinity_trident"
 						Count: 1b
 						tag: {
@@ -921,11 +1006,56 @@
 							Loyalty: 0
 						}
 					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:infinity_trident"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Riptide: 0
+										Channeling: 0b
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0b
+										Selected: "ARTIFACT"
+										Loyalty: 0
+									}
+								}
+								{
+									id: "itemfilters:strong_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											CanCharge: 1b
+											Riptide: 0
+											Channeling: 0b
+											Energy: 9223372036854775807L
+											Fluid: {
+												FluidName: "biofuel"
+												Amount: 0
+											}
+											Special: 0b
+											Selected: "ARTIFACT"
+											Loyalty: 0
+										}
+									}
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "314182BBA59CFDD8"
 					type: "item"
-					item: {
+					title: "Infinity Saw: Artififact Tier"
+					icon: {
 						id: "industrialforegoing:infinity_saw"
 						Count: 1b
 						tag: {
@@ -939,11 +1069,50 @@
 							}
 						}
 					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:infinity_saw"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								{
+									id: "itemfilters:strong_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											CanCharge: 1b
+											Special: 0b
+											Selected: "ARTIFACT"
+											Energy: 9223372036854775807L
+											Fluid: {
+												FluidName: "biofuel"
+												Amount: 0
+											}
+										}
+									}
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "09A7BEA11BB1C9B1"
 					type: "item"
-					item: {
+					title: "Infinity Backpack: Artififact Tier"
+					icon: {
 						id: "industrialforegoing:infinity_backpack"
 						Count: 1b
 						tag: {
@@ -951,6 +1120,36 @@
 							Special: 0b
 							Selected: "ARTIFACT"
 							Energy: 9223372036854775807L
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:infinity_backpack"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+									}
+								}
+								{
+									id: "itemfilters:strong_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											CanCharge: 1b
+											Special: 0b
+											Selected: "ARTIFACT"
+											Energy: 9223372036854775807L
+										}
+									}
+								}
+							]
 						}
 					}
 				}
@@ -1109,7 +1308,7 @@
 											FluidName: "biofuel"
 											Amount: 0
 										}
-										Special: 1b
+										Special: 0b
 										Selected: "POOR"
 										Beheading: 0
 									}
