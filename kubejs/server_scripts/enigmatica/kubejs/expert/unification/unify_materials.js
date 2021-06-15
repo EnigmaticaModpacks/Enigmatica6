@@ -4,19 +4,19 @@ onEvent('recipes', (event) => {
     }
 
     materialsToUnify.forEach((material) => {
-        var ingot = getPreferredItemInTag(Ingredient.of('#forge:ingots/' + material)).id;
-        var gem = getPreferredItemInTag(Ingredient.of('#forge:gems/' + material)).id;
+        var ingot = getPreferredItemInTag(Ingredient.of(`#forge:ingots/${material}`)).id;
+        var gem = getPreferredItemInTag(Ingredient.of(`#forge:gems/${material}`)).id;
 
-        var plate = getPreferredItemInTag(Ingredient.of('#forge:plates/' + material)).id;
-        var gear = getPreferredItemInTag(Ingredient.of('#forge:gears/' + material)).id;
-        var rod = getPreferredItemInTag(Ingredient.of('#forge:rods/' + material)).id;
-        var wire = getPreferredItemInTag(Ingredient.of('#forge:wires/' + material)).id;
+        var plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
+        var gear = getPreferredItemInTag(Ingredient.of(`#forge:gears/${material}`)).id;
+        var rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
+        var wire = getPreferredItemInTag(Ingredient.of(`#forge:wires/${material}`)).id;
 
-        var ore = getPreferredItemInTag(Ingredient.of('#forge:ores/' + material)).id;
-        var mana_cluster = getPreferredItemInTag(Ingredient.of('#mekanism:clumps/' + material)).id; // `#enigmatica:mana_clusters/${material}`
-        var fulminated_cluster = getPreferredItemInTag(Ingredient.of('#mekanism:crystals/' + material)).id; // `#enigmatica:fulminated_clusters/${material}`
-        var levigated_material = getPreferredItemInTag(Ingredient.of('#mekanism:dirty_dusts/' + material)).id; // `#enigmatica:levigated_material/${material}`
-        var crystalline_sliver = getPreferredItemInTag(Ingredient.of('#mekanism:shards/' + material)).id; // `#enigmatica:crystalline_sliver/${material}`
+        var ore = getPreferredItemInTag(Ingredient.of(`#forge:ores/${material}`)).id;
+        var mana_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:mana_clusters/${material}`)).id;
+        var fulminated_cluster = getPreferredItemInTag(Ingredient.of(`#enigmatica:fulminated_clusters/${material}`)).id;
+        var levigated_material = getPreferredItemInTag(Ingredient.of(`#enigmatica:levigated_materials/${material}`)).id;
+        var crystalline_sliver = getPreferredItemInTag(Ingredient.of(`#enigmatica:crystalline_slivers/${material}`)).id;
 
         gear_unification(event, material, ingot, gem, gear);
         rod_unification(event, material, ingot, gem, rod, plate);
@@ -47,9 +47,9 @@ onEvent('recipes', (event) => {
             mold = '#thermal:crafting/dies/gear';
 
         if (ingot != air) {
-            input = '#forge:ingots/' + material;
+            input = `#forge:ingots/${material}`;
         } else if (gem != air) {
-            input = '#forge:gems/' + material;
+            input = `#forge:gems/${material}`;
         } else {
             return;
         }
@@ -82,11 +82,11 @@ onEvent('recipes', (event) => {
             input,
             mold = '#thermal:crafting/dies/rod';
         const hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
-        const plateTag = '#forge:plates/' + material;
+        const plateTag = `#forge:plates/${material}`;
         if (ingot != air) {
-            input = '#forge:ingots/' + material;
+            input = `#forge:ingots/${material}`;
         } else if (gem != air) {
-            input = '#forge:gems/' + material;
+            input = `#forge:gems/${material}`;
         } else {
             return;
         }
@@ -117,9 +117,9 @@ onEvent('recipes', (event) => {
             hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
 
         if (ingot != air) {
-            input = '#forge:ingots/' + material;
+            input = `#forge:ingots/${material}`;
         } else if (gem != air) {
-            input = '#forge:gems/' + material;
+            input = `#forge:gems/${material}`;
         } else {
             return;
         }
@@ -149,9 +149,9 @@ onEvent('recipes', (event) => {
             mold = '#thermal:crafting/dies/wire';
 
         if (ingot != air) {
-            input = '#forge:ingots/' + material;
+            input = `#forge:ingots/${material}`;
         } else if (gem != air) {
-            input = '#forge:gems/' + material;
+            input = `#forge:gems/${material}`;
         } else {
             return;
         }
@@ -189,68 +189,22 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        // list will need to be updated. More ores available now. Should consider moving into a function "get_secondary()"
-        switch (material) {
-            case 'iron':
-                secondaryMaterial = 'nickel';
-                break;
-            case 'nickel':
-                secondaryMaterial = 'iron';
-                break;
-            case 'gold':
-                secondaryMaterial = 'zinc';
-                break;
-            case 'copper':
-                secondaryMaterial = 'gold';
-                break;
-            case 'aluminum':
-                secondaryMaterial = 'iron';
-                break;
-            case 'lead':
-                secondaryMaterial = 'silver';
-                break;
-            case 'silver':
-                secondaryMaterial = 'lead';
-                break;
-            case 'uranium':
-                secondaryMaterial = 'lead';
-                break;
-            case 'osmium':
-                secondaryMaterial = 'tin';
-                break;
-            case 'tin':
-                secondaryMaterial = 'osmium';
-                break;
-            case 'zinc':
-                secondaryMaterial = 'gold';
-                break;
-            case 'iesnium':
-                secondaryMaterial = 'iesnium';
-                break;
-            case 'cloggrum':
-                secondaryMaterial = 'cloggrum';
-                break;
-            case 'froststeel':
-                secondaryMaterial = 'froststeel';
-                break;
-            case 'regalium':
-                secondaryMaterial = 'regalium';
-                break;
-            case 'utherium':
-                secondaryMaterial = 'utherium';
-                break;
-            default:
-                return;
-        }
-
-        var secondary_fulminated_cluster = getPreferredItemInTag(
-                Ingredient.of('#mekanism:crystals/' + secondaryMaterial)
-            ).id,
+        var secondary_fulminated_cluster,
             infusing_input = `#forge:ores/${material}`,
-            zapping_input = `#mekanism:clumps/${material}`, // `#enigmatica:mana_clusters/${material}`
-            crumbling_input = `#mekanism:crystals/${material}`, // `#enigmatica:fulminated_clusters/${material}`
-            freezing_input = `#mekanism:dirty_dusts/${material}`, // `#enigmatica:levigated_material/${material}`
-            fusing_input = `#mekanism:shards/${material}`; // `#enigmatica:crystalline_sliver/${material}`
+            zapping_input = `#enigmatica:mana_clusters/${material}`,
+            crumbling_input = `#enigmatica:fulminated_clusters/${material}`,
+            freezing_input = `#enigmatica:levigated_materials/${material}`,
+            fusing_input = `#enigmatica:crystalline_slivers/${material}`;
+
+        try {
+            secondary_fulminated_cluster = getPreferredItemInTag(
+                Ingredient.of(`#enigmatica:fulminated_clusters/${oreProcessingSecondaries[material].secondary}`)
+            ).id;
+        } catch (err) {
+            secondary_fulminated_cluster = getPreferredItemInTag(
+                Ingredient.of(`#mekanism:fulminated_clusters/${material}`)
+            ).id;
+        }
 
         // Step One: Infuse!
         event.custom({
