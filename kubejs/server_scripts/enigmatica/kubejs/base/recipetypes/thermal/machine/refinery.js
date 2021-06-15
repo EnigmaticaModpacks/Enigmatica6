@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var data = {
         recipes: [
             {
@@ -12,6 +12,10 @@ events.listen('recipes', (event) => {
             {
                 outputs: [Item.of('minecraft:sugar', 2)],
                 input: fluid.of('thermal:syrup', 25)
+            },
+            {
+                outputs: [Item.of('industrialforegoing:dryrubber', 1)],
+                input: fluid.of('industrialforegoing:latex', 900)
             }
         ]
     };

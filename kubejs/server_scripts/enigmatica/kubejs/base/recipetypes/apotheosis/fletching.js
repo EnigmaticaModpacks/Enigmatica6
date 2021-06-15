@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         {
             ingredients: [
@@ -38,7 +38,7 @@ events.listen('recipes', (event) => {
         },
         {
             ingredients: [
-                { tag: 'minecraft:ender_pearl' },
+                { item: 'minecraft:ender_pearl' },
                 { tag: 'forge:rods/wooden' },
                 { item: 'minecraft:feather' }
             ],

@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event
         .get('forge:dusts')
         .add('immersiveengineering:dust_aluminum')

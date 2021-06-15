@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -42,6 +42,41 @@ events.listen('recipes', (event) => {
                 { type: 'bloodmagic:bloodorb', orb_tier: 2 }
             ],
             id: 'bloodmagic:path/path_wood'
+        },
+        {
+            output: Item.of('bloodmagic:largebloodstonebrick', 4),
+            inputs: [
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'naturesaura:infused_stone',
+                'bloodmagic:weakbloodshard'
+            ],
+            id: 'bloodmagic:largebloodstonebrick'
+        },
+        {
+            output: Item.of('botania:red_string', 1),
+            inputs: ['minecraft:string', '#forge:storage_blocks/redstone', 'atum:ectoplasm'],
+            id: 'botania:red_string_alt'
+        },
+        {
+            output: Item.of('botania:corporea_spark', 1),
+            inputs: [
+                'botania:spark',
+                'atum:ectoplasm',
+                Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })
+            ],
+            id: 'botania:corporea_spark'
+        },
+        {
+            output: Item.of('botania:corporea_spark_master', 1),
+            inputs: ['botania:corporea_spark', '#atum:godshards'],
+            id: 'botania:corporea_spark_master'
+        },
+        {
+            output: Item.of('botania:corporea_block', 8),
+            inputs: ['naturesaura:infused_stone', 'botania:corporea_spark'],
+            id: 'botania:corporea_block'
         }
     ];
 

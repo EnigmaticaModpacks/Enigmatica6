@@ -24,12 +24,8 @@ const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
 
 console.log(`Current packmode is: ${global.packmode}`);
-console.log(`isNormalMode: ${global.isNormalMode}`);
-console.log(`isExpertMode: ${global.isExpertMode}`);
-console.log(`isNormalMode var: ${isNormalMode}`);
-console.log(`isExpertMode var: ${isExpertMode}`);
 
-events.listen('server.datapack.high_priority', (event) => {
+onEvent('server.datapack.high_priority', (event) => {
     if (event.server) {
         event.server.players.forEach((player) => {
             setMode(player);
@@ -58,12 +54,7 @@ events.listen('server.datapack.high_priority', (event) => {
     global.isNormalMode = packMode == 'normal';
     global.isExpertMode = packMode == 'expert';
     console.log(`inEvent: Current packmode is: ${global.packmode}`);
-    console.log(`inEvent: isNormalMode: ${global.isNormalMode}`);
-    console.log(`inEvent: isExpertMode: ${global.isExpertMode}`);
 
     const isNormalMode = packMode == 'normal';
     const isExpertMode = packMode == 'expert';
-
-    console.log(`inEvent: isNormalMode var: ${isNormalMode}`);
-    console.log(`inEvent: isExpertMode var: ${isExpertMode}`);
 });

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -33,7 +33,7 @@ events.listen('recipes', (event) => {
                     'eidolon:soul_shard',
                     'naturesaura:infused_iron',
                     'glassential:glass_ghostly',
-                    'minecraft:heart_of_the_sea'
+                    'minecraft:conduit'
                 ],
                 output: 'bloodmagic:soulgempetty',
                 minimumDrain: 1.0,

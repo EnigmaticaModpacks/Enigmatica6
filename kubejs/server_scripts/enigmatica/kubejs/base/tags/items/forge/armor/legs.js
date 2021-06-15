@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'immersiveengineering:armor_faraday_legs',
         'immersiveengineering:armor_steel_legs',
@@ -13,6 +13,8 @@ events.listen('item.tags', (event) => {
         event
             .get(tag)
             .add(items)
-            .add(/_leggings/);
+            .add(/_leggings/)
+            .add(/atum:.*legs/)
+            .add(/atum:legs/);
     });
 });

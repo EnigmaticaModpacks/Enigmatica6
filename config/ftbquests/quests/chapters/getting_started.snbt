@@ -1,521 +1,527 @@
 {
-	id: "0000000000000044",
-	group: "",
-	order_index: 1,
-	filename: "getting_started",
-	title: "Getting Started",
-	icon: "minecraft:nether_star",
-	subtitle: ["All journeys, no matter how grand, must start somewhere"],
-	default_quest_shape: "",
+	id: "0000000000000044"
+	group: ""
+	order_index: 1
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:nether_star"
+	default_quest_shape: ""
 	quests: [
 		{
-			title: "Welcome",
-			icon: "minecraft:oak_sapling",
-			x: 0.0d,
-			y: -6.0d,
+			title: "Welcome"
+			icon: "minecraft:oak_sapling"
+			x: 0.0d
+			y: -6.0d
 			description: [
-				" Welcome to Enigmatica 6, we're glad to have you :D",
-				" ",
-				"Quests are divided into 3 types:",
-				"",
-				"- Exploring Enigmatica",
-				"- Learning Mods",
-				"- Challenges",
-				"",
-				"You can learn more about each type below.",
-				"",
+				" Welcome to Enigmatica 6, we're glad to have you :D"
+				" "
+				"Quests are divided into 3 types:"
+				""
+				"- Exploring Enigmatica"
+				"- Learning Mods"
+				"- Challenges"
+				""
+				"You can learn more about each type below."
+				""
 				"Note that we're still working on quests, and many more will be added in the future."
-			],
-			size: 1.5d,
-			id: "0000000000000045",
+			]
+			size: 1.5d
+			id: "0000000000000045"
 			tasks: [{
-				id: "0000000000000046",
-				type: "checkmark",
+				id: "0000000000000046"
+				type: "checkmark"
 				icon: "minecraft:oak_sapling"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A93",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "0000000000000A93"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -4.0d,
+			x: -1.5d
+			y: -4.0d
 			description: [
-				"The Exploration questline's purpose is to show what's available in the pack.",
-				"",
-				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration.",
-				"",
-				"It currently has the following chapters:",
-				"- Tools",
-				"- Storage",
+				"The Exploration questline's purpose is to show what's available in the pack."
+				""
+				"These chapters are a great place to start if you're new to Modded Minecraft or if you're in the need for inspiration."
+				""
+				"It currently has the following chapters:"
+				"- Tools"
+				"- Storage"
 				"- Adventure"
-			],
-			dependencies: ["0000000000000045"],
-			id: "00000000000002AC",
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002AC"
 			tasks: [{
-				id: "00000000000002AD",
-				type: "checkmark",
-				title: "Exploring Enigmatica",
+				id: "00000000000002AD"
+				type: "checkmark"
+				title: "Exploring Enigmatica"
 				icon: "minecraft:compass"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000002B4",
-				type: "xp",
+				id: "00000000000002B4"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			icon: "minecraft:writable_book",
-			x: 0.0d,
-			y: -3.5d,
+			icon: "minecraft:writable_book"
+			x: 0.0d
+			y: -3.5d
 			description: [
-				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do.",
-				"",
+				"The Learning Mods chapters are designed to help you get started with a mod, explain how to progress, and show off some of the things you can do."
+				""
 				"The chapters do not show everything that every mod has to offer, so make sure to explore if you want to find all the cool features."
-			],
-			dependencies: ["0000000000000045"],
-			id: "00000000000002AE",
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002AE"
 			tasks: [{
-				id: "00000000000002AF",
-				type: "checkmark",
+				id: "00000000000002AF"
+				type: "checkmark"
 				title: "Learning Mods"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000002B2",
-				type: "xp",
+				id: "00000000000002B2"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Challenges",
-			icon: "minecraft:wither_skeleton_skull",
-			x: 1.5d,
-			y: -4.0d,
+			title: "Challenges"
+			icon: "minecraft:wither_skeleton_skull"
+			x: 1.5d
+			y: -4.0d
 			description: [
-				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players.",
-				"",
+				"Challenge quests are, surprisingly, challenges for the more seasoned modded Minecraft players."
+				""
 				"They are still work in progress."
-			],
-			dependencies: ["0000000000000045"],
-			id: "00000000000002B0",
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000002B0"
 			tasks: [{
-				id: "00000000000002B1",
-				type: "checkmark",
-				title: "Challenges",
+				id: "00000000000002B1"
+				type: "checkmark"
+				title: "Challenges"
 				icon: "minecraft:wither_skeleton_skull"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000002B3",
-				type: "xp",
+				id: "00000000000002B3"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Modded for Dummies",
-			x: 1.5d,
-			y: -7.5d,
-			subtitle: "Hey, listen!",
+			title: "Modded for Dummies"
+			x: 1.5d
+			y: -7.5d
+			subtitle: "Hey, listen!"
 			description: [
-				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what.",
-				"",
+				"If you're new to modded Minecraft, it can be a bit daunting to figure out what's what."
+				""
 				"That's why we made a book, to sum up the basics and give you a solid baseline to begin your modded journey!"
-			],
-			dependencies: ["0000000000000045"],
-			id: "00000000000006E9",
+			]
+			dependencies: ["0000000000000045"]
+			id: "00000000000006E9"
 			tasks: [{
-				id: "00000000000006EA",
-				type: "checkmark",
-				title: "Hey, listen!",
+				id: "00000000000006EA"
+				type: "checkmark"
+				title: "Hey, listen!"
 				icon: {
-					id: "patchouli:guide_book",
-					Count: 1b,
-					tag: {
-						"patchouli:book": "patchouli:modded_for_dummies"
-					}
-				}
-			}],
-			rewards: [{
-				id: "00000000000006EB",
-				type: "item",
-				title: "Modded for Dummies",
-				item: {
-					id: "patchouli:guide_book",
-					Count: 1b,
+					id: "patchouli:guide_book"
+					Count: 1b
 					tag: {
 						"patchouli:book": "patchouli:modded_for_dummies"
 					}
 				}
 			}]
-		},
+			rewards: [{
+				id: "00000000000006EB"
+				type: "item"
+				title: "Modded for Dummies"
+				item: {
+					id: "patchouli:guide_book"
+					Count: 1b
+					tag: {
+						"patchouli:book": "patchouli:modded_for_dummies"
+					}
+				}
+			}]
+		}
 		{
-			title: "Expert Mode",
-			x: 0.0d,
-			y: -8.0d,
+			title: "Expert Mode"
+			x: 0.0d
+			y: -8.0d
 			description: [
-				"Enigmatica has two modes: Normal and Expert",
-				"",
-				'You can toggle between them using the commands "/mode normal" and "/mode expert"',
-				"",
-				"This will trigger a reload which changes configs and recipes.",
-				"",
+				"Enigmatica has two modes: Normal and Expert"
+				""
+				"You can toggle between them using the commands \"/mode normal\" and \"/mode expert\""
+				""
+				"This will trigger a reload which changes configs and recipes."
+				""
 				"A few config changes require a full restart to take effect, but in most cases there's no need to restart now, as those changes will load when you launch the game next time."
-			],
+			]
 			dependencies: [
-				"0000000000000FEB",
+				"0000000000000FEB"
 				"0000000000000045"
-			],
-			hide: true,
-			id: "0000000000000FE9",
+			]
+			hide: true
+			id: "0000000000000FE9"
 			tasks: [{
-				id: "0000000000000FEA",
-				type: "item",
+				id: "0000000000000FEA"
+				type: "item"
 				item: "mekanism:robit"
 			}]
-		},
+		}
 		{
-			x: -1.5d,
-			y: -7.5d,
-			subtitle: "Don't Panic",
+			x: -1.5d
+			y: -7.5d
+			subtitle: "Don't Panic"
 			description: [
-				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. ",
-				"",
-				"● Right click to open the menu and choose a book. Once chosen, the Akashic Tome transforms and becomes that book, for all intents and purposes. ",
-				"",
-				"● Left click the air to revert it back to the Akashic Tome.",
-				"",
-				"● When transformed, sneak and press your Throw key to remove a given book. ",
-				"",
-				"●Craft the Tome with a book to merge them once more. ",
+				"A vast repository of knowledge in the palm of your hands. This tome comes pre-populated with the manuals for each mod so they’re always at the ready. "
 				""
-			],
-			dependencies: ["0000000000000045"],
-			id: "1F5D6018C2E35C3D",
+				"● Right click to open the menu and choose a book. Once chosen, the Akashic Tome transforms and becomes that book, for all intents and purposes. "
+				""
+				"● Left click the air to revert it back to the Akashic Tome."
+				""
+				"● When transformed, sneak and press your Throw key to remove a given book. "
+				""
+				"●Craft the Tome with a book to merge them once more. "
+				""
+			]
+			dependencies: ["0000000000000045"]
+			id: "1F5D6018C2E35C3D"
 			tasks: [{
-				id: "7781E2B735D79B56",
-				type: "item",
+				id: "7781E2B735D79B56"
+				type: "item"
 				item: "minecraft:book"
-			}],
+			}]
 			rewards: [{
-				id: "6E4E5D6908D19095",
-				type: "item",
-				title: "Full Akashic Tome",
+				id: "6E4E5D6908D19095"
+				type: "item"
+				title: "Full Akashic Tome"
 				icon: {
-					id: "akashictome:tome",
-					Count: 1b,
+					id: "akashictome:tome"
+					Count: 1b
 					tag: {
 						"akashictome:data": {
 							industrialforegoing: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "industrialforegoing:industrial_foregoing"
 								}
-							},
+							}
 							tetra: {
-								id: "tetra:holo",
-								Count: 1.0d,
+								id: "tetra:holo"
+								Count: 1.0d
 								tag: {
-									"holo/core_material": "frame/dim",
-									"holo/frame": "holo/frame",
-									"holo/core": "holo/core",
+									"holo/core_material": "frame/dim"
+									"holo/frame": "holo/frame"
+									"holo/core": "holo/core"
 									"holo/frame_material": "core/ancient"
 								}
-							},
+							}
 							resourcefulbees: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 								}
-							},
+							}
 							theoneprobe: {
-								id: "theoneprobe:probenote",
+								id: "theoneprobe:probenote"
 								Count: 1.0d
-							},
+							}
 							astralsorcery: {
-								id: "astralsorcery:tome",
+								id: "astralsorcery:tome"
 								Count: 1.0d
-							},
+							}
 							ftbquests: {
-								id: "ftbquests:book",
+								id: "ftbquests:book"
 								Count: 1.0d
-							},
+							}
 							alexsmobs: {
-								id: "alexsmobs:animal_dictionary",
+								id: "alexsmobs:animal_dictionary"
 								Count: 1.0d
-							},
+							}
 							immersiveengineering: {
-								id: "immersiveengineering:manual",
+								id: "immersiveengineering:manual"
 								Count: 1.0d
-							},
+							}
 							eidolon: {
-								id: "eidolon:codex",
+								id: "eidolon:codex"
 								Count: 1.0d
-							},
+							}
 							botania: {
-								id: "botania:lexicon",
-								Count: 1.0d,
-								tag: {}
-							},
+								id: "botania:lexicon"
+								Count: 1.0d
+								tag: { }
+							}
 							thermal: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "thermal:guidebook"
 								}
-							},
+							}
 							patchouli: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "patchouli:modded_for_dummies"
 								}
-							},
+							}
 							rftoolsbase: {
-								id: "rftoolsbase:manual",
+								id: "rftoolsbase:manual"
 								Count: 1.0d
-							},
+							}
 							integrateddynamics: {
-								id: "integrateddynamics:on_the_dynamics_of_integration",
+								id: "integrateddynamics:on_the_dynamics_of_integration"
 								Count: 1.0d
-							},
+							}
 							cookingforblockheads: {
-								id: "cookingforblockheads:crafting_book",
+								id: "cookingforblockheads:crafting_book"
 								Count: 1.0d
-							},
+							}
 							powah: {
-								id: "powah:book",
+								id: "powah:book"
 								Count: 1.0d
-							},
+							}
 							pneumaticcraft: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "pneumaticcraft:book"
 								}
-							},
+							}
 							naturesaura: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "naturesaura:book"
 								}
-							},
+							}
 							pedestals: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "pedestals:manual"
 								}
-							},
+							}
 							transport: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "transport:guide"
 								}
-							},
+							}
 							engineersdecor: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "engineersdecor:engineersdecor_manual"
 								}
-							},
+							}
 							occultism: {
-								id: "occultism:dictionary_of_spirits",
+								id: "occultism:dictionary_of_spirits"
 								Count: 1.0d
-							},
+							}
 							solcarrot: {
-								id: "solcarrot:food_book",
+								id: "solcarrot:food_book"
 								Count: 1.0d
-							},
+							}
 							modularrouters: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "modularrouters:book"
 								}
-							},
+							}
 							ars_nouveau: {
-								id: "ars_nouveau:worn_notebook",
+								id: "ars_nouveau:worn_notebook"
 								Count: 1.0d
-							},
+							}
 							bloodmagic: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "bloodmagic:guide"
 								}
-							},
+							}
 							betterendforge: {
-								id: "betterendforge:guidebook",
+								id: "betterendforge:guidebook"
 								Count: 1.0d
 							}
 						}
 					}
-				},
+				}
 				item: {
-					id: "akashictome:tome",
-					Count: 1b,
+					id: "akashictome:tome"
+					Count: 1b
 					tag: {
 						"akashictome:data": {
 							industrialforegoing: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "industrialforegoing:industrial_foregoing"
 								}
-							},
+							}
 							tetra: {
-								id: "tetra:holo",
-								Count: 1.0d,
+								id: "tetra:holo"
+								Count: 1.0d
 								tag: {
-									"holo/core_material": "frame/dim",
-									"holo/frame": "holo/frame",
-									"holo/core": "holo/core",
+									"holo/core_material": "frame/dim"
+									"holo/frame": "holo/frame"
+									"holo/core": "holo/core"
 									"holo/frame_material": "core/ancient"
 								}
-							},
+							}
 							resourcefulbees: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "resourcefulbees:fifty_shades_of_bees"
 								}
-							},
+							}
 							theoneprobe: {
-								id: "theoneprobe:probenote",
+								id: "theoneprobe:probenote"
 								Count: 1.0d
-							},
+							}
 							astralsorcery: {
-								id: "astralsorcery:tome",
+								id: "astralsorcery:tome"
 								Count: 1.0d
-							},
+							}
 							ftbquests: {
-								id: "ftbquests:book",
+								id: "ftbquests:book"
 								Count: 1.0d
-							},
+							}
 							alexsmobs: {
-								id: "alexsmobs:animal_dictionary",
+								id: "alexsmobs:animal_dictionary"
 								Count: 1.0d
-							},
+							}
 							immersiveengineering: {
-								id: "immersiveengineering:manual",
+								id: "immersiveengineering:manual"
 								Count: 1.0d
-							},
+							}
 							eidolon: {
-								id: "eidolon:codex",
+								id: "eidolon:codex"
 								Count: 1.0d
-							},
+							}
 							botania: {
-								id: "botania:lexicon",
-								Count: 1.0d,
-								tag: {}
-							},
+								id: "botania:lexicon"
+								Count: 1.0d
+								tag: { }
+							}
+							sushigocrafting: {
+								id: "patchouli:guide_book"
+								Count: 1b
+								tag: {
+									"patchouli:book": "sushigocrafting:sushigocrafting"
+								}
+							}
 							thermal: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "thermal:guidebook"
 								}
-							},
+							}
 							patchouli: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "patchouli:modded_for_dummies"
 								}
-							},
+							}
 							rftoolsbase: {
-								id: "rftoolsbase:manual",
+								id: "rftoolsbase:manual"
 								Count: 1.0d
-							},
+							}
 							integrateddynamics: {
-								id: "integrateddynamics:on_the_dynamics_of_integration",
+								id: "integrateddynamics:on_the_dynamics_of_integration"
 								Count: 1.0d
-							},
+							}
 							cookingforblockheads: {
-								id: "cookingforblockheads:crafting_book",
+								id: "cookingforblockheads:crafting_book"
 								Count: 1.0d
-							},
+							}
 							powah: {
-								id: "powah:book",
+								id: "powah:book"
 								Count: 1.0d
-							},
+							}
 							pneumaticcraft: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "pneumaticcraft:book"
 								}
-							},
+							}
 							naturesaura: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "naturesaura:book"
 								}
-							},
+							}
 							pedestals: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "pedestals:manual"
 								}
-							},
+							}
 							transport: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "transport:guide"
 								}
-							},
+							}
 							engineersdecor: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "engineersdecor:engineersdecor_manual"
 								}
-							},
+							}
 							occultism: {
-								id: "occultism:dictionary_of_spirits",
+								id: "occultism:dictionary_of_spirits"
 								Count: 1.0d
-							},
+							}
 							solcarrot: {
-								id: "solcarrot:food_book",
+								id: "solcarrot:food_book"
 								Count: 1.0d
-							},
+							}
 							modularrouters: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "modularrouters:book"
 								}
-							},
+							}
 							ars_nouveau: {
-								id: "ars_nouveau:worn_notebook",
+								id: "ars_nouveau:worn_notebook"
 								Count: 1.0d
-							},
+							}
 							bloodmagic: {
-								id: "patchouli:guide_book",
-								Count: 1.0d,
+								id: "patchouli:guide_book"
+								Count: 1.0d
 								tag: {
 									"patchouli:book": "bloodmagic:guide"
 								}
-							},
+							}
 							betterendforge: {
-								id: "betterendforge:guidebook",
+								id: "betterendforge:guidebook"
 								Count: 1.0d
 							}
 						}
 					}
-				},
+				}
 				only_one: true
 			}]
 		}

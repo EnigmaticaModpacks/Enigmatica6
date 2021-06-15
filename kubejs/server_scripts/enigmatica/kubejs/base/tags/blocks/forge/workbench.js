@@ -1,4 +1,4 @@
-events.listen('block.tags', (event) => {
+onEvent('block.tags', (event) => {
     event.add('forge:workbench', [
         'minecraft:crafting_table',
         'byg:bulbis_crafting_table',

@@ -1,0 +1,19 @@
+{
+    "modId": "environmental",
+    "group": {
+        "name": "Environmental Saplings",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "minecraft:emerald"
+        },
+        "defaultCategory": "farmingforblockheads:saplings"
+    },
+    "customEntries": [
+        { "output": { "item": "environmental:willow_sapling" } },
+        { "output": { "item": "environmental:cherry_sapling" } },
+        { "output": { "item": "environmental:pink_wisteria_sapling" } },
+        { "output": { "item": "environmental:blue_wisteria_sapling" } },
+        { "output": { "item": "environmental:purple_wisteria_sapling" } },
+        { "output": { "item": "environmental:white_wisteria_sapling" } }
+    ]
+}

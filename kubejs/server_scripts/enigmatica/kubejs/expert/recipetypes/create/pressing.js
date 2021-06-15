@@ -1,4 +1,8 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
+
     const recipes = [];
 
     recipes.forEach((recipe) => {

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -11,7 +11,7 @@ events.listen('recipes', (event) => {
                 texture: 'bindinglightningarray'
             },
             {
-                inputs: ['architects_palette:algal_lamp', '#forge:dusts/lapis'],
+                inputs: ['architects_palette:algal_lamp', '#forge:gems/aquamarine'],
                 output: 'minecraft:heart_of_the_sea',
                 texture: 'watersigil'
             },

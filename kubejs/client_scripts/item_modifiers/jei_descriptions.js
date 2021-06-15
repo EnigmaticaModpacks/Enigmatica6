@@ -1,4 +1,4 @@
-events.listen('jei.information', (event) => {
+onEvent('jei.information', (event) => {
     const recipes = [
         {
             items: ['simplefarming:cheese_slice'],
@@ -13,12 +13,6 @@ events.listen('jei.information', (event) => {
         {
             items: ['buildinggadgets:construction_paste'],
             description: ['Obtained by breaking a Dense Construction Block with a Pickaxe.']
-        },
-        {
-            items: ['bountifulbaubles:potion_wormhole', 'bountifulbaubles:wormhole_mirror'],
-            description: [
-                'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
-            ]
         },
         {
             items: ['powah:uraninite', 'powah:uraninite_block'],
@@ -124,12 +118,6 @@ events.listen('jei.information', (event) => {
                 'integratedtunnels:part_exporter_fluid'
             ],
             description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
-        },
-        {
-            items: ['autumnity:sap_bottle', 'autumnity:sappy_maple_log', 'autumnity:sappy_maple_wood'],
-            description: [
-                'Right-clicking a sappy maple log or sappy maple wood with a glass battle will turn the block into its stripped variant and fill the bottle with sap.'
-            ]
         },
         {
             items: [

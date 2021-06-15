@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     // Conversion between different storage_blocks of the same material
     var conversionTypes = ['storage_block', 'ore'];
     conversionTypes.forEach((type) => {

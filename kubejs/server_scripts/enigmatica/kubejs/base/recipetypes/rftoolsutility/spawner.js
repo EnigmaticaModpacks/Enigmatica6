@@ -1,10 +1,10 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     /// These Recipes don't reload properly in game. Do a full restart when modifying anything.
     var substrates = {
         basic: [{ item: 'minecraft:dirt' }, { item: 'minecraft:gravel' }, { item: 'minecraft:sand' }],
         rocky: [{ item: 'minecraft:stone' }, { tag: 'forge:stones/basalt' }],
         frozen: [{ item: 'quark:permafrost' }, { item: 'minecraft:snow_block' }, { tag: 'forge:ices' }],
-        arid: [{ item: 'minecraft:sandstone' }, { item: 'minecraft:sand' }],
+        arid: [{ item: 'minecraft:sandstone' }, { item: 'minecraft:sand' }, { item: 'atum:sand' }],
         hellish: [{ item: 'minecraft:netherrack' }, { tag: 'forge:stones/basalt' }],
         mushroom: [{ item: 'minecraft:mycelium' }],
         clay: [{ item: 'minecraft:clay' }],
@@ -544,20 +544,6 @@ events.listen('recipes', (event) => {
                 base: substrates.alien
             },
 
-            /// Autumnity
-            {
-                entity: 'autumnity:turkey',
-                size: sizes.medium,
-                special: { item: 'minecraft:feather' },
-                base: substrates.basic
-            },
-            {
-                entity: 'autumnity:snail',
-                size: sizes.small,
-                special: { item: 'autumnity:snail_slime' },
-                base: substrates.basic
-            },
-
             /// Upgrade Aquatic
             {
                 entity: 'upgrade_aquatic:flare',
@@ -587,6 +573,35 @@ events.listen('recipes', (event) => {
                 entity: 'upgrade_aquatic:great_thrasher',
                 size: sizes.enormous,
                 special: { item: 'upgrade_aquatic:thrasher_tooth' },
+                base: substrates.basic
+            },
+            /// Environmental
+
+            {
+                entity: 'environmental:duck',
+                size: sizes.small,
+                special: { tag: 'forge:feathers' },
+                base: substrates.basic
+            },
+            {
+                entity: 'environmental:yak',
+                size: sizes.large,
+                special: { item: 'environmental:yak_hair' },
+                base: substrates.basic
+            },
+            {
+                entity: 'environmental:deer',
+                size: sizes.medium,
+                special: { tag: 'forge:leather' },
+                base: substrates.basic
+            },
+
+            /// SushiGo Crafting
+
+            {
+                entity: 'sushigocrafting:shrimp',
+                size: sizes.tiny,
+                special: { tag: 'minecraft:fishes' },
                 base: substrates.basic
             },
 
@@ -826,6 +841,9 @@ events.listen('recipes', (event) => {
                 special: { item: 'minecraft:warped_fungus' },
                 base: substrates.hellish
             },
+
+            /// Ars Nouveau
+
             {
                 entity: 'ars_nouveau:wilden_guardian',
                 size: sizes.large,
@@ -843,6 +861,129 @@ events.listen('recipes', (event) => {
                 size: sizes.medium,
                 special: { item: 'ars_nouveau:wilden_horn' },
                 base: substrates.basic
+            },
+
+            /// Atum
+
+            {
+                entity: 'atum:bonestorm',
+                size: sizes.medium,
+                special: { item: 'atum:dusty_bone' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:scarab',
+                size: sizes.tiny,
+                special: { item: 'minecraft:rotten_flesh' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:forsaken',
+                size: sizes.medium,
+                special: { item: 'atum:dusty_bone' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:quail',
+                size: sizes.small,
+                special: { item: 'minecraft:feather' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:mummy',
+                size: sizes.medium,
+                special: { item: 'atum:cloth_scrap' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:wraith',
+                size: sizes.medium,
+                special: { item: 'atum:ectoplasm' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:stonewarden',
+                size: sizes.large,
+                special: { item: 'atum:khnumite' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:stoneguard',
+                size: sizes.medium,
+                special: { item: 'atum:khnumite' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:camel',
+                size: sizes.large,
+                special: { item: 'minecraft:leather' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:serval',
+                size: sizes.small,
+                special: { item: 'minecraft:string' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:tarantula',
+                size: sizes.medium,
+                special: { item: 'atum:mandibles' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:desert_rabbit',
+                size: sizes.tiny,
+                special: { item: 'minecraft:rabbit_stew' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:desert_wolf',
+                size: sizes.medium,
+                special: { tag: 'forge:bones' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:villager',
+                size: sizes.medium,
+                special: { item: 'minecraft:book' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:sargeant',
+                size: sizes.medium,
+                special: { item: 'atum:coin_gold' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:nomad',
+                size: sizes.medium,
+                special: { item: 'atum:coin_gold' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:brigand',
+                size: sizes.medium,
+                special: { item: 'atum:coin_gold' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:barbarian',
+                size: sizes.medium,
+                special: { item: 'atum:coin_gold' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:assassin',
+                size: sizes.medium,
+                special: { item: 'atum:coin_gold' },
+                base: substrates.arid
+            },
+            {
+                entity: 'atum:bandit_warlord',
+                size: sizes.medium,
+                special: { item: 'atum:coin_gold' },
+                base: substrates.arid
             }
         ]
     };
@@ -870,6 +1011,13 @@ events.listen('recipes', (event) => {
                 item1: { amount: 0.1, ingredient: { item: 'minecraft:end_crystal' } },
                 item2: { amount: 100.0, ingredient: substrates.alien },
                 item3: { amount: 200.0, living: true }
+            },
+            {
+                entity: 'atum:pharaoh',
+                power: 200000,
+                item1: { amount: 0.1, ingredient: { tag: 'atum:relic' } },
+                item2: { amount: 0.5, ingredient: substrates.arid },
+                item3: { amount: 100.0, living: true }
             }
         ]
     };
@@ -917,7 +1065,10 @@ events.listen('recipes', (event) => {
         'upgrade_aquatic:lionfish',
         'upgrade_aquatic:nautilus',
         'upgrade_aquatic:perch',
-        'upgrade_aquatic:pike'
+        'upgrade_aquatic:pike',
+        'environmental:koi',
+        'environmental:slabfish',
+        'sushigocrafting:tuna'
     ];
 
     fishList.forEach((fish) => {

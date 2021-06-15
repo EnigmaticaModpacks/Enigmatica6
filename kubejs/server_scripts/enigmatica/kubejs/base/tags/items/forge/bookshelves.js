@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.add('forge:bookshelves', [
         'betterendforge:jellyshroom_bookshelf',
         'betterendforge:umbrella_tree_bookshelf',

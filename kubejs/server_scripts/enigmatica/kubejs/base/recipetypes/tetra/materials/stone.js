@@ -1,4 +1,4 @@
-events.listen('server.datapack.low_priority', (event) => {
+onEvent('server.datapack.low_priority', (event) => {
     var data = [
         {
             type: 'compat',

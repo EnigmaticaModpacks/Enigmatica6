@@ -1,4 +1,4 @@
-events.listen('block.registry', (event) => {
+onEvent('block.registry', (event) => {
     const blocks = [{ name: 'firmament', material: 'rock', hardness: 2 }];
 
     blocks.forEach((block) => {

@@ -1,4 +1,4 @@
-events.listen('server.datapack.high_priority', function (event) {
+onEvent('server.datapack.high_priority', function (event) {
     var tamingCriteria = {};
     tameableAnimals.forEach((entityType) => {
         tamingCriteria[entityType] = {

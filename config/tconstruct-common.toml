@@ -1,0 +1,86 @@
+
+#Everything to do with gameplay
+[gameplay]
+	#Set this to false to disable new players spawning with the Tinkers' Book.
+	shouldSpawnWithTinkersBook = false
+	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
+	#If empty, all materials will show
+	showOnlyToolMaterial = ""
+	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
+	#If empty, all materials will show
+	showOnlyPartMaterial = ""
+
+#Options related to recipes, limited options as a datapack allows most recipes to be modified
+[recipes]
+	#Add a recipe that allows you to craft a piece of flint using 3 gravel
+	addGravelToFlintRecipe = false
+	#Makes the recipe to alloy netherite in the smeltery only cost 2 gold per netherite ingot. If false uses the vanilla rate of 4 gold per ingot. Disable if there are crafting duplications.
+	cheaperNetheriteAlloy = false
+	#Makes wither skeletons drop necrotic bones
+	witherBoneDrop = true
+	#Allows converting wither bones to regular bones
+	witherBoneConversion = true
+	#Number of nuggets produced when an ore block is melted in the melter. 9 would give 1 ingot
+	#Range: 1 ~ 45
+	melterNuggetsPerOre = 12
+	#Number of nuggets produced when an ore block is melted in the smeltery. 9 nuggets would give 1 ingot
+	#Range: 1 ~ 45
+	smelteryNuggetsPerOre = 18
+	#Number of nuggets produced when an ore block is melted in the foundry. 9 nuggets would give 1 ingot
+	#Range: 1 ~ 45
+	foundryNuggetsPerOre = 15
+
+#Everything to do with world generation
+[worldgen]
+	#Generate Copper
+	generateCopper = false
+	#Approx Ores per Chunk
+	veinCountCopper = 20
+	#Generate Cobalt
+	generateCobalt = false
+	#Approx Ores per Chunk
+	veinCountCobalt = 8
+
+	#Options related to slime islands
+	[worldgen.slime_islands]
+
+		#Options related to earth slime islands spawning in the oceans
+		[worldgen.slime_islands.earth]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 15
+
+		#Settings for sky slime islands in the overworld sky
+		[worldgen.slime_islands.sky]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 30
+
+		#Settings for clay islands in the overworld sky
+		[worldgen.slime_islands.clay]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 100
+
+		#Settings for blood islands in the nether lava ocean
+		[worldgen.slime_islands.blood]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 13
+
+		#Settings for end slime islands in the outer end islands
+		[worldgen.slime_islands.end]
+			#If true, this island generates
+			generate = true
+			#How many chunks on average between islands
+			#Range: 10 ~ 500
+			separation = 25
+

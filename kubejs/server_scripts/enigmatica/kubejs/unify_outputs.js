@@ -12,7 +12,7 @@
     long as you do not claim to have made it. Attribution is
     appreciated, but not required.
 */
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     materialsToUnify.forEach((material) => {
         typesToUnify.forEach((type) => {
             if (!entryIsBlacklisted(material, type)) {

@@ -28,14 +28,10 @@ const stonecuttables = [
         ],
         // items added here can be cut from other blocks of this stone type,
         // but cannot be cut into other blocks from this type
-        onlyAsOutput: [
-            'minecraft:cobblestone'
-        ],
+        onlyAsOutput: ['minecraft:cobblestone'],
         // items added here can be cut into other blocks of this stone type,
         // but cannot be cut from blocks other blocks of this type
-        onlyAsInput: [
-            'minecraft:stone'
-        ]
+        onlyAsInput: ['minecraft:stone']
     },
     {
         name: 'andesite',
@@ -74,12 +70,8 @@ const stonecuttables = [
             'quark:andesite_pavement',
             'quark:andesite_pillar'
         ],
-        onlyAsOutput: [
-            'create:andesite_cobblestone'
-        ],
-        onlyAsInput: [
-            'minecraft:andesite'
-        ]
+        onlyAsOutput: ['create:andesite_cobblestone'],
+        onlyAsInput: ['minecraft:andesite']
     },
     {
         name: 'arcane_stone',
@@ -99,18 +91,9 @@ const stonecuttables = [
     },
     {
         name: 'basalt',
-        stones: [
-            'minecraft:polished_basalt',
-            'embellishcraft:basalt',
-            'embellishcraft:basalt_bricks',
-            'embellishcraft:basalt_large_bricks'
-        ],
-        onlyAsOutput: [
-            'embellishcraft:basalt_cobblestone'
-        ],
-        onlyAsInput: [
-            'minecraft:basalt'
-        ]
+        stones: ['minecraft:polished_basalt'],
+        onlyAsOutput: [],
+        onlyAsInput: ['minecraft:basalt']
     },
     {
         name: 'blackstone',
@@ -120,50 +103,30 @@ const stonecuttables = [
             'minecraft:polished_blackstone_bricks'
         ],
         onlyAsOutput: [],
-        onlyAsInput: [
-            'minecraft:blackstone'
-        ]
+        onlyAsInput: ['minecraft:blackstone']
     },
     {
         name: 'blaze_quartz',
-        stones: [
-            'botania:blaze_quartz',
-            'botania:blaze_quartz_pillar',
-            'botania:chiseled_blaze_quartz'
-        ],
+        stones: ['botania:blaze_quartz', 'botania:blaze_quartz_pillar', 'botania:chiseled_blaze_quartz'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
         name: 'bloodstone',
-        stones: [
-            'bloodmagic:largebloodstonebrick',
-            'bloodmagic:bloodstonebrick'
-        ],
+        stones: ['bloodmagic:largebloodstonebrick', 'bloodmagic:bloodstonebrick'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
         name: 'cobblestone',
-        stones: [
-            'minecraft:cobblestone',
-            'byg:rocky_stone',
-            'quark:cobblestone_bricks'
-        ],
+        stones: ['minecraft:cobblestone', 'byg:rocky_stone', 'quark:cobblestone_bricks'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
         name: 'dacite',
-        stones: [
-            'byg:dacite',
-            'byg:dacite_bricks',
-            'byg:dacite_pillar',
-            'byg:dacite_tile'
-        ],
-        onlyAsOutput: [
-            'byg:dacite_cobblestone'
-        ],
+        stones: ['byg:dacite', 'byg:dacite_bricks', 'byg:dacite_pillar', 'byg:dacite_tile'],
+        onlyAsOutput: ['byg:dacite_cobblestone'],
         onlyAsInput: []
     },
     {
@@ -209,9 +172,7 @@ const stonecuttables = [
             'create:mossy_dark_scoria',
             'create:overgrown_dark_scoria'
         ],
-        onlyAsOutput: [
-            'create:dark_scoria_cobblestone'
-        ],
+        onlyAsOutput: ['create:dark_scoria_cobblestone'],
         onlyAsInput: []
     },
     {
@@ -251,12 +212,8 @@ const stonecuttables = [
             'quark:diorite_pavement',
             'quark:diorite_pillar'
         ],
-        onlyAsOutput: [
-            'create:diorite_cobblestone'
-        ],
-        onlyAsInput: [
-            'minecraft:diorite'
-        ]
+        onlyAsOutput: ['create:diorite_cobblestone'],
+        onlyAsInput: ['minecraft:diorite']
     },
     {
         name: 'dolomite',
@@ -272,27 +229,18 @@ const stonecuttables = [
             'create:mossy_dolomite',
             'create:overgrown_dolomite'
         ],
-        onlyAsOutput: [
-            'create:dolomite_cobblestone'
-        ],
+        onlyAsOutput: ['create:dolomite_cobblestone'],
         onlyAsInput: []
     },
     {
         name: 'elder_prismarine',
-        stones: [
-            'quark:elder_prismarine',
-            'quark:elder_prismarine_bricks'
-        ],
+        stones: ['quark:elder_prismarine', 'quark:elder_prismarine_bricks'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
         name: 'elf_quartz',
-        stones: [
-            'botania:elf_quartz',
-            'botania:elf_quartz_pillar',
-            'botania:chiseled_elf_quartz'
-        ],
+        stones: ['botania:elf_quartz', 'botania:elf_quartz_pillar', 'botania:chiseled_elf_quartz'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -310,21 +258,7 @@ const stonecuttables = [
             'create:mossy_gabbro',
             'create:overgrown_gabbro'
         ],
-        onlyAsOutput: [
-            'create:gabbro_cobblestone'
-        ],
-        onlyAsInput: []
-    },
-    {
-        name: 'gneiss',
-        stones: [
-            'embellishcraft:gneiss',
-            'embellishcraft:gneiss_bricks',
-            'embellishcraft:gneiss_large_bricks'
-        ],
-        onlyAsOutput: [
-            'embellishcraft:gneiss_cobblestone'
-        ],
+        onlyAsOutput: ['create:gabbro_cobblestone'],
         onlyAsInput: []
     },
     {
@@ -364,24 +298,8 @@ const stonecuttables = [
             'quark:granite_pavement',
             'quark:granite_pillar'
         ],
-        onlyAsOutput: [
-            'create:granite_cobblestone'
-        ],
-        onlyAsInput: [
-            'minecraft:granite'
-        ]
-    },
-    {
-        name: 'jade',
-        stones: [
-            'embellishcraft:jade',
-            'embellishcraft:jade_bricks',
-            'embellishcraft:jade_large_bricks'
-        ],
-        onlyAsOutput: [
-            'embellishcraft:jade_cobblestone'
-        ],
-        onlyAsInput: []
+        onlyAsOutput: ['create:granite_cobblestone'],
+        onlyAsInput: ['minecraft:granite']
     },
     {
         name: 'jasper',
@@ -397,24 +315,8 @@ const stonecuttables = [
         onlyAsInput: []
     },
     {
-        name: 'larvikite',
-        stones: [
-            'embellishcraft:larvikite',
-            'embellishcraft:larvikite_bricks',
-            'embellishcraft:larvikite_large_bricks'
-        ],
-        onlyAsOutput: [
-            'embellishcraft:larvikite_cobblestone'
-        ],
-        onlyAsInput: []
-    },
-    {
         name: 'lavender_quartz',
-        stones: [
-            'botania:lavender_quartz',
-            'botania:lavender_quartz_pillar',
-            'botania:chiseled_lavender_quartz'
-        ],
+        stones: ['botania:lavender_quartz', 'botania:lavender_quartz_pillar', 'botania:chiseled_lavender_quartz'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -438,27 +340,18 @@ const stonecuttables = [
             'quark:limestone_pillar',
             'quark:polished_limestone'
         ],
-        onlyAsOutput: [
-            'create:limestone_cobblestone'
-        ],
+        onlyAsOutput: ['create:limestone_cobblestone'],
         onlyAsInput: []
     },
     {
         name: 'magma',
-        stones: [
-            'minecraft:magma_block',
-            'quark:magma_bricks'
-        ],
+        stones: ['minecraft:magma_block', 'quark:magma_bricks'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
         name: 'mana_quartz',
-        stones: [
-            'botania:mana_quartz',
-            'botania:mana_quartz_pillar',
-            'botania:chiseled_mana_quartz'
-        ],
+        stones: ['botania:mana_quartz', 'botania:mana_quartz_pillar', 'botania:chiseled_mana_quartz'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -471,9 +364,6 @@ const stonecuttables = [
             'astralsorcery:marble_raw',
             'astralsorcery:marble_runed',
             'astralsorcery:marble_arch',
-            'embellishcraft:marble',
-            'embellishcraft:marble_bricks',
-            'embellishcraft:marble_large_bricks',
             'quark:marble',
             'quark:marble_bricks',
             'quark:chiseled_marble_bricks',
@@ -481,9 +371,7 @@ const stonecuttables = [
             'quark:marble_pillar',
             'quark:polished_marble'
         ],
-        onlyAsOutput: [
-            'embellishcraft:marble_cobblestone'
-        ],
+        onlyAsOutput: [],
         onlyAsInput: []
     },
     {
@@ -568,10 +456,7 @@ const stonecuttables = [
     },
     {
         name: 'midori',
-        stones: [
-            'quark:midori_block',
-            'quark:midori_pillar'
-        ],
+        stones: ['quark:midori_block', 'quark:midori_pillar'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -590,17 +475,13 @@ const stonecuttables = [
     },
     {
         name: 'permafrost',
-        stones: [
-            'quark:permafrost',
-            'quark:permafrost_bricks'
-        ],
+        stones: ['quark:permafrost', 'quark:permafrost_bricks'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
-        name: 'prismarine',
+        name: 'prismarine_brick',
         stones: [
-            'minecraft:prismarine',
             'minecraft:prismarine_bricks',
             'masonry:prismarinetiled',
             'masonry:prismarinecarvedcreeper',
@@ -616,14 +497,18 @@ const stonecuttables = [
             'masonry:prismarinepolished',
             'masonry:prismarineroughcut',
             'masonry:prismarinechiseled',
-            'masonry:prismarinecobbled',
-            'masonry:prismarinecobbledmossy',
             'masonry:prismarinediamondpavers',
             'masonry:prismarinelargebricks',
             'masonry:prismarinelargebrickscracked',
             'masonry:prismarinelargebricksmossy',
             'masonry:prismarinesmallbrick'
         ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'prismarine',
+        stones: ['minecraft:prismarine', 'masonry:prismarinecobbled', 'masonry:prismarinecobbledmossy'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -640,11 +525,7 @@ const stonecuttables = [
     },
     {
         name: 'red_quartz',
-        stones: [
-            'botania:red_quartz',
-            'botania:red_quartz_pillar',
-            'botania:chiseled_red_quartz'
-        ],
+        stones: ['botania:red_quartz', 'botania:red_quartz_pillar', 'botania:chiseled_red_quartz'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -666,12 +547,7 @@ const stonecuttables = [
             'minecraft:red_sandstone',
             'minecraft:cut_red_sandstone',
             'minecraft:chiseled_red_sandstone',
-            'quark:red_sandstone_bricks',
-            'embellishcraft:red_sandstone_bricks',
-            'embellishcraft:red_sandstone_large_bricks',
-            'embellishcraft:red_sandstone_tiles',
-            'embellishcraft:red_sandstone_paving',
-            'embellishcraft:red_sandstone_paving_stones'
+            'quark:red_sandstone_bricks'
         ],
         onlyAsOutput: [],
         onlyAsInput: []
@@ -693,11 +569,6 @@ const stonecuttables = [
             'minecraft:sandstone',
             'minecraft:cut_sandstone',
             'minecraft:chiseled_sandstone',
-            'embellishcraft:sandstone_bricks',
-            'embellishcraft:sandstone_large_bricks',
-            'embellishcraft:sandstone_tiles',
-            'embellishcraft:sandstone_paving',
-            'embellishcraft:sandstone_paving_stones',
             'quark:sandstone_bricks'
         ],
         onlyAsOutput: [],
@@ -719,18 +590,12 @@ const stonecuttables = [
             'create:mossy_scoria',
             'create:overgrown_scoria'
         ],
-        onlyAsOutput: [
-            'byg:scoria_cobblestone',
-            'create:scoria_cobblestone'
-        ],
+        onlyAsOutput: ['byg:scoria_cobblestone', 'create:scoria_cobblestone'],
         onlyAsInput: []
     },
     {
         name: 'slate',
         stones: [
-            'embellishcraft:slate',
-            'embellishcraft:slate_bricks',
-            'embellishcraft:slate_large_bricks',
             'quark:slate',
             'quark:slate_bricks',
             'quark:chiseled_slate_bricks',
@@ -738,91 +603,12 @@ const stonecuttables = [
             'quark:slate_pillar',
             'quark:polished_slate'
         ],
-        onlyAsOutput: [
-            'embellishcraft:slate_cobblestone'
-        ],
-        onlyAsInput: []
-    },
-    {
-        name: 'smelted_basalt',
-        stones: [
-            'embellishcraft:smooth_basalt',
-            'embellishcraft:polished_basalt',
-            'embellishcraft:basalt_paving',
-            'embellishcraft:basalt_tiles',
-            'embellishcraft:basalt_ornament'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
-        name: 'smelted_gneiss',
-        stones: [
-            'embellishcraft:smooth_gneiss',
-            'embellishcraft:polished_gneiss',
-            'embellishcraft:gneiss_paving',
-            'embellishcraft:gneiss_tiles',
-            'embellishcraft:gneiss_ornament'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
-        name: 'smelted_jade',
-        stones: [
-            'embellishcraft:smooth_jade',
-            'embellishcraft:polished_jade',
-            'embellishcraft:jade_paving',
-            'embellishcraft:jade_tiles',
-            'embellishcraft:jade_ornament'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
-        name: 'smelted_larvikite',
-        stones: [
-            'embellishcraft:smooth_larvikite',
-            'embellishcraft:polished_larvikite',
-            'embellishcraft:larvikite_paving',
-            'embellishcraft:larvikite_tiles',
-            'embellishcraft:larvikite_ornament'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
-        name: 'smelted_marble',
-        stones: [
-            'embellishcraft:smooth_marble',
-            'embellishcraft:polished_marble',
-            'embellishcraft:marble_paving',
-            'embellishcraft:marble_tiles',
-            'embellishcraft:marble_ornament'
-        ],
-        onlyAsOutput: [],
-        onlyAsInput: []
-    },
-    {
-        name: 'smelted_slate',
-        stones: [
-            'embellishcraft:smooth_slate',
-            'embellishcraft:polished_slate',
-            'embellishcraft:slate_paving',
-            'embellishcraft:slate_tiles',
-            'embellishcraft:slate_ornament'
-        ],
         onlyAsOutput: [],
         onlyAsInput: []
     },
     {
         name: 'soapstone',
-        stones: [
-            'byg:polished_soapstone',
-            'byg:soapstone_bricks',
-            'byg:soapstone_pillar',
-            'byg:soapstone_tile'
-        ],
+        stones: ['byg:polished_soapstone', 'byg:soapstone_bricks', 'byg:soapstone_pillar', 'byg:soapstone_tile'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -839,11 +625,7 @@ const stonecuttables = [
     },
     {
         name: 'sunny_quartz',
-        stones: [
-            'botania:sunny_quartz',
-            'botania:sunny_quartz_pillar',
-            'botania:chiseled_sunny_quartz'
-        ],
+        stones: ['botania:sunny_quartz', 'botania:sunny_quartz_pillar', 'botania:chiseled_sunny_quartz'],
         onlyAsOutput: [],
         onlyAsInput: []
     },
@@ -874,9 +656,46 @@ const stonecuttables = [
             'create:mossy_weathered_limestone',
             'create:overgrown_weathered_limestone'
         ],
-        onlyAsOutput: [
-            'create:weathered_limestone_cobblestone'
+        onlyAsOutput: ['create:weathered_limestone_cobblestone'],
+        onlyAsInput: []
+    },
+    {
+        name: 'flavolite',
+        stones: [
+            'betterendforge:flavolite_bricks',
+            'betterendforge:flavolite_pedestal',
+            'betterendforge:flavolite_pillar',
+            'betterendforge:flavolite_tiles',
+            'betterendforge:flavolite_polished',
+            'betterendforge:flavolite'
         ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'violecite',
+        stones: [
+            'betterendforge:violecite_bricks',
+            'betterendforge:violecite_pedestal',
+            'betterendforge:violecite_pillar',
+            'betterendforge:violecite_tiles',
+            'betterendforge:violecite_polished',
+            'betterendforge:violecite'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'sulphuric_rock',
+        stones: [
+            'betterendforge:sulphuric_rock_pedestal',
+            'betterendforge:sulphuric_rock_bricks',
+            'betterendforge:sulphuric_rock_pillar',
+            'betterendforge:sulphuric_rock_tiles',
+            'betterendforge:sulphuric_rock_polished',
+            'betterendforge:sulphuric_rock'
+        ],
+        onlyAsOutput: [],
         onlyAsInput: []
     }
 ];

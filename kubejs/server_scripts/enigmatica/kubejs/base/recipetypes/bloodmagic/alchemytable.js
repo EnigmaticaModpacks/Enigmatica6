@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     data = {
         recipes: [
             {
@@ -194,6 +194,14 @@ events.listen('recipes', (event) => {
                 output: 'byg:mycelium_netherrack',
                 count: 1,
                 syphon: 200,
+                ticks: 200,
+                orbLevel: 1
+            },
+            {
+                inputs: ['#forge:gems/sulfur', 'industrialforegoing:dryrubber', 'industrialforegoing:dryrubber'],
+                output: 'thermal:cured_rubber',
+                count: 2,
+                syphon: 400,
                 ticks: 200,
                 orbLevel: 1
             },

@@ -35,9 +35,6 @@ const disabledItems = [
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
 
-    'bountifulbaubles:potion_wormhole',
-    'bountifulbaubles:wormhole_mirror',
-
     'blockcarpentry:frame_chest',
     'blockcarpentry:illusion_chest',
 
@@ -61,18 +58,6 @@ const disabledItems = [
     'byg:pendorite_sword',
 
     'decorative_blocks_abnormals:ender_brazier',
-
-    'mapperbase:bituminous_coal',
-    'mapperbase:steel_fence',
-    'mapperbase:steel_axe',
-    'mapperbase:steel_pickaxe',
-    'mapperbase:steel_shovel',
-    'mapperbase:steel_hoe',
-    'mapperbase:steel_sword',
-    'mapperbase:steel_helmet',
-    'mapperbase:steel_chestplate',
-    'mapperbase:steel_leggings',
-    'mapperbase:steel_boots',
 
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',

@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'ars_nouveau:apprentice_hood',
         'ars_nouveau:archmage_hood',
@@ -12,7 +12,9 @@ events.listen('item.tags', (event) => {
         'alexsmobs:frontier_cap',
         'alexsmobs:moose_headgear',
         'eidolon:warlock_hat',
-        'eidolon:top_hat'
+        'eidolon:top_hat',
+        'atum:halo_of_ra',
+        'atum:eyes_of_atem'
     ];
     var tags = ['forge:armor', 'forge:armor/helm'];
 

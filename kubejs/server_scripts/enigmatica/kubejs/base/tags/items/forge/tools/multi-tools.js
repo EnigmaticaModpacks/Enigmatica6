@@ -1,7 +1,5 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
-        'bountifulbaubles:gloves_digging_diamond',
-        'bountifulbaubles:gloves_digging_iron',
         'immersiveengineering:buzzsaw',
         'immersiveengineering:drill',
         'industrialforegoing:infinity_drill',

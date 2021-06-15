@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     event.remove({ type: 'thermal:numismatic_fuel' });
     var multiplier = 40;
     var data = {

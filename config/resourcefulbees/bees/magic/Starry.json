@@ -1,5 +1,5 @@
 {
-    "flower": "tag:minecraft:flowers",
+    "flower": "astralsorcery:glow_flower",
     "maxTimeInHive": 4800,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
@@ -11,7 +11,7 @@
     },
     "CombatData": {
         "isPassive": false,
-        "removeStingerOnAttack": true,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
         "attackDamage": 1
     },

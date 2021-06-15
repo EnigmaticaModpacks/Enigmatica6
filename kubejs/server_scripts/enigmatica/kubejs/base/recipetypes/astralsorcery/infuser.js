@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     data = {
         recipes: [
             {
@@ -53,6 +53,22 @@ events.listen('recipes', (event) => {
                 consumptionChance: 1.1,
                 output: 'astralsorcery:glow_flower',
                 count: 1,
+                duration: 100
+            },
+            {
+                input: { item: 'resourcefulbees:starry_honeycomb' },
+                fluid: 'astralsorcery:liquid_starlight',
+                consumptionChance: 0.1,
+                output: 'astralsorcery:starmetal_ingot',
+                count: 3,
+                duration: 100
+            },
+            {
+                input: { item: 'resourcefulbees:starry_honeycomb_block' },
+                fluid: 'astralsorcery:liquid_starlight',
+                consumptionChance: 0.1,
+                output: 'astralsorcery:starmetal',
+                count: 3,
                 duration: 100
             }
         ]

@@ -32,7 +32,7 @@ const dyeSources = [
     },
     {
         input: 'byg:azalea',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:light_blue_dye',
         secondary: 'minecraft:blue_dye',
         tertiary: 'minecraft:white_dye'
@@ -116,7 +116,7 @@ const dyeSources = [
     },
     {
         input: 'byg:delphinium',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:blue_dye',
         secondary: 'minecraft:blue_dye',
         tertiary: 'minecraft:purple_dye'
@@ -137,7 +137,7 @@ const dyeSources = [
     },
     {
         input: 'byg:foxglove',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:cyan_dye',
         tertiary: 'minecraft:light_blue_dye'
@@ -179,7 +179,7 @@ const dyeSources = [
     },
     {
         input: 'byg:japanese_orchid',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:pink_dye',
         secondary: 'minecraft:pink_dye',
         tertiary: 'minecraft:white_dye'
@@ -389,14 +389,14 @@ const dyeSources = [
     },
     {
         input: 'byg:tall_allium',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:magenta_dye',
         secondary: 'minecraft:purple_dye',
         tertiary: 'minecraft:pink_dye'
     },
     {
         input: 'byg:tall_pink_allium',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:pink_dye',
         secondary: 'minecraft:magenta_dye',
         tertiary: 'minecraft:white_dye'
@@ -802,7 +802,7 @@ const dyeSources = [
     },
     {
         input: 'undergarden:tall_shimmerweed',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:white_dye',
         tertiary: 'minecraft:green_dye'
@@ -1131,7 +1131,7 @@ const dyeSources = [
     },
     {
         input: 'upgrade_aquatic:flowering_rush',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:pink_dye',
         secondary: 'minecraft:white_dye',
         tertiary: 'minecraft:lime_dye'
@@ -1152,23 +1152,16 @@ const dyeSources = [
     },
     {
         input: 'upgrade_aquatic:blue_pickerelweed',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:cyan_dye',
         secondary: 'minecraft:green_dye',
         tertiary: 'minecraft:lime_dye'
     },
     {
         input: 'upgrade_aquatic:purple_pickerelweed',
-        type: 'tall',
+        type: 'large',
         primary: 'minecraft:purple_dye',
         secondary: 'minecraft:green_dye',
-        tertiary: 'minecraft:lime_dye'
-    },
-    {
-        input: 'autumnity:autumn_crocus',
-        type: 'small',
-        primary: 'minecraft:magenta_dye',
-        secondary: 'minecraft:pink_dye',
         tertiary: 'minecraft:lime_dye'
     },
     {
@@ -1184,6 +1177,175 @@ const dyeSources = [
         primary: 'minecraft:white_dye',
         secondary: 'minecraft:light_blue_dye',
         tertiary: 'minecraft:light_gray_dye'
+    },
+
+    {
+        input: 'environmental:bird_of_paradise',
+        type: 'large',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:white_delphinium',
+        type: 'large',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:light_gray_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:purple_delphinium',
+        type: 'large',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:magenta_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:blue_delphinium',
+        type: 'large',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:light_blue_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:pink_delphinium',
+        type: 'large',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:magenta_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:purple_hibiscus',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:blue_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:magenta_hibiscus',
+        type: 'small',
+        primary: 'minecraft:magenta_dye',
+        secondary: 'minecraft:purple_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:pink_hibiscus',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:red_hibiscus',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:orange_hibiscus',
+        type: 'small',
+        primary: 'minecraft:orange_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:yellow_hibiscus',
+        type: 'small',
+        primary: 'minecraft:yellow_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:white_lotus_flower',
+        type: 'small',
+        primary: 'minecraft:white_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:red_lotus_flower',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:orange_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:dianthus',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:lime_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:violet',
+        type: 'small',
+        primary: 'minecraft:purple_dye',
+        secondary: 'minecraft:magenta_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:bluebell',
+        type: 'small',
+        primary: 'minecraft:blue_dye',
+        secondary: 'minecraft:cyan_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:cartwheel',
+        type: 'small',
+        primary: 'minecraft:pink_dye',
+        secondary: 'minecraft:yellow_dye',
+        tertiary: 'minecraft:lime_dye'
+    },
+    {
+        input: 'environmental:cattail',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'environmental:tall_cattail',
+        type: 'large',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'atum:weed',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'atum:shrub',
+        type: 'small',
+        primary: 'minecraft:brown_dye',
+        secondary: 'minecraft:brown_dye',
+        tertiary: 'minecraft:brown_dye'
+    },
+    {
+        input: 'atum:ophidian_tongue',
+        type: 'small',
+        primary: 'minecraft:green_dye',
+        secondary: 'minecraft:green_dye',
+        tertiary: 'minecraft:green_dye'
+    },
+    {
+        input: 'atum:date',
+        type: 'small',
+        primary: 'minecraft:red_dye',
+        secondary: 'minecraft:red_dye',
+        tertiary: 'minecraft:red_dye'
+    },
+    {
+        input: 'atum:anputs_fingers_spores',
+        type: 'small',
+        primary: 'minecraft:black_dye',
+        secondary: 'minecraft:black_dye',
+        tertiary: 'minecraft:black_dye'
     }
 ];
 

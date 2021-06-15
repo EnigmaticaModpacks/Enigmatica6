@@ -95,6 +95,12 @@ const cropRegistry = [
                 render: 'minecraft:sugar_cane',
                 plant: 'minecraft:sugar_cane',
                 substrate: 'sand'
+            },
+            {
+                seed: 'atum:papyrus_plant',
+                render: 'atum:papyrus',
+                plant: 'atum:papyrus_plant',
+                substrate: 'strange_sand'
             }
         ]
     },
@@ -618,6 +624,30 @@ const cropRegistry = [
                 render: 'supplementaries:flax',
                 plant: 'supplementaries:flax',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:rice',
+                render: 'environmental:tall_rice',
+                plant: 'environmental:rice',
+                substrate: 'water'
+            },
+            {
+                seed: 'sushigocrafting:rice_seeds',
+                render: 'sushigocrafting:rice_crop',
+                plant: 'sushigocrafting:rice',
+                substrate: 'water'
+            },
+            {
+                seed: 'atum:emmer_seeds',
+                render: 'atum:emmer_wheat',
+                plant: 'atum:emmer',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:flax_seeds',
+                render: 'atum:flax_block',
+                plant: 'atum:flax',
+                substrate: 'dirt'
             }
         ]
     },
@@ -681,6 +711,18 @@ const cropRegistry = [
                 seed: 'simplefarming:soybean_seeds',
                 render: 'simplefarming:soybean_crop',
                 plant: 'simplefarming:soybean',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:cucumber_seeds',
+                render: 'sushigocrafting:cucumber_crop',
+                plant: 'sushigocrafting:cucumber',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:soy_seeds',
+                render: 'sushigocrafting:soy_crop',
+                plant: 'sushigocrafting:soy_bean',
                 substrate: 'dirt'
             }
         ]
@@ -806,6 +848,12 @@ const cropRegistry = [
                 seed: 'simplefarming:peanut_seeds',
                 render: 'simplefarming:peanut_crop',
                 plant: 'simplefarming:peanut',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:sesame_seeds',
+                render: 'sushigocrafting:sesame_crop',
+                plant: 'sushigocrafting:sesame_seeds',
                 substrate: 'dirt'
             }
         ]
@@ -1462,12 +1510,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'autumnity:autumn_crocus',
-                render: 'autumnity:autumn_crocus',
-                plant: 'autumnity:autumn_crocus',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'upgrade_aquatic:purple_pickerelweed',
                 render: 'upgrade_aquatic:purple_pickerelweed',
                 plant: 'upgrade_aquatic:purple_pickerelweed',
@@ -1478,6 +1520,108 @@ const cropRegistry = [
                 render: 'upgrade_aquatic:blue_pickerelweed',
                 plant: 'upgrade_aquatic:blue_pickerelweed',
                 substrate: 'water'
+            },
+            {
+                seed: 'environmental:bird_of_paradise',
+                render: 'environmental:bird_of_paradise',
+                plant: 'environmental:bird_of_paradise',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:white_delphinium',
+                render: 'environmental:white_delphinium',
+                plant: 'environmental:white_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:purple_delphinium',
+                render: 'environmental:purple_delphinium',
+                plant: 'environmental:purple_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:blue_delphinium',
+                render: 'environmental:blue_delphinium',
+                plant: 'environmental:blue_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:pink_delphinium',
+                render: 'environmental:pink_delphinium',
+                plant: 'environmental:pink_delphinium',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:purple_hibiscus',
+                render: 'environmental:purple_hibiscus',
+                plant: 'environmental:purple_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:pink_hibiscus',
+                render: 'environmental:pink_hibiscus',
+                plant: 'environmental:pink_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:magenta_hibiscus',
+                render: 'environmental:magenta_hibiscus',
+                plant: 'environmental:magenta_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:red_hibiscus',
+                render: 'environmental:red_hibiscus',
+                plant: 'environmental:red_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:orange_hibiscus',
+                render: 'environmental:orange_hibiscus',
+                plant: 'environmental:orange_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:yellow_hibiscus',
+                render: 'environmental:yellow_hibiscus',
+                plant: 'environmental:yellow_hibiscus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:white_lotus_flower',
+                render: 'environmental:white_lotus_flower',
+                plant: 'environmental:white_lotus_flower',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:red_lotus_flower',
+                render: 'environmental:red_lotus_flower',
+                plant: 'environmental:red_lotus_flower',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:dianthus',
+                render: 'environmental:dianthus',
+                plant: 'environmental:dianthus',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:violet',
+                render: 'environmental:violet',
+                plant: 'environmental:violet',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:bluebell',
+                render: 'environmental:bluebell',
+                plant: 'environmental:bluebell',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:cartwheel',
+                render: 'environmental:cartwheel',
+                plant: 'environmental:cartwheel',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1737,6 +1881,12 @@ const cropRegistry = [
                 substrate: 'deepturf'
             },
             {
+                seed: 'undergarden:frozen_deepturf',
+                render: 'undergarden:frozen_deepturf',
+                plant: 'undergarden:frozen_deepturf',
+                substrate: 'frozen_deepturf'
+            },
+            {
                 seed: 'betterendforge:shadow_plant',
                 render: 'betterendforge:shadow_plant',
                 plant: 'betterendforge:shadow_plant',
@@ -1843,6 +1993,80 @@ const cropRegistry = [
                 render: 'projectvibrantjourneys:sea_oats',
                 plant: 'projectvibrantjourneys:sea_oats',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'environmental:mycelium_sprouts',
+                render: 'environmental:mycelium_sprouts',
+                plant: 'environmental:mycelium_sprouts',
+                substrate: 'mushroom'
+            },
+            {
+                seed: 'environmental:cattail_seeds',
+                render: 'environmental:cattail',
+                plant: 'environmental:cattail_seeds',
+                plantSecondary: 'environmental:cattail',
+                plantSecondaryRate: 'high',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:dry_grass',
+                render: 'atum:dry_grass',
+                plant: 'atum:dry_grass',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:oasis_grass',
+                render: 'atum:oasis_grass',
+                plant: 'atum:oasis_grass',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'tconstruct:blood_slime_tall_grass',
+                render: 'tconstruct:blood_slime_tall_grass',
+                plant: 'tconstruct:blood_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:ender_slime_tall_grass',
+                render: 'tconstruct:ender_slime_tall_grass',
+                plant: 'tconstruct:ender_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:sky_slime_tall_grass',
+                render: 'tconstruct:sky_slime_tall_grass',
+                plant: 'tconstruct:sky_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:earth_slime_tall_grass',
+                render: 'tconstruct:earth_slime_tall_grass',
+                plant: 'tconstruct:earth_slime_tall_grass',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:blood_slime_fern',
+                render: 'tconstruct:blood_slime_fern',
+                plant: 'tconstruct:blood_slime_fern',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:ender_slime_fern',
+                render: 'tconstruct:ender_slime_fern',
+                plant: 'tconstruct:ender_slime_fern',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:sky_slime_fern',
+                render: 'tconstruct:sky_slime_fern',
+                plant: 'tconstruct:sky_slime_fern',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:earth_slime_fern',
+                render: 'tconstruct:earth_slime_fern',
+                plant: 'tconstruct:earth_slime_fern',
+                substrate: 'slimy_dirt'
             }
         ]
     },
@@ -1906,6 +2130,24 @@ const cropRegistry = [
                 seed: 'minecraft:lily_pad',
                 render: 'minecraft:lily_pad',
                 plant: 'minecraft:lily_pad',
+                substrate: 'water'
+            },
+            {
+                seed: 'environmental:large_lily_pad',
+                render: 'environmental:large_lily_pad',
+                plant: 'environmental:large_lily_pad',
+                substrate: 'water'
+            },
+            {
+                seed: 'environmental:duckweed',
+                render: 'environmental:duckweed',
+                plant: 'environmental:duckweed',
+                substrate: 'water'
+            },
+            {
+                seed: 'environmental:giant_lily_pad',
+                render: 'environmental:giant_lily_pad',
+                plant: 'environmental:giant_lily_pad',
                 substrate: 'water'
             }
         ]
@@ -2026,6 +2268,12 @@ const cropRegistry = [
                 render: 'projectvibrantjourneys:bark_mushroom',
                 plant: 'projectvibrantjourneys:bark_mushroom',
                 substrate: 'mushroom'
+            },
+            {
+                seed: 'atum:anputs_fingers_spores',
+                render: 'atum:anputs_fingers',
+                plant: 'atum:anputs_fingers_spores',
+                substrate: 'strange_sand'
             }
         ]
     },
@@ -2065,12 +2313,6 @@ const cropRegistry = [
                 substrate: 'deepturf'
             },
             {
-                seed: 'autumnity:foul_berries',
-                render: 'autumnity:foul_berry_bush',
-                plant: 'autumnity:foul_berries',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'betterendforge:blue_vine_seed',
                 render: 'betterendforge:blue_vine_lantern',
                 plant: 'betterendforge:blue_vine_lantern',
@@ -2103,6 +2345,18 @@ const cropRegistry = [
                 render: 'projectvibrantjourneys:crimson_nettle',
                 plant: 'projectvibrantjourneys:crimson_nettle',
                 substrate: 'crimson_nylium'
+            },
+            {
+                seed: 'atum:weed',
+                render: 'atum:weed',
+                plant: 'atum:weed',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'atum:shrub',
+                render: 'atum:shrub',
+                plant: 'atum:shrub',
+                substrate: 'dirt'
             }
         ]
     },
@@ -2255,6 +2509,24 @@ const cropRegistry = [
                 render: 'byg:imparius_vine',
                 plant: 'byg:imparius_vine',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'atum:ophidian_tongue',
+                render: 'atum:ophidian_tongue',
+                plant: 'atum:ophidian_tongue',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'tconstruct:sky_slime_vine',
+                render: 'tconstruct:sky_slime_vine',
+                plant: 'tconstruct:sky_slime_vine',
+                substrate: 'slimy_dirt'
+            },
+            {
+                seed: 'tconstruct:ender_slime_vine',
+                render: 'tconstruct:ender_slime_vine',
+                plant: 'tconstruct:ender_slime_vine',
+                substrate: 'slimy_dirt'
             }
         ]
     }

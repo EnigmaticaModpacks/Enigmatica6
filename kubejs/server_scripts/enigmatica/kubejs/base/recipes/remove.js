@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
@@ -13,14 +13,13 @@ events.listen('recipes', (event) => {
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
     event.remove({ mod: 'prettypipes' });
+    event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
     var outputRemovals = [
         'aiotbotania:livingwood_shears',
         'aiotbotania:livingrock_shears',
-
-        'bambooeverything:bamboo_bundle',
 
         'byg:blue_enchanted_crafting_table',
         'byg:green_enchanted_crafting_table',
@@ -65,21 +64,14 @@ events.listen('recipes', (event) => {
 
         'astralsorcery:infuser/gold_ore',
 
-        'autumnity:turkey_piece',
-        'autumnity:syrup_bottle',
-        'autumnity:syrup_bottle_from_smoking',
-        'autumnity:syrup_bottle_from_campfire_cooking',
-        'autumnity:sugar_from_sap_bottle',
-
         'bloodmagic:smelting/ingot_netherite_scrap',
 
         'botania:fertilizer_dye',
 
         'botanypots:crafting/compact_hopper_botany_pot',
 
-        'buildersaddition:iron_rod',
-
         'byg:vermilion_sculk',
+        '/byg:\\w+_glass_from_sand/',
 
         'compactmachines:wall',
 
@@ -89,6 +81,9 @@ events.listen('recipes', (event) => {
 
         'eidolon:tallow',
         'engineersdecor:dependent/slag_brick_block_recipe',
+
+        'environmental:misc/cherries/cherry_pie',
+        'environmental:misc/apple_pie',
 
         'farmersdelight:cutting/chicken',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
@@ -138,18 +133,7 @@ events.listen('recipes', (event) => {
 
         'immersivepetroleum:distillationtower/oilcracking',
 
-        'mapperbase:steel_nugget_from_blasting',
-        'mapperbase:steel_plate_from_blasting',
-        'mapperbase:steel_block_from_blasting',
-        'mapperbase:steel_ingot_from_blasting',
-        'mapperbase:steel_rod_from_blasting',
-        'mapperbase:steel_rod',
-        'mapperbase:iron_rod',
-        'mapperbase:iron_plate',
-        'mapperbase:steel_plate',
-
         'mekanism:crushing/stone/to_cobblestone',
-        'mekanism:reaction/substrate/water_hydrogen',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
@@ -162,6 +146,7 @@ events.listen('recipes', (event) => {
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
+        'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
         'thermal:machine/refinery/refinery_crude_oil',
@@ -180,6 +165,8 @@ events.listen('recipes', (event) => {
         'thermal:devices/plugins/byg/tree_extractor_byg_baobab',
         'thermal:devices/tree_extractor/tree_extractor_jungle',
         'thermal:signalum_dust_4',
+        'thermal:rubber_3',
+        'thermal:smelting/cured_rubber_from_smelting',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
@@ -203,9 +190,14 @@ events.listen('recipes', (event) => {
         /emendatusenigmatica:ore_from_chunk_crafting/,
         /emendatusenigmatica:ore_from_chunk_stonecutting/,
         /create:\w+\/bread/,
+        /create:smelting\/ingot_\w+_compat/,
+        /create:smelting\/\w+_ingot_compat/,
+        /create:blasting\/ingot_\w+_compat/,
+        /create:blasting\/\w+_ingot_compat/,
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
-        /masonry:\w+slab_from_\w+_stonecutting/
+        /masonry:\w+slab_from_\w+_stonecutting/,
+        /atum:.*dye$/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -222,12 +214,6 @@ events.listen('recipes', (event) => {
 
     disabledItems.forEach((disabledItem) => {
         event.remove({ output: disabledItem });
-    });
-
-    event.remove({
-        output: '/buildersaddition:\\w+_vertical_slab/',
-        mod: 'buildersaddition',
-        type: 'minecraft:crafting_shaped'
     });
 
     event.remove({
@@ -256,7 +242,7 @@ events.listen('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-
+/*
     event.remove({
         input: '#forge:ores',
         mod: 'create',
@@ -268,7 +254,7 @@ events.listen('recipes', (event) => {
         mod: 'create',
         type: 'create:crushing'
     });
-
+*/
     event.remove({
         mod: 'occultism',
         type: 'occultism:miner'

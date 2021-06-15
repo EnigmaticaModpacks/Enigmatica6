@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var data = {
         recipes: [
             {
@@ -54,12 +54,23 @@ events.listen('recipes', (event) => {
                 input: 'mekanism:hdpe_pellet',
                 output: 'mekanism:hdpe_sheet',
                 id: 'mekanism:enriching/hdpe_sheet'
+            },
+            {
+                input: '#forge:ores/netherite',
+                output: Item.of('minecraft:netherite_scrap', 2),
+                id: 'mekanism:processing/netherite/ancient_debris_to_scrap'
+            },
+            {
+                input: 'mekanism:dirty_netherite_scrap',
+                output: Item.of('minecraft:netherite_scrap'),
+                id: 'mekanism:processing/netherite/dirty_scrap_to_scrap'
             }
         ]
     };
     data.recipes.forEach((recipe) => {
-        recipe.id
-            ? event.recipes.mekanism.enriching(recipe.output, recipe.input).id(recipe.id)
-            : event.recipes.mekanism.enriching(recipe.output, recipe.input);
+        const re = event.recipes.mekanism.enriching(recipe.output, recipe.input);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

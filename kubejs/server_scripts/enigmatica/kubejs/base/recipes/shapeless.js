@@ -1,18 +1,14 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
         { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
-        { output: 'minecraft:pumpkin', inputs: ['autumnity:large_pumpkin_slice'] },
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
         { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
-        {
-            output: 'minecraft:crafting_table',
-            inputs: ['craftingstation:crafting_station_slab', 'craftingstation:crafting_station_slab']
-        },
+        { output: Item.of('atum:nebu_drop', 9), inputs: ['#forge:ingots/nebu'] },
         {
             output: 'simplefarming:fish_sandwich',
             inputs: [
@@ -65,15 +61,6 @@ events.listen('recipes', (event) => {
         {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }),
             inputs: ['minecraft:book', '#forge:dyes/yellow']
-        },
-        {
-            output: Item.of('bambooeverything:bamboo_bundle', 2),
-            inputs: ['thermal:bamboo_block', 'thermal:bamboo_block']
-        },
-        { output: Item.of('thermal:bamboo_block', 2), inputs: ['quark:bamboo_block', 'quark:bamboo_block'] },
-        {
-            output: Item.of('quark:bamboo_block', 2),
-            inputs: ['bambooeverything:bamboo_bundle', 'bambooeverything:bamboo_bundle']
         },
         { output: 'minecraft:crafting_table', inputs: ['#forge:workbench'] },
         {
@@ -193,7 +180,12 @@ events.listen('recipes', (event) => {
                     ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
                     bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
                     integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 },
-                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 }
+                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 },
+                    sushigocrafting: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: { 'patchouli:book': 'sushigocrafting:sushigocrafting' }
+                    }
                 }
             }),
             inputs: ['minecraft:book', '#forge:bookshelves']
@@ -302,31 +294,6 @@ events.listen('recipes', (event) => {
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         },
         {
-            inputs: ['minecraft:fire_charge', '#minecraft:coals'],
-            output: Item.of('additional_lights:fire_for_standing_torch_s', 4),
-            id: 'additional_lights:fire_for_standing_torch_s'
-        },
-        {
-            inputs: ['minecraft:fire_charge', '#minecraft:coals', '#minecraft:coals'],
-            output: Item.of('additional_lights:fire_for_standing_torch_l', 4),
-            id: 'additional_lights:fire_for_standing_torch_l'
-        },
-        {
-            inputs: ['minecraft:fire_charge', '#minecraft:coals', '#minecraft:soul_fire_base_blocks'],
-            output: Item.of('additional_lights:soul_fire_for_standing_torch_s', 4),
-            id: 'additional_lights:soul_fire_for_standing_torch_s'
-        },
-        {
-            inputs: [
-                'minecraft:fire_charge',
-                '#minecraft:coals',
-                '#minecraft:coals',
-                '#minecraft:soul_fire_base_blocks'
-            ],
-            output: Item.of('additional_lights:soul_fire_for_standing_torch_l', 4),
-            id: 'additional_lights:soul_fire_for_standing_torch_l'
-        },
-        {
             output: Item.of('emendatusenigmatica:signalum_dust', 4),
             inputs: [
                 '#forge:dusts/silver',
@@ -339,6 +306,21 @@ events.listen('recipes', (event) => {
                 '#forge:dusts/redstone'
             ],
             id: 'emendatusenigmatica:alloy_dust/signalum'
+        },
+        {
+            output: 'mythicbotany:raindeletia_floating',
+            inputs: ['kubejs:disabled_recipe_indicator'],
+            id: 'mythicbotany:raindeletia_floating'
+        },
+        {
+            output: 'mythicbotany:wither_aconite_floating',
+            inputs: ['kubejs:disabled_recipe_indicator'],
+            id: 'mythicbotany:wither_aconite_floating'
+        },
+        {
+            output: 'eidolon:pewter_blend',
+            inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
+            id: 'eidolon:pewter_blend'
         }
     ];
 

@@ -1,17 +1,25 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
+        // {
+        //     ingredients: [
+        //         {
+        //             tag: 'forge:tools/axe'
+        //         },
+        //         {
+        //             tag: 'forge:workbench'
+        //         }
+        //     ],
+        //     result: {
+        //         item: 'minecraft:crafting_table',
+        //         count: 1
+        //     }
+        // }
+
         {
-            ingredients: [
-                {
-                    tag: 'forge:tools/axe'
-                },
-                {
-                    tag: 'forge:workbench'
-                }
-            ],
+            ingredients: [{ tag: 'forge:tools/shovels' }, { tag: 'forge:storage_blocks/clay' }],
             result: {
-                item: 'craftingstation:crafting_station',
-                count: 1
+                item: 'minecraft:clay_ball',
+                count: 4
             }
         }
     ];

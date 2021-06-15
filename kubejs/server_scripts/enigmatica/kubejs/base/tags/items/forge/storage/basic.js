@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'aquaculture:neptunes_bounty',
         'cookingforblockheads:corner',
@@ -26,7 +26,9 @@ events.listen('item.tags', (event) => {
         'naturesaura:sky_chest',
         'naturesaura:infused_iron_chest',
         'immersiveengineering:armor_steel_chest',
-        'immersiveengineering:armor_faraday_chest'
+        'immersiveengineering:armor_faraday_chest',
+        'atum:mummy_chest',
+        'atum:wanderer_chest'
     ];
 
     var tags = ['forge:storage', 'forge:storage/basic'];
@@ -38,14 +40,10 @@ events.listen('item.tags', (event) => {
             .add(/chest$/)
             .add(/betterendforge:\w+barrel/)
             .add(/bedside_table/)
-            .add(/buildersaddition:bookshelf/)
-            .add(/buildersaddition:shelf/)
-            .add(/buildersaddition:\w+counter/)
             .add(/cabinet/)
             .add(/cupboard/)
             .add(/shulker_box/)
             .add(/_pantry/)
-            .add(/embellishcraft:\w+_crate/)
             .add(/rftoolsstorage:storage_module/)
             .remove(exceptions);
     });

@@ -71,9 +71,15 @@ var woodVariantsToConstruct = [
     'atmospheric:grimwood',
     'upgrade_aquatic:driftwood',
     'upgrade_aquatic:river',
-    'autumnity:maple',
-    'autumnity:sappy_maple',
-    'architects_palette:twisted'
+    'architects_palette:twisted',
+    'environmental:willow',
+    'environmental:cherry',
+    'environmental:wisteria',
+    'atum:palm',
+    'atum:deadwood',
+    'tconstruct:greenheart',
+    'tconstruct:bloodshroom',
+    'tconstruct:skyroot'
     // 'sushigocrafting:avocado'
 ];
 
@@ -107,10 +113,6 @@ woodVariantsToConstruct.forEach((variant) => {
             logSuffix = '_pedu';
             woodSuffix = '_hyphae';
             break;
-        case 'grongle':
-            logSuffix = '_stem';
-            woodSuffix = '_hyphae';
-            break;
         case 'fungal_imparius':
             logSuffix = '_stem';
             woodSuffix = '_hyphae';
@@ -137,6 +139,10 @@ woodVariantsToConstruct.forEach((variant) => {
         logBlockStripped = modId + ':' + logType + '_stripped' + logSuffix;
         woodBlockStripped = modId + ':' + logType + '_stripped' + woodSuffix;
         plankBlock = modId + ':' + logType + '_planks';
+    }
+
+    if (modId == 'tconstruct') {
+        slabBlock = modId + ':' + logType + '_planks_slab';
     }
 
     switch (logType) {
@@ -170,11 +176,6 @@ woodVariantsToConstruct.forEach((variant) => {
             logBlockStripped = 'atmospheric:stripped_aspen_log';
             woodBlockStripped = 'atmospheric:stripped_aspen_wood';
             plankBlock = 'atmospheric:aspen_planks';
-            break;
-        case 'sappy_maple':
-            logBlockStripped = 'autumnity:stripped_maple_log';
-            woodBlockStripped = 'autumnity:stripped_maple_wood';
-            plankBlock = 'autumnity:maple_planks';
             break;
         case 'driftwood':
             woodBlock = modId + ':' + logType;

@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event
         .get('forge:logs/smogstem')
         .add('undergarden:smogstem_log')
@@ -7,10 +7,10 @@ events.listen('item.tags', (event) => {
         .add('undergarden:stripped_smogstem_wood');
     event
         .get('forge:logs/grongle')
-        .add('undergarden:grongle_stem')
-        .add('undergarden:stripped_grongle_stem')
-        .add('undergarden:grongle_hyphae')
-        .add('undergarden:stripped_grongle_hyphae');
+        .add('undergarden:grongle_log')
+        .add('undergarden:stripped_grongle_log')
+        .add('undergarden:grongle_wood')
+        .add('undergarden:stripped_grongle_wood');
     event
         .get('forge:logs/wigglewood')
         .add('undergarden:wigglewood_log')

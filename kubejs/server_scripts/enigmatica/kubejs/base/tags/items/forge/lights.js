@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'bloodmagic:bloodlightsigil',
         'engineersdecor:iron_bulb_light',
@@ -42,6 +42,7 @@ events.listen('item.tags', (event) => {
         .add(/byg:\w+_glowshroom/)
         .add(/quark:\w+_glowshroom/)
         .add(/botania:\w+_mushroom/)
+        .add(/atum:lantern/)
         .add(/illumin/)
         .add(/sconce/)
         .add(/candelabra/)

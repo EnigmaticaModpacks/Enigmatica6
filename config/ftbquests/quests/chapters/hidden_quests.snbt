@@ -1,78 +1,78 @@
 {
-	id: "0000000000000328",
-	group: "",
-	order_index: 0,
-	filename: "hidden_quests",
-	title: "Hidden_Quests",
-	icon: "minecraft:experience_bottle",
-	subtitle: ["It does not exist, you are not seeing anything here"],
-	always_invisible: true,
-	default_quest_shape: "",
+	id: "0000000000000328"
+	group: ""
+	order_index: 0
+	filename: "hidden_quests"
+	title: "Hidden_Quests"
+	icon: "minecraft:experience_bottle"
+	subtitle: ["It does not exist, you are not seeing anything here"]
+	always_invisible: true
+	default_quest_shape: ""
 	quests: [
 		{
-			title: "Visit The End",
-			x: -10.0d,
-			y: -8.0d,
-			description: ["Visit The End"],
-			id: "0000000000000329",
+			title: "Visit The End"
+			x: -10.0d
+			y: -8.0d
+			description: ["Visit The End"]
+			id: "0000000000000329"
 			tasks: [{
-				id: "000000000000032A",
-				type: "dimension",
+				id: "000000000000032A"
+				type: "dimension"
 				dimension: "minecraft:the_end"
 			}]
-		},
+		}
 		{
-			x: -8.5d,
-			y: -8.0d,
-			id: "000000000000046C",
+			x: -8.5d
+			y: -8.0d
+			id: "000000000000046C"
 			tasks: [{
-				id: "000000000000046D",
-				type: "advancement",
-				icon: "minecraft:diamond",
-				advancement: "minecraft:story/mine_diamond",
+				id: "000000000000046D"
+				type: "advancement"
+				icon: "minecraft:diamond"
+				advancement: "minecraft:story/mine_diamond"
 				criterion: ""
 			}]
-		},
+		}
 		{
-			x: -7.0d,
-			y: -8.0d,
-			id: "000000000000046E",
+			x: -7.0d
+			y: -8.0d
+			id: "000000000000046E"
 			tasks: [{
-				id: "000000000000046F",
-				type: "advancement",
-				advancement: "minecraft:story/smelt_iron",
+				id: "000000000000046F"
+				type: "advancement"
+				advancement: "minecraft:story/smelt_iron"
 				criterion: ""
 			}]
-		},
+		}
 		{
-			x: -8.5d,
-			y: -6.5d,
-			id: "00000000000004B3",
+			x: -8.5d
+			y: -6.5d
+			id: "00000000000004B3"
 			tasks: [{
-				id: "00000000000004B4",
-				type: "item",
+				id: "00000000000004B4"
+				type: "item"
 				item: "aquaculture:neptunes_bounty"
 			}]
-		},
+		}
 		{
-			x: -10.0d,
-			y: -6.5d,
-			id: "0000000000000856",
+			x: -10.0d
+			y: -6.5d
+			id: "0000000000000856"
 			tasks: [{
-				id: "0000000000000857",
-				type: "advancement",
-				advancement: "tetra:spelunking/ancient_ruins",
+				id: "0000000000000857"
+				type: "advancement"
+				advancement: "tetra:spelunking/ancient_ruins"
 				criterion: ""
 			}]
-		},
+		}
 		{
-			title: "Hidden quest that hides the Expert Mode quest in main",
-			x: -7.0d,
-			y: -6.5d,
-			id: "0000000000000FEB",
+			title: "Hidden quest that hides the Expert Mode quest in main"
+			x: -7.0d
+			y: -6.5d
+			id: "0000000000000FEB"
 			tasks: [{
-				id: "0000000000000FEC",
-				type: "gamestage",
+				id: "0000000000000FEC"
+				type: "gamestage"
 				stage: "impossible"
 			}]
 		}

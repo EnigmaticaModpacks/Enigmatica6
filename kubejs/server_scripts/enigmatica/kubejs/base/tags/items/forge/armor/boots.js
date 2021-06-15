@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var items = [
         'immersiveengineering:armor_faraday_feet',
         'immersiveengineering:armor_steel_feet',
@@ -21,6 +21,7 @@ events.listen('item.tags', (event) => {
             .get(tag)
             .add(items)
             .add(/_boots/)
+            .add(/atum:feet/)
             .remove(exceptions);
     });
 });

@@ -1,14 +1,6 @@
 onEvent('item.tooltip', (event) => {
     const recipes = [
         {
-            items: ['bountifulbaubles:potion_wormhole', 'bountifulbaubles:wormhole_mirror'],
-            text: [
-                Text.of(
-                    'Do not use, you will crash immediately if in multiplayer. We have notified the mod author about the issue.'
-                ).red()
-            ]
-        },
-        {
             items: [
                 'integratedtunnels:part_interface_fluid',
                 'integratedtunnels:part_importer_fluid',
@@ -31,6 +23,18 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:altered_recipe_indicator'],
             text: [Text.of('Recipe altered for Enigmatica 6: Expert. Refer to JEI.').gold()]
+        },
+        {
+            items: ['kubejs:disabled_recipe_indicator'],
+            text: [Text.of('Recipe disabled for Enigmatica 6').gold()]
+        },
+        {
+            items: ['tconstruct:crafting_station', 'tconstruct:part_builder', 'tconstruct:tinker_station'],
+            text: [Text.of('Craftable with any wood.').gold()]
+        },
+        {
+            items: ['tconstruct:scorched_anvil', 'tconstruct:tinkers_anvil'],
+            text: [Text.of('Craftable with almost any metal block.').gold()]
         }
     ];
 

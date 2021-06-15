@@ -2,7 +2,7 @@
     "flower": "ALL",
     "maxTimeInHive": 2400,
     "sizeModifier": 0.75,
-    "traits": ["nether", "can_swim"],
+    "traits": ["nether", "can_swim", "wither"],
     "hasHoneycomb": true,
     "baseLayerTexture": "other/glowstone",
     "ColorData": {
@@ -14,7 +14,7 @@
     },
     "CombatData": {
         "isPassive": false,
-        "removeStingerOnAttack": true,
+        "removeStingerOnAttack": false,
         "inflictsPoison": true,
         "attackDamage": 1
     },

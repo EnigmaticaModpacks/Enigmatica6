@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     var storageBlocks = 'forge:storage_blocks';
     event.add(storageBlocks, [
         'minecraft:glowstone',
@@ -36,4 +36,7 @@ events.listen('item.tags', (event) => {
     event.add(storageBlocks + '/ender', ['betterendforge:ender_block']);
     event.add(storageBlocks + '/aurora', ['betterendforge:aurora_crystal']);
     event.add(storageBlocks + '/amber', ['betterendforge:amber_block']);
+
+    event.add(storageBlocks + '/sunmetal', ['architects_palette:sunmetal_block']);
+    event.add(storageBlocks + '/tinkers_bronze', ['tconstruct:tinkers_bronze_block']);
 });

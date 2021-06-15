@@ -5,7 +5,7 @@
 	#List of dimensions that players are allowed to warp cross-dimension from and to. If left empty, all dimensions except those in dimensionalWarpDenyList are allowed.
 	dimensionalWarpAllowList = []
 	#List of dimensions that players are not allowed to warp cross-dimension from and to. Only used if dimensionalWarpAllowList is empty.
-	worldGenDimensionDenyList = []
+	dimensionalWarpDenyList = []
 
 	[common.villagegen]
 		#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -51,38 +51,6 @@ events.listen('recipes', (event) => {
                 rolls: 1
             },
             id: 'pneumaticcraft:explosion_crafting/compressed_iron_block'
-        },
-        {
-            inputs: [{ tag: 'forge:gems/fluorite', count: 1 }],
-            output: {
-                entries: [{ result: { item: 'emendatusenigmatica:fluorite_dust', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 1
-            }
-        },
-        {
-            inputs: [{ tag: 'forge:gems/lapis', count: 1 }],
-            output: {
-                entries: [{ result: { item: 'emendatusenigmatica:lapis_dust', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 1
-            }
-        },
-        {
-            inputs: [{ tag: 'forge:gems/mana', count: 1 }],
-            output: {
-                entries: [{ result: { item: 'botania:mana_powder', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 1
-            }
-        },
-        {
-            inputs: [{ tag: 'forge:gems/apatite', count: 1 }],
-            output: {
-                entries: [{ result: { item: 'emendatusenigmatica:apatite_dust', count: 1 }, weight: 7 }],
-                empty_weight: 3,
-                rolls: 1
-            }
         }
     ];
 

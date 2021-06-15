@@ -1,0 +1,19 @@
+{
+    "modId": "atum",
+    "group": {
+        "name": "Atum Seeds",
+        "enabledByDefault": true,
+        "defaultPayment": {
+            "item": "atum:coin_gold"
+        },
+        "defaultCategory": "farmingforblockheads:seeds"
+    },
+    "customEntries": [
+        {
+            "output": { "item": "atum:flax_seeds" }
+        },
+        {
+            "output": { "item": "atum:emmer_seeds" }
+        }
+    ]
+}

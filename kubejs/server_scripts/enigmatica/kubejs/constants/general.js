@@ -9,7 +9,6 @@ const modPriorities = [
     'immersiveengineering',
     'thermal',
     'mekanism',
-    'jaopca',
     'kubejs',
     'pneumaticcraft',
     'create',
@@ -27,7 +26,9 @@ const modPriorities = [
     'mythicbotany',
     'undergarden',
     'byg',
-    'atum'
+    'atum',
+    'betterendforge',
+    'miniutilities'
 ];
 
 // Used for recipes/tags that use colors

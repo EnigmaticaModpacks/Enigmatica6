@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     //https://github.com/CompactMods/CompactCrafting/wiki/Recipe-Specification
 
     //Also note, can't use Item.of because Count is caps sensitive (Name too)

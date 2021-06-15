@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     var data = {
         recipes: [
             {
@@ -72,11 +72,47 @@ events.listen('recipes', (event) => {
             {
                 inputs: ['byg:quartzite_sand'],
                 outputs: [Item.of('minecraft:quartz'), Item.of('thermal:slag')]
+            },
+            {
+                inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:gems/sulfur'],
+                outputs: [Item.of('thermal:cured_rubber', 2)],
+                id: 'thermal:machine/smelter/smelter_cured_rubber'
+            },
+            {
+                inputs: [Ingredient.of('#forge:glass'), Ingredient.of('#forge:ingots/copper', 3)],
+                outputs: [Item.of('tconstruct:tinkers_bronze_ingot', 3)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_tinkers_bronze_ingot'
+            },
+            {
+                inputs: [
+                    Ingredient.of('#forge:ingots/copper', 2),
+                    Ingredient.of('#forge:ingots/cobalt', 1),
+                    Ingredient.of('#forge:obsidian')
+                ],
+                outputs: [Item.of('tconstruct:hepatizon_ingot', 4)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_hepatizon_ingot'
+            },
+            {
+                inputs: [
+                    Ingredient.of('#forge:ingots/gold', 1),
+                    Ingredient.of('#forge:ingots/cobalt', 1),
+                    Ingredient.of('minecraft:magma_cream')
+                ],
+                outputs: [Item.of('tconstruct:queens_slime_ingot', 2)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_queens_slime_ingot'
+            },
+            {
+                inputs: ['#forge:ingots/iron', 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
+                outputs: [Item.of('tconstruct:pig_iron_ingot', 2)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_pig_iron_ingot'
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
+        const re = event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
+        if (recipe.id) {
+            re.id(recipe.id);
+        }
     });
 });

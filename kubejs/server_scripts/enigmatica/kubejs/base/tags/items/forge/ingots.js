@@ -1,4 +1,4 @@
-events.listen('item.tags', (event) => {
+onEvent('item.tags', (event) => {
     event.get('forge:ingots/uraninite').add('powah:uraninite');
     event.get('forge:ingots/energized_steel').add('powah:steel_energized');
     event.get('forge:ingots/radioactive').add('#forge:ingots/uraninite').add('#forge:ingots/uranium');
@@ -40,6 +40,11 @@ events.listen('item.tags', (event) => {
     event.add('forge:ingots/aeternium', ['betterendforge:aeternium_ingot']);
     event.add('forge:ingots/terminite', ['betterendforge:terminite_ingot']);
     event.add('forge:ingots/thallasium', ['betterendforge:thallasium_ingot']);
+    event.add('forge:ingots/sky', ['naturesaura:sky_ingot']);
+    event.add('forge:ingots/tainted_gold', ['naturesaura:tainted_gold']);
+    event.add('forge:ingots/infused_iron', ['naturesaura:infused_iron']);
+    event.add('forge:ingots/sunmetal', ['architects_palette:sunmetal_brick']);
 
     event.add('forge:ingots/nether_brick', ['byg:blue_nether_brick', 'byg:yellow_nether_brick']);
+    event.get('forge:ingots/tinkers_bronze').add('tconstruct:tinkers_bronze_ingot');
 });

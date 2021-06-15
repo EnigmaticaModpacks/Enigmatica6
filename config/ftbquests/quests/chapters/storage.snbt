@@ -1,1169 +1,1166 @@
 {
-	id: "00000000000002AB",
-	group: "0856CF7F5CBEB20A",
-	order_index: 0,
-	filename: "storage",
-	title: "Storage",
-	icon: "minecraft:chest",
-	subtitle: ["Where should you put all this cool stuff, though?"],
-	default_quest_shape: "",
+	id: "00000000000002AB"
+	group: "0856CF7F5CBEB20A"
+	order_index: 0
+	filename: "storage"
+	title: "Storage"
+	icon: "minecraft:chest"
+	default_quest_shape: ""
 	quests: [
 		{
-			title: "Storage",
-			icon: "minecraft:chest",
-			x: -0.5d,
-			y: -7.5d,
-			shape: "gear",
+			title: "Storage"
+			icon: "minecraft:chest"
+			x: -0.5d
+			y: -7.5d
+			shape: "gear"
 			description: [
-				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods.",
-				"",
-				"Note: Most blocks that are useful as a storage block have been Tagged for search in JEI. Search for the following categories:",
-				"",
-				"● $storage",
-				"● $storage/basic",
-				"● $storage/bulk",
-				"● $storage/bags",
-				"● $storage/energy",
-				"● $storage/gas",
+				"Finding a place to store stuff is always a bit complicated, and keeping organized can be quite a task at times. Thankfully, a few mods exist to assist in this endeavor. The following quests will help you discover these mods."
+				""
+				"Note: Most blocks that are useful as a storage block have been Tagged for search in JEI. Search for the following categories:"
+				""
+				"● $storage"
+				"● $storage/basic"
+				"● $storage/bulk"
+				"● $storage/bags"
+				"● $storage/energy"
+				"● $storage/gas"
 				"● $storage/liquid"
-			],
-			id: "00000000000003FF",
+			]
+			id: "00000000000003FF"
 			tasks: [{
-				id: "0000000000000400",
+				id: "0000000000000400"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000CA3",
-				type: "xp",
+				id: "0000000000000CA3"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
-			title: "Pretty Pipes",
-			icon: "prettypipes:item_terminal",
-			x: -0.5d,
-			y: -5.0d,
-			subtitle: "No Power? No Problem",
+			title: "Pretty Pipes"
+			icon: "prettypipes:item_terminal"
+			x: -0.5d
+			y: -5.0d
+			subtitle: "No Power? No Problem"
 			description: [
-				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. ",
-				"",
+				"Pretty Pipes is a powerful early game logistics system that will help keep you organized. "
+				""
 				"Use pipes to move items from place to place, filters and priorities to ensure items are ending up in the right locations, and access everything centrally from an Item Terminal or Crafting Terminal. Request based auto crafting is possible as well."
-			],
-			dependencies: ["00000000000003FF"],
-			id: "0000000000000401",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "0000000000000401"
 			tasks: [{
-				id: "0000000000000953",
+				id: "0000000000000953"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000696",
-				type: "item",
-				title: "Pipe Wrench",
+				id: "0000000000000696"
+				type: "item"
+				title: "Pipe Wrench"
 				item: "prettypipes:wrench"
 			}]
-		},
+		}
 		{
-			title: "Refined Storage",
-			x: 1.0d,
-			y: -6.0d,
-			subtitle: "Energy Mass Conversion in a Square",
+			title: "Refined Storage"
+			x: 1.0d
+			y: -5.5d
+			subtitle: "Energy Mass Conversion in a Square"
 			description: [
-				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. ",
-				"",
+				"Taking storage into the digital age, Refined Storage allows for the storage of items and fluids on disk drives with wireless access and transfer capabilities. It can also interface with most machines and inventories to expand its capabilities. "
+				""
 				"Proceed to the Refined Storage quests for more help in getting started with this expansive mod."
-			],
-			dependencies: ["00000000000003FF"],
-			dependency_requirement: "one_completed",
-			id: "0000000000000403",
+			]
+			dependencies: ["00000000000003FF"]
+			dependency_requirement: "one_completed"
+			id: "0000000000000403"
 			tasks: [{
-				id: "0000000000000699",
-				type: "item",
+				id: "0000000000000699"
+				type: "item"
 				item: "refinedstorage:controller"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000006FB",
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				id: "00000000000006FB"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Iron Chests",
-			icon: "ironchest:iron_chest",
-			x: -0.5d,
-			y: -10.0d,
+			title: "Iron Chests"
+			icon: "ironchest:iron_chest"
+			x: -0.5d
+			y: -10.0d
 			description: [
-				"Extra large storage for the same space as a chest. Iron Chests come in multiple varieties to suit your budget.",
-				"",
+				"Extra large storage for the same space as a chest. Iron Chests come in multiple varieties to suit your budget."
+				""
 				"Chests can be upgraded in place by using an upgrade item on the chest!"
-			],
-			dependencies: ["00000000000003FF"],
-			id: "0000000000000405",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "0000000000000405"
 			tasks: [{
-				id: "0000000000000EA5",
-				type: "item",
+				id: "0000000000000EA5"
+				type: "item"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "enigmatica:quests/storage/wood_to_iron"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A6B",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "0000000000000A6B"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			icon: "mekanism:basic_bin",
-			x: 0.5d,
-			y: -9.5d,
-			subtitle: "I Like Big Bins and I Cannot Lie",
-			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "],
-			dependencies: ["00000000000003FF"],
-			id: "0000000000000407",
+			icon: "mekanism:basic_bin"
+			x: 0.5d
+			y: -10.0d
+			subtitle: "I Like Big Bins and I Cannot Lie"
+			description: ["Often overlooked, Bins are an excellent choice for dense item storage. They can even be used in your inventory crafting grid to manipulate their contents. "]
+			dependencies: ["00000000000003FF"]
+			id: "0000000000000407"
 			tasks: [{
-				id: "3635395991201030",
-				type: "item",
-				title: "Bins",
+				id: "3635395991201030"
+				type: "item"
+				title: "Bins"
 				item: {
-					id: "itemfilters:or",
-					Count: 1b,
+					id: "itemfilters:or"
+					Count: 1b
 					tag: {
 						items: [
 							{
-								id: "mekanism:basic_bin",
+								id: "mekanism:basic_bin"
 								Count: 1b
-							},
+							}
 							{
-								id: "mekanism:advanced_bin",
+								id: "mekanism:advanced_bin"
 								Count: 1b
-							},
+							}
 							{
-								id: "mekanism:elite_bin",
+								id: "mekanism:elite_bin"
 								Count: 1b
-							},
+							}
 							{
-								id: "mekanism:ultimate_bin",
+								id: "mekanism:ultimate_bin"
 								Count: 1b
 							}
 						]
 					}
 				}
-			}],
+			}]
 			rewards: [
 				{
-					id: "0000000000000A5C",
-					type: "command",
-					title: "Farmer's Delight",
-					icon: "kubejs:farmers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					id: "0000000000000A5C"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 					player_command: false
-				},
+				}
 				{
-					id: "0000000000000A6C",
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					id: "0000000000000A6C"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			title: "Black Hole Storage",
-			x: 1.5d,
-			y: -8.5d,
-			subtitle: "Physics Breaking Hoarding",
+			title: "Black Hole Storage"
+			x: 2.0d
+			y: -8.5d
+			subtitle: "Physics Breaking Hoarding"
 			description: [
-				"Industrial Foregoing has massive storage capabilities. ",
-				"",
+				"Industrial Foregoing has massive storage capabilities. "
+				""
 				"Head over to the Industrial Foregoing Chapter to learn about Black Hole Storage."
-			],
-			dependencies: ["00000000000003FF"],
-			id: "0000000000000409",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "0000000000000409"
 			tasks: [{
-				id: "0000000000000F5B",
-				type: "item",
+				id: "0000000000000F5B"
+				type: "item"
 				item: "industrialforegoing:common_black_hole_unit"
-			}],
+			}]
 			rewards: [{
-				id: "000000000000069C",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "000000000000069C"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Find Me",
-			icon: "naturesaura:range_visualizer",
-			x: -2.0d,
-			y: -9.0d,
-			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "],
-			dependencies: ["00000000000003FF"],
-			id: "000000000000040B",
+			title: "Find Me"
+			icon: "naturesaura:range_visualizer"
+			x: -2.0d
+			y: -9.0d
+			description: ["Forgot where you left your precious diorite? Mouse over some in your inventory or JEI and press Y to locate it in nearby inventories. "]
+			dependencies: ["00000000000003FF"]
+			id: "000000000000040B"
 			tasks: [{
-				id: "000000000000040C",
+				id: "000000000000040C"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A5E",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "0000000000000A5E"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Plonk",
-			icon: "botania:cosmetic_thinking_hand",
-			x: -3.0d,
-			y: -10.0d,
+			title: "Plonk"
+			icon: "botania:cosmetic_thinking_hand"
+			x: -3.0d
+			y: -10.0d
 			description: [
-				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!",
-				"",
+				"Looking for a handy place to store your hammer at the forge? Tired of rummaging through chest after chest for that gear press? Place them in world instead!"
+				""
 				"Plonk allows you to place up to four stacks of items in any block space. Simply hold the item, point at a block, and press P to place. Right click to pick the items back up. "
-			],
-			dependencies: ["00000000000003FF"],
-			id: "000000000000040D",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "000000000000040D"
 			tasks: [{
-				id: "000000000000040E",
+				id: "000000000000040E"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A5D",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "0000000000000A5D"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Drawer Controller",
-			icon: "storagedrawers:controller",
-			x: -4.5d,
-			y: -7.0d,
+			title: "Drawer Controller"
+			icon: "storagedrawers:controller"
+			x: -4.5d
+			y: -7.0d
 			description: [
-				"The Drawer Controller must be in contact with drawers in order to 'see' them. Of course, drawers may also be chained together into a wall or line, with a single Drawer Controller able to connect to many drawers. ",
-				"",
+				"The Drawer Controller must be in contact with drawers in order to 'see' them. Of course, drawers may also be chained together into a wall or line, with a single Drawer Controller able to connect to many drawers. "
+				""
 				"Trim blocks may also be used to bridge gaps, allowing the controller to see around corners."
-			],
-			dependencies: ["0000000000000966"],
-			id: "000000000000040F",
+			]
+			dependencies: ["0000000000000966"]
+			id: "000000000000040F"
 			tasks: [{
-				id: "000000000000068C",
-				type: "item",
+				id: "000000000000068C"
+				type: "item"
 				item: "storagedrawers:controller"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009AB",
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "kubejs:sorcerers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				id: "00000000000009AB"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Gold Chests",
-			icon: "ironchest:gold_chest",
-			x: -0.5d,
-			y: -11.0d,
-			description: ["Just a touch of extra bling."],
-			dependencies: ["0000000000000405"],
-			id: "000000000000094F",
+			title: "Gold Chests"
+			icon: "ironchest:gold_chest"
+			x: -0.5d
+			y: -11.0d
+			description: ["Just a touch of extra bling."]
+			dependencies: ["0000000000000405"]
+			id: "000000000000094F"
 			tasks: [{
-				id: "0000000000000EA6",
-				type: "item",
+				id: "0000000000000EA6"
+				type: "item"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "enigmatica:quests/storage/iron_to_gold"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A5B",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A5B"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Diamond Chests",
-			icon: "ironchest:diamond_chest",
-			x: -0.5d,
-			y: -12.0d,
-			description: ["Certainly quite the flex, storing your item in a box of diamond."],
-			dependencies: ["000000000000094F"],
-			id: "0000000000000951",
+			title: "Diamond Chests"
+			icon: "ironchest:diamond_chest"
+			x: -0.5d
+			y: -12.0d
+			description: ["Certainly quite the flex, storing your item in a box of diamond."]
+			dependencies: ["000000000000094F"]
+			id: "0000000000000951"
 			tasks: [{
-				id: "0000000000000EA7",
-				type: "item",
+				id: "0000000000000EA7"
+				type: "item"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "enigmatica:quests/storage/gold_to_diamond"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009A3",
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "kubejs:sorcerers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				id: "00000000000009A3"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Pipes",
-			x: -0.5d,
-			y: -3.5d,
-			subtitle: "I Feel Pretty, Oh So Pretty",
+			title: "Pipes"
+			x: -0.5d
+			y: -3.5d
+			subtitle: "I Feel Pretty, Oh So Pretty"
 			description: [
-				"To get things moving, you'll need some pipes. Craft up a bunch!",
-				"",
-				"Pretty Pipes' pipes follow a few fairly simple rules that are good to keep in mind when building with them. ",
-				"",
-				"● First, a section of pipe may only insert or extract. Therefore, to send items from one chest to another requires a minimum of 2 pipes. ",
-				"",
-				"● Second, an item will never be routed back to the inventory it was extracted from. So it's not possible to simply loop pipe around a furnace, for instance, to feed the output back into it. An intermediate storage inventory is required.",
-				"",
-				"● Third, pipe sections can be disconnected from an inventory by Right Clicking them with the wrench.",
-				"",
-				"● Fourth, upgrade modules may be installed in a section of pipe by right clicking the module on the pipe. Alternatively, right clicking with an empty hand allows one to access the pipe to add, remove, or configure modules. ",
-				"",
+				"To get things moving, you'll need some pipes. Craft up a bunch!"
+				""
+				"Pretty Pipes' pipes follow a few fairly simple rules that are good to keep in mind when building with them. "
+				""
+				"● First, a section of pipe may only insert or extract. Therefore, to send items from one chest to another requires a minimum of 2 pipes. "
+				""
+				"● Second, an item will never be routed back to the inventory it was extracted from. So it's not possible to simply loop pipe around a furnace, for instance, to feed the output back into it. An intermediate storage inventory is required."
+				""
+				"● Third, pipe sections can be disconnected from an inventory by Right Clicking them with the wrench."
+				""
+				"● Fourth, upgrade modules may be installed in a section of pipe by right clicking the module on the pipe. Alternatively, right clicking with an empty hand allows one to access the pipe to add, remove, or configure modules. "
+				""
 				"Finally, pipes may be covered with most any block, even transparent or partial blocks. Simply hold the desired 'cover' in your off hand and right click a section of pipe with the wrench to apply the block. "
-			],
-			dependencies: ["0000000000000401"],
-			min_width: 250,
-			id: "0000000000000954",
+			]
+			dependencies: ["0000000000000401"]
+			min_width: 250
+			id: "0000000000000954"
 			tasks: [{
-				id: "0000000000000955",
-				type: "item",
-				item: "prettypipes:pipe",
+				id: "0000000000000955"
+				type: "item"
+				item: "prettypipes:pipe"
 				count: 12L
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A5F",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A5F"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Item Routing",
-			x: 0.5d,
-			y: -3.0d,
-			subtitle: "Coming or Going?",
+			title: "Item Routing"
+			x: 0.5d
+			y: -3.0d
+			subtitle: "Coming or Going?"
 			description: [
-				"Retrieval and Extraction modules are required if anything is going to get anywhere.",
-				"",
-				"Naturally, Extraction Modules pull from the adjacent inventories and send the items out into the network, assuming they have a place to go to. ",
-				"",
-				"Retrieval Modules, in opposite fashion, pull from far inventories in an attempt to place items into the adjacent chests.",
-				"",
+				"Retrieval and Extraction modules are required if anything is going to get anywhere."
+				""
+				"Naturally, Extraction Modules pull from the adjacent inventories and send the items out into the network, assuming they have a place to go to. "
+				""
+				"Retrieval Modules, in opposite fashion, pull from far inventories in an attempt to place items into the adjacent chests."
+				""
 				"A simple network might consist of two chests connected by two lengths of pipe and either an Extraction Module or a Retrieval Module in one of the pipes. "
-			],
-			dependencies: ["0000000000000954"],
-			id: "0000000000000956",
+			]
+			dependencies: ["0000000000000954"]
+			id: "0000000000000956"
 			tasks: [
 				{
-					id: "000000000000096F",
-					type: "item",
-					item: "prettypipes:low_retrieval_module",
-					count: 3L
-				},
-				{
-					id: "0000000000000971",
-					type: "item",
-					item: "prettypipes:low_extraction_module",
+					id: "000000000000096F"
+					type: "item"
+					item: "prettypipes:low_retrieval_module"
 					count: 3L
 				}
-			],
+				{
+					id: "0000000000000971"
+					type: "item"
+					item: "prettypipes:low_extraction_module"
+					count: 3L
+				}
+			]
 			rewards: [{
-				id: "0000000000000A68",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "0000000000000A68"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Item Filtering",
-			x: -1.5d,
-			y: -3.0d,
-			subtitle: "Gated Community",
+			title: "Item Filtering"
+			x: -1.5d
+			y: -3.0d
+			subtitle: "Gated Community"
 			description: [
-				"Filter Modules are an excellent way to ensure that only certain items end up in a given inventory. Insert them into the pipe section adjacent to the inventory to be filtered on the receiving end. ",
-				"",
-				"Filters can be upgraded with a number of useful Modifiers, such as NBT, Tag, and Mod filters. Insert these in the same section of pipe as the Filter Module.",
-				"",
+				"Filter Modules are an excellent way to ensure that only certain items end up in a given inventory. Insert them into the pipe section adjacent to the inventory to be filtered on the receiving end. "
+				""
+				"Filters can be upgraded with a number of useful Modifiers, such as NBT, Tag, and Mod filters. Insert these in the same section of pipe as the Filter Module."
+				""
 				"Similarly, the Stack Limiter limits the number of items allowed in an inventory and works alongside the filter. A Stack Limiter set to 1, for instance, will only allow one of each item listed in the Filter module. "
-			],
-			dependencies: ["0000000000000954"],
-			id: "0000000000000958",
+			]
+			dependencies: ["0000000000000954"]
+			id: "0000000000000958"
 			tasks: [
 				{
-					id: "0000000000000959",
-					type: "item",
+					id: "0000000000000959"
+					type: "item"
 					item: "prettypipes:low_filter_module"
-				},
+				}
 				{
-					id: "0000000000000979",
-					type: "item",
+					id: "0000000000000979"
+					type: "item"
 					item: "prettypipes:stack_size_module"
 				}
-			],
+			]
 			rewards: [{
-				id: "0000000000000978",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "0000000000000978"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Speed Modules",
-			x: -2.0d,
-			y: -2.0d,
-			subtitle: "No Time To Wait",
-			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "],
-			dependencies: ["0000000000000958"],
-			dependency_requirement: "one_started",
-			id: "000000000000095A",
+			title: "Speed Modules"
+			x: -2.0d
+			y: -2.0d
+			subtitle: "No Time To Wait"
+			description: ["Speed Modules combine with Extraction and Retrieval Modules. They don't effect how fast those Modules work, but rather how quickly the items travel once in the pipe network. "]
+			dependencies: ["0000000000000958"]
+			dependency_requirement: "one_started"
+			id: "000000000000095A"
 			tasks: [{
-				id: "000000000000095B",
-				type: "item",
-				item: "prettypipes:low_speed_module",
+				id: "000000000000095B"
+				type: "item"
+				item: "prettypipes:low_speed_module"
 				count: 3L
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A61",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A61"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Priority Modules",
-			x: 1.0d,
-			y: -2.0d,
-			subtitle: "Getting Your Priorities Straight",
+			title: "Priority Modules"
+			x: 1.0d
+			y: -2.0d
+			subtitle: "Getting Your Priorities Straight"
 			description: [
-				"By default, pipes function in a 'nearest first' fashion. In order to override this and change the priority of a given inventory, place a Priority Module in the pipe adjacent to that inventory.",
-				"",
-				"A High Priority Module in a chest that's farther away will cause items to attempt to go there first. ",
-				"",
+				"By default, pipes function in a 'nearest first' fashion. In order to override this and change the priority of a given inventory, place a Priority Module in the pipe adjacent to that inventory."
+				""
+				"A High Priority Module in a chest that's farther away will cause items to attempt to go there first. "
+				""
 				"A Low Priority module is excellent for creating a 'default' path, for instance to send to an overflow chest or a trash can. "
-			],
-			dependencies: ["0000000000000956"],
-			dependency_requirement: "one_started",
-			id: "000000000000095C",
+			]
+			dependencies: ["0000000000000956"]
+			dependency_requirement: "one_started"
+			id: "000000000000095C"
 			tasks: [
 				{
-					id: "000000000000096D",
-					type: "item",
+					id: "000000000000096D"
+					type: "item"
 					item: "prettypipes:low_high_priority_module"
-				},
+				}
 				{
-					id: "000000000000096E",
-					type: "item",
+					id: "000000000000096E"
+					type: "item"
 					item: "prettypipes:low_low_priority_module"
 				}
-			],
+			]
 			rewards: [{
-				id: "0000000000000A60",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A60"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -0.5d,
-			y: -2.5d,
+			x: -0.5d
+			y: -2.5d
 			description: [
-				"The Item Terminal acts as a central access point for the entire pipe network and shows the contents of every inventory on the network, excluding inventories connected via Extraction or Retrieval Modules. ",
-				"",
-				"Items may be requested from the network by clicking the item, selecting a quantity, and pressing Request. ",
-				"",
-				"Shift Clicking the + or - for the quantity will increase or decrease by 64 at a time, while Ctrl Clicking will increase or decrease by 10 at a time. ",
-				"",
+				"The Item Terminal acts as a central access point for the entire pipe network and shows the contents of every inventory on the network, excluding inventories connected via Extraction or Retrieval Modules. "
+				""
+				"Items may be requested from the network by clicking the item, selecting a quantity, and pressing Request. "
+				""
+				"Shift Clicking the + or - for the quantity will increase or decrease by 64 at a time, while Ctrl Clicking will increase or decrease by 10 at a time. "
+				""
 				"Items may be easily dumped back into the network by placing them in the right hand slots."
-			],
-			dependencies: ["0000000000000954"],
-			id: "0000000000000960",
+			]
+			dependencies: ["0000000000000954"]
+			id: "0000000000000960"
 			tasks: [{
-				id: "0000000000000961",
-				type: "item",
+				id: "0000000000000961"
+				type: "item"
 				item: "prettypipes:item_terminal"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000968",
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				id: "0000000000000968"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -0.5d,
-			y: -1.5d,
+			x: -0.5d
+			y: -1.5d
 			description: [
-				"The Crafting Terminal upgrades the Item Terminal with built in crafting. ",
-				"",
+				"The Crafting Terminal upgrades the Item Terminal with built in crafting. "
+				""
 				"The crafting grid may be filled manually or via JEI. Pressing the Request button will request enough for a single craft. Shift Clicking will request for 64 crafts, and Ctrl Click will request for 10."
-			],
-			dependencies: ["0000000000000960"],
-			id: "0000000000000962",
+			]
+			dependencies: ["0000000000000960"]
+			id: "0000000000000962"
 			tasks: [{
-				id: "0000000000000963",
-				type: "item",
+				id: "0000000000000963"
+				type: "item"
 				item: "prettypipes:crafting_terminal"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A62",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A62"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -1.0d,
-			subtitle: "They've Gone To Plaid",
+			x: -2.0d
+			y: -1.0d
+			subtitle: "They've Gone To Plaid"
 			description: [
-				"Speed Modules are great in a small network, but in a larger network it can be costly to craft and insert them at every extraction point. ",
-				"",
+				"Speed Modules are great in a small network, but in a larger network it can be costly to craft and insert them at every extraction point. "
+				""
 				"The Pipe Pressurizer solves this by increasing the speed of every item passing through the connected network at the cost of a little energy. "
-			],
-			dependencies: ["000000000000095A"],
-			dependency_requirement: "one_started",
-			id: "0000000000000964",
+			]
+			dependencies: ["000000000000095A"]
+			dependency_requirement: "one_started"
+			id: "0000000000000964"
 			tasks: [{
-				id: "0000000000000965",
-				type: "item",
+				id: "0000000000000965"
+				type: "item"
 				item: "prettypipes:pressurizer"
-			}],
+			}]
 			rewards: [{
-				id: "000000000000096A",
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				id: "000000000000096A"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Drawers",
-			icon: "storagedrawers:oak_full_drawers_1",
-			x: -3.0d,
-			y: -7.5d,
+			title: "Drawers"
+			icon: "storagedrawers:oak_full_drawers_1"
+			x: -3.0d
+			y: -7.5d
 			description: [
-				"Customizable drawers for all your deep storage needs.",
-				"",
+				"Customizable drawers for all your deep storage needs."
+				""
 				"Drawers may be used standalone or placed next to a Controller to link them all together. Each Drawer can accept multiple upgrades to expand their capacity and features."
-			],
-			dependencies: ["00000000000003FF"],
-			id: "0000000000000966",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "0000000000000966"
 			tasks: [{
-				id: "0000000000000967",
-				type: "item",
-				title: "Storage Drawers",
+				id: "0000000000000967"
+				type: "item"
+				title: "Storage Drawers"
 				item: {
-					id: "itemfilters:tag",
-					Count: 1b,
+					id: "itemfilters:tag"
+					Count: 1b
 					tag: {
 						value: "storagedrawers:drawers"
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A59",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A59"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -0.5d,
-			y: -0.5d,
+			x: -0.5d
+			y: -0.5d
 			description: [
-				"Crafting Modules work alongside the Crafting or Item Terminals to allow for on demand crafting via machines. ",
-				"",
-				"Working with the Crafting Module will require a few pieces, however.",
-				"",
-				"First, the machine in question must be connected to the pipe network on its Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section.",
-				"",
-				"Next, a recipe needs to be set in the Module. Only one recipe may be set per module, but up to three modules may be inserted into a single pipe. Inputs go in the top half of the module, and the expected outputs go in the bottom.",
-				"",
-				"With the recipe set, an Extraction Module needs to be installed on the output face of the machine. The Crafting Module does not export the crafted item.",
-				"",
-				"Finally, ensure the required items are in the network and request the output item. Craftable items always appear with a 0 for their quantity and appear at the end of the list of items.",
-				"",
-				"Of course, the Crafting Module does not need to go directly on the machine.",
-				"",
-				"For instance, it could be installed on a pipe connected to a chest and a secondary network could then be connected to that chest which sends them to an array of furnaces.",
-				"",
+				"Crafting Modules work alongside the Crafting or Item Terminals to allow for on demand crafting via machines. "
+				""
+				"Working with the Crafting Module will require a few pieces, however."
+				""
+				"First, the machine in question must be connected to the pipe network on its Input side. For a Vanilla Furnace, this would be the top side. A Crafting Module is then inserted into this pipe section."
+				""
+				"Next, a recipe needs to be set in the Module. Only one recipe may be set per module, but up to three modules may be inserted into a single pipe. Inputs go in the top half of the module, and the expected outputs go in the bottom."
+				""
+				"With the recipe set, an Extraction Module needs to be installed on the output face of the machine. The Crafting Module does not export the crafted item."
+				""
+				"Finally, ensure the required items are in the network and request the output item. Craftable items always appear with a 0 for their quantity and appear at the end of the list of items."
+				""
+				"Of course, the Crafting Module does not need to go directly on the machine."
+				""
+				"For instance, it could be installed on a pipe connected to a chest and a secondary network could then be connected to that chest which sends them to an array of furnaces."
+				""
 				"Creating Proxies like this is an excellent method for setting up more than 3 recipes per machine, also. "
-			],
-			dependencies: ["0000000000000962"],
-			min_width: 300,
-			id: "000000000000096B",
+			]
+			dependencies: ["0000000000000962"]
+			min_width: 300
+			id: "000000000000096B"
 			tasks: [{
-				id: "000000000000096C",
-				type: "item",
+				id: "000000000000096C"
+				type: "item"
 				item: "prettypipes:low_crafting_module"
-			}],
+			}]
 			rewards: [{
-				id: "000000000000097B",
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "kubejs:sorcerers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				id: "000000000000097B"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Advanced Routing",
-			x: 1.0d,
-			y: -1.0d,
+			title: "Advanced Routing"
+			x: 1.0d
+			y: -1.0d
 			description: [
-				"Want to spread your ores evenly across some furnaces for faster smelting? The Round Robin Sorting Module has you covered. ",
-				"",
-				"Looking to make a mini-game with your friends and want a simple randomizer? Then the Random Sorting Module will do exactly that.",
-				"",
+				"Want to spread your ores evenly across some furnaces for faster smelting? The Round Robin Sorting Module has you covered. "
+				""
+				"Looking to make a mini-game with your friends and want a simple randomizer? Then the Random Sorting Module will do exactly that."
+				""
 				"For either of these to work, they ought to be placed in a section of pipe along with an Extraction module. Both will ignore priorities set on destination pipes. "
-			],
-			dependencies: ["000000000000095C"],
-			dependency_requirement: "one_started",
-			id: "0000000000000972",
+			]
+			dependencies: ["000000000000095C"]
+			dependency_requirement: "one_started"
+			id: "0000000000000972"
 			tasks: [
 				{
-					id: "0000000000000973",
-					type: "item",
+					id: "0000000000000973"
+					type: "item"
 					item: "prettypipes:round_robin_sorting_modifier"
-				},
+				}
 				{
-					id: "0000000000000975",
-					type: "item",
+					id: "0000000000000975"
+					type: "item"
 					item: "prettypipes:random_sorting_modifier"
 				}
-			],
+			]
 			rewards: [{
-				id: "0000000000000977",
-				type: "command",
-				title: "Sorcerer's Delight",
-				icon: "kubejs:sorcerers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+				id: "0000000000000977"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: -8.0d,
-			dependencies: ["0000000000000966"],
-			id: "0000000000000980",
+			x: -4.5d
+			y: -8.0d
+			dependencies: ["0000000000000966"]
+			id: "0000000000000980"
 			tasks: [{
-				id: "00000000000009A0",
-				type: "item",
+				id: "00000000000009A0"
+				type: "item"
 				item: "storagedrawers:emerald_storage_upgrade"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009A1",
-				type: "command",
-				title: "Miner's Delight",
-				icon: "kubejs:miners_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight",
+				id: "00000000000009A1"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -3.5d,
-			y: -8.5d,
-			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."],
-			dependencies: ["0000000000000966"],
-			id: "0000000000000982",
+			x: -3.5d
+			y: -8.5d
+			description: ["Bigger is not always better. A storage downgrade can be useful for light stock-keeping situations."]
+			dependencies: ["0000000000000966"]
+			id: "0000000000000982"
 			tasks: [{
-				id: "0000000000000983",
-				type: "item",
+				id: "0000000000000983"
+				type: "item"
 				item: "storagedrawers:one_stack_upgrade"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009AA",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "00000000000009AA"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -3.5d,
-			y: -6.5d,
-			description: ["Excess items will be automatically voided."],
-			dependencies: ["0000000000000966"],
-			id: "0000000000000984",
+			x: -3.5d
+			y: -6.5d
+			description: ["Excess items will be automatically voided."]
+			dependencies: ["0000000000000966"]
+			id: "0000000000000984"
 			tasks: [{
-				id: "0000000000000985",
-				type: "item",
+				id: "0000000000000985"
+				type: "item"
 				item: "storagedrawers:void_upgrade"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A5A",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "0000000000000A5A"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
 			icon: {
-				id: "sophisticatedbackpacks:backpack",
-				Count: 1b,
+				id: "sophisticatedbackpacks:backpack"
+				Count: 1b
 				tag: {
-					inventorySlots: 27,
+					inventorySlots: 27
 					upgradeSlots: 1
 				}
-			},
-			x: 1.5d,
-			y: -7.5d,
+			}
+			x: 2.0d
+			y: -7.5d
 			description: [
-				"Sophisticated backpacks is the backpack mod you never knew you were missing. ",
-				"",
-				"The backpacks themselves may be worn in a curio slot and accessed via keybind, as well as be placed in world and interacted with via pipes or hoppers. ",
-				"",
+				"Sophisticated backpacks is the backpack mod you never knew you were missing. "
+				""
+				"The backpacks themselves may be worn in a curio slot and accessed via keybind, as well as be placed in world and interacted with via pipes or hoppers. "
+				""
 				"Beyond these already excellent features, they can also host a number of very useful upgrades."
-			],
-			dependencies: ["00000000000003FF"],
-			id: "0000000000000986",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "0000000000000986"
 			tasks: [{
-				id: "0000000000000998",
-				type: "checkmark",
+				id: "0000000000000998"
+				type: "checkmark"
 				title: "Sophisticated Backpacks"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000997",
-				type: "item",
-				title: "Leather",
-				icon: "minecraft:leather",
-				item: "minecraft:leather",
+				id: "0000000000000997"
+				type: "item"
+				title: "Leather"
+				icon: "minecraft:leather"
+				item: "minecraft:leather"
 				random_bonus: 3
 			}]
-		},
+		}
 		{
-			x: 2.0d,
-			y: -6.5d,
-			description: ["It's a good idea to remove items from your Backpack before upgrading it."],
-			dependencies: ["0000000000000986"],
-			id: "0000000000000988",
+			x: 2.5d
+			y: -6.5d
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
+			dependencies: ["0000000000000986"]
+			id: "0000000000000988"
 			tasks: [{
-				id: "0000000000000989",
-				type: "item",
+				id: "0000000000000989"
+				type: "item"
 				item: "sophisticatedbackpacks:iron_backpack"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000999",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "0000000000000999"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 3.0d,
-			y: -6.0d,
-			description: ["It's a good idea to remove items from your Backpack before upgrading it."],
-			dependencies: ["0000000000000988"],
-			id: "000000000000098A",
+			x: 3.5d
+			y: -6.0d
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
+			dependencies: ["0000000000000988"]
+			id: "000000000000098A"
 			tasks: [{
-				id: "000000000000098B",
-				type: "item",
+				id: "000000000000098B"
+				type: "item"
 				item: "sophisticatedbackpacks:gold_backpack"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A66",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "0000000000000A66"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 4.0d,
-			y: -6.0d,
-			description: ["It's a good idea to remove items from your Backpack before upgrading it."],
-			dependencies: ["000000000000098A"],
-			id: "000000000000098C",
+			x: 4.5d
+			y: -6.0d
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
+			dependencies: ["000000000000098A"]
+			id: "000000000000098C"
 			tasks: [{
-				id: "000000000000098D",
-				type: "item",
+				id: "000000000000098D"
+				type: "item"
 				item: "sophisticatedbackpacks:diamond_backpack"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A67",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A67"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 3.5d,
-			y: -7.5d,
-			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."],
-			dependencies: ["0000000000000986"],
-			id: "000000000000098E",
+			x: 4.0d
+			y: -7.5d
+			description: ["A filterable upgrade that pulls items from afar, straight into your backpack."]
+			dependencies: ["0000000000000986"]
+			id: "000000000000098E"
 			tasks: [{
-				id: "000000000000098F",
-				type: "item",
+				id: "000000000000098F"
+				type: "item"
 				item: "sophisticatedbackpacks:magnet_upgrade"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A50",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "0000000000000A50"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 5.5d,
-			y: -7.5d,
-			description: ["Never lose your precious goods again!"],
-			dependencies: ["0000000000000986"],
-			id: "0000000000000990",
+			x: 6.0d
+			y: -7.5d
+			description: ["Never lose your precious goods again!"]
+			dependencies: ["0000000000000986"]
+			id: "0000000000000990"
 			tasks: [{
-				id: "0000000000000991",
-				type: "item",
+				id: "0000000000000991"
+				type: "item"
 				item: "sophisticatedbackpacks:everlasting_upgrade"
-			}],
+			}]
 			rewards: [
 				{
-					id: "000000000000099C",
-					type: "command",
-					title: "Sorcerer's Delight",
-					icon: "kubejs:sorcerers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					id: "000000000000099C"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 					player_command: false
-				},
+				}
 				{
-					id: "0000000000000A6A",
-					type: "command",
-					title: "Alchemist's Delight",
-					icon: "kubejs:alchemists_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+					id: "0000000000000A6A"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			x: 2.5d,
-			y: -7.5d,
-			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "],
-			dependencies: ["0000000000000986"],
-			id: "0000000000000992",
+			x: 3.0d
+			y: -7.5d
+			description: ["A filterable upgrade that lets items pass directly into the backpack when picked up by the player. "]
+			dependencies: ["0000000000000986"]
+			id: "0000000000000992"
 			tasks: [{
-				id: "0000000000000993",
-				type: "item",
+				id: "0000000000000993"
+				type: "item"
 				item: "sophisticatedbackpacks:pickup_upgrade"
-			}],
+			}]
 			rewards: [{
-				id: "000000000000099D",
-				type: "command",
-				title: "Farmer's Delight",
-				icon: "kubejs:farmers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+				id: "000000000000099D"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 4.5d,
-			y: -7.5d,
-			subtitle: "You're Not You When You're Hungry",
-			description: ["Need a snack? Let your backpack provide."],
-			dependencies: ["0000000000000986"],
-			id: "0000000000000994",
+			title: "Feeding Upgrade"
+			x: 5.0d
+			y: -7.5d
+			subtitle: "You're Not You When You're Hungry"
+			description: ["Need a snack? Let your backpack provide."]
+			dependencies: ["0000000000000986"]
+			id: "0000000000000994"
 			tasks: [{
-				id: "0000000000000995",
-				type: "item",
+				id: "0000000000000995"
+				type: "item"
+				title: "Feeding Upgrade"
 				item: "sophisticatedbackpacks:feeding_upgrade"
-			}],
+			}]
 			rewards: [{
-				id: "0000000000000A51",
-				type: "command",
-				title: "Alchemist's Delight",
-				icon: "kubejs:alchemists_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+				id: "0000000000000A51"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -5.0d,
-			subtitle: "Do not screw with the regulator",
+			x: -3.0d
+			y: -5.0d
+			subtitle: "Do not screw with the regulator"
 			description: [
-				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. ",
-				"",
-				"Build your own contraption within them to suit your needs, complete with custom input and output sides. ",
-				"",
+				"A minor recalibration and the Personal Shrinking Device can shrink one right out of sight and into the nooks and crannies of special machines. "
+				""
+				"Build your own contraption within them to suit your needs, complete with custom input and output sides. "
+				""
 				"Simply Right-Click a Compact Machine with the PSD to warp inside of it. "
-			],
-			dependencies: ["2A74822BE970E9D4"],
-			id: "0AD2769DC173D26D",
-			tasks: [
-				{
-					id: "6B198B6A029D9333",
-					type: "item",
-					item: "compactmachines:personal_shrinking_device"
-				},
-				{
-					id: "183F540AE4005AB2",
-					type: "item",
-					item: "compactmachines:machine_tiny"
-				}
-			],
+			]
+			dependencies: ["2A74822BE970E9D4"]
+			id: "0AD2769DC173D26D"
+			tasks: [{
+				id: "6B198B6A029D9333"
+				type: "item"
+				item: "compactmachines:personal_shrinking_device"
+			}]
 			rewards: [{
-				id: "07BAD39E967F6B85",
-				type: "item",
+				id: "07BAD39E967F6B85"
+				type: "item"
 				item: "enderstorage:ender_pouch"
 			}]
-		},
+		}
 		{
-			title: "Field Projector",
-			x: -4.5d,
-			y: -3.5d,
-			subtitle: "Non-renormalizability",
+			title: "Field Projector"
+			x: -3.0d
+			y: -4.0d
+			subtitle: "Non-renormalizability"
 			description: [
-				"Crafting Compact Machines themselves is done with Field Projectors. Four of them need to be placed facing each other in a cross shape. ",
-				"",
-				"Begin by placing one a few blocks off the ground and then right click it. It will show you a series of marks floating in front of it that represent valid locations for the next Projector. ",
-				"",
-				"Once the second Projector is placed, Right-Clicking again will show the final two Projector locations. ",
-				"",
+				"Crafting Compact Machines themselves is done with Field Projectors. Four of them need to be placed facing each other in a cross shape. "
+				""
+				"Begin by placing one a few blocks off the ground and then right click it. It will show you a series of marks floating in front of it that represent valid locations for the next Projector. "
+				""
+				"Once the second Projector is placed, Right-Clicking again will show the final two Projector locations. "
+				""
 				"If done correctly, an orange force field will appear in the center. This area is where the Compact Machines themselves must be constructed. "
-			],
-			dependencies: ["4DB24091326F4C47"],
-			min_width: 250,
-			id: "5A1F6BA9BE06D643",
+			]
+			dependencies: [
+				"0AD2769DC173D26D"
+				"0000000000000FEB"
+			]
+			hide: true
+			min_width: 250
+			id: "5A1F6BA9BE06D643"
 			tasks: [{
-				id: "5D5A7187E1979D0D",
-				type: "item",
-				item: "compactcrafting:field_projector",
+				id: "5D5A7187E1979D0D"
+				type: "item"
+				item: "compactcrafting:field_projector"
 				count: 4L
-			}],
+			}]
 			rewards: [{
-				id: "36C4E2AF07DE5E40",
-				type: "item",
-				title: "Ender Chest",
+				id: "36C4E2AF07DE5E40"
+				type: "item"
+				title: "Ender Chest"
 				item: "enderstorage:ender_chest"
 			}]
-		},
+		}
 		{
-			x: -2.0d,
-			y: -6.0d,
-			subtitle: "Pym Powered",
+			x: -2.0d
+			y: -6.0d
+			subtitle: "Pym Powered"
 			description: [
-				"Smaller, but equally strong? Impossible!",
-				"",
-				"Until now. ",
-				"",
-				"With Shrink’s Personal Shrinking Device in hand, shrink to the tiniest of sizes and slip through cracks even a mouse would scoff at. ",
-				"",
+				"Smaller, but equally strong? Impossible!"
+				""
+				"Until now. "
+				""
+				"With Shrink’s Personal Shrinking Device in hand, shrink to the tiniest of sizes and slip through cracks even a mouse would scoff at. "
+				""
 				"Sneak + Right Click to shrink yourself, or left click an entity to shrink it instead. Right click a shrunken entity to bottle it up and carry it with you. Keep a villager in your pocket for good luck!"
-			],
-			dependencies: ["00000000000003FF"],
-			id: "2A74822BE970E9D4",
+			]
+			dependencies: ["00000000000003FF"]
+			id: "2A74822BE970E9D4"
 			tasks: [{
-				id: "417D1AA02B005770",
-				type: "item",
+				id: "417D1AA02B005770"
+				type: "item"
 				item: {
-					id: "shrink:shrinking_device",
-					Count: 1b,
-					tag: {}
+					id: "shrink:shrinking_device"
+					Count: 1b
+					tag: { }
 				}
-			}],
+			}]
 			rewards: [
 				{
-					id: "39498CF292AB8B53",
-					type: "item",
-					title: "Glass Bottle",
-					item: "minecraft:glass_bottle",
+					id: "39498CF292AB8B53"
+					type: "item"
+					title: "Glass Bottle"
+					item: "minecraft:glass_bottle"
 					count: 8
-				},
+				}
 				{
-					id: "00012916E3BF0CC7",
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					id: "00012916E3BF0CC7"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			icon: "compactmachines:machine_tiny",
-			x: -4.5d,
-			y: -2.0d,
-			subtitle: "One, cut a hole in a box",
+			icon: "compactmachines:machine_tiny"
+			x: -4.0d
+			y: -4.0d
+			subtitle: "One, cut a hole in a box"
 			description: [
-				"Gather the materials for your first Compact Machine!",
-				"",
-				"To construct it, build the multi-block shown in JEI within the field and finally drop the catalyst item into the field. The structure will animate and begin to shrink down, finally dropping the fully crafted Compact Machine on the ground. ",
-				"",
-				"The Tiny Compact Machine has an internal volume of 3x3x3 and while that seems terribly small, it is perfect for certain smaller automations. And if you yourself are shrunk it can make placing the blocks inside quite simple. ",
-				"",
+				"Gather the materials for your first Compact Machine!"
+				""
+				"The Tiny Compact Machine has an internal volume of 3x3x3 and while that seems terribly small, it is perfect for certain smaller automations. And if you yourself are shrunk it can make placing the blocks inside quite simple. "
+				""
 				"Make a challenge for yourself and try to automate Industrial Foregoing Latex and Rubber in one. With clever use of other mods, this could be entirely self contained, including wood, power, and transformation from latex to plastic sheets all within this tiny box. "
-			],
-			dependencies: ["5A1F6BA9BE06D643"],
-			min_width: 250,
-			id: "3787A109AABC8921",
-			tasks: [
-				{
-					id: "16A0C1D718EA19AF",
-					type: "item",
-					item: "compactmachines:machine_tiny"
-				},
-				{
-					id: "32D8F9B8CDED9E06",
-					type: "item",
-					item: "minecraft:brown_concrete",
-					count: 48L
-				},
-				{
-					id: "1AC67E05941AD859",
-					type: "item",
-					item: "immersiveengineering:sheetmetal_colored_black",
-					count: 44L
-				},
-				{
-					id: "7825B867D82C7434",
-					type: "item",
-					item: "compactmachines:wall",
-					count: 26L
-				},
-				{
-					id: "10B5CC28DFBCC2DF",
-					type: "item",
-					item: "immersiveengineering:insulating_glass",
-					count: 6L
-				},
-				{
-					id: "1E69615DDBADE72F",
-					type: "item",
-					item: "emendatusenigmatica:copper_block"
-				}
-			],
+			]
+			dependencies: ["0AD2769DC173D26D"]
+			min_width: 250
+			id: "3787A109AABC8921"
+			tasks: [{
+				id: "16A0C1D718EA19AF"
+				type: "item"
+				item: "compactmachines:machine_tiny"
+			}]
 			rewards: [{
-				id: "3E2CA8D755178794",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "3E2CA8D755178794"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -3.0d,
-			y: -2.0d,
-			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "],
-			dependencies: ["3787A109AABC8921"],
-			id: "0DAA452348B02827",
+			x: -3.5d
+			y: -3.0d
+			description: ["Weighing in at 13x13x13 internal volume, the Maximum sized Compact Machine truly offers a world of automation possibilities. What will you build in yours? A mobile base of operations? Compact ore processing? Zombie-proof Villager trading hall? "]
+			dependencies: ["3787A109AABC8921"]
+			id: "0DAA452348B02827"
 			tasks: [{
-				id: "21ED2337B44743E5",
-				type: "item",
+				id: "21ED2337B44743E5"
+				type: "item"
 				item: "compactmachines:machine_maximum"
-			}],
+			}]
 			rewards: [{
-				id: "299A8E596E259DC4",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "299A8E596E259DC4"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -5.5d,
-			y: -1.0d,
-			subtitle: "Quantum Tunneling",
+			x: -5.0d
+			y: -4.5d
+			subtitle: "Quantum Tunneling"
 			description: [
-				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. ",
-				"",
-				"For example, place a Tunnel on a wall and right click it until it reports it is configured to the up position, then place a chest against it. Warp back outside and place a Hopper on the top of the machine and feed in a few items. They’ll be whisked away into that chest inside. Use this concept to feed items into or out of the machine, as necessary. ",
-				"",
+				"Placed on the walls inside Compact Machines, Tunnels permit a connection to the outside world. "
+				""
+				"For example, place a Tunnel on a wall and right click it until it reports it is configured to the up position, then place a chest against it. Warp back outside and place a Hopper on the top of the machine and feed in a few items. They’ll be whisked away into that chest inside. Use this concept to feed items into or out of the machine, as necessary. "
+				""
 				"Of course, many other options exist for getting stuff in and out. Ender Storage for items and fluids, Ender Gates for power, etc. "
-			],
-			dependencies: ["3787A109AABC8921"],
-			id: "5511E0236BA3BDCA",
+			]
+			dependencies: ["3787A109AABC8921"]
+			id: "5511E0236BA3BDCA"
 			tasks: [{
-				id: "2D8BF6B60DE16FC8",
-				type: "item",
+				id: "2D8BF6B60DE16FC8"
+				type: "item"
 				item: {
-					id: "compactmachines:tunnel",
-					Count: 1b,
+					id: "compactmachines:tunnel"
+					Count: 1b
 					tag: {
 						definition: {
 							id: "compactmachines:item"
 						}
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "526E10A2F22FF97C",
-				type: "command",
-				title: "Scavenger's Delight",
-				icon: "kubejs:scavengers_delight",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+				id: "526E10A2F22FF97C"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 				player_command: false
 			}]
-		},
+		}
 		{
-			icon: "minecraft:structure_void",
-			x: -4.0d,
-			y: -4.5d,
-			dependencies: ["0AD2769DC173D26D"],
-			hide: true,
-			id: "4DB24091326F4C47",
+			x: 5.5d
+			y: -6.0d
+			description: ["It's a good idea to remove items from your Backpack before upgrading it."]
+			dependencies: ["000000000000098C"]
+			id: "585A22AF9FB84AFD"
 			tasks: [{
-				id: "0E48747CD5A70977",
-				type: "gamestage",
-				title: "impossible",
-				stage: "impossible"
+				id: "4F51BBE2671F8947"
+				type: "item"
+				item: "sophisticatedbackpacks:netherite_backpack"
+			}]
+			rewards: [{
+				id: "5319BF6929089EA6"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Dimensional Storage"
+			x: 1.5d
+			y: -9.5d
+			subtitle: "Wouldn't you think my collection's complete?"
+			description: [
+				"Got more gadgets and gizmos than one cavern can hold? More whozits and whatzits than you know what to do with? Then its time to shove it in another dimension and hire someone to sort it for you. Just read the fine print of any contracts you sign."
+				""
+				"Occultism offers extensive storage capabilities with cross-dimensional access both manually and via automation. Check out the Occultism chapter for more details on the process. "
+			]
+			dependencies: ["00000000000003FF"]
+			id: "662DA1135F00D6B6"
+			tasks: [{
+				id: "0B58FB5EED4BBC33"
+				type: "item"
+				item: "occultism:storage_controller"
+			}]
+			rewards: [{
+				id: "44BA68CC5061BD0A"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
 			}]
 		}
 	]

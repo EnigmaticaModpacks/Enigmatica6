@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     // Please add new recipes to this object instead of recipes
     const newRecipes = [
         {
@@ -12,7 +12,6 @@ events.listen('recipes', (event) => {
             },
             id: 'botanypots:crafting/botany_pot'
         },
-
         {
             output: 'ironjetpacks:hardened_jetpack',
             pattern: ['ABA', 'ECE', 'D D'],
@@ -290,7 +289,7 @@ events.listen('recipes', (event) => {
         {
             // Add Blaze + Coal Comb -> Lava Bucket Recipe
             output: 'minecraft:lava_bucket',
-            pattern: ['BCB', 'CAC', 'BCB'],
+            pattern: ['BDB', 'CAC', 'BDB'],
             key: {
                 D: 'resourcefulbees:blaze_honeycomb',
                 C: 'resourcefulbees:coal_honeycomb',
@@ -389,7 +388,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:strawberries'
+                D: '#forge:fruits/strawberries'
             },
             id: 'simplefarming:strawberry_pie'
         },
@@ -400,7 +399,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:raspberries'
+                D: '#forge:fruits/raspberries'
             },
             id: 'simplefarming:raspberry_pie'
         },
@@ -411,7 +410,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:plum'
+                D: '#forge:fruits/plum'
             },
             id: 'simplefarming:plum_pie'
         },
@@ -422,7 +421,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:pear'
+                D: '#forge:fruits/pear'
             },
             id: 'simplefarming:pear_pie'
         },
@@ -433,7 +432,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:peanut'
+                D: '#forge:crops/peanut'
             },
             id: 'simplefarming:peanut_butter_pie'
         },
@@ -444,7 +443,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:cherries'
+                D: '#forge:fruits/cherries'
             },
             id: 'simplefarming:cherry_pie'
         },
@@ -455,7 +454,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:blackberries'
+                D: '#forge:fruits/blackberries'
             },
             id: 'simplefarming:blackberry_pie'
         },
@@ -466,7 +465,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: 'farmersdelight:wheat_dough',
-                D: 'simplefarming:apricot'
+                D: '#forge:fruits/apricot'
             },
             id: 'simplefarming:apricot_pie'
         },
@@ -477,7 +476,7 @@ events.listen('recipes', (event) => {
                 A: 'farmersdelight:pie_crust',
                 B: 'minecraft:sugar',
                 C: '#forge:eggs',
-                D: '#forge:pumpkins'
+                D: 'minecraft:pumpkin'
             },
             id: 'minecraft:pumpkin_pie'
         },
@@ -492,6 +491,513 @@ events.listen('recipes', (event) => {
                 E: '#forge:eggs'
             },
             id: 'undergarden:gloomgourd_pie'
+        },
+
+        {
+            output: 'industrialforegoing:animal_baby_separator',
+            pattern: ['PAP', 'CMC', 'DGD'],
+            key: {
+                P: '#forge:plastic',
+                A: 'minecraft:golden_carrot',
+                C: 'minecraft:wheat',
+                G: '#forge:gears/gold_bronze',
+                D: '#forge:dyes/purple',
+                M: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:animal_baby_separator'
+        },
+        {
+            output: 'industrialforegoing:animal_feeder',
+            pattern: ['PAP', 'CMC', 'DGD'],
+            key: {
+                P: '#forge:plastic',
+                A: 'minecraft:golden_apple',
+                C: 'minecraft:golden_carrot',
+                G: '#forge:gears/iron_invar',
+                D: '#forge:dyes/purple',
+                M: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:animal_feeder'
+        },
+        {
+            output: 'industrialforegoing:animal_rancher',
+            pattern: ['PPP', 'SBS', 'GMG'],
+            key: {
+                P: '#forge:plastic',
+                G: '#forge:gears/gold_bronze',
+                S: 'minecraft:shears',
+                B: 'minecraft:bucket',
+                M: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:animal_rancher'
+        },
+        {
+            output: 'industrialforegoing:biofuel_generator',
+            pattern: ['PDP', 'SMS', 'ASA'],
+            key: {
+                P: '#forge:plastic',
+                D: 'minecraft:furnace',
+                S: 'minecraft:piston',
+                A: '#forge:gears/gold_bronze',
+                M: '#industrialforegoing:machine_frame/pity'
+            },
+            id: 'industrialforegoing:biofuel_generator'
+        },
+        {
+            output: 'industrialforegoing:block_breaker',
+            pattern: ['PGP', 'IMD', 'SRS'],
+            key: {
+                P: '#forge:plastic',
+                I: 'minecraft:iron_pickaxe',
+                D: 'minecraft:iron_shovel',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone',
+                G: '#forge:gears/gold_bronze',
+                S: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:block_breaker'
+        },
+        {
+            output: 'industrialforegoing:conveyor',
+            pattern: ['ppp', 'iri', 'ppp'],
+            key: {
+                p: '#forge:plastic',
+                i: '#forge:ingots/iron_aluminum',
+                r: 'minecraft:redstone'
+            },
+            id: 'industrialforegoing:conveyor'
+        },
+        {
+            output: 'industrialforegoing:conveyor_blinking_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: 'minecraft:chorus_fruit',
+                D: 'minecraft:piston',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_blinking_upgrade'
+        },
+        {
+            output: 'industrialforegoing:conveyor_bouncing_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: 'minecraft:slime_block',
+                D: 'minecraft:piston',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_bouncing_upgrade'
+        },
+        {
+            output: 'industrialforegoing:conveyor_detection_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: 'minecraft:stone_pressure_plate',
+                D: 'minecraft:comparator',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_detection_upgrade'
+        },
+        {
+            output: 'industrialforegoing:conveyor_dropping_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: 'minecraft:iron_bars',
+                D: 'minecraft:dropper',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_dropping_upgrade'
+        },
+        {
+            output: 'industrialforegoing:conveyor_extraction_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: '#forge:plastic',
+                D: 'minecraft:dispenser',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_extraction_upgrade'
+        },
+        {
+            output: 'industrialforegoing:conveyor_insertion_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: '#forge:plastic',
+                D: 'minecraft:hopper',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_insertion_upgrade'
+        },
+        {
+            output: 'industrialforegoing:conveyor_splitting_upgrade',
+            pattern: ['IPI', 'IDI', 'ICI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                P: 'industrialforegoing:conveyor',
+                D: 'minecraft:hopper',
+                C: 'industrialforegoing:conveyor'
+            },
+            id: 'industrialforegoing:conveyor_splitting_upgrade'
+        },
+        {
+            output: 'industrialforegoing:dissolution_chamber',
+            pattern: ['PCP', 'BMB', 'GDG'],
+            key: {
+                P: '#forge:plastic',
+                C: '#forge:chests',
+                B: 'minecraft:bucket',
+                M: '#industrialforegoing:machine_frame/pity',
+                G: '#forge:ingots/gold_tin',
+                D: '#forge:gears/diamond'
+            },
+            id: 'industrialforegoing:dissolution_chamber'
+        },
+        {
+            output: 'industrialforegoing:dye_mixer',
+            pattern: ['PDP', 'DMD', 'PRP'],
+            key: {
+                P: '#forge:plastic',
+                D: '#forge:dyes',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: '#forge:gears/gold_copper'
+            },
+            id: 'industrialforegoing:dye_mixer'
+        },
+        {
+            output: 'industrialforegoing:fluid_collector',
+            pattern: ['PBP', 'BMB', 'SRS'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:bucket',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone',
+                S: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:fluid_collector'
+        },
+        {
+            output: 'industrialforegoing:fluid_extractor',
+            pattern: ['IGI', 'CMC', 'IPI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                G: 'minecraft:light_weighted_pressure_plate',
+                C: '#forge:cobblestone',
+                M: '#industrialforegoing:machine_frame/pity',
+                P: 'minecraft:piston'
+            },
+            id: 'industrialforegoing:fluid_extractor'
+        },
+        {
+            output: 'industrialforegoing:fluid_placer',
+            pattern: ['PBP', 'BMB', 'SRS'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:water_bucket',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone',
+                S: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:fluid_placer'
+        },
+        {
+            output: 'industrialforegoing:laser_drill',
+            pattern: ['pfp', 'bmb', 'grg'],
+            key: {
+                p: '#forge:plastic',
+                f: '#forge:gears/diamond',
+                b: 'minecraft:piston',
+                m: '#industrialforegoing:machine_frame/simple',
+                g: '#forge:gears/diamond',
+                r: 'minecraft:redstone'
+            },
+            id: 'industrialforegoing:laser_drill'
+        },
+        {
+            output: 'industrialforegoing:latex_processing_unit',
+            pattern: ['IGI', 'BML', 'IFI'],
+            key: {
+                I: '#forge:ingots/iron_aluminum',
+                G: '#forge:storage_blocks/redstone',
+                B: 'minecraft:water_bucket',
+                L: 'industrialforegoing:latex_bucket',
+                M: '#industrialforegoing:machine_frame/pity',
+                F: 'minecraft:furnace'
+            },
+            id: 'industrialforegoing:latex_processing_unit'
+        },
+        {
+            output: 'industrialforegoing:machine_frame_pity',
+            pattern: ['WIW', 'IRI', 'WIW'],
+            key: {
+                W: '#minecraft:logs',
+                I: '#forge:ingots/iron_aluminum',
+                R: '#forge:storage_blocks/redstone'
+            },
+            id: 'industrialforegoing:machine_frame_pity'
+        },
+        {
+            output: 'industrialforegoing:marine_fisher',
+            pattern: ['pfp', 'bmb', 'grg'],
+            key: {
+                p: '#forge:plastic',
+                f: 'minecraft:fishing_rod',
+                b: 'minecraft:bucket',
+                m: '#industrialforegoing:machine_frame/simple',
+                g: '#forge:gears/iron_invar',
+                r: 'minecraft:redstone'
+            },
+            id: 'industrialforegoing:marine_fisher'
+        },
+        {
+            output: 'industrialforegoing:material_stonework_factory',
+            pattern: ['pcp', 'gmf', 'aba'],
+            key: {
+                p: '#forge:plastic',
+                c: 'minecraft:crafting_table',
+                g: 'minecraft:diamond_pickaxe',
+                m: '#industrialforegoing:machine_frame/advanced',
+                f: 'minecraft:furnace',
+                a: '#forge:gears/gold_bronze',
+                b: 'industrialforegoing:pink_slime'
+            },
+            id: 'industrialforegoing:material_stonework_factory'
+        },
+        {
+            output: 'industrialforegoing:meat_feeder',
+            pattern: ['pip', 'gig', ' i '],
+            key: {
+                p: 'industrialforegoing:plastic',
+                i: '#forge:ingots/iron_aluminum',
+                g: 'minecraft:glass_bottle'
+            },
+            id: 'industrialforegoing:meat_feeder'
+        },
+        {
+            output: 'industrialforegoing:mob_crusher',
+            pattern: ['PSP', 'BMB', 'GRG'],
+            key: {
+                P: '#forge:plastic',
+                S: 'minecraft:iron_sword',
+                B: 'minecraft:book',
+                M: '#industrialforegoing:machine_frame/advanced',
+                R: 'minecraft:redstone',
+                G: '#forge:gears/gold_invar'
+            },
+            id: 'industrialforegoing:mob_crusher'
+        },
+        {
+            output: 'industrialforegoing:mob_slaughter_factory',
+            pattern: ['PDP', 'SMS', 'ARA'],
+            key: {
+                P: '#forge:plastic',
+                D: '#forge:gears/gold_bronze',
+                S: 'minecraft:iron_sword',
+                A: 'minecraft:iron_axe',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone'
+            },
+            id: 'industrialforegoing:mob_slaughter_factory'
+        },
+        {
+            output: 'industrialforegoing:plant_fertilizer',
+            pattern: ['PBP', 'LML', 'GRG'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:glass_bottle',
+                L: 'minecraft:leather',
+                M: '#industrialforegoing:machine_frame/simple',
+                R: 'minecraft:redstone',
+                G: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:plant_fertilizer'
+        },
+        {
+            output: 'industrialforegoing:plant_gatherer',
+            pattern: ['PHP', 'AMA', 'GRG'],
+            key: {
+                P: '#forge:plastic',
+                H: 'minecraft:iron_hoe',
+                A: 'minecraft:iron_axe',
+                M: '#industrialforegoing:machine_frame/pity',
+                G: '#forge:gears/gold_bronze',
+                R: 'minecraft:redstone'
+            },
+            id: 'industrialforegoing:plant_gatherer'
+        },
+        {
+            output: 'industrialforegoing:plant_sower',
+            pattern: ['PBP', 'LML', 'GRG'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:flower_pot',
+                L: 'minecraft:piston',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone',
+                G: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:plant_sower'
+        },
+        {
+            output: 'industrialforegoing:resourceful_furnace',
+            pattern: ['PBP', 'LML', 'PRP'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:bucket',
+                L: 'minecraft:furnace',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: '#forge:gears/gold_copper'
+            },
+            id: 'industrialforegoing:resourceful_furnace'
+        },
+        {
+            output: 'industrialforegoing:sewage_composter',
+            pattern: ['PFP', 'DMD', 'BGB'],
+            key: {
+                P: '#forge:plastic',
+                F: 'minecraft:furnace',
+                D: 'minecraft:piston',
+                B: 'minecraft:brick',
+                M: '#industrialforegoing:machine_frame/pity',
+                G: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:sewage_composter'
+        },
+        {
+            output: 'industrialforegoing:sewer',
+            pattern: ['PEP', 'BMB', 'BGB'],
+            key: {
+                P: '#forge:plastic',
+                E: 'minecraft:bucket',
+                B: 'minecraft:brick',
+                M: '#industrialforegoing:machine_frame/pity',
+                G: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:sewer'
+        },
+        {
+            output: 'industrialforegoing:sludge_refiner',
+            pattern: ['PBP', 'LML', 'GRG'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:bucket',
+                L: 'minecraft:furnace',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: '#forge:gears/gold_copper',
+                G: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:sludge_refiner'
+        },
+        {
+            output: 'industrialforegoing:spores_recreator',
+            pattern: ['PSP', 'IMI', 'PSP'],
+            key: {
+                P: '#forge:plastic',
+                I: '#forge:mushrooms',
+                M: '#industrialforegoing:machine_frame/pity',
+                S: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:spores_recreator'
+        },
+        {
+            output: 'industrialforegoing:stasis_chamber',
+            pattern: ['sss', 'gmg', 'ipi'],
+            key: {
+                s: 'minecraft:soul_sand',
+                g: 'minecraft:ghast_tear',
+                m: '#industrialforegoing:machine_frame/advanced',
+                i: '#forge:gears/gold_invar',
+                p: 'minecraft:piston'
+            },
+            id: 'industrialforegoing:stasis_chamber'
+        },
+        {
+            output: 'industrialforegoing:water_condensator',
+            pattern: ['PBP', 'LML', 'GRG'],
+            key: {
+                P: '#forge:plastic',
+                B: 'minecraft:water_bucket',
+                L: 'minecraft:piston',
+                M: '#industrialforegoing:machine_frame/pity',
+                R: 'minecraft:redstone',
+                G: '#forge:gears/iron_invar'
+            },
+            id: 'industrialforegoing:water_condensator'
+        },
+        {
+            output: 'mythicbotany:alfsteel_pylon',
+            pattern: [' n ', 'npn', ' g '],
+            key: {
+                n: 'mythicbotany:alfsteel_nugget',
+                g: 'minecraft:ghast_tear',
+                p: 'botania:gaia_pylon'
+            },
+            id: 'mythicbotany:alfsteel_pylon'
+        },
+        {
+            output: 'botania:gaia_pylon',
+            pattern: [' D ', 'EPE', ' D '],
+            key: {
+                P: 'botania:mana_pylon',
+                D: 'botania:pixie_dust',
+                E: '#forge:ingots/elementium'
+            },
+            id: 'mythicbotany:modified_gaia_pylon_with_alfsteel'
+        },
+        {
+            output: Item.of('industrialforegoing:tinydryrubber', 3),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:vine',
+                B: 'minecraft:water_bucket'
+            },
+            id: 'thermal:rubber_from_vine'
+        },
+        {
+            output: Item.of('industrialforegoing:tinydryrubber', 3),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:dandelion',
+                B: 'minecraft:water_bucket'
+            },
+            id: 'thermal:rubber_from_dandelion'
+        },
+        {
+            output: Item.of('atum:linen_thread', 8),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:crops/flax',
+                B: '#forge:rods/wooden'
+            }
+        },
+        {
+            output: Item.of('atum:linen_thread', 4),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'atum:cloth_scrap',
+                B: '#forge:rods/wooden'
+            }
+        },
+        {
+            output: Item.of('minecraft:paper', 3),
+            pattern: ['AAA'],
+            key: {
+                A: '#forge:dusts/wood'
+            },
+            id: 'mekanism:paper'
+        },
+        {
+            output: 'supplementaries:candle_holder',
+            pattern: ['A', 'B'],
+            key: {
+                A: '#quark:candles',
+                B: '#forge:nuggets/pewter'
+            },
+            id: 'supplementaries:candle_holder'
         }
     ];
 
@@ -499,7 +1005,7 @@ events.listen('recipes', (event) => {
         shapedRecipe('tetra:hammer_base', ['LXL', 'LCL', 'LXL'], {
             L: '#forge:ingots/steel',
             X: '#forge:circuits/basic',
-            C: '#morevanillalib:tools'
+            C: 'emendatusenigmatica:enigmatic_hammer'
         }),
         shapedRecipe('tetra:core_extractor', ['LXL', 'LCL', 'LXL'], {
             L: '#forge:ingots/steel',
@@ -605,6 +1111,22 @@ events.listen('recipes', (event) => {
             B: 'prettypipes:medium_extraction_module',
             C: '#forge:ingots/electrum'
         }),
+        shapedRecipe(Item.of('ppfluids:low_fluid_extraction_module', 1), [' A ', 'DBD', ' C '], {
+            A: '#forge:dusts/redstone',
+            B: 'prettypipes:blank_module',
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
+        }),
+        shapedRecipe(Item.of('ppfluids:medium_fluid_extraction_module', 1), [' C ', 'ABA', ' A '], {
+            A: '#forge:nuggets/aluminum',
+            B: 'ppfluids:low_fluid_extraction_module',
+            C: '#forge:ingots/aluminum'
+        }),
+        shapedRecipe(Item.of('ppfluids:high_fluid_extraction_module', 1), [' C ', 'ABA', ' A '], {
+            A: '#forge:nuggets/bronze',
+            B: 'ppfluids:medium_fluid_extraction_module',
+            C: '#forge:ingots/bronze'
+        }),
         shapedRecipe(Item.of('prettypipes:low_filter_module', 1), [' A ', ' B ', ' C '], {
             A: '#forge:paper',
             B: 'prettypipes:blank_module',
@@ -620,6 +1142,24 @@ events.listen('recipes', (event) => {
             B: 'prettypipes:medium_filter_module',
             C: 'minecraft:iron_bars'
         }),
+
+        shapedRecipe(Item.of('ppfluids:low_fluid_filter_module', 1), [' A ', 'DBD', ' C '], {
+            A: 'thermal:diving_fabric',
+            B: 'prettypipes:blank_module',
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
+        }),
+        shapedRecipe(Item.of('ppfluids:medium_fluid_filter_module', 1), [' C ', 'ABA', ' C '], {
+            A: '#forge:nuggets/aluminum',
+            B: 'ppfluids:low_fluid_filter_module',
+            C: 'minecraft:iron_bars'
+        }),
+        shapedRecipe(Item.of('ppfluids:high_fluid_filter_module', 1), [' C ', 'ABA', ' C '], {
+            A: '#forge:nuggets/bronze',
+            B: 'ppfluids:medium_fluid_filter_module',
+            C: 'minecraft:iron_bars'
+        }),
+
         shapedRecipe(Item.of('prettypipes:low_speed_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:sugar',
             B: 'prettypipes:blank_module',
@@ -680,6 +1220,24 @@ events.listen('recipes', (event) => {
             B: 'prettypipes:medium_retrieval_module',
             C: '#forge:ingots/electrum'
         }),
+
+        shapedRecipe(Item.of('ppfluids:low_fluid_retrieval_module', 1), [' A ', 'DBD', ' C '], {
+            A: 'minecraft:observer',
+            B: 'prettypipes:blank_module',
+            C: 'thermal:redstone_servo',
+            D: 'thermal:cured_rubber'
+        }),
+        shapedRecipe(Item.of('ppfluids:medium_fluid_retrieval_module', 1), [' A ', 'ABA', ' C '], {
+            A: '#forge:nuggets/aluminum',
+            B: 'ppfluids:low_fluid_retrieval_module',
+            C: '#forge:ingots/aluminum'
+        }),
+        shapedRecipe(Item.of('ppfluids:high_fluid_retrieval_module', 1), [' A ', 'ABA', ' C '], {
+            A: '#forge:nuggets/bronze',
+            B: 'ppfluids:medium_fluid_retrieval_module',
+            C: '#forge:ingots/bronze'
+        }),
+
         shapedRecipe(Item.of('prettypipes:stack_size_module', 1), [' A ', ' B ', ' C '], {
             A: 'minecraft:comparator',
             B: 'prettypipes:blank_module',
@@ -734,6 +1292,11 @@ events.listen('recipes', (event) => {
             A: '#forge:ingots/tin',
             B: '#forge:glass/colorless'
         }),
+        shapedRecipe(Item.of('ppfluids:fluid_pipe', 12), [' C ', 'ABA', ' C '], {
+            A: '#forge:ingots/tin',
+            B: '#forge:glass/colorless',
+            C: 'thermal:cured_rubber'
+        }),
         shapedRecipe(Item.of('prettypipes:item_terminal', 1), [' B ', 'CAD', 'EFE'], {
             A: 'thermal:machine_frame',
             B: 'minecraft:observer',
@@ -782,7 +1345,7 @@ events.listen('recipes', (event) => {
             A: 'alexsmobs:roadrunner_feather',
             B: '#forge:ingots/enderium',
             C: 'ars_nouveau:mana_fiber',
-            D: 'paraglider:deku_leaf',
+            D: 'byg:leaf_pile',
             E: 'ars_nouveau:glyph_launch',
             F: 'ars_nouveau:glyph_slowfall'
         }),
@@ -790,7 +1353,7 @@ events.listen('recipes', (event) => {
             A: 'thermal:lightning_charge',
             B: '#mekanism:alloys/atomic',
             C: 'thermal:hazmat_fabric',
-            D: 'paraglider:deku_leaf',
+            D: 'byg:leaf_pile',
             E: 'thermal:hazmat_boots',
             F: 'alexsmobs:frontier_cap'
         }),
@@ -829,18 +1392,6 @@ events.listen('recipes', (event) => {
                 F: 'morphtool:tool'
             }
         ),
-        shapedRecipe(Item.of('occultism:candle_white'), [' B ', 'AAA', 'AAA'], {
-            A: '#forge:wax',
-            B: '#forge:string'
-        }),
-        shapedRecipe(Item.of('eidolon:candle', 4), ['B', 'A'], {
-            A: '#forge:wax',
-            B: '#forge:string'
-        }),
-        shapedRecipe(Item.of('quark:white_candle', 2), ['B', 'A', 'A'], {
-            A: '#forge:wax',
-            B: '#forge:string'
-        }),
         shapedRecipe(Item.of('byg:embur_hyphae', 3), ['AA', 'AA'], {
             A: 'byg:embur_pedu'
         }),
@@ -862,7 +1413,7 @@ events.listen('recipes', (event) => {
             A: 'minecraft:elytra',
             B: 'magicfeather:magicfeather',
             C: 'minecraft:prismarine_shard',
-            D: Item.of('minecraft:potion', { Potion: 'bountifulbaubles:flight' }),
+            D: '#forge:nether_stars',
             E: 'rftoolsbase:infused_diamond',
             F: 'minecraft:ender_eye'
         }),
@@ -882,59 +1433,6 @@ events.listen('recipes', (event) => {
             },
             'minecraft:honeycomb_block'
         ),
-
-        shapedRecipe(
-            Item.of('resourcefulbees:t1_apiary'),
-            ['ABA', 'BCB', 'ABA'],
-            {
-                A: '#resourcefulbees:resourceful_honeycomb_block',
-                B: 'minecraft:honey_block',
-                C: 'resourcefulbees:t4_beehive'
-            },
-            'resourcefulbees:t1_apiary'
-        ),
-
-        shapedRecipe(
-            Item.of('resourcefulbees:t2_apiary'),
-            ['ACA', 'BDB', 'ACA'],
-            {
-                A: '#resourcefulbees:resourceful_honeycomb_block',
-                B: 'resourcefulbees:t4_beehive',
-                C: 'resourcefulbees:t1_apiary',
-                D: 'minecraft:nether_star'
-            },
-            'resourcefulbees:t2_apiary'
-        ),
-
-        shapedRecipe(
-            Item.of('resourcefulbees:t3_apiary'),
-            ['DCD', 'BAB', 'DCD'],
-            {
-                A: '#resourcefulbees:resourceful_honeycomb_block',
-                B: 'resourcefulbees:t4_beehive',
-                C: 'resourcefulbees:t2_apiary',
-                D: 'minecraft:nether_star'
-            },
-            'resourcefulbees:t3_apiary'
-        ),
-
-        shapedRecipe(
-            Item.of('resourcefulbees:t4_apiary'),
-            ['DCD', 'BAB', 'DCD'],
-            {
-                A: '#resourcefulbees:resourceful_honeycomb_block',
-                B: 'resourcefulbees:t4_beehive',
-                C: 'resourcefulbees:t3_apiary',
-                D: 'minecraft:nether_star'
-            },
-            'resourcefulbees:t4_apiary'
-        ),
-
-        // Torch from Stick+Standing Fire
-        shapedRecipe(Item.of('minecraft:torch', 4), ['A', 'B'], {
-            A: 'additional_lights:fire_for_standing_torch_s',
-            B: '#forge:rods/wooden'
-        }),
 
         shapedRecipe(Item.of('projectvibrantjourneys:bones', 8), ['AAA', 'A A', 'AAA'], {
             A: 'minecraft:bone'

@@ -26,12 +26,6 @@ const generatableCobblestone = [
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
-    'embellishcraft:basalt_cobblestone',
-    'embellishcraft:gneiss_cobblestone',
-    'embellishcraft:jade_cobblestone',
-    'embellishcraft:larvikite_cobblestone',
-    'embellishcraft:marble_cobblestone',
-    'embellishcraft:slate_cobblestone',
     'create:andesite_cobblestone',
     'create:diorite_cobblestone',
     'create:granite_cobblestone',
@@ -65,12 +59,6 @@ const generatableStone = [
     'byg:pink_sandstone',
     'byg:scoria_stone',
     'byg:white_sandstone',
-    'embellishcraft:basalt',
-    'embellishcraft:gneiss',
-    'embellishcraft:jade',
-    'embellishcraft:larvikite',
-    'embellishcraft:marble',
-    'embellishcraft:slate',
     'minecraft:red_sandstone',
     'minecraft:sandstone',
     'quark:basalt',
@@ -118,44 +106,93 @@ var itemsToHide = [
     'ars_nouveau:arcane_brick',
     'ars_nouveau:arcane_ore',
     'ars_nouveau:mana_gem_block',
+
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
-    // 'bountifulbaubles:potion_wormhole',
+
     'create:powdered_obsidian',
     'create:honey_bucket',
     'create:copper_ore',
     'create:zinc_ore',
+
     'eidolon:tallow',
+
+    'environmental:cherry_pie',
+    'environmental:apple_pie',
+
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
-    'mapperbase:bitumen_ore',
-    'mapperbase:iron_plate',
-    'mapperbase:iron_rod',
-    'mapperbase:raw_bitumen',
+
     'mekanism:fluorite_gem',
+
     'morevanillalib:obsidian_shard',
+
+    // Deprecated Pedestals Items
+    'pedestals:coin/fmagnetmodb',
+    'pedestals:coin/fmagnetmod',
+    'pedestals:coin/fmagnetitemstackb',
+    'pedestals:coin/fluidpumpfilterblacklist',
+    'pedestals:coin/fluidrelayblocked',
+    'pedestals:coin/rfquarry',
+    'pedestals:coin/rfquarryb',
+    'pedestals:coin/rfrelayblocked',
+    'pedestals:coin/xprelayblocked',
+    'pedestals:coin/fmagnetitem',
+    'pedestals:coin/fmagnetitemb',
+    'pedestals:coin/fmagnetitemstack',
+    'pedestals:coin/fluidpumpfilter',
+    'pedestals:coin/fluidfilterblacklist',
+    'pedestals:coin/fluidfilter',
+    'pedestals:coin/enderfilteredexactimport',
+    'pedestals:coin/enderfilteredfuzzyimport',
+    'pedestals:coin/enderfilteredmodimport',
+    'pedestals:coin/enderfilteredenchantedimport',
+    'pedestals:coin/enderfilteredfoodimport',
+    'pedestals:coin/fexportenchanted',
+    'pedestals:coin/filterenchantedfuzzy',
+    'pedestals:coin/filterenchantedfuzzyb',
+    'pedestals:coin/filterenchantedexact',
+    'pedestals:coin/filterenchantedexactb',
+    'pedestals:coin/filterenchantedcount',
+    'pedestals:coin/fexportitem',
+    'pedestals:coin/fexportitemstack',
+    'pedestals:coin/fexportmod',
+    'pedestals:coin/fexportfood',
+    'pedestals:coin/filterenchantedb',
+    'pedestals:coin/filterenchanted',
+    'pedestals:coin/filterdurabilityless',
+    'pedestals:coin/filterdurability',
+    'pedestals:coin/filterfoodb',
+    'pedestals:coin/filterfood',
+    'pedestals:coin/filtermodb',
+    'pedestals:coin/filtermod',
+    'pedestals:coin/filtertagb',
+    'pedestals:coin/filtertag',
+    'pedestals:coin/filteritemstackb',
+    'pedestals:coin/filteritemstack',
+    'pedestals:coin/filteritemb',
+    'pedestals:coin/filteritem',
+    'pedestals:coin/quarryb',
+    'pedestals:coin/restriction',
+
     'powah:uraninite_ore',
     'powah:uraninite_ore_dense',
     'powah:uraninite_ore_poor',
     'powah:uraninite_raw',
     'powah:uraninite_raw_dense',
     'powah:uraninite_raw_poor',
+
     'quark:biotite',
     'quark:biotite_ore',
     'quark:tallow',
+
     'refinedstorage:silicon',
-    'thermal:coal_coke',
-    'thermal:coal_coke_block',
-    'thermal:ender_pearl_dust',
-    'thermal:sawdust',
-    'thermal:press_gear_die',
-    'thermal:press_packing_3x3_die',
-    'thermal:press_packing_2x2_die',
-    'thermal:press_unpacking_die',
+
     'simplefarming:apple_pie',
     'simplefarming:blueberry_pie',
+
     'supplementaries:pedestal',
     'supplementaries:crank',
     'supplementaries:cog_block',
@@ -164,7 +201,58 @@ var itemsToHide = [
     'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
-    'supplementaries:blackboard'
+    'supplementaries:blackboard',
+
+    'tconstruct:copper_ore',
+    'tconstruct:cobalt_ore',
+
+    'thermal:coal_coke',
+    'thermal:coal_coke_block',
+    'thermal:ender_pearl_dust',
+    'thermal:sawdust',
+    'thermal:press_gear_die',
+    'thermal:press_packing_3x3_die',
+    'thermal:press_packing_2x2_die',
+    'thermal:press_unpacking_die',
+    'thermal:rubber',
+
+    'quark:bonded_ravager_hide',
+    'quark:ravager_hide',
+    'quark:backpack',
+    'quark:crate',
+    'quark:magnet',
+    'quark:soul_compass'
+];
+
+/*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
+    that have been changed to use a different crafting type or that have been disabled. It allows creating a
+    recipe pointer that will display in Patchouli but not in JEI.  
+
+    Use the below logger to discover the correct CategoryID. They do not match the recipe type.
+*/
+//console.log('JEI RECIPE TYPES: ' + event.getCategoryIds());
+const recipesToHide = [
+    {
+        category: 'minecraft:crafting',
+        recipes_by_id: [
+            'ars_nouveau:arcane_stone',
+            'ars_nouveau:crystallizer',
+            'ars_nouveau:volcanic_accumulator',
+            'naturesaura:calling_spirit',
+            'naturesaura:animal_spawner',
+            'botania:spark',
+            'mythicbotany:wither_aconite_floating',
+            'mythicbotany:raindeletia_floating'
+        ]
+    },
+    {
+        category: 'ars_nouveau:apparatus',
+        recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
+    },
+    {
+        category: 'botania:petals',
+        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    }
 ];
 
 var regexHide = [
@@ -194,6 +282,9 @@ var regexHide = [
     /emendatusenigmatica:\w+_brimstone_ore/,
     /emendatusenigmatica:\w+_soul_soil_ore/,
     /emendatusenigmatica:\w+_basalt_ore/,
+    /tconstruct:\w+_station/,
+    /tconstruct:\w+_anvil/,
+    /tconstruct:part_builder/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
     /thermal:\w+_gear$/,
@@ -211,18 +302,16 @@ var regexHide = [
     /create:\w+_nugget/,
     /create:\w+_ingot/,
     /immersiveposts:stick_/,
-    /buildersaddition:\w+_rod/,
     /eidolon:\w+_ore/,
     /byg:pendorite/,
     /byg:ametrine/,
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
-    /mapperbase:steel/,
-    /mapperbase:\w+_block/,
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
     /betterendforge:\w+_anvil/,
-    /theoneprobe:/
+    /theoneprobe:/,
+    /upgrade_aquatic:\w+_jelly_torch/
 ];
 
 const disabledItems = [
@@ -307,18 +396,6 @@ const disabledItems = [
     'ironjetpacks:enderium_capacitor',
     'ironjetpacks:nitro_cell',
     'ironjetpacks:nitro_capacitor',
-
-    'mapperbase:bituminous_coal',
-    'mapperbase:steel_fence',
-    'mapperbase:steel_axe',
-    'mapperbase:steel_pickaxe',
-    'mapperbase:steel_shovel',
-    'mapperbase:steel_hoe',
-    'mapperbase:steel_sword',
-    'mapperbase:steel_helmet',
-    'mapperbase:steel_chestplate',
-    'mapperbase:steel_leggings',
-    'mapperbase:steel_boots',
 
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',

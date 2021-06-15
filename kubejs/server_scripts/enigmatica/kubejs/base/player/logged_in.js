@@ -1,4 +1,4 @@
-events.listen('player.logged_in', (event) => {
+onEvent('player.logged_in', (event) => {
     randomWaystone = () => {
         const waystones = ['waystones:waystone', 'waystones:mossy_waystone', 'waystones:sandy_waystone'];
         return waystones[Math.floor(Math.random() * waystones.length + 1)];

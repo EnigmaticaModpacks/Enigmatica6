@@ -20,8 +20,40 @@ const validApiaryBlocks = [
     /minecraft:\w+_concrete$/,
     /minecraft:(|\w+)terracotta$/,
 
+    /chipped:\w+_concrete_\w+$/,
+    /chipped:\w+terracotta_\w+$/,
+
     'minecraft:soul_sand',
-    '#minecraft:stone_bricks'
+    '#minecraft:stone_bricks',
+
+    '#enigmatica:stonecuttables',
+
+    /bloodmagic:\w+rune$/,
+    /bloodmagic:(|\w+)ritualstone$/,
+    /bloodmagic:\w+path$/,
+    'bloodmagic:largebloodstonebrick',
+    'bloodmagic:bloodstonebrick',
+    'bloodmagic:dungeon_brick1',
+    'bloodmagic:dungeon_brick2',
+    'bloodmagic:dungeon_brick3',
+    'bloodmagic:dungeon_smallbrick',
+    'bloodmagic:dungeon_brick_assorted',
+
+    /botania:\w+grass$/,
+
+    '#forge:treated_wood',
+
+    /engineersdecor:dense\w+/,
+    'engineersdecor:clinker_brick_block',
+    'engineersdecor:clinker_brick_stained_block',
+    'engineersdecor:clinker_brick_sastor_corner_block',
+    'engineersdecor:slag_brick_block',
+    'engineersdecor:rebar_concrete',
+    'engineersdecor:rebar_concrete_tile',
+    'engineersdecor:gas_concrete',
+    'engineersdecor:rebar_concrete',
+    'engineersdecor:dark_shingle_roof_block',
+    'engineersdecor:old_industrial_wood_planks'
 ];
 
 const honeyVarieties = [

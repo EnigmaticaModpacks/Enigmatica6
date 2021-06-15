@@ -1,0 +1,39 @@
+
+[worldgen]
+
+	[worldgen.biomes]
+
+		[worldgen.biomes.marsh]
+			"Marsh weight" = 6
+			"Mushroom Marsh weight" = 0
+
+		[worldgen.biomes.blossom]
+			"Blossom Woods weight" = 3
+			"Blossom Hills weight" = 0
+			"Blossom Highlands weight" = 1
+			"Blossom Valleys weight" = 0
+
+	[worldgen.features]
+		"Giant Mushroom generation in Swamps" = true
+		"Rice generation in Marshes" = true
+		"Giant Tall Grass generation" = true
+		"Wisteria Tree generation in Flower Forests" = true
+		"Delphinium generation in Flower Forests" = true
+		"Hibiscus generation in Jungles" = true
+
+[entities]
+	#Make farm animals spawn in less biomes to allow new mobs to take their place and diversify biome spawns
+	"Limit farm animal spawns" = true
+	#Make biome variants of mobs like Husks always spawn in place of their original in their biomes
+	"Biome variants always spawn" = true
+
+	[entities.koi]
+		#Make Koi only block natural spawns
+		"Block only natural spawns" = true
+		#Horizontal radius of Serenity effect in blocks
+		"Horizontal serenity range (radius)" = 32
+		#Vertical radius of Serenity effect in blocks
+		"Vertical serenity range (radius)" = 8
+		#If Koi exude Serenity as a potion effect
+		"Serenity potion effect" = true
+

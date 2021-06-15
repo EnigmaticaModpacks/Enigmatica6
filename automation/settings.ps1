@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.4.14"
+$MODPACK_VERSION = "0.5.0"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.4.13"
+$LAST_MODPACK_VERSION = "0.4.14"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "alpha"
 
 #=====================================================================//
 #  DEPENDENCIES URL
@@ -130,7 +130,16 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"upgrade_aquatic-client.toml",
 	"xnet-client.toml",
 	"findme-client.toml",
-	"PregenConfig.toml"
+	"PregenConfig.toml",
+	"sounddeviceoptions-client.toml",
+	"personality-client.toml",
+	"miniutilities-client.toml",
+	"twilightforest-client.toml",
+	"framedblocks-client.toml",
+	"cfm-client.toml",
+	"entity_culling-client.toml",
+	"terraforged/performance_internal.conf",
+	"gravestone-client.toml"
 )
 
 #=====================================================================//

@@ -128,6 +128,7 @@
 	"Variant Bookshelves" = true
 	Stools = true
 	Hedges = true
+	"Celebratory Lamps" = true
 
 	[building.rope]
 		"Enable Dispenser Behavior" = true
@@ -214,6 +215,9 @@
 		"Enable Netherrack Bricks" = true
 		"Enable Basalt Bricks" = true
 
+	[building.celebratory_lamps]
+		"Light Level" = 15
+
 [management]
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
@@ -295,6 +299,8 @@
 		#minecraft:ice_mountains,2,8,14,7FE4FF,Ice Mountains Pathfinder Map
 		Customs = []
 		"Xp From Trade" = 5
+		"Search Radius" = 6400
+		"Search Distance Increment" = 8
 
 	[tools.seed_pouch]
 		"Show All Variants In Creative" = true
@@ -423,7 +429,7 @@
 		#Allowed values: (0,)
 		"Afk Time" = 2400
 		#Allowed values: (0,1]
-		"Percent Req" = 1.0
+		"Percent Req" = 0.25
 
 	[tweaks.emotes]
 		#The enabled default emotes. Remove from this list to disable them. You can also re-order them, if you feel like it.
@@ -539,10 +545,12 @@
 
 			[world.cave_crystal_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["ocean"]
 
 			[world.cave_crystal_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -579,10 +587,12 @@
 
 			[world.sandstone_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["desert"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["sandy"]
 
 			[world.sandstone_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -596,8 +606,19 @@
 		"Renewable Myalite" = true
 
 		[world.spiral_spires.biomes]
-			Biomes = ["minecraft:end_highlands"]
-			"Is Blacklist" = false
+
+			[world.spiral_spires.biomes.types]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = []
+				"Is Blacklist" = true
+
+			[world.spiral_spires.biomes.biomes]
+				Biomes = ["minecraft:end_highlands"]
+				"Is Blacklist" = false
 
 		[world.spiral_spires.dimensions]
 			Dimensions = ["minecraft:the_end"]
@@ -656,10 +677,12 @@
 
 			[world.crevices.spawn_settings.biomes]
 				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean", "beach"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["ocean", "beach"]
 
 			[world.crevices.spawn_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -804,10 +827,12 @@
 
 			[world.spider_nest_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["plains"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["plains"]
 
 			[world.spider_nest_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -822,12 +847,20 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-			[world.blossom_trees.orange.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["savanna"]
+			[world.blossom_trees.orange.biome_config]
+
+				[world.blossom_trees.orange.biome_config.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["savanna"]
+					"Is Blacklist" = false
+
+				[world.blossom_trees.orange.biome_config.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[world.blossom_trees.pink]
 			Rarity = 200
@@ -836,12 +869,20 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-			[world.blossom_trees.pink.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["extreme_hills"]
+			[world.blossom_trees.pink.biome_config]
+
+				[world.blossom_trees.pink.biome_config.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["mountain"]
+					"Is Blacklist" = false
+
+				[world.blossom_trees.pink.biome_config.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[world.blossom_trees.blue]
 			Rarity = 200
@@ -850,12 +891,20 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-			[world.blossom_trees.blue.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["icy"]
+			[world.blossom_trees.blue.biome_config]
+
+				[world.blossom_trees.blue.biome_config.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["snowy"]
+					"Is Blacklist" = false
+
+				[world.blossom_trees.blue.biome_config.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[world.blossom_trees.yellow]
 			Rarity = 200
@@ -864,12 +913,20 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-			[world.blossom_trees.yellow.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["plains"]
+			[world.blossom_trees.yellow.biome_config]
+
+				[world.blossom_trees.yellow.biome_config.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["plains"]
+					"Is Blacklist" = false
+
+				[world.blossom_trees.yellow.biome_config.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[world.blossom_trees.lavender]
 			Rarity = 200
@@ -878,12 +935,20 @@
 				Dimensions = ["minecraft:overworld"]
 				"Is Blacklist" = false
 
-			[world.blossom_trees.lavender.biome_types]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["swamp"]
+			[world.blossom_trees.lavender.biome_config]
+
+				[world.blossom_trees.lavender.biome_config.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["swamp"]
+					"Is Blacklist" = false
+
+				[world.blossom_trees.lavender.biome_config.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[world.blossom_trees.red]
 			Rarity = 30
@@ -892,12 +957,20 @@
 				"Is Blacklist" = false
 				Dimensions = ["minecraft:overworld"]
 
-			[world.blossom_trees.red.biome_types]
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["mesa"]
-				"Is Blacklist" = false
+			[world.blossom_trees.red.biome_config]
+
+				[world.blossom_trees.red.biome_config.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["mesa"]
+					"Is Blacklist" = false
+
+				[world.blossom_trees.red.biome_config.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 	[world.mega_caves]
 
@@ -919,10 +992,12 @@
 
 			[world.mega_caves.spawn_settings.biomes]
 				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean", "beach"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["ocean", "beach"]
 
 			[world.mega_caves.spawn_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -956,10 +1031,12 @@
 
 			[world.elder_prismarine_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["ocean"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["ocean"]
 
 			[world.elder_prismarine_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -991,10 +1068,12 @@
 
 			[world.glowshroom_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["extreme_hills", "mushroom"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["mountain", "mushroom"]
 
 			[world.glowshroom_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1023,11 +1102,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.marble.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["plains"]
+
+				[world.big_stone_clusters.marble.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["plains"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.marble.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.marble.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1051,11 +1138,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.limestone.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["swamp", "ocean"]
+
+				[world.big_stone_clusters.limestone.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["swamp", "ocean"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.limestone.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.limestone.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1079,11 +1174,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.granite.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["extreme_hills"]
+
+				[world.big_stone_clusters.granite.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["mountain"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.granite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.granite.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1107,8 +1210,19 @@
 			"Vertical Variation" = 6
 
 			[world.big_stone_clusters.voidstone.biomes]
-				"Is Blacklist" = false
-				Biomes = ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:end_barrens"]
+
+				[world.big_stone_clusters.voidstone.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = []
+					"Is Blacklist" = true
+
+				[world.big_stone_clusters.voidstone.biomes.biomes]
+					Biomes = ["minecraft:end_highlands", "minecraft:end_midlands", "minecraft:end_barrens"]
+					"Is Blacklist" = false
 
 			[world.big_stone_clusters.voidstone.dimensions]
 				Dimensions = ["minecraft:the_end"]
@@ -1132,11 +1246,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.andesite.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["forest"]
+
+				[world.big_stone_clusters.andesite.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["forest"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.andesite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.andesite.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1160,11 +1282,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.slate.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["icy"]
+
+				[world.big_stone_clusters.slate.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["snowy"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.slate.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.slate.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1188,11 +1318,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.diorite.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["savanna", "jungle", "mushroom"]
+
+				[world.big_stone_clusters.diorite.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["savanna", "jungle", "mushroom"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.diorite.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.diorite.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1216,11 +1354,19 @@
 			"Vertical Variation" = 9
 
 			[world.big_stone_clusters.jasper.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["mesa", "desert"]
+
+				[world.big_stone_clusters.jasper.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["mesa", "sandy"]
+					"Is Blacklist" = false
+
+				[world.big_stone_clusters.jasper.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 			[world.big_stone_clusters.jasper.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1249,8 +1395,19 @@
 				Dimensions = ["minecraft:the_end"]
 
 			[world.big_stone_clusters.myalite.biomes]
-				Biomes = ["minecraft:end_highlands"]
-				"Is Blacklist" = false
+
+				[world.big_stone_clusters.myalite.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = []
+					"Is Blacklist" = true
+
+				[world.big_stone_clusters.myalite.biomes.biomes]
+					Biomes = ["minecraft:end_highlands"]
+					"Is Blacklist" = false
 
 	[world.overgrown_underground_biome]
 
@@ -1272,10 +1429,12 @@
 
 			[world.overgrown_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["forest"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["forest"]
 
 			[world.overgrown_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1301,10 +1460,12 @@
 
 			[world.permafrost_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["icy"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["snowy"]
 
 			[world.permafrost_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1330,10 +1491,12 @@
 
 			[world.lush_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["jungle"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["jungle"]
 
 			[world.lush_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1359,10 +1522,12 @@
 
 			[world.brimstone_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["mesa"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["mesa"]
 
 			[world.brimstone_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1375,12 +1540,20 @@
 		"Max Rooms" = 10
 		"Chest Chance" = 0.5
 
-		[world.big_dungeon.biome_types]
-			"Is Blacklist" = true
-			#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-			# icy, the_end, beach, forest, ocean, desert, river, swamp,
-			# mushroom, nether]
-			"Biome Categories" = ["ocean", "beach", "nether", "the_end"]
+		[world.big_dungeon.biome_config]
+
+			[world.big_dungeon.biome_config.types]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["ocean", "beach", "nether", "end"]
+				"Is Blacklist" = true
+
+			[world.big_dungeon.biome_config.biomes]
+				Biomes = []
+				"Is Blacklist" = true
 
 	[world.fairy_rings]
 		"Forest Chance" = 0.00625
@@ -1427,10 +1600,12 @@
 
 			[world.slime_underground_biome.biome_settings.biomes]
 				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["swamp"]
+				#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+				# jungle, spooky, dead, lush, mushroom, magical, rare,
+				# plateau, modified, ocean, river, water, mesa, forest,
+				# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+				# beach, void, overworld, nether, end]
+				"Biome Types" = ["swamp"]
 
 			[world.slime_underground_biome.biome_settings.dimensions]
 				Dimensions = ["minecraft:overworld"]
@@ -1471,11 +1646,19 @@
 			"Max Group Size" = 1
 
 			[mobs.stonelings.spawn_config.biomes]
-				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["none", "nether"]
+
+				[mobs.stonelings.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["void", "nether", "end"]
+					"Is Blacklist" = true
+
+				[mobs.stonelings.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[mobs.stonelings.dimensions]
 			Dimensions = ["minecraft:overworld"]
@@ -1493,11 +1676,19 @@
 			"Max Group Size" = 1
 
 			[mobs.toretoise.spawn_config.biomes]
-				"Is Blacklist" = true
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["none", "nether"]
+
+				[mobs.toretoise.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["void", "nether", "end"]
+					"Is Blacklist" = true
+
+				[mobs.toretoise.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 		[mobs.toretoise.dimensions]
 			Dimensions = ["minecraft:overworld"]
@@ -1515,11 +1706,19 @@
 			"Max Group Size" = 3
 
 			[mobs.crabs.spawn_config.biomes]
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["beach"]
-				"Is Blacklist" = false
+
+				[mobs.crabs.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["beach"]
+					"Is Blacklist" = false
+
+				[mobs.crabs.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 	[mobs.foxhound]
 		#The chance coal will tame a foxhound
@@ -1536,8 +1735,19 @@
 			"Max Group Size" = 1
 
 			[mobs.foxhound.lesser_spawn_config.biomes]
-				Biomes = ["minecraft:soul_sand_valley"]
-				"Is Blacklist" = false
+
+				[mobs.foxhound.lesser_spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = []
+					"Is Blacklist" = true
+
+				[mobs.foxhound.lesser_spawn_config.biomes.biomes]
+					Biomes = ["minecraft:soul_sand_valley"]
+					"Is Blacklist" = false
 
 		[mobs.foxhound.spawn_config]
 			#Allowed values: (0,)
@@ -1548,8 +1758,19 @@
 			"Max Group Size" = 2
 
 			[mobs.foxhound.spawn_config.biomes]
-				Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas"]
-				"Is Blacklist" = false
+
+				[mobs.foxhound.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = []
+					"Is Blacklist" = true
+
+				[mobs.foxhound.spawn_config.biomes.biomes]
+					Biomes = ["minecraft:nether_wastes", "minecraft:basalt_deltas"]
+					"Is Blacklist" = false
 
 	[mobs.frogs]
 		"Enable Brewing" = true
@@ -1564,11 +1785,19 @@
 			"Max Group Size" = 3
 
 			[mobs.frogs.spawn_config.biomes]
-				"Is Blacklist" = false
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["swamp"]
+
+				[mobs.frogs.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["swamp"]
+					"Is Blacklist" = false
+
+				[mobs.frogs.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 	[mobs.forgotten]
 		#1 in this many Skeletons that spawn under the threshold are replaced with Forgotten.
@@ -1591,8 +1820,19 @@
 			"Max Group Size" = 3
 
 			[mobs.wraith.spawn_config.biomes]
-				Biomes = ["minecraft:soul_sand_valley"]
-				"Is Blacklist" = false
+
+				[mobs.wraith.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = []
+					"Is Blacklist" = true
+
+				[mobs.wraith.spawn_config.biomes.biomes]
+					Biomes = ["minecraft:soul_sand_valley"]
+					"Is Blacklist" = false
 
 [client]
 	"Greener Grass" = true
@@ -1704,11 +1944,19 @@
 			"Max Group Size" = 3
 
 			[experimental.shiba.spawn_config.biomes]
-				#Allowed values: [[none, taiga, extreme_hills, jungle, mesa, plains, savanna,
-				# icy, the_end, beach, forest, ocean, desert, river, swamp,
-				# mushroom, nether]
-				"Biome Categories" = ["extreme_hills"]
-				"Is Blacklist" = false
+
+				[experimental.shiba.spawn_config.biomes.types]
+					#Allowed values: [[hot, cold, sparse, dense, wet, dry, savanna, coniferous,
+					# jungle, spooky, dead, lush, mushroom, magical, rare,
+					# plateau, modified, ocean, river, water, mesa, forest,
+					# plains, mountain, hills, swamp, sandy, snowy, wasteland,
+					# beach, void, overworld, nether, end]
+					"Biome Types" = ["mountain"]
+					"Is Blacklist" = false
+
+				[experimental.shiba.spawn_config.biomes.biomes]
+					Biomes = []
+					"Is Blacklist" = true
 
 [oddities]
 	"Totem Of Holding" = false

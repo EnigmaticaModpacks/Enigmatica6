@@ -1,906 +1,905 @@
 {
-	id: "0000000000000895",
-	group: "5A8B89F87F77CF4C",
-	order_index: 3,
-	filename: "blood_magic_wip",
-	title: "Blood Magic",
-	icon: "bloodmagic:weakbloodshard",
-	subtitle: ["This is a good idea"],
-	default_quest_shape: "",
+	id: "0000000000000895"
+	group: "5A8B89F87F77CF4C"
+	order_index: 3
+	filename: "blood_magic_wip"
+	title: "Blood Magic"
+	icon: "bloodmagic:weakbloodshard"
+	default_quest_shape: ""
 	quests: [
 		{
-			title: "Blood Magic",
+			title: "Blood Magic"
 			icon: {
-				id: "patchouli:guide_book",
-				Count: 1b,
+				id: "patchouli:guide_book"
+				Count: 1b
 				tag: {
 					"patchouli:book": "bloodmagic:guide"
 				}
-			},
-			x: -3.0d,
-			y: 1.5d,
-			shape: "gear",
+			}
+			x: -3.0d
+			y: 1.5d
+			shape: "gear"
 			description: [
-				"Welcome to Blood Magic; a mod that, like many others in the grand tradition of magic, finds its source in the essence of living things or even the demonic powers animating the dead.",
-				"",
-				"This Life Essence, shortened as LP, will power grand rituals and powerful magics. ",
-				"",
-				"Blood Magic is currently in Beta and as such is incomplete at this time. More quests will be added as content is added. Be sure to check the book regularly as it too is a work in progress.",
-				"",
+				"Welcome to Blood Magic; a mod that, like many others in the grand tradition of magic, finds its source in the essence of living things or even the demonic powers animating the dead."
+				""
+				"This Life Essence, shortened as LP, will power grand rituals and powerful magics. "
+				""
+				"Blood Magic is currently in Beta and as such is incomplete at this time. More quests will be added as content is added. Be sure to check the book regularly as it too is a work in progress."
+				""
 				"~MuteTiefling"
-			],
-			id: "0000000000000896",
+			]
+			id: "0000000000000896"
 			tasks: [{
-				id: "0000000000000897",
+				id: "0000000000000897"
 				type: "checkmark"
-			}],
+			}]
 			rewards: [{
-				id: "04592CAFF9CC5FCF",
-				type: "xp",
+				id: "04592CAFF9CC5FCF"
+				type: "xp"
 				xp: 100
 			}]
-		},
+		}
 		{
 			icon: {
-				id: "bloodmagic:basemonstersoul",
-				Count: 1b,
+				id: "bloodmagic:basemonstersoul"
+				Count: 1b
 				tag: {
 					souls: 5.0d
 				}
-			},
-			x: -3.5d,
-			y: 3.0d,
-			subtitle: "The Void Stares Back",
+			}
+			x: -3.5d
+			y: 3.0d
+			subtitle: "The Void Stares Back"
 			description: [
-				"Despite the name of the mod, simply going out and slaughtering wantonly is exactly the wrong way to go about gathering LP. This is a process that requires finesse... precision. Your vict... Donor might need to be held down.",
-				"",
-				"Throw Soul Snares at mobs until potion particles appear around them, then proceed with the kill. With the target snared, Demonic Will may be extracted as the creature's life force passes.",
-				"",
+				"Despite the name of the mod, simply going out and slaughtering wantonly is exactly the wrong way to go about gathering LP. This is a process that requires finesse... precision. Your vict... Donor might need to be held down."
+				""
+				"Throw Soul Snares at mobs until potion particles appear around them, then proceed with the kill. With the target snared, Demonic Will may be extracted as the creature's life force passes."
+				""
 				"It can be helpful to gather a few pieces of Demonic Will in this way. Better methods will soon present themselves. "
-			],
-			dependencies: ["000000000000089F"],
-			id: "000000000000089B",
+			]
+			dependencies: ["000000000000089F"]
+			id: "000000000000089B"
 			tasks: [{
-				id: "00000000000008B3",
-				type: "item",
+				id: "00000000000008B3"
+				type: "item"
 				item: {
-					id: "bloodmagic:basemonstersoul",
-					Count: 1b,
-					tag: {}
+					id: "bloodmagic:basemonstersoul"
+					Count: 1b
+					tag: { }
 				}
-			}],
+			}]
 			rewards: [
 				{
-					id: "000000000000089D",
-					type: "item",
-					title: "Demon Will",
+					id: "000000000000089D"
+					type: "item"
+					title: "Demon Will"
 					item: {
-						id: "bloodmagic:basemonstersoul",
-						Count: 1b,
+						id: "bloodmagic:basemonstersoul"
+						Count: 1b
 						tag: {
 							souls: 5.0d
 						}
 					}
-				},
+				}
 				{
-					id: "0000000000000A7C",
-					type: "command",
-					title: "Scavenger's Delight",
-					icon: "kubejs:scavengers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight",
+					id: "0000000000000A7C"
+					type: "command"
+					title: "Scavenger's Delight"
+					icon: "kubejs:scavengers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			x: -1.5d,
-			y: 3.5d,
-			subtitle: "Phlebotomy 101",
+			x: -1.5d
+			y: 3.5d
+			subtitle: "Phlebotomy 101"
 			description: [
-				"The Blood Altar is the Gateway to more powerful and grandiose rituals which serve as an anchor for LP, causing it to have predictable and long lasting effect in the area. ",
-				"",
-				"It also serves as the basis for fueling your Soul Network, an ethereal web of souls that may be tapped into from anywhere.",
-				"",
-				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use the provided knife near it to drain some of your own blood into the Altar. ",
-				"",
-				"Once it is full, right click an item into the Altar to begin the transmutation process. Red particles mean the craft is proceeding normally, whereas grey particles mean there's not enough LP and the craft is losing progress. ",
-				"",
+				"The Blood Altar is the Gateway to more powerful and grandiose rituals which serve as an anchor for LP, causing it to have predictable and long lasting effect in the area. "
+				""
+				"It also serves as the basis for fueling your Soul Network, an ethereal web of souls that may be tapped into from anywhere."
+				""
+				"More fundamentally, the Altar will serve as a receptacle for transmuting objects with stored LP. To begin filling it, use the provided knife near it to drain some of your own blood into the Altar. "
+				""
+				"Once it is full, right click an item into the Altar to begin the transmutation process. Red particles mean the craft is proceeding normally, whereas grey particles mean there's not enough LP and the craft is losing progress. "
+				""
 				"The Sanguine Scientiem has an excellent guide on empowering the Altar. For now, it will suffice to simply place the Altar anywhere, though it may be prudent to plan out a large area for future expansion."
-			],
-			dependencies: ["0000000000000896"],
-			min_width: 300,
-			id: "000000000000089F",
+			]
+			dependencies: ["0000000000000896"]
+			min_width: 300
+			id: "000000000000089F"
 			tasks: [{
-				id: "00000000000008A0",
-				type: "item",
+				id: "00000000000008A0"
+				type: "item"
 				item: "bloodmagic:altar"
-			}],
+			}]
 			rewards: [
 				{
-					id: "00000000000008C1",
-					type: "item",
-					title: "Sacrificial Knife",
+					id: "00000000000008C1"
+					type: "item"
+					title: "Sacrificial Knife"
 					item: {
-						id: "bloodmagic:sacrificialdagger",
-						Count: 1b,
+						id: "bloodmagic:sacrificialdagger"
+						Count: 1b
 						tag: {
 							sacrifice: 0b
 						}
 					}
-				},
+				}
 				{
-					id: "00000000000008C2",
-					type: "command",
-					title: "Farmer's Delight",
-					icon: "kubejs:farmers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight",
+					id: "00000000000008C2"
+					type: "command"
+					title: "Farmer's Delight"
+					icon: "kubejs:farmers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			x: -3.0d,
-			y: 4.5d,
-			subtitle: "Why Does it Hurt So Much, Big Brother?",
+			x: -3.0d
+			y: 4.5d
+			subtitle: "Why Does it Hurt So Much, Big Brother?"
 			description: [
-				"Arcane Ashes form the basis for simplistic transmutational Alchemy. ",
-				"",
+				"Arcane Ashes form the basis for simplistic transmutational Alchemy. "
+				""
 				"The ashes are used to draw a sigil on the ground, and then a binder and reagent are combined within it to create powerful tokens that may be powered via the Soul Network. "
-			],
-			dependencies: ["00000000000008B4"],
-			id: "00000000000008A1",
+			]
+			dependencies: ["00000000000008B4"]
+			id: "00000000000008A1"
 			tasks: [{
-				id: "00000000000008A2",
-				type: "item",
+				id: "00000000000008A2"
+				type: "item"
 				item: {
-					id: "bloodmagic:arcaneashes",
-					Count: 1b,
+					id: "bloodmagic:arcaneashes"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
-			}],
+			}]
 			rewards: [{
-				id: "000000000000090B",
-				type: "item",
-				title: "Sigil of the Blood Lamp",
+				id: "000000000000090B"
+				type: "item"
+				title: "Sigil of the Blood Lamp"
 				item: "bloodmagic:bloodlightsigil"
 			}]
-		},
+		}
 		{
-			title: "Sentient Tools",
-			x: -4.5d,
-			y: 6.0d,
-			subtitle: "Stormbringer",
+			title: "Sentient Tools"
+			x: -4.5d
+			y: 6.0d
+			subtitle: "Stormbringer"
 			description: [
-				"The Sentient Sword, infused with Demonic Will, is as much 'alive' as the one who wields it. It hungers for more power and seeks out its own, drawing Demonic Will from slain enemies without the need for a Soul Snare. ",
-				"",
+				"The Sentient Sword, infused with Demonic Will, is as much 'alive' as the one who wields it. It hungers for more power and seeks out its own, drawing Demonic Will from slain enemies without the need for a Soul Snare. "
+				""
 				"As the amount of Will in a held Tartaric Gem increases, so too does the power of the tool. "
-			],
-			dependencies: ["00000000000008A6"],
-			id: "00000000000008A3",
+			]
+			dependencies: ["00000000000008A6"]
+			id: "00000000000008A3"
 			tasks: [{
-				id: "00000000000008A4",
-				type: "item",
+				id: "00000000000008A4"
+				type: "item"
 				item: {
-					id: "bloodmagic:soulsword",
-					Count: 1b,
+					id: "bloodmagic:soulsword"
+					Count: 1b
 					tag: {
 						Damage: 0
 					}
 				}
-			}],
+			}]
 			rewards: [
 				{
-					id: "00000000000008A5",
-					type: "item",
-					title: "Sentient Pickaxe",
+					id: "00000000000008A5"
+					type: "item"
+					title: "Sentient Pickaxe"
 					item: {
-						id: "bloodmagic:soulpickaxe",
-						Count: 1b,
+						id: "bloodmagic:soulpickaxe"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "00000000000009AE",
-					type: "command",
-					title: "Sorcerer's Delight",
-					icon: "kubejs:sorcerers_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight",
+					id: "00000000000009AE"
+					type: "command"
+					title: "Sorcerer's Delight"
+					icon: "kubejs:sorcerers_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			x: -3.5d,
-			y: 5.5d,
-			subtitle: "From a Place of Deep Suffering",
+			x: -3.5d
+			y: 5.5d
+			subtitle: "From a Place of Deep Suffering"
 			description: [
-				"Demonic Will is not some dumb substance to be manipulated like water in a bucket. It is the animating force that enables the undead to move, the extension of some demonic force long locked away. The barriers between worlds are not perfect, however, and some of their immense power leaks through.",
-				"",
-				"Tartaric Gems are a relatively safe way to coalesce this will, binding it in a way that allows the Sanguimancer to control it without being controlled in return. ",
-				"",
-				"Any Demonic Will harvested while a Tartaric Gem is in one's inventory will automatically be gathered into the gem. Making two or more such gems will be beneficial in the long run. ",
-				"",
+				"Demonic Will is not some dumb substance to be manipulated like water in a bucket. It is the animating force that enables the undead to move, the extension of some demonic force long locked away. The barriers between worlds are not perfect, however, and some of their immense power leaks through."
+				""
+				"Tartaric Gems are a relatively safe way to coalesce this will, binding it in a way that allows the Sanguimancer to control it without being controlled in return. "
+				""
+				"Any Demonic Will harvested while a Tartaric Gem is in one's inventory will automatically be gathered into the gem. Making two or more such gems will be beneficial in the long run. "
+				""
 				"Be sure to keep both upgraded."
-			],
-			dependencies: ["00000000000008B4"],
-			id: "00000000000008A6",
+			]
+			dependencies: ["00000000000008B4"]
+			id: "00000000000008A6"
 			tasks: [{
-				id: "00000000000008A7",
-				type: "item",
+				id: "00000000000008A7"
+				type: "item"
 				item: {
-					id: "bloodmagic:soulgempetty",
-					Count: 1b,
-					tag: {}
+					id: "bloodmagic:soulgempetty"
+					Count: 1b
+					tag: { }
 				}
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009AF",
-				type: "command",
-				title: "Rare Blood Magic Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				id: "00000000000009AF"
+				type: "command"
+				title: "Rare Blood Magic Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -4.5d,
-			y: 4.5d,
-			subtitle: "A Dark Flame from a World of Darkness",
+			x: -4.5d
+			y: 4.5d
+			subtitle: "A Dark Flame from a World of Darkness"
 			description: [
-				"This lumpy crystallized mess is a little less useful than one might have hoped. Perhaps with a little refinement it can be used to imbue other objects with its power?",
-				"",
-				"Build a Hellfire Forge and place the Demonic Will in the right hand slot. The other reagents will go around the edges of the circle, while the resulting item will appear in the center circle.",
-				"",
+				"This lumpy crystallized mess is a little less useful than one might have hoped. Perhaps with a little refinement it can be used to imbue other objects with its power?"
+				""
+				"Build a Hellfire Forge and place the Demonic Will in the right hand slot. The other reagents will go around the edges of the circle, while the resulting item will appear in the center circle."
+				""
 				"Note: Many recipes will require a high amount of will in the Hellforge, while only draining a small amount of that for the craft. If the craft doesn't begin immediately, check to be sure the minimum required will has been met."
-			],
-			dependencies: ["000000000000089B"],
-			id: "00000000000008B4",
+			]
+			dependencies: ["000000000000089B"]
+			id: "00000000000008B4"
 			tasks: [{
-				id: "00000000000008B5",
-				type: "item",
+				id: "00000000000008B5"
+				type: "item"
 				item: "bloodmagic:soulforge"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B0",
-				type: "command",
-				title: "Rare Blood Magic Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				id: "00000000000009B0"
+				type: "command"
+				title: "Rare Blood Magic Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 0.0d,
-			y: 3.5d,
-			subtitle: "The Writing's On The Wall",
+			x: 0.0d
+			y: 3.5d
+			subtitle: "The Writing's On The Wall"
 			description: [
-				"Slates act as a focus for magical devices and come in a variety of strengths. Producing them can be a little slow, however, and quite tedious when done by hand, as it's only possible to manually insert one item at a time.",
-				"",
-				"Thankfully, the Blood Altar allows items to be piped in, either via Hopper or most any other item transport method. When piped in, up to a full stack may be transmuted at once. Of course, the LP cost remains the same per item, but the overall time to transmute does drop since there is no pause between each item.",
-				"",
-				"Early on, it may not be wise to insert a full stack, however. Pretty Pipes has a few features that will assist here. Use the provided items to set up some simple automation. ",
-				"",
-				"● The Extraction Modules will be useful for pulling Stone from a chest and the resulting Slates from the Altar.",
-				"",
-				"● The Stack Limiters will prevent too many items going into the altar at once, and may also be used to permit only a certain number of slates in the output chest.",
-				"",
-				"● Finally, the Filter Module will be useful for defining what's allowed to go into the output chest. Between this and the stack limiter, a stock keeping system can be set up to always keep 64 of each slate in the output chest.",
-				"",
+				"Slates act as a focus for magical devices and come in a variety of strengths. Producing them can be a little slow, however, and quite tedious when done by hand, as it's only possible to manually insert one item at a time."
+				""
+				"Thankfully, the Blood Altar allows items to be piped in, either via Hopper or most any other item transport method. When piped in, up to a full stack may be transmuted at once. Of course, the LP cost remains the same per item, but the overall time to transmute does drop since there is no pause between each item."
+				""
+				"Early on, it may not be wise to insert a full stack, however. Pretty Pipes has a few features that will assist here. Use the provided items to set up some simple automation. "
+				""
+				"● The Extraction Modules will be useful for pulling Stone from a chest and the resulting Slates from the Altar."
+				""
+				"● The Stack Limiters will prevent too many items going into the altar at once, and may also be used to permit only a certain number of slates in the output chest."
+				""
+				"● Finally, the Filter Module will be useful for defining what's allowed to go into the output chest. Between this and the stack limiter, a stock keeping system can be set up to always keep 64 of each slate in the output chest."
+				""
 				"A note on Pretty Pipes: A pipe with an Extraction Module cannot input into another inventory. Two lengths of pipe are required, one to extract, and another to insert."
-			],
-			dependencies: ["000000000000089F"],
-			min_width: 300,
-			id: "00000000000008B6",
+			]
+			dependencies: ["000000000000089F"]
+			min_width: 300
+			id: "00000000000008B6"
 			tasks: [{
-				id: "00000000000008B7",
-				type: "item",
+				id: "00000000000008B7"
+				type: "item"
 				item: "bloodmagic:blankslate"
-			}],
+			}]
 			rewards: [
 				{
-					id: "00000000000008BB",
-					type: "item",
-					title: "Low Filter Module",
+					id: "00000000000008BB"
+					type: "item"
+					title: "Low Filter Module"
 					item: "prettypipes:low_filter_module"
-				},
+				}
 				{
-					id: "00000000000008BC",
-					type: "item",
-					title: "Low Extraction Module",
-					item: "prettypipes:low_extraction_module",
+					id: "00000000000008BC"
+					type: "item"
+					title: "Low Extraction Module"
+					item: "prettypipes:low_extraction_module"
 					count: 2
-				},
+				}
 				{
-					id: "00000000000008BD",
-					type: "item",
-					title: "Stack Limiter Module",
-					item: "prettypipes:stack_size_module",
+					id: "00000000000008BD"
+					type: "item"
+					title: "Stack Limiter Module"
+					item: "prettypipes:stack_size_module"
 					count: 2
-				},
+				}
 				{
-					id: "00000000000008BE",
-					type: "item",
-					title: "Pipe",
-					item: "prettypipes:pipe",
+					id: "00000000000008BE"
+					type: "item"
+					title: "Pipe"
+					item: "prettypipes:pipe"
 					count: 4
 				}
 			]
-		},
+		}
 		{
-			x: -1.5d,
-			y: 5.0d,
-			subtitle: "Mobile Blood Bank",
+			x: -1.5d
+			y: 5.0d
+			subtitle: "Mobile Blood Bank"
 			description: [
-				"The Blood Orb is a Sanguimancer's primary link to their Soul Network. Keeping an orb in one's inventory will allow it to power any personal Sigils. Similarly, keeping one in a Blood Altar will allow it to drain the LP from the Altar and transfer it into the Soul Network. ",
-				"",
+				"The Blood Orb is a Sanguimancer's primary link to their Soul Network. Keeping an orb in one's inventory will allow it to power any personal Sigils. Similarly, keeping one in a Blood Altar will allow it to drain the LP from the Altar and transfer it into the Soul Network. "
+				""
 				"Hold the Orb and right click it once to bind it. Anyone using this Orb will draw from your personal Soul Network."
-			],
-			dependencies: ["000000000000089F"],
-			id: "00000000000008BF",
+			]
+			dependencies: ["000000000000089F"]
+			id: "00000000000008BF"
 			tasks: [{
-				id: "00000000000008C0",
-				type: "item",
+				id: "00000000000008C0"
+				type: "item"
 				item: "bloodmagic:weakbloodorb"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000008C3",
-				type: "item",
-				title: "Charm of Regeneration II",
+				id: "00000000000008C3"
+				type: "item"
+				title: "Charm of Regeneration II"
 				item: {
-					id: "apotheosis:potion_charm",
-					Count: 1b,
+					id: "apotheosis:potion_charm"
+					Count: 1b
 					tag: {
-						Damage: 0,
+						Damage: 0
 						Potion: "minecraft:strong_regeneration"
 					}
 				}
 			}]
-		},
+		}
 		{
-			title: "Blood Altar MK2",
-			icon: "bloodmagic:altar",
-			x: -0.5d,
-			y: 4.5d,
-			subtitle: "A Step Above",
+			title: "Blood Altar MK2"
+			icon: "bloodmagic:altar"
+			x: -0.5d
+			y: 4.5d
+			subtitle: "A Step Above"
 			description: [
-				"With a few slates to craft into Blank Runes, the Altar can be augmented, increasing its capacity, transmutational abilities, and even allowing for specializations. ",
-				"",
-				"To upgrade to a Tier 2 Altar, 8 Runes of any type are required. The Sanguine Scientiem shows the exact structure required. Use the provided Speed runes to fill out the structure and give it a little kick. ",
-				"",
+				"With a few slates to craft into Blank Runes, the Altar can be augmented, increasing its capacity, transmutational abilities, and even allowing for specializations. "
+				""
+				"To upgrade to a Tier 2 Altar, 8 Runes of any type are required. The Sanguine Scientiem shows the exact structure required. Use the provided Speed runes to fill out the structure and give it a little kick. "
+				""
 				"Be sure to upgrade your Blood Orb as well. "
-			],
-			dependencies: ["000000000000089F"],
-			id: "00000000000008C4",
+			]
+			dependencies: ["000000000000089F"]
+			id: "00000000000008C4"
 			tasks: [{
-				id: "00000000000008C5",
-				type: "item",
-				item: "bloodmagic:blankrune",
+				id: "00000000000008C5"
+				type: "item"
+				item: "bloodmagic:blankrune"
 				count: 6L
-			}],
+			}]
 			rewards: [{
-				id: "00000000000008C6",
-				type: "item",
-				title: "Speed Rune",
-				item: "bloodmagic:speedrune",
+				id: "00000000000008C6"
+				type: "item"
+				title: "Speed Rune"
+				item: "bloodmagic:speedrune"
 				count: 2
 			}]
-		},
+		}
 		{
-			title: "Blood Altar MK3",
-			icon: "bloodmagic:altar",
-			x: 0.5d,
-			y: 5.5d,
-			subtitle: "Going to Great Heights",
+			title: "Blood Altar MK3"
+			icon: "bloodmagic:altar"
+			x: 0.5d
+			y: 5.5d
+			subtitle: "Going to Great Heights"
 			description: [
-				"Further augmenting the Blood Altar will require a trip to the Nether to gather some Glowstone. ",
-				"",
-				"Technically, the structure will accept Sea Lanterns too, but a trip into the Nether for other materials may be useful right about now. ",
-				"",
+				"Further augmenting the Blood Altar will require a trip to the Nether to gather some Glowstone. "
+				""
+				"Technically, the structure will accept Sea Lanterns too, but a trip into the Nether for other materials may be useful right about now. "
+				""
 				"Refer to the Sanguin Scientiem for a guide on how to build the Tier 3 Altar. "
-			],
-			dependencies: ["00000000000008C4"],
-			id: "00000000000008C7",
+			]
+			dependencies: ["00000000000008C4"]
+			id: "00000000000008C7"
 			tasks: [
 				{
-					id: "00000000000008C8",
-					type: "item",
-					item: "bloodmagic:blankrune",
+					id: "00000000000008C8"
+					type: "item"
+					item: "bloodmagic:blankrune"
 					count: 16L
-				},
+				}
 				{
-					id: "00000000000008C9",
-					type: "item",
-					item: "minecraft:glowstone",
+					id: "00000000000008C9"
+					type: "item"
+					item: "minecraft:glowstone"
 					count: 4L
 				}
-			],
+			]
 			rewards: [
 				{
-					id: "00000000000008CB",
-					type: "item",
-					title: "Sea Lantern",
-					item: "minecraft:sea_lantern",
+					id: "00000000000008CB"
+					type: "item"
+					title: "Sea Lantern"
+					item: "minecraft:sea_lantern"
 					count: 4
-				},
+				}
 				{
-					id: "00000000000008DA",
-					type: "item",
-					title: "Rune of Sacrifice",
-					item: "bloodmagic:sacrificerune",
+					id: "00000000000008DA"
+					type: "item"
+					title: "Rune of Sacrifice"
+					item: "bloodmagic:sacrificerune"
 					count: 4
 				}
 			]
-		},
+		}
 		{
-			x: 0.5d,
-			y: 7.0d,
-			subtitle: "Finder of Lost Things",
-			description: ["The Ritual Diviner is crucial to the construction and use of Rituals. "],
-			dependencies: ["00000000000008C7"],
-			id: "00000000000008CC",
+			x: 0.5d
+			y: 7.0d
+			subtitle: "Finder of Lost Things"
+			description: ["The Ritual Diviner is crucial to the construction and use of Rituals. "]
+			dependencies: ["00000000000008C7"]
+			id: "00000000000008CC"
 			tasks: [{
-				id: "00000000000008CD",
-				type: "item",
+				id: "00000000000008CD"
+				type: "item"
 				item: "bloodmagic:ritualdiviner"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B7",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B7"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 1.0d,
-			y: 4.5d,
-			subtitle: "Don't Let Them See The Blade",
+			x: 1.0d
+			y: 4.5d
+			subtitle: "Don't Let Them See The Blade"
 			description: [
-				"At some point, you'll likely grow tired of stabbing yourself. ",
-				"",
-				"Try stabbing something else for a change.",
-				"",
+				"At some point, you'll likely grow tired of stabbing yourself. "
+				""
+				"Try stabbing something else for a change."
+				""
 				"The Dagger of Sacrifice is used to extract LP from other entities. Be careful, it's sharp. "
-			],
-			dependencies: ["00000000000008C4"],
-			id: "00000000000008DB",
+			]
+			dependencies: ["00000000000008C4"]
+			id: "00000000000008DB"
 			tasks: [{
-				id: "00000000000008DC",
-				type: "item",
+				id: "00000000000008DC"
+				type: "item"
 				item: "bloodmagic:daggerofsacrifice"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B9",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B9"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Rituals",
-			icon: "minecraft:wheat",
-			x: 1.0d,
-			y: 8.0d,
-			subtitle: "Finding the Pulse",
+			title: "Rituals"
+			icon: "minecraft:wheat"
+			x: 1.0d
+			y: 8.0d
+			subtitle: "Finding the Pulse"
 			description: [
-				"Now the fun begins. ",
-				"",
-				"Blood Magic Rituals are capable of doing many useful things at the cost of a little LP. ",
-				"",
-				"With the basic Ritual Diviner, only a few rituals will be available, but a few notable ones are the Serenade of the Nether, which generates Lava, and the Ritual of the Green Grove which causes crops in the area to grow at an accelerated rate. ",
-				"",
+				"Now the fun begins. "
+				""
+				"Blood Magic Rituals are capable of doing many useful things at the cost of a little LP. "
+				""
+				"With the basic Ritual Diviner, only a few rituals will be available, but a few notable ones are the Serenade of the Nether, which generates Lava, and the Ritual of the Green Grove which causes crops in the area to grow at an accelerated rate. "
+				""
 				"To build a Ritual, place down the Master Ritual Stone. Next, Sneak + Right Click the Ritual Diviner in the air to choose the desired ritual. Finally, with sufficient Ritual Stones in your inventory, right click the Master Ritual Stone with the Diviner to automatically place the blocks."
-			],
-			dependencies: ["00000000000008CC"],
-			id: "00000000000008DF",
+			]
+			dependencies: ["00000000000008CC"]
+			id: "00000000000008DF"
 			tasks: [
 				{
-					id: "00000000000008E3",
-					type: "item",
+					id: "00000000000008E3"
+					type: "item"
 					item: "bloodmagic:masterritualstone"
-				},
+				}
 				{
-					id: "00000000000008E4",
-					type: "item",
-					item: "bloodmagic:ritualstone",
+					id: "00000000000008E4"
+					type: "item"
+					item: "bloodmagic:ritualstone"
 					count: 8L
 				}
-			],
+			]
 			rewards: [{
-				id: "00000000000009B6",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B6"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Activation Crystal",
-			x: 2.0d,
-			y: 8.5d,
-			subtitle: "The Spark of Life",
+			title: "Activation Crystal"
+			x: 2.0d
+			y: 8.5d
+			subtitle: "The Spark of Life"
 			description: [
-				"Now that the ritual is built, an Activation Crystal is required to actually make it start. Right click the Master Ritual Stone with the Activation Crystal. ",
-				"",
+				"Now that the ritual is built, an Activation Crystal is required to actually make it start. Right click the Master Ritual Stone with the Activation Crystal. "
+				""
 				"Once activated they will drain LP continuously, which may not always be desired. They may be turned on and off with redstone, however. "
-			],
-			dependencies: ["00000000000008DF"],
-			id: "00000000000008E5",
+			]
+			dependencies: ["00000000000008DF"]
+			id: "00000000000008E5"
 			tasks: [{
-				id: "00000000000008E6",
-				type: "item",
+				id: "00000000000008E6"
+				type: "item"
 				item: "bloodmagic:activationcrystalweak"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B5",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B5"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Blood Altar MK4",
-			icon: "bloodmagic:altar",
-			x: 1.5d,
-			y: 6.5d,
-			subtitle: "Attaining the Summit",
+			title: "Blood Altar MK4"
+			icon: "bloodmagic:altar"
+			x: 1.5d
+			y: 6.5d
+			subtitle: "Attaining the Summit"
 			description: [
-				"In order to build the fourth and final tier of Blood Altar, a bit of dabbling in Alchemy will be required. ",
-				"",
+				"In order to build the fourth and final tier of Blood Altar, a bit of dabbling in Alchemy will be required. "
+				""
 				"As with previous tiers, check the Sanguine Scientiem for a guide on how to build the upgraded altar, and be sure to upgrade your Blood Orb."
-			],
-			dependencies: ["00000000000008C7"],
-			id: "00000000000008E7",
+			]
+			dependencies: ["00000000000008C7"]
+			id: "00000000000008E7"
 			tasks: [
 				{
-					id: "00000000000008E8",
-					type: "item",
-					item: "bloodmagic:blankrune",
+					id: "00000000000008E8"
+					type: "item"
+					item: "bloodmagic:blankrune"
 					count: 28L
-				},
+				}
 				{
-					id: "000000000000090D",
-					type: "item",
-					item: "bloodmagic:bloodstonebrick",
+					id: "000000000000090D"
+					type: "item"
+					item: "bloodmagic:bloodstonebrick"
 					count: 4L
 				}
-			],
+			]
 			rewards: [{
-				id: "00000000000008EC",
-				type: "item",
-				title: "Rune of Capacity",
-				item: "bloodmagic:altarcapacityrune",
+				id: "00000000000008EC"
+				type: "item"
+				title: "Rune of Capacity"
+				item: "bloodmagic:altarcapacityrune"
 				count: 8
 			}]
-		},
+		}
 		{
-			icon: "bloodmagic:alchemicalreactionchamber",
-			x: 2.0d,
-			y: 5.5d,
-			subtitle: "Lab Safety",
+			icon: "bloodmagic:alchemicalreactionchamber"
+			x: 2.0d
+			y: 5.5d
+			subtitle: "Lab Safety"
 			description: [
-				"The Alchemical Reaction Chamber goes hand in hand with the Alchemical Workbench and Blood Altar. ",
-				"",
+				"The Alchemical Reaction Chamber goes hand in hand with the Alchemical Workbench and Blood Altar. "
+				""
 				"By using different reagents, it can enable stronger reactions that would have been unsafe to perform in the open air. "
-			],
-			dependencies: ["00000000000008C7"],
-			id: "00000000000008E9",
+			]
+			dependencies: ["00000000000008C7"]
+			id: "00000000000008E9"
 			tasks: [
 				{
-					id: "00000000000008EA",
-					type: "item",
+					id: "00000000000008EA"
+					type: "item"
 					item: "bloodmagic:alchemicalreactionchamber"
-				},
+				}
 				{
-					id: "00000000000008ED",
-					type: "item",
+					id: "00000000000008ED"
+					type: "item"
 					item: {
-						id: "bloodmagic:sanguinereverter",
-						Count: 1b,
+						id: "bloodmagic:sanguinereverter"
+						Count: 1b
 						tag: {
 							Damage: 0
 						}
 					}
-				},
+				}
 				{
-					id: "00000000000008EE",
-					type: "item",
+					id: "00000000000008EE"
+					type: "item"
 					item: "bloodmagic:weakbloodshard"
 				}
-			],
+			]
 			rewards: [{
-				id: "00000000000009BA",
-				type: "command",
-				title: "Rare Blood Magic Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				id: "00000000000009BA"
+				type: "command"
+				title: "Rare Blood Magic Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -4.0d,
-			y: 7.0d,
-			subtitle: "Out of the Frying Pan, Into the Fire",
+			x: -4.0d
+			y: 7.0d
+			subtitle: "Out of the Frying Pan, Into the Fire"
 			description: [
-				"Though keeping Demonic Will locked up is advised, an experienced Sanguimancer may choose to release some into the environment in order to refine it further. ",
-				"",
-				"Placing a Tartaric Gem into a Demon Crucible will release the Will, binding it to the local chunk. The amount of will present may be seen with the aid of a Demon Will Aura Gauge. ",
-				"",
+				"Though keeping Demonic Will locked up is advised, an experienced Sanguimancer may choose to release some into the environment in order to refine it further. "
+				""
+				"Placing a Tartaric Gem into a Demon Crucible will release the Will, binding it to the local chunk. The amount of will present may be seen with the aid of a Demon Will Aura Gauge. "
+				""
 				"Excess Will may be absorb into a Tartaric Gem again by placing a Hellfire Forge in the chunk and inserting the Tartaric Gem."
-			],
+			]
 			dependencies: [
-				"00000000000008A6",
+				"00000000000008A6"
 				"00000000000008A3"
-			],
-			id: "00000000000008EF",
+			]
+			id: "00000000000008EF"
 			tasks: [{
-				id: "00000000000008F0",
-				type: "item",
+				id: "00000000000008F0"
+				type: "item"
 				item: "bloodmagic:demoncrucible"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000008F5",
-				type: "item",
-				title: "Demon Will Gauge",
+				id: "00000000000008F5"
+				type: "item"
+				title: "Demon Will Gauge"
 				item: "bloodmagic:demonwillgauge"
 			}]
-		},
+		}
 		{
-			title: "Demon Crystallizer",
-			x: -3.0d,
-			y: 8.0d,
-			subtitle: "Stuck in a Moment",
+			title: "Demon Crystallizer"
+			x: -3.0d
+			y: 8.0d
+			subtitle: "Stuck in a Moment"
 			description: [
-				"Once released into the atmosphere, Demonic will may be coaxed to a nucleation site where it will begin to crystallize and grow. A Demon Crystallizer acts as one such site. ",
-				"",
-				"Demon Will Crystals will progress through multiple stages of growth, each denoted by a new spire forming out of the base. The first spire should never be broken off, this initial growth is costly, but greatly reduces the Will required to grow additional spires. ",
-				"",
-				"Some care must be taken when harvesting crystals; a pickaxe is exactly the wrong tool for the job. Instead, hold a Tartaric Gem in your inventory and Right Click the grown Will Crystals with an empty hand. Each click will gently snap off one of the spires. This method will never break the central spire.",
-				"",
+				"Once released into the atmosphere, Demonic will may be coaxed to a nucleation site where it will begin to crystallize and grow. A Demon Crystallizer acts as one such site. "
+				""
+				"Demon Will Crystals will progress through multiple stages of growth, each denoted by a new spire forming out of the base. The first spire should never be broken off, this initial growth is costly, but greatly reduces the Will required to grow additional spires. "
+				""
+				"Some care must be taken when harvesting crystals; a pickaxe is exactly the wrong tool for the job. Instead, hold a Tartaric Gem in your inventory and Right Click the grown Will Crystals with an empty hand. Each click will gently snap off one of the spires. This method will never break the central spire."
+				""
 				"There exists a specialized Dusk ritual that would assist in automating this process as well, which causes the secondary spires to fall off naturally. "
-			],
-			dependencies: ["00000000000008EF"],
-			min_width: 300,
-			id: "00000000000008F3",
+			]
+			dependencies: ["00000000000008EF"]
+			min_width: 300
+			id: "00000000000008F3"
 			tasks: [{
-				id: "00000000000008F4",
-				type: "item",
+				id: "00000000000008F4"
+				type: "item"
 				item: "bloodmagic:demoncrystallizer"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B2",
-				type: "command",
-				title: "Rare Blood Magic Loot Box",
-				icon: "kubejs:rare_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+				id: "00000000000009B2"
+				type: "command"
+				title: "Rare Blood Magic Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 3.5d,
-			y: 8.5d,
-			subtitle: "Lost in the Dark",
+			x: 3.5d
+			y: 8.5d
+			subtitle: "Lost in the Dark"
 			description: [
-				"The Dusk Ritual Diviner allows a Sanguimancer to construct larger, more elaborate Rituals. ",
-				"",
-				"A few notable examples:",
-				"",
-				"Ritual of the Feathered Knife - Automatically generates LP using the health of a nearby Player.",
-				"",
-				"Crack of the Fractured Crystal - Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby.",
-				"",
+				"The Dusk Ritual Diviner allows a Sanguimancer to construct larger, more elaborate Rituals. "
+				""
+				"A few notable examples:"
+				""
+				"Ritual of the Feathered Knife - Automatically generates LP using the health of a nearby Player."
+				""
+				"Crack of the Fractured Crystal - Gently harvests Demon Will Crystals in the area, dropping them on the ground nearby."
+				""
 				"Resonance of the Faceted Crystal - Facilitates the growth of specialized Demon Will Crystals."
-			],
-			dependencies: ["00000000000008E7"],
-			id: "00000000000008F8",
+			]
+			dependencies: ["00000000000008E7"]
+			id: "00000000000008F8"
 			tasks: [{
-				id: "00000000000008F9",
-				type: "item",
+				id: "00000000000008F9"
+				type: "item"
 				item: "bloodmagic:ritualdivinerdusk"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B8",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B8"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			title: "Resonance of the Faceted Crystal",
-			icon: "bloodmagic:rawdemoncrystal",
-			x: -2.0d,
-			y: 9.0d,
-			subtitle: "Touch the Rainbow",
+			title: "Resonance of the Faceted Crystal"
+			icon: "bloodmagic:rawdemoncrystal"
+			x: -2.0d
+			y: 9.0d
+			subtitle: "Touch the Rainbow"
 			description: [
-				"With Demonic Will Crystals in hand, the careful process of separating out their base essences may begin. ",
-				"",
-				"Prepare another Demon Crystallizer and construct the Resonance of the Faceted Crystal ritual. Place the Crystallizer atop the Master Ritual Stone and begin pouring Will into the chunk by way of a Crucible.",
-				"",
+				"With Demonic Will Crystals in hand, the careful process of separating out their base essences may begin. "
+				""
+				"Prepare another Demon Crystallizer and construct the Resonance of the Faceted Crystal ritual. Place the Crystallizer atop the Master Ritual Stone and begin pouring Will into the chunk by way of a Crucible."
+				""
 				"Eventually, another crystal will form here within the bounds of the ritual. Once it has fully grown, the ritual will fragment it into its elemental essences, growing four new crystal types around it which may be harvested in the same way as the previous Demonic Will Crystals. "
-			],
-			dependencies: ["00000000000008F3"],
-			id: "00000000000008FA",
+			]
+			dependencies: ["00000000000008F3"]
+			id: "00000000000008FA"
 			tasks: [
 				{
-					id: "0000000000000904",
-					type: "item",
+					id: "0000000000000904"
+					type: "item"
 					item: "bloodmagic:masterritualstone"
-				},
+				}
 				{
-					id: "0000000000000905",
-					type: "item",
-					item: "bloodmagic:ritualstone",
+					id: "0000000000000905"
+					type: "item"
+					item: "bloodmagic:ritualstone"
 					count: 20L
-				},
+				}
 				{
-					id: "000000000000090C",
-					type: "item",
+					id: "000000000000090C"
+					type: "item"
 					item: "bloodmagic:defaultcrystal"
 				}
-			],
+			]
 			rewards: [{
-				id: "00000000000009B1",
-				type: "item",
-				title: "Demon Will Crystal",
-				item: "bloodmagic:defaultcrystal",
+				id: "00000000000009B1"
+				type: "item"
+				title: "Demon Will Crystal"
+				item: "bloodmagic:defaultcrystal"
 				count: 32
 			}]
-		},
+		}
 		{
-			title: "Demonic Will",
-			x: -0.5d,
-			y: 9.5d,
-			subtitle: "Taste the Rainbow",
+			title: "Demonic Will"
+			x: -0.5d
+			y: 9.5d
+			subtitle: "Taste the Rainbow"
 			description: [
-				"Raw Demonic Will is of a more general purpose, but with the new will crystals that have been created, new abilities may be granted to our Sentient Tools.",
-				"",
-				"First, a Tartaric Gem must be prepared, either freshly created or by draining all of the Will from it in a Crucible. ",
-				"",
-				"Next, burn a few of a single type of Will in a Crucible in a chunk without any Will present. ",
-				"",
-				"Finally, place a Hellfire Forge in this chunk and use it to re-absorb the Will into the Tartaric Gem. Its color will change to match the color of the Will that was absorbed.",
-				"",
-				"With this specialized Tartaric Gem in your inventory, right clicking with any Sentient Tool will shift its attunement to that of the Tartaric Gem, thus granting that tools the abilities of the Will Type. ",
-				"",
+				"Raw Demonic Will is of a more general purpose, but with the new will crystals that have been created, new abilities may be granted to our Sentient Tools."
+				""
+				"First, a Tartaric Gem must be prepared, either freshly created or by draining all of the Will from it in a Crucible. "
+				""
+				"Next, burn a few of a single type of Will in a Crucible in a chunk without any Will present. "
+				""
+				"Finally, place a Hellfire Forge in this chunk and use it to re-absorb the Will into the Tartaric Gem. Its color will change to match the color of the Will that was absorbed."
+				""
+				"With this specialized Tartaric Gem in your inventory, right clicking with any Sentient Tool will shift its attunement to that of the Tartaric Gem, thus granting that tools the abilities of the Will Type. "
+				""
 				"Beyond this, however, these new Demonic Wills open up entirely new avenues by way of Augmenting Rituals. Refer to the Ritual Diviner for more information on how each Will type effects each ritual. "
-			],
-			dependencies: ["00000000000008FA"],
-			min_width: 300,
-			id: "00000000000008FD",
+			]
+			dependencies: ["00000000000008FA"]
+			min_width: 300
+			id: "00000000000008FD"
 			tasks: [
 				{
-					id: "00000000000008FE",
-					type: "item",
+					id: "00000000000008FE"
+					type: "item"
 					item: "bloodmagic:corrosivecrystal"
-				},
+				}
 				{
-					id: "00000000000008FF",
-					type: "item",
+					id: "00000000000008FF"
+					type: "item"
 					item: "bloodmagic:vengefulcrystal"
-				},
+				}
 				{
-					id: "0000000000000900",
-					type: "item",
+					id: "0000000000000900"
+					type: "item"
 					item: "bloodmagic:destructivecrystal"
-				},
+				}
 				{
-					id: "0000000000000901",
-					type: "item",
+					id: "0000000000000901"
+					type: "item"
 					item: "bloodmagic:steadfastcrystal"
 				}
-			],
+			]
 			rewards: [{
-				id: "00000000000009B3",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B3"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: 1.5d,
-			y: 9.5d,
-			subtitle: "Now You're Thinking With Rituals",
+			x: 1.5d
+			y: 9.5d
+			subtitle: "Now You're Thinking With Rituals"
 			description: [
-				"Setting the type of Will associated to a Ritual is performed with a Ritual Tinkerer. Sneak + Right Click the air to cycle its mode to Set Will Consumed. Place the desired Will Crystals on your hotbar (more than one is allowed) and Right Click the Master Ritual Stone of an active Ritual to set those types. ",
-				"",
+				"Setting the type of Will associated to a Ritual is performed with a Ritual Tinkerer. Sneak + Right Click the air to cycle its mode to Set Will Consumed. Place the desired Will Crystals on your hotbar (more than one is allowed) and Right Click the Master Ritual Stone of an active Ritual to set those types. "
+				""
 				"Feeding the Ritual the appropriate Will types is as simple as burning those crystals in a Hellfire Forge in the same Chunk. Of course, arranging for that to happen automatically is a whole other challenge. "
-			],
-			dependencies: ["00000000000008FD"],
-			id: "0000000000000907",
+			]
+			dependencies: ["00000000000008FD"]
+			id: "0000000000000907"
 			tasks: [{
-				id: "0000000000000908",
-				type: "item",
+				id: "0000000000000908"
+				type: "item"
 				item: "bloodmagic:ritualtinkerer"
-			}],
+			}]
 			rewards: [{
-				id: "00000000000009B4",
-				type: "command",
-				title: "Epic Blood Magic Loot Box",
-				icon: "kubejs:epic_lootbox",
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic",
+				id: "00000000000009B4"
+				type: "command"
+				title: "Epic Blood Magic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_epic"
 				player_command: false
 			}]
-		},
+		}
 		{
-			x: -1.0d,
-			y: 6.5d,
-			subtitle: "So Much Room for Activities!",
+			x: -1.0d
+			y: 6.5d
+			subtitle: "So Much Room for Activities!"
 			description: [
-				"With the tools available at a proper Alchemy Table, the Soul Network may be used to drive more complicated transmutations, from transmuting rotten flesh to proper leather, to processing ore down into higher yields than is possible in a traditional furnace. ",
-				"",
-				"A Blood Orb must be placed in the right most slot, and the reagents for the craft are spread around the six outer slots on the left hand side. The result will then appear in the middle. ",
-				"",
+				"With the tools available at a proper Alchemy Table, the Soul Network may be used to drive more complicated transmutations, from transmuting rotten flesh to proper leather, to processing ore down into higher yields than is possible in a traditional furnace. "
+				""
+				"A Blood Orb must be placed in the right most slot, and the reagents for the craft are spread around the six outer slots on the left hand side. The result will then appear in the middle. "
+				""
 				"When seeking to automate this work bench, consider using some limiting pipe similar to the earlier Blank Slates. Inputs can be piped in the sides, while the output may be extracted from the bottom. "
-			],
-			dependencies: ["00000000000008BF"],
-			id: "0000000000000909",
+			]
+			dependencies: ["00000000000008BF"]
+			id: "0000000000000909"
 			tasks: [{
-				id: "000000000000090A",
-				type: "item",
+				id: "000000000000090A"
+				type: "item"
 				item: "bloodmagic:alchemytable"
-			}],
+			}]
 			rewards: [
 				{
-					id: "00000000000009BB",
-					type: "command",
-					title: "Rare Blood Magic Loot Box",
-					icon: "kubejs:rare_lootbox",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare",
+					id: "00000000000009BB"
+					type: "command"
+					title: "Rare Blood Magic Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_blood_magic_loot_rare"
 					player_command: false
-				},
+				}
 				{
-					id: "0000000000000A7D",
-					type: "command",
-					title: "Alchemist's Delight",
-					icon: "kubejs:alchemists_delight",
-					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight",
+					id: "0000000000000A7D"
+					type: "command"
+					title: "Alchemist's Delight"
+					icon: "kubejs:alchemists_delight"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
 					player_command: false
 				}
 			]
-		},
+		}
 		{
-			icon: "bloodmagic:incensealtar",
-			x: -0.5d,
-			y: 2.0d,
-			subtitle: "Attaining Inner Peace",
+			icon: "bloodmagic:incensealtar"
+			x: -0.5d
+			y: 2.0d
+			subtitle: "Attaining Inner Peace"
 			description: [
-				"The Incense Altar serves to help calm and center a Sanguimancer prior to using the Sacrificial Knife for self-sacrifice. Standing near the altar will cause the knife to glow. It may then be used to draw a larger portion of health instantly, filling the Blood Alter with an equivalent amount of LP. ",
-				"",
+				"The Incense Altar serves to help calm and center a Sanguimancer prior to using the Sacrificial Knife for self-sacrifice. Standing near the altar will cause the knife to glow. It may then be used to draw a larger portion of health instantly, filling the Blood Alter with an equivalent amount of LP. "
+				""
 				"Refer to the Sanguine Scientiem for more information on expanding the Incense Altar, increasing its effect. "
-			],
-			dependencies: ["000000000000089F"],
-			id: "000000000000090E",
+			]
+			dependencies: ["000000000000089F"]
+			id: "000000000000090E"
 			tasks: [
 				{
-					id: "000000000000090F",
-					type: "item",
+					id: "000000000000090F"
+					type: "item"
 					item: "bloodmagic:incensealtar"
-				},
+				}
 				{
-					id: "0000000000000918",
-					type: "item",
-					item: "bloodmagic:woodbrickpath",
+					id: "0000000000000918"
+					type: "item"
+					item: "bloodmagic:woodbrickpath"
 					count: 12L
 				}
-			],
+			]
 			rewards: [{
-				id: "0000000000000919",
-				type: "item",
-				title: "Divination Sigil",
+				id: "0000000000000919"
+				type: "item"
+				title: "Divination Sigil"
 				item: "bloodmagic:divinationsigil"
 			}]
 		}

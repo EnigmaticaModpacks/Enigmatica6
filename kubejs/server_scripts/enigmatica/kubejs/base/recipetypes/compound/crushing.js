@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const recipes = [
         // {
         //     secondary_output: Item.of('minecraft:sugar').chance(0.5),

@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     const lowAmountInputs = [
         'farmersdelight:pumpkin_slice',
         'simplefarming:cantaloupe',
@@ -12,7 +12,6 @@ events.listen('recipes', (event) => {
         'atmospheric:aloe_leaves',
         'atmospheric:passionfruit',
         'atmospheric:yucca_fruit',
-        'autumnity:foul_berries',
         'betterendforge:blossom_berry',
         'betterendforge:shadow_berry_raw',
         'byg:baobab_fruit',

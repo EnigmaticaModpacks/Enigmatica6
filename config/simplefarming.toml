@@ -22,38 +22,67 @@
 	"Right-Click Harvest" = "ENABLED_DROP"
 
 ["World Generation Features"]
-	#Indicates whether berry bushes should generate
-	"Generate berry bushes" = true
-	#Indicates whether opuntias (cactus crops) should generate
-	"Generate opuntias" = true
-	#Indicates whether fruit trees should generate
-	"Generate fruit trees" = true
-	#Enable this feature to generate wild crop blocks that drop seeds.
-	#If you want to disable seed drops from grass as well, this must be done in the 'Seed Drop Settings' section.
-	"Generate wild crops" = true
-	#Indicates whether wild plants, such as quinoa and cumin, should generate
-	"Generate wild plants" = true
-	#Chance of berry bushes generating in the overworld. Higher numbers indicate a lower probability (Default: 2000)
-	#Range: > 0
-	"Probability of berry bushes generating" = 2000
-	#Chance of opuntias generating in deserts. Higher numbers indicate a lower probability (Default: 1500)
-	#Range: > 0
-	"Probability of opuntias generating" = 1500
-	#Chance of fruit trees generating in the overworld. Higher numbers indicate a lower probability (Default: 10000)
-	#Range: > 0
-	"Probability of fruit trees generating" = 10000
-	#Chance of wild crops generating in the overworld. Higher numbers indicate a lower probability (Default: 3000)
-	#Range: > 0
-	"Probability of wild crops generating" = 3000
-	#Chance of wild plants generating in the overworld. Higher numbers indicate a lower probability (Default: 8000)
-	#Range: > 0
-	"Probability of wild plants generating" = 8000
-	#Enter a dimension location to whitelist feature generation.
-	#Correct format -> "mod_id:dimension"
-	white_dim = ["minecraft:overworld"]
-	#Enter a dimension location to blacklist feature generation.
-	#Correct format -> "mod_id:dimension"
-	black_dim = ["minecraft:nether", "minecraft:end"]
+
+	["World Generation Features"."Bush generation"]
+		#Indicates whether berry bushes should generate. Ignores flags for specific bushes.
+		"Generate berry bushes" = true
+		"Generate blackberries" = true
+		"Generate blueberries" = true
+		"Generate strawberries" = true
+		"Generate raspberries" = true
+
+	["World Generation Features"."Other generation"]
+		#Indicates whether opuntias (cactus crops) should generate
+		"Generate opuntias" = true
+		#Enable this feature to generate wild crop blocks that drop seeds.
+		#If you want to disable seed drops from grass as well, this must be done in the 'Seed Drop Settings' section.
+		"Generate wild crops" = true
+
+	["World Generation Features"."Tree generation"]
+		#Indicates whether fruit trees should generate. Ignores flags for specific trees.
+		"Generate fruit trees" = true
+		"Generate apple trees" = true
+		"Generate apricot trees" = true
+		"Generate banana trees" = true
+		"Generate cherry trees" = true
+		"Generate mango trees" = true
+		"Generate olive trees" = true
+		"Generate orange trees" = true
+		"Generate pear trees" = true
+		"Generate plum trees" = true
+
+	["World Generation Features"."Plant generation"]
+		#Indicates whether wild plants should generate. Ignores flags for specific plants.
+		"Generate wild plants" = true
+		"Generate marshmallow plants" = true
+		"Generate chichory plants" = true
+		"Generate cumin plants" = true
+		"Generate quinoa plants" = true
+
+	["World Generation Features"."World generation chances"]
+		#Chance of berry bushes generating in the overworld. Higher numbers indicate a lower probability (Default: 2000)
+		#Range: > 0
+		"Probability of berry bushes generating" = 2000
+		#Chance of opuntias generating in deserts. Higher numbers indicate a lower probability (Default: 1500)
+		#Range: > 0
+		"Probability of opuntias generating" = 1500
+		#Chance of fruit trees generating in the overworld. Higher numbers indicate a lower probability (Default: 10000)
+		#Range: > 0
+		"Probability of fruit trees generating" = 10000
+		#Chance of wild crops generating in the overworld. Higher numbers indicate a lower probability (Default: 3000)
+		#Range: > 0
+		"Probability of wild crops generating" = 3000
+		#Chance of wild plants generating in the overworld. Higher numbers indicate a lower probability (Default: 8000)
+		#Range: > 0
+		"Probability of wild plants generating" = 8000
+
+	["World Generation Features"."Whitelist and blacklist settings"]
+		#Enter a dimension location to whitelist feature generation.
+		#Correct format -> "mod_id:dimension"
+		white_dim = ["minecraft:overworld"]
+		#Enter a dimension location to blacklist feature generation.
+		#Correct format -> "mod_id:dimension"
+		black_dim = ["minecraft:nether", "minecraft:end"]
 
 ["Miscellaneous Settings"]
 	#Configures if double crops (i.e. corn, sorghum, kenaf) slow down living entities (Default: false)

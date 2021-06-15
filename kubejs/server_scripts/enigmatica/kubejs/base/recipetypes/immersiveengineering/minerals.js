@@ -1,4 +1,4 @@
-events.listen('recipes', (event) => {
+onEvent('recipes', (event) => {
     let data = {
         recipes: [
             {
@@ -31,7 +31,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.75, output: { tag: 'forge:chunks/copper' } },
                     { chance: 0.25, output: { tag: 'forge:chunks/gold' } }
                 ],
-                dimensions: ['minecraft:overworld', 'undergarden:undergarden'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 30,
                 fail_chance: 0.1,
                 sample_background: 'minecraft:stone',
@@ -44,7 +44,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.25, output: { tag: 'forge:chunks/emerald' } },
                     { chance: 0.25, output: { tag: 'forge:gems/aquamarine' } }
                 ],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 5,
                 fail_chance: 0.2,
                 sample_background: 'minecraft:prismarine',
@@ -56,7 +56,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.1, output: { tag: 'forge:dusts/sulfur' } },
                     { chance: 0.2, output: { tag: 'forge:chunks/bitumen' } }
                 ],
-                dimensions: ['minecraft:overworld', 'undergarden:undergarden'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 25,
                 fail_chance: 0.05,
                 sample_background: 'minecraft:andesite',
@@ -64,10 +64,10 @@ events.listen('recipes', (event) => {
             },
             {
                 ores: [{ chance: 1.0, output: { tag: 'forge:chunks/tin' } }],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 20,
                 fail_chance: 0.05,
-                sample_background: 'embellishcraft:larvikite',
+                sample_background: 'create:limestone',
                 id: 'cassiterite'
             },
             {
@@ -76,7 +76,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.35, output: { tag: 'forge:chunks/copper' } },
                     { chance: 0.3, output: { tag: 'forge:dusts/sulfur' } }
                 ],
-                dimensions: ['minecraft:overworld', 'undergarden:undergarden'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 20,
                 fail_chance: 0.05,
                 sample_background: 'quark:jasper',
@@ -88,7 +88,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.4, output: { tag: 'forge:chunks/cinnabar' } },
                     { chance: 0.1, output: { tag: 'forge:dusts/sulfur' } }
                 ],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 15,
                 fail_chance: 0.1,
                 sample_background: 'minecraft:granite',
@@ -100,7 +100,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.2, output: { tag: 'forge:chunks/silver' } },
                     { chance: 0.4, output: { tag: 'forge:dusts/sulfur' } }
                 ],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 15,
                 fail_chance: 0.05,
                 sample_background: 'quark:slate',
@@ -168,7 +168,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.7, output: { tag: 'forge:chunks/aluminum' } },
                     { chance: 0.2, output: { tag: 'forge:chunks/iron' } }
                 ],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 20,
                 fail_chance: 0.05,
                 sample_background: 'minecraft:stone',
@@ -180,7 +180,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.35, output: { tag: 'forge:chunks/nickel' } },
                     { chance: 0.3, output: { tag: 'forge:dusts/sulfur' } }
                 ],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 25,
                 fail_chance: 0.05,
                 sample_background: 'quark:jasper',
@@ -203,7 +203,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.7, output: { tag: 'forge:chunks/uranium' } },
                     { chance: 0.3, output: { tag: 'forge:chunks/lead' } }
                 ],
-                dimensions: ['minecraft:overworld'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 10,
                 fail_chance: 0.15,
                 sample_background: 'create:weathered_limestone',
@@ -229,7 +229,7 @@ events.listen('recipes', (event) => {
                     { chance: 0.25, output: { tag: 'forge:chunks/diamond' } },
                     { chance: 0.25, output: { tag: 'forge:chunks/apatite' } }
                 ],
-                dimensions: ['minecraft:overworld', 'undergarden:undergarden'],
+                dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 5,
                 fail_chance: 0.7,
                 sample_background: 'minecraft:basalt',
@@ -288,6 +288,29 @@ events.listen('recipes', (event) => {
                 fail_chance: 0.1,
                 sample_background: 'undergarden:depthrock',
                 id: 'myrddinite'
+            },
+            {
+                ores: [
+                    { chance: 0.5, output: { tag: 'forge:ores/bone' } },
+                    { chance: 0.5, output: { tag: 'forge:ores/relic' } }
+                ],
+                dimensions: ['atum:atum'],
+                weight: 8,
+                fail_chance: 0.7,
+                sample_background: 'atum:sand',
+                id: 'horodric_digsite'
+            },
+            {
+                ores: [
+                    { chance: 0.3, output: { tag: 'forge:ores/nebu' } },
+                    { chance: 0.5, output: { tag: 'forge:chunks/gold' } },
+                    { chance: 0.2, output: { tag: 'forge:chunks/uranium' } }
+                ],
+                dimensions: ['atum:atum'],
+                weight: 8,
+                fail_chance: 0.7,
+                sample_background: 'atum:sand',
+                id: 'naqada'
             }
         ]
     };
