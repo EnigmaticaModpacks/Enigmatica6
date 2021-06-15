@@ -5,7 +5,6 @@
 	filename: "challenges"
 	title: "Challenges"
 	icon: "minecraft:dragon_head"
-	always_invisible: true
 	default_quest_shape: ""
 	quests: [
 		{
@@ -72,6 +71,42 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "18625435104F6277"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "mininggadgets:upgrade_battery_3"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 128
+									Blue: 31
+									Green: 199
+								}
+							}
+							Name: "Limitless Power Trophy"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Challenger"
@@ -90,11 +125,48 @@
 				advancement: "minecraft:end/kill_dragon"
 				criterion: ""
 			}]
+			rewards: [{
+				id: "7F0FC16030FE7D99"
+				type: "item"
+				item: {
+					id: "trofers:trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:dragon_head"
+								Count: 1b
+							}
+							DisplayScale: 0.75f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 137
+									Blue: 184
+									Green: 50
+								}
+							}
+							Name: "Ender Dragon Trophy"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Limitless Lava"
 			x: -3.0d
 			y: 0.0d
+			description: ["Fill a Supreme Black Hole Tank with Lava."]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "64A6812D6EFF4308"
 			tasks: [{
@@ -187,6 +259,42 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2CEB97E39BE8BBE5"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:lava_bucket"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 176
+									Blue: 38
+									Green: 46
+								}
+							}
+							Name: "Lava Trophy"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Limitless Water"
@@ -217,6 +325,7 @@
 			}
 			x: -3.0d
 			y: 1.0d
+			description: ["Fill a Supreme Black Hole Tank with Water."]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "6D463AE8FE933401"
 			tasks: [{
@@ -309,6 +418,42 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2B3C7A66BA863710"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:water_bucket"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 58
+									Blue: 218
+									Green: 179
+								}
+							}
+							Name: "Water Trophy"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Limitless Oil"
@@ -339,6 +484,7 @@
 			}
 			x: -3.0d
 			y: -1.0d
+			description: ["Fill a Supreme Black Hole Tank with Oil."]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "378F01CE074D79A0"
 			tasks: [{
@@ -559,6 +705,42 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "2F30217DBD536B5C"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "thermal:crude_oil_bucket"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 29
+									Blue: 33
+									Green: 29
+								}
+							}
+							Name: "Oil Trophy"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Zoology"
@@ -580,6 +762,42 @@
 				advancement: "enigmatica:husbandry/tame_all_animals"
 				criterion: ""
 			}]
+			rewards: [{
+				id: "1101CE8B58FFDB74"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "farmersdelight:horse_feed"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 249
+									Blue: 29
+									Green: 128
+								}
+							}
+							Name: "Zoology Trophy"
+						}
+					}
+				}
+			}]
 		}
 		{
 			title: "Two by Two"
@@ -600,6 +818,42 @@
 				icon: "minecraft:golden_carrot"
 				advancement: "minecraft:husbandry/bred_all_animals"
 				criterion: ""
+			}]
+			rewards: [{
+				id: "2CBDA020ED4C5E9C"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:golden_carrot"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 254
+									Blue: 61
+									Green: 216
+								}
+							}
+							Name: "Breeding Trophy"
+						}
+					}
+				}
 			}]
 		}
 		{
@@ -697,6 +951,234 @@
 							Special: 0b
 							Selected: "ARTIFACT"
 							Energy: 9223372036854775807L
+						}
+					}
+				}
+			]
+			rewards: [
+				{
+					id: "485894E4EE24E3E1"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_trident"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Riptide: 0
+										Channeling: 0b
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0b
+										Selected: "POOR"
+										Loyalty: 0
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 255
+										Blue: 255
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "23558895485FF9E0"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_drill"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 255
+										Blue: 255
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "2E4A9E23F542A9BF"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_backpack"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Id: "75cd3df4-1573-46e9-a320-cac2879426bf"
+										Energy: 0L
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 255
+										Blue: 255
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "0992ACAB5C09DAE0"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_hammer"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 1b
+										Selected: "POOR"
+										Beheading: 0
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "7EF5A4E188996336"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									id: "industrialforegoing:infinity_saw"
+									Count: 1b
+									tag: {
+										CanCharge: 1b
+										Special: 0b
+										Selected: "POOR"
+										Energy: 0L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+								DisplayScale: 0.5f
+								Animation: "fixed"
+								Colors: {
+									Bottom: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Top: {
+										Red: 249
+										Blue: 254
+										Green: 255
+									}
+									Middle: {
+										Red: 137
+										Blue: 184
+										Green: 50
+									}
+								}
+							}
 						}
 					}
 				}
@@ -806,6 +1288,41 @@
 					consume_items: true
 				}
 			]
+			rewards: [{
+				id: "75E761B2293C1707"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "minecraft:potato"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Top: {
+									Red: 255
+									Blue: 255
+									Green: 255
+								}
+								Middle: {
+									Red: 254
+									Blue: 61
+									Green: 216
+								}
+							}
+						}
+					}
+				}
+			}]
 		}
 	]
 }
