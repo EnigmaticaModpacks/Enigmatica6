@@ -77,6 +77,11 @@ onEvent('recipes', (event) => {
                 inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:gems/sulfur'],
                 outputs: [Item.of('thermal:cured_rubber', 2)],
                 id: 'thermal:machine/smelter/smelter_cured_rubber'
+            },
+            {
+                inputs: [Ingredient.of('#forge:glass'), Ingredient.of('#forge:ingots/copper', 3)],
+                outputs: [Item.of('tconstruct:tinkers_bronze_ingot', 3)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_tinkers_bronze_ingot'
             }
         ]
     };
