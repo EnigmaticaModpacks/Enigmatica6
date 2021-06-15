@@ -175,8 +175,7 @@ onEvent('recipes', (event) => {
         } catch (err) {
             secondaryOutput = fragment;
         }
-        console.log(`BM Processing Fragment: ${fragment}`);
-        console.log(`BM Processing Fragment: ${secondaryOutput}`);
+
         // Ore to Fragment in ARC
         event.recipes.bloodmagic
             .arc(Item.of(fragment, 3), `#forge:ores/${material}`, '#bloodmagic:arc/explosive', [
@@ -619,8 +618,6 @@ onEvent('recipes', (event) => {
             .id(`mekanism:processing/${material}/dirty_dust/from_clump`);
 
         // Enriching
-        console.log(`Mekanism Enriching: ${material}`);
-        console.log(`Mekanism Enriching: ${dust}`);
         event.recipes.mekanism
             .enriching(Item.of(dust), `#mekanism:dirty_dusts/${material}`)
             .id(`mekanism:processing/${material}/dust/from_dirty_dust`);
