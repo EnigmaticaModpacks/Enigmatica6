@@ -38,6 +38,7 @@ onEvent('recipes', (event) => {
         create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget);
         create_gem_ore_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
+        create_metal_block_processing(event, material, crushed_ore, ingot, nugget);
 
         //TODO
         emendatus_liquid_casting(event, material, ore, gem, liquid);
@@ -319,17 +320,6 @@ onEvent('recipes', (event) => {
             .crushing(outputs, input)
             .processingTime(processingTime)
             .id(`create:crushing/${material}_ore`);
-
-        // Washing
-        (outputs = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)]), (input = crushed_ore);
-
-        event.recipes.create.splashing(outputs, input).id(`create:splashing/crushed_${material}_ore`);
-
-        // Smelting and Blasting
-        outputs = ingot;
-
-        event.blasting(outputs, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
-        event.smelting(outputs, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
     function create_gem_ore_processing(event, material, ore, gem, dust, shard) {
@@ -394,6 +384,31 @@ onEvent('recipes', (event) => {
         }
 
         event.recipes.create.milling(outputs, input).processingTime(processingTime);
+    }
+
+    function create_metal_block_processing(event, material, crushed_ore, ingot, nugget) {
+        if (ingot == air || crushed_ore == air) {
+            return;
+        }
+
+        let output = Item.of(crushed_ore, 5),
+            input = `#forge:storage_blocks/${material}`;
+
+        // Crush Blocks to Crushed Ore
+        event.recipes.create.crushing(output, input).processingTime(400).id(`create:crushing/${material}_block`);
+
+        // Washing
+        output = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)];
+        input = crushed_ore;
+
+        event.recipes.create.splashing(output, input).id(`create:splashing/crushed_${material}`);
+
+        // Smelting and Blasting
+        output = ingot;
+        input = `#create:crushed_ores/${material}`;
+
+        event.blasting(output, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
+        event.smelting(output, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
     function emendatus_hammer_crushing(event, material, ore, dust) {
