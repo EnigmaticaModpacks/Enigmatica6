@@ -38,6 +38,7 @@ onEvent('recipes', (event) => {
         create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget);
         create_gem_ore_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
+        create_metal_block_processing(event, material, crushed_ore, ingot, nugget);
 
         //TODO
         emendatus_liquid_casting(event, material, ore, gem, liquid);
@@ -81,8 +82,6 @@ onEvent('recipes', (event) => {
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
         tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
     });
-    //TODO
-    function emendatus_liquid_casting(event, material, ore, gem, liquid) {}
 
     function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
         if (ore == air) {
@@ -319,17 +318,6 @@ onEvent('recipes', (event) => {
             .crushing(outputs, input)
             .processingTime(processingTime)
             .id(`create:crushing/${material}_ore`);
-
-        // Washing
-        (outputs = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)]), (input = crushed_ore);
-
-        event.recipes.create.splashing(outputs, input).id(`create:splashing/crushed_${material}_ore`);
-
-        // Smelting and Blasting
-        outputs = ingot;
-
-        event.blasting(outputs, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
-        event.smelting(outputs, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
     function create_gem_ore_processing(event, material, ore, gem, dust, shard) {
@@ -394,6 +382,31 @@ onEvent('recipes', (event) => {
         }
 
         event.recipes.create.milling(outputs, input).processingTime(processingTime);
+    }
+
+    function create_metal_block_processing(event, material, crushed_ore, ingot, nugget) {
+        if (ingot == air || crushed_ore == air) {
+            return;
+        }
+
+        let output = Item.of(crushed_ore, 5),
+            input = `#forge:storage_blocks/${material}`;
+
+        // Crush Blocks to Crushed Ore
+        event.recipes.create.crushing(output, input).processingTime(400).id(`create:crushing/${material}_block`);
+
+        // Washing
+        output = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)];
+        input = crushed_ore;
+
+        event.recipes.create.splashing(output, input).id(`create:splashing/crushed_${material}`);
+
+        // Smelting and Blasting
+        output = ingot;
+        input = `#create:crushed_ores/${material}`;
+
+        event.blasting(output, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
+        event.smelting(output, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
     function emendatus_hammer_crushing(event, material, ore, dust) {
@@ -964,7 +977,16 @@ onEvent('recipes', (event) => {
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || ingot == air) {
+        if (ingot == air) {
+            return;
+        }
+
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -985,7 +1007,7 @@ onEvent('recipes', (event) => {
         recipes.forEach((recipe) => {
             event.recipes.thermal
                 .chiller(recipe.output, [
-                    Fluid.of(`tconstruct:molten_${material}`, recipe.amount),
+                    Fluid.of(`${modId}:molten_${material}`, recipe.amount),
                     `tconstruct:${recipe.type}_cast`
                 ])
                 .energy(recipe.energy)
@@ -994,7 +1016,16 @@ onEvent('recipes', (event) => {
     }
 
     function thermal_gem_casting(event, material, gem, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || gem == air) {
+        if (gem == air) {
+            return;
+        }
+
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -1020,7 +1051,7 @@ onEvent('recipes', (event) => {
         recipes.forEach((recipe) => {
             event.recipes.thermal
                 .chiller(recipe.output, [
-                    Fluid.of(`tconstruct:molten_${material}`, recipe.amount),
+                    Fluid.of(`${modId}:molten_${material}`, recipe.amount),
                     `tconstruct:${recipe.type}_cast`
                 ])
                 .energy(recipe.energy)
@@ -1029,7 +1060,15 @@ onEvent('recipes', (event) => {
     }
 
     function tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || ingot == air) {
+        if (ingot == air) {
+            return;
+        }
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -1059,7 +1098,7 @@ onEvent('recipes', (event) => {
                         },
                         cast_consumed: cast == 'sand' ? true : false,
                         fluid: {
-                            name: `tconstruct:molten_${material}`,
+                            name: `${modId}:molten_${material}`,
                             amount: recipe.amount
                         },
                         result: recipe.output,
@@ -1072,7 +1111,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'tconstruct:casting_basin',
                 fluid: {
-                    name: `tconstruct:molten_${material}`,
+                    name: `${modId}:molten_${material}`,
                     amount: 1296
                 },
                 result: block,
@@ -1082,7 +1121,15 @@ onEvent('recipes', (event) => {
     }
 
     function tconstruct_gem_casting(event, material, block, gem, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || gem == air) {
+        if (gem == air) {
+            return;
+        }
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -1115,7 +1162,7 @@ onEvent('recipes', (event) => {
                             tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
                         },
                         cast_consumed: cast == 'sand' ? true : false,
-                        fluid: { name: `tconstruct:molten_${material}`, amount: recipe.amount },
+                        fluid: { name: `${modId}:molten_${material}`, amount: recipe.amount },
                         result: recipe.output,
                         cooling_time: recipe.cooling
                     })
@@ -1125,10 +1172,13 @@ onEvent('recipes', (event) => {
         event
             .custom({
                 type: 'tconstruct:casting_basin',
-                fluid: { name: `tconstruct:molten_${material}`, amount: 1296 },
+                fluid: { name: `${modId}:molten_${material}`, amount: 1296 },
                 result: block,
                 cooling_time: 193
             })
             .id(`tconstruct:smeltery/casting/${material}/block`);
     }
+
+    //TODO
+    function emendatus_liquid_casting(event, material, ore, gem, liquid) {}
 });
