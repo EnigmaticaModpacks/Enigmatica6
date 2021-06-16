@@ -405,6 +405,33 @@ onEvent('recipes', (event) => {
         },
         {
             output: {
+                tag: 'forge:chunks/cobalt'
+            },
+            rarity: [
+                {
+                    whitelist: {
+                        type: 'minecraft:worldgen/biome',
+                        values: nether_biomes
+                    },
+                    blacklist: {},
+                    depth_min: 20,
+                    depth_max: 53,
+                    weight: 3
+                },
+                {
+                    whitelist: {},
+                    blacklist: endBiomes,
+                    depth_min: 0,
+                    depth_max: 255,
+                    weight: 1
+                }
+            ],
+            catalyst: {
+                item: 'industrialforegoing:laser_lens11'
+            }
+        },
+        {
+            output: {
                 tag: 'forge:chunks/redstone'
             },
             rarity: [
