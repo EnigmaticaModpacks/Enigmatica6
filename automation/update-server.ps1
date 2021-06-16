@@ -152,9 +152,10 @@ if (Update-IsAvailable) {
 	Backup-ModsFolder
 	Backup-WorldFolder
 	Pull-Changes
-	Move-ServerFiles
-	Remove-ClientOnlyMods
-	Copy-Overrides
 }
+
+Move-ServerFiles
+Remove-ClientOnlyMods
+Copy-Overrides
 
 Set-Location $initialLocation
