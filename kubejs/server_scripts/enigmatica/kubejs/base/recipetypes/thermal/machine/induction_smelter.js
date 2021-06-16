@@ -79,7 +79,7 @@ onEvent('recipes', (event) => {
                 id: 'thermal:machine/smelter/smelter_cured_rubber'
             },
             {
-                inputs: [Ingredient.of('#forge:glass'), Ingredient.of('#forge:ingots/copper', 3)],
+                inputs: ['#forge:glass', Ingredient.of('#forge:ingots/copper', 3)],
                 outputs: [Item.of('tconstruct:tinkers_bronze_ingot', 3)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_tinkers_bronze_ingot'
             },
@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
                 inputs: [
                     Ingredient.of('#forge:ingots/copper', 2),
                     Ingredient.of('#forge:ingots/cobalt', 1),
-                    Ingredient.of('#forge:obsidian')
+                    '#forge:obsidian'
                 ],
                 outputs: [Item.of('tconstruct:hepatizon_ingot', 4)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_hepatizon_ingot'
@@ -96,7 +96,7 @@ onEvent('recipes', (event) => {
                 inputs: [
                     Ingredient.of('#forge:ingots/gold', 1),
                     Ingredient.of('#forge:ingots/cobalt', 1),
-                    Ingredient.of('minecraft:magma_cream')
+                    'minecraft:magma_cream'
                 ],
                 outputs: [Item.of('tconstruct:queens_slime_ingot', 2)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_queens_slime_ingot'
@@ -105,6 +105,11 @@ onEvent('recipes', (event) => {
                 inputs: ['#forge:ingots/iron', 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
                 outputs: [Item.of('tconstruct:pig_iron_ingot', 2)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_pig_iron_ingot'
+            },
+            {
+                inputs: ['#forge:ingots/iron', 'tconstruct:sky_slime_ball', 'tconstruct:seared_brick'],
+                outputs: [Item.of('tconstruct:slimesteel_ingot', 2)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_slimesteel_ingot'
             }
         ]
     };
