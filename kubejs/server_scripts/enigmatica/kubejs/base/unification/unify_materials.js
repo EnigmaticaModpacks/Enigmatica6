@@ -1172,7 +1172,7 @@ onEvent('recipes', (event) => {
         event
             .custom({
                 type: 'tconstruct:casting_basin',
-                fluid: { name: `tconstruct:molten_${material}`, amount: 1296 },
+                fluid: { name: `${modId}:molten_${material}`, amount: 1296 },
                 result: block,
                 cooling_time: 193
             })
