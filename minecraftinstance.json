@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-06-16T19:14:40.6782829Z",
-  "playedCount": 180,
+  "lastPlayed": "2021-06-16T19:50:18.0463936Z",
+  "playedCount": 181,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -48,7 +48,7 @@
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "2021-06-16T19:14:33.0636968Z",
-  "lastRefreshAttempt": "2021-06-16T21:14:34.9812835+02:00",
+  "lastRefreshAttempt": "2021-06-16T21:41:10.4968005+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -12026,6 +12026,98 @@
       "installedTargets": null
     },
     {
+      "addonID": 331936,
+      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
+      "installedFile": {
+        "id": 3346836,
+        "displayName": "citadel-1.7.1-1.16.5",
+        "fileName": "citadel-1.7.1-1.16.5.jar",
+        "fileDate": "2021-06-10T18:32:53.507Z",
+        "fileLength": 465097,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3346/836/citadel-1.7.1-1.16.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 3346837,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 4009696870,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 34669009,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1768348124,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.mixins.json",
+            "fingerprint": 3805323983,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.png",
+            "fingerprint": 1603167710,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.refmap.json",
+            "fingerprint": 853231933,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2703827617,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "citadel-1.7.1-1.16.5.jar"
+      },
+      "dateInstalled": "2021-06-16T19:49:39.6329127Z",
+      "dateUpdated": "2021-06-16T19:49:39.6479115Z",
+      "dateLastUpdateAttempted": "2021-06-16T19:49:39.6479115Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 251407,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
@@ -15871,7 +15963,7 @@
       "dateInstalled": "2021-06-16T19:14:23.2976921Z",
       "dateUpdated": "2021-06-16T19:14:23.3116927Z",
       "dateLastUpdateAttempted": "2021-06-16T19:14:23.3116927Z",
-      "status": 5,
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15880,7 +15972,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 388172,
@@ -16923,7 +17015,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 301034,
@@ -21673,7 +21765,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 328085,
@@ -22270,7 +22362,7 @@
       "dateInstalled": "2021-05-13T19:57:42.266783Z",
       "dateUpdated": "2021-05-13T19:57:42.266783Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24297,7 +24389,7 @@
       "dateInstalled": "2021-06-15T19:32:54.065341Z",
       "dateUpdated": "2021-06-15T19:32:54.065341Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
