@@ -6,6 +6,12 @@ We recommend that you start a new world for this update, but old worlds should s
 If you choose to stay with an old world, please make a backup before updating,
 and read the changelog so you're aware of all the changes that could affect your world.
 
+
+
+Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
+
+
+
 **New Mods**
 
 * [Atum 2: Return to the Sands](https://www.curseforge.com/minecraft/mc-mods/atum)
