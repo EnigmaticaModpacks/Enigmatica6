@@ -1026,7 +1026,7 @@
 			tasks: [{
 				id: "0000000000000928"
 				type: "item"
-				title: "Any forge:tools/pickaxe"
+				title: "Any Pickaxe"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1119,7 +1119,7 @@
 			tasks: [{
 				id: "0000000000000938"
 				type: "item"
-				title: "Any forge:weapons"
+				title: "Any Melee Weapon"
 				item: {
 					id: "itemfilters:tag"
 					Count: 1b
@@ -1313,12 +1313,11 @@
 			rewards: [{
 				id: "0000000000000A39"
 				type: "item"
-				title: "Stone Hammer"
 				item: {
-					id: "vanillahammers:stone_hammer"
+					id: "botania:brew_flask"
 					Count: 1b
 					tag: {
-						Damage: 0
+						brewKey: "botania:absorption"
 					}
 				}
 			}]
