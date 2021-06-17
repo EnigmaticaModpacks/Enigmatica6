@@ -32,7 +32,7 @@ Added Chemical Tank Integration
 
 Fix: inventory manager NullPointerException when using removeItemFromPlayer
 
-This is the last update for 0.6, I will not work on the version 0.7
+This is the last update for 0.6, I will now work on the version 0.7
 
 #### [8 more entries](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals/files/all)
 
@@ -799,16 +799,14 @@ MAJOR UPDATE! Will break old worlds!
 
 #### [2 more entries](https://www.curseforge.com/minecraft/mc-mods/ftb-essentials-forge/files/all)
 
-### [FTB Library (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) ([ftb-gui-library-1605.2.1.41-forge.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/3237039)⟶[ftb-library-forge-1605.3.1-build.23.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/3344876))
+### [FTB Library (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge) ([ftb-gui-library-1605.2.1.41-forge.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/3237039)⟶[ftb-library-forge-1605.3.1-build.26.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/3355311))
 
-#### [ftb-library-forge-1605.3.1-build.23.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/3344876)
+#### [ftb-library-forge-1605.3.1-build.26.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/3355311)
 
-* Fixed cursor and made it nullable - LatvianModder
-* Added CursorType. If this doesnt work with first try we're all doomed - LatvianModder
-* Removed ComponentTextField as its no longer needed - LatvianModder
-* Added minWidth to text fields - LatvianModder
+* Updated JDK - LatvianModder
+* Buttons now have hand cursor - LatvianModder
 
-#### [8 more entries](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/all)
+#### [9 more entries](https://www.curseforge.com/minecraft/mc-mods/ftb-library-forge/files/all)
 
 ### [FTB Quests (Forge)](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge) ([ftb-quests-1605.2.1-build.39-forge.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge/files/3249257)⟶[ftb-quests-forge-1605.3.2-build.18.jar](https://www.curseforge.com/minecraft/mc-mods/ftb-quests-forge/files/3347041))
 
@@ -840,6 +838,25 @@ MAJOR UPDATE! Will most likely break old worlds
 * Oops. Fixed build number - LatvianModder
 
 #### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/ftb-ultimine-forge/files/all)
+
+### [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight) ([Farmer's Delight 0.4.3 - 1.16.5](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/3310983)⟶[Farmer's Delight 0.4.4 - 1.16.5](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/3354667))
+
+#### [Farmer's Delight 0.4.4 - 1.16.5](https://www.curseforge.com/minecraft/mc-mods/farmers-delight/files/3354667)
+
+0.4.4
+
+* Added a tooltip over the Cooking Pot's heat indicator, describing that it needs heat to function;
+* Added the offhand_equipment tag:
+* Items in this tag cannot be placed in a Cutting Board from the off-hand;
+* Defaults to Shields and Create's Extendo Grip;
+* Added translations:
+* pt_PT (thank you, axelrodii!)
+* tr_TR (thank you, Ali!)
+* it_IT (thank you, simcosmico!)
+* Basic Spanish lang for remaining 'es_' countries, subject to updates (thank you, FrannDzs!)
+* Updated translations:
+* es_ES (thank you, FrannDzs!)
+* de_DE (thank you, DaLumma!)
 
 ### [Farming for Blockheads](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads) ([FarmingForBlockheads_1.16.3-7.3.0.jar](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/3222141)⟶[FarmingForBlockheads_1.16.5-7.3.1.jar](https://www.curseforge.com/minecraft/mc-mods/farming-for-blockheads/files/3332379))
 
@@ -1136,17 +1153,14 @@ Fixed inventory desync when control-clicking a crafting result slot
 
 #### [3 more entries](https://www.curseforge.com/minecraft/mc-mods/just-enough-resources-jer/files/all)
 
-### [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge) ([Kotlin for Forge 1.12.0](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3299774)⟶[Kotlin for Forge 1.12.1](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3331341))
+### [Kotlin for Forge](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge) ([Kotlin for Forge 1.12.0](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3299774)⟶[Kotlin for Forge 1.12.2](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3354537))
 
-#### [Kotlin for Forge 1.12.1](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3331341)
+#### [Kotlin for Forge 1.12.2](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/3354537)
 
-1 - Updated to Kotlin 1.5.10, Updated to coroutines 1.5.0, Updated to serialization 1.2.1
+* Added support for using Mod.EventBusSubscriber as a file annotation. See AutoKotlinEventBusSubscriber.kt KDoc for example.
+* Made registryName and registry properties of ObjectHolderDelegate public.
 
-2 - Added a missing serialization library that went missing in 1.12.0
-
-3 - Finally removed the `MINECRAFT` thing that was deprecated a while ago
-
-4 - Improved the buildscript and fixed some deprecation warnings, thanks Username404-59 on GitHub
+#### [1 more entry](https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/files/all)
 
 ### [KubeJS (Forge)](https://www.curseforge.com/minecraft/mc-mods/kubejs-forge) ([kubejs-1605.3.8-build.198-forge.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-forge/files/3312706)⟶[kubejs-forge-1605.3.10-build.25.jar](https://www.curseforge.com/minecraft/mc-mods/kubejs-forge/files/3351735))
 
@@ -1825,6 +1839,14 @@ v 0.13.2: some bug fixes
 [Added missing localizations for entities](https://github.com/Buuz135/SushiGoCrafting/commit/2f578379d07a78d187fef81c5ba965d66a85a5a9)
 
 [Added missing cooler box drop table,](https://github.com/Buuz135/SushiGoCrafting/commit/f450eb64d027ac0f32ff9d0c1f3081344d0f5c5d) [closes](https://github.com/Buuz135/SushiGoCrafting/commit/f450eb64d027ac0f32ff9d0c1f3081344d0f5c5d) [#5](https://github.com/Buuz135/SushiGoCrafting/issues/5)
+
+### [Tactical Fishing](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing) ([TacticalFishing-1.16-v1.0.jar](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing/files/3253439)⟶[TacticalFishing-1.16-v1.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing/files/3354343))
+
+#### [TacticalFishing-1.16-v1.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/tactical-fishing/files/3354343)
+
+Micro Update
+
+* Now has an Advancement "Advanced Tactics" so in large mod packs you can be aware the mod exists
 
 ### [Tetra](https://www.curseforge.com/minecraft/mc-mods/tetra) ([tetra-1.16.5-3.10.0.jar](https://www.curseforge.com/minecraft/mc-mods/tetra/files/3297566)⟶[tetra-1.16.5-3.12.0.jar](https://www.curseforge.com/minecraft/mc-mods/tetra/files/3354314))
 

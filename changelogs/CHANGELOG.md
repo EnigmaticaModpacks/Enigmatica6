@@ -31,6 +31,7 @@ and read the changelog so you're aware of all the changes that could affect your
 **Improvements/Changes**
 
 - Additional Tetra Hammers [\#2341](https://github.com/NillerMedDild/Enigmatica6/issues/2341)
+- Add Cobalt to IF Laser Drill [#2424](https://github.com/NillerMedDild/Enigmatica6/pull/2427) ([MuteTiefling](https://github.com/MuteTiefling))
 - Add Tinkers Bees [\#2392](https://github.com/NillerMedDild/Enigmatica6/pull/2392) ([TemperedFool](https://github.com/TemperedFool))
 - Adventure/BountyBoard [\#1460](https://github.com/NillerMedDild/Enigmatica6/issues/1460)
 - Adventure Quests Updates [\#2339](https://github.com/NillerMedDild/Enigmatica6/pull/2339) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -94,8 +95,10 @@ and read the changelog so you're aware of all the changes that could affect your
 - Fix server\_files/start-server.sh [\#2403](https://github.com/NillerMedDild/Enigmatica6/pull/2403) ([Infinoid](https://github.com/Infinoid))
 - Fix Soupy Bee [\#2379](https://github.com/NillerMedDild/Enigmatica6/pull/2379) ([TemperedFool](https://github.com/TemperedFool))
 - Issue with level-type in Dev version [\#2424](https://github.com/NillerMedDild/Enigmatica6/issues/2424)
+- Minecraft:nether\_bricks is missing \#forge:netherbricks tag [\#2432](https://github.com/NillerMedDild/Enigmatica6/issues/2432)
 - New worlds ignore difficulty setting when made [\#1462](https://github.com/NillerMedDild/Enigmatica6/issues/1462)
 - No milk block recipe and liquid milk recipe [\#2378](https://github.com/NillerMedDild/Enigmatica6/issues/2378)
+- Obsolete Vanilla Hammer quest reward [\#2431](https://github.com/NillerMedDild/Enigmatica6/issues/2431)
 - Prismarine Shard dupe bug [\#2359](https://github.com/NillerMedDild/Enigmatica6/issues/2359)
 - Remove book o enchanting trinket from random pool [\#2328](https://github.com/NillerMedDild/Enigmatica6/pull/2328) ([theboo](https://github.com/theboo))
 - RFtools Modular Storage Dupe Bug [\#2389](https://github.com/NillerMedDild/Enigmatica6/issues/2389)
