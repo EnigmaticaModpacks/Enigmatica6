@@ -94,6 +94,30 @@ const metals = [
     'zinc'
 ];
 
+// Defines melting point of various materials
+const meltingPoints = {
+    utherium: { temp: 1212 },
+    thallasium: { temp: 800 },
+    signalum: { temp: 1272 },
+    regalium: { temp: 900 },
+    nebu: { temp: 1400 },
+    lumium: { temp: 1354 },
+    iesnium: { temp: 1450 },
+    froststeel: { temp: 1380 },
+    enderium: { temp: 1450 },
+    cloggrum: { temp: 800 },
+    sulfur: { temp: 115 },
+    redstone: { temp: 660 },
+    potassium_nitrate: { temp: 334 },
+    lapis: { temp: 115 },
+    fluorite: { temp: 1418 },
+    dimensional: { temp: 1450 },
+    coal: { temp: 1149 },
+    cinnabar: { temp: 580 },
+    bitumen: { temp: 115 },
+    apatite: { temp: 1660 }
+};
+
 // Defines the secondary metal each metal type will produce.
 const oreProcessingSecondaries = {
     iron: {

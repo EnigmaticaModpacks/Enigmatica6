@@ -271,6 +271,7 @@ const fluidsToHide = [
     'thermal:crude_oil',
     'immersivepetroleum:oil',
     'emendatusenigmatica:molten_zinc',
+    'emendatusenigmatica:molten_quartz',
     'emendatusenigmatica:molten_uranium',
     'emendatusenigmatica:molten_tin',
     'emendatusenigmatica:molten_steel',
