@@ -25,8 +25,6 @@ onEvent('recipes', (event) => {
         let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
         let plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
 
-        let liquid = Fluid.of(`emendatusenigmatica:molten_${material}`);
-
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 
         betterend_alloys(event, material, ore, ingot);
@@ -41,7 +39,7 @@ onEvent('recipes', (event) => {
         create_metal_block_processing(event, material, crushed_ore, ingot, nugget);
 
         //TODO
-        emendatus_liquid_casting(event, material, ore, gem, liquid);
+        emendatus_item_melting(event, material, block, ingot, nugget, gem, dust, gear, rod, plate);
         emendatus_hammer_crushing(event, material, ore, dust);
         emendatus_shapeless_transform(event, material, ore, chunk);
 
@@ -407,6 +405,63 @@ onEvent('recipes', (event) => {
 
         event.blasting(output, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
         event.smelting(output, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
+    }
+
+    function emendatus_item_melting(event, material, block, ingot, nugget, gem, dust, gear, rod, plate) {
+        let modId;
+
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            return;
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
+            return;
+        }
+
+        let recipes = [],
+            fluid = `${modId}:molten_${material}`,
+            temp = 900;
+
+        if (meltingPoints[material]) {
+            temp = meltingPoints[material].temp;
+        }
+
+        if (block != air) {
+            recipes.push({ type: 'block', amount: 1296, input: `forge:storage_blocks/${material}`, time: 171 });
+        }
+        if (gem != air) {
+            recipes.push({ type: 'gem', amount: 144, input: `forge:gems/${material}`, time: 57 });
+        }
+        if (ingot != air) {
+            recipes.push({ type: 'ingot', amount: 144, input: `forge:ingots/${material}`, time: 57 });
+        }
+        if (dust != air) {
+            recipes.push({ type: 'dust', amount: 144, input: `forge:dusts/${material}`, time: 43 });
+        }
+        if (nugget != air) {
+            recipes.push({ type: 'nugget', amount: 16, input: `forge:nuggets/${material}`, time: 19 });
+        }
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, input: `forge:gears/${material}`, time: 114 });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, input: `forge:rods/${material}`, time: 11 });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, input: `forge:plates/${material}`, time: 80 });
+        }
+
+        recipes.forEach((recipe) => {
+            event
+                .custom({
+                    type: 'tconstruct:melting',
+                    ingredient: { tag: recipe.input },
+                    result: { fluid: fluid, amount: recipe.amount },
+                    temperature: temp,
+                    time: 43
+                })
+                .id(`tconstruct:smeltery/melting/${material}/${recipe.type}`);
+        });
     }
 
     function emendatus_hammer_crushing(event, material, ore, dust) {
@@ -1178,7 +1233,4 @@ onEvent('recipes', (event) => {
             })
             .id(`tconstruct:smeltery/casting/${material}/block`);
     }
-
-    //TODO
-    function emendatus_liquid_casting(event, material, ore, gem, liquid) {}
 });
