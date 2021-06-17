@@ -1848,7 +1848,7 @@
 	["Cobalt Config"."The Nether"]
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
-		nether_size = 2
+		nether_size = 3
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
 		#Spread Amount (# of Y-Levels above and below the Baseline) [Default: 16]
@@ -1859,7 +1859,7 @@
 		nether_base = 32
 		#Average Ores per Chunk [Default: 4]
 		#Range: 0 ~ 64
-		nether_count = 8
+		nether_count = 14
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
 		generate_in_the_nether = true
 		#List of biome IDs in which the ore is not allowed to generate.
