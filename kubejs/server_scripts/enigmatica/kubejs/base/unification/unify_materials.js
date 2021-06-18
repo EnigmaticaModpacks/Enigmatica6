@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
         create_metal_block_processing(event, material, crushed_ore, ingot, nugget);
 
         //TODO
-        emendatus_item_melting(event, material, block, ingot, nugget, gem, dust, gear, rod, plate);
+        emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate);
         emendatus_hammer_crushing(event, material, ore, dust);
         emendatus_shapeless_transform(event, material, ore, chunk);
 
@@ -407,7 +407,7 @@ onEvent('recipes', (event) => {
         event.smelting(output, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
-    function emendatus_item_melting(event, material, block, ingot, nugget, gem, dust, gear, rod, plate) {
+    function emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate) {
         let modId;
 
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
@@ -460,8 +460,37 @@ onEvent('recipes', (event) => {
                     temperature: temp,
                     time: 43
                 })
-                .id(`tconstruct:smeltery/melting/${material}/${recipe.type}`);
+                .id(`tconstruct:smeltery/melting/metal/${material}/${recipe.type}`);
         });
+
+        if (ore != air && ingot != air) {
+            var materialProperties, secondaryFluid;
+
+            try {
+                materialProperties = oreProcessingSecondaries[material];
+            } catch (err) {
+                return;
+            }
+
+            if (Fluid.exists(`tconstruct:molten_${materialProperties.secondary}`)) {
+                secondaryFluid = `tconstruct:molten_${materialProperties.secondary}`;
+            } else if (Fluid.exists(`emendatusenigmatica:molten_${materialProperties.secondary}`)) {
+                secondaryFluid = `emendatusenigmatica:molten_${materialProperties.secondary}`;
+            } else {
+                return;
+            }
+
+            event
+                .custom({
+                    type: 'tconstruct:ore_melting',
+                    ingredient: { tag: `forge:ores/${material}` },
+                    result: { fluid: fluid, amount: 144 },
+                    temperature: temp,
+                    time: 98,
+                    byproducts: [{ fluid: secondaryFluid, amount: 48 }]
+                })
+                .id(`tconstruct:smeltery/melting/metal/${material}/ore`);
+        }
     }
 
     function emendatus_hammer_crushing(event, material, ore, dust) {
