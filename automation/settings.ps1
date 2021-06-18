@@ -140,7 +140,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"entity_culling-client.toml",
 	"terraforged/performance_internal.conf",
 	"gravestone-client.toml",
-	"jecalculation/record.json"
+	"jecalculation/record.json",
+	"topaddons-client.toml"
 )
 
 #=====================================================================//
