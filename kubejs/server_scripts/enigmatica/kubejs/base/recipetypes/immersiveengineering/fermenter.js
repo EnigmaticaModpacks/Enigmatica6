@@ -71,13 +71,7 @@ onEvent('recipes', (event) => {
         'upgrade_aquatic:mulberry'
     ];
     /*
-		const recipes = [
-			{
-				input: 'simplefarming:apricot',
-				fluid: 'immersiveengineering:ethanol',
-				amount: 80,
-				energy: 6400
-			}
+		const recipes = [{	input: 'simplefarming:apricot',	fluid: 'immersiveengineering:ethanol',	amount: 80,	energy: 6400}
 		];
 	*/
 
