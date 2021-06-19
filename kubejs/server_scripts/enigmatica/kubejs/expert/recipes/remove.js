@@ -11,10 +11,11 @@ onEvent('recipes', (event) => {
         'astralsorcery:shaped/black_marble/black_marble_raw',
         'astralsorcery:altar/black_marble_raw',
         'astralsorcery:shaped/wand',
-        'immersiveengineering:crafting/concrete'
+        'immersiveengineering:crafting/concrete',
+        /create:crafting\/materials\/andesite_alloy/
     ];
 
-    const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
+    const outputRemovals = ['tiab:timeinabottle'];
 
     const patchouli_safe_removals = [
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
