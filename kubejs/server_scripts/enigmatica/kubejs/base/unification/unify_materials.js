@@ -74,6 +74,7 @@ onEvent('recipes', (event) => {
 
         thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
         thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
+        thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
         thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate);
         thermal_gem_casting(event, material, gem, gear, rod, plate);
 
@@ -1058,6 +1059,31 @@ onEvent('recipes', (event) => {
             type: 'thermal:pulverizer'
         });
         event.recipes.thermal.pulverizer(outputs, input).experience(experience);
+    }
+
+    function thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+
+        var input,
+            output = Item.of(dust, 1);
+        if (ingot != air) {
+            type = 'ingot';
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+            type = 'gem';
+        } else {
+            return;
+        }
+
+        event.remove({
+            input: input,
+            mod: 'thermal',
+            type: 'thermal:pulverizer'
+        });
+        event.recipes.thermal.pulverizer(output, input);
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
