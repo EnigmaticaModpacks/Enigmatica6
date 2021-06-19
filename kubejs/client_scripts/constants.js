@@ -256,6 +256,10 @@ var itemsToHide = [
     'thermal:press_packing_2x2_die',
     'thermal:press_unpacking_die',
     'thermal:rubber',
+    'thermal:niter',
+    'thermal:cinnabar',
+    'thermal:apatite',
+    'thermal:sulfur',
 
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
