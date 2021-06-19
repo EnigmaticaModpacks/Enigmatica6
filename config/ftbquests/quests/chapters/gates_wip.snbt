@@ -219,7 +219,7 @@
 		{
 			title: "RFTools"
 			x: -1.5d
-			y: 3.0d
+			y: 4.5d
 			subtitle: "But what does the Tools stand for?"
 			dependencies: ["0000000000000FBF"]
 			id: "0000000000000FD7"
@@ -246,7 +246,7 @@
 		{
 			title: "PneumaticCraft"
 			x: -1.5d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "Under Pressure"
 			dependencies: ["0000000000000FD7"]
 			id: "0000000000000FDB"
@@ -374,6 +374,19 @@
 				id: "590186031154D036"
 				type: "item"
 				item: "fluxnetworks:flux_core"
+			}]
+		}
+		{
+			title: "Pedestals"
+			icon: "pedestals:pedestal/stone333"
+			x: 3.0d
+			y: 6.0d
+			dependencies: ["0000000000000FC9"]
+			id: "6CA3B688C7701907"
+			tasks: [{
+				id: "5727C862289731E8"
+				type: "item"
+				item: "pedestals:pedestal/stone333"
 			}]
 		}
 	]
