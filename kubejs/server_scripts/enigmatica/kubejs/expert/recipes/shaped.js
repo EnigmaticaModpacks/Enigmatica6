@@ -665,6 +665,44 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:blastbrick'
             },
             id: 'immersiveengineering:crafting/alloybrick'
+        },
+        {
+            output: 'industrialforegoing:machine_frame_pity',
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: 'immersiveengineering:concrete_leaded',
+                B: 'thermal:machine_frame',
+                C: 'create:andesite_casing'
+            },
+            id: 'industrialforegoing:machine_frame_pity'
+        },
+        {
+            output: Item.of('prettypipes:pipe', 8),
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: '#forge:plates/tin',
+                B: '#forge:glass/colorless',
+                C: 'create:shaft'
+            }
+        },
+        {
+            output: Item.of('ppfluids:fluid_pipe', 8),
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: 'thermal:cured_rubber',
+                B: '#forge:glass/colorless',
+                C: 'create:shaft'
+            }
+        },
+        {
+            output: 'minecraft:observer',
+            pattern: ['BBB', 'ACA', 'BBB'],
+            key: {
+                A: 'create:andesite_alloy',
+                B: 'minecraft:stone_slab',
+                C: 'minecraft:comparator'
+            },
+            id: 'minecraft:observer'
         }
     ];
 

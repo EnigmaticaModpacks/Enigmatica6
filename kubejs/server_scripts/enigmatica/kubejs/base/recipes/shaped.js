@@ -1288,15 +1288,6 @@ onEvent('recipes', (event) => {
             B: 'prettypipes:medium_crafting_module',
             C: '#forge:ingots/electrum'
         }),
-        shapedRecipe(Item.of('prettypipes:pipe', 12), ['   ', 'ABA', '   '], {
-            A: '#forge:ingots/tin',
-            B: '#forge:glass/colorless'
-        }),
-        shapedRecipe(Item.of('ppfluids:fluid_pipe', 12), [' C ', 'ABA', ' C '], {
-            A: '#forge:ingots/tin',
-            B: '#forge:glass/colorless',
-            C: 'thermal:cured_rubber'
-        }),
         shapedRecipe(Item.of('prettypipes:item_terminal', 1), [' B ', 'CAD', 'EFE'], {
             A: 'thermal:machine_frame',
             B: 'minecraft:observer',
