@@ -10,7 +10,8 @@ onEvent('recipes', (event) => {
         'betterendforge:leather_to_stripes',
         'astralsorcery:shaped/black_marble/black_marble_raw',
         'astralsorcery:altar/black_marble_raw',
-        'astralsorcery:shaped/wand'
+        'astralsorcery:shaped/wand',
+        'immersiveengineering:crafting/concrete'
     ];
 
     const outputRemovals = ['create:andesite_alloy', 'tiab:timeinabottle'];
