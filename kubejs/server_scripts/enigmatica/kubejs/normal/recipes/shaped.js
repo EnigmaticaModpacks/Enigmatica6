@@ -109,10 +109,4 @@ onEvent('recipes', (event) => {
             event.shaped(recipe.output, recipe.pattern, recipe.key);
         }
     });
-
-    oldRecipes.forEach((recipe) => {
-        recipe.id
-            ? event.shaped(recipe.result, recipe.pattern, recipe.key).id(recipe.id)
-            : event.shaped(recipe.result, recipe.pattern, recipe.key);
-    });
 });
