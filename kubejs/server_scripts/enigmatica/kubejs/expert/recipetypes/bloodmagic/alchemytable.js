@@ -14,16 +14,19 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:alchemytable/arcane_ash'
             },
             {
-                inputs: [
-                    'bloodmagic:plantoil',
-                    'alexsmobs:rattlesnake_rattle',
-                    '#forge:dusts/apatite',
-                    '#forge:dusts/charcoal'
-                ],
+                inputs: ['alexsmobs:komodo_spit', 'alexsmobs:rattlesnake_rattle', '#forge:dusts/charcoal'],
+                output: 'kubejs:cutting_essence',
+                count: 8,
+                syphon: 500,
+                ticks: 100,
+                orbLevel: 1
+            },
+            {
+                inputs: ['bloodmagic:plantoil', 'kubejs:cutting_essence'],
                 output: 'bloodmagic:basiccuttingfluid',
                 count: 1,
-                syphon: 1000,
-                ticks: 200,
+                syphon: 500,
+                ticks: 100,
                 orbLevel: 1,
                 id: 'bloodmagic:alchemytable/basic_cutting_fluid'
             },

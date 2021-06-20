@@ -17,7 +17,8 @@ onEvent('item.registry', (event) => {
         // Expert
         'observatory_lens',
         'coarse_lapis_lazuli_compound',
-        'smoldering_lapis_lazuli_compound'
+        'smoldering_lapis_lazuli_compound',
+        'cutting_essence'
     ];
 
     let metals = [
