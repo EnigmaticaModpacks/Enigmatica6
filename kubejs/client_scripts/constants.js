@@ -118,6 +118,8 @@ var itemsToHide = [
 
     'eidolon:tallow',
 
+    'emendatusenigmatica:sulfur_ore',
+    'emendatusenigmatica:cinnabar_ore',
     'emendatusenigmatica:dimensional_crushed',
     'emendatusenigmatica:arcane_crushed',
     'emendatusenigmatica:potassium_nitrate_crushed',
