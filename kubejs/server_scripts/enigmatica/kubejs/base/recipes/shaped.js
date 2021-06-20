@@ -1503,11 +1503,11 @@ onEvent('recipes', (event) => {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
@@ -1515,11 +1515,11 @@ onEvent('recipes', (event) => {
             A: wood.slabBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
             A: wood.slabBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
             A: wood.slabBlock,
             C: '#forge:chests'
         });
