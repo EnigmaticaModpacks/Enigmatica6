@@ -12,7 +12,9 @@ onEvent('recipes', (event) => {
         'astralsorcery:altar/black_marble_raw',
         'astralsorcery:shaped/wand',
         'immersiveengineering:crafting/concrete',
-        /create:crafting\/materials\/andesite_alloy/
+        /create:crafting\/materials\/andesite_alloy/,
+        'immersiveengineering:crafting/component_iron',
+        'immersiveengineering:crafting/component_steel'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
