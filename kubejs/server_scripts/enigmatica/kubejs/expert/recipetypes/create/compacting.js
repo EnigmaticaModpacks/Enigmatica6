@@ -3,7 +3,13 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    const recipes = [];
+    const recipes = [
+        {
+            output: 'modularrouters:item_router',
+            inputs: ['minecraft:observer', 'immersiveengineering:circuit_board', 'modularrouters:augment_core'],
+            heated: true
+        }
+    ];
 
     recipes.forEach((recipe) => {
         if (recipe.heated) {
