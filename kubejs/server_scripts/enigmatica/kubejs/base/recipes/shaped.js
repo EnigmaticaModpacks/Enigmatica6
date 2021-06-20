@@ -1411,9 +1411,6 @@ onEvent('recipes', (event) => {
         shapedRecipe(Item.of('quark:turf', 1), ['A', 'A'], {
             A: 'quark:turf_slab'
         }),
-        shapedRecipe(Item.of('minecraft:string', 3), ['AA', 'A '], {
-            A: 'supplementaries:flax'
-        }),
 
         //ID Overrides
         shapedRecipe(

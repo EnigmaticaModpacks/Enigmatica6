@@ -212,7 +212,7 @@ onEvent('recipes', (event) => {
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
         },
         {
-            output: Item.of('supplementaries:flax_seeds', 1),
+            output: 'supplementaries:flax_seeds',
             inputs: ['supplementaries:flax']
         },
         {
@@ -321,6 +321,16 @@ onEvent('recipes', (event) => {
             output: 'eidolon:pewter_blend',
             inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
             id: 'eidolon:pewter_blend'
+        },
+        {
+            output: Item.of('minecraft:string', 3),
+            inputs: ['#forge:crops/kenaf', '#forge:crops/kenaf', '#forge:crops/kenaf'],
+            id: 'simplefarming:string'
+        },
+        {
+            output: Item.of('minecraft:string', 3),
+            inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax'],
+            id: 'simplefarming:string'
         }
     ];
 
