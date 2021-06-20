@@ -5,90 +5,43 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                { tag: 'forge:plates/aluminum' },
-                { tag: 'forge:plates/aluminum' },
+                { count: 2, base_ingredient: { tag: 'forge:plates/aluminum' } },
                 { tag: 'forge:ingots/energized_steel' },
                 { tag: 'forge:wires' }
             ],
-            category: 'component',
+            category: 'components',
             output: {
                 item: 'modularrouters:blank_module',
                 count: 2
-            }
+            },
+            id: 'modularrouters:blank_module'
         },
         {
             inputs: [
-                { tag: 'forge:plates/invar' },
-                { tag: 'forge:plates/invar' },
-                { tag: 'forge:ingots/energized_steel' },
+                { count: 2, base_ingredient: { tag: 'forge:plates/aluminum' } },
+                { count: 5, base_ingredient: { tag: 'forge:nuggets/electrum' } },
                 { tag: 'forge:wires' }
             ],
-            category: 'component',
-            output: {
-                item: 'modularrouters:blank_module',
-                count: 6
-            }
-        },
-        {
-            inputs: [
-                { tag: 'forge:plates/aluminum' },
-                { tag: 'forge:plates/aluminum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:wires' }
-            ],
-            category: 'component',
+            category: 'components',
             output: {
                 item: 'modularrouters:blank_upgrade',
                 count: 2
-            }
-        },
-        {
-            inputs: [
-                { tag: 'forge:plates/invar' },
-                { tag: 'forge:plates/invar' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:nuggets/electrum' },
-                { tag: 'forge:wires' }
-            ],
-            category: 'component',
-            output: {
-                item: 'modularrouters:blank_upgrade',
-                count: 6
-            }
+            },
+            id: 'modularrouters:blank_upgrade'
         },
         {
             inputs: [
                 { item: 'modularrouters:blank_upgrade' },
                 { item: 'modularrouters:blank_module' },
-                { item: 'powah:blazing_capacitor' },
+                { item: 'powah:capacitor_blazing' },
                 { tag: 'forge:wires' }
             ],
-            category: 'component',
+            category: 'components',
             output: {
                 item: 'modularrouters:augment_core',
                 count: 2
-            }
-        },
-        {
-            inputs: [
-                { item: 'modularrouters:blank_upgrade' },
-                { item: 'modularrouters:blank_module' },
-                { item: 'powah:blazing_capacitor' },
-                { tag: 'forge:wires' }
-            ],
-            category: 'component',
-            output: {
-                item: 'modularrouters:item_router',
-                count: 2
             },
-            id: 'modularrouters:item_router'
+            id: 'modularrouters:augment_core'
         }
     ];
 
