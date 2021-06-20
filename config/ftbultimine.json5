@@ -2,11 +2,11 @@
 	/* Max amount of blocks that can be ultimined at once
 	   Range: 1 - 32768
 	*/
-	"maxBlocks": 128,
+	"maxBlocks": 32,
 	/* Hunger multiplied for each block mined with ultimine
 	   Range: 0 - 10000
 	*/
-	"exhaustionPerBlock": 25.0,
+	"exhaustionPerBlock": 50.0,
 	// Groups stone types together so you can mine all of them at once
 	"mergeStone": false,
 	// Disable warnings for potentially laggy config settings
