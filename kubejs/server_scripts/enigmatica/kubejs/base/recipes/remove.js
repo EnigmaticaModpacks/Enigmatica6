@@ -197,7 +197,8 @@ onEvent('recipes', (event) => {
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
-        /atum:.*dye$/
+        /atum:.*dye$/,
+        /thermal:compat\/\w+\/\w+_ore/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -242,7 +243,7 @@ onEvent('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-/*
+    /*
     event.remove({
         input: '#forge:ores',
         mod: 'create',
