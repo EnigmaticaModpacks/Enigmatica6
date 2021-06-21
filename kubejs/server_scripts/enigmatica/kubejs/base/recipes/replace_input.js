@@ -31,6 +31,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
     event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');
     event.replaceInput({}, 'upgrade_aquatic:beachgrass', '#forge:beach_grass');
+    event.replaceInput({}, 'environmental:cattail', '#forge:cattails');
     event.replaceInput({}, 'pneumaticcraft:wheat_flour', '#forge:dusts/flour');
     event.replaceInput({}, 'create:wheat_flour', '#forge:dusts/flour');
     event.replaceInput({}, 'pedestals:dustflour', '#forge:dusts/flour');
