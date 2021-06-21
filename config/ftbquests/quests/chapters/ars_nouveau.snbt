@@ -804,19 +804,52 @@
 			}]
 		}
 		{
+			title: "Tome of Blood"
 			x: -4.5d
 			y: -3.0d
 			subtitle: "The Demon Barber of Fleet Street"
 			description: ["Mana isn't the only source of power in this world, and some clever Sanguimancers have found a way to bind a spellbook to their Soul Network, allowing them to draw on a deeper well of power to cast their spells. "]
 			dependencies: [
-				"00000000000003C2"
 				"00000000000008C7"
+				"00000000000003BE"
 			]
 			id: "221C600F3E3C813C"
 			tasks: [{
 				id: "106C65C1B54C90C6"
 				type: "item"
-				item: "tomeofblood:tome_of_blood"
+				title: "Tome of Blood"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tomeofblood:blood_tome_one"
+								Count: 1b
+								tag: {
+									mode: 0
+									spells: ",touch,harm,break,self,projectile"
+								}
+							}
+							{
+								id: "tomeofblood:blood_tome_two"
+								Count: 1b
+								tag: {
+									mode: 0
+									spells: ",touch,harm,break,self,projectile"
+								}
+							}
+							{
+								id: "tomeofblood:blood_tome_three"
+								Count: 1b
+								tag: {
+									mode: 0
+									spells: ",touch,harm,break,self,projectile"
+								}
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "23A1C4CCC95A1F45"
