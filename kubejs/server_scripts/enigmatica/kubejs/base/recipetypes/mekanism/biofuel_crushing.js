@@ -23,6 +23,8 @@ onEvent('recipes', (event) => {
                     'byg:poison_ivy',
                     'byg:horseweed',
                     'byg:cattail',
+                    'projectvibrantjourneys:cattail',
+                    'environmental:cattail',
                     'byg:black_puff',
                     'byg:shulkren_moss_blanket',
                     'byg:shulkren_fungus',

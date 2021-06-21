@@ -1989,6 +1989,12 @@ const cropRegistry = [
                 substrate: 'water'
             },
             {
+                seed: 'byg:cattail',
+                render: 'byg:cattail',
+                plant: 'byg:cattail',
+                substrate: 'water'
+            },
+            {
                 seed: 'projectvibrantjourneys:sea_oats',
                 render: 'projectvibrantjourneys:sea_oats',
                 plant: 'projectvibrantjourneys:sea_oats',
@@ -2006,7 +2012,20 @@ const cropRegistry = [
                 plant: 'environmental:cattail_seeds',
                 plantSecondary: 'environmental:cattail',
                 plantSecondaryRate: 'high',
-                substrate: 'dirt'
+                substrate: 'water'
+            },
+            {
+                seed: 'projectvibrantjourneys:cattail',
+                render: 'projectvibrantjourneys:cattail',
+                plant: 'projectvibrantjourneys:cattail',
+                substrate: 'water'
+            },
+            {
+                seed: 'byg:cattail',
+                render: 'byg:cattail',
+                plant: 'byg:cattail',
+                plantSecondaryRate: 'high',
+                substrate: 'water'
             },
             {
                 seed: 'atum:dry_grass',
