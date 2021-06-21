@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-06-20T17:01:49.4528257Z",
-  "playedCount": 190,
+  "lastPlayed": "2021-06-21T18:18:25.0635713Z",
+  "playedCount": 192,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -5282,7 +5282,7 @@
       "dateInstalled": "2021-05-16T18:23:08.9273597Z",
       "dateUpdated": "2021-06-19T17:17:58.2335093Z",
       "dateLastUpdateAttempted": "2021-06-19T17:17:58.2335093Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6522,16 +6522,16 @@
       "addonID": 353928,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3348614,
-        "displayName": "BotanyPots-1.16.5-7.1.22.jar",
-        "fileName": "BotanyPots-1.16.5-7.1.22.jar",
-        "fileDate": "2021-06-12T02:40:01.047Z",
-        "fileLength": 541032,
-        "releaseType": 3,
+        "id": 3358843,
+        "displayName": "BotanyPots-1.16.5-7.1.23.jar",
+        "fileName": "BotanyPots-1.16.5-7.1.23.jar",
+        "fileDate": "2021-06-20T18:45:32.673Z",
+        "fileLength": 542045,
+        "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3348/614/BotanyPots-1.16.5-7.1.22.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3358/843/BotanyPots-1.16.5-7.1.23.jar",
         "isAlternate": false,
-        "alternateFileId": 3348615,
+        "alternateFileId": 3358844,
         "dependencies": [
           {
             "id": 0,
@@ -6544,7 +6544,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1922932728,
+            "fingerprint": 2980531691,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -6556,7 +6556,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 947735016,
+            "fingerprint": 4043656951,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -6573,7 +6573,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1264934042,
+        "packageFingerprint": 269875015,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -6587,12 +6587,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BotanyPots-1.16.5-7.1.22.jar"
+        "FileNameOnDisk": "BotanyPots-1.16.5-7.1.23.jar"
       },
       "dateInstalled": "2021-05-13T19:57:26.4913777Z",
-      "dateUpdated": "2021-06-12T17:47:06.4281769Z",
-      "dateLastUpdateAttempted": "2021-06-12T17:47:06.4281769Z",
-      "status": 5,
+      "dateUpdated": "2021-06-21T18:11:18.5858066Z",
+      "dateLastUpdateAttempted": "2021-06-21T18:11:18.5858066Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11643,29 +11643,17 @@
       "addonID": 289412,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3356782,
-        "displayName": "ftb-quests-forge-1605.3.2-build.20.jar",
-        "fileName": "ftb-quests-forge-1605.3.2-build.20.jar",
-        "fileDate": "2021-06-18T22:46:26.153Z",
-        "fileLength": 931503,
+        "id": 3359185,
+        "displayName": "ftb-quests-forge-1605.3.2-build.24.jar",
+        "fileName": "ftb-quests-forge-1605.3.2-build.24.jar",
+        "fileDate": "2021-06-21T00:06:37.68Z",
+        "fileLength": 931138,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3356/782/ftb-quests-forge-1605.3.2-build.20.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3359/185/ftb-quests-forge-1605.3.2-build.24.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 419699,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 404468,
@@ -11674,7 +11662,13 @@
           },
           {
             "id": 0,
-            "addonId": 404465,
+            "addonId": 419699,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309674,
             "type": 3,
             "fileId": 0
           },
@@ -11686,8 +11680,14 @@
           },
           {
             "id": 0,
-            "addonId": 309674,
+            "addonId": 404465,
             "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
             "fileId": 0
           },
           {
@@ -11725,24 +11725,24 @@
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 2435475268,
+            "fingerprint": 3684383651,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 2910634669,
+            "fingerprint": 143346987,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBQuests1165_common_6b8cf77c625142c0a7273a1a61b10291",
-            "fingerprint": 1493695120,
+            "foldername": "architectury_inject_FTBQuests1165_common_ee0b2e8e6b41439eb584e144842b5bab",
+            "fingerprint": 1744183961,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1113925983,
+        "packageFingerprint": 805641280,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -11757,11 +11757,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-quests-forge-1605.3.2-build.20.jar"
+        "FileNameOnDisk": "ftb-quests-forge-1605.3.2-build.24.jar"
       },
       "dateInstalled": "2021-05-13T19:57:29.2938944Z",
-      "dateUpdated": "2021-06-19T17:17:57.3915083Z",
-      "dateLastUpdateAttempted": "2021-06-19T17:17:57.3915083Z",
+      "dateUpdated": "2021-06-21T18:11:21.2560791Z",
+      "dateLastUpdateAttempted": "2021-06-21T18:11:21.2560791Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -12136,7 +12136,7 @@
       "dateInstalled": "2021-06-19T17:17:05.8759971Z",
       "dateUpdated": "2021-06-19T17:17:05.9099986Z",
       "dateLastUpdateAttempted": "2021-06-19T17:17:05.9099986Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12437,7 +12437,7 @@
       "dateInstalled": "2021-05-13T19:57:29.3239017Z",
       "dateUpdated": "2021-06-19T17:17:57.0135074Z",
       "dateLastUpdateAttempted": "2021-06-19T17:17:57.0135074Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12772,7 +12772,7 @@
       "dateInstalled": "2021-05-13T19:57:29.3458916Z",
       "dateUpdated": "2021-06-19T17:17:52.7045082Z",
       "dateLastUpdateAttempted": "2021-06-19T17:17:52.7045082Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20867,11 +20867,80 @@
     {
       "addonID": 222908,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
-      "installedFile": null,
-      "dateInstalled": "2021-05-13T19:57:42.2367788Z",
-      "dateUpdated": "2021-05-13T19:57:42.2367788Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "installedFile": {
+        "id": 3158118,
+        "displayName": "1.16.2+ (3.0.2)",
+        "fileName": "cookiecore-1.16.2-3.0.2-9389769.jar",
+        "fileDate": "2021-01-04T11:41:47.73Z",
+        "fileLength": 48620,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3158/118/cookiecore-1.16.2-3.0.2-9389769.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2659065218,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 2087109271,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 1001256355,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "be",
+            "fingerprint": 2721873757,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3056700204,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1438559181,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2269858638,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4",
+          "1.16.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "cookiecore-1.16.2-3.0.2-9389769.jar"
+      },
+      "dateInstalled": "2021-06-21T18:15:14.9409194Z",
+      "dateUpdated": "2021-06-21T18:15:15.2209153Z",
+      "dateLastUpdateAttempted": "2021-06-21T18:15:15.2209153Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20880,7 +20949,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 352656,
@@ -21362,7 +21431,7 @@
       "dateInstalled": "2021-05-13T19:57:42.2717882Z",
       "dateUpdated": "2021-06-20T17:01:56.0268229Z",
       "dateLastUpdateAttempted": "2021-06-20T17:01:56.0268229Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23010,7 +23079,7 @@
       "dateInstalled": "2021-05-29T17:45:29.7446364Z",
       "dateUpdated": "2021-06-20T17:01:47.9055216Z",
       "dateLastUpdateAttempted": "2021-06-20T17:01:47.9055216Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23881,7 +23950,7 @@
       "dateInstalled": "2021-06-19T17:18:38.4271777Z",
       "dateUpdated": "2021-06-19T17:18:38.8961776Z",
       "dateLastUpdateAttempted": "2021-06-19T17:18:38.8961776Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26411,34 +26480,34 @@
       "addonID": 276951,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3311301,
-        "displayName": "comforts-forge-1.16.5-4.0.0.4.jar",
-        "fileName": "comforts-forge-1.16.5-4.0.0.4.jar",
-        "fileDate": "2021-05-16T06:29:48.05Z",
-        "fileLength": 237319,
+        "id": 3359524,
+        "displayName": "comforts-forge-1.16.5-4.0.1.1.jar",
+        "fileName": "comforts-forge-1.16.5-4.0.1.1.jar",
+        "fileDate": "2021-06-21T08:15:58.327Z",
+        "fileLength": 241852,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3311/301/comforts-forge-1.16.5-4.0.0.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3359/524/comforts-forge-1.16.5-4.0.1.1.jar",
         "isAlternate": false,
-        "alternateFileId": 3311302,
+        "alternateFileId": 3359525,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2688537111,
+            "fingerprint": 476376354,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "top",
-            "fingerprint": 1116669452,
+            "fingerprint": 572552235,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 372216899,
+            "fingerprint": 2348746069,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -26473,7 +26542,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4091624898,
+        "packageFingerprint": 229097414,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -26487,12 +26556,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "comforts-forge-1.16.5-4.0.0.4.jar"
+        "FileNameOnDisk": "comforts-forge-1.16.5-4.0.1.1.jar"
       },
       "dateInstalled": "2021-05-13T19:57:47.2024646Z",
-      "dateUpdated": "2021-05-16T19:09:17.4446504Z",
-      "dateLastUpdateAttempted": "2021-05-16T19:09:17.4446504Z",
-      "status": 5,
+      "dateUpdated": "2021-06-21T18:11:24.3756745Z",
+      "dateLastUpdateAttempted": "2021-06-21T18:11:24.3756745Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26604,27 +26673,27 @@
       "addonID": 404465,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3355311,
-        "displayName": "ftb-library-forge-1605.3.1-build.26.jar",
-        "fileName": "ftb-library-forge-1605.3.1-build.26.jar",
-        "fileDate": "2021-06-17T16:48:48.33Z",
-        "fileLength": 511827,
+        "id": 3359158,
+        "displayName": "ftb-library-forge-1605.3.1-build.29.jar",
+        "fileName": "ftb-library-forge-1605.3.1-build.29.jar",
+        "fileDate": "2021-06-20T23:43:24.713Z",
+        "fileLength": 512438,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3355/311/ftb-library-forge-1605.3.1-build.26.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3359/158/ftb-library-forge-1605.3.1-build.29.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 238222,
-            "type": 2,
+            "addonId": 419699,
+            "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 419699,
-            "type": 3,
+            "addonId": 238222,
+            "type": 2,
             "fileId": 0
           }
         ],
@@ -26662,24 +26731,24 @@
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 2982246302,
+            "fingerprint": 1005117636,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 1948769561,
+            "fingerprint": 2219338263,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBLibrary1165_common_c34fdaaa805e4193bff9f91394beb87e",
-            "fingerprint": 1790768374,
+            "foldername": "architectury_inject_FTBLibrary1165_common_5500215acef441d5af5acb5c742b59e2",
+            "fingerprint": 285662038,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 620753636,
+        "packageFingerprint": 2063039852,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -26693,12 +26762,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-library-forge-1605.3.1-build.26.jar"
+        "FileNameOnDisk": "ftb-library-forge-1605.3.1-build.29.jar"
       },
       "dateInstalled": "2021-05-13T19:57:47.2224641Z",
-      "dateUpdated": "2021-06-17T17:33:43.2423772Z",
-      "dateLastUpdateAttempted": "2021-06-17T17:33:43.2423772Z",
-      "status": 5,
+      "dateUpdated": "2021-06-21T18:11:21.7412086Z",
+      "dateLastUpdateAttempted": "2021-06-21T18:11:21.7412086Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -30631,7 +30700,7 @@
       "dateInstalled": "2021-06-19T17:14:56.7024453Z",
       "dateUpdated": "2021-06-19T17:14:56.7164488Z",
       "dateLastUpdateAttempted": "2021-06-19T17:14:56.7164488Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
