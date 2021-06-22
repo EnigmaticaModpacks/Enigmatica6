@@ -73,7 +73,7 @@ onEvent('recipes', (event) => {
             });
         });
     });
-
+    /*
     data.recipes.forEach((recipe) => {
         event
             .custom({
@@ -85,5 +85,5 @@ onEvent('recipes', (event) => {
                 damage: recipe.damage
             })
             .id(recipe.id);
-    });
+    });*/
 });

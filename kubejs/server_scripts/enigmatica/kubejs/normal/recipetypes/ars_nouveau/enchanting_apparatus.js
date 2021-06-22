@@ -17,6 +17,38 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:wand',
             count: 1,
             id: 'ars_nouveau:wand'
+        },
+        {
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:ingots/gold_brass',
+                '#forge:ingots/gold_brass',
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:gems/mana'
+            ],
+            reagent: 'ars_nouveau:dull_trinket',
+            output: 'ars_nouveau:amulet_of_mana_regen',
+            count: 1,
+            id: 'ars_nouveau:amulet_of_mana_regen'
+        },
+        {
+            inputs: [
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:gems/diamond',
+                '#forge:ingots/gold_brass',
+                '#forge:ingots/gold_brass',
+                '#forge:gems/mana',
+                '#forge:gems/mana',
+                '#forge:gems/mana'
+            ],
+            reagent: 'ars_nouveau:dull_trinket',
+            output: 'ars_nouveau:amulet_of_mana_boost',
+            count: 1,
+            id: 'ars_nouveau:amulet_of_mana_boost'
         }
     ];
     recipes.forEach((recipe) => {

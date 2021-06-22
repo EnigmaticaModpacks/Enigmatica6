@@ -33,30 +33,31 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'upgrade_aquatic:glowing_ink_sac',
-                    '#forge:dusts/aluminum',
-                    '#forge:dusts/aluminum',
-                    '#forge:dusts/aluminum',
-                    '#forge:dusts/aluminum'
+                    '#forge:dusts/regalium',
+                    '#forge:dusts/regalium',
+                    '#forge:dusts/regalium',
+                    '#forge:dusts/regalium'
                 ],
                 output: 'astralsorcery:illumination_powder',
                 count: 16,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: 'astralsorcery:altar/illumination_powder'
             },
             {
                 inputs: [
                     'occultism:purified_ink',
                     '#forge:dusts/obsidian',
                     '#forge:dusts/obsidian',
-                    '#forge:dusts/obsidian',
-                    '#forge:dusts/obsidian'
+                    'astralsorcery:illumination_powder'
                 ],
                 output: 'astralsorcery:nocturnal_powder',
-                count: 16,
+                count: 4,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: 'astralsorcery:altar/nocturnal_powder'
             },
             {
                 inputs: [

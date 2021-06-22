@@ -388,7 +388,6 @@ var regexHide = [
     /emendatusenigmatica:\w+fluix/,
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
-    /betterendforge:\w+_anvil/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/
 ];
