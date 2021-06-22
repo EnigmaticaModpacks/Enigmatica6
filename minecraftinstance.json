@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-06-21T18:18:25.0635713Z",
-  "playedCount": 192,
+  "lastPlayed": "2021-06-22T17:59:21.6770896Z",
+  "playedCount": 193,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -11643,17 +11643,23 @@
       "addonID": 289412,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3359185,
-        "displayName": "ftb-quests-forge-1605.3.2-build.24.jar",
-        "fileName": "ftb-quests-forge-1605.3.2-build.24.jar",
-        "fileDate": "2021-06-21T00:06:37.68Z",
-        "fileLength": 931138,
+        "id": 3361002,
+        "displayName": "ftb-quests-forge-1605.3.3-build.26.jar",
+        "fileName": "ftb-quests-forge-1605.3.3-build.26.jar",
+        "fileDate": "2021-06-22T14:12:47.103Z",
+        "fileLength": 935855,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3359/185/ftb-quests-forge-1605.3.2-build.24.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3361/2/ftb-quests-forge-1605.3.3-build.26.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 238222,
+            "type": 2,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 404468,
@@ -11680,20 +11686,14 @@
           },
           {
             "id": 0,
-            "addonId": 404465,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 238222,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
             "addonId": 238086,
             "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 404465,
+            "type": 3,
             "fileId": 0
           }
         ],
@@ -11725,24 +11725,24 @@
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 3684383651,
+            "fingerprint": 1903617004,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 143346987,
+            "fingerprint": 1579844874,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBQuests1165_common_ee0b2e8e6b41439eb584e144842b5bab",
-            "fingerprint": 1744183961,
+            "foldername": "architectury_inject_FTBQuests1165_common_04c8a56d5ad64fe7837a6d47541e7e15",
+            "fingerprint": 3683604238,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 805641280,
+        "packageFingerprint": 118193115,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -11757,11 +11757,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-quests-forge-1605.3.2-build.24.jar"
+        "FileNameOnDisk": "ftb-quests-forge-1605.3.3-build.26.jar"
       },
       "dateInstalled": "2021-05-13T19:57:29.2938944Z",
-      "dateUpdated": "2021-06-21T18:11:21.2560791Z",
-      "dateLastUpdateAttempted": "2021-06-21T18:11:21.2560791Z",
+      "dateUpdated": "2021-06-22T17:59:10.9923599Z",
+      "dateLastUpdateAttempted": "2021-06-22T17:59:10.9923599Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -20949,7 +20949,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 352656,
@@ -22901,14 +22901,14 @@
       "addonID": 426558,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3308459,
-        "displayName": "alexsmobs-1.10.1",
-        "fileName": "alexsmobs-1.10.1.jar",
-        "fileDate": "2021-05-13T18:39:12.03Z",
-        "fileLength": 11382734,
+        "id": 3360505,
+        "displayName": "alexsmobs-1.11.0",
+        "fileName": "alexsmobs-1.11.0.jar",
+        "fileDate": "2021-06-22T01:23:46.663Z",
+        "fileLength": 17974629,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3308/459/alexsmobs-1.10.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3360/505/alexsmobs-1.11.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -22923,25 +22923,25 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1315101127,
+            "fingerprint": 3163569058,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 43023755,
+            "fingerprint": 105688,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2296763000,
+            "fingerprint": 118352487,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 544868259,
+            "fingerprint": 1814127402,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -22952,9 +22952,10 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2372597749,
+        "packageFingerprint": 533485939,
         "gameVersion": [
-          "1.16.5"
+          "1.16.5",
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
@@ -22962,15 +22963,15 @@
         "restrictProjectFileAccess": 0,
         "projectStatus": 0,
         "projectId": 0,
-        "gameVersionDateReleased": "2021-01-15T14:14:48.91Z",
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "alexsmobs-1.10.1.jar"
+        "FileNameOnDisk": "alexsmobs-1.11.0.jar"
       },
       "dateInstalled": "2021-05-13T19:57:42.2577786Z",
-      "dateUpdated": "2021-05-14T19:18:26.5634429Z",
-      "dateLastUpdateAttempted": "2021-05-14T19:18:26.5634429Z",
-      "status": 5,
+      "dateUpdated": "2021-06-22T17:59:12.8803579Z",
+      "dateLastUpdateAttempted": "2021-06-22T17:59:12.8803579Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26673,27 +26674,27 @@
       "addonID": 404465,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3359158,
-        "displayName": "ftb-library-forge-1605.3.1-build.29.jar",
-        "fileName": "ftb-library-forge-1605.3.1-build.29.jar",
-        "fileDate": "2021-06-20T23:43:24.713Z",
-        "fileLength": 512438,
+        "id": 3360868,
+        "displayName": "ftb-library-forge-1605.3.1-build.33.jar",
+        "fileName": "ftb-library-forge-1605.3.1-build.33.jar",
+        "fileDate": "2021-06-22T11:17:17.143Z",
+        "fileLength": 513015,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3359/158/ftb-library-forge-1605.3.1-build.29.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3360/868/ftb-library-forge-1605.3.1-build.33.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 419699,
-            "type": 3,
+            "addonId": 238222,
+            "type": 2,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 238222,
-            "type": 2,
+            "addonId": 419699,
+            "type": 3,
             "fileId": 0
           }
         ],
@@ -26731,24 +26732,24 @@
           },
           {
             "foldername": "META-INF",
-            "fingerprint": 1005117636,
+            "fingerprint": 2641305882,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dev",
-            "fingerprint": 2219338263,
+            "fingerprint": 72755899,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBLibrary1165_common_5500215acef441d5af5acb5c742b59e2",
-            "fingerprint": 285662038,
+            "foldername": "architectury_inject_FTBLibrary1165_common_cace949201a9496f91e4938e0d99b3a0",
+            "fingerprint": 36977160,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2063039852,
+        "packageFingerprint": 3509467326,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -26762,11 +26763,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-library-forge-1605.3.1-build.29.jar"
+        "FileNameOnDisk": "ftb-library-forge-1605.3.1-build.33.jar"
       },
       "dateInstalled": "2021-05-13T19:57:47.2224641Z",
-      "dateUpdated": "2021-06-21T18:11:21.7412086Z",
-      "dateLastUpdateAttempted": "2021-06-21T18:11:21.7412086Z",
+      "dateUpdated": "2021-06-22T17:59:11.2383542Z",
+      "dateLastUpdateAttempted": "2021-06-22T17:59:11.2383542Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
