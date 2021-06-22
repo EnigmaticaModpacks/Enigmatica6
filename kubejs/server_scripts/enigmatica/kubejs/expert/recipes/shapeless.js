@@ -77,6 +77,11 @@ onEvent('recipes', (event) => {
             output: Item.of('botania:corporea_block', 8),
             inputs: ['naturesaura:infused_stone', 'botania:corporea_spark'],
             id: 'botania:corporea_block'
+        },
+        {
+            output: Item.of('betterendforge:leather_wrapped_stick'),
+            inputs: ['naturesaura:ancient_stick', 'betterendforge:leather_stripe'],
+            id: 'betterendforge:leather_wrapped_stick'
         }
     ];
 

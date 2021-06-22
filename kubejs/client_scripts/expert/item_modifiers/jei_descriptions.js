@@ -6,6 +6,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['tiab:timeinabottle'],
             description: ['Any Potion can be used for crafting this.']
+        },
+        {
+            items: ['bloodmagic:soulpickaxe'],
+            description: ['Capable of mining Iesnium.']
         }
     ];
 

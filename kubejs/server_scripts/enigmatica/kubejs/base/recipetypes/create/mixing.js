@@ -117,6 +117,10 @@ onEvent('recipes', (event) => {
                 output: Item.of('betterendforge:terminite_ingot', 1)
             },
             {
+                inputs: ['#forge:ingots/thallasium', '#forge:dusts/ender'],
+                output: Item.of('betterendforge:terminite_ingot', 1)
+            },
+            {
                 inputs: ['#forge:ingots/iron', 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
                 output: Item.of('tconstruct:pig_iron_ingot', 2)
             },

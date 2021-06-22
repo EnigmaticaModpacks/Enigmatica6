@@ -34,9 +34,11 @@ onEvent('recipes', (event) => {
                 ritual: { item: 'occultism:ritual_dummy/craft_infused_pickaxe' },
                 ingredients: [
                     { item: 'occultism:spirit_attuned_pickaxe_head' },
-                    { tag: 'forge:rods/lumium' },
+                    { item: 'betterendforge:leather_wrapped_stick' },
                     { item: 'eidolon:ender_calx' },
-                    { tag: 'forge:rods/lumium' }
+                    { item: 'betterendforge:leather_wrapped_stick' },
+                    { tag: 'forge:nuggets/nebu' },
+                    { tag: 'forge:nuggets/nebu' }
                 ],
                 result: { item: 'occultism:infused_pickaxe' },
                 id: 'occultism:ritual/craft_infused_pickaxe'
