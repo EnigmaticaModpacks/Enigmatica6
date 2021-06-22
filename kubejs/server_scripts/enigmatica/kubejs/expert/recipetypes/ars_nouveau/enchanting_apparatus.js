@@ -206,6 +206,115 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: 'naturesaura:animal_spawner'
             },
+            {
+                inputs: [
+                    'ars_nouveau:glyph_amplify',
+                    '#forge:storage_blocks/regalium',
+                    '#forge:storage_blocks/regalium',
+                    '#forge:storage_blocks/mana',
+                    '#forge:storage_blocks/mana'
+                ],
+                reagent: 'undergarden:utheric_sword',
+                output: 'ars_nouveau:enchanters_sword',
+                count: 1,
+                id: 'ars_nouveau:enchanters_sword'
+            },
+            {
+                inputs: [
+                    '#forge:ingots/terminite',
+                    'ars_nouveau:greater_experience_gem',
+                    '#forge:ingots/terminite',
+                    '#forge:gems/mana',
+                    '#forge:gems/mana',
+                    '#forge:ingots/terminite',
+                    'ars_nouveau:greater_experience_gem',
+                    '#forge:ingots/terminite'
+                ],
+                reagent: '#atum:relic_non_dirty/ring',
+                output: 'ars_nouveau:ring_of_lesser_discount',
+                count: 1,
+                id: 'ars_nouveau:ring_of_lesser_discount'
+            },
+            {
+                inputs: [
+                    '#forge:ingots/thallasium',
+                    '#forge:ingots/regalium',
+                    '#forge:ingots/thallasium',
+                    '#forge:gems/mana',
+                    '#forge:gems/mana',
+                    '#forge:ingots/thallasium',
+                    '#forge:ingots/regalium',
+                    '#forge:ingots/thallasium'
+                ],
+                reagent: 'ars_nouveau:ring_of_lesser_discount',
+                output: 'ars_nouveau:ring_of_greater_discount',
+                count: 1,
+                id: 'ars_nouveau:ring_of_greater_discount'
+            },
+            {
+                inputs: [
+                    '#forge:gems/aquamarine',
+                    'naturesaura:birth_spirit',
+                    '#forge:gems/aquamarine',
+                    '#forge:ingots/regalium',
+                    '#forge:ingots/regalium',
+                    '#forge:gems/mana',
+                    '#forge:gems/mana',
+                    '#forge:gems/mana'
+                ],
+                reagent: '#atum:relic_non_dirty/necklace',
+                output: 'ars_nouveau:amulet_of_mana_regen',
+                count: 1,
+                id: 'ars_nouveau:amulet_of_mana_regen'
+            },
+            {
+                inputs: [
+                    '#forge:gems/aquamarine',
+                    'minecraft:conduit',
+                    '#forge:gems/aquamarine',
+                    '#forge:ingots/regalium',
+                    '#forge:ingots/regalium',
+                    '#forge:gems/mana',
+                    '#forge:gems/mana',
+                    '#forge:gems/mana'
+                ],
+                reagent: '#atum:relic_non_dirty/necklace',
+                output: 'ars_nouveau:amulet_of_mana_boost',
+                count: 1,
+                id: 'ars_nouveau:amulet_of_mana_boost'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:glyph_launch',
+                    '#atum:relic_non_dirty/brooch',
+                    'atum:horus_godshard',
+                    '#atum:relic_non_dirty/brooch',
+                    '#atum:relic_non_dirty/brooch',
+                    'quark:bottled_cloud',
+                    'quark:bottled_cloud',
+                    'quark:bottled_cloud'
+                ],
+                reagent: 'eidolon:basic_belt',
+                output: 'ars_nouveau:belt_of_levitation',
+                count: 1,
+                id: 'ars_nouveau:belt_of_levitation'
+            },
+            {
+                inputs: [
+                    'minecraft:sugar',
+                    '#forge:crops/nether_wart',
+                    '#forge:rods/blaze',
+                    '#forge:dusts/glowstone',
+                    'minecraft:fermented_spider_eye',
+                    '#forge:dusts/redstone',
+                    'atum:atem_godshard',
+                    '#forge:feathers'
+                ],
+                reagent: 'eidolon:basic_belt',
+                output: 'ars_nouveau:belt_of_unstable_gifts',
+                count: 1,
+                id: 'ars_nouveau:belt_of_unstable_gifts'
+            },
 
             /// Patchouli Removals
             {

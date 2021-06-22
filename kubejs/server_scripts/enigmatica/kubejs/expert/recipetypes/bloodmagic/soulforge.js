@@ -75,6 +75,43 @@ onEvent('recipes', (event) => {
                 minimumDrain: 1000.0,
                 drain: 100.0,
                 id: 'bloodmagic:soulforge/greatertartaricgem'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_sword', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulsword'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientsword'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_axe', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulaxe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientaxe'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_pickaxe', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulpickaxe', {
+                    'occultism:otherworldToolTier': 2
+                }),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientpickaxe'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_shovel', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulshovel'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientshovel'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_hoe', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulscythe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientscythe'
             }
         ]
     };

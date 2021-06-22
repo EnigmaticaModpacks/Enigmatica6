@@ -594,7 +594,7 @@ onEvent('recipes', (event) => {
             output: 'eidolon:worktable',
             pattern: ['AAA', 'BCB', 'DDD'],
             key: {
-                A: 'minecraft:red_carpet',
+                A: 'atum:linen_carpet_red',
                 B: 'eidolon:pewter_inlay',
                 C: 'minecraft:conduit',
                 D: 'ars_nouveau:purple_archwood_wood'
@@ -703,6 +703,16 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:comparator'
             },
             id: 'minecraft:observer'
+        },
+        {
+            output: 'eidolon:basic_belt',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'betterendforge:silk_fiber',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/mana'
+            },
+            id: 'eidolon:basic_belt'
         }
     ];
 

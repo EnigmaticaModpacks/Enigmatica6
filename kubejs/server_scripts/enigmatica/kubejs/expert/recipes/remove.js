@@ -5,6 +5,9 @@ onEvent('recipes', (event) => {
 
     const idRemovals = [
         'ars_nouveau:stone_2',
+        'ars_nouveau:ring_of_potential',
+        'ars_nouveau:dull_trinket',
+        'ars_nouveau:mundane_belt',
         'minecraft:leather_to_stripes',
         'quark:building/crafting/candles/candle_basic',
         'betterendforge:leather_to_stripes',
