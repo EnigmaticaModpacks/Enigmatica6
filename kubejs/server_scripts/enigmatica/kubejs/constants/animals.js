@@ -1,7 +1,7 @@
 //priority: 1000
 
 // all animals that can be tamed, used for zoology challenge
-// raccoons and crows aren't in this list as they don't trigger the relevant advancement trigger when tamed
+// crows aren't in this list as they don't trigger the relevant advancement trigger when tamed
 const tameableAnimals = [
     'minecraft:wolf',
     'minecraft:cat',
