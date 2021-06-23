@@ -212,6 +212,32 @@ onEvent('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 3,
                 id: 'bloodmagic:arc/weakbloodshard'
+            },
+            {
+                inputs: [
+                    ['minecraft:crimson_roots', 'undergarden:blisterberry'],
+                    '#forge:crops/nether_wart',
+                    '#forge:dusts/sulfur'
+                ],
+                output: 'eidolon:crimson_essence',
+                count: 2,
+                syphon: 200,
+                ticks: 200,
+                orbLevel: 1
+            },
+            {
+                inputs: [
+                    'eidolon:zombie_heart',
+                    'minecraft:rotten_flesh',
+                    '#forge:dusts/charcoal',
+                    'projectvibrantjourneys:charred_bones',
+                    'undergarden:ink_mushroom'
+                ],
+                output: 'eidolon:death_essence',
+                count: 4,
+                syphon: 200,
+                ticks: 200,
+                orbLevel: 1
             }
         ]
     };
