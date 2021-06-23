@@ -320,4 +320,5 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'mekanism:enriching', output: '#forge:dyes' });
     event.remove({ type: 'thermal:centrifuge', output: '#forge:dyes' });
     event.remove({ type: 'immersiveengineering:crusher', output: '#forge:dyes' });
+    event.remove({ type: 'mekanism:enriching', input: '#forge:dusts/tin'});
 });
