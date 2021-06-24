@@ -713,6 +713,15 @@ onEvent('recipes', (event) => {
                 C: '#forge:gems/mana'
             },
             id: 'eidolon:basic_belt'
+        },
+        {
+            output: 'eidolon:crucible',
+            pattern: ['A A', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:ingots/pewter',
+                B: 'minecraft:conduit'
+            },
+            id: 'eidolon:crucible'
         }
     ];
 

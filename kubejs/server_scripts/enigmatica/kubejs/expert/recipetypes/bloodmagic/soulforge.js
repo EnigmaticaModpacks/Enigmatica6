@@ -133,6 +133,13 @@ onEvent('recipes', (event) => {
                 output: Item.of('eidolon:arcane_gold_ingot'),
                 minimumDrain: 32.0,
                 drain: 16.0
+            },
+            {
+                inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
+                output: Item.of('occultism:iesnium_pickaxe'),
+                minimumDrain: 4000.0,
+                drain: 2048.0,
+                id: 'occultism:crafting/iesnium_pickaxe'
             }
         ]
     };

@@ -26,6 +26,12 @@ onEvent('recipes', (event) => {
                 output: 'bloodmagic:arcaneashes',
                 texture: 'sunarray',
                 id: 'bloodmagic:array/day'
+            },
+            {
+                inputs: ['ars_nouveau:ritual_scrying', 'bloodmagic:blankslate'],
+                output: 'bloodmagic:divinationsigil',
+                texture: 'divinationsigil',
+                id: 'bloodmagic:array/divinationsigil'
             }
         ]
     };
