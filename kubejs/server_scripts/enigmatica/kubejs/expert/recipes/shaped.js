@@ -722,7 +722,18 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:conduit'
             },
             id: 'eidolon:crucible'
-        }
+        },
+        {	//Gate T1 Hive Upgrade behind starting Nature's Aura
+            output: 'resourcefulbees:t1_hive_upgrade',
+            pattern: ['ACA', 'ABA', 'ACA'],
+            key: {
+                A: 'minecraft:grass',
+                B: '#minecraft:planks',
+                C: 'naturesaura:gold_powder'
+            },
+            id: 'resourcefulbees:t1_hive_upgrade'
+}
+
     ];
 
     newRecipes.forEach((recipe) => {
