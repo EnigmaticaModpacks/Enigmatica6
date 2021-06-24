@@ -32,7 +32,7 @@
 	#Should the Wilden Defender attack animals?
 	defenderHuntsAnimals = false
 	#Dimensions where hostile mobs will not spawn. Ex: minecraft:overworld. Run /forge dimensions for a list.
-	dimensionBlacklist = []
+	dimensionBlacklist = ["compactmachines:compact_world", "atum:atum", "mythicbotany:alfheim", "undergarden:undergarden"]
 	#Archwood forest spawn weight
 	#Range: > 0
 	archwoodForest = 3
