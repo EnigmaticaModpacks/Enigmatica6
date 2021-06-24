@@ -15,9 +15,9 @@
 	quests: [
 		{
 			title: "Materials and You"
-			x: 3.5d
-			y: 4.5d
-			shape: "gear"
+			x: 5.5d
+			y: 2.5d
+			dependencies: ["1DF74B9D5EED99EA"]
 			id: "3DF04CCD2774091C"
 			tasks: [
 				{
@@ -35,8 +35,8 @@
 		}
 		{
 			title: "Part Builder"
-			x: 2.5d
-			y: 3.5d
+			x: 4.5d
+			y: 1.5d
 			dependencies: ["3DF04CCD2774091C"]
 			id: "501A88E1FD99D763"
 			tasks: [{
@@ -53,8 +53,8 @@
 		}
 		{
 			title: "Chests"
-			x: 1.0d
-			y: 3.5d
+			x: 4.5d
+			y: 0.0d
 			dependencies: ["501A88E1FD99D763"]
 			id: "6284EFFBEBBA5151"
 			tasks: [
@@ -72,12 +72,14 @@
 		}
 		{
 			title: "Baby's First Tools"
-			x: 5.0d
-			y: 2.0d
+			x: 5.5d
+			y: -0.75d
+			shape: "gear"
 			dependencies: [
 				"47A98E407349190B"
 				"1847790EA5178779"
 			]
+			size: 1.25d
 			id: "1F6D53E2A0957EB7"
 			tasks: [
 				{
@@ -205,8 +207,8 @@
 		}
 		{
 			title: "All The Parts"
-			x: 3.5d
-			y: 2.5d
+			x: 5.5d
+			y: 1.0d
 			dependencies: ["501A88E1FD99D763"]
 			id: "1847790EA5178779"
 			tasks: [
@@ -283,8 +285,8 @@
 		}
 		{
 			title: "Tinker Station"
-			x: 4.5d
-			y: 3.5d
+			x: 6.5d
+			y: 1.5d
 			dependencies: ["3DF04CCD2774091C"]
 			id: "47A98E407349190B"
 			tasks: [{
@@ -297,6 +299,158 @@
 						texture: "minecraft:oak_planks"
 					}
 				}
+			}]
+		}
+		{
+			x: 5.5d
+			y: 4.0d
+			shape: "pentagon"
+			size: 1.25d
+			id: "1DF74B9D5EED99EA"
+			tasks: [{
+				id: "4621C9DA0F3A4925"
+				type: "checkmark"
+				title: "Stage 1"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 5.0d
+			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["1F6D53E2A0957EB7"]
+			size: 1.25d
+			id: "5F5FEF9EB38C7E37"
+			tasks: [{
+				id: "20FD8E6CE25EBD28"
+				type: "checkmark"
+				title: "Stage 2"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 6.5d
+			shape: "pentagon"
+			size: 1.25d
+			id: "7C4A47C9A1A40BF0"
+			tasks: [{
+				id: "5F8AC822BB8CB854"
+				type: "checkmark"
+				title: "Stage 3"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.5d
+			shape: "pentagon"
+			size: 1.25d
+			id: "30682190B9F341DE"
+			tasks: [{
+				id: "7C282FB499E69050"
+				type: "checkmark"
+				title: "Stage 4"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 5.0d
+			shape: "pentagon"
+			size: 1.25d
+			id: "7BD97C2C11CF2DA4"
+			tasks: [{
+				id: "29042054D16BBB73"
+				type: "checkmark"
+				title: "Stage 5"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 4.5d
+			dependencies: ["60064EDEB0676ECD"]
+			id: "2F69C7C6EB70AAF5"
+			tasks: [{
+				id: "4AB2666990C6295A"
+				type: "item"
+				item: "tconstruct:seared_heater"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 5.5d
+			dependencies: ["60064EDEB0676ECD"]
+			id: "46DA73F7E971F6E7"
+			tasks: [{
+				id: "1C8FD2B5403C1B9B"
+				type: "item"
+				item: "tconstruct:seared_fuel_tank"
+			}]
+		}
+		{
+			title: "I am Grout!"
+			x: 8.5d
+			y: 5.0d
+			dependencies: ["5F5FEF9EB38C7E37"]
+			id: "60064EDEB0676ECD"
+			tasks: [{
+				id: "2F3454306E50C917"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 5.0d
+			min_required_dependencies: 1
+			dependencies: [
+				"2F69C7C6EB70AAF5"
+				"46DA73F7E971F6E7"
+			]
+			id: "7F1BEA2FB32847D3"
+			tasks: [{
+				id: "0673B9E45F281E3B"
+				type: "item"
+				item: "tconstruct:seared_melter"
+			}]
+		}
+		{
+			x: 8.0d
+			y: 8.0d
+			id: "11DD7D50AE543FB8"
+			tasks: [{
+				id: "5B0322F29050EEDB"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 10.5d
+			id: "6CC3CAC49974B5B7"
+			tasks: [{
+				id: "1C60458D9DF2EA36"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
+		{
+			title: "I am also Grout!"
+			x: 4.0d
+			y: 8.5d
+			id: "3568000CFD702DBE"
+			tasks: [{
+				id: "602E4585F6D928E9"
+				type: "item"
+				item: "tconstruct:nether_grout"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 6.0d
+			id: "2073EBBE9E9B2A76"
+			tasks: [{
+				id: "1591D1405D3D1DB3"
+				type: "item"
+				item: "tconstruct:seared_stone"
 			}]
 		}
 	]
