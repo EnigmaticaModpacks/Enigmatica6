@@ -53,6 +53,12 @@ onEvent('recipes', (event) => {
                 entity: 'ars_nouveau:wilden_stalker',
                 aura: 150000,
                 time: 120
+            },
+            {
+                inputs: ['naturesaura:token_anger', 'eidolon:shadow_gem', '#forge:ingots/forgotten_metal'],
+                entity: 'undergarden:masticator',
+                aura: 500000,
+                time: 200
             }
         ]
     };
