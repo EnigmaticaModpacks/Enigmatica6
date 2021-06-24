@@ -732,9 +732,8 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:gold_powder'
             },
             id: 'resourcefulbees:t1_hive_upgrade'
-}
-
-    ];
+        }
+];
 
     newRecipes.forEach((recipe) => {
         if (recipe.id) {
