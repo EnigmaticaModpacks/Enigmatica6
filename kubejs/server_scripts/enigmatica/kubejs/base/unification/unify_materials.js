@@ -243,7 +243,7 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = Item.of(dust, 1);
+            output = dust;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -634,7 +634,7 @@ onEvent('recipes', (event) => {
         }
       
         var input,
-            output = Item.of(dust, 1);
+            output = dust;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -1092,7 +1092,7 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = Item.of(dust, 1);
+            output = dust;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
