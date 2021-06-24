@@ -48,6 +48,7 @@ onEvent('recipes', (event) => {
         immersiveengineering_hammer_crushing(event, material, ore, dust);
         immersiveengineering_gem_crushing(event, material, dust, gem);
 
+        mekanism_ingot_gem_crushing(event, material, ingot, dust, gem);
         mekanism_metal_ore_processing(
             event,
             material,
@@ -625,6 +626,34 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering
             .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
             .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
+    function mekanism_ingot_gem_crushing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+      
+        var input,
+            output = Item.of(dust, 1);
+        if (ingot != air) {
+            type = 'ingot';
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+            type = 'gem';
+        } else {
+            return;
+        }
+
+        event.remove({
+            input: input,
+            mod: 'mekanism',
+            type: 'mekanism:crushing'
+        });
+
+        event.recipes.mekanism
+            .crushing(output, input)
+            .id(`mekanism:processing/${material}/to_dust`);
     }
 
     function mekanism_metal_ore_processing(
