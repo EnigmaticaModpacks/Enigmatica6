@@ -16,6 +16,6 @@
 	logMessages = false
 
 ["Chunk slow unload settings"]
-	#Enable slightly slower chunk unloading after load, helps with mods hot-loading chunks frequently. Default: true
+	#Enable slow chunk unloading(~1minute) after load, helps with mods hot-loading chunks frequently. Default: true
 	chunkunload = true
 

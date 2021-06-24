@@ -46,7 +46,7 @@
 			description: [
 				"The Color Pallet can be used to customize the color of your Pedestals. Throw the pallet on the ground with up to 3 each of Red, Green, and/or Blue dye, and right click it with your Linking tool to set its color. You can then right-click pedestals with it to paint them. The pedestal will retain its color if you break it."
 				""
-				"Pedestals can be lit up by right-clicking them with a glowstone block. They can also be water-logged by shift-right-clicking them with a bucket of water."
+				"Pedestals can be lit up by Right-Clicking them with a glowstone block. They can also be water-logged by Sneak Right-Clicking them with a bucket of water."
 			]
 			dependencies: ["1F68F65F2A0E3229"]
 			id: "215EA91229D2CB56"
@@ -1047,7 +1047,7 @@
 			description: [
 				"Pedestals can transfer displayed items from one to another by linking them together. They can also transfer fluids, FE, and XP in their upgrades this way."
 				""
-				"This is done with the Linking Tool: Shift-Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards crouch-right-click the Linking Tool in the air to convert it into a Backwards Linking Tool, which links Sender -> Receiver."
+				"This is done with the Linking Tool: Sneak Right-Click a pedestal with the tool to choose the receiving Pedestal, and then do the same to choose the sending Pedestal. If this sounds backwards crouch-right-click the Linking Tool in the air to convert it into a Backwards Linking Tool, which links Sender -> Receiver."
 				""
 				"Each Sending Pedestal can be linked to a maximum of 8 Receivers; Receivers can be linked to any number of senders.You can right click a Sender with the Linking wand to display information about it, and to get a visual indication of which pedestals it’s linked to. By default the sending mechanism uses a priority system, which is indicated by the color particles emitted - black is first, white is last."
 			]
@@ -1088,7 +1088,7 @@
 			description: [
 				"Under normal conditions Sending pedestals will attempt to send whatever Items/Fluids/XP/FE they have to their linked receivers."
 				""
-				"Powering a Recieving pedestal with a Redstone signal will prevent it from receiving Items/Fluids/XP/FE from a sender. This can be used to create custom routing systems. It will also disable its upgrade from functioning, and prevent it from being teleported to (Via the Teleport Upgrade). This behavior can be reversed by holding a redstone torch in your offhand and shift-right-clicking the pedestal - this will insert the torch and make the pedestal active with a redstone signal."
+				"Powering a Recieving pedestal with a Redstone signal will prevent it from receiving Items/Fluids/XP/FE from a sender. This can be used to create custom routing systems. It will also disable its upgrade from functioning, and prevent it from being teleported to (Via the Teleport Upgrade). This behavior can be reversed by holding a redstone torch in your offhand and Sneak Right-Clicking the pedestal - this will insert the torch and make the pedestal active with a redstone signal."
 				""
 				"Pedestals can also be read by a comparator, and will give off a signal relative to their fill level."
 			]
