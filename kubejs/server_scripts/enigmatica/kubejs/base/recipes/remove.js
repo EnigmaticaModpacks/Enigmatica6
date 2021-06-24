@@ -149,6 +149,8 @@ onEvent('recipes', (event) => {
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
 
+        'tconstruct:tools/modifiers/wither_bone_conversion',
+
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
         'thermal:machine/press/packing2x2/press_honeycomb_packing',
