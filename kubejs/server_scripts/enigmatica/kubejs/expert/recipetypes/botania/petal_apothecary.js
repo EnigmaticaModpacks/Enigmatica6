@@ -10,7 +10,7 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:petals/white' },
                 { tag: 'botania:petals/white' },
                 { tag: 'botania:petals/white' },
-                { tag: 'forge:dusts/fluorite' },
+                { item: 'minecraft:conduit' },
                 { item: 'thermal:phytogro' }
             ],
             output: { item: 'botania:pure_daisy' },
@@ -22,7 +22,8 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:petals/brown' },
                 { tag: 'botania:petals/red' },
                 { tag: 'botania:petals/light_gray' },
-                { item: 'naturesaura:crimson_aura_mushroom' },
+                { tag: 'botania:runes/fire' },
+                { tag: 'botania:runes/air' },
                 { item: 'thermal:phytogro' }
             ],
             output: { item: 'botania:endoflame' },
@@ -85,6 +86,19 @@ onEvent('recipes', (event) => {
             ],
             output: { item: 'mythicbotany:aquapanthus' },
             id: 'mythicbotany:petal_apothecary/aquapanthus'
+        },
+        {
+            inputs: [
+                { tag: 'botania:petals/light_gray' },
+                { tag: 'botania:petals/light_gray' },
+                { tag: 'botania:petals/yellow' },
+                { tag: 'botania:petals/yellow' },
+                { tag: 'botania:petals/red' },
+                { item: 'undergarden:masticator_scales' },
+                { item: 'thermal:phytogro' }
+            ],
+            output: { item: 'botania:gourmaryllis' },
+            id: 'botania:petal_apothecary/gourmaryllis'
         }
     ];
 
