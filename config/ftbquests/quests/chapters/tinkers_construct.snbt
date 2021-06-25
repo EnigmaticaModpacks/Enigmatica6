@@ -364,31 +364,40 @@
 			}]
 		}
 		{
-			x: 10.0d
-			y: 4.5d
-			dependencies: ["60064EDEB0676ECD"]
-			id: "2F69C7C6EB70AAF5"
-			tasks: [{
-				id: "4AB2666990C6295A"
-				type: "item"
-				item: "tconstruct:seared_heater"
-			}]
-		}
-		{
-			x: 10.0d
-			y: 5.5d
+			title: "Fuel Source"
+			x: 9.0d
+			y: 5.0d
 			dependencies: ["60064EDEB0676ECD"]
 			id: "46DA73F7E971F6E7"
 			tasks: [{
-				id: "1C8FD2B5403C1B9B"
+				id: "4F0F5544F34F65C9"
 				type: "item"
-				item: "tconstruct:seared_fuel_tank"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:seared_fuel_tank"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:seared_heater"
+								Count: 1b
+							}
+							{
+								id: "tconstruct:seared_fuel_gauge"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
 			title: "I am Grout!"
-			x: 8.5d
-			y: 5.0d
+			x: 8.0d
+			y: 4.0d
 			dependencies: ["5F5FEF9EB38C7E37"]
 			id: "60064EDEB0676ECD"
 			tasks: [{
@@ -398,13 +407,10 @@
 			}]
 		}
 		{
-			x: 11.5d
-			y: 5.0d
-			min_required_dependencies: 1
-			dependencies: [
-				"2F69C7C6EB70AAF5"
-				"46DA73F7E971F6E7"
-			]
+			x: 10.0d
+			y: 4.0d
+			dependencies: ["46DA73F7E971F6E7"]
+			dependency_requirement: "one_completed"
 			id: "7F1BEA2FB32847D3"
 			tasks: [{
 				id: "0673B9E45F281E3B"
