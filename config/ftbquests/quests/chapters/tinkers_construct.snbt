@@ -17,6 +17,7 @@
 			title: "Materials and You"
 			x: 5.5d
 			y: 2.5d
+			subtitle: "Stencils?"
 			dependencies: ["1DF74B9D5EED99EA"]
 			id: "3DF04CCD2774091C"
 			tasks: [
@@ -37,6 +38,7 @@
 			title: "Part Builder"
 			x: 4.5d
 			y: 1.5d
+			subtitle: "RIP Stencil Table"
 			dependencies: ["3DF04CCD2774091C"]
 			id: "501A88E1FD99D763"
 			tasks: [{
@@ -53,8 +55,8 @@
 		}
 		{
 			title: "Chests"
-			x: 3.5d
-			y: 0.5d
+			x: 4.0d
+			y: 2.5d
 			dependencies: ["501A88E1FD99D763"]
 			id: "6284EFFBEBBA5151"
 			tasks: [
@@ -74,6 +76,7 @@
 			title: "Tinker Station"
 			x: 6.5d
 			y: 1.5d
+			subtitle: "Whats a Tool Station?"
 			dependencies: ["3DF04CCD2774091C"]
 			id: "47A98E407349190B"
 			tasks: [{
@@ -122,6 +125,8 @@
 			x: 6.5d
 			y: 6.5d
 			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["7F1BEA2FB32847D3"]
 			size: 1.25d
 			id: "7C4A47C9A1A40BF0"
 			tasks: [{
@@ -134,6 +139,8 @@
 			x: 4.5d
 			y: 6.5d
 			shape: "pentagon"
+			hide_dependency_lines: true
+			dependencies: ["15D11E0263D85BA7"]
 			size: 1.25d
 			id: "30682190B9F341DE"
 			tasks: [{
@@ -189,35 +196,48 @@
 			title: "I am Grout!"
 			x: 8.0d
 			y: 4.0d
+			subtitle: "Who's Groot?"
 			dependencies: ["5F5FEF9EB38C7E37"]
 			id: "60064EDEB0676ECD"
-			tasks: [{
-				id: "2F3454306E50C917"
-				type: "item"
-				item: "tconstruct:grout"
-			}]
+			tasks: [
+				{
+					id: "2F3454306E50C917"
+					type: "item"
+					item: "tconstruct:grout"
+				}
+				{
+					id: "06436285FDB2F8E0"
+					type: "item"
+					item: "tconstruct:puny_smelting"
+				}
+			]
 		}
 		{
+			icon: "tconstruct:seared_melter"
 			x: 10.0d
 			y: 4.0d
+			shape: "pentagon"
 			dependencies: ["46DA73F7E971F6E7"]
 			dependency_requirement: "one_completed"
+			size: 1.25d
 			id: "7F1BEA2FB32847D3"
-			tasks: [{
-				id: "0673B9E45F281E3B"
-				type: "item"
-				item: "tconstruct:seared_melter"
-			}]
-		}
-		{
-			x: 8.0d
-			y: 8.0d
-			id: "11DD7D50AE543FB8"
-			tasks: [{
-				id: "5B0322F29050EEDB"
-				type: "item"
-				item: "tconstruct:smeltery_controller"
-			}]
+			tasks: [
+				{
+					id: "0673B9E45F281E3B"
+					type: "item"
+					item: "tconstruct:seared_melter"
+				}
+				{
+					id: "5779FE967F3B76C7"
+					type: "item"
+					item: "tconstruct:seared_faucet"
+				}
+				{
+					id: "5147E067550CAE7C"
+					type: "item"
+					item: "tconstruct:seared_basin"
+				}
+			]
 		}
 		{
 			x: 4.0d
@@ -233,6 +253,7 @@
 			title: "I am also Grout!"
 			x: 4.0d
 			y: 8.5d
+			subtitle: "Who's Groot?"
 			id: "3568000CFD702DBE"
 			tasks: [{
 				id: "602E4585F6D928E9"
@@ -241,18 +262,29 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: 10.0d
+			x: 7.5d
+			y: 7.5d
+			subtitle: "Better Than Grout"
+			dependencies: ["7C4A47C9A1A40BF0"]
 			id: "2073EBBE9E9B2A76"
-			tasks: [{
-				id: "1591D1405D3D1DB3"
-				type: "item"
-				item: "tconstruct:seared_stone"
-			}]
+			tasks: [
+				{
+					id: "1591D1405D3D1DB3"
+					type: "item"
+					item: "tconstruct:seared_stone"
+				}
+				{
+					id: "591875AD150A66AF"
+					type: "item"
+					item: "tconstruct:mighty_smelting"
+				}
+			]
 		}
 		{
-			x: 8.5d
-			y: 9.5d
+			x: 9.5d
+			y: 7.0d
+			subtitle: "No More Dirt Pillars"
+			dependencies: ["634770F12938DA4E"]
 			id: "6FB35C84FEA4BA0B"
 			tasks: [{
 				id: "13C7C246B46BE652"
@@ -263,6 +295,7 @@
 		{
 			x: 3.0d
 			y: 10.0d
+			subtitle: "Never Used Scaffolding"
 			id: "49C4CA385B9FF801"
 			tasks: [{
 				id: "7A9397A52F39F5CE"
@@ -272,12 +305,49 @@
 		}
 		{
 			title: "Pickaxe"
-			x: 4.5d
-			y: -0.5d
+			icon: {
+				id: "tconstruct:pickaxe"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_speed": 1.2f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 1.0f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:piercing"
+							level: 2s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+					]
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						traits: 0
+						upgrades: 3
+					}
+				}
+			}
+			x: 4.25d
+			y: -0.25d
+			shape: "pentagon"
 			dependencies: [
 				"501A88E1FD99D763"
 				"47A98E407349190B"
 			]
+			size: 1.25d
 			id: "21240FF3EB77662D"
 			tasks: [
 				{
@@ -404,12 +474,49 @@
 		}
 		{
 			title: "Sword"
+			icon: {
+				id: "tconstruct:sword"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_speed": 1.6f
+						"tconstruct:mining_speed": 1.75f
+						"tconstruct:attack_damage": 4.675f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 74.8f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:jagged"
+							level: 3s
+						}
+						{
+							name: "tconstruct:silky_shears"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:flint"
+						"tconstruct:flint"
+						"tconstruct:flint"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 2
+						traits: 0
+						upgrades: 2
+					}
+				}
+			}
 			x: 5.5d
-			y: -0.5d
+			y: -0.25d
+			shape: "pentagon"
 			dependencies: [
 				"501A88E1FD99D763"
 				"47A98E407349190B"
 			]
+			size: 1.25d
 			id: "56EE4FFAD3DB3BAC"
 			tasks: [
 				{
@@ -497,12 +604,54 @@
 		}
 		{
 			title: "Mattock"
-			x: 6.5d
-			y: -0.5d
+			icon: {
+				id: "tconstruct:mattock"
+				Count: 1b
+				tag: {
+					tic_stats: {
+						"tconstruct:attack_speed": 1.0f
+						"tconstruct:mining_speed": 4.4f
+						"tconstruct:attack_damage": 2.5f
+						"tconstruct:harvest_level": 1.0f
+						"tconstruct:durability": 104.0f
+					}
+					tic_broken: 0b
+					tic_modifiers: [
+						{
+							name: "tconstruct:knockback"
+							level: 1s
+						}
+						{
+							name: "tconstruct:stonebound"
+							level: 3s
+						}
+						{
+							name: "tconstruct:shovel_transform_hidden"
+							level: 1s
+						}
+					]
+					tic_materials: [
+						"tconstruct:stone"
+						"tconstruct:stone"
+						"tconstruct:stone"
+					]
+					Damage: 0
+					tic_persistent_data: {
+						abilities: 1
+						traits: 0
+						upgrades: 3
+					}
+				}
+			}
+			x: 6.75d
+			y: -0.25d
+			shape: "pentagon"
+			subtitle: "Who Needs Shovels"
 			dependencies: [
 				"501A88E1FD99D763"
 				"47A98E407349190B"
 			]
+			size: 1.25d
 			id: "01C75CBFDF40A6BF"
 			tasks: [
 				{
@@ -624,6 +773,113 @@
 							]
 						}
 					}
+				}
+			]
+		}
+		{
+			x: 8.5d
+			y: 8.5d
+			subtitle: "Now With Less Lag Guaranteed!"
+			dependencies: ["2073EBBE9E9B2A76"]
+			id: "634770F12938DA4E"
+			tasks: [{
+				id: "4CB991F27E0DE8F0"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 9.0d
+			subtitle: "Whats a Tool Forge?"
+			id: "15D11E0263D85BA7"
+			tasks: [{
+				id: "34B7A955CA50C290"
+				type: "item"
+				item: {
+					id: "tconstruct:tinkers_anvil"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Repair Kits"
+			x: 7.0d
+			y: 2.5d
+			subtitle: "Durability Got Nothing On Me"
+			dependencies: ["47A98E407349190B"]
+			id: "3DB940B8A114CE02"
+			tasks: [{
+				id: "7ADC4CF3EB023743"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:wood"
+								}
+							}
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:stone"
+								}
+							}
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:bone"
+								}
+							}
+							{
+								id: "tconstruct:repair_kit"
+								Count: 1b
+								tag: {
+									Material: "tconstruct:flint"
+								}
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 11.0d
+			y: 8.0d
+			id: "17D92FE4E41CD3F3"
+			tasks: [
+				{
+					id: "1F883B0C3DE7EBE9"
+					type: "item"
+					item: "tconstruct:pickaxe_head_cast"
+				}
+				{
+					id: "70CFDA1FA8EDA078"
+					type: "item"
+					item: "tconstruct:small_axe_head_cast"
+				}
+				{
+					id: "50CB9CBBB508BA4E"
+					type: "item"
+					item: "tconstruct:small_blade_cast"
+				}
+				{
+					id: "73DA2B2E6C3C207E"
+					type: "item"
+					item: "tconstruct:tool_binding_cast"
+				}
+				{
+					id: "600B7FE91BC6A5D2"
+					type: "item"
+					item: "tconstruct:tool_handle_cast"
 				}
 			]
 		}
