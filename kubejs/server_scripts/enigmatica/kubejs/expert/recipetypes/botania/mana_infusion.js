@@ -35,6 +35,22 @@ onEvent('recipes', (event) => {
             mana: 50000,
             catalyst: 'architects_palette:moonstone',
             id: 'astralsorcery:infuser/aquamarine'
+        },
+        {
+            input: 'rftoolsbase:infused_diamond',
+            output: 'botania:mana_diamond',
+            count: 1,
+            mana: 50000,
+            catalyst: 'architects_palette:sunstone',
+            id: 'botania:mana_infusion/mana_diamond'
+        },
+        {
+            input: 'rftoolsbase:infused_enderpearl',
+            output: 'botania:mana_pearl',
+            count: 1,
+            mana: 35000,
+            catalyst: 'architects_palette:moonstone',
+            id: 'botania:mana_infusion/mana_pearl'
         }
     ];
 

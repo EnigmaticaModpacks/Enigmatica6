@@ -723,7 +723,8 @@ onEvent('recipes', (event) => {
             },
             id: 'eidolon:crucible'
         },
-        {	//Gate T1 Hive Upgrade behind starting Nature's Aura
+        {
+            //Gate T1 Hive Upgrade behind starting Nature's Aura
             output: 'resourcefulbees:t1_hive_upgrade',
             pattern: ['ACA', 'ABA', 'ACA'],
             key: {
@@ -732,8 +733,19 @@ onEvent('recipes', (event) => {
                 C: 'naturesaura:gold_powder'
             },
             id: 'resourcefulbees:t1_hive_upgrade'
-}
-
+        },
+        {
+            output: 'naturesaura:offering_table',
+            pattern: ['BAB', 'CBD', 'EEE'],
+            key: {
+                A: '#forge:ingots/infused_iron',
+                B: 'naturesaura:infused_stone',
+                C: 'naturesaura:token_fear',
+                D: 'naturesaura:token_sorrow',
+                E: 'naturesaura:ancient_bark'
+            },
+            id: 'naturesaura:offering_table'
+        }
     ];
 
     newRecipes.forEach((recipe) => {

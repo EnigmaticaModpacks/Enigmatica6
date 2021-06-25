@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/lapis',
+                'thermal:blizz_powder',
                 '#upgrade_aquatic:coralstone/infused',
                 'minecraft:kelp',
                 'aquaculture:diamond_hook'
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/sulfur',
+                'minecraft:blaze_powder',
                 'quark:magma_bricks',
                 'undergarden:ditchbulb',
                 'quark:white_candle'
@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/apatite',
+                'thermal:basalz_powder',
                 'undergarden:tremblecrust',
                 '#quark:runes',
                 'aquaculture:worm'
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/fluorite',
+                'thermal:blitz_powder',
                 'betterendforge:silk_fiber',
                 'quark:bottled_cloud',
                 'alexsmobs:guster_eye'

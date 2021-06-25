@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
                 { item: 'eidolon:gold_inlay', count: 2 },
                 { item: 'eidolon:pewter_inlay', count: 1 },
                 { tag: 'forge:gems/mana', count: 1 },
-                { item: 'naturesaura:gold_leaf', count: 4 }
+                { item: 'architects_palette:sunmetal_blend', count: 4 }
             ],
             output: {
                 entries: [{ result: { item: 'atum:scarab', count: 1 }, weight: 1 }],

@@ -15,8 +15,8 @@
 	default_quest_shape: ""
 	quests: [
 		{
-			x: -0.5d
-			y: -5.0d
+			x: -3.0d
+			y: -5.5d
 			id: "72D589CE18202510"
 			tasks: [{
 				id: "46003D18E8B6E35F"
@@ -41,7 +41,7 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -3.5d
 			y: -4.5d
 			dependencies: ["72D589CE18202510"]
 			id: "55B791C2720332C5"
@@ -52,7 +52,7 @@
 			}]
 		}
 		{
-			x: -0.5d
+			x: -3.0d
 			y: -3.5d
 			dependencies: ["55B791C2720332C5"]
 			id: "2A5E2A21BFECF76C"
@@ -63,89 +63,51 @@
 			}]
 		}
 		{
-			x: -2.5d
-			y: 0.0d
-			dependencies: ["0516126B238879F4"]
+			x: -2.0d
+			y: -2.0d
+			dependencies: ["2A5E2A21BFECF76C"]
 			id: "1C17C09DD9AB58BD"
-			tasks: [{
-				id: "164A56C8CA322F09"
-				type: "item"
-				item: "eidolon:crucible"
-			}]
+			tasks: [
+				{
+					id: "164A56C8CA322F09"
+					type: "item"
+					item: "eidolon:crucible"
+				}
+				{
+					id: "00A73F4961BFEB07"
+					type: "item"
+					item: "eidolon:brazier"
+				}
+			]
 		}
 		{
-			x: -0.5d
-			y: 0.5d
-			dependencies: [
-				"159492DF6B36BD22"
-				"2A5E2A21BFECF76C"
-			]
+			x: -2.0d
+			y: 1.0d
+			dependencies: ["719AFD0C38BE19A2"]
 			id: "0CA3D2BAD8F2B868"
-			tasks: [
-				{
-					id: "1BB8ED560E74D300"
-					type: "item"
-					item: "eidolon:worktable"
-				}
-				{
-					id: "1AA92C12098BE568"
-					type: "item"
-					item: "eidolon:unholy_symbol"
-				}
-			]
-		}
-		{
-			x: -0.5d
-			y: -0.75d
-			dependencies: [
-				"5AA38E6753FF4210"
-				"1C17C09DD9AB58BD"
-			]
-			id: "159492DF6B36BD22"
-			tasks: [
-				{
-					id: "44074CDF69D0BCA4"
-					type: "item"
-					item: "atum:scarab"
-				}
-				{
-					id: "708850EA380231C4"
-					type: "item"
-					item: "undergarden:catalyst"
-				}
-			]
+			tasks: [{
+				id: "1BB8ED560E74D300"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
 		}
 		{
 			x: -4.0d
-			y: 0.0d
-			id: "0516126B238879F4"
+			y: -0.5d
+			dependencies: [
+				"4642C99F4B51005B"
+				"719AFD0C38BE19A2"
+			]
+			id: "5AA38E6753FF4210"
 			tasks: [{
-				id: "5DF04EAD9E35FFCE"
+				id: "638694418DEBB47D"
 				type: "item"
-				item: "eidolon:brazier"
+				item: "betterendforge:silk_moth_nest"
 			}]
 		}
 		{
-			x: -2.5d
-			y: -1.5d
-			dependencies: ["4642C99F4B51005B"]
-			id: "5AA38E6753FF4210"
-			tasks: [
-				{
-					id: "638694418DEBB47D"
-					type: "item"
-					item: "betterendforge:silk_moth_nest"
-				}
-				{
-					id: "21E47A96FD36B37B"
-					type: "item"
-					item: "naturesaura:gold_fiber"
-				}
-			]
-		}
-		{
-			x: -2.5d
-			y: -3.0d
+			x: -4.0d
+			y: -2.0d
 			dependencies: ["2A5E2A21BFECF76C"]
 			id: "4642C99F4B51005B"
 			tasks: [
@@ -162,8 +124,8 @@
 			]
 		}
 		{
-			x: 1.5d
-			y: 1.5d
+			x: 2.0d
+			y: 1.0d
 			dependencies: ["0CA3D2BAD8F2B868"]
 			id: "102775CD7F9CD338"
 			tasks: [{
@@ -173,26 +135,9 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 3.0d
-			dependencies: [
-				"0CA3D2BAD8F2B868"
-				"06A20E7EA36392CB"
-			]
-			id: "331A6D1459DFCD86"
-			tasks: [{
-				id: "61705BD23EA4F985"
-				type: "item"
-				item: "bloodmagic:alchemytable"
-			}]
-		}
-		{
-			x: -2.5d
-			y: 1.5d
-			dependencies: [
-				"1C17C09DD9AB58BD"
-				"0CA3D2BAD8F2B868"
-			]
+			x: -2.0d
+			y: 2.0d
+			dependencies: ["0CA3D2BAD8F2B868"]
 			id: "06A20E7EA36392CB"
 			tasks: [
 				{
@@ -208,13 +153,9 @@
 			]
 		}
 		{
-			x: -2.5d
-			y: 7.0d
-			dependencies: [
-				"635E552B5928C2B3"
-				"4280183EE48A8F1E"
-				"2E079C386DCED957"
-			]
+			x: -2.0d
+			y: 6.0d
+			dependencies: ["0D9AD25503B44BFA"]
 			id: "2ECA82ED72DA6D61"
 			tasks: [{
 				id: "63C152D3BAEB82B5"
@@ -223,31 +164,21 @@
 			}]
 		}
 		{
-			x: -1.5d
+			x: -2.0d
 			y: 4.5d
-			dependencies: ["331A6D1459DFCD86"]
-			id: "635E552B5928C2B3"
+			description: [""]
+			dependencies: ["7E371FBDE82532D9"]
+			id: "4280183EE48A8F1E"
 			tasks: [{
-				id: "6D74AA77CE879BF9"
+				id: "50CA5DE83B5986DC"
 				type: "item"
 				item: "occultism:chalk_white_impure"
 			}]
 		}
 		{
-			x: -0.5d
-			y: 4.5d
-			dependencies: ["331A6D1459DFCD86"]
-			id: "4280183EE48A8F1E"
-			tasks: [{
-				id: "1F25BF76B1B146A3"
-				type: "item"
-				item: "occultism:chalk_gold_impure"
-			}]
-		}
-		{
-			x: 0.5d
-			y: 4.5d
-			dependencies: ["331A6D1459DFCD86"]
+			x: 2.0d
+			y: 7.5d
+			dependencies: ["61C9960AEED0B5AA"]
 			id: "464450BE4AAE26B0"
 			tasks: [{
 				id: "309EF98B691BAC31"
@@ -256,9 +187,9 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 4.5d
-			dependencies: ["331A6D1459DFCD86"]
+			x: 4.0d
+			y: 9.0d
+			dependencies: ["00B03E0EA7541597"]
 			id: "3DC9E0412A63646C"
 			tasks: [{
 				id: "1E2D0FDDE29B281D"
@@ -267,44 +198,19 @@
 			}]
 		}
 		{
-			x: -2.5d
+			x: -4.0d
 			y: 4.5d
-			dependencies: ["1C17C09DD9AB58BD"]
-			id: "2E079C386DCED957"
-			tasks: [
-				{
-					id: "427776AD91737C88"
-					type: "item"
-					item: "occultism:golden_sacrificial_bowl"
-				}
-				{
-					id: "43A94D0505685C1B"
-					type: "item"
-					item: "occultism:spirit_attuned_crystal"
-				}
-			]
+			dependencies: ["7E371FBDE82532D9"]
+			id: "5BC50DE75421CAAA"
+			tasks: [{
+				id: "3832859FD741B2D0"
+				type: "item"
+				item: "bloodmagic:soulsnare"
+			}]
 		}
 		{
 			x: -4.0d
-			y: 2.5d
-			dependencies: ["06A20E7EA36392CB"]
-			id: "5BC50DE75421CAAA"
-			tasks: [
-				{
-					id: "7549201E699C5AE0"
-					type: "item"
-					item: "bloodmagic:blankrune"
-				}
-				{
-					id: "3832859FD741B2D0"
-					type: "item"
-					item: "bloodmagic:soulsnare"
-				}
-			]
-		}
-		{
-			x: -6.0d
-			y: 4.5d
+			y: 6.0d
 			dependencies: [
 				"2ECA82ED72DA6D61"
 				"5BC50DE75421CAAA"
@@ -324,8 +230,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -0.5d
+			x: -6.5d
+			y: 3.0d
 			dependencies: ["598A3BD34A7DD40B"]
 			id: "2422557696EB83F3"
 			tasks: [{
@@ -335,11 +241,11 @@
 			}]
 		}
 		{
-			x: -4.0d
-			y: -1.5d
+			x: -6.5d
+			y: 1.0d
 			dependencies: [
-				"5AA38E6753FF4210"
 				"566824DF05761A43"
+				"62F3B5013BAB47AB"
 			]
 			id: "598A3BD34A7DD40B"
 			tasks: [{
@@ -349,8 +255,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -3.0d
+			x: -5.5d
+			y: -2.0d
 			dependencies: ["4642C99F4B51005B"]
 			id: "295B7A0FB81D44DB"
 			tasks: [{
@@ -360,8 +266,8 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -2.0d
+			x: -6.5d
+			y: -0.5d
 			dependencies: ["295B7A0FB81D44DB"]
 			id: "566824DF05761A43"
 			tasks: [{
@@ -371,9 +277,9 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 8.5d
-			dependencies: ["2ECA82ED72DA6D61"]
+			x: -4.0d
+			y: 8.0d
+			dependencies: ["6EECDEC09A67787E"]
 			id: "269C18852281A11E"
 			tasks: [{
 				id: "1721226282B4C95E"
@@ -388,12 +294,9 @@
 			}]
 		}
 		{
-			x: -6.0d
+			x: -4.0d
 			y: 7.0d
-			dependencies: [
-				"2ECA82ED72DA6D61"
-				"2422557696EB83F3"
-			]
+			dependencies: ["46221D2561D076D1"]
 			id: "6EECDEC09A67787E"
 			tasks: [{
 				id: "45448C65EE7C90B8"
@@ -408,9 +311,9 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: 10.0d
-			dependencies: ["2ECA82ED72DA6D61"]
+			x: -4.0d
+			y: 9.0d
+			dependencies: ["269C18852281A11E"]
 			id: "4C38CF2CADE34234"
 			tasks: [{
 				id: "70D6FF41B54F2CE2"
@@ -425,8 +328,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: 8.5d
+			x: 1.5d
+			y: 10.5d
 			dependencies: ["7E400A70D25984AC"]
 			id: "3A27E020822D9C81"
 			tasks: [{
@@ -442,12 +345,11 @@
 			}]
 		}
 		{
-			x: 1.5d
-			y: 7.0d
+			x: 2.0d
+			y: 9.0d
 			dependencies: [
-				"635E552B5928C2B3"
-				"4280183EE48A8F1E"
 				"464450BE4AAE26B0"
+				"120A5E18716B7033"
 			]
 			id: "7E400A70D25984AC"
 			tasks: [{
@@ -465,7 +367,7 @@
 		}
 		{
 			x: -4.0d
-			y: 12.0d
+			y: 11.0d
 			dependencies: ["56015C7ABFB5BF44"]
 			id: "7F8A19BA987B1F85"
 			tasks: [{
@@ -481,8 +383,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 8.5d
+			x: 2.5d
+			y: 10.5d
 			dependencies: ["7E400A70D25984AC"]
 			id: "05D48014A63BEC6E"
 			tasks: [{
@@ -498,36 +400,29 @@
 			}]
 		}
 		{
-			x: -8.0d
-			y: -1.5d
+			x: -7.5d
+			y: 4.0d
 			dependencies: [
 				"2422557696EB83F3"
-				"566824DF05761A43"
+				"1980E9BF6A705EC6"
 			]
 			id: "181E9A83AED8515E"
-			tasks: [{
-				id: "1C14B299858B774A"
-				type: "item"
-				item: "botania:mana_pool"
-			}]
-		}
-		{
-			x: -8.0d
-			y: 0.5d
-			dependencies: [
-				"181E9A83AED8515E"
-				"2422557696EB83F3"
+			tasks: [
+				{
+					id: "1C14B299858B774A"
+					type: "item"
+					item: "botania:mana_pool"
+				}
+				{
+					id: "56931344D40BD8EA"
+					type: "item"
+					item: "botania:runic_altar"
+				}
 			]
-			id: "7789F115E799ECBF"
-			tasks: [{
-				id: "34B74E5F079F3570"
-				type: "item"
-				item: "botania:manasteel_ingot"
-			}]
 		}
 		{
-			x: -5.0d
-			y: 11.0d
+			x: -4.0d
+			y: 10.0d
 			dependencies: ["4C38CF2CADE34234"]
 			id: "56015C7ABFB5BF44"
 			tasks: [{
@@ -537,12 +432,9 @@
 			}]
 		}
 		{
-			x: -0.5d
-			y: 7.0d
-			dependencies: [
-				"635E552B5928C2B3"
-				"4280183EE48A8F1E"
-			]
+			x: 0.0d
+			y: 7.5d
+			dependencies: ["0D9AD25503B44BFA"]
 			id: "120A5E18716B7033"
 			tasks: [{
 				id: "6A9B3739841C01EF"
@@ -554,6 +446,184 @@
 						Damage: 0
 					}
 				}
+			}]
+		}
+		{
+			x: -8.5d
+			y: 3.0d
+			dependencies: ["1B149A20BDD0E282"]
+			id: "1980E9BF6A705EC6"
+			tasks: [{
+				id: "6FA6A1DD5CF87D02"
+				type: "item"
+				item: "botania:gourmaryllis"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 2.0d
+			dependencies: ["598A3BD34A7DD40B"]
+			id: "1B149A20BDD0E282"
+			tasks: [{
+				id: "2A2244AC80666A1E"
+				type: "item"
+				item: "naturesaura:animal_spawner"
+			}]
+		}
+		{
+			title: "Basic Runes"
+			x: -8.5d
+			y: 5.0d
+			dependencies: ["181E9A83AED8515E"]
+			id: "00C3DF16F878672A"
+			tasks: [{
+				id: "5B1AFB0AED5F2E96"
+				type: "item"
+				title: "Basic Runes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:rune_water"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_earth"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_air"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_fire"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["06A20E7EA36392CB"]
+			id: "7E371FBDE82532D9"
+			tasks: [{
+				id: "093DCD4B762371E2"
+				type: "item"
+				item: "bloodmagic:weakbloodorb"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["7E371FBDE82532D9"]
+			id: "6191E6C529A75F79"
+			tasks: [{
+				id: "53483281538ADEC3"
+				type: "item"
+				item: "bloodmagic:apprenticebloodorb"
+			}]
+		}
+		{
+			x: 2.0d
+			y: 6.0d
+			dependencies: ["6191E6C529A75F79"]
+			id: "61C9960AEED0B5AA"
+			tasks: [{
+				id: "6363C8F60ADCFC0B"
+				type: "item"
+				item: "bloodmagic:magicianbloodorb"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 7.5d
+			dependencies: ["61C9960AEED0B5AA"]
+			id: "00B03E0EA7541597"
+			tasks: [{
+				id: "28316CBEBAC73599"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.0d
+			dependencies: ["6191E6C529A75F79"]
+			id: "0D9AD25503B44BFA"
+			tasks: [{
+				id: "00385980C02528AA"
+				type: "item"
+				item: "occultism:chalk_gold_impure"
+			}]
+		}
+		{
+			x: -2.0d
+			y: -0.5d
+			dependencies: ["1C17C09DD9AB58BD"]
+			id: "719AFD0C38BE19A2"
+			tasks: [
+				{
+					id: "691A203B9168177A"
+					type: "item"
+					item: "atum:scarab"
+				}
+				{
+					id: "4370B0FB1FFF0BBF"
+					type: "item"
+					item: "undergarden:catalyst"
+				}
+			]
+		}
+		{
+			x: -5.0d
+			y: 1.0d
+			dependencies: ["5AA38E6753FF4210"]
+			id: "62F3B5013BAB47AB"
+			tasks: [{
+				id: "7FA190A131C27BC6"
+				type: "item"
+				item: "naturesaura:gold_fiber"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 5.0d
+			dependencies: ["2422557696EB83F3"]
+			id: "0BE325624337E5B5"
+			tasks: [{
+				id: "56148070C3CA6CC7"
+				type: "item"
+				item: "naturesaura:offering_table"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 6.0d
+			dependencies: [
+				"0BE325624337E5B5"
+				"00C3DF16F878672A"
+			]
+			id: "573020A85882D835"
+			tasks: [{
+				id: "56395F7976A5B9BF"
+				type: "item"
+				item: "naturesaura:calling_spirit"
+			}]
+		}
+		{
+			x: -8.5d
+			y: 7.0d
+			dependencies: ["573020A85882D835"]
+			id: "130FBF1C071E689D"
+			tasks: [{
+				id: "52401B06DACC5872"
+				type: "item"
+				item: "naturesaura:sky_ingot"
 			}]
 		}
 	]
