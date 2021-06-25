@@ -53,8 +53,8 @@
 		}
 		{
 			title: "Chests"
-			x: 4.5d
-			y: 0.0d
+			x: 3.5d
+			y: 0.5d
 			dependencies: ["501A88E1FD99D763"]
 			id: "6284EFFBEBBA5151"
 			tasks: [
@@ -67,219 +67,6 @@
 					id: "576010A0AFC371A4"
 					type: "item"
 					item: "tconstruct:modifier_chest"
-				}
-			]
-		}
-		{
-			title: "Baby's First Tools"
-			x: 5.5d
-			y: -0.75d
-			shape: "gear"
-			dependencies: [
-				"47A98E407349190B"
-				"1847790EA5178779"
-			]
-			size: 1.25d
-			id: "1F6D53E2A0957EB7"
-			tasks: [
-				{
-					id: "55F31E6873064C3C"
-					type: "item"
-					item: {
-						id: "tconstruct:sword"
-						Count: 1b
-						tag: {
-							tic_stats: {
-								"tconstruct:attack_speed": 1.6f
-								"tconstruct:mining_speed": 1.75f
-								"tconstruct:attack_damage": 4.675f
-								"tconstruct:harvest_level": 1.0f
-								"tconstruct:durability": 74.8f
-							}
-							tic_broken: 0b
-							tic_modifiers: [
-								{
-									name: "tconstruct:jagged"
-									level: 3s
-								}
-								{
-									name: "tconstruct:silky_shears"
-									level: 1s
-								}
-							]
-							tic_materials: [
-								"tconstruct:flint"
-								"tconstruct:flint"
-								"tconstruct:flint"
-							]
-							Damage: 0
-							tic_persistent_data: {
-								abilities: 2
-								traits: 0
-								upgrades: 2
-							}
-						}
-					}
-				}
-				{
-					id: "287A50C5DAC32451"
-					type: "item"
-					item: {
-						id: "tconstruct:pickaxe"
-						Count: 1b
-						tag: {
-							tic_stats: {
-								"tconstruct:attack_speed": 1.2f
-								"tconstruct:mining_speed": 4.4f
-								"tconstruct:attack_damage": 1.0f
-								"tconstruct:harvest_level": 1.0f
-								"tconstruct:durability": 104.0f
-							}
-							tic_broken: 0b
-							tic_modifiers: [
-								{
-									name: "tconstruct:piercing"
-									level: 2s
-								}
-								{
-									name: "tconstruct:stonebound"
-									level: 3s
-								}
-							]
-							tic_materials: [
-								"tconstruct:stone"
-								"tconstruct:stone"
-								"tconstruct:stone"
-							]
-							Damage: 0
-							tic_persistent_data: {
-								abilities: 1
-								traits: 0
-								upgrades: 3
-							}
-						}
-					}
-				}
-				{
-					id: "45C83A278079B538"
-					type: "item"
-					item: {
-						id: "tconstruct:mattock"
-						Count: 1b
-						tag: {
-							tic_stats: {
-								"tconstruct:attack_speed": 1.0f
-								"tconstruct:mining_speed": 4.4f
-								"tconstruct:attack_damage": 2.5f
-								"tconstruct:harvest_level": 1.0f
-								"tconstruct:durability": 104.0f
-							}
-							tic_broken: 0b
-							tic_modifiers: [
-								{
-									name: "tconstruct:knockback"
-									level: 1s
-								}
-								{
-									name: "tconstruct:stonebound"
-									level: 3s
-								}
-								{
-									name: "tconstruct:shovel_transform_hidden"
-									level: 1s
-								}
-							]
-							tic_materials: [
-								"tconstruct:stone"
-								"tconstruct:stone"
-								"tconstruct:stone"
-							]
-							Damage: 0
-							tic_persistent_data: {
-								abilities: 1
-								traits: 0
-								upgrades: 3
-							}
-						}
-					}
-				}
-			]
-		}
-		{
-			title: "All The Parts"
-			x: 5.5d
-			y: 1.0d
-			dependencies: ["501A88E1FD99D763"]
-			id: "1847790EA5178779"
-			tasks: [
-				{
-					id: "0CAE37E068731AEB"
-					type: "item"
-					item: {
-						id: "tconstruct:pickaxe_head"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:stone"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "09DC7AA1BFCB5F2F"
-					type: "item"
-					item: {
-						id: "tconstruct:small_axe_head"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:stone"
-						}
-					}
-				}
-				{
-					id: "4BE3802468F37978"
-					type: "item"
-					item: {
-						id: "tconstruct:small_blade"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:flint"
-						}
-					}
-				}
-				{
-					id: "5FCFC7DFD1428765"
-					type: "item"
-					item: {
-						id: "tconstruct:tool_binding"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:stone"
-						}
-					}
-				}
-				{
-					id: "76D31728C2795CB0"
-					type: "item"
-					item: {
-						id: "tconstruct:tool_handle"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:stone"
-						}
-					}
-					count: 2L
-				}
-				{
-					id: "0C9E8A543B3B3151"
-					type: "item"
-					item: {
-						id: "tconstruct:tool_handle"
-						Count: 1b
-						tag: {
-							Material: "tconstruct:flint"
-						}
-					}
-					count: 2L
 				}
 			]
 		}
@@ -318,7 +105,11 @@
 			y: 5.0d
 			shape: "pentagon"
 			hide_dependency_lines: true
-			dependencies: ["1F6D53E2A0957EB7"]
+			dependencies: [
+				"56EE4FFAD3DB3BAC"
+				"01C75CBFDF40A6BF"
+				"21240FF3EB77662D"
+			]
 			size: 1.25d
 			id: "5F5FEF9EB38C7E37"
 			tasks: [{
@@ -450,14 +241,391 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 6.0d
+			x: 10.5d
+			y: 10.0d
 			id: "2073EBBE9E9B2A76"
 			tasks: [{
 				id: "1591D1405D3D1DB3"
 				type: "item"
 				item: "tconstruct:seared_stone"
 			}]
+		}
+		{
+			x: 8.5d
+			y: 9.5d
+			id: "6FB35C84FEA4BA0B"
+			tasks: [{
+				id: "13C7C246B46BE652"
+				type: "item"
+				item: "tconstruct:seared_ladder"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 10.0d
+			id: "49C4CA385B9FF801"
+			tasks: [{
+				id: "7A9397A52F39F5CE"
+				type: "item"
+				item: "tconstruct:scorched_ladder"
+			}]
+		}
+		{
+			title: "Pickaxe"
+			x: 4.5d
+			y: -0.5d
+			dependencies: [
+				"501A88E1FD99D763"
+				"47A98E407349190B"
+			]
+			id: "21240FF3EB77662D"
+			tasks: [
+				{
+					id: "6138CBDEFA39E798"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "65CB08BEAD26E062"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_binding"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "6EB2827544B61BB2"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "Sword"
+			x: 5.5d
+			y: -0.5d
+			dependencies: [
+				"501A88E1FD99D763"
+				"47A98E407349190B"
+			]
+			id: "56EE4FFAD3DB3BAC"
+			tasks: [
+				{
+					id: "2AF397D28F53C5D2"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:small_blade"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1A3501481167D3E9"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+					count: 2L
+				}
+			]
+		}
+		{
+			title: "Mattock"
+			x: 6.5d
+			y: -0.5d
+			dependencies: [
+				"501A88E1FD99D763"
+				"47A98E407349190B"
+			]
+			id: "01C75CBFDF40A6BF"
+			tasks: [
+				{
+					id: "3B49D98855A35F1F"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:small_axe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "1D7DEB2BB40DA3B3"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:pickaxe_head"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "2072FAE75938E9DD"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:wood"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:stone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:bone"
+									}
+								}
+								{
+									id: "tconstruct:tool_handle"
+									Count: 1b
+									tag: {
+										Material: "tconstruct:flint"
+									}
+								}
+							]
+						}
+					}
+				}
+			]
 		}
 	]
 }
