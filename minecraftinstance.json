@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-06-25T17:40:19.4479132Z",
-  "playedCount": 200,
+  "lastPlayed": "2021-06-25T19:51:04.387474Z",
+  "playedCount": 201,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-06-25T17:37:29.679595Z",
-  "lastRefreshAttempt": "2021-06-25T19:39:21.4842687+02:00",
+  "lastPreviousMatchUpdate": "2021-06-25T20:30:28.3568597Z",
+  "lastRefreshAttempt": "2021-06-25T22:32:53.4738639+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -431,14 +431,14 @@
       "addonID": 351264,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3354537,
-        "displayName": "Kotlin for Forge 1.12.2",
-        "fileName": "kotlinforforge-1.12.2-obf.jar",
-        "fileDate": "2021-06-16T22:42:49.963Z",
-        "fileLength": 6609997,
+        "id": 3364680,
+        "displayName": "Kotlin for Forge 1.13.0",
+        "fileName": "kotlinforforge-1.13.0-obf.jar",
+        "fileDate": "2021-06-25T19:26:49.853Z",
+        "fileLength": 6631174,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3354/537/kotlinforforge-1.12.2-obf.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3364/680/kotlinforforge-1.13.0-obf.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -446,7 +446,7 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 250735226,
+            "fingerprint": 2087358867,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -458,7 +458,7 @@
           },
           {
             "foldername": "thedarkcolour",
-            "fingerprint": 3990264336,
+            "fingerprint": 1652365975,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -482,7 +482,7 @@
           },
           {
             "foldername": "kotlin",
-            "fingerprint": 1634018787,
+            "fingerprint": 1998201044,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -493,7 +493,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3504445323,
+        "packageFingerprint": 2088544545,
         "gameVersion": [
           "1.16.3",
           "1.16.1",
@@ -520,12 +520,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "kotlinforforge-1.12.2-obf.jar"
+        "FileNameOnDisk": "kotlinforforge-1.13.0-obf.jar"
       },
       "dateInstalled": "2021-02-01T05:25:01.8374239Z",
-      "dateUpdated": "2021-06-17T17:33:42.7823757Z",
-      "dateLastUpdateAttempted": "2021-06-17T17:33:42.7823757Z",
-      "status": 5,
+      "dateUpdated": "2021-06-25T21:10:43.680417Z",
+      "dateLastUpdateAttempted": "2021-06-25T21:10:43.680417Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11970,6 +11970,98 @@
       "installedTargets": null
     },
     {
+      "addonID": 331936,
+      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
+      "installedFile": {
+        "id": 3346836,
+        "displayName": "citadel-1.7.1-1.16.5",
+        "fileName": "citadel-1.7.1-1.16.5.jar",
+        "fileDate": "2021-06-10T18:32:53.507Z",
+        "fileLength": 465097,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3346/836/citadel-1.7.1-1.16.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 3346837,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 4009696870,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 34669009,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1768348124,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.mixins.json",
+            "fingerprint": 3805323983,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.png",
+            "fingerprint": 1603167710,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.refmap.json",
+            "fingerprint": 853231933,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2703827617,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "citadel-1.7.1-1.16.5.jar"
+      },
+      "dateInstalled": "2021-06-25T21:10:47.1537754Z",
+      "dateUpdated": "2021-06-25T21:10:47.1628122Z",
+      "dateLastUpdateAttempted": "2021-06-25T21:10:47.1628122Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 251407,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
@@ -12174,26 +12266,26 @@
       "addonID": 361026,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
-        "id": 3364108,
-        "displayName": "occultism-1.4.2.jar",
-        "fileName": "occultism-1.16.5-1.4.2.jar",
-        "fileDate": "2021-06-25T05:19:27.237Z",
-        "fileLength": 3993518,
+        "id": 3364672,
+        "displayName": "occultism-1.4.3.jar",
+        "fileName": "occultism-1.16.5-1.4.3.jar",
+        "fileDate": "2021-06-25T19:20:44.117Z",
+        "fileLength": 3993510,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3364/108/occultism-1.16.5-1.4.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3364/672/occultism-1.16.5-1.4.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 306770,
+            "addonId": 309927,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 309927,
+            "addonId": 306770,
             "type": 3,
             "fileId": 0
           }
@@ -12202,19 +12294,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4229886952,
+            "fingerprint": 1124335194,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2974690317,
-            "type": 0,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2014090203,
+            "fingerprint": 2129309802,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -12235,9 +12321,15 @@
             "fingerprint": 2684291643,
             "type": 0,
             "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1860373959,
+            "type": 0,
+            "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2924125487,
+        "packageFingerprint": 4004277978,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -12254,11 +12346,11 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "occultism-1.16.5-1.4.2.jar"
+        "FileNameOnDisk": "occultism-1.16.5-1.4.3.jar"
       },
       "dateInstalled": "2021-05-13T19:57:29.3239017Z",
-      "dateUpdated": "2021-06-25T17:24:18.8360103Z",
-      "dateLastUpdateAttempted": "2021-06-25T17:24:18.8360103Z",
+      "dateUpdated": "2021-06-25T21:10:44.5594157Z",
+      "dateLastUpdateAttempted": "2021-06-25T21:10:44.5594157Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -15181,7 +15273,7 @@
       "dateInstalled": "2021-06-24T20:10:05.9319567Z",
       "dateUpdated": "2021-06-24T20:10:06.0490113Z",
       "dateLastUpdateAttempted": "2021-06-24T20:10:06.0490113Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -30737,7 +30829,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 353434,
