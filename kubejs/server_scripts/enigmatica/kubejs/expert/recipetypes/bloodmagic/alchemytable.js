@@ -14,46 +14,50 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:alchemytable/arcane_ash'
             },
             {
-                inputs: [
-                    'bloodmagic:plantoil',
-                    'alexsmobs:rattlesnake_rattle',
-                    '#forge:dusts/apatite',
-                    '#forge:dusts/charcoal'
-                ],
+                inputs: ['alexsmobs:komodo_spit', 'alexsmobs:rattlesnake_rattle', '#forge:dusts/charcoal'],
+                output: 'kubejs:cutting_essence',
+                count: 8,
+                syphon: 500,
+                ticks: 100,
+                orbLevel: 1
+            },
+            {
+                inputs: ['bloodmagic:plantoil', 'kubejs:cutting_essence'],
                 output: 'bloodmagic:basiccuttingfluid',
                 count: 1,
-                syphon: 1000,
-                ticks: 200,
+                syphon: 500,
+                ticks: 100,
                 orbLevel: 1,
                 id: 'bloodmagic:alchemytable/basic_cutting_fluid'
             },
             {
                 inputs: [
                     'upgrade_aquatic:glowing_ink_sac',
-                    '#forge:dusts/aluminum',
-                    '#forge:dusts/aluminum',
-                    '#forge:dusts/aluminum',
-                    '#forge:dusts/aluminum'
+                    '#forge:dusts/regalium',
+                    '#forge:dusts/regalium',
+                    '#forge:dusts/regalium',
+                    '#forge:dusts/regalium'
                 ],
                 output: 'astralsorcery:illumination_powder',
                 count: 16,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: 'astralsorcery:altar/illumination_powder'
             },
             {
                 inputs: [
                     'occultism:purified_ink',
                     '#forge:dusts/obsidian',
                     '#forge:dusts/obsidian',
-                    '#forge:dusts/obsidian',
-                    '#forge:dusts/obsidian'
+                    'astralsorcery:illumination_powder'
                 ],
                 output: 'astralsorcery:nocturnal_powder',
-                count: 16,
+                count: 4,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: 'astralsorcery:altar/nocturnal_powder'
             },
             {
                 inputs: [
@@ -208,6 +212,32 @@ onEvent('recipes', (event) => {
                 ticks: 200,
                 orbLevel: 3,
                 id: 'bloodmagic:arc/weakbloodshard'
+            },
+            {
+                inputs: [
+                    ['minecraft:crimson_roots', 'undergarden:blisterberry'],
+                    '#forge:crops/nether_wart',
+                    '#forge:dusts/sulfur'
+                ],
+                output: 'eidolon:crimson_essence',
+                count: 2,
+                syphon: 200,
+                ticks: 200,
+                orbLevel: 1
+            },
+            {
+                inputs: [
+                    'eidolon:zombie_heart',
+                    'minecraft:rotten_flesh',
+                    '#forge:dusts/charcoal',
+                    'projectvibrantjourneys:charred_bones',
+                    'undergarden:ink_mushroom'
+                ],
+                output: 'eidolon:death_essence',
+                count: 4,
+                syphon: 200,
+                ticks: 200,
+                orbLevel: 1
             }
         ]
     };

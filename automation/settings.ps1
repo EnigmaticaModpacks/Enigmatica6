@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.0"
+$MODPACK_VERSION = "0.5.1"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.4.14"
+$LAST_MODPACK_VERSION = "0.5.0"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -139,7 +139,10 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"cfm-client.toml",
 	"entity_culling-client.toml",
 	"terraforged/performance_internal.conf",
-	"gravestone-client.toml"
+	"gravestone-client.toml",
+	"jecalculation/record.json",
+	"topaddons-client.toml",
+	"diet-client.toml"
 )
 
 #=====================================================================//
@@ -173,7 +176,7 @@ $IsWindows = $true
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $true
+$ENABLE_CURSE_CLIENT_MODULE = $false
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.

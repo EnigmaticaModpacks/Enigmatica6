@@ -118,6 +118,8 @@ var itemsToHide = [
 
     'eidolon:tallow',
 
+    'emendatusenigmatica:sulfur_ore',
+    'emendatusenigmatica:cinnabar_ore',
     'emendatusenigmatica:dimensional_crushed',
     'emendatusenigmatica:arcane_crushed',
     'emendatusenigmatica:potassium_nitrate_crushed',
@@ -256,6 +258,10 @@ var itemsToHide = [
     'thermal:press_packing_2x2_die',
     'thermal:press_unpacking_die',
     'thermal:rubber',
+    'thermal:niter',
+    'thermal:cinnabar',
+    'thermal:apatite',
+    'thermal:sulfur',
 
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
@@ -271,6 +277,7 @@ const fluidsToHide = [
     'thermal:crude_oil',
     'immersivepetroleum:oil',
     'emendatusenigmatica:molten_zinc',
+    'emendatusenigmatica:molten_quartz',
     'emendatusenigmatica:molten_uranium',
     'emendatusenigmatica:molten_tin',
     'emendatusenigmatica:molten_steel',
@@ -313,8 +320,12 @@ const recipesToHide = [
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
             'botania:spark',
+            'botania:natura_pylon',
+            'botania:mana_pylon',
             'mythicbotany:wither_aconite_floating',
-            'mythicbotany:raindeletia_floating'
+            'mythicbotany:raindeletia_floating',
+            'mythicbotany:modified_gaia_pylon_with_alfsteel',
+            'mythicbotany:alfsteel_pylon'
         ]
     },
     {
@@ -381,7 +392,6 @@ var regexHide = [
     /emendatusenigmatica:\w+fluix/,
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
-    /betterendforge:\w+_anvil/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/
 ];

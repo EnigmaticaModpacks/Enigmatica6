@@ -81,6 +81,16 @@
 	cachalotVolume = 3.0
 	#Makes eagles teleport back to their owner if they get stuck during controlled flight. Useful for when playing with the Optifine mod, since this mod is the fault of many issues with the falconry system.
 	falconryTeleportsBack = false
+	#List of dimensions in which spawning void worms via mysterious worm items is allowed.
+	voidWormSpawnDimensions = ["minecraft:the_end"]
+	#All void worm damage is scaled to this.
+	#Range: 0.0 ~ 100.0
+	voidWormDamageModifier = 1.0
+	#Max Health of the void worm boss.
+	#Range: 0.0 ~ 1000000.0
+	voidWormMaxHealth = 160.0
+	#Whether the void worm boss is summonable or not, via the mysterious worm item.
+	voidWormSummonable = true
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -355,7 +365,7 @@
 		enderiophageSpawnRolls = 3
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		baldEagleSpawnWeight = 100
+		baldEagleSpawnWeight = 0
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		baldEagleSpawnRolls = 0
@@ -371,6 +381,24 @@
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		tigerSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		voidWormSpawnWeight = 0
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		voidWormSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		frilledSharkSpawnWeight = 11
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		frilledSharkSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		mimicOctopusSpawnWeight = 9
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		mimicOctopusSpawnRolls = 0
 
 		[general.spawning.uniqueSpawning]
 			#Whether to enable beached cachalot whales to spawn on beaches during thunder storms.

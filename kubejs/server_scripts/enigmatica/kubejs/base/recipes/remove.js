@@ -134,6 +134,9 @@ onEvent('recipes', (event) => {
         'immersivepetroleum:distillationtower/oilcracking',
 
         'mekanism:crushing/stone/to_cobblestone',
+        'mekanism:enriching/enriched/tin',
+        'mekanism:processing/bronze/dust/from_infusing',
+        'mekanism:processing/bronze/ingot/from_infusing',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
@@ -145,6 +148,8 @@ onEvent('recipes', (event) => {
 
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
+
+        'tconstruct:tools/modifiers/wither_bone_conversion',
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
@@ -197,7 +202,8 @@ onEvent('recipes', (event) => {
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
-        /atum:.*dye$/
+        /atum:.*dye$/,
+        /thermal:compat\/\w+\/\w+_ore/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -242,7 +248,7 @@ onEvent('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-/*
+    /*
     event.remove({
         input: '#forge:ores',
         mod: 'create',

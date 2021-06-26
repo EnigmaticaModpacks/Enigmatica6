@@ -18,6 +18,11 @@ onEvent('recipes', (event) => {
                 outputs: [Item.of('betterendforge:terminite_ingot')]
             },
             {
+                input1: '#forge:ingots/thallasium',
+                secondaries: ['#forge:dusts/ender'],
+                outputs: [Item.of('betterendforge:terminite_ingot')]
+            },
+            {
                 input1: '#forge:ingots/netherite',
                 secondaries: ['betterendforge:terminite_ingot'],
                 outputs: [Item.of('betterendforge:aeternium_ingot')]

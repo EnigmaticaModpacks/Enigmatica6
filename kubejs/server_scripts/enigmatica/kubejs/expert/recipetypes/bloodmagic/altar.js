@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:altar/apprenticebloodorb'
             },
             {
-                input: '#forge:storage_blocks/iesnium',
+                input: 'botania:mana_tablet',
                 output: 'bloodmagic:magicianbloodorb',
                 syphon: 50000,
                 altarLevel: 2,

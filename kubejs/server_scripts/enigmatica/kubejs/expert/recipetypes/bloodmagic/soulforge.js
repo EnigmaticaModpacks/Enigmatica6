@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'bloodmagic:soulgempetty',
-                    'naturesaura:tainted_gold',
+                    '#forge:ingots/forgotten_metal',
                     'glassential:glass_ethereal',
                     'quark:diamond_heart'
                 ],
@@ -75,6 +75,71 @@ onEvent('recipes', (event) => {
                 minimumDrain: 1000.0,
                 drain: 100.0,
                 id: 'bloodmagic:soulforge/greatertartaricgem'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_sword', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulsword'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientsword'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_axe', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulaxe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientaxe'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_pickaxe', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulpickaxe', {
+                    'occultism:otherworldToolTier': 2
+                }),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientpickaxe'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_shovel', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulshovel'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientshovel'
+            },
+            {
+                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_hoe', '#forge:ingots/iesnium'],
+                output: Item.of('bloodmagic:soulscythe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientscythe'
+            },
+            {
+                inputs: [
+                    'atum:nuit_godshard',
+                    'eidolon:soul_shard',
+                    'astralsorcery:nocturnal_powder',
+                    'eidolon:death_essence'
+                ],
+                output: Item.of('eidolon:shadow_gem'),
+                minimumDrain: 100.0,
+                drain: 32.0
+            },
+            {
+                inputs: [
+                    ['#forge:ingots/regalium', '#forge:ingots/nebu'],
+                    'eidolon:soul_shard',
+                    'eidolon:crimson_essence'
+                ],
+                output: Item.of('eidolon:arcane_gold_ingot'),
+                minimumDrain: 32.0,
+                drain: 16.0
+            },
+            {
+                inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
+                output: Item.of('occultism:iesnium_pickaxe'),
+                minimumDrain: 4000.0,
+                drain: 2048.0,
+                id: 'occultism:crafting/iesnium_pickaxe'
             }
         ]
     };

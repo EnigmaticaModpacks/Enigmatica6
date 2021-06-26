@@ -119,7 +119,7 @@
 			shape: "hexagon"
 			subtitle: "Just like the Birds and the Bees... kinda"
 			description: [
-				"To actually store items in an RS network, you'll want to make storage disks. These come in a variety of sizes; first try making one a 1k disk, the smallest size. You can retrieve the materials used to craft these (storage part/housing) by shift-right-clicking with the item in hand."
+				"To actually store items in an RS network, you'll want to make storage disks. These come in a variety of sizes; first try making one a 1k disk, the smallest size. You can retrieve the materials used to craft these (storage part/housing) by Sneak Right-Clicking with the item in hand."
 				""
 				"The Disk Drive is your main method of holding storage disks. Up to ten can fit in a drive; you can swap them in and out as needed."
 			]
@@ -299,7 +299,7 @@
 			y: 3.5d
 			subtitle: "Just like the one you use for your kids"
 			description: [
-				"The Storage Monitor adds a handy (and stylish) way to see the current number of a given item (or amount of fluid) in your network at a glance. Shift-right click it to open a config GUI."
+				"The Storage Monitor adds a handy (and stylish) way to see the current number of a given item (or amount of fluid) in your network at a glance. Sneak Right-Click it to open a config GUI."
 				""
 				"You can even insert/extract the relevant item/fluid directly to/from this block."
 			]
@@ -590,7 +590,7 @@
 			description: [
 				"Sure would be nice if you could connect your network to distant facilities without needing hundreds or thousands of cables. Here's a solution!"
 				""
-				"Place a Network Receiver at the distant location, then shift-right click it with a Network Card. Place a Network Transmitter in your main network and give it the Network Card, and presto - link complete."
+				"Place a Network Receiver at the distant location, then Sneak Right-Click it with a Network Card. Place a Network Transmitter in your main network and give it the Network Card, and presto - link complete."
 				""
 				"Note that the Transmitter must be chunk loaded for this to work, and that you still must have only one Controller in the entire network (across all locations)."
 			]

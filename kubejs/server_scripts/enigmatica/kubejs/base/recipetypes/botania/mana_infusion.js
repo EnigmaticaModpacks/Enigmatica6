@@ -1,58 +1,27 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            input: {
-                item: 'resourcefulbees:iron_bee_spawn_egg'
-            },
-            output: {
-                item: 'resourcefulbees:mana_bee_spawn_egg'
-            },
+            input: 'resourcefulbees:iron_bee_spawn_egg',
+            output: 'resourcefulbees:mana_bee_spawn_egg',
+            count: 1,
             mana: 99999
-        },
-        {
-            input: {
-                item: 'resourcefulbees:mana_honeycomb'
-            },
-            output: {
-                item: 'botania:manasteel_ingot'
-            },
-            mana: 2000
-        },
-        {
-            input: {
-                item: 'resourcefulbees:mana_honeycomb_block'
-            },
-            output: {
-                item: 'botania:manasteel_block'
-            },
-            mana: 19000
         }
-        /* Leaving this as a full template - this has both multiple outputs & a catalyst requirement
-        {
-            input: {
-                item: 'resourcefulbees:mana_honeycomb_block'
-            },
-            output: {
-                item: 'resourcefulbees:mana_honeycomb_block',
-                count: 2
-            },
-            mana: 2000, //Max Mana Cost for mana infusion seems to be 99999, for reference
-            catalyst: {
-                type: "block",
-                block: "botania:manasteel_block"
-              }
-        }
-    */
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
+        let constructed_recipe = {
             type: 'botania:mana_infusion',
-            input: recipe.input,
-            output: recipe.output,
-            catalyst: recipe.catalyst,
+            input: Ingredient.of(recipe.input).toJson(),
+            output: { item: recipe.output, count: recipe.count },
             mana: recipe.mana
-        });
+        };
+        if (recipe.catalyst) {
+            constructed_recipe.catalyst = {
+                type: 'block',
+                block: recipe.catalyst
+            };
+        }
+        const re = event.custom(constructed_recipe);
         if (recipe.id) {
             re.id(recipe.id);
         }

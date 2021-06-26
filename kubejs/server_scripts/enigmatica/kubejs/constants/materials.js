@@ -94,6 +94,30 @@ const metals = [
     'zinc'
 ];
 
+// Defines melting point of various materials
+const meltingPoints = {
+    utherium: { temp: 1212 },
+    thallasium: { temp: 800 },
+    signalum: { temp: 1272 },
+    regalium: { temp: 900 },
+    nebu: { temp: 1400 },
+    lumium: { temp: 1354 },
+    iesnium: { temp: 1450 },
+    froststeel: { temp: 1380 },
+    enderium: { temp: 1450 },
+    cloggrum: { temp: 800 },
+    sulfur: { temp: 115 },
+    redstone: { temp: 660 },
+    potassium_nitrate: { temp: 334 },
+    lapis: { temp: 115 },
+    fluorite: { temp: 1418 },
+    dimensional: { temp: 1450 },
+    coal: { temp: 1149 },
+    cinnabar: { temp: 580 },
+    bitumen: { temp: 115 },
+    apatite: { temp: 1660 }
+};
+
 // Defines the secondary metal each metal type will produce.
 const oreProcessingSecondaries = {
     iron: {
@@ -178,12 +202,17 @@ const oreProcessingSecondaries = {
 const gemProcessingProperties = {
     redstone: {
         output: 'dust',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 8,
             secondaryCount: 6,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 8,
+            secondaryCount: 6,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 6
@@ -193,20 +222,28 @@ const gemProcessingProperties = {
         },
         bloodmagic: {
             count: 6
+        },
+        pedestals: {
+            count: 6
         }
     },
     coal: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
+        secondary: 'emendatusenigmatica:sulfur_dust',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
         },
         immersiveengineering: {
             count: 4,
-            secondary: 'emendatusenigmatica:sulfur_dust',
             secondaryChance: 0.15
         },
         occultism: {
@@ -214,16 +251,24 @@ const gemProcessingProperties = {
         },
         bloodmagic: {
             count: 4
+        },
+        pedestals: {
+            count: 4
         }
     },
     diamond: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 500
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 2
@@ -232,17 +277,25 @@ const gemProcessingProperties = {
             count: 2
         },
         bloodmagic: {
+            count: 2
+        },
+        pedestals: {
             count: 2
         }
     },
     emerald: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 500
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 4
@@ -252,20 +305,28 @@ const gemProcessingProperties = {
         },
         bloodmagic: {
             count: 4
+        },
+        pedestals: {
+            count: 4
         }
     },
     lapis: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
+        secondary: 'emendatusenigmatica:sulfur_dust',
         create: {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.5,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 8,
+            secondaryCount: 4,
+            secondaryChance: 0.5
         },
         immersiveengineering: {
             count: 9,
-            secondary: 'emendatusenigmatica:sulfur_dust',
             secondaryChance: 0.2
         },
         occultism: {
@@ -273,20 +334,28 @@ const gemProcessingProperties = {
         },
         bloodmagic: {
             count: 9
+        },
+        pedestals: {
+            count: 9
         }
     },
     quartz: {
         output: 'gem',
+        stoneOutput: 'minecraft:netherrack',
+        secondary: 'emendatusenigmatica:sulfur_dust',
         create: {
             primaryCount: 2,
             secondaryCount: 4,
             secondaryChance: 0.5,
-            stoneOutput: 'minecraft:netherrack',
             processingTime: 350
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 4,
+            secondaryChance: 0.5
         },
         immersiveengineering: {
             count: 3,
-            secondary: 'emendatusenigmatica:sulfur_dust',
             secondaryChance: 0.25
         },
         occultism: {
@@ -294,16 +363,24 @@ const gemProcessingProperties = {
         },
         bloodmagic: {
             count: 3
+        },
+        pedestals: {
+            count: 3
         }
     },
     sulfur: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 6,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 6,
+            secondaryCount: 2,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 6
@@ -312,17 +389,25 @@ const gemProcessingProperties = {
             count: 6
         },
         bloodmagic: {
+            count: 6
+        },
+        pedestals: {
             count: 6
         }
     },
     apatite: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 8,
             secondaryCount: 4,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 8,
+            secondaryCount: 4,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 12
@@ -331,17 +416,25 @@ const gemProcessingProperties = {
             count: 12
         },
         bloodmagic: {
+            count: 12
+        },
+        pedestals: {
             count: 12
         }
     },
     fluorite: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 6,
+            secondaryCount: 3,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 6
@@ -350,17 +443,25 @@ const gemProcessingProperties = {
             count: 6
         },
         bloodmagic: {
+            count: 6
+        },
+        pedestals: {
             count: 6
         }
     },
     dimensional: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 6,
             secondaryCount: 3,
             secondaryChance: 0.25,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 6,
+            secondaryCount: 3,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 8
@@ -369,17 +470,25 @@ const gemProcessingProperties = {
             count: 8
         },
         bloodmagic: {
+            count: 8
+        },
+        pedestals: {
             count: 8
         }
     },
     ender: {
         output: 'shard',
+        stoneOutput: 'betterendforge:endstone_dust',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            stoneOutput: 'betterendforge:endstone_dust',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 3
@@ -388,17 +497,25 @@ const gemProcessingProperties = {
             count: 3
         },
         bloodmagic: {
+            count: 3
+        },
+        pedestals: {
             count: 3
         }
     },
     amber: {
         output: 'shard',
+        stoneOutput: 'betterendforge:endstone_dust',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            stoneOutput: 'betterendforge:endstone_dust',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 3
@@ -407,17 +524,25 @@ const gemProcessingProperties = {
             count: 3
         },
         bloodmagic: {
+            count: 3
+        },
+        pedestals: {
             count: 3
         }
     },
     potassium_nitrate: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.25,
-            stoneOutput: 'betterendforge:endstone_dust',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.25
         },
         immersiveengineering: {
             count: 3
@@ -426,17 +551,25 @@ const gemProcessingProperties = {
             count: 3
         },
         bloodmagic: {
+            count: 3
+        },
+        pedestals: {
             count: 3
         }
     },
     bitumen: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
         },
         immersiveengineering: {
             count: 4
@@ -445,17 +578,25 @@ const gemProcessingProperties = {
             count: 4
         },
         bloodmagic: {
+            count: 4
+        },
+        pedestals: {
             count: 4
         }
     },
     cinnabar: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
         },
         immersiveengineering: {
             count: 4
@@ -464,17 +605,25 @@ const gemProcessingProperties = {
             count: 4
         },
         bloodmagic: {
+            count: 4
+        },
+        pedestals: {
             count: 4
         }
     },
     mana: {
         output: 'gem',
+        stoneOutput: 'minecraft:cobblestone',
         create: {
             primaryCount: 2,
             secondaryCount: 2,
             secondaryChance: 0.5,
-            stoneOutput: 'minecraft:cobblestone',
             processingTime: 300
+        },
+        thermal: {
+            primaryCount: 2,
+            secondaryCount: 2,
+            secondaryChance: 0.5
         },
         immersiveengineering: {
             count: 4
@@ -483,6 +632,9 @@ const gemProcessingProperties = {
             count: 4
         },
         bloodmagic: {
+            count: 4
+        },
+        pedestals: {
             count: 4
         }
     }

@@ -147,6 +147,14 @@ onEvent('jei.information', (event) => {
             description: ['Obtained by tossing Clay Blocks through a Nether Portal from the Overworld']
         },
         {
+            items: ['byg:warped_cactus'],
+            description: ['Obtained by tossing Cactus through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['byg:warped_coral', 'byg:warped_coral_fan', 'byg:warped_coral'],
+            description: ['Obtained by tossing any coral through a Nether Portal from the Overworld']
+        },
+        {
             items: ['architects_palette:chiseled_abyssaline_bricks'],
             description: ['May be Charged by Right-Clicking with a Heart of the Sea. Used to power Abyssaline blocks.']
         },

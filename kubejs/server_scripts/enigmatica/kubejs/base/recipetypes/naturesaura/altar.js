@@ -28,6 +28,46 @@ onEvent('recipes', (event) => {
                 aura_type: 'naturesaura:nether',
                 aura: 90000,
                 time: 540
+            },
+            {
+                input: 'undergarden:blood_mushroom',
+                output: 'byg:soul_shroom',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 30000,
+                time: 250
+            },
+            {
+                input: 'undergarden:veil_mushroom',
+                output: 'byg:death_cap',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 30000,
+                time: 250
+            },
+            {
+                input: 'undergarden:indigo_mushroom',
+                output: 'byg:sythian_fungus',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 30000,
+                time: 250
+            },
+            {
+                input: 'undergarden:ink_mushroom',
+                output: 'byg:embur_wart',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 30000,
+                time: 250
+            },
+            {
+                input: 'minecraft:bamboo',
+                output: 'byg:sythian_stalk_block',
+                aura_type: 'naturesaura:nether',
+                catalyst: { item: 'naturesaura:conversion_catalyst' },
+                aura: 30000,
+                time: 250
             }
         ]
     };
