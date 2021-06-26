@@ -14,8 +14,8 @@ onEvent('recipes', (event) => {
             inputs: ['resourcefulbees:terrestrial_honeycomb', 'botania:mana_pearl', 'botania:mana_diamond'],
             output: 'botania:terrasteel_ingot',
             mana: 300000,
-            fromColor: 16711821,
-            toColor: 16750080
+            fromColor: 255,
+            toColor: 65280
         }
     ];
 
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
             type: 'mythicbotany:infusion',
             group: 'infuser',
             output: Item.of(recipe.output).toJson(),
-            mana: 2000000,
+            mana: recipe.mana,
             ingredients: recipe.inputs.map((input) => Ingredient.of(input).toJson()),
             fromColor: recipe.fromColor,
             toColor: recipe.toColor

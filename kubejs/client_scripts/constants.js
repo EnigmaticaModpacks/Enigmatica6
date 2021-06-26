@@ -320,8 +320,12 @@ const recipesToHide = [
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
             'botania:spark',
+            'botania:natura_pylon',
+            'botania:mana_pylon',
             'mythicbotany:wither_aconite_floating',
-            'mythicbotany:raindeletia_floating'
+            'mythicbotany:raindeletia_floating',
+            'mythicbotany:modified_gaia_pylon_with_alfsteel',
+            'mythicbotany:alfsteel_pylon'
         ]
     },
     {

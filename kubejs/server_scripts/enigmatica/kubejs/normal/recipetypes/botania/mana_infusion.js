@@ -1,10 +1,19 @@
 onEvent('recipes', (event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
     const recipes = [
         {
-            input: 'resourcefulbees:iron_bee_spawn_egg',
-            output: 'resourcefulbees:mana_bee_spawn_egg',
+            input: 'resourcefulbees:mana_honeycomb',
+            output: 'botania:manasteel_ingot',
             count: 1,
-            mana: 99999
+            mana: 2000
+        },
+        {
+            input: 'resourcefulbees:mana_honeycomb_block',
+            output: 'botania:manasteel_block',
+            count: 1,
+            mana: 19000
         }
     ];
 

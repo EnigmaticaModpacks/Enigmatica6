@@ -21,6 +21,20 @@ onEvent('recipes', (event) => {
             id: 'botania:mana_infusion/manasteel_block'
         },
         {
+            input: 'resourcefulbees:mana_honeycomb',
+            output: 'botania:manasteel_ingot',
+            count: 1,
+            mana: 2000,
+            catalyst: 'architects_palette:sunstone'
+        },
+        {
+            input: 'resourcefulbees:mana_honeycomb_block',
+            output: 'botania:manasteel_block',
+            count: 1,
+            mana: 19000,
+            catalyst: 'architects_palette:sunstone'
+        },
+        {
             input: 'betterendforge:silk_fiber',
             output: 'botania:mana_string',
             count: 6,
