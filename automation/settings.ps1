@@ -176,7 +176,7 @@ $IsWindows = $true
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $true
+$ENABLE_CURSE_CLIENT_MODULE = $false
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.
