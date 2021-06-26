@@ -124,8 +124,9 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: 1.0d
+			x: -12.0d
+			y: 10.0d
+			hide_dependency_lines: true
 			dependencies: ["0CA3D2BAD8F2B868"]
 			id: "102775CD7F9CD338"
 			tasks: [{
@@ -278,7 +279,7 @@
 		}
 		{
 			x: -4.0d
-			y: 8.0d
+			y: 10.5d
 			dependencies: ["6EECDEC09A67787E"]
 			id: "269C18852281A11E"
 			tasks: [{
@@ -295,7 +296,7 @@
 		}
 		{
 			x: -4.0d
-			y: 7.0d
+			y: 8.0d
 			dependencies: ["46221D2561D076D1"]
 			id: "6EECDEC09A67787E"
 			tasks: [{
@@ -312,7 +313,7 @@
 		}
 		{
 			x: -4.0d
-			y: 9.0d
+			y: 12.5d
 			dependencies: ["269C18852281A11E"]
 			id: "4C38CF2CADE34234"
 			tasks: [{
@@ -352,22 +353,29 @@
 				"120A5E18716B7033"
 			]
 			id: "7E400A70D25984AC"
-			tasks: [{
-				id: "21343EEBBC66D220"
-				type: "item"
-				item: {
-					id: "occultism:infused_pickaxe"
-					Count: 1b
-					tag: {
-						spiritName: "Jarcraure"
-						Damage: 0
+			tasks: [
+				{
+					id: "21343EEBBC66D220"
+					type: "item"
+					item: {
+						id: "occultism:infused_pickaxe"
+						Count: 1b
+						tag: {
+							spiritName: "Jarcraure"
+							Damage: 0
+						}
 					}
 				}
-			}]
+				{
+					id: "26E55AF6BCCAE933"
+					type: "item"
+					item: "occultism:iesnium_ingot"
+				}
+			]
 		}
 		{
 			x: -4.0d
-			y: 11.0d
+			y: 16.0d
 			dependencies: ["56015C7ABFB5BF44"]
 			id: "7F8A19BA987B1F85"
 			tasks: [{
@@ -422,7 +430,7 @@
 		}
 		{
 			x: -4.0d
-			y: 10.0d
+			y: 14.5d
 			dependencies: ["4C38CF2CADE34234"]
 			id: "56015C7ABFB5BF44"
 			tasks: [{
@@ -609,21 +617,439 @@
 				"00C3DF16F878672A"
 			]
 			id: "573020A85882D835"
+			tasks: [
+				{
+					id: "56395F7976A5B9BF"
+					type: "item"
+					item: "naturesaura:calling_spirit"
+				}
+				{
+					id: "341C865E4A09DB51"
+					type: "item"
+					item: "naturesaura:sky_ingot"
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: 12.0d
+			dependencies: [
+				"2B4F57731186E24E"
+				"5D33A061D195DD08"
+			]
+			id: "3619843EA1DC18EE"
 			tasks: [{
-				id: "56395F7976A5B9BF"
+				id: "653DEB2B5A600A05"
 				type: "item"
-				item: "naturesaura:calling_spirit"
+				item: "mythicbotany:mana_infuser"
 			}]
 		}
 		{
+			x: -7.5d
+			y: 8.0d
+			dependencies: [
+				"13E2F8AEFECF661A"
+				"5BE151C00A0DAFF3"
+			]
+			id: "3EDBC6F0B3A54589"
+			tasks: [{
+				id: "49C4E9BAF5D6DE4E"
+				type: "item"
+				item: "botania:terra_plate"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 11.5d
+			dependencies: ["2B4F57731186E24E"]
+			id: "36C882808C98F78B"
+			tasks: [
+				{
+					id: "7A1204F7810034E5"
+					type: "item"
+					item: "botania:orechid"
+				}
+				{
+					id: "54A129E3653AA699"
+					type: "item"
+					item: "botania:orechid_ignem"
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: 17.0d
+			dependencies: ["7F8A19BA987B1F85"]
+			id: "5B8648C9395C13AA"
+			tasks: [
+				{
+					id: "33A168E4BEABF178"
+					type: "item"
+					item: {
+						id: "occultism:miner_foliot_unspecialized"
+						Count: 1b
+						tag: {
+							spiritName: "Zururakmur"
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "68F00F835E80A429"
+					type: "item"
+					item: {
+						id: "occultism:miner_djinni_ores"
+						Count: 1b
+						tag: {
+							spiritName: "Mararkarc"
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -2.0d
+			y: 11.0d
+			dependencies: ["269C18852281A11E"]
+			id: "7E3B061EC45D3617"
+			tasks: [{
+				id: "7485B9CF28536D07"
+				type: "item"
+				item: "bloodmagic:demoncrucible"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 10.0d
+			dependencies: ["269C18852281A11E"]
+			id: "09B55B3D016FA0C0"
+			tasks: [{
+				id: "12352CCA58358D01"
+				type: "item"
+				item: "bloodmagic:demoncrystallizer"
+			}]
+		}
+		{
+			x: -6.5d
+			y: 9.0d
+			dependencies: ["3EDBC6F0B3A54589"]
+			id: "1C94CAC4F670B313"
+			tasks: [{
+				id: "1C28BA4D82AF2A58"
+				type: "item"
+				item: "botania:terrasteel_ingot"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 13.5d
+			dependencies: ["3619843EA1DC18EE"]
+			id: "233FA393E8A84033"
+			tasks: [{
+				id: "633E93F709F16AAE"
+				type: "item"
+				item: "mythicbotany:alfsteel_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 2.0d
+			dependencies: ["62F3B5013BAB47AB"]
+			id: "747D136264F6055B"
+			tasks: [{
+				id: "74D329104B803290"
+				type: "item"
+				item: "resourcefulbees:t1_beehive"
+			}]
+		}
+		{
+			x: -7.5d
+			y: 10.0d
+			dependencies: ["1C94CAC4F670B313"]
+			id: "2B4F57731186E24E"
+			tasks: [{
+				id: "295FA147EB2B8D43"
+				type: "item"
+				item: "botania:alfheim_portal"
+			}]
+		}
+		{
+			title: "Seasonal Runes"
 			x: -8.5d
 			y: 7.0d
-			dependencies: ["573020A85882D835"]
-			id: "130FBF1C071E689D"
+			description: [""]
+			dependencies: ["00C3DF16F878672A"]
+			id: "5BE151C00A0DAFF3"
 			tasks: [{
-				id: "52401B06DACC5872"
+				id: "6FB81ABDD0EE54F4"
 				type: "item"
-				item: "naturesaura:sky_ingot"
+				title: "Seasonal Runes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:rune_spring"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_summer"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_autumn"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_winter"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -6.5d
+			y: 7.0d
+			dependencies: ["573020A85882D835"]
+			id: "13E2F8AEFECF661A"
+			tasks: [{
+				id: "29D39750695C1EBE"
+				type: "item"
+				item: "botania:rune_mana"
+			}]
+		}
+		{
+			title: "Sinful Runes"
+			x: -8.5d
+			y: 9.0d
+			dependencies: ["5BE151C00A0DAFF3"]
+			id: "2337948E863C0F3B"
+			tasks: [{
+				id: "365988C012785FD3"
+				type: "item"
+				title: "Sinful Runes"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "botania:rune_lust"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_gluttony"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_greed"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_sloth"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_wrath"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_pride"
+								Count: 1b
+							}
+							{
+								id: "botania:rune_envy"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			title: "Runes of the Realms"
+			x: -8.5d
+			y: 11.5d
+			description: [""]
+			dependencies: ["2337948E863C0F3B"]
+			id: "5D33A061D195DD08"
+			tasks: [{
+				id: "00051B053D3F4AAB"
+				type: "item"
+				title: "Runes of the Realms"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mythicbotany:asgard_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:vanaheim_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:alfheim_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:midgard_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:joetunheim_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:muspelheim_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:niflheim_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:nidavellir_rune"
+								Count: 1b
+							}
+							{
+								id: "mythicbotany:helheim_rune"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: -10.5d
+			y: 11.5d
+			dependencies: [
+				"5D33A061D195DD08"
+				"102775CD7F9CD338"
+				"68292593CF029DEE"
+			]
+			id: "0C8A82F038C0C647"
+			tasks: [{
+				id: "5D04767027E21E18"
+				type: "item"
+				item: "astralsorcery:altar_attunement"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 13.5d
+			dependencies: ["0C8A82F038C0C647"]
+			id: "1D7FA9A7F1F20502"
+			tasks: [{
+				id: "23F60219466C96BB"
+				type: "item"
+				item: "astralsorcery:altar_constellation"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 15.0d
+			dependencies: ["1D7FA9A7F1F20502"]
+			id: "648EF41AAF02D3D7"
+			tasks: [{
+				id: "3BF79D408EB1D87E"
+				type: "item"
+				item: "astralsorcery:altar_radiance"
+			}]
+		}
+		{
+			x: -12.0d
+			y: 12.5d
+			dependencies: ["0C8A82F038C0C647"]
+			id: "6A471B48BCD9CD11"
+			tasks: [{
+				id: "49D7E4729811C70E"
+				type: "item"
+				item: "astralsorcery:attunement_altar"
+			}]
+		}
+		{
+			x: -10.5d
+			y: 7.0d
+			dependencies: ["5BE151C00A0DAFF3"]
+			id: "68292593CF029DEE"
+			tasks: [{
+				id: "253D5F6276F25CA8"
+				type: "item"
+				item: "astralsorcery:hand_telescope"
+			}]
+		}
+		{
+			x: -12.5d
+			y: 15.0d
+			dependencies: ["648EF41AAF02D3D7"]
+			id: "6D9116DBF9989AA9"
+			tasks: [{
+				id: "5DB6723C9576E7BC"
+				type: "item"
+				item: "astralsorcery:observatory"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 12.0d
+			dependencies: ["7E3B061EC45D3617"]
+			id: "590D4ABAC13B92E0"
+			tasks: [{
+				id: "0B13FA7CE1ABD0C9"
+				type: "item"
+				item: "occultism:storage_controller"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 13.0d
+			dependencies: ["590D4ABAC13B92E0"]
+			id: "31CB7C1723DE957B"
+			tasks: [{
+				id: "6F27839D3433F665"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier1"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 14.0d
+			dependencies: ["31CB7C1723DE957B"]
+			id: "0B38C9F879EAAB18"
+			tasks: [{
+				id: "42B9746622FBC1F2"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier2"
+			}]
+		}
+		{
+			x: -2.0d
+			y: 15.0d
+			dependencies: ["0B38C9F879EAAB18"]
+			id: "6784887421DAB91C"
+			tasks: [{
+				id: "79BC132A4DA3E5AE"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier3"
+			}]
+		}
+		{
+			x: -1.5d
+			y: 16.0d
+			dependencies: ["6784887421DAB91C"]
+			id: "1766CBDDEFE97113"
+			tasks: [{
+				id: "5CD68A44A23B1E10"
+				type: "item"
+				item: "occultism:storage_stabilizer_tier4"
 			}]
 		}
 	]
