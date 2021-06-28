@@ -6,7 +6,9 @@ onEvent('item.tags', (event) => {
         'mythicbotany:alfsteel_pick',
         'bloodmagic:soulpickaxe',
         'eidolon:reversal_pick',
-        'atum:ptahs_decadence'
+        'atum:ptahs_decadence',
+        'tconstruct:pickaxe',
+        'occultism:ritual_dummy/craft_infused_pickaxe'
     ];
 
     var exceptions = [
