@@ -1,0 +1,74 @@
+{
+    "type": "sub_theme",
+    "id": 2001,
+    "theme": {
+        "pillar": {
+            "type": "block",
+            "block": "byg:withering_oak_wood"
+        },
+        "trapdoor": {
+            "type": "block",
+            "block": "upgrade_aquatic:tooth_trapdoor"
+        },
+        "door": {
+            "type": "block",
+            "block": "upgrade_aquatic:tooth_door"
+        },
+        "material": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "minecraft:dead_tube_coral_block"
+                },
+                {
+                    "block": "minecraft:dead_brain_coral_block"
+                }
+            ]
+        },
+        "stairs": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_stairs"
+                },
+                {
+                    "block": "undergarden:tremblecrust_stairs"
+                }
+            ]
+        },
+        "slab": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "undergarden:tremblecrust_slab"
+                },
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_slab"
+                }
+            ]
+        },
+        "fence": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "undergarden:tremblecrust_wall"
+                },
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_wall"
+                }
+            ]
+        },
+        "fence_gate": {
+            "type": "block",
+            "block": "minecraft:cave_air"
+        },
+        "button": {
+            "type": "block",
+            "block": "minecraft:polished_blackstone_button"
+        },
+        "pressure_plate": {
+            "type": "block",
+            "block": "undergarden:tremblecrust_pressure_plate"
+        }
+    }
+}
