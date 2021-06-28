@@ -15,9 +15,14 @@ function filletRecipe(fish, filletCount) {
 }
 onEvent('recipes', (event) => {
     const recipes = [
-        cuttingRecipe(Ingredient.of('#forge:storage_blocks/clay'), Ingredient.of('#forge:tools/shovel'), [
-            Item.of('minecraft:clay_ball', 4)
-        ]),
+        cuttingRecipe(
+            Ingredient.of('#forge:storage_blocks/clay'),
+            {
+                type: 'farmersdelight:tool',
+                tool: 'shovel'
+            },
+            [Item.of('minecraft:clay_ball', 4)]
+        ),
         cuttingRecipe(Ingredient.of('minecraft:chicken'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:chicken_cuts', 2),
             Item.of('simplefarming:raw_chicken_wings'),
@@ -26,9 +31,14 @@ onEvent('recipes', (event) => {
         cuttingRecipe(Ingredient.of('aquaculture:frog'), Ingredient.of('#forge:tools/knives'), [
             Item.of('quark:frog_leg', 2)
         ]),
-        cuttingRecipe(Ingredient.of('aquaculture:goldfish'), Ingredient.of('#forge:tools/pickaxes'), [
-            Item.of('emendatusenigmatica:gold_chunk', 1)
-        ]),
+        cuttingRecipe(
+            Ingredient.of('aquaculture:goldfish'),
+            {
+                type: 'farmersdelight:tool',
+                tool: 'pickaxe'
+            },
+            [Item.of('emendatusenigmatica:gold_chunk', 1)]
+        ),
         cuttingRecipe(Ingredient.of('aquaculture:atlantic_cod'), Ingredient.of('#forge:tools/knives'), [
             Item.of('farmersdelight:cod_slice', 6),
             Item.of('minecraft:bone_meal', 3)
@@ -88,7 +98,10 @@ onEvent('recipes', (event) => {
     tillsIntoFarmland.forEach(function (category) {
         let farmland = category.type;
         category.soils.forEach(function (soil) {
-            let tool = Ingredient.of('#forge:tools/hoe');
+            let tool = {
+                type: 'farmersdelight:tool',
+                tool: 'hoe'
+            };
             let ingredients = Ingredient.of(soil);
             let result = [Item.of(farmland)];
 
@@ -114,10 +127,15 @@ onEvent('recipes', (event) => {
         ];
 
         woodRecipes.forEach((recipe) => {
-            let tool = Ingredient.of('#forge:tools/axe');
+            let tool = {
+                type: 'farmersdelight:tool',
+                tool: 'axe'
+            };
             let ingredients = Ingredient.of(recipe.input);
-            let result = [Item.of(recipe.output)];
+            let result = [Item.of(recipe.output), Item.of('farmersdelight:tree_bark')];
+
             event.remove({ output: recipe.output });
+
             event.custom({
                 type: 'farmersdelight:cutting',
                 ingredients: [ingredients],

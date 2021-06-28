@@ -16,9 +16,14 @@ onEvent('recipes', (event) => {
         cuttingRecipe(Ingredient.of('minecraft:leather'), Ingredient.of('#forge:tools/knives'), [
             Item.of('betterendforge:leather_stripe', 3)
         ]),
-        cuttingRecipe(Ingredient.of('#minecraft:planks'), Ingredient.of('#forge:tools/axe'), [
-            Item.of('minecraft:stick', 2)
-        ])
+        cuttingRecipe(
+            Ingredient.of('#minecraft:planks'),
+            {
+                type: 'farmersdelight:tool',
+                tool: 'axe'
+            },
+            [Item.of('minecraft:stick', 2)]
+        )
     ];
 
     recipes.forEach((recipe) => {
@@ -36,7 +41,10 @@ onEvent('recipes', (event) => {
         ];
 
         woodRecipes.forEach((recipe) => {
-            let tool = Ingredient.of('#forge:tools/axe');
+            let tool = {
+                type: 'farmersdelight:tool',
+                tool: 'axe'
+            };
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of('minecraft:stick', 8)];
             event.custom({
