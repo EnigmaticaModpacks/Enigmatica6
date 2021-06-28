@@ -12,15 +12,39 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    var data = {
-        recipes: [
-            cuttingRecipe(Ingredient.of('minecraft:leather'), Ingredient.of('#forge:tools/knives'), [
-                Item.of('betterendforge:leather_stripe', 3)
-            ])
-        ]
-    };
+    const recipes = [
+        cuttingRecipe(Ingredient.of('minecraft:leather'), Ingredient.of('#forge:tools/knives'), [
+            Item.of('betterendforge:leather_stripe', 3)
+        ]),
+        cuttingRecipe(Ingredient.of('#minecraft:planks'), Ingredient.of('#forge:tools/axe'), [
+            Item.of('minecraft:stick', 2)
+        ])
+    ];
 
-    data.recipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.custom(recipe);
+    });
+
+    buildWoodVariants.forEach((variant) => {
+        let woodRecipes = [
+            {
+                input: variant.logBlockStripped
+            },
+            {
+                input: variant.woodBlockStripped
+            }
+        ];
+
+        woodRecipes.forEach((recipe) => {
+            let tool = Ingredient.of('#forge:tools/axe');
+            let ingredients = Ingredient.of(recipe.input);
+            let result = [Item.of('minecraft:stick', 8)];
+            event.custom({
+                type: 'farmersdelight:cutting',
+                ingredients: [ingredients],
+                tool: tool,
+                result: result
+            });
+        });
     });
 });

@@ -18,7 +18,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/concrete',
         /create:crafting\/materials\/andesite_alloy/,
         'immersiveengineering:crafting/component_iron',
-        'immersiveengineering:crafting/component_steel'
+        'immersiveengineering:crafting/component_steel',
+        'minecraft:stick'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
