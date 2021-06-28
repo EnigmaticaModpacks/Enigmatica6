@@ -7,14 +7,14 @@ onEvent('item.tags', (event) => {
         'bloodmagic:soulpickaxe',
         'eidolon:reversal_pick',
         'atum:ptahs_decadence',
-        'tconstruct:pickaxe',
-        'occultism:ritual_dummy/craft_infused_pickaxe'
+        'tconstruct:pickaxe'
     ];
 
     var exceptions = [
         'betterendforge:aeternium_pickaxe_head',
         'betterendforge:thallasium_pickaxe_head',
-        'betterendforge:terminite_pickaxe_head'
+        'betterendforge:terminite_pickaxe_head',
+        'occultism:ritual_dummy/craft_infused_pickaxe'
     ];
 
     var tags = ['forge:tools', 'forge:tools/pickaxe'];
