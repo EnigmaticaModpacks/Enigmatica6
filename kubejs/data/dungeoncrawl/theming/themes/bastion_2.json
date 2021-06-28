@@ -1,0 +1,94 @@
+{
+    "type": "theme",
+    "id": 1003,
+    "sub_theme": 2003,
+    "theme": {
+        "normal": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "chipped:blackstone_15",
+                    "weight": 2
+                },
+                {
+                    "block": "chipped:blackstone_14",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:polished_blackstone"
+                },
+                {
+                    "block": "chipped:gilded_blackstone_19"
+                }
+            ]
+        },
+        "normal_2": {
+            "type": "random_block",
+            "blocks": [{ "block": "chipped:gilded_blackstone_10" }, { "block": "chipped:gilded_blackstone_24" }]
+        },
+        "solid": {
+            "type": "block",
+            "block": "minecraft:magma_block"
+        },
+        "floor": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "chipped:blackstone_1"
+                },
+                {
+                    "block": "chipped:blackstone_5"
+                },
+                {
+                    "block": "chipped:blackstone_15"
+                },
+                {
+                    "block": "chipped:blackstone_14"
+                },
+                {
+                    "block": "minecraft:polished_blackstone",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:gilded_blackstone"
+                }
+            ]
+        },
+        "stairs": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:polished_blackstone_brick_stairs" },
+                { "block": "minecraft:polished_blackstone_stairs" }
+            ]
+        },
+        "solid_stairs": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:polished_blackstone_brick_stairs" },
+                { "block": "minecraft:polished_blackstone_stairs" }
+            ]
+        },
+        "material": {
+            "type": "block",
+            "block": "minecraft:gilded_blackstone"
+        },
+        "wall": {
+            "type": "block",
+            "block": "mcwfences:railing_blackstone_wall"
+        },
+        "slab": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:polished_blackstone_brick_slab" },
+                { "block": "minecraft:polished_blackstone_slab" }
+            ]
+        },
+        "solid_slab": {
+            "type": "random_block",
+            "blocks": [
+                { "block": "minecraft:polished_blackstone_brick_slab" },
+                { "block": "minecraft:polished_blackstone_slab" }
+            ]
+        }
+    }
+}
