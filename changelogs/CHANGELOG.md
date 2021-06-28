@@ -10,9 +10,13 @@ and read the changelog so you're aware of all the changes that could affect your
 
 Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
 
+**Changes/Improvements**
+
+- Set up tags for Occultism Books to allow automation via RS [\#2544](https://github.com/NillerMedDild/Enigmatica6/pull/2544) ([MuteTiefling](https://github.com/MuteTiefling))
+
 **Bug Fixes**
 
--   Fixes servers crashing when generating some structures.
+-   In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
 
 ### Enigmatica 6 v0.5.1
 
