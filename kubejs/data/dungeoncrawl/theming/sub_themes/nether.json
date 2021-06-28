@@ -1,0 +1,46 @@
+{
+  "type": "sub_theme",
+  "id": 8,
+  "theme": {
+    "pillar": { "type": "block", "block": "minecraft:magma_block" },
+    "trapdoor": { "type": "block", "block": "minecraft:cave_air" },
+    "door": { "type": "block", "block": "minecraft:cave_air" },
+    "material": {
+      "type": "random_block",
+      "blocks": [
+        { "block": "minecraft:nether_bricks" },
+        { "block": "minecraft:red_nether_bricks" }
+      ]
+    },
+    "stairs": {
+      "type": "random_block",
+      "blocks": [
+        { "block": "minecraft:nether_brick_stairs" },
+        { "block": "minecraft:red_nether_brick_stairs" }
+      ]
+    },
+    "slab": {
+      "type": "random_block",
+      "blocks": [
+        { "block": "minecraft:nether_brick_slab" },
+        { "block": "minecraft:red_nether_brick_slab" }
+      ]
+    },
+    "fence": {
+      "type": "block",
+      "block": "minecraft:nether_brick_fence"
+    },
+    "fence_gate": {
+      "type": "block",
+      "block": "minecraft:cave_air"
+    },
+    "button": {
+      "type": "block",
+      "block": "minecraft:stone_button"
+    },
+    "pressure_plate": {
+      "type": "block",
+      "block": "minecraft:stone_pressure_plate"
+    }
+  }
+}
