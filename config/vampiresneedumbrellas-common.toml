@@ -1,0 +1,32 @@
+
+["Umbrellas Durability"]
+	#The durability in seconds of the Iron Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	#Range: -1 ~ 432000
+	ironUmbrellaDurability = 1200
+	#The durability in seconds of the Gold Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	#Range: -1 ~ 432000
+	goldUmbrellaDurability = 9600
+	#The durability in seconds of the Diamond Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	#Range: -1 ~ 432000
+	diamondUmbrellaDurability = 9600
+	#The durability in seconds of the Netherite Umbrella when in the sun. Set to -1 if you want it to be unbreakable
+	#Range: -1 ~ 432000
+	netheriteUmbrellaDurability = 14400
+
+["Umbrellas Mechanics"]
+	#Set to false if you don't want the umbrella to work in the main-hand
+	umbrellaMainHand = true
+	#Set to false if you don't want the umbrella to work in the off-hand
+	umbrellaOffHand = true
+	#Set to false if you don't want the umbrella to be enchanted using anvils.
+	umbrellaAnvil = true
+	#Set to false if you don't want the umbrella to be used in the curios slot
+	umbrellaBauble = false
+	#Set to false if you don't want umbrellas to be repaired using an anvil and the material it is made from.
+	umbrellaRepair = true
+
+[Others]
+	#If true, the Creative Umbrella will respect the "umbrellaMainHand" and "umbrellaOffHand" configs.
+	#If false, the Creative Umbrella will always works in main-hand and off-hand
+	creativeUmbrellaConfigs = false
+

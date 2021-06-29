@@ -1,0 +1,25 @@
+
+#Common configuration settings. Most other configuration can be found in the world (server)configuration folder
+[common]
+	#Check for new versions of Vampirism on startup
+	versionCheck = false
+	#Send mod version, MC version and mod count to mod author
+	collectStats = false
+	#Use the vanilla campfire block instead of Vampirism's much cooler one
+	useVanillaCampfire = true
+	#Whether to modify the village world gen (size and frequency), based on world config
+	villageModify = true
+	#INTERNAL - Set to 'never' if you don't want to be notified about integration mods
+	integrationsNotifier = "never"
+	#INTERNAL
+	optifineBloodvisionWarning = false
+
+#Affects all worlds. This is only considered on server (or in singleplayer), but Forge requires us to put it here
+[common-server]
+	#Whether glass bottles should be automatically be converted to blood bottles when needed
+	autoConvertGlassBottles = true
+	#If enabled adds a craftable umbrella that can be used to slowly walk though sunlight without taking damage
+	umbrella = false
+	#Enforce tent generation in any overworld world, even if they were not included in modded or datapack world-types on purpose. Does not affect Server#disableTentGeneration or disable tent generation itself.
+	enforceOverworldTentGeneration = true
+
