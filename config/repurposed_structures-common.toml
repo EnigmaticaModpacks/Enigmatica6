@@ -94,18 +94,6 @@
 			#
 			# Add Nether Ruins to modded Nether category biomes.
 			addRuinsNetherToModdedBiomes = true
-			#
-			# Add the ID/resource location of the biome you don't want
-			# RS's Ruins to spawn in. Separate each ID with a comma ,
-			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
-			blacklistedUndergroundBastionBiomes = " "
-			#How rare are Underground Bastions in non-ocean and non-beach Overworld biomes.
-			#1 for spawning in most chunks and 10001 for none.
-			#Range: 1 ~ 1001
-			bastionUndergroundMaxChunkDistance = 500
-			#
-			# Add Underground Bastions to modded non-ocean and non-beach Overworld biomes.
-			addBastionUndergroundToModdedBiomes = true
 			#How rare are Warm Land Ruins in Plains, Forests, Swamps, and non-snowy Taiga biomes.
 			#
 			#1 for spawning in most chunks and 1001 for none.
@@ -138,4 +126,18 @@
 			#
 			# Add Nether Cities to modded Nether category biomes.
 			addCitiesNetherToModdedBiomes = true
+
+		["Mod-wide Impacting Options"."Structure Options".Bastions]
+			#
+			# Add the ID/resource location of the biome you don't want
+			# RS's Ruins to spawn in. Separate each ID with a comma ,
+			#   Example: "minecraft:ice_spikes,awesome_mod:awesome_biome"
+			blacklistedUndergroundBastionBiomes = " "
+			#How rare are Underground Bastions in non-ocean and non-beach Overworld biomes.
+			#1 for spawning in most chunks and 10001 for none.
+			#Range: 1 ~ 10001
+			bastionUndergroundMaxChunkDistance = 500
+			#
+			# Add Underground Bastions to modded non-ocean and non-beach Overworld biomes.
+			addBastionUndergroundToModdedBiomes = true
 

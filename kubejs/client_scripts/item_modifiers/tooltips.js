@@ -34,7 +34,7 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['tconstruct:scorched_anvil', 'tconstruct:tinkers_anvil'],
-            text: [Text.of('Craftable with almost any metal block.').gold()]
+            text: [Text.of('Craftable with any alloy blocks.').gold()]
         }
     ];
 

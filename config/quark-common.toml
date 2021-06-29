@@ -7,7 +7,7 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen", "slimeknights.tconstruct.tables.client.inventory.table.CraftingStationScreen"]
 	"Use Anti Overlap" = true
 	#Enables quark network profiling features. Do not enable this unless requested to.
 	"Enable Network Profiling" = false
@@ -75,6 +75,7 @@
 		"Render Blacklist" = ["psi:programmer", "botania:starfield"]
 		"Movement Blacklist" = ["minecraft:spawner", "integrateddynamics:cable", "randomthings:blockbreaker", "minecraft:ender_chest", "minecraft:enchanting_table", "minecraft:trapped_chest", "quark:spruce_trapped_chest", "quark:birch_trapped_chest", "quark:jungle_trapped_chest", "quark:acacia_trapped_chest", "quark:dark_oak_trapped_chest"]
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
+		"Enable Chests Moving Together" = true
 
 	[automation.color_slime]
 		"Change Name" = true
@@ -218,6 +219,9 @@
 	[building.celebratory_lamps]
 		"Light Level" = 15
 
+	[building.item_frames]
+		"Glass Item Frames Update Maps" = true
+
 [management]
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
@@ -250,6 +254,7 @@
 	"Slime In A Bucket" = true
 	Camera = true
 	Trowel = true
+	Abacus = true
 
 	[tools.trowel]
 		#Amount of blocks placed is this value + 1. Default is 255 (4 stacks).
@@ -362,6 +367,7 @@
 	"Glass Shard" = false
 	"Campfires Boost Elytra" = true
 	"Lava Bucket As Trash" = true
+	"Better Elytra Rocket" = true
 
 	[tweaks.sign_editing]
 		"Requires Empty Hand" = true
@@ -526,6 +532,8 @@
 		"Crystal Cluster On Sides Chance" = 0.6
 		#Allowed values: [0,1]
 		"Double Crystal Chance" = 0.2
+		"Enable Beacon Redirection" = true
+		"Enable Collateral Movement" = true
 
 		[world.cave_crystal_underground_biome.biome_settings]
 			#Allowed values: [0,)

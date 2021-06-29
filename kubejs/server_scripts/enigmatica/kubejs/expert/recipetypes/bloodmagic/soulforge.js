@@ -43,7 +43,7 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'bloodmagic:soulgempetty',
-                    'naturesaura:tainted_gold',
+                    '#forge:ingots/forgotten_metal',
                     'glassential:glass_ethereal',
                     'quark:diamond_heart'
                 ],
