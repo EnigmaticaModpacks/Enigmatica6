@@ -7,5 +7,4 @@ const candles = [
     'supplementaries:candelabra',
     'supplementaries:candelabra_silver',
     'supplementaries:candle_holder',
-    'vampirism:item_candelabra'
 ];
