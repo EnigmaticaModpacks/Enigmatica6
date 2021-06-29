@@ -885,6 +885,12 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
+                seed: 'vampirism:vampire_orchid',
+                render: 'vampirism:vampire_orchid',
+                plant: 'vampirism:vampire_orchid',
+                substrate: 'dirt'
+            },
+            {
                 seed: 'botania:blue_mystical_flower',
                 render: 'botania:blue_mystical_flower',
                 plant: 'botania:blue_mystical_flower',
