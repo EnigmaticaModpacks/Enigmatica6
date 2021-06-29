@@ -54,6 +54,7 @@ const soilRegistry = [
     { block: 'minecraft:grass_block', categories: ['dirt', 'grass'], growthModifier: 0.05 },
     { block: 'byg:peat', categories: ['dirt', 'mushroom'], growthModifier: 0.25 },
     { block: 'atum:fertile_soil', categories: ['dirt'], growthModifier: 0.2 },
+    { block: 'vampirism:cursed_earth', categories: ['dirt', 'grass'], growthModifier: 0.05 },
     { block: 'atum:sand', categories: ['sand', 'strange_sand'], growthModifier: 0.2 },
 
     { block: 'minecraft:mycelium', categories: ['dirt', 'mushroom'], growthModifier: 0.05 },
