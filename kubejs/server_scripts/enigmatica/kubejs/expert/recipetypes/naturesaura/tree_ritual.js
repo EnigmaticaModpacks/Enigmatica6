@@ -273,6 +273,22 @@ onEvent('recipes', (event) => {
                 count: 1,
                 sapling: 'quark:lavender_blossom_sapling',
                 id: 'botania:runic_altar'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:token_joy' }, //top
+                    { item: 'resourcefulbees:t2_apiary' }, //bottom
+                    { tag: 'botania:runes/summer' }, //left
+                    { tag: 'botania:runes/spring' }, //right
+                    { tag: 'resourcefulbees:resourceful_honeycomb_block' }, //topleft
+                    { tag: 'resourcefulbees:resourceful_honeycomb_block' }, //bottomright
+                    { item: 'resourcefulbees:honey_fluid_bucket' }, //topright
+                    { item: 'resourcefulbees:honey_fluid_bucket' } //bottomleft
+                ],
+                output: 'resourcefulbees:t3_apiary',
+                count: 1,
+                sapling: 'minecraft:oak_sapling',
+                id: 'resourcefulbees:t3_apiary'
             }
             /*
             ,
