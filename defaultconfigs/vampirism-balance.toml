@@ -1,0 +1,460 @@
+
+#A ton of options which allow you to balance the mod to your desire
+[balance]
+
+	[balance.mobs]
+		#Vampire spawn chance/weight (e.g. Zombie: 100)
+		#Range: 0 ~ 100000
+		vampireSpawnChance = 2
+		#Advanceed vampire spawn chance/weight (e.g. Zombie: 100)
+		#Range: 0 ~ 100000
+		advancedVampireSpawnChance = 2
+
+	[balance.general]
+		#Damage a normal holy water splash bottle does when directly hitting a vampire
+		#Range: > 0
+		holyWaterSplashDamage = 5
+		#Duration of the blindness effect caused by special holy water (ticks)
+		#Range: 0 ~ 1000
+		holyWaterBlindnessDuration = 160
+		#Drop orchid every n times breaking a leave in the vampire forest
+		#Range: > 1
+		dropOrchidFromLeavesChance = 25
+		#Maximum amount of task shown at a taskmaster, except unique tasks
+		#Range: > 1
+		taskMasterMaxTaskAmount = 3
+		#Whether creepers should ignore vampires
+		creeperIgnoreVampire = true
+		#Whether special crossbow arrows (e.g. spitfire) can be used with infinity enchantment
+		allowInfiniteSpecialArrows = false
+		#Holy water damage is multiplied with this value for each tier above normal
+		#Range: 1.0 ~ 10.0
+		holyWaterTierDamageInc = 2.0
+		#Whether skeletons should ignore vampires
+		skeletonIgnoreVampire = true
+		#If the sanguinare effect can be canceled by milk
+		canCancelSanguinare = true
+		#Desired maximum distance in chunks between tents. Dont set hunterTentDistance <= hunterTentSeparation
+		#Range: 2 ~ 4096
+		hunterTentDistance = 10
+		#Duration a task can be completed in a singleplayer world. In Minutes
+		#Range: > 1
+		taskDurationSinglePlayer = 120
+		#Duration a task can be completed on a dedicated server. In Minutes
+		#Range: > 1
+		taskDurationDedicatedServer = 1440
+		#Duration of the nausea effect caused by enhanced or special holy water (ticks)
+		#Range: 0 ~ 1000
+		holyWaterNauseaDuration = 200
+		#Maximum number of hunters that can spawn at one tent per day
+		#Range: 0 ~ 20
+		hunterTentMaxSpawn = 4
+		#The blood mB to charge percentage of the normal vampire sword
+		#Range: 0.0 ~ 1.0
+		vampireSwordChargingFactor = 5.0E-4
+		#Whether zombies should ignore vampires
+		zombieIgnoreVampire = true
+		#Desired minimum distance in chunks between tents. Dont set hunterTentDistance <= hunterTentSeparation
+		#Range: 1 ~ 4096
+		hunterTentSeparation = 4
+		#Range: > 1
+		vampireForestWeight = 3
+		#If iron golems should attack faction NPCs if in a village with a different faction
+		golemAttackNonVillageFaction = true
+		#The base damage dealt by crossbow arrows is multiplied by this
+		#Range: 0.2 ~ 5.0
+		crossbowDamageMult = 1.0
+		#The percentage of stored blood used for every hit with a normal vampire sword
+		#Range: 0.0 ~ 100.0
+		vampireSwordBloodUsageFactor = 0.5
+		#Players receive n skill points for each leve-up. Anything except 1 is unbalanced.
+		#Range: 1 ~ 20
+		skillPointsPerLevel = 1
+		#Delay in seconds before a newly placed garlic diffusor becomes active. *0.25 in Singleplayer
+		#Range: 1 ~ 10000
+		garlicDiffusorStartupTime = 100
+		#The vampire killer arrow can only instant kill NPC vampires that have a max (not actual) health of this
+		#Range: > 1
+		arrowVampireKillerMaxHealth = 40
+		#Range: > 1
+		vampireForestHillsWeight = 3
+
+	[balance.hunterPlayer]
+		#0.5 for square root, 1 for linear
+		#Range: 0.5 ~ 1.0
+		strengthType = 0.5
+		#Strength = Old * (modifier+1
+		#Range: 0.0 ~ 4.0
+		strengthMaxMod = 0.3
+
+	[balance.hunterSkills]
+		#Advanced skill - Weapon cooldown = 1/(oldvalue*(1+modifier)
+		#Range: 0.0 ~ 3.0
+		majorAttackSpeedModifier = 0.4
+		#Second stake skill - Whether only NPCs can be one hit killed with this skill
+		instantKill2OnlyNPC = true
+		#The chunk radius a normal diffusor affects. 0 results in a one chunk area. Changing this only affects newly placed blocks
+		#Range: 0 ~ 5
+		garlicDiffusorWeakDist = 2
+		#The chunk radius a normal diffusor affects. 0 results in a one chunk area. Changing this only affects newly placed blocks
+		#Range: 0 ~ 5
+		garlicDiffusorNormalDist = 0
+		#Second stake skill - The max (not the actual) health of an entity that can be one hit killed from behind
+		#Range: > 0
+		instantKill2MaxHealth = 200
+		#The chunk radius a enhanced diffusor affects. 0 results in a one chunk area. Changing this only affects newly placed blocks
+		#Range: 0 ~ 5
+		garlicDiffusorEnhancedDist = 1
+		#Increase damage - Added to base damage
+		#Range: 0.0 ~ 10.0
+		smallAttackDamageModifier = 1.0
+		#First stake skill - If it is required to attack from behind to instant kill low level vampires
+		instantKill1FromBehind = false
+		#First stake skill -The maximal relative health a entity may have to be instantly killed
+		#Range: 0.0 ~ 1.0
+		instantKill1MaxHealth = 0.35
+		#Basic skill - Weapon cooldown = 1/(oldvalue*(1+modifier))
+		#Range: 0.0 ~ 3.0
+		smallAttackSpeedModifier = 0.2
+
+	[balance.vampireActions]
+		#In seconds
+		#Range: > 1
+		invisibilityDuration = 25
+		#In seconds
+		#Range: > 0
+		rageCooldown = 20
+		#In seconds
+		#Range: 1 ~ 10000
+		rageMinDuration = 13
+		disguiseEnabled = true
+		#In seconds
+		#Range: > 1
+		sunscreenDuration = 40
+		#In seconds
+		#Range: > 10
+		batDuration = 2147483647
+		regenerationEnabled = true
+		#In seconds
+		#Range: 0 ~ 10000
+		batCooldown = 0
+		#In seconds
+		#Range: 0 ~ 1000
+		sunscreenCooldown = 500
+		#In seconds
+		#Range: 1 ~ 10000
+		disguiseCooldown = 60
+		#Range: 1 ~ 10000
+		halfInvulnerableDuration = 30
+		#In seconds
+		#Range: > 1
+		invisibilityCooldown = 25
+		#Range: 0 ~ 1000
+		halfInvulnerableBloodCost = 4
+		#In seconds
+		#Range: > 0
+		regenerationCooldown = 60
+		invisibilityEnabled = true
+		darkBloodProjectileEnabled = true
+		#In seconds
+		#Range: 0 ~ 10000
+		hissingCooldown = 60
+		#Range: 0.0 ~ 10000.0
+		darkBloodProjectileDamage = 6.0
+		#Range: 1 ~ 10000
+		halfInvulnerableCooldown = 60
+		#In seconds
+		#Range: 1 ~ 10000
+		disguiseDuration = 60
+		halfInvulnerableEnabled = true
+		#In seconds
+		#Range: > 1
+		teleportCooldown = 10
+		rageEnabled = true
+		hissingEnabled = true
+		freezeEnabled = true
+		#In seconds
+		#Range: 1 ~ 30
+		freezeDuration = 6
+		#In seconds
+		#Range: > 0
+		regenerationDuration = 20
+		sunscreenEnabled = true
+		#Range: 1 ~ 100
+		summonBatsCount = 16
+		teleportEnabled = true
+		#Damage threshold relative to players max health. Damage above this value will be ignored
+		#Range: 0.0 ~ 1.0
+		halfInvulnerableThreshold = 0.4
+		#The player health will be reduced by this factor
+		#Range: 0.0 ~ 0.95
+		batHealthReduction = 0.9
+		summonBatsEnabled = true
+		#In seconds
+		#Range: > 1
+		freezeCooldown = 60
+		batEnabled = true
+		#In seconds. Increase per vampire level
+		#Range: 0 ~ 1000
+		rageDurationIncrease = 5
+		#Range: 1 ~ 1000
+		teleportMaxDistance = 50
+		#In seconds
+		#Range: 1 ~ 10000
+		summonBatsCooldown = 300
+		#In seconds
+		#Range: 1 ~ 1000
+		darkBloodProjectileCooldown = 4
+
+	[balance.hunterActions]
+		#In ticks
+		#Range: > 1
+		potionResistanceCooldown = 1200
+		#In ticks
+		#Range: > 1
+		awarenessDuration = 2147483647
+		#In ticks
+		#Range: > 1
+		potionResistanceDuration = 400
+		disguiseEnabled = true
+		#If disguised the detection radius of mobs will be multiplied by this
+		#Range: 0.0 ~ 1.0
+		disguiseVisibilityMod = 0.2
+		potionResistanceEnabled = true
+		#Radius in which vampires should be detected
+		#Range: 0 ~ 50
+		awarenessRadius = 25
+		awarenessEnabled = true
+		#In ticks
+		#Range: > 1
+		awarenessCooldown = 1
+		#Squared distance as of which a disguised hunter is invisible
+		#Range: > 1
+		disguiseInvisibleSQ = 256
+
+	[balance.vampirePlayer]
+		#The amount of natural armor toughness a max level vampire has
+		#Range: 0 ~ 100
+		naturalArmorToughnessIncrease = 8
+		#Blood exhaustion is multiplied with this value
+		#Range: 0.0 ~ 5.0
+		basicBloodExhaustionMod = 0.6
+		#Multiply fire damage with this for vampires
+		#Range: 0.1 ~ 1.7976931348623157E308
+		fireVulnerabilityMod = 3.0
+		#Range: > 1
+		sundamageWeaknessMinLevel = 1
+		#Range: 0.0 ~ 10.0
+		exhaustionMaxMod = 1.0
+		#Whether blood is consumed in peaceful gamemode
+		bloodUsagePeaceful = false
+		#Range: 1 ~ 10
+		sundamageWaterblocks = 4
+		#Range: > 1
+		sundamageNauseaMinLevel = 2
+		sundamageNausea = true
+		#Range: 0.3 ~ 10.0
+		playerBloodSaturation = 1.5
+		#The base value of natural armor every vampire has at level 1
+		#Range: 0 ~ 100
+		naturalArmorBaseValue = 10
+		#Base duration of neonatal effect after resurrection. In sec.
+		#Range: > 1
+		neonatalDuration = 120
+		#The amount of natural armor a max level vampire has in addition to the base value
+		#Range: 0 ~ 100
+		naturalArmorIncrease = 10
+		#Defines the maximum extend the yellow border covers when the player is in the sun. 100 is default. 0 to disable completely
+		#Range: 0 ~ 100
+		maxYellowBorderPercentage = 100
+		#Range: 0.5 ~ 40.0
+		healthMaxMod = 16.0
+		#Range: 0.0 ~ 2.0
+		attackSpeedMaxMod = 0.15
+		#Whether vampire have a reduced speed and attack boost when wearing heavy armor
+		armorPenalty = true
+		#Range: > 1
+		sundamageMinLevel = 4
+		#Range: 0.0 ~ 5.0
+		speedMaxMod = 0.3
+		#List of damage source types that the player does not die from (immediately)
+		immortalFromDamageSources = ["player", "mob", "drown", "lightningBolt", "onFire", "cramming", "fall", "flyIntoWall", "magic", "wither", "anvil", "falling_block", "dragon_breath", "sweetBerryBush", "trident", "arrow", "fireworks", "fireBall", "witherSkull", "explosion", "explosion.player", "thrown", "indirectMagic", "vampire_on_fire"]
+		#Whether to replace the vanilla fire resistance potion for vampires with a custom one that only reduces damage but does not remove it
+		fireResistanceReplace = false
+		#Range: 1.0 ~ 1.7976931348623157E308
+		sundamage = 7.0
+		#Base cooldown before a downed vampire can resurrect. In sec.
+		#Range: 1 ~ 1000
+		dbnoDuration = 60
+		#Range: 1 ~ 10000
+		sanguinareAverageDuration = 900
+		#The duration it takes for the vampire natural armor to fully regenerate after respawn. In seconds
+		#Range: 1 ~ 2400
+		naturalArmorRegenDuration = 240
+
+	[balance.entityActions]
+		#In seconds
+		#Range: > 0
+		ignoreSundamageDuration = 5
+		#In seconds
+		#Range: > 1
+		invisibilityDuration = 4
+		#In seconds
+		#Range: > 1
+		speedCooldown = 6
+		#In seconds
+		#Range: > 1
+		garlicCooldown = 5
+		#In percent
+		#Range: 0 ~ 100
+		regenerationAmount = 40
+		#In percent
+		#Range: 0 ~ 100
+		healAmount = 30
+		#In seconds
+		#Range: > 0
+		sunscreenDuration = 9
+		#Relative health a entity must have to use actions
+		#Range: 0.0 ~ 1.0
+		healthThreshold = 0.3
+		#In seconds
+		#Range: > 0
+		regenerationDuration = 5
+		#In seconds
+		#Range: > 0
+		garlicDuration = 5
+		#Range: 1 ~ 10
+		batspawnAmount = 4
+		#In seconds
+		#Range: > 1
+		sunscreenCooldown = 10
+		#Range: 0.0 ~ 100.0
+		darkProjectileDamage = 5.0
+		#In seconds
+		#Range: > 1
+		invisibilityCooldown = 7
+		#In seconds
+		#Range: > 1
+		healCooldown = 7
+		#In seconds
+		#Range: > 0
+		regenerationCooldown = 8
+		#Range: 0.0 ~ 100.0
+		darkProjectileIndirectDamage = 2.0
+		#In seconds
+		#Range: > 0
+		speedDuration = 4
+		#In seconds
+		#Range: > 1
+		darkProjectileCooldown = 10
+		#Speed = basevalue * (1+ speedAmount)
+		#Range: 0.0 ~ 2.0
+		speedAmount = 0.14
+		#In seconds
+		#Range: > 1
+		batspawnCooldown = 15
+		#In seconds
+		#Range: > 1
+		ignoreSundamageCooldown = 6
+
+	[balance.vampireSkills]
+		#Blood exhaustion is multiplied with (value+1)
+		#Range: -1.0 ~ 0.0
+		bloodThirstReduction1 = -0.4
+		#Max speed is multiplied with (value+1)
+		#Range: 0.0 ~ 3.0
+		speedBoost = 0.15
+		#Damage added to base damage
+		#Range: 0.0 ~ 10.0
+		smallAttackDamageModifier = 1.0
+		#Reduced percentage of the downed timer required to resurrect
+		#Range: 0.0 ~ 1.0
+		dbnoReduction = 0.5
+		#Sundamage is multipled with (value+1)
+		#Range: -1.0 ~ 0.0
+		sundamageReduction1 = -0.5
+		#Reduced percentage of the neonatal effect
+		#Range: 0.0 ~ 1.0
+		neonatalReduction = 0.5
+		#The max relative health for sword finisher kill
+		#Range: 0.0 ~ 1.0
+		swordFinisherMaxHealth = 0.25
+		#Similar to potion effect ampliofier (and -1 is normal)
+		#Range: -1 ~ 5
+		jumpBoost = 1
+		#Squared blood vision distance
+		#Range: > 5
+		bloodVisionDistanceSq = 1600
+		#Basic skill - Weapon cooldown = 1/(oldvalue*(1+modifier))
+		#Range: 0.0 ~ 3.0
+		smallAttackSpeedModifier = 0.15
+
+	[balance.vampire_refinements]
+		#For every kill the rage duration is extended by this amount. In seconds.
+		#Range: > 0
+		rageFuryDurationBonus = 5
+		#Range: 1.0 ~ 1.7976931348623157E308
+		teleportDistanceMod = 1.5
+		#Range: 1.0 ~ 2.147483647E9
+		freezeDurationMod = 1.4
+		#Range: 0.0 ~ 10.0
+		vistaMod = 1.0
+		#Threshold for attacks that are considered high damage is multiplied by this value
+		#Range: 0.0 ~ 2.0
+		halfInvulnerableThresholdMod = 0.7
+		#Range: > 2
+		bloodChargeSpeedMod = 3
+		#Threshold for instant kill is modified by this amount
+		#Range: 1.0 ~ 1.7976931348623157E308
+		swordFinisherThresholdMod = 1.25
+		#Range: 1.0 ~ 2.147483647E9
+		darkBloodProjectileDamageMod = 1.5
+		#Range: 1.0 ~ 2.147483647E9
+		darkBloodProjectileAOECooldownMod = 2.0
+		#Range: 1.0 ~ 1.7976931348623157E308
+		sunscreenDurationMod = 1.5
+		#Range: 1.0 ~ 2.147483647E9
+		swordTrainingSpeedMod = 1.2
+		#squared value
+		#Range: > 0
+		darkBloodProjectileAOERange = 16
+
+	[balance.village]
+		#Squared distance of village capture notification
+		#Range: 0 ~ 100000
+		notifyDistanceSQ = 40000
+		#Maximum of Villager the Totem can respawn
+		#Range: > 0
+		maxVillagerRespawn = 30
+		#Chance (per tick) of a faction raid to occur
+		#Range: 0.0 ~ 1.0
+		randomRaidChance = 1.38888888889E-4
+		#Weight of the Totem Building inside the Village
+		#Range: > 1
+		totemWeight = 20
+		#Time in 2*seconds in capture phase 2 after which the capture entities should find a target regardless of distance
+		#Range: 1 ~ 1000
+		forceTargetTime = 80
+		#Duration of phase 1 of the capturing process in 2*seconds
+		#Range: 1 ~ 1000
+		phase1Duration = 80
+		#Whether grass should slowly be replaced with cursed earth in vampire villages
+		replaceBlocks = true
+		#Maximum range of a Totem to grow the village
+		#Range: > 0
+		maxTotemRadius = 100
+
+	[balance.minions]
+		#Time in seconds a minion needs to recover from death.
+		#Range: 1 ~ 21474836
+		deathRecoveryTime = 180
+		#How many minions a player can have per lord level. Probably don't want to go very high
+		#Range: 0 ~ 100
+		minionPerLordLevel = 1
+		#Cooldown in ticks,before new resources are added in collect resource task types
+		#Range: > 20
+		resourceCooldown = 1500
+		#Cooldown multiplier for collect resource task types while player is offline
+		#Range: 1.0 ~ 100000.0
+		resourceCooldownOfflineMult = 20.0
+

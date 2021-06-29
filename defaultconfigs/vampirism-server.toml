@@ -1,0 +1,73 @@
+
+#Server configuration settings
+[server]
+	#Prevent clients from disabling the vampire forest fog
+	enforceForestFog = false
+	#If vampires can convert to a bat in the End
+	batModeInEnd = true
+	#If PVP should only be allowed between factions. PVP has to be enabled in the server properties for this. Not guaranteed to always protect player from teammates
+	pvpOnlyBetweenFactions = false
+	#If pvpOnlyBetweenFactions is enabled, this decides whether human players can be attacked and attack others
+	pvpOnlyBetweenFactionsIncludeHumans = false
+	#Block radius the sunscreen beacon affects
+	#Range: 1 ~ 40000
+	sunscreenBeaconDistance = 64
+	#Whether the suncreen beacon can be mined in survival
+	sunscreenBeaconMineable = true
+	#Calculate the blood level for unknown creatures based on their size
+	autoCalculateEntityBlood = true
+	#Whether players can infect other players
+	playersCanTurnPlayers = true
+	#Whether to color player names in chat based on their current faction
+	factionColorInChat = true
+	#Whether to add a prefix title based on the current lord level to the player names
+	lordPrefixInChat = false
+	#Changes if entities are recognized as hostile by other mods. See https://github.com/TeamLapen/Vampirism/issues/199. Smart falls back to Never on servers 
+	#Allowed Values: ALWAYS_IMOB, NEVER_IMOB, SMART
+	entitiesIMob = "SMART"
+	#If enabled, creatures are infected with Sanguinare Vampirism first instead of immediately being converted to a vampire when their blood is sucked dry
+	infectCreaturesSanguinare = false
+	#Prevent players from enabling the rendering of debug bounding boxes. This can allow them to see certain entities they are not supposed to see (e.g. disguised hunter
+	preventDebugBoundingBoxes = false
+
+	[server.sundamage]
+		#Whether vampires should receive sundamage in unknown dimensions
+		sundamageUnknownDimension = false
+		#Add the string id in quotes of any dimension (/vampirism currentDimension) you want to enforce sundamage for to this comma-separated list. Overrides defaults and values added by other mods
+		sundamageDimensionsOverridePositive = []
+		#Add the string id in quotes of any dimension (/vampirism currentDimension) you want to disable sundamage for to this comma-separated list. Overrides defaults and values added by other mods
+		sundamageDimensionsOverrideNegative = []
+		#Additional biomes the player should not get sundamage in. Use biome ids e.g. ["minecraft:mesa", "minecraft:plains"]
+		sundamageDisabledBiomes = []
+
+	[server.village]
+		#Desired maximum distance between villages in chunks
+		#Range: 1 ~ 100
+		villageDistance = 26
+		#Minimum distance between villages in chunks. Must be smaller than distance
+		#Range: 1 ~ 100
+		villageSeparation = 6
+
+	[server.entities]
+		#Blacklist entities from predefined or auto calculated blood values
+		blacklistedBloodEntity = []
+
+	[server.cheats]
+		#CHEAT: If enabled, you will be able to unlock all skills at max level
+		allSkillsAtMaxLevel = false
+
+	#Disabling these things might reduce fun or interfere with gameplay
+	[server.disable]
+		#Disable vampire fangs being usable to infect yourself
+		disableFangInfection = false
+		#Prevent vampire mobs from infecting players when attacking
+		disableMobBiteInfection = false
+		#Disable hunter camp generation
+		disableHunterTentGen = false
+
+	[server.internal]
+		#Send message about Guide-API once
+		infoAboutGuideAPI = false
+		#If world was generated using the old vampirism biome
+		oldVampireBiomeGen = false
+
