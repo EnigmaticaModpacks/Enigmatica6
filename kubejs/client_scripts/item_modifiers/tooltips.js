@@ -35,7 +35,8 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['tconstruct:scorched_anvil', 'tconstruct:tinkers_anvil'],
             text: [Text.of('Craftable with any alloy blocks.').gold()]
-        }
+        },
+        { items: ['chisel:hitech_chisel'], text: [Text.of('Temporarily disabled due to a bug.').gold()] }
     ];
 
     refinedStorageItems.forEach((item) => {

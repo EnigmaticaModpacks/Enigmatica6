@@ -142,7 +142,10 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"gravestone-client.toml",
 	"jecalculation/record.json",
 	"topaddons-client.toml",
-	"diet-client.toml"
+	"diet-client.toml",
+	"contentcreatorintegration/contentcreatorintegration.toml",
+	"contentcreatorintegration/contentcreatorintegration-common.toml",
+	"contentcreatorintegration/default/constants.json"
 )
 
 #=====================================================================//

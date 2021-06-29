@@ -73,6 +73,8 @@ onEvent('recipes', (event) => {
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
 
+        'chisel:hitech_chisel',
+
         'compactmachines:wall',
 
         'create:mechanical_crafting/integrated_circuit',
