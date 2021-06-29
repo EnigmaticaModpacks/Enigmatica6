@@ -21,7 +21,9 @@ onEvent('item.tags', (event) => {
         'betterendforge:ender_block',
         'betterendforge:aurora_crystal',
         'betterendforge:amber_block',
-        'betterendforge:thallasium_block'
+        'betterendforge:thallasium_block',
+        'powah:energized_steel_block',
+        'mythicbotany:alfsteel_block'
     ]);
 
     event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');
@@ -39,4 +41,6 @@ onEvent('item.tags', (event) => {
 
     event.add(storageBlocks + '/sunmetal', ['architects_palette:sunmetal_block']);
     event.add(storageBlocks + '/tinkers_bronze', ['tconstruct:tinkers_bronze_block']);
+    event.add(storageBlocks + '/energized_steel', ['powah:energized_steel_block']);
+    event.add(storageBlocks + '/alfsteel', ['mythicbotany:alfsteel_block']);
 });

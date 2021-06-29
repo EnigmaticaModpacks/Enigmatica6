@@ -553,8 +553,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('minecraft:string', 3),
-            inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax'],
-            id: 'simplefarming:string'
+            inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
         }
     ];
 

@@ -69,7 +69,7 @@
 		allow_any_item = false
 
 	[blocks.sack]
-		#penalize the player with slowness effect when carrying too many sacks
+		#Penalize the player with slowness effect when carrying too many sacks
 		sack_penality = true
 		#maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
 		#Range: 0 ~ 50
@@ -79,18 +79,18 @@
 		additional_slots = 1
 
 	[blocks.safe]
-		#makes safes only breakable by their owner or by a player in creative
+		#Makes safes only breakable by their owner or by a player in creative
 		prevent_breaking = true
-		#make safes simpler so they do not require keys:
+		#Make safes simpler so they do not require keys:
 		#they will be bound to the first person that opens one and only that person will be able to interact with them
 		simple_safes = false
 
 	[blocks.blackboard]
-		#enable to draw directly on a blackboard using any dye. Gui still only works in black and white
+		#Enable to draw directly on a blackboard using any dye. Gui still only works in black and white
 		colored_blackboard = false
 
 	[blocks.candle_holder]
-		#candle holder light level
+		#Candle holder light level
 		#Range: 1 ~ 15
 		light_level = 12
 
@@ -123,6 +123,14 @@
 		#Range: 0 ~ 10000
 		honey_time = 2000
 
+	[blocks.item_shelf]
+		#Makes item shelves climbable
+		climbable_shelves = false
+
+	[blocks.iron_gate]
+		#Allows two iron gates to be opened simultaneously when on top of the other
+		double_opening = true
+
 #Configure spawning conditions
 [spawns]
 
@@ -145,13 +153,13 @@
 	[spawns.structures]
 
 		[spawns.structures.way_sign]
-			#average distance apart in chunks between spawn attempts
+			#Average distance apart in chunks between spawn attempts
 			#Range: 0 ~ 1001
 			average_distance = 19
-			#minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
+			#Minimum distance apart in chunks between spawn attempts. 1001 to disable them entirely
 			#Range: 0 ~ 1001
 			minimum_distance = 10
-			#with this option road signs will display the distance to the structure that they are pointing to
+			#With this option road signs will display the distance to the structure that they are pointing to
 			show_distance_text = true
 			#list of structure that a sign can point to. Note that they will only spawn in dimensions where vanilla villages can
 			villages = ["minecraft:village", "repurposed_structures:village_badlands", "repurposed_structures:village_dark_oak", "repurposed_structures:village_birch", "repurposed_structures:village_giant_taiga", "repurposed_structures:village_jungle", "repurposed_structures:village_mountains", "repurposed_structures:village_oak", "repurposed_structures:village_swamp", "pokecube:village", "pokecube_legends:village", "pokecube_legends:village/ocean", "valhelsia_structures:castle", "valhelsia_structures:castle_ruin", "valhelsia_structures:small_castle", "valhelsia_structures:tower_ruin"]
@@ -207,14 +215,37 @@
 		enabled = true
 
 	[tweaks.bottle_xp]
-		#allow bottling up xp by using a bottle on an enchanting table
+		#Allow bottling up xp by using a bottle on an enchanting table
 		enabled = true
 		#bottling health cost
 		#Range: 0 ~ 20
 		cost = 2
 
-	[tweaks.adventurer_maps]
+	[tweaks.map_tweaks]
+		#In this section you can add custom structure maps to cartographers
+		#The format required is as follows:
+		#[[<structure>,<level>,<min_price>,<max_price>,<map_name>,<map_color>,<map_marker>],[<structure>,...,<map_marker>],...]
+		#With the following parameters:
+		# - <structure> structure id to be located (ie: minecraft:igloo)
+		# - <level> villager trading level at which the map will be sold. Must be between 1 and 5
+		# - <min_price> minimum emerald price
+		# - <max_price> maximum emerald price
+		# - <map_name> map item name
+		# - <map_color> hex color of the map item overlay texture
+		# - <map_marker> id of the map marker to be used (ie: supplementaries:igloo). 
+		#See texture folder for all the names. Leave empty for default ones
+		#Note that ony the first parameter is required, each of the others others can me removed and will be defaulted to reasonable values
+		#example: ['minecraft:swamp_hut','2','5','7','witch hut map','0x00ff33']
 		custom_adventurer_maps = [[""]]
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure.
+		#Best kept disabled if you are adding custom adventurer maps with its config
+		random_adventurer_maps = true
+		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
+		block_map_markers = true
+
+	[tweaks.ceiling_banners]
+		#allow banners to be placed on ceilings
+		enabled = true
 
 [items]
 

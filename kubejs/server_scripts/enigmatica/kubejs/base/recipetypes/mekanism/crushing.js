@@ -1,10 +1,6 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            input: '#forge:gems/ender',
-            output: Item.of('emendatusenigmatica:ender_dust')
-        },
-        {
             input: 'byg:pink_sandstone',
             output: Item.of('byg:pink_sand', 2)
         },

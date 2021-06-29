@@ -225,6 +225,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 6
+        },
+        mekanism: {
+            count: 6
         }
     },
     coal: {
@@ -254,6 +257,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 4
+        },
+        mekanism: {
+            count: 2
         }
     },
     diamond: {
@@ -280,6 +286,9 @@ const gemProcessingProperties = {
             count: 2
         },
         pedestals: {
+            count: 2
+        },
+        mekanism: {
             count: 2
         }
     },
@@ -308,6 +317,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 4
+        },
+        mekanism: {
+            count: 2
         }
     },
     lapis: {
@@ -336,6 +348,9 @@ const gemProcessingProperties = {
             count: 9
         },
         pedestals: {
+            count: 9
+        },
+        mekanism: {
             count: 9
         }
     },
@@ -366,6 +381,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 3
+        },
+        mekanism: {
+            count: 3
         }
     },
     sulfur: {
@@ -392,6 +410,9 @@ const gemProcessingProperties = {
             count: 6
         },
         pedestals: {
+            count: 6
+        },
+        mekanism: {
             count: 6
         }
     },
@@ -420,6 +441,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 12
+        },
+        mekanism: {
+            count: 12
         }
     },
     fluorite: {
@@ -446,6 +470,9 @@ const gemProcessingProperties = {
             count: 6
         },
         pedestals: {
+            count: 6
+        },
+        mekanism: {
             count: 6
         }
     },
@@ -474,6 +501,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 8
+        },
+        mekanism: {
+            count: 8
         }
     },
     ender: {
@@ -500,6 +530,9 @@ const gemProcessingProperties = {
             count: 3
         },
         pedestals: {
+            count: 3
+        },
+        mekanism: {
             count: 3
         }
     },
@@ -528,6 +561,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 3
+        },
+        mekanism: {
+            count: 3
         }
     },
     potassium_nitrate: {
@@ -554,6 +590,9 @@ const gemProcessingProperties = {
             count: 3
         },
         pedestals: {
+            count: 3
+        },
+        mekanism: {
             count: 3
         }
     },
@@ -582,6 +621,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 4
+        },
+        mekanism: {
+            count: 4
         }
     },
     cinnabar: {
@@ -609,6 +651,9 @@ const gemProcessingProperties = {
         },
         pedestals: {
             count: 4
+        },
+        mekanism: {
+            count: 4
         }
     },
     mana: {
@@ -635,6 +680,9 @@ const gemProcessingProperties = {
             count: 4
         },
         pedestals: {
+            count: 4
+        },
+        mekanism: {
             count: 4
         }
     }

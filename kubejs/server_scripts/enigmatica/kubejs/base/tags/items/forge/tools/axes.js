@@ -12,7 +12,7 @@ onEvent('item.tags', (event) => {
         event
             .get(tag)
             .add(items)
-            .add(/_axe/)
+            .add(/_axe$/)
             .add(/_paxel/)
             .add(/_aiot/)
             .remove(exceptions);

@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
             },
             {
                 input: 'bloodmagic:magicianbloodorb',
-                output: 'occultism:iesnium_block',
+                output: 'botania:mana_tablet',
                 tool: '#bloodmagic:arc/reverter',
                 extraOutputs: [],
                 consume: false,

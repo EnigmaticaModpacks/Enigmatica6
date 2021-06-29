@@ -48,6 +48,8 @@ onEvent('recipes', (event) => {
         immersiveengineering_hammer_crushing(event, material, ore, dust);
         immersiveengineering_gem_crushing(event, material, dust, gem);
 
+        mekanism_ingot_gem_crushing(event, material, ingot, dust, gem);
+        mekanism_gem_ore_processing(event, material, ore, dust, gem, shard);
         mekanism_metal_ore_processing(
             event,
             material,
@@ -242,7 +244,7 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = Item.of(dust, 1);
+            output = dust;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -625,6 +627,62 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering
             .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
             .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
+    function mekanism_ingot_gem_crushing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+
+        var input,
+            output = dust;
+        if (ingot != air) {
+            type = 'ingot';
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+            type = 'gem';
+        } else {
+            return;
+        }
+
+        event.remove({
+            input: input,
+            mod: 'mekanism',
+            type: 'mekanism:crushing'
+        });
+
+        event.recipes.mekanism.crushing(output, input).id(`mekanism:processing/${material}/to_dust`);
+    }
+
+    function mekanism_gem_ore_processing(event, material, ore, dust, gem, shard) {
+        if (ore == air) {
+            return;
+        }
+
+        try {
+            var materialProperties = gemProcessingProperties[material],
+                count = materialProperties.mekanism.count,
+                input = `#forge:ores/${material}`;
+        } catch (err) {
+            return;
+        }
+
+        switch (materialProperties.output) {
+            case 'dust':
+                output = dust;
+                break;
+            case 'gem':
+                output = gem;
+                break;
+            case 'shard':
+                output = shard;
+                break;
+            default:
+                return;
+        }
+
+        event.recipes.mekanism.enriching(Item.of(output, count), input).id(`mekanism:processing/${material}/from_ore`);
     }
 
     function mekanism_metal_ore_processing(
@@ -1063,7 +1121,7 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = Item.of(dust, 1);
+            output = dust;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;

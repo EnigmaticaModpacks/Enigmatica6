@@ -1,6 +1,20 @@
-### Enigmatica 6 v0.5.1
+### Enigmatica 6 v0.5.3
 
-_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.1.md)_
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.3.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.3.md)_
+
+**Important Note!**
+The Grave mod we use has been changed to Enigmatic Graves, meaning all Graves from the Gravestone Mod will disappear upon updating to 0.5.3
+Please **collect your graves before updating**.
+
+**New Mods**
+
+**Changes/Improvements**
+
+**Bug Fixes**
+
+### Enigmatica 6 v0.5.2
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.2.md)_
 
 ### If you're updating from 0.4.x:
 
@@ -12,7 +26,85 @@ Please delete your config, defaultconfig, and kubejs folder before updating. Thi
 
 **Changes/Improvements**
 
+-   Set up tags for Occultism Books to allow automation via RS [\#2544](https://github.com/NillerMedDild/Enigmatica6/pull/2544) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug Fixes**
+
+-   In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
+
+### Enigmatica 6 v0.5.1
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.1.md)_
+
+**New Mods**
+
+-   [Better Biome Blend](https://www.curseforge.com/minecraft/mc-mods/better-biome-blend)
+-   [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation)
+-   [TOP Addons](https://www.curseforge.com/minecraft/mc-mods/top-addons)
+-   [The Official Enigmatica Resource Pack](https://www.curseforge.com/minecraft/texture-packs/the-official-enigmatica-resource-pack-16x16)
+
+**Changes/Improvements**
+
+-   Add Cobalt to IF Laser Drill [\#2427](https://github.com/NillerMedDild/Enigmatica6/pull/2427) ([MuteTiefling](https://github.com/MuteTiefling))
+-   adds generic bee icon to in-world spawned bees in journeymap [\#2447](https://github.com/NillerMedDild/Enigmatica6/pull/2447) ([theboo](https://github.com/theboo))
+-   Add ways to obtain various BYG nether items such as mushrooms [\#2493](https://github.com/NillerMedDild/Enigmatica6/pull/2493) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Worldgen\] Bigger Beaches [\#2531](https://github.com/NillerMedDild/Enigmatica6/pull/2531) ([yagoplx](https://github.com/yagoplx))
+-   \[Worldgen\] Spawn player at world center by default [\#2533](https://github.com/NillerMedDild/Enigmatica6/pull/2533) ([yagoplx](https://github.com/yagoplx))
+-   \[Worldgen\] Tweak biome warp for biome transition effect [\#2532](https://github.com/NillerMedDild/Enigmatica6/pull/2532) ([yagoplx](https://github.com/yagoplx))
+-   Clarify quest text from Shift+Click to Sneak+Click [\#2505](https://github.com/NillerMedDild/Enigmatica6/pull/2505) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Clarify quest text from Shift+Click to Sneak+Click [\#2506](https://github.com/NillerMedDild/Enigmatica6/pull/2506) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Double the Output for the Production of D-T Fuel in the Chemical Infuser [\#2525](https://github.com/NillerMedDild/Enigmatica6/issues/2525)
 -   Increased Cobalt Ore Spawn Weight
+-   Mekanism Fusion Fuel Production Buff [\#2529](https://github.com/NillerMedDild/Enigmatica6/pull/2529) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Normalize output quantities for crafting drawers [\#2480](https://github.com/NillerMedDild/Enigmatica6/pull/2480) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Phrasing in Tinker's Anvil description [\#2521](https://github.com/NillerMedDild/Enigmatica6/issues/2521)
+-   Re-add Ingot/Gem to Dust recipe unification [\#2457](https://github.com/NillerMedDild/Enigmatica6/pull/2457) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reduce default spawn rates for Archwood Forest biome [\#2485](https://github.com/NillerMedDild/Enigmatica6/issues/2485)
+-   Replace "shift right click" with "crouch right click" in all quests. [\#2504](https://github.com/NillerMedDild/Enigmatica6/issues/2504)
+-   Replace obsolete hammer reward with a potion [\#2434](https://github.com/NillerMedDild/Enigmatica6/pull/2434) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Slight Change to MekaSuit Helmet Quest [\#2475](https://github.com/NillerMedDild/Enigmatica6/issues/2475)
+-   Update Meka Suite Helm Description to call attention to it's Magic Damage Protection [\#2481](https://github.com/NillerMedDild/Enigmatica6/pull/2481) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Tinker's Anvil description and allowed blocks [\#2524](https://github.com/NillerMedDild/Enigmatica6/pull/2524) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Wither Bone Unification [\#2514](https://github.com/NillerMedDild/Enigmatica6/pull/2514) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug Fixes**
+
+-   Advanced Peripherals Computer Scientist Villiger Name [\#2449](https://github.com/NillerMedDild/Enigmatica6/issues/2449)
+-   Animal Harvesting Quest Description [\#2519](https://github.com/NillerMedDild/Enigmatica6/issues/2519)
+-   Ars Nouveau questline cannot be completed due to unobtainable Tome of Blood [\#2487](https://github.com/NillerMedDild/Enigmatica6/issues/2487)
+-   Ars Nouveau Quests - Adjust Tome of Blood quest to accept new books [\#2490](https://github.com/NillerMedDild/Enigmatica6/pull/2490) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[0.5.0\] Ars Nouveau mobs spawn in Atum and Undergarden dimensions [\#2513](https://github.com/NillerMedDild/Enigmatica6/issues/2513)
+-   \[0.5.0\] minecraft:nether_bricks is missing \#forge:netherbricks tag [\#2432](https://github.com/NillerMedDild/Enigmatica6/issues/2432)
+-   \[0.5.0\] Obsolete Vanilla Hammer quest reward [\#2431](https://github.com/NillerMedDild/Enigmatica6/issues/2431)
+-   \[0.5.0\] Pulverizer Osmium Ingot to Dust Recipe [\#2456](https://github.com/NillerMedDild/Enigmatica6/issues/2456)
+-   \[0.5.0\] Skeleton Bee has no breeding ingredient [\#2500](https://github.com/NillerMedDild/Enigmatica6/issues/2500)
+-   \[0.5.0\] Soul Shroom [\#2468](https://github.com/NillerMedDild/Enigmatica6/issues/2468)
+-   \[0.5.0\] Thermal Rubber [\#2452](https://github.com/NillerMedDild/Enigmatica6/issues/2452)
+-   \[Issue\] \[Resourceful Bees\] Hellish Zombees can sometimes break your portal [\#2483](https://github.com/NillerMedDild/Enigmatica6/issues/2483)
+-   Cannot make tetra hammers with most stones [\#2538](https://github.com/NillerMedDild/Enigmatica6/issues/2538)
+-   Fixed Mekanism Crusher Recipes Missing [\#2517](https://github.com/NillerMedDild/Enigmatica6/pull/2517) ([MVethana](https://github.com/MVethana))
+-   Fix Skeleton Bee breeding item being gone [\#2502](https://github.com/NillerMedDild/Enigmatica6/pull/2502) ([TemperedFool](https://github.com/TemperedFool))
+-   Glowstone bee in world spawning has no Biome [\#2451](https://github.com/NillerMedDild/Enigmatica6/issues/2451)
+-   Increase Cobalt spawn rate in The Nether [\#2439](https://github.com/NillerMedDild/Enigmatica6/issues/2439)
+-   Issue with level-type in Dev version [\#2424](https://github.com/NillerMedDild/Enigmatica6/issues/2424)
+-   Manuals in Akashic Tome do not have titles [\#2494](https://github.com/NillerMedDild/Enigmatica6/issues/2494)
+-   Mekanism Crusher Recipes Missing [\#2516](https://github.com/NillerMedDild/Enigmatica6/issues/2516)
+-   Mekanism enriched tin results in resource loop [\#2510](https://github.com/NillerMedDild/Enigmatica6/issues/2510)
+-   Mobs have weird names [\#2462](https://github.com/NillerMedDild/Enigmatica6/issues/2462)
+-   No recipe in JEI for volcanic accumulator from ARS [\#2441](https://github.com/NillerMedDild/Enigmatica6/issues/2441)
+-   Project Vibrant Journeys frogs spawn despite being disabled in config [\#2488](https://github.com/NillerMedDild/Enigmatica6/issues/2488)
+-   Quests dont work if in /ftbteam [\#2455](https://github.com/NillerMedDild/Enigmatica6/issues/2455)
+-   Recipe Oversight for String? [\#2464](https://github.com/NillerMedDild/Enigmatica6/issues/2464)
+-   Repair BYG Biome Removals in Bees [\#2491](https://github.com/NillerMedDild/Enigmatica6/pull/2491) ([TemperedFool](https://github.com/TemperedFool))
+-   Restore \#forge:netherbricks tag to nether bricks [\#2433](https://github.com/NillerMedDild/Enigmatica6/pull/2433) ([MrBazlow](https://github.com/MrBazlow))
+-   Reword Animal Harvesting Quest Description [\#2520](https://github.com/NillerMedDild/Enigmatica6/pull/2520) ([MVethana](https://github.com/MVethana))
+-   Server crashes upon player joining. [\#2420](https://github.com/NillerMedDild/Enigmatica6/issues/2420)
+-   Sleep Mod in Multiplayer causes time to be set to Day in Hammock [\#2241](https://github.com/NillerMedDild/Enigmatica6/issues/2241)
+-   Some recipe issues [\#2482](https://github.com/NillerMedDild/Enigmatica6/issues/2482)
+-   The Ars Nouveau Crystalizer has no recipe [\#2498](https://github.com/NillerMedDild/Enigmatica6/issues/2498)
+-   Unyeet yeeted expert recipes in normal [\#2444](https://github.com/NillerMedDild/Enigmatica6/pull/2444) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Vanilla mobs not spawning or extremely rare. [\#2537](https://github.com/NillerMedDild/Enigmatica6/issues/2537)
+-   Wormhole potion drink crashes game [\#1150](https://github.com/NillerMedDild/Enigmatica6/issues/1150)
 
 ### Enigmatica 6 v0.5.0
 
