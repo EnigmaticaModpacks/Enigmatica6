@@ -316,6 +316,23 @@ onEvent('recipes', (event) => {
                 id: 'ars_nouveau:belt_of_unstable_gifts'
             },
 
+            {
+                inputs: [
+                    '#resourcefulbees:resourceful_honeycomb_block',
+                    'minecraft:sunflower',
+                    'resourcefulbees:honey_fluid_bucket',
+                    '#botania:runes/earth',
+                    '#botania:runes/air',
+                    'resourcefulbees:honey_fluid_bucket',
+                    'naturesaura:aura_bloom',
+                    '#resourcefulbees:resourceful_honeycomb_block'
+                ],
+                reagent: 'resourcefulbees:t1_apiary',
+                output: 'resourcefulbees:t2_apiary',
+                count: 1,
+                id: 'resourcefulbees:t2_apiary'
+            },
+
             /// Patchouli Removals
             {
                 inputs: ['kubejs:altered_recipe_indicator'],
