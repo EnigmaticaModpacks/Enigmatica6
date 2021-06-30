@@ -916,6 +916,15 @@ const treeRegistry = [
                 substrate: 'mushroom'
             },
             {
+                sapling: 'vampirism:bloody_spruce_sapling',
+                trunk: 'vampirism:bloody_spruce_log',
+                leaf: 'vampirism:bloody_spruce_leaves',
+                extraDecoration: 'byg:fungal_imparius_filament_block',
+                substrate: 'dirt',
+                sap: 'tconstruct:blood',
+                amount: 50
+            },
+            {
                 sapling: 'tconstruct:blood_slime_sapling',
                 trunk: 'tconstruct:bloodshroom_log',
                 leaf: 'tconstruct:blood_slime_leaves',
