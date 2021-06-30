@@ -5,6 +5,10 @@ onEvent('jei.information', (event) => {
             description: ['Obtained by right-clicking a Wheel of Cheese.']
         },
         {
+            items: ['simplefarming:ham'],
+            description: ['Obtained by killing Pigs or Hoglins with a knife.']
+        },
+        {
             items: ['astralsorcery:stardust'],
             description: [
                 'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
