@@ -268,7 +268,14 @@ var itemsToHide = [
     'quark:backpack',
     'quark:crate',
     'quark:magnet',
-    'quark:soul_compass'
+    'quark:soul_compass',
+
+    'vampirism:fire_place',
+    'vampirism:umbrella',
+    'vampirism:amulet',
+    'vampirism:obi_belt',
+    'vampirism:ring'
+
 ];
 
 const fluidsToHide = [
@@ -508,7 +515,13 @@ const disabledItems = [
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
     'simplefarming:noodles',
-    'simplefarming:chocolate'
+    'simplefarming:chocolate',
+
+    'vampirism:fire_place',
+    'vampirism:umbrella',
+    'vampirism:amulet',
+    'vampirism:obi_belt',
+    'vampirism:ring'
 ];
 const materialsToUnify = [
     'iron',
