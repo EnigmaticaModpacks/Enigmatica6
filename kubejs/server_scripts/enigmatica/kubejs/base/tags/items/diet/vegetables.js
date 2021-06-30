@@ -1,1 +1,3 @@
-// Remove in 0.5.0
+onEvent('item.tags', (event) => {
+    event.add('diet:vegetables', ['vampirism:garlic_bread']);
+});

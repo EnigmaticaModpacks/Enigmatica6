@@ -754,6 +754,12 @@ const cropRegistry = [
         type: 'crop_root',
         crops: [
             {
+                seed: 'vampirism:item_garlic',
+                render: 'vampirism:garlic',
+                plant: 'vampirism:item_garlic',
+                substrate: 'dirt'
+            },
+            {
                 seed: 'farmersdelight:onion',
                 render: 'farmersdelight:onions',
                 plant: 'farmersdelight:onion',
