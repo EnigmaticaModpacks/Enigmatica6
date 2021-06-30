@@ -5,10 +5,10 @@
 	[balance.mobs]
 		#Vampire spawn chance/weight (e.g. Zombie: 100)
 		#Range: 0 ~ 100000
-		vampireSpawnChance = 2
+		vampireSpawnChance = 500
 		#Advanceed vampire spawn chance/weight (e.g. Zombie: 100)
 		#Range: 0 ~ 100000
-		advancedVampireSpawnChance = 2
+		advancedVampireSpawnChance = 500
 
 	[balance.general]
 		#Damage a normal holy water splash bottle does when directly hitting a vampire
@@ -285,7 +285,7 @@
 		sundamage = 7.0
 		#Base cooldown before a downed vampire can resurrect. In sec.
 		#Range: 1 ~ 1000
-		dbnoDuration = 60
+		dbnoDuration = 30
 		#Range: 1 ~ 10000
 		sanguinareAverageDuration = 900
 		#The duration it takes for the vampire natural armor to fully regenerate after respawn. In seconds
