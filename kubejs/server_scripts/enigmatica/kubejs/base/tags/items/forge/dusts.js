@@ -11,6 +11,7 @@ onEvent('item.tags', (event) => {
         .add('immersiveengineering:dust_coke')
         .add('immersiveengineering:dust_hop_graphite')
         .add('immersiveengineering:dust_saltpeter')
+        .add('vampirism:pure_salt')
         .add('thermal:ender_pearl_dust')
         .add('astralsorcery:stardust')
         .add('#forge:dusts/flour');
