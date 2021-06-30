@@ -24,6 +24,26 @@ onEvent('recipes', (event) => {
             }
         },
         {
+        output: 'vampirism:sunscreen_beacon',
+        pattern: ['ABA', 'DCD', 'ABA'],
+        key: {
+                A: '#forge:ingots/starmetal',
+                B: '#vampirism:pure_blood',
+                C: 'minecraft:beacon',
+                D: 'botania:mana_diamond_block'
+            }
+        },
+        {
+        output: 'vampiresneedumbrellas:creative_umbrella',
+        pattern: [' BA', ' CD', 'C  '],
+        key: {
+                A: 'minecraft:nether_star',
+                B: 'minecraft:purple_carpet',
+                C: '#forge:rods/diamond',
+                D: 'minecraft:white_carpet'
+            }
+        },
+        {
             output: Item.of('compactmachines:tunnel', { definition: { id: 'compactmachines:item' } }),
             pattern: ['ABA', 'BCB', 'DBD'],
             key: {

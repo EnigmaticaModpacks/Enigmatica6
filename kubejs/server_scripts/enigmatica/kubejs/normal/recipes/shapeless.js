@@ -12,6 +12,10 @@ onEvent('recipes', (event) => {
         {
             output: 'quark:root',
             inputs: ['minecraft:vine', '#forge:dyes/brown']
+        },
+        {
+            output: 'vampirism:vampire_fang',
+            inputs: ['#forge:slimeball/blood', '#forge:slimeball/blood', '#forge:slimeball/blood', '#forge:bones/wither']
         }
     ];
 
