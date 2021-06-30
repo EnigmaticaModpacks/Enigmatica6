@@ -17,6 +17,27 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
+        output: 'vampirism:sunscreen_beacon',
+        pattern: ['ABA', 'DCD', 'ABA'],
+        key: {
+                A: '#forge:storage_blocks/starmetal',
+                B: '#vampirism:pure_blood',
+                C: 'minecraft:beacon',
+                D: 'botania:mana_diamond_block'
+            },
+            id: 'vampirism:sunscreen_beacon'
+        },
+        {
+        output: 'vampiresneedumbrellas:creative_umbrella',
+        pattern: [' BA', ' CB', 'C  '],
+        key: {
+                A: 'minecraft:nether_star',
+                B: '#forge:plates/enderium',
+                C: '#forge:rods/enderium',
+            },
+            id: 'vampiresneedumbrellas:creative_umbrella'
+        },
+        {
             output: 'thermal:machine_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {

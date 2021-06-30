@@ -5,6 +5,11 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
+            output: 'vampirism:vampire_fang',
+            inputs: ['#forge:dusts/cobalt', '#forge:slimeball/blood', '#forge:slimeball/blood', '#forge:bones/wither'],
+            id: 'vampirism:vampire_fang'
+        },
+        {
             output: 'mekanism:hdpe_sheet',
             inputs: [
                 'mekanism:hdpe_pellet',
