@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'mythicbotany:elementium_ore', '#forge:ores/elementium');
     event.replaceInput({}, 'thermal:rubber', 'industrialforegoing:dryrubber');
     event.replaceInput({}, 'thermal:cinnabar', '#forge:gems/cinnabar');
-    event.replaceInput({}, 'thermal:sulfur', '#forge:gems/sulfur');
+    event.replaceInput({}, 'thermal:sulfur', '#forge:dust/sulfur');
     event.replaceInput({}, 'thermal:apatite', '#forge:gems/apatite');
     event.replaceInput({}, 'thermal:niter', '#forge:gems/niter');
     event.replaceInput({}, 'thermal:bitumen', '#forge:gems/bitumen', true);
