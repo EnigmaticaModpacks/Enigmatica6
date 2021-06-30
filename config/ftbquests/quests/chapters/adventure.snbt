@@ -15,7 +15,7 @@
 	quests: [
 		{
 			icon: "alexsmobs:banana"
-			x: -1.0d
+			x: -1.5d
 			y: 0.0d
 			subtitle: "Monkeys and Gorillas and Bears, Oh My!"
 			description: ["Alex’s Mod breathes new life into old biomes with a host of critter friends ranging from the cute and cuddly, to the downright deadly. Watch out and keep this guidebook handy to help you survive. "]
@@ -33,8 +33,8 @@
 		}
 		{
 			icon: "losttrinkets:treasure_bag"
-			x: -1.0d
-			y: 3.0d
+			x: 1.5d
+			y: 2.0d
 			subtitle: "One Man's Trash Is Another Man's Treasure"
 			description: [
 				"Lost Trinkets are found through various actions, digging, planting, murdering. Normal, everyday Minecraft, you know?"
@@ -77,7 +77,7 @@
 		}
 		{
 			title: "Dungeoneering"
-			x: 1.0d
+			x: 1.5d
 			y: 0.0d
 			subtitle: "Hack 'n Slash"
 			description: [
@@ -100,8 +100,8 @@
 		}
 		{
 			title: "Oh, The Biomes You'll Go"
-			x: 0.0d
-			y: -0.5d
+			x: 0.5d
+			y: 0.5d
 			subtitle: "It's opener out there, in the wide open air."
 			description: [
 				"Like what you see? Oh, the Biomes You’ll go adds a plethora of beautiful new biomes to spruce up your world. "
@@ -123,8 +123,8 @@
 		}
 		{
 			icon: "meetyourfight:devils_ante"
-			x: 0.0d
-			y: 2.5d
+			x: -1.0d
+			y: 3.0d
 			subtitle: "Leave Nothing To Chance"
 			description: [
 				"Have you got the Wither Blues? Looking for a bit of a challenge? Then come and meet your fight. "
@@ -144,7 +144,7 @@
 			}]
 		}
 		{
-			x: 1.5d
+			x: 2.0d
 			y: 1.0d
 			subtitle: "We're right here on this very spot"
 			description: [
@@ -171,8 +171,8 @@
 		{
 			title: "The Undergarden"
 			icon: "undergarden:catalyst"
-			x: 2.0d
-			y: 2.0d
+			x: -0.5d
+			y: 0.5d
 			subtitle: "Down Beneath"
 			description: [
 				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped."
@@ -194,7 +194,7 @@
 		{
 			icon: "bountiful:bountyboard"
 			x: -1.5d
-			y: 1.0d
+			y: 2.0d
 			subtitle: "This is the Way"
 			description: [
 				"Looking for something to do? Go find a village and see what you can do to help them out!"
@@ -219,7 +219,7 @@
 			title: "Atum"
 			icon: "atum:scarab"
 			x: -2.0d
-			y: 2.0d
+			y: 1.0d
 			subtitle: "Shining, Shimmering, Splendid"
 			description: [
 				"A whole new world to discover. Bring a change of clothes though, the sand gets everywhere."
@@ -861,6 +861,31 @@
 				type: "item"
 				item: "atum:coin_gold"
 				random_bonus: 7
+			}]
+		}
+		{
+			icon: "vampirism:pure_blood_4"
+			x: 0.0d
+			y: 3.5d
+			shape: "circle"
+			subtitle: "Try not to get bitten"
+			description: [
+				"Want to experience an interesting twist on gameplay? Why not become a cursed, undead creature?"
+				""
+				"Vampirism adds the possibility to become either a vampire or a vampire hunter. Vampires are strong, fast and don't fear the night, and vampire hunters have special tricks up their sleeves."
+				""
+				"Vampire Fangs are craftable."
+			]
+			id: "39985FF2526FDA0E"
+			tasks: [{
+				id: "07FFCB1E1A107F94"
+				type: "checkmark"
+				title: "Vampirism"
+			}]
+			rewards: [{
+				id: "563D2E917F79F234"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]
