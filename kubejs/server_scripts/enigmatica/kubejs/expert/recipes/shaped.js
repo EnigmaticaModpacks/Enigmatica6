@@ -59,16 +59,6 @@ onEvent('recipes', (event) => {
             id: 'vampirism:sunscreen_beacon'
         },
         {
-        output: 'vampiresneedumbrellas:creative_umbrella',
-        pattern: [' BA', ' CB', 'C  '],
-        key: {
-                A: 'minecraft:nether_star',
-                B: '#forge:plates/enderium',
-                C: '#forge:rods/enderium'
-            },
-            id: 'vampiresneedumbrellas:creative_umbrella'
-        },
-        {
             output: 'thermal:machine_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {

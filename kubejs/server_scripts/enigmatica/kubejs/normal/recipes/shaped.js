@@ -34,16 +34,6 @@ onEvent('recipes', (event) => {
             }
         },
         {
-        output: 'vampiresneedumbrellas:creative_umbrella',
-        pattern: [' BA', ' CD', 'C  '],
-        key: {
-                A: 'minecraft:nether_star',
-                B: 'minecraft:purple_carpet',
-                C: '#forge:rods/diamond',
-                D: 'minecraft:white_carpet'
-            }
-        },
-        {
             output: Item.of('compactmachines:tunnel', { definition: { id: 'compactmachines:item' } }),
             pattern: ['ABA', 'BCB', 'DBD'],
             key: {
