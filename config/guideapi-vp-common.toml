@@ -1,0 +1,13 @@
+
+#Common configurations settings
+[common]
+	#Enables extra information being printed to the console.
+	enableLogging = true
+	#Allows books to spawn with new players.
+	#This is a global override for all books if set to false.
+	canSpawnWithBook = true
+
+	#If the player should spawn with this book
+	[common.spawnBook]
+		vampirism-guidebook = false
+
