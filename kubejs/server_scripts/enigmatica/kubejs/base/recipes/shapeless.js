@@ -5,6 +5,7 @@ onEvent('recipes', (event) => {
         { output: 'minecraft:flint', inputs: ['#forge:gravel', '#forge:gravel', '#forge:gravel'] },
         { output: 'simplefarming:cornbread', inputs: ['#forge:grain', '#forge:crops/corn', '#forge:grain'] },
         { output: 'minecraft:chest', inputs: ['#forge:chests/wooden'] },
+        { output: 'vampirism:blood_bottle', inputs: ['minecraft:glass_bottle', '#forge:string'] },
         { output: Item.of('powah:uraninite', 9), inputs: ['#forge:storage_blocks/uraninite'] },
         { output: Item.of('betterendforge:thallasium_nugget', 9), inputs: ['#forge:ingots/thallasium'] },
         { output: Item.of('betterendforge:terminite_nugget', 9), inputs: ['#forge:ingots/terminite'] },
