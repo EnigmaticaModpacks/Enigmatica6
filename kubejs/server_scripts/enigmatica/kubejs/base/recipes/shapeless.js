@@ -150,6 +150,16 @@ onEvent('recipes', (event) => {
                             }
                         }
                     },
+                    vampirism: {
+                        id: 'guideapi-vp:vampirism-guidebook',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Vampirism Guide' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Vampirism Guide"}]}'
+                            }
+                        }
+                    },
                     astralsorcery: {
                         id: 'astralsorcery:tome',
                         Count: 1,
@@ -553,7 +563,8 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('minecraft:string', 3),
-            inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
+            inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax'],
+            id: 'simplefarming:string'
         }
     ];
 
