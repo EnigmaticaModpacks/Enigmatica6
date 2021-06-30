@@ -1,30 +1,12 @@
 onEvent('recipes', (event) => {
     data = {
         recipes: [
-            {
-                result: 'minecraft:granite',
-                weight: 2000
-            },
-            {
-                result: 'minecraft:diorite',
-                weight: 2000
-            },
-            {
-                result: 'minecraft:stone',
-                weight: 2000
-            },
-            {
-                result: 'minecraft:andesite',
-                weight: 2000
-            },
-            {
-                result: 'minecraft:mossy_cobblestone',
-                weight: 200
-            },
-            {
-                result: 'minecraft:mossy_stone_bricks',
-                weight: 200
-            }
+            { result: 'minecraft:granite', weight: 2000 },
+            { result: 'minecraft:diorite', weight: 2000 },
+            { result: 'minecraft:stone', weight: 2000 },
+            { result: 'minecraft:andesite', weight: 2000 },
+            { result: 'minecraft:mossy_cobblestone', weight: 200 },
+            { result: 'minecraft:mossy_stone_bricks', weight: 200 }
         ]
     };
 
