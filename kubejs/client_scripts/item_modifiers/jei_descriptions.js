@@ -69,6 +69,16 @@ onEvent('jei.information', (event) => {
         },
         {
             items: [
+                'vampirism:amulet',
+                'vampirism:obi_belt',
+                'vampirism:ring'
+            ],
+            description: [
+                "Can be obtained as quest rewards from a vampire representative."
+            ]
+        },
+        {
+            items: [
                 'industrialforegoing:infinity_backpack',
                 'industrialforegoing:infinity_saw',
                 'industrialforegoing:infinity_drill',
