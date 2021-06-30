@@ -5,7 +5,7 @@ onEvent('jei.information', (event) => {
             description: ['Obtained by right-clicking a Wheel of Cheese.']
         },
         {
-            items: ['simplefarming:ham'],
+            items: ['farmersdelight:ham'],
             description: ['Obtained by killing Pigs or Hoglins with a knife.']
         },
         {
