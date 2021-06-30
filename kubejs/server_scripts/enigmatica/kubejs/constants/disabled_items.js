@@ -35,6 +35,12 @@ const disabledItems = [
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
 
+    'vampirism:fire_place',
+    'vampirism:umbrella',
+    'vampirism:amulet',
+    'vampirism:obi_belt',
+    'vampirism:ring',
+
     'blockcarpentry:frame_chest',
     'blockcarpentry:illusion_chest',
 

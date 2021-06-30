@@ -26,6 +26,8 @@ onEvent('item.tags', (event) => {
         'naturesaura:sky_ingot',
         'naturesaura:tainted_gold',
         'occultism:iesnium_ingot',
+        'vampirism:blood_infused_iron_ingot',
+        'vampirism:blood_infused_enhanced_iron_ingot',
         'powah:uraninite'
     ]);
 

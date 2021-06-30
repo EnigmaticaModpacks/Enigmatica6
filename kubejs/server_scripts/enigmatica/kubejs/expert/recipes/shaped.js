@@ -17,6 +17,37 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
+        output: 'vampirism:weapon_table',
+        pattern: ['C D', 'AAA', ' B '],
+        key: {
+                A: '#forge:ingots/pewter',
+                B: '#forge:storage_blocks/pewter',
+                C: 'minecraft:bucket',
+                D: '#forge:nuggets/silver'
+            },
+            id: 'vampirism:weapon_table'
+        },
+        {
+        output: 'vampirism:altar_inspiration',
+        pattern: [' B ', 'BAB', 'CCC'],
+        key: {
+                A: 'eidolon:wraith_heart',
+                B: '#forge:glass',
+                C: '#forge:ingots/iron'
+            },
+            id: 'vampirism:altar_inspiration'
+        },
+        {
+        output: 'vampirism:altar_infusion',
+        pattern: [' C ', 'BAB', 'AAA'],
+        key: {
+                A: '#forge:obsidian',
+                B: '#forge:storage_blocks/electrum',
+                C: '#forge:ingots/manasteel'
+            },
+            id: 'vampirism:altar_infusion'
+        },
+        {
         output: 'vampirism:sunscreen_beacon',
         pattern: ['ABA', 'DCD', 'ABA'],
         key: {
@@ -33,7 +64,7 @@ onEvent('recipes', (event) => {
         key: {
                 A: 'minecraft:nether_star',
                 B: '#forge:plates/enderium',
-                C: '#forge:rods/enderium',
+                C: '#forge:rods/enderium'
             },
             id: 'vampiresneedumbrellas:creative_umbrella'
         },
