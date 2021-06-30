@@ -141,6 +141,11 @@ onEvent('recipes', (event) => {
         '#forge:ingots/nether_brick',
         'minecraft:nether_brick'
     );
+    event.replaceInput(
+        { id: 'thermal:machine/press/unpacking/press_wool_unpacking' },
+        'minecraft:white_wool',
+        '#forge:wool'
+    );
 
     sharedDies.forEach((die) => {
         var dieTag = `#thermal:crafting/dies/${die.thermalName}`;
