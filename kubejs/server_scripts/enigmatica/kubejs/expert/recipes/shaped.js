@@ -17,6 +17,33 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
+        output: 'vampiresneedumbrellas:diamond_umbrella_rod',
+        pattern: ['  A', ' A ', 'B  '],
+        key: {
+                A: '#forge:gems/diamond',
+                B: '#forge:nuggets/steel'
+            },
+            id: 'vampiresneedumbrellas:diamond_umbrella_rod'
+        },
+        {
+        output: 'vampiresneedumbrellas:gold_umbrella_rod',
+        pattern: ['  A', ' A ', 'B  '],
+        key: {
+                A: '#forge:ingots/gold',
+                B: '#forge:nuggets/electrum'
+            },
+            id: 'vampiresneedumbrellas:gold_umbrella_rod'
+        },
+        {
+        output: 'vampiresneedumbrellas:iron_umbrella_rod',
+        pattern: ['  A', ' A ', 'B  '],
+        key: {
+                A: '#forge:ingots/iron',
+                B: '#forge:nuggets/gold'
+            },
+            id: 'vampiresneedumbrellas:iron_umbrella_rod'
+        },
+        {
         output: 'vampirism:weapon_table',
         pattern: ['C D', 'AAA', ' B '],
         key: {
