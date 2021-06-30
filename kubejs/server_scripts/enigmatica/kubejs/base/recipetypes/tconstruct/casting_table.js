@@ -59,6 +59,108 @@ onEvent('recipes', (event) => {
             },
             result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:enderslime_bee", BeeType: "enderslime", Color: "#C75EFF"}).toJson(),
             cooling_time: 100
+        },
+        {
+        cast: {
+            item: 'minecraft:glass_bottle'
+        },
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+            amount: 900
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:0}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+            amount: 900
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:1}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 800
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:2}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 700
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:3}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 600
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:4}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 500
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:5}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 400
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:6}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 300
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:7}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 200
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
+        },
+        {
+        cast: Item.of('vampirism:blood_bottle',{Damage:8}).toJson(),
+        cast_consumed: true,
+        fluid: {
+            name: 'tconstruct:blood',
+        amount: 100
+        },
+        result: Item.of('vampirism:blood_bottle',{Damage:9}).toJson(),
+        cooling_time: 10
         }
     ];
 
