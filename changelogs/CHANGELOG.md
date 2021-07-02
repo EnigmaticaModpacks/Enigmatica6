@@ -8,11 +8,44 @@ Please **collect your graves before updating**.
 
 **New Mods**
 
+- [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel)
+- [Enigmatic Graves](https://www.curseforge.com/minecraft/mc-mods/enigmatic-graves)
+
 **Changes/Improvements**
 
+-   Flies spawn less frequently [\#2601](https://github.com/NillerMedDild/Enigmatica6/issues/2601)
 -   FTBChunks: The End can now be claimed and chunkloaded by default (only applies to new worlds)
+-   LogIn Protection extended to 2 minutes [\#2589](https://github.com/NillerMedDild/Enigmatica6/issues/2589)
+-   Merge Wither Skeleton bones [\#2507](https://github.com/NillerMedDild/Enigmatica6/issues/2507)
+-   Set up tags for Occultism Books to allow automation via Refined Storage [\#2544](https://github.com/NillerMedDild/Enigmatica6/pull/2544) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tag rice as a grain [\#2568](https://github.com/NillerMedDild/Enigmatica6/issues/2568)
 
 **Bug Fixes**
+
+- \[0.5.0\] Crash when generating Tetra structure [\#2436](https://github.com/NillerMedDild/Enigmatica6/issues/2436)
+- \[0.5.0\] Soul Shroom [\#2468](https://github.com/NillerMedDild/Enigmatica6/issues/2468)
+- Blackstone Hammer only accepts Gilded Blackstone [\#2548](https://github.com/NillerMedDild/Enigmatica6/issues/2548)
+- Cobalt Item Frame uncraftable [\#2574](https://github.com/NillerMedDild/Enigmatica6/issues/2574)
+- Dimensional Shard Ore No Overwold Spawns [\#1423](https://github.com/NillerMedDild/Enigmatica6/issues/1423)
+- Doubleclick to search inventory feature no longer present [\#2578](https://github.com/NillerMedDild/Enigmatica6/issues/2578)
+- Flourite can't be crafted with pulverizer [\#2600](https://github.com/NillerMedDild/Enigmatica6/issues/2600)
+- In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
+- Multiple chunks are unable to be enriched [\#2579](https://github.com/NillerMedDild/Enigmatica6/issues/2579)
+- Occultism/Mekanism Duplication Glitch [\#2250](https://github.com/NillerMedDild/Enigmatica6/issues/2250)
+- Paraglider tip still exist [\#2554](https://github.com/NillerMedDild/Enigmatica6/issues/2554)
+- Potassium Nitrate Chunk+ enrichment chamber recipe has been removed [\#2564](https://github.com/NillerMedDild/Enigmatica6/issues/2564)
+- Powered Resistive Heater freezes game [\#2573](https://github.com/NillerMedDild/Enigmatica6/issues/2573)
+- Pretty Pipe + Tinkers Drain = Server Crash [\#2570](https://github.com/NillerMedDild/Enigmatica6/issues/2570)
+- Re-added [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
+- Terrasteel Cannot be Crafted Using Terrestrial Honeycombs in a Mana Infuser [\#2595](https://github.com/NillerMedDild/Enigmatica6/issues/2595)
+- Tetra axes can't be used to craft sticks [\#2551](https://github.com/NillerMedDild/Enigmatica6/issues/2551)
+- Tinker's Construct axe consumed when crafting sticks [\#2550](https://github.com/NillerMedDild/Enigmatica6/issues/2550)
+- TOP/Mekanism interaction "Waiting for server" is back. [\#2596](https://github.com/NillerMedDild/Enigmatica6/issues/2596)
+
+**Removed Mods**
+
+- [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
+- [TOP Addons](https://www.curseforge.com/minecraft/mc-mods/top-addons)
 
 ### Enigmatica 6 v0.5.2
 
