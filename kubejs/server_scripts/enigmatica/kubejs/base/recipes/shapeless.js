@@ -554,6 +554,14 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('minecraft:string', 3),
             inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
+        },
+        {
+            output: Item.of('minecraft:green_dye', 2),
+            inputs: ['#forge:dyes/blue', '#forge:dyes/yellow']
+        },
+        {
+            output: Item.of('minecraft:brown', 2),
+            inputs: ['#forge:dyes/red', '#forge:dyes/green']
         }
     ];
 
