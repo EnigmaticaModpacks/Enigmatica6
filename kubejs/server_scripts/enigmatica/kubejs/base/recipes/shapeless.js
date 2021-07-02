@@ -560,7 +560,7 @@ onEvent('recipes', (event) => {
             inputs: ['#forge:dyes/blue', '#forge:dyes/yellow']
         },
         {
-            output: Item.of('minecraft:brown', 2),
+            output: Item.of('minecraft:brown_dye', 2),
             inputs: ['#forge:dyes/red', '#forge:dyes/green']
         }
     ];
