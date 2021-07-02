@@ -10,6 +10,8 @@ Please **collect your graves before updating**.
 
 **Changes/Improvements**
 
+-   FTBChunks: The End can now be claimed and chunkloaded by default (only applies to new worlds)
+
 **Bug Fixes**
 
 ### Enigmatica 6 v0.5.2
