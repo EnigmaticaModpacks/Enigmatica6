@@ -1,3 +1,19 @@
+### Enigmatica 6 v0.5.3
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.3.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.3.md)_
+
+**Important Note!**
+The Grave mod we use has been changed to Enigmatic Graves, meaning all Graves from the Gravestone Mod will disappear upon updating to 0.5.3
+Please **collect your graves before updating**.
+
+**New Mods**
+
+**Changes/Improvements**
+
+-   FTBChunks: The End can now be claimed and chunkloaded by default (only applies to new worlds)
+
+**Bug Fixes**
+
 ### Enigmatica 6 v0.5.2
 
 _Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.2.md)_
@@ -10,9 +26,13 @@ and read the changelog so you're aware of all the changes that could affect your
 
 Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
 
+**Changes/Improvements**
+
+-   Set up tags for Occultism Books to allow automation via RS [\#2544](https://github.com/NillerMedDild/Enigmatica6/pull/2544) ([MuteTiefling](https://github.com/MuteTiefling))
+
 **Bug Fixes**
 
--   Fixes servers crashing when generating some structures.
+-   In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
 
 ### Enigmatica 6 v0.5.1
 

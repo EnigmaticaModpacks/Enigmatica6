@@ -5,69 +5,69 @@
 	[initialization.general]
 		#Enable Creative Tab
 		creative_tab = false
+		#Enables custom Configured config screen
+		custom_configured_screen = true
 		#Set to false to disable custom dispenser behaviors (i.e: filling jars) if for some reason they are causing trouble
 		dispensers = true
 		#Creates a creative tab full of filled jars
 		jar_tab = false
-		#Enables custom Configured config screen
-		custom_configured_screen = true
-
-	[initialization.blocks]
-		planter = true
-		clock_block = true
-		pedestal = true
-		wind_vane = true
-		redstone_illuminator = true
-		notice_board = true
-		crank = true
-		jar = true
-		faucet = true
-		turn_table = true
-		piston_launcher = true
-		speaker_block = true
-		sign_post = true
-		hanging_sign = true
-		bellows = true
-		sconce = true
-		sconce_green = false
-		candelabra = true
-		cage = true
-		item_shelf = true
-		sconce_lever = true
-		cog_block = true
-		candle_holder = true
-		globe = true
-		hourglass = true
-		sack = true
-		blackboard = true
-		safe = true
-		copper_lantern = true
-		flute = true
-		gold_trapdoor = true
-		gold_door = true
-		bamboo_spikes = true
-		stone_lamp = true
-		checker_block = true
-		netherite_door = true
-		netherite_trapdoor = true
-		pancake = true
-		lock_block = true
-		flax = true
-		rope = true
-		rope_arrow = true
-		pulley_block = true
-		fodder = true
-		bomb = true
-		crimson_lantern = true
-		magma_cream_block = false
-		flag = false
-		goblet = true
-		raked_gravel = true
-		statue = true
-		iron_gate = true
-		#WIP
-		laser_block = false
 
 	[initialization.entities]
 		firefly = true
+
+	[initialization.blocks]
+		clock_block = true
+		speaker_block = true
+		sack = true
+		#WIP
+		laser_block = false
+		bellows = true
+		hanging_sign = true
+		bomb = true
+		cage = true
+		bamboo_spikes = true
+		hourglass = true
+		raked_gravel = true
+		jar = true
+		rope_arrow = true
+		checker_block = true
+		stone_lamp = true
+		cog_block = true
+		crank = true
+		copper_lantern = true
+		pancake = true
+		statue = true
+		iron_gate = true
+		piston_launcher = true
+		netherite_trapdoor = true
+		fodder = true
+		globe = true
+		sconce = true
+		candelabra = true
+		safe = true
+		sconce_lever = true
+		sign_post = true
+		pedestal = true
+		blackboard = true
+		netherite_door = true
+		candle_holder = true
+		flag = false
+		rope = true
+		notice_board = true
+		redstone_illuminator = true
+		crimson_lantern = true
+		lock_block = true
+		flax = true
+		planter = true
+		wind_vane = true
+		item_shelf = true
+		turn_table = true
+		faucet = true
+		gold_trapdoor = true
+		magma_cream_block = false
+		goblet = true
+		sconce_green = false
+		flute = true
+		pulley_block = true
+		gold_door = true
 
