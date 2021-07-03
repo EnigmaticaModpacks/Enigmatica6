@@ -148,6 +148,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"contentcreatorintegration/default/constants.json"
 )
 
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data")
+
 #=====================================================================//
 #  SERVER FILE SETTINGS
 #=====================================================================//
