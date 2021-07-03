@@ -12,11 +12,13 @@ Please delete your config, defaultconfig, and kubejs folder before updating. Thi
 
 **Changes/Improvements**
 
--   
+-   Starry Bee color changes [\#2610](https://github.com/NillerMedDild/Enigmatica6/pull/2610) ([g0urra](https://github.com/g0urra))
 
 **Bug Fixes**
 
-- 
+- Jerrycan uncraftable [\#2612](https://github.com/NillerMedDild/Enigmatica6/issues/2612)
+- Double Maps [\#2607](https://github.com/NillerMedDild/Enigmatica6/issues/2607)
+- Jerry Can fully crashes client when used on water \(Immersive Engineering\) [\#1415](https://github.com/NillerMedDild/Enigmatica6/issues/1415)
 
 ### Enigmatica 6 v0.5.3
 
