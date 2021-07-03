@@ -3,11 +3,12 @@
     "maxTimeInHive": 4800,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
+    "baseLayerTexture": "other/starry",
     "ColorData": {
-        "honeycombColor": "#C0C0C0",
-        "isBeeColored": true,
-        "primaryColor": "#C0C0C0",
-        "secondaryColor": "#00FFBF"
+        "honeycombColor": "#062D86",
+        "isBeeColored": false,
+        "primaryColor": "#0E1250",
+        "secondaryColor": "#ACB5F8"
     },
     "CombatData": {
         "isPassive": false,
@@ -21,3 +22,4 @@
     "BreedData": {"isBreedable": false},
     "TraitData": {"hasTraits": true}
 }
+
