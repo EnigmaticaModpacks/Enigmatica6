@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-07-02T19:30:23.6825178Z",
-  "playedCount": 214,
+  "lastPlayed": "2021-07-02T21:18:11.3544094Z",
+  "playedCount": 215,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -48,7 +48,7 @@
   "cachedScans": [],
   "isValid": true,
   "lastPreviousMatchUpdate": "2021-07-02T19:45:06.9719085Z",
-  "lastRefreshAttempt": "2021-07-02T22:08:59.6550662+02:00",
+  "lastRefreshAttempt": "2021-07-02T22:08:59.9110646+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -12049,6 +12049,128 @@
       "installedTargets": null
     },
     {
+      "addonID": 331936,
+      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
+      "installedFile": {
+        "id": 3346836,
+        "displayName": "citadel-1.7.1-1.16.5",
+        "fileName": "citadel-1.7.1-1.16.5.jar",
+        "fileDate": "2021-06-10T18:32:53.507Z",
+        "fileLength": 465097,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3346/836/citadel-1.7.1-1.16.5.jar",
+        "isAlternate": false,
+        "alternateFileId": 3346837,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 4009696870,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 34669009,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1768348124,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.mixins.json",
+            "fingerprint": 3805323983,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.png",
+            "fingerprint": 1603167710,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 4253522632,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "citadel.refmap.json",
+            "fingerprint": 853231933,
+            "type": 3,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2703827617,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000016.0000000003",
+            "gameVersion": "1.16.3",
+            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
+            "gameVersionName": "1.16.3"
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000016.0000000005",
+            "gameVersion": "1.16.5",
+            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
+            "gameVersionName": "1.16.5"
+          },
+          {
+            "gameVersionPadded": "0",
+            "gameVersion": "",
+            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
+            "gameVersionName": "Forge"
+          },
+          {
+            "gameVersionPadded": "0000000001.0000000016.0000000004",
+            "gameVersion": "1.16.4",
+            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
+            "gameVersionName": "1.16.4"
+          }
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2356063,
+        "projectId": 331936,
+        "packageFingerprintId": 680833781,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameVersionMappingId": 3029906,
+        "gameVersionId": 7498,
+        "gameId": 432,
+        "isServerPack": false,
+        "FileNameOnDisk": "citadel-1.7.1-1.16.5.jar"
+      },
+      "dateInstalled": "2021-07-02T20:08:58.9987956Z",
+      "dateUpdated": "2021-07-02T20:08:58.9987956Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 251407,
       "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
       "installedFile": {
@@ -19922,7 +20044,7 @@
       "dateInstalled": "2021-05-13T19:57:35.5604112Z",
       "dateUpdated": "2021-06-28T17:23:45.9601499Z",
       "dateLastUpdateAttempted": "2021-06-28T17:23:45.9601499Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21073,95 +21195,6 @@
       "preferenceReleaseType": null,
       "manifestName": null,
       "installedTargets": null
-    },
-    {
-      "addonID": 238584,
-      "gameInstanceID": "3b2f90ac-e564-47d4-81d9-d76e9e028963",
-      "installedFile": {
-        "id": 2280670,
-        "displayName": "soggyguns - 9.0",
-        "fileName": "soggyguns - 9.0.jar",
-        "fileDate": "2016-02-07T19:56:17.73Z",
-        "fileLength": 357482,
-        "releaseType": 1,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/2280/670/soggyguns - 9.0.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 2464251221,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "com",
-            "fingerprint": 4291340826,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "mcmod.info",
-            "fingerprint": 89784769,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "soggyguns.png",
-            "fingerprint": 1373217108,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 4039978019,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 1548948016,
-        "gameVersion": [
-          "1.7.10"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000007.0000000010",
-            "gameVersion": "1.7.10",
-            "gameVersionReleaseDate": "2014-06-16T00:00:00Z",
-            "gameVersionName": "1.7.10"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": true,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 30585,
-        "projectId": 238584,
-        "packageFingerprintId": 45914112,
-        "gameVersionDateReleased": "2014-06-16T00:00:00Z",
-        "gameVersionMappingId": 175746,
-        "gameVersionId": 4449,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "moreoverlays-1.18.14-mc1.16.5.jar"
-      },
-      "dateInstalled": "2021-07-02T20:07:09.0817629Z",
-      "dateUpdated": "2021-07-02T20:07:09.0817629Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 4,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": true,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": []
     },
     {
       "addonID": 377281,
@@ -30595,7 +30628,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 353399,
