@@ -254,19 +254,7 @@ onEvent('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-    /*
-    event.remove({
-        input: '#forge:ores',
-        mod: 'create',
-        type: 'create:milling'
-    });
 
-    event.remove({
-        input: '#forge:ores',
-        mod: 'create',
-        type: 'create:crushing'
-    });
-*/
     event.remove({
         mod: 'occultism',
         type: 'occultism:miner'
