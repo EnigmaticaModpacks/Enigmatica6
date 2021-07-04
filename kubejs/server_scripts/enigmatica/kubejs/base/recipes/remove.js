@@ -64,7 +64,10 @@ onEvent('recipes', (event) => {
 
         'astralsorcery:infuser/gold_ore',
 
+        'betterendforge:gunpowder_from_sulphur',
+
         'bloodmagic:smelting/ingot_netherite_scrap',
+        'bloodmagic:alchemytable/gunpowder',
 
         'botania:fertilizer_dye',
 
@@ -131,7 +134,6 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
         'immersiveengineering:crusher/bone_meal',
-        'immersiveengineering:crafting/jerrycan',
 
         'immersivepetroleum:distillationtower/oilcracking',
 
@@ -174,6 +176,8 @@ onEvent('recipes', (event) => {
         'thermal:signalum_dust_4',
         'thermal:rubber_3',
         'thermal:smelting/cured_rubber_from_smelting',
+        'thermal:storage/sulfur_block',
+        'thermal:gunpowder_4',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',

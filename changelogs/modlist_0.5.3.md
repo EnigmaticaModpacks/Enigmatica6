@@ -1,4 +1,4 @@
-## Enigmatica6 - 0.5.4
+## Enigmatica6 - 0.5.3
 - [DustrialDecor-1.1.6.jar](https://www.curseforge.com/minecraft/mc-mods/dustrial-decor/files/3274678) (by [BlueDuckYT](https://www.curseforge.com/members/blueduckyt/projects))
 - [tanknull-2.3-1.16.4.jar](https://www.curseforge.com/minecraft/mc-mods/tank-null/files/3224872) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
 - [aiotbotania-1.16.5-1.7.8.jar](https://www.curseforge.com/minecraft/mc-mods/aiot-botania/files/3363695) (by [MelanX](https://www.curseforge.com/members/melanx/projects))
@@ -196,7 +196,7 @@
 - [Neat 1.7-27.jar](https://www.curseforge.com/minecraft/mc-mods/neat/files/3182258) (by [Vazkii](https://www.curseforge.com/members/vazkii/projects))
 - [NetherPortalFix_1.16.3-7.2.1.jar](https://www.curseforge.com/minecraft/mc-mods/netherportalfix/files/3098229) (by [BlayTheNinth](https://www.curseforge.com/members/blaytheninth/projects))
 - [ObserverLib-1.16.5-1.5.3.jar](https://www.curseforge.com/minecraft/mc-mods/observerlib/files/3333962) (by [HellFirePvP](https://www.curseforge.com/members/hellfirepvp/projects))
-- [occultism-1.5.4.jar](https://www.curseforge.com/minecraft/mc-mods/occultism/files/3374749) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
+- [occultism-1.5.3.jar](https://www.curseforge.com/minecraft/mc-mods/occultism/files/3373996) (by [kli_kli](https://www.curseforge.com/members/kli_kli/projects))
 - [Biomes You Go 1.2.9 MCV: 1.16.5](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go/files/3337158) (by [AOCAWOL](https://www.curseforge.com/members/aocawol/projects))
 - [elevatorid-1.16.5-1.7.13.jar](https://www.curseforge.com/minecraft/mc-mods/openblocks-elevator/files/3238352) (by [vsngarcia](https://www.curseforge.com/members/vsngarcia/projects))
 - [overloadedarmorbar-5.1.0.jar](https://www.curseforge.com/minecraft/mc-mods/overloaded-armor-bar/files/3055679) (by [tfarecnim](https://www.curseforge.com/members/tfarecnim/projects))
@@ -234,7 +234,7 @@
 - [Refined Storage Addons 0.7.2](https://www.curseforge.com/minecraft/mc-mods/refined-storage-addons/files/3065694) (by [raoulvdberge](https://www.curseforge.com/members/raoulvdberge/projects))
 - [RSLargePatterns-1.16.5-2.1.0.3.jar](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns/files/3263830) (by [TheLMiffy1111](https://www.curseforge.com/members/thelmiffy1111/projects))
 - [rsrequestify-1.16.3-2.0.1.jar](https://www.curseforge.com/minecraft/mc-mods/rs-requestify/files/3099033) (by [Buuz135](https://www.curseforge.com/members/buuz135/projects))
-- [Repurposed Structures v2.7.7 (1.16.5 MC)](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures/files/3374303) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
+- [Repurposed Structures v2.7.6 (1.16.5 MC)](https://www.curseforge.com/minecraft/mc-mods/repurposed-structures/files/3367262) (by [telepathicgrunt](https://www.curseforge.com/members/telepathicgrunt/projects))
 - [ResourcefulBees-1.16.5-0.6.7.2b](https://www.curseforge.com/minecraft/mc-mods/resourceful-bees/files/3281371) (by [epic_oreo](https://www.curseforge.com/members/epic_oreo/projects))
 - [restriction-1.16.5-0.1.2.jar](https://www.curseforge.com/minecraft/mc-mods/restriction-re-restricted/files/3287364) (by [Darkere](https://www.curseforge.com/members/darkere/projects))
 - [rhino-1605.1.1-build.21.jar](https://www.curseforge.com/minecraft/mc-mods/rhino/files/3354586) (by [LatvianModder](https://www.curseforge.com/members/latvianmodder/projects))

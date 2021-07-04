@@ -198,7 +198,7 @@ onEvent('recipes', (event) => {
                 orbLevel: 1
             },
             {
-                inputs: ['#forge:gems/sulfur', 'industrialforegoing:dryrubber', 'industrialforegoing:dryrubber'],
+                inputs: ['#forge:dusts/sulfur', 'industrialforegoing:dryrubber', 'industrialforegoing:dryrubber'],
                 output: 'thermal:cured_rubber',
                 count: 2,
                 syphon: 400,
