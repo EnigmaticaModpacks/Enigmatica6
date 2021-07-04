@@ -1,4 +1,4 @@
-onEvent('recipes', (event) => {
+/*onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+ /*   const newRecipes = [
         {
             output: 'thermal:machine_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -756,3 +756,4 @@ onEvent('recipes', (event) => {
         }
     });
 });
+*/
