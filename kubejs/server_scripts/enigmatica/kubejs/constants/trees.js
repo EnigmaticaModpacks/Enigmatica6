@@ -46,7 +46,7 @@ const treeRegistry = [
                 leaf: 'byg:araucaria_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                rate: { living: 75, dead: 8 }
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:aspen_sapling',
