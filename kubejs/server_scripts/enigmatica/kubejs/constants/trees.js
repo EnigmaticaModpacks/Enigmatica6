@@ -11,7 +11,7 @@ const treeRegistry = [
                 fruit: 'minecraft:apple',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'ars_nouveau:green_archwood_sapling',
@@ -20,7 +20,7 @@ const treeRegistry = [
                 fruit: 'minecraft:apple',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'ars_nouveau:purple_archwood_sapling',
@@ -29,7 +29,7 @@ const treeRegistry = [
                 fruit: 'minecraft:apple',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'ars_nouveau:red_archwood_sapling',
@@ -38,19 +38,23 @@ const treeRegistry = [
                 fruit: 'minecraft:apple',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'byg:araucaria_sapling',
                 trunk: 'byg:pine_log',
                 leaf: 'byg:araucaria_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'byg:aspen_sapling',
                 trunk: 'byg:aspen_log',
                 leaf: 'byg:aspen_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'byg:baobab_sapling',
@@ -59,108 +63,140 @@ const treeRegistry = [
                 fruit: 'byg:baobab_fruit',
                 substrate: 'dirt',
                 sap: 'industrialforegoing:latex',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:blue_enchanted_sapling',
                 trunk: 'byg:blue_enchanted_log',
                 leaf: 'byg:blue_enchanted_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:blue_spruce_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'byg:blue_spruce_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:brown_birch_sapling',
                 trunk: 'minecraft:birch_log',
                 leaf: 'byg:brown_birch_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:brown_oak_sapling',
                 trunk: 'minecraft:oak_log',
                 leaf: 'byg:brown_oak_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:brown_zelkova_sapling',
                 trunk: 'byg:zelkova_log',
                 leaf: 'byg:brown_zelkova_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:cika_sapling',
                 trunk: 'byg:cika_log',
                 leaf: 'byg:cika_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:cypress_sapling',
                 trunk: 'byg:cypress_log',
                 leaf: 'byg:cypress_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:ebony_sapling',
                 trunk: 'byg:ebony_log',
                 leaf: 'byg:ebony_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:ether_sapling',
                 trunk: 'byg:ether_log',
                 leaf: 'byg:ether_leaves',
                 fruit: 'byg:ether_bulbs',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'integrateddynamics:liquid_chorus',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:fir_sapling',
                 trunk: 'byg:fir_log',
                 leaf: 'byg:fir_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:green_enchanted_sapling',
                 trunk: 'byg:green_enchanted_log',
                 leaf: 'byg:green_enchanted_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:holly_sapling',
                 trunk: 'byg:holly_log',
                 leaf: 'byg:holly_leaves',
                 fruit: 'byg:holly_berries',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:indigo_jacaranda_sapling',
                 trunk: 'byg:jacaranda_log',
                 leaf: 'byg:indigo_jacaranda_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:jacaranda_sapling',
                 trunk: 'byg:jacaranda_log',
                 leaf: 'byg:jacaranda_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:joshua_sapling',
                 trunk: 'minecraft:oak_log',
                 leaf: 'byg:joshua_leaves',
                 fruit: 'byg:joshua_fruit',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:lament_sapling',
                 trunk: 'byg:lament_log',
                 leaf: 'byg:lament_leaves',
                 extraDecoration: 'minecraft:shroomlight',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:mahogany_sapling',
@@ -168,77 +204,99 @@ const treeRegistry = [
                 leaf: 'byg:mahogany_leaves',
                 substrate: 'dirt',
                 sap: 'industrialforegoing:latex',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:mangrove_sapling',
                 trunk: 'byg:mangrove_log',
                 leaf: 'byg:mangrove_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:maple_sapling',
                 trunk: 'byg:maple_log',
                 leaf: 'byg:maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:nightshade_sapling',
                 trunk: 'byg:nightshade_log',
                 leaf: 'byg:nightshade_leaves',
                 extraDecoration: 'byg:flowering_nightshade_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:orange_birch_sapling',
                 trunk: 'minecraft:birch_log',
                 leaf: 'byg:orange_birch_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:orange_oak_sapling',
                 trunk: 'minecraft:oak_log',
                 leaf: 'byg:orange_oak_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:orange_spruce_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'byg:orange_spruce_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:orchard_sapling',
                 trunk: 'minecraft:oak_log',
                 leaf: 'byg:orchard_leaves',
                 extraDecoration: 'byg:flowering_orchard_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:palm_sapling',
                 trunk: 'byg:palm_log',
                 leaf: 'byg:palm_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:palo_verde_sapling',
                 trunk: 'byg:palo_verde_log',
                 leaf: 'byg:palo_verde_leaves',
                 extraDecoration: 'byg:flowering_palo_verde_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:pine_sapling',
                 trunk: 'byg:pine_log',
                 leaf: 'byg:pine_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:pink_cherry_sapling',
                 trunk: 'byg:cherry_log',
                 leaf: 'byg:pink_cherry_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:rainbow_eucalyptus_sapling',
@@ -246,113 +304,147 @@ const treeRegistry = [
                 leaf: 'byg:rainbow_eucalyptus_leaves',
                 substrate: 'dirt',
                 sap: 'industrialforegoing:latex',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:red_birch_sapling',
                 trunk: 'minecraft:birch_log',
                 leaf: 'byg:red_birch_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:red_maple_sapling',
                 trunk: 'byg:maple_log',
                 leaf: 'byg:maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:red_oak_sapling',
                 trunk: 'minecraft:oak_log',
                 leaf: 'byg:red_oak_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:red_spruce_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'byg:red_spruce_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:redwood_sapling',
                 trunk: 'byg:redwood_log',
                 leaf: 'byg:redwood_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'byg:silver_maple_sapling',
                 trunk: 'byg:maple_log',
                 leaf: 'byg:silver_maple_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:skyris_sapling',
                 trunk: 'byg:skyris_log',
                 leaf: 'byg:skyris_leaves',
                 fruit: 'byg:green_apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:white_cherry_sapling',
                 trunk: 'byg:cherry_log',
                 leaf: 'byg:white_cherry_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:willow_sapling',
                 trunk: 'byg:willow_log',
                 leaf: 'byg:willow_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:witch_hazel_sapling',
                 trunk: 'byg:witch_hazel_log',
                 leaf: 'byg:witch_hazel_leaves',
                 extraDecoration: 'byg:blooming_witch_hazel_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:withering_oak_sapling',
                 trunk: 'byg:withering_oak_log',
                 leaf: 'byg:withering_oak_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:yellow_birch_sapling',
                 trunk: 'minecraft:birch_log',
                 leaf: 'byg:yellow_birch_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'byg:yellow_spruce_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'byg:yellow_spruce_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'byg:zelkova_sapling',
                 trunk: 'byg:zelkova_log',
                 leaf: 'byg:zelkova_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'minecraft:acacia_sapling',
                 trunk: 'minecraft:acacia_log',
                 leaf: 'minecraft:acacia_leaves',
                 fruit: 'alexsmobs:acacia_blossom',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'industrialforegoing:latex',
+                rate: { living: 75, dead: 8 }
             },
             {
                 sapling: 'minecraft:birch_sapling',
                 trunk: 'minecraft:birch_log',
                 leaf: 'minecraft:birch_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'minecraft:dark_oak_sapling',
                 trunk: 'minecraft:dark_oak_log',
                 leaf: 'minecraft:dark_oak_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'minecraft:jungle_sapling',
@@ -361,20 +453,24 @@ const treeRegistry = [
                 fruit: 'alexsmobs:banana',
                 substrate: 'dirt',
                 sap: 'industrialforegoing:latex',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'minecraft:oak_sapling',
                 trunk: 'minecraft:oak_log',
                 leaf: 'minecraft:oak_leaves',
                 fruit: 'minecraft:apple',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'minecraft:spruce_sapling',
                 trunk: 'minecraft:spruce_log',
                 leaf: 'minecraft:spruce_leaves',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'quark:blue_blossom_sapling',
@@ -382,7 +478,7 @@ const treeRegistry = [
                 leaf: 'quark:blue_blossom_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'quark:lavender_blossom_sapling',
@@ -390,7 +486,7 @@ const treeRegistry = [
                 leaf: 'quark:lavender_blossom_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'quark:orange_blossom_sapling',
@@ -398,7 +494,7 @@ const treeRegistry = [
                 leaf: 'quark:orange_blossom_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'quark:pink_blossom_sapling',
@@ -406,7 +502,7 @@ const treeRegistry = [
                 leaf: 'quark:pink_blossom_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'quark:red_blossom_sapling',
@@ -414,7 +510,7 @@ const treeRegistry = [
                 leaf: 'quark:red_blossom_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'quark:yellow_blossom_sapling',
@@ -422,7 +518,7 @@ const treeRegistry = [
                 leaf: 'quark:yellow_blossom_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 50
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'simplefarming:apple_sapling',
@@ -431,7 +527,7 @@ const treeRegistry = [
                 fruit: 'minecraft:apple',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:apricot_sapling',
@@ -440,7 +536,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:apricot',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:banana_sapling',
@@ -449,7 +545,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:banana',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:cherry_sapling',
@@ -458,7 +554,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:cherries',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:mango_sapling',
@@ -467,7 +563,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:mango',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:olive_sapling',
@@ -476,7 +572,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:olives',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:orange_sapling',
@@ -485,7 +581,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:orange',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:pear_sapling',
@@ -494,7 +590,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:pear',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'simplefarming:plum_sapling',
@@ -503,7 +599,7 @@ const treeRegistry = [
                 fruit: 'simplefarming:plum',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'undergarden:smogstem_sapling',
@@ -511,7 +607,7 @@ const treeRegistry = [
                 leaf: 'undergarden:smogstem_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'undergarden:wigglewood_sapling',
@@ -519,7 +615,7 @@ const treeRegistry = [
                 leaf: 'undergarden:wigglewood_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'betterendforge:helix_tree_sapling',
@@ -527,23 +623,23 @@ const treeRegistry = [
                 leaf: 'betterendforge:helix_tree_leaves',
                 substrate: 'amber_moss',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'betterendforge:tenanea_sapling',
                 trunk: 'betterendforge:tenanea_log',
                 leaf: 'betterendforge:tenanea_leaves',
                 substrate: 'pink_moss',
-                sap: 'thermal:resin',
-                amount: 25
+                sap: 'integrateddynamics:liquid_chorus',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'betterendforge:pythadendron_sapling',
                 trunk: 'betterendforge:pythadendron_log',
                 leaf: 'betterendforge:pythadendron_leaves',
                 substrate: 'chorus_nylium',
-                sap: 'thermal:resin',
-                amount: 25
+                sap: 'integrateddynamics:liquid_chorus',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'betterendforge:lacugrove_sapling',
@@ -551,22 +647,24 @@ const treeRegistry = [
                 leaf: 'betterendforge:lacugrove_leaves',
                 substrate: 'end_moss',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'betterendforge:dragon_tree_sapling',
                 trunk: 'betterendforge:dragon_tree_log',
                 leaf: 'betterendforge:dragon_tree_leaves',
                 substrate: 'shadow_grass',
-                sap: 'thermal:resin',
-                amount: 25
+                sap: 'integrateddynamics:liquid_chorus',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'integrateddynamics:menril_sapling',
                 trunk: 'integrateddynamics:menril_log',
                 leaf: 'integrateddynamics:menril_leaves',
                 fruit: 'integrateddynamics:menril_berries',
-                substrate: 'dirt'
+                substrate: 'dirt',
+                sap: 'integrateddynamics:menril_resin',
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'atmospheric:rosewood_sapling',
@@ -574,7 +672,7 @@ const treeRegistry = [
                 leaf: 'atmospheric:rosewood_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'atmospheric:morado_sapling',
@@ -583,7 +681,7 @@ const treeRegistry = [
                 extraDecoration: 'atmospheric:flowering_morado_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'atmospheric:yucca_sapling',
@@ -592,7 +690,7 @@ const treeRegistry = [
                 fruit: 'atmospheric:yucca_bundle',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'atmospheric:kousa_sapling',
@@ -600,7 +698,7 @@ const treeRegistry = [
                 leaf: 'atmospheric:kousa_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'atmospheric:aspen_sapling',
@@ -608,7 +706,7 @@ const treeRegistry = [
                 leaf: 'atmospheric:aspen_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 50, dead: 6 }
             },
             {
                 sapling: 'atmospheric:grimwood_sapling',
@@ -616,7 +714,7 @@ const treeRegistry = [
                 leaf: 'atmospheric:grimwood_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'upgrade_aquatic:river_sapling',
@@ -625,7 +723,7 @@ const treeRegistry = [
                 fruit: 'upgrade_aquatic:mulberry',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'sushigocrafting:avocado_sapling',
@@ -634,7 +732,7 @@ const treeRegistry = [
                 fruit: 'sushigocrafting:avocado',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'architects_palette:twisted_sapling',
@@ -642,7 +740,7 @@ const treeRegistry = [
                 leaf: 'architects_palette:twisted_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'environmental:white_wisteria_sapling',
@@ -650,7 +748,7 @@ const treeRegistry = [
                 leaf: 'environmental:white_wisteria_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'environmental:purple_wisteria_sapling',
@@ -658,7 +756,7 @@ const treeRegistry = [
                 leaf: 'environmental:purple_wisteria_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'environmental:blue_wisteria_sapling',
@@ -666,7 +764,7 @@ const treeRegistry = [
                 leaf: 'environmental:blue_wisteria_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'environmental:pink_wisteria_sapling',
@@ -674,7 +772,7 @@ const treeRegistry = [
                 leaf: 'environmental:pink_wisteria_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'environmental:cherry_sapling',
@@ -683,7 +781,7 @@ const treeRegistry = [
                 fruit: 'environmental:cherries',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'environmental:willow_sapling',
@@ -691,7 +789,7 @@ const treeRegistry = [
                 leaf: 'environmental:willow_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'atum:palm_sapling',
@@ -699,7 +797,7 @@ const treeRegistry = [
                 leaf: 'atum:palm_leaves',
                 substrate: 'dirt',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'undergarden:grongle_sapling',
@@ -707,7 +805,7 @@ const treeRegistry = [
                 leaf: 'undergarden:grongle_leaves',
                 substrate: 'deepturf',
                 sap: 'thermal:resin',
-                amount: 75
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'tconstruct:earth_slime_sapling',
@@ -716,7 +814,7 @@ const treeRegistry = [
                 fruit: 'minecraft:slime_ball',
                 substrate: 'slimy_dirt',
                 sap: 'tconstruct:earth_slime',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'tconstruct:sky_slime_sapling',
@@ -725,7 +823,7 @@ const treeRegistry = [
                 fruit: 'tconstruct:sky_slime_ball',
                 substrate: 'slimy_dirt',
                 sap: 'tconstruct:sky_slime',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
             {
                 sapling: 'tconstruct:ender_slime_sapling',
@@ -734,7 +832,7 @@ const treeRegistry = [
                 fruit: 'tconstruct:ender_slime_ball',
                 substrate: 'slimy_dirt',
                 sap: 'tconstruct:ender_slime',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             }
         ]
     },
@@ -860,7 +958,7 @@ const treeRegistry = [
                 extraDecoration: 'undergarden:blood_mushroom_globule',
                 substrate: 'deepturf',
                 sap: 'tconstruct:blood',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             },
 
             {
@@ -922,7 +1020,7 @@ const treeRegistry = [
                 fruit: 'tconstruct:ichor_slime_ball',
                 substrate: 'slimy_dirt',
                 sap: 'tconstruct:blood',
-                amount: 25
+                rate: { living: 25, dead: 4 }
             }
         ]
     }

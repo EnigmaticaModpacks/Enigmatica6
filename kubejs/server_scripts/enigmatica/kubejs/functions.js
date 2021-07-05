@@ -46,6 +46,16 @@ function wrapArray(array) {
     return utils.listOf(array).toArray();
 }
 
+function getStrippedLog(value) {
+    let strippedLog = air;
+    for (var i = 0; i < buildWoodVariants.length; i++) {
+        if (buildWoodVariants[i].logBlock === value) {
+            strippedLog = buildWoodVariants[i].logBlockStripped;
+        }
+    }
+    return strippedLog;
+}
+
 const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),
     unificationBlacklistEntry('quartz', 'storage_block')

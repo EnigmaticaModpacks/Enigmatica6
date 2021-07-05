@@ -12,6 +12,9 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
+    event.remove({ type: 'industrialforegoing:fluid_extractor' });
+    event.remove({ type: 'thermal:tree_extractor' });
+
     event.remove({ mod: 'prettypipes' });
     event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
