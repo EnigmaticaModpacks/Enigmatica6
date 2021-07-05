@@ -200,6 +200,36 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'astralsorcery:altar/observatory'
+        },
+        {
+            output: Item.of('resourcefulbees:t4_apiary', 1),
+            pattern: ['__B__', '_C_D_', 'E_A_E', '_D_C_', '__B__'],
+            key: {
+                A: { item: 'resourcefulbees:t3_apiary'},
+                B: Item.of('naturesaura:effect_powder', {effect: 'naturesaura:animal'}).toJson(),
+                C: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                D: { item: 'resourcefulbees:honey_fluid_bucket' },
+                E: { item: 'astralsorcery:illumination_powder' }
+            },
+            relay_inputs: [
+                { item: 'naturesaura:token_euphoria' },
+                { tag: 'botania:runes/lust' },
+                { item: 'ars_nouveau:ritual_fertility' }
+            ],
+            altar_type: 3,
+            duration: 600,
+            starlight: 3200,
+            focus_constellation: 'astralsorcery:aevitas',
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'resourcefulbees:t4_apiary'
         }
     ];
 

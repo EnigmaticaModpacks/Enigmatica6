@@ -31,13 +31,16 @@
 	stalkerHuntsAnimals = false
 	#Should the Wilden Defender attack animals?
 	defenderHuntsAnimals = false
-	#Dimensions where hostile mobs will not spawn. Ex: minecraft:overworld. Run /forge dimensions for a list.
-	dimensionBlacklist = []
+	#Dimensions where hostile mobs will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
+	dimensionBlacklist = ["compactmachines:compact_world", "atum:atum", "mythicbotany:alfheim", "undergarden:undergarden"]
 	#Archwood forest spawn weight
 	#Range: > 0
 	archwoodForest = 3
 	#Crystallizer output item. Do not use a wrong ID!
 	crystallizer_output = "emendatusenigmatica:arcane_gem"
+	#How often Drygmys spawn
+	#Range: 0 ~ 100
+	drygmyWeight = 3
 
 #Mana
 [mana]

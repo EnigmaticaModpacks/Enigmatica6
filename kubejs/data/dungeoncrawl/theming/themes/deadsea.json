@@ -1,0 +1,105 @@
+{
+    "type": "theme",
+    "id": 1001,
+    "sub_theme": 2001,
+    "theme": {
+        "normal": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "minecraft:dead_tube_coral_block",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:dead_brain_coral_block"
+                },
+                {
+                    "block": "undergarden:loose_tremblecrust"
+                }
+            ]
+        },
+        "normal_2": {
+            "type": "block",
+            "block": "minecraft:bone_block"
+        },
+        "solid": {
+            "type": "block",
+            "block": "byg:withering_oak_wood"
+        },
+        "floor": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "minecraft:dead_tube_coral_block",
+                    "weight": 2
+                },
+                {
+                    "block": "minecraft:dead_brain_coral_block",
+                    "weight": 2
+                },
+                {
+                    "block": "mekanism:block_salt"
+                }
+            ]
+        },
+        "stairs": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_stairs"
+                },
+                {
+                    "block": "undergarden:tremblecrust_stairs"
+                }
+            ]
+        },
+        "solid_stairs": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_stairs"
+                },
+                {
+                    "block": "undergarden:tremblecrust_stairs"
+                }
+            ]
+        },
+        "material": {
+            "type": "block",
+            "block": "mekanism:block_salt"
+        },
+        "wall": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "undergarden:tremblecrust_wall"
+                },
+                {
+                    "block": "undergarden:tremblecrust_wall"
+                }
+            ]
+        },
+        "slab": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "undergarden:tremblecrust_slab"
+                },
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_slab"
+                }
+            ]
+        },
+        "solid_slab": {
+            "type": "random_block",
+            "blocks": [
+                {
+                    "block": "undergarden:tremblecrust_slab"
+                },
+                {
+                    "block": "upgrade_aquatic:dead_coralstone_slab"
+                }
+            ]
+        }
+    }
+}

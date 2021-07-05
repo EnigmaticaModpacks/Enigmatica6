@@ -1,3 +1,171 @@
+### Enigmatica 6 v0.5.4
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.4.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.4.md)_
+
+### If you're updating from 0.4.x:
+
+We recommend that you start a new world for this update, but old worlds should still work.
+
+Quest progress resets when updating a 0.4.x world to 0.5.x - You will need to delete the `ftbquests` folder from your world.
+
+If you choose to stay with an old world, please make a backup before updating,
+and read the changelog so you're aware of all the changes that could affect your world.
+
+Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
+
+**Changes/Improvements**
+
+-   Starry Bee color changes [\#2610](https://github.com/NillerMedDild/Enigmatica6/pull/2610) ([g0urra](https://github.com/g0urra))
+
+**Bug Fixes**
+
+- Jerrycan uncraftable [\#2612](https://github.com/NillerMedDild/Enigmatica6/issues/2612)
+- Double Maps [\#2607](https://github.com/NillerMedDild/Enigmatica6/issues/2607)
+- Jerry Can fully crashes client when used on water \(Immersive Engineering\) [\#1415](https://github.com/NillerMedDild/Enigmatica6/issues/1415)
+
+### Enigmatica 6 v0.5.3
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.3.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.3.md)_
+
+**Important Note!**
+The Grave mod we use has been changed to Enigmatic Graves, meaning all Graves from the Gravestone Mod will disappear upon updating to 0.5.3
+Please **collect your graves before updating**.
+
+**New Mods**
+
+- [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel)
+- [Enigmatic Graves](https://www.curseforge.com/minecraft/mc-mods/enigmatic-graves)
+
+**Changes/Improvements**
+
+-   Flies spawn less frequently [\#2601](https://github.com/NillerMedDild/Enigmatica6/issues/2601)
+-   FTBChunks: The End can now be claimed and chunkloaded by default (only applies to new worlds)
+-   LogIn Protection extended to 2 minutes [\#2589](https://github.com/NillerMedDild/Enigmatica6/issues/2589)
+-   Merge Wither Skeleton bones [\#2507](https://github.com/NillerMedDild/Enigmatica6/issues/2507)
+-   Set up tags for Occultism Books to allow automation via Refined Storage [\#2544](https://github.com/NillerMedDild/Enigmatica6/pull/2544) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Tag rice as a grain [\#2568](https://github.com/NillerMedDild/Enigmatica6/issues/2568)
+
+**Bug Fixes**
+
+- \[0.5.0\] Crash when generating Tetra structure [\#2436](https://github.com/NillerMedDild/Enigmatica6/issues/2436)
+- \[0.5.0\] Soul Shroom [\#2468](https://github.com/NillerMedDild/Enigmatica6/issues/2468)
+- Blackstone Hammer only accepts Gilded Blackstone [\#2548](https://github.com/NillerMedDild/Enigmatica6/issues/2548)
+- Cobalt Item Frame uncraftable [\#2574](https://github.com/NillerMedDild/Enigmatica6/issues/2574)
+- Dimensional Shard Ore No Overwold Spawns [\#1423](https://github.com/NillerMedDild/Enigmatica6/issues/1423)
+- Doubleclick to search inventory feature no longer present [\#2578](https://github.com/NillerMedDild/Enigmatica6/issues/2578)
+- Flourite can't be crafted with pulverizer [\#2600](https://github.com/NillerMedDild/Enigmatica6/issues/2600)
+- In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
+- Multiple chunks are unable to be enriched [\#2579](https://github.com/NillerMedDild/Enigmatica6/issues/2579)
+- Occultism/Mekanism Duplication Glitch [\#2250](https://github.com/NillerMedDild/Enigmatica6/issues/2250)
+- Paraglider tip still exist [\#2554](https://github.com/NillerMedDild/Enigmatica6/issues/2554)
+- Potassium Nitrate Chunk+ enrichment chamber recipe has been removed [\#2564](https://github.com/NillerMedDild/Enigmatica6/issues/2564)
+- Powered Resistive Heater freezes game [\#2573](https://github.com/NillerMedDild/Enigmatica6/issues/2573)
+- Pretty Pipe + Tinkers Drain = Server Crash [\#2570](https://github.com/NillerMedDild/Enigmatica6/issues/2570)
+- Re-added [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
+- Terrasteel Cannot be Crafted Using Terrestrial Honeycombs in a Mana Infuser [\#2595](https://github.com/NillerMedDild/Enigmatica6/issues/2595)
+- Tetra axes can't be used to craft sticks [\#2551](https://github.com/NillerMedDild/Enigmatica6/issues/2551)
+- Tinker's Construct axe consumed when crafting sticks [\#2550](https://github.com/NillerMedDild/Enigmatica6/issues/2550)
+- TOP/Mekanism interaction "Waiting for server" is back. [\#2596](https://github.com/NillerMedDild/Enigmatica6/issues/2596)
+
+**Removed Mods**
+
+- [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
+- [TOP Addons](https://www.curseforge.com/minecraft/mc-mods/top-addons)
+
+### Enigmatica 6 v0.5.2
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.2.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.2.md)_
+
+### If you're updating from 0.4.x:
+
+We recommend that you start a new world for this update, but old worlds should still work.
+If you choose to stay with an old world, please make a backup before updating,
+and read the changelog so you're aware of all the changes that could affect your world.
+
+Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
+
+**Changes/Improvements**
+
+-   Set up tags for Occultism Books to allow automation via RS [\#2544](https://github.com/NillerMedDild/Enigmatica6/pull/2544) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug Fixes**
+
+-   In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
+
+### Enigmatica 6 v0.5.1
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.1.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.1.md)_
+
+**New Mods**
+
+-   [Better Biome Blend](https://www.curseforge.com/minecraft/mc-mods/better-biome-blend)
+-   [Just Enough Calculation](https://www.curseforge.com/minecraft/mc-mods/just-enough-calculation)
+-   [TOP Addons](https://www.curseforge.com/minecraft/mc-mods/top-addons)
+-   [The Official Enigmatica Resource Pack](https://www.curseforge.com/minecraft/texture-packs/the-official-enigmatica-resource-pack-16x16)
+
+**Changes/Improvements**
+
+-   Add Cobalt to IF Laser Drill [\#2427](https://github.com/NillerMedDild/Enigmatica6/pull/2427) ([MuteTiefling](https://github.com/MuteTiefling))
+-   adds generic bee icon to in-world spawned bees in journeymap [\#2447](https://github.com/NillerMedDild/Enigmatica6/pull/2447) ([theboo](https://github.com/theboo))
+-   Add ways to obtain various BYG nether items such as mushrooms [\#2493](https://github.com/NillerMedDild/Enigmatica6/pull/2493) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[Worldgen\] Bigger Beaches [\#2531](https://github.com/NillerMedDild/Enigmatica6/pull/2531) ([yagoplx](https://github.com/yagoplx))
+-   \[Worldgen\] Spawn player at world center by default [\#2533](https://github.com/NillerMedDild/Enigmatica6/pull/2533) ([yagoplx](https://github.com/yagoplx))
+-   \[Worldgen\] Tweak biome warp for biome transition effect [\#2532](https://github.com/NillerMedDild/Enigmatica6/pull/2532) ([yagoplx](https://github.com/yagoplx))
+-   Clarify quest text from Shift+Click to Sneak+Click [\#2505](https://github.com/NillerMedDild/Enigmatica6/pull/2505) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Clarify quest text from Shift+Click to Sneak+Click [\#2506](https://github.com/NillerMedDild/Enigmatica6/pull/2506) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Double the Output for the Production of D-T Fuel in the Chemical Infuser [\#2525](https://github.com/NillerMedDild/Enigmatica6/issues/2525)
+-   Increased Cobalt Ore Spawn Weight
+-   Mekanism Fusion Fuel Production Buff [\#2529](https://github.com/NillerMedDild/Enigmatica6/pull/2529) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Normalize output quantities for crafting drawers [\#2480](https://github.com/NillerMedDild/Enigmatica6/pull/2480) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Phrasing in Tinker's Anvil description [\#2521](https://github.com/NillerMedDild/Enigmatica6/issues/2521)
+-   Re-add Ingot/Gem to Dust recipe unification [\#2457](https://github.com/NillerMedDild/Enigmatica6/pull/2457) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Reduce default spawn rates for Archwood Forest biome [\#2485](https://github.com/NillerMedDild/Enigmatica6/issues/2485)
+-   Replace "shift right click" with "crouch right click" in all quests. [\#2504](https://github.com/NillerMedDild/Enigmatica6/issues/2504)
+-   Replace obsolete hammer reward with a potion [\#2434](https://github.com/NillerMedDild/Enigmatica6/pull/2434) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Slight Change to MekaSuit Helmet Quest [\#2475](https://github.com/NillerMedDild/Enigmatica6/issues/2475)
+-   Update Meka Suite Helm Description to call attention to it's Magic Damage Protection [\#2481](https://github.com/NillerMedDild/Enigmatica6/pull/2481) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Update Tinker's Anvil description and allowed blocks [\#2524](https://github.com/NillerMedDild/Enigmatica6/pull/2524) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Wither Bone Unification [\#2514](https://github.com/NillerMedDild/Enigmatica6/pull/2514) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Bug Fixes**
+
+-   Advanced Peripherals Computer Scientist Villiger Name [\#2449](https://github.com/NillerMedDild/Enigmatica6/issues/2449)
+-   Animal Harvesting Quest Description [\#2519](https://github.com/NillerMedDild/Enigmatica6/issues/2519)
+-   Ars Nouveau questline cannot be completed due to unobtainable Tome of Blood [\#2487](https://github.com/NillerMedDild/Enigmatica6/issues/2487)
+-   Ars Nouveau Quests - Adjust Tome of Blood quest to accept new books [\#2490](https://github.com/NillerMedDild/Enigmatica6/pull/2490) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[0.5.0\] Ars Nouveau mobs spawn in Atum and Undergarden dimensions [\#2513](https://github.com/NillerMedDild/Enigmatica6/issues/2513)
+-   \[0.5.0\] minecraft:nether_bricks is missing \#forge:netherbricks tag [\#2432](https://github.com/NillerMedDild/Enigmatica6/issues/2432)
+-   \[0.5.0\] Obsolete Vanilla Hammer quest reward [\#2431](https://github.com/NillerMedDild/Enigmatica6/issues/2431)
+-   \[0.5.0\] Pulverizer Osmium Ingot to Dust Recipe [\#2456](https://github.com/NillerMedDild/Enigmatica6/issues/2456)
+-   \[0.5.0\] Skeleton Bee has no breeding ingredient [\#2500](https://github.com/NillerMedDild/Enigmatica6/issues/2500)
+-   \[0.5.0\] Soul Shroom [\#2468](https://github.com/NillerMedDild/Enigmatica6/issues/2468)
+-   \[0.5.0\] Thermal Rubber [\#2452](https://github.com/NillerMedDild/Enigmatica6/issues/2452)
+-   \[Issue\] \[Resourceful Bees\] Hellish Zombees can sometimes break your portal [\#2483](https://github.com/NillerMedDild/Enigmatica6/issues/2483)
+-   Cannot make tetra hammers with most stones [\#2538](https://github.com/NillerMedDild/Enigmatica6/issues/2538)
+-   Fixed Mekanism Crusher Recipes Missing [\#2517](https://github.com/NillerMedDild/Enigmatica6/pull/2517) ([MVethana](https://github.com/MVethana))
+-   Fix Skeleton Bee breeding item being gone [\#2502](https://github.com/NillerMedDild/Enigmatica6/pull/2502) ([TemperedFool](https://github.com/TemperedFool))
+-   Glowstone bee in world spawning has no Biome [\#2451](https://github.com/NillerMedDild/Enigmatica6/issues/2451)
+-   Increase Cobalt spawn rate in The Nether [\#2439](https://github.com/NillerMedDild/Enigmatica6/issues/2439)
+-   Issue with level-type in Dev version [\#2424](https://github.com/NillerMedDild/Enigmatica6/issues/2424)
+-   Manuals in Akashic Tome do not have titles [\#2494](https://github.com/NillerMedDild/Enigmatica6/issues/2494)
+-   Mekanism Crusher Recipes Missing [\#2516](https://github.com/NillerMedDild/Enigmatica6/issues/2516)
+-   Mekanism enriched tin results in resource loop [\#2510](https://github.com/NillerMedDild/Enigmatica6/issues/2510)
+-   Mobs have weird names [\#2462](https://github.com/NillerMedDild/Enigmatica6/issues/2462)
+-   No recipe in JEI for volcanic accumulator from ARS [\#2441](https://github.com/NillerMedDild/Enigmatica6/issues/2441)
+-   Project Vibrant Journeys frogs spawn despite being disabled in config [\#2488](https://github.com/NillerMedDild/Enigmatica6/issues/2488)
+-   Quests dont work if in /ftbteam [\#2455](https://github.com/NillerMedDild/Enigmatica6/issues/2455)
+-   Recipe Oversight for String? [\#2464](https://github.com/NillerMedDild/Enigmatica6/issues/2464)
+-   Repair BYG Biome Removals in Bees [\#2491](https://github.com/NillerMedDild/Enigmatica6/pull/2491) ([TemperedFool](https://github.com/TemperedFool))
+-   Restore \#forge:netherbricks tag to nether bricks [\#2433](https://github.com/NillerMedDild/Enigmatica6/pull/2433) ([MrBazlow](https://github.com/MrBazlow))
+-   Reword Animal Harvesting Quest Description [\#2520](https://github.com/NillerMedDild/Enigmatica6/pull/2520) ([MVethana](https://github.com/MVethana))
+-   Server crashes upon player joining. [\#2420](https://github.com/NillerMedDild/Enigmatica6/issues/2420)
+-   Sleep Mod in Multiplayer causes time to be set to Day in Hammock [\#2241](https://github.com/NillerMedDild/Enigmatica6/issues/2241)
+-   Some recipe issues [\#2482](https://github.com/NillerMedDild/Enigmatica6/issues/2482)
+-   The Ars Nouveau Crystalizer has no recipe [\#2498](https://github.com/NillerMedDild/Enigmatica6/issues/2498)
+-   Unyeet yeeted expert recipes in normal [\#2444](https://github.com/NillerMedDild/Enigmatica6/pull/2444) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Vanilla mobs not spawning or extremely rare. [\#2537](https://github.com/NillerMedDild/Enigmatica6/issues/2537)
+-   Wormhole potion drink crashes game [\#1150](https://github.com/NillerMedDild/Enigmatica6/issues/1150)
+
 ### Enigmatica 6 v0.5.0
 
 _Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.0.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.0.md)_
@@ -6,13 +174,145 @@ We recommend that you start a new world for this update, but old worlds should s
 If you choose to stay with an old world, please make a backup before updating,
 and read the changelog so you're aware of all the changes that could affect your world.
 
+Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
+
 **New Mods**
+
+-   [Atum 2: Return to the Sands](https://www.curseforge.com/minecraft/mc-mods/atum)
+-   [Chipped](https://www.curseforge.com/minecraft/mc-mods/chipped)
+-   [Collective](https://www.curseforge.com/minecraft/mc-mods/collective)
+-   [Cycle Paintings](https://www.curseforge.com/minecraft/mc-mods/cycle-paintings)
+-   [Entity Culling](https://www.curseforge.com/minecraft/mc-mods/entity-culling)
+-   [Environmental](https://www.curseforge.com/minecraft/mc-mods/environmental)
+-   [FramedBlocks](https://www.curseforge.com/minecraft/mc-mods/framedblocks)
+-   [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
+-   [Integrated Proxy](https://www.curseforge.com/minecraft/mc-mods/integrated-proxy)
+-   [JourneyMap](https://www.curseforge.com/minecraft/mc-mods/journeymap)
+-   [Login Protection](https://www.curseforge.com/minecraft/mc-mods/login-protection)
+-   [MrCrayfish's Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-furniture-mod)
+-   [MrCrayfish's More Furniture Mod](https://www.curseforge.com/minecraft/mc-mods/mrcrayfish-more-furniture-mod)
+-   [Personality](https://www.curseforge.com/minecraft/mc-mods/personality)
+-   [Pretty Pipes: Fluids](https://www.curseforge.com/minecraft/mc-mods/pretty-pipes-fluids)
+-   [Runelic](https://www.curseforge.com/minecraft/mc-mods/runelic)
+-   [Sound Device Options](https://www.curseforge.com/minecraft/mc-mods/more-sound-config)
+-   [Tinkers Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)
+-   [Trofers](https://www.curseforge.com/minecraft/mc-mods/trofers)
 
 **Improvements/Changes**
 
+-   Additional Tetra Hammers [\#2341](https://github.com/NillerMedDild/Enigmatica6/issues/2341)
+-   Add Cobalt to IF Laser Drill [#2424](https://github.com/NillerMedDild/Enigmatica6/pull/2427) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add Tinkers Bees [\#2392](https://github.com/NillerMedDild/Enigmatica6/pull/2392) ([TemperedFool](https://github.com/TemperedFool))
+-   Adventure/BountyBoard [\#1460](https://github.com/NillerMedDild/Enigmatica6/issues/1460)
+-   Adventure Quests Updates [\#2339](https://github.com/NillerMedDild/Enigmatica6/pull/2339) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Akashic Tome update [\#2355](https://github.com/NillerMedDild/Enigmatica6/pull/2355) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Allow colored honey blocks in tier 4 beehive recipe [\#2380](https://github.com/NillerMedDild/Enigmatica6/issues/2380)
+-   Ars Nouveau Quest Updates and Immersive Petroleum Integration [\#2311](https://github.com/NillerMedDild/Enigmatica6/pull/2311) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Astral Sorcery - Rock Crystal Ore retexture [\#2322](https://github.com/NillerMedDild/Enigmatica6/pull/2322) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   \[0.4.8\] Better End Stones Stonecutting [\#1911](https://github.com/NillerMedDild/Enigmatica6/issues/1911)
+-   \[Enigmatics 6 0.4.14 \] Possible Recipe oversight [\#2347](https://github.com/NillerMedDild/Enigmatica6/issues/2347)
+-   BetterEnd stones added to stonecutter [\#2343](https://github.com/NillerMedDild/Enigmatica6/pull/2343) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Buff Create Paper recipe [\#2357](https://github.com/NillerMedDild/Enigmatica6/pull/2357) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Change Rock Crystal Ore to Rock Crystal Cluster to prevent it feeling out of place in the midst of non-vanilla stone [\#2306](https://github.com/NillerMedDild/Enigmatica6/issues/2306)
+-   Clay blocks to clay balls missing recipe? [\#2169](https://github.com/NillerMedDild/Enigmatica6/issues/2169)
+-   Create Alchemy Table recipe for Cured Rubber [\#2338](https://github.com/NillerMedDild/Enigmatica6/pull/2338) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create Crafting Table Clay to Clay Ball recipe [\#2318](https://github.com/NillerMedDild/Enigmatica6/pull/2318) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Create Windmill Quest - clarify the difference between glue and slime [\#2382](https://github.com/NillerMedDild/Enigmatica6/pull/2382) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Disable Loss of Stinger for all Bees [\#2280](https://github.com/NillerMedDild/Enigmatica6/pull/2280) ([MuteTiefling](https://github.com/MuteTiefling))
+-   EE 1.2.5 Texture Unification [\#2396](https://github.com/NillerMedDild/Enigmatica6/pull/2396) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Intro quests for Atum [\#2345](https://github.com/NillerMedDild/Enigmatica6/pull/2345) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Latex Unification [\#2320](https://github.com/NillerMedDild/Enigmatica6/pull/2320) ([MuteTiefling](https://github.com/MuteTiefling))
+-   More Bee Updates [\#2407](https://github.com/NillerMedDild/Enigmatica6/pull/2407) ([TemperedFool](https://github.com/TemperedFool))
+-   More RFTools Spawner Additions [\#2317](https://github.com/NillerMedDild/Enigmatica6/pull/2317) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Mountains [\#1638](https://github.com/NillerMedDild/Enigmatica6/issues/1638)
+-   On scaling tetra tools and weapons to the end-game and OP-ness of Mekanism tools [\#2301](https://github.com/NillerMedDild/Enigmatica6/issues/2301)
+-   Paper rebalance [\#2356](https://github.com/NillerMedDild/Enigmatica6/pull/2356) ([MuteTiefling](https://github.com/MuteTiefling))
+-   PP Fluids: Rewrite all recipes [\#2334](https://github.com/NillerMedDild/Enigmatica6/issues/2334)
+-   Pretty Fluid Pipes Recipe Thermalization [\#2337](https://github.com/NillerMedDild/Enigmatica6/pull/2337) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Quest updates: Mythic Botany and Thermal [\#2277](https://github.com/NillerMedDild/Enigmatica6/issues/2277)
+-   Re-enable/fix Compact Machine quests. Add quest to point to Occultism Storage. [\#2367](https://github.com/NillerMedDild/Enigmatica6/pull/2367) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Replace FTB Chunks Map with JourneyMap [\#1340](https://github.com/NillerMedDild/Enigmatica6/issues/1340)
+-   Revise Ars Nouveau Quests [\#2304](https://github.com/NillerMedDild/Enigmatica6/issues/2304)
+-   Set up Create Infinite Fluid blacklist [\#2385](https://github.com/NillerMedDild/Enigmatica6/pull/2385) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Trophies for Completing Challenges [\#2412](https://github.com/NillerMedDild/Enigmatica6/issues/2412)
+-   Unify rubber & latex [\#1592](https://github.com/NillerMedDild/Enigmatica6/issues/1592)
+-   Update Botania and Thermal Quests [\#2290](https://github.com/NillerMedDild/Enigmatica6/pull/2290) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Updated biome weights for 0.5.0 [\#2291](https://github.com/NillerMedDild/Enigmatica6/pull/2291) ([theboo](https://github.com/theboo))
+-   Update Mob Spawning Blacklists [\#2344](https://github.com/NillerMedDild/Enigmatica6/pull/2344) ([MuteTiefling](https://github.com/MuteTiefling))
+-   valid apiary block suggestions [\#2249](https://github.com/NillerMedDild/Enigmatica6/issues/2249)
+
 **Bug Fixes**
 
+-   "Crouching" when someone teleports [\#1527](https://github.com/NillerMedDild/Enigmatica6/issues/1527)
+-   Add Hive UpgradeRecipes [\#2342](https://github.com/NillerMedDild/Enigmatica6/pull/2342) ([TemperedFool](https://github.com/TemperedFool))
+-   Alex's Mobs Falconry Hood crashes the client upon use. [\#2307](https://github.com/NillerMedDild/Enigmatica6/issues/2307)
+-   All slimes have a full-sized hitbox [\#1619](https://github.com/NillerMedDild/Enigmatica6/issues/1619)
+-   Apiary Recipe Deletes Bees [\#2303](https://github.com/NillerMedDild/Enigmatica6/issues/2303)
+-   Ars Nouveau using mod specific mana gems [\#1163](https://github.com/NillerMedDild/Enigmatica6/issues/1163)
+-   Astral Sorcery Mineral Enrichment Perk can turn most stones into ores [\#1147](https://github.com/NillerMedDild/Enigmatica6/issues/1147)
+-   Astral Sorcery structures doesn't generate in the amplified world type [\#948](https://github.com/NillerMedDild/Enigmatica6/issues/948)
+-   Astral structures not generating Lootr chests [\#1412](https://github.com/NillerMedDild/Enigmatica6/issues/1412)
+-   \[0.4.8\] Astral Sorcery rock/celestial crystals can be duped with a mekanism cardboard box [\#1847](https://github.com/NillerMedDild/Enigmatica6/issues/1847)
+-   \[0.4.9\] Lag spike when crossing claimed chunks while travelling west [\#2077](https://github.com/NillerMedDild/Enigmatica6/issues/2077)
+-   \[0.4.14\] Sophisticated Backpacks & Tetra interactions causing crashes [\#2323](https://github.com/NillerMedDild/Enigmatica6/issues/2323)
+-   Book o' Enchanting trinket is obtainable but non functional [\#2326](https://github.com/NillerMedDild/Enigmatica6/issues/2326)
+-   Bug Carrot Crate Quark spawn in digit dimlet key5 \(RfTOOLS Dimensions\) [\#2305](https://github.com/NillerMedDild/Enigmatica6/issues/2305)
+-   Can't copy banners [\#2279](https://github.com/NillerMedDild/Enigmatica6/issues/2279)
+-   Create Pewter [\#2399](https://github.com/NillerMedDild/Enigmatica6/issues/2399)
+-   Enigmatica 6 0.4.8 - Extra storage crafters loose their name on pickup [\#2035](https://github.com/NillerMedDild/Enigmatica6/issues/2035)
+-   Fix Entangled configs not being applied [\#2373](https://github.com/NillerMedDild/Enigmatica6/pull/2373) ([TemperedFool](https://github.com/TemperedFool))
+-   Fixes Conflicting Glass Smelting from BYG [\#2349](https://github.com/NillerMedDild/Enigmatica6/pull/2349) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix server_files/start-server.sh [\#2403](https://github.com/NillerMedDild/Enigmatica6/pull/2403) ([Infinoid](https://github.com/Infinoid))
+-   Fix Soupy Bee [\#2379](https://github.com/NillerMedDild/Enigmatica6/pull/2379) ([TemperedFool](https://github.com/TemperedFool))
+-   Issue with level-type in Dev version [\#2424](https://github.com/NillerMedDild/Enigmatica6/issues/2424)
+-   Minecraft:nether_bricks is missing \#forge:netherbricks tag [\#2432](https://github.com/NillerMedDild/Enigmatica6/issues/2432)
+-   New worlds ignore difficulty setting when made [\#1462](https://github.com/NillerMedDild/Enigmatica6/issues/1462)
+-   No milk block recipe and liquid milk recipe [\#2378](https://github.com/NillerMedDild/Enigmatica6/issues/2378)
+-   Obsolete Vanilla Hammer quest reward [\#2431](https://github.com/NillerMedDild/Enigmatica6/issues/2431)
+-   Prismarine Shard dupe bug [\#2359](https://github.com/NillerMedDild/Enigmatica6/issues/2359)
+-   Remove book o enchanting trinket from random pool [\#2328](https://github.com/NillerMedDild/Enigmatica6/pull/2328) ([theboo](https://github.com/theboo))
+-   RFtools Modular Storage Dupe Bug [\#2389](https://github.com/NillerMedDild/Enigmatica6/issues/2389)
+-   Separate Prismarine and Prismarine Bricks in Stonecutter [\#2366](https://github.com/NillerMedDild/Enigmatica6/pull/2366) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Server crashes upon player joining. [\#2420](https://github.com/NillerMedDild/Enigmatica6/issues/2420)
+-   Shrinking device makes x-ray possible [\#2387](https://github.com/NillerMedDild/Enigmatica6/issues/2387)
+-   Some Tetra Levels are Unobtainable [\#2143](https://github.com/NillerMedDild/Enigmatica6/issues/2143)
+-   T4 Hive/T1 Apiary use all Honey Blocks [\#2381](https://github.com/NillerMedDild/Enigmatica6/pull/2381) ([TemperedFool](https://github.com/TemperedFool))
+-   Uraninite Ore through RFtools dimension can't be utilized [\#2292](https://github.com/NillerMedDild/Enigmatica6/issues/2292)
+-   Waiting for server [\#2354](https://github.com/NillerMedDild/Enigmatica6/issues/2354)
+
 **Removed Mods**
+
+-   [Additional Lights](https://www.curseforge.com/minecraft/mc-mods/additional-lights)
+-   [Advanced Hook Launchers](https://www.curseforge.com/minecraft/mc-mods/advanced-hook-launchers)
+-   [Autumnity](https://www.curseforge.com/minecraft/mc-mods/autumnity)
+-   [Bamboo Everything (Forge)](https://www.curseforge.com/minecraft/mc-mods/bamboo-everything-forge)
+-   [Bedspreads (Forge)](https://www.curseforge.com/minecraft/mc-mods/bedspreads)
+-   [BlockCarpentry](https://www.curseforge.com/minecraft/mc-mods/blockcarpentry)
+-   [BountifulBaubles](https://www.curseforge.com/minecraft/mc-mods/bountifulbaubles)
+-   [Builders Crafts & Additions (Forge)](https://www.curseforge.com/minecraft/mc-mods/buildersaddition)
+-   [Campfire Torches](https://www.curseforge.com/minecraft/mc-mods/campfire-torches)
+-   [Chocolate Fix](https://www.curseforge.com/minecraft/mc-mods/chocolate-fix)
+-   [Crafting Station](https://www.curseforge.com/minecraft/mc-mods/crafting-station)
+-   [EmbellishCraft](https://www.curseforge.com/minecraft/mc-mods/embellishcraft)
+-   [Ender Mail](https://www.curseforge.com/minecraft/mc-mods/ender-mail)
+-   [ForgeEndertech](https://www.curseforge.com/minecraft/mc-mods/forgeendertech)
+-   [ItemZoom](https://www.curseforge.com/minecraft/mc-mods/itemzoom)
+-   [JAOPCA](https://www.curseforge.com/minecraft/mc-mods/jaopca)
+-   [Mapper Base](https://www.curseforge.com/minecraft/mc-mods/mapper-base)
+-   [Miner's Helmet](https://www.curseforge.com/minecraft/mc-mods/miners-helmet)
+-   [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
+-   [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
+-   [MoreVanillaLib](https://www.curseforge.com/minecraft/mc-mods/morevanillalib)
+-   [Morpheus](https://www.curseforge.com/minecraft/mc-mods/morpheus)
+-   [OldJavaWarning](https://www.curseforge.com/minecraft/mc-mods/oldjavawarning)
+-   [Paragliders](https://www.curseforge.com/minecraft/mc-mods/paragliders)
+-   [Reload Audio Driver (RAD) [Forge]](https://www.curseforge.com/minecraft/mc-mods/reload-audio-driver-rad)
+-   [Server Tab Info](https://www.curseforge.com/minecraft/mc-mods/server-tab-info)
+-   [Simple Tomb](https://www.curseforge.com/minecraft/mc-mods/simple-tomb)
+-   [Storage for ComputerCraft](https://www.curseforge.com/minecraft/mc-mods/storage-for-computercraft)
+-   [Vanilla Excavators [Forge]](https://www.curseforge.com/minecraft/mc-mods/vanilla-excavators-forge)
+-   [Vanilla Hammers [Forge]](https://www.curseforge.com/minecraft/mc-mods/vanilla-hammers-forge)
+-   [YUNG's Better Strongholds (Forge)](https://www.curseforge.com/minecraft/mc-mods/yungs-better-strongholds)
 
 ### Enigmatica 6 v0.4.14
 

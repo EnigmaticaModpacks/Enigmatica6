@@ -82,6 +82,43 @@ onEvent('recipes', (event) => {
                 A: '#forge:wax',
                 B: '#forge:string'
             }
+        },
+        {
+            output: Item.of('prettypipes:pipe', 12),
+            pattern: ['ABA'],
+            key: {
+                A: '#forge:ingots/tin',
+                B: '#forge:glass/colorless'
+            }
+        },
+        {
+            output: Item.of('ppfluids:fluid_pipe', 12),
+            pattern: [' C ', 'ABA', ' C '],
+            key: {
+                A: '#forge:ingots/tin',
+                B: '#forge:glass/colorless',
+                C: 'thermal:cured_rubber'
+            }
+        },
+        {
+            output: 'mythicbotany:alfsteel_pylon',
+            pattern: [' n ', 'npn', ' g '],
+            key: {
+                n: 'mythicbotany:alfsteel_nugget',
+                g: 'minecraft:ghast_tear',
+                p: 'botania:gaia_pylon'
+            },
+            id: 'mythicbotany:alfsteel_pylon'
+        },
+        {
+            output: 'botania:gaia_pylon',
+            pattern: [' D ', 'EPE', ' D '],
+            key: {
+                P: 'botania:mana_pylon',
+                D: 'botania:pixie_dust',
+                E: '#forge:ingots/elementium'
+            },
+            id: 'mythicbotany:modified_gaia_pylon_with_alfsteel'
         }
     ];
 

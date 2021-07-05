@@ -117,14 +117,24 @@ onEvent('recipes', (event) => {
                     industrialforegoing: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'industrialforegoing:industrial_foregoing' }
+                        tag: {
+                            'akashictome:displayName': { text: "Industrial Foregoing's Manual" },
+                            'patchouli:book': 'industrialforegoing:industrial_foregoing',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Industrial Foregoing\'s Manual"}]}'
+                            }
+                        }
                     },
                     tetra: {
                         id: 'tetra:holo',
                         Count: 1,
                         tag: {
-                            'holo/core_material': 'frame/dim',
+                            'akashictome:displayName': { text: 'Holosphere' },
                             'holo/frame': 'holo/frame',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Holosphere"}]}'
+                            },
+                            'holo/core_material': 'frame/dim',
                             'holo/core': 'holo/core',
                             'holo/frame_material': 'core/ancient'
                         }
@@ -132,59 +142,273 @@ onEvent('recipes', (event) => {
                     resourcefulbees: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }
+                        tag: {
+                            'akashictome:displayName': { text: 'Fifty Shades of Bees' },
+                            'patchouli:book': 'resourcefulbees:fifty_shades_of_bees',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Fifty Shades of Bees"}]}'
+                            }
+                        }
                     },
-                    theoneprobe: { id: 'theoneprobe:probenote', Count: 1 },
-                    astralsorcery: { id: 'astralsorcery:tome', Count: 1 },
-                    ftbquests: { id: 'ftbquests:book', Count: 1 },
-                    alexsmobs: { id: 'alexsmobs:animal_dictionary', Count: 1 },
-                    immersiveengineering: { id: 'immersiveengineering:manual', Count: 1 },
-                    eidolon: { id: 'eidolon:codex', Count: 1 },
-                    botania: { id: 'botania:lexicon', Count: 1, tag: {} },
-                    thermal: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'thermal:guidebook' } },
+                    astralsorcery: {
+                        id: 'astralsorcery:tome',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Astral Tome' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Astral Tome"}]}'
+                            }
+                        }
+                    },
+                    theoneprobe: {
+                        id: 'theoneprobe:probenote',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'The One Probe Read Me' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"The One Probe Read Me"}]}'
+                            }
+                        }
+                    },
+                    ftbquests: {
+                        id: 'ftbquests:book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Quest Book' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Quest Book"}]}'
+                            }
+                        }
+                    },
+                    alexsmobs: {
+                        id: 'alexsmobs:animal_dictionary',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Animal Dictionary' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Animal Dictionary"}]}'
+                            }
+                        }
+                    },
+                    immersiveengineering: {
+                        id: 'immersiveengineering:manual',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: "Engineer's Manual" },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Engineer\'s Manual"}]}'
+                            }
+                        }
+                    },
+                    eidolon: {
+                        id: 'eidolon:codex',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Ars Ecclesia' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Ars Ecclesia"}]}'
+                            }
+                        }
+                    },
+                    botania: {
+                        id: 'botania:lexicon',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Lexica Botania' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Lexica Botania"}]}'
+                            }
+                        }
+                    },
+                    sushigocrafting: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Becoming an Itamae (Sushi Go Crafting Manual)' },
+                            'patchouli:book': 'sushigocrafting:sushigocrafting',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Becoming an Itamae (Sushi Go Crafting Manual)"}]}'
+                            }
+                        }
+                    },
+                    thermal: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Thermalpedia' },
+                            'patchouli:book': 'thermal:guidebook',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Thermalpedia"}]}'
+                            }
+                        }
+                    },
                     patchouli: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'patchouli:modded_for_dummies' }
+                        tag: {
+                            'akashictome:displayName': { text: 'Modded for Dummies' },
+                            'patchouli:book': 'patchouli:modded_for_dummies',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Modded for Dummies"}]}'
+                            }
+                        }
                     },
-                    rftoolsbase: { id: 'rftoolsbase:manual', Count: 1 },
+                    rftoolsbase: {
+                        id: 'rftoolsbase:manual',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Technology Guide' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Technology Guide"}]}'
+                            }
+                        }
+                    },
+                    integrateddynamics: {
+                        id: 'integrateddynamics:on_the_dynamics_of_integration',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'On the Dynamics of Integration' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"On the Dynamics of Integration"}]}'
+                            }
+                        }
+                    },
                     cookingforblockheads: {
                         id: 'cookingforblockheads:crafting_book',
-                        Count: 1
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Cooking for Blockheads II' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Cooking for Blockheads II"}]}'
+                            }
+                        }
                     },
-                    powah: { id: 'powah:book', Count: 1 },
+                    powah: {
+                        id: 'powah:book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Manual (Powah!)' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Manual (Powah!)"}]}'
+                            }
+                        }
+                    },
                     pneumaticcraft: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'pneumaticcraft:book' }
+                        tag: {
+                            'akashictome:displayName': { text: 'PNC:R Manual' },
+                            'patchouli:book': 'pneumaticcraft:book',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"PNC:R Manual"}]}'
+                            }
+                        }
                     },
                     naturesaura: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'naturesaura:book' }
+                        tag: {
+                            'akashictome:displayName': { text: 'Book of Natural Aura' },
+                            'patchouli:book': 'naturesaura:book',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Book of Natural Aura"}]}'
+                            }
+                        }
                     },
-                    pedestals: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'pedestals:manual' } },
-                    transport: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'transport:guide' } },
+                    pedestals: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Pedestals' },
+                            'patchouli:book': 'pedestals:manual',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Pedestals"}]}'
+                            }
+                        }
+                    },
+                    transport: {
+                        id: 'patchouli:guide_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Advanced Transport' },
+                            'patchouli:book': 'transport:guide',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Advanced Transport"}]}'
+                            }
+                        }
+                    },
                     engineersdecor: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'engineersdecor:engineersdecor_manual' }
+                        tag: {
+                            'akashictome:displayName': { text: "Engineer's Decor" },
+                            'patchouli:book': 'engineersdecor:engineersdecor_manual',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Engineer\'s Decor"}]}'
+                            }
+                        }
                     },
-                    occultism: { id: 'occultism:dictionary_of_spirits', Count: 1 },
-                    solcarrot: { id: 'solcarrot:food_book', Count: 1 },
+                    occultism: {
+                        id: 'occultism:dictionary_of_spirits',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Dictionary of Spirits' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Dictionary of Spirits"}]}'
+                            }
+                        }
+                    },
+                    solcarrot: {
+                        id: 'solcarrot:food_book',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Food Book' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Food Book"}]}'
+                            }
+                        }
+                    },
                     modularrouters: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'modularrouters:book' }
+                        tag: {
+                            'akashictome:displayName': { text: 'Modular Routers Manual' },
+                            'patchouli:book': 'modularrouters:book',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Modular Routers Manual"}]}'
+                            }
+                        }
                     },
-                    ars_nouveau: { id: 'ars_nouveau:worn_notebook', Count: 1 },
-                    bloodmagic: { id: 'patchouli:guide_book', Count: 1, tag: { 'patchouli:book': 'bloodmagic:guide' } },
-                    integrateddynamics: { id: 'integrateddynamics:on_the_dynamics_of_integration', Count: 1 },
-                    betterendforge: { id: 'betterendforge:guidebook', Count: 1 },
-                    sushigocrafting: {
+                    ars_nouveau: {
+                        id: 'ars_nouveau:worn_notebook',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'Worn Notebook' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Worn Notebook"}]}'
+                            }
+                        }
+                    },
+                    bloodmagic: {
                         id: 'patchouli:guide_book',
                         Count: 1,
-                        tag: { 'patchouli:book': 'sushigocrafting:sushigocrafting' }
+                        tag: {
+                            'akashictome:displayName': { text: 'Sanguine Scientiem' },
+                            'patchouli:book': 'bloodmagic:guide',
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"Sanguine Scientiem"}]}'
+                            }
+                        }
+                    },
+                    betterendforge: {
+                        id: 'betterendforge:guidebook',
+                        Count: 1,
+                        tag: {
+                            'akashictome:displayName': { text: 'The End for Dummies' },
+                            display: {
+                                Name: '{"translate":"akashictome.sudo_name","with":[{"color":"green","text":"The End for Dummies"}]}'
+                            }
+                        }
                     }
                 }
             }),
@@ -212,7 +436,7 @@ onEvent('recipes', (event) => {
             inputs: ['minecraft:sugar_cane', 'minecraft:sugar_cane', 'minecraft:sugar_cane']
         },
         {
-            output: Item.of('supplementaries:flax_seeds', 1),
+            output: 'supplementaries:flax_seeds',
             inputs: ['supplementaries:flax']
         },
         {
@@ -318,9 +542,26 @@ onEvent('recipes', (event) => {
             id: 'mythicbotany:wither_aconite_floating'
         },
         {
-            output: 'eidolon:pewter_blend',
+            output: Item.of('eidolon:pewter_blend', 2),
             inputs: ['#forge:dusts/lead', '#forge:dusts/iron'],
             id: 'eidolon:pewter_blend'
+        },
+        {
+            output: Item.of('minecraft:string', 3),
+            inputs: ['#forge:crops/kenaf', '#forge:crops/kenaf', '#forge:crops/kenaf'],
+            id: 'simplefarming:string'
+        },
+        {
+            output: Item.of('minecraft:string', 3),
+            inputs: ['#forge:crops/flax', '#forge:crops/flax', '#forge:crops/flax']
+        },
+        {
+            output: Item.of('minecraft:green_dye', 2),
+            inputs: ['#forge:dyes/blue', '#forge:dyes/yellow']
+        },
+        {
+            output: Item.of('minecraft:brown_dye', 2),
+            inputs: ['#forge:dyes/red', '#forge:dyes/green']
         }
     ];
 

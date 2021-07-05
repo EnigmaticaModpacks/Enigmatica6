@@ -118,6 +118,49 @@ var itemsToHide = [
 
     'eidolon:tallow',
 
+    'emendatusenigmatica:sulfur_ore',
+    'emendatusenigmatica:cinnabar_ore',
+    'emendatusenigmatica:dimensional_crushed',
+    'emendatusenigmatica:arcane_crushed',
+    'emendatusenigmatica:potassium_nitrate_crushed',
+    'emendatusenigmatica:sulfur_crushed',
+    'emendatusenigmatica:apatite_crushed',
+    'emendatusenigmatica:cinnabar_crushed',
+    'emendatusenigmatica:bitumen_crushed',
+    'emendatusenigmatica:fluorite_crushed',
+    'emendatusenigmatica:certus_quartz_crushed',
+    'emendatusenigmatica:ancient_debris_crushed',
+    'emendatusenigmatica:quartz_crushed',
+    'emendatusenigmatica:redstone_crushed',
+    'emendatusenigmatica:lapis_crushed',
+    'emendatusenigmatica:emerald_crushed',
+    'emendatusenigmatica:diamond_crushed',
+    'emendatusenigmatica:coal_crushed',
+    'emendatusenigmatica:molten_zinc_bucket',
+    'emendatusenigmatica:molten_uranium_bucket',
+    'emendatusenigmatica:molten_tin_bucket',
+    'emendatusenigmatica:molten_steel_bucket',
+    'emendatusenigmatica:molten_silver_bucket',
+    'emendatusenigmatica:molten_osmium_bucket',
+    'emendatusenigmatica:molten_nickel_bucket',
+    'emendatusenigmatica:molten_lead_bucket',
+    'emendatusenigmatica:molten_iron_bucket',
+    'emendatusenigmatica:molten_invar_bucket',
+    'emendatusenigmatica:molten_gold_bucket',
+    'emendatusenigmatica:molten_fluix_bucket',
+    'emendatusenigmatica:molten_emerald_bucket',
+    'emendatusenigmatica:molten_electrum_bucket',
+    'emendatusenigmatica:molten_diamond_bucket',
+    'emendatusenigmatica:molten_copper_bucket',
+    'emendatusenigmatica:molten_constantan_bucket',
+    'emendatusenigmatica:molten_cobalt_bucket',
+    'emendatusenigmatica:molten_charged_certus_quartz_bucket',
+    'emendatusenigmatica:molten_certus_quartz_bucket',
+    'emendatusenigmatica:molten_bronze_bucket',
+    'emendatusenigmatica:molten_brass_bucket',
+    'emendatusenigmatica:molten_aluminum_bucket',
+    'emendatusenigmatica:molten_ancient_debris_bucket',
+
     'environmental:cherry_pie',
     'environmental:apple_pie',
 
@@ -215,6 +258,10 @@ var itemsToHide = [
     'thermal:press_packing_2x2_die',
     'thermal:press_unpacking_die',
     'thermal:rubber',
+    'thermal:niter',
+    'thermal:cinnabar',
+    'thermal:apatite',
+    'thermal:sulfur',
 
     'quark:bonded_ravager_hide',
     'quark:ravager_hide',
@@ -222,6 +269,38 @@ var itemsToHide = [
     'quark:crate',
     'quark:magnet',
     'quark:soul_compass'
+];
+
+const fluidsToHide = [
+    'cofh_core:honey',
+    'create:honey',
+    'thermal:crude_oil',
+    'immersivepetroleum:oil',
+    'emendatusenigmatica:molten_zinc',
+    'emendatusenigmatica:molten_quartz',
+    'emendatusenigmatica:molten_uranium',
+    'emendatusenigmatica:molten_tin',
+    'emendatusenigmatica:molten_steel',
+    'emendatusenigmatica:molten_silver',
+    'emendatusenigmatica:molten_osmium',
+    'emendatusenigmatica:molten_nickel',
+    'emendatusenigmatica:molten_lead',
+    'emendatusenigmatica:molten_iron',
+    'emendatusenigmatica:molten_invar',
+    'emendatusenigmatica:molten_gold',
+    'emendatusenigmatica:molten_fluix',
+    'emendatusenigmatica:molten_emerald',
+    'emendatusenigmatica:molten_electrum',
+    'emendatusenigmatica:molten_diamond',
+    'emendatusenigmatica:molten_copper',
+    'emendatusenigmatica:molten_constantan',
+    'emendatusenigmatica:molten_cobalt',
+    'emendatusenigmatica:molten_charged_certus_quartz',
+    'emendatusenigmatica:molten_certus_quartz',
+    'emendatusenigmatica:molten_bronze',
+    'emendatusenigmatica:molten_brass',
+    'emendatusenigmatica:molten_aluminum',
+    'emendatusenigmatica:molten_ancient_debris'
 ];
 
 /*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
@@ -241,8 +320,12 @@ const recipesToHide = [
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
             'botania:spark',
+            'botania:natura_pylon',
+            'botania:mana_pylon',
             'mythicbotany:wither_aconite_floating',
-            'mythicbotany:raindeletia_floating'
+            'mythicbotany:raindeletia_floating',
+            'mythicbotany:modified_gaia_pylon_with_alfsteel',
+            'mythicbotany:alfsteel_pylon'
         ]
     },
     {
@@ -309,7 +392,6 @@ var regexHide = [
     /emendatusenigmatica:\w+fluix/,
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard/,
-    /betterendforge:\w+_anvil/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/
 ];

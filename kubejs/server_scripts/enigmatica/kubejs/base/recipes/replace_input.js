@@ -6,6 +6,7 @@ onEvent('recipes', (event) => {
             replaceWith: '#forge:chests/wooden'
         }
     ];
+    event.replaceInput({}, 'architects_palette:withered_bone', '#forge:bones/wither');
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
     event.replaceInput({}, 'betterendforge:thallasium_ore', '#forge:ores/thallasium');
@@ -30,7 +31,8 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'betterendforge:ender_dust', '#forge:dusts/ender');
     event.replaceInput({}, 'minecraft:iron_ore', '#forge:ores/iron');
     event.replaceInput({}, 'minecraft:gold_ore', '#forge:ores/gold');
-    event.replaceInput({}, 'upgrade_aquatic:beachgrass', '#enigmatica:crafting_materials/beach_grass');
+    event.replaceInput({}, 'upgrade_aquatic:beachgrass', '#forge:beach_grass');
+    event.replaceInput({}, 'environmental:cattail', '#forge:cattails');
     event.replaceInput({}, 'pneumaticcraft:wheat_flour', '#forge:dusts/flour');
     event.replaceInput({}, 'create:wheat_flour', '#forge:dusts/flour');
     event.replaceInput({}, 'pedestals:dustflour', '#forge:dusts/flour');
@@ -44,6 +46,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
     event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
+    event.replaceInput({}, 'tconstruct:cobalt_nugget', '#forge:nuggets/cobalt');
     event.replaceInput(
         {
             not: [{ type: 'ars_nouveau:glyph_recipe' }]
@@ -137,6 +140,11 @@ onEvent('recipes', (event) => {
         { id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' },
         '#forge:ingots/nether_brick',
         'minecraft:nether_brick'
+    );
+    event.replaceInput(
+        { id: 'thermal:machine/press/unpacking/press_wool_unpacking' },
+        'minecraft:white_wool',
+        '#forge:wool'
     );
 
     sharedDies.forEach((die) => {

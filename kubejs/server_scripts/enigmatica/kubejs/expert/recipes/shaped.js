@@ -1,4 +1,4 @@
-onEvent('recipes', (event) => {
+/*onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+ /*   const newRecipes = [
         {
             output: 'thermal:machine_frame',
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -594,7 +594,7 @@ onEvent('recipes', (event) => {
             output: 'eidolon:worktable',
             pattern: ['AAA', 'BCB', 'DDD'],
             key: {
-                A: 'minecraft:red_carpet',
+                A: 'atum:linen_carpet_red',
                 B: 'eidolon:pewter_inlay',
                 C: 'minecraft:conduit',
                 D: 'ars_nouveau:purple_archwood_wood'
@@ -643,6 +643,108 @@ onEvent('recipes', (event) => {
                 C: 'botania:corporea_block'
             },
             id: 'botania:corporea_crystal_cube'
+        },
+        {
+            output: 'immersiveengineering:workbench',
+            pattern: ['A  ', 'BCC', 'E D'],
+            key: {
+                A: '#forge:rods/steel',
+                B: '#forge:plates/steel',
+                C: '#forge:treated_wood_slab',
+                D: 'immersiveengineering:treated_fence',
+                E: 'immersiveengineering:craftingtable'
+            },
+            id: 'immersiveengineering:crafting/workbench'
+        },
+        {
+            output: Item.of('immersiveengineering:alloybrick', 4),
+            pattern: ['CAC', 'ABA', 'CAC'],
+            key: {
+                A: '#forge:ingots/brick',
+                B: 'kubejs:smoldering_lapis_lazuli_compound',
+                C: 'immersiveengineering:blastbrick'
+            },
+            id: 'immersiveengineering:crafting/alloybrick'
+        },
+        {
+            output: 'industrialforegoing:machine_frame_pity',
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: 'immersiveengineering:concrete_leaded',
+                B: 'thermal:machine_frame',
+                C: 'create:andesite_casing'
+            },
+            id: 'industrialforegoing:machine_frame_pity'
+        },
+        {
+            output: Item.of('prettypipes:pipe', 8),
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: '#forge:plates/tin',
+                B: '#forge:glass/colorless',
+                C: 'create:shaft'
+            }
+        },
+        {
+            output: Item.of('ppfluids:fluid_pipe', 8),
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: 'thermal:cured_rubber',
+                B: '#forge:glass/colorless',
+                C: 'create:shaft'
+            }
+        },
+        {
+            output: 'minecraft:observer',
+            pattern: ['BBB', 'ACA', 'BBB'],
+            key: {
+                A: 'create:andesite_alloy',
+                B: 'minecraft:stone_slab',
+                C: 'minecraft:comparator'
+            },
+            id: 'minecraft:observer'
+        },
+        {
+            output: 'eidolon:basic_belt',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'betterendforge:silk_fiber',
+                B: 'betterendforge:leather_stripe',
+                C: '#forge:gems/mana'
+            },
+            id: 'eidolon:basic_belt'
+        },
+        {
+            output: 'eidolon:crucible',
+            pattern: ['A A', 'ABA', 'AAA'],
+            key: {
+                A: '#forge:ingots/pewter',
+                B: 'minecraft:conduit'
+            },
+            id: 'eidolon:crucible'
+        },
+        {
+            //Gate T1 Hive Upgrade behind starting Nature's Aura
+            output: 'resourcefulbees:t1_hive_upgrade',
+            pattern: ['ACA', 'ABA', 'ACA'],
+            key: {
+                A: 'minecraft:grass',
+                B: '#minecraft:planks',
+                C: 'naturesaura:gold_powder'
+            },
+            id: 'resourcefulbees:t1_hive_upgrade'
+        },
+        {
+            output: 'naturesaura:offering_table',
+            pattern: ['BAB', 'CBD', 'EEE'],
+            key: {
+                A: '#forge:ingots/infused_iron',
+                B: 'naturesaura:infused_stone',
+                C: 'naturesaura:token_fear',
+                D: 'naturesaura:token_sorrow',
+                E: 'naturesaura:ancient_bark'
+            },
+            id: 'naturesaura:offering_table'
         }
     ];
 
@@ -654,3 +756,4 @@ onEvent('recipes', (event) => {
         }
     });
 });
+*/

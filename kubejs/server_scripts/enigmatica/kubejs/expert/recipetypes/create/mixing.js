@@ -13,6 +13,20 @@ onEvent('recipes', (event) => {
             superheated: true,
             inputs: ['#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble'],
             output: Item.of('astralsorcery:black_marble_raw', 4)
+        },
+        {
+            heated: true,
+            inputs: [
+                '#forge:dusts/lapis',
+                '#forge:dusts/lapis',
+                '#forge:dusts/lapis',
+                '#forge:dusts/lapis',
+                '#forge:dusts/lapis',
+                '#forge:dusts/quartz',
+                '#forge:dusts/quartz',
+                '#forge:tar'
+            ],
+            output: 'kubejs:coarse_lapis_lazuli_compound'
         }
     ];
 

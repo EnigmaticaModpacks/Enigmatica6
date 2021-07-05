@@ -25,9 +25,24 @@ onEvent('recipes', (event) => {
             replaceWith: Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })
         },
         {
-            filter: { id: 'occultism:crafting/iesnium_pickaxe' },
-            toReplace: '#forge:rods/wooden',
-            replaceWith: 'betterendforge:leather_wrapped_stick'
+            filter: { id: 'atum:scarab_from_crunchy_scarab' },
+            toReplace: '#forge:ingots/gold',
+            replaceWith: '#forge:nuggets/nebu'
+        },
+        {
+            filter: { id: 'occultism:crafting/wormhole_frame' },
+            toReplace: '#forge:ingots/gold',
+            replaceWith: 'atum:nebu_chain'
+        },
+        {
+            filter: { id: 'occultism:crafting/storage_remote_inert' },
+            toReplace: '#forge:ingots/gold',
+            replaceWith: '#forge:ingots/nebu'
+        },
+        {
+            filter: { id: 'occultism:crafting/storage_remote_inert' },
+            toReplace: 'minecraft:stone_button',
+            replaceWith: '#forge:nuggets/silver'
         }
     ];
 

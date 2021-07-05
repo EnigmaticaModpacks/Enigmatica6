@@ -64,7 +64,10 @@ onEvent('recipes', (event) => {
 
         'astralsorcery:infuser/gold_ore',
 
+        'betterendforge:gunpowder_from_sulphur',
+
         'bloodmagic:smelting/ingot_netherite_scrap',
+        'bloodmagic:alchemytable/gunpowder',
 
         'botania:fertilizer_dye',
 
@@ -129,11 +132,13 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
         'immersiveengineering:crusher/bone_meal',
-        'immersiveengineering:crafting/jerrycan',
 
         'immersivepetroleum:distillationtower/oilcracking',
 
         'mekanism:crushing/stone/to_cobblestone',
+        'mekanism:enriching/enriched/tin',
+        'mekanism:processing/bronze/dust/from_infusing',
+        'mekanism:processing/bronze/ingot/from_infusing',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
@@ -145,6 +150,8 @@ onEvent('recipes', (event) => {
 
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',
+
+        'tconstruct:tools/modifiers/wither_bone_conversion',
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
@@ -167,6 +174,8 @@ onEvent('recipes', (event) => {
         'thermal:signalum_dust_4',
         'thermal:rubber_3',
         'thermal:smelting/cured_rubber_from_smelting',
+        'thermal:storage/sulfur_block',
+        'thermal:gunpowder_4',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
@@ -197,7 +206,8 @@ onEvent('recipes', (event) => {
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
-        /atum:.*dye$/
+        /atum:.*dye$/,
+        /thermal:compat\/\w+\/\w+_ore/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -242,19 +252,7 @@ onEvent('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-/*
-    event.remove({
-        input: '#forge:ores',
-        mod: 'create',
-        type: 'create:milling'
-    });
 
-    event.remove({
-        input: '#forge:ores',
-        mod: 'create',
-        type: 'create:crushing'
-    });
-*/
     event.remove({
         mod: 'occultism',
         type: 'occultism:miner'

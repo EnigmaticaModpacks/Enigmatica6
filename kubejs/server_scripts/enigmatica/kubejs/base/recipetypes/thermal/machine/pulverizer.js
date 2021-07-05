@@ -125,7 +125,17 @@ onEvent('recipes', (event) => {
                 input: 'minecraft:sugar_cane',
                 outputs: [Item.of('minecraft:sugar', 2), Item.of('minecraft:sugar').chance(0.1)],
                 experience: 0.1
-            }
+            },
+            {
+                input: '#forge:rods/blaze',
+                outputs: [
+                  Item.of('minecraft:blaze_powder', 3),
+                  Item.of('emendatusenigmatica:sulfur_dust').chance(0.25)
+                ],
+                id: 'thermal:machine/pulverizer/pulverizer_blaze_rod',
+                experience: 0.2
+            },
+
         ]
     };
 

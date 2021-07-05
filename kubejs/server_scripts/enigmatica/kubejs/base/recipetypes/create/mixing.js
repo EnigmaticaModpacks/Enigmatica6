@@ -88,20 +88,25 @@ onEvent('recipes', (event) => {
                 output: Fluid.of('thermal:syrup', 25)
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/tin'],
-                output: Item.of('emendatusenigmatica:bronze_ingot', 4)
+                inputs: [
+                    '#create:crushed_ores/copper',
+                    '#create:crushed_ores/copper',
+                    '#create:crushed_ores/copper',
+                    '#create:crushed_ores/tin'
+                ],
+                output: Item.of('emendatusenigmatica:bronze_crushed', 4)
             },
             {
-                inputs: ['#forge:ingots/copper', '#forge:ingots/nickel'],
-                output: Item.of('emendatusenigmatica:constantan_ingot', 2)
+                inputs: ['#create:crushed_ores/copper', '#create:crushed_ores/nickel'],
+                output: Item.of('emendatusenigmatica:constantan_crushed', 2)
             },
             {
-                inputs: ['#forge:ingots/gold', '#forge:ingots/silver'],
-                output: Item.of('emendatusenigmatica:electrum_ingot', 2)
+                inputs: ['#create:crushed_ores/gold', '#create:crushed_ores/silver'],
+                output: Item.of('emendatusenigmatica:electrum_crushed', 2)
             },
             {
-                inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/nickel'],
-                output: Item.of('emendatusenigmatica:invar_ingot', 3)
+                inputs: ['#create:crushed_ores/iron', '#create:crushed_ores/iron', '#create:crushed_ores/nickel'],
+                output: Item.of('emendatusenigmatica:invar_crushed', 3)
             },
             {
                 inputs: ['#forge:ingots/iron', '#forge:ingots/lead'],
@@ -109,58 +114,95 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: ['#forge:ingots/iron', '#forge:dusts/ender'],
-                output: Item.of('betterendforge:terminite_ingot')
+                output: Item.of('betterendforge:terminite_ingot', 1)
+            },
+            {
+                inputs: ['#forge:ingots/thallasium', '#forge:dusts/ender'],
+                output: Item.of('betterendforge:terminite_ingot', 1)
+            },
+            {
+                inputs: ['#forge:ingots/iron', 'tconstruct:blood_slime_ball', 'minecraft:clay_ball'],
+                output: Item.of('tconstruct:pig_iron_ingot', 2)
+            },
+            {
+                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/gold'],
+                output: Item.of('tconstruct:rose_gold_ingot', 4)
+            },
+            {
+                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/copper', '#forge:glass'],
+                output: Item.of('tconstruct:tinkers_bronze_ingot', 4)
+            },
+            {
+                inputs: ['#forge:ingots/iron', 'tconstruct:sky_slime_ball', 'tconstruct:seared_brick'],
+                output: Item.of('tconstruct:slimesteel_ingot', 2)
             }
         ],
         recipes_superheated: [
             {
                 inputs: [
                     '#forge:dusts/coal_coke',
-                    '#forge:ingots/iron',
-                    '#forge:ingots/iron',
-                    '#forge:ingots/iron',
-                    '#forge:ingots/iron'
+                    '#create:crushed_ores/iron',
+                    '#create:crushed_ores/iron',
+                    '#create:crushed_ores/iron',
+                    '#create:crushed_ores/iron'
                 ],
-                output: Item.of('emendatusenigmatica:steel_ingot', 4)
+                output: Item.of('emendatusenigmatica:steel_crushed', 4)
             },
             {
                 inputs: [
-                    '#forge:ingots/copper',
-                    '#forge:ingots/copper',
-                    '#forge:ingots/copper',
-                    '#forge:ingots/silver',
+                    '#create:crushed_ores/copper',
+                    '#create:crushed_ores/copper',
+                    '#create:crushed_ores/copper',
+                    '#create:crushed_ores/silver',
                     '#forge:dusts/redstone',
                     '#forge:dusts/redstone',
                     '#forge:dusts/redstone',
                     '#forge:dusts/redstone'
                 ],
-                output: Item.of('emendatusenigmatica:signalum_ingot', 4)
+                output: Item.of('emendatusenigmatica:signalum_crushed', 4)
             },
             {
                 inputs: [
-                    '#forge:ingots/tin',
-                    '#forge:ingots/tin',
-                    '#forge:ingots/tin',
-                    '#forge:ingots/silver',
+                    '#create:crushed_ores/tin',
+                    '#create:crushed_ores/tin',
+                    '#create:crushed_ores/tin',
+                    '#create:crushed_ores/silver',
                     '#forge:dusts/glowstone',
                     '#forge:dusts/glowstone'
                 ],
-                output: Item.of('emendatusenigmatica:lumium_ingot', 4)
+                output: Item.of('emendatusenigmatica:lumium_crushed', 4)
             },
             {
                 inputs: [
-                    '#forge:ingots/lead',
-                    '#forge:ingots/lead',
-                    '#forge:ingots/lead',
+                    '#create:crushed_ores/lead',
+                    '#create:crushed_ores/lead',
+                    '#create:crushed_ores/lead',
                     '#forge:dusts/diamond',
                     '#forge:ender_pearls',
                     '#forge:ender_pearls'
                 ],
-                output: Item.of('emendatusenigmatica:enderium_ingot', 2)
+                output: Item.of('emendatusenigmatica:enderium_crushed', 2)
             },
             {
                 inputs: ['#forge:ingots/netherite', 'betterendforge:terminite_ingot'],
-                output: Item.of('betterendforge:aeternium_ingot')
+                output: Item.of('betterendforge:aeternium_ingot', 1)
+            },
+            {
+                inputs: ['#forge:ingots/copper', '#forge:ingots/copper', '#forge:ingots/cobalt', '#forge:obsidian'],
+                output: Item.of('tconstruct:hepatizon_ingot', 4)
+            },
+            {
+                inputs: [
+                    '#forge:ingots/cobalt',
+                    '#forge:ingots/cobalt',
+                    '#forge:ingots/cobalt',
+                    '#forge:ingots/netherite_scrap'
+                ],
+                output: Item.of('tconstruct:manyullyn_ingot', 4)
+            },
+            {
+                inputs: ['#forge:ingots/gold', '#forge:ingots/cobalt', 'minecraft:magma_cream'],
+                output: Item.of('tconstruct:queens_slime_ingot', 2)
             }
         ]
     };

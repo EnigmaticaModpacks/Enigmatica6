@@ -5,6 +5,10 @@ onEvent('jei.information', (event) => {
             description: ['Obtained by right-clicking a Wheel of Cheese.']
         },
         {
+            items: ['farmersdelight:ham'],
+            description: ['Obtained by killing Pigs or Hoglins with a knife.']
+        },
+        {
             items: ['astralsorcery:stardust'],
             description: [
                 'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
@@ -145,6 +149,14 @@ onEvent('jei.information', (event) => {
         {
             items: ['architects_palette:warpstone'],
             description: ['Obtained by tossing Clay Blocks through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['byg:warped_cactus'],
+            description: ['Obtained by tossing Cactus through a Nether Portal from the Overworld']
+        },
+        {
+            items: ['byg:warped_coral', 'byg:warped_coral_fan', 'byg:warped_coral'],
+            description: ['Obtained by tossing any coral through a Nether Portal from the Overworld']
         },
         {
             items: ['architects_palette:chiseled_abyssaline_bricks'],

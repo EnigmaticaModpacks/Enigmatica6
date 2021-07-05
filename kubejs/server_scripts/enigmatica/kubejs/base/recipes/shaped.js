@@ -929,26 +929,6 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:water_condensator'
         },
         {
-            output: 'mythicbotany:alfsteel_pylon',
-            pattern: [' n ', 'npn', ' g '],
-            key: {
-                n: 'mythicbotany:alfsteel_nugget',
-                g: 'minecraft:ghast_tear',
-                p: 'botania:gaia_pylon'
-            },
-            id: 'mythicbotany:alfsteel_pylon'
-        },
-        {
-            output: 'botania:gaia_pylon',
-            pattern: [' D ', 'EPE', ' D '],
-            key: {
-                P: 'botania:mana_pylon',
-                D: 'botania:pixie_dust',
-                E: '#forge:ingots/elementium'
-            },
-            id: 'mythicbotany:modified_gaia_pylon_with_alfsteel'
-        },
-        {
             output: Item.of('industrialforegoing:tinydryrubber', 3),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
@@ -1288,15 +1268,6 @@ onEvent('recipes', (event) => {
             B: 'prettypipes:medium_crafting_module',
             C: '#forge:ingots/electrum'
         }),
-        shapedRecipe(Item.of('prettypipes:pipe', 12), ['   ', 'ABA', '   '], {
-            A: '#forge:ingots/tin',
-            B: '#forge:glass/colorless'
-        }),
-        shapedRecipe(Item.of('ppfluids:fluid_pipe', 12), [' C ', 'ABA', ' C '], {
-            A: '#forge:ingots/tin',
-            B: '#forge:glass/colorless',
-            C: 'thermal:cured_rubber'
-        }),
         shapedRecipe(Item.of('prettypipes:item_terminal', 1), [' B ', 'CAD', 'EFE'], {
             A: 'thermal:machine_frame',
             B: 'minecraft:observer',
@@ -1420,9 +1391,6 @@ onEvent('recipes', (event) => {
         shapedRecipe(Item.of('quark:turf', 1), ['A', 'A'], {
             A: 'quark:turf_slab'
         }),
-        shapedRecipe(Item.of('minecraft:string', 3), ['AA', 'A '], {
-            A: 'supplementaries:flax'
-        }),
 
         //ID Overrides
         shapedRecipe(
@@ -1512,11 +1480,11 @@ onEvent('recipes', (event) => {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_full_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+        event.shaped(Item.of('storagedrawers:oak_full_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
             A: wood.plankBlock,
             C: '#forge:chests'
         });
@@ -1524,11 +1492,11 @@ onEvent('recipes', (event) => {
             A: wood.slabBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_2'), ['ACA', 'AAA', 'ACA'], {
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_2', 2), ['ACA', 'AAA', 'ACA'], {
             A: wood.slabBlock,
             C: '#forge:chests'
         });
-        event.shaped(Item.of('storagedrawers:oak_half_drawers_4'), ['CAC', 'AAA', 'CAC'], {
+        event.shaped(Item.of('storagedrawers:oak_half_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
             A: wood.slabBlock,
             C: '#forge:chests'
         });

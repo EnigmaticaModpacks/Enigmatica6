@@ -25,8 +25,6 @@ onEvent('recipes', (event) => {
         let rod = getPreferredItemInTag(Ingredient.of(`#forge:rods/${material}`)).id;
         let plate = getPreferredItemInTag(Ingredient.of(`#forge:plates/${material}`)).id;
 
-        let liquid = Fluid.of(`emendatusenigmatica:molten_${material}`);
-
         astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard);
 
         betterend_alloys(event, material, ore, ingot);
@@ -38,9 +36,9 @@ onEvent('recipes', (event) => {
         create_metal_ore_processing(event, material, ore, crushed_ore, ingot, nugget);
         create_gem_ore_processing(event, material, ore, gem, dust, shard);
         create_ingot_gem_milling(event, material, ingot, dust, gem);
+        create_metal_block_processing(event, material, crushed_ore, ingot, nugget);
 
-        //TODO
-        emendatus_liquid_casting(event, material, ore, gem, liquid);
+        emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate);
         emendatus_hammer_crushing(event, material, ore, dust);
         emendatus_shapeless_transform(event, material, ore, chunk);
 
@@ -50,6 +48,8 @@ onEvent('recipes', (event) => {
         immersiveengineering_hammer_crushing(event, material, ore, dust);
         immersiveengineering_gem_crushing(event, material, dust, gem);
 
+        mekanism_ingot_gem_crushing(event, material, ingot, dust, gem);
+        mekanism_gem_ore_processing(event, material, ore, dust, gem, shard);
         mekanism_metal_ore_processing(
             event,
             material,
@@ -70,19 +70,19 @@ onEvent('recipes', (event) => {
         occultism_metal_ore_crushing(event, material, ore, dust, ingot);
         occultism_ingot_gem_crushing(event, material, ingot, dust, gem);
 
-        pedestals_ore_crushing(event, material, ore, dust, shard, gem);
+        pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem);
+        pedestals_metal_ore_crushing(event, material, ore, ingot, dust);
         pedestals_ingot_gem_crushing(event, material, ingot, dust, gem);
 
         thermal_metal_ore_pulverizing(event, material, ore, dust, ingot);
         thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
+        thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
         thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate);
         thermal_gem_casting(event, material, gem, gear, rod, plate);
 
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
         tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
     });
-    //TODO
-    function emendatus_liquid_casting(event, material, ore, gem, liquid) {}
 
     function astralsorcery_ore_processing_infuser(event, material, ore, ingot, gem, shard) {
         if (ore == air) {
@@ -212,18 +212,16 @@ onEvent('recipes', (event) => {
         if (ore == air) {
             return;
         }
-        var materialProperties;
 
         try {
-            materialProperties = gemProcessingProperties[material].bloodmagic;
+            var materialProperties = gemProcessingProperties[material],
+                count = materialProperties.bloodmagic.count,
+                inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`];
         } catch (err) {
             return;
         }
 
-        var count = materialProperties.count,
-            inputs = ['#bloodmagic:arc/cuttingfluid', `#forge:ores/${material}`];
-
-        switch (gemProcessingProperties[material].output) {
+        switch (materialProperties.output) {
             case 'dust':
                 output = dust;
                 break;
@@ -246,7 +244,7 @@ onEvent('recipes', (event) => {
         }
 
         var input,
-            output = Item.of(dust, 1);
+            output = dust;
         if (ingot != air) {
             type = 'ingot';
             input = `#forge:ingots/${material}`;
@@ -319,39 +317,27 @@ onEvent('recipes', (event) => {
             .crushing(outputs, input)
             .processingTime(processingTime)
             .id(`create:crushing/${material}_ore`);
-
-        // Washing
-        (outputs = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)]), (input = crushed_ore);
-
-        event.recipes.create.splashing(outputs, input).id(`create:splashing/crushed_${material}_ore`);
-
-        // Smelting and Blasting
-        outputs = ingot;
-
-        event.blasting(outputs, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
-        event.smelting(outputs, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
     }
 
     function create_gem_ore_processing(event, material, ore, gem, dust, shard) {
         if (ore == air) {
             return;
         }
-        var materialProperties;
 
         try {
-            materialProperties = gemProcessingProperties[material].create;
+            var materialProperties = gemProcessingProperties[material],
+                stoneOutput = materialProperties.stoneOutput,
+                processingTime = materialProperties.create.processingTime,
+                primaryCount = materialProperties.create.primaryCount,
+                secondaryCount = materialProperties.create.secondaryCount,
+                secondaryChance = materialProperties.create.secondaryChance,
+                input = `#forge:ores/${material}`;
         } catch (err) {
             return;
         }
+        console.log(`Create Gem Processing: ${material}`);
 
-        var stoneOutput = materialProperties.stoneOutput,
-            processingTime = materialProperties.processingTime,
-            primaryCount = materialProperties.primaryCount,
-            secondaryCount = materialProperties.secondaryCount,
-            secondaryChance = materialProperties.secondaryChance,
-            input = `#forge:ores/${material}`;
-
-        switch (gemProcessingProperties[material].output) {
+        switch (materialProperties.output) {
             case 'dust':
                 output = dust;
                 break;
@@ -364,10 +350,14 @@ onEvent('recipes', (event) => {
             default:
                 return;
         }
+        let secondaryOutput = output;
+        if (materialProperties.secondary) {
+            secondaryOutput = materialProperties.secondary;
+        }
 
-        var outputs = [
+        let outputs = [
             Item.of(output, primaryCount),
-            Item.of(output, secondaryCount).withChance(secondaryChance),
+            Item.of(secondaryOutput, secondaryCount).withChance(secondaryChance),
             Item.of(stoneOutput).withChance(0.125)
         ];
 
@@ -394,6 +384,117 @@ onEvent('recipes', (event) => {
         }
 
         event.recipes.create.milling(outputs, input).processingTime(processingTime);
+    }
+
+    function create_metal_block_processing(event, material, crushed_ore, ingot, nugget) {
+        if (ingot == air || crushed_ore == air) {
+            return;
+        }
+
+        let output = Item.of(crushed_ore, 5),
+            input = `#forge:storage_blocks/${material}`;
+
+        // Crush Blocks to Crushed Ore
+        event.recipes.create.crushing(output, input).processingTime(400).id(`create:crushing/${material}_block`);
+
+        // Washing
+        output = [Item.of(nugget, 10), Item.of(nugget, 5).withChance(0.5)];
+        input = crushed_ore;
+
+        event.recipes.create.splashing(output, input).id(`create:splashing/crushed_${material}`);
+
+        // Smelting and Blasting
+        output = ingot;
+        input = `#create:crushed_ores/${material}`;
+
+        event.blasting(output, input).xp(0.1).id(`create:blasting/${material}_ingot_from_crushed`);
+        event.smelting(output, input).xp(0.1).id(`create:smelting/${material}_ingot_from_crushed`);
+    }
+
+    function emendatus_item_melting(event, material, ore, block, ingot, nugget, gem, dust, gear, rod, plate) {
+        let modId;
+
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            return;
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
+            return;
+        }
+
+        let recipes = [],
+            fluid = `${modId}:molten_${material}`,
+            temp = 900;
+
+        if (meltingPoints[material]) {
+            temp = meltingPoints[material].temp;
+        }
+
+        if (block != air) {
+            recipes.push({ type: 'block', amount: 1296, input: `forge:storage_blocks/${material}`, time: 171 });
+        }
+        if (gem != air) {
+            recipes.push({ type: 'gem', amount: 144, input: `forge:gems/${material}`, time: 57 });
+        }
+        if (ingot != air) {
+            recipes.push({ type: 'ingot', amount: 144, input: `forge:ingots/${material}`, time: 57 });
+        }
+        if (dust != air) {
+            recipes.push({ type: 'dust', amount: 144, input: `forge:dusts/${material}`, time: 43 });
+        }
+        if (nugget != air) {
+            recipes.push({ type: 'nugget', amount: 16, input: `forge:nuggets/${material}`, time: 19 });
+        }
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, input: `forge:gears/${material}`, time: 114 });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, input: `forge:rods/${material}`, time: 11 });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, input: `forge:plates/${material}`, time: 80 });
+        }
+
+        recipes.forEach((recipe) => {
+            event
+                .custom({
+                    type: 'tconstruct:melting',
+                    ingredient: { tag: recipe.input },
+                    result: { fluid: fluid, amount: recipe.amount },
+                    temperature: temp,
+                    time: 43
+                })
+                .id(`tconstruct:smeltery/melting/metal/${material}/${recipe.type}`);
+        });
+
+        if (ore != air && ingot != air) {
+            var materialProperties, secondaryFluid;
+
+            try {
+                materialProperties = oreProcessingSecondaries[material];
+            } catch (err) {
+                return;
+            }
+
+            if (Fluid.exists(`tconstruct:molten_${materialProperties.secondary}`)) {
+                secondaryFluid = `tconstruct:molten_${materialProperties.secondary}`;
+            } else if (Fluid.exists(`emendatusenigmatica:molten_${materialProperties.secondary}`)) {
+                secondaryFluid = `emendatusenigmatica:molten_${materialProperties.secondary}`;
+            } else {
+                return;
+            }
+
+            event
+                .custom({
+                    type: 'tconstruct:ore_melting',
+                    ingredient: { tag: `forge:ores/${material}` },
+                    result: { fluid: fluid, amount: 144 },
+                    temperature: temp,
+                    time: 98,
+                    byproducts: [{ fluid: secondaryFluid, amount: 48 }]
+                })
+                .id(`tconstruct:smeltery/melting/metal/${material}/ore`);
+        }
     }
 
     function emendatus_hammer_crushing(event, material, ore, dust) {
@@ -461,40 +562,41 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var materialProperties;
         try {
-            materialProperties = gemProcessingProperties[material].immersiveengineering;
+            var materialProperties = gemProcessingProperties[material],
+                primaryCount = materialProperties.immersiveengineering.count,
+                input = `#forge:ores/${material}`,
+                primaryOutput;
         } catch (err) {
             return;
         }
 
-        var input = `#forge:ores/${material}`,
-            output;
-
-        switch (gemProcessingProperties[material].output) {
+        switch (materialProperties.output) {
             case 'dust':
-                output = dust;
+                primaryOutput = dust;
                 break;
             case 'gem':
-                output = gem;
+                primaryOutput = gem;
                 break;
             case 'shard':
-                output = shard;
+                primaryOutput = shard;
                 break;
             default:
                 return;
         }
 
         if (materialProperties.secondary) {
+            let secondaryOutput = materialProperties.secondary,
+                secondaryChance = materialProperties.immersiveengineering.secondaryChance;
             event.recipes.immersiveengineering
-                .crusher(Item.of(output, materialProperties.count), input, [
-                    Item.of(materialProperties.secondary).chance(materialProperties.secondaryChance)
+                .crusher(Item.of(primaryOutput, primaryCount), input, [
+                    Item.of(secondaryOutput).chance(secondaryChance)
                 ])
                 .energy(2000)
                 .id(`immersiveengineering:crusher/ore_${material}`);
         } else {
             event.recipes.immersiveengineering
-                .crusher(Item.of(output, materialProperties.count), input)
+                .crusher(Item.of(primaryOutput, primaryCount), input)
                 .energy(2000)
                 .id(`immersiveengineering:crusher/ore_${material}`);
         }
@@ -525,6 +627,62 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering
             .crusher(primaryOutput, input, [Item.of(secondaryOutput).chance(secondaryChance)])
             .id(`immersiveengineering:crusher/ore_${material}`);
+    }
+
+    function mekanism_ingot_gem_crushing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+
+        var input,
+            output = dust;
+        if (ingot != air) {
+            type = 'ingot';
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+            type = 'gem';
+        } else {
+            return;
+        }
+
+        event.remove({
+            input: input,
+            mod: 'mekanism',
+            type: 'mekanism:crushing'
+        });
+
+        event.recipes.mekanism.crushing(output, input).id(`mekanism:processing/${material}/to_dust`);
+    }
+
+    function mekanism_gem_ore_processing(event, material, ore, dust, gem, shard) {
+        if (ore == air) {
+            return;
+        }
+
+        try {
+            var materialProperties = gemProcessingProperties[material],
+                count = materialProperties.mekanism.count,
+                input = `#forge:ores/${material}`;
+        } catch (err) {
+            return;
+        }
+
+        switch (materialProperties.output) {
+            case 'dust':
+                output = dust;
+                break;
+            case 'gem':
+                output = gem;
+                break;
+            case 'shard':
+                output = shard;
+                break;
+            default:
+                return;
+        }
+
+        event.recipes.mekanism.enriching(Item.of(output, count), input).id(`mekanism:processing/${material}/from_ore`);
     }
 
     function mekanism_metal_ore_processing(
@@ -691,18 +849,16 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var materialProperties;
         try {
-            materialProperties = gemProcessingProperties[material].occultism;
+            var materialProperties = gemProcessingProperties[material],
+                count = materialProperties.occultism.count,
+                input = `forge:ores/${material}`,
+                output;
         } catch (err) {
             return;
         }
 
-        var input = `forge:ores/${material}`,
-            output,
-            count = materialProperties.count;
-
-        switch (gemProcessingProperties[material].output) {
+        switch (materialProperties.output) {
             case 'dust':
                 output = dust;
                 break;
@@ -774,63 +930,67 @@ onEvent('recipes', (event) => {
         });
     }
 
-    function pedestals_ore_crushing(event, material, ore, dust, shard, gem) {
+    function pedestals_gem_ore_crushing(event, material, ore, dust, shard, gem) {
         if (ore == air) {
             return;
         }
-        var count;
-        switch (material) {
-            case 'redstone':
-                count = 6;
+
+        try {
+            var materialProperties = gemProcessingProperties[material],
+                count = materialProperties.pedestals.count,
+                input = `forge:ores/${material}`,
+                output;
+        } catch (err) {
+            return;
+        }
+
+        switch (materialProperties.output) {
+            case 'dust':
+                output = dust;
                 break;
-            case 'coal':
-                count = 4;
+            case 'gem':
+                output = gem;
                 break;
-            case 'lapis':
-                count = 9;
-                break;
-            case 'quartz':
-                count = 3;
-                break;
-            case 'sulfur':
-                count = 6;
-                break;
-            case 'apatite':
-                count = 12;
-                break;
-            case 'fluorite':
-                count = 6;
-                break;
-            case 'dimensional':
-                count = 8;
+            case 'shard':
+                output = shard;
                 break;
             default:
-                count = 2;
+                return;
         }
 
+        event
+            .custom({
+                type: 'pedestals:pedestal_crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count }
+            })
+            .id(`pedestals:pedestal_crushing/dust${material}`);
+    }
+    function pedestals_metal_ore_crushing(event, material, ore, ingot, dust) {
+        if (ore == air || ingot == air) {
+            return;
+        }
         var output,
             input = `forge:ores/${material}`,
-            output = dust;
+            output = dust,
+            count = 2;
 
-        if (shard != air) {
-            output = shard;
-        } else if (gem != air) {
-            output = gem;
-        }
+        event
+            .custom({
+                type: 'occultism:crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count },
+                crushing_time: 100
+            })
+            .id(`occultism:crushing/${material}_dust`);
 
-        event.custom({
-            type: 'pedestals:pedestal_crushing',
-            ingredient: {
-                tag: input
-            },
-            result: {
-                item: output,
-                count: count
-            }
-        });
-        event.remove({
-            id: `pedestals:pedestal_crushing/dust${material}`
-        });
+        event
+            .custom({
+                type: 'pedestals:pedestal_crushing',
+                ingredient: { tag: input },
+                result: { item: output, count: count }
+            })
+            .id(`pedestals:pedestal_crushing/dust${material}`);
     }
 
     function pedestals_ingot_gem_crushing(event, material, ingot, dust, gem) {
@@ -905,66 +1065,92 @@ onEvent('recipes', (event) => {
             return;
         }
 
-        var primaryOutput = dust,
-            stoneOutput = 'minecraft:gravel',
-            primaryCount = 2,
-            secondaryMaterial,
-            input = `#forge:ores/${material}`,
-            experience = 0.2;
+        try {
+            var materialProperties = gemProcessingProperties[material],
+                stoneOutput = materialProperties.stoneOutput,
+                primaryCount = materialProperties.thermal.primaryCount,
+                secondaryCount = materialProperties.thermal.secondaryCount,
+                secondaryChance = materialProperties.thermal.secondaryChance,
+                input = `#forge:ores/${material}`,
+                experience = 0.2;
+        } catch (err) {
+            return;
+        }
 
-        switch (material) {
-            case 'ender':
-                secondaryMaterial = 'ender';
-                stoneOutput = 'betterendforge:endstone_dust';
+        switch (materialProperties.output) {
+            case 'dust':
+                primaryOutput = dust;
+                break;
+            case 'gem':
+                primaryOutput = gem;
+                break;
+            case 'shard':
                 primaryOutput = shard;
-                break;
-            case 'amber':
-                secondaryMaterial = 'amber';
-                stoneOutput = 'betterendforge:endstone_dust';
-                primaryOutput = shard;
-                break;
-            case 'bitumen':
-                secondaryMaterial = 'bitumen';
-                primaryOutput = gem;
-                break;
-            case 'dimensional':
-                secondaryMaterial = 'dimensional';
-                primaryOutput = gem;
-                primaryCount = 8;
-                break;
-            case 'mana':
-                secondaryMaterial = 'mana';
-                primaryOutput = gem;
                 break;
             default:
                 return;
         }
 
-        var secondaryType = 'dusts';
-        if (shard != air) {
-            secondaryType = 'shards';
-        } else if (gem != air) {
-            secondaryType = 'gems';
-        }
+        let secondaryOutput = output;
 
-        var secondaryOutput = getPreferredItemInTag(Ingredient.of(`#forge:${secondaryType}/${secondaryMaterial}`)).id;
+        if (materialProperties.secondary) {
+            secondaryOutput = materialProperties.secondary;
+        }
 
         outputs = [
             Item.of(primaryOutput, primaryCount),
-            Item.of(secondaryOutput).chance(0.1),
+            Item.of(secondaryOutput, secondaryCount).chance(secondaryChance),
             Item.of(stoneOutput).chance(0.2)
         ];
+        /*
+        event.remove({
+            input: input,
+            mod: 'thermal',
+            type: 'thermal:pulverizer'
+        });
+        */
+        event.recipes.thermal
+            .pulverizer(outputs, input)
+            .experience(experience)
+            .id(`thermal:machine/pulverizer/pulverizer_${material}_ore`);
+    }
+
+    function thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem) {
+        if (dust == air) {
+            return;
+        }
+
+        var input,
+            output = dust;
+        if (ingot != air) {
+            type = 'ingot';
+            input = `#forge:ingots/${material}`;
+        } else if (gem != air) {
+            input = `#forge:gems/${material}`;
+            type = 'gem';
+        } else {
+            return;
+        }
 
         event.remove({
             input: input,
             mod: 'thermal',
             type: 'thermal:pulverizer'
         });
-        event.recipes.thermal.pulverizer(outputs, input).experience(experience);
+        event.recipes.thermal.pulverizer(output, input);
     }
 
     function thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || ingot == air) {
+        if (ingot == air) {
+            return;
+        }
+
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -985,7 +1171,7 @@ onEvent('recipes', (event) => {
         recipes.forEach((recipe) => {
             event.recipes.thermal
                 .chiller(recipe.output, [
-                    Fluid.of(`tconstruct:molten_${material}`, recipe.amount),
+                    Fluid.of(`${modId}:molten_${material}`, recipe.amount),
                     `tconstruct:${recipe.type}_cast`
                 ])
                 .energy(recipe.energy)
@@ -994,7 +1180,16 @@ onEvent('recipes', (event) => {
     }
 
     function thermal_gem_casting(event, material, gem, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || gem == air) {
+        if (gem == air) {
+            return;
+        }
+
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -1020,7 +1215,7 @@ onEvent('recipes', (event) => {
         recipes.forEach((recipe) => {
             event.recipes.thermal
                 .chiller(recipe.output, [
-                    Fluid.of(`tconstruct:molten_${material}`, recipe.amount),
+                    Fluid.of(`${modId}:molten_${material}`, recipe.amount),
                     `tconstruct:${recipe.type}_cast`
                 ])
                 .energy(recipe.energy)
@@ -1029,7 +1224,15 @@ onEvent('recipes', (event) => {
     }
 
     function tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || ingot == air) {
+        if (ingot == air) {
+            return;
+        }
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -1059,7 +1262,7 @@ onEvent('recipes', (event) => {
                         },
                         cast_consumed: cast == 'sand' ? true : false,
                         fluid: {
-                            name: `tconstruct:molten_${material}`,
+                            name: `${modId}:molten_${material}`,
                             amount: recipe.amount
                         },
                         result: recipe.output,
@@ -1072,7 +1275,7 @@ onEvent('recipes', (event) => {
             .custom({
                 type: 'tconstruct:casting_basin',
                 fluid: {
-                    name: `tconstruct:molten_${material}`,
+                    name: `${modId}:molten_${material}`,
                     amount: 1296
                 },
                 result: block,
@@ -1082,7 +1285,15 @@ onEvent('recipes', (event) => {
     }
 
     function tconstruct_gem_casting(event, material, block, gem, gear, rod, plate) {
-        if (!Fluid.exists(`tconstruct:molten_${material}`) || gem == air) {
+        if (gem == air) {
+            return;
+        }
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else {
             return;
         }
 
@@ -1115,7 +1326,7 @@ onEvent('recipes', (event) => {
                             tag: `tconstruct:casts/${cast == 'sand' ? 'single_use' : 'multi_use'}/${recipe.type}`
                         },
                         cast_consumed: cast == 'sand' ? true : false,
-                        fluid: { name: `tconstruct:molten_${material}`, amount: recipe.amount },
+                        fluid: { name: `${modId}:molten_${material}`, amount: recipe.amount },
                         result: recipe.output,
                         cooling_time: recipe.cooling
                     })
@@ -1125,7 +1336,7 @@ onEvent('recipes', (event) => {
         event
             .custom({
                 type: 'tconstruct:casting_basin',
-                fluid: { name: `tconstruct:molten_${material}`, amount: 1296 },
+                fluid: { name: `${modId}:molten_${material}`, amount: 1296 },
                 result: block,
                 cooling_time: 193
             })

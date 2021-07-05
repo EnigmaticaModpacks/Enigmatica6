@@ -8,10 +8,12 @@ onEvent('item.tags', (event) => {
         'byg:blue_glowshroom',
         'byg:imparius_mushroom',
         'byg:fungal_imparius',
+        'byg:embur_wart',
         'betterendforge:umbrella_tree_sapling',
         'betterendforge:mossy_glowshroom_sapling',
         'betterendforge:small_jellyshroom',
         'projectvibrantjourneys:bark_mushroom',
-        'projectvibrantjourneys:glowcap'
+        'projectvibrantjourneys:glowcap',
+        'undergarden:ink_mushroom'
     ]);
 });

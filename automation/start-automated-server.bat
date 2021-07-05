@@ -511,17 +511,17 @@ REM Create default server.properties and eula.txt files
 IF NOT EXIST "%~dp0server.properties" (
 	ECHO Could not find server.properties, creating initial copy... 1>>  "%~dp0logs\serverstart.log" 2>&1
 	ECHO INFO: server.properties not found... populating default 1>>  "%~dp0logs\serverstart.log" 2>&1
-	ECHO view-distance=8 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO allow-flight=true 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO level-type=terraforged 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO snooper-enabled=false 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO max-tick-time=300000 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
-	ECHO motd=%MC_SERVER_PACKNAME% 1>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO view-distance=8 >> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO allow-flight=true>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO level-type=terraforged>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO snooper-enabled=false>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO max-tick-time=300000>> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
+	ECHO motd=%MC_SERVER_PACKNAME% >> "%~dp0server.properties"  2> "%~dp0logs\serverstart.log"
 	)
 IF NOT EXIST "%~dp0eula.txt" (
 	ECHO Could not find eula.txt, creating initial copy... 1>>  "%~dp0logs\serverstart.log" 2>&1
 	ECHO INFO: eula.txt not found... populating default 1>>  "%~dp0logs\serverstart.log" 2>&1
-	ECHO eula=false 1>> "%~dp0eula.txt"  2> "%~dp0logs\serverstart.log"
+	ECHO eula=false>> "%~dp0eula.txt"  2> "%~dp0logs\serverstart.log"
 	)
 
 REM File cleanup

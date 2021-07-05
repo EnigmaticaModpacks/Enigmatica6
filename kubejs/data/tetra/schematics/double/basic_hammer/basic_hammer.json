@@ -9,6 +9,23 @@
     "outcomes": [
         {
             "material": {
+                "tag": "quark:stone_tool_materials"
+            },
+            "moduleKey": "double/basic_hammer",
+            "moduleVariant": "basic_hammer/stone"
+        },
+        {
+            "material": {
+                "tag": "forge:blackstone"
+            },
+            "requiredTools": {
+                "hammer": 3
+            },
+            "moduleKey": "double/basic_hammer",
+            "moduleVariant": "basic_hammer/blackstone"
+        },
+        {
+            "material": {
                 "tag": "forge:ingots/starmetal"
             },
             "requiredTools": {

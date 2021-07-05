@@ -11,9 +11,14 @@ onEvent('item.registry', (event) => {
         'alchemists_delight',
         'quintuple_alfsteel_ingot',
         'altered_recipe_indicator',
-        'observatory_lens',
         'syrup_bottle',
-        'disabled_recipe_indicator'
+        'disabled_recipe_indicator',
+
+        // Expert
+        'observatory_lens',
+        'coarse_lapis_lazuli_compound',
+        'smoldering_lapis_lazuli_compound',
+        'cutting_essence'
     ];
 
     let metals = [
