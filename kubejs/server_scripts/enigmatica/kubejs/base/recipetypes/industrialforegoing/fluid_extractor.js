@@ -1,7 +1,7 @@
 onEvent('recipes', (event) => {
     treeRegistry.forEach((treeCategories) => {
         treeCategories.trees.forEach((tree) => {
-            let strippedLog = getStrippedLog(tree.trunk);
+            let strippedLog = getStrippedLogFrom(tree.trunk);
             if (tree.sap) {
                 //Extract at full rate from Logs
                 event.custom({

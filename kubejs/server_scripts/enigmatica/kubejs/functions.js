@@ -46,14 +46,14 @@ function wrapArray(array) {
     return utils.listOf(array).toArray();
 }
 
-function getStrippedLog(value) {
-    let strippedLog = air;
-    for (var i = 0; i < buildWoodVariants.length; i++) {
-        if (buildWoodVariants[i].logBlock === value) {
-            strippedLog = buildWoodVariants[i].logBlockStripped;
+function getStrippedLogFrom(logBlock) {
+    let result = air;
+    buildWoodVariants.find((wood) => {
+        if (wood.logBlock == logBlock) {
+            result = wood.logBlockStripped;
         }
-    }
-    return strippedLog;
+    });
+    return result;
 }
 
 const unificationBlacklist = [
