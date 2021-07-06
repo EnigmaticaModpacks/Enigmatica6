@@ -19,12 +19,17 @@ const tameableAnimals = [
     'alexsmobs:mantis_shrimp',
     'alexsmobs:raccoon',
     'alexsmobs:warped_toad',
+    'alexsmobs:mimic_octopus',
+    'alexsmobs:bald_eagle',
+    'alexsmobs:tarantula_hawk',
+    'atum:camel',
+    'atum:desert_wolf',
+    'atum:serval',
     'quark:foxhound'
 ];
 
 // all animals that can be bred (except egg laying animals)
 // all animals in this list are added to the 'Two by Two' advancement, which is used for conservationism challenge
-// autumnity already adds snails and turkeys to the advancement, these aren't needed here
 const breedableAnimals = [
     'minecraft:horse',
     'minecraft:donkey',
@@ -62,12 +67,19 @@ const breedableAnimals = [
     'alexsmobs:platypus',
     'alexsmobs:tasmanian_devil',
     'alexsmobs:kangaroo',
+    'alexsmobs:bald_eagle',
+    'alexsmobs:tiger',
+    'alexsmobs:mimic_octopus',
+    'atum:camel',
+    'atum:desert_rabbit',
+    'atum:desert_wolf',
+    'atum:quail',
+    'atum:serval',
     'quark:crab',
     'quark:foxhound',
     'quark:frog',
     'undergarden:gloomper',
-    'undergarden:dweller',
-    'upgrade_aquatic:goose'
+    'undergarden:dweller'
 ];
 
 // animals that can be bred, but don't immediately spawn a child after breeding
