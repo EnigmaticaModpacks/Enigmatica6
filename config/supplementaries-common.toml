@@ -74,9 +74,9 @@
 		#maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
 		#Range: 0 ~ 50
 		sack_increment = 2
-		#additional sack slots divided by 2. Number of slots will be 5 + additional_slots*2
-		#Range: 0 ~ 2
-		additional_slots = 1
+		#How many slots should a sack have
+		#Range: 1 ~ 27
+		slots = 9
 
 	[blocks.safe]
 		#Makes safes only breakable by their owner or by a player in creative
@@ -130,6 +130,10 @@
 	[blocks.iron_gate]
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
+
+	[blocks.timber_frame]
+		#Replace a timber frame with wattle and daub block when daub is placed in it
+		replace_daub = true
 
 #Configure spawning conditions
 [spawns]
@@ -237,15 +241,22 @@
 		#Note that ony the first parameter is required, each of the others others can me removed and will be defaulted to reasonable values
 		#example: ['minecraft:swamp_hut','2','5','7','witch hut map','0x00ff33']
 		custom_adventurer_maps = [[""]]
-		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure.
+		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
 		#Best kept disabled if you are adding custom adventurer maps with its config
 		random_adventurer_maps = true
 		#enables beacons, lodestones, respawn anchors, beds, conduits, portals to be displayed on maps by clicking one of them with a map
 		block_map_markers = true
 
 	[tweaks.ceiling_banners]
-		#allow banners to be placed on ceilings
+		#Allow banners to be placed on ceilings
 		enabled = true
+
+	[tweaks.zombie_horse]
+		#Feed a stack of rotten flesh to a skeleton horse to buff him up to a zombie horse
+		zombie_horse_conversion = true
+		#Amount of rotten flesh needed
+		#Range: 1 ~ 1000
+		rotten_flesh = 64
 
 [items]
 
