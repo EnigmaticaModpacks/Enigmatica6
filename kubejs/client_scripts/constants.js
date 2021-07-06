@@ -368,6 +368,8 @@ var regexHide = [
     /tconstruct:\w+_station/,
     /tconstruct:\w+_anvil/,
     /tconstruct:part_builder/,
+    /tconstruct:copper_(ore|block|nugget)/,
+    /tconstruct:cobalt_(ore|block|nugget)/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
     /thermal:\w+_gear$/,
