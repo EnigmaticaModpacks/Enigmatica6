@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/lapis',
+                'thermal:blizz_powder',
                 '#upgrade_aquatic:coralstone/infused',
                 'minecraft:kelp',
                 'aquaculture:diamond_hook'
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/sulfur',
+                'minecraft:blaze_powder',
                 'quark:magma_bricks',
                 'undergarden:ditchbulb',
                 'quark:white_candle'
@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/apatite',
+                'thermal:basalz_powder',
                 'undergarden:tremblecrust',
                 '#quark:runes',
                 'aquaculture:worm'
@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
-                '#forge:dusts/fluorite',
+                'thermal:blitz_powder',
                 'betterendforge:silk_fiber',
                 'quark:bottled_cloud',
                 'alexsmobs:guster_eye'
@@ -67,7 +67,8 @@ onEvent('recipes', (event) => {
                 'naturesaura:sky_ingot',
                 '#forge:ingots/manasteel',
                 '#forge:ingots/manasteel',
-                'botania:mana_pearl'
+                'botania:mana_pearl',
+                'atum:isis_godshard'
             ],
             mana: 96000,
             output: 'botania:rune_mana',
@@ -83,7 +84,8 @@ onEvent('recipes', (event) => {
                 '#minecraft:saplings',
                 '#minecraft:saplings',
                 'quark:turf',
-                'quark:turf'
+                'quark:turf',
+                'atum:osiris_godshard'
             ],
             mana: 32000,
             output: 'botania:rune_spring',
@@ -99,7 +101,8 @@ onEvent('recipes', (event) => {
                 'farmersdelight:melon_popsicle',
                 'farmersdelight:melon_popsicle',
                 '#forge:pies',
-                '#forge:pies'
+                '#forge:pies',
+                'atum:ra_godshard'
             ],
             mana: 32000,
             output: 'botania:rune_summer',
@@ -115,7 +118,8 @@ onEvent('recipes', (event) => {
                 'create:honeyed_apple',
                 'create:honeyed_apple',
                 'farmersdelight:hot_cocoa',
-                'farmersdelight:hot_cocoa'
+                'farmersdelight:hot_cocoa',
+                'atum:geb_godshard'
             ],
             mana: 32000,
             output: 'botania:rune_autumn',
@@ -131,7 +135,8 @@ onEvent('recipes', (event) => {
                 '#forge:hay_bales',
                 '#forge:hay_bales',
                 'betterendforge:dense_snow',
-                'betterendforge:dense_snow'
+                'betterendforge:dense_snow',
+                'atum:tefnut_godshard'
             ],
             mana: 32000,
             output: 'botania:rune_winter',

@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
                     leaves: tree.leaf,
                     result: {
                         fluid: tree.sap,
-                        amount: tree.amount
+                        amount: tree.rate.living
                     }
                 });
             }

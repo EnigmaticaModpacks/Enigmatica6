@@ -78,7 +78,7 @@ onEvent('recipes', (event) => {
                 outputs: [Item.of('minecraft:quartz'), Item.of('thermal:slag')]
             },
             {
-                inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:gems/sulfur'],
+                inputs: [Item.of('industrialforegoing:dryrubber', 2), '#forge:dusts/sulfur'],
                 outputs: [Item.of('thermal:cured_rubber', 2)],
                 id: 'thermal:machine/smelter/smelter_cured_rubber'
             },

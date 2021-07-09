@@ -1,3 +1,11 @@
+#Affects how common artifacts are (does not affect mimics)
+#When this is 1, the default artifact spawn rates will be used
+#Values higher that 1 will decrease spawn rates while values lower than 1 will increase spawn rates
+#Doubling this value will (roughly) halve the chance a container contains an artifact
+#Setting this to 10000 will completely prevent artifacts from spawning
+#When set to 0, every container that can contain artifacts will contain an artifact
+#Range: 0.0 ~ 10000.0
+artifact_rarity = 1.0
 
 [campsite]
 	#List of biome IDs in which campsites are not allowed to generate

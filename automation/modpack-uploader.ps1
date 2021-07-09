@@ -111,6 +111,14 @@ function Remove-BlacklistedFiles {
                 Write-Host "Removing config $config from client files"
                 7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "overrides/config/$config*" | Out-Null
             }
+
+            foreach ($folder in $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES) {
+                Write-Host "Removing folder $folder from client files"
+                7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "overrides/$folder*" -r | Out-Null
+            } 
+
+            # Remove all .bak files
+            7z d "$InstanceRoot/$CLIENT_ZIP_NAME.zip" "*.bak" -r | Out-Null
         }
     }
 }
@@ -287,10 +295,10 @@ function New-GitHubRelease {
         Write-Host 
     
         Invoke-RestMethod -Headers $Headers -Uri $Uri -Body $Body -Method Post
-		$currentLocation = Get-Location
-		Set-Location $InstanceRoot
+        $currentLocation = Get-Location
+        Set-Location $InstanceRoot
         Start-Process Powershell.exe -Argument "-NoProfile -Command github_changelog_generator --since-tag $CHANGES_SINCE_VERSION"
-		Set-Location $currentLocation
+        Set-Location $currentLocation
     }
 }
 

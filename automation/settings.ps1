@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.1"
+$MODPACK_VERSION = "0.5.5"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.0"
+$LAST_MODPACK_VERSION = "0.5.4"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "alpha"
+$CLIENT_RELEASE_TYPE = "beta"
 
 #=====================================================================//
 #  DEPENDENCIES URL
@@ -142,8 +142,14 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"gravestone-client.toml",
 	"jecalculation/record.json",
 	"topaddons-client.toml",
-	"diet-client.toml"
+	"diet-client.toml",
+	"contentcreatorintegration/contentcreatorintegration.toml",
+	"contentcreatorintegration/contentcreatorintegration-common.toml",
+	"contentcreatorintegration/default/constants.json",
+	"waystones-client.toml"
 )
+
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @()
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
@@ -176,7 +182,7 @@ $IsWindows = $true
 
 # Toggle twitch-export-builder (automatic building of the manifest zip) on/off
 # Default: $true
-$ENABLE_CURSE_CLIENT_MODULE = $true
+$ENABLE_CURSE_CLIENT_MODULE = $false
 
 # Toggle the modpack uploader on/off
 # Setting this to $false will also disable the Server File and Changelog Generator Modules.

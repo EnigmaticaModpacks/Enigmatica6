@@ -46,6 +46,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({}, 'simplefarming:cooked_bacon', '#forge:cooked_bacon');
     event.replaceInput({ mod: 'simplefarming' }, 'minecraft:cooked_chicken', '#forge:cooked_chicken');
     event.replaceInput({ id: '/simplefarming:\\w+burger/' }, 'minecraft:cooked_beef', 'farmersdelight:beef_patty');
+    event.replaceInput({}, 'tconstruct:cobalt_nugget', '#forge:nuggets/cobalt');
     event.replaceInput(
         {
             not: [{ type: 'ars_nouveau:glyph_recipe' }]
@@ -139,6 +140,11 @@ onEvent('recipes', (event) => {
         { id: 'thermal:machine/press/packing2x2/press_nether_bricks_packing' },
         '#forge:ingots/nether_brick',
         'minecraft:nether_brick'
+    );
+    event.replaceInput(
+        { id: 'thermal:machine/press/unpacking/press_wool_unpacking' },
+        'minecraft:white_wool',
+        '#forge:wool'
     );
 
     sharedDies.forEach((die) => {

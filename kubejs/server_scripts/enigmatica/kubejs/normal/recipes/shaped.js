@@ -1,4 +1,5 @@
-onEvent('recipes', (event) => {
+//todo remove in 0.6.0
+/* onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
@@ -99,6 +100,26 @@ onEvent('recipes', (event) => {
                 B: '#forge:glass/colorless',
                 C: 'thermal:cured_rubber'
             }
+        },
+        {
+            output: 'mythicbotany:alfsteel_pylon',
+            pattern: [' n ', 'npn', ' g '],
+            key: {
+                n: 'mythicbotany:alfsteel_nugget',
+                g: 'minecraft:ghast_tear',
+                p: 'botania:gaia_pylon'
+            },
+            id: 'mythicbotany:alfsteel_pylon'
+        },
+        {
+            output: 'botania:gaia_pylon',
+            pattern: [' D ', 'EPE', ' D '],
+            key: {
+                P: 'botania:mana_pylon',
+                D: 'botania:pixie_dust',
+                E: '#forge:ingots/elementium'
+            },
+            id: 'mythicbotany:modified_gaia_pylon_with_alfsteel'
         }
     ];
 
@@ -110,3 +131,4 @@ onEvent('recipes', (event) => {
         }
     });
 });
+*/

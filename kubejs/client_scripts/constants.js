@@ -320,8 +320,12 @@ const recipesToHide = [
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
             'botania:spark',
+            'botania:natura_pylon',
+            'botania:mana_pylon',
             'mythicbotany:wither_aconite_floating',
-            'mythicbotany:raindeletia_floating'
+            'mythicbotany:raindeletia_floating',
+            'mythicbotany:modified_gaia_pylon_with_alfsteel',
+            'mythicbotany:alfsteel_pylon'
         ]
     },
     {
@@ -364,6 +368,8 @@ var regexHide = [
     /tconstruct:\w+_station/,
     /tconstruct:\w+_anvil/,
     /tconstruct:part_builder/,
+    /tconstruct:copper_(ore|block|nugget)/,
+    /tconstruct:cobalt_(ore|block|nugget)/,
     /titanium:\w+_gear/,
     /thermal:\w+_dust/,
     /thermal:\w+_gear$/,

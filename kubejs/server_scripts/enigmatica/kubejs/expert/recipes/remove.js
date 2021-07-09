@@ -8,6 +8,7 @@ onEvent('recipes', (event) => {
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:dull_trinket',
         'ars_nouveau:mundane_belt',
+        'botania:mana_infusion/mana_diamond_block',
         'minecraft:leather_to_stripes',
         'quark:building/crafting/candles/candle_basic',
         'betterendforge:leather_to_stripes',
@@ -17,7 +18,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/concrete',
         /create:crafting\/materials\/andesite_alloy/,
         'immersiveengineering:crafting/component_iron',
-        'immersiveengineering:crafting/component_steel'
+        'immersiveengineering:crafting/component_steel',
+        'minecraft:stick'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
@@ -28,7 +30,11 @@ onEvent('recipes', (event) => {
         { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' },
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
-        { output: 'botania:spark', id: 'botania:spark' }
+        { output: 'botania:spark', id: 'botania:spark' },
+        { output: 'botania:mana_pylon', id: 'botania:mana_pylon' },
+        { output: 'botania:natura_pylon', id: 'botania:natura_pylon' },
+        { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
+        { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' }
     ];
 
     idRemovals.forEach((id) => {

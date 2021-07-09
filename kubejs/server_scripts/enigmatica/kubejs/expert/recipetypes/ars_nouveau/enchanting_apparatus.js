@@ -15,12 +15,12 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'aquaculture:worm',
-                    'quark:bottled_cloud',
+                    'atum:osiris_godshard',
                     'minecraft:string',
                     'thermal:phytogro',
                     'thermal:phytogro',
                     'minecraft:string',
-                    'quark:bottled_cloud',
+                    'atum:osiris_godshard',
                     'aquaculture:worm'
                 ],
                 reagent: '#forge:beehives/tier_0',
@@ -314,6 +314,39 @@ onEvent('recipes', (event) => {
                 output: 'ars_nouveau:belt_of_unstable_gifts',
                 count: 1,
                 id: 'ars_nouveau:belt_of_unstable_gifts'
+            },
+            {
+                inputs: [
+                    'botania:livingrock',
+                    'botania:livingrock',
+                    'botania:livingrock',
+                    'botania:livingrock',
+                    'botania:livingrock',
+                    'botania:livingrock',
+                    'botania:livingrock',
+                    'botania:livingrock'
+                ],
+                reagent: '#botania:runes/mana',
+                output: 'botania:mana_tablet',
+                count: 1,
+                id: 'botania:mana_tablet'
+            },
+
+            {
+                inputs: [
+                    '#resourcefulbees:resourceful_honeycomb_block',
+                    'minecraft:sunflower',
+                    'resourcefulbees:honey_fluid_bucket',
+                    '#botania:runes/earth',
+                    '#botania:runes/air',
+                    'resourcefulbees:honey_fluid_bucket',
+                    'naturesaura:aura_bloom',
+                    '#resourcefulbees:resourceful_honeycomb_block'
+                ],
+                reagent: 'resourcefulbees:t1_apiary',
+                output: 'resourcefulbees:t2_apiary',
+                count: 1,
+                id: 'resourcefulbees:t2_apiary'
             },
 
             /// Patchouli Removals

@@ -12,6 +12,9 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
+    event.remove({ type: 'industrialforegoing:fluid_extractor' });
+    event.remove({ type: 'thermal:tree_extractor' });
+
     event.remove({ mod: 'prettypipes' });
     event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
@@ -64,7 +67,10 @@ onEvent('recipes', (event) => {
 
         'astralsorcery:infuser/gold_ore',
 
+        'betterendforge:gunpowder_from_sulphur',
+
         'bloodmagic:smelting/ingot_netherite_scrap',
+        'bloodmagic:alchemytable/gunpowder',
 
         'botania:fertilizer_dye',
 
@@ -129,7 +135,6 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
         'immersiveengineering:crusher/bone_meal',
-        'immersiveengineering:crafting/jerrycan',
 
         'immersivepetroleum:distillationtower/oilcracking',
 
@@ -172,6 +177,8 @@ onEvent('recipes', (event) => {
         'thermal:signalum_dust_4',
         'thermal:rubber_3',
         'thermal:smelting/cured_rubber_from_smelting',
+        'thermal:storage/sulfur_block',
+        'thermal:gunpowder_4',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',
@@ -248,19 +255,7 @@ onEvent('recipes', (event) => {
         output: '/emendatusenigmatica:\\w+_gear/',
         mod: 'immersiveengineering'
     });
-    /*
-    event.remove({
-        input: '#forge:ores',
-        mod: 'create',
-        type: 'create:milling'
-    });
 
-    event.remove({
-        input: '#forge:ores',
-        mod: 'create',
-        type: 'create:crushing'
-    });
-*/
     event.remove({
         mod: 'occultism',
         type: 'occultism:miner'

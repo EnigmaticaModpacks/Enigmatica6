@@ -292,6 +292,8 @@
 	#Default heat capacity for fluid blocks
 	#Range: > 0
 	defaultFluidHeatCapacity = 10000
+	#Automatically register heat properties for all detected modded fluids based on their self-defined temperature? (note: vanilla lava and water are always added)
+	addDefaultFluidEntries = true
 
 [Logistics]
 	#Minimum pressure for a Logistics Module to function
