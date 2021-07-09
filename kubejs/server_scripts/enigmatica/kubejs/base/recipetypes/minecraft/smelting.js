@@ -52,6 +52,12 @@ onEvent('recipes', (event) => {
             output: Item.of('emendatusenigmatica:tin_nugget', 7),
             xp: 0.7,
             id: 'aquaculture:tin_can_to_iron_nugget'
+        },
+        {
+            input: '#forge:dusts/hop_graphite',
+            output: 'immersiveengineering:ingot_hop_graphite',
+            xp: 0.5,
+            id: 'immersiveengineering:ingot_hop_graphite'
         }
     ];
 
