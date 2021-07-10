@@ -2743,16 +2743,38 @@
 					}
 				}
 			}]
+			rewards: [{
+				id: "0EF5031647DF246B"
+				type: "command"
+				title: "Rare Mekanism Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				player_command: false
+			}]
 		}
 		{
 			x: 1.5d
 			y: 3.0d
+			subtitle: "Is This Some Sort of Peasant Joke?"
+			description: [
+				"Still digging in the dirt like it’s the 14th century? Why not build a friend to streamline the process a bit? "
+				""
+				"Through the power of quantum entanglement and a sentient Robit who most certainly will not pass the salt, the Digital Miner is an invaluable tool for stripping the earth of her resources. "
+			]
 			dependencies: ["00000000000006BF"]
 			id: "37B0CBFA4CBAD409"
 			tasks: [{
 				id: "4B3658ACF1768133"
 				type: "item"
 				item: "mekanism:digital_miner"
+			}]
+			rewards: [{
+				id: "2103C11313ED672B"
+				type: "command"
+				title: "Rare Mekanism Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				player_command: false
 			}]
 		}
 	]
