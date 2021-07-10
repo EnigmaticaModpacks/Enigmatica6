@@ -51,6 +51,32 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             consume_fluid: 0.005
+        },
+        {
+            inputs: [
+                {
+                    tag: 'minecraft:logs_that_burn',
+                    count: 16,
+                    return_chance: 0
+                }
+            ],
+            fluid: {
+                fluid: 'minecraft:water'
+            },
+            output: {
+                entries: [
+                    {
+                        result: {
+                            item: 'upgrade_aquatic:driftwood_log',
+                            count: 16
+                        },
+                        weight: 1
+                    }
+                ],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.005
         }
     ];
 
@@ -66,10 +92,6 @@ onEvent('recipes', (event) => {
         {
             input: 'forge:storage_blocks/iron',
             output: 'dustrial_decor:rusty_iron_block'
-        },
-        {
-            input: 'minecraft:logs_that_burn',
-            output: 'upgrade_aquatic:driftwood_log'
         }
     ];
 
