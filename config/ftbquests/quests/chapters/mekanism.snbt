@@ -668,8 +668,8 @@
 		{
 			title: "Ore Tripling"
 			icon: "mekanism:electrolytic_core"
-			x: 1.5d
-			y: 3.0d
+			x: 0.0d
+			y: 4.0d
 			subtitle: "Not Enough Minerals"
 			description: [
 				"With enough effort, Mekanism allows for the extraction of up to five ingots per ore, but this is a very involved process and will require serious effort to set up. "
@@ -1754,7 +1754,7 @@
 		{
 			title: "HDPE"
 			x: -1.0d
-			y: 4.0d
+			y: 3.5d
 			description: ["Besides burning it for power, Ethylene may also be re-processed to create HDPE, a high quality plastic useful for making several advanced machines."]
 			dependencies: ["00000000000006C3"]
 			id: "00000000000007AB"
@@ -2393,8 +2393,8 @@
 		}
 		{
 			icon: "mekanism:upgrade_gas"
-			x: 1.0d
-			y: 4.5d
+			x: -1.0d
+			y: 5.5d
 			subtitle: "You Require More Vespene Gas"
 			description: ["Figuring out the exact process of Ore Quadrupling is a task left to the reader. Work through JEI starting from a given metal Shard to work out the process. Gas upgrades will be of key importance here to keep up with Hydrogen Chloride requirements."]
 			dependencies: ["00000000000006D0"]
@@ -2502,8 +2502,8 @@
 		}
 		{
 			icon: "emendatusenigmatica:fluorite_gem"
-			x: -0.5d
-			y: 5.5d
+			x: -2.5d
+			y: 6.5d
 			subtitle: "Research Complete"
 			description: [
 				"The ultimate in ore processing efficiency… or is it? "
@@ -2742,6 +2742,17 @@
 						}
 					}
 				}
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			dependencies: ["00000000000006BF"]
+			id: "37B0CBFA4CBAD409"
+			tasks: [{
+				id: "4B3658ACF1768133"
+				type: "item"
+				item: "mekanism:digital_miner"
 			}]
 		}
 	]
