@@ -131,10 +131,6 @@
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
 
-	[blocks.timber_frame]
-		#Replace a timber frame with wattle and daub block when daub is placed in it
-		replace_daub = true
-
 #Configure spawning conditions
 [spawns]
 
@@ -271,4 +267,11 @@
 		#max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
+
+	[items.bomb]
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 2.0
+		#Do bombs break blocks like tnt?
+		break_blocks = false
 
