@@ -6,6 +6,7 @@
 	title: "Mekanism"
 	icon: "mekanism:alloy_atomic"
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Mekanism"
@@ -500,8 +501,8 @@
 			}]
 		}
 		{
-			x: 2.5d
-			y: 2.5d
+			x: 3.0d
+			y: 1.5d
 			subtitle: "Organic Blend"
 			description: ["Obsidian and Glowstone by themselves are brittle materials, despite their interesting properties. By refining them and bonding them with a substrate such as Osmium, they create alloys that are easier to work with while maintaining their unique nature. "]
 			dependencies: ["00000000000006BF"]
@@ -667,8 +668,8 @@
 		{
 			title: "Ore Tripling"
 			icon: "mekanism:electrolytic_core"
-			x: 1.5d
-			y: 3.5d
+			x: 0.0d
+			y: 4.0d
 			subtitle: "Not Enough Minerals"
 			description: [
 				"With enough effort, Mekanism allows for the extraction of up to five ingots per ore, but this is a very involved process and will require serious effort to set up. "
@@ -817,6 +818,91 @@
 						}
 					}
 				}
+				{
+					id: "220D5440056144D1"
+					type: "item"
+					title: "Ore Tripling"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:clump_iron"
+									Count: 1b
+								}
+								{
+									id: "mekanism:clump_gold"
+									Count: 1b
+								}
+								{
+									id: "mekanism:clump_copper"
+									Count: 1b
+								}
+								{
+									id: "mekanism:clump_tin"
+									Count: 1b
+								}
+								{
+									id: "mekanism:clump_lead"
+									Count: 1b
+								}
+								{
+									id: "mekanism:clump_uranium"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:aluminum_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:silver_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:nickel_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:zinc_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:cobalt_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:thallasium_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:iesnium_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:regalium_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:utherium_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:froststeel_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:cloggrum_clump"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:nebu_clump"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
 			]
 			rewards: [
 				{
@@ -883,6 +969,7 @@
 			y: -0.5d
 			shape: "rsquare"
 			dependencies: ["0000000000000764"]
+			optional: true
 			id: "000000000000072B"
 			tasks: [{
 				id: "0000000000000737"
@@ -897,6 +984,7 @@
 			y: 6.5d
 			shape: "rsquare"
 			dependencies: ["0000000000000765"]
+			optional: true
 			id: "000000000000072D"
 			tasks: [{
 				id: "0000000000000736"
@@ -911,6 +999,7 @@
 			y: 1.5d
 			shape: "diamond"
 			dependencies: ["0000000000000733"]
+			optional: true
 			id: "000000000000072F"
 			tasks: [{
 				id: "000000000000073B"
@@ -939,6 +1028,7 @@
 			y: 3.5d
 			shape: "rsquare"
 			dependencies: ["0000000000000765"]
+			optional: true
 			id: "0000000000000731"
 			tasks: [{
 				id: "0000000000000735"
@@ -953,6 +1043,7 @@
 			y: 0.5d
 			shape: "hexagon"
 			dependencies: ["000000000000072B"]
+			optional: true
 			id: "0000000000000733"
 			tasks: [{
 				id: "000000000000073A"
@@ -970,6 +1061,7 @@
 				"000000000000072F"
 				"0000000000000741"
 			]
+			optional: true
 			id: "0000000000000738"
 			tasks: [{
 				id: "000000000000073C"
@@ -984,6 +1076,7 @@
 			y: 2.5d
 			shape: "hexagon"
 			dependencies: ["0000000000000731"]
+			optional: true
 			id: "000000000000073D"
 			tasks: [{
 				id: "000000000000073E"
@@ -997,6 +1090,7 @@
 			x: 8.5d
 			y: 1.5d
 			dependencies: ["000000000000073D"]
+			optional: true
 			id: "000000000000073F"
 			tasks: [{
 				id: "0000000000000740"
@@ -1011,6 +1105,7 @@
 			y: 2.5d
 			shape: "diamond"
 			dependencies: ["000000000000073D"]
+			optional: true
 			id: "0000000000000741"
 			tasks: [{
 				id: "0000000000000742"
@@ -1025,6 +1120,7 @@
 			y: 3.5d
 			shape: "diamond"
 			dependencies: ["0000000000000738"]
+			optional: true
 			id: "0000000000000743"
 			tasks: [{
 				id: "0000000000000744"
@@ -1042,6 +1138,7 @@
 				"0000000000000743"
 				"0000000000000749"
 			]
+			optional: true
 			id: "0000000000000745"
 			tasks: [{
 				id: "0000000000000746"
@@ -1056,6 +1153,7 @@
 			y: 4.5d
 			shape: "hexagon"
 			dependencies: ["0000000000000731"]
+			optional: true
 			id: "0000000000000747"
 			tasks: [{
 				id: "0000000000000748"
@@ -1070,6 +1168,7 @@
 			y: 4.5d
 			shape: "diamond"
 			dependencies: ["0000000000000747"]
+			optional: true
 			id: "0000000000000749"
 			tasks: [{
 				id: "000000000000074A"
@@ -1084,6 +1183,7 @@
 			y: 5.5d
 			shape: "diamond"
 			dependencies: ["0000000000000745"]
+			optional: true
 			id: "000000000000074B"
 			tasks: [{
 				id: "000000000000074C"
@@ -1099,6 +1199,7 @@
 				"000000000000074B"
 				"000000000000074F"
 			]
+			optional: true
 			id: "000000000000074D"
 			tasks: [{
 				id: "000000000000074E"
@@ -1114,6 +1215,7 @@
 			y: 5.5d
 			shape: "rsquare"
 			dependencies: ["0000000000000765"]
+			optional: true
 			id: "000000000000074F"
 			tasks: [{
 				id: "0000000000000750"
@@ -1128,6 +1230,7 @@
 			y: 6.5d
 			shape: "diamond"
 			dependencies: ["000000000000074D"]
+			optional: true
 			id: "0000000000000751"
 			tasks: [{
 				id: "0000000000000753"
@@ -1145,6 +1248,7 @@
 				"0000000000000751"
 				"0000000000000758"
 			]
+			optional: true
 			id: "0000000000000754"
 			tasks: [{
 				id: "0000000000000755"
@@ -1159,6 +1263,7 @@
 			y: 7.5d
 			shape: "diamond"
 			dependencies: ["000000000000075E"]
+			optional: true
 			id: "0000000000000756"
 			tasks: [{
 				id: "0000000000000757"
@@ -1187,6 +1292,7 @@
 			y: 7.5d
 			shape: "diamond"
 			dependencies: ["000000000000075C"]
+			optional: true
 			id: "0000000000000758"
 			tasks: [{
 				id: "0000000000000759"
@@ -1215,6 +1321,7 @@
 			y: 6.5d
 			shape: "diamond"
 			dependencies: ["0000000000000754"]
+			optional: true
 			id: "000000000000075A"
 			tasks: [{
 				id: "000000000000075B"
@@ -1229,6 +1336,7 @@
 			y: 7.5d
 			shape: "hexagon"
 			dependencies: ["0000000000000756"]
+			optional: true
 			id: "000000000000075C"
 			tasks: [{
 				id: "000000000000075D"
@@ -1243,6 +1351,7 @@
 			y: 7.5d
 			shape: "hexagon"
 			dependencies: ["000000000000072D"]
+			optional: true
 			id: "000000000000075E"
 			tasks: [{
 				id: "000000000000075F"
@@ -1257,6 +1366,7 @@
 			y: 7.5d
 			shape: "hexagon"
 			dependencies: ["000000000000075A"]
+			optional: true
 			id: "0000000000000760"
 			tasks: [{
 				id: "0000000000000761"
@@ -1271,6 +1381,7 @@
 			y: 9.0d
 			description: ["Oh! You're still here?"]
 			dependencies: ["0000000000000760"]
+			optional: true
 			id: "0000000000000762"
 			tasks: [{
 				id: "0000000000000763"
@@ -1642,7 +1753,7 @@
 		}
 		{
 			title: "HDPE"
-			x: 0.0d
+			x: -1.0d
 			y: 3.5d
 			description: ["Besides burning it for power, Ethylene may also be re-processed to create HDPE, a high quality plastic useful for making several advanced machines."]
 			dependencies: ["00000000000006C3"]
@@ -2206,7 +2317,7 @@
 		}
 		{
 			x: 0.5d
-			y: -0.5d
+			y: -1.0d
 			subtitle: "Better Than a Stick in the Eye"
 			description: [
 				"It’s bound to happen. With pipes and cables running everywhere, who knows what’s going to get into that machine when it’s plonked down. Water? Hydrogen? And once things are in, often times it’s not clear how to get them out. "
@@ -2224,6 +2335,441 @@
 			}]
 			rewards: [{
 				id: "3954C7F86F9C301B"
+				type: "command"
+				title: "Rare Mekanism Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 2.5d
+			y: 0.5d
+			subtitle: "Yo Dawg, Heard You Liked Machines... "
+			description: [
+				"There are limits to the number of speed upgrades that can go in machines. After that expanding sideways is the only option to speeding things up. Thankfully, Tier Installers make this somewhat cheaper than simply tossing down nine more machines full of upgrades. Remember, it’s all about being efficient!"
+				""
+				"To apply a Tier installer, simply Sneak Right-Click on a machine place in-world. Progression through each tier is required."
+			]
+			dependencies: ["00000000000006BD"]
+			id: "6AA3DA7395582D75"
+			tasks: [{
+				id: "487EEDB965838B35"
+				type: "item"
+				title: "Tier Installers"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:basic_tier_installer"
+								Count: 1b
+							}
+							{
+								id: "mekanism:advanced_tier_installer"
+								Count: 1b
+							}
+							{
+								id: "mekanism:elite_tier_installer"
+								Count: 1b
+							}
+							{
+								id: "mekanism:ultimate_tier_installer"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "21CAB75DA0FC846D"
+				type: "command"
+				title: "Rare Mekanism Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			icon: "mekanism:upgrade_gas"
+			x: -1.0d
+			y: 5.5d
+			subtitle: "You Require More Vespene Gas"
+			description: ["Figuring out the exact process of Ore Quadrupling is a task left to the reader. Work through JEI starting from a given metal Shard to work out the process. Gas upgrades will be of key importance here to keep up with Hydrogen Chloride requirements."]
+			dependencies: ["00000000000006D0"]
+			id: "504DD59B5A254183"
+			tasks: [
+				{
+					id: "581F64A5B70FD048"
+					type: "item"
+					title: "Ore Quadrupling"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "mekanism:shard_iron"
+									Count: 1b
+								}
+								{
+									id: "mekanism:shard_gold"
+									Count: 1b
+								}
+								{
+									id: "mekanism:shard_copper"
+									Count: 1b
+								}
+								{
+									id: "mekanism:shard_tin"
+									Count: 1b
+								}
+								{
+									id: "mekanism:shard_lead"
+									Count: 1b
+								}
+								{
+									id: "mekanism:shard_uranium"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:aluminum_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:silver_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:nickel_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:zinc_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:cobalt_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:thallasium_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:iesnium_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:regalium_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:utherium_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:froststeel_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:cloggrum_shard"
+									Count: 1b
+								}
+								{
+									id: "emendatusenigmatica:nebu_shard"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "278A00997E5A1807"
+					type: "item"
+					item: "mekanism:upgrade_gas"
+				}
+			]
+			rewards: [{
+				id: "5CB2EF184247180B"
+				type: "command"
+				title: "Epic Mekanism Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "emendatusenigmatica:fluorite_gem"
+			x: -2.5d
+			y: 6.5d
+			subtitle: "Research Complete"
+			description: [
+				"The ultimate in ore processing efficiency… or is it? "
+				""
+				"Mekanism’s highest form of ore processing ends at quintupling and requires a hefty amount of infrastructure to access. As with quadrupling, the exact process can be determined from JEI by looking at metal crystals. "
+			]
+			dependencies: ["504DD59B5A254183"]
+			id: "1BA848F73C707DCC"
+			tasks: [{
+				id: "38AF11C23B5E8A03"
+				type: "item"
+				title: "Ore Quintupling"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:crystal_iron"
+								Count: 1b
+							}
+							{
+								id: "mekanism:crystal_gold"
+								Count: 1b
+							}
+							{
+								id: "mekanism:crystal_copper"
+								Count: 1b
+							}
+							{
+								id: "mekanism:crystal_tin"
+								Count: 1b
+							}
+							{
+								id: "mekanism:crystal_lead"
+								Count: 1b
+							}
+							{
+								id: "mekanism:crystal_uranium"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:aluminum_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:silver_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:nickel_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:zinc_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:cobalt_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:thallasium_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:iesnium_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:regalium_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:utherium_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:froststeel_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:cloggrum_crystal"
+								Count: 1b
+							}
+							{
+								id: "emendatusenigmatica:nebu_crystal"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "5F0D88FCA51E6BB3"
+				type: "command"
+				title: "Legendary Mekanism Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			icon: {
+				id: "mekanism:precision_sawmill"
+				Count: 1b
+				tag: {
+					mekData: {
+						EnergyContainers: [{
+							Container: 0b
+							stored: "20000"
+						}]
+					}
+				}
+			}
+			x: 0.5d
+			y: 0.5d
+			subtitle: "Your Arm's Off!"
+			description: ["Making planks with hand tools is so last century, and incredibly wasteful. Obtain more for the effort and recover some of the loss by finding uses for the leftover saw dust. "]
+			dependencies: ["00000000000006BF"]
+			id: "46314C0EADF8EBAA"
+			tasks: [{
+				id: "7B5D2BF39B372860"
+				type: "item"
+				title: "Precision Sawmill"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "mekanism:precision_sawmill"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "16100"
+										}]
+									}
+								}
+							}
+							{
+								id: "mekanism:precision_sawmill"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "16300"
+										}]
+									}
+								}
+							}
+							{
+								id: "mekanism:basic_sawing_factory"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "18750"
+										}]
+									}
+								}
+							}
+							{
+								id: "mekanism:basic_sawing_factory"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "18900"
+										}]
+									}
+								}
+							}
+							{
+								id: "mekanism:elite_sawing_factory"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "33250"
+										}]
+									}
+								}
+							}
+							{
+								id: "mekanism:ultimate_sawing_factory"
+								Count: 1b
+								tag: {
+									mekData: {
+										EnergyContainers: [{
+											Container: 0b
+											stored: "40050"
+										}]
+									}
+								}
+							}
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "483148CA72CDB1CD"
+				type: "item"
+				item: "mekanism:cardboard_box"
+			}]
+		}
+		{
+			x: 2.5d
+			y: 2.5d
+			subtitle: "Guests are reminded that Platform One forbids the use of weapons, teleportation and religion."
+			description: [
+				"Got somewhere to be and no time to get there? Well, start walking. And next time, bring a teleporter to set up when you get there to avoid going the long way again."
+				""
+				"Teleporter Frames are Optional."
+			]
+			dependencies: ["00000000000006BF"]
+			id: "25956D039907CBDA"
+			tasks: [{
+				id: "5E962E033F464A5C"
+				type: "item"
+				item: {
+					id: "mekanism:teleporter"
+					Count: 1b
+					tag: {
+						mekData: {
+							EnergyContainers: [{
+								Container: 0b
+								stored: "5000000"
+							}]
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "0EF5031647DF246B"
+				type: "command"
+				title: "Rare Mekanism Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_mekanism_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 1.5d
+			y: 3.0d
+			subtitle: "Is This Some Sort of Peasant Joke?"
+			description: [
+				"Still digging in the dirt like it’s the 14th century? Why not build a friend to streamline the process a bit? "
+				""
+				"Through the power of quantum entanglement and a sentient Robit who most certainly will not pass the salt, the Digital Miner is an invaluable tool for stripping the earth of her resources. "
+			]
+			dependencies: ["00000000000006BF"]
+			id: "37B0CBFA4CBAD409"
+			tasks: [{
+				id: "4B3658ACF1768133"
+				type: "item"
+				item: "mekanism:digital_miner"
+			}]
+			rewards: [{
+				id: "2103C11313ED672B"
 				type: "command"
 				title: "Rare Mekanism Loot Box"
 				icon: "kubejs:rare_lootbox"

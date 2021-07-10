@@ -14,6 +14,12 @@ onEvent('recipes', (event) => {
                 time: 100
             },
             {
+                inputs: ['emendatusenigmatica:arcane_gem', 'naturesaura:token_joy'],
+                entity: 'ars_nouveau:drygmy',
+                aura: 100000,
+                time: 100
+            },
+            {
                 inputs: ['minecraft:cod', 'minecraft:iron_bars'],
                 entity: 'quark:crab',
                 aura: 30000,
