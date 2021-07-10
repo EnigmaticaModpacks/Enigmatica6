@@ -6,6 +6,7 @@
 	title: "Ars Nouveau"
 	icon: "ars_nouveau:mana_gem"
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Ars Nouveau"
@@ -257,7 +258,7 @@
 		}
 		{
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 			subtitle: "Chalk it up to Experience"
 			description: [
 				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door."
@@ -291,7 +292,7 @@
 		{
 			title: "Spell Parchment"
 			x: 1.0d
-			y: -4.0d
+			y: -3.0d
 			subtitle: "Jousting Snails"
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."
@@ -556,7 +557,7 @@
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Sylphs."
 				""
-				"The number of wild Sylphs have dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
+				"The number of wild Sylphs has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
 			dependencies: ["00000000000003F7"]
 			id: "00000000000003F4"
@@ -600,6 +601,7 @@
 		{
 			x: 9.0d
 			y: -5.5d
+			subtitle: "Shh! Shh! You'll break the spell."
 			description: [
 				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come."
 				""
@@ -1001,8 +1003,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.5d
+			x: 0.5d
+			y: -1.5d
 			subtitle: "Cast Wide, Your Net"
 			description: ["A traditional casting focus, the Wand may be inscribed with a single spell. Contrary to other casting methods, however, no Form is required. All spells cast from a Casting Wand are automatically Projectile and come Accelerated. This means extra slots for adding Effects or Augments. This makes them ideal for specialized tools. "]
 			dependencies: ["00000000000003D0"]
@@ -1081,7 +1083,7 @@
 		{
 			x: 6.5d
 			y: -4.0d
-			subtitle: "Here Comes the Rain Again, Falling on my Head Like a Memory"
+			subtitle: "Here Comes the Rain Again, Falling On My Head Like a Memory"
 			description: [
 				"Sometimes it feels like the rain just never lets up. It has soaked through your armor, flooded your cave, corroded all those fancy schmancy circuits you were told would solve your problems. "
 				""
@@ -1189,6 +1191,124 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
 				player_command: false
 			}]
+		}
+		{
+			icon: "ars_nouveau:arcane_bricks"
+			x: 1.5d
+			y: -4.0d
+			subtitle: "A Wizard Did It!"
+			description: ["Going somewhere? Bring some supplies along before setting out. Having a quick way back and forth can be very handy. Build a portal out in the shape of a nether portal, set up a filled mana jar nearby, and toss a bound Warp Scroll through the frame to create a portal that can send items, mobs, and even spells back to the location bound to with the Warp Scroll. "]
+			dependencies: ["00000000000003D5"]
+			id: "19C9AC76B4E2B19D"
+			tasks: [{
+				id: "59AD7879702E702B"
+				type: "item"
+				title: "Arcane Bricks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ars_nouveau:arcane_bricks"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_alternating"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_herring"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_mosaic"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_smooth_slab"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_smooth"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_clover"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_basket"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_clover"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_herring"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_mosaic"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_alternating"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_ashlar"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 14L
+			}]
+			rewards: [{
+				id: "530B702E2689DE28"
+				type: "item"
+				item: "ars_nouveau:warp_scroll"
+				count: 8
+			}]
+		}
+		{
+			x: 8.0d
+			y: -4.5d
+			subtitle: "Very A-moose-ing."
+			description: [
+				"Found most anywhere that wild beasts roam, Drygmies are spirits bound to the earth, tending her flock. Through their magic, they can gather items from all manner of beast without causing them harm in any way. They may be enticed to work for you by showing them a token of their mortal enemies: Wilden Defenders."
+				""
+				"Refer to the Worn Notebook for an in-depth guide on using Drygmies."
+				""
+				"The number of wild Drygmies has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
+			]
+			dependencies: ["00000000000003F7"]
+			id: "4599C1B5F2048691"
+			tasks: [{
+				id: "2DE5518E628456D5"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+			rewards: [
+				{
+					id: "096125B9A6DA61DE"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "6F26AB1474F756FC"
+					type: "command"
+					title: "Summon Chicken"
+					icon: "minecraft:egg"
+					command: "/execute at @p run summon minecraft:chicken ~ ~2 ~"
+					player_command: false
+				}
+			]
 		}
 	]
 }

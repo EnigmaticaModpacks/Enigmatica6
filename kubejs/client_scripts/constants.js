@@ -271,6 +271,27 @@ var itemsToHide = [
     'quark:soul_compass'
 ];
 
+let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
+ee_types.forEach((type) => {
+    itemsToHide.push(
+        `emendatusenigmatica:dimensional_${type}`,
+        `emendatusenigmatica:arcane_${type}`,
+        `emendatusenigmatica:potassium_nitrate_${type}`,
+        `emendatusenigmatica:sulfur_${type}`,
+        `emendatusenigmatica:apatite_${type}`,
+        `emendatusenigmatica:cinnabar_${type}`,
+        `emendatusenigmatica:bitumen_${type}`,
+        `emendatusenigmatica:fluorite_${type}`,
+        `emendatusenigmatica:certus_quartz_${type}`,
+        `emendatusenigmatica:quartz_${type}`,
+        `emendatusenigmatica:redstone_${type}`,
+        `emendatusenigmatica:lapis_${type}`,
+        `emendatusenigmatica:emerald_${type}`,
+        `emendatusenigmatica:diamond_${type}`,
+        `emendatusenigmatica:coal_${type}`
+    );
+});
+
 const fluidsToHide = [
     'cofh_core:honey',
     'create:honey',
