@@ -54,6 +54,11 @@ onEvent('recipes', (event) => {
             id: 'aquaculture:tin_can_to_iron_nugget'
         },
         {
+            input: '#forge:ores/aquamarine',
+            output: Item.of('#forge:gems/aquamarine'),
+            xp: 1.0
+        },
+        {
             input: '#forge:dusts/hop_graphite',
             output: 'immersiveengineering:ingot_hop_graphite',
             xp: 0.5,

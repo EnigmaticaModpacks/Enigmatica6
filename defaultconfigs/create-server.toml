@@ -13,6 +13,9 @@
 #Packmakers' control panel for internal recipe compat
 [recipes]
 	#
+	#When true, allows the Mechanical Press to process entire stacks at a time.
+	bulkPressing = false
+	#
 	#When true, allows any shapeless crafting recipes to be processed by a Mechanical Mixer + Basin.
 	allowShapelessInMixer = true
 	#
@@ -24,6 +27,9 @@
 	#
 	#When true, allows any stonecutting recipes to be processed by a Mechanical Saw.
 	allowStonecuttingOnSaw = true
+	#
+	#When true, allows any Druidcraft woodcutter recipes to be processed by a Mechanical Saw.
+	allowWoodcuttingOnSaw = true
 	#
 	#The amount of Light sources destroyed before Chromatic Compound turns into Refined Radiance.
 	#Range: > 1
@@ -86,6 +92,18 @@
 	#multiplier used for calculating exhaustion from speed when a crank is turned.
 	#Range: 0.0 ~ 1.0
 	crankHungerMultiplier = 0.009999999776482582
+	#
+	#Amount of sail-type blocks required for a windmill to assemble successfully.
+	#Range: > 0
+	minimumWindmillSails = 8
+	#
+	#Max Distance in blocks a Weighted Ejector can throw
+	#Range: > 0
+	maxEjectorDistance = 32
+	#
+	#Time in ticks until the next item launched by an ejector scans blocks for potential collisions
+	#Range: > 10
+	ejectorScanInterval = 120
 
 	#
 	#Encased Fan
@@ -182,6 +200,7 @@
 				turntable = 4.0
 				sticky_mechanical_piston = 4.0
 				sequenced_gearshift = 0.0
+				weighted_ejector = 2.0
 				cogwheel = 0.0
 				belt = 1.0
 				gearbox = 0.0
@@ -332,4 +351,8 @@
 	#The Maximum Distance to an active mirror for the symmetry wand to trigger.
 	#Range: > 10
 	maxSymmetryWandRange = 50
+	#
+	#The Maximum Distance a Block placed by Create's placement assist will have to its interaction point.
+	#Range: > 3
+	placementAssistRange = 12
 

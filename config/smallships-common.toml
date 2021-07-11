@@ -1,7 +1,7 @@
 #
 ###Version, do not change!##
 #Range: > 0
-Version = 8
+Version = 9
 
 #Small Ships Config:
 [Ships]
@@ -61,17 +61,17 @@ Version = 8
 	#Range: 0.0 ~ 100.0
 	DrakkarIceBreakSpeed = 2.0
 	#
-	#----Brigg Speed Factor.----
+	#----Dhow Speed Factor.----
 	#	(takes effect after restart)
-	#	default: 1.28
+	#	default: 1.35
 	#Range: 0.0 ~ 2.0
-	BriggSpeedFactor = 1.28
+	BriggSpeedFactor = 1.35
 	#
-	#----Brigg Turn Factor.----
+	#----Dhow Turn Factor.----
 	#	(takes effect after restart)
-	#	default: 0.2
+	#	default: 0.3
 	#Range: 0.0 ~ 1.0
-	BriggTurnFactor = 0.2
+	BriggTurnFactor = 0.3
 	#
 	#----Should Ships Make Swimming sounds?----
 	#	(takes effect after restart)
@@ -140,4 +140,11 @@ Version = 8
 	#	default: 600
 	#Range: 0.0 ~ 10000.0
 	WarGalleyHealth = 600.0
+	#
+	#----Dhow Health.----
+	#	(takes effect after restart)
+	#	(vanilla boat value = 60)
+	#	default: 400
+	#Range: 0.0 ~ 10000.0
+	DhowHealth = 400.0
 
