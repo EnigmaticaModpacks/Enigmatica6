@@ -248,6 +248,8 @@ var itemsToHide = [
 
     'tconstruct:copper_ore',
     'tconstruct:cobalt_ore',
+    'tconstruct:copper_ingot',
+    'tconstruct:cobalt_ingot',
 
     'thermal:coal_coke',
     'thermal:coal_coke_block',
