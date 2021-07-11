@@ -558,7 +558,7 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:block_breaker'
         },
         {
-            output: 'industrialforegoing:conveyor',
+            output: Item.of('industrialforegoing:conveyor', 6),
             pattern: ['ppp', 'iri', 'ppp'],
             key: {
                 p: '#forge:plastic',
