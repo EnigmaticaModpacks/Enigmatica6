@@ -168,9 +168,19 @@ var itemsToHide = [
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
 
-    'mekanism:fluorite_gem',
+    'mctb:cherry_crafting_table',
+    'mctb:dead_crafting_table',
+    'mctb:fir_crafting_table',
+    'mctb:hellbark_crafting_table',
+    'mctb:jacaranda_crafting_table',
+    'mctb:mahogany_crafting_table',
+    'mctb:palm_crafting_table',
+    'mctb:redwood_crafting_table',
+    'mctb:umbran_crafting_table',
+    'mctb:willow_crafting_table',
+    'mctb:magic_crafting_table',
 
-    'morevanillalib:obsidian_shard',
+    'mekanism:fluorite_gem',
 
     // Deprecated Pedestals Items
     'pedestals:coin/fmagnetmodb',
