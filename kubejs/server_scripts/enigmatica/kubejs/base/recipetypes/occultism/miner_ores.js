@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             { result: 'minecraft:glowstone', weight: 100 },
             { result: 'emendatusenigmatica:quartz_chunk', weight: 400 },
             { result: 'minecraft:ancient_debris', weight: 80 },
-            { result: 'minecraft:ancient_debris', weight: 100 }
+            { result: 'emendatusenigmatica:cobalt_chunk', weight: 100 }
         ]
     };
 

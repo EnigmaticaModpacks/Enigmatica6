@@ -1,8 +1,22 @@
 onEvent('recipes', (event) => {
-    const nether_end_biomes = end_biomes.concat(nether_biomes);
     const endBiomes = {
         type: 'minecraft:worldgen/biome',
         values: end_biomes
+    };
+
+    const netherBiomes = {
+        type: 'minecraft:worldgen/biome',
+        values: nether_biomes
+    };
+
+    const netherAndEndBiomes = {
+        type: 'minecraft:worldgen/biome',
+        values: end_biomes.concat(nether_biomes)
+    };
+
+    const undergardenBiomes = {
+        type: 'undergarden:worldgen/biome',
+        values: undergarden_biomes
     };
 
     const recipes = [
@@ -115,10 +129,7 @@ onEvent('recipes', (event) => {
                     weight: 12
                 },
                 {
-                    whitelist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_biomes
-                    },
+                    whitelist: netherBiomes,
                     blacklist: {},
                     depth_min: 7,
                     depth_max: 117,
@@ -382,18 +393,15 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_biomes
-                    },
+                    whitelist: netherBiomes,
                     blacklist: {},
                     depth_min: 7,
                     depth_max: 117,
                     weight: 12
                 },
                 {
-                    whitelist: {},
-                    blacklist: endBiomes,
+                    whitelist: netherBiomes,
+                    blacklist: {},
                     depth_min: 0,
                     depth_max: 255,
                     weight: 1
@@ -409,18 +417,15 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_biomes
-                    },
+                    whitelist: netherBiomes,
                     blacklist: {},
                     depth_min: 20,
                     depth_max: 53,
                     weight: 3
                 },
                 {
-                    whitelist: {},
-                    blacklist: endBiomes,
+                    whitelist: netherBiomes,
+                    blacklist: {},
                     depth_min: 0,
                     depth_max: 255,
                     weight: 1
@@ -590,18 +595,15 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_biomes
-                    },
+                    whitelist: netherBiomes,
                     blacklist: {},
                     depth_min: 7,
                     depth_max: 117,
                     weight: 8
                 },
                 {
-                    whitelist: {},
-                    blacklist: endBiomes,
+                    whitelist: netherBiomes,
+                    blacklist: {},
                     depth_min: 0,
                     depth_max: 255,
                     weight: 1
@@ -706,10 +708,7 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_biomes
-                    },
+                    whitelist: netherBiomes,
                     blacklist: {},
                     depth_min: 1,
                     depth_max: 20,
@@ -726,10 +725,7 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'undergarden:worldgen/biome',
-                        values: undergarden_biomes
-                    },
+                    whitelist: undergardenBiomes,
                     blacklist: {},
                     depth_min: 5,
                     depth_max: 50,
@@ -746,10 +742,7 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'undergarden:worldgen/biome',
-                        values: undergarden_biomes
-                    },
+                    whitelist: undergardenBiomes,
                     blacklist: {},
                     depth_min: 5,
                     depth_max: 50,
@@ -766,10 +759,7 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'undergarden:worldgen/biome',
-                        values: undergarden_biomes
-                    },
+                    whitelist: undergardenBiomes,
                     blacklist: {},
                     depth_min: 5,
                     depth_max: 50,
@@ -786,10 +776,7 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'undergarden:worldgen/biome',
-                        values: undergarden_biomes
-                    },
+                    whitelist: undergardenBiomes,
                     blacklist: {},
                     depth_min: 5,
                     depth_max: 50,
@@ -806,10 +793,7 @@ onEvent('recipes', (event) => {
             },
             rarity: [
                 {
-                    whitelist: {
-                        type: 'undergarden:worldgen/biome',
-                        values: undergarden_biomes
-                    },
+                    whitelist: undergardenBiomes,
                     blacklist: {},
                     depth_min: 1,
                     depth_max: 10,
@@ -827,20 +811,14 @@ onEvent('recipes', (event) => {
             rarity: [
                 {
                     whitelist: {},
-                    blacklist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_end_biomes
-                    },
+                    blacklist: netherAndEndBiomes,
                     depth_min: 60,
                     depth_max: 70,
                     weight: 8
                 },
                 {
                     whitelist: {},
-                    blacklist: {
-                        type: 'minecraft:worldgen/biome',
-                        values: nether_end_biomes
-                    },
+                    blacklist: netherAndEndBiomes,
                     depth_min: 10,
                     depth_max: 255,
                     weight: 1
