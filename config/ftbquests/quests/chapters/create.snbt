@@ -135,8 +135,8 @@
 			]
 		}
 		{
-			x: 5.0d
-			y: 3.0d
+			x: 5.5d
+			y: 2.5d
 			subtitle: "Like A Record, Baby"
 			description: [
 				"The Water Wheel, while considerably simpler to set up than a Windmill, also produces far fewer SU and operates at a much lower speed. "
@@ -145,7 +145,7 @@
 				""
 				"To get it going, simply allow water to flow past it. Max speed is achieved by having flowing water on five sides of it. "
 			]
-			dependencies: ["0000000000000CBD"]
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CC2"
 			tasks: [{
 				id: "0000000000000CC3"
@@ -255,14 +255,14 @@
 		{
 			title: "Shaft"
 			x: 1.5d
-			y: 3.5d
+			y: 2.0d
 			subtitle: "Shut Yo Mouth"
 			description: [
 				"Making a pretty windmill is probably not the only reason you’re here. Most likely, you’d like this thing to actually do something useful, but it’s way up there and we’re way down here… "
 				""
 				"As it happens, conveying rotational force is quite simple. Shafts can be used to convey power linearly while cogs may be used to change direction and speed. "
 			]
-			dependencies: ["0000000000000CBD"]
+			dependencies: ["0000000000000CBA"]
 			id: "0000000000000CCC"
 			tasks: [{
 				id: "0000000000000CCD"
@@ -290,7 +290,7 @@
 		}
 		{
 			x: 1.0d
-			y: 2.5d
+			y: 1.0d
 			subtitle: "That Was Below the Belt"
 			description: [
 				"Tired of unsightly holes in your base? Shivering from drafty shaft seals? Look no further. "
@@ -319,7 +319,7 @@
 		{
 			title: "Brackets"
 			x: 2.0d
-			y: 2.5d
+			y: 1.0d
 			subtitle: "Brace Yourselves"
 			description: [
 				"That’s a long run of shaft you’ve got there. Seems a little unsupported, no?"
@@ -353,7 +353,7 @@
 		}
 		{
 			x: -1.5d
-			y: 2.5d
+			y: 1.0d
 			subtitle: "Let's Try a Change in Tack"
 			description: [
 				"Slightly more costly than a pair of cogs, Gear Boxes serve the same purpose as perpendicular cogs, to change the direction of a shaft line. "
@@ -379,7 +379,7 @@
 		{
 			title: "Cogwheels"
 			x: -1.0d
-			y: 3.5d
+			y: 2.0d
 			subtitle: "Spacely's Sprockets"
 			description: [
 				"Just because our windmill is running a little slowly doesn’t mean everything else needs to. The rotational speed of a system can be stepped up (or down) by way of simple gear ratios. "
@@ -419,7 +419,7 @@
 		}
 		{
 			x: 1.5d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "You're On a Roll Now"
 			description: [
 				"As with many things in Create, the Mechanical Belt is a multi-purpose item."
@@ -449,7 +449,7 @@
 		}
 		{
 			x: 0.5d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "Working on the Chain Gang"
 			description: [
 				"Encased Chain Drives may be used much like belts, connecting perpendicular shafts together."
@@ -475,7 +475,7 @@
 		{
 			icon: "create:rotation_speed_controller"
 			x: -4.0d
-			y: 3.5d
+			y: 2.0d
 			subtitle: "Kick It Into Overdrive"
 			description: [
 				"It is not always practical to chain hundreds of cogs to achieve the exact right speed. Enter, the Rotation Speed Controller. Place a Large Cogwheel in the top slot and power it. "
@@ -508,7 +508,7 @@
 		}
 		{
 			x: 0.5d
-			y: 6.0d
+			y: 4.5d
 			subtitle: "Bit of a Slippery Slope"
 			description: [
 				"Funnels serve both to push into and pull from inventories. "
@@ -533,7 +533,7 @@
 		}
 		{
 			x: 1.5d
-			y: 5.5d
+			y: 4.0d
 			subtitle: "Learning To Take Things in Slide"
 			description: [
 				" The chute is a simple yet fast way to convey items downwards. Simply drop them in the top and they’ll come out the bottom. "
@@ -559,7 +559,7 @@
 		}
 		{
 			x: 2.5d
-			y: 6.0d
+			y: 4.5d
 			subtitle: "Double Slit Experiment"
 			description: [
 				"Far from simple covers for your Mechanical Belts, Tunnels serve a useful purpose in splitting items. "
@@ -584,7 +584,7 @@
 		}
 		{
 			x: 0.5d
-			y: 7.0d
+			y: 5.5d
 			subtitle: "Pimp My Slide"
 			description: ["Brass Funnels function similarly to Andesite Funnels, although they can accept a filter, either in the form of a single item clicked into the filter slot, or a configured filter item."]
 			dependencies: ["0000000000000CE5"]
@@ -605,7 +605,7 @@
 		}
 		{
 			x: 2.5d
-			y: 7.0d
+			y: 5.5d
 			subtitle: "Wave Function Collapse"
 			description: [
 				"Brass Tunnels work a bit differently than Andesite Tunnels. Rather than splitting onto adjacent belts, a line of Tunnels can be formed along multiple parallel belts. "
@@ -632,7 +632,7 @@
 		}
 		{
 			x: 1.5d
-			y: 6.5d
+			y: 5.0d
 			subtitle: "Buffer Allocation Failed"
 			description: [
 				"A simple item buffer. "
@@ -657,7 +657,7 @@
 		}
 		{
 			x: 1.5d
-			y: 7.5d
+			y: 6.0d
 			subtitle: "Number 5 is Alive"
 			description: [
 				"Mechanical Arms serve as advanced short range item transport. They may be linked to multiple points at once for both extraction and insertion."
@@ -945,7 +945,7 @@
 		}
 		{
 			x: -1.0d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "Archimedean Screw"
 			description: [
 				"Just as moving items isn’t free, so to does it require some rotational force to pump and work with fluids."
@@ -972,7 +972,7 @@
 		}
 		{
 			x: -2.0d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "Clear the Channel"
 			description: ["Pipes are the primary means of conveying fluids. Fluid goes in, fluid goes out. Simple!"]
 			dependencies: ["0000000000000D0F"]
@@ -995,7 +995,7 @@
 		{
 			icon: "create:fluid_valve"
 			x: -1.5d
-			y: 5.5d
+			y: 4.0d
 			subtitle: "Shut The Front Door"
 			description: ["Fluid valves may be opened and closed by applying some rotational force, for example with a Valve Handle. "]
 			dependencies: ["0000000000000D0F"]
@@ -1023,7 +1023,7 @@
 		}
 		{
 			x: -2.0d
-			y: 6.5d
+			y: 5.0d
 			subtitle: "Reverse Osmosis Filter"
 			description: ["Doing the impossible is just another Tuesday in modded. Smart Fluid Pipes act as a fluid filter, either controlling what is allowed to be pulled from a connected tank, or what is allowed to continue down the line. "]
 			dependencies: ["0000000000000D0F"]
@@ -1044,7 +1044,7 @@
 		}
 		{
 			x: -3.0d
-			y: 4.5d
+			y: 3.0d
 			subtitle: "Unfathomably Deep"
 			description: [
 				"Fluid Tanks are a thematic multi-block tank for all your fluid storing needs. "
@@ -1133,7 +1133,7 @@
 		}
 		{
 			x: -2.5d
-			y: 5.5d
+			y: 4.0d
 			subtitle: "Spouting Off Nonsense"
 			description: ["The spout is paired with a Depot by placing it above the Depot. It will attempt to fill any item appearing on the Depot. For example, to make buckets of water, fill potion bottles, or make delicious tea!"]
 			dependencies: ["0000000000000D11"]
@@ -1533,7 +1533,7 @@
 		}
 		{
 			x: -3.0d
-			y: 3.5d
+			y: 2.0d
 			subtitle: "Shifting Into Higher Gear"
 			description: [
 				"Slightly finer control than messing with gear ratios, an Adjustable Chain Gearshift uses a Redstone signal to set the variable speed, up to twice the input speed. "
@@ -1558,7 +1558,7 @@
 		}
 		{
 			x: -3.0d
-			y: 6.5d
+			y: 5.0d
 			subtitle: "Well, There's an Upside and a Downside"
 			description: [
 				"With a Hose Pulley, fluids may be pumped into or out of the world. Create massive lakes or drain them dry to let your factory grow!"
@@ -1585,7 +1585,7 @@
 		}
 		{
 			x: -0.5d
-			y: 2.5d
+			y: 1.0d
 			subtitle: "Time to Switch Things Up"
 			description: [
 				"Need to reverse direction? Then the Gearshift is what you’re looking for. "
@@ -1610,7 +1610,7 @@
 		}
 		{
 			x: -1.0d
-			y: 1.5d
+			y: 0.0d
 			subtitle: "Going to Have to Stop You Right There"
 			description: [
 				"Quite the simple device, really. A Clutch disengages power on a shaft line, making for a simple on/off switch. "
