@@ -9,7 +9,9 @@ onEvent('block.tags', (event) => {
             'astralsorcery:marble_raw',
             'astralsorcery:marble_runed',
             'create:natural_scoria'
-        ]);
+        ])
+        .remove(['#pneumaticcraft:reinforced_stone']);
+
     event
         .get('forge:stones/basalt')
         .add([
