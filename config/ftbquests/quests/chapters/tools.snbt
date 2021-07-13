@@ -12,6 +12,7 @@
 		}
 	}
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: -7.5d
@@ -212,7 +213,7 @@
 		{
 			x: -10.0d
 			y: -6.5d
-			subtitle: "Now It's Time to Kick Your...Hiney"
+			subtitle: "Now It's Time to Kick Your... Hiney"
 			description: [
 				"Notable Upgrades "
 				""
@@ -3044,6 +3045,37 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
+		}
+		{
+			title: "Arcane Arsenal"
+			x: -1.0d
+			y: -14.0d
+			description: ["Powerful tools which may be enchanted with spells to cast upon use. A must have for any aspiring magician."]
+			dependencies: ["00000000000003D7"]
+			id: "4A1C227E044B02D6"
+			tasks: [
+				{
+					id: "0733FFA5BAB24544"
+					type: "item"
+					item: "ars_nouveau:spell_bow"
+				}
+				{
+					id: "25A8965A5E3C4458"
+					type: "item"
+					item: {
+						id: "ars_nouveau:enchanters_sword"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "4CDEBD46316A28AF"
+					type: "item"
+					item: "ars_nouveau:wand"
+				}
+			]
 		}
 	]
 }

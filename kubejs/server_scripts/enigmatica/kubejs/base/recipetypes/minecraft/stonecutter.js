@@ -92,6 +92,8 @@ onEvent('recipes', (event) => {
     event.stonecutting('masonry:andesitepolishedwall', 'minecraft:polished_andesite');
     event.stonecutting('masonry:darkprismarinepanelswall', 'minecraft:dark_prismarine');
     event.stonecutting('masonry:prismarinepaverswall', 'minecraft:prismarine_bricks');
+    event.stonecutting('betterendforge:endstone_dust', 'byg:end_sand');
+    event.stonecutting('byg:end_sand', 'betterendforge:endstone_dust');
 
     var masonryTiledStoneTypes = masonryStoneTypes.concat(['endstone', 'netherrack', 'obsidian']);
     masonryTiledStoneTypes.forEach((stoneType) => {

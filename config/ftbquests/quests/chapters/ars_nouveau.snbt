@@ -6,6 +6,7 @@
 	title: "Ars Nouveau"
 	icon: "ars_nouveau:mana_gem"
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Ars Nouveau"
@@ -33,8 +34,8 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: -5.5d
+			x: 8.0d
+			y: -4.5d
 			subtitle: "T-U-R-R-E-T, Turret"
 			description: [
 				"The Spell Turret is an enhanced apparatus used to cast spells on demand with a redstone pulse. "
@@ -257,7 +258,7 @@
 		}
 		{
 			x: 0.0d
-			y: -3.0d
+			y: -2.5d
 			subtitle: "Chalk it up to Experience"
 			description: [
 				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door."
@@ -291,7 +292,7 @@
 		{
 			title: "Spell Parchment"
 			x: 1.0d
-			y: -4.0d
+			y: -3.0d
 			subtitle: "Jousting Snails"
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."
@@ -488,8 +489,8 @@
 			}]
 		}
 		{
-			x: 9.5d
-			y: -4.0d
+			x: 3.5d
+			y: -3.0d
 			subtitle: "Boop the Snoot"
 			description: [
 				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone."
@@ -513,8 +514,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: -5.0d
+			x: 6.5d
+			y: -4.5d
 			subtitle: "In Search of the Golden Acorn"
 			description: [
 				"Carbuncles are curious forest critters with a love for all things shiny. Gold, in particular. They may be befriended by tossing them a small amount of gold. Once befriended, they will assist by collecting items and moving them to inventories. "
@@ -548,15 +549,15 @@
 			]
 		}
 		{
-			x: 8.5d
-			y: -3.5d
+			x: 2.5d
+			y: -2.5d
 			subtitle: "Whispering Winds"
 			description: [
 				"Sylphs are the care-takers of the forest, helping new growth to flourish. They will come with you willingly if you honor them by planting a tree in their stead. Once befriended, a Sylph will tend to a small area and gift you with their bounty. Plant down trees, crops, flowers, and other natural items and over time the Sylph will grow more of these and offer them to you."
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Sylphs."
 				""
-				"The number of wild Sylphs have dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
+				"The number of wild Sylphs has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
 			]
 			dependencies: ["00000000000003F7"]
 			id: "00000000000003F4"
@@ -598,8 +599,9 @@
 			]
 		}
 		{
-			x: 9.0d
-			y: -5.5d
+			x: 3.0d
+			y: -4.5d
+			subtitle: "Shh! Shh! You'll break the spell."
 			description: [
 				"Not all tasks lend themselves to completion by simple automatons like a turret or a rune. There exist certain magical creatures in this world that will help an aspiring practitioner quite willingly. Before seeking them out, create a Summoning Crystal to act as a focus for the magics to come."
 				""
@@ -647,8 +649,8 @@
 		{
 			title: "Auto-magically"
 			icon: "ars_nouveau:glyph_self"
-			x: 10.5d
-			y: -6.5d
+			x: 5.5d
+			y: -6.0d
 			description: ["What good is magic if it cannot be made to work for us without constant intervention?"]
 			dependencies: ["00000000000003AC"]
 			id: "00000000000009ED"
@@ -668,8 +670,8 @@
 		{
 			title: "Turret Practice: Micro Farms"
 			icon: "ars_nouveau:glyph_harvest"
-			x: 12.5d
-			y: -3.5d
+			x: 8.5d
+			y: -2.5d
 			description: [
 				"A simple and compact crop farm can be made with a spell turret with the following spell:"
 				""
@@ -708,8 +710,8 @@
 		}
 		{
 			title: "Turret Practice: Redstone Clock"
-			x: 11.5d
-			y: -4.0d
+			x: 7.5d
+			y: -3.0d
 			description: [
 				"Considering the Turret needs a redstone signal to work, some form of clock is in order. There are many designs that will work, but perhaps something more thematic is in order?"
 				""
@@ -862,7 +864,7 @@
 		}
 		{
 			icon: "ars_nouveau:wixie_charm"
-			x: 10.5d
+			x: 5.5d
 			y: -3.5d
 			subtitle: "Wyrd Sisters"
 			description: [
@@ -896,8 +898,8 @@
 			}]
 		}
 		{
-			x: 10.5d
-			y: -2.5d
+			x: 5.5d
+			y: -2.0d
 			subtitle: "Nanny Ogg's Cookbook"
 			description: [
 				"Simple item crafting isn’t the only thing these crafty ladies have hidden up their sleeves. They’re quite the adept in a brewery as well, making potions of all types. "
@@ -927,8 +929,8 @@
 		}
 		{
 			icon: "ars_nouveau:potion_melder"
-			x: 9.5d
-			y: -1.5d
+			x: 4.5d
+			y: -1.0d
 			subtitle: "Subtle Infusions"
 			description: [
 				"The clever arcanist finds ways to save themselves time, and nothing wastes time like drinking five different potions in preparation for a fight. Why not mix them and drink them all at once? "
@@ -980,8 +982,8 @@
 			]
 		}
 		{
-			x: 11.5d
-			y: -1.5d
+			x: 6.5d
+			y: -1.0d
 			subtitle: "Why Limit Happy Hour?"
 			description: ["Multiple doses all bottled up and ready to go in an eco-friendly re-usable package. Each Flask can hold up to eight doses of potion and may even be enchanted to increase the potency or duration of the potions within. "]
 			dependencies: ["4DC7DC466B1F2D0B"]
@@ -1001,8 +1003,8 @@
 			}]
 		}
 		{
-			x: 1.0d
-			y: -2.5d
+			x: 0.5d
+			y: -1.5d
 			subtitle: "Cast Wide, Your Net"
 			description: ["A traditional casting focus, the Wand may be inscribed with a single spell. Contrary to other casting methods, however, no Form is required. All spells cast from a Casting Wand are automatically Projectile and come Accelerated. This means extra slots for adding Effects or Augments. This makes them ideal for specialized tools. "]
 			dependencies: ["00000000000003D0"]
@@ -1022,8 +1024,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -6.0d
+			x: 10.5d
+			y: -6.5d
 			subtitle: "I Love the Smell of Napalm in the Morning"
 			description: [
 				"Nothing quite says “Magic” like burning reagents on a pyre!"
@@ -1047,8 +1049,8 @@
 		}
 		{
 			icon: "ars_nouveau:ritual_disintegration"
-			x: 4.5d
-			y: -5.0d
+			x: 11.5d
+			y: -4.0d
 			subtitle: "XP = MC Squared "
 			description: [
 				"Killing monsters can be a … messy affair. Why not skip the trouble and simply distill them down into their very essence? "
@@ -1079,9 +1081,9 @@
 			}]
 		}
 		{
-			x: 6.5d
+			x: 9.5d
 			y: -4.0d
-			subtitle: "Here Comes the Rain Again, Falling on my Head Like a Memory"
+			subtitle: "Here Comes the Rain Again, Falling On My Head Like a Memory"
 			description: [
 				"Sometimes it feels like the rain just never lets up. It has soaked through your armor, flooded your cave, corroded all those fancy schmancy circuits you were told would solve your problems. "
 				""
@@ -1102,8 +1104,8 @@
 		}
 		{
 			title: "Celestial Manipulation"
-			x: 6.5d
-			y: -5.0d
+			x: 9.0d
+			y: -5.5d
 			subtitle: "Ain't nobody got time for that!"
 			description: [
 				"Are your days too short? Not enough time for your nocturnal pursuits? "
@@ -1136,8 +1138,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -4.0d
+			x: 10.5d
+			y: -4.5d
 			subtitle: "Hear Ye, Hear Ye"
 			description: [
 				"All you Lowly Pillagers, Ravaging Vindicators, and Summoners of Questionable Merit are here-by formally summoned to participate in the coming tournaments! "
@@ -1159,8 +1161,8 @@
 		}
 		{
 			title: "Fertility and Growth"
-			x: 5.5d
-			y: -3.5d
+			x: 12.0d
+			y: -5.5d
 			subtitle: "Magically Sustained Gestation"
 			description: [
 				"If you sad in life – use MSG. If you happy in life – use MSG. Put MSG in everything, it’ll turn out better. You just get baby? Put MSG on baby, make smarter."
@@ -1189,6 +1191,124 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
 				player_command: false
 			}]
+		}
+		{
+			icon: "ars_nouveau:arcane_bricks"
+			x: 1.5d
+			y: -5.5d
+			subtitle: "A Wizard Did It!"
+			description: ["Going somewhere? Bring some supplies along before setting out. Having a quick way back and forth can be very handy. Build a portal out in the shape of a nether portal, set up a filled mana jar nearby, and toss a bound Warp Scroll through the frame to create a portal that can send items, mobs, and even spells back to the location bound to with the Warp Scroll. "]
+			dependencies: ["00000000000003D5"]
+			id: "19C9AC76B4E2B19D"
+			tasks: [{
+				id: "59AD7879702E702B"
+				type: "item"
+				title: "Arcane Bricks"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "ars_nouveau:arcane_bricks"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_alternating"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_herring"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_mosaic"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_smooth_slab"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_smooth"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:ab_clover"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_basket"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_clover"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_herring"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_mosaic"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_alternating"
+								Count: 1b
+							}
+							{
+								id: "ars_nouveau:sas_ashlar"
+								Count: 1b
+							}
+						]
+					}
+				}
+				count: 14L
+			}]
+			rewards: [{
+				id: "530B702E2689DE28"
+				type: "item"
+				item: "ars_nouveau:warp_scroll"
+				count: 8
+			}]
+		}
+		{
+			x: 4.5d
+			y: -4.5d
+			subtitle: "Very A-moose-ing."
+			description: [
+				"Found most anywhere that wild beasts roam, Drygmies are spirits bound to the earth, tending her flock. Through their magic, they can gather items from all manner of beast without causing them harm in any way. They may be enticed to work for you by showing them a token of their mortal enemies: Wilden Defenders."
+				""
+				"Refer to the Worn Notebook for an in-depth guide on using Drygmies."
+				""
+				"The number of wild Drygmies has dwindled in recent times. If none can be found, consider summoning them with the Altar of Birthing."
+			]
+			dependencies: ["00000000000009ED"]
+			id: "4599C1B5F2048691"
+			tasks: [{
+				id: "2DE5518E628456D5"
+				type: "item"
+				item: "ars_nouveau:drygmy_charm"
+			}]
+			rewards: [
+				{
+					id: "096125B9A6DA61DE"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "6F26AB1474F756FC"
+					type: "command"
+					title: "Summon Chicken"
+					icon: "minecraft:egg"
+					command: "/execute at @p run summon minecraft:chicken ~ ~2 ~"
+					player_command: false
+				}
+			]
 		}
 	]
 }

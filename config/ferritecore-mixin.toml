@@ -14,4 +14,6 @@ blockstateCacheDeduplication = true
 bakedQuadDeduplication = true
 #Use a slightly more compact, but also slightly slower representation for block states
 compactFastMap = false
+#Populate the neighbor table used by vanilla. Enabling this slightly increases memory usage, but can help with issues in the rare case where mods access it directly.
+populateNeighborTable = false
 

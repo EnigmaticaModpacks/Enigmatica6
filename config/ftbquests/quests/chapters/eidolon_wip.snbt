@@ -6,6 +6,7 @@
 	title: "Eidolon"
 	icon: "eidolon:unholy_symbol"
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Welcome to Eidolon!"
@@ -95,7 +96,7 @@
 				""
 				"While most signs are learned from the gods themselves while progressing in theurgy, a few basic ones might be known to magical users in the normal world."
 				""
-				"Try paying a visit to your local swamp and throwing your Ars Ecclesia at one of them, you might learn something new..."
+				"Try paying a visit to your local witch and toss her your Ars Ecclesia, you might learn something new..."
 			]
 			dependencies: ["0000000000000E80"]
 			id: "0000000000000E85"

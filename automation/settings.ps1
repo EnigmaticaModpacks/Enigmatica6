@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.4"
+$MODPACK_VERSION = "0.5.5"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.3"
+$LAST_MODPACK_VERSION = "0.5.4"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "alpha"
 
 #=====================================================================//
 #  DEPENDENCIES URL
@@ -145,10 +145,11 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"diet-client.toml",
 	"contentcreatorintegration/contentcreatorintegration.toml",
 	"contentcreatorintegration/contentcreatorintegration-common.toml",
-	"contentcreatorintegration/default/constants.json"
+	"contentcreatorintegration/default/constants.json",
+	"waystones-client.toml"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data")
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @()
 
 #=====================================================================//
 #  SERVER FILE SETTINGS

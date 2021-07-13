@@ -18,13 +18,25 @@ onEvent('recipes', (event) => {
             input: { tag: 'forge:grain' },
             output: 'create:wheat_flour',
             count: 1,
-            time: 400
+            time: 50
         },
         {
             input: { item: 'minecraft:sugar_cane' },
             output: 'minecraft:sugar',
             count: 2,
+            time: 50
+        },
+        {
+            input: { tag: 'forge:ores/netherite' },
+            output: 'minecraft:netherite_scrap',
+            count: 1,
             time: 400
+        },
+        {
+            input: { tag: 'minecraft:logs' },
+            output: 'emendatusenigmatica:wood_dust',
+            count: 4,
+            time: 100
         }
     ];
 

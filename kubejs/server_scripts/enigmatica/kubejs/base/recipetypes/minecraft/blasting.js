@@ -57,6 +57,17 @@ onEvent('recipes', (event) => {
             output: Item.of('emendatusenigmatica:tin_nugget', 7),
             xp: 0.7,
             id: 'aquaculture:tin_can_to_iron_nugget_from_blasting'
+        },
+        {
+            input: '#forge:ores/aquamarine',
+            output: Item.of('#forge:gems/aquamarine'),
+            xp: 1.0
+        },
+        {
+            input: '#forge:dusts/hop_graphite',
+            output: 'immersiveengineering:ingot_hop_graphite',
+            xp: 0.5,
+            id: 'immersiveengineering:ingot_hop_graphite_from_blasting'
         }
     ];
     recipes.forEach((recipe) => {

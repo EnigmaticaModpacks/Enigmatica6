@@ -1,4 +1,1 @@
-onEvent('item.tags', (event) => {
-    event.add('forge:grains', ['sushigocrafting:rice']);
-    event.add('forge:grains/rice', ['sushigocrafting:rice']);
-});
+// TODO: Remove in 0.6.0

@@ -6,6 +6,7 @@
 	title: "Immersive Engineering"
 	icon: "immersiveengineering:heavy_engineering"
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			icon: "immersiveengineering:manual"
@@ -478,8 +479,8 @@
 		{
 			title: "Arc Furnace"
 			icon: "immersiveengineering:storage_steel"
-			x: -7.0d
-			y: -0.5d
+			x: -6.5d
+			y: 0.0d
 			description: [
 				"The Arc Furnace is a large, power-intensive machine that can smelt ores into ingots at a 1:2 ratio, but can also be used to quickly make alloys."
 				""
@@ -853,8 +854,8 @@
 		{
 			title: "Excavator"
 			icon: "minecraft:gold_ore"
-			x: -7.0d
-			y: 0.5d
+			x: -6.5d
+			y: 1.0d
 			description: [
 				"Once you've determined an appropriate spot to excavate, you can build this machine there. Be warned that the Excavator requires a rather hefty amount of energy to run."
 				""
@@ -926,7 +927,11 @@
 			icon: "immersiveengineering:sample_drill"
 			x: -5.5d
 			y: 0.5d
-			description: ["As described in the \"Minerals\" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk."]
+			description: [
+				"As described in the \"Minerals\" section of the manual, certain IE machines can detect and mine massive veins of otherwise unobtainable ore. The first step toward this is to use Survey Tools and a Core Sample Drill to find what veins are in a chunk."
+				""
+				"A number of custom mineral nodes have been added for Enigmatica 6. Be sure to check them out as they can be quite lucrative!"
+			]
 			dependencies: ["0000000000000012"]
 			id: "0000000000000061"
 			tasks: [{
@@ -1156,7 +1161,7 @@
 			description: [
 				"Crude Oil by itself is terrible to burn, but with a bit of refinement it can be made into a powerfuel liquid fuel. This process requires an Distillation tower and a fair amount of energy. "
 				""
-				"Getting Diesel and other fluids out of the Distillation tower can be tricky at times. The simplest way is to let it automatically output into a short Immersive Engineering Fluid Pipe that branches off into different tanks, then pipe individual fluids from there."
+				"Getting fluids out of the Distillation tower can be tricky at times. The simplest way is to let it automatically output into a short Immersive Engineering Fluid Pipe that branches off into different tanks, then pipe individual fluids from there."
 				""
 				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
 			]
@@ -1166,7 +1171,7 @@
 				{
 					id: "4B40C2072585A5BE"
 					type: "item"
-					item: "immersivepetroleum:diesel_bucket"
+					item: "immersivepetroleum:diesel_sulfur_bucket"
 				}
 				{
 					id: "23D0F4ECEEEB2BF9"
@@ -1297,6 +1302,66 @@
 				title: "Rare Immersive Engineering Loot Box"
 				icon: "kubejs:rare_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Sulfur Recovery Unit"
+			icon: "immersivepetroleum:diesel_bucket"
+			x: -3.5d
+			y: 1.0d
+			description: [
+				"The Sulfurized Diesel produced in the Distillation Tower contains some minor impurities that can be filtered out. By passing the fuel through a Sulfur Recovery Unit, the Sulfur may be collected and put to use elsewhere. Both Diesel and Sulfurized Diesel burn equally well."
+				""
+				"Water inputs from the top and Sulfurized Diesel inputs from the side.  "
+				""
+				"Note: Building Gadgets Patterns and Create Schematics are available in your Enigmatica 6 instance folder to assist with this multiblock."
+			]
+			dependencies: ["7A3633A43D7AB0F2"]
+			optional: true
+			id: "083FA0F4798DB004"
+			tasks: [
+				{
+					id: "77ECA1413ED192BB"
+					type: "item"
+					item: "immersivepetroleum:diesel_bucket"
+				}
+				{
+					id: "7F0822582FEA876F"
+					type: "item"
+					item: "immersiveengineering:steel_scaffolding_standard"
+					count: 10L
+				}
+				{
+					id: "5714B2F9CF70C81D"
+					type: "item"
+					item: "immersiveengineering:heavy_engineering"
+					count: 4L
+				}
+				{
+					id: "5D301DE5DBD9394E"
+					type: "item"
+					item: "immersiveengineering:sheetmetal_iron"
+					count: 15L
+				}
+				{
+					id: "60815F073AA151B2"
+					type: "item"
+					item: "immersiveengineering:rs_engineering"
+				}
+				{
+					id: "5DAE6B0A4A353636"
+					type: "item"
+					item: "immersiveengineering:light_engineering"
+					count: 2L
+				}
+			]
+			rewards: [{
+				id: "21679391A74BB3C7"
+				type: "command"
+				title: "Epic Immersive Engineering Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_immersive_engineering_loot_epic"
 				player_command: false
 			}]
 		}

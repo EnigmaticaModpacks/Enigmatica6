@@ -5,6 +5,9 @@ _Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/E
 ### If you're updating from 0.4.x:
 
 We recommend that you start a new world for this update, but old worlds should still work.
+
+Quest progress resets when updating a 0.4.x world to 0.5.x - You will need to delete the `ftbquests` folder from your world.
+
 If you choose to stay with an old world, please make a backup before updating,
 and read the changelog so you're aware of all the changes that could affect your world.
 

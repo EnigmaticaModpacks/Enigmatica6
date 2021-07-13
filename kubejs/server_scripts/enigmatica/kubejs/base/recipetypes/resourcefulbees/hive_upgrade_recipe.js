@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { tag: 'resourcefulbees:resourceful_honey_block' },
+                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
                 C: { item: 'resourcefulbees:t3_beehive' }
             },
             result: { item: 'resourcefulbees:t4_beehive' },
@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { tag: 'resourcefulbees:resourceful_honey_block' },
+                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
                 C: { item: 'resourcefulbees:t4_beehive' }
             },
             result: { item: 'resourcefulbees:t1_apiary' },
