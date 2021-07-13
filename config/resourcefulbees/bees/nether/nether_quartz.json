@@ -4,13 +4,14 @@
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
     "traits": ["nether", "wither", "can_swim"],
-    "baseLayerTexture": "other/quartz",
+    "baseLayerTexture": "ores/nether_quartz/nether_quartz_bee",
     "ColorData": {
         "honeycombColor": "#d4caba",
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "isEnchanted": false
+        "isEnchanted": false,
+        "modelType": "ORE"
     },
     "CombatData": {
         "isPassive": false,
