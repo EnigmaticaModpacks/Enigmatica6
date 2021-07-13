@@ -1,17 +1,18 @@
 //priority: 900
 onEvent('recipes', (event) => {
     buildWoodVariants.forEach((variant) => {
-        var sawDust = 'emendatusenigmatica:wood_dust';
+        var sawDust = 'emendatusenigmatica:wood_dust',
+            treeBark = 'farmersdelight:tree_bark';
 
-        create_cutting(event, variant);
-        immersiveengineering_sawing(event, variant, sawDust);
+        create_cutting(event, variant, sawDust, treeBark);
+        immersiveengineering_sawing(event, variant, sawDust, treeBark);
         mekanism_sawing(event, variant, sawDust);
         pedestal_sawing(event, variant);
         thermal_sawing(event, variant, sawDust);
     });
 });
 
-function create_cutting(event, variant) {
+function create_cutting(event, variant, sawDust, treeBark) {
     var modID = variant.logBlock.split(':')[0];
 
     // mod blacklist
@@ -29,25 +30,29 @@ function create_cutting(event, variant) {
             {
                 input: variant.logBlock,
                 output: variant.logBlockStripped,
+                secondaryOutput: treeBark,
                 count: 1,
                 time: 50
             },
             {
                 input: variant.woodBlock,
                 output: variant.woodBlockStripped,
+                secondaryOutput: treeBark,
                 count: 1,
                 time: 50
             },
             {
                 input: variant.logBlockStripped,
                 output: variant.plankBlock,
-                count: 5,
+                secondaryOutput: sawDust,
+                count: 6,
                 time: 100
             },
             {
                 input: variant.woodBlockStripped,
                 output: variant.plankBlock,
-                count: 5,
+                secondaryOutput: sawDust,
+                count: 6,
                 time: 100
             }
         ]
@@ -65,6 +70,10 @@ function create_cutting(event, variant) {
                 {
                     item: recipe.output,
                     count: recipe.count
+                },
+                {
+                    item: recipe.secondaryOutput,
+                    count: 1
                 }
             ],
             processingTime: recipe.time
@@ -72,7 +81,7 @@ function create_cutting(event, variant) {
     });
 }
 
-function immersiveengineering_sawing(event, variant, sawDust) {
+function immersiveengineering_sawing(event, variant, sawDust, treeBark) {
     // mod blacklist
     if (variant.modId == 'minecraft') {
         return;
@@ -94,7 +103,7 @@ function immersiveengineering_sawing(event, variant, sawDust) {
             [
                 {
                     stripping: true,
-                    output: sawDust
+                    output: treeBark
                 },
                 {
                     stripping: false,

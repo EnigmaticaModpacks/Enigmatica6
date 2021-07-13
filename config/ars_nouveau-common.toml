@@ -41,6 +41,15 @@
 	#How often Drygmys spawn
 	#Range: 0 ~ 100
 	drygmyWeight = 3
+	#How much mana drygmys consume per generation
+	#Range: 0 ~ 10000
+	drygmyManaCost = 8000
+	#How much mana sylphs consume per generation
+	#Range: 0 ~ 10000
+	sylphManaCost = 2000
+	#How many channels must occur before a drygmy produces loot
+	#Range: 0 ~ 300
+	drygmyMaxProgress = 15
 
 #Mana
 [mana]

@@ -21,7 +21,7 @@
 			#Allowed Values: DEFAULT, MOSSY, SANDY, BIOME
 			worldGenStyle = "BIOME"
 			#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
-			worldGenDimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
+			worldGenDimensionAllowList = []
 			#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.
 			worldGenDimensionDenyList = []
 
@@ -30,5 +30,5 @@
 			#Allowed Values: PRESET_FIRST, RANDOM_ONLY, PRESET_ONLY, MIXED
 			nameGenerationMode = "PRESET_FIRST"
 			#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
-			customWaystoneNames = []
+			customWaystoneNames = ["Sandy City", "Chocolate Island", "Sahara", "The Perimeter", "Pacific"]
 

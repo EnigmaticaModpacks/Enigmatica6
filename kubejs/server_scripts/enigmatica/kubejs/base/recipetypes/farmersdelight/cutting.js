@@ -134,7 +134,7 @@ onEvent('recipes', (event) => {
             let ingredients = Ingredient.of(recipe.input);
             let result = [Item.of(recipe.output), Item.of('farmersdelight:tree_bark')];
 
-            event.remove({ output: recipe.output });
+            event.remove({ mod: 'farmersdelight', output: recipe.output });
 
             event.custom({
                 type: 'farmersdelight:cutting',

@@ -168,9 +168,19 @@ var itemsToHide = [
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
 
-    'mekanism:fluorite_gem',
+    'mctb:cherry_crafting_table',
+    'mctb:dead_crafting_table',
+    'mctb:fir_crafting_table',
+    'mctb:hellbark_crafting_table',
+    'mctb:jacaranda_crafting_table',
+    'mctb:mahogany_crafting_table',
+    'mctb:palm_crafting_table',
+    'mctb:redwood_crafting_table',
+    'mctb:umbran_crafting_table',
+    'mctb:willow_crafting_table',
+    'mctb:magic_crafting_table',
 
-    'morevanillalib:obsidian_shard',
+    'mekanism:fluorite_gem',
 
     // Deprecated Pedestals Items
     'pedestals:coin/fmagnetmodb',
@@ -248,6 +258,8 @@ var itemsToHide = [
 
     'tconstruct:copper_ore',
     'tconstruct:cobalt_ore',
+    'tconstruct:copper_ingot',
+    'tconstruct:cobalt_ingot',
 
     'thermal:coal_coke',
     'thermal:coal_coke_block',
@@ -270,6 +282,27 @@ var itemsToHide = [
     'quark:magnet',
     'quark:soul_compass'
 ];
+
+let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
+ee_types.forEach((type) => {
+    itemsToHide.push(
+        `emendatusenigmatica:dimensional_${type}`,
+        `emendatusenigmatica:arcane_${type}`,
+        `emendatusenigmatica:potassium_nitrate_${type}`,
+        `emendatusenigmatica:sulfur_${type}`,
+        `emendatusenigmatica:apatite_${type}`,
+        `emendatusenigmatica:cinnabar_${type}`,
+        `emendatusenigmatica:bitumen_${type}`,
+        `emendatusenigmatica:fluorite_${type}`,
+        `emendatusenigmatica:certus_quartz_${type}`,
+        `emendatusenigmatica:quartz_${type}`,
+        `emendatusenigmatica:redstone_${type}`,
+        `emendatusenigmatica:lapis_${type}`,
+        `emendatusenigmatica:emerald_${type}`,
+        `emendatusenigmatica:diamond_${type}`,
+        `emendatusenigmatica:coal_${type}`
+    );
+});
 
 const fluidsToHide = [
     'cofh_core:honey',

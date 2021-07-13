@@ -18,6 +18,8 @@
 		maxProgress = 50
 		#Amount of Power Consumed per Tick - Default: [400FE]
 		powerPerOperation = 1000
+		#If true, the boss bar of an entity with the AI disable won't be rendered
+		disableBossBars = true
 
 	[MachineMiscConfig.EnchantmentSorterConfig]
 		#Amount of Power Consumed per Tick - Default: [40FE]

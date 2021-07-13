@@ -45,6 +45,28 @@ function compareIndices(a, b, tag) {
 function wrapArray(array) {
     return utils.listOf(array).toArray();
 }
+/*
+function getStrippedLogFrom(logBlock) {
+    let result = air;
+    buildWoodVariants.find((wood) => {
+        if (wood.logBlock == logBlock) {
+            result = wood.logBlockStripped;
+            return result;
+        }
+    });
+    return result;
+}*/
+
+function getStrippedLogFrom(logBlock) {
+    let result = air;
+    buildWoodVariants.find((wood) => {
+        if (wood.logBlock == logBlock) {
+            result = wood.logBlockStripped;
+            return result;
+        }
+    });
+    return result;
+}
 
 const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'gem'),

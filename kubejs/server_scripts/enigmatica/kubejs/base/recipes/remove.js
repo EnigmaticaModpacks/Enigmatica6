@@ -12,6 +12,9 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'minecraft:smelting', input: '#farmersdelight:tools/knives' });
     event.remove({ type: 'minecraft:blasting', input: '#farmersdelight:tools/knives' });
 
+    event.remove({ type: 'industrialforegoing:fluid_extractor' });
+    event.remove({ type: 'thermal:tree_extractor' });
+
     event.remove({ mod: 'prettypipes' });
     event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
@@ -75,6 +78,7 @@ onEvent('recipes', (event) => {
 
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
+        'byg:compat/create/end_sand_from_crushing',
 
         'compactmachines:wall',
 
@@ -203,6 +207,7 @@ onEvent('recipes', (event) => {
         /create:smelting\/\w+_ingot_compat/,
         /create:blasting\/ingot_\w+_compat/,
         /create:blasting\/\w+_ingot_compat/,
+        /create:compat\/thermal\/crushing\/\w+_ore/,
         /byg:\w*red_rock_\w+_from_\w*stonecutting/,
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
