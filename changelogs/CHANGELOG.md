@@ -1,6 +1,6 @@
-### Enigmatica 6 v0.5.4
+### Enigmatica 6 v0.5.5
 
-_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.4.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.4.md)_
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.5.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.5md)_
 
 ### If you're updating from 0.4.x:
 
@@ -12,6 +12,25 @@ If you choose to stay with an old world, please make a backup before updating,
 and read the changelog so you're aware of all the changes that could affect your world.
 
 Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
+
+**New Mods**
+
+- [Flywheel](https://www.curseforge.com/minecraft/mc-mods/flywheel)
+- [Max Health Fix](https://www.curseforge.com/minecraft/mc-mods/max-health-fix)
+- [More Crafting Tables for Forge!](https://www.curseforge.com/minecraft/mc-mods/more-crafting-tables-for-forge)
+- [Selene](https://www.curseforge.com/minecraft/mc-mods/selene)
+
+**Changes/Improvements**
+
+-   
+
+**Bug Fixes**
+
+- 
+
+### Enigmatica 6 v0.5.4
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.4.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.4.md)_
 
 **Changes/Improvements**
 
