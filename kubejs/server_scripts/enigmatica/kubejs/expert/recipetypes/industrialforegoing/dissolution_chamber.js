@@ -39,7 +39,7 @@ onEvent('recipes', (event) => {
             ],
             inputFluid: 'tconstruct:molten_obsidian',
             inputFluidAmount: 1000,
-            processingTime: 50,
+            processingTime: 600,
             outputItem: 'rftoolsbuilder:shield_block1',
             outputItemCount: 1,
             outputFluid: '',
