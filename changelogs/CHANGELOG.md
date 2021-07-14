@@ -1,6 +1,6 @@
-### Enigmatica 6 v0.5.5
+### Enigmatica 6 v0.5.6
 
-_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.5.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.5md)_
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.6.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.6md)_
 
 ### If you're updating from 0.4.x:
 
@@ -13,12 +13,24 @@ and read the changelog so you're aware of all the changes that could affect your
 
 Please delete your config, defaultconfig, and kubejs folder before updating. This will ensure that old deleted files don't linger in your profile.
 
+**Bug Fixes**
+
+-   Create being mostly broken (Removed the mod Flywheel, the version of Create we're using does not need it) [#2721](https://github.com/NillerMedDild/Enigmatica6/issues/2721)
+
+**Removed Mods**
+
+-   Flywheel
+
+### Enigmatica 6 v0.5.5
+
+_Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.5.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.5md)_
+
 **New Mods**
 
-- [Flywheel](https://www.curseforge.com/minecraft/mc-mods/flywheel)
-- [Max Health Fix](https://www.curseforge.com/minecraft/mc-mods/max-health-fix)
-- [More Crafting Tables for Forge!](https://www.curseforge.com/minecraft/mc-mods/more-crafting-tables-for-forge)
-- [Selene](https://www.curseforge.com/minecraft/mc-mods/selene)
+-   [Flywheel](https://www.curseforge.com/minecraft/mc-mods/flywheel)
+-   [Max Health Fix](https://www.curseforge.com/minecraft/mc-mods/max-health-fix)
+-   [More Crafting Tables for Forge!](https://www.curseforge.com/minecraft/mc-mods/more-crafting-tables-for-forge)
+-   [Selene](https://www.curseforge.com/minecraft/mc-mods/selene)
 
 **Changes/Improvements**
 
@@ -38,7 +50,7 @@ Please delete your config, defaultconfig, and kubejs folder before updating. Thi
 -   Fix Create Recipe Conflict for Crushed End Stone [\#2678](https://github.com/NillerMedDild/Enigmatica6/pull/2678) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Fix Sawdust recipes for Sawdust flooring and block [\#2665](https://github.com/NillerMedDild/Enigmatica6/pull/2665) ([MuteTiefling](https://github.com/MuteTiefling))
 -   General Quest Updates: Mekanism and Ars Nouveau [\#2671](https://github.com/NillerMedDild/Enigmatica6/pull/2671) ([MuteTiefling](https://github.com/MuteTiefling))
--   Glowcane  [\#2650](https://github.com/NillerMedDild/Enigmatica6/issues/2650)
+-   Glowcane [\#2650](https://github.com/NillerMedDild/Enigmatica6/issues/2650)
 -   Increase base height of PNC Elevators [\#2676](https://github.com/NillerMedDild/Enigmatica6/pull/2676) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Increase mana cost for Drygmy and Sylph production [\#2709](https://github.com/NillerMedDild/Enigmatica6/pull/2709) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Interactio Fluid interaction for Driftwood now requires multiple logs to complete. [\#2679](https://github.com/NillerMedDild/Enigmatica6/pull/2679) ([MuteTiefling](https://github.com/MuteTiefling))
@@ -60,34 +72,34 @@ Please delete your config, defaultconfig, and kubejs folder before updating. Thi
 
 **Bug Fixes**
 
-- "Crouching" when someone teleports [\#1527](https://github.com/NillerMedDild/Enigmatica6/issues/1527)
-- 0.4.13 Wither builder bug\[Industrial Foregoing\] [\#2535](https://github.com/NillerMedDild/Enigmatica6/issues/2535)
-- Acacia Log gives 1mb of Latex per operation, only Dark Oak Log listed in Fluid Extractor JEI [\#2621](https://github.com/NillerMedDild/Enigmatica6/issues/2621)
-- Akashic Tome - No Driftwood Bookshelf Recipe [\#2706](https://github.com/NillerMedDild/Enigmatica6/issues/2706)
-- Artifacts being deleted on opening grave [\#2683](https://github.com/NillerMedDild/Enigmatica6/issues/2683)
-- Atum 2 crashing the game [\#2613](https://github.com/NillerMedDild/Enigmatica6/issues/2613)
-- \[0.4.8\] stone slabs and stairs overly eager to be crafted [\#1879](https://github.com/NillerMedDild/Enigmatica6/issues/1879)
-- \[0.5.4\] Duplicate recipes for Create Crushing Wheels [\#2685](https://github.com/NillerMedDild/Enigmatica6/issues/2685)
-- \[0.5.4\] IF Ore Laser gives unprocessable Aquamarine Shale [\#2686](https://github.com/NillerMedDild/Enigmatica6/issues/2686)
-- \[Quark\] Cannot insert seeds into Seed Pouch \(Disabled Seed Pouch\) [\#1565](https://github.com/NillerMedDild/Enigmatica6/issues/1565)
-- Chisel Raw Marble Worldgen [\#2636](https://github.com/NillerMedDild/Enigmatica6/issues/2636)
-- Game crash when using IF recipes in JEC [\#2658](https://github.com/NillerMedDild/Enigmatica6/issues/2658)
-- internal exception io.netty.handler.codec.decoderexception [\#2704](https://github.com/NillerMedDild/Enigmatica6/issues/2704)
-- Lack of JEI info for bees [\#2126](https://github.com/NillerMedDild/Enigmatica6/issues/2126)
-- Livingwood Avatar \(Botania\) isn't working with the rods [\#2638](https://github.com/NillerMedDild/Enigmatica6/issues/2638)
-- Mishandled Death by Enigmatic Graves [\#2614](https://github.com/NillerMedDild/Enigmatica6/issues/2614)
-- Misspelling in Lexica Botania [\#2691](https://github.com/NillerMedDild/Enigmatica6/issues/2691)
-- My POV is not where its supposed to be, it looks like im sneaking when im not.  [\#2635](https://github.com/NillerMedDild/Enigmatica6/issues/2635)
-- Problems placing torches on walls [\#2692](https://github.com/NillerMedDild/Enigmatica6/issues/2692)
-- PSA - Server Crash with Crusher Demon and Emendatus Enigmatica [\#2661](https://github.com/NillerMedDild/Enigmatica6/issues/2661)
-- Recipe conflict processing end stone in crushing wheels [\#2677](https://github.com/NillerMedDild/Enigmatica6/issues/2677)
-- Regular honey blocks can't upgrade beehive [\#2620](https://github.com/NillerMedDild/Enigmatica6/issues/2620)
-- Sushi go crafting rice tag typo [\#2633](https://github.com/NillerMedDild/Enigmatica6/issues/2633)
-- Tinkers lanterns not functional on walls [\#2584](https://github.com/NillerMedDild/Enigmatica6/issues/2584)
-- U cant smelt Graphitedust [\#2642](https://github.com/NillerMedDild/Enigmatica6/issues/2642)
-- Unused EE Items still showing in JEI [\#2419](https://github.com/NillerMedDild/Enigmatica6/issues/2419)
-- Using Fluid transporters with tinkers smeltery there is a loss of fluid [\#2492](https://github.com/NillerMedDild/Enigmatica6/issues/2492)
-- Vitality Enchantment bonus hearts don't stay upon relogging [\#2641](https://github.com/NillerMedDild/Enigmatica6/issues/2641)
+-   "Crouching" when someone teleports [\#1527](https://github.com/NillerMedDild/Enigmatica6/issues/1527)
+-   0.4.13 Wither builder bug\[Industrial Foregoing\] [\#2535](https://github.com/NillerMedDild/Enigmatica6/issues/2535)
+-   Acacia Log gives 1mb of Latex per operation, only Dark Oak Log listed in Fluid Extractor JEI [\#2621](https://github.com/NillerMedDild/Enigmatica6/issues/2621)
+-   Akashic Tome - No Driftwood Bookshelf Recipe [\#2706](https://github.com/NillerMedDild/Enigmatica6/issues/2706)
+-   Artifacts being deleted on opening grave [\#2683](https://github.com/NillerMedDild/Enigmatica6/issues/2683)
+-   Atum 2 crashing the game [\#2613](https://github.com/NillerMedDild/Enigmatica6/issues/2613)
+-   \[0.4.8\] stone slabs and stairs overly eager to be crafted [\#1879](https://github.com/NillerMedDild/Enigmatica6/issues/1879)
+-   \[0.5.4\] Duplicate recipes for Create Crushing Wheels [\#2685](https://github.com/NillerMedDild/Enigmatica6/issues/2685)
+-   \[0.5.4\] IF Ore Laser gives unprocessable Aquamarine Shale [\#2686](https://github.com/NillerMedDild/Enigmatica6/issues/2686)
+-   \[Quark\] Cannot insert seeds into Seed Pouch \(Disabled Seed Pouch\) [\#1565](https://github.com/NillerMedDild/Enigmatica6/issues/1565)
+-   Chisel Raw Marble Worldgen [\#2636](https://github.com/NillerMedDild/Enigmatica6/issues/2636)
+-   Game crash when using IF recipes in JEC [\#2658](https://github.com/NillerMedDild/Enigmatica6/issues/2658)
+-   internal exception io.netty.handler.codec.decoderexception [\#2704](https://github.com/NillerMedDild/Enigmatica6/issues/2704)
+-   Lack of JEI info for bees [\#2126](https://github.com/NillerMedDild/Enigmatica6/issues/2126)
+-   Livingwood Avatar \(Botania\) isn't working with the rods [\#2638](https://github.com/NillerMedDild/Enigmatica6/issues/2638)
+-   Mishandled Death by Enigmatic Graves [\#2614](https://github.com/NillerMedDild/Enigmatica6/issues/2614)
+-   Misspelling in Lexica Botania [\#2691](https://github.com/NillerMedDild/Enigmatica6/issues/2691)
+-   My POV is not where its supposed to be, it looks like im sneaking when im not. [\#2635](https://github.com/NillerMedDild/Enigmatica6/issues/2635)
+-   Problems placing torches on walls [\#2692](https://github.com/NillerMedDild/Enigmatica6/issues/2692)
+-   PSA - Server Crash with Crusher Demon and Emendatus Enigmatica [\#2661](https://github.com/NillerMedDild/Enigmatica6/issues/2661)
+-   Recipe conflict processing end stone in crushing wheels [\#2677](https://github.com/NillerMedDild/Enigmatica6/issues/2677)
+-   Regular honey blocks can't upgrade beehive [\#2620](https://github.com/NillerMedDild/Enigmatica6/issues/2620)
+-   Sushi go crafting rice tag typo [\#2633](https://github.com/NillerMedDild/Enigmatica6/issues/2633)
+-   Tinkers lanterns not functional on walls [\#2584](https://github.com/NillerMedDild/Enigmatica6/issues/2584)
+-   U cant smelt Graphitedust [\#2642](https://github.com/NillerMedDild/Enigmatica6/issues/2642)
+-   Unused EE Items still showing in JEI [\#2419](https://github.com/NillerMedDild/Enigmatica6/issues/2419)
+-   Using Fluid transporters with tinkers smeltery there is a loss of fluid [\#2492](https://github.com/NillerMedDild/Enigmatica6/issues/2492)
+-   Vitality Enchantment bonus hearts don't stay upon relogging [\#2641](https://github.com/NillerMedDild/Enigmatica6/issues/2641)
 
 ### Enigmatica 6 v0.5.4
 
@@ -99,9 +111,9 @@ _Using Forge-1.16.5-36.1.31_ | _[Mod Updates](https://github.com/NillerMedDild/E
 
 **Bug Fixes**
 
-- Jerrycan uncraftable [\#2612](https://github.com/NillerMedDild/Enigmatica6/issues/2612)
-- Double Maps [\#2607](https://github.com/NillerMedDild/Enigmatica6/issues/2607)
-- Jerry Can fully crashes client when used on water \(Immersive Engineering\) [\#1415](https://github.com/NillerMedDild/Enigmatica6/issues/1415)
+-   Jerrycan uncraftable [\#2612](https://github.com/NillerMedDild/Enigmatica6/issues/2612)
+-   Double Maps [\#2607](https://github.com/NillerMedDild/Enigmatica6/issues/2607)
+-   Jerry Can fully crashes client when used on water \(Immersive Engineering\) [\#1415](https://github.com/NillerMedDild/Enigmatica6/issues/1415)
 
 ### Enigmatica 6 v0.5.3
 
@@ -113,8 +125,8 @@ Please **collect your graves before updating**.
 
 **New Mods**
 
-- [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel)
-- [Enigmatic Graves](https://www.curseforge.com/minecraft/mc-mods/enigmatic-graves)
+-   [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel)
+-   [Enigmatic Graves](https://www.curseforge.com/minecraft/mc-mods/enigmatic-graves)
 
 **Changes/Improvements**
 
@@ -127,30 +139,30 @@ Please **collect your graves before updating**.
 
 **Bug Fixes**
 
-- \[0.5.0\] Crash when generating Tetra structure [\#2436](https://github.com/NillerMedDild/Enigmatica6/issues/2436)
-- \[0.5.0\] Soul Shroom [\#2468](https://github.com/NillerMedDild/Enigmatica6/issues/2468)
-- Blackstone Hammer only accepts Gilded Blackstone [\#2548](https://github.com/NillerMedDild/Enigmatica6/issues/2548)
-- Cobalt Item Frame uncraftable [\#2574](https://github.com/NillerMedDild/Enigmatica6/issues/2574)
-- Dimensional Shard Ore No Overwold Spawns [\#1423](https://github.com/NillerMedDild/Enigmatica6/issues/1423)
-- Doubleclick to search inventory feature no longer present [\#2578](https://github.com/NillerMedDild/Enigmatica6/issues/2578)
-- Flourite can't be crafted with pulverizer [\#2600](https://github.com/NillerMedDild/Enigmatica6/issues/2600)
-- In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
-- Multiple chunks are unable to be enriched [\#2579](https://github.com/NillerMedDild/Enigmatica6/issues/2579)
-- Occultism/Mekanism Duplication Glitch [\#2250](https://github.com/NillerMedDild/Enigmatica6/issues/2250)
-- Paraglider tip still exist [\#2554](https://github.com/NillerMedDild/Enigmatica6/issues/2554)
-- Potassium Nitrate Chunk+ enrichment chamber recipe has been removed [\#2564](https://github.com/NillerMedDild/Enigmatica6/issues/2564)
-- Powered Resistive Heater freezes game [\#2573](https://github.com/NillerMedDild/Enigmatica6/issues/2573)
-- Pretty Pipe + Tinkers Drain = Server Crash [\#2570](https://github.com/NillerMedDild/Enigmatica6/issues/2570)
-- Re-added [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
-- Terrasteel Cannot be Crafted Using Terrestrial Honeycombs in a Mana Infuser [\#2595](https://github.com/NillerMedDild/Enigmatica6/issues/2595)
-- Tetra axes can't be used to craft sticks [\#2551](https://github.com/NillerMedDild/Enigmatica6/issues/2551)
-- Tinker's Construct axe consumed when crafting sticks [\#2550](https://github.com/NillerMedDild/Enigmatica6/issues/2550)
-- TOP/Mekanism interaction "Waiting for server" is back. [\#2596](https://github.com/NillerMedDild/Enigmatica6/issues/2596)
+-   \[0.5.0\] Crash when generating Tetra structure [\#2436](https://github.com/NillerMedDild/Enigmatica6/issues/2436)
+-   \[0.5.0\] Soul Shroom [\#2468](https://github.com/NillerMedDild/Enigmatica6/issues/2468)
+-   Blackstone Hammer only accepts Gilded Blackstone [\#2548](https://github.com/NillerMedDild/Enigmatica6/issues/2548)
+-   Cobalt Item Frame uncraftable [\#2574](https://github.com/NillerMedDild/Enigmatica6/issues/2574)
+-   Dimensional Shard Ore No Overwold Spawns [\#1423](https://github.com/NillerMedDild/Enigmatica6/issues/1423)
+-   Doubleclick to search inventory feature no longer present [\#2578](https://github.com/NillerMedDild/Enigmatica6/issues/2578)
+-   Flourite can't be crafted with pulverizer [\#2600](https://github.com/NillerMedDild/Enigmatica6/issues/2600)
+-   In E6 0.5.1 Terraforge Version Creates Crashes. [\#2543](https://github.com/NillerMedDild/Enigmatica6/issues/2543)
+-   Multiple chunks are unable to be enriched [\#2579](https://github.com/NillerMedDild/Enigmatica6/issues/2579)
+-   Occultism/Mekanism Duplication Glitch [\#2250](https://github.com/NillerMedDild/Enigmatica6/issues/2250)
+-   Paraglider tip still exist [\#2554](https://github.com/NillerMedDild/Enigmatica6/issues/2554)
+-   Potassium Nitrate Chunk+ enrichment chamber recipe has been removed [\#2564](https://github.com/NillerMedDild/Enigmatica6/issues/2564)
+-   Powered Resistive Heater freezes game [\#2573](https://github.com/NillerMedDild/Enigmatica6/issues/2573)
+-   Pretty Pipe + Tinkers Drain = Server Crash [\#2570](https://github.com/NillerMedDild/Enigmatica6/issues/2570)
+-   Re-added [More Overlays Updated](https://www.curseforge.com/minecraft/mc-mods/more-overlays-updated)
+-   Terrasteel Cannot be Crafted Using Terrestrial Honeycombs in a Mana Infuser [\#2595](https://github.com/NillerMedDild/Enigmatica6/issues/2595)
+-   Tetra axes can't be used to craft sticks [\#2551](https://github.com/NillerMedDild/Enigmatica6/issues/2551)
+-   Tinker's Construct axe consumed when crafting sticks [\#2550](https://github.com/NillerMedDild/Enigmatica6/issues/2550)
+-   TOP/Mekanism interaction "Waiting for server" is back. [\#2596](https://github.com/NillerMedDild/Enigmatica6/issues/2596)
 
 **Removed Mods**
 
-- [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
-- [TOP Addons](https://www.curseforge.com/minecraft/mc-mods/top-addons)
+-   [GraveStone Mod](https://www.curseforge.com/minecraft/mc-mods/gravestone-mod)
+-   [TOP Addons](https://www.curseforge.com/minecraft/mc-mods/top-addons)
 
 ### Enigmatica 6 v0.5.2
 
