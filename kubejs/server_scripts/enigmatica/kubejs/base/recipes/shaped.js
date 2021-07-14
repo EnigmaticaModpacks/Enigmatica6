@@ -994,6 +994,15 @@ onEvent('recipes', (event) => {
                 A: '#forge:sawdust'
             },
             id: 'thermal:storage/sawdust_block'
+        },
+        {
+            output: 'cfm:post_box',
+            pattern: ['AAA', 'ABA', 'A A'],
+            key: {
+                A: '#forge:ingots/iron_aluminum',
+                B: '#forge:chests'
+            },
+            id: 'cfm:post_box'
         }
     ];
 

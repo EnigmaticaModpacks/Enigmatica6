@@ -55,7 +55,15 @@ onEvent('recipes', (event) => {
         '#forge:ingots/nether_brick'
     );
     event.replaceInput({}, 'minecraft:nether_bricks', '#forge:netherbricks');
-    event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:stone', '#forge:stone', true);
+    event.replaceInput(
+        {
+            type: 'minecraft:crafting_shaped',
+            not: [{ id: 'minecraft:stone_slab' }, { id: 'minecraft:stone_stairs' }]
+        },
+        'minecraft:stone',
+        '#forge:stone',
+        true
+    );
     event.replaceInput({ type: 'minecraft:crafting_shapeless' }, 'minecraft:stone', '#forge:stone', true);
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'powah:uraninite', '#forge:ingots/radioactive');
     event.replaceInput({ type: 'minecraft:crafting_shaped' }, 'minecraft:netherrack', '#forge:netherrack');
@@ -132,7 +140,6 @@ onEvent('recipes', (event) => {
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
 
     event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
-    event.replaceInput({ id: 'pneumaticcraft:reinforced_stone' }, 'minecraft:stone', '#forge:stone');
     event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbench');
 
     event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
