@@ -63,6 +63,17 @@ onEvent('recipes', (event) => {
                 C: 'botania:corporea_block'
             },
             id: 'botania:corporea_crystal_cube'
+        },
+        {
+            output: 'botania:hourglass',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:nuggets/nebu',
+                B: 'atum:crystal_glass',
+                C: '#forge:dusts/redstone',
+                D: '#forge:gems/mana'
+            },
+            id: 'botania:hourglass'
         }
     ];
 
