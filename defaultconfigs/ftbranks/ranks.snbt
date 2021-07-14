@@ -1,0 +1,23 @@
+{
+	member: {
+		name: "Member"
+		power: 1
+		ftbranks.name_format: "<{name}>"
+		ftbchunks.max_claimed: 1000,
+        ftbchunks.max_force_loaded: 10,
+        command.back: false,
+        command.warp: false,
+        command.setwarp: false,
+        command.delwarp: false,
+        command.listwarps: false,
+        command.home: false,
+        command.sethome: false,
+        command.delhome: false,
+        command.listhome: false
+	}
+	admin: {
+		name: "Admin"
+		power: 1000
+		ftbranks.name_format: "<&2{name}&r>"
+	}
+}
