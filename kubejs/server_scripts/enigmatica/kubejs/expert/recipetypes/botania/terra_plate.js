@@ -4,22 +4,51 @@ onEvent('recipes', (event) => {
     }
     const recipes = [
         {
-            inputs: [{ item: 'resourcefulbees:mana_bee_spawn_egg' }],
-            output: {
-                item: 'resourcefulbees:terrestrial_bee_spawn_egg'
-            },
+            inputs: [
+                { item: 'resourcefulbees:mana_bee_spawn_egg' },
+                { item: 'botania:mana_pearl' },
+                { item: 'botania:mana_diamond' },
+                { item: 'botania:quartz_mana' }
+            ],
+            output: { item: 'resourcefulbees:terrestrial_bee_spawn_egg' },
             mana: 2000000
         },
         {
             inputs: [
-                { item: 'resourcefulbees:terrestrial_honeycomb' },
+                { tag: 'forge:nuggets/terminite' },
+                { tag: 'forge:nuggets/terminite' },
+                { tag: 'forge:nuggets/terminite' },
                 { item: 'botania:mana_pearl' },
-                { item: 'botania:mana_diamond' }
+                { item: 'resourcefulbees:terrestrial_honeycomb' },
+                { item: 'resourcefulbees:terrestrial_honeycomb' },
+                { item: 'resourcefulbees:terrestrial_honeycomb' },
+                { item: 'botania:mana_diamond' },
+                { tag: 'forge:nuggets/iesnium' },
+                { tag: 'forge:nuggets/iesnium' },
+                { tag: 'forge:nuggets/iesnium' },
+                { item: 'botania:quartz_mana' }
             ],
-            output: {
-                item: 'botania:terrasteel_ingot'
-            },
+            output: { item: 'botania:terrasteel_ingot' },
             mana: 300000
+        },
+        {
+            inputs: [
+                { tag: 'forge:nuggets/terminite' },
+                { tag: 'forge:nuggets/terminite' },
+                { tag: 'forge:nuggets/terminite' },
+                { item: 'botania:mana_pearl' },
+                { tag: 'forge:nuggets/manasteel' },
+                { tag: 'forge:nuggets/manasteel' },
+                { tag: 'forge:nuggets/manasteel' },
+                { item: 'botania:mana_diamond' },
+                { tag: 'forge:nuggets/iesnium' },
+                { tag: 'forge:nuggets/iesnium' },
+                { tag: 'forge:nuggets/iesnium' },
+                { item: 'botania:quartz_mana' }
+            ],
+            output: { item: 'botania:terrasteel_ingot' },
+            mana: 500000,
+            id: 'botania:terra_plate/terrasteel_ingot'
         }
     ];
 
