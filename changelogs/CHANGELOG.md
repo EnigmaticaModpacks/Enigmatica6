@@ -15,7 +15,7 @@ Please delete your config, defaultconfig, and kubejs folder before updating. Thi
 
 **Bug Fixes**
 
--   Create being mostly broken (Removed Flywheel, the version of Create we're using does not need it) [#2721](https://github.com/NillerMedDild/Enigmatica6/issues/2721)
+-   Create being mostly broken (Removed the mod Flywheel, the version of Create we're using does not need it) [#2721](https://github.com/NillerMedDild/Enigmatica6/issues/2721)
 
 **Removed Mods**
 
