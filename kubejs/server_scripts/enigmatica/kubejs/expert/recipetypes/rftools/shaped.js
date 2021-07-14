@@ -103,6 +103,17 @@ onEvent('recipes', (event) => {
                 D: '#forge:gems/diamond'
             },
             id: 'rftoolsbase:machine_infuser'
+        },
+        {
+            output: 'rftoolsbuilder:builder',
+            pattern: ['ADA', 'BCB', 'ABA'],
+            key: {
+                A: 'minecraft:bricks',
+                B: 'minecraft:redstone',
+                C: 'rftoolsbase:machine_base',
+                D: 'minecraft:ender_pearl'
+            },
+            id: 'rftoolsbuilder:builder'
         }
     ];
 
