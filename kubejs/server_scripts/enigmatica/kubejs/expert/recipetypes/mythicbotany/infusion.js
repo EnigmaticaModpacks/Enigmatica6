@@ -69,7 +69,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:nuggets/utherium' },
                 { tag: 'forge:nuggets/utherium' },
                 { tag: 'forge:nuggets/utherium' },
-                { item: 'create:rose_quartz' }
+                { item: 'create:polished_rose_quartz' }
             ],
             output: { item: 'mythicbotany:alfsteel_ingot' },
             mana: 1500000,
@@ -89,7 +89,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:nuggets/utherium' },
                 { tag: 'forge:nuggets/utherium' },
                 { tag: 'forge:nuggets/utherium' },
-                { item: 'create:rose_quartz' }
+                { item: 'create:polished_rose_quartz' }
             ],
             output: { item: 'mythicbotany:alfsteel_ingot' },
             mana: 2000000,

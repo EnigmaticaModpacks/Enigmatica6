@@ -331,7 +331,6 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: 'botania:mana_tablet'
             },
-
             {
                 inputs: [
                     '#resourcefulbees:resourceful_honeycomb_block',
@@ -347,6 +346,70 @@ onEvent('recipes', (event) => {
                 output: 'resourcefulbees:t2_apiary',
                 count: 1,
                 id: 'resourcefulbees:t2_apiary'
+            },
+            {
+                inputs: [
+                    '#forge:gems/mana_diamond',
+                    'bloodmagic:firescribetool',
+                    '#forge:gems/mana_diamond',
+                    'bloodmagic:airscribetool',
+                    'bloodmagic:earthscribetool',
+                    '#forge:gems/mana_diamond',
+                    'bloodmagic:waterscribetool',
+                    '#forge:gems/mana_diamond'
+                ],
+                reagent: 'botania:livingwood_twig',
+                output: 'bloodmagic:ritualdiviner',
+                count: 1,
+                id: 'bloodmagic:ritual_diviner_0'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'naturesaura:sky_sword',
+                    'botania:pixie_dust',
+                    'atum:montu_godshard',
+                    '#botania:runes/muspelheim',
+                    'botania:pixie_dust',
+                    'naturesaura:token_rage',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/attack',
+                count: 1,
+                id: 'pedestals:upgrades/attack'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'immersiveengineering:sawblade',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/earth',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pickup',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/sawmill',
+                count: 1,
+                id: 'pedestals:upgrades/sawmill'
+            },
+            {
+                inputs: [
+                    'powah:capacitor_spirited',
+                    'thermal:rf_coil',
+                    'powah:capacitor_spirited',
+                    'immersiveengineering:coil_lv',
+                    'immersiveengineering:coil_lv',
+                    'powah:capacitor_spirited',
+                    'thermal:rf_coil',
+                    'powah:capacitor_spirited'
+                ],
+                reagent: 'pedestals:coin/sawmill',
+                output: 'pedestals:coin/rfsawmill',
+                count: 1,
+                id: 'pedestals:upgrades/rfsawmill'
             },
 
             /// Patchouli Removals

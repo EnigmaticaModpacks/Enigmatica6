@@ -120,6 +120,51 @@ onEvent('recipes', (event) => {
                 consumptionRate: 30,
                 drainRate: 50,
                 id: 'bloodmagic:altar/masterbloodorb'
+            },
+            {
+                input: '#botania:runes/air',
+                output: 'bloodmagic:airscribetool',
+                syphon: 1000,
+                altarLevel: 2,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:altar/air_tool'
+            },
+            {
+                input: '#botania:runes/fire',
+                output: 'bloodmagic:firescribetool',
+                syphon: 1000,
+                altarLevel: 2,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:altar/fire_tool'
+            },
+            {
+                input: '#botania:runes/water',
+                output: 'bloodmagic:waterscribetool',
+                syphon: 1000,
+                altarLevel: 2,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:altar/water_tool'
+            },
+            {
+                input: '#botania:runes/earth',
+                output: 'bloodmagic:earthscribetool',
+                syphon: 1000,
+                altarLevel: 2,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'bloodmagic:altar/earth_tool'
+            },
+            {
+                input: '#botania:runes/nidavellir',
+                output: 'bloodmagic:duskscribetool',
+                syphon: 2000,
+                altarLevel: 3,
+                consumptionRate: 20,
+                drainRate: 10,
+                id: 'bloodmagic:altar/dusk_tool'
             }
         ]
     };
