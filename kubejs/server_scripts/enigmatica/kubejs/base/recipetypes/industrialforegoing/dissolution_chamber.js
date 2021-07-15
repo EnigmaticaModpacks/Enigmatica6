@@ -1,44 +1,3 @@
-/*onEvent('recipes', (event) => {
-    var data = {
-        recipes: [
-            {
-                type: 'industrialforegoing:dissolution_chamber',
-                input: [
-                    {
-                        item: 'minecraft:glass_pane'
-                    }
-                ],
-                inputFluid: '{ FluidName: "pneumaticcraft:memory_essence", Amount: 1000 }',
-                processingTime: 50,
-                output: {
-                    item: 'minecraft:glass_pane',
-                    count: 1
-                },
-                outputFluid: '{ FluidName: "industrialforegoing:essence", Amount: 1000 }'
-            },
-            {
-                type: 'industrialforegoing:dissolution_chamber',
-                input: [
-                    {
-                        item: 'minecraft:glass_pane'
-                    }
-                ],
-                inputFluid: '{ FluidName: "industrialforegoing:essence", Amount: 1000 }',
-                processingTime: 50,
-                output: {
-                    item: 'minecraft:glass_pane',
-                    count: 1
-                },
-                outputFluid: '{ FluidName: "pneumaticcraft:memory_essence", Amount: 1000 }'
-            }
-        ]
-    };
-    data.recipes.forEach((recipe) => {
-        event.custom(recipe);
-    });
-});
-*/
-
 onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
@@ -60,8 +19,7 @@ onEvent('recipes', (event) => {
             inputFluid: '', // optional
             inputFluidAmount: 0, // leave at 0 for no fluid
             processingTime: 50,
-            outputItemName: '',
-            outputItemCount: 1,
+            outputItem: { item: '', count: 1 },
             outputFluid: '', // optional
             outputFluidAmount: 0, // leave at 0 for no fluid
             id: ''
@@ -74,8 +32,7 @@ onEvent('recipes', (event) => {
             inputFluid: 'pneumaticcraft:memory_essence',
             inputFluidAmount: 1000,
             processingTime: 50,
-            outputItem: 'minecraft:glass_pane',
-            outputItemCount: 1,
+            outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'industrialforegoing:essence',
             outputFluidAmount: 1000
         },
@@ -86,8 +43,7 @@ onEvent('recipes', (event) => {
             inputFluid: 'industrialforegoing:essence',
             inputFluidAmount: 1000,
             processingTime: 50,
-            outputItem: 'minecraft:glass_pane',
-            outputItemCount: 1,
+            outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'pneumaticcraft:memory_essence',
             outputFluidAmount: 1000
         }
@@ -105,7 +61,7 @@ onEvent('recipes', (event) => {
             input: ingredients,
             inputFluid: `{FluidName:"${recipe.inputFluid}",Amount:${recipe.inputFluidAmount}}`,
             processingTime: recipe.processingTime,
-            output: { item: recipe.outputItem, count: recipe.outputItemCount },
+            output: recipe.outputItem,
             outputFluid: `{FluidName:"${recipe.outputFluid}",Amount:${recipe.outputFluidAmount}}`
         });
 

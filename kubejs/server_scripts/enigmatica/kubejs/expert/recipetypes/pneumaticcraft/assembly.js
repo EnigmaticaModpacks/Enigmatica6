@@ -7,16 +7,14 @@ onEvent('recipes', (event) => {
         {
             input: 'thermal:machine_frame',
             input_count: 2,
-            output: 'kubejs:rftools_frame_parts',
-            output_count: 1,
+            output: { item: 'kubejs:rftools_frame_parts', count: 1 },
             program: 'drill',
             id: 'rftoolsbase:machine_frame'
         },
         {
             input: 'kubejs:rftools_frame_parts',
             input_count: 1,
-            output: 'rftoolsbase:machine_frame',
-            output_count: 1,
+            output: { item: 'rftoolsbase:machine_frame', count: 1 },
             program: 'laser',
             id: 'rftoolsbase:machine_frame'
         }
@@ -31,10 +29,7 @@ onEvent('recipes', (event) => {
         let re = event.custom({
             type: `pneumaticcraft:assembly_${recipe.program}`,
             input: constructed_input,
-            result: {
-                item: recipe.output,
-                count: recipe.output_count
-            },
+            result: recipe.output,
             program: recipe.program
         });
         if (recipe.id) {
