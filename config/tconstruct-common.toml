@@ -9,6 +9,10 @@
 	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
 	#If empty, all materials will show
 	showOnlyPartMaterial = ""
+	#If true, tables such as the part builder and tinker station will show all variants. If false they will show just the first entry in the tag, typically oak.
+	showAllTableVariants = true
+	#If true, anvils will show all metal variants. If false, only the first variant in the tag will show (typically tinkers bronze)
+	showAllAnvilVariants = true
 
 #Options related to recipes, limited options as a datapack allows most recipes to be modified
 [recipes]
