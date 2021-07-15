@@ -331,7 +331,6 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: 'botania:mana_tablet'
             },
-
             {
                 inputs: [
                     '#resourcefulbees:resourceful_honeycomb_block',
@@ -347,6 +346,215 @@ onEvent('recipes', (event) => {
                 output: 'resourcefulbees:t2_apiary',
                 count: 1,
                 id: 'resourcefulbees:t2_apiary'
+            },
+            {
+                inputs: [
+                    '#forge:gems/mana_diamond',
+                    'bloodmagic:firescribetool',
+                    '#forge:gems/mana_diamond',
+                    'bloodmagic:airscribetool',
+                    'bloodmagic:earthscribetool',
+                    '#forge:gems/mana_diamond',
+                    'bloodmagic:waterscribetool',
+                    '#forge:gems/mana_diamond'
+                ],
+                reagent: 'botania:livingwood_twig',
+                output: 'bloodmagic:ritualdiviner',
+                count: 1,
+                id: 'bloodmagic:ritual_diviner_0'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'naturesaura:sky_sword',
+                    'botania:pixie_dust',
+                    'atum:montu_godshard',
+                    '#botania:runes/muspelheim',
+                    'botania:pixie_dust',
+                    'naturesaura:token_rage',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/attack',
+                count: 1,
+                id: 'pedestals:upgrades/attack'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'immersiveengineering:sawblade',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/earth',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pickup',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/sawmill',
+                count: 1,
+                id: 'pedestals:upgrades/sawmill'
+            },
+            {
+                inputs: [
+                    'powah:capacitor_spirited',
+                    'thermal:rf_coil',
+                    'powah:capacitor_spirited',
+                    'immersiveengineering:coil_lv',
+                    'immersiveengineering:coil_lv',
+                    'powah:capacitor_spirited',
+                    'thermal:rf_coil',
+                    'powah:capacitor_spirited'
+                ],
+                reagent: 'pedestals:coin/sawmill',
+                output: 'pedestals:coin/rfsawmill',
+                count: 1,
+                id: 'pedestals:upgrades/rfsawmill'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_fell',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/air',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_aoe',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/chopper',
+                count: 1,
+                id: 'pedestals:upgrades/chopper'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_touch',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/earth',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_break',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/breaker',
+                count: 1,
+                id: 'pedestals:upgrades/breaker'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_freeze',
+                    'botania:pixie_dust',
+                    '#botania:runes/fire',
+                    '#botania:runes/water',
+                    'botania:pixie_dust',
+                    'botania:ender_eye_block',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/cobble',
+                count: 1,
+                id: 'pedestals:upgrades/cobblegen'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'minecraft:piston',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/sloth',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pickup',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/compactor2',
+                count: 1,
+                id: 'pedestals:upgrades/compactor2'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_craft',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/sloth',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pickup',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/crafter1',
+                count: 1,
+                id: 'pedestals:upgrades/crafter1'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_touch',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/earth',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_place_block',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/placer',
+                count: 1,
+                id: 'pedestals:upgrades/placer'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_smelt',
+                    'botania:pixie_dust',
+                    'naturesaura:token_anger',
+                    '#botania:runes/summer',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pickup',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/smelter',
+                count: 1,
+                id: 'pedestals:upgrades/smelter'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'botania:corporea_spark',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/greed',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pickup',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/import',
+                count: 1,
+                id: 'pedestals:upgrades/import'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'botania:corporea_spark',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/greed',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_ender_inventory',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                // Not a typo, items are misnamed.
+                output: 'pedestals:coin/enderexport',
+                count: 1,
+                id: 'pedestals:upgrades/enderimport'
             },
 
             /// Patchouli Removals

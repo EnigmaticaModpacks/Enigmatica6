@@ -19,7 +19,9 @@ onEvent('recipes', (event) => {
         /create:crafting\/materials\/andesite_alloy/,
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
-        'minecraft:stick'
+        'minecraft:stick',
+        'pedestals:upgrades/breaker2',
+        'pedestals:ingot_gold_from_upgrades'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
