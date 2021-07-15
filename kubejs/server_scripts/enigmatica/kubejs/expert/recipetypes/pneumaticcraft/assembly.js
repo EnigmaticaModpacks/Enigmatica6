@@ -1,16 +1,22 @@
 onEvent('recipes', (event) => {
+    if (global.isExpertMode == false) {
+        return;
+    }
+
     recipes = [
         {
-            input: '#forge:ingots/compressed_iron',
-            input_count: 4,
-            output: { item: 'pneumaticcraft:elevator_frame', count: 8 },
-            program: 'drill'
+            input: 'thermal:machine_frame',
+            input_count: 2,
+            output: { item: 'kubejs:rftools_frame_parts', count: 1 },
+            program: 'drill',
+            id: 'rftoolsbase:machine_frame'
         },
         {
-            input: 'pneumaticcraft:reinforced_brick_wall',
-            input_count: 6,
-            output: { item: 'pneumaticcraft:cannon_barrel', count: 2 },
-            program: 'drill'
+            input: 'kubejs:rftools_frame_parts',
+            input_count: 1,
+            output: { item: 'rftoolsbase:machine_frame', count: 1 },
+            program: 'laser',
+            id: 'rftoolsbase:machine_frame'
         }
     ];
     recipes.forEach((recipe) => {

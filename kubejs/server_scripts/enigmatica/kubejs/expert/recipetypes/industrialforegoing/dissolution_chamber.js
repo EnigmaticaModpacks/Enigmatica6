@@ -27,25 +27,22 @@ onEvent('recipes', (event) => {
 */
         {
             inputs: [
-                'minecraft:glass_pane'
+                'minecraft:redstone',
+                'rftoolsbase:machine_frame',
+                'minecraft:redstone',
+                'minecraft:redstone_torch',
+                'minecraft:redstone_torch',
+                '#forge:ingots/gold_copper',
+                '#forge:ingots/gold_copper',
+                '#forge:ingots/gold_copper'
             ],
-            inputFluid: 'pneumaticcraft:memory_essence',
+            inputFluid: 'tconstruct:molten_obsidian',
             inputFluidAmount: 1000,
-            processingTime: 50,
-            outputItem: { item: 'minecraft:glass_pane', count: 1 },
-            outputFluid: 'industrialforegoing:essence',
-            outputFluidAmount: 1000
-        },
-        {
-            inputs: [
-                'minecraft:glass_pane'
-            ],
-            inputFluid: 'industrialforegoing:essence',
-            inputFluidAmount: 1000,
-            processingTime: 50,
-            outputItem: { item: 'minecraft:glass_pane', count: 1 },
-            outputFluid: 'pneumaticcraft:memory_essence',
-            outputFluidAmount: 1000
+            processingTime: 600,
+            outputItem: { item: 'rftoolsbuilder:shield_block1', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rftoolsbuilder:shield_block1'
         }
     ];
 
