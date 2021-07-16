@@ -110,6 +110,18 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:glyph_gravity',
             tier: 'TWO',
             id: 'ars_nouveau:glyph_gravity'
+        },
+        {
+            input: 'naturesaura:infused_iron_hoe',
+            output: 'ars_nouveau:glyph_harvest',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_harvest'
+        },
+        {
+            input: 'naturesaura:hopper_upgrade',
+            output: 'ars_nouveau:glyph_pickup',
+            tier: 'ONE',
+            id: 'ars_nouveau:glyph_pickup'
         }
     ];
 

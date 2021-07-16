@@ -17,6 +17,19 @@ onEvent('recipes', (event) => {
             output: { item: 'rftoolsbase:machine_frame', count: 1 },
             program: 'laser',
             id: 'rftoolsbase:machine_frame'
+        },
+        {
+            input: '#forge:storage_blocks/gold',
+            input_count: 1,
+            output: { item: 'supplementaries:gold_trapdoor', count: 5 },
+            program: 'drill'
+        },
+        {
+            input: 'supplementaries:gold_trapdoor',
+            input_count: 5,
+            output: { item: 'pedestals:coin/default', count: 10 },
+            program: 'laser',
+            id: 'pedestals:upgrades/itempedestalupgradedefault'
         }
     ];
     recipes.forEach((recipe) => {
