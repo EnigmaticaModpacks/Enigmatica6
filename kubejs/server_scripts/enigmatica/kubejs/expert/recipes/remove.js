@@ -21,7 +21,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/component_steel',
         'minecraft:stick',
         'pedestals:upgrades/breaker2',
-        'pedestals:ingot_gold_from_upgrades'
+        'pedestals:ingot_gold_from_upgrades',
+        'pedestals:upgrades/recycler'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
