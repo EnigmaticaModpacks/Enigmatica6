@@ -22,7 +22,9 @@ onEvent('recipes', (event) => {
         'minecraft:stick',
         'pedestals:upgrades/breaker2',
         'pedestals:ingot_gold_from_upgrades',
-        'pedestals:upgrades/recycler'
+        'pedestals:upgrades/recycler',
+        'pedestals:upgrades/rffuelgen',
+        'pedestals:upgrades/rfexpgen'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
