@@ -799,12 +799,12 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'powah:capacitor_spirited',
-                    'botania:corporea_spark',
+                    'powah:ender_core',
                     'powah:capacitor_spirited',
                     '#botania:runes/air',
                     '#botania:runes/fire',
                     'powah:capacitor_spirited',
-                    'botania:corporea_spark',
+                    'powah:ender_core',
                     'powah:capacitor_spirited'
                 ],
                 reagent: 'pedestals:coin/default',
@@ -827,6 +827,278 @@ onEvent('recipes', (event) => {
                 output: 'pedestals:coin/xprelay',
                 count: 1,
                 id: 'pedestals:upgrades/xprelay'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:ritual_warping',
+                    'botania:pixie_dust',
+                    'naturesaura:token_fear',
+                    '#botania:runes/air',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_exchange',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/teleporter',
+                count: 1,
+                id: 'pedestals:upgrades/teleporter'
+            },
+            {
+                inputs: [
+                    'quark:basalt',
+                    'quark:basalt',
+                    'quark:basalt',
+                    'naturesaura:token_sorrow',
+                    'naturesaura:token_sorrow',
+                    'quark:basalt',
+                    'quark:basalt',
+                    'quark:basalt'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/void',
+                count: 1,
+                id: 'pedestals:upgrades/void'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_pull',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/air',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_aoe',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/magnet',
+                count: 1,
+                id: 'pedestals:upgrades/magnet'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_cut',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/spring',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_aoe',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/shearer',
+                count: 1,
+                id: 'pedestals:upgrades/shearer'
+            },
+            {
+                inputs: [
+                    'powah:capacitor_spirited',
+                    'powah:ender_core',
+                    'powah:capacitor_spirited',
+                    '#botania:runes/air',
+                    '#botania:runes/fire',
+                    'powah:capacitor_spirited',
+                    'immersiveengineering:coil_hv',
+                    'powah:capacitor_spirited'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/rfimport',
+                count: 1,
+                id: 'pedestals:upgrades/rfimport'
+            },
+            {
+                inputs: [
+                    'powah:capacitor_spirited',
+                    'powah:ender_core',
+                    'powah:capacitor_spirited',
+                    'powah:battery_spirited',
+                    'powah:battery_spirited',
+                    'powah:capacitor_spirited',
+                    'ars_nouveau:glyph_amplify',
+                    'powah:capacitor_spirited'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/rftank',
+                count: 1,
+                id: 'pedestals:upgrades/rftank'
+            },
+            {
+                inputs: [
+                    'astralsorcery:resonating_gem',
+                    'ars_nouveau:glyph_craft',
+                    'astralsorcery:resonating_gem',
+                    'naturesaura:token_joy',
+                    '#botania:runes/sloth',
+                    'astralsorcery:resonating_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'astralsorcery:resonating_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/fluidcrafter1',
+                count: 1,
+                id: 'pedestals:upgrades/fluidcrafter1'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'botania:gaia_pylon',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xpenchanter',
+                count: 1,
+                id: 'pedestals:upgrades/enchanter'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'mythicbotany:alfsteel_pylon',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xpanvil',
+                count: 1,
+                id: 'pedestals:upgrades/anvil'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'botania:rosa_arcana',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xpgrindstone',
+                count: 1,
+                id: 'pedestals:upgrades/xpgrindstone'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'create:spout',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xpbottler',
+                count: 1,
+                id: 'pedestals:upgrades/xpbottler'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_pull',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_aoe',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xpmagnet',
+                count: 1,
+                id: 'pedestals:upgrades/xpmagnet'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'pneumaticcraft:memory_stick',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/fluidxpconverter',
+                count: 1,
+                id: 'pedestals:upgrades/fluidxpconverter'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'pneumaticcraft:memory_stick',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_amplify',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xptank',
+                count: 1,
+                id: 'pedestals:upgrades/xptank'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:greater_experience_gem',
+                    'ars_nouveau:glyph_gravity',
+                    'ars_nouveau:greater_experience_gem',
+                    '#botania:runes/mana',
+                    '#botania:runes/vanaheim',
+                    'ars_nouveau:greater_experience_gem',
+                    'botania:corporea_spark',
+                    'ars_nouveau:greater_experience_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/xpdropper',
+                count: 1,
+                id: 'pedestals:upgrades/xpdropper'
+            },
+            {
+                inputs: [
+                    'astralsorcery:resonating_gem',
+                    'botania:corporea_spark',
+                    'astralsorcery:resonating_gem',
+                    '#botania:runes/air',
+                    '#botania:runes/water',
+                    'astralsorcery:resonating_gem',
+                    'ars_nouveau:glyph_pickup',
+                    'astralsorcery:resonating_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/fluidimport',
+                count: 1,
+                id: 'pedestals:upgrades/fluidimport'
+            },
+            {
+                inputs: [
+                    'astralsorcery:resonating_gem',
+                    'botania:corporea_spark',
+                    'astralsorcery:resonating_gem',
+                    'naturesaura:token_sorrow',
+                    '#botania:runes/greed',
+                    'astralsorcery:resonating_gem',
+                    'ars_nouveau:glyph_aoe',
+                    'astralsorcery:resonating_gem'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/fluidpump',
+                count: 1,
+                id: 'pedestals:upgrades/fluidpump'
             },
 
             /// Patchouli Removals
