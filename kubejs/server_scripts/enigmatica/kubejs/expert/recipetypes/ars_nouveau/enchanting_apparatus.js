@@ -15,12 +15,12 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'aquaculture:worm',
-                    'atum:osiris_godshard',
+                    '#forge:nuggets/nebu',
                     'minecraft:string',
                     'thermal:phytogro',
                     'thermal:phytogro',
                     'minecraft:string',
-                    'atum:osiris_godshard',
+                    '#forge:nuggets/nebu',
                     'aquaculture:worm'
                 ],
                 reagent: '#forge:beehives/tier_0',
