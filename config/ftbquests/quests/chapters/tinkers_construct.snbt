@@ -3,7 +3,7 @@
 	group: "74B3CF67FCEAB20F"
 	order_index: 2
 	filename: "tinkers_construct"
-	title: "Tinkers Construct"
+	title: "Tinkers' Construct"
 	icon: {
 		id: "tconstruct:tinkers_anvil"
 		Count: 1b
@@ -12,34 +12,38 @@
 		}
 	}
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
-			title: "Materials and You"
-			icon: "tconstruct:materials_and_you"
+			title: "Patterns"
+			icon: "tconstruct:pattern"
 			x: 5.5d
 			y: 2.5d
-			subtitle: "Stencils?"
+			subtitle: "What are stencils?"
+			description: ["To get started make a couple patterns. These will help you to make the parts for your first Tier 1 Tools \\& Weapons"]
 			dependencies: ["1DF74B9D5EED99EA"]
 			id: "3DF04CCD2774091C"
-			tasks: [
-				{
-					id: "5DA01BE261DD2BA9"
-					type: "item"
-					item: "tconstruct:pattern"
-					count: 6L
-				}
-				{
-					id: "62006EF24BF1022A"
-					type: "item"
-					item: "tconstruct:materials_and_you"
-				}
-			]
+			tasks: [{
+				id: "4DAFBDDD0BB13E2C"
+				type: "item"
+				item: "tconstruct:pattern"
+				count: 9L
+			}]
 		}
 		{
 			title: "Part Builder"
 			x: 4.5d
 			y: 1.5d
 			subtitle: "RIP Stencil Table"
+			description: [
+				"The Part Builder will allow you to use your newly minted patterns to create tool \\& weapon parts from materials and composites."
+				""
+				"Place your patterns in the first slot, the material you want to use in the second slot, select which part you want to make and pull it out"
+				""
+				"Patterns aren't reusable like previous version and as such will be consumed for each part you make"
+				""
+				"The right window will show you all the stats on the material you place aswell as how much material you will need for each part"
+			]
 			dependencies: ["3DF04CCD2774091C"]
 			id: "501A88E1FD99D763"
 			tasks: [{
@@ -78,7 +82,17 @@
 			x: 6.5d
 			y: 1.5d
 			subtitle: "Whats a Tool Station?"
-			dependencies: ["3DF04CCD2774091C"]
+			description: [
+				"The Tinker Station allows you to create tools from the parts that you just made. Simply select the tool you want to make on the left, place the parts and voila!"
+				""
+				"In addition, the the tinker station allows you to add modifiers and repair your tool"
+				""
+				"However, the tinker station is limited in that it cannot create broad tinkers' tools."
+			]
+			dependencies: [
+				"3DF04CCD2774091C"
+				"501A88E1FD99D763"
+			]
 			id: "47A98E407349190B"
 			tasks: [{
 				id: "6AE825EB2BFC90B8"
@@ -93,74 +107,125 @@
 			}]
 		}
 		{
+			title: "Humble Beginnings"
 			x: 5.5d
 			y: 4.0d
 			shape: "pentagon"
+			subtitle: "Stage 1"
+			description: [
+				"Like most mods, Tinkers' Construct has its own in game documentation to help guide you a long."
+				""
+				"The Materials and You book will guide you through the Tier 1 Materials and tools available to you early game"
+			]
+			hide_dependency_lines: true
+			dependencies: ["35A0F0F12F605F21"]
 			size: 1.25d
 			id: "1DF74B9D5EED99EA"
 			tasks: [{
-				id: "4621C9DA0F3A4925"
-				type: "checkmark"
-				title: "Stage 1"
+				id: "219684EC3B6F1F08"
+				type: "item"
+				item: "tconstruct:materials_and_you"
+			}]
+			rewards: [{
+				id: "5467D99AC084151D"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Basic Smelting"
 			x: 7.0d
 			y: 5.0d
 			shape: "pentagon"
+			subtitle: "Stage 2"
+			description: ["The Puny Smelting book will guide you through the Tier 2 Materials and tools. In addition, it will guide you through the process of creating your first smelter."]
 			hide_dependency_lines: true
 			dependencies: [
 				"56EE4FFAD3DB3BAC"
 				"01C75CBFDF40A6BF"
 				"21240FF3EB77662D"
+				"35A0F0F12F605F21"
 			]
 			size: 1.25d
 			id: "5F5FEF9EB38C7E37"
 			tasks: [{
-				id: "20FD8E6CE25EBD28"
-				type: "checkmark"
-				title: "Stage 2"
+				id: "1621D78BF35FE54C"
+				type: "item"
+				item: "tconstruct:puny_smelting"
+			}]
+			rewards: [{
+				id: "4FDEC1C7788345E7"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Alloys and More"
 			x: 6.5d
 			y: 6.5d
 			shape: "pentagon"
+			subtitle: "Stage 3"
 			hide_dependency_lines: true
 			dependencies: ["7F1BEA2FB32847D3"]
 			size: 1.25d
 			id: "7C4A47C9A1A40BF0"
 			tasks: [{
-				id: "5F8AC822BB8CB854"
-				type: "checkmark"
-				title: "Stage 3"
+				id: "4D92815CC38D4869"
+				type: "item"
+				item: "tconstruct:mighty_smelting"
+			}]
+			rewards: [{
+				id: "5A77FD949A9D91C4"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Byproducts Galore"
 			x: 4.5d
 			y: 6.5d
 			shape: "pentagon"
+			subtitle: "Stage 4"
 			hide_dependency_lines: true
 			dependencies: ["15D11E0263D85BA7"]
 			size: 1.25d
 			id: "30682190B9F341DE"
 			tasks: [{
-				id: "7C282FB499E69050"
-				type: "checkmark"
-				title: "Stage 4"
+				id: "2D57A8F36763395C"
+				type: "item"
+				item: "tconstruct:fantastic_foundry"
+			}]
+			rewards: [{
+				id: "0307B4AF3FD1527C"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
+			title: "Not Out Yet D:"
 			x: 4.0d
 			y: 5.0d
 			shape: "pentagon"
+			subtitle: "Stage 5"
 			dependencies: ["0000000000000FEC"]
 			size: 1.25d
 			id: "7BD97C2C11CF2DA4"
-			tasks: [{
-				id: "29042054D16BBB73"
-				type: "checkmark"
-				title: "Stage 5"
+			tasks: [
+				{
+					id: "06C869399E082838"
+					type: "item"
+					item: "tconstruct:tinkers_gadgetry"
+				}
+				{
+					id: "5CFFEE0D0D52494C"
+					type: "item"
+					item: "tconstruct:encyclopedia"
+				}
+			]
+			rewards: [{
+				id: "6134A72B6FA7FC8E"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -196,24 +261,18 @@
 		}
 		{
 			title: "I am Grout!"
-			icon: "tconstruct:puny_smelting"
+			icon: "tconstruct:grout"
 			x: 8.0d
 			y: 4.0d
 			subtitle: "Who's Groot?"
+			description: ["Grout is your prerequisite to make seared bricks for Tinkers' . A little sand here. some gravel there and with some clay you have Groot, I mean grout."]
 			dependencies: ["5F5FEF9EB38C7E37"]
 			id: "60064EDEB0676ECD"
-			tasks: [
-				{
-					id: "2F3454306E50C917"
-					type: "item"
-					item: "tconstruct:grout"
-				}
-				{
-					id: "06436285FDB2F8E0"
-					type: "item"
-					item: "tconstruct:puny_smelting"
-				}
-			]
+			tasks: [{
+				id: "2F3454306E50C917"
+				type: "item"
+				item: "tconstruct:grout"
+			}]
 		}
 		{
 			icon: "tconstruct:seared_melter"
@@ -255,44 +314,30 @@
 		}
 		{
 			title: "I am also Grout!"
-			icon: "tconstruct:fantastic_foundry"
+			icon: "tconstruct:nether_grout"
 			x: 3.5d
 			y: 7.5d
 			subtitle: "Who's Groot?"
 			dependencies: ["30682190B9F341DE"]
 			id: "3568000CFD702DBE"
-			tasks: [
-				{
-					id: "602E4585F6D928E9"
-					type: "item"
-					item: "tconstruct:nether_grout"
-				}
-				{
-					id: "7DDBE60308FF0DAA"
-					type: "item"
-					item: "tconstruct:fantastic_foundry"
-				}
-			]
+			tasks: [{
+				id: "602E4585F6D928E9"
+				type: "item"
+				item: "tconstruct:nether_grout"
+			}]
 		}
 		{
-			icon: "tconstruct:mighty_smelting"
+			icon: "tconstruct:seared_stone"
 			x: 7.5d
 			y: 7.5d
 			subtitle: "Better Than Grout"
 			dependencies: ["7C4A47C9A1A40BF0"]
 			id: "2073EBBE9E9B2A76"
-			tasks: [
-				{
-					id: "1591D1405D3D1DB3"
-					type: "item"
-					item: "tconstruct:seared_stone"
-				}
-				{
-					id: "591875AD150A66AF"
-					type: "item"
-					item: "tconstruct:mighty_smelting"
-				}
-			]
+			tasks: [{
+				id: "1591D1405D3D1DB3"
+				type: "item"
+				item: "tconstruct:seared_stone"
+			}]
 		}
 		{
 			x: 9.0d
@@ -359,6 +404,7 @@
 			x: 4.25d
 			y: -0.25d
 			shape: "pentagon"
+			description: ["Craft your first pickaxe using tier 1 materials"]
 			dependencies: [
 				"501A88E1FD99D763"
 				"47A98E407349190B"
@@ -528,6 +574,7 @@
 			x: 5.5d
 			y: -0.25d
 			shape: "pentagon"
+			description: ["Craft your first sword using tier 1 materials"]
 			dependencies: [
 				"501A88E1FD99D763"
 				"47A98E407349190B"
@@ -663,6 +710,7 @@
 			y: -0.25d
 			shape: "pentagon"
 			subtitle: "Who Needs Shovels"
+			description: ["Craft your first mattock using tier 1 materials"]
 			dependencies: [
 				"501A88E1FD99D763"
 				"47A98E407349190B"
@@ -1645,6 +1693,29 @@
 					item: "minecraft:end_crystal"
 				}
 			]
+		}
+		{
+			title: "Where It All Begins"
+			x: 5.5d
+			y: 5.5d
+			description: [
+				"Welcome to Tinkers' Construct 3! A new modern spin on a classic mod. "
+				""
+				"At its core, Tinker's Construct is all about creating customized tools \\& weapons from a variety of materials, composites and alloys"
+				""
+				"Create your own everlasting tools and weapons with custom modifiers, traits and abilities."
+				""
+				"This mod is still under early development so check out the Tinkers' What's New Page for the lastest info"
+				""
+				"https://github.com/SlimeKnights/TinkersConstruct/wiki/New-in-Tinkers%27-Construct-3"
+				""
+				"~oniraM"
+			]
+			id: "35A0F0F12F605F21"
+			tasks: [{
+				id: "2F1C8096FC635FC1"
+				type: "checkmark"
+			}]
 		}
 	]
 }
