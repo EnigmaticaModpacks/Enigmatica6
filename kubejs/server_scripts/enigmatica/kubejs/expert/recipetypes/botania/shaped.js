@@ -63,6 +63,27 @@ onEvent('recipes', (event) => {
                 C: 'botania:corporea_block'
             },
             id: 'botania:corporea_crystal_cube'
+        },
+        {
+            output: 'botania:hourglass',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#forge:nuggets/nebu',
+                B: 'atum:crystal_glass',
+                C: '#forge:dusts/redstone',
+                D: '#forge:gems/mana'
+            },
+            id: 'botania:hourglass'
+        },
+        {
+            output: 'botania:ender_eye_block',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'create:polished_rose_quartz',
+                B: 'minecraft:ender_eye',
+                C: 'architects_palette:abyssaline'
+            },
+            id: 'botania:ender_eye_block'
         }
     ];
 

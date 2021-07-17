@@ -4,11 +4,13 @@
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
+    "baseLayerTexture": "other/rocky",
     "ColorData": {
-        "honeycombColor": "SLATEGRAY",
-        "isBeeColored": true,
-        "primaryColor": "SLATEGRAY",
-        "secondaryColor": "GRAY"
+        "honeycombColor": "#8f8f8f",
+        "isBeeColored": false,
+        "isRainbowBee": false,
+        "isGlowing": false,
+        "isEnchanted": false
     },
     "CombatData": {
         "isPassive": false,

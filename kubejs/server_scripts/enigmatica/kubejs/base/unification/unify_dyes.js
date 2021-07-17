@@ -10,6 +10,7 @@ onEvent('recipes', (event) => {
         thermal_dye_centrifuge(event, recipe);
         atum_quern_milling(event, recipe);
         shapeless_dye_crafting(event, recipe);
+        occultism_dye_crushing(event, recipe);
     });
 });
 
@@ -194,4 +195,26 @@ function shapeless_dye_crafting(event, recipe) {
         inputs = [recipe.input];
 
     event.shapeless(output, inputs);
+}
+function occultism_dye_crushing(event, recipe) {
+    if (recipe.input == 'minecraft:bone') {
+        return;
+    }
+
+    var baseCount = 2,
+        multiplier = 1;
+    if (recipe.type == 'large') {
+        multiplier = 2;
+    }
+
+    var count = baseCount * multiplier,
+        output = recipe.primary,
+        input = recipe.input;
+
+    event.custom({
+        type: 'occultism:crushing',
+        ingredient: { item: input },
+        result: { item: output, count: count },
+        crushing_time: 50
+    });
 }

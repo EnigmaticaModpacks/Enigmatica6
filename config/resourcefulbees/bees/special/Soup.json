@@ -4,11 +4,10 @@
     "sizeModifier": 1,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
+    "baseLayerTexture": "other/soup",
     "ColorData": {
-        "honeycombColor": "ROSYBROWN",
-        "isBeeColored": true,
-        "primaryColor": "RED",
-        "secondaryColor": "ROSYBROWN"
+        "honeycombColor": "#8b7173",
+        "modelType": "MUSHROOM"
     },
     "CombatData": {
         "isPassive": false,
@@ -52,9 +51,9 @@
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:RARE",
         "biomeBlacklist": "tag:OCEAN",
-        "spawnWeight": 1,
-        "minGroupSize": 2,
-        "maxGroupSize": 4,
+        "spawnWeight": 3,
+        "minGroupSize": 1,
+        "maxGroupSize": 1,
         "lightLevel": "ANY"
     },
     "BreedData": {

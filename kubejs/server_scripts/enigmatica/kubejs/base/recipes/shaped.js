@@ -217,76 +217,6 @@ onEvent('recipes', (event) => {
             }
         },
         {
-            // Add Oak Recipes for Forest Combs
-            output: Item.of('minecraft:oak_log', 8),
-            pattern: ['BCB', 'C C', 'BCB'],
-            key: {
-                C: 'resourcefulbees:forest_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:oak_sapling', 4),
-            pattern: [' C ', 'B B', ' C '],
-            key: {
-                C: 'resourcefulbees:forest_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:oak_leaves', 16),
-            pattern: ['   ', 'B C', '   '],
-            key: {
-                C: 'resourcefulbees:forest_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            // Add Stone Recipes for Rocky Combs
-            output: Item.of('minecraft:stone', 32),
-            pattern: ['BCB', 'C C', 'BCB'],
-            key: {
-                C: 'resourcefulbees:rocky_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:cobblestone', 32),
-            pattern: ['BCB', 'C C', 'BCB'],
-            key: {
-                C: 'resourcefulbees:rocky_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:diorite', 32),
-            pattern: ['CBC', 'D D', 'CBC'],
-            key: {
-                B: 'resourcefulbees:rocky_honeycomb',
-                C: 'resourcefulbees:wax',
-                D: 'resourcefulbees:nether_quartz_honeycomb'
-            }
-        },
-        {
-            output: Item.of('minecraft:andesite', 32),
-            pattern: ['CDC', 'B B', 'CDC'],
-            key: {
-                B: 'resourcefulbees:rocky_honeycomb',
-                C: 'resourcefulbees:wax',
-                D: 'resourcefulbees:nether_quartz_honeycomb'
-            }
-        },
-        {
-            // Add Wet Comb -> Water Bucket Recipe
-            output: 'minecraft:water_bucket',
-            pattern: ['BCB', 'CAC', 'BCB'],
-            key: {
-                C: 'resourcefulbees:water_honeycomb',
-                B: 'resourcefulbees:wax',
-                A: 'minecraft:bucket'
-            }
-        },
-        {
             // Add Blaze + Coal Comb -> Lava Bucket Recipe
             output: 'minecraft:lava_bucket',
             pattern: ['BDB', 'CAC', 'BDB'],
@@ -558,7 +488,7 @@ onEvent('recipes', (event) => {
             id: 'industrialforegoing:block_breaker'
         },
         {
-            output: 'industrialforegoing:conveyor',
+            output: Item.of('industrialforegoing:conveyor', 6),
             pattern: ['ppp', 'iri', 'ppp'],
             key: {
                 p: '#forge:plastic',
@@ -978,6 +908,31 @@ onEvent('recipes', (event) => {
                 B: '#forge:nuggets/pewter'
             },
             id: 'supplementaries:candle_holder'
+        },
+        {
+            output: Item.of('immersiveengineering:sawdust', 6),
+            pattern: ['AAA', 'AAA'],
+            key: {
+                A: '#forge:sawdust'
+            },
+            id: 'immersiveengineering:crafting/sawdust'
+        },
+        {
+            output: 'thermal:sawdust_block',
+            pattern: ['AAA', 'AAA', 'AAA'],
+            key: {
+                A: '#forge:sawdust'
+            },
+            id: 'thermal:storage/sawdust_block'
+        },
+        {
+            output: 'cfm:post_box',
+            pattern: ['AAA', 'ABA', 'A A'],
+            key: {
+                A: '#forge:ingots/iron_aluminum',
+                B: '#forge:chests'
+            },
+            id: 'cfm:post_box'
         }
     ];
 

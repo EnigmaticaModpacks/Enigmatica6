@@ -12,7 +12,7 @@
 
 	[blocks.speaker_block]
 		#maximum range
-		#Range: 0 ~ 256
+		#Range: 0 ~ 10000000
 		range = 64
 
 	[blocks.bellows]
@@ -131,10 +131,6 @@
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
 
-	[blocks.timber_frame]
-		#Replace a timber frame with wattle and daub block when daub is placed in it
-		replace_daub = true
-
 #Configure spawning conditions
 [spawns]
 
@@ -205,7 +201,7 @@
 		#allow wall lanterns placement
 		enabled = true
 		#mod ids of mods that have lantern block that extend the base lantern class but don't look like one
-		mod_blacklist = ["extlights", "betterendforge"]
+		mod_blacklist = ["extlights", "betterendforge", "tconstruct"]
 
 	[tweaks.bells_tweaks]
 		#ring a bell by clicking on a chain that's connected to it
@@ -271,4 +267,11 @@
 		#max distance at which a bound flute will allow a pet to teleport
 		#Range: 0 ~ 500
 		bound_distance = 64
+
+	[items.bomb]
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 2.0
+		#Do bombs break blocks like tnt?
+		break_blocks = false
 

@@ -267,9 +267,6 @@
 		#A modifier to apply to the energy costs of every refinery recipe
 		#Range: 0.001 ~ 1000.0
 		energyModifier = 1.0
-		#A modifier to apply to the time of every refinery recipe
-		#Range: 0.001 ~ 1000.0
-		timeModifier = 1.0
 
 	[machines.auto_workbench]
 		#A modifier to apply to the energy costs of every auto workbench recipe
@@ -313,8 +310,15 @@
 		#The maximum amount of damage Graphite Electrodes can take. While the furnace is working, electrodes sustain 1 damage per tick, so this is effectively the lifetime in ticks. The default value of 96000 makes them last for 8 consecutive ingame days
 		#Range: > 1
 		electrodeDamage = 96000
-		#Set this to false to disable the Arc Furnace's recycling of armors and tools
-		recycle = false
+		#The recycling functionality of the arc furnace is no longer controlled by a config option.
+		#Like all IE recipes, this is now controlled via a datapack, using the recipe file:
+		#immersiveengineering/recipes/arc_recycling_list.json
+		#To disable recycling, add that file to your datapack and fill it with the following content:
+		#{
+		#  "type": "immersiveengineering:generated_list",
+		#  "conditions": [ { "type": "forge:false" } ]
+		#}
+		recycle = ""
 
 	[machines.excavator]
 		#The Flux per tick the Excavator will consume to dig
@@ -335,7 +339,7 @@
 		#Range: 0.0 ~ 1.0
 		initial_depletion = 0.2
 		#List of dimensions that can't contain minerals. Default: The End.
-		dimBlacklist = ["minecraft:dimension_type"]
+		dimBlacklist = ["minecraft:the_end"]
 
 [ores]
 	#The retrogeneration key. Basically IE checks if this key is saved in the chunks data. If it isn't, it will perform retrogen on all ores marked for retrogen.
@@ -449,8 +453,6 @@
 		retrogen_enable = false
 
 [tools]
-	#Set this to true to completely disable the ore-crushing recipes with the Engineers Hammer
-	disable_hammer_crushing = false
 	#The maximum durability of the Engineer's Hammer. Used up when hammering ingots into plates.
 	#Range: > 1
 	hammer_durability = 128

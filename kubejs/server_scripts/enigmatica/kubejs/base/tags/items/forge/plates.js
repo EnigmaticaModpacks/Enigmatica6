@@ -1,3 +1,1 @@
-onEvent('item.tags', (event) => {
-    event.get('forge:plates/lapis').add('create:lapis_sheet');
-});
+//TODO: Remove in 0.6.0

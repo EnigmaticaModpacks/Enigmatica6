@@ -10,7 +10,8 @@
         "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
-        "isEnchanted": false
+        "isEnchanted": false,
+        "modelType": "QUEEN"
     },
     "CombatData": {
         "isPassive": false,
@@ -49,7 +50,7 @@
         "canSpawnInWorld": true,
         "biomeWhitelist": "minecraft:nether_wastes, minecraft:soul_sand_valley, minecraft:basalt_deltas",
         "biomeBlacklist": "tag:OVERWORLD,END",
-        "spawnWeight": 1,
+        "spawnWeight": 2,
         "minGroupSize": 1,
         "maxGroupSize": 2,
         "lightLevel": "ANY"

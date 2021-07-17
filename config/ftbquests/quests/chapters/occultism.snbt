@@ -13,6 +13,7 @@
 		}
 	}
 	default_quest_shape: ""
+	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "We've Got Spirits!"
@@ -232,27 +233,20 @@
 				"0000000000000DD9"
 			]
 			id: "0000000000000CF7"
-			tasks: [
-				{
-					id: "0000000000000CF8"
-					type: "advancement"
-					title: "Summon Foliot Crusher"
-					icon: {
-						id: "occultism:book_of_binding_bound_foliot"
-						Count: 1b
-						tag: {
-							spiritName: "Reiirtron"
-						}
+			tasks: [{
+				id: "0000000000000CF8"
+				type: "advancement"
+				title: "Summon Foliot Crusher"
+				icon: {
+					id: "occultism:book_of_binding_bound_foliot"
+					Count: 1b
+					tag: {
+						spiritName: "Reiirtron"
 					}
-					advancement: "occultism:summon_foliot_crusher"
-					criterion: ""
 				}
-				{
-					id: "0000000000000D8D"
-					type: "item"
-					item: "occultism:book_of_binding_foliot"
-				}
-			]
+				advancement: "occultism:summon_foliot_crusher"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "0000000000000CFB"
@@ -272,7 +266,6 @@
 			]
 		}
 		{
-			icon: "occultism:candle_white"
 			x: 9.0d
 			y: 0.5d
 			subtitle: "Like Pigs to Slaughter"
@@ -289,7 +282,14 @@
 				{
 					id: "0000000000000DF3"
 					type: "item"
-					item: "occultism:candle_white"
+					title: "Any #forge:candles"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:candles"
+						}
+					}
 				}
 				{
 					id: "0000000000000DF4"
@@ -452,25 +452,11 @@
 					}
 				}
 			}]
-			rewards: [
-				{
-					id: "0000000000000E27"
-					type: "item"
-					title: "Golden Chalk"
-					item: {
-						id: "occultism:chalk_gold"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-				}
-				{
-					id: "0000000000000E28"
-					type: "xp"
-					xp: 400
-				}
-			]
+			rewards: [{
+				id: "0000000000000E28"
+				type: "xp"
+				xp: 400
+			}]
 		}
 		{
 			x: 3.0d
@@ -497,17 +483,12 @@
 					xp: 500
 				}
 				{
-					id: "0000000000000E41"
-					type: "item"
-					title: "Purple Chalk"
-					item: {
-						id: "occultism:chalk_purple"
-						Count: 1b
-						tag: {
-							Damage: 0
-						}
-					}
-					count: 4
+					id: "64B928DADA731482"
+					type: "command"
+					title: "Occultism Epic Loot Chest"
+					icon: "kubejs:epic_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+					player_command: false
 				}
 			]
 		}
@@ -788,8 +769,8 @@
 		}
 		{
 			title: "Soul Gem"
-			x: 7.0d
-			y: 1.0d
+			x: 4.5d
+			y: 2.0d
 			shape: "hexagon"
 			subtitle: "Is That a Mob in Your Pocket, or Are You Just Happy to See Me?"
 			description: [
@@ -799,7 +780,10 @@
 				""
 				"Put the Soul Gem in your hand and right click any mob with it, the mob will be stored in the soul gem to be placed back in the world at any time with another right click!"
 			]
-			dependencies: ["0000000000000D9C"]
+			dependencies: [
+				"0000000000000D9C"
+				"0000000000000D9E"
+			]
 			id: "0000000000000DBC"
 			tasks: [{
 				id: "0000000000000DBD"
@@ -820,7 +804,7 @@
 			}]
 		}
 		{
-			x: 8.0d
+			x: 7.0d
 			y: 4.5d
 			subtitle: "I Wear My Otherworld Goggles at Night"
 			description: [
@@ -862,7 +846,7 @@
 			]
 		}
 		{
-			x: 5.0d
+			x: 6.0d
 			y: 1.0d
 			shape: "hexagon"
 			subtitle: "It's Bigger on the Inside!!"
@@ -952,10 +936,13 @@
 		}
 		{
 			icon: "minecraft:end_stone"
-			x: 2.0d
-			y: -0.5d
+			x: 5.0d
+			y: -1.0d
 			shape: "hexagon"
-			dependencies: ["0000000000000DC6"]
+			dependencies: [
+				"0000000000000DC6"
+				"0000000000000D9E"
+			]
 			id: "0000000000000DC4"
 			tasks: [
 				{
@@ -994,18 +981,15 @@
 		}
 		{
 			icon: "minecraft:bone"
-			x: 3.0d
-			y: 0.5d
+			x: 5.0d
+			y: 1.0d
 			shape: "hexagon"
 			description: [
 				"Through rituals, you have the ability to possess certain mobs with spirits."
 				""
 				"These possessed mobs are a bit stronger, but they also have a chance at dropping a bit more items when killed."
 			]
-			dependencies: [
-				"0000000000000D9C"
-				"0000000000000D9E"
-			]
+			dependencies: ["0000000000000D9C"]
 			id: "0000000000000DC6"
 			tasks: [
 				{
@@ -1043,8 +1027,8 @@
 		}
 		{
 			icon: "minecraft:ender_pearl"
-			x: 1.0d
-			y: -1.5d
+			x: 4.0d
+			y: -1.0d
 			shape: "hexagon"
 			dependencies: ["0000000000000DC4"]
 			id: "0000000000000DC8"
@@ -1320,8 +1304,8 @@
 		{
 			title: "Control the Weather!"
 			icon: "minecraft:sunflower"
-			x: 3.5d
-			y: 2.5d
+			x: 3.0d
+			y: 1.5d
 			shape: "hexagon"
 			description: [
 				"Certain spirits have the ability to control the weather in our world."
@@ -1377,8 +1361,8 @@
 		}
 		{
 			icon: "minecraft:clock"
-			x: 2.5d
-			y: 2.5d
+			x: 2.0d
+			y: 1.5d
 			shape: "hexagon"
 			subtitle: "What Time is It?!?!"
 			description: [
@@ -1551,21 +1535,14 @@
 			]
 			dependencies: ["0000000000000CF7"]
 			id: "0000000000000E00"
-			tasks: [
-				{
-					id: "0000000000000E01"
-					type: "advancement"
-					title: "Summon Otherworld Sapling Trader"
-					icon: "occultism:otherworld_sapling"
-					advancement: "occultism:summon_foliot_sapling_trader"
-					criterion: ""
-				}
-				{
-					id: "0000000000000E02"
-					type: "item"
-					item: "occultism:book_of_binding_foliot"
-				}
-			]
+			tasks: [{
+				id: "0000000000000E01"
+				type: "advancement"
+				title: "Summon Otherworld Sapling Trader"
+				icon: "occultism:otherworld_sapling"
+				advancement: "occultism:summon_foliot_sapling_trader"
+				criterion: ""
+			}]
 			rewards: [{
 				id: "0000000000000E03"
 				type: "item"
@@ -1642,21 +1619,14 @@
 			]
 			dependencies: ["0000000000000CF7"]
 			id: "0000000000000E0A"
-			tasks: [
-				{
-					id: "0000000000000E0B"
-					type: "advancement"
-					title: "Summon Foliot Transporter"
-					icon: "minecraft:chest_minecart"
-					advancement: "occultism:summon_foliot_transport_items"
-					criterion: ""
-				}
-				{
-					id: "0000000000000E0C"
-					type: "item"
-					item: "occultism:book_of_binding_foliot"
-				}
-			]
+			tasks: [{
+				id: "0000000000000E0B"
+				type: "advancement"
+				title: "Summon Foliot Transporter"
+				icon: "minecraft:chest_minecart"
+				advancement: "occultism:summon_foliot_transport_items"
+				criterion: ""
+			}]
 			rewards: [{
 				id: "0000000000000E23"
 				type: "command"
@@ -1728,22 +1698,14 @@
 			]
 			dependencies: ["0000000000000D9E"]
 			id: "0000000000000F3C"
-			tasks: [
-				{
-					id: "0000000000000F3D"
-					type: "advancement"
-					title: "Summon Drikwing Familiar"
-					icon: "minecraft:feather"
-					advancement: "occultism:familiar_otherworld_bird"
-					criterion: ""
-				}
-				{
-					id: "0000000000000EDE"
-					type: "kill"
-					entity: "minecraft:parrot"
-					value: 1L
-				}
-			]
+			tasks: [{
+				id: "0000000000000F3D"
+				type: "advancement"
+				title: "Summon Drikwing Familiar"
+				icon: "minecraft:feather"
+				advancement: "occultism:familiar_otherworld_bird"
+				criterion: ""
+			}]
 			rewards: [
 				{
 					id: "0000000000000EDF"
@@ -1761,7 +1723,7 @@
 			]
 		}
 		{
-			x: 6.0d
+			x: 7.0d
 			y: 1.0d
 			shape: "hexagon"
 			subtitle: "Ooooh shiney!!!"

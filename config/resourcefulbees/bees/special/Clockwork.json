@@ -4,11 +4,10 @@
     "sizeModifier": 1,
     "hasHoneycomb": true,
     "traits": ["can_swim"],
+    "baseLayerTexture": "other/clockwork",
     "ColorData": {
-        "honeycombColor": "BROWN",
-        "isBeeColored": true,
-        "primaryColor": "BROWN",
-        "secondaryColor": "ROSYBROWN"
+        "honeycombColor": "#70522e",
+        "modelType": "ARMORED"
     },
     "CombatData": {
         "isPassive": false,
@@ -50,9 +49,9 @@
         "canSpawnInWorld": true,
         "biomeWhitelist": "tag:RARE",
         "biomeBlacklist": "tag:OCEAN",
-        "spawnWeight": 1,
-        "minGroupSize": 2,
-        "maxGroupSize": 4,
+        "spawnWeight": 3,
+        "minGroupSize": 1,
+        "maxGroupSize": 1,
         "lightLevel": "ANY"
     },
     "BreedData": {
