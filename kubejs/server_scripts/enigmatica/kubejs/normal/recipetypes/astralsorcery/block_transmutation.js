@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
     var data = {
-        recipes: [{ inputTag: '#forge:workbench', output: 'astralsorcery:altar_discovery', starlight: 60 }]
+        recipes: [{ inputTag: '#forge:workbenches', output: 'astralsorcery:altar_discovery', starlight: 60 }]
     };
     data.recipes.forEach((recipe) => {
         Ingredient.of(recipe.inputTag).stacks.forEach((input) => {
