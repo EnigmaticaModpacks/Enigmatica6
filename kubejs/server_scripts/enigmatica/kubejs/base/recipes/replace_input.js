@@ -140,7 +140,7 @@ onEvent('recipes', (event) => {
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
 
     event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
-    event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbench');
+    event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbenches');
 
     event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
     event.replaceInput(

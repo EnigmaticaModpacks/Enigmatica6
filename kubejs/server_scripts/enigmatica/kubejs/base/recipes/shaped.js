@@ -933,6 +933,16 @@ onEvent('recipes', (event) => {
                 B: '#forge:chests'
             },
             id: 'cfm:post_box'
+        },
+        {
+            output: 'rftoolscontrol:workbench',
+            pattern: ['C', 'F', 'X'],
+            key: {
+                C: '#forge:workbenches',
+                X: '#forge:chests/wooden',
+                F: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolscontrol:workbench'
         }
     ];
 
