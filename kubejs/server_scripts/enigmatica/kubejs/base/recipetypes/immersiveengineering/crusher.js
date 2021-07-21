@@ -93,6 +93,12 @@ onEvent('recipes', (event) => {
                 input: 'minecraft:sugar_cane',
                 output: Item.of('minecraft:sugar', 2),
                 secondary: [Item.of('minecraft:sugar').chance(0.1)]
+            },
+            {
+                input: 'minecraft:nether_wart_block',
+                output: Item.of('minecraft:nether_wart', 3),
+                secondary: [Item.of('minecraft:nether_wart').chance(0.5)],
+                id: 'immersiveengineering:crusher/nether_wart'
             }
         ]
     };
