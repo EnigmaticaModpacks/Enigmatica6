@@ -66,6 +66,38 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:lodestone'
             },
             id: 'naturesaura:hopper_upgrade'
+        },
+        {
+            output: 'naturesaura:aura_cache',
+            pattern: ['BAB', 'ACA', 'BAB'],
+            key: {
+                A: '#forge:ingots/infused_iron',
+                B: 'naturesaura:infused_stone',
+                C: 'resourcefulbees:wooden_honey_tank'
+            },
+            id: 'naturesaura:aura_cache'
+        },
+        {
+            output: 'naturesaura:animal_container',
+            pattern: ['ABA', 'CDC', 'DDD'],
+            key: {
+                A: '#resourcefulbees:resourceful_honeycomb',
+                B: 'botania:forest_eye',
+                C: '#forge:crops',
+                D: 'naturesaura:infused_brick'
+            },
+            id: 'naturesaura:animal_container'
+        },
+        {
+            output: 'naturesaura:aura_detector',
+            pattern: ['ADA', 'DBD', 'ACA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: 'botania:forest_eye',
+                C: 'botania:redstone_root',
+                D: '#forge:ingots/infused_iron'
+            },
+            id: 'naturesaura:aura_detector'
         }
     ];
 

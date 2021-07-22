@@ -289,6 +289,38 @@ onEvent('recipes', (event) => {
                 count: 1,
                 sapling: 'minecraft:oak_sapling',
                 id: 'resourcefulbees:t3_apiary'
+            },
+            {
+                inputs: [
+                    { item: 'meetyourfight:spectres_eye' }, //top
+                    { tag: 'forge:ingots/silver' }, //bottom
+                    { item: 'naturesaura:gold_leaf' }, //left
+                    { item: 'naturesaura:gold_leaf' }, //right
+                    { item: 'farmersdelight:tree_bark' }, //topleft
+                    { item: 'farmersdelight:tree_bark' }, //bottomright
+                    { item: 'farmersdelight:tree_bark' }, //topright
+                    { item: 'farmersdelight:tree_bark' } //bottomleft
+                ],
+                output: 'naturesaura:eye',
+                count: 1,
+                sapling: 'byg:blue_enchanted_sapling',
+                id: 'naturesaura:tree_ritual/eye'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:eye' }, //top
+                    { tag: 'forge:ingots/sky' }, //bottom
+                    { tag: 'forge:ingots/sky' }, //left
+                    { item: 'naturesaura:end_flower' }, //right
+                    { item: 'naturesaura:gold_leaf' }, //topleft
+                    { item: 'naturesaura:gold_leaf' }, //bottomright
+                    { item: 'botania:lens_normal' }, //topright
+                    { item: 'upgrade_aquatic:elder_eye' } //bottomleft
+                ],
+                output: 'naturesaura:eye_improved',
+                count: 1,
+                sapling: 'byg:blue_enchanted_sapling',
+                id: 'naturesaura:tree_ritual/eye_improved'
             }
             /*
             ,

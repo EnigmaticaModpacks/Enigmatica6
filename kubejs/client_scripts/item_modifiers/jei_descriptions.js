@@ -228,6 +228,22 @@ onEvent('jei.information', (event) => {
         {
             items: ['quark:root_item'],
             description: ['Drops occasionally when breaking Cave Roots.']
+        },
+        {
+            items: ['meetyourfight:phantoplasm'],
+            description: ['Drops from the Bellringer. Craft a Haunted Bell to summon.']
+        },
+        {
+            items: ['meetyourfight:mossy_tooth'],
+            description: ['Drops from Swampjaw. Craft a Fossil Bait to summon.']
+        },
+        {
+            items: ['meetyourfight:fortunes_favor'],
+            description: [`Drops from Dame Fortuna. Craft a Devil's Ante to summon.`]
+        },
+        {
+            items: ['atum:ectoplasm'],
+            description: [`Drops from Wraiths in the sandy wastes of Atum.`]
         }
     ];
 
