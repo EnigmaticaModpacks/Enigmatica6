@@ -1,10 +1,9 @@
 {
-    "flower": "minecraft:nether_wart",
+    "flower": "tconstruct:magma_cake",
     "maxTimeInHive": 4800,
     "sizeModifier": 1.0,
     "traits": ["blaze", "nether", "wither", "can_swim"],
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "baseLayerTexture": "other/blaze",
     "ColorData": {
         "honeycombColor": "#fff32d",
@@ -27,6 +26,27 @@
             "inputID": "entity:resourcefulbees:creeper_bee",
             "outputs": [
               {"outputID": "entity:resourcefulbees:ghast_bee", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:thermal:basalz",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:basalz_bee", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:thermal:blitz",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:blitz_bee", "weight": 10}
+            ]
+          },
+          {
+            "type": "ENTITY",
+            "inputID": "entity:thermal:blizz",
+            "outputs": [
+              {"outputID": "entity:resourcefulbees:blizz_bee", "weight": 10}
             ]
           }
         ]

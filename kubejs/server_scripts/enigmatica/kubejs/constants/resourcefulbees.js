@@ -84,7 +84,8 @@ const honeyVarieties = [
     'resourcefulbees:water_honey',
     'resourcefulbees:wither_honey',
     'resourcefulbees:illuminating_honey',
-    'resourcefulbees:rocky_honey'
+    'resourcefulbees:rocky_honey',
+    'resourcefulbees:meaty_honey'
 ];
 
 const combVariants = [
@@ -135,5 +136,25 @@ const combVariants = [
     'zinc',
     'zombie',
     'forest',
-    'rocky'
+    'rocky',
+    'industrious',
+    'bloody',
+    'elven',
+    'infused',
+    'mana',
+    'sky',
+    'starry',
+    'tainted',
+    'terrestrial',
+    'enderslime',
+    'ichor',
+    'skyslime',
+    'cobalt',
+    'soup',
+    'clockwork',
+    'spelling',
+    'wasabee',
+    'basalz',
+    'blitz',
+    'blizz'
 ];
