@@ -122,6 +122,12 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:glyph_pickup',
             tier: 'ONE',
             id: 'ars_nouveau:glyph_pickup'
+        },
+        {
+            input: 'naturesaura:furnace_heater',
+            output: 'ars_nouveau:glyph_smelt',
+            tier: 'TWO',
+            id: 'ars_nouveau:glyph_smelt'
         }
     ];
 
