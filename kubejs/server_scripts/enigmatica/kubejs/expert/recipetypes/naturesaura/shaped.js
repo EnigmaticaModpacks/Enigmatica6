@@ -98,6 +98,16 @@ onEvent('recipes', (event) => {
                 D: '#forge:ingots/infused_iron'
             },
             id: 'naturesaura:aura_detector'
+        },
+        {
+            output: 'naturesaura:placer',
+            pattern: ['ACA', 'ABA', 'ACA'],
+            key: {
+                A: 'undergarden:tremblecrust',
+                B: 'botania:corporea_funnel',
+                C: '#forge:ingots/infused_iron'
+            },
+            id: 'naturesaura:placer'
         }
     ];
 

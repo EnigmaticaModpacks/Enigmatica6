@@ -321,6 +321,33 @@ onEvent('recipes', (event) => {
                 count: 1,
                 sapling: 'byg:blue_enchanted_sapling',
                 id: 'naturesaura:tree_ritual/eye_improved'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_brick' }, //top
+                    { item: 'naturesaura:infused_stone' }, //bottom
+                    { item: 'botania:brewery' }, //left
+                    { tag: 'forge:ingots/sky' }, //right
+                    { item: 'naturesaura:gold_leaf' }, //topleft
+                    { item: 'eidolon:gold_inlay' } //bottomright
+                ],
+                output: 'naturesaura:conversion_catalyst',
+                count: 1,
+                sapling: 'architects_palette:twisted_sapling',
+                id: 'naturesaura:tree_ritual/conversion_catalyst'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_brick' }, //top
+                    { item: 'naturesaura:infused_stone' }, //bottom
+                    { tag: 'forge:ingots/andesite_alloy' }, //left
+                    { tag: 'forge:ingots/andesite_alloy' }, //right
+                    { item: 'naturesaura:token_anger' } //topleft
+                ],
+                output: 'naturesaura:crushing_catalyst',
+                count: 1,
+                sapling: 'undergarden:wigglewood_sapling',
+                id: 'naturesaura:tree_ritual/crushing_catalyst'
             }
             /*
             ,

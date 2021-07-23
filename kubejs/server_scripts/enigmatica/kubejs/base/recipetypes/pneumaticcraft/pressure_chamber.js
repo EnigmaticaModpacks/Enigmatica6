@@ -36,11 +36,6 @@ onEvent('recipes', (event) => {
                 pressure: 1.5,
                 output: [{ item: 'create:wheat_flour', count: 2 }],
                 id: 'wheat_flour'
-            },
-            {
-                ingredients: [{ type: 'pneumaticcraft:stacked_item', item: 'minecraft:snow_block', count: 4 }],
-                pressure: 2.0,
-                output: [{ item: 'betterendforge:dense_snow', count: 1 }]
             }
         ]
     };

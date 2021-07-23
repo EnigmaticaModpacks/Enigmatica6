@@ -15,17 +15,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:nuggets/terminite' },
-                { tag: 'forge:nuggets/terminite' },
-                { tag: 'forge:nuggets/terminite' },
+                { tag: 'forge:ingots/terminite' },
                 { item: 'botania:mana_pearl' },
                 { item: 'resourcefulbees:terrestrial_honeycomb' },
-                { item: 'resourcefulbees:terrestrial_honeycomb' },
-                { item: 'resourcefulbees:terrestrial_honeycomb' },
                 { item: 'botania:mana_diamond' },
-                { tag: 'forge:nuggets/iesnium' },
-                { tag: 'forge:nuggets/iesnium' },
-                { tag: 'forge:nuggets/iesnium' },
+                { tag: 'forge:ingots/iesnium' },
                 { item: 'botania:quartz_mana' }
             ],
             output: { item: 'botania:terrasteel_ingot' },
@@ -33,17 +27,11 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:nuggets/terminite' },
-                { tag: 'forge:nuggets/terminite' },
-                { tag: 'forge:nuggets/terminite' },
+                { tag: 'forge:ingots/terminite' },
                 { item: 'botania:mana_pearl' },
-                { tag: 'forge:nuggets/manasteel' },
-                { tag: 'forge:nuggets/manasteel' },
-                { tag: 'forge:nuggets/manasteel' },
+                { tag: 'forge:ingots/manasteel' },
                 { item: 'botania:mana_diamond' },
-                { tag: 'forge:nuggets/iesnium' },
-                { tag: 'forge:nuggets/iesnium' },
-                { tag: 'forge:nuggets/iesnium' },
+                { tag: 'forge:ingots/iesnium' },
                 { item: 'botania:quartz_mana' }
             ],
             output: { item: 'botania:terrasteel_ingot' },
