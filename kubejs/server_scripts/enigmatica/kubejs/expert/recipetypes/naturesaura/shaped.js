@@ -103,7 +103,7 @@ onEvent('recipes', (event) => {
             output: 'naturesaura:placer',
             pattern: ['ACA', 'ABA', 'ACA'],
             key: {
-                A: 'undergarden:tremblecrust',
+                A: 'naturesaura:gold_brick',
                 B: 'botania:corporea_funnel',
                 C: '#forge:ingots/infused_iron'
             },
