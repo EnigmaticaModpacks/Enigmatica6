@@ -56,7 +56,6 @@ onEvent('recipes', (event) => {
                 input: 'minecraft:vine',
                 output: 'quark:root',
                 aura_type: 'naturesaura:nether',
-                catalyst: 'naturesaura:conversion_catalyst',
                 aura: 30000,
                 time: 250
             },
