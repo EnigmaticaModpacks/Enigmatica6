@@ -5,7 +5,8 @@ onEvent('recipes', (event) => {
         //     output: Item.of('minecraft:diamond', 8),
         //     input: Item.of('minecraft:lead'),
         //     experience: 0.5,
-        //     duration: 100
+        //     duration: 100,
+        //     ignore_occultism_multiplier: true
         // }
     ];
 

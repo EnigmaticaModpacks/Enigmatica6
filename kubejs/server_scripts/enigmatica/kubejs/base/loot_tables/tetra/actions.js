@@ -1,4 +1,4 @@
-onEvent('server.datapack.low_priority', (event) => {
+onEvent('server.datapack.high_priority', (event) => {
     const actionRecipes = [
         {
             loot_table: 'tetra:loot_tables/actions/beam_salvage.json',
@@ -267,6 +267,90 @@ onEvent('server.datapack.low_priority', (event) => {
                                     {
                                         type: 'minecraft:item',
                                         name: 'emendatusenigmatica:silver_nugget',
+                                        expand: true,
+                                        functions: [
+                                            { function: 'set_count', count: { min: 4, max: 12 } },
+                                            {
+                                                function: 'minecraft:apply_bonus',
+                                                enchantment: 'minecraft:fortune',
+                                                formula: 'uniform_bonus_count',
+                                                parameters: { bonusMultiplier: 3 }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        type: 'minecraft:item',
+                                        name: 'emendatusenigmatica:lead_nugget',
+                                        expand: true,
+                                        functions: [
+                                            { function: 'set_count', count: { min: 4, max: 12 } },
+                                            {
+                                                function: 'minecraft:apply_bonus',
+                                                enchantment: 'minecraft:fortune',
+                                                formula: 'uniform_bonus_count',
+                                                parameters: { bonusMultiplier: 3 }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        type: 'minecraft:item',
+                                        name: 'emendatusenigmatica:nickel_nugget',
+                                        expand: true,
+                                        functions: [
+                                            { function: 'set_count', count: { min: 4, max: 12 } },
+                                            {
+                                                function: 'minecraft:apply_bonus',
+                                                enchantment: 'minecraft:fortune',
+                                                formula: 'uniform_bonus_count',
+                                                parameters: { bonusMultiplier: 3 }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        type: 'minecraft:item',
+                                        name: 'emendatusenigmatica:uranium_nugget',
+                                        expand: true,
+                                        functions: [
+                                            { function: 'set_count', count: { min: 4, max: 12 } },
+                                            {
+                                                function: 'minecraft:apply_bonus',
+                                                enchantment: 'minecraft:fortune',
+                                                formula: 'uniform_bonus_count',
+                                                parameters: { bonusMultiplier: 3 }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        type: 'minecraft:item',
+                                        name: 'emendatusenigmatica:osmium_nugget',
+                                        expand: true,
+                                        functions: [
+                                            { function: 'set_count', count: { min: 4, max: 12 } },
+                                            {
+                                                function: 'minecraft:apply_bonus',
+                                                enchantment: 'minecraft:fortune',
+                                                formula: 'uniform_bonus_count',
+                                                parameters: { bonusMultiplier: 3 }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        type: 'minecraft:item',
+                                        name: 'emendatusenigmatica:tin_nugget',
+                                        expand: true,
+                                        functions: [
+                                            { function: 'set_count', count: { min: 4, max: 12 } },
+                                            {
+                                                function: 'minecraft:apply_bonus',
+                                                enchantment: 'minecraft:fortune',
+                                                formula: 'uniform_bonus_count',
+                                                parameters: { bonusMultiplier: 3 }
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        type: 'minecraft:item',
+                                        name: 'emendatusenigmatica:zinc_nugget',
                                         expand: true,
                                         functions: [
                                             { function: 'set_count', count: { min: 4, max: 12 } },
