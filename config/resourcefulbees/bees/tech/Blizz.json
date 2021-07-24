@@ -5,10 +5,11 @@
     "traits": ["blizz", "wither", "can_swim"],
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
-    "baseLayerTexture": "other/blizz",
     "ColorData": {
+        "primaryColor":"#8CE6EC",
+        "secondaryColor":"#8CE6EC",
         "honeycombColor": "#8CE6EC",
-        "isBeeColored": false,
+        "isBeeColored": true,
         "isRainbowBee": false,
         "isGlowing": false,
         "isEnchanted": false

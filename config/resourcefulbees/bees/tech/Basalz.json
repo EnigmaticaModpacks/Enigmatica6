@@ -5,10 +5,11 @@
     "traits": ["basalz", "wither", "can_swim"],
     "hasHoneycomb": true,
     "apiaryOutputAmounts": [3, 6, 1, 2],
-    "baseLayerTexture": "other/basalz",
     "ColorData": {
+        "primaryColor":"#34353D",
+        "secondaryColor":"#34353D",
         "honeycombColor": "#34353D",
-        "isBeeColored": false,
+        "isBeeColored": true,
         "isRainbowBee": false,
         "isGlowing": false,
         "isEnchanted": false
