@@ -1402,6 +1402,12 @@ onEvent('recipes', (event) => {
         if (wood.modId == 'minecraft') {
             return;
         }
+        let craftingTable = wood.modId + ':' + wood.logType + '_crafting_table';
+        if (!Item.exists(craftingTable)) {
+            event.shaped('minecraft:crafting_table', ['AA', 'AA'], {
+                A: wood.plankBlock
+            });
+        }
         //All recipes using logs here
         var chest = wood.modId + ':' + wood.logType + '_chest';
         if (!Item.exists(chest)) {
