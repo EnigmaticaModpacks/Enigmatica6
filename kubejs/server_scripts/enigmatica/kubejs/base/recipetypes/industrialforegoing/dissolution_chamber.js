@@ -46,6 +46,24 @@ onEvent('recipes', (event) => {
             outputItem: { item: 'minecraft:glass_pane', count: 1 },
             outputFluid: 'pneumaticcraft:memory_essence',
             outputFluidAmount: 1000
+        },
+        {
+            inputs: [
+                '#forge:ingots/pink_slime', // top left
+                'resourcefulbees:iron_bee_spawn_egg', // top 
+                '#forge:ingots/pink_slime', // top right
+                '#resourcefulbees:resourceful_honeycomb_block', // left
+                '#resourcefulbees:resourceful_honeycomb_block', // right
+                'resourcefulbees:wax', // bottom left
+                'resourcefulbees:bee_jar', // bottom
+                'resourcefulbees:wax'  // bottom right
+            ],
+            inputFluid: 'industrialforegoing:pink_slime',
+            inputFluidAmount: 1000,
+            processingTime: 600,
+            outputItem: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:industrious_bee", BeeType: "industrious", Color: "#209EBD"}).toJson(),
+            outputFluid: '',
+            outputFluidAmount: 0
         }
     ];
 
