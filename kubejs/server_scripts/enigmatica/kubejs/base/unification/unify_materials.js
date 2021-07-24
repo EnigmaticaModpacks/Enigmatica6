@@ -335,7 +335,6 @@ onEvent('recipes', (event) => {
         } catch (err) {
             return;
         }
-        console.log(`Create Gem Processing: ${material}`);
 
         switch (materialProperties.output) {
             case 'dust':
