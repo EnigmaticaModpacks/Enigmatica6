@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-07-24T19:12:02.7490424Z",
-  "playedCount": 242,
+  "lastPlayed": "2021-07-25T17:49:34.9312282Z",
+  "playedCount": 243,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-07-14T19:50:59.0200332Z",
-  "lastRefreshAttempt": "2021-07-14T21:51:02.8884365+02:00",
+  "lastPreviousMatchUpdate": "2021-07-25T20:04:57.2964988Z",
+  "lastRefreshAttempt": "2021-07-25T22:04:59.8536233+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -255,7 +255,7 @@
       "dateInstalled": "2021-07-05T20:20:54.9128241Z",
       "dateUpdated": "2021-07-24T18:19:13.8576321Z",
       "dateLastUpdateAttempted": "2021-07-24T18:19:13.8576321Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -1177,113 +1177,95 @@
       "addonID": 251389,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3376002,
-        "displayName": "IntegratedTunnels-1.16.5-1.8.4.jar",
-        "fileName": "IntegratedTunnels-1.16.5-1.8.4.jar",
-        "fileDate": "2021-07-04T11:39:43.2Z",
-        "fileLength": 589691,
+        "id": 3397378,
+        "displayName": "IntegratedTunnels-1.16.5-1.8.5.jar",
+        "fileName": "IntegratedTunnels-1.16.5-1.8.5.jar",
+        "fileDate": "2021-07-22T18:32:51.507Z",
+        "fileLength": 589701,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3376/2/IntegratedTunnels-1.16.5-1.8.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3397/378/IntegratedTunnels-1.16.5-1.8.5.jar",
         "isAlternate": false,
-        "alternateFileId": 3376003,
+        "alternateFileId": 3397379,
         "dependencies": [
           {
-            "id": 67990739,
+            "id": 0,
             "addonId": 232758,
             "type": 3,
-            "fileId": 3376002
+            "fileId": 0
           },
           {
-            "id": 67990738,
+            "id": 0,
             "addonId": 236307,
             "type": 3,
-            "fileId": 3376002
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3840756957,
-            "type": 3,
+            "fingerprint": 736285626,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "org",
             "fingerprint": 3045150202,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo_small.png",
             "fingerprint": 3667489292,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 152818033,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1322210098,
-            "type": 3,
+            "fingerprint": 2522231078,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 3145251148,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 4044870590,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2432041531,
+        "packageFingerprint": 3513363457,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2392923,
-        "projectId": 251389,
-        "packageFingerprintId": 698151843,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3101114,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "IntegratedTunnels-1.16.5-1.8.4.jar"
+        "FileNameOnDisk": "IntegratedTunnels-1.16.5-1.8.5.jar"
       },
       "dateInstalled": "2021-07-05T20:19:25.2909342Z",
-      "dateUpdated": "2021-07-05T20:19:25.2909342Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:54.0480571Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:54.0480571Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -1540,131 +1522,112 @@
       "addonID": 422301,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3338308,
-        "displayName": "sophisticatedbackpacks-1.16.4-2.5.0.271.jar",
-        "fileName": "sophisticatedbackpacks-1.16.4-2.5.0.271.jar",
-        "fileDate": "2021-06-04T22:17:05.977Z",
-        "fileLength": 1036521,
+        "id": 3399778,
+        "displayName": "sophisticatedbackpacks-1.16.4-3.0.0.289.jar",
+        "fileName": "sophisticatedbackpacks-1.16.4-3.0.0.289.jar",
+        "fileDate": "2021-07-24T20:36:40.3Z",
+        "fileLength": 1160026,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3338/308/sophisticatedbackpacks-1.16.4-2.5.0.271.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3399/778/sophisticatedbackpacks-1.16.4-3.0.0.289.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 65537307,
-            "addonId": 243121,
-            "type": 2,
-            "fileId": 3338308
-          },
-          {
-            "id": 65537309,
-            "addonId": 233071,
-            "type": 2,
-            "fileId": 3338308
-          },
-          {
-            "id": 65537312,
+            "id": 0,
             "addonId": 238222,
             "type": 2,
-            "fileId": 3338308
+            "fileId": 0
           },
           {
-            "id": 65537308,
+            "id": 0,
+            "addonId": 233071,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 225643,
             "type": 2,
-            "fileId": 3338308
+            "fileId": 0
           },
           {
-            "id": 65537310,
-            "addonId": 309927,
-            "type": 2,
-            "fileId": 3338308
-          },
-          {
-            "id": 65537311,
+            "id": 0,
             "addonId": 301356,
             "type": 2,
-            "fileId": 3338308
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 243121,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3633025128,
-            "type": 3,
+            "fingerprint": 1550260381,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "net",
-            "fingerprint": 674927169,
-            "type": 3,
+            "fingerprint": 1440641462,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
-            "fingerprint": 3140367848,
-            "type": 3,
+            "fingerprint": 2552684475,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 3655983288,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 1510751291,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1102936719,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 2143264033,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 3077493860,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1670127022,
+        "packageFingerprint": 753301674,
         "gameVersion": [
-          "1.16.5",
-          "1.16.4"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
+          "1.16.5"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2345558,
-        "projectId": 422301,
-        "packageFingerprintId": 676414128,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2020-11-02T18:40:51.49Z",
-        "gameVersionMappingId": 3008713,
-        "gameVersionId": 8134,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "sophisticatedbackpacks-1.16.4-2.5.0.271.jar"
+        "FileNameOnDisk": "sophisticatedbackpacks-1.16.4-3.0.0.289.jar"
       },
       "dateInstalled": "2021-07-05T20:21:15.1320328Z",
-      "dateUpdated": "2021-07-05T20:21:15.1320328Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:09.1698675Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:09.1698675Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -2549,119 +2512,101 @@
       "addonID": 347488,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3367067,
-        "displayName": "Valhelsia Structures - 0.1.3",
-        "fileName": "valhelsia_structures-1.16.5-0.1.3.jar",
-        "fileDate": "2021-06-27T23:19:52.187Z",
-        "fileLength": 1537457,
+        "id": 3396812,
+        "displayName": "Valhelsia Structures - 0.1.4",
+        "fileName": "valhelsia_structures-1.16.5-0.1.4.jar",
+        "fileDate": "2021-07-22T06:25:40.24Z",
+        "fileLength": 1537532,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3367/67/valhelsia_structures-1.16.5-0.1.3.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3396/812/valhelsia_structures-1.16.5-0.1.4.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 67497237,
+            "id": 0,
             "addonId": 416935,
             "type": 3,
-            "fileId": 3367067
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1415686850,
-            "type": 3,
+            "fingerprint": 47614226,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 1883343521,
-            "type": 3,
+            "fingerprint": 443156620,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": ".cache",
             "fingerprint": 3952993768,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 277505181,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1399901574,
-            "type": 3,
+            "fingerprint": 2141717525,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 3639630371,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1701865676,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "valhelsia_structures.mixins.json",
-            "fingerprint": 2139041877,
-            "type": 3,
+            "fingerprint": 4279890370,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "valhelsia_structures.refmap.json",
             "fingerprint": 2292881831,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3329748038,
+        "packageFingerprint": 4001364234,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2381947,
-        "projectId": 347488,
-        "packageFingerprintId": 693171044,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3081507,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "valhelsia_structures-1.16.5-0.1.3.jar"
+        "FileNameOnDisk": "valhelsia_structures-1.16.5-0.1.4.jar"
       },
       "dateInstalled": "2021-07-05T20:20:57.5365845Z",
-      "dateUpdated": "2021-07-05T20:20:57.5365845Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:47.1533195Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:47.1533195Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3684,22 +3629,22 @@
       "addonID": 443570,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3390373,
-        "displayName": "diet-forge-1.16.5-0.35.jar",
-        "fileName": "diet-forge-1.16.5-0.35.jar",
-        "fileDate": "2021-07-16T03:36:41.65Z",
-        "fileLength": 175342,
+        "id": 3396962,
+        "displayName": "diet-forge-1.16.5-0.36.jar",
+        "fileName": "diet-forge-1.16.5-0.36.jar",
+        "fileDate": "2021-07-22T10:46:23.99Z",
+        "fileLength": 176525,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3390/373/diet-forge-1.16.5-0.35.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3396/962/diet-forge-1.16.5-0.36.jar",
         "isAlternate": false,
-        "alternateFileId": 3390374,
+        "alternateFileId": 3396963,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1924835069,
+            "fingerprint": 376428492,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3717,13 +3662,13 @@
           },
           {
             "foldername": "CHANGELOG.md",
-            "fingerprint": 2892161716,
+            "fingerprint": 56811631,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 2221664028,
+            "fingerprint": 3265490551,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3765,7 +3710,7 @@
           },
           {
             "foldername": "README.md",
-            "fingerprint": 3553632689,
+            "fingerprint": 1493922281,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -3776,7 +3721,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 816062200,
+        "packageFingerprint": 440819813,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -3790,11 +3735,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "diet-forge-1.16.5-0.35.jar"
+        "FileNameOnDisk": "diet-forge-1.16.5-0.36.jar"
       },
       "dateInstalled": "2021-07-05T20:19:25.2949358Z",
-      "dateUpdated": "2021-07-24T18:19:13.6496323Z",
-      "dateLastUpdateAttempted": "2021-07-24T18:19:13.6496323Z",
+      "dateUpdated": "2021-07-25T20:32:13.0907652Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:13.0907652Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -4698,7 +4643,7 @@
       "dateInstalled": "2021-07-05T20:21:03.3671226Z",
       "dateUpdated": "2021-07-24T19:10:18.2024108Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:18.2024108Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -4898,7 +4843,7 @@
       "dateInstalled": "2021-07-10T17:55:07.2703386Z",
       "dateUpdated": "2021-07-24T19:09:59.1536603Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:59.1536603Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -5227,7 +5172,7 @@
       "dateInstalled": "2021-07-05T20:20:57.5245785Z",
       "dateUpdated": "2021-07-24T18:19:14.7846815Z",
       "dateLastUpdateAttempted": "2021-07-24T18:19:14.7846815Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6203,6 +6148,106 @@
       "installedTargets": null
     },
     {
+      "addonID": 361026,
+      "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
+      "installedFile": {
+        "id": 3398241,
+        "displayName": "occultism-1.7.0.jar",
+        "fileName": "occultism-1.16.5-1.7.0.jar",
+        "fileDate": "2021-07-23T12:35:50.927Z",
+        "fileLength": 4070479,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3398/241/occultism-1.16.5-1.7.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 3,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 306770,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 3755419537,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3088198725,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "occultism.png",
+            "fingerprint": 3138228409,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1908501109,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 2270002088,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3656974019,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3442610763,
+        "gameVersion": [
+          "1.16.3",
+          "1.16.5",
+          "Forge",
+          "1.16.4",
+          "1.16.2"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "occultism-1.16.5-1.7.0.jar"
+      },
+      "dateInstalled": "2021-07-25T20:04:58.8134968Z",
+      "dateUpdated": "2021-07-25T20:32:50.8540509Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:50.8540509Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 377794,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
@@ -7103,14 +7148,14 @@
       "addonID": 327554,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3339467,
-        "displayName": "simplefarming-1.16.5-1.3.7.jar",
-        "fileName": "simplefarming-1.16.5-1.3.7.jar",
-        "fileDate": "2021-06-06T06:37:55.777Z",
-        "fileLength": 3141731,
+        "id": 3400041,
+        "displayName": "simplefarming-1.16.5-1.3.8.jar",
+        "fileName": "simplefarming-1.16.5-1.3.8.jar",
+        "fileDate": "2021-07-25T02:28:27.743Z",
+        "fileLength": 3145190,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3339/467/simplefarming-1.16.5-1.3.7.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/41/simplefarming-1.16.5-1.3.8.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -7118,80 +7163,56 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 598993627,
-            "type": 3,
+            "fingerprint": 1387198613,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "enemeez",
-            "fingerprint": 2585558104,
-            "type": 3,
+            "fingerprint": 3250076997,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 2887811277,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1536001492,
-            "type": 3,
+            "fingerprint": 3771737789,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 968997382,
-            "type": 3,
+            "fingerprint": 1438559181,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3983474571,
+        "packageFingerprint": 1768405112,
         "gameVersion": [
           "1.16",
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016",
-            "gameVersion": "1.16",
-            "gameVersionReleaseDate": "2020-06-23T13:41:08.75Z",
-            "gameVersionName": "1.16"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2347083,
-        "projectId": 327554,
-        "packageFingerprintId": 677023490,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 3011654,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "simplefarming-1.16.5-1.3.7.jar"
+        "FileNameOnDisk": "simplefarming-1.16.5-1.3.8.jar"
       },
       "dateInstalled": "2021-07-05T20:21:03.3481192Z",
-      "dateUpdated": "2021-07-05T20:21:03.3481192Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:11.1378232Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:11.1378232Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7206,113 +7227,95 @@
       "addonID": 224791,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3184485,
-        "displayName": "BloodMagic-1.16.4-3.1.0-15.jar",
-        "fileName": "BloodMagic-1.16.4-3.1.0-15.jar",
-        "fileDate": "2021-01-28T14:33:14.957Z",
-        "fileLength": 8632645,
+        "id": 3399440,
+        "displayName": "BloodMagic-1.16.4-3.1.1-16.jar",
+        "fileName": "BloodMagic-1.16.4-3.1.1-16.jar",
+        "fileDate": "2021-07-24T14:55:30.957Z",
+        "fileLength": 8651829,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3184/485/BloodMagic-1.16.4-3.1.0-15.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3399/440/BloodMagic-1.16.4-3.1.1-16.jar",
         "isAlternate": false,
-        "alternateFileId": 3184490,
+        "alternateFileId": 3399441,
         "dependencies": [
           {
-            "id": 55560170,
-            "addonId": 306770,
-            "type": 2,
-            "fileId": 3184485
-          },
-          {
-            "id": 55560168,
+            "id": 0,
             "addonId": 253449,
             "type": 2,
-            "fileId": 3184485
+            "fileId": 0
           },
           {
-            "id": 55560169,
+            "id": 0,
+            "addonId": 306770,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 238222,
             "type": 2,
-            "fileId": 3184485
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1934748518,
-            "type": 3,
+            "fingerprint": 2874308084,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "wayoftime",
-            "fingerprint": 2079701198,
-            "type": 3,
+            "fingerprint": 3531286611,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": ".cache",
-            "fingerprint": 2226034278,
-            "type": 3,
+            "fingerprint": 3972579746,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3318980035,
-            "type": 3,
+            "fingerprint": 3303362203,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 3622466165,
-            "type": 3,
+            "fingerprint": 1957266907,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1354411325,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2826249651,
+        "packageFingerprint": 3997543782,
         "gameVersion": [
           "1.16.5",
           "1.16.4"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2146948,
-        "projectId": 224791,
-        "packageFingerprintId": 595117552,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2680249,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BloodMagic-1.16.4-3.1.0-15.jar"
+        "FileNameOnDisk": "BloodMagic-1.16.4-3.1.1-16.jar"
       },
       "dateInstalled": "2021-07-05T20:21:03.3771196Z",
-      "dateUpdated": "2021-07-05T20:21:03.3771196Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:18.8679233Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:18.8679233Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7782,14 +7785,14 @@
       "addonID": 238222,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3397912,
-        "displayName": "jei-1.16.5-7.7.1.111.jar",
-        "fileName": "jei-1.16.5-7.7.1.111.jar",
-        "fileDate": "2021-07-23T02:43:29.543Z",
-        "fileLength": 813161,
+        "id": 3399829,
+        "displayName": "jei-1.16.5-7.7.1.115.jar",
+        "fileName": "jei-1.16.5-7.7.1.115.jar",
+        "fileDate": "2021-07-24T21:43:44.37Z",
+        "fileLength": 813081,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3397/912/jei-1.16.5-7.7.1.111.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3399/829/jei-1.16.5-7.7.1.115.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -7797,13 +7800,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2541622667,
+            "fingerprint": 753622720,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mezz",
-            "fingerprint": 1485561878,
+            "fingerprint": 1001987883,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -7820,7 +7823,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 290000815,
+        "packageFingerprint": 176929738,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -7834,11 +7837,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "jei-1.16.5-7.7.1.111.jar"
+        "FileNameOnDisk": "jei-1.16.5-7.7.1.115.jar"
       },
       "dateInstalled": "2021-07-05T20:21:03.3651184Z",
-      "dateUpdated": "2021-07-24T19:09:34.7760993Z",
-      "dateLastUpdateAttempted": "2021-07-24T19:09:34.7760993Z",
+      "dateUpdated": "2021-07-25T20:32:51.4610553Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:51.4610553Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -8811,7 +8814,7 @@
       "dateInstalled": "2021-07-05T20:31:05.1764869Z",
       "dateUpdated": "2021-07-24T19:09:57.8713012Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:57.8713012Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10789,14 +10792,14 @@
       "addonID": 242818,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3361747,
-        "displayName": "CodeChicken Lib 1.16.5-4.0.2.427-universal",
-        "fileName": "CodeChickenLib-1.16.5-4.0.2.427-universal.jar",
-        "fileDate": "2021-06-23T02:38:08.823Z",
-        "fileLength": 615858,
+        "id": 3398096,
+        "displayName": "CodeChicken Lib 1.16.5-4.0.2.429-universal",
+        "fileName": "CodeChickenLib-1.16.5-4.0.2.429-universal.jar",
+        "fileDate": "2021-07-23T08:55:03.473Z",
+        "fileLength": 622321,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3361/747/CodeChickenLib-1.16.5-4.0.2.427-universal.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3398/96/CodeChickenLib-1.16.5-4.0.2.429-universal.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -10804,90 +10807,78 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2289917914,
-            "type": 3,
+            "fingerprint": 408832044,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": ".cache",
-            "fingerprint": 1168883767,
-            "type": 3,
+            "fingerprint": 1353120109,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "LICENSE",
             "fingerprint": 2989649023,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 480541703,
-            "type": 3,
+            "fingerprint": 3096024256,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "codechicken",
-            "fingerprint": 1366658246,
-            "type": 3,
+            "fingerprint": 2155051210,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 3460370569,
-            "type": 3,
+            "fingerprint": 3899647396,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mixins.codechickenlib.json",
             "fingerprint": 1076180799,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mixins.codechickenlib.refmap.json",
             "fingerprint": 3334444269,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 427284745,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 4227351526,
+        "packageFingerprint": 694341700,
         "gameVersion": [
           "1.16.5"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2375051,
-        "projectId": 242818,
-        "packageFingerprintId": 689846942,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3068241,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CodeChickenLib-1.16.5-4.0.2.427-universal.jar"
+        "FileNameOnDisk": "CodeChickenLib-1.16.5-4.0.2.429-universal.jar"
       },
       "dateInstalled": "2021-07-05T20:21:03.3451193Z",
-      "dateUpdated": "2021-07-05T20:21:03.3451193Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:14.6047657Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:14.6047657Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10902,14 +10893,14 @@
       "addonID": 441647,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3381744,
-        "displayName": "FramedBlocks-2.9.1.jar",
-        "fileName": "FramedBlocks-2.9.1.jar",
-        "fileDate": "2021-07-08T20:58:15.79Z",
-        "fileLength": 449365,
+        "id": 3397337,
+        "displayName": "FramedBlocks-2.9.2.jar",
+        "fileName": "FramedBlocks-2.9.2.jar",
+        "fileDate": "2021-07-22T17:52:56.93Z",
+        "fileLength": 482488,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3381/744/FramedBlocks-2.9.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3397/337/FramedBlocks-2.9.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -10917,103 +10908,85 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3277387681,
-            "type": 3,
+            "fingerprint": 2963970759,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "team",
             "fingerprint": 1322605695,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "xfacthd",
-            "fingerprint": 2677156544,
-            "type": 3,
+            "fingerprint": 2377933804,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": ".cache",
-            "fingerprint": 2993879403,
-            "type": 3,
+            "fingerprint": 904418708,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3994805047,
-            "type": 3,
+            "fingerprint": 4019413565,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 3783116755,
-            "type": 3,
+            "fingerprint": 403834383,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "framedblocks.mixin.json",
-            "fingerprint": 648154232,
-            "type": 3,
+            "fingerprint": 3441545819,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 789975261,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3799552759,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "framedblocks.refmap.json",
-            "fingerprint": 2164001954,
-            "type": 3,
+            "fingerprint": 307935087,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2522341801,
+        "packageFingerprint": 3108512118,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2400045,
-        "projectId": 441647,
-        "packageFingerprintId": 701491827,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3115451,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "FramedBlocks-2.9.1.jar"
+        "FileNameOnDisk": "FramedBlocks-2.9.2.jar"
       },
       "dateInstalled": "2021-07-10T17:55:07.2563413Z",
-      "dateUpdated": "2021-07-10T17:55:07.2563413Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:57.7350528Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:57.7350528Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11101,7 +11074,7 @@
       "dateInstalled": "2021-07-15T19:20:48.0217084Z",
       "dateUpdated": "2021-07-24T19:09:59.4186608Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:59.4186608Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -11269,7 +11242,7 @@
       "dateInstalled": "2021-07-05T20:21:18.991063Z",
       "dateUpdated": "2021-07-24T19:10:17.7544101Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:17.7544101Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12821,7 +12794,7 @@
       "dateInstalled": "2021-07-05T20:21:03.3531188Z",
       "dateUpdated": "2021-07-24T19:10:01.3718922Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:01.3718922Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13493,88 +13466,70 @@
       "addonID": 237307,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3342430,
-        "displayName": "CosmeticArmorReworked-1.16.5-v3a.jar",
-        "fileName": "CosmeticArmorReworked-1.16.5-v3a.jar",
-        "fileDate": "2021-06-07T18:11:21.427Z",
-        "fileLength": 86425,
+        "id": 3398000,
+        "displayName": "CosmeticArmorReworked-1.16.5-v4.jar",
+        "fileName": "CosmeticArmorReworked-1.16.5-v4.jar",
+        "fileDate": "2021-07-23T05:53:21.86Z",
+        "fileLength": 86844,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3342/430/CosmeticArmorReworked-1.16.5-v3a.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3398/0/CosmeticArmorReworked-1.16.5-v4.jar",
         "isAlternate": false,
-        "alternateFileId": 3342432,
+        "alternateFileId": 3398001,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2107213998,
-            "type": 3,
+            "fingerprint": 3538467986,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "LICENSE.txt",
             "fingerprint": 213336249,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1138495732,
-            "type": 3,
+            "fingerprint": 3268752115,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "lain",
-            "fingerprint": 962504864,
-            "type": 3,
+            "fingerprint": 797966852,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 4050523715,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1281317570,
+        "packageFingerprint": 1715933748,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2350623,
-        "projectId": 237307,
-        "packageFingerprintId": 678310762,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3017899,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "CosmeticArmorReworked-1.16.5-v3a.jar"
+        "FileNameOnDisk": "CosmeticArmorReworked-1.16.5-v4.jar"
       },
       "dateInstalled": "2021-07-05T20:20:52.5079Z",
-      "dateUpdated": "2021-07-05T20:20:52.5079Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:13.2667651Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:13.2667651Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13589,14 +13544,14 @@
       "addonID": 450659,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3381331,
-        "displayName": "smallships-1.16.5-1.9.0.jar",
-        "fileName": "smallships-1.16.5-1.9.0.jar",
-        "fileDate": "2021-07-08T14:13:53.837Z",
-        "fileLength": 2432535,
+        "id": 3400403,
+        "displayName": "smallships-1.16.5-1.9.1.jar",
+        "fileName": "smallships-1.16.5-1.9.1.jar",
+        "fileDate": "2021-07-25T12:33:50.083Z",
+        "fileLength": 2436579,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3381/331/smallships-1.16.5-1.9.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/403/smallships-1.16.5-1.9.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -13604,93 +13559,62 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3211638462,
-            "type": 3,
+            "fingerprint": 3777062937,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2258576876,
-            "type": 3,
+            "fingerprint": 537300387,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 325501321,
-            "type": 3,
+            "fingerprint": 3688369683,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 2021528782,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 1176070810,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1438559181,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2299235835,
+        "packageFingerprint": 2908483930,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
-          "Forge",
-          "1.16.4"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2399537,
-        "projectId": 450659,
-        "packageFingerprintId": 701184939,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 3114391,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "smallships-1.16.5-1.9.0.jar"
+        "FileNameOnDisk": "smallships-1.16.5-1.9.1.jar"
       },
       "dateInstalled": "2021-07-10T17:55:07.2583373Z",
-      "dateUpdated": "2021-07-10T17:55:07.2583373Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:09.7878227Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:09.7878227Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14700,7 +14624,7 @@
       "dateInstalled": "2021-07-15T18:43:58.4199855Z",
       "dateUpdated": "2021-07-24T18:19:11.8446402Z",
       "dateLastUpdateAttempted": "2021-07-24T18:19:11.8446402Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15212,14 +15136,14 @@
       "addonID": 446253,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3386517,
-        "displayName": "betterbiomeblend-1.16.4-1.1.9-forge.jar",
-        "fileName": "betterbiomeblend-1.16.4-1.1.9-forge.jar",
-        "fileDate": "2021-07-12T20:11:57.537Z",
-        "fileLength": 25172,
+        "id": 3398525,
+        "displayName": "betterbiomeblend-1.16.4-1.2.3-forge.jar",
+        "fileName": "betterbiomeblend-1.16.4-1.2.3-forge.jar",
+        "fileDate": "2021-07-23T17:37:03.477Z",
+        "fileLength": 29733,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3386/517/betterbiomeblend-1.16.4-1.1.9-forge.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3398/525/betterbiomeblend-1.16.4-1.2.3-forge.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -15227,13 +15151,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 241269769,
+            "fingerprint": 303414456,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "fionathemortal",
-            "fingerprint": 275480249,
+            "fingerprint": 195312692,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -15262,7 +15186,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2254820315,
+        "packageFingerprint": 2820466040,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -15277,12 +15201,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "betterbiomeblend-1.16.4-1.1.9-forge.jar"
+        "FileNameOnDisk": "betterbiomeblend-1.16.4-1.2.3-forge.jar"
       },
       "dateInstalled": "2021-07-05T20:21:03.3491181Z",
-      "dateUpdated": "2021-07-13T20:15:28.2528624Z",
-      "dateLastUpdateAttempted": "2021-07-13T20:15:28.2528624Z",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:15.3807668Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:15.3807668Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15366,7 +15290,7 @@
       "dateInstalled": "2021-07-05T20:21:03.3581211Z",
       "dateUpdated": "2021-07-24T19:09:36.542425Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:36.542425Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16801,125 +16725,107 @@
       "addonID": 236307,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3376007,
-        "displayName": "IntegratedDynamics-1.16.5-1.9.0.jar",
-        "fileName": "IntegratedDynamics-1.16.5-1.9.0.jar",
-        "fileDate": "2021-07-04T11:41:31.707Z",
-        "fileLength": 3143908,
+        "id": 3397383,
+        "displayName": "IntegratedDynamics-1.16.5-1.9.1.jar",
+        "fileName": "IntegratedDynamics-1.16.5-1.9.1.jar",
+        "fileDate": "2021-07-22T18:34:05.243Z",
+        "fileLength": 3143936,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3376/7/IntegratedDynamics-1.16.5-1.9.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3397/383/IntegratedDynamics-1.16.5-1.9.1.jar",
         "isAlternate": false,
-        "alternateFileId": 3376008,
+        "alternateFileId": 3397384,
         "dependencies": [
           {
-            "id": 67990928,
-            "addonId": 247007,
-            "type": 3,
-            "fileId": 3376007
-          },
-          {
-            "id": 67990929,
+            "id": 0,
             "addonId": 232758,
             "type": 3,
-            "fileId": 3376007
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 247007,
+            "type": 3,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3210329979,
-            "type": 3,
+            "fingerprint": 2640728388,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "org",
-            "fingerprint": 2250900753,
-            "type": 3,
+            "fingerprint": 4285082166,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo_small.png",
             "fingerprint": 2118832145,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 711418639,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 3939935539,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "LICENSE-re2j.txt",
             "fingerprint": 66756537,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 2360440062,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 898374091,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "vendors",
             "fingerprint": 1036984855,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1777089741,
+        "packageFingerprint": 1520634712,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2392928,
-        "projectId": 236307,
-        "packageFingerprintId": 698153596,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3101129,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "IntegratedDynamics-1.16.5-1.9.0.jar"
+        "FileNameOnDisk": "IntegratedDynamics-1.16.5-1.9.1.jar"
       },
       "dateInstalled": "2021-07-05T20:19:25.3009353Z",
-      "dateUpdated": "2021-07-05T20:19:25.3009353Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:54.5290602Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:54.5290602Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18487,17 +18393,23 @@
       "addonID": 266515,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3387732,
-        "displayName": "industrial-foregoing-1.16.5-3.2.14.2-8.jar",
-        "fileName": "industrial-foregoing-1.16.5-3.2.14.2-8.jar",
-        "fileDate": "2021-07-13T19:58:16.953Z",
-        "fileLength": 3570276,
-        "releaseType": 2,
+        "id": 3399437,
+        "displayName": "industrial-foregoing-1.16.5-3.2.14.3-9.jar",
+        "fileName": "industrial-foregoing-1.16.5-3.2.14.3-9.jar",
+        "fileDate": "2021-07-24T14:54:58.06Z",
+        "fileLength": 3580596,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3387/732/industrial-foregoing-1.16.5-3.2.14.2-8.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3399/437/industrial-foregoing-1.16.5-3.2.14.3-9.jar",
         "isAlternate": false,
-        "alternateFileId": 3387733,
+        "alternateFileId": 3399438,
         "dependencies": [
+          {
+            "id": 0,
+            "addonId": 306770,
+            "type": 3,
+            "fileId": 0
+          },
           {
             "id": 0,
             "addonId": 238222,
@@ -18512,12 +18424,6 @@
           },
           {
             "id": 0,
-            "addonId": 306770,
-            "type": 3,
-            "fileId": 0
-          },
-          {
-            "id": 0,
             "addonId": 287342,
             "type": 3,
             "fileId": 0
@@ -18527,13 +18433,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4060980124,
+            "fingerprint": 975930772,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2876834728,
+            "fingerprint": 350233851,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -18545,7 +18451,7 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 996608796,
+            "fingerprint": 3281756150,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -18557,7 +18463,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 926186216,
+            "fingerprint": 3758311251,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -18568,7 +18474,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3898142566,
+        "packageFingerprint": 2775321649,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -18582,12 +18488,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "industrial-foregoing-1.16.5-3.2.14.2-8.jar"
+        "FileNameOnDisk": "industrial-foregoing-1.16.5-3.2.14.3-9.jar"
       },
       "dateInstalled": "2021-07-05T20:20:52.5105727Z",
-      "dateUpdated": "2021-07-14T17:10:54.3727044Z",
-      "dateLastUpdateAttempted": "2021-07-14T17:10:54.3727044Z",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:55.3570577Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:55.3570577Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18768,7 +18674,7 @@
       "dateInstalled": "2021-07-05T20:21:08.4624731Z",
       "dateUpdated": "2021-07-24T19:09:37.0404256Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:37.0404256Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18859,7 +18765,7 @@
       "dateInstalled": "2021-07-10T17:55:07.2513379Z",
       "dateUpdated": "2021-07-24T19:10:15.3181942Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:15.3181942Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -18991,14 +18897,14 @@
       "addonID": 243076,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3351933,
-        "displayName": "Refined Storage 1.9.13",
-        "fileName": "refinedstorage-1.9.13.jar",
-        "fileDate": "2021-06-14T18:05:20.99Z",
-        "fileLength": 3127336,
+        "id": 3400575,
+        "displayName": "Refined Storage 1.9.15",
+        "fileName": "refinedstorage-1.9.15.jar",
+        "fileDate": "2021-07-25T14:59:24.147Z",
+        "fileLength": 3130693,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3351/933/refinedstorage-1.9.13.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/575/refinedstorage-1.9.15.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -19006,85 +18912,67 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4237202155,
-            "type": 3,
+            "fingerprint": 549440526,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 2584134534,
-            "type": 3,
+            "fingerprint": 1263910759,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": ".cache",
             "fingerprint": 1059854772,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 1506065654,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 2713556897,
-            "type": 3,
+            "fingerprint": 580726858,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 3020331149,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 244798530,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2727636460,
+        "packageFingerprint": 971626747,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2362444,
-        "projectId": 243076,
-        "packageFingerprintId": 683778711,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3044004,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "refinedstorage-1.9.13.jar"
+        "FileNameOnDisk": "refinedstorage-1.9.15.jar"
       },
       "dateInstalled": "2021-07-05T20:21:08.4494726Z",
-      "dateUpdated": "2021-07-05T20:21:08.4494726Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:34:21.8317287Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:34:21.8317287Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -21018,7 +20906,7 @@
       "dateInstalled": "2021-07-05T20:21:08.4484749Z",
       "dateUpdated": "2021-07-24T19:10:17.4154108Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:17.4154108Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22009,7 +21897,7 @@
       "dateInstalled": "2021-07-05T20:21:08.4384732Z",
       "dateUpdated": "2021-07-24T19:09:36.23303Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:36.23303Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22337,7 +22225,7 @@
       "dateInstalled": "2021-07-05T20:21:08.477471Z",
       "dateUpdated": "2021-07-24T19:09:38.1266729Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:38.1266729Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23520,14 +23408,14 @@
       "addonID": 363820,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3365710,
-        "displayName": "0.2.12",
-        "fileName": "TerraForged-1.16.5-0.2.12.jar",
-        "fileDate": "2021-06-26T19:34:03.573Z",
-        "fileLength": 1645541,
+        "id": 3400572,
+        "displayName": "0.2.13",
+        "fileName": "TerraForged-1.16.5-0.2.13.jar",
+        "fileDate": "2021-07-25T14:58:03.15Z",
+        "fileLength": 1660232,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3365/710/TerraForged-1.16.5-0.2.12.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/572/TerraForged-1.16.5-0.2.13.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -23535,115 +23423,97 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2550690315,
-            "type": 3,
+            "fingerprint": 2426211368,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "LICENSE",
             "fingerprint": 190072836,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 3589983164,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "biomes.png",
             "fingerprint": 2949016127,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "biomes.txt",
             "fingerprint": 366301374,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3392903075,
-            "type": 3,
+            "fingerprint": 2248743258,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 2274904774,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mixin.terraforged.json",
             "fingerprint": 4127921330,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mixin.terraforged.refmap.json",
             "fingerprint": 2848482156,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 143006859,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "presets",
             "fingerprint": 1043228814,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "terraforged.png",
             "fingerprint": 618737389,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2494593053,
+        "packageFingerprint": 2558340777,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2380202,
-        "projectId": 363820,
-        "packageFingerprintId": 692482091,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3078356,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "TerraForged-1.16.5-0.2.12.jar"
+        "FileNameOnDisk": "TerraForged-1.16.5-0.2.13.jar"
       },
       "dateInstalled": "2021-07-05T20:21:08.4514736Z",
-      "dateUpdated": "2021-07-05T20:21:08.4514736Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:45.2659588Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:45.2659588Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23739,7 +23609,7 @@
       "dateInstalled": "2021-07-10T17:55:07.2713418Z",
       "dateUpdated": "2021-07-24T19:10:16.7954103Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:16.7954103Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24268,7 +24138,7 @@
       "dateInstalled": "2021-07-15T21:20:34.8223984Z",
       "dateUpdated": "2021-07-24T19:10:14.6274079Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:14.6274079Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -24438,7 +24308,7 @@
       "dateInstalled": "2021-07-05T20:20:54.9128241Z",
       "dateUpdated": "2021-07-24T18:17:53.7009745Z",
       "dateLastUpdateAttempted": "2021-07-24T18:17:53.7009745Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26194,7 +26064,7 @@
       "dateInstalled": "2021-07-05T20:20:52.5089Z",
       "dateUpdated": "2021-07-24T19:10:14.0992558Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:14.0992558Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26431,109 +26301,77 @@
       "addonID": 272302,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3065694,
-        "displayName": "Refined Storage Addons 0.7.2",
-        "fileName": "refinedstorageaddons-0.7.2.jar",
-        "fileDate": "2020-09-25T19:39:55.837Z",
-        "fileLength": 30061,
+        "id": 3400591,
+        "displayName": "Refined Storage Addons 0.7.3",
+        "fileName": "refinedstorageaddons-0.7.3.jar",
+        "fileDate": "2021-07-25T15:08:56.713Z",
+        "fileLength": 30393,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3065/694/refinedstorageaddons-0.7.2.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/591/refinedstorageaddons-0.7.3.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 59273897,
+            "id": 0,
             "addonId": 243076,
             "type": 3,
-            "fileId": 3065694
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 4043708257,
-            "type": 3,
+            "fingerprint": 2175369359,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3298826767,
-            "type": 3,
+            "fingerprint": 3876489601,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 1543911551,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 4069034725,
-            "type": 3,
+            "fingerprint": 4281536443,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3031651969,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2406152037,
+        "packageFingerprint": 212512365,
         "gameVersion": [
-          "1.16.3",
           "1.16.5",
-          "Forge",
-          "1.16.4"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000003",
-            "gameVersion": "1.16.3",
-            "gameVersionReleaseDate": "2020-09-10T14:44:20.443Z",
-            "gameVersionName": "1.16.3"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 1998144,
-        "projectId": 272302,
-        "packageFingerprintId": 526359616,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2446793,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "refinedstorageaddons-0.7.2.jar"
+        "FileNameOnDisk": "refinedstorageaddons-0.7.3.jar"
       },
       "dateInstalled": "2021-07-05T20:21:08.4544714Z",
-      "dateUpdated": "2021-07-05T20:21:08.4544714Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:12.1578233Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:12.1578233Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27970,31 +27808,31 @@
           {
             "foldername": "META-INF",
             "fingerprint": 803867903,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "projectvibrantjourneys",
             "fingerprint": 3779715523,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 3532453239,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 20078138,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1599004398,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
@@ -28003,39 +27841,21 @@
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2376264,
-        "projectId": 300297,
-        "packageFingerprintId": 690515654,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 3070616,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
         "FileNameOnDisk": "projectvibrantjourneys-1.16.5-3.1.0.jar"
       },
-      "dateInstalled": "2021-07-05T20:20:54.9228218Z",
-      "dateUpdated": "2021-07-05T20:20:54.9228218Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateInstalled": "2021-07-25T20:34:09.535802Z",
+      "dateUpdated": "2021-07-25T20:34:09.5513749Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:34:09.5513749Z",
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28044,7 +27864,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 349447,
@@ -28565,7 +28385,7 @@
       "dateInstalled": "2021-07-05T20:21:08.4714712Z",
       "dateUpdated": "2021-07-24T18:19:15.1116824Z",
       "dateLastUpdateAttempted": "2021-07-24T18:19:15.1116824Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28683,113 +28503,95 @@
       "addonID": 371813,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3306707,
-        "displayName": "crashutilities-3.11.1.jar",
-        "fileName": "crashutilities-3.11.1.jar",
-        "fileDate": "2021-05-12T06:57:34.577Z",
-        "fileLength": 2071172,
+        "id": 3400648,
+        "displayName": "crashutilities-3.12.jar",
+        "fileName": "crashutilities-3.12.jar",
+        "fileDate": "2021-07-25T15:57:59.5Z",
+        "fileLength": 2086298,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3306/707/crashutilities-3.11.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/648/crashutilities-3.12.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 63552567,
-            "addonId": 309927,
-            "type": 2,
-            "fileId": 3306707
-          },
-          {
-            "id": 63552568,
+            "id": 0,
             "addonId": 361579,
             "type": 2,
-            "fileId": 3306707
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 309927,
+            "type": 2,
+            "fileId": 0
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2961605208,
-            "type": 3,
+            "fingerprint": 1860537174,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 1683452162,
-            "type": 3,
+            "fingerprint": 3544893945,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 2286757105,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 3380797652,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "fr",
             "fingerprint": 4212346115,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "dark",
             "fingerprint": 2280698898,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mozilla",
             "fingerprint": 1005056399,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 471255567,
+        "packageFingerprint": 2039618924,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2305498,
-        "projectId": 371813,
-        "packageFingerprintId": 661155651,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 2931843,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "crashutilities-3.11.1.jar"
+        "FileNameOnDisk": "crashutilities-3.12.jar"
       },
       "dateInstalled": "2021-07-05T20:20:54.9428204Z",
-      "dateUpdated": "2021-07-05T20:20:54.9428204Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:13.1147707Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:13.1147707Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -29463,16 +29265,16 @@
       "addonID": 32274,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3395279,
-        "displayName": "journeymap-1.16.5-5.7.2beta20",
-        "fileName": "journeymap-1.16.5-5.7.2beta20.jar",
-        "fileDate": "2021-07-20T18:30:34.623Z",
-        "fileLength": 6867289,
-        "releaseType": 2,
+        "id": 3397059,
+        "displayName": "journeymap-1.16.5-5.7.3",
+        "fileName": "journeymap-1.16.5-5.7.3.jar",
+        "fileDate": "2021-07-22T13:43:44.23Z",
+        "fileLength": 6868069,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3395/279/journeymap-1.16.5-5.7.2beta20.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3397/59/journeymap-1.16.5-5.7.3.jar",
         "isAlternate": false,
-        "alternateFileId": 3395280,
+        "alternateFileId": 3397060,
         "dependencies": [
           {
             "id": 0,
@@ -29485,13 +29287,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3618883902,
+            "fingerprint": 3352046944,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "journeymap",
-            "fingerprint": 494130873,
+            "fingerprint": 2912876585,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29509,7 +29311,7 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 3958413107,
+            "fingerprint": 3629551885,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29527,13 +29329,19 @@
           },
           {
             "foldername": "license.txt",
-            "fingerprint": 1512179106,
+            "fingerprint": 3206912840,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 2930129283,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "potion-effects-shift.js",
+            "fingerprint": 4254871621,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29572,15 +29380,9 @@
             "fingerprint": 4183154058,
             "type": 0,
             "invalidFingerprint": false
-          },
-          {
-            "foldername": "journeymap.refmap.json",
-            "fingerprint": 2746742789,
-            "type": 0,
-            "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2692389593,
+        "packageFingerprint": 2703253920,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -29594,11 +29396,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "journeymap-1.16.5-5.7.2beta20.jar"
+        "FileNameOnDisk": "journeymap-1.16.5-5.7.3.jar"
       },
       "dateInstalled": "2021-07-05T20:21:03.3351195Z",
-      "dateUpdated": "2021-07-24T19:09:35.9402881Z",
-      "dateLastUpdateAttempted": "2021-07-24T19:09:35.9402881Z",
+      "dateUpdated": "2021-07-25T20:32:52.6740534Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:52.6740534Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -29808,14 +29610,14 @@
       "addonID": 462326,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3354343,
-        "displayName": "TacticalFishing-1.16-v1.0.1.jar",
-        "fileName": "TacticalFishing-1.16-v1.0.1.jar",
-        "fileDate": "2021-06-16T19:18:54.523Z",
+        "id": 3397600,
+        "displayName": "TacticalFishing-1.16.5-v1.0.2.jar",
+        "fileName": "TacticalFishing-1.16.5-v1.0.2.jar",
+        "fileDate": "2021-07-22T21:34:05.85Z",
         "fileLength": 86237,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3354/343/TacticalFishing-1.16-v1.0.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3397/600/TacticalFishing-1.16.5-v1.0.2.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -29823,86 +29625,60 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1267149471,
-            "type": 3,
+            "fingerprint": 2501104334,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
             "fingerprint": 3595980658,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3177239831,
-            "type": 3,
+            "fingerprint": 4057594709,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 3059738483,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "modicon.png",
             "fingerprint": 724728568,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 1398498657,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 275449119,
+        "packageFingerprint": 1401371920,
         "gameVersion": [
-          "1.16.5",
-          "Forge",
-          "1.16.4"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
+          "1.16.5"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2365559,
-        "projectId": 462326,
-        "packageFingerprintId": 685365298,
-        "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 3049997,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2021-01-15T14:14:48.91Z",
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "TacticalFishing-1.16-v1.0.1.jar"
+        "FileNameOnDisk": "TacticalFishing-1.16.5-v1.0.2.jar"
       },
       "dateInstalled": "2021-07-05T20:21:08.4224716Z",
-      "dateUpdated": "2021-07-05T20:21:08.4224716Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:33:44.2619571Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:44.2619571Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -30484,7 +30260,7 @@
       "dateInstalled": "2021-07-10T17:55:07.2493686Z",
       "dateUpdated": "2021-07-24T19:11:55.9486045Z",
       "dateLastUpdateAttempted": "2021-07-24T19:11:55.9486045Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -30956,7 +30732,7 @@
       "dateInstalled": "2021-07-10T17:55:07.2523422Z",
       "dateUpdated": "2021-07-24T19:09:38.8635754Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:38.8635754Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -31089,7 +30865,7 @@
       "dateInstalled": "2021-07-10T17:55:07.2693408Z",
       "dateUpdated": "2021-07-24T19:09:32.419978Z",
       "dateLastUpdateAttempted": "2021-07-24T19:09:32.419978Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -32549,6 +32325,108 @@
       "installedTargets": null
     },
     {
+      "addonID": 298187,
+      "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
+      "installedFile": {
+        "id": 3205295,
+        "displayName": "buildinggadgets-1.16.5-3.8.0.jar",
+        "fileName": "buildinggadgets-1.16.5-3.8.0.jar",
+        "fileDate": "2021-02-15T19:42:19.863Z",
+        "fileLength": 909445,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3205/295/buildinggadgets-1.16.5-3.8.0.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 56916937,
+            "addonId": 399757,
+            "type": 2,
+            "fileId": 3205295
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 267054609,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 962286206,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 597267807,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "buildinggadgets_logo.png",
+            "fingerprint": 2374162731,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3840510572,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 3547210442,
+            "type": 3,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 3456565023,
+        "gameVersion": [
+          "1.16.5"
+        ],
+        "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000016.0000000005",
+            "gameVersion": "1.16.5",
+            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
+            "gameVersionName": "1.16.5"
+          }
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 6,
+        "restrictProjectFileAccess": 1,
+        "projectStatus": 4,
+        "renderCacheId": 2173986,
+        "projectId": 298187,
+        "packageFingerprintId": 606375272,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameVersionMappingId": 2725255,
+        "gameVersionId": 4458,
+        "gameId": 432,
+        "isServerPack": false,
+        "FileNameOnDisk": "buildinggadgets-1.16.5-3.8.0.jar"
+      },
+      "dateInstalled": "2021-07-05T20:20:57.5145815Z",
+      "dateUpdated": "2021-07-05T20:20:57.5145815Z",
+      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
+      "status": 5,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": null
+    },
+    {
       "addonID": 390898,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
@@ -32745,67 +32623,61 @@
       "installedTargets": null
     },
     {
-      "addonID": 298187,
+      "addonID": 479142,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3205295,
-        "displayName": "buildinggadgets-1.16.5-3.8.0.jar",
-        "fileName": "buildinggadgets-1.16.5-3.8.0.jar",
-        "fileDate": "2021-02-15T19:42:19.863Z",
-        "fileLength": 909445,
-        "releaseType": 1,
+        "id": 3368538,
+        "displayName": "PrettyPipesFluids-0.4.1.jar",
+        "fileName": "PrettyPipesFluids-0.4.1.jar",
+        "fileDate": "2021-06-29T06:57:01.207Z",
+        "fileLength": 82918,
+        "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3205/295/buildinggadgets-1.16.5-3.8.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3368/538/PrettyPipesFluids-0.4.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 56916937,
-            "addonId": 399757,
-            "type": 2,
-            "fileId": 3205295
+            "id": 67567994,
+            "addonId": 376737,
+            "type": 3,
+            "fileId": 3368538
           }
         ],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 267054609,
+            "fingerprint": 480572702,
             "type": 3,
             "invalidFingerprint": false
           },
           {
-            "foldername": "com",
-            "fingerprint": 962286206,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 597267807,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "buildinggadgets_logo.png",
-            "fingerprint": 2374162731,
+            "foldername": "dev",
+            "fingerprint": 961421603,
             "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3840510572,
+            "fingerprint": 2089877027,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 1771029295,
             "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 3547210442,
+            "fingerprint": 3380797652,
             "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3456565023,
+        "packageFingerprint": 3884147275,
         "gameVersion": [
           "1.16.5"
         ],
@@ -32822,18 +32694,18 @@
         "categorySectionPackageType": 6,
         "restrictProjectFileAccess": 1,
         "projectStatus": 4,
-        "renderCacheId": 2173986,
-        "projectId": 298187,
-        "packageFingerprintId": 606375272,
-        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2725255,
-        "gameVersionId": 4458,
+        "renderCacheId": 2383865,
+        "projectId": 479142,
+        "packageFingerprintId": 694154310,
+        "gameVersionDateReleased": "2021-01-15T14:14:48.91Z",
+        "gameVersionMappingId": 3085190,
+        "gameVersionId": 8203,
         "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "buildinggadgets-1.16.5-3.8.0.jar"
+        "FileNameOnDisk": "PrettyPipesFluids-0.4.1.jar"
       },
-      "dateInstalled": "2021-07-05T20:20:57.5145815Z",
-      "dateUpdated": "2021-07-05T20:20:57.5145815Z",
+      "dateInstalled": "2021-07-05T20:20:52.5233912Z",
+      "dateUpdated": "2021-07-05T20:20:52.5233912Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
@@ -32961,102 +32833,6 @@
       },
       "dateInstalled": "2021-07-05T20:31:05.1764869Z",
       "dateUpdated": "2021-07-05T20:31:05.1764869Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
-      "preferenceAutoInstallUpdates": null,
-      "preferenceAlternateFile": false,
-      "preferenceIsIgnored": false,
-      "isModified": false,
-      "isWorkingCopy": false,
-      "isFuzzyMatch": false,
-      "preferenceReleaseType": null,
-      "manifestName": null,
-      "installedTargets": null
-    },
-    {
-      "addonID": 479142,
-      "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
-      "installedFile": {
-        "id": 3368538,
-        "displayName": "PrettyPipesFluids-0.4.1.jar",
-        "fileName": "PrettyPipesFluids-0.4.1.jar",
-        "fileDate": "2021-06-29T06:57:01.207Z",
-        "fileLength": 82918,
-        "releaseType": 2,
-        "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3368/538/PrettyPipesFluids-0.4.1.jar",
-        "isAlternate": false,
-        "alternateFileId": 0,
-        "dependencies": [
-          {
-            "id": 67567994,
-            "addonId": 376737,
-            "type": 3,
-            "fileId": 3368538
-          }
-        ],
-        "isAvailable": true,
-        "modules": [
-          {
-            "foldername": "META-INF",
-            "fingerprint": 480572702,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "dev",
-            "fingerprint": 961421603,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "assets",
-            "fingerprint": 2089877027,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 1771029295,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "pack.mcmeta",
-            "fingerprint": 3380797652,
-            "type": 3,
-            "invalidFingerprint": false
-          }
-        ],
-        "packageFingerprint": 3884147275,
-        "gameVersion": [
-          "1.16.5"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          }
-        ],
-        "hasInstallScript": false,
-        "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2383865,
-        "projectId": 479142,
-        "packageFingerprintId": 694154310,
-        "gameVersionDateReleased": "2021-01-15T14:14:48.91Z",
-        "gameVersionMappingId": 3085190,
-        "gameVersionId": 8203,
-        "gameId": 432,
-        "isServerPack": false,
-        "FileNameOnDisk": "PrettyPipesFluids-0.4.1.jar"
-      },
-      "dateInstalled": "2021-07-05T20:20:52.5233912Z",
-      "dateUpdated": "2021-07-05T20:20:52.5233912Z",
       "dateLastUpdateAttempted": "0001-01-01T00:00:00",
       "status": 5,
       "preferenceAutoInstallUpdates": null,
@@ -33285,82 +33061,64 @@
       "addonID": 272515,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3364386,
-        "displayName": "BetterAdvancements-1.16.5-0.1.1.109",
-        "fileName": "BetterAdvancements-1.16.5-0.1.1.109.jar",
-        "fileDate": "2021-06-25T14:36:46.677Z",
+        "id": 3400299,
+        "displayName": "BetterAdvancements-1.16.5-0.1.1.111",
+        "fileName": "BetterAdvancements-1.16.5-0.1.1.111.jar",
+        "fileDate": "2021-07-25T10:48:51.397Z",
         "fileLength": 63271,
         "releaseType": 3,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3364/386/BetterAdvancements-1.16.5-0.1.1.109.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3400/299/BetterAdvancements-1.16.5-0.1.1.111.jar",
         "isAlternate": false,
-        "alternateFileId": 3364387,
+        "alternateFileId": 3400300,
         "dependencies": [],
         "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2311098073,
-            "type": 3,
+            "fingerprint": 484736520,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "betteradvancements",
             "fingerprint": 2934134305,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 509271065,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
             "fingerprint": 2900330132,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3250349096,
+        "packageFingerprint": 53585469,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2378440,
-        "projectId": 272515,
-        "packageFingerprintId": 691643778,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3074810,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "BetterAdvancements-1.16.5-0.1.1.109.jar"
+        "FileNameOnDisk": "BetterAdvancements-1.16.5-0.1.1.111.jar"
       },
       "dateInstalled": "2021-07-05T20:21:15.1220335Z",
-      "dateUpdated": "2021-07-05T20:21:15.1220335Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-07-25T20:32:16.1257649Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:32:16.1257649Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -33499,40 +33257,40 @@
       "addonID": 392039,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3395631,
-        "displayName": "Pedestals - 1.16.5_0.8s_hotfix_4_APIv5",
-        "fileName": "pedestals-0.8s_hotfix_4_dev_5.jar",
-        "fileDate": "2021-07-21T02:10:25.527Z",
-        "fileLength": 1839790,
-        "releaseType": 3,
-        "fileStatus": 8,
-        "downloadUrl": "https://edge.forgecdn.net/files/3395/631/pedestals-0.8s_hotfix_4_dev_5.jar",
+        "id": 3399989,
+        "displayName": "Pedestals - 1.16.5_0.8s_hotfix_5",
+        "fileName": "pedestals-0.8s_hotfix_5.jar",
+        "fileDate": "2021-07-25T00:58:11.67Z",
+        "fileLength": 1854516,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3399/989/pedestals-0.8s_hotfix_5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
-        "isAvailable": false,
+        "isAvailable": true,
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3344010295,
+            "fingerprint": 3155662775,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 458786521,
+            "fingerprint": 3087123257,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 3406772393,
+            "fingerprint": 312081551,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 2241248005,
+            "fingerprint": 3529712948,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -33543,7 +33301,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 3623330866,
+        "packageFingerprint": 38470276,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -33557,11 +33315,11 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "pedestals-0.8s_hotfix_4_dev_5.jar"
+        "FileNameOnDisk": "pedestals-0.8s_hotfix_5.jar"
       },
       "dateInstalled": "2021-07-05T20:20:54.9228218Z",
-      "dateUpdated": "2021-07-24T19:09:58.7336584Z",
-      "dateLastUpdateAttempted": "2021-07-24T19:09:58.7336584Z",
+      "dateUpdated": "2021-07-25T20:33:13.9408292Z",
+      "dateLastUpdateAttempted": "2021-07-25T20:33:13.9408292Z",
       "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
@@ -33775,7 +33533,7 @@
       "dateInstalled": "2021-07-05T20:20:57.518581Z",
       "dateUpdated": "2021-07-24T18:19:12.2036312Z",
       "dateLastUpdateAttempted": "2021-07-24T18:19:12.2036312Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
