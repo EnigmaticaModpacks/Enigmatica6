@@ -3,13 +3,11 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1.0,
     "traits": ["basalz", "wither", "can_swim"],
+    "baseLayerTexture": "other/basalz",
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "ColorData": {
-        "primaryColor":"#34353D",
-        "secondaryColor":"#34353D",
-        "honeycombColor": "#34353D",
-        "isBeeColored": true,
+        "honeycombColor": "#1b141d",
+        "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
         "isEnchanted": false
