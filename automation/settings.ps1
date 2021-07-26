@@ -145,11 +145,10 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"diet-client.toml",
 	"contentcreatorintegration/contentcreatorintegration.toml",
 	"contentcreatorintegration/contentcreatorintegration-common.toml",
-	"contentcreatorintegration/default/constants.json",
-	"waystones-client.toml"
+	"contentcreatorintegration/default/constants.json"
 )
 
-$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @()
+$FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine")
 
 #=====================================================================//
 #  SERVER FILE SETTINGS
