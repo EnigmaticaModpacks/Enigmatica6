@@ -3,13 +3,11 @@
     "maxTimeInHive": 4800,
     "sizeModifier": 1.0,
     "traits": ["blitz", "wither", "can_swim"],
+    "baseLayerTexture": "other/blitz",
     "hasHoneycomb": true,
-    "apiaryOutputAmounts": [3, 6, 1, 2],
     "ColorData": {
-        "primaryColor":"#CFDAE0",
-        "secondaryColor":"#CFDAE0",
-        "honeycombColor": "#CFDAE0",
-        "isBeeColored": true,
+        "honeycombColor": "#def7fa",
+        "isBeeColored": false,
         "isRainbowBee": false,
         "isGlowing": false,
         "isEnchanted": false
