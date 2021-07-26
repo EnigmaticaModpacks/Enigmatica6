@@ -81,6 +81,7 @@ install:
         - building_gadgets_patterns/**
         - config/*-client.toml
         - defaultconfigs/*-client.toml
+        - local/**
 
     # This makes the program check the folder for whether it is supposed to use the
     checkFolder: yes
