@@ -82,7 +82,7 @@
 	#Range: > 0
 	builderMaxRF = 1000000
 	#This is a list of blocks that are either blacklisted or whitelisted from the Builder when it tries to move tile entities (format <id>=<cost>)
-	blackWhiteListedBlocks = ["lootr:loot_chest=blacklist", "lootr:loot_barrel=blacklist", "lootr:loot_trapped_chest=blacklist"]
+	blackWhiteListedBlocks = []
 
 #Settings for the shield system
 [shield]
