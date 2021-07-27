@@ -254,6 +254,19 @@ onEvent('recipes', (event) => {
                 syphon: 200,
                 ticks: 200,
                 orbLevel: 1
+            },
+            {
+                inputs: [
+                    'aquaculture:fish_bones',
+                    '#forge:dusts/lapis',
+                    'minecraft:fermented_spider_eye',
+                    'undergarden:raw_dweller_meat'
+                ],
+                output: 'meetyourfight:fossil_bait',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 2
             }
         ]
     };

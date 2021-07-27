@@ -349,22 +349,6 @@ onEvent('recipes', (event) => {
                 sapling: 'undergarden:wigglewood_sapling',
                 id: 'naturesaura:tree_ritual/crushing_catalyst'
             },
-
-            // Recipes below this point have not yet been expertified. To Do.
-            {
-                inputs: [
-                    { tag: 'minecraft:saplings' },
-                    { item: 'minecraft:dandelion' },
-                    { item: 'minecraft:poppy' },
-                    { item: 'minecraft:wheat_seeds' },
-                    { item: 'minecraft:sugar_cane' },
-                    { item: 'naturesaura:gold_leaf' }
-                ],
-                sapling: 'quark:yellow_blossom_sapling',
-                output: { item: 'naturesaura:ancient_sapling', count: 2 },
-                time: 200,
-                id: 'naturesaura:tree_ritual/ancient_sapling'
-            },
             {
                 inputs: [
                     { item: 'naturesaura:infused_stone' },
@@ -372,18 +356,18 @@ onEvent('recipes', (event) => {
                     { tag: 'forge:ingots/tainted_gold' },
                     { tag: 'forge:ingots/infused_iron' },
                     { item: 'minecraft:fire_charge' },
-                    { item: 'minecraft:flint' },
-                    { item: 'minecraft:magma_block' },
-                    { item: 'naturesaura:token_fear' }
+                    { item: 'minecraft:flint_and_steel' },
+                    { item: 'tconstruct:magma_cake' },
+                    { item: 'naturesaura:token_anger' }
                 ],
-                sapling: 'quark:yellow_blossom_sapling',
+                sapling: 'quark:red_blossom_sapling',
                 output: { item: 'naturesaura:furnace_heater' },
                 time: 600,
                 id: 'naturesaura:tree_ritual/furnace_heater'
             },
             {
                 inputs: [
-                    { item: 'minecraft:diamond' },
+                    { tag: 'forge:gems/mana_diamond' },
                     { tag: 'forge:ingots/tainted_gold' },
                     { tag: 'forge:ingots/sky' },
                     { item: 'naturesaura:token_fear' }
@@ -393,6 +377,36 @@ onEvent('recipes', (event) => {
                 time: 200,
                 id: 'naturesaura:tree_ritual/break_prevention'
             },
+            {
+                inputs: [
+                    { item: 'atum:palm_sapling' },
+                    { item: 'atum:date' },
+                    { item: 'undergarden:veil_mushroom' },
+                    { item: 'atum:emmer_seeds' },
+                    { item: 'undergarden:glowing_kelp' },
+                    { item: 'naturesaura:gold_leaf' }
+                ],
+                sapling: 'quark:lavender_blossom_sapling',
+                output: { item: 'naturesaura:ancient_sapling', count: 2 },
+                time: 200,
+                id: 'naturesaura:tree_ritual/ancient_sapling'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { tag: 'forge:ores/emerald' },
+                    { tag: 'forge:ores/cobalt' },
+                    { tag: 'botania:runes/spring' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: { nbt: { effect: 'naturesaura:ore_spawn' }, item: 'naturesaura:effect_powder', count: 4 },
+                time: 400,
+                id: 'naturesaura:tree_ritual/ore_spawn_powder'
+            },
+
+            // Recipes below this point have not yet been expertified. To Do.
+
             {
                 inputs: [
                     { item: 'naturesaura:gold_powder' },
@@ -428,18 +442,6 @@ onEvent('recipes', (event) => {
                 output: { nbt: { effect: 'naturesaura:plant_boost' }, item: 'naturesaura:effect_powder', count: 24 },
                 time: 400,
                 id: 'naturesaura:tree_ritual/plant_powder'
-            },
-            {
-                inputs: [
-                    { item: 'naturesaura:gold_powder' },
-                    { item: 'naturesaura:gold_powder' },
-                    { tag: 'forge:ores/diamond' },
-                    { tag: 'forge:ores/redstone' }
-                ],
-                sapling: 'quark:yellow_blossom_sapling',
-                output: { nbt: { effect: 'naturesaura:ore_spawn' }, item: 'naturesaura:effect_powder', count: 4 },
-                time: 400,
-                id: 'naturesaura:tree_ritual/ore_spawn_powder'
             },
             {
                 inputs: [
