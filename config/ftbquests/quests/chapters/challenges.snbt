@@ -1154,6 +1154,25 @@
 						}
 					}
 				}
+				{
+					id: "1C420C2B58ADD9F4"
+					type: "item"
+					title: "Infinity Nuke: Artifact Tier"
+					item: {
+						id: "industrialforegoing:infinity_nuke"
+						Count: 1b
+						tag: {
+							CanCharge: 1
+							Special: 0
+							Selected: "ARTIFACT"
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+						}
+					}
+				}
 			]
 			rewards: [
 				{
@@ -1377,6 +1396,42 @@
 										Blue: 184
 										Green: 50
 									}
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "6457AAA4C0F166C9"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									Colors: {
+										Bottom: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Top: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Middle: {
+											Red: 137
+											Blue: 184
+											Green: 50
+										}
+									}
+									DisplayScale: 0.5d
+									Animation: "fixed"
+									id: "industrialforegoing:infinity_nuke"
+									Count: 1
+									tag: { }
 								}
 							}
 						}

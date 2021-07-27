@@ -77,7 +77,8 @@ onEvent('jei.information', (event) => {
                 'industrialforegoing:infinity_saw',
                 'industrialforegoing:infinity_drill',
                 'industrialforegoing:infinity_hammer',
-                'industrialforegoing:infinity_trident'
+                'industrialforegoing:infinity_trident',
+                'industrialforegoing:infinity_nuke'
             ],
             description: [
                 "Nine Quintillion is big. Really big. You just won't believe how vastly hugely mind-bogglingly big it is."
@@ -89,7 +90,8 @@ onEvent('jei.information', (event) => {
                 'industrialforegoing:infinity_saw',
                 'industrialforegoing:infinity_drill',
                 'industrialforegoing:infinity_hammer',
-                'industrialforegoing:infinity_trident'
+                'industrialforegoing:infinity_trident',
+                'industrialforegoing:infinity_nuke'
             ],
             description: [
                 "Unless you plan on sitting here for a few centuries, filling this tool isn't possible through conventional means. Some say the answer lies in Nucleosynthesis instead."
