@@ -1,15 +1,18 @@
 
 #No comment
 [Restrictions]
-	#Defines the chat box cooldown for message sending.
-	#Range: > 1
-	chatBoxCooldown = 10
 	#The max range of the player detector functions. If anyone use a higher range, the detector will use this max range
 	#Range: 0 ~ 100000000
 	playerDetMaxRange = 100000000
 	#Defines the maximum energy flow of the energy detector.
 	#Range: > 1
 	energyDetectorMaxFlow = 64000
+	#Defines max energy stored in any powered peripheral
+	#Range: > 1000000
+	poweredPeripheralMaxEnergyStored = 100000000
+	#Defines max nbt string that can be stored in nbt storage
+	#Range: > 0
+	nbtStorageMaxSize = 1048576
 
 #No comment
 [Features]
@@ -35,6 +38,94 @@
 	enableInventoryManager = true
 	#Enable the redstone integrator or not.
 	enableRedstoneIntegrator = true
+	#Enable the block reader or not.
+	enableBlockReader = true
+	#Enable the geo scanner or not.
+	enableGeoScanner = true
+	#Enable the colony integrator or not.
+	enableColonyIntegrator = true
+	#Enable the nbt storage block or not
+	enableNBTStorage = true
+	#Enable RF storage for peripherals, that could use it
+	enablePoweredPeripherals = false
+
+#No comment
+[Defaults]
+	#Defines default chatbox prefix
+	defaultChatBoxPrefix = "AP"
+
+#No comment
+[operations]
+	#Range: > 1000
+	digCooldown = 1000
+	#Range: > 0
+	digCost = 1
+	#Range: > 1000
+	useOnBlockCooldown = 5000
+	#Range: > 0
+	useOnBlockCost = 1
+	#Range: > 1000
+	suckCooldown = 1000
+	#Range: > 0
+	suckCost = 1
+	#Range: > 1000
+	useOnAnimalCooldown = 2500
+	#Range: > 0
+	useOnAnimalCost = 10
+	#Range: > 1000
+	captureAnimalCooldown = 50000
+	#Range: > 0
+	captureAnimalCost = 100
+	#Range: > 1000
+	warpCooldown = 1000
+	#Range: > 0
+	warpCost = 1
+	#Range: > 1000
+	scanBlocksCooldown = 2000
+	#Range: 1 ~ 64
+	scanBlocksMaxFreeRadius = 8
+	#Range: 1 ~ 64
+	scanBlocksMaxCostRadius = 16
+	#Range: 0.1 ~ 1.7976931348623157E308
+	scanBlocksExtraBlockCost = 0.17
+	#Range: > 1000
+	scanEntitiesCooldown = 2000
+	#Range: 1 ~ 64
+	scanEntitiesMaxFreeRadius = 8
+	#Range: 1 ~ 64
+	scanEntitiesMaxCostRadius = 16
+	#Range: 0.1 ~ 1.7976931348623157E308
+	scanEntitiesExtraBlockCost = 0.17
+	#Range: > 1000
+	chatMessageCooldown = 10000
+
+#No comment
+[metaphysics]
+	#Defines energy to fuel rate
+	#Range: > 575
+	energyToFuelRate = 575
+	enableWeakAutomataCore = true
+	enableEndAutomataCore = true
+	enableHusbandryAutomataCore = true
+	#Range: 1 ~ 64
+	tier1AutomataCoreInteractionRadius = 2
+	#Range: 1 ~ 32
+	tier1AutomataCoreMaxFuelConsumptionRate = 2
+	#Range: 1 ~ 64
+	tier2AutomataCoreInteractionRadius = 4
+	#Range: 1 ~ 32
+	tier2AutomataCoreMaxFuelConsumptionRate = 3
+	#Range: 1 ~ 64
+	overpoweredTier1AutomataCoreInteractionRadius = 4
+	#Range: 1 ~ 32
+	overpoweredTier1AutomataCoreMaxFuelConsumptionRate = 3
+	#Range: 1 ~ 64
+	overpoweredTier2AutomataCoreInteractionRadius = 6
+	#Range: 1 ~ 32
+	overpoweredTier2AutomataCoreMaxFuelConsumptionRate = 4
+
+#No comment
+[world]
 	#Enable the villager structures for the computer scientist.
 	enableVillagerStructures = true
 
