@@ -1173,6 +1173,26 @@
 						}
 					}
 				}
+				{
+					id: "50D6D2760038E934"
+					type: "item"
+					title: "Infinity Launcher: Artifact Tier"
+					item: {
+						id: "industrialforegoing:infinity_launcher"
+						Count: 1b
+						tag: {
+							CanCharge: 1
+							Energy: 9223372036854775807L
+							Fluid: {
+								FluidName: "biofuel"
+								Amount: 0
+							}
+							Special: 0
+							Selected: "ARTIFACT"
+							Plunger: 0
+						}
+					}
+				}
 			]
 			rewards: [
 				{
@@ -1430,6 +1450,42 @@
 									DisplayScale: 0.5d
 									Animation: "fixed"
 									id: "industrialforegoing:infinity_nuke"
+									Count: 1
+									tag: { }
+								}
+							}
+						}
+					}
+				}
+				{
+					id: "42B3BA6BE0A12001"
+					type: "item"
+					item: {
+						id: "trofers:small_trophy"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Item: {
+									Colors: {
+										Bottom: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Top: {
+											Red: 249
+											Blue: 254
+											Green: 255
+										}
+										Middle: {
+											Red: 137
+											Blue: 184
+											Green: 50
+										}
+									}
+									DisplayScale: 0.5d
+									Animation: "fixed"
+									id: "industrialforegoing:infinity_launcher"
 									Count: 1
 									tag: { }
 								}
