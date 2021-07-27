@@ -49,7 +49,7 @@
 	#If true we go back to the old (wrong) sphere/cylinder calculation for the builder/shield
 	oldSphereCylinderShape = false
 	#If true the quarry will also quarry tile entities. Otherwise it just ignores them
-	quarryTileEntities = true
+	quarryTileEntities = false
 	#Maximum offset of the shape when a shape card is used in the builder
 	#Range: > 0
 	maxBuilderOffset = 260
