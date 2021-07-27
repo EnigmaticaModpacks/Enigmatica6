@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'undergarden:music_disc_relict', count: 1, return_chance: 1.0 },
+                { item: 'undergarden:music_disc_relict', count: 1 },
                 { item: 'aquaculture:fish_bones', count: 1 },
                 { tag: 'forge:dusts/lapis', count: 2 },
                 { item: 'minecraft:fermented_spider_eye', count: 2 },
