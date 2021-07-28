@@ -335,7 +335,6 @@ onEvent('recipes', (event) => {
         } catch (err) {
             return;
         }
-        console.log(`Create Gem Processing: ${material}`);
 
         switch (materialProperties.output) {
             case 'dust':
@@ -876,7 +875,8 @@ onEvent('recipes', (event) => {
             type: 'occultism:crushing',
             ingredient: { tag: input },
             result: { item: output, count: count },
-            crushing_time: 100
+            crushing_time: 100,
+            ignore_crushing_multiplier: false
         });
     }
 
@@ -894,7 +894,8 @@ onEvent('recipes', (event) => {
                 type: 'occultism:crushing',
                 ingredient: { tag: input },
                 result: { item: output, count: count },
-                crushing_time: 100
+                crushing_time: 100,
+                ignore_crushing_multiplier: false
             })
             .id(`occultism:crushing/${material}_dust`);
     }
@@ -926,7 +927,8 @@ onEvent('recipes', (event) => {
             type: 'occultism:crushing',
             ingredient: { tag: input },
             result: { item: output, count: 1 },
-            crushing_time: 100
+            crushing_time: 100,
+            ignore_crushing_multiplier: true
         });
     }
 

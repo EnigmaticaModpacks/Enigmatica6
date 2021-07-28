@@ -19,7 +19,12 @@ onEvent('recipes', (event) => {
         /create:crafting\/materials\/andesite_alloy/,
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
-        'minecraft:stick'
+        'minecraft:stick',
+        'pedestals:upgrades/breaker2',
+        'pedestals:ingot_gold_from_upgrades',
+        'pedestals:upgrades/recycler',
+        'pedestals:upgrades/rffuelgen',
+        'pedestals:upgrades/rfexpgen'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
@@ -34,7 +39,9 @@ onEvent('recipes', (event) => {
         { output: 'botania:mana_pylon', id: 'botania:mana_pylon' },
         { output: 'botania:natura_pylon', id: 'botania:natura_pylon' },
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
-        { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' }
+        { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
+        { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
+        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' }
     ];
 
     idRemovals.forEach((id) => {

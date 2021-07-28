@@ -1,4 +1,7 @@
 onEvent('recipes', (event) => {
+    event.remove({ type: 'create:cutting', input: '#minecraft:logs' });
+    event.remove({ type: 'immersiveengineering:sawmill', input: '#minecraft:logs' });
+
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });

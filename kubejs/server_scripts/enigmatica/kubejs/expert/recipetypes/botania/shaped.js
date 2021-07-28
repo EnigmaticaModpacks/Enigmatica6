@@ -74,6 +74,26 @@ onEvent('recipes', (event) => {
                 D: '#forge:gems/mana'
             },
             id: 'botania:hourglass'
+        },
+        {
+            output: 'botania:ender_eye_block',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'create:polished_rose_quartz',
+                B: 'minecraft:ender_eye',
+                C: 'architects_palette:abyssaline'
+            },
+            id: 'botania:ender_eye_block'
+        },
+        {
+            output: 'botania:forest_eye',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:ingots/infused_iron',
+                B: 'naturesaura:infused_stone',
+                C: 'minecraft:ender_eye'
+            },
+            id: 'botania:forest_eye'
         }
     ];
 

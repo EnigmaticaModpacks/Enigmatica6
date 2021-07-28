@@ -103,7 +103,7 @@ onEvent('recipes', (event) => {
         });
     });
 
-    ['#forge:dirt', '#forge:workbench', '#forge:grass'].forEach((tag) => {
+    ['#forge:dirt', '#forge:workbenches', '#forge:grass'].forEach((tag) => {
         stonecutterTagConversion(event, tag);
     });
 });

@@ -99,6 +99,10 @@ onEvent('recipes', (event) => {
             ],
             output: { item: 'botania:gourmaryllis' },
             id: 'botania:petal_apothecary/gourmaryllis'
+        },
+        {
+            inputs: [{ item: 'minecraft:mossy_stone_bricks' }, { item: 'naturesaura:gold_fiber' }],
+            output: { item: 'naturesaura:gold_brick' }
         }
     ];
 

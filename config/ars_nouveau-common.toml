@@ -41,15 +41,9 @@
 	#How often Drygmys spawn
 	#Range: 0 ~ 100
 	drygmyWeight = 3
-	#How much mana drygmys consume per generation
-	#Range: 0 ~ 10000
-	drygmyManaCost = 8000
 	#How much mana sylphs consume per generation
 	#Range: 0 ~ 10000
 	sylphManaCost = 2000
-	#How many channels must occur before a drygmy produces loot
-	#Range: 0 ~ 300
-	drygmyMaxProgress = 15
 
 #Mana
 [mana]
@@ -80,4 +74,21 @@
 	#Regen bonus per glyph
 	#Range: 0.0 ~ 2.147483647E9
 	glyphRegen = 0.33
+
+[drygmy_production]
+	#How much mana drygmys consume per generation
+	#Range: 0 ~ 10000
+	drygmyManaCost = 8000
+	#How many channels must occur before a drygmy produces loot
+	#Range: 0 ~ 300
+	drygmyMaxProgress = 20
+	#Bonus number of items a drygmy produces per unique mob
+	#Range: 0 ~ 300
+	drygmyUniqueBonus = 2
+	#Base number of items a drygmy produces per cycle before bonuses.
+	#Range: > -2147483648
+	drygmyBaseItems = 1
+	#Max Bonus number of items a drygmy produces from nearby entities. Each entity equals 1 item.
+	#Range: 0 ~ 300
+	drygmyQuantityCap = 5
 

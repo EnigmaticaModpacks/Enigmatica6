@@ -1,0 +1,26 @@
+
+[Nether]
+	#
+	# Size of Nether Stronghold. This number is how many pieces deep a branch can go from the center piece.
+	#1 for supertiny and 20 for supermassive Strongholds.
+	#Range: 1 ~ 30
+	strongholdSizeSH = 15
+	#
+	# How rare are Nether-styled Strongholds in Nether-category biomes.
+	# 1 for spawning in most chunks and 1001 for no spawn.
+	#Range: 1 ~ 1001
+	netherStrongholdMaxChunkDistance = 85
+	#
+	# Minimum Y height that Nether stronghold's starting point can spawn at. 
+	# Default is 35.
+	# Note: Strongholds will spawn between min and max y height set in config.
+	#Range: 0 ~ 255
+	netherStrongholdMinHeight = 10
+	#
+	# Minimum Y height that Nether stronghold's starting point can spawn at. 
+	# Default is 40.
+	# Note: Strongholds will spawn between min and max y height set in config.
+	# Setting this to below min height config will make strongholds spawn only at min height.
+	#Range: 0 ~ 255
+	netherStrongholdMaxHeight = 36
+

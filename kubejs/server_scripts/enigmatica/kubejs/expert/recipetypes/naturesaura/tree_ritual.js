@@ -16,8 +16,8 @@ onEvent('recipes', (event) => {
                     { item: 'thermal:earth_charge' },
                     { item: 'minecraft:fire_charge' }
                 ],
-                output: 'naturesaura:nature_altar',
-                count: 1,
+                output: { item: 'naturesaura:nature_altar' },
+                time: 500,
                 sapling: 'quark:yellow_blossom_sapling',
                 id: 'naturesaura:tree_ritual/nature_altar'
             },
@@ -37,8 +37,8 @@ onEvent('recipes', (event) => {
                     { item: 'architects_palette:sunmetal_blend' },
                     { item: 'botania:pink_shiny_flower' }
                 ],
-                output: 'naturesaura:token_joy',
-                count: 2,
+                output: { item: 'naturesaura:token_joy', count: 2 },
+                time: 200,
                 sapling: 'quark:yellow_blossom_sapling',
                 id: 'naturesaura:tree_ritual/token_joy'
             },
@@ -58,8 +58,8 @@ onEvent('recipes', (event) => {
                     { item: 'astralsorcery:nocturnal_powder' },
                     { item: 'upgrade_aquatic:thrasher_tooth' }
                 ],
-                output: 'naturesaura:token_fear',
-                count: 2,
+                output: { item: 'naturesaura:token_fear', count: 2 },
+                time: 200,
                 sapling: 'architects_palette:twisted_sapling',
                 id: 'naturesaura:tree_ritual/token_fear'
             },
@@ -74,8 +74,8 @@ onEvent('recipes', (event) => {
                     { item: 'alexsmobs:komodo_spit' },
                     { item: 'powah:charged_snowball' }
                 ],
-                output: 'naturesaura:token_anger',
-                count: 2,
+                output: { item: 'naturesaura:token_anger', count: 2 },
+                time: 200,
                 sapling: 'quark:red_blossom_sapling',
                 id: 'naturesaura:tree_ritual/token_anger'
             },
@@ -95,8 +95,8 @@ onEvent('recipes', (event) => {
                     { item: 'minecraft:ghast_tear' },
                     { item: 'botania:black_shiny_flower' }
                 ],
-                output: 'naturesaura:token_sorrow',
-                count: 2,
+                output: { item: 'naturesaura:token_sorrow', count: 2 },
+                time: 200,
                 sapling: 'byg:joshua_sapling',
                 id: 'naturesaura:tree_ritual/token_sorrow'
             },
@@ -111,8 +111,8 @@ onEvent('recipes', (event) => {
                     { item: 'thermal:phytogro' }, //topright
                     { item: 'botania:livingwood' } //bottomleft
                 ],
-                output: 'naturesaura:oak_generator',
-                count: 1,
+                output: { item: 'naturesaura:oak_generator' },
+                time: 600,
                 sapling: 'quark:yellow_blossom_sapling',
                 id: 'naturesaura:oak_generator'
             },
@@ -127,8 +127,8 @@ onEvent('recipes', (event) => {
                     { tag: 'forge:ingots/nether_brick' }, //topright
                     { item: 'minecraft:soul_sand' } //bottomleft
                 ],
-                output: 'naturesaura:animal_generator',
-                count: 1,
+                output: { item: 'naturesaura:animal_generator' },
+                time: 600,
                 sapling: 'quark:blue_blossom_sapling',
                 id: 'naturesaura:animal_generator'
             },
@@ -143,8 +143,8 @@ onEvent('recipes', (event) => {
                     { item: 'minecraft:firework_rocket' }, //topright
                     { item: 'naturesaura:token_rage' } //bottomleft
                 ],
-                output: 'naturesaura:firework_generator',
-                count: 1,
+                output: { item: 'naturesaura:firework_generator' },
+                time: 600,
                 sapling: 'quark:blue_blossom_sapling',
                 id: 'naturesaura:firework_generator'
             },
@@ -159,8 +159,8 @@ onEvent('recipes', (event) => {
                     { item: 'botania:livingwood' }, //topright
                     { item: 'botania:livingwood' } //bottomleft
                 ],
-                output: 'naturesaura:flower_generator',
-                count: 1,
+                output: { item: 'naturesaura:flower_generator' },
+                time: 600,
                 sapling: 'quark:yellow_blossom_sapling',
                 id: 'naturesaura:flower_generator'
             },
@@ -175,8 +175,8 @@ onEvent('recipes', (event) => {
                     { tag: 'forge:ingots/nether_brick' }, //topright
                     { item: 'naturesaura:token_joy' } //bottomleft
                 ],
-                output: 'naturesaura:slime_split_generator',
-                count: 1,
+                output: { item: 'naturesaura:slime_split_generator' },
+                time: 600,
                 sapling: 'quark:lavender_blossom_sapling',
                 id: 'naturesaura:slime_split_generator'
             },
@@ -191,8 +191,8 @@ onEvent('recipes', (event) => {
                     { item: 'integratedterminals:chorus_glass' }, //topright
                     { item: 'naturesaura:token_rage' } //bottomleft
                 ],
-                output: 'naturesaura:chorus_generator',
-                count: 1,
+                output: { item: 'naturesaura:chorus_generator' },
+                time: 600,
                 sapling: 'architects_palette:twisted_sapling',
                 id: 'naturesaura:chorus_generator'
             },
@@ -207,8 +207,8 @@ onEvent('recipes', (event) => {
                     { item: 'eidolon:fungus_sprouts' }, //topright
                     { tag: 'forge:ingots/nether_brick' } //bottomleft
                 ],
-                output: 'naturesaura:potion_generator',
-                count: 1,
+                output: { item: 'naturesaura:potion_generator' },
+                time: 600,
                 sapling: 'quark:lavender_blossom_sapling',
                 id: 'naturesaura:potion_generator'
             },
@@ -223,8 +223,8 @@ onEvent('recipes', (event) => {
                     { item: 'botania:mossy_livingwood_planks' }, //topright
                     { item: 'botania:mossy_livingwood_planks' } //bottomleft
                 ],
-                output: 'naturesaura:moss_generator',
-                count: 1,
+                output: { item: 'naturesaura:moss_generator' },
+                time: 600,
                 sapling: 'architects_palette:twisted_sapling',
                 id: 'naturesaura:moss_generator'
             },
@@ -239,8 +239,8 @@ onEvent('recipes', (event) => {
                     { item: 'rsgauges:arrow_target' }, //topright
                     { item: 'naturesaura:token_anger' } //bottomleft
                 ],
-                output: 'naturesaura:projectile_generator',
-                count: 1,
+                output: { item: 'naturesaura:projectile_generator' },
+                time: 600,
                 sapling: 'quark:yellow_blossom_sapling',
                 id: 'naturesaura:projectile_generator'
             },
@@ -255,8 +255,8 @@ onEvent('recipes', (event) => {
                     { item: 'astralsorcery:rock_crystal' }, //topright
                     { tag: 'forge:ingots/starmetal' } //bottomleft
                 ],
-                output: 'naturesstarlight:crystal_generator',
-                count: 1,
+                output: { item: 'naturesstarlight:crystal_generator' },
+                time: 600,
                 sapling: 'quark:lavender_blossom_sapling',
                 id: 'naturesstarlight:crystal_generator'
             },
@@ -269,8 +269,8 @@ onEvent('recipes', (event) => {
                     { item: 'minecraft:conduit' }, //topleft
                     { item: 'botania:livingrock' } //bottomright
                 ],
-                output: 'botania:runic_altar',
-                count: 1,
+                output: { item: 'botania:runic_altar' },
+                time: 600,
                 sapling: 'quark:lavender_blossom_sapling',
                 id: 'botania:runic_altar'
             },
@@ -285,10 +285,191 @@ onEvent('recipes', (event) => {
                     { item: 'resourcefulbees:honey_fluid_bucket' }, //topright
                     { item: 'resourcefulbees:honey_fluid_bucket' } //bottomleft
                 ],
-                output: 'resourcefulbees:t3_apiary',
-                count: 1,
-                sapling: 'minecraft:oak_sapling',
+                output: { item: 'resourcefulbees:t3_apiary' },
+                time: 300,
+                sapling: 'quark:yellow_blossom_sapling',
                 id: 'resourcefulbees:t3_apiary'
+            },
+            {
+                inputs: [
+                    { item: 'meetyourfight:spectres_eye' }, //top
+                    { tag: 'forge:ingots/silver' }, //bottom
+                    { item: 'naturesaura:gold_leaf' }, //left
+                    { item: 'naturesaura:gold_leaf' }, //right
+                    { item: 'farmersdelight:tree_bark' }, //topleft
+                    { item: 'farmersdelight:tree_bark' }, //bottomright
+                    { item: 'farmersdelight:tree_bark' }, //topright
+                    { item: 'farmersdelight:tree_bark' } //bottomleft
+                ],
+                output: { item: 'naturesaura:eye' },
+                time: 250,
+                sapling: 'byg:blue_enchanted_sapling',
+                id: 'naturesaura:tree_ritual/eye'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:eye' }, //top
+                    { tag: 'forge:ingots/sky' }, //bottom
+                    { tag: 'forge:ingots/sky' }, //left
+                    { item: 'naturesaura:end_flower' }, //right
+                    { item: 'naturesaura:gold_leaf' }, //topleft
+                    { item: 'naturesaura:gold_leaf' }, //bottomright
+                    { item: 'botania:lens_normal' }, //topright
+                    { item: 'upgrade_aquatic:elder_eye' } //bottomleft
+                ],
+                output: { item: 'naturesaura:eye_improved' },
+                time: 500,
+                sapling: 'byg:blue_enchanted_sapling',
+                id: 'naturesaura:tree_ritual/eye_improved'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_brick' }, //top
+                    { item: 'naturesaura:infused_stone' }, //bottom
+                    { item: 'botania:brewery' }, //left
+                    { tag: 'forge:ingots/sky' }, //right
+                    { item: 'naturesaura:gold_leaf' }, //topleft
+                    { item: 'eidolon:gold_inlay' } //bottomright
+                ],
+                output: { item: 'naturesaura:conversion_catalyst' },
+                time: 600,
+                sapling: 'architects_palette:twisted_sapling',
+                id: 'naturesaura:tree_ritual/conversion_catalyst'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_brick' }, //top
+                    { item: 'naturesaura:infused_stone' }, //bottom
+                    { tag: 'forge:ingots/andesite_alloy' }, //left
+                    { tag: 'forge:ingots/andesite_alloy' }, //right
+                    { item: 'naturesaura:token_anger' } //topleft
+                ],
+                output: { item: 'naturesaura:crushing_catalyst' },
+                time: 600,
+                sapling: 'undergarden:wigglewood_sapling',
+                id: 'naturesaura:tree_ritual/crushing_catalyst'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:infused_stone' },
+                    { item: 'naturesaura:infused_stone' },
+                    { tag: 'forge:ingots/tainted_gold' },
+                    { tag: 'forge:ingots/infused_iron' },
+                    { item: 'minecraft:fire_charge' },
+                    { item: 'minecraft:flint_and_steel' },
+                    { item: 'tconstruct:magma_cake' },
+                    { item: 'naturesaura:token_anger' }
+                ],
+                sapling: 'quark:red_blossom_sapling',
+                output: { item: 'naturesaura:furnace_heater' },
+                time: 600,
+                id: 'naturesaura:tree_ritual/furnace_heater'
+            },
+            {
+                inputs: [
+                    { tag: 'forge:gems/mana_diamond' },
+                    { tag: 'forge:ingots/tainted_gold' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'naturesaura:token_fear' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: { item: 'naturesaura:break_prevention' },
+                time: 200,
+                id: 'naturesaura:tree_ritual/break_prevention'
+            },
+            {
+                inputs: [
+                    { item: 'atum:palm_sapling' },
+                    { item: 'atum:date' },
+                    { item: 'undergarden:veil_mushroom' },
+                    { item: 'atum:emmer_seeds' },
+                    { item: 'undergarden:glowing_kelp' },
+                    { item: 'naturesaura:gold_leaf' }
+                ],
+                sapling: 'quark:lavender_blossom_sapling',
+                output: { item: 'naturesaura:ancient_sapling', count: 2 },
+                time: 200,
+                id: 'naturesaura:tree_ritual/ancient_sapling'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { tag: 'forge:ores/emerald' },
+                    { tag: 'forge:ores/cobalt' },
+                    { tag: 'botania:runes/spring' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: { nbt: { effect: 'naturesaura:ore_spawn' }, item: 'naturesaura:effect_powder', count: 4 },
+                time: 400,
+                id: 'naturesaura:tree_ritual/ore_spawn_powder'
+            },
+
+            // Recipes below this point have not yet been expertified. To Do.
+
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'naturesaura:aura_cache' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: { nbt: { effect: 'naturesaura:cache_recharge' }, item: 'naturesaura:effect_powder', count: 32 },
+                time: 400,
+                id: 'naturesaura:tree_ritual/cache_powder'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'minecraft:egg' }
+                ],
+                sapling: 'quark:lavender_blossom_sapling',
+                output: { nbt: { effect: 'naturesaura:animal' }, item: 'naturesaura:effect_powder', count: 8 },
+                time: 400,
+                id: 'naturesaura:tree_ritual/animal_powder'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'minecraft:wheat' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: { nbt: { effect: 'naturesaura:plant_boost' }, item: 'naturesaura:effect_powder', count: 24 },
+                time: 400,
+                id: 'naturesaura:tree_ritual/plant_powder'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'minecraft:netherrack' },
+                    { item: 'minecraft:grass' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: { nbt: { effect: 'naturesaura:nether_grass' }, item: 'naturesaura:effect_powder', count: 24 },
+                time: 400,
+                id: 'naturesaura:tree_ritual/nether_grass_powder'
+            },
+            {
+                inputs: [
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'naturesaura:gold_powder' },
+                    { item: 'astralsorcery:illumination_powder' },
+                    { item: 'astralsorcery:aquamarine' }
+                ],
+                sapling: 'quark:yellow_blossom_sapling',
+                output: {
+                    nbt: { effect: 'naturesstarlight:starlight_increase' },
+                    item: 'naturesaura:effect_powder',
+                    count: 8
+                },
+                time: 400,
+                id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
             }
             /*
             ,
@@ -317,8 +498,8 @@ onEvent('recipes', (event) => {
             type: 'naturesaura:tree_ritual',
             ingredients: recipe.inputs,
             sapling: { item: recipe.sapling },
-            output: { item: recipe.output, count: recipe.count },
-            time: 500
+            output: recipe.output,
+            time: recipe.time
         });
         if (recipe.id) {
             re.id(recipe.id);

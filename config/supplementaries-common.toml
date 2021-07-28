@@ -11,8 +11,8 @@
 		chance = 2
 
 	[blocks.speaker_block]
-		#maximum range
-		#Range: 0 ~ 10000000
+		#Maximum block range
+		#Range: 0 ~ 100000000
 		range = 64
 
 	[blocks.bellows]
@@ -204,10 +204,10 @@
 		mod_blacklist = ["extlights", "betterendforge", "tconstruct"]
 
 	[tweaks.bells_tweaks]
-		#ring a bell by clicking on a chain that's connected to it
+		#Ring a bell by clicking on a chain that's connected to it
 		chain_ringing = true
-		#max chain length that allows a bell to ring
-		#Range: 0 ~ 1024
+		#Max chain length that allows a bell to ring
+		#Range: 0 ~ 256
 		chain_length = 16
 
 	[tweaks.raked_gravel]
@@ -253,6 +253,10 @@
 		#Amount of rotten flesh needed
 		#Range: 1 ~ 1000
 		rotten_flesh = 64
+
+	[tweaks.enchanting_table]
+		#Allows enchanting table to interact with bokshelf even if they have carpets or other tagged items in the way. You can add more blocks by adding them to 'enchantment_bypass' block tag
+		ignore_carpets = true
 
 [items]
 

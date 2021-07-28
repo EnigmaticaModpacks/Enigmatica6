@@ -44,7 +44,11 @@
 #
 # Make sure users aren't trying to run script via sh directly (won't work)
 
-powershell $PWD/remove-client-mods.ps1
+if test -f $PWD/remove-client-mods.ps1; then
+	powershell $PWD/remove-client-mods.ps1 >/dev/null
+elif test -f remove-client-mods.ps1; then
+	powershell remove-client-mods.ps1 >/dev/null
+fi
 
 unameOut="$(uname -s)"
 case "${unameOut}" in
@@ -74,7 +78,7 @@ install_server(){
 		fi
 	else
 		if [ "${FORGEURL}" = "DISABLE" ]; then
-			export URL="https://files.minecraftforge.net/maven/net/minecraftforge/forge/${MCVER}-${FORGEVER}/forge-${MCVER}-${FORGEVER}-installer.jar"
+			export URL="https://maven.minecraftforge.net/net/minecraftforge/forge/${MCVER}-${FORGEVER}/forge-${MCVER}-${FORGEVER}-installer.jar"
 		else
 			export URL="${FORGEURL}"
 		fi
@@ -163,7 +167,7 @@ check_connection(){
 		echo "WARN: Internet connectivity checking is disabled" >>serverstart.log 2>&1
 		echo "Skipping internet connectivity check"
 	else
-		if ping -c 1 8.8.8.8 >> /dev/null 2>&1; then
+		if ping 8.8.8.8 >> /dev/null 2>&1; then
 			echo "INFO: Ping to Google DNS successfull" >>serverstart.log 2>&1
 			echo "Ping to Google DNS successfull"
 		else
@@ -171,7 +175,7 @@ check_connection(){
 			echo "Ping to Google DNS failed. No internet access?"
 		fi
 
-		if ping -c 1 4.2.2.1 >> /dev/null 2>&1; then
+		if ping 4.2.2.1 >> /dev/null 2>&1; then
 			echo "INFO: Ping to L4 successfull" >>serverstart.log 2>&1
 			echo "Ping to L4 successfull"
 		else
@@ -219,13 +223,11 @@ eula(){
 		echo "Could not find eula.txt starting server to generate it"
 		start_server
 		echo ""
-		echo "Closing to give user a change to accept the eula"
-		exit 0
+		read -p "Press any key to continue when you've accepted the EULA. Press CTRL+C to exit."
 	else
 		if grep -Fxq "eula=false" eula.txt; then
 			echo "Could not find 'eula=true' in 'eula.txt'"
-			echo "Closing to give user a change to accept the eula"
-			exit 0
+			read -p "Press any key to continue when you've accepted the EULA. Press CTRL+C to exit."
 		fi
 	fi
 }

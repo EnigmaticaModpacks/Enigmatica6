@@ -9,8 +9,15 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"PackMenu"
 )
 
-$InstanceRoot = ("$PSScriptRoot/.." | Resolve-Path)
-$modFolder = "$InstanceRoot/mods"
+if (Test-Path "mods" -PathType Container) {
+	$modFolder = "mods"
+}
+elseif (Test-Path "$PSScriptRoot/mods" -PathType Container) {
+	$modFolder = "$PSScriptRoot/mods"	
+}
+else {
+	Write-Host "Unable to find the mods folder, no client mods will be removed." -ForegroundColor Red
+}
 
 Write-Host
 Write-Host "Removing client only mods..." -ForegroundColor Cyan

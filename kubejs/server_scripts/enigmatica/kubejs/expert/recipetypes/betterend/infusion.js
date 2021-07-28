@@ -63,6 +63,33 @@ onEvent('recipes', (event) => {
                     { index: 7, tag: 'chipped:crying_obsidian' }
                 ],
                 time: 250
+            },
+            {
+                input: 'ars_nouveau:ring_of_greater_discount',
+                output: 'botania:mana_ring',
+                catalysts: [
+                    { index: 0, tag: 'forge:gems/mana_diamond' },
+                    { index: 1, tag: 'forge:ingots/manasteel' },
+                    { index: 3, tag: 'forge:ingots/manasteel' },
+                    { index: 4, item: 'botania:mana_tablet' },
+                    { index: 5, tag: 'forge:ingots/manasteel' },
+                    { index: 7, tag: 'forge:ingots/manasteel' }
+                ],
+                time: 75,
+                id: 'botania:mana_ring'
+            },
+            {
+                input: '#forge:ingots/terrasteel',
+                output: 'botania:gaia_ingot',
+                catalysts: [
+                    { index: 0, item: 'atum:seth_godshard' },
+                    { index: 1, item: 'botania:life_essence' },
+                    { index: 3, item: 'botania:life_essence' },
+                    { index: 5, item: 'botania:life_essence' },
+                    { index: 7, item: 'botania:life_essence' }
+                ],
+                time: 300,
+                id: 'botania:gaia_ingot'
             }
         ]
     };

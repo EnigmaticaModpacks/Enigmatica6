@@ -51,6 +51,23 @@ onEvent('recipes', (event) => {
             },
             consume_fluid: 1.0,
             id: 'ars_nouveau:mythical_clay'
+        },
+        {
+            inputs: [
+                { item: 'eidolon:enchanted_ash', count: 1 },
+                { item: 'atum:coin_gold', count: 6 },
+                { item: 'meetyourfight:phantoplasm', count: 1 },
+                { tag: 'forge:dusts/mana', count: 1 },
+                { tag: 'forge:dusts/lapis', count: 1 }
+            ],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'meetyourfight:spectres_eye', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0,
+            id: 'meetyourfight:spectres_eye'
         }
     ];
 

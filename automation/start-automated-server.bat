@@ -438,38 +438,12 @@ IF NOT %MC_SERVER_FORGEURL%==DISABLE (
 	GOTO DOWNLOADINSTALLER
 )
 
-SET MC_SERVER_TMP_FLAG=0
-
-:FETCHHTML
-REM Download Forge Download Index HTML to parse the URL for the direct download
-ECHO INFO: Fetching index html from forge ^( https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_%MC_SERVER_MCVER%.html ^) 1>>  "%~dp0logs\serverstart.log" 2>&1
-%MC_SYS32%\bitsadmin.exe /rawreturn /nowrap /transfer dlforgehtml /download /priority FOREGROUND "https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_%MC_SERVER_MCVER%.html" "%~dp0forge-%MC_SERVER_MCVER%.html"  1>> "%~dp0logs\serverstart.log" 2>&1
-
-IF NOT EXIST "%~dp0forge-%MC_SERVER_MCVER%.html" (
-	IF "%MC_SERVER_TMP_FLAG%"=="0" (
-		ECHO Something went wrong, trying again...
-		SET MC_SERVER_TMP_FLAG=1
-		GOTO FETCHHTML
-	) ELSE (
-		SET MC_SERVER_ERROR_REASON=ForgeIndexNotFound
-		GOTO ERROR
-	)
+IF %MC_SERVER_FORGEURL%==DISABLE (
+	SET MC_SERVER_FORGEURL="https://maven.minecraftforge.net/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar"
+	GOTO DOWNLOADINSTALLER
 )
 
-REM More complex wannabe-regex (aka magic)
-FOR /f tokens^=^5^ delims^=^=^<^>^" %%G in ('%MC_SYS32%\FINDSTR.EXE /ir "https://files.minecraftforge.net/maven/net/minecraftforge/forge/%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%/forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar" "%~dp0forge-%MC_SERVER_MCVER%.html"') DO SET MC_SERVER_FORGEURL=%%G & GOTO FETCHHTML1
-
-:FETCHHTML1
-IF "%MC_SERVER_FORGEURL%"=="%MC_SERVER_FORGEURL:installer.jar=%" (
-	IF "%MC_SERVER_TMP_FLAG%"=="0" (
-		ECHO Something went wrong, trying again...
-		SET MC_SERVER_TMP_FLAG=1
-		GOTO FETCHHTML
-	) ELSE (
-		SET MC_SERVER_ERROR_REASON=ForgeDownloadURLNotFound
-		GOTO ERROR
-	)
-) 
+SET MC_SERVER_TMP_FLAG=0
 
 ECHO Downloading FORGE (step 2 of 2). This can take several minutes, please be patient...
 SET MC_SERVER_TMP_FLAG=0
@@ -504,8 +478,6 @@ ECHO.
 ECHO Installing Forge now, please wait...
 ECHO INFO: Starting Forge install now, details below: 1>>  "%~dp0logs\serverstart.log" 2>&1
 java -jar "%~dp0forge-%MC_SERVER_MCVER%-%MC_SERVER_FORGEVER%-installer.jar" --installServer 1>>  "%~dp0logs\serverstart.log" 2>&1
-
-REM TODO: CHECKS TO VALIDATE SUCCESSFUL INSTALL
 
 REM Create default server.properties and eula.txt files
 IF NOT EXIST "%~dp0server.properties" (

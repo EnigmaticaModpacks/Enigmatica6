@@ -21,7 +21,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:apprentice_spell_book',
-                'minecraft:nether_star',
+                'minecraft:totem_of_undying',
                 '#forge:gems/amber',
                 '#forge:gems/amber',
                 '#forge:gems/amber',
