@@ -562,6 +562,10 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('minecraft:brown_dye', 2),
             inputs: ['#forge:dyes/red', '#forge:dyes/green']
+        },
+        {
+            output: 'sushigocrafting:soy_seeds',
+            inputs: ['sushigocrafting:soy_bean']
         }
     ];
 
