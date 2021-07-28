@@ -68,6 +68,66 @@ onEvent('recipes', (event) => {
             output: 'immersiveengineering:ingot_hop_graphite',
             xp: 0.5,
             id: 'immersiveengineering:ingot_hop_graphite_from_blasting'
+        },
+        {
+            input: 'aquaculture:neptunium_helmet',
+            output: Item.of('aquaculture:neptunium_nugget', 5),
+            xp: 5
+        },
+        {
+            input: 'aquaculture:neptunium_chestplate',
+            output: Item.of('aquaculture:neptunium_nugget', 8),
+            xp: 8
+        },
+        {
+            input: 'aquaculture:neptunium_leggings',
+            output: Item.of('aquaculture:neptunium_nugget', 7),
+            xp: 7
+        },
+        {
+            input: 'aquaculture:neptunium_boots',
+            output: Item.of('aquaculture:neptunium_nugget', 4),
+            xp: 4
+        },
+        {
+            input: 'aquaculture:neptunium_pickaxe',
+            output: Item.of('aquaculture:neptunium_nugget', 3),
+            xp: 3
+        },
+        {
+            input: 'aquaculture:neptunium_axe',
+            output: Item.of('aquaculture:neptunium_nugget', 3),
+            xp: 3
+        },
+        {
+            input: 'aquaculture:neptunium_shovel',
+            output: Item.of('aquaculture:neptunium_nugget', 1),
+            xp: 1
+        },
+        {
+            input: 'aquaculture:neptunium_sword',
+            output: Item.of('aquaculture:neptunium_nugget', 2),
+            xp: 2
+        },
+        {
+            input: 'aquaculture:neptunium_hoe',
+            output: Item.of('aquaculture:neptunium_nugget', 2),
+            xp: 2
+        },
+        {
+            input: 'aquaculture:neptunium_fillet_knife',
+            output: Item.of('aquaculture:neptunium_nugget', 2),
+            xp: 2
+        },
+        {
+            input: 'aquaculture:neptunium_fishing_rod',
+            output: Item.of('aquaculture:neptunium_nugget', 2),
+            xp: 2
+        },
+        {
+            input: 'aquaculture:neptunium_bow',
+            output: Item.of('aquaculture:neptunium_nugget', 3),
+            xp: 3
         }
     ];
     recipes.forEach((recipe) => {
