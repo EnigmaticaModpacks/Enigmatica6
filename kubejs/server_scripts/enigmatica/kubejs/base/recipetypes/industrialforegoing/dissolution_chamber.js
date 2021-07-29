@@ -1,8 +1,4 @@
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
-        return;
-    }
-
     const recipes = [
 /*
         {
