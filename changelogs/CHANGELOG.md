@@ -1,3 +1,20 @@
+### Enigmatica 6 v0.5.8
+
+_Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.8.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.8.md)_
+
+
+
+**Note to users of automatic git updating**
+
+The `start-automated-server` scripts have been updated, please override the ones you have in the instance root with the ones in the automation folder.
+
+
+
+**Bug Fixes**
+
+- \[0.5.7\] Sophisticated Backpacks incompatible with Tinker's Construct Crafting Station [\#2837](https://github.com/NillerMedDild/Enigmatica6/issues/2837)
+- You are unable to craft Percision Mechanisms in 0.5.7 [\#2835](https://github.com/NillerMedDild/Enigmatica6/issues/2835) (Fixed by [TemperedFool](https://github.com/TemperedFool))
+
 ### Enigmatica 6 v0.5.7
 
 _Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.7.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.7.md)_
@@ -39,38 +56,38 @@ _Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Fixed Bugs**
 
-- 0.5.6 has bleedthrough recipes from Expert through GD Launcher [\#2740](https://github.com/NillerMedDild/Enigmatica6/issues/2740)
-- Archwood Button not oredicted [\#2735](https://github.com/NillerMedDild/Enigmatica6/issues/2735)
-- \#!/bin/sh^M [\#2755](https://github.com/NillerMedDild/Enigmatica6/issues/2755)
-- Bug pedestal import rf screen [\#2732](https://github.com/NillerMedDild/Enigmatica6/issues/2732)
-- Calculator Mod Crash when viewing JEI item recipe [\#2806](https://github.com/NillerMedDild/Enigmatica6/issues/2806)
-- Cardboard Box Can Dupe Constellation Papers [\#2718](https://github.com/NillerMedDild/Enigmatica6/issues/2718)
-- Crash when attempting to break Immersive Engineering Feedthrough Insulators [\#2825](https://github.com/NillerMedDild/Enigmatica6/issues/2825)
-- Crash when creating/generating rftool dimension [\#2817](https://github.com/NillerMedDild/Enigmatica6/issues/2817)
-- Create crafter recipe incompatible [\#2794](https://github.com/NillerMedDild/Enigmatica6/issues/2794)
-- Death waypoints not removing when deleted. [\#2769](https://github.com/NillerMedDild/Enigmatica6/issues/2769)
-- Emandatus enigmatica blocks cannot be used for RFTools dimlet creation [\#2730](https://github.com/NillerMedDild/Enigmatica6/issues/2730)
-- ERP missing from 0.5.6 release [\#2733](https://github.com/NillerMedDild/Enigmatica6/issues/2733)
-- Fermented Raw Ore Meat recipes crash [\#2771](https://github.com/NillerMedDild/Enigmatica6/issues/2771)
-- FTB-Chunks map wont load 11x11 square of chunks upon spawn in. [\#2738](https://github.com/NillerMedDild/Enigmatica6/issues/2738)
-- Gear Cast not showing up in JEI on servers [\#2503](https://github.com/NillerMedDild/Enigmatica6/issues/2503)
-- Geodes give wrong nuggets [\#2773](https://github.com/NillerMedDild/Enigmatica6/issues/2773)
-- JEI Addon: Range Tier 12 [\#2823](https://github.com/NillerMedDild/Enigmatica6/issues/2823)
-- Limestone chest with wrong tags [\#2725](https://github.com/NillerMedDild/Enigmatica6/issues/2725)
-- Nether Wart output mismatch/duplication [\#2772](https://github.com/NillerMedDild/Enigmatica6/issues/2772)
-- Occultism Questline - Soul Gem [\#2734](https://github.com/NillerMedDild/Enigmatica6/issues/2734)
-- Only vanilla crafting table can be used for craft Crafting Station / Crafting table from More Crafting Tables Mod can't be converted to vanilla one [\#2763](https://github.com/NillerMedDild/Enigmatica6/issues/2763)
-- Pedestal with filter deleting items [\#2593](https://github.com/NillerMedDild/Enigmatica6/issues/2593)
-- Remove Flywheel mod until we can update to create v0.3.2+ [\#2721](https://github.com/NillerMedDild/Enigmatica6/issues/2721)
-- RFTools Builder Quarry - Lootr Compatibility Fix [\#2811](https://github.com/NillerMedDild/Enigmatica6/issues/2811)
-- RFTools Environmental Controller No Teleport Module not preventing enderman from teleporting [\#2814](https://github.com/NillerMedDild/Enigmatica6/issues/2814)
-- serverstarter.jar forge-NONE-NONE failures [\#2801](https://github.com/NillerMedDild/Enigmatica6/issues/2801)
-- Shrink broken in latest pack update [\#2804](https://github.com/NillerMedDild/Enigmatica6/issues/2804)
-- Some Wood Types Cannot be Used in Certain Crafting Recipes [\#2762](https://github.com/NillerMedDild/Enigmatica6/issues/2762)
-- Sushi Go crafting prawns and tuna spawning on bedrock [\#2242](https://github.com/NillerMedDild/Enigmatica6/issues/2242)
-- Taking damage from Personal Shrinking Device \(from Shrink. mod\) [\#2743](https://github.com/NillerMedDild/Enigmatica6/issues/2743)
-- Upgrade Aquatic's Thrasher spawns too frequently [\#2795](https://github.com/NillerMedDild/Enigmatica6/issues/2795)
-- Wither builder no longer building anything after upgrading to 5.6 [\#2786](https://github.com/NillerMedDild/Enigmatica6/issues/2786)
+-   0.5.6 has bleedthrough recipes from Expert through GD Launcher [\#2740](https://github.com/NillerMedDild/Enigmatica6/issues/2740)
+-   Archwood Button not oredicted [\#2735](https://github.com/NillerMedDild/Enigmatica6/issues/2735)
+-   \#!/bin/sh^M [\#2755](https://github.com/NillerMedDild/Enigmatica6/issues/2755)
+-   Bug pedestal import rf screen [\#2732](https://github.com/NillerMedDild/Enigmatica6/issues/2732)
+-   Calculator Mod Crash when viewing JEI item recipe [\#2806](https://github.com/NillerMedDild/Enigmatica6/issues/2806)
+-   Cardboard Box Can Dupe Constellation Papers [\#2718](https://github.com/NillerMedDild/Enigmatica6/issues/2718)
+-   Crash when attempting to break Immersive Engineering Feedthrough Insulators [\#2825](https://github.com/NillerMedDild/Enigmatica6/issues/2825)
+-   Crash when creating/generating rftool dimension [\#2817](https://github.com/NillerMedDild/Enigmatica6/issues/2817)
+-   Create crafter recipe incompatible [\#2794](https://github.com/NillerMedDild/Enigmatica6/issues/2794)
+-   Death waypoints not removing when deleted. [\#2769](https://github.com/NillerMedDild/Enigmatica6/issues/2769)
+-   Emandatus enigmatica blocks cannot be used for RFTools dimlet creation [\#2730](https://github.com/NillerMedDild/Enigmatica6/issues/2730)
+-   ERP missing from 0.5.6 release [\#2733](https://github.com/NillerMedDild/Enigmatica6/issues/2733)
+-   Fermented Raw Ore Meat recipes crash [\#2771](https://github.com/NillerMedDild/Enigmatica6/issues/2771)
+-   FTB-Chunks map wont load 11x11 square of chunks upon spawn in. [\#2738](https://github.com/NillerMedDild/Enigmatica6/issues/2738)
+-   Gear Cast not showing up in JEI on servers [\#2503](https://github.com/NillerMedDild/Enigmatica6/issues/2503)
+-   Geodes give wrong nuggets [\#2773](https://github.com/NillerMedDild/Enigmatica6/issues/2773)
+-   JEI Addon: Range Tier 12 [\#2823](https://github.com/NillerMedDild/Enigmatica6/issues/2823)
+-   Limestone chest with wrong tags [\#2725](https://github.com/NillerMedDild/Enigmatica6/issues/2725)
+-   Nether Wart output mismatch/duplication [\#2772](https://github.com/NillerMedDild/Enigmatica6/issues/2772)
+-   Occultism Questline - Soul Gem [\#2734](https://github.com/NillerMedDild/Enigmatica6/issues/2734)
+-   Only vanilla crafting table can be used for craft Crafting Station / Crafting table from More Crafting Tables Mod can't be converted to vanilla one [\#2763](https://github.com/NillerMedDild/Enigmatica6/issues/2763)
+-   Pedestal with filter deleting items [\#2593](https://github.com/NillerMedDild/Enigmatica6/issues/2593)
+-   Remove Flywheel mod until we can update to create v0.3.2+ [\#2721](https://github.com/NillerMedDild/Enigmatica6/issues/2721)
+-   RFTools Builder Quarry - Lootr Compatibility Fix [\#2811](https://github.com/NillerMedDild/Enigmatica6/issues/2811)
+-   RFTools Environmental Controller No Teleport Module not preventing enderman from teleporting [\#2814](https://github.com/NillerMedDild/Enigmatica6/issues/2814)
+-   serverstarter.jar forge-NONE-NONE failures [\#2801](https://github.com/NillerMedDild/Enigmatica6/issues/2801)
+-   Shrink broken in latest pack update [\#2804](https://github.com/NillerMedDild/Enigmatica6/issues/2804)
+-   Some Wood Types Cannot be Used in Certain Crafting Recipes [\#2762](https://github.com/NillerMedDild/Enigmatica6/issues/2762)
+-   Sushi Go crafting prawns and tuna spawning on bedrock [\#2242](https://github.com/NillerMedDild/Enigmatica6/issues/2242)
+-   Taking damage from Personal Shrinking Device \(from Shrink. mod\) [\#2743](https://github.com/NillerMedDild/Enigmatica6/issues/2743)
+-   Upgrade Aquatic's Thrasher spawns too frequently [\#2795](https://github.com/NillerMedDild/Enigmatica6/issues/2795)
+-   Wither builder no longer building anything after upgrading to 5.6 [\#2786](https://github.com/NillerMedDild/Enigmatica6/issues/2786)
 
 ### Enigmatica 6 v0.5.6
 
