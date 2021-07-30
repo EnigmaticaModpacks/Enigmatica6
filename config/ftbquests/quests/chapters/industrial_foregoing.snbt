@@ -99,10 +99,7 @@
 			y: -2.0d
 			shape: "pentagon"
 			description: ["The second tier of machine frame. A few recipes (such as the Plant Fertilizer) use this frame on its own, but it's also a component of the third tier of machine frame."]
-			dependencies: [
-				"0000000000000054"
-				"0000000000000057"
-			]
+			dependencies: ["0000000000000057"]
 			id: "0000000000000051"
 			tasks: [{
 				id: "0000000000000052"
