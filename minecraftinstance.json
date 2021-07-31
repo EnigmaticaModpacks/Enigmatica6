@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-07-30T18:26:35.5931032Z",
-  "playedCount": 255,
+  "lastPlayed": "2021-07-31T17:41:45.2824793Z",
+  "playedCount": 256,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -4508,6 +4508,120 @@
       "installedTargets": null
     },
     {
+      "addonID": 312918,
+      "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
+      "installedFile": {
+        "id": 3385608,
+        "displayName": "Blue Skies: Population 1.16.5-v1.1.1",
+        "fileName": "blue_skies-1.16.5-1.1.1.jar",
+        "fileDate": "2021-07-12T02:46:07.797Z",
+        "fileLength": 116796316,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3385/608/blue_skies-1.16.5-1.1.1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [
+          {
+            "id": 0,
+            "addonId": 378802,
+            "type": 3,
+            "fileId": 0
+          }
+        ],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 1378273959,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 1818144569,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": ".cache",
+            "fingerprint": 3151567581,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "assets",
+            "fingerprint": 3431981890,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "banner.png",
+            "fingerprint": 860945416,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "blue_skies.mixins.json",
+            "fingerprint": 2185378499,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "data",
+            "fingerprint": 4179243850,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "logo.png",
+            "fingerprint": 4147848167,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 604413752,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "blue_skies.refmap.json",
+            "fingerprint": 2325631843,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 266585381,
+        "gameVersion": [
+          "1.16.5"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "blue_skies-1.16.5-1.1.1.jar"
+      },
+      "dateInstalled": "2021-07-31T19:25:26.3107571Z",
+      "dateUpdated": "2021-07-31T19:25:26.4607632Z",
+      "dateLastUpdateAttempted": "2021-07-31T19:25:26.4607632Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 238086,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
@@ -5358,7 +5472,7 @@
       "dateInstalled": "2021-07-05T20:20:57.5305805Z",
       "dateUpdated": "2021-07-30T07:15:31.4413543Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:31.4413543Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6222,7 +6336,7 @@
       "dateInstalled": "2021-07-25T20:04:58.8134968Z",
       "dateUpdated": "2021-07-30T07:15:37.3415262Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:37.3415262Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8996,7 +9110,7 @@
       "dateInstalled": "2021-07-05T20:21:18.9830634Z",
       "dateUpdated": "2021-07-30T07:15:31.2003569Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:31.2003569Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -10683,7 +10797,7 @@
       "dateInstalled": "2021-07-05T20:21:18.9720633Z",
       "dateUpdated": "2021-07-30T07:16:55.4362609Z",
       "dateLastUpdateAttempted": "2021-07-30T07:16:55.4362609Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -13845,6 +13959,73 @@
       "installedTargets": null
     },
     {
+      "addonID": 435051,
+      "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
+      "installedFile": {
+        "id": 3164842,
+        "displayName": "Shift n Scroll on Mac 1.16.4.0.0.1.s1",
+        "fileName": "shiftnscrollonmac-1.16.4-0.0.1.s1.jar",
+        "fileDate": "2021-01-11T02:45:20.913Z",
+        "fileLength": 7459,
+        "releaseType": 1,
+        "fileStatus": 4,
+        "downloadUrl": "https://edge.forgecdn.net/files/3164/842/shiftnscrollonmac-1.16.4-0.0.1.s1.jar",
+        "isAlternate": false,
+        "alternateFileId": 0,
+        "dependencies": [],
+        "isAvailable": true,
+        "modules": [
+          {
+            "foldername": "META-INF",
+            "fingerprint": 2208835400,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "com",
+            "fingerprint": 3670627474,
+            "type": 0,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "pack.mcmeta",
+            "fingerprint": 1284734594,
+            "type": 0,
+            "invalidFingerprint": false
+          }
+        ],
+        "packageFingerprint": 2576483913,
+        "gameVersion": [
+          "1.16.5",
+          "Forge",
+          "1.16.4"
+        ],
+        "hasInstallScript": false,
+        "isCompatibleWithClient": false,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
+        "gameVersionDateReleased": "2008-03-01T06:00:00Z",
+        "gameId": 0,
+        "isServerPack": false,
+        "FileNameOnDisk": "shiftnscrollonmac-1.16.4-0.0.1.s1.jar"
+      },
+      "dateInstalled": "2021-07-31T19:25:03.7581489Z",
+      "dateUpdated": "2021-07-31T19:25:03.8661448Z",
+      "dateLastUpdateAttempted": "2021-07-31T19:25:03.8661448Z",
+      "status": 4,
+      "preferenceAutoInstallUpdates": null,
+      "preferenceAlternateFile": false,
+      "preferenceIsIgnored": false,
+      "isModified": false,
+      "isWorkingCopy": false,
+      "isFuzzyMatch": false,
+      "preferenceReleaseType": null,
+      "manifestName": null,
+      "installedTargets": []
+    },
+    {
       "addonID": 363569,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
@@ -15081,7 +15262,7 @@
       "dateInstalled": "2021-07-05T20:21:03.3491181Z",
       "dateUpdated": "2021-07-30T07:16:55.7272613Z",
       "dateLastUpdateAttempted": "2021-07-30T07:16:55.7272613Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15472,7 +15653,7 @@
       "dateInstalled": "2021-07-05T20:21:03.3661182Z",
       "dateUpdated": "2021-07-30T07:15:39.1479112Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:39.1479112Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -15786,7 +15967,7 @@
       "dateInstalled": "2021-07-05T20:21:08.4234722Z",
       "dateUpdated": "2021-07-30T07:15:32.4303583Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:32.4303583Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22451,7 +22632,7 @@
       "dateInstalled": "2021-07-05T20:31:05.1764869Z",
       "dateUpdated": "2021-07-30T07:15:47.6866349Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:47.6866349Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -26749,7 +26930,7 @@
       "dateInstalled": "2021-07-05T20:20:54.9328256Z",
       "dateUpdated": "2021-07-30T07:15:39.6409121Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:39.6409121Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27647,7 +27828,7 @@
       "dateInstalled": "2021-07-05T20:20:54.9228218Z",
       "dateUpdated": "2021-07-30T07:15:40.393591Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:40.393591Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -29788,7 +29969,7 @@
       "dateInstalled": "2021-07-05T20:21:18.9790626Z",
       "dateUpdated": "2021-07-30T07:15:48.7536222Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:48.7536222Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -30007,7 +30188,7 @@
       "dateInstalled": "2021-07-05T20:21:18.992063Z",
       "dateUpdated": "2021-07-30T07:15:32.8213561Z",
       "dateLastUpdateAttempted": "2021-07-30T07:15:32.8213561Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
