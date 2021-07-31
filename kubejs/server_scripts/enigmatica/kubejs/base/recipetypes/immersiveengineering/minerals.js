@@ -63,7 +63,10 @@ onEvent('recipes', (event) => {
                 id: 'bituminous_coal'
             },
             {
-                ores: [{ chance: 1.0, output: { tag: 'forge:chunks/tin' } }],
+                ores: [
+                    { chance: 7.0, output: { tag: 'forge:chunks/tin' } },
+                    { chance: 3.0, output: { tag: 'forge:chunks/osmium' } }
+                ],
                 dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 20,
                 fail_chance: 0.05,

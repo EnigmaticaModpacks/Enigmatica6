@@ -1558,7 +1558,7 @@
 				""
 				"https://wiki.aidancbrady.com/wiki/Fission_Reactor"
 				""
-				"The reactor may go critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
+				"The reactor may go super-critical and explode if it overheats, the leading cause of which is that it has run out of coolant. Therefore, the circuit breaker should trigger on High Temperature. It may also be prudent to build a second circuit breaker for Excess Waste to prevent venting radiation into the surrounding environment."
 				""
 				"Warning: Enigmatica 6 has tweaked Steam Production rates, so do not assume your reactor is safe. Test rigorously!"
 			]
@@ -2224,6 +2224,7 @@
 				"Redeemable once only. "
 			]
 			dependencies: ["0000000000000793"]
+			optional: true
 			id: "00000000000007E4"
 			tasks: [
 				{
