@@ -45,6 +45,10 @@ onEvent('item.tags', (event) => {
             .add(/shulker_box/)
             .add(/_pantry/)
             .add(/rftoolsstorage:storage_module/)
+            .add(/cfm:\w+_cabinet/)
+            .add(/cfm:\w+_drawer/)
+            .add(/cfm:\w+_cooler/)
+            .add(/cfm:\w+_crate/)
             .remove(exceptions);
     });
 });
