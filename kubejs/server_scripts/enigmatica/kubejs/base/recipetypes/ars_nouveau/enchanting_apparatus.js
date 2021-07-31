@@ -206,6 +206,59 @@ onEvent('recipes', (event) => {
                 output: 'ars_nouveau:mana_bloom_crop',
                 count: 1,
                 id: 'ars_nouveau:mana_bloom_crop'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:glyph_amplify',
+                    '#forge:storage_blocks/gold_brass',
+                    '#forge:storage_blocks/gold_brass',
+                    '#forge:storage_blocks/mana',
+                    '#forge:storage_blocks/mana'
+                ],
+                reagent: 'minecraft:diamond_sword',
+                output: 'ars_nouveau:enchanters_sword',
+                count: 1,
+                id: 'ars_nouveau:enchanters_sword'
+            },
+            {
+                inputs: [
+                    '#forge:storage_blocks/gold_brass',
+                    '#forge:storage_blocks/gold_brass',
+                    '#forge:storage_blocks/mana',
+                    '#forge:storage_blocks/mana'
+                ],
+                reagent: 'minecraft:shield',
+                output: 'ars_nouveau:enchanters_shield',
+                count: 1,
+                id: 'ars_nouveau:enchanters_shield'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    '#forge:storage_blocks/mana',
+                    '#forge:storage_blocks/gold_brass'
+                ],
+                reagent: 'minecraft:glass_bottle',
+                output: 'ars_nouveau:potion_flask',
+                count: 1,
+                id: 'ars_nouveau:potion_flask'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:glyph_extract',
+                    'ars_nouveau:glyph_extract',
+                    '#forge:storage_blocks/gold_brass',
+                    '#forge:storage_blocks/gold_brass',
+                    '#forge:rods/blaze',
+                    '#forge:rods/blaze',
+                    '#forge:rods/blaze',
+                    '#forge:rods/blaze'
+                ],
+                reagent: 'ars_nouveau:potion_jar',
+                output: 'ars_nouveau:potion_melder',
+                count: 1,
+                id: 'ars_nouveau:potion_melder'
             }
         ]
     };

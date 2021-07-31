@@ -7,7 +7,7 @@ onEvent('item.tags', (event) => {
             },
             {
                 base: 'iron',
-                substitutes: ['aluminum', 'copper', 'lead', 'tin', 'brass', 'invar']
+                substitutes: ['aluminum', 'copper', 'lead', 'tin', 'brass', 'invar', 'osmium']
             }
         ];
     types.forEach((type) => {
