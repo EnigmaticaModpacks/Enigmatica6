@@ -1,11 +1,6 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            input: '#forge:rods/wooden',
-            output: Item.of('emendatusenigmatica:wood_dust'),
-            extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.05)
-        },
-        {
             input: '#minecraft:planks',
             output: Item.of('minecraft:stick', 6),
             extraOutput: Item.of('emendatusenigmatica:wood_dust').chance(0.25),
