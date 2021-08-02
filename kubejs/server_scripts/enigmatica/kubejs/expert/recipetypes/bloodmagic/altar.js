@@ -173,6 +173,15 @@ onEvent('recipes', (event) => {
                 altarLevel: 0,
                 consumptionRate: 25,
                 drainRate: 5
+            },
+            {
+                input: 'ars_nouveau:ritual_warping',
+                output: 'waystones:warp_stone',
+                syphon: 50000,
+                altarLevel: 2,
+                consumptionRate: 1000,
+                drainRate: 100,
+                id: 'waystones:warp_stone'
             }
         ]
     };

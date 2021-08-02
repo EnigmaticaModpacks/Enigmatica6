@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             output: 'naturesaura:offering_table',
             pattern: ['BAB', 'CBD', 'EEE'],
             key: {
-                A: '#forge:ingots/infused_iron',
+                A: 'ars_nouveau:wilden_tribute',
                 B: 'naturesaura:infused_stone',
                 C: 'naturesaura:token_fear',
                 D: 'naturesaura:token_sorrow',

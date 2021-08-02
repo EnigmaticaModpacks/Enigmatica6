@@ -1100,6 +1100,19 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: 'pedestals:upgrades/fluidpump'
             },
+            {
+                inputs: [
+                    '#forge:storage_blocks/mana',
+                    '#forge:storage_blocks/gold_brass',
+                    'ars_nouveau:glyph_projectile',
+                    '#botania:runes/air',
+                    '#botania:runes/air'
+                ],
+                reagent: 'botania:livingwood_bow',
+                output: 'ars_nouveau:spell_bow',
+                count: 1,
+                id: 'ars_nouveau:spell_bow'
+            },
 
             /// Patchouli Removals
             {

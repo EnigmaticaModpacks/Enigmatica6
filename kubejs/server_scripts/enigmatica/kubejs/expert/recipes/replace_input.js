@@ -43,6 +43,11 @@ onEvent('recipes', (event) => {
             filter: { id: 'occultism:crafting/storage_remote_inert' },
             toReplace: 'minecraft:stone_button',
             replaceWith: '#forge:nuggets/silver'
+        },
+        {
+            filter: { id: '/wilden_summon/' },
+            toReplace: 'minecraft:lapis_block',
+            replaceWith: 'meetyourfight:velvet_fortune'
         }
     ];
 
