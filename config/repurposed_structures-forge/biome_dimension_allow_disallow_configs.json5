@@ -26,7 +26,19 @@
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
   "disallowedDimensions": {
-    "all": "the_bumblezone:the_bumblezone, twilightforest:twilightforest, undergarden:undergarden, the_midnight:the_midnight, advancedrocketry:space, theabyss:theabyssdim, theabyss:theabyssiceworld, theabyss:death, theabyss:the_end_of_time, theabyss:the_end_of_time_2, theabyss:dream, theabyss:dream_2, theabyss:dream_3, theabyss:radio, theabyss:theabyssdimgroundlands, theabyss:theabyssdimskylands"
+    "all": "the_bumblezone:the_bumblezone, twilightforest:twilightforest, undergarden:undergarden, the_midnight:the_midnight, advancedrocketry:space, theabyss:.+",
+    "repurposed_structures:village_badlands": "aoa3:barathos",
+    "repurposed_structures:outpost_badlands": "aoa3:barathos",
+    "repurposed_structures:well_badlands": "aoa3:barathos",
+    "repurposed_structures:mineshaft_desert": "atum:atum, lotr:middle_earth",
+    "repurposed_structures:outpost_jungle": "tropicraft:tropics",
+    "repurposed_structures:mansion_jungle": "tropicraft:tropics",
+    "repurposed_structures:mansion_desert": "lotr:middle_earth",
+    "repurposed_structures:dungeon_desert": "lotr:middle_earth",
+    "repurposed_structures:ruins_land_hot": "lotr:middle_earth",
+    "repurposed_structures:outpost_desert": "lotr:middle_earth",
+    "repurposed_structures:outpost_oak": "lotr:middle_earth",
+    "repurposed_structures:outpost_snowy": "lotr:middle_earth"
   },
   //
 
@@ -58,7 +70,15 @@
 // All of RS's structure identifiers can be found by doing "/locate" command in game.
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
-  "allowedDimensions": {},
+  "allowedDimensions": {
+    "repurposed_structures:bastion_underground": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros",
+    "repurposed_structures:ruins_land_warm": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros",
+    "repurposed_structures:igloo_grassy": "elvenation:elvenia_dimension",
+    "repurposed_structures:mineshaft_jungle": "futurepack:tyros",
+    "repurposed_structures:pyramid_jungle": "futurepack:tyros",
+    "repurposed_structures:dungeon_jungle": "futurepack:tyros",
+    "repurposed_structures:well_mossy_stone": "futurepack:tyros"
+  },
   //
 
 
@@ -89,7 +109,10 @@
 // All of RS's structure identifiers can be found by doing "/locate" command in game.
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
-  "disallowedBiomes": {},
+  "disallowedBiomes": {
+    "repurposed_structures:village_oak": "lotr:lindon_woodlands, lotr:snowy_northlands_forest",
+    "repurposed_structures:witch_hut_oak": "lotr:lindon_woodlands, lotr:snowy_northlands_forest"
+  },
   //
 
 
@@ -122,7 +145,11 @@
 // All of RS's structure identifiers can be found by doing "/locate" command in game.
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
-  "allowedBiomes": {},
+  "allowedBiomes": {
+    "repurposed_structures:village_birch": "lotr:lindon_woodlands",
+    "repurposed_structures:witch_hut_birch": "lotr:lindon_woodlands",
+    "repurposed_structures:witch_hut_taiga": "lotr:snowy_northlands_forest"
+  },
   //
 
 
@@ -131,5 +158,5 @@
 
 
 // for internal use only. Do not change this.
-  "configVersion": 1
+  "configVersion": 2
 }

@@ -36,7 +36,7 @@
 	#Range: 0 ~ 1000
 	mushroomDungeonAttemptsPerChunk = 8
 	#
-	# Replaces vanilla dungeon in icy biomes with ice themed dungeons. 
+	# Replaces vanilla dungeon in icy biomes with ice themed dungeons.
 	#
 	# (targets non-ocean biomes that are super cold or has frozen/ice/icy in name)
 	# How often dungeons will attempt to spawn per chunk.
@@ -76,124 +76,124 @@
 
 ["Min Height"]
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	badlandsDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	darkForestDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	desertDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	jungleDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	mushroomDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	snowDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	icyDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	swampDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	endDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 2.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 2 ~ 255
 	netherDungeonMinHeight = 2
 	#
-	# Minimum Y height that this dungeon can spawn at. Default is 3.
+	# Minimum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	#Range: 3 ~ 255
 	oceanDungeonMinHeight = 3
 
 ["Max Height"]
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	badlandsDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	darkForestDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	desertDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	jungleDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	mushroomDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	snowDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	icyDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	swampDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	endDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 2 ~ 255
 	netherDungeonMaxHeight = 255
 	#
-	# Maximum Y height that this dungeon can spawn at. Default is 255.
+	# Maximum Y height that this dungeon can spawn at.
 	# Note: The dungeon will spawn between min and max y height set in config.
 	# Setting this to below min height config will make dungeon spawn only at min height.
 	#Range: 3 ~ 255
