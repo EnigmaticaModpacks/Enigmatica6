@@ -6,10 +6,6 @@ onEvent('recipes', (event) => {
                 output: Item.of('betterendforge:crystal_shards', 4)
             },
             {
-                input: '#forge:ores/dimensional',
-                output: Item.of('emendatusenigmatica:dimensional_gem', 8)
-            },
-            {
                 input: '#forge:ores/ender',
                 output: Item.of('#forge:shards/ender', 3)
             },
