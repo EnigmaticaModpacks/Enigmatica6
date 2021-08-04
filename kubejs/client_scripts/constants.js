@@ -340,9 +340,9 @@ const fluidsToHide = [
     that have been changed to use a different crafting type or that have been disabled. It allows creating a
     recipe pointer that will display in Patchouli but not in JEI.  
 
-    Use the below logger to discover the correct CategoryID. They do not match the recipe type.
+    Use the logger in the jei_hide_recipes script to discover the correct CategoryID. They do not match the recipe type.
 */
-//console.log('JEI RECIPE TYPES: ' + event.getCategoryIds());
+
 const recipesToHide = [
     {
         category: 'minecraft:crafting',
@@ -358,7 +358,12 @@ const recipesToHide = [
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
             'mythicbotany:modified_gaia_pylon_with_alfsteel',
-            'mythicbotany:alfsteel_pylon'
+            'mythicbotany:alfsteel_pylon',
+            'naturesaura:gold_brick',
+            'naturesaura:generator_limit_remover',
+            'apotheosis:hellshelf',
+            'apotheosis:seashelf',
+            'apotheosis:endshelf'
         ]
     },
     {
