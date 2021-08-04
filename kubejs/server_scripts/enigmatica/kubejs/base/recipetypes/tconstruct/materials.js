@@ -258,7 +258,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "tag": "kubejs:molten_compressed_iron",
+                    "name": "kubejs:molten_compressed_iron",
                     "amount": 144
                   },
                   "temperature": 900,
@@ -325,7 +325,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "tag": "kubejs:molten_infused_iron",
+                    "name": "kubejs:molten_infused_iron",
                     "amount": 144
                   },
                   "temperature": 850,
@@ -392,7 +392,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "tag": "kubejs:molten_manasteel",
+                    "name": "kubejs:molten_manasteel",
                     "amount": 144
                   },
                   "temperature": 900,
@@ -468,7 +468,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "emendatusenigmatica:molten_thallasium",
+                      "name": "emendatusenigmatica:molten_thallasium",
                       "amount": 144
                     },
                     "temperature": 825,
@@ -698,7 +698,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "type": "tconstruct:material_fluid",
                     "input": "tconstruct:energised_steel",
                     "fluid": {
-                      "tag": "kubejs:molten_blazing_crystal",
+                      "name": "kubejs:molten_blazing_crystal",
                       "amount": 144
                     },
                     "temperature": 950,
@@ -765,7 +765,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "kubejs:molten_elementium",
+                      "name": "kubejs:molten_elementium",
                       "amount": 144
                     },
                     "temperature": 875,
@@ -841,7 +841,7 @@ onEvent('server.datapack.low_priority', (event) => {
               {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "tag": "kubejs:molten_energised_steel",
+                    "name": "kubejs:molten_energised_steel",
                     "amount": 144
                   },
                   "temperature": 875,
@@ -984,7 +984,7 @@ onEvent('server.datapack.low_priority', (event) => {
               {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "tag": "kubejs:molten_sky_metal",
+                    "name": "kubejs:molten_sky_metal",
                     "amount": 144
                   },
                   "temperature": 950,
@@ -1039,7 +1039,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "kubejs:molten_terminite",
+                      "name": "kubejs:molten_terminite",
                       "amount": 144
                     },
                     "temperature": 840,
@@ -1115,7 +1115,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "kubejs:molten_terrasteel",
+                      "name": "kubejs:molten_terrasteel",
                       "amount": 144
                     },
                     "temperature": 975,
@@ -1192,7 +1192,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "kubejs:molten_aeternium",
+                      "name": "kubejs:molten_aeternium",
                       "amount": 144
                     },
                     "temperature": 1250,
@@ -1260,7 +1260,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "type": "tconstruct:material_fluid",
                     "input": "tconstruct:terrasteel",
                     "fluid": {
-                      "tag": "kubejs:molten_alfsteel",
+                      "name": "kubejs:molten_alfsteel",
                       "amount": 144
                     },
                     "temperature": 1450,
@@ -1336,7 +1336,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "emendatusenigmatica:molten_enderium",
+                      "name": "emendatusenigmatica:molten_enderium",
                       "amount": 144
                     },
                     "temperature": 1450,
@@ -1413,7 +1413,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "type": "tconstruct:material_fluid",
                     "input": "tconstruct:terrasteel",
                     "fluid": {
-                      "tag": "kubejs:molten_gaia_spirit",
+                      "name": "kubejs:molten_gaia_spirit",
                       "amount": 144
                     },
                     "temperature": 1350,
@@ -1468,7 +1468,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "emendatusenigmatica:molten_lumium",
+                      "name": "emendatusenigmatica:molten_lumium",
                       "amount": 144
                     },
                     "temperature": 1354,
@@ -1545,7 +1545,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "type": "tconstruct:material_fluid",
                     "input": "tconstruct:energised_steel",
                     "fluid": {
-                      "tag": "kubejs:molten_niotic_crystal",
+                      "name": "kubejs:molten_niotic_crystal",
                       "amount": 144
                     },
                     "temperature": 1250,
@@ -1613,7 +1613,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "type": "tconstruct:material_fluid",
                     "input": "tconstruct:energised_steel",
                     "fluid": {
-                      "tag": "kubejs:molten_nitro_crystal",
+                      "name": "kubejs:molten_nitro_crystal",
                       "amount": 144
                     },
                     "temperature": 1450,
@@ -1680,7 +1680,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 {
                     "type": "tconstruct:material_fluid",
                     "fluid": {
-                      "tag": "emendatusenigmatica:molten_signalum",
+                      "name": "emendatusenigmatica:molten_signalum",
                       "amount": 144
                     },
                     "temperature": 1272,
@@ -1757,7 +1757,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "type": "tconstruct:material_fluid",
                     "input": "tconstruct:energised_steel",
                     "fluid": {
-                      "tag": "kubejs:molten_spirited_crystal",
+                      "name": "kubejs:molten_spirited_crystal",
                       "amount": 144
                     },
                     "temperature": 1350,
