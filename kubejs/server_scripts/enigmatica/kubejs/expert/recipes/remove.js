@@ -24,7 +24,8 @@ onEvent('recipes', (event) => {
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/recycler',
         'pedestals:upgrades/rffuelgen',
-        'pedestals:upgrades/rfexpgen'
+        'pedestals:upgrades/rfexpgen',
+        'darkutils:crafting/rune_damage_player'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];

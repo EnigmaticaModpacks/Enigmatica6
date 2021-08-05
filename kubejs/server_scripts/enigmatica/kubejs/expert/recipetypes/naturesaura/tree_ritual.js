@@ -97,7 +97,7 @@ onEvent('recipes', (event) => {
                 ],
                 output: { item: 'naturesaura:token_sorrow', count: 2 },
                 time: 200,
-                sapling: 'byg:joshua_sapling',
+                sapling: 'architects_palette:twisted_sapling',
                 id: 'naturesaura:tree_ritual/token_sorrow'
             },
             {
@@ -303,7 +303,7 @@ onEvent('recipes', (event) => {
                 ],
                 output: { item: 'naturesaura:eye' },
                 time: 250,
-                sapling: 'byg:blue_enchanted_sapling',
+                sapling: 'architects_palette:twisted_sapling',
                 id: 'naturesaura:tree_ritual/eye'
             },
             {
@@ -319,7 +319,7 @@ onEvent('recipes', (event) => {
                 ],
                 output: { item: 'naturesaura:eye_improved' },
                 time: 500,
-                sapling: 'byg:blue_enchanted_sapling',
+                sapling: 'architects_palette:twisted_sapling',
                 id: 'naturesaura:tree_ritual/eye_improved'
             },
             {
