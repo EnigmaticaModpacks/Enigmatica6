@@ -281,7 +281,7 @@
 	# This option is both client and server-sided.
 	# Changes to this option are applied after a game restart.
 	# Default: []
-	mixin_blacklist = []
+	mixin_blacklist = ["ServerPlayNetHandlerKeepAlive"]
 
 	# Miscellaneous bug fixes.
 	[misc.bug_fixes]
