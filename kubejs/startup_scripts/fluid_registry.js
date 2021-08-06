@@ -68,9 +68,9 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_energised_steel',
+            id: 'molten_energized_steel',
             texture: '0xb89365',
-            display: 'Molten Energised Steel'
+            display: 'Molten Energized Steel'
         },
         {
             type: 'thick',

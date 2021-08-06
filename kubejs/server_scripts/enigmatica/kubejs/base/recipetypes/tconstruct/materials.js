@@ -685,7 +685,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energised_steel",
+                    "input": "tconstruct:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_blazing_crystal",
                       "amount": 144
@@ -792,7 +792,7 @@ onEvent('server.datapack.low_priority', (event) => {
             ]
         },
         {
-          identifier: 'energised_steel',
+          identifier: 'energized_steel',
           recipes: [
               {
                   "craftable": false,
@@ -828,31 +828,31 @@ onEvent('server.datapack.low_priority', (event) => {
               {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "name": "kubejs:molten_energised_steel",
+                    "name": "kubejs:molten_energized_steel",
                     "amount": 144
                   },
                   "temperature": 875,
-                  "output": "tconstruct:energised_steel"
+                  "output": "tconstruct:energized_steel"
               },
               {
                   "type": "tconstruct:material",
                   "ingredient": {
-                    "tag": "forge:ingots/energised_steel"
+                    "tag": "forge:ingots/energized_steel"
                   },
                   "value": 1,
                   "needed": 1,
-                  "material": "tconstruct:energised_steel"
+                  "material": "tconstruct:energized_steel"
               },
               {
                   "type": "tconstruct:material",
                   "ingredient": {
-                    "tag": "forge:storage_blocks/energised_steel"
+                    "tag": "forge:storage_blocks/energized_steel"
                   },
                   "value": 9,
                   "needed": 1,
-                  "material": "tconstruct:energised_steel",
+                  "material": "tconstruct:energized_steel",
                   "leftover": {
-                    "tag": "forge:ingots/energised_steel"
+                    "tag": "forge:ingots/energized_steel"
                   }
               }
           ]
@@ -1445,7 +1445,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energised_steel",
+                    "input": "tconstruct:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_niotic_crystal",
                       "amount": 144
@@ -1512,7 +1512,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energised_steel",
+                    "input": "tconstruct:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_nitro_crystal",
                       "amount": 144
@@ -1654,7 +1654,7 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energised_steel",
+                    "input": "tconstruct:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_spirited_crystal",
                       "amount": 144
