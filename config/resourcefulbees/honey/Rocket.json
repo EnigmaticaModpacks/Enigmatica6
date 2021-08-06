@@ -1,0 +1,29 @@
+{
+    "name": "rocket",
+    "hunger": 4,
+    "honeyColor": "BROWN",
+    "saturation": 1,
+    "isRainbow": false,
+    "honeyBlockRecipe": true,
+    "generateHoneyBlock": true,
+    "effects": [
+        {
+            "effectID": "minecraft:speed",
+            "duration": 200,
+            "strength": 3,
+            "chance": 1
+        },
+        {
+            "effectID": "minecraft:resistance",
+            "duration": 200,
+            "strength": 1,
+            "chance": 0.33
+        },
+        {
+            "effectID": "minecraft:strength",
+            "duration": 200,
+            "strength": 2,
+            "chance": 0.33
+        }
+    ]
+}
