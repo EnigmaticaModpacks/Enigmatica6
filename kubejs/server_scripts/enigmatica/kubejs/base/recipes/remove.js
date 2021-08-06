@@ -146,6 +146,7 @@ onEvent('recipes', (event) => {
         'mekanism:enriching/enriched/tin',
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
+        'mekanism:processing/lapis_lazuli/from_ore',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',

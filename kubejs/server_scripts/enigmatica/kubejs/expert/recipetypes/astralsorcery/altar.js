@@ -205,8 +205,8 @@ onEvent('recipes', (event) => {
             output: Item.of('resourcefulbees:t4_apiary', 1),
             pattern: ['__B__', '_C_D_', 'E_A_E', '_D_C_', '__B__'],
             key: {
-                A: { item: 'resourcefulbees:t3_apiary'},
-                B: Item.of('naturesaura:effect_powder', {effect: 'naturesaura:animal'}).toJson(),
+                A: { item: 'resourcefulbees:t3_apiary' },
+                B: Item.of('naturesaura:effect_powder', { effect: 'naturesaura:animal' }).toJson(),
                 C: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 D: { item: 'resourcefulbees:honey_fluid_bucket' },
                 E: { item: 'astralsorcery:illumination_powder' }
@@ -230,6 +230,120 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'resourcefulbees:t4_apiary'
+        },
+        {
+            output: Item.of('pedestals:coin/xpenchanter', 1),
+            pattern: ['AA_AA', 'ACB_A', '_DED_', 'A_FCA', 'AA_AA'],
+            key: {
+                A: { item: 'ars_nouveau:greater_experience_gem' },
+                B: { item: 'botania:gaia_pylon' },
+                C: { tag: 'botania:runes/vanaheim' },
+                D: { tag: 'botania:runes/mana' },
+                E: { item: 'pedestals:coin/default' },
+                F: { item: 'ars_nouveau:glyph_pickup' }
+            },
+            relay_inputs: [
+                { item: 'eidolon:shadow_gem' },
+                { tag: 'forge:inlays/arcane_gold' },
+                { tag: 'forge:inlays/arcane_gold' }
+            ],
+            altar_type: 3,
+            duration: 600,
+            starlight: 6400,
+            focus_constellation: 'astralsorcery:lucerna',
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'pedestals:upgrades/enchanter'
+        },
+        {
+            output: Item.of('pedestals:coin/xpanvil', 1),
+            pattern: ['AA_AA', 'ACB_A', '_DED_', 'A_FCA', 'AA_AA'],
+            key: {
+                A: { item: 'ars_nouveau:greater_experience_gem' },
+                B: { item: 'mythicbotany:alfsteel_pylon' },
+                C: { tag: 'botania:runes/vanaheim' },
+                D: { tag: 'botania:runes/mana' },
+                E: { item: 'pedestals:coin/default' },
+                F: { item: 'ars_nouveau:glyph_pickup' }
+            },
+            relay_inputs: [
+                { item: 'betterendforge:aeternium_hammer' },
+                { tag: 'forge:ingots/netherite' },
+                { tag: 'forge:ingots/netherite' }
+            ],
+            altar_type: 3,
+            duration: 600,
+            starlight: 6400,
+            focus_constellation: 'astralsorcery:fornax',
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'pedestals:upgrades/anvil'
+        },
+        {
+            output: Item.of('apotheosis:hellshelf', 1),
+            pattern: ['A___A', '__BC_', '_DED_', '_FB__', 'A___A'],
+            key: {
+                A: { item: 'tconstruct:scorched_bricks' },
+                B: { tag: 'botania:runes/fire' },
+                C: { item: 'resourcefulbees:ghast_honeycomb' },
+                D: { tag: 'botania:runes/muspelheim' },
+                E: { tag: 'forge:bookshelves' },
+                F: { item: 'powah:crystal_blazing' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ]
+        },
+        {
+            output: Item.of('apotheosis:seashelf', 1),
+            pattern: ['A___A', '__BC_', '_DED_', '_FB__', 'A___A'],
+            key: {
+                A: { item: 'upgrade_aquatic:prismarine_coral_block' },
+                B: { tag: 'botania:runes/water' },
+                C: { item: 'resourcefulbees:icy_honeycomb' },
+                D: { tag: 'botania:runes/vanaheim' },
+                E: { tag: 'forge:bookshelves' },
+                F: { item: 'powah:crystal_niotic' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ]
+        },
+        {
+            output: Item.of('apotheosis:endshelf', 1),
+            pattern: ['A___A', '__BC_', '_DED_', '_FB__', 'A___A'],
+            key: {
+                A: { item: 'betterendforge:flavolite_runed' },
+                B: { tag: 'botania:runes/mana' },
+                C: { item: 'resourcefulbees:enderium_honeycomb' },
+                D: { tag: 'botania:runes/nidavellir' },
+                E: { tag: 'forge:bookshelves' },
+                F: { item: 'betterendforge:eternal_crystal' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ]
         }
     ];
 

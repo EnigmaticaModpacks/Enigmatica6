@@ -40,8 +40,8 @@
 	map_mode: "none"
 	
 	# Noise added to map to make it look less plastic
-	# Default: 0.05d
-	# Range: 0.0d ~ 0.5d
+	# Default: 0.05
+	# Range: 0.0 ~ 0.5
 	noise: 0.05d
 	
 	# Show your own claimed chunks on the map
@@ -58,13 +58,13 @@
 	rerender_queue_ticks: 60
 	
 	# Color intensity
-	# Default: 1.0d
-	# Range: 0.0d ~ 1.0d
+	# Default: 1.0
+	# Range: 0.0 ~ 1.0
 	saturation: 1.0d
 	
 	# Shadow intensity
-	# Default: 0.1d
-	# Range: 0.0d ~ 0.3d
+	# Default: 0.1
+	# Range: 0.0 ~ 0.3
 	shadows: 0.1d
 	
 	# Advanced option. Max tasks that can queue up
@@ -129,8 +129,8 @@
 		position: "top_right"
 		
 		# Scale of minimap
-		# Default: 1.0d
-		# Range: 0.25d ~ 4.0d
+		# Default: 1.0
+		# Range: 0.25 ~ 4.0
 		scale: 1.0d
 		
 		# Minimap visibility

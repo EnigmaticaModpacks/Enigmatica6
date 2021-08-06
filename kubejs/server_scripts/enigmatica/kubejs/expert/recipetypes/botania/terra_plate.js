@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:ingots/terminite' },
+                { tag: 'forge:ingots/sky' },
                 { item: 'botania:mana_pearl' },
                 { item: 'resourcefulbees:terrestrial_honeycomb' },
                 { item: 'botania:mana_diamond' },
@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:ingots/terminite' },
+                { tag: 'forge:ingots/sky' },
                 { item: 'botania:mana_pearl' },
                 { tag: 'forge:ingots/manasteel' },
                 { item: 'botania:mana_diamond' },

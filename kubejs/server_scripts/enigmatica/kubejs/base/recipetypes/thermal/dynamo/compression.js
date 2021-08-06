@@ -70,6 +70,10 @@ onEvent('recipes', (event) => {
             {
                 fluid: 'thermal:refined_fuel',
                 energy: 1500000
+            },
+            {
+                fluid: 'resourcefulbees:rocket_honey',
+                energy: 1500000
             }
         ]
     };

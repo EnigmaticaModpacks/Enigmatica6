@@ -943,38 +943,6 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'ars_nouveau:greater_experience_gem',
-                    'botania:gaia_pylon',
-                    'ars_nouveau:greater_experience_gem',
-                    '#botania:runes/mana',
-                    '#botania:runes/vanaheim',
-                    'ars_nouveau:greater_experience_gem',
-                    'ars_nouveau:glyph_pickup',
-                    'ars_nouveau:greater_experience_gem'
-                ],
-                reagent: 'pedestals:coin/default',
-                output: 'pedestals:coin/xpenchanter',
-                count: 1,
-                id: 'pedestals:upgrades/enchanter'
-            },
-            {
-                inputs: [
-                    'ars_nouveau:greater_experience_gem',
-                    'mythicbotany:alfsteel_pylon',
-                    'ars_nouveau:greater_experience_gem',
-                    '#botania:runes/mana',
-                    '#botania:runes/vanaheim',
-                    'ars_nouveau:greater_experience_gem',
-                    'ars_nouveau:glyph_pickup',
-                    'ars_nouveau:greater_experience_gem'
-                ],
-                reagent: 'pedestals:coin/default',
-                output: 'pedestals:coin/xpanvil',
-                count: 1,
-                id: 'pedestals:upgrades/anvil'
-            },
-            {
-                inputs: [
-                    'ars_nouveau:greater_experience_gem',
                     'botania:rosa_arcana',
                     'ars_nouveau:greater_experience_gem',
                     '#botania:runes/mana',
@@ -1099,6 +1067,19 @@ onEvent('recipes', (event) => {
                 output: 'pedestals:coin/fluidpump',
                 count: 1,
                 id: 'pedestals:upgrades/fluidpump'
+            },
+            {
+                inputs: [
+                    '#forge:storage_blocks/mana',
+                    '#forge:storage_blocks/gold_brass',
+                    'ars_nouveau:glyph_projectile',
+                    '#botania:runes/air',
+                    '#botania:runes/air'
+                ],
+                reagent: 'botania:livingwood_bow',
+                output: 'ars_nouveau:spell_bow',
+                count: 1,
+                id: 'ars_nouveau:spell_bow'
             },
 
             /// Patchouli Removals

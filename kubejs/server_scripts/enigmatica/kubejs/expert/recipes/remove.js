@@ -24,7 +24,8 @@ onEvent('recipes', (event) => {
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/recycler',
         'pedestals:upgrades/rffuelgen',
-        'pedestals:upgrades/rfexpgen'
+        'pedestals:upgrades/rfexpgen',
+        'darkutils:crafting/rune_damage_player'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
@@ -41,7 +42,10 @@ onEvent('recipes', (event) => {
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
-        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' }
+        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+        { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
+        { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
+        { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' }
     ];
 
     idRemovals.forEach((id) => {

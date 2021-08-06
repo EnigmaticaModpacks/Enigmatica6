@@ -21,8 +21,8 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 'ars_nouveau:apprentice_spell_book',
+                'ars_nouveau:wilden_tribute',
                 'minecraft:totem_of_undying',
-                '#forge:gems/amber',
                 '#forge:gems/amber',
                 '#forge:gems/amber',
                 'betterendforge:enchanted_petal',

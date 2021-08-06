@@ -1,5 +1,7 @@
 #Enable or disable the entire engine
 enabled = true
 #Enable or disable a debug overlay that colors pixels by their normal
-normalDebug = false
+debugNormals = false
+#Cache chunk lookups to improve performance.
+chunkCaching = true
 

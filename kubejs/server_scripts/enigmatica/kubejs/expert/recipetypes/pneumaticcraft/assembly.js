@@ -3,45 +3,39 @@ onEvent('recipes', (event) => {
         return;
     }
 
-    recipes = [
+    const recipes = [
         {
-            input: 'thermal:machine_frame',
-            input_count: 2,
+            input: { item: 'thermal:machine_frame', count: 2 },
             output: { item: 'kubejs:rftools_frame_parts', count: 1 },
             program: 'drill',
             id: 'rftoolsbase:machine_frame'
         },
         {
-            input: 'kubejs:rftools_frame_parts',
-            input_count: 1,
+            input: { item: 'kubejs:rftools_frame_parts', count: 1 },
             output: { item: 'rftoolsbase:machine_frame', count: 1 },
             program: 'laser',
             id: 'rftoolsbase:machine_frame'
         },
         {
-            input: '#forge:storage_blocks/gold',
-            input_count: 1,
+            input: { tag: 'forge:storage_blocks/gold', count: 1 },
             output: { item: 'supplementaries:gold_trapdoor', count: 5 },
             program: 'drill'
         },
         {
-            input: 'supplementaries:gold_trapdoor',
-            input_count: 5,
+            input: { item: 'supplementaries:gold_trapdoor', count: 5 },
             output: { item: 'pedestals:coin/default', count: 10 },
             program: 'laser',
             id: 'pedestals:upgrades/itempedestalupgradedefault'
         }
     ];
     recipes.forEach((recipe) => {
-        let constructed_input = recipe.input.charAt(0) == '#' ? { tag: recipe.input.slice(1) } : { item: recipe.input };
-        if (recipe.input_count) {
-            constructed_input.type = 'pneumaticcraft:stacked_item';
-            constructed_input.count = recipe.input_count;
+        if (recipe.input.count > 1) {
+            recipe.input.type = 'pneumaticcraft:stacked_item';
         }
 
         let re = event.custom({
             type: `pneumaticcraft:assembly_${recipe.program}`,
-            input: constructed_input,
+            input: recipe.input,
             result: recipe.output,
             program: recipe.program
         });

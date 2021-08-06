@@ -688,7 +688,7 @@ onEvent('recipes', (event) => {
             pattern: ['pcp', 'gmf', 'aba'],
             key: {
                 p: '#forge:plastic',
-                c: 'minecraft:crafting_table',
+                c: '#forge:workbenches',
                 g: 'minecraft:diamond_pickaxe',
                 m: '#industrialforegoing:machine_frame/advanced',
                 f: 'minecraft:furnace',

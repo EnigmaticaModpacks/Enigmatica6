@@ -26,7 +26,13 @@
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
   "disallowedDimensions": {
-    "all": "the_bumblezone:the_bumblezone, twilightforest:twilightforest, undergarden:undergarden, the_midnight:the_midnight, advancedrocketry:space, theabyss:theabyssdim, theabyss:theabyssiceworld, theabyss:death, theabyss:the_end_of_time, theabyss:the_end_of_time_2, theabyss:dream, theabyss:dream_2, theabyss:dream_3, theabyss:radio, theabyss:theabyssdimgroundlands, theabyss:theabyssdimskylands"
+    "all": "the_bumblezone:the_bumblezone, twilightforest:twilightforest, undergarden:undergarden, the_midnight:the_midnight, advancedrocketry:space, theabyss:.+, lotr:middle_earth",
+    "repurposed_structures:village_badlands": "aoa3:barathos",
+    "repurposed_structures:outpost_badlands": "aoa3:barathos",
+    "repurposed_structures:well_badlands": "aoa3:barathos",
+    "repurposed_structures:mineshaft_desert": "atum:atum, ",
+    "repurposed_structures:outpost_jungle": "tropicraft:tropics",
+    "repurposed_structures:mansion_jungle": "tropicraft:tropics"
   },
   //
 
@@ -58,7 +64,19 @@
 // All of RS's structure identifiers can be found by doing "/locate" command in game.
 // RS's dungeons and wells identifiers can be found here on GitHub:
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
-  "allowedDimensions": {},
+  "allowedDimensions": {
+    "repurposed_structures:bastion_underground": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros",
+    "repurposed_structures:ruins_land_warm": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros",
+    "repurposed_structures:igloo_grassy": "elvenation:elvenia_dimension",
+    "repurposed_structures:mineshaft_jungle": "futurepack:tyros",
+    "repurposed_structures:pyramid_jungle": "futurepack:tyros",
+    "repurposed_structures:dungeon_jungle": "futurepack:tyros",
+    "repurposed_structures:well_mossy_stone": "futurepack:tyros, lotr:middle_earth",
+    "repurposed_structures:pyramid_snowy": "lotr:middle_earth",
+    "repurposed_structures:warm_land_ruins": "lotr:middle_earth",
+    "repurposed_structures:well_forest": "lotr:middle_earth",
+    "repurposed_structures:well_snow": "lotr:middle_earth"
+  },
   //
 
 
@@ -131,5 +149,5 @@
 
 
 // for internal use only. Do not change this.
-  "configVersion": 1
+  "configVersion": 3
 }
