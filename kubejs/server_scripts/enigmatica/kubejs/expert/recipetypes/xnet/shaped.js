@@ -31,8 +31,8 @@ onEvent('recipes', (event) => {
             pattern: ['DCD', 'BAB', 'DED'],
             key: {
                 A: 'thermal:energy_cell_frame',
-                B: 'minecraft:comparator',
-                C: 'minecraft:repeater',
+                B: 'minecraft:repeater',
+                C: 'minecraft:comparator',
                 D: '#forge:ingots/iron_tin',
                 E: 'thermal:redstone_servo'
             },
