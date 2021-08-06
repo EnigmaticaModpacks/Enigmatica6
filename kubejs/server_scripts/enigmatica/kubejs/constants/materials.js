@@ -96,16 +96,16 @@ const metals = [
 
 // Defines melting point of various materials
 const meltingPoints = {
-    utherium: { temp: 1212 },
+    utherium: { temp: 1070 },
     thallasium: { temp: 800 },
     signalum: { temp: 1272 },
-    regalium: { temp: 900 },
+    regalium: { temp: 620 },
     nebu: { temp: 1400 },
     lumium: { temp: 1354 },
-    iesnium: { temp: 1450 },
-    froststeel: { temp: 1380 },
+    iesnium: { temp: 850 },
+    froststeel: { temp: 860 },
     enderium: { temp: 1450 },
-    cloggrum: { temp: 800 },
+    cloggrum: { temp: 650 },
     sulfur: { temp: 115 },
     redstone: { temp: 660 },
     potassium_nitrate: { temp: 334 },
@@ -173,15 +173,15 @@ const oreProcessingSecondaries = {
         createProcessingTime: 400
     },
     cloggrum: {
-        secondary: 'lead',
+        secondary: 'froststeel',
         createProcessingTime: 300
     },
     froststeel: {
-        secondary: 'cobalt',
+        secondary: 'utherium',
         createProcessingTime: 400
     },
     regalium: {
-        secondary: 'utherium',
+        secondary: 'cloggrum',
         createProcessingTime: 400
     },
     utherium: {

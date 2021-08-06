@@ -415,6 +415,8 @@ onEvent('recipes', (event) => {
 
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
             return;
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            return;
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
         } else {
@@ -477,6 +479,8 @@ onEvent('recipes', (event) => {
 
             if (Fluid.exists(`tconstruct:molten_${materialProperties.secondary}`)) {
                 secondaryFluid = `tconstruct:molten_${materialProperties.secondary}`;
+            } else if (Fluid.exists(`materialis:molten_${materialProperties.secondary}`)) {
+                secondaryFluid = `materialis:molten_${materialProperties.secondary}`;
             } else if (Fluid.exists(`emendatusenigmatica:molten_${materialProperties.secondary}`)) {
                 secondaryFluid = `emendatusenigmatica:molten_${materialProperties.secondary}`;
             } else {
@@ -1150,6 +1154,8 @@ onEvent('recipes', (event) => {
         let modId;
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
             modId = 'tconstruct';
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
         } else {
@@ -1189,6 +1195,8 @@ onEvent('recipes', (event) => {
         let modId;
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
             modId = 'tconstruct';
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
         } else {
@@ -1232,6 +1240,8 @@ onEvent('recipes', (event) => {
         let modId;
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
             modId = 'tconstruct';
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
         } else {
