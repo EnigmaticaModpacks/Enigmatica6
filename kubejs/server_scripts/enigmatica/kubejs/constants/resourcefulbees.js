@@ -111,7 +111,8 @@ const honeyVarieties = [
     'resourcefulbees:wither_honey',
     'resourcefulbees:illuminating_honey',
     'resourcefulbees:rocky_honey',
-    'resourcefulbees:meaty_honey'
+    'resourcefulbees:meaty_honey',
+    'resourcefulbees:rocket_honey'
 ];
 
 const combVariants = [
@@ -182,5 +183,7 @@ const combVariants = [
     'wasabee',
     'basalz',
     'blitz',
-    'blizz'
+    'blizz',
+    'direbee20',
+    'generikbee'
 ];
