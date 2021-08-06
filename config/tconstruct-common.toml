@@ -34,6 +34,16 @@
 	#Range: 1 ~ 45
 	foundryNuggetsPerOre = 15
 
+	#Entity head drops when killed by a charged creeper
+	[recipes.heads]
+		blaze = true
+		enderman = true
+		stray = true
+		husk = true
+		drowned = true
+		spider = true
+		cave_spider = true
+
 #Everything to do with world generation
 [worldgen]
 	#Generate Copper
@@ -87,4 +97,10 @@
 			#How many chunks on average between islands
 			#Range: 10 ~ 500
 			separation = 25
+
+#Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
+[debug]
+	#If true, forces integration materials to be enabled, even if the relevant metal is missing. Useful for testing material balance.
+	#Does not provide recipes for any of them, they will only be available to cheat in creative.
+	forceIntegrationMaterials = false
 

@@ -1,25 +1,27 @@
-onEvent('jei.yeet.recipes', (event) => {
+onEvent('jei.remove.recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    //console.log('JEI RECIPE TYPES: ' + event.getCategoryIds());
+
+    //console.log('JEI RECIPE CATEGORIES: ' + event.getCategoryIds());
+    //console.log('Valid Keys: ' + Object.keys(event));
     recipesToHide.forEach((recipe) => {
         recipe.recipes_by_id.forEach((id) => {
             if (recipe.category == 'minecraft:crafting') {
                 try {
-                    event.yeet('create:automatic_shaped', id);
+                    event.remove('create:automatic_shaped', [id]);
                 } catch (err) {
                     // do nothing
                 }
 
                 try {
-                    event.yeet('create:automatic_shapeless', id);
+                    event.remove('create:automatic_shapeless', [id]);
                 } catch (err) {
                     // do nothing
                 }
             }
-            console.log(`Category: ${recipe.category}, Yeeting: ${id}`);
-            event.yeet(recipe.category, id);
+            console.log(`Category: ${recipe.category}, Hiding: ${id}`);
+            event.remove(recipe.category, [id]);
         });
     });
 });
