@@ -3,7 +3,6 @@ onEvent('server.datapack.low_priority', (event) => {
       //tier 1
        {
             identifier: 'livingrock',
-            flag: 'basic',
             recipes: [
                 {
                     "craftable": true,
@@ -49,7 +48,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'livingwood',
-            flag: 'basic',
             recipes: [
                 {
                     "craftable": true,
@@ -104,7 +102,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'treated_wood',
-            flag: 'basic',
             recipes: [
                 {
                     "craftable": true,
@@ -160,7 +157,6 @@ onEvent('server.datapack.low_priority', (event) => {
       //tier 2
         {
             identifier: 'andesite_alloy',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -222,7 +218,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'compressed_iron',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -289,7 +284,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'infused_iron',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -356,7 +350,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'manasteel',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -432,7 +425,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'thallasium',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -508,7 +500,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'tin',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -584,7 +575,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'zinc',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -661,7 +651,6 @@ onEvent('server.datapack.low_priority', (event) => {
       //tier 3
         {
             identifier: 'blazing_crystal',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -729,7 +718,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'elementium',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -805,7 +793,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
           identifier: 'energised_steel',
-          flag: 'casting',
           recipes: [
               {
                   "craftable": false,
@@ -872,7 +859,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
           identifier: 'sky_metal',
-          flag: 'casting',
           recipes: [
               {
                   "craftable": false,
@@ -927,7 +913,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'terminite',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -1003,7 +988,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'terrasteel',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -1080,7 +1064,6 @@ onEvent('server.datapack.low_priority', (event) => {
       //tier 4
         {
             identifier: 'aeternium',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -1147,7 +1130,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'alfsteel',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -1224,7 +1206,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'enderium',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -1300,7 +1281,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'gaia_spirit',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -1356,7 +1336,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'lumium',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -1432,7 +1411,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'niotic_crystal',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -1500,7 +1478,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'nitro_crystal',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -1568,7 +1545,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'signalum',
-            flag: 'casting',
             recipes: [
                 {
                     "craftable": false,
@@ -1644,7 +1620,6 @@ onEvent('server.datapack.low_priority', (event) => {
         },
         {
             identifier: 'spirited_crystal',
-            flag: 'composite',
             recipes: [
                 {
                     "craftable": false,
@@ -1716,19 +1691,8 @@ onEvent('server.datapack.low_priority', (event) => {
         event.addJson(`tconstruct:materials/definition/${recipeType.identifier}.json`, recipeType.recipes[0]);
         event.addJson(`tconstruct:materials/stats/${recipeType.identifier}.json`, recipeType.recipes[1]);
         event.addJson(`tconstruct:materials/traits/${recipeType.identifier}.json`, recipeType.recipes[2]);
-        if (flag = 'casting') {
-          event.addJson(`tconstruct:recipes/tools/materials/casting/${recipeType.identifier}.json`, recipeType.recipes[3]);
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/ingot.json`, recipeType.recipes[4]);
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/block.json`, recipeType.recipes[5]);
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/nugget.json`, recipeType.recipes[6]);
-        }
-        else if (flag = 'basic') {
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/block.json`, recipeType.recipes[3]);
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/stick.json`, recipeType.recipes[4]);
-        }
-        else if (flag = 'composite') {
-          event.addJson(`tconstruct:recipes/tools/materials/composite/${recipeType.identifier}.json`, recipeType.recipes[3]);
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}.json`, recipeType.recipes[4]);
+        for(let i = 3; i < recipeType.recipes.length; i++) {
+          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/${recipeType.identifier}${i}.json`, recipeType.recipes[i]);
         }
     });
 });
