@@ -6,23 +6,45 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "mekanism:advanced_chemical_tank",
+                    "weight": 2,
+                    "name": "mekanism:enriched_carbon",
                     "functions": [
                         {
-                            "function": "set_nbt",
-                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:carbon\",amount:5120}}]}}"
+                            "function": "set_count",
+                            "count": 32
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "mekanism:advanced_chemical_tank",
+                    "weight": 2,
+                    "name": "mekanism:enriched_redstone",
                     "functions": [
                         {
-                            "function": "set_nbt",
-                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:redstone\",amount:5120}}]}}"
+                            "function": "set_count",
+                            "count": 32
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:enriched_diamond",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:enriched_refined_obsidian",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 8
                         }
                     ]
                 },
@@ -55,7 +77,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 32
                         }
                     ]
                 },
@@ -66,7 +88,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 32
                         }
                     ]
                 },
@@ -77,9 +99,14 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 32
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 2,
+                    "name": "mekanism:elite_tier_installer"
                 },
                 {
                     "type": "minecraft:item",

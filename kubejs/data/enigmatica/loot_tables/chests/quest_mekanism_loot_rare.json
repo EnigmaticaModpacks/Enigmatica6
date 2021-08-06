@@ -73,22 +73,11 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "mekanism:dynamic_tank",
-                    "functions": [
-                        {
-                            "function": "set_count",
-                            "count": 28
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
                     "name": "mekanism:basic_pressurized_tube",
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 32
                         }
                     ]
                 },
@@ -99,7 +88,7 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 32
                         }
                     ]
                 },
@@ -110,14 +99,31 @@
                     "functions": [
                         {
                             "function": "set_count",
-                            "count": 16
+                            "count": 32
                         }
                     ]
                 },
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "mekanism:elite_tier_installer"
+                    "name": "mekanism:basic_tier_installer",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 1,
+                    "name": "mekanism:advanced_tier_installer",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
                 }
             ]
         }
