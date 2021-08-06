@@ -7,39 +7,6 @@
                 {
                     "type": "minecraft:item",
                     "weight": 1,
-                    "name": "mekanism:advanced_chemical_tank",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:fungi\",amount:128000}}]}}"
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "mekanism:advanced_chemical_tank",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:bio\",amount:128000}}]}}"
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
-                    "name": "mekanism:advanced_chemical_tank",
-                    "functions": [
-                        {
-                            "function": "set_nbt",
-                            "tag": "{mekData:{InfusionTanks:[{Tank:0,stored:{infuseTypeName:\"mekanism:ethene\",amount:16000}}]}}"
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "weight": 1,
                     "name": "mekanism:upgrade_speed",
                     "functions": [
                         {
