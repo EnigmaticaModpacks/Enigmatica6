@@ -626,12 +626,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'environmental:rice',
-                render: 'environmental:tall_rice',
-                plant: 'environmental:rice',
-                substrate: 'water'
-            },
-            {
                 seed: 'sushigocrafting:rice_seeds',
                 render: 'sushigocrafting:rice_crop',
                 plant: 'sushigocrafting:rice',
