@@ -387,6 +387,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_slate_ore/,
     /emendatusenigmatica:\w+_netherrack_ore/,
     /emendatusenigmatica:\w+_blackstone_ore/,
+    /emendatusenigmatica:\w+_deepslate_ore/,
     /emendatusenigmatica:\w+_end_stone_ore/,
     /emendatusenigmatica:\w+_mossy_stone_ore/,
     /emendatusenigmatica:\w+_granite_ore/,
