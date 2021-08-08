@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: Item.of('xnet:netcable_routing', 16),
             pattern: [' A ', 'ACA', 'BAB'],
@@ -37,15 +37,52 @@ onEvent('recipes', (event) => {
                 E: 'thermal:redstone_servo'
             },
             id: 'xnet:controller'
+        },
+        {
+            output: 'xnet:router',
+            pattern: ['CDC', 'DAD', 'CBC'],
+            key: {
+                A: 'thermal:energy_cell_frame',
+                B: '#forge:gems/ender',
+                C: '#forge:ingots/iron_tin',
+                D: 'minecraft:powered_rail'
+            },
+            id: 'xnet:router'
+        },
+        {
+            output: 'xnet:wireless_router',
+            pattern: ['BDB', 'CAC', 'BCB'],
+            key: {
+                A: 'thermal:energy_cell_frame',
+                B: '#forge:ingots/enderium',
+                C: '#forge:dusts/redstone',
+                D: 'minecraft:comparator'
+            },
+            id: 'xnet:wireless_router'
+        },
+        {
+            output: 'xnet:antenna',
+            pattern: ['ABA', 'ABA', ' B '],
+            key: {
+                A: 'minecraft:iron_bars',
+                B: '#forge:rods/iron_osmium'
+            },
+            id: 'xnet:antenna'
+        },
+        {
+            output: 'xnet:antenna_base',
+            pattern: [' B ', ' B ', 'CAC'],
+            key: {
+                A: '#forge:storage_blocks/iron_osmium',
+                B: '#forge:rods/iron_osmium',
+                C: '#forge:plates/iron_osmium'
+            },
+            id: 'xnet:antenna_base'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 
     ['red', 'green', 'blue', 'yellow'].forEach((color) => {
