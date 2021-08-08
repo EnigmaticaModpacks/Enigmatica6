@@ -4,6 +4,7 @@ onEvent('recipes', (event) => {
     }
 
     const idRemovals = [
+        'atum:blast_furnace',
         'ars_nouveau:stone_2',
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:dull_trinket',
