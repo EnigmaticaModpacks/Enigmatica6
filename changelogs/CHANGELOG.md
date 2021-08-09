@@ -5,6 +5,7 @@ _Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/En
 **Changes/Improvements**
 
 -   Un-silenced thunder and the Wandering Trader
+-   RefinedStorage: Increased Controller Energy Buffer size from 32000 to 250000 (This change applies itself by resetting the RefinedStorage server config to the pack default)
 
 ### Enigmatica 6 v0.5.9
 
