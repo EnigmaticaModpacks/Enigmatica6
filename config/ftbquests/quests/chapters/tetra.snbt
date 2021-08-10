@@ -250,10 +250,12 @@
 			dependencies: ["0000000000000883"]
 			id: "0000000000000781"
 			tasks: [{
-				id: "0000000000000CAF"
-				type: "item"
-				item: "tetra:hammer_base"
-				only_from_crafting: false
+				id: "7346BE7936AA083F"
+				type: "advancement"
+				title: "Find or Craft a Forge Hammer"
+				icon: "tetra:hammer_base"
+				advancement: "tetra:spelunking/hammer_fix"
+				criterion: ""
 			}]
 			rewards: [{
 				id: "0000000000000A4A"
