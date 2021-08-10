@@ -78,6 +78,28 @@ onEvent('recipes', (event) => {
                 C: '#forge:plates/iron_osmium'
             },
             id: 'xnet:antenna_base'
+        },
+        {
+            output: 'xnet:antenna_base',
+            pattern: [' B ', ' B ', 'CAC'],
+            key: {
+                A: '#forge:storage_blocks/iron_osmium',
+                B: '#forge:rods/iron_osmium',
+                C: '#forge:plates/iron_osmium'
+            },
+            id: 'xnet:antenna_base'
+        },
+
+        {
+            output: 'xnet:connector_routing',
+            pattern: ['ADA', 'CBC', 'ADA'],
+            key: {
+                A: '#forge:ingots/uranium',
+                B: `thermal:light_blue_rockwool`,
+                C: '#forge:dusts/redstone',
+                D: 'minecraft:hopper'
+            },
+            id: 'xnet:connector_routing'
         }
     ];
 
@@ -90,8 +112,17 @@ onEvent('recipes', (event) => {
             .shaped(Item.of(`xnet:netcable_${color}`, 16), [' A ', 'ACA', 'BAB'], {
                 A: '#forge:dusts/redstone',
                 B: `thermal:${color}_rockwool`,
-                C: '#forge:plates/signalum'
+                C: '#forge:ingots/signalum'
             })
             .id(`xnet:netcable_${color}`);
+
+        event
+            .shaped(Item.of(`xnet:connector_${color}`, 2), ['ADA', 'CBC', 'ADA'], {
+                A: '#forge:ingots/uranium',
+                B: `thermal:${color}_rockwool`,
+                C: '#forge:dusts/redstone',
+                D: 'minecraft:hopper'
+            })
+            .id(`xnet:connector_${color}`);
     });
 });
