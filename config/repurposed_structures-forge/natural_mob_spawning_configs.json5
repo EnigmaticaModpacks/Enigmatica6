@@ -351,6 +351,15 @@
         "maxGroupSize": 1,
         "logErrorIfNotFound": true
       }
+    ],
+    "repurposed_structures:stronghold_end": [
+      {
+        "type": "minecraft:endermite",
+        "weight": 100,
+        "minGroupSize": 2,
+        "maxGroupSize": 4,
+        "logErrorIfNotFound": true
+      }
     ]
   },
   //
@@ -361,5 +370,5 @@
 
 
 // for internal use only. Do not change this.
-  "configVersion": 1
+  "configVersion": 2
 }

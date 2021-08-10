@@ -131,6 +131,17 @@
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
 
+	[blocks.timber_frame]
+		#Replace a timber frame with wattle and daub block when daub is placed in it
+		replace_daub = true
+
+	[blocks.flag]
+		#Allows right/left clicking on a stick to lower/raise a flag attached to it
+		stick_pole = true
+		#Maximum allowed pole length
+		#Range: 0 ~ 256
+		pole_length = 16
+
 #Configure spawning conditions
 [spawns]
 
@@ -258,10 +269,14 @@
 		#Allows enchanting table to interact with bokshelf even if they have carpets or other tagged items in the way. You can add more blocks by adding them to 'enchantment_bypass' block tag
 		ignore_carpets = true
 
+	[tweaks.placeable_sticks]
+		#allow placeable blaze rods
+		enabled = true
+
 [items]
 
 	[items.rope_arrow]
-		#If you really don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
+		#If you don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
 		rope_arrow_override = "supplementaries:rope"
 
 	[items.flute]
@@ -277,5 +292,6 @@
 		#Range: 0.1 ~ 10.0
 		explosion_radius = 2.0
 		#Do bombs break blocks like tnt?
-		break_blocks = false
+		#Allowed Values: ALL, WEAK, NONE
+		break_blocks = "WEAK"
 

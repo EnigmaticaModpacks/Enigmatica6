@@ -1,5 +1,4 @@
 
-#No comment
 [Restrictions]
 	#The max range of the player detector functions. If anyone use a higher range, the detector will use this max range
 	#Range: 0 ~ 100000000
@@ -14,7 +13,6 @@
 	#Range: > 0
 	nbtStorageMaxSize = 1048576
 
-#No comment
 [Features]
 	#Enable the Chat Box or not.
 	enableChatBox = true
@@ -28,7 +26,7 @@
 	enableEnvironmentDetector = true
 	#Enable the Chunky Turtle or not.
 	enableChunkyTurtle = true
-	#Enable the debug mode, you should only enable it, if a developer say it or something does not work.
+	#Enable the debug mode. You should only enable it, if a developer say it or something does not work.
 	enableDebugMode = false
 	#Enable the Energy Detector or not.
 	enableEnergyDetector = true
@@ -54,7 +52,6 @@
 	#Defines default chatbox prefix
 	defaultChatBoxPrefix = "AP"
 
-#No comment
 [operations]
 	#Range: > 1000
 	digCooldown = 1000
@@ -99,7 +96,6 @@
 	#Range: > 1000
 	chatMessageCooldown = 10000
 
-#No comment
 [metaphysics]
 	#Defines energy to fuel rate
 	#Range: > 575
@@ -123,9 +119,13 @@
 	overpoweredTier2AutomataCoreInteractionRadius = 6
 	#Range: 1 ~ 32
 	overpoweredTier2AutomataCoreMaxFuelConsumptionRate = 4
+	#Defines max warp point stored in warp core. Mostly need to not allow NBT overflow error
+	#Range: > 1
+	endAutomataCoreWarpPointLimit = 64
 
-#No comment
 [world]
 	#Enable the villager structures for the computer scientist.
 	enableVillagerStructures = true
+	#Gives the ap documentation to new players on a world.
+	givePlayerBookOnJoin = false
 
