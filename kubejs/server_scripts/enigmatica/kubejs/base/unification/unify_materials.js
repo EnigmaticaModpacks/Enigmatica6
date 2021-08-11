@@ -1203,6 +1203,8 @@ onEvent('recipes', (event) => {
             modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
         } else {
             return;
         }
@@ -1312,8 +1314,12 @@ onEvent('recipes', (event) => {
         let modId;
         if (Fluid.exists(`tconstruct:molten_${material}`)) {
             modId = 'tconstruct';
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
         } else {
             return;
         }

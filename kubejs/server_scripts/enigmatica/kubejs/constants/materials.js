@@ -75,7 +75,11 @@ const materialsToUnify = [
     'sky',
     'terminite',
     'terrasteel',
-    'energized_steel'
+    'energized_steel',
+    'blazing_crystal',
+    'niotic_crystal',
+    'spirited_crystal',
+    'nitro_crystal'
 ];
 
 // Used to determine which material types to unify
@@ -135,7 +139,11 @@ const meltingPoints = {
     sky: {temp: 950},
     terminite: {temp: 840},
     terrasteel: {temp: 975},
-    energized_steel: {temp: 875}
+    energized_steel: {temp: 875},
+    blazing_crystal: {temp: 950},
+    niotic_crystal: {temp: 1250},
+    spirited_crystal: {temp: 1350},
+    nitro_crystal: {temp: 1450}
 };
 
 // Defines the secondary metal each metal type will produce.
