@@ -419,6 +419,8 @@ onEvent('recipes', (event) => {
             return;
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
         } else {
             return;
         }
@@ -1158,6 +1160,8 @@ onEvent('recipes', (event) => {
             modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
         } else {
             return;
         }
@@ -1244,6 +1248,8 @@ onEvent('recipes', (event) => {
             modId = 'materialis';
         } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
             modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
         } else {
             return;
         }
@@ -1283,17 +1289,20 @@ onEvent('recipes', (event) => {
                     .id(`tconstruct:smeltery/casting/metal/${material}/${recipe.type}_${cast}_cast`);
             });
         });
-        event
-            .custom({
-                type: 'tconstruct:casting_basin',
-                fluid: {
-                    name: `${modId}:molten_${material}`,
-                    amount: 1296
-                },
-                result: block,
-                cooling_time: 171
-            })
-            .id(`tconstruct:smeltery/casting/metal/${material}/block`);
+        if (block != air) {
+            event
+                .custom({
+                    type: 'tconstruct:casting_basin',
+                    fluid: {
+                        name: `${modId}:molten_${material}`,
+                        amount: 1296
+                    },
+                    result: block,
+                    cooling_time: 171
+                })
+                .id(`tconstruct:smeltery/casting/metal/${material}/block`);
+                
+        }
     }
 
     function tconstruct_gem_casting(event, material, block, gem, gear, rod, plate) {

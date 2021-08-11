@@ -74,7 +74,7 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_sky_metal',
+            id: 'molten_sky',
             texture: '0x88d7fc',
             display: 'Molten Sky Metal'
         },

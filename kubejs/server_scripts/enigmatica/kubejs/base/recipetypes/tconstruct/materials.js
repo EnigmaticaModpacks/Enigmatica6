@@ -858,7 +858,7 @@ onEvent('server.datapack.low_priority', (event) => {
           ]
         },
         {
-          identifier: 'sky_metal',
+          identifier: 'sky',
           recipes: [
               {
                   "craftable": false,
@@ -894,11 +894,11 @@ onEvent('server.datapack.low_priority', (event) => {
               {
                   "type": "tconstruct:material_fluid",
                   "fluid": {
-                    "name": "kubejs:molten_sky_metal",
+                    "name": "kubejs:molten_sky",
                     "amount": 144
                   },
                   "temperature": 950,
-                  "output": "tconstruct:sky_metal"
+                  "output": "tconstruct:sky"
               },
               {
                   "type": "tconstruct:material",
@@ -907,7 +907,7 @@ onEvent('server.datapack.low_priority', (event) => {
                   },
                   "value": 1,
                   "needed": 1,
-                  "material": "tconstruct:sky_metal"
+                  "material": "tconstruct:sky"
               }
           ]
         },
