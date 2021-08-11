@@ -160,6 +160,11 @@ var itemsToHide = [
     'emendatusenigmatica:molten_brass_bucket',
     'emendatusenigmatica:molten_aluminum_bucket',
     'emendatusenigmatica:molten_ancient_debris_bucket',
+    'emendatusenigmatica:molten_cloggrum_bucket',
+    'emendatusenigmatica:molten_froststeel_bucket',
+    'emendatusenigmatica:molten_utherium_bucket',
+    'emendatusenigmatica:molten_regalium_bucket',
+    'emendatusenigmatica:molten_iesnium_bucket',
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
@@ -333,7 +338,12 @@ const fluidsToHide = [
     'emendatusenigmatica:molten_bronze',
     'emendatusenigmatica:molten_brass',
     'emendatusenigmatica:molten_aluminum',
-    'emendatusenigmatica:molten_ancient_debris'
+    'emendatusenigmatica:molten_ancient_debris',
+    'emendatusenigmatica:molten_cloggrum',
+    'emendatusenigmatica:molten_froststeel',
+    'emendatusenigmatica:molten_utherium',
+    'emendatusenigmatica:molten_regalium',
+    'emendatusenigmatica:molten_iesnium',
 ];
 
 /*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 

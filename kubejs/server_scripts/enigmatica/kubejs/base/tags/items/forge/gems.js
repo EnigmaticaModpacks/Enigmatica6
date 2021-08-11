@@ -11,7 +11,11 @@ onEvent('item.tags', (event) => {
         'immersivepetroleum:bitumen',
         'thermal:bitumen',
         'betterendforge:crystalline_sulphur',
-        'betterendforge:amber_gem'
+        'betterendforge:amber_gem',
+        'powah:crystal_blazing',
+        'powah:crystal_niotic',
+        'powah:crystal_spirited',
+        'powah:crystal_nitro'
     ]);
 
     event.add(gems + '/coal_coke', [
@@ -28,4 +32,9 @@ onEvent('item.tags', (event) => {
     event.get('forge:gems/mana_gem').remove('ars_nouveau:mana_gem');
     event.get('forge:gems/sulfur').add('betterendforge:crystalline_sulphur');
     event.get('forge:gems/amber').add('betterendforge:amber_gem');
+
+    event.add('forge:gems/blazing', ['powah:crystal_blazing']);
+    event.add('forge:gems/niotic', ['powah:crystal_niotic']);
+    event.add('forge:gems/spirited', ['powah:crystal_spirited']);
+    event.add('forge:gems/nitro', ['powah:crystal_nitro']);
 });
