@@ -1,19 +1,67 @@
+### Enigmatica 6 v0.5.10
+
+_Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.10.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.10.md)_
+
+**Changes/Improvements**
+
+-   Un-silenced thunder and the Wandering Trader
+-   RefinedStorage: Increased Controller Energy Buffer size from 32000 to 250000 (This change applies itself by resetting the RefinedStorage server config to the pack default)
+
+### Enigmatica 6 v0.5.9
+
+_Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.9.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.9.md)_
+
+**New Mods**
+
+-   [Connectivity](https://www.curseforge.com/minecraft/mc-mods/connectivity)
+-   [Materialis](https://www.curseforge.com/minecraft/mc-mods/materialis)
+-   [Redstone Pen](https://www.curseforge.com/minecraft/mc-mods/redstone-pen)
+-   [Shift n Scroll on Mac (Forge Only)](https://www.curseforge.com/minecraft/mc-mods/shift-n-scroll-on-mac)
+
+**Changes/Improvements**
+
+-   Add missing osmium items to ore multiplication quests [\#2899](https://github.com/NillerMedDild/Enigmatica6/pull/2899) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Blacklist Pharaohs from Apotheosis spawners [\#2878](https://github.com/NillerMedDild/Enigmatica6/pull/2878) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Expand Alt Material crafting, fix stoneworks crafting, make osmium available through IE's Excavator [\#2856](https://github.com/NillerMedDild/Enigmatica6/pull/2856) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Immersive Petroleum asphalt recipes to use tags [\#2875](https://github.com/NillerMedDild/Enigmatica6/pull/2875) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Implement Planks to Sticks / Sticks to Sawdust Recipes in Various Sawing Devices [\#2865](https://github.com/NillerMedDild/Enigmatica6/issues/2865)
+-   More Special Bees [\#2896](https://github.com/NillerMedDild/Enigmatica6/pull/2896) ([TemperedFool](https://github.com/TemperedFool))
+-   Remove Duplicate Dim Shard processing recipe from Enrichment Chamber [\#2879](https://github.com/NillerMedDild/Enigmatica6/pull/2879) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Set up tags for adding to sylph items [\#2860](https://github.com/NillerMedDild/Enigmatica6/issues/2860)
+-   Tag Update: Adds Chipped, Chisel, and Architect's Palette to valid apiary, and many more [\#2858](https://github.com/NillerMedDild/Enigmatica6/pull/2858) ([MuteTiefling](https://github.com/MuteTiefling))
+
+**Fixed Bugs**
+
+-   "an" grammar mistake [\#2857](https://github.com/NillerMedDild/Enigmatica6/issues/2857)
+-   \[0.4.8\] See through / fully transparent quark slate block when placing using building gadget [\#1890](https://github.com/NillerMedDild/Enigmatica6/issues/1890)
+-   Create builds - blocks vanish when contraptions stop. [\#2862](https://github.com/NillerMedDild/Enigmatica6/issues/2862)
+-   Ender Block sharing recipe, prevents Compact Machine Wall from being crafted [\#2892](https://github.com/NillerMedDild/Enigmatica6/issues/2892)
+-   Framed Block crashes game when broken with chisel block in [\#2853](https://github.com/NillerMedDild/Enigmatica6/issues/2853)
+-   Integrated Crafting operations stuck 0.5.6 [\#2824](https://github.com/NillerMedDild/Enigmatica6/issues/2824)
+-   lapis chunks show 2 recipes in the mekanism enricher [\#2868](https://github.com/NillerMedDild/Enigmatica6/issues/2868)
+-   Modular Router Placer Conflict with Claimed Chunks [\#2838](https://github.com/NillerMedDild/Enigmatica6/issues/2838)
+-   NPE issue in Terraforged [\#2870](https://github.com/NillerMedDild/Enigmatica6/issues/2870)
+-   Packing sawdust into sawdust blocks in the MultiServo Press [\#2863](https://github.com/NillerMedDild/Enigmatica6/issues/2863)
+-   Quark's Deepslate and Cobbled Deepslate are not registered for cobblegens [\#2846](https://github.com/NillerMedDild/Enigmatica6/issues/2846)
+-   Render Problem with Quark Blocks [\#2146](https://github.com/NillerMedDild/Enigmatica6/issues/2146)
+-   simple machine frame quest requires mob slaughter factory [\#2848](https://github.com/NillerMedDild/Enigmatica6/issues/2848)
+-   Thermal mode change key does not work [\#2854](https://github.com/NillerMedDild/Enigmatica6/issues/2854)
+-   Thermal Series and Integrated Dynamics Machine/Crafting-Terminal Negative TPS Interaction [\#2810](https://github.com/NillerMedDild/Enigmatica6/issues/2810)
+-   unable to craft `material stonework factory` with crafting table variants [\#2850](https://github.com/NillerMedDild/Enigmatica6/issues/2850)
+-   Warped Nylium missing tag resourcefulbees:valid_apiary [\#2886](https://github.com/NillerMedDild/Enigmatica6/issues/2886)
+
 ### Enigmatica 6 v0.5.8
 
 _Using Forge-1.16.5-36.2.1_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.8.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.8.md)_
-
-
 
 **Note to users of automatic git updating**
 
 The `start-automated-server` scripts have been updated, please override the ones you have in the instance root with the ones in the automation folder.
 
-
-
 **Bug Fixes**
 
-- \[0.5.7\] Sophisticated Backpacks incompatible with Tinker's Construct Crafting Station [\#2837](https://github.com/NillerMedDild/Enigmatica6/issues/2837)
-- You are unable to craft Percision Mechanisms in 0.5.7 [\#2835](https://github.com/NillerMedDild/Enigmatica6/issues/2835) (Fixed by [TemperedFool](https://github.com/TemperedFool))
+-   \[0.5.7\] Sophisticated Backpacks incompatible with Tinker's Construct Crafting Station [\#2837](https://github.com/NillerMedDild/Enigmatica6/issues/2837)
+-   You are unable to craft Percision Mechanisms in 0.5.7 [\#2835](https://github.com/NillerMedDild/Enigmatica6/issues/2835) (Fixed by [TemperedFool](https://github.com/TemperedFool))
 
 ### Enigmatica 6 v0.5.7
 

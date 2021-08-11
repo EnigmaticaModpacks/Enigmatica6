@@ -1,0 +1,10 @@
+
+[scarecrow]
+	#all animal entities will be scared. add here additional ones that are not included
+	mobs_whitelist = [""]
+	#animal entities that will not be scared
+	mobs_blacklist = [""]
+	#scaring radius
+	#Range: 0 ~ 100
+	scare_radius = 12
+

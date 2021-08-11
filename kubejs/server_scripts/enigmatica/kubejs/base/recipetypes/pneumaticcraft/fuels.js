@@ -16,6 +16,11 @@ onEvent('recipes', (event) => {
                 fluid: 'immersiveengineering:creosote',
                 air: 50,
                 rate: 0.25
+            },
+            {
+                fluid: 'resourcefulbees:rocket_honey',
+                air: 1500,
+                rate: 2
             }
         ]
     };

@@ -28,6 +28,7 @@ onEvent('item.tags', (event) => {
         'powah:niotic_crystal_block',
         'powah:spirited_crystal_block',
         'powah:nitro_crystal_block'
+        'architects_palette:ender_pearl_block'
     ]);
 
     event.get(storageBlocks + '/glowstone').add('minecraft:glowstone');
@@ -39,7 +40,7 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/aeternium', ['betterendforge:aeternium_block']);
     event.add(storageBlocks + '/terminite', ['betterendforge:terminite_block']);
     event.add(storageBlocks + '/thallasium', ['betterendforge:thallasium_block']);
-    event.add(storageBlocks + '/ender', ['betterendforge:ender_block']);
+    event.add(storageBlocks + '/ender', ['betterendforge:ender_block', 'architects_palette:ender_pearl_block']);
     event.add(storageBlocks + '/aurora', ['betterendforge:aurora_crystal']);
     event.add(storageBlocks + '/amber', ['betterendforge:amber_block']);
 

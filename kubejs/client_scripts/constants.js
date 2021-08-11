@@ -397,6 +397,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_slate_ore/,
     /emendatusenigmatica:\w+_netherrack_ore/,
     /emendatusenigmatica:\w+_blackstone_ore/,
+    /emendatusenigmatica:\w+_deepslate_ore/,
     /emendatusenigmatica:\w+_end_stone_ore/,
     /emendatusenigmatica:\w+_mossy_stone_ore/,
     /emendatusenigmatica:\w+_granite_ore/,
@@ -441,7 +442,7 @@ var regexHide = [
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
     /powah:\w+_starter/,
-    /rftoolsbase:dimensionalshard/,
+    /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/
 ];
@@ -617,8 +618,3 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal'
 ];
-
-const packMode = global.packmode;
-
-const isNormalMode = packMode == 'normal';
-const isExpertMode = packMode == 'expert';
