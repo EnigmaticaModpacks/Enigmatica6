@@ -1141,9 +1141,9 @@ onEvent('server.datapack.low_priority', (event) => {
                     stats: {
                       "tconstruct:extra": {},
                       "tconstruct:handle": {
-                        "durability": 1.05,
+                        "durability": 1.0,
                         "miningSpeed": 1.0,
-                        "attackSpeed": 1.05,
+                        "attackSpeed": 1.15,
                         "attackDamage": 1.0
                       },
                       "tconstruct:head": {
