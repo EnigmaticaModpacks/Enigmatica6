@@ -205,11 +205,11 @@ const oreProcessingSecondaries = {
         createProcessingTime: 300
     },
     froststeel: {
-        secondary: 'utherium',
+        secondary: 'cobalt',
         createProcessingTime: 400
     },
     regalium: {
-        secondary: 'cloggrum',
+        secondary: 'utherium',
         createProcessingTime: 400
     },
     utherium: {
