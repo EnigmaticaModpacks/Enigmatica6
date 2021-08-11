@@ -33,8 +33,8 @@ onEvent('item.tags', (event) => {
     event.get('forge:gems/sulfur').add('betterendforge:crystalline_sulphur');
     event.get('forge:gems/amber').add('betterendforge:amber_gem');
 
-    event.add('forge:gems/blazing_crystal', ['powah:crystal_blazing']);
-    event.add('forge:gems/niotic_crystal', ['powah:crystal_niotic']);
-    event.add('forge:gems/spirited_crystal', ['powah:crystal_spirited']);
-    event.add('forge:gems/nitro_crystal', ['powah:crystal_nitro']);
+    event.add('forge:gems/blazing', ['powah:crystal_blazing']);
+    event.add('forge:gems/niotic', ['powah:crystal_niotic']);
+    event.add('forge:gems/spirited', ['powah:crystal_spirited']);
+    event.add('forge:gems/nitro', ['powah:crystal_nitro']);
 });

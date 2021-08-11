@@ -27,7 +27,7 @@ onEvent('item.tags', (event) => {
         'powah:blazing_crystal_block',
         'powah:niotic_crystal_block',
         'powah:spirited_crystal_block',
-        'powah:nitro_crystal_block'
+        'powah:nitro_crystal_block',
         'architects_palette:ender_pearl_block'
     ]);
 
@@ -49,8 +49,8 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/energized_steel', ['powah:energized_steel_block']);
     event.add(storageBlocks + '/alfsteel', ['mythicbotany:alfsteel_block']);
 
-    event.add(storageBlocks + '/blazing_crystal', ['powah:blazing_crystal_block']);
-    event.add(storageBlocks + '/niotic_crystal', ['powah:niotic_crystal_block']);
-    event.add(storageBlocks + '/spirited_crystal', ['powah:spirited_crystal_block']);
-    event.add(storageBlocks + '/nitro_crystal', ['powah:nitro_crystal_block']);
+    event.add(storageBlocks + '/blazing', ['powah:blazing_crystal_block']);
+    event.add(storageBlocks + '/niotic', ['powah:niotic_crystal_block']);
+    event.add(storageBlocks + '/spirited', ['powah:spirited_crystal_block']);
+    event.add(storageBlocks + '/nitro', ['powah:nitro_crystal_block']);
 });
