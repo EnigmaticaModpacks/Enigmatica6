@@ -114,6 +114,11 @@ onEvent('recipes', (event) => {
                 inputs: ['#forge:ingots/iron', 'tconstruct:sky_slime_ball', 'tconstruct:seared_brick'],
                 outputs: [Item.of('tconstruct:slimesteel_ingot', 2)],
                 id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_slimesteel_ingot'
+            },
+            {
+                inputs: [Ingredient.of('#forge:ingots/cobalt', 3), Ingredient.of('#forge:ingots/netherite_scrap', 1)],
+                outputs: [Item.of('tconstruct:manyullyn_ingot', 4)],
+                id: 'thermal:compat/tconstruct/smelter_alloy_tconstruct_manyullyn_ingot'
             }
         ]
     };
