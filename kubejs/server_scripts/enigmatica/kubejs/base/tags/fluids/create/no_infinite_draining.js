@@ -4,6 +4,8 @@ onEvent('fluid.tags', (event) => {
         .add([
             /tconstruct/,
             /mekanism/,
+            /emenatusenigmatica/,
+            /kubejs/,
             /chorus/,
             /essence/,
             /meat/,

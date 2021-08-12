@@ -65,7 +65,21 @@ const materialsToUnify = [
     'manyullyn',
     'hepatizon',
     'thallasium',
-    'nebu'
+    'nebu',
+    'aeternium',
+    'alfsteel',
+    'elementium',
+    'gaia_spirit',
+    'infused_iron',
+    'manasteel',
+    'sky',
+    'terminite',
+    'terrasteel',
+    'energized_steel',
+    'blazing_crystal',
+    'niotic_crystal',
+    'spirited_crystal',
+    'nitro_crystal'
 ];
 
 // Used to determine which material types to unify
@@ -96,16 +110,16 @@ const metals = [
 
 // Defines melting point of various materials
 const meltingPoints = {
-    utherium: { temp: 1212 },
+    utherium: { temp: 1070 },
     thallasium: { temp: 800 },
     signalum: { temp: 1272 },
-    regalium: { temp: 900 },
+    regalium: { temp: 620 },
     nebu: { temp: 1400 },
     lumium: { temp: 1354 },
-    iesnium: { temp: 1450 },
-    froststeel: { temp: 1380 },
+    iesnium: { temp: 850 },
+    froststeel: { temp: 860 },
     enderium: { temp: 1450 },
-    cloggrum: { temp: 800 },
+    cloggrum: { temp: 650 },
     sulfur: { temp: 115 },
     redstone: { temp: 660 },
     potassium_nitrate: { temp: 334 },
@@ -115,7 +129,21 @@ const meltingPoints = {
     coal: { temp: 1149 },
     cinnabar: { temp: 580 },
     bitumen: { temp: 115 },
-    apatite: { temp: 1660 }
+    apatite: { temp: 1660 },
+    aeternium: {temp: 1250},
+    alfsteel: {temp: 1450},
+    elementium: {temp: 875},
+    gaia_spirit: {temp: 1350},
+    infused_iron: {temp: 850},
+    manasteel: {temp: 900},
+    sky: {temp: 950},
+    terminite: {temp: 840},
+    terrasteel: {temp: 975},
+    energized_steel: {temp: 875},
+    blazing_crystal: {temp: 950},
+    niotic_crystal: {temp: 1250},
+    spirited_crystal: {temp: 1350},
+    nitro_crystal: {temp: 1450}
 };
 
 // Defines the secondary metal each metal type will produce.
@@ -173,7 +201,7 @@ const oreProcessingSecondaries = {
         createProcessingTime: 400
     },
     cloggrum: {
-        secondary: 'lead',
+        secondary: 'froststeel',
         createProcessingTime: 300
     },
     froststeel: {
@@ -195,6 +223,10 @@ const oreProcessingSecondaries = {
     iesnium: {
         secondary: 'silver',
         createProcessingTime: 500
+    },
+    elementium: {
+        secondary: 'elementium',
+        createProcessingTime: 400
     }
 };
 

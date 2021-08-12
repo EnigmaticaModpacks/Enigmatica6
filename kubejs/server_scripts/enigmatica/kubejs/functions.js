@@ -91,7 +91,8 @@ recipetypes_crushing = (event, recipe) => {
         type: 'occultism:crushing',
         ingredient: recipe.input,
         result: recipe.output,
-        crushing_time: recipe.duration
+        crushing_time: recipe.duration,
+        ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
     });
     event.custom({
         type: 'astralsorcery:infuser',

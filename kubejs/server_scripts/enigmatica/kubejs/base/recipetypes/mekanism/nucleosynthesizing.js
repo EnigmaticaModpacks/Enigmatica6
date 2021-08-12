@@ -73,6 +73,33 @@ onEvent('recipes', (event) => {
                 }),
                 duration: 2500000
                 //Approximately 100 billion RF to complete the craft.
+            },
+            {
+                itemInput: { ingredient: { item: 'industrialforegoing:infinity_nuke' } },
+                gasInput: { amount: 10000, gas: 'mekanism:antimatter' },
+                output: Item.of('industrialforegoing:infinity_nuke', {
+                    CanCharge: 1,
+                    Special: 0,
+                    Selected: 'ARTIFACT',
+                    Energy: 9223372036854775807,
+                    Fluid: { FluidName: 'biofuel', Amount: 0 }
+                }),
+                duration: 2500000
+                //Approximately 100 billion RF to complete the craft.
+            },
+            {
+                itemInput: { ingredient: { item: 'industrialforegoing:infinity_launcher' } },
+                gasInput: { amount: 10000, gas: 'mekanism:antimatter' },
+                output: Item.of('industrialforegoing:infinity_launcher', {
+                    CanCharge: 1,
+                    Energy: 9223372036854775807,
+                    Fluid: { FluidName: 'biofuel', Amount: 0 },
+                    Special: 0,
+                    Selected: 'ARTIFACT',
+                    Plunger: 0
+                }),
+                duration: 2500000
+                //Approximately 100 billion RF to complete the craft.
             }
         ]
     };

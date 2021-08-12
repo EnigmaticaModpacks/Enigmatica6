@@ -3,15 +3,13 @@ onEvent('recipes', (event) => {
         {
             input: '#forge:ingots/compressed_iron',
             input_count: 4,
-            output: 'pneumaticcraft:elevator_frame',
-            output_count: 8,
+            output: { item: 'pneumaticcraft:elevator_frame', count: 8 },
             program: 'drill'
         },
         {
             input: 'pneumaticcraft:reinforced_brick_wall',
             input_count: 6,
-            output: 'pneumaticcraft:cannon_barrel',
-            output_count: 2,
+            output: { item: 'pneumaticcraft:cannon_barrel', count: 2 },
             program: 'drill'
         }
     ];
@@ -25,10 +23,7 @@ onEvent('recipes', (event) => {
         let re = event.custom({
             type: `pneumaticcraft:assembly_${recipe.program}`,
             input: constructed_input,
-            result: {
-                item: recipe.output,
-                count: recipe.output_count
-            },
+            result: recipe.output,
             program: recipe.program
         });
         if (recipe.id) {

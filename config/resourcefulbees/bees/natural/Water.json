@@ -25,6 +25,13 @@
                 "type": "BLOCK",
                 "inputID": "minecraft:lava",
                 "outputs": [{ "outputID": "minecraft:obsidian", "weight": 10 }]
+            },
+            {
+              "type": "ENTITY",
+              "inputID": "entity:minecraft:cat",
+              "outputs": [
+                {"outputID": "entity:resourcefulbees:wasabee_bee", "weight": 10}
+              ]
             }
         ]
     },

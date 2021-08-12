@@ -160,6 +160,11 @@ var itemsToHide = [
     'emendatusenigmatica:molten_brass_bucket',
     'emendatusenigmatica:molten_aluminum_bucket',
     'emendatusenigmatica:molten_ancient_debris_bucket',
+    'emendatusenigmatica:molten_cloggrum_bucket',
+    'emendatusenigmatica:molten_froststeel_bucket',
+    'emendatusenigmatica:molten_utherium_bucket',
+    'emendatusenigmatica:molten_regalium_bucket',
+    'emendatusenigmatica:molten_iesnium_bucket',
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
@@ -333,16 +338,21 @@ const fluidsToHide = [
     'emendatusenigmatica:molten_bronze',
     'emendatusenigmatica:molten_brass',
     'emendatusenigmatica:molten_aluminum',
-    'emendatusenigmatica:molten_ancient_debris'
+    'emendatusenigmatica:molten_ancient_debris',
+    'emendatusenigmatica:molten_cloggrum',
+    'emendatusenigmatica:molten_froststeel',
+    'emendatusenigmatica:molten_utherium',
+    'emendatusenigmatica:molten_regalium',
+    'emendatusenigmatica:molten_iesnium',
 ];
 
 /*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
     that have been changed to use a different crafting type or that have been disabled. It allows creating a
     recipe pointer that will display in Patchouli but not in JEI.  
 
-    Use the below logger to discover the correct CategoryID. They do not match the recipe type.
+    Use the logger in the jei_hide_recipes script to discover the correct CategoryID. They do not match the recipe type.
 */
-//console.log('JEI RECIPE TYPES: ' + event.getCategoryIds());
+
 const recipesToHide = [
     {
         category: 'minecraft:crafting',
@@ -358,7 +368,12 @@ const recipesToHide = [
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
             'mythicbotany:modified_gaia_pylon_with_alfsteel',
-            'mythicbotany:alfsteel_pylon'
+            'mythicbotany:alfsteel_pylon',
+            'naturesaura:gold_brick',
+            'naturesaura:generator_limit_remover',
+            'apotheosis:hellshelf',
+            'apotheosis:seashelf',
+            'apotheosis:endshelf'
         ]
     },
     {
@@ -382,6 +397,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_slate_ore/,
     /emendatusenigmatica:\w+_netherrack_ore/,
     /emendatusenigmatica:\w+_blackstone_ore/,
+    /emendatusenigmatica:\w+_deepslate_ore/,
     /emendatusenigmatica:\w+_end_stone_ore/,
     /emendatusenigmatica:\w+_mossy_stone_ore/,
     /emendatusenigmatica:\w+_granite_ore/,
@@ -426,7 +442,7 @@ var regexHide = [
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
     /powah:\w+_starter/,
-    /rftoolsbase:dimensionalshard/,
+    /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/
 ];
@@ -485,6 +501,8 @@ const disabledItems = [
     'byg:pendorite_scraps',
     'byg:pendorite_shovel',
     'byg:pendorite_sword',
+    'byg:emeraldite_ore',
+    'byg:emeraldite_shards',
 
     'create:dough',
 
@@ -600,8 +618,3 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal'
 ];
-
-const packMode = global.packmode;
-
-const isNormalMode = packMode == 'normal';
-const isExpertMode = packMode == 'expert';

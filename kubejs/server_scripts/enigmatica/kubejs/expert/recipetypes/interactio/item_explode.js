@@ -51,6 +51,19 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: 'pneumaticcraft:explosion_crafting/compressed_iron_block'
+        },
+        {
+            inputs: [
+                { item: 'bloodmagic:fortune_anointment', count: 1 },
+                { item: 'atum:coin_gold', count: 7 },
+                { item: 'resourcefulbees:nether_quartz_honeycomb', count: 7 }
+            ],
+            output: {
+                entries: [{ result: { item: 'meetyourfight:devils_ante', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: 'meetyourfight:devils_ante'
         }
     ];
 

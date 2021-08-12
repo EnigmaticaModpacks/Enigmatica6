@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'patchouli:modded_for_dummies' }),
             inputs: ['minecraft:book', '#forge:dyes/yellow']
         },
-        { output: 'minecraft:crafting_table', inputs: ['#forge:workbench'] },
+        { output: 'minecraft:crafting_table', inputs: ['#forge:workbenches'] },
         {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }),
             inputs: ['minecraft:sugar', 'minecraft:book']
@@ -562,6 +562,10 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('minecraft:brown_dye', 2),
             inputs: ['#forge:dyes/red', '#forge:dyes/green']
+        },
+        {
+            output: 'sushigocrafting:soy_seeds',
+            inputs: ['sushigocrafting:soy_bean']
         }
     ];
 

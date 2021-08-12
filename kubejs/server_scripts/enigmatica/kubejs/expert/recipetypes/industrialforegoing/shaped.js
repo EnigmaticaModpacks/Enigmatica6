@@ -15,7 +15,18 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [];
+    const newRecipes = [
+        {
+            output: 'industrialforegoing:machine_frame_pity',
+            pattern: ['CCC', 'ABA', 'CCC'],
+            key: {
+                A: { item: 'immersiveengineering:concrete_leaded' },
+                B: { item: 'thermal:machine_frame' },
+                C: { item: 'create:andesite_casing' }
+            },
+            id: 'industrialforegoing:machine_frame_pity'
+        }
+    ];
 
     newRecipes.forEach((recipe) => {
         if (recipe.id) {

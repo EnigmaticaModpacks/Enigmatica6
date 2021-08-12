@@ -97,6 +97,11 @@
     // Allowed values: nothing, effect, hearts
     "requirement": "effect",
     
+    // What is required for a player that holds the ring of thor to hold mjoellnir.
+    // If a player holds the ring of thor, this OR `mjoellnir.requirement` must be met.
+    // Allowed values: nothing, effect, hearts
+    "requirement_thor": "nothing",
+    
     // The chance for secondary targets to get lightning effects  applied as well on ranged attacks.
     // Range: 0.0 - 1.0
     "secondary_lightning_chance": 0.25,

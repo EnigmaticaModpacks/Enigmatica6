@@ -4,6 +4,7 @@ onEvent('recipes', (event) => {
     }
 
     const idRemovals = [
+        'atum:blast_furnace',
         'ars_nouveau:stone_2',
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:dull_trinket',
@@ -19,7 +20,13 @@ onEvent('recipes', (event) => {
         /create:crafting\/materials\/andesite_alloy/,
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
-        'minecraft:stick'
+        'minecraft:stick',
+        'pedestals:upgrades/breaker2',
+        'pedestals:ingot_gold_from_upgrades',
+        'pedestals:upgrades/recycler',
+        'pedestals:upgrades/rffuelgen',
+        'pedestals:upgrades/rfexpgen',
+        'darkutils:crafting/rune_damage_player'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
@@ -34,7 +41,12 @@ onEvent('recipes', (event) => {
         { output: 'botania:mana_pylon', id: 'botania:mana_pylon' },
         { output: 'botania:natura_pylon', id: 'botania:natura_pylon' },
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
-        { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' }
+        { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
+        { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
+        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+        { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
+        { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
+        { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' }
     ];
 
     idRemovals.forEach((id) => {

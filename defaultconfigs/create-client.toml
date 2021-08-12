@@ -1,0 +1,89 @@
+
+# 
+#Client-only settings - If you're looking for general settings, look inside your worlds serverconfig folder!
+[client]
+	# 
+	#Show item descriptions on Shift and controls on Ctrl.
+	enableTooltips = true
+	# 
+	#Display a tooltip when looking at overstressed components.
+	enableOverstressedTooltip = true
+	# 
+	#Log a stack-trace when rendering issues happen within a moving contraption.
+	explainRenderErrors = false
+	# 
+	#Range: 0.0 ~ 1.0
+	fanParticleDensity = 0.5
+	# 
+	#Show colourful debug information while the F3-Menu is open.
+	enableRainbowDebug = true
+	# 
+	#Use modern OpenGL features to drastically increase performance.
+	experimentalRendering = true
+	# 
+	#Offset the overlay from goggle- and hover- information by this many pixels on the X axis; Use /create overlay
+	#Range: > -2147483648
+	overlayOffsetX = 20
+	# 
+	#Offset the overlay from goggle- and hover- information by this many pixels on the Y axis; Use /create overlay
+	#Range: > -2147483648
+	overlayOffsetY = 0
+	# 
+	#Setting this to true will prevent Create from sending you a warning when playing with Fabulous graphics enabled
+	ignoreFabulousWarning = false
+	# 
+	#The maximum amount of blocks for which to try and calculate dynamic contraption lighting. Decrease if large contraption cause too much lag
+	#Range: > 0
+	maximumContraptionLightVolume = 16384
+	# 
+	#Choose the menu row that the Create config button appears on in the main menu
+	#Set to 0 to disable the button altogether
+	#Range: 0 ~ 4
+	mainMenuConfigButtonRow = 0
+	# 
+	#Offset the Create config button in the main menu by this many pixels on the X axis
+	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
+	#Range: > -2147483648
+	mainMenuConfigButtonOffsetX = -4
+	# 
+	#Choose the menu row that the Create config button appears on in the in-game menu
+	#Set to 0 to disable the button altogether
+	#Range: 0 ~ 5
+	ingameMenuConfigButtonRow = 3
+	# 
+	#Offset the Create config button in the in-game menu by this many pixels on the X axis
+	#The sign (+/-) of this value determines what side of the row the button appears on (right/left)
+	#Range: > -2147483648
+	ingameMenuConfigButtonOffsetX = -4
+
+	# 
+	#Settings for the Placement Assist
+	[client.placementAssist]
+		# 
+		#What indicator should be used when showing where the assisted placement ends up relative to your crosshair
+		#Choose 'NONE' to disable the Indicator altogether
+		#Allowed Values: TEXTURE, TRIANGLE, NONE
+		indicatorType = "TEXTURE"
+		# 
+		#Change the size of the Indicator by this multiplier
+		#Range: 0.0 ~ 3.4028234663852886E38
+		indicatorScale = 1.0
+
+	# 
+	#Ponder settings
+	[client.ponder]
+		# 
+		#Slow down a ponder scene whenever there is text on screen.
+		comfyReading = false
+
+	# 
+	#Sound settings
+	[client.sound]
+		# 
+		#Make cogs rumble and machines clatter.
+		enableAmbientSounds = true
+		# 
+		#Maximum volume modifier of Ambient noise
+		#Range: 0.0 ~ 1.0
+		ambientVolumeCap = 0.10000000149011612
+

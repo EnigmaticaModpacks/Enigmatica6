@@ -1,0 +1,51 @@
+
+[Nether]
+	#
+	# How rare are Nether-styled Strongholds in Nether-category biomes.
+	# 1 for spawning in most chunks and 1001 for no spawn.
+	#Range: 1 ~ 1001
+	netherStrongholdMaxChunkDistance = 85
+	#
+	# Minimum Y height that Nether stronghold's starting point can spawn at.
+	# Note: Strongholds will spawn between min and max y height set in config.
+	#Range: 0 ~ 255
+	netherStrongholdMinHeight = 10
+	#
+	# Maximum Y height that Nether stronghold's starting point can spawn at.
+	# Note: Strongholds will spawn between min and max y height set in config.
+	# Setting this to below min height config will make strongholds spawn only at min height.
+	#Range: 0 ~ 255
+	netherStrongholdMaxHeight = 36
+	#
+	# Size of Nether Stronghold. This number is how many pieces deep a branch can go from the center piece.
+	# 1 for supertiny and 30 for supermassive Strongholds.
+	#Range: 1 ~ 30
+	netherStrongholdSizeSH = 15
+
+[End]
+	#
+	#How rare are End Strongholds in End biome's islands.
+	# 1 for spawning in most chunks and 10001 for none.
+	#Range: 1 ~ 1001
+	strongholdEndAverageChunkDistance = 130
+	#
+	# Size of End Stronghold. This number is how many pieces deep a branch can go from the center piece.
+	# 1 for supertiny and 30 for supermassive Strongholds.
+	#Range: 1 ~ 30
+	endStrongholdSizeSH = 15
+	#
+	# Minimum Y height that End stronghold's starting point can spawn at.
+	# Note: Strongholds will spawn between min and max y height set in config.
+	#Range: 0 ~ 255
+	endStrongholdMinHeight = 5
+	#
+	# Maximum Y height that End stronghold's starting point can spawn at.
+	# Note: Strongholds will spawn between min and max y height set in config.
+	# Setting this to below min height config will make strongholds spawn only at min height.
+	#Range: 0 ~ 255
+	endStrongholdMaxHeight = 6
+	#
+	# How far above or below the End Stronghold's pieces can generate away from the center piece.
+	#Range: 0 ~ 255
+	strongholdEndVerticalRange = 45
+

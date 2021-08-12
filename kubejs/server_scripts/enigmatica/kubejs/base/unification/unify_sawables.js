@@ -13,18 +13,6 @@ onEvent('recipes', (event) => {
 });
 
 function create_cutting(event, variant, sawDust, treeBark) {
-    var modID = variant.logBlock.split(':')[0];
-
-    // mod blacklist
-    if (
-        modID == 'minecraft' ||
-        variant.modId == 'autumnity' ||
-        variant.modId == 'atmospheric' ||
-        variant.modId == 'upgrade_aquatic'
-    ) {
-        return;
-    }
-
     data = {
         recipes: [
             {
@@ -82,11 +70,6 @@ function create_cutting(event, variant, sawDust, treeBark) {
 }
 
 function immersiveengineering_sawing(event, variant, sawDust, treeBark) {
-    // mod blacklist
-    if (variant.modId == 'minecraft') {
-        return;
-    }
-
     event.recipes.immersiveengineering
         .sawmill(Item.of(variant.plankBlock, 6), variant.logBlockStripped, [
             {

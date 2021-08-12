@@ -42,15 +42,15 @@ Version = 9
 	#Range: 0.0 ~ 1.0
 	WarGalleyTurnFactor = 0.4
 	#
-	#----Row Boat Speed Factor.----
+	#----Drakkar Speed Factor.----
 	#	(takes effect after restart)
-	#	default: 1.0
+	#	default: 1.25
 	#Range: 0.0 ~ 2.0
 	DrakkarSpeedFactor = 1.0
 	#
-	#----Row Boat Turn Factor.----
+	#----Drakkar Turn Factor.----
 	#	(takes effect after restart)
-	#	default: 0.8
+	#	default: 0.3
 	#Range: 0.0 ~ 1.0
 	DrakkarTurnFactor = 0.8
 	#
@@ -147,4 +147,16 @@ Version = 9
 	#	default: 400
 	#Range: 0.0 ~ 10000.0
 	DhowHealth = 400.0
+	#
+	#----Row Boat Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.0
+	#Range: 0.0 ~ 2.0
+	RowBoatSpeedFactor = 1.0
+	#
+	#----Row Boat Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.8
+	#Range: 0.0 ~ 1.0
+	RowBoatTurnFactor = 0.8
 

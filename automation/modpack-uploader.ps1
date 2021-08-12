@@ -156,6 +156,11 @@ function New-Changelog {
 
 function Push-ClientFiles {
     if ($ENABLE_MODPACK_UPLOADER_MODULE) {
+
+        if ($ENABLE_CURSE_CLIENT_MODULE -eq $false) {
+            Remove-BlacklistedFiles
+        }
+
         $CLIENT_METADATA = 
         "{
         'changelog': `'$CLIENT_CHANGELOG`',

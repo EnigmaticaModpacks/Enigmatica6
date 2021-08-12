@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
                 syphon: 50,
                 ticks: 20,
                 orbLevel: 0,
-                id: 'flint_from_gravel'
+                id: 'bloodmagic:alchemytable/flint_from_gravel'
             },
             {
                 inputs: [
@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
                 syphon: 100,
                 ticks: 200,
                 orbLevel: 1,
-                id: 'leather_from_flesh'
+                id: 'bloodmagic:alchemytable/leather_from_flesh'
             },
             {
                 inputs: ['#forge:crops/potato', '#forge:crops/potato', '#forge:crops/potato', 'minecraft:bone_meal'],
@@ -31,7 +31,7 @@ onEvent('recipes', (event) => {
                 syphon: 100,
                 ticks: 100,
                 orbLevel: 1,
-                id: 'plantoil_from_taters'
+                id: 'bloodmagic:alchemytable/plantoil_from_taters'
             },
             {
                 inputs: ['#forge:crops', '#forge:crops', '#forge:crops', 'minecraft:bone_meal'],
@@ -40,7 +40,7 @@ onEvent('recipes', (event) => {
                 syphon: 100,
                 ticks: 100,
                 orbLevel: 1,
-                id: 'plantoil_from_wheat'
+                id: 'bloodmagic:alchemytable/plantoil_from_wheat'
             },
             {
                 inputs: ['minecraft:coal', 'minecraft:coal'],
@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
                 syphon: 400,
                 ticks: 200,
                 orbLevel: 1,
-                id: 'sand_coal'
+                id: 'bloodmagic:alchemytable/sand_coal'
             },
             {
                 inputs: ['#minecraft:wool'],
@@ -58,7 +58,7 @@ onEvent('recipes', (event) => {
                 syphon: 100,
                 ticks: 100,
                 orbLevel: 0,
-                id: 'string'
+                id: 'bloodmagic:alchemytable/string'
             },
             {
                 inputs: ['#forge:sand', '#forge:sand', 'minecraft:water_bucket'],
@@ -67,7 +67,7 @@ onEvent('recipes', (event) => {
                 syphon: 50,
                 ticks: 100,
                 orbLevel: 2,
-                id: 'clay_from_sand'
+                id: 'bloodmagic:alchemytable/clay_from_sand'
             },
             {
                 inputs: ['#forge:rods/blaze'],
@@ -212,6 +212,15 @@ onEvent('recipes', (event) => {
                 syphon: 200,
                 ticks: 200,
                 orbLevel: 1
+            },
+            {
+                inputs: ['minecraft:nether_wart_block'],
+                output: 'minecraft:nether_wart',
+                count: 4,
+                syphon: 50,
+                ticks: 40,
+                orbLevel: 0,
+                id: 'bloodmagic:alchemytable/nether_wart_from_block'
             }
         ]
     };
@@ -223,7 +232,7 @@ onEvent('recipes', (event) => {
             .ticks(recipe.ticks)
             .upgradeLevel(recipe.orbLevel);
         if (recipe.id) {
-            re.id(`bloodmagic:alchemytable/${recipe.id}`);
+            re.id(recipe.id);
         }
     });
 });

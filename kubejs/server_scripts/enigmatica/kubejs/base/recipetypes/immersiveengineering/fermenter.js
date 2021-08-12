@@ -67,6 +67,10 @@ onEvent('recipes', (event) => {
         'simplefarming:turnip',
         'simplefarming:yam',
         'simplefarming:zucchini',
+        'sushigocrafting:cucumber',
+        'sushigocrafting:soy_bean',
+        'sushigocrafting:wasabi_root',
+        'sushigocrafting:avocado',
         'undergarden:blisterberry',
         'upgrade_aquatic:mulberry'
     ];

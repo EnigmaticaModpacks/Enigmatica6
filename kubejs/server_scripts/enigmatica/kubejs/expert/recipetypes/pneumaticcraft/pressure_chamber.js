@@ -6,51 +6,34 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                {
-                    tag: 'forge:gems/coal_coke',
-                    count: 2
-                },
-                {
-                    tag: 'forge:ingots/iron',
-                    count: 4
-                },
-                {
-                    tag: 'forge:obsidian',
-                    count: 1
-                }
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/coal_coke', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/iron', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:obsidian', count: 1 }
             ],
             pressure: 2.0,
-            results: [
-                {
-                    item: 'pneumaticcraft:ingot_iron_compressed',
-                    count: 4
-                }
-            ],
+            results: [{ type: 'pneumaticcraft:stacked_item', item: 'pneumaticcraft:ingot_iron_compressed', count: 4 }],
             id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot'
         },
         {
             inputs: [
-                {
-                    tag: 'forge:storage_blocks/coal_coke',
-                    count: 2
-                },
-                {
-                    tag: 'forge:storage_blocks/iron',
-                    count: 4
-                },
-                {
-                    tag: 'forge:obsidian',
-                    count: 9
-                }
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/coal_coke', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/iron', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:obsidian', count: 9 }
             ],
             pressure: 2.0,
-            results: [
-                {
-                    item: 'pneumaticcraft:compressed_iron_block',
-                    count: 4
-                }
-            ],
+            results: [{ type: 'pneumaticcraft:stacked_item', item: 'pneumaticcraft:compressed_iron_block', count: 4 }],
             id: 'pneumaticcraft:pressure_chamber/compressed_iron_block'
+        },
+        {
+            inputs: [{ type: 'pneumaticcraft:stacked_item', item: 'minecraft:snow_block', count: 4 }],
+            pressure: 1.5,
+            results: [{ item: 'betterendforge:dense_snow', count: 1 }]
+        },
+        {
+            inputs: [{ type: 'pneumaticcraft:stacked_item', item: 'betterendforge:dense_snow', count: 4 }],
+            pressure: 1.5,
+            results: [{ item: 'minecraft:ice', count: 1 }],
+            id: 'pneumaticcraft:pressure_chamber/ice'
         }
     ];
 

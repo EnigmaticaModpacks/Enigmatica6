@@ -5,12 +5,13 @@
 	filename: "resourceful_bees"
 	title: "Resourceful Bees"
 	icon: "minecraft:honeycomb"
+	subtitle: ["Feed the Bees"]
 	default_quest_shape: "hexagon"
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Bee Nests"
-			x: -11.5d
+			x: -11.0d
 			y: -18.0d
 			subtitle: "You must take care of Bees because you’re definitely a Keeper"
 			description: [
@@ -55,7 +56,7 @@
 			title: "Tier 2 Bees"
 			icon: "resourcefulbees:gold_honeycomb"
 			x: -9.0d
-			y: -16.5d
+			y: -17.0d
 			subtitle: "Appearances can Bee deceiving"
 			description: [
 				"Tier 2 Bees are obtained through bee to bee breeding, triggered by giving the bees the needed items."
@@ -124,10 +125,10 @@
 			title: "Tier 3 Bees"
 			icon: "resourcefulbees:diamond_honeycomb"
 			x: -8.0d
-			y: -16.5d
+			y: -17.0d
 			subtitle: "A force to Bee reckoned with"
 			description: [
-				"Tier 3 Bees are also obtained through bee to bee breeding, but these bees require entire blocks of their respective materials to breed."
+				"Tier 3 Bees are obtained via entity or item mutation. These are generally created by mutating one bee to another, or a block of material to a spawn egg. Check the Beepedia and JEI for details."
 				""
 				"Please refer to JEI for more information on specific bees."
 			]
@@ -882,6 +883,8 @@
 				"Used the same way as the Bee Jar."
 				""
 				"Can be used to transport up to 10 bees at a time."
+				""
+				"Bee Boxes will also be created when using a Hive or Apiary containing bees to craft an upgraded hive or apiary."
 			]
 			dependencies: ["24D88FC1C6DCE052"]
 			id: "2F7254D5AD380CB4"
@@ -897,6 +900,51 @@
 				icon: "kubejs:rare_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_resourceful_bees_loot_rare"
 				player_command: false
+			}]
+		}
+		{
+			title: "Bee Crafting"
+			icon: {
+				id: "resourcefulbees:bee_jar"
+				Count: 1b
+				tag: {
+					BeeType: "enderslime"
+					Entity: "resourcefulbees:enderslime_bee"
+					Color: "#C75EFF"
+				}
+			}
+			x: -9.0d
+			y: -16.0d
+			subtitle: "Crafting is a pathway to many abilities some consider to bee... unnatural."
+			description: ["While most of the bees spawn naturally, are bred, or mutated, some are crafted. Check the Beepedia and JEI for details, paying special attention to spawn eggs and bee jars."]
+			dependencies: ["0000000000000714"]
+			id: "307E22ADC2DB4EB8"
+			tasks: [{
+				id: "362C63F136B07060"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "4FB651D2A18E0A02"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Special Combs"
+			icon: "resourcefulbees:mana_honeycomb"
+			x: -10.0d
+			y: -14.0d
+			description: ["Some combs are NOT processed in the centrufge - or are best used elsewhere. When in doubt, check JEI."]
+			dependencies: ["0000000000000A97"]
+			id: "1DFA48325FD10EE9"
+			tasks: [{
+				id: "3D810B866704DE92"
+				type: "checkmark"
+			}]
+			rewards: [{
+				id: "0BC7625BD64FD174"
+				type: "xp"
+				xp: 100
 			}]
 		}
 	]

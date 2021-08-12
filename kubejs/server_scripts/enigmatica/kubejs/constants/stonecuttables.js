@@ -434,6 +434,7 @@ const stonecuttables = [
             'astralsorcery:marble_raw',
             'astralsorcery:marble_runed',
             'astralsorcery:marble_arch',
+            'astralsorcery:marble_pillar',
             'quark:marble',
             'quark:marble_bricks',
             'quark:chiseled_marble_bricks',

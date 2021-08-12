@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-    // Please add new recipes to this object instead of recipes
     const newRecipes = [
         {
             output: 'botanypots:botany_pot',
@@ -214,76 +213,6 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'AAA', 'AAA'],
             key: {
                 A: 'minecraft:snow_block'
-            }
-        },
-        {
-            // Add Oak Recipes for Forest Combs
-            output: Item.of('minecraft:oak_log', 8),
-            pattern: ['BCB', 'C C', 'BCB'],
-            key: {
-                C: 'resourcefulbees:forest_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:oak_sapling', 4),
-            pattern: [' C ', 'B B', ' C '],
-            key: {
-                C: 'resourcefulbees:forest_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:oak_leaves', 16),
-            pattern: ['   ', 'B C', '   '],
-            key: {
-                C: 'resourcefulbees:forest_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            // Add Stone Recipes for Rocky Combs
-            output: Item.of('minecraft:stone', 32),
-            pattern: ['BCB', 'C C', 'BCB'],
-            key: {
-                C: 'resourcefulbees:rocky_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:cobblestone', 32),
-            pattern: ['BCB', 'C C', 'BCB'],
-            key: {
-                C: 'resourcefulbees:rocky_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('minecraft:diorite', 32),
-            pattern: ['CBC', 'D D', 'CBC'],
-            key: {
-                B: 'resourcefulbees:rocky_honeycomb',
-                C: 'resourcefulbees:wax',
-                D: 'resourcefulbees:nether_quartz_honeycomb'
-            }
-        },
-        {
-            output: Item.of('minecraft:andesite', 32),
-            pattern: ['CDC', 'B B', 'CDC'],
-            key: {
-                B: 'resourcefulbees:rocky_honeycomb',
-                C: 'resourcefulbees:wax',
-                D: 'resourcefulbees:nether_quartz_honeycomb'
-            }
-        },
-        {
-            // Add Wet Comb -> Water Bucket Recipe
-            output: 'minecraft:water_bucket',
-            pattern: ['BCB', 'CAC', 'BCB'],
-            key: {
-                C: 'resourcefulbees:water_honeycomb',
-                B: 'resourcefulbees:wax',
-                A: 'minecraft:bucket'
             }
         },
         {
@@ -758,7 +687,7 @@ onEvent('recipes', (event) => {
             pattern: ['pcp', 'gmf', 'aba'],
             key: {
                 p: '#forge:plastic',
-                c: 'minecraft:crafting_table',
+                c: '#forge:workbenches',
                 g: 'minecraft:diamond_pickaxe',
                 m: '#industrialforegoing:machine_frame/advanced',
                 f: 'minecraft:furnace',
@@ -1003,6 +932,16 @@ onEvent('recipes', (event) => {
                 B: '#forge:chests'
             },
             id: 'cfm:post_box'
+        },
+        {
+            output: 'rftoolscontrol:workbench',
+            pattern: ['C', 'F', 'X'],
+            key: {
+                C: '#forge:workbenches',
+                X: '#forge:chests/wooden',
+                F: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolscontrol:workbench'
         }
     ];
 
@@ -1461,6 +1400,12 @@ onEvent('recipes', (event) => {
     buildWoodVariants.forEach((wood) => {
         if (wood.modId == 'minecraft') {
             return;
+        }
+        let craftingTable = wood.modId + ':' + wood.logType + '_crafting_table';
+        if (!Item.exists(craftingTable)) {
+            event.shaped('minecraft:crafting_table', ['AA', 'AA'], {
+                A: wood.plankBlock
+            });
         }
         //All recipes using logs here
         var chest = wood.modId + ':' + wood.logType + '_chest';

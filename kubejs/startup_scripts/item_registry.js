@@ -18,7 +18,8 @@ onEvent('item.registry', (event) => {
         'observatory_lens',
         'coarse_lapis_lazuli_compound',
         'smoldering_lapis_lazuli_compound',
-        'cutting_essence'
+        'cutting_essence',
+        'rftools_frame_parts'
     ];
 
     let metals = [

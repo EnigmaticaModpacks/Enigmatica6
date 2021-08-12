@@ -49,7 +49,7 @@
 	#If true we go back to the old (wrong) sphere/cylinder calculation for the builder/shield
 	oldSphereCylinderShape = false
 	#If true the quarry will also quarry tile entities. Otherwise it just ignores them
-	quarryTileEntities = true
+	quarryTileEntities = false
 	#Maximum offset of the shape when a shape card is used in the builder
 	#Range: > 0
 	maxBuilderOffset = 260
@@ -69,7 +69,7 @@
 	builderRfPerEntity = 5000
 	#Can Tile Entities be moved? 'forbidden' means never, 'whitelist' means only whitelisted, 'blacklist' means all except blacklisted, 'allowed' means all
 	#Allowed Values: MOVE_FORBIDDEN, MOVE_WHITELIST, MOVE_BLACKLIST, MOVE_ALLOWED
-	tileEntityMode = "MOVE_WHITELIST"
+	tileEntityMode = "MOVE_BLACKLIST"
 	#The base speed (number of blocks per tick) of the quarry
 	#Range: > 0
 	quarryBaseSpeed = 8
@@ -81,6 +81,8 @@
 	#Maximum RF storage that the builder can hold
 	#Range: > 0
 	builderMaxRF = 1000000
+	#This is a list of blocks that are either blacklisted or whitelisted from the Builder when it tries to move tile entities (format <id>=<cost>)
+	blackWhiteListedBlocks = []
 
 #Settings for the shield system
 [shield]

@@ -238,6 +238,35 @@ onEvent('recipes', (event) => {
                 syphon: 200,
                 ticks: 200,
                 orbLevel: 1
+            },
+            {
+                inputs: ['eidolon:enchanted_ash', '#forge:dusts/ender_pearl'],
+                output: 'eidolon:ender_calx',
+                count: 2,
+                syphon: 50,
+                ticks: 100,
+                orbLevel: 1
+            },
+            {
+                inputs: ['minecraft:warped_fungus', 'eidolon:ender_calx', '#forge:crops/nether_wart'],
+                output: 'eidolon:warped_sprouts',
+                count: 2,
+                syphon: 200,
+                ticks: 200,
+                orbLevel: 1
+            },
+            {
+                inputs: [
+                    'aquaculture:fish_bones',
+                    '#forge:dusts/lapis',
+                    'minecraft:fermented_spider_eye',
+                    'undergarden:raw_dweller_meat'
+                ],
+                output: 'meetyourfight:fossil_bait',
+                count: 1,
+                syphon: 1000,
+                ticks: 200,
+                orbLevel: 2
             }
         ]
     };

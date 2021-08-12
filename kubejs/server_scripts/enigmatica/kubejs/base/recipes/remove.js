@@ -1,4 +1,7 @@
 onEvent('recipes', (event) => {
+    event.remove({ type: 'create:cutting', input: '#minecraft:logs' });
+    event.remove({ type: 'immersiveengineering:sawmill', input: '#minecraft:logs' });
+
     event.remove({ type: 'mekanism:combining' });
     event.remove({ type: 'minecraft:smelting', output: 'minecraft:obsidian' });
     event.remove({ type: 'minecraft:blasting', output: 'minecraft:obsidian' });
@@ -143,6 +146,7 @@ onEvent('recipes', (event) => {
         'mekanism:enriching/enriched/tin',
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
+        'mekanism:processing/lapis_lazuli/from_ore',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',

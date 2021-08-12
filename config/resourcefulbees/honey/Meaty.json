@@ -1,0 +1,35 @@
+{
+    "name": "meaty",
+    "hunger": 4,
+    "honeyColor": "BROWN",
+    "saturation": 20,
+    "isRainbow": false,
+    "honeyBlockRecipe": true,
+    "generateHoneyBlock": true,
+    "effects": [
+        {
+            "effectID": "minecraft:saturation",
+            "duration": 2400,
+            "strength": 2,
+            "chance": 1
+        },
+        {
+            "effectID": "minecraft:resistance",
+            "duration": 1200,
+            "strength": 2,
+            "chance": 0.33
+        },
+        {
+            "effectID": "minecraft:regeneration",
+            "duration": 1200,
+            "strength": 2,
+            "chance": 0.33
+        },
+        {
+            "effectID": "minecraft:strength",
+            "duration": 1200,
+            "strength": 2,
+            "chance": 0.33
+        }
+    ]
+}

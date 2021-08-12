@@ -9,6 +9,10 @@
 	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
 	#If empty, all materials will show
 	showOnlyPartMaterial = ""
+	#If true, tables such as the part builder and tinker station will show all variants. If false they will show just the first entry in the tag, typically oak.
+	showAllTableVariants = true
+	#If true, anvils will show all metal variants. If false, only the first variant in the tag will show (typically tinkers bronze)
+	showAllAnvilVariants = true
 
 #Options related to recipes, limited options as a datapack allows most recipes to be modified
 [recipes]
@@ -29,6 +33,16 @@
 	#Number of nuggets produced when an ore block is melted in the foundry. 9 nuggets would give 1 ingot
 	#Range: 1 ~ 45
 	foundryNuggetsPerOre = 15
+
+	#Entity head drops when killed by a charged creeper
+	[recipes.heads]
+		blaze = true
+		enderman = true
+		stray = true
+		husk = true
+		drowned = true
+		spider = true
+		cave_spider = true
 
 #Everything to do with world generation
 [worldgen]
@@ -83,4 +97,10 @@
 			#How many chunks on average between islands
 			#Range: 10 ~ 500
 			separation = 25
+
+#Features to use in debugging gameplay and mechanics, generally should not be enabled in packs
+[debug]
+	#If true, forces integration materials to be enabled, even if the relevant metal is missing. Useful for testing material balance.
+	#Does not provide recipes for any of them, they will only be available to cheat in creative.
+	forceIntegrationMaterials = false
 

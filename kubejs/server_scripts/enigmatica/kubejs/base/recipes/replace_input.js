@@ -6,6 +6,7 @@ onEvent('recipes', (event) => {
             replaceWith: '#forge:chests/wooden'
         }
     ];
+    event.replaceInput({}, 'thermal:sawdust', 'emendatusenigmatica:wood_dust');
     event.replaceInput({}, 'architects_palette:withered_bone', '#forge:bones/wither');
     event.replaceInput({}, 'refinedstorage:silicon', '#forge:silicon');
     event.replaceInput({}, 'refinedstorage:crafter', '#refinedstorage:crafter');
@@ -140,7 +141,13 @@ onEvent('recipes', (event) => {
     event.replaceInput({ id: 'fluxnetworks:fluxconfigurator' }, 'minecraft:ender_eye', 'powah:ender_core');
 
     event.replaceInput({ id: 'fluxnetworks:fluxpoint' }, 'minecraft:redstone_block', 'powah:ender_gate_nitro');
-    event.replaceInput({ id: 'cookingforblockheads:crafting_book' }, 'minecraft:crafting_table', '#forge:workbench');
+    event.replaceInput(
+        {
+            not: [{ type: 'ars_nouveau:glyph_recipe' }]
+        },
+        'minecraft:crafting_table',
+        '#forge:workbenches'
+    );
 
     event.replaceInput({ id: 'minecraft:nether_bricks' }, '#forge:ingots/nether_brick', 'minecraft:nether_brick');
     event.replaceInput(
@@ -248,7 +255,12 @@ onEvent('recipes', (event) => {
             type: 'storage_blocks',
             replace: 'iron',
             replaceWith: 'lead',
-            items: ['travel_anchors:travel_anchor', 'thermal:machine_press', 'bloodmagic:alchemicalreactionchamber']
+            items: [
+                'travel_anchors:travel_anchor',
+                'thermal:machine_press',
+                'bloodmagic:alchemicalreactionchamber',
+                'integrateddynamics:squeezer'
+            ]
         },
         {
             type: 'storage_blocks',
@@ -289,7 +301,9 @@ onEvent('recipes', (event) => {
                 'ars_nouveau:crystallizer',
                 'ars_nouveau:volcanic_accumulator',
                 'pneumaticcraft:gun_ammo',
-                'ars_nouveau:marvelous_clay'
+                'ars_nouveau:marvelous_clay',
+                'ars_nouveau:ritual',
+                'ars_nouveau:sconce'
             ]
         },
         {
@@ -371,7 +385,8 @@ onEvent('recipes', (event) => {
                 'xnet:antenna',
                 'transport:fluid_loader',
                 'resourcefulbees:centrifuge_casing',
-                'engineersdecor:metal_bar'
+                'engineersdecor:metal_bar',
+                'integrateddynamics:drying_basin'
             ]
         },
         {
@@ -395,13 +410,19 @@ onEvent('recipes', (event) => {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'lead',
-            items: ['travel_anchors:travel_anchor', 'travel_anchors:travel_staff']
+            items: ['travel_anchors:travel_anchor', 'travel_anchors:travel_staff', 'integrateddynamics:squeezer']
         },
         {
             type: 'ingots',
             replace: 'iron',
             replaceWith: 'tin',
-            items: ['bloodmagic:soulsnare', 'modularrouters:bulk_item_filter']
+            items: ['bloodmagic:soulsnare', 'modularrouters:bulk_item_filter', 'chisel:auto_chisel']
+        },
+        {
+            type: 'ingots',
+            replace: 'iron',
+            replaceWith: 'osmium',
+            items: ['integrateddynamics:part_machine_reader', 'integratedcrafting:crafting/part_interface_crafting']
         },
         {
             type: 'nuggets',
@@ -432,7 +453,7 @@ onEvent('recipes', (event) => {
             type: 'nuggets',
             replace: 'gold',
             replaceWith: 'silver',
-            items: ['botania:spark']
+            items: ['botania:spark', 'chisel:hitech_chisel']
         }
     ];
 

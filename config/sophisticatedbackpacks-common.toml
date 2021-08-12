@@ -2,7 +2,7 @@
 #Common Settings
 [common]
 	#Disable / enable any items here (disables their recipes)
-	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "stonecutter_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "upgrade_base:true", "refill_upgrade:true", "advanced_compacting_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "advanced_tool_swapper_upgrade:true", "tool_swapper_upgrade:true", "netherite_backpack:true"]
+	enabledItems = ["void_upgrade:true", "compacting_upgrade:true", "advanced_restock_upgrade:true", "diamond_backpack:true", "smelting_upgrade:true", "filter_upgrade:true", "magnet_upgrade:true", "advanced_magnet_upgrade:true", "deposit_upgrade:true", "iron_backpack:true", "stonecutter_upgrade:true", "backpack:true", "feeding_upgrade:true", "advanced_pickup_upgrade:true", "jukebox_upgrade:true", "everlasting_upgrade:true", "advanced_filter_upgrade:true", "inception_upgrade:true", "crafting_upgrade:true", "auto_smelting_upgrade:true", "pickup_upgrade:true", "stack_upgrade_tier_4:true", "stack_upgrade_tier_2:true", "stack_upgrade_tier_3:true", "stack_upgrade_tier_1:true", "upgrade_base:true", "refill_upgrade:true", "advanced_compacting_upgrade:true", "gold_backpack:true", "advanced_deposit_upgrade:true", "advanced_void_upgrade:true", "restock_upgrade:true", "advanced_tool_swapper_upgrade:true", "tool_swapper_upgrade:true", "netherite_backpack:true", "tank_upgrade:true"]
 	#Turns on/off loot added to various vanilla chest loot tables
 	chestLootEnabled = true
 
@@ -263,4 +263,16 @@
 		#Number of tool filter slots displayed in a row
 		#Range: 1 ~ 6
 		slotsInRow = 4
+
+	#Tank Upgrade Settings
+	[common.tankUpgrade]
+		#Capacity in mB the tank upgrade will have per row of backpack slots
+		#Range: 500 ~ 20000
+		capacityPerSlotRow = 2000
+		#Ratio that gets applied (multiplies) to inventory stack multiplier before this is applied to tank capacity. Value lower than 1 makes stack multiplier affect the capacity less, higher makes it affect the capacity more. 0 turns off stack multiplier affecting tank capacity
+		#Range: 0.0 ~ 5.0
+		stackMultiplierRatio = 1.0
+		#Cooldown between fill/drain actions done on fluid containers in tank slots. Only fills/drains one bucket worth to/from container after this cooldown and then waits again.
+		#Range: 1 ~ 100
+		autoFillDrainContainerCooldown = 20
 

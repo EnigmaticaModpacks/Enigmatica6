@@ -36,6 +36,15 @@ onEvent('recipes', (event) => {
                 C: 'create:shaft'
             },
             id: 'create:crafting/kinetics/windmill_bearing'
+        },
+        {
+            output: 'create:white_sail',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'create:sail_frame',
+                B: '#thermal:rockwool'
+            },
+            id: 'create:crafting/kinetics/white_sail'
         }
     ];
 

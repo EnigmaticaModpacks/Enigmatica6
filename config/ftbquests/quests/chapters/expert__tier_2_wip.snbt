@@ -1053,5 +1053,40 @@
 				item: "occultism:storage_stabilizer_tier4"
 			}]
 		}
+		{
+			x: 0.0d
+			y: 9.5d
+			dependencies: ["6191E6C529A75F79"]
+			id: "2599ACB5A056BE45"
+			tasks: [{
+				id: "6CA19080160E1119"
+				type: "item"
+				item: {
+					id: "bloodmagic:ritualdiviner"
+					Count: 1b
+					tag: {
+						current_ritual: "green_grove"
+						direction: 5
+					}
+				}
+			}]
+		}
+		{
+			x: 2.0d
+			y: 12.0d
+			dependencies: ["61C9960AEED0B5AA"]
+			id: "2C6622C35D170DE7"
+			tasks: [{
+				id: "0F1F93977C676257"
+				type: "item"
+				item: {
+					id: "bloodmagic:ritualdivinerdusk"
+					Count: 1b
+					tag: {
+						current_ritual: "lava"
+					}
+				}
+			}]
+		}
 	]
 }

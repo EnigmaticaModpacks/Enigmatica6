@@ -59,7 +59,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'undergarden:music_disc_relict', count: 1, return_chance: 1.0 },
+                { item: 'undergarden:music_disc_relict', count: 1 },
                 { item: 'aquaculture:fish_bones', count: 1 },
                 { tag: 'forge:dusts/lapis', count: 2 },
                 { item: 'minecraft:fermented_spider_eye', count: 2 },
@@ -159,6 +159,20 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: 'atum:scarab'
+        },
+        {
+            inputs: [
+                { item: 'minecraft:bell', count: 1 },
+                { item: 'atum:ectoplasm', count: 3 },
+                { tag: 'forge:dusts/fluorite', count: 1 },
+                { tag: 'atum:relic_non_dirty', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'meetyourfight:haunted_bell', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            id: 'meetyourfight:haunted_bell'
         }
     ];
 

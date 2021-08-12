@@ -42,18 +42,44 @@ const validApiaryBlocks = [
     /botania:\w+grass$/,
 
     '#forge:treated_wood',
+    '#thermal:glass/hardened',
+    '#thermal:rockwool',
 
     /engineersdecor:dense\w+/,
-    'engineersdecor:clinker_brick_block',
-    'engineersdecor:clinker_brick_stained_block',
-    'engineersdecor:clinker_brick_sastor_corner_block',
     'engineersdecor:slag_brick_block',
-    'engineersdecor:rebar_concrete',
-    'engineersdecor:rebar_concrete_tile',
-    'engineersdecor:gas_concrete',
-    'engineersdecor:rebar_concrete',
     'engineersdecor:dark_shingle_roof_block',
-    'engineersdecor:old_industrial_wood_planks'
+    'engineersdecor:old_industrial_wood_planks',
+    'botania:livingwood',
+    'botania:livingwood_planks',
+    'botania:mossy_livingwood_planks',
+    'botania:framed_livingwood',
+    'botania:pattern_framed_livingwood',
+    'botania:glimmering_livingwood',
+    'botania:livingwood_fence_gate',
+    'botania:mossy_livingrock_bricks',
+    'botania:cracked_livingrock_bricks',
+    'botania:chiseled_livingrock_bricks',
+    'botania:livingrock_bricks',
+    'botania:livingrock',
+    /kitchen_floor/,
+    /elevatorid/,
+    /clinker/,
+    /azulejo/,
+    /dreamwood/,
+    /shimmerrock/,
+    /petal_block/,
+    /pavement/,
+    /sheetmetal/,
+    /concrete/,
+    /hempcrete/,
+    /blastbrick/,
+    /insulating_glass/,
+    /naturesaura:infused_(?!iron)\w+/,
+    /immersiveengineering:coil_/,
+    /immersiveengineering:\w+scaffolding/,
+    /chipped:(?!glassblower|\w+bench|\w+table|\w+carpet|\w+torch|\w+lantern)\w+/,
+    /chisel:(?!\w+chisel|\w+tool|carpet)\w+/,
+    /architects_palette:(?!\w+sapling|\w+button|\w+cage|\w+pressure|algal_blend|algal_brick|sunmetal_blend|sunmetal_brick|\w+totem|withered_bone|entwine_rod)\w+/
 ];
 
 const honeyVarieties = [
@@ -84,7 +110,9 @@ const honeyVarieties = [
     'resourcefulbees:water_honey',
     'resourcefulbees:wither_honey',
     'resourcefulbees:illuminating_honey',
-    'resourcefulbees:rocky_honey'
+    'resourcefulbees:rocky_honey',
+    'resourcefulbees:meaty_honey',
+    'resourcefulbees:rocket_honey'
 ];
 
 const combVariants = [
@@ -135,5 +163,27 @@ const combVariants = [
     'zinc',
     'zombie',
     'forest',
-    'rocky'
+    'rocky',
+    'industrious',
+    'bloody',
+    'elven',
+    'infused',
+    'mana',
+    'sky',
+    'starry',
+    'tainted',
+    'terrestrial',
+    'enderslime',
+    'ichor',
+    'skyslime',
+    'cobalt',
+    'soup',
+    'clockwork',
+    'spelling',
+    'wasabee',
+    'basalz',
+    'blitz',
+    'blizz',
+    'direbee20',
+    'generikbee'
 ];

@@ -1,20 +1,7 @@
 onEvent('recipes', (event) => {
-    const data = {
-        recipes: [
-            {
-                pattern: ['  L  ', 'RRQRR', ' CCC '],
-                key: {
-                    L: '#forge:plates/lapis',
-                    R: '#forge:dusts/redstone',
-                    Q: 'create:polished_rose_quartz',
-                    C: '#forge:nuggets/gold'
-                },
-                result: 'create:integrated_circuit'
-            }
-        ]
-    };
+    const recipes = [];
 
-    data.recipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.recipes.create.mechanical_crafting(recipe.result, recipe.pattern, recipe.key);
     });
 });

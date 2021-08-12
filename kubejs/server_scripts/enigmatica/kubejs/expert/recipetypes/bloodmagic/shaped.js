@@ -191,6 +191,26 @@ onEvent('recipes', (event) => {
                 E: 'ars_nouveau:glyph_delay'
             },
             id: 'bloodmagic:blood_rune_charging'
+        },
+        {
+            output: 'bloodmagic:ritualstone',
+            pattern: ['CBC', 'BAB', 'CBC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 2 },
+                B: 'bloodmagic:reinforcedslate',
+                C: 'architects_palette:abyssaline'
+            },
+            id: 'bloodmagic:ritual_stone_blank'
+        },
+        {
+            output: 'bloodmagic:masterritualstone',
+            pattern: ['CBC', 'BAB', 'CBC'],
+            key: {
+                A: { type: 'bloodmagic:bloodorb', orb_tier: 3 },
+                B: 'bloodmagic:ritualstone',
+                C: 'architects_palette:abyssaline'
+            },
+            id: 'bloodmagic:ritual_stone_master'
         }
     ];
 
