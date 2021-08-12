@@ -8,6 +8,7 @@ const generatableCobblestone = [
     'byg:red_rock',
     'byg:scoria_cobblestone',
     'byg:soapstone',
+    'byg:travertine',
     'create:andesite_cobblestone',
     'create:diorite_cobblestone',
     'create:granite_cobblestone',
