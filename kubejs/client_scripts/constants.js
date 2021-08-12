@@ -111,6 +111,15 @@ var itemsToHide = [
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
 
+    'byg:budding_ametrine_ore',
+    'byg:anthracite_ore',
+    'byg:lignite_ore',
+    'byg:cryptic_redstone_ore',
+    'byg:blue_nether_gold_ore',
+    'byg:blue_nether_quartz_ore',
+    'byg:brimstone_nether_gold_ore',
+    'byg:brimstone_nether_quartz_ore',
+
     'create:powdered_obsidian',
     'create:honey_bucket',
     'create:copper_ore',
@@ -343,7 +352,7 @@ const fluidsToHide = [
     'emendatusenigmatica:molten_froststeel',
     'emendatusenigmatica:molten_utherium',
     'emendatusenigmatica:molten_regalium',
-    'emendatusenigmatica:molten_iesnium',
+    'emendatusenigmatica:molten_iesnium'
 ];
 
 /*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
