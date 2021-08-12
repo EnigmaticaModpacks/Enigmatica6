@@ -213,8 +213,8 @@
 		{
 			title: "I'm Crushing For You So Hard Right Now"
 			icon: "minecraft:iron_ore"
-			x: 8.5d
-			y: 2.5d
+			x: 10.5d
+			y: 4.5d
 			shape: "hexagon"
 			subtitle: "Your First Spirit Friend!!!"
 			description: [
@@ -228,10 +228,7 @@
 				""
 				"Note: You must have a golden sacrificial bowl to continue."
 			]
-			dependencies: [
-				"0000000000000D9A"
-				"0000000000000DD9"
-			]
+			dependencies: ["0000000000000DD8"]
 			id: "0000000000000CF7"
 			tasks: [{
 				id: "0000000000000CF8"
@@ -1241,8 +1238,8 @@
 			}]
 		}
 		{
-			x: 8.0d
-			y: 1.0d
+			x: 9.5d
+			y: 2.5d
 			description: ["Sacrificial Bowls are used to place sacrificial items on to preform your rituals. They can be placed anywhere touching the pentacle in whatever quantity you need."]
 			dependencies: ["0000000000000D9A"]
 			id: "0000000000000DD6"
@@ -1258,8 +1255,8 @@
 			}]
 		}
 		{
-			x: 7.5d
-			y: 0.0d
+			x: 10.0d
+			y: 3.5d
 			description: ["This is a special Sacrificial Bowl that normally lies in the middle of your pentacle. It is used to activate the ritual."]
 			dependencies: ["0000000000000DD6"]
 			id: "0000000000000DD8"
@@ -1525,8 +1522,8 @@
 		}
 		{
 			icon: "occultism:otherworld_sapling"
-			x: 7.5d
-			y: 3.5d
+			x: 10.5d
+			y: 5.5d
 			shape: "hexagon"
 			description: [
 				"The Otherworld Sapling Trader will take the Unstable Otherworld Saplings you get from Groves or the Market and give you stable saplings in return."
@@ -1560,8 +1557,8 @@
 					Damage: 0
 				}
 			}
-			x: 8.5d
-			y: 3.5d
+			x: 9.5d
+			y: 4.5d
 			shape: "hexagon"
 			subtitle: "All your trees are belong to me!!"
 			description: [
@@ -1604,8 +1601,8 @@
 		{
 			title: "Summon Foliot Transporting Spirit"
 			icon: "minecraft:chest_minecart"
-			x: 9.5d
-			y: 3.5d
+			x: 11.5d
+			y: 5.0d
 			shape: "hexagon"
 			subtitle: "Oompa-Loompa Doompety-Doo"
 			description: [
@@ -1882,8 +1879,8 @@
 		}
 		{
 			icon: "cfm:oak_kitchen_sink_light"
-			x: 9.5d
-			y: 2.5d
+			x: 8.0d
+			y: 1.0d
 			shape: "hexagon"
 			subtitle: "My job. Toilets 'n boilers, boilers 'n toilets. Plus that one boilin' toilet. Fire me if'n you dare."
 			description: [
