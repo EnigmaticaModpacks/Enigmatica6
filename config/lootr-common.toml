@@ -4,4 +4,20 @@ randomise_seed = true
 convert_mineshafts = true
 #catches loot chest creation that this mod cannot convert, reporting the loot table, location and mod
 report_tables = false
+#whether or not quark chests used in world generation for loot purposes should be replaced with Lootr chests
+convert_quark = true
+#whether or not the entire forge:chests/wooden tag should be added to the conversion list for structures (if they are backed by LockableLootTileEntity)
+convert_wooden_chests = true
+#whether or not the entire forge:chests/trapped tag should be added to the conversion list for structures (if they are backed by LockableLootTileEntity
+convert_trapped_chests = true
+#a list of additional chests that should be converted [in the format of modid:name, must be a tile entity instance of LockableLootTileEntity]
+additional_chests = []
+#a list of additional trapped chests that should be converted [in the format of modid:name, must be a tile entity instanceof LockableLootTileEntity]
+additional_trapped_chests = []
+#list of dimensions (to the exclusion of all others) that loot chest should be replaced in [default: blank, allowing all dimensions, e.g., minecraft:overworld]
+dimension_whitelist = []
+#list of dimensions that loot chests should not be replaced in [default: blank, allowing all dimensions, format e.g., minecraft:overworld]
+dimension_blacklist = []
+#list of loot tables which shouldn't be converted [in the format of modid:loot_table]
+loot_table_blacklist = []
 
