@@ -44,6 +44,14 @@ onEvent('recipes', (event) => {
                     item: 'powah:spirited_crystal_block',
                     count: 1
                 }
+            },
+            {
+                ingredients: [{ item: 'minecraft:chorus_fruit' }],
+                energy: '1000000000',
+                result: {
+                    item: 'mekanism:pellet_antimatter',
+                    count: 1
+                }
             }
         ]
     };
