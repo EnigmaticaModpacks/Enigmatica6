@@ -111,6 +111,15 @@ var itemsToHide = [
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
 
+    'byg:budding_ametrine_ore',
+    'byg:anthracite_ore',
+    'byg:lignite_ore',
+    'byg:cryptic_redstone_ore',
+    'byg:blue_nether_gold_ore',
+    'byg:blue_nether_quartz_ore',
+    'byg:brimstone_nether_gold_ore',
+    'byg:brimstone_nether_quartz_ore',
+
     'create:powdered_obsidian',
     'create:honey_bucket',
     'create:copper_ore',
@@ -160,6 +169,11 @@ var itemsToHide = [
     'emendatusenigmatica:molten_brass_bucket',
     'emendatusenigmatica:molten_aluminum_bucket',
     'emendatusenigmatica:molten_ancient_debris_bucket',
+    'emendatusenigmatica:molten_cloggrum_bucket',
+    'emendatusenigmatica:molten_froststeel_bucket',
+    'emendatusenigmatica:molten_utherium_bucket',
+    'emendatusenigmatica:molten_regalium_bucket',
+    'emendatusenigmatica:molten_iesnium_bucket',
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
@@ -333,7 +347,12 @@ const fluidsToHide = [
     'emendatusenigmatica:molten_bronze',
     'emendatusenigmatica:molten_brass',
     'emendatusenigmatica:molten_aluminum',
-    'emendatusenigmatica:molten_ancient_debris'
+    'emendatusenigmatica:molten_ancient_debris',
+    'emendatusenigmatica:molten_cloggrum',
+    'emendatusenigmatica:molten_froststeel',
+    'emendatusenigmatica:molten_utherium',
+    'emendatusenigmatica:molten_regalium',
+    'emendatusenigmatica:molten_iesnium'
 ];
 
 /*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
@@ -387,6 +406,7 @@ var regexHide = [
     /emendatusenigmatica:\w+_slate_ore/,
     /emendatusenigmatica:\w+_netherrack_ore/,
     /emendatusenigmatica:\w+_blackstone_ore/,
+    /emendatusenigmatica:\w+_deepslate_ore/,
     /emendatusenigmatica:\w+_end_stone_ore/,
     /emendatusenigmatica:\w+_mossy_stone_ore/,
     /emendatusenigmatica:\w+_granite_ore/,
@@ -431,7 +451,7 @@ var regexHide = [
     /emendatusenigmatica:\w+certus/,
     /emendatusenigmatica:\w+fluix/,
     /powah:\w+_starter/,
-    /rftoolsbase:dimensionalshard/,
+    /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
     /upgrade_aquatic:\w+_jelly_torch/
 ];
@@ -607,8 +627,3 @@ const materialsToUnify = [
     'coal_coke',
     'starmetal'
 ];
-
-const packMode = global.packmode;
-
-const isNormalMode = packMode == 'normal';
-const isExpertMode = packMode == 'expert';

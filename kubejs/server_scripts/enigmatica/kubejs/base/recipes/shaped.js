@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-    // Please add new recipes to this object instead of recipes
     const newRecipes = [
         {
             output: 'botanypots:botany_pot',

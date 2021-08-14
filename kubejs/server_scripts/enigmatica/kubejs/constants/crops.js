@@ -626,12 +626,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'environmental:rice',
-                render: 'environmental:tall_rice',
-                plant: 'environmental:rice',
-                substrate: 'water'
-            },
-            {
                 seed: 'sushigocrafting:rice_seeds',
                 render: 'sushigocrafting:rice_crop',
                 plant: 'sushigocrafting:rice',
@@ -1974,6 +1968,12 @@ const cropRegistry = [
                 seed: 'upgrade_aquatic:beachgrass',
                 render: 'upgrade_aquatic:beachgrass',
                 plant: 'upgrade_aquatic:beachgrass',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'projectvibrantjourneys:beach_grass',
+                render: 'projectvibrantjourneys:beach_grass',
+                plant: 'projectvibrantjourneys:beach_grass',
                 substrate: 'dirt'
             },
             {

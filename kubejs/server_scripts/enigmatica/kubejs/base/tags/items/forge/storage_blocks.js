@@ -24,6 +24,10 @@ onEvent('item.tags', (event) => {
         'betterendforge:thallasium_block',
         'powah:energized_steel_block',
         'mythicbotany:alfsteel_block',
+        'powah:blazing_crystal_block',
+        'powah:niotic_crystal_block',
+        'powah:spirited_crystal_block',
+        'powah:nitro_crystal_block',
         'architects_palette:ender_pearl_block'
     ]);
 
@@ -44,4 +48,9 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/tinkers_bronze', ['tconstruct:tinkers_bronze_block']);
     event.add(storageBlocks + '/energized_steel', ['powah:energized_steel_block']);
     event.add(storageBlocks + '/alfsteel', ['mythicbotany:alfsteel_block']);
+
+    event.add(storageBlocks + '/blazing', ['powah:blazing_crystal_block']);
+    event.add(storageBlocks + '/niotic', ['powah:niotic_crystal_block']);
+    event.add(storageBlocks + '/spirited', ['powah:spirited_crystal_block']);
+    event.add(storageBlocks + '/nitro', ['powah:nitro_crystal_block']);
 });
