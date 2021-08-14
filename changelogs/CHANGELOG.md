@@ -2,10 +2,20 @@
 
 _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.10.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.10.md)_
 
+**New Mods**
+
+- [Clickable advancements](https://www.curseforge.com/minecraft/mc-mods/clickable-advancements)
+- [MmmMmmMmmMmm](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
+- [NBT Ingredient Predicate](https://www.curseforge.com/minecraft/mc-mods/nbt-ingredient-predicate)
+
 **Changes/Improvements**
 
 -   Un-silenced thunder and the Wandering Trader
 -   RefinedStorage: Increased Controller Energy Buffer size from 32000 to 250000 (This change applies itself by resetting the RefinedStorage server config to the pack default)
+
+**Bug Fixes**
+
+- 
 
 ### Enigmatica 6 v0.5.9
 
