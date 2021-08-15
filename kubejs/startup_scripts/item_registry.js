@@ -19,7 +19,9 @@ onEvent('item.registry', (event) => {
         'coarse_lapis_lazuli_compound',
         'smoldering_lapis_lazuli_compound',
         'cutting_essence',
-        'rftools_frame_parts'
+        'rftools_machine_frame_parts',
+        'unassembled_rftools_machine_frame_top',
+        'unassembled_rftools_machine_frame'
     ];
 
     let metals = [
