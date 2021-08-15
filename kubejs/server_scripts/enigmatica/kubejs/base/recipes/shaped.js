@@ -1262,15 +1262,6 @@ onEvent('recipes', (event) => {
             B: '#forge:nuggets/tin',
             C: '#bloodmagic:crystals/demon'
         }),
-        shapedRecipe(Item.of('emendatusenigmatica:steel_ingot', 2), ['AA'], {
-            A: 'immersiveengineering:ingot_steel'
-        }),
-        shapedRecipe(Item.of('immersiveengineering:ingot_steel', 2), ['AA'], {
-            A: 'mekanism:ingot_steel'
-        }),
-        shapedRecipe(Item.of('mekanism:ingot_steel', 2), ['AA'], {
-            A: 'emendatusenigmatica:steel_ingot'
-        }),
         shapedRecipe('tetra:combustion_chamber', ['CBC', 'BAB', 'CBC'], {
             A: 'mekanism:superheating_element',
             B: 'pneumaticcraft:heat_sink',
