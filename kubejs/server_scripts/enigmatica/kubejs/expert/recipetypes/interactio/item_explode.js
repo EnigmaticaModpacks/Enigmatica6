@@ -28,8 +28,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:gems/coal_coke', count: 2 },
-                { tag: 'forge:ingots/iron', count: 4 },
+                { tag: 'forge:ingots/steel', count: 2 },
+                { tag: 'forge:tar', count: 2 },
                 { tag: 'forge:obsidian', count: 1 }
             ],
             output: {
@@ -41,8 +41,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:storage_blocks/coal_coke', count: 2 },
-                { tag: 'forge:storage_blocks/iron', count: 4 },
+                { tag: 'forge:storage_blocks/steel', count: 2 },
+                { tag: 'forge:tar', count: 18 },
                 { tag: 'forge:obsidian', count: 9 }
             ],
             output: {
