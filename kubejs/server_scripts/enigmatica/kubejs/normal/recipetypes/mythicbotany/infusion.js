@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
             mana: 2000000,
             fromColor: 255,
             toColor: 65280,
-            id: 'resourcefulbees:terrestrial_bee_spawn_egg_infusion'
+            id: 'mythicbotany:terrestrial_bee_spawn_egg_infusion'
         },
         {
             inputs: [
@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
                 { item: 'botania:mana_diamond' }
             ],
             output: {
-                item: 'botania:terrasteel_ingot'
+                item: 'mythicbotany:terrasteel_ingot_honeycomb'
             },
             mana: 300000,
             fromColor: 255,

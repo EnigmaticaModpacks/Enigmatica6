@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
             mana: 2000000,
             fromColor: parseInt('0xFFFFFF'),
             toColor: parseInt('0x00FF00'),
-            id: 'resourcefulbees:terrestrial_bee_spawn_egg_infusion'
+            id: 'mythicbotany:terrestrial_bee_spawn_egg_infusion'
         },
         {
             inputs: [
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:ingots/iesnium' },
                 { item: 'botania:quartz_mana' }
             ],
-            output: { item: 'botania:terrasteel_ingot' },
+            output: { item: 'mythicbotany:terrasteel_ingot_honeycomb' },
             mana: 300000,
             fromColor: parseInt('0xFFFFFF'),
             toColor: parseInt('0x00FF00')

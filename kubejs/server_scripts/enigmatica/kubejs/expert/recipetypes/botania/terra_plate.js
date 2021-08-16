@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:terrestrial_bee", BeeType: "terrestrial", Color: "#5bf23d"}).toJson(),
             mana: 2000000,
-            id: 'resourcefulbees:terrestrial_bee_spawn_egg_plate'
+            id: 'botania:terra_plate/terrestrial_bee_plate'
         },
         {
             inputs: [
@@ -24,7 +24,8 @@ onEvent('recipes', (event) => {
                 { item: 'botania:quartz_mana' }
             ],
             output: { item: 'botania:terrasteel_ingot' },
-            mana: 300000
+            mana: 300000,
+            id: 'botania:terra_plate/terrasteel_ingot_honeycomb'
         },
         {
             inputs: [
