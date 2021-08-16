@@ -4,11 +4,12 @@ onEvent('recipes', (event) => {
     }
     const recipes = [
         {
-            inputs: [{ item: 'resourcefulbees:mana_bee_spawn_egg' }],
+            inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee", BeeType: "mana", Color: "#4c97ff"}).weakNBT().toJson()],
             output: {
-                item: 'resourcefulbees:terrestrial_bee_spawn_egg'
+                item: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:terrastrial_bee", BeeType: "terrastrial", Color: "#5bf23d"}).toJson()
             },
-            mana: 1000000
+            mana: 1000000,
+            id: 'resourcefulbees:terrestrial_bee_spawn_egg_plate'
         },
         {
             inputs: [

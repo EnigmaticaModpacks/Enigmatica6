@@ -51,7 +51,11 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'resourcefulbees:iron_bee_spawn_egg',
+                    //'resourcefulbees:iron_bee_spawn_egg',
+                    {
+                        hasNBT: true,
+                        item: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee", BeeType: "iron", Color: "#ffcc99"}).weakNBT().toJson()
+                    },
                     'resourcefulbees:iron_honeycomb',
                     'naturesaura:infused_iron_block'
                 ],
@@ -61,7 +65,11 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'resourcefulbees:gold_bee_spawn_egg',
+                    //'resourcefulbees:gold_bee_spawn_egg',
+                    {
+                        hasNBT: true,
+                        item: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:gold_bee", BeeType: "gold", Color: "#ffdc00"}).weakNBT().toJson()
+                    },
                     'resourcefulbees:gold_honeycomb',
                     'naturesaura:tainted_gold_block'
                 ],
@@ -71,7 +79,11 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'resourcefulbees:gold_bee_spawn_egg',
+                    //'resourcefulbees:gold_bee_spawn_egg',
+                    {
+                        hasNBT: true,
+                        item: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:gold_bee", BeeType: "gold", Color: "#ffdc00"}).weakNBT().toJson()
+                    },
                     'resourcefulbees:tainted_honeycomb',
                     'naturesaura:sky_ingot'
                 ],
@@ -106,7 +118,12 @@ onEvent('recipes', (event) => {
         let ingredients = [Ingredient.of('naturesaura:birth_spirit').toJson()];
 
         recipe.inputs.forEach((input) => {
-            ingredients.push(Ingredient.of(input).toJson());
+            if (input.hasNBT){
+                ingredients.push(input.item)
+            }
+            else {
+                ingredients.push(Ingredient.of(input).toJson())
+            };
         });
 
         const re = event.custom({
