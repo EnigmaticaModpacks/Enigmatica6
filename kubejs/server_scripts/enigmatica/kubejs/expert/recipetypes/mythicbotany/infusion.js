@@ -5,15 +5,16 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                { item: 'resourcefulbees:mana_bee_spawn_egg' },
+                Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee", BeeType: "mana", Color: "#4c97ff"}).weakNBT().toJson(),
                 { item: 'botania:mana_pearl' },
                 { item: 'botania:mana_diamond' },
                 { item: 'botania:quartz_mana' }
             ],
-            output: { item: 'resourcefulbees:terrestrial_bee_spawn_egg' },
+            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:terrestrial_bee", BeeType: "terrestrial", Color: "#5bf23d"}).toJson(),
             mana: 2000000,
             fromColor: parseInt('0xFFFFFF'),
-            toColor: parseInt('0x00FF00')
+            toColor: parseInt('0x00FF00'),
+            id: 'mythicbotany:terrestrial_bee_spawn_egg_infusion'
         },
         {
             inputs: [
@@ -27,7 +28,8 @@ onEvent('recipes', (event) => {
             output: { item: 'botania:terrasteel_ingot' },
             mana: 300000,
             fromColor: parseInt('0xFFFFFF'),
-            toColor: parseInt('0x00FF00')
+            toColor: parseInt('0x00FF00'),
+            id: 'mythicbotany:mythicbotany_infusion/terrasteel_ingot_honeycomb'
         },
         {
             inputs: [
