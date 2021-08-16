@@ -20,11 +20,12 @@ onEvent('recipes', (event) => {
                 { item: 'botania:mana_diamond' }
             ],
             output: {
-                item: 'mythicbotany:terrasteel_ingot_honeycomb'
+                item: 'botania:terrasteel_ingot'
             },
             mana: 300000,
             fromColor: 255,
-            toColor: 65280
+            toColor: 65280,
+            id: 'mythicbotany:mythicbotany_infusion/terrasteel_ingot_honeycomb'
         },
         {
             inputs: [

@@ -25,10 +25,11 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:ingots/iesnium' },
                 { item: 'botania:quartz_mana' }
             ],
-            output: { item: 'mythicbotany:terrasteel_ingot_honeycomb' },
+            output: { item: 'botania:terrasteel_ingot' },
             mana: 300000,
             fromColor: parseInt('0xFFFFFF'),
-            toColor: parseInt('0x00FF00')
+            toColor: parseInt('0x00FF00'),
+            id: 'mythicbotany:mythicbotany_infusion/terrasteel_ingot_honeycomb'
         },
         {
             inputs: [
