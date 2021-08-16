@@ -148,7 +148,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"contentcreatorintegration/default/constants.json",
 	"storagedrawers-client.toml",
 	"blue_skies-client.toml",
-	"dummmmmmy-client.toml"
+	"dummmmmmy-client.toml",
+	"smoothboot.json"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine")
