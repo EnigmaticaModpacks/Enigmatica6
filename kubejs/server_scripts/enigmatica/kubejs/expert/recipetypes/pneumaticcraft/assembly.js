@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             input: { item: 'thermal:machine_frame', count: 2 },
-            output: { item: 'kubejs:rftools_frame_parts', count: 1 },
+            output: { item: 'kubejs:rftools_machine_frame_parts', count: 1 },
             program: 'drill'
         },
         {
