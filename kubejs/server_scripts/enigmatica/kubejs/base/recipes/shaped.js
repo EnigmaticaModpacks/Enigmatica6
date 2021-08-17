@@ -1284,7 +1284,7 @@ onEvent('recipes', (event) => {
             F: 'alexsmobs:frontier_cap'
         }),
         shapedRecipe(
-            Item.of('morphtool:tool').nbt({
+            Item.of('morphtool:tool', {
                 'morphtool:data': {
                     blockcarpentry: { id: 'blockcarpentry:texture_wrench', Count: 1 },
                     powah: { id: 'powah:wrench', Count: 1 },
