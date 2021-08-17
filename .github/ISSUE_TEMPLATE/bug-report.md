@@ -1,16 +1,91 @@
----
 name: Bug Report
-about: Create a report to help us improve
-labels: Bug
----
+description: Report an issue to help us improve
+labels: [Bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before submitting an issue, please search the following links to make sure your issue is not covered:
+        
+        * **[Wiki](/NillerMedDild/Enigmatica6/wiki)**:
+        * **[Issues](/NillerMedDild/Enigmatica6/issues?q=is%3Aissue)**
+        
+        Please fill in the following template to report your issue.
+        
+  - type: markdown
+    attributes:
+      value: "## Versions"
+  
+  - type: input
+    id: modpack-version
+    attributes:
+      label: "Modpack Version"
+      description: "'Latest' is not a valid answer, please write an exact version number"
+    validations:
+      required: true
+  
+  - type: markdown
+    attributes:
+      value: "## Issue Description"
 
-**Modpack version**
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe your issue
+    validations:
+      required: true
+  
+  - type: input
+    id: crash-report
+    attributes:
+      label: Crash Report
+      description: Paste a link to the crash report, if present
+    validations:
+      required: false
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+  - type: input
+    id: latest-log
+    attributes:
+      label: Latest Log
+      description: Paste a link to your latest.log, if needed. We often ask for this, so adding it upfront can save some time.
+    validations:
+      required: false
+            
+  - type: dropdown
+    id: modified-modpack
+    attributes:
+      label: "Have you modified the modpack?"
+      description: "Have you added mods, changed configs, changed scripts or similar?"
+      options:
+        - 'No'
+        - 'Yes'
+    validations:
+      required: true
 
-**Logs**
-Input pastebin link to crash-report or `latest.log`, if applicable.
+  - type: textarea
+    id: user-modifications
+    attributes:
+      label: User Modifications
+      description: If you answered "Yes" above, please briefly explain what you have modified. Added mods are particularly important.
+    validations:
+      required: false
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: "Did the issue happen in singleplayer or on a server?"
+      description: ""
+      options:
+        - 'Singleplayer'
+        - 'Server'
+        - 'Both'
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checkboxes
+    attributes:
+      description: "Please review the following:"
+      options:
+        - label: "Confirm you have checked the wiki and issue tracker for your issue"
+          required: true
