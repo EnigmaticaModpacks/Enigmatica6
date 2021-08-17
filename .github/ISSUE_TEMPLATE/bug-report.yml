@@ -7,14 +7,10 @@ body:
       value: |
         Before submitting an issue, please search the following links to make sure your issue is not covered:
         
-        * **[Wiki](/NillerMedDild/Enigmatica6/wiki)**:
+        * **[Wiki](/NillerMedDild/Enigmatica6/wiki)**
         * **[Issues](/NillerMedDild/Enigmatica6/issues?q=is%3Aissue)**
         
         Please fill in the following template to report your issue.
-        
-  - type: markdown
-    attributes:
-      value: "## Versions"
   
   - type: input
     id: modpack-version
@@ -23,10 +19,6 @@ body:
       description: "'Latest' is not a valid answer, please write an exact version number"
     validations:
       required: true
-  
-  - type: markdown
-    attributes:
-      value: "## Issue Description"
 
   - type: textarea
     id: description
@@ -82,9 +74,8 @@ body:
       required: true
 
   - type: checkboxes
-    id: checkboxes
+    id: Confirm
     attributes:
-      description: "Please review the following:"
       options:
         - label: "Confirm you have checked the wiki and issue tracker for your issue"
           required: true
