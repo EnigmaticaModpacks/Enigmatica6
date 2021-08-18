@@ -6,8 +6,8 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:gems/coal_coke', count: 2 },
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/iron', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:ingots/steel', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:tar', count: 2 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:obsidian', count: 1 }
             ],
             pressure: 2.0,
@@ -16,8 +16,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/coal_coke', count: 2 },
-                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/iron', count: 4 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:storage_blocks/steel', count: 2 },
+                { type: 'pneumaticcraft:stacked_item', tag: 'forge:tar', count: 18 },
                 { type: 'pneumaticcraft:stacked_item', tag: 'forge:obsidian', count: 9 }
             ],
             pressure: 2.0,
@@ -38,20 +38,13 @@ onEvent('recipes', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        recipe.id
-            ? event
-                  .custom({
-                      type: 'pneumaticcraft:pressure_chamber',
-                      inputs: recipe.inputs,
-                      pressure: recipe.pressure,
-                      results: recipe.results
-                  })
-                  .id(recipe.id)
-            : event.custom({
-                  type: 'pneumaticcraft:pressure_chamber',
-                  inputs: recipe.inputs,
-                  pressure: recipe.pressure,
-                  results: recipe.results
-              });
+        event
+            .custom({
+                type: 'pneumaticcraft:pressure_chamber',
+                inputs: recipe.inputs,
+                pressure: recipe.pressure,
+                results: recipe.results
+            })
+            .id(recipe.id);
     });
 });

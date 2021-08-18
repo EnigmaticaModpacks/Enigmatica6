@@ -26,7 +26,8 @@ onEvent('recipes', (event) => {
         'pedestals:upgrades/recycler',
         'pedestals:upgrades/rffuelgen',
         'pedestals:upgrades/rfexpgen',
-        'darkutils:crafting/rune_damage_player'
+        'darkutils:crafting/rune_damage_player',
+        /emendatusenigmatica:alloy_dust/
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];

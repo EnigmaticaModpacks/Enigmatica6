@@ -185,6 +185,8 @@ function Push-ClientFiles {
         $clientFileReturnId = $response.id
 
         if (-not $response.id) {
+            Write-Host "Failed to upload client files: $response" -ForegroundColor Red
+            pause
             throw "Failed to upload client files: $response"
         }
         else {

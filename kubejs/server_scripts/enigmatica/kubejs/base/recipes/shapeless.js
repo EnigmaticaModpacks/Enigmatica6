@@ -112,7 +112,7 @@ onEvent('recipes', (event) => {
             ]
         },
         {
-            output: Item.of('akashictome:tome').nbt({
+            output: Item.of('akashictome:tome', {
                 'akashictome:data': {
                     industrialforegoing: {
                         id: 'patchouli:guide_book',

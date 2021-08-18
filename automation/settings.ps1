@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.10"
+$MODPACK_VERSION = "0.5.11"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.9"
+$LAST_MODPACK_VERSION = "0.5.10"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -148,7 +148,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"contentcreatorintegration/default/constants.json",
 	"storagedrawers-client.toml",
 	"blue_skies-client.toml",
-	"dummmmmmy-client.toml"
+	"dummmmmmy-client.toml",
+	"smoothboot.json"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine")

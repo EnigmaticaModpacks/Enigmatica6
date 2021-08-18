@@ -66,16 +66,15 @@
 //  https://github.com/TelepathicGrunt/RepurposedStructures/blob/27c8c23d5b6ee1ba1f894df874d62e5982d39fd5/src/main/java/com/telepathicgrunt/repurposedstructures/modinit/RSConfiguredFeatures.java#L251-L273
   "allowedDimensions": {
     "repurposed_structures:bastion_underground": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros",
-    "repurposed_structures:ruins_land_warm": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros",
+    "repurposed_structures:ruins_land_warm": "dystopia:dystopia, elvenation:elvenia_dimension, futurepack:tyros, lotr:middle_earth",
     "repurposed_structures:igloo_grassy": "elvenation:elvenia_dimension",
     "repurposed_structures:mineshaft_jungle": "futurepack:tyros",
     "repurposed_structures:pyramid_jungle": "futurepack:tyros",
-    "repurposed_structures:dungeon_jungle": "futurepack:tyros",
     "repurposed_structures:well_mossy_stone": "futurepack:tyros, lotr:middle_earth",
     "repurposed_structures:pyramid_snowy": "lotr:middle_earth",
-    "repurposed_structures:warm_land_ruins": "lotr:middle_earth",
     "repurposed_structures:well_forest": "lotr:middle_earth",
-    "repurposed_structures:well_snow": "lotr:middle_earth"
+    "repurposed_structures:well_snow": "lotr:middle_earth",
+    "repurposed_structures:dungeons_jungle": "futurepack:tyros"
   },
   //
 
@@ -149,5 +148,5 @@
 
 
 // for internal use only. Do not change this.
-  "configVersion": 3
+  "configVersion": 4
 }

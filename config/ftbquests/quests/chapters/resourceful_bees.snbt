@@ -61,7 +61,7 @@
 			description: [
 				"Tier 2 Bees are obtained through bee to bee breeding, triggered by giving the bees the needed items."
 				""
-				"Please refer to JEI for more information on specific bees."
+				"Please refer to the Beepedia for more information on specific bees."
 			]
 			dependencies: ["0000000000000714"]
 			id: "0000000000000712"
@@ -84,7 +84,7 @@
 			description: [
 				"Tier 1 Bees spawn naturally in the world, and are the “building bees” for all other kinds of bees."
 				""
-				"Hint: JEI displays whether a bee spawns naturally or not."
+				"Hint: The Beepedia displays whether a bee spawns naturally or not, and in which biomes."
 			]
 			dependencies: ["0000000000000A94"]
 			id: "0000000000000714"
@@ -107,7 +107,7 @@
 			description: [
 				"While Bee Breeding is as simple as providing the necessary breeding items to the Bees, to become a seasoned apiarist you should learn how to encourage mutations in your Bees at a genetic level."
 				""
-				"Please refer to JEI for more information on your Bees and their abilities."
+				"Please refer to the Beepedia for more information on your Bees and their abilities."
 			]
 			dependencies: ["0000000000000A94"]
 			id: "0000000000000716"
@@ -127,11 +127,7 @@
 			x: -8.0d
 			y: -17.0d
 			subtitle: "A force to Bee reckoned with"
-			description: [
-				"Tier 3 Bees are obtained via entity or item mutation. These are generally created by mutating one bee to another, or a block of material to a spawn egg. Check the Beepedia and JEI for details."
-				""
-				"Please refer to JEI for more information on specific bees."
-			]
+			description: ["Tier 3 Bees are obtained via entity or item mutation. These are generally created by mutating one bee to another, or a block of material to a spawn egg. Check the Beepedia for details."]
 			dependencies: ["0000000000000712"]
 			id: "0000000000000718"
 			tasks: [{
@@ -231,6 +227,8 @@
 				"Resourceful Bees is a new take on Resource Generation utilizing one of the latest entities introduced to Minecraft: Our Buzzy Little Friends, the Bees."
 				""
 				"This questline should help explain some of the basics of proper bee keeping, mutations, resource extraction, and tiers of bees and their hives."
+				""
+				"The Beepedia you receive from this quest is your guide to Resourceful Bees - it is generally your best source for information on bee breeding, mutations, traits, and more."
 				""
 				"~Ridanisaurus"
 			]

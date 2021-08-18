@@ -20,7 +20,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsutility:screen_controller',
             pattern: ['ABA', 'DCD', 'ADA'],
             key: {
-                A: 'minecraft:redstone',
+                A: '#forge:dusts/redstone',
                 B: 'minecraft:ender_pearl',
                 C: 'rftoolsbase:machine_base',
                 D: '#forge:glass'
@@ -42,7 +42,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'BCB', 'DDD'],
             key: {
                 A: '#forge:ingots/iron_aluminum',
-                B: 'minecraft:redstone',
+                B: '#forge:dusts/redstone',
                 C: 'rftoolsbase:machine_base',
                 D: 'minecraft:ender_pearl'
             },
@@ -53,7 +53,7 @@ onEvent('recipes', (event) => {
             pattern: ['DDD', 'BCB', 'AAA'],
             key: {
                 A: '#forge:ingots/iron_aluminum',
-                B: 'minecraft:redstone',
+                B: '#forge:dusts/redstone',
                 C: 'rftoolsbase:machine_base',
                 D: 'minecraft:ender_pearl'
             },
@@ -73,7 +73,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsbuilder:shape_card_pump',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: 'minecraft:redstone',
+                A: '#forge:dusts/redstone',
                 B: 'minecraft:water_bucket',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'rftoolsbuilder:shape_card_def',
@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
             output: 'rftoolsbuilder:shape_card_quarry',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: 'minecraft:redstone',
+                A: '#forge:dusts/redstone',
                 B: 'minecraft:diamond_pickaxe',
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'rftoolsbuilder:shape_card_def',
@@ -98,7 +98,7 @@ onEvent('recipes', (event) => {
             pattern: ['ABA', 'DCD', 'ABA'],
             key: {
                 A: '#forge:gems/dimensional',
-                B: 'minecraft:redstone',
+                B: '#forge:dusts/redstone',
                 C: 'rftoolsbase:machine_base',
                 D: '#forge:gems/diamond'
             },
@@ -109,11 +109,20 @@ onEvent('recipes', (event) => {
             pattern: ['ADA', 'BCB', 'ABA'],
             key: {
                 A: 'minecraft:bricks',
-                B: 'minecraft:redstone',
+                B: '#forge:dusts/redstone',
                 C: 'rftoolsbase:machine_base',
-                D: 'minecraft:ender_pearl'
+                D: '#forge:gems/ender'
             },
             id: 'rftoolsbuilder:builder'
+        },
+        {
+            output: 'rftoolsbase:machine_base',
+            pattern: ['AAA', 'BBB'],
+            key: {
+                A: '#forge:nuggets/invar',
+                B: 'pneumaticcraft:reinforced_stone_slab'
+            },
+            id: 'rftoolsbase:machine_base'
         }
     ];
 

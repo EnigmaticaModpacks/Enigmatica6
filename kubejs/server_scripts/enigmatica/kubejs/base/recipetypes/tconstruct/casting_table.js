@@ -21,8 +21,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:molten_cobalt_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:cobalt_bee", BeeType: "cobalt", Color: "#209EBD"}).toJson(),
-            cooling_time: 200
+            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:cobalt_bee", BeeType: "cobalt", Color: "#209EBD"}).toResultJson(),
+            cooling_time: 200,
+            id: 'tconstruct:kjs_cobalt_bee_jar'
         },
         {
             cast: {
@@ -33,8 +34,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:liquid_skyslime_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:skyslime_bee", BeeType: "skyslime", Color: "#72CFCB"}).toJson(),
-            cooling_time: 100
+            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:skyslime_bee", BeeType: "skyslime", Color: "#72CFCB"}).toResultJson(),
+            cooling_time: 100,
+            id: 'tconstruct:kjs_skyslime_bee_jar'
         },
         {
             cast: {
@@ -45,8 +47,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:liquid_ichor_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:ichor_bee", BeeType: "ichor", Color: "#FDAB69"}).toJson(),
-            cooling_time: 100
+            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:ichor_bee", BeeType: "ichor", Color: "#FDAB69"}).toResultJson(),
+            cooling_time: 100,
+            id: 'tconstruct:kjs_ichor_bee_jar'
         },
         {
             cast: {
@@ -57,8 +60,9 @@ onEvent('recipes', (event) => {
                 name: 'kubejs:liquid_enderslime_bee',
                 amount: 500
             },
-            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:enderslime_bee", BeeType: "enderslime", Color: "#C75EFF"}).toJson(),
-            cooling_time: 100
+            result: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:enderslime_bee", BeeType: "enderslime", Color: "#C75EFF"}).toResultJson(),
+            cooling_time: 100,
+            id: 'tconstruct:kjs_enderslime_bee_jar'
         }
     ];
 

@@ -8,5 +8,229 @@
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
-	quests: [ ]
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "1DB20906EC9FFAB9"
+			tasks: [{
+				id: "6C30E3FB62A38AAB"
+				type: "item"
+				item: "minecraft:tnt"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.5d
+			dependencies: [
+				"1DB20906EC9FFAB9"
+				"19A178AE2895632F"
+				"0044F922097279B5"
+			]
+			id: "6AADF6A0814C29D4"
+			tasks: [{
+				id: "17152C3290B7D560"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 1.5d
+			dependencies: ["14099ACA706F3CCE"]
+			id: "7A62AEC29C33B717"
+			tasks: [{
+				id: "7CB390C853421A40"
+				type: "item"
+				item: {
+					id: "emendatusenigmatica:enigmatic_hammer"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			dependencies: ["7A62AEC29C33B717"]
+			id: "2357CCF3A0758B0C"
+			tasks: [{
+				id: "7D965AA1C1E47646"
+				type: "item"
+				item: "thermal:machine_frame"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 0.0d
+			id: "14099ACA706F3CCE"
+			tasks: [{
+				id: "2594806B26FA3778"
+				type: "item"
+				item: "minecraft:iron_ingot"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			id: "0044F922097279B5"
+			tasks: [{
+				id: "761CE516771F68FC"
+				type: "item"
+				item: "emendatusenigmatica:zinc_ingot"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 0.0d
+			id: "19A178AE2895632F"
+			tasks: [{
+				id: "52211E602B78DB92"
+				type: "item"
+				item: "minecraft:andesite"
+				count: 2L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.5d
+			dependencies: ["6AADF6A0814C29D4"]
+			id: "39391CA4F900D31F"
+			tasks: [{
+				id: "333A73212A44BB3A"
+				type: "item"
+				item: "create:shaft"
+			}]
+		}
+		{
+			icon: "create:mechanical_mixer"
+			x: 0.0d
+			y: 4.5d
+			dependencies: ["10890B170755A6D5"]
+			id: "4399B01214307E59"
+			tasks: [
+				{
+					id: "6F436217C7C8E2C0"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "0D72E1875F30E74C"
+					type: "item"
+					item: "create:blaze_burner"
+				}
+				{
+					id: "7B79FCC58E931447"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+		}
+		{
+			title: "Pressing Efficiency"
+			x: -1.0d
+			y: 3.5d
+			shape: "diamond"
+			dependencies: ["10890B170755A6D5"]
+			optional: true
+			id: "5647CE9AC8F56F4D"
+			tasks: [{
+				id: "2A2571F7DFC9C4F4"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			title: "Basic Rotation Acquired!"
+			x: 0.0d
+			y: 3.5d
+			dependencies: ["39391CA4F900D31F"]
+			id: "10890B170755A6D5"
+			tasks: [{
+				id: "6F7E34D112D43E07"
+				type: "item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "create:hand_crank"
+								Count: 1b
+							}
+							{
+								id: "create:water_wheel"
+								Count: 1b
+							}
+							{
+								id: "create:encased_fan"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.5d
+			dependencies: ["4399B01214307E59"]
+			id: "6F3E31687E06AA19"
+			tasks: [{
+				id: "2B77C401C033F97D"
+				type: "item"
+				item: "emendatusenigmatica:brass_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.5d
+			dependencies: ["6F3E31687E06AA19"]
+			id: "1FF1E4E11F6A5745"
+			tasks: [{
+				id: "188613747DBDF702"
+				type: "item"
+				item: "create:mechanical_crafter"
+				count: 25L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 7.5d
+			dependencies: ["1FF1E4E11F6A5745"]
+			id: "7EF2979430F203C0"
+			tasks: [{
+				id: "3A49F5AEB499C757"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 8.5d
+			dependencies: ["7EF2979430F203C0"]
+			id: "1AA1AAE2DA37A44F"
+			tasks: [{
+				id: "5470B75D9A088C52"
+				type: "item"
+				item: "create:cinder_flour"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 10.5d
+			shape: "octagon"
+			dependencies: ["1AA1AAE2DA37A44F"]
+			size: 1.5d
+			id: "737FEF84207E1AD5"
+			tasks: [{
+				id: "45F596F7AFA8BFFF"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+	]
 }

@@ -20,7 +20,7 @@
 	# Size of Nether Stronghold. This number is how many pieces deep a branch can go from the center piece.
 	# 1 for supertiny and 30 for supermassive Strongholds.
 	#Range: 1 ~ 30
-	netherStrongholdSizeSH = 15
+	netherStrongholdSize = 15
 
 [End]
 	#
@@ -28,11 +28,6 @@
 	# 1 for spawning in most chunks and 10001 for none.
 	#Range: 1 ~ 1001
 	strongholdEndAverageChunkDistance = 130
-	#
-	# Size of End Stronghold. This number is how many pieces deep a branch can go from the center piece.
-	# 1 for supertiny and 30 for supermassive Strongholds.
-	#Range: 1 ~ 30
-	endStrongholdSizeSH = 15
 	#
 	# Minimum Y height that End stronghold's starting point can spawn at.
 	# Note: Strongholds will spawn between min and max y height set in config.
@@ -48,4 +43,9 @@
 	# How far above or below the End Stronghold's pieces can generate away from the center piece.
 	#Range: 0 ~ 255
 	strongholdEndVerticalRange = 45
+	#
+	# Size of End Stronghold. This number is how many pieces deep a branch can go from the center piece.
+	# 1 for supertiny and 30 for supermassive Strongholds.
+	#Range: 1 ~ 30
+	endStrongholdSize = 15
 
