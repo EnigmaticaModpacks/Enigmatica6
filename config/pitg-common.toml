@@ -3,10 +3,12 @@
 [glazing_tool]
 	# Let the glazing tool drop panes (like silk touch) by sneaking while in BREAK mode
 	glazing_tool_break_pane = false
-	# Enable alternate green dye
-	green_dye_enabled = true
 	# Allow glazing tool to mark glass panes as unbreakable while in UNBREAKING mode
 	unbreakable_pane = false
-	# Enable the glazing tool
-	glazing_tool_enabled = true
+
+#Glass Kiln settings
+[glass_kiln]
+	# Item smelt time (ticks)
+	#Range: 20 ~ 5000
+	glass_furnace_smelt_time = 200
 
