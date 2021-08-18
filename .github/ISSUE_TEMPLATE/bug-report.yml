@@ -72,10 +72,3 @@ body:
         - 'Both'
     validations:
       required: true
-
-  - type: checkboxes
-    id: Confirm
-    attributes:
-      options:
-        - label: "Confirm you have checked the wiki and issue tracker for your issue"
-          required: true
