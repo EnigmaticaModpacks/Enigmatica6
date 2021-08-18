@@ -1,12 +1,40 @@
+### Enigmatica 6 v0.5.11
+
+_Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.11.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.11.md)_
+
+**Changes/Improvements**
+
+-   Adjusted biome weights to make the most common biomes a bit less common.
+-   Bee Crafting - move to Jarred Bees [\#3012](https://github.com/NillerMedDild/Enigmatica6/pull/3012) ([TemperedFool](https://github.com/TemperedFool))
+-   Blackstone from Cobblegens [\#2989](https://github.com/NillerMedDild/Enigmatica6/issues/2989)
+-   Change the order of the mycelial generator quests [\#2985](https://github.com/NillerMedDild/Enigmatica6/issues/2985)
+-   Fire hurts when put out [\#3023](https://github.com/NillerMedDild/Enigmatica6/issues/3023)
+-   Higher Turtle Spawn Chance [\#3000](https://github.com/NillerMedDild/Enigmatica6/issues/3000)
+-   Update RBees Quests [\#3026](https://github.com/NillerMedDild/Enigmatica6/pull/3026) ([TemperedFool](https://github.com/TemperedFool))
+
+**Bug Fixes**
+
+- \[RFTools: Dimensions\] Block Absorber Not Working On Emendatus Enigmatica Blocks [\#2962](https://github.com/NillerMedDild/Enigmatica6/issues/2962)
+- Blocks placed by Building Gadgets "Building Gadget" are often translucent, but solid as expected [\#2990](https://github.com/NillerMedDild/Enigmatica6/issues/2990)
+- I can't get Phantoms to spawn. [\#2992](https://github.com/NillerMedDild/Enigmatica6/issues/2992)
+- No output recipes for molten redstone [\#2914](https://github.com/NillerMedDild/Enigmatica6/issues/2914)
+- Problems placing torches on walls [\#2692](https://github.com/NillerMedDild/Enigmatica6/issues/2692)
+- Quest description for Thermal Resin includes Acacia [\#2996](https://github.com/NillerMedDild/Enigmatica6/issues/2996)
+- Recipe for silicon is broken [\#2997](https://github.com/NillerMedDild/Enigmatica6/issues/2997)
+- Refined Storage Requester not working [\#2991](https://github.com/NillerMedDild/Enigmatica6/issues/2991)
+- Thermal Unpacking Die has no recipe [\#2995](https://github.com/NillerMedDild/Enigmatica6/issues/2995)
+- Ultimine not respecting config? [\#3013](https://github.com/NillerMedDild/Enigmatica6/issues/3013)
+- Unsmeltable Smeltables [\#3005](https://github.com/NillerMedDild/Enigmatica6/issues/3005)
+
 ### Enigmatica 6 v0.5.10
 
 _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.10.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.10.md)_
 
 **New Mods**
 
-- [Clickable advancements](https://www.curseforge.com/minecraft/mc-mods/clickable-advancements)
-- [MmmMmmMmmMmm](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
-- [NBT Ingredient Predicate](https://www.curseforge.com/minecraft/mc-mods/nbt-ingredient-predicate)
+-   [Clickable advancements](https://www.curseforge.com/minecraft/mc-mods/clickable-advancements)
+-   [MmmMmmMmmMmm](https://www.curseforge.com/minecraft/mc-mods/mmmmmmmmmmmm)
+-   [NBT Ingredient Predicate](https://www.curseforge.com/minecraft/mc-mods/nbt-ingredient-predicate)
 
 **Changes/Improvements**
 
@@ -21,29 +49,29 @@ _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Bug Fixes**
 
-- "Correcting..." spam in log/console  [\#2939](https://github.com/NillerMedDild/Enigmatica6/issues/2939)
-- Ars Nouveau knockback projectiles cause server crash [\#2977](https://github.com/NillerMedDild/Enigmatica6/issues/2977)
-- \[0.5.0\] Inconsistent Step-Assist [\#2472](https://github.com/NillerMedDild/Enigmatica6/issues/2472)
-- BotanyPots crops being destroyed upon completion, and not growing with bonemeal [\#2970](https://github.com/NillerMedDild/Enigmatica6/issues/2970)
-- Can't craft Manyullyn in an Induction Smelter [\#2950](https://github.com/NillerMedDild/Enigmatica6/issues/2950)
-- Crash when checking JEI for uses with Red Arid Sand and Fluid Sieving Machine [\#2906](https://github.com/NillerMedDild/Enigmatica6/issues/2906)
-- Fermented Raw Ore Meat recipes crash [\#2771](https://github.com/NillerMedDild/Enigmatica6/issues/2771)
-- Hellshelf and Endshelf recipes missing in JEI [\#2928](https://github.com/NillerMedDild/Enigmatica6/issues/2928)
-- JEI Recipes Missing [\#2945](https://github.com/NillerMedDild/Enigmatica6/issues/2945)
-- Legendary Create Loot Boxes don't seem to give any reward. [\#2955](https://github.com/NillerMedDild/Enigmatica6/issues/2955)
-- Mekanism Cardboard Box "deleting" waystones [\#2909](https://github.com/NillerMedDild/Enigmatica6/issues/2909)
-- no Lightning Audio [\#2920](https://github.com/NillerMedDild/Enigmatica6/issues/2920)
-- Occultism Quest with hidden dependency [\#2936](https://github.com/NillerMedDild/Enigmatica6/issues/2936)
-- Pollinated bees cause flower supporting blocks to be converted [\#2952](https://github.com/NillerMedDild/Enigmatica6/issues/2952)
-- Recipe clash between tofu\(simple farming\) and soy sauce \(sushi go crafting\) [\#2958](https://github.com/NillerMedDild/Enigmatica6/issues/2958)
-- Recipe collision between CC wired modem, and Chisel's Futura blocks [\#2910](https://github.com/NillerMedDild/Enigmatica6/issues/2910)
-- requestify crafting emitter crashing on fluid mode [\#2948](https://github.com/NillerMedDild/Enigmatica6/issues/2948)
-- Require 16 stone bricks instead of 8 for nature altar quest [\#2968](https://github.com/NillerMedDild/Enigmatica6/pull/2968) ([Quezler](https://github.com/Quezler))
-- Safe of Supplementaries Duping [\#2833](https://github.com/NillerMedDild/Enigmatica6/issues/2833)
-- Tetra Quest partial stall [\#2940](https://github.com/NillerMedDild/Enigmatica6/issues/2940)
-- Travel Anchor Can't Be Seen through Blocks [\#2911](https://github.com/NillerMedDild/Enigmatica6/issues/2911)
-- Travertine [\#2942](https://github.com/NillerMedDild/Enigmatica6/issues/2942)
-- Vanilla Nether Quartz and Gold Ore can still spawn [\#2918](https://github.com/NillerMedDild/Enigmatica6/issues/2918)
+-   "Correcting..." spam in log/console [\#2939](https://github.com/NillerMedDild/Enigmatica6/issues/2939)
+-   Ars Nouveau knockback projectiles cause server crash [\#2977](https://github.com/NillerMedDild/Enigmatica6/issues/2977)
+-   \[0.5.0\] Inconsistent Step-Assist [\#2472](https://github.com/NillerMedDild/Enigmatica6/issues/2472)
+-   BotanyPots crops being destroyed upon completion, and not growing with bonemeal [\#2970](https://github.com/NillerMedDild/Enigmatica6/issues/2970)
+-   Can't craft Manyullyn in an Induction Smelter [\#2950](https://github.com/NillerMedDild/Enigmatica6/issues/2950)
+-   Crash when checking JEI for uses with Red Arid Sand and Fluid Sieving Machine [\#2906](https://github.com/NillerMedDild/Enigmatica6/issues/2906)
+-   Fermented Raw Ore Meat recipes crash [\#2771](https://github.com/NillerMedDild/Enigmatica6/issues/2771)
+-   Hellshelf and Endshelf recipes missing in JEI [\#2928](https://github.com/NillerMedDild/Enigmatica6/issues/2928)
+-   JEI Recipes Missing [\#2945](https://github.com/NillerMedDild/Enigmatica6/issues/2945)
+-   Legendary Create Loot Boxes don't seem to give any reward. [\#2955](https://github.com/NillerMedDild/Enigmatica6/issues/2955)
+-   Mekanism Cardboard Box "deleting" waystones [\#2909](https://github.com/NillerMedDild/Enigmatica6/issues/2909)
+-   no Lightning Audio [\#2920](https://github.com/NillerMedDild/Enigmatica6/issues/2920)
+-   Occultism Quest with hidden dependency [\#2936](https://github.com/NillerMedDild/Enigmatica6/issues/2936)
+-   Pollinated bees cause flower supporting blocks to be converted [\#2952](https://github.com/NillerMedDild/Enigmatica6/issues/2952)
+-   Recipe clash between tofu\(simple farming\) and soy sauce \(sushi go crafting\) [\#2958](https://github.com/NillerMedDild/Enigmatica6/issues/2958)
+-   Recipe collision between CC wired modem, and Chisel's Futura blocks [\#2910](https://github.com/NillerMedDild/Enigmatica6/issues/2910)
+-   requestify crafting emitter crashing on fluid mode [\#2948](https://github.com/NillerMedDild/Enigmatica6/issues/2948)
+-   Require 16 stone bricks instead of 8 for nature altar quest [\#2968](https://github.com/NillerMedDild/Enigmatica6/pull/2968) ([Quezler](https://github.com/Quezler))
+-   Safe of Supplementaries Duping [\#2833](https://github.com/NillerMedDild/Enigmatica6/issues/2833)
+-   Tetra Quest partial stall [\#2940](https://github.com/NillerMedDild/Enigmatica6/issues/2940)
+-   Travel Anchor Can't Be Seen through Blocks [\#2911](https://github.com/NillerMedDild/Enigmatica6/issues/2911)
+-   Travertine [\#2942](https://github.com/NillerMedDild/Enigmatica6/issues/2942)
+-   Vanilla Nether Quartz and Gold Ore can still spawn [\#2918](https://github.com/NillerMedDild/Enigmatica6/issues/2918)
 
 ### Enigmatica 6 v0.5.9
 
