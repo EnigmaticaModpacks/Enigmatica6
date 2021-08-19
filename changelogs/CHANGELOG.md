@@ -1,3 +1,14 @@
+### Enigmatica 6 v0.5.12
+
+_Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.12.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.12.md)_
+
+**Notes**:
+-   For bee owners: Apiaries have changed. 
+    -   The floor is no longer a part of the structure, so if you put storage blocks or the like in the floor, they will no longer work.
+
+**Changes/Improvements**
+
+
 ### Enigmatica 6 v0.5.11
 
 _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.11.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.11.md)_
