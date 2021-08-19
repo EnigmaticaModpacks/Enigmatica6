@@ -1,7 +1,7 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:starry_bee", BeeType: "starry", Color: "#002184"}),
+            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:starry_bee"}),
             pattern: ['_____', '__E__', '_DCB_', '__A__', '_____'],
             key: {
                 A: {
@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
                     canBeCelestialCrystal: true
                 },
                 B: { item: 'resourcefulbees:gold_honeycomb' },
-                C: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee", BeeType: "iron", Color: "#ffcc99"}).weakNBT().toJson(),
+                C: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee"}).weakNBT().toJson(),
                 D: { item: 'resourcefulbees:iron_honeycomb' },
                 E: { item: 'astralsorcery:colored_lens_spectral' }
             },

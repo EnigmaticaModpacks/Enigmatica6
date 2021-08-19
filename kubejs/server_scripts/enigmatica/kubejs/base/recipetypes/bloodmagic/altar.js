@@ -12,8 +12,8 @@ onEvent('recipes', (event) => {
             }*/
             
             {
-                input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bronze_bee", BeeType: "bronze", Color: "#d38c53"}).weakNBT(),
-                output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bloody_bee", BeeType: "bloody", Color: "#80251f"}),
+                input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bronze_bee"}).weakNBT(),
+                output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bloody_bee"}),
                 syphon: 50000,
                 altarLevel: 3,
                 consumptionRate: 50,
