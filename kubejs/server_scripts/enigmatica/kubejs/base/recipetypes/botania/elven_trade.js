@@ -1,10 +1,8 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            inputs: [{ item: 'resourcefulbees:mana_bee_spawn_egg' }],
-            output: {
-                item: 'resourcefulbees:elven_bee_spawn_egg'
-            }
+            inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}).weakNBT().toJson()],
+            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee"}).toJson()
         },
         {
             inputs: [{ item: 'resourcefulbees:elven_honeycomb' }, { item: 'resourcefulbees:elven_honeycomb' }],

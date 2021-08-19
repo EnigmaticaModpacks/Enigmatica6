@@ -1971,6 +1971,12 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
+                seed: 'projectvibrantjourneys:beach_grass',
+                render: 'projectvibrantjourneys:beach_grass',
+                plant: 'projectvibrantjourneys:beach_grass',
+                substrate: 'dirt'
+            },
+            {
                 seed: 'byg:reeds',
                 render: 'byg:reeds',
                 plant: 'byg:reeds',

@@ -1,5 +1,7 @@
 {
     "flower": "minecraft:warped_fungus",
+    "lore": "Within the I-C-Bee's crystaline form lies dormant potential;\nthe Hellish Zombee can release it.",
+    "loreColor": "#00AAAA",
     "maxTimeInHive": 4800,
     "sizeModifier": 0.75,
     "hasHoneycomb": true,
@@ -21,14 +23,12 @@
     },
     "MutationData": {
         "hasMutation": true,
-        "mutations" : [
-          {
-            "type": "BLOCK",
-            "inputID": "tag:forge:netherrack",
-            "outputs": [
-              {"outputID": "minecraft:nether_quartz_ore", "weight": 10}
-            ]
-          }
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:netherrack",
+                "outputs": [{ "outputID": "emendatusenigmatica:quartz_netherrack_ore", "weight": 10 }]
+            }
         ]
     },
     "CentrifugeData": {

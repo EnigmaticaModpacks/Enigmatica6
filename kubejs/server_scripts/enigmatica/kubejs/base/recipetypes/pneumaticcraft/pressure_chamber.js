@@ -36,6 +36,16 @@ onEvent('recipes', (event) => {
                 pressure: 1.5,
                 output: [{ item: 'create:wheat_flour', count: 2 }],
                 id: 'wheat_flour'
+            },
+            {
+                ingredients: [
+                    Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee"}).weakNBT().toJson(),
+                    { item: 'pneumaticcraft:lubricant_bucket' },
+                    Item.of('pneumaticcraft:pneumatic_helmet').ignoreNBT().toJson()
+                ],
+                pressure: 4.5,
+                output: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:pcbee_bee"}).toResultJson()],
+                id: 'pcbee_jar'
             }
         ]
     };

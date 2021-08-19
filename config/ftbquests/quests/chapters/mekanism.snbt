@@ -2639,7 +2639,7 @@
 			dependencies: ["00000000000006BF"]
 			id: "46314C0EADF8EBAA"
 			tasks: [{
-				id: "7B5D2BF39B372860"
+				id: "02D13AC31BDBC8A2"
 				type: "item"
 				title: "Precision Sawmill"
 				item: {
@@ -2650,74 +2650,22 @@
 							{
 								id: "mekanism:precision_sawmill"
 								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "16100"
-										}]
-									}
-								}
-							}
-							{
-								id: "mekanism:precision_sawmill"
-								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "16300"
-										}]
-									}
-								}
 							}
 							{
 								id: "mekanism:basic_sawing_factory"
 								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "18750"
-										}]
-									}
-								}
 							}
 							{
-								id: "mekanism:basic_sawing_factory"
+								id: "mekanism:advanced_sawing_factory"
 								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "18900"
-										}]
-									}
-								}
 							}
 							{
 								id: "mekanism:elite_sawing_factory"
 								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "33250"
-										}]
-									}
-								}
 							}
 							{
 								id: "mekanism:ultimate_sawing_factory"
 								Count: 1b
-								tag: {
-									mekData: {
-										EnergyContainers: [{
-											Container: 0b
-											stored: "40050"
-										}]
-									}
-								}
 							}
 						]
 					}

@@ -9,6 +9,17 @@ onEvent('recipes', (event) => {
             inputs: ['minecraft:observer', 'immersiveengineering:circuit_board', 'modularrouters:augment_core'],
             heated: true,
             id: 'modularrouters:item_router'
+        },
+        {
+            output: 'kubejs:unassembled_rftools_machine_frame',
+            inputs: [
+                'rftoolsbase:machine_base',
+                'kubejs:unassembled_rftools_machine_frame_top',
+                '#forge:plates/invar',
+                '#forge:plates/invar'
+            ],
+            heated: true,
+            id: 'kubejs:unassembled_rftools_machine_frame'
         }
     ];
 

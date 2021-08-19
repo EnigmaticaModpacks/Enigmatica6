@@ -1262,15 +1262,6 @@ onEvent('recipes', (event) => {
             B: '#forge:nuggets/tin',
             C: '#bloodmagic:crystals/demon'
         }),
-        shapedRecipe(Item.of('emendatusenigmatica:steel_ingot', 2), ['AA'], {
-            A: 'immersiveengineering:ingot_steel'
-        }),
-        shapedRecipe(Item.of('immersiveengineering:ingot_steel', 2), ['AA'], {
-            A: 'mekanism:ingot_steel'
-        }),
-        shapedRecipe(Item.of('mekanism:ingot_steel', 2), ['AA'], {
-            A: 'emendatusenigmatica:steel_ingot'
-        }),
         shapedRecipe('tetra:combustion_chamber', ['CBC', 'BAB', 'CBC'], {
             A: 'mekanism:superheating_element',
             B: 'pneumaticcraft:heat_sink',
@@ -1293,7 +1284,7 @@ onEvent('recipes', (event) => {
             F: 'alexsmobs:frontier_cap'
         }),
         shapedRecipe(
-            Item.of('morphtool:tool').nbt({
+            Item.of('morphtool:tool', {
                 'morphtool:data': {
                     blockcarpentry: { id: 'blockcarpentry:texture_wrench', Count: 1 },
                     powah: { id: 'powah:wrench', Count: 1 },

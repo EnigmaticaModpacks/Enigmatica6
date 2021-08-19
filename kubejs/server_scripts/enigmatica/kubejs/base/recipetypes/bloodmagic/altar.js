@@ -10,15 +10,16 @@ onEvent('recipes', (event) => {
                 drainRate: 5,                       //How much LP is lost per operation when the altar is empty
                 id: 'input item here'
             }*/
-
+            
             {
-                input: 'resourcefulbees:bronze_bee_spawn_egg',
-                output: 'resourcefulbees:bloody_bee_spawn_egg',
+                input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bronze_bee"}).weakNBT(),
+                output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:bloody_bee"}),
                 syphon: 50000,
                 altarLevel: 3,
                 consumptionRate: 50,
                 drainRate: 50
             }
+            
         ]
     };
 

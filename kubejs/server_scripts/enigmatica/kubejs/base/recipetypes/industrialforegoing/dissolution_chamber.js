@@ -46,18 +46,18 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 '#forge:ingots/pink_slime', // top left
-                'resourcefulbees:iron_bee_spawn_egg', // top 
+                'resourcefulbees:bee_jar', // top 
                 '#forge:ingots/pink_slime', // top right
-                '#resourcefulbees:resourceful_honeycomb_block', // left
-                '#resourcefulbees:resourceful_honeycomb_block', // right
-                'resourcefulbees:wax', // bottom left
-                'resourcefulbees:bee_jar', // bottom
-                'resourcefulbees:wax'  // bottom right
+                'resourcefulbees:iron_honeycomb_block', // left
+                'resourcefulbees:iron_honeycomb_block', // right
+                'resourcefulbees:iron_honey_block', // bottom left
+                '#industrialforegoing:machine_frame/advanced', // bottom
+                'resourcefulbees:iron_honey_block'  // bottom right
             ],
             inputFluid: 'industrialforegoing:pink_slime',
             inputFluidAmount: 1000,
             processingTime: 600,
-            outputItem: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:industrious_bee", BeeType: "industrious", Color: "#209EBD"}).toJson(),
+            outputItem: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:industrious_bee"}).toJson(),
             outputFluid: '',
             outputFluidAmount: 0
         }
