@@ -1,8 +1,8 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee", BeeType: "mana", Color: "#4c97ff"}).weakNBT().toJson()],
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee", BeeType: "elven", Color: "#ff66cc"}).toJson()
+            inputs: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}).weakNBT().toJson()],
+            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:elven_bee"}).toJson()
         },
         {
             inputs: [{ item: 'resourcefulbees:elven_honeycomb' }, { item: 'resourcefulbees:elven_honeycomb' }],
