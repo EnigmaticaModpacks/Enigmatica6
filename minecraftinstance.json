@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-08-18T18:01:11.3365664Z",
-  "playedCount": 305,
+  "lastPlayed": "2021-08-19T17:48:09.67232Z",
+  "playedCount": 306,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-08-18T17:43:58.9851734Z",
-  "lastRefreshAttempt": "2021-08-18T19:59:27.302763+02:00",
+  "lastPreviousMatchUpdate": "2021-08-18T18:21:20.7776015Z",
+  "lastRefreshAttempt": "2021-08-18T20:30:51.1131992+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -3482,7 +3482,7 @@
       "dateInstalled": "2021-08-18T18:00:56.9919032Z",
       "dateUpdated": "2021-08-18T18:00:57.0049054Z",
       "dateLastUpdateAttempted": "2021-08-18T18:00:57.0049054Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -3491,7 +3491,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 404468,
@@ -6465,7 +6465,7 @@
       "dateInstalled": "2021-07-25T20:04:58.8134968Z",
       "dateUpdated": "2021-08-18T17:20:06.6008268Z",
       "dateLastUpdateAttempted": "2021-08-18T17:20:06.6008268Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -6718,14 +6718,14 @@
       "addonID": 384508,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3281371,
-        "displayName": "ResourcefulBees-1.16.5-0.6.7.2b",
-        "fileName": "ResourcefulBees-1.16.5-0.6.7.2b.jar",
-        "fileDate": "2021-04-18T22:59:38.75Z",
-        "fileLength": 4106433,
-        "releaseType": 2,
+        "id": 3425744,
+        "displayName": "ResourcefulBees-1.16.5-0.9.9.1",
+        "fileName": "ResourcefulBees-1.16.5-0.9.9.1.jar",
+        "fileDate": "2021-08-15T02:50:57.867Z",
+        "fileLength": 4130477,
+        "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3281/371/ResourcefulBees-1.16.5-0.6.7.2b.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3425/744/ResourcefulBees-1.16.5-0.9.9.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -6733,91 +6733,73 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1401084876,
-            "type": 3,
+            "fingerprint": 2244803837,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3484084660,
-            "type": 3,
+            "fingerprint": 2571018876,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 2066165998,
-            "type": 3,
+            "fingerprint": 2816218501,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
-            "fingerprint": 1920625239,
-            "type": 3,
+            "fingerprint": 2159793800,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "logo.png",
             "fingerprint": 1074719077,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 684766769,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "resourcefulbees.mixins.json",
-            "fingerprint": 2804224158,
-            "type": 3,
+            "fingerprint": 645418765,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "resourcefulbees.refmap.json",
-            "fingerprint": 3102961468,
-            "type": 3,
+            "fingerprint": 424182295,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2504255869,
+        "packageFingerprint": 2287634231,
         "gameVersion": [
           "1.16.5",
           "Forge"
         ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          }
-        ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2272346,
-        "projectId": 384508,
-        "packageFingerprintId": 646318871,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 2875780,
-        "gameVersionId": 4458,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "ResourcefulBees-1.16.5-0.6.7.2b.jar"
+        "FileNameOnDisk": "ResourcefulBees-1.16.5-0.9.9.1.jar"
       },
       "dateInstalled": "2021-07-05T20:21:18.9930639Z",
-      "dateUpdated": "2021-07-05T20:21:18.9930639Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateUpdated": "2021-08-19T20:11:27.3214051Z",
+      "dateLastUpdateAttempted": "2021-08-19T20:11:27.3214051Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -8489,7 +8471,7 @@
       "dateInstalled": "2021-07-05T20:20:57.5385865Z",
       "dateUpdated": "2021-08-18T18:00:45.6309017Z",
       "dateLastUpdateAttempted": "2021-08-18T18:00:45.6309017Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -23415,7 +23397,7 @@
       "dateInstalled": "2021-08-05T21:06:59.9349112Z",
       "dateUpdated": "2021-08-17T20:48:30.1350266Z",
       "dateLastUpdateAttempted": "2021-08-17T20:48:30.1350266Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28708,7 +28690,7 @@
       "dateInstalled": "2021-07-05T20:21:15.1220335Z",
       "dateUpdated": "2021-08-18T17:20:08.7392323Z",
       "dateLastUpdateAttempted": "2021-08-18T17:20:08.7392323Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
