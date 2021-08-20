@@ -70,6 +70,7 @@ onEvent('server.datapack.low_priority', (event) => {
         'occultism:djinni',
         'occultism:afrit_wild',
         'occultism:afrit',
+        'occultism:marid',
         'alexsmobs:mimicube',
         'alexsmobs:centipede_body',
         'alexsmobs:centipede_tail',
