@@ -149,7 +149,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"storagedrawers-client.toml",
 	"blue_skies-client.toml",
 	"dummmmmmy-client.toml",
-	"smoothboot.json"
+	"smoothboot.json",
+	"InventoryHUD/curios.json"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine")
