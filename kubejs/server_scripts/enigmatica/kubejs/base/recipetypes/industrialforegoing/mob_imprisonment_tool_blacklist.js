@@ -76,7 +76,8 @@ onEvent('server.datapack.low_priority', (event) => {
         'alexsmobs:centipede_tail',
         'alexsmobs:bone_serpent_part',
         'artifacts:mimic',
-        'losttrinkets:dark_vex'
+        'losttrinkets:dark_vex',
+        'rftoolsdim:dimensional_blob_legendary'
     ];
 
     event.addJson('industrialforegoing:tags/entity_types/mob_imprisonment_tool_blacklist.json', {
