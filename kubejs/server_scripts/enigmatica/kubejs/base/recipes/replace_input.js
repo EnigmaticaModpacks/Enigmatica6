@@ -73,7 +73,6 @@ onEvent('recipes', (event) => {
     event.replaceInput({ mod: 'buildinggadgets' }, '#forge:ingots/iron', '#forge:ingots/iron_aluminum');
     event.replaceInput({ id: 'tanknull:1' }, 'minecraft:coal_block', 'minecraft:sponge');
 
-    event.replaceInput({ mod: 'powah' }, '#forge:storage_blocks/iron', '#forge:storage_blocks/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:ingots/iron', '#forge:ingots/iron_copper');
     event.replaceInput({ mod: 'powah' }, '#forge:nuggets/iron', '#forge:nuggets/iron_copper');
 
