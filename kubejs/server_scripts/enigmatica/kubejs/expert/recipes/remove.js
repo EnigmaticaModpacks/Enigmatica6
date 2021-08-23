@@ -27,7 +27,9 @@ onEvent('recipes', (event) => {
         'pedestals:upgrades/rffuelgen',
         'pedestals:upgrades/rfexpgen',
         'darkutils:crafting/rune_damage_player',
-        /emendatusenigmatica:alloy_dust/
+        /emendatusenigmatica:alloy_dust/,
+        'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
+        'refinedstorage:quartz_enriched_iron'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
