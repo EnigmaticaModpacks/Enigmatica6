@@ -39,12 +39,12 @@ onEvent('recipes', (event) => {
             },
             {
                 ingredients: [
-                    Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee"}).weakNBT().toJson(),
+                    Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:iron_bee' }).weakNBT().toJson(),
                     { item: 'pneumaticcraft:lubricant_bucket' },
                     Item.of('pneumaticcraft:pneumatic_helmet').ignoreNBT().toJson()
                 ],
                 pressure: 4.5,
-                output: [Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:pcbee_bee"}).toResultJson()],
+                output: [Item.of('resourcefulbees:bee_jar', { Entity: 'resourcefulbees:pcbee_bee' }).toResultJson()],
                 id: 'pcbee_jar'
             }
         ]
