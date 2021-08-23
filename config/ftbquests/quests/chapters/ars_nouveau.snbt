@@ -15,7 +15,7 @@
 			y: -8.0d
 			shape: "gear"
 			description: [
-				"With Ars Nouveau you will learn to harness the mana infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. "
+				"With Ars Nouveau you will learn to harness the latent energy infused in all things to cast powerful spells, drive arcane machinery, and even to empower some cute friends along the way. "
 				""
 				"These quests will guide you through the mod, but be sure to refer back to the manual regularly for extra information."
 				""
@@ -57,39 +57,25 @@
 			}]
 		}
 		{
-			title: "Mana"
+			title: "Source"
 			icon: "ars_nouveau:mana_gem"
 			x: -5.5d
 			y: -6.5d
 			subtitle: "Like Sweet Morning Dew"
 			description: [
-				"Mana is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond simple spell casting."
+				"Source is the driving energy behind every spell and arcane device in Ars Nouveau, but it must be condensed out of the world to harness it for anything beyond simple spell casting."
 				""
-				"Craft a Mana Condenser and a Mana Jar to begin. The Mana Gems required can be found while mining at any depth. Keep an eye out for purple Arcane Ore."
+				"Many actions release very small amounts of Source back into the environment, where it would otherwise be re-absorbed. A nearby Sourcelink, however, may be used to re-direct that ephemeral dew into specially prepared Source Jars where it may be stored for later use. "
 				""
-				"To begin condensing Mana, place the Mana Jar and then place the Mana Condenser on top of it. Mana is drawn from three primary sources:"
-				""
-				"● Crops advancing a growth stage"
-				"● Breeding animals"
-				"● Killing mobs"
-				""
-				"Consider setting up a jar and condenser nearby such places. It can detect such events in a roughly 10-15 block radius, depending on the type of event."
-				"A large crop farm or a basic mob farm can produce mana relatively quickly if automated."
+				"Most Sourcelinks absorb within a 10 to 15 block radius. "
 			]
 			dependencies: ["00000000000003AC"]
 			id: "00000000000003B6"
-			tasks: [
-				{
-					id: "00000000000003BC"
-					type: "item"
-					item: "ars_nouveau:mana_condenser"
-				}
-				{
-					id: "00000000000003BD"
-					type: "item"
-					item: "ars_nouveau:mana_jar"
-				}
-			]
+			tasks: [{
+				id: "00000000000003BD"
+				type: "item"
+				item: "ars_nouveau:mana_jar"
+			}]
 			rewards: [
 				{
 					id: "00000000000003C1"
@@ -109,11 +95,11 @@
 		}
 		{
 			title: "Magic Clay"
-			x: -5.5d
-			y: -2.5d
+			x: -6.5d
+			y: 0.0d
 			subtitle: "Fate as Malleable as Clay"
 			description: [
-				"By working Mana Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. "
+				"By working Source Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. "
 				""
 				"In order to learn new spells, this Magic Clay and its variants may be pressed in a Glyph Press along with some other reagent to form a focus."
 			]
@@ -135,8 +121,8 @@
 		{
 			title: "Marvelous Clay"
 			icon: "ars_nouveau:marvelous_clay"
-			x: -4.5d
-			y: -2.0d
+			x: -5.5d
+			y: 0.5d
 			subtitle: "The Marvelous is Built from the Mundane"
 			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbook to cast. "]
 			dependencies: ["00000000000003BE"]
@@ -164,8 +150,8 @@
 		{
 			title: "Mythical Clay"
 			icon: "ars_nouveau:mythical_clay"
-			x: -3.5d
-			y: -2.5d
+			x: -4.5d
+			y: 0.0d
 			subtitle: "Body of Clay, Mind Full of Play"
 			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbook to cast. "]
 			dependencies: ["00000000000003C2"]
@@ -191,17 +177,26 @@
 			}]
 		}
 		{
-			x: -6.0d
-			y: -4.0d
+			x: -5.5d
+			y: -2.5d
 			subtitle: "Hot Off the Presses!"
 			description: [
 				"The Glyph Press will accept up to two items; a type of clay and a reagent. "
 				""
-				"Both are consumed along with a fair amount of mana from a nearby Mana Jar to create new Glyphs."
+				"Both are consumed along with a fair amount of Source from a nearby Source Jar to create new Glyphs."
 				""
 				"Glyphs can be learned by right clicking them. They'll then appear within your spellbook for use in crafting new spells."
+				""
+				"A filled spellbook may be copied into a new spellbook on a Scribes Table."
 			]
-			dependencies: ["00000000000003B6"]
+			dependencies: [
+				"3B839B0134D843D9"
+				"0FF984417811788B"
+				"5394B4B1C20367B2"
+				"3A6A7FD760044B09"
+				"000000000000069D"
+			]
+			dependency_requirement: "one_completed"
 			id: "00000000000003C6"
 			tasks: [{
 				id: "00000000000003C7"
@@ -220,8 +215,8 @@
 		{
 			title: "Spell Practice: Flight"
 			icon: "ars_nouveau:glyph_leap"
-			x: -6.5d
-			y: -1.0d
+			x: -7.5d
+			y: 1.5d
 			subtitle: "Gathering the Weave"
 			description: [
 				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to begin."
@@ -257,8 +252,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -2.5d
+			x: 2.0d
+			y: -0.5d
 			subtitle: "Chalk it up to Experience"
 			description: [
 				"It isn't always convenient to have to do things by hand. Save yourself some effort and imprint your spells into the ground. Perfect for mob traps or for applying buffs as you walk out the door."
@@ -292,7 +287,7 @@
 		{
 			title: "Spell Parchment"
 			x: 1.0d
-			y: -3.0d
+			y: -1.5d
 			subtitle: "Jousting Snails"
 			description: [
 				"With some work, common paper can be infused to be a better receptacle for magic. Once infused, these written spells can be used in a variety of ways."
@@ -317,12 +312,12 @@
 		}
 		{
 			x: 0.5d
-			y: -5.0d
+			y: -3.5d
 			subtitle: "Putting Down Roots"
 			description: [
-				"The Mana Bloom sits at the border between the mundane and the magical. It grows as any other plant, but its roots reach through the veil, soaking in more of the mana that infuses the earth."
+				"The Mana Bloom sits at the border between the mundane and the magical. It grows as any other plant, but its roots reach through the veil, soaking in more of the Source that infuses the earth."
 				""
-				"Growing these will serve two purposes to a budding practitioner. First, they produce more mana than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's mana, expanding the practitioner's reserves.  "
+				"Growing these will serve two purposes to a budding practitioner. First, they produce more Source than any mundane plants when grown. Second, they can be woven into a fabric that intertwines itself with wearer's Source, expanding the practitioner's reserves.  "
 			]
 			dependencies: ["00000000000003D7"]
 			id: "00000000000003D5"
@@ -342,20 +337,20 @@
 			title: "Enchanting Apparatus"
 			icon: "ars_nouveau:enchanting_apparatus"
 			x: -0.5d
-			y: -6.0d
+			y: -4.5d
 			subtitle: "The Spirit is Willing but the Flesh is Spongy and Bruised"
 			description: [
-				"One's own reservoir of mana is limited: the flesh can only hold so much. Certain magical materials exist to assist this but they themselves require access to greater reservoirs to even make."
+				"One's own reservoir of Source is limited: the flesh can only hold so much. Certain magical materials exist to assist this but they themselves require access to greater reservoirs to even make."
 				""
-				"An external apparatus is therefore required to hold the reagents for such creative endeavors and to assist in funneling the mana into them safely. "
+				"An external apparatus is therefore required to hold the reagents for such creative endeavors and to assist in funneling the Source into them safely. "
 				""
-				"To construct the Enchanting Apparatus, place down the Arcane Core with the Enchanting Apparatus on top of it. The Pedestals can be placed anywhere in an 11x11 area centered on the Core. A Mana Jar with mana must also be present nearby. "
+				"To construct the Enchanting Apparatus, place down the Arcane Core with the Enchanting Apparatus on top of it. The Pedestals can be placed anywhere in an 11x11 area centered on the Core. A filled Source Jar must also be present nearby. "
 				""
 				"To work with it, place the reagents in the pedestals and the focus in the Enchanting Apparatus itself, then Sneak Right Click the Apparatus with an empty hand."
 				""
 				"The Enchanting Apparatus may also be used to apply specific enchantments to tools and armor, simplifying the process of getting a specific enchant to round out a piece of gear. The recipes are detailed in the Worn Notebook. "
 			]
-			dependencies: ["00000000000003AC"]
+			dependencies: ["00000000000003E7"]
 			min_width: 250
 			id: "00000000000003D7"
 			tasks: [
@@ -389,10 +384,10 @@
 			title: "Curious Trinkets"
 			icon: "ars_nouveau:amulet_of_mana_regen"
 			x: -2.0d
-			y: -5.0d
+			y: -3.5d
 			subtitle: "Draw Me Like Your French Girls"
 			description: [
-				"Mana is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel mana for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves."
+				"Source is a fickle thing, and keeping it in one place long enough to use can be challenging at best. Aspiring practitioners may find themselves struggling to channel Source for very long. Besides magical accoutrements woven from Mana Fibers, certain other materials can be molded into useful trinkets to serve as an extension of one's own reserves."
 				""
 				"Refer to the Worn Notebook's section on Magical Equipment for recipes and to discover more useful curios."
 			]
@@ -418,17 +413,17 @@
 			}]
 		}
 		{
-			x: -6.5d
-			y: -5.5d
+			x: -0.5d
+			y: -6.0d
 			subtitle: "One Dub-Step at a Time"
 			description: [
-				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding mana. "
+				"Though found relatively commonly in the earth, Arcane Crystals can also be crystallized directly from the surrounding Source. "
 				""
-				"Placing a source of mana nearby isn't necessary, though it will speed up the process. "
+				"Placing a source of Source nearby isn't necessary, though it will speed up the process. "
 				""
 				"Build a Crystallizer early on to help obtain more of these very useful gems."
 			]
-			dependencies: ["00000000000003B6"]
+			dependencies: ["00000000000003AC"]
 			id: "00000000000003E7"
 			tasks: [{
 				id: "00000000000003E8"
@@ -443,13 +438,13 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: -4.0d
+			x: -1.5d
+			y: -2.5d
 			subtitle: "Witches Abroad"
 			description: [
-				"Mana permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing mana for later use, but moving it from place to place can be a touchy subject."
+				"Source permeates all things. Left to its own, it spreads and infuses but rarely collects. Binding it in jars is an excellent way of storing source for later use, but moving it from place to place can be a touchy subject."
 				""
-				"Mana Relays serve this purpose. They provide a controlled channel for mana to flow through without dissipating back into the world. Mana Relays may be linked to other relays as well as jars to provide safe transit from one place to another. "
+				"Source Relays serve this purpose. They provide a controlled channel for Source to flow through without dissipating back into the world. Source Relays may be linked to other relays as well as jars to provide safe transit from one place to another. "
 				""
 				"Use a Dominion Wand to set the links. "
 			]
@@ -468,10 +463,10 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: -3.0d
+			x: -3.0d
+			y: -1.5d
 			subtitle: "Equal Rites"
-			description: ["A more advanced Mana Relay capable of pulling from and sending to multiple locations."]
+			description: ["A more advanced Source Relay capable of pulling from and sending to multiple locations."]
 			dependencies: ["00000000000003EB"]
 			id: "00000000000003ED"
 			tasks: [{
@@ -493,7 +488,7 @@
 			y: -3.0d
 			subtitle: "Boop the Snoot"
 			description: [
-				"An amicable being that's deeply attuned with mana, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone."
+				"An amicable being that's deeply attuned with Source, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone."
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
 			]
@@ -626,10 +621,14 @@
 			}]
 		}
 		{
-			x: -4.5d
+			x: -3.5d
 			y: -5.5d
 			subtitle: "Vulcanologist in Training"
-			description: ["Not every practitioner is born with a green-thumb. Thankfully, mana naturally trickles out of molten lava, escaping into the air. This device assists in collecting these trace amounts of mana so they may be put to use."]
+			description: [
+				"Not every practitioner is born with a green thumb. Thankfully, trace amounts of Source may be extracted by burning various materials, releasing the latent Source stored within. This process also produces a prodigious amount of heat that can cause nearby stone to melt into magma and lava. "
+				""
+				"The Volcanic Sourcelink consumes any nearby burnable item, though it’s most efficient when burning off Blazing Archwood material. "
+			]
 			dependencies: ["00000000000003B6"]
 			id: "000000000000069D"
 			tasks: [{
@@ -637,14 +636,22 @@
 				type: "item"
 				item: "ars_nouveau:volcanic_accumulator"
 			}]
-			rewards: [{
-				id: "00000000000006A0"
-				type: "command"
-				title: "Rare Ars Nouveau Loot Box"
-				icon: "kubejs:rare_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
-				player_command: false
-			}]
+			rewards: [
+				{
+					id: "00000000000006A0"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "115DF6600295CEE1"
+					type: "item"
+					item: "ars_nouveau:red_archwood_sapling"
+					count: 4
+				}
+			]
 		}
 		{
 			title: "Auto-magically"
@@ -677,13 +684,13 @@
 				""
 				"● Touch > Grow > Harvest"
 				""
-				"Place the Turret next to the crop, supply mana, and a periodic redstone signal for a nice fast farm."
+				"Place the Turret next to the crop, supply Source, and a periodic redstone signal for a nice fast farm."
 				""
-				"Of course, if speed isn't of the essence, a simpler version could provide self sustaining mana:"
+				"Of course, if speed isn't of the essence, a simpler version could provide self sustaining Source:"
 				""
 				"● Touch > Harvest"
 				""
-				"The growth of the crop may then provide mana to a Condenser to keep the Turret running."
+				"The growth of the crop may then provide Source to a Condenser to keep the Turret running."
 			]
 			dependencies: ["00000000000003B2"]
 			id: "00000000000009EF"
@@ -738,8 +745,8 @@
 		{
 			title: "Spell Practice: Smelting"
 			icon: "ars_nouveau:glyph_smelt"
-			x: -4.5d
-			y: -0.5d
+			x: -5.5d
+			y: 2.0d
 			description: [
 				"With a higher quality spell book comes the ability to channel more potent abilities. "
 				""
@@ -783,8 +790,8 @@
 		}
 		{
 			title: "Spell Practice: Lightning"
-			x: -2.5d
-			y: -1.0d
+			x: -3.5d
+			y: 1.5d
 			subtitle: "Let the Hate Flow Through You"
 			description: [
 				"Let's have a little fun, shall we? "
@@ -807,10 +814,10 @@
 		}
 		{
 			title: "Tome of Blood"
-			x: -4.5d
-			y: -3.0d
+			x: -5.5d
+			y: -1.0d
 			subtitle: "The Demon Barber of Fleet Street"
-			description: ["Mana isn't the only source of power in this world, and some clever Sanguimancers have found a way to bind a spellbook to their Soul Network, allowing them to draw on a deeper well of power to cast their spells. "]
+			description: ["Source isn't the only well of power in this world, and some clever Sanguimancers have found a way to bind a spellbook to their Soul Network, allowing them to draw on a deeper well of power to cast their spells. "]
 			dependencies: [
 				"00000000000008C7"
 				"00000000000003BE"
@@ -872,7 +879,7 @@
 				""
 				"The Wixie is the friend you seek. Bound by casting Dispel on a Witch at low health, Wixies are summoned by using their Charm on a standard Cauldron, transforming it into a Wixie Cauldron. "
 				""
-				"To specify what the Wixie ought to craft, simply make one of the items yourself and Right-Click it on her cauldron. She'll take care of gathering the required items from nearby inventories. She will need a source of Mana nearby, however, so leave a Jar of Mana and be sure it stays full. "
+				"To specify what the Wixie ought to craft, simply make one of the items yourself and Right-Click it on her cauldron. She'll take care of gathering the required items from nearby inventories. She will need a jar of Source nearby, however, to keep her productive."
 			]
 			dependencies: ["00000000000009ED"]
 			id: "0BC6D824A7A10356"
@@ -904,7 +911,7 @@
 			description: [
 				"Simple item crafting isn’t the only thing these crafty ladies have hidden up their sleeves. They’re quite the adept in a brewery as well, making potions of all types. "
 				""
-				"Just like with regular crafting, Wixies will need some extras at hand. A Mana Jar, a Potion Jar, and an inventory of ingredients. "
+				"Just like with regular crafting, Wixies will need some extras at hand. A Source Jar, a Potion Jar, and an inventory of ingredients. "
 				""
 				"Each Wixie can only make one potion type at a time. The type is determined by first brewing one the traditional way and, with potion in hand, right-click her cauldron to set the recipe. She’ll get to work as soon as everything is available. Just like traditional brewing, potions must be made in steps. One Wixie will make an Awkward Potion with Nether Wart, the next will add a Golden Carrot to make a Night Vision potion, and a third could add Redstone to extend it. "
 				""
@@ -937,7 +944,7 @@
 				""
 				"This is exactly what the Potion Melder does."
 				""
-				"Place it on top of a Potion Jar and place two more Potion Jars on either side of it. The bottom jar will serve as the output and the side jars will be the inputs. The process uses some mana but produces potions that combine all the effects of the inputs. This process can be chained to produce potions with many effects. "
+				"Place it on top of a Potion Jar and place two more Potion Jars on either side of it. The bottom jar will serve as the output and the side jars will be the inputs. The process uses some Source but produces potions that combine all the effects of the inputs. This process can be chained to produce potions with many effects. "
 			]
 			dependencies: ["4DC7DC466B1F2D0B"]
 			id: "22CD0875E6AFD43E"
@@ -1004,7 +1011,7 @@
 		}
 		{
 			x: 0.5d
-			y: -1.5d
+			y: 0.0d
 			subtitle: "Cast Wide, Your Net"
 			description: ["A traditional casting focus, the Wand may be inscribed with a single spell. Contrary to other casting methods, however, no Form is required. All spells cast from a Casting Wand are automatically Projectile and come Accelerated. This means extra slots for adding Effects or Augments. This makes them ideal for specialized tools. "]
 			dependencies: ["00000000000003D0"]
@@ -1195,9 +1202,9 @@
 		{
 			icon: "ars_nouveau:arcane_bricks"
 			x: 1.5d
-			y: -5.5d
+			y: -4.0d
 			subtitle: "A Wizard Did It!"
-			description: ["Going somewhere? Bring some supplies along before setting out. Having a quick way back and forth can be very handy. Build a portal out in the shape of a nether portal, set up a filled mana jar nearby, and toss a bound Warp Scroll through the frame to create a portal that can send items, mobs, and even spells back to the location bound to with the Warp Scroll. "]
+			description: ["Going somewhere? Bring some supplies along before setting out. Having a quick way back and forth can be very handy. Build a portal out in the shape of a nether portal, set up a filled Source jar nearby, and toss a bound Warp Scroll through the frame to create a portal that can send items, mobs, and even spells back to the location bound to with the Warp Scroll. "]
 			dependencies: ["00000000000003D5"]
 			id: "19C9AC76B4E2B19D"
 			tasks: [{
@@ -1309,6 +1316,243 @@
 					player_command: false
 				}
 			]
+		}
+		{
+			x: -4.5d
+			y: -5.0d
+			subtitle: "Doesn't Take Up Mush Room"
+			description: [
+				"Decomposers have a vital role in the eco-system, and much like the fungal friends that sprout up around it, the Mycelial Sourcelink is capable of decomposing excess organic matter into useful Source. "
+				""
+				"Simply drop any food nearby, though foods made from Source Berries themselves are generally preferred."
+			]
+			dependencies: ["00000000000003B6"]
+			id: "3A6A7FD760044B09"
+			tasks: [{
+				id: "16BD234A80853E69"
+				type: "item"
+				item: "ars_nouveau:mycelial_sourcelink"
+			}]
+			rewards: [
+				{
+					id: "64CBF2A519C381A1"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "57AF99223C183C96"
+					type: "item"
+					item: "ars_nouveau:source_berry_pie"
+					count: 16
+				}
+			]
+		}
+		{
+			x: -7.5d
+			y: -5.5d
+			subtitle: "One for Me, One for My Homies"
+			description: [
+				"Potion brewing naturally distills a great deal of Source during the processes, serving to grant the otherwise mundane ingredients their power. This Source may be extracted, however, by way of the Alchemical Sourcelink. "
+				""
+				"Simply place a Potion Jar adjacent to the Sourcelink and it will begin to consume the potion within it to produce Source. This pairs nicely with a Wixie brewing potions. "
+			]
+			dependencies: ["00000000000003B6"]
+			id: "5394B4B1C20367B2"
+			tasks: [{
+				id: "58CDB2E4BA8E3031"
+				type: "item"
+				item: "ars_nouveau:alchemical_sourcelink"
+			}]
+			rewards: [
+				{
+					id: "19791F6C1CCC5C18"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "53C9D637D37CFC16"
+					type: "item"
+					item: {
+						id: "ars_nouveau:potion_flask_extend_time"
+						Count: 1b
+						tag: {
+							count: 8
+							CustomPotionEffects: [{
+								Ambient: 0b
+								CurativeItems: [{
+									id: "minecraft:milk_bucket"
+									Count: 1b
+								}]
+								ShowIcon: 1b
+								ShowParticles: 1b
+								Duration: 9600
+								Id: -108b
+								Amplifier: 0b
+							}]
+							Potion: "ars_nouveau:mana_regen_potion_long"
+						}
+					}
+				}
+			]
+		}
+		{
+			x: -6.5d
+			y: -5.0d
+			subtitle: "What Do We Say to the God of Death?"
+			description: [
+				"Birth and death. Two sides of the same coin. In each may be found some latent Source bursting out. "
+				""
+				"The Vitalic Sourcelink is capable of tuning into these energies, condensing the Source released from animal breeding and mob death into a useful form. "
+			]
+			dependencies: ["00000000000003B6"]
+			id: "0FF984417811788B"
+			tasks: [{
+				id: "57BD630678A5629F"
+				type: "item"
+				item: "ars_nouveau:vitalic_sourcelink"
+			}]
+			rewards: [
+				{
+					id: "05842221EF44CE18"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "75D81D2BD560450F"
+					type: "command"
+					title: "Moo!"
+					icon: "minecraft:cow_spawn_egg"
+					command: "/execute at @p run summon minecraft:cow"
+					player_command: false
+				}
+			]
+		}
+		{
+			x: -5.5d
+			y: -4.5d
+			description: [
+				"From the soil springs forth a great Source of energy. Tap into it to begin down the path of sorcery. "
+				""
+				"Natural tree and plant growth in the vicinity will release some excess Source that may be condensed by an Agronomic Sourcelink. Plants with a higher affinity for magic will release more Source to condense, though any plant will do. "
+			]
+			dependencies: ["00000000000003B6"]
+			id: "3B839B0134D843D9"
+			tasks: [{
+				id: "475BD32C9C0E4BAB"
+				type: "item"
+				item: "ars_nouveau:mana_condenser"
+			}]
+			rewards: [
+				{
+					id: "2236E6D4E0CE20D0"
+					type: "command"
+					title: "Rare Ars Nouveau Loot Box"
+					icon: "kubejs:rare_lootbox"
+					command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+					player_command: false
+				}
+				{
+					id: "1CA3EDCE08DCBE66"
+					type: "item"
+					item: "ars_nouveau:mana_berry"
+					count: 8
+				}
+				{
+					id: "19BB79A78FEC7C8E"
+					type: "item"
+					item: "minecraft:melon_seeds"
+					count: 8
+				}
+			]
+		}
+		{
+			x: 10.5d
+			y: -2.5d
+			subtitle: "The Beast of Caerbannog"
+			description: [
+				"First shalt thou take out the Holy Pin. Then, shalt thou count to three, no more, no less…"
+				""
+				"Useful for summoning Wilden of all sizes. When augmented with body parts from each of the lesser Wilden, the Wilden Chimera will appear to avenge his brethren."
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "6AB291FBD63076A3"
+			tasks: [{
+				id: "31F14D278A887427"
+				type: "item"
+				item: "ars_nouveau:ritual_wilden_summon"
+			}]
+			rewards: [{
+				id: "5EF880C68DC165ED"
+				type: "item"
+				item: {
+					id: "thermal:lightning_grenade"
+					Count: 1b
+					tag: {
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"Holy Hand Grenade of Antioch\"}"
+						}
+					}
+				}
+				count: 16
+			}]
+		}
+		{
+			x: -2.5d
+			y: -0.5d
+			subtitle: "Wee Free Men"
+			description: ["A specialized relay which serves to distribute Source to all nearby jars without being linked to them. "]
+			dependencies: ["00000000000003EB"]
+			id: "35575BA75AA92E49"
+			tasks: [{
+				id: "0294A1F8CCC0D906"
+				type: "item"
+				item: "ars_nouveau:relay_deposit"
+			}]
+			rewards: [{
+				id: "32BD6621BA65DF4F"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: -1.5d
+			y: -1.0d
+			subtitle: "I Shall Wear Midnight"
+			description: [
+				"A specialized relay capable of tunneling through the dark realm of the End to deposit mana into a jar or relay far from home. "
+				""
+				"The tunnels are limited and may only exit into the same dimension as their origin but may otherwise cover any distance. "
+				""
+				"Some small amount of mana is used in stabilizing this tunnel over longer distances. "
+			]
+			dependencies: ["00000000000003EB"]
+			id: "7A20D43F4D535200"
+			tasks: [{
+				id: "650E082BF111565C"
+				type: "item"
+				item: "ars_nouveau:relay_warp"
+			}]
+			rewards: [{
+				id: "3C644C0B2495BC36"
+				type: "command"
+				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
 		}
 	]
 }
