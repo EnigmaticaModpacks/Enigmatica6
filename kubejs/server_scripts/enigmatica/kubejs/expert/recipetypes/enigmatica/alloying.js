@@ -31,10 +31,10 @@ onEvent('recipes', (event) => {
 
         // immersiveengineering
         event.recipes.immersiveengineering.alloy(recipe.output, recipe.inputs[0], recipe.inputs[1]);
-        event.recipes.immersiveengineering.arc_furnace([recipe.outputs], recipe.inputs[0], [recipe.inputs[1]]);
+        event.recipes.immersiveengineering.arc_furnace([recipe.output], recipe.inputs[0], [recipe.inputs[1]]);
 
         // thermal
-        event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
+        event.recipes.thermal.smelter([recipe.output], recipe.inputs);
     };
 
     recipes.forEach((recipe) => {
