@@ -13,10 +13,6 @@ onEvent('recipes', (event) => {
         // }
     ];
 
-    recipes.forEach((recipe) => {
-        recipetypes_crushing(event, recipe);
-    });
-
     recipetypes_crushing = (event, recipe) => {
         // pedestals
         event.custom({
@@ -62,4 +58,8 @@ onEvent('recipes', (event) => {
         event.recipes.immersiveengineering.crusher(recipe.output, recipe.input, recipe.secondary_output);
         event.recipes.create.milling([recipe.output, recipe.secondary_output], recipe.input);
     };
+
+    recipes.forEach((recipe) => {
+        recipetypes_crushing(event, recipe);
+    });
 });

@@ -5,13 +5,9 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             inputs: ['#forge:ingots/compressed_iron', '#forge:gems/quartz'],
-            output: Item.of('refinedstorage:quartz_enriched_ingot', 2)
+            output: Item.of('refinedstorage:quartz_enriched_iron', 2)
         }
     ];
-
-    recipes.forEach((recipe) => {
-        recipetypes_alloying(recipe);
-    });
 
     recipetypes_alloying = (event, recipe) => {
         if (!recipe.smelttime) {
@@ -40,4 +36,8 @@ onEvent('recipes', (event) => {
         // thermal
         event.recipes.thermal.smelter(recipe.outputs, recipe.inputs);
     };
+
+    recipes.forEach((recipe) => {
+        recipetypes_alloying(event, recipe);
+    });
 });
