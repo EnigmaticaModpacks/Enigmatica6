@@ -18,11 +18,14 @@ onEvent('recipes', (event) => {
     });
 
     recipetypes_crushing = (event, recipe) => {
+        // pedestals
         event.custom({
             type: 'pedestals:pedestal_crushing',
             ingredient: recipe.input,
             result: recipe.output
         });
+
+        // occultism
         event.custom({
             type: 'occultism:crushing',
             ingredient: recipe.input,
@@ -30,6 +33,8 @@ onEvent('recipes', (event) => {
             crushing_time: recipe.duration,
             ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
         });
+
+        // astralsorcery
         event.custom({
             type: 'astralsorcery:infuser',
             fluidInput: 'astralsorcery:liquid_starlight',
@@ -41,11 +46,15 @@ onEvent('recipes', (event) => {
             acceptChaliceInput: true,
             copyNBTToOutputs: false
         });
+
+        // industrialforegoing
         event.custom({
             type: 'industrialforegoing:crusher',
             input: recipe.input,
             output: recipe.output
         });
+
+        // thermal
         event.recipes.thermal
             .pulverizer([recipe.output, recipe.secondary_output], recipe.input)
             .experience(recipe.experience);
