@@ -45,7 +45,8 @@ onEvent('recipes', (event) => {
                 N: '#create:seats',
                 O: 'create:brass_casing',
                 P: 'immersiveengineering:furnace_heater'
-            }
+            },
+            id: 'astralsorcery:observatory'
         },
         {
             output: Item.of('immersiveengineering:blastbrick', 9),
@@ -69,13 +70,27 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:machine_frame'
             },
             id: 'rftoolsdim:dimension_builder'
+        },
+        {
+            output: 'refinedstorage:controller',
+            pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
+            key: {
+                A: 'refinedstorage:advanced_processor',
+                B: '#forge:ingots/slimesteel',
+                C: 'xnet:netcable_blue',
+                D: 'refinedstorage:quartz_enriched_iron',
+                E: 'refinedstorage:machine_casing',
+                F: 'immersiveengineering:logic_unit'
+            },
+            id: 'refinedstorage:controller'
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
         if (recipe.id) {
-            re.id(recipe.id);
+            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+        } else {
+            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
         }
     });
 });
