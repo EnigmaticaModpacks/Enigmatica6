@@ -26,6 +26,15 @@ onEvent('recipes', (event) => {
                 D: 'occultism:spirit_attuned_gem'
             },
             id: 'occultism:crafting/divination_rod'
+        },
+        {
+            output: 'occultism:lenses',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'atum:purple_stained_crystal_glass_pane',
+                B: 'occultism:spirit_attuned_gem'
+            },
+            id: 'occultism:crafting/lenses'
         }
     ];
 

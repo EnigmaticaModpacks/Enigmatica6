@@ -1,4 +1,25 @@
 onEvent('recipes', (event) => {
+    /*
+    Note, max starlight is theoretical. In practice, assume roughly 95% as the max reasonable level
+
+    Luminous Crafting Table
+    altar_type: 0
+    max_starlight: 1000
+    
+    Starlight Crafting Altar 
+    altar_type: 1
+    max_starlight: 2000
+
+    Celestial Altar
+    altar_type: 2
+    max_starlight: 4000
+
+    Iridescent Altar
+    altar_type: 3
+    max_starlight: 8000
+
+    */
+
     if (global.isExpertMode == false) {
         return;
     }
@@ -104,7 +125,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:altar_radiance', 1),
-            pattern: ['BC_CB', 'DEFED', '__A__', 'DG_GD', 'BC_CB'],
+            pattern: ['BC_CB', 'DEFED', '__A__', 'DGHGD', 'BC_CB'],
             key: {
                 A: {
                     type: 'astralsorcery:crystal',
@@ -118,11 +139,12 @@ onEvent('recipes', (event) => {
                 D: { item: 'astralsorcery:resonating_gem' },
                 E: { item: 'astralsorcery:colored_lens_spectral' },
                 F: { tag: 'botania:runes/asgard' },
-                G: { item: 'astralsorcery:marble_runed' }
+                G: { item: 'astralsorcery:marble_runed' },
+                H: { tag: 'forge:storage_blocks/alfsteel' }
             },
             altar_type: 2,
             duration: 400,
-            starlight: 3200,
+            starlight: 3800,
             recipe_class: 'astralsorcery:trait_upgrade',
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -188,7 +210,7 @@ onEvent('recipes', (event) => {
             ],
             altar_type: 3,
             duration: 600,
-            starlight: 3200,
+            starlight: 7500,
             focus_constellation: 'astralsorcery:lucerna',
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -218,7 +240,7 @@ onEvent('recipes', (event) => {
             ],
             altar_type: 3,
             duration: 600,
-            starlight: 3200,
+            starlight: 7500,
             focus_constellation: 'astralsorcery:aevitas',
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
@@ -249,7 +271,7 @@ onEvent('recipes', (event) => {
             ],
             altar_type: 3,
             duration: 600,
-            starlight: 6400,
+            starlight: 7500,
             focus_constellation: 'astralsorcery:lucerna',
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
@@ -276,7 +298,7 @@ onEvent('recipes', (event) => {
             ],
             altar_type: 3,
             duration: 600,
-            starlight: 6400,
+            starlight: 7500,
             focus_constellation: 'astralsorcery:fornax',
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
@@ -344,6 +366,29 @@ onEvent('recipes', (event) => {
                 'astralsorcery:gateway_edge',
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ]
+        },
+        {
+            output: Item.of('botania:alfheim_portal', 1),
+            pattern: ['A___A', '__F__', '_EDG_', '_BHB_', 'C___C'],
+            key: {
+                A: { item: 'resourcefulbees:emerald_honeycomb' },
+                B: { item: 'botania:glimmering_livingwood' },
+                C: { tag: 'forge:ingots/terrasteel' },
+                D: { item: 'astralsorcery:celestial_gateway' },
+                E: { tag: 'botania:runes/summer' },
+                F: { item: 'naturesaura:gold_leaf' },
+                G: { tag: 'botania:runes/air' },
+                H: { tag: 'botania:runes/lust' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1900,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:gateway_edge',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'botania:alfheim_portal'
         }
     ];
 

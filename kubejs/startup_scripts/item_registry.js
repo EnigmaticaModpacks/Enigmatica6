@@ -24,6 +24,12 @@ onEvent('item.registry', (event) => {
         'unassembled_rftools_machine_frame'
     ];
 
+    const assemblyTableItems = [
+        { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
+        { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
+        { name: 'basic_lenses_package', texture: 'assembly_package_filled' }
+    ];
+
     let metals = [
         'aluminum',
         'cloggrum',
@@ -56,5 +62,9 @@ onEvent('item.registry', (event) => {
 
     generalItems.forEach((item) => {
         event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);
+    });
+
+    assemblyTableItems.forEach((item) => {
+        event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
 });

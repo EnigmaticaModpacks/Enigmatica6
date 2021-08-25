@@ -45,8 +45,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'eidolon:gold_inlay', count: 2 },
-                { item: 'botania:livingwood', count: 1 },
+                { item: 'eidolon:gold_inlay', count: 1 },
+                { item: 'botania:livingwood_wall', count: 1 },
                 { item: 'naturesaura:gold_leaf', count: 1 },
                 { tag: 'forge:dusts/apatite', count: 1 }
             ],
