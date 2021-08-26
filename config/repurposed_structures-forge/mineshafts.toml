@@ -138,11 +138,6 @@
 	# Minimum Y height that this mineshaft can spawn at.
 	# Note: The mineshaft will spawn between min and max y height set in config.
 	#Range: 5 ~ 255
-	endMineshaftMinHeight = 30
-	#
-	# Minimum Y height that this mineshaft can spawn at.
-	# Note: The mineshaft will spawn between min and max y height set in config.
-	#Range: 5 ~ 255
 	netherMineshaftMinHeight = 6
 	#
 	# Minimum Y height that this mineshaft can spawn at.
@@ -216,12 +211,6 @@
 	# Setting this to below min height config will make mineshaft spawn only at min height.
 	#Range: 5 ~ 255
 	swampMineshaftMaxHeight = 45
-	#
-	# Minimum Y height that this mineshaft can spawn at.
-	# Note: The mineshaft will spawn between min and max y height set in config.
-	# Setting this to below min height config will make mineshaft spawn only at min height.
-	#Range: 5 ~ 255
-	endMineshaftMaxHeight = 40
 	#
 	# Minimum Y height that this mineshaft can spawn at.
 	# Note: The mineshaft will spawn between min and max y height set in config.
@@ -301,6 +290,9 @@
 
 [Misc]
 	#
-	# Add End Mineshafts to End Barrens and End Islands biome.
-	barrensIslandsEndMineshafts = false
+	# The minimum thickness of End islands that the End Mineshaft can spawn in.
+	#So 30 means the End Mineshaft will spawn in land that is at least 30 blocks vertically in the area.
+	#Do 0 to turn off this check and allow the End Mineshaft to spawn anywhere including floating in midair.
+	#Range: 0 ~ 256
+	endMineshaftMinIslandThickness = 30
 
