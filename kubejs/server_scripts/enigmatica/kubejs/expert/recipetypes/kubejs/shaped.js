@@ -23,6 +23,15 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:prismarine',
                 B: 'undergarden:tremblecrust'
             }
+        },
+        {
+            output: 'kubejs:basic_lenses_package',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'atum:purple_stained_crystal_glass',
+                B: 'occultism:spirit_attuned_gem',
+                C: 'mekanism:cardboard_box'
+            }
         }
     ];
 

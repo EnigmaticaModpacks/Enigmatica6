@@ -90,6 +90,10 @@ onEvent('item.tooltip', (event) => {
                 'rftoolsbuilder:shield_block1'
             ],
             text: [Text.of('Shield Projections are immune to the Wither').color('#4F0D75')]
+        },
+        {
+            items: ['kubejs:basic_circuit_package'],
+            text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
         }
     ];
 
