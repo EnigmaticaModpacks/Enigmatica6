@@ -16,10 +16,44 @@
                     ]
                 },
                 {
-                    "type": "minecraft:item",
+                    "type": "item",
                     "weight": 1,
-                    "name": "simplefarming:sushi",
+                    "name": "sushigocrafting:tobiko_crab_cheese_california",
                     "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Weights:[I;0,0,0,0,0,0],Spices:{wasabi:1b,soy_sauce:1b}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "sushigocrafting:wakame_gunkan",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Weights:[I;0,0,0],Spices:{wasabi:1b,soy_sauce:1b}}"
+                        },
+                        {
+                            "function": "set_count",
+                            "count": 16
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "sushigocrafting:shrimp_nigiri",
+                    "functions": [
+                        {
+                            "function": "set_nbt",
+                            "tag": "{Weights:[I;0,0,0],Spices:{wasabi:1b,soy_sauce:1b}}"
+                        },
                         {
                             "function": "set_count",
                             "count": 16
