@@ -279,6 +279,10 @@ onEvent('jei.information', (event) => {
                 ``,
                 `To summon, place an End Crystal on each of the cardinal directions of the End Portal in the End.`
             ]
+        },
+        {
+            items: ['byg:leaf_pile'],
+            description: [`Gathered with Shears.`]
         }
     ];
 
