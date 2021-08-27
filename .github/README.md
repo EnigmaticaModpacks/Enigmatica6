@@ -9,7 +9,6 @@ This is the official repository and issue-tracker for the modpack Enigmatica 6, 
     -   [MultiMC (Windows/Mac/Linux)](#multimc-linux--windows--mac)
     -   [CurseForge App (Windows/Mac)](#curseforge-app-windows--mac)
 -   [Server Automation](#server-automation)
--   [Server Automation with Docker](#server-automation-with-docker)
 -   [Links](#links)
 
 <hr></hr>
