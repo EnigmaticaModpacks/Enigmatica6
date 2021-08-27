@@ -248,6 +248,37 @@ onEvent('jei.information', (event) => {
         {
             items: ['atum:ectoplasm'],
             description: [`Drops from Wraiths in the sandy wastes of Atum.`]
+        },
+        {
+            items: ['minecraft:firework_star'],
+            description: [`Shapeless Crafting: One paper and at least one gunpowder.`]
+        },
+        {
+            items: ['minecraft:firework_star'],
+            description: [
+                `Adding more gunpowder increases the duration of the rocket.`,
+                `Up to three gunpowder or up to seven firework stars can be added.`
+            ]
+        },
+        {
+            items: ['minecraft:firework_rocket'],
+            description: [`Shapeless Crafting: One gunpowder and at least one dye.`]
+        },
+        {
+            items: ['minecraft:firework_rocket'],
+            description: [
+                `Up to eight dyes can be added.`,
+                `One head, gold nugget, feather, or fire charge can be added to set a shape.`,
+                `A diamond and/or a glowstone dust can be added with any of the other ingredients.`
+            ]
+        },
+        {
+            items: ['minecraft:dragon_egg'],
+            description: [
+                `More eggs may be obtained by summoning the End Dragon again.`,
+                ``,
+                `To summon, place an End Crystal on each of the cardinal directions of the End Portal in the End.`
+            ]
         }
     ];
 
