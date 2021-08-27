@@ -566,6 +566,16 @@ onEvent('recipes', (event) => {
         {
             output: 'sushigocrafting:soy_seeds',
             inputs: ['sushigocrafting:soy_bean']
+        },
+        {
+            output: Item.of('ars_nouveau:source_berry_roll', 3),
+            inputs: [
+                'farmersdelight:wheat_dough',
+                'farmersdelight:wheat_dough',
+                'farmersdelight:wheat_dough',
+                '#forge:fruits/mana_berry'
+            ],
+            id: 'ars_nouveau:source_berry_roll'
         }
     ];
 
