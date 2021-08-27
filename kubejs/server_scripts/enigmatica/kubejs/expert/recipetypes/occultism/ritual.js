@@ -320,6 +320,29 @@ onEvent('recipes', (event) => {
                 ],
                 result: { item: 'occultism:storage_remote' },
                 id: 'occultism:ritual/craft_storage_remote'
+            },
+            {
+                type: 'occultism:ritual',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_foliot'
+                },
+                pentacle_id: 'occultism:craft_foliot',
+                require_item_use: false,
+                require_sacrifice: false,
+                ritual: {
+                    item: 'occultism:ritual_dummy/craft_satchel'
+                },
+                ingredients: [
+                    { item: 'ironchest:silver_chest' },
+                    { item: 'ars_nouveau:end_fiber' },
+                    { item: 'alexsmobs:kangaroo_hide' },
+                    { item: 'ars_nouveau:end_fiber' },
+                    { tag: 'forge:ingots/infused_iron' }
+                ],
+                result: {
+                    item: 'occultism:satchel'
+                },
+                id: 'occultism:ritual/craft_satchel'
             }
         ]
     };

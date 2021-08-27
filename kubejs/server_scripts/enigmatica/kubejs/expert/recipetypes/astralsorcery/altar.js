@@ -389,6 +389,63 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'botania:alfheim_portal'
+        },
+        {
+            output: Item.of('astralsorcery:mantle', 1),
+            pattern: ['_____', 'A_B_A', 'ACDCA', 'ECFCE', 'E___E'],
+            key: {
+                A: { item: 'astralsorcery:resonating_gem' },
+                B: {
+                    type: 'astralsorcery:crystal',
+                    hasToBeAttuned: false,
+                    hasToBeCelestial: true,
+                    canBeAttuned: true,
+                    canBeCelestialCrystal: true
+                },
+                C: { item: 'astralsorcery:illumination_powder' },
+                D: { item: 'botania:balance_cloak' },
+                E: { tag: 'astralsorcery:stardust' },
+                F: { tag: 'botania:runes/mana' }
+            },
+            relay_inputs: [
+                { tag: 'astralsorcery:starmetal' },
+                { tag: 'botania:runes/envy' },
+                { item: 'magicfeather:magicfeather' },
+                { tag: 'botania:runes/pride' }
+            ],
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/mantle'
+        },
+        {
+            output: Item.of('astralsorcery:telescope', 1),
+            pattern: ['E___E', '__B__', '_CDC_', '_AAA_', 'F___F'],
+            key: {
+                A: { tag: 'forge:rods/treated_wood' },
+                B: { item: 'astralsorcery:hand_telescope' },
+                C: { tag: 'forge:ingots/sky' },
+                D: { item: 'eidolon:polished_planks' },
+                E: { tag: 'botania:runes/air' },
+                F: { item: 'astralsorcery:nocturnal_powder' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 800,
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/telescope'
         }
     ];
 

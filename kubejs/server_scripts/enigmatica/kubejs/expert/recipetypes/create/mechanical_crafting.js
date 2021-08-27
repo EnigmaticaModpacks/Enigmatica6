@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'astralsorcery:hand_telescope',
-            pattern: [' A    ', 'ABA   ', ' ABC  ', '  CDC ', '   CCA', '    AB'],
+            pattern: ['    A ', '   ABA', '  CBA ', ' CDC  ', 'ACC   ', 'BA    '],
             key: {
                 A: '#forge:plates/brass',
                 B: 'astralsorcery:glass_lens',
@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
                 'MMMOOO   '
             ],
             key: {
-                A: '#forge:rods/brass',
+                A: '#forge:inlays/arcane_gold',
                 B: 'astralsorcery:marble_runed',
                 C: 'kubejs:observatory_lens',
                 D: 'quark:lime_rune',
