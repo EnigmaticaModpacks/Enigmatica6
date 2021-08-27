@@ -1629,6 +1629,14 @@
 				type: "item"
 				item: "ars_nouveau:familiar_bookwyrm"
 			}]
+			rewards: [{
+				id: "3F826BECBAC65089"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
 		}
 		{
 			x: 10.5d
@@ -1668,6 +1676,14 @@
 				id: "3AA728ECE363A96A"
 				type: "item"
 				item: "ars_nouveau:ritual_binding"
+			}]
+			rewards: [{
+				id: "6DB8DF770C37C6FF"
+				type: "command"
+				title: "Ars Nouveau Rare Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
 			}]
 		}
 	]
