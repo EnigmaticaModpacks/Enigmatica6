@@ -31,7 +31,11 @@ else
         echo "Neither wget or curl were found on your system. Please install one and try again"
     fi
 fi
-java -jar serverstarter-2.0.1.jar
+echo "Starting server in screen"
+echo "Detach from screen console by doing Control + A and then Control + D"
+echo "Reattach to screen console by doing 'screen -r enigmatica6'"
+echo "List available screen console by doing 'screen -list'"
+screen -dmS enigmatica6 java -jar serverstarter-2.0.1.jar
 if [[ $DO_RAMDISK -eq 1 ]]; then
     sudo umount "$SAVE_DIR"
     rm -rf "$SAVE_DIR"
