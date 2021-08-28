@@ -382,6 +382,22 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'botania:pixie_dust',
+                    'botania:crystal_bow',
+                    'botania:pixie_dust',
+                    'atum:montu_godshard',
+                    '#botania:runes/muspelheim',
+                    'botania:pixie_dust',
+                    'naturesaura:token_rage',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/turret',
+                count: 1,
+                id: 'pedestals:upgrades/turret'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
                     'immersiveengineering:sawblade',
                     'botania:pixie_dust',
                     'naturesaura:token_joy',
@@ -655,6 +671,22 @@ onEvent('recipes', (event) => {
             {
                 inputs: [
                     'botania:pixie_dust',
+                    'quark:golden_apple_crate',
+                    'botania:pixie_dust',
+                    'naturesaura:token_joy',
+                    '#botania:runes/spring',
+                    'botania:pixie_dust',
+                    'ars_nouveau:glyph_aoe',
+                    'botania:pixie_dust'
+                ],
+                reagent: 'pedestals:coin/default',
+                output: 'pedestals:coin/babymaker',
+                count: 1,
+                id: 'pedestals:upgrades/babymaker'
+            },
+            {
+                inputs: [
+                    'botania:pixie_dust',
                     '#botania:runes/earth',
                     'botania:pixie_dust',
                     'create:crushing_wheel',
@@ -907,6 +939,22 @@ onEvent('recipes', (event) => {
                 output: 'pedestals:coin/rfimport',
                 count: 1,
                 id: 'pedestals:upgrades/rfimport'
+            },
+            {
+                inputs: [
+                    'powah:capacitor_nitro',
+                    'immersiveengineering:tesla_coil',
+                    'powah:capacitor_nitro',
+                    '#botania:runes/air',
+                    '#botania:runes/fire',
+                    'powah:capacitor_nitro',
+                    'powah:ender_core',
+                    'powah:capacitor_nitro'
+                ],
+                reagent: 'pedestals:coin/rfexport',
+                output: 'pedestals:coin/rffield',
+                count: 1,
+                id: 'pedestals:upgrades/rffield'
             },
             {
                 inputs: [

@@ -26,6 +26,7 @@ onEvent('recipes', (event) => {
         'pedestals:upgrades/recycler',
         'pedestals:upgrades/rffuelgen',
         'pedestals:upgrades/rfexpgen',
+        'pedestals:upgrades/crafter1mk2',
         'darkutils:crafting/rune_damage_player',
         /emendatusenigmatica:alloy_dust/,
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',

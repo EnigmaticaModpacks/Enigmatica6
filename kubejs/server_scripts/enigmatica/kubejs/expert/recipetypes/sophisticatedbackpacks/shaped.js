@@ -17,21 +17,14 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
-            output: 'kubejs:firmament',
-            pattern: ['AAB', 'ABA', 'BAA'],
+            output: 'sophisticatedbackpacks:upgrade_base',
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: 'minecraft:prismarine',
-                B: 'undergarden:tremblecrust'
-            }
-        },
-        {
-            output: 'kubejs:basic_lenses_package',
-            pattern: ['AAA', 'BCB', 'AAA'],
-            key: {
-                A: 'atum:purple_stained_crystal_glass',
-                B: 'occultism:spirit_attuned_gem',
-                C: 'mekanism:cardboard_box'
-            }
+                A: 'ars_nouveau:blaze_fiber',
+                B: '#forge:rods/aluminum',
+                C: 'tconstruct:jewel_item_frame'
+            },
+            id: 'sophisticatedbackpacks:upgrade_base'
         }
     ];
 

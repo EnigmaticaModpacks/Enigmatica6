@@ -82,6 +82,15 @@ onEvent('recipes', (event) => {
                 D: 'ars_nouveau:warding_stone'
             },
             id: 'ars_nouveau:glyph_press'
+        },
+        {
+            output: Item.of('ars_nouveau:mana_fiber', 4),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'betterendforge:silk_fiber',
+                B: 'ars_nouveau:mana_bloom'
+            },
+            id: 'ars_nouveau:mana_fiber'
         }
     ];
 

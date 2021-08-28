@@ -17,21 +17,13 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
-            output: 'kubejs:firmament',
-            pattern: ['AAB', 'ABA', 'BAA'],
+            output: 'tconstruct:silky_cloth',
+            pattern: ['AAA', 'ABA', 'AAA'],
             key: {
-                A: 'minecraft:prismarine',
-                B: 'undergarden:tremblecrust'
-            }
-        },
-        {
-            output: 'kubejs:basic_lenses_package',
-            pattern: ['AAA', 'BCB', 'AAA'],
-            key: {
-                A: 'atum:purple_stained_crystal_glass',
-                B: 'occultism:spirit_attuned_gem',
-                C: 'mekanism:cardboard_box'
-            }
+                A: 'ars_nouveau:mana_fiber',
+                B: '#forge:ingots/rose_gold'
+            },
+            id: 'tconstruct:tools/modifiers/silky_cloth'
         }
     ];
 

@@ -25,6 +25,23 @@ onEvent('recipes', (event) => {
             output: { item: 'pedestals:coin/default', count: 10 },
             program: 'laser',
             id: 'pedestals:upgrades/itempedestalupgradedefault'
+        },
+        {
+            input: { item: 'kubejs:basic_circuit_package', count: 1 },
+            output: { item: 'kubejs:basic_circuit_assembly', count: 1 },
+            program: 'drill'
+        },
+        {
+            input: { item: 'kubejs:basic_circuit_assembly', count: 1 },
+            output: { item: 'mekanism:basic_control_circuit', count: 3 },
+            program: 'laser',
+            id: 'mekanism:control_circuit/basic'
+        },
+        {
+            input: { item: 'kubejs:basic_lenses_package', count: 1 },
+            output: { item: 'occultism:lenses', count: 3 },
+            program: 'laser',
+            id: 'occultism:crafting/lenses'
         }
     ];
     recipes.forEach((recipe) => {
