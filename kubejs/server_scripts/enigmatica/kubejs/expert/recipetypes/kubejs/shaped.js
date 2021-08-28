@@ -38,6 +38,14 @@ onEvent('recipes', (event) => {
                 D: 'mekanism:cardboard_box',
                 E: 'immersiveengineering:wirecoil_redstone'
             }
+        },
+            output: 'kubejs:basic_lenses_package',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'atum:purple_stained_crystal_glass',
+                B: 'occultism:spirit_attuned_gem',
+                C: 'mekanism:cardboard_box'
+            }
         }
     ];
 

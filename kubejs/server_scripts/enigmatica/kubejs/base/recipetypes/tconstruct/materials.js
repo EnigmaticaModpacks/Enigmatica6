@@ -42,7 +42,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:livingrock"
+                    "material": "enigmatica:livingrock"
                 }
             ]
         },
@@ -87,7 +87,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:livingwood"
+                    "material": "enigmatica:livingwood"
                 },
                 {
                     "type": "tconstruct:material",
@@ -96,7 +96,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 4,
                     "needed": 1,
-                    "material": "tconstruct:livingwood"
+                    "material": "enigmatica:livingwood"
                 }
             ]
         },
@@ -141,7 +141,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:treated_wood"
+                    "material": "enigmatica:treated_wood"
                 },
                 {
                     "type": "tconstruct:material",
@@ -150,7 +150,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 2,
-                    "material": "tconstruct:treated_wood"
+                    "material": "enigmatica:treated_wood"
                 }
             ]
         },
@@ -203,7 +203,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       }
                     ],
                     "temperature": 800,
-                    "output": "tconstruct:andesite_alloy"
+                    "output": "enigmatica:andesite_alloy"
                 },
                 {
                     "type": "tconstruct:material",
@@ -212,7 +212,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:andesite_alloy"
+                    "material": "enigmatica:andesite_alloy"
                 }
             ]
         },
@@ -257,7 +257,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "amount": 144
                   },
                   "temperature": 900,
-                  "output": "tconstruct:compressed_iron"
+                  "output": "enigmatica:compressed_iron"
                 },
                 {
                     "type": "tconstruct:material",
@@ -266,7 +266,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:compressed_iron"
+                    "material": "enigmatica:compressed_iron"
                 },
                 {
                     "type": "tconstruct:material",
@@ -275,7 +275,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:compressed_iron",
+                    "material": "enigmatica:compressed_iron",
                     "leftover": {
                       "tag": "forge:ingots/compressed_iron"
                     }
@@ -323,7 +323,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "amount": 144
                   },
                   "temperature": 850,
-                  "output": "tconstruct:infused_iron"
+                  "output": "enigmatica:infused_iron"
                 },
                 {
                     "type": "tconstruct:material",
@@ -332,7 +332,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:infused_iron"
+                    "material": "enigmatica:infused_iron"
                 },
                 {
                     "type": "tconstruct:material",
@@ -341,7 +341,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:infused_iron",
+                    "material": "enigmatica:infused_iron",
                     "leftover": {
                       "tag": "forge:ingots/infused_iron"
                     }
@@ -389,7 +389,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "amount": 144
                   },
                   "temperature": 900,
-                  "output": "tconstruct:manasteel"
+                  "output": "enigmatica:manasteel"
                 },
                 {
                     "type": "tconstruct:material",
@@ -398,7 +398,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:manasteel"
+                    "material": "enigmatica:manasteel"
                 },
                 {
                   "type": "tconstruct:material",
@@ -407,7 +407,7 @@ onEvent('server.datapack.low_priority', (event) => {
                   },
                   "value": 9,
                   "needed": 1,
-                  "material": "tconstruct:manasteel",
+                  "material": "enigmatica:manasteel",
                   "leftover": {
                     "tag": "forge:ingots/manasteel"
                   }
@@ -419,7 +419,7 @@ onEvent('server.datapack.low_priority', (event) => {
                   },
                   "value": 1,
                   "needed": 9,
-                  "material": "tconstruct:manasteel"
+                  "material": "enigmatica:manasteel"
               }
             ]
         },
@@ -464,7 +464,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 825,
-                    "output": "tconstruct:thallasium"
+                    "output": "enigmatica:thallasium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -473,7 +473,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:thallasium"
+                    "material": "enigmatica:thallasium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -482,7 +482,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:thallasium",
+                    "material": "enigmatica:thallasium",
                     "leftover": {
                       "tag": "forge:ingots/thallasium"
                     }
@@ -494,7 +494,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:thallasium"
+                    "material": "enigmatica:thallasium"
                 }
             ]
         },
@@ -539,7 +539,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 225,
-                    "output": "tconstruct:tin"
+                    "output": "enigmatica:tin"
                 },
                 {
                     "type": "tconstruct:material",
@@ -548,7 +548,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:tin"
+                    "material": "enigmatica:tin"
                 },
                 {
                     "type": "tconstruct:material",
@@ -557,7 +557,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:tin",
+                    "material": "enigmatica:tin",
                     "leftover": {
                       "tag": "forge:ingots/tin"
                     }
@@ -569,7 +569,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:tin"
+                    "material": "enigmatica:tin"
                 }
             ]
         },
@@ -614,7 +614,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 420,
-                    "output": "tconstruct:zinc"
+                    "output": "enigmatica:zinc"
                 },
                 {
                     "type": "tconstruct:material",
@@ -623,7 +623,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:zinc",
+                    "material": "enigmatica:zinc",
                     "leftover": {
                       "tag": "forge:ingots/zinc"
                     }
@@ -635,7 +635,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:zinc"
+                    "material": "enigmatica:zinc"
                 },
                 {
                     "type": "tconstruct:material",
@@ -644,7 +644,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:zinc"
+                    "material": "enigmatica:zinc"
                 }
             ]
         },
@@ -685,13 +685,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energized_steel",
+                    "input": "enigmatica:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_blazing_crystal",
                       "amount": 144
                     },
                     "temperature": 950,
-                    "output": "tconstruct:blazing_crystal"
+                    "output": "enigmatica:blazing_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -700,7 +700,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:blazing_crystal"
+                    "material": "enigmatica:blazing_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -709,7 +709,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:blazing_crystal",
+                    "material": "enigmatica:blazing_crystal",
                     "leftover": {
                       "item": "powah:crystal_blazing"
                     }
@@ -757,7 +757,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 875,
-                    "output": "tconstruct:elementium"
+                    "output": "enigmatica:elementium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -766,7 +766,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:elementium"
+                    "material": "enigmatica:elementium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -775,7 +775,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:elementium",
+                    "material": "enigmatica:elementium",
                     "leftover": {
                       "tag": "forge:ingots/elementium"
                     }
@@ -787,7 +787,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:elementium"
+                    "material": "enigmatica:elementium"
                 }
             ]
         },
@@ -832,7 +832,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "amount": 144
                   },
                   "temperature": 875,
-                  "output": "tconstruct:energized_steel"
+                  "output": "enigmatica:energized_steel"
               },
               {
                   "type": "tconstruct:material",
@@ -841,7 +841,7 @@ onEvent('server.datapack.low_priority', (event) => {
                   },
                   "value": 1,
                   "needed": 1,
-                  "material": "tconstruct:energized_steel"
+                  "material": "enigmatica:energized_steel"
               },
               {
                   "type": "tconstruct:material",
@@ -850,7 +850,7 @@ onEvent('server.datapack.low_priority', (event) => {
                   },
                   "value": 9,
                   "needed": 1,
-                  "material": "tconstruct:energized_steel",
+                  "material": "enigmatica:energized_steel",
                   "leftover": {
                     "tag": "forge:ingots/energized_steel"
                   }
@@ -898,7 +898,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     "amount": 144
                   },
                   "temperature": 950,
-                  "output": "tconstruct:sky"
+                  "output": "enigmatica:sky"
               },
               {
                   "type": "tconstruct:material",
@@ -907,7 +907,7 @@ onEvent('server.datapack.low_priority', (event) => {
                   },
                   "value": 1,
                   "needed": 1,
-                  "material": "tconstruct:sky"
+                  "material": "enigmatica:sky"
               }
           ]
         },
@@ -952,7 +952,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 840,
-                    "output": "tconstruct:terminite"
+                    "output": "enigmatica:terminite"
                 },
                 {
                     "type": "tconstruct:material",
@@ -961,7 +961,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:terminite"
+                    "material": "enigmatica:terminite"
                 },
                 {
                     "type": "tconstruct:material",
@@ -970,7 +970,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:terminite",
+                    "material": "enigmatica:terminite",
                     "leftover": {
                       "tag": "forge:ingots/terminite"
                     }
@@ -982,7 +982,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:terminite"
+                    "material": "enigmatica:terminite"
                 }
             ]
         },
@@ -1027,7 +1027,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 975,
-                    "output": "tconstruct:terrasteel"
+                    "output": "enigmatica:terrasteel"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1036,7 +1036,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:terrasteel"
+                    "material": "enigmatica:terrasteel"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1045,7 +1045,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:terrasteel",
+                    "material": "enigmatica:terrasteel",
                     "leftover": {
                       "tag": "forge:ingots/terrasteel"
                     }
@@ -1057,7 +1057,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:terrasteel"
+                    "material": "enigmatica:terrasteel"
                 }
             ]
         },
@@ -1103,7 +1103,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 1250,
-                    "output": "tconstruct:aeternium"
+                    "output": "enigmatica:aeternium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1112,7 +1112,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:aeternium"
+                    "material": "enigmatica:aeternium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1121,7 +1121,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:aeternium",
+                    "material": "enigmatica:aeternium",
                     "leftover": {
                       "tag": "forge:ingots/aeternium"
                     }
@@ -1164,13 +1164,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:terrasteel",
+                    "input": "enigmatica:terrasteel",
                     "fluid": {
                       "name": "kubejs:molten_alfsteel",
                       "amount": 144
                     },
                     "temperature": 1450,
-                    "output": "tconstruct:alfsteel"
+                    "output": "enigmatica:alfsteel"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1179,7 +1179,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:alfsteel"
+                    "material": "enigmatica:alfsteel"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1188,7 +1188,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:alfsteel",
+                    "material": "enigmatica:alfsteel",
                     "leftover": {
                       "tag": "forge:ingots/alfsteel"
                     }
@@ -1200,7 +1200,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:alfsteel"
+                    "material": "enigmatica:alfsteel"
                 }
             ]
         },
@@ -1245,7 +1245,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 1450,
-                    "output": "tconstruct:enderium"
+                    "output": "enigmatica:enderium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1254,7 +1254,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:enderium"
+                    "material": "enigmatica:enderium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1263,7 +1263,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:enderium",
+                    "material": "enigmatica:enderium",
                     "leftover": {
                       "tag": "forge:ingots/enderium"
                     }
@@ -1275,7 +1275,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:enderium"
+                    "material": "enigmatica:enderium"
                 }
             ]
         },
@@ -1315,13 +1315,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:terrasteel",
+                    "input": "enigmatica:terrasteel",
                     "fluid": {
                       "name": "kubejs:molten_gaia_spirit",
                       "amount": 144
                     },
                     "temperature": 1350,
-                    "output": "tconstruct:gaia_spirit"
+                    "output": "enigmatica:gaia_spirit"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1330,7 +1330,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:gaia_spirit"
+                    "material": "enigmatica:gaia_spirit"
                 }
             ]
         },
@@ -1375,7 +1375,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 1354,
-                    "output": "tconstruct:lumium"
+                    "output": "enigmatica:lumium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1384,7 +1384,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:lumium"
+                    "material": "enigmatica:lumium"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1393,7 +1393,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:lumium",
+                    "material": "enigmatica:lumium",
                     "leftover": {
                       "tag": "forge:ingots/lumium"
                     }
@@ -1405,7 +1405,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:lumium"
+                    "material": "enigmatica:lumium"
                 }
             ]
         },
@@ -1445,13 +1445,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energized_steel",
+                    "input": "enigmatica:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_niotic_crystal",
                       "amount": 144
                     },
                     "temperature": 1250,
-                    "output": "tconstruct:niotic_crystal"
+                    "output": "enigmatica:niotic_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1460,7 +1460,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:niotic_crystal"
+                    "material": "enigmatica:niotic_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1469,7 +1469,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:niotic_crystal",
+                    "material": "enigmatica:niotic_crystal",
                     "leftover": {
                       "item": "powah:crystal_niotic"
                     }
@@ -1512,13 +1512,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energized_steel",
+                    "input": "enigmatica:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_nitro_crystal",
                       "amount": 144
                     },
                     "temperature": 1450,
-                    "output": "tconstruct:nitro_crystal"
+                    "output": "enigmatica:nitro_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1527,7 +1527,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:nitro_crystal"
+                    "material": "enigmatica:nitro_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1536,7 +1536,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:nitro_crystal",
+                    "material": "enigmatica:nitro_crystal",
                     "leftover": {
                       "item": "powah:crystal_nitro"
                     }
@@ -1584,7 +1584,7 @@ onEvent('server.datapack.low_priority', (event) => {
                       "amount": 144
                     },
                     "temperature": 1272,
-                    "output": "tconstruct:signalum"
+                    "output": "enigmatica:signalum"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1593,7 +1593,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:signalum"
+                    "material": "enigmatica:signalum"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1602,7 +1602,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:signalum",
+                    "material": "enigmatica:signalum",
                     "leftover": {
                       "tag": "forge:ingots/signalum"
                     }
@@ -1614,7 +1614,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 9,
-                    "material": "tconstruct:signalum"
+                    "material": "enigmatica:signalum"
                 }
             ]
         },
@@ -1654,13 +1654,13 @@ onEvent('server.datapack.low_priority', (event) => {
                 },
                 {
                     "type": "tconstruct:material_fluid",
-                    "input": "tconstruct:energized_steel",
+                    "input": "enigmatica:energized_steel",
                     "fluid": {
                       "name": "kubejs:molten_spirited_crystal",
                       "amount": 144
                     },
                     "temperature": 1350,
-                    "output": "tconstruct:spirited_crystal"
+                    "output": "enigmatica:spirited_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1669,7 +1669,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 1,
                     "needed": 1,
-                    "material": "tconstruct:spirited_crystal"
+                    "material": "enigmatica:spirited_crystal"
                 },
                 {
                     "type": "tconstruct:material",
@@ -1678,7 +1678,7 @@ onEvent('server.datapack.low_priority', (event) => {
                     },
                     "value": 9,
                     "needed": 1,
-                    "material": "tconstruct:spirited_crystal",
+                    "material": "enigmatica:spirited_crystal",
                     "leftover": {
                       "item": "powah:crystal_spirited"
                     }
@@ -1688,11 +1688,11 @@ onEvent('server.datapack.low_priority', (event) => {
     ];
 
     data.forEach((recipeType) => {
-        event.addJson(`tconstruct:materials/definition/${recipeType.identifier}.json`, recipeType.recipes[0]);
-        event.addJson(`tconstruct:materials/stats/${recipeType.identifier}.json`, recipeType.recipes[1]);
-        event.addJson(`tconstruct:materials/traits/${recipeType.identifier}.json`, recipeType.recipes[2]);
+        event.addJson(`enigmatica:materials/definition/${recipeType.identifier}.json`, recipeType.recipes[0]);
+        event.addJson(`enigmatica:materials/stats/${recipeType.identifier}.json`, recipeType.recipes[1]);
+        event.addJson(`enigmatica:materials/traits/${recipeType.identifier}.json`, recipeType.recipes[2]);
         for(let i = 3; i < recipeType.recipes.length; i++) {
-          event.addJson(`tconstruct:recipes/tools/materials/${recipeType.identifier}/${recipeType.identifier}${i}.json`, recipeType.recipes[i]);
+          event.addJson(`enigmatica:recipes/tools/materials/${recipeType.identifier}/${recipeType.identifier}${i}.json`, recipeType.recipes[i]);
         }
     });
 });

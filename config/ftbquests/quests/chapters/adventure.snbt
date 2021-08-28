@@ -147,7 +147,7 @@
 		{
 			x: 1.5d
 			y: 1.0d
-			subtitle: "We're right here on this very spot"
+			subtitle: "We're not lost, we're right here on this very spot."
 			description: [
 				"Trouble finding your way? Need to find a new desert for some good old-fashioned sand gathering? Maybe a new place to call home, instead?"
 				""
@@ -236,19 +236,11 @@
 				"Finally, build 2 block tall posts on each corner and throw a Scarab into the water. "
 			]
 			id: "7FCB0C026902B90C"
-			tasks: [
-				{
-					id: "4828663C763E74C1"
-					type: "item"
-					item: "atum:scarab"
-				}
-				{
-					id: "45B0E7E11B0D38AF"
-					type: "item"
-					item: "minecraft:sandstone"
-					count: 49L
-				}
-			]
+			tasks: [{
+				id: "4828663C763E74C1"
+				type: "item"
+				item: "atum:scarab"
+			}]
 			rewards: [{
 				id: "4117CA9FCFFD42FA"
 				type: "xp"
@@ -862,6 +854,28 @@
 				type: "item"
 				item: "atum:coin_gold"
 				random_bonus: 7
+			}]
+		}
+		{
+			icon: "ars_nouveau:glyph_summon_wolves"
+			x: 0.0d
+			y: 1.5d
+			subtitle: "Dangit, Moon Moon"
+			description: [
+				"Adventuring alone can be dangerous, but the fear of losing a beloved canine defender might prompt one to leave them home. "
+				""
+				"Fear no more. With Bandages from Save Your Pets, your fallen floofer may be revived to bite again. "
+			]
+			id: "60FAAD35C8C375BD"
+			tasks: [{
+				id: "0CE70793928F6DE0"
+				type: "checkmark"
+				title: "Save Your Pets"
+			}]
+			rewards: [{
+				id: "218393C856E322C3"
+				type: "item"
+				item: "syp:pet_bandage"
 			}]
 		}
 	]

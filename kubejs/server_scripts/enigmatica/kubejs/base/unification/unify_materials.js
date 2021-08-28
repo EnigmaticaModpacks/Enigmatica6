@@ -887,7 +887,7 @@ onEvent('recipes', (event) => {
     }
 
     function occultism_metal_ore_crushing(event, material, ore, dust, ingot) {
-        if (ore == air || ingot == air) {
+        if (ore == air || ingot == air || dust == air) {
             return;
         }
         var output,
@@ -975,7 +975,7 @@ onEvent('recipes', (event) => {
             .id(`pedestals:pedestal_crushing/dust${material}`);
     }
     function pedestals_metal_ore_crushing(event, material, ore, ingot, dust) {
-        if (ore == air || ingot == air) {
+        if (ore == air || ingot == air || dust == air) {
             return;
         }
         var output,

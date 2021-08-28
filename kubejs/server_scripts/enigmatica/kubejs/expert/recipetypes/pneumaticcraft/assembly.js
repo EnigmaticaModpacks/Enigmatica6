@@ -36,6 +36,12 @@ onEvent('recipes', (event) => {
             output: { item: 'mekanism:basic_control_circuit', count: 3 },
             program: 'laser',
             id: 'mekanism:control_circuit/basic'
+        },
+        {
+            input: { item: 'kubejs:basic_lenses_package', count: 1 },
+            output: { item: 'occultism:lenses', count: 3 },
+            program: 'laser',
+            id: 'occultism:crafting/lenses'
         }
     ];
     recipes.forEach((recipe) => {

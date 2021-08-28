@@ -95,8 +95,8 @@
 		}
 		{
 			title: "Magic Clay"
-			x: -6.5d
-			y: 0.0d
+			x: -6.0d
+			y: -1.0d
 			subtitle: "Fate as Malleable as Clay"
 			description: [
 				"By working Source Gems into Clay a focus can be formed which will aid an aspiring magician in harnessing greater powers. "
@@ -122,7 +122,7 @@
 			title: "Marvelous Clay"
 			icon: "ars_nouveau:marvelous_clay"
 			x: -5.5d
-			y: 0.5d
+			y: 0.0d
 			subtitle: "The Marvelous is Built from the Mundane"
 			description: ["Marvelous Clay unlocks the creation of Tier 2 spells. These also require an Apprentice's Spellbook to cast. "]
 			dependencies: ["00000000000003BE"]
@@ -151,7 +151,7 @@
 			title: "Mythical Clay"
 			icon: "ars_nouveau:mythical_clay"
 			x: -4.5d
-			y: 0.0d
+			y: 0.5d
 			subtitle: "Body of Clay, Mind Full of Play"
 			description: ["Mythical Clay unlocks the creation of Tier 3 spells. These also require an Archmage's Spellbook to cast. "]
 			dependencies: ["00000000000003C2"]
@@ -215,8 +215,8 @@
 		{
 			title: "Spell Practice: Flight"
 			icon: "ars_nouveau:glyph_leap"
-			x: -7.5d
-			y: 1.5d
+			x: -6.5d
+			y: 0.5d
 			subtitle: "Gathering the Weave"
 			description: [
 				"Spell Crafting is performed within the spell book and each book can hold up to ten unique spells. Hold your spell book and press Sneak + C (default) to begin."
@@ -252,7 +252,7 @@
 			}]
 		}
 		{
-			x: 2.0d
+			x: 0.5d
 			y: -0.5d
 			subtitle: "Chalk it up to Experience"
 			description: [
@@ -286,7 +286,7 @@
 		}
 		{
 			title: "Spell Parchment"
-			x: 1.0d
+			x: 0.0d
 			y: -1.5d
 			subtitle: "Jousting Snails"
 			description: [
@@ -488,7 +488,7 @@
 			y: -3.0d
 			subtitle: "Boop the Snoot"
 			description: [
-				"An amicable being that's deeply attuned with Source, Whelps may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone."
+				"An amicable being that's deeply attuned with Source, Bookwyrms may be summoned to perform more complicated tasks by casting a prepared Spell Scroll in the area around their Summoning Stone."
 				""
 				"Refer to the Worn Notebook for an in-depth guide on using Whelps. "
 			]
@@ -745,8 +745,8 @@
 		{
 			title: "Spell Practice: Smelting"
 			icon: "ars_nouveau:glyph_smelt"
-			x: -5.5d
-			y: 2.0d
+			x: -5.0d
+			y: 1.5d
 			description: [
 				"With a higher quality spell book comes the ability to channel more potent abilities. "
 				""
@@ -814,8 +814,8 @@
 		}
 		{
 			title: "Tome of Blood"
-			x: -5.5d
-			y: -1.0d
+			x: -4.5d
+			y: -0.5d
 			subtitle: "The Demon Barber of Fleet Street"
 			description: ["Source isn't the only well of power in this world, and some clever Sanguimancers have found a way to bind a spellbook to their Soul Network, allowing them to draw on a deeper well of power to cast their spells. "]
 			dependencies: [
@@ -1010,7 +1010,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: -0.5d
 			y: 0.0d
 			subtitle: "Cast Wide, Your Net"
 			description: ["A traditional casting focus, the Wand may be inscribed with a single spell. Contrary to other casting methods, however, no Form is required. All spells cast from a Casting Wand are automatically Projectile and come Accelerated. This means extra slots for adding Effects or Augments. This makes them ideal for specialized tools. "]
@@ -1481,7 +1481,7 @@
 			description: [
 				"First shalt thou take out the Holy Pin. Then, shalt thou count to three, no more, no less…"
 				""
-				"Useful for summoning Wilden of all sizes. When augmented with body parts from each of the lesser Wilden, the Wilden Chimera will appear to avenge his brethren."
+				"Useful for summoning Wilden of all sizes. When augmented with body parts from each of the lesser Wilden, the Wilden Chimera will appear to avenge his kin."
 			]
 			dependencies: ["5ED080DAA2A7E19A"]
 			id: "6AB291FBD63076A3"
@@ -1549,6 +1549,138 @@
 				id: "3C644C0B2495BC36"
 				type: "command"
 				title: "Rare Ars Nouveau Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			x: 11.0d
+			y: 0.5d
+			subtitle: "Don't You Crittersize Me!"
+			description: ["The only thing keeping these cute critters from being a crunchy treat to larger predators are they swift little feet. A power they’ll gladly lend for the price of friendship."]
+			dependencies: ["33F9C7DCBA952F1E"]
+			id: "3E84BCD316870360"
+			tasks: [{
+				id: "0529231F83AA9DF1"
+				type: "item"
+				item: "ars_nouveau:familiar_carbuncle"
+			}]
+			rewards: [{
+				id: "5A6342EB078DF159"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 9.5d
+			y: -0.5d
+			subtitle: "A Spoonful of Sugar Helps the Medicine Go Down..."
+			description: ["Though quite pleasant to hang around in more domestic environments, Wixies are known to be quite resourceful in a fight, flinging dangerous brews hither and thither to fend off would be attackers. "]
+			dependencies: ["33F9C7DCBA952F1E"]
+			id: "07E7E9443C4FD9EF"
+			tasks: [{
+				id: "43F1E038F8424697"
+				type: "item"
+				item: "ars_nouveau:familiar_wixie"
+			}]
+			rewards: [{
+				id: "5C7AAD35F5713448"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 10.0d
+			y: 0.5d
+			subtitle: "As Luck Would Hoove It"
+			description: ["Powerful Earth Spirits with a knack for finding things, Drygmies impart their knowledge upon their friends, bolstering magic and turning up extra loot."]
+			dependencies: ["33F9C7DCBA952F1E"]
+			id: "7BD59789808E69D2"
+			tasks: [{
+				id: "19106E3C1E5AEBD0"
+				type: "item"
+				item: "ars_nouveau:familiar_drygmy"
+			}]
+			rewards: [{
+				id: "32B10294788455A9"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 11.5d
+			y: -0.5d
+			subtitle: "I Will Dewey Decimate You"
+			description: ["With their deep link to Source, Bookwyrms make excellent allies, lending their strength each of their partner’s spell casts. "]
+			dependencies: ["33F9C7DCBA952F1E"]
+			id: "699DD621303B1301"
+			tasks: [{
+				id: "10D37175AB7E066E"
+				type: "item"
+				item: "ars_nouveau:familiar_bookwyrm"
+			}]
+			rewards: [{
+				id: "3F826BECBAC65089"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			subtitle: "The Queen of Sauce"
+			description: ["Variety is the spice of life, and none know this better than the Sylvan folk. Everything tastes better when they’re around."]
+			dependencies: ["33F9C7DCBA952F1E"]
+			id: "5D0E0E5116239033"
+			tasks: [{
+				id: "02FA381E42107A74"
+				type: "item"
+				item: "ars_nouveau:familiar_sylph"
+			}]
+			rewards: [{
+				id: "5DD6D62E0C457716"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 10.5d
+			y: -1.0d
+			subtitle: "Friendship is Magic"
+			description: [
+				"For ages, sorcerers have been befriending creatures of all sorts to assist in their work. These friendships run deep, forming a symbiotic partnership that grants incredible longevity to the creature and potent abilities to the sorcerer. "
+				""
+				"Perform the Ritual of Binding near an amenable creature to signal your desire to bond with it. Should it acquiesce, it will grant a token that may be added to a spell book to summon them at any time. "
+				""
+				"Each familiar grants unique bonuses that are detailed in the Worn Notebook. Explore each to find just the right friend."
+			]
+			dependencies: ["5ED080DAA2A7E19A"]
+			id: "33F9C7DCBA952F1E"
+			tasks: [{
+				id: "3AA728ECE363A96A"
+				type: "item"
+				item: "ars_nouveau:ritual_binding"
+			}]
+			rewards: [{
+				id: "6DB8DF770C37C6FF"
+				type: "command"
+				title: "Ars Nouveau Rare Loot Box"
 				icon: "kubejs:rare_lootbox"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_ars_nouveau_loot_rare"
 				player_command: false
