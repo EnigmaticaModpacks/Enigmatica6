@@ -39,6 +39,7 @@ onEvent('recipes', (event) => {
                 E: 'immersiveengineering:wirecoil_redstone'
             }
         },
+        {
             output: 'kubejs:basic_lenses_package',
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
