@@ -16,112 +16,126 @@ onEvent('recipes', (event) => {
         {
             // Wasabee Comb Recipes
             output: Item.of('sushigocrafting:rice',3),
-            pattern: ['A  ', '  B', ' A '],
+            pattern: ['AAB'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica6:base/sushigocrafting/rice_combs'
         },
         {
             output: Item.of('sushigocrafting:cucumber',3),
-            pattern: [' A ', '  B', ' A '],
+            pattern: ['ABA'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/cucumber_combs'
         },
         {
             output: Item.of('sushigocrafting:soy_bean',3),
-            pattern: ['  A', '  B', '  A'],
+            pattern: ['A', 'A', 'B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/soy_bean_combs'
         },
         {
             output: Item.of('sushigocrafting:wasabi_root',3),
+            pattern: ['A', 'B', 'A'],
+            key: {
+                A: 'resourcefulbees:wasabee_honeycomb',
+                B: 'resourcefulbees:wax'
+            },
+            id: 'enigmatica:base/sushigocrafting/wasabi_root_combs'
+        },
+        {
+            output: Item.of('sushigocrafting:seaweed',3),
+            pattern: ['A  ', ' A ', '  B'],
+            key: {
+                A: 'resourcefulbees:wasabee_honeycomb',
+                B: 'resourcefulbees:wax'
+            },
+            id: 'enigmatica:base/sushigocrafting/seaweed_combs'
+        },
+        {
+            output: Item.of('sushigocrafting:sesame_seeds',3),
             pattern: ['A  ', ' B ', '  A'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/sesame_seeds_combs'
         },
         {
-            output: Item.of('sushigocrafting:seaweed',3),
-            pattern: ['   ', 'ABA', '   '],
+            output: Item.of('sushigocrafting:nori_sheets',3),
+            pattern: ['AA ', '  B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('sushigocrafting:sesame_seeds',3),
-            pattern: ['  A', ' B ', 'A  '],
-            key: {
-                A: 'resourcefulbees:wasabee_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
-        },
-        {
-            output: Item.of('sushigocrafting:raw_tuna',3),
-            pattern: ['A  ', ' B ', 'A  '],
-            key: {
-                A: 'resourcefulbees:wasabee_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/nori_sheets_combs'
         },
         {
             output: Item.of('sushigocrafting:avocado',3),
-            pattern: [' A ', ' B ', ' C '],
+            pattern: ['ABC'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax',
                 C: 'resourcefulbees:forest_honeycomb'
-            }
-        },
-        {
-            output: Item.of('sushigocrafting:nori_sheets',3),
-            pattern: ['  A', ' B ', '  A'],
-            key: {
-                A: 'resourcefulbees:wasabee_honeycomb',
-                B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/avocado_combs'
         },
         {
             output: Item.of('sushigocrafting:shrimp',3),
-            pattern: [' A ', ' B ', ' C '],
+            pattern: ['ABC'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax',
                 C: 'resourcefulbees:water_honeycomb'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/shrimp_combs'
         },
         {
             output: Item.of('minecraft:cod',3),
-            pattern: ['A  ', 'B  ', 'C  '],
+            pattern: ['ACB'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax',
                 C: 'resourcefulbees:water_honeycomb'
-            }
+            },
+            id: 'enigmatica:base/minecraft/cod_combs'
         },
         {
             output: Item.of('minecraft:salmon',3),
-            pattern: ['  A', '  B', '  C'],
+            pattern: ['A', 'B', 'C'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax',
                 C: 'resourcefulbees:water_honeycomb'
-            }
+            },
+            id: 'enigmatica:base/minecraft/salmon_combs'
         },
         {
             output: Item.of('sushigocrafting:tobiko',3),
-            pattern: ['   ', 'ABC', '   '],
+            pattern: ['A', 'C', 'B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax',
                 C: 'resourcefulbees:water_honeycomb'
-            }
+            },
+            id: 'enigmatica:base/sushigocrafting/tobiko_combs'
+        },
+        {
+            output: Item.of('sushigocrafting:raw_tuna',3),
+            pattern: ['A  ', ' B ', '  C'],
+            key: {
+                A: 'resourcefulbees:wasabee_honeycomb',
+                B: 'resourcefulbees:wax',
+                C: 'resourcefulbees:water_honeycomb'
+            },
+            id: 'enigmatica:base/sushigocrafting/raw_tuna_combs'
         },
         {
             // Add Oak Recipes for Forest Combs
@@ -130,7 +144,8 @@ onEvent('recipes', (event) => {
             key: {
                 C: 'resourcefulbees:forest_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/minecraft/oak_log_combs'
         },
         {
             output: Item.of('minecraft:oak_sapling', 4),
@@ -138,7 +153,8 @@ onEvent('recipes', (event) => {
             key: {
                 C: 'resourcefulbees:forest_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/minecraft/oak_sapling_combs'
         },
         {
             output: Item.of('minecraft:oak_leaves', 16),
@@ -146,7 +162,8 @@ onEvent('recipes', (event) => {
             key: {
                 C: 'resourcefulbees:forest_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/minecraft/oak_leaves_combs'
         },
         {
             // Add Stone Recipes for Rocky Combs
@@ -155,7 +172,8 @@ onEvent('recipes', (event) => {
             key: {
                 C: 'resourcefulbees:rocky_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/minecraft/stone_combs'
         },
         {
             output: Item.of('minecraft:cobblestone', 32),
@@ -163,7 +181,8 @@ onEvent('recipes', (event) => {
             key: {
                 C: 'resourcefulbees:rocky_honeycomb',
                 B: 'resourcefulbees:wax'
-            }
+            },
+            id: 'enigmatica:base/minecraft/cobblestone_combs'
         },
         {
             output: Item.of('minecraft:diorite', 32),
@@ -172,7 +191,8 @@ onEvent('recipes', (event) => {
                 B: 'resourcefulbees:rocky_honeycomb',
                 C: 'resourcefulbees:wax',
                 D: 'resourcefulbees:nether_quartz_honeycomb'
-            }
+            },
+            id: 'enigmatica:base/minecraft/diorite_combs'
         },
         {
             output: Item.of('minecraft:andesite', 32),
@@ -181,7 +201,8 @@ onEvent('recipes', (event) => {
                 B: 'resourcefulbees:rocky_honeycomb',
                 C: 'resourcefulbees:wax',
                 D: 'resourcefulbees:nether_quartz_honeycomb'
-            }
+            },
+            id: 'enigmatica:base/minecraft/andesite_combs'
         },
         {
             // Add Wet Comb -> Water Bucket Recipe
@@ -191,7 +212,8 @@ onEvent('recipes', (event) => {
                 C: 'resourcefulbees:water_honeycomb',
                 B: 'resourcefulbees:wax',
                 A: 'minecraft:bucket'
-            }
+            },
+            id: 'enigmatica:base/minecraft/water_bucket_combs'
         }
     ];
 
