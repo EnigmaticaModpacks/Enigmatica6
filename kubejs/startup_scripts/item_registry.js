@@ -28,7 +28,7 @@ onEvent('item.registry', (event) => {
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' }
-       ];
+    ];
 
     let metals = [
         'aluminum',
