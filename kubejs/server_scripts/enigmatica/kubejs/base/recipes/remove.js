@@ -90,6 +90,7 @@ onEvent('recipes', (event) => {
         'create:fill_minecraft_bucket_with_create_honey',
 
         'eidolon:tallow',
+        'eidolon:smelt_stone_brick',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'environmental:misc/cherries/cherry_pie',
