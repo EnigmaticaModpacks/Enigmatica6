@@ -954,6 +954,13 @@ onEvent('recipes', (event) => {
                 F: 'rftoolsbase:machine_frame'
             },
             id: 'rftoolscontrol:workbench'
+        },
+        {
+            output: Item.of('eidolon:lead_ingot', 6),
+            pattern: ['AA', 'AA', 'AA'],
+            key: {
+                A: '#forge:ingots/lead'
+            }
         }
     ];
 
