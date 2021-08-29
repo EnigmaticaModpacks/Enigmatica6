@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
                 ritual_dummy: {
                     item: 'occultism:ritual_dummy/craft_infused_lenses'
                 },
-                ngredients: [
+                ingredients: [
                     { item: 'occultism:lenses' },
                     { tag: 'forge:ingots/lumium' },
                     { tag: 'forge:ingots/lumium' },
