@@ -83,6 +83,16 @@ onEvent('recipes', (event) => {
                 F: 'immersiveengineering:logic_unit'
             },
             id: 'refinedstorage:controller'
+        },
+        {
+            output: Item.of('create:crushing_wheel', 2),
+            pattern: [' AAA ', 'AAPAA', 'APSPA', 'AAPAA', ' AAA '],
+            key: {
+                A: 'create:andesite_alloy',
+                S: 'create:shaft',
+                P: 'create:brass_casing'
+            },
+            id: 'create:mechanical_crafting/crushing_wheel'
         }
     ];
 

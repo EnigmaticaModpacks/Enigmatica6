@@ -961,6 +961,14 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/lead'
             }
+        },
+        {
+            output: Item.of('atum:marl', 4),
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'atum:sand',
+                B: 'minecraft:clay'
+            }
         }
     ];
 
