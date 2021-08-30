@@ -123,6 +123,11 @@ onEvent('recipes', (event) => {
             input: 'aquaculture:neptunium_bow',
             output: Item.of('aquaculture:neptunium_nugget', 3),
             xp: 3
+        },
+        {
+            input: 'atum:marl',
+            output: 'atum:ceramic_white',
+            xp: 0.3
         }
     ];
 

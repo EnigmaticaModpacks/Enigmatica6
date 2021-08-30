@@ -149,6 +149,8 @@ onEvent('recipes', (event) => {
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
 
+        'minecraft:crystal_glass',
+
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
 
