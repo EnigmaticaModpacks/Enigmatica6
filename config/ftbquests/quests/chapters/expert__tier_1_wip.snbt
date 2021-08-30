@@ -233,5 +233,119 @@
 				count: 27L
 			}]
 		}
+		{
+			x: 5.5d
+			y: 9.0d
+			dependencies: ["155D0B93052756E8"]
+			id: "0E16BA23BA46FCB1"
+			tasks: [{
+				id: "3A5D83300A377FFA"
+				type: "item"
+				item: "thermal:tar"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 6.0d
+			id: "155D0B93052756E8"
+			tasks: [{
+				id: "27B6802AAE0151C1"
+				type: "item"
+				item: "thermal:machine_pyrolyzer"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 7.0d
+			dependencies: ["155D0B93052756E8"]
+			id: "2E1CD31A36FB6FED"
+			tasks: [{
+				id: "1577A8526C9E0FF8"
+				type: "item"
+				item: "emendatusenigmatica:coke_gem"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 8.0d
+			dependencies: ["2E1CD31A36FB6FED"]
+			id: "66DFE951BC91F3CA"
+			tasks: [{
+				id: "0C76A97EBFA1AEE0"
+				type: "item"
+				item: "emendatusenigmatica:coke_dust"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 9.0d
+			dependencies: ["66DFE951BC91F3CA"]
+			id: "693753CCB00C2A91"
+			tasks: [{
+				id: "0AF24E8708A45902"
+				type: "item"
+				item: "emendatusenigmatica:steel_ingot"
+			}]
+		}
+		{
+			x: 3.5d
+			y: 9.5d
+			id: "36F6619A78662D13"
+			tasks: [{
+				id: "5B8A412E3F971782"
+				type: "item"
+				item: "minecraft:obsidian"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 9.5d
+			id: "15783B9E18D2320C"
+			tasks: [{
+				id: "471FCECF9E5D4A2C"
+				type: "item"
+				item: "minecraft:tnt"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 10.0d
+			dependencies: [
+				"693753CCB00C2A91"
+				"0E16BA23BA46FCB1"
+				"36F6619A78662D13"
+				"15783B9E18D2320C"
+			]
+			id: "3DD1F984ED880148"
+			tasks: [{
+				id: "0CDA65B3EB419AE4"
+				type: "item"
+				item: "kubejs:superheated_steel_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 11.0d
+			dependencies: ["3DD1F984ED880148"]
+			id: "00EF0CAB3FB28938"
+			tasks: [{
+				id: "1B2F44B4F78173E4"
+				type: "item"
+				item: "kubejs:hot_compressed_iron_ingot"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 12.5d
+			shape: "octagon"
+			dependencies: ["00EF0CAB3FB28938"]
+			size: 1.5d
+			id: "60DF22034242502E"
+			tasks: [{
+				id: "58F6F9B04F87F83E"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
 	]
 }
