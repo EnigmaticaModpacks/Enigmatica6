@@ -29,7 +29,15 @@ onEvent('item.registry', (event) => {
     const assemblyTableItems = [
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
-        { name: 'basic_lenses_package', texture: 'assembly_package_filled' }
+        { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
+        { name: 'pneumatic_helmet_package', texture: 'assembly_package_filled' },
+        { name: 'pneumatic_helmet_assembly', texture: 'assembly_package_processing' },
+        { name: 'pneumatic_chestplate_package', texture: 'assembly_package_filled' },
+        { name: 'pneumatic_chestplate_assembly', texture: 'assembly_package_processing' },
+        { name: 'pneumatic_leggings_package', texture: 'assembly_package_filled' },
+        { name: 'pneumatic_leggings_assembly', texture: 'assembly_package_processing' },
+        { name: 'pneumatic_boots_package', texture: 'assembly_package_filled' },
+        { name: 'pneumatic_boots_assembly', texture: 'assembly_package_processing' }
     ];
 
     let metals = [

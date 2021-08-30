@@ -1129,6 +1129,240 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: 'ars_nouveau:spell_bow'
             },
+            {
+                inputs: [
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber'
+                ],
+                reagent: 'atum:wanderer_helmet',
+                output: 'ars_nouveau:novice_hood',
+                count: 1,
+                id: 'ars_nouveau:novice_hood'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber'
+                ],
+                reagent: 'atum:wanderer_chest',
+                output: 'ars_nouveau:novice_robes',
+                count: 1,
+                id: 'ars_nouveau:novice_robes'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber'
+                ],
+                reagent: 'atum:wanderer_legs',
+                output: 'ars_nouveau:novice_leggings',
+                count: 1,
+                id: 'ars_nouveau:novice_leggings'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber',
+                    'ars_nouveau:mana_fiber'
+                ],
+                reagent: 'atum:wanderer_boots',
+                output: 'ars_nouveau:novice_boots',
+                count: 1,
+                id: 'ars_nouveau:novice_boots'
+            },
+
+            {
+                inputs: [
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber'
+                ],
+                reagent: 'atum:wanderer_helmet',
+                output: 'ars_nouveau:apprentice_hood',
+                count: 1,
+                id: 'ars_nouveau:apprentice_hood'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber'
+                ],
+                reagent: 'atum:wanderer_chest',
+                output: 'ars_nouveau:apprentice_robes',
+                count: 1,
+                id: 'ars_nouveau:apprentice_robes'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber'
+                ],
+                reagent: 'atum:wanderer_legs',
+                output: 'ars_nouveau:apprentice_leggings',
+                count: 1,
+                id: 'ars_nouveau:apprentice_leggings'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber',
+                    'ars_nouveau:blaze_fiber'
+                ],
+                reagent: 'atum:wanderer_boots',
+                output: 'ars_nouveau:apprentice_boots',
+                count: 1,
+                id: 'ars_nouveau:apprentice_boots'
+            },
+
+            {
+                inputs: [
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manaweave_helmet',
+                output: 'ars_nouveau:archmage_hood',
+                count: 1,
+                id: 'ars_nouveau:archmage_hood'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manaweave_chestplate',
+                output: 'ars_nouveau:archmage_robes',
+                count: 1,
+                id: 'ars_nouveau:archmage_robes'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manaweave_leggings',
+                output: 'ars_nouveau:archmage_leggings',
+                count: 1,
+                id: 'ars_nouveau:archmage_leggings'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manaweave_boots',
+                output: 'ars_nouveau:archmage_boots',
+                count: 1,
+                id: 'ars_nouveau:archmage_boots'
+            },
+            {
+                inputs: [
+                    'botania:livingwood_twig',
+                    '#botania:runes/spring',
+                    'botania:livingwood_twig',
+                    '#forge:ingots/terrasteel',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manasteel_helmet',
+                output: 'botania:terrasteel_helmet',
+                count: 1,
+                id: 'botania:terrasteel_helmet'
+            },
+            {
+                inputs: [
+                    'botania:livingwood_twig',
+                    '#botania:runes/summer',
+                    'botania:livingwood_twig',
+                    '#forge:ingots/terrasteel',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manasteel_chestplate',
+                output: 'botania:terrasteel_chestplate',
+                count: 1,
+                id: 'botania:terrasteel_chestplate'
+            },
+            {
+                inputs: [
+                    'botania:livingwood_twig',
+                    '#botania:runes/autumn',
+                    'botania:livingwood_twig',
+                    '#forge:ingots/terrasteel',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manasteel_leggings',
+                output: 'botania:terrasteel_leggings',
+                count: 1,
+                id: 'botania:terrasteel_leggings'
+            },
+            {
+                inputs: [
+                    'botania:livingwood_twig',
+                    '#botania:runes/winter',
+                    'botania:livingwood_twig',
+                    '#forge:ingots/terrasteel',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber',
+                    '#forge:ingots/terrasteel',
+                    'ars_nouveau:end_fiber'
+                ],
+                reagent: 'botania:manasteel_boots',
+                output: 'botania:terrasteel_boots',
+                count: 1,
+                id: 'botania:terrasteel_boots'
+            },
 
             /// Patchouli Removals
             {
