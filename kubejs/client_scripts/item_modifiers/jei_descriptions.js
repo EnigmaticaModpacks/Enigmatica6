@@ -276,13 +276,21 @@ onEvent('jei.information', (event) => {
             items: ['minecraft:dragon_egg'],
             description: [
                 `More eggs may be obtained by summoning the End Dragon again.`,
-                ``,
+                ` `,
                 `To summon, place an End Crystal on each of the cardinal directions of the End Portal in the End.`
             ]
         },
         {
             items: ['byg:leaf_pile'],
             description: [`Gathered with Shears.`]
+        },
+        {
+            items: ['eidolon:soul_shard'],
+            description: [
+                `Obtained by performing a Crystallization Ritual near undead mobs. The ritual can be found in the Ars Ecclesia.`,
+                ` `,
+                `Alternatively obtained by killing undead mobs with a Reaper's Scythe.`
+            ]
         }
     ];
 
