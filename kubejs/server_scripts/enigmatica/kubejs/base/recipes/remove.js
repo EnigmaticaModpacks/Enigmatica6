@@ -90,6 +90,7 @@ onEvent('recipes', (event) => {
         'create:fill_minecraft_bucket_with_create_honey',
 
         'eidolon:tallow',
+        'eidolon:smelt_stone_brick',
         'engineersdecor:dependent/slag_brick_block_recipe',
 
         'environmental:misc/cherries/cherry_pie',
@@ -147,6 +148,8 @@ onEvent('recipes', (event) => {
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
+
+        'minecraft:crystal_glass',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',

@@ -1,5 +1,5 @@
 onEvent('recipes', (event) => {
-    if (global.isExpertMode == false) {
+    if (global.isNormalMode == false) {
         return;
     }
     const data = {
@@ -17,12 +17,13 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:lenses' },
-                    { tag: 'forge:ingots/lumium' },
-                    { tag: 'forge:ingots/lumium' },
-                    { tag: 'forge:ingots/arcane_gold' },
-                    { item: 'bloodmagic:reagentsight' }
+                    { tag: 'forge:ingots/silver' },
+                    { tag: 'forge:ingots/silver' },
+                    { tag: 'forge:ingots/gold' }
                 ],
-                result: { item: 'occultism:infused_lenses' },
+                result: {
+                    item: 'occultism:infused_lenses'
+                },
                 id: 'occultism:ritual/craft_infused_lenses'
             },
             {
@@ -37,14 +38,15 @@ onEvent('recipes', (event) => {
                     item: 'occultism:ritual_dummy/craft_infused_pickaxe'
                 },
                 ingredients: [
+                    { tag: 'forge:rods/wooden' },
+                    { tag: 'forge:rods/wooden' },
                     { item: 'occultism:spirit_attuned_pickaxe_head' },
-                    { item: 'betterendforge:leather_wrapped_stick' },
-                    { item: 'eidolon:ender_calx' },
-                    { item: 'betterendforge:leather_wrapped_stick' },
-                    { tag: 'forge:nuggets/nebu' },
-                    { tag: 'forge:nuggets/nebu' }
+                    { tag: 'forge:ingots/silver' },
+                    { tag: 'forge:ingots/silver' }
                 ],
-                result: { item: 'occultism:infused_pickaxe' },
+                result: {
+                    item: 'occultism:infused_pickaxe'
+                },
                 id: 'occultism:ritual/craft_infused_pickaxe'
             },
             {
@@ -59,16 +61,18 @@ onEvent('recipes', (event) => {
                     item: 'occultism:ritual_dummy/craft_soul_gem'
                 },
                 ingredients: [
-                    { item: 'eidolon:lesser_soul_gem' },
-                    { item: 'eidolon:gold_inlay' },
-                    { item: 'bloodmagic:reagentholding' },
-                    { item: 'eidolon:gold_inlay' },
-                    { item: 'glassential:glass_ghostly' },
-                    { item: 'glassential:glass_ghostly' },
-                    { item: 'glassential:glass_ghostly' },
-                    { item: 'glassential:glass_ghostly' }
+                    { tag: 'forge:gems/diamond' },
+                    { tag: 'forge:ingots/copper' },
+                    { tag: 'forge:ingots/silver' },
+                    { tag: 'forge:ingots/gold' },
+                    { item: 'minecraft:soul_sand' },
+                    { item: 'minecraft:soul_sand' },
+                    { item: 'minecraft:soul_sand' },
+                    { item: 'minecraft:soul_sand' }
                 ],
-                result: { item: 'occultism:soul_gem' },
+                result: {
+                    item: 'occultism:soul_gem'
+                },
                 id: 'occultism:ritual/craft_soul_gem'
             },
             {
@@ -88,16 +92,14 @@ onEvent('recipes', (event) => {
                     item: 'occultism:ritual_dummy/summon_wild_afrit'
                 },
                 ingredients: [
-                    { item: 'eidolon:gold_inlay' },
-                    { tag: 'botania:runes/fire' },
-                    { item: 'eidolon:crimson_essence' },
-                    { tag: 'botania:runes/wrath' },
-                    { item: 'ars_nouveau:red_archwood_wood' },
-                    { item: 'ars_nouveau:red_archwood_wood' },
-                    { item: 'ars_nouveau:red_archwood_wood' },
-                    { item: 'ars_nouveau:red_archwood_wood' }
+                    { tag: 'forge:netherrack' },
+                    { tag: 'forge:gems/quartz' },
+                    { item: 'minecraft:flint_and_steel' },
+                    { item: 'minecraft:gunpowder' }
                 ],
-                result: { item: 'occultism:jei_dummy/none' },
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
                 id: 'occultism:ritual/summon_wild_afrit'
             },
             {
@@ -112,20 +114,14 @@ onEvent('recipes', (event) => {
                     item: 'occultism:ritual_dummy/craft_dimensional_matrix'
                 },
                 ingredients: [
-                    { tag: 'quark:crystal_clusters' },
-                    { tag: 'quark:crystal_clusters' },
-                    { tag: 'quark:crystal_clusters' },
-                    { tag: 'quark:crystal_clusters' },
-                    { item: 'eidolon:ender_calx' },
-                    { item: 'eidolon:ender_calx' },
-                    { item: 'eidolon:ender_calx' },
-                    { item: 'eidolon:ender_calx' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' }
+                    { tag: 'forge:storage_blocks/quartz' },
+                    { tag: 'forge:storage_blocks/quartz' },
+                    { tag: 'forge:storage_blocks/quartz' },
+                    { tag: 'forge:ender_pearls' }
                 ],
-                result: { item: 'occultism:dimensional_matrix' },
+                result: {
+                    item: 'occultism:dimensional_matrix'
+                },
                 id: 'occultism:ritual/craft_dimensional_matrix'
             },
             {
@@ -141,19 +137,13 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:otherstone_pedestal' },
-                    { tag: 'forge:storage_blocks/bronze' },
-                    { tag: 'botania:runes/greed' },
-                    { tag: 'forge:storage_blocks/bronze' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { tag: 'quark:runes' },
-                    { tag: 'quark:runes' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' }
+                    { tag: 'forge:storage_blocks/copper' },
+                    { item: 'minecraft:blaze_powder' },
+                    { item: 'occultism:spirit_attuned_gem' }
                 ],
-                result: { item: 'occultism:storage_stabilizer_tier1' },
+                result: {
+                    item: 'occultism:storage_stabilizer_tier1'
+                },
                 id: 'occultism:ritual/craft_stabilizer_tier1'
             },
             {
@@ -170,18 +160,13 @@ onEvent('recipes', (event) => {
                 ingredients: [
                     { item: 'occultism:storage_stabilizer_tier1' },
                     { tag: 'forge:storage_blocks/silver' },
-                    { tag: 'botania:runes/pride' },
-                    { tag: 'forge:storage_blocks/silver' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { tag: 'forge:gems/dimensional' },
-                    { tag: 'forge:gems/dimensional' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' }
+                    { item: 'minecraft:ghast_tear' },
+                    { item: 'occultism:spirit_attuned_gem' },
+                    { item: 'occultism:spirit_attuned_gem' }
                 ],
-                result: { item: 'occultism:storage_stabilizer_tier2' },
+                result: {
+                    item: 'occultism:storage_stabilizer_tier2'
+                },
                 id: 'occultism:ritual/craft_stabilizer_tier2'
             },
             {
@@ -197,19 +182,13 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:storage_stabilizer_tier2' },
-                    { tag: 'forge:storage_blocks/electrum' },
-                    { tag: 'botania:runes/sloth' },
-                    { tag: 'forge:storage_blocks/electrum' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'astralsorcery:celestial_crystal' },
-                    { item: 'astralsorcery:celestial_crystal' },
-                    { item: 'bloodmagic:steadfastcrystal' },
-                    { item: 'bloodmagic:steadfastcrystal' },
-                    { item: 'bloodmagic:steadfastcrystal' },
-                    { item: 'bloodmagic:steadfastcrystal' }
+                    { tag: 'forge:storage_blocks/gold' },
+                    { item: 'minecraft:nether_star' },
+                    { item: 'occultism:spirit_attuned_crystal' }
                 ],
-                result: { item: 'occultism:storage_stabilizer_tier3' },
+                result: {
+                    item: 'occultism:storage_stabilizer_tier3'
+                },
                 id: 'occultism:ritual/craft_stabilizer_tier3'
             },
             {
@@ -226,18 +205,13 @@ onEvent('recipes', (event) => {
                 ingredients: [
                     { item: 'occultism:storage_stabilizer_tier3' },
                     { tag: 'forge:storage_blocks/iesnium' },
-                    { tag: 'botania:runes/envy' },
-                    { tag: 'forge:storage_blocks/iesnium' },
+                    { item: 'minecraft:dragon_head' },
                     { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'betterendforge:eternal_crystal' },
-                    { item: 'betterendforge:eternal_crystal' },
-                    { tag: 'atum:godshards' },
-                    { tag: 'atum:godshards' },
-                    { tag: 'atum:godshards' },
-                    { tag: 'atum:godshards' }
+                    { item: 'occultism:spirit_attuned_crystal' }
                 ],
-                result: { item: 'occultism:storage_stabilizer_tier4' },
+                result: {
+                    item: 'occultism:storage_stabilizer_tier4'
+                },
                 id: 'occultism:ritual/craft_stabilizer_tier4'
             },
             {
@@ -254,11 +228,13 @@ onEvent('recipes', (event) => {
                 ingredients: [
                     { item: 'occultism:magic_lamp_empty' },
                     { item: 'occultism:iesnium_pickaxe' },
-                    { item: 'atum:ptah_godforged_block' },
+                    { tag: 'forge:ores/gold' },
                     { tag: 'forge:storage_blocks/iesnium' },
                     { item: 'occultism:spirit_attuned_crystal' }
                 ],
-                result: { item: 'occultism:miner_djinni_ores' },
+                result: {
+                    item: 'occultism:miner_djinni_ores'
+                },
                 id: 'occultism:ritual/craft_miner_djinni_ores'
             },
             {
@@ -275,10 +251,12 @@ onEvent('recipes', (event) => {
                 ingredients: [
                     { item: 'occultism:magic_lamp_empty' },
                     { item: 'occultism:iesnium_pickaxe' },
-                    { tag: 'atum:relic_non_dirty/brooch' },
-                    { item: 'atum:limestone_gravel' }
+                    { tag: 'forge:ores/iron' },
+                    { item: 'minecraft:gravel' }
                 ],
-                result: { item: 'occultism:miner_foliot_unspecialized' },
+                result: {
+                    item: 'occultism:miner_foliot_unspecialized'
+                },
                 id: 'occultism:ritual/craft_miner_foliot_unspecialized'
             },
             {
@@ -297,12 +275,13 @@ onEvent('recipes', (event) => {
                     { item: 'occultism:otherstone' },
                     { item: 'occultism:otherstone' },
                     { item: 'occultism:otherstone' },
-                    { item: 'atum:scarab' },
+                    { tag: 'forge:ingots/gold' },
                     { tag: 'forge:storage_blocks/iesnium' },
-                    { item: 'occultism:spirit_attuned_crystal' },
-                    { item: 'atum:scarab' }
+                    { item: 'occultism:spirit_attuned_crystal' }
                 ],
-                result: { item: 'occultism:dimensional_mineshaft' },
+                result: {
+                    item: 'occultism:dimensional_mineshaft'
+                },
                 id: 'occultism:ritual/craft_dimensional_mineshaft'
             },
             {
@@ -318,11 +297,14 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:soul_gem' },
-                    { item: 'eidolon:gold_inlay' },
-                    { tag: 'atum:relic_non_dirty/ring' },
-                    { item: 'eidolon:gold_inlay' }
+                    { tag: 'forge:ingots/gold' },
+                    { tag: 'forge:ingots/gold' },
+                    { tag: 'forge:ingots/silver' },
+                    { tag: 'forge:ingots/silver' }
                 ],
-                result: { item: 'occultism:familiar_ring' },
+                result: {
+                    item: 'occultism:familiar_ring'
+                },
                 id: 'occultism:ritual/craft_familiar_ring'
             },
             {
@@ -338,12 +320,13 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:otherstone_pedestal' },
-                    { item: 'eidolon:gold_inlay' },
-                    { tag: 'forge:ingots/nebu' },
-                    { item: 'eidolon:gold_inlay' },
-                    { item: 'botania:corporea_spark_master' }
+                    { tag: 'forge:ingots/gold' },
+                    { tag: 'forge:ingots/gold' },
+                    { tag: 'forge:ingots/gold' }
                 ],
-                result: { item: 'occultism:storage_controller_base' },
+                result: {
+                    item: 'occultism:storage_controller_base'
+                },
                 id: 'occultism:ritual/craft_storage_controller_base'
             },
             {
@@ -359,11 +342,13 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:wormhole_frame' },
-                    { item: 'botania:corporea_spark' },
-                    { item: 'botania:corporea_funnel' },
-                    { item: 'botania:corporea_spark' }
+                    { tag: 'forge:ender_pearls' },
+                    { tag: 'forge:gems/quartz' },
+                    { tag: 'forge:gems/quartz' }
                 ],
-                result: { item: 'occultism:stable_wormhole' },
+                result: {
+                    item: 'occultism:stable_wormhole'
+                },
                 id: 'occultism:ritual/craft_stable_wormhole'
             },
             {
@@ -379,11 +364,13 @@ onEvent('recipes', (event) => {
                 },
                 ingredients: [
                     { item: 'occultism:storage_remote_inert' },
-                    { item: 'botania:corporea_spark' },
-                    { item: 'atum:scarab' },
-                    { item: 'botania:corporea_spark' }
+                    { tag: 'forge:ender_pearls' },
+                    { tag: 'forge:ender_pearls' },
+                    { tag: 'forge:gems/quartz' }
                 ],
-                result: { item: 'occultism:storage_remote' },
+                result: {
+                    item: 'occultism:storage_remote'
+                },
                 id: 'occultism:ritual/craft_storage_remote'
             },
             {
@@ -398,11 +385,11 @@ onEvent('recipes', (event) => {
                     item: 'occultism:ritual_dummy/craft_satchel'
                 },
                 ingredients: [
-                    { item: 'ironchest:silver_chest' },
-                    { item: 'ars_nouveau:end_fiber' },
-                    { item: 'alexsmobs:kangaroo_hide' },
-                    { item: 'ars_nouveau:end_fiber' },
-                    { tag: 'forge:ingots/infused_iron' }
+                    { tag: 'forge:chests/wooden' },
+                    { tag: 'forge:leather' },
+                    { tag: 'forge:leather' },
+                    { tag: 'forge:string' },
+                    { tag: 'forge:ingots/silver' }
                 ],
                 result: {
                     item: 'occultism:satchel'
