@@ -30,7 +30,9 @@ onEvent('recipes', (event) => {
         'darkutils:crafting/rune_damage_player',
         /emendatusenigmatica:alloy_dust/,
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
-        'refinedstorage:quartz_enriched_iron'
+        'refinedstorage:quartz_enriched_iron',
+        'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+        'pneumaticcraft:explosion_crafting/compressed_iron_block'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];

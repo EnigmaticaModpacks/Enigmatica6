@@ -21,7 +21,9 @@ onEvent('item.registry', (event) => {
         'cutting_essence',
         'rftools_machine_frame_parts',
         'unassembled_rftools_machine_frame_top',
-        'unassembled_rftools_machine_frame'
+        'unassembled_rftools_machine_frame',
+        'superheated_steel_ingot',
+        'hot_compressed_iron_ingot'
     ];
 
     const assemblyTableItems = [
