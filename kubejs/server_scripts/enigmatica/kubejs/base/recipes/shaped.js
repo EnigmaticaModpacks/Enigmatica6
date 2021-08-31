@@ -969,6 +969,15 @@ onEvent('recipes', (event) => {
                 A: 'atum:sand',
                 B: 'minecraft:clay'
             }
+        },
+        {
+            output: 'minecraft:beehive',
+            pattern: ['AAA','BBB','AAA'],
+            key: {
+                A: '#minecraft:planks',
+                B: '#resourcefulbees:resourceful_honeycomb'
+            },
+            id: 'minecraft:beehive'
         }
     ];
 
