@@ -60,6 +60,19 @@ onEvent('recipes', (event) => {
                 F: 'occultism:dimensional_matrix'
             },
             id: 'refinedstorage:1k_storage_part'
+        },
+        {
+            output: 'kubejs:64k_fluid_storage_part_package',
+            pattern: ['AAA', 'BCB', 'DEF'],
+            key: {
+                A: '#forge:gems/silicon',
+                B: 'mekanism:dynamic_tank',
+                C: 'mekanism:cardboard_box',
+                D: '#forge:circuits/basic',
+                E: 'refinedstorage:quartz_enriched_iron',
+                F: 'occultism:dimensional_matrix'
+            },
+            id: 'refinedstorage:64k_fluid_storage_part'
         }
     ];
 
