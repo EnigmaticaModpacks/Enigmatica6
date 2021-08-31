@@ -19,20 +19,20 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         // Requires creation of Red Chalk to place outside of Atum
+
         {
-            restrictions.push({
-                type: 'or',
-                name: 'occultism:golden_sacrificial_bowl',
-                block: true,
-                first: {
-                    type: 'dimension',
-                    dimension: 'atum:atum'
-                },
-                second: {
-                    type: 'gamestage',
-                    stage: 'red_chalk'
-                }
-            })
+            type: 'or',
+            name: 'occultism:golden_sacrificial_bowl',
+            block: true,
+            first: {
+                type: 'dimension',
+                dimension: 'atum:atum'
+            },
+            second: {
+                type: 'gamestage',
+                stage: 'red_chalk'
+            }
+        }
     ];
 
     let restrictedBloodMagicBlocks = [
