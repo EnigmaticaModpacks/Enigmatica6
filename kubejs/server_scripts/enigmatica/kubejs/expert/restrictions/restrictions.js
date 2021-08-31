@@ -17,7 +17,22 @@ onEvent('server.datapack.high_priority', (event) => {
                 type: 'gamestage',
                 stage: 'hellfire_forge'
             }
-        }
+        },
+        // Requires creation of Red Chalk to place outside of Atum
+        {
+            restrictions.push({
+                type: 'or',
+                name: 'occultism:golden_sacrificial_bowl',
+                block: true,
+                first: {
+                    type: 'dimension',
+                    dimension: 'atum:atum'
+                },
+                second: {
+                    type: 'gamestage',
+                    stage: 'red_chalk'
+                }
+            })
     ];
 
     let restrictedBloodMagicBlocks = [
@@ -31,10 +46,10 @@ onEvent('server.datapack.high_priority', (event) => {
         'bloodmagic:incensealtar'
     ];
     // Requires creation Master Blood Orb to place outside of Undergarden
-    restrictedBloodMagicBlocks.forEach((item) => {
+    restrictedBloodMagicBlocks.forEach((block) => {
         restrictions.push({
             type: 'or',
-            name: item,
+            name: block,
             block: true,
             first: {
                 type: 'dimension',
@@ -43,31 +58,6 @@ onEvent('server.datapack.high_priority', (event) => {
             second: {
                 type: 'gamestage',
                 stage: 'master_blood_orb'
-            }
-        });
-    });
-
-    let restrictedOccultismItems = [
-        'occultism:chalk_white',
-        'occultism:chalk_gold',
-        'occultism:chalk_purple',
-        'occultism:chalk_red',
-        'occultism:golden_sacrificial_bowl'
-    ];
-    // Requires creation of Red Chalk to place outside of Atum
-    restrictedOccultismItems.forEach((item) => {
-        restrictions.push({
-            type: 'or',
-            name: item,
-            block: true,
-            item: true,
-            first: {
-                type: 'dimension',
-                dimension: 'atum:atum'
-            },
-            second: {
-                type: 'gamestage',
-                stage: 'red_chalk'
             }
         });
     });
