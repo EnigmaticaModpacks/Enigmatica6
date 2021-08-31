@@ -69,3 +69,7 @@ setMode = (player) => {
         player.data.ftbquests.reset('0000000000000FEC');
     }
 };
+
+const playerHas = (item, player) => {
+    return player.inventory.find(item) != -1;
+};
