@@ -128,21 +128,6 @@ onEvent('jei.information', (event) => {
             description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
         },
         {
-            items: [
-                'resourcefulbees:brass_bee',
-                'resourcefulbees:bronze_bee',
-                'resourcefulbees:constantan_bee',
-                'resourcefulbees:electrum_bee',
-                'resourcefulbees:enderium_bee',
-                'resourcefulbees:invar_bee',
-                'resourcefulbees:lumium_bee',
-                'resourcefulbees:signalum_bee'
-            ],
-            description: [
-                "Alloy Bees are made through Block to Item Mutations. Click this Bee's spawn egg in JEI for specifics."
-            ]
-        },
-        {
             items: ['minecraft:nautilus_shell'],
             description: ['Obtained by killing Nautilus, found in Oceans.']
         },
