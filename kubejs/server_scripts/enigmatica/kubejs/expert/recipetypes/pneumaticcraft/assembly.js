@@ -42,6 +42,48 @@ onEvent('recipes', (event) => {
             output: { item: 'occultism:lenses', count: 3 },
             program: 'laser',
             id: 'occultism:crafting/lenses'
+        },
+
+        {
+            input: { item: 'kubejs:pneumatic_helmet_package', count: 1 },
+            output: { item: 'kubejs:pneumatic_helmet_assembly', count: 1 },
+            program: 'drill'
+        },
+        {
+            input: { item: 'kubejs:pneumatic_helmet_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:pneumatic_helmet', count: 1 },
+            program: 'laser'
+        },
+
+        {
+            input: { item: 'kubejs:pneumatic_chestplate_package', count: 1 },
+            output: { item: 'kubejs:pneumatic_chestplate_assembly', count: 1 },
+            program: 'drill'
+        },
+        {
+            input: { item: 'kubejs:pneumatic_chestplate_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:pneumatic_chestplate', count: 1 },
+            program: 'laser'
+        },
+        {
+            input: { item: 'kubejs:pneumatic_leggings_package', count: 1 },
+            output: { item: 'kubejs:pneumatic_leggings_assembly', count: 1 },
+            program: 'drill'
+        },
+        {
+            input: { item: 'kubejs:pneumatic_leggings_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:pneumatic_leggings', count: 1 },
+            program: 'laser'
+        },
+        {
+            input: { item: 'kubejs:pneumatic_boots_package', count: 1 },
+            output: { item: 'kubejs:pneumatic_boots_assembly', count: 1 },
+            program: 'drill'
+        },
+        {
+            input: { item: 'kubejs:pneumatic_boots_assembly', count: 1 },
+            output: { item: 'pneumaticcraft:pneumatic_boots', count: 1 },
+            program: 'laser'
         }
     ];
     recipes.forEach((recipe) => {
