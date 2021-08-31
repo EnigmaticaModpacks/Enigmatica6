@@ -182,6 +182,15 @@ onEvent('recipes', (event) => {
                 consumptionRate: 1000,
                 drainRate: 100,
                 id: 'waystones:warp_stone'
+            },
+            {
+                input: 'undergarden:gloom_o_lantern',
+                output: 'botania:fel_pumpkin',
+                syphon: 1000,
+                altarLevel: 0,
+                consumptionRate: 5,
+                drainRate: 5,
+                id: 'botania:fel_pumpkin'
             }
         ]
     };

@@ -47,6 +47,19 @@ onEvent('recipes', (event) => {
                 B: 'occultism:spirit_attuned_gem',
                 C: 'mekanism:cardboard_box'
             }
+        },
+        {
+            output: 'kubejs:1k_storage_part_package',
+            pattern: ['AAA', 'BCB', 'DEF'],
+            key: {
+                A: '#forge:gems/silicon',
+                B: 'glassential:glass_ghostly',
+                C: 'mekanism:cardboard_box',
+                D: '#forge:circuits/basic',
+                E: 'refinedstorage:quartz_enriched_iron',
+                F: 'occultism:dimensional_matrix'
+            },
+            id: 'refinedstorage:1k_storage_part'
         }
     ];
 

@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
                     type: 'astralsorcery:fluid',
                     fluid: [{ fluid: 'astralsorcery:liquid_starlight', amount: 1000 }]
                 },
-                E: { tag: 'botania:runes/midgard' }
+                E: { tag: 'botania:runes/envy' }
             },
             altar_type: 0,
             duration: 100,
@@ -125,7 +125,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('astralsorcery:altar_radiance', 1),
-            pattern: ['BC_CB', 'DEFED', '__A__', 'DGHGD', 'BC_CB'],
+            pattern: ['BC_CB', 'DEFED', '_JAK_', 'DGHGD', 'BC_CB'],
             key: {
                 A: {
                     type: 'astralsorcery:crystal',
@@ -134,13 +134,15 @@ onEvent('recipes', (event) => {
                     canBeAttuned: true,
                     canBeCelestialCrystal: true
                 },
-                B: { tag: 'forge:storage_blocks/silver' },
+                B: { tag: 'forge:storage_blocks/hepatizon' },
                 C: { item: 'create:shadow_steel' },
                 D: { item: 'astralsorcery:resonating_gem' },
                 E: { item: 'astralsorcery:colored_lens_spectral' },
                 F: { tag: 'botania:runes/asgard' },
                 G: { item: 'astralsorcery:marble_runed' },
-                H: { tag: 'forge:storage_blocks/alfsteel' }
+                H: { tag: 'forge:storage_blocks/alfsteel' },
+                J: { tag: 'botania:runes/alfheim' },
+                K: { tag: 'botania:runes/midgard' }
             },
             altar_type: 2,
             duration: 400,
@@ -446,6 +448,35 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'astralsorcery:altar/telescope'
+        },
+        {
+            output: Item.of('mythicbotany:mana_infuser', 1),
+            pattern: ['AE_EB', 'EGHGE', '_IJI_', 'FKLKF', 'CF_FD'],
+            key: {
+                A: { tag: 'botania:runes/spring' },
+                B: { tag: 'botania:runes/summer' },
+                C: { tag: 'botania:runes/winter' },
+                D: { tag: 'botania:runes/autumn' },
+                E: { tag: 'forge:ingots/refined_radiance' },
+                F: { tag: 'forge:ingots/shadow_steel' },
+                G: { tag: 'forge:ingots/elementium' },
+                H: { tag: 'botania:runes/muspelheim' },
+                I: { item: 'kubejs:firmament' },
+                J: { tag: 'botania:runes/asgard' },
+                K: { item: 'botania:glimmering_dreamwood' },
+                L: { tag: 'botania:runes/niflheim' }
+            },
+            altar_type: 2,
+            duration: 400,
+            starlight: 3800,
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'mythicbotany:mana_infuser'
         }
     ];
 

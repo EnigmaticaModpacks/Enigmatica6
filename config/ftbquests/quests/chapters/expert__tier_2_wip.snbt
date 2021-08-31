@@ -126,7 +126,7 @@
 		}
 		{
 			x: -12.0d
-			y: 10.0d
+			y: 8.0d
 			hide_dependency_lines: true
 			dependencies: ["0CA3D2BAD8F2B868"]
 			id: "102775CD7F9CD338"
@@ -633,10 +633,11 @@
 		}
 		{
 			x: -8.5d
-			y: 13.5d
+			y: 12.5d
 			dependencies: [
 				"2B4F57731186E24E"
 				"5D33A061D195DD08"
+				"1D7FA9A7F1F20502"
 			]
 			id: "3619843EA1DC18EE"
 			tasks: [{
@@ -646,8 +647,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 8.0d
+			x: -6.5d
+			y: 9.0d
 			dependencies: [
 				"13E2F8AEFECF661A"
 				"5BE151C00A0DAFF3"
@@ -661,7 +662,7 @@
 		}
 		{
 			x: -6.5d
-			y: 13.5d
+			y: 15.0d
 			dependencies: ["2B4F57731186E24E"]
 			id: "36C882808C98F78B"
 			tasks: [
@@ -733,7 +734,7 @@
 		}
 		{
 			x: -6.5d
-			y: 9.0d
+			y: 10.5d
 			dependencies: ["3EDBC6F0B3A54589"]
 			id: "1C94CAC4F670B313"
 			tasks: [{
@@ -766,7 +767,7 @@
 		}
 		{
 			x: -6.5d
-			y: 12.0d
+			y: 11.5d
 			dependencies: ["1C94CAC4F670B313"]
 			id: "2B4F57731186E24E"
 			tasks: [{
@@ -874,7 +875,7 @@
 		{
 			title: "Runes of the Realms"
 			x: -8.5d
-			y: 11.5d
+			y: 10.5d
 			description: [""]
 			dependencies: ["2337948E863C0F3B"]
 			id: "5D33A061D195DD08"
@@ -930,11 +931,11 @@
 		}
 		{
 			x: -10.5d
-			y: 11.5d
+			y: 9.0d
 			dependencies: [
-				"5D33A061D195DD08"
 				"102775CD7F9CD338"
 				"68292593CF029DEE"
+				"2337948E863C0F3B"
 			]
 			id: "0C8A82F038C0C647"
 			tasks: [{
@@ -945,8 +946,11 @@
 		}
 		{
 			x: -10.5d
-			y: 13.5d
-			dependencies: ["0C8A82F038C0C647"]
+			y: 11.5d
+			dependencies: [
+				"0C8A82F038C0C647"
+				"5D33A061D195DD08"
+			]
 			id: "1D7FA9A7F1F20502"
 			tasks: [{
 				id: "23F60219466C96BB"
@@ -967,7 +971,7 @@
 		}
 		{
 			x: -12.0d
-			y: 12.5d
+			y: 10.0d
 			dependencies: ["0C8A82F038C0C647"]
 			id: "6A471B48BCD9CD11"
 			tasks: [{
@@ -988,8 +992,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: 15.0d
+			x: -12.0d
+			y: 16.0d
 			dependencies: ["648EF41AAF02D3D7"]
 			id: "6D9116DBF9989AA9"
 			tasks: [{

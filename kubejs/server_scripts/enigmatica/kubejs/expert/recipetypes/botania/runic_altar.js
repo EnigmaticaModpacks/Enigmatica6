@@ -236,7 +236,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/elementium',
+                '#forge:ingots/alfsteel',
                 '#botania:runes/air',
                 '#botania:runes/summer',
                 '#botania:runes/lust',
@@ -288,7 +288,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/manasteel',
+                '#forge:ingots/terrasteel',
                 '#botania:runes/earth',
                 '#botania:runes/spring',
                 '#botania:runes/greed',
@@ -301,7 +301,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/sunmetal',
+                '#forge:ingots/refined_radiance',
                 '#botania:runes/fire',
                 '#botania:runes/summer',
                 '#botania:runes/wrath',
@@ -327,7 +327,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/froststeel',
+                '#forge:ingots/shadow_steel',
                 '#botania:runes/water',
                 '#botania:runes/winter',
                 '#botania:runes/wrath',

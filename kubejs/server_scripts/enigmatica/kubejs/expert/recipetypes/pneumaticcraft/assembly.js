@@ -84,6 +84,17 @@ onEvent('recipes', (event) => {
             input: { item: 'kubejs:pneumatic_boots_assembly', count: 1 },
             output: { item: 'pneumaticcraft:pneumatic_boots', count: 1 },
             program: 'laser'
+        },
+
+        {
+            input: { item: 'kubejs:1k_storage_part_package', count: 1 },
+            output: { item: 'kubejs:1k_storage_part_assembly', count: 1 },
+            program: 'drill'
+        },
+        {
+            input: { item: 'kubejs:1k_storage_part_assembly', count: 1 },
+            output: { item: 'refinedstorage:1k_storage_part', count: 1 },
+            program: 'laser'
         }
     ];
     recipes.forEach((recipe) => {
