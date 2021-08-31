@@ -19,7 +19,6 @@ onEvent('server.datapack.high_priority', (event) => {
             }
         },
         // Requires creation of Red Chalk to place outside of Atum
-
         {
             type: 'or',
             name: 'occultism:golden_sacrificial_bowl',
