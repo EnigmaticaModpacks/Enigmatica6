@@ -120,10 +120,10 @@ onEvent('recipes', (event) => {
                     { item: 'eidolon:ender_calx' },
                     { item: 'eidolon:ender_calx' },
                     { item: 'eidolon:ender_calx' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' }
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' }
                 ],
                 result: { item: 'occultism:dimensional_matrix' },
                 id: 'occultism:ritual/craft_dimensional_matrix'
@@ -148,10 +148,10 @@ onEvent('recipes', (event) => {
                     { item: 'occultism:spirit_attuned_crystal' },
                     { tag: 'quark:runes' },
                     { tag: 'quark:runes' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' },
-                    { item: 'bloodmagic:defaultcrystal' }
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' }
                 ],
                 result: { item: 'occultism:storage_stabilizer_tier1' },
                 id: 'occultism:ritual/craft_stabilizer_tier1'
