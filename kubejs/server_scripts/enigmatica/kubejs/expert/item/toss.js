@@ -2,14 +2,14 @@ onEvent('item.toss', (event) => {
     if (!event.player.isPlayer() || event.player.isFake()) {
         return;
     }
-    const hotIngot = 'kubejs:hot_compressed_iron_ingot';
+    const hotItems = ['kubejs:hot_compressed_iron_ingot', 'kubejs:superheated_steel_ingot'];
 
-    if (event.item != hotIngot) {
+    if (!hotItems.includes(event.item)) {
         return;
     }
 
     const player = event.player;
-    if (!playerHas(hotIngot, player)) {
+    if (playerHasAny(hotItems, player)) {
         if (global.setOnFire) {
             player.extinguish();
             global.setOnFire = false;

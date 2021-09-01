@@ -73,3 +73,13 @@ setMode = (player) => {
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };
+
+const playerHasAny = (items, player) => {
+    items.forEach((item) => {
+        let playerHasItem = player.inventory.find(item) == 1;
+        if (playerHasItem) {
+            return true;
+        }
+    });
+    return false;
+};
