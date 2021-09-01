@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             exothermic: false
         },
         {
-            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'pneumaticcraft:memory_essence', amount: 8000 },
+            fluid_input: { type: 'pneumaticcraft:fluid', tag: 'forge:experience', amount: 8000 },
             item_input: { item: 'bloodmagic:corrupted_dust', count: 1 },
             item_output: { item: 'bloodmagic:defaultcrystal', count: 2 },
             pressure: 4.8,
