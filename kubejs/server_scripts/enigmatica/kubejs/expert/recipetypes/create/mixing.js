@@ -63,6 +63,22 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('ars_nouveau:end_fiber', 2),
             id: 'ars_nouveau:end_fiber'
+        },
+        {
+            superheated: true,
+            inputs: [
+                'astralsorcery:illumination_powder',
+                'astralsorcery:illumination_powder',
+                'astralsorcery:illumination_powder',
+                '#forge:ingots/infused_iron',
+                'create:polished_rose_quartz',
+                'astralsorcery:nocturnal_powder',
+                'astralsorcery:nocturnal_powder',
+                'astralsorcery:nocturnal_powder',
+                '#forge:ingots/manasteel'
+            ],
+            output: Item.of('create:chromatic_compound', 2),
+            id: 'create:mixing/chromatic_compound'
         }
     ];
 

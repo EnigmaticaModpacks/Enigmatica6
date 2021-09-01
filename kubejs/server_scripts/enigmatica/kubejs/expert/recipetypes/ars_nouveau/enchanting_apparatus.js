@@ -626,7 +626,7 @@ onEvent('recipes', (event) => {
                     'ars_nouveau:glyph_grow',
                     'botania:pixie_dust',
                     'naturesaura:token_euphoria',
-                    '#botania:runes/alfheim',
+                    '#botania:runes/spring',
                     'botania:pixie_dust',
                     'ars_nouveau:glyph_aoe',
                     'botania:pixie_dust'

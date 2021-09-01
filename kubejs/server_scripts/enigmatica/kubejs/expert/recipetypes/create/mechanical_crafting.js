@@ -93,6 +93,20 @@ onEvent('recipes', (event) => {
                 P: 'create:brass_casing'
             },
             id: 'create:mechanical_crafting/crushing_wheel'
+        },
+        {
+            output: 'refinedstorage:disk_drive',
+            pattern: ['ABCBA', 'BDEDB', 'CFGFC', 'BDEDB', 'ABCBA'],
+            key: {
+                A: '#forge:circuits/basic',
+                B: 'refinedstorage:advanced_processor',
+                C: 'refinedstorage:quartz_enriched_iron',
+                D: 'occultism:storage_stabilizer_tier1',
+                E: '#xnet:advanced_connectors',
+                F: 'immersiveengineering:logic_unit',
+                G: 'refinedstorage:machine_casing'
+            },
+            id: 'refinedstorage:disk_drive'
         }
     ];
 
