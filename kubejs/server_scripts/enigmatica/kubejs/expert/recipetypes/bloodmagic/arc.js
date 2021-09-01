@@ -36,6 +36,13 @@ onEvent('recipes', (event) => {
                 extraOutputs: [],
                 consume: false,
                 id: 'bloodmagic:arc/reversion/master_blood_orb'
+            },
+            {
+                input: '#bloodmagic:crystals/demon',
+                output: Item.of('bloodmagic:corrupted_tinydust', 6),
+                tool: '#bloodmagic:arc/resonator',
+                extraOutputs: [Item.of('bloodmagic:corrupted_tinydust').chance(0.15)],
+                consume: false
             }
         ]
     };

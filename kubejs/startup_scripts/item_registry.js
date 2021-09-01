@@ -23,7 +23,8 @@ onEvent('item.registry', (event) => {
         'unassembled_rftools_machine_frame_top',
         'unassembled_rftools_machine_frame',
         'superheated_steel_ingot',
-        'hot_compressed_iron_ingot'
+        'hot_compressed_iron_ingot',
+        'dimensional_storage_crystal'
     ];
 
     const assemblyTableItems = [

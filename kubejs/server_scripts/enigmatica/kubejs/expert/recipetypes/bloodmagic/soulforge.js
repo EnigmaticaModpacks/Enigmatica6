@@ -172,6 +172,18 @@ onEvent('recipes', (event) => {
                 minimumDrain: 1000.0,
                 drain: 200.0,
                 id: 'occultism:crafting/storage_controller'
+            },
+            {
+                inputs: [
+                    'naturesaura:infused_stone',
+                    '#forge:ingots/tainted_gold',
+                    '#forge:gems/nitro',
+                    '#forge:gems/nitro'
+                ],
+                output: 'bloodmagic:crystalline_resonator',
+                minimumDrain: 1200.0,
+                drain: 200.0,
+                id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
             }
         ]
     };

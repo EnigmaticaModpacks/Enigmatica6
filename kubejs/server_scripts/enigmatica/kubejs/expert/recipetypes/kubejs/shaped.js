@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box',
                 D: '#forge:circuits/basic',
                 E: 'refinedstorage:quartz_enriched_iron',
-                F: 'occultism:dimensional_matrix'
+                F: 'kubejs:dimensional_storage_crystal'
             },
             id: 'refinedstorage:1k_storage_part'
         },
@@ -70,7 +70,7 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box',
                 D: '#forge:circuits/basic',
                 E: 'refinedstorage:quartz_enriched_iron',
-                F: 'occultism:dimensional_matrix'
+                F: 'kubejs:dimensional_storage_crystal'
             },
             id: 'refinedstorage:64k_fluid_storage_part'
         }
