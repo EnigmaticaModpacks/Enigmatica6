@@ -1,0 +1,11 @@
+# 
+#The path to the lang file where lang entries are automatically generated %lang% is replaced by the value of the lang config value
+langPath = "kubejs/assets/ponderjs/lang/%lang%.json"
+# 
+#Used for the langPath config value, and if autoGenerateLang is false this is where it will generate lang in the generated pack
+lang = "en_us"
+# 
+#Whether or not to automatically generate lang into the path in the langPath config value, if disabled, a resource pack is generated at runtime for this, however this should really be true
+#[@cui:RequiresReload:client]
+autoGenerateLang = true
+
