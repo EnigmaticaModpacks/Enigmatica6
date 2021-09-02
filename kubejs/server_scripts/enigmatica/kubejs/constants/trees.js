@@ -658,6 +658,14 @@ const treeRegistry = [
                 rate: { living: 25, dead: 4 }
             },
             {
+                sapling: 'betterendforge:lucernia_sapling',
+                trunk: 'betterendforge:lucernia_log',
+                leaf: 'betterendforge:lucernia_leaves',
+                substrate: 'rutiscus',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
                 sapling: 'integrateddynamics:menril_sapling',
                 trunk: 'integrateddynamics:menril_log',
                 leaf: 'integrateddynamics:menril_leaves',
@@ -992,6 +1000,13 @@ const treeRegistry = [
                 leaf: 'betterendforge:mossy_glowshroom_cap',
                 extraDecoration: 'betterendforge:mossy_glowshroom_hymenophore',
                 substrate: 'end_moss'
+            },
+            {
+                sapling: 'betterendforge:small_amaranita_mushroom',
+                trunk: 'betterendforge:amaranita_stem',
+                leaf: 'betterendforge:amaranita_cap',
+                extraDecoration: 'betterendforge:amaranita_lantern',
+                substrate: 'sangnum'
             },
             {
                 sapling: 'betterendforge:small_jellyshroom',

@@ -718,6 +718,12 @@ const cropRegistry = [
                 render: 'sushigocrafting:soy_crop',
                 plant: 'sushigocrafting:soy_bean',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'betterendforge:amber_root_seed',
+                render: 'betterendforge:amber_root_seed',
+                plant: 'betterendforge:amber_root_raw',
+                substrate: 'dirt'
             }
         ]
     },
@@ -1959,6 +1965,42 @@ const cropRegistry = [
                 substrate: 'amber_moss'
             },
             {
+                seed: 'betterendforge:lutebus',
+                render: 'betterendforge:lutebus',
+                plant: 'betterendforge:lutebus',
+                substrate: 'rutiscus'
+            },
+            {
+                seed: 'betterendforge:lamellarium',
+                render: 'betterendforge:lamellarium',
+                plant: 'betterendforge:lamellarium',
+                substrate: 'rutiscus'
+            },
+            {
+                seed: 'betterendforge:orango',
+                render: 'betterendforge:orango',
+                plant: 'betterendforge:orango',
+                substrate: 'rutiscus'
+            },
+            {
+                seed: 'betterendforge:aeridium',
+                render: 'betterendforge:aeridium',
+                plant: 'betterendforge:aeridium',
+                substrate: 'rutiscus'
+            },
+            {
+                seed: 'betterendforge:globulagus',
+                render: 'betterendforge:globulagus',
+                plant: 'betterendforge:globulagus',
+                substrate: 'sangnum'
+            },
+            {
+                seed: 'betterendforge:clawfern',
+                render: 'betterendforge:clawfern',
+                plant: 'betterendforge:clawfern',
+                substrate: 'sangnum'
+            },
+            {
                 seed: 'upgrade_aquatic:tall_beachgrass',
                 render: 'upgrade_aquatic:tall_beachgrass',
                 plant: 'upgrade_aquatic:tall_beachgrass',
@@ -2293,6 +2335,12 @@ const cropRegistry = [
                 render: 'atum:anputs_fingers',
                 plant: 'atum:anputs_fingers_spores',
                 substrate: 'strange_sand'
+            },
+            {
+                seed: 'betterendforge:bolux_mushroom',
+                render: 'betterendforge:bolux_mushroom',
+                plant: 'betterendforge:bolux_mushroom',
+                substrate: 'mushroom'
             }
         ]
     },
@@ -2503,12 +2551,17 @@ const cropRegistry = [
                 substrate: 'end_stone'
             },
             {
+                seed: 'betterendforge:ruscus',
+                render: 'betterendforge:ruscus',
+                plant: 'betterendforge:ruscus',
+                substrate: 'end_stone'
+            },
+            {
                 seed: 'betterendforge:bulb_vine_seed',
                 render: 'betterendforge:bulb_vine',
                 plant: 'betterendforge:glowing_bulb',
                 substrate: 'end_stone'
             },
-
             {
                 seed: 'betterendforge:hydralux_sapling',
                 render: 'betterendforge:hydralux_sapling',
