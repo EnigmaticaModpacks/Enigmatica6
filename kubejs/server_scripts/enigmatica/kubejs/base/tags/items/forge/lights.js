@@ -48,5 +48,10 @@ onEvent('item.tags', (event) => {
         .add(/candelabra/)
         .add(/chandelier/)
         .add(/brazier/)
+        .add('#chipped:glowstone')
+        .add('#chisel:glowstone')
+        .add('#chipped:sea_lantern')
+        .add('#chipped:shroomlight')
+        .add(/neon_light/)
         .remove(exceptions);
 });
