@@ -43,6 +43,20 @@ onEvent('recipes', (event) => {
                 count: 1
             },
             id: 'xnet:redstoneproxy_update'
+        },
+        {
+            ingredients: [
+                { item: 'ars_nouveau:wixie_charm' },
+                { item: 'refinedstorage:raw_advanced_processor' },
+                { item: 'refinedstorage:raw_advanced_processor' },
+                { item: 'refinedstorage:raw_advanced_processor' }
+            ],
+            energy: '3000000',
+            result: {
+                item: 'extrastorage:raw_neural_processor',
+                count: 3
+            },
+            id: 'extrastorage:raw_neural_processor'
         }
     ];
 
