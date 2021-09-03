@@ -5,6 +5,6 @@ onEvent('ponder.tag.registry', (event) => {
         'enigmatica:industrial_foregoing',
         'industrialforegoing:latex_processing_unit',
         'Industrial Foregoing',
-        'Learn more about the Industrial Foregoing mod and its various intriguing mechanics!'
+        'Learn more about the Industrial Foregoing mod and its intriguing mechanics!'
     );
 });
