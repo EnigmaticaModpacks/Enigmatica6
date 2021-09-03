@@ -1,5 +1,4 @@
 onEvent('recipes', (event) => {
-
     /*
         ,
         {
@@ -15,16 +14,16 @@ onEvent('recipes', (event) => {
     const newRecipes = [
         {
             // Wasabee Comb Recipes
-            output: Item.of('sushigocrafting:rice',3),
+            output: Item.of('sushigocrafting:rice', 3),
             pattern: ['AAB'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
                 B: 'resourcefulbees:wax'
             },
-            id: 'enigmatica6:base/sushigocrafting/rice_combs'
+            id: 'enigmatica:base/sushigocrafting/rice_combs'
         },
         {
-            output: Item.of('sushigocrafting:cucumber',3),
+            output: Item.of('sushigocrafting:cucumber', 3),
             pattern: ['ABA'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -33,7 +32,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/cucumber_combs'
         },
         {
-            output: Item.of('sushigocrafting:soy_bean',3),
+            output: Item.of('sushigocrafting:soy_bean', 3),
             pattern: ['A', 'A', 'B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -42,7 +41,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/soy_bean_combs'
         },
         {
-            output: Item.of('sushigocrafting:wasabi_root',3),
+            output: Item.of('sushigocrafting:wasabi_root', 3),
             pattern: ['A', 'B', 'A'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -51,7 +50,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/wasabi_root_combs'
         },
         {
-            output: Item.of('sushigocrafting:seaweed',3),
+            output: Item.of('sushigocrafting:seaweed', 3),
             pattern: ['A  ', ' A ', '  B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -60,7 +59,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/seaweed_combs'
         },
         {
-            output: Item.of('sushigocrafting:sesame_seeds',3),
+            output: Item.of('sushigocrafting:sesame_seeds', 3),
             pattern: ['A  ', ' B ', '  A'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -69,7 +68,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/sesame_seeds_combs'
         },
         {
-            output: Item.of('sushigocrafting:nori_sheets',3),
+            output: Item.of('sushigocrafting:nori_sheets', 3),
             pattern: ['AA ', '  B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -78,7 +77,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/nori_sheets_combs'
         },
         {
-            output: Item.of('sushigocrafting:avocado',3),
+            output: Item.of('sushigocrafting:avocado', 3),
             pattern: ['ABC'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -88,7 +87,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/avocado_combs'
         },
         {
-            output: Item.of('sushigocrafting:shrimp',3),
+            output: Item.of('sushigocrafting:shrimp', 3),
             pattern: ['ABC'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -98,7 +97,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/shrimp_combs'
         },
         {
-            output: Item.of('minecraft:cod',3),
+            output: Item.of('minecraft:cod', 3),
             pattern: ['ACB'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -108,7 +107,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/minecraft/cod_combs'
         },
         {
-            output: Item.of('minecraft:salmon',3),
+            output: Item.of('minecraft:salmon', 3),
             pattern: ['A', 'B', 'C'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -118,7 +117,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/minecraft/salmon_combs'
         },
         {
-            output: Item.of('sushigocrafting:tobiko',3),
+            output: Item.of('sushigocrafting:tobiko', 3),
             pattern: ['A', 'C', 'B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
@@ -128,7 +127,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/tobiko_combs'
         },
         {
-            output: Item.of('sushigocrafting:raw_tuna',3),
+            output: Item.of('sushigocrafting:raw_tuna', 3),
             pattern: ['A  ', ' B ', '  C'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
