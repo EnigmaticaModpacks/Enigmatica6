@@ -130,6 +130,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['bloodmagic:looting_anointment'],
             text: [Text.of('Grants additional Looting on Weapons').color('#7e24b3')]
+        },
+        {
+            items: ['#enigmatica:burning_hot'],
+            text: [Text.of('Extremely hot!').darkRed()]
         }
     ];
 
