@@ -891,7 +891,7 @@
 			]
 		}
 		{
-			x: 0.0d
+			x: -2.5d
 			y: 3.5d
 			description: ["The Iesnium Pickaxe has the same stats as a normal diamond pickaxe with the added bonus that it is able to mine Iesnium Ore."]
 			dependencies: ["0000000000000DE6"]
@@ -1065,8 +1065,8 @@
 			]
 		}
 		{
-			x: 0.5d
-			y: 4.5d
+			x: -1.0d
+			y: 5.0d
 			shape: "hexagon"
 			description: [
 				"The Dimensional Mineshaft opens a portal to an uninhabited dimension that is full of all kinds of ores just waiting to be mined."
@@ -1102,8 +1102,8 @@
 			]
 		}
 		{
-			x: 1.0d
-			y: 5.5d
+			x: -2.0d
+			y: 5.0d
 			shape: "hexagon"
 			description: [
 				"The Foliot Mining Spirit is able to travel in to the mining dimension to get ores and other precious materials for you."
@@ -1147,8 +1147,8 @@
 			]
 		}
 		{
-			x: 2.0d
-			y: 5.5d
+			x: -2.0d
+			y: 6.0d
 			shape: "hexagon"
 			description: [
 				"The Djinni Mining Spirit is much stronger than its Foliot counterpart. It takes much less time for this stronger spirit to travel to and from the mining dimension, and it can bring back more ores each trip!"
@@ -1189,7 +1189,7 @@
 			]
 		}
 		{
-			x: 2.0d
+			x: 0.5d
 			y: 3.5d
 			shape: "hexagon"
 			description: [
@@ -1301,7 +1301,7 @@
 		{
 			title: "Control the Weather!"
 			icon: "minecraft:sunflower"
-			x: 3.0d
+			x: -1.0d
 			y: 1.5d
 			shape: "hexagon"
 			description: [
@@ -1358,8 +1358,8 @@
 		}
 		{
 			icon: "minecraft:clock"
-			x: 2.0d
-			y: 1.5d
+			x: -1.0d
+			y: 2.5d
 			shape: "hexagon"
 			subtitle: "What Time is It?!?!"
 			description: [
@@ -1402,8 +1402,8 @@
 		}
 		{
 			icon: "occultism:afrit_essence"
-			x: 2.5d
-			y: 4.5d
+			x: 2.0d
+			y: 5.0d
 			shape: "hexagon"
 			description: [
 				"In order to summon more powerful spirits, you will need Afrit Essence."
@@ -1450,8 +1450,8 @@
 		{
 			title: "The Wild Hunt"
 			icon: "minecraft:wither_skeleton_skull"
-			x: 1.5d
-			y: 2.5d
+			x: 1.0d
+			y: 4.5d
 			shape: "hexagon"
 			description: [
 				"Wither Skulls can be a chore to get sometimes."
@@ -1497,7 +1497,7 @@
 				Count: 1b
 				tag: { }
 			}
-			x: 1.0d
+			x: -1.0d
 			y: 3.5d
 			subtitle: "Divination 2: Occultic Boogaloo"
 			description: [
@@ -1681,8 +1681,8 @@
 		{
 			title: "Summon Drikwing Familiar"
 			icon: "minecraft:feather"
-			x: 1.5d
-			y: 4.5d
+			x: 0.0d
+			y: -0.5d
 			shape: "hexagon"
 			description: [
 				"The occultist is also able to summon familiars to assist them on their journey."
@@ -1718,37 +1718,6 @@
 					player_command: false
 				}
 			]
-		}
-		{
-			x: 7.0d
-			y: 1.0d
-			shape: "hexagon"
-			subtitle: "Ooooh shiney!!!"
-			description: [
-				"The Greedy Familiar is a great friend to have on your adventures!"
-				""
-				"This little guy will follow you around and pick things up for you depositing the items directly in to your inventory!"
-				""
-				"Bind to a familiar ring to use this power from a curio slot(essentially a magnet)."
-			]
-			dependencies: ["0000000000000D9C"]
-			id: "13FC4299FC886CC3"
-			tasks: [{
-				id: "2D072F9460E2B606"
-				type: "advancement"
-				title: "Summon Greedy Familiar"
-				icon: "artifacts:universal_attractor"
-				advancement: "occultism:familiar_greedy"
-				criterion: ""
-			}]
-			rewards: [{
-				id: "738EBF9ED09E5257"
-				type: "command"
-				title: "Occultism Epic Loot Box"
-				icon: "kubejs:epic_lootbox"
-				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
-				player_command: false
-			}]
 		}
 		{
 			x: 4.5d
@@ -1847,7 +1816,7 @@
 			y: 7.0d
 			shape: "hexagon"
 			subtitle: "I crush circles around these other fools."
-			description: ["The Marid Crushing Spirit is the top ore multiplier in the occultist's arsenal! This spirit will provide 4 dust for each ore crushed and at an incredibly fast rate!"]
+			description: ["The Marid Crushing Spirit is the top ore multiplier in the occultist's arsenal! This spirit will provide 6 dust for each metal ore crushed and at an incredibly fast rate!"]
 			dependencies: ["2DD7DA15B901B864"]
 			id: "62EC5B3B5D4AC29A"
 			tasks: [{
@@ -1904,6 +1873,116 @@
 				title: "Farmer's Delight"
 				icon: "kubejs:farmers_delight"
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			x: 7.0d
+			y: 1.0d
+			shape: "hexagon"
+			description: [
+				"The Greedy Familiar is a great friend to have on your adventures!"
+				""
+				"This little guy will follow you around and pick things up for you depositing the items directly in to your inventory!"
+				""
+				"Bind to a familiar ring to use this power from a curio slot(essentially a magnet)."
+			]
+			dependencies: ["0000000000000D9C"]
+			id: "7C066CF3F26957FA"
+			tasks: [{
+				id: "35B087061AEF871F"
+				type: "advancement"
+				title: "Summon Greedy Familiar"
+				icon: "artifacts:universal_attractor"
+				advancement: "occultism:familiar_greedy"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "28BE9B44E120DB5B"
+				type: "command"
+				title: "Occultism Epic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: -0.5d
+			y: 0.5d
+			shape: "hexagon"
+			subtitle: "I wear my sun glasses at night! :catjam:"
+			description: ["The bat familiar uses its echolocation abilities to help you see in dark places, essentially giving you night vision!"]
+			dependencies: ["0000000000000D9E"]
+			id: "7FC9B2436C688AAC"
+			tasks: [{
+				id: "070C2A8C0AFB562F"
+				type: "advancement"
+				title: "Summon Bat Familiar"
+				icon: "artifacts:night_vision_goggles"
+				advancement: "occultism:familiar_bat"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "1E3C943984A0CFE0"
+				type: "command"
+				title: "Occultism Epic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			subtitle: "Hippity Hoppity, Get Off My Property!!"
+			description: ["The Deer Familiar helps you jump higher than you ever could on your own!"]
+			dependencies: ["0000000000000D9C"]
+			id: "21C673E65278AB87"
+			tasks: [{
+				id: "0064A5E6F29E8FEC"
+				type: "advancement"
+				title: "Summon Deer Familiar"
+				icon: {
+					id: "alexsmobs:moose_headgear"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+				advancement: "occultism:familiar_deer"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "20E494C1C5407A03"
+				type: "command"
+				title: "Occultism Epic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
+				player_command: false
+			}]
+		}
+		{
+			icon: "losttrinkets:octopus_leg"
+			x: 1.0d
+			y: -1.0d
+			shape: "hexagon"
+			subtitle: "Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn."
+			dependencies: ["0000000000000D9E"]
+			id: "37BA1FD75B5F474F"
+			tasks: [{
+				id: "73C75966A8C84D63"
+				type: "advancement"
+				title: "Summon Cthulu Familiar"
+				icon: "losttrinkets:octopus_leg"
+				advancement: "occultism:familiar_cthulhu"
+				criterion: ""
+			}]
+			rewards: [{
+				id: "10284540330AD4CF"
+				type: "command"
+				title: "Occultism Epic Loot Box"
+				icon: "kubejs:epic_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_occultism_loot_epic"
 				player_command: false
 			}]
 		}
