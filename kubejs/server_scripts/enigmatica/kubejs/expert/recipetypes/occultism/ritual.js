@@ -408,6 +408,129 @@ onEvent('recipes', (event) => {
                     item: 'occultism:satchel'
                 },
                 id: 'occultism:ritual/craft_satchel'
+            },
+
+            // 2x Ore Processing
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:summon_spirit_with_job',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_foliot'
+                },
+                pentacle_id: 'occultism:summon_foliot',
+                duration: 6,
+                spirit_max_age: -1,
+                spirit_job_type: 'occultism:crush_tier1',
+                entity_to_summon: 'occultism:foliot',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/summon_foliot_crusher'
+                },
+                ingredients: [
+                    { item: 'naturesaura:crushing_catalyst' },
+                    { tag: 'forge:ingots/nebu' },
+                    { item: 'atum:nebu_hammer' },
+                    { tag: 'forge:ingots/nebu' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/water' },
+                    { tag: 'botania:runes/water' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/summon_foliot_crusher'
+            },
+
+            // 3x Ore Processing
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:summon_spirit_with_job',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:summon_djinni',
+                duration: 9,
+                spirit_max_age: -1,
+                spirit_job_type: 'occultism:crush_tier2',
+                entity_to_summon: 'occultism:djinni',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/summon_djinni_crusher'
+                },
+                ingredients: [
+                    { item: 'naturesaura:crushing_catalyst' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'naturesaura:sky_pickaxe' },
+                    { tag: 'forge:ingots/sky' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/water' },
+                    { tag: 'botania:runes/water' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/summon_djinni_crusher'
+            },
+            // 4x Ore Processing
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:summon_spirit_with_job',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_afrit'
+                },
+                pentacle_id: 'occultism:summon_afrit',
+                duration: 12,
+                spirit_max_age: -1,
+                spirit_job_type: 'occultism:crush_tier3',
+                entity_to_summon: 'occultism:afrit',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/summon_afrit_crusher'
+                },
+                ingredients: [
+                    { item: 'naturesaura:crushing_catalyst' },
+                    { tag: 'botania:runes/joetunheim' },
+                    { item: 'botania:terra_pick' },
+                    { tag: 'botania:runes/joetunheim' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/water' },
+                    { tag: 'botania:runes/water' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/summon_afrit_crusher'
+            },
+
+            // 6x Ore Processing
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:summon_spirit_with_job',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_marid'
+                },
+                pentacle_id: 'occultism:summon_marid',
+                duration: 3,
+                spirit_max_age: -1,
+                spirit_job_type: 'occultism:crush_tier4',
+                entity_to_summon: 'occultism:marid',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/summon_marid_crusher'
+                },
+                ingredients: [
+                    { item: 'naturesaura:crushing_catalyst' },
+                    { tag: 'botania:runes/vanaheim' },
+                    { item: 'mythicbotany:alfsteel_pick' },
+                    { tag: 'botania:runes/vanaheim' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/earth' },
+                    { tag: 'botania:runes/water' },
+                    { tag: 'botania:runes/water' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/summon_marid_crusher'
             }
         ]
     };

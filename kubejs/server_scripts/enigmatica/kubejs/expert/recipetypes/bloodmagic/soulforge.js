@@ -175,7 +175,7 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'naturesaura:infused_stone',
+                    'bloodmagic:dungeon_stone',
                     '#forge:ingots/tainted_gold',
                     '#forge:gems/nitro',
                     '#forge:gems/nitro'

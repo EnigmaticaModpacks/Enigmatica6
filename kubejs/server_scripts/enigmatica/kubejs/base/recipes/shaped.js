@@ -972,12 +972,85 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'minecraft:beehive',
-            pattern: ['AAA','BBB','AAA'],
+            pattern: ['AAA', 'BBB', 'AAA'],
             key: {
                 A: '#minecraft:planks',
                 B: '#resourcefulbees:resourceful_honeycomb'
             },
             id: 'minecraft:beehive'
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_polished', 4),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'bloodmagic:dungeon_stone'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_brick1', 4),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'bloodmagic:dungeon_polished'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_polished_stairs', 4),
+            pattern: ['A', 'AA', 'AAA'],
+            key: {
+                A: 'bloodmagic:dungeon_polished'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_brick_stairs', 4),
+            pattern: ['A', 'AA', 'AAA'],
+            key: {
+                A: 'bloodmagic:dungeon_brick1'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_pillar_center', 2),
+            pattern: ['A', 'A'],
+            key: {
+                A: 'bloodmagic:dungeon_stone'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_eye', 1),
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'bloodmagic:dungeon_stone',
+                B: '#bloodmagic:crystals/demon'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_polished_wall', 6),
+            pattern: ['AAA', 'AAA'],
+            key: {
+                A: 'bloodmagic:dungeon_polished'
+            }
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_brick_wall', 6),
+            pattern: ['AAA', 'AAA'],
+            key: {
+                A: 'bloodmagic:dungeon_brick1'
+            }
+        },
+        {
+            output: 'bloodmagic:dungeon_polished_gate',
+            pattern: ['BAB', 'BAB'],
+            key: {
+                A: 'bloodmagic:dungeon_polished',
+                B: 'minecraft:stick'
+            }
+        },
+        {
+            output: 'bloodmagic:dungeon_brick_gate',
+            pattern: ['BAB', 'BAB'],
+            key: {
+                A: 'bloodmagic:dungeon_brick1',
+                B: 'minecraft:stick'
+            }
         }
     ];
 
@@ -1636,7 +1709,7 @@ onEvent('recipes', (event) => {
         }
     });
 
-    //Generate one RGBee Comb recipe for each dye, usting the appropriate flowers from dyeSources
+    //Generate one RGBee Comb recipe for each dye, using the appropriate flowers from dyeSources
     colors.forEach((color) => {
         let flowers = dyeSources.filter((dyeSource) => dyeSource.primary == `minecraft:${color}_dye`);
         let ingredients = flowers.map((flower) => flower.input);

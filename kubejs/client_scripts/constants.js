@@ -110,6 +110,8 @@ var itemsToHide = [
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
+    'bloodmagic:ironsand',
+    'bloodmagic:goldsand',
 
     'byg:budding_ametrine_ore',
     'byg:anthracite_ore',
