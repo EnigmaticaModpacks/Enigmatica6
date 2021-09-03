@@ -1688,6 +1688,14 @@ onEvent('server.datapack.low_priority', (event) => {
     ];
 
     data.forEach((recipeType) => {
+        event.addJson(`tconstruct:materials/definition/${recipeType.identifier}.json`, {
+            redirect: [
+                {
+                    id: `enigmatica:${recipeType.identifier}`
+                }
+            ]
+        });
+
         event.addJson(`enigmatica:materials/definition/${recipeType.identifier}.json`, recipeType.recipes[0]);
         event.addJson(`enigmatica:materials/stats/${recipeType.identifier}.json`, recipeType.recipes[1]);
         event.addJson(`enigmatica:materials/traits/${recipeType.identifier}.json`, recipeType.recipes[2]);
