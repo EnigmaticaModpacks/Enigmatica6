@@ -4,7 +4,7 @@
 	#Dimensions where hostile mobs will not spawn. Ex: ["minecraft:overworld", "undergarden:undergarden"]. . Run /forge dimensions for a list.
 	dimensionBlacklist = ["compactmachines:compact_world", "atum:atum", "mythicbotany:alfheim", "undergarden:undergarden"]
 	#Spawn Arcane Ore in the world
-	genOre = true
+	genOre = false
 	#Rate of tree spawn per chunk
 	#Range: 0.0 ~ 1.0
 	genTrees = 0.002
@@ -26,13 +26,13 @@
 	sylphManaCost = 250
 	#How often Wilden Guardians spawn
 	#Range: 0 ~ 200
-	wguardianWeight = 50
+	wguardianWeight = 8
 	#How often Wilden Stalkers spawn
 	#Range: 0 ~ 200
-	wstalkerWeight = 50
+	wstalkerWeight = 8
 	#How often Wilden Hunter spawn
 	#Range: 0 ~ 200
-	whunterWeight = 50
+	whunterWeight = 8
 	#Should the Wilden Hunter attack animals?
 	hunterHuntsAnimals = false
 	#Should the Wilden Stalker attack animals?
