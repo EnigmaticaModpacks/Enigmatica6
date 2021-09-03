@@ -1,4 +1,5 @@
-onEvent('recipes', (event) => {
+// TODO: Remove in 0.6.0 
+/*onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
