@@ -1711,6 +1711,30 @@ const stonecuttables = [
         ],
         onlyAsOutput: [],
         onlyAsInput: []
+    },
+    {
+        name: 'demon_brick',
+        stones: [
+            'bloodmagic:dungeon_smallbrick',
+            'bloodmagic:dungeon_tilespecial',
+            'bloodmagic:dungeon_tile',
+            'bloodmagic:dungeon_brick_assorted',
+            'bloodmagic:dungeon_brick3',
+            'bloodmagic:dungeon_brick2',
+            'bloodmagic:dungeon_brick1'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
+    },
+    {
+        name: 'demon_pillar',
+        stones: [
+            'bloodmagic:dungeon_pillar_cap',
+            'bloodmagic:dungeon_pillar_special',
+            'bloodmagic:dungeon_pillar_center'
+        ],
+        onlyAsOutput: [],
+        onlyAsInput: []
     }
 ];
 

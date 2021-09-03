@@ -211,6 +211,26 @@ onEvent('recipes', (event) => {
                 C: 'architects_palette:abyssaline'
             },
             id: 'bloodmagic:ritual_stone_master'
+        },
+        {
+            output: Item.of('bloodmagic:dungeon_stone', 8),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'naturesaura:infused_stone',
+                B: '#bloodmagic:crystals/demon'
+            }
+        },
+        {
+            output: 'bloodmagic:alchemicalreactionchamber',
+            pattern: ['AAA', 'BCB', 'DED'],
+            key: {
+                A: 'bloodmagic:dungeon_stone',
+                B: 'bloodmagic:infusedslate',
+                C: { type: 'bloodmagic:bloodorb', orb_tier: 3 },
+                D: '#forge:storage_blocks/blazing',
+                E: 'minecraft:blast_furnace'
+            },
+            id: 'bloodmagic:arc'
         }
     ];
 

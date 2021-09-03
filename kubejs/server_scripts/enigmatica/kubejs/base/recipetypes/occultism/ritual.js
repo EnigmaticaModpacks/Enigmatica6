@@ -229,31 +229,6 @@ onEvent('recipes', (event) => {
                     item: 'occultism:book_of_binding_bound_afrit'
                 },
                 pentacle_id: 'occultism:summon_afrit',
-                duration: 12,
-                spirit_max_age: -1,
-                spirit_job_type: 'occultism:crush_tier3',
-                entity_to_summon: 'occultism:afrit',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/summon_afrit_crusher'
-                },
-                ingredients: [
-                    { tag: 'forge:gems/diamond' },
-                    { tag: 'forge:dusts/iesnium' },
-                    { tag: 'forge:dusts/iesnium' },
-                    { tag: 'forge:gems/emerald' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/summon_afrit_crusher'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:summon_spirit_with_job',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_afrit'
-                },
-                pentacle_id: 'occultism:summon_afrit',
                 duration: 6,
                 spirit_max_age: 120,
                 spirit_job_type: 'occultism:rain_weather',
@@ -329,31 +304,6 @@ onEvent('recipes', (event) => {
                     item: 'occultism:jei_dummy/none'
                 },
                 id: 'occultism:ritual/summon_djinni_clear_weather'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:summon_spirit_with_job',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_djinni'
-                },
-                pentacle_id: 'occultism:summon_djinni',
-                duration: 9,
-                spirit_max_age: -1,
-                spirit_job_type: 'occultism:crush_tier2',
-                entity_to_summon: 'occultism:djinni',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/summon_djinni_crusher'
-                },
-                ingredients: [
-                    { tag: 'forge:dusts/iron' },
-                    { tag: 'forge:dusts/gold' },
-                    { tag: 'forge:dusts/copper' },
-                    { tag: 'forge:dusts/silver' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/summon_djinni_crusher'
             },
             {
                 type: 'occultism:ritual',
@@ -464,31 +414,6 @@ onEvent('recipes', (event) => {
                 pentacle_id: 'occultism:summon_foliot',
                 duration: 6,
                 spirit_max_age: -1,
-                spirit_job_type: 'occultism:crush_tier1',
-                entity_to_summon: 'occultism:foliot',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/summon_foliot_crusher'
-                },
-                ingredients: [
-                    { tag: 'forge:ores/iron' },
-                    { tag: 'forge:ores/gold' },
-                    { tag: 'forge:ores/copper' },
-                    { tag: 'forge:ores/silver' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/summon_foliot_crusher'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:summon_spirit_with_job',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_foliot'
-                },
-                pentacle_id: 'occultism:summon_foliot',
-                duration: 6,
-                spirit_max_age: -1,
                 spirit_job_type: 'occultism:lumberjack',
                 entity_to_summon: 'occultism:foliot',
                 ritual_dummy: {
@@ -580,31 +505,6 @@ onEvent('recipes', (event) => {
                     item: 'occultism:book_of_calling_foliot_transport_items'
                 },
                 id: 'occultism:ritual/summon_foliot_transport_items'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:summon_spirit_with_job',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_marid'
-                },
-                pentacle_id: 'occultism:summon_marid',
-                duration: 3,
-                spirit_max_age: -1,
-                spirit_job_type: 'occultism:crush_tier4',
-                entity_to_summon: 'occultism:marid',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/summon_marid_crusher'
-                },
-                ingredients: [
-                    { tag: 'forge:storage_blocks/diamond' },
-                    { item: 'minecraft:ghast_tear' },
-                    { tag: 'forge:storage_blocks/iesnium' },
-                    { tag: 'forge:storage_blocks/emerald' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/summon_marid_crusher'
             },
             {
                 type: 'occultism:ritual',
