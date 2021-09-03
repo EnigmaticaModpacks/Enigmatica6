@@ -56,7 +56,7 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_blazing_crystal',
+            id: 'molten_blazing',
             texture: '0xd79811',
             display: 'Molten Blazing Crystal'
         },
@@ -110,19 +110,19 @@ onEvent('fluid.registry', (event) => {
         },
         {
             type: 'thick',
-            id: 'molten_niotic_crystal',
+            id: 'molten_niotic',
             texture: '0x54e5ea',
             display: 'Molten Niotic Crystal'
         },
         {
             type: 'thick',
-            id: 'molten_nitro_crystal',
+            id: 'molten_nitro',
             texture: '0xa42022',
             display: 'Molten Nitro Crystal'
         },
         {
             type: 'thick',
-            id: 'molten_spirited_crystal',
+            id: 'molten_spirited',
             texture: '0x86c52d',
             display: 'Molten Spirited Crystal'
         }
@@ -131,10 +131,9 @@ onEvent('fluid.registry', (event) => {
     generalFluids.forEach((fluid) => {
         if (fluid.type == 'thick') {
             event.create(fluid.id).textureThick(fluid.texture).bucketColor(fluid.texture); //.displayName(fluid.display);
-        }
-        else if (fluid.type == 'thin') {
+        } else if (fluid.type == 'thin') {
             event.create(fluid.id).textureThin(fluid.texture).bucketColor(fluid.texture); //.displayName(fluid.display);
-        }/*
+        } /*
         else if (fluid.type == 'custom') {
             event.create(fluid.id).displayName(fluid.display).textureStill(fluid.still).textureFlowing(fluid.flowing).bucketColor(fluid.color)
         }*/
