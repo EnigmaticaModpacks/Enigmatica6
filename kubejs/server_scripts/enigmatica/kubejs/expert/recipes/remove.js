@@ -32,12 +32,7 @@ onEvent('recipes', (event) => {
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
         'refinedstorage:quartz_enriched_iron',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-        'pneumaticcraft:explosion_crafting/compressed_iron_block',
-        'immersiveengineering:crafting/electrum_mix',
-        'thermal:enderium_dust_2',
-        'thermal:electrum_dust_2',
-        'thermal:invar_dust_3',
-        'thermal:lumium_dust_4'
+        'pneumaticcraft:explosion_crafting/compressed_iron_block'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
@@ -67,6 +62,9 @@ onEvent('recipes', (event) => {
     outputRemovals.forEach((output) => {
         event.remove({ output: output });
     });
+
+    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
+    event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'immersiveengineering' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);

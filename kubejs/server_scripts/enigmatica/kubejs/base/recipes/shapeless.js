@@ -516,20 +516,6 @@ onEvent('recipes', (event) => {
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
         },
         {
-            output: Item.of('emendatusenigmatica:signalum_dust', 4),
-            inputs: [
-                '#forge:dusts/silver',
-                '#forge:dusts/copper',
-                '#forge:dusts/copper',
-                '#forge:dusts/copper',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone'
-            ],
-            id: 'emendatusenigmatica:alloy_dust/signalum'
-        },
-        {
             output: 'mythicbotany:raindeletia_floating',
             inputs: ['kubejs:disabled_recipe_indicator'],
             id: 'mythicbotany:raindeletia_floating'
