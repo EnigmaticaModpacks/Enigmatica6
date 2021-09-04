@@ -64,6 +64,19 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: 'meetyourfight:devils_ante'
+        },
+        {
+            inputs: [
+                { item: 'thermal:phytogro', count: 2 },
+                { tag: 'forge:dusts/iron', count: 2 },
+                { tag: 'forge:dusts/nickel', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 1 }, weight: 7 }],
+                empty_weight: 3,
+                rolls: 3
+            },
+            id: 'enigmatica:expert/interactio/item_explode/invar_dust'
         }
     ];
 

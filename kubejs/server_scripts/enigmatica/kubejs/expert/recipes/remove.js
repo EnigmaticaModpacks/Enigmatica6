@@ -32,7 +32,8 @@ onEvent('recipes', (event) => {
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
         'refinedstorage:quartz_enriched_iron',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-        'pneumaticcraft:explosion_crafting/compressed_iron_block'
+        'pneumaticcraft:explosion_crafting/compressed_iron_block',
+        'thermal:invar_dust_3'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
