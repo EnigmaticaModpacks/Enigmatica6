@@ -128,21 +128,6 @@ onEvent('jei.information', (event) => {
             description: ['Max Fluid Transfer Rate has been limited to 65,536 mb per tick.']
         },
         {
-            items: [
-                'resourcefulbees:brass_bee',
-                'resourcefulbees:bronze_bee',
-                'resourcefulbees:constantan_bee',
-                'resourcefulbees:electrum_bee',
-                'resourcefulbees:enderium_bee',
-                'resourcefulbees:invar_bee',
-                'resourcefulbees:lumium_bee',
-                'resourcefulbees:signalum_bee'
-            ],
-            description: [
-                "Alloy Bees are made through Block to Item Mutations. Click this Bee's spawn egg in JEI for specifics."
-            ]
-        },
-        {
             items: ['minecraft:nautilus_shell'],
             description: ['Obtained by killing Nautilus, found in Oceans.']
         },
@@ -214,13 +199,13 @@ onEvent('jei.information', (event) => {
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.'
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.'
             ]
         },
         {
@@ -248,6 +233,49 @@ onEvent('jei.information', (event) => {
         {
             items: ['atum:ectoplasm'],
             description: [`Drops from Wraiths in the sandy wastes of Atum.`]
+        },
+        {
+            items: ['minecraft:firework_star'],
+            description: [`Shapeless Crafting: One paper and at least one gunpowder.`]
+        },
+        {
+            items: ['minecraft:firework_star'],
+            description: [
+                `Adding more gunpowder increases the duration of the rocket.`,
+                `Up to three gunpowder or up to seven firework stars can be added.`
+            ]
+        },
+        {
+            items: ['minecraft:firework_rocket'],
+            description: [`Shapeless Crafting: One gunpowder and at least one dye.`]
+        },
+        {
+            items: ['minecraft:firework_rocket'],
+            description: [
+                `Up to eight dyes can be added.`,
+                `One head, gold nugget, feather, or fire charge can be added to set a shape.`,
+                `A diamond and/or a glowstone dust can be added with any of the other ingredients.`
+            ]
+        },
+        {
+            items: ['minecraft:dragon_egg'],
+            description: [
+                `More eggs may be obtained by summoning the End Dragon again.`,
+                ` `,
+                `To summon, place an End Crystal on each of the cardinal directions of the End Portal in the End.`
+            ]
+        },
+        {
+            items: ['byg:leaf_pile'],
+            description: [`Gathered with Shears.`]
+        },
+        {
+            items: ['eidolon:soul_shard'],
+            description: [
+                `Obtained by performing a Crystallization Ritual near undead mobs. The ritual can be found in the Ars Ecclesia.`,
+                ` `,
+                `Alternatively obtained by killing undead mobs with a Reaper's Scythe.`
+            ]
         }
     ];
 

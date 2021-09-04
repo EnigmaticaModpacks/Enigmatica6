@@ -16,7 +16,12 @@ onEvent('item.tags', (event) => {
         'eidolon:warlock_cloak'
     ];
 
-    var exceptions = ['pneumaticcraft:jet_boots_upgrade_1', 'atum:limestone_chest'];
+    var exceptions = [
+        'pneumaticcraft:jet_boots_upgrade_1',
+        'atum:limestone_chest',
+        'kubejs:pneumatic_chestplate_package',
+        'kubejs:pneumatic_chestplate_assembly'
+    ];
 
     var tags = ['forge:armor', 'forge:armor/chest'];
 

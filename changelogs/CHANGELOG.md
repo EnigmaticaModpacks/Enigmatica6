@@ -3,11 +3,12 @@
 _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.12.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.12.md)_
 
 **Notes**:
--   For bee owners: Apiaries have changed. 
+
+-   For bee owners: Apiaries have changed.
+    -   You need to break and replace the Apiary Controller.
     -   The floor is no longer a part of the structure, so if you put storage blocks or the like in the floor, they will no longer work.
 
 **Changes/Improvements**
-
 
 ### Enigmatica 6 v0.5.11
 
@@ -25,17 +26,17 @@ _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Bug Fixes**
 
-- \[RFTools: Dimensions\] Block Absorber Not Working On Emendatus Enigmatica Blocks [\#2962](https://github.com/NillerMedDild/Enigmatica6/issues/2962)
-- Blocks placed by Building Gadgets "Building Gadget" are often translucent, but solid as expected [\#2990](https://github.com/NillerMedDild/Enigmatica6/issues/2990)
-- I can't get Phantoms to spawn. [\#2992](https://github.com/NillerMedDild/Enigmatica6/issues/2992)
-- No output recipes for molten redstone [\#2914](https://github.com/NillerMedDild/Enigmatica6/issues/2914)
-- Problems placing torches on walls [\#2692](https://github.com/NillerMedDild/Enigmatica6/issues/2692)
-- Quest description for Thermal Resin includes Acacia [\#2996](https://github.com/NillerMedDild/Enigmatica6/issues/2996)
-- Recipe for silicon is broken [\#2997](https://github.com/NillerMedDild/Enigmatica6/issues/2997)
-- Refined Storage Requester not working [\#2991](https://github.com/NillerMedDild/Enigmatica6/issues/2991)
-- Thermal Unpacking Die has no recipe [\#2995](https://github.com/NillerMedDild/Enigmatica6/issues/2995)
-- Ultimine not respecting config? [\#3013](https://github.com/NillerMedDild/Enigmatica6/issues/3013)
-- Unsmeltable Smeltables [\#3005](https://github.com/NillerMedDild/Enigmatica6/issues/3005)
+-   \[RFTools: Dimensions\] Block Absorber Not Working On Emendatus Enigmatica Blocks [\#2962](https://github.com/NillerMedDild/Enigmatica6/issues/2962)
+-   Blocks placed by Building Gadgets "Building Gadget" are often translucent, but solid as expected [\#2990](https://github.com/NillerMedDild/Enigmatica6/issues/2990)
+-   I can't get Phantoms to spawn. [\#2992](https://github.com/NillerMedDild/Enigmatica6/issues/2992)
+-   No output recipes for molten redstone [\#2914](https://github.com/NillerMedDild/Enigmatica6/issues/2914)
+-   Problems placing torches on walls [\#2692](https://github.com/NillerMedDild/Enigmatica6/issues/2692)
+-   Quest description for Thermal Resin includes Acacia [\#2996](https://github.com/NillerMedDild/Enigmatica6/issues/2996)
+-   Recipe for silicon is broken [\#2997](https://github.com/NillerMedDild/Enigmatica6/issues/2997)
+-   Refined Storage Requester not working [\#2991](https://github.com/NillerMedDild/Enigmatica6/issues/2991)
+-   Thermal Unpacking Die has no recipe [\#2995](https://github.com/NillerMedDild/Enigmatica6/issues/2995)
+-   Ultimine not respecting config? [\#3013](https://github.com/NillerMedDild/Enigmatica6/issues/3013)
+-   Unsmeltable Smeltables [\#3005](https://github.com/NillerMedDild/Enigmatica6/issues/3005)
 
 ### Enigmatica 6 v0.5.10
 

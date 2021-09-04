@@ -5,8 +5,12 @@ onEvent('item.tags', (event) => {
         'mekanism:hazmat_pants',
         'mekanism:mekasuit_pants',
         'naturesaura:infused_iron_pants',
-        'naturesaura:sky_pants'
+        'naturesaura:sky_pants',
+        'bloodmagic:livingleggings'
     ];
+
+    var exceptions = ['kubejs:pneumatic_leggings_package', 'kubejs:pneumatic_leggings_assembly'];
+
     var tags = ['forge:armor', 'forge:armor/leggings'];
 
     tags.forEach((tag) => {
@@ -15,6 +19,7 @@ onEvent('item.tags', (event) => {
             .add(items)
             .add(/_leggings/)
             .add(/atum:.*legs/)
-            .add(/atum:legs/);
+            .add(/atum:legs/)
+            .remove(exceptions);
     });
 });

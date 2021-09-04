@@ -43,6 +43,42 @@ onEvent('recipes', (event) => {
                 Fluid.of('bloodmagic:life_essence_fluid', 1000)
             ],
             output: 'eidolon:lesser_soul_gem'
+        },
+        {
+            inputs: [
+                'ars_nouveau:mana_fiber',
+                'ars_nouveau:mana_fiber',
+                'undergarden:ditchbulb',
+                Fluid.of('tconstruct:blazing_blood', 500)
+            ],
+            output: Item.of('ars_nouveau:blaze_fiber', 2),
+            id: 'ars_nouveau:blaze_fiber'
+        },
+        {
+            inputs: [
+                'ars_nouveau:blaze_fiber',
+                'ars_nouveau:blaze_fiber',
+                '#forge:fruits/shadow_berry',
+                Fluid.of('integrateddynamics:liquid_chorus', 500)
+            ],
+            output: Item.of('ars_nouveau:end_fiber', 2),
+            id: 'ars_nouveau:end_fiber'
+        },
+        {
+            superheated: true,
+            inputs: [
+                'astralsorcery:illumination_powder',
+                'astralsorcery:illumination_powder',
+                'astralsorcery:illumination_powder',
+                '#forge:ingots/infused_iron',
+                'create:polished_rose_quartz',
+                'astralsorcery:nocturnal_powder',
+                'astralsorcery:nocturnal_powder',
+                'astralsorcery:nocturnal_powder',
+                '#forge:ingots/manasteel'
+            ],
+            output: Item.of('create:chromatic_compound', 2),
+            id: 'create:mixing/chromatic_compound'
         }
     ];
 

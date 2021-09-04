@@ -56,7 +56,7 @@ onEvent('recipes', (event) => {
                 inputs: [
                     'bloodmagic:soulgemlesser',
                     '#forge:ingots/enderium',
-                    'occultism:spirit_attuned_gem',
+                    '#botania:runes/helheim',
                     'bloodmagic:infusedslate'
                 ],
                 output: 'bloodmagic:soulgemcommon',
@@ -77,21 +77,36 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:soulforge/greatertartaricgem'
             },
             {
-                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_sword', '#forge:ingots/iesnium'],
+                inputs: [
+                    'bloodmagic:soulgempetty',
+                    'undergarden:forgotten_sword',
+                    '#forge:ingots/iesnium',
+                    '#botania:runes/helheim'
+                ],
                 output: Item.of('bloodmagic:soulsword'),
                 minimumDrain: 0.0,
                 drain: 0.0,
                 id: 'bloodmagic:soulforge/sentientsword'
             },
             {
-                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_axe', '#forge:ingots/iesnium'],
+                inputs: [
+                    'bloodmagic:soulgempetty',
+                    'undergarden:forgotten_axe',
+                    '#forge:ingots/iesnium',
+                    '#botania:runes/helheim'
+                ],
                 output: Item.of('bloodmagic:soulaxe'),
                 minimumDrain: 0.0,
                 drain: 0.0,
                 id: 'bloodmagic:soulforge/sentientaxe'
             },
             {
-                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_pickaxe', '#forge:ingots/iesnium'],
+                inputs: [
+                    'bloodmagic:soulgempetty',
+                    'undergarden:forgotten_pickaxe',
+                    '#forge:ingots/iesnium',
+                    '#botania:runes/helheim'
+                ],
                 output: Item.of('bloodmagic:soulpickaxe', {
                     'occultism:otherworldToolTier': 2
                 }),
@@ -100,14 +115,24 @@ onEvent('recipes', (event) => {
                 id: 'bloodmagic:soulforge/sentientpickaxe'
             },
             {
-                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_shovel', '#forge:ingots/iesnium'],
+                inputs: [
+                    'bloodmagic:soulgempetty',
+                    'undergarden:forgotten_shovel',
+                    '#forge:ingots/iesnium',
+                    '#botania:runes/helheim'
+                ],
                 output: Item.of('bloodmagic:soulshovel'),
                 minimumDrain: 0.0,
                 drain: 0.0,
                 id: 'bloodmagic:soulforge/sentientshovel'
             },
             {
-                inputs: ['bloodmagic:soulgempetty', 'undergarden:forgotten_hoe', '#forge:ingots/iesnium'],
+                inputs: [
+                    'bloodmagic:soulgempetty',
+                    'undergarden:forgotten_hoe',
+                    '#forge:ingots/iesnium',
+                    '#botania:runes/helheim'
+                ],
                 output: Item.of('bloodmagic:soulscythe'),
                 minimumDrain: 0.0,
                 drain: 0.0,
@@ -140,6 +165,25 @@ onEvent('recipes', (event) => {
                 minimumDrain: 4000.0,
                 drain: 2048.0,
                 id: 'occultism:crafting/iesnium_pickaxe'
+            },
+            {
+                inputs: ['occultism:dimensional_matrix', '#botania:runes/helheim', 'occultism:storage_controller_base'],
+                output: 'occultism:storage_controller',
+                minimumDrain: 1000.0,
+                drain: 200.0,
+                id: 'occultism:crafting/storage_controller'
+            },
+            {
+                inputs: [
+                    'bloodmagic:dungeon_stone',
+                    '#forge:ingots/tainted_gold',
+                    '#forge:gems/nitro',
+                    '#forge:gems/nitro'
+                ],
+                output: 'bloodmagic:crystalline_resonator',
+                minimumDrain: 1200.0,
+                drain: 200.0,
+                id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
             }
         ]
     };

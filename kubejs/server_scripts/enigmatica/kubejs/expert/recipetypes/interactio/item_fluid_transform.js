@@ -68,6 +68,32 @@ onEvent('recipes', (event) => {
             },
             consume_fluid: 1.0,
             id: 'meetyourfight:spectres_eye'
+        },
+        {
+            inputs: [
+                { item: 'kubejs:hot_compressed_iron_ingot', count: 1 }
+            ],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 0.2,
+            id: 'enigmatica:expert/interactio/ingot_iron_compressed'
+        },
+        {
+            inputs: [
+                { item: 'kubejs:hot_compressed_iron_block', count: 1 }
+            ],
+            fluid: { fluid: 'water' },
+            output: {
+                entries: [{ result: { item: 'pneumaticcraft:compressed_iron_block', count: 1 }, weight: 1 }],
+                empty_weight: 0,
+                rolls: 1
+            },
+            consume_fluid: 1.0,
+            id: 'enigmatica:expert/interactio/compressed_iron_block'
         }
     ];
 

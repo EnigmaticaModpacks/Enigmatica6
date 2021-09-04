@@ -90,6 +90,50 @@ onEvent('item.tooltip', (event) => {
                 'rftoolsbuilder:shield_block1'
             ],
             text: [Text.of('Shield Projections are immune to the Wither').color('#4F0D75')]
+        },
+        {
+            items: ['kubejs:basic_circuit_package'],
+            text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
+        },
+        {
+            items: ['bloodmagic:quick_draw_anointment'],
+            text: [Text.of('Grants Quick-Draw on Bows and Crossbows').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:fortune_anointment'],
+            text: [Text.of('Grants additional Fortune on Tools').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:holy_water_anointment'],
+            text: [Text.of('Grants bonus Smite damage on Melee Attacks.').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:melee_anointment'],
+            text: [Text.of('Grants bonus damage on Melee Attacks').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:bow_power_anointment'],
+            text: [Text.of('Grants bonus damage on Bows and Crossbows').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:silk_touch_anointment'],
+            text: [Text.of('Grants Silk Touch').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:hidden_knowledge_anointment'],
+            text: [Text.of('Grants bonus Experience from block harvests.').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:smelting_anointment'],
+            text: [Text.of('Grants Auto Smelt').color('#7e24b3')]
+        },
+        {
+            items: ['bloodmagic:looting_anointment'],
+            text: [Text.of('Grants additional Looting on Weapons').color('#7e24b3')]
+        },
+        {
+            items: ['#enigmatica:burning_hot'],
+            text: [Text.of('Extremely hot!').darkRed()]
         }
     ];
 

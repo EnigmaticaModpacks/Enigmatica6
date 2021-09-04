@@ -10,7 +10,8 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/tin',
                 B: '#forge:glass/colorless'
-            }
+            },
+            id: 'prettypipes:pipe'
         },
         {
             output: Item.of('ppfluids:fluid_pipe', 12),
@@ -19,7 +20,8 @@ onEvent('recipes', (event) => {
                 A: '#forge:ingots/tin',
                 B: '#forge:glass/colorless',
                 C: 'thermal:cured_rubber'
-            }
+            },
+            id: 'ppfluids:fluid_pipe'
         }
     ];
 

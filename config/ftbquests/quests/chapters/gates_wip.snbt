@@ -230,6 +230,7 @@
 		}
 		{
 			title: "PneumaticCraft"
+			icon: "pneumaticcraft:pressure_gauge_module"
 			x: -1.5d
 			y: 3.0d
 			dependencies: ["0000000000000FD7"]
@@ -237,18 +238,18 @@
 			tasks: [{
 				id: "0000000000000FDC"
 				type: "item"
-				item: "pneumaticcraft:pressure_gauge_module"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 16L
 			}]
 		}
 		{
 			title: "Refined Storage"
 			x: 0.0d
 			y: 4.5d
-			shape: "diamond"
 			dependencies: [
 				"0000000000000FDB"
 				"0000000000000FCD"
-				"218FBDC6B17EDF33"
+				"51E57880AFDE5595"
 			]
 			id: "0000000000000FDD"
 			tasks: [{
@@ -297,14 +298,15 @@
 		}
 		{
 			title: "Mekanism"
+			icon: "mekanism:alloy_atomic"
 			x: -1.5d
 			y: 6.0d
 			dependencies: ["0000000000000FDB"]
 			id: "0000000000000FE5"
 			tasks: [{
-				id: "0000000000000FE6"
+				id: "0EBD46ADF246F17F"
 				type: "item"
-				item: "mekanism:alloy_atomic"
+				item: "mekanism:steel_casing"
 			}]
 		}
 		{
@@ -317,7 +319,6 @@
 				"0000000000000FE3"
 				"0000000000000FE5"
 				"0000000000000FCB"
-				"11FC40A4B8CBA98A"
 			]
 			size: 2.0d
 			id: "0000000000000FE7"
@@ -331,8 +332,9 @@
 			title: "Integrated Dynamics"
 			icon: "integrateddynamics:crystalized_menril_chunk"
 			x: 0.0d
-			y: 3.0d
-			dependencies: ["0000000000000FC1"]
+			y: 6.0d
+			shape: "diamond"
+			dependencies: ["0000000000000FDD"]
 			id: "218FBDC6B17EDF33"
 			tasks: [{
 				id: "2A11C229CEEEBE6F"
@@ -342,9 +344,10 @@
 		}
 		{
 			title: "Flux Networks"
-			x: 0.0d
+			x: -4.5d
 			y: 6.0d
-			dependencies: ["0000000000000FDD"]
+			shape: "diamond"
+			dependencies: ["0000000000000FE3"]
 			id: "11FC40A4B8CBA98A"
 			tasks: [{
 				id: "590186031154D036"
@@ -363,6 +366,18 @@
 				id: "5727C862289731E8"
 				type: "item"
 				item: "pedestals:pedestal/stone333"
+			}]
+		}
+		{
+			title: "Tinkers' Construct"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["0000000000000FBF"]
+			id: "51E57880AFDE5595"
+			tasks: [{
+				id: "746F162F9FD6B5C6"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
 			}]
 		}
 	]

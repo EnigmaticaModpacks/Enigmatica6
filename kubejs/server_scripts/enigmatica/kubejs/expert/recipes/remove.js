@@ -26,8 +26,18 @@ onEvent('recipes', (event) => {
         'pedestals:upgrades/recycler',
         'pedestals:upgrades/rffuelgen',
         'pedestals:upgrades/rfexpgen',
+        'pedestals:upgrades/crafter1mk2',
         'darkutils:crafting/rune_damage_player',
-        /emendatusenigmatica:alloy_dust/
+        /emendatusenigmatica:alloy_dust/,
+        'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
+        'refinedstorage:quartz_enriched_iron',
+        'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+        'pneumaticcraft:explosion_crafting/compressed_iron_block',
+        'immersiveengineering:crafting/electrum_mix',
+        'thermal:enderium_dust_2',
+        'thermal:electrum_dust_2',
+        'thermal:invar_dust_3',
+        'thermal:lumium_dust_4'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];

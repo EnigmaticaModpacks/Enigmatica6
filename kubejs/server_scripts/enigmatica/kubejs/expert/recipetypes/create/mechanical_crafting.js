@@ -6,7 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'astralsorcery:hand_telescope',
-            pattern: [' A    ', 'ABA   ', ' ABC  ', '  CDC ', '   CCA', '    AB'],
+            pattern: ['    A ', '   ABA', '  CBA ', ' CDC  ', 'ACC   ', 'BA    '],
             key: {
                 A: '#forge:plates/brass',
                 B: 'astralsorcery:glass_lens',
@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
                 'MMMOOO   '
             ],
             key: {
-                A: '#forge:rods/brass',
+                A: '#forge:inlays/arcane_gold',
                 B: 'astralsorcery:marble_runed',
                 C: 'kubejs:observatory_lens',
                 D: 'quark:lime_rune',
@@ -45,7 +45,8 @@ onEvent('recipes', (event) => {
                 N: '#create:seats',
                 O: 'create:brass_casing',
                 P: 'immersiveengineering:furnace_heater'
-            }
+            },
+            id: 'astralsorcery:observatory'
         },
         {
             output: Item.of('immersiveengineering:blastbrick', 9),
@@ -69,13 +70,51 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:machine_frame'
             },
             id: 'rftoolsdim:dimension_builder'
+        },
+        {
+            output: 'refinedstorage:controller',
+            pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
+            key: {
+                A: 'refinedstorage:advanced_processor',
+                B: '#forge:ingots/slimesteel',
+                C: 'xnet:netcable_blue',
+                D: 'refinedstorage:quartz_enriched_iron',
+                E: 'refinedstorage:machine_casing',
+                F: 'immersiveengineering:logic_unit'
+            },
+            id: 'refinedstorage:controller'
+        },
+        {
+            output: Item.of('create:crushing_wheel', 2),
+            pattern: [' AAA ', 'AAPAA', 'APSPA', 'AAPAA', ' AAA '],
+            key: {
+                A: 'create:andesite_alloy',
+                S: 'create:shaft',
+                P: 'create:brass_casing'
+            },
+            id: 'create:mechanical_crafting/crushing_wheel'
+        },
+        {
+            output: 'refinedstorage:disk_drive',
+            pattern: ['ABCBA', 'BDEDB', 'CFGFC', 'BDEDB', 'ABCBA'],
+            key: {
+                A: '#forge:circuits/basic',
+                B: 'refinedstorage:advanced_processor',
+                C: 'refinedstorage:quartz_enriched_iron',
+                D: 'occultism:storage_stabilizer_tier1',
+                E: '#xnet:advanced_connectors',
+                F: 'immersiveengineering:logic_unit',
+                G: 'refinedstorage:machine_casing'
+            },
+            id: 'refinedstorage:disk_drive'
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
         if (recipe.id) {
-            re.id(recipe.id);
+            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
+        } else {
+            event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key);
         }
     });
 });

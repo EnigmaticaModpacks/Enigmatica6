@@ -110,6 +110,8 @@ var itemsToHide = [
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
+    'bloodmagic:ironsand',
+    'bloodmagic:goldsand',
 
     'byg:budding_ametrine_ore',
     'byg:anthracite_ore',
@@ -423,9 +425,6 @@ var regexHide = [
     /emendatusenigmatica:\w+_brimstone_ore/,
     /emendatusenigmatica:\w+_soul_soil_ore/,
     /emendatusenigmatica:\w+_basalt_ore/,
-    /tconstruct:\w+_station/,
-    /tconstruct:\w+_anvil/,
-    /tconstruct:part_builder/,
     /tconstruct:copper_(ore|block|nugget)/,
     /tconstruct:cobalt_(ore|block|nugget)/,
     /titanium:\w+_gear/,

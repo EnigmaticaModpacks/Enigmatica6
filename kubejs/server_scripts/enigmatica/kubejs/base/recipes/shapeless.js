@@ -67,13 +67,11 @@ onEvent('recipes', (event) => {
             output: Item.of('patchouli:guide_book', { 'patchouli:book': 'resourcefulbees:fifty_shades_of_bees' }),
             inputs: ['minecraft:sugar', 'minecraft:book']
         },
-        {
-            output: 'prettypipes:pipe_frame',
-            inputs: ['minecraft:item_frame', 'prettypipes:pipe', '#forge:dusts/redstone']
-        },
+
         {
             output: 'prettypipes:crafting_terminal',
-            inputs: ['prettypipes:item_terminal', 'prettypipes:low_crafting_module']
+            inputs: ['prettypipes:item_terminal', 'prettypipes:low_crafting_module'],
+            id: 'prettypipes:crafting_terminal'
         },
         { output: 'ars_nouveau:mana_gem', inputs: ['emendatusenigmatica:arcane_gem'] },
         { output: 'emendatusenigmatica:arcane_gem', inputs: ['ars_nouveau:mana_gem'] },
@@ -566,6 +564,16 @@ onEvent('recipes', (event) => {
         {
             output: 'sushigocrafting:soy_seeds',
             inputs: ['sushigocrafting:soy_bean']
+        },
+        {
+            output: Item.of('ars_nouveau:source_berry_roll', 3),
+            inputs: [
+                'farmersdelight:wheat_dough',
+                'farmersdelight:wheat_dough',
+                'farmersdelight:wheat_dough',
+                '#forge:fruits/mana_berry'
+            ],
+            id: 'ars_nouveau:source_berry_roll'
         }
     ];
 
