@@ -522,7 +522,12 @@ onEvent('recipes', (event) => {
             material = 'arcane';
         }
 
-        event.shapeless(`emendatusenigmatica:${material}_ore`, [`emendatusenigmatica:${material}_chunk`]);
+        event
+            .shapeless(`emendatusenigmatica:${material}_ore`, [`emendatusenigmatica:${material}_chunk`])
+            .id(`enigmatica:base/emendatusenigmatica/${material}_ore`);
+        event
+            .shapeless(Item.of(`emendatusenigmatica:${material}_chunk`, 4), [`emendatusenigmatica:${material}_cluster`])
+            .id(`emendatusenigmatica:chunk_from_cluster/${material}`);
     }
 
     function immersiveengineering_hammer_crushing(event, material, ore, dust) {
@@ -532,10 +537,9 @@ onEvent('recipes', (event) => {
 
         let output = dust,
             input = `#forge:ores/${material}`,
-            hammer = 'immersiveengineering:hammer';
+            hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
 
-        event.remove({ id: `immersiveengineering:crafting/hammercrushing${material}` });
-        event.shapeless(output, [input, hammer]).id(`kubejs:immersiveengineering_hammer_crushing/${material}`);
+        event.shapeless(output, [input, hammer]).id(`immersiveengineering:crafting/hammercrushing${material}`);
     }
 
     function immersiveengineering_gem_crushing(event, material, dust, gem) {
@@ -1303,7 +1307,6 @@ onEvent('recipes', (event) => {
                     cooling_time: 171
                 })
                 .id(`tconstruct:smeltery/casting/metal/${material}/block`);
-                
         }
     }
 
