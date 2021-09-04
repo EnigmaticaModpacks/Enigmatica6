@@ -33,7 +33,11 @@ onEvent('recipes', (event) => {
         'refinedstorage:quartz_enriched_iron',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
-        'thermal:invar_dust_3'
+        'immersiveengineering:crafting/electrum_mix',
+        'thermal:enderium_dust_2',
+        'thermal:electrum_dust_2',
+        'thermal:invar_dust_3',
+        'thermal:lumium_dust_4'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
