@@ -87,7 +87,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/sushigocrafting/avocado_combs'
         },
         {
-            output: Item.of('sushigocrafting:shrimp', 3),
+            output: Item.of('sushigocrafting:shrimp', '{Amount:15}'),
             pattern: ['ABC'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
