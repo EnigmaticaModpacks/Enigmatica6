@@ -11,7 +11,7 @@
 	quests: [
 		{
 			x: 0.0d
-			y: 0.0d
+			y: 0.5d
 			id: "1DB20906EC9FFAB9"
 			tasks: [{
 				id: "6C30E3FB62A38AAB"
@@ -35,8 +35,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 1.5d
+			x: 4.5d
+			y: 1.0d
 			dependencies: ["14099ACA706F3CCE"]
 			id: "7A62AEC29C33B717"
 			tasks: [{
@@ -53,7 +53,7 @@
 		}
 		{
 			x: 5.0d
-			y: 2.5d
+			y: 1.5d
 			dependencies: ["7A62AEC29C33B717"]
 			id: "2357CCF3A0758B0C"
 			tasks: [{
@@ -64,7 +64,7 @@
 		}
 		{
 			x: 5.0d
-			y: 0.0d
+			y: 0.5d
 			id: "14099ACA706F3CCE"
 			tasks: [{
 				id: "2594806B26FA3778"
@@ -74,7 +74,7 @@
 		}
 		{
 			x: -1.0d
-			y: 0.0d
+			y: 1.0d
 			id: "0044F922097279B5"
 			tasks: [{
 				id: "761CE516771F68FC"
@@ -84,7 +84,7 @@
 		}
 		{
 			x: 1.0d
-			y: 0.0d
+			y: 1.0d
 			id: "19A178AE2895632F"
 			tasks: [{
 				id: "52211E602B78DB92"
@@ -94,8 +94,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 2.5d
+			x: -0.5d
+			y: 2.0d
 			dependencies: ["6AADF6A0814C29D4"]
 			id: "39391CA4F900D31F"
 			tasks: [{
@@ -106,8 +106,8 @@
 		}
 		{
 			icon: "create:mechanical_mixer"
-			x: 0.0d
-			y: 4.5d
+			x: -0.5d
+			y: 3.0d
 			dependencies: ["10890B170755A6D5"]
 			id: "4399B01214307E59"
 			tasks: [
@@ -130,8 +130,8 @@
 		}
 		{
 			title: "Pressing Efficiency"
-			x: -1.0d
-			y: 3.5d
+			x: 0.5d
+			y: 3.0d
 			shape: "diamond"
 			dependencies: ["10890B170755A6D5"]
 			optional: true
@@ -145,7 +145,7 @@
 		{
 			title: "Basic Rotation Acquired!"
 			x: 0.0d
-			y: 3.5d
+			y: 2.5d
 			dependencies: ["39391CA4F900D31F"]
 			id: "10890B170755A6D5"
 			tasks: [{
@@ -176,7 +176,7 @@
 		}
 		{
 			x: 0.0d
-			y: 5.5d
+			y: 3.5d
 			dependencies: ["4399B01214307E59"]
 			id: "6F3E31687E06AA19"
 			tasks: [{
@@ -186,8 +186,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 6.5d
+			x: -0.5d
+			y: 4.0d
 			dependencies: ["6F3E31687E06AA19"]
 			id: "1FF1E4E11F6A5745"
 			tasks: [{
@@ -199,18 +199,19 @@
 		}
 		{
 			x: 0.0d
-			y: 7.5d
+			y: 4.5d
 			dependencies: ["1FF1E4E11F6A5745"]
 			id: "7EF2979430F203C0"
 			tasks: [{
 				id: "3A49F5AEB499C757"
 				type: "item"
 				item: "create:crushing_wheel"
+				count: 2L
 			}]
 		}
 		{
-			x: 0.0d
-			y: 8.5d
+			x: -0.5d
+			y: 5.0d
 			dependencies: ["7EF2979430F203C0"]
 			id: "1AA1AAE2DA37A44F"
 			tasks: [{
@@ -221,7 +222,7 @@
 		}
 		{
 			x: 0.0d
-			y: 10.5d
+			y: 6.75d
 			shape: "octagon"
 			dependencies: ["1AA1AAE2DA37A44F"]
 			size: 1.5d
@@ -234,72 +235,87 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 9.0d
+			x: 4.5d
+			y: 4.5d
 			dependencies: ["155D0B93052756E8"]
 			id: "0E16BA23BA46FCB1"
-			tasks: [{
-				id: "3A5D83300A377FFA"
-				type: "item"
-				item: "thermal:tar"
-			}]
+			tasks: [
+				{
+					id: "3A5D83300A377FFA"
+					type: "item"
+					title: "Any #forge:tar"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:tar"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "620201D82E6955AC"
+					type: "item"
+					title: "Any #forge:ingots/steel"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:ingots/steel"
+						}
+					}
+					count: 2L
+				}
+				{
+					id: "28DE5B8E42B2F849"
+					type: "item"
+					title: "Any #forge:obsidian"
+					item: {
+						id: "itemfilters:tag"
+						Count: 1b
+						tag: {
+							value: "forge:obsidian"
+						}
+					}
+					count: 2L
+				}
+			]
 		}
 		{
 			x: 5.0d
-			y: 6.0d
+			y: 3.5d
+			dependencies: ["79D7002653A22C9E"]
 			id: "155D0B93052756E8"
 			tasks: [{
-				id: "27B6802AAE0151C1"
+				id: "11D4AFF923BA438E"
 				type: "item"
-				item: "thermal:machine_pyrolyzer"
+				title: "Tar Producing Machine"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:machine_refinery"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_pyrolyzer"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_centrifuge"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 		}
 		{
-			x: 4.5d
-			y: 7.0d
+			x: 5.5d
+			y: 4.5d
 			dependencies: ["155D0B93052756E8"]
-			id: "2E1CD31A36FB6FED"
-			tasks: [{
-				id: "1577A8526C9E0FF8"
-				type: "item"
-				item: "emendatusenigmatica:coke_gem"
-			}]
-		}
-		{
-			x: 4.5d
-			y: 8.0d
-			dependencies: ["2E1CD31A36FB6FED"]
-			id: "66DFE951BC91F3CA"
-			tasks: [{
-				id: "0C76A97EBFA1AEE0"
-				type: "item"
-				item: "emendatusenigmatica:coke_dust"
-			}]
-		}
-		{
-			x: 4.5d
-			y: 9.0d
-			dependencies: ["66DFE951BC91F3CA"]
-			id: "693753CCB00C2A91"
-			tasks: [{
-				id: "0AF24E8708A45902"
-				type: "item"
-				item: "emendatusenigmatica:steel_ingot"
-			}]
-		}
-		{
-			x: 3.5d
-			y: 9.5d
-			id: "36F6619A78662D13"
-			tasks: [{
-				id: "5B8A412E3F971782"
-				type: "item"
-				item: "minecraft:obsidian"
-			}]
-		}
-		{
-			x: 6.5d
-			y: 9.5d
 			id: "15783B9E18D2320C"
 			tasks: [{
 				id: "471FCECF9E5D4A2C"
@@ -309,11 +325,9 @@
 		}
 		{
 			x: 5.0d
-			y: 10.0d
+			y: 5.5d
 			dependencies: [
-				"693753CCB00C2A91"
 				"0E16BA23BA46FCB1"
-				"36F6619A78662D13"
 				"15783B9E18D2320C"
 			]
 			id: "3DD1F984ED880148"
@@ -325,8 +339,8 @@
 		}
 		{
 			x: 5.0d
-			y: 11.0d
-			dependencies: ["3DD1F984ED880148"]
+			y: 6.5d
+			dependencies: ["5C41CE1C3B4B51C0"]
 			id: "00EF0CAB3FB28938"
 			tasks: [{
 				id: "1B2F44B4F78173E4"
@@ -335,8 +349,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 12.5d
+			x: 6.0d
+			y: 7.5d
 			shape: "octagon"
 			dependencies: ["00EF0CAB3FB28938"]
 			size: 1.5d
@@ -345,6 +359,71 @@
 				id: "58F6F9B04F87F83E"
 				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			id: "508E396542F84E94"
+			tasks: [{
+				id: "6D5488667C5C0D5C"
+				type: "item"
+				item: "thermal:machine_smelter"
+			}]
+		}
+		{
+			title: "Magma Crucible [Make a part of progression somehow, WIP]"
+			x: 5.0d
+			y: 2.5d
+			dependencies: ["508E396542F84E94"]
+			id: "124A14F6B4F6B9CE"
+			tasks: [{
+				id: "7D95016C9993B2A6"
+				type: "item"
+				item: "thermal:machine_crucible"
+			}]
+		}
+		{
+			title: "WIP, some item produced via Magma Crucible"
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["124A14F6B4F6B9CE"]
+			id: "79D7002653A22C9E"
+			tasks: [{
+				id: "066F7D4129471FBC"
+				type: "item"
+				item: {
+					id: "botania:cosmetic_questgiver_mark"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.0d
+			dependencies: ["3DD1F984ED880148"]
+			id: "5C41CE1C3B4B51C0"
+			tasks: [{
+				id: "768FF447CFFDDFFB"
+				type: "item"
+				item: "thermal:machine_press"
+			}]
+		}
+		{
+			title: "Dev Notes"
+			x: 2.5d
+			y: 0.0d
+			description: ["The quests are placed like this to give an easy overview, it's not actually going to look like this in the end :P"]
+			id: "72987F9393410FCA"
+			tasks: [{
+				id: "6FC71CD83BC84D83"
+				type: "item"
+				item: {
+					id: "botania:cosmetic_questgiver_mark"
+					Count: 1b
+					tag: { }
+				}
 			}]
 		}
 	]
