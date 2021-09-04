@@ -230,6 +230,7 @@
 		}
 		{
 			title: "PneumaticCraft"
+			icon: "pneumaticcraft:pressure_gauge_module"
 			x: -1.5d
 			y: 3.0d
 			dependencies: ["0000000000000FD7"]
@@ -237,7 +238,8 @@
 			tasks: [{
 				id: "0000000000000FDC"
 				type: "item"
-				item: "pneumaticcraft:pressure_gauge_module"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 16L
 			}]
 		}
 		{
