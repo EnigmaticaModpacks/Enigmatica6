@@ -276,6 +276,10 @@ onEvent('jei.information', (event) => {
                 ` `,
                 `Alternatively obtained by killing undead mobs with a Reaper's Scythe.`
             ]
+        },
+        {
+            items: ['atum:anputs_fingers_spores'],
+            description: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
         }
     ];
 

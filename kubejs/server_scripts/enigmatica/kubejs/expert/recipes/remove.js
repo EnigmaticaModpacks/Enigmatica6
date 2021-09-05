@@ -38,21 +38,50 @@ onEvent('recipes', (event) => {
     const outputRemovals = ['tiab:timeinabottle'];
 
     const patchouli_safe_removals = [
+        { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
+        { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
+        { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' },
+
         { output: 'ars_nouveau:arcane_stone', id: 'ars_nouveau:arcane_stone' },
         { output: 'ars_nouveau:crystallizer', id: 'ars_nouveau:crystallizer' },
         { output: 'ars_nouveau:volcanic_accumulator', id: 'ars_nouveau:volcanic_accumulator' },
-        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
-        { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
+        { output: 'ars_nouveau:mana_condenser', id: 'ars_nouveau:mana_condenser' },
+        { output: 'ars_nouveau:mycelial_sourcelink', id: 'ars_nouveau:mycelial_sourcelink' },
+        { output: 'ars_nouveau:vitalic_sourcelink', id: 'ars_nouveau:vitalic_sourcelink' },
+        { output: 'ars_nouveau:alchemical_sourcelink', id: 'ars_nouveau:alchemical_sourcelink' },
+        { output: 'ars_nouveau:novice_hood', id: 'ars_nouveau:novice_hood' },
+        { output: 'ars_nouveau:novice_robes', id: 'ars_nouveau:novice_robes' },
+        { output: 'ars_nouveau:novice_leggings', id: 'ars_nouveau:novice_leggings' },
+        { output: 'ars_nouveau:novice_boots', id: 'ars_nouveau:novice_boots' },
+        { output: 'ars_nouveau:apprentice_hood', id: 'ars_nouveau:apprentice_hood' },
+        { output: 'ars_nouveau:apprentice_robes', id: 'ars_nouveau:apprentice_robes' },
+        { output: 'ars_nouveau:apprentice_leggings', id: 'ars_nouveau:apprentice_leggings' },
+        { output: 'ars_nouveau:apprentice_boots', id: 'ars_nouveau:apprentice_boots' },
+        { output: 'ars_nouveau:archmage_hood', id: 'ars_nouveau:archmage_hood' },
+        { output: 'ars_nouveau:archmage_robes', id: 'ars_nouveau:archmage_robes' },
+        { output: 'ars_nouveau:archmage_leggings', id: 'ars_nouveau:archmage_leggings' },
+        { output: 'ars_nouveau:archmage_boots', id: 'ars_nouveau:archmage_boots' },
+
+        { output: 'bloodmagic:soulforge', id: 'bloodmagic:soul_forge' },
+        { output: 'bloodmagic:ritualdiviner', id: 'bloodmagic:ritual_diviner_0' },
+
+        { output: 'botania:terrasteel_helmet', id: 'botania:terrasteel_helmet' },
+        { output: 'botania:terrasteel_chestplate', id: 'botania:terrasteel_chestplate' },
+        { output: 'botania:terrasteel_leggings', id: 'botania:terrasteel_leggings' },
+        { output: 'botania:terrasteel_boots', id: 'botania:terrasteel_boots' },
         { output: 'botania:spark', id: 'botania:spark' },
         { output: 'botania:mana_pylon', id: 'botania:mana_pylon' },
         { output: 'botania:natura_pylon', id: 'botania:natura_pylon' },
+        { output: 'botania:apothecary_default', id: 'botania:apothecary_default' },
+
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
+
+        { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
+        { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
+        { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
-        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
-        { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
-        { output: 'apotheosis:seashelf', id: 'apotheosis:seashelf' },
-        { output: 'apotheosis:endshelf', id: 'apotheosis:endshelf' }
+        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' }
     ];
 
     idRemovals.forEach((id) => {

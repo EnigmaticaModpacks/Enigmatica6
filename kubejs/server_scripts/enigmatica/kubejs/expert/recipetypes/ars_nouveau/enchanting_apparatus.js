@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
     var data = {
         recipes: [
             {
@@ -25,7 +25,8 @@ onEvent('recipes', (event) => {
                 ],
                 reagent: '#forge:beehives/tier_0',
                 output: 'betterendforge:silk_moth_nest',
-                count: 1
+                count: 1,
+                id: `${id_prefix}silk_moth_nest`
             },
             {
                 inputs: [
@@ -37,7 +38,7 @@ onEvent('recipes', (event) => {
                 reagent: 'betterendforge:silk_fiber',
                 output: 'naturesaura:gold_fiber',
                 count: 4,
-                id: 'naturesaura:gold_fiber'
+                id: `${id_prefix}gold_fiber`
             },
             {
                 inputs: [
@@ -49,7 +50,7 @@ onEvent('recipes', (event) => {
                 reagent: 'eidolon:crucible',
                 output: 'botania:apothecary_default',
                 count: 1,
-                id: 'botania:apothecary_default'
+                id: `${id_prefix}gold_fiber`
             },
             {
                 inputs: [
@@ -94,7 +95,7 @@ onEvent('recipes', (event) => {
                 reagent: 'eidolon:crucible',
                 output: 'bloodmagic:soulforge',
                 count: 1,
-                id: 'bloodmagic:soul_forge'
+                id: `${id_prefix}soulforge`
             },
             {
                 inputs: [
@@ -139,9 +140,74 @@ onEvent('recipes', (event) => {
                     'eidolon:gold_inlay',
                     'eidolon:gold_inlay'
                 ],
-                reagent: 'ars_nouveau:mana_jar',
+                reagent: 'minecraft:conduit',
                 output: 'ars_nouveau:volcanic_accumulator',
-                count: 1
+                count: 1,
+                id: `${id_prefix}volcanic_accumulator`
+            },
+            {
+                inputs: [
+                    '#forge:nuggets/gold_brass',
+                    'thermal:phytogro',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'minecraft:conduit',
+                output: 'ars_nouveau:mana_condenser',
+                count: 1,
+                id: `${id_prefix}mana_condenser`
+            },
+            {
+                inputs: [
+                    '#forge:nuggets/gold_brass',
+                    'eidolon:fungus_sprouts',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'minecraft:conduit',
+                output: 'ars_nouveau:mycelial_sourcelink',
+                count: 1,
+                id: `${id_prefix}mycelial_sourcelink`
+            },
+            {
+                inputs: [
+                    '#forge:nuggets/gold_brass',
+                    'atum:glistering_date',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'minecraft:conduit',
+                output: 'ars_nouveau:vitalic_sourcelink',
+                count: 1,
+                id: `${id_prefix}vitalic_sourcelink`
+            },
+            {
+                inputs: [
+                    '#forge:nuggets/gold_brass',
+                    'eidolon:wooden_brewing_stand',
+                    '#forge:nuggets/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay',
+                    'eidolon:gold_inlay'
+                ],
+                reagent: 'minecraft:conduit',
+                output: 'ars_nouveau:alchemical_sourcelink',
+                count: 1,
+                id: `${id_prefix}alchemical_sourcelink`
             },
             {
                 inputs: [
@@ -156,7 +222,8 @@ onEvent('recipes', (event) => {
                 ],
                 reagent: '#forge:gems/mana',
                 output: 'ars_nouveau:crystallizer',
-                count: 1
+                count: 1,
+                id: `${id_prefix}crystallizer`
             },
             {
                 inputs: [
@@ -204,7 +271,7 @@ onEvent('recipes', (event) => {
                 reagent: 'minecraft:spawner',
                 output: 'naturesaura:animal_spawner',
                 count: 1,
-                id: 'naturesaura:animal_spawner'
+                id: `${id_prefix}animal_spawner`
             },
             {
                 inputs: [
@@ -361,7 +428,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:livingwood_twig',
                 output: 'bloodmagic:ritualdiviner',
                 count: 1,
-                id: 'bloodmagic:ritual_diviner_0'
+                id: `${id_prefix}ritualdiviner`
             },
             {
                 inputs: [
@@ -1140,7 +1207,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_helmet',
                 output: 'ars_nouveau:novice_hood',
                 count: 1,
-                id: 'ars_nouveau:novice_hood'
+                id: `${id_prefix}novice_hood`
             },
             {
                 inputs: [
@@ -1156,7 +1223,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_chest',
                 output: 'ars_nouveau:novice_robes',
                 count: 1,
-                id: 'ars_nouveau:novice_robes'
+                id: `${id_prefix}novice_robes`
             },
             {
                 inputs: [
@@ -1171,7 +1238,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_legs',
                 output: 'ars_nouveau:novice_leggings',
                 count: 1,
-                id: 'ars_nouveau:novice_leggings'
+                id: `${id_prefix}novice_leggings`
             },
             {
                 inputs: [
@@ -1183,7 +1250,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_boots',
                 output: 'ars_nouveau:novice_boots',
                 count: 1,
-                id: 'ars_nouveau:novice_boots'
+                id: `${id_prefix}novice_boots`
             },
 
             {
@@ -1197,7 +1264,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_helmet',
                 output: 'ars_nouveau:apprentice_hood',
                 count: 1,
-                id: 'ars_nouveau:apprentice_hood'
+                id: `${id_prefix}apprentice_hood`
             },
             {
                 inputs: [
@@ -1213,7 +1280,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_chest',
                 output: 'ars_nouveau:apprentice_robes',
                 count: 1,
-                id: 'ars_nouveau:apprentice_robes'
+                id: `${id_prefix}apprentice_robes`
             },
             {
                 inputs: [
@@ -1228,7 +1295,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_legs',
                 output: 'ars_nouveau:apprentice_leggings',
                 count: 1,
-                id: 'ars_nouveau:apprentice_leggings'
+                id: `${id_prefix}apprentice_leggings`
             },
             {
                 inputs: [
@@ -1240,7 +1307,7 @@ onEvent('recipes', (event) => {
                 reagent: 'atum:wanderer_boots',
                 output: 'ars_nouveau:apprentice_boots',
                 count: 1,
-                id: 'ars_nouveau:apprentice_boots'
+                id: `${id_prefix}apprentice_boots`
             },
 
             {
@@ -1254,7 +1321,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manaweave_helmet',
                 output: 'ars_nouveau:archmage_hood',
                 count: 1,
-                id: 'ars_nouveau:archmage_hood'
+                id: `${id_prefix}archmage_hood`
             },
             {
                 inputs: [
@@ -1270,7 +1337,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manaweave_chestplate',
                 output: 'ars_nouveau:archmage_robes',
                 count: 1,
-                id: 'ars_nouveau:archmage_robes'
+                id: `${id_prefix}archmage_robes`
             },
             {
                 inputs: [
@@ -1285,7 +1352,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manaweave_leggings',
                 output: 'ars_nouveau:archmage_leggings',
                 count: 1,
-                id: 'ars_nouveau:archmage_leggings'
+                id: `${id_prefix}archmage_leggings`
             },
             {
                 inputs: [
@@ -1297,7 +1364,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manaweave_boots',
                 output: 'ars_nouveau:archmage_boots',
                 count: 1,
-                id: 'ars_nouveau:archmage_boots'
+                id: `${id_prefix}archmage_boots`
             },
             {
                 inputs: [
@@ -1313,7 +1380,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manasteel_helmet',
                 output: 'botania:terrasteel_helmet',
                 count: 1,
-                id: 'botania:terrasteel_helmet'
+                id: `${id_prefix}terrasteel_helmet`
             },
             {
                 inputs: [
@@ -1329,7 +1396,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manasteel_chestplate',
                 output: 'botania:terrasteel_chestplate',
                 count: 1,
-                id: 'botania:terrasteel_chestplate'
+                id: `${id_prefix}terrasteel_chestplate`
             },
             {
                 inputs: [
@@ -1345,7 +1412,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manasteel_leggings',
                 output: 'botania:terrasteel_leggings',
                 count: 1,
-                id: 'botania:terrasteel_leggings'
+                id: `${id_prefix}terrasteel_leggings`
             },
             {
                 inputs: [
@@ -1361,7 +1428,7 @@ onEvent('recipes', (event) => {
                 reagent: 'botania:manasteel_boots',
                 output: 'botania:terrasteel_boots',
                 count: 1,
-                id: 'botania:terrasteel_boots'
+                id: `${id_prefix}terrasteel_boots`
             },
 
             /// Patchouli Removals
@@ -1397,9 +1464,6 @@ onEvent('recipes', (event) => {
             constructed_recipe['mana'] = recipe.mana;
         }
 
-        const re = event.custom(constructed_recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.custom(constructed_recipe).id(recipe.id);
     });
 });
