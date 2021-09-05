@@ -1,6 +1,6 @@
 //priority: 1000
 
-// all animals that can be tamed, used for zoology challenge
+// all animals that can be tamed, used for the zoology challenge
 const tameableAnimals = [
     'minecraft:cat',
     'minecraft:donkey',
@@ -30,7 +30,7 @@ const tameableAnimals = [
 ];
 
 // all animals that can be bred (except egg laying animals)
-// all animals in this list are added to the 'Two by Two' advancement, which is used for conservationism challenge
+// all animals in this list are added to the 'Two by Two' advancement, which is used for the conservationism challenge
 const breedableAnimals = [
     'minecraft:bee',
     'minecraft:cat',
