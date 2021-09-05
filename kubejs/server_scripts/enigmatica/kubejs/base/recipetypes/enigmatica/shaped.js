@@ -564,16 +564,6 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/minecraft/ladder'
         },
         {
-            output: Item.of('bloodmagic:demonwillgauge', 1),
-            pattern: [' B ', 'ACA', ' B '],
-            key: {
-                A: '#forge:ingots/tin',
-                B: '#forge:nuggets/tin',
-                C: '#bloodmagic:crystals/demon'
-            },
-            id: 'enigmatica:base/bloodmagic/demonwillgauge'
-        },
-        {
             output: 'tetra:combustion_chamber',
             pattern: ['CBC', 'BAB', 'CBC'],
             key: {

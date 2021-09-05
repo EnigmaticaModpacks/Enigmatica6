@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/ars_nouveau/enchanting_apparatus/';
     var data = {
         recipes: [
             {
@@ -259,6 +260,35 @@ onEvent('recipes', (event) => {
                 output: 'ars_nouveau:potion_melder',
                 count: 1,
                 id: 'ars_nouveau:potion_melder'
+            },
+            {
+                inputs: [
+                    'ars_nouveau:wilden_horn',
+                    'ars_nouveau:wilden_spike',
+                    'ars_nouveau:wilden_wing',
+                    'ars_nouveau:wilden_tribute',
+                    '#forge:ingots/gold_brass'
+                ],
+                reagent: '#forge:storage_blocks/mana',
+                output: 'ars_nouveau:summon_focus',
+                count: 1,
+                id: 'ars_nouveau:summon_focus'
+            },
+            {
+                inputs: [
+                    '#forge:glass',
+                    '#forge:glass',
+                    'ars_nouveau:glyph_self',
+                    'ars_nouveau:glyph_self',
+                    '#forge:logs/archwood',
+                    '#forge:logs/archwood',
+                    '#forge:ingots/gold_brass',
+                    '#forge:ingots/gold_brass'
+                ],
+                reagent: '#forge:storage_blocks/mana',
+                output: 'ars_nouveau:enchanters_mirror',
+                count: 1,
+                id: 'ars_nouveau:enchanters_mirror'
             }
         ]
     };
@@ -274,9 +304,6 @@ onEvent('recipes', (event) => {
             constructed_recipe[`item_${i}`] = input.charAt(0) == '#' ? [{ tag: input.slice(1) }] : [{ item: input }];
         });
 
-        const re = event.custom(constructed_recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.custom(constructed_recipe).id(recipe.id);
     });
 });
