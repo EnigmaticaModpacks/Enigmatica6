@@ -1,7 +1,6 @@
 //priority: 1000
 
 // all animals that can be tamed, used for zoology challenge
-// crows aren't in this list as they don't trigger the relevant advancement trigger when tamed
 const tameableAnimals = [
     'minecraft:wolf',
     'minecraft:cat',
@@ -20,12 +19,14 @@ const tameableAnimals = [
     'alexsmobs:raccoon',
     'alexsmobs:warped_toad',
     'alexsmobs:mimic_octopus',
-    'alexsmobs:bald_eagle',
+    // see #2453 'alexsmobs:bald_eagle',
     'alexsmobs:tarantula_hawk',
+    'alexsmobs:crow',
     'atum:camel',
     'atum:desert_wolf',
     'atum:serval',
-    'quark:foxhound'
+    'quark:foxhound',
+    'environmental:slabfish'
 ];
 
 // all animals that can be bred (except egg laying animals)
@@ -67,9 +68,15 @@ const breedableAnimals = [
     'alexsmobs:platypus',
     'alexsmobs:tasmanian_devil',
     'alexsmobs:kangaroo',
-    'alexsmobs:bald_eagle',
+    // see #2453 'alexsmobs:bald_eagle',
     'alexsmobs:tiger',
     'alexsmobs:mimic_octopus',
+    'alexsmobs:cockroach',
+    'alexsmobs:rattlesnake',
+    'alexsmobs:gazelle',
+    'alexsmobs:gorilla',
+    'alexsmobs:grizzly_bear',
+    'alexsmobs:roadrunner',
     'atum:camel',
     'atum:desert_rabbit',
     'atum:desert_wolf',
@@ -79,7 +86,11 @@ const breedableAnimals = [
     'quark:foxhound',
     'quark:frog',
     'undergarden:gloomper',
-    'undergarden:dweller'
+    'undergarden:dweller',
+    "environmental:deer",
+    "environmental:duck",
+    "environmental:slabfish",
+    "environmental:yak"
 ];
 
 // animals that can be bred, but don't immediately spawn a child after breeding
