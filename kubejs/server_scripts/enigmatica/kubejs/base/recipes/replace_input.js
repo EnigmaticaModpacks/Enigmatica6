@@ -303,7 +303,12 @@ onEvent('recipes', (event) => {
                 'pneumaticcraft:gun_ammo',
                 'ars_nouveau:marvelous_clay',
                 'ars_nouveau:ritual',
-                'ars_nouveau:sconce'
+                'ars_nouveau:sconce',
+                'ars_nouveau:basic_spell_turret',
+                'ars_nouveau:mycelial_sourcelink',
+                'ars_nouveau:vitalic_sourcelink',
+                'ars_nouveau:alchemical_sourcelink',
+                'ars_nouveau:mana_condenser'
             ]
         },
         {
@@ -461,8 +466,8 @@ onEvent('recipes', (event) => {
         recipe.items.forEach((item) => {
             event.replaceInput(
                 { output: item },
-                '#forge:' + recipe.type + '/' + recipe.replace,
-                '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith
+                `#forge:${recipe.type}/${recipe.replace}`,
+                `#forge:${recipe.type}/${recipe.replace}_${recipe.replaceWith}`
             );
         });
     });

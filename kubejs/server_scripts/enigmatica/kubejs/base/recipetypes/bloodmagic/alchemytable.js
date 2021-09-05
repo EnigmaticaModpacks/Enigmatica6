@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/bloodmagic/alchemytable/';
     data = {
         recipes: [
             {
@@ -9,20 +10,6 @@ onEvent('recipes', (event) => {
                 ticks: 20,
                 orbLevel: 0,
                 id: 'bloodmagic:alchemytable/flint_from_gravel'
-            },
-            {
-                inputs: [
-                    'minecraft:rotten_flesh',
-                    'minecraft:rotten_flesh',
-                    'minecraft:rotten_flesh',
-                    'minecraft:rotten_flesh'
-                ],
-                output: 'minecraft:leather',
-                count: 4,
-                syphon: 100,
-                ticks: 200,
-                orbLevel: 1,
-                id: 'bloodmagic:alchemytable/leather_from_flesh'
             },
             {
                 inputs: ['#forge:crops/potato', '#forge:crops/potato', '#forge:crops/potato', 'minecraft:bone_meal'],
@@ -75,7 +62,8 @@ onEvent('recipes', (event) => {
                 count: 4,
                 syphon: 50,
                 ticks: 20,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}blaze_powder`
             },
             {
                 inputs: ['#forge:rods/basalz'],
@@ -83,7 +71,8 @@ onEvent('recipes', (event) => {
                 count: 4,
                 syphon: 50,
                 ticks: 20,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}basalz_powder`
             },
             {
                 inputs: ['#forge:rods/blizz'],
@@ -91,7 +80,8 @@ onEvent('recipes', (event) => {
                 count: 4,
                 syphon: 50,
                 ticks: 20,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}blizz_powder`
             },
             {
                 inputs: ['#forge:rods/blitz'],
@@ -99,7 +89,8 @@ onEvent('recipes', (event) => {
                 count: 4,
                 syphon: 50,
                 ticks: 20,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}blitz_powder`
             },
             {
                 inputs: ['minecraft:dirt', 'minecraft:bone_meal', '#forge:mushrooms'],
@@ -107,7 +98,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}mycelium`
             },
             {
                 inputs: ['minecraft:dirt', 'minecraft:bone_meal', '#minecraft:leaves'],
@@ -115,7 +107,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}podzol`
             },
             {
                 inputs: ['byg:quartzite_sand', 'byg:quartzite_sand', 'byg:quartzite_sand'],
@@ -123,7 +116,8 @@ onEvent('recipes', (event) => {
                 count: 3,
                 syphon: 50,
                 ticks: 20,
-                orbLevel: 0
+                orbLevel: 0,
+                id: `${id_prefix}quartz`
             },
             {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:bulbis_sprouts'],
@@ -131,7 +125,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}bulbis_phycelium`
             },
             {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:imparius_vine'],
@@ -139,7 +134,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}imparius_phylium`
             },
             {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:shulkren_moss_blanket'],
@@ -147,7 +143,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}shulkren_phylium`
             },
             {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:nightshade_sprouts'],
@@ -155,7 +152,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}nightshade_phylium`
             },
             {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', 'byg:ivis_sprout'],
@@ -163,7 +161,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}ivis_phylium`
             },
             {
                 inputs: ['byg:ether_soil', 'minecraft:bone_meal', 'byg:ether_foliage'],
@@ -171,7 +170,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}ether_phylium`
             },
             {
                 inputs: ['minecraft:dirt', 'minecraft:bone_meal', 'byg:ether_foliage'],
@@ -179,7 +179,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}ether_soil`
             },
             {
                 inputs: ['byg:ether_stone', 'minecraft:bone_meal', 'byg:vermilion_sculk_growth'],
@@ -187,7 +188,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}vermilion_sculk`
             },
             {
                 inputs: ['minecraft:netherrack', 'minecraft:bone_meal', '#forge:mushrooms'],
@@ -195,7 +197,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}mycelium_netherrack`
             },
             {
                 inputs: ['#forge:dusts/sulfur', 'industrialforegoing:dryrubber', 'industrialforegoing:dryrubber'],
@@ -203,7 +206,8 @@ onEvent('recipes', (event) => {
                 count: 2,
                 syphon: 400,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}cured_rubber`
             },
             {
                 inputs: ['minecraft:end_stone', 'minecraft:bone_meal', '#forge:mushrooms'],
@@ -211,7 +215,8 @@ onEvent('recipes', (event) => {
                 count: 1,
                 syphon: 200,
                 ticks: 200,
-                orbLevel: 1
+                orbLevel: 1,
+                id: `${id_prefix}end_mycelium`
             },
             {
                 inputs: ['minecraft:nether_wart_block'],
@@ -226,13 +231,11 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        const re = event.recipes.bloodmagic
+        event.recipes.bloodmagic
             .alchemytable(Item.of(recipe.output, recipe.count), recipe.inputs)
             .syphon(recipe.syphon)
             .ticks(recipe.ticks)
-            .upgradeLevel(recipe.orbLevel);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+            .upgradeLevel(recipe.orbLevel)
+            .id(recipe.id);
     });
 });

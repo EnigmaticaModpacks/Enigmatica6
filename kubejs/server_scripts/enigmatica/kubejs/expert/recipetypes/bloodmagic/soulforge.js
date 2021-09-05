@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/bloodmagic/soulforge/';
     var data = {
         recipes: [
             {
@@ -147,7 +148,8 @@ onEvent('recipes', (event) => {
                 ],
                 output: Item.of('eidolon:shadow_gem'),
                 minimumDrain: 100.0,
-                drain: 32.0
+                drain: 32.0,
+                id: `${id_prefix}shadow_gem`
             },
             {
                 inputs: [
@@ -157,7 +159,8 @@ onEvent('recipes', (event) => {
                 ],
                 output: Item.of('eidolon:arcane_gold_ingot'),
                 minimumDrain: 32.0,
-                drain: 16.0
+                drain: 16.0,
+                id: `${id_prefix}arcane_gold_ingot`
             },
             {
                 inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
@@ -189,12 +192,10 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes.forEach((recipe) => {
-        const re = event.recipes.bloodmagic
+        event.recipes.bloodmagic
             .soulforge(recipe.output, recipe.inputs)
             .minimumDrain(recipe.minimumDrain)
-            .drain(recipe.drain);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+            .drain(recipe.drain)
+            .id(recipe.id);
     });
 });
