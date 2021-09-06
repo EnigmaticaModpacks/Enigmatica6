@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'kubejs:pneumatic_helmet_package',
             pattern: ['ABA', 'ACA', 'ADA'],
@@ -59,14 +59,40 @@ onEvent('recipes', (event) => {
                 D: 'mekanism:cardboard_box'
             },
             id: 'pneumaticcraft:pneumatic_boots'
+        },
+        {
+            output: 'pneumaticcraft:armor_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#pneumaticcraft:upgrade_components',
+                B: '#mekanism:enriched/diamond',
+                C: '#forge:ingots/compressed_iron'
+            },
+            id: 'pneumaticcraft:armor_upgrade'
+        },
+        {
+            output: 'pneumaticcraft:flippers_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#pneumaticcraft:upgrade_components',
+                B: '#pneumaticcraft:plastic_sheets',
+                C: 'thermal:diving_boots'
+            },
+            id: 'pneumaticcraft:flippers_upgrade'
+        },
+        {
+            output: 'pneumaticcraft:magnet_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#pneumaticcraft:upgrade_components',
+                B: '#pneumaticcraft:plastic_sheets',
+                C: 'thermal:flux_magnet'
+            },
+            id: 'pneumaticcraft:magnet_upgrade'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

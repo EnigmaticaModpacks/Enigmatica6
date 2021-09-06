@@ -94,6 +94,38 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:ender_eye'
             },
             id: 'botania:forest_eye'
+        },
+        {
+            output: 'botania:knockback_belt',
+            pattern: ['B  ', ' C ', 'D A'],
+            key: {
+                A: { tag: 'botania:runes/earth' },
+                B: { tag: 'botania:runes/fire' },
+                C: { item: 'eidolon:basic_belt' },
+                D: { tag: 'forge:ingots/manasteel' }
+            },
+            id: 'botania:knockback_belt'
+        },
+        {
+            output: 'botania:travel_belt',
+            pattern: ['B  ', ' C ', 'D A'],
+            key: {
+                A: { tag: 'botania:runes/air' },
+                B: { tag: 'botania:runes/earth' },
+                C: { item: 'eidolon:basic_belt' },
+                D: { tag: 'forge:ingots/manasteel' }
+            },
+            id: 'botania:travel_belt'
+        },
+        {
+            output: 'botania:crafting_halo',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: { item: 'botania:corporea_spark' },
+                B: { item: 'ars_nouveau:marvelous_clay' },
+                C: { item: 'ars_nouveau:glyph_craft' }
+            },
+            id: 'botania:crafting_halo'
         }
     ];
 
