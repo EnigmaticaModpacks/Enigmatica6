@@ -30,6 +30,11 @@ onEvent('recipes', (event) => {
             {
                 inputs: [Fluid.of('industrialforegoing:latex', 900)],
                 output: Item.of('industrialforegoing:dryrubber', 1)
+            },
+            {
+                inputs: [Fluid.of('resourcefulbees:honey', 1000)],
+                output: 'minecraft:honey_block',
+                id: 'create:compacting/honey'
             }
         ],
         recipes_heated: [
@@ -46,7 +51,11 @@ onEvent('recipes', (event) => {
     };
 
     data.recipes_unheated.forEach((recipe) => {
-        event.recipes.create.compacting(recipe.output, recipe.inputs);
+        if (recipe.id) {
+            event.recipes.create.compacting(recipe.output, recipe.inputs).id(recipe.id);
+        } else {
+            event.recipes.create.compacting(recipe.output, recipe.inputs);
+        }
     });
     data.recipes_heated.forEach((recipe) => {
         event.recipes.create.compacting(recipe.output, recipe.inputs).heated();
