@@ -284,6 +284,7 @@
 		{
 			x: 5.0d
 			y: 4.5d
+			dependencies: ["15C239A8575142B1"]
 			id: "155D0B93052756E8"
 			tasks: [{
 				id: "11D4AFF923BA438E"
@@ -348,8 +349,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 7.75d
+			x: 3.75d
+			y: 6.75d
 			shape: "octagon"
 			dependencies: ["00EF0CAB3FB28938"]
 			size: 1.5d
@@ -400,6 +401,7 @@
 		{
 			x: 4.5d
 			y: 4.0d
+			dependencies: ["0616453B4BBEFB11"]
 			id: "15C239A8575142B1"
 			tasks: [{
 				id: "17E2973BEC302785"
@@ -424,10 +426,87 @@
 			x: 5.0d
 			y: 2.5d
 			id: "4082766981B24A44"
+			tasks: [
+				{
+					id: "671E424988B48284"
+					type: "item"
+					item: "thermal:device_tree_extractor"
+					count: 2L
+				}
+				{
+					id: "06ECC057A46741D7"
+					type: "item"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "byg:baobab_log"
+									Count: 1b
+								}
+								{
+									id: "byg:rainbow_eucalyptus_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:jungle_log"
+									Count: 1b
+								}
+								{
+									id: "byg:mahogany_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:acacia_log"
+									Count: 1b
+								}
+								{
+									id: "minecraft:acacia_sapling"
+									Count: 1b
+								}
+								{
+									id: "byg:baobab_sapling"
+									Count: 1b
+								}
+								{
+									id: "byg:rainbow_eucalyptus_sapling"
+									Count: 1b
+								}
+								{
+									id: "byg:mahogany_sapling"
+									Count: 1b
+								}
+								{
+									id: "minecraft:jungle_sapling"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 3.0d
+			dependencies: ["4082766981B24A44"]
+			id: "63B1F7BACD7CCD5D"
 			tasks: [{
-				id: "671E424988B48284"
+				id: "035C29A43AEA51CB"
 				type: "item"
-				item: "thermal:device_tree_extractor"
+				item: "thermal:machine_bottler"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["63B1F7BACD7CCD5D"]
+			id: "0616453B4BBEFB11"
+			tasks: [{
+				id: "75BAF49D78BF95C0"
+				type: "item"
+				item: "industrialforegoing:dryrubber"
 			}]
 		}
 	]
