@@ -422,6 +422,7 @@ const recipesToHide = [
             'mythicbotany:fire_ring',
             'mythicbotany:ice_ring',
 
+
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
             'naturesaura:gold_fiber',
