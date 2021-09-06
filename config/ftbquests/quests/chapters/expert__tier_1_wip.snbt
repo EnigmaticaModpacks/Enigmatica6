@@ -236,7 +236,7 @@
 		}
 		{
 			x: 4.5d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["155D0B93052756E8"]
 			id: "0E16BA23BA46FCB1"
 			tasks: [
@@ -283,8 +283,7 @@
 		}
 		{
 			x: 5.0d
-			y: 3.5d
-			dependencies: ["79D7002653A22C9E"]
+			y: 4.5d
 			id: "155D0B93052756E8"
 			tasks: [{
 				id: "11D4AFF923BA438E"
@@ -314,7 +313,7 @@
 		}
 		{
 			x: 5.5d
-			y: 4.0d
+			y: 5.0d
 			dependencies: ["155D0B93052756E8"]
 			id: "15783B9E18D2320C"
 			tasks: [{
@@ -325,7 +324,7 @@
 		}
 		{
 			x: 5.0d
-			y: 4.5d
+			y: 5.5d
 			dependencies: [
 				"0E16BA23BA46FCB1"
 				"15783B9E18D2320C"
@@ -339,7 +338,7 @@
 		}
 		{
 			x: 5.0d
-			y: 5.5d
+			y: 6.5d
 			dependencies: ["5C41CE1C3B4B51C0"]
 			id: "00EF0CAB3FB28938"
 			tasks: [{
@@ -350,7 +349,7 @@
 		}
 		{
 			x: 4.5d
-			y: 6.75d
+			y: 7.75d
 			shape: "octagon"
 			dependencies: ["00EF0CAB3FB28938"]
 			size: 1.5d
@@ -372,36 +371,8 @@
 			}]
 		}
 		{
-			title: "Magma Crucible [Make a part of progression somehow, WIP]"
-			x: 5.0d
-			y: 2.5d
-			dependencies: ["508E396542F84E94"]
-			id: "124A14F6B4F6B9CE"
-			tasks: [{
-				id: "7D95016C9993B2A6"
-				type: "item"
-				item: "thermal:machine_crucible"
-			}]
-		}
-		{
-			title: "WIP, some item produced via Magma Crucible"
 			x: 4.5d
-			y: 3.0d
-			dependencies: ["124A14F6B4F6B9CE"]
-			id: "79D7002653A22C9E"
-			tasks: [{
-				id: "066F7D4129471FBC"
-				type: "item"
-				item: {
-					id: "botania:cosmetic_questgiver_mark"
-					Count: 1b
-					tag: { }
-				}
-			}]
-		}
-		{
-			x: 4.5d
-			y: 5.0d
+			y: 6.0d
 			dependencies: ["3DD1F984ED880148"]
 			id: "5C41CE1C3B4B51C0"
 			tasks: [{
@@ -424,6 +395,39 @@
 					Count: 1b
 					tag: { }
 				}
+			}]
+		}
+		{
+			x: 4.5d
+			y: 4.0d
+			id: "15C239A8575142B1"
+			tasks: [{
+				id: "17E2973BEC302785"
+				type: "item"
+				item: {
+					id: "thermal:fluid_cell"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							TankInv: [{
+								FluidName: "minecraft:empty"
+								Capacity: 32000
+								Tank: 0b
+								Amount: 0
+							}]
+						}
+					}
+				}
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.5d
+			id: "4082766981B24A44"
+			tasks: [{
+				id: "671E424988B48284"
+				type: "item"
+				item: "thermal:device_tree_extractor"
 			}]
 		}
 	]
