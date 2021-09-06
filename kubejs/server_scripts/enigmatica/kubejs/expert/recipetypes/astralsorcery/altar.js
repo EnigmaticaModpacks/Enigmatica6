@@ -23,7 +23,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/astralsorcery/altar/';
     const recipes = [
         {
             output: Item.of('astralsorcery:well', 1),
@@ -327,7 +327,8 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
                 'astralsorcery:built_in_effect_attunement_sparkle'
-            ]
+            ],
+            id: `${id_prefix}hellshelf`
         },
         {
             output: Item.of('apotheosis:seashelf', 1),
@@ -347,7 +348,8 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
                 'astralsorcery:built_in_effect_attunement_sparkle'
-            ]
+            ],
+            id: `${id_prefix}seashelf`
         },
         {
             output: Item.of('apotheosis:endshelf', 1),
@@ -367,7 +369,8 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
                 'astralsorcery:built_in_effect_attunement_sparkle'
-            ]
+            ],
+            id: `${id_prefix}endshelf`
         },
         {
             output: Item.of('botania:alfheim_portal', 1),
@@ -390,7 +393,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:gateway_edge',
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
-            id: 'botania:alfheim_portal'
+            id: `${id_prefix}alfheim_portal`
         },
         {
             output: Item.of('astralsorcery:mantle', 1),
@@ -476,7 +479,34 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_constellation_lines',
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
-            id: 'mythicbotany:mana_infuser'
+            id: `${id_prefix}mana_infuser`
+        },
+        {
+            output: Item.of('botania:terra_plate', 1),
+            pattern: ['A___B', '_FGF_', '_IEI_', '_JHJ_', 'D___C'],
+            key: {
+                A: { tag: 'botania:runes/water' },
+                B: { tag: 'botania:runes/earth' },
+                C: { tag: 'botania:runes/fire' },
+                D: { tag: 'botania:runes/air' },
+                E: { tag: 'botania:runes/mana' },
+                F: { item: 'pneumaticcraft:upgrade_matrix' },
+                G: { tag: 'forge:storage_blocks/starmetal' },
+                H: { tag: 'forge:storage_blocks/manasteel' },
+                I: { item: 'kubejs:firmament' },
+                J: { item: 'naturesaura:infused_stone' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1600,
+            effects: [
+                'astralsorcery:pillar_sparkle',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_lightbeams',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}terra_plate`
         }
     ];
 
@@ -502,9 +532,6 @@ onEvent('recipes', (event) => {
             constructed_recipe.recipe_class = recipe.recipe_class;
         }
 
-        const re = event.custom(constructed_recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.custom(constructed_recipe).id(recipe.id);
     });
 });
