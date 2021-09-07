@@ -13,4 +13,10 @@ onEvent('ponder.tag.registry', (event) => {
       'Basic Mechanics',
       'Learn about some basic (sometimes vanilla!) mechanics that will come in handy.'
     )
+    event.create(
+      'enigmatica:portals',
+      'undergarden:catalyst',
+      'Traveling with Portals',
+      'Learn how to construct some of the key portals in Enigmatica.'
+    )
 });
