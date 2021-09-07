@@ -20,7 +20,7 @@
 			y: -5.5d
 			id: "72D589CE18202510"
 			tasks: [{
-				id: "46003D18E8B6E35F"
+				id: "61813D97AAD3C2B9"
 				type: "item"
 				title: "Lightning"
 				item: {
@@ -29,11 +29,15 @@
 					tag: {
 						items: [
 							{
-								id: "powah:charged_snowball"
+								id: "thermal:lightning_charge"
 								Count: 1b
 							}
 							{
-								id: "thermal:lightning_charge"
+								id: "archers_paradox:lightning_arrow"
+								Count: 1b
+							}
+							{
+								id: "powah:charged_snowball"
 								Count: 1b
 							}
 						]

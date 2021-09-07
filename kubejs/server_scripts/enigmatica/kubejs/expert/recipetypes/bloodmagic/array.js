@@ -16,13 +16,13 @@ onEvent('recipes', (event) => {
                 texture: 'watersigil'
             },
             {
-                inputs: ['architects_palette:moonstone', 'minecraft:lapis_lazuli'],
+                inputs: ['architects_palette:moonstone', '#forge:ingots/silver'],
                 output: 'bloodmagic:arcaneashes',
                 texture: 'moonarray',
                 id: 'bloodmagic:array/night'
             },
             {
-                inputs: ['architects_palette:sunstone', 'minecraft:coal'],
+                inputs: ['architects_palette:sunstone', '#forge:ingots/sunmetal'],
                 output: 'bloodmagic:arcaneashes',
                 texture: 'sunarray',
                 id: 'bloodmagic:array/day'

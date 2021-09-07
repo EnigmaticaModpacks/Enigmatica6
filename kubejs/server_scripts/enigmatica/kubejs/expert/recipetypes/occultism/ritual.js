@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/occultism/ritual/';
     const data = {
         recipes: [
             {
@@ -531,14 +532,193 @@ onEvent('recipes', (event) => {
                     item: 'occultism:jei_dummy/none'
                 },
                 id: 'occultism:ritual/summon_marid_crusher'
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_foliot'
+                },
+                pentacle_id: 'occultism:possess_foliot',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'occultism:wild_hunt_sacrifices',
+                    display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                },
+                entity_to_summon: 'occultism:greedy_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_greedy'
+                },
+                ingredients: [
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'ironchest:silver_chest' },
+                    { tag: 'forge:storage_blocks/silver' },
+                    { item: 'minecraft:lodestone' },
+                    { item: 'meetyourfight:spectres_grasp' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_greedy'
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:summon_tamed',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:possess_djinni',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'forge:parrots',
+                    display_name: 'ritual.occultism.sacrifice.parrots'
+                },
+                entity_to_summon: 'occultism:otherworld_bird',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_otherworld_bird'
+                },
+                ingredients: [
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'tconstruct:sky_cake' },
+                    { item: 'create:white_sail' },
+                    { item: 'naturesaura:token_anger' },
+                    { item: 'create:white_sail' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_otherworld_bird'
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:possess_djinni',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'forge:bats',
+                    display_name: 'ritual.occultism.sacrifice.bats'
+                },
+                entity_to_summon: 'occultism:bat_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_bat'
+                },
+                ingredients: [
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'atum:golden_date' },
+                    { item: 'ars_nouveau:wilden_wing' },
+                    { tag: 'forge:fruits/banana' },
+                    { item: 'ars_nouveau:wilden_wing' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_bat'
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_foliot'
+                },
+                pentacle_id: 'occultism:possess_foliot',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'enigmatica:deer',
+                    display_name: 'ritual.occultism.sacrifice.deer'
+                },
+                entity_to_summon: 'occultism:deer_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_deer'
+                },
+                ingredients: [
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'minecraft:golden_carrot' },
+                    { item: 'minecraft:golden_carrot' },
+                    { item: 'minecraft:golden_apple' },
+                    { item: 'minecraft:golden_apple' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_deer'
+            },
+
+            /// Custom Rituals
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:craft_djinni',
+                duration: 6,
+                ritual_dummy: {
+                    item: 'magicfeather:magicfeather'
+                },
+                ingredients: [
+                    { item: 'alexsmobs:roadrunner_feather' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'ars_nouveau:belt_of_levitation' },
+                    { tag: 'forge:ingots/sky' },
+                    { item: 'bloodmagic:reagentair' },
+                    { item: 'bloodmagic:reagentair' },
+                    { tag: 'botania:runes/air' },
+                    { tag: 'botania:runes/air' }
+                ],
+                result: { item: 'magicfeather:magicfeather' },
+                id: `${id_prefix}magicfeather`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft',
+                activation_item: {
+                    item: 'materialis:fairy_block'
+                },
+                pentacle_id: 'occultism:craft_marid',
+                duration: 6,
+                entity_to_sacrifice: {
+                    tag: 'enigmatica:dragons',
+                    display_name: 'ritual.occultism.sacrifice.dragons'
+                },
+                ritual_dummy: {
+                    item: 'losttrinkets:magical_feathers'
+                },
+                ingredients: [
+                    { item: 'botania:flight_tiara' },
+                    { item: 'astralsorcery:shifting_star_vicio' },
+                    { item: 'ars_nouveau:wilden_tribute' },
+                    { item: 'astralsorcery:shifting_star_vicio' },
+                    { item: 'magicfeather:magicfeather' },
+                    { item: 'magicfeather:magicfeather' },
+                    { item: 'magicfeather:magicfeather' },
+                    { item: 'magicfeather:magicfeather' },
+                    { tag: 'forge:ingots/gaia' },
+                    { item: 'bloodmagic:steadfastcrystal' },
+                    { tag: 'forge:ingots/gaia' },
+                    { item: 'bloodmagic:steadfastcrystal' }
+                ],
+                result: { item: 'losttrinkets:magical_feathers' },
+                id: `${id_prefix}magical_feathers`
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        const re = event.custom(recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.custom(recipe).id(recipe.id);
     });
 });

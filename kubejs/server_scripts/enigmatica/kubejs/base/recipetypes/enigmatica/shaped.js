@@ -285,7 +285,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('bloodmagic:dungeon_polished_stairs', 4),
-            pattern: ['A', 'AA', 'AAA'],
+            pattern: ['A  ', 'AA ', 'AAA'],
             key: {
                 A: 'bloodmagic:dungeon_polished'
             },
@@ -293,7 +293,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('bloodmagic:dungeon_brick_stairs', 4),
-            pattern: ['A', 'AA', 'AAA'],
+            pattern: ['A  ', 'AA ', 'AAA'],
             key: {
                 A: 'bloodmagic:dungeon_brick1'
             },
@@ -574,32 +574,6 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/tetra/combustion_chamber'
         },
         {
-            output: 'magicfeather:magicfeather',
-            pattern: ['CFC', 'BDB', 'AEA'],
-            key: {
-                A: 'alexsmobs:roadrunner_feather',
-                B: '#forge:ingots/enderium',
-                C: 'ars_nouveau:mana_fiber',
-                D: 'byg:leaf_pile',
-                E: 'ars_nouveau:glyph_launch',
-                F: 'ars_nouveau:glyph_slowfall'
-            },
-            id: 'enigmatica:base/magicfeather/magicfeather_magic'
-        },
-        {
-            output: 'magicfeather:magicfeather',
-            pattern: ['CFC', 'BDB', 'AEA'],
-            key: {
-                A: 'thermal:lightning_charge',
-                B: '#mekanism:alloys/atomic',
-                C: 'thermal:hazmat_fabric',
-                D: 'byg:leaf_pile',
-                E: 'thermal:hazmat_boots',
-                F: 'alexsmobs:frontier_cap'
-            },
-            id: 'enigmatica:base/magicfeather/magicfeather_tech'
-        },
-        {
             output: Item.of('byg:embur_hyphae', 3),
             pattern: ['AA', 'AA'],
             key: {
@@ -614,19 +588,6 @@ onEvent('recipes', (event) => {
                 A: 'byg:pollen_dust'
             },
             id: 'enigmatica:base/byg/pollen_dust'
-        },
-        {
-            output: 'losttrinkets:magical_feathers',
-            pattern: ['FAF', 'EBE', 'CDC'],
-            key: {
-                A: 'minecraft:elytra',
-                B: 'magicfeather:magicfeather',
-                C: 'minecraft:prismarine_shard',
-                D: '#forge:nether_stars',
-                E: 'rftoolsbase:infused_diamond',
-                F: 'minecraft:ender_eye'
-            },
-            id: 'enigmatica:base/losttrinkets/magical_feathers'
         },
         {
             output: Item.of('quark:turf', 1),

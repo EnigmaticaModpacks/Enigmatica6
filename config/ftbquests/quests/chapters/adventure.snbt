@@ -133,11 +133,23 @@
 				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
 			]
 			id: "0000000000000C95"
-			tasks: [{
-				id: "0000000000000C96"
-				type: "checkmark"
-				title: "Meet Your Fight"
-			}]
+			tasks: [
+				{
+					id: "21AEFA982B148B13"
+					type: "item"
+					item: "meetyourfight:fossil_bait"
+				}
+				{
+					id: "453C91C39D9B851B"
+					type: "item"
+					item: "meetyourfight:devils_ante"
+				}
+				{
+					id: "57A8C245E83C8992"
+					type: "item"
+					item: "meetyourfight:haunted_bell"
+				}
+			]
 			rewards: [{
 				id: "0000000000000C9B"
 				type: "xp"
