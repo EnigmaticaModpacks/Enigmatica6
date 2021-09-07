@@ -30,8 +30,6 @@ onEvent('recipes', (event) => {
 
         'create:crushing/obsidian',
 
-        'craftingstation:crafting_station',
-
         'akashictome:tome',
 
         'magicfeather:magicfeather',
