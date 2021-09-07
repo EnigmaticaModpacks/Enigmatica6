@@ -507,6 +507,40 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: `${id_prefix}terra_plate`
+        },
+        {
+            output: Item.of('botania:flight_tiara', '{variant:0}'),
+            pattern: ['B___B', '_CDC_', '_EAE_', '_FEG_', 'B___B'],
+            key: {
+                A: {
+                    type: 'astralsorcery:crystal',
+                    hasToBeAttuned: true,
+                    hasToBeCelestial: false,
+                    canBeAttuned: true,
+                    canBeCelestialCrystal: false
+                },
+                B: { item: 'botania:life_essence' },
+                C: { tag: 'botania:runes/mana' },
+                D: { item: 'magicfeather:magicfeather' },
+                E: { tag: 'forge:ingots/elementium' },
+                F: { item: 'bloodmagic:airsigil' },
+                G: { item: 'ars_nouveau:ritual_flight' }
+            },
+            altar_type: 2,
+            duration: 400,
+            starlight: 3800,
+            recipe_class: 'astralsorcery:trait_upgrade',
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:pillar_sparkle',
+                'astralsorcery:luminescence_flare',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:upgrade_altar',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: `${id_prefix}flight_tiara`
         }
     ];
 

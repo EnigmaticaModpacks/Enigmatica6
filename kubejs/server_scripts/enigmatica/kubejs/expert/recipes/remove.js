@@ -9,6 +9,13 @@ onEvent('recipes', (event) => {
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:dull_trinket',
         'ars_nouveau:mundane_belt',
+        'ars_nouveau:moonfall_2',
+        'ars_nouveau:sunrise_2',
+        'minecraft:book',
+        'farmersdelight:book_from_canvas',
+        'atum:book',
+        'tconstruct:tables/book_substitute',
+
         'botania:mana_infusion/mana_diamond_block',
         'minecraft:leather_to_stripes',
         'quark:building/crafting/candles/candle_basic',
@@ -86,6 +93,7 @@ onEvent('recipes', (event) => {
         { output: 'botania:aura_ring', id: 'botania:aura_ring' },
         { output: 'botania:pixie_ring', id: 'botania:pixie_ring' },
         { output: 'botania:reach_ring', id: 'botania:reach_ring' },
+        { output: 'botania:flight_tiara', id: 'botania:flighttiara_0' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },

@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'ars_nouveau:blaze_fiber',
                 B: '#forge:rods/aluminum',
-                C: 'tconstruct:jewel_item_frame'
+                C: 'tconstruct:diamond_item_frame'
             },
             id: 'sophisticatedbackpacks:upgrade_base'
         }
