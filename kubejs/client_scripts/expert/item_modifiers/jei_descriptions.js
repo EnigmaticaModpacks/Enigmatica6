@@ -6,6 +6,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['bloodmagic:soulpickaxe'],
             description: ['Capable of mining Iesnium.']
+        },
+        {
+            items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick', 'aiotbotania:alfsteel_aiot'],
+            description: ['Capable of breaking down Godblocks into Atum Artifacts.']
         }
     ];
 
