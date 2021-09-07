@@ -607,6 +607,37 @@ onEvent('recipes', (event) => {
                     item: 'occultism:jei_dummy/none'
                 },
                 id: 'occultism:ritual/familiar_deer'
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:possess_djinni',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'enigmatica:cephalopod',
+                    display_name: 'ritual.occultism.sacrifice.cephalopod'
+                },
+                entity_to_summon: 'occultism:cthulhu_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_cthulhu'
+                },
+                ingredients: [
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' },
+                    { tag: 'minecraft:fishes' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_cthulhu'
             }
         ]
     };
