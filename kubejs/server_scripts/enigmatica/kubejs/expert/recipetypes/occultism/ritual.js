@@ -657,6 +657,37 @@ onEvent('recipes', (event) => {
                 },
                 id: 'occultism:ritual/familiar_deer'
             },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:possess_djinni',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'enigmatica:thrashers',
+                    display_name: 'ritual.occultism.sacrifice.thrashers'
+                },
+                entity_to_summon: 'occultism:cthulhu_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_cthulhu'
+                },
+                ingredients: [
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'quark:gold_bars' },
+                    { item: 'aquaculture:neptunium_helmet' },
+                    { tag: 'forge:heads' },
+                    { item: 'sushigocrafting:shrimp_nigiri' },
+                    { item: 'sushigocrafting:shrimp_nigiri' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_cthulhu'
+            },
 
             /// Custom Rituals
             {
@@ -714,6 +745,35 @@ onEvent('recipes', (event) => {
                 ],
                 result: { item: 'losttrinkets:magical_feathers' },
                 id: `${id_prefix}magical_feathers`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:summon',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_afrit'
+                },
+                pentacle_id: 'occultism:summon_wild_afrit',
+                duration: 6,
+                entity_to_sacrifice: {
+                    tag: 'occultism:wild_hunt_sacrifices',
+                    display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                },
+                entity_to_summon: 'atum:pharaoh',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/custom_ritual'
+                },
+                ingredients: [
+                    { tag: 'atum:godshards' },
+                    { item: 'atum:golden_date_enchanted' },
+                    { tag: 'forge:storage_blocks/nebu' },
+                    { tag: 'forge:heads' },
+                    { tag: 'atum:godshards' },
+                    { tag: 'atum:godshards' },
+                    { item: 'atum:crystal_glass' },
+                    { item: 'atum:crystal_glass' }
+                ],
+                result: { item: 'occultism:jei_dummy/none' },
+                id: `${id_prefix}pharaoh`
             }
         ]
     };
