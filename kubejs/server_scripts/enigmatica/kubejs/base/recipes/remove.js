@@ -135,6 +135,8 @@ onEvent('recipes', (event) => {
 
         'immersivepetroleum:distillationtower/oilcracking',
 
+        'materialis:smeltery/melting/metal/starmetal/dust',
+
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:enriching/enriched/tin',
         'mekanism:processing/bronze/dust/from_infusing',
