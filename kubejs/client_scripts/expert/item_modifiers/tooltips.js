@@ -34,7 +34,7 @@ onEvent('item.tooltip', (event) => {
         },
         {
             items: ['tconstruct:seared_melter'],
-            description: [Text.of('Disabled in Expert Mode.').red(), Text.of('Use the Smeltery Controller.').green()]
+            description: [Text.of('Disabled in Expert Mode - Use the Smeltery Controller.').darkGreen()]
         }
     ];
 
