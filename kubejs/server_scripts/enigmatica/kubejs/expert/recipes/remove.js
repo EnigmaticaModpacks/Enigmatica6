@@ -39,7 +39,12 @@ onEvent('recipes', (event) => {
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
         'refinedstorage:quartz_enriched_iron',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-        'pneumaticcraft:explosion_crafting/compressed_iron_block'
+        'pneumaticcraft:explosion_crafting/compressed_iron_block',
+        'tconstruct:smeltery/seared/seared_brick',
+        'tconstruct:smeltery/seared/seared_brick_kiln',
+        'tconstruct:smeltery/seared/melter',
+        'tconstruct:smeltery/scorched/scorched_brick',
+        'tconstruct:smeltery/scorched/scorched_brick_kiln'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];

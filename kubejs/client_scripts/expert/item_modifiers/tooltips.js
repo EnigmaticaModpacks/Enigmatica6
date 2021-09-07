@@ -31,6 +31,10 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['bloodmagic:soulpickaxe'],
             description: ['Capable of mining Iesnium.']
+        },
+        {
+            items: ['tconstruct:seared_melter'],
+            description: [Text.of('Disabled in Expert Mode.').red(), Text.of('Use the Smeltery Controller.').green()]
         }
     ];
 
