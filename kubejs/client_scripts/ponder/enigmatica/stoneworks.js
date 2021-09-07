@@ -94,7 +94,7 @@ onEvent('ponder.tag', (event) => {
             .overlay()
             .showText(140)
             .colored(PonderPalette.WHITE)
-            .text(`We can set the router to break any cobblestone in front of it for infinite stone!`)
+            .text(`We can set the router to break any stone in front of it for infinite stone!`)
             .independent(60);
 
             scene.idle(20);
