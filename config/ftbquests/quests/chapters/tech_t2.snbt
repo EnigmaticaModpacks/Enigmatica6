@@ -1,0 +1,31 @@
+{
+	id: "1367E0A795499DE6"
+	group: "34B7FB260B6AEB81"
+	order_index: 2
+	filename: "tech_t2"
+	title: "Tech T2"
+	icon: "immersiveengineering:workbench"
+	always_invisible: true
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "PneumaticCraft: Repressurized"
+			icon: "pneumaticcraft:pressure_gauge_module"
+			x: 5.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["0000000000000FDB"]
+			id: "67F7E4C19E39F9F3"
+		}
+		{
+			title: "Immersive Engineering: Part One"
+			icon: "immersiveengineering:workbench"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["0000000000000FD5"]
+			id: "06F4A47216226927"
+		}
+	]
+}

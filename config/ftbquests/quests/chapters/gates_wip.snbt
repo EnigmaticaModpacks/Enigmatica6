@@ -55,7 +55,7 @@
 		{
 			title: "XNet"
 			x: 0.0d
-			y: 1.5d
+			y: 1.0d
 			shape: "diamond"
 			dependencies: ["0000000000000FBF"]
 			id: "0000000000000FC1"
@@ -74,7 +74,8 @@
 			tasks: [{
 				id: "0000000000000FC4"
 				type: "item"
-				item: "eidolon:unholy_symbol"
+				item: "eidolon:pewter_blend"
+				count: 8L
 			}]
 		}
 		{
@@ -176,7 +177,6 @@
 			title: "Powah"
 			x: -4.5d
 			y: 3.0d
-			shape: "diamond"
 			dependencies: ["0000000000000FD5"]
 			id: "0000000000000FD3"
 			tasks: [{
@@ -186,7 +186,7 @@
 			}]
 		}
 		{
-			title: "Immersive Engineering (Part One)"
+			title: "Immersive Engineering: Part One"
 			x: -3.0d
 			y: 3.0d
 			dependencies: ["0000000000000FBD"]
@@ -194,13 +194,8 @@
 			tasks: [{
 				id: "0000000000000FD6"
 				type: "item"
-				item: {
-					id: "immersiveengineering:hammer"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
+				item: "immersiveengineering:cokebrick"
+				count: 27L
 			}]
 		}
 		{
@@ -245,7 +240,7 @@
 		{
 			title: "Refined Storage"
 			x: 0.0d
-			y: 4.5d
+			y: 4.0d
 			dependencies: [
 				"0000000000000FDB"
 				"0000000000000FCD"
@@ -285,7 +280,7 @@
 			}]
 		}
 		{
-			title: "Immersive Engineering (Part Two)"
+			title: "Immersive Engineering: Part Two"
 			x: -3.0d
 			y: 6.0d
 			dependencies: ["0000000000000FDF"]
@@ -371,7 +366,7 @@
 		{
 			title: "Tinkers' Construct"
 			x: 0.0d
-			y: 3.0d
+			y: 2.0d
 			dependencies: ["0000000000000FBF"]
 			id: "51E57880AFDE5595"
 			tasks: [{

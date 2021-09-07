@@ -3,8 +3,8 @@
 	group: "34B7FB260B6AEB81"
 	order_index: 1
 	filename: "expert__tier_1_wip"
-	title: "Tech"
-	icon: "create:cogwheel"
+	title: "Tech T1"
+	icon: "create:large_cogwheel"
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -12,6 +12,7 @@
 		{
 			x: 0.0d
 			y: 0.5d
+			shape: "rsquare"
 			id: "1DB20906EC9FFAB9"
 			tasks: [{
 				id: "6C30E3FB62A38AAB"
@@ -65,6 +66,7 @@
 		{
 			x: 5.0d
 			y: 0.5d
+			shape: "rsquare"
 			id: "14099ACA706F3CCE"
 			tasks: [{
 				id: "2594806B26FA3778"
@@ -74,7 +76,8 @@
 		}
 		{
 			x: -1.0d
-			y: 1.0d
+			y: 0.5d
+			shape: "rsquare"
 			id: "0044F922097279B5"
 			tasks: [{
 				id: "761CE516771F68FC"
@@ -84,7 +87,8 @@
 		}
 		{
 			x: 1.0d
-			y: 1.0d
+			y: 0.5d
+			shape: "rsquare"
 			id: "19A178AE2895632F"
 			tasks: [{
 				id: "52211E602B78DB92"
@@ -221,9 +225,14 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 6.75d
+			x: 0.75d
+			y: 9.0d
 			shape: "octagon"
+			description: [
+				"You have unlocked Immersive Engineering: Part One!"
+				""
+				"You can find quests for it in the Tech T2 chapter."
+			]
 			dependencies: ["1AA1AAE2DA37A44F"]
 			size: 1.5d
 			id: "737FEF84207E1AD5"
@@ -235,8 +244,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 5.0d
+			x: 3.75d
+			y: 6.0d
 			dependencies: ["155D0B93052756E8"]
 			id: "0E16BA23BA46FCB1"
 			tasks: [
@@ -282,8 +291,8 @@
 			]
 		}
 		{
-			x: 5.0d
-			y: 4.5d
+			x: 4.25d
+			y: 5.5d
 			dependencies: ["15C239A8575142B1"]
 			id: "155D0B93052756E8"
 			tasks: [{
@@ -313,8 +322,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: 5.0d
+			x: 4.75d
+			y: 6.0d
 			dependencies: ["155D0B93052756E8"]
 			id: "15783B9E18D2320C"
 			tasks: [{
@@ -324,8 +333,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 5.5d
+			x: 4.25d
+			y: 6.5d
 			dependencies: [
 				"0E16BA23BA46FCB1"
 				"15783B9E18D2320C"
@@ -338,8 +347,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 6.5d
+			x: 4.25d
+			y: 7.5d
 			dependencies: ["5C41CE1C3B4B51C0"]
 			id: "00EF0CAB3FB28938"
 			tasks: [{
@@ -349,9 +358,14 @@
 			}]
 		}
 		{
-			x: 3.75d
-			y: 6.75d
+			x: 4.5d
+			y: 9.0d
 			shape: "octagon"
+			description: [
+				"You have unlocked PneumaticCraft: Repressurized!"
+				""
+				"You can find quests for it in the Tech T2 chapter."
+			]
 			dependencies: ["00EF0CAB3FB28938"]
 			size: 1.5d
 			id: "60DF22034242502E"
@@ -359,11 +373,16 @@
 				id: "58F6F9B04F87F83E"
 				type: "item"
 				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 16L
 			}]
 		}
 		{
-			x: 4.5d
-			y: 2.0d
+			x: 5.0d
+			y: 2.5d
+			dependencies: [
+				"2357CCF3A0758B0C"
+				"3B9353D1A2A6CC1F"
+			]
 			id: "508E396542F84E94"
 			tasks: [{
 				id: "6D5488667C5C0D5C"
@@ -372,8 +391,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 6.0d
+			x: 3.75d
+			y: 7.0d
 			dependencies: ["3DD1F984ED880148"]
 			id: "5C41CE1C3B4B51C0"
 			tasks: [{
@@ -399,8 +418,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 4.0d
+			x: 4.0d
+			y: 5.0d
 			dependencies: ["0616453B4BBEFB11"]
 			id: "15C239A8575142B1"
 			tasks: [{
@@ -424,7 +443,7 @@
 		}
 		{
 			x: 5.0d
-			y: 2.5d
+			y: 3.5d
 			id: "4082766981B24A44"
 			tasks: [
 				{
@@ -488,9 +507,9 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: 3.0d
-			dependencies: ["4082766981B24A44"]
+			x: 4.0d
+			y: 3.5d
+			dependencies: ["508E396542F84E94"]
 			id: "63B1F7BACD7CCD5D"
 			tasks: [{
 				id: "035C29A43AEA51CB"
@@ -499,14 +518,177 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 3.5d
-			dependencies: ["63B1F7BACD7CCD5D"]
+			x: 4.5d
+			y: 4.5d
+			dependencies: [
+				"63B1F7BACD7CCD5D"
+				"4082766981B24A44"
+			]
 			id: "0616453B4BBEFB11"
 			tasks: [{
 				id: "75BAF49D78BF95C0"
 				type: "item"
 				item: "industrialforegoing:dryrubber"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 2.5d
+			dependencies: ["508E396542F84E94"]
+			optional: true
+			id: "6BAC6A8BB59E458E"
+			tasks: [{
+				id: "65E9D77D9B31652A"
+				type: "item"
+				title: "Any #xnet:cables"
+				icon: "xnet:netcable_blue"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "xnet:cables"
+					}
+				}
+			}]
+		}
+		{
+			x: 10.5d
+			y: 1.5d
+			dependencies: ["7A62AEC29C33B717"]
+			optional: true
+			id: "5FD0550A79C3F850"
+			tasks: [{
+				id: "7F89F46E4234C872"
+				type: "item"
+				item: "xnet:controller"
+			}]
+		}
+		{
+			x: 11.5d
+			y: 2.0d
+			shape: "hexagon"
+			dependencies: [
+				"316FBC4806413CAE"
+				"5FD0550A79C3F850"
+				"6BAC6A8BB59E458E"
+			]
+			optional: true
+			id: "62FA411EAA5ADA7B"
+			tasks: [{
+				id: "6B1F29CD740F072B"
+				type: "item"
+				item: "xnet:connector_blue"
+			}]
+		}
+		{
+			x: 10.0d
+			y: 2.0d
+			optional: true
+			id: "316FBC4806413CAE"
+			tasks: [{
+				id: "1348BAC4341E110E"
+				type: "item"
+				title: "Any #forge:ingots/uranium"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:ingots/uranium"
+					}
+				}
+				count: 4L
+			}]
+		}
+		{
+			x: -2.0d
+			y: 1.5d
+			dependencies: ["6AADF6A0814C29D4"]
+			optional: true
+			id: "514A0FC52ADBE1DD"
+			tasks: [
+				{
+					id: "63BE4DE5D52BA7FD"
+					type: "item"
+					item: "prettypipes:pipe"
+					count: 8L
+				}
+				{
+					id: "7F749FB1AD173412"
+					type: "item"
+					item: "prettypipes:low_extraction_module"
+				}
+				{
+					id: "42285973A3B8F1B0"
+					type: "item"
+					item: "prettypipes:low_retrieval_module"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: 1.5d
+			shape: "hexagon"
+			dependencies: ["514A0FC52ADBE1DD"]
+			optional: true
+			id: "4607CD4FC64387B3"
+			tasks: [{
+				id: "52DED6EEEEB4E244"
+				type: "item"
+				item: "prettypipes:crafting_terminal"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 6.5d
+			shape: "hexagon"
+			dependencies: ["3DD1F984ED880148"]
+			id: "720C5EDF3E3B37A6"
+			tasks: [{
+				id: "11608309A9D6E501"
+				type: "item"
+				item: "tconstruct:foundry_controller"
+			}]
+		}
+		{
+			x: 10.5d
+			y: 5.0d
+			shape: "hexagon"
+			dependencies: ["1F777AA9D474D17C"]
+			id: "37DED885C90A4D36"
+			tasks: [{
+				id: "0498BE4A8A33EBD0"
+				type: "item"
+				item: "tconstruct:smeltery_controller"
+			}]
+		}
+		{
+			x: 6.5d
+			y: 3.5d
+			dependencies: ["508E396542F84E94"]
+			id: "1F777AA9D474D17C"
+			tasks: [
+				{
+					id: "6682B0309E534F02"
+					type: "item"
+					item: "thermal:machine_crucible"
+				}
+				{
+					id: "1DD4546D37449EB3"
+					type: "item"
+					item: "tconstruct:seared_heater"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 2.0d
+			dependencies: ["2357CCF3A0758B0C"]
+			id: "3B9353D1A2A6CC1F"
+			tasks: [{
+				id: "7795F1959F27A7E0"
+				type: "item"
+				item: "emendatusenigmatica:invar_dust"
+				count: 8L
 			}]
 		}
 	]
