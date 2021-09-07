@@ -14,6 +14,11 @@ onEvent('recipes', (event) => {
             input: '#forge:dusts/sulfur',
             fluid: Fluid.of('industrialforegoing:latex', 900),
             output: 'industrialforegoing:dryrubber'
+        },
+        {
+            input: ['#forge:ingots/superheated_steel', '#forge:ingots/hot_compressed_iron'],
+            fluid: Fluid.of('tconstruct:scorched_stone', 144 * 8),
+            output: 'tconstruct:foundry_controller'
         }
     ];
     recipes.forEach((recipe) => {
