@@ -78,7 +78,9 @@ onEvent('recipes', (event) => {
         thermal_gem_ore_pulverizing(event, material, ore, dust, gem, shard);
         thermal_ingot_gem_pulverizing(event, material, ingot, dust, gem);
         thermal_metal_casting(event, material, ingot, nugget, gear, rod, plate);
+        thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate);
         thermal_gem_casting(event, material, gem, gear, rod, plate);
+        thermal_gem_melting(event, material, block, gem, gear, rod, plate);
 
         tconstruct_metal_casting(event, material, block, ingot, nugget, gear, rod, plate);
         tconstruct_gem_casting(event, material, block, gem, gear, rod, plate);
@@ -1195,6 +1197,49 @@ onEvent('recipes', (event) => {
         });
     }
 
+    function thermal_metal_melting(event, material, block, ingot, nugget, gear, rod, plate) {
+        if (ingot == air) {
+            return;
+        }
+
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            modId = 'materialis';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
+        } else {
+            return;
+        }
+
+        let recipes = [{ type: 'ingot', amount: 144, input: `#forge:ingots/${material}`, energy: 5000 }];
+        if (nugget != air) {
+            recipes.push({ type: 'nugget', amount: 16, input: `#forge:nuggets/${material}`, energy: 555 });
+        }
+        if (block != air) {
+            recipes.push({ type: 'block', amount: 1296, input: `#forge:storage_blocks/${material}`, energy: 40000 });
+        }
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, input: `#forge:rods/${material}`, energy: 2500 });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, input: `#forge:plates/${material}`, energy: 5000 });
+        }
+
+        recipes.forEach((recipe) => {
+            event.recipes.thermal
+                .crucible(Fluid.of(`${modId}:molten_${material}`, recipe.amount), recipe.input)
+                .energy(recipe.energy)
+                .id(`enigmatica:base/thermal/crucible/${material}_${recipe.type}`);
+        });
+    }
+
     function thermal_gem_casting(event, material, gem, gear, rod, plate) {
         if (gem == air) {
             return;
@@ -1240,6 +1285,53 @@ onEvent('recipes', (event) => {
                 ])
                 .energy(recipe.energy)
                 .id(`thermal:compat/tconstruct/chiller_tconstruct_${material}_${recipe.type}`);
+        });
+    }
+
+    function thermal_gem_melting(event, material, block, gem, gear, rod, plate) {
+        if (gem == air) {
+            return;
+        }
+
+        let modId;
+        if (Fluid.exists(`tconstruct:molten_${material}`)) {
+            modId = 'tconstruct';
+        } else if (Fluid.exists(`materialis:molten_${material}`)) {
+            modId = 'materialis';
+        } else if (Fluid.exists(`emendatusenigmatica:molten_${material}`)) {
+            modId = 'emendatusenigmatica';
+        } else if (Fluid.exists(`kubejs:molten_${material}`)) {
+            modId = 'kubejs';
+        } else {
+            return;
+        }
+
+        blacklistedMaterials = ['ender'];
+        for (var i = 0; i < blacklistedMaterials.length; i++) {
+            if (blacklistedMaterials[i] == material) {
+                return;
+            }
+        }
+
+        let recipes = [{ type: 'gem', amount: 144, input: `#forge:gems/${material}`, energy: 5000 }];
+        if (block != air) {
+            recipes.push({ type: 'block', amount: 1296, input: `#forge:storage_blocks/${material}`, energy: 40000 });
+        }
+        if (gear != air) {
+            recipes.push({ type: 'gear', amount: 576, input: `#forge:gears/${material}`, energy: 20000 });
+        }
+        if (rod != air) {
+            recipes.push({ type: 'rod', amount: 72, input: `#forge:rods/${material}`, energy: 2500 });
+        }
+        if (plate != air) {
+            recipes.push({ type: 'plate', amount: 144, input: `#forge:plates/${material}`, energy: 5000 });
+        }
+
+        recipes.forEach((recipe) => {
+            event.recipes.thermal
+                .crucible(Fluid.of(`${modId}:molten_${material}`, recipe.amount), recipe.input)
+                .energy(recipe.energy)
+                .id(`enigmatica:base/thermal/crucible/${material}_${recipe.type}`);
         });
     }
 
