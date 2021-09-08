@@ -25,10 +25,6 @@ onEvent('item.tooltip', (event) => {
     }
     const recipes = [
         {
-            items: ['tiab:timeinabottle'],
-            description: ['Any Potion can be used for crafting this.']
-        },
-        {
             items: ['bloodmagic:soulpickaxe'],
             description: ['Capable of mining Iesnium.']
         },
@@ -39,6 +35,6 @@ onEvent('item.tooltip', (event) => {
     ];
 
     recipes.forEach((recipe) => {
-        event.add(recipe.items, recipe.text);
+        event.add(recipe.items, recipe.description);
     });
 });
