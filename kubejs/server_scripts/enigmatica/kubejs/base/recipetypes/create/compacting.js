@@ -28,6 +28,10 @@ onEvent('recipes', (event) => {
                 output: 'immersiveengineering:slab_concrete'
             },
             {
+                inputs: [Fluid.of('immersiveengineering:concrete', 1000)],
+                output: 'immersiveengineering:concrete'
+            },
+            {
                 inputs: [Fluid.of('industrialforegoing:latex', 900)],
                 output: Item.of('industrialforegoing:dryrubber', 1)
             },
