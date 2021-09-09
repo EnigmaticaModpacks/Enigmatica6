@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('immersiveengineering:blastbrick', 9),
-            pattern: ['ADA', 'CBC', 'ACA'],
+            pattern: ['ADA', 'CBC', 'AEA'],
             key: {
                 C: 'immersiveengineering:cokebrick',
                 B: 'minecraft:blast_furnace',
