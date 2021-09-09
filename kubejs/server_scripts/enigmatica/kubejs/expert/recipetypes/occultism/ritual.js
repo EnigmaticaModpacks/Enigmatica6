@@ -294,10 +294,10 @@ onEvent('recipes', (event) => {
                     item: 'occultism:ritual_dummy/craft_dimensional_mineshaft'
                 },
                 ingredients: [
-                    { item: 'occultism:otherstone' },
-                    { item: 'occultism:otherstone' },
-                    { item: 'occultism:otherstone' },
-                    { item: 'occultism:otherstone' },
+                    { item: 'bloodmagic:infusedslate' },
+                    { item: 'bloodmagic:infusedslate' },
+                    { item: 'bloodmagic:infusedslate' },
+                    { item: 'bloodmagic:infusedslate' },
                     { item: 'atum:scarab' },
                     { tag: 'forge:storage_blocks/iesnium' },
                     { item: 'occultism:spirit_attuned_crystal' },

@@ -391,6 +391,16 @@ const recipesToHide = [
 
             'bloodmagic:soul_forge',
             'bloodmagic:ritual_diviner_0',
+            'bloodmagic:blood_rune_blank',
+            'bloodmagic:blood_rune_speed',
+            'bloodmagic:blood_rune_sacrifice',
+            'bloodmagic:blood_rune_self_sacrifice',
+            'bloodmagic:blood_rune_displacement',
+            'bloodmagic:blood_rune_capacity',
+            'bloodmagic:blood_rune_aug_capacity',
+            'bloodmagic:blood_rune_orb',
+            'bloodmagic:blood_rune_acceleration',
+            'bloodmagic:blood_rune_charging',
 
             'botania:terrasteel_helmet',
             'botania:terrasteel_chestplate',
@@ -437,6 +447,10 @@ const recipesToHide = [
     {
         category: 'botania:petals',
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    },
+    {
+        category: 'bloodmagic:alchemytable',
+        recipes_by_id: ['bloodmagic:alchemytable/basic_cutting_fluid_sigil']
     }
 ];
 

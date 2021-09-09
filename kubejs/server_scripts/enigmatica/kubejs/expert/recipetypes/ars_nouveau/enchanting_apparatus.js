@@ -54,14 +54,14 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'occultism:otherstone',
+                    'bloodmagic:reinforcedslate',
                     '#forge:dusts/mana',
-                    'occultism:otherstone',
+                    'bloodmagic:reinforcedslate',
                     'eidolon:pewter_inlay',
                     'eidolon:pewter_inlay',
-                    'occultism:otherstone',
-                    'occultism:otherstone',
-                    'occultism:otherstone'
+                    'bloodmagic:reinforcedslate',
+                    'bloodmagic:reinforcedslate',
+                    'bloodmagic:reinforcedslate'
                 ],
                 reagent: 'minecraft:bowl',
                 output: 'occultism:sacrificial_bowl',
@@ -86,8 +86,8 @@ onEvent('recipes', (event) => {
                     'eidolon:pewter_inlay',
                     'occultism:stable_wormhole',
                     'eidolon:pewter_inlay',
-                    'occultism:otherstone',
-                    'occultism:otherstone',
+                    'bloodmagic:reinforcedslate',
+                    'bloodmagic:reinforcedslate',
                     'eidolon:pewter_inlay',
                     'occultism:otherstone_pedestal',
                     'eidolon:pewter_inlay'

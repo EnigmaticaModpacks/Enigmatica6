@@ -76,6 +76,16 @@ onEvent('recipes', (event) => {
 
         { output: 'bloodmagic:soulforge', id: 'bloodmagic:soul_forge' },
         { output: 'bloodmagic:ritualdiviner', id: 'bloodmagic:ritual_diviner_0' },
+        { output: 'bloodmagic:blankrune', id: 'bloodmagic:blood_rune_blank' },
+        { output: 'bloodmagic:speedrune', id: 'bloodmagic:blood_rune_speed' },
+        { output: 'bloodmagic:sacrificerune', id: 'bloodmagic:blood_rune_sacrifice' },
+        { output: 'bloodmagic:selfsacrificerune', id: 'bloodmagic:blood_rune_self_sacrifice' },
+        { output: 'bloodmagic:dislocationrune', id: 'bloodmagic:blood_rune_displacement' },
+        { output: 'bloodmagic:altarcapacityrune', id: 'bloodmagic:blood_rune_capacity' },
+        { output: 'bloodmagic:bettercapacityrune', id: 'bloodmagic:blood_rune_aug_capacity' },
+        { output: 'bloodmagic:orbcapacityrune', id: 'bloodmagic:blood_rune_orb' },
+        { output: 'bloodmagic:accelerationrune', id: 'bloodmagic:blood_rune_acceleration' },
+        { output: 'bloodmagic:chargingrune', id: 'bloodmagic:blood_rune_charging' },
 
         { output: 'botania:terrasteel_helmet', id: 'botania:terrasteel_helmet' },
         { output: 'botania:terrasteel_chestplate', id: 'botania:terrasteel_chestplate' },
