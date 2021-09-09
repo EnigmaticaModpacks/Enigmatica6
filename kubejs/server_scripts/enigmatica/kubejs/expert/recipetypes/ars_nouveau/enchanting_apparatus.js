@@ -50,7 +50,7 @@ onEvent('recipes', (event) => {
                 reagent: 'eidolon:crucible',
                 output: 'botania:apothecary_default',
                 count: 1,
-                id: `${id_prefix}gold_fiber`
+                id: `${id_prefix}crucible`
             },
             {
                 inputs: [
