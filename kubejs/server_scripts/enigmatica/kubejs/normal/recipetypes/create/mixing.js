@@ -1,4 +1,7 @@
 onEvent('recipes', (event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
     const recipes = [
         {
             inputs: ['#forge:storage_blocks/coal'],
