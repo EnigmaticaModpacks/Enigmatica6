@@ -4,6 +4,10 @@ onEvent('recipes', (event) => {
             inputs: ['#forge:storage_blocks/coal'],
             output: Item.of('emendatusenigmatica:coke_gem', 9),
             heated: true
+        },
+        {
+            inputs: ['#forge:clay', '#forge:gravel', '#forge:sand', '#forge:sand', Fluid.of('minecraft:water', 4000)],
+            output: Fluid.of('immersiveengineering:concrete', 4000)
         }
     ];
 
