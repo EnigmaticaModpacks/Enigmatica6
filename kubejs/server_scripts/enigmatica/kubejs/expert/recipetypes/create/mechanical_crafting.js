@@ -52,10 +52,11 @@ onEvent('recipes', (event) => {
             output: Item.of('immersiveengineering:blastbrick', 9),
             pattern: ['ADA', 'CBC', 'ACA'],
             key: {
-                C: 'quark:soul_sandstone_bricks',
+                C: 'immersiveengineering:cokebrick',
                 B: 'minecraft:blast_furnace',
                 A: 'minecraft:red_nether_bricks',
-                D: 'thermal:fire_tnt'
+                D: 'thermal:fire_tnt',
+                E: '#forge:storage_blocks/coal_coke'
             },
             id: 'immersiveengineering:crafting/blastbrick'
         },
