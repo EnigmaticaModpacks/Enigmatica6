@@ -60,7 +60,7 @@ onEvent('recipes', (event) => {
                 time: 250
             },
             {
-                input: 'kubejs:firmament',
+                input: 'ars_nouveau:arcane_stone',
                 output: 'naturesaura:infused_stone',
                 aura_type: 'naturesaura:nether',
                 aura: 15000,
