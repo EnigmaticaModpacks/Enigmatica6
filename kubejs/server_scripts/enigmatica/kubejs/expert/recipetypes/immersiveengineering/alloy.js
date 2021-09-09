@@ -11,7 +11,7 @@ onEvent('recipes', (event) => {
             id: `${idPrefix}froststeel_ingot_3`
         },
         {
-            input1: 'forge:book',
+            input1: 'minecraft:book',
             input2: 'pneumaticcraft:upgrade_matrix',
             output: Item.of('immersiveengineering:blueprint', '{blueprint:"components"}'),
             id: `immersiveengineering:crafting/blueprint_components`
