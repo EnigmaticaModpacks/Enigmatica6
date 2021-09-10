@@ -31,7 +31,6 @@ global.isExpertMode = packMode == 'expert';
 const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
 
-console.log("Sent from outside 'server.datapack.high_priority' event.");
 console.log(`Current packmode is: ${global.packmode}`);
 
 onEvent('player.data_from_server.mode_channel', (event) => {
@@ -46,9 +45,7 @@ onEvent('server.datapack.high_priority', (event) => {
             console.log('setting mode for player: ' + player);
             setMode(player);
         });
-    }
 
-    if (event.server) {
         event.server.players.forEach((player) => {
             console.log('sending mode to player through mode_channel');
             player.sendData('mode_channel', {
