@@ -10,4 +10,12 @@ onEvent('player.logged_in', (event) => {
 
         event.addGameStage('starting_items');
     }
+
+    if (event.player.isServer()) {
+        console.log('sending packmode from logged_in event');
+        event.player.sendData('mode_channel', {
+            mode: global.packmode,
+            message: 'hello there, I am the server'
+        });
+    }
 });
