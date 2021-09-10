@@ -12,8 +12,10 @@ onEvent('player.logged_in', (event) => {
     }
 
     console.log('sending packmode from logged_in event');
-    event.player.sendData('mode_channel', {
+    let mode = {
         mode: global.packmode,
         message: 'hello there, I am the server'
-    });
+    };
+    event.player.sendData('mode_channel', mode);
+    console.log(mode);
 });
