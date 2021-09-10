@@ -7,6 +7,15 @@ setMode = (player) => {
     }
 };
 
+onEvent('server.datapack.high_priority', (event) => {
+    if (event.server) {
+        event.server.players.forEach((player) => {
+            console.log('setting mode for player: ' + player);
+            setMode(player);
+        });
+    }
+});
+
 const defaultConfig = {
     mode: 'normal',
     message: 'Valid modes are normal and expert.'
@@ -32,26 +41,3 @@ const isNormalMode = packMode == 'normal';
 const isExpertMode = packMode == 'expert';
 
 console.log(`Current packmode is: ${global.packmode}`);
-
-onEvent('player.data_from_server.mode_channel', (event) => {
-    console.log('message received by client: ');
-    console.log(event.data.get('mode'));
-    console.log(event.data.get('message'));
-    console.log(event.data.get());
-});
-onEvent('server.datapack.high_priority', (event) => {
-    if (event.server) {
-        event.server.players.forEach((player) => {
-            console.log('setting mode for player: ' + player);
-            setMode(player);
-        });
-
-        event.server.players.forEach((player) => {
-            console.log('sending mode to player through mode_channel');
-            player.sendData('mode_channel', {
-                mode: global.packmode,
-                message: 'hello there, I am the server'
-            });
-        });
-    }
-});
