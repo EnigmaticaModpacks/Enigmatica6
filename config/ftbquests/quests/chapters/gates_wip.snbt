@@ -5,7 +5,6 @@
 	filename: "gates_wip"
 	title: "Gates"
 	icon: "minecraft:oak_fence_gate"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -25,6 +24,8 @@
 				"Please note that mods are rarely \"strictly\" gated - Some of their items will be obtainable prior to the Gate being unlocked, and not all things will be immediately obtainable once the Gate is unlocked."
 				""
 			]
+			dependencies: ["0000000000000FEB"]
+			hide: true
 			id: "0000000000000B6C"
 		}
 		{

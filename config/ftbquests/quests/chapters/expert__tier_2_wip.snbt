@@ -11,13 +11,13 @@
 			Damage: 0
 		}
 	}
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: -3.0d
 			y: -5.5d
+			dependencies: ["48BA066E1B977D32"]
 			id: "72D589CE18202510"
 			tasks: [{
 				id: "61813D97AAD3C2B9"
@@ -1106,6 +1106,15 @@
 				type: "item"
 				item: "eidolon:soul_enchanter"
 			}]
+		}
+		{
+			title: "Magic Progression Tier 1"
+			icon: "ars_nouveau:novice_spell_book"
+			x: -3.0d
+			y: -6.5d
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "48BA066E1B977D32"
 		}
 	]
 }

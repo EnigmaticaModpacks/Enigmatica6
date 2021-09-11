@@ -5,7 +5,6 @@
 	filename: "expert__bragging_rights"
 	title: "Bragging Rights"
 	icon: "create:creative_crate"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -14,6 +13,7 @@
 			y: 0.0d
 			shape: "pentagon"
 			description: ["Obtaining the Creative Crate is the ultimate goal - Complete this quest and you complete the modpack!"]
+			dependencies: ["7C0943FD8F8A0D69"]
 			size: 2.0d
 			id: "6D3FE88DB30DEE00"
 			tasks: [{
@@ -26,6 +26,7 @@
 			x: -4.0d
 			y: 0.0d
 			shape: "hexagon"
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "36CDE03E505E0F94"
 			tasks: [{
 				id: "720841254075293B"
@@ -37,6 +38,7 @@
 			x: 4.0d
 			y: 0.0d
 			shape: "hexagon"
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "477CEC2E3F4736C3"
 			tasks: [{
 				id: "6BDE4D704EAF5C05"
@@ -47,6 +49,7 @@
 		{
 			x: 0.0d
 			y: 2.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "4AB9649C1D2FE587"
 			tasks: [{
 				id: "571A2D485D7D82AD"
@@ -64,6 +67,7 @@
 		{
 			x: -1.0d
 			y: 2.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "6218AF7644C178A7"
 			tasks: [{
 				id: "2BB3E567517D599F"
@@ -81,6 +85,7 @@
 		{
 			x: 1.0d
 			y: 2.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "5DA9A0C75EA47DFF"
 			tasks: [{
 				id: "3F5DB81D50286BAC"
@@ -91,6 +96,7 @@
 		{
 			x: -2.0d
 			y: -1.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "188BE70C3D176BCA"
 			tasks: [{
 				id: "5C9CA9991302C5CA"
@@ -101,6 +107,7 @@
 		{
 			x: -2.0d
 			y: 0.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "72C894BE4081603D"
 			tasks: [{
 				id: "5A6A9B10EF0B2E06"
@@ -117,6 +124,7 @@
 		{
 			x: -2.0d
 			y: 1.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "3AB61B2854483CE3"
 			tasks: [{
 				id: "7C2A6AD9D846702E"
@@ -127,6 +135,7 @@
 		{
 			x: 2.0d
 			y: 0.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "474DFFBB63FE90BA"
 			tasks: [{
 				id: "7DE2D48092C045AA"
@@ -137,6 +146,7 @@
 		{
 			x: 2.0d
 			y: -1.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "65F9021D56312C9B"
 			tasks: [{
 				id: "15599A14E7C2F230"
@@ -147,12 +157,28 @@
 		{
 			x: 2.0d
 			y: 1.0d
+			dependencies: ["7C0943FD8F8A0D69"]
 			id: "2A79C4CDDA045886"
 			tasks: [{
 				id: "4BA322BD06DE3777"
 				type: "item"
 				item: "refinedstorage:creative_controller"
 			}]
+		}
+		{
+			title: "Bragging Rights"
+			icon: {
+				id: "tconstruct:creative_slot"
+				Count: 1b
+				tag: {
+					slot: "abilities"
+				}
+			}
+			x: 0.0d
+			y: -2.5d
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "7C0943FD8F8A0D69"
 		}
 	]
 }

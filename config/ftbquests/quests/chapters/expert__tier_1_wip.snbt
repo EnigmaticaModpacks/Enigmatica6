@@ -5,7 +5,6 @@
 	filename: "expert__tier_1_wip"
 	title: "Tech T1"
 	icon: "create:large_cogwheel"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -13,6 +12,7 @@
 			x: 0.0d
 			y: 0.5d
 			shape: "rsquare"
+			dependencies: ["1D574D041D9164AD"]
 			id: "1DB20906EC9FFAB9"
 			tasks: [{
 				id: "6C30E3FB62A38AAB"
@@ -67,6 +67,7 @@
 			x: 5.0d
 			y: 0.5d
 			shape: "rsquare"
+			dependencies: ["1D574D041D9164AD"]
 			id: "14099ACA706F3CCE"
 			tasks: [{
 				id: "2594806B26FA3778"
@@ -78,6 +79,7 @@
 			x: -1.0d
 			y: 0.5d
 			shape: "rsquare"
+			dependencies: ["1D574D041D9164AD"]
 			id: "0044F922097279B5"
 			tasks: [{
 				id: "761CE516771F68FC"
@@ -89,6 +91,7 @@
 			x: 1.0d
 			y: 0.5d
 			shape: "rsquare"
+			dependencies: ["1D574D041D9164AD"]
 			id: "19A178AE2895632F"
 			tasks: [{
 				id: "52211E602B78DB92"
@@ -406,6 +409,7 @@
 			x: 2.5d
 			y: 0.0d
 			description: ["The quests are placed like this to give an easy overview, it's not actually going to look like this in the end :P"]
+			dependencies: ["1D574D041D9164AD"]
 			id: "72987F9393410FCA"
 			tasks: [{
 				id: "6FC71CD83BC84D83"
@@ -444,6 +448,7 @@
 		{
 			x: 5.0d
 			y: 3.5d
+			dependencies: ["508E396542F84E94"]
 			id: "4082766981B24A44"
 			tasks: [
 				{
@@ -583,6 +588,7 @@
 		{
 			x: 10.0d
 			y: 2.0d
+			dependencies: ["2357CCF3A0758B0C"]
 			optional: true
 			id: "316FBC4806413CAE"
 			tasks: [{
@@ -690,6 +696,15 @@
 				item: "emendatusenigmatica:invar_dust"
 				count: 8L
 			}]
+		}
+		{
+			title: "Tech Progression Tier 1"
+			icon: "create:large_cogwheel"
+			x: 2.5d
+			y: -1.0d
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "1D574D041D9164AD"
 		}
 	]
 }

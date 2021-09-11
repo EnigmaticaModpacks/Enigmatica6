@@ -5,7 +5,6 @@
 	filename: "tech_t2"
 	title: "Tech T2"
 	icon: "immersiveengineering:workbench"
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
@@ -15,7 +14,10 @@
 			x: 5.0d
 			y: 0.0d
 			shape: "rsquare"
-			dependencies: ["0000000000000FDB"]
+			dependencies: [
+				"0000000000000FDB"
+				"39F026B964F7E4C4"
+			]
 			id: "67F7E4C19E39F9F3"
 		}
 		{
@@ -24,8 +26,20 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "rsquare"
-			dependencies: ["0000000000000FD5"]
+			dependencies: [
+				"0000000000000FD5"
+				"39F026B964F7E4C4"
+			]
 			id: "06F4A47216226927"
+		}
+		{
+			title: "Tech Progression Tier 2"
+			icon: "rsgauges:industrial_analog_angular_gauge"
+			x: 2.5d
+			y: -1.5d
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "39F026B964F7E4C4"
 		}
 	]
 }

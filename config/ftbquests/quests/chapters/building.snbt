@@ -4,7 +4,7 @@
 	order_index: 2
 	filename: "building"
 	title: "Building"
-	icon: "mcwwindows:oak_plank_window2_2tall"
+	icon: "mcwroofs:oak_attic_roof"
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
@@ -80,17 +80,6 @@
 				id: "0000000000000E35"
 				type: "item"
 				item: "mcwtrpdoors:oak_glass_trapdoor"
-			}]
-		}
-		{
-			title: "Builders Crafts and Additions"
-			x: 1.0d
-			y: 1.0d
-			id: "0000000000000E3B"
-			tasks: [{
-				id: "0000000000000E3C"
-				type: "item"
-				item: "buildersaddition:counter_oak_andesite"
 			}]
 		}
 	]
