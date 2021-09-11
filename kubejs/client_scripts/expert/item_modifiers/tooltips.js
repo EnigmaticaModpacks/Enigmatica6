@@ -26,15 +26,19 @@ onEvent('item.tooltip', (event) => {
     const recipes = [
         {
             items: ['bloodmagic:soulpickaxe'],
-            description: ['Capable of mining Iesnium.']
+            text: ['Capable of mining Iesnium.']
         },
         {
             items: ['tconstruct:seared_melter'],
-            description: [Text.of('Disabled in Expert Mode - Use the Smeltery Controller.').darkGreen()]
+            text: [Text.of('Disabled in Expert Mode - Use the Smeltery Controller.').darkGreen()]
+        },
+        {
+            items: ['kubejs:basic_circuit_package'],
+            text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
         }
     ];
 
     recipes.forEach((recipe) => {
-        event.add(recipe.items, recipe.description);
+        event.add(recipe.items, recipe.text);
     });
 });

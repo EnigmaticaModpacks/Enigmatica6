@@ -92,10 +92,6 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of('Shield Projections are immune to the Wither').color('#4F0D75')]
         },
         {
-            items: ['kubejs:basic_circuit_package'],
-            text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
-        },
-        {
             items: ['bloodmagic:quick_draw_anointment'],
             text: [Text.of('Grants Quick-Draw on Bows and Crossbows').color('#7e24b3')]
         },
