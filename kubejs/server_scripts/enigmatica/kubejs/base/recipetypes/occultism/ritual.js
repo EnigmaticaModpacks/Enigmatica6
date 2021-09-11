@@ -277,8 +277,8 @@ onEvent('recipes', (event) => {
                 pentacle_id: 'occultism:summon_foliot',
                 duration: 6,
                 spirit_max_age: -1,
-                spirit_job_type: 'occultism:manage_machine',
-                entity_to_summon: 'occultism:cleaner',
+                spirit_job_type: 'occultism:cleaner',
+                entity_to_summon: 'occultism:foliot',
                 ritual_dummy: {
                     item: 'occultism:ritual_dummy/summon_foliot_cleaner'
                 },
