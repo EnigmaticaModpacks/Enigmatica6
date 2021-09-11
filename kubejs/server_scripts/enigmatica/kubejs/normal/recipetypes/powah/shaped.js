@@ -1,4 +1,7 @@
 onEvent('recipes', (event) => {
+    if (global.isNormalMode == false) {
+        return;
+    }
     powahTiers.forEach((tier) => {
         let capacitor = 'powah:capacitor_' + tier,
             crystal = 'powah:crystal_' + tier,
