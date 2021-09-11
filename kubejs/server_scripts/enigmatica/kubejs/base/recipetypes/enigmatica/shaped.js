@@ -802,14 +802,6 @@ onEvent('recipes', (event) => {
             A: cable,
             B: Ingredient.of(lowerTiers.map((item) => `powah:ender_gate_${item}`))
         });
-
-        event
-            .shaped(Item.of(`powah:energy_cable_${tier}`, 6), ['CCC', 'BAB', 'CCC'], {
-                A: capacitor,
-                B: Ingredient.of(lowerTiers.map((item) => `powah:energy_cable_${item}`)),
-                C: Ingredient.of('powah:dielectric_rod_horizontal')
-            })
-            .id(`powah:crafting/cable_${tier}`);
     });
 
     colors.forEach((color) => {
