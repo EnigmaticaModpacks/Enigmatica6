@@ -152,7 +152,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"smoothboot.json",
 	"InventoryHUD/curios.json",
 	"bloodmagic-client.toml",
-	"jmi-client.toml"
+	"jmi-client.toml",
+	"tconplanner-client.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
