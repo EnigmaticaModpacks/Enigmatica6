@@ -42,6 +42,36 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    const powerValues = ['5000', '10000', '15000', '20000', '25000', '30000'],
+        ingredients = { ingots: [], blocks: [] };
+
+    powerValues.forEach((powerValue, index) => {
+        ingredients.ingots.push({ tag: 'forge:ingots/uranium' });
+        ingredients.blocks.push({ tag: 'forge:storage_blocks/uranium' });
+        recipes.push(
+            {
+                type: 'powah:energizing',
+                ingredients: ingredients.ingots,
+                energy: powerValue,
+                result: {
+                    item: 'powah:uraninite',
+                    count: index + 1
+                },
+                id: `${id_prefix}uraninite_${index}`
+            },
+            {
+                type: 'powah:energizing',
+                ingredients: ingredients.blocks,
+                energy: powerValue * 9,
+                result: {
+                    item: 'powah:uraninite_block',
+                    count: index + 1
+                },
+                id: `${id_prefix}uraninite_block_${index}`
+            }
+        );
+    });
+
     recipes.forEach((recipe) => {
         recipe.type = 'powah:energizing';
         event.custom(recipe).id(recipe.id);

@@ -156,6 +156,20 @@ onEvent('recipes', (event) => {
                 count: 1
             },
             id: 'powah:energizing/ender_core'
+        },
+        {
+            ingredients: [
+                { tag: 'forge:ingots/uranium' },
+                { tag: 'forge:ingots/uranium' },
+                { tag: 'forge:dusts/sulfur' },
+                { tag: 'forge:dusts/fluorite' }
+            ],
+            energy: '10000',
+            result: {
+                item: 'powah:uraninite',
+                count: 2
+            },
+            id: `${id_prefix}uraninite`
         }
     ];
 
