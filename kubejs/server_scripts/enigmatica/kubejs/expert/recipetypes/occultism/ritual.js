@@ -699,7 +699,7 @@ onEvent('recipes', (event) => {
                 pentacle_id: 'occultism:craft_djinni',
                 duration: 6,
                 ritual_dummy: {
-                    item: 'magicfeather:magicfeather'
+                    item: 'kubejs:craft_magicfeather'
                 },
                 ingredients: [
                     { item: 'alexsmobs:roadrunner_feather' },
@@ -727,7 +727,7 @@ onEvent('recipes', (event) => {
                     display_name: 'ritual.occultism.sacrifice.dragons'
                 },
                 ritual_dummy: {
-                    item: 'losttrinkets:magical_feathers'
+                    item: 'kubejs:craft_magical_feathers'
                 },
                 ingredients: [
                     { item: 'botania:flight_tiara' },
@@ -760,7 +760,7 @@ onEvent('recipes', (event) => {
                 },
                 entity_to_summon: 'atum:pharaoh',
                 ritual_dummy: {
-                    item: 'occultism:ritual_dummy/custom_ritual'
+                    item: 'kubejs:summon_pharaoh'
                 },
                 ingredients: [
                     { tag: 'atum:godshards' },
@@ -774,6 +774,31 @@ onEvent('recipes', (event) => {
                 ],
                 result: { item: 'occultism:jei_dummy/none' },
                 id: `${id_prefix}pharaoh`
+            },
+
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_foliot'
+                },
+                pentacle_id: 'occultism:craft_foliot',
+                duration: 10,
+                ritual_dummy: {
+                    item: 'kubejs:craft_spirit_gate'
+                },
+                ingredients: [
+                    { item: 'powah:thermoelectric_plate' },
+                    { item: 'atum:shu_godshard' },
+                    { item: 'powah:thermoelectric_plate' },
+                    { item: 'atum:shu_godshard' },
+                    { tag: 'botania:runes/fire' },
+                    { tag: 'botania:runes/fire' },
+                    { tag: 'botania:runes/water' },
+                    { tag: 'botania:runes/water' }
+                ],
+                result: { item: 'kubejs:spirit_gate' },
+                id: `${id_prefix}spirit_gate`
             }
         ]
     };

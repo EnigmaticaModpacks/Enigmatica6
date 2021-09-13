@@ -144,6 +144,4 @@ onEvent('recipes', (event) => {
     recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
-    // TODO: Remove Powah cables when recipes using them are changed
-    // event.remove({ id: /powah:crafting\/cable_/ });
 });

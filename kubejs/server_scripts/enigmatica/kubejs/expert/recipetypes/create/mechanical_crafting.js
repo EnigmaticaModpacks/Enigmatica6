@@ -121,6 +121,42 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    powahTiers.forEach(function (tier) {
+        if (tier == 'starter') {
+            return;
+        }
+        let casingMaterial = `#forge:storage_blocks/${tier}`;
+        if (tier == 'basic') {
+            casingMaterial = '#forge:storage_blocks/lead';
+        } else if (tier == 'hardened') {
+            casingMaterial = '#forge:storage_blocks/energized_steel';
+        }
+
+        recipes.push({
+            output: Item.of(`powah:reactor_${tier}`, 36),
+            pattern: ['ABBBA', 'CPPPP', 'CDDDE', 'FGMLE', 'NGOKE', 'HIIKJ', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: casingMaterial,
+                C: `powah:energy_cell_${tier}`,
+                D: `powah:thermo_generator_${tier}`,
+                E: 'thermal:fluid_cell_frame',
+                F: 'xnet:advanced_connector_green',
+                G: 'xnet:netcable_green',
+                H: 'xnet:advanced_connector_red',
+                I: 'xnet:netcable_red',
+                J: 'xnet:advanced_connector_blue',
+                K: 'xnet:netcable_blue',
+                L: 'pneumaticcraft:heat_pipe',
+                M: 'kubejs:spirit_gate',
+                N: 'xnet:controller',
+                O: `powah:furnator_${tier}`,
+                P: 'create:fluid_pipe'
+            },
+            id: `powah:crafting/reactor_${tier}`
+        });
+    });
+
     recipes.forEach((recipe) => {
         if (recipe.id) {
             event.recipes.create.mechanical_crafting(recipe.output, recipe.pattern, recipe.key).id(recipe.id);

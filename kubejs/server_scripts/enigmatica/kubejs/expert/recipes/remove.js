@@ -41,6 +41,7 @@ onEvent('recipes', (event) => {
         'powah:crafting/capacitor_basic',
         'powah:crafting/capacitor_basic_tiny',
         'powah:crafting/thermoelectric_plate',
+        /powah:crafting\/cable_/,
 
         'quark:building/crafting/candles/candle_basic',
         'refinedstorage:quartz_enriched_iron',

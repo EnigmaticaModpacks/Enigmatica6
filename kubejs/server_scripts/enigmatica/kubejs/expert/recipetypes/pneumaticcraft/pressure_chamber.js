@@ -69,6 +69,28 @@ onEvent('recipes', (event) => {
         }
     ];
 
+    powahTiers.forEach(function (tier) {
+        if (tier == 'starter') {
+            return;
+        }
+        let capacitor = `powah:capacitor_${tier}`;
+        if (tier == 'basic') {
+            capacitor = `powah:capacitor_${tier}_large`;
+        }
+
+        recipes.push({
+            inputs: [
+                { item: 'powah:blank_card', count: 1 },
+                { item: 'powah:dielectric_paste', count: 1 },
+                { item: capacitor, count: 2 },
+                { item: 'powah:ender_core', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: `powah:ender_gate_${tier}`, count: 1 }],
+            id: `powah:crafting/ender_gate_${tier}`
+        });
+    });
+
     recipes.forEach((recipe) => {
         let ingredients = [];
         recipe.inputs.forEach((input) => {
