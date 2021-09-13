@@ -10,6 +10,10 @@ _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Changes/Improvements**
 
+**Bug Fixes**
+
+-   Disabled RandomPatches fix `fix_duplicate_entity_uuids`, because it can cause server lag.
+
 ### Enigmatica 6 v0.5.11
 
 _Using Forge-1.16.5-36.2.2_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.11.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.11.md)_
