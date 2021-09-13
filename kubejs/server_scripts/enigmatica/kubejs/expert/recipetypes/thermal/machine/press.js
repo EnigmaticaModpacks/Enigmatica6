@@ -2,49 +2,53 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/thermal/press/';
     const recipes = [
         {
             inputs: [Item.of('4x kubejs:superheated_steel_ingot'), Ingredient.of('#thermal:crafting/dies/packing_2x2')],
-            outputs: Item.of('2x kubejs:hot_compressed_iron_ingot'),
+            output: Item.of('2x kubejs:hot_compressed_iron_ingot'),
             energy: 1000,
-            id: 'enigmatica:expert/thermal/hot_compressed_iron_ingot'
+            id: `${id_prefix}hot_compressed_iron_ingot`
         },
         {
             inputs: [Item.of('4x kubejs:superheated_steel_block'), Ingredient.of('#thermal:crafting/dies/packing_2x2')],
-            outputs: Item.of('2x kubejs:hot_compressed_iron_block'),
+            output: Item.of('2x kubejs:hot_compressed_iron_block'),
             energy: 9000,
-            id: 'enigmatica:expert/thermal/hot_compressed_iron_block'
+            id: `${id_prefix}hot_compressed_iron_block`
         },
         {
             inputs: ['refinedstorage:raw_basic_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            outputs: 'refinedstorage:basic_processor',
+            output: 'refinedstorage:basic_processor',
             energy: 9000,
             id: 'refinedstorage:basic_processor'
         },
         {
             inputs: ['refinedstorage:raw_improved_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            outputs: 'refinedstorage:improved_processor',
+            output: 'refinedstorage:improved_processor',
             energy: 18000,
             id: 'refinedstorage:improved_processor'
         },
         {
             inputs: ['refinedstorage:raw_advanced_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            outputs: 'refinedstorage:advanced_processor',
+            output: 'refinedstorage:advanced_processor',
             energy: 27000,
             id: 'refinedstorage:advanced_processor'
         },
         {
             inputs: ['extrastorage:raw_neural_processor', Ingredient.of('#thermal:crafting/dies/coin')],
-            outputs: 'extrastorage:neural_processor',
+            output: 'extrastorage:neural_processor',
             energy: 36000,
             id: 'extrastorage:neural_processor'
+        },
+        {
+            inputs: ['immersiveengineering:thermoelectric_generator'],
+            output: 'powah:thermoelectric_plate',
+            energy: 1000,
+            id: `${id_prefix}thermoelectric_plate`
         }
     ];
 
     recipes.forEach((recipe) => {
-        recipe.id
-            ? event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy).id(recipe.id)
-            : event.recipes.thermal.press(recipe.outputs, recipe.inputs).energy(recipe.energy);
+        event.recipes.thermal.press(recipe.output, recipe.inputs).energy(recipe.energy).id(recipe.id);
     });
 });

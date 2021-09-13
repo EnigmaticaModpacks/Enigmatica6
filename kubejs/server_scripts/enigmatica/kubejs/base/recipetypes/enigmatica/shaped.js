@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/enigmatica/';
     const recipes = [
         {
             // Add Blaze + Coal Comb -> Lava Bucket Recipe
@@ -10,7 +11,7 @@ onEvent('recipes', (event) => {
                 B: 'resourcefulbees:wax',
                 A: 'minecraft:bucket'
             },
-            id: 'enigmatica:base/minecraft/lava_bucket'
+            id: `${id_prefix}minecraft/lava_bucket`
         },
         {
             output: 'ironjetpacks:hardened_jetpack',
@@ -22,7 +23,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:hardened_thruster',
                 E: 'powah:reactor_hardened'
             },
-            id: 'enigmatica:base/ironjetpacks/hardened_jetpack'
+            id: `${id_prefix}ironjetpacks/hardened_jetpack`
         },
         {
             output: 'ironjetpacks:hardened_thruster',
@@ -33,7 +34,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_hardened',
                 D: 'powah:reactor_hardened'
             },
-            id: 'enigmatica:base/ironjetpacks/hardened_thruster'
+            id: `${id_prefix}ironjetpacks/hardened_thruster`
         },
 
         {
@@ -46,7 +47,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:invar_thruster',
                 E: '#forge:gears/invar'
             },
-            id: 'enigmatica:base/ironjetpacks/invar_jetpack'
+            id: `${id_prefix}ironjetpacks/invar_jetpack`
         },
         {
             output: 'ironjetpacks:invar_thruster',
@@ -57,7 +58,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_hardened',
                 D: '#forge:gears/invar'
             },
-            id: 'enigmatica:base/ironjetpacks/invar_thruster'
+            id: `${id_prefix}ironjetpacks/invar_thruster`
         },
         {
             output: 'ironjetpacks:blazing_jetpack',
@@ -69,7 +70,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:blazing_thruster',
                 E: 'powah:reactor_blazing'
             },
-            id: 'enigmatica:base/ironjetpacks/blazing_jetpack'
+            id: `${id_prefix}ironjetpacks/blazing_jetpack`
         },
         {
             output: 'ironjetpacks:blazing_thruster',
@@ -80,7 +81,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_blazing',
                 D: 'powah:reactor_blazing'
             },
-            id: 'enigmatica:base/ironjetpacks/blazing_thruster'
+            id: `${id_prefix}ironjetpacks/blazing_thruster`
         },
         {
             output: 'ironjetpacks:signalum_jetpack',
@@ -92,7 +93,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:signalum_thruster',
                 E: '#forge:gears/signalum'
             },
-            id: 'enigmatica:base/ironjetpacks/signalum_jetpack'
+            id: `${id_prefix}ironjetpacks/signalum_jetpack`
         },
         {
             output: 'ironjetpacks:signalum_thruster',
@@ -103,7 +104,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_blazing',
                 D: '#forge:gears/signalum'
             },
-            id: 'enigmatica:base/ironjetpacks/signalum_thruster'
+            id: `${id_prefix}ironjetpacks/signalum_thruster`
         },
         {
             output: 'ironjetpacks:niotic_jetpack',
@@ -115,7 +116,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:niotic_thruster',
                 E: 'powah:reactor_niotic'
             },
-            id: 'enigmatica:base/ironjetpacks/niotic_jetpack'
+            id: `${id_prefix}ironjetpacks/niotic_jetpack`
         },
         {
             output: 'ironjetpacks:niotic_thruster',
@@ -126,7 +127,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_niotic',
                 D: 'powah:reactor_niotic'
             },
-            id: 'enigmatica:base/ironjetpacks/niotic_thruster'
+            id: `${id_prefix}ironjetpacks/niotic_thruster`
         },
 
         {
@@ -139,7 +140,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:lumium_thruster',
                 E: '#forge:gears/lumium'
             },
-            id: 'enigmatica:base/ironjetpacks/lumium_jetpack'
+            id: `${id_prefix}ironjetpacks/lumium_jetpack`
         },
         {
             output: 'ironjetpacks:lumium_thruster',
@@ -150,7 +151,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_niotic',
                 D: '#forge:gears/lumium'
             },
-            id: 'enigmatica:base/ironjetpacks/lumium_thruster'
+            id: `${id_prefix}ironjetpacks/lumium_thruster`
         },
 
         {
@@ -163,7 +164,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:spirited_thruster',
                 E: 'powah:reactor_spirited'
             },
-            id: 'enigmatica:base/ironjetpacks/spirited_jetpack'
+            id: `${id_prefix}ironjetpacks/spirited_jetpack`
         },
         {
             output: 'ironjetpacks:spirited_thruster',
@@ -174,7 +175,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_spirited',
                 D: 'powah:reactor_spirited'
             },
-            id: 'enigmatica:base/ironjetpacks/spirited_thruster'
+            id: `${id_prefix}ironjetpacks/spirited_thruster`
         },
         {
             output: 'ironjetpacks:enderium_jetpack',
@@ -186,7 +187,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:enderium_thruster',
                 E: '#forge:gears/enderium'
             },
-            id: 'enigmatica:base/ironjetpacks/enderium_jetpack'
+            id: `${id_prefix}ironjetpacks/enderium_jetpack`
         },
         {
             output: 'ironjetpacks:enderium_thruster',
@@ -197,7 +198,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_spirited',
                 D: '#forge:gears/enderium'
             },
-            id: 'enigmatica:base/ironjetpacks/enderium_thruster'
+            id: `${id_prefix}ironjetpacks/enderium_thruster`
         },
 
         {
@@ -210,7 +211,7 @@ onEvent('recipes', (event) => {
                 D: 'ironjetpacks:nitro_thruster',
                 E: 'powah:reactor_nitro'
             },
-            id: 'enigmatica:base/ironjetpacks/nitro_jetpack'
+            id: `${id_prefix}ironjetpacks/nitro_jetpack`
         },
         {
             output: 'ironjetpacks:nitro_thruster',
@@ -221,7 +222,7 @@ onEvent('recipes', (event) => {
                 C: 'powah:furnator_nitro',
                 D: 'powah:reactor_nitro'
             },
-            id: 'enigmatica:base/ironjetpacks/nitro_thruster'
+            id: `${id_prefix}ironjetpacks/nitro_thruster`
         },
         {
             output: 'betterendforge:dense_snow',
@@ -229,7 +230,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:snow_block'
             },
-            id: 'enigmatica:base/betterendforge/dense_snow'
+            id: `${id_prefix}betterendforge/dense_snow`
         },
         {
             output: Item.of('atum:linen_thread', 8),
@@ -238,7 +239,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:crops/flax',
                 B: '#forge:rods/wooden'
             },
-            id: 'enigmatica:base/atum/linen_thread_from_flax'
+            id: `${id_prefix}atum/linen_thread_from_flax`
         },
         {
             output: Item.of('atum:linen_thread', 4),
@@ -247,7 +248,7 @@ onEvent('recipes', (event) => {
                 A: 'atum:cloth_scrap',
                 B: '#forge:rods/wooden'
             },
-            id: 'enigmatica:base/atum/linen_thread_from_cloth_scrap'
+            id: `${id_prefix}atum/linen_thread_from_cloth_scrap`
         },
         {
             output: Item.of('eidolon:lead_ingot', 6),
@@ -255,7 +256,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/lead'
             },
-            id: 'enigmatica:base/eidolon/lead_ingot_conversion'
+            id: `${id_prefix}eidolon/lead_ingot_conversion`
         },
         {
             output: Item.of('atum:marl', 4),
@@ -264,7 +265,7 @@ onEvent('recipes', (event) => {
                 A: 'atum:sand',
                 B: 'minecraft:clay'
             },
-            id: 'enigmatica:base/atum/marl_from_clay'
+            id: `${id_prefix}atum/marl_from_clay`
         },
 
         {
@@ -273,7 +274,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_stone'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_polished'
+            id: `${id_prefix}bloodmagic/dungeon_polished`
         },
         {
             output: Item.of('bloodmagic:dungeon_brick1', 4),
@@ -281,7 +282,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_polished'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_brick1'
+            id: `${id_prefix}bloodmagic/dungeon_brick1`
         },
         {
             output: Item.of('bloodmagic:dungeon_polished_stairs', 4),
@@ -289,7 +290,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_polished'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_polished_stairs'
+            id: `${id_prefix}bloodmagic/dungeon_polished_stairs`
         },
         {
             output: Item.of('bloodmagic:dungeon_brick_stairs', 4),
@@ -297,7 +298,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_brick1'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_brick_stairs'
+            id: `${id_prefix}bloodmagic/dungeon_brick_stairs`
         },
         {
             output: Item.of('bloodmagic:dungeon_pillar_center', 2),
@@ -305,7 +306,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_stone'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_pillar_center'
+            id: `${id_prefix}bloodmagic/dungeon_pillar_center`
         },
         {
             output: Item.of('bloodmagic:dungeon_eye', 1),
@@ -314,7 +315,7 @@ onEvent('recipes', (event) => {
                 A: 'bloodmagic:dungeon_stone',
                 B: '#bloodmagic:crystals/demon'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_eye'
+            id: `${id_prefix}bloodmagic/dungeon_eye`
         },
         {
             output: Item.of('bloodmagic:dungeon_polished_wall', 6),
@@ -322,7 +323,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_polished'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_polished_wall'
+            id: `${id_prefix}bloodmagic/dungeon_polished_wall`
         },
         {
             output: Item.of('bloodmagic:dungeon_brick_wall', 6),
@@ -330,7 +331,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'bloodmagic:dungeon_brick1'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_brick_wall'
+            id: `${id_prefix}bloodmagic/dungeon_brick_wall`
         },
         {
             output: 'bloodmagic:dungeon_polished_gate',
@@ -339,7 +340,7 @@ onEvent('recipes', (event) => {
                 A: 'bloodmagic:dungeon_polished',
                 B: 'minecraft:stick'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_polished_gate'
+            id: `${id_prefix}bloodmagic/dungeon_polished_gate`
         },
         {
             output: 'bloodmagic:dungeon_brick_gate',
@@ -348,7 +349,7 @@ onEvent('recipes', (event) => {
                 A: 'bloodmagic:dungeon_brick1',
                 B: 'minecraft:stick'
             },
-            id: 'enigmatica:base/bloodmagic/dungeon_brick_gate'
+            id: `${id_prefix}bloodmagic/dungeon_brick_gate`
         },
         {
             output: Item.of('projectvibrantjourneys:bones', 8),
@@ -356,7 +357,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:bone'
             },
-            id: 'enigmatica:base/projectvibrantjourneys/bones'
+            id: `${id_prefix}projectvibrantjourneys/bones`
         },
         {
             output: Item.of('projectvibrantjourneys:charred_bones', 8),
@@ -365,7 +366,7 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:bone',
                 B: 'minecraft:charcoal'
             },
-            id: 'enigmatica:base/projectvibrantjourneys/charred_bones'
+            id: `${id_prefix}projectvibrantjourneys/charred_bones`
         },
         {
             output: Item.of('projectvibrantjourneys:seashells', 8),
@@ -374,7 +375,7 @@ onEvent('recipes', (event) => {
                 A: 'minecraft:prismarine_shard',
                 B: 'minecraft:nautilus_shell'
             },
-            id: 'enigmatica:base/projectvibrantjourneys/seashells'
+            id: `${id_prefix}projectvibrantjourneys/seashells`
         },
         {
             output: 'tetra:hammer_base',
@@ -384,7 +385,7 @@ onEvent('recipes', (event) => {
                 X: '#forge:circuits/basic',
                 C: 'emendatusenigmatica:enigmatic_hammer'
             },
-            id: 'enigmatica:base/tetra/hammer_base'
+            id: `${id_prefix}tetra/hammer_base`
         },
         {
             output: 'tetra:core_extractor',
@@ -394,7 +395,7 @@ onEvent('recipes', (event) => {
                 X: '#forge:circuits/basic',
                 C: 'industrialforegoing:fluid_extractor'
             },
-            id: 'enigmatica:base/tetra/core_extractor'
+            id: `${id_prefix}tetra/core_extractor`
         },
         {
             output: 'minecraft:hopper',
@@ -403,7 +404,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:ingots/iron',
                 B: '#minecraft:logs'
             },
-            id: 'enigmatica:base/minecraft/hopper'
+            id: `${id_prefix}minecraft/hopper`
         },
         {
             output: 'refinedstorageaddons:wireless_crafting_grid',
@@ -414,7 +415,7 @@ onEvent('recipes', (event) => {
                 C: 'refinedstorage:wireless_grid',
                 D: 'minecraft:crafting_table'
             },
-            id: 'enigmatica:base/refinedstorageaddons/wireless_crafting_grid_from_wireless_grid'
+            id: `${id_prefix}refinedstorageaddons/wireless_crafting_grid_from_wireless_grid`
         },
         {
             output: 'simplefarming:fish_and_chips',
@@ -424,7 +425,7 @@ onEvent('recipes', (event) => {
                 B: '#forge:grain',
                 C: 'aquaculture:fish_fillet_cooked'
             },
-            id: 'enigmatica:base/simplefarming/fish_and_chips'
+            id: `${id_prefix}simplefarming/fish_and_chips`
         },
         {
             output: 'minecraft:tube_coral_block',
@@ -432,7 +433,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:tube_coral_fan'
             },
-            id: 'enigmatica:base/minecraft/tube_coral_block_from_fan'
+            id: `${id_prefix}minecraft/tube_coral_block_from_fan`
         },
         {
             output: 'minecraft:brain_coral_block',
@@ -440,7 +441,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:brain_coral_fan'
             },
-            id: 'enigmatica:base/minecraft/brain_coral_block_from_fan'
+            id: `${id_prefix}minecraft/brain_coral_block_from_fan`
         },
         {
             output: 'minecraft:bubble_coral_block',
@@ -448,7 +449,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:bubble_coral_fan'
             },
-            id: 'enigmatica:base/minecraft/bubble_coral_block_from_fan'
+            id: `${id_prefix}minecraft/bubble_coral_block_from_fan`
         },
         {
             output: 'minecraft:fire_coral_block',
@@ -456,7 +457,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:fire_coral_fan'
             },
-            id: 'enigmatica:base/minecraft/fire_coral_block_from_fan'
+            id: `${id_prefix}minecraft/fire_coral_block_from_fan`
         },
         {
             output: 'minecraft:horn_coral_block',
@@ -464,7 +465,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:horn_coral_fan'
             },
-            id: 'enigmatica:base/minecraft/horn_coral_block_from_fan'
+            id: `${id_prefix}minecraft/horn_coral_block_from_fan`
         },
         {
             output: 'minecraft:tube_coral_block',
@@ -472,7 +473,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:tube_coral'
             },
-            id: 'enigmatica:base/minecraft/tube_coral_block'
+            id: `${id_prefix}minecraft/tube_coral_block`
         },
         {
             output: 'minecraft:brain_coral_block',
@@ -480,7 +481,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:brain_coral'
             },
-            id: 'enigmatica:base/minecraft/brain_coral_block'
+            id: `${id_prefix}minecraft/brain_coral_block`
         },
         {
             output: 'minecraft:bubble_coral_block',
@@ -488,7 +489,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:bubble_coral'
             },
-            id: 'enigmatica:base/minecraft/bubble_coral_block'
+            id: `${id_prefix}minecraft/bubble_coral_block`
         },
         {
             output: 'minecraft:fire_coral_block',
@@ -496,7 +497,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:fire_coral'
             },
-            id: 'enigmatica:base/minecraft/fire_coral_block'
+            id: `${id_prefix}minecraft/fire_coral_block`
         },
         {
             output: 'minecraft:horn_coral_block',
@@ -504,7 +505,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:horn_coral'
             },
-            id: 'enigmatica:base/minecraft/horn_coral_block'
+            id: `${id_prefix}minecraft/horn_coral_block`
         },
         {
             output: Item.of('valhelsia_structures:oak_post', 6),
@@ -512,7 +513,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:oak_log'
             },
-            id: 'enigmatica:base/valhelsia_structures/oak_post'
+            id: `${id_prefix}valhelsia_structures/oak_post`
         },
         {
             output: Item.of('valhelsia_structures:spruce_post', 6),
@@ -520,7 +521,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:spruce_log'
             },
-            id: 'enigmatica:base/valhelsia_structures/spruce_post'
+            id: `${id_prefix}valhelsia_structures/spruce_post`
         },
         {
             output: Item.of('valhelsia_structures:birch_post', 6),
@@ -528,7 +529,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:birch_log'
             },
-            id: 'enigmatica:base/valhelsia_structures/birch_post'
+            id: `${id_prefix}valhelsia_structures/birch_post`
         },
         {
             output: Item.of('valhelsia_structures:jungle_post', 6),
@@ -536,7 +537,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:jungle_log'
             },
-            id: 'enigmatica:base/valhelsia_structures/jungle_post'
+            id: `${id_prefix}valhelsia_structures/jungle_post`
         },
         {
             output: Item.of('valhelsia_structures:dark_oak_post', 6),
@@ -544,7 +545,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:dark_oak_log'
             },
-            id: 'enigmatica:base/valhelsia_structures/dark_oak_post'
+            id: `${id_prefix}valhelsia_structures/dark_oak_post`
         },
         {
             output: Item.of('valhelsia_structures:acacia_post', 6),
@@ -552,7 +553,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:acacia_log'
             },
-            id: 'enigmatica:base/valhelsia_structures/acacia_post'
+            id: `${id_prefix}valhelsia_structures/acacia_post`
         },
         {
             output: Item.of('minecraft:ladder', 4),
@@ -561,7 +562,7 @@ onEvent('recipes', (event) => {
                 A: '#forge:rods/wooden',
                 B: '#minecraft:planks'
             },
-            id: 'enigmatica:base/minecraft/ladder'
+            id: `${id_prefix}minecraft/ladder`
         },
         {
             output: 'tetra:combustion_chamber',
@@ -571,7 +572,7 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:heat_sink',
                 C: 'mekanism:ultimate_thermodynamic_conductor'
             },
-            id: 'enigmatica:base/tetra/combustion_chamber'
+            id: `${id_prefix}tetra/combustion_chamber`
         },
         {
             output: Item.of('byg:embur_hyphae', 3),
@@ -579,7 +580,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'byg:embur_pedu'
             },
-            id: 'enigmatica:base/byg/embur_hyphae'
+            id: `${id_prefix}byg/embur_hyphae`
         },
         {
             output: Item.of('byg:pollen_block', 1),
@@ -587,7 +588,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'byg:pollen_dust'
             },
-            id: 'enigmatica:base/byg/pollen_dust'
+            id: `${id_prefix}byg/pollen_dust`
         },
         {
             output: Item.of('quark:turf', 1),
@@ -595,7 +596,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'quark:turf_slab'
             },
-            id: 'enigmatica:base/quark/turf_from_slab'
+            id: `${id_prefix}quark/turf_from_slab`
         },
         {
             output: Item.of('morphtool:tool', {
@@ -631,7 +632,7 @@ onEvent('recipes', (event) => {
                 E: '#forge:gears/copper',
                 F: 'morphtool:tool'
             },
-            id: 'enigmatica:base/morphtool/tool_filled'
+            id: `${id_prefix}morphtool/tool_filled`
         }
     ];
 
@@ -713,94 +714,6 @@ onEvent('recipes', (event) => {
         event.shaped(Item.of('storagedrawers:oak_half_drawers_4', 4), ['CAC', 'AAA', 'CAC'], {
             A: wood.slabBlock,
             C: '#forge:chests'
-        });
-    });
-
-    powahTiers.forEach(function (tier) {
-        let capacitor = 'powah:capacitor_' + tier,
-            crystal = 'powah:crystal_' + tier,
-            cable = 'powah:energy_cable_' + tier;
-
-        if (tier == 'basic' || tier == 'starter') {
-            return;
-        } else if (tier == 'hardened') {
-            crystal = 'powah:steel_energized';
-        }
-
-        let lowerTiers = [],
-            i = 0,
-            j = powahTiers.indexOf(tier);
-
-        while (i < j) {
-            lowerTiers.push(powahTiers[i]);
-            i++;
-        }
-
-        event.shaped(Item.of(`powah:energy_cell_${tier}`), ['ABA', 'BCB', 'ABA'], {
-            A: crystal,
-            B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:ender_cell_${tier}`), [' A ', 'ABA', ' A '], {
-            A: crystal,
-            B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:energizing_rod_${tier}`), ['   ', 'ACA', ' B '], {
-            A: capacitor,
-            B: `powah:energy_cable_${tier}`,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:energizing_rod_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:furnator_${tier}`), ['AAA', 'BCB', 'A A'], {
-            A: crystal,
-            B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:furnator_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:magmator_${tier}`), ['AAA', 'BCB', 'A A'], {
-            A: crystal,
-            B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:magmator_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:thermo_generator_${tier}`), [' A ', 'BCB'], {
-            A: crystal,
-            B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:thermo_generator_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:solar_panel_${tier}`), ['BCB', 'AAA'], {
-            A: crystal,
-            B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:solar_panel_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:energy_hopper_${tier}`), ['ABA'], {
-            A: capacitor,
-            B: Ingredient.of(lowerTiers.map((item) => `powah:energy_hopper_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:energy_discharger_${tier}`), [' A ', ' B ', ' A '], {
-            A: capacitor,
-            B: Ingredient.of(lowerTiers.map((item) => `powah:energy_discharger_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:battery_${tier}`), [' A ', 'BCB', ' B '], {
-            A: crystal,
-            B: capacitor,
-            C: Ingredient.of(lowerTiers.map((item) => `powah:battery_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:reactor_${tier}`, 4), ['BAB', 'A A', 'BAB'], {
-            A: capacitor,
-            B: Ingredient.of(lowerTiers.map((item) => `powah:reactor_${item}`))
-        });
-
-        event.shaped(Item.of(`powah:ender_gate_${tier}`, 4), ['BAB', 'A A', 'BAB'], {
-            A: cable,
-            B: Ingredient.of(lowerTiers.map((item) => `powah:ender_gate_${item}`))
         });
     });
 

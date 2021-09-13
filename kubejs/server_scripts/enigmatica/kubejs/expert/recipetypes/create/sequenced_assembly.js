@@ -83,7 +83,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: 'pneumaticcraft:plastic',
-            outputs: [Item.of('powah:capacitor_basic', 4)],
+            outputs: [Item.of('powah:capacitor_basic_large', 2)],
             transitionalItem: 'pneumaticcraft:plastic',
             loops: 4,
             sequence: [
@@ -108,7 +108,7 @@ onEvent('recipes', (event) => {
                     output: 'pneumaticcraft:plastic'
                 }
             ],
-            id: 'powah:crafting/capacitor_basic'
+            id: 'powah:crafting/capacitor_basic_large'
         }
     ];
 

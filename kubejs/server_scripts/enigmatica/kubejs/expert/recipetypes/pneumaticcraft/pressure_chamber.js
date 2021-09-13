@@ -2,58 +2,85 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/pneumaticcraft/pressure_chamber/';
     const recipes = [
         {
             inputs: [
-                { tag: 'forge:ingots/steel', count: 2, type: 'pneumaticcraft:stacked_item' },
-                { tag: 'forge:tar', count: 2, type: 'pneumaticcraft:stacked_item' },
-                { tag: 'forge:obsidian', count: 1, type: 'pneumaticcraft:stacked_item' }
+                { tag: 'forge:ingots/steel', count: 2 },
+                { tag: 'forge:tar', count: 2 },
+                { tag: 'forge:obsidian', count: 1 }
             ],
             pressure: 2.0,
-            results: [{ item: 'pneumaticcraft:ingot_iron_compressed', count: 4, type: 'pneumaticcraft:stacked_item' }],
+            results: [{ item: 'pneumaticcraft:ingot_iron_compressed', count: 4 }],
             id: 'pneumaticcraft:pressure_chamber/compressed_iron_ingot'
         },
         {
             inputs: [
-                { tag: 'forge:storage_blocks/steel', count: 2, type: 'pneumaticcraft:stacked_item' },
-                { tag: 'forge:tar', count: 18, type: 'pneumaticcraft:stacked_item' },
-                { tag: 'forge:obsidian', count: 9, type: 'pneumaticcraft:stacked_item' }
+                { tag: 'forge:storage_blocks/steel', count: 2 },
+                { tag: 'forge:tar', count: 18 },
+                { tag: 'forge:obsidian', count: 9 }
             ],
             pressure: 2.0,
-            results: [{ item: 'pneumaticcraft:compressed_iron_block', count: 4, type: 'pneumaticcraft:stacked_item' }],
+            results: [{ item: 'pneumaticcraft:compressed_iron_block', count: 4 }],
             id: 'pneumaticcraft:pressure_chamber/compressed_iron_block'
         },
         {
-            inputs: [{ item: 'minecraft:snow_block', count: 4, type: 'pneumaticcraft:stacked_item' }],
+            inputs: [{ item: 'minecraft:snow_block', count: 4 }],
             pressure: 1.5,
             results: [{ item: 'betterendforge:dense_snow', count: 1 }],
-            id: 'pneumaticcraft:pressure_chamber/betterendforge/dense_snow'
+            id: `${id_prefix}dense_snow`
         },
         {
-            inputs: [{ item: 'betterendforge:dense_snow', count: 4, type: 'pneumaticcraft:stacked_item' }],
+            inputs: [{ item: 'betterendforge:dense_snow', count: 4 }],
             pressure: 1.5,
             results: [{ item: 'minecraft:ice', count: 1 }],
             id: 'pneumaticcraft:pressure_chamber/ice'
         },
         {
             inputs: [
-                { tag: 'forge:ingots/pewter', count: 4, type: 'pneumaticcraft:stacked_item' },
-                { item: 'refinedstorage:quartz_enriched_iron', count: 4, type: 'pneumaticcraft:stacked_item' },
-                { item: 'tconstruct:seared_brick', count: 4, type: 'pneumaticcraft:stacked_item' },
+                { tag: 'forge:ingots/pewter', count: 4 },
+                { item: 'refinedstorage:quartz_enriched_iron', count: 4 },
+                { item: 'tconstruct:seared_brick', count: 4 },
                 { item: 'thermal:machine_frame', count: 1 }
             ],
             pressure: 2.5,
-            results: [{ item: 'refinedstorage:machine_casing', count: 2, type: 'pneumaticcraft:stacked_item' }],
+            results: [{ item: 'refinedstorage:machine_casing', count: 2 }],
             id: 'refinedstorage:machine_casing'
+        },
+        {
+            inputs: [
+                { item: 'powah:blank_card', count: 1 },
+                { tag: 'mekanism:enriched/redstone', count: 1 },
+                { item: 'powah:ender_core', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'powah:binding_card', count: 1 }],
+            id: 'powah:crafting/binding_card'
+        },
+        {
+            inputs: [
+                { tag: 'forge:alloys/ultimate', count: 1 },
+                { item: 'powah:dielectric_paste', count: 1 },
+                { item: 'rftoolsbase:infused_enderpearl', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'powah:aerial_pearl', count: 1 }],
+            id: 'powah:crafting/aerial_pearl'
         }
     ];
 
     recipes.forEach((recipe) => {
+        let ingredients = [];
+        recipe.inputs.forEach((input) => {
+            input.type = 'pneumaticcraft:stacked_item';
+            ingredients.push(input);
+        });
+
+        console.log(ingredients);
         event
             .custom({
                 type: 'pneumaticcraft:pressure_chamber',
-                inputs: recipe.inputs,
+                inputs: ingredients,
                 pressure: recipe.pressure,
                 results: recipe.results
             })

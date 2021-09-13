@@ -38,6 +38,9 @@ onEvent('recipes', (event) => {
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',
+        'powah:crafting/capacitor_basic',
+        'powah:crafting/capacitor_basic_tiny',
+        'powah:crafting/thermoelectric_plate',
 
         'quark:building/crafting/candles/candle_basic',
         'refinedstorage:quartz_enriched_iron',
