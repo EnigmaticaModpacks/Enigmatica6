@@ -80,6 +80,35 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: `${id_prefix}book_from_pattern`
+        },
+        {
+            input: 'pneumaticcraft:plastic',
+            outputs: [Item.of('powah:capacitor_basic', 4)],
+            transitionalItem: 'pneumaticcraft:plastic',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['pneumaticcraft:plastic', '#forge:plates/aluminum'],
+                    output: 'pneumaticcraft:plastic'
+                },
+                {
+                    type: 'deploying',
+                    input: ['pneumaticcraft:plastic', 'powah:dielectric_paste'],
+                    output: 'pneumaticcraft:plastic'
+                },
+                {
+                    type: 'deploying',
+                    input: ['pneumaticcraft:plastic', '#forge:plates/signalum'],
+                    output: 'pneumaticcraft:plastic'
+                },
+                {
+                    type: 'pressing',
+                    input: 'pneumaticcraft:plastic',
+                    output: 'pneumaticcraft:plastic'
+                }
+            ],
+            id: 'powah:crafting/capacitor_basic'
         }
     ];
 

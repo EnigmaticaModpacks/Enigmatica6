@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/pneumaticcraft/thermo_plant/';
     const recipes = [
         {
             ingredients: [
@@ -10,49 +11,14 @@ onEvent('recipes', (event) => {
             result: {
                 item: 'tetra:magmatic_cell',
                 count: 1
-            }
-        },
-        {
-            ingredients: [{ tag: 'forge:storage_blocks/iron_copper' }, { tag: 'forge:storage_blocks/gold' }],
-            energy: '100000',
-            result: {
-                item: 'powah:energized_steel_block',
-                count: 2
-            }
-        },
-        {
-            ingredients: [{ item: 'botania:blaze_block' }],
-            energy: '900000',
-            result: {
-                item: 'powah:blazing_crystal_block',
-                count: 1
-            }
-        },
-        {
-            ingredients: [{ tag: 'forge:storage_blocks/diamond' }],
-            energy: '3000000',
-            result: {
-                item: 'powah:niotic_crystal_block',
-                count: 1
-            }
-        },
-        {
-            ingredients: [{ tag: 'forge:storage_blocks/emerald' }],
-            energy: '10000000',
-            result: {
-                item: 'powah:spirited_crystal_block',
-                count: 1
-            }
+            },
+            id: `${id_prefix}magmatic_cell`
         }
     ];
 
     recipes.forEach((recipe) => {
-        event.custom({
-            type: 'powah:energizing',
-            ingredients: recipe.ingredients,
-            energy: recipe.energy,
-            result: recipe.result
-        });
+        recipe.type = 'powah:energizing';
+        event.custom(recipe).id(recipe.id);
     });
 
     var ingots = [{ tag: 'forge:ingots/uranium' }];
@@ -68,7 +34,8 @@ onEvent('recipes', (event) => {
             result: {
                 item: 'powah:uraninite',
                 count: i
-            }
+            },
+            id: `${id_prefix}uraninite_${i}`
         });
         ingots.push({ tag: 'forge:ingots/uranium' });
 
@@ -79,7 +46,8 @@ onEvent('recipes', (event) => {
             result: {
                 item: 'powah:uraninite_block',
                 count: i
-            }
+            },
+            id: `${id_prefix}uraninite_block_${i}`
         });
         blocks.push({ tag: 'forge:storage_blocks/uranium' });
     }

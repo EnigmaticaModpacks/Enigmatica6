@@ -108,6 +108,16 @@ onEvent('recipes', (event) => {
                 G: 'refinedstorage:machine_casing'
             },
             id: 'refinedstorage:disk_drive'
+        },
+        {
+            output: 'powah:energizing_orb',
+            pattern: [' AAA ', ' A A ', ' CBC ', 'CCCCC'],
+            key: {
+                A: 'atum:crystal_glass',
+                B: 'thermal:machine_frame',
+                C: 'atum:ceramic_slab_black'
+            },
+            id: 'powah:crafting/energizing_orb'
         }
     ];
 

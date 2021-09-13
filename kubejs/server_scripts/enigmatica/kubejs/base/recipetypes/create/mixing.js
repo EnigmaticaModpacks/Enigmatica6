@@ -6,10 +6,6 @@ onEvent('recipes', (event) => {
                 output: Item.of('immersiveengineering:treated_wood_horizontal', 2)
             },
             {
-                inputs: ['#minecraft:coals', '#minecraft:coals', '#forge:clay', Fluid.of('minecraft:lava', 500)],
-                output: Item.of('powah:dielectric_paste', 16)
-            },
-            {
                 inputs: [
                     '#forge:clay',
                     '#forge:gravel',

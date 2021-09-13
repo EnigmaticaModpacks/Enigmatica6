@@ -32,8 +32,13 @@ onEvent('recipes', (event) => {
         'pedestals:upgrades/recycler',
         'pedestals:upgrades/rfexpgen',
         'pedestals:upgrades/rffuelgen',
+
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+
+        'powah:crafting/dielectric_paste_2',
+        'powah:energizing/blazing_crystal_2',
+
         'quark:building/crafting/candles/candle_basic',
         'refinedstorage:quartz_enriched_iron',
         'tconstruct:smeltery/scorched/scorched_brick',
