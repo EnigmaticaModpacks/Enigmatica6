@@ -7,6 +7,12 @@ onEvent('recipes', (event) => {
             output: 'kubejs:smoldering_lapis_lazuli_compound',
             input: 'kubejs:coarse_lapis_lazuli_compound',
             slag: '#forge:slag'
+        },
+        {
+            output: 'industrialforegoing:plastic',
+            input: 'industrialforegoing:dryrubber',
+            slag: '#forge:slag',
+            id: 'industrialforegoing:plastic'
         }
     ];
 
