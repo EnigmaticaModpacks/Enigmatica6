@@ -25,10 +25,15 @@ onEvent('item.registry', (event) => {
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
-        'spirit_gate'
+        'spirit_heat_exchanger'
     ];
 
-    const ritualDummies = ['craft_spirit_gate', 'summon_pharaoh', 'craft_magical_feathers', 'craft_magicfeather'];
+    const ritualDummies = [
+        'craft_spirit_heat_exchanger',
+        'summon_pharaoh',
+        'craft_magical_feathers',
+        'craft_magicfeather'
+    ];
 
     const assemblyTableItems = [
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },

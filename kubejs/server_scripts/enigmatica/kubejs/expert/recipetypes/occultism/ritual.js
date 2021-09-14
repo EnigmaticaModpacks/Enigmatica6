@@ -785,7 +785,7 @@ onEvent('recipes', (event) => {
                 pentacle_id: 'occultism:craft_foliot',
                 duration: 10,
                 ritual_dummy: {
-                    item: 'kubejs:craft_spirit_gate'
+                    item: 'kubejs:craft_spirit_heat_exchanger'
                 },
                 ingredients: [
                     { item: 'ars_nouveau:void_jar' },
@@ -797,8 +797,8 @@ onEvent('recipes', (event) => {
                     { tag: 'botania:runes/water' },
                     { tag: 'botania:runes/water' }
                 ],
-                result: { item: 'kubejs:spirit_gate' },
-                id: `${id_prefix}spirit_gate`
+                result: { item: 'kubejs:spirit_heat_exchanger' },
+                id: `${id_prefix}spirit_heat_exchanger`
             }
         ]
     };

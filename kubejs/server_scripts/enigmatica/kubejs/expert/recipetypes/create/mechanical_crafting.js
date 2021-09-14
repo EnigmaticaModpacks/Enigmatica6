@@ -148,7 +148,7 @@ onEvent('recipes', (event) => {
                 J: 'xnet:advanced_connector_blue',
                 K: 'xnet:netcable_blue',
                 L: 'pneumaticcraft:heat_pipe',
-                M: 'kubejs:spirit_gate',
+                M: 'kubejs:spirit_heat_exchanger',
                 N: 'xnet:controller',
                 O: `powah:furnator_${tier}`,
                 P: 'create:fluid_pipe'
