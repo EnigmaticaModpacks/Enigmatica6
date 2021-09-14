@@ -67,25 +67,6 @@ onEvent('recipes', (event) => {
 
         recipes.push(
             {
-                output: Item.of(`powah:energy_cell_${tier}`),
-                pattern: ['ABA', 'BCB', 'ABA'],
-                key: {
-                    A: crystal,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:energy_cell_${item}`))
-                },
-                id: `${id_prefix}powah/energy_cell_${tier}`
-            },
-            {
-                output: Item.of(`powah:ender_cell_${tier}`),
-                pattern: [' A ', 'ABA', ' A '],
-                key: {
-                    A: crystal,
-                    B: Ingredient.of(lowerTiers.map((item) => `powah:ender_cell_${item}`))
-                },
-                id: `${id_prefix}powah/ender_cell_${tier}`
-            },
-            {
                 output: Item.of(`powah:energizing_rod_${tier}`),
                 pattern: ['   ', 'ACA', ' B '],
                 key: {
@@ -126,16 +107,6 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}powah/thermo_generator_${tier}`
             },
             {
-                output: Item.of(`powah:solar_panel_${tier}`),
-                pattern: ['BCB', 'AAA'],
-                key: {
-                    A: crystal,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:solar_panel_${item}`))
-                },
-                id: `${id_prefix}powah/solar_panel_${tier}`
-            },
-            {
                 output: Item.of(`powah:energy_hopper_${tier}`),
                 pattern: ['ABA'],
                 key: {
@@ -154,14 +125,13 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}powah/energy_discharger_${tier}`
             },
             {
-                output: Item.of(`powah:battery_${tier}`),
-                pattern: [' A ', 'BCB', ' B '],
+                output: Item.of(`powah:ender_gate_${tier}`, 4),
+                pattern: ['BAB', 'A A', 'BAB'],
                 key: {
-                    A: crystal,
-                    B: capacitor,
-                    C: Ingredient.of(lowerTiers.map((item) => `powah:battery_${item}`))
+                    A: cable,
+                    B: Ingredient.of(lowerTiers.map((item) => `powah:ender_gate_${item}`))
                 },
-                id: `${id_prefix}powah/battery_${tier}`
+                id: `${id_prefix}powah/ender_gate_${tier}`
             },
             {
                 output: Item.of(`powah:reactor_${tier}`, 4),
@@ -171,15 +141,6 @@ onEvent('recipes', (event) => {
                     B: Ingredient.of(lowerTiers.map((item) => `powah:reactor_${item}`))
                 },
                 id: `${id_prefix}powah/reactor_${tier}`
-            },
-            {
-                output: Item.of(`powah:ender_gate_${tier}`, 4),
-                pattern: ['BAB', 'A A', 'BAB'],
-                key: {
-                    A: cable,
-                    B: Ingredient.of(lowerTiers.map((item) => `powah:ender_gate_${item}`))
-                },
-                id: `${id_prefix}powah/ender_gate_${tier}`
             }
         );
     });

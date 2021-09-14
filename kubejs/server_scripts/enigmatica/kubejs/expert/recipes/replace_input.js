@@ -53,11 +53,6 @@ onEvent('recipes', (event) => {
             replaceTarget: { mod: 'powah' },
             toReplace: 'powah:capacitor_basic',
             replaceWith: 'powah:capacitor_basic_large'
-        },
-        {
-            replaceTarget: { mod: 'powah' },
-            toReplace: '#powah:energy_hopper',
-            replaceWith: 'thermal:rf_coil'
         }
     ];
 

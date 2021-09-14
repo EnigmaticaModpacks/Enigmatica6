@@ -48,9 +48,13 @@ onEvent('recipes', (event) => {
         if (tier == 'starter') {
             return;
         }
-        let capacitor = `powah:capacitor_${tier}`;
+        let capacitor = `powah:capacitor_${tier}`,
+            crystal = `powah:crystal_${tier}`;
+
         if (tier == 'basic') {
             capacitor = `powah:capacitor_${tier}_large`;
+        } else if (tier == 'hardened') {
+            crystal = 'powah:steel_energized';
         }
 
         let wire_coil = 'immersiveengineering:coil_lv';
@@ -58,6 +62,15 @@ onEvent('recipes', (event) => {
             wire_coil = 'immersiveengineering:coil_mv';
         } else if (tier == 'spirited' || tier == 'nitro') {
             wire_coil = 'immersiveengineering:coil_hv';
+        }
+
+        let lowerTiers = [],
+            i = 0,
+            j = powahTiers.indexOf(tier);
+
+        while (i < j) {
+            lowerTiers.push(powahTiers[i]);
+            i++;
         }
 
         recipes.push(
@@ -106,6 +119,17 @@ onEvent('recipes', (event) => {
                     D: 'powah:dielectric_rod'
                 },
                 id: `powah:crafting/energy_discharger_${tier}`
+            },
+            {
+                output: `powah:energy_hopper_${tier}`,
+                pattern: ['BDB', 'BCB', 'DAD'],
+                key: {
+                    A: 'thermal:rf_coil',
+                    B: capacitor,
+                    C: 'powah:dielectric_casing',
+                    D: 'powah:dielectric_rod'
+                },
+                id: `powah:crafting/energy_hopper_${tier}`
             }
         );
 
