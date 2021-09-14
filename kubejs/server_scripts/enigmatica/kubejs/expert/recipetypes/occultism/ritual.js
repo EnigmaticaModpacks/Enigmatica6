@@ -788,7 +788,7 @@ onEvent('recipes', (event) => {
                     item: 'kubejs:craft_spirit_gate'
                 },
                 ingredients: [
-                    { item: 'powah:thermoelectric_plate' },
+                    { item: 'supplementaries:jar' },
                     { item: 'atum:shu_godshard' },
                     { item: 'powah:thermoelectric_plate' },
                     { item: 'atum:shu_godshard' },
