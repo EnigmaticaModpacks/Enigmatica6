@@ -98,7 +98,6 @@ onEvent('recipes', (event) => {
             ingredients.push(input);
         });
 
-        console.log(ingredients);
         event
             .custom({
                 type: 'pneumaticcraft:pressure_chamber',
