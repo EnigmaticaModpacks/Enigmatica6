@@ -177,12 +177,7 @@ onEvent('recipes', (event) => {
                 id: 'occultism:crafting/storage_controller'
             },
             {
-                inputs: [
-                    'bloodmagic:dungeon_stone',
-                    '#forge:ingots/tainted_gold',
-                    '#forge:gems/nitro',
-                    '#forge:gems/nitro'
-                ],
+                inputs: ['bloodmagic:dungeon_stone', '#forge:ingots/tainted_gold', '#forge:gems/nitro'],
                 output: 'bloodmagic:crystalline_resonator',
                 minimumDrain: 1200.0,
                 drain: 200.0,

@@ -3,12 +3,7 @@ onEvent('recipes', (event) => {
     var data = {
         recipes: [
             {
-                inputs: [
-                    '#forge:stone',
-                    '#forge:rods/blaze',
-                    'bloodmagic:explosivepowder',
-                    'bloodmagic:explosivepowder'
-                ],
+                inputs: ['#forge:stone', '#forge:rods/blaze', 'bloodmagic:explosivepowder'],
                 output: 'bloodmagic:primitive_explosive_cell',
                 minimumDrain: 1200.0,
                 drain: 200.0,
