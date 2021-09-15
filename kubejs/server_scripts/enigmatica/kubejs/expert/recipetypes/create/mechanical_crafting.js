@@ -108,8 +108,54 @@ onEvent('recipes', (event) => {
                 G: 'refinedstorage:machine_casing'
             },
             id: 'refinedstorage:disk_drive'
+        },
+        {
+            output: 'powah:energizing_orb',
+            pattern: [' AAA ', ' A A ', ' CBC ', 'CCCCC'],
+            key: {
+                A: 'atum:crystal_glass',
+                B: 'thermal:machine_frame',
+                C: 'atum:ceramic_slab_black'
+            },
+            id: 'powah:crafting/energizing_orb'
         }
     ];
+
+    powahTiers.forEach(function (tier) {
+        if (tier == 'starter') {
+            return;
+        }
+        let casingMaterial = `#forge:storage_blocks/${tier}`;
+        if (tier == 'basic') {
+            casingMaterial = '#forge:storage_blocks/lead';
+        } else if (tier == 'hardened') {
+            casingMaterial = '#forge:storage_blocks/energized_steel';
+        }
+
+        recipes.push({
+            output: Item.of(`powah:reactor_${tier}`, 36),
+            pattern: ['ABBBA', 'CPPPP', 'CDDDE', 'FGMLE', 'NGOKE', 'HIIKJ', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: casingMaterial,
+                C: `powah:energy_cell_${tier}`,
+                D: `powah:thermo_generator_${tier}`,
+                E: 'thermal:fluid_cell_frame',
+                F: 'xnet:advanced_connector_green',
+                G: 'xnet:netcable_green',
+                H: 'xnet:advanced_connector_red',
+                I: 'xnet:netcable_red',
+                J: 'xnet:advanced_connector_blue',
+                K: 'xnet:netcable_blue',
+                L: 'pneumaticcraft:heat_pipe',
+                M: 'kubejs:spirit_heat_exchanger',
+                N: 'xnet:controller',
+                O: `powah:furnator_${tier}`,
+                P: 'create:fluid_pipe'
+            },
+            id: `powah:crafting/reactor_${tier}`
+        });
+    });
 
     recipes.forEach((recipe) => {
         if (recipe.id) {

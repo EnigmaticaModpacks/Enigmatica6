@@ -11,6 +11,10 @@ onEvent('recipes', (event) => {
         {
             inputs: ['#forge:clay', '#forge:gravel', '#forge:sand', '#forge:sand', Fluid.of('minecraft:water', 4000)],
             output: Fluid.of('immersiveengineering:concrete', 4000)
+        },
+        {
+            inputs: ['#minecraft:coals', '#minecraft:coals', '#forge:clay', Fluid.of('minecraft:lava', 500)],
+            output: Item.of('powah:dielectric_paste', 16)
         }
     ];
 

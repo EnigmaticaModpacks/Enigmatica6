@@ -48,6 +48,11 @@ onEvent('recipes', (event) => {
             filter: { id: '/wilden_summon/' },
             toReplace: 'minecraft:lapis_block',
             replaceWith: 'meetyourfight:velvet_fortune'
+        },
+        {
+            replaceTarget: { mod: 'powah' },
+            toReplace: 'powah:capacitor_basic',
+            replaceWith: 'powah:capacitor_basic_large'
         }
     ];
 
