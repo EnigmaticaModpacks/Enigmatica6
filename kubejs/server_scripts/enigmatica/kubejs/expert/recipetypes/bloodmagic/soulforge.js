@@ -79,68 +79,6 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_sword',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulsword'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientsword'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_axe',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulaxe'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientaxe'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_pickaxe',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulpickaxe', {
-                    'occultism:otherworldToolTier': 2
-                }),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientpickaxe'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_shovel',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulshovel'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientshovel'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_hoe',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulscythe'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientscythe'
-            },
-            {
-                inputs: [
                     'atum:nuit_godshard',
                     'eidolon:soul_shard',
                     'astralsorcery:nocturnal_powder',
@@ -182,6 +120,45 @@ onEvent('recipes', (event) => {
                 minimumDrain: 1200.0,
                 drain: 200.0,
                 id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
+            },
+
+            /// Patchouli Removals
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulsword'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientsword'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulaxe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientaxe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulpickaxe', {
+                    'occultism:otherworldToolTier': 2
+                }),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientpickaxe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulshovel'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientshovel'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulscythe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientscythe'
             }
         ]
     };

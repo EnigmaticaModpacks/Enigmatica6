@@ -32,7 +32,12 @@ onEvent('item.registry', (event) => {
         'craft_spirit_heat_exchanger',
         'summon_pharaoh',
         'craft_magical_feathers',
-        'craft_magicfeather'
+        'craft_magicfeather',
+        'craft_soulsword',
+        'craft_soulaxe',
+        'craft_soulpickaxe',
+        'craft_soulshovel',
+        'craft_soulscythe'
     ];
 
     const assemblyTableItems = [

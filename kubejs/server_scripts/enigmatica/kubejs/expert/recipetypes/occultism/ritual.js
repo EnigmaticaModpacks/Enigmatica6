@@ -692,7 +692,7 @@ onEvent('recipes', (event) => {
             /// Custom Rituals
             {
                 type: 'occultism:ritual',
-                ritual_type: 'occultism:craft',
+                ritual_type: 'occultism:craft_with_spirit_name',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
                 },
@@ -775,10 +775,9 @@ onEvent('recipes', (event) => {
                 result: { item: 'occultism:jei_dummy/none' },
                 id: `${id_prefix}pharaoh`
             },
-
             {
                 type: 'occultism:ritual',
-                ritual_type: 'occultism:craft',
+                ritual_type: 'occultism:craft_with_spirit_name',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
                 },
@@ -799,6 +798,115 @@ onEvent('recipes', (event) => {
                 ],
                 result: { item: 'kubejs:spirit_heat_exchanger' },
                 id: `${id_prefix}spirit_heat_exchanger`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft_with_spirit_name',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:craft_djinni',
+                duration: 10,
+                ritual_dummy: {
+                    item: 'kubejs:craft_soulsword'
+                },
+                ingredients: [
+                    { item: 'undergarden:forgotten_sword' },
+                    { item: 'bloodmagic:soulgempetty' },
+                    { tag: 'botania:runes/helheim' },
+                    { tag: 'forge:ingots/iesnium' }
+                ],
+                result: { item: 'bloodmagic:soulsword' },
+                id: `${id_prefix}soulsword`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft_with_spirit_name',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:craft_djinni',
+                duration: 10,
+                ritual_dummy: {
+                    item: 'kubejs:craft_soulaxe'
+                },
+                ingredients: [
+                    { item: 'undergarden:forgotten_axe' },
+                    { item: 'bloodmagic:soulgempetty' },
+                    { tag: 'botania:runes/helheim' },
+                    { tag: 'forge:ingots/iesnium' }
+                ],
+                result: { item: 'bloodmagic:soulaxe' },
+                id: `${id_prefix}soulaxe`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft_with_spirit_name',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:craft_djinni',
+                duration: 10,
+                ritual_dummy: {
+                    item: 'kubejs:craft_soulpickaxe'
+                },
+                ingredients: [
+                    { item: 'undergarden:forgotten_pickaxe' },
+                    { item: 'bloodmagic:soulgempetty' },
+                    { tag: 'botania:runes/helheim' },
+                    { tag: 'forge:ingots/iesnium' }
+                ],
+                result: {
+                    item: 'bloodmagic:soulpickaxe',
+                    nbt: {
+                        'occultism:otherworldToolTier': 2
+                    }
+                },
+                id: `${id_prefix}soulpickaxe`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft_with_spirit_name',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:craft_djinni',
+                duration: 10,
+                ritual_dummy: {
+                    item: 'kubejs:craft_soulshovel'
+                },
+                ingredients: [
+                    { item: 'undergarden:forgotten_shovel' },
+                    { item: 'bloodmagic:soulgempetty' },
+                    { tag: 'botania:runes/helheim' },
+                    { tag: 'forge:ingots/iesnium' }
+                ],
+                result: {
+                    item: 'bloodmagic:soulshovel'
+                },
+                id: `${id_prefix}soulshovel`
+            },
+            {
+                type: 'occultism:ritual',
+                ritual_type: 'occultism:craft_with_spirit_name',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:craft_djinni',
+                duration: 10,
+                ritual_dummy: {
+                    item: 'kubejs:craft_soulscythe'
+                },
+                ingredients: [
+                    { item: 'undergarden:forgotten_hoe' },
+                    { item: 'bloodmagic:soulgempetty' },
+                    { tag: 'botania:runes/helheim' },
+                    { tag: 'forge:ingots/iesnium' }
+                ],
+                result: {
+                    item: 'bloodmagic:soulscythe'
+                },
+                id: `${id_prefix}soulscythe`
             }
         ]
     };

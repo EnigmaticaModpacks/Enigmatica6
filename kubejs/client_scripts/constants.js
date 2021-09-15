@@ -451,6 +451,16 @@ const recipesToHide = [
     {
         category: 'bloodmagic:alchemytable',
         recipes_by_id: ['bloodmagic:alchemytable/basic_cutting_fluid_sigil']
+    },
+    {
+        category: 'bloodmagic:soulforge',
+        recipes_by_id: [
+            'bloodmagic:soulforge/sentientsword',
+            'bloodmagic:soulforge/sentientaxe',
+            'bloodmagic:soulforge/sentientpickaxe',
+            'bloodmagic:soulforge/sentientshovel',
+            'bloodmagic:soulforge/sentientscythe'
+        ]
     }
 ];
 
