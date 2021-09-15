@@ -79,7 +79,7 @@
           .overlay()
           .showText(60)
           .colored(PonderPalette.WHITE)
-          .text(`The Forge Hammer can be found in word in underground Tetra, frequently as part of a functional multiblock.`)
+          .text(`The Forge Hammer can be found in Tetra structures, found underground in cold biomes.`)
           .independent(60);
           scene.idle(25);
 
