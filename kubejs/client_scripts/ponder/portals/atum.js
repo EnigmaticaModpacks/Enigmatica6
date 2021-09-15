@@ -31,7 +31,7 @@ onEvent('ponder.tag', (event) => {
             for (let i = 1; i < 6; i++){
                 scene.world().showSection(util.select().fromTo(0, i, 0, 7, i, 7), Facing.south);
                 scene.idle(20);
-        }
+            }
 
             scene
             .overlay()
