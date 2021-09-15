@@ -3,14 +3,6 @@
 // TODO: the text on this one... isn't the best, so it'd be
 //  great if someone could help patch this up before release!
 
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:industrial_foregoing', [
-        'industrialforegoing:laser_drill',
-        'industrialforegoing:ore_laser_base',
-        'industrialforegoing:fluid_laser_base'
-    ]);
-});
-
 onEvent('ponder.registry', (event) => {
     let badOres = Ingredient.of([
         '#forge:ores/iron',

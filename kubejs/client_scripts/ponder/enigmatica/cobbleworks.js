@@ -1,8 +1,4 @@
 // priority: 9
-
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:basics', 'minecraft:cobblestone');
-  });
   
   var itemsToPonder = generatableCobblestone;
   itemsToPonder.push('minecraft:cobblestone');

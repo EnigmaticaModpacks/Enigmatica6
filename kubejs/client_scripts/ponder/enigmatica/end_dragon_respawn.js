@@ -1,8 +1,4 @@
 // priority: 9
-
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:basics', 'minecraft:end_crystal');
-  });
   
   onEvent('ponder.registry', (event) => {
     event

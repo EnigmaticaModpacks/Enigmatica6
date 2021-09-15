@@ -1,8 +1,4 @@
 // priority: 9
-
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:basics', 'tetra:hammer_base');
-  });
   
   onEvent('ponder.registry', (event) => {
     event
@@ -53,9 +49,9 @@ onEvent('ponder.tag', (event) => {
           .text(`Install Thermal Cells on both sides of the Forge Hammer.`)
           .independent(90);
           scene.idle(10);
-          scene.overlay().showControls(new PonderInput([1.5, 3.5, 1], PonderPointing.RIGHT).showing(PonderIcons.I_CONFIG_OPEN).withItem('tetra:magmatic_cell'), 30);
+          scene.overlay().showControls(new PonderInput([1.5, 3.5, 1], PonderPointing.RIGHT).showing(PonderIcons.I_RMB).withItem('tetra:magmatic_cell'), 30);
           scene.idle(10);
-          scene.overlay().showControls(new PonderInput([1.5, 3, 2.5], PonderPointing.LEFT).showing(PonderIcons.I_CONFIG_OPEN).withItem('tetra:magmatic_cell'), 40);
+          scene.overlay().showControls(new PonderInput([1.5, 3, 2.5], PonderPointing.LEFT).showing(PonderIcons.I_RMB).withItem('tetra:magmatic_cell'), 40);
           scene.idle(50);
 
           scene.addKeyframe();
@@ -67,9 +63,9 @@ onEvent('ponder.tag', (event) => {
           .text(`Install upgrades for the forge hammer (such as the combustion chamber) on both sides of the Forge Hammer.`)
           .independent(90);
           scene.idle(10);
-          scene.overlay().showControls(new PonderInput([2.25, 3.25, 1.5], PonderPointing.RIGHT).showing(PonderIcons.I_CONFIG_OPEN).withItem('tetra:combustion_chamber'), 30);
+          scene.overlay().showControls(new PonderInput([2.25, 3.25, 1.5], PonderPointing.RIGHT).showing(PonderIcons.I_RMB).withItem('tetra:combustion_chamber'), 30);
           scene.idle(10);
-          scene.overlay().showControls(new PonderInput([1.5, 3, 2], PonderPointing.LEFT).showing(PonderIcons.I_CONFIG_OPEN).withItem('tetra:planar_stabilizer'), 40);
+          scene.overlay().showControls(new PonderInput([1.5, 3, 2], PonderPointing.LEFT).showing(PonderIcons.I_RMB).withItem('tetra:planar_stabilizer'), 40);
           scene.idle(50);
 
           scene
