@@ -3,9 +3,9 @@
 const categories = [
   {
     id: 'enigmatica:industrial_foregoing',
-    cat_item_id:'industrialforegoing:latex_processing_unit',
+    category_item_id:'industrialforegoing:latex_processing_unit',
     title:'Industrial Foregoing',
-    desc:'Learn more about the Industrial Foregoing mod and its intriguing mechanics!',
+    description:'Learn more about the Industrial Foregoing mod and its intriguing mechanics!',
     items: [
       'industrialforegoing:ore_laser_base',
       'industrialforegoing:latex_processing_unit'
@@ -13,9 +13,9 @@ const categories = [
   },
   {
     id: 'enigmatica:basics',
-    cat_item_id:'minecraft:cobblestone',
+    category_item_id:'minecraft:cobblestone',
     title:'Basic Mechanics',
-    desc:'Learn about some basic (sometimes vanilla!) mechanics that will come in handy.',
+    description:'Learn about some basic (sometimes vanilla!) mechanics that will come in handy.',
     items: [
       'minecraft:cobblestone',
       'minecraft:stone',
@@ -25,9 +25,9 @@ const categories = [
   },
   {
     id: 'enigmatica:portals',
-    cat_item_id:'undergarden:catalyst',
+    category_item_id:'undergarden:catalyst',
     title:'Traveling with Portals',
-    desc:'Learn how to construct some of the key portals in Enigmatica.',
+    description:'Learn how to construct some of the key portals in Enigmatica.',
     items: [
       'undergarden:catalyst',
       'atum:scarab'
@@ -37,7 +37,7 @@ const categories = [
 
 onEvent('ponder.tag.registry', (event) => {
   categories.forEach((category) => {
-    event.create(category.id, category.cat_item_id, category.title, category.desc)
+    event.create(category.id, category.category_item_id, category.title, category.description)
   })
 });
 
