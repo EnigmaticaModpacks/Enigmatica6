@@ -63,6 +63,7 @@ onEvent('recipes', (event) => {
         'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+        'astralsorcery:shaped/marble/marble_slab',
 
         'betterendforge:gunpowder_from_sulphur',
 
