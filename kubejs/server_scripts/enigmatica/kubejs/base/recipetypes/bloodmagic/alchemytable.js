@@ -226,6 +226,22 @@ onEvent('recipes', (event) => {
                 ticks: 40,
                 orbLevel: 0,
                 id: 'bloodmagic:alchemytable/nether_wart_from_block'
+            },
+            {
+                inputs: [
+                    'bloodmagic:tauoil',
+                    '#forge:dusts/glowstone',
+                    'minecraft:gunpowder',
+                    'minecraft:sugar',
+                    '#forge:dusts/sulfur',
+                    Item.of('minecraft:potion', '{Potion:"minecraft:water"}')
+                ],
+                output: 'bloodmagic:intermediatecuttingfluid',
+                count: 1,
+                syphon: 2000,
+                ticks: 200,
+                orbLevel: 3,
+                id: 'bloodmagic:alchemytable/intermediate_cutting_fluid'
             }
         ]
     };
