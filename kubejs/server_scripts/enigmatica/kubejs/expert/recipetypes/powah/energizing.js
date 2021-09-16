@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/pneumaticcraft/thermo_plant/';
+    const id_prefix = 'enigmatica:expert/powah/energizing/';
     const recipes = [
         {
             ingredients: [
@@ -57,7 +57,7 @@ onEvent('recipes', (event) => {
                 item: 'extrastorage:raw_neural_processor',
                 count: 3
             },
-            id: `${id_prefix}raw_neural_processor`
+            id: 'extrastorage:raw_neural_processor'
         },
         {
             ingredients: [
