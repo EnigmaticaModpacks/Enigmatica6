@@ -1,7 +1,4 @@
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:portals', 'undergarden:catalyst');
-  });
-
+// priority: 9
 
   onEvent('ponder.registry', (event) => {
     event
@@ -46,7 +43,7 @@ onEvent('ponder.tag', (event) => {
 
             scene
             .overlay()
-            .showControls(new PonderInput([3.5, 2.5, 3.5], PonderPointing.DOWN).showing(PonderIcons.I_CONFIG_OPEN).withItem('undergarden:catalyst'), 40);
+            .showControls(new PonderInput([3.5, 2.5, 3.5], PonderPointing.DOWN).showing(PonderIcons.I_PRIORITY_LOW).withItem('undergarden:catalyst'), 40);
 
             scene.idle(20);
 

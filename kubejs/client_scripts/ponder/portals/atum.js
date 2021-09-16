@@ -1,7 +1,4 @@
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:portals', 'atum:scarab');
-  });
-
+// priority: 9
 
   onEvent('ponder.registry', (event) => {
     event
@@ -31,7 +28,7 @@ onEvent('ponder.tag', (event) => {
             for (let i = 1; i < 6; i++){
                 scene.world().showSection(util.select().fromTo(0, i, 0, 7, i, 7), Facing.south);
                 scene.idle(20);
-        }
+            }
 
             scene
             .overlay()
@@ -59,7 +56,7 @@ onEvent('ponder.tag', (event) => {
 
             scene
             .overlay()
-            .showControls(new PonderInput([3.5, 3.5, 3.5], PonderPointing.DOWN).showing(PonderIcons.I_CONFIG_OPEN).withItem('atum:scarab'), 40);
+            .showControls(new PonderInput([3.5, 3.5, 3.5], PonderPointing.DOWN).showing(PonderIcons.I_PRIORITY_LOW).withItem('atum:scarab'), 40);
 
             scene.idle(20);
 

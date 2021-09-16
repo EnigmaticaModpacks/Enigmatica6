@@ -1,9 +1,5 @@
 // priority: 9
 
-onEvent('ponder.tag', (event) => {
-    event.add('enigmatica:industrial_foregoing', 'industrialforegoing:latex_processing_unit');
-});
-
 onEvent('ponder.registry', (event) => {
     event
         .create('enigmatica:latex', [
