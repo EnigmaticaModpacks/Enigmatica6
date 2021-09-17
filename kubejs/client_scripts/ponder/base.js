@@ -2,16 +2,6 @@
 
 const categories = [
   {
-    id: 'enigmatica:industrial_foregoing',
-    category_item_id:'industrialforegoing:latex_processing_unit',
-    title:'Industrial Foregoing',
-    description:'Learn more about the Industrial Foregoing mod and its intriguing mechanics!',
-    items: [
-      'industrialforegoing:ore_laser_base',
-      'industrialforegoing:latex_processing_unit'
-    ]
-  },
-  {
     id: 'enigmatica:basics',
     category_item_id:'minecraft:cobblestone',
     title:'Basic Mechanics',
@@ -19,18 +9,37 @@ const categories = [
     items: [
       'minecraft:cobblestone',
       'minecraft:stone',
-      'minecraft:end_crystal',
-      'tetra:hammer_base'
+      'minecraft:end_crystal'
     ]
   },
   {
     id: 'enigmatica:portals',
     category_item_id:'undergarden:catalyst',
-    title:'Traveling with Portals',
+    title:'Thinking with Portals',
     description:'Learn how to construct some of the key portals in Enigmatica.',
     items: [
       'undergarden:catalyst',
       'atum:scarab'
+    ]
+  },
+  {
+    id: 'enigmatica:tech',
+    category_item_id:'industrialforegoing:latex_processing_unit',
+    title:'Better Living through SCIENCE!',
+    description:'Technolgy can mold the world around you - learn to harness it today!',
+    items: [
+      'industrialforegoing:ore_laser_base',
+      'industrialforegoing:latex_processing_unit',
+      'sushigocrafting:nori_sheets'
+    ]
+  },
+  {
+    id: 'enigmatica:tools',
+    category_item_id:'tetra:hammer_base',
+    title:'Tools of the Trade',
+    description:'Better tools = better survivability.',
+    items: [
+      'tetra:hammer_base'
     ]
   }
 ]
