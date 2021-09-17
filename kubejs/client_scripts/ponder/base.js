@@ -29,7 +29,8 @@ const categories = [
     description:'Technolgy can mold the world around you - learn to harness it today!',
     items: [
       'industrialforegoing:ore_laser_base',
-      'industrialforegoing:latex_processing_unit'
+      'industrialforegoing:latex_processing_unit',
+      'sushigocrafting:nori_sheets'
     ]
   },
   {
