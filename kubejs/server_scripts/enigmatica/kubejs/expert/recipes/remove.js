@@ -53,7 +53,8 @@ onEvent('recipes', (event) => {
         'tconstruct:tables/book_substitute',
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
         /create:crafting\/materials\/andesite_alloy/,
-        /emendatusenigmatica:alloy_dust/
+        /emendatusenigmatica:alloy_dust/,
+        'immersiveengineering:mixer/concrete'
     ];
 
     const outputRemovals = ['tiab:timeinabottle'];
