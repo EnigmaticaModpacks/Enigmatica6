@@ -153,7 +153,8 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"InventoryHUD/curios.json",
 	"bloodmagic-client.toml",
 	"jmi-client.toml",
-	"tconplanner-client.toml"
+	"tconplanner-client.toml",
+	"equipmentcompare-common.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
