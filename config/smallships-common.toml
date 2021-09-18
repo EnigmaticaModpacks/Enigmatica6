@@ -61,15 +61,15 @@ Version = 9
 	#Range: 0.0 ~ 100.0
 	DrakkarIceBreakSpeed = 2.0
 	#
-	#----Dhow Speed Factor.----
+	#----Brigg Speed Factor.----
 	#	(takes effect after restart)
-	#	default: 1.35
+	#	default: 1.28
 	#Range: 0.0 ~ 2.0
 	BriggSpeedFactor = 1.35
 	#
-	#----Dhow Turn Factor.----
+	#----Brigg Turn Factor.----
 	#	(takes effect after restart)
-	#	default: 0.3
+	#	default: 0.2
 	#Range: 0.0 ~ 1.0
 	BriggTurnFactor = 0.3
 	#
@@ -159,4 +159,16 @@ Version = 9
 	#	default: 0.8
 	#Range: 0.0 ~ 1.0
 	RowBoatTurnFactor = 0.8
+	#
+	#----Dhow Speed Factor.----
+	#	(takes effect after restart)
+	#	default: 1.35
+	#Range: 0.0 ~ 2.0
+	DhowSpeedFactor = 1.35
+	#
+	#----Dhow Turn Factor.----
+	#	(takes effect after restart)
+	#	default: 0.3
+	#Range: 0.0 ~ 1.0
+	DhowTurnFactor = 0.3
 
