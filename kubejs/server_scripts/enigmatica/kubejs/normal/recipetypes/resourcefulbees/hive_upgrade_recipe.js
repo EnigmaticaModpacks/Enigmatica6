@@ -11,15 +11,14 @@ onEvent('recipes', (event) => {
                 A: { item: 'minecraft:grass' },
                 B: { tag: 'forge:beehives/tier_0' }
             },
-            nbt: {},
-            result: { item: 'resourcefulbees:t1_beehive' /*, nbt: {BlockEntityTag: {Bees:[]}}*/ },
+            result: { item: 'resourcefulbees:t1_beehive' },
             id: 'resourcefulbees:t1_beehive'
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { item: 'resourcefulbees:t4_beehive' },
+                B: { type: "resourcefulbees:hive", tier: 4 },
                 C: { item: 'resourcefulbees:t1_apiary' },
                 D: { item: 'minecraft:nether_star' }
             },
@@ -30,7 +29,7 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { item: 'resourcefulbees:t4_beehive' },
+                B: { type: "resourcefulbees:hive", tier: 4 },
                 C: { item: 'resourcefulbees:t2_apiary' },
                 D: { item: 'minecraft:nether_star' }
             },
@@ -41,7 +40,7 @@ onEvent('recipes', (event) => {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: { item: 'resourcefulbees:t4_beehive' },
+                B: { type: "resourcefulbees:hive", tier: 4 },
                 C: { item: 'resourcefulbees:t3_apiary' },
                 D: { item: 'minecraft:nether_star' }
             },
