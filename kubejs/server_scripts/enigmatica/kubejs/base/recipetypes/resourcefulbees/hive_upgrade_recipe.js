@@ -39,16 +39,6 @@ onEvent('recipes', (event) => {
             },
             result: { item: 'resourcefulbees:t3_beehive' },
             id: 'resourcefulbees:t3_beehive',
-        },
-        {
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
-                C: { type: "resourcefulbees:hive", tier: 3 }
-            },
-            result: { item: 'resourcefulbees:t4_beehive' },
-            id: 'resourcefulbees:t4_beehive'
         }
     ];
 
