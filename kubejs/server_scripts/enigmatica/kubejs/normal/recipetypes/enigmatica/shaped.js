@@ -34,7 +34,7 @@ onEvent('recipes', (event) => {
             output: 'losttrinkets:magical_feathers',
             pattern: ['FAF', 'EBE', 'CDC'],
             key: {
-                A: 'minecraft:elytra',
+                A: '#forge:elytra',
                 B: 'magicfeather:magicfeather',
                 C: 'minecraft:prismarine_shard',
                 D: '#forge:nether_stars',
