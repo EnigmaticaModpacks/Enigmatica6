@@ -10,22 +10,32 @@ onEvent('recipes', (event) => {
         'ars_nouveau:ring_of_potential',
         'ars_nouveau:stone_2',
         'ars_nouveau:sunrise_2',
+
         'astralsorcery:altar/black_marble_raw',
         'astralsorcery:shaped/black_marble/black_marble_raw',
         'astralsorcery:shaped/wand',
+
         'atum:blast_furnace',
         'atum:book',
+
         'betterendforge:leather_to_stripes',
+
         'botania:mana_infusion/mana_diamond_block',
+
         'darkutils:crafting/rune_damage_player',
+
         'farmersdelight:book_from_canvas',
+
         'immersiveengineering:crafting/component_iron',
         'immersiveengineering:crafting/component_steel',
         'immersiveengineering:crafting/concrete',
         'immersiveengineering:crafting/concrete2',
+        'immersiveengineering:mixer/concrete',
+
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
+
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
         'pedestals:upgrades/crafter1mk2',
@@ -44,20 +54,23 @@ onEvent('recipes', (event) => {
         /powah:crafting\/cable_/,
 
         'quark:building/crafting/candles/candle_basic',
+
         'refinedstorage:quartz_enriched_iron',
+
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
         'tconstruct:smeltery/seared/melter',
         'tconstruct:smeltery/seared/seared_brick',
         'tconstruct:smeltery/seared/seared_brick_kiln',
         'tconstruct:tables/book_substitute',
+
         'thermal:compat/refinedstorage/smelter_refinedstorage_alloy_quartz_enriched_iron',
+
         /create:crafting\/materials\/andesite_alloy/,
-        /emendatusenigmatica:alloy_dust/,
-        'immersiveengineering:mixer/concrete'
+        /emendatusenigmatica:alloy_dust/
     ];
 
-    const outputRemovals = ['tiab:timeinabottle'];
+    const outputRemovals = ['tiab:timeinabottle', 'minecraft:nautilus_shell'];
 
     const patchouli_safe_removals = [
         { output: 'apotheosis:hellshelf', id: 'apotheosis:hellshelf' },
