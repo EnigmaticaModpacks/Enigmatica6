@@ -129,7 +129,11 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['minecraft:nautilus_shell'],
-            description: ['Obtained by killing Nautilus, found in Oceans.']
+            description: [
+                'Obtained by killing Nautilus, found in Oceans.',
+                ' ',
+                'Also obtained from Embedded Ammonite, found at any Y level in Oceans and Beaches.'
+            ]
         },
         {
             items: ['architects_palette:twisted_sapling'],

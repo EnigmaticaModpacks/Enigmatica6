@@ -23,6 +23,14 @@ onEvent('recipes', (event) => {
                 tool: 'axe'
             },
             [Item.of('minecraft:stick', 2)]
+        ),
+        cuttingRecipe(
+            Ingredient.of('upgrade_aquatic:embedded_ammonite'),
+            {
+                type: 'farmersdelight:tool',
+                tool: 'pickaxe'
+            },
+            [Item.of('minecraft:nautilus_shell', 2)]
         )
     ];
 
