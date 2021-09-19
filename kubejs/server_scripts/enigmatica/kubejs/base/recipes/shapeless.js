@@ -84,11 +84,11 @@ onEvent('recipes', (event) => {
 
         {
             output: Item.of('#forge:shards/ender'),
-            inputs: ['#forge:ores/ender', 'emendatusenigmatica:enigmatic_hammer']
+            inputs: ['#forge:ores/ender', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('#forge:shards/amber'),
-            inputs: ['#forge:ores/amber', 'emendatusenigmatica:enigmatic_hammer']
+            inputs: ['#forge:ores/amber', '#forge:tools/crafting_hammer']
         },
 
         { output: Item.of('#forge:shards/ender'), inputs: ['#forge:ores/ender', 'thermal:earth_charge'] },
@@ -473,26 +473,23 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('projectvibrantjourneys:rocks', 4),
-            inputs: ['minecraft:cobblestone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:cobblestone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:mossy_rocks', 4),
-            inputs: [
-                'minecraft:mossy_cobblestone',
-                ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']
-            ]
+            inputs: ['minecraft:mossy_cobblestone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:sandstone_rocks', 4),
-            inputs: ['minecraft:sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:sandstone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:red_sandstone_rocks', 4),
-            inputs: ['minecraft:red_sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:red_sandstone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:ice_chunks', 4),
-            inputs: ['minecraft:ice', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:ice', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:glowcap'),

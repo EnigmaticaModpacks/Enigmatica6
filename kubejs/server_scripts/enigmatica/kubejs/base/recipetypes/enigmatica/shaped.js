@@ -383,7 +383,7 @@ onEvent('recipes', (event) => {
             key: {
                 L: '#forge:ingots/steel',
                 X: '#forge:circuits/basic',
-                C: 'emendatusenigmatica:enigmatic_hammer'
+                C: '#forge:tools/crafting_hammer'
             },
             id: `${id_prefix}tetra/hammer_base`
         },

@@ -539,7 +539,7 @@ onEvent('recipes', (event) => {
 
         let output = dust,
             input = `#forge:ores/${material}`,
-            hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
+            hammer = '#forge:tools/crafting_hammer';
 
         event.shapeless(output, [input, hammer]).id(`immersiveengineering:crafting/hammercrushing${material}`);
     }
