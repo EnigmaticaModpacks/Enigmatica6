@@ -77,7 +77,6 @@ onEvent('server.datapack.low_priority', (event) => {
         'alexsmobs:bone_serpent_part',
         'artifacts:mimic',
         'losttrinkets:dark_vex',
-        'rftoolsdim:dimensional_blob_legendary',
         'ars_nouveau:familiar_bookwyrm',
         'ars_nouveau:familiar_carbuncle',
         'ars_nouveau:familiar_drygmy',
