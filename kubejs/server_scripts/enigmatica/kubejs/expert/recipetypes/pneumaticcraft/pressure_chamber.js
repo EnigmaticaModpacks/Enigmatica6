@@ -100,7 +100,17 @@ onEvent('recipes', (event) => {
             ],
             pressure: 4.0,
             results: [{ item: 'pneumaticcraft:printed_circuit_board', count: 1 }],
-            id: 'pneumaticcraft:printed_circuit_board'
+            id: `${id_prefix}printed_circuit_board`
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/copper', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 6 },
+                { tag: 'pneumaticcraft:plastic_sheets', count: 2 }
+            ],
+            pressure: 1.5,
+            results: [{ item: 'pneumaticcraft:empty_pcb', count: 6 }],
+            id: 'pneumaticcraft:pressure_chamber/empty_pcb'
         }
     ];
 

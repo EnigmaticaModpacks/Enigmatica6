@@ -3,6 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:expert/create/mechanical_crafting/';
     const recipes = [
         {
             output: 'astralsorcery:hand_telescope',
@@ -138,7 +139,7 @@ onEvent('recipes', (event) => {
                 J: 'thermal:upgrade_augment_3',
                 K: 'thermal:rf_coil'
             },
-            id: 'pneumaticcraft:flux_compressor'
+            id: `${id_prefix}flux_compressor`
         }
     ];
 

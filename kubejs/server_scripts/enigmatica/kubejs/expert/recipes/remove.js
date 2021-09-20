@@ -45,10 +45,6 @@ onEvent('recipes', (event) => {
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
-        'pneumaticcraft:air_compressor',
-        'pneumaticcraft:advanced_air_compressor',
-        'pneumaticcraft:pressure_chamber_valve_x1',
-        'pneumaticcraft:pressure_chamber_valve_x4',
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',
@@ -147,7 +143,14 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
-        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' }
+        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+
+        { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
+        { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },
+        { output: 'pneumaticcraft:pressure_chamber_wall', id: 'pneumaticcraft:pressure_chamber_valve_x1' },
+        { output: 'pneumaticcraft:pressure_chamber_wall', id: 'pneumaticcraft:pressure_chamber_valve_x4' },
+        { output: 'pneumaticcraft:flux_compressor', id: 'pneumaticcraft:flux_compressor' },
+        { output: 'pneumaticcraft:printed_circuit_board', id: 'pneumaticcraft:printed_circuit_board' }
     ];
 
     idRemovals.forEach((id) => {
