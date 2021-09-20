@@ -61,18 +61,6 @@ onEvent('recipes', (event) => {
             id: 'immersiveengineering:crafting/blastbrick'
         },
         {
-            output: 'rftoolsdim:dimension_builder',
-            pattern: ['  C  ', ' CDC ', 'CBEAC', ' CDC ', '  C  '],
-            key: {
-                A: 'rftoolsbase:machine_infuser',
-                B: 'rftoolsdim:enscriber',
-                C: 'mekanism:alloy_atomic',
-                D: 'mekanism:ultimate_control_circuit',
-                E: 'rftoolsbase:machine_frame'
-            },
-            id: 'rftoolsdim:dimension_builder'
-        },
-        {
             output: 'refinedstorage:controller',
             pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
             key: {
