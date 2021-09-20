@@ -66,6 +66,41 @@ onEvent('recipes', (event) => {
             pressure: 4.0,
             results: [{ item: 'powah:aerial_pearl', count: 1 }],
             id: 'powah:crafting/aerial_pearl'
+        },
+        {
+            inputs: [
+                { tag: 'forge:wires/electrum', count: 1 },
+                { item: 'refinedstorage:raw_basic_processor', count: 2 },
+                { item: 'powah:dielectric_paste', count: 1 },
+                { tag: 'pneumaticcraft:plastic_sheets', count: 1 }
+            ],
+            pressure: 1.0,
+            results: [{ item: 'pneumaticcraft:transistor', count: 2 }],
+            id: 'pneumaticcraft:pressure_chamber/transistor'
+        },
+        {
+            inputs: [
+                { tag: 'forge:wires/electrum', count: 1 },
+                { tag: 'forge:plates/signalum', count: 1 },
+                { tag: 'forge:plates/aluminum', count: 1 },
+                { item: 'powah:dielectric_paste', count: 1 },
+                { tag: 'pneumaticcraft:plastic_sheets', count: 1 }
+            ],
+            pressure: 1.0,
+            results: [{ item: 'pneumaticcraft:capacitor', count: 2 }],
+            id: 'pneumaticcraft:pressure_chamber/capacitor'
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:unassembled_pcb', count: 1 },
+                { item: 'pneumaticcraft:capacitor', count: 2 },
+                { item: 'pneumaticcraft:transistor', count: 2 },
+                { item: 'refinedstorage:basic_processor', count: 1 },
+                { tag: 'forge:wires/lead', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'pneumaticcraft:printed_circuit_board', count: 1 }],
+            id: 'pneumaticcraft:printed_circuit_board'
         }
     ];
 

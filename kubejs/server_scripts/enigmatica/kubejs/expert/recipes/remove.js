@@ -45,6 +45,10 @@ onEvent('recipes', (event) => {
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+        'pneumaticcraft:air_compressor',
+        'pneumaticcraft:advanced_air_compressor',
+        'pneumaticcraft:pressure_chamber_valve_x1',
+        'pneumaticcraft:pressure_chamber_valve_x4',
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',

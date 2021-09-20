@@ -118,6 +118,27 @@ onEvent('recipes', (event) => {
                 C: 'atum:ceramic_slab_black'
             },
             id: 'powah:crafting/energizing_orb'
+        },
+        {
+            output: Item.of(
+                'pneumaticcraft:flux_compressor',
+                '{BlockEntityTag:{UpgradeInventory:{Size:4,Items:[{Slot:0,id:"pneumaticcraft:security_upgrade",Count:1b}]}}}'
+            ),
+            pattern: ['ABBBA', 'ACDCA', 'EFGFE', 'HIJIH', 'HHKHH'],
+            key: {
+                A: 'thermal:hazmat_fabric',
+                B: 'powah:capacitor_nitro',
+                C: 'pneumaticcraft:turbine_rotor',
+                D: 'mekanism:basic_control_circuit',
+                E: 'pneumaticcraft:advanced_pressure_tube',
+                F: '#forge:gears/compressed_iron',
+                G: 'powah:thermo_generator_nitro',
+                H: 'fluxnetworks:flux_block',
+                I: 'supplementaries:bellows',
+                J: 'thermal:upgrade_augment_3',
+                K: 'thermal:rf_coil'
+            },
+            id: 'pneumaticcraft:flux_compressor'
         }
     ];
 

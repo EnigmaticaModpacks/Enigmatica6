@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/kubejs/';
 
     /*
         ,
@@ -22,13 +23,14 @@ onEvent('recipes', (event) => {
             key: {
                 A: 'minecraft:prismarine',
                 B: 'undergarden:tremblecrust'
-            }
+            },
+            id: `${id_prefix}firmament`
         },
         {
             output: 'kubejs:basic_circuit_package',
             pattern: ['AAA', 'EDB', 'CCC'],
             key: {
-                A: 'refinedstorage:basic_processor',
+                A: 'refinedstorage:improved_processor',
 
                 B: Item.of(
                     'pneumaticcraft:memory_stick',
@@ -37,7 +39,8 @@ onEvent('recipes', (event) => {
                 C: 'pneumaticcraft:printed_circuit_board',
                 D: 'mekanism:cardboard_box',
                 E: 'immersiveengineering:wirecoil_redstone'
-            }
+            },
+            id: `${id_prefix}basic_circuit_package`
         },
         {
             output: 'kubejs:basic_lenses_package',
@@ -46,7 +49,8 @@ onEvent('recipes', (event) => {
                 A: 'atum:purple_stained_crystal_glass',
                 B: 'occultism:spirit_attuned_gem',
                 C: 'mekanism:cardboard_box'
-            }
+            },
+            id: `${id_prefix}basic_lenses_package`
         },
 
         // Storage Parts
@@ -235,10 +239,6 @@ onEvent('recipes', (event) => {
     ];
 
     newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
