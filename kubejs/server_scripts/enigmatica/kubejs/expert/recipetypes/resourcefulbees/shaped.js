@@ -76,7 +76,7 @@ onEvent('recipes', (event) => {
             pattern: ['EBE', 'CAC', 'EDE'],
             key: {
                 A: 'industrialforegoing:machine_frame_advanced',
-                B: 'pneumaticcraft:advanced_pcb',
+                B: 'pneumaticcraft:printed_circuit_board',
                 C: 'occultism:iesnium_ingot',
                 D: 'resourcefulbees:centrifuge_controller',
                 E: 'resourcefulbees:elite_centrifuge_casing'

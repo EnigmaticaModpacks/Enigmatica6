@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/immersiveengineering/';
     /*
         ,
         {
@@ -47,14 +47,21 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:blastbrick'
             },
             id: 'immersiveengineering:crafting/alloybrick'
+        },
+        {
+            output: 'immersiveengineering:furnace_heater',
+            pattern: ['ABA', 'ACD', 'ABA'],
+            key: {
+                A: '#forge:sheetmetals/aluminum',
+                B: 'immersiveengineering:coil_lv',
+                C: 'powah:dielectric_casing',
+                D: 'thermal:rf_coil'
+            },
+            id: 'immersiveengineering:crafting/furnace_heater'
         }
     ];
 
     newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

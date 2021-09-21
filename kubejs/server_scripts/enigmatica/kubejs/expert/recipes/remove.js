@@ -143,7 +143,20 @@ onEvent('recipes', (event) => {
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },
         { output: 'naturesaura:gold_fiber', id: 'naturesaura:gold_fiber' },
         { output: 'naturesaura:gold_brick', id: 'naturesaura:gold_brick' },
-        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' }
+        { output: 'naturesaura:generator_limit_remover', id: 'naturesaura:generator_limit_remover' },
+
+        { output: 'pneumaticcraft:air_compressor', id: 'pneumaticcraft:air_compressor' },
+        { output: 'pneumaticcraft:advanced_air_compressor', id: 'pneumaticcraft:advanced_air_compressor' },
+        { output: 'pneumaticcraft:pressure_chamber_wall', id: 'pneumaticcraft:pressure_chamber_valve_x1' },
+        { output: 'pneumaticcraft:pressure_chamber_wall', id: 'pneumaticcraft:pressure_chamber_valve_x4' },
+        { output: 'pneumaticcraft:flux_compressor', id: 'pneumaticcraft:flux_compressor' },
+        { output: 'pneumaticcraft:printed_circuit_board', id: 'pneumaticcraft:printed_circuit_board' },
+        { output: 'pneumaticcraft:assembly_drill', id: 'pneumaticcraft:assembly_drill' },
+        { output: 'pneumaticcraft:assembly_laser', id: 'pneumaticcraft:assembly_laser' },
+        { output: 'pneumaticcraft:assembly_io_unit_import', id: 'pneumaticcraft:assembly_io_unit_import' },
+        { output: 'pneumaticcraft:assembly_io_unit_export', id: 'pneumaticcraft:assembly_io_unit_export' },
+        { output: 'pneumaticcraft:assembly_controller', id: 'pneumaticcraft:assembly_controller' },
+        { output: 'pneumaticcraft:assembly_platform', id: 'pneumaticcraft:assembly_platform' }
     ];
 
     idRemovals.forEach((id) => {
