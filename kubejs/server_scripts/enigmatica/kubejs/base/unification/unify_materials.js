@@ -541,7 +541,7 @@ onEvent('recipes', (event) => {
             input = `#forge:ores/${material}`,
             hammer = '#forge:tools/crafting_hammer';
 
-        event.shapeless(output, [input, hammer]).id(`immersiveengineering:crafting/hammercrushing${material}`);
+        event.shapeless(output, [input, hammer]).id(`enigmatica:base/enigmatica/${material}_dust`);
     }
 
     function immersiveengineering_gem_crushing(event, material, dust, gem) {

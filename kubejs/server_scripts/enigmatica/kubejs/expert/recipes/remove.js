@@ -22,6 +22,8 @@ onEvent('recipes', (event) => {
 
         'botania:mana_infusion/mana_diamond_block',
 
+        /create:pressing\/\w*_ingot/,
+
         'darkutils:crafting/rune_damage_player',
 
         'farmersdelight:book_from_canvas',
@@ -31,6 +33,7 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/concrete',
         'immersiveengineering:crafting/concrete2',
         'immersiveengineering:mixer/concrete',
+        /immersiveengineering:crafting\/plate_/,
 
         'minecraft:book',
         'minecraft:leather_to_stripes',

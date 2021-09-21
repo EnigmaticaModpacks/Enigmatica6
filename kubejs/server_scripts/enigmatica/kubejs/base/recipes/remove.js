@@ -87,6 +87,9 @@ onEvent('recipes', (event) => {
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
 
+        /emendatusenigmatica:dust_from_chunk/,
+        'emendatusenigmatica:dust_from_ore/quartz',
+
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
 
@@ -131,7 +134,7 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
         'immersiveengineering:crusher/bone_meal',
-
+        /immersiveengineering:crafting\/hammercrushing/,
         'immersivepetroleum:distillationtower/oilcracking',
 
         'materialis:smeltery/melting/metal/starmetal/dust',
