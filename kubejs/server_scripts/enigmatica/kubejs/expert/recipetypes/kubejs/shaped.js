@@ -29,7 +29,7 @@ onEvent('recipes', (event) => {
             output: 'kubejs:basic_circuit_package',
             pattern: ['AAA', 'EDB', 'CCC'],
             key: {
-                A: 'refinedstorage:basic_processor',
+                A: 'refinedstorage:improved_processor',
 
                 B: Item.of(
                     'pneumaticcraft:memory_stick',
