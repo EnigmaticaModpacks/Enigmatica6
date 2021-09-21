@@ -288,6 +288,14 @@ onEvent('jei.information', (event) => {
         {
             items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
             description: [`May be used to provide Heat for PneumaticCraft machines.`]
+        },
+        {
+            items: ['immersiveengineering:logic_circuit'],
+            description: [
+                `Used in a Logic Unit to create advanced Redstone Logic.`,
+                ` `,
+                `Programmed on an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+            ]
         }
     ];
 

@@ -444,7 +444,13 @@ const recipesToHide = [
             'pneumaticcraft:pressure_chamber_valve_x1',
             'pneumaticcraft:pressure_chamber_valve_x4',
             'pneumaticcraft:flux_compressor',
-            'pneumaticcraft:printed_circuit_board'
+            'pneumaticcraft:printed_circuit_board',
+            'pneumaticcraft:assembly_drill',
+            'pneumaticcraft:assembly_laser',
+            'pneumaticcraft:assembly_io_unit_import',
+            'pneumaticcraft:assembly_io_unit_export',
+            'pneumaticcraft:assembly_controller',
+            'pneumaticcraft:assembly_platform'
         ]
     },
     {
