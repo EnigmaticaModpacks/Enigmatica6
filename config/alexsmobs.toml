@@ -95,6 +95,8 @@
 	seagullStealing = true
 	#Whether the Clinging Potion effect should flip the screen. Warning: may cause nausea.
 	clingingFlipEffect = false
+	#List of items that seagulls cannot take from players.
+	seagullStealingBlacklist = []
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
