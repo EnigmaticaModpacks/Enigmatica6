@@ -81,7 +81,7 @@ onEvent('recipes', (event) => {
         let output = rod,
             input,
             mold = '#thermal:crafting/dies/rod';
-        const hammer = ['#forge:tools/crafting_hammer'];
+        const hammer = '#forge:tools/crafting_hammer';
         const plateTag = `#forge:plates/${material}`;
         if (ingot != air) {
             input = `#forge:ingots/${material}`;
