@@ -37,9 +37,9 @@ onEvent('server.datapack.low_priority', (event) => {
                 { amount: [16, 24], weight: 50, item: 'emendatusenigmatica:uranium_chunk' },
                 { amount: [16, 24], weight: 100, item: 'emendatusenigmatica:zinc_chunk' },
 
-                { amount: [16, 24], weight: 1700, item: 'atum:nebu_ore' },
+                { amount: [16, 24], weight: 2000, item: 'atum:nebu_ore' },
                 { amount: [16, 24], weight: 1500, item: 'atum:relic_ore' },
-                { amount: [16, 24], weight: 1500, item: 'atum:sand' },
+                { amount: [32, 64], weight: 1200, item: 'atum:sand' },
                 { amount: [16, 24], weight: 300, item: 'atum:khnumite_raw' }
             ]
         },
