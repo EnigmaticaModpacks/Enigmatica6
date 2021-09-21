@@ -140,6 +140,77 @@ onEvent('recipes', (event) => {
                 K: 'thermal:rf_coil'
             },
             id: `${id_prefix}flux_compressor`
+        },
+        {
+            output: 'pneumaticcraft:assembly_drill',
+            pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
+            key: {
+                A: 'prettypipes:pipe',
+                B: 'pneumaticcraft:drill_bit_diamond',
+                C: 'pneumaticcraft:pneumatic_cylinder',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pneumatic_dynamo'
+            },
+            id: `${id_prefix}assembly_drill`
+        },
+        {
+            output: 'pneumaticcraft:assembly_laser',
+            pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
+            key: {
+                A: 'prettypipes:pipe',
+                B: '#powah:energizing_rod',
+                C: 'pneumaticcraft:pneumatic_cylinder',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pneumatic_dynamo'
+            },
+            id: `${id_prefix}assembly_laser`
+        },
+        {
+            output: 'pneumaticcraft:assembly_io_unit_import',
+            pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
+            key: {
+                A: 'prettypipes:pipe',
+                B: 'create:brass_hand',
+                C: 'pneumaticcraft:pneumatic_cylinder',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pneumatic_dynamo'
+            },
+            id: `${id_prefix}assembly_io_unit_import`
+        },
+        {
+            output: 'pneumaticcraft:assembly_io_unit_export',
+            pattern: [' AAA', 'ACCB', 'AC  ', 'DEDD'],
+            key: {
+                A: 'prettypipes:pipe',
+                B: 'create:brass_hand',
+                C: 'pneumaticcraft:pneumatic_cylinder',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pneumatic_dynamo'
+            },
+            id: `${id_prefix}assembly_io_unit_export`
+        },
+        {
+            output: 'pneumaticcraft:assembly_controller',
+            pattern: ['AAA ', 'BCCA', '  CA', 'DDED'],
+            key: {
+                A: 'prettypipes:pipe',
+                B: 'rftoolsutility:screen',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: 'pneumaticcraft:reinforced_stone_slab',
+                E: 'pneumaticcraft:pneumatic_dynamo'
+            },
+            id: `${id_prefix}assembly_controller`
+        },
+        {
+            output: 'pneumaticcraft:assembly_platform',
+            pattern: [' AA ', 'BCCB', 'DDDD'],
+            key: {
+                A: '#pneumaticcraft:plastic_sheets',
+                B: '#forge:ingots/compressed_iron',
+                C: 'pneumaticcraft:pneumatic_cylinder',
+                D: 'pneumaticcraft:reinforced_stone_slab'
+            },
+            id: `${id_prefix}assembly_platform`
         }
     ];
 

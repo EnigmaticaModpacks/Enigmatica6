@@ -111,6 +111,16 @@ onEvent('recipes', (event) => {
             pressure: 1.5,
             results: [{ item: 'pneumaticcraft:empty_pcb', count: 6 }],
             id: 'pneumaticcraft:pressure_chamber/empty_pcb'
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/invar', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 },
+                { item: 'thermal:redstone_servo', count: 1 }
+            ],
+            pressure: 1.0,
+            results: [{ item: 'pneumaticcraft:turbine_blade', count: 1 }],
+            id: 'pneumaticcraft:pressure_chamber/turbine_blade'
         }
     ];
 

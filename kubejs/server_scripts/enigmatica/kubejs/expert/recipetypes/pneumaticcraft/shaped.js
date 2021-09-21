@@ -224,6 +224,38 @@ onEvent('recipes', (event) => {
                 D: 'thermal:machine_frame'
             },
             id: 'pneumaticcraft:thermal_compressor'
+        },
+        {
+            output: 'pneumaticcraft:advanced_pcb',
+            pattern: ['ABA', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:wires/copper',
+                B: 'rftoolscontrol:ram_chip',
+                C: 'immersiveengineering:logic_circuit',
+                D: 'immersiveengineering:connector_probe'
+            },
+            id: `${id_prefix}advanced_pcb_alternate`
+        },
+        {
+            output: Item.of('24x pneumaticcraft:programming_puzzle'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: '#pneumaticcraft:plastic_sheets',
+                B: 'pneumaticcraft:printed_circuit_board'
+            },
+            id: 'pneumaticcraft:programming_puzzle'
+        },
+        {
+            output: 'pneumaticcraft:pneumatic_dynamo',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: '#forge:gears/compressed_iron',
+                E: 'thermal:machine_frame'
+            },
+            id: 'pneumaticcraft:pneumatic_dynamo'
         }
     ];
 
