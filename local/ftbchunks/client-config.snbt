@@ -92,8 +92,8 @@
 		biome: true
 		
 		# Blurs minimap
-		# Default: true
-		blur: true
+		# Default: false
+		blur: false
 		
 		# Adds NWSE compass inside minimap
 		# Default: true
@@ -149,5 +149,10 @@
 		# Show zone (claimed chunk or wilderness) under minimap
 		# Default: true
 		zone: true
+		
+		# Zoom distance of the minimap
+		# Default: 1.0
+		# Range: 1.0 ~ 4.0
+		zoom: 1.0d
 	}
 }
