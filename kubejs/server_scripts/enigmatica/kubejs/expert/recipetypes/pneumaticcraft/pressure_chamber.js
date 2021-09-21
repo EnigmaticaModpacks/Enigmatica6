@@ -66,6 +66,61 @@ onEvent('recipes', (event) => {
             pressure: 4.0,
             results: [{ item: 'powah:aerial_pearl', count: 1 }],
             id: 'powah:crafting/aerial_pearl'
+        },
+        {
+            inputs: [
+                { tag: 'forge:wires/electrum', count: 1 },
+                { item: 'refinedstorage:raw_basic_processor', count: 2 },
+                { item: 'powah:dielectric_paste', count: 1 },
+                { tag: 'pneumaticcraft:plastic_sheets', count: 1 }
+            ],
+            pressure: 1.0,
+            results: [{ item: 'pneumaticcraft:transistor', count: 2 }],
+            id: 'pneumaticcraft:pressure_chamber/transistor'
+        },
+        {
+            inputs: [
+                { tag: 'forge:wires/electrum', count: 1 },
+                { tag: 'forge:plates/signalum', count: 1 },
+                { tag: 'forge:plates/aluminum', count: 1 },
+                { item: 'powah:dielectric_paste', count: 1 },
+                { tag: 'pneumaticcraft:plastic_sheets', count: 1 }
+            ],
+            pressure: 1.0,
+            results: [{ item: 'pneumaticcraft:capacitor', count: 2 }],
+            id: 'pneumaticcraft:pressure_chamber/capacitor'
+        },
+        {
+            inputs: [
+                { item: 'pneumaticcraft:unassembled_pcb', count: 1 },
+                { item: 'pneumaticcraft:capacitor', count: 2 },
+                { item: 'pneumaticcraft:transistor', count: 2 },
+                { item: 'refinedstorage:basic_processor', count: 1 },
+                { tag: 'forge:wires/lead', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'pneumaticcraft:printed_circuit_board', count: 1 }],
+            id: `${id_prefix}printed_circuit_board`
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/copper', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 6 },
+                { tag: 'pneumaticcraft:plastic_sheets', count: 2 }
+            ],
+            pressure: 1.5,
+            results: [{ item: 'pneumaticcraft:empty_pcb', count: 6 }],
+            id: 'pneumaticcraft:pressure_chamber/empty_pcb'
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/invar', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 },
+                { item: 'thermal:redstone_servo', count: 1 }
+            ],
+            pressure: 1.0,
+            results: [{ item: 'pneumaticcraft:turbine_blade', count: 1 }],
+            id: 'pneumaticcraft:pressure_chamber/turbine_blade'
         }
     ];
 

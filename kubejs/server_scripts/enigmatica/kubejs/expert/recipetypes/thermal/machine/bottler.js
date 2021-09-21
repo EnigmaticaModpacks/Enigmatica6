@@ -1,5 +1,5 @@
 onEvent('recipes', (event) => {
-    const idPrefix = 'enigmatica:expert/thermal/bottler/';
+    const id_prefix = 'enigmatica:expert/thermal/bottler/';
     if (global.isExpertMode == false) {
         return;
     }
@@ -8,22 +8,29 @@ onEvent('recipes', (event) => {
         {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('thermal:syrup', 250),
-            output: 'kubejs:syrup_bottle'
+            output: 'kubejs:syrup_bottle',
+            id: `${id_prefix}syrup_bottle`
         },
         {
             input: '#forge:dusts/sulfur',
             fluid: Fluid.of('industrialforegoing:latex', 900),
-            output: 'industrialforegoing:dryrubber'
+            output: 'industrialforegoing:dryrubber',
+            id: `${id_prefix}dryrubber`
         },
         {
             input: ['#forge:ingots/superheated_steel', '#forge:ingots/hot_compressed_iron'],
             fluid: Fluid.of('tconstruct:scorched_stone', 144 * 8),
-            output: 'tconstruct:foundry_controller'
+            output: 'tconstruct:foundry_controller',
+            id: 'tconstruct:smeltery/casting/scorched/foundry_controller'
+        },
+        {
+            input: '#forge:concrete_powder',
+            fluid: Fluid.of('kubejs:molten_compressed_iron', 18),
+            output: 'pneumaticcraft:reinforced_stone',
+            id: 'pneumaticcraft:reinforced_stone'
         }
     ];
     recipes.forEach((recipe) => {
-        event.recipes.thermal
-            .bottler(recipe.output, [recipe.fluid, recipe.input])
-            .id(idPrefix + recipe.output.split(':')[1]);
+        event.recipes.thermal.bottler(recipe.output, [recipe.fluid, recipe.input]).id(recipe.id);
     });
 });

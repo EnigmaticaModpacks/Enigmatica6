@@ -437,7 +437,20 @@ const recipesToHide = [
             'naturesaura:animal_spawner',
             'naturesaura:gold_fiber',
             'naturesaura:gold_brick',
-            'naturesaura:generator_limit_remover'
+            'naturesaura:generator_limit_remover',
+
+            'pneumaticcraft:air_compressor',
+            'pneumaticcraft:advanced_air_compressor',
+            'pneumaticcraft:pressure_chamber_valve_x1',
+            'pneumaticcraft:pressure_chamber_valve_x4',
+            'pneumaticcraft:flux_compressor',
+            'pneumaticcraft:printed_circuit_board',
+            'pneumaticcraft:assembly_drill',
+            'pneumaticcraft:assembly_laser',
+            'pneumaticcraft:assembly_io_unit_import',
+            'pneumaticcraft:assembly_io_unit_export',
+            'pneumaticcraft:assembly_controller',
+            'pneumaticcraft:assembly_platform'
         ]
     },
     {
@@ -638,6 +651,7 @@ const disabledItems = [
     'simplefarming:noodles',
     'simplefarming:chocolate'
 ];
+
 const materialsToUnify = [
     'iron',
     'gold',

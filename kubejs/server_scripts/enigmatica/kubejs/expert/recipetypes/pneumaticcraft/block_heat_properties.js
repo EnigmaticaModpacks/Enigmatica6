@@ -26,19 +26,18 @@ onEvent('recipes', (event) => {
     }
     
     */
-    var data = {
-        recipes: [
-            {
-                fluid: 'immersiveengineering:concrete',
-                temperature: 333,
-                thermalResistance: 100,
-                transformCold: { block: 'immersiveengineering:concrete' },
-                heatCapacity: 10000
-            }
-        ]
-    };
 
-    data.recipes.forEach((recipe) => {
+    const recipes = [
+        {
+            fluid: 'immersiveengineering:concrete',
+            temperature: 333,
+            thermalResistance: 100,
+            transformCold: { block: 'immersiveengineering:concrete' },
+            heatCapacity: 10000
+        }
+    ];
+
+    recipes.forEach((recipe) => {
         recipe.type = 'pneumaticcraft:heat_properties';
         event.custom(recipe);
     });
