@@ -154,7 +154,10 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"bloodmagic-client.toml",
 	"jmi-client.toml",
 	"tconplanner-client.toml",
-	"equipmentcompare-common.toml"
+	"equipmentcompare-common.toml",
+	"roadrunner/rules.properties",
+	"roadrunner/client.toml",
+	"roadrunner/common.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
