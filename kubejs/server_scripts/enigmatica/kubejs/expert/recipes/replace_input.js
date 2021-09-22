@@ -50,12 +50,12 @@ onEvent('recipes', (event) => {
             replaceWith: 'meetyourfight:velvet_fortune'
         },
         {
-            replaceTarget: { mod: 'powah' },
+            filter: { mod: 'powah' },
             toReplace: 'powah:capacitor_basic',
             replaceWith: 'powah:capacitor_basic_large'
         },
         {
-            replaceTarget: { id: '/pressure_chamber_glass/' },
+            filter: { id: '/pressure_chamber_glass/' },
             toReplace: '#forge:glass',
             replaceWith: '#thermal:glass/hardened'
         }
