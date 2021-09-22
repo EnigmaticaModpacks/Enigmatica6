@@ -199,6 +199,34 @@ onEvent('recipes', (event) => {
                 D: 'pneumaticcraft:reinforced_stone_slab'
             },
             id: `${id_prefix}assembly_platform`
+        },
+        {
+            output: 'pneumaticcraft:aerial_interface',
+            pattern: ['AABAA', 'ACDEA', 'BCFGB', 'ACHEA', 'AABAA'],
+            key: {
+                A: 'pneumaticcraft:pressure_chamber_wall',
+                B: 'pneumaticcraft:advanced_pressure_tube',
+                C: 'powah:capacitor_blazing',
+                D: 'pneumaticcraft:omnidirectional_hopper',
+                E: 'pneumaticcraft:printed_circuit_board',
+                F: '#industrialforegoing:machine_frame/supreme',
+                G: 'extrastorage:neural_processor',
+                H: 'powah:player_aerial_pearl'
+            },
+            id: `${id_prefix}aerial_interface`
+        },
+        {
+            output: 'pneumaticcraft:spawner_extractor',
+            pattern: ['  A  ', ' BCB ', ' DED ', 'F E F'],
+            key: {
+                A: 'pneumaticcraft:pressure_tube',
+                B: 'alexsmobs:hemolymph_sac',
+                C: '#industrialforegoing:machine_frame/advanced',
+                D: 'alexsmobs:warped_muscle',
+                E: 'pneumaticcraft:drill_pipe',
+                F: 'pneumaticcraft:spawner_agitator'
+            },
+            id: `${id_prefix}spawner_extractor`
         }
     ];
 

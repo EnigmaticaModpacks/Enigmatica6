@@ -450,7 +450,9 @@ const recipesToHide = [
             'pneumaticcraft:assembly_io_unit_import',
             'pneumaticcraft:assembly_io_unit_export',
             'pneumaticcraft:assembly_controller',
-            'pneumaticcraft:assembly_platform'
+            'pneumaticcraft:assembly_platform',
+            'pneumaticcraft:aerial_interface',
+            'pneumaticcraft:spawner_extractor'
         ]
     },
     {
