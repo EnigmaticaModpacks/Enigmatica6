@@ -26,7 +26,7 @@ onEvent('item.registry', (event) => {
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
         'spirit_heat_exchanger',
-        'amadron_mineral_survey_tools'
+        'amadron_survey_tools'
     ];
 
     const ritualDummies = [

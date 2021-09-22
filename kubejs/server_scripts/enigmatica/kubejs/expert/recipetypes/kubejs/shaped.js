@@ -52,7 +52,7 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}basic_lenses_package`
         },
         {
-            output: 'kubejs:amadron_mineral_survey_tools',
+            output: 'kubejs:amadron_survey_tools',
             pattern: ['ABA', 'CDE', 'AFA'],
             key: {
                 A: Item.of('pneumaticcraft:air_canister', '{"pneumaticcraft:air":30000}').weakNBT(),
@@ -62,7 +62,7 @@ onEvent('recipes', (event) => {
                 E: 'minecraft:compass',
                 F: 'immersiveengineering:survey_tools'
             },
-            id: `${id_prefix}amadron_mineral_survey_tools`
+            id: `${id_prefix}amadron_survey_tools`
         },
 
         // Storage Parts
