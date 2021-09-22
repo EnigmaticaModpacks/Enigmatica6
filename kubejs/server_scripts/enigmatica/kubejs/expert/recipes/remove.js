@@ -159,7 +159,9 @@ onEvent('recipes', (event) => {
         { output: 'pneumaticcraft:assembly_io_unit_import', id: 'pneumaticcraft:assembly_io_unit_import' },
         { output: 'pneumaticcraft:assembly_io_unit_export', id: 'pneumaticcraft:assembly_io_unit_export' },
         { output: 'pneumaticcraft:assembly_controller', id: 'pneumaticcraft:assembly_controller' },
-        { output: 'pneumaticcraft:assembly_platform', id: 'pneumaticcraft:assembly_platform' }
+        { output: 'pneumaticcraft:assembly_platform', id: 'pneumaticcraft:assembly_platform' },
+        { output: 'pneumaticcraft:aerial_interface', id: 'pneumaticcraft:aerial_interface' },
+        { output: 'pneumaticcraft:spawner_extractor', id: 'pneumaticcraft:spawner_extractor' }
     ];
 
     idRemovals.forEach((id) => {

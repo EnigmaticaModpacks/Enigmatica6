@@ -55,7 +55,7 @@ onEvent('recipes', (event) => {
             replaceWith: 'powah:capacitor_basic_large'
         },
         {
-            replaceTarget: { id: /pressure_chamber_glass/ },
+            replaceTarget: { id: '/pressure_chamber_glass/' },
             toReplace: '#forge:glass',
             replaceWith: '#thermal:glass/hardened'
         }

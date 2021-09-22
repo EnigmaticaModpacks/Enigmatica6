@@ -296,6 +296,20 @@ onEvent('jei.information', (event) => {
                 ` `,
                 `Programmed on an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
             ]
+        },
+        {
+            items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
+            description: [
+                `Obtained by defeating the Warped Mosco.`,
+                ` `,
+                `Warped Mosco are creatures of nightmare created when a Crimson Mosquito sucks the blood of a Mungus covered in Warped Fungus.`
+            ]
+        },
+        {
+            items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
+            description: [
+                `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
+            ]
         }
     ];
 
