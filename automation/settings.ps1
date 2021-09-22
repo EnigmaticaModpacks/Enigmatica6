@@ -155,7 +155,6 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"jmi-client.toml",
 	"tconplanner-client.toml",
 	"equipmentcompare-common.toml",
-	"roadrunner/rules.properties",
 	"roadrunner/client.toml",
 	"roadrunner/common.toml"
 )
