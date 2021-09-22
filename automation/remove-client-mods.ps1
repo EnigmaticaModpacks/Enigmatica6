@@ -3,9 +3,9 @@
 $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"Ding", 
 	"EntityCulling",
-	"ReAuth", 
 	"moreoverlays",
-	"Neat", 
+	"Neat",
+	"oauth" 
 	"Toast-Control", 
 	"PackMenu"
 )

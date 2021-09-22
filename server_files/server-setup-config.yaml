@@ -58,13 +58,12 @@ install:
     formatSpecific:
         # optional paramenter used for curse to specify a whole project to ignore (mostly if it is client side only)
         ignoreProject:
-            - 254284 #AmbientSounds 4
-            - 231275 #Ding
-            - 237701 #ReAuth
-            - 391382 #More Overlays Updated
-            - 238372 #Neat
-            - 271740 #Toast Control
-            - 358191 #PackMenu
+            - 231275 # Ding
+            - 391382 # More Overlays Updated
+            - 238372 # Neat
+            - 271740 # Toast Control
+            - 358191 # PackMenu
+            - 513857 # OAuth
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~
