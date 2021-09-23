@@ -6,8 +6,10 @@ onEvent('recipes', (event) => {
         Reference: https://github.com/KingLemming/1.16/blob/fe263e24b6f872bbacd7599c73f78ed44098d105/CoFHCore/src/main/java/cofh/lib/util/constants/NBTTags.java#L101
 
         These follow the pattern of {AugmentData:{Type:"<TYPE>",<AUGMENT_1>:<FLOAT>,<AUGMENT_2>:<FLOAT>,<AUGMENT_3>:<FLOAT>}}
+        All augments use a Float to define their level. 
 
         Types:
+            Determine what machine the item may be used in, and in some cases how many may be used. 
             TAG_AUGMENT_TYPE_UPGRADE = "Upgrade"            Component is Unique, only one will apply to the machine
             TAG_AUGMENT_TYPE_RF = "RF"                      Adjusts RF Values of Machines
             TAG_AUGMENT_TYPE_FLUID = "Fluid"                Adjusts Fluid Values of Machines
@@ -17,8 +19,10 @@ onEvent('recipes', (event) => {
             TAG_AUGMENT_TYPE_FILTER = "Filter"              Defines an item as a Filter
             TAG_AUGMENT_TYPE_POTION = "Potion"              May only be used for Potion using machines
 
+        Augments:
+            Determine the effects to be applied to the machine. 
         General Augments:
-            TAG_AUGMENT_BASE_MOD = "BaseMod"                Multiplier for all other bonuses
+            TAG_AUGMENT_BASE_MOD = "BaseMod"                Multiplier for all other bonuses as seen on Integral Components
 
             TAG_AUGMENT_RF_CREATIVE = "RFCre"               Unlimited RF
             TAG_AUGMENT_RF_STORAGE = "RFMax"                RF Capacity
@@ -30,7 +34,7 @@ onEvent('recipes', (event) => {
             TAG_AUGMENT_ITEM_CREATIVE = "ItemCre"           Unlimited Items
             TAG_AUGMENT_ITEM_STORAGE = "ItemMax"            Item Capacity
 
-            TAG_AUGMENT_DEPTH = "Depth"                     Dig Depth?
+            TAG_AUGMENT_DEPTH = "Depth"                     Dig Depth (NYI)
             TAG_AUGMENT_HARVEST_LEVEL = "Harvest"           Block Harvest Level
             TAG_AUGMENT_RADIUS = "Radius"                   Dig Radius
             TAG_AUGMENT_REACH = "Reach"                     Dig Reach
@@ -44,13 +48,13 @@ onEvent('recipes', (event) => {
             TAG_AUGMENT_POTION_DURATION = "PotionDur"       Potion Duration
 
     Dynamo-Specific Augments:
-            TAG_AUGMENT_DYNAMO_COIL = "DynamoCoil"          ???
+            TAG_AUGMENT_DYNAMO_COIL = "DynamoCoil"          Allows energy to be extracted from any side? (NYI)
             TAG_AUGMENT_DYNAMO_ENERGY = "DynamoEnergy"      Energy Efficiency per Fuel
-            TAG_AUGMENT_DYNAMO_POWER = "DynamoPower"        Output Rate
-            TAG_AUGMENT_DYNAMO_THROTTLE = "DynamoThrottle"  ???
+            TAG_AUGMENT_DYNAMO_POWER = "DynamoPower"        Output Rate - FE/t
+            TAG_AUGMENT_DYNAMO_THROTTLE = "DynamoThrottle"  Allows dynamo to turn off automatically when full? (NYI)
 
     Machine-Specific Augments:
-            TAG_AUGMENT_MACHINE_MIN_OUTPUT = "MachineMin"   ???
+            TAG_AUGMENT_MACHINE_MIN_OUTPUT = "MachineMin"   Forces minimum output? (NYI)
             TAG_AUGMENT_MACHINE_PRIMARY = "MachinePri"      Primary Output Modifier
             TAG_AUGMENT_MACHINE_SECONDARY = "MachineSec"    Secondary Output Modifier
 
