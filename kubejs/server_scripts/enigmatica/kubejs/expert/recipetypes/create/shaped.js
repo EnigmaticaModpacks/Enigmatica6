@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
             id: 'create:crafting/kinetics/windmill_bearing'
         },
         {
-            output: 'create:white_sail',
+            output: Item.of('create:white_sail', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'create:sail_frame',
