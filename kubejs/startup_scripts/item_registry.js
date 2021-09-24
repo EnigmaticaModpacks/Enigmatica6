@@ -26,7 +26,19 @@ onEvent('item.registry', (event) => {
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
         'spirit_heat_exchanger',
-        'amadron_survey_tools'
+        'amadron_survey_tools',
+
+        'machine_speed_augment_mk2',
+        'machine_speed_augment_mk3',
+        'machine_speed_augment_mk4',
+
+        'dynamo_output_augment_mk2',
+        'dynamo_output_augment_mk3',
+        'dynamo_output_augment_mk4',
+
+        'dynamo_fuel_augment_mk2',
+        'dynamo_fuel_augment_mk3',
+        'dynamo_fuel_augment_mk4'
     ];
 
     const ritualDummies = [
