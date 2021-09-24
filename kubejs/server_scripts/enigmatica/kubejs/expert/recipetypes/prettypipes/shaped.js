@@ -23,7 +23,8 @@ onEvent('recipes', (event) => {
                 A: '#forge:plates/tin',
                 B: '#forge:glass/colorless',
                 C: 'create:shaft'
-            }
+            },
+            id: 'prettypipes:pipe'
         },
         {
             output: Item.of('ppfluids:fluid_pipe', 8),
@@ -32,7 +33,8 @@ onEvent('recipes', (event) => {
                 A: 'thermal:cured_rubber',
                 B: '#forge:glass/colorless',
                 C: 'create:shaft'
-            }
+            },
+            id: 'ppfluids:fluid_pipe'
         }
     ];
 

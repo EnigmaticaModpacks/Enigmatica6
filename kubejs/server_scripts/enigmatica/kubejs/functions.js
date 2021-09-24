@@ -45,17 +45,6 @@ function compareIndices(a, b, tag) {
 function wrapArray(array) {
     return utils.listOf(array).toArray();
 }
-/*
-function getStrippedLogFrom(logBlock) {
-    let result = air;
-    buildWoodVariants.find((wood) => {
-        if (wood.logBlock == logBlock) {
-            result = wood.logBlockStripped;
-            return result;
-        }
-    });
-    return result;
-}*/
 
 function getStrippedLogFrom(logBlock) {
     let result = air;
@@ -73,47 +62,6 @@ const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
 
-setMode = (player) => {
-    if (global.packmode == 'expert') {
-        player.data.ftbquests.complete('0000000000000FEC');
-    } else {
-        player.data.ftbquests.reset('0000000000000FEC');
-    }
-};
-
-recipetypes_crushing = (event, recipe) => {
-    event.custom({
-        type: 'pedestals:pedestal_crushing',
-        ingredient: recipe.input,
-        result: recipe.output
-    });
-    event.custom({
-        type: 'occultism:crushing',
-        ingredient: recipe.input,
-        result: recipe.output,
-        crushing_time: recipe.duration,
-        ignore_crushing_multiplier: recipe.ignore_occultism_multiplier
-    });
-    event.custom({
-        type: 'astralsorcery:infuser',
-        fluidInput: 'astralsorcery:liquid_starlight',
-        input: recipe.input,
-        output: recipe.output,
-        consumptionChance: 0.1,
-        duration: recipe.duration,
-        consumeMultipleFluids: false,
-        acceptChaliceInput: true,
-        copyNBTToOutputs: false
-    });
-    event.custom({
-        type: 'industrialforegoing:crusher',
-        input: recipe.input,
-        output: recipe.output
-    });
-    event.recipes.thermal
-        .pulverizer([recipe.output, recipe.secondary_output], recipe.input)
-        .experience(recipe.experience);
-    event.recipes.mekanism.enriching(recipe.output, recipe.input);
-    event.recipes.immersiveengineering.crusher(recipe.output, recipe.input, recipe.secondary_output);
-    event.recipes.create.milling([recipe.output, recipe.secondary_output], recipe.input);
+const playerHas = (item, player) => {
+    return player.inventory.find(item) != -1;
 };

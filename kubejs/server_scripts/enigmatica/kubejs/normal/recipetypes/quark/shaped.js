@@ -5,10 +5,10 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            output: Item.of('quark:white_candle', 2),
+            output: Item.of('quark:white_candle', 4),
             pattern: ['B', 'A', 'A'],
             key: {
-                A: '#forge:wax',
+                A: '#enigmatica:candle_materials',
                 B: '#forge:string'
             }
         }

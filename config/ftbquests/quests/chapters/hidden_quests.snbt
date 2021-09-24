@@ -67,7 +67,7 @@
 			}]
 		}
 		{
-			title: "Hidden quest that hides the Expert Mode quest in main"
+			title: "Hidden quest that hides the Expert Mode quest"
 			x: -7.0d
 			y: -6.5d
 			id: "0000000000000FEB"
@@ -75,6 +75,62 @@
 				id: "0000000000000FEC"
 				type: "gamestage"
 				stage: "impossible"
+			}]
+		}
+		{
+			x: -10.0d
+			y: -5.0d
+			id: "28619E49157C73FE"
+			tasks: [{
+				id: "124102D88E74BB65"
+				type: "item"
+				item: "bloodmagic:masterbloodorb"
+			}]
+			rewards: [{
+				id: "0917A808DE276817"
+				type: "gamestage"
+				title: "Master Blood Orb"
+				auto: "invisible"
+				stage: "master_blood_orb"
+			}]
+		}
+		{
+			x: -8.5d
+			y: -5.0d
+			id: "38F3D549DAFF2CD0"
+			tasks: [{
+				id: "5B43BCA2F385EE07"
+				type: "item"
+				item: "bloodmagic:soulforge"
+			}]
+			rewards: [{
+				id: "6D36A253466E98C9"
+				type: "gamestage"
+				title: "Hellfire Forge"
+				auto: "invisible"
+				stage: "hellfire_forge"
+			}]
+		}
+		{
+			x: -7.0d
+			y: -5.0d
+			id: "7F501A95E6E9C7A6"
+			tasks: [{
+				id: "1F386E8BDBE651FF"
+				type: "item"
+				item: {
+					id: "occultism:chalk_red"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "5D12D220379855E1"
+				type: "gamestage"
+				auto: "invisible"
+				stage: "red_chalk"
 			}]
 		}
 	]

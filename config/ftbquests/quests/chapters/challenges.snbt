@@ -167,7 +167,11 @@
 			title: "Limitless Lava"
 			x: -3.0d
 			y: 0.0d
-			description: ["Fill a Supreme Black Hole Tank with Lava."]
+			description: [
+				"Fill a Supreme Black Hole Tank with Lava."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "64A6812D6EFF4308"
 			tasks: [{
@@ -326,7 +330,11 @@
 			}
 			x: -3.0d
 			y: 1.0d
-			description: ["Fill a Supreme Black Hole Tank with Water."]
+			description: [
+				"Fill a Supreme Black Hole Tank with Water."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "6D463AE8FE933401"
 			tasks: [{
@@ -485,7 +493,11 @@
 			}
 			x: -3.0d
 			y: -1.0d
-			description: ["Fill a Supreme Black Hole Tank with Oil."]
+			description: [
+				"Fill a Supreme Black Hole Tank with Oil."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "378F01CE074D79A0"
 			tasks: [{

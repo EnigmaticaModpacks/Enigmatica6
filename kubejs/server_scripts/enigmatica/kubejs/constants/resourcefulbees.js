@@ -1,6 +1,7 @@
 //priority: 1000
 
-// Items added here will get the 'valid_apiary' tag, and be usable as Apiary multiblock walls
+// Items added here will get the 'valid_apiary' tag, and be usable as Apiary multiblock walls.
+// This is in addition to all blocks that have collision.
 const validApiaryBlocks = [
     'botania:bifrost_pane',
     'botania:bifrost_perm',
@@ -17,69 +18,7 @@ const validApiaryBlocks = [
 
     /mcwwindows:/,
 
-    /minecraft:\w+_concrete$/,
-    /minecraft:(|\w+)terracotta$/,
-
-    /chipped:\w+_concrete_\w+$/,
-    /chipped:\w+terracotta_\w+$/,
-
-    'minecraft:soul_sand',
-    '#minecraft:stone_bricks',
-
-    '#enigmatica:stonecuttables',
-
-    /bloodmagic:\w+rune$/,
-    /bloodmagic:(|\w+)ritualstone$/,
-    /bloodmagic:\w+path$/,
-    'bloodmagic:largebloodstonebrick',
-    'bloodmagic:bloodstonebrick',
-    'bloodmagic:dungeon_brick1',
-    'bloodmagic:dungeon_brick2',
-    'bloodmagic:dungeon_brick3',
-    'bloodmagic:dungeon_smallbrick',
-    'bloodmagic:dungeon_brick_assorted',
-
-    /botania:\w+grass$/,
-
-    '#forge:treated_wood',
-    '#thermal:glass/hardened',
-    '#thermal:rockwool',
-
-    /engineersdecor:dense\w+/,
-    'engineersdecor:slag_brick_block',
-    'engineersdecor:dark_shingle_roof_block',
-    'engineersdecor:old_industrial_wood_planks',
-    'botania:livingwood',
-    'botania:livingwood_planks',
-    'botania:mossy_livingwood_planks',
-    'botania:framed_livingwood',
-    'botania:pattern_framed_livingwood',
-    'botania:glimmering_livingwood',
-    'botania:livingwood_fence_gate',
-    'botania:mossy_livingrock_bricks',
-    'botania:cracked_livingrock_bricks',
-    'botania:chiseled_livingrock_bricks',
-    'botania:livingrock_bricks',
-    'botania:livingrock',
-    /kitchen_floor/,
-    /elevatorid/,
-    /clinker/,
-    /azulejo/,
-    /dreamwood/,
-    /shimmerrock/,
-    /petal_block/,
-    /pavement/,
-    /sheetmetal/,
-    /concrete/,
-    /hempcrete/,
-    /blastbrick/,
-    /insulating_glass/,
-    /naturesaura:infused_(?!iron)\w+/,
-    /immersiveengineering:coil_/,
-    /immersiveengineering:\w+scaffolding/,
-    /chipped:(?!glassblower|\w+bench|\w+table|\w+carpet|\w+torch|\w+lantern)\w+/,
-    /chisel:(?!\w+chisel|\w+tool|carpet)\w+/,
-    /architects_palette:(?!\w+sapling|\w+button|\w+cage|\w+pressure|algal_blend|algal_brick|sunmetal_blend|sunmetal_brick|\w+totem|withered_bone|entwine_rod)\w+/
+    /elevatorid/
 ];
 
 const honeyVarieties = [

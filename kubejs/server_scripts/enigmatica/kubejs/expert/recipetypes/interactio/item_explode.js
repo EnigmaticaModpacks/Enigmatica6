@@ -30,27 +30,27 @@ onEvent('recipes', (event) => {
             inputs: [
                 { tag: 'forge:ingots/steel', count: 2 },
                 { tag: 'forge:tar', count: 2 },
-                { tag: 'forge:obsidian', count: 1 }
+                { tag: 'forge:obsidian', count: 2 }
             ],
             output: {
-                entries: [{ result: { item: 'pneumaticcraft:ingot_iron_compressed', count: 4 }, weight: 1 }],
+                entries: [{ result: { item: 'kubejs:superheated_steel_ingot', count: 4 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'pneumaticcraft:explosion_crafting/compressed_iron_ingot'
+            id: 'enigmatica:expert/interactio/superheated_steel_ingot'
         },
         {
             inputs: [
                 { tag: 'forge:storage_blocks/steel', count: 2 },
                 { tag: 'forge:tar', count: 18 },
-                { tag: 'forge:obsidian', count: 9 }
+                { tag: 'forge:obsidian', count: 18 }
             ],
             output: {
-                entries: [{ result: { item: 'pneumaticcraft:compressed_iron_block', count: 4 }, weight: 1 }],
+                entries: [{ result: { item: 'kubejs:superheated_steel_block', count: 4 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'pneumaticcraft:explosion_crafting/compressed_iron_block'
+            id: 'enigmatica:expert/interactio/superheated_steel_block'
         },
         {
             inputs: [
@@ -64,6 +64,19 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: 'meetyourfight:devils_ante'
+        },
+        {
+            inputs: [
+                { item: 'thermal:phytogro', count: 2 },
+                { tag: 'forge:dusts/iron', count: 2 },
+                { tag: 'forge:dusts/nickel', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 1 }, weight: 7 }],
+                empty_weight: 3,
+                rolls: 3
+            },
+            id: 'enigmatica:expert/interactio/item_explode/invar_dust'
         }
     ];
 

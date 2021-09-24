@@ -8,6 +8,10 @@ onEvent('jei.information', (event) => {
             description: [
                 'Crafting this will return any bees in the hives/apiaries used ONLY if all hives/apiaries have been previously placed in-world and recieved NBT.'
             ]
+        },
+        {
+            items: ['atum:nebu_hammer'],
+            description: ['Capable of breaking down Godblocks into Atum Artifacts.']
         }
     ];
 

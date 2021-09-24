@@ -16,12 +16,16 @@ onEvent('item.tags', (event) => {
         'atum:halo_of_ra',
         'atum:eyes_of_atem'
     ];
+
+    var exceptions = ['kubejs:pneumatic_helmet_package', 'kubejs:pneumatic_helmet_assembly'];
+
     var tags = ['forge:armor', 'forge:armor/helm'];
 
     tags.forEach((tag) => {
         event
             .get(tag)
             .add(items)
-            .add(/_helmet/);
+            .add(/_helmet/)
+            .remove(exceptions);
     });
 });

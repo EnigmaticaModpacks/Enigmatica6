@@ -38,13 +38,22 @@ onEvent('recipes', (event) => {
             id: 'create:crafting/kinetics/windmill_bearing'
         },
         {
-            output: 'create:white_sail',
+            output: Item.of('create:white_sail', 8),
             pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'create:sail_frame',
                 B: '#thermal:rockwool'
             },
             id: 'create:crafting/kinetics/white_sail'
+        },
+        {
+            output: Item.of('create:brass_casing', 4),
+            pattern: ['ABA', 'BBB', 'ABA'],
+            key: {
+                A: '#forge:plates/brass',
+                B: 'eidolon:polished_planks'
+            },
+            id: 'create:crafting/materials/brass_casing'
         }
     ];
 
