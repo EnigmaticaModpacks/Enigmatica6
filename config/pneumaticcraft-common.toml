@@ -33,6 +33,8 @@
 	surface_oil_generation_chance = 25
 	#Show particle trail indicating the currently-debugged drone's planned path
 	drone_debugger_path_particles = true
+	#Will Drones automatically get picked up by Boats/Minecarts/etc. if they're close enough?
+	drones_can_be_picked_up = false
 
 ["Machine Properties"]
 	#Aerial Interface backwards compat: allow pre-0.8.0 behaviour of getting player's armor inventory from top face, even with Dispenser Upgrade installed
