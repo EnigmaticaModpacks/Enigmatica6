@@ -1,7 +1,7 @@
 {
 	id: "0000000000000B67"
 	group: "34B7FB260B6AEB81"
-	order_index: 2
+	order_index: 4
 	filename: "expert__tier_2_wip"
 	title: "Magic"
 	icon: {
@@ -11,16 +11,16 @@
 			Damage: 0
 		}
 	}
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: -3.0d
 			y: -5.5d
+			dependencies: ["48BA066E1B977D32"]
 			id: "72D589CE18202510"
 			tasks: [{
-				id: "46003D18E8B6E35F"
+				id: "61813D97AAD3C2B9"
 				type: "item"
 				title: "Lightning"
 				item: {
@@ -29,11 +29,15 @@
 					tag: {
 						items: [
 							{
-								id: "powah:charged_snowball"
+								id: "thermal:lightning_charge"
 								Count: 1b
 							}
 							{
-								id: "thermal:lightning_charge"
+								id: "archers_paradox:lightning_arrow"
+								Count: 1b
+							}
+							{
+								id: "powah:charged_snowball"
 								Count: 1b
 							}
 						]
@@ -126,7 +130,7 @@
 		}
 		{
 			x: -12.0d
-			y: 10.0d
+			y: 8.0d
 			hide_dependency_lines: true
 			dependencies: ["0CA3D2BAD8F2B868"]
 			id: "102775CD7F9CD338"
@@ -632,11 +636,12 @@
 			]
 		}
 		{
-			x: -7.5d
-			y: 12.0d
+			x: -8.5d
+			y: 12.5d
 			dependencies: [
 				"2B4F57731186E24E"
 				"5D33A061D195DD08"
+				"1D7FA9A7F1F20502"
 			]
 			id: "3619843EA1DC18EE"
 			tasks: [{
@@ -646,8 +651,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 8.0d
+			x: -6.5d
+			y: 9.0d
 			dependencies: [
 				"13E2F8AEFECF661A"
 				"5BE151C00A0DAFF3"
@@ -661,7 +666,7 @@
 		}
 		{
 			x: -6.5d
-			y: 11.5d
+			y: 15.0d
 			dependencies: ["2B4F57731186E24E"]
 			id: "36C882808C98F78B"
 			tasks: [
@@ -711,7 +716,7 @@
 		}
 		{
 			x: -2.0d
-			y: 11.0d
+			y: 11.5d
 			dependencies: ["269C18852281A11E"]
 			id: "7E3B061EC45D3617"
 			tasks: [{
@@ -722,7 +727,7 @@
 		}
 		{
 			x: -2.0d
-			y: 10.0d
+			y: 10.5d
 			dependencies: ["269C18852281A11E"]
 			id: "09B55B3D016FA0C0"
 			tasks: [{
@@ -733,7 +738,7 @@
 		}
 		{
 			x: -6.5d
-			y: 9.0d
+			y: 10.5d
 			dependencies: ["3EDBC6F0B3A54589"]
 			id: "1C94CAC4F670B313"
 			tasks: [{
@@ -743,8 +748,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 13.5d
+			x: -8.5d
+			y: 15.0d
 			dependencies: ["3619843EA1DC18EE"]
 			id: "233FA393E8A84033"
 			tasks: [{
@@ -765,8 +770,8 @@
 			}]
 		}
 		{
-			x: -7.5d
-			y: 10.0d
+			x: -6.5d
+			y: 11.5d
 			dependencies: ["1C94CAC4F670B313"]
 			id: "2B4F57731186E24E"
 			tasks: [{
@@ -874,7 +879,7 @@
 		{
 			title: "Runes of the Realms"
 			x: -8.5d
-			y: 11.5d
+			y: 10.5d
 			description: [""]
 			dependencies: ["2337948E863C0F3B"]
 			id: "5D33A061D195DD08"
@@ -930,11 +935,11 @@
 		}
 		{
 			x: -10.5d
-			y: 11.5d
+			y: 9.0d
 			dependencies: [
-				"5D33A061D195DD08"
 				"102775CD7F9CD338"
 				"68292593CF029DEE"
+				"2337948E863C0F3B"
 			]
 			id: "0C8A82F038C0C647"
 			tasks: [{
@@ -945,8 +950,11 @@
 		}
 		{
 			x: -10.5d
-			y: 13.5d
-			dependencies: ["0C8A82F038C0C647"]
+			y: 11.5d
+			dependencies: [
+				"0C8A82F038C0C647"
+				"5D33A061D195DD08"
+			]
 			id: "1D7FA9A7F1F20502"
 			tasks: [{
 				id: "23F60219466C96BB"
@@ -967,7 +975,7 @@
 		}
 		{
 			x: -12.0d
-			y: 12.5d
+			y: 10.0d
 			dependencies: ["0C8A82F038C0C647"]
 			id: "6A471B48BCD9CD11"
 			tasks: [{
@@ -988,8 +996,8 @@
 			}]
 		}
 		{
-			x: -12.5d
-			y: 15.0d
+			x: -12.0d
+			y: 16.0d
 			dependencies: ["648EF41AAF02D3D7"]
 			id: "6D9116DBF9989AA9"
 			tasks: [{
@@ -999,9 +1007,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 12.0d
-			dependencies: ["7E3B061EC45D3617"]
+			x: -1.0d
+			y: 10.5d
+			dependencies: ["2ECA82ED72DA6D61"]
 			id: "590D4ABAC13B92E0"
 			tasks: [{
 				id: "0B13FA7CE1ABD0C9"
@@ -1010,8 +1018,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 13.0d
+			x: 0.0d
+			y: 11.5d
 			dependencies: ["590D4ABAC13B92E0"]
 			id: "31CB7C1723DE957B"
 			tasks: [{
@@ -1021,9 +1029,9 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 14.0d
-			dependencies: ["31CB7C1723DE957B"]
+			x: -1.0d
+			y: 12.5d
+			dependencies: ["7E3B061EC45D3617"]
 			id: "0B38C9F879EAAB18"
 			tasks: [{
 				id: "42B9746622FBC1F2"
@@ -1032,8 +1040,8 @@
 			}]
 		}
 		{
-			x: -2.0d
-			y: 15.0d
+			x: -1.0d
+			y: 13.5d
 			dependencies: ["0B38C9F879EAAB18"]
 			id: "6784887421DAB91C"
 			tasks: [{
@@ -1043,8 +1051,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 16.0d
+			x: -1.0d
+			y: 14.5d
 			dependencies: ["6784887421DAB91C"]
 			id: "1766CBDDEFE97113"
 			tasks: [{
@@ -1087,6 +1095,26 @@
 					}
 				}
 			}]
+		}
+		{
+			x: -2.5d
+			y: 7.5d
+			dependencies: ["2ECA82ED72DA6D61"]
+			id: "1D1BD002FC8614E1"
+			tasks: [{
+				id: "36390A183BB6011C"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+		}
+		{
+			title: "Magic Progression Tier 1"
+			icon: "ars_nouveau:novice_spell_book"
+			x: -3.0d
+			y: -6.5d
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "48BA066E1B977D32"
 		}
 	]
 }

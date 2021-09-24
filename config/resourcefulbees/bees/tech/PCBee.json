@@ -1,0 +1,67 @@
+{
+    "flower": "tag:pneumaticcraft:plastic_bricks",
+    "creator": "Ridanisaurus Rid & TemperedFool",
+    "lore": "What do you get if you lube up an Iron Bee, shove it inside\na Pneumatic Helment, and toss it in a Pressure Chamber?\nI.. AM.. PCBEE!",
+    "loreColor": "#00AAAA",
+    "maxTimeInHive": 4800,
+    "sizeModifier": 1,
+    "hasHoneycomb": true,
+    "traits": ["can_swim"],
+    "baseLayerTexture": "other/pcbee",
+    "ColorData": {
+        "honeycombColor": "#7a7f80",
+        "modelType": "ARMORED"
+    },
+    "CombatData": {
+        "isPassive": false,
+        "removeStingerOnAttack": false,
+        "inflictsPoison": true,
+        "attackDamage": 2
+    },
+    "MutationData": {
+        "hasMutation": true,
+        "mutations": [
+            {
+                "type": "BLOCK",
+                "inputID": "minecraft:water",
+                "outputs": [{ "outputID": "pneumaticcraft:yeast_culture", "weight": 10, "chance": 0.2 }]
+            },
+            {
+                "type": "BLOCK",
+                "inputID": "pneumaticcraft:vegetable_oil",
+                "outputs": [{ "outputID": "pneumaticcraft:oil", "weight": 10 }]
+            }
+        ]
+    },
+    "CentrifugeData": {
+        "hasCentrifugeOutput": true,
+
+        "mainOutput": "pneumaticcraft:etching_acid",
+        "mainOutputWeight": 0.2,
+        "mainOutputCount": 250,
+        "hasFluidOutput": true,
+
+        "secondaryOutput": "pneumaticcraft:ingot_iron_compressed",
+        "secondaryOutputWeight": 0.05,
+        "secondaryOutputCount": 1,
+
+        "bottleOutput": "pneumaticcraft:empty_pcb",
+        "bottleOutputWeight": 0.01,
+        "bottleOutputCount": 1,
+
+        "mainInputCount": 1
+    },
+    "SpawnData": {
+        "canSpawnInWorld": false
+    },
+    "BreedData": {
+        "isBreedable": true,
+        "feedItem": "pneumaticcraft:programming_puzzle",
+        "feedAmount": 1,
+        "childGrowthDelay": -24000,
+        "breedDelay": 6000
+    },
+    "TraitData": {
+        "hasTraits": true
+    }
+}

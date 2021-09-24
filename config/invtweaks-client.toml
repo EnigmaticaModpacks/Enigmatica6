@@ -29,6 +29,10 @@
 	#Out-of-bound slots are ignored
 	#Omit sortRange to leave as default
 	[[sorting.containerOverrides]]
+		containerClass = "net.p3pp3rf1y.sophisticatedbackpacks.common.gui.BackpackContainer"
+		sortRange = ""
+
+	[[sorting.containerOverrides]]
 		containerClass = "com.tfar.craftingstation.CraftingStationContainer"
 		sortRange = ""
 

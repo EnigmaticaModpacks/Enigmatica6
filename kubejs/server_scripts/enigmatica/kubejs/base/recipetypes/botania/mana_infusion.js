@@ -1,8 +1,8 @@
 onEvent('recipes', (event) => {
     const recipes = [
         {
-            input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee", BeeType: "iron", Color: "#ffcc99"}),
-            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee", BeeType: "mana", Color: "#4c97ff"}),
+            input: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:iron_bee"}),
+            output: Item.of('resourcefulbees:bee_jar', {Entity: "resourcefulbees:mana_bee"}),
             mana: 99999
         }
     ];

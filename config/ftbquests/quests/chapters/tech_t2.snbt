@@ -1,0 +1,191 @@
+{
+	id: "1367E0A795499DE6"
+	group: "34B7FB260B6AEB81"
+	order_index: 2
+	filename: "tech_t2"
+	title: "Tech T2"
+	icon: "immersiveengineering:workbench"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "PneumaticCraft: Repressurized"
+			icon: "pneumaticcraft:pressure_gauge_module"
+			x: 5.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["0000000000000FDB"]
+			id: "67F7E4C19E39F9F3"
+			tasks: [{
+				id: "76965E68CB17945A"
+				type: "item"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				count: 16L
+			}]
+		}
+		{
+			title: "Immersive Engineering: Part One"
+			x: 0.0d
+			y: 0.0d
+			shape: "rsquare"
+			dependencies: ["0000000000000FD5"]
+			id: "06F4A47216226927"
+			tasks: [{
+				id: "369D57ECAEBF7A77"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+				count: 27L
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: [
+				"634ED58B923E07FD"
+				"7AC8931E4F18A8A6"
+			]
+			id: "0FF412352C4AA995"
+			tasks: [{
+				id: "5CDC032E69DE6348"
+				type: "item"
+				item: "immersiveengineering:blastbrick"
+				count: 27L
+			}]
+		}
+		{
+			x: 0.5d
+			y: 1.0d
+			dependencies: ["06F4A47216226927"]
+			id: "7AC8931E4F18A8A6"
+			tasks: [{
+				id: "64AA9D9BBC8E02FD"
+				type: "item"
+				item: "minecraft:nether_wart"
+				count: 24L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.0d
+			dependencies: ["06F4A47216226927"]
+			id: "634ED58B923E07FD"
+			tasks: [{
+				id: "5E07982FDCCE6FB7"
+				type: "item"
+				item: "thermal:fire_tnt"
+				count: 3L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["159CEE8160564096"]
+			id: "51C4B771C756A8DD"
+			tasks: [{
+				id: "1696A045279F7734"
+				type: "item"
+				item: "immersiveengineering:alloybrick"
+				count: 8L
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["0FF412352C4AA995"]
+			id: "12DB6A16794AEA5C"
+			tasks: [{
+				id: "09AFB039968ADB13"
+				type: "item"
+				item: "kubejs:coarse_lapis_lazuli_compound"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["12DB6A16794AEA5C"]
+			id: "159CEE8160564096"
+			tasks: [{
+				id: "1E770D18A73E9D10"
+				type: "item"
+				item: "kubejs:smoldering_lapis_lazuli_compound"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 4.5d
+			dependencies: ["059321636D20E33A"]
+			id: "56A05A07C30709EC"
+			tasks: [{
+				id: "2B7F725CA5D12C72"
+				type: "item"
+				item: {
+					id: "immersiveengineering:blueprint"
+					Count: 1b
+					tag: {
+						blueprint: "components"
+					}
+				}
+			}]
+		}
+		{
+			x: 0.0d
+			y: 4.0d
+			dependencies: ["51C4B771C756A8DD"]
+			id: "059321636D20E33A"
+			tasks: [{
+				id: "507E9B0D33201C3D"
+				type: "item"
+				item: "pneumaticcraft:upgrade_matrix"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 5.0d
+			dependencies: ["56A05A07C30709EC"]
+			id: "3AC1DD7E5DDDC129"
+			tasks: [{
+				id: "4DDB5EC00B0ACDFE"
+				type: "item"
+				item: "immersiveengineering:workbench"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 5.5d
+			dependencies: ["3AC1DD7E5DDDC129"]
+			id: "065270B7FA576ED0"
+			tasks: [{
+				id: "18E3BEB02D473233"
+				type: "item"
+				item: "immersiveengineering:component_iron"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 6.5d
+			shape: "octagon"
+			dependencies: [
+				"065270B7FA576ED0"
+				"3DA107DD546F8E02"
+			]
+			size: 1.5d
+			id: "1B3A149D46540273"
+			tasks: [{
+				id: "0153100351695FB1"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			x: 0.5d
+			y: 5.5d
+			dependencies: ["3AC1DD7E5DDDC129"]
+			id: "3DA107DD546F8E02"
+			tasks: [{
+				id: "2B67FC4FC12C5684"
+				type: "item"
+				item: "immersiveengineering:concrete_leaded"
+			}]
+		}
+	]
+}

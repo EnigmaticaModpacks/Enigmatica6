@@ -26,9 +26,12 @@ onEvent('item.tags', (event) => {
         'naturesaura:sky_ingot',
         'naturesaura:tainted_gold',
         'occultism:iesnium_ingot',
-        'powah:uraninite'
+        'powah:uraninite',
+        'kubejs:superheated_steel_ingot',
+        'kubejs:hot_compressed_iron_ingot'
     ]);
-
+    event.add('forge:ingots/superheated_steel', ['kubejs:superheated_steel_ingot']);
+    event.add('forge:ingots/hot_compressed_iron', ['kubejs:hot_compressed_iron_ingot']);
     event.get('forge:ingots/copper').add('immersiveengineering:ingot_copper');
     event.get('forge:ingots/alfsteel').add('mythicbotany:alfsteel_ingot');
     event.get('forge:ingots/pink_slime').add('industrialforegoing:pink_slime_ingot');

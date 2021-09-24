@@ -128,6 +128,12 @@ onEvent('recipes', (event) => {
             input: 'aquaculture:neptunium_bow',
             output: Item.of('aquaculture:neptunium_nugget', 3),
             xp: 3
+        },
+        {
+            input: ['#forge:slag', 'thermal:rich_slag'],
+            output: 'thermal:white_rockwool',
+            xp: 0.1,
+            id: 'thermal:rockwool/white_rockwool_from_blasting'
         }
     ];
     recipes.forEach((recipe) => {

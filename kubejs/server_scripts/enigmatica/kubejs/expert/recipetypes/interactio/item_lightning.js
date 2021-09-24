@@ -14,11 +14,12 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
                 empty_weight: 3,
                 rolls: 16
-            }
+            },
+            id: 'charged_snowball'
         },
         {
             inputs: [
-                { tag: 'forge:stone', count: 4 },
+                { tag: 'forge:storage_blocks/clay', count: 4 },
                 { tag: 'forge:dusts/mana', count: 1 },
                 { tag: 'forge:dusts/apatite', count: 1 }
             ],
@@ -26,7 +27,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:arcane_stone', count: 1 }, weight: 9 }],
                 empty_weight: 1,
                 rolls: 4
-            }
+            },
+            id: 'arcane_stone'
         },
         {
             inputs: [
@@ -45,8 +47,8 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { item: 'eidolon:gold_inlay', count: 2 },
-                { item: 'botania:livingwood', count: 1 },
+                { item: 'eidolon:gold_inlay', count: 1 },
+                { item: 'botania:livingwood_wall', count: 1 },
                 { item: 'naturesaura:gold_leaf', count: 1 },
                 { tag: 'forge:dusts/apatite', count: 1 }
             ],
@@ -81,7 +83,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:jar_of_light', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'jar_of_light'
         },
         {
             inputs: [
@@ -92,7 +95,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'ars_nouveau:void_jar', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'void_jar'
         },
         {
             inputs: [
@@ -119,7 +123,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'naturesaura:calling_spirit', count: 3 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'calling_spirit'
         },
         {
             inputs: [
@@ -132,7 +137,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'minecraft:lodestone', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'lodestone'
         },
         {
             inputs: [
@@ -144,7 +150,8 @@ onEvent('recipes', (event) => {
                 entries: [{ result: { item: 'botania:spark', count: 1 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
-            }
+            },
+            id: 'spark'
         },
         {
             inputs: [
@@ -173,6 +180,19 @@ onEvent('recipes', (event) => {
                 rolls: 1
             },
             id: 'meetyourfight:haunted_bell'
+        },
+        {
+            inputs: [
+                { item: 'thermal:phytogro', count: 2 },
+                { tag: 'forge:dusts/iron', count: 2 },
+                { tag: 'forge:dusts/nickel', count: 1 }
+            ],
+            output: {
+                entries: [{ result: { item: 'emendatusenigmatica:invar_dust', count: 1 }, weight: 7 }],
+                empty_weight: 3,
+                rolls: 3
+            },
+            id: 'invar_dust'
         }
     ];
 
@@ -183,6 +203,9 @@ onEvent('recipes', (event) => {
             output: recipe.output
         });
         if (recipe.id) {
+            if (!recipe.id.includes(':')) {
+                recipe.id = 'enigmatica:expert/interactio/item_lightning/' + recipe.id;
+            }
             re.id(recipe.id);
         }
     });

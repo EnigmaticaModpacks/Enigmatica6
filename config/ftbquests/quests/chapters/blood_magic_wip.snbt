@@ -331,7 +331,7 @@
 			]
 		}
 		{
-			x: -1.5d
+			x: -2.0d
 			y: 5.0d
 			subtitle: "Mobile Blood Bank"
 			description: [
@@ -439,7 +439,7 @@
 			x: 0.5d
 			y: 7.0d
 			subtitle: "Finder of Lost Things"
-			description: ["The Ritual Diviner is crucial to the construction and use of Rituals. "]
+			description: ["The Ritual Diviner is crucial to the construction and use of Rituals.  Keep it close to hand. "]
 			dependencies: ["00000000000008C7"]
 			id: "00000000000008CC"
 			tasks: [{
@@ -836,7 +836,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -2.0d
 			y: 6.5d
 			subtitle: "So Much Room for Activities!"
 			description: [
@@ -903,6 +903,73 @@
 				title: "Divination Sigil"
 				item: "bloodmagic:divinationsigil"
 			}]
+		}
+		{
+			title: "Routing Nodes"
+			x: -0.5d
+			y: 6.5d
+			subtitle: "Hello From The Other Side"
+			description: [
+				""
+				"With Routing Nodes, complex item transport can begin. "
+				""
+				"Routing Networks have four main components, the Master, Input, Output, and plain Routing Nodes. Each node may be wirelessly linked to other nodes within 16 blocks. One connection must reach back to the Master Routing Node, but networks may spread from there through any other nodes. Sneak Right Click a node with a Node Router to select it or bind a selected node to it. "
+				""
+				"Only one Master Routing Node is required per network but be sure one is present, or nothing will work!"
+				""
+				"Input Routing nodes pull from adjacent inventories, while Output Routing nodes push into adjacent inventories. Each one can interact with blocks on all six sides, so to tell it which sides to work with the side must be selected, and a filter installed in the filter slot. A Standard Item Filter set to Blacklist will allow any items to pass through, for instance, but several filters exist to suit most needs. Right Click a filter in the air to configure it. "
+				""
+				"Routing Nodes may be used to extend a network, connecting distant locations. "
+				""
+				"Finally, any node may be disabled with a Redstone signal, allowing more intelligent routing. For instance, an entire section of a network could be routed through a single Routing Node, allowing that section to be disabled when that node is powered. "
+			]
+			dependencies: ["00000000000008C7"]
+			min_width: 300
+			id: "4357BD288BF6B33A"
+			tasks: [
+				{
+					id: "5184DF819EB97A15"
+					type: "item"
+					item: "bloodmagic:masterroutingnode"
+				}
+				{
+					id: "686A566B0A0B99B2"
+					type: "item"
+					item: "bloodmagic:outputroutingnode"
+				}
+				{
+					id: "5B061E4ABB7A29C0"
+					type: "item"
+					item: "bloodmagic:inputroutingnode"
+				}
+			]
+			rewards: [
+				{
+					id: "43C68608D20981A1"
+					type: "item"
+					item: "bloodmagic:itemroutingnode"
+					count: 4
+				}
+				{
+					id: "30A919F0210DE215"
+					type: "item"
+					item: "bloodmagic:itemrouterfilterexact"
+					count: 2
+				}
+				{
+					id: "24C9A479B52447B3"
+					type: "item"
+					item: {
+						id: "bloodmagic:noderouter"
+						Count: 1b
+						tag: {
+							zCoord: 0
+							yCoord: 0
+							xCoord: 0
+						}
+					}
+				}
+			]
 		}
 	]
 }

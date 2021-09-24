@@ -110,6 +110,8 @@ var itemsToHide = [
     'bloodmagic:coalsand',
     'bloodmagic:saltpeter',
     'bloodmagic:sulfur',
+    'bloodmagic:ironsand',
+    'bloodmagic:goldsand',
 
     'byg:budding_ametrine_ore',
     'byg:anthracite_ore',
@@ -368,21 +370,89 @@ const recipesToHide = [
         recipes_by_id: [
             'ars_nouveau:arcane_stone',
             'ars_nouveau:crystallizer',
+            'ars_nouveau:potion_melder',
             'ars_nouveau:volcanic_accumulator',
-            'naturesaura:calling_spirit',
-            'naturesaura:animal_spawner',
+            'ars_nouveau:mana_condenser',
+            'ars_nouveau:mycelial_sourcelink',
+            'ars_nouveau:vitalic_sourcelink',
+            'ars_nouveau:alchemical_sourcelink',
+            'ars_nouveau:novice_hood',
+            'ars_nouveau:novice_robes',
+            'ars_nouveau:novice_leggings',
+            'ars_nouveau:novice_boots',
+            'ars_nouveau:apprentice_hood',
+            'ars_nouveau:apprentice_robes',
+            'ars_nouveau:apprentice_leggings',
+            'ars_nouveau:apprentice_boots',
+            'ars_nouveau:archmage_hood',
+            'ars_nouveau:archmage_robes',
+            'ars_nouveau:archmage_leggings',
+            'ars_nouveau:archmage_boots',
+
+            'bloodmagic:soul_forge',
+            'bloodmagic:ritual_diviner_0',
+            'bloodmagic:blood_rune_blank',
+            'bloodmagic:blood_rune_speed',
+            'bloodmagic:blood_rune_sacrifice',
+            'bloodmagic:blood_rune_self_sacrifice',
+            'bloodmagic:blood_rune_displacement',
+            'bloodmagic:blood_rune_capacity',
+            'bloodmagic:blood_rune_aug_capacity',
+            'bloodmagic:blood_rune_orb',
+            'bloodmagic:blood_rune_acceleration',
+            'bloodmagic:blood_rune_charging',
+
+            'botania:terrasteel_helmet',
+            'botania:terrasteel_chestplate',
+            'botania:terrasteel_leggings',
+            'botania:terrasteel_boots',
             'botania:spark',
-            'botania:natura_pylon',
             'botania:mana_pylon',
+            'botania:natura_pylon',
+            'botania:apothecary_default',
+            'botania:terra_plate',
+            'botania:alfheim_portal',
+            'botania:mana_ring',
+            'botania:gaia_ingot',
+            'botania:gaia_pylon',
+            'botania:mining_ring',
+            'botania:dodge_ring',
+            'botania:swap_ring',
+            'botania:water_ring',
+            'botania:magnet_ring',
+            'botania:aura_ring',
+            'botania:pixie_ring',
+            'botania:reach_ring',
+            'botania:flighttiara_0',
+
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
             'mythicbotany:modified_gaia_pylon_with_alfsteel',
             'mythicbotany:alfsteel_pylon',
+            'mythicbotany:mana_infuser',
+            'mythicbotany:fire_ring',
+            'mythicbotany:ice_ring',
+
+            'naturesaura:calling_spirit',
+            'naturesaura:animal_spawner',
+            'naturesaura:gold_fiber',
             'naturesaura:gold_brick',
             'naturesaura:generator_limit_remover',
-            'apotheosis:hellshelf',
-            'apotheosis:seashelf',
-            'apotheosis:endshelf'
+
+            'pneumaticcraft:air_compressor',
+            'pneumaticcraft:advanced_air_compressor',
+            'pneumaticcraft:pressure_chamber_valve_x1',
+            'pneumaticcraft:pressure_chamber_valve_x4',
+            'pneumaticcraft:flux_compressor',
+            'pneumaticcraft:printed_circuit_board',
+            'pneumaticcraft:assembly_drill',
+            'pneumaticcraft:assembly_laser',
+            'pneumaticcraft:assembly_io_unit_import',
+            'pneumaticcraft:assembly_io_unit_export',
+            'pneumaticcraft:assembly_controller',
+            'pneumaticcraft:assembly_platform',
+            'pneumaticcraft:aerial_interface',
+            'pneumaticcraft:spawner_extractor'
         ]
     },
     {
@@ -392,6 +462,20 @@ const recipesToHide = [
     {
         category: 'botania:petals',
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    },
+    {
+        category: 'bloodmagic:alchemytable',
+        recipes_by_id: ['bloodmagic:alchemytable/basic_cutting_fluid_sigil']
+    },
+    {
+        category: 'bloodmagic:soulforge',
+        recipes_by_id: [
+            'bloodmagic:soulforge/sentientsword',
+            'bloodmagic:soulforge/sentientaxe',
+            'bloodmagic:soulforge/sentientpickaxe',
+            'bloodmagic:soulforge/sentientshovel',
+            'bloodmagic:soulforge/sentientscythe'
+        ]
     }
 ];
 
@@ -423,9 +507,6 @@ var regexHide = [
     /emendatusenigmatica:\w+_brimstone_ore/,
     /emendatusenigmatica:\w+_soul_soil_ore/,
     /emendatusenigmatica:\w+_basalt_ore/,
-    /tconstruct:\w+_station/,
-    /tconstruct:\w+_anvil/,
-    /tconstruct:part_builder/,
     /tconstruct:copper_(ore|block|nugget)/,
     /tconstruct:cobalt_(ore|block|nugget)/,
     /titanium:\w+_gear/,
@@ -572,6 +653,7 @@ const disabledItems = [
     'simplefarming:noodles',
     'simplefarming:chocolate'
 ];
+
 const materialsToUnify = [
     'iron',
     'gold',

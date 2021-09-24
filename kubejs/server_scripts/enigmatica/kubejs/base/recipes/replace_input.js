@@ -79,18 +79,12 @@ onEvent('recipes', (event) => {
     powahTiers.forEach(function (tier) {
         var capacitor = 'powah:capacitor_' + tier;
         event.replaceInput({ id: 'powah:crafting/energy_cell_' + tier }, '#powah:energy_cell', capacitor);
-        event.replaceInput(
-            { id: 'powah:crafting/energizing_rod_' + tier },
-            '#powah:energizing_rod',
-            'powah:energy_cable_' + tier
-        );
         if (tier == 'basic') {
             capacitor = 'powah:capacitor_' + tier + '_large';
         }
         event.replaceInput({ id: 'powah:crafting/battery_' + tier }, '#powah:battery', capacitor);
     });
 
-    event.replaceInput({ mod: 'powah' }, '#powah:furnator', 'minecraft:blast_furnace');
     event.replaceInput({ mod: 'powah' }, '#powah:magmator', 'mekanism:dynamic_tank');
     event.replaceInput({ mod: 'powah' }, '#powah:thermo_generator', 'powah:thermoelectric_plate');
     event.replaceInput({ mod: 'powah' }, '#powah:solar_panel', 'powah:photoelectric_pane');
@@ -99,13 +93,6 @@ onEvent('recipes', (event) => {
         { id: 'powah:crafting/solar_panel_basic' },
         'powah:solar_panel_starter',
         'powah:photoelectric_pane'
-    );
-    event.replaceInput({ mod: 'powah' }, '#powah:energy_hopper', 'minecraft:hopper');
-    // no, that's not a typo in the ID
-    event.replaceInput(
-        { id: 'powah:crafting/player_tranmitter_basic' },
-        'powah:player_transmitter_starter',
-        'powah:player_aerial_pearl'
     );
 
     event.replaceInput({ mod: 'astralsorcery' }, 'astralsorcery:marble_raw', '#forge:stones/marble');
@@ -303,7 +290,12 @@ onEvent('recipes', (event) => {
                 'pneumaticcraft:gun_ammo',
                 'ars_nouveau:marvelous_clay',
                 'ars_nouveau:ritual',
-                'ars_nouveau:sconce'
+                'ars_nouveau:sconce',
+                'ars_nouveau:basic_spell_turret',
+                'ars_nouveau:mycelial_sourcelink',
+                'ars_nouveau:vitalic_sourcelink',
+                'ars_nouveau:alchemical_sourcelink',
+                'ars_nouveau:mana_condenser'
             ]
         },
         {
@@ -461,8 +453,8 @@ onEvent('recipes', (event) => {
         recipe.items.forEach((item) => {
             event.replaceInput(
                 { output: item },
-                '#forge:' + recipe.type + '/' + recipe.replace,
-                '#forge:' + recipe.type + '/' + recipe.replace + '_' + recipe.replaceWith
+                `#forge:${recipe.type}/${recipe.replace}`,
+                `#forge:${recipe.type}/${recipe.replace}_${recipe.replaceWith}`
             );
         });
     });

@@ -18,8 +18,6 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'industrialforegoing:fluid_extractor' });
     event.remove({ type: 'thermal:tree_extractor' });
 
-    event.remove({ mod: 'prettypipes' });
-    event.remove({ mod: 'ppfluids' });
     event.remove({ mod: 'ironjetpacks' });
     event.remove({ mod: 'theoneprobe' });
 
@@ -31,10 +29,6 @@ onEvent('recipes', (event) => {
         'byg:green_enchanted_crafting_table',
 
         'create:crushing/obsidian',
-
-        'craftingstation:crafting_station',
-
-        'decorative_blocks:lattice',
 
         'akashictome:tome',
 
@@ -69,6 +63,7 @@ onEvent('recipes', (event) => {
         'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+        'astralsorcery:shaped/marble/marble_slab',
 
         'betterendforge:gunpowder_from_sulphur',
 
@@ -90,7 +85,10 @@ onEvent('recipes', (event) => {
         'create:fill_minecraft_bucket_with_create_honey',
 
         'eidolon:tallow',
-        'engineersdecor:dependent/slag_brick_block_recipe',
+        'eidolon:smelt_stone_brick',
+
+        /emendatusenigmatica:dust_from_chunk/,
+        'emendatusenigmatica:dust_from_ore/quartz',
 
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
@@ -99,9 +97,6 @@ onEvent('recipes', (event) => {
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
         'farmersdelight:milk_bottle',
         'farmersdelight:milk_bucket_from_bottles',
-
-        'fluxnetworks:fluxcontroller',
-        'fluxnetworks:fluxcore',
 
         'industrialforegoing:laser_drill_ore/niter',
         'industrialforegoing:laser_drill_ore/sapphire',
@@ -139,14 +134,18 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
         'immersiveengineering:crusher/bone_meal',
-
+        /immersiveengineering:crafting\/hammercrushing/,
         'immersivepetroleum:distillationtower/oilcracking',
+
+        'materialis:smeltery/melting/metal/starmetal/dust',
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:enriching/enriched/tin',
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
+
+        'minecraft:crystal_glass',
 
         'morevanillalib:obsidian_shard',
         'morevanillalib:obsidian',
@@ -184,6 +183,8 @@ onEvent('recipes', (event) => {
         'thermal:smelting/cured_rubber_from_smelting',
         'thermal:storage/sulfur_block',
         'thermal:gunpowder_4',
+
+        'ppfluids:fluid_pipe_to_pipe',
 
         'powah:crafting/energy_cell_basic_2',
         'powah:crafting/cable_basic',

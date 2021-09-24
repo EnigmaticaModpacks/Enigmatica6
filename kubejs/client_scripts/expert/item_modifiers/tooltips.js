@@ -25,12 +25,16 @@ onEvent('item.tooltip', (event) => {
     }
     const recipes = [
         {
-            items: ['tiab:timeinabottle'],
-            description: ['Any Potion can be used for crafting this.']
+            items: ['bloodmagic:soulpickaxe'],
+            text: ['Capable of mining Iesnium.']
         },
         {
-            items: ['bloodmagic:soulpickaxe'],
-            description: ['Capable of mining Iesnium.']
+            items: ['tconstruct:seared_melter'],
+            text: [Text.of('Disabled in Expert Mode - Use the Smeltery Controller.').darkGreen()]
+        },
+        {
+            items: ['kubejs:basic_circuit_package'],
+            text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
         }
     ];
 

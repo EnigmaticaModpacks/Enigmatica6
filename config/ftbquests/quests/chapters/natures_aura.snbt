@@ -827,9 +827,8 @@
 				"To link them, simply right click one, and then the other. Supply a redstone signal to enable them. They'll begin drawing Aura and breaking blocks after a short delay."
 				""
 				"An Item Frame can be used to alter their behavior as well: "
-				"● Place shears in the frame to cause them to shear leaves and grass. "
-				"● Place a shovel in the frame to allow them to pick up snow."
-				"● Place a Silk Touch pick in the frame to grant them the ability to silk touch blocks. "
+				""
+				"● The Aura Field Creator will use any tool provided in the frame including any enchants or special break properties of the tool. Shears shear leaves, shovels collect snow, Fortune and Silk Touch are respected. "
 			]
 			hide_dependency_lines: true
 			dependencies: [

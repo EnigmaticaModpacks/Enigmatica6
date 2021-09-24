@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/botania/runic_altar/';
     const recipes = [
         {
             inputs: [
@@ -236,7 +236,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/elementium',
+                '#forge:ingots/alfsteel',
                 '#botania:runes/air',
                 '#botania:runes/summer',
                 '#botania:runes/lust',
@@ -288,7 +288,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/manasteel',
+                '#forge:ingots/terrasteel',
                 '#botania:runes/earth',
                 '#botania:runes/spring',
                 '#botania:runes/greed',
@@ -301,7 +301,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/sunmetal',
+                '#forge:ingots/refined_radiance',
                 '#botania:runes/fire',
                 '#botania:runes/summer',
                 '#botania:runes/wrath',
@@ -327,7 +327,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                '#forge:ingots/froststeel',
+                '#forge:ingots/shadow_steel',
                 '#botania:runes/water',
                 '#botania:runes/winter',
                 '#botania:runes/wrath',
@@ -350,6 +350,328 @@ onEvent('recipes', (event) => {
             output: 'mythicbotany:vanaheim_rune',
             count: 1,
             id: 'mythicbotany:runic_altar/vanaheim'
+        },
+        {
+            inputs: [
+                'bloodmagic:blankslate',
+                'eidolon:ender_calx',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate',
+                'eidolon:ender_calx',
+                'bloodmagic:blankslate',
+                'bloodmagic:blankslate'
+            ],
+            mana: 16000,
+            output: 'bloodmagic:blankrune',
+            count: 2,
+            id: `${id_prefix}blood_rune_blank`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:white_rune',
+                'bloodmagic:blankslate',
+                'ars_nouveau:glyph_accelerate',
+                'bloodmagic:blankslate',
+                'kubejs:cutting_essence',
+                'quark:white_rune',
+                'bloodmagic:blankslate',
+                'ars_nouveau:glyph_accelerate',
+                'bloodmagic:blankslate'
+            ],
+            mana: 16000,
+            output: 'bloodmagic:speedrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_speed`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:red_rune',
+                'bloodmagic:reinforcedslate',
+                'ars_nouveau:glyph_touch',
+                'bloodmagic:reinforcedslate',
+                'kubejs:cutting_essence',
+                'quark:red_rune',
+                'bloodmagic:reinforcedslate',
+                'ars_nouveau:glyph_harm',
+                'bloodmagic:reinforcedslate'
+            ],
+            mana: 32000,
+            output: 'bloodmagic:sacrificerune',
+            count: 1,
+            id: `${id_prefix}blood_rune_sacrifice`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:yellow_rune',
+                'bloodmagic:reinforcedslate',
+                'ars_nouveau:glyph_self',
+                'bloodmagic:reinforcedslate',
+                'kubejs:cutting_essence',
+                'quark:yellow_rune',
+                'bloodmagic:reinforcedslate',
+                'ars_nouveau:glyph_harm',
+                'bloodmagic:reinforcedslate'
+            ],
+            mana: 32000,
+            output: 'bloodmagic:selfsacrificerune',
+            count: 1,
+            id: `${id_prefix}blood_rune_self_sacrifice`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:blue_rune',
+                'bloodmagic:infusedslate',
+                'ars_nouveau:glyph_extract',
+                'bloodmagic:infusedslate',
+                'kubejs:cutting_essence',
+                'quark:blue_rune',
+                'bloodmagic:infusedslate',
+                'ars_nouveau:glyph_accelerate',
+                'bloodmagic:infusedslate'
+            ],
+            mana: 64000,
+            output: 'bloodmagic:dislocationrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_displacement`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:orange_rune',
+                'bloodmagic:infusedslate',
+                'bloodmagic:reagentholding',
+                'bloodmagic:infusedslate',
+                'kubejs:cutting_essence',
+                'quark:orange_rune',
+                'bloodmagic:infusedslate',
+                'bloodmagic:reagentholding',
+                'bloodmagic:infusedslate'
+            ],
+            mana: 64000,
+            output: 'bloodmagic:altarcapacityrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_capacity`
+        },
+        {
+            inputs: [
+                'bloodmagic:altarcapacityrune',
+                'quark:red_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_amplify',
+                'bloodmagic:demonslate',
+                'bloodmagic:masterbloodorb',
+                'quark:red_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_amplify',
+                'bloodmagic:demonslate'
+            ],
+            mana: 96000,
+            output: 'bloodmagic:bettercapacityrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_aug_capacity`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:cyan_rune',
+                'architects_palette:moonstone',
+                'bloodmagic:masterbloodorb',
+                'bloodmagic:demonslate',
+                'bloodmagic:masterbloodorb',
+                'quark:cyan_rune',
+                'architects_palette:moonstone',
+                'bloodmagic:masterbloodorb',
+                'bloodmagic:demonslate'
+            ],
+            mana: 96000,
+            output: 'bloodmagic:orbcapacityrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_orb`
+        },
+        {
+            inputs: [
+                'bloodmagic:speedrune',
+                'quark:light_blue_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_amplify',
+                'bloodmagic:demonslate',
+                'bloodmagic:masterbloodorb',
+                'quark:light_blue_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_amplify',
+                'bloodmagic:demonslate'
+            ],
+            mana: 96000,
+            output: 'bloodmagic:accelerationrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_acceleration`
+        },
+        {
+            inputs: [
+                'bloodmagic:blankrune',
+                'quark:green_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_delay',
+                'bloodmagic:demonslate',
+                'bloodmagic:masterbloodorb',
+                'quark:green_rune',
+                'architects_palette:moonstone',
+                'ars_nouveau:glyph_delay',
+                'bloodmagic:demonslate'
+            ],
+            mana: 96000,
+            output: 'bloodmagic:chargingrune',
+            count: 1,
+            id: `${id_prefix}blood_rune_charging`
+        },
+        {
+            inputs: [
+                'quark:white_crystal',
+                'quark:white_crystal',
+                'quark:white_crystal',
+                'quark:white_crystal',
+                'quark:white_crystal',
+                'quark:white_crystal',
+                'quark:white_crystal',
+                'quark:white_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:white_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/white_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:orange_crystal',
+                'quark:orange_crystal',
+                'quark:orange_crystal',
+                'quark:orange_crystal',
+                'quark:orange_crystal',
+                'quark:orange_crystal',
+                'quark:orange_crystal',
+                'quark:orange_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:orange_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/orange_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:violet_crystal',
+                'quark:violet_crystal',
+                'quark:violet_crystal',
+                'quark:violet_crystal',
+                'quark:violet_crystal',
+                'quark:violet_crystal',
+                'quark:violet_crystal',
+                'quark:violet_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:magenta_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/magenta_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:blue_crystal',
+                'quark:blue_crystal',
+                'quark:blue_crystal',
+                'quark:blue_crystal',
+                'quark:blue_crystal',
+                'quark:blue_crystal',
+                'quark:blue_crystal',
+                'quark:blue_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:light_blue_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/light_blue_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:yellow_crystal',
+                'quark:yellow_crystal',
+                'quark:yellow_crystal',
+                'quark:yellow_crystal',
+                'quark:yellow_crystal',
+                'quark:yellow_crystal',
+                'quark:yellow_crystal',
+                'quark:yellow_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:yellow_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/yellow_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:green_crystal',
+                'quark:green_crystal',
+                'quark:green_crystal',
+                'quark:green_crystal',
+                'quark:green_crystal',
+                'quark:green_crystal',
+                'quark:green_crystal',
+                'quark:green_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:lime_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/lime_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:indigo_crystal',
+                'quark:indigo_crystal',
+                'quark:indigo_crystal',
+                'quark:indigo_crystal',
+                'quark:indigo_crystal',
+                'quark:indigo_crystal',
+                'quark:indigo_crystal',
+                'quark:indigo_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:blue_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/blue_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:red_crystal',
+                'quark:red_crystal',
+                'quark:red_crystal',
+                'quark:red_crystal',
+                'quark:red_crystal',
+                'quark:red_crystal',
+                'quark:red_crystal',
+                'quark:red_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:red_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/red_rune_from_crystal`
+        },
+        {
+            inputs: [
+                'quark:black_crystal',
+                'quark:black_crystal',
+                'quark:black_crystal',
+                'quark:black_crystal',
+                'quark:black_crystal',
+                'quark:black_crystal',
+                'quark:black_crystal',
+                'quark:black_crystal'
+            ],
+            mana: 4000,
+            output: 'quark:black_rune',
+            count: 2,
+            id: `quark:tools/crafting/runes/black_rune_from_crystal`
         }
     ];
 

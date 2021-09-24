@@ -95,6 +95,8 @@ const soilRegistry = [
 
     { block: 'betterendforge:crystal_moss', categories: ['end_stone', 'crystal_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:amber_moss', categories: ['end_stone', 'amber_moss'], growthModifier: 0.5 },
+    { block: 'betterendforge:rutiscus', categories: ['end_stone', 'rutiscus'], growthModifier: 0.5 },
+    { block: 'betterendforge:sangnum', categories: ['end_stone', 'sangnum'], growthModifier: 0.5 },
     { block: 'betterendforge:chorus_nylium', categories: ['end_stone', 'chorus_nylium'], growthModifier: 0.5 },
     { block: 'betterendforge:jungle_moss', categories: ['end_stone', 'jungle_moss'], growthModifier: 0.5 },
     { block: 'betterendforge:end_moss', categories: ['end_stone', 'end_moss'], growthModifier: 0.5 },
