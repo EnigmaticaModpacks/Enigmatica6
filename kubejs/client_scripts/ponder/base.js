@@ -34,6 +34,15 @@ const categories = [
     ]
   },
   {
+    id: 'enigmatica:magic',
+    category_item_id:'resourcefulbees:t1_beehive',
+    title:'Harnessing the Mystical Forces',
+    description:'Magic is just technology we don\'t understand yet.',
+    items: [
+      'resourcefulbees:iron_bee_spawn_egg'
+    ]
+  },
+  {
     id: 'enigmatica:tools',
     category_item_id:'tetra:hammer_base',
     title:'Tools of the Trade',
