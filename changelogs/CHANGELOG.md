@@ -7,6 +7,8 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   For bee owners: Apiaries have changed.
     -   You need to break and replace the Apiary Controller.
     -   The floor is no longer a part of the structure, so if you put storage blocks or the like in the floor, they will no longer work.
+-   RFTools Dimensions is being removed, meaning all RFTools dimensions will be removed from existing worlds.
+    -   If this is an issue, consider not updating, or manually re-adding the mod.
 
 **Changes/Improvements**
 
