@@ -28,29 +28,35 @@ onEvent('jei.add.items', (event) => {
         }),
         // Thermal Augments - See Notes Below
         // Machine Speed Upgrades
-        Item.of('kubejs:machine_speed_augment_mk2', {
-            AugmentData: { Type: 'Machine', MachineEnergy: 1.43, MachinePower: 3.0 }
-        }),
-        Item.of('kubejs:machine_speed_augment_mk3', {
-            AugmentData: { Type: 'Machine', MachineEnergy: 1.859, MachinePower: 9.0 }
-        }),
-        Item.of('kubejs:machine_speed_augment_mk4', {
-            AugmentData: { Type: 'Machine', MachineEnergy: 2.4167, MachinePower: 27.0 }
-        }),
+        Item.of(
+            'kubejs:dynamo_output_augment_mk2',
+            '{AugmentData:{Type:"Machine",MachineEnergy:1.43d,MachinePower:3.0d}}'
+        ),
+        Item.of(
+            'kubejs:dynamo_output_augment_mk3',
+            '{AugmentData:{Type:"Machine",MachineEnergy:1.859d,MachinePower:9.0d}}'
+        ),
+        Item.of(
+            'kubejs:dynamo_output_augment_mk4',
+            '{AugmentData:{Type:"Machine",MachineEnergy:2.4167d,MachinePower:27.0d}}'
+        ),
         // Dynamo Speed Upgrades
-        Item.of('kubejs:dynamo_output_augment_mk2', {
-            AugmentData: { Type: 'Dynamo', DynamoEnergy: 0.846, DynamoPower: 2.0 }
-        }),
-        Item.of('kubejs:dynamo_output_augment_mk3', {
-            AugmentData: { Type: 'Dynamo', DynamoEnergy: 0.79524, DynamoPower: 4.0 }
-        }),
-        Item.of('kubejs:dynamo_output_augment_mk4', {
-            AugmentData: { Type: 'Dynamo', DynamoEnergy: 0.7475256, DynamoPower: 8.0 }
-        }),
+        Item.of(
+            'kubejs:dynamo_output_augment_mk2',
+            '{AugmentData:{Type:"Dynamo",DynamoEnergy:0.846d,DynamoPower:2.0d}}'
+        ),
+        Item.of(
+            'kubejs:dynamo_output_augment_mk3',
+            '{AugmentData:{Type:"Dynamo",DynamoEnergy:0.79524d,DynamoPower:4.0d}}'
+        ),
+        Item.of(
+            'kubejs:dynamo_output_augment_mk4',
+            '{AugmentData:{Type:"Dynamo",DynamoEnergy:0.7475256d,DynamoPower:8.0d}}'
+        ),
         // Dynamo Efficiency Upgrades
-        Item.of('kubejs:dynamo_fuel_augment_mk2', { AugmentData: { Type: 'Dynamo', DynamoEnergy: 1.43 } }),
-        Item.of('kubejs:dynamo_fuel_augment_mk3', { AugmentData: { Type: 'Dynamo', DynamoEnergy: 1.859 } }),
-        Item.of('kubejs:dynamo_fuel_augment_mk4', { AugmentData: { Type: 'Dynamo', DynamoEnergy: 2.4167 } })
+        Item.of('kubejs:dynamo_fuel_augment_mk2', '{AugmentData:{Type:"Dynamo",DynamoEnergy:1.43d}}'),
+        Item.of('kubejs:dynamo_fuel_augment_mk3', '{AugmentData:{Type:"Dynamo",DynamoEnergy:1.859d}}'),
+        Item.of('kubejs:dynamo_fuel_augment_mk4', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}')
     ];
 
     items.forEach((item) => event.add(item));
