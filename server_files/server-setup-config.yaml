@@ -46,7 +46,7 @@ install:
 
     # Link to where the file where the modpack can be distributed
     # This supports loading from local files as well for most pack types if there is file://{PathToFile} in the beginning
-    modpackUrl: https://media.forgecdn.net/files/3430/618/Enigmatica6-0.5.11.zip
+    modpackUrl: https://media.forgecdn.net/files/3470/437/Enigmatica6-0.5.12.zip
     # This is used to specify in which format the modpack is distributed, the server launcher has to handle each individually if their format differs
     # current supported formats:
     # - curseforge or curse
@@ -64,6 +64,7 @@ install:
             - 271740 # Toast Control
             - 358191 # PackMenu
             - 513857 # OAuth
+            - 521714 # PonderJS
 
     # The base path where the server should be installed to, ~ for current path
     baseInstallPath: ~

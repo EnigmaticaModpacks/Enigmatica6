@@ -21,13 +21,13 @@ const defaultConfig = {
     message: 'Valid modes are normal and expert.'
 };
 const configName = 'mode.json';
-let config = json.read(configName);
+let config = JsonIO.read(configName);
 if (!config || !config.mode) {
-    json.write(configName, defaultConfig);
+    JsonIO.write(configName, defaultConfig);
     console.log(`Created new ${configName}`);
 }
 if (config.mode == 'none') {
-    json.write(configName, defaultConfig);
+    JsonIO.write(configName, defaultConfig);
     config.mode = defaultConfig.mode;
     console.log(`Overwrote ${configName}, because the mode 'none' was found. Valid modes are 'normal' and 'expert'.`);
 }

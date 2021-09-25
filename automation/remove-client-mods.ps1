@@ -5,7 +5,8 @@ $CLIENT_MODS_TO_REMOVE_FROM_SERVER_FILES = @(
 	"EntityCulling",
 	"moreoverlays",
 	"Neat",
-	"oauth" 
+	"oauth",
+	"ponderjs",
 	"Toast-Control", 
 	"PackMenu"
 )
