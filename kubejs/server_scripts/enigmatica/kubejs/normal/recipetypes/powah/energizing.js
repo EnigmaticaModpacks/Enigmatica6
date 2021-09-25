@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:normal/pneumaticcraft/thermo_plant/';
+    const id_prefix = 'enigmatica:normal/powah/energizing/';
     const recipes = [
         {
             ingredients: [{ tag: 'forge:storage_blocks/iron_copper' }, { tag: 'forge:storage_blocks/gold' }],
@@ -42,12 +42,16 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    const powerValues = ['5000', '10000', '15000', '20000', '25000', '30000'],
-        ingredients = { ingots: [], blocks: [] };
+    const powerValues = ['5000', '10000', '15000', '20000', '25000', '30000'];
 
     powerValues.forEach((powerValue, index) => {
-        ingredients.ingots.push({ tag: 'forge:ingots/uranium' });
-        ingredients.blocks.push({ tag: 'forge:storage_blocks/uranium' });
+        let ingredients = { ingots: [], blocks: [] };
+
+        for (let i = 0; i < index + 1; i++) {
+            ingredients.ingots.push({ tag: 'forge:ingots/uranium' });
+            ingredients.blocks.push({ tag: 'forge:storage_blocks/uranium' });
+        }
+
         recipes.push(
             {
                 type: 'powah:energizing',
