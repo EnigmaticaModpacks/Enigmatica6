@@ -618,7 +618,7 @@ onEvent('recipes', (event) => {
                 duration: 3,
                 entity_to_sacrifice: {
                     tag: 'enigmatica:cephalopods',
-                    display_name: 'ritual.occultism.sacrifice.cephalopod'
+                    display_name: 'ritual.occultism.sacrifice.cephalopods'
                 },
                 entity_to_summon: 'occultism:cthulhu_familiar',
                 ritual_dummy: {
