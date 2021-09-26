@@ -1,18 +1,18 @@
 
 [common]
 
-	#mod.chiselsandbits.config.common.help.comment
+	#Configuration entries related to the help system.
 	[common.help]
 
 		[common.help.common]
 
 			[common.help.common.help]
-				#mod.chiselsandbits.config.common.help.common.help.enabled.comment
+				#Common configuration entries related to the help system and which features are enabled or not during displayment.
 				enabled = true
 
 	[common.common]
 
-		#mod.chiselsandbits.config.common.performance.comment
+		#Configuration entries related to performance.
 		[common.common.performance]
 
 			[common.common.performance.common]
@@ -22,7 +22,7 @@
 					[common.common.performance.common.performance.collisions]
 
 						[common.common.performance.common.performance.collisions.cache]
-							#mod.chiselsandbits.config.common.performance.common.performance.collisions.cache.size.comment
+							#common.performance.collisions.cache.size
 							#Range: -9223372036854775808 ~ 9223372036854775807
 							size = 10000
 
