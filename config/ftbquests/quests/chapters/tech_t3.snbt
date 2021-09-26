@@ -73,5 +73,54 @@
 				}
 			}]
 		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["56140777EF8FE03B"]
+			id: "2152CE1FF9468886"
+			tasks: [{
+				id: "4D44DD66246ECB57"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["6079CBE9ECE6EB1D"]
+			id: "56140777EF8FE03B"
+			tasks: [{
+				id: "4F62270E32839226"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+		}
+		{
+			title: "Enrich Pink Slime"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["2152CE1FF9468886"]
+			id: "206F4AA9A9278D8D"
+			tasks: [{
+				id: "1C9B934F52D9FB49"
+				type: "item"
+				item: {
+					id: "botania:cosmetic_questgiver_mark"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["206F4AA9A9278D8D"]
+			id: "412F3A311A7CFCB3"
+			tasks: [{
+				id: "0536AAB566704AC9"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+			}]
+		}
 	]
 }

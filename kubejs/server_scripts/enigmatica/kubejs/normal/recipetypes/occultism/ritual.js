@@ -617,8 +617,8 @@ onEvent('recipes', (event) => {
                 pentacle_id: 'occultism:possess_djinni',
                 duration: 3,
                 entity_to_sacrifice: {
-                    tag: 'enigmatica:cephalopod',
-                    display_name: 'ritual.occultism.sacrifice.cephalopod'
+                    tag: 'enigmatica:cephalopods',
+                    display_name: 'ritual.occultism.sacrifice.cephalopods'
                 },
                 entity_to_summon: 'occultism:cthulhu_familiar',
                 ritual_dummy: {
