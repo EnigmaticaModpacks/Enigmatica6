@@ -102,7 +102,7 @@ onEvent('server.datapack.high_priority', (event) => {
             mainhands: [
                 { weight: 4, stack: { item: 'botania:manasteel_sword' } },
                 { weight: 2, stack: { item: 'botania:manasteel_axe' } },
-                { weight: 1, stack: { item: 'botania:manasteel_pickaxe' } },
+                { weight: 1, stack: { item: 'botania:manasteel_pick' } },
                 { weight: 1, stack: { item: 'botania:manasteel_shovel' } }
             ],
             offhands: [{ weight: 3, stack: { item: 'atum:brigand_shield' } }],

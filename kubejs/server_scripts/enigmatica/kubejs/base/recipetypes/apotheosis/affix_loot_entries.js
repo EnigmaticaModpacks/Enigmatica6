@@ -31,14 +31,14 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'botania:manaweave_boots', weight: 1500 },
 
                 { item: 'atum:wanderer_helmet', weight: 1500 },
-                { item: 'atum:wanderer_chestplate', weight: 1500 },
-                { item: 'atum:wanderer_leggings', weight: 1500 },
+                { item: 'atum:wanderer_chest', weight: 1500 },
+                { item: 'atum:wanderer_legs', weight: 1500 },
                 { item: 'atum:wanderer_boots', weight: 1500 },
 
-                { item: 'atum:desert_boots_helmet', weight: 1000 },
-                { item: 'atum:desert_boots_chestplate', weight: 1000 },
-                { item: 'atum:desert_boots_leggings', weight: 1000 },
-                { item: 'atum:desert_boots_boots', weight: 1000 },
+                { item: 'atum:desert_helmet_iron', weight: 1000 },
+                { item: 'atum:desert_chestplate_iron', weight: 1000 },
+                { item: 'atum:desert_leggings_iron', weight: 1000 },
+                { item: 'atum:desert_boots_iron', weight: 1000 },
 
                 { item: 'mekanismtools:bronze_helmet', weight: 1000 },
                 { item: 'mekanismtools:bronze_chestplate', weight: 1000 },
@@ -50,8 +50,8 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:lapis_lazuli_leggings', weight: 1000 },
                 { item: 'mekanismtools:lapis_lazuli_boots', weight: 1000 },
 
-                { item: 'ars_nouveau:novice_helmet', weight: 1500 },
-                { item: 'ars_nouveau:novice_chestplate', weight: 1500 },
+                { item: 'ars_nouveau:novice_hood', weight: 1500 },
+                { item: 'ars_nouveau:novice_robes', weight: 1500 },
                 { item: 'ars_nouveau:novice_leggings', weight: 1500 },
                 { item: 'ars_nouveau:novice_boots', weight: 1500 },
 
@@ -70,7 +70,7 @@ onEvent('server.datapack.high_priority', (event) => {
                 { item: 'mekanismtools:lapis_lazuli_shield', weight: 1200 },
                 { item: 'undergarden:cloggrum_shield', weight: 1000 },
                 { item: 'immersiveengineering:shield', weight: 600 },
-                { item: 'mekanism:osmium_shield', weight: 500 }
+                { item: 'mekanismtools:osmium_shield', weight: 500 }
             ]
         },
         {
