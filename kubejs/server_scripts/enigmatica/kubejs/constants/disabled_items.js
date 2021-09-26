@@ -18,9 +18,6 @@ const disabledItems = [
     'abnormals_delight:willow_pantry',
     'abnormals_delight:wisteria_pantry',
 
-    'aiotbotania:livingwood_shears',
-    'aiotbotania:livingrock_shears',
-
     'aquaculture:wooden_fillet_knife',
     'aquaculture:stone_fillet_knife',
     'aquaculture:iron_fillet_knife',
@@ -31,12 +28,12 @@ const disabledItems = [
 
     'betterendforge:ender_dust',
 
+    'blockcarpentry:frame_chest',
+    'blockcarpentry:illusion_chest',
+
     'bloodmagic:sand_netherite',
     'bloodmagic:gravel_netherite_scrap',
     'bloodmagic:fragment_netherite_scrap',
-
-    'blockcarpentry:frame_chest',
-    'blockcarpentry:illusion_chest',
 
     'byg:ametrine_block',
     'byg:ametrine_boots',
@@ -59,7 +56,37 @@ const disabledItems = [
     'byg:emeraldite_ore',
     'byg:emeraldite_shards',
 
+    'create:dough',
+
     'decorative_blocks_abnormals:ender_brazier',
+
+    'ironjetpacks:strap',
+    'ironjetpacks:basic_coil',
+    'ironjetpacks:advanced_coil',
+    'ironjetpacks:elite_coil',
+    'ironjetpacks:ultimate_coil',
+    'ironjetpacks:hardened_cell',
+    'ironjetpacks:hardened_capacitor',
+    'ironjetpacks:invar_cell',
+    'ironjetpacks:invar_capacitor',
+    'ironjetpacks:blazing_cell',
+    'ironjetpacks:blazing_capacitor',
+    'ironjetpacks:signalum_cell',
+    'ironjetpacks:signalum_capacitor',
+    'ironjetpacks:niotic_cell',
+    'ironjetpacks:niotic_capacitor',
+    'ironjetpacks:lumium_cell',
+    'ironjetpacks:lumium_capacitor',
+    'ironjetpacks:spirited_cell',
+    'ironjetpacks:spirited_capacitor',
+    'ironjetpacks:enderium_cell',
+    'ironjetpacks:enderium_capacitor',
+    'ironjetpacks:nitro_cell',
+    'ironjetpacks:nitro_capacitor',
+
+    'mekanism:sawdust',
+    'mekanism:dust_lapis_lazuli',
+    'mekanism:dust_lithium',
 
     'mythicbotany:raindeletia',
     'mythicbotany:raindeletia_floating',
@@ -69,6 +96,8 @@ const disabledItems = [
     'pedestals:dustflour',
 
     'pitg:green_dye',
+
+    'pneumaticcraft:wheat_flour',
 
     'quark:pipe',
     'quark:potato_crate',
@@ -80,9 +109,9 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
-
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
-    'simplefarming:noodles'
+    'simplefarming:noodles',
+    'simplefarming:chocolate'
 ];

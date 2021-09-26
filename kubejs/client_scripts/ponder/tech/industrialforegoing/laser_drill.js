@@ -5,13 +5,13 @@
 
 onEvent('ponder.registry', (event) => {
     let badOres = Ingredient.of([
-        '#forge:ores/iron',
-        '#forge:ores/coal',
-        '#forge:ores/apatite',
-        '#forge:ores/tin',
-        '#forge:ores/copper',
-        '#forge:ores/cinnabar'
-    ]).filter('#forge:chunks');
+        'emendatusenigmatica:iron_ore',
+        'emendatusenigmatica:coal_ore',
+        'emendatusenigmatica:apatite_ore',
+        'emendatusenigmatica:tin_ore',
+        'emendatusenigmatica:copper_ore',
+        'emendatusenigmatica:cinnabar_ore'
+    ]);
 
     event
         .create('enigmatica:laser_drill', [
@@ -281,9 +281,10 @@ onEvent('ponder.registry', (event) => {
                             .showing(PonderIcons.I_CONFIRM)
                             .withItem(
                                 randomOf(
-                                    Ingredient.of(['#forge:ores/uranium', '#forge:ores/emerald']).filter(
-                                        '#forge:chunks'
-                                    )
+                                    Ingredient.of([
+                                        'emendatusenigmatica:uranium_ore',
+                                        'emendatusenigmatica:emerald_ore'
+                                    ])
                                 )
                             ),
                         120
