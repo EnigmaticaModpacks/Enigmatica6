@@ -17,6 +17,12 @@ We've updated to a new major version of the mod which hopefully makes sure this 
 - \[0.5.12\] Create Cogwheels placing [\#3317](https://github.com/NillerMedDild/Enigmatica6/issues/3317)
 - \[0.5.12\] Wrenches and Block Rotation [\#3310](https://github.com/NillerMedDild/Enigmatica6/issues/3310)
 
+**Changes/Improvements**
+
+- PVJ Tree Compat [\#3319](https://github.com/NillerMedDild/Enigmatica6/pull/3319) ([MuteTiefling](https://github.com/MuteTiefling))
+- Added PVJ Trees to Market
+- Added some PVJ biomes to worldgen
+
 
 
 ---
