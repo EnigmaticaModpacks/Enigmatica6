@@ -161,14 +161,7 @@ onEvent('recipes', (event) => {
             }
         });
 
-        event
-            .custom({
-                type: 'naturesaura:animal_spawner',
-                ingredients: ingredients,
-                entity: recipe.entity,
-                aura: recipe.aura,
-                time: recipe.time
-            })
-            .id(recipe.id);
+        recipe.type = 'naturesaura:animal_spawner';
+        event.custom(recipe).id(recipe.id);
     });
 });
