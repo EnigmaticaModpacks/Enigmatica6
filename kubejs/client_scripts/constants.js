@@ -187,9 +187,11 @@ var itemsToHide = [
     'kubejs:machine_speed_augment_mk2',
     'kubejs:machine_speed_augment_mk3',
     'kubejs:machine_speed_augment_mk4',
+
     'kubejs:dynamo_output_augment_mk2',
     'kubejs:dynamo_output_augment_mk3',
     'kubejs:dynamo_output_augment_mk4',
+
     'kubejs:dynamo_fuel_augment_mk2',
     'kubejs:dynamo_fuel_augment_mk3',
     'kubejs:dynamo_fuel_augment_mk4',
