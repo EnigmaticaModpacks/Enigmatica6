@@ -37,7 +37,7 @@ onEvent('server.datapack.high_priority', (event) => {
 
                 { item: 'atum:desert_helmet_iron', weight: 1000 },
                 { item: 'atum:desert_chest_iron', weight: 1000 },
-                { item: 'atum:desert_leggings_iron', weight: 1000 },
+                { item: 'atum:desert_legs_iron', weight: 1000 },
                 { item: 'atum:desert_boots_iron', weight: 1000 },
 
                 { item: 'mekanismtools:bronze_helmet', weight: 1000 },
