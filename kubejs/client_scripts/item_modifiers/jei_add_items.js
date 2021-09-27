@@ -29,15 +29,15 @@ onEvent('jei.add.items', (event) => {
         // Thermal Augments - See Notes Below
         // Machine Speed Upgrades
         Item.of(
-            'kubejs:dynamo_output_augment_mk2',
+            'kubejs:machine_speed_augment_mk2',
             '{AugmentData:{Type:"Machine",MachineEnergy:1.43d,MachinePower:3.0d}}'
         ),
         Item.of(
-            'kubejs:dynamo_output_augment_mk3',
+            'kubejs:machine_speed_augment_mk3',
             '{AugmentData:{Type:"Machine",MachineEnergy:1.859d,MachinePower:9.0d}}'
         ),
         Item.of(
-            'kubejs:dynamo_output_augment_mk4',
+            'kubejs:machine_speed_augment_mk4',
             '{AugmentData:{Type:"Machine",MachineEnergy:2.4167d,MachinePower:27.0d}}'
         ),
         // Dynamo Speed Upgrades
