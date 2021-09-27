@@ -42,17 +42,17 @@ onEvent('item.registry', (event) => {
     ];
 
     const reusableItemTextures = [
-        { name: 'kubejs:machine_speed_augment_mk2', texture: 'machine_speed_augment' },
-        { name: 'kubejs:machine_speed_augment_mk3', texture: 'machine_speed_augment' },
-        { name: 'kubejs:machine_speed_augment_mk4', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
 
-        { name: 'kubejs:dynamo_output_augment_mk2', texture: 'dynamo_output_augment' },
-        { name: 'kubejs:dynamo_output_augment_mk3', texture: 'dynamo_output_augment' },
-        { name: 'kubejs:dynamo_output_augment_mk4', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk2', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk3', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk4', texture: 'dynamo_output_augment' },
 
-        { name: 'kubejs:dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
-        { name: 'kubejs:dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
-        { name: 'kubejs:dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
