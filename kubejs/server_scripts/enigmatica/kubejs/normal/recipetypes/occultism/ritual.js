@@ -5,7 +5,6 @@ onEvent('recipes', (event) => {
     const data = {
         recipes: [
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -27,7 +26,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_infused_lenses'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft_with_spirit_name',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -50,7 +48,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_infused_pickaxe'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -76,7 +73,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_soul_gem'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_afrit'
@@ -103,7 +99,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/summon_wild_afrit'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft_with_spirit_name',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -125,7 +120,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_dimensional_matrix'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -147,7 +141,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_stabilizer_tier1'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -170,7 +163,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_stabilizer_tier2'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_afrit'
@@ -192,7 +184,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_stabilizer_tier3'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_marid'
@@ -215,7 +206,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_stabilizer_tier4'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft_miner_spirit',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -238,7 +228,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_miner_djinni_ores'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft_miner_spirit',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -260,7 +249,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_miner_foliot_unspecialized'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -285,7 +273,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_dimensional_mineshaft'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -308,7 +295,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_familiar_ring'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -330,7 +316,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_storage_controller_base'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -352,7 +337,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_stable_wormhole'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -374,7 +358,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_storage_remote'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:craft_with_spirit_name',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -397,7 +380,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/craft_satchel'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon_spirit_with_job',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -422,7 +404,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/summon_foliot_crusher'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon_spirit_with_job',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -447,7 +428,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/summon_djinni_crusher'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon_spirit_with_job',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_afrit'
@@ -472,7 +452,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/summon_afrit_crusher'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon_spirit_with_job',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_marid'
@@ -497,7 +476,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/summon_marid_crusher'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:familiar',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -524,7 +502,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/familiar_greedy'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon_tamed',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -552,7 +529,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/familiar_otherworld_bird'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:familiar',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -580,7 +556,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/familiar_bat'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:familiar',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -609,7 +584,6 @@ onEvent('recipes', (event) => {
                 id: 'occultism:ritual/familiar_deer'
             },
             {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:familiar',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_djinni'
@@ -638,14 +612,72 @@ onEvent('recipes', (event) => {
                     item: 'occultism:jei_dummy/none'
                 },
                 id: 'occultism:ritual/familiar_cthulhu'
+            },
+            {
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:possess_djinni',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'forge:horses',
+                    display_name: 'ritual.occultism.sacrifice.horses'
+                },
+                entity_to_summon: 'occultism:devil_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_devil'
+                },
+                ingredients: [
+                    { item: 'minecraft:lava_bucket' },
+                    { item: 'minecraft:lava_bucket' },
+                    { item: 'minecraft:lava_bucket' },
+                    { item: 'minecraft:lava_bucket' },
+                    { tag: 'forge:bones' },
+                    { tag: 'forge:bones' },
+                    { tag: 'forge:bones' },
+                    { tag: 'forge:bones' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_devil'
+            },
+            {
+                ritual_type: 'occultism:familiar',
+                activation_item: {
+                    item: 'occultism:book_of_binding_bound_djinni'
+                },
+                pentacle_id: 'occultism:possess_djinni',
+                duration: 3,
+                entity_to_sacrifice: {
+                    tag: 'forge:horses',
+                    display_name: 'ritual.occultism.sacrifice.horses'
+                },
+                entity_to_summon: 'occultism:dragon_familiar',
+                ritual_dummy: {
+                    item: 'occultism:ritual_dummy/familiar_dragon'
+                },
+                ingredients: [
+                    { item: 'minecraft:lava_bucket' },
+                    { item: 'minecraft:flint_and_steel' },
+                    { tag: 'forge:storage_blocks/coal' },
+                    { tag: 'forge:storage_blocks/quartz' },
+                    { tag: 'forge:storage_blocks/gold' },
+                    { tag: 'forge:gunpowder' },
+                    { tag: 'forge:obsidian' },
+                    { tag: 'forge:obsidian' }
+                ],
+                result: {
+                    item: 'occultism:jei_dummy/none'
+                },
+                id: 'occultism:ritual/familiar_dragon'
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        const re = event.custom(recipe);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        recipe.type = 'occultism:ritual';
+        event.custom(recipe).id(recipe.id);
     });
 });
