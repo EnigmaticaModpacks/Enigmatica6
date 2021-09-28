@@ -583,6 +583,16 @@ const disabledItems = [
     'ironjetpacks:nitro_cell',
     'ironjetpacks:nitro_capacitor',
 
+    'losttrinkets:magical_herbs',
+    'losttrinkets:octopick',
+    'losttrinkets:tea_leaf',
+    'losttrinkets:book_o_enchanting',
+    'losttrinkets:blaze_heart',
+    'losttrinkets:turtle_shell',
+    'losttrinkets:tha_cloud',
+    'losttrinkets:rock_candy',
+    'losttrinkets:mad_aura',
+
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
