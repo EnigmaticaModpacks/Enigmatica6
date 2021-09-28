@@ -1430,6 +1430,38 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: `${id_prefix}terrasteel_boots`
             },
+            {
+                inputs: [
+                    'alexsmobs:moose_antler',
+                    'environmental:thief_hood',
+                    'alexsmobs:moose_antler',
+                    'atum:wolf_pelt',
+                    'atum:wolf_pelt',
+                    '#forge:storage_blocks/mana',
+                    'naturesaura:netherite_finder',
+                    '#forge:storage_blocks/mana'
+                ],
+                reagent: 'ars_nouveau:drygmy_shard',
+                output: 'ars_nouveau:drygmy_charm',
+                count: 1,
+                id: `ars_nouveau:drygmy_charm`
+            },
+            {
+                inputs: [
+                    'ars_nouveau:mana_bloom_crop',
+                    'ars_nouveau:mana_bloom',
+                    'ars_nouveau:mana_bloom_crop',
+                    'naturesaura:ancient_sapling',
+                    'naturesaura:ancient_sapling',
+                    '#forge:gems/mana',
+                    'botania:goddess_charm',
+                    '#forge:gems/mana'
+                ],
+                reagent: 'ars_nouveau:sylph_shards',
+                output: 'ars_nouveau:sylph_charm',
+                count: 1,
+                id: `ars_nouveau:sylph_charm`
+            },
 
             /// Patchouli Removals
             {
