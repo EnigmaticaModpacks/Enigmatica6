@@ -534,6 +534,15 @@ onEvent('recipes', (event) => {
             orbLevel: 1,
             id: `${id_prefix}light_gray_rune`
         },
+        {
+            inputs: ['bloodmagic:basiccuttingfluid', 'bloodmagic:tauoil', 'bloodmagic:lavasigil'],
+            output: 'bloodmagic:intermediatecuttingfluid',
+            count: 2,
+            syphon: 2100,
+            ticks: 200,
+            orbLevel: 3,
+            id: `${id_prefix}intermediatecuttingfluid`
+        },
 
         /// Patchouli Removals
         {
