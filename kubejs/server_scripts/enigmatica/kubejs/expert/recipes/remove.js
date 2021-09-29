@@ -20,6 +20,9 @@ onEvent('recipes', (event) => {
 
         'betterendforge:leather_to_stripes',
 
+        'bloodmagic:arc/weakbloodshard_tau',
+        /bloodmagic:alchemytable\/melee_damage_anointment/,
+
         'botania:mana_infusion/mana_diamond_block',
 
         /create:pressing\/\w*_ingot/,

@@ -92,40 +92,44 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of('Shield Projections are immune to the Wither').color('#4F0D75')]
         },
         {
-            items: ['bloodmagic:quick_draw_anointment'],
+            items: [/bloodmagic:quick_draw_anointment/],
             text: [Text.of('Grants Quick-Draw on Bows and Crossbows').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:fortune_anointment'],
+            items: [/bloodmagic:fortune_anointment/],
             text: [Text.of('Grants additional Fortune on Tools').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:holy_water_anointment'],
+            items: [/bloodmagic:holy_water_anointment/],
             text: [Text.of('Grants bonus Smite damage on Melee Attacks.').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:melee_anointment'],
+            items: [/bloodmagic:melee_anointment/],
             text: [Text.of('Grants bonus damage on Melee Attacks').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:bow_power_anointment'],
+            items: [/bloodmagic:bow_power_anointment/],
             text: [Text.of('Grants bonus damage on Bows and Crossbows').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:silk_touch_anointment'],
+            items: [/bloodmagic:silk_touch_anointment/],
             text: [Text.of('Grants Silk Touch').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:hidden_knowledge_anointment'],
+            items: [/bloodmagic:hidden_knowledge_anointment/],
             text: [Text.of('Grants bonus Experience from block harvests.').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:smelting_anointment'],
+            items: [/bloodmagic:smelting_anointment/],
             text: [Text.of('Grants Auto Smelt').color('#7e24b3')]
         },
         {
-            items: ['bloodmagic:looting_anointment'],
+            items: [/bloodmagic:looting_anointment/],
             text: [Text.of('Grants additional Looting on Weapons').color('#7e24b3')]
+        },
+        {
+            items: [/bloodmagic:bow_velocity_anointment/],
+            text: [Text.of('Grants additional projectile velocity on Bows and Crossbows').color('#7e24b3')]
         },
         {
             items: ['#enigmatica:burning_hot'],
