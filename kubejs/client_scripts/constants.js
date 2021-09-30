@@ -443,6 +443,7 @@ const recipesToHide = [
             'botania:pixie_ring',
             'botania:reach_ring',
             'botania:flighttiara_0',
+            'botania:runic_altar',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -477,6 +478,10 @@ const recipesToHide = [
     {
         category: 'ars_nouveau:apparatus',
         recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
+    },
+    {
+        category: 'astralsorcery:altar_attunement',
+        recipes_by_id: ['astralsorcery:altar/attunement_altar']
     },
     {
         category: 'botania:petals',

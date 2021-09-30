@@ -259,22 +259,6 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    '#resourcefulbees:resourceful_honeycomb_block',
-                    'ars_nouveau:summoning_crystal',
-                    '#resourcefulbees:resourceful_honeycomb_block',
-                    'naturesaura:token_joy',
-                    'naturesaura:token_anger',
-                    '#resourcefulbees:resourceful_honeycomb_block',
-                    'ars_nouveau:summoning_crystal',
-                    '#resourcefulbees:resourceful_honeycomb_block'
-                ],
-                reagent: 'minecraft:spawner',
-                output: 'naturesaura:animal_spawner',
-                count: 1,
-                id: `${id_prefix}animal_spawner`
-            },
-            {
-                inputs: [
                     'ars_nouveau:glyph_amplify',
                     '#forge:storage_blocks/regalium',
                     '#forge:storage_blocks/regalium',

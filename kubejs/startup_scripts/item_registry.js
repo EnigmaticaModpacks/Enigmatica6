@@ -38,7 +38,8 @@ onEvent('item.registry', (event) => {
         'craft_soulaxe',
         'craft_soulpickaxe',
         'craft_soulshovel',
-        'craft_soulscythe'
+        'craft_soulscythe',
+        'craft_attunement_altar'
     ];
 
     const assemblyTableItems = [

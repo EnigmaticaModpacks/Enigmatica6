@@ -940,6 +940,37 @@ onEvent('recipes', (event) => {
                 item: 'bloodmagic:soulscythe'
             },
             id: `${id_prefix}soulscythe`
+        },
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: {
+                item: 'occultism:book_of_binding_bound_marid'
+            },
+            pentacle_id: 'occultism:craft_marid',
+            duration: 24,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:gaia_guardian',
+                display_name: 'ritual.occultism.sacrifice.gaia_guardian'
+            },
+            ritual_dummy: {
+                item: 'kubejs:craft_attunement_altar'
+            },
+            ingredients: [
+                { tag: 'botania:runes/asgard' },
+                { tag: 'botania:runes/mana' },
+                { tag: 'botania:runes/midgard' },
+                { tag: 'botania:runes/mana' },
+                { tag: 'forge:ingots/gaia_spirit' },
+                { item: 'bloodmagic:corrosivecrystal' },
+                { tag: 'forge:ingots/gaia_spirit' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'bloodmagic:destructivecrystal' },
+                { tag: 'forge:ingots/gaia_spirit' },
+                { item: 'bloodmagic:vengefulcrystal' },
+                { tag: 'forge:ingots/gaia_spirit' }
+            ],
+            result: { item: 'astralsorcery:attunement_altar' },
+            id: `${id_prefix}attunement_altar`
         }
     ];
 

@@ -135,6 +135,7 @@ onEvent('recipes', (event) => {
         { output: 'botania:pixie_ring', id: 'botania:pixie_ring' },
         { output: 'botania:reach_ring', id: 'botania:reach_ring' },
         { output: 'botania:flight_tiara', id: 'botania:flighttiara_0' },
+        { output: 'botania:runic_altar', id: 'botania:runic_altar' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },

@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
                     type: 'astralsorcery:fluid',
                     fluid: [{ fluid: 'astralsorcery:liquid_starlight', amount: 1000 }]
                 },
-                E: { tag: 'botania:runes/summer' }
+                E: { tag: 'botania:runes/mana' }
             },
             altar_type: 0,
             duration: 100,
@@ -93,6 +93,37 @@ onEvent('recipes', (event) => {
             recipe_class: 'astralsorcery:attunement_upgrade',
             effects: ['astralsorcery:built_in_effect_discovery_central_beam', 'astralsorcery:upgrade_altar'],
             id: 'astralsorcery:altar/altar_attunement'
+        },
+        {
+            output: Item.of('naturesaura:animal_spawner', 1),
+            pattern: ['_____', '_ABA_', '_CDE_', '_ABA_', '_____'],
+            key: {
+                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                B: { item: 'ars_nouveau:summoning_crystal' },
+                C: { item: 'naturesaura:token_joy' },
+                D: { item: 'minecraft:spawner' },
+                E: { item: 'naturesaura:token_anger' }
+            },
+            altar_type: 0,
+            duration: 100,
+            starlight: 700,
+            effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
+            id: `${id_prefix}animal_spawner`
+        },
+        {
+            output: Item.of('botania:runic_altar', 1),
+            pattern: ['_____', '_AAA_', '_ABA_', '_CDC_', '_____'],
+            key: {
+                A: { item: 'botania:livingrock' },
+                B: { item: 'minecraft:conduit' },
+                C: { tag: 'forge:ingots/infused_iron' },
+                D: { item: 'naturesaura:aura_cache' }
+            },
+            altar_type: 0,
+            duration: 100,
+            starlight: 700,
+            effects: ['astralsorcery:built_in_effect_discovery_central_beam'],
+            id: `${id_prefix}runic_altar`
         },
         {
             output: Item.of('astralsorcery:altar_constellation', 1),
@@ -109,7 +140,7 @@ onEvent('recipes', (event) => {
                 C: { tag: 'forge:dusts/starmetal' },
                 D: { tag: 'botania:runes/vanaheim' },
                 E: { item: 'create:refined_radiance' },
-                F: { item: 'astralsorcery:infused_wood_arch' },
+                F: { item: 'botania:spectral_platform' },
                 G: { tag: 'forge:storage_blocks/starmetal' }
             },
             altar_type: 1,
@@ -159,30 +190,6 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'astralsorcery:altar/altar_radiance'
-        },
-        {
-            output: Item.of('astralsorcery:attunement_altar', 1),
-            pattern: ['A___A', '_BCB_', '_DED_', '_FGF_', 'A___A'],
-            key: {
-                A: { item: 'astralsorcery:marble_runed' },
-                B: { item: 'astralsorcery:resonating_gem' },
-                C: { item: 'bloodmagic:weakbloodshard' },
-                D: { tag: 'forge:ingots/starmetal' },
-                E: { item: 'astralsorcery:spectral_relay' },
-                F: { item: 'eidolon:gold_inlay' },
-                G: { item: 'create:shadow_steel' }
-            },
-            altar_type: 1,
-            duration: 200,
-            starlight: 1600,
-            effects: [
-                'astralsorcery:pillar_sparkle',
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:altar_default_lightbeams',
-                'astralsorcery:altar_default_sparkle',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: 'astralsorcery:altar/attunement_altar'
         },
         {
             output: Item.of('kubejs:observatory_lens', 1),
@@ -541,6 +548,27 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: `${id_prefix}flight_tiara`
+        },
+
+        /// Guidebook safe removals
+
+        {
+            output: Item.of('astralsorcery:attunement_altar', 1),
+            pattern: ['_____', '_____', '__A__', '_____', '_____'],
+            key: {
+                A: { item: 'kubejs:altered_recipe_indicator' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1600,
+            effects: [
+                'astralsorcery:pillar_sparkle',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_lightbeams',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/attunement_altar'
         }
     ];
 
