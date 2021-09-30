@@ -310,6 +310,18 @@ onEvent('jei.information', (event) => {
             description: [
                 `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
             ]
+        },
+        {
+            items: ['bloodmagic:weak_tau'],
+            description: [`Found in chests within the Demon Realm.`]
+        },
+        {
+            items: ['bloodmagic:strong_tau'],
+            description: [`Produced by growing Tau near mobs.`]
+        },
+        {
+            items: ['eidolon:unholy_symbol'],
+            description: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
         }
     ];
 

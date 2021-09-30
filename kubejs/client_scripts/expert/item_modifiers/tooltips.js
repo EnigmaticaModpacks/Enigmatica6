@@ -26,7 +26,7 @@ onEvent('item.tooltip', (event) => {
     const recipes = [
         {
             items: ['bloodmagic:soulpickaxe'],
-            text: ['Capable of mining Iesnium.']
+            text: [Text.of('Capable of mining Iesnium.').color('#7e24b3')]
         },
         {
             items: ['tconstruct:seared_melter'],
