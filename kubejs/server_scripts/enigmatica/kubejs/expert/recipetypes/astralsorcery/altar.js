@@ -85,7 +85,7 @@ onEvent('recipes', (event) => {
                     type: 'astralsorcery:fluid',
                     fluid: [{ fluid: 'astralsorcery:liquid_starlight', amount: 1000 }]
                 },
-                E: { tag: 'botania:runes/envy' }
+                E: { tag: 'botania:runes/summer' }
             },
             altar_type: 0,
             duration: 100,

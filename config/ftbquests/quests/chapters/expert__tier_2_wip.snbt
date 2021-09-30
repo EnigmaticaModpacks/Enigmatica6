@@ -129,8 +129,8 @@
 			]
 		}
 		{
-			x: -12.0d
-			y: 8.0d
+			x: -10.5d
+			y: 1.5d
 			hide_dependency_lines: true
 			dependencies: ["0CA3D2BAD8F2B868"]
 			id: "102775CD7F9CD338"
@@ -715,8 +715,8 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 11.5d
+			x: -2.5d
+			y: 12.0d
 			dependencies: ["269C18852281A11E"]
 			id: "7E3B061EC45D3617"
 			tasks: [{
@@ -985,8 +985,8 @@
 			}]
 		}
 		{
-			x: -10.5d
-			y: 7.0d
+			x: -9.5d
+			y: 8.0d
 			dependencies: ["5BE151C00A0DAFF3"]
 			id: "68292593CF029DEE"
 			tasks: [{
@@ -1029,8 +1029,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 12.5d
+			x: -1.5d
+			y: 13.0d
 			dependencies: ["7E3B061EC45D3617"]
 			id: "0B38C9F879EAAB18"
 			tasks: [{
@@ -1040,8 +1040,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 13.5d
+			x: -0.5d
+			y: 14.0d
 			dependencies: ["0B38C9F879EAAB18"]
 			id: "6784887421DAB91C"
 			tasks: [{
@@ -1051,8 +1051,8 @@
 			}]
 		}
 		{
-			x: -1.0d
-			y: 14.5d
+			x: 0.5d
+			y: 15.0d
 			dependencies: ["6784887421DAB91C"]
 			id: "1766CBDDEFE97113"
 			tasks: [{
@@ -1115,6 +1115,17 @@
 			dependencies: ["0000000000000FEB"]
 			hide: true
 			id: "48BA066E1B977D32"
+		}
+		{
+			x: -9.5d
+			y: 7.0d
+			dependencies: ["5BE151C00A0DAFF3"]
+			id: "346CA3855A33FE7F"
+			tasks: [{
+				id: "5E151DEE9A6849C8"
+				type: "item"
+				item: "astralsorcery:well"
+			}]
 		}
 	]
 }
