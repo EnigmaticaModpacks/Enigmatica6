@@ -2,8 +2,8 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/occultism/ritual/';
 
+    const id_prefix = 'enigmatica:expert/occultism/ritual/';
     recipes = [
         {
             ritual_type: 'occultism:craft',
@@ -813,8 +813,57 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'astralsorcery:attunement_altar' },
             id: `${id_prefix}attunement_altar`
+        },
+        {
+            ritual_type: 'occultism:craft',
+            activation_item: { tag: 'botania:runes/midgard' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:pharaohs',
+                display_name: 'ritual.occultism.sacrifice.pharaohs'
+            },
+            ritual_dummy: { item: 'kubejs:craft_mana_collector' },
+            ingredients: [
+                { tag: 'botania:runes/asgard' },
+                { tag: 'forge:ingots/gaia_spirit' },
+                { tag: 'botania:runes/niflheim' },
+                { item: 'botania:gaia_spreader' },
+
+                { tag: 'botania:runes/muspelheim' },
+                { tag: 'botania:runes/nidavellir' },
+                { tag: 'forge:storage_blocks/iesnium' },
+                { tag: 'botania:runes/joetunheim' },
+
+                { tag: 'botania:runes/alfheim' },
+                { tag: 'botania:runes/helheim' },
+                { tag: 'forge:storage_blocks/iesnium' },
+                { tag: 'botania:runes/vanaheim' }
+            ],
+            result: { item: 'mythicbotany:mana_collector' },
+            id: `${id_prefix}mana_collector`
         }
     ];
+
+    /*
+        Ingredient Display in JEI
+            ingredients: [
+                { item: '12 o'clock' },
+                { item: '3 o'clock' },
+                { item: '6 o'clock' },
+                { item: '9 o'clock' },
+
+                { item: '1 o'clock'},
+                { item: '2 o'clock' },
+                { item: '7 o'clock' },
+                { item: '8 o'clock' },
+
+                { item: '11 o'clock' },
+                { item: '4 o'clock' },
+                { item: '5 o'clock' },
+                { item: '10 o'clock' }
+            ],
+    */
 
     recipes.forEach((recipe) => {
         recipe.type = 'occultism:ritual';

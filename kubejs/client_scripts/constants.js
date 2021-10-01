@@ -448,6 +448,9 @@ const recipesToHide = [
             'botania:reach_ring',
             'botania:flighttiara_0',
             'botania:runic_altar',
+            'botania:mana_spreader',
+            'botania:elven_spreader',
+            'botania:gaia_spreader',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -456,6 +459,7 @@ const recipesToHide = [
             'mythicbotany:mana_infuser',
             'mythicbotany:fire_ring',
             'mythicbotany:ice_ring',
+            'mythicbotany:mana_collector',
 
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
