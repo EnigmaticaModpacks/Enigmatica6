@@ -328,6 +328,18 @@ onEvent('jei.information', (event) => {
             description: [
                 `If grown on Starmetal Ore, the growth rate is increased. The ore may revert during this process, so linking a Collector Crystal to it is important to convert it back.`
             ]
+        },
+        {
+            items: ['bloodmagic:weak_tau'],
+            description: [`Found in chests within the Demon Realm.`]
+        },
+        {
+            items: ['bloodmagic:strong_tau'],
+            description: [`Produced by growing Tau near mobs.`]
+        },
+        {
+            items: ['eidolon:unholy_symbol'],
+            description: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
         }
     ];
 
