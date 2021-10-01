@@ -387,6 +387,10 @@ const recipesToHide = [
     {
         category: 'minecraft:crafting',
         recipes_by_id: [
+            'apotheosis:hellshelf',
+            'apotheosis:seashelf',
+            'apotheosis:endshelf',
+
             'ars_nouveau:arcane_stone',
             'ars_nouveau:crystallizer',
             'ars_nouveau:potion_melder',

@@ -318,18 +318,19 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('apotheosis:hellshelf', 1),
-            pattern: ['A___A', '__BC_', '_DED_', '_FB__', 'A___A'],
+            pattern: ['AG__A', 'G_BC_', '_DED_', '_FB_G', 'A__GA'],
             key: {
                 A: { item: 'tconstruct:scorched_bricks' },
                 B: { tag: 'botania:runes/fire' },
                 C: { item: 'resourcefulbees:ghast_honeycomb' },
                 D: { tag: 'botania:runes/muspelheim' },
                 E: { tag: 'forge:bookshelves' },
-                F: { item: 'powah:crystal_blazing' }
+                F: { item: 'powah:crystal_blazing' },
+                G: { item: 'bloodmagic:reagentlava' }
             },
-            altar_type: 1,
+            altar_type: 2,
             duration: 200,
-            starlight: 1400,
+            starlight: 3000,
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
@@ -339,18 +340,19 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('apotheosis:seashelf', 1),
-            pattern: ['A___A', '__BC_', '_DED_', '_FB__', 'A___A'],
+            pattern: ['AG__A', 'G_BC_', '_DED_', '_FB_G', 'A__GA'],
             key: {
                 A: { item: 'upgrade_aquatic:prismarine_coral_block' },
                 B: { tag: 'botania:runes/water' },
                 C: { item: 'resourcefulbees:icy_honeycomb' },
                 D: { tag: 'botania:runes/vanaheim' },
                 E: { tag: 'forge:bookshelves' },
-                F: { item: 'powah:crystal_niotic' }
+                F: { item: 'powah:crystal_niotic' },
+                G: { item: 'bloodmagic:reagentwater' }
             },
-            altar_type: 1,
+            altar_type: 2,
             duration: 200,
-            starlight: 1400,
+            starlight: 3000,
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
@@ -360,18 +362,19 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('apotheosis:endshelf', 1),
-            pattern: ['A___A', '__BC_', '_DED_', '_FB__', 'A___A'],
+            pattern: ['AG__A', 'G_BC_', '_DED_', '_FB_G', 'A__GA'],
             key: {
                 A: { item: 'betterendforge:flavolite_runed' },
                 B: { tag: 'botania:runes/mana' },
                 C: { item: 'resourcefulbees:enderium_honeycomb' },
                 D: { tag: 'botania:runes/nidavellir' },
                 E: { tag: 'forge:bookshelves' },
-                F: { item: 'betterendforge:eternal_crystal' }
+                F: { item: 'betterendforge:eternal_crystal' },
+                G: { item: 'bloodmagic:reagentvoid' }
             },
-            altar_type: 1,
+            altar_type: 2,
             duration: 200,
-            starlight: 1400,
+            starlight: 3000,
             effects: [
                 'astralsorcery:built_in_effect_discovery_central_beam',
                 'astralsorcery:gateway_edge',
@@ -549,11 +552,367 @@ onEvent('recipes', (event) => {
             ],
             id: `${id_prefix}flight_tiara`
         },
+        {
+            output: Item.of('astralsorcery:shifting_star'),
+            altar_type: 1,
+            duration: 200,
+            starlight: 1600,
+            pattern: ['A___A', '_ECB_', '_CDC_', '_BCE_', 'A___A'],
+            key: {
+                A: { tag: 'forge:gems/niotic' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { item: 'astralsorcery:illumination_powder' },
+                D: {
+                    type: 'astralsorcery:fluid',
+                    fluid: [
+                        {
+                            fluid: 'industrialforegoing:ether_gas',
+                            amount: 1000
+                        }
+                    ]
+                },
+                E: { item: 'bloodmagic:reagentbinding' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_armara'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentbinding' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:armara',
+            relay_inputs: [
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:steadfastcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_armara'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_discidia'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentlava' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:discidia',
+            relay_inputs: [
+                { item: 'bloodmagic:vengefulcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:vengefulcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_discidia'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_evorsio'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentfastminer' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:evorsio',
+            relay_inputs: [
+                { item: 'bloodmagic:destructivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:destructivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_evorsio'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_vicio'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentair' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:vicio',
+            relay_inputs: [
+                { item: 'bloodmagic:defaultcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:defaultcrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_vicio'
+        },
+        {
+            output: Item.of('astralsorcery:shifting_star_aevitas'),
+            altar_type: 3,
+            duration: 600,
+            starlight: 4800,
+            pattern: ['__B__', '__A__', 'BCDCB', '__A__', '__B__'],
+            key: {
+                A: { item: 'bloodmagic:reagentgrowth' },
+                B: { tag: 'astralsorcery:stardust' },
+                C: { tag: 'astralsorcery:starmetal' },
+                D: { item: 'astralsorcery:shifting_star' }
+            },
+            focus_constellation: 'astralsorcery:aevitas',
+            relay_inputs: [
+                { item: 'bloodmagic:corrosivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' },
+                { item: 'bloodmagic:corrosivecrystal' },
+                { item: 'astralsorcery:illumination_powder' },
+                { tag: 'astralsorcery:stardust' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/shifting_star_aevitas'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_regeneration', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['_S_S_', 'R_Q_R', '_ALA_', 'S_Q_S', 'R___R'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'astralsorcery:stardust' },
+                A: { item: 'bloodmagic:holy_water_anointment_l' },
+                Q: { item: 'quark:pink_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_regeneration'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_damage', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['_S_S_', 'R_Q_R', '_ALA_', '_SQS_', 'R___R'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'astralsorcery:stardust' },
+                A: { item: 'bloodmagic:melee_anointment_l' },
+                Q: { item: 'quark:red_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_damage'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_fire', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['_S_S_', 'S_Q_S', '_ALA_', 'R_Q_R', '_R_R_'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'astralsorcery:stardust' },
+                A: { item: 'bloodmagic:smelting_anointment_l' },
+                Q: { item: 'quark:orange_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_fire'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_break', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['R___R', 'RSQSR', '_ALA_', '_SQS_', '_____'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'astralsorcery:stardust' },
+                A: { item: 'bloodmagic:hidden_knowledge_anointment_l' },
+                Q: { item: 'quark:yellow_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_break'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_growth', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['_R_R_', 'R_Q_R', '_ALA_', '_SQS_', 'S___S'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'naturesaura:gold_powder' },
+                A: { item: 'bloodmagic:fortune_anointment_l' },
+                Q: { item: 'quark:lime_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_growth'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_push', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['___R_', 'SSQR_', '_ALA_', '_RQSS', '_R___'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'astralsorcery:stardust' },
+                A: { item: 'bloodmagic:bow_velocity_anointment_l' },
+                Q: { item: 'quark:light_blue_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_push'
+        },
+        {
+            output: Item.of('astralsorcery:colored_lens_spectral', 3),
+            altar_type: 2,
+            duration: 400,
+            starlight: 2000,
+            pattern: ['S___S', '_SQS_', '_ALA_', 'R_Q_R', '_R_R_'],
+            key: {
+                R: { item: 'astralsorcery:resonating_gem' },
+                S: { item: 'atum:ectoplasm' },
+                A: { item: 'bloodmagic:silk_touch_anointment_l' },
+                Q: { item: 'quark:purple_rune' },
+                L: { item: 'astralsorcery:glass_lens' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/colored_lens_spectral'
+        },
 
         /// Guidebook safe removals
 
         {
-            output: Item.of('astralsorcery:attunement_altar', 1),
+            output: Item.of('astralsorcery:attunement_altar'),
             pattern: ['_____', '_____', '__A__', '_____', '_____'],
             key: {
                 A: { item: 'kubejs:altered_recipe_indicator' }
