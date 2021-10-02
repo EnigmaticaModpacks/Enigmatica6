@@ -159,6 +159,27 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'astralsorcery:altar/attunement_altar'
+        },
+        {
+            output: Item.of('astralsorcery:ritual_pedestal'),
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            pattern: ['A___A', '_BCB_', '_GEG_', '_FFF_', 'D___D'],
+            key: {
+                A: { tag: 'forge:ingots/arcane_gold' },
+                B: { item: 'astralsorcery:marble_chiseled' },
+                C: { item: 'minecraft:conduit' },
+                D: { item: 'astralsorcery:marble_pillar' },
+                E: { item: 'bloodmagic:masterritualstone' },
+                F: { item: 'astralsorcery:marble_runed' },
+                G: { tag: 'forge:inlays/arcane_gold' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/ritual_pedestal'
         }
     ];
 

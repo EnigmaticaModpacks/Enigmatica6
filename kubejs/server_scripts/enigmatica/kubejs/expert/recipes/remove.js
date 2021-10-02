@@ -28,6 +28,8 @@ onEvent('recipes', (event) => {
         /create:pressing\/\w*_ingot/,
 
         'darkutils:crafting/rune_damage_player',
+        'darkutils:crafting/blank_plate',
+        /darkutils:crafting\/export_plate/,
 
         'farmersdelight:book_from_canvas',
 
