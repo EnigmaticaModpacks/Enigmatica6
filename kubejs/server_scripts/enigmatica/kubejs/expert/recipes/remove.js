@@ -144,6 +144,8 @@ onEvent('recipes', (event) => {
         { output: 'botania:mana_spreader', id: 'botania:mana_spreader' },
         { output: 'botania:elven_spreader', id: 'botania:elven_spreader' },
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
+        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dust' },
+        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dye' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
