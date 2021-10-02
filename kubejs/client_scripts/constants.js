@@ -387,6 +387,10 @@ const recipesToHide = [
     {
         category: 'minecraft:crafting',
         recipes_by_id: [
+            'apotheosis:hellshelf',
+            'apotheosis:seashelf',
+            'apotheosis:endshelf',
+
             'ars_nouveau:arcane_stone',
             'ars_nouveau:crystallizer',
             'ars_nouveau:potion_melder',
@@ -443,6 +447,10 @@ const recipesToHide = [
             'botania:pixie_ring',
             'botania:reach_ring',
             'botania:flighttiara_0',
+            'botania:runic_altar',
+            'botania:mana_spreader',
+            'botania:elven_spreader',
+            'botania:gaia_spreader',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -451,6 +459,7 @@ const recipesToHide = [
             'mythicbotany:mana_infuser',
             'mythicbotany:fire_ring',
             'mythicbotany:ice_ring',
+            'mythicbotany:mana_collector',
 
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
@@ -479,8 +488,16 @@ const recipesToHide = [
         recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
     },
     {
+        category: 'astralsorcery:altar_attunement',
+        recipes_by_id: ['astralsorcery:altar/attunement_altar']
+    },
+    {
         category: 'botania:petals',
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    },
+    {
+        category: 'botania:mana_pools',
+        recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye']
     },
     {
         category: 'bloodmagic:alchemytable',

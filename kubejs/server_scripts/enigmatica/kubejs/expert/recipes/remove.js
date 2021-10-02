@@ -28,6 +28,8 @@ onEvent('recipes', (event) => {
         /create:pressing\/\w*_ingot/,
 
         'darkutils:crafting/rune_damage_player',
+        'darkutils:crafting/blank_plate',
+        /darkutils:crafting\/export_plate/,
 
         'farmersdelight:book_from_canvas',
 
@@ -138,12 +140,19 @@ onEvent('recipes', (event) => {
         { output: 'botania:pixie_ring', id: 'botania:pixie_ring' },
         { output: 'botania:reach_ring', id: 'botania:reach_ring' },
         { output: 'botania:flight_tiara', id: 'botania:flighttiara_0' },
+        { output: 'botania:runic_altar', id: 'botania:runic_altar' },
+        { output: 'botania:mana_spreader', id: 'botania:mana_spreader' },
+        { output: 'botania:elven_spreader', id: 'botania:elven_spreader' },
+        { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
+        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dust' },
+        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dye' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
         { output: 'mythicbotany:mana_infuser', id: 'mythicbotany:mana_infuser' },
         { output: 'mythicbotany:fire_ring', id: 'mythicbotany:fire_ring' },
         { output: 'mythicbotany:ice_ring', id: 'mythicbotany:ice_ring' },
+        { output: 'mythicbotany:mana_collector', id: 'mythicbotany:mana_collector' },
 
         { output: 'naturesaura:calling_spirit', id: 'naturesaura:calling_spirit' },
         { output: 'naturesaura:animal_spawner', id: 'naturesaura:animal_spawner' },

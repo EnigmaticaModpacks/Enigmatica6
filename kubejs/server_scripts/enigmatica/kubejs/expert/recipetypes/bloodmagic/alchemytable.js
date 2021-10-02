@@ -3,7 +3,6 @@ onEvent('recipes', (event) => {
         return;
     }
     const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
-
     const recipes = [
         {
             inputs: ['ars_nouveau:magic_clay', 'minecraft:blaze_powder'],
@@ -542,6 +541,154 @@ onEvent('recipes', (event) => {
             ticks: 200,
             orbLevel: 3,
             id: `${id_prefix}intermediatecuttingfluid`
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"eidolon:anchored"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:anchor_plate',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/anchor_plate'
+        },
+        {
+            inputs: ['darkutils:blank_plate', 'occultism:datura', 'bloodmagic:watersigil'],
+            output: 'darkutils:rune_nausea',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_nausea'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('naturesaura:aura_bottle', '{stored_type:"naturesaura:end"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_blindness',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_blindness'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"atmospheric:worsening"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_hunger',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_hunger'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"undergarden:glowing"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_glowing',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_glowing'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"apotheosis:fatigue"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_fatigue',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_fatigue'
+        },
+        {
+            inputs: ['darkutils:blank_plate', 'alexsmobs:lava_bottle', 'bloodmagic:lavasigil'],
+            output: 'darkutils:rune_fire',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_fire'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"apotheosis:wither"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_wither',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_wither'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:slowness"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_slowness',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_slowness'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:weakness"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_weakness',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_weakness'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:poison"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_poison',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_poison'
+        },
+        {
+            inputs: [
+                'darkutils:blank_plate',
+                Item.of('minecraft:potion', '{Potion:"minecraft:harming"}'),
+                'bloodmagic:watersigil'
+            ],
+            output: 'darkutils:rune_damage',
+            count: 1,
+            syphon: 300,
+            ticks: 200,
+            orbLevel: 1,
+            id: 'darkutils:crafting/rune_damage'
         },
 
         /// Patchouli Removals
