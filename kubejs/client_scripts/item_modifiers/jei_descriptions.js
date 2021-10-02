@@ -11,7 +11,7 @@ onEvent('jei.information', (event) => {
         {
             items: ['astralsorcery:stardust'],
             description: [
-                'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
+                'Obtained by left-clicking a Starmetal Ingot in-world with a Starmetal Cutting Tool. See the Astral Tome for more information.'
             ]
         },
         {
@@ -309,6 +309,24 @@ onEvent('jei.information', (event) => {
             items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
             description: [
                 `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
+            ]
+        },
+        {
+            items: ['astralsorcery:gem_crystal_cluster'],
+            description: [
+                `Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with an Illumination Powder.`,
+                ` `,
+                `Different varieties form at different times of the day.`
+            ]
+        },
+        {
+            items: ['astralsorcery:celestial_crystal_cluster'],
+            description: [`Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`]
+        },
+        {
+            items: ['astralsorcery:celestial_crystal_cluster'],
+            description: [
+                `If grown on Starmetal Ore, the growth rate is increased. The ore may revert during this process, so linking a Collector Crystal to it is important to convert it back.`
             ]
         },
         {
