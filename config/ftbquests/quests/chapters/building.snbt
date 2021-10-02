@@ -16,7 +16,13 @@
 			y: 0.0d
 			shape: "gear"
 			subtitle: "Dirt Hut No More"
-			description: ["INTRO_DESC"]
+			description: [
+				"Welcome to the Building Chapter"
+				""
+				"This section contains a list of building/decoration based mods, and a handful of tools to help you get the job done, and set you on your way to become a seasoned builder."
+				""
+				"~Ridanisaurus Rid"
+			]
 			id: "058D3BEB64C74E27"
 			tasks: [{
 				id: "4A2592C4467CEAF6"
@@ -24,17 +30,24 @@
 				title: "Builder"
 			}]
 			rewards: [{
-				id: "7FCE38283295ED61"
-				type: "xp"
-				xp: 100
+				id: "6BCFA4922355B43F"
+				type: "item"
+				item: "create:builders_tea"
+				count: 4
+				random_bonus: 4
 			}]
 		}
 		{
+			title: "Macaw's Mods"
 			icon: "minecraft:oak_log"
 			x: 0.0d
 			y: -2.0d
 			subtitle: "A mod for every occasion"
-			description: ["MACAW_DESC"]
+			description: [
+				"Macaw has developed a handful of mods to cover a wide range of wood and vanilla materials based decorative blocks such as roofs, bridges, doors, windows ..etc."
+				""
+				"The quests above should give you an idea of what type of decorative blocks are available to you."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "3834BBF4818E4ABE"
 			tasks: [{
@@ -51,7 +64,7 @@
 			}]
 		}
 		{
-			title: "Windows + Additions"
+			title: "Windows, and Blinds"
 			icon: "mcwwindows:oak_window2"
 			x: 1.5d
 			y: -3.5d
@@ -69,6 +82,7 @@
 			}]
 		}
 		{
+			title: "Roofs, Tiles, and Gutters"
 			icon: "mcwroofs:oak_roof"
 			x: 0.5d
 			y: -4.0d
@@ -86,6 +100,7 @@
 			}]
 		}
 		{
+			title: "Trapdoors"
 			icon: "mcwtrpdoors:oak_cottage_trapdoor"
 			x: -0.5d
 			y: -4.0d
@@ -103,6 +118,7 @@
 			}]
 		}
 		{
+			title: "Doors"
 			icon: "mcwdoors:oak_cottage_door"
 			x: -1.5d
 			y: -3.5d
@@ -120,7 +136,7 @@
 			}]
 		}
 		{
-			title: "Fences and Walls"
+			title: "Fences, and Walls"
 			icon: "mcwfences:oak_picket_fence"
 			x: 2.0d
 			y: -2.5d
@@ -138,6 +154,7 @@
 			}]
 		}
 		{
+			title: "Bridges"
 			icon: "mcwbridges:oak_log_bridge_middle"
 			x: -2.0d
 			y: -2.5d
@@ -158,9 +175,13 @@
 			title: "Masonry"
 			icon: "masonry:andesitetiled"
 			x: 1.0d
-			y: -1.5d
+			y: 1.5d
 			subtitle: "Channel your inner Dwarf"
-			description: ["MASONRY_DESC"]
+			description: [
+				"Masonry allows you to carve most of the Vanilla stones into different decorative patterns to help bring a bit of an artistic touch to your base."
+				""
+				"To start, place a Vanilla type of stone such as Granite, or Prismarine in a Stonecutter, and carve away."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "63FE93055CE4162C"
 			tasks: [{
@@ -180,7 +201,11 @@
 			x: -1.0d
 			y: -1.5d
 			subtitle: "It's like IKEA, but without the Meatballs"
-			description: ["CRAY_DESC"]
+			description: [
+				"Are you building a kitchen, and you wish there were sinks and counters with different (both Vanilla and Modded) wood and stone options that matches your build? What about a small backyard or garden with a Grill to BBQ your meats?"
+				""
+				"MrCrayfish's Furniture More offers a massive collection of decorative and functional blocks for you to select from, and spice up your living space."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "32824050418C71EB"
 			tasks: [{
@@ -201,9 +226,9 @@
 			title: "Connected Glass"
 			icon: "connectedglass:clear_glass"
 			x: 2.0d
-			y: -1.0d
-			subtitle: "It's like a love story in the making"
-			description: ["CONNECTEDGLASS_DESC"]
+			y: 1.0d
+			subtitle: "I can see all obstacles in my way"
+			description: ["Connected Glass adds additional glass blocks and panes with connected textures. This of course covers the clear glass, and all 16 dyed glass types from Vanilla."]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "66099AFAA1A6043F"
 			tasks: [{
@@ -223,10 +248,14 @@
 		{
 			title: "Simply Light"
 			icon: "simplylight:illuminant_block_on"
-			x: -2.0d
-			y: -1.0d
+			x: 0.0d
+			y: 2.0d
 			subtitle: "Let there be light"
-			description: ["LIGHT_DESC"]
+			description: [
+				"The mod name really says it all. It's simply just that, a lights mod."
+				""
+				"But, don't let the name fool you. Simply Light offers a wide range of Lights to keep your base lit, with style."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "42FB32CC99E66E3F"
 			tasks: [{
@@ -249,7 +278,11 @@
 			x: 2.5d
 			y: 0.0d
 			subtitle: "Sky is the limit"
-			description: ["FRAMEDBLOCKS_DESC"]
+			description: [
+				"Are you looking for Glass Stairs? or maybe a Netherite door? How about an Endstone Sign? Well, look no further."
+				""
+				"Framed Blocks introduces a blank template of various shapes and blocks which mimics the texture of the block clicked on them."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "0798D5139479A837"
 			tasks: [{
@@ -276,7 +309,13 @@
 			x: -2.5d
 			y: 0.0d
 			subtitle: "Build-a-Bear, but with Drawers"
-			description: ["FRAMEDDRAWERS_DESC"]
+			description: [
+				"If you are fed up with having an Oak Drawer that is sticking like a sore thumb in the middle of your build, completely mismatching your building palette?"
+				""
+				"Framed Drawers gives you a blank template which you can combine in a crafting table with different blocks to use their texture instead, whether it's the front, the sides, or the trim, these Framed Drawers are highly customizable visually."
+				""
+				"Needless to say, this mod offers more than just a signel drawer style templates, it actually has a template for each type of drawers, whether it is a 2x2, a Compacting Drawer, or even a Drawer Controller."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "473BE440ECB1CEDF"
 			tasks: [{
@@ -301,9 +340,13 @@
 			title: "Chipped"
 			icon: "chipped:mason_table"
 			x: 2.0d
-			y: 1.0d
+			y: -1.0d
 			subtitle: "Nothing a little wood filler won't fix"
-			description: ["CHIPPED_DESC"]
+			description: [
+				"Chipped offers a massive collection of carved Vanilla blocks, whether it is decorative glass, quilted wool for nice carpet design, or even an omenious chisled gilded blackstone. Chipped got you covered."
+				""
+				"To start, build one of the carving stations available which function in a similar way as a Vanilla Stonecutter, place the apprioriate block in it, and select a different output that suits your building needs."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "1EAFB4FB2CF09F26"
 			tasks: [{
@@ -326,7 +369,11 @@
 			x: -2.0d
 			y: 1.0d
 			subtitle: "Immersive Decorating"
-			description: ["ENGINEERSDECOR_DESC"]
+			description: [
+				"If you love the industrial look of Immersive Engineering, then you will probably love Engineer's Decor."
+				""
+				"This mod adds a handful of both functional and decorative blocks that should feel right at home in your Immersive Engineering base. Whether it is a DANGER! sign, or an industrial looking Crafting Station, Engineer's Decor got you covered."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "68E143E444AF44C2"
 			tasks: [{
@@ -347,8 +394,12 @@
 			icon: "dustrial_decor:sheet_metal_treading"
 			x: -1.0d
 			y: 1.5d
-			subtitle: "Safty Helmet should be worn at all times"
-			description: ["DUSTRIALDECOR_DESC"]
+			subtitle: "Safty Helmet must be worn at all times!"
+			description: [
+				"Are you building a Factory to house all your loud machinary? Does that power station building feel open to wandering wild life and hostile mobs? Do you wish you could put up a chain fence to stop those pesky illagers from interupting you? Well then ..."
+				""
+				"'Dustrial Craft offers all the above, and more. This mod offers a decent range of decorative blocks with industrial theme in mind."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "201E7950E17180BD"
 			tasks: [{
@@ -381,9 +432,13 @@
 			title: "Decorative Blocks"
 			icon: "decorative_blocks:oak_support"
 			x: 1.0d
-			y: 1.5d
+			y: -1.5d
 			subtitle: "Grab a chair, and sit by the hearth"
-			description: ["DECORATIVEBLOCKS_DESC"]
+			description: [
+				"If you are into your medieval or rustic builds, whether it is a castle on a cliff, a cabin in the woods, or a hearty tavern for a weary traveler, Decorative Blocks will have some blocks that fits your style."
+				""
+				"Decorative Blocks offers a nicely textured, and well designed blocks for your building needs."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "03D0B336BB7CEFE1"
 			tasks: [{
@@ -442,10 +497,14 @@
 		{
 			title: "Valhelsia Structures"
 			icon: "valhelsia_structures:big_orange_glazed_jar"
-			x: 0.0d
-			y: 2.0d
+			x: -2.0d
+			y: -1.0d
 			subtitle: "Raid \\& Pillager, or I guess you can just Craft this stuff"
-			description: ["VALHELSIA_DESC"]
+			description: [
+				"Valhelsia Strucutres generates different types of pre-built strucutres in the world, such as player housing, a blacksmith hut, or even an abandoned fort."
+				""
+				"Most of the custom decorative blocks used in these structures can also be crafted for some extra details here or there in your build."
+			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "1DEA7DBF6D1A1C6A"
 			tasks: [{
@@ -496,7 +555,15 @@
 			x: 5.0d
 			y: 2.0d
 			subtitle: "It's like the Chisel, but it's not"
-			description: ["PSC_DESC"]
+			description: [
+				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!"
+				""
+				"All the power of a Stone Cutter, now in a compact portable format that fits in the palm of your hand."
+				""
+				"Disclaimer: Will not actually cook or clean. Not for Commercial Use"
+				""
+				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "085A8424875A2B23"
 			tasks: [{
@@ -745,7 +812,7 @@
 			}
 			x: 7.5d
 			y: 3.0d
-			subtitle: "It destructs stuff"
+			subtitle: "Guess what it does .."
 			description: ["DESG_DESC"]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "095108AB50598C04"
@@ -816,7 +883,13 @@
 			y: -3.0d
 			shape: "gear"
 			subtitle: "Magical building technologies "
-			description: ["BOTANIA_INTRO_DESC"]
+			description: [
+				"Botania offers a variaty of building and terraforming rods."
+				""
+				"With the cost of some Mana, you can place blocks, exchange blocks, or full on terraform a whole section of your world."
+				""
+				"The connected quests will have a brief description of what each rod does. However, for more detailed information please refer back to your Lexica Botania."
+			]
 			id: "3F1801BBAF8A29FD"
 			tasks: [{
 				id: "0A6C5E41EEDC3E80"
@@ -840,7 +913,11 @@
 			}
 			x: 7.0d
 			y: -4.0d
-			description: ["CRUST_DESC"]
+			description: [
+				"This rods allows you to swap any block in the world with the select block at the cost of Mana."
+				""
+				"To start, Shift+Right Click a block to select it, and then right click other blocks to start the exchange."
+			]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "3A0988C3AEFBAAC5"
 			tasks: [{
@@ -866,7 +943,7 @@
 			icon: "botania:cobble_rod"
 			x: 5.0d
 			y: -4.0d
-			description: ["DEPTH_DESC"]
+			description: ["Places Cobblestone Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "261056A552909227"
 			tasks: [{
@@ -888,7 +965,7 @@
 			icon: "botania:dirt_rod"
 			x: 7.5d
 			y: -3.0d
-			description: ["LANDS_DESC"]
+			description: ["Places Dirt Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "75361161CEA1E406"
 			tasks: [{
@@ -1109,28 +1186,49 @@
 			x: -6.0d
 			y: -1.5d
 			shape: "square"
-			subtitle: "A builder with a plan"
-			description: ["TMA_DESC"]
+			subtitle: "I love it when a plan comes together"
+			description: [
+				"If you are the type of player that avoid building a base and lives in a dirt hole somewhere because you are not confident with your building skills, or simply don't have the time and energy to plan out a full base design, this this mod is for you."
+				""
+				"The Mighty Architect allows you to plot down a dynamic design where you get to select how big or small the build is, how many floors, roof style, building materials ..etc. Once your design is complete, it will save it as a schematic for you which you can then use Create Cannon to build it for you."
+				""
+				"If the above introduction intrigues you, and you would like to learn more, or even see this mod in action, this short 2 mins video by the Mod Dev will show you the ins and outs of this wonderful mod."
+				"Link: https://youtu.be/VdoKmdYubBM"
+			]
 			id: "4407C59E32585B96"
 			tasks: [{
 				id: "3671CC5B42EC4DF8"
 				type: "checkmark"
 				title: "The Mighty Architect"
 			}]
-			rewards: [{
-				id: "3E564C831D52F1BD"
-				type: "item"
-				item: "create:builders_tea"
-				count: 2
-				random_bonus: 2
-			}]
+			rewards: [
+				{
+					id: "3E564C831D52F1BD"
+					type: "item"
+					item: "create:builders_tea"
+					count: 2
+					random_bonus: 2
+				}
+				{
+					id: "7FB21C0F074D7720"
+					type: "item"
+					item: "create:empty_schematic"
+				}
+				{
+					id: "1DDF6EF97DE63E61"
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 8
+					random_bonus: 8
+				}
+			]
 		}
 		{
 			title: "Rod of the Highlands"
 			icon: "botania:skydirt_rod"
 			x: 4.5d
 			y: -3.0d
-			description: ["HIGHLANDS_DESC"]
+			description: ["Places blocks of Dirt in the air, which makes it the perfect tool for floating builds without needing to pillar up from the ground."]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "624AAFDABA481B08"
 			tasks: [{
