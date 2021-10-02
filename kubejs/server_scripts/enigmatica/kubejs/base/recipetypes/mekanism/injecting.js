@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
         {
             output: 'emendatusenigmatica:sulfur_dust',
             input: '#forge:gunpowder',
-            gas: { tag: 'mekanism:hydrogen_chloride', amount: 1 },
+            gas: { gas: 'mekanism:hydrogen_chloride', amount: 1 },
             id: 'mekanism:injecting/gunpowder_to_sulfur'
         }
     ];
