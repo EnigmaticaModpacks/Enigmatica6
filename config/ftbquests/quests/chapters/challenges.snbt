@@ -167,7 +167,11 @@
 			title: "Limitless Lava"
 			x: -3.0d
 			y: 0.0d
-			description: ["Fill a Supreme Black Hole Tank with Lava."]
+			description: [
+				"Fill a Supreme Black Hole Tank with Lava."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "64A6812D6EFF4308"
 			tasks: [{
@@ -326,7 +330,11 @@
 			}
 			x: -3.0d
 			y: 1.0d
-			description: ["Fill a Supreme Black Hole Tank with Water."]
+			description: [
+				"Fill a Supreme Black Hole Tank with Water."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "6D463AE8FE933401"
 			tasks: [{
@@ -485,7 +493,11 @@
 			}
 			x: -3.0d
 			y: -1.0d
-			description: ["Fill a Supreme Black Hole Tank with Oil."]
+			description: [
+				"Fill a Supreme Black Hole Tank with Oil."
+				""
+				"All sides of the tank need to be set to \"Enabled\" for the Tank to be detected."
+			]
 			dependencies: ["1C6E46EA96373E74"]
 			id: "378F01CE074D79A0"
 			tasks: [{
@@ -872,7 +884,7 @@
 				{
 					id: "4801DE27B925DA50"
 					type: "item"
-					title: "Infinity Drill: Artififact Tier"
+					title: "Infinity Drill: Artifact Tier"
 					icon: {
 						id: "industrialforegoing:infinity_drill"
 						Count: 1b
@@ -907,18 +919,11 @@
 									}
 								}
 								{
-									id: "itemfilters:strong_nbt"
+									id: "itemfilters:weak_nbt"
 									Count: 1b
 									tag: {
 										value: {
-											CanCharge: 1b
-											Special: 0b
 											Selected: "ARTIFACT"
-											Energy: 9223372036854775807L
-											Fluid: {
-												FluidName: "biofuel"
-												Amount: 0
-											}
 										}
 									}
 								}
@@ -929,7 +934,7 @@
 				{
 					id: "7FD0249142690FBD"
 					type: "item"
-					title: "Infinity Hammer: Artififact Tier"
+					title: "Infinity Hammer: Artifact Tier"
 					icon: {
 						id: "industrialforegoing:infinity_hammer"
 						Count: 1b
@@ -951,35 +956,27 @@
 						tag: {
 							items: [
 								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
 									id: "industrialforegoing:infinity_hammer"
 									Count: 1b
 									tag: {
-										CanCharge: 1b
+										CanCharge: 1
 										Energy: 9223372036854775807L
 										Fluid: {
 											FluidName: "biofuel"
 											Amount: 0
 										}
-										Special: 0b
+										Special: 0
 										Selected: "ARTIFACT"
 										Beheading: 0
-									}
-								}
-								{
-									id: "itemfilters:strong_nbt"
-									Count: 1b
-									tag: {
-										value: {
-											CanCharge: 1b
-											Energy: 9223372036854775807L
-											Fluid: {
-												FluidName: "biofuel"
-												Amount: 0
-											}
-											Special: 0b
-											Selected: "ARTIFACT"
-											Beheading: 0
-										}
 									}
 								}
 							]
@@ -989,7 +986,7 @@
 				{
 					id: "625720B1A137C6DF"
 					type: "item"
-					title: "Infinity Trident: Artififact Tier"
+					title: "Infinity Trident: Artifact Tier"
 					icon: {
 						id: "industrialforegoing:infinity_trident"
 						Count: 1b
@@ -1013,39 +1010,29 @@
 						tag: {
 							items: [
 								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
 									id: "industrialforegoing:infinity_trident"
 									Count: 1b
 									tag: {
-										CanCharge: 1b
+										CanCharge: 1
 										Riptide: 0
-										Channeling: 0b
+										Channeling: 0
 										Energy: 9223372036854775807L
 										Fluid: {
 											FluidName: "biofuel"
 											Amount: 0
 										}
-										Special: 0b
+										Special: 0
 										Selected: "ARTIFACT"
 										Loyalty: 0
-									}
-								}
-								{
-									id: "itemfilters:strong_nbt"
-									Count: 1b
-									tag: {
-										value: {
-											CanCharge: 1b
-											Riptide: 0
-											Channeling: 0b
-											Energy: 9223372036854775807L
-											Fluid: {
-												FluidName: "biofuel"
-												Amount: 0
-											}
-											Special: 0b
-											Selected: "ARTIFACT"
-											Loyalty: 0
-										}
 									}
 								}
 							]
@@ -1055,7 +1042,7 @@
 				{
 					id: "314182BBA59CFDD8"
 					type: "item"
-					title: "Infinity Saw: Artififact Tier"
+					title: "Infinity Saw: Artifact Tier"
 					icon: {
 						id: "industrialforegoing:infinity_saw"
 						Count: 1b
@@ -1076,32 +1063,25 @@
 						tag: {
 							items: [
 								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
 									id: "industrialforegoing:infinity_saw"
 									Count: 1b
 									tag: {
-										CanCharge: 1b
-										Special: 0b
+										CanCharge: 1
+										Special: 0
 										Selected: "ARTIFACT"
 										Energy: 9223372036854775807L
 										Fluid: {
 											FluidName: "biofuel"
 											Amount: 0
-										}
-									}
-								}
-								{
-									id: "itemfilters:strong_nbt"
-									Count: 1b
-									tag: {
-										value: {
-											CanCharge: 1b
-											Special: 0b
-											Selected: "ARTIFACT"
-											Energy: 9223372036854775807L
-											Fluid: {
-												FluidName: "biofuel"
-												Amount: 0
-											}
 										}
 									}
 								}
@@ -1112,7 +1092,7 @@
 				{
 					id: "09A7BEA11BB1C9B1"
 					type: "item"
-					title: "Infinity Backpack: Artififact Tier"
+					title: "Infinity Backpack: Artifact Tier"
 					icon: {
 						id: "industrialforegoing:infinity_backpack"
 						Count: 1b
@@ -1129,25 +1109,22 @@
 						tag: {
 							items: [
 								{
-									id: "industrialforegoing:infinity_backpack"
-									Count: 1b
-									tag: {
-										CanCharge: 1b
-										Special: 0b
-										Selected: "ARTIFACT"
-										Energy: 9223372036854775807L
-									}
-								}
-								{
-									id: "itemfilters:strong_nbt"
+									id: "itemfilters:weak_nbt"
 									Count: 1b
 									tag: {
 										value: {
-											CanCharge: 1b
-											Special: 0b
 											Selected: "ARTIFACT"
-											Energy: 9223372036854775807L
 										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_backpack"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Special: 0
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
 									}
 								}
 							]
@@ -1158,7 +1135,7 @@
 					id: "1C420C2B58ADD9F4"
 					type: "item"
 					title: "Infinity Nuke: Artifact Tier"
-					item: {
+					icon: {
 						id: "industrialforegoing:infinity_nuke"
 						Count: 1b
 						tag: {
@@ -1172,12 +1149,43 @@
 							}
 						}
 					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_nuke"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Special: 0
+										Selected: "ARTIFACT"
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+									}
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "50D6D2760038E934"
 					type: "item"
 					title: "Infinity Launcher: Artifact Tier"
-					item: {
+					icon: {
 						id: "industrialforegoing:infinity_launcher"
 						Count: 1b
 						tag: {
@@ -1190,6 +1198,38 @@
 							Special: 0
 							Selected: "ARTIFACT"
 							Plunger: 0
+						}
+					}
+					item: {
+						id: "itemfilters:and"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "itemfilters:weak_nbt"
+									Count: 1b
+									tag: {
+										value: {
+											Selected: "ARTIFACT"
+										}
+									}
+								}
+								{
+									id: "industrialforegoing:infinity_launcher"
+									Count: 1b
+									tag: {
+										CanCharge: 1
+										Energy: 9223372036854775807L
+										Fluid: {
+											FluidName: "biofuel"
+											Amount: 0
+										}
+										Special: 0
+										Selected: "ARTIFACT"
+										Plunger: 0
+									}
+								}
+							]
 						}
 					}
 				}

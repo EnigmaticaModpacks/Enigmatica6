@@ -94,14 +94,52 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:ender_eye'
             },
             id: 'botania:forest_eye'
+        },
+        {
+            output: 'botania:knockback_belt',
+            pattern: ['B  ', ' C ', 'D A'],
+            key: {
+                A: '#botania:runes/earth',
+                B: '#botania:runes/fire',
+                C: 'eidolon:basic_belt',
+                D: '#forge:ingots/manasteel'
+            },
+            id: 'botania:knockback_belt'
+        },
+        {
+            output: 'botania:travel_belt',
+            pattern: ['B  ', ' C ', 'D A'],
+            key: {
+                A: '#botania:runes/air',
+                B: '#botania:runes/earth',
+                C: 'eidolon:basic_belt',
+                D: '#forge:ingots/manasteel'
+            },
+            id: 'botania:travel_belt'
+        },
+        {
+            output: 'botania:crafting_halo',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'botania:corporea_spark',
+                B: 'ars_nouveau:marvelous_clay',
+                C: 'ars_nouveau:glyph_craft'
+            },
+            id: 'botania:crafting_halo'
+        },
+        {
+            output: 'botania:glass_pickaxe',
+            pattern: ['ABA', ' C ', ' C '],
+            key: {
+                A: 'glassential:glass_ghostly',
+                B: '#forge:gems/mana',
+                C: 'naturesaura:ancient_stick'
+            },
+            id: 'botania:glass_pickaxe'
         }
     ];
 
     newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

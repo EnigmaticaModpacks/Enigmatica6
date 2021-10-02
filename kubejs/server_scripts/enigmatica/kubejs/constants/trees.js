@@ -841,6 +841,143 @@ const treeRegistry = [
                 substrate: 'slimy_dirt',
                 sap: 'tconstruct:ender_slime',
                 rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:fir_sapling',
+                trunk: 'projectvibrantjourneys:fir_log',
+                leaf: 'projectvibrantjourneys:fir_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:pine_sapling',
+                trunk: 'projectvibrantjourneys:pine_log',
+                leaf: 'projectvibrantjourneys:pine_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:redwood_sapling',
+                trunk: 'projectvibrantjourneys:redwood_log',
+                leaf: 'projectvibrantjourneys:redwood_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:willow_sapling',
+                trunk: 'projectvibrantjourneys:willow_log',
+                leaf: 'projectvibrantjourneys:willow_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:mangrove_sapling',
+                trunk: 'projectvibrantjourneys:mangrove_log',
+                leaf: 'projectvibrantjourneys:mangrove_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:palm_sapling',
+                trunk: 'projectvibrantjourneys:palm_log',
+                leaf: 'projectvibrantjourneys:palm_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:cottonwood_sapling',
+                trunk: 'projectvibrantjourneys:cottonwood_log',
+                leaf: 'projectvibrantjourneys:cottonwood_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:aspen_sapling',
+                trunk: 'projectvibrantjourneys:aspen_log',
+                leaf: 'projectvibrantjourneys:aspen_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:juniper_sapling',
+                trunk: 'projectvibrantjourneys:juniper_log',
+                leaf: 'projectvibrantjourneys:juniper_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:baobab_sapling',
+                trunk: 'projectvibrantjourneys:baobab_log',
+                leaf: 'projectvibrantjourneys:baobab_leaves',
+                fruit: 'byg:baobab_fruit',
+                substrate: 'dirt',
+                sap: 'industrialforegoing:latex',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:red_maple_sapling',
+                trunk: 'projectvibrantjourneys:maple_log',
+                leaf: 'projectvibrantjourneys:red_maple_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:orange_maple_sapling',
+                trunk: 'projectvibrantjourneys:maple_log',
+                leaf: 'projectvibrantjourneys:orange_maple_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:purple_maple_sapling',
+                trunk: 'projectvibrantjourneys:maple_log',
+                leaf: 'projectvibrantjourneys:purple_maple_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:sap',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:pink_sakura_sapling',
+                trunk: 'projectvibrantjourneys:sakura_log',
+                leaf: 'projectvibrantjourneys:pink_sakura_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:white_sakura_sapling',
+                trunk: 'projectvibrantjourneys:sakura_log',
+                leaf: 'projectvibrantjourneys:white_sakura_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:tamarack_sapling',
+                trunk: 'projectvibrantjourneys:tamarack_log',
+                leaf: 'projectvibrantjourneys:tamarack_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 50, dead: 6 }
+            },
+            {
+                sapling: 'projectvibrantjourneys:joshua_sapling',
+                trunk: 'projectvibrantjourneys:joshua_log',
+                leaf: 'projectvibrantjourneys:joshua_leaves',
+                substrate: 'dirt',
+                sap: 'thermal:resin',
+                rate: { living: 25, dead: 4 }
             }
         ]
     },

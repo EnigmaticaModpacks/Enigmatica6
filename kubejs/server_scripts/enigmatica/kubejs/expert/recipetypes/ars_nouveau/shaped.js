@@ -17,18 +17,6 @@ onEvent('recipes', (event) => {
 
     const newRecipes = [
         {
-            output: 'ars_nouveau:mana_condenser',
-            pattern: ['CAC', 'BDB', 'BEB'],
-            key: {
-                A: 'minecraft:conduit',
-                B: '#forge:nuggets/gold_brass',
-                C: '#forge:ingots/gold_brass',
-                D: 'ars_nouveau:arcane_stone',
-                E: 'minecraft:hopper'
-            },
-            id: 'ars_nouveau:mana_condenser'
-        },
-        {
             output: 'ars_nouveau:arcane_core',
             pattern: ['CAC', 'BDB', 'CAC'],
             key: {

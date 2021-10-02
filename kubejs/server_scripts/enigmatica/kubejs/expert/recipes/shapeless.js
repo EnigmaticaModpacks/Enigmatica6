@@ -6,11 +6,7 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'mekanism:hdpe_sheet',
-            inputs: [
-                'mekanism:hdpe_pellet',
-                ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'],
-                'mekanism:hdpe_pellet'
-            ],
+            inputs: ['mekanism:hdpe_pellet', '#forge:tools/crafting_hammer', 'mekanism:hdpe_pellet'],
             id: 'mekanism:hdpe_sheet'
         },
         {

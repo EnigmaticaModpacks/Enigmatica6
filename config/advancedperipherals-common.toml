@@ -125,10 +125,20 @@
 	#Defines max warp point stored in warp core. Mostly need to not allow NBT overflow error
 	#Range: > 1
 	endAutomataCoreWarpPointLimit = 64
+	#Chance that overpowered automata will break after rotation cycle
+	#Range: 0.0 ~ 1.0
+	overpoweredAutomataBreakChance = 0.002
 
 [world]
 	#Enable the villager structures for the computer scientist.
-	enableVillagerStructures = true
+	enableVillagerStructures = false
 	#Gives the ap documentation to new players on a world.
 	givePlayerBookOnJoin = false
+
+[Core]
+	#Enables initial cooldown on peripheral initialization
+	isInitialCooldownEnabled = true
+	#Determinates initial cooldown sensentive level, values lower then this value will not trigger initial cooldown
+	#Range: > 0
+	initialCooldownSensetiveLevel = 6000
 

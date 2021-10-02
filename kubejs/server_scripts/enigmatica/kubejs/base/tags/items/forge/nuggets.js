@@ -9,10 +9,12 @@ onEvent('item.tags', (event) => {
         'immersiveengineering:nugget_electrum',
         'occultism:iesnium_nugget',
         'betterendforge:thallasium_nugget',
-        'betterendforge:terminite_nugget'
+        'betterendforge:terminite_nugget',
+        'mythicbotany:alfsteel_nugget'
     ]);
 
     event.get('forge:nuggets/thallasium').add('betterendforge:thallasium_nugget');
     event.get('forge:nuggets/terminite').add('betterendforge:terminite_nugget');
     event.get('forge:nuggets/tinkers_bronze').add('tconstruct:tinkers_bronze_nugget');
+    event.get('forge:nuggets/alfsteel').add('mythicbotany:alfsteel_nugget');
 });

@@ -19,7 +19,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:stone', count: 4 },
+                { tag: 'forge:storage_blocks/clay', count: 4 },
                 { tag: 'forge:dusts/mana', count: 1 },
                 { tag: 'forge:dusts/apatite', count: 1 }
             ],

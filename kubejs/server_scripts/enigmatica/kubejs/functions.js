@@ -62,14 +62,6 @@ const unificationBlacklist = [
     unificationBlacklistEntry('quartz', 'storage_block')
 ];
 
-setMode = (player) => {
-    if (global.packmode == 'expert') {
-        player.data.ftbquests.complete('0000000000000FEC');
-    } else {
-        player.data.ftbquests.reset('0000000000000FEC');
-    }
-};
-
 const playerHas = (item, player) => {
     return player.inventory.find(item) != -1;
 };

@@ -128,6 +128,12 @@ onEvent('recipes', (event) => {
             output: 'ars_nouveau:glyph_smelt',
             tier: 'TWO',
             id: 'ars_nouveau:glyph_smelt'
+        },
+        {
+            input: 'bloodmagic:reagentair',
+            output: 'ars_nouveau:glyph_glide',
+            tier: 'THREE',
+            id: 'ars_nouveau:glyph_glide'
         }
     ];
 

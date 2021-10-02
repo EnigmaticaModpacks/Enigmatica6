@@ -99,7 +99,7 @@ const colors = [
     'light_gray'
 ];
 
-var itemsToHide = [
+const itemsToHide = [
     'aiotbotania:livingwood_shears',
     'aiotbotania:livingrock_shears',
 
@@ -296,108 +296,8 @@ var itemsToHide = [
     'quark:backpack',
     'quark:crate',
     'quark:magnet',
-    'quark:soul_compass'
-];
+    'quark:soul_compass',
 
-let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
-ee_types.forEach((type) => {
-    itemsToHide.push(
-        `emendatusenigmatica:dimensional_${type}`,
-        `emendatusenigmatica:arcane_${type}`,
-        `emendatusenigmatica:potassium_nitrate_${type}`,
-        `emendatusenigmatica:sulfur_${type}`,
-        `emendatusenigmatica:apatite_${type}`,
-        `emendatusenigmatica:cinnabar_${type}`,
-        `emendatusenigmatica:bitumen_${type}`,
-        `emendatusenigmatica:fluorite_${type}`,
-        `emendatusenigmatica:certus_quartz_${type}`,
-        `emendatusenigmatica:quartz_${type}`,
-        `emendatusenigmatica:redstone_${type}`,
-        `emendatusenigmatica:lapis_${type}`,
-        `emendatusenigmatica:emerald_${type}`,
-        `emendatusenigmatica:diamond_${type}`,
-        `emendatusenigmatica:coal_${type}`
-    );
-});
-
-const fluidsToHide = [
-    'cofh_core:honey',
-    'create:honey',
-    'thermal:crude_oil',
-    'immersivepetroleum:oil',
-    'emendatusenigmatica:molten_zinc',
-    'emendatusenigmatica:molten_quartz',
-    'emendatusenigmatica:molten_uranium',
-    'emendatusenigmatica:molten_tin',
-    'emendatusenigmatica:molten_steel',
-    'emendatusenigmatica:molten_silver',
-    'emendatusenigmatica:molten_osmium',
-    'emendatusenigmatica:molten_nickel',
-    'emendatusenigmatica:molten_lead',
-    'emendatusenigmatica:molten_iron',
-    'emendatusenigmatica:molten_invar',
-    'emendatusenigmatica:molten_gold',
-    'emendatusenigmatica:molten_fluix',
-    'emendatusenigmatica:molten_emerald',
-    'emendatusenigmatica:molten_electrum',
-    'emendatusenigmatica:molten_diamond',
-    'emendatusenigmatica:molten_copper',
-    'emendatusenigmatica:molten_constantan',
-    'emendatusenigmatica:molten_cobalt',
-    'emendatusenigmatica:molten_charged_certus_quartz',
-    'emendatusenigmatica:molten_certus_quartz',
-    'emendatusenigmatica:molten_bronze',
-    'emendatusenigmatica:molten_brass',
-    'emendatusenigmatica:molten_aluminum',
-    'emendatusenigmatica:molten_ancient_debris',
-    'emendatusenigmatica:molten_cloggrum',
-    'emendatusenigmatica:molten_froststeel',
-    'emendatusenigmatica:molten_utherium',
-    'emendatusenigmatica:molten_regalium',
-    'emendatusenigmatica:molten_iesnium'
-];
-
-/*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
-    that have been changed to use a different crafting type or that have been disabled. It allows creating a
-    recipe pointer that will display in Patchouli but not in JEI.  
-
-    Use the logger in the jei_hide_recipes script to discover the correct CategoryID. They do not match the recipe type.
-*/
-
-const recipesToHide = [
-    {
-        category: 'minecraft:crafting',
-        recipes_by_id: [
-            'ars_nouveau:arcane_stone',
-            'ars_nouveau:crystallizer',
-            'ars_nouveau:volcanic_accumulator',
-            'naturesaura:calling_spirit',
-            'naturesaura:animal_spawner',
-            'botania:spark',
-            'botania:natura_pylon',
-            'botania:mana_pylon',
-            'mythicbotany:wither_aconite_floating',
-            'mythicbotany:raindeletia_floating',
-            'mythicbotany:modified_gaia_pylon_with_alfsteel',
-            'mythicbotany:alfsteel_pylon',
-            'naturesaura:gold_brick',
-            'naturesaura:generator_limit_remover',
-            'apotheosis:hellshelf',
-            'apotheosis:seashelf',
-            'apotheosis:endshelf'
-        ]
-    },
-    {
-        category: 'ars_nouveau:apparatus',
-        recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
-    },
-    {
-        category: 'botania:petals',
-        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
-    }
-];
-
-var regexHide = [
     /emendatusenigmatica:\w+_andesite_ore/,
     /emendatusenigmatica:\w+_gabbro_ore/,
     /emendatusenigmatica:\w+_c_limestone_ore/,
@@ -452,7 +352,150 @@ var regexHide = [
     /powah:\w+_starter/,
     /rftoolsbase:dimensionalshard_/,
     /theoneprobe:/,
-    /upgrade_aquatic:\w+_jelly_torch/
+    /upgrade_aquatic:\w+_jelly_torch/,
+    /chiselsandbits:block_bit$/
+];
+
+let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
+ee_types.forEach((type) => {
+    itemsToHide.push(
+        `emendatusenigmatica:dimensional_${type}`,
+        `emendatusenigmatica:arcane_${type}`,
+        `emendatusenigmatica:potassium_nitrate_${type}`,
+        `emendatusenigmatica:sulfur_${type}`,
+        `emendatusenigmatica:apatite_${type}`,
+        `emendatusenigmatica:cinnabar_${type}`,
+        `emendatusenigmatica:bitumen_${type}`,
+        `emendatusenigmatica:fluorite_${type}`,
+        `emendatusenigmatica:certus_quartz_${type}`,
+        `emendatusenigmatica:quartz_${type}`,
+        `emendatusenigmatica:redstone_${type}`,
+        `emendatusenigmatica:lapis_${type}`,
+        `emendatusenigmatica:emerald_${type}`,
+        `emendatusenigmatica:diamond_${type}`,
+        `emendatusenigmatica:coal_${type}`
+    );
+});
+
+/*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
+    that have been changed to use a different crafting type or that have been disabled. It allows creating a
+    recipe pointer that will display in Patchouli but not in JEI.  
+
+    Use the logger in the jei_hide_recipes script to discover the correct CategoryID. They do not match the recipe type.
+*/
+const recipesToHide = [
+    {
+        category: 'minecraft:crafting',
+        recipes_by_id: [
+            'ars_nouveau:arcane_stone',
+            'ars_nouveau:crystallizer',
+            'ars_nouveau:potion_melder',
+            'ars_nouveau:volcanic_accumulator',
+            'ars_nouveau:mana_condenser',
+            'ars_nouveau:mycelial_sourcelink',
+            'ars_nouveau:vitalic_sourcelink',
+            'ars_nouveau:alchemical_sourcelink',
+            'ars_nouveau:novice_hood',
+            'ars_nouveau:novice_robes',
+            'ars_nouveau:novice_leggings',
+            'ars_nouveau:novice_boots',
+            'ars_nouveau:apprentice_hood',
+            'ars_nouveau:apprentice_robes',
+            'ars_nouveau:apprentice_leggings',
+            'ars_nouveau:apprentice_boots',
+            'ars_nouveau:archmage_hood',
+            'ars_nouveau:archmage_robes',
+            'ars_nouveau:archmage_leggings',
+            'ars_nouveau:archmage_boots',
+
+            'bloodmagic:soul_forge',
+            'bloodmagic:ritual_diviner_0',
+            'bloodmagic:blood_rune_blank',
+            'bloodmagic:blood_rune_speed',
+            'bloodmagic:blood_rune_sacrifice',
+            'bloodmagic:blood_rune_self_sacrifice',
+            'bloodmagic:blood_rune_displacement',
+            'bloodmagic:blood_rune_capacity',
+            'bloodmagic:blood_rune_aug_capacity',
+            'bloodmagic:blood_rune_orb',
+            'bloodmagic:blood_rune_acceleration',
+            'bloodmagic:blood_rune_charging',
+
+            'botania:terrasteel_helmet',
+            'botania:terrasteel_chestplate',
+            'botania:terrasteel_leggings',
+            'botania:terrasteel_boots',
+            'botania:spark',
+            'botania:mana_pylon',
+            'botania:natura_pylon',
+            'botania:apothecary_default',
+            'botania:terra_plate',
+            'botania:alfheim_portal',
+            'botania:mana_ring',
+            'botania:gaia_ingot',
+            'botania:gaia_pylon',
+            'botania:mining_ring',
+            'botania:dodge_ring',
+            'botania:swap_ring',
+            'botania:water_ring',
+            'botania:magnet_ring',
+            'botania:aura_ring',
+            'botania:pixie_ring',
+            'botania:reach_ring',
+            'botania:flighttiara_0',
+
+            'mythicbotany:wither_aconite_floating',
+            'mythicbotany:raindeletia_floating',
+            'mythicbotany:modified_gaia_pylon_with_alfsteel',
+            'mythicbotany:alfsteel_pylon',
+            'mythicbotany:mana_infuser',
+            'mythicbotany:fire_ring',
+            'mythicbotany:ice_ring',
+
+            'naturesaura:calling_spirit',
+            'naturesaura:animal_spawner',
+            'naturesaura:gold_fiber',
+            'naturesaura:gold_brick',
+            'naturesaura:generator_limit_remover',
+
+            'pneumaticcraft:air_compressor',
+            'pneumaticcraft:advanced_air_compressor',
+            'pneumaticcraft:pressure_chamber_valve_x1',
+            'pneumaticcraft:pressure_chamber_valve_x4',
+            'pneumaticcraft:flux_compressor',
+            'pneumaticcraft:printed_circuit_board',
+            'pneumaticcraft:assembly_drill',
+            'pneumaticcraft:assembly_laser',
+            'pneumaticcraft:assembly_io_unit_import',
+            'pneumaticcraft:assembly_io_unit_export',
+            'pneumaticcraft:assembly_controller',
+            'pneumaticcraft:assembly_platform',
+            'pneumaticcraft:aerial_interface',
+            'pneumaticcraft:spawner_extractor'
+        ]
+    },
+    {
+        category: 'ars_nouveau:apparatus',
+        recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
+    },
+    {
+        category: 'botania:petals',
+        recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    },
+    {
+        category: 'bloodmagic:alchemytable',
+        recipes_by_id: ['bloodmagic:alchemytable/basic_cutting_fluid_sigil']
+    },
+    {
+        category: 'bloodmagic:soulforge',
+        recipes_by_id: [
+            'bloodmagic:soulforge/sentientsword',
+            'bloodmagic:soulforge/sentientaxe',
+            'bloodmagic:soulforge/sentientpickaxe',
+            'bloodmagic:soulforge/sentientshovel',
+            'bloodmagic:soulforge/sentientscythe'
+        ]
+    }
 ];
 
 const disabledItems = [
@@ -540,6 +583,16 @@ const disabledItems = [
     'ironjetpacks:nitro_cell',
     'ironjetpacks:nitro_capacitor',
 
+    'losttrinkets:magical_herbs',
+    'losttrinkets:octopick',
+    'losttrinkets:tea_leaf',
+    'losttrinkets:book_o_enchanting',
+    'losttrinkets:blaze_heart',
+    'losttrinkets:turtle_shell',
+    'losttrinkets:tha_cloud',
+    'losttrinkets:rock_candy',
+    'losttrinkets:mad_aura',
+
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
@@ -571,6 +624,7 @@ const disabledItems = [
     'simplefarming:noodles',
     'simplefarming:chocolate'
 ];
+
 const materialsToUnify = [
     'iron',
     'gold',
@@ -624,5 +678,30 @@ const materialsToUnify = [
     'regalium',
     'utherium',
     'coal_coke',
-    'starmetal'
+    'starmetal',
+    'amber',
+    'cobalt',
+    'queens_slime',
+    'rose_gold',
+    'tinkers_bronze',
+    'knightslime',
+    'slimesteel',
+    'manyullyn',
+    'hepatizon',
+    'thallasium',
+    'nebu',
+    'aeternium',
+    'alfsteel',
+    'elementium',
+    'gaia_spirit',
+    'infused_iron',
+    'manasteel',
+    'sky',
+    'terminite',
+    'terrasteel',
+    'energized_steel',
+    'blazing',
+    'niotic',
+    'spirited',
+    'nitro'
 ];

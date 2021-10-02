@@ -2,6 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/bloodmagic/soulforge/';
     var data = {
         recipes: [
             {
@@ -78,68 +79,6 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_sword',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulsword'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientsword'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_axe',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulaxe'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientaxe'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_pickaxe',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulpickaxe', {
-                    'occultism:otherworldToolTier': 2
-                }),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientpickaxe'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_shovel',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulshovel'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientshovel'
-            },
-            {
-                inputs: [
-                    'bloodmagic:soulgempetty',
-                    'undergarden:forgotten_hoe',
-                    '#forge:ingots/iesnium',
-                    '#botania:runes/helheim'
-                ],
-                output: Item.of('bloodmagic:soulscythe'),
-                minimumDrain: 0.0,
-                drain: 0.0,
-                id: 'bloodmagic:soulforge/sentientscythe'
-            },
-            {
-                inputs: [
                     'atum:nuit_godshard',
                     'eidolon:soul_shard',
                     'astralsorcery:nocturnal_powder',
@@ -147,7 +86,8 @@ onEvent('recipes', (event) => {
                 ],
                 output: Item.of('eidolon:shadow_gem'),
                 minimumDrain: 100.0,
-                drain: 32.0
+                drain: 32.0,
+                id: `${id_prefix}shadow_gem`
             },
             {
                 inputs: [
@@ -157,7 +97,8 @@ onEvent('recipes', (event) => {
                 ],
                 output: Item.of('eidolon:arcane_gold_ingot'),
                 minimumDrain: 32.0,
-                drain: 16.0
+                drain: 16.0,
+                id: `${id_prefix}arcane_gold_ingot`
             },
             {
                 inputs: ['bloodmagic:rawdemoncrystal', 'bloodmagic:soulpickaxe', '#forge:storage_blocks/iesnium'],
@@ -174,27 +115,59 @@ onEvent('recipes', (event) => {
                 id: 'occultism:crafting/storage_controller'
             },
             {
-                inputs: [
-                    'bloodmagic:dungeon_stone',
-                    '#forge:ingots/tainted_gold',
-                    '#forge:gems/nitro',
-                    '#forge:gems/nitro'
-                ],
+                inputs: ['bloodmagic:dungeon_stone', '#forge:ingots/tainted_gold', '#forge:gems/nitro'],
                 output: 'bloodmagic:crystalline_resonator',
                 minimumDrain: 1200.0,
                 drain: 200.0,
                 id: 'bloodmagic:soulforge/primitive_crystalline_resonator'
+            },
+
+            /// Patchouli Removals
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulsword'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientsword'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulaxe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientaxe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulpickaxe', {
+                    'occultism:otherworldToolTier': 2
+                }),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientpickaxe'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulshovel'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientshovel'
+            },
+            {
+                inputs: ['kubejs:altered_recipe_indicator'],
+                output: Item.of('bloodmagic:soulscythe'),
+                minimumDrain: 0.0,
+                drain: 0.0,
+                id: 'bloodmagic:soulforge/sentientscythe'
             }
         ]
     };
 
     data.recipes.forEach((recipe) => {
-        const re = event.recipes.bloodmagic
+        event.recipes.bloodmagic
             .soulforge(recipe.output, recipe.inputs)
             .minimumDrain(recipe.minimumDrain)
-            .drain(recipe.drain);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+            .drain(recipe.drain)
+            .id(recipe.id);
     });
 });

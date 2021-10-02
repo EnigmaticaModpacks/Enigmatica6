@@ -12,9 +12,12 @@ param(
 	[bool]$backupWorld = $true,
 
 	[Parameter(Position = 4)]
-	[int]$backupsToKeep = 12,
+	[bool]$backupMods = $true,
 
 	[Parameter(Position = 5)]
+	[int]$backupsToKeep = 12,
+
+	[Parameter(Position = 6)]
 	[string]$serverFileFolder = "server_files"
 )
 
@@ -55,18 +58,20 @@ function Update-IsAvailable {
 }
 
 function Backup-ModsFolder {
-	Write-Host
-	Write-Host "Backing up the mods folder..." -ForegroundColor Cyan
-	New-Item -ItemType Directory -Path $backupFolder -ErrorAction SilentlyContinue
-	New-Item -ItemType Directory -Path "$backupFolder/mods" -ErrorAction SilentlyContinue
-	if (Test-Path $modFolder) {
-		if ((Get-ChildItem -Path $modFolder | Measure-Object).Count -gt 0) {
-			Compress-Archive -Path $modFolder "$backupFolder/mods/$(Get-Date -Format "MM.dd.yyyy-HH.mm").zip"
-			Remove-Item -Path $modFolder -Recurse -ErrorAction SilentlyContinue
+	if ($backupMods) {
+		Write-Host
+		Write-Host "Backing up the mods folder..." -ForegroundColor Cyan
+		New-Item -ItemType Directory -Path $backupFolder -ErrorAction SilentlyContinue
+		New-Item -ItemType Directory -Path "$backupFolder/mods" -ErrorAction SilentlyContinue
+		if (Test-Path $modFolder) {
+			if ((Get-ChildItem -Path $modFolder | Measure-Object).Count -gt 0) {
+				Compress-Archive -Path $modFolder "$backupFolder/mods/$(Get-Date -Format "MM.dd.yyyy-HH.mm").zip"
+				Remove-Item -Path $modFolder -Recurse -ErrorAction SilentlyContinue
+			}
+		} 
+		else {
+			New-Item -ItemType Directory -Path $modFolder -ErrorAction SilentlyContinue
 		}
-	} 
-	else {
-		New-Item -ItemType Directory -Path $modFolder -ErrorAction SilentlyContinue
 	}
 }
 
@@ -90,16 +95,18 @@ function Prune-Backups {
 }
 
 function Backup-WorldFolder {
-	Write-Host
-	Write-Host "Backing up the world folder..." -ForegroundColor Cyan
-	New-Item -ItemType Directory -Path $backupFolder -ErrorAction SilentlyContinue
-	if (Test-Path $worldFolder) {
-		if ((Get-ChildItem -Path $worldFolder | Measure-Object).Count -gt 0) {
-			Compress-Archive -Path $worldFolder "$backupFolder/world-$(Get-Date -Format "MM.dd.yyyy-HH.mm").zip"
+	if ($backupWorld) {
+		Write-Host
+		Write-Host "Backing up the world folder..." -ForegroundColor Cyan
+		New-Item -ItemType Directory -Path $backupFolder -ErrorAction SilentlyContinue
+		if (Test-Path $worldFolder) {
+			if ((Get-ChildItem -Path $worldFolder | Measure-Object).Count -gt 0) {
+				Compress-Archive -Path $worldFolder "$backupFolder/world-$(Get-Date -Format "MM.dd.yyyy-HH.mm").zip"
+			}
+		} 
+		else {
+			New-Item -ItemType Directory -Path $worldFolder -ErrorAction SilentlyContinue
 		}
-	} 
-	else {
-		New-Item -ItemType Directory -Path $worldFolder -ErrorAction SilentlyContinue
 	}
 }
 

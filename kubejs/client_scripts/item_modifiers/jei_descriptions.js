@@ -129,7 +129,11 @@ onEvent('jei.information', (event) => {
         },
         {
             items: ['minecraft:nautilus_shell'],
-            description: ['Obtained by killing Nautilus, found in Oceans.']
+            description: [
+                'Obtained by killing Nautilus, found in Oceans.',
+                ' ',
+                'Also obtained from Embedded Ammonite, found at any Y level in Oceans and Beaches.'
+            ]
         },
         {
             items: ['architects_palette:twisted_sapling'],
@@ -276,6 +280,48 @@ onEvent('jei.information', (event) => {
                 ` `,
                 `Alternatively obtained by killing undead mobs with a Reaper's Scythe.`
             ]
+        },
+        {
+            items: ['atum:anputs_fingers_spores'],
+            description: [`Found occasionally growing beneath Deadwood Trees. Requires darkness to grow.`]
+        },
+        {
+            items: ['immersiveengineering:furnace_heater', 'mekanism:fuelwood_heater', 'mekanism:resistive_heater'],
+            description: [`May be used to provide Heat for PneumaticCraft machines.`]
+        },
+        {
+            items: ['immersiveengineering:logic_circuit'],
+            description: [
+                `Used in a Logic Unit to create advanced Redstone Logic.`,
+                ` `,
+                `Programmed on an Engineer's Circuit Table. Requires Circuit Backplanes, Lead or Copper Wire, and Vacuum Tubes.`
+            ]
+        },
+        {
+            items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
+            description: [
+                `Obtained by defeating the Warped Mosco.`,
+                ` `,
+                `Warped Mosco are creatures of nightmare created when a Crimson Mosquito sucks the blood of a Mungus covered in Warped Fungus.`
+            ]
+        },
+        {
+            items: ['alexsmobs:hemolymph_sac', 'alexsmobs:warped_muscle'],
+            description: [
+                `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
+            ]
+        },
+        {
+            items: ['bloodmagic:weak_tau'],
+            description: [`Found in chests within the Demon Realm.`]
+        },
+        {
+            items: ['bloodmagic:strong_tau'],
+            description: [`Produced by growing Tau near mobs.`]
+        },
+        {
+            items: ['eidolon:unholy_symbol'],
+            description: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
         }
     ];
 

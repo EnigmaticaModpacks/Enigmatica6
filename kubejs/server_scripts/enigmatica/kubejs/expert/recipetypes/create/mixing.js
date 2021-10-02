@@ -79,6 +79,20 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('create:chromatic_compound', 2),
             id: 'create:mixing/chromatic_compound'
+        },
+        {
+            superheated: true,
+            inputs: [
+                '#forge:sand/colorless',
+                '#forge:sand/colorless',
+                '#forge:gems/silicon',
+                '#forge:gems/silicon',
+                '#forge:gems/silicon',
+                'thermal:tar',
+                'thermal:tar'
+            ],
+            output: Item.of('powah:dielectric_paste', 24),
+            id: 'powah:crafting/dielectric_paste'
         }
     ];
 

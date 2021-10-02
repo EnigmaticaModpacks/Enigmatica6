@@ -3,118 +3,6 @@ onEvent('recipes', (event) => {
         recipes: [
             {
                 type: 'occultism:ritual',
-                ritual_type: 'occultism:familiar',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_djinni'
-                },
-                pentacle_id: 'occultism:possess_djinni',
-                duration: 3,
-                entity_to_sacrifice: {
-                    tag: 'forge:bats',
-                    display_name: 'ritual.occultism.sacrifice.bats'
-                },
-                entity_to_summon: 'occultism:bat_familiar',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/familiar_bat'
-                },
-                ingredients: [
-                    { item: 'minecraft:golden_carrot' },
-                    { item: 'minecraft:spider_eye' },
-                    { item: 'minecraft:glowstone' },
-                    { item: 'minecraft:lava_bucket' },
-                    { item: 'minecraft:torch' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/familiar_bat'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:familiar',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_foliot'
-                },
-                pentacle_id: 'occultism:possess_foliot',
-                duration: 3,
-                entity_to_sacrifice: {
-                    tag: 'forge:cows',
-                    display_name: 'ritual.occultism.sacrifice.cows'
-                },
-                entity_to_summon: 'occultism:deer_familiar',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/familiar_deer'
-                },
-                ingredients: [
-                    { tag: 'forge:rods/wooden' },
-                    { tag: 'forge:rods/wooden' },
-                    { tag: 'forge:rods/wooden' },
-                    { tag: 'forge:rods/wooden' },
-                    { tag: 'forge:string' },
-                    { tag: 'forge:string' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/familiar_deer'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:familiar',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_foliot'
-                },
-                pentacle_id: 'occultism:possess_foliot',
-                duration: 3,
-                entity_to_sacrifice: {
-                    tag: 'forge:zombies',
-                    display_name: 'ritual.occultism.sacrifice.zombies'
-                },
-                entity_to_summon: 'occultism:greedy_familiar',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/familiar_greedy'
-                },
-                ingredients: [
-                    { tag: 'forge:chests' },
-                    { tag: 'forge:storage_blocks/iron' },
-                    { item: 'minecraft:dispenser' },
-                    { item: 'minecraft:hopper' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/familiar_greedy'
-            },
-            {
-                type: 'occultism:ritual',
-                ritual_type: 'occultism:summon_tamed',
-                activation_item: {
-                    item: 'occultism:book_of_binding_bound_djinni'
-                },
-                pentacle_id: 'occultism:possess_djinni',
-                duration: 3,
-                entity_to_sacrifice: {
-                    tag: 'forge:parrots',
-                    display_name: 'ritual.occultism.sacrifice.parrots'
-                },
-                entity_to_summon: 'occultism:otherworld_bird',
-                ritual_dummy: {
-                    item: 'occultism:ritual_dummy/familiar_otherworld_bird'
-                },
-                ingredients: [
-                    { tag: 'forge:feathers' },
-                    { tag: 'forge:feathers' },
-                    { item: 'minecraft:cobweb' },
-                    { tag: 'minecraft:leaves' },
-                    { tag: 'forge:string' }
-                ],
-                result: {
-                    item: 'occultism:jei_dummy/none'
-                },
-                id: 'occultism:ritual/familiar_otherworld_bird'
-            },
-            {
-                type: 'occultism:ritual',
                 ritual_type: 'occultism:summon_with_chance_of_chicken_tamed',
                 activation_item: {
                     item: 'occultism:book_of_binding_bound_foliot'
@@ -389,8 +277,8 @@ onEvent('recipes', (event) => {
                 pentacle_id: 'occultism:summon_foliot',
                 duration: 6,
                 spirit_max_age: -1,
-                spirit_job_type: 'occultism:manage_machine',
-                entity_to_summon: 'occultism:cleaner',
+                spirit_job_type: 'occultism:cleaner',
+                entity_to_summon: 'occultism:foliot',
                 ritual_dummy: {
                     item: 'occultism:ritual_dummy/summon_foliot_cleaner'
                 },

@@ -1,7 +1,7 @@
 {
 	id: "0000000000000B67"
 	group: "34B7FB260B6AEB81"
-	order_index: 2
+	order_index: 4
 	filename: "expert__tier_2_wip"
 	title: "Magic"
 	icon: {
@@ -11,16 +11,16 @@
 			Damage: 0
 		}
 	}
-	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			x: -3.0d
 			y: -5.5d
+			dependencies: ["48BA066E1B977D32"]
 			id: "72D589CE18202510"
 			tasks: [{
-				id: "46003D18E8B6E35F"
+				id: "61813D97AAD3C2B9"
 				type: "item"
 				title: "Lightning"
 				item: {
@@ -29,11 +29,15 @@
 					tag: {
 						items: [
 							{
-								id: "powah:charged_snowball"
+								id: "thermal:lightning_charge"
 								Count: 1b
 							}
 							{
-								id: "thermal:lightning_charge"
+								id: "archers_paradox:lightning_arrow"
+								Count: 1b
+							}
+							{
+								id: "powah:charged_snowball"
 								Count: 1b
 							}
 						]
@@ -1102,6 +1106,15 @@
 				type: "item"
 				item: "eidolon:soul_enchanter"
 			}]
+		}
+		{
+			title: "Magic Progression Tier 1"
+			icon: "ars_nouveau:novice_spell_book"
+			x: -3.0d
+			y: -6.5d
+			dependencies: ["0000000000000FEB"]
+			hide: true
+			id: "48BA066E1B977D32"
 		}
 	]
 }

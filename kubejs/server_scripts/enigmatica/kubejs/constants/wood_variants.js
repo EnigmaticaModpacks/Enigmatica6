@@ -79,7 +79,20 @@ var woodVariantsToConstruct = [
     'atum:deadwood',
     'tconstruct:greenheart',
     'tconstruct:bloodshroom',
-    'tconstruct:skyroot'
+    'tconstruct:skyroot',
+    'projectvibrantjourneys:joshua',
+    'projectvibrantjourneys:sakura',
+    'projectvibrantjourneys:maple',
+    'projectvibrantjourneys:baobab',
+    'projectvibrantjourneys:palm',
+    'projectvibrantjourneys:cottonwood',
+    'projectvibrantjourneys:aspen',
+    'projectvibrantjourneys:juniper',
+    'projectvibrantjourneys:mangrove',
+    'projectvibrantjourneys:willow',
+    'projectvibrantjourneys:redwood',
+    'projectvibrantjourneys:pine',
+    'projectvibrantjourneys:fir'
     // 'sushigocrafting:avocado'
 ];
 

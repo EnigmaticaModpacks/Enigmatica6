@@ -84,11 +84,11 @@ onEvent('recipes', (event) => {
 
         {
             output: Item.of('#forge:shards/ender'),
-            inputs: ['#forge:ores/ender', 'emendatusenigmatica:enigmatic_hammer']
+            inputs: ['#forge:ores/ender', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('#forge:shards/amber'),
-            inputs: ['#forge:ores/amber', 'emendatusenigmatica:enigmatic_hammer']
+            inputs: ['#forge:ores/amber', '#forge:tools/crafting_hammer']
         },
 
         { output: Item.of('#forge:shards/ender'), inputs: ['#forge:ores/ender', 'thermal:earth_charge'] },
@@ -437,11 +437,6 @@ onEvent('recipes', (event) => {
             output: 'supplementaries:flax_seeds',
             inputs: ['supplementaries:flax']
         },
-        {
-            output: Item.of('refinedstorage:quartz_enriched_iron', 4),
-            inputs: ['#forge:ingots/iron', '#forge:ingots/iron', '#forge:ingots/iron', '#forge:gems/quartz'],
-            id: 'refinedstorage:quartz_enriched_iron'
-        },
         { output: Item.of('byg:quartz_crystal'), inputs: ['minecraft:quartz'] },
         { output: Item.of('minecraft:quartz'), inputs: ['byg:quartz_crystal'] },
         {
@@ -478,26 +473,23 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('projectvibrantjourneys:rocks', 4),
-            inputs: ['minecraft:cobblestone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:cobblestone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:mossy_rocks', 4),
-            inputs: [
-                'minecraft:mossy_cobblestone',
-                ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']
-            ]
+            inputs: ['minecraft:mossy_cobblestone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:sandstone_rocks', 4),
-            inputs: ['minecraft:sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:sandstone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:red_sandstone_rocks', 4),
-            inputs: ['minecraft:red_sandstone', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:red_sandstone', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:ice_chunks', 4),
-            inputs: ['minecraft:ice', ['emendatusenigmatica:enigmatic_hammer', 'immersiveengineering:hammer']]
+            inputs: ['minecraft:ice', '#forge:tools/crafting_hammer']
         },
         {
             output: Item.of('projectvibrantjourneys:glowcap'),
@@ -514,20 +506,6 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('minecraft:terracotta'),
             inputs: ['#enigmatica:washables/terracotta', 'minecraft:water_bucket']
-        },
-        {
-            output: Item.of('emendatusenigmatica:signalum_dust', 4),
-            inputs: [
-                '#forge:dusts/silver',
-                '#forge:dusts/copper',
-                '#forge:dusts/copper',
-                '#forge:dusts/copper',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone',
-                '#forge:dusts/redstone'
-            ],
-            id: 'emendatusenigmatica:alloy_dust/signalum'
         },
         {
             output: 'mythicbotany:raindeletia_floating',

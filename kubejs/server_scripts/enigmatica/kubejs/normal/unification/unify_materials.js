@@ -99,7 +99,7 @@ onEvent('recipes', (event) => {
 
         const output = plate,
             mold = '#thermal:crafting/dies/plate',
-            hammer = ['immersiveengineering:hammer', 'emendatusenigmatica:enigmatic_hammer'];
+            hammer = '#forge:tools/crafting_hammer';
 
         if (ingot != air) {
             input = '#forge:ingots/' + material;
@@ -129,7 +129,7 @@ onEvent('recipes', (event) => {
 
         event.remove({ output: wire });
 
-        const wireCutters = 'immersiveengineering:wirecutter';
+        const wireCutters = '#forge:tools/wirecutter';
         let output = wire,
             input,
             mold = '#thermal:crafting/dies/wire';

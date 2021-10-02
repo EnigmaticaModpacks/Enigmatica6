@@ -6,28 +6,14 @@ onEvent('recipes', (event) => {
                 output: Item.of('immersiveengineering:treated_wood_horizontal', 2)
             },
             {
-                inputs: ['#minecraft:coals', '#minecraft:coals', '#forge:clay', Fluid.of('minecraft:lava', 500)],
-                output: Item.of('powah:dielectric_paste', 16)
-            },
-            {
-                inputs: [
-                    '#forge:clay',
-                    '#forge:gravel',
-                    '#forge:sand',
-                    '#forge:sand',
-                    Fluid.of('minecraft:water', 500)
-                ],
-                output: Fluid.of('immersiveengineering:concrete', 500)
-            },
-            {
                 inputs: [
                     '#forge:clay',
                     '#forge:gravel',
                     '#forge:slag',
                     '#forge:slag',
-                    Fluid.of('minecraft:water', 750)
+                    Fluid.of('minecraft:water', 4000)
                 ],
-                output: Fluid.of('immersiveengineering:concrete', 750)
+                output: Fluid.of('immersiveengineering:concrete', 4000)
             },
             {
                 inputs: [

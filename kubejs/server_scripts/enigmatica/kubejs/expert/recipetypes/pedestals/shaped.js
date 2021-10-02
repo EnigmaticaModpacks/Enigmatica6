@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'pedestals:pedestal/stone333',
             pattern: ['ABA', ' C ', 'CCC'],
@@ -28,7 +28,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         if (recipe.id) {
             event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
         } else {

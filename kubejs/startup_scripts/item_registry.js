@@ -24,7 +24,21 @@ onEvent('item.registry', (event) => {
         'unassembled_rftools_machine_frame',
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
-        'dimensional_storage_crystal'
+        'dimensional_storage_crystal',
+        'spirit_heat_exchanger',
+        'amadron_survey_tools'
+    ];
+
+    const ritualDummies = [
+        'craft_spirit_heat_exchanger',
+        'summon_pharaoh',
+        'craft_magical_feathers',
+        'craft_magicfeather',
+        'craft_soulsword',
+        'craft_soulaxe',
+        'craft_soulpickaxe',
+        'craft_soulshovel',
+        'craft_soulscythe'
     ];
 
     const assemblyTableItems = [
@@ -107,6 +121,10 @@ onEvent('item.registry', (event) => {
 
     generalItems.forEach((item) => {
         event.create(item).group('KubeJS').texture(`kubejs:item/${item}`);
+    });
+
+    ritualDummies.forEach((item) => {
+        event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/pentacle');
     });
 
     assemblyTableItems.forEach((item) => {

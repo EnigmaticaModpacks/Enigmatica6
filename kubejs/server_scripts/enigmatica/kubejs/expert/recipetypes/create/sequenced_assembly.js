@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/create/sequenced_assembly/';
     const recipes = [
         /*{
             input: 'input_item_here',
@@ -23,26 +23,93 @@ onEvent('recipes', (event) => {
             ],
             id: 'recipe_id_here'
         }*/
-        /*
         {
-            input: 'minecraft:chainmail_helmet',
-            outputs: ['minecraft:iron_helmet'],
-            transitionalItem: 'minecraft:chainmail_helmet',
-            loops: 5,
+            input: 'minecraft:leather',
+            outputs: ['minecraft:book'],
+            transitionalItem: 'minecraft:leather',
+            loops: 4,
             sequence: [
                 {
                     type: 'deploying',
-                    input: ['minecraft:chainmail_helmet', '#forge:ingots/iron'],
-                    output: 'minecraft:chainmail_helmet'
+                    input: ['minecraft:leather', '#forge:string'],
+                    output: 'minecraft:leather'
+                },
+                {
+                    type: 'deploying',
+                    input: ['minecraft:leather', '#forge:paper'],
+                    output: 'minecraft:leather'
+                },
+                {
+                    type: 'deploying',
+                    input: ['minecraft:leather', '#forge:paper'],
+                    output: 'minecraft:leather'
+                },
+                {
+                    type: 'deploying',
+                    input: ['minecraft:leather', '#forge:paper'],
+                    output: 'minecraft:leather'
+                }
+            ],
+            id: `${id_prefix}book_from_leather`
+        },
+        {
+            input: 'tconstruct:pattern',
+            outputs: ['minecraft:book'],
+            transitionalItem: 'tconstruct:pattern',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['tconstruct:pattern', '#forge:slimeballs'],
+                    output: 'tconstruct:pattern'
+                },
+                {
+                    type: 'deploying',
+                    input: ['tconstruct:pattern', '#forge:paper'],
+                    output: 'tconstruct:pattern'
+                },
+                {
+                    type: 'deploying',
+                    input: ['tconstruct:pattern', '#forge:paper'],
+                    output: 'tconstruct:pattern'
+                },
+                {
+                    type: 'deploying',
+                    input: ['tconstruct:pattern', '#forge:paper'],
+                    output: 'tconstruct:pattern'
+                }
+            ],
+            id: `${id_prefix}book_from_pattern`
+        },
+        {
+            input: 'pneumaticcraft:plastic',
+            outputs: [Item.of('powah:capacitor_basic_large', 2)],
+            transitionalItem: 'pneumaticcraft:plastic',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['pneumaticcraft:plastic', '#forge:plates/aluminum'],
+                    output: 'pneumaticcraft:plastic'
+                },
+                {
+                    type: 'deploying',
+                    input: ['pneumaticcraft:plastic', 'powah:dielectric_paste'],
+                    output: 'pneumaticcraft:plastic'
+                },
+                {
+                    type: 'deploying',
+                    input: ['pneumaticcraft:plastic', '#forge:plates/signalum'],
+                    output: 'pneumaticcraft:plastic'
                 },
                 {
                     type: 'pressing',
-                    input: 'minecraft:chainmail_helmet',
-                    output: 'minecraft:chainmail_helmet'
+                    input: 'pneumaticcraft:plastic',
+                    output: 'pneumaticcraft:plastic'
                 }
             ],
-            id: 'minecraft:iron_helmet'
-        }*/
+            id: 'powah:crafting/capacitor_basic_large'
+        }
     ];
 
     let armorTypes = [

@@ -39,8 +39,4 @@ onEvent('jei.hide.items', (event) => {
     colors.forEach((color) => {
         event.hide('/refinedstorage:' + color + '\\w/');
     });
-
-    regexHide.forEach((regexExpression) => {
-        event.hide(regexExpression);
-    });
 });

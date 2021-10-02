@@ -133,11 +133,23 @@
 				"These bosses may be summoned with crafted tokens, just look them up in JEI when you’re ready to face off."
 			]
 			id: "0000000000000C95"
-			tasks: [{
-				id: "0000000000000C96"
-				type: "checkmark"
-				title: "Meet Your Fight"
-			}]
+			tasks: [
+				{
+					id: "21AEFA982B148B13"
+					type: "item"
+					item: "meetyourfight:fossil_bait"
+				}
+				{
+					id: "453C91C39D9B851B"
+					type: "item"
+					item: "meetyourfight:devils_ante"
+				}
+				{
+					id: "57A8C245E83C8992"
+					type: "item"
+					item: "meetyourfight:haunted_bell"
+				}
+			]
 			rewards: [{
 				id: "0000000000000C9B"
 				type: "xp"
@@ -178,7 +190,7 @@
 			description: [
 				"Many believed that the Nether existed beneath the bedrock layer, but with the discovery of the terrifying Undergarden, that theory was scrapped."
 				""
-				"Using a catalyst on a frame of stone bricks will open the portal. The Undergarden mainly consists of several odd stone variants, but it also contains some unique ores that can be used to make tools with unique abilities."
+				"Visualize the portal by pressing your Ponder key on the Catalyst in JEI."
 			]
 			id: "386EC8C30DD8EF00"
 			tasks: [{
@@ -227,13 +239,7 @@
 				""
 				"To access Atum, a portal will be required. It is built entirely from Sandstone and Water and looks a bit like a well. "
 				""
-				"Begin with a 5x5 filled square of Sandstone. "
-				""
-				"Next place a 5x5 hollow square on top of it. "
-				""
-				"The 3x3 area in the middle will be filled with water. "
-				""
-				"Finally, build 2 block tall posts on each corner and throw a Scarab into the water. "
+				"Visualize the portal by pressing your Ponder key on the Scarab in JEI."
 			]
 			id: "7FCB0C026902B90C"
 			tasks: [{

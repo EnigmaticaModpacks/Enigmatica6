@@ -30,8 +30,6 @@ onEvent('recipes', (event) => {
 
         'create:crushing/obsidian',
 
-        'craftingstation:crafting_station',
-
         'akashictome:tome',
 
         'magicfeather:magicfeather',
@@ -65,6 +63,7 @@ onEvent('recipes', (event) => {
         'aquaculture:red_mushroom_from_red_shrooma',
 
         'astralsorcery:infuser/gold_ore',
+        'astralsorcery:shaped/marble/marble_slab',
 
         'betterendforge:gunpowder_from_sulphur',
 
@@ -87,6 +86,9 @@ onEvent('recipes', (event) => {
 
         'eidolon:tallow',
         'eidolon:smelt_stone_brick',
+
+        /emendatusenigmatica:dust_from_chunk/,
+        'emendatusenigmatica:dust_from_ore/quartz',
 
         'environmental:misc/cherries/cherry_pie',
         'environmental:misc/apple_pie',
@@ -132,8 +134,10 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/stick_aluminum',
         'immersiveengineering:crafting/stick_iron',
         'immersiveengineering:crusher/bone_meal',
-
+        /immersiveengineering:crafting\/hammercrushing/,
         'immersivepetroleum:distillationtower/oilcracking',
+
+        'materialis:smeltery/melting/metal/starmetal/dust',
 
         'mekanism:crushing/stone/to_cobblestone',
         'mekanism:enriching/enriched/tin',

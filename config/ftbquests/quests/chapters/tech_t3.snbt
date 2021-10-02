@@ -1,0 +1,126 @@
+{
+	id: "1BAD3096A2D8A7E3"
+	group: "34B7FB260B6AEB81"
+	order_index: 3
+	filename: "tech_t3"
+	title: "Tech T3"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Industrial Foregoing"
+			x: 0.0d
+			y: 0.0d
+			dependencies: ["0000000000000FDF"]
+			id: "7522971912BCF482"
+			tasks: [{
+				id: "558BD74C18EFB6EA"
+				type: "item"
+				item: "industrialforegoing:machine_frame_pity"
+			}]
+		}
+		{
+			title: "RFTools"
+			x: 5.0d
+			y: 0.0d
+			dependencies: ["0000000000000FD7"]
+			id: "1E4DC3A7546EC894"
+			tasks: [{
+				id: "3E03729D4E825E26"
+				type: "item"
+				item: "rftoolsbase:machine_frame"
+			}]
+		}
+		{
+			x: -1.0d
+			y: 0.0d
+			shape: "diamond"
+			dependencies: ["7522971912BCF482"]
+			optional: true
+			id: "221F90FFF031E7B4"
+			tasks: [{
+				id: "6784136B840606FA"
+				type: "item"
+				item: "industrialforegoing:latex_processing_unit"
+			}]
+		}
+		{
+			x: -0.5d
+			y: 1.5d
+			dependencies: ["3CBABF225201DBED"]
+			id: "6079CBE9ECE6EB1D"
+			tasks: [{
+				id: "76E7A09884C5D8AB"
+				type: "item"
+				item: "industrialforegoing:dissolution_chamber"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 1.0d
+			dependencies: ["7522971912BCF482"]
+			id: "3CBABF225201DBED"
+			tasks: [{
+				id: "21117FB18D6E9300"
+				type: "item"
+				title: "Any #forge:plastic"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "forge:plastic"
+					}
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 2.5d
+			dependencies: ["56140777EF8FE03B"]
+			id: "2152CE1FF9468886"
+			tasks: [{
+				id: "4D44DD66246ECB57"
+				type: "item"
+				item: "industrialforegoing:pink_slime_ingot"
+			}]
+		}
+		{
+			x: 0.0d
+			y: 2.0d
+			dependencies: ["6079CBE9ECE6EB1D"]
+			id: "56140777EF8FE03B"
+			tasks: [{
+				id: "4F62270E32839226"
+				type: "item"
+				item: "industrialforegoing:mob_slaughter_factory"
+			}]
+		}
+		{
+			title: "Enrich Pink Slime"
+			x: 0.0d
+			y: 3.0d
+			dependencies: ["2152CE1FF9468886"]
+			id: "206F4AA9A9278D8D"
+			tasks: [{
+				id: "1C9B934F52D9FB49"
+				type: "item"
+				item: {
+					id: "botania:cosmetic_questgiver_mark"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: -0.5d
+			y: 3.5d
+			dependencies: ["206F4AA9A9278D8D"]
+			id: "412F3A311A7CFCB3"
+			tasks: [{
+				id: "0536AAB566704AC9"
+				type: "item"
+				item: "industrialforegoing:laser_drill"
+			}]
+		}
+	]
+}

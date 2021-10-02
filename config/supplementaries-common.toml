@@ -51,32 +51,38 @@
 		blacklist = ["minecraft:end_portal_frame"]
 
 	[blocks.jar]
-		#jar liquid capacity: leave at 12 for pixel accuracy
+		#Jar liquid capacity: leave at 12 for pixel accuracy
 		#Range: 0 ~ 1024
 		capacity = 12
-		#allow right click to instantly eat or drink food or potions inside a jar.
-		#Disable if you think this ability is op. Cookies are excluded
+		#Allow right click to instantly eat or drink food or potions inside a placed jar.
+		#Disable if you think this ability is op (honey for example). Cookies are excluded
 		drink_from_jar = true
+		#Dynamically allows all small mobs inside jars depending on their hitbox size. Tinted jars can accept hostile mbos too
+		jar_auto_detect = false
+		#Allows the player to directly drink from jar items
+		drink_from_jar_item = false
 
 	[blocks.cage]
-		#allow all entities to be captured by cages and jars. Not meant for survival
-		cage_allow_all_mobs = false
-		#allow all baby mobs to be captured by cages
+		#Allows all baby mobs to be captured by cages
 		cage_allow_all_babies = false
+		#Allows all entities to be captured by cages and jars. Not meant for survival
+		allow_all_mobs = false
+		#Dynamically allows all small mobs inside cages depending on their hitbox size
+		cage_auto_detect = false
 
 	[blocks.notice_board]
-		#allow notice boards to accept and display any item, not just maps and books
+		#Allows notice boards to accept and display any item, not just maps and books
 		allow_any_item = false
 
 	[blocks.sack]
-		#Penalize the player with slowness effect when carrying too many sacks
-		sack_penality = true
-		#maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
+		#Maximum number of sacks after which the slowness effect will be applied. each multiple of this number will further slow the player down
 		#Range: 0 ~ 50
 		sack_increment = 2
 		#How many slots should a sack have
 		#Range: 1 ~ 27
 		slots = 9
+		#Penalize the player with slowness effect when carrying too many sacks
+		sack_penalty = true
 
 	[blocks.safe]
 		#Makes safes only breakable by their owner or by a player in creative
@@ -134,6 +140,8 @@
 	[blocks.timber_frame]
 		#Replace a timber frame with wattle and daub block when daub is placed in it
 		replace_daub = true
+		#Allow placing a timber frame directly on a block by holding shift
+		swap_on_shift = false
 
 	[blocks.flag]
 		#Allows right/left clicking on a stick to lower/raise a flag attached to it
@@ -174,6 +182,9 @@
 			show_distance_text = true
 			#list of structure that a sign can point to. Note that they will only spawn in dimensions where vanilla villages can
 			villages = ["minecraft:village", "repurposed_structures:village_badlands", "repurposed_structures:village_dark_oak", "repurposed_structures:village_birch", "repurposed_structures:village_giant_taiga", "repurposed_structures:village_jungle", "repurposed_structures:village_mountains", "repurposed_structures:village_oak", "repurposed_structures:village_swamp", "pokecube:village", "pokecube_legends:village", "pokecube_legends:village/ocean", "valhelsia_structures:castle", "valhelsia_structures:castle_ruin", "valhelsia_structures:small_castle", "valhelsia_structures:tower_ruin"]
+
+		[spawns.structures.wild_flax]
+			enabled = true
 
 #entities parameters
 [entities]
@@ -264,9 +275,27 @@
 		#Amount of rotten flesh needed
 		#Range: 1 ~ 1000
 		rotten_flesh = 64
+		#Allows zombie horses to be ridden underwater
+		rideable_underwater = true
 
 	[tweaks.placeable_sticks]
-		#allow placeable blaze rods
+		#Allow placeable sticks
+		sticks = true
+		#Allow placeable blaze rods
+		blaze_rods = true
+
+	[tweaks.placeable_gunpowder]
+		#Allow placeable gunpowder
+		enabled = true
+		#Number of ticks it takes for gunpowder to burn 1 stage (out of 8). Increase to slow it down
+		#Range: 0 ~ 20
+		speed = 2
+		#Age at which it spread to the next gunpowder block. Also affects speed
+		#Range: 0 ~ 8
+		spread_age = 2
+
+	[tweaks.placeable_books]
+		#Allow books and enchanted books to be placed on the ground
 		enabled = true
 
 [items]
@@ -274,6 +303,9 @@
 	[items.rope_arrow]
 		#If you don't like my ropes you can specify here the block id ofa rope from another mod which will get deployed by rope arrows instead of mine
 		rope_arrow_override = "supplementaries:rope"
+		#Max number of robe items allowed to be stored inside a rope arrow
+		#Range: 1 ~ 256
+		capacity = 24
 
 	[items.flute]
 		#radius in which an unbound flute will search pets
@@ -287,6 +319,24 @@
 		#Bomb explosion radius (damage depends on this)
 		#Range: 0.1 ~ 10.0
 		explosion_radius = 2.0
+		#Do bombs break blocks like tnt?
+		#Allowed Values: ALL, WEAK, NONE
+		break_blocks = "WEAK"
+
+	[items.slingshot]
+		#Slingshot range multiplier
+		#Range: 0.0 ~ 5.0
+		range_multiplier = 1.0
+		#Time in ticks to fully charge a slingshot
+		#Range: 0 ~ 100
+		charge_time = 20
+		#Allow enderman to intercept any slingshot projectile
+		unrestricted_enderman_intercept = true
+
+	[items.blue_bomb]
+		#Bomb explosion radius (damage depends on this)
+		#Range: 0.1 ~ 10.0
+		explosion_radius = 5.15
 		#Do bombs break blocks like tnt?
 		#Allowed Values: ALL, WEAK, NONE
 		break_blocks = "WEAK"

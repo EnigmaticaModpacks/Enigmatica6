@@ -29,11 +29,11 @@ $MODPACK_NAME = "Enigmatica6"
 $CLIENT_NAME = "Enigmatica6"
 
 # Version Of The Modpack
-$MODPACK_VERSION = "0.5.12"
+$MODPACK_VERSION = "0.5.14"
 
 # Last Version Of The Modpack
 # Needed For Changelog Parsing
-$LAST_MODPACK_VERSION = "0.5.11"
+$LAST_MODPACK_VERSION = "0.5.13"
 
 # =====================================================================//
 #  CHANGELOG SETTINGS
@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "beta"
+$CLIENT_RELEASE_TYPE = "alpha"
 
 #=====================================================================//
 #  DEPENDENCIES URL
@@ -150,7 +150,14 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"blue_skies-client.toml",
 	"dummmmmmy-client.toml",
 	"smoothboot.json",
-	"InventoryHUD/curios.json"
+	"InventoryHUD/curios.json",
+	"bloodmagic-client.toml",
+	"jmi-client.toml",
+	"tconplanner-client.toml",
+	"equipmentcompare-common.toml",
+	"roadrunner/client.toml",
+	"roadrunner/common.toml",
+	"oauth-client.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
