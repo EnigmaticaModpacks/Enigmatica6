@@ -4,82 +4,1240 @@
 	order_index: 2
 	filename: "building"
 	title: "Building"
-	icon: "mcwroofs:oak_attic_roof"
+	icon: "minecraft:scaffolding"
 	always_invisible: true
 	default_quest_shape: ""
 	default_hide_dependency_lines: false
 	quests: [
 		{
 			title: "Building"
+			icon: "minecraft:scaffolding"
 			x: 0.0d
 			y: 0.0d
-			description: ["This chapter highlights some of the building materials you have available."]
-			id: "0000000000000E1F"
+			shape: "gear"
+			subtitle: "Dirt Hut No More"
+			description: ["INTRO_DESC"]
+			id: "058D3BEB64C74E27"
 			tasks: [{
-				id: "0000000000000E20"
+				id: "4A2592C4467CEAF6"
 				type: "checkmark"
-				title: "Building"
-				icon: "minecraft:glass"
+				title: "Builder"
+			}]
+			rewards: [{
+				id: "7FCE38283295ED61"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
-			title: "Macaw's Bridges"
+			icon: "minecraft:oak_log"
 			x: 0.0d
 			y: -2.0d
-			dependencies: ["0000000000000E1F"]
-			id: "0000000000000E2A"
+			subtitle: "A mod for every occasion"
+			description: ["MACAW_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "3834BBF4818E4ABE"
 			tasks: [{
-				id: "0000000000000E2B"
+				id: "4AF3B5D3B12BB9E7"
+				type: "checkmark"
+				title: "Macaw's Mods"
+			}]
+			rewards: [{
+				id: "0E23B1EC7F8A65EE"
 				type: "item"
-				item: "mcwbridges:rope_oak_bridge"
+				item: "create:builders_tea"
+				count: 2
+				random_bonus: 2
 			}]
 		}
 		{
-			title: "Macaw's Doors"
-			x: -1.0d
-			y: -2.5d
-			dependencies: ["0000000000000E1F"]
-			id: "0000000000000E2E"
+			title: "Windows + Additions"
+			icon: "mcwwindows:oak_window2"
+			x: 1.5d
+			y: -3.5d
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "69264C279D819443"
 			tasks: [{
-				id: "0000000000000E2F"
-				type: "item"
-				item: "mcwdoors:oak_japanese_door"
+				id: "6D2B932E57592B13"
+				type: "checkmark"
+				title: "Windows + Additions"
+			}]
+			rewards: [{
+				id: "22CC2896509891A2"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
-			title: "Macaw's Roofs"
-			x: 1.0d
-			y: -2.5d
-			dependencies: ["0000000000000E1F"]
-			id: "0000000000000E30"
+			icon: "mcwroofs:oak_roof"
+			x: 0.5d
+			y: -4.0d
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "294FF399D036000C"
 			tasks: [{
-				id: "0000000000000E31"
-				type: "item"
-				item: "mcwroofs:oak_attic_roof"
+				id: "63DF62E447E2B737"
+				type: "checkmark"
+				title: "Roofs + Tiles and Gutters"
+			}]
+			rewards: [{
+				id: "4EBBC5E559BB1D57"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
-			title: "Macaw's Windows"
+			icon: "mcwtrpdoors:oak_cottage_trapdoor"
+			x: -0.5d
+			y: -4.0d
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "2BFA6B1DF968DB60"
+			tasks: [{
+				id: "57A218C479845117"
+				type: "checkmark"
+				title: "Trapdoors"
+			}]
+			rewards: [{
+				id: "760F5F32E39E413F"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "mcwdoors:oak_cottage_door"
+			x: -1.5d
+			y: -3.5d
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "6AAB0C70527EB1C8"
+			tasks: [{
+				id: "1D231CC06FA1DCEF"
+				type: "checkmark"
+				title: "Doors"
+			}]
+			rewards: [{
+				id: "190BC73D15872F2A"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Fences and Walls"
+			icon: "mcwfences:oak_picket_fence"
 			x: 2.0d
-			y: -3.0d
-			dependencies: ["0000000000000E1F"]
-			id: "0000000000000E32"
+			y: -2.5d
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "1A8ADC65B09E9539"
 			tasks: [{
-				id: "0000000000000E33"
-				type: "item"
-				item: "mcwwindows:oak_window"
+				id: "227EE4A805EDDECE"
+				type: "checkmark"
+				title: "Fences"
+			}]
+			rewards: [{
+				id: "6DA561C702F1DEA5"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
-			title: "Macaw's Trapdoors"
+			icon: "mcwbridges:oak_log_bridge_middle"
 			x: -2.0d
-			y: -3.0d
-			dependencies: ["0000000000000E1F"]
-			id: "0000000000000E34"
+			y: -2.5d
+			dependencies: ["3834BBF4818E4ABE"]
+			id: "5CC123276DD545C8"
 			tasks: [{
-				id: "0000000000000E35"
+				id: "79A1B718CC1EE549"
+				type: "checkmark"
+				title: "Bridges"
+			}]
+			rewards: [{
+				id: "0DA8D314B0CFE8BA"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Masonry"
+			icon: "masonry:andesitetiled"
+			x: 1.0d
+			y: -1.5d
+			subtitle: "Channel your inner Dwarf"
+			description: ["MASONRY_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "63FE93055CE4162C"
+			tasks: [{
+				id: "44BE21A46B853C66"
+				type: "checkmark"
+				title: "Masonary"
+			}]
+			rewards: [{
+				id: "167EDB46E088AA19"
 				type: "item"
-				item: "mcwtrpdoors:oak_glass_trapdoor"
+				item: "minecraft:stonecutter"
+			}]
+		}
+		{
+			title: "MrCrayfish's Furniture Mod"
+			icon: "cfm:oak_chair"
+			x: -1.0d
+			y: -1.5d
+			subtitle: "It's like IKEA, but without the Meatballs"
+			description: ["CRAY_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "32824050418C71EB"
+			tasks: [{
+				id: "57B8F3B3CE1B0382"
+				type: "checkmark"
+				title: "MrCrayFish"
+			}]
+			rewards: [{
+				id: "3006D73518186276"
+				type: "command"
+				title: "Farmer's Delight"
+				icon: "kubejs:farmers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_farmers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Connected Glass"
+			icon: "connectedglass:clear_glass"
+			x: 2.0d
+			y: -1.0d
+			subtitle: "It's like a love story in the making"
+			description: ["CONNECTEDGLASS_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "66099AFAA1A6043F"
+			tasks: [{
+				id: "5E22777A93E1A57F"
+				type: "checkmark"
+				title: "Connected Glass"
+			}]
+			rewards: [{
+				id: "73CEB3BC6963B644"
+				type: "command"
+				title: "Alchemist's Delight"
+				icon: "kubejs:alchemists_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_alchemists_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Simply Light"
+			icon: "simplylight:illuminant_block_on"
+			x: -2.0d
+			y: -1.0d
+			subtitle: "Let there be light"
+			description: ["LIGHT_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "42FB32CC99E66E3F"
+			tasks: [{
+				id: "50131A2AFEF8805D"
+				type: "checkmark"
+				title: "Simply Lights"
+			}]
+			rewards: [{
+				id: "7E2D7FEE20672C9D"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Framed Blocks"
+			icon: "framedblocks:framed_cube"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Sky is the limit"
+			description: ["FRAMEDBLOCKS_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "0798D5139479A837"
+			tasks: [{
+				id: "62781D9D0AB3CB08"
+				type: "checkmark"
+				title: "Framed Blocks"
+			}]
+			rewards: [
+				{
+					id: "7A45DC96F03CA232"
+					type: "item"
+					item: "framedblocks:framed_hammer"
+				}
+				{
+					id: "1C5FD3A8CD3424C0"
+					type: "item"
+					item: "framedblocks:framed_wrench"
+				}
+			]
+		}
+		{
+			title: "Framed Drawers"
+			icon: "framedcompactdrawers:framed_full_one"
+			x: -2.5d
+			y: 0.0d
+			subtitle: "Build-a-Bear, but with Drawers"
+			description: ["FRAMEDDRAWERS_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "473BE440ECB1CEDF"
+			tasks: [{
+				id: "1C2A1C581C97D480"
+				type: "checkmark"
+				title: "Framed Drawers"
+			}]
+			rewards: [
+				{
+					id: "799AB9D93C124D6F"
+					type: "item"
+					item: "storagedrawers:emerald_storage_upgrade"
+				}
+				{
+					id: "006783158FEE960D"
+					type: "item"
+					item: "storagedrawers:void_upgrade"
+				}
+			]
+		}
+		{
+			title: "Chipped"
+			icon: "chipped:mason_table"
+			x: 2.0d
+			y: 1.0d
+			subtitle: "Nothing a little wood filler won't fix"
+			description: ["CHIPPED_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "1EAFB4FB2CF09F26"
+			tasks: [{
+				id: "761ADF517D67FC5A"
+				type: "checkmark"
+				title: "Chipped"
+			}]
+			rewards: [{
+				id: "0365D0D7A7E40B1D"
+				type: "command"
+				title: "Miner's Delight"
+				icon: "kubejs:miners_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_miners_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Engineer's Decor"
+			icon: "engineersdecor:steel_catwalk_stairs"
+			x: -2.0d
+			y: 1.0d
+			subtitle: "Immersive Decorating"
+			description: ["ENGINEERSDECOR_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "68E143E444AF44C2"
+			tasks: [{
+				id: "62B41166B5BAC9CF"
+				type: "checkmark"
+				title: "Engineer's Decor"
+			}]
+			rewards: [{
+				id: "3C8E7414A7A4C3C0"
+				type: "item"
+				item: "engineersdecor:sign_hotwire"
+				count: 2
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "'Dustrial Decor"
+			icon: "dustrial_decor:sheet_metal_treading"
+			x: -1.0d
+			y: 1.5d
+			subtitle: "Safty Helmet should be worn at all times"
+			description: ["DUSTRIALDECOR_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "201E7950E17180BD"
+			tasks: [{
+				id: "76C3B1B9033FFC8C"
+				type: "checkmark"
+				title: "'Dustrial Decor"
+			}]
+			rewards: [
+				{
+					id: "6C4A232FCA2807FA"
+					type: "item"
+					item: {
+						id: "dustrial_decor:cardboard_helmet"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "60773CCBDE6A5D12"
+					type: "item"
+					item: "dustrial_decor:cardboard"
+					count: 16
+					random_bonus: 16
+				}
+			]
+		}
+		{
+			title: "Decorative Blocks"
+			icon: "decorative_blocks:oak_support"
+			x: 1.0d
+			y: 1.5d
+			subtitle: "Grab a chair, and sit by the hearth"
+			description: ["DECORATIVEBLOCKS_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "03D0B336BB7CEFE1"
+			tasks: [{
+				id: "07C722038EBA8BA5"
+				type: "checkmark"
+				title: "Decorative Blocks"
+			}]
+			rewards: [
+				{
+					id: "53FB7E9EE2F64323"
+					type: "item"
+					item: "simplefarming:beer"
+				}
+				{
+					id: "314E867E74A0A658"
+					type: "item"
+					item: "simplefarming:wine"
+				}
+				{
+					id: "5C9415F6EFAA203C"
+					type: "item"
+					item: "simplefarming:whiskey"
+				}
+				{
+					id: "293E3264D9BC1836"
+					type: "item"
+					item: "simplefarming:mead"
+				}
+				{
+					id: "454E1AEBCCD2B768"
+					type: "item"
+					item: "simplefarming:vodka"
+				}
+				{
+					id: "3AE7ECDC030B78F6"
+					type: "item"
+					item: "simplefarming:sake"
+				}
+				{
+					id: "020E1FF6FF8532FA"
+					type: "item"
+					item: "simplefarming:cider"
+				}
+				{
+					id: "022D696626C1C290"
+					type: "item"
+					item: "simplefarming:cauim"
+				}
+				{
+					id: "421FEBBA8B18E8BF"
+					type: "item"
+					item: "simplefarming:tiswin"
+				}
+			]
+		}
+		{
+			title: "Valhelsia Structures"
+			icon: "valhelsia_structures:big_orange_glazed_jar"
+			x: 0.0d
+			y: 2.0d
+			subtitle: "Raid \\& Pillager, or I guess you can just Craft this stuff"
+			description: ["VALHELSIA_DESC"]
+			dependencies: ["058D3BEB64C74E27"]
+			id: "1DEA7DBF6D1A1C6A"
+			tasks: [{
+				id: "3D34CEA63C477805"
+				type: "checkmark"
+				title: "Valhelsia Strucutres"
+			}]
+			rewards: [{
+				id: "548107ED51B7B447"
+				type: "command"
+				title: "Sorcerer's Delight"
+				icon: "kubejs:sorcerers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_sorcerers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "General Building Tools"
+			icon: {
+				id: "emendatusenigmatica:enigmatic_hammer"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: 3.0d
+			shape: "gear"
+			subtitle: "The right tools for the job"
+			description: ["GENERAL_INTRO_DESC"]
+			id: "5411C8D2344CC2F1"
+			tasks: [{
+				id: "48834CDA218F71E0"
+				type: "checkmark"
+				title: "Building Tools"
+			}]
+			rewards: [{
+				id: "215C050F84460976"
+				type: "item"
+				item: "minecraft:scaffolding"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Portable Stonecutter"
+			icon: "portable_stonecutter:portable_stonecutter"
+			x: 5.0d
+			y: 2.0d
+			subtitle: "It's like the Chisel, but it's not"
+			description: ["PSC_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "085A8424875A2B23"
+			tasks: [{
+				id: "0F45B05043BCCBE6"
+				type: "item"
+				item: "portable_stonecutter:portable_stonecutter"
+			}]
+			rewards: [{
+				id: "31F796972A4B7369"
+				type: "command"
+				title: "Scavenger's Delight"
+				icon: "kubejs:scavengers_delight"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_scavengers_delight"
+				player_command: false
+			}]
+		}
+		{
+			title: "Chisel"
+			icon: {
+				id: "chisel:iron_chisel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 6.0d
+			y: 1.5d
+			subtitle: "It's like the Portable Stonecutter, but it's not"
+			description: ["CHISEL_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "165DFE2F0AF151E7"
+			tasks: [{
+				id: "2A04BA9132C1CB19"
+				type: "item"
+				item: {
+					id: "chisel:iron_chisel"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "77DBBB65B8E37846"
+				type: "item"
+				item: "chisel:factory/dots"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Chisel \\& Bits"
+			icon: {
+				id: "chiselsandbits:chisel_stone"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 7.0d
+			y: 2.0d
+			subtitle: "It's nothing like the Chisel or the Portable Stonecutter"
+			description: ["CaB_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "468BEE8C31DA8DF9"
+			tasks: [{
+				id: "45C52AC34FB4858B"
+				type: "item"
+				item: {
+					id: "chiselsandbits:chisel_stone"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [
+				{
+					id: "720F542AE5971C8B"
+					type: "item"
+					item: {
+						id: "chiselsandbits:bit_bag"
+						Count: 1b
+						tag: {
+							Inventory: { }
+						}
+					}
+				}
+				{
+					id: "26AE96A25BAAC750"
+					type: "item"
+					item: "chiselsandbits:magnifying_glass"
+				}
+				{
+					id: "4DDA396CCCA5EF72"
+					type: "item"
+					item: {
+						id: "chiselsandbits:measuring_tape"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+		}
+		{
+			title: "Building Gadget"
+			icon: {
+				id: "buildinggadgets:gadget_building"
+				Count: 1b
+				tag: {
+					state: {
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+						data: { }
+					}
+				}
+			}
+			x: 5.0d
+			y: 4.0d
+			subtitle: "It builds stuff"
+			description: ["BG_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "0F06CA2A45323C4C"
+			tasks: [{
+				id: "5DB4EE8F264A9453"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_building"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "651CFE821154BBC8"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Exchange Gadget"
+			icon: {
+				id: "buildinggadgets:gadget_exchanging"
+				Count: 1b
+				tag: {
+					state: {
+						serializer: "buildinggadgets:dummy_serializer"
+						state: {
+							Name: "minecraft:air"
+						}
+						data: { }
+					}
+				}
+			}
+			x: 6.0d
+			y: 4.5d
+			subtitle: "It exchanges stuff"
+			description: ["EG_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "25E1DB1C3F184D4C"
+			tasks: [{
+				id: "0031DADEE3BD0089"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_exchanging"
+					Count: 1b
+					tag: {
+						state: {
+							serializer: "buildinggadgets:dummy_serializer"
+							state: {
+								Name: "minecraft:air"
+							}
+							data: { }
+						}
+					}
+				}
+			}]
+			rewards: [{
+				id: "2A430B36A4ECDB29"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Copy-Paste Gadget"
+			icon: {
+				id: "buildinggadgets:gadget_copy_paste"
+				Count: 1b
+				tag: {
+					mode: 0b
+					template_id: [I;
+						-937522451
+						-1230682587
+						-1166065172
+						-847433661
+					]
+				}
+			}
+			x: 7.0d
+			y: 4.0d
+			subtitle: "It copies and pastes stuff"
+			description: ["CPG_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "2E5F1C7B4B293531"
+			tasks: [{
+				id: "6AB9C0357788BA56"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_copy_paste"
+					Count: 1b
+					tag: {
+						mode: 0b
+						template_id: [I;
+							-937522451
+							-1230682587
+							-1166065172
+							-847433661
+						]
+					}
+				}
+			}]
+			rewards: [{
+				id: "56EDEB3CE12B8C19"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Destruction Gadget"
+			icon: {
+				id: "buildinggadgets:gadget_destruction"
+				Count: 1b
+				tag: {
+					overlay: 1b
+					fuzzy: 1b
+				}
+			}
+			x: 7.5d
+			y: 3.0d
+			subtitle: "It destructs stuff"
+			description: ["DESG_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "095108AB50598C04"
+			tasks: [{
+				id: "1441EAF1EDC3AFDF"
+				type: "item"
+				item: {
+					id: "buildinggadgets:gadget_destruction"
+					Count: 1b
+					tag: {
+						overlay: 1b
+						fuzzy: 1b
+					}
+				}
+			}]
+			rewards: [{
+				id: "61F9F3D49C389940"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			title: "Construction Wand"
+			icon: {
+				id: "constructionwand:stone_wand"
+				Count: 1b
+				tag: {
+					wand_options: { }
+					Damage: 0
+				}
+			}
+			x: 4.5d
+			y: 3.0d
+			subtitle: "Accio"
+			description: ["CWAND_DESC"]
+			dependencies: ["5411C8D2344CC2F1"]
+			id: "26B88D08862EA1AE"
+			tasks: [{
+				id: "1DFE69E8333E7764"
+				type: "item"
+				item: {
+					id: "constructionwand:stone_wand"
+					Count: 1b
+					tag: {
+						wand_options: { }
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "214C2A82D3E5941A"
+				type: "item"
+				item: "minecraft:scaffolding"
+				count: 16
+				random_bonus: 16
+			}]
+		}
+		{
+			title: "Botania Building Tools"
+			icon: {
+				id: "botania:lexicon"
+				Count: 1b
+				tag: {
+					"botania:elven_unlock": 1b
+				}
+			}
+			x: 6.0d
+			y: -3.0d
+			shape: "gear"
+			subtitle: "Magical building technologies "
+			description: ["BOTANIA_INTRO_DESC"]
+			id: "3F1801BBAF8A29FD"
+			tasks: [{
+				id: "0A6C5E41EEDC3E80"
+				type: "checkmark"
+				title: "Botania Building Tools"
+			}]
+			rewards: [{
+				id: "67E31EF8EF9242E8"
+				type: "item"
+				item: "botania:livingwood_twig"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Rod of the Shifting Crust"
+			icon: {
+				id: "botania:exchange_rod"
+				Count: 1b
+				tag: { }
+			}
+			x: 7.0d
+			y: -4.0d
+			description: ["CRUST_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "3A0988C3AEFBAAC5"
+			tasks: [{
+				id: "7FA93EE01B45135D"
+				type: "item"
+				item: {
+					id: "botania:exchange_rod"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "41109E78B59EF97B"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rod of the Depths"
+			icon: "botania:cobble_rod"
+			x: 5.0d
+			y: -4.0d
+			description: ["DEPTH_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "261056A552909227"
+			tasks: [{
+				id: "60487B8DAAABD00A"
+				type: "item"
+				item: "botania:cobble_rod"
+			}]
+			rewards: [{
+				id: "0F739D6D5D514E05"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rod of the Lands"
+			icon: "botania:dirt_rod"
+			x: 7.5d
+			y: -3.0d
+			description: ["LANDS_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "75361161CEA1E406"
+			tasks: [{
+				id: "2FE7292AC2F975A8"
+				type: "item"
+				item: "botania:dirt_rod"
+			}]
+			rewards: [{
+				id: "0C25B3F19358451A"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Rod of the Terra Firma"
+			icon: "botania:terraform_rod"
+			x: 7.0d
+			y: -2.0d
+			description: ["TERRAFIRMA_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "1E22D45F4ACB8FE2"
+			tasks: [{
+				id: "3F20DF25B210800F"
+				type: "item"
+				item: "botania:terraform_rod"
+			}]
+			rewards: [{
+				id: "2675982841DE964D"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Astral Sorcery Building Tools"
+			icon: "astralsorcery:tome"
+			x: -6.0d
+			y: 0.0d
+			shape: "gear"
+			subtitle: "No construction work after hours"
+			description: ["ASTRAL_INTRO_DESC"]
+			id: "020ECCFFA45CE43D"
+			tasks: [{
+				id: "6D5A746B4A711C58"
+				type: "checkmark"
+				title: "Astral Sorcery Building Tools"
+			}]
+			rewards: [
+				{
+					id: "691CF672BABA1FA8"
+					type: "item"
+					item: "astralsorcery:stardust"
+					random_bonus: 1
+				}
+				{
+					id: "36968A85FAA99915"
+					type: "item"
+					item: "astralsorcery:marble_raw"
+					count: 4
+					random_bonus: 4
+				}
+			]
+		}
+		{
+			title: "Formation Wand"
+			icon: {
+				id: "astralsorcery:architect_wand"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: -4.5d
+			y: 0.0d
+			description: ["FORMATIONWAND_DESC"]
+			dependencies: ["020ECCFFA45CE43D"]
+			id: "4A2306BD24A5D6D2"
+			tasks: [{
+				id: "7D1392DE2FB21B89"
+				type: "item"
+				item: {
+					id: "astralsorcery:architect_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "23FF3AAB4DFEE10C"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Conversion Wand"
+			icon: {
+				id: "astralsorcery:exchange_wand"
+				Count: 1b
+				tag: {
+					astralsorcery: { }
+				}
+			}
+			x: -7.5d
+			y: 0.0d
+			description: ["CONVERSIONWAND_DESC"]
+			dependencies: ["020ECCFFA45CE43D"]
+			id: "2334B38255294FAE"
+			tasks: [{
+				id: "0BE4A8E8DE0E013F"
+				type: "item"
+				item: {
+					id: "astralsorcery:exchange_wand"
+					Count: 1b
+					tag: {
+						astralsorcery: { }
+					}
+				}
+			}]
+			rewards: [{
+				id: "07A919265475FAEF"
+				type: "command"
+				title: "Rare Astral Sorcery Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_astral_sorcery_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Create Building Tools"
+			icon: "create:mechanical_arm"
+			x: -6.0d
+			y: 1.5d
+			shape: "gear"
+			subtitle: "Let's get mechanical, mechanical"
+			description: ["CREATE_INTRO_DESC"]
+			id: "1E318BCAC2C6FA09"
+			tasks: [{
+				id: "2FC308627BCE10F4"
+				type: "checkmark"
+				title: "Create Building Tools"
+			}]
+			rewards: [{
+				id: "618B214EB41EEE48"
+				type: "item"
+				item: "create:builders_tea"
+				count: 4
+				random_bonus: 4
+			}]
+		}
+		{
+			title: "Extendo Grip"
+			icon: {
+				id: "create:extendo_grip"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.5d
+			y: 1.5d
+			description: ["EXTENDO_DESC"]
+			dependencies: ["1E318BCAC2C6FA09"]
+			id: "34F00196E2D0B4B0"
+			tasks: [{
+				id: "36A419607017EA31"
+				type: "item"
+				item: {
+					id: "create:extendo_grip"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+			rewards: [{
+				id: "384957F4FCE7BC6A"
+				type: "command"
+				title: "Rare Create Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Wand of Symmetry"
+			icon: "create:wand_of_symmetry"
+			x: -7.5d
+			y: 1.5d
+			description: ["WANDSYM_DESC"]
+			dependencies: ["1E318BCAC2C6FA09"]
+			id: "147B701C5BCF2424"
+			tasks: [{
+				id: "0A989C0C09502289"
+				type: "item"
+				item: "create:wand_of_symmetry"
+			}]
+			rewards: [{
+				id: "01870BF5EE173AB5"
+				type: "command"
+				title: "Legendary Create Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_create_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "The Mighty Architect"
+			icon: "create:crafting_blueprint"
+			x: -6.0d
+			y: -1.5d
+			shape: "square"
+			subtitle: "A builder with a plan"
+			description: ["TMA_DESC"]
+			id: "4407C59E32585B96"
+			tasks: [{
+				id: "3671CC5B42EC4DF8"
+				type: "checkmark"
+				title: "The Mighty Architect"
+			}]
+			rewards: [{
+				id: "3E564C831D52F1BD"
+				type: "item"
+				item: "create:builders_tea"
+				count: 2
+				random_bonus: 2
+			}]
+		}
+		{
+			title: "Rod of the Highlands"
+			icon: "botania:skydirt_rod"
+			x: 4.5d
+			y: -3.0d
+			description: ["HIGHLANDS_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "624AAFDABA481B08"
+			tasks: [{
+				id: "71069CB1BABDA192"
+				type: "item"
+				item: "botania:skydirt_rod"
+			}]
+			rewards: [{
+				id: "2F982B8BD0A5B9DF"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Mana Blaster + Entropic Lens"
+			icon: {
+				id: "botania:mana_gun"
+				Count: 1b
+				tag: { }
+			}
+			x: 5.0d
+			y: -2.0d
+			description: ["BLASTER_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "5CCA8708260D389C"
+			tasks: [
+				{
+					id: "64B96C806BE2E4CB"
+					type: "item"
+					item: {
+						id: "botania:mana_gun"
+						Count: 1b
+						tag: { }
+					}
+				}
+				{
+					id: "1F2D3C964900AA44"
+					type: "item"
+					item: {
+						id: "botania:lens_explosive"
+						Count: 1b
+						tag: { }
+					}
+				}
+			]
+			rewards: [{
+				id: "461C49E6DB199C54"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
+			}]
+		}
+		{
+			title: "Sextent"
+			icon: "botania:sextant"
+			x: 6.0d
+			y: -1.5d
+			description: ["SEXTENT_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "179FB20DE78B8851"
+			tasks: [{
+				id: "7CEB81CF604A2837"
+				type: "item"
+				item: "botania:sextant"
+			}]
+			rewards: [{
+				id: "597AE01F4D6E1217"
+				type: "command"
+				title: "Rare Botania Loot Box"
+				icon: "kubejs:rare_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_rare"
+				player_command: false
+			}]
+		}
+		{
+			title: "Worldshaper's Astrolabe"
+			icon: {
+				id: "botania:astrolabe"
+				Count: 1b
+				tag: { }
+			}
+			x: 6.0d
+			y: -4.5d
+			description: ["ASTROLABE_DESC"]
+			dependencies: ["3F1801BBAF8A29FD"]
+			id: "37F31E4C7664EF8C"
+			tasks: [{
+				id: "1827D26DAD8075A3"
+				type: "item"
+				item: {
+					id: "botania:astrolabe"
+					Count: 1b
+					tag: { }
+				}
+			}]
+			rewards: [{
+				id: "70F6E60195DD9768"
+				type: "command"
+				title: "Legendary Botania Loot Box"
+				icon: "kubejs:legendary_lootbox"
+				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
+				player_command: false
 			}]
 		}
 	]
