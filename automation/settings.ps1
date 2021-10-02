@@ -157,7 +157,9 @@ $CONFIGS_TO_REMOVE_FROM_CLIENT_FILES = @(
 	"equipmentcompare-common.toml",
 	"roadrunner/client.toml",
 	"roadrunner/common.toml",
-	"oauth-client.toml"
+	"oauth-client.toml",
+	"jeed-client.toml",
+	"valhelsia_core-client.toml"
 )
 
 $FOLDERS_TO_REMOVE_FROM_CLIENT_FILES = @("local/ftbutilities", "local/ftbchunks/data", "local/ftbultimine", "config/configswapper/Launch Backup")
