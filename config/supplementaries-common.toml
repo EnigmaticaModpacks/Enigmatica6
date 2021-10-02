@@ -136,6 +136,8 @@
 	[blocks.iron_gate]
 		#Allows two iron gates to be opened simultaneously when on top of the other
 		double_opening = true
+		#Makes iron (ang gold) gates behave like their door counterpart so for example iron gates will only be openeable by redstone
+		door-like_gates = false
 
 	[blocks.timber_frame]
 		#Replace a timber frame with wattle and daub block when daub is placed in it
@@ -206,9 +208,9 @@
 [tweaks]
 
 	[tweaks.cake_tweaks]
-		#allows you to place a cake ontop of another
+		#Allows you to place a cake on top of another
 		double_cake = true
-		#replaces normal cake placement with a directional one
+		#Replaces normal cake placement with a directional one
 		directional_cake = true
 
 	[tweaks.hanging_flower_pots]
@@ -216,14 +218,16 @@
 		enabled = true
 
 	[tweaks.throwable_bricks]
-		#throw bricks at your foes! Might break glass blocks
+		#Throw bricks at your foes! Might break glass blocks
 		enabled = true
 
 	[tweaks.wall_lantern]
-		#allow wall lanterns placement
+		#Allow wall lanterns placement
 		enabled = true
-		#mod ids of mods that have lantern block that extend the base lantern class but don't look like one
+		#Mod ids of mods that have lantern block that extend the base lantern class but don't look like one
 		mod_blacklist = ["extlights", "betterendforge", "tconstruct"]
+		#Gives high priority to wall lantern placement. Enable to override other wall lanterns placements, disable if it causes issues with other mods that use lower priority block click events
+		high_priority = true
 
 	[tweaks.bells_tweaks]
 		#Ring a bell by clicking on a chain that's connected to it
@@ -297,6 +301,12 @@
 	[tweaks.placeable_books]
 		#Allow books and enchanted books to be placed on the ground
 		enabled = true
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		book_power = 1.0
+		#Enchantment power bonus given by normal book piles with 4 books. Piles with less books will have their respective fraction of this total. For reference a vanilla bookshelf provides 1
+		#Range: 0.0 ~ 5.0
+		enchanted_book_power = 1.334
 
 [items]
 
@@ -324,7 +334,7 @@
 		break_blocks = "WEAK"
 
 	[items.slingshot]
-		#Slingshot range multiplier
+		#Slingshot range multiplier. Affect the initial projectile speed
 		#Range: 0.0 ~ 5.0
 		range_multiplier = 1.0
 		#Time in ticks to fully charge a slingshot
@@ -332,6 +342,9 @@
 		charge_time = 20
 		#Allow enderman to intercept any slingshot projectile
 		unrestricted_enderman_intercept = true
+		#Deceleration for the stasis projectile
+		#Range: 0.1 ~ 1.0
+		stasis_deceleration = 0.9624999761581421
 
 	[items.blue_bomb]
 		#Bomb explosion radius (damage depends on this)
