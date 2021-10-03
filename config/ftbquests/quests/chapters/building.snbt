@@ -19,9 +19,9 @@
 			description: [
 				"Welcome to the Building Chapter"
 				""
-				"This section contains a list of building/decoration based mods, and a handful of tools to help you get the job done, and set you on your way to become a seasoned builder."
+				"This section contains a list of building/decoration based mods, and a handful of tools to help you get the job done, and set you on your way to becoming a seasoned builder."
 				""
-				"~Ridanisaurus Rid"
+				"~Ridanisaurus Rid \\& MuteTiefling"
 			]
 			id: "058D3BEB64C74E27"
 			tasks: [{
@@ -264,7 +264,7 @@
 			y: -1.5d
 			subtitle: "It's like IKEA, but without the Meatballs"
 			description: [
-				"Are you building a kitchen, and you wish there were sinks and counters with different (both Vanilla and Modded) wood and stone options that matches your build? What about a small backyard or garden with a Grill to BBQ your meats?"
+				"Are you building a kitchen and you wish there were sinks and counters with different (both Vanilla and Modded) wood and stone options that matches your build? What about a small backyard or garden with a Grill to BBQ your meats?"
 				""
 				"MrCrayfish's Furniture More offers a massive collection of decorative and functional blocks for you to select from, and spice up your living space."
 			]
@@ -343,16 +343,23 @@
 			y: 2.0d
 			subtitle: "Let there be light"
 			description: [
-				"The mod name really says it all. It's simply just that, a lights mod."
+				"The mod name really says it all. It's simply that, a lights mod."
 				""
-				"But, don't let the name fool you. Simply Light offers a wide range of Lights to keep your base lit, with style."
+				"But don't let the name fool you. Simply Light offers a wide range of lights to keep your base lit with style."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "42FB32CC99E66E3F"
 			tasks: [{
 				id: "1EFA47BC6E4EC782"
 				type: "item"
-				item: "simplylight:illuminant_block_on"
+				title: "Any 16x Simply Lights"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "simplylight"
+					}
+				}
 				count: 16L
 			}]
 			rewards: [{
@@ -374,6 +381,8 @@
 				"Are you looking for Glass Stairs? or maybe a Netherite door? How about an Endstone Sign? Well, look no further."
 				""
 				"Framed Blocks introduces a blank template of various shapes and blocks which mimics the texture of the block clicked on them."
+				""
+				"They can even be made to glow by right clicking them with glowstone!"
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "0798D5139479A837"
@@ -403,11 +412,11 @@
 			y: 0.0d
 			subtitle: "Build-a-Bear, but with Drawers"
 			description: [
-				"If you are fed up with having an Oak Drawer that is sticking like a sore thumb in the middle of your build, completely mismatching your building palette?"
+				"Are you fed up with that Oak Drawer that is sticking out like a sore thumb in the middle of your build, completely mismatching your building palette?"
 				""
 				"Framed Drawers gives you a blank template which you can combine in a crafting table with different blocks to use their texture instead, whether it's the front, the sides, or the trim, these Framed Drawers are highly customizable visually."
 				""
-				"Needless to say, this mod offers more than just a single drawer style templates, it actually has a template for each type of drawers, whether it is a 2x2, a Compacting Drawer, or even a Drawer Controller."
+				"Needless to say, this mod offers more than just a single drawer style templates, it actually has a template for each type of drawer, whether it is a 2x2, a Compacting Drawer, or even a Drawer Controller."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "473BE440ECB1CEDF"
@@ -443,9 +452,9 @@
 			y: -1.0d
 			subtitle: "Nothing a little wood filler won't fix"
 			description: [
-				"Chipped offers a massive collection of carved Vanilla blocks, whether it is decorative glass, quilted wool for nice carpet design, or even an omenious chisled gilded blackstone. Chipped got you covered."
+				"Chipped offers a massive collection of carved Vanilla blocks, whether it is decorative glass, quilted wool for nice carpet design, or even an ominous chisled gilded blackstone. Chipped has got you covered."
 				""
-				"To start, build one of the carving stations available which function in a similar way as a Vanilla Stonecutter, place the apprioriate block in it, and select a different output that suits your building needs."
+				"To start, build one of the carving stations available which function in a similar way to the Vanilla Stonecutter. Place the apprioriate block in it and select a different output that suits your building needs."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "1EAFB4FB2CF09F26"
@@ -508,7 +517,7 @@
 			description: [
 				"If you love the industrial look of Immersive Engineering, then you will probably love Engineer's Decor."
 				""
-				"This mod adds a handful of both functional and decorative blocks that should feel right at home in your Immersive Engineering base. Whether it is a DANGER! sign, or an industrial looking Crafting Station, Engineer's Decor got you covered."
+				"This mod adds a handful of both functional and decorative blocks that should feel right at home in your Immersive Engineering base. Whether it is a DANGER! sign, or an industrial looking Crafting Station, Engineer's Decor has got you covered."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "68E143E444AF44C2"
@@ -533,9 +542,9 @@
 			y: 1.5d
 			subtitle: "Safty Helmet must be worn at all times!"
 			description: [
-				"Are you building a Factory to house all your loud machinary? Does that power station building feel open to wandering wild life and hostile mobs? Do you wish you could put up a chain fence to stop those pesky illagers from interupting you? Well then ..."
+				"Are you building a Factory to house all your loud machinery? Does that power station building feel open to wandering wild life and hostile mobs? Do you wish you could put up a chain fence to stop those pesky illagers from interupting you? Well then ..."
 				""
-				"'Dustrial Craft offers all the above, and more. This mod offers a decent range of decorative blocks with industrial theme in mind."
+				"'Dustrial Decor offers all the above, and more. This mod offers a decent range of decorative blocks with industrial theme in mind."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "201E7950E17180BD"
@@ -583,7 +592,7 @@
 			description: [
 				"If you are into your medieval or rustic builds, whether it is a castle on a cliff, a cabin in the woods, or a hearty tavern for a weary traveler, Decorative Blocks will have some blocks that fits your style."
 				""
-				"Decorative Blocks offers a nicely textured, and well designed blocks for your building needs."
+				"Decorative Blocks offers many nicely textured and well designed blocks for your building needs."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "03D0B336BB7CEFE1"
@@ -691,7 +700,7 @@
 				}
 			}
 			x: 6.0d
-			y: 3.0d
+			y: 2.5d
 			shape: "gear"
 			subtitle: "The right tools for the job"
 			description: ["GENERAL_INTRO_DESC"]
@@ -713,14 +722,14 @@
 			title: "Portable Stonecutter"
 			icon: "portable_stonecutter:portable_stonecutter"
 			x: 5.0d
-			y: 2.0d
+			y: 1.5d
 			subtitle: "It's like the Chisel, but fatter"
 			description: [
-				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!"
+				"It cuts, it grinds, it chisels, polishes and even cooks and cleans!"
 				""
 				"All the power of a Stone Cutter, now in a compact portable format that fits in the palm of your hand."
 				""
-				"Disclaimer: Will not actually cook or clean. Not for Commercial Use"
+				"Disclaimer: Will not actually cook or clean. Not for Commercial Use."
 				""
 				"Warning: Keep away from children, animals, nitwits. Do not place hand on blade while in motion. Extended use may lead to fatigue and loss of vision."
 			]
@@ -750,19 +759,52 @@
 				}
 			}
 			x: 6.0d
-			y: 1.5d
+			y: 1.0d
 			subtitle: "It's like the Portable Stonecutter, but skinnier"
-			description: ["CHISEL_DESC"]
+			description: [
+				"A classic tool for new and seasoned builders alike."
+				""
+				"Right clicking the Chisel opens a GUI where you can place a block and chisel it into a different, more decorative version of itself."
+				""
+				"You can also keep a specific chiseled block in the GUI to be able to chisel blocks in the world by left clicking them."
+				""
+				"Higher tiers of the Chisel adds extra functionalities such as 3x3 in-world chiseling or even a pattern preview."
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "165DFE2F0AF151E7"
 			tasks: [{
 				id: "2A04BA9132C1CB19"
 				type: "item"
+				title: "Any Chisel (from Chisel mod)"
 				item: {
-					id: "chisel:iron_chisel"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						Damage: 0
+						items: [
+							{
+								id: "chisel:iron_chisel"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "chisel:diamond_chisel"
+								Count: 1b
+								tag: {
+									Damage: 0
+									chiseldata: { }
+								}
+							}
+							{
+								id: "chisel:hitech_chisel"
+								Count: 1b
+								tag: {
+									Damage: 0
+									chiseldata: { }
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -784,19 +826,60 @@
 				}
 			}
 			x: 7.0d
-			y: 2.0d
+			y: 1.5d
 			subtitle: "It's nothing like the Chisel or the Portable Stonecutter"
-			description: ["CaB_DESC"]
+			description: [
+				"Chisels from this mod allow you to chip away pieces of the block down to a single pixel, or bit, at a time."
+				""
+				"This mod gives you almost complete control on the shapes you can build and combine, including fluids."
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "468BEE8C31DA8DF9"
 			tasks: [{
 				id: "45C52AC34FB4858B"
 				type: "item"
+				title: "Any Chisel (from Chisel \\& Bits mod)"
 				item: {
-					id: "chiselsandbits:chisel_stone"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						Damage: 0
+						items: [
+							{
+								id: "chiselsandbits:chisel_stone"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "chiselsandbits:chisel_iron"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "chiselsandbits:chisel_gold"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "chiselsandbits:chisel_diamond"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								id: "chiselsandbits:chisel_netherite"
+								Count: 1b
+								tag: {
+									Damage: 0
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -844,12 +927,12 @@
 				}
 			}
 			x: 5.0d
-			y: 4.0d
+			y: 3.5d
 			subtitle: "It builds stuff"
 			description: [
 				"An advanced building device with several modes allowing for the quick construction of walls, stairs, and platforms. "
 				""
-				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "0F06CA2A45323C4C"
@@ -892,12 +975,12 @@
 				}
 			}
 			x: 6.0d
-			y: 4.5d
+			y: 4.0d
 			subtitle: "It exchanges stuff"
 			description: [
 				"Quickly swap blocks in an area without having to break and manually place each one. Enchant with Silk Touch to work with delicate blocks such as glass."
 				""
-				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "25E1DB1C3F184D4C"
@@ -940,14 +1023,14 @@
 				}
 			}
 			x: 7.0d
-			y: 4.0d
+			y: 3.5d
 			subtitle: "It copies and pastes stuff"
 			description: [
 				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
 				""
 				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Enigmatica 6 comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
 				""
-				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "2E5F1C7B4B293531"
@@ -985,14 +1068,14 @@
 				}
 			}
 			x: 7.5d
-			y: 3.0d
+			y: 2.5d
 			subtitle: "Guess what it does .."
 			description: [
 				"For those times when you simply want to clear a hole to build in, and don’t really care what happens to the blocks that were there."
 				""
 				"Be warned, this tool destroys all blocks it removes!"
 				""
-				"Sneak Right Click in the air to configure the area to void. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+				"Sneak Right Click in the air to configure the area to void. Use the Building Gadgets Settings Menu key [default: g] to access advanced features. "
 			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "095108AB50598C04"
@@ -1025,7 +1108,7 @@
 				}
 			}
 			x: 4.5d
-			y: 3.0d
+			y: 2.5d
 			subtitle: "Accio"
 			description: [
 				"A modded classic, the Construction Wand simply extends the blocks that are already placed in the world. This can make it easy to build a wall by first laying the foundation, then building up with the wand. "
@@ -1037,14 +1120,46 @@
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "26B88D08862EA1AE"
 			tasks: [{
-				id: "1DFE69E8333E7764"
+				id: "131EB02FBDE8DC98"
 				type: "item"
+				title: "Any Construction Wand"
 				item: {
-					id: "constructionwand:stone_wand"
+					id: "itemfilters:or"
 					Count: 1b
 					tag: {
-						wand_options: { }
-						Damage: 0
+						items: [
+							{
+								id: "constructionwand:stone_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:iron_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:diamond_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+									Damage: 0
+								}
+							}
+							{
+								id: "constructionwand:infinity_wand"
+								Count: 1b
+								tag: {
+									wand_options: { }
+								}
+							}
+						]
 					}
 				}
 			}]
@@ -1066,13 +1181,13 @@
 				}
 			}
 			x: 6.0d
-			y: -3.0d
+			y: -2.5d
 			shape: "gear"
 			subtitle: "Magical building technologies "
 			description: [
 				"Botania offers a variaty of building and terraforming rods."
 				""
-				"With the cost of some Mana, you can place blocks, exchange blocks, or full on terraform a whole section of your world."
+				"At the cost of some Mana, you can place blocks, exchange blocks, or fully terraform whole sections of your world."
 				""
 				"The connected quests will have a brief description of what each rod does. However, for more detailed information please refer back to your Lexica Botania."
 			]
@@ -1098,7 +1213,7 @@
 				tag: { }
 			}
 			x: 7.0d
-			y: -4.0d
+			y: -3.5d
 			subtitle: "Built upon solid foundations"
 			description: [
 				"This rods allows you to swap any block in the world with the selected block at the cost of Mana."
@@ -1129,7 +1244,7 @@
 			title: "Rod of the Depths"
 			icon: "botania:cobble_rod"
 			x: 5.0d
-			y: -4.0d
+			y: -3.5d
 			subtitle: "Off to a rocky start"
 			description: ["Places Cobblestone Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1152,7 +1267,7 @@
 			title: "Rod of the Lands"
 			icon: "botania:dirt_rod"
 			x: 7.5d
-			y: -3.0d
+			y: -2.5d
 			subtitle: "Quit mucking about"
 			description: ["Places Dirt Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1175,7 +1290,7 @@
 			title: "Rod of the Terra Firma"
 			icon: "botania:terraform_rod"
 			x: 7.0d
-			y: -2.0d
+			y: -1.5d
 			subtitle: "We can move mountains"
 			description: ["With a bit of practice, the Rod of the Terra Firma can help to quickly transform a landscape. When activated, dirt is formed below you to raise the ground up to your feet, while land above you is lowered to your level, making mountains or levelling an area in moments. "]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1201,28 +1316,20 @@
 			y: 0.0d
 			shape: "gear"
 			subtitle: "No construction work after hours"
-			description: ["ASTRAL_INTRO_DESC"]
+			description: ["Once you've unlocked access to Starmetal Ore, you should be able to craft these two wonderful wands to help you shape the world to your liking using the power of the stars."]
 			id: "020ECCFFA45CE43D"
 			tasks: [{
-				id: "6D5A746B4A711C58"
-				type: "checkmark"
-				title: "Astral Sorcery Building Tools"
+				id: "37EDC6B3AC445773"
+				type: "item"
+				item: "astralsorcery:starmetal_ore"
 			}]
-			rewards: [
-				{
-					id: "691CF672BABA1FA8"
-					type: "item"
-					item: "astralsorcery:stardust"
-					random_bonus: 1
-				}
-				{
-					id: "36968A85FAA99915"
-					type: "item"
-					item: "astralsorcery:marble_raw"
-					count: 4
-					random_bonus: 4
-				}
-			]
+			rewards: [{
+				id: "691CF672BABA1FA8"
+				type: "item"
+				item: "astralsorcery:stardust"
+				count: 2
+				random_bonus: 2
+			}]
 		}
 		{
 			title: "Formation Wand"
@@ -1235,7 +1342,12 @@
 			}
 			x: -4.5d
 			y: 0.0d
-			description: ["FORMATIONWAND_DESC"]
+			subtitle: "Astral Projection is nothing short of sorcery"
+			description: [
+				"The Formation Wand acts like a build tool, where you can select a Block by Sneak Right Clicking it. Once a source block is selected, you can Sneak Right Click in the air to change the formation shape."
+				""
+				"Note: Sizes are fixed, and can't be changed."
+			]
 			dependencies: ["020ECCFFA45CE43D"]
 			id: "4A2306BD24A5D6D2"
 			tasks: [{
@@ -1269,7 +1381,12 @@
 			}
 			x: -7.5d
 			y: 0.0d
-			description: ["CONVERSIONWAND_DESC"]
+			subtitle: "Starlight Metamorphosis"
+			description: [
+				"The Conversion Wand allows you to swap blocks in the world to blocks in your inventory."
+				""
+				"You start by Sneak Right Clicking a block in the world to select it as an exchange option. However, you are not limited to just a single block, you can select multiple blocks to convert to, which randomizes the pattern of the conversion for a more seamless and natural transition between blocks from your palette."
+			]
 			dependencies: ["020ECCFFA45CE43D"]
 			id: "2334B38255294FAE"
 			tasks: [{
@@ -1299,12 +1416,16 @@
 			y: 1.5d
 			shape: "gear"
 			subtitle: "Let's get mechanical, mechanical"
-			description: ["CREATE_INTRO_DESC"]
+			description: [
+				"Create offers two ultility based building tools, the Extendo Grip and the Wand of Symmatry. "
+				""
+				"While these tools are somewhat costly, they are worth the effort as they offer some unique functionalities."
+			]
 			id: "1E318BCAC2C6FA09"
 			tasks: [{
-				id: "2FC308627BCE10F4"
-				type: "checkmark"
-				title: "Create Building Tools"
+				id: "14B0FAF2081449BD"
+				type: "item"
+				item: "emendatusenigmatica:brass_ingot"
 			}]
 			rewards: [{
 				id: "618B214EB41EEE48"
@@ -1325,7 +1446,14 @@
 			}
 			x: -4.5d
 			y: 1.5d
-			description: ["EXTENDO_DESC"]
+			subtitle: "BOING! BOING!"
+			description: [
+				"The Extendo Grip increases your reach distance, thus allowing you to place and break blocks at a larger distance."
+				""
+				"To use the Extendo Grip, put it in your Off-Hand, and then use blocks or tools in your Main-Hand as you normally would."
+				""
+				"While wearing a Copper Tank, the Extendo Grip loses no Durability and instead uses some of the air pressure you have stored in your tank."
+			]
 			dependencies: ["1E318BCAC2C6FA09"]
 			id: "34F00196E2D0B4B0"
 			tasks: [{
@@ -1353,7 +1481,14 @@
 			icon: "create:wand_of_symmetry"
 			x: -7.5d
 			y: 1.5d
-			description: ["WANDSYM_DESC"]
+			subtitle: "Lay your weary OCD to rest"
+			description: [
+				"With a hefty crafting recipe, the Wand of Symmetry does not disappoint those that loves a little symmetry in their life."
+				""
+				"This tool allows you to place a symmetry plane which perfectly mirrors your block placement."
+				""
+				"To start, Right Click a block on the ground to place your place. Once placed, you can Sneak Right Click to open the configuration GUI where you can select the plane type, and the mirroring axis."
+			]
 			dependencies: ["1E318BCAC2C6FA09"]
 			id: "147B701C5BCF2424"
 			tasks: [{
@@ -1378,11 +1513,11 @@
 			shape: "square"
 			subtitle: "I love it when a plan comes together"
 			description: [
-				"If you are the type of player that avoid building a base and lives in a dirt hole somewhere because you are not confident with your building skills, or simply don't have the time and energy to plan out a full base design, this this mod is for you."
+				"If you are the type of player who avoids building a base and lives in a dirt hole somewhere because you are not confident with your building skills, or simply don't have the time and energy to plan out a full base design, this this mod is for you."
 				""
-				"The Mighty Architect allows you to plot down a dynamic design where you get to select how big or small the build is, how many floors, roof style, building materials ..etc. Once your design is complete, it will save it as a schematic for you which you can then use Create Cannon to build it for you."
+				"The Mighty Architect allows you to plot down a dynamic design where you get to select how big or small the build is, how many floors, roof style, building materials, etc. Once your design is complete, it will save it as a schematic for you which can then be used in a Create Shematicannon to build it automatically."
 				""
-				"If the above introduction intrigues you, and you would like to learn more, or even see this mod in action, this short 2 mins video by the Mod Dev will show you the ins and outs of this wonderful mod."
+				"If the above introduction intrigues you, and you would like to learn more, or even see this mod in action, this short two minute video by the Mod Dev will show you the ins and outs of this wonderful mod."
 				"Link: https://youtu.be/VdoKmdYubBM"
 			]
 			id: "4407C59E32585B96"
@@ -1417,7 +1552,7 @@
 			title: "Rod of the Highlands"
 			icon: "botania:skydirt_rod"
 			x: 4.5d
-			y: -3.0d
+			y: -2.5d
 			subtitle: "Nerdpole not included"
 			description: ["Places blocks of Dirt in the air, which makes it the perfect tool for floating builds without needing to pillar up from the ground."]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1444,7 +1579,7 @@
 				tag: { }
 			}
 			x: 5.0d
-			y: -2.0d
+			y: -1.5d
 			subtitle: "So anyway, I started blasting"
 			description: [
 				"A versatile tool in its own right, when paired with an Entropic Lens the Mana Blaster becomes something akin to a long-range sculpting tool, blasting away blocks to help form natural looking shapes. "
@@ -1485,7 +1620,7 @@
 		{
 			icon: "botania:sextant"
 			x: 6.0d
-			y: -1.5d
+			y: -1.0d
 			subtitle: "What did you call me?!"
 			description: ["Renders a ghostly circle of whatever radius is desired, making it an excellent tool to plot out rounded builds. "]
 			dependencies: ["3F1801BBAF8A29FD"]
@@ -1512,7 +1647,8 @@
 				tag: { }
 			}
 			x: 6.0d
-			y: -4.5d
+			y: -4.0d
+			subtitle: "Be there, or be Square"
 			description: [
 				"Excellent for rapid building, the Worldshaper’s Astrolabe can be used to place blocks in a 3x3 up to an 11x11 square, either vertically or horizontally. "
 				""
@@ -1537,6 +1673,86 @@
 				command: "/execute at @p run loot spawn ~ ~1 ~ loot enigmatica:chests/quest_botania_loot_legendary"
 				player_command: false
 			}]
+		}
+		{
+			title: "Cosmetic Armor Stand"
+			icon: "minecraft:armor_stand"
+			x: -7.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "Cosmetic Wonder"
+			description: [
+				"Did you know that you can use Armor Stands to display your curios and baubles? "
+				""
+				"I didn't either, but you can in fact use Vanilla Armor Stands to display a set of your curios and artifacts found in your travels to bring a little flare to your living space, or build in general, whether it is for storage purposes, or purely decorative."
+			]
+			id: "48D7E182886BF82F"
+			tasks: [{
+				id: "2FBD22F2EC040B18"
+				type: "checkmark"
+				title: "Cosmetic Armor Stands?"
+			}]
+			rewards: [{
+				id: "41939B3A4FB225D7"
+				type: "item"
+				item: {
+					id: "botania:cosmetic_googly_eyes"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Quark"
+			icon: {
+				id: "quark:trowel"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: -4.5d
+			y: -1.5d
+			shape: "square"
+			subtitle: "Jack of all Trades"
+			description: [
+				"Quark is such a massive mod, and while it could have had it's own section, or even be part of the main Building section, we felt like having it as a stand-alone info quest fits better. While it would be near impossible to write down everything Quark has to offer, the below are some of the highlights for builders to make their life a little easier."
+				""
+				"- Decorative Blocks: Quark offers a plethora of blocks, both crafted like the different themed Chests, or gathered from around the world like the Corundum Crystal Blocks."
+				""
+				"- Trowel: This tool allows the randomization of block placement. It selects block(s) for your hotbar when used."
+				""
+				"- Burning Vines: You can burn the end of a Vine with Flint \\& Steel to stop them from growing further down. No more stringy Vanilla hacks!!"
+				""
+				"- Pickarang: Breaks blocks at an extreme range, and brings them back to you."
+				""
+				"For more information on what else does Quark has to offer you as a builder, visit their official website."
+				"Link: https://quarkmod.net/#features"
+			]
+			id: "73696B8EC7BB92C7"
+			tasks: [{
+				id: "5B29C3C71D617D0A"
+				type: "checkmark"
+				title: "Quark"
+			}]
+			rewards: [
+				{
+					id: "1EA35555757745CC"
+					type: "item"
+					item: {
+						id: "quark:trowel"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "5C1C38E52322F619"
+					type: "item"
+					item: "quark:rainbow_rune"
+				}
+			]
 		}
 	]
 }
