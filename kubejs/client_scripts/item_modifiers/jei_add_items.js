@@ -57,8 +57,7 @@ onEvent('jei.add.items', (event) => {
         // Dynamo Efficiency Upgrades
         Item.of('kubejs:dynamo_fuel_augment_mk2', '{AugmentData:{Type:"Dynamo",DynamoEnergy:1.43d}}'),
         Item.of('kubejs:dynamo_fuel_augment_mk3', '{AugmentData:{Type:"Dynamo",DynamoEnergy:1.859d}}'),
-        Item.of('kubejs:dynamo_fuel_augment_mk4', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}'),
-        Item.of('minecraft:stone_sword', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}')
+        Item.of('kubejs:dynamo_fuel_augment_mk4', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}')
     ];
 
     items.forEach((item) => event.add(item));
