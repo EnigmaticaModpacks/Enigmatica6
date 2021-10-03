@@ -203,19 +203,25 @@ onEvent('jei.information', (event) => {
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
