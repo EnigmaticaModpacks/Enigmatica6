@@ -166,7 +166,6 @@ onEvent('recipes', (event) => {
             altar_type: 2,
             duration: 400,
             starlight: 3800,
-            recipe_class: 'astralsorcery:trait_upgrade',
             effects: [
                 'astralsorcery:built_in_effect_constellation_finish',
                 'astralsorcery:pillar_sparkle',
@@ -355,7 +354,7 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_constellation_lines',
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
-            id: `${id_prefix}mana_infuser`
+            id: `${id_prefix}elven_spreader`
         }
     ];
 
