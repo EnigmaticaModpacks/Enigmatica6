@@ -26,7 +26,8 @@ onEvent('jei.add.items', (event) => {
             'sword/blade:arrested': 0,
             'sword/decorative_pommel_material': 'decorative_pommel/oak'
         }),
-        // Thermal Augments - See Notes Below
+        // Thermal Augments - See Notes Below for NBT data.
+        // When making new augments, register them through KubeJS and include the word 'augment' in the name somewhere. Otherwise, update 'jei_add_subtypes'
         // Machine Speed Upgrades
         Item.of(
             'kubejs:machine_speed_augment_mk2',
@@ -56,7 +57,8 @@ onEvent('jei.add.items', (event) => {
         // Dynamo Efficiency Upgrades
         Item.of('kubejs:dynamo_fuel_augment_mk2', '{AugmentData:{Type:"Dynamo",DynamoEnergy:1.43d}}'),
         Item.of('kubejs:dynamo_fuel_augment_mk3', '{AugmentData:{Type:"Dynamo",DynamoEnergy:1.859d}}'),
-        Item.of('kubejs:dynamo_fuel_augment_mk4', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}')
+        Item.of('kubejs:dynamo_fuel_augment_mk4', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}'),
+        Item.of('minecraft:stone_sword', '{AugmentData:{Type:"Dynamo",DynamoEnergy:2.4167d}}')
     ];
 
     items.forEach((item) => event.add(item));
