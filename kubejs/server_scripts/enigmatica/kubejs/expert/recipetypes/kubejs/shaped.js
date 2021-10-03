@@ -15,16 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
-        {
-            output: 'kubejs:firmament',
-            pattern: ['AAB', 'ABA', 'BAA'],
-            key: {
-                A: 'minecraft:prismarine',
-                B: 'undergarden:tremblecrust'
-            },
-            id: `${id_prefix}firmament`
-        },
+    const recipes = [
         {
             output: 'kubejs:basic_circuit_package',
             pattern: ['AAA', 'EDB', 'CCC'],
@@ -237,7 +228,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
