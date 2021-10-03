@@ -184,18 +184,6 @@ const itemsToHide = [
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
 
-    'kubejs:machine_speed_augment_mk2',
-    'kubejs:machine_speed_augment_mk3',
-    'kubejs:machine_speed_augment_mk4',
-
-    'kubejs:dynamo_output_augment_mk2',
-    'kubejs:dynamo_output_augment_mk3',
-    'kubejs:dynamo_output_augment_mk4',
-
-    'kubejs:dynamo_fuel_augment_mk2',
-    'kubejs:dynamo_fuel_augment_mk3',
-    'kubejs:dynamo_fuel_augment_mk4',
-
     'mctb:cherry_crafting_table',
     'mctb:dead_crafting_table',
     'mctb:fir_crafting_table',
