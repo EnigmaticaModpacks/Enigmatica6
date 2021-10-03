@@ -29,13 +29,20 @@
 				type: "checkmark"
 				title: "Builder"
 			}]
-			rewards: [{
-				id: "6BCFA4922355B43F"
-				type: "item"
-				item: "create:builders_tea"
-				count: 4
-				random_bonus: 4
-			}]
+			rewards: [
+				{
+					id: "6BCFA4922355B43F"
+					type: "item"
+					item: "create:builders_tea"
+					count: 4
+					random_bonus: 4
+				}
+				{
+					id: "3C390EFCC5489351"
+					type: "item"
+					item: "minecraft:stonecutter"
+				}
+			]
 		}
 		{
 			title: "Macaw's Mods"
@@ -64,16 +71,24 @@
 			}]
 		}
 		{
-			title: "Windows, and Blinds"
+			title: "Windows and Blinds"
 			icon: "mcwwindows:oak_window2"
 			x: 1.5d
 			y: -3.5d
+			description: ["A selection of windows to spruce up both interiors and exteriors."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "69264C279D819443"
 			tasks: [{
-				id: "6D2B932E57592B13"
-				type: "checkmark"
-				title: "Windows + Additions"
+				id: "420B50F1422D8783"
+				type: "item"
+				title: "Macaw's Windows"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwwindows"
+					}
+				}
 			}]
 			rewards: [{
 				id: "22CC2896509891A2"
@@ -86,12 +101,20 @@
 			icon: "mcwroofs:oak_roof"
 			x: 0.5d
 			y: -4.0d
+			description: ["A selection of blocks for building complex roof shapes."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "294FF399D036000C"
 			tasks: [{
-				id: "63DF62E447E2B737"
-				type: "checkmark"
-				title: "Roofs + Tiles and Gutters"
+				id: "23D124F0ABC86469"
+				type: "item"
+				title: "Macaw's Roofs"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwroofs"
+					}
+				}
 			}]
 			rewards: [{
 				id: "4EBBC5E559BB1D57"
@@ -104,12 +127,20 @@
 			icon: "mcwtrpdoors:oak_cottage_trapdoor"
 			x: -0.5d
 			y: -4.0d
+			description: ["A selection of fancy trapdoors to suit any occasion."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "2BFA6B1DF968DB60"
 			tasks: [{
-				id: "57A218C479845117"
-				type: "checkmark"
-				title: "Trapdoors"
+				id: "65B891EE0CA7DE2D"
+				type: "item"
+				title: "Macaw's Trapdoors"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwtrpdoors"
+					}
+				}
 			}]
 			rewards: [{
 				id: "760F5F32E39E413F"
@@ -122,12 +153,20 @@
 			icon: "mcwdoors:oak_cottage_door"
 			x: -1.5d
 			y: -3.5d
+			description: ["A selection of fancy doors to suit any occasion."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "6AAB0C70527EB1C8"
 			tasks: [{
-				id: "1D231CC06FA1DCEF"
-				type: "checkmark"
-				title: "Doors"
+				id: "08066709F5454C29"
+				type: "item"
+				title: "Macaw's Doors"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwdoors"
+					}
+				}
 			}]
 			rewards: [{
 				id: "190BC73D15872F2A"
@@ -136,16 +175,24 @@
 			}]
 		}
 		{
-			title: "Fences, and Walls"
+			title: "Fences and Walls"
 			icon: "mcwfences:oak_picket_fence"
 			x: 2.0d
 			y: -2.5d
+			description: ["A selection of fancy fences and walls to suit any decorative needs."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "1A8ADC65B09E9539"
 			tasks: [{
-				id: "227EE4A805EDDECE"
-				type: "checkmark"
-				title: "Fences"
+				id: "02D341840CE54A92"
+				type: "item"
+				title: "Macaw's Fences and Walls"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwfences"
+					}
+				}
 			}]
 			rewards: [{
 				id: "6DA561C702F1DEA5"
@@ -158,12 +205,20 @@
 			icon: "mcwbridges:oak_log_bridge_middle"
 			x: -2.0d
 			y: -2.5d
+			description: ["A selection of blocks for making small foot bridges and rail bridges."]
 			dependencies: ["3834BBF4818E4ABE"]
 			id: "5CC123276DD545C8"
 			tasks: [{
-				id: "79A1B718CC1EE549"
-				type: "checkmark"
-				title: "Bridges"
+				id: "4F7B105264339E9A"
+				type: "item"
+				title: "Macaw's Bridges"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "mcwbridges"
+					}
+				}
 			}]
 			rewards: [{
 				id: "0DA8D314B0CFE8BA"
@@ -185,14 +240,21 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "63FE93055CE4162C"
 			tasks: [{
-				id: "44BE21A46B853C66"
-				type: "checkmark"
-				title: "Masonary"
+				id: "4EA5682D198BA2E6"
+				type: "item"
+				title: "Masonry"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "masonry"
+					}
+				}
 			}]
 			rewards: [{
-				id: "167EDB46E088AA19"
-				type: "item"
-				item: "minecraft:stonecutter"
+				id: "4C3D1850DE4CBA18"
+				type: "xp"
+				xp: 100
 			}]
 		}
 		{
@@ -209,9 +271,31 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "32824050418C71EB"
 			tasks: [{
-				id: "57B8F3B3CE1B0382"
-				type: "checkmark"
-				title: "MrCrayFish"
+				id: "39FE46B7D0588AC6"
+				type: "item"
+				title: "Any MrCrayfish Item"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "itemfilters:mod"
+								Count: 1b
+								tag: {
+									value: "cfm"
+								}
+							}
+							{
+								id: "itemfilters:mod"
+								Count: 1b
+								tag: {
+									value: "morecfm"
+								}
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "3006D73518186276"
@@ -232,9 +316,16 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "66099AFAA1A6043F"
 			tasks: [{
-				id: "5E22777A93E1A57F"
-				type: "checkmark"
+				id: "7E626988261D7522"
+				type: "item"
 				title: "Connected Glass"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "connectedglass"
+					}
+				}
 			}]
 			rewards: [{
 				id: "73CEB3BC6963B644"
@@ -259,9 +350,10 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "42FB32CC99E66E3F"
 			tasks: [{
-				id: "50131A2AFEF8805D"
-				type: "checkmark"
-				title: "Simply Lights"
+				id: "1EFA47BC6E4EC782"
+				type: "item"
+				item: "simplylight:illuminant_block_on"
+				count: 16L
 			}]
 			rewards: [{
 				id: "7E2D7FEE20672C9D"
@@ -286,9 +378,10 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "0798D5139479A837"
 			tasks: [{
-				id: "62781D9D0AB3CB08"
-				type: "checkmark"
-				title: "Framed Blocks"
+				id: "6D98E195282468AF"
+				type: "item"
+				item: "framedblocks:framed_cube"
+				count: 4L
 			}]
 			rewards: [
 				{
@@ -314,14 +407,21 @@
 				""
 				"Framed Drawers gives you a blank template which you can combine in a crafting table with different blocks to use their texture instead, whether it's the front, the sides, or the trim, these Framed Drawers are highly customizable visually."
 				""
-				"Needless to say, this mod offers more than just a signel drawer style templates, it actually has a template for each type of drawers, whether it is a 2x2, a Compacting Drawer, or even a Drawer Controller."
+				"Needless to say, this mod offers more than just a single drawer style templates, it actually has a template for each type of drawers, whether it is a 2x2, a Compacting Drawer, or even a Drawer Controller."
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "473BE440ECB1CEDF"
 			tasks: [{
-				id: "1C2A1C581C97D480"
-				type: "checkmark"
-				title: "Framed Drawers"
+				id: "130291F7FD5C22C4"
+				type: "item"
+				title: "Any Framed Drawer"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "framedcompactdrawers:frame_triple"
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -350,9 +450,45 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "1EAFB4FB2CF09F26"
 			tasks: [{
-				id: "761ADF517D67FC5A"
-				type: "checkmark"
-				title: "Chipped"
+				id: "5B597B1689F6662F"
+				type: "item"
+				title: "Any Chipped Workbench"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "chipped:mason_table"
+								Count: 1b
+							}
+							{
+								id: "chipped:loom_table"
+								Count: 1b
+							}
+							{
+								id: "chipped:carpenters_table"
+								Count: 1b
+							}
+							{
+								id: "chipped:glassblower"
+								Count: 1b
+							}
+							{
+								id: "chipped:botanist_workbench"
+								Count: 1b
+							}
+							{
+								id: "chipped:mechanist_workbench"
+								Count: 1b
+							}
+							{
+								id: "chipped:alchemy_bench"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0365D0D7A7E40B1D"
@@ -377,9 +513,10 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "68E143E444AF44C2"
 			tasks: [{
-				id: "62B41166B5BAC9CF"
-				type: "checkmark"
-				title: "Engineer's Decor"
+				id: "3962CC2A503F48BE"
+				type: "item"
+				item: "engineersdecor:metal_bar"
+				count: 12L
 			}]
 			rewards: [{
 				id: "3C8E7414A7A4C3C0"
@@ -402,11 +539,20 @@
 			]
 			dependencies: ["058D3BEB64C74E27"]
 			id: "201E7950E17180BD"
-			tasks: [{
-				id: "76C3B1B9033FFC8C"
-				type: "checkmark"
-				title: "'Dustrial Decor"
-			}]
+			tasks: [
+				{
+					id: "7B4010001841119D"
+					type: "item"
+					item: "dustrial_decor:sheet_metal"
+					count: 3L
+				}
+				{
+					id: "233869B1D7E3ACFB"
+					type: "item"
+					item: "dustrial_decor:cardboard"
+					count: 8L
+				}
+			]
 			rewards: [
 				{
 					id: "6C4A232FCA2807FA"
@@ -433,7 +579,7 @@
 			icon: "decorative_blocks:oak_support"
 			x: 1.0d
 			y: -1.5d
-			subtitle: "Grab a chair, and sit by the hearth"
+			subtitle: "Stay a while and listen..."
 			description: [
 				"If you are into your medieval or rustic builds, whether it is a castle on a cliff, a cabin in the woods, or a hearty tavern for a weary traveler, Decorative Blocks will have some blocks that fits your style."
 				""
@@ -442,9 +588,16 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "03D0B336BB7CEFE1"
 			tasks: [{
-				id: "07C722038EBA8BA5"
-				type: "checkmark"
+				id: "36159E7E842C9962"
+				type: "item"
 				title: "Decorative Blocks"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "decorative_blocks"
+					}
+				}
 			}]
 			rewards: [
 				{
@@ -508,9 +661,16 @@
 			dependencies: ["058D3BEB64C74E27"]
 			id: "1DEA7DBF6D1A1C6A"
 			tasks: [{
-				id: "3D34CEA63C477805"
-				type: "checkmark"
-				title: "Valhelsia Strucutres"
+				id: "5588202A7A626718"
+				type: "item"
+				title: "Valhelsia Structures"
+				item: {
+					id: "itemfilters:mod"
+					Count: 1b
+					tag: {
+						value: "valhelsia_structures"
+					}
+				}
 			}]
 			rewards: [{
 				id: "548107ED51B7B447"
@@ -554,7 +714,7 @@
 			icon: "portable_stonecutter:portable_stonecutter"
 			x: 5.0d
 			y: 2.0d
-			subtitle: "It's like the Chisel, but it's not"
+			subtitle: "It's like the Chisel, but fatter"
 			description: [
 				"It cuts, it grinds, it chisels, polishes and and even cooks and cleans!"
 				""
@@ -591,7 +751,7 @@
 			}
 			x: 6.0d
 			y: 1.5d
-			subtitle: "It's like the Portable Stonecutter, but it's not"
+			subtitle: "It's like the Portable Stonecutter, but skinnier"
 			description: ["CHISEL_DESC"]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "165DFE2F0AF151E7"
@@ -686,7 +846,11 @@
 			x: 5.0d
 			y: 4.0d
 			subtitle: "It builds stuff"
-			description: ["BG_DESC"]
+			description: [
+				"An advanced building device with several modes allowing for the quick construction of walls, stairs, and platforms. "
+				""
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "0F06CA2A45323C4C"
 			tasks: [{
@@ -730,7 +894,11 @@
 			x: 6.0d
 			y: 4.5d
 			subtitle: "It exchanges stuff"
-			description: ["EG_DESC"]
+			description: [
+				"Quickly swap blocks in an area without having to break and manually place each one. Enchant with Silk Touch to work with delicate blocks such as glass."
+				""
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "25E1DB1C3F184D4C"
 			tasks: [{
@@ -774,7 +942,13 @@
 			x: 7.0d
 			y: 4.0d
 			subtitle: "It copies and pastes stuff"
-			description: ["CPG_DESC"]
+			description: [
+				"A powerful tool that allows copying large areas and rebuilding them instantly elsewhere, making short work of repeating large sections of a build, such as a repeating wall pattern, or sprucing up an area with a few different prefab homes."
+				""
+				"It’s possible to import and export patterns for the Copy/Paste gadget as well, and Enigmatica 6 comes with a variety of patterns that include many multiblocks from mods like Immersive Engineering and Astral Sorcery, to make working with those mods easier. Full instructions and templates can be located in your instance folder under “building_gadgets_patterns”."
+				""
+				"Sneak Right Click on a block to set the block it’ll build with. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "2E5F1C7B4B293531"
 			tasks: [{
@@ -813,7 +987,13 @@
 			x: 7.5d
 			y: 3.0d
 			subtitle: "Guess what it does .."
-			description: ["DESG_DESC"]
+			description: [
+				"For those times when you simply want to clear a hole to build in, and don’t really care what happens to the blocks that were there."
+				""
+				"Be warned, this tool destroys all blocks it removes!"
+				""
+				"Sneak Right Click in the air to configure the area to void. Use the Building Gadgets Settings Menu key [g] to access advanced features. "
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "095108AB50598C04"
 			tasks: [{
@@ -847,7 +1027,13 @@
 			x: 4.5d
 			y: 3.0d
 			subtitle: "Accio"
-			description: ["CWAND_DESC"]
+			description: [
+				"A modded classic, the Construction Wand simply extends the blocks that are already placed in the world. This can make it easy to build a wall by first laying the foundation, then building up with the wand. "
+				""
+				"This version comes with a few added features as well, such as the ability to destroy blocks, place in mid air, or even place random blocks from those in your hot bar. "
+				""
+				"Ctrl Shift the wand in the air to access a menu with advanced options, or Ctrl Scroll Wheel to quickly toggle between building modes. "
+			]
 			dependencies: ["5411C8D2344CC2F1"]
 			id: "26B88D08862EA1AE"
 			tasks: [{
@@ -892,9 +1078,9 @@
 			]
 			id: "3F1801BBAF8A29FD"
 			tasks: [{
-				id: "0A6C5E41EEDC3E80"
-				type: "checkmark"
-				title: "Botania Building Tools"
+				id: "363364A832F21FEC"
+				type: "item"
+				item: "botania:livingwood"
 			}]
 			rewards: [{
 				id: "67E31EF8EF9242E8"
@@ -913,8 +1099,9 @@
 			}
 			x: 7.0d
 			y: -4.0d
+			subtitle: "Built upon solid foundations"
 			description: [
-				"This rods allows you to swap any block in the world with the select block at the cost of Mana."
+				"This rods allows you to swap any block in the world with the selected block at the cost of Mana."
 				""
 				"To start, Shift+Right Click a block to select it, and then right click other blocks to start the exchange."
 			]
@@ -943,6 +1130,7 @@
 			icon: "botania:cobble_rod"
 			x: 5.0d
 			y: -4.0d
+			subtitle: "Off to a rocky start"
 			description: ["Places Cobblestone Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "261056A552909227"
@@ -965,6 +1153,7 @@
 			icon: "botania:dirt_rod"
 			x: 7.5d
 			y: -3.0d
+			subtitle: "Quit mucking about"
 			description: ["Places Dirt Blocks at the cost of some Mana"]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "75361161CEA1E406"
@@ -987,7 +1176,8 @@
 			icon: "botania:terraform_rod"
 			x: 7.0d
 			y: -2.0d
-			description: ["TERRAFIRMA_DESC"]
+			subtitle: "We can move mountains"
+			description: ["With a bit of practice, the Rod of the Terra Firma can help to quickly transform a landscape. When activated, dirt is formed below you to raise the ground up to your feet, while land above you is lowered to your level, making mountains or levelling an area in moments. "]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "1E22D45F4ACB8FE2"
 			tasks: [{
@@ -1228,6 +1418,7 @@
 			icon: "botania:skydirt_rod"
 			x: 4.5d
 			y: -3.0d
+			subtitle: "Nerdpole not included"
 			description: ["Places blocks of Dirt in the air, which makes it the perfect tool for floating builds without needing to pillar up from the ground."]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "624AAFDABA481B08"
@@ -1254,7 +1445,12 @@
 			}
 			x: 5.0d
 			y: -2.0d
-			description: ["BLASTER_DESC"]
+			subtitle: "So anyway, I started blasting"
+			description: [
+				"A versatile tool in its own right, when paired with an Entropic Lens the Mana Blaster becomes something akin to a long-range sculpting tool, blasting away blocks to help form natural looking shapes. "
+				""
+				"Blast away underground to form nice caves for a base or carve away the landscape to beautify the area!"
+			]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "5CCA8708260D389C"
 			tasks: [
@@ -1287,11 +1483,11 @@
 			}]
 		}
 		{
-			title: "Sextent"
 			icon: "botania:sextant"
 			x: 6.0d
 			y: -1.5d
-			description: ["SEXTENT_DESC"]
+			subtitle: "What did you call me?!"
+			description: ["Renders a ghostly circle of whatever radius is desired, making it an excellent tool to plot out rounded builds. "]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "179FB20DE78B8851"
 			tasks: [{
@@ -1317,7 +1513,11 @@
 			}
 			x: 6.0d
 			y: -4.5d
-			description: ["ASTROLABE_DESC"]
+			description: [
+				"Excellent for rapid building, the Worldshaper’s Astrolabe can be used to place blocks in a 3x3 up to an 11x11 square, either vertically or horizontally. "
+				""
+				"Sneak right click a block to select it for placement and sneak right click in the air to change the size."
+			]
 			dependencies: ["3F1801BBAF8A29FD"]
 			id: "37F31E4C7664EF8C"
 			tasks: [{
