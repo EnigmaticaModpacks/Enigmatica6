@@ -1,29 +1,36 @@
+### Enigmatica 6 v0.5.15
+
+_Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.15.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.15.md)_
+
+**Bug Fixes**
+
+-   Quests: Fixed Infinity Tools quest not triggering
+-   Occultism: Fixed Summoning familiars not triggering the advancement
+
+**Changes/Improvements**
+
+-
+
 ### Enigmatica 6 v0.5.14
 
 _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.14.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.14.md)_
-
-
 
 **Info**
 
 Placed Chisel & Bits will most likely change when updating.
 We've updated to a new major version of the mod which hopefully makes sure this doesn't happen again.
 
-
-
 **Bug Fixes**
 
-- Some ponder entries missing their text [\#3318](https://github.com/NillerMedDild/Enigmatica6/issues/3318)
-- \[0.5.12\] Create Cogwheels placing [\#3317](https://github.com/NillerMedDild/Enigmatica6/issues/3317)
-- \[0.5.12\] Wrenches and Block Rotation [\#3310](https://github.com/NillerMedDild/Enigmatica6/issues/3310)
+-   Some ponder entries missing their text [\#3318](https://github.com/NillerMedDild/Enigmatica6/issues/3318)
+-   \[0.5.12\] Create Cogwheels placing [\#3317](https://github.com/NillerMedDild/Enigmatica6/issues/3317)
+-   \[0.5.12\] Wrenches and Block Rotation [\#3310](https://github.com/NillerMedDild/Enigmatica6/issues/3310)
 
 **Changes/Improvements**
 
-- PVJ Tree Compat [\#3319](https://github.com/NillerMedDild/Enigmatica6/pull/3319) ([MuteTiefling](https://github.com/MuteTiefling))
-- Added PVJ Trees to Market
-- Added some PVJ biomes to worldgen
-
-
+-   PVJ Tree Compat [\#3319](https://github.com/NillerMedDild/Enigmatica6/pull/3319) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Added PVJ Trees to Market
+-   Added some PVJ biomes to worldgen
 
 ---
 

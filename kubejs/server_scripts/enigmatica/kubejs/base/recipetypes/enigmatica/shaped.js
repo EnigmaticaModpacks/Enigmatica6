@@ -620,7 +620,8 @@ onEvent('recipes', (event) => {
                     prettypipes: { id: 'prettypipes:wrench', Count: 1 },
                     storagedrawers: { id: 'storagedrawers:drawer_key', Count: 1 },
                     fluxnetworks: { id: 'fluxnetworks:flux_configurator', Count: 1 },
-                    integratedtunnels: { id: 'integrateddynamics:wrench', Count: 1 }
+                    integratedtunnels: { id: 'integrateddynamics:wrench', Count: 1 },
+                    compactmachines: { id: 'compactmachines:personal_shrinking_device', Count: 1 }
                 }
             }),
             pattern: ['ABA', 'CFD', 'AEA'],
