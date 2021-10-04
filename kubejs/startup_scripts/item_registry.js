@@ -43,7 +43,19 @@ onEvent('item.registry', (event) => {
         'craft_mana_collector'
     ];
 
-    const assemblyTableItems = [
+    const reusableItemTextures = [
+        { name: 'machine_speed_augment_mk2', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk3', texture: 'machine_speed_augment' },
+        { name: 'machine_speed_augment_mk4', texture: 'machine_speed_augment' },
+
+        { name: 'dynamo_output_augment_mk2', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk3', texture: 'dynamo_output_augment' },
+        { name: 'dynamo_output_augment_mk4', texture: 'dynamo_output_augment' },
+
+        { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
+        { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },
         { name: 'basic_lenses_package', texture: 'assembly_package_filled' },
@@ -129,7 +141,7 @@ onEvent('item.registry', (event) => {
         event.create(item).type('occultism:ritual_dummy').group('KubeJS').texture('kubejs:item/pentacle');
     });
 
-    assemblyTableItems.forEach((item) => {
+    reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
 });
