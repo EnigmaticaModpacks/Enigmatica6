@@ -29,17 +29,38 @@ onEvent('jei.add.items', (event) => {
         // Thermal Augments - See Notes Below for NBT data.
         // When making new augments, register them through KubeJS and include the word 'augment' in the name somewhere. Otherwise, update 'jei_add_subtypes'
         // Machine Speed Upgrades
+        // Test Set 1 - moderate FE/t
+
+        // 17.9 ticks/5720 FE per craft
         Item.of(
             'kubejs:machine_speed_augment_mk2',
             '{AugmentData:{Type:"Machine",MachineEnergy:1.43d,MachinePower:3.0d}}'
         ),
+        // 9.3 ticks/7436 FE per craft
         Item.of(
             'kubejs:machine_speed_augment_mk3',
             '{AugmentData:{Type:"Machine",MachineEnergy:1.859d,MachinePower:9.0d}}'
         ),
+        // 4.1 ticks/9666 FE per craft
         Item.of(
             'kubejs:machine_speed_augment_mk4',
             '{AugmentData:{Type:"Machine",MachineEnergy:2.4167d,MachinePower:27.0d}}'
+        ),
+        // Test Set 2 - considerably more FE/t
+        // 16.5 ticks/13200 FE per craft
+        Item.of(
+            'kubejs:machine_speed_augment_mk2',
+            '{AugmentData:{Type:"Machine",MachineEnergy:3.3d,MachinePower:9.0d}}'
+        ),
+        // 6.0 ticks/39600 FE per craft
+        Item.of(
+            'kubejs:machine_speed_augment_mk3',
+            '{AugmentData:{Type:"Machine",MachineEnergy:9.9d,MachinePower:91.0d}}'
+        ),
+        // 2 ticks/118800 FE per craft
+        Item.of(
+            'kubejs:machine_speed_augment_mk4',
+            '{AugmentData:{Type:"Machine",MachineEnergy:29.7d,MachinePower:729.0d}}'
         ),
         // Dynamo Speed Upgrades
         Item.of(
