@@ -3,66 +3,22 @@ onEvent('recipes', (event) => {
     var multiplier = 40;
     var data = {
         recipes: [
-            {
-                gem: 'forge:gems/lapis',
-                energy: 40000
-            },
-            {
-                gem: 'forge:gems/prismarine',
-                energy: 40000
-            },
-            {
-                gem: 'forge:gems/quartz',
-                energy: 40000
-            },
-            {
-                gem: 'forge:gems/diamond',
-                energy: 500000
-            },
-            {
-                gem: 'forge:gems/emerald',
-                energy: 125000
-            },
-            {
-                gem: 'forge:gems/mana_diamond',
-                energy: 625000
-            },
-            {
-                gem: 'forge:gems/dragonstone',
-                energy: 750000
-            },
-            {
-                gem: 'forge:gems/mana',
-                energy: 10000
-            },
-            {
-                gem: 'forge:gems/fluorite',
-                energy: 40000
-            },
-            {
-                gem: 'forge:gems/dimensional',
-                energy: 700000
-            },
-            {
-                gem: 'forge:gems/apatite',
-                energy: 40000
-            },
-            {
-                gem: 'forge:gems/aquarmarine',
-                energy: 10000
-            },
-            {
-                gem: 'forge:gems/amber',
-                energy: 160000
-            }
+            { input: '#forge:gems/lapis', energy: 40000 },
+            { input: '#forge:gems/prismarine', energy: 40000 },
+            { input: '#forge:gems/quartz', energy: 40000 },
+            { input: '#forge:gems/diamond', energy: 500000 },
+            { input: '#forge:gems/emerald', energy: 125000 },
+            { input: '#forge:gems/mana_diamond', energy: 625000 },
+            { input: '#forge:gems/dragonstone', energy: 750000 },
+            { input: '#forge:gems/mana', energy: 10000 },
+            { input: '#forge:gems/fluorite', energy: 40000 },
+            { input: '#forge:gems/dimensional', energy: 700000 },
+            { input: '#forge:gems/apatite', energy: 40000 },
+            { input: '#forge:gems/aquarmarine', energy: 10000 },
+            { input: '#forge:gems/amber', energy: 160000 }
         ]
     };
     data.recipes.forEach((recipe) => {
-        event.recipes.thermal.lapidary_fuel({
-            ingredient: {
-                tag: recipe.gem
-            },
-            energy: recipe.energy * multiplier
-        });
+        event.recipes.thermal.lapidary_fuel(recipe.input).energy(recipe.energy * multiplier);
     });
 });
