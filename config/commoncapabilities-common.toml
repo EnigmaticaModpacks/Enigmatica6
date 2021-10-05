@@ -15,5 +15,5 @@
 
 	[machine.general]
 		#The NBT Paths that should be filtered away when checking equality.
-		ignoreNbtPathsForEqualityFilters = ["$.ForgeCaps[\"astralsorcery:cap_item_amulet_holder\"]", "$.binding"]
+		ignoreNbtPathsForEqualityFilters = ["$.ForgeCaps[\"astralsorcery:cap_item_amulet_holder\"]", "$.binding", "$.energy"]
 
