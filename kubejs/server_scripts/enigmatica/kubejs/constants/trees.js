@@ -1076,6 +1076,7 @@ const treeRegistry = [
                 sapling: 'minecraft:crimson_fungus',
                 trunk: 'minecraft:crimson_stem',
                 leaf: 'minecraft:nether_wart_block',
+                extraDecoration: 'minecraft:shroomlight',
                 substrate: 'crimson_nylium'
             },
             {
@@ -1088,6 +1089,7 @@ const treeRegistry = [
                 sapling: 'minecraft:warped_fungus',
                 trunk: 'minecraft:warped_stem',
                 leaf: 'minecraft:warped_wart_block',
+                extraDecoration: 'minecraft:shroomlight',
                 substrate: 'warped_nylium'
             },
             {
