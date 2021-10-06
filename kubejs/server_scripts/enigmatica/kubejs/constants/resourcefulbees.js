@@ -7,7 +7,7 @@ const validApiaryBlocks = [
     'glassential:glass_dark_ethereal',
     'glassential:glass_ethereal',
     'glassential:glass_light',
-    'glassential:glass_redstone',
+    'glassential:glass_redstone'
 ];
 
 const honeyVarieties = [
