@@ -245,22 +245,22 @@ onEvent('jei.information', (event) => {
             description: [`Drops from Wraiths in the sandy wastes of Atum.`]
         },
         {
-            items: ['minecraft:firework_star'],
+            items: ['minecraft:firework_rocket'],
             description: [`Shapeless Crafting: One paper and at least one gunpowder.`]
         },
         {
-            items: ['minecraft:firework_star'],
+            items: ['minecraft:firework_rocket'],
             description: [
                 `Adding more gunpowder increases the duration of the rocket.`,
                 `Up to three gunpowder or up to seven firework stars can be added.`
             ]
         },
         {
-            items: ['minecraft:firework_rocket'],
+            items: ['minecraft:firework_star'],
             description: [`Shapeless Crafting: One gunpowder and at least one dye.`]
         },
         {
-            items: ['minecraft:firework_rocket'],
+            items: ['minecraft:firework_star'],
             description: [
                 `Up to eight dyes can be added.`,
                 `One head, gold nugget, feather, or fire charge can be added to set a shape.`,
