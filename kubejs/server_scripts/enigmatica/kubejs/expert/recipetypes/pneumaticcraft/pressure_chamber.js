@@ -141,6 +141,39 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             results: [{ item: 'refinedstorage:construction_core', count: 1 }],
             id: 'refinedstorage:construction_core'
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/signalum', count: 1 },
+                { tag: 'forge:gems/silicon', count: 1 },
+                { item: 'refinedstorage:processor_binding', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:raw_basic_processor', count: 1 }],
+            id: 'refinedstorage:raw_basic_processor'
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/lumium', count: 1 },
+                { tag: 'forge:gems/silicon', count: 1 },
+                { item: 'refinedstorage:processor_binding', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:raw_improved_processor', count: 1 }],
+            id: 'refinedstorage:raw_improved_processor'
+        },
+        {
+            inputs: [
+                { tag: 'forge:plates/enderium', count: 1 },
+                { tag: 'forge:gems/silicon', count: 1 },
+                { item: 'refinedstorage:processor_binding', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:raw_advanced_processor', count: 1 }],
+            id: 'refinedstorage:raw_advanced_processor'
         }
     ];
 
