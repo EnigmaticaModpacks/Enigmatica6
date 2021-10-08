@@ -144,7 +144,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:plates/signalum', count: 1 },
+                { tag: 'forge:coins/tin', count: 1 },
                 { tag: 'forge:gems/silicon', count: 1 },
                 { item: 'refinedstorage:processor_binding', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
@@ -155,7 +155,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:plates/lumium', count: 1 },
+                { tag: 'forge:coins/lumium', count: 1 },
                 { tag: 'forge:gems/silicon', count: 1 },
                 { item: 'refinedstorage:processor_binding', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
@@ -166,7 +166,7 @@ onEvent('recipes', (event) => {
         },
         {
             inputs: [
-                { tag: 'forge:plates/enderium', count: 1 },
+                { tag: 'forge:coins/enderium', count: 1 },
                 { tag: 'forge:gems/silicon', count: 1 },
                 { item: 'refinedstorage:processor_binding', count: 1 },
                 { item: 'fluxnetworks:flux_dust', count: 1 }
