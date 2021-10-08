@@ -41,6 +41,16 @@ onEvent('recipes', (event) => {
             id: 'extrastorage:gold_crafter'
         },
         {
+            output: Item.of('extrastorage:gold_crafter'),
+            pattern: [' B ', ' E ', ' D '],
+            key: {
+                B: '#forge:circuits/elite',
+                D: 'thermal:upgrade_augment_2',
+                E: 'extrastorage:iron_crafter'
+            },
+            id: 'extrastorage:gold_crafter_upgrade'
+        },
+        {
             output: Item.of('extrastorage:diamond_crafter'),
             pattern: ['ABA', 'CEC', 'ADA'],
             key: {
@@ -51,6 +61,16 @@ onEvent('recipes', (event) => {
                 E: 'refinedstorage:crafter'
             },
             id: 'extrastorage:diamond_crafter'
+        },
+        {
+            output: Item.of('extrastorage:diamond_crafter'),
+            pattern: [' B ', ' E ', ' D '],
+            key: {
+                B: '#forge:circuits/ultimate',
+                D: 'thermal:upgrade_augment_3',
+                E: ['extrastorage:iron_crafter', 'extrastorage:gold_crafter']
+            },
+            id: 'extrastorage:diamond_crafter_upgrade'
         }
     ];
 
