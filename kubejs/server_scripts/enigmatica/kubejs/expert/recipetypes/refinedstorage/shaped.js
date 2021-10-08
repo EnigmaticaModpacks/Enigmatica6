@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/kubejs/';
+    const id_prefix = 'enigmatica:expert/refinedstorage/';
     /*
         ,
         {
@@ -59,6 +59,18 @@ onEvent('recipes', (event) => {
                 E: '#xnet:connectors'
             },
             id: 'refinedstorage:external_storage'
+        },
+        {
+            output: Item.of('refinedstorage:crafter'),
+            pattern: ['ABA', 'CEC', 'ADA'],
+            key: {
+                A: 'create:mechanical_crafter',
+                B: 'refinedstorage:construction_core',
+                C: 'refinedstorage:advanced_processor',
+                D: 'refinedstorage:destruction_core',
+                E: 'refinedstorage:machine_casing'
+            },
+            id: 'refinedstorage:crafter'
         }
     ];
 
