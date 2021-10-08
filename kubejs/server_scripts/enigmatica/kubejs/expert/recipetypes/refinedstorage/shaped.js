@@ -47,6 +47,18 @@ onEvent('recipes', (event) => {
                 D: '#xnet:connectors'
             },
             id: 'refinedstorage:exporter'
+        },
+        {
+            output: Item.of('refinedstorage:external_storage'),
+            pattern: [' C ', 'AEB', ' D '],
+            key: {
+                A: 'refinedstorage:cable',
+                B: 'refinedstorage:improved_processor',
+                C: 'refinedstorage:construction_core',
+                D: 'refinedstorage:destruction_core',
+                E: '#xnet:connectors'
+            },
+            id: 'refinedstorage:external_storage'
         }
     ];
 
