@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/mana',
                 '#forge:ingots/manasteel',
                 'thermal:basalz_powder',
-                'undergarden:tremblecrust',
+                'undergarden:shiverstone',
                 '#quark:runes',
                 'aquaculture:worm'
             ],

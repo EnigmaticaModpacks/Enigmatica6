@@ -198,7 +198,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { tag: 'forge:dusts/fluorite', count: 1 },
                 { item: 'minecraft:prismarine', count: 6 },
-                { item: 'undergarden:tremblecrust', count: 6 }
+                { item: 'undergarden:shiverstone', count: 6 }
             ],
             output: {
                 entries: [{ result: { item: 'kubejs:firmament', count: 1 }, weight: 7 }],
