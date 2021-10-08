@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: Item.of('immersiveengineering:cokebrick', 3),
             pattern: ['CAC', 'ABA', 'CAC'],
@@ -58,10 +58,21 @@ onEvent('recipes', (event) => {
                 D: 'thermal:rf_coil'
             },
             id: 'immersiveengineering:crafting/furnace_heater'
+        },
+        {
+            output: Item.of('12x immersiveengineering:conveyor_basic'),
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'create:shaft',
+                B: 'create:belt_connector',
+                C: '#forge:gears/iron_aluminum',
+                D: 'thermal:redstone_servo'
+            },
+            id: 'immersiveengineering:crafting/conveyor_basic'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
