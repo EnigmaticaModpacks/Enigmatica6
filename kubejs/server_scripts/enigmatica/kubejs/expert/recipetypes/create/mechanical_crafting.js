@@ -227,6 +227,18 @@ onEvent('recipes', (event) => {
                 F: 'pneumaticcraft:spawner_agitator'
             },
             id: `${id_prefix}spawner_extractor`
+        },
+        {
+            output: 'create:flywheel',
+            pattern: [' AAA ', 'ABCBA', 'ACDCA', 'ABEBA', ' AAA '],
+            key: {
+                A: '#forge:plates/brass',
+                B: '#forge:rods/brass',
+                C: '#forge:gears/enderium',
+                D: 'create:brass_casing',
+                E: 'ars_nouveau:carbuncle_charm'
+            },
+            id: 'create:mechanical_crafting/flywheel'
         }
     ];
 
