@@ -121,6 +121,26 @@ onEvent('recipes', (event) => {
             pressure: 1.0,
             results: [{ item: 'pneumaticcraft:turbine_blade', count: 1 }],
             id: 'pneumaticcraft:pressure_chamber/turbine_blade'
+        },
+        {
+            inputs: [
+                { item: 'tconstruct:ichor_slime_crystal', count: 1 },
+                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'botania:corporea_spark', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:destruction_core', count: 1 }],
+            id: 'refinedstorage:destruction_core'
+        },
+        {
+            inputs: [
+                { item: 'tconstruct:sky_slime_crystal', count: 1 },
+                { item: 'refinedstorage:basic_processor', count: 1 },
+                { item: 'botania:corporea_spark', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'refinedstorage:construction_core', count: 1 }],
+            id: 'refinedstorage:construction_core'
         }
     ];
 
