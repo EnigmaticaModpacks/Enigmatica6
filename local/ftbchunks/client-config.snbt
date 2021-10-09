@@ -20,6 +20,10 @@
 	# Default: false
 	debug_info: false
 	
+	# Moves map update tasks to a different thread. May cause CME errors and some weird chunks but could improve performance.
+	# Default: false
+	experimental_performance_improvement: false
+	
 	# Advanced option. Foliage darkness
 	# Default: 50
 	# Range: 0 ~ 255
@@ -36,7 +40,7 @@
 	
 	# Different ways to render map
 	# Default: "none"
-	# Valid values: "none", "night", "topography", "blocks", "biome_temperature", "light_sources"
+	# Valid values: "none", "night", "topography", "blocks", "light_sources"
 	map_mode: "none"
 	
 	# Noise added to map to make it look less plastic
