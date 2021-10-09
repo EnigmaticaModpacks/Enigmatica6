@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/create/';
     /*
         ,
         {
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'create:millstone',
             pattern: [' A ', 'BCB', 'DDD'],
@@ -54,14 +54,20 @@ onEvent('recipes', (event) => {
                 B: 'eidolon:polished_planks'
             },
             id: 'create:crafting/materials/brass_casing'
+        },
+        {
+            output: Item.of('create:encased_chain_drive', 2),
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: 'minecraft:chain',
+                B: 'create:shaft',
+                C: 'create:andesite_casing'
+            },
+            id: 'create:crafting/kinetics/encased_chain_drive'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
