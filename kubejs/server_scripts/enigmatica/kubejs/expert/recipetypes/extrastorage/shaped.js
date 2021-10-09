@@ -68,7 +68,7 @@ onEvent('recipes', (event) => {
             key: {
                 B: '#forge:circuits/ultimate',
                 D: 'thermal:upgrade_augment_3',
-                E: ['extrastorage:iron_crafter', 'extrastorage:gold_crafter']
+                E: 'extrastorage:gold_crafter'
             },
             id: 'extrastorage:diamond_crafter_upgrade'
         }
