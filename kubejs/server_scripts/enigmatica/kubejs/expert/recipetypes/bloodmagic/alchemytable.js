@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:expert/ars_nouveau/enchanting_apparatus/';
+    const id_prefix = 'enigmatica:expert/bloodmagic/alchemytable/';
     const recipes = [
         {
             inputs: ['ars_nouveau:magic_clay', 'minecraft:blaze_powder'],
@@ -740,7 +740,6 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        console.log(`Adding Recipe for ${recipe.output}`);
         event.recipes.bloodmagic
             .alchemytable(Item.of(recipe.output, recipe.count), recipe.inputs)
             .syphon(recipe.syphon)
