@@ -9,7 +9,7 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 
 **Changes/Improvements**
 
--
+-   Adjusted our Experience Fluid exchanging recipes. The cycle now goes IF -> PNC -> Thermal -> IF
 
 ### Enigmatica 6 v0.5.14
 
