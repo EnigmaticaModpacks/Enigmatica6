@@ -180,6 +180,8 @@ const itemsToHide = [
     'environmental:cherry_pie',
     'environmental:apple_pie',
 
+    'farmersdelight:fried_egg',
+
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
     'immersiveengineering:coal_coke',
