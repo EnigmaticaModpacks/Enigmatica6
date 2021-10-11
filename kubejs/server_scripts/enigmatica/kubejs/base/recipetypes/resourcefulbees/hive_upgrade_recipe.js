@@ -5,30 +5,20 @@ onEvent('recipes', (event) => {
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
                 B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
-                C: { type: "resourcefulbees:hive", tier: 3 }
-            },
-            result: { item: 'resourcefulbees:t4_beehive' },
-            id: 'resourcefulbees:t4_beehive'
-        },
-        {
-            pattern: ['ABA', 'BCB', 'ABA'],
-            key: {
-                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
-                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
                 C: { type: "resourcefulbees:hive", tier: 4 }
             },
             result: { item: 'resourcefulbees:t1_apiary' },
-            id: 'resourcefulbees:t1_apiary'
+            id: 'enigmatica:base/resourcefulbees/t1_apiary_nest'
         },
-        {   //These recipes are direct overrides without changes; they just add the "type/tier" setup to make in-world crafted hives compatible
+        {   //Allow hive reuse for crafting the in-world upgrades
             pattern: ['ABA', 'BCB', 'ABA'],
             key: {
                 A: { tag: 'resourcefulbees:resourceful_honeycomb' },
                 B: { item: 'resourcefulbees:wax'},
                 C: { type: "resourcefulbees:hive", tier: 1 }
             },
-            result: { item: 'resourcefulbees:t2_beehive' },
-            id: 'resourcefulbees:t2_beehive'
+            result: { item: 'resourcefulbees:t2_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t2_hive_upgrade_nest'
         },
         {
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -37,8 +27,50 @@ onEvent('recipes', (event) => {
                 B: { item: 'resourcefulbees:wax_block'},
                 C: { type: "resourcefulbees:hive", tier: 2 }
             },
-            result: { item: 'resourcefulbees:t3_beehive' },
-            id: 'resourcefulbees:t3_beehive',
+            result: { item: 'resourcefulbees:t3_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t3_hive_upgrade_nest',
+        },
+        {
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
+                C: { type: "resourcefulbees:hive", tier: 3 }
+            },
+            result: { item: 'resourcefulbees:t4_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t4_hive_upgrade_nest',
+        },
+        {   //Old Tiered Hives -> Upgrade conversions
+            pattern: ['A'],
+            key: {
+                A: { item: "resourcefulbees:t1_beehive" }
+            },
+            result: { item: 'resourcefulbees:t1_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t1_hive_upgrade_beehive'
+        },
+        {
+            pattern: ['   ', ' A ','   '],
+            key: {
+                A: { item: "resourcefulbees:t2_beehive" }
+            },
+            result: { item: 'resourcefulbees:t2_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t2_hive_upgrade_beehive'
+        },
+        {   
+            pattern: ['   ', ' A ','   '],
+            key: {
+                A: { item: "resourcefulbees:t3_beehive" }
+            },
+            result: { item: 'resourcefulbees:t3_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t3_hive_upgrade_beehive'
+        },
+        {   
+            pattern: ['   ', ' A ','   '],
+            key: {
+                A: { item: "resourcefulbees:t4_beehive" }
+            },
+            result: { item: 'resourcefulbees:t4_hive_upgrade' },
+            id: 'enigmatica:base/resourcefulbees/t4_hive_upgrade_beehive'
         }
     ];
 
