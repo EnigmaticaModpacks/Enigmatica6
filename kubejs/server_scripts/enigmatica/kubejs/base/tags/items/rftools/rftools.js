@@ -26,7 +26,4 @@ onEvent('item.tags', (event) => {
     event.get('rftools:fluidcard').add('rftoolsbuilder:shape_card_liquid');
     event.get('rftools:fluidcard').add('rftoolsbuilder:shape_card_pump');
     event.get('rftools:fluidcard').add('rftoolsbuilder:shape_card_pump_clear');
-
-    event.add('rftoolsutility:redstone_receiver', ['rftoolsutility:redstone_receiver']);
-    event.add('rftoolsutility:redstone_transmitter', ['rftoolsutility:redstone_transmitter']);
 });
