@@ -3,7 +3,7 @@ onEvent('recipes', (event) => {
         {
             output: 'buildinggadgets:construction_block_dense',
             input: 'buildinggadgets:construction_block_powder',
-            gas: { tag: 'mekanism:water_vapor', amount: 200 }
+            gas: { tag: 'mekanism:water_vapor', amount: 1 }
         },
         {
             output: 'minecraft:clay',
@@ -14,7 +14,7 @@ onEvent('recipes', (event) => {
         {
             output: 'emendatusenigmatica:sulfur_dust',
             input: '#forge:gunpowder',
-            gas: { tag: 'mekanism:hydrogen_chloride', amount: 1 },
+            gas: { gas: 'mekanism:hydrogen_chloride', amount: 1 },
             id: 'mekanism:injecting/gunpowder_to_sulfur'
         }
     ];

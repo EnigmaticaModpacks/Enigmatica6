@@ -11,7 +11,7 @@ onEvent('jei.information', (event) => {
         {
             items: ['astralsorcery:stardust'],
             description: [
-                'Obtained by left-clicking a Starmetal Ingot in-world. See the Astral Tome for more information.'
+                'Obtained by left-clicking a Starmetal Ingot in-world with a Starmetal Cutting Tool. See the Astral Tome for more information.'
             ]
         },
         {
@@ -203,19 +203,25 @@ onEvent('jei.information', (event) => {
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:overworld' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Overworld or Atum. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:end' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the End or The Undergarden. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
             items: [Item.of('naturesaura:aura_bottle', { stored_type: 'naturesaura:nether' })],
             description: [
-                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.'
+                'Obtained by Right-Clicking a Bottle and Cork in the air in the Nether. This action removes Aura from the area.',
+                ' ',
+                `Can be automated using a Dispenser.`
             ]
         },
         {
@@ -239,22 +245,22 @@ onEvent('jei.information', (event) => {
             description: [`Drops from Wraiths in the sandy wastes of Atum.`]
         },
         {
-            items: ['minecraft:firework_star'],
+            items: ['minecraft:firework_rocket'],
             description: [`Shapeless Crafting: One paper and at least one gunpowder.`]
         },
         {
-            items: ['minecraft:firework_star'],
+            items: ['minecraft:firework_rocket'],
             description: [
                 `Adding more gunpowder increases the duration of the rocket.`,
                 `Up to three gunpowder or up to seven firework stars can be added.`
             ]
         },
         {
-            items: ['minecraft:firework_rocket'],
+            items: ['minecraft:firework_star'],
             description: [`Shapeless Crafting: One gunpowder and at least one dye.`]
         },
         {
-            items: ['minecraft:firework_rocket'],
+            items: ['minecraft:firework_star'],
             description: [
                 `Up to eight dyes can be added.`,
                 `One head, gold nugget, feather, or fire charge can be added to set a shape.`,
@@ -310,6 +316,36 @@ onEvent('jei.information', (event) => {
             description: [
                 `Mungus may be summoned through the Altar of Birthing, while Crimson Mosquitos may be created by bringing a Fly into the Nether.`
             ]
+        },
+        {
+            items: ['astralsorcery:gem_crystal_cluster'],
+            description: [
+                `Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with an Illumination Powder.`,
+                ` `,
+                `Different varieties form at different times of the day.`
+            ]
+        },
+        {
+            items: ['astralsorcery:celestial_crystal_cluster'],
+            description: [`Formed by dropping a Rock Crystal or Celestial Crystal in Liquid Starlight with a Stardust.`]
+        },
+        {
+            items: ['astralsorcery:celestial_crystal_cluster'],
+            description: [
+                `If grown on Starmetal Ore, the growth rate is increased. The ore may revert during this process, so linking a Collector Crystal to it is important to convert it back.`
+            ]
+        },
+        {
+            items: ['bloodmagic:weak_tau'],
+            description: [`Found in chests within the Demon Realm.`]
+        },
+        {
+            items: ['bloodmagic:strong_tau'],
+            description: [`Produced by growing Tau near mobs.`]
+        },
+        {
+            items: ['eidolon:unholy_symbol'],
+            description: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
         }
     ];
 

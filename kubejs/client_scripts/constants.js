@@ -99,7 +99,7 @@ const colors = [
     'light_gray'
 ];
 
-var itemsToHide = [
+const itemsToHide = [
     'aiotbotania:livingwood_shears',
     'aiotbotania:livingrock_shears',
 
@@ -179,6 +179,8 @@ var itemsToHide = [
 
     'environmental:cherry_pie',
     'environmental:apple_pie',
+
+    'farmersdelight:fried_egg',
 
     'immersiveengineering:dust_saltpeter',
     'immersiveengineering:dust_wood',
@@ -264,10 +266,7 @@ var itemsToHide = [
 
     'supplementaries:pedestal',
     'supplementaries:crank',
-    'supplementaries:cog_block',
-    'supplementaries:redstone_illuminator',
     'supplementaries:turn_table',
-    'supplementaries:firefly_jar',
     'supplementaries:stone_lamp',
     'supplementaries:sack',
     'supplementaries:blackboard',
@@ -296,7 +295,64 @@ var itemsToHide = [
     'quark:backpack',
     'quark:crate',
     'quark:magnet',
-    'quark:soul_compass'
+    'quark:soul_compass',
+
+    /emendatusenigmatica:\w+_andesite_ore/,
+    /emendatusenigmatica:\w+_gabbro_ore/,
+    /emendatusenigmatica:\w+_c_limestone_ore/,
+    /emendatusenigmatica:\w+_scoria_ore/,
+    /emendatusenigmatica:\w+_weathered_limestone_ore/,
+    /emendatusenigmatica:\w+_jasper_ore/,
+    /emendatusenigmatica:\w+_marble_ore/,
+    /emendatusenigmatica:\w+_slate_ore/,
+    /emendatusenigmatica:\w+_netherrack_ore/,
+    /emendatusenigmatica:\w+_blackstone_ore/,
+    /emendatusenigmatica:\w+_deepslate_ore/,
+    /emendatusenigmatica:\w+_end_stone_ore/,
+    /emendatusenigmatica:\w+_mossy_stone_ore/,
+    /emendatusenigmatica:\w+_granite_ore/,
+    /emendatusenigmatica:\w+_diorite_ore/,
+    /emendatusenigmatica:\w+_sand_ore/,
+    /emendatusenigmatica:\w+_gravel_ore/,
+    /emendatusenigmatica:\w+_violecite_ore/,
+    /emendatusenigmatica:\w+_sulphuric_rock_ore/,
+    /emendatusenigmatica:\w+_flavolite_ore/,
+    /emendatusenigmatica:\w+_cryptic_stone_ore/,
+    /emendatusenigmatica:\w+_ether_stone_ore/,
+    /emendatusenigmatica:\w+_nylium_soul_soil_ore/,
+    /emendatusenigmatica:\w+_subzero_ash_ore/,
+    /emendatusenigmatica:\w+_brimstone_ore/,
+    /emendatusenigmatica:\w+_soul_soil_ore/,
+    /emendatusenigmatica:\w+_basalt_ore/,
+    /tconstruct:copper_(ore|block|nugget)/,
+    /tconstruct:cobalt_(ore|block|nugget)/,
+    /titanium:\w+_gear/,
+    /thermal:\w+_dust/,
+    /thermal:\w+_gear$/,
+    /thermal:\w+_ingot/,
+    /thermal:\w+_nugget/,
+    /thermal:\w+_ore/,
+    /thermal:\w+_plate/,
+    /pedestals:dust/,
+    /mekanism:\w+_ore/,
+    /minecraft:\w+_ore/,
+    /immersiveengineering:plate_/,
+    /immersiveengineering:storage_/,
+    /immersiveengineering:ore_/,
+    /create:\w+_sheet/,
+    /create:\w+_nugget/,
+    /create:\w+_ingot/,
+    /immersiveposts:stick_/,
+    /eidolon:\w+_ore/,
+    /byg:pendorite/,
+    /byg:ametrine/,
+    /emendatusenigmatica:\w+certus/,
+    /emendatusenigmatica:\w+fluix/,
+    /powah:\w+_starter/,
+    /rftoolsbase:dimensionalshard_/,
+    /theoneprobe:/,
+    /upgrade_aquatic:\w+_jelly_torch/,
+    /chiselsandbits:block_bit$/
 ];
 
 let ee_types = ['clump', 'crystal', 'dirty_dust', 'shard', 'fragment', 'gravel'];
@@ -320,54 +376,20 @@ ee_types.forEach((type) => {
     );
 });
 
-const fluidsToHide = [
-    'cofh_core:honey',
-    'create:honey',
-    'thermal:crude_oil',
-    'immersivepetroleum:oil',
-    'emendatusenigmatica:molten_zinc',
-    'emendatusenigmatica:molten_quartz',
-    'emendatusenigmatica:molten_uranium',
-    'emendatusenigmatica:molten_tin',
-    'emendatusenigmatica:molten_steel',
-    'emendatusenigmatica:molten_silver',
-    'emendatusenigmatica:molten_osmium',
-    'emendatusenigmatica:molten_nickel',
-    'emendatusenigmatica:molten_lead',
-    'emendatusenigmatica:molten_iron',
-    'emendatusenigmatica:molten_invar',
-    'emendatusenigmatica:molten_gold',
-    'emendatusenigmatica:molten_fluix',
-    'emendatusenigmatica:molten_emerald',
-    'emendatusenigmatica:molten_electrum',
-    'emendatusenigmatica:molten_diamond',
-    'emendatusenigmatica:molten_copper',
-    'emendatusenigmatica:molten_constantan',
-    'emendatusenigmatica:molten_cobalt',
-    'emendatusenigmatica:molten_charged_certus_quartz',
-    'emendatusenigmatica:molten_certus_quartz',
-    'emendatusenigmatica:molten_bronze',
-    'emendatusenigmatica:molten_brass',
-    'emendatusenigmatica:molten_aluminum',
-    'emendatusenigmatica:molten_ancient_debris',
-    'emendatusenigmatica:molten_cloggrum',
-    'emendatusenigmatica:molten_froststeel',
-    'emendatusenigmatica:molten_utherium',
-    'emendatusenigmatica:molten_regalium',
-    'emendatusenigmatica:molten_iesnium'
-];
-
 /*  This allows hiding individual recipes. It's used primarily for recipes displayed in Patchouli manuals 
     that have been changed to use a different crafting type or that have been disabled. It allows creating a
     recipe pointer that will display in Patchouli but not in JEI.  
 
     Use the logger in the jei_hide_recipes script to discover the correct CategoryID. They do not match the recipe type.
 */
-
 const recipesToHide = [
     {
         category: 'minecraft:crafting',
         recipes_by_id: [
+            'apotheosis:hellshelf',
+            'apotheosis:seashelf',
+            'apotheosis:endshelf',
+
             'ars_nouveau:arcane_stone',
             'ars_nouveau:crystallizer',
             'ars_nouveau:potion_melder',
@@ -424,6 +446,10 @@ const recipesToHide = [
             'botania:pixie_ring',
             'botania:reach_ring',
             'botania:flighttiara_0',
+            'botania:runic_altar',
+            'botania:mana_spreader',
+            'botania:elven_spreader',
+            'botania:gaia_spreader',
 
             'mythicbotany:wither_aconite_floating',
             'mythicbotany:raindeletia_floating',
@@ -432,6 +458,7 @@ const recipesToHide = [
             'mythicbotany:mana_infuser',
             'mythicbotany:fire_ring',
             'mythicbotany:ice_ring',
+            'mythicbotany:mana_collector',
 
             'naturesaura:calling_spirit',
             'naturesaura:animal_spawner',
@@ -460,8 +487,16 @@ const recipesToHide = [
         recipes_by_id: ['ars_nouveau:jar_of_light', 'ars_nouveau:void_jar']
     },
     {
+        category: 'astralsorcery:altar_attunement',
+        recipes_by_id: ['astralsorcery:altar/attunement_altar']
+    },
+    {
         category: 'botania:petals',
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
+    },
+    {
+        category: 'botania:mana_pools',
+        recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye']
     },
     {
         category: 'bloodmagic:alchemytable',
@@ -477,64 +512,6 @@ const recipesToHide = [
             'bloodmagic:soulforge/sentientscythe'
         ]
     }
-];
-
-var regexHide = [
-    /emendatusenigmatica:\w+_andesite_ore/,
-    /emendatusenigmatica:\w+_gabbro_ore/,
-    /emendatusenigmatica:\w+_c_limestone_ore/,
-    /emendatusenigmatica:\w+_scoria_ore/,
-    /emendatusenigmatica:\w+_weathered_limestone_ore/,
-    /emendatusenigmatica:\w+_jasper_ore/,
-    /emendatusenigmatica:\w+_marble_ore/,
-    /emendatusenigmatica:\w+_slate_ore/,
-    /emendatusenigmatica:\w+_netherrack_ore/,
-    /emendatusenigmatica:\w+_blackstone_ore/,
-    /emendatusenigmatica:\w+_deepslate_ore/,
-    /emendatusenigmatica:\w+_end_stone_ore/,
-    /emendatusenigmatica:\w+_mossy_stone_ore/,
-    /emendatusenigmatica:\w+_granite_ore/,
-    /emendatusenigmatica:\w+_diorite_ore/,
-    /emendatusenigmatica:\w+_sand_ore/,
-    /emendatusenigmatica:\w+_gravel_ore/,
-    /emendatusenigmatica:\w+_violecite_ore/,
-    /emendatusenigmatica:\w+_sulphuric_rock_ore/,
-    /emendatusenigmatica:\w+_flavolite_ore/,
-    /emendatusenigmatica:\w+_cryptic_stone_ore/,
-    /emendatusenigmatica:\w+_ether_stone_ore/,
-    /emendatusenigmatica:\w+_nylium_soul_soil_ore/,
-    /emendatusenigmatica:\w+_subzero_ash_ore/,
-    /emendatusenigmatica:\w+_brimstone_ore/,
-    /emendatusenigmatica:\w+_soul_soil_ore/,
-    /emendatusenigmatica:\w+_basalt_ore/,
-    /tconstruct:copper_(ore|block|nugget)/,
-    /tconstruct:cobalt_(ore|block|nugget)/,
-    /titanium:\w+_gear/,
-    /thermal:\w+_dust/,
-    /thermal:\w+_gear$/,
-    /thermal:\w+_ingot/,
-    /thermal:\w+_nugget/,
-    /thermal:\w+_ore/,
-    /thermal:\w+_plate/,
-    /pedestals:dust/,
-    /mekanism:\w+_ore/,
-    /minecraft:\w+_ore/,
-    /immersiveengineering:plate_/,
-    /immersiveengineering:storage_/,
-    /immersiveengineering:ore_/,
-    /create:\w+_sheet/,
-    /create:\w+_nugget/,
-    /create:\w+_ingot/,
-    /immersiveposts:stick_/,
-    /eidolon:\w+_ore/,
-    /byg:pendorite/,
-    /byg:ametrine/,
-    /emendatusenigmatica:\w+certus/,
-    /emendatusenigmatica:\w+fluix/,
-    /powah:\w+_starter/,
-    /rftoolsbase:dimensionalshard_/,
-    /theoneprobe:/,
-    /upgrade_aquatic:\w+_jelly_torch/
 ];
 
 const disabledItems = [
@@ -622,6 +599,16 @@ const disabledItems = [
     'ironjetpacks:nitro_cell',
     'ironjetpacks:nitro_capacitor',
 
+    'losttrinkets:magical_herbs',
+    'losttrinkets:octopick',
+    'losttrinkets:tea_leaf',
+    'losttrinkets:book_o_enchanting',
+    'losttrinkets:blaze_heart',
+    'losttrinkets:turtle_shell',
+    'losttrinkets:tha_cloud',
+    'losttrinkets:rock_candy',
+    'losttrinkets:mad_aura',
+
     'mekanism:sawdust',
     'mekanism:dust_lapis_lazuli',
     'mekanism:dust_lithium',
@@ -707,5 +694,30 @@ const materialsToUnify = [
     'regalium',
     'utherium',
     'coal_coke',
-    'starmetal'
+    'starmetal',
+    'amber',
+    'cobalt',
+    'queens_slime',
+    'rose_gold',
+    'tinkers_bronze',
+    'knightslime',
+    'slimesteel',
+    'manyullyn',
+    'hepatizon',
+    'thallasium',
+    'nebu',
+    'aeternium',
+    'alfsteel',
+    'elementium',
+    'gaia_spirit',
+    'infused_iron',
+    'manasteel',
+    'sky',
+    'terminite',
+    'terrasteel',
+    'energized_steel',
+    'blazing',
+    'niotic',
+    'spirited',
+    'nitro'
 ];

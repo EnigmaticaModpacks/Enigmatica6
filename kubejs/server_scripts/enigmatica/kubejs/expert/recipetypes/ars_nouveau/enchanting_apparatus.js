@@ -259,22 +259,6 @@ onEvent('recipes', (event) => {
             },
             {
                 inputs: [
-                    '#resourcefulbees:resourceful_honeycomb_block',
-                    'ars_nouveau:summoning_crystal',
-                    '#resourcefulbees:resourceful_honeycomb_block',
-                    'naturesaura:token_joy',
-                    'naturesaura:token_anger',
-                    '#resourcefulbees:resourceful_honeycomb_block',
-                    'ars_nouveau:summoning_crystal',
-                    '#resourcefulbees:resourceful_honeycomb_block'
-                ],
-                reagent: 'minecraft:spawner',
-                output: 'naturesaura:animal_spawner',
-                count: 1,
-                id: `${id_prefix}animal_spawner`
-            },
-            {
-                inputs: [
                     'ars_nouveau:glyph_amplify',
                     '#forge:storage_blocks/regalium',
                     '#forge:storage_blocks/regalium',
@@ -1429,6 +1413,38 @@ onEvent('recipes', (event) => {
                 output: 'botania:terrasteel_boots',
                 count: 1,
                 id: `${id_prefix}terrasteel_boots`
+            },
+            {
+                inputs: [
+                    'alexsmobs:moose_antler',
+                    'environmental:thief_hood',
+                    'alexsmobs:moose_antler',
+                    'atum:wolf_pelt',
+                    'atum:wolf_pelt',
+                    '#forge:storage_blocks/mana',
+                    'naturesaura:netherite_finder',
+                    '#forge:storage_blocks/mana'
+                ],
+                reagent: 'ars_nouveau:drygmy_shard',
+                output: 'ars_nouveau:drygmy_charm',
+                count: 1,
+                id: `ars_nouveau:drygmy_charm`
+            },
+            {
+                inputs: [
+                    'ars_nouveau:mana_bloom_crop',
+                    'ars_nouveau:mana_bloom',
+                    'ars_nouveau:mana_bloom_crop',
+                    'naturesaura:ancient_sapling',
+                    'naturesaura:ancient_sapling',
+                    '#forge:gems/mana',
+                    'botania:goddess_charm',
+                    '#forge:gems/mana'
+                ],
+                reagent: 'ars_nouveau:sylph_shards',
+                output: 'ars_nouveau:sylph_charm',
+                count: 1,
+                id: `ars_nouveau:sylph_charm`
             },
 
             /// Patchouli Removals

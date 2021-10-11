@@ -144,7 +144,7 @@ onEvent('recipes', (event) => {
 
         event.remove({ output: wire });
 
-        const wireCutters = 'immersiveengineering:wirecutter';
+        const wireCutters = '#forge:tools/wirecutter';
         let output = wire,
             mold = '#thermal:crafting/dies/wire';
 
@@ -167,7 +167,7 @@ onEvent('recipes', (event) => {
 
         event.shapeless(Item.of(output, 2), [plate, plate, wireCutters]).id(`kubejs:shaped_crafting_${material}_wire`);
     }
-    //Mock-up. Real process would use new assets to avoid mix ups with Mek processing.
+
     function magical_ore_processing(
         event,
         material,
@@ -212,23 +212,20 @@ onEvent('recipes', (event) => {
             input: Ingredient.of(infusing_input).toJson(),
             output: { item: mana_cluster, count: 1 },
             catalyst: { type: 'block', block: 'naturesaura:generator_limit_remover' },
-            mana: 25000
+            mana: 10000
         });
 
         // Step Two: Zap!
         event.custom({
             type: 'interactio:item_lightning',
-            inputs: [
-                Ingredient.of(zapping_input).toJson(),
-                { tag: 'botania:runes/asgard', count: 1, return_chance: 0.5 }
-            ],
+            inputs: [Ingredient.of(zapping_input).toJson()],
             output: {
                 entries: [
                     { result: { item: fulminated_cluster, count: 1 }, weight: 10 },
                     { result: { item: secondary_fulminated_cluster, count: 1 }, weight: 5 },
-                    { result: { item: 'thermal:slag', count: 1 }, weight: 85 } // would prefer something like tiny slag here
+                    { result: { item: 'thermal:slag', count: 1 }, weight: 35 }
                 ],
-                empty_weight: 0,
+                empty_weight: 50,
                 rolls: 20
             }
         });
@@ -249,18 +246,18 @@ onEvent('recipes', (event) => {
             type: 'interactio:item_fluid_transform',
             inputs: [
                 Ingredient.of(freezing_input).toJson(),
-                { tag: 'botania:runes/winter', count: 1, return_chance: 0.95 }
+                { tag: 'botania:runes/winter', count: 1, return_chance: 1.0 }
             ],
             output: {
                 entries: [
                     { result: Ingredient.of(crystalline_sliver).toJson(), weight: 75 },
-                    { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 } //placeholder item. Could be a handy place to put a byproduct required for high tier crafts
+                    { result: Ingredient.of('bloodmagic:corrupted_tinydust').toJson(), weight: 25 }
                 ],
                 empty_weight: 0,
                 rolls: 20
             },
             fluid: { fluid: 'astralsorcery:liquid_starlight' },
-            consume_fluid: 0.75
+            consume_fluid: 0.15
         });
 
         // Step Five: Fuse!
@@ -278,8 +275,8 @@ onEvent('recipes', (event) => {
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
                 Ingredient.of(fusing_input).toJson(),
-                Ingredient.of('eidolon:ender_calx').toJson(),
-                Ingredient.of(`#botania:runes/muspelheim`).toJson()
+                Ingredient.of('#forge:dusts/mana').toJson(),
+                Ingredient.of(`#botania:runes/nidavellir`).toJson()
             ]
         });
     }

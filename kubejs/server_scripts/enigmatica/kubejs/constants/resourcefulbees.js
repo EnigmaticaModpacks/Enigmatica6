@@ -3,22 +3,11 @@
 // Items added here will get the 'valid_apiary' tag, and be usable as Apiary multiblock walls.
 // This is in addition to all blocks that have collision.
 const validApiaryBlocks = [
-    'botania:bifrost_pane',
-    'botania:bifrost_perm',
-    'botania:elf_glass_pane',
-    'botania:mana_glass_pane',
-    'botania:elf_glass',
-    'botania:mana_glass',
-
     'glassential:glass_dark',
     'glassential:glass_dark_ethereal',
     'glassential:glass_ethereal',
     'glassential:glass_light',
-    'glassential:glass_redstone',
-
-    /mcwwindows:/,
-
-    /elevatorid/
+    'glassential:glass_redstone'
 ];
 
 const honeyVarieties = [

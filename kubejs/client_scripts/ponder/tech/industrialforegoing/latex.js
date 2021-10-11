@@ -107,6 +107,7 @@ onEvent('ponder.registry', (event) => {
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
                         true
                     );
+                scene.idle(1);
                 scene.world().modifyTileNBT(tank1, {
                     tank: { FluidName: 'thermal:resin', Amount: Utils.random.nextInt(64000) }
                 });
@@ -119,6 +120,7 @@ onEvent('ponder.registry', (event) => {
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
                         true
                     );
+                scene.idle(1);
                 scene.world().modifyTileNBT(tank2, {
                     tank: { FluidName: 'industrialforegoing:latex', Amount: Utils.random.nextInt(64000) }
                 });

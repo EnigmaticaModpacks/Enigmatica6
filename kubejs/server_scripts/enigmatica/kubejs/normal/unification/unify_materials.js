@@ -129,7 +129,7 @@ onEvent('recipes', (event) => {
 
         event.remove({ output: wire });
 
-        const wireCutters = 'immersiveengineering:wirecutter';
+        const wireCutters = '#forge:tools/wirecutter';
         let output = wire,
             input,
             mold = '#thermal:crafting/dies/wire';

@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/interactio/item_lightning/';
     const recipes = [
         {
             inputs: [
@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 3,
                 rolls: 16
             },
-            id: 'charged_snowball'
+            id: `${id_prefix}charged_snowball`
         },
         {
             inputs: [
@@ -28,7 +28,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 1,
                 rolls: 4
             },
-            id: 'arcane_stone'
+            id: `${id_prefix}arcane_stone`
         },
         {
             inputs: [
@@ -84,7 +84,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'jar_of_light'
+            id: `${id_prefix}jar_of_light`
         },
         {
             inputs: [
@@ -96,7 +96,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'void_jar'
+            id: `${id_prefix}void_jar`
         },
         {
             inputs: [
@@ -124,7 +124,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'calling_spirit'
+            id: `${id_prefix}calling_spirit`
         },
         {
             inputs: [
@@ -138,7 +138,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'lodestone'
+            id: `${id_prefix}lodestone`
         },
         {
             inputs: [
@@ -151,7 +151,7 @@ onEvent('recipes', (event) => {
                 empty_weight: 0,
                 rolls: 1
             },
-            id: 'spark'
+            id: `${id_prefix}spark`
         },
         {
             inputs: [
@@ -192,21 +192,25 @@ onEvent('recipes', (event) => {
                 empty_weight: 3,
                 rolls: 3
             },
-            id: 'invar_dust'
+            id: `${id_prefix}invar_dust`
+        },
+        {
+            inputs: [
+                { tag: 'forge:dusts/fluorite', count: 1 },
+                { item: 'minecraft:prismarine', count: 6 },
+                { item: 'undergarden:shiverstone', count: 6 }
+            ],
+            output: {
+                entries: [{ result: { item: 'kubejs:firmament', count: 1 }, weight: 7 }],
+                empty_weight: 3,
+                rolls: 3
+            },
+            id: `${id_prefix}firmament`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.custom({
-            type: 'interactio:item_lightning',
-            inputs: recipe.inputs,
-            output: recipe.output
-        });
-        if (recipe.id) {
-            if (!recipe.id.includes(':')) {
-                recipe.id = 'enigmatica:expert/interactio/item_lightning/' + recipe.id;
-            }
-            re.id(recipe.id);
-        }
+        recipe.type = 'interactio:item_lightning';
+        event.custom(recipe).id(recipe.id);
     });
 });

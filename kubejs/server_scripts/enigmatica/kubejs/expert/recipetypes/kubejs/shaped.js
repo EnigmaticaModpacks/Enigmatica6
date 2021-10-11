@@ -15,16 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
-        {
-            output: 'kubejs:firmament',
-            pattern: ['AAB', 'ABA', 'BAA'],
-            key: {
-                A: 'minecraft:prismarine',
-                B: 'undergarden:tremblecrust'
-            },
-            id: `${id_prefix}firmament`
-        },
+    const recipes = [
         {
             output: 'kubejs:basic_circuit_package',
             pattern: ['AAA', 'EDB', 'CCC'],
@@ -50,19 +41,6 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:cardboard_box'
             },
             id: `${id_prefix}basic_lenses_package`
-        },
-        {
-            output: 'kubejs:amadron_survey_tools',
-            pattern: ['ABA', 'CDE', 'AFA'],
-            key: {
-                A: Item.of('pneumaticcraft:air_canister', '{"pneumaticcraft:air":30000}').weakNBT(),
-                B: 'pneumaticcraft:reinforced_chest',
-                C: Item.of('mekanismtools:steel_paxel', '{Damage:0}').weakNBT(),
-                D: 'mekanism:cardboard_box',
-                E: 'minecraft:compass',
-                F: 'immersiveengineering:survey_tools'
-            },
-            id: `${id_prefix}amadron_survey_tools`
         },
 
         // Storage Parts
@@ -250,7 +228,7 @@ onEvent('recipes', (event) => {
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

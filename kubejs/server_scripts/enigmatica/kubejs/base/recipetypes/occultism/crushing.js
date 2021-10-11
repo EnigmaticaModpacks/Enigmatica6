@@ -249,7 +249,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'betterendforge:aurora_crystal' },
-            output: 'betterendforge:aurora_crystal_shards',
+            output: 'betterendforge:crystal_shards',
             count: 4,
             time: 50,
             ignore_crushing_multiplier: true

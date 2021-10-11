@@ -28,6 +28,12 @@ onEvent('recipes', (event) => {
             fluid: Fluid.of('kubejs:molten_compressed_iron', 18),
             output: 'pneumaticcraft:reinforced_stone',
             id: 'pneumaticcraft:reinforced_stone'
+        },
+        {
+            input: 'extrastorage:diamond_crafter',
+            fluid: Fluid.of('tconstruct:molten_netherite', 5184),
+            output: 'extrastorage:netherite_crafter',
+            id: 'extrastorage:netherite_crafter'
         }
     ];
     recipes.forEach((recipe) => {

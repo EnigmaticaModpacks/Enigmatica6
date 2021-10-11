@@ -291,3 +291,8 @@
 		#Range: 1 ~ 6
 		slotsInRow = 4
 
+	#Stack Upgrade Settings
+	[common.stackUpgrade]
+		#List of items that are not supposed to stack in backpack even when stack upgrade is inserted. Item registry names are expected here.
+		nonStackableItems = []
+
