@@ -10,6 +10,12 @@ onEvent('jei.information', (event) => {
         {
             items: ['atum:nebu_hammer', 'mythicbotany:alfsteel_pick', 'aiotbotania:alfsteel_aiot'],
             description: ['Capable of breaking down Godblocks into Atum Artifacts.']
+        },
+        {
+            items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
+            description: [
+                'Crafting this will not return any bees contained in the ingredients - make sure to remove them before crafting!'
+            ]
         }
     ];
 
