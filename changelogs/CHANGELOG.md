@@ -15,6 +15,7 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   \[New Quests!\] Building Quest Chapter [\#3362](https://github.com/NillerMedDild/Enigmatica6/pull/3362) ([Ridanisaurus](https://github.com/Ridanisaurus))
 -   Blacklist Farmer's Delight Fried Egg from appearing in the pack [\#3106](https://github.com/NillerMedDild/Enigmatica6/issues/3106)
 -   Crafting Dense Construction Blocks in the Mekanism CIC is impractical [\#3400](https://github.com/NillerMedDild/Enigmatica6/issues/3400)
+-   KubeJS Powah Coolants Script [\#3333](https://github.com/NillerMedDild/Enigmatica6/pull/3333) ([MagisterXero](https://github.com/MagisterXero))
 -   Make Morph o Tool work with Compact Machine Shrink Device [\#3341](https://github.com/NillerMedDild/Enigmatica6/pull/3341) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Occultism: Fixed Summoning familiars not triggering the advancement
 -   Quests: Fixed Infinity Tools quest not triggering
@@ -32,7 +33,6 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 - Chisel/Quark item duplication [\#3330](https://github.com/NillerMedDild/Enigmatica6/issues/3330)
 - Crash on Launch [\#3370](https://github.com/NillerMedDild/Enigmatica6/issues/3370)
 - Create conveyors sometimes don't show their items [\#3367](https://github.com/NillerMedDild/Enigmatica6/issues/3367)
-- Diamond crafters for refined storage deleting all patterns upon login/logout [\#3396](https://github.com/NillerMedDild/Enigmatica6/issues/3396)
 - Emerald Plate cannot be melted back down [\#3064](https://github.com/NillerMedDild/Enigmatica6/issues/3064)
 - Fix compressors dropping compressed bricks in normal mode [\#3391](https://github.com/NillerMedDild/Enigmatica6/pull/3391) ([MuteTiefling](https://github.com/MuteTiefling))
 - Fixes missing valid apiary tags  [\#3388](https://github.com/NillerMedDild/Enigmatica6/pull/3388) ([theboo](https://github.com/theboo))
