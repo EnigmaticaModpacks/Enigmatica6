@@ -354,3 +354,8 @@
 		#Allowed Values: ALL, WEAK, NONE
 		break_blocks = "WEAK"
 
+#General settings
+[general]
+	#Turn this on to disable any interaction on blocks placed by other players. This affects item shelves, signs, flower pots, and boards. Useful for protected servers. Note that it will affect only blocks placed after this is turned on and such blocks will keep being protected after this option is disabled
+	server_protection = false
+
