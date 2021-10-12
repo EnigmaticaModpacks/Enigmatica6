@@ -3,6 +3,7 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/resourcefulbees/';
     const recipes = [
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -13,7 +14,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'minecraft:nether_star' }
             },
             result: { item: 'resourcefulbees:t2_apiary' },
-            id: 'enigmatica:base/resourcefulbees/t2_apiary_nest'
+            id: `${id_prefix}t2_apiary_nest`
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -24,7 +25,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'minecraft:nether_star' }
             },
             result: { item: 'resourcefulbees:t3_apiary' },
-            id: 'enigmatica:base/resourcefulbees/t3_apiary_nest'
+            id: `${id_prefix}t3_apiary_nest`
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -35,7 +36,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'minecraft:nether_star' }
             },
             result: { item: 'resourcefulbees:t4_apiary' },
-            id: 'enigmatica:base/resourcefulbees/t4_apiary_nest'
+            id: `${id_prefix}t4_apiary_nest`
         }
     ];
 

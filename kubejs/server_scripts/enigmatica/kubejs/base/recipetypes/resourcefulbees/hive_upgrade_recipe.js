@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/resourcefulbees/';
     const recipes = [
         {
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -8,7 +9,7 @@ onEvent('recipes', (event) => {
                 C: { type: "resourcefulbees:hive", tier: 4 }
             },
             result: { item: 'resourcefulbees:t1_apiary' },
-            id: 'enigmatica:base/resourcefulbees/t1_apiary_nest'
+            id: `${id_prefix}t1_apiary_nest`
         },
         {   //Allow hive reuse for crafting the in-world upgrades
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -18,7 +19,7 @@ onEvent('recipes', (event) => {
                 C: { type: "resourcefulbees:hive", tier: 1 }
             },
             result: { item: 'resourcefulbees:t2_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t2_hive_upgrade_nest'
+            id: `${id_prefix}t2_hive_upgrade_nest`
         },
         {
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -28,7 +29,7 @@ onEvent('recipes', (event) => {
                 C: { type: "resourcefulbees:hive", tier: 2 }
             },
             result: { item: 'resourcefulbees:t3_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t3_hive_upgrade_nest',
+            id: `${id_prefix}t3_hive_upgrade_nest`,
         },
         {
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -38,7 +39,7 @@ onEvent('recipes', (event) => {
                 C: { type: "resourcefulbees:hive", tier: 3 }
             },
             result: { item: 'resourcefulbees:t4_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t4_hive_upgrade_nest',
+            id: `${id_prefix}t4_hive_upgrade_nest`,
         },
         {   //Old Tiered Hives -> Upgrade conversions
             pattern: ['A'],
@@ -46,7 +47,7 @@ onEvent('recipes', (event) => {
                 A: { item: "resourcefulbees:t1_beehive" }
             },
             result: { item: 'resourcefulbees:t1_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t1_hive_upgrade_beehive'
+            id: `${id_prefix}t1_hive_upgrade_beehive`
         },
         {
             pattern: ['   ', ' A ','   '],
@@ -54,7 +55,7 @@ onEvent('recipes', (event) => {
                 A: { item: "resourcefulbees:t2_beehive" }
             },
             result: { item: 'resourcefulbees:t2_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t2_hive_upgrade_beehive'
+            id: `${id_prefix}t2_hive_upgrade_beehive`
         },
         {   
             pattern: ['   ', ' A ','   '],
@@ -62,7 +63,7 @@ onEvent('recipes', (event) => {
                 A: { item: "resourcefulbees:t3_beehive" }
             },
             result: { item: 'resourcefulbees:t3_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t3_hive_upgrade_beehive'
+            id: `${id_prefix}t3_hive_upgrade_beehive`
         },
         {   
             pattern: ['   ', ' A ','   '],
@@ -70,7 +71,7 @@ onEvent('recipes', (event) => {
                 A: { item: "resourcefulbees:t4_beehive" }
             },
             result: { item: 'resourcefulbees:t4_hive_upgrade' },
-            id: 'enigmatica:base/resourcefulbees/t4_hive_upgrade_beehive'
+            id: `${id_prefix}t4_hive_upgrade_beehive`
         }
     ];
 
