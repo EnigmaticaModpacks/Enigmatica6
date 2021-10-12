@@ -39,7 +39,8 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
             text: [
-                Text.of('Crafting this will not return any bees contained in the ingredients - make sure to remove them before crafting!').red()
+                Text.of('Crafting this will not return any bees contained in the ingredients.').red(),
+                Text.of('Make sure to remove them before crafting!').red()
             ]
         }
     ];
