@@ -2,14 +2,65 @@
 
 _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.15.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.15.md)_
 
-**Bug Fixes**
+**New Mods**
 
--   Quests: Fixed Infinity Tools quest not triggering
--   Occultism: Fixed Summoning familiars not triggering the advancement
+- [Friendly Fire](https://www.curseforge.com/minecraft/mc-mods/friendly-fire)
+- [Just Enough Effect Descriptions (JEED)](https://www.curseforge.com/minecraft/mc-mods/just-enough-effect-descriptions-jeed)
+- [Towers of the Wild: Reloaded](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild-reloaded)
 
 **Changes/Improvements**
 
--
+-   Add Blazing Blood as fuel for the Magmatic Dynamo [\#3368](https://github.com/NillerMedDild/Enigmatica6/pull/3368) ([MuteTiefling](https://github.com/MuteTiefling))
+-   add missing glowshrooms to vanilla nether shrooms [\#3386](https://github.com/NillerMedDild/Enigmatica6/pull/3386) ([MuteTiefling](https://github.com/MuteTiefling))
+-   \[New Quests!\] Building Quest Chapter [\#3362](https://github.com/NillerMedDild/Enigmatica6/pull/3362) ([Ridanisaurus](https://github.com/Ridanisaurus))
+-   Blacklist Farmer's Delight Fried Egg from appearing in the pack [\#3106](https://github.com/NillerMedDild/Enigmatica6/issues/3106)
+-   Crafting Dense Construction Blocks in the Mekanism CIC is impractical [\#3400](https://github.com/NillerMedDild/Enigmatica6/issues/3400)
+-   KubeJS Powah Coolants Script [\#3333](https://github.com/NillerMedDild/Enigmatica6/pull/3333) ([MagisterXero](https://github.com/MagisterXero))
+-   Make Morph o Tool work with Compact Machine Shrink Device [\#3341](https://github.com/NillerMedDild/Enigmatica6/pull/3341) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Occultism: Fixed Summoning familiars not triggering the advancement
+-   Quests: Fixed Infinity Tools quest not triggering
+
+**Bug Fixes**
+
+-   Adjusted our Experience Fluid exchanging recipes. The cycle now goes IF -> PNC -> Thermal -> IF
+-   Adv. Demagnetizer voids items. [\#3373](https://github.com/NillerMedDild/Enigmatica6/issues/3373)
+- Avocado Leaves Not Usable [\#3376](https://github.com/NillerMedDild/Enigmatica6/issues/3376)
+- \[0.5.12\] Create Cogwheels placing [\#3317](https://github.com/NillerMedDild/Enigmatica6/issues/3317)
+- \[0.5.12\] Wrenches and Block Rotation [\#3310](https://github.com/NillerMedDild/Enigmatica6/issues/3310)
+- \[Travel Anchors\] Player doesn't go down when shifting [\#3381](https://github.com/NillerMedDild/Enigmatica6/issues/3381)
+- Can't Clear Redstone Transmitter/Receiver [\#3372](https://github.com/NillerMedDild/Enigmatica6/issues/3372)
+- Chisel & Bits bits are not used up [\#3412](https://github.com/NillerMedDild/Enigmatica6/issues/3412)
+- Chisel/Quark item duplication [\#3330](https://github.com/NillerMedDild/Enigmatica6/issues/3330)
+- Crash on Launch [\#3370](https://github.com/NillerMedDild/Enigmatica6/issues/3370)
+- Create conveyors sometimes don't show their items [\#3367](https://github.com/NillerMedDild/Enigmatica6/issues/3367)
+- Diamond crafters for refined storage deleting all patterns upon login/logout [\#3396](https://github.com/NillerMedDild/Enigmatica6/issues/3396)
+- Emerald Plate cannot be melted back down [\#3064](https://github.com/NillerMedDild/Enigmatica6/issues/3064)
+- Fix compressors dropping compressed bricks in normal mode [\#3391](https://github.com/NillerMedDild/Enigmatica6/pull/3391) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fixes missing valid apiary tags  [\#3388](https://github.com/NillerMedDild/Enigmatica6/pull/3388) ([theboo](https://github.com/theboo))
+- Fix firework rocket/star descriptions to show the correct recipe. [\#3389](https://github.com/NillerMedDild/Enigmatica6/pull/3389) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fix oil in neromantic prime. Fix recipe loop for expert mana spreader [\#3394](https://github.com/NillerMedDild/Enigmatica6/pull/3394) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fluid Interfaces not reading maximum fluid storage correctly [\#3153](https://github.com/NillerMedDild/Enigmatica6/issues/3153)
+- insightful crystal / essence issue [\#3359](https://github.com/NillerMedDild/Enigmatica6/issues/3359)
+- Integrated Dynamics' Energy Battery recipe invalid in crafting interface on world reload [\#3207](https://github.com/NillerMedDild/Enigmatica6/issues/3207)
+- JEI Recipes Switch Continuously in Occultism's Dimensional Storage Crafting Grid [\#3326](https://github.com/NillerMedDild/Enigmatica6/issues/3326)
+- Magic Feather is impossible to craft [\#3409](https://github.com/NillerMedDild/Enigmatica6/issues/3409)
+- Missing valid\_apiaries tag list. [\#3384](https://github.com/NillerMedDild/Enigmatica6/issues/3384)
+- Modular Routers Item Filter + Quark Extract dupe bug. [\#3334](https://github.com/NillerMedDild/Enigmatica6/issues/3334)
+- Pneumaticraft Crude Oil vs Immersive Petroleum Crude Oil [\#3393](https://github.com/NillerMedDild/Enigmatica6/issues/3393)
+- Ponder on Industrial Foregoing Plastic Crashes Client [\#3345](https://github.com/NillerMedDild/Enigmatica6/issues/3345)
+- refreshes byg config, fixes missing biomes [\#3346](https://github.com/NillerMedDild/Enigmatica6/pull/3346) ([theboo](https://github.com/theboo))
+- Remove Ender Slime as sap output for Green slime saplings. Moved to Pythandron logs instead.  [\#3374](https://github.com/NillerMedDild/Enigmatica6/pull/3374) ([MuteTiefling](https://github.com/MuteTiefling))
+- Sharpness, Smite and Bane of Arthropods are mutually exclusive again [\#3041](https://github.com/NillerMedDild/Enigmatica6/issues/3041)
+- some \(all?\) BYG ores have no use [\#3398](https://github.com/NillerMedDild/Enigmatica6/issues/3398)
+- Some ponder entries missing their text [\#3318](https://github.com/NillerMedDild/Enigmatica6/issues/3318)
+- Summon Quests not Working in Occultism 0.5.14 [\#3379](https://github.com/NillerMedDild/Enigmatica6/issues/3379)
+- Tomb is not always placed correctly [\#1469](https://github.com/NillerMedDild/Enigmatica6/issues/1469)
+- Two Issues: 'Meet Your Fight' Swampjaw Crash / I have no clue but Server Crash [\#3337](https://github.com/NillerMedDild/Enigmatica6/issues/3337)
+- Wire cutters only craft on first use for copper wire [\#3329](https://github.com/NillerMedDild/Enigmatica6/issues/3329)
+
+**Removed Mods**
+
+- [Towers Of The Wild](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild)
 
 ### Enigmatica 6 v0.5.14
 

@@ -14,7 +14,7 @@
 	#Range: 0 ~ 1000
 	minimumFoodValue = 1
 	#Foods in this list won't affect the player's health nor show up in the food book.
-	blacklist = []
+	blacklist = ["farmersdelight:fried_egg"]
 	#When this list contains anything, the blacklist is ignored and instead only foods from here count.
 	whitelist = []
 

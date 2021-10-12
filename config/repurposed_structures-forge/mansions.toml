@@ -33,4 +33,8 @@ mansionDesertMaxChunkDistance = 140
 # 1 for spawning in most chunks and 1001 for none.
 #Range: 1 ~ 1001
 mansionSnowyMaxChunkDistance = 140
+#
+# Only make supports downward if there is land below.
+# (Helps make structure look better in floating island worlds instead of support going down to void at world bottom)
+pillarOnlyToLand = true
 
