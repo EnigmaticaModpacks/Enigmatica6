@@ -35,6 +35,12 @@ onEvent('item.tooltip', (event) => {
         {
             items: ['kubejs:basic_circuit_package'],
             text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
+        },
+        {
+            items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
+            text: [
+                Text.of('Crafting this will not return any bees contained in the ingredients - make sure to remove them before crafting!').red()
+            ]
         }
     ];
 

@@ -346,6 +346,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['eidolon:unholy_symbol'],
             description: [`Produced by chanting the Touch of Darkness at Pewter Inlay dropped on the ground.`]
+        },
+        {
+            items: ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive'],
+            description: [`Tiered Beehives have been depreciated. Use the Hive Upgrade items on nests found in the world instead. Tiered Beehives can be converted to Hive Upgrades in a crafting grid.`,]
         }
     ];
 
