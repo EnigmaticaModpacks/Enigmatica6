@@ -117,7 +117,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/minecraft/salmon_combs'
         },
         {
-            output: Item.of('sushigocrafting:tobiko', 3),
+            output: Item.of('sushigocrafting:tobiko', '{Amount:15}'),
             pattern: ['A', 'C', 'B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
