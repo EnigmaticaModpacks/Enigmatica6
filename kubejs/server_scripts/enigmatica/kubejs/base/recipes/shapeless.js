@@ -552,6 +552,10 @@ onEvent('recipes', (event) => {
                 '#forge:fruits/mana_berry'
             ],
             id: 'ars_nouveau:source_berry_roll'
+        },
+        {
+            output: Item.of('byg:brimstone', 2),
+            inputs: ['minecraft:netherrack', 'byg:sythian_wart_block']
         }
     ];
 
