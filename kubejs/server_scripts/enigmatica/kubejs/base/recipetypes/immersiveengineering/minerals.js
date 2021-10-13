@@ -16,8 +16,8 @@ onEvent('recipes', (event) => {
             },
             {
                 ores: [
-                    { chance: 0.6, output: { tag: 'forge:chunks/quartz' } },
-                    { chance: 0.3, output: { tag: 'forge:chunks/quartz' } },
+                    { chance: 0.5, output: { tag: 'forge:chunks/quartz' } },
+                    { chance: 0.3, output: { tag: 'forge:chunks/fluorite' } },
                     { chance: 0.1, output: { tag: 'forge:chunks/gold' } },
                     { chance: 0.1, output: { tag: 'forge:dusts/sulfur' } }
                 ],
