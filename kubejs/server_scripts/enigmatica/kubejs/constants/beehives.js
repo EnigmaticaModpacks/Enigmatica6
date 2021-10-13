@@ -1,8 +1,6 @@
 //priority: 1000
 
 const tier0Hives = [
-    'minecraft:beehive',
-    'minecraft:bee_nest',
     'resourcefulbees:bee_nest',
     'resourcefulbees:acacia_bee_nest',
     'resourcefulbees:grass_bee_nest',

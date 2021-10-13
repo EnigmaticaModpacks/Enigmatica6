@@ -3,17 +3,8 @@ onEvent('recipes', (event) => {
         return;
     }
 
+    const id_prefix = 'enigmatica:normal/resourcefulbees/';
     const recipes = [
-        {
-            // Adjust T1 Beehive Recipe to use beehive tag in Normal mode
-            pattern: ['AAA', 'ABA', 'AAA'],
-            key: {
-                A: { item: 'minecraft:grass' },
-                B: { tag: 'forge:beehives/tier_0' }
-            },
-            result: { item: 'resourcefulbees:t1_beehive' },
-            id: 'resourcefulbees:t1_beehive'
-        },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
             key: {
@@ -23,7 +14,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'minecraft:nether_star' }
             },
             result: { item: 'resourcefulbees:t2_apiary' },
-            id: 'resourcefulbees:t2_apiary'
+            id: `${id_prefix}t2_apiary_nest`
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -34,7 +25,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'minecraft:nether_star' }
             },
             result: { item: 'resourcefulbees:t3_apiary' },
-            id: 'resourcefulbees:t3_apiary'
+            id: `${id_prefix}t3_apiary_nest`
         },
         {
             pattern: ['ACA', 'BDB', 'ACA'],
@@ -45,7 +36,7 @@ onEvent('recipes', (event) => {
                 D: { item: 'minecraft:nether_star' }
             },
             result: { item: 'resourcefulbees:t4_apiary' },
-            id: 'resourcefulbees:t4_apiary'
+            id: `${id_prefix}t4_apiary_nest`
         }
     ];
 

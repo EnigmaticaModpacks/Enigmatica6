@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-10-11T18:26:31.6550282Z",
-  "playedCount": 409,
+  "lastPlayed": "2021-10-12T17:47:39.7084699Z",
+  "playedCount": 412,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-10-10T19:00:57.7201294Z",
-  "lastRefreshAttempt": "2021-10-10T21:00:59.9581286+02:00",
+  "lastPreviousMatchUpdate": "2021-10-11T19:58:52.2710502Z",
+  "lastRefreshAttempt": "2021-10-11T22:00:11.36651+02:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -6880,29 +6880,17 @@
       "addonID": 412082,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3485416,
-        "displayName": "supplementaries-1.16.5-0.17.4.jar",
-        "fileName": "supplementaries-1.16.5-0.17.4.jar",
-        "fileDate": "2021-10-09T03:59:45.217Z",
-        "fileLength": 12059694,
+        "id": 3488926,
+        "displayName": "supplementaries-1.16.5-0.17.5.jar",
+        "fileName": "supplementaries-1.16.5-0.17.5.jar",
+        "fileDate": "2021-10-12T14:50:38.32Z",
+        "fileLength": 12065523,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3485/416/supplementaries-1.16.5-0.17.4.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/926/supplementaries-1.16.5-0.17.5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
-          {
-            "id": 0,
-            "addonId": 486392,
-            "type": 2,
-            "fileId": 0
-          },
-          {
-            "id": 0,
-            "addonId": 243121,
-            "type": 2,
-            "fileId": 0
-          },
           {
             "id": 0,
             "addonId": 284007,
@@ -6917,6 +6905,18 @@
           },
           {
             "id": 0,
+            "addonId": 486392,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
+            "addonId": 243121,
+            "type": 2,
+            "fileId": 0
+          },
+          {
+            "id": 0,
             "addonId": 499980,
             "type": 3,
             "fileId": 0
@@ -6926,13 +6926,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 2662533319,
+            "fingerprint": 3927160595,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "net",
-            "fingerprint": 1229736334,
+            "fingerprint": 2181168097,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -6950,7 +6950,7 @@
           },
           {
             "foldername": "data",
-            "fingerprint": 3809660118,
+            "fingerprint": 4049777672,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -6979,7 +6979,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1650027509,
+        "packageFingerprint": 1106238602,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -6995,12 +6995,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "supplementaries-1.16.5-0.17.4.jar"
+        "FileNameOnDisk": "supplementaries-1.16.5-0.17.5.jar"
       },
       "dateInstalled": "2021-08-11T21:22:43.3270429Z",
-      "dateUpdated": "2021-10-09T18:04:00.7189842Z",
-      "dateLastUpdateAttempted": "2021-10-09T18:04:00.7189842Z",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:47:24.495499Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:47:24.495499Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -7349,14 +7349,14 @@
       "addonID": 400933,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3273512,
-        "displayName": "[1.0.2 / 1.16.5/4] Macaw's Trapdoors",
-        "fileName": "mcw-trapdoors-1.0.2-mc1.16.5.jar",
-        "fileDate": "2021-04-12T11:58:02.373Z",
-        "fileLength": 369488,
+        "id": 3488763,
+        "displayName": "[1.0.3 / 1.16.5] Macaw's Trapdoors",
+        "fileName": "mcw-trapdoors-1.0.3-mc1.16.5.jar",
+        "fileDate": "2021-10-12T11:33:18.7Z",
+        "fileLength": 355632,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3273/512/mcw-trapdoors-1.0.2-mc1.16.5.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/763/mcw-trapdoors-1.0.3-mc1.16.5.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -7364,86 +7364,61 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 776917826,
-            "type": 3,
+            "fingerprint": 1114519180,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
             "fingerprint": 106799335,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "assets",
-            "fingerprint": 1655881798,
-            "type": 3,
+            "fingerprint": 1587859509,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "data",
             "fingerprint": 1564359323,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
             "fingerprint": 509507240,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "trapdoorslogo.png",
             "fingerprint": 3641727091,
-            "type": 3,
+            "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 293957677,
+        "packageFingerprint": 4228411872,
         "gameVersion": [
           "1.16.5",
-          "Forge",
-          "1.16.4"
-        ],
-        "sortableGameVersion": [
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000005",
-            "gameVersion": "1.16.5",
-            "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
-            "gameVersionName": "1.16.5"
-          },
-          {
-            "gameVersionPadded": "0",
-            "gameVersion": "",
-            "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
-            "gameVersionName": "Forge"
-          },
-          {
-            "gameVersionPadded": "0000000001.0000000016.0000000004",
-            "gameVersion": "1.16.4",
-            "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
-            "gameVersionName": "1.16.4"
-          }
+          "Forge"
         ],
         "hasInstallScript": false,
         "isCompatibleWithClient": false,
-        "categorySectionPackageType": 6,
-        "restrictProjectFileAccess": 1,
-        "projectStatus": 4,
-        "renderCacheId": 2262277,
-        "projectId": 400933,
-        "packageFingerprintId": 642757979,
+        "categorySectionPackageType": 0,
+        "restrictProjectFileAccess": 0,
+        "projectStatus": 0,
+        "projectId": 0,
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
-        "gameVersionMappingId": 2860327,
-        "gameVersionId": 7498,
-        "gameId": 432,
+        "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "mcw-trapdoors-1.0.2-mc1.16.5.jar"
+        "FileNameOnDisk": "mcw-trapdoors-1.0.3-mc1.16.5.jar"
       },
       "dateInstalled": "2021-07-05T20:20:54.9128241Z",
-      "dateUpdated": "2021-07-05T20:20:54.9128241Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:46:49.0551142Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:46:49.0551142Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -12825,26 +12800,26 @@
       "addonID": 361026,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3482197,
-        "displayName": "occultism-1.15.1.jar",
-        "fileName": "occultism-1.16.5-1.15.1.jar",
-        "fileDate": "2021-10-05T13:56:49.2Z",
-        "fileLength": 4275502,
+        "id": 3488749,
+        "displayName": "occultism-1.16.0.jar",
+        "fileName": "occultism-1.16.5-1.16.0.jar",
+        "fileDate": "2021-10-12T11:08:07.597Z",
+        "fileLength": 4318125,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3482/197/occultism-1.16.5-1.15.1.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/749/occultism-1.16.5-1.16.0.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
             "id": 0,
-            "addonId": 309927,
+            "addonId": 306770,
             "type": 3,
             "fileId": 0
           },
           {
             "id": 0,
-            "addonId": 306770,
+            "addonId": 309927,
             "type": 3,
             "fileId": 0
           }
@@ -12853,19 +12828,19 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1672823568,
+            "fingerprint": 184963258,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 183310938,
+            "fingerprint": 4209176893,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "assets",
-            "fingerprint": 583978682,
+            "foldername": "occultism.png",
+            "fingerprint": 3138228409,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -12876,19 +12851,19 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "data",
-            "fingerprint": 2578633093,
+            "foldername": "assets",
+            "fingerprint": 1296621914,
             "type": 0,
             "invalidFingerprint": false
           },
           {
-            "foldername": "occultism.png",
-            "fingerprint": 3138228409,
+            "foldername": "data",
+            "fingerprint": 3869250899,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 585161433,
+        "packageFingerprint": 2946055069,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -12905,12 +12880,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "occultism-1.16.5-1.15.1.jar"
+        "FileNameOnDisk": "occultism-1.16.5-1.16.0.jar"
       },
       "dateInstalled": "2021-09-25T14:41:32.7416314Z",
-      "dateUpdated": "2021-10-06T17:09:16.1265372Z",
-      "dateLastUpdateAttempted": "2021-10-06T17:09:16.1265372Z",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:47:15.9295958Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:47:15.9295958Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16087,14 +16062,14 @@
       "addonID": 238222,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3486455,
-        "displayName": "jei-1.16.5-7.7.1.125.jar",
-        "fileName": "jei-1.16.5-7.7.1.125.jar",
-        "fileDate": "2021-10-10T03:38:38.97Z",
-        "fileLength": 814451,
+        "id": 3488178,
+        "displayName": "jei-1.16.5-7.7.1.126.jar",
+        "fileName": "jei-1.16.5-7.7.1.126.jar",
+        "fileDate": "2021-10-11T19:18:39.6Z",
+        "fileLength": 817187,
         "releaseType": 2,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3486/455/jei-1.16.5-7.7.1.125.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/178/jei-1.16.5-7.7.1.126.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -16102,13 +16077,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 647687672,
+            "fingerprint": 436666546,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mezz",
-            "fingerprint": 3411531229,
+            "fingerprint": 1090284749,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -16120,12 +16095,12 @@
           },
           {
             "foldername": "assets",
-            "fingerprint": 2041060550,
+            "fingerprint": 450215618,
             "type": 0,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2920701052,
+        "packageFingerprint": 3537995693,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -16139,12 +16114,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "jei-1.16.5-7.7.1.125.jar"
+        "FileNameOnDisk": "jei-1.16.5-7.7.1.126.jar"
       },
       "dateInstalled": "2021-10-04T19:00:56.2227538Z",
-      "dateUpdated": "2021-10-10T16:49:29.6620745Z",
-      "dateLastUpdateAttempted": "2021-10-10T16:49:29.6620745Z",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:46:51.0921145Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:46:51.0921145Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16471,7 +16446,7 @@
       "dateInstalled": "2021-10-11T09:32:55.2274872Z",
       "dateUpdated": "2021-10-11T09:32:55.2384791Z",
       "dateLastUpdateAttempted": "2021-10-11T09:32:55.2384791Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16486,14 +16461,14 @@
       "addonID": 520110,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3477536,
-        "displayName": "Iceberg-1.16.5-1.0.11.jar",
-        "fileName": "Iceberg-1.16.5-1.0.11.jar",
-        "fileDate": "2021-09-30T21:00:41.2Z",
-        "fileLength": 46197,
+        "id": 3488608,
+        "displayName": "Iceberg-1.16.5-1.0.12.jar",
+        "fileName": "Iceberg-1.16.5-1.0.12.jar",
+        "fileDate": "2021-10-12T05:57:32.463Z",
+        "fileLength": 46201,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3477/536/Iceberg-1.16.5-1.0.11.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/608/Iceberg-1.16.5-1.0.12.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -16501,13 +16476,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 3346167086,
+            "fingerprint": 484580834,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "com",
-            "fingerprint": 3037381733,
+            "fingerprint": 2479049014,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -16536,7 +16511,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 2607564172,
+        "packageFingerprint": 3063160483,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -16550,12 +16525,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "Iceberg-1.16.5-1.0.11.jar"
+        "FileNameOnDisk": "Iceberg-1.16.5-1.0.12.jar"
       },
       "dateInstalled": "2021-09-17T18:18:50.3163976Z",
-      "dateUpdated": "2021-10-02T18:13:49.3718365Z",
-      "dateLastUpdateAttempted": "2021-10-02T18:13:49.3718365Z",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:46:49.9121126Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:46:49.9121126Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -16692,14 +16667,14 @@
       "addonID": 499980,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3476236,
-        "displayName": "selene-1.16.5-1.8.0.jar",
-        "fileName": "selene-1.16.5-1.8.0.jar",
-        "fileDate": "2021-09-29T09:41:36.637Z",
-        "fileLength": 216470,
+        "id": 3488929,
+        "displayName": "selene-1.16.5-1.8.1.jar",
+        "fileName": "selene-1.16.5-1.8.1.jar",
+        "fileDate": "2021-10-12T14:54:11.72Z",
+        "fileLength": 215498,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3476/236/selene-1.16.5-1.8.0.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/929/selene-1.16.5-1.8.1.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -16707,13 +16682,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 243796268,
+            "fingerprint": 2353000031,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "net",
-            "fingerprint": 4007407683,
+            "fingerprint": 4062876514,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -16748,7 +16723,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 1302162671,
+        "packageFingerprint": 3120486036,
         "gameVersion": [
           "1.16.3",
           "1.16.5",
@@ -16764,12 +16739,12 @@
         "gameVersionDateReleased": "2019-08-01T00:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "selene-1.16.5-1.8.0.jar"
+        "FileNameOnDisk": "selene-1.16.5-1.8.1.jar"
       },
       "dateInstalled": "2021-07-10T17:55:07.2513379Z",
-      "dateUpdated": "2021-10-02T18:16:38.2314712Z",
-      "dateLastUpdateAttempted": "2021-10-02T18:16:38.2314712Z",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:47:06.1706022Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:47:06.1706022Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28342,7 +28317,7 @@
       "dateInstalled": "2021-10-11T17:48:01.1730208Z",
       "dateUpdated": "2021-10-11T17:48:01.1900176Z",
       "dateLastUpdateAttempted": "2021-10-11T17:48:01.1900176Z",
-      "status": 3,
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -28351,7 +28326,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 402256,
@@ -28980,14 +28955,14 @@
       "addonID": 400058,
       "gameInstanceID": "965be41e-0584-4b35-9c9a-4efa04c29c1f",
       "installedFile": {
-        "id": 3469627,
-        "displayName": "MythicBotany-1.16.5-1.4.13.jar",
-        "fileName": "MythicBotany-1.16.5-1.4.13.jar",
-        "fileDate": "2021-09-23T19:18:19.013Z",
-        "fileLength": 2118058,
+        "id": 3488247,
+        "displayName": "MythicBotany-1.16.5-1.4.14.jar",
+        "fileName": "MythicBotany-1.16.5-1.4.14.jar",
+        "fileDate": "2021-10-11T20:13:49.087Z",
+        "fileLength": 2117862,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3469/627/MythicBotany-1.16.5-1.4.13.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3488/247/MythicBotany-1.16.5-1.4.14.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
@@ -29008,13 +28983,13 @@
         "modules": [
           {
             "foldername": "META-INF",
-            "fingerprint": 1759770870,
+            "fingerprint": 1427657487,
             "type": 0,
             "invalidFingerprint": false
           },
           {
             "foldername": "mythicbotany",
-            "fingerprint": 3765835484,
+            "fingerprint": 4274417099,
             "type": 0,
             "invalidFingerprint": false
           },
@@ -29049,7 +29024,7 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 914888075,
+        "packageFingerprint": 1541077521,
         "gameVersion": [
           "1.16.5",
           "Forge"
@@ -29063,12 +29038,12 @@
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
         "gameId": 0,
         "isServerPack": false,
-        "FileNameOnDisk": "MythicBotany-1.16.5-1.4.13.jar"
+        "FileNameOnDisk": "MythicBotany-1.16.5-1.4.14.jar"
       },
       "dateInstalled": "2021-07-10T17:55:07.2703386Z",
-      "dateUpdated": "2021-09-24T18:44:37.9352534Z",
-      "dateLastUpdateAttempted": "2021-09-24T18:44:37.9352534Z",
-      "status": 5,
+      "dateUpdated": "2021-10-12T17:46:50.5461155Z",
+      "dateLastUpdateAttempted": "2021-10-12T17:46:50.5461155Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,

@@ -12,6 +12,46 @@ onEvent('recipes', (event) => {
     */
 
     const newRecipes = [
+        {   //Override In-world Upgrades for tiering   
+            output: 'resourcefulbees:t2_hive_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: { tag: 'resourcefulbees:resourceful_honeycomb' },
+                B: { item: 'resourcefulbees:wax'},
+                C: { item: "resourcefulbees:t1_hive_upgrade", }
+            },
+            id: 'resourcefulbees:t2_hive_upgrade'
+        },
+        {   
+            output: 'resourcefulbees:t3_hive_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                B: { item: 'resourcefulbees:wax_block'},
+                C: { item: "resourcefulbees:t2_hive_upgrade"}
+            },
+            id: 'resourcefulbees:t3_hive_upgrade',
+        },
+        {   
+            output: 'resourcefulbees:t4_hive_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
+                C: { item: "resourcefulbees:t3_hive_upgrade"}
+            },
+            id: 'resourcefulbees:t4_hive_upgrade',
+        },
+        {
+            output: 'resourcefulbees:t1_apiary',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: { tag: 'resourcefulbees:resourceful_honeycomb_block' },
+                B: [{ item: 'minecraft:honey_block' }, { tag: 'resourcefulbees:resourceful_honey_block' }],
+                C: { item: 'resourcefulbees:t4_hive_upgrade' }
+            },
+            id: 'resourcefulbees:t1_apiary'
+        },
         {
             // Wasabee Comb Recipes
             output: Item.of('sushigocrafting:rice', 3),
@@ -117,7 +157,7 @@ onEvent('recipes', (event) => {
             id: 'enigmatica:base/minecraft/salmon_combs'
         },
         {
-            output: Item.of('sushigocrafting:tobiko', 3),
+            output: Item.of('sushigocrafting:tobiko', '{Amount:15}'),
             pattern: ['A', 'C', 'B'],
             key: {
                 A: 'resourcefulbees:wasabee_honeycomb',
