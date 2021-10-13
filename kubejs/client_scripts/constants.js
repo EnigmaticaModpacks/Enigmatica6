@@ -495,7 +495,7 @@ const recipesToHide = [
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
     },
     {
-        category: 'botania:mana_pools',
+        category: 'botania:mana_pool',
         recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye']
     },
     {

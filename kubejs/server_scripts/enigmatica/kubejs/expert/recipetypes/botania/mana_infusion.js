@@ -65,6 +65,25 @@ onEvent('recipes', (event) => {
             mana: 35000,
             catalyst: 'architects_palette:moonstone',
             id: 'botania:mana_infusion/mana_pearl'
+        },
+
+        /// Patchouli Safe Removals
+
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: 'botania:mana_powder',
+            count: 1,
+            mana: 10,
+            catalyst: 'architects_palette:moonstone',
+            id: 'botania:mana_infusion/mana_powder_dye'
+        },
+        {
+            input: 'kubejs:altered_recipe_indicator',
+            output: 'botania:mana_powder',
+            count: 1,
+            mana: 10,
+            catalyst: 'architects_palette:moonstone',
+            id: 'botania:mana_infusion/mana_powder_dust'
         }
     ];
 
