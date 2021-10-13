@@ -435,7 +435,7 @@ onEvent('recipes', (event) => {
             duration: 3,
             entity_to_sacrifice: {
                 tag: 'occultism:wild_hunt_sacrifices',
-                display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'occultism:greedy_familiar',
             ritual_dummy: { item: 'occultism:ritual_dummy/familiar_greedy' },
@@ -673,7 +673,7 @@ onEvent('recipes', (event) => {
             duration: 6,
             entity_to_sacrifice: {
                 tag: 'occultism:wild_hunt_sacrifices',
-                display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'atum:pharaoh',
             ritual_dummy: { item: 'kubejs:summon_pharaoh' },

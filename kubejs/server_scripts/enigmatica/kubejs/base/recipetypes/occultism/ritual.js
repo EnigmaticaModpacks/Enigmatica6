@@ -404,7 +404,7 @@ onEvent('recipes', (event) => {
                 duration: 3,
                 entity_to_sacrifice: {
                     tag: 'occultism:wild_hunt_sacrifices',
-                    display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                    display_name: 'ritual.occultism.sacrifice.humans'
                 },
                 entity_to_summon: 'occultism:wild_hunt_wither_skeleton',
                 ritual_dummy: {
