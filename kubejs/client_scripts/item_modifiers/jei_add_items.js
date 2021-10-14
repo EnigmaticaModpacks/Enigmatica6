@@ -85,7 +85,6 @@ onEvent('jei.add.items', (event) => {
         items.push(
             Item.of('resourcefulbees:bee_jar', `{Entity: "resourcefulbees:${type}_bee"}`)
         );
-        console.log(type);
     });
 
     items.forEach((item) => event.add(item));
