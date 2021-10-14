@@ -721,3 +721,17 @@ const materialsToUnify = [
     'spirited',
     'nitro'
 ];
+
+const craftedBees = [
+    'bloody',
+    'elven',
+    'mana',
+    'starry',
+    'terrestrial',
+    'enderslime',
+    'ichor',
+    'skyslime',
+    'cobalt',
+    'industrious',
+    'pcbee'
+];
