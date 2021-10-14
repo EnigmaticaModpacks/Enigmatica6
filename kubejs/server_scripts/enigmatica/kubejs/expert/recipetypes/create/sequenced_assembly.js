@@ -109,6 +109,98 @@ onEvent('recipes', (event) => {
                 }
             ],
             id: 'powah:crafting/capacitor_basic_large'
+        },
+        {
+            input: 'minecraft:paper',
+            outputs: [Item.of('immersiveengineering:cokebrick', 3)],
+            transitionalItem: 'kubejs:coke_brick',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:coke_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:coke_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:coke_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:coke_brick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:coke_brick'
+                }
+            ],
+            id: `${id_prefix}cokebricks`
+        },
+        {
+            input: 'minecraft:paper',
+            outputs: [Item.of('immersiveengineering:blastbrick', 3)],
+            transitionalItem: 'kubejs:blast_brick',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:red_nether_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:coke_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:blast_brick'
+                }
+            ],
+            id: `${id_prefix}blastbricks`
+        },
+        {
+            input: 'kubejs:smoldering_lapis_lazuli_compound',
+            outputs: [Item.of('immersiveengineering:alloybrick', 4)],
+            transitionalItem: 'kubejs:blast_brick',
+            loops: 4,
+            sequence: [
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'kubejs:blast_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'environmental:mud_brick'],
+                    output: 'kubejs:blast_brick'
+                },
+                {
+                    type: 'deploying',
+                    input: ['kubejs:blast_brick', 'buildinggadgets:construction_paste'],
+                    output: 'kubejs:blast_brick'
+                }
+            ],
+            id: `${id_prefix}alloybricks`
         }
     ];
 
@@ -732,13 +824,10 @@ onEvent('recipes', (event) => {
             }
         });
 
-        const re = event.recipes.create
+        event.recipes.create
             .sequenced_assembly(recipe.outputs, recipe.input, sequence)
             .loops(recipe.loops)
-            .transitionalItem(recipe.transitionalItem);
-
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+            .transitionalItem(recipe.transitionalItem)
+            .id(recipe.id);
     });
 });

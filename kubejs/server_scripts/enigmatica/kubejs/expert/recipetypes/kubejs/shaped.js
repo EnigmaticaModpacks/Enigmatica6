@@ -42,6 +42,15 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}basic_lenses_package`
         },
+        {
+            output: Item.of('kubejs:red_nether_brick', 2),
+            pattern: ['AB', 'BA'],
+            key: {
+                A: 'minecraft:nether_brick',
+                B: 'minecraft:nether_wart'
+            },
+            id: `${id_prefix}red_nether_brick`
+        },
 
         // Storage Parts
         {
