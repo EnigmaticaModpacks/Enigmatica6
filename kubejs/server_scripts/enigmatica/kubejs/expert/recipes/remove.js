@@ -39,6 +39,9 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/concrete2',
         'immersiveengineering:mixer/concrete',
         /immersiveengineering:crafting\/plate_/,
+        'immersiveengineering:crafting/cokebrick',
+        'immersiveengineering:crafting/blastbrick',
+        'immersiveengineering:crafting/alloybrick',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -62,6 +65,7 @@ onEvent('recipes', (event) => {
         /powah:crafting\/cable_/,
 
         'quark:building/crafting/candles/candle_basic',
+        'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
 

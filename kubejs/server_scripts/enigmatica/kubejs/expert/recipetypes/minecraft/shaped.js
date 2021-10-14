@@ -92,6 +92,14 @@ onEvent('recipes', (event) => {
                 D: '#forge:rods/wooden'
             },
             id: 'minecraft:smoker'
+        },
+        {
+            output: Item.of('minecraft:red_nether_bricks'),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'kubejs:red_nether_brick'
+            },
+            id: 'minecraft:red_nether_bricks'
         }
     ];
 

@@ -26,7 +26,13 @@ onEvent('item.registry', (event) => {
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
         'spirit_heat_exchanger',
-        'amadron_survey_tools'
+        'amadron_survey_tools',
+        'basalt_powder',
+        'coke_brick_blend',
+        'coke_brick',
+        'blast_brick_blend',
+        'blast_brick',
+        'red_nether_brick'
     ];
 
     const ritualDummies = [

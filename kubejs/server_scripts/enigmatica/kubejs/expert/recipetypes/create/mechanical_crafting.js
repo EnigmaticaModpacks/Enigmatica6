@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
             },
             id: 'astralsorcery:observatory'
         },
-        {
+        /*{
             output: Item.of('immersiveengineering:blastbrick', 9),
             pattern: ['ADA', 'CBC', 'AEA'],
             key: {
@@ -60,7 +60,7 @@ onEvent('recipes', (event) => {
                 E: '#forge:storage_blocks/coal_coke'
             },
             id: 'immersiveengineering:crafting/blastbrick'
-        },
+        },*/
         {
             output: 'refinedstorage:controller',
             pattern: ['ACACA', 'CDBDC', 'AFEFA', 'CDBDC', 'ACACA'],
