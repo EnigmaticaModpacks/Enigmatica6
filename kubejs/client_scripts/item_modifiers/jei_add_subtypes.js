@@ -16,4 +16,6 @@ onEvent('jei.subtypes', (event) => {
     augmentItems.forEach((augmentItem) => {
         event.useNBTKey(augmentItem, 'AugmentData');
     });
+
+    event.useNBTKey('resourcefulbees:bee_jar', 'Entity');
 });
