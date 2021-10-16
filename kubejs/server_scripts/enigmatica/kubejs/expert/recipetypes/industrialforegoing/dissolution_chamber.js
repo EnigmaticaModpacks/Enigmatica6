@@ -4,7 +4,7 @@ onEvent('recipes', (event) => {
     }
 
     const recipes = [
-/*
+        /*
         {
             inputs: [
                 '', // top left
@@ -24,7 +24,7 @@ onEvent('recipes', (event) => {
             outputFluidAmount: 0, // leave at 0 for no fluid
             id: ''
         }
-*/
+        */
         {
             inputs: [
                 'minecraft:redstone',
@@ -43,6 +43,35 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'rftoolsbuilder:shield_block1'
+        },
+        {
+            inputs: [
+                'atum:fertile_soil',
+                'mythicbotany:aquapanthus',
+                'atum:fertile_soil',
+                'minecraft:terracotta',
+                'minecraft:terracotta',
+                'minecraft:terracotta',
+                'minecraft:terracotta',
+                'minecraft:terracotta'
+            ],
+            inputFluid: 'industrialforegoing:sewage',
+            inputFluidAmount: 8000,
+            processingTime: 600,
+            outputItem: { item: 'botanypots:botany_pot', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'botanypots:crafting/botany_pot'
+        },
+        {
+            inputs: ['botanypots:botany_pot', 'ars_nouveau:sylph_charm', 'naturesaura:grated_chute'],
+            inputFluid: 'materialis:molten_fairy',
+            inputFluidAmount: 1296,
+            processingTime: 600,
+            outputItem: { item: 'botanypots:hopper_botany_pot', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'botanypots:crafting/hopper_botany_pot'
         }
     ];
 

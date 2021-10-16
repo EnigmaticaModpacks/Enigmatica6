@@ -43,6 +43,15 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/blastbrick',
         'immersiveengineering:crafting/alloybrick',
 
+        'integrateddynamics:crafting/cable',
+        'integrateddynamics:crafting/cable_rotated',
+        'integrateddynamics:crafting/energy_battery',
+        'integrateddynamics:crafting/mechanical_drying_basin',
+        'integrateddynamics:crafting/mechanical_squeezer',
+        'integrateddynamics:crafting/drying_basin',
+        'integrateddynamics:crafting/squeezer',
+        'integrateddynamics:crafting/coal_generator',
+
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
@@ -188,6 +197,10 @@ onEvent('recipes', (event) => {
 
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'immersiveengineering' });
+    event.remove({ type: 'integrateddynamics:drying_basin' });
+    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
+    event.remove({ type: 'integrateddynamics:squeezer' });
+    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);
