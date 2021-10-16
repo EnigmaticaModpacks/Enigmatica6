@@ -634,11 +634,14 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
+
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
     'simplefarming:noodles',
-    'simplefarming:chocolate'
+    'simplefarming:chocolate',
+
+    'storagedrawers:conversion_upgrade'
 ];
 
 const materialsToUnify = [
