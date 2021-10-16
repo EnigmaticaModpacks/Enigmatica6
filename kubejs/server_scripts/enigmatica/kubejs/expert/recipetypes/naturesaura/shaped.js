@@ -108,6 +108,16 @@ onEvent('recipes', (event) => {
                 C: '#forge:ingots/infused_iron'
             },
             id: 'naturesaura:placer'
+        },
+        {
+            output: 'naturesaura:spring',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: '#upgrade_aquatic:coralstone/infused',
+                B: Item.of('minecraft:water_bucket').enchant('minecraft:infinity', 1),
+                C: 'naturesaura:token_euphoria'
+            },
+            id: 'naturesaura:spring'
         }
     ];
 
