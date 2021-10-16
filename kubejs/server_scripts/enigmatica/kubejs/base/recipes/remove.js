@@ -44,8 +44,11 @@ onEvent('recipes', (event) => {
 
         'morevanillalib:obsidian_shard',
 
-        'simplefarming:raw_bacon',
         'powah:uraninite',
+
+        'simplefarming:raw_bacon',
+
+        'storagedrawers:conversion_upgrade',
 
         'thermal:bamboo_block'
     ];
