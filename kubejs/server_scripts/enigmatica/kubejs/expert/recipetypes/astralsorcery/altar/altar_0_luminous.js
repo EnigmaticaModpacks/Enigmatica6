@@ -6,10 +6,10 @@ onEvent('recipes', (event) => {
     altar_type: 0
     max_starlight: 1000 
     */
-
     if (global.isExpertMode == false) {
         return;
     }
+
     const id_prefix = 'enigmatica:expert/astralsorcery/altar/';
     const recipes = [
         /// Luminous Crafting Table Recipes
@@ -105,12 +105,7 @@ onEvent('recipes', (event) => {
                 A: { item: 'botania:livingrock' },
                 B: { item: 'minecraft:conduit' },
                 C: { tag: 'forge:ingots/infused_iron' },
-                D: {
-                    type: 'forge:nbt',
-                    item: 'naturesaura:aura_cache',
-                    count: 1,
-                    nbt: '{aura:400000}'
-                }
+                D: aura_cache_astral_recipes
             },
             altar_type: 0,
             duration: 100,
