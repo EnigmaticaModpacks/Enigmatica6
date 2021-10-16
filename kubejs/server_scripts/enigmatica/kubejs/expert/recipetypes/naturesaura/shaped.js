@@ -111,10 +111,13 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'naturesaura:spring',
-            pattern: ['AAA', 'BCB', 'AAA'],
+            pattern: ['ACA', 'ABA', 'AAA'],
             key: {
                 A: '#upgrade_aquatic:coralstone/infused',
-                B: Item.of('minecraft:water_bucket').enchant('minecraft:infinity', 1),
+                B: Item.of('minecraft:water_bucket', '{RepairCost:0,display:{Name:\'{"text":"#MLG-YOLO"}\'}}').enchant(
+                    'minecraft:infinity',
+                    1
+                ),
                 C: 'naturesaura:token_euphoria'
             },
             id: 'naturesaura:spring'
