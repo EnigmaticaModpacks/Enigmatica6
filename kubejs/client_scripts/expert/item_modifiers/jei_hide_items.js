@@ -5,7 +5,7 @@ onEvent('jei.hide.items', (event) => {
     let items = [
         'darkutils:rune_damage_player',
         /darkutils:export_plate/,
-        'integrateddynamics:energy_battery',
+        /integrateddynamics:energy_battery/,
         'integrateddynamics:mechanical_squeezer',
         'integrateddynamics:mechanical_drying_basin',
         'integrateddynamics:squeezer',
