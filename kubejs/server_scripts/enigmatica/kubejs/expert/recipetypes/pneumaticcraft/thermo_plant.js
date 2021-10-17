@@ -99,6 +99,22 @@ onEvent('recipes', (event) => {
             exothermic: false,
             temperature: { min_temp: 1273 },
             id: `${id_prefix}chorus_glass`
+        },
+        {
+            type: 'pneumaticcraft:thermo_plant',
+            item_input: { item: 'minecraft:popped_chorus_fruit' },
+            fluid_output: { fluid: 'integrateddynamics:liquid_chorus', amount: 125 },
+            pressure: 3.0,
+            exothermic: false,
+            id: `${id_prefix}liquid_chorus_from_chorus_fruit`
+        },
+        {
+            type: 'pneumaticcraft:thermo_plant',
+            item_input: { item: 'integrateddynamics:proto_chorus' },
+            fluid_output: { fluid: 'integrateddynamics:liquid_chorus', amount: 125 },
+            pressure: 3.0,
+            exothermic: false,
+            id: `${id_prefix}liquid_chorus_from_proto_chorus`
         }
     ];
 
