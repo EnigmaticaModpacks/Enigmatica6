@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:snowball', count: 16 },
                 { item: 'quark:bottled_cloud', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 1, return_chance: 0.75 }
+                { tag: 'forge:dusts/fluorite', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
