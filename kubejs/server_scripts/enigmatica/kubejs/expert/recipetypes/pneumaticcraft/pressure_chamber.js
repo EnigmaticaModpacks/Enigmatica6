@@ -174,6 +174,26 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             results: [{ item: 'refinedstorage:raw_advanced_processor', count: 1 }],
             id: 'refinedstorage:raw_advanced_processor'
+        },
+        {
+            inputs: [
+                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'refinedstorage:construction_core', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'integrateddynamics:variable_transformer_output', count: 1 }],
+            id: `${id_prefix}variable_transformer_output`
+        },
+        {
+            inputs: [
+                { item: 'integrateddynamics:variable', count: 1 },
+                { item: 'refinedstorage:destruction_core', count: 1 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 2.0,
+            results: [{ item: 'integrateddynamics:variable_transformer_input', count: 1 }],
+            id: `${id_prefix}variable_transformer_input`
         }
     ];
 

@@ -852,7 +852,7 @@ onEvent('recipes', (event) => {
             ingredients: [
                 { tag: 'forge:gems/mana_diamond' },
                 { item: 'botania:bifrost_perm' },
-                { item: 'betterendforge:eternal_crystal' },
+                { item: 'mekanism:teleportation_core' },
                 { item: 'botania:bifrost_perm' },
                 { item: 'integrateddynamics:crystalized_menril_chunk' },
                 { item: 'integrateddynamics:crystalized_menril_chunk' },

@@ -77,6 +77,28 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             speed: 0.8,
             id: 'pneumaticcraft:thermo_plant/upgrade_matrix'
+        },
+        {
+            type: 'pneumaticcraft:thermo_plant',
+            item_input: { item: 'atum:crystal_glass' },
+            item_output: { item: 'integratedterminals:menril_glass' },
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:menril_resin', amount: 1000 },
+            pressure: 4.0,
+            speed: 0.5,
+            exothermic: false,
+            temperature: { min_temp: 1273 },
+            id: `${id_prefix}menril_glass`
+        },
+        {
+            type: 'pneumaticcraft:thermo_plant',
+            item_input: { item: 'atum:crystal_glass' },
+            item_output: { item: 'integratedterminals:chorus_glass' },
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:liquid_chorus', amount: 1000 },
+            pressure: 4.0,
+            speed: 0.5,
+            exothermic: false,
+            temperature: { min_temp: 1273 },
+            id: `${id_prefix}chorus_glass`
         }
     ];
 
