@@ -239,6 +239,22 @@ onEvent('recipes', (event) => {
                 E: 'ars_nouveau:carbuncle_charm'
             },
             id: 'create:mechanical_crafting/flywheel'
+        },
+        {
+            output: 'integrateddynamics:logic_programmer',
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CHIHC', 'ABBBA'],
+            key: {
+                A: 'pneumaticcraft:logistics_core',
+                B: 'integrateddynamics:crystalized_menril_block',
+                C: 'integrateddynamics:menril_wood',
+                D: 'extrastorage:neural_processor',
+                E: '#forge:circuits/basic',
+                F: 'pneumaticcraft:smart_chest',
+                G: 'refinedstorage:machine_casing',
+                H: 'pneumaticcraft:upgrade_matrix',
+                I: 'pneumaticcraft:remote'
+            },
+            id: 'integrateddynamics:crafting/logic_programmer'
         }
     ];
 

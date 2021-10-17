@@ -51,6 +51,7 @@ onEvent('recipes', (event) => {
         'integrateddynamics:crafting/drying_basin',
         'integrateddynamics:crafting/squeezer',
         'integrateddynamics:crafting/coal_generator',
+        'integrateddynamics:crafting/logic_director',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
