@@ -842,6 +842,29 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'mythicbotany:mana_collector' },
             id: `${id_prefix}mana_collector`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            ritual_dummy: { item: 'kubejs:craft_logic_director' },
+            ingredients: [
+                { tag: 'forge:gems/mana_diamond' },
+                { item: 'botania:bifrost_perm' },
+                { item: 'mekanism:teleportation_core' },
+                { item: 'botania:bifrost_perm' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' }
+            ],
+            result: { item: 'integrateddynamics:logic_director' },
+            id: `${id_prefix}logic_director`
         }
     ];
 
