@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-    const id_prefix = 'enigmatica:base/naturesaura/altar/';
+    const id_prefix = 'enigmatica:expert/naturesaura/altar/';
     const recipes = [
         {
             input: 'architects_palette:sunmetal_brick',

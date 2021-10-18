@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isNormalMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:normal/pneumaticcraft/heat_frame_cooling/';
     recipes = [
         {
             input: { type: 'pneumaticcraft:fluid', fluid: 'integrateddynamics:menril_resin', amount: 1000 },
