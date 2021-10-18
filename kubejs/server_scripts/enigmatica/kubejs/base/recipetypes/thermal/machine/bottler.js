@@ -1,34 +1,29 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/thermal/bottler/';
     const recipes = [
         {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('minecraft:milk', 250),
-            output: 'farmersdelight:milk_bottle'
+            output: 'farmersdelight:milk_bottle',
+            id: `${id_prefix}milk_bottle`
         },
         {
             input: 'farmersdelight:milk_bottle',
             fluid: Fluid.of('create:chocolate', 250),
-            output: 'farmersdelight:hot_cocoa'
+            output: 'farmersdelight:hot_cocoa',
+            id: `${id_prefix}hot_cocoa`
         },
         {
             input: 'minecraft:glass_bottle',
             fluid: Fluid.of('pneumaticcraft:memory_essence', 250),
-            output: 'minecraft:experience_bottle'
+            output: 'minecraft:experience_bottle',
+            id: `${id_prefix}experience_bottle`
         },
         {
             input: 'buildinggadgets:construction_block_powder',
             fluid: Fluid.of('minecraft:water', 1000),
-            output: 'buildinggadgets:construction_block_dense'
-        },
-        {
-            input: Ingredient.of('#forge:glass/colorless'),
-            fluid: Fluid.of('integrateddynamics:menril_resin', 1000),
-            output: 'integratedterminals:menril_glass'
-        },
-        {
-            input: Ingredient.of('#forge:glass/colorless'),
-            fluid: Fluid.of('integrateddynamics:liquid_chorus', 1000),
-            output: 'integratedterminals:chorus_glass'
+            output: 'buildinggadgets:construction_block_dense',
+            id: `${id_prefix}construction_block_dense`
         }
     ];
 
@@ -45,9 +40,6 @@ onEvent('recipes', (event) => {
     });
 
     recipes.forEach((recipe) => {
-        const re = event.recipes.thermal.bottler(recipe.output, [recipe.fluid, recipe.input]);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.recipes.thermal.bottler(recipe.output, [recipe.fluid, recipe.input]).id(recipe.id);
     });
 });

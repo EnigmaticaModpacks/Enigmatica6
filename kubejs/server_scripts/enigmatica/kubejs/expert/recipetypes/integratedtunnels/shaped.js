@@ -6,12 +6,36 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: Item.of('integratedtunnels:part_interface_energy', 2),
-            pattern: ['ABA', 'AAA'],
+            pattern: ['ABA', 'CDC'],
             key: {
-                A: 'integrateddynamics:crystalized_menril_chunk',
-                B: 'powah:capacitor_blazing'
+                A: 'integrateddynamics:menril_wood',
+                B: 'powah:capacitor_blazing',
+                C: 'integratedterminals:menril_glass',
+                D: 'pneumaticcraft:logistics_core'
             },
             id: 'integratedtunnels:crafting/part_interface_energy'
+        },
+        {
+            output: Item.of('integratedtunnels:part_interface_item', 2),
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'integrateddynamics:menril_wood',
+                B: 'pneumaticcraft:reinforced_chest',
+                C: 'integratedterminals:menril_glass',
+                D: 'pneumaticcraft:logistics_core'
+            },
+            id: 'integratedtunnels:crafting/part_interface_item'
+        },
+        {
+            output: Item.of('integratedtunnels:part_interface_fluid', 2),
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'integrateddynamics:menril_wood',
+                B: 'pneumaticcraft:large_tank',
+                C: 'integratedterminals:menril_glass',
+                D: 'pneumaticcraft:logistics_core'
+            },
+            id: 'integratedtunnels:crafting/part_interface_fluid'
         }
     ];
 
