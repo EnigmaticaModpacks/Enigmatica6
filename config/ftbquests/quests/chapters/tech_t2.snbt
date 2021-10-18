@@ -40,10 +40,7 @@
 		{
 			x: 0.0d
 			y: 2.0d
-			dependencies: [
-				"634ED58B923E07FD"
-				"7AC8931E4F18A8A6"
-			]
+			dependencies: ["7AC8931E4F18A8A6"]
 			id: "0FF412352C4AA995"
 			tasks: [{
 				id: "5CDC032E69DE6348"
@@ -53,7 +50,7 @@
 			}]
 		}
 		{
-			x: 0.5d
+			x: 0.0d
 			y: 1.0d
 			dependencies: ["06F4A47216226927"]
 			id: "7AC8931E4F18A8A6"
@@ -62,18 +59,6 @@
 				type: "item"
 				item: "minecraft:nether_wart"
 				count: 24L
-			}]
-		}
-		{
-			x: -0.5d
-			y: 1.0d
-			dependencies: ["06F4A47216226927"]
-			id: "634ED58B923E07FD"
-			tasks: [{
-				id: "5E07982FDCCE6FB7"
-				type: "item"
-				item: "thermal:fire_tnt"
-				count: 3L
 			}]
 		}
 		{
@@ -130,7 +115,10 @@
 		{
 			x: 0.0d
 			y: 4.0d
-			dependencies: ["51C4B771C756A8DD"]
+			dependencies: [
+				"51C4B771C756A8DD"
+				"640AF7C1C65218DD"
+			]
 			id: "059321636D20E33A"
 			tasks: [{
 				id: "507E9B0D33201C3D"
@@ -185,6 +173,265 @@
 				id: "2B67FC4FC12C5684"
 				type: "item"
 				item: "immersiveengineering:concrete_leaded"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 6.5d
+			shape: "octagon"
+			dependencies: ["4B7BDCCE4535A4F9"]
+			id: "7FCD85A3BA758D20"
+			tasks: [{
+				id: "12422A13BAA52C9E"
+				type: "item"
+				item: "mekanism:basic_control_circuit"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 5.5d
+			dependencies: [
+				"37CC74C655BCE0C0"
+				"5C5E591EFA92C600"
+			]
+			id: "4B7BDCCE4535A4F9"
+			tasks: [
+				{
+					id: "70256FD4A3182AA1"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "7111F86DD237301D"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_drill_laser"
+				}
+			]
+		}
+		{
+			x: 4.5d
+			y: 2.5d
+			dependencies: ["6EC89B2EB48331A5"]
+			id: "640AF7C1C65218DD"
+			tasks: [{
+				id: "4AC6C6F032DAAE12"
+				type: "item"
+				item: "pneumaticcraft:thermopneumatic_processing_plant"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			description: ["Expert mode disables the solid fuel compressors entirely, relying instead on liquid fueled compressors.  "]
+			dependencies: ["05EE7B43E67B250D"]
+			id: "6EC89B2EB48331A5"
+			tasks: [{
+				id: "0FCB22D21C639EA2"
+				type: "item"
+				item: "pneumaticcraft:liquid_compressor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 3.5d
+			dependencies: ["601203BF957994C2"]
+			id: "5258B21FEBF3E222"
+			tasks: [{
+				id: "77060D75C44D7CC2"
+				type: "item"
+				item: "pneumaticcraft:plastic"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 4.5d
+			dependencies: [
+				"5258B21FEBF3E222"
+				"4214CE273DD3B183"
+			]
+			id: "37CC74C655BCE0C0"
+			tasks: [{
+				id: "789B1A4C9CE21200"
+				type: "item"
+				item: "pneumaticcraft:printed_circuit_board"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 7.5d
+			shape: "octagon"
+			dependencies: [
+				"7FCD85A3BA758D20"
+				"68BF910C0CDA8E36"
+			]
+			id: "778A62D0339B4E5D"
+			tasks: [{
+				id: "72A0839DF079A1BB"
+				type: "item"
+				item: "refinedstorage:1k_storage_part"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.5d
+			dependencies: ["6EC89B2EB48331A5"]
+			id: "601203BF957994C2"
+			tasks: [
+				{
+					id: "007E6DD90C5F3F4C"
+					type: "item"
+					item: "pneumaticcraft:refinery"
+				}
+				{
+					id: "715292E89B95375D"
+					type: "item"
+					item: "pneumaticcraft:refinery_output"
+					count: 4L
+				}
+			]
+		}
+		{
+			title: "Liquid Fuel"
+			x: 5.0d
+			y: 1.0d
+			dependencies: ["67F7E4C19E39F9F3"]
+			id: "05EE7B43E67B250D"
+			tasks: [{
+				id: "4F15AA6928179F6E"
+				type: "item"
+				title: "Liquid Fuel"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "thermal:tree_oil_bucket"
+								Count: 1b
+							}
+							{
+								id: "thermal:refined_fuel_bucket"
+								Count: 1b
+							}
+						]
+					}
+				}
+			}]
+		}
+		{
+			x: 4.0d
+			y: 4.5d
+			dependencies: ["211A5BD7B3F7EDE7"]
+			id: "4214CE273DD3B183"
+			tasks: [{
+				id: "42384EBFD1848ACD"
+				type: "item"
+				item: "refinedstorage:basic_processor"
+			}]
+		}
+		{
+			x: 4.0d
+			y: 3.5d
+			dependencies: ["2357CCF3A0758B0C"]
+			id: "211A5BD7B3F7EDE7"
+			tasks: [
+				{
+					id: "5E87DC4597B5F2CE"
+					type: "item"
+					item: "thermal:press_coin_die"
+				}
+				{
+					id: "4DD2851FB099C46D"
+					type: "item"
+					item: "thermal:machine_press"
+				}
+			]
+		}
+		{
+			x: 7.5d
+			y: 2.5d
+			description: [""]
+			dependencies: ["508E396542F84E94"]
+			id: "4CE0C64A78D2A669"
+			tasks: [{
+				id: "78615BD54248916F"
+				type: "item"
+				item: "powah:energizing_orb"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 4.5d
+			dependencies: ["54DA0B6FC5FE6F1A"]
+			id: "5C5E591EFA92C600"
+			tasks: [{
+				id: "253F493C0B2B2D3B"
+				type: "item"
+				item: "powah:energizing_rod_basic"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 5.5d
+			dependencies: ["7773B233487FEBD2"]
+			id: "174A3B072A1CEFE5"
+			tasks: [{
+				id: "39703E840E7CE98F"
+				type: "item"
+				item: "refinedstorage:controller"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 4.5d
+			dependencies: ["211A5BD7B3F7EDE7"]
+			id: "7773B233487FEBD2"
+			tasks: [{
+				id: "51C37065B81DA404"
+				type: "item"
+				item: "refinedstorage:advanced_processor"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 7.5d
+			dependencies: ["56BA85DE7E25AAFB"]
+			id: "68BF910C0CDA8E36"
+			tasks: [{
+				id: "607354BCF2376657"
+				type: "item"
+				item: "kubejs:dimensional_storage_crystal"
+			}]
+		}
+		{
+			x: 4.5d
+			y: 6.5d
+			dependencies: ["464450BE4AAE26B0"]
+			id: "56BA85DE7E25AAFB"
+			tasks: [{
+				id: "0158E188FAC430EC"
+				type: "item"
+				item: {
+					id: "occultism:dimensional_matrix"
+					Count: 1b
+					tag: {
+						spiritName: "Jagarcd"
+					}
+				}
+			}]
+		}
+		{
+			x: 7.5d
+			y: 3.5d
+			dependencies: [
+				"5258B21FEBF3E222"
+				"4CE0C64A78D2A669"
+			]
+			id: "54DA0B6FC5FE6F1A"
+			tasks: [{
+				id: "585089F444DD3061"
+				type: "item"
+				item: "powah:capacitor_basic_large"
 			}]
 		}
 	]
