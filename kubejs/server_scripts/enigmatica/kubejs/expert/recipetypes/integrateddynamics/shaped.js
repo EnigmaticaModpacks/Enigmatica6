@@ -25,6 +25,17 @@ onEvent('recipes', (event) => {
                 F: 'pneumaticcraft:memory_stick'
             },
             id: 'integrateddynamics:crafting/variablestore'
+        },
+        {
+            output: 'integrateddynamics:part_connector_mono_directional',
+            pattern: [' A ', 'CDC', ' B '],
+            key: {
+                A: 'integrateddynamics:variable_transformer_output',
+                B: 'integrateddynamics:variable_transformer_input',
+                C: 'integrateddynamics:cable',
+                D: 'botania:corporea_spark'
+            },
+            id: 'integrateddynamics:crafting/part_connector_mono_directional'
         }
     ];
 

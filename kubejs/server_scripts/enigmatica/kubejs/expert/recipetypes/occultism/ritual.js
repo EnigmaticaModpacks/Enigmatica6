@@ -854,14 +854,14 @@ onEvent('recipes', (event) => {
                 { item: 'botania:bifrost_perm' },
                 { item: 'mekanism:teleportation_core' },
                 { item: 'botania:bifrost_perm' },
-                { item: 'integrateddynamics:crystalized_menril_chunk' },
-                { item: 'integrateddynamics:crystalized_menril_chunk' },
-                { item: 'integrateddynamics:crystalized_menril_chunk' },
-                { item: 'integrateddynamics:crystalized_menril_chunk' },
-                { item: 'integrateddynamics:crystalized_chorus_chunk' },
-                { item: 'integrateddynamics:crystalized_chorus_chunk' },
-                { item: 'integrateddynamics:crystalized_chorus_chunk' },
-                { item: 'integrateddynamics:crystalized_chorus_chunk' }
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' }
             ],
             result: { item: 'integrateddynamics:logic_director' },
             id: `${id_prefix}logic_director`
