@@ -125,14 +125,20 @@ onEvent('fluid.registry', (event) => {
             id: 'molten_spirited',
             texture: '0x86c52d',
             display: 'Molten Spirited Crystal'
+        },
+        {
+            type: 'thick',
+            id: 'pink_ender_slime',
+            texture: '0xa504d1',
+            display: 'Molten Pink Enderslime'
         }
     ];
 
     generalFluids.forEach((fluid) => {
         if (fluid.type == 'thick') {
-            event.create(fluid.id).textureThick(fluid.texture).bucketColor(fluid.texture); //.displayName(fluid.display);
+            event.create(fluid.id).textureThick(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
         } else if (fluid.type == 'thin') {
-            event.create(fluid.id).textureThin(fluid.texture).bucketColor(fluid.texture); //.displayName(fluid.display);
+            event.create(fluid.id).textureThin(fluid.texture).bucketColor(fluid.texture).displayName(fluid.display);
         } /*
         else if (fluid.type == 'custom') {
             event.create(fluid.id).displayName(fluid.display).textureStill(fluid.still).textureFlowing(fluid.flowing).bucketColor(fluid.color)
