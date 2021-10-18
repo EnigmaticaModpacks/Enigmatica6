@@ -68,7 +68,11 @@
 			x: -1.5d
 			y: 4.0d
 			subtitle: "Keep JUMPING!"
-			description: ["This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."]
+			description: [
+				"This should be the first block that you make from ID, along with the Drying Basin. This block creates Menril Resin from Menril Logs. However, someone or something needs to jump on the top of it numerous times in order to work the machine. Apply a redstone signal to reset the Squeezer for the next item."
+				""
+				"Known issue: You cannot use the Squeezer if you have a Dank in your inventory."
+			]
 			dependencies: ["42D9F6E36CF8F06E"]
 			id: "4666E2A199FC676E"
 			tasks: [{
