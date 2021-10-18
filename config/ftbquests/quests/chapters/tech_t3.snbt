@@ -116,11 +116,19 @@
 			y: 3.5d
 			dependencies: ["206F4AA9A9278D8D"]
 			id: "412F3A311A7CFCB3"
-			tasks: [{
-				id: "0536AAB566704AC9"
-				type: "item"
-				item: "industrialforegoing:laser_drill"
-			}]
+			tasks: [
+				{
+					id: "0536AAB566704AC9"
+					type: "item"
+					item: "industrialforegoing:laser_drill"
+					count: 4L
+				}
+				{
+					id: "5703696A09A152C1"
+					type: "item"
+					item: "industrialforegoing:ore_laser_base"
+				}
+			]
 		}
 	]
 }
