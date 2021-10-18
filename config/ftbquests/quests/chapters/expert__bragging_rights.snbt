@@ -12,14 +12,50 @@
 			x: 0.0d
 			y: 0.0d
 			shape: "pentagon"
-			description: ["Obtaining the Creative Crate is the ultimate goal - Complete this quest and you complete the modpack!"]
+			description: ["Obtaining the Creative Worldshaper is the ultimate goal - Complete this quest and you complete the modpack!"]
 			dependencies: ["7C0943FD8F8A0D69"]
 			size: 2.0d
 			id: "6D3FE88DB30DEE00"
 			tasks: [{
 				id: "446147A7DA834368"
 				type: "item"
-				item: "create:creative_crate"
+				item: "create:handheld_worldshaper"
+			}]
+			rewards: [{
+				id: "3A52EC072B3445A2"
+				type: "item"
+				item: {
+					id: "trofers:large_trophy"
+					Count: 1b
+					tag: {
+						BlockEntityTag: {
+							Item: {
+								id: "kubejs:disabled_recipe_indicator"
+								Count: 1b
+							}
+							DisplayScale: 1.0f
+							Animation: "fixed"
+							Colors: {
+								Bottom: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Top: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+								Middle: {
+									Red: 249
+									Blue: 254
+									Green: 255
+								}
+							}
+							Name: "Enigmatica 6: Expert Mode"
+						}
+					}
+				}
 			}]
 		}
 		{
