@@ -947,7 +947,7 @@
 					type: "advancement"
 					title: "Summon Possessed Endermite"
 					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:possess_endermite"
+					advancement: "occultism:occultism/possess_endermite"
 					criterion: ""
 				}
 				{
@@ -994,7 +994,7 @@
 					type: "advancement"
 					title: "Summon Possessed Skeleton"
 					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:possess_skeleton"
+					advancement: "occultism:occultism/possess_skeleton"
 					criterion: ""
 				}
 				{
@@ -1035,7 +1035,7 @@
 					type: "advancement"
 					title: "Summon Possessed Enderman"
 					icon: "occultism:book_of_binding_foliot"
-					advancement: "occultism:possess_enderman"
+					advancement: "occultism:occultism/possess_enderman"
 					criterion: ""
 				}
 				{
@@ -1317,7 +1317,7 @@
 					type: "advancement"
 					title: "Summon a Djinni to Clear the Skies!"
 					icon: "minecraft:sunflower"
-					advancement: "occultism:summon_djinni_clear_weather"
+					advancement: "occultism:occultism/summon_djinni_clear_weather"
 					criterion: ""
 				}
 				{
@@ -1375,7 +1375,7 @@
 					type: "advancement"
 					title: "Summon Djinni to Make it Nighttime"
 					icon: "minecraft:clock"
-					advancement: "occultism:summon_djinni_night_time"
+					advancement: "occultism:occultism/summon_djinni_night_time"
 					criterion: ""
 				}
 				{
@@ -1469,7 +1469,7 @@
 				type: "advancement"
 				title: "Summon The Wild Hunt"
 				icon: "minecraft:wither_skeleton_skull"
-				advancement: "occultism:summon_wild_hunt"
+				advancement: "occultism:occultism/summon_wild_hunt"
 				criterion: ""
 			}]
 			rewards: [
@@ -1537,7 +1537,7 @@
 				type: "advancement"
 				title: "Summon Otherworld Sapling Trader"
 				icon: "occultism:otherworld_sapling"
-				advancement: "occultism:summon_foliot_sapling_trader"
+				advancement: "occultism:occultism/summon_foliot_sapling_trader"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1580,7 +1580,7 @@
 							spiritName: "Azurmiriarc"
 						}
 					}
-					advancement: "occultism:summon_foliot_lumberjack"
+					advancement: "occultism:occultism/summon_foliot_lumberjack"
 					criterion: ""
 				}
 				{
@@ -1621,7 +1621,7 @@
 				type: "advancement"
 				title: "Summon Foliot Transporter"
 				icon: "minecraft:chest_minecart"
-				advancement: "occultism:summon_foliot_transport_items"
+				advancement: "occultism:occultism/summon_foliot_transport_items"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1653,7 +1653,7 @@
 					id: "0000000000000E72"
 					type: "advancement"
 					title: "Summon Djinni Machine Operator"
-					advancement: "occultism:summon_djinni_manage_machine"
+					advancement: "occultism:occultism/summon_djinni_manage_machine"
 					criterion: ""
 				}
 				{
@@ -1700,7 +1700,7 @@
 				type: "advancement"
 				title: "Summon Drikwing Familiar"
 				icon: "minecraft:feather"
-				advancement: "occultism:familiar_otherworld_bird"
+				advancement: "occultism:occultism/familiar_otherworld_bird"
 				criterion: ""
 			}]
 			rewards: [
@@ -1773,7 +1773,7 @@
 				type: "advancement"
 				title: "Summon Djinni Crusher"
 				icon: "minecraft:gold_ore"
-				advancement: "occultism:summon_djinni_crusher"
+				advancement: "occultism:occultism/summon_djinni_crusher"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1798,7 +1798,7 @@
 				type: "advancement"
 				title: "Summon Afrit Crusher"
 				icon: "minecraft:diamond_ore"
-				advancement: "occultism:summon_afrit_crusher"
+				advancement: "occultism:occultism/summon_afrit_crusher"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1824,7 +1824,7 @@
 				type: "advancement"
 				title: "Summon Marid Crusher"
 				icon: "occultism:iesnium_ore"
-				advancement: "occultism:summon_marid_crusher"
+				advancement: "occultism:occultism/summon_marid_crusher"
 				criterion: ""
 			}]
 			rewards: [
@@ -1864,7 +1864,7 @@
 				type: "advancement"
 				title: "Summon Foliiot Janitor"
 				icon: "occultism:brush"
-				advancement: "occultism:summon_foliot_cleaner"
+				advancement: "occultism:occultism/summon_foliot_cleaner"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1894,7 +1894,7 @@
 				type: "advancement"
 				title: "Summon Greedy Familiar"
 				icon: "artifacts:universal_attractor"
-				advancement: "occultism:familiar_greedy"
+				advancement: "occultism:occultism/familiar_greedy"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1919,7 +1919,7 @@
 				type: "advancement"
 				title: "Summon Bat Familiar"
 				icon: "artifacts:night_vision_goggles"
-				advancement: "occultism:familiar_bat"
+				advancement: "occultism:occultism/familiar_bat"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1949,7 +1949,7 @@
 						Damage: 0
 					}
 				}
-				advancement: "occultism:familiar_deer"
+				advancement: "occultism:occultism/familiar_deer"
 				criterion: ""
 			}]
 			rewards: [{
@@ -1974,7 +1974,7 @@
 				type: "advancement"
 				title: "Summon Cthulu Familiar"
 				icon: "losttrinkets:octopus_leg"
-				advancement: "occultism:familiar_cthulhu"
+				advancement: "occultism:occultism/familiar_cthulhu"
 				criterion: ""
 			}]
 			rewards: [{
