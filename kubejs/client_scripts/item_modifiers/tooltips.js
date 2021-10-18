@@ -136,7 +136,12 @@ onEvent('item.tooltip', (event) => {
             text: [Text.of('Extremely hot!').darkRed()]
         },
         {
-            items: ['resourcefulbees:t1_beehive', 'resourcefulbees:t2_beehive', 'resourcefulbees:t3_beehive', 'resourcefulbees:t4_beehive'],
+            items: [
+                'resourcefulbees:t1_beehive',
+                'resourcefulbees:t2_beehive',
+                'resourcefulbees:t3_beehive',
+                'resourcefulbees:t4_beehive'
+            ],
             text: [
                 Text.of(`Tiered Beehives have been depreciated.`).red(),
                 Text.of(`Use the Hive Upgrade items on nests found in the world instead.`).red(),

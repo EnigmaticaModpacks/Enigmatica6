@@ -43,6 +43,8 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/blastbrick',
         'immersiveengineering:crafting/alloybrick',
 
+        'industrialforegoing:mob_slaughter_factory',
+
         'integrateddynamics:crafting/cable',
         'integrateddynamics:crafting/cable_rotated',
         'integrateddynamics:crafting/energy_battery',
