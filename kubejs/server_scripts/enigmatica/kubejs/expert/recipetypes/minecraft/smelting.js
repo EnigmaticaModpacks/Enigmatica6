@@ -15,6 +15,12 @@ onEvent('recipes', (event) => {
             output: 'kubejs:blast_brick',
             xp: 0.5,
             id: `${id_prefix}blast_brick`
+        },
+        {
+            input: 'kubejs:ground_meat',
+            output: 'kubejs:meat_ingot',
+            xp: 0.5,
+            id: `${id_prefix}meat_ingot`
         }
     ];
 
