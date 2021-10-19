@@ -31,6 +31,19 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}magicfeather_tech`
         },
         {
+            output: 'magicfeather:magicfeather',
+            pattern: ['CEC', 'BDF', 'AEA'],
+            key: {
+                A: 'atum:nebu_ingot',
+                B: 'integrateddynamics:variable_transformer_output',
+                C: 'create:refined_radiance',
+                D: 'byg:leaf_pile',
+                E: 'astralsorcery:aquamarine',
+                F: 'integrateddynamics:variable_transformer_input'
+            },
+            id: `${id_prefix}magicfeather_shiny`
+        },
+        {
             output: 'losttrinkets:magical_feathers',
             pattern: ['FAF', 'EBE', 'CDC'],
             key: {
