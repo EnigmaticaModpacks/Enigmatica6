@@ -1,9 +1,8 @@
 onEvent('recipes', (event) => {
-    const id_prefix = 'enigmatica:expert/thermal/bottler/';
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/thermal/bottler/';
     const recipes = [
         {
             input: 'minecraft:glass_bottle',

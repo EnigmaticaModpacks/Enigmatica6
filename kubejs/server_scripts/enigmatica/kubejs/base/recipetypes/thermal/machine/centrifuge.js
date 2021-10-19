@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/thermal/centrifuge/';
     const recipes = [
         {
             input: '#forge:ores/bitumen',
@@ -6,14 +7,12 @@ onEvent('recipes', (event) => {
                 Item.of('minecraft:gravel').withChance(0.75),
                 Item.of('emendatusenigmatica:bitumen_gem').withChance(1.5),
                 Item.of('thermal:tar').withCount(1),
-                fluid.of('pneumaticcraft:oil', 100)
-            ]
+                Fluid.of('pneumaticcraft:oil', 100)
+            ],
+            id: `${id_prefix}meat`
         }
     ];
     recipes.forEach((recipe) => {
-        const re = event.recipes.thermal.centrifuge(recipe.outputs, recipe.input);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.recipes.thermal.centrifuge(recipe.outputs, recipe.input).id(recipe.id);
     });
 });

@@ -32,7 +32,8 @@ onEvent('item.registry', (event) => {
         'coke_brick',
         'blast_brick_blend',
         'blast_brick',
-        'red_nether_brick'
+        'red_nether_brick',
+        'ground_meat'
     ];
 
     const ritualDummies = [
@@ -152,4 +153,14 @@ onEvent('item.registry', (event) => {
     reusableItemTextures.forEach((item) => {
         event.create(item.name).group('KubeJS').texture(`kubejs:item/${item.texture}`);
     });
+
+    // Custom Foods
+    event
+        .create('meat_ingot')
+        .group('KubeJS')
+        .texture('kubejs:item/meat_ingot')
+        .food((food) => {
+            food.hunger(8).saturation(0.5).effect('upgrade_aquatic:vibing', 2400, 1, 1.0);
+        })
+        .displayName('Meat Ingot');
 });
