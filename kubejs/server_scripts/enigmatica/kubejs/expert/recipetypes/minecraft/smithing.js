@@ -8,12 +8,15 @@ onEvent('recipes', (event) => {
             input2: '#forge:ingots/arcane_gold',
             output: 'eidolon:basic_amulet',
             id: 'eidolon:basic_amulet'
+        },
+        {
+            input1: '#forge:ingots/aeternium',
+            input2: 'betterendforge:leather_wrapped_stick',
+            output: 'betterendforge:aeternium_sword_handle',
+            id: 'betterendforge:aeternium_sword_handle_smithing'
         }
     ];
     recipes.forEach((recipe) => {
-        const re = event.smithing(recipe.output, recipe.input1, recipe.input2);
-        if (recipe.id) {
-            re.id(recipe.id);
-        }
+        event.smithing(recipe.output, recipe.input1, recipe.input2).id(recipe.id);
     });
 });
