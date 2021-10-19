@@ -173,7 +173,12 @@ onEvent('recipes', (event) => {
                 C: { item: 'supplementaries:faucet' },
                 D: { tag: 'botania:runes/mana' },
                 E: { item: 'naturesaura:spring' },
-                F: aura_trove_astral_recipes,
+                F: {
+                    type: 'forge:nbt',
+                    item: 'naturesaura:aura_trove',
+                    count: 1,
+                    nbt: '{aura:1200000}'
+                },
                 G: { item: 'minecraft:terracotta' }
             },
             effects: [
