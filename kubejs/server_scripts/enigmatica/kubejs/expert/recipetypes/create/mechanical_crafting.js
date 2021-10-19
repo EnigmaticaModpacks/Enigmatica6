@@ -255,6 +255,20 @@ onEvent('recipes', (event) => {
                 I: 'pneumaticcraft:remote'
             },
             id: 'integrateddynamics:crafting/logic_programmer'
+        },
+        {
+            output: Item.of('2x portality:controller'),
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDEDC', 'ABBBA'],
+            key: {
+                A: 'portality:frame',
+                B: 'immersiveengineering:coil_lv',
+                C: 'immersiveengineering:electron_tube',
+                D: 'immersiveengineering:wirecoil_redstone',
+                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board'],
+                F: 'immersiveengineering:current_transformer',
+                G: 'xnet:controller'
+            },
+            id: 'portality:controller'
         }
     ];
 
