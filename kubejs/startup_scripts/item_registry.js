@@ -36,8 +36,9 @@ onEvent('item.registry', (event) => {
     ];
 
     const ritualDummies = [
-        'craft_spirit_heat_exchanger',
+        'summon_pink_wither',
         'summon_pharaoh',
+        'craft_spirit_heat_exchanger',
         'craft_magical_feathers',
         'craft_magicfeather',
         'craft_soulsword',

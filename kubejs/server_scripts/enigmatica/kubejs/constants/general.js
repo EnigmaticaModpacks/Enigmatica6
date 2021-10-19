@@ -68,28 +68,5 @@ const createStoneTypes = [
     'natural_scoria'
 ];
 
-/* 
-    The Aura Cache and Aura Trove, when charged on a player, fill to a random amount somewhere shy of their max. 
-    Otherwise it would need to be charged in an altar to get to full. This lets any nearly full cache be used for crafting.
-    */
-const aura_trove_astral_recipes = [],
-    aura_cache_astral_recipes = [];
-
-for (let i = 0; i <= 2000; i++) {
-    aura_trove_astral_recipes.push({
-        type: 'forge:nbt',
-        item: 'naturesaura:aura_trove',
-        count: 1,
-        nbt: `{aura:${1200000 - i}}`
-    });
-
-    aura_cache_astral_recipes.push({
-        type: 'forge:nbt',
-        item: 'naturesaura:aura_cache',
-        count: 1,
-        nbt: `{aura:${400000 - i}}`
-    });
-}
-
 const normalMode = global.packmode == 'normal';
 const expertMode = global.packmode == 'expert';

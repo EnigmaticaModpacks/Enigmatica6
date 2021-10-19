@@ -105,7 +105,12 @@ onEvent('recipes', (event) => {
                 A: { item: 'botania:livingrock' },
                 B: { item: 'minecraft:conduit' },
                 C: { tag: 'forge:ingots/infused_iron' },
-                D: aura_cache_astral_recipes
+                D: {
+                    type: 'forge:nbt',
+                    item: 'naturesaura:aura_cache',
+                    count: 1,
+                    nbt: '{aura:400000}'
+                }
             },
             altar_type: 0,
             duration: 100,
