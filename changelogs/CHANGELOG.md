@@ -1,3 +1,13 @@
+### Enigmatica 6 v0.5.17
+
+_Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.17.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.17.md)_
+
+**Bug Fixes**
+
+**Changes/Improvements**
+
+-   Quests: Removed Cured Rubber from the Thermal quest rewards
+
 ### Enigmatica 6 v0.5.16
 
 _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.16.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.16.md)_
