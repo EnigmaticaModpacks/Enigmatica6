@@ -11,6 +11,39 @@ onEvent('recipes', (event) => {
         //     duration: 100,
         //     ignore_occultism_multiplier: true
         // }
+
+        {
+            secondary_output: Item.of('kubejs:basalt_powder').chance(0.5),
+            output: Item.of('kubejs:basalt_powder', 4),
+            input: Ingredient.of('#forge:stones/basalt'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('kubejs:ground_meat', 1),
+            input: Ingredient.of('#enigmatica:meats/small'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('kubejs:ground_meat', 2),
+            input: Ingredient.of('#enigmatica:meats/medium'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true
+        },
+        {
+            secondary_output: Item.of('minecraft:bone_meal').chance(0.15),
+            output: Item.of('kubejs:ground_meat', 3),
+            input: Ingredient.of('#enigmatica:meats/large'),
+            experience: 0.5,
+            duration: 100,
+            ignore_occultism_multiplier: true
+        }
     ];
 
     recipetypes_crushing = (event, recipe) => {

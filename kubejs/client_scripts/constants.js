@@ -495,7 +495,7 @@ const recipesToHide = [
         recipes_by_id: ['mythicbotany:petal_apothecary/wither_aconite', 'mythicbotany:petal_apothecary/raindeletia']
     },
     {
-        category: 'botania:mana_pools',
+        category: 'botania:mana_pool',
         recipes_by_id: ['botania:mana_infusion/mana_powder_dust', 'botania:mana_infusion/mana_powder_dye']
     },
     {
@@ -634,11 +634,14 @@ const disabledItems = [
     'thermal:potato_block',
     'thermal:sugar_cane_block',
     'thermal:apple_block',
+
     'simplefarming:raw_bacon',
     'simplefarming:cooked_bacon',
     'simplefarming:cooked_egg',
     'simplefarming:noodles',
-    'simplefarming:chocolate'
+    'simplefarming:chocolate',
+
+    'storagedrawers:conversion_upgrade'
 ];
 
 const materialsToUnify = [
@@ -720,4 +723,18 @@ const materialsToUnify = [
     'niotic',
     'spirited',
     'nitro'
+];
+
+const craftedBees = [
+    'bloody',
+    'elven',
+    'mana',
+    'starry',
+    'terrestrial',
+    'enderslime',
+    'ichor',
+    'skyslime',
+    'cobalt',
+    'industrious',
+    'pcbee'
 ];

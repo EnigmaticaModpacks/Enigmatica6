@@ -28,6 +28,15 @@ onEvent('recipes', (event) => {
                 D: 'minecraft:apple'
             },
             id: 'farmersdelight:apple_pie'
+        },
+        {
+            output: 'farmersdelight:wheat_dough',
+            pattern: ['A', 'B'],
+            key: {
+                A: '#forge:dusts/flour',
+                B: { type: 'pneumaticcraft:fluid', fluid: 'minecraft:water', amount: 1000 }
+            },
+            id: 'create:crafting/appliances/dough'
         }
     ];
 

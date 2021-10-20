@@ -435,7 +435,7 @@ onEvent('recipes', (event) => {
             duration: 3,
             entity_to_sacrifice: {
                 tag: 'occultism:wild_hunt_sacrifices',
-                display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'occultism:greedy_familiar',
             ritual_dummy: { item: 'occultism:ritual_dummy/familiar_greedy' },
@@ -673,7 +673,7 @@ onEvent('recipes', (event) => {
             duration: 6,
             entity_to_sacrifice: {
                 tag: 'occultism:wild_hunt_sacrifices',
-                display_name: 'ritual.occultism.sacrifice.villagers_or_players'
+                display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'atum:pharaoh',
             ritual_dummy: { item: 'kubejs:summon_pharaoh' },
@@ -842,6 +842,67 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'mythicbotany:mana_collector' },
             id: `${id_prefix}mana_collector`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 10,
+            ritual_dummy: { item: 'kubejs:craft_logic_director' },
+            ingredients: [
+                { tag: 'forge:gems/mana_diamond' },
+                { item: 'botania:bifrost_perm' },
+                { item: 'mekanism:teleportation_core' },
+                { item: 'botania:bifrost_perm' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:menril_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' },
+                { item: 'integratedterminals:chorus_glass' }
+            ],
+            result: { item: 'integrateddynamics:logic_director' },
+            id: `${id_prefix}logic_director`
+        },
+        {
+            ritual_type: 'occultism:summon',
+            activation_item: { item: 'botania:goddess_charm' },
+            pentacle_id: 'occultism:summon_wild_afrit',
+            duration: 6,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:wither',
+                display_name: 'ritual.occultism.sacrifice.wither'
+            },
+            entity_to_summon: 'botania:pink_wither',
+            ritual_dummy: { item: 'kubejs:summon_pink_wither' },
+            ingredients: [
+                { item: 'minecraft:brain_coral_block' },
+                { tag: 'forge:storage_blocks/fairy' },
+                { item: 'tconstruct:silky_cloth' },
+                { tag: 'forge:storage_blocks/fairy' },
+
+                { item: 'minecraft:brain_coral_block' },
+                { item: 'atum:anubis_godshard' },
+                {
+                    type: 'forge:nbt',
+                    item: 'minecraft:potion',
+                    nbt: '{Potion:"upgrade_aquatic:vibing"}'
+                },
+                { item: 'quark:pink_rune' },
+
+                { item: 'minecraft:brain_coral_block' },
+                { item: 'quark:pink_rune' },
+                {
+                    type: 'forge:nbt',
+                    item: 'minecraft:potion',
+                    nbt: '{Potion:"upgrade_aquatic:vibing"}'
+                },
+                { item: 'atum:anubis_godshard' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: `${id_prefix}pink_wither`
         }
     ];
 

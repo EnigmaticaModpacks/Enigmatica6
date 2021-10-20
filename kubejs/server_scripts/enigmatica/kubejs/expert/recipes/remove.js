@@ -39,6 +39,23 @@ onEvent('recipes', (event) => {
         'immersiveengineering:crafting/concrete2',
         'immersiveengineering:mixer/concrete',
         /immersiveengineering:crafting\/plate_/,
+        'immersiveengineering:crafting/cokebrick',
+        'immersiveengineering:crafting/blastbrick',
+        'immersiveengineering:crafting/alloybrick',
+
+        'industrialforegoing:mob_slaughter_factory',
+
+        'integrateddynamics:crafting/cable',
+        'integrateddynamics:crafting/cable_rotated',
+        'integrateddynamics:crafting/energy_battery',
+        'integrateddynamics:crafting/mechanical_drying_basin',
+        'integrateddynamics:crafting/mechanical_squeezer',
+        'integrateddynamics:crafting/drying_basin',
+        'integrateddynamics:crafting/squeezer',
+        'integrateddynamics:crafting/coal_generator',
+        'integrateddynamics:crafting/logic_director',
+        'integrateddynamics:crafting/variable_transformer_output',
+        'integrateddynamics:crafting/variable_transformer_input',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -62,6 +79,7 @@ onEvent('recipes', (event) => {
         /powah:crafting\/cable_/,
 
         'quark:building/crafting/candles/candle_basic',
+        'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
 
@@ -144,8 +162,6 @@ onEvent('recipes', (event) => {
         { output: 'botania:mana_spreader', id: 'botania:mana_spreader' },
         { output: 'botania:elven_spreader', id: 'botania:elven_spreader' },
         { output: 'botania:gaia_spreader', id: 'botania:gaia_spreader' },
-        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dust' },
-        { output: 'botania:mana_powder', id: 'botania:mana_infusion/mana_powder_dye' },
 
         { output: 'botania:gaia_pylon', id: 'mythicbotany:modified_gaia_pylon_with_alfsteel' },
         { output: 'mythicbotany:alfsteel_pylon', id: 'mythicbotany:alfsteel_pylon' },
@@ -186,6 +202,10 @@ onEvent('recipes', (event) => {
 
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'thermal' });
     event.remove({ type: 'minecraft:crafting_shapeless', output: '#forge:dusts', mod: 'immersiveengineering' });
+    event.remove({ type: 'integrateddynamics:drying_basin' });
+    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
+    event.remove({ type: 'integrateddynamics:squeezer' });
+    event.remove({ type: 'integrateddynamics:mechanical_drying_basin' });
 
     patchouli_safe_removals.forEach((recipe) => {
         event.shaped(recipe.output, ['A'], { A: 'kubejs:altered_recipe_indicator' }).id(recipe.id);

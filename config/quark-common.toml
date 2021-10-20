@@ -7,7 +7,7 @@
 	"Use Fast Worldgen" = false
 	"Enable 'q' Button" = false
 	#A list of screens that don't play well with quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
-	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen", "slimeknights.tconstruct.tables.client.inventory.table.CraftingStationScreen", "slimeknights.tconstruct.tables.client.inventory.TinkerChestScreen", "slimeknights.tconstruct.smeltery.client.inventory.HeatingStructureScreen", "team.chisel.client.gui.GuiChisel", "team.chisel.client.gui.GuiHitechChisel", "me.desht.modularrouters.client.gui.filter.GuiBulkItemFilter", "link.infra.demagnetize.blocks.DemagnetizerContainer"]
+	"Ignored Screens" = ["com.tfar.craftingstation.client.CraftingStationScreen", "com.refinedmods.refinedstorage.screen.grid.GridScreen", "appeng.client.gui.implementations.CraftingTermScreen", "appeng.client.gui.implementations.PatternTermScreen", "blusunrize.immersiveengineering.client.gui.CraftingTableScreen", "wile.engineersdecor.blocks.EdCraftingTable$CraftingTableGui", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsRequester", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsStorage", "me.desht.pneumaticcraft.client.gui.semiblock.GuiLogisticsProvider", "me.desht.modularrouters.client.gui.filter.GuiFilterScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.MechanicalCentrifugeScreen", "com.resourcefulbees.resourcefulbees.client.gui.screen.CentrifugeMultiblockScreen", "com.refinedmods.refinedstorage.screen.FilterScreen", "slimeknights.tconstruct.tables.client.inventory.table.CraftingStationScreen", "slimeknights.tconstruct.tables.client.inventory.TinkerChestScreen", "slimeknights.tconstruct.smeltery.client.inventory.HeatingStructureScreen", "team.chisel.client.gui.GuiChisel", "team.chisel.client.gui.GuiHitechChisel", "me.desht.modularrouters.client.gui.filter.GuiBulkItemFilter", "link.infra.demagnetize.blocks.DemagnetizerContainer", "com.simibubi.create.content.logistics.block.inventories.AdjustableCrateScreen"]
 	"Use Anti Overlap" = true
 	#Enables quark network profiling features. Do not enable this unless requested to.
 	"Enable Network Profiling" = false
@@ -224,6 +224,9 @@
 	[building.item_frames]
 		"Glass Item Frames Update Maps" = true
 
+	[building.gold_bars]
+		"Generate In Nether Fortress" = true
+
 [management]
 	"Chests In Boats" = true
 	"Inventory Sorting" = false
@@ -258,6 +261,7 @@
 	Trowel = true
 	Abacus = true
 	"Ambient Discs" = true
+	"Endermosh Music Disc" = true
 
 	[tools.trowel]
 		#Amount of blocks placed is this value + 1.
@@ -343,6 +347,12 @@
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
+
+	[tools.endermosh_music_disc]
+		"Play Endermosh During Enderdragon Fight" = false
+		"Add To End City Loot" = true
+		"Loot Weight" = 5
+		"Loot Quality" = 1
 
 [tweaks]
 	"Armed Armor Stands" = true
@@ -860,6 +870,7 @@
 				"Is Blacklist" = false
 
 	[world.blossom_trees]
+		"Drop Leaf Particles" = true
 
 		[world.blossom_trees.orange]
 			Rarity = 200
@@ -1696,6 +1707,12 @@
 
 	[mobs.toretoise]
 		"Max Y Level" = 32
+		#The number of ticks from mining a tortoise until feeding it could cause it to regrow.
+		"Cooldown Ticks" = 1200
+		#The items that can be fed to toretoises to make them regrow ores.
+		Foods = ["quark:root_item", "minecraft:cactus"]
+		#Feeding a toretoise after cooldown will regrow them with a one-in-this-number chance. Set to 1 to always regrow, or 0 to disable.
+		"Regrow Chance" = 3
 
 		[mobs.toretoise.spawn_config]
 			#Allowed values: (0,)
@@ -1893,6 +1910,7 @@
 		"Enable Shiny Rabbit" = true
 		"Enable L G B T Bees" = true
 		"Enable Cow" = true
+		"Enable Shiny Dolphin" = true
 
 	[client.improved_tooltips]
 		"Shulker Box Require Shift" = false
@@ -1932,6 +1950,7 @@
 	"Narrator Readout" = false
 	"Overlay Shader" = false
 	Shiba = false
+	Pallet = false
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0

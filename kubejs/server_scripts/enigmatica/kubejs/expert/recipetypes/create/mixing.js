@@ -2,17 +2,20 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+    const id_prefix = 'enigmatica:expert/create/mixing/';
 
     const recipes = [
         {
             heated: true,
             inputs: ['#forge:ingots/cobalt', '#forge:ingots/cobalt', '#forge:ingots/cobalt', 'thermal:blizz_powder'],
-            output: Item.of('undergarden:froststeel_ingot', 3)
+            output: Item.of('undergarden:froststeel_ingot', 3),
+            id: `${id_prefix}froststeel_ingot`
         },
         {
             superheated: true,
             inputs: ['#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble', '#forge:stones/marble'],
-            output: Item.of('astralsorcery:black_marble_raw', 4)
+            output: Item.of('astralsorcery:black_marble_raw', 4),
+            id: `${id_prefix}black_marble_raw`
         },
         {
             heated: true,
@@ -26,7 +29,8 @@ onEvent('recipes', (event) => {
                 '#forge:dusts/quartz',
                 '#forge:tar'
             ],
-            output: 'kubejs:coarse_lapis_lazuli_compound'
+            output: 'kubejs:coarse_lapis_lazuli_compound',
+            id: `${id_prefix}coarse_lapis_lazuli_compound`
         },
         {
             heated: true,
@@ -42,7 +46,8 @@ onEvent('recipes', (event) => {
                 'eidolon:soul_shard',
                 Fluid.of('bloodmagic:life_essence_fluid', 1000)
             ],
-            output: 'eidolon:lesser_soul_gem'
+            output: 'eidolon:lesser_soul_gem',
+            id: `${id_prefix}lesser_soul_gem`
         },
         {
             inputs: [
@@ -93,11 +98,37 @@ onEvent('recipes', (event) => {
             ],
             output: Item.of('powah:dielectric_paste', 24),
             id: 'powah:crafting/dielectric_paste'
+        },
+        {
+            inputs: [
+                'minecraft:clay_ball',
+                'minecraft:clay_ball',
+                'create:cinder_flour',
+                'kubejs:basalt_powder',
+                'kubejs:basalt_powder',
+                Fluid.of('minecraft:water', 100)
+            ],
+            output: Item.of('kubejs:coke_brick_blend', 4),
+            id: `${id_prefix}coke_brick_blend`
+        },
+        {
+            inputs: [
+                'atum:marl',
+                '#forge:dusts/coal_coke',
+                '#forge:dusts/coal_coke',
+                '#forge:dusts/coal_coke',
+                'minecraft:blaze_powder',
+                'minecraft:gunpowder',
+                'minecraft:gunpowder',
+                Fluid.of('minecraft:water', 100)
+            ],
+            output: Item.of('kubejs:blast_brick_blend', 4),
+            id: `${id_prefix}blast_brick_blend`
         }
     ];
 
     recipes.forEach((recipe) => {
-        const re = event.recipes.create.mixing(recipe.output, recipe.inputs);
+        const re = event.recipes.create.mixing(recipe.output, recipe.inputs).id(recipe.id);
 
         if (recipe.heated) {
             re.heated();
@@ -105,9 +136,6 @@ onEvent('recipes', (event) => {
             re.superheated();
         } else {
             //unheated
-        }
-        if (recipe.id) {
-            re.id(recipe.id);
         }
     });
 });

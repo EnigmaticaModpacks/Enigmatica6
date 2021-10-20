@@ -16,9 +16,10 @@ onEvent('recipes', (event) => {
             },
             {
                 ores: [
-                    { chance: 0.6, output: { tag: 'forge:chunks/quartz' } },
-                    { chance: 0.2, output: { tag: 'forge:chunks/gold' } },
-                    { chance: 0.2, output: { tag: 'forge:dusts/sulfur' } }
+                    { chance: 0.5, output: { tag: 'forge:chunks/quartz' } },
+                    { chance: 0.3, output: { tag: 'forge:chunks/fluorite' } },
+                    { chance: 0.1, output: { tag: 'forge:chunks/gold' } },
+                    { chance: 0.1, output: { tag: 'forge:dusts/sulfur' } }
                 ],
                 dimensions: ['minecraft:the_nether'],
                 weight: 20,
@@ -228,9 +229,10 @@ onEvent('recipes', (event) => {
             },
             {
                 ores: [
-                    { chance: 0.25, output: { item: 'minecraft:basalt' } },
-                    { chance: 0.25, output: { tag: 'forge:chunks/diamond' } },
-                    { chance: 0.25, output: { tag: 'forge:chunks/apatite' } }
+                    { chance: 0.23, output: { item: 'minecraft:basalt' } },
+                    { chance: 0.33, output: { tag: 'forge:chunks/diamond' } },
+                    { chance: 0.33, output: { tag: 'forge:chunks/apatite' } },
+                    { chance: 0.1, output: { tag: 'forge:chunks/fluorite' } }
                 ],
                 dimensions: ['minecraft:overworld', 'undergarden:undergarden', 'atum:atum'],
                 weight: 5,
@@ -277,7 +279,7 @@ onEvent('recipes', (event) => {
                 id: 'erythrite'
             },
             {
-                ores: [{ chance: 1.0, output: { tag: 'forge:ores/utherium' } }],
+                ores: [{ chance: 1.0, output: { item: 'undergarden:utherium_ore' } }],
                 dimensions: ['undergarden:undergarden'],
                 weight: 10,
                 fail_chance: 0.1,

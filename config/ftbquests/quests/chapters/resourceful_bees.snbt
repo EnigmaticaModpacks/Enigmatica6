@@ -15,7 +15,7 @@
 			y: -18.0d
 			subtitle: "You must take care of Bees because you’re definitely a Keeper"
 			description: [
-				"Bee Nests are the most basic housing method for bees. While they lack an inventory, they can be upgraded to Hives which grants you more control over the population and production of your Bees."
+				"Bee Nests are the most basic housing method for bees. While they lack an inventory, they can be upgraded in-world with Hive Upgrades which grants you more control over the population and production of your Bees."
 				""
 				"Note: Bee Nests only produce standard Honeycombs regardless of the type of bees it houses."
 			]
@@ -145,16 +145,16 @@
 			y: -18.0d
 			subtitle: "Will you please Beehive, we are in public"
 			description: [
-				"An upgraded tier based version of the standard Bee Nests. The higher tier the Beehive is, the more bees it can house, the faster it will run, and the more it will produce."
+				"When used on a Bee Nest (shift right-click) this will upgrade it to the next tier. The higher tier the nest is, the more bees it can house, the faster it will run, and the more it will produce. The upgrades need to be applied in order - you cannot skip tiers."
 				""
-				"Note: Beehives allow the production of modded Honeycombs which can be further processed for resources."
+				"Note: Upgraded Nests allow the production of modded Honeycombs which can be further processed for resources."
 			]
 			dependencies: ["000000000000070E"]
 			id: "0000000000000723"
 			tasks: [{
 				id: "0000000000000724"
 				type: "item"
-				item: "resourcefulbees:t1_beehive"
+				item: "resourcefulbees:t1_hive_upgrade"
 				only_from_crafting: false
 			}]
 			rewards: [{
@@ -175,7 +175,7 @@
 			tasks: [{
 				id: "000000000000072A"
 				type: "item"
-				item: "resourcefulbees:t2_beehive"
+				item: "resourcefulbees:t2_hive_upgrade"
 			}]
 			rewards: [{
 				id: "0000000000000766"
@@ -231,7 +231,9 @@
 				"The Beepedia you receive from this quest is your guide to Resourceful Bees - it is generally your best source for information on bee breeding, mutations, traits, and more."
 				""
 				"~Ridanisaurus"
+				"~Blame TemperedFool for any issues"
 			]
+			dependencies: ["46B0BAD934FFB2A9"]
 			id: "0000000000000A94"
 			tasks: [{
 				id: "0000000000000A95"
@@ -426,7 +428,7 @@
 			tasks: [{
 				id: "0000000000000AA7"
 				type: "item"
-				item: "resourcefulbees:t3_beehive"
+				item: "resourcefulbees:t3_hive_upgrade"
 			}]
 			rewards: [{
 				id: "0000000000000B15"
@@ -446,7 +448,7 @@
 			tasks: [{
 				id: "0000000000000AA9"
 				type: "item"
-				item: "resourcefulbees:t4_beehive"
+				item: "resourcefulbees:t4_hive_upgrade"
 			}]
 			rewards: [
 				{
@@ -941,6 +943,32 @@
 			}]
 			rewards: [{
 				id: "0BC7625BD64FD174"
+				type: "xp"
+				xp: 100
+			}]
+		}
+		{
+			icon: "minecraft:honeycomb"
+			x: -12.5d
+			y: -18.0d
+			subtitle: "Beeg changes are here!"
+			description: [
+				"Progression in Resourceful Bees has changed as of E6 version 0.5.16."
+				""
+				"Tiered Beehives are no longer craftable, and are not part of Apiary recpes. Instead, the Bee Nests found via World Gen are used for initial Comb Generation, and both they and T4 Tiered Hive Upgrades are used in Apiary recipes."
+				""
+				"To upgrade these nests you can use in-world Tiered Hive Upgrades. The quests now reflect this change."
+				""
+				"Nests you have upgraded in-world can be used instead of Tiered Hive Upgrades in recipes that require them; additionally, Tiered Beehives you alread have can be turned into Tiered Hive Upgrades of the same tier."
+			]
+			id: "46B0BAD934FFB2A9"
+			tasks: [{
+				id: "4DBF1905A99D474C"
+				type: "checkmark"
+				title: "Beehive Changes"
+			}]
+			rewards: [{
+				id: "214D29C16AA98E43"
 				type: "xp"
 				xp: 100
 			}]

@@ -10,6 +10,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
+
     const id_prefix = 'enigmatica:expert/astralsorcery/altar/';
     const recipes = [
         /// Starlight Crafting Altar Recipes
@@ -139,27 +140,6 @@ onEvent('recipes', (event) => {
             ],
             id: `${id_prefix}terra_plate`
         },
-
-        /// Guidebook safe removals
-
-        {
-            output: Item.of('astralsorcery:attunement_altar'),
-            pattern: ['_____', '_____', '__A__', '_____', '_____'],
-            key: {
-                A: { item: 'kubejs:altered_recipe_indicator' }
-            },
-            altar_type: 1,
-            duration: 200,
-            starlight: 1600,
-            effects: [
-                'astralsorcery:pillar_sparkle',
-                'astralsorcery:built_in_effect_discovery_central_beam',
-                'astralsorcery:altar_default_lightbeams',
-                'astralsorcery:altar_default_sparkle',
-                'astralsorcery:built_in_effect_attunement_sparkle'
-            ],
-            id: 'astralsorcery:altar/attunement_altar'
-        },
         {
             output: Item.of('astralsorcery:ritual_pedestal'),
             altar_type: 1,
@@ -180,6 +160,53 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: 'astralsorcery:altar/ritual_pedestal'
+        },
+        {
+            output: Item.of('cookingforblockheads:sink'),
+            altar_type: 1,
+            duration: 200,
+            starlight: 1400,
+            pattern: ['A___A', '_BCB_', '_GEG_', '_GFG_', 'D___D'],
+            key: {
+                A: { tag: 'botania:runes/water' },
+                B: { tag: 'forge:plates/steel' },
+                C: { item: 'supplementaries:faucet' },
+                D: { tag: 'botania:runes/mana' },
+                E: { item: 'naturesaura:spring' },
+                F: {
+                    type: 'forge:nbt',
+                    item: 'naturesaura:aura_trove',
+                    count: 1,
+                    nbt: '{aura:1200000}'
+                },
+                G: { item: 'minecraft:terracotta' }
+            },
+            effects: [
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'cookingforblockheads:sink'
+        },
+
+        /// Guidebook safe removals
+
+        {
+            output: Item.of('astralsorcery:attunement_altar'),
+            pattern: ['_____', '_____', '__A__', '_____', '_____'],
+            key: {
+                A: { item: 'kubejs:altered_recipe_indicator' }
+            },
+            altar_type: 1,
+            duration: 200,
+            starlight: 1600,
+            effects: [
+                'astralsorcery:pillar_sparkle',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:altar_default_lightbeams',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'astralsorcery:altar/attunement_altar'
         }
     ];
 

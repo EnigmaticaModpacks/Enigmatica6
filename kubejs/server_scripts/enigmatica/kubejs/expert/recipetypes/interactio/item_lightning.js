@@ -8,7 +8,7 @@ onEvent('recipes', (event) => {
             inputs: [
                 { item: 'minecraft:snowball', count: 16 },
                 { item: 'quark:bottled_cloud', count: 1 },
-                { tag: 'forge:dusts/fluorite', count: 1, return_chance: 0.75 }
+                { tag: 'forge:dusts/fluorite', count: 1 }
             ],
             output: {
                 entries: [{ result: { item: 'powah:charged_snowball', count: 1 }, weight: 7 }],
@@ -107,8 +107,8 @@ onEvent('recipes', (event) => {
                     nbt: '{stored_type:"naturesaura:overworld"}'
                 },
                 { item: 'naturesaura:infused_iron', count: 1 },
-                { item: 'botania:rune_water', count: 1, return_chance: 0.75 },
-                { item: 'botania:rune_earth', count: 1, return_chance: 0.75 },
+                { item: 'botania:rune_water', count: 1 },
+                { item: 'botania:rune_earth', count: 1 },
                 {
                     type: 'forge:nbt',
                     item: 'naturesaura:aura_bottle',
@@ -116,11 +116,11 @@ onEvent('recipes', (event) => {
                     nbt: '{stored_type:"naturesaura:nether"}'
                 },
                 { item: 'naturesaura:tainted_gold', count: 1 },
-                { item: 'botania:rune_fire', count: 1, return_chance: 0.75 },
-                { item: 'botania:rune_air', count: 1, return_chance: 0.75 }
+                { item: 'botania:rune_fire', count: 1 },
+                { item: 'botania:rune_air', count: 1 }
             ],
             output: {
-                entries: [{ result: { item: 'naturesaura:calling_spirit', count: 3 }, weight: 1 }],
+                entries: [{ result: { item: 'naturesaura:calling_spirit', count: 4 }, weight: 1 }],
                 empty_weight: 0,
                 rolls: 1
             },

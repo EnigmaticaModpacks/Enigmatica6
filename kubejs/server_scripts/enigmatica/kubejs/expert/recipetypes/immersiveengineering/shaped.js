@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
-        {
+        /*{
             output: Item.of('immersiveengineering:cokebrick', 3),
             pattern: ['CAC', 'ABA', 'CAC'],
             key: {
@@ -25,7 +25,7 @@ onEvent('recipes', (event) => {
                 C: '#forge:clay'
             },
             id: 'immersiveengineering:crafting/cokebrick'
-        },
+        },*/
         {
             output: 'immersiveengineering:workbench',
             pattern: ['A  ', 'BCC', 'E D'],
@@ -38,7 +38,8 @@ onEvent('recipes', (event) => {
             },
             id: 'immersiveengineering:crafting/workbench'
         },
-        {
+
+        /*{
             output: Item.of('immersiveengineering:alloybrick', 4),
             pattern: ['CAC', 'ABA', 'CAC'],
             key: {
@@ -47,7 +48,7 @@ onEvent('recipes', (event) => {
                 C: 'immersiveengineering:blastbrick'
             },
             id: 'immersiveengineering:crafting/alloybrick'
-        },
+        },*/
         {
             output: 'immersiveengineering:furnace_heater',
             pattern: ['ABA', 'ACD', 'ABA'],

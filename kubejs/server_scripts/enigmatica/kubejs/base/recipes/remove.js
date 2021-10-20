@@ -44,8 +44,11 @@ onEvent('recipes', (event) => {
 
         'morevanillalib:obsidian_shard',
 
-        'simplefarming:raw_bacon',
         'powah:uraninite',
+
+        'simplefarming:raw_bacon',
+
+        'storagedrawers:conversion_upgrade',
 
         'thermal:bamboo_block'
     ];
@@ -154,6 +157,16 @@ onEvent('recipes', (event) => {
         'pitg:green_dye',
 
         'quark:building/crafting/tallow_from_block',
+
+        'resourcefulbees:t1_beehive',
+        'resourcefulbees:t2_beehive',
+        'resourcefulbees:t3_beehive',
+        'resourcefulbees:t4_beehive',
+        'resourcefulbees:t1_beehive_nests',
+        'resourcefulbees:t2_beehive_nests',
+        'resourcefulbees:t3_beehive_nests',
+        'resourcefulbees:t4_beehive_nests',
+        'resourcefulbees:t1_apiary_beehive',
 
         'simplefarming:apple_pie',
         'simplefarming:blueberry_pie',

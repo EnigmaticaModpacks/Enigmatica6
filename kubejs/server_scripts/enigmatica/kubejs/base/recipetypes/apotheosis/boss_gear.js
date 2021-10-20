@@ -214,6 +214,96 @@ onEvent('server.datapack.high_priority', (event) => {
             leggings: [{ weight: 3, stack: { item: 'betterendforge:terminite_leggings' } }],
             chestplates: [{ weight: 3, stack: { item: 'betterendforge:terminite_chestplate' } }],
             helmets: [{ weight: 3, stack: { item: 'betterendforge:terminite_helmet' } }]
+        },
+        {
+            name: 'cardboard',
+            weight: 1000,
+            tags: ['standard', 'enderman'],
+            mainhands: [
+                { weight: 4, stack: { item: 'occultism:butcher_knife' } },
+                { weight: 2, stack: { item: 'occultism:butcher_knife' } },
+                { weight: 1, stack: { item: 'aiotbotania:livingrock_pickaxe' } },
+                { weight: 1, stack: { item: 'aiotbotania:livingrock_shovel' } }
+            ],
+            offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_boots' } }],
+            leggings: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_leggings' } }],
+            chestplates: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_chestplate' } }],
+            helmets: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_helmet' } }]
+        },
+        {
+            name: 'cardboard_bow',
+            weight: 1000,
+            tags: ['skeleton'],
+            mainhands: [
+                { weight: 1, stack: { item: 'occultism:butcher_knife' } },
+                { weight: 4, stack: { item: 'minecraft:bow' } }
+            ],
+            offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_boots' } }],
+            leggings: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_leggings' } }],
+            chestplates: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_chestplate' } }],
+            helmets: [{ weight: 3, stack: { item: 'dustrial_decor:cardboard_helmet' } }]
+        },
+        {
+            name: 'gold',
+            weight: 600,
+            tags: ['standard'],
+            mainhands: [
+                { weight: 4, stack: { item: 'minecraft:golden_sword' } },
+                { weight: 2, stack: { item: 'minecraft:golden_axe' } },
+                { weight: 1, stack: { item: 'minecraft:golden_pickaxe' } },
+                { weight: 1, stack: { item: 'minecraft:golden_shovel' } }
+            ],
+            offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 3, stack: { item: 'minecraft:golden_boots' } }],
+            leggings: [{ weight: 3, stack: { item: 'minecraft:golden_leggings' } }],
+            chestplates: [{ weight: 3, stack: { item: 'minecraft:golden_chestplate' } }],
+            helmets: [{ weight: 3, stack: { item: 'minecraft:golden_helmet' } }]
+        },
+        {
+            name: 'gold_bow',
+            weight: 600,
+            tags: ['skeleton'],
+            mainhands: [
+                { weight: 1, stack: { item: 'minecraft:golden_sword' } },
+                { weight: 4, stack: { item: 'minecraft:bow' } }
+            ],
+            offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 3, stack: { item: 'minecraft:golden_boots' } }],
+            leggings: [{ weight: 3, stack: { item: 'minecraft:golden_leggings' } }],
+            chestplates: [{ weight: 3, stack: { item: 'minecraft:golden_chestplate' } }],
+            helmets: [{ weight: 3, stack: { item: 'minecraft:golden_helmet' } }]
+        },
+        {
+            name: 'refined_glowstone',
+            weight: 600,
+            tags: ['standard'],
+            mainhands: [
+                { weight: 4, stack: { item: 'mekanismtools:refined_glowstone_sword' } },
+                { weight: 2, stack: { item: 'mekanismtools:refined_glowstone_axe' } },
+                { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_pickaxe' } },
+                { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_shovel' } }
+            ],
+            offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_boots' } }],
+            leggings: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_leggings' } }],
+            chestplates: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_chestplate' } }],
+            helmets: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_helmet' } }]
+        },
+        {
+            name: 'refined_glowstone_bow',
+            weight: 600,
+            tags: ['skeleton'],
+            mainhands: [
+                { weight: 1, stack: { item: 'mekanismtools:refined_glowstone_sword' } },
+                { weight: 4, stack: { item: 'minecraft:bow' } }
+            ],
+            offhands: [{ weight: 3, stack: { item: 'minecraft:shield' } }],
+            boots: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_boots' } }],
+            leggings: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_leggings' } }],
+            chestplates: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_chestplate' } }],
+            helmets: [{ weight: 3, stack: { item: 'mekanismtools:refined_glowstone_helmet' } }]
         }
     ];
 

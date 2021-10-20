@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'minecraft:furnace',
             pattern: ['AAA', 'ABA', 'AAA'],
@@ -92,14 +92,18 @@ onEvent('recipes', (event) => {
                 D: '#forge:rods/wooden'
             },
             id: 'minecraft:smoker'
+        },
+        {
+            output: Item.of('minecraft:red_nether_bricks'),
+            pattern: ['AA', 'AA'],
+            key: {
+                A: 'kubejs:red_nether_brick'
+            },
+            id: 'minecraft:red_nether_bricks'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

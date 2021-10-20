@@ -6,10 +6,10 @@ onEvent('recipes', (event) => {
     altar_type: 0
     max_starlight: 1000 
     */
-
     if (global.isExpertMode == false) {
         return;
     }
+
     const id_prefix = 'enigmatica:expert/astralsorcery/altar/';
     const recipes = [
         /// Luminous Crafting Table Recipes
