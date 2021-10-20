@@ -2,11 +2,49 @@
 
 _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.17.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.17.md)_
 
+**New Mods**
+
+-   [Compote](https://www.curseforge.com/minecraft/mc-mods/compote)
+-   [Energy Meter](https://www.curseforge.com/minecraft/mc-mods/energymeter)
+
 **Bug Fixes**
+
+- Aquamarine is missing forge:gems tag [\#3492](https://github.com/NillerMedDild/Enigmatica6/issues/3492)
+- \[0.5.16\] Resourceful Bees Tiered Beehive Upgrades [\#3436](https://github.com/NillerMedDild/Enigmatica6/issues/3436)
+- Blacklist Create Adjustable Crate from Quark buttons [\#3493](https://github.com/NillerMedDild/Enigmatica6/pull/3493) ([Quezler](https://github.com/Quezler))
+- Blacklist powah from mekanism cardboard [\#3476](https://github.com/NillerMedDild/Enigmatica6/pull/3476) ([Quezler](https://github.com/Quezler))
+- Conflicting keybinds between Personal Shrinking Device and Wireless Crafting Grid [\#3491](https://github.com/NillerMedDild/Enigmatica6/issues/3491)
+- Crate from Create has first inventory slot blocked by filter button [\#3480](https://github.com/NillerMedDild/Enigmatica6/issues/3480)
+- Create has lost its ability to make bread. [\#3438](https://github.com/NillerMedDild/Enigmatica6/issues/3438)
+- Fixes crash with blocks like pattern terminal and others [\#3431](https://github.com/NillerMedDild/Enigmatica6/pull/3431) ([MuteTiefling](https://github.com/MuteTiefling))
+- Fixes the sawmill quest using the wrong steel scaffolding variant [\#3462](https://github.com/NillerMedDild/Enigmatica6/pull/3462) ([Quezler](https://github.com/Quezler))
+- Fix missing NBT on SushiGo Wasabee tobiko craft [\#3418](https://github.com/NillerMedDild/Enigmatica6/pull/3418) ([Thelm76](https://github.com/Thelm76))
+- Furnace needs stone instead of cobblestone [\#3439](https://github.com/NillerMedDild/Enigmatica6/issues/3439)
+- Immersive Engineering Sawmill Quest using wrong steel Scaffolding [\#3461](https://github.com/NillerMedDild/Enigmatica6/issues/3461)
+- Occultism Summoning Quests Still Not Working \(0.5.16\) [\#3477](https://github.com/NillerMedDild/Enigmatica6/issues/3477)
+- Remove simple crafting heat loop with Magma Bricks and Magma Blocks [\#3488](https://github.com/NillerMedDild/Enigmatica6/pull/3488) ([MuteTiefling](https://github.com/MuteTiefling))
+- signalum dust recipe can take either 2 or 4 redstone [\#3466](https://github.com/NillerMedDild/Enigmatica6/issues/3466)
 
 **Changes/Improvements**
 
+-   Add Cardboard, Gold, and Refined Glowstone gear sets to Apoth bosses [\#3487](https://github.com/NillerMedDild/Enigmatica6/pull/3487) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add mention of special drone trades in Amadron quest [\#3467](https://github.com/NillerMedDild/Enigmatica6/pull/3467) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Add more armor loot options from Apotheosis bosses [\#3474](https://github.com/NillerMedDild/Enigmatica6/issues/3474)
+-   disable conversion upgrade [\#3460](https://github.com/NillerMedDild/Enigmatica6/pull/3460) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix ALL the Occultism quest advancements :D [\#3486](https://github.com/NillerMedDild/Enigmatica6/pull/3486) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix missing Dough recipes, add Emmer Dough recipe [\#3446](https://github.com/NillerMedDild/Enigmatica6/pull/3446) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix missing Dough recipes, add Emmer Dough recipe [\#3455](https://github.com/NillerMedDild/Enigmatica6/pull/3455) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix Occultism Foliot Crusher Quest Detection [\#3485](https://github.com/NillerMedDild/Enigmatica6/pull/3485) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Fix occultism ritual display name [\#3429](https://github.com/NillerMedDild/Enigmatica6/pull/3429) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Immersive Engineering Mineral Deposit with Fluorite [\#3420](https://github.com/NillerMedDild/Enigmatica6/issues/3420)
+-   Mineral Update - Add Fluorite to the Excavator [\#3426](https://github.com/NillerMedDild/Enigmatica6/pull/3426) ([MuteTiefling](https://github.com/MuteTiefling))
 -   Quests: Removed Cured Rubber from the Thermal quest rewards
+-   Raise the heat requirement to be considered fuel by default in PNC, eliminating molten metals as fuels [\#3433](https://github.com/NillerMedDild/Enigmatica6/pull/3433) ([MuteTiefling](https://github.com/MuteTiefling))
+-   Remove conversion upgrade recipe from Storage Drawers [\#3447](https://github.com/NillerMedDild/Enigmatica6/issues/3447)
+-   Remove the Botania book from the loot table. [\#3463](https://github.com/NillerMedDild/Enigmatica6/issues/3463)
+-   Resourceful Bees: Tiered Beehive Removal [\#3421](https://github.com/NillerMedDild/Enigmatica6/pull/3421) ([TemperedFool](https://github.com/TemperedFool))
+
+---
 
 ### Enigmatica 6 v0.5.16
 
@@ -18,6 +56,8 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 -   Fixed Building quest chapter not showing up
 -   Work-in-progress Expert Quest Line showing in normal E6! [\#3419](https://github.com/NillerMedDild/Enigmatica6/issues/3419)
 -   Fix missing NBT on SushiGo Wasabee tobiko craft [\#3418](https://github.com/NillerMedDild/Enigmatica6/pull/3418) ([Thelm76](https://github.com/Thelm76))
+
+---
 
 ### Enigmatica 6 v0.5.15
 
@@ -81,6 +121,8 @@ _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/En
 **Removed Mods**
 
 -   [Towers Of The Wild](https://www.curseforge.com/minecraft/mc-mods/towers-of-the-wild)
+
+---
 
 ### Enigmatica 6 v0.5.14
 
