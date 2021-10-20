@@ -170,6 +170,17 @@ onEvent('recipes', (event) => {
                 count: 2
             },
             id: `${id_prefix}uraninite`
+        },
+        {
+            ingredients: [{ item: 'minecraft:blaze_rod' }],
+            energy: '10000000',
+            result: {
+                type: 'forge:nbt',
+                item: 'rftoolspower:blazing_rod',
+                count: 1,
+                nbt: '{duration:5000.0f,time:0.0f,quality:200000.0f}'
+            },
+            id: `${id_prefix}blazing_rod`
         }
     ];
 

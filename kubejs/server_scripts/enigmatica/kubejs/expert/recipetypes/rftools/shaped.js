@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'rftoolsutility:screen_controller',
             pattern: ['ABA', 'DCD', 'ADA'],
@@ -123,14 +123,54 @@ onEvent('recipes', (event) => {
                 B: 'pneumaticcraft:reinforced_stone_slab'
             },
             id: 'rftoolsbase:machine_base'
+        },
+        {
+            output: 'rftoolsutility:flight_module',
+            pattern: ['ABA', 'CDC', 'EFG'],
+            key: {
+                A: 'alexsmobs:mysterious_worm',
+                B: Item.of(
+                    'rftoolsutility:syringe',
+                    '{mobName:"alexsmobs:warped_mosco",mobId:"alexsmobs:warped_mosco",level:10}'
+                ),
+                C: 'meetyourfight:aether_glazed_cupcake',
+                D: 'rftoolsutility:moduleplus_template',
+                E: Item.of(
+                    'rftoolsutility:syringe',
+                    '{mobName:"upgrade_aquatic:flare",mobId:"upgrade_aquatic:flare",level:10}'
+                ),
+                F: 'alexsmobs:tarantula_hawk_elytra',
+                G: Item.of(
+                    'rftoolsutility:syringe',
+                    '{mobName:"alexsmobs:void_worm",mobId:"alexsmobs:void_worm",level:10}'
+                )
+            },
+            id: 'rftoolsutility:flight_module'
+        },
+        {
+            output: 'rftoolspower:blazing_agitator',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'rftoolspower:blazing_rod',
+                B: 'powah:energizing_rod_blazing',
+                C: 'rftoolsbase:machine_base'
+            },
+            id: 'rftoolspower:blazing_agitator'
+        },
+        {
+            output: 'rftoolspower:cell1',
+            pattern: ['ABA', 'CDC', 'ACA'],
+            key: {
+                A: 'rftoolspower:power_core1',
+                B: 'immersiveengineering:transformer_hv',
+                C: 'mekanism:basic_universal_cable',
+                D: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolspower:cell1'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

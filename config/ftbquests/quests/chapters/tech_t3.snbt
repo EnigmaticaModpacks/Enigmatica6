@@ -120,6 +120,7 @@
 		{
 			x: 5.0d
 			y: 3.0d
+			dependencies: ["72945D9390F479E7"]
 			id: "3B9B0EB73BF19CBD"
 			tasks: [{
 				id: "65AF9984F551512B"
@@ -129,12 +130,24 @@
 		}
 		{
 			x: 5.0d
-			y: 2.0d
+			y: 1.0d
+			dependencies: ["1E4DC3A7546EC894"]
 			id: "20C024EA7A79FBB4"
 			tasks: [{
 				id: "42D68FA716910115"
 				type: "item"
 				item: "rftoolspower:blazing_rod"
+			}]
+		}
+		{
+			x: 5.0d
+			y: 2.0d
+			dependencies: ["20C024EA7A79FBB4"]
+			id: "72945D9390F479E7"
+			tasks: [{
+				id: "3C415238A247D89A"
+				type: "item"
+				item: "rftoolspower:blazing_agitator"
 			}]
 		}
 	]

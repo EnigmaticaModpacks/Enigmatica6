@@ -35,10 +35,22 @@ onEvent('recipes', (event) => {
                 A: '#forge:circuits/advanced',
                 B: 'engineersdecor:clinker_brick_block',
                 C: 'immersiveengineering:coil_hv',
-                D: 'mekanism:steel_casing',
+                D: '#industrialforegoing:machine_frame/simple',
                 E: 'pneumaticcraft:heat_sink'
             },
             id: 'mekanism:resistive_heater'
+        },
+        {
+            output: 'mekanism:metallurgic_infuser',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: '#forge:gears/osmium',
+                B: 'rftoolspower:blazing_agitator',
+                C: '#forge:circuits/basic',
+                D: 'thermal:machine_bottler',
+                E: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:metallurgic_infuser'
         }
     ];
 
