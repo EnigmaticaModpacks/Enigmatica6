@@ -272,7 +272,7 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('rftoolsutility:environmental_controller'),
-            pattern: ['AABAA', 'ACDCA', 'BEFEB', 'AGHGA', 'AABAA'],
+            pattern: ['ABBBA', 'BCDCB', 'BEFEB', 'BGHGB', 'ABBBA'],
             key: {
                 A: 'powah:dielectric_casing',
                 B: 'thermal:enderium_glass',
