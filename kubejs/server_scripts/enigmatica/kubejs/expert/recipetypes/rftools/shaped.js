@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:dusts/redstone',
                 B: 'minecraft:ender_pearl',
-                C: 'rftoolsbase:machine_base',
+                C: '#industrialforegoing:machine_frame/pity',
                 D: '#forge:glass'
             },
             id: 'rftoolsutility:screen_controller'
@@ -39,25 +39,35 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'rftoolsutility:matter_receiver',
-            pattern: ['AAA', 'BCB', 'DDD'],
+            pattern: ['ABA', 'ACA', 'ADA'],
             key: {
-                A: '#forge:ingots/iron_aluminum',
-                B: '#forge:dusts/redstone',
-                C: 'rftoolsbase:machine_base',
-                D: 'minecraft:ender_pearl'
+                A: 'portality:frame',
+                B: 'atum:yellow_stained_crystal_glass',
+                C: 'occultism:stable_wormhole',
+                D: '#industrialforegoing:machine_frame/pity'
             },
             id: 'rftoolsutility:matter_receiver'
         },
         {
             output: 'rftoolsutility:matter_transmitter',
-            pattern: ['DDD', 'BCB', 'AAA'],
+            pattern: ['ABA', 'ACA', 'ADA'],
             key: {
-                A: '#forge:ingots/iron_aluminum',
-                B: '#forge:dusts/redstone',
-                C: 'rftoolsbase:machine_base',
-                D: 'minecraft:ender_pearl'
+                A: 'portality:frame',
+                B: 'atum:cyan_stained_crystal_glass',
+                C: 'occultism:stable_wormhole',
+                D: '#industrialforegoing:machine_frame/pity'
             },
             id: 'rftoolsutility:matter_transmitter'
+        },
+        {
+            output: 'rftoolsutility:dialing_device',
+            pattern: ['ABA', 'ACA', 'AAA'],
+            key: {
+                A: 'portality:frame',
+                B: 'portality:controller',
+                C: 'xnet:wireless_router'
+            },
+            id: 'rftoolsutility:dialing_device'
         },
         {
             output: 'rftoolsutility:charged_porter',
@@ -99,7 +109,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:gems/dimensional',
                 B: '#forge:dusts/redstone',
-                C: 'rftoolsbase:machine_base',
+                C: '#industrialforegoing:machine_frame/pity',
                 D: '#forge:gems/diamond'
             },
             id: 'rftoolsbase:machine_infuser'
@@ -109,18 +119,19 @@ onEvent('recipes', (event) => {
             pattern: ['ADA', 'BCB', 'ABA'],
             key: {
                 A: 'minecraft:bricks',
-                B: '#forge:dusts/redstone',
-                C: 'rftoolsbase:machine_base',
-                D: '#forge:gems/ender'
+                B: 'portality:frame',
+                C: '#industrialforegoing:machine_frame/pity',
+                D: 'portality:controller'
             },
             id: 'rftoolsbuilder:builder'
         },
         {
             output: 'rftoolsbase:machine_base',
-            pattern: ['AAA', 'BBB'],
+            pattern: [' A ', 'ACA', 'BBB'],
             key: {
                 A: '#forge:nuggets/invar',
-                B: 'pneumaticcraft:reinforced_stone_slab'
+                B: 'pneumaticcraft:reinforced_stone_slab',
+                C: 'pneumaticcraft:advanced_pcb'
             },
             id: 'rftoolsbase:machine_base'
         },
