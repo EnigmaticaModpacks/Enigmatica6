@@ -331,6 +331,40 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:machine_base'
             },
             id: 'rftoolsbase:tablet'
+        },
+        {
+            output: 'rftoolspower:dimensionalcell_simple',
+            pattern: ['AEA', 'BCB', 'ADA'],
+            key: {
+                A: 'rftoolspower:power_core1',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolsbase:machine_frame',
+                D: 'powah:ender_core',
+                E: 'rftoolscontrol:advanced_network_card'
+            },
+            id: 'rftoolspower:dimensionalcell_simple'
+        },
+        {
+            output: 'rftoolspower:dimensionalcell',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'rftoolspower:power_core2',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolspower:dimensionalcell_simple',
+                D: 'rftoolsbase:infused_diamond'
+            },
+            id: 'rftoolspower:dimensionalcell'
+        },
+        {
+            output: 'rftoolspower:dimensionalcell_advanced',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'rftoolspower:power_core3',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolspower:dimensionalcell',
+                D: '#forge:gems/mana_diamond'
+            },
+            id: 'rftoolspower:dimensionalcell_advanced'
         }
     ];
 
