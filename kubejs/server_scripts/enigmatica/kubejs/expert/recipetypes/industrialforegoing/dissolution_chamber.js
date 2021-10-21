@@ -27,14 +27,14 @@ onEvent('recipes', (event) => {
         */
         {
             inputs: [
-                'minecraft:redstone',
+                'immersiveengineering:tesla_coil',
                 'rftoolsbase:machine_frame',
-                'minecraft:redstone',
-                'minecraft:redstone_torch',
-                'minecraft:redstone_torch',
-                '#forge:ingots/gold_copper',
-                '#forge:ingots/gold_copper',
-                '#forge:ingots/gold_copper'
+                'immersiveengineering:tesla_coil',
+                'immersiveengineering:coil_hv',
+                'immersiveengineering:coil_hv',
+                'powah:energy_discharger_spirited',
+                'powah:capacitor_spirited',
+                'powah:energy_discharger_spirited'
             ],
             inputFluid: 'tconstruct:molten_obsidian',
             inputFluidAmount: 1000,
