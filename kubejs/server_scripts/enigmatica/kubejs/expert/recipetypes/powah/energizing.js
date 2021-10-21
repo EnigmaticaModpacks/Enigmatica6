@@ -209,7 +209,7 @@ onEvent('recipes', (event) => {
                 { item: 'powah:capacitor_nitro' },
                 { item: 'powah:capacitor_nitro' }
             ],
-            energy: '1000000',
+            energy: '10000000',
             result: {
                 item: 'rftoolspower:power_core3',
                 count: 1
