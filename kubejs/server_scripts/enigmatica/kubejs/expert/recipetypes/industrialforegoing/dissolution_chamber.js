@@ -72,6 +72,38 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'botanypots:crafting/hopper_botany_pot'
+        },
+        {
+            inputs: [
+                'rftoolsutility:matter_receiver',
+                'industrialforegoing:laser_lens14',
+                '#industrialforegoing:machine_frame/advanced',
+                'minecraft:spawner',
+                'minecraft:spawner'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 200,
+            processingTime: 600,
+            outputItem: { item: 'rftoolsutility:spawner', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rftoolsutility:spawner'
+        },
+        {
+            inputs: [
+                'rftoolsutility:matter_transmitter',
+                'industrialforegoing:laser_lens4',
+                '#industrialforegoing:machine_frame/simple',
+                '#forge:gears/lumium',
+                '#forge:gears/lumium'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 500,
+            processingTime: 600,
+            outputItem: { item: 'rftoolsutility:matter_beamer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'rftoolsutility:matter_beamer'
         }
     ];
 
