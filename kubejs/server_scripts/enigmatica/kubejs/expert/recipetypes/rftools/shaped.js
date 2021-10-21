@@ -310,6 +310,28 @@ onEvent('recipes', (event) => {
                 C: 'rftoolsbase:machine_frame'
             },
             id: 'rftoolscontrol:node'
+        },
+        {
+            output: 'rftoolsutility:syringe',
+            pattern: ['  A', ' B ', 'C  '],
+            key: {
+                A: '#forge:rods/steel',
+                B: 'minecraft:glass_bottle',
+                C: 'pneumaticcraft:plastic'
+            },
+            id: 'rftoolsutility:syringe'
+        },
+        {
+            output: 'rftoolsbase:tablet',
+            pattern: ['AAA', 'BCD', 'EEE'],
+            key: {
+                A: 'rftoolsbase:information_screen',
+                B: 'rftoolscontrol:advanced_network_card',
+                C: 'rftoolscontrol:cpu_core_2000',
+                D: 'rftoolscontrol:graphics_card',
+                E: 'rftoolsbase:machine_base'
+            },
+            id: 'rftoolsbase:tablet'
         }
     ];
 
