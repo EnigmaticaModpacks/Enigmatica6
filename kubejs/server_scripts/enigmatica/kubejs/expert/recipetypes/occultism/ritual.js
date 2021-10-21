@@ -63,8 +63,8 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:summon_wild_afrit',
             duration: 6,
             entity_to_sacrifice: {
-                tag: 'forge:cows',
-                display_name: 'ritual.occultism.sacrifice.cows'
+                tag: 'enigmatica:camels',
+                display_name: 'ritual.occultism.sacrifice.camels'
             },
             entity_to_summon: 'occultism:afrit_wild',
             ritual_dummy: { item: 'occultism:ritual_dummy/summon_wild_afrit' },
@@ -72,7 +72,7 @@ onEvent('recipes', (event) => {
                 { item: 'eidolon:gold_inlay' },
                 { tag: 'botania:runes/fire' },
                 { item: 'eidolon:crimson_essence' },
-                { tag: 'botania:runes/wrath' },
+                { tag: 'botania:runes/fire' },
                 { item: 'ars_nouveau:red_archwood_wood' },
                 { item: 'ars_nouveau:red_archwood_wood' },
                 { item: 'ars_nouveau:red_archwood_wood' },
