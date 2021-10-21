@@ -92,6 +92,20 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:wireless_transmitter'
             },
             id: 'refinedstorage:range_upgrade'
+        },
+        {
+            output: Item.of('4x refinedstorage:speed_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'refinedstorage:upgrade',
+                B: 'pneumaticcraft:glycerol',
+                C: {
+                    type: 'pneumaticcraft:fluid',
+                    tag: 'forge:lubricant',
+                    amount: 1000
+                }
+            },
+            id: 'refinedstorage:speed_upgrade'
         }
     ];
 
