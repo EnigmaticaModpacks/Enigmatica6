@@ -70,13 +70,25 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'rftoolsutility:charged_porter',
-            pattern: [' C ', 'CBC', 'ACA'],
+            pattern: ['EAE', 'BCB', 'EDE'],
             key: {
-                A: '#forge:ingots/iron_aluminum',
-                B: 'pneumaticcraft:printed_circuit_board',
-                C: 'minecraft:ender_pearl'
+                A: 'rftoolsutility:matter_beamer',
+                B: 'portality:frame',
+                C: 'rftoolsbase:tablet',
+                D: 'rftoolsutility:matter_transmitter',
+                E: 'powah:capacitor_basic_large'
             },
             id: 'rftoolsutility:charged_porter'
+        },
+        {
+            output: 'rftoolsutility:advanced_charged_porter',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:capacitor_nitro',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolsutility:charged_porter'
+            },
+            id: 'rftoolsutility:advanced_charged_porter'
         },
         {
             output: 'rftoolsbuilder:shape_card_pump',
