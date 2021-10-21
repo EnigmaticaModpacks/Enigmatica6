@@ -148,7 +148,11 @@ onEvent('recipes', (event) => {
             ingredients: [
                 { item: 'botania:ender_eye_block' },
                 { item: 'powah:dielectric_casing' },
-                { tag: 'mekanism:crystals/uranium' }
+                {
+                    type: 'forge:nbt',
+                    item: 'pneumaticcraft:spawner_core',
+                    nbt: '{"pneumaticcraft:SpawnerCoreStats":{"minecraft:enderman":100}}'
+                }
             ],
             energy: '20000000',
             result: {

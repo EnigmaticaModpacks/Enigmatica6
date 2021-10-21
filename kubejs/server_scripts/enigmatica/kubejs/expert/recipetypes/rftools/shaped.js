@@ -16,14 +16,14 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
+        ,
         {
             output: 'rftoolsutility:screen_controller',
-            pattern: ['ABA', 'DCD', 'ADA'],
+            pattern: ['ABA', 'BCB', 'ABA'],
             key: {
-                A: '#forge:dusts/redstone',
-                B: 'minecraft:ender_pearl',
-                C: '#industrialforegoing:machine_frame/pity',
-                D: '#forge:glass'
+                A: '#forge:gears/signalum',
+                B: '#forge:glass/black',
+                C: 'thermal:charge_bench'
             },
             id: 'rftoolsutility:screen_controller'
         },
@@ -105,12 +105,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'rftoolsbase:machine_infuser',
-            pattern: ['ABA', 'DCD', 'ABA'],
+            pattern: ['ABA', 'CDC', 'ABA'],
             key: {
-                A: '#forge:gems/dimensional',
-                B: '#forge:dusts/redstone',
-                C: '#industrialforegoing:machine_frame/pity',
-                D: '#forge:gems/diamond'
+                A: '#forge:gears/enderium',
+                B: 'rftoolsbase:infused_diamond',
+                C: '#forge:storage_blocks/nitro',
+                D: '#industrialforegoing:machine_frame/advanced'
             },
             id: 'rftoolsbase:machine_infuser'
         },
@@ -178,6 +178,128 @@ onEvent('recipes', (event) => {
                 D: 'rftoolsbase:machine_frame'
             },
             id: 'rftoolspower:cell1'
+        },
+        {
+            output: 'rftoolscontrol:program_card',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'pneumaticcraft:plastic',
+                B: 'rftoolscontrol:ram_chip',
+                C: 'pneumaticcraft:printed_circuit_board'
+            },
+            id: 'rftoolscontrol:program_card'
+        },
+        {
+            output: 'rftoolscontrol:ram_chip',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'redstonepen:relay',
+                B: ['#forge:wires/copper', '#forge:wires/lead'],
+                C: 'immersiveengineering:circuit_board'
+            },
+            id: 'rftoolscontrol:ram_chip'
+        },
+        {
+            output: 'rftoolscontrol:token',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'minecraft:paper',
+                B: 'pneumaticcraft:programming_puzzle'
+            },
+            id: 'rftoolscontrol:token'
+        },
+        {
+            output: 'rftoolscontrol:craftingstation',
+            pattern: ['ABA', 'CDE', 'ABA'],
+            key: {
+                A: 'create:mechanical_crafter',
+                B: 'pneumaticcraft:printed_circuit_board',
+                C: 'refinedstorage:destruction_core',
+                D: 'rftoolsbase:machine_frame',
+                E: 'refinedstorage:construction_core'
+            },
+            id: 'rftoolscontrol:craftingstation'
+        },
+        {
+            output: 'rftoolscontrol:processor',
+            pattern: [' A ', 'BCB', ' A '],
+            key: {
+                A: 'immersiveengineering:logic_unit',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolscontrol:processor'
+        },
+        {
+            output: 'rftoolscontrol:cpu_core_500',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:wires/lead',
+                B: 'refinedstorage:basic_processor',
+                C: 'pneumaticcraft:unassembled_pcb'
+            },
+            id: 'rftoolscontrol:cpu_core_500'
+        },
+        {
+            output: 'rftoolscontrol:cpu_core_1000',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:wires/copper',
+                B: 'refinedstorage:improved_processor',
+                C: 'rftoolscontrol:cpu_core_500'
+            },
+            id: 'rftoolscontrol:cpu_core_1000'
+        },
+        {
+            output: 'rftoolscontrol:cpu_core_2000',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:wires/electrum',
+                B: 'refinedstorage:advanced_processor',
+                C: 'rftoolscontrol:cpu_core_1000'
+            },
+            id: 'rftoolscontrol:cpu_core_2000'
+        },
+        {
+            output: 'rftoolscontrol:graphics_card',
+            pattern: ['ABA', 'CDA', 'EEE'],
+            key: {
+                A: 'pneumaticcraft:heat_sink',
+                B: 'pneumaticcraft:turbine_rotor',
+                C: 'pneumaticcraft:printed_circuit_board',
+                D: 'refinedstorage:advanced_processor',
+                E: '#forge:nuggets/copper'
+            },
+            id: 'rftoolscontrol:graphics_card'
+        },
+        {
+            output: 'rftoolscontrol:network_card',
+            pattern: ['ABC', 'DDD'],
+            key: {
+                A: 'refinedstorage:wireless_transmitter',
+                B: 'pneumaticcraft:printed_circuit_board',
+                C: 'refinedstorage:advanced_processor',
+                D: '#forge:nuggets/copper'
+            },
+            id: 'rftoolscontrol:network_card'
+        },
+        {
+            output: 'rftoolscontrol:network_identifier',
+            pattern: ['AAA', 'A A', 'AAA'],
+            key: {
+                A: 'rftoolscontrol:token'
+            },
+            id: 'rftoolscontrol:network_identifier'
+        },
+        {
+            output: 'rftoolscontrol:advanced_network_card',
+            pattern: ['ABC'],
+            key: {
+                A: 'refinedstorage:range_upgrade',
+                B: 'rftoolscontrol:network_card',
+                C: 'extrastorage:neural_processor'
+            },
+            id: 'rftoolscontrol:advanced_network_card'
         }
     ];
 

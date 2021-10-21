@@ -27,7 +27,7 @@ onEvent('recipes', (event) => {
             id: 'refinedstorage:cable'
         },
         {
-            output: Item.of('refinedstorage:importer'),
+            output: 'refinedstorage:importer',
             pattern: [' C ', 'ADB', ' C '],
             key: {
                 A: 'refinedstorage:cable',
@@ -38,7 +38,7 @@ onEvent('recipes', (event) => {
             id: 'refinedstorage:importer'
         },
         {
-            output: Item.of('refinedstorage:exporter'),
+            output: 'refinedstorage:exporter',
             pattern: [' C ', 'ADB', ' C '],
             key: {
                 A: 'refinedstorage:cable',
@@ -49,7 +49,7 @@ onEvent('recipes', (event) => {
             id: 'refinedstorage:exporter'
         },
         {
-            output: Item.of('refinedstorage:external_storage'),
+            output: 'refinedstorage:external_storage',
             pattern: [' C ', 'AEB', ' D '],
             key: {
                 A: 'refinedstorage:cable',
@@ -61,7 +61,7 @@ onEvent('recipes', (event) => {
             id: 'refinedstorage:external_storage'
         },
         {
-            output: Item.of('refinedstorage:crafter'),
+            output: 'refinedstorage:crafter',
             pattern: ['ABA', 'CEC', 'ADA'],
             key: {
                 A: 'create:mechanical_crafter',
@@ -71,6 +71,27 @@ onEvent('recipes', (event) => {
                 E: 'refinedstorage:machine_casing'
             },
             id: 'refinedstorage:crafter'
+        },
+        {
+            output: 'refinedstorage:wireless_transmitter',
+            pattern: [' AC', 'ABA', 'BA '],
+            key: {
+                A: '#forge:wires/aluminum',
+                B: '#forge:rods/aluminum',
+                C: 'refinedstorage:advanced_processor'
+            },
+            id: 'refinedstorage:wireless_transmitter'
+        },
+        {
+            output: 'refinedstorage:range_upgrade',
+            pattern: ['ADA', 'CBC', 'AAA'],
+            key: {
+                A: 'refinedstorage:quartz_enriched_iron',
+                B: 'refinedstorage:upgrade',
+                C: 'refinedstorage:basic_processor',
+                D: 'refinedstorage:wireless_transmitter'
+            },
+            id: 'refinedstorage:range_upgrade'
         }
     ];
 
