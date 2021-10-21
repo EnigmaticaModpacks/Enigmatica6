@@ -300,6 +300,16 @@ onEvent('recipes', (event) => {
                 C: 'extrastorage:neural_processor'
             },
             id: 'rftoolscontrol:advanced_network_card'
+        },
+        {
+            output: 'rftoolscontrol:node',
+            pattern: [' A ', 'BCB'],
+            key: {
+                A: 'rftoolscontrol:network_card',
+                B: 'pneumaticcraft:printed_circuit_board',
+                C: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolscontrol:node'
         }
     ];
 
