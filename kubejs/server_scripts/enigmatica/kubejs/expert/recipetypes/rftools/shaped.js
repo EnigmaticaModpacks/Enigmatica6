@@ -16,7 +16,6 @@ onEvent('recipes', (event) => {
     */
 
     const recipes = [
-        ,
         {
             output: 'rftoolsutility:screen_controller',
             pattern: ['ABA', 'BCB', 'ABA'],
