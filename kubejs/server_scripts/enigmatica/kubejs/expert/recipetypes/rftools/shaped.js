@@ -365,6 +365,60 @@ onEvent('recipes', (event) => {
                 D: '#forge:gems/mana_diamond'
             },
             id: 'rftoolspower:dimensionalcell_advanced'
+        },
+        {
+            output: 'rftoolsutility:crafter1',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'rftoolscontrol:craftingstation',
+                D: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolsutility:crafter1'
+        },
+        {
+            output: 'rftoolsutility:crafter2',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'powah:capacitor_blazing',
+                C: 'rftoolscontrol:craftingstation',
+                D: 'rftoolsutility:crafter1'
+            },
+            id: 'rftoolsutility:crafter2'
+        },
+        {
+            output: 'rftoolsutility:crafter3',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'powah:capacitor_nitro',
+                C: 'rftoolscontrol:craftingstation',
+                D: 'rftoolsutility:crafter2'
+            },
+            id: 'rftoolsutility:crafter3'
+        },
+        {
+            output: 'rftoolsstorage:modular_storage',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'thermal:gray_rockwool',
+                B: '#forge:plates/steel',
+                C: 'thermal:machine_frame'
+            },
+            id: 'rftoolsstorage:modular_storage'
+        },
+        {
+            output: 'rftoolsstorage:storage_module0',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#thermal:glass/hardened',
+                B: 'ironchest:silver_chest',
+                C: 'buildinggadgets:construction_paste',
+                D: '#forge:gears/osmium'
+            },
+            id: 'rftoolsstorage:storage_module0'
         }
     ];
 
