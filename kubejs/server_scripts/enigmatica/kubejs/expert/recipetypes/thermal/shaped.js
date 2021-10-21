@@ -73,6 +73,17 @@ onEvent('recipes', (event) => {
                 B: '#forge:rods/lead'
             },
             id: 'kubejs:thermal_redstone_servo_with_lead'
+        },
+        {
+            output: 'thermal:charge_bench',
+            pattern: ['AAA', 'BCB', 'DBD'],
+            key: {
+                A: '#forge:ingots/electrum',
+                B: 'thermal:rf_coil',
+                C: 'thermal:energy_cell_frame',
+                D: '#forge:ingots/lead'
+            },
+            id: 'thermal:charge_bench'
         }
     ];
 

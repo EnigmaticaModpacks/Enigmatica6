@@ -25,7 +25,7 @@ onEvent('item.registry', (event) => {
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
-        'spirit_heat_exchanger',
+        'spirit_entropic_gateway',
         'amadron_survey_tools',
         'basalt_powder',
         'coke_brick_blend',
@@ -39,7 +39,7 @@ onEvent('item.registry', (event) => {
     const ritualDummies = [
         'summon_pink_wither',
         'summon_pharaoh',
-        'craft_spirit_heat_exchanger',
+        'craft_spirit_entropic_gateway',
         'craft_magical_feathers',
         'craft_magicfeather',
         'craft_soulsword',

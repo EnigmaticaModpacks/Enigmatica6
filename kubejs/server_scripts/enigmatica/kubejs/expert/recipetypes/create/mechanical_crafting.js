@@ -255,6 +255,35 @@ onEvent('recipes', (event) => {
                 I: 'pneumaticcraft:remote'
             },
             id: 'integrateddynamics:crafting/logic_programmer'
+        },
+        {
+            output: Item.of('2x portality:controller'),
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDEDC', 'ABBBA'],
+            key: {
+                A: 'portality:frame',
+                B: 'immersiveengineering:coil_lv',
+                C: 'immersiveengineering:electron_tube',
+                D: 'immersiveengineering:wirecoil_redstone',
+                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board'],
+                F: 'immersiveengineering:current_transformer',
+                G: 'xnet:controller'
+            },
+            id: 'portality:controller'
+        },
+        {
+            output: Item.of('rftoolsutility:environmental_controller'),
+            pattern: ['ABBBA', 'BCDCB', 'BEFEB', 'BGHGB', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'thermal:enderium_glass',
+                C: 'immersiveengineering:tesla_coil',
+                D: 'powah:player_aerial_pearl',
+                E: 'powah:aerial_pearl',
+                F: '#industrialforegoing:machine_frame/supreme',
+                G: '#forge:circuits/ultimate',
+                H: 'kubejs:spirit_entropic_gateway'
+            },
+            id: 'rftoolsutility:environmental_controller'
         }
     ];
 
@@ -285,7 +314,7 @@ onEvent('recipes', (event) => {
                 J: 'xnet:advanced_connector_blue',
                 K: 'xnet:netcable_blue',
                 L: 'pneumaticcraft:heat_pipe',
-                M: 'kubejs:spirit_heat_exchanger',
+                M: 'kubejs:spirit_entropic_gateway',
                 N: 'xnet:controller',
                 O: `powah:furnator_${tier}`,
                 P: 'create:fluid_pipe'

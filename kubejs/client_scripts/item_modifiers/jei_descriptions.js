@@ -355,6 +355,10 @@ onEvent('jei.information', (event) => {
             text: [
                 `Tiered Beehives have been depreciated. Use the Hive Upgrade items on nests found in the world instead. Tiered Beehives can be converted to Hive Upgrades in a crafting grid.`
             ]
+        },
+        {
+            items: ['upgrade_aquatic:flare_spawn_egg'],
+            text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
         }
     ];
 

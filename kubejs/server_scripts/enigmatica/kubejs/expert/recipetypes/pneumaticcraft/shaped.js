@@ -372,6 +372,16 @@ onEvent('recipes', (event) => {
                 G: 'kubejs:dimensional_storage_crystal'
             },
             id: 'pneumaticcraft:vacuum_trap'
+        },
+        {
+            output: 'pneumaticcraft:spawner_core_shell',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'kubejs:dimensional_storage_crystal',
+                B: 'pneumaticcraft:pressure_chamber_glass',
+                C: 'naturesaura:calling_spirit'
+            },
+            id: 'pneumaticcraft:spawner_core_shell'
         }
     ];
 

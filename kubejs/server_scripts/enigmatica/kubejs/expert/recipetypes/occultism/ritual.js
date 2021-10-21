@@ -695,7 +695,7 @@ onEvent('recipes', (event) => {
             activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
             pentacle_id: 'occultism:craft_foliot',
             duration: 10,
-            ritual_dummy: { item: 'kubejs:craft_spirit_heat_exchanger' },
+            ritual_dummy: { item: 'kubejs:craft_spirit_entropic_gateway' },
             ingredients: [
                 { item: 'ars_nouveau:void_jar' },
                 { item: 'atum:shu_godshard' },
@@ -706,8 +706,8 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/water' },
                 { tag: 'botania:runes/water' }
             ],
-            result: { item: 'kubejs:spirit_heat_exchanger' },
-            id: `${id_prefix}spirit_heat_exchanger`
+            result: { item: 'kubejs:spirit_entropic_gateway' },
+            id: `${id_prefix}spirit_entropic_gateway`
         },
         {
             ritual_type: 'occultism:craft_with_spirit_name',
