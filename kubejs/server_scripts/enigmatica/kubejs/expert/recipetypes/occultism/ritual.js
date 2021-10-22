@@ -434,7 +434,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:possess_foliot',
             duration: 3,
             entity_to_sacrifice: {
-                tag: 'occultism:wild_hunt_sacrifices',
+                tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'occultism:greedy_familiar',
@@ -672,7 +672,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:summon_wild_afrit',
             duration: 6,
             entity_to_sacrifice: {
-                tag: 'occultism:wild_hunt_sacrifices',
+                tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'atum:pharaoh',
