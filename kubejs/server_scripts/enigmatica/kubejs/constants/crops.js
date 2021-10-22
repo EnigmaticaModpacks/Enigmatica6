@@ -720,12 +720,6 @@ const cropRegistry = [
                 substrate: 'dirt'
             },
             {
-                seed: 'sushigocrafting:wasabi_seeds',
-                render: 'sushigocrafting:wasabi_crop',
-                plant: 'sushigocrafting:wasabi_root',
-                substrate: 'dirt'
-            },
-            {
                 seed: 'betterendforge:amber_root_seed',
                 render: 'betterendforge:amber_root_seed',
                 plant: 'betterendforge:amber_root_raw',
@@ -837,6 +831,12 @@ const cropRegistry = [
                 seed: 'simplefarming:yam_seeds',
                 render: 'simplefarming:yam_crop',
                 plant: 'simplefarming:yam',
+                substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:wasabi_seeds',
+                render: 'sushigocrafting:wasabi_crop',
+                plant: 'sushigocrafting:wasabi_root',
                 substrate: 'dirt'
             }
         ]
