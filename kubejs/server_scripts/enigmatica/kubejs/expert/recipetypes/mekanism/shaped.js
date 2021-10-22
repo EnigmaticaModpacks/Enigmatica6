@@ -16,7 +16,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'mekanism:fuelwood_heater',
             pattern: ['BAB', 'CDC', 'BAB'],
@@ -45,7 +45,7 @@ onEvent('recipes', (event) => {
             pattern: ['AAA', 'BCD', 'AAA'],
             key: {
                 A: 'mekanism:thermal_evaporation_block',
-                B: '#forge:circuits/advanced',
+                B: '#forge:circuits/elite',
                 C: '#industrialforegoing:machine_frame/advanced',
                 D: 'rftoolsbase:tablet'
             },
@@ -53,11 +53,12 @@ onEvent('recipes', (event) => {
         },
         {
             output: Item.of('2x mekanism:thermal_evaporation_block'),
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['ADA', 'BCB', 'ADA'],
             key: {
                 A: '#forge:plates/bronze',
                 B: 'pneumaticcraft:heat_pipe',
-                C: 'immersiveengineering:alloybrick'
+                C: 'immersiveengineering:alloybrick',
+                D: '#mekanism:alloys/reinforced'
             },
             id: 'mekanism:thermal_evaporation/block'
         },
@@ -69,13 +70,23 @@ onEvent('recipes', (event) => {
                 B: 'create:copper_valve_handle',
                 C: 'create:fluid_pipe',
                 D: 'create:fluid_valve',
-                E: '#forge:circuits/advanced'
+                E: '#forge:circuits/elite'
             },
             id: 'mekanism:thermal_evaporation/valve'
+        },
+        {
+            output: Item.of('3x mekanism:structural_glass'),
+            pattern: ['ABC', 'BCB', 'CBA'],
+            key: {
+                A: '#mekanism:alloys/reinforced',
+                B: '#forge:plates/aluminum',
+                C: '#thermal:glass/hardened'
+            },
+            id: 'mekanism:structural_glass'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
+    recipes.forEach((recipe) => {
         event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });
