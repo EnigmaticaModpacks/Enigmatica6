@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
                 C: 'integrateddynamics:menril_wood',
                 D: 'pneumaticcraft:smart_chest',
                 E: 'pneumaticcraft:upgrade_matrix',
-                F: 'pneumaticcraft:memory_stick'
+                F: 'kubejs:memory_advanced_filled'
             },
             id: 'integrateddynamics:crafting/variablestore'
         },

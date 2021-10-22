@@ -70,13 +70,25 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'rftoolsutility:charged_porter',
-            pattern: [' C ', 'CBC', 'ACA'],
+            pattern: ['EAE', 'BCB', 'EDE'],
             key: {
-                A: '#forge:ingots/iron_aluminum',
-                B: 'pneumaticcraft:printed_circuit_board',
-                C: 'minecraft:ender_pearl'
+                A: 'rftoolsutility:matter_beamer',
+                B: 'portality:frame',
+                C: 'rftoolsbase:tablet',
+                D: 'rftoolsutility:matter_transmitter',
+                E: 'powah:capacitor_basic_large'
             },
             id: 'rftoolsutility:charged_porter'
+        },
+        {
+            output: 'rftoolsutility:advanced_charged_porter',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'powah:capacitor_nitro',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolsutility:charged_porter'
+            },
+            id: 'rftoolsutility:advanced_charged_porter'
         },
         {
             output: 'rftoolsbuilder:shape_card_pump',
@@ -331,6 +343,94 @@ onEvent('recipes', (event) => {
                 E: 'rftoolsbase:machine_base'
             },
             id: 'rftoolsbase:tablet'
+        },
+        {
+            output: 'rftoolspower:dimensionalcell_simple',
+            pattern: ['AEA', 'BCB', 'ADA'],
+            key: {
+                A: 'rftoolspower:power_core1',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolsbase:machine_frame',
+                D: 'powah:ender_core',
+                E: 'rftoolscontrol:advanced_network_card'
+            },
+            id: 'rftoolspower:dimensionalcell_simple'
+        },
+        {
+            output: 'rftoolspower:dimensionalcell',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'rftoolspower:power_core2',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolspower:dimensionalcell_simple',
+                D: 'rftoolsbase:infused_diamond'
+            },
+            id: 'rftoolspower:dimensionalcell'
+        },
+        {
+            output: 'rftoolspower:dimensionalcell_advanced',
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: 'rftoolspower:power_core3',
+                B: 'kubejs:dimensional_storage_crystal',
+                C: 'rftoolspower:dimensionalcell',
+                D: '#forge:gems/mana_diamond'
+            },
+            id: 'rftoolspower:dimensionalcell_advanced'
+        },
+        {
+            output: 'rftoolsutility:crafter1',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'rftoolscontrol:craftingstation',
+                D: 'rftoolsbase:machine_frame'
+            },
+            id: 'rftoolsutility:crafter1'
+        },
+        {
+            output: 'rftoolsutility:crafter2',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'powah:capacitor_blazing',
+                C: 'rftoolscontrol:craftingstation',
+                D: 'rftoolsutility:crafter1'
+            },
+            id: 'rftoolsutility:crafter2'
+        },
+        {
+            output: 'rftoolsutility:crafter3',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'powah:capacitor_nitro',
+                C: 'rftoolscontrol:craftingstation',
+                D: 'rftoolsutility:crafter2'
+            },
+            id: 'rftoolsutility:crafter3'
+        },
+        {
+            output: 'rftoolsstorage:modular_storage',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'thermal:gray_rockwool',
+                B: '#forge:plates/steel',
+                C: 'thermal:machine_frame'
+            },
+            id: 'rftoolsstorage:modular_storage'
+        },
+        {
+            output: 'rftoolsstorage:storage_module0',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: '#thermal:glass/hardened',
+                B: 'ironchest:silver_chest',
+                C: 'buildinggadgets:construction_paste',
+                D: '#forge:gears/osmium'
+            },
+            id: 'rftoolsstorage:storage_module0'
         }
     ];
 

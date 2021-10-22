@@ -120,6 +120,14 @@ onEvent('recipes', (event) => {
             exothermic: false,
             temperature: { min_temp: 1973 },
             id: 'rftoolspower:power_core1'
+        },
+        {
+            fluid_input: { type: 'pneumaticcraft:fluid', fluid: 'mekanism:lithium', amount: 100 },
+            item_output: { item: 'emendatusenigmatica:lithium_dust', count: 1 },
+            pressure: 2.0,
+            exothermic: true,
+            temperature: { max_temp: 453 },
+            id: `${id_prefix}lithium_dust`
         }
     ];
 

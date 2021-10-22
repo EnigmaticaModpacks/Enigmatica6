@@ -41,16 +41,37 @@ onEvent('recipes', (event) => {
             id: 'mekanism:resistive_heater'
         },
         {
-            output: 'mekanism:metallurgic_infuser',
+            output: 'mekanism:thermal_evaporation_controller',
+            pattern: ['AAA', 'BCD', 'AAA'],
+            key: {
+                A: 'mekanism:thermal_evaporation_block',
+                B: '#forge:circuits/advanced',
+                C: '#industrialforegoing:machine_frame/advanced',
+                D: 'rftoolsbase:tablet'
+            },
+            id: 'mekanism:thermal_evaporation/controller'
+        },
+        {
+            output: Item.of('2x mekanism:thermal_evaporation_block'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:plates/bronze',
+                B: 'pneumaticcraft:heat_pipe',
+                C: 'immersiveengineering:alloybrick'
+            },
+            id: 'mekanism:thermal_evaporation/block'
+        },
+        {
+            output: 'mekanism:thermal_evaporation_valve',
             pattern: ['ABA', 'CDC', 'AEA'],
             key: {
-                A: '#forge:gears/osmium',
-                B: 'rftoolspower:blazing_agitator',
-                C: '#forge:circuits/basic',
-                D: 'thermal:machine_bottler',
-                E: 'rftoolspower:cell1'
+                A: 'mekanism:thermal_evaporation_block',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_valve',
+                E: '#forge:circuits/advanced'
             },
-            id: 'mekanism:metallurgic_infuser'
+            id: 'mekanism:thermal_evaporation/valve'
         }
     ];
 

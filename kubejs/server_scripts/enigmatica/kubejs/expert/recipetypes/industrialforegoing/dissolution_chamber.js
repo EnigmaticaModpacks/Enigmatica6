@@ -2,7 +2,7 @@ onEvent('recipes', (event) => {
     if (global.isExpertMode == false) {
         return;
     }
-
+    const id_prefix = 'enigmatica:expert/industrialforegoing/dissolution_chamber/';
     const recipes = [
         /*
         {
@@ -27,14 +27,14 @@ onEvent('recipes', (event) => {
         */
         {
             inputs: [
-                'minecraft:redstone',
+                'immersiveengineering:tesla_coil',
                 'rftoolsbase:machine_frame',
-                'minecraft:redstone',
-                'minecraft:redstone_torch',
-                'minecraft:redstone_torch',
-                '#forge:ingots/gold_copper',
-                '#forge:ingots/gold_copper',
-                '#forge:ingots/gold_copper'
+                'immersiveengineering:tesla_coil',
+                'immersiveengineering:coil_hv',
+                'immersiveengineering:coil_hv',
+                'powah:energy_discharger_spirited',
+                'powah:capacitor_spirited',
+                'powah:energy_discharger_spirited'
             ],
             inputFluid: 'tconstruct:molten_obsidian',
             inputFluidAmount: 1000,
@@ -104,6 +104,54 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'rftoolsutility:matter_beamer'
+        },
+        {
+            inputs: [
+                'rftoolscontrol:cpu_core_500',
+                '#forge:alloys/advanced',
+                '#forge:alloys/advanced',
+                '#forge:circuits/basic',
+                'kubejs:memory_advanced_filled'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 100,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:advanced_control_circuit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:control_circuit/advanced'
+        },
+        {
+            inputs: [
+                'rftoolscontrol:cpu_core_1000',
+                '#forge:alloys/elite',
+                '#forge:alloys/elite',
+                '#forge:circuits/advanced',
+                'kubejs:memory_elite_filled'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 100,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:elite_control_circuit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:control_circuit/elite'
+        },
+        {
+            inputs: [
+                'rftoolscontrol:cpu_core_2000',
+                '#forge:alloys/ultimate',
+                '#forge:alloys/ultimate',
+                '#forge:circuits/elite',
+                'kubejs:memory_ultimate_filled'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 100,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:ultimate_control_circuit', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:control_circuit/ultimate'
         }
     ];
 

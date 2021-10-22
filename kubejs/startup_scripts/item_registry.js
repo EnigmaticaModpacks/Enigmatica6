@@ -33,7 +33,15 @@ onEvent('item.registry', (event) => {
         'blast_brick_blend',
         'blast_brick',
         'red_nether_brick',
-        'ground_meat'
+        'ground_meat',
+        'memory_basic_empty',
+        'memory_basic_filled',
+        'memory_advanced_empty',
+        'memory_advanced_filled',
+        'memory_elite_empty',
+        'memory_elite_filled',
+        'memory_ultimate_empty',
+        'memory_ultimate_filled'
     ];
 
     const ritualDummies = [
@@ -64,6 +72,9 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+
+        { name: 'basic_memory_package', texture: 'assembly_package_filled' },
+        { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },

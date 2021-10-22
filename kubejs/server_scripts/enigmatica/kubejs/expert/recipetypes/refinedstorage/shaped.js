@@ -92,6 +92,59 @@ onEvent('recipes', (event) => {
                 D: 'refinedstorage:wireless_transmitter'
             },
             id: 'refinedstorage:range_upgrade'
+        },
+        {
+            output: Item.of('4x refinedstorage:speed_upgrade'),
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'refinedstorage:upgrade',
+                B: 'pneumaticcraft:glycerol',
+                C: {
+                    type: 'pneumaticcraft:fluid',
+                    tag: 'forge:lubricant',
+                    amount: 1000
+                }
+            },
+            id: 'refinedstorage:speed_upgrade'
+        },
+        {
+            output: 'refinedstorage:network_card',
+            pattern: ['ABA', 'ACA', 'ADA'],
+            key: {
+                A: 'refinedstorage:quartz_enriched_iron',
+                B: 'pneumaticcraft:printed_circuit_board',
+                C: 'refinedstorage:upgrade',
+                D: 'refinedstorage:advanced_processor'
+            },
+            id: 'refinedstorage:network_card'
+        },
+        {
+            output: 'refinedstorage:network_transmitter',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: '#forge:gears/enderium',
+                B: 'rftoolsutility:matter_transmitter',
+                C: 'refinedstorage:construction_core',
+                D: 'refinedstorage:machine_casing',
+                E: 'refinedstorage:destruction_core',
+                F: '#forge:ingots/aeternium',
+                G: 'rftoolscontrol:cpu_core_2000'
+            },
+            id: 'refinedstorage:network_transmitter'
+        },
+        {
+            output: 'refinedstorage:network_receiver',
+            pattern: ['FGF', 'CDE', 'ABA'],
+            key: {
+                A: '#forge:gears/enderium',
+                B: 'rftoolsutility:matter_receiver',
+                C: 'refinedstorage:construction_core',
+                D: 'refinedstorage:machine_casing',
+                E: 'refinedstorage:destruction_core',
+                F: '#forge:ingots/aeternium',
+                G: 'rftoolscontrol:cpu_core_2000'
+            },
+            id: 'refinedstorage:network_receiver'
         }
     ];
 

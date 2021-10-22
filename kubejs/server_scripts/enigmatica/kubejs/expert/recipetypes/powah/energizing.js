@@ -185,6 +185,36 @@ onEvent('recipes', (event) => {
                 nbt: '{duration:5000.0f,time:0.0f,quality:200000.0f}'
             },
             id: `${id_prefix}blazing_rod`
+        },
+        {
+            ingredients: [
+                { item: 'rftoolsbase:machine_base' },
+                { item: 'powah:capacitor_blazing' },
+                { item: 'powah:capacitor_blazing' },
+                { item: 'powah:capacitor_blazing' },
+                { item: 'powah:capacitor_blazing' }
+            ],
+            energy: '500000',
+            result: {
+                item: 'rftoolspower:power_core2',
+                count: 1
+            },
+            id: 'rftoolspower:power_core2'
+        },
+        {
+            ingredients: [
+                { item: 'rftoolsbase:machine_base' },
+                { item: 'powah:capacitor_nitro' },
+                { item: 'powah:capacitor_nitro' },
+                { item: 'powah:capacitor_nitro' },
+                { item: 'powah:capacitor_nitro' }
+            ],
+            energy: '10000000',
+            result: {
+                item: 'rftoolspower:power_core3',
+                count: 1
+            },
+            id: 'rftoolspower:power_core3'
         }
     ];
 
