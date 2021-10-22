@@ -296,7 +296,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:summon_wild_greater_spirit',
             duration: 3,
             entity_to_sacrifice: {
-                tag: 'occultism:wild_hunt_sacrifices',
+                tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'occultism:wild_hunt_wither_skeleton',
