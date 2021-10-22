@@ -12,7 +12,7 @@ onEvent('recipes', (event) => {
                 id: `${id_prefix}froststeel_ingot`
             },
             {
-                input1: Ingredient.of('4x #forge:ingots/aluminum'),
+                input1: Ingredient.of('3x #forge:ingots/aluminum'),
                 secondaries: [Ingredient.of('4x #forge:dusts/lithium'), Ingredient.of('#forge:ingots/copper')],
                 outputs: [Item.of('4x mekanism:alloy_reinforced')],
                 id: `${id_prefix}alloy_reinforced`

@@ -37,7 +37,7 @@ onEvent('recipes', (event) => {
         {
             inputs: [
                 Ingredient.of('4x #forge:dusts/lithium'),
-                Ingredient.of('4x #forge:ingots/aluminum'),
+                Ingredient.of('3x #forge:ingots/aluminum'),
                 Ingredient.of('#forge:ingots/copper')
             ],
             outputs: [Item.of('4x mekanism:alloy_reinforced')],

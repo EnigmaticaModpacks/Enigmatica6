@@ -152,6 +152,120 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:control_circuit/ultimate'
+        },
+        {
+            inputs: [
+                '#forge:gears/osmium',
+                'powah:blank_card',
+                '#forge:gears/osmium',
+                '#mekanism:alloys/infused',
+                '#mekanism:alloys/infused',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'pneumaticcraft:lubricant',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_speed', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/speed'
+        },
+        {
+            inputs: [
+                '#forge:gears/cobalt',
+                'powah:blank_card',
+                '#forge:gears/cobalt',
+                '#mekanism:alloys/reinforced',
+                '#mekanism:alloys/reinforced',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_energy', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/energy'
+        },
+        {
+            inputs: [
+                '#forge:gears/bronze',
+                'powah:blank_card',
+                '#forge:gears/bronze',
+                '#mekanism:alloys/infused',
+                '#mekanism:alloys/infused',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_filter', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/filter'
+        },
+        {
+            inputs: [
+                '#forge:gears/silver',
+                'powah:blank_card',
+                '#forge:gears/silver',
+                '#mekanism:alloys/reinforced',
+                '#mekanism:alloys/reinforced',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_gas', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/gas'
+        },
+        {
+            inputs: [
+                '#thermal:rockwool',
+                'powah:blank_card',
+                '#thermal:rockwool',
+                '#thermal:rockwool',
+                '#thermal:rockwool',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'integrateddynamics:liquid_chorus',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_muffling', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/muffling'
+        },
+        {
+            inputs: [
+                'dustrial_decor:anchor',
+                'powah:blank_card',
+                'dustrial_decor:anchor',
+                '#mekanism:alloys/infused',
+                '#mekanism:alloys/infused',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper',
+                '#forge:nuggets/copper'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 1000,
+            processingTime: 300,
+            outputItem: { item: 'mekanism:upgrade_anchor', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:upgrade/anchor'
         }
     ];
 
