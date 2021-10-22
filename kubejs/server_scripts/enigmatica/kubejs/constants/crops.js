@@ -861,8 +861,7 @@ const cropRegistry = [
                 render: 'sushigocrafting:sesame_crop',
                 plant: 'sushigocrafting:sesame_seeds',
                 substrate: 'dirt'
-            },
-
+            }
         ]
     },
     {
