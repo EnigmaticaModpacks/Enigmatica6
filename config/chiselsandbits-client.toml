@@ -1,0 +1,111 @@
+
+[client]
+
+	#Configuration entries related to the settings of gameplay aspects.
+	[client.settings]
+		#When enabled allows cycling through the tool modes of the chisel using (sneak) right clicks.
+		enable-right-click-mode-change = false
+		#When enabled changes the "damage"-bar indicator to be completely full when the bag is completely empty.
+		invert-bit-bag-fullness = false
+		#When enabled this gives each chisel its own chisel mode, instead of having a chisel mode globally.
+		per-chisel-mode = true
+		#When enabled notifies you of changes to for example tool modes in the chat.
+		chat-mode-notification = true
+		#When enabled shows the newly selected tool-mode in the item name.
+		item-name-mode-display = true
+
+		[client.settings.enable]
+
+			[client.settings.enable.toolbar]
+				#When enabled shows the tool mode of tools in the toolbar.
+				icons = true
+
+		[client.settings.clipboard]
+			#When enabled stores the data of broken chiseled blocks in your clipboard
+			add-broken-blocks = false
+
+		[client.settings.undo]
+			#The maximum amount of undo operations that are kept in memory. If more operations are added to the undo list, the oldest operations are removed from the list.
+			#Range: > -2147483648
+			max-count = 10
+
+		[client.settings.tape-measure]
+			#The maximum amount measurements stored before the oldest ones are removed.
+			#Range: > -2147483648
+			max-count = 10
+			#When enabled notifies you of measured sizes, measured with the tape measured, in the chat.
+			display-in-chat = true
+
+		[client.settings.radial]
+
+			[client.settings.radial.menu]
+				#The volume of the radial menu. Higher volume, makes the radial menu bigger.
+				#Range: 4.9E-324 ~ 1.7976931348623157E308
+				volume = 0.10000000149011612
+
+	[client.client]
+
+		#Performance related client configuration.
+		[client.client.performance]
+
+			[client.client.performance.bit-storage]
+
+				[client.client.performance.bit-storage.contents]
+
+					[client.client.performance.bit-storage.contents.cache]
+						#Determines the amount of models for the bit storage content, higher means more performance but also more memory usage.
+						#Range: 0 ~ 9223372036854775807
+						size = 100
+
+			[client.client.performance.max-drawn-region]
+				#The max hit box size of a chiselable region. Bigger requires more performance and more memory.
+				#Range: 4.9E-324 ~ 1.7976931348623157E308
+				size = 4.0
+
+			[client.client.performance.lighting]
+				#When enabled dynamic model generation extracts light map data from the models face data.
+				face-lightmap-extraction = true
+				#When enabled extracts the light emittance data from the block-state during dynamic model generation.
+				use-value = true
+
+			[client.client.performance.vertexformats]
+
+				[client.client.performance.vertexformats.custom]
+					#When enabled this prevents custom vertex formats from working.
+					disabled = true
+
+			[client.client.performance.models]
+
+				[client.client.performance.models.cache]
+					#The size of the model cache.
+					#Range: 3500 ~ 20000
+					size = 3500
+
+				[client.client.performance.models.builder]
+					#mod.chiselsandbits.config.client.performance.models.builder.threadcount.comment
+					#Range: 10 ~ 12
+					threadcount = 10
+
+			[client.client.performance.faces]
+
+				[client.client.performance.faces.cache]
+					#mod.chiselsandbits.config.client.performance.faces.cache.size.comment
+					#Range: 3500 ~ 20000
+					size = 10000
+
+		[client.client.client]
+
+			#client.gui
+			[client.client.client.gui]
+
+				[client.client.client.gui.radial-menu]
+					#radial-menu.mouse-indicator
+					mouse-indicator = false
+
+			[client.client.client.compat]
+
+				#mod.chiselsandbits.config.compat.jei.comment
+				[client.client.client.compat.jei]
+					#mod.chiselsandbits.config.compat.jei.inject-bits.comment
+					inject-bits = false
+
