@@ -18,17 +18,12 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'kubejs:basic_circuit_package',
-            pattern: ['AAA', 'EDB', 'CCC'],
+            pattern: ['AA ', 'BB ', 'CCD'],
             key: {
                 A: 'refinedstorage:improved_processor',
-
-                B: Item.of(
-                    'pneumaticcraft:memory_stick',
-                    '{BlockEntityTag:{SavedTanks:{Tank:{FluidName:"pneumaticcraft:memory_essence",Amount:64000}}}}'
-                ).weakNBT(),
+                B: 'kubejs:memory_basic_filled',
                 C: 'pneumaticcraft:printed_circuit_board',
-                D: 'mekanism:cardboard_box',
-                E: 'immersiveengineering:wirecoil_redstone'
+                D: 'mekanism:cardboard_box'
             },
             id: `${id_prefix}basic_circuit_package`
         },
@@ -50,6 +45,16 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:nether_wart'
             },
             id: `${id_prefix}red_nether_brick`
+        },
+        {
+            output: 'kubejs:basic_memory_package',
+            pattern: ['AAA', 'AAA', 'BC '],
+            key: {
+                A: 'rftoolscontrol:ram_chip',
+                B: 'mekanism:cardboard_box',
+                C: 'pneumaticcraft:unassembled_pcb'
+            },
+            id: `${id_prefix}basic_memory_package`
         },
 
         // Storage Parts

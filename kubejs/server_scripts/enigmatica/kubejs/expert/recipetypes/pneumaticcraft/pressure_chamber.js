@@ -194,6 +194,33 @@ onEvent('recipes', (event) => {
             pressure: 2.0,
             results: [{ item: 'integrateddynamics:variable_transformer_input', count: 1 }],
             id: `${id_prefix}variable_transformer_input`
+        },
+        {
+            inputs: [
+                { item: 'kubejs:memory_basic_empty', count: 2 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'kubejs:memory_advanced_empty', count: 1 }],
+            id: `${id_prefix}memory_advanced_empty`
+        },
+        {
+            inputs: [
+                { item: 'kubejs:memory_advanced_empty', count: 2 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'kubejs:memory_elite_empty', count: 1 }],
+            id: `${id_prefix}memory_elite_empty`
+        },
+        {
+            inputs: [
+                { item: 'kubejs:memory_elite_empty', count: 2 },
+                { item: 'fluxnetworks:flux_dust', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'kubejs:memory_ultimate_empty', count: 1 }],
+            id: `${id_prefix}memory_ultimate_empty`
         }
     ];
 

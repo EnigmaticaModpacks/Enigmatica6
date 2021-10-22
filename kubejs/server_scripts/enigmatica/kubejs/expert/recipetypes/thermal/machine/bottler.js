@@ -33,6 +33,30 @@ onEvent('recipes', (event) => {
             fluid: Fluid.of('tconstruct:molten_netherite', 5184),
             output: 'extrastorage:netherite_crafter',
             id: 'extrastorage:netherite_crafter'
+        },
+        {
+            input: 'kubejs:memory_basic_empty',
+            fluid: Fluid.of('pneumaticcraft:memory_essence', 9000),
+            output: 'kubejs:memory_basic_filled',
+            id: `${id_prefix}memory_basic_filled`
+        },
+        {
+            input: 'kubejs:memory_advanced_empty',
+            fluid: Fluid.of('pneumaticcraft:memory_essence', 18000),
+            output: 'kubejs:memory_advanced_filled',
+            id: `${id_prefix}memory_advanced_filled`
+        },
+        {
+            input: 'kubejs:memory_elite_empty',
+            fluid: Fluid.of('pneumaticcraft:memory_essence', 36000),
+            output: 'kubejs:memory_elite_filled',
+            id: `${id_prefix}memory_elite_filled`
+        },
+        {
+            input: 'kubejs:memory_ultimate_empty',
+            fluid: Fluid.of('pneumaticcraft:memory_essence', 72000),
+            output: 'kubejs:memory_ultimate_filled',
+            id: `${id_prefix}memory_ultimate_filled`
         }
     ];
     recipes.forEach((recipe) => {
