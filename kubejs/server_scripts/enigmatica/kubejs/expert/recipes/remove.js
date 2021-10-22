@@ -57,6 +57,9 @@ onEvent('recipes', (event) => {
         'integrateddynamics:crafting/variable_transformer_output',
         'integrateddynamics:crafting/variable_transformer_input',
 
+        'mekanism:metallurgic_infusing/alloy/reinforced',
+        'mekanism:metallurgic_infusing/alloy/atomic',
+
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
