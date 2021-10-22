@@ -2169,6 +2169,12 @@ const cropRegistry = [
                 render: 'upgrade_aquatic:tongue_kelp',
                 plant: 'upgrade_aquatic:tongue_kelp',
                 substrate: 'water'
+            },
+            {
+                seed: 'sushigocrafting:seaweed',
+                render: 'sushigocrafting:seaweed',
+                plant: 'sushigocrafting:seaweed',
+                substrate: 'water'
             }
         ]
     },
