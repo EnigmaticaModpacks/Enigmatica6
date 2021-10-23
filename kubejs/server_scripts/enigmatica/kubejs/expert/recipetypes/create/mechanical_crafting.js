@@ -298,6 +298,20 @@ onEvent('recipes', (event) => {
                 G: 'engineersdecor:thick_steel_pole_head'
             },
             id: 'mekanismgenerators:generator/wind'
+        },
+        {
+            output: 'mekanismgenerators:rotational_complex',
+            pattern: ['ABCCC', 'BDBFC', 'CBGBC', 'CEBDB', 'CCCBA'],
+            key: {
+                A: '#forge:circuits/elite',
+                B: '#forge:gears/compressed_iron',
+                C: '#xnet:cables',
+                D: '#mekanism:alloys/reinforced',
+                E: 'rftoolscontrol:node',
+                F: 'rftoolsbase:tablet',
+                G: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'mekanismgenerators:rotational_complex'
         }
     ];
 

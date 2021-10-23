@@ -194,7 +194,7 @@ onEvent('recipes', (event) => {
             id: 'mekanismgenerators:turbine/valve'
         },
         {
-            output: 'mekanismgenerators:turbine_vent',
+            output: Item.of('2x mekanismgenerators:turbine_vent'),
             pattern: ['AAA', 'BCB', 'AAA'],
             key: {
                 A: 'mekanismgenerators:turbine_casing',
