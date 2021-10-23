@@ -271,7 +271,7 @@ onEvent('recipes', (event) => {
             id: 'portality:controller'
         },
         {
-            output: Item.of('rftoolsutility:environmental_controller'),
+            output: 'rftoolsutility:environmental_controller',
             pattern: ['ABBBA', 'BCDCB', 'BEFEB', 'BGHGB', 'ABBBA'],
             key: {
                 A: 'powah:dielectric_casing',
@@ -284,6 +284,20 @@ onEvent('recipes', (event) => {
                 H: 'kubejs:spirit_entropic_gateway'
             },
             id: 'rftoolsutility:environmental_controller'
+        },
+        {
+            output: 'mekanismgenerators:wind_generator',
+            pattern: ['ABC', 'DEF', 'DEF', 'DGF'],
+            key: {
+                A: 'pneumaticcraft:turbine_rotor',
+                B: 'immersiveengineering:dynamo',
+                C: '#forge:gears/compressed_iron',
+                D: 'pneumaticcraft:plastic',
+                E: 'engineersdecor:thick_steel_pole',
+                F: 'powah:capacitor_basic_large',
+                G: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/wind'
         }
     ];
 

@@ -41,6 +41,18 @@ onEvent('recipes', (event) => {
             id: 'mekanism:resistive_heater'
         },
         {
+            output: 'mekanism:metallurgic_infuser',
+            pattern: ['ACA', 'BDB', 'AEA'],
+            key: {
+                A: '#forge:gears/osmium',
+                B: '#forge:circuits/basic',
+                C: 'rftoolspower:blazing_agitator',
+                D: 'thermal:machine_bottler',
+                E: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:metallurgic_infuser'
+        },
+        {
             output: 'mekanism:thermal_evaporation_controller',
             pattern: ['AAA', 'BCD', 'AAA'],
             key: {
@@ -157,6 +169,29 @@ onEvent('recipes', (event) => {
                 B: '#immersiveengineering:scaffoldings/aluminum'
             },
             id: 'mekanism:dynamic_tank'
+        },
+        {
+            output: Item.of('2x mekanismgenerators:turbine_casing'),
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:plates/aluminum',
+                B: 'mekanism:hdpe_sheet',
+                C: 'mekanism:steel_casing',
+                D: '#mekanism:alloys/reinforced'
+            },
+            id: 'mekanismgenerators:turbine/casing'
+        },
+        {
+            output: 'mekanismgenerators:turbine_valve',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanismgenerators:turbine_casing',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_valve',
+                E: '#forge:circuits/elite'
+            },
+            id: 'mekanismgenerators:turbine/valve'
         }
     ];
 
