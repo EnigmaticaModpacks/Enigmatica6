@@ -192,6 +192,36 @@ onEvent('recipes', (event) => {
                 E: '#forge:circuits/elite'
             },
             id: 'mekanismgenerators:turbine/valve'
+        },
+        {
+            output: 'mekanismgenerators:turbine_vent',
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'mekanismgenerators:turbine_casing',
+                B: 'create:fluid_pipe',
+                C: 'engineersdecor:straight_pipe_valve'
+            },
+            id: 'mekanismgenerators:turbine/vent'
+        },
+        {
+            output: 'mekanismgenerators:saturating_condenser',
+            pattern: ['BAB', 'BCB', 'BBB'],
+            key: {
+                A: 'pneumaticcraft:heat_sink',
+                B: 'create:fluid_pipe',
+                C: 'mekanism:steel_casing'
+            },
+            id: 'mekanismgenerators:saturating_condenser'
+        },
+        {
+            output: 'mekanismgenerators:electromagnetic_coil',
+            pattern: ['CAC', 'ABA', 'CAC'],
+            key: {
+                A: 'immersiveengineering:coil_lv',
+                B: '#industrialforegoing:machine_frame/supreme',
+                C: 'mekanism:basic_induction_cell'
+            },
+            id: 'mekanismgenerators:electromagnetic_coil'
         }
     ];
 
