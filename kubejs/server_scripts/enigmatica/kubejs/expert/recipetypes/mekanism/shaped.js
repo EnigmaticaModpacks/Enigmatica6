@@ -83,6 +83,59 @@ onEvent('recipes', (event) => {
                 C: '#thermal:glass/hardened'
             },
             id: 'mekanism:structural_glass'
+        },
+        {
+            output: 'mekanism:steel_casing',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: '#forge:plates/steel',
+                B: '#mekanism:alloys/infused',
+                C: 'thermal:machine_frame'
+            },
+            id: 'mekanism:steel_casing'
+        },
+        {
+            output: 'mekanism:boiler_valve',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanism:boiler_casing',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_valve',
+                E: '#forge:circuits/elite'
+            },
+            id: 'mekanism:boiler_valve'
+        },
+        {
+            output: Item.of('2x mekanism:boiler_casing'),
+            pattern: ['ADA', 'BCB', 'ADA'],
+            key: {
+                A: '#forge:plates/constantan',
+                B: 'pneumaticcraft:heat_pipe',
+                C: 'mekanism:steel_casing',
+                D: '#mekanism:alloys/reinforced'
+            },
+            id: 'mekanism:boiler_casing'
+        },
+        {
+            output: 'mekanism:superheating_element',
+            pattern: ['AAA', 'DCD', 'BDB'],
+            key: {
+                A: 'pneumaticcraft:heat_sink',
+                B: 'pneumaticcraft:heat_pipe',
+                C: 'mekanism:steel_casing',
+                D: 'immersiveengineering:coil_mv'
+            },
+            id: 'mekanism:superheating_element'
+        },
+        {
+            output: 'mekanism:pressure_disperser',
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'pneumaticcraft:advanced_pressure_tube',
+                B: 'mekanism:steel_casing'
+            },
+            id: 'mekanism:pressure_disperser'
         }
     ];
 

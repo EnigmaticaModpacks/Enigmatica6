@@ -7,7 +7,7 @@ onEvent('recipes', (event) => {
         {
             itemInput: { ingredient: { tag: 'forge:ingots/manyullyn', count: 2 } },
             fluidInput: { amount: 144, fluid: 'materialis:molten_shadow_steel' },
-            gasInput: { amount: 1000, gas: 'mekanism:polonium' },
+            gasInput: { amount: 1000, gas: 'mekanism:plutonium' },
             energyRequired: 1000,
             duration: 300,
             itemOutput: { item: 'mekanism:alloy_atomic', count: 3 },
