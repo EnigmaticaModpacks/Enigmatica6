@@ -221,6 +221,15 @@ onEvent('recipes', (event) => {
             pressure: 4.0,
             results: [{ item: 'kubejs:memory_ultimate_empty', count: 1 }],
             id: `${id_prefix}memory_ultimate_empty`
+        },
+        {
+            inputs: [
+                { tag: 'mekanism:alloys/reinforced', count: 3 },
+                { item: 'pneumaticcraft:turbine_rotor', count: 1 }
+            ],
+            pressure: 4.0,
+            results: [{ item: 'mekanismgenerators:turbine_blade', count: 1 }],
+            id: 'mekanismgenerators:turbine/blade'
         }
     ];
 
