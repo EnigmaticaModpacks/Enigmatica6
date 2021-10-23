@@ -136,6 +136,27 @@ onEvent('recipes', (event) => {
                 B: 'mekanism:steel_casing'
             },
             id: 'mekanism:pressure_disperser'
+        },
+        {
+            output: 'mekanism:dynamic_valve',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanism:dynamic_tank',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_valve',
+                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board']
+            },
+            id: 'mekanism:dynamic_valve'
+        },
+        {
+            output: Item.of('8x mekanism:dynamic_tank'),
+            pattern: ['AAA', 'ABA', 'AAA'],
+            key: {
+                A: 'immersiveengineering:sheetmetal_colored_black',
+                B: '#immersiveengineering:scaffoldings/aluminum'
+            },
+            id: 'mekanism:dynamic_tank'
         }
     ];
 
