@@ -17,6 +17,13 @@ onEvent('recipes', (event) => {
             infusionInput: 'mekanism:redstone',
             infusionAmount: 80,
             id: 'refinedstorage:stack_upgrade'
+        },
+        {
+            output: 'mekanismgenerators:reactor_glass',
+            input: 'mekanism:structural_glass',
+            infusionInput: 'mekanism:refined_obsidian',
+            infusionAmount: 320,
+            id: 'mekanismgenerators:reactor/glass'
         }
     ];
 

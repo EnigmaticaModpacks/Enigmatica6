@@ -222,6 +222,52 @@ onEvent('recipes', (event) => {
                 C: 'mekanism:basic_induction_cell'
             },
             id: 'mekanismgenerators:electromagnetic_coil'
+        },
+        {
+            output: 'mekanismgenerators:fission_fuel_assembly',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/cobalt',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'thermal:machine_frame'
+            },
+            id: 'mekanismgenerators:fission_reactor/fuel_assembly'
+        },
+        {
+            output: 'mekanismgenerators:control_rod_assembly',
+            pattern: ['DCD', 'EFE', 'ABA'],
+            key: {
+                A: '#forge:rods/cobalt',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'thermal:machine_frame',
+                D: 'thermal:redstone_servo',
+                E: '#forge:gears/cobalt',
+                F: '#forge:circuits/elite'
+            },
+            id: 'mekanismgenerators:fission_reactor/control_rod_assembly'
+        },
+        {
+            output: 'mekanism:sps_port',
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'mekanism:sps_casing',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_pressurized_tube',
+                D: '#forge:circuits/ultimate'
+            },
+            id: 'mekanism:sps_port'
+        },
+        {
+            output: 'mekanismgenerators:fission_reactor_port',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanismgenerators:fission_reactor_casing',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_valve',
+                E: '#forge:circuits/elite'
+            },
+            id: 'mekanismgenerators:fission_reactor/port'
         }
     ];
 

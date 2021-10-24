@@ -266,6 +266,25 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:upgrade/anchor'
+        },
+        {
+            inputs: [
+                '#forge:pellets/polonium',
+                '#industrialforegoing:machine_frame/supreme',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/ultimate',
+                'mekanism:hdpe_sheet'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 1000,
+            processingTime: 6000,
+            outputItem: { item: 'mekanism:sps_casing', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:sps_casing'
         }
     ];
 
