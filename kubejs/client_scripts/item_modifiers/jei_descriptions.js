@@ -359,6 +359,10 @@ onEvent('jei.information', (event) => {
         {
             items: ['upgrade_aquatic:flare_spawn_egg'],
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
+        },
+        {
+            items: ['quark:dragon_scale'],
+            text: [`Only drops from dragons after the first one has been killed.`]
         }
     ];
 
