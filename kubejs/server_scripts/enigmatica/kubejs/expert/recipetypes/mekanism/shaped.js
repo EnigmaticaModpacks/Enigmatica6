@@ -290,6 +290,82 @@ onEvent('recipes', (event) => {
                 C: 'rftoolsbase:tablet'
             },
             id: 'mekanism:induction/port'
+        },
+        {
+            output: 'mekanism:electrolytic_separator',
+            pattern: ['ABA', 'CDC', 'ACA'],
+            key: {
+                A: '#forge:gears/osmium',
+                B: 'mekanism:electrolytic_core',
+                C: 'thermal:fluid_cell',
+                D: 'thermal:machine_frame'
+            },
+            id: 'mekanism:electrolytic_separator'
+        },
+        {
+            output: 'mekanism:electrolytic_core',
+            pattern: ['ABA', 'CBD', 'ABA'],
+            key: {
+                A: 'immersiveengineering:wirecoil_copper',
+                B: 'thermal:diving_fabric',
+                C: '#forge:plates/zinc',
+                D: '#forge:plates/aluminum'
+            },
+            id: 'mekanism:electrolytic_core'
+        },
+        {
+            output: 'mekanism:jetpack',
+            pattern: ['ABA', 'CDC', 'E E'],
+            key: {
+                A: '#forge:plates/bronze',
+                B: 'immersiveengineering:logic_circuit',
+                C: 'create:copper_backtank',
+                D: 'thermal:hazmat_chestplate',
+                E: 'immersiveengineering:toolupgrade_chemthrower_focus'
+            },
+            id: 'mekanism:jetpack'
+        },
+        {
+            output: 'mekanism:jetpack_armored',
+            pattern: ['A A', 'BCB', ' D '],
+            key: {
+                A: '#forge:gears/aluminum',
+                B: '#forge:plates/signalum',
+                C: ['mekanismtools:steel_chestplate', 'immersiveengineering:armor_steel_chest'],
+                D: 'mekanism:jetpack'
+            },
+            id: 'mekanism:jetpack_armored'
+        },
+        {
+            output: 'mekanismgenerators:solar_panel',
+            pattern: ['AAA', 'AAA', 'BBB'],
+            key: {
+                A: 'quark:blue_framed_glass_pane',
+                B: 'powah:thermoelectric_plate'
+            },
+            id: 'mekanismgenerators:solar_panel'
+        },
+        {
+            output: 'mekanismgenerators:solar_generator',
+            pattern: ['ABA', 'ACA', ' D '],
+            key: {
+                A: 'mekanismgenerators:solar_panel',
+                B: 'immersiveengineering:logic_circuit',
+                C: 'thermal:redstone_servo',
+                D: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/solar'
+        },
+        {
+            output: 'mekanismgenerators:advanced_solar_generator',
+            pattern: ['ACA', 'ABA', ' D '],
+            key: {
+                A: 'mekanismgenerators:solar_generator',
+                B: 'engineersdecor:thick_steel_pole',
+                C: 'thermal:redstone_servo',
+                D: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/advanced_solar'
         }
     ];
 
