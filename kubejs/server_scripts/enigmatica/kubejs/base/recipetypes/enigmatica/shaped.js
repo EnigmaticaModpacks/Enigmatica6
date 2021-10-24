@@ -781,18 +781,6 @@ onEvent('recipes', (event) => {
         });
     });
 
-    colors.forEach((color) => {
-        event
-            .shaped(`botanypots:${color}_botany_pot`, ['ADA', 'ABA', 'ACA'], {
-                A: `minecraft:${color}_terracotta`,
-                B: 'minecraft:flower_pot',
-                C: 'minecraft:bone_block',
-                D: 'minecraft:water_bucket'
-            })
-            .id(`botanypots:crafting/${color}_botany_pot`);
-        event.remove({ id: `botanypots:crafting/compact_hopper_${color}_botany_pot` });
-    });
-
     //Generate Forest Comb recipes for each tree type other than Oak (those are handled under newRecipes)
     treeRegistry.forEach((treeCategories) => {
         if (treeCategories.type == 'tree') {

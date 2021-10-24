@@ -268,6 +268,18 @@ onEvent('recipes', (event) => {
                 E: '#forge:circuits/elite'
             },
             id: 'mekanismgenerators:fission_reactor/port'
+        },
+        {
+            output: 'mekanism:laser',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'industrialforegoing:laser_lens14',
+                B: '#mekanism:alloys/infused',
+                C: '#forge:gems/nitro',
+                D: 'mekanism:advanced_induction_cell',
+                E: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: 'mekanism:laser'
         }
     ];
 

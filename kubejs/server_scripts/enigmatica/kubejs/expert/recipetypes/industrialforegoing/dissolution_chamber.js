@@ -285,8 +285,61 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:sps_casing'
+        },
+        {
+            inputs: [
+                'mekanism:ultimate_induction_cell',
+                'immersiveengineering:coil_mv',
+                'mekanism:ultimate_induction_cell',
+                '#forge:circuits/ultimate',
+                '#forge:circuits/ultimate',
+                '#forge:pellets/polonium',
+                'mekanism:laser',
+                '#forge:pellets/polonium'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 1000,
+            processingTime: 6000,
+            outputItem: { item: 'mekanism:supercharged_coil', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:supercharged_coil'
         }
     ];
+
+    colors.forEach((color) => {
+        recipes.push(
+            {
+                inputs: [
+                    'atum:fertile_soil',
+                    'mythicbotany:aquapanthus',
+                    'atum:fertile_soil',
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`
+                ],
+                inputFluid: 'industrialforegoing:sewage',
+                inputFluidAmount: 8000,
+                processingTime: 600,
+                outputItem: { item: `botanypots:${color}_botany_pot`, count: 1 },
+                outputFluid: '',
+                outputFluidAmount: 0,
+                id: `botanypots:crafting/${color}_botany_pot`
+            },
+            {
+                inputs: [`botanypots:${color}_botany_pot`, 'ars_nouveau:sylph_charm', 'naturesaura:grated_chute'],
+                inputFluid: 'materialis:molten_fairy',
+                inputFluidAmount: 1296,
+                processingTime: 600,
+                outputItem: { item: `botanypots:hopper_${color}_botany_pot`, count: 1 },
+                outputFluid: '',
+                outputFluidAmount: 0,
+                id: `botanypots:crafting/hopper_${color}_botany_pot`
+            }
+        );
+    });
 
     recipes.forEach((recipe) => {
         let ingredients = [];
