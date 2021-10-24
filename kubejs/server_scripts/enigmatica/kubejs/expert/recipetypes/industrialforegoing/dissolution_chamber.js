@@ -320,6 +320,25 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:induction/casing'
+        },
+        {
+            inputs: [
+                'mekanismgenerators:electromagnetic_coil',
+                '#forge:pellets/polonium',
+                '#mekanism:alloys/atomic',
+                'powah:dielectric_casing',
+                'rftoolscontrol:node',
+                '#xnet:cables',
+                '#xnet:cables',
+                '#xnet:cables'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 100,
+            processingTime: 600,
+            outputItem: { item: 'mekanismgenerators:fusion_reactor_frame', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:reactor/frame'
         }
     ];
 

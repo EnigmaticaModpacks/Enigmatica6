@@ -312,6 +312,22 @@ onEvent('recipes', (event) => {
                 G: '#industrialforegoing:machine_frame/advanced'
             },
             id: 'mekanismgenerators:rotational_complex'
+        },
+        {
+            output: 'mekanismgenerators:fusion_reactor_controller',
+            pattern: ['  ABA  ', ' ACDCA ', 'ACEFECA', 'BDGHGDB', 'ACEIECA', ' ACDCA ', '  ABA  '],
+            key: {
+                A: 'mekanismgenerators:reactor_glass',
+                B: '#xnet:cables',
+                C: 'mekanismgenerators:fusion_reactor_frame',
+                D: '#xnet:advanced_connectors',
+                E: 'mekanism:ultimate_chemical_tank',
+                F: 'rftoolsutility:environmental_controller',
+                G: '#forge:circuits/ultimate',
+                H: 'mekanism:ultimate_fluid_tank',
+                I: 'rftoolsbase:tablet'
+            },
+            id: 'mekanismgenerators:reactor/controller'
         }
     ];
 

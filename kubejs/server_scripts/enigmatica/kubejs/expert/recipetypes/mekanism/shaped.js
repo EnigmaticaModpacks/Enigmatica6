@@ -247,7 +247,7 @@ onEvent('recipes', (event) => {
             id: 'mekanismgenerators:fission_reactor/control_rod_assembly'
         },
         {
-            output: 'mekanism:sps_port',
+            output: Item.of('2x mekanism:sps_port'),
             pattern: ['ABA', 'CDC', 'ABA'],
             key: {
                 A: 'mekanism:sps_casing',
@@ -366,6 +366,37 @@ onEvent('recipes', (event) => {
                 D: 'engineersdecor:thick_steel_pole_head'
             },
             id: 'mekanismgenerators:generator/advanced_solar'
+        },
+        {
+            output: Item.of('2x mekanismgenerators:fusion_reactor_port'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'mekanismgenerators:fusion_reactor_frame',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_pressurized_tube',
+                D: '#forge:circuits/ultimate'
+            },
+            id: 'mekanismgenerators:reactor/port'
+        },
+        {
+            output: 'mekanism:laser_amplifier',
+            pattern: ['ABA', 'BCD', 'ABA'],
+            key: {
+                A: '#mekanism:alloys/infused',
+                B: 'mekanismgenerators:laser_focus_matrix',
+                C: 'mekanism:basic_induction_cell',
+                D: 'industrialforegoing:laser_lens14'
+            },
+            id: 'mekanism:laser_amplifier'
+        },
+        {
+            output: 'mekanismgenerators:laser_focus_matrix',
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'mekanismgenerators:reactor_glass',
+                B: 'industrialforegoing:laser_lens14'
+            },
+            id: 'mekanismgenerators:laser_focus_matrix'
         }
     ];
 
