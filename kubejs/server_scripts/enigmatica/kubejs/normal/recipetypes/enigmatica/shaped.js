@@ -32,16 +32,16 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'magicfeather:magicfeather',
-            pattern: ['CEC', 'BDF', 'AEA'],
+            pattern: ['CFC', 'BDB', 'AEA'],
             key: {
-                A: 'atum:nebu_ingot',
-                B: 'integrateddynamics:variable_transformer_output',
-                C: 'create:refined_radiance',
-                D: 'byg:leaf_pile',
-                E: 'astralsorcery:aquamarine',
-                F: 'integrateddynamics:variable_transformer_input'
+                A: 'create:refined_radiance',
+                B: 'create:crafter_slot_cover',
+                C: 'create:electron_tube',
+                D: 'create:precision_mechanism',
+                E: 'create:chocolate_glazed_berries',
+                F: 'create:honeyed_apple'
             },
-            id: `${id_prefix}magicfeather_shiny`
+            id: `${id_prefix}magicfeather_create`
         },
         {
             output: 'losttrinkets:magical_feathers',
