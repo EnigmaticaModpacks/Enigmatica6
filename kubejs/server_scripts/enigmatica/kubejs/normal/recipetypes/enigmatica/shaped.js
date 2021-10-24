@@ -42,6 +42,216 @@ onEvent('recipes', (event) => {
                 F: 'minecraft:ender_eye'
             },
             id: `${id_prefix}magical_feathers`
+        },
+        {
+            output: 'ironjetpacks:hardened_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: 'powah:steel_energized',
+                B: 'powah:battery_hardened',
+                C: 'thermal:hazmat_chestplate',
+                D: 'ironjetpacks:hardened_thruster',
+                E: 'powah:reactor_hardened'
+            },
+            id: `${id_prefix}ironjetpacks/hardened_jetpack`
+        },
+        {
+            output: 'ironjetpacks:hardened_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: 'powah:steel_energized',
+                B: 'powah:capacitor_hardened',
+                C: 'powah:furnator_hardened',
+                D: 'powah:reactor_hardened'
+            },
+            id: `${id_prefix}ironjetpacks/hardened_thruster`
+        },
+
+        {
+            output: 'ironjetpacks:invar_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: '#forge:plates/invar',
+                B: 'thermal:upgrade_augment_1',
+                C: 'ironjetpacks:hardened_jetpack',
+                D: 'ironjetpacks:invar_thruster',
+                E: '#forge:gears/invar'
+            },
+            id: `${id_prefix}ironjetpacks/invar_jetpack`
+        },
+        {
+            output: 'ironjetpacks:invar_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: '#forge:plates/invar',
+                B: 'powah:capacitor_hardened',
+                C: 'powah:furnator_hardened',
+                D: '#forge:gears/invar'
+            },
+            id: `${id_prefix}ironjetpacks/invar_thruster`
+        },
+        {
+            output: 'ironjetpacks:blazing_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: 'powah:crystal_blazing',
+                B: 'powah:battery_blazing',
+                C: 'ironjetpacks:invar_jetpack',
+                D: 'ironjetpacks:blazing_thruster',
+                E: 'powah:reactor_blazing'
+            },
+            id: `${id_prefix}ironjetpacks/blazing_jetpack`
+        },
+        {
+            output: 'ironjetpacks:blazing_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: 'powah:crystal_blazing',
+                B: 'powah:capacitor_blazing',
+                C: 'powah:furnator_blazing',
+                D: 'powah:reactor_blazing'
+            },
+            id: `${id_prefix}ironjetpacks/blazing_thruster`
+        },
+        {
+            output: 'ironjetpacks:signalum_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: '#forge:plates/signalum',
+                B: 'thermal:upgrade_augment_2',
+                C: 'ironjetpacks:blazing_jetpack',
+                D: 'ironjetpacks:signalum_thruster',
+                E: '#forge:gears/signalum'
+            },
+            id: `${id_prefix}ironjetpacks/signalum_jetpack`
+        },
+        {
+            output: 'ironjetpacks:signalum_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: '#forge:plates/signalum',
+                B: 'powah:capacitor_blazing',
+                C: 'powah:furnator_blazing',
+                D: '#forge:gears/signalum'
+            },
+            id: `${id_prefix}ironjetpacks/signalum_thruster`
+        },
+        {
+            output: 'ironjetpacks:niotic_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: 'powah:crystal_niotic',
+                B: 'powah:battery_niotic',
+                C: 'ironjetpacks:signalum_jetpack',
+                D: 'ironjetpacks:niotic_thruster',
+                E: 'powah:reactor_niotic'
+            },
+            id: `${id_prefix}ironjetpacks/niotic_jetpack`
+        },
+        {
+            output: 'ironjetpacks:niotic_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: 'powah:crystal_niotic',
+                B: 'powah:capacitor_niotic',
+                C: 'powah:furnator_niotic',
+                D: 'powah:reactor_niotic'
+            },
+            id: `${id_prefix}ironjetpacks/niotic_thruster`
+        },
+
+        {
+            output: 'ironjetpacks:lumium_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: '#forge:plates/lumium',
+                B: 'thermal:dynamo_fuel_augment',
+                C: 'ironjetpacks:niotic_jetpack',
+                D: 'ironjetpacks:lumium_thruster',
+                E: '#forge:gears/lumium'
+            },
+            id: `${id_prefix}ironjetpacks/lumium_jetpack`
+        },
+        {
+            output: 'ironjetpacks:lumium_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: '#forge:plates/lumium',
+                B: 'powah:capacitor_niotic',
+                C: 'powah:furnator_niotic',
+                D: '#forge:gears/lumium'
+            },
+            id: `${id_prefix}ironjetpacks/lumium_thruster`
+        },
+
+        {
+            output: 'ironjetpacks:spirited_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: 'powah:crystal_spirited',
+                B: 'powah:battery_spirited',
+                C: 'ironjetpacks:lumium_jetpack',
+                D: 'ironjetpacks:spirited_thruster',
+                E: 'powah:reactor_spirited'
+            },
+            id: `${id_prefix}ironjetpacks/spirited_jetpack`
+        },
+        {
+            output: 'ironjetpacks:spirited_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: 'powah:crystal_spirited',
+                B: 'powah:capacitor_spirited',
+                C: 'powah:furnator_spirited',
+                D: 'powah:reactor_spirited'
+            },
+            id: `${id_prefix}ironjetpacks/spirited_thruster`
+        },
+        {
+            output: 'ironjetpacks:enderium_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: '#forge:plates/enderium',
+                B: 'thermal:upgrade_augment_3',
+                C: 'ironjetpacks:spirited_jetpack',
+                D: 'ironjetpacks:enderium_thruster',
+                E: '#forge:gears/enderium'
+            },
+            id: `${id_prefix}ironjetpacks/enderium_jetpack`
+        },
+        {
+            output: 'ironjetpacks:enderium_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: '#forge:plates/enderium',
+                B: 'powah:capacitor_spirited',
+                C: 'powah:furnator_spirited',
+                D: '#forge:gears/enderium'
+            },
+            id: `${id_prefix}ironjetpacks/enderium_thruster`
+        },
+        {
+            output: 'ironjetpacks:nitro_jetpack',
+            pattern: ['ABA', 'ECE', 'D D'],
+            key: {
+                A: 'powah:crystal_nitro',
+                B: 'powah:battery_nitro',
+                C: 'ironjetpacks:enderium_jetpack',
+                D: 'ironjetpacks:nitro_thruster',
+                E: 'powah:reactor_nitro'
+            },
+            id: `${id_prefix}ironjetpacks/nitro_jetpack`
+        },
+        {
+            output: 'ironjetpacks:nitro_thruster',
+            pattern: [' B ', 'BDB', 'ACA'],
+            key: {
+                A: 'powah:crystal_nitro',
+                B: 'powah:capacitor_nitro',
+                C: 'powah:furnator_nitro',
+                D: 'powah:reactor_nitro'
+            },
+            id: `${id_prefix}ironjetpacks/nitro_thruster`
         }
     ];
 
