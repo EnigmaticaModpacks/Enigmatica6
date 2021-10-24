@@ -1128,10 +1128,35 @@
 				{
 					id: "0000000000000460"
 					type: "item"
+					title: "Mining Gadget"
 					item: {
-						id: "mininggadgets:mininggadget"
+						id: "itemfilters:or"
 						Count: 1b
-						tag: { }
+						tag: {
+							items: [
+								{
+									id: "mininggadgets:mininggadget_simple"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+								{
+									id: "mininggadgets:mininggadget_fancy"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+								{
+									id: "mininggadgets:mininggadget"
+									Count: 1b
+									tag: {
+										energy: 1000000
+									}
+								}
+							]
+						}
 					}
 				}
 				{
