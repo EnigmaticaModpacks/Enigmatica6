@@ -280,6 +280,16 @@ onEvent('recipes', (event) => {
                 E: '#industrialforegoing:machine_frame/supreme'
             },
             id: 'mekanism:laser'
+        },
+        {
+            output: Item.of('2x mekanism:induction_port'),
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'mekanism:induction_casing',
+                B: '#forge:circuits/elite',
+                C: 'rftoolsbase:tablet'
+            },
+            id: 'mekanism:induction/port'
         }
     ];
 

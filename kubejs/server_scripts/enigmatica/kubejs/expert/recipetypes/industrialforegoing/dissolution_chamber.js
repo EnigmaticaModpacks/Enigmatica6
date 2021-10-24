@@ -304,6 +304,22 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:supercharged_coil'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                '#industrialforegoing:machine_frame/simple',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 4000,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:induction_casing', count: 4 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:induction/casing'
         }
     ];
 
