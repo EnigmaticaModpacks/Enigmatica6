@@ -24,6 +24,13 @@ onEvent('recipes', (event) => {
             infusionInput: 'mekanism:refined_obsidian',
             infusionAmount: 320,
             id: 'mekanismgenerators:reactor/glass'
+        },
+        {
+            output: 'immersiveengineering:rockcutter',
+            input: 'immersiveengineering:sawblade',
+            infusionInput: 'mekanism:diamond',
+            infusionAmount: 80,
+            id: 'immersiveengineering:crafting/rockcutter'
         }
     ];
 
