@@ -16,6 +16,14 @@
 	distillationTower_energyModifier = 1.0
 	#A modifier to apply to the time of every Distillation recipe. Can't be lower than 1, default=1
 	distillationTower_timeModifier = 1.0
+	#A modifier to apply to the energy costs of every Coker Tower recipe, default=1
+	cokerUnit_energyModifier = 1.0
+	#A modifier to apply to the time of every Coker recipe. Can't be lower than 1, default=1
+	cokerUnit_timeModifier = 1.0
+	#A modifier to apply to the energy costs of every Sulfur Recovery Unit recipe, default=1
+	hydrotreater_energyModifier = 1.0
+	#A modifier to apply to the time of every Sulfur Recovery Unit recipe. Can't be lower than 1, default=1
+	hydrotreater_timeModifier = 1.0
 
 [Generation]
 	#List of Portable Generator fuels. Format: fluid_name, mb_used_per_tick, flux_produced_per_tick
