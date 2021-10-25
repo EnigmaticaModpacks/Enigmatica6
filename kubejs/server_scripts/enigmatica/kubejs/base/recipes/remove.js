@@ -65,6 +65,8 @@ onEvent('recipes', (event) => {
         'aquaculture:planks_from_driftwood',
         'aquaculture:red_mushroom_from_red_shrooma',
 
+        'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking',
+
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
