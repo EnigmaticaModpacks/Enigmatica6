@@ -16,14 +16,22 @@
 	distillationTower_energyModifier = 1.0
 	#A modifier to apply to the time of every Distillation recipe. Can't be lower than 1, default=1
 	distillationTower_timeModifier = 1.0
+	#A modifier to apply to the energy costs of every Coker Tower recipe, default=1
+	cokerUnit_energyModifier = 1.0
+	#A modifier to apply to the time of every Coker recipe. Can't be lower than 1, default=1
+	cokerUnit_timeModifier = 1.0
+	#A modifier to apply to the energy costs of every Sulfur Recovery Unit recipe, default=1
+	hydrotreater_energyModifier = 1.0
+	#A modifier to apply to the time of every Sulfur Recovery Unit recipe. Can't be lower than 1, default=1
+	hydrotreater_timeModifier = 1.0
 
 [Generation]
 	#List of Portable Generator fuels. Format: fluid_name, mb_used_per_tick, flux_produced_per_tick
-	fuels = ["immersivepetroleum:gasoline, 5, 256"]
+	fuels = ["immersivepetroleum:gasoline, 5, 256", "pneumaticcraft:gasoline, 5, 256", "thermal:refined_fuel, 5, 256"]
 
 [Miscellaneous]
 	#List of Motorboat fuels. Format: fluid_name, mb_used_per_tick
-	boat_fuels = ["immersivepetroleum:gasoline, 1"]
+	boat_fuels = ["immersivepetroleum:gasoline, 1", "pneumaticcraft:gasoline, 1", "thermal:refined_fuel, 1"]
 	#Automatically unlock IP recipes for new players, default=true
 	autounlock_recipes = true
 	#Set to false to disable the asphalt block boosting player speed, default=true
