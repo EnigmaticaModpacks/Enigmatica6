@@ -77,7 +77,7 @@ onEvent('recipes', (event) => {
 
         'botania:fertilizer_dye',
 
-        'botanypots:crafting/compact_hopper_botany_pot',
+        /botanypots:crafting\/compact_hopper/,
 
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',

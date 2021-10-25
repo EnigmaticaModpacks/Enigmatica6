@@ -266,8 +266,131 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:upgrade/anchor'
+        },
+        {
+            inputs: [
+                '#forge:pellets/polonium',
+                '#industrialforegoing:machine_frame/supreme',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                '#forge:pellets/polonium',
+                'mekanism:hdpe_sheet',
+                '#forge:circuits/ultimate',
+                'mekanism:hdpe_sheet'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 1000,
+            processingTime: 6000,
+            outputItem: { item: 'mekanism:sps_casing', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:sps_casing'
+        },
+        {
+            inputs: [
+                'mekanism:ultimate_induction_cell',
+                'immersiveengineering:coil_mv',
+                'mekanism:ultimate_induction_cell',
+                '#forge:circuits/ultimate',
+                '#forge:circuits/ultimate',
+                '#forge:pellets/polonium',
+                'mekanism:laser',
+                '#forge:pellets/polonium'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 1000,
+            processingTime: 6000,
+            outputItem: { item: 'mekanism:supercharged_coil', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:supercharged_coil'
+        },
+        {
+            inputs: [
+                'mekanism:hdpe_sheet',
+                '#industrialforegoing:machine_frame/simple',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet',
+                'mekanism:hdpe_sheet'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 4000,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:induction_casing', count: 4 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:induction/casing'
+        },
+        {
+            inputs: [
+                'mekanismgenerators:electromagnetic_coil',
+                '#forge:pellets/polonium',
+                '#mekanism:alloys/atomic',
+                'powah:dielectric_casing',
+                'rftoolscontrol:node',
+                '#xnet:cables',
+                '#xnet:cables',
+                '#xnet:cables'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 100,
+            processingTime: 600,
+            outputItem: { item: 'mekanismgenerators:fusion_reactor_frame', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:reactor/frame'
+        },
+        {
+            inputs: [
+                'mekanism:steel_casing',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 1000,
+            processingTime: 600,
+            outputItem: { item: 'mekanismgenerators:fission_reactor_casing', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:fission_reactor/casing'
         }
     ];
+
+    colors.forEach((color) => {
+        recipes.push(
+            {
+                inputs: [
+                    'atum:fertile_soil',
+                    'mythicbotany:aquapanthus',
+                    'atum:fertile_soil',
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`,
+                    `minecraft:${color}_terracotta`
+                ],
+                inputFluid: 'industrialforegoing:sewage',
+                inputFluidAmount: 8000,
+                processingTime: 600,
+                outputItem: { item: `botanypots:${color}_botany_pot`, count: 1 },
+                outputFluid: '',
+                outputFluidAmount: 0,
+                id: `botanypots:crafting/${color}_botany_pot`
+            },
+            {
+                inputs: [`botanypots:${color}_botany_pot`, 'ars_nouveau:sylph_charm', 'naturesaura:grated_chute'],
+                inputFluid: 'materialis:molten_fairy',
+                inputFluidAmount: 1296,
+                processingTime: 600,
+                outputItem: { item: `botanypots:hopper_${color}_botany_pot`, count: 1 },
+                outputFluid: '',
+                outputFluidAmount: 0,
+                id: `botanypots:crafting/hopper_${color}_botany_pot`
+            }
+        );
+    });
 
     recipes.forEach((recipe) => {
         let ingredients = [];

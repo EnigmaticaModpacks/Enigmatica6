@@ -192,6 +192,211 @@ onEvent('recipes', (event) => {
                 E: '#forge:circuits/elite'
             },
             id: 'mekanismgenerators:turbine/valve'
+        },
+        {
+            output: Item.of('2x mekanismgenerators:turbine_vent'),
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'mekanismgenerators:turbine_casing',
+                B: 'create:fluid_pipe',
+                C: 'engineersdecor:straight_pipe_valve'
+            },
+            id: 'mekanismgenerators:turbine/vent'
+        },
+        {
+            output: 'mekanismgenerators:saturating_condenser',
+            pattern: ['BAB', 'BCB', 'BBB'],
+            key: {
+                A: 'pneumaticcraft:heat_sink',
+                B: 'create:fluid_pipe',
+                C: 'mekanism:steel_casing'
+            },
+            id: 'mekanismgenerators:saturating_condenser'
+        },
+        {
+            output: 'mekanismgenerators:electromagnetic_coil',
+            pattern: ['CAC', 'ABA', 'CAC'],
+            key: {
+                A: 'immersiveengineering:coil_lv',
+                B: '#industrialforegoing:machine_frame/supreme',
+                C: 'mekanism:basic_induction_cell'
+            },
+            id: 'mekanismgenerators:electromagnetic_coil'
+        },
+        {
+            output: 'mekanismgenerators:fission_fuel_assembly',
+            pattern: ['ABA', 'ACA', 'ABA'],
+            key: {
+                A: '#forge:rods/cobalt',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'thermal:machine_frame'
+            },
+            id: 'mekanismgenerators:fission_reactor/fuel_assembly'
+        },
+        {
+            output: 'mekanismgenerators:control_rod_assembly',
+            pattern: ['DCD', 'EFE', 'ABA'],
+            key: {
+                A: '#forge:rods/cobalt',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'thermal:machine_frame',
+                D: 'thermal:redstone_servo',
+                E: '#forge:gears/cobalt',
+                F: '#forge:circuits/elite'
+            },
+            id: 'mekanismgenerators:fission_reactor/control_rod_assembly'
+        },
+        {
+            output: Item.of('2x mekanism:sps_port'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'mekanism:sps_casing',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_pressurized_tube',
+                D: '#forge:circuits/ultimate'
+            },
+            id: 'mekanism:sps_port'
+        },
+        {
+            output: 'mekanismgenerators:fission_reactor_port',
+            pattern: ['ABA', 'CDC', 'AEA'],
+            key: {
+                A: 'mekanismgenerators:fission_reactor_casing',
+                B: 'create:copper_valve_handle',
+                C: 'create:fluid_pipe',
+                D: 'create:fluid_valve',
+                E: '#forge:circuits/elite'
+            },
+            id: 'mekanismgenerators:fission_reactor/port'
+        },
+        {
+            output: 'mekanism:laser',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'industrialforegoing:laser_lens14',
+                B: '#mekanism:alloys/infused',
+                C: '#forge:gems/nitro',
+                D: 'mekanism:advanced_induction_cell',
+                E: '#industrialforegoing:machine_frame/supreme'
+            },
+            id: 'mekanism:laser'
+        },
+        {
+            output: Item.of('2x mekanism:induction_port'),
+            pattern: ['AAA', 'BCB', 'AAA'],
+            key: {
+                A: 'mekanism:induction_casing',
+                B: '#forge:circuits/elite',
+                C: 'rftoolsbase:tablet'
+            },
+            id: 'mekanism:induction/port'
+        },
+        {
+            output: 'mekanism:electrolytic_separator',
+            pattern: ['ABA', 'CDC', 'ACA'],
+            key: {
+                A: '#forge:gears/osmium',
+                B: 'mekanism:electrolytic_core',
+                C: 'thermal:fluid_cell',
+                D: 'thermal:machine_frame'
+            },
+            id: 'mekanism:electrolytic_separator'
+        },
+        {
+            output: 'mekanism:electrolytic_core',
+            pattern: ['ABA', 'CBD', 'ABA'],
+            key: {
+                A: 'immersiveengineering:wirecoil_copper',
+                B: 'thermal:diving_fabric',
+                C: '#forge:plates/zinc',
+                D: '#forge:plates/aluminum'
+            },
+            id: 'mekanism:electrolytic_core'
+        },
+        {
+            output: 'mekanism:jetpack',
+            pattern: ['ABA', 'CDC', 'E E'],
+            key: {
+                A: '#forge:plates/bronze',
+                B: 'immersiveengineering:logic_circuit',
+                C: 'create:copper_backtank',
+                D: 'thermal:hazmat_chestplate',
+                E: 'immersiveengineering:toolupgrade_chemthrower_focus'
+            },
+            id: 'mekanism:jetpack'
+        },
+        {
+            output: 'mekanism:jetpack_armored',
+            pattern: ['A A', 'BCB', ' D '],
+            key: {
+                A: '#forge:gears/aluminum',
+                B: '#forge:plates/signalum',
+                C: ['mekanismtools:steel_chestplate', 'immersiveengineering:armor_steel_chest'],
+                D: 'mekanism:jetpack'
+            },
+            id: 'mekanism:jetpack_armored'
+        },
+        {
+            output: 'mekanismgenerators:solar_panel',
+            pattern: ['AAA', 'AAA', 'BBB'],
+            key: {
+                A: 'quark:blue_framed_glass_pane',
+                B: 'powah:thermoelectric_plate'
+            },
+            id: 'mekanismgenerators:solar_panel'
+        },
+        {
+            output: 'mekanismgenerators:solar_generator',
+            pattern: ['ABA', 'ACA', ' D '],
+            key: {
+                A: 'mekanismgenerators:solar_panel',
+                B: 'immersiveengineering:logic_circuit',
+                C: 'thermal:redstone_servo',
+                D: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/solar'
+        },
+        {
+            output: 'mekanismgenerators:advanced_solar_generator',
+            pattern: ['ACA', 'ABA', ' D '],
+            key: {
+                A: 'mekanismgenerators:solar_generator',
+                B: 'engineersdecor:thick_steel_pole',
+                C: 'thermal:redstone_servo',
+                D: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/advanced_solar'
+        },
+        {
+            output: Item.of('2x mekanismgenerators:fusion_reactor_port'),
+            pattern: ['ABA', 'CDC', 'ABA'],
+            key: {
+                A: 'mekanismgenerators:fusion_reactor_frame',
+                B: 'mekanism:ultimate_universal_cable',
+                C: 'mekanism:ultimate_pressurized_tube',
+                D: '#forge:circuits/ultimate'
+            },
+            id: 'mekanismgenerators:reactor/port'
+        },
+        {
+            output: 'mekanism:laser_amplifier',
+            pattern: ['ABA', 'BCD', 'ABA'],
+            key: {
+                A: '#mekanism:alloys/infused',
+                B: 'mekanismgenerators:laser_focus_matrix',
+                C: 'mekanism:basic_induction_cell',
+                D: 'industrialforegoing:laser_lens14'
+            },
+            id: 'mekanism:laser_amplifier'
+        },
+        {
+            output: 'mekanismgenerators:laser_focus_matrix',
+            pattern: [' B ', 'BAB', ' B '],
+            key: {
+                A: 'mekanismgenerators:reactor_glass',
+                B: 'industrialforegoing:laser_lens14'
+            },
+            id: 'mekanismgenerators:laser_focus_matrix'
         }
     ];
 

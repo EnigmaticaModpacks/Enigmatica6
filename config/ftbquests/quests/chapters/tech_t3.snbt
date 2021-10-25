@@ -119,8 +119,11 @@
 		}
 		{
 			x: 5.0d
-			y: 3.0d
-			dependencies: ["72945D9390F479E7"]
+			y: 4.0d
+			dependencies: [
+				"72945D9390F479E7"
+				"52FEE141AD87B819"
+			]
 			id: "3B9B0EB73BF19CBD"
 			tasks: [{
 				id: "65AF9984F551512B"
@@ -129,8 +132,8 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 1.0d
+			x: 4.5d
+			y: 1.5d
 			dependencies: ["1E4DC3A7546EC894"]
 			id: "20C024EA7A79FBB4"
 			tasks: [{
@@ -140,14 +143,48 @@
 			}]
 		}
 		{
-			x: 5.0d
-			y: 2.0d
+			x: 4.5d
+			y: 2.5d
 			dependencies: ["20C024EA7A79FBB4"]
 			id: "72945D9390F479E7"
 			tasks: [{
 				id: "3C415238A247D89A"
 				type: "item"
 				item: "rftoolspower:blazing_agitator"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 1.0d
+			dependencies: ["1E4DC3A7546EC894"]
+			id: "2182BC78D342D1AA"
+			tasks: [{
+				id: "6B231E1F097FC1DC"
+				type: "item"
+				item: "rftoolscontrol:ram_chip"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 2.0d
+			dependencies: ["2182BC78D342D1AA"]
+			id: "51AFB0E11AB83CFC"
+			tasks: [{
+				id: "5DD654B9BD38AC93"
+				type: "item"
+				item: "kubejs:memory_basic_empty"
+			}]
+		}
+		{
+			x: 5.5d
+			y: 3.0d
+			description: ["High Technology requires smarter machines, and what better to make them more intelligent than one’s own distilled experience? "]
+			dependencies: ["51AFB0E11AB83CFC"]
+			id: "52FEE141AD87B819"
+			tasks: [{
+				id: "7FDBBDEA3D78E027"
+				type: "item"
+				item: "kubejs:memory_basic_filled"
 			}]
 		}
 	]

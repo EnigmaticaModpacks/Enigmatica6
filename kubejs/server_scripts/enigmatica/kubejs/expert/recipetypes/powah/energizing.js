@@ -215,6 +215,21 @@ onEvent('recipes', (event) => {
                 count: 1
             },
             id: 'rftoolspower:power_core3'
+        },
+        {
+            ingredients: [
+                { tag: 'mekanism:alloys/atomic' },
+                { item: 'rftoolsbase:infused_diamond' },
+                { item: 'fluxnetworks:flux_core' },
+                { item: 'rftoolsbase:infused_diamond' },
+                { tag: 'mekanism:alloys/atomic' }
+            ],
+            energy: '1000000000',
+            result: {
+                item: 'mekanism:teleportation_core',
+                count: 2
+            },
+            id: 'mekanism:teleportation_core'
         }
     ];
 

@@ -220,7 +220,7 @@ onEvent('recipes', (event) => {
             key: {
                 A: '#forge:ingots/compressed_iron',
                 B: 'pneumaticcraft:pressure_tube',
-                C: '#forge:plates/copper',
+                C: 'powah:thermoelectric_plate',
                 D: 'thermal:machine_frame'
             },
             id: 'pneumaticcraft:thermal_compressor'
