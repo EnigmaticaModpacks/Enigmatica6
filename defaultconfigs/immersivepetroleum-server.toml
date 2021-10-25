@@ -27,11 +27,11 @@
 
 [Generation]
 	#List of Portable Generator fuels. Format: fluid_name, mb_used_per_tick, flux_produced_per_tick
-	fuels = ["immersivepetroleum:gasoline, 5, 256"]
+	fuels = ["immersivepetroleum:gasoline, 5, 256", "pneumaticcraft:gasoline, 5, 256"]
 
 [Miscellaneous]
 	#List of Motorboat fuels. Format: fluid_name, mb_used_per_tick
-	boat_fuels = ["immersivepetroleum:gasoline, 1"]
+	boat_fuels = ["immersivepetroleum:gasoline, 1", "pneumaticcraft:gasoline, 1"]
 	#Automatically unlock IP recipes for new players, default=true
 	autounlock_recipes = true
 	#Set to false to disable the asphalt block boosting player speed, default=true
