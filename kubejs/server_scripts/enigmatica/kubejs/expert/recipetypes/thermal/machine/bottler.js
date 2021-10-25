@@ -57,12 +57,6 @@ onEvent('recipes', (event) => {
             fluid: Fluid.of('pneumaticcraft:memory_essence', 72000),
             output: 'kubejs:memory_ultimate_filled',
             id: `${id_prefix}memory_ultimate_filled`
-        },
-        {
-            input: 'mekanism:steel_casing',
-            fluid: Fluid.of('immersiveengineering:concrete', 1000),
-            output: 'mekanismgenerators:fission_reactor_casing',
-            id: 'mekanismgenerators:fission_reactor/casing'
         }
     ];
     recipes.forEach((recipe) => {

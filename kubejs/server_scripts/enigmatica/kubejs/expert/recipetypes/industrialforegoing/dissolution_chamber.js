@@ -339,6 +339,22 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanismgenerators:reactor/frame'
+        },
+        {
+            inputs: [
+                'mekanism:steel_casing',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel',
+                'immersiveengineering:wire_steel'
+            ],
+            inputFluid: 'immersiveengineering:concrete',
+            inputFluidAmount: 1000,
+            processingTime: 600,
+            outputItem: { item: 'mekanismgenerators:fission_reactor_casing', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanismgenerators:fission_reactor/casing'
         }
     ];
 
