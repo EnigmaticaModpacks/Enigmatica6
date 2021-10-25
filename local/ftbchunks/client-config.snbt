@@ -21,8 +21,8 @@
 	debug_info: false
 	
 	# Moves map update tasks to a different thread. May cause CME errors and some weird chunks but could improve performance.
-	# Default: false
-	experimental_performance_improvement: false
+	# Default: true
+	experimental_performance_improvement: true
 	
 	# Advanced option. Foliage darkness
 	# Default: 50
