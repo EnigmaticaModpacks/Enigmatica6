@@ -1,3 +1,7 @@
+#
+# Whether End Dungeons spawns Shulker Boxes. if false, spawns regular Chests instead.
+#(Configuredfeatures are unable to be overridden by datapack due to bad Forge hook placement. Hence this config option)
+shulkerBoxInEndDungeons = true
 
 [AttemptsPerChunk]
 	#
