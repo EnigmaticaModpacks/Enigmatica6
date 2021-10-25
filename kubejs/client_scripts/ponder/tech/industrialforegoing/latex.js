@@ -303,6 +303,9 @@ onEvent('ponder.registry', (event) => {
                         Block.id('industrialforegoing:supreme_black_hole_unit').with('subfacing', 'west').blockState,
                         false
                     );
+
+                scene.idle(1);
+
                 scene.world().modifyTileNBT(
                     util.select().position(4, 1, 2),
                     {
