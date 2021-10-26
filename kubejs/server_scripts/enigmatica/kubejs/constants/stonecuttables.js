@@ -2526,7 +2526,6 @@ const stonecuttables = [
 			'chisel:redstone/cracked_bricks',
 			'chisel:redstone/triple_bricks',
 			'chisel:redstone/encased_bricks',
-			'chisel:redstone/chaotic_bricks',
 			'chisel:redstone/array',
 			'chisel:redstone/tiles_medium',
 			'chisel:redstone/tiles_large',
@@ -2544,14 +2543,10 @@ const stonecuttables = [
 			'chisel:redstone/panel',
 			'chisel:redstone/road',
 			'chisel:redstone/slanted',
-			'chisel:redstone/zag',
 			'chisel:redstone/circular',
-			'chisel:redstone/circularct',
-			'chisel:redstone/weaver',
 			'chisel:redstone/pillar',
 			'chisel:redstone/twisted',
-			'chisel:redstone/prism',
-			'chisel:redstone/cuts'
+			'chisel:redstone/prism'
 		],
 		onlyAsOutput: [],
 		onlyAsInput: []
