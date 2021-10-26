@@ -32,11 +32,29 @@
 			description: ["The Fluid Extractor, shockingly, extracts fluid. Place one facing a log block, and it will slowly break down the log while producing Latex. Power is optional, but speeds up the process by a factor of 2.5. Acacia logs give the best yield."]
 			dependencies: ["000000000000004D"]
 			id: "000000000000004B"
-			tasks: [{
-				id: "000000000000004C"
-				type: "item"
-				item: "industrialforegoing:fluid_extractor"
-			}]
+			tasks: [
+				{
+					id: "000000000000004C"
+					type: "item"
+					title: "Fluid Extractor"
+					item: {
+						id: "itemfilters:or"
+						Count: 1b
+						tag: {
+							items: [
+								{
+									id: "industrialforegoing:fluid_extractor"
+									Count: 1b
+								}
+								{
+									id: "thermal:device_tree_extractor"
+									Count: 1b
+								}
+							]
+						}
+					}
+				}
+			]
 			rewards: [
 				{
 					id: "0000000000000628"
@@ -83,7 +101,23 @@
 			tasks: [{
 				id: "0000000000000050"
 				type: "item"
-				item: "industrialforegoing:latex_processing_unit"
+				title: "Latex Processing Unit"
+				item: {
+					id: "itemfilters:or"
+					Count: 1b
+					tag: {
+						items: [
+							{
+								id: "industrialforegoing:latex_processing_unit"
+								Count: 1b
+							}
+							{
+								id: "thermal:machine_refinery"
+								Count: 1b
+							}
+						]
+					}
+				}
 			}]
 			rewards: [{
 				id: "0000000000000629"
