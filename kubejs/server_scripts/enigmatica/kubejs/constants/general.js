@@ -28,7 +28,9 @@ const modPriorities = [
     'byg',
     'atum',
     'betterendforge',
-    'miniutilities'
+    'miniutilities',
+    'chipped',
+    'chisel'
 ];
 
 const lootChests = ['lootr:lootr_chest', 'lootr:lootr_barrel', 'lootr:lootr_trapped_chest'];
