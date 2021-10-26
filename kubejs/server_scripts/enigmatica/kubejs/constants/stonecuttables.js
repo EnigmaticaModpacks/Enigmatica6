@@ -2517,7 +2517,7 @@ const stonecuttables = [
 	},
 	{
 		name: 'redstone_block',
-		stones [
+		stones: [
 			'minecraft:redstone_block',
 			'chisel:redstone/cracked',
 			'chisel:redstone/solid_bricks',
@@ -2600,7 +2600,7 @@ colors.forEach((color) => { // @Chisel concrete
 
 // @Chisel Planks
 chiselPlankTypes = ['oak','spruce','birch','acacia','jungle','dark_oak'];
-chiselPlankVariants = ['large_planks','crude_horizontal_planks','vertical_planks','crude_vertical_planks','encased_planks','encased_large_planks','braced_planks','shipping_crate','paneling','crude_paneling','stacked','smooth','encased_smooth','braid','log_cabin']
+chiselPlankVariants = ['large_planks','crude_horizontal_planks','vertical_planks','crude_vertical_planks','encased_planks','encased_large_planks','braced_planks','shipping_crate','paneling','crude_paneling','stacked','smooth','encased_smooth','braid','log_cabin'];
 chiselPlankTypes.forEach( (chiselPlankType) => {
 	let stones = [`minecraft:${chiselPlankType}_planks`];
 	chiselPlankVariants.forEach( (chiselPlankVariant) => {
