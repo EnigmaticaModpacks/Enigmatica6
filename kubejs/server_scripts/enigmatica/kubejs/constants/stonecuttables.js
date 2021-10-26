@@ -2271,28 +2271,6 @@ const stonecuttables = [
 		onlyAsInput: []
 	},
 	{
-		name:'emerald',
-		stones: [
-			'minecraft:emerald_block',
-			'chisel:emerald/panel',
-			'chisel:emerald/panelclassic',
-			'chisel:emerald/smooth',
-			'chisel:emerald/chunk',
-			'chisel:emerald/goldborder',
-			'chisel:emerald/zelda',
-			'chisel:emerald/cell',
-			'chisel:emerald/cellbismuth',
-			'chisel:emerald/four',
-			'chisel:emerald/fourornate',
-			'chisel:emerald/ornate',
-			'chisel:emerald/masonryemerald',
-			'chisel:emerald/emeraldcircle',
-			'chisel:emerald/emeraldprismatic'
-		],
-		onlyAsOutput: [],
-		onlyAsInput: []
-	},
-	{
 		name:'mossy_cobblestone',
 		stones: [
 			'minecraft:mossy_cobblestone',
@@ -2337,47 +2315,6 @@ const stonecuttables = [
 		onlyAsInput: []
 	},
 	{
-		name:'coal',
-		stones: [
-			'minecraft:coal_block',
-			'chisel:coal/cracked',
-			'chisel:coal/solid_bricks',
-			'chisel:coal/small_bricks',
-			'chisel:coal/soft_bricks',
-			'chisel:coal/cracked_bricks',
-			'chisel:coal/triple_bricks',
-			'chisel:coal/encased_bricks',
-			'chisel:coal/chaotic_bricks',
-			'chisel:coal/array',
-			'chisel:coal/tiles_medium',
-			'chisel:coal/tiles_large',
-			'chisel:coal/tiles_small',
-			'chisel:coal/chaotic_medium',
-			'chisel:coal/chaotic_small',
-			'chisel:coal/braid',
-			'chisel:coal/dent',
-			'chisel:coal/french_1',
-			'chisel:coal/french_2',
-			'chisel:coal/jellybean',
-			'chisel:coal/layers',
-			'chisel:coal/mosaic',
-			'chisel:coal/ornate',
-			'chisel:coal/panel',
-			'chisel:coal/road',
-			'chisel:coal/slanted',
-			'chisel:coal/zag',
-			'chisel:coal/circular',
-			'chisel:coal/circularct',
-			'chisel:coal/weaver',
-			'chisel:coal/pillar',
-			'chisel:coal/twisted',
-			'chisel:coal/prism',
-			'chisel:coal/cuts'
-		],
-		onlyAsOutput: [],
-		onlyAsInput: []
-	},
-	{
 		name:'chisel_charcoal', //Recipe only costs 1 charcoal so can't also add storage blocks to this
 		stones: [
 			'chisel:charcoal/raw',
@@ -2414,23 +2351,6 @@ const stonecuttables = [
 			'chisel:charcoal/twisted',
 			'chisel:charcoal/prism',
 			'chisel:charcoal/cuts'
-		],
-		onlyAsOutput: [],
-		onlyAsInput: []
-	},
-	{
-		name:'bronze',
-		stones:[
-			'emendatusenigmatica:bronze_block',
-			'thermal:bronze_block',
-			'mekanism:block_bronze',
-			'chisel:metals/bronze/caution',
-			'chisel:metals/bronze/crate',
-			'chisel:metals/bronze/thermal',
-			'chisel:metals/bronze/machine',
-			'chisel:metals/bronze/badgreggy',
-			'chisel:metals/bronze/bolted',
-			'chisel:metals/bronze/scaffold',
 		],
 		onlyAsOutput: [],
 		onlyAsInput: []
@@ -2495,58 +2415,6 @@ const stonecuttables = [
 			'chisel:antiblock/green',
 			'chisel:antiblock/red',
 			'chisel:antiblock/black',
-		],
-		onlyAsOutput: [],
-		onlyAsInput: []
-	},
-	{
-		name: "aluminum_block",
-		stones: [
-			'emendatusenigmatica:aluminum_block',
-			'immersiveengineering:storage_aluminum',
-			'chisel:metals/aluminum/caution',
-			'chisel:metals/aluminum/crate',
-			'chisel:metals/aluminum/thermal',
-			'chisel:metals/aluminum/machine',
-			'chisel:metals/aluminum/badgreggy',
-			'chisel:metals/aluminum/bolted',
-			'chisel:metals/aluminum/scaffold'
-		],
-		onlyAsOutput: [],
-		onlyAsInput: []
-	},
-	{
-		name: 'redstone_block',
-		stones: [
-			'minecraft:redstone_block',
-			'chisel:redstone/cracked',
-			'chisel:redstone/solid_bricks',
-			'chisel:redstone/small_bricks',
-			'chisel:redstone/soft_bricks',
-			'chisel:redstone/cracked_bricks',
-			'chisel:redstone/triple_bricks',
-			'chisel:redstone/encased_bricks',
-			'chisel:redstone/array',
-			'chisel:redstone/tiles_medium',
-			'chisel:redstone/tiles_large',
-			'chisel:redstone/tiles_small',
-			'chisel:redstone/chaotic_medium',
-			'chisel:redstone/chaotic_small',
-			'chisel:redstone/braid',
-			'chisel:redstone/dent',
-			'chisel:redstone/french_1',
-			'chisel:redstone/french_2',
-			'chisel:redstone/jellybean',
-			'chisel:redstone/layers',
-			'chisel:redstone/mosaic',
-			'chisel:redstone/ornate',
-			'chisel:redstone/panel',
-			'chisel:redstone/road',
-			'chisel:redstone/slanted',
-			'chisel:redstone/circular',
-			'chisel:redstone/pillar',
-			'chisel:redstone/twisted',
-			'chisel:redstone/prism'
 		],
 		onlyAsOutput: [],
 		onlyAsInput: []
