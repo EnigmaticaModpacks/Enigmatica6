@@ -57,7 +57,8 @@ onEvent('item.registry', (event) => {
         'craft_soulscythe',
         'craft_attunement_altar',
         'craft_mana_collector',
-        'craft_logic_director'
+        'craft_logic_director',
+        'craft_robit'
     ];
 
     const reusableItemTextures = [

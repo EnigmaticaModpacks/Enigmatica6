@@ -431,6 +431,18 @@ onEvent('recipes', (event) => {
                 D: '#forge:gears/osmium'
             },
             id: 'rftoolsstorage:storage_module0'
+        },
+        {
+            output: 'rftoolsbuilder:shape_card_quarry',
+            pattern: [' A ', 'BCB', 'DED'],
+            key: {
+                A: 'mekanism:robit',
+                B: 'mekanism:teleportation_core',
+                C: 'rftoolsbuilder:shape_card_def',
+                D: '#forge:circuits/ultimate',
+                E: 'mekanismtools:refined_obsidian_paxel'
+            },
+            id: 'rftoolsbuilder:shape_card_quarry'
         }
     ];
 

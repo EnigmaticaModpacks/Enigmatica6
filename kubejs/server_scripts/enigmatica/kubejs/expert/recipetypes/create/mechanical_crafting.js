@@ -328,6 +328,22 @@ onEvent('recipes', (event) => {
                 I: 'rftoolsbase:tablet'
             },
             id: 'mekanismgenerators:reactor/controller'
+        },
+        {
+            output: 'mekanism:digital_miner',
+            pattern: ['AAAAA', 'BCDCB', 'EFGHE', 'AAAAA', 'II II'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'integrateddynamics:part_display_panel',
+                D: 'rftoolsbase:tablet',
+                E: 'integratedtunnels:part_importer_energy',
+                F: 'rftoolsutility:matter_transmitter',
+                G: 'mekanism:robit',
+                H: 'rftoolsutility:matter_receiver',
+                I: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanism:digital_miner'
         }
     ];
 

@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             pattern: ['BAB', 'CDC', 'BAB'],
             key: {
                 A: '#forge:plates/copper',
-                B: 'engineersdecor:clinker_brick_block',
+                B: 'immersiveengineering:alloybrick',
                 C: 'environmental:kiln',
                 D: 'thermal:machine_frame'
             },
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
             pattern: ['BEB', 'CDC', 'BAB'],
             key: {
                 A: '#forge:circuits/advanced',
-                B: 'engineersdecor:clinker_brick_block',
+                B: 'immersiveengineering:blastbrick_reinforced',
                 C: 'immersiveengineering:coil_hv',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: 'pneumaticcraft:heat_sink'
@@ -397,6 +397,277 @@ onEvent('recipes', (event) => {
                 B: 'industrialforegoing:laser_lens14'
             },
             id: 'mekanismgenerators:laser_focus_matrix'
+        },
+        {
+            output: 'mekanism:rotary_condensentrator',
+            pattern: ['ABA', 'CDE', 'FGF'],
+            key: {
+                A: 'immersiveengineering:steel_wallmount',
+                B: 'immersiveengineering:turntable',
+                C: 'mekanism:advanced_chemical_tank',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: 'mekanism:advanced_fluid_tank',
+                F: '#forge:circuits/basic',
+                G: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:rotary_condensentrator'
+        },
+        {
+            output: 'mekanism:enrichment_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: Item.of('immersiveengineering:graphite_electrode', '{graphDmg:0}'),
+                B: 'minecraft:cauldron',
+                C: 'mekanism:basic_induction_cell',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:enrichment_chamber'
+        },
+        {
+            output: 'mekanism:crusher',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'engineersdecor:factory_hopper',
+                C: 'create:filter',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:crusher'
+        },
+        {
+            output: 'mekanism:energized_smelter',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'immersiveengineering:blastbrick_reinforced',
+                B: 'minecraft:cauldron',
+                C: 'immersiveengineering:coil_hv',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:energized_smelter'
+        },
+        {
+            output: 'mekanism:precision_sawmill',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:rotation_speed_controller',
+                B: 'immersiveengineering:rockcutter',
+                C: 'immersiveengineering:heavy_engineering',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:precision_sawmill'
+        },
+        {
+            output: 'mekanism:nutritional_liquifier',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'immersiveengineering:steel_wallmount',
+                B: 'immersiveengineering:turntable',
+                C: 'mekanism:advanced_chemical_tank',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'rftoolspower:cell1'
+            },
+            id: 'mekanism:nutritional_liquifier'
+        },
+        {
+            output: 'mekanism:electric_pump',
+            pattern: ['ABC', 'ADC', 'AEC'],
+            key: {
+                A: 'mekanism:dynamic_tank',
+                B: 'create:mechanical_pump',
+                C: 'create:fluid_pipe',
+                D: 'supplementaries:cog_block',
+                E: 'immersiveengineering:turntable'
+            },
+            id: 'mekanism:electric_pump'
+        },
+        {
+            output: 'mekanism:fluidic_plenisher',
+            pattern: ['AEC', 'ADC', 'ABC'],
+            key: {
+                A: 'mekanism:dynamic_tank',
+                B: 'create:mechanical_pump',
+                C: 'create:fluid_pipe',
+                D: 'supplementaries:cog_block',
+                E: 'immersiveengineering:turntable'
+            },
+            id: 'mekanism:fluidic_plenisher'
+        },
+        {
+            output: 'mekanism:purification_chamber',
+            pattern: ['AAA', 'BDC', 'EFE'],
+            key: {
+                A: 'architects_palette:abyssaline_lamp',
+                B: 'glassential:glass_dark',
+                C: 'mekanism:advanced_chemical_tank',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/advanced',
+                F: 'rftoolspower:cell2'
+            },
+            id: 'mekanism:purification_chamber'
+        },
+        {
+            output: 'mekanism:pressurized_reaction_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'pneumaticcraft:pressure_chamber_glass',
+                B: 'mekanism:advanced_fluid_tank',
+                C: 'mekanism:advanced_chemical_tank',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/advanced',
+                F: 'rftoolspower:cell2'
+            },
+            id: 'mekanism:pressurized_reaction_chamber'
+        },
+        {
+            output: 'mekanism:chemical_injection_chamber',
+            pattern: ['ABB', 'CDG', 'EFE'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_chemthrower_focus',
+                B: 'mekanism:advanced_pressurized_tube',
+                C: 'create:basin',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/advanced',
+                F: 'rftoolspower:cell2',
+                G: 'mekanism:advanced_chemical_tank'
+            },
+            id: 'mekanism:chemical_injection_chamber'
+        },
+        {
+            output: 'mekanism:chemical_crystallizer',
+            pattern: ['ABC', 'DEF', 'GHG'],
+            key: {
+                A: 'mekanism:advanced_pressurized_tube',
+                B: 'mekanismgenerators:saturating_condenser',
+                C: 'create:basin',
+                D: 'mekanism:advanced_chemical_tank',
+                E: '#industrialforegoing:machine_frame/advanced',
+                F: 'thermal:machine_chiller',
+                G: '#forge:circuits/advanced',
+                H: 'rftoolspower:cell2'
+            },
+            id: 'mekanism:chemical_crystallizer'
+        },
+        {
+            output: 'mekanism:isotopic_centrifuge',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'resourcefulbees:elite_centrifuge_casing',
+                B: 'mekanism:elite_chemical_tank',
+                C: 'mekanismgenerators:reactor_glass',
+                D: 'resourcefulbees:elite_centrifuge_controller',
+                E: '#forge:circuits/elite',
+                F: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:isotopic_centrifuge'
+        },
+        {
+            output: 'mekanism:chemical_oxidizer',
+            pattern: ['ABC', 'DEC', 'FGF'],
+            key: {
+                A: 'mekanism:elite_mechanical_pipe',
+                B: 'mekanism:electrolytic_separator',
+                C: 'mekanism:elite_pressurized_tube',
+                D: 'cookingforblockheads:sink',
+                E: 'mekanism:chemical_injection_chamber',
+                F: '#forge:circuits/elite',
+                G: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:chemical_oxidizer'
+        },
+        {
+            output: 'mekanism:chemical_infuser',
+            pattern: ['ABA', 'BCB', 'DED'],
+            key: {
+                A: 'rftoolspower:blazing_agitator',
+                B: 'mekanism:elite_chemical_tank',
+                C: '#industrialforegoing:machine_frame/advanced',
+                D: '#forge:circuits/elite',
+                E: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:chemical_infuser'
+        },
+        {
+            output: 'mekanism:chemical_dissolution_chamber',
+            pattern: ['ABB', 'CDB', 'EFE'],
+            key: {
+                A: 'mekanism:elite_chemical_tank',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'industrialforegoing:dissolution_chamber',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/elite',
+                F: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:chemical_dissolution_chamber'
+        },
+        {
+            output: 'mekanism:chemical_washer',
+            pattern: ['ABB', 'CDA', 'EFE'],
+            key: {
+                A: 'mekanism:ultimate_chemical_tank',
+                B: 'mekanism:ultimate_pressurized_tube',
+                C: 'mekanism:ultimate_fluid_tank',
+                D: '#industrialforegoing:machine_frame/supreme',
+                E: '#forge:circuits/ultimate',
+                F: 'mekanism:ultimate_induction_provider'
+            },
+            id: 'mekanism:chemical_washer'
+        },
+        {
+            output: 'mekanism:antiprotonic_nucleosynthesizer',
+            pattern: ['ABA', 'CDC', 'EBE'],
+            key: {
+                A: '#forge:pellets/antimatter',
+                B: '#forge:circuits/ultimate',
+                C: 'mekanism:supercharged_coil',
+                D: 'mekanism:sps_casing',
+                E: 'mekanism:ultimate_induction_provider'
+            },
+            id: 'mekanism:antiprotonic_nucleosynthesizer'
+        },
+        {
+            output: 'mekanismgenerators:heat_generator',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'immersiveengineering:blastbrick_reinforced',
+                B: 'powah:thermoelectric_plate',
+                C: 'minecraft:blast_furnace'
+            },
+            id: 'mekanismgenerators:generator/heat'
+        },
+        {
+            output: 'mekanismgenerators:gas_burning_generator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'mekanism:basic_chemical_tank',
+                C: 'pneumaticcraft:turbine_rotor',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'immersiveengineering:coil_hv'
+            },
+            id: 'mekanismgenerators:generator/gas_burning'
+        },
+        {
+            output: 'mekanismgenerators:bio_generator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'mekanism:basic_fluid_tank',
+                C: 'pneumaticcraft:turbine_rotor',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'immersiveengineering:coil_hv'
+            },
+            id: 'mekanismgenerators:generator/bio'
         }
     ];
 

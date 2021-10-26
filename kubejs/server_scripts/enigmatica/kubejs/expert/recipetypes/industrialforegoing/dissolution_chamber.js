@@ -355,6 +355,88 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanismgenerators:fission_reactor/casing'
+        },
+        {
+            inputs: ['#forge:ingots/lumium'],
+            inputFluid: 'thermal:glowstone',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:ingot_refined_glowstone', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:processing/refined_glowstone/ingot/from_dust'
+        },
+        {
+            inputs: [
+                '#forge:circuits/basic',
+                'mekanism:module_base',
+                '#forge:circuits/basic',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'industrialforegoing:latex',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:basic_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/basic'
+        },
+        {
+            inputs: [
+                '#forge:circuits/advanced',
+                'mekanism:module_base',
+                '#forge:circuits/advanced',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'mekanism:lithium',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:advanced_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/advanced'
+        },
+        {
+            inputs: [
+                '#forge:circuits/elite',
+                'mekanism:module_base',
+                '#forge:circuits/elite',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'industrialforegoing:ether_gas',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:elite_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/elite'
+        },
+        {
+            inputs: [
+                '#forge:circuits/ultimate',
+                'mekanism:module_base',
+                '#forge:circuits/ultimate',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_obsidian',
+                '#forge:ingots/refined_glowstone',
+                '#forge:ingots/refined_glowstone'
+            ],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:ultimate_tier_installer', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:tier_installer/ultimate'
         }
     ];
 
