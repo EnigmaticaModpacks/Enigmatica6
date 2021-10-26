@@ -150,6 +150,7 @@ onEvent('recipes', (event) => {
         'mekanism:processing/refined_glowstone/ingot_to_dust',
         'mekanism:processing/refined_obsidian/dust/from_ingot',
         'mekanism:osmium_compressor',
+        /mekanism:factory/,
 
         'minecraft:crystal_glass',
 

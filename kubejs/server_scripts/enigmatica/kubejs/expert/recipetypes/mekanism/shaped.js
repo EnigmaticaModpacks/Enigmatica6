@@ -620,6 +620,18 @@ onEvent('recipes', (event) => {
                 F: 'mekanism:ultimate_induction_provider'
             },
             id: 'mekanism:chemical_washer'
+        },
+        {
+            output: 'mekanism:antiprotonic_nucleosynthesizer',
+            pattern: ['ABA', 'CDC', 'EBE'],
+            key: {
+                A: '#forge:pellets/antimatter',
+                B: '#forge:circuits/ultimate',
+                C: 'mekanism:supercharged_coil',
+                D: 'mekanism:sps_casing',
+                E: 'mekanism:ultimate_induction_provider'
+            },
+            id: 'mekanism:antiprotonic_nucleosynthesizer'
         }
     ];
 
