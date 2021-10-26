@@ -22,7 +22,7 @@ onEvent('recipes', (event) => {
             pattern: ['BAB', 'CDC', 'BAB'],
             key: {
                 A: '#forge:plates/copper',
-                B: 'engineersdecor:clinker_brick_block',
+                B: 'immersiveengineering:alloybrick',
                 C: 'environmental:kiln',
                 D: 'thermal:machine_frame'
             },
@@ -33,7 +33,7 @@ onEvent('recipes', (event) => {
             pattern: ['BEB', 'CDC', 'BAB'],
             key: {
                 A: '#forge:circuits/advanced',
-                B: 'engineersdecor:clinker_brick_block',
+                B: 'immersiveengineering:blastbrick_reinforced',
                 C: 'immersiveengineering:coil_hv',
                 D: '#industrialforegoing:machine_frame/simple',
                 E: 'pneumaticcraft:heat_sink'

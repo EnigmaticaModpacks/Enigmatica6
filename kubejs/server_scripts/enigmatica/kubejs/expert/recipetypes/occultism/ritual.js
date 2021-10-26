@@ -903,6 +903,31 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'occultism:jei_dummy/none' },
             id: `${id_prefix}pink_wither`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 12,
+            ritual_dummy: { item: 'kubejs:craft_robit' },
+            ingredients: [
+                { tag: 'industrialforegoing:machine_frame/pity' },
+                { item: 'create:belt_connector' },
+                { tag: 'forge:dusts/salt' },
+                { item: 'create:belt_connector' },
+
+                { tag: 'forge:circuits/basic' },
+                { tag: 'forge:gears/osmium' },
+                { item: 'create:encased_chain_drive' },
+                { tag: 'forge:gears/osmium' },
+
+                { tag: 'forge:circuits/basic' },
+                { tag: 'forge:gears/osmium' },
+                { item: 'create:encased_chain_drive' },
+                { tag: 'forge:gears/osmium' }
+            ],
+            result: { item: 'mekanism:robit' },
+            id: 'mekanism:robit'
         }
     ];
 
