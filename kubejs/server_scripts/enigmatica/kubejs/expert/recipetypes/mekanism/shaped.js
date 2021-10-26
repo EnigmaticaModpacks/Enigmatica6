@@ -642,6 +642,32 @@ onEvent('recipes', (event) => {
                 C: 'minecraft:blast_furnace'
             },
             id: 'mekanismgenerators:generator/heat'
+        },
+        {
+            output: 'mekanismgenerators:gas_burning_generator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'mekanism:basic_chemical_tank',
+                C: 'pneumaticcraft:turbine_rotor',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'immersiveengineering:coil_hv'
+            },
+            id: 'mekanismgenerators:generator/gas_burning'
+        },
+        {
+            output: 'mekanismgenerators:bio_generator',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: '#forge:gears/compressed_iron',
+                B: 'mekanism:basic_fluid_tank',
+                C: 'pneumaticcraft:turbine_rotor',
+                D: '#industrialforegoing:machine_frame/simple',
+                E: '#forge:circuits/basic',
+                F: 'immersiveengineering:coil_hv'
+            },
+            id: 'mekanismgenerators:generator/bio'
         }
     ];
 
