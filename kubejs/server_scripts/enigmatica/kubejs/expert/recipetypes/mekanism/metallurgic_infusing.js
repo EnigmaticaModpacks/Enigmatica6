@@ -31,6 +31,13 @@ onEvent('recipes', (event) => {
             infusionInput: 'mekanism:diamond',
             infusionAmount: 80,
             id: 'immersiveengineering:crafting/rockcutter'
+        },
+        {
+            output: 'mekanism:ingot_refined_obsidian',
+            input: '#forge:ingots/osmium',
+            infusionInput: 'mekanism:refined_obsidian',
+            infusionAmount: 160,
+            id: 'mekanism:processing/refined_obsidian/ingot/from_dust'
         }
     ];
 

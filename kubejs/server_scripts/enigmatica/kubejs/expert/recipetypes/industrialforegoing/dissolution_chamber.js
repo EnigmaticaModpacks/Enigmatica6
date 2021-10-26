@@ -355,6 +355,16 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanismgenerators:fission_reactor/casing'
+        },
+        {
+            inputs: ['#forge:ingots/lumium'],
+            inputFluid: 'thermal:glowstone',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'mekanism:ingot_refined_glowstone', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'mekanism:processing/refined_glowstone/ingot/from_dust'
         }
     ];
 

@@ -513,6 +513,113 @@ onEvent('recipes', (event) => {
                 F: 'rftoolspower:cell2'
             },
             id: 'mekanism:purification_chamber'
+        },
+        {
+            output: 'mekanism:pressurized_reaction_chamber',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'pneumaticcraft:pressure_chamber_glass',
+                B: 'mekanism:advanced_fluid_tank',
+                C: 'mekanism:advanced_chemical_tank',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/advanced',
+                F: 'rftoolspower:cell2'
+            },
+            id: 'mekanism:pressurized_reaction_chamber'
+        },
+        {
+            output: 'mekanism:chemical_injection_chamber',
+            pattern: ['ABB', 'CDG', 'EFE'],
+            key: {
+                A: 'immersiveengineering:toolupgrade_chemthrower_focus',
+                B: 'mekanism:advanced_pressurized_tube',
+                C: 'create:basin',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/advanced',
+                F: 'rftoolspower:cell2',
+                G: 'mekanism:advanced_chemical_tank'
+            },
+            id: 'mekanism:chemical_injection_chamber'
+        },
+        {
+            output: 'mekanism:chemical_crystallizer',
+            pattern: ['ABC', 'DEF', 'GHG'],
+            key: {
+                A: 'mekanism:advanced_pressurized_tube',
+                B: 'mekanismgenerators:saturating_condenser',
+                C: 'create:basin',
+                D: 'mekanism:advanced_chemical_tank',
+                E: '#industrialforegoing:machine_frame/advanced',
+                F: 'thermal:machine_chiller',
+                G: '#forge:circuits/advanced',
+                H: 'rftoolspower:cell2'
+            },
+            id: 'mekanism:chemical_crystallizer'
+        },
+        {
+            output: 'mekanism:isotopic_centrifuge',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'resourcefulbees:elite_centrifuge_casing',
+                B: 'mekanism:elite_chemical_tank',
+                C: 'mekanismgenerators:reactor_glass',
+                D: 'resourcefulbees:elite_centrifuge_controller',
+                E: '#forge:circuits/elite',
+                F: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:isotopic_centrifuge'
+        },
+        {
+            output: 'mekanism:chemical_oxidizer',
+            pattern: ['ABC', 'DEC', 'FGF'],
+            key: {
+                A: 'mekanism:elite_mechanical_pipe',
+                B: 'mekanism:electrolytic_separator',
+                C: 'mekanism:elite_pressurized_tube',
+                D: 'cookingforblockheads:sink',
+                E: 'mekanism:chemical_injection_chamber',
+                F: '#forge:circuits/elite',
+                G: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:chemical_oxidizer'
+        },
+        {
+            output: 'mekanism:chemical_infuser',
+            pattern: ['ABA', 'BCB', 'DED'],
+            key: {
+                A: 'rftoolspower:blazing_agitator',
+                B: 'mekanism:elite_chemical_tank',
+                C: '#industrialforegoing:machine_frame/advanced',
+                D: '#forge:circuits/elite',
+                E: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:chemical_infuser'
+        },
+        {
+            output: 'mekanism:chemical_dissolution_chamber',
+            pattern: ['ABB', 'CDB', 'EFE'],
+            key: {
+                A: 'mekanism:elite_chemical_tank',
+                B: 'mekanism:elite_pressurized_tube',
+                C: 'industrialforegoing:dissolution_chamber',
+                D: '#industrialforegoing:machine_frame/advanced',
+                E: '#forge:circuits/elite',
+                F: 'rftoolspower:cell3'
+            },
+            id: 'mekanism:chemical_dissolution_chamber'
+        },
+        {
+            output: 'mekanism:chemical_washer',
+            pattern: ['ABB', 'CDA', 'EFE'],
+            key: {
+                A: 'mekanism:ultimate_chemical_tank',
+                B: 'mekanism:ultimate_pressurized_tube',
+                C: 'mekanism:ultimate_fluid_tank',
+                D: '#industrialforegoing:machine_frame/supreme',
+                E: '#forge:circuits/ultimate',
+                F: 'mekanism:ultimate_induction_provider'
+            },
+            id: 'mekanism:chemical_washer'
         }
     ];
 

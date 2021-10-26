@@ -385,6 +385,43 @@ onEvent('recipes', (event) => {
                 'astralsorcery:built_in_effect_attunement_sparkle'
             ],
             id: `${id_prefix}gaia_spreader`
+        },
+        {
+            output: Item.of('2x mekanism:solar_neutron_activator'),
+            altar_type: 3,
+            duration: 720,
+            starlight: 7500,
+            pattern: ['A___A', 'BAAAB', 'CBBBC', '_CCC_', 'DEFED'],
+            key: {
+                A: { item: 'kubejs:observatory_lens' },
+                B: { item: 'powah:solar_panel_niotic' },
+                C: { item: 'mekanism:hdpe_sheet' },
+                D: { tag: 'forge:plates/enderium' },
+                E: { tag: 'forge:circuits/elite' },
+                F: { tag: 'industrialforegoing:machine_frame/advanced' }
+            },
+            focus_constellation: 'astralsorcery:horologium',
+            relay_inputs: [
+                { item: 'astralsorcery:stardust' },
+                { tag: 'forge:dusts/end_stone' },
+                { tag: 'forge:dusts/iesnium' },
+                { item: 'astralsorcery:stardust' },
+                { tag: 'forge:dusts/end_stone' },
+                { tag: 'forge:dusts/iesnium' }
+            ],
+            effects: [
+                'astralsorcery:built_in_effect_constellation_finish',
+                'astralsorcery:built_in_effect_trait_relay_highlight',
+                'astralsorcery:built_in_effect_discovery_central_beam',
+                'astralsorcery:built_in_effect_trait_focus_circle',
+                'astralsorcery:focus_dust_swirl',
+                'astralsorcery:focus_edge',
+                'astralsorcery:altar_focus_sparkle',
+                'astralsorcery:altar_default_sparkle',
+                'astralsorcery:built_in_effect_constellation_lines',
+                'astralsorcery:built_in_effect_attunement_sparkle'
+            ],
+            id: 'mekanism:solar_neutron_activator'
         }
     ];
 

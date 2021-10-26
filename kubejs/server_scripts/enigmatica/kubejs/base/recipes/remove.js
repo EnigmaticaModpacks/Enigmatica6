@@ -147,6 +147,9 @@ onEvent('recipes', (event) => {
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
+        'mekanism:processing/refined_glowstone/ingot_to_dust',
+        'mekanism:processing/refined_obsidian/dust/from_ingot',
+        'mekanism:osmium_compressor',
 
         'minecraft:crystal_glass',
 
