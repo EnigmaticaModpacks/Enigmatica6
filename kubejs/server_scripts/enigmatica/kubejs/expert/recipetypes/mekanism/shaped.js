@@ -632,6 +632,16 @@ onEvent('recipes', (event) => {
                 E: 'mekanism:ultimate_induction_provider'
             },
             id: 'mekanism:antiprotonic_nucleosynthesizer'
+        },
+        {
+            output: 'mekanismgenerators:heat_generator',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'immersiveengineering:blastbrick_reinforced',
+                B: 'powah:thermoelectric_plate',
+                C: 'minecraft:blast_furnace'
+            },
+            id: 'mekanismgenerators:generator/heat'
         }
     ];
 
