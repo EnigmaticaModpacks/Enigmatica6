@@ -1,0 +1,8 @@
+[Extraction]
+	#The Flux the Pumpjack requires each tick to pump, default=1024
+	pumpjack_consumption = 1024
+
+[Refining]
+	#A modifier to apply to the energy costs of every Distillation Tower recipe, default=1
+	distillationTower_energyModifier = 1.0
+

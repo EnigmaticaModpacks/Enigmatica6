@@ -1,3 +1,22 @@
+[machines]
+	#The Flux per tick that the Diesel Generator will output. The burn time of the fuel determines the total output
+	#Range: > 0
+	dieselGen_output = 10240
+	#The Flux per tick the Blast Furnace Preheater will consume to speed up the Blast Furnace
+	#Range: > 1
+	preheater_consumption = 256
+	#The amount of damage a sawblade in the sawmill takes for a single recipe.
+	#Range: > 1
+	sawmill_bladeDamage = 1
+	#The Flux the Assembler will consume to craft an item from a recipe
+	#Range: > 1
+	assembler_consumption = 1024
+
+[machines.garden_cloche]
+	#The Flux per tick the cloche consumes to grow plants
+	#Range: > 1
+	consumption = 4096
+
 [machines.arc_furnace]
 	#A modifier to apply to the energy costs of every arc furnace recipe
 	#Range: 0.001 ~ 1000.0
@@ -6,10 +25,18 @@
 	#Range: 0.001 ~ 1000.0
 	timeModifier = 0.25
 
+[machines.crusher]
+	#A modifier to apply to the energy costs of every crusher recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 25.6
+	#A modifier to apply to the time of every crusher recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.1
+
 [machines.squeezer]
 	#A modifier to apply to the energy costs of every squeezer recipe
 	#Range: 0.001 ~ 1000.0
-	energyModifier = 0.1
+	energyModifier = 1.6
 	#A modifier to apply to the time of every squeezer recipe
 	#Range: 0.001 ~ 1000.0
 	timeModifier = 0.5
@@ -17,7 +44,7 @@
 [machines.fermenter]
 	#A modifier to apply to the energy costs of every fermenter recipe
 	#Range: 0.001 ~ 1000.0
-	energyModifier = 0.1
+	energyModifier = 1.6
 	#A modifier to apply to the time of every fermenter recipe
 	#Range: 0.001 ~ 1000.0
 	timeModifier = 0.5
@@ -25,7 +52,23 @@
 [machines.refinery]
 	#A modifier to apply to the energy costs of every refinery recipe
 	#Range: 0.001 ~ 1000.0
-	energyModifier = 1.6
+	energyModifier = 25.6
+
+[machines.auto_workbench]
+	#A modifier to apply to the energy costs of every auto workbench recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 8.0
+	#A modifier to apply to the time of every auto workbench recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.5
+
+[machines.sawmill]
+	#A modifier to apply to the energy costs of every sawmill recipe
+	#Range: 0.001 ~ 1000.0
+	energyModifier = 25.6
+	#A modifier to apply to the time of every sawmill recipe
+	#Range: 0.001 ~ 1000.0
+	timeModifier = 0.75
 
 [machines.turret]
 	#The Flux per tick the chemthrower turret consumes to shoot
