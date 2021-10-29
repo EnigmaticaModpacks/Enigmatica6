@@ -359,6 +359,19 @@ onEvent('jei.information', (event) => {
         {
             items: ['upgrade_aquatic:flare_spawn_egg'],
             text: [`Splash a Phantom with a Potion of Insomnia to convert it to a Flare.`]
+        },
+        {
+            items: ['immersiveengineering:cloche'],
+            text: [
+                `Available Fertilizers:`,
+                ` `,
+                `Bone Meal: 1.25x`,
+                `Floral Fertilizer: 1.5x`,
+                `Green Fertilizer: 1.5x`,
+                `Fertilizer: 1.7x`,
+                `Red Fertilizer: 2.0x`,
+                `Phyto-Gro: 3.0x`
+            ]
         }
     ];
 
