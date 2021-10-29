@@ -16,6 +16,9 @@
 	#The Flux per tick the cloche consumes to grow plants
 	#Range: > 1
 	consumption = 8
+	#A modifier to apply to the cloches total growing speed
+	#Range: 0.001 ~ 1000.0
+	growth_modifier = 1.0
 
 [machines.arc_furnace]
 	#A modifier to apply to the energy costs of every arc furnace recipe
