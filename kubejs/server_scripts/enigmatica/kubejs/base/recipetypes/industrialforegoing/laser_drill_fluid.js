@@ -119,7 +119,7 @@ onEvent('recipes', (event) => {
 
     event.recipes.industrialforegoing.laser_drill_fluid({
         type: 'industrialforegoing.laser_drill_fluid',
-        output: '{FluidName:"industrialforegoing:pink_slime",Amount:100}',
+        output: '{FluidName:"industrialforegoing:pink_slime",Amount:50}',
         rarity: [
             {
                 whitelist: {},
