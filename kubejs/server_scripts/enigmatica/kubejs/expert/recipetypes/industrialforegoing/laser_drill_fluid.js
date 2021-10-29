@@ -5,7 +5,7 @@ onEvent('recipes', (event) => {
     const id_prefix = 'enigmatica:expert/industrialforegoing/laser_drill_fluids/';
     const recipes = [
         {
-            output: '{FluidName:"industrialforegoing:meat",Amount:100}',
+            output: '{FluidName:"industrialforegoing:meat",Amount:2500}',
             rarity: [
                 {
                     whitelist: {},
