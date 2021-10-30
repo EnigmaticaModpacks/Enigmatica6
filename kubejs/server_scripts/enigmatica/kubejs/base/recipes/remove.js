@@ -238,7 +238,9 @@ onEvent('recipes', (event) => {
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
         /atum:.*dye$/,
-        /thermal:compat\/\w+\/\w+_ore/
+        /thermal:compat\/\w+\/\w+_ore/,
+        /decorative_blocks:\w+_beam/,
+        /decorative_blocks_abnormals:\w+_beam/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -300,10 +302,6 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'immersiveengineering:cloche' });
 
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
-
-    beamRecipes.forEach((recipe) => {
-        event.remove({ output: recipe.output });
-    });
 
     stonecuttables.forEach((stoneType) => {
         stoneType.stones.forEach((stone) => {
