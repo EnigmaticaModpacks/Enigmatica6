@@ -108,9 +108,9 @@ onEvent('ponder.registry', (event) => {
                         true
                     );
                 scene.idle(1);
-                scene.world().modifyTileNBT(tank1, {
-                    tank: { FluidName: 'thermal:resin', Amount: Utils.random.nextInt(64000) }
-                });
+                // scene.world().modifyTileNBT(tank1, {
+                //     tank: { FluidName: 'thermal:resin', Amount: Utils.random.nextInt(64000) }
+                // });
 
                 var tank2 = util.grid().at(3, 2, 3);
                 scene
@@ -121,9 +121,9 @@ onEvent('ponder.registry', (event) => {
                         true
                     );
                 scene.idle(1);
-                scene.world().modifyTileNBT(tank2, {
-                    tank: { FluidName: 'industrialforegoing:latex', Amount: Utils.random.nextInt(64000) }
-                });
+                // scene.world().modifyTileNBT(tank2, {
+                //     tank: { FluidName: 'industrialforegoing:latex', Amount: Utils.random.nextInt(64000) }
+                // });
 
                 scene.world().showSection(util.select().fromTo(3, 2, 3, 5, 2, 3), Facing.down);
 

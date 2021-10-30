@@ -417,13 +417,13 @@ onEvent('ponder.registry', (event) => {
                 scene.addKeyframe();
                 scene.idle(20);
 
-                scene.world().modifyTileNBT(
-                    tank1,
-                    {
-                        tank: { FluidName: 'minecraft:lava', Amount: 100 }
-                    },
-                    true
-                );
+                // scene.world().modifyTileNBT(
+                //     tank1,
+                //     {
+                //         tank: { FluidName: 'minecraft:lava', Amount: 100 }
+                //     },
+                //     true
+                // );
 
                 scene
                     .overlay()
