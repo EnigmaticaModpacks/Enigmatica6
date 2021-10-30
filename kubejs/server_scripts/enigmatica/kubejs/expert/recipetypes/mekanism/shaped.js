@@ -668,6 +668,70 @@ onEvent('recipes', (event) => {
                 F: 'immersiveengineering:coil_hv'
             },
             id: 'mekanismgenerators:generator/bio'
+        },
+        {
+            output: 'mekanism:free_runners',
+            pattern: ['ABA', 'CDC', 'EFE'],
+            key: {
+                A: 'create:precision_mechanism',
+                B: 'immersiveengineering:capacitor_lv',
+                C: '#forge:gears/bronze',
+                D: 'immersiveengineering:toolupgrade_drill_lube',
+                E: 'immersiveengineering:component_steel',
+                F: 'immersiveengineering:armor_faraday_feet'
+            },
+            id: 'mekanism:free_runners'
+        },
+        {
+            output: 'mekanism:electric_bow',
+            pattern: [' BC', 'A C', ' BC'],
+            key: {
+                A: 'powah:dielectric_rod',
+                B: 'powah:capacitor_hardened',
+                C: '#forge:wires/aluminum'
+            },
+            id: 'mekanism:electric_bow'
+        },
+        {
+            output: 'mekanism:configurator',
+            pattern: ['  A', ' B ', 'C  '],
+            key: {
+                A: '#forge:rods/lapis',
+                B: 'thermal:rf_coil',
+                C: '#forge:rods/steel'
+            },
+            id: 'mekanism:configurator'
+        },
+        {
+            output: 'mekanism:chargepad',
+            pattern: ['AAA', 'BCB'],
+            key: {
+                A: 'minecraft:polished_blackstone_pressure_plate',
+                B: '#forge:ingots/steel',
+                C: 'thermal:rf_coil'
+            },
+            id: 'mekanism:chargepad'
+        },
+        {
+            output: 'mekanism:network_reader',
+            pattern: [' B ', 'ACA', ' B '],
+            key: {
+                A: '#forge:alloys/advanced',
+                B: '#forge:ingots/steel',
+                C: 'thermal:rf_coil'
+            },
+            id: 'mekanism:network_reader'
+        },
+        {
+            output: 'mekanism:portable_teleporter',
+            pattern: ['ABA', 'CDC'],
+            key: {
+                A: 'thermal:rf_coil',
+                B: 'mekanism:teleportation_core',
+                C: '#forge:plates/steel',
+                D: 'rftoolsbase:tablet'
+            },
+            id: 'mekanism:portable_teleporter'
         }
     ];
 
