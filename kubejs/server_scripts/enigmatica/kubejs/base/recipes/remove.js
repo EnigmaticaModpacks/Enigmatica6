@@ -178,6 +178,8 @@ onEvent('recipes', (event) => {
         'simplefarming:blueberry_pie',
 
         'tconstruct:tools/modifiers/wither_bone_conversion',
+        'tconstruct:tables/tinkers_anvil',
+        'tconstruct:tables/scorched_anvil',
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
