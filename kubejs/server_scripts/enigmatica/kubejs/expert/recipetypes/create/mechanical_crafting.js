@@ -264,7 +264,7 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:coil_lv',
                 C: 'immersiveengineering:electron_tube',
                 D: 'immersiveengineering:wirecoil_redstone',
-                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board'],
+                E: 'pneumaticcraft:advanced_pcb',
                 F: 'immersiveengineering:current_transformer',
                 G: 'xnet:controller'
             },
@@ -355,7 +355,7 @@ onEvent('recipes', (event) => {
                 D: 'thermal:charge_bench',
                 E: 'rftoolsbase:infused_diamond',
                 F: 'industrialforegoing:laser_lens2',
-                G: 'mekanism:elite_tier_installer',
+                G: 'thermal:upgrade_augment_2',
                 H: 'immersiveengineering:wooden_grip'
             },
             id: 'mininggadgets:mininggadget_simple'
@@ -370,7 +370,7 @@ onEvent('recipes', (event) => {
                 D: 'thermal:charge_bench',
                 E: 'rftoolsbase:infused_diamond',
                 F: 'industrialforegoing:laser_lens6',
-                G: 'mekanism:elite_tier_installer',
+                G: 'thermal:upgrade_augment_2',
                 H: 'immersiveengineering:wooden_grip'
             },
             id: 'mininggadgets:mininggadget_fancy'
@@ -385,7 +385,7 @@ onEvent('recipes', (event) => {
                 D: 'thermal:charge_bench',
                 E: 'rftoolsbase:infused_diamond',
                 F: 'industrialforegoing:laser_lens3',
-                G: 'mekanism:elite_tier_installer',
+                G: 'thermal:upgrade_augment_2',
                 H: 'immersiveengineering:wooden_grip'
             },
             id: 'mininggadgets:mininggadget'

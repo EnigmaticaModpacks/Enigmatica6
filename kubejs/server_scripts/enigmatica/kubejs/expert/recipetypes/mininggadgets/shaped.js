@@ -260,10 +260,10 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'mininggadgets:modificationtable',
-            pattern: [' A ', 'BCB', 'B B'],
+            pattern: ['BAB', 'BCB'],
             key: {
                 A: 'rftoolsbase:tablet',
-                B: '#forge:alloys/advanced',
+                B: 'mekanism:hdpe_sheet',
                 C: 'thermal:tinker_bench'
             },
             id: 'mininggadgets:modificationtable'
