@@ -64,6 +64,8 @@ onEvent('recipes', (event) => {
         'minecraft:leather_to_stripes',
         'minecraft:stick',
 
+        'mininggadgets:upgrade_empty',
+
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
         'pedestals:upgrades/crafter1mk2',
