@@ -198,7 +198,7 @@ onEvent('recipes', (event) => {
             recipes.push({
                 input: input,
                 output: Item.of('mekanism:bio_fuel', biofuel.count),
-                id: `${id_prefix}bio_fuel_from_${input.split(':')[1]}`
+                id: `${id_prefix}bio_fuel_from_${input.split(':')[0].replace('#', '')}_${input.split(':')[1]}`
             });
         });
     });
