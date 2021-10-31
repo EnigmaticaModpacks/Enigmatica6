@@ -264,7 +264,7 @@ onEvent('recipes', (event) => {
                 B: 'immersiveengineering:coil_lv',
                 C: 'immersiveengineering:electron_tube',
                 D: 'immersiveengineering:wirecoil_redstone',
-                E: ['immersiveengineering:logic_circuit', 'pneumaticcraft:printed_circuit_board'],
+                E: 'pneumaticcraft:advanced_pcb',
                 F: 'immersiveengineering:current_transformer',
                 G: 'xnet:controller'
             },
@@ -344,6 +344,51 @@ onEvent('recipes', (event) => {
                 I: 'engineersdecor:thick_steel_pole_head'
             },
             id: 'mekanism:digital_miner'
+        },
+        {
+            output: 'mininggadgets:mininggadget_simple',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens2',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget_simple'
+        },
+        {
+            output: 'mininggadgets:mininggadget_fancy',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens6',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget_fancy'
+        },
+        {
+            output: 'mininggadgets:mininggadget',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens3',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget'
         }
     ];
 
