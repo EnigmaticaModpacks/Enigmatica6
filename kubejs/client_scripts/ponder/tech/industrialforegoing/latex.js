@@ -107,10 +107,10 @@ onEvent('ponder.registry', (event) => {
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
                         true
                     );
-                scene.idle(1);
-                // scene.world().modifyTileNBT(tank1, {
-                //     tank: { FluidName: 'thermal:resin', Amount: Utils.random.nextInt(64000) }
-                // });
+                scene.idle(20);
+                scene.world().modifyTileNBT(tank1, {
+                    tank: { FluidName: 'thermal:resin', Amount: 1000 }
+                });
 
                 var tank2 = util.grid().at(3, 2, 3);
                 scene
@@ -120,10 +120,10 @@ onEvent('ponder.registry', (event) => {
                         Block.id('industrialforegoing:common_black_hole_tank').with('subfacing', 'north').blockState,
                         true
                     );
-                scene.idle(1);
-                // scene.world().modifyTileNBT(tank2, {
-                //     tank: { FluidName: 'industrialforegoing:latex', Amount: Utils.random.nextInt(64000) }
-                // });
+                scene.idle(20);
+                scene.world().modifyTileNBT(tank2, {
+                    tank: { FluidName: 'industrialforegoing:latex', Amount: 1000 }
+                });
 
                 scene.world().showSection(util.select().fromTo(3, 2, 3, 5, 2, 3), Facing.down);
 
@@ -277,16 +277,16 @@ onEvent('ponder.registry', (event) => {
                     .placeNearTarget()
                     .pointAt(util.vector().topOf(chestPos));
 
-                // scene.world().modifyTileNBT(
-                //     util.select().position(chestPos),
-                //     {
-                //         hasNBT: false,
-                //         blStack: { id: 'industrialforegoing:tinydryrubber', Count: 2 },
-                //         stored: 2,
-                //         voidItems: 1
-                //     },
-                //     true
-                // );
+                scene.world().modifyTileNBT(
+                    util.select().position(chestPos),
+                    {
+                        hasNBT: false,
+                        blStack: { id: 'industrialforegoing:tinydryrubber', Count: 2 },
+                        stored: 2,
+                        voidItems: 1
+                    },
+                    true
+                );
 
                 scene.idle(80);
 
@@ -306,16 +306,16 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(1);
 
-                // scene.world().modifyTileNBT(
-                //     util.select().position(4, 1, 2),
-                //     {
-                //         hasNBT: false,
-                //         blStack: { id: 'industrialforegoing:tinydryrubber', Count: 9 },
-                //         stored: 9,
-                //         voidItems: 1
-                //     },
-                //     true
-                // );
+                scene.world().modifyTileNBT(
+                    util.select().position(4, 1, 2),
+                    {
+                        hasNBT: false,
+                        blStack: { id: 'industrialforegoing:tinydryrubber', Count: 9 },
+                        stored: 9,
+                        voidItems: 1
+                    },
+                    true
+                );
 
                 scene
                     .world()
@@ -374,27 +374,27 @@ onEvent('ponder.registry', (event) => {
 
                 scene.idle(20);
 
-                // scene.world().modifyTileNBT(
-                //     util.select().position(4, 1, 2),
-                //     {
-                //         hasNBT: false,
-                //         blStack: { id: 'industrialforegoing:tinydryrubber', Count: 9 },
-                //         stored: 0,
-                //         voidItems: 1
-                //     },
-                //     true
-                // );
+                scene.world().modifyTileNBT(
+                    util.select().position(4, 1, 2),
+                    {
+                        hasNBT: false,
+                        blStack: { id: 'industrialforegoing:tinydryrubber', Count: 9 },
+                        stored: 0,
+                        voidItems: 1
+                    },
+                    true
+                );
 
-                // scene.world().modifyTileNBT(
-                //     util.select().position(4, 1, 4),
-                //     {
-                //         hasNBT: false,
-                //         blStack: { id: 'industrialforegoing:dryrubber', Count: 1 },
-                //         stored: 1,
-                //         voidItems: 1
-                //     },
-                //     true
-                // );
+                scene.world().modifyTileNBT(
+                    util.select().position(4, 1, 4),
+                    {
+                        hasNBT: false,
+                        blStack: { id: 'industrialforegoing:dryrubber', Count: 1 },
+                        stored: 1,
+                        voidItems: 1
+                    },
+                    true
+                );
 
                 scene.idle(20);
 
@@ -427,27 +427,27 @@ onEvent('ponder.registry', (event) => {
                         false
                     );
 
-                // scene.world().modifyTileNBT(
-                //     util.select().position(4, 1, 4),
-                //     {
-                //         hasNBT: false,
-                //         blStack: { id: 'industrialforegoing:dryrubber', Count: 1 },
-                //         stored: 0,
-                //         voidItems: 1
-                //     },
-                //     true
-                // );
+                scene.world().modifyTileNBT(
+                    util.select().position(4, 1, 4),
+                    {
+                        hasNBT: false,
+                        blStack: { id: 'industrialforegoing:dryrubber', Count: 1 },
+                        stored: 0,
+                        voidItems: 1
+                    },
+                    true
+                );
 
-                // scene.world().modifyTileNBT(
-                //     util.select().position(4, 1, 6),
-                //     {
-                //         hasNBT: false,
-                //         blStack: { id: 'industrialforegoing:plastic', Count: 1 },
-                //         stored: 1,
-                //         voidItems: 1
-                //     },
-                //     true
-                // );
+                scene.world().modifyTileNBT(
+                    util.select().position(4, 1, 6),
+                    {
+                        hasNBT: false,
+                        blStack: { id: 'industrialforegoing:plastic', Count: 1 },
+                        stored: 1,
+                        voidItems: 1
+                    },
+                    true
+                );
 
                 scene.effects().indicateSuccess(util.grid().at(4, 1, 6));
 
