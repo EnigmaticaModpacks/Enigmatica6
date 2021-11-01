@@ -374,7 +374,8 @@ ee_types.forEach((type) => {
         `emendatusenigmatica:diamond_${type}`,
         `emendatusenigmatica:coal_${type}`,
         `emendatusenigmatica:sapphire_${type}`,
-        `emendatusenigmatica:ruby_${type}`
+        `emendatusenigmatica:ruby_${type}`,
+        `emendatusenigmatica:iridium_${type}`
     );
 });
 
