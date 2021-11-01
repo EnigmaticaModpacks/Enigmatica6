@@ -1,3 +1,72 @@
+### Enigmatica 6 v0.5.19
+
+_Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.18.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.19.md)_
+
+**Bug Fixes**
+
+- Abnormals Delight Meals Can't be Crafted [\#3587](https://github.com/NillerMedDild/Enigmatica6/issues/3587)
+- Astral Sorcery serverconfig resets to mod defaults on world start [\#3619](https://github.com/NillerMedDild/Enigmatica6/issues/3619)
+- Building quest without description! [\#3434](https://github.com/NillerMedDild/Enigmatica6/issues/3434)
+- Charcoal Cannot be Created by Bulk Blasting Logs [\#3534](https://github.com/NillerMedDild/Enigmatica6/issues/3534)
+- Concealment Key from Storage Drawers has no recipe  [\#3605](https://github.com/NillerMedDild/Enigmatica6/issues/3605)
+- Correct Typo in Clay Bee, Correct invalid recipe override for Clay in Alchemy Table [\#3620](https://github.com/NillerMedDild/Enigmatica6/pull/3620) ([MuteTiefling](https://github.com/MuteTiefling))
+- Crash on enter world \(caused by class not found: vectorwing.farmersdelight.blocks.TomatoesBlock\) [\#3538](https://github.com/NillerMedDild/Enigmatica6/issues/3538)
+- Crash on server start \(NoClassDefFoundError: vectorwing/farmersdelight/blocks/TomatoesBlock\) [\#3552](https://github.com/NillerMedDild/Enigmatica6/issues/3552)
+- Crash on World Load Farmer's Delight and Industrial Foregoing - Can't Load World [\#3616](https://github.com/NillerMedDild/Enigmatica6/issues/3616)
+- Crash when viewing last part of IF Latex Ponder [\#3545](https://github.com/NillerMedDild/Enigmatica6/issues/3545)
+- Create saw recipe conflict w/ vanilla logs [\#3581](https://github.com/NillerMedDild/Enigmatica6/issues/3581)
+- Cryptic Redstone Ore can be obtained from AS Mineralis Ritual [\#3575](https://github.com/NillerMedDild/Enigmatica6/issues/3575)
+- Desert Rabbit and Severing [\#3576](https://github.com/NillerMedDild/Enigmatica6/issues/3576)
+- Enigmatica 6 server pack 0.5.17 has leaked expert recipes [\#3625](https://github.com/NillerMedDild/Enigmatica6/issues/3625)
+- Fermented ancient debris ore meat does not produce anything when used in fluid sieving machine [\#3220](https://github.com/NillerMedDild/Enigmatica6/issues/3220)
+- Immersive engineering slag trade [\#3558](https://github.com/NillerMedDild/Enigmatica6/issues/3558)
+- Industrial Foregoing Plant gatherer crashing whole game [\#3568](https://github.com/NillerMedDild/Enigmatica6/issues/3568)
+- Industrial Foregoing quest reward addon stacking issue [\#3546](https://github.com/NillerMedDild/Enigmatica6/issues/3546)
+- Mining Gadget quest only allows for the Mk 3, not any of the three versions.  [\#3544](https://github.com/NillerMedDild/Enigmatica6/issues/3544)
+- Missing chisel tags [\#3377](https://github.com/NillerMedDild/Enigmatica6/issues/3377)
+- Occultism's Wild Hunt ritual not working [\#3537](https://github.com/NillerMedDild/Enigmatica6/issues/3537)
+- Otherworld goggles don't go into the goggles slot [\#3518](https://github.com/NillerMedDild/Enigmatica6/issues/3518)
+- Ponder crash with the fluid laser  [\#3579](https://github.com/NillerMedDild/Enigmatica6/issues/3579)
+- Ponder on Industrial Foregoing Plastic Crashes Client [\#3345](https://github.com/NillerMedDild/Enigmatica6/issues/3345)
+- Preview button overlapping customize button [\#3500](https://github.com/NillerMedDild/Enigmatica6/issues/3500)
+- Resourceful bees changelog quest typo: recpes -\> recipes [\#3516](https://github.com/NillerMedDild/Enigmatica6/pull/3516) ([Quezler](https://github.com/Quezler))
+- Several @Chisel blocks seem to be missing stonecutter recipes \[Fix part 1\] [\#3569](https://github.com/NillerMedDild/Enigmatica6/pull/3569) ([Iris-xii](https://github.com/Iris-xii))
+- Several @Chisel blocks seem to be missing stonecutter recipes [\#3457](https://github.com/NillerMedDild/Enigmatica6/issues/3457)
+- Stackable Batteries = Infinte Power [\#3306](https://github.com/NillerMedDild/Enigmatica6/issues/3306)
+- Sushi Go Crafting Seaweed harvested by by Create Mechanical harvester doesn't break but drops item [\#3582](https://github.com/NillerMedDild/Enigmatica6/issues/3582)
+- The gear from pneumaticcraft is the odd one out texture-wise [\#3574](https://github.com/NillerMedDild/Enigmatica6/issues/3574)
+- Tinker's anvil can be crafted with or without crafting tables [\#3578](https://github.com/NillerMedDild/Enigmatica6/issues/3578)
+- Veinmining with mining gadget works but does not drop any items. [\#3428](https://github.com/NillerMedDild/Enigmatica6/issues/3428)
+- `requestify:crafting_emitter` not dropping anything when mined [\#3016](https://github.com/NillerMedDild/Enigmatica6/issues/3016)
+
+**Changes/Improvements**
+
+- Add Missing Simple Farming seeds to Market [\#3613](https://github.com/NillerMedDild/Enigmatica6/pull/3613) ([MuteTiefling](https://github.com/MuteTiefling))
+- Adds occultism goggles to goggles slot [\#3540](https://github.com/NillerMedDild/Enigmatica6/pull/3540) ([theboo](https://github.com/theboo))
+- Add  Sushigo Crafting items to Compost Bin [\#3606](https://github.com/NillerMedDild/Enigmatica6/pull/3606) ([MuteTiefling](https://github.com/MuteTiefling))
+- Add Warning to Tetra Quests concerning End Rod Handles [\#3614](https://github.com/NillerMedDild/Enigmatica6/pull/3614) ([MuteTiefling](https://github.com/MuteTiefling))
+- Adjust Mining Gadget Quest to accept any version of the tool [\#3560](https://github.com/NillerMedDild/Enigmatica6/pull/3560) ([MuteTiefling](https://github.com/MuteTiefling))
+- Allow for thermal latex processing inside IF questline [\#3572](https://github.com/NillerMedDild/Enigmatica6/pull/3572) ([Quezler](https://github.com/Quezler))
+- Blacklist disabled food items from Spice of Life [\#3615](https://github.com/NillerMedDild/Enigmatica6/pull/3615) ([MuteTiefling](https://github.com/MuteTiefling))
+- Chisel Charcoal \(raw\) block back to charcoal item [\#3608](https://github.com/NillerMedDild/Enigmatica6/issues/3608)
+- convert occultism rituals to use humans tag instead of wild hunt [\#3539](https://github.com/NillerMedDild/Enigmatica6/pull/3539) ([MuteTiefling](https://github.com/MuteTiefling))
+- Cosmetic armor slots aren't re-equiped when claming the grave [\#3548](https://github.com/NillerMedDild/Enigmatica6/issues/3548)
+- Cumin seeds not available in Market [\#3607](https://github.com/NillerMedDild/Enigmatica6/issues/3607)
+- Disable Architect's Palette charcoal smoking recipe to re-enable Create's charcoal recipe [\#3561](https://github.com/NillerMedDild/Enigmatica6/pull/3561) ([MuteTiefling](https://github.com/MuteTiefling))
+- Hide C&B bits in JEI [\#3530](https://github.com/NillerMedDild/Enigmatica6/pull/3530) ([theboo](https://github.com/theboo))
+- Hide unobtainable trinkets from jei [\#3601](https://github.com/NillerMedDild/Enigmatica6/issues/3601)
+- IE Quests will now show the multiblock as the quest icon.  [\#3584](https://github.com/NillerMedDild/Enigmatica6/pull/3584) ([MuteTiefling](https://github.com/MuteTiefling))
+- Several compostable items [\#2981](https://github.com/NillerMedDild/Enigmatica6/issues/2981)
+- Suggesting adding a warning regarding Tetra's End Rod \(/Blaze?\) to the questbook [\#3523](https://github.com/NillerMedDild/Enigmatica6/issues/3523)
+- Updates occultism quest chapter [\#3532](https://github.com/NillerMedDild/Enigmatica6/pull/3532) ([theboo](https://github.com/theboo))
+- Use `pnc:compressed_iron_gear` texture from ERP [\#3591](https://github.com/NillerMedDild/Enigmatica6/pull/3591) ([Quezler](https://github.com/Quezler))
+
+
+
+---
+
+
+
 ### Enigmatica 6 v0.5.18
 
 _Using Forge-1.16.5-36.2.4_ | _[Mod Updates](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/changelog_mods_0.5.18.md)_ | _[Modlist](https://github.com/NillerMedDild/Enigmatica6/blob/master/changelogs/modlist_0.5.18.md)_
