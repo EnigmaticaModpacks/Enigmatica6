@@ -33,10 +33,7 @@ onEvent('item.tooltip', (event) => {
             items: ['tconstruct:seared_melter'],
             text: [disabledInExpert, Text.of('Use the Smeltery Controller instead.').aqua()]
         },
-        {
-            items: ['kubejs:basic_circuit_package'],
-            text: [Text.of('Requires 64 Buckets of Memory Essence in the Memory Stick').aqua()]
-        },
+
         {
             items: ['resourcefulbees:t2_apiary', 'resourcefulbees:t3_apiary', 'resourcefulbees:t4_apiary'],
             text: [

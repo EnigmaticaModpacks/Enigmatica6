@@ -1,4 +1,5 @@
 onEvent('recipes', (event) => {
+    const id_prefix = 'enigmatica:base/';
     const recipes = [
         { output: 'botania:enchanted_soil', inputs: ['minecraft:grass_block', 'botania:overgrowth_seed'] },
         { output: 'minecraft:sticky_piston', inputs: ['minecraft:piston', '#forge:slimeballs'] },
@@ -556,6 +557,11 @@ onEvent('recipes', (event) => {
         {
             output: Item.of('byg:brimstone', 2),
             inputs: ['minecraft:netherrack', 'byg:sythian_wart_block']
+        },
+        {
+            output: 'minecraft:charcoal',
+            inputs: ['#chisel:charcoal'],
+            id: `${id_prefix}charcoal`
         }
     ];
 

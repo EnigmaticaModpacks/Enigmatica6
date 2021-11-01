@@ -14,10 +14,6 @@ onEvent('recipes', (event) => {
         });
     });
 
-    beamRecipes.forEach((recipe) => {
-        event.stonecutting(recipe.output, recipe.input);
-    });
-
     stonecuttables.forEach((stoneType) => {
         var tag = `#enigmatica:stonecuttables/${stoneType.name}`;
         stoneType.stones.forEach((stone) => {
@@ -97,10 +93,8 @@ onEvent('recipes', (event) => {
 
     var masonryTiledStoneTypes = masonryStoneTypes.concat(['endstone', 'netherrack', 'obsidian']);
     masonryTiledStoneTypes.forEach((stoneType) => {
-        masonryCuttingTypes.forEach((cuttingType) => {
-            event.stonecutting(`masonry:${stoneType}tiledslab`, `masonry:${stoneType}tiled`);
-            event.stonecutting(`masonry:${stoneType}tiledwall`, `masonry:${stoneType}tiled`);
-        });
+        event.stonecutting(`masonry:${stoneType}tiledslab`, `masonry:${stoneType}tiled`);
+        event.stonecutting(`masonry:${stoneType}tiledwall`, `masonry:${stoneType}tiled`);
     });
 
     ['#forge:dirt', '#forge:workbenches', '#forge:grass'].forEach((tag) => {

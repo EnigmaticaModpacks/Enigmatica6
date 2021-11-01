@@ -255,6 +255,140 @@ onEvent('recipes', (event) => {
                 I: 'pneumaticcraft:remote'
             },
             id: 'integrateddynamics:crafting/logic_programmer'
+        },
+        {
+            output: Item.of('2x portality:controller'),
+            pattern: ['ABBBA', 'CDEDC', 'CFGFC', 'CDEDC', 'ABBBA'],
+            key: {
+                A: 'portality:frame',
+                B: 'immersiveengineering:coil_lv',
+                C: 'immersiveengineering:electron_tube',
+                D: 'immersiveengineering:wirecoil_redstone',
+                E: 'pneumaticcraft:advanced_pcb',
+                F: 'immersiveengineering:current_transformer',
+                G: 'xnet:controller'
+            },
+            id: 'portality:controller'
+        },
+        {
+            output: 'rftoolsutility:environmental_controller',
+            pattern: ['ABBBA', 'BCDCB', 'BEFEB', 'BGHGB', 'ABBBA'],
+            key: {
+                A: 'powah:dielectric_casing',
+                B: 'thermal:enderium_glass',
+                C: 'immersiveengineering:tesla_coil',
+                D: 'powah:player_aerial_pearl',
+                E: 'powah:aerial_pearl',
+                F: '#industrialforegoing:machine_frame/supreme',
+                G: '#forge:circuits/ultimate',
+                H: 'kubejs:spirit_entropic_gateway'
+            },
+            id: 'rftoolsutility:environmental_controller'
+        },
+        {
+            output: 'mekanismgenerators:wind_generator',
+            pattern: ['ABC', 'DEF', 'DEF', 'DGF'],
+            key: {
+                A: 'pneumaticcraft:turbine_rotor',
+                B: 'immersiveengineering:dynamo',
+                C: '#forge:gears/compressed_iron',
+                D: 'pneumaticcraft:plastic',
+                E: 'engineersdecor:thick_steel_pole',
+                F: 'powah:capacitor_basic_large',
+                G: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanismgenerators:generator/wind'
+        },
+        {
+            output: 'mekanismgenerators:rotational_complex',
+            pattern: ['ABCCC', 'BDBFC', 'CBGBC', 'CEBDB', 'CCCBA'],
+            key: {
+                A: '#forge:circuits/elite',
+                B: '#forge:gears/compressed_iron',
+                C: '#xnet:cables',
+                D: '#mekanism:alloys/reinforced',
+                E: 'rftoolscontrol:node',
+                F: 'rftoolsbase:tablet',
+                G: '#industrialforegoing:machine_frame/advanced'
+            },
+            id: 'mekanismgenerators:rotational_complex'
+        },
+        {
+            output: 'mekanismgenerators:fusion_reactor_controller',
+            pattern: ['  ABA  ', ' ACDCA ', 'ACEFECA', 'BDGHGDB', 'ACEIECA', ' ACDCA ', '  ABA  '],
+            key: {
+                A: 'mekanismgenerators:reactor_glass',
+                B: '#xnet:cables',
+                C: 'mekanismgenerators:fusion_reactor_frame',
+                D: '#xnet:advanced_connectors',
+                E: 'mekanism:ultimate_chemical_tank',
+                F: 'rftoolsutility:environmental_controller',
+                G: '#forge:circuits/ultimate',
+                H: 'mekanism:ultimate_fluid_tank',
+                I: 'rftoolsbase:tablet'
+            },
+            id: 'mekanismgenerators:reactor/controller'
+        },
+        {
+            output: 'mekanism:digital_miner',
+            pattern: ['AAAAA', 'BCDCB', 'EFGHE', 'AAAAA', 'II II'],
+            key: {
+                A: '#forge:sheetmetals/steel',
+                B: 'pneumaticcraft:smart_chest',
+                C: 'integrateddynamics:part_display_panel',
+                D: 'rftoolsbase:tablet',
+                E: 'integratedtunnels:part_importer_energy',
+                F: 'rftoolsutility:matter_transmitter',
+                G: 'mekanism:robit',
+                H: 'rftoolsutility:matter_receiver',
+                I: 'engineersdecor:thick_steel_pole_head'
+            },
+            id: 'mekanism:digital_miner'
+        },
+        {
+            output: 'mininggadgets:mininggadget_simple',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens2',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget_simple'
+        },
+        {
+            output: 'mininggadgets:mininggadget_fancy',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens6',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget_fancy'
+        },
+        {
+            output: 'mininggadgets:mininggadget',
+            pattern: [' AAABBB', 'CDEFFF ', ' CGCBBB', 'H      '],
+            key: {
+                A: 'immersiveengineering:toolupgrade_revolver_electro',
+                B: 'powah:dielectric_rod_horizontal',
+                C: 'mekanism:hdpe_sheet',
+                D: 'thermal:charge_bench',
+                E: 'rftoolsbase:infused_diamond',
+                F: 'industrialforegoing:laser_lens3',
+                G: 'thermal:upgrade_augment_2',
+                H: 'immersiveengineering:wooden_grip'
+            },
+            id: 'mininggadgets:mininggadget'
         }
     ];
 
@@ -285,7 +419,7 @@ onEvent('recipes', (event) => {
                 J: 'xnet:advanced_connector_blue',
                 K: 'xnet:netcable_blue',
                 L: 'pneumaticcraft:heat_pipe',
-                M: 'kubejs:spirit_heat_exchanger',
+                M: 'kubejs:spirit_entropic_gateway',
                 N: 'xnet:controller',
                 O: `powah:furnator_${tier}`,
                 P: 'create:fluid_pipe'

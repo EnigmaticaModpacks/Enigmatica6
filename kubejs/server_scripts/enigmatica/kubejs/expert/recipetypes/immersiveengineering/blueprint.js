@@ -42,6 +42,15 @@ onEvent('recipes', (event) => {
                 count: 2
             },
             id: 'modularrouters:augment_core'
+        },
+        {
+            inputs: [{ count: 3, base_ingredient: { tag: 'forge:ingots/steel' } }, { item: 'fluxnetworks:flux_dust' }],
+            category: 'components',
+            output: {
+                item: 'engineersdecor:metal_bar',
+                count: 12
+            },
+            id: 'engineersdecor:dependent/metal_bar_recipe'
         }
     ];
 

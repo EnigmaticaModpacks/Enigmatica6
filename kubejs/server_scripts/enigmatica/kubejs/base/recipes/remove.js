@@ -65,6 +65,8 @@ onEvent('recipes', (event) => {
         'aquaculture:planks_from_driftwood',
         'aquaculture:red_mushroom_from_red_shrooma',
 
+        'architects_palette:smelting/charcoal_block_from_logs_that_burn_smoking',
+
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
@@ -75,7 +77,7 @@ onEvent('recipes', (event) => {
 
         'botania:fertilizer_dye',
 
-        'botanypots:crafting/compact_hopper_botany_pot',
+        /botanypots:crafting\/compact_hopper/,
 
         'byg:vermilion_sculk',
         '/byg:\\w+_glass_from_sand/',
@@ -147,6 +149,10 @@ onEvent('recipes', (event) => {
         'mekanism:processing/bronze/dust/from_infusing',
         'mekanism:processing/bronze/ingot/from_infusing',
         'mekanism:processing/lapis_lazuli/from_ore',
+        'mekanism:processing/refined_glowstone/ingot_to_dust',
+        'mekanism:processing/refined_obsidian/dust/from_ingot',
+        'mekanism:osmium_compressor',
+        /mekanism:factory/,
 
         'minecraft:crystal_glass',
 
@@ -172,6 +178,8 @@ onEvent('recipes', (event) => {
         'simplefarming:blueberry_pie',
 
         'tconstruct:tools/modifiers/wither_bone_conversion',
+        'tconstruct:tables/tinkers_anvil',
+        'tconstruct:tables/scorched_anvil',
 
         'thermal:compat/tconstruct/chiller_tconstruct_molten_debris_ingot',
         'thermal:machine/smelter/smelter_alloy_netherite',
@@ -230,7 +238,9 @@ onEvent('recipes', (event) => {
         /masonry:\w+wall_from_\w+_stonecutting/,
         /masonry:\w+slab_from_\w+_stonecutting/,
         /atum:.*dye$/,
-        /thermal:compat\/\w+\/\w+_ore/
+        /thermal:compat\/\w+\/\w+_ore/,
+        /decorative_blocks:\w+_beam/,
+        /decorative_blocks_abnormals:\w+_beam/
     ];
 
     outputRemovals.forEach((removal) => {
@@ -292,10 +302,6 @@ onEvent('recipes', (event) => {
     event.remove({ type: 'immersiveengineering:cloche' });
 
     event.remove({ type: 'valhelsia_structures:axe_crafting' });
-
-    beamRecipes.forEach((recipe) => {
-        event.remove({ output: recipe.output });
-    });
 
     stonecuttables.forEach((stoneType) => {
         stoneType.stones.forEach((stone) => {

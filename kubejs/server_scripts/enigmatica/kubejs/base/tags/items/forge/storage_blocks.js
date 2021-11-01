@@ -53,4 +53,10 @@ onEvent('item.tags', (event) => {
     event.add(storageBlocks + '/niotic', ['powah:niotic_crystal_block']);
     event.add(storageBlocks + '/spirited', ['powah:spirited_crystal_block']);
     event.add(storageBlocks + '/nitro', ['powah:nitro_crystal_block']);
+
+    event.add(storageBlocks + '/bronze', ['#chisel:metals/bronze']);
+    event.add(storageBlocks + '/emerald', ['#chisel:emerald']);
+    event.add(storageBlocks + '/glowstone', ['#chisel:glowstone']);
+    event.add(storageBlocks + '/redstone', ['#chisel:redstone']);
+    event.add(storageBlocks + '/coal', ['#chisel:coal']);
 });

@@ -25,7 +25,7 @@ onEvent('item.registry', (event) => {
         'superheated_steel_ingot',
         'hot_compressed_iron_ingot',
         'dimensional_storage_crystal',
-        'spirit_heat_exchanger',
+        'spirit_entropic_gateway',
         'amadron_survey_tools',
         'basalt_powder',
         'coke_brick_blend',
@@ -33,13 +33,21 @@ onEvent('item.registry', (event) => {
         'blast_brick_blend',
         'blast_brick',
         'red_nether_brick',
-        'ground_meat'
+        'ground_meat',
+        'memory_basic_empty',
+        'memory_basic_filled',
+        'memory_advanced_empty',
+        'memory_advanced_filled',
+        'memory_elite_empty',
+        'memory_elite_filled',
+        'memory_ultimate_empty',
+        'memory_ultimate_filled'
     ];
 
     const ritualDummies = [
         'summon_pink_wither',
         'summon_pharaoh',
-        'craft_spirit_heat_exchanger',
+        'craft_spirit_entropic_gateway',
         'craft_magical_feathers',
         'craft_magicfeather',
         'craft_soulsword',
@@ -49,7 +57,8 @@ onEvent('item.registry', (event) => {
         'craft_soulscythe',
         'craft_attunement_altar',
         'craft_mana_collector',
-        'craft_logic_director'
+        'craft_logic_director',
+        'craft_robit'
     ];
 
     const reusableItemTextures = [
@@ -64,6 +73,9 @@ onEvent('item.registry', (event) => {
         { name: 'dynamo_fuel_augment_mk2', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk3', texture: 'dynamo_fuel_augment' },
         { name: 'dynamo_fuel_augment_mk4', texture: 'dynamo_fuel_augment' },
+
+        { name: 'basic_memory_package', texture: 'assembly_package_filled' },
+        { name: 'basic_memory_assembly', texture: 'assembly_package_processing' },
 
         { name: 'basic_circuit_package', texture: 'assembly_package_filled' },
         { name: 'basic_circuit_assembly', texture: 'assembly_package_processing' },

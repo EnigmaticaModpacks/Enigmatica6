@@ -832,6 +832,12 @@ const cropRegistry = [
                 render: 'simplefarming:yam_crop',
                 plant: 'simplefarming:yam',
                 substrate: 'dirt'
+            },
+            {
+                seed: 'sushigocrafting:wasabi_seeds',
+                render: 'sushigocrafting:wasabi_crop',
+                plant: 'sushigocrafting:wasabi_root',
+                substrate: 'dirt'
             }
         ]
     },
@@ -2168,6 +2174,12 @@ const cropRegistry = [
                 seed: 'upgrade_aquatic:tongue_kelp',
                 render: 'upgrade_aquatic:tongue_kelp',
                 plant: 'upgrade_aquatic:tongue_kelp',
+                substrate: 'water'
+            },
+            {
+                seed: 'sushigocrafting:seaweed',
+                render: 'sushigocrafting:seaweed',
+                plant: 'sushigocrafting:seaweed',
                 substrate: 'water'
             }
         ]

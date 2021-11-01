@@ -36,7 +36,7 @@ onEvent('recipes', (event) => {
         },
         {
             input: { item: 'kubejs:basic_circuit_assembly', count: 1 },
-            output: { item: 'mekanism:basic_control_circuit', count: 3 },
+            output: { item: 'mekanism:basic_control_circuit', count: 2 },
             program: 'laser',
             id: 'mekanism:control_circuit/basic'
         },
@@ -45,6 +45,18 @@ onEvent('recipes', (event) => {
             output: { item: 'occultism:lenses', count: 3 },
             program: 'laser',
             id: 'occultism:crafting/lenses'
+        },
+        {
+            input: { item: 'kubejs:basic_memory_package', count: 1 },
+            output: { item: 'kubejs:basic_memory_assembly', count: 1 },
+            program: 'drill',
+            id: `${id_prefix}basic_memory_assembly`
+        },
+        {
+            input: { item: 'kubejs:basic_memory_assembly', count: 1 },
+            output: { item: 'kubejs:memory_basic_empty', count: 2 },
+            program: 'laser',
+            id: `${id_prefix}memory_basic_empty`
         }
     ];
 

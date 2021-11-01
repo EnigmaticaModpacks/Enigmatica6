@@ -25,6 +25,16 @@
     "item.kubejs.red_nether_brick": "Red Nether Brick",
     "item.kubejs.ground_meat": "Ground Meat",
     "item.kubejs.amadron_survey_tools": "Amadron Survey Tools",
+    "block.kubejs.firmament": "Firmament",
+
+    "item.kubejs.memory_basic_empty": "Prepared Basic Memory Chip",
+    "item.kubejs.memory_basic_filled": "Basic Memory Chip",
+    "item.kubejs.memory_advanced_empty": "Prepared Advanced Memory Chip",
+    "item.kubejs.memory_advanced_filled": "Advanced Memory Chip",
+    "item.kubejs.memory_elite_empty": "Prepared Elite Memory Chip",
+    "item.kubejs.memory_elite_filled": "Elite Memory Chip",
+    "item.kubejs.memory_ultimate_empty": "Prepared Ultimate Memory Chip",
+    "item.kubejs.memory_ultimate_filled": "Ultimate Memory Chip",
 
     "item.kubejs.machine_speed_augment_mk2": "Machine Speed MK2",
     "item.kubejs.machine_speed_augment_mk3": "Machine Speed MK3",
@@ -36,8 +46,8 @@
     "item.kubejs.dynamo_fuel_augment_mk3": "Dynamo Efficiency MK3",
     "item.kubejs.dynamo_fuel_augment_mk4": "Dynamo Efficiency MK4",
 
-    "item.kubejs.spirit_heat_exchanger": "Maxwellian Heat Exchanger",
-    "item.kubejs.spirit_heat_exchanger.occultism_spirit_tooltip": "%s resides within, ever vigilant against entropy.",
+    "item.kubejs.spirit_entropic_gateway": "Maxwellian Entropic Gateway",
+    "item.kubejs.spirit_entropic_gateway.occultism_spirit_tooltip": "%s resides within, ever vigilant against entropy.",
     "item.magicfeather.magicfeather.occultism_spirit_tooltip": "%s is bound to this feather.",
     "item.bloodmagic.soulsword.occultism_spirit_tooltip": "%s is bound to this sword.",
     "item.bloodmagic.soulaxe.occultism_spirit_tooltip": "%s is bound to this axe.",
@@ -45,7 +55,7 @@
     "item.bloodmagic.soulshovel.occultism_spirit_tooltip": "%s is bound to this shovel.",
     "item.bloodmagic.soulscythe.occultism_spirit_tooltip": "%s is bound to this scythe.",
     "item.integrateddynamics.logic_director.occultism_spirit_tooltip": "%s is bound to this logic director.",
-    "block.kubejs.firmament": "Firmament",
+    "item.mekanism.robit.occultism_spirit_tooltip": "%s is bound to this robit.",
 
     "item.kubejs.quintuple_alfsteel_ingot": "Quintuple Alfsteel Ingot",
 
@@ -58,6 +68,7 @@
     "ritual.occultism.sacrifice.gaia_guardian": "Guardian of Gaia",
     "ritual.occultism.sacrifice.pharaohs": "Pharaoh of Atum",
     "ritual.occultism.sacrifice.wither": "The Wither",
+    "ritual.occultism.sacrifice.camels": "Camel",
 
     "item.kubejs.craft_magical_feathers": "Ritual: Craft Magical Feathers.",
     "item.kubejs.craft_magical_feathers.tooltip": "Binds the Spirit of the Ender Dragon to grant Creative Flight.",
@@ -87,12 +98,12 @@
     "ritual.enigmatica.occultism/ritual/pink_wither.interrupted": "I'll be burnin' rubber, you'll be kissin' my ...",
     "ritual.enigmatica.occultism/ritual/pink_wither.conditions": "Not all requirements for this ritual are met.",
 
-    "item.kubejs.craft_spirit_heat_exchanger": "Ritual: Craft Maxwellian Heat Exchanger",
-    "item.kubejs.craft_spirit_heat_exchanger.tooltip": "Fission, brought to you by the Spirits of the Otherworld.",
-    "ritual.enigmatica.occultism/ritual/spirit_heat_exchanger.started": "Started binding Maxwell's Spirit.",
-    "ritual.enigmatica.occultism/ritual/spirit_heat_exchanger.finished": "Maxwell's Spirit bound successfully.",
-    "ritual.enigmatica.occultism/ritual/spirit_heat_exchanger.interrupted": "Maxwell's Spirit interrupted.",
-    "ritual.enigmatica.occultism/ritual/spirit_heat_exchanger.conditions": "Not all requirements for this ritual are met.",
+    "item.kubejs.craft_spirit_entropic_gateway": "Ritual: Craft Maxwellian Entropic Gateway.",
+    "item.kubejs.craft_spirit_entropic_gateway.tooltip": "Fission, brought to you by the Spirits of the Otherworld.",
+    "ritual.enigmatica.occultism/ritual/spirit_entropic_gateway.started": "Started binding Maxwell's Spirit.",
+    "ritual.enigmatica.occultism/ritual/spirit_entropic_gateway.finished": "Maxwell's Spirit bound successfully.",
+    "ritual.enigmatica.occultism/ritual/spirit_entropic_gateway.interrupted": "Maxwell's Spirit interrupted.",
+    "ritual.enigmatica.occultism/ritual/spirit_entropic_gateway.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.craft_soulsword": "Ritual: Craft Sentient Sword.",
     "item.kubejs.craft_soulsword.tooltip": "Bind a spirit into a Sentient Sword",
@@ -149,6 +160,13 @@
     "ritual.enigmatica.occultism/ritual/logic_director.finished": "Successfully bound djinni into logic director.",
     "ritual.enigmatica.occultism/ritual/logic_director.interrupted": "Binding of djinni interrupted.",
     "ritual.enigmatica.occultism/ritual/logic_director.conditions": "Not all requirements for this ritual are met.",
+
+    "item.kubejs.craft_robit": "Ritual: Craft Sentient Robit.",
+    "item.kubejs.craft_robit.tooltip": "Binds a Foliot to pilot the Robit.",
+    "ritual.enigmatica.occultism/ritual/robit.started": "What is my purpose?",
+    "ritual.enigmatica.occultism/ritual/robit.finished": "You pass the salt.",
+    "ritual.enigmatica.occultism/ritual/robit.interrupted": "Binding of foliot interrupted.",
+    "ritual.enigmatica.occultism/ritual/robit.conditions": "Not all requirements for this ritual are met.",
 
     "item.kubejs.suffused_aluminum": "Mana Suffused Aluminum Chunk",
     "item.kubejs.suffused_cloggrum": "Mana Suffused Cloggrum Chunk",
@@ -252,6 +270,9 @@
     "item.kubejs.pneumatic_leggings_assembly": "Unpacked Pneumatic Leggings Assembly Package",
     "item.kubejs.pneumatic_boots_package": "Pneumatic Boots Assembly Package",
     "item.kubejs.pneumatic_boots_assembly": "Unpacked Pneumatic Boots Assembly Package",
+
+    "item.kubejs.basic_memory_package": "Basic Memory Chip Assembly Package",
+    "item.kubejs.basic_memory_assembly": "Unpacked Basic Memory Chip Assembly Package",
 
     "item.kubejs.1k_storage_part_package": "1k Storage Part Assembly Package",
     "item.kubejs.1k_storage_part_assembly": "Unpacked 1k Storage Part Assembly Package",

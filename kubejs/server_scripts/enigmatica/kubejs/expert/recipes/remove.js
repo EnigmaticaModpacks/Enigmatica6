@@ -57,9 +57,14 @@ onEvent('recipes', (event) => {
         'integrateddynamics:crafting/variable_transformer_output',
         'integrateddynamics:crafting/variable_transformer_input',
 
+        'mekanism:metallurgic_infusing/alloy/reinforced',
+        'mekanism:metallurgic_infusing/alloy/atomic',
+
         'minecraft:book',
         'minecraft:leather_to_stripes',
         'minecraft:stick',
+
+        'mininggadgets:upgrade_empty',
 
         'pedestals:ingot_gold_from_upgrades',
         'pedestals:upgrades/breaker2',
@@ -70,6 +75,7 @@ onEvent('recipes', (event) => {
 
         'pneumaticcraft:explosion_crafting/compressed_iron_block',
         'pneumaticcraft:explosion_crafting/compressed_iron_ingot',
+        'pneumaticcraft:speed_upgrade',
 
         'powah:crafting/dielectric_paste_2',
         'powah:energizing/blazing_crystal_2',

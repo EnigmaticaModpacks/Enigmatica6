@@ -63,8 +63,8 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:summon_wild_afrit',
             duration: 6,
             entity_to_sacrifice: {
-                tag: 'forge:cows',
-                display_name: 'ritual.occultism.sacrifice.cows'
+                tag: 'enigmatica:camels',
+                display_name: 'ritual.occultism.sacrifice.camels'
             },
             entity_to_summon: 'occultism:afrit_wild',
             ritual_dummy: { item: 'occultism:ritual_dummy/summon_wild_afrit' },
@@ -72,7 +72,7 @@ onEvent('recipes', (event) => {
                 { item: 'eidolon:gold_inlay' },
                 { tag: 'botania:runes/fire' },
                 { item: 'eidolon:crimson_essence' },
-                { tag: 'botania:runes/wrath' },
+                { tag: 'botania:runes/fire' },
                 { item: 'ars_nouveau:red_archwood_wood' },
                 { item: 'ars_nouveau:red_archwood_wood' },
                 { item: 'ars_nouveau:red_archwood_wood' },
@@ -434,7 +434,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:possess_foliot',
             duration: 3,
             entity_to_sacrifice: {
-                tag: 'occultism:wild_hunt_sacrifices',
+                tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'occultism:greedy_familiar',
@@ -672,7 +672,7 @@ onEvent('recipes', (event) => {
             pentacle_id: 'occultism:summon_wild_afrit',
             duration: 6,
             entity_to_sacrifice: {
-                tag: 'occultism:wild_hunt_sacrifices',
+                tag: 'occultism:humans',
                 display_name: 'ritual.occultism.sacrifice.humans'
             },
             entity_to_summon: 'atum:pharaoh',
@@ -695,7 +695,7 @@ onEvent('recipes', (event) => {
             activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
             pentacle_id: 'occultism:craft_foliot',
             duration: 10,
-            ritual_dummy: { item: 'kubejs:craft_spirit_heat_exchanger' },
+            ritual_dummy: { item: 'kubejs:craft_spirit_entropic_gateway' },
             ingredients: [
                 { item: 'ars_nouveau:void_jar' },
                 { item: 'atum:shu_godshard' },
@@ -706,8 +706,8 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/water' },
                 { tag: 'botania:runes/water' }
             ],
-            result: { item: 'kubejs:spirit_heat_exchanger' },
-            id: `${id_prefix}spirit_heat_exchanger`
+            result: { item: 'kubejs:spirit_entropic_gateway' },
+            id: `${id_prefix}spirit_entropic_gateway`
         },
         {
             ritual_type: 'occultism:craft_with_spirit_name',
@@ -903,6 +903,31 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'occultism:jei_dummy/none' },
             id: `${id_prefix}pink_wither`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:craft_foliot',
+            duration: 12,
+            ritual_dummy: { item: 'kubejs:craft_robit' },
+            ingredients: [
+                { tag: 'industrialforegoing:machine_frame/pity' },
+                { item: 'create:belt_connector' },
+                { tag: 'forge:dusts/salt' },
+                { item: 'create:belt_connector' },
+
+                { tag: 'forge:circuits/basic' },
+                { tag: 'forge:gears/osmium' },
+                { item: 'create:encased_chain_drive' },
+                { tag: 'forge:gears/osmium' },
+
+                { tag: 'forge:circuits/basic' },
+                { tag: 'forge:gears/osmium' },
+                { item: 'create:encased_chain_drive' },
+                { tag: 'forge:gears/osmium' }
+            ],
+            result: { item: 'mekanism:robit' },
+            id: 'mekanism:robit'
         }
     ];
 
