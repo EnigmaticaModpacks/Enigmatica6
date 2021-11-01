@@ -25,6 +25,7 @@ let config = JsonIO.read(configName);
 if (!config || !config.mode) {
     JsonIO.write(configName, defaultConfig);
     console.log(`Created new ${configName}`);
+    config = defaultConfig;
 }
 if (config.mode == 'none') {
     JsonIO.write(configName, defaultConfig);
