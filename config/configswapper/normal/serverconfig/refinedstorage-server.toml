@@ -29,17 +29,12 @@
 	regulatorUpgradeUsage = 15
 
 [controller]
-	#Whether the Controller uses energy
-	useEnergy = true
 	#The energy capacity of the Controller
 	#Range: > 0
 	capacity = 250000
 	#The base energy used by the Controller
 	#Range: > 0
 	baseUsage = 0
-	#The maximum energy that the Controller can receive
-	#Range: > 0
-	maxTransfer = 2147483647
 
 [cable]
 	#The energy used by the Cable
@@ -81,9 +76,6 @@
 	#The energy used by the 64k Storage Block
 	#Range: > 0
 	sixtyFourKUsage = 8
-	#The energy used by the Creative Storage Block
-	#Range: > 0
-	creativeUsage = 10
 
 [fluidStorageBlock]
 	#The energy used by the 64k Fluid Storage Block
@@ -98,9 +90,6 @@
 	#The energy used by the 4096k Fluid Storage Block
 	#Range: > 0
 	fourThousandNinetySixKUsage = 8
-	#The energy used by the Creative Fluid Storage Block
-	#Range: > 0
-	creativeUsage = 10
 
 [externalStorage]
 	#The energy used by the External Storage
@@ -172,8 +161,6 @@
 	usage = 3
 
 [wirelessGrid]
-	#Whether the Wireless Grid uses energy
-	useEnergy = true
 	#The energy capacity of the Wireless Grid
 	#Range: > 0
 	capacity = 3200
@@ -188,8 +175,6 @@
 	insertUsage = 5
 
 [wirelessFluidGrid]
-	#Whether the Wireless Fluid Grid uses energy
-	useEnergy = true
 	#The energy capacity of the Wireless Fluid Grid
 	#Range: > 0
 	capacity = 3200
@@ -219,8 +204,6 @@
 	usage = 4
 
 [portableGrid]
-	#Whether the Portable Grid uses energy
-	useEnergy = true
 	#The energy capacity of the Portable Grid
 	#Range: > 0
 	capacity = 3200
@@ -253,8 +236,6 @@
 	usage = 8
 
 [wirelessCraftingMonitor]
-	#Whether the Wireless Crafting Monitor uses energy
-	useEnergy = true
 	#The energy capacity of the Wireless Crafting Monitor
 	#Range: > 0
 	capacity = 3200
@@ -267,9 +248,3 @@
 	#The energy used by the Wireless Crafting Monitor to cancel all crafting tasks
 	#Range: > 0
 	cancelAllUsage = 10
-
-[autocrafting]
-	#The autocrafting calculation timeout in milliseconds, crafting tasks taking longer than this to calculate are cancelled to avoid server strain
-	#Range: > 5000
-	calculationTimeoutMs = 5000
-
