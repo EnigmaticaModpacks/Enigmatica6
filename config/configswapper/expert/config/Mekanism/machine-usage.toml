@@ -2,53 +2,39 @@
 #Machine Energy Usage Config. This config is synced from server to client.
 [usage]
 	#Energy per operation tick (Joules).
-	rotaryCondensentrator = "50"
-	#Energy per operation tick (Joules).
-	nutritionalLiquifier = "200"
-	#Energy per operation tick (Joules).
 	digitalMiner = "5000"
 	#Energy per operation tick (Joules).
-	energizedSmelter = "50"
+	energizedSmelter = "160"
 	#Energy per operation tick (Joules).
-	seismicVibrator = "50"
+	laser = "512000"
 	#Energy per operation tick (Joules).
-	isotopicCentrifuge = "200"
+	modificationStation = "1280"
 	#Energy per operation tick (Joules).
-	laser = "10000"
+	chemicalInjectionChamber = "1280"
 	#Energy per operation tick (Joules).
-	modificationStation = "100"
-	#Energy per operation tick (Joules).
-	chemicalInjectionChamber = "400"
-	#Energy per operation tick (Joules).
-	crusher = "50"
+	crusher = "160"
 	#Energy per operation tick (Joules).
 	pressurizedReactionBase = "500"
 	#Energy per operation tick (Joules).
-	chemicalInfuser = "200"
-	#Energy per operation tick (Joules).
 	formulaicAssemblicator = "50"
 	#Energy per operation tick (Joules).
-	precisionSawmill = "50"
+	precisionSawmill = "160"
 	#Energy per operation tick (Joules).
-	antiprotonicNucleosynthesizer = "100000"
+	metallurgicInfuser = "1280"
 	#Energy per operation tick (Joules).
-	metallurgicInfuser = "50"
+	purificationChamber = "640"
 	#Energy per operation tick (Joules).
-	purificationChamber = "200"
+	chemicalCrystallizer = "1280"
 	#Energy per operation tick (Joules).
-	oxidationChamber = "200"
+	fluidicPlenisher = "50"
 	#Energy per operation tick (Joules).
-	chemicalCrystallizer = "400"
+	electricPump = "50"
 	#Energy per operation tick (Joules).
-	fluidicPlenisher = "100"
+	enrichmentChamber = "160"
 	#Energy per operation tick (Joules).
-	electricPump = "100"
+	chemicalDissolutionChamber = "2560"
 	#Energy per operation tick (Joules).
-	enrichmentChamber = "50"
-	#Energy per operation tick (Joules).
-	chemicalDissolutionChamber = "400"
-	#Energy per operation tick (Joules).
-	chemicalWasher = "200"
+	chemicalWasher = "640"
 
 	#Teleporter
 	[usage.teleporter]
