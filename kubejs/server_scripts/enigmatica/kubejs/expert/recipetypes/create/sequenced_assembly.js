@@ -795,30 +795,30 @@ onEvent('recipes', (event) => {
     armorTypes.forEach((armorType) => {
         armorType.armors.forEach((armor) => {
             recipes.push({
-                input: armor.base,
+                input: Item.of(armor.base, '{Damage:0}').weakNBT(),
                 outputs: [armor.result],
-                transitionalItem: armor.base,
+                transitionalItem: armor.material,
                 loops: armorType.loops,
                 sequence: [
                     {
                         type: 'deploying',
-                        input: [armor.base, armor.material],
-                        output: armor.base
+                        input: [armor.material, armor.material],
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     },
                     {
                         type: 'pressing',
-                        input: armor.base,
-                        output: armor.base
+                        input: armor.material,
+                        output: armor.material
                     }
                 ],
                 id: armor.id
