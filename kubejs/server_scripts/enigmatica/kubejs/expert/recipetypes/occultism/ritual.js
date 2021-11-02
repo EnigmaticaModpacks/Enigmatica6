@@ -635,7 +635,7 @@ onEvent('recipes', (event) => {
             duration: 3,
             entity_to_sacrifice: {
                 tag: 'enigmatica:canines',
-                display_name: 'ritual.occultism.sacrifice.canine'
+                display_name: 'ritual.occultism.sacrifice.canines'
             },
             entity_to_summon: 'occultism:chimera_familiar',
             ritual_dummy: { item: 'occultism:ritual_dummy/familiar_chimera' },
@@ -655,6 +655,35 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_chimera'
+        },
+        {
+            type: 'occultism:ritual',
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_afrit' },
+            pentacle_id: 'occultism:possess_afrit',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'occultism:humans',
+                display_name: 'ritual.occultism.sacrifice.humans'
+            },
+            entity_to_summon: 'occultism:guardian_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_guardian' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { tag: 'forge:gems/mana' },
+                { tag: 'forge:gems/mana' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:mythical_clay' },
+                { item: 'ars_nouveau:mythical_clay' },
+                { item: 'ars_nouveau:warding_stone' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_guardian'
         },
 
         /// Custom Rituals
