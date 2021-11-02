@@ -59,7 +59,7 @@ $CLIENT_CHANGELOG = "The Changelog is currently being written, it should be done
 $GAME_VERSIONS = @(8203)
 
 # Can be "alpha", "beta" or "release"
-$CLIENT_RELEASE_TYPE = "alpha"
+$CLIENT_RELEASE_TYPE = "beta"
 
 #=====================================================================//
 #  DEPENDENCIES URL
