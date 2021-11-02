@@ -82,6 +82,32 @@ onEvent('recipes', (event) => {
             id: 'occultism:ritual/possess_skeleton'
         },
         {
+            ritual_type: 'occultism:summon',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:possess_djinni',
+            duration: 6,
+            entity_to_sacrifice: {
+                tag: 'forge:cows',
+                display_name: 'ritual.occultism.sacrifice.cows'
+            },
+            entity_to_summon: 'occultism:possessed_ghast',
+            ritual_dummy: { item: 'occultism:ritual_dummy/possess_ghast' },
+            ingredients: [
+                { tag: 'forge:netherrack' },
+                { tag: 'forge:netherrack' },
+                { tag: 'forge:netherrack' },
+                { tag: 'forge:magma' },
+                { tag: 'forge:magma' },
+                { tag: 'forge:magma' },
+                { item: 'minecraft:lava_bucket' },
+                { item: 'minecraft:lava_bucket' },
+                { item: 'minecraft:lava_bucket' },
+                { tag: 'forge:gems/diamond' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/possess_ghast'
+        },
+        {
             ritual_type: 'occultism:summon_spirit_with_job',
             activation_item: { item: 'occultism:book_of_binding_bound_afrit' },
             pentacle_id: 'occultism:summon_afrit',

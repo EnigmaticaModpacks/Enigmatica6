@@ -24,6 +24,7 @@ onEvent('recipes', (event) => {
         /bloodmagic:alchemytable\/melee_damage_anointment/,
 
         'botania:mana_infusion/mana_diamond_block',
+        'byg:compat/create/black_sand_from_crushing',
 
         /create:pressing\/\w*_ingot/,
 
@@ -59,6 +60,7 @@ onEvent('recipes', (event) => {
 
         'mekanism:metallurgic_infusing/alloy/reinforced',
         'mekanism:metallurgic_infusing/alloy/atomic',
+        'mekanism:enriching/conversion/basalt_to_polished_basalt',
         'mekanism:processing/refined_glowstone/ingot_to_dust',
         'mekanism:processing/refined_obsidian/dust/from_ingot',
         'mekanism:osmium_compressor',

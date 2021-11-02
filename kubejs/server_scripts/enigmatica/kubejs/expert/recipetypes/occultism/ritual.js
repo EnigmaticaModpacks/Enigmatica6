@@ -350,9 +350,7 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/water' },
                 { tag: 'botania:runes/water' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/summon_foliot_crusher'
         },
 
@@ -399,9 +397,7 @@ onEvent('recipes', (event) => {
                 { tag: 'botania:runes/water' },
                 { tag: 'botania:runes/water' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/summon_afrit_crusher'
         },
 
@@ -449,9 +445,7 @@ onEvent('recipes', (event) => {
                 { item: 'minecraft:lodestone' },
                 { item: 'meetyourfight:spectres_grasp' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_greedy'
         },
         {
@@ -471,13 +465,11 @@ onEvent('recipes', (event) => {
                 { item: 'quark:gold_bars' },
                 { item: 'quark:gold_bars' },
                 { item: 'tconstruct:sky_cake' },
-                { item: 'create:white_sail' },
+                { item: 'simplefarming:raw_chicken_wings' },
                 { item: 'naturesaura:token_anger' },
-                { item: 'create:white_sail' }
+                { item: 'simplefarming:raw_chicken_wings' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_otherworld_bird'
         },
         {
@@ -501,9 +493,7 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:fruits/banana' },
                 { item: 'ars_nouveau:wilden_wing' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_bat'
         },
         {
@@ -527,9 +517,7 @@ onEvent('recipes', (event) => {
                 { item: 'minecraft:golden_apple' },
                 { item: 'minecraft:golden_apple' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_deer'
         },
         {
@@ -553,9 +541,7 @@ onEvent('recipes', (event) => {
                 { item: 'sushigocrafting:shrimp_nigiri' },
                 { item: 'sushigocrafting:shrimp_nigiri' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_cthulhu'
         },
         {
@@ -583,9 +569,7 @@ onEvent('recipes', (event) => {
                 { item: 'atum:anputs_fingers_spores' },
                 { item: 'byg:hanging_bones' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_devil'
         },
         {
@@ -613,10 +597,121 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:clusters/arcane' },
                 { item: 'alexsmobs:lava_bottle' }
             ],
-            result: {
-                item: 'occultism:jei_dummy/none'
-            },
+            result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_dragon'
+        },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:possess_djinni',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'forge:golems/snow',
+                display_name: 'ritual.occultism.sacrifice.snow_golem'
+            },
+            entity_to_summon: 'occultism:headless_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_headless' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'simplefarming:scarecrow' },
+                { item: 'sushigocrafting:cleaver_knife' },
+                { item: 'simplefarming:cheese_block' },
+                { item: 'simplefarming:cheese_block' },
+                { item: 'minecraft:rotten_flesh' },
+                { item: 'minecraft:rotten_flesh' },
+                { item: 'minecraft:rotten_flesh' },
+                { item: 'minecraft:rotten_flesh' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_headless'
+        },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:possess_djinni',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'enigmatica:canines',
+                display_name: 'ritual.occultism.sacrifice.canines'
+            },
+            entity_to_summon: 'occultism:chimera_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_chimera' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'alexsmobs:gazelle_horn' },
+                { item: 'alexsmobs:gazelle_horn' },
+                { item: 'alexsmobs:rattlesnake_rattle' },
+                { item: 'alexsmobs:bear_fur' },
+                { item: 'farmersdelight:horse_feed' },
+                { item: 'farmersdelight:dog_food' },
+                { item: 'farmersdelight:dog_food' },
+                { item: 'farmersdelight:horse_feed' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_chimera'
+        },
+        {
+            type: 'occultism:ritual',
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_afrit' },
+            pentacle_id: 'occultism:possess_afrit',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'occultism:humans',
+                display_name: 'ritual.occultism.sacrifice.humans'
+            },
+            entity_to_summon: 'occultism:guardian_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_guardian' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { tag: 'forge:gems/mana' },
+                { tag: 'forge:gems/mana' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:warding_stone' },
+                { item: 'ars_nouveau:mythical_clay' },
+                { item: 'ars_nouveau:mythical_clay' },
+                { item: 'ars_nouveau:warding_stone' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_guardian'
+        },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:possess_foliot',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'forge:zombies',
+                display_name: 'ritual.occultism.sacrifice.zombies'
+            },
+            entity_to_summon: 'occultism:blacksmith_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_blacksmith' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'betterendforge:terminite_anvil' },
+                { item: 'betterendforge:terminite_hammer' },
+                { item: 'minecraft:blast_furnace' },
+                { item: 'supplementaries:bellows' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_blacksmith'
         },
 
         /// Custom Rituals
