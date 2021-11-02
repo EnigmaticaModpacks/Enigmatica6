@@ -685,6 +685,34 @@ onEvent('recipes', (event) => {
             result: { item: 'occultism:jei_dummy/none' },
             id: 'occultism:ritual/familiar_guardian'
         },
+        {
+            ritual_type: 'occultism:familiar',
+            activation_item: { item: 'occultism:book_of_binding_bound_foliot' },
+            pentacle_id: 'occultism:possess_foliot',
+            duration: 3,
+            entity_to_sacrifice: {
+                tag: 'forge:zombies',
+                display_name: 'ritual.occultism.sacrifice.zombies'
+            },
+            entity_to_summon: 'occultism:blacksmith_familiar',
+            ritual_dummy: { item: 'occultism:ritual_dummy/familiar_blacksmith' },
+            ingredients: [
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'quark:gold_bars' },
+                { item: 'betterendforge:terminite_anvil' },
+                { item: 'betterendforge:terminite_hammer' },
+                { item: 'minecraft:blast_furnace' },
+                { item: 'supplementaries:bellows' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' },
+                { tag: 'forge:storage_blocks/coal' }
+            ],
+            result: { item: 'occultism:jei_dummy/none' },
+            id: 'occultism:ritual/familiar_blacksmith'
+        },
 
         /// Custom Rituals
         {
