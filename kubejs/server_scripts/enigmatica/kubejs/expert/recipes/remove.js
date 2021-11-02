@@ -61,6 +61,10 @@ onEvent('recipes', (event) => {
         'mekanism:metallurgic_infusing/alloy/reinforced',
         'mekanism:metallurgic_infusing/alloy/atomic',
         'mekanism:enriching/conversion/basalt_to_polished_basalt',
+        'mekanism:processing/refined_glowstone/ingot_to_dust',
+        'mekanism:processing/refined_obsidian/dust/from_ingot',
+        'mekanism:osmium_compressor',
+        /mekanism:factory/,
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
