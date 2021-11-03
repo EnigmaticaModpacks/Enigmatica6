@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-11-02T18:54:26.2971303Z",
-  "playedCount": 440,
+  "lastPlayed": "2021-11-03T18:47:11.9283166Z",
+  "playedCount": 442,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -47,8 +47,8 @@
   "name": "Enigmatica6",
   "cachedScans": [],
   "isValid": true,
-  "lastPreviousMatchUpdate": "2021-11-01T20:22:34.6944184Z",
-  "lastRefreshAttempt": "2021-11-01T21:31:05.9964552+01:00",
+  "lastPreviousMatchUpdate": "2021-11-02T20:35:38.6391548Z",
+  "lastRefreshAttempt": "2021-11-02T21:37:31.9858472+01:00",
   "isEnabled": true,
   "isPinned": false,
   "gameVersion": "1.16.5",
@@ -7576,7 +7576,7 @@
       "dateInstalled": "2021-07-05T20:20:54.9128241Z",
       "dateUpdated": "2021-11-02T18:45:12.4951273Z",
       "dateLastUpdateAttempted": "2021-11-02T18:45:12.4951273Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -14528,7 +14528,7 @@
       "dateInstalled": "2021-07-05T20:20:57.5335796Z",
       "dateUpdated": "2021-11-02T18:45:07.36764Z",
       "dateLastUpdateAttempted": "2021-11-02T18:45:07.36764Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -22421,7 +22421,7 @@
       "dateInstalled": "2021-08-05T21:06:59.9349112Z",
       "dateUpdated": "2021-11-02T18:45:12.274783Z",
       "dateLastUpdateAttempted": "2021-11-02T18:45:12.274783Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27002,14 +27002,14 @@
       "addonID": 390898,
       "gameInstanceID": "6058bcbe-3806-4464-ae31-c7ee23f11eec",
       "installedFile": {
-        "id": 3248894,
-        "displayName": "ERP-V1.8",
-        "fileName": "ERP-V1.8.zip",
-        "fileDate": "2021-03-23T15:56:05.357Z",
-        "fileLength": 1284222,
+        "id": 3510421,
+        "displayName": "ERP-V1.9",
+        "fileName": "ERP-1.9.zip",
+        "fileDate": "2021-10-31T13:15:00.847Z",
+        "fileLength": 647577,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3248/894/ERP-V1.8.zip",
+        "downloadUrl": "https://edge.forgecdn.net/files/3510/421/ERP-1.9.zip",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [],
@@ -27017,13 +27017,13 @@
         "modules": [
           {
             "foldername": "assets",
-            "fingerprint": 874958223,
+            "fingerprint": 3277207772,
             "type": 3,
             "invalidFingerprint": false
           },
           {
             "foldername": "pack.mcmeta",
-            "fingerprint": 2937881892,
+            "fingerprint": 2836344335,
             "type": 3,
             "invalidFingerprint": false
           },
@@ -27034,8 +27034,9 @@
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 279866541,
+        "packageFingerprint": 3022841345,
         "gameVersion": [
+          "1.16-Snapshot",
           "1.16.3",
           "1.16.1",
           "1.16",
@@ -27044,6 +27045,13 @@
           "1.16.2"
         ],
         "sortableGameVersion": [
+          {
+            "gameVersionPadded": "0000000001.0000000016",
+            "gameVersion": "1.16",
+            "gameVersionReleaseDate": "2020-02-06T00:00:00Z",
+            "gameVersionName": "1.16-Snapshot",
+            "gameVersionTypeId": 70886
+          },
           {
             "gameVersionPadded": "0000000001.0000000016.0000000003",
             "gameVersion": "1.16.3",
@@ -27092,20 +27100,20 @@
         "categorySectionPackageType": 3,
         "restrictProjectFileAccess": 1,
         "projectStatus": 4,
-        "renderCacheId": 2231285,
+        "renderCacheId": 2564763,
         "projectId": 390898,
-        "packageFingerprintId": 630678459,
-        "gameVersionDateReleased": "2020-06-23T13:41:08.75Z",
-        "gameVersionMappingId": 2813044,
-        "gameVersionId": 7890,
+        "packageFingerprintId": 774266848,
+        "gameVersionDateReleased": "2020-02-06T00:00:00Z",
+        "gameVersionMappingId": 3428290,
+        "gameVersionId": 7751,
         "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "ERP-V1.8.zip"
+        "FileNameOnDisk": "ERP-1.9.zip"
       },
-      "dateInstalled": "2021-11-01T20:31:05.073454Z",
-      "dateUpdated": "2021-11-01T20:31:05.073454Z",
-      "dateLastUpdateAttempted": "0001-01-01T00:00:00",
-      "status": 3,
+      "dateInstalled": "2021-11-03T18:46:54.1462799Z",
+      "dateUpdated": "2021-11-03T18:46:54.1572823Z",
+      "dateLastUpdateAttempted": "2021-11-03T18:46:54.1572823Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27114,7 +27122,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 370777,
