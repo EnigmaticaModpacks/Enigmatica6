@@ -70,6 +70,8 @@ onEvent('recipes', (event) => {
         'astralsorcery:infuser/gold_ore',
         'astralsorcery:shaped/marble/marble_slab',
 
+        'atum:pumpkin_pie',
+
         'betterendforge:gunpowder_from_sulphur',
 
         'bloodmagic:smelting/ingot_netherite_scrap',
