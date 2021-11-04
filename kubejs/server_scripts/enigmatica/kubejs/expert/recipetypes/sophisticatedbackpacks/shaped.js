@@ -18,11 +18,10 @@ onEvent('recipes', (event) => {
     const recipes = [
         {
             output: 'sophisticatedbackpacks:upgrade_base',
-            pattern: ['ABA', 'BCB', 'ABA'],
+            pattern: ['AAA', 'ABA', 'AAA'],
             key: {
-                A: 'ars_nouveau:blaze_fiber',
-                B: '#forge:rods/aluminum',
-                C: 'tconstruct:diamond_item_frame'
+                A: 'kubejs:scented_stick',
+                B: 'farmersdelight:canvas'
             },
             id: 'sophisticatedbackpacks:upgrade_base'
         },
