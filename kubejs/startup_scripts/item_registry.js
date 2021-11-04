@@ -59,7 +59,8 @@ onEvent('item.registry', (event) => {
         'craft_attunement_altar',
         'craft_mana_collector',
         'craft_logic_director',
-        'craft_robit'
+        'craft_robit',
+        'craft_feeding_upgrade'
     ];
 
     const reusableItemTextures = [

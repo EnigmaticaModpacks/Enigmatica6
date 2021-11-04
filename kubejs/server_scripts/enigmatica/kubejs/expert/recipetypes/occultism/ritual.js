@@ -1022,7 +1022,22 @@ onEvent('recipes', (event) => {
                 { tag: 'forge:gears/osmium' }
             ],
             result: { item: 'mekanism:robit' },
-            id: 'mekanism:robit'
+            id: `${id_prefix}robit`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_djinni' },
+            pentacle_id: 'occultism:craft_djinni',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_feeding_upgrade' },
+            ingredients: [
+                { item: 'create:mechanical_arm' },
+                { item: 'farmersdelight:netherite_knife' },
+                { item: 'sophisticatedbackpacks:upgrade_base' },
+                { item: 'tconstruct:silky_cloth' }
+            ],
+            result: { item: 'sophisticatedbackpacks:feeding_upgrade' },
+            id: `${id_prefix}feeding_upgrade`
         }
     ];
 

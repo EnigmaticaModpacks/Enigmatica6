@@ -72,6 +72,7 @@ onEvent('recipes', (event) => {
         'mekanism:processing/refined_obsidian/dust/from_ingot',
         'mekanism:osmium_compressor',
         /mekanism:factory/,
+        'mekanism:robit',
 
         'minecraft:book',
         'minecraft:leather_to_stripes',
@@ -101,6 +102,8 @@ onEvent('recipes', (event) => {
         'quark:building/crafting/red_nether_bricks_util',
 
         'refinedstorage:quartz_enriched_iron',
+
+        'sophisticatedbackpacks:feeding_upgrade',
 
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
