@@ -230,6 +230,21 @@ onEvent('recipes', (event) => {
                 count: 2
             },
             id: 'mekanism:teleportation_core'
+        },
+        {
+            ingredients: [
+                { item: 'resourcefulbees:pcbee_honeycomb_block' },
+                { item: 'botania:black_hole_talisman' },
+                { item: 'mekanism:module_gravitational_modulating_unit' },
+                { item: 'botania:black_hole_talisman' },
+                { item: 'resourcefulbees:pcbee_honeycomb_block' }
+            ],
+            energy: '4200000000',
+            result: {
+                item: 'dankstorage:6_to_7',
+                count: 1
+            },
+            id: 'dankstorage:6_to_7'
         }
     ];
 

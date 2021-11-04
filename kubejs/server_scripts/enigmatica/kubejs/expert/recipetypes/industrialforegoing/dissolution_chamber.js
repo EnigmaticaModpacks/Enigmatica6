@@ -4,27 +4,6 @@ onEvent('recipes', (event) => {
     }
     const id_prefix = 'enigmatica:expert/industrialforegoing/dissolution_chamber/';
     const recipes = [
-        /*
-        {
-            inputs: [
-                '', // top left
-                '', // top 
-                '', // top right
-                '', // left
-                '', // right
-                '', // bottom left
-                '', // bottom
-                ''  // bottom right
-            ],
-            inputFluid: '', // optional
-            inputFluidAmount: 0, // leave at 0 for no fluid
-            processingTime: 50,
-            outputItem: { item: '', count: 1 },
-            outputFluid: '', // optional
-            outputFluidAmount: 0, // leave at 0 for no fluid
-            id: ''
-        }
-        */
         {
             inputs: [
                 'immersiveengineering:tesla_coil',
@@ -437,7 +416,47 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:tier_installer/ultimate'
+        },
+        {
+            inputs: [
+                'resourcefulbees:industrious_honeycomb_block',
+                '#forge:alloys/ultimate',
+                'resourcefulbees:industrious_honeycomb_block',
+                '#forge:alloys/ultimate',
+                '#forge:alloys/ultimate',
+                'resourcefulbees:industrious_honeycomb_block',
+                '#forge:alloys/ultimate',
+                'resourcefulbees:industrious_honeycomb_block'
+            ],
+            inputFluid: 'tconstruct:liquid_soul',
+            inputFluidAmount: 1000,
+            processingTime: 1200,
+            outputItem: { item: 'dankstorage:5_to_6', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'dankstorage:5_to_6'
         }
+        /*
+        {
+            inputs: [
+                '', // top left
+                '', // top 
+                '', // top right
+                '', // left
+                '', // right
+                '', // bottom left
+                '', // bottom
+                ''  // bottom right
+            ],
+            inputFluid: '', // optional
+            inputFluidAmount: 0, // leave at 0 for no fluid
+            processingTime: 50,
+            outputItem: { item: '', count: 1 },
+            outputFluid: '', // optional
+            outputFluidAmount: 0, // leave at 0 for no fluid
+            id: ''
+        }
+        */
     ];
 
     colors.forEach((color) => {

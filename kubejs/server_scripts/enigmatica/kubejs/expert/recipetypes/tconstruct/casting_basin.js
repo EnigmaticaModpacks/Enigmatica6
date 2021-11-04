@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
             },
             {
                 fluid: 'tconstruct:molten_obsidian',
-                fluid_amount: 8000,
+                fluid_amount: 1000,
                 casts: [{ item: 'thermal:machine_frame' }],
                 cast_consumed: true,
                 output: 'dankstorage:dock',
