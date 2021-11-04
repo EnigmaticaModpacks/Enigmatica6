@@ -48,6 +48,17 @@ onEvent('recipes', (event) => {
             },
             result: { item: 'sophisticatedbackpacks:diamond_backpack' },
             id: 'sophisticatedbackpacks:diamond_backpack'
+        },
+        {
+            pattern: ['FMF', 'RBR', 'FFF'],
+            key: {
+                F: { item: 'botania:manaweave_cloth' },
+                M: { tag: 'forge:storage_blocks/aeternium' },
+                R: { item: 'atum:shu_godshard' },
+                B: { item: 'sophisticatedbackpacks:diamond_backpack' }
+            },
+            result: { item: 'sophisticatedbackpacks:netherite_backpack' },
+            id: 'sophisticatedbackpacks:netherite_backpack'
         }
     ];
 
