@@ -56,6 +56,15 @@ onEvent('recipes', (event) => {
             },
             id: `${id_prefix}basic_memory_package`
         },
+        {
+            output: 'kubejs:scented_stick',
+            pattern: ['AAA', 'AB '],
+            key: {
+                A: 'minecraft:stick',
+                B: 'minecraft:honeycomb'
+            },
+            id: `${id_prefix}scented_stick`
+        },
 
         // Storage Parts
         {

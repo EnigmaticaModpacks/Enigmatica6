@@ -15,7 +15,7 @@ onEvent('recipes', (event) => {
         }
     */
 
-    const newRecipes = [
+    const recipes = [
         {
             output: 'sophisticatedbackpacks:upgrade_base',
             pattern: ['ABA', 'BCB', 'ABA'],
@@ -25,14 +25,20 @@ onEvent('recipes', (event) => {
                 C: 'tconstruct:diamond_item_frame'
             },
             id: 'sophisticatedbackpacks:upgrade_base'
+        },
+        {
+            output: 'sophisticatedbackpacks:backpack',
+            pattern: ['ABA', 'ACA', 'BBB'],
+            key: {
+                A: 'betterendforge:leather_stripe',
+                B: 'farmersdelight:canvas',
+                C: 'farmersdelight:basket'
+            },
+            id: 'sophisticatedbackpacks:backpack'
         }
     ];
 
-    newRecipes.forEach((recipe) => {
-        if (recipe.id) {
-            event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
-        } else {
-            event.shaped(recipe.output, recipe.pattern, recipe.key);
-        }
+    recipes.forEach((recipe) => {
+        event.shaped(recipe.output, recipe.pattern, recipe.key).id(recipe.id);
     });
 });

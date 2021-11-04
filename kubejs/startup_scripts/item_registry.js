@@ -41,7 +41,8 @@ onEvent('item.registry', (event) => {
         'memory_elite_empty',
         'memory_elite_filled',
         'memory_ultimate_empty',
-        'memory_ultimate_filled'
+        'memory_ultimate_filled',
+        'scented_stick'
     ];
 
     const ritualDummies = [
