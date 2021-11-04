@@ -57,11 +57,11 @@ onEvent('recipes', (event) => {
             id: `${id_prefix}basic_memory_package`
         },
         {
-            output: 'kubejs:scented_stick',
-            pattern: ['AAA', 'AB '],
+            output: Item.of('8x kubejs:scented_stick'),
+            pattern: ['AAA', 'ABA', 'AAA'],
             key: {
                 A: 'minecraft:stick',
-                B: 'minecraft:honeycomb'
+                B: '#resourcefulbees:resourceful_honeycomb'
             },
             id: `${id_prefix}scented_stick`
         },

@@ -17,27 +17,33 @@ onEvent('recipes', (event) => {
 
     const recipes = [
         {
-            pattern: ['III', 'IBI', 'III'],
+            pattern: ['FMF', 'RBR', 'FFF'],
             key: {
-                I: { tag: 'forge:ingots/iron' },
+                F: { item: 'immersiveengineering:hemp_fabric' },
+                M: { item: 'refinedstorage:quartz_enriched_iron_block' },
+                R: { tag: 'forge:rods/aluminum' },
                 B: { item: 'sophisticatedbackpacks:backpack' }
             },
             result: { item: 'sophisticatedbackpacks:iron_backpack' },
             id: 'sophisticatedbackpacks:iron_backpack'
         },
         {
-            pattern: ['GGG', 'GBG', 'GGG'],
+            pattern: ['FMF', 'RBR', 'FFF'],
             key: {
-                G: { tag: 'forge:ingots/gold' },
+                F: { item: 'thermal:hazmat_fabric' },
+                M: { tag: 'forge:storage_blocks/rose_gold' },
+                R: { tag: 'forge:rods/electrum' },
                 B: { item: 'sophisticatedbackpacks:iron_backpack' }
             },
             result: { item: 'sophisticatedbackpacks:gold_backpack' },
             id: 'sophisticatedbackpacks:gold_backpack'
         },
         {
-            pattern: ['DDD', 'DBD', 'DDD'],
+            pattern: ['FMF', 'RBR', 'FFF'],
             key: {
-                D: { tag: 'forge:gems/diamond' },
+                F: { item: 'thermal:diving_fabric' },
+                M: { tag: 'forge:storage_blocks/enderium' },
+                R: { tag: 'forge:alloys/elite' },
                 B: { item: 'sophisticatedbackpacks:gold_backpack' }
             },
             result: { item: 'sophisticatedbackpacks:diamond_backpack' },

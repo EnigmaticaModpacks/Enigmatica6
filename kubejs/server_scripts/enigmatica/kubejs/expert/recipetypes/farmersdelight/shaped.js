@@ -24,6 +24,15 @@ onEvent('recipes', (event) => {
                 B: 'minecraft:honeycomb'
             },
             id: 'farmersdelight:canvas'
+        },
+        {
+            output: 'farmersdelight:basket',
+            pattern: ['A A', 'B B', 'ABA'],
+            key: {
+                A: 'kubejs:scented_stick',
+                B: 'farmersdelight:canvas'
+            },
+            id: 'farmersdelight:basket'
         }
     ];
 
