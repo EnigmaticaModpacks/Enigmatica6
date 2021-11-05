@@ -416,25 +416,6 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:tier_installer/ultimate'
-        },
-        {
-            inputs: [
-                'resourcefulbees:industrious_honeycomb_block',
-                '#forge:alloys/ultimate',
-                'resourcefulbees:industrious_honeycomb_block',
-                '#forge:alloys/ultimate',
-                '#forge:alloys/ultimate',
-                'resourcefulbees:industrious_honeycomb_block',
-                '#forge:alloys/ultimate',
-                'resourcefulbees:industrious_honeycomb_block'
-            ],
-            inputFluid: 'tconstruct:liquid_soul',
-            inputFluidAmount: 1000,
-            processingTime: 1200,
-            outputItem: { item: 'dankstorage:5_to_6', count: 1 },
-            outputFluid: '',
-            outputFluidAmount: 0,
-            id: 'dankstorage:5_to_6'
         }
         /*
         {

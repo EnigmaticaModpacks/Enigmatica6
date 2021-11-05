@@ -12,15 +12,6 @@ onEvent('recipes', (event) => {
                 output: 'betterendforge:infusion_pedestal',
                 cooling_time: 233,
                 id: 'betterendforge:infusion_pedestal'
-            },
-            {
-                fluid: 'tconstruct:molten_obsidian',
-                fluid_amount: 1000,
-                casts: [{ item: 'thermal:machine_frame' }],
-                cast_consumed: true,
-                output: 'dankstorage:dock',
-                cooling_time: 640,
-                id: 'dankstorage:dock'
             }
         ]
     };

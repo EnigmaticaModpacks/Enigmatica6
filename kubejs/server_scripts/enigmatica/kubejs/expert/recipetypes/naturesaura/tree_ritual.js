@@ -470,38 +470,6 @@ onEvent('recipes', (event) => {
             },
             time: 400,
             id: 'naturesstarlight:tree_ritual/starlight_increase_powder'
-        },
-        {
-            inputs: [
-                { tag: 'botania:runes/earth' },
-                { tag: 'botania:runes/earth' },
-                { tag: 'botania:runes/earth' },
-                { tag: 'botania:runes/earth' },
-                { item: 'resourcefulbees:infused_honeycomb_block' },
-                { item: 'resourcefulbees:infused_honeycomb_block' },
-                { item: 'resourcefulbees:infused_honeycomb_block' },
-                { item: 'resourcefulbees:infused_honeycomb_block' }
-            ],
-            sapling: 'tconstruct:earth_slime_sapling',
-            output: { item: 'dankstorage:3_to_4', count: 1 },
-            time: 400,
-            id: 'dankstorage:3_to_4'
-        },
-        {
-            inputs: [
-                { tag: 'botania:runes/air' },
-                { tag: 'botania:runes/air' },
-                { tag: 'botania:runes/air' },
-                { tag: 'botania:runes/air' },
-                { item: 'resourcefulbees:sky_honeycomb_block' },
-                { item: 'resourcefulbees:sky_honeycomb_block' },
-                { item: 'resourcefulbees:sky_honeycomb_block' },
-                { item: 'resourcefulbees:sky_honeycomb_block' }
-            ],
-            sapling: 'tconstruct:sky_slime_sapling',
-            output: { item: 'dankstorage:4_to_5', count: 1 },
-            time: 400,
-            id: 'dankstorage:4_to_5'
         }
 
         /*

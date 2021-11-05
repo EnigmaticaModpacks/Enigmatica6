@@ -1446,38 +1446,6 @@ onEvent('recipes', (event) => {
                 count: 1,
                 id: `ars_nouveau:sylph_charm`
             },
-            {
-                inputs: [
-                    'resourcefulbees:redstone_honeycomb_block',
-                    'ars_nouveau:magic_clay',
-                    'resourcefulbees:redstone_honeycomb_block',
-                    'ars_nouveau:magic_clay',
-                    'ars_nouveau:magic_clay',
-                    'resourcefulbees:redstone_honeycomb_block',
-                    'ars_nouveau:magic_clay',
-                    'resourcefulbees:redstone_honeycomb_block'
-                ],
-                reagent: 'farmersdelight:basket',
-                output: 'dankstorage:1_to_2',
-                count: 1,
-                id: `dankstorage:1_to_2`
-            },
-            {
-                inputs: [
-                    'resourcefulbees:glowstone_honeycomb_block',
-                    'naturesaura:gold_fiber',
-                    'resourcefulbees:glowstone_honeycomb_block',
-                    'naturesaura:gold_fiber',
-                    'naturesaura:gold_fiber',
-                    'resourcefulbees:glowstone_honeycomb_block',
-                    'naturesaura:gold_fiber',
-                    'resourcefulbees:glowstone_honeycomb_block'
-                ],
-                reagent: 'farmersdelight:basket',
-                output: 'dankstorage:2_to_3',
-                count: 1,
-                id: `dankstorage:2_to_3`
-            },
 
             /// Patchouli Removals
             {

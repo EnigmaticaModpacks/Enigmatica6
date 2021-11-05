@@ -28,12 +28,8 @@ onEvent('recipes', (event) => {
 
         /create:pressing\/\w*_ingot/,
 
-        'dankstorage:2',
-        'dankstorage:3',
-        'dankstorage:4',
-        'dankstorage:5',
-        'dankstorage:6',
-        'dankstorage:7',
+        /dankstorage:\w_to_\w/,
+        'dankstorage:dock',
 
         'darkutils:crafting/rune_damage_player',
         'darkutils:crafting/blank_plate',
