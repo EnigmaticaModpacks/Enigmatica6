@@ -416,6 +416,16 @@ onEvent('recipes', (event) => {
             outputFluid: '',
             outputFluidAmount: 0,
             id: 'mekanism:tier_installer/ultimate'
+        },
+        {
+            inputs: ['sophisticatedbackpacks:upgrade_base', 'occultism:satchel'],
+            inputFluid: 'kubejs:pink_ender_slime',
+            inputFluidAmount: 250,
+            processingTime: 100,
+            outputItem: { item: 'sophisticatedbackpacks:inception_upgrade', count: 1 },
+            outputFluid: '',
+            outputFluidAmount: 0,
+            id: 'sophisticatedbackpacks:inception_upgrade'
         }
         /*
         {

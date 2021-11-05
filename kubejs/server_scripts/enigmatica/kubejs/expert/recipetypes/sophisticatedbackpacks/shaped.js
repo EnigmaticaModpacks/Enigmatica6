@@ -150,6 +150,39 @@ onEvent('recipes', (event) => {
                 E: 'create:precision_mechanism'
             },
             id: 'sophisticatedbackpacks:advanced_void_upgrade'
+        },
+        {
+            output: 'sophisticatedbackpacks:tank_upgrade',
+            pattern: ['ABA', 'BCB', 'ABA'],
+            key: {
+                A: 'create:fluid_pipe',
+                B: 'create:fluid_tank',
+                C: 'sophisticatedbackpacks:upgrade_base'
+            },
+            id: 'sophisticatedbackpacks:tank_upgrade'
+        },
+        {
+            output: 'sophisticatedbackpacks:battery_upgrade',
+            pattern: [' A ', 'BCB', ' B '],
+            key: {
+                A: 'thermal:flux_capacitor',
+                B: 'thermal:rf_coil',
+                C: 'sophisticatedbackpacks:upgrade_base'
+            },
+            id: 'sophisticatedbackpacks:battery_upgrade'
+        },
+        {
+            output: 'sophisticatedbackpacks:everlasting_upgrade',
+            pattern: ['ABA', 'CDE', 'AFA'],
+            key: {
+                A: 'quark:bottled_cloud',
+                B: Item.of('minecraft:enchanted_book').enchant('minecraft:protection', 1),
+                C: Item.of('minecraft:enchanted_book').enchant('minecraft:blast_protection', 1),
+                D: 'sophisticatedbackpacks:upgrade_base',
+                E: Item.of('minecraft:enchanted_book').enchant('minecraft:fire_protection', 1),
+                F: Item.of('minecraft:enchanted_book').enchant('minecraft:projectile_protection', 1)
+            },
+            id: 'sophisticatedbackpacks:everlasting_upgrade'
         }
     ];
 
