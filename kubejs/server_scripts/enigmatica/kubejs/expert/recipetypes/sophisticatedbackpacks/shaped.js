@@ -47,33 +47,30 @@ onEvent('recipes', (event) => {
         },
         {
             output: 'sophisticatedbackpacks:stack_upgrade_tier_2',
-            pattern: ['ADA', 'BCB', 'ADA'],
+            pattern: ['ADA', 'B B', 'ADA'],
             key: {
                 A: '#forge:storage_blocks/rose_gold',
                 B: 'thermal:hazmat_fabric',
-                C: 'resourcefulbees:gold_honeycomb_block',
                 D: 'sophisticatedbackpacks:stack_upgrade_tier_1'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_2'
         },
         {
             output: 'sophisticatedbackpacks:stack_upgrade_tier_3',
-            pattern: ['ADA', 'BCB', 'ADA'],
+            pattern: ['ADA', 'B B', 'ADA'],
             key: {
                 A: '#forge:storage_blocks/enderium',
                 B: 'thermal:diving_fabric',
-                C: 'resourcefulbees:diamond_honeycomb_block',
                 D: 'sophisticatedbackpacks:stack_upgrade_tier_2'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_3'
         },
         {
             output: 'sophisticatedbackpacks:stack_upgrade_tier_4',
-            pattern: ['ADA', 'BCB', 'ADA'],
+            pattern: ['ADA', 'B B', 'ADA'],
             key: {
                 A: '#forge:storage_blocks/aeternium',
                 B: 'botania:manaweave_cloth',
-                C: 'resourcefulbees:netherite_honeycomb_block',
                 D: 'sophisticatedbackpacks:stack_upgrade_tier_3'
             },
             id: 'sophisticatedbackpacks:stack_upgrade_tier_4'
