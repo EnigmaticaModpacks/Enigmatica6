@@ -106,6 +106,8 @@ onEvent('recipes', (event) => {
         'sophisticatedbackpacks:advanced_pump_upgrade',
         'sophisticatedbackpacks:xp_pump_upgrade',
 
+        'tanknull:dock',
+
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',
         'tconstruct:smeltery/seared/melter',
