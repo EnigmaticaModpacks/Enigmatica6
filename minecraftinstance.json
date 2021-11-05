@@ -30,8 +30,8 @@
   "isUnlocked": true,
   "javaArgsOverride": null,
   "javaDirOverride": null,
-  "lastPlayed": "2021-11-03T18:47:11.9283166Z",
-  "playedCount": 442,
+  "lastPlayed": "2021-11-05T20:04:43.9728553Z",
+  "playedCount": 444,
   "manifest": null,
   "fileDate": "0001-01-01T00:00:00",
   "installedModpack": null,
@@ -53,6 +53,7 @@
   "isPinned": false,
   "gameVersion": "1.16.5",
   "gameVersionFlavor": null,
+  "gameVersionTypeId": 0,
   "preferenceAlternateFile": false,
   "preferenceAutoInstallUpdates": false,
   "preferenceQuickDeleteLibraries": true,
@@ -9422,7 +9423,7 @@
       "dateInstalled": "2021-07-30T07:30:10.5369295Z",
       "dateUpdated": "2021-07-30T07:30:10.5529262Z",
       "dateLastUpdateAttempted": "2021-07-30T07:30:10.5529262Z",
-      "status": 3,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -17732,7 +17733,7 @@
       "dateInstalled": "2021-07-05T20:21:03.3661182Z",
       "dateUpdated": "2021-09-02T12:00:02.5024629Z",
       "dateLastUpdateAttempted": "2021-09-02T12:00:02.5024629Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -19612,7 +19613,7 @@
       "dateInstalled": "2021-09-22T17:52:43.1731957Z",
       "dateUpdated": "2021-09-22T17:52:43.3733049Z",
       "dateLastUpdateAttempted": "2021-09-22T17:52:43.3733049Z",
-      "status": 3,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20339,7 +20340,7 @@
       "dateInstalled": "2021-07-15T21:20:34.8223984Z",
       "dateUpdated": "2021-07-24T19:10:14.6274079Z",
       "dateLastUpdateAttempted": "2021-07-24T19:10:14.6274079Z",
-      "status": 5,
+      "status": 3,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20491,41 +20492,35 @@
       "addonID": 386134,
       "gameInstanceID": "6058bcbe-3806-4464-ae31-c7ee23f11eec",
       "installedFile": {
-        "id": 3490776,
-        "displayName": "ftb-ultimine-forge-1605.3.0-build.33.jar",
-        "fileName": "ftb-ultimine-forge-1605.3.0-build.33.jar",
-        "fileDate": "2021-10-14T11:18:43.79Z",
-        "fileLength": 78049,
+        "id": 3516208,
+        "displayName": "ftb-ultimine-forge-1605.3.1-build.40.jar",
+        "fileName": "ftb-ultimine-forge-1605.3.1-build.40.jar",
+        "fileDate": "2021-11-05T13:04:22.39Z",
+        "fileLength": 78538,
         "releaseType": 1,
         "fileStatus": 4,
-        "downloadUrl": "https://edge.forgecdn.net/files/3490/776/ftb-ultimine-forge-1605.3.0-build.33.jar",
+        "downloadUrl": "https://edge.forgecdn.net/files/3516/208/ftb-ultimine-forge-1605.3.1-build.40.jar",
         "isAlternate": false,
         "alternateFileId": 0,
         "dependencies": [
           {
-            "id": 75789792,
+            "id": 77622442,
             "addonId": 404465,
             "type": 3,
-            "fileId": 3490776
+            "fileId": 3516208
           },
           {
-            "id": 75789793,
+            "id": 77622443,
             "addonId": 419699,
             "type": 3,
-            "fileId": 3490776
+            "fileId": 3516208
           }
         ],
         "isAvailable": true,
         "modules": [
           {
-            "foldername": "ftbultimine.accesswidener",
-            "fingerprint": 2828944861,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
-            "foldername": "data",
-            "fingerprint": 668690037,
+            "foldername": "META-INF",
+            "fingerprint": 1202770891,
             "type": 3,
             "invalidFingerprint": false
           },
@@ -20536,8 +20531,20 @@
             "invalidFingerprint": false
           },
           {
+            "foldername": "data",
+            "fingerprint": 668690037,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
+            "foldername": "ftbultimine.accesswidener",
+            "fingerprint": 2828944861,
+            "type": 3,
+            "invalidFingerprint": false
+          },
+          {
             "foldername": "assets",
-            "fingerprint": 133322903,
+            "fingerprint": 1614427076,
             "type": 3,
             "invalidFingerprint": false
           },
@@ -20548,25 +20555,19 @@
             "invalidFingerprint": false
           },
           {
-            "foldername": "META-INF",
-            "fingerprint": 1453396944,
-            "type": 3,
-            "invalidFingerprint": false
-          },
-          {
             "foldername": "dev",
-            "fingerprint": 1958895944,
+            "fingerprint": 156976963,
             "type": 3,
             "invalidFingerprint": false
           },
           {
-            "foldername": "architectury_inject_FTBUltimine1165_common_dbf4032e13a84fe998d28ee9e704c1a1",
-            "fingerprint": 701525957,
+            "foldername": "architectury_inject_FTBUltimine1165_common_87f7ea2be1374f8780444ecec7dea264_1c8c683fdbe8e88ac78b4b125640e42d02b1ebdaed437c090755abc1557eeeafftbultimine160531build40devjar",
+            "fingerprint": 4229726820,
             "type": 3,
             "invalidFingerprint": false
           }
         ],
-        "packageFingerprint": 42899685,
+        "packageFingerprint": 1870182734,
         "gameVersion": [
           "1.16.5",
           "Forge",
@@ -20578,21 +20579,21 @@
             "gameVersion": "1.16.5",
             "gameVersionReleaseDate": "2021-01-15T14:14:48.91Z",
             "gameVersionName": "1.16.5",
-            "gameVersionTypeId": 0
+            "gameVersionTypeId": 70886
           },
           {
             "gameVersionPadded": "0",
             "gameVersion": "",
             "gameVersionReleaseDate": "2019-08-01T00:00:00Z",
             "gameVersionName": "Forge",
-            "gameVersionTypeId": 0
+            "gameVersionTypeId": 68441
           },
           {
             "gameVersionPadded": "0000000001.0000000016.0000000004",
             "gameVersion": "1.16.4",
             "gameVersionReleaseDate": "2020-11-02T18:40:51.49Z",
             "gameVersionName": "1.16.4",
-            "gameVersionTypeId": 0
+            "gameVersionTypeId": 70886
           }
         ],
         "hasInstallScript": false,
@@ -20600,20 +20601,20 @@
         "categorySectionPackageType": 6,
         "restrictProjectFileAccess": 1,
         "projectStatus": 4,
-        "renderCacheId": 2539810,
+        "renderCacheId": 2571926,
         "projectId": 386134,
-        "packageFingerprintId": 762060151,
+        "packageFingerprintId": 777799551,
         "gameVersionDateReleased": "2008-03-01T06:00:00Z",
-        "gameVersionMappingId": 3381167,
+        "gameVersionMappingId": 3442101,
         "gameVersionId": 4458,
         "gameId": 432,
         "isServerPack": false,
-        "FileNameOnDisk": "ftb-ultimine-forge-1605.3.0-build.33.jar"
+        "FileNameOnDisk": "ftb-ultimine-forge-1605.3.1-build.40.jar"
       },
-      "dateInstalled": "2021-07-05T20:21:08.477471Z",
-      "dateUpdated": "2021-10-15T19:25:45.8822443Z",
-      "dateLastUpdateAttempted": "2021-10-15T19:25:45.8822443Z",
-      "status": 5,
+      "dateInstalled": "2021-11-05T20:04:33.8487046Z",
+      "dateUpdated": "2021-11-05T20:04:33.872704Z",
+      "dateLastUpdateAttempted": "2021-11-05T20:04:33.872704Z",
+      "status": 4,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -20622,7 +20623,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": null
+      "installedTargets": []
     },
     {
       "addonID": 399558,
@@ -27113,7 +27114,7 @@
       "dateInstalled": "2021-11-03T18:46:54.1462799Z",
       "dateUpdated": "2021-11-03T18:46:54.1572823Z",
       "dateLastUpdateAttempted": "2021-11-03T18:46:54.1572823Z",
-      "status": 4,
+      "status": 5,
       "preferenceAutoInstallUpdates": null,
       "preferenceAlternateFile": false,
       "preferenceIsIgnored": false,
@@ -27122,7 +27123,7 @@
       "isFuzzyMatch": false,
       "preferenceReleaseType": null,
       "manifestName": null,
-      "installedTargets": []
+      "installedTargets": null
     },
     {
       "addonID": 370777,
