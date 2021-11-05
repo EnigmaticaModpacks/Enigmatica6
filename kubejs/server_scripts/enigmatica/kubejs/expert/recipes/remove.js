@@ -104,6 +104,7 @@ onEvent('recipes', (event) => {
         'refinedstorage:quartz_enriched_iron',
 
         'sophisticatedbackpacks:feeding_upgrade',
+        'sophisticatedbackpacks:advanced_feeding_upgrade',
 
         'tconstruct:smeltery/scorched/scorched_brick',
         'tconstruct:smeltery/scorched/scorched_brick_kiln',

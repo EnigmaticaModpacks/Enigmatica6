@@ -1038,6 +1038,21 @@ onEvent('recipes', (event) => {
             ],
             result: { item: 'sophisticatedbackpacks:feeding_upgrade' },
             id: `${id_prefix}feeding_upgrade`
+        },
+        {
+            ritual_type: 'occultism:craft_with_spirit_name',
+            activation_item: { item: 'occultism:book_of_binding_bound_marid' },
+            pentacle_id: 'occultism:craft_marid',
+            duration: 24,
+            ritual_dummy: { item: 'kubejs:craft_advanced_feeding_upgrade' },
+            ingredients: [
+                { item: 'sophisticatedbackpacks:feeding_upgrade' },
+                { tag: 'botania:runes/gluttony' },
+                { item: 'botania:pixie_dust' },
+                { tag: 'botania:runes/gluttony' }
+            ],
+            result: { item: 'sophisticatedbackpacks:advanced_feeding_upgrade' },
+            id: `${id_prefix}advanced_feeding_upgrade`
         }
     ];
 
